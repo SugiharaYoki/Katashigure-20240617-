@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 20,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:air",
+          "weight": 50
+        },
+	{
+          "type": "minecraft:item",
+          "name": "minecraft:emerald",
+          "weight": 50
+        },
+	{
+          "type": "minecraft:item",
+          "name": "minecraft:diamond",
+          "weight": 5
+        }
+      ]
+    }
+  ]
+}

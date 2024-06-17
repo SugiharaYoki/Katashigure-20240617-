@@ -1,0 +1,1 @@
+tellraw @a {"text":"你好呀！","color":"green"}

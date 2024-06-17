@@ -1,0 +1,762 @@
+{
+  "pools": [
+    {
+ "rolls": 27,
+      "entries": [
+        {
+          "type": "minecraft:group",
+          "weight": 98,
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:iron_chestplate",
+              "weight": 14,
+              "functions": [
+                {
+                  "function": "minecraft:enchant_randomly",
+                  "enchantments": [
+                    "minecraft:protection",
+                    "minecraft:fire_protection",
+                    "minecraft:thorns"
+                  ],
+                  "conditions": [
+                    {
+                      "condition": "minecraft:random_chance",
+                      "chance": 30
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:iron_leggings",
+              "weight": 15,
+              "functions": [
+                {
+                  "function": "minecraft:enchant_randomly",
+                  "enchantments": [
+                    "minecraft:protection",
+                    "minecraft:blast_protection",
+                    "minecraft:thorns"
+                  ],
+                  "conditions": [
+                    {
+                      "condition": "minecraft:random_chance",
+                      "chance": 30
+                    }
+                  ]
+                }
+              ]
+            },{
+              "type": "minecraft:item",
+              "name": "smithing_table",
+              "weight": 2,
+              "functions": [
+                {
+                  "function": "minecraft:set_count",
+                  "count": {
+                    "min": 1,
+                    "max": 1
+                  }
+                },
+                {
+                  "function": "minecraft:limit_count",
+                  "limit": {
+                    "min": 1,
+                    "max": 1
+                  }
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:iron_boots",
+              "weight": 18,
+              "functions": [
+                {
+                  "function": "minecraft:enchant_randomly",
+                  "enchantments": [
+                    "minecraft:feather_falling",
+                    "minecraft:protection",
+                    "minecraft:frost_walker"
+                  ],
+                  "conditions": [
+                    {
+                      "condition": "minecraft:random_chance",
+                      "chance": 30
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:iron_helmet",
+              "weight": 18,
+              "functions": [
+                {
+                  "function": "minecraft:enchant_randomly",
+                  "enchantments": [
+                    "minecraft:protection",
+                    "minecraft:respiration"
+                  ],
+                  "conditions": [
+                    {
+                      "condition": "minecraft:random_chance",
+                      "chance": 30
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:iron_sword",
+              "weight": 17,
+              "functions": [
+                {
+                  "function": "minecraft:enchant_randomly",
+                  "enchantments": [
+                    "minecraft:unbreaking",
+                    "minecraft:sharpness",
+                    "minecraft:fire_aspect",
+                    "minecraft:knockback"
+                  ],
+                  "conditions": [
+                    {
+                      "condition": "minecraft:random_chance",
+                      "chance": 15
+                    }
+                  ]
+                },
+                {
+                  "function": "minecraft:set_nbt",
+                  "tag": "{Damage:200}",
+                  "conditions": [
+                    {
+                      "condition": "minecraft:random_chance",
+                      "chance": 50
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:golden_sword",
+              "weight": 20,
+              "functions": [
+                {
+                  "function": "minecraft:enchant_randomly",
+                  "enchantments": [
+                    "minecraft:knockback",
+                    "minecraft:bane_of_arthropods",
+                    "minecraft:smite"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:iron_axe",
+              "weight": 18,
+              "functions": [
+                {
+                  "function": "minecraft:enchant_randomly",
+                  "enchantments": [
+                    "minecraft:unbreaking",
+                    "minecraft:sharpness"
+                  ],
+                  "conditions": [
+                    {
+                      "condition": "minecraft:random_chance",
+                      "chance": 30
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:chainmail_chestplate",
+              "weight": 47
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:chainmail_leggings",
+              "weight": 47
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:chainmail_boots",
+              "weight": 50
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:chainmail_helmet",
+              "weight": 50
+            },
+            {
+              "type": "minecraft:item",
+              "name": "damaged_anvil",
+              "weight": 7,
+              "functions": [
+                {
+                  "function": "minecraft:limit_count",
+                  "limit": {
+                    "min": 1,
+                    "max": 1
+                  }
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:bow",
+              "weight": 20,
+              "functions": [
+                {
+                  "function": "minecraft:enchant_randomly",
+                  "enchantments": [
+                    "minecraft:power",
+                    "minecraft:punch"
+                  ],
+                  "conditions": [
+                    {
+                      "condition": "minecraft:random_chance",
+                      "chance": 50
+                    }
+                  ]
+                },
+                {
+                  "function": "minecraft:set_nbt",
+                  "tag": "{Damage:344}"
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "air",
+              "weight": 320
+            },
+            {
+              "type": "minecraft:item",
+              "name": "potion",
+              "weight": 8,
+              "functions": [
+                {
+                  "function": "minecraft:set_nbt",
+                  "tag": "{Potion:\"strong_strength\"}"
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "potion",
+              "weight": 10,
+              "functions": [
+                {
+                  "function": "minecraft:set_nbt",
+                  "tag": "{Potion:\"strong_swiftness\"}"
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "pufferfish_spawn_egg",
+              "weight": 3,
+              "functions": [
+                {
+                  "function": "minecraft:limit_count",
+                  "limit": {
+                    "min": 1,
+                    "max": 1
+                  }
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "lever",
+              "weight": 2
+            },
+            {
+              "type": "minecraft:item",
+              "name": "potion",
+              "weight": 10,
+              "functions": [
+                {
+                  "function": "minecraft:set_nbt",
+                  "tag": "{Potion:\"leaping\"}"
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "potion",
+              "weight": 10,
+              "functions": [
+                {
+                  "function": "minecraft:set_nbt",
+                  "tag": "{Potion:\"strong_healing\"}"
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "potion",
+              "weight": 2,
+              "functions": [
+                {
+                  "function": "minecraft:set_nbt",
+                  "tag": "{Potion:\"strong_harming\"}"
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "potion",
+              "weight": 7,
+              "functions": [
+                {
+                  "function": "minecraft:set_nbt",
+                  "tag": "{Potion:\"invisibility\"}"
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "crossbow",
+              "weight": 20,
+              "functions": [
+                {
+                  "function": "minecraft:set_nbt",
+                  "tag": "{Damage:300}",
+                  "conditions": [
+                    {
+                      "condition": "minecraft:random_chance",
+                      "chance": 75
+                    }
+                  ]
+                },
+                {
+                  "function": "minecraft:enchant_randomly",
+                  "enchantments": [
+                    "minecraft:multishot",
+                    "minecraft:quick_charge"
+                  ],
+                  "conditions": [
+                    {
+                      "condition": "minecraft:random_chance",
+                      "chance": 30
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "mushroom_stew",
+              "weight": 40,
+              "functions": [
+                {
+                  "function": "minecraft:set_count",
+                  "count": {
+                    "min": 1,
+                    "max": 2
+                  }
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "salmon",
+              "weight": 56,
+              "functions": [
+                {
+                  "function": "minecraft:limit_count",
+                  "limit": {
+                    "min": 4,
+                    "max": 8
+                  }
+                },
+                {
+                  "function": "minecraft:set_count",
+                  "count": {
+                    "min": 2,
+                    "max": 10
+                  }
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "sweet_berries",
+              "weight": 32,
+              "functions": [
+                {
+                  "function": "minecraft:limit_count",
+                  "limit": {
+                    "min": 3,
+                    "max": 18
+                  }
+                },
+                {
+                  "function": "minecraft:set_count",
+                  "count": {
+                    "min": 2,
+                    "max": 6
+                  }
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "lantern",
+              "weight": 45,
+              "functions": [
+                {
+                  "function": "minecraft:set_count",
+                  "count": {
+                    "min": 2,
+                    "max": 6
+                  }
+                },
+                {
+                  "function": "minecraft:limit_count",
+                  "limit": {
+                    "min": 2,
+                    "max": 6
+                  }
+                }
+              ]
+            },
+{
+              "type": "minecraft:item",
+              "name": "campfire",
+              "weight": 3,
+              "functions": [
+                {
+                  "function": "minecraft:set_count",
+                  "count": {
+                    "min": 1,
+                    "max": 1
+                  }
+                },
+                {
+                  "function": "minecraft:limit_count",
+                  "limit": {
+                    "min": 1,
+                    "max": 1
+                  }
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "oak_planks",
+              "weight": 55,
+              "functions": [
+                {
+                  "function": "minecraft:set_count",
+                  "count": {
+                    "min": 5,
+                    "max": 30
+                  }
+                },
+                {
+                  "function": "minecraft:limit_count",
+                  "limit": {
+                    "min": 2,
+                    "max": 12
+                  }
+                }
+              ]
+            },
+{
+              "type": "minecraft:item",
+              "name": "spruce_planks",
+              "weight": 45,
+              "functions": [
+                {
+                  "function": "minecraft:set_count",
+                  "count": {
+                    "min": 5,
+                    "max": 30
+                  }
+                },
+                {
+                  "function": "minecraft:limit_count",
+                  "limit": {
+                    "min": 2,
+                    "max": 8
+                  }
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "red_sandstone",
+              "weight": 75,
+              "functions": [
+                {
+                  "function": "minecraft:set_count",
+                  "count": {
+                    "min": 5,
+                    "max": 30
+                  }
+                },
+                {
+                  "function": "minecraft:limit_count",
+                  "limit": {
+                    "min": 2,
+                    "max": 12
+                  }
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "water_bucket",
+              "weight": 25
+            },
+            {
+              "type": "minecraft:item",
+              "name": "golden_carrot",
+              "weight": 4,
+              "functions": [
+                {
+                  "function": "minecraft:set_count",
+                  "count": {
+                    "min": 2,
+                    "max": 4
+                  }
+                },
+                {
+                  "function": "minecraft:limit_count",
+                  "limit": {
+                    "min": 1,
+                    "max": 2
+                  }
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "tipped_arrow",
+              "weight": 24,
+              "functions": [
+                {
+                  "function": "minecraft:set_count",
+                  "count": {
+                    "min": 3,
+                    "max": 5
+                  }
+                },
+                {
+                  "function": "minecraft:limit_count",
+                  "limit": {
+                    "min": 3,
+                    "max": 5
+                  }
+                },
+                {
+                  "function": "minecraft:set_nbt",
+                  "tag": "{Potion:\"weakness\"}"
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "tipped_arrow",
+              "weight": 4,
+              "functions": [
+                {
+                  "function": "minecraft:set_count",
+                  "count": {
+                    "min": 3,
+                    "max": 5
+                  }
+                },
+                {
+                  "function": "minecraft:limit_count",
+                  "limit": {
+                    "min": 3,
+                    "max": 5
+                  }
+                },
+                {
+                  "function": "minecraft:set_nbt",
+                  "tag": "{Potion:\"strong_weakness\"}"
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "tipped_arrow",
+              "weight": 24,
+              "functions": [
+                {
+                  "function": "minecraft:set_count",
+                  "count": {
+                    "min": 3,
+                    "max": 5
+                  }
+                },
+                {
+                  "function": "minecraft:limit_count",
+                  "limit": {
+                    "min": 3,
+                    "max": 5
+                  }
+                },
+                {
+                  "function": "minecraft:set_nbt",
+                  "tag": "{Potion:\"minecraft:turtle_master\"}"
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "arrow",
+              "weight": 60,
+              "functions": [
+                {
+                  "function": "minecraft:set_count",
+                  "count": {
+                    "min": 3,
+                    "max": 18
+                  }
+                },
+                {
+                  "function": "minecraft:limit_count",
+                  "limit": {
+                    "min": 2,
+                    "max": 7
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:group",
+          "weight": 2,
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "enchanted_book",
+              "weight": 10,
+              "functions": [
+                {
+                  "function": "minecraft:set_nbt",
+                  "tag": "{StoredEnchantments:[{id:bane_of_arthropods,lvl:2}]}"
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "enchanted_book",
+              "weight": 10,
+              "functions": [
+                {
+                  "function": "minecraft:set_nbt",
+                  "tag": "{StoredEnchantments:[{id:blast_protection,lvl:2}]}"
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "enchanted_book",
+              "weight": 10,
+              "functions": [
+                {
+                  "function": "minecraft:set_nbt",
+                  "tag": "{StoredEnchantments:[{id:depth_strider,lvl:1}]}"
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "enchanted_book",
+              "weight": 10,
+              "functions": [
+                {
+                  "function": "minecraft:set_nbt",
+                  "tag": "{StoredEnchantments:[{id:efficiency,lvl:1},{id:unbreaking,lvl:1}]}"
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "enchanted_book",
+              "weight": 8,
+              "functions": [
+                {
+                  "function": "minecraft:set_nbt",
+                  "tag": "{StoredEnchantments:[{id:sharpness,lvl:1},{id:sweeping,lvl:1}]}"
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "enchanted_book",
+              "weight": 8,
+              "functions": [
+                {
+                  "function": "minecraft:set_nbt",
+                  "tag": "{StoredEnchantments:[{id:protection,lvl:1},{id:thorns,lvl:2}]}"
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "enchanted_book",
+              "weight": 10,
+              "functions": [
+                {
+                  "function": "minecraft:set_nbt",
+                  "tag": "{StoredEnchantments:[{id:sharpness,lvl:2}]}"
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "enchanted_book",
+              "weight": 10,
+              "functions": [
+                {
+                  "function": "minecraft:set_nbt",
+                  "tag": "{StoredEnchantments:[{id:impaling,lvl:1},{id:riptide,lvl:1}]}"
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "enchanted_book",
+              "weight": 10,
+              "functions": [
+                {
+                  "function": "minecraft:set_nbt",
+                  "tag": "{StoredEnchantments:[{id:efficiency,lvl:1},{id:silk_touch,lvl:1}]}"
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "enchanted_book",
+              "weight": 7,
+              "functions": [
+                {
+                  "function": "minecraft:set_nbt",
+                  "tag": "{StoredEnchantments:[{id:piercing,lvl:1},{id:quick_charge,lvl:1},{id:power,lvl:1},{id:punch,lvl:1}]}"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

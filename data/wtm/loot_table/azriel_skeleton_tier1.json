@@ -1,0 +1,82 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 4,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:air",
+          "weight": 900
+        },
+	      {
+          "type": "minecraft:item",
+          "name": "minecraft:arrow",
+          "weight": 50
+        },
+	      {
+          "type": "minecraft:item",
+          "name": "minecraft:stick",
+          "weight": 50
+        },
+	      {
+          "type": "minecraft:item",
+          "name": "minecraft:emerald",
+          "weight": 50
+        },
+	      {
+          "type": "minecraft:item",
+          "name": "minecraft:bone",
+          "weight": 150,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"{\\\"text\\\":\\\"硬骨\\\",\\\"italic\\\":false,\\\"color\\\":\\\"white\\\"}\"}}"
+            }
+          ]
+        },
+	      {
+          "type": "minecraft:item",
+          "name": "minecraft:stone_shovel",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"{\\\"text\\\":\\\"硬骨铲\\\",\\\"italic\\\":false,\\\"color\\\":\\\"dark_red\\\"}\"},AttributeModifiers:[{AttributeName:\"generic.attack_damage\",Amount:12.0,Operation:0,UUID:[I;84300,1,1,7],Slot:\"mainhand\"},{AttributeName:\"generic.attack_speed\",Amount:-3.5,Operation:0,UUID:[I;84300,1,1,8],Slot:\"mainhand\"}],Enchantments:[{id:\"minecraft:bane_of_arthropods\",lvl:1}]}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:air",
+          "weight": 50
+        },
+	      {
+          "type": "minecraft:item",
+          "name": "minecraft:emerald",
+          "weight": 20
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:air",
+          "weight": 995
+        },
+	      {
+          "type": "minecraft:item",
+          "name": "minecraft:glistering_melon_slice",
+          "weight": 5
+        }
+      ]
+    }
+  ]
+}

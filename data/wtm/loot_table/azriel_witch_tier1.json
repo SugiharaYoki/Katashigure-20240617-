@@ -1,0 +1,92 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 3,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:air",
+          "weight": 80
+        },
+	{
+          "type": "minecraft:item",
+          "name": "minecraft:sugar",
+          "weight": 5
+        },
+{
+          "type": "minecraft:item",
+          "name": "minecraft:pumpkin_pie",
+          "weight": 8
+        },
+	{
+          "type": "minecraft:item",
+          "name": "minecraft:paper",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"{\\\"text\\\":\\\"圣殿信条\\\",\\\"italic\\\":false,\\\"color\\\":\\\"blue\\\"}\"}}"
+            }
+]
+        },
+	{
+          "type": "minecraft:item",
+          "name": "minecraft:emerald",
+          "weight": 20
+        }
+      ]
+    },
+    {
+      "rolls": 4,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:air",
+          "weight": 55
+        },
+	{
+          "type": "minecraft:item",
+          "name": "minecraft:emerald",
+          "weight": 20
+        },
+	{
+          "type": "minecraft:item",
+          "name": "minecraft:apple",
+          "weight": 10
+        },
+	{
+          "type": "minecraft:item",
+          "name": "minecraft:lapis_lazuli",
+          "weight": 20
+	},
+	{
+          "type": "minecraft:item",
+          "name": "minecraft:ghast_tear",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"{\\\"text\\\":\\\"光明精华\\\",\\\"italic\\\":false,\\\"color\\\":\\\"blue\\\"}\"}}"
+            }
+]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:air",
+          "weight": 985
+        },
+	{
+          "type": "minecraft:item",
+          "name": "minecraft:glistering_melon_slice",
+          "weight": 15
+        }
+      ]
+    }
+  ]
+}

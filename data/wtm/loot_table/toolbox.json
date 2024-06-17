@@ -1,0 +1,222 @@
+{
+  "pools": [
+    {
+      "rolls": 27,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:air",
+          "weight": 880
+        },
+        {
+          "type": "minecraft:item",
+          "name": "wooden_axe",
+          "weight": 40
+        },
+        {
+          "type": "minecraft:item",
+          "name": "wooden_pickaxe",
+          "weight": 50
+        },
+        {
+          "type": "minecraft:item",
+          "name": "wooden_shovel",
+          "weight": 60
+        },
+        {
+          "type": "minecraft:item",
+          "name": "wooden_hoe",
+          "weight": 55
+        },
+        {
+          "type": "minecraft:item",
+          "name": "stone_axe",
+          "weight": 35
+        },
+        {
+          "type": "minecraft:item",
+          "name": "stone_pickaxe",
+          "weight": 40
+        },
+        {
+          "type": "minecraft:item",
+          "name": "stone_shovel",
+          "weight": 45
+        },
+        {
+          "type": "minecraft:item",
+          "name": "stone_hoe",
+          "weight": 40
+        },
+        {
+          "type": "minecraft:item",
+          "name": "golden_pickaxe",
+          "weight": 25
+        },
+        {
+          "type": "minecraft:item",
+          "name": "golden_axe",
+          "weight": 28
+        },
+        {
+          "type": "minecraft:item",
+          "name": "fishing_rod",
+          "weight": 30,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Damage:30}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "shears",
+          "weight": 20
+        },
+        {
+          "type": "minecraft:item",
+          "name": "flint_and_steel",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Damage:50}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "diamond_pickaxe",
+          "weight": 8,
+          "functions": [
+            {
+              "function": "minecraft:set_damage",
+              "damage": 1000
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "diamond_shovel",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Damage:1100}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "diamond_hoe",
+          "weight": 7,
+          "functions": [
+            {
+              "function": "minecraft:enchant_randomly",
+              "enchantments": [
+                "minecraft:sharpness",
+                "minecraft:smite",
+                "minecraft:bane_of_arthropods"
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 80
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Damage:1100}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "diamond_axe",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "minecraft:enchant_randomly",
+              "enchantments": [
+                "minecraft:efficiency",
+                "minecraft:knockback",
+                "minecraft:vanishing_curse",
+                "minecraft:bane_of_arthropods",
+                "minecraft:sharpness"
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 50
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Damage:1100}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "bucket",
+          "weight": 23
+        },
+        {
+          "type": "minecraft:item",
+          "name": "stick",
+          "weight": 40
+        },
+        {
+          "type": "minecraft:item",
+          "name": "coal",
+          "weight": 60
+        },
+	{
+          "type": "minecraft:item",
+          "name": "tnt",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 3,
+                "max": 5
+              }
+            },
+            {
+              "function": "minecraft:limit_count",
+              "limit": {
+                "min": 1,
+                "max": 5
+              }
+            }
+          ]
+        },
+	{
+          "type": "minecraft:item",
+          "name": "stonecutter",
+          "weight": 12,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 4
+              }
+            },
+            {
+              "function": "minecraft:limit_count",
+              "limit": {
+                "min": 1,
+                "max": 4
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
