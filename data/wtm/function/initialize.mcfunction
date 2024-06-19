@@ -9,6 +9,18 @@ scoreboard objectives add fixed1 dummy
 scoreboard objectives add fixed2 dummy
 scoreboard objectives add fixed3 dummy
 scoreboard objectives add wtmgr_it dummy
+scoreboard objectives add t1 dummy
+scoreboard objectives add MultiMenu trigger
+function wtm:wtm_reset
 scoreboard players set @n[tag=sc] fixed1 -99999
 scoreboard players set @n[tag=sc] fixed2 -99999
 scoreboard players set @n[tag=sc] fixed3 -99999
+gamerule commandBlockOutput false
+gamerule doFireTick false
+gamerule keepInventory true
+gamerule doImmediateRespawn
+gamerule doMobSpawning false
+gamerule doVinesSpread false
+gamerule spawnRadius 1
+gamerule mobGriefing false
+setblock 0 -2 0 repeating_command_block{Command:"function wtm:tick1_o",auto: 1b, powered: 0b, conditionMet: 1b}
