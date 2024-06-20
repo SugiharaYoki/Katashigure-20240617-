@@ -1,5 +1,0 @@
-execute if block ~ ~ ~ command_block[facing=north] run setblock ~ ~ ~ structure_block{ignoreEntities:1b,powered:0b,mirror:"NONE",rotation:"NONE",posX:-5,posY:-1,posZ:-9,mode:"LOAD",name:"wtm:a1_split001"}
-execute if block ~ ~ ~ command_block[facing=south] run setblock ~ ~ ~ structure_block{ignoreEntities:1b,powered:0b,mirror:"NONE",rotation:"CLOCKWISE_180",posX:5,posY:-1,posZ:9,mode:"LOAD",name:"wtm:a1_split001"}
-execute if block ~ ~ ~ command_block[facing=west] run setblock ~ ~ ~ structure_block{ignoreEntities:1b,powered:0b,mirror:"NONE",rotation:"COUNTERCLOCKWISE_90",posX:-9,posY:-1,posZ:5,mode:"LOAD",name:"wtm:a1_split001"}
-execute if block ~ ~ ~ command_block[facing=east] run setblock ~ ~ ~ structure_block{ignoreEntities:1b,powered:0b,mirror:"NONE",rotation:"CLOCKWISE_90",posX:9,posY:-1,posZ:-5,mode:"LOAD",name:"wtm:a1_split001"}
-scoreboard players set @n[tag=sc] wtmgr_split 4

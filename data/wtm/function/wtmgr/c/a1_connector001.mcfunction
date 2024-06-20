@@ -1,4 +1,0 @@
-execute if block ~ ~ ~ command_block[facing=east] run setblock ~ ~ ~ structure_block{ignoreEntities:1b,powered:0b,rotation:"NONE",posX:1,posY:-3,posZ:-5,mode:"LOAD",name:"wtm:a1_connector001"}
-execute if block ~ ~ ~ command_block[facing=west] run setblock ~ ~ ~ structure_block{ignoreEntities:1b,powered:0b,mirror:"NONE",rotation:"CLOCKWISE_180",posX:-1,posY:-3,posZ:5,mode:"LOAD",name:"wtm:a1_connector001"}
-execute if block ~ ~ ~ command_block[facing=north] run setblock ~ ~ ~ structure_block{ignoreEntities:1b,powered:0b,mirror:"NONE",rotation:"COUNTERCLOCKWISE_90",posX:-5,posY:-3,posZ:-1,mode:"LOAD",name:"wtm:a1_connector001"}
-execute if block ~ ~ ~ command_block[facing=south] run setblock ~ ~ ~ structure_block{ignoreEntities:1b,powered:0b,mirror:"NONE",rotation:"CLOCKWISE_90",posX:5,posY:-3,posZ:1,mode:"LOAD",name:"wtm:a1_connector001"}

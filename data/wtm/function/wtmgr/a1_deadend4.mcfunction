@@ -1,1 +1,0 @@
-function wtm:wtmg/a1_deadend1
