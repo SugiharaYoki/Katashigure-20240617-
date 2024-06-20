@@ -9,6 +9,7 @@ scoreboard objectives add fixed1 dummy
 scoreboard objectives add fixed2 dummy
 scoreboard objectives add fixed3 dummy
 scoreboard objectives add wtmgr_it dummy
+scoreboard objectives add wtmgr_split dummy
 scoreboard objectives add t1 dummy
 scoreboard objectives add MultiMenu trigger
 function wtm:wtm_reset

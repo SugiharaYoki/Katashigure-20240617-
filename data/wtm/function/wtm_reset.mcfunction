@@ -5,5 +5,7 @@ scoreboard objectives add wtm_shd dummy
 scoreboard objectives add wtm_shop dummy
 scoreboard players set @a u_flinta 0
 scoreboard players set @n[tag=sc] wtm_t1 0
+scoreboard players set @n[tag=sc] wtmgr_it 0
+scoreboard players set @n[tag=sc] wtmgr_split 0
 function wtm:map_clear
 tag @n[tag=sc] remove wtm_started
