@@ -1,6 +1,10 @@
 execute as @p[tag=SEAPT,x=90081,y=106,z=146,distance=0..1.3,tag=!e_i_01] at @s run tellraw @s {"text": "接待窗口内并没有工作人员。我观察了里面的痕迹，似乎工作人员离开得很匆忙。","color": "gray"}
 execute as @p[tag=SEAPT,x=90081,y=106,z=146,distance=0..1.3,tag=!e_i_01] at @s run tag @s add e_i_01
 
+execute as @p[tag=SEAPT,x=90087,y=109,z=133,distance=0..1.3,tag=!e_i_09] at @s run tellraw @s {"text": "许多资源箱都被锁起来了，能顺利打开的那些里面也只存放了极少量的必需品。","color": "gray"}
+execute as @p[tag=SEAPT,x=90087,y=109,z=133,distance=0..1.3,tag=!e_i_09] at @s run tag @s add e_i_09
+
+
 execute as @p[tag=SEAPT,x=90076,y=104,z=140,distance=..7,tag=!e_i_02] at @s anchored eyes facing 90076 104 140 anchored feet positioned ^ ^ ^1 rotated as @s positioned ^ ^ ^-1 if entity @s[distance=..0.1] run tellraw @s {"text": "货物运输通道的前门是关闭状态，看来得从维修通道走了。","color": "gray"}
 execute as @p[tag=SEAPT,x=90076,y=104,z=140,distance=..7,tag=!e_i_02] at @s anchored eyes facing 90076 104 140 anchored feet positioned ^ ^ ^1 rotated as @s positioned ^ ^ ^-1 if entity @s[distance=..0.1] run tag @s add e_i_02
 
@@ -30,5 +34,5 @@ execute as @p[tag=SEAPT,x=90101,y=122,z=142,distance=0..1.4,tag=!e_i_06] at @s r
 execute as @p[tag=SEAPT,x=90101,y=122,z=142,distance=0..1.4,tag=!e_i_06] as @a[tag=SEAPT,tag=!e_i_06] at @s run tag @s add e_i_06
 
 execute store result score @n[tag=sc] rng1 run random value 1..10
-execute if entity @n[tag=sc,scores={rng1=1..8}] run particle minecraft:electric_spark 90109.07 123.43 120.69 0.2 0.2 0.2 0.1 1
-execute if entity @n[tag=sc,scores={rng1=1..8}] run particle minecraft:electric_spark 90115.88 123.41 138.48 0.2 0.2 0.2 0.1 1
+execute if entity @n[tag=sc,scores={rng1=1..4}] run particle minecraft:electric_spark 90109.07 123.43 120.69 0.2 0.2 0.2 0.05 1
+execute if entity @n[tag=sc,scores={rng1=1..4}] run particle minecraft:electric_spark 90115.88 123.41 138.48 0.2 0.2 0.2 0.05 1

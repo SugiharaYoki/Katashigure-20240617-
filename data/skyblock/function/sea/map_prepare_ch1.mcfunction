@@ -19,6 +19,7 @@ weather thunder 1000000s
 time set 12000t
 gamerule doDaylightCycle false
 gamerule keepInventory true
+scoreboard players set @n[tag=sc] sea_4temp1 -1
 
 
 setblock 90060 103 131 minecraft:jukebox[has_record=true]{RecordItem:{id:"minecraft:music_disc_creator_music_box"}}
@@ -51,6 +52,7 @@ setblock 90108 118 136 minecraft:waxed_copper_bulb[lit=true]
 setblock 90112 118 140 minecraft:waxed_copper_bulb[lit=true]
 setblock 90107 123 143 minecraft:redstone_lamp[lit=false]
 setblock 90112 123 143 minecraft:redstone_lamp[lit=false]
+setblock 90104 122 134 minecraft:cracked_deepslate_tiles
 
 #{Lock:"SystemCardinal"}
 
