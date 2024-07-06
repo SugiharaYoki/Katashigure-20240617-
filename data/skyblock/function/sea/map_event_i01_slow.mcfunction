@@ -122,48 +122,53 @@ execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp3=73}] run playsou
 
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=216}] positioned 90120 123 123 run tellraw @a[distance=0..5] {"text":"联络机台：“……有人在维修层？维修层居然还有活人？你等一下！我这就调去监控……”","color":"dark_purple"}
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=216}] positioned 90120 123 123 run playsound minecraft:entity.endermite.ambient ambient @a ~ ~ ~ 0.8 0.1
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=232}] positioned 90120 123 123 run tellraw @a[distance=0..5] {"text":"联络机台：“……我听不清你在说什么，如果你能听到我说话的话，千万不要来办公区域！这里已经彻底沦陷……等、等下……”","color":"dark_purple"}
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=232}] positioned 90120 123 123 run playsound minecraft:entity.endermite.ambient ambient @a ~ ~ ~ 0.8 0.1
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=252}] positioned 90120 123 123 run tellraw @a[distance=0..5] {"text":"联络机台：“我从监控看到你附近的房间了！快从那里离开，立——”","color":"dark_purple"}
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=252}] positioned 90120 123 123 run playsound minecraft:entity.endermite.ambient ambient @a ~ ~ ~ 0.8 0.1
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=266}] positioned 90120 123 123 run tellraw @a[distance=0..5] {"text":"联络机台：“……”","color":"dark_purple"}
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=242}] positioned 90120 123 123 run tellraw @a[distance=0..5] {"text":"联络机台：“……我听不清你在说什么，如果你能听到我说话的话，千万不要来办公区域！这里已经彻底沦陷……等、等下……”","color":"dark_purple"}
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=242}] positioned 90120 123 123 run playsound minecraft:entity.endermite.ambient ambient @a ~ ~ ~ 0.8 0.1
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=272}] positioned 90120 123 123 run tellraw @a[distance=0..5] {"text":"联络机台：“我从监控看到你附近的房间了！快从那里离开，立——”","color":"dark_purple"}
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=272}] positioned 90120 123 123 run playsound minecraft:entity.endermite.ambient ambient @a ~ ~ ~ 0.8 0.1
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=296}] positioned 90120 123 123 run tellraw @a[distance=0..5] {"text":"联络机台：“……”","color":"dark_purple"}
 
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=254..400}] run particle large_smoke 90120 123 115 0.2 0.5 0.2 0.01 3
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=274..400}] run particle large_smoke 90125 123 115 0.2 0.5 0.2 0.01 3
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=284..400}] run particle large_smoke 90123 121 115 0.2 0.5 0.2 0.01 3
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=290..400}] run particle large_smoke 90124 121 120 0.2 0.5 0.2 0.01 3
-execute store result score @n[tag=sc] rng2 run random value 1..11
-execute if entity @n[tag=sc,scores={sea_4temp2=254..355,scores={rng2=3..5}}] run playsound ambient.cave ambient @a 90100 150 100 50 1.2
-execute if entity @n[tag=sc,scores={sea_4temp2=254..355,scores={rng2=6}}] run playsound ambient.cave ambient @a 90100 150 100 50 0.8
-execute if entity @n[tag=sc,scores={sea_4temp2=254..355,scores={rng2=7}}] run setblock 90127 121 117 redstone_lamp[lit=true]
-execute if entity @n[tag=sc,scores={sea_4temp2=254..355,scores={rng2=8..9}}] run setblock 90127 121 117 redstone_lamp[lit=false]
-execute if entity @n[tag=sc,scores={sea_4temp2=365}] run setblock 90127 121 117 redstone_lamp[lit=true]
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=254..1100}] run particle large_smoke 90120 123 115 0.2 0.5 0.2 0.01 3
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=344..1100}] run particle large_smoke 90125 123 115 0.2 0.5 0.2 0.01 3
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=284..1100}] run particle large_smoke 90123 121 115 0.2 0.5 0.2 0.01 3
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=290..1100}] run particle large_smoke 90124 121 120 0.2 0.5 0.2 0.01 3
+execute store result score @n[tag=sc] rng2 run random value 1..14
+execute if entity @n[tag=sc,scores={sea_4temp2=274..1155,rng2=3}] run playsound ambient.cave ambient @a 90100 150 100 50 1.2
+execute if entity @n[tag=sc,scores={sea_4temp2=274..1155,rng2=6}] run playsound ambient.cave ambient @a 90100 150 100 50 0.8
+execute if entity @n[tag=sc,scores={sea_4temp2=234..1155,rng2=7}] run setblock 90127 121 117 redstone_lamp[lit=true]
+execute if entity @n[tag=sc,scores={sea_4temp2=234..1155,rng2=8..9}] run setblock 90127 121 117 redstone_lamp[lit=false]
+execute if entity @n[tag=sc,scores={sea_4temp2=1165}] run setblock 90127 121 117 redstone_lamp[lit=true]
 
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=280}] run particle minecraft:explosion 90122 125.0 114 0.3 0.3 0.3 0.1 4
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=280}] run playsound minecraft:entity.generic.explode ambient @a 90122 125.0 114 10 0.7
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=320}] run particle minecraft:explosion 90125 125.0 114 0.3 0.3 0.3 0.1 4
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=320}] run playsound minecraft:entity.generic.explode ambient @a 90125 125.0 114 10 0.7
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=280}] run fill 90122 125 114 90122 124 114 air
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=520}] run particle minecraft:explosion 90125 125.0 114 0.3 0.3 0.3 0.1 4
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=520}] run playsound minecraft:entity.generic.explode ambient @a 90125 125.0 114 10 0.7
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=520}] run fill 90125 125 114 90125 124 114 air
 
-execute store result score @n[tag=sc,scores={sea_player=1..}] rng1 run random value 1..16
-execute store result score @n[tag=sc,scores={sea_player=3..}] rng1 run random value 1..14
-execute store result score @n[tag=sc,scores={sea_player=5..}] rng1 run random value 1..11
-execute store result score @n[tag=sc] rng2 run random value 1..8
+execute store result score @n[tag=sc,scores={sea_4temp2=200..1200,sea_player=1..}] rng1 run random value 1..16
+execute store result score @n[tag=sc,scores={sea_4temp2=200..1200,sea_player=3..}] rng1 run random value 1..14
+execute store result score @n[tag=sc,scores={sea_4temp2=200..1200,sea_player=5..}] rng1 run random value 1..11
+execute store result score @n[tag=sc,scores={sea_4temp2=200..1200}] rng2 run random value 1..8
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=200..1200}] run scoreboard players add @s sea_4temp2 1
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=270}] positioned 90119 124 113 run function skyblock:sea/m/drowned
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=280}] positioned 90119 124 113 run function skyblock:sea/m/drowned
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=292}] positioned 90128 124 113 run function skyblock:sea/m/drowned
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=284..355,rng1=1,rng2=1..2}] positioned 90119 124 113 run function skyblock:sea/m/drowned
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=284..355,rng1=1,rng2=3..4}] positioned 90128 124 113 run function skyblock:sea/m/drowned
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=294..355,rng1=1,rng2=5}] positioned 90119 124 113 run function skyblock:sea/m/drowned_hat
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=294..355,rng1=1,rng2=6}] positioned 90128 124 113 run function skyblock:sea/m/drowned_hat
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=314..355,rng1=1,rng2=7}] positioned 90119 124 113 run function skyblock:sea/m/drowned_maintenance
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=314..355,rng1=1,rng2=8}] positioned 90128 124 113 run function skyblock:sea/m/drowned_maintenance
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=330}] positioned 90127 126 122 run function skyblock:sea/m/pillager
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=350}] positioned 90127 126 122 run function skyblock:sea/m/pillager
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=350,sea_player=3..}] positioned 90127 126 122 run function skyblock:sea/m/pillager
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=335}] run playsound minecraft:block.iron_trapdoor.open ambient @a 90127.44 125.00 122.83 4
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=335}] run setblock 90127 125 122 minecraft:iron_trapdoor[half=bottom,open=true]
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=358}] positioned 90120 123 123 run tellraw @a[distance=0..55] {"text":"联络机台：“……听得到吗？！我强行关闭了那一片区域的连锁反应机械，通风口应该自动关闭了！”","color":"dark_purple"}
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=358}] positioned 90120 123 123 run playsound minecraft:entity.endermite.ambient ambient @a ~ ~ ~ 0.8 0.1
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=375}] positioned 90120 123 123 run tellraw @a[distance=0..55] {"text":"联络机台：“我这里已经不安全了，去物资层找台联络机台联系我，那里至少还没断电——”","color":"dark_purple"}
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=375}] positioned 90120 123 123 run playsound minecraft:entity.endermite.ambient ambient @a ~ ~ ~ 0.8 0.1
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=392}] positioned 90120 123 123 run tellraw @a[distance=0..55] {"text":"联络机台：“……”","color":"dark_purple"}
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=300}] positioned 90119 124 113 run function skyblock:sea/m/drowned
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=342}] positioned 90128 124 113 run function skyblock:sea/m/drowned
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=334..1055,rng1=1,rng2=1..2}] positioned 90119 124 113 run function skyblock:sea/m/drowned
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=344..1055,rng1=1,rng2=3..4}] positioned 90128 124 113 run function skyblock:sea/m/drowned
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=544..1005,rng1=1,rng2=5}] positioned 90119 124 113 run function skyblock:sea/m/drowned_hat
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=554..1005,rng1=1,rng2=6}] positioned 90128 124 113 run function skyblock:sea/m/drowned_hat
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=614..1025,rng1=1,rng2=7}] positioned 90119 124 113 run function skyblock:sea/m/drowned_maintenance
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=614..1025,rng1=1,rng2=8}] positioned 90128 124 113 run function skyblock:sea/m/drowned_maintenance
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=930}] positioned 90127 126 122 run function skyblock:sea/m/pillager
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=950}] positioned 90127 126 122 run function skyblock:sea/m/pillager
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=950,sea_player=3..}] positioned 90127 126 122 run function skyblock:sea/m/pillager
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=1050}] positioned 90127 126 122 run function skyblock:sea/m/pillager
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=1050,sea_player=3..}] positioned 90127 126 122 run function skyblock:sea/m/pillager
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=935}] run playsound minecraft:block.iron_trapdoor.open ambient @a 90127.44 125.00 122.83 4
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=935}] run setblock 90127 125 122 minecraft:iron_trapdoor[half=bottom,open=true]
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=1058}] positioned 90120 123 123 run tellraw @a[distance=0..55] {"text":"联络机台：“……听得到吗？！我强行关闭了那一片区域的连锁反应机械，通风口应该自动关闭了！”","color":"dark_purple"}
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=1058}] positioned 90120 123 123 run playsound minecraft:entity.endermite.ambient ambient @a ~ ~ ~ 0.8 0.1
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=1085}] positioned 90120 123 123 run tellraw @a[distance=0..55] {"text":"联络机台：“我这里已经不安全了，去物资层找台联络机台联系我，那里至少还没断电——”","color":"dark_purple"}
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=1085}] positioned 90120 123 123 run playsound minecraft:entity.endermite.ambient ambient @a ~ ~ ~ 0.8 0.1
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=1150}] positioned 90120 123 123 run tellraw @a[distance=0..55] {"text":"联络机台：“……”","color":"dark_purple"}
