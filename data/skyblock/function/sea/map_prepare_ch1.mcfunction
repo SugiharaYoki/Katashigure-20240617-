@@ -11,7 +11,14 @@ scoreboard objectives add sea_4temp4 dummy
 scoreboard objectives add sea_4temp5 dummy
 scoreboard objectives add sea_crafter trigger
 scoreboard objectives add sea_i_emerald dummy
+scoreboard objectives add sea_i_trim_zombie dummy
+scoreboard objectives add sea_i_trim_spider dummy
+scoreboard objectives add sea_i_trim_human dummy
+scoreboard objectives add sea_i_trim_bug dummy
+scoreboard objectives add sea_i_trim_sea dummy
+scoreboard objectives add sea_i_trim_ghost dummy
 scoreboard objectives add sea_chapter dummy
+scoreboard objectives add sea_do_attack minecraft.custom:minecraft.damage_dealt
 scoreboard players set @n[tag=sc] sea_chapter 1
 setblock -25 23 32 soul_lantern
 fill 90065 104 139 90065 104 141 air
@@ -53,6 +60,9 @@ setblock 90112 118 140 minecraft:waxed_copper_bulb[lit=true]
 setblock 90107 123 143 minecraft:redstone_lamp[lit=false]
 setblock 90112 123 143 minecraft:redstone_lamp[lit=false]
 setblock 90104 122 134 minecraft:cracked_deepslate_tiles
+summon minecraft:armor_stand 90072 122 127
+summon minecraft:armor_stand 90073 122 127
+summon minecraft:armor_stand 90074 122 127
 
 #{Lock:"SystemCardinal"}
 
@@ -94,7 +104,7 @@ fill 90122 125 114 90122 124 114 iron_bars
 fill 90129 123 120 90129 122 119 iron_bars
 setblock 90127 125 122 minecraft:iron_trapdoor[half=bottom,open=false]
 tag @n[tag=sc] add SeGa_sea_ch1
-
+fill 90110 122 134 90109 124 134 air
 summon minecraft:interaction 90094 123.3 135 {CustomName:'[{"text":"多功能工作站"}]',Tags:["SEAcrafter"]}
 
 fill 90111 122 143 90108 122 143 lever[facing=north,powered=false]

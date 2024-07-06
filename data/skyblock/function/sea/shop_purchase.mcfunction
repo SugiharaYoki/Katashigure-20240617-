@@ -24,4 +24,11 @@ execute if entity @s[tag=sea_purchase_pass] run give @s leather_chestplate[custo
 execute if entity @s[tag=sea_purchase_pass] run clear @s emerald 4
 tag @s remove sea_purchase_pass
 
+execute if score @s sea_crafter matches 10004 as @s[scores={sea_i_emerald=..1}] run tellraw @s {"text":"失败！余额不足！","color":"red"}
+execute if score @s sea_crafter matches 10004 as @s[scores={sea_i_emerald=2..}] run tag @s add sea_purchase_pass
+execute if entity @s[tag=sea_purchase_pass] run playsound minecraft:item.armor.equip_iron neutral @s ~ ~ ~ 100
+execute if entity @s[tag=sea_purchase_pass] run give @s flint_and_steel[custom_name='{"text":"一次性打火石","italic":false,"color":"blue"}',custom_data={sea_1time_flint:true},attribute_modifiers=[{type:"generic.attack_damage",slot:"hand",id:"sea_special:001_01",amount:8,operation:"add_value"}],unbreakable={},enchantments={fire_aspect:1}]
+execute if entity @s[tag=sea_purchase_pass] run clear @s emerald 2
+tag @s remove sea_purchase_pass
+
 scoreboard players set @s sea_crafter 1
