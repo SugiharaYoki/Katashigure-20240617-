@@ -89,7 +89,10 @@ fill 90109 122 117 90110 123 117 iron_bars
 setblock 90115 122 117 chest[facing=west]
 item replace block 90115 122 117 container.12 with cookie 2
 item replace block 90115 122 117 container.14 with cookie 2
-
+fill 90125 125 114 90125 124 114 iron_bars
+fill 90122 125 114 90122 125 114 iron_bars
+fill 90129 123 120 90129 122 119 iron_bars
+setblock 90127 125 122 minecraft:iron_trapdoor[half=bottom,open=false]
 tag @n[tag=sc] add SeGa_sea_ch1
 
 summon minecraft:interaction 90094 123.3 135 {CustomName:'[{"text":"多功能工作站"}]',Tags:["SEAcrafter"]}
