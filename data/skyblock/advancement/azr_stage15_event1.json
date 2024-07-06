@@ -1,0 +1,28 @@
+{
+    "__comment": "Advancement Author is SugiharaYoki",
+    "display": {
+        "title": {
+            "text": "矿坑区域 - 矿坑底部的熔岩裂谷",
+            "color": "aqua",
+            "bold": true,
+            "italic": false
+        },
+        "description": {
+            "text": "踩上这些诡异的蓝绿色菌丝会让我头疼欲裂 直打恶心。更难以接受的恐怖事实 是它对那些怪物也会造成类似的结果。这座矿坑正变得诡异 既然残影就在这前头 那我得尽可能与这个还算得上靠谱的力天使会合才行。",
+            "color": "white"
+        },
+        "icon": {
+            "item": "minecraft:crimson_nylium"
+        },
+        "frame": "goal",
+        "show_toast": false,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "azrielsmidgarden": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:azr_stage15"
+}

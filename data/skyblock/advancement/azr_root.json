@@ -1,0 +1,28 @@
+{
+    "__comment": "Advancement Author is SugiharaYoki",
+    "display": {
+        "title": {
+            "text": "『亚兹列尔的中庭花园』",
+            "color": "dark_purple",
+            "bold": true,
+            "italic": false
+        },
+        "description": {
+            "text": "踏上前往神庭生命树的旅途",
+            "color": "white"
+        },
+        "icon": {
+            "item": "minecraft:beacon"
+        },
+        "frame": "goal",
+        "show_toast": false,
+        "announce_to_chat": true,
+        "hidden": false,
+        "background": "minecraft:textures/gui/advancements/backgrounds/nether.png"
+    },
+    "criteria": {
+        "azrielsmidgarden": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

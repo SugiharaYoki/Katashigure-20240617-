@@ -1,0 +1,2 @@
+execute as @s at @s if entity @s[predicate=!skyblock:sneaking,level=1..] run function skyblock:azr/ingame_azrielsmidgarden_skill_004a
+execute as @s at @s if entity @s[predicate=skyblock:sneaking,level=1..] run function skyblock:azr/ingame_azrielsmidgarden_skill_004b

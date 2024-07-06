@@ -1,0 +1,68 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 5,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:air",
+          "weight": 150
+        },
+	{
+          "type": "minecraft:item",
+          "name": "minecraft:gold_nugget",
+          "weight": 320
+        },
+	{
+          "type": "minecraft:item",
+          "name": "minecraft:blaze_powder",
+          "weight": 48,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"{\\\"text\\\":\\\"炽焰粉尘\\\",\\\"italic\\\":false,\\\"color\\\":\\\"dark_purple\\\"}\"}}"
+            }
+]
+        },
+	{
+          "type": "minecraft:item",
+          "name": "minecraft:ghast_tear",
+          "weight": 8,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"{\\\"text\\\":\\\"黑暗精华\\\",\\\"italic\\\":false,\\\"color\\\":\\\"dark_purple\\\"}\"}}"
+            }
+	  ]
+        },
+	{
+          "type": "minecraft:item",
+          "name": "minecraft:ghast_tear",
+          "weight": 18,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"{\\\"text\\\":\\\"猩红精华\\\",\\\"italic\\\":false,\\\"color\\\":\\\"dark_purple\\\"}\"}}"
+            }
+	  ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:air",
+          "weight": 995
+        },
+	{
+          "type": "minecraft:item",
+          "name": "minecraft:glistering_melon_slice",
+          "weight": 5
+        }
+      ]
+    }
+  ]
+}

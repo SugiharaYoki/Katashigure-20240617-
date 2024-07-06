@@ -1,0 +1,94 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 3,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:air",
+          "weight": 800
+        },
+	{
+          "type": "minecraft:item",
+          "name": "minecraft:raw_iron",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"{\\\"text\\\":\\\"钝铁\\\",\\\"italic\\\":false,\\\"color\\\":\\\"white\\\"}\"}}"
+            }
+]
+        },
+	{
+          "type": "minecraft:item",
+          "name": "minecraft:paper",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"{\\\"text\\\":\\\"圣殿信条\\\",\\\"italic\\\":false,\\\"color\\\":\\\"blue\\\"}\"}}"
+            }
+]
+        },
+	{
+          "type": "minecraft:item",
+          "name": "minecraft:emerald",
+          "weight": 200
+        },
+	      {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_sword",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"{\\\"text\\\":\\\"铁剑·黑钢\\\",\\\"italic\\\":false,\\\"color\\\":\\\"dark_red\\\"}\"},AttributeModifiers:[{AttributeName:\"generic.attack_damage\",Amount:5.5,Operation:0,UUID:[I;84300,191,1,85],Slot:\"mainhand\"},{AttributeName:\"generic.attack_speed\",Amount:-2.3,Operation:0,UUID:[I;84300,191,1,86],Slot:\"mainhand\"}],Unbreakable:true}"
+            }
+          ]
+        },
+	      {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_axe",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"{\\\"text\\\":\\\"铁斧·黑钢\\\",\\\"italic\\\":false,\\\"color\\\":\\\"dark_red\\\"}\"},AttributeModifiers:[{AttributeName:\"generic.attack_damage\",Amount:8.5,Operation:0,UUID:[I;84300,191,1,87],Slot:\"mainhand\"},{AttributeName:\"generic.attack_speed\",Amount:-2.95,Operation:0,UUID:[I;84300,191,1,88],Slot:\"mainhand\"}],Unbreakable:true}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 3,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:air",
+          "weight": 55
+        },
+	{
+          "type": "minecraft:item",
+          "name": "minecraft:emerald",
+          "weight": 20
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:air",
+          "weight": 995
+        },
+	{
+          "type": "minecraft:item",
+          "name": "minecraft:glistering_melon_slice",
+          "weight": 5
+        }
+      ]
+    }
+  ]
+}

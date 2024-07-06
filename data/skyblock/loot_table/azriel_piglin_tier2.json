@@ -1,0 +1,105 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 6,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:air",
+          "weight": 1050
+        },
+	{
+          "type": "minecraft:item",
+          "name": "minecraft:cooked_porkchop",
+          "weight": 80
+        },
+	{
+          "type": "minecraft:item",
+          "name": "minecraft:gold_nugget",
+          "weight": 760
+        },
+	{
+          "type": "minecraft:item",
+          "name": "minecraft:raw_gold",
+          "weight": 40,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"{\\\"text\\\":\\\"钝金\\\",\\\"italic\\\":false,\\\"color\\\":\\\"white\\\"}\"}}"
+            }
+	  ]
+        },
+	      {
+          "type": "minecraft:item",
+          "name": "minecraft:golden_sword",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"{\\\"text\\\":\\\"纯金单刃剑\\\",\\\"italic\\\":false,\\\"color\\\":\\\"dark_red\\\"}\"},AttributeModifiers:[{AttributeName:\"generic.attack_damage\",Amount:8.0,Operation:0,UUID:[I;84300,102,1,7045],Slot:\"mainhand\"},{AttributeName:\"generic.attack_speed\",Amount:-2.3,Operation:0,UUID:[I;84300,102,1,8045],Slot:\"mainhand\"}],Enchantments:[{id:\"minecraft:smite\",lvl:2},{id:\"minecraft:bane_of_arthropods\",lvl:2},{id:\"minecraft:unbreaking\",lvl:5}]}"
+            }
+          ]
+        },
+	      {
+          "type": "minecraft:item",
+          "name": "minecraft:golden_axe",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"{\\\"text\\\":\\\"纯金长柄斧\\\",\\\"italic\\\":false,\\\"color\\\":\\\"dark_red\\\"}\"},AttributeModifiers:[{AttributeName:\"generic.attack_damage\",Amount:11.0,Operation:0,UUID:[I;84300,102,1,70452],Slot:\"mainhand\"},{AttributeName:\"generic.attack_speed\",Amount:-2.7,Operation:0,UUID:[I;84300,102,1,80452],Slot:\"mainhand\"}],Enchantments:[{id:\"minecraft:smite\",lvl:2},{id:\"minecraft:bane_of_arthropods\",lvl:2},{id:\"minecraft:unbreaking\",lvl:5}]}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 3,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:air",
+          "weight": 56
+        },
+	{
+          "type": "minecraft:item",
+          "name": "minecraft:ghast_tear",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"{\\\"text\\\":\\\"黑暗精华\\\",\\\"italic\\\":false,\\\"color\\\":\\\"dark_purple\\\"}\"}}"
+            }
+	  ]
+        },
+	{
+          "type": "minecraft:item",
+          "name": "minecraft:red_dye",
+          "weight": 4,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"{\\\"text\\\":\\\"遗存的狂戮\\\",\\\"italic\\\":false,\\\"color\\\":\\\"dark_purple\\\"}\"}}"
+            }
+	  ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:air",
+          "weight": 995
+        },
+	{
+          "type": "minecraft:item",
+          "name": "minecraft:glistering_melon_slice",
+          "weight": 5
+        }
+      ]
+    }
+  ]
+}

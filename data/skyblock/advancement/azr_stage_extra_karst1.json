@@ -1,0 +1,28 @@
+{
+    "__comment": "Advancement Author is SugiharaYoki",
+    "display": {
+        "title": {
+            "text": "牢房区域 - 岩溶水洞",
+            "color": "blue",
+            "bold": true,
+            "italic": false
+        },
+        "description": {
+            "text": "怪物的大规模骚乱与破坏导致牢房石壁多少有坍塌 因此周边的自然溶洞体系得以拨云见日。此处生态链非常简单 且怪物数量稀少 却难以自由行动。不知牢房周边这些四通八达的溶洞还有多少尚未被我探寻而见。",
+            "color": "white"
+        },
+        "icon": {
+            "item": "minecraft:dripstone_block"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "azrielsmidgarden": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:azr_stage_bonus_breakout"
+}

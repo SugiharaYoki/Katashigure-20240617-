@@ -1,0 +1,38 @@
+{
+    "__comment": "Advancement Author is SugiharaYoki",
+    "display": {
+        "title": {
+            "text": "这是饮料吗？",
+            "color": "aqua"
+        },
+        "description": {
+            "text": "喝下 兰花药水（旅行版）",
+            "color": "gray",
+            "bold": false,
+            "italic": false
+        },
+        "icon": {
+            "item": "minecraft:blue_orchid"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "consumeitem": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "item": "minecraft:potion",
+                    "nbt": "{CustomPotionEffects:[{Id:12,Amplifier:2,Duration:120},{Id:3,Amplifier:2,Duration:120},{Id:1,Amplifier:2,Duration:120},{Id:8,Amplifier:2,Duration:120}],display:{Name:\"{\\\"text\\\":\\\"兰花药水·旅行版\\\",\\\"color\\\":\\\"aqua\\\",\\\"italic\\\":\\\"false\\\"}\",Lore:[\"{\\\"text\\\":\\\"兰花之城的大魔法师专门研制的便捷药水。\\\",\\\"color\\\":\\\"dark_aqua\\\",\\\"italic\\\":\\\"false\\\"}\"]},CustomPotionColor:1216233}",
+                    "count": {
+                        "min": 1,
+                        "max": 1
+                    }
+                }
+            }
+        }
+    },
+    "parent": "skyblock:levelbonus_firsttime"
+}

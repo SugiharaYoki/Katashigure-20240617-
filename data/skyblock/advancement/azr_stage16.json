@@ -1,0 +1,28 @@
+{
+    "__comment": "Advancement Author is SugiharaYoki",
+    "display": {
+        "title": {
+            "text": "矿坑区域 - 通往神庭的传送门",
+            "color": "aqua",
+            "bold": true,
+            "italic": false
+        },
+        "description": {
+            "text": "我原本便是通过这扇大传送门到达了神庭花园的入口 但现在这扇门并未开启…… 等等 是我产生幻觉了吗？传送门是什么时候打开的？我难不成终于可以脱离战场 回到地上了？",
+            "color": "white"
+        },
+        "icon": {
+            "item": "minecraft:crying_obsidian"
+        },
+        "frame": "goal",
+        "show_toast": false,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "azrielsmidgarden": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:azr_stage15_event1"
+}

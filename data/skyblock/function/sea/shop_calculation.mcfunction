@@ -1,0 +1,1 @@
+execute as @s store result score @s sea_i_emerald run clear @s emerald 0

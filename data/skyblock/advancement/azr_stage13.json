@@ -1,0 +1,28 @@
+{
+    "__comment": "Advancement Author is SugiharaYoki",
+    "display": {
+        "title": {
+            "text": "绯红森林区域 - 局部塌陷的熔岩竖井",
+            "color": "aqua",
+            "bold": true,
+            "italic": false
+        },
+        "description": {
+            "text": "这里的猪灵似乎分为两派 却几乎都会愤怒地朝我袭击过来……",
+            "color": "white"
+        },
+        "icon": {
+            "item": "minecraft:crimson_nylium"
+        },
+        "frame": "goal",
+        "show_toast": false,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "azrielsmidgarden": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:azr_stage13_event0"
+}

@@ -1,0 +1,28 @@
+{
+    "__comment": "Advancement Author is SugiharaYoki",
+    "display": {
+        "title": {
+            "text": "招待厅区域 - 外围核融合炉·西南",
+            "color": "green",
+            "bold": true,
+            "italic": false
+        },
+        "description": {
+            "text": "STAGE SUSPENSION",
+            "color": "light_purple"
+        },
+        "icon": {
+            "item": "minecraft:red_glazed_terracotta"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "azrielsmidgarden": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:azr_stage5"
+}

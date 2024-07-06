@@ -1,0 +1,29 @@
+{
+    "__comment": "Advancement Author is SugiharaYoki",
+    "display": {
+        "title": {
+            "text": "深雪山麓",
+            "color": "blue",
+            "italic": false,
+            "strikethrough": false,
+            "obfuscated": false
+        },
+        "description": {
+            "text": "踏上跑酷长廊的B路线",
+            "color": "gray"
+        },
+        "icon": {
+            "item": "minecraft:snow_block"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "general": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:parkour_stage3"
+}

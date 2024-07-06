@@ -1,0 +1,28 @@
+{
+    "__comment": "Advancement Author is SugiharaYoki",
+    "display": {
+        "title": {
+            "text": "矿坑区域 - 地脉的涌口",
+            "color": "aqua",
+            "bold": true,
+            "italic": false
+        },
+        "description": {
+            "text": "我此刻位于因战争而停工的黄金矿坑 不知出自什么原因 这里的地脉流动极其不稳 更糟的是我似乎正好拦在了两支军队的中间 这导致我要面对的绝对不止一个敌人 方才的矿洞塌陷后 从裂缝涌出了诡异的侵蚀性菌苔 不管如何我都不希望这样的“惊喜”会再度发生",
+            "color": "white"
+        },
+        "icon": {
+            "item": "minecraft:crimson_nylium"
+        },
+        "frame": "goal",
+        "show_toast": false,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "azrielsmidgarden": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:azr_stage14_event1"
+}

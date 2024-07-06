@@ -1,0 +1,29 @@
+{
+    "__comment": "Advancement Author is SugiharaYoki",
+    "display": {
+        "title": {
+            "text": "？？？",
+            "color": "gray",
+            "bold": true,
+            "strikethrough": false,
+            "obfuscated": false
+        },
+        "description": {
+            "text": "此刻暂时还未出现任何混沌反应",
+            "color": "gray"
+        },
+        "icon": {
+            "item": "minecraft:black_concrete"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "general": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:story_map008"
+}

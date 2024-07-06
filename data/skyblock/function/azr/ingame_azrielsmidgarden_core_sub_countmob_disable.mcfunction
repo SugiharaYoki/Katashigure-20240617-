@@ -1,0 +1,10 @@
+execute if entity @n[tag=sc,tag=Azr_Halt,scores={SeGa_StandLastP=9}] run scoreboard players add @n[tag=sc] SeGa_StandLast 1
+execute if entity @n[tag=sc,tag=Azr_Halt,scores={SeGa_StandLastP=16}] run scoreboard players add @n[tag=sc] SeGa_StandLast 1
+execute if entity @n[tag=sc,tag=Azr_Halt,scores={SeGa_StandLastP=18..19}] run scoreboard players add @n[tag=sc] SeGa_StandLast 1
+execute if entity @n[tag=sc,tag=Azr_Halt,scores={SeGa_StandLastP=25}] run scoreboard players add @n[tag=sc] SeGa_StandLast 1
+execute if entity @n[tag=sc,tag=Azr_Halt,scores={SeGa_StandLastP=28}] run scoreboard players add @n[tag=sc] SeGa_StandLast 1
+execute if entity @n[tag=sc,tag=Azr_Halt,scores={SeGa_StandLastP=301}] run scoreboard players add @n[tag=sc] SeGa_StandLast 1
+execute if entity @n[tag=sc,tag=Azr_Halt,scores={SeGa_StandLastP=35..38}] run scoreboard players add @n[tag=sc] Azr_Timerx4 1
+execute if entity @n[tag=sc,tag=Azr_Halt,scores={SeGa_StandLastP=42..43}] run scoreboard players add @n[tag=sc] Azr_Timerx4 1
+execute if entity @n[tag=sc,tag=Azr_Halt,scores={SeGa_StandLastP=44}] run scoreboard players add @n[tag=sc] Azr_Timerx4 1
+execute if entity @n[tag=sc,tag=Azr_Halt,scores={SeGa_StandLastP=51..54}] run scoreboard players add @n[tag=sc] Azr_Timerx4 1

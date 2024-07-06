@@ -1,0 +1,88 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 7,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:air",
+          "weight": 68
+        },
+	{
+          "type": "minecraft:item",
+          "name": "minecraft:rotten_flesh",
+          "weight": 10
+        },
+	{
+          "type": "minecraft:item",
+          "name": "minecraft:emerald",
+          "weight": 21
+        },
+	{
+          "type": "minecraft:item",
+          "name": "minecraft:raw_iron",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"{\\\"text\\\":\\\"钝铁\\\",\\\"italic\\\":false,\\\"color\\\":\\\"white\\\"}\"}}"
+            }
+]
+        }
+      ]
+    },
+    {
+      "rolls": 5,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:air",
+          "weight": 50
+        },
+	{
+          "type": "minecraft:item",
+          "name": "minecraft:emerald",
+          "weight": 20
+        },
+	{
+          "type": "minecraft:item",
+          "name": "minecraft:ghast_tear",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"{\\\"text\\\":\\\"光明精华\\\",\\\"italic\\\":false,\\\"color\\\":\\\"blue\\\"}\"}}"
+            }
+]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:air",
+          "weight": 995
+        },
+	{
+          "type": "minecraft:item",
+          "name": "minecraft:glistering_melon_slice",
+          "weight": 5
+        },
+	{
+          "type": "minecraft:item",
+          "name": "minecraft:zombie_head",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"{\\\"text\\\":\\\"腐烂的尸首\\\",\\\"italic\\\":false,\\\"color\\\":\\\"blue\\\"}\"}}"
+            }
+	  ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+    "__comment": "Advancement Author is SugiharaYoki",
+    "display": {
+        "title": {
+            "text": "厄幻的深渊之理",
+            "color": "dark_blue",
+"bold":true
+        },
+        "description": {
+            "text": "选择职业<依莉卡特魔法师>至少500次"
+        },
+        "icon": {
+            "item": "minecraft:blaze_powder"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "jobtime": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:job8_time_100"
+}

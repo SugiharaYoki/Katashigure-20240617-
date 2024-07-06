@@ -1,0 +1,28 @@
+{
+    "__comment": "Advancement Author is SugiharaYoki",
+    "display": {
+        "title": {
+            "text": "绯红森林区域 - 隐秘的祭坛状房间",
+            "color": "green",
+            "bold": true,
+            "italic": false
+        },
+        "description": {
+            "text": "STAGE IMPERSONATE",
+            "color": "light_purple"
+        },
+        "icon": {
+            "item": "minecraft:black_glazed_terracotta"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "azrielsmidgarden": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:azr_stage13"
+}

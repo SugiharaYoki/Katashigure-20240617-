@@ -1,0 +1,13 @@
+tellraw @s {"text":"『技能点分配』","color":"blue"}
+execute if score @s Azr_PlyAtk matches ..11 run tellraw @s [{"text":"  力量（物理攻击） Lv","color":"white"},{"score":{"name":"@s","objective":"Azr_PlyAtk"}},{"text":"  "},{"text":"[强化]","color":"green","clickEvent":{"action":"run_command","value":"/trigger Common set 16310102"}}]
+execute if score @s Azr_PlyAtk matches 12.. run tellraw @s [{"text":"  力量（物理攻击） Lv","color":"white"},{"score":{"name":"@s","objective":"Azr_PlyAtk"}},{"text":"  "},{"text":"[强化]","color":"gray"}]
+execute if score @s Azr_PlyDef matches ..11 run tellraw @s [{"text":"  抗性（护甲韧性） Lv","color":"white"},{"score":{"name":"@s","objective":"Azr_PlyDef"}},{"text":"  "},{"text":"[强化]","color":"green","clickEvent":{"action":"run_command","value":"/trigger Common set 16310103"}}]
+execute if score @s Azr_PlyDef matches 12.. run tellraw @s [{"text":"  抗性（护甲韧性） Lv","color":"white"},{"score":{"name":"@s","objective":"Azr_PlyAtk"}},{"text":"  "},{"text":"[强化]","color":"gray"}]
+execute if score @s Azr_PlyAgi matches ..11 run tellraw @s [{"text":"  敏捷（移动速度） Lv","color":"white"},{"score":{"name":"@s","objective":"Azr_PlyAgi"}},{"text":"  "},{"text":"[强化]","color":"green","clickEvent":{"action":"run_command","value":"/trigger Common set 16310104"}}]
+execute if score @s Azr_PlyAgi matches 12.. run tellraw @s [{"text":"  敏捷（移动速度） Lv","color":"white"},{"score":{"name":"@s","objective":"Azr_PlyAtk"}},{"text":"  "},{"text":"[强化]","color":"gray"}]
+execute if score @s Azr_PlyCon matches ..11 run tellraw @s [{"text":"  凝神（攻击速度） Lv","color":"white"},{"score":{"name":"@s","objective":"Azr_PlyCon"}},{"text":"  "},{"text":"[强化]","color":"green","clickEvent":{"action":"run_command","value":"/trigger Common set 16310107"}}]
+execute if score @s Azr_PlyCon matches 12.. run tellraw @s [{"text":"  凝神（攻击速度） Lv","color":"white"},{"score":{"name":"@s","objective":"Azr_PlyAtk"}},{"text":"  "},{"text":"[强化]","color":"gray"}]
+execute if score @s Azr_PlyMhp matches ..11 run tellraw @s [{"text":"  毅力（生命上限） Lv","color":"white"},{"score":{"name":"@s","objective":"Azr_PlyMhp"}},{"text":"  "},{"text":"[强化]","color":"green","clickEvent":{"action":"run_command","value":"/trigger Common set 16310105"}}]
+execute if score @s Azr_PlyMhp matches 12.. run tellraw @s [{"text":"  毅力（生命上限） Lv","color":"white"},{"score":{"name":"@s","objective":"Azr_PlyAtk"}},{"text":"  "},{"text":"[强化]","color":"gray"}]
+tellraw @s [{"text":"  重置技能点","color":"red","clickEvent":{"action":"run_command","value":"/trigger Common set 16310106"}}]
+scoreboard players set @s Common 0

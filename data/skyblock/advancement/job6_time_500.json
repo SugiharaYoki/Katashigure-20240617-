@@ -1,0 +1,26 @@
+{
+    "__comment": "Advancement Author is SugiharaYoki",
+    "display": {
+        "title": {
+            "text": "野生之灵的庇护神明",
+            "color": "dark_blue",
+"bold": true
+        },
+        "description": {
+            "text": "选择职业<艾弗斯驯兽人>至少500次"
+        },
+        "icon": {
+            "item": "minecraft:bone"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "jobtime": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:job6_time_100"
+}

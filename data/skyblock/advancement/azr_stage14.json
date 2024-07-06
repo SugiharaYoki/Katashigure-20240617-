@@ -1,0 +1,28 @@
+{
+    "__comment": "Advancement Author is SugiharaYoki",
+    "display": {
+        "title": {
+            "text": "绯红森林区域 - 彼列军前线地堡",
+            "color": "aqua",
+            "bold": true,
+            "italic": false
+        },
+        "description": {
+            "text": "我终于联系到了权之残影 他让我顺着地堡的路线 前去地狱的主战场 反正怎么想都是这老油条 又要借我的手去处理什么事情 希望我这回不会再 不明不白地死去并复活吧",
+            "color": "white"
+        },
+        "icon": {
+            "item": "minecraft:crimson_nylium"
+        },
+        "frame": "goal",
+        "show_toast": false,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "azrielsmidgarden": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:azr_stage13_event1"
+}

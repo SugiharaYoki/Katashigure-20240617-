@@ -1,0 +1,1 @@
+execute as @a[scores={Job=5,If_Squat=60..}] at @s run scoreboard players set @s If_Squat 60

@@ -1,0 +1,131 @@
+{
+  "pools": [
+    {
+      "rolls": 27,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "writable_book",
+          "weight": 50
+        },
+        {
+          "type": "minecraft:item",
+          "name": "experience_bottle",
+          "weight": 50,
+          "functions": [
+            {
+              "function": "minecraft:limit_count",
+              "limit": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "air",
+          "weight": 4000
+        },
+        {
+          "type": "minecraft:item",
+          "name": "nether_star",
+          "weight": 25,
+          "functions": [
+            {
+              "function": "minecraft:limit_count",
+              "limit": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "heart_of_the_sea",
+          "weight": 25
+        },
+        {
+          "type": "minecraft:item",
+          "name": "map",
+          "weight": 35
+        },
+        {
+          "type": "minecraft:item",
+          "name": "elder_guardian_spawn_egg",
+          "weight": 15,
+          "functions": [
+            {
+              "function": "minecraft:limit_count",
+              "limit": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "ender_chest",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:limit_count",
+              "limit": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "elytra",
+          "weight": 13
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tnt",
+          "weight": 20,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 3,
+                "max": 6
+              }
+            },
+            {
+              "function": "minecraft:limit_count",
+              "limit": {
+                "min": 3,
+                "max": 6
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "trident",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "minecraft:enchant_randomly",
+              "enchantments": [
+                "minecraft:loyalty",
+                "minecraft:riptide",
+                "minecraft:channeling"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "end_crystal",
+          "weight": 15
+        }
+      ]
+    }
+  ]
+}

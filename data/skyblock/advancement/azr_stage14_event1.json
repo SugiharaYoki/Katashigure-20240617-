@@ -1,0 +1,28 @@
+{
+    "__comment": "Advancement Author is SugiharaYoki",
+    "display": {
+        "title": {
+            "text": "绯红森林区域 - 腥色硝烟的林岳",
+            "color": "aqua",
+            "bold": true,
+            "italic": false
+        },
+        "description": {
+            "text": "甚至在我踏上地表之前 绝大多数的活物早已化作尸体 任凭我捡拾亡灵的遗留之物",
+            "color": "white"
+        },
+        "icon": {
+            "item": "minecraft:crimson_nylium"
+        },
+        "frame": "goal",
+        "show_toast": false,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "azrielsmidgarden": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:azr_stage14"
+}

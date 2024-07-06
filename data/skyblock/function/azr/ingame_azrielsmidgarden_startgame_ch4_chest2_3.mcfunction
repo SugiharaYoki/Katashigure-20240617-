@@ -1,0 +1,24 @@
+item replace block ~ ~ ~ container.0 with rotten_flesh 58
+item replace block ~ ~ ~ container.1 with bone[custom_name='{"text":"硬骨","italic":false,"color":"white"}'] 38
+item replace block ~ ~ ~ container.2 with string 30
+item replace block ~ ~ ~ container.3 with spider_eye 12
+item replace block ~ ~ ~ container.4 with stick 40
+item replace block ~ ~ ~ container.5 with flint 32
+item replace block ~ ~ ~ container.6 with black_dye[custom_name='{"text":"虫骸","italic":false,"color":"white"}'] 28
+item replace block ~ ~ ~ container.7 with iron_nugget[custom_name='{"text":"盾牌碎片","italic":false,"color":"white"}'] 28
+item replace block ~ ~ ~ container.8 with rabbit_foot[custom_name='{"text":"尸爪","italic":false,"color":"white"}'] 16
+item replace block ~ ~ ~ container.9 with ghast_tear[custom_name='{"text":"光明精华","italic":false,"color":"blue"}'] 12
+item replace block ~ ~ ~ container.10 with ghast_tear[custom_name='{"text":"黑暗精华","italic":false,"color":"dark_purple"}'] 4
+item replace block ~ ~ ~ container.11 with paper[custom_name='{"text":"圣殿信条","italic":false,"color":"blue"}'] 8
+item replace block ~ ~ ~ container.12 with honeycomb 12
+item replace block ~ ~ ~ container.13 with slime_ball 16
+item replace block ~ ~ ~ container.14 with lapis_lazuli 10
+item replace block ~ ~ ~ container.15 with chain 50
+item replace block ~ ~ ~ container.16 with sugar 12
+item replace block ~ ~ ~ container.17 with bone[custom_name='{"text":"冻骨","italic":false,"color":"white"}'] 12
+item replace block ~ ~ ~ container.18 with raw_iron[custom_name='{"text":"钝铁","italic":false,"color":"white"}'] 6 
+item replace block ~ ~ ~ container.19 with charcoal 12
+item replace block ~ ~ ~ container.20 with fermented_spider_eye[custom_name='{"text":"蛛毒囊","italic":false,"color":"white"}'] 6
+item replace block ~ ~ ~ container.21 with bread 12
+item replace block ~ ~ ~ container.22 with melon_slice 24
+execute if entity @a[tag=SeGa_StandLast,tag=Azr_SExUp06] run item replace block ~ ~ ~ container.23 with gold_nugget 40

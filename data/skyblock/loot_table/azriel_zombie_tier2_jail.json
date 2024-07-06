@@ -1,0 +1,71 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 5,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:air",
+          "weight": 70
+        },
+	{
+          "type": "minecraft:item",
+          "name": "minecraft:rotten_flesh",
+          "weight": 7
+        },
+	{
+          "type": "minecraft:item",
+          "name": "minecraft:emerald",
+          "weight": 16
+        },
+	{
+          "type": "minecraft:item",
+          "name": "minecraft:chain",
+          "weight": 3
+        }
+      ]
+    },
+    {
+      "rolls": 5,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:air",
+          "weight": 70
+        },
+	{
+          "type": "minecraft:item",
+          "name": "minecraft:emerald",
+          "weight": 20
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:air",
+          "weight": 995
+        },
+	{
+          "type": "minecraft:item",
+          "name": "minecraft:glistering_melon_slice",
+          "weight": 5
+        },
+	{
+          "type": "minecraft:item",
+          "name": "minecraft:stone_axe",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"{\\\"text\\\":\\\"磐石斧·尸劣\\\",\\\"italic\\\":false,\\\"color\\\":\\\"dark_red\\\"}\"},AttributeModifiers:[{AttributeName:\"generic.attack_damage\",Amount:10.5,Operation:0,UUID:[I;84300,1,109925,7079],Slot:\"mainhand\"},{AttributeName:\"generic.attack_speed\",Amount:-2.77,Operation:0,UUID:[I;84300,1,109925,8079],Slot:\"mainhand\"}],Unbreakable:1b}"
+            }
+]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+    "__comment": "Advancement Author is SugiharaYoki",
+    "display": {
+        "title": {
+            "text": "牢房区域 - 3",
+            "color": "aqua",
+            "bold": true,
+            "italic": false
+        },
+        "description": {
+            "text": "这里的怪物已经彻底失控了 但是我手中掌握的力量已今非昔比 我将会杀入牢房深处 夺得早就该在招待厅尽头获取的额外阳寿。",
+            "color": "white"
+        },
+        "icon": {
+            "item": "minecraft:netherite_block"
+        },
+        "frame": "goal",
+        "show_toast": false,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "azrielsmidgarden": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:azr_stage10_event1"
+}

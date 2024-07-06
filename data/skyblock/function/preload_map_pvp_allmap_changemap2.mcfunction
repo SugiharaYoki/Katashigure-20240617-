@@ -1,0 +1,12 @@
+setblock 24 66 -6 red_stained_glass
+setblock 24 66 -2 red_stained_glass
+setblock 24 66 2 red_stained_glass
+setblock 24 66 6 red_stained_glass
+setblock 24 66 10 red_stained_glass
+setblock 24 66 14 red_stained_glass
+setblock 20 64 -8 red_stained_glass
+setblock 20 64 -4 red_stained_glass
+setblock 20 64 0 red_stained_glass
+setblock 20 64 4 red_stained_glass
+setblock 20 64 8 red_stained_glass
+setblock 20 64 12 red_stained_glass
