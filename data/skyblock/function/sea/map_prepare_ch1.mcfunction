@@ -123,8 +123,13 @@ setblock 90108 122 146 chest[facing=east]
 item replace block 90108 122 146 container.11 with emerald 2
 item replace block 90108 122 146 container.13 with raw_iron 1
 item replace block 90108 122 146 container.15 with emerald 2
+setblock 90103 122 115 chest[facing=south]
+item replace block 90103 122 115 container.12 with coal 1
+item replace block 90103 122 115 container.14 with potato 2
+
 
 setblock 90106 122 145 minecraft:chiseled_bookshelf[facing=east]
 forceload add 90000 0 90200 200
 setblock 90060 104 144 air
 kill @e[type=armor_stand,x=90060,y=104,z=144,distance=0..5]
+setblock 90105 123 125 air

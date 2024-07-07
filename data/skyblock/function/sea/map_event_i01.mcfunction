@@ -2,8 +2,11 @@ execute as @a[tag=SEAPT,x=90081,y=106,z=146,distance=0..1.3,tag=!e_i_01] at @s r
 execute as @a[tag=SEAPT,x=90081,y=106,z=146,distance=0..1.3,tag=!e_i_01] at @s run tag @s add e_i_01
 
 execute as @a[tag=SEAPT,x=90087,y=109,z=133,distance=0..1.3,tag=!e_i_09] at @s run tellraw @s {"text": "许多资源箱都被锁起来了，能顺利打开的那些里面也只存放了极少量的必需品。","color": "gray"}
+execute as @a[tag=SEAPT,x=90087,y=109,z=133,distance=0..1.3,tag=!e_i_09] at @s positioned 90106 122 117 run function skyblock:sea/m/drowned_maintenance
 execute as @a[tag=SEAPT,x=90087,y=109,z=133,distance=0..1.3,tag=!e_i_09] at @s run tag @s add e_i_09
 
+execute as @a[tag=SEAPT,x=90104,y=122,z=121,distance=0..2,tag=!e_i_10] at @s run tellraw @s {"text": "这里的文件、资料、报告几乎全部都被搬空了，其他房间的也大差不离。究竟发生了什么？","color": "gray"}
+execute as @a[tag=SEAPT,x=90104,y=122,z=121,distance=0..2,tag=!e_i_10] at @s run tag @s add e_i_10
 
 execute as @a[tag=SEAPT,x=90076,y=104,z=140,distance=..7,tag=!e_i_02] at @s anchored eyes facing 90076 104 140 anchored feet positioned ^ ^ ^1 rotated as @s positioned ^ ^ ^-1 if entity @s[distance=..0.1] run tellraw @s {"text": "货物运输通道的前门是关闭状态，看来得从维修通道走了。","color": "gray"}
 execute as @a[tag=SEAPT,x=90076,y=104,z=140,distance=..7,tag=!e_i_02] at @s anchored eyes facing 90076 104 140 anchored feet positioned ^ ^ ^1 rotated as @s positioned ^ ^ ^-1 if entity @s[distance=..0.1] run tag @s add e_i_02
@@ -22,8 +25,9 @@ execute as @a[tag=SEAPT,x=90075,y=121,z=132,distance=0..3,tag=!e_i_04] at @s run
 execute as @a[tag=SEAPT,x=90075,y=121,z=132,distance=0..3,tag=!e_i_04] at @s run playsound ambient.underwater.loop master @s ~ ~ ~ 100 1.2
 execute as @a[tag=SEAPT,x=90075,y=121,z=132,distance=0..3,tag=!e_i_04] at @s run tag @s add e_i_04
 
-
 execute as @a[tag=SEAPT,x=90086,y=122,z=143,distance=0..2.4,tag=!e_i_05] at @s run playsound minecraft:entity.elder_guardian.curse hostile @a ~ ~ ~ 1 0.7
+execute as @a[tag=SEAPT,x=90086,y=122,z=143,distance=0..2.4,tag=!e_i_05] at @s run tellraw @s {"text": "等等，转角后面有……其他人？","color": "gray"}
+execute as @a[tag=SEAPT,x=90086,y=122,z=143,distance=0..2.4,tag=!e_i_05] at @s run tellraw @a[tag=SEAPT,distance=0.1..] [{"selector":"@s","color":"white"},{"text":"：转角后面有其他人，你们先别过去！","color":"white"}]
 execute as @a[tag=SEAPT,x=90086,y=122,z=143,distance=0..2.4,tag=!e_i_05] at @s run summon drowned 90090 122 144 {CustomName:'[{"text":"行走的腐尸"}]',DeathLootTable:"skyblock:sea_drowned1",Tags:["SEAmob"],attributes:[{id:"generic.attack_damage",base:2.0},{id:"generic.movement_speed",base:0.08}]}
 execute as @a[tag=SEAPT,x=90086,y=122,z=143,distance=0..2.4,tag=!e_i_05] positioned 90090 128 127 run function skyblock:sea/m/spider
 execute as @a[tag=SEAPT,x=90086,y=122,z=143,distance=0..2.4,tag=!e_i_05] run tag @a[tag=SEAPT] add e_i_05

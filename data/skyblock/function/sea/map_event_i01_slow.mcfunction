@@ -28,6 +28,9 @@ execute if entity @a[tag=SEAPT] as @n[tag=sc,tag=sea_cb002,scores={sea_4temp1=9}
 execute if entity @a[tag=SEAPT] as @n[tag=sc,tag=sea_cb002,scores={sea_4temp1=10}] run playsound minecraft:block.iron_door.open ambient @a 90084 124 139 4 0.3
 
 
+execute if block 90105 123 125 air run item replace block 90127 122 128 container.15 with lever[minecraft:can_place_on={blocks:"chiseled_deepslate"},custom_data={sea_lever2:true}] 1
+execute if block 90105 123 125 lever run clear @a[tag=SEAPT] lever[custom_data={sea_lever2:true}]
+
 execute as @n[tag=sc,scores={sea_4temp1=..-1}] run item replace block 90071 122 139 container.13 with lever[minecraft:can_place_on={blocks:"chiseled_deepslate"},custom_data={sea_lever1:true}] 1
 execute as @n[tag=sc,scores={sea_4temp1=0..}] run clear @a[tag=SEAPT] lever[custom_data={sea_lever1:true}]
 
@@ -49,8 +52,10 @@ execute as @e[type=interaction,tag=SEAcrafter] run data remove entity @s interac
 
 
 execute as @a[tag=SEAPT,x=90095,y=122,z=130,distance=0..1.4,tag=!e_i_07] at @s run playsound minecraft:entity.drowned.death_water hostile @a ~ ~ ~ 1 0.7
-execute as @a[tag=SEAPT,x=90095,y=122,z=130,distance=0..1.4,tag=!e_i_07] at @s run summon drowned 90103 125 131 {CustomName:'[{"text":"行走的腐尸"}]',DeathLootTable:"skyblock:sea_drowned1",Tags:["SEAmob"],attributes:[{id:"generic.attack_damage",base:4.0},{id:"generic.movement_speed",base:0.17}]}
+execute as @a[tag=SEAPT,x=90095,y=122,z=130,distance=0..1.4,tag=!e_i_07] at @s run summon drowned 90103 125 131 {CustomName:'[{"text":"行走的腐尸"}]',DeathLootTable:"skyblock:sea_drowned1",Tags:["SEAmob"],attributes:[{id:"generic.attack_damage",base:4.0},{id:"generic.movement_speed",base:0.17}],Silent:1b}
 execute as @a[tag=SEAPT,x=90095,y=122,z=130,distance=0..1.4,tag=!e_i_07] at @s run fill 90097 123 148 90097 122 148 air destroy
+execute as @a[tag=SEAPT,x=90095,y=122,z=130,distance=0..1.4,tag=!e_i_07] at @s run tellraw @s {"text":"这间房间还没被搬空，有个上锁的箱子。不知道钥匙在什么地方？","color":"gray"}
+execute as @a[tag=SEAPT,x=90095,y=122,z=130,distance=0..1.4,tag=!e_i_07] at @s run tellraw @a[tag=SEAPT,distance=0.1..] [{"selector":"@s","color":"white"},{"text":"：文件室里好像还有留下什么，你们谁见过钥匙？","color":"white"}]
 execute as @a[tag=SEAPT,x=90095,y=122,z=130,distance=0..1.4,tag=!e_i_07] at @s run summon drowned 90097 123 148 {CustomName:'[{"text":"安全帽腐尸"}]',DeathLootTable:"skyblock:sea_drowned1",Tags:["SEAmob"],attributes:[{id:"generic.attack_damage",base:4.0},{id:"generic.movement_speed",base:0.17}],ArmorItems:[{},{},{},{id:iron_helmet,count:1}],ArmorDropChances:[0f,0f,0f,0f]}
 execute as @a[tag=SEAPT,x=90095,y=122,z=130,distance=0..1.4,tag=!e_i_07] run tag @a[tag=SEAPT] add e_i_07
 
@@ -74,8 +79,8 @@ execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=98}] run playsou
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=98}] run playsound minecraft:item.goat_horn.sound.6 master @a[tag=SEAPT] 90100 0 100 10000 0.87
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=98}] run playsound minecraft:item.goat_horn.sound.6 master @a[tag=SEAPT] 90100 0 100 10000 0.84
 
-execute if entity @n[tag=sc,scores={sea_4temp2=64..70}] run playsound ambient.cave ambient @a 90100 150 100 160 1.2
-execute if entity @n[tag=sc,scores={sea_4temp2=64..70}] run playsound ambient.cave ambient @a 90100 150 100 160 1.0
+execute if entity @n[tag=sc,scores={sea_4temp2=62..66}] run playsound ambient.cave ambient @a 90100 150 100 160 1.2
+execute if entity @n[tag=sc,scores={sea_4temp2=62..66}] run playsound ambient.cave ambient @a 90100 150 100 160 1.0
 
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=40}] run fill 90102 122 125 90102 122 126 air
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=47}] run fill 90102 123 125 90102 123 126 air
@@ -105,6 +110,7 @@ execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp3=1..7}] run plays
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp3=1}] run fill 90110 124 134 90109 124 134 iron_block
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp3=3}] run fill 90110 123 134 90109 123 134 iron_block
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp3=5}] run fill 90110 122 134 90109 122 134 iron_block
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp3=5}] as @p[tag=SEAPT,x=90110,y=123,z=136] at @s run tellraw @a[tag=SEAPT,distance=0.1..] [{"selector":"@s","color":"white"},{"text":"：有人听得到吗？我这里的铁门被放下来了，怪物在围攻我。","color":"white"}]
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp3=1}] run playsound minecraft:block.iron_door.open ambient @a 90109 125 134 4 0.3
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp3=3}] run playsound minecraft:block.iron_door.open ambient @a 90109 125 134 4 0.3
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp3=5}] run playsound minecraft:block.iron_door.open ambient @a 90109 125 134 4 0.3
@@ -127,6 +133,7 @@ execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp3=73}] run playsou
 
 
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=216}] positioned 90120 123 123 run tellraw @a[distance=0..50] {"text":"联络机台：“……有人在维修层？维修层居然还有活人？你等一下！我这就调去监控……”","color":"dark_purple"}
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=216}] positioned 90120 123 123 as @p[tag=SEAPT] at @s run tellraw @a[tag=SEAPT,distance=3..] [{"selector":"@s","color":"white"},{"text":"：我接通联络总站了！你们快来我这里。","color":"white"}]
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=216}] positioned 90120 123 123 run playsound minecraft:entity.endermite.ambient ambient @a ~ ~ ~ 0.8 0.1
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=242}] positioned 90120 123 123 run tellraw @a[distance=0..50] {"text":"联络机台：“……我听不清你在说什么，如果你能听到我说话的话，千万不要来办公区域！这里已经彻底沦陷……等、等下……”","color":"dark_purple"}
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=242}] positioned 90120 123 123 run playsound minecraft:entity.endermite.ambient ambient @a ~ ~ ~ 0.8 0.1
@@ -159,9 +166,9 @@ execute store result score @n[tag=sc,scores={sea_4temp2=200..1200,sea_player=5..
 execute store result score @n[tag=sc,scores={sea_4temp2=200..600}] rng2 run random value 1..6
 execute store result score @n[tag=sc,scores={sea_4temp2=601..1200}] rng2 run random value 1..10
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=200..1200}] run scoreboard players add @s sea_4temp2 1
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=400}] run scoreboard players add @s sea_4temp2 30
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=400}] run scoreboard players add @s sea_4temp2 100
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=540}] run scoreboard players add @s sea_4temp2 30
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=600}] run scoreboard players add @s sea_4temp2 30
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=600}] run scoreboard players add @s sea_4temp2 60
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=700}] run scoreboard players add @s sea_4temp2 140
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=270}] positioned 90119 124 113 run function skyblock:sea/m/drowned
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=300}] positioned 90119 124 113 run function skyblock:sea/m/drowned
@@ -179,21 +186,23 @@ execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=1050}] positione
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=1050,sea_player=3..}] positioned 90127 126 122 run function skyblock:sea/m/pillager
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=935}] run playsound minecraft:block.iron_trapdoor.open ambient @a 90127.44 125.00 122.83 4
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=935}] run setblock 90127 125 122 minecraft:iron_trapdoor[half=bottom,open=true]
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=1058}] positioned 90120 123 123 run time set 12500t
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=1058}] positioned 90120 123 123 run tellraw @a[distance=0..55] {"text":"联络机台：“……听得到吗？！我强行关闭了那一片区域的连锁反应机械，通风口应该自动关闭了！”","color":"dark_purple"}
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=1058}] positioned 90120 123 123 run playsound minecraft:entity.endermite.ambient ambient @a ~ ~ ~ 0.8 0.1
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=1085}] positioned 90120 123 123 run tellraw @a[distance=0..55] {"text":"联络机台：“我这里已经不安全了，去物资层找台联络机台联系我，那里至少还没断电——”","color":"dark_purple"}
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=1085}] positioned 90120 123 123 run playsound minecraft:entity.endermite.ambient ambient @a ~ ~ ~ 0.8 0.1
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=1150}] positioned 90120 123 123 run tellraw @a[distance=0..55] {"text":"联络机台：“……”","color":"dark_purple"}
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=1130}] run fill 90129 122 119 90129 122 120 air
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=1134}] run fill 90129 123 119 90129 123 120 air
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=1130}] run playsound minecraft:block.iron_door.open ambient @a 90129 125 120 4 0.3
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=1134}] run playsound minecraft:block.iron_door.open ambient @a 90129 125 120 4 0.3
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=1068}] positioned 90120 123 123 run time set 12500t
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=1068}] positioned 90120 123 123 run tellraw @a[distance=0..55] {"text":"联络机台：“……听得到吗？！我强行关闭了那一片区域的连锁反应机械，通风口应该自动关闭了！”","color":"dark_purple"}
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=1068}] positioned 90120 123 123 run playsound minecraft:entity.endermite.ambient ambient @a ~ ~ ~ 0.8 0.1
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=1095}] positioned 90120 123 123 run tellraw @a[distance=0..55] {"text":"联络机台：“我这里已经不安全了，去物资层找台联络机台联系我，那里至少还没断电——”","color":"dark_purple"}
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=1095}] positioned 90120 123 123 run playsound minecraft:entity.endermite.ambient ambient @a ~ ~ ~ 0.8 0.1
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=1160}] positioned 90120 123 123 run tellraw @a[distance=0..55] {"text":"联络机台：“……”","color":"dark_purple"}
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=1140}] run fill 90129 122 119 90129 122 120 air
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=1144}] run fill 90129 123 119 90129 123 120 air
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=1140}] run playsound minecraft:block.iron_door.open ambient @a 90129 125 120 4 0.3
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=1144}] run playsound minecraft:block.iron_door.open ambient @a 90129 125 120 4 0.3
 
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=1134}] positioned 90133 122 114 run function skyblock:sea/m/pillager
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=1134}] positioned 90138 122 115 run function skyblock:sea/m/drowned_shield
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=1134}] positioned 90133 122 129 run function skyblock:sea/m/drowned_shield
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=1134}] positioned 90133 122 129 run function skyblock:sea/m/drowned_hat
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=1134}] positioned 90133 122 129 run function skyblock:sea/m/drowned_hat
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=1144}] positioned 90133 122 114 run function skyblock:sea/m/pillager
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=1144}] positioned 90138 122 115 run function skyblock:sea/m/drowned_shield
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=1144}] positioned 90133 122 129 run function skyblock:sea/m/drowned_shield
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=1144}] positioned 90133 122 129 run function skyblock:sea/m/drowned_hat
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=1144}] positioned 90133 122 129 run function skyblock:sea/m/drowned_hat
 
 execute if block 90111 122 143 lever[powered=false] if block 90110 122 143 lever[powered=true] if block 90109 122 143 lever[powered=true] if block 90108 122 143 lever[powered=false] run setblock 90118 122 142 minecraft:redstone_block
+
+
