@@ -31,4 +31,8 @@ scoreboard players set @n[tag=sc] sea_4temp4 0
 scoreboard players set @n[tag=sc] sea_4temp5 0
 kill @e[tag=SEAcrafter,type=interaction]
 
-setblock 90060 103 144 air
+forceload remove 90000 0 90200 200
+setblock 90060 104 144 stone_button[facing=south,face=floor]
+summon minecraft:armor_stand 90060 106 144 {CustomName:'{"text": "『厄珀娅的悲歌』","color": "blue","bold": true}',DisabledSlots:65793,CustomNameVisible:1b,Invisible:1b,Marker:1b,NoGravity:1b}
+summon minecraft:armor_stand 90060 105.5 144 {CustomName:'{"text": "探索孤独而死寂的海上堡垒","color": "white"}',DisabledSlots:65793,CustomNameVisible:1b,Invisible:1b,Marker:1b,NoGravity:1b}
+summon minecraft:armor_stand 90060 105.2 144 {CustomName:'{"text": "解开忒尔克西海上钻井平台的秘密","color": "white"}',DisabledSlots:65793,CustomNameVisible:1b,Invisible:1b,Marker:1b,NoGravity:1b}

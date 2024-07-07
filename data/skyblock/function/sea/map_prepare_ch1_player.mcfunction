@@ -19,3 +19,4 @@ tag @s remove sea_dead
 scoreboard players set @s sea_dead 0
 scoreboard players set @s sea_dead_check 0
 scoreboard players set @s sea_do_attack 0
+gamemode adventure

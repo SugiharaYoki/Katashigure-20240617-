@@ -9,8 +9,8 @@ execute if score @n[tag=sc] Map_Code matches 9 run scoreboard players set @n[tag
 execute if score @n[tag=sc] Map_Code matches 10 run scoreboard players set @n[tag=sc] TimeRemainUnsee 605
 execute if score @n[tag=sc] Map_Code matches 14 run scoreboard players set @n[tag=sc] TimeRemainUnsee 905
 execute if score @n[tag=sc] Map_Code matches 15 run scoreboard players set @n[tag=sc] TimeRemainUnsee 605
-execute if score @n[tag=sc] Map_Code matches 16 run scoreboard players set @n[tag=sc] TimeRemainUnsee 605
-execute if score @n[tag=sc] Map_Code matches 17 run scoreboard players set @n[tag=sc] TimeRemainUnsee 605
+execute if score @n[tag=sc] Map_Code matches 16 run scoreboard players set @n[tag=sc] TimeRemainUnsee 505
+execute if score @n[tag=sc] Map_Code matches 17 run scoreboard players set @n[tag=sc] TimeRemainUnsee 805
 #[futuredevskywar]
 execute if score @n[tag=sc] Map_Code matches 13 if block 27 56 -105 oak_planks run scoreboard players set @n[tag=sc] TimeRemainUnsee 485
 execute if score @n[tag=sc] Map_Code matches 13 if block 27 56 -105 jungle_log run scoreboard players set @n[tag=sc] TimeRemainUnsee 725
@@ -47,6 +47,7 @@ execute if score @n[tag=sc] Map_Code matches 7 as @a[tag=PVP_see] at @s run play
 execute if score @n[tag=sc] Map_Code matches 13 as @a[tag=PVP_see] at @s run playsound music.end music @s ~ ~ ~ 10
 execute if score @n[tag=sc] Map_Code matches 15 as @a[tag=PVP_see] at @s run playsound music.nether.nether_wastes music @s ~ ~ ~ 10
 execute if score @n[tag=sc] Map_Code matches 16 as @a[tag=PVP_see] at @s run playsound music.overworld.cherry_grove music @s ~ ~ ~ 10
+execute if score @n[tag=sc] Map_Code matches 17 as @a[tag=PVP_see] at @s run playsound music.nether.basalt_deltas music @s ~ ~ ~ 10
 #[futuredevskywar]
 
 execute if entity @a[tag=NoSkyWar] run tag @n[tag=sc] add Skyblock_NoWorldborder

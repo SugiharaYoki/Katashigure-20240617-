@@ -170,6 +170,7 @@ execute if entity @n[tag=sc,scores={TimeRemainUnsee=500,Map_Code=15}] run execut
 execute if entity @n[tag=sc,scores={TimeRemainUnsee=500,Map_Code=15}] run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run title @a[tag=PVP_see] subtitle {"text":"“这座浮游要塞本身即在拒绝我等的光临”","color":"red"}
 execute if entity @n[tag=sc,scores={TimeRemainUnsee=500,Map_Code=15}] unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run weather thunder 500
 
+execute if entity @n[tag=sc,scores={TimeRemainUnsee=300,Map_Code=16}] run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run worldborder set 40 200
 execute if entity @n[tag=sc,scores={TimeRemainUnsee=300,Map_Code=16}] run title @a[tag=PVP_see] times 0 30 30
 execute if entity @n[tag=sc,scores={TimeRemainUnsee=300,Map_Code=16}] run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run effect give @a[tag=PVP_see] darkness 3 1 true
 execute if entity @n[tag=sc,scores={TimeRemainUnsee=300,Map_Code=16}] run stopsound @a[tag=PVP_see] music
@@ -185,5 +186,14 @@ execute if entity @n[tag=sc,scores={TimeRemainUnsee=298,Map_Code=16}] as @a[tag=
 execute if entity @n[tag=sc,scores={TimeRemainUnsee=298,Map_Code=16}] as @a[tag=PVPing,gamemode=survival] at @s run fill ~-10 ~-10 ~-10 ~10 ~10 ~10 crimson_fungus replace pink_petals
 execute if entity @n[tag=sc,scores={TimeRemainUnsee=288,Map_Code=16}] unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run time set midnight
 
+
+execute if entity @n[tag=sc,scores={TimeRemainUnsee=600,Map_Code=17}] run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run title @a[tag=PVP_see] times 0 60 60
+execute if entity @n[tag=sc,scores={TimeRemainUnsee=600,Map_Code=17}] run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run title @a[tag=PVP_see] title {"text":"地图边界开始缩小","color":"yellow"}
+execute if entity @n[tag=sc,scores={TimeRemainUnsee=600,Map_Code=17}] run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run title @a[tag=PVP_see] subtitle {"text":"“这艘军舰 早已不再是属于生者的造物”","color":"yellow"}
+execute if entity @n[tag=sc,scores={TimeRemainUnsee=600,Map_Code=17}] run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run worldborder set 60 300
+execute if entity @n[tag=sc,scores={TimeRemainUnsee=0,Map_Code=17}] run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run title @a[tag=PVP_see] times 0 60 60
+execute if entity @n[tag=sc,scores={TimeRemainUnsee=0,Map_Code=17}] run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run title @a[tag=PVP_see] title {"text":"地图边界大幅缩小","color":"yellow"}
+execute if entity @n[tag=sc,scores={TimeRemainUnsee=0,Map_Code=17}] run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run title @a[tag=PVP_see] subtitle {"text":"“再不离开这头空中巨兽 我等皆会化作其腹中食物”","color":"yellow"}
+execute if entity @n[tag=sc,scores={TimeRemainUnsee=0,Map_Code=17}] run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run worldborder set 20 300
 
 #[futuredevskywar]
