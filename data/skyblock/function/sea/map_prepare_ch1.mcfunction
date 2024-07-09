@@ -195,3 +195,11 @@ setblock 90134 123 108 minecraft:potted_azalea_bush
 setblock 90106 123 102 minecraft:potted_azalea_bush
 setblock 90113 123 102 minecraft:potted_azalea_bush
 
+setblock 90103 122 109 minecraft:redstone_block
+setblock 90103 122 109 minecraft:air
+setblock 90105 122 104 minecraft:potted_cherry_sapling
+setblock 90105 122 106 chest[facing=west]
+item replace block 90105 122 106 container.12 with arrow 3
+item replace block 90105 122 106 container.14 with raiser_armor_trim_smithing_template
+
+
