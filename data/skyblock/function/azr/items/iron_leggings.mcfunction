@@ -1,0 +1,1 @@
+item replace entity @s armor.head with iron_leggings[custom_name='{"text":"铁护腿","italic":false}']

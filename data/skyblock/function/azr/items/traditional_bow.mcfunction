@@ -1,0 +1,1 @@
+give @s bow[custom_name='{"text":"弓·传统","italic":false}']

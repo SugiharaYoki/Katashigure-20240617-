@@ -196,10 +196,10 @@ execute as @a[scores={MultiMenu=108}] at @s run function skyblock:multimenu108_s
 execute as @a[scores={MultiMenu=109}] at @s run function skyblock:multimenu109_tocreativeworld
 execute as @a[scores={MultiMenu=110}] at @s run function skyblock:multimenu110_creativeworld_creativemode
 execute as @a[scores={MultiMenu=111}] at @s run function skyblock:multimenu111_creativeworld_survivalmode
-execute as @a[scores={MultiMenu=112}] at @s run function skyblock:azr/ingame_azrielsmidgarden_midwayjoin_execute
+#execute as @a[scores={MultiMenu=112}] at @s run function skyblock:azr/ingame_azrielsmidgarden_midwayjoin_execute
 execute as @a[scores={MultiMenu=113}] at @s run function skyblock:city_utility_divination
-execute as @a[scores={MultiMenu=114}] at @s run function skyblock:azr/outgame_azrielsmidgarden_togglemoneyremind
-execute as @a[scores={MultiMenu=115}] at @s run function skyblock:azr/outgame_azrielsmidgarden_menu
+#execute as @a[scores={MultiMenu=114}] at @s run function skyblock:azr/outgame_azrielsmidgarden_togglemoneyremind
+#execute as @a[scores={MultiMenu=115}] at @s run function skyblock:azr/outgame_azrielsmidgarden_menu
 execute as @a[scores={MultiMenu=116}] at @s run function skyblock:dv/dv_sys_startgame
 execute as @a[scores={MultiMenu=117}] at @s run function skyblock:dv/dv_sys_checkleaderboard
 execute as @a[scores={MultiMenu=118}] at @s run function skyblock:multimenu118_pvpmainmenu
@@ -210,9 +210,9 @@ execute as @a[scores={MultiMenu=121}] at @s run function skyblock:multimenu121_s
 execute as @a[scores={MultiMenu=119001..119099}] at @s run function skyblock:world_system_functionreader_pvpjob
 execute as @a[scores={MultiMenu=101700..101900}] at @s run function skyblock:world_system_functionreader_musicbox
 execute as @a[scores={MultiMenu=16210001..16329999}] at @s run function skyblock:world_system_functionreader_purchase
-execute as @a[scores={MultiMenu=16220001}] at @s run function skyblock:azr/ingame_azrielsmidgarden_tellraw_rule_2_sub1
-execute as @a[scores={MultiMenu=16220002}] at @s run function skyblock:azr/ingame_azrielsmidgarden_tellraw_rule_2_sub2
-execute as @a[scores={MultiMenu=16220003}] at @s run function skyblock:azr/ingame_azrielsmidgarden_tellraw_rule_2_sub3
+#execute as @a[scores={MultiMenu=16220001}] at @s run function skyblock:azr/ingame_azrielsmidgarden_tellraw_rule_2_sub1
+#execute as @a[scores={MultiMenu=16220002}] at @s run function skyblock:azr/ingame_azrielsmidgarden_tellraw_rule_2_sub2
+#execute as @a[scores={MultiMenu=16220003}] at @s run function skyblock:azr/ingame_azrielsmidgarden_tellraw_rule_2_sub3
 
 execute as @a[scores={MultiMenu=991}] at @s run function skyblock:multimenu991_anypage_button_tomainmenu
 execute as @a[scores={MultiMenu=992}] at @s run function skyblock:multimenu992_anypage_enableskywar
