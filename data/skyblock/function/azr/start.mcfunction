@@ -1,3 +1,4 @@
+function skyblock:azr/debug/change_command_block
 #初始化记分板
 scoreboard objectives add Azr_wave dummy
 scoreboard objectives add Azr_forceDeath dummy
