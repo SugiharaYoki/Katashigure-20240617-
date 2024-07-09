@@ -20,3 +20,10 @@ scoreboard players set @s sea_dead 0
 scoreboard players set @s sea_dead_check 0
 scoreboard players set @s sea_do_attack 0
 gamemode adventure
+execute if entity @a[tag=SEAPT,tag=e_i_03] run tag @s add e_i_03
+execute if entity @a[tag=SEAPT,tag=e_i_04] run tag @s add e_i_04
+execute if entity @a[tag=SEAPT,tag=e_i_05] run tag @s add e_i_05
+execute if entity @a[tag=SEAPT,tag=e_i_06] run tag @s add e_i_06
+execute if entity @a[tag=SEAPT,tag=e_i_07] run tag @s add e_i_07
+execute if entity @a[tag=SEAPT,tag=e_i_08] run tag @s add e_i_08
+execute if entity @a[tag=SEAPT,tag=e_i_11] run tag @s add e_i_11

@@ -5,3 +5,4 @@ execute as @s store result score @s sea_i_trim_human run clear @s wayfinder_armo
 execute as @s store result score @s sea_i_trim_bug run clear @s sentry_armor_trim_smithing_template 0
 execute as @s store result score @s sea_i_trim_sea run clear @s coast_armor_trim_smithing_template 0
 execute as @s store result score @s sea_i_trim_ghost run clear @s vex_armor_trim_smithing_template 0
+execute as @s store result score @s sea_i_iron_ingot run clear @s iron_ingot 0

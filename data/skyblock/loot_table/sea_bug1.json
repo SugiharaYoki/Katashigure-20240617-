@@ -1,0 +1,60 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 2,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:air",
+          "weight": 30
+        },
+        {
+                "type": "minecraft:item",
+                "name": "minecraft:wild_armor_trim_smithing_template",
+                "weight": 2
+              },
+              {
+                      "type": "minecraft:item",
+                      "name": "minecraft:sentry_armor_trim_smithing_template",
+                      "weight": 7
+                    },
+	{
+          "type": "minecraft:item",
+          "name": "minecraft:emerald",
+          "weight": 16
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:air",
+          "weight": 60
+        },
+	{
+          "type": "minecraft:item",
+          "name": "minecraft:flint",
+          "weight": 10
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:air",
+          "weight": 995
+        },
+	{
+          "type": "minecraft:item",
+          "name": "minecraft:glistering_melon_slice",
+          "weight": 2
+        }
+      ]
+    }
+  ]
+}

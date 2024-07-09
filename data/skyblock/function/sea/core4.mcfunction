@@ -8,8 +8,8 @@ execute unless entity @a[tag=SEAPT] run function skyblock:sea/endgame_regen
 
 execute as @a[scores={sea_crafter=1}] at @s run function skyblock:sea/shop_reader
 execute as @a[scores={sea_crafter=10000..19999}] at @s if entity @n[tag=SEAcrafter,distance=0..5] run function skyblock:sea/shop_purchase
-execute as @a[scores={sea_crafter=20000}] at @s if entity @n[tag=SEAcrafter,distance=0..5] run function skyblock:sea/shop_enchant
-execute as @a[scores={sea_crafter=20001..29999}] at @s if entity @n[tag=SEAcrafter,distance=0..5] run function skyblock:sea/shop_purchase
+execute as @a[tag=seaPerm000,scores={sea_crafter=20000}] at @s if entity @n[tag=SEAcrafter,distance=0..5] run function skyblock:sea/shop_enchant
+execute as @a[tag=seaPerm000,scores={sea_crafter=20001..29999}] at @s if entity @n[tag=SEAcrafter,distance=0..5] run function skyblock:sea/shop_purchase
 execute as @a at @s if entity @n[tag=SEAcrafter,distance=0..5] run scoreboard players enable @s sea_crafter
 
 execute as @a[tag=SEAPT,nbt={Inventory:[{id:"minecraft:bolt_armor_trim_smithing_template",components:{"minecraft:custom_data":{sea_t_armor1:true}}}]}] run attribute @s minecraft:generic.armor modifier add sea_t_armor1 0.5 add_value
@@ -26,7 +26,11 @@ execute as @a[tag=SEAPT,nbt={Inventory:[{id:"minecraft:bolt_armor_trim_smithing_
 execute as @a[tag=SEAPT,nbt=!{Inventory:[{id:"minecraft:bolt_armor_trim_smithing_template",components:{"minecraft:custom_data":{sea_t_damage2:true}}}]}] run attribute @s minecraft:generic.attack_damage modifier remove sea_t_damage2
 execute as @a[tag=SEAPT,nbt={Inventory:[{id:"minecraft:bolt_armor_trim_smithing_template",components:{"minecraft:custom_data":{sea_t_speed1:true}}}]}] run attribute @s minecraft:generic.movement_speed modifier add sea_t_speed1 0.05 add_value
 execute as @a[tag=SEAPT,nbt=!{Inventory:[{id:"minecraft:bolt_armor_trim_smithing_template",components:{"minecraft:custom_data":{sea_t_speed1:true}}}]}] run attribute @s minecraft:generic.movement_speed modifier remove sea_t_speed1
-execute as @a[tag=SEAPT,nbt={Inventory:[{id:"minecraft:bolt_armor_trim_smithing_template",components:{"minecraft:custom_data":{sea_t_speed2:true}}}]}] run attribute @s minecraft:generic.movement_speed modifier add sea_t_speed1 0.1 add_value
+execute as @a[tag=SEAPT,nbt={Inventory:[{id:"minecraft:bolt_armor_trim_smithing_template",components:{"minecraft:custom_data":{sea_t_speed2:true}}}]}] run attribute @s minecraft:generic.movement_speed modifier add sea_t_speed2 0.1 add_value
 execute as @a[tag=SEAPT,nbt=!{Inventory:[{id:"minecraft:bolt_armor_trim_smithing_template",components:{"minecraft:custom_data":{sea_t_speed2:true}}}]}] run attribute @s minecraft:generic.movement_speed modifier remove sea_t_speed2
 execute as @a[tag=SEAPT,nbt={Inventory:[{id:"minecraft:bolt_armor_trim_smithing_template",components:{"minecraft:custom_data":{sea_t_attackspeed1:true}}}]}] run attribute @s minecraft:generic.attack_speed modifier add sea_t_attackspeed1 0.05 add_value
 execute as @a[tag=SEAPT,nbt=!{Inventory:[{id:"minecraft:bolt_armor_trim_smithing_template",components:{"minecraft:custom_data":{sea_t_attackspeed1:true}}}]}] run attribute @s minecraft:generic.attack_speed modifier remove sea_t_attackspeed1
+execute as @a[tag=SEAPT,nbt={Inventory:[{id:"minecraft:bolt_armor_trim_smithing_template",components:{"minecraft:custom_data":{sea_t_health1:true}}}]}] run attribute @s minecraft:generic.max_health modifier add sea_t_health1 2 add_value
+execute as @a[tag=SEAPT,nbt=!{Inventory:[{id:"minecraft:bolt_armor_trim_smithing_template",components:{"minecraft:custom_data":{sea_t_health1:true}}}]}] run attribute @s minecraft:generic.max_health modifier remove sea_t_health1
+execute as @a[tag=SEAPT,nbt={Inventory:[{id:"minecraft:bolt_armor_trim_smithing_template",components:{"minecraft:custom_data":{sea_t_health2:true}}}]}] run attribute @s minecraft:generic.max_health modifier add sea_t_health2 4 add_value
+execute as @a[tag=SEAPT,nbt=!{Inventory:[{id:"minecraft:bolt_armor_trim_smithing_template",components:{"minecraft:custom_data":{sea_t_health2:true}}}]}] run attribute @s minecraft:generic.max_health modifier remove sea_t_health2
