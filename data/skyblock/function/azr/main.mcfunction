@@ -1,7 +1,7 @@
 scoreboard objectives add Azr_system dummy
 scoreboard players set DEBUG_maxStageLimit Azr_system 3
 execute as @r[tag=azrPlayer] if score stage Azr_system >= DEBUG_maxStageLimit Azr_system run tellraw @a[tag=azrPlayer] [{"text":"You have passed maximum stage(limited in debug mode) ","color": "red"},{"score":{"objective": "Azr_system","name": "stage"},"color":"light_purple"},{"text":"/","color":"light_purple"},{"score":{"objective": "Azr_system","name": "DEBUG_maxStageLimit"},"color":"light_purple"}]
-execute as @r[tag=azrPlayer] if score stage Azr_system >= DEBUG_maxStageLimit Azr_system run scoreboard players set @a Azr_forceDeath 1
+execute as @r[tag=azrPlayer] if score stage Azr_system >= DEBUG_maxStageLimit Azr_system run function skyblock:azr/endgame
 #除Azr_system意外的其他记分板在使用时一定已经执行过，所以这里无需创建，只在start里创建一次然后在endgame里释放
 #临时处理多功能菜单 完成后移除
 execute as @a[scores={MultiMenu=16220001}] run function skyblock:azr/info/guide_sub1
