@@ -20,6 +20,7 @@ scoreboard objectives add sea_i_trim_ghost dummy
 scoreboard objectives add sea_i_iron_ingot dummy
 scoreboard objectives add sea_chapter dummy
 scoreboard objectives add sea_boss1_hp dummy
+scoreboard objectives add sea_cursor dummy
 scoreboard objectives add sea_do_attack minecraft.custom:minecraft.damage_dealt
 scoreboard players set @n[tag=sc] sea_chapter 1
 setblock -25 23 32 soul_lantern
