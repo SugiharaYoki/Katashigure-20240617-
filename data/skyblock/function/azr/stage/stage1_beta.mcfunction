@@ -3,10 +3,10 @@ execute if score stageSeconds Azr_system matches 2..6 as @a[tag=azrPlayer] at @s
 execute if score stageSeconds Azr_system matches 1 run bossbar add azr:progress_bar_normal "Stage 1"
 execute if score stageSeconds Azr_system matches 1 run bossbar set azr:progress_bar_normal color white
 execute if score stageSeconds Azr_system matches 1 run bossbar set azr:progress_bar_normal players @a[tag=azrPlayer]
-execute if score stageSeconds Azr_system matches 1 run bossbar set azr:progress_bar_normal max 27
+execute if score stageSeconds Azr_system matches 1 run bossbar set azr:progress_bar_normal max 31
 execute if score stageSeconds Azr_system matches 1 run tellraw @a[tag=DebugMode] [{"text":"You are playing \"Stage 1β\", with playerCount = "},{"score":{"objective":"Azr_system","name":"playerCount"}}]
-execute if score stageSeconds Azr_system matches 1..27 store result bossbar azr:progress_bar_normal value run scoreboard players get stageSeconds Azr_system
-execute if score stageSeconds Azr_system matches 27 run bossbar remove azr:progress_bar_normal
+execute if score stageSeconds Azr_system matches 1..31 store result bossbar azr:progress_bar_normal value run scoreboard players get stageSeconds Azr_system
+execute if score stageSeconds Azr_system matches 31 run bossbar remove azr:progress_bar_normal
 #wtf
 #execute if score stageSeconds Azr_system matches 2 run scoreboard players set @e[tag=sc,limit=1] SeGa_StandLastQ -1
 #关卡特效
@@ -24,7 +24,7 @@ execute if score stageSeconds Azr_system matches 21 positioned -79931 38 3 run f
 execute if score stageSeconds Azr_system matches 22 positioned -79931 38 -9 run function skyblock:azr/m/pillager_t1
 execute if score stageSeconds Azr_system matches 25 positioned -79931 38 3 run function skyblock:azr/m/zombie_t1_5hp
 #回秒
-execute if score stageSeconds Azr_system matches 26..30 if entity @e[tag=AzrielMob,tag=!AzrielDecMob] run scoreboard players set stageSeconds Azr_system 26
+execute if score stageSeconds Azr_system matches 26..27 if entity @e[tag=AzrielMob,tag=!AzrielDecMob] run scoreboard players set stageSeconds Azr_system 26
 #结束
 execute if score stageSeconds Azr_system matches 27 run playsound ambient.crimson_forest.loop ambient @a[tag=azrPlayer] -78000 100 0 1000
 execute if score stageSeconds Azr_system matches 27 run playsound ambient.crimson_forest.mood ambient @a[tag=azrPlayer] -78000 100 0 1000
