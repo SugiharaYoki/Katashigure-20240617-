@@ -197,7 +197,7 @@ execute if score @n[tag=sc] SSgspT matches 13 if score @n[tag=sc] Map_Code match
 execute if score @n[tag=sc] SSgspT matches 13 if score @n[tag=sc] Map_Code matches 5 run title @a[tag=PVP_see] title {"text":"献堂的圣咏","color":"white"}
 execute if score @n[tag=sc] SSgspT matches 13 if score @n[tag=sc] Map_Code matches 5 run title @a[tag=PVP_see] subtitle {"text":"反叛的旗帜 被悄然掀起……","color":"white"}
 execute if score @n[tag=sc] SSgspT matches 13 if score @n[tag=sc] Map_Code matches 7 run title @a[tag=PVP_see] title {"text":"亚兹列尔的钟台","color":"white"}
-execute if score @n[tag=sc] SSgspT matches 13 if score @n[tag=sc] Map_Code matches 7 run title @a[tag=PVP_see] subtitle {"text":"穹顶钟声回档之时 某个生命便会陨落","color":"white"}
+execute if score @n[tag=sc] SSgspT matches 13 if score @n[tag=sc] Map_Code matches 7 run title @a[tag=PVP_see] subtitle {"text":"穹顶钟声回荡之时 某个生命便会陨落","color":"white"}
 execute if score @n[tag=sc] SSgspT matches 13 if score @n[tag=sc] Map_Code matches 8 run title @a[tag=PVP_see] title {"text":"荒废之地的民谣","color":"white"}
 execute if score @n[tag=sc] SSgspT matches 13 if score @n[tag=sc] Map_Code matches 8 run title @a[tag=PVP_see] subtitle {"text":"残羹断瓦的下方 曾是一座巨型遗迹","color":"white"}
 execute if score @n[tag=sc] SSgspT matches 13 if score @n[tag=sc] Map_Code matches 13 run title @a[tag=PVP_see] title {"text":"混沌魔方","color":"white"}
