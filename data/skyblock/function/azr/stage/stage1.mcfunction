@@ -12,14 +12,14 @@ execute if score stageSeconds Azr_system matches 2 run scoreboard players set @e
 execute if score stageSeconds Azr_system matches 19 positioned -79930.5 38.0 3.5 run function skyblock:azr/effects/basalt_open
 #刷怪时序
 execute if score stageSeconds Azr_system matches 6 run playsound entity.zombie.ambient ambient @a[tag=azrPlayer] -80000 100 0 1000
-execute if score stageSeconds Azr_system matches 6 run summon zombie -79931 38 -9 {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_zombie_tier1",attributes:[{id:"generic.max_health",base:3.0},{id:"generic.attack_damage",base:1.5}],Health:3.0f,CustomName:'"僵尸"',CanPickUpLoot:0b,IsBaby:0b,ArmorItems:[{},{},{},{}]}
-execute if score stageSeconds Azr_system matches 8 run summon zombie -79931 38 -9 {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_zombie_tier1",attributes:[{id:"generic.max_health",base:3.0},{id:"generic.attack_damage",base:1.5}],Health:3.0f,CustomName:'"僵尸"',CanPickUpLoot:0b,IsBaby:0b,ArmorItems:[{},{},{},{}]}
-execute if score stageSeconds Azr_system matches 15 run summon zombie -79931 38 -9 {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_zombie_tier1",attributes:[{id:"generic.max_health",base:3.0},{id:"generic.attack_damage",base:1.5}],Health:3.0f,CustomName:'"僵尸"',CanPickUpLoot:0b,IsBaby:0b,ArmorItems:[{},{},{},{}]}
-execute if score stageSeconds Azr_system matches 19 run summon zombie -79931 38 -9 {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_zombie_tier1",attributes:[{id:"generic.max_health",base:4.0},{id:"generic.attack_damage",base:1.5}],Health:3.0f,CustomName:'"僵尸"',CanPickUpLoot:0b,IsBaby:0b,ArmorItems:[{},{},{},{}]}
-execute if score stageSeconds Azr_system matches 25 run summon zombie -79931 38 -9 {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_zombie_tier1",attributes:[{id:"generic.max_health",base:4.0},{id:"generic.attack_damage",base:1.5}],Health:3.0f,CustomName:'"僵尸"',CanPickUpLoot:0b,IsBaby:0b,ArmorItems:[{},{},{},{}]}
-execute if score stageSeconds Azr_system matches 28 run summon pillager -79931 38 3 {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_pillager_tier1",attributes:[{id:"generic.max_health",base:3.0},{id:"generic.attack_damage",base:0.5}],Health:1.0f,CustomName:'"弩手"',HandItems:[{count:1,id:"crossbow",components:{"custom_name":'{"text":"弩·传统","italic":false}'}}],HandDropChances:[0.1f,0.1f],ArmorItems:[{},{},{},{}]}
-execute if score stageSeconds Azr_system matches 20 if score playerCount Azr_system matches 2.. run summon pillager -79931 38 3 {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_pillager_tier1",attributes:[{id:"generic.max_health",base:3.0},{id:"generic.attack_damage",base:0.5}],Health:1.0f,CustomName:'"弩手"',HandItems:[{count:1,id:"crossbow",components:{"custom_name":'{"text":"弩·传统","italic":false}'}}],HandDropChances:[0.1f,0.1f],ArmorItems:[{},{},{},{}]}
-execute if score stageSeconds Azr_system matches 30 run summon zombie -79931 38 3 {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_zombie_tier1",attributes:[{id:"generic.max_health",base:5.0},{id:"generic.attack_damage",base:1.5}],Health:5.0f,CustomName:'"僵尸"',CanPickUpLoot:0b,IsBaby:0b,ArmorItems:[{},{},{},{count:1,id:"leather_helmet",components:{"custom_name":'{"text":"皮革帽","italic":false}'}}]}
+execute if score stageSeconds Azr_system matches 6 positioned -79931 38 -9 run function skyblock:azr/m/zombie_t1
+execute if score stageSeconds Azr_system matches 8 positioned -79931 38 -9 run function skyblock:azr/m/zombie_t1
+execute if score stageSeconds Azr_system matches 15 positioned -79931 38 -9 run function skyblock:azr/m/zombie_t1
+execute if score stageSeconds Azr_system matches 19 positioned -79931 38 -9 run function skyblock:azr/m/zombie_t1_4hp
+execute if score stageSeconds Azr_system matches 25 positioned -79931 38 -9 run function skyblock:azr/m/zombie_t1_4hp
+execute if score stageSeconds Azr_system matches 28 positioned -79931 38 3 run function skyblock:azr/m/pillager_t1
+execute if score stageSeconds Azr_system matches 20 if score playerCount Azr_system matches 2.. positioned -79931 38 3 run function skyblock:azr/m/pillager_t1
+execute if score stageSeconds Azr_system matches 30 positioned -79931 38 3 run function skyblock:azr/m/zombie_t1_5hp
 #回秒
 execute if score stageSeconds Azr_system matches 31..40 if entity @e[tag=AzrielMob,tag=!AzrielDecMob] run scoreboard players set stageSeconds Azr_system 31
 #结束

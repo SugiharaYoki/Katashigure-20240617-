@@ -42,7 +42,7 @@ tp @s -79936.0 38.15 -14.0 facing -79935.0 38.15 -14.0
 function skyblock:azr/items/wooden_sword
 function skyblock:azr/items/wooden_axe
 give @s pumpkin_pie 8
-give @s nether_star[custom_name='{"text":"下界命星","color":"yellow"}',custom_data={Azr_revivalStar:1b}] 1
+give @s nether_star[custom_name='{"text":"下界命星","color":"yellow","italic":false}',custom_data={Azr_revivalStar:1b}] 1
 tellraw @s {"text":"游戏开始……","color":"green"}
 #function skyblock:azr/purchase_sega_azriel_plypts_react1
 
