@@ -209,7 +209,7 @@ execute if score @n[tag=sc] SSgspT matches 13 if score @n[tag=sc] Map_Code match
 execute if score @n[tag=sc] SSgspT matches 13 if score @n[tag=sc] Map_Code matches 16 run title @a[tag=PVP_see] title {"text":"绯染缥茫的世花源","color":"white"}
 execute if score @n[tag=sc] SSgspT matches 13 if score @n[tag=sc] Map_Code matches 16 run title @a[tag=PVP_see] subtitle {"text":"樱色的梦境 将在此刻破碎","color":"white"}
 execute if score @n[tag=sc] SSgspT matches 13 if score @n[tag=sc] Map_Code matches 17 run title @a[tag=PVP_see] title {"text":"天穹巨兽古伽兰那","color":"white"}
-execute if score @n[tag=sc] SSgspT matches 13 if score @n[tag=sc] Map_Code matches 17 run title @a[tag=PVP_see] subtitle {"text":"空中军舰锈迹斑斑 而前方即是雷暴云海","color":"white"}
+execute if score @n[tag=sc] SSgspT matches 13 if score @n[tag=sc] Map_Code matches 17 run title @a[tag=PVP_see] subtitle {"text":"空中军舰锈迹斑斑 刺耳的金属尖啸诠释着何类的昔日辉煌？","color":"white"}
 #[futuredevskywar]
 execute if block -19 23 32 minecraft:soul_lantern if score @n[tag=sc] SSgspT matches 17 run execute as @a[tag=PVPing] at @s run function skyblock:skywar_system_jobbonus
 execute if score @n[tag=sc] SSgspT matches 17 run execute as @a[tag=PVPing] at @s run function skyblock:skywar_system_levelbonus
