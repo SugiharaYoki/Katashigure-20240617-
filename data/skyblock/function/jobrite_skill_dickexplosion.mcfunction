@@ -1,2 +1,2 @@
 tellraw @a[distance=0..500] ["",{"selector":"@s","color":"blue"},{"text":" 露出了牛子！","color":"gold"}]
-summon cow ~ ~ ~ {Passengers:[{id:creeper,Fuse:50}],CustomName:"\"牛炸了\"",CustomNameVisible:1,CanPickUpLoot:1b,Health:2,Attributes:[{Name:"generic.max_health",Base:2},{Name:"generic.knockback_resistance",Base:1f},{Name:"generic.movement_speed",Base:0.5f}]}
+summon cow ~ ~ ~ {Passengers:[{id:creeper,Fuse:50}],CustomName:"\"牛炸了\"",CustomNameVisible:1,CanPickUpLoot:1b,Health:2,attributes:[{id:"generic.max_health",base:2},{id:"generic.knockback_resistance",base:1f},{Name:"generic.movement_speed",Base:0.5f}]}
