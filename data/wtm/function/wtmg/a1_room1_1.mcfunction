@@ -6,7 +6,7 @@ execute if score @n[tag=sc] rng2 matches 5 run item replace block ~ ~-1 ~ contai
 execute if score @n[tag=sc] rng2 matches 6 run item replace block ~ ~-1 ~ container.11 with minecraft:emerald 5
 
 execute store result score @n[tag=sc] rng2 run random value 1..3
-execute if score @n[tag=sc] rng2 matches 1..3 run item replace block ~ ~-1 ~ container.13 with minecraft:vet_armor_trim_smithing_template 3
+execute if score @n[tag=sc] rng2 matches 1..3 run item replace block ~ ~-1 ~ container.13 with minecraft:vex_armor_trim_smithing_template 3
 execute if score @n[tag=sc] rng2 matches 4..5 run item replace block ~ ~-1 ~ container.13 with minecraft:wayfinder_armor_trim_smithing_template 3
 execute if score @n[tag=sc] rng2 matches 6 run item replace block ~ ~-1 ~ container.13 with minecraft:host_armor_trim_smithing_template 3
 

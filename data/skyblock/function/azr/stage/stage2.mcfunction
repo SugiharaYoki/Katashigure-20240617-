@@ -1,12 +1,13 @@
 #开局行为
 execute if score stageSeconds Azr_system matches 2..6 as @a[tag=azrPlayer] at @s unless block ~ ~-1 ~ air unless block ~ ~-1 ~ lava unless block ~ ~ ~ lava run spawnpoint @s ~ ~ ~
-execute if score stageSeconds Azr_system matches 1 run bossbar add azr:progress_bar_normalnormal "Stage 2"
-execute if score stageSeconds Azr_system matches 1 run bossbar set azr:progress_bar_normalnormal color white
-execute if score stageSeconds Azr_system matches 1 run bossbar set azr:progress_bar_normalnormal players @a[tag=azrPlayer]
-execute if score stageSeconds Azr_system matches 1 run bossbar set azr:progress_bar_normalnormal max 143
-execute if score stageSeconds Azr_system matches 1..143 store result bossbar azr:progress_bar_normalnormal value run scoreboard players get stageSeconds Azr_system
-execute if score stageSeconds Azr_system matches 143 run bossbar remove azr:progress_bar_normalnormal
+execute if score stageSeconds Azr_system matches 1 run bossbar add azr:progress_bar_normal "Stage 2"
+execute if score stageSeconds Azr_system matches 1 run bossbar set azr:progress_bar_normal color white
+execute if score stageSeconds Azr_system matches 1 run bossbar set azr:progress_bar_normal players @a[tag=azrPlayer]
+execute if score stageSeconds Azr_system matches 1 run bossbar set azr:progress_bar_normal max 143
+execute if score stageSeconds Azr_system matches 1..143 store result bossbar azr:progress_bar_normal value run scoreboard players get stageSeconds Azr_system
+execute if score stageSeconds Azr_system matches 143 run bossbar remove azr:progress_bar_normal
 #刷怪时序
+#第一波
 execute if score stageSeconds Azr_system matches 23 run playsound block.bell.use ambient @a[tag=azrPlayer] -79887 50 164 100 0.7
 execute if score stageSeconds Azr_system matches 25 run playsound block.bell.use ambient @a[tag=azrPlayer] -79887 50 164 100 0.7
 execute if score stageSeconds Azr_system matches 27 run playsound block.bell.use ambient @a[tag=azrPlayer] -79887 50 164 100 0.7
@@ -31,8 +32,9 @@ execute if score stageSeconds Azr_system matches 38 positioned -79922 38 14 run 
 execute if score stageSeconds Azr_system matches 38 positioned -79940 38 14 run function skyblock:azr/m/zombie_t1_4hp
 execute if score stageSeconds Azr_system matches 40 positioned -79922 38 14 run function skyblock:azr/m/zombie_t1_6hp
 execute if score stageSeconds Azr_system matches 40 if score playerCount Azr_system matches 2.. positioned -79940 38 14 run function skyblock:azr/m/zombie_t1_6hp
+#回秒
 execute if score stageSeconds Azr_system matches 41..46 if entity @e[tag=AzrielMob,tag=!AzrielDecMob] run scoreboard players set stageSeconds Azr_system 41
-execute if score stageSeconds Azr_system matches 44 run title @a[tag=azrPlayer] actionbar {"text":"Wave Clear","color":"green"}
+execute if score stageSeconds Azr_system matches 44 run title @a[tag=azrPlayer] actionbar {"text":"Wave Clear","color":"green"} 
 execute if score stageSeconds Azr_system matches 45 run scoreboard players set @a[tag=azrPlayer] Azr_wave 2
 execute if score stageSeconds Azr_system matches 49 run title @a[tag=azrPlayer] actionbar {"text":"5","color":"yellow"}
 execute if score stageSeconds Azr_system matches 50 run title @a[tag=azrPlayer] actionbar {"text":"4","color":"yellow"}
@@ -71,7 +73,9 @@ execute if score stageSeconds Azr_system matches 132 positioned -79922 38 14 run
 execute if score stageSeconds Azr_system matches 134 if score playerCount Azr_system matches 2.. positioned -79922 38 14 run function skyblock:azr/m/zombie_t2_shild
 execute if score stageSeconds Azr_system matches 139 positioned -79927 38 16 run function skyblock:azr/m/pillager_t1
 execute if score stageSeconds Azr_system matches 139 positioned -79935 38 12 run function skyblock:azr/m/pillager_t1
+#回秒
 execute if score stageSeconds Azr_system matches 140..143 if entity @e[tag=AzrielMob,tag=!AzrielDecMob] run scoreboard players set stageSeconds Azr_system 140
+#结束
 execute if score stageSeconds Azr_system matches 143 run playsound ambient.crimson_forest.loop ambient @a[tag=azrPlayer] -78000 100 0 1000
 execute if score stageSeconds Azr_system matches 143 run playsound ambient.crimson_forest.mood ambient @a[tag=azrPlayer] -78000 100 0 1000
 execute if score stageSeconds Azr_system matches 143 run playsound ambient.crimson_forest.additions ambient @a[tag=azrPlayer] -78000 100 0 1000

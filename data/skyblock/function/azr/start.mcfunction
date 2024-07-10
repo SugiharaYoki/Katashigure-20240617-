@@ -19,6 +19,7 @@ scoreboard players add Pointer Azr_startCount 1
 scoreboard players set @a[tag=azrPlayer] Azr_wave 0
 scoreboard players set stage Azr_system 1
 scoreboard players set isStarted Azr_system 1
+scoreboard players set stopSeconds Azr_system 0
 #重置bossbar
 bossbar remove azr:progress_bar_normal
 bossbar remove minecraft:8432198

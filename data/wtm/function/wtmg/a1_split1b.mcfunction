@@ -1,1 +1,1 @@
-function wtm:wtmgr/a1_split1
+function wtm:wtmg/a1_split1
