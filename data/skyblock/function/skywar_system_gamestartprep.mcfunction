@@ -218,6 +218,7 @@ execute if block 43 58 55 minecraft:soul_lantern if score @n[tag=sc] SSgspT matc
 execute if block 44 57 54 minecraft:lantern if score @n[tag=sc] SSgspT matches 17 run execute as @a[tag=PVPing] at @s run give @s enchanted_golden_apple
 execute if block 44 59 56 minecraft:soul_lantern if score @n[tag=sc] SSgspT matches 17 run execute as @a[tag=PVPing] at @s run effect give @s absorption 300 3 true
 execute if block 45 60 55 minecraft:soul_lantern if score @n[tag=sc] SSgspT matches 17 run execute as @a[tag=PVPing] at @s run effect give @s regeneration 300 1 true
+execute if block 44 61 54 minecraft:soul_lantern if score @n[tag=sc] SSgspT matches 17 run execute as @a[tag=PVPing] at @s run item replace entity @s armor.head with melon[minecraft:enchantments={binding_curse:1,blast_protection:4}]
 
 #execute if score @n[tag=sc] SSgspT matches 18 run tellraw @a[tag=PVPing] {"text":"看板狐： 所有参与者已合并为 A C 两组","color":"dark_green"}
 #execute if score @n[tag=sc] SSgspT matches 18 run team join Team1_1 @a[team=Team1_3]

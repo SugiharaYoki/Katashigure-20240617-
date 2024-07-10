@@ -103,38 +103,38 @@ execute as @a[scores={MultiMenu=88}] at @s run function skyblock:multimenu088_se
 execute as @a[scores={MultiMenu=89}] at @s run function skyblock:multimenu089_checkwar_settingpage
 execute as @a[scores={MultiMenu=90}] at @s run function skyblock:multimenu090_cct_to_fsb
 execute as @a[scores={MultiMenu=91}] at @s run function skyblock:verbal_hotel_frontdesk
-execute as @a[scores={MultiMenu=92}] at @s run function skyblock:multimenu092_pvp_choosemap
-execute as @a[scores={MultiMenu=92002}] at @s run setblock 56 87 74 minecraft:redstone_block
-execute as @a[scores={MultiMenu=92003}] at @s run setblock 61 86 74 minecraft:redstone_block
-execute as @a[scores={MultiMenu=92004}] at @s run setblock 64 87 74 minecraft:redstone_block
-execute as @a[scores={MultiMenu=92005}] at @s run setblock 68 87 74 minecraft:redstone_block
-execute as @a[scores={MultiMenu=92006}] at @s run setblock 72 87 74 minecraft:redstone_block
-execute as @a[scores={MultiMenu=92007}] at @s run setblock 76 87 74 minecraft:redstone_block
-execute as @a[scores={MultiMenu=92008}] at @s run setblock 80 87 74 minecraft:redstone_block
-execute as @a[scores={MultiMenu=92009}] at @s run setblock 91 86 74 minecraft:redstone_block
-execute as @a[scores={MultiMenu=92010}] at @s run setblock 84 87 74 minecraft:redstone_block
-execute as @a[scores={MultiMenu=92011}] at @s run setblock 88 87 74 minecraft:redstone_block
-execute as @a[scores={MultiMenu=92012}] at @s run setblock 60 86 73 minecraft:redstone_block
-execute as @a[scores={MultiMenu=92001..92999}] at @s run scoreboard players set @s MultiMenu 92
+#execute as @a[scores={MultiMenu=92}] at @s run function skyblock:multimenu092_pvp_choosemap
+#execute as @a[scores={MultiMenu=92002}] at @s run setblock 56 87 74 minecraft:redstone_block
+#execute as @a[scores={MultiMenu=92003}] at @s run setblock 61 86 74 minecraft:redstone_block
+#execute as @a[scores={MultiMenu=92004}] at @s run setblock 64 87 74 minecraft:redstone_block
+#execute as @a[scores={MultiMenu=92005}] at @s run setblock 68 87 74 minecraft:redstone_block
+#execute as @a[scores={MultiMenu=92006}] at @s run setblock 72 87 74 minecraft:redstone_block
+#execute as @a[scores={MultiMenu=92007}] at @s run setblock 76 87 74 minecraft:redstone_block
+#execute as @a[scores={MultiMenu=92008}] at @s run setblock 80 87 74 minecraft:redstone_block
+#execute as @a[scores={MultiMenu=92009}] at @s run setblock 91 86 74 minecraft:redstone_block
+#execute as @a[scores={MultiMenu=92010}] at @s run setblock 84 87 74 minecraft:redstone_block
+#execute as @a[scores={MultiMenu=92011}] at @s run setblock 88 87 74 minecraft:redstone_block
+#execute as @a[scores={MultiMenu=92012}] at @s run setblock 60 86 73 minecraft:redstone_block
+#execute as @a[scores={MultiMenu=92001..92999}] at @s run scoreboard players set @s MultiMenu 92
 execute as @a[scores={MultiMenu=93}] at @s run function skyblock:multimenu093_cct_to_fsb_ask
-execute as @a[scores={MultiMenu=94001}] at @s run function skyblock:multimenu094_ckwr_equila1
-execute as @a[scores={MultiMenu=94002}] at @s run function skyblock:multimenu094_ckwr_equila2
-execute as @a[scores={MultiMenu=94003}] at @s run function skyblock:multimenu094_ckwr_equila3
-execute as @a[scores={MultiMenu=94004}] at @s run function skyblock:multimenu094_ckwr_equila4
-execute as @a[scores={MultiMenu=94005}] at @s run function skyblock:multimenu094_ckwr_equilb1
-execute as @a[scores={MultiMenu=94006}] at @s run function skyblock:multimenu094_ckwr_equilb2
-execute as @a[scores={MultiMenu=94007}] at @s run function skyblock:multimenu094_ckwr_equilb3
-execute as @a[scores={MultiMenu=94008}] at @s run function skyblock:multimenu094_ckwr_equilb4
-execute as @a[scores={MultiMenu=95}] at @s run function skyblock:multimenu095_checkwar_spawnbaseselect
-execute as @a[scores={MultiMenu=95001}] at @s run function skyblock:multimenu095_ckwr_spst1
-execute as @a[scores={MultiMenu=95002}] at @s run function skyblock:multimenu095_ckwr_spst2
-execute as @a[scores={MultiMenu=95003}] at @s run function skyblock:multimenu095_ckwr_spst3
-execute as @a[scores={MultiMenu=95004}] at @s run function skyblock:multimenu095_ckwr_spst4
-execute as @a[scores={MultiMenu=95005}] at @s run function skyblock:multimenu095_ckwr_spst5
-execute as @a[scores={MultiMenu=95006}] at @s run function skyblock:multimenu095_ckwr_spst6
-execute as @a[scores={MultiMenu=95007}] at @s run function skyblock:multimenu095_ckwr_spst7
-execute as @a[scores={MultiMenu=95008}] at @s run function skyblock:multimenu095_ckwr_spst8
-execute as @a[scores={MultiMenu=95001..95999}] at @s run scoreboard players set @s MultiMenu 95
+#execute as @a[scores={MultiMenu=94001}] at @s run function skyblock:multimenu094_ckwr_equila1
+#execute as @a[scores={MultiMenu=94002}] at @s run function skyblock:multimenu094_ckwr_equila2
+#execute as @a[scores={MultiMenu=94003}] at @s run function skyblock:multimenu094_ckwr_equila3
+#execute as @a[scores={MultiMenu=94004}] at @s run function skyblock:multimenu094_ckwr_equila4
+#execute as @a[scores={MultiMenu=94005}] at @s run function skyblock:multimenu094_ckwr_equilb1
+#execute as @a[scores={MultiMenu=94006}] at @s run function skyblock:multimenu094_ckwr_equilb2
+#execute as @a[scores={MultiMenu=94007}] at @s run function skyblock:multimenu094_ckwr_equilb3
+#execute as @a[scores={MultiMenu=94008}] at @s run function skyblock:multimenu094_ckwr_equilb4
+#execute as @a[scores={MultiMenu=95}] at @s run function skyblock:multimenu095_checkwar_spawnbaseselect
+#execute as @a[scores={MultiMenu=95001}] at @s run function skyblock:multimenu095_ckwr_spst1
+#execute as @a[scores={MultiMenu=95002}] at @s run function skyblock:multimenu095_ckwr_spst2
+#execute as @a[scores={MultiMenu=95003}] at @s run function skyblock:multimenu095_ckwr_spst3
+#execute as @a[scores={MultiMenu=95004}] at @s run function skyblock:multimenu095_ckwr_spst4
+#execute as @a[scores={MultiMenu=95005}] at @s run function skyblock:multimenu095_ckwr_spst5
+#execute as @a[scores={MultiMenu=95006}] at @s run function skyblock:multimenu095_ckwr_spst6
+#execute as @a[scores={MultiMenu=95007}] at @s run function skyblock:multimenu095_ckwr_spst7
+#execute as @a[scores={MultiMenu=95008}] at @s run function skyblock:multimenu095_ckwr_spst8
+#execute as @a[scores={MultiMenu=95001..95999}] at @s run scoreboard players set @s MultiMenu 95
 execute as @a[scores={MultiMenu=810}] at @s run function skyblock:multimenu810_teleport_m02
 #execute as @a[scores={MultiMenu=813}] at @s run function skyblock:multimenu813_teleport_crew1
 #execute as @a[scores={MultiMenu=814}] at @s run function skyblock:multimenu814_teleport_crew2
