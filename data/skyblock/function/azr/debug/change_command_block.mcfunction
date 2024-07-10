@@ -13,8 +13,12 @@ tag @a remove xy_fp_player
 scoreboard objectives remove SeGa_StandLast
 scoreboard objectives remove SeGa_StandLastB
 scoreboard objectives remove SeGa_StandLastD
+scoreboard objectives remove SeGa_StandLastDD
 scoreboard objectives remove SeGa_StandLastP
 scoreboard objectives remove SeGa_StandLastS
+scoreboard objectives remove SeGa_StandLastQ
+scoreboard objectives remove SeGa_NumPartic
+scoreboard objectives remove SeGa_NumMob
 
 #tag azr_DeadAlready死亡玩家 -> azrDead
 #tag SeGa_StandLastA 花园玩家 -> azrPlayer

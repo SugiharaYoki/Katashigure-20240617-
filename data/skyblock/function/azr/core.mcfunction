@@ -5,8 +5,10 @@
 
 #统计信息，怪物统计limit=70是因为停秒统计最多出现65，这样写是为了优化选择器
 execute store result score playerCount Azr_system if entity @a[tag=azrPlayer]
+scoreboard players operation playerCount Azr_system += DEBUG_fakePlayer Azr_system
 execute store result score mobCount Azr_system if entity @e[tag=AzrielMob,tag=!AzrielDecMob,x=-79931,y=100,z=0,distance=..10000,limit=70]
 #停秒
+scoreboard players set stopSeconds Azr_system 0
 execute if score playerCount Azr_system matches 1..4 if score mobCount Azr_system matches 7.. run scoreboard players set stopSeconds Azr_system 1
 execute if score playerCount Azr_system matches 5..6 if score mobCount Azr_system matches 9.. run scoreboard players set stopSeconds Azr_system 1
 execute if score playerCount Azr_system matches 7.. if score mobCount Azr_system matches 10.. run scoreboard players set stopSeconds Azr_system 1
