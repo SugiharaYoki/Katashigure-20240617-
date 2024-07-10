@@ -490,6 +490,9 @@ kill @e[type=!player,tag=!protected_entity,x=-80000,y=100,z=0,distance=0..1000]
 stopsound @a[tag=azrPlayer]
 clear @a[tag=azrPlayer]
 tellraw @a[tag=!Gaming] [{"text":"『亚兹列尔的中庭花园』","color":"light_purple"},{"text":" 已允许新的挑战者光临","color":"green"}]
+#DEBUG: 当该函数被管理员/服务器后台强制执行时，杀死所有玩家。正常流程中触发该函数的同时不会存在玩家。
+scoreboard players set @a[tag=azrPlayer] Azr_forceDeath 1
+execute as @a[tag=azrPlayer] run function skyblock:azr/end_game/quit_game
 #删除记分板 Azr_system不删除
 scoreboard objectives remove Azr_wave
 scoreboard objectives remove Azr_forceDeath
@@ -503,5 +506,3 @@ scoreboard players set stageSeconds Azr_system 0
 scoreboard players set stage Azr_system 0
 scoreboard players set isStarted Azr_system 0
 scoreboard objectives setdisplay sidebar SeGa_StandLastBH
-#DEBUG: 当该函数被管理员/服务器后台强制执行时，杀死所有玩家。正常流程中触发该函数的同时不会存在玩家。
-scoreboard players set @a[tag=azrPlayer] Azr_forceDeath 1
