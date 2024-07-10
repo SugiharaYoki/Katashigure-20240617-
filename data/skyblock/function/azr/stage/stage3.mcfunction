@@ -101,11 +101,11 @@ execute if score stageSeconds Azr_system matches 170 run title @a[tag=azrPlayer]
 execute if score stageSeconds Azr_system matches 171 run title @a[tag=azrPlayer] actionbar {"text":"1","color":"red"}
 execute if score stageSeconds Azr_system matches 172 run title @a[tag=azrPlayer] actionbar {"text":"Stage 3 - Wave 3","color":"red"}
 execute if score stageSeconds Azr_system matches 173 positioned -79931 38 25 run function skyblock:azr/m/zombie_t2_shild
-execute if score stageSeconds Azr_system matches 1808 positioned -79931 38 25 run function skyblock:azr/m/zombie_t1_5hp_full_armor
 execute if score stageSeconds Azr_system matches 174 positioned -79931 42 40 run function skyblock:azr/m/zombie_t1_4hp
 execute if score stageSeconds Azr_system matches 179 positioned -79931 42 40 run function skyblock:azr/m/zombie_t1_4hp
 execute if score stageSeconds Azr_system matches 184 positioned -79931 42.8 38 run function skyblock:azr/m/silverfish_t1
 execute if score stageSeconds Azr_system matches 187 positioned -79931 42.8 38 run function skyblock:azr/m/silverfish_t1
+execute if score stageSeconds Azr_system matches 188 positioned -79931 38 25 run function skyblock:azr/m/zombie_t1_5hp_full_armor
 execute if score stageSeconds Azr_system matches 189 positioned -79931 42.8 38 run function skyblock:azr/m/silverfish_t1
 execute if score stageSeconds Azr_system matches 191 positioned -79931 38 25 run function skyblock:azr/m/zombie_t1_4hp
 execute if score stageSeconds Azr_system matches 192 positioned -79931 38 25 run function skyblock:azr/m/zombie_t1_4hp
@@ -118,14 +118,6 @@ execute if score stageSeconds Azr_system matches 206 run playsound minecraft:ent
 execute if score stageSeconds Azr_system matches 210 positioned -79931 42 40 run function skyblock:azr/m/zombie_t1_5hp_full_armor
 execute if score stageSeconds Azr_system matches 213 if score playerCount Azr_system matches 3.. positioned -79931 42 40 run function skyblock:azr/m/zombie_t1_5hp_full_armor
 execute if score stageSeconds Azr_system matches 216 if score playerCount Azr_system matches 4.. positioned -79931 42 40 run function skyblock:azr/m/zombie_t1_5hp_full_armor
-
-execute if score stageSeconds Azr_system matches 223 run kill @e[x=-79900,y=130,z=0,distance=0..1000,type=item,nbt={Item:{id:"minecraft:white_concrete"}}]
-execute if score stageSeconds Azr_system matches 223 run playsound minecraft:entity.spider.ambient master @a -79926.0 38 34 1 0.7
-execute if score stageSeconds Azr_system matches 223 run playsound minecraft:block.basalt.break master @a -79926.0 38 34 10 0.1
-execute if score stageSeconds Azr_system matches 223 run fill -79928 38 34 -79928 39 35 air destroy
-execute if score stageSeconds Azr_system matches 223 run setblock -79928 40 34 air destroy
-execute if score stageSeconds Azr_system matches 223 run setblock -79928 38 33 air destroy
-
 execute if score stageSeconds Azr_system matches 222 positioned -79926.0 38 34 run function skyblock:azr/m/spider_t1_ruin
 execute if score stageSeconds Azr_system matches 222 if score playerCount Azr_system matches 3.. positioned -79926.0 38 34 run function skyblock:azr/m/spider_t1_ruin
 execute if score stageSeconds Azr_system matches 222 positioned -79926.0 38 34 run function skyblock:azr/m/spider_t1_ruin
@@ -133,6 +125,13 @@ execute if score stageSeconds Azr_system matches 222 positioned -79926.0 38 34 r
 execute if score stageSeconds Azr_system matches 222 if score playerCount Azr_system matches 4.. positioned -79926.0 38 34 run function skyblock:azr/m/spider_t1_dust
 execute if score stageSeconds Azr_system matches 222 positioned -79926.0 38 34 run function skyblock:azr/m/spide_t1_swift
 execute if score stageSeconds Azr_system matches 222 positioned -79926.0 38 34 run function skyblock:azr/m/spide_t1_swift
+#碎墙
+execute if score stageSeconds Azr_system matches 223 run playsound minecraft:entity.spider.ambient master @a -79926.0 38 34 1 0.7
+execute if score stageSeconds Azr_system matches 223 run playsound minecraft:block.basalt.break master @a -79926.0 38 34 10 0.1
+execute if score stageSeconds Azr_system matches 223 run fill -79928 38 34 -79928 39 35 air destroy
+execute if score stageSeconds Azr_system matches 223 run setblock -79928 40 34 air destroy
+execute if score stageSeconds Azr_system matches 223 run setblock -79928 38 33 air destroy
+execute if score stageSeconds Azr_system matches 223 run kill @e[x=-79900,y=130,z=0,distance=0..1000,type=item,nbt={Item:{id:"minecraft:white_concrete"}}]
 execute if score stageSeconds Azr_system matches 226 positioned -79926.0 38 34 run function skyblock:azr/m/spider_t1_ruin
 execute if score stageSeconds Azr_system matches 228 positioned -79926.0 38 34 run function skyblock:azr/m/spide_t1_swift
 execute if score stageSeconds Azr_system matches 232 positioned -79926.0 38 34 run function skyblock:azr/m/spider_t1_ruin
