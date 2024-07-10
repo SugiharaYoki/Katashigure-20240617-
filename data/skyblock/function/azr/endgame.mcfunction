@@ -497,7 +497,7 @@ execute as @a[tag=azrPlayer] run function skyblock:azr/end_game/quit_game
 scoreboard objectives remove Azr_wave
 scoreboard objectives remove Azr_forceDeath
 scoreboard objectives remove Azr_isDead
-scoreboard objectives remove Azr_startCount
+#scoreboard objectives remove Azr_startCount
 scoreboard objectives remove Azr_skillPoints
 scoreboard objectives remove Azr_shop_trigger
 scoreboard objectives remove Azr_emerald

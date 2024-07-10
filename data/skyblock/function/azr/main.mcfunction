@@ -11,15 +11,15 @@ execute as @a[scores={MultiMenu=112}] run function skyblock:azr/midway_join
 execute as @a[scores={MultiMenu=114}] run function skyblock:azr/info/toggle_money_remind
 execute as @a[scores={MultiMenu=115}] run function skyblock:azr/info/menu
 scoreboard players enable @a MultiMenu
-#游戏未开始时强制杀死玩家
-execute if score isStarted Azr_system matches 0 run scoreboard players set @a[tag=azrPlayer] Azr_forceDeath 1
-#死亡检测
-execute as @a[tag=azrPlayer,scores={Azr_forceDeath=1..}] at @s run function skyblock:azr/end_game/player_dead
-execute as @a[tag=azrPlayer,scores={Azr_isDead=1..}] at @s run function skyblock:azr/end_game/player_dead
+#游戏未开始或对局不匹配时强制杀死玩家
+execute if score isStarted Azr_system matches 0 as @a[tag=azrPlayer] run function skyblock:azr/end_game/quit_game
+execute as @a[tag=azrPlayer] unless score @s Azr_startCount = Pointer Azr_startCount run function skyblock:azr/end_game/quit_game
 #重置判定 - 游戏已开始但没有玩家
 execute if score isStarted Azr_system matches 1 if entity @a[x=-79931,y=100,z=0,distance=..10000] unless entity @a[tag=azrPlayer] run function skyblock:azr/endgame
 #另一种判断 似乎未被使用 execute if block -79933 39 -14 air if score isStarted Azr_system matches 0 if entity @a run function skyblock:azr/endgame
 #游戏运行时
+execute as @a[tag=azrPlayer,scores={Azr_forceDeath=1..}] at @s run function skyblock:azr/end_game/player_dead
+execute as @a[tag=azrPlayer,scores={Azr_isDead=1..}] at @s run function skyblock:azr/end_game/player_dead
 execute if score isStarted Azr_system matches 1 if score gametick Azr_system matches 20.. run function skyblock:azr/core
 execute if entity @a[tag=azrPlayer] run scoreboard players add gametick Azr_system 1
 #打印剧情 考虑是否实装
