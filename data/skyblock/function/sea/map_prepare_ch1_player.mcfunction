@@ -28,4 +28,4 @@ execute if entity @a[tag=SEAPT,tag=e_i_06] run tag @s add e_i_06
 execute if entity @a[tag=SEAPT,tag=e_i_07] run tag @s add e_i_07
 execute if entity @a[tag=SEAPT,tag=e_i_08] run tag @s add e_i_08
 execute if entity @a[tag=SEAPT,tag=e_i_11] run tag @s add e_i_11
-spawnpoint @s ~ ~ ~
+execute as @s at @s run spawnpoint @s ~ ~ ~
