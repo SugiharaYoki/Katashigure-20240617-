@@ -21,9 +21,9 @@ scoreboard players operation @s Afk_totalDistance += @s Afk_distUnderWater
 # - - Not AFKed
 scoreboard players add @s[scores={Afk_totalDistance=0..0}] Afk_tick 1
 execute if entity @s[tag=!AFKING,scores={Afk_tick=2400..}] run tellraw @a [{"selector":"@s","color":"gold","bold":true},{"text":"摸了！","color":"gray"}]
-execute if entity @s[tag=!AFKING,scores={Afk_tick=2400..}] run scoreboard players set Afk_totalFSB 0
-execute if entity @s[tag=!AFKING,scores={Afk_tick=2400..}] run tag add @s NoAnnouncement
-execute if entity @s[tag=!AFKING,scores={Afk_tick=2400..},tag=AutoNoAnnouncement] run tellraw @s [{"text":"因为你在AFK，所以自动开启了关闭公告，如要关闭请在相关菜单里修改。"}]
+execute if entity @s[tag=!AFKING,scores={Afk_tick=2400..}] run scoreboard players set @s Afk_totalFSB 0
+execute if entity @s[tag=!AFKING,scores={Afk_tick=2400..},tag=!NoAutoNoA] run tag @s add NoAnnouncement
+execute if entity @s[tag=!AFKING,scores={Afk_tick=2400..},tag=!NoAutoNoA] run tellraw @s [{"text":"因为你在AFK，所以自动开启了关闭公告，如要关闭请在相关菜单里修改。"}]
 tag @s[scores={Afk_tick=2400..}] add AFKING
 # - - AFKed
 execute if entity @s[tag=AFKING] run scoreboard players operation @s Afk_floatSec = @s Afk_tick
@@ -50,3 +50,17 @@ scoreboard players set @s Afk_distCrouch 0
 scoreboard players set @s Afk_distSprint 0
 scoreboard players set @s Afk_distWalk 0
 scoreboard players set @s Afk_distFly 0
+scoreboard players set @s Afk_distCrouch 0
+scoreboard players set @s Afk_distSprint 0
+scoreboard players set @s Afk_distWalk 0
+scoreboard players set @s Afk_distFly 0
+scoreboard players set @s Afk_distBoat 0
+scoreboard players set @s Afk_distAviate 0
+scoreboard players set @s Afk_distHorse 0
+scoreboard players set @s Afk_distPig 0
+scoreboard players set @s Afk_distStrider 0
+scoreboard players set @s Afk_distClimb 0
+scoreboard players set @s Afk_distFall 0
+scoreboard players set @s Afk_distMinecart 0
+scoreboard players set @s Afk_distOnWater 0
+scoreboard players set @s Afk_distUnderWater 0
