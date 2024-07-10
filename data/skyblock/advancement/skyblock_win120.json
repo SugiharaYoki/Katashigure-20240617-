@@ -13,7 +13,7 @@
             "color": "white"
         },
         "icon": {
-            "item": "minecraft:golden_hoe"
+            "id": "minecraft:golden_hoe"
         },
         "frame": "goal",
         "show_toast": true,

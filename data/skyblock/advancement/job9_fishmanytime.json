@@ -9,7 +9,7 @@
             "text": "身为湖灯使者时 在同一局PVP战争内钓20次鱼"
         },
         "icon": {
-            "item": "minecraft:cod_bucket"
+            "id": "minecraft:cod_bucket"
         },
         "frame": "task",
         "show_toast": true,

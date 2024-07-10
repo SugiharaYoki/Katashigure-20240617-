@@ -13,7 +13,7 @@
             "color": "gold"
         },
         "icon": {
-            "item": "minecraft:writable_book"
+            "id": "minecraft:writable_book"
         },
         "frame": "challenge",
         "show_toast": true,

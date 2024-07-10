@@ -12,7 +12,7 @@
             "italic": false
         },
         "icon": {
-            "item": "minecraft:experience_bottle"
+            "id": "minecraft:experience_bottle"
         },
         "frame": "task",
         "show_toast": true,

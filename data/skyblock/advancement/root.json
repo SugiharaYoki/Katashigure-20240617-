@@ -11,7 +11,7 @@
             "color": "white"
         },
         "icon": {
-            "item": "minecraft:lodestone"
+            "id": "minecraft:lodestone"
         },
         "frame": "task",
         "show_toast": true,

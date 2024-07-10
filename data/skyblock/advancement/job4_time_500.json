@@ -10,7 +10,7 @@
             "text": "选择职业<建筑师>至少500次"
         },
         "icon": {
-            "item": "minecraft:iron_axe"
+            "id": "minecraft:iron_axe"
         },
         "frame": "goal",
         "show_toast": true,

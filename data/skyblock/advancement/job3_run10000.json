@@ -13,7 +13,7 @@
             "color": "dark_purple"
         },
         "icon": {
-            "item": "minecraft:porkchop"
+            "id": "minecraft:porkchop"
         },
         "frame": "task",
         "show_toast": true,

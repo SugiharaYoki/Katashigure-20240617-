@@ -12,7 +12,7 @@
             "color": "white"
         },
         "icon": {
-            "item": "minecraft:soul_soil"
+            "id": "minecraft:soul_soil"
         },
         "frame": "goal",
         "show_toast": false,

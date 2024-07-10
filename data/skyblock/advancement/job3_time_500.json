@@ -10,7 +10,7 @@
             "text": "选择职业<旅行家>至少500次"
         },
         "icon": {
-            "item": "minecraft:leather_boots"
+            "id": "minecraft:leather_boots"
         },
         "frame": "goal",
         "show_toast": true,

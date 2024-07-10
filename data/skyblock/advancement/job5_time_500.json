@@ -10,7 +10,7 @@
             "text": "选择职业<影猎人>至少500次"
         },
         "icon": {
-            "item": "minecraft:flint"
+            "id": "minecraft:flint"
         },
         "frame": "goal",
         "show_toast": true,

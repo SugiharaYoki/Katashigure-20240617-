@@ -5,6 +5,9 @@ setblock -79950 31 -39 minecraft:command_block[facing=down]{Command:"function sk
 #第一关
 setblock -79934 39 4 minecraft:command_block[facing=west]{Command:'title @a[tag=azrPlayer] actionbar {"text":"Stage 1 - Wave 1","color":"red"}'} destroy
 setblock -79935 39 4 minecraft:chain_command_block[facing=west]{Command:"scoreboard players set stage Azr_system 2",auto:1b} destroy
+#第二关
+setblock -79936 39 23 minecraft:command_block[facing=down]{Command:'title @a[tag=azrPlayer] actionbar {"color":"red","text":"Stage 2 - Wave 1"}'} destroy
+setblock -79936 38 23 minecraft:chain_command_block[facing=down]{Command:"scoreboard players set stage Azr_system 4",auto:1b} destroy
 
 tag @a remove xy_fp_player
 scoreboard objectives remove SeGa_StandLast

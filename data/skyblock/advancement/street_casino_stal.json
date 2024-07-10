@@ -13,7 +13,7 @@
             "color": "white"
         },
         "icon": {
-            "item": "minecraft:music_disc_stal"
+            "id": "minecraft:music_disc_stal"
         },
         "frame": "task",
         "show_toast": true,

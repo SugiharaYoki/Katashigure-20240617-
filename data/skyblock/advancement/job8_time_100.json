@@ -9,7 +9,7 @@
             "text": "选择职业<依莉卡特魔法师>至少100次"
         },
         "icon": {
-            "item": "minecraft:blaze_powder"
+            "id": "minecraft:blaze_powder"
         },
         "frame": "task",
         "show_toast": true,

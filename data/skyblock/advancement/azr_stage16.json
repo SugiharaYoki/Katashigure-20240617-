@@ -12,7 +12,7 @@
             "color": "white"
         },
         "icon": {
-            "item": "minecraft:crying_obsidian"
+            "id": "minecraft:crying_obsidian"
         },
         "frame": "goal",
         "show_toast": false,

@@ -12,7 +12,7 @@
             "color": "dark_aqua"
         },
         "icon": {
-            "item": "minecraft:conduit"
+            "id": "minecraft:conduit"
         },
         "frame": "task",
         "show_toast": true,

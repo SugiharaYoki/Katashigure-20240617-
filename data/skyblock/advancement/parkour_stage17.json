@@ -13,7 +13,7 @@
             "color": "gray"
         },
         "icon": {
-            "item": "minecraft:chiseled_red_sandstone"
+            "id": "minecraft:chiseled_red_sandstone"
         },
         "frame": "goal",
         "show_toast": true,

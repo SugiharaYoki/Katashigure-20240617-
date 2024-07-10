@@ -9,7 +9,7 @@
             "text": "选择职业<艾弗斯弓箭手>至少10次"
         },
         "icon": {
-            "item": "minecraft:bow"
+            "id": "minecraft:bow"
         },
         "frame": "task",
         "show_toast": true,

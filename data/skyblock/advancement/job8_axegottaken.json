@@ -10,7 +10,7 @@
             "color": "gray"
         },
         "icon": {
-            "item": "minecraft:diamond_axe"
+            "id": "minecraft:diamond_axe"
         },
         "frame": "task",
         "show_toast": true,

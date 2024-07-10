@@ -13,7 +13,7 @@
             "color": "green"
         },
         "icon": {
-            "item": "minecraft:flint"
+            "id": "minecraft:flint"
         },
         "frame": "task",
         "show_toast": true,

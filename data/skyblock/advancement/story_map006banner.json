@@ -13,7 +13,7 @@
             "color": "white"
         },
         "icon": {
-            "item": "minecraft:green_banner"
+            "id": "minecraft:green_banner"
         },
         "frame": "task",
         "show_toast": true,

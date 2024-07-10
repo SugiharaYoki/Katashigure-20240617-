@@ -13,7 +13,7 @@
             "color": "white"
         },
         "icon": {
-            "item": "minecraft:light_blue_bed"
+            "id": "minecraft:light_blue_bed"
         },
         "frame": "task",
         "show_toast": true,

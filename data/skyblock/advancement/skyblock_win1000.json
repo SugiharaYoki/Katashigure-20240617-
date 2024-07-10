@@ -13,7 +13,7 @@
             "color": "gold"
         },
         "icon": {
-            "item": "minecraft:nether_star"
+            "id": "minecraft:nether_star"
         },
         "frame": "challenge",
         "show_toast": true,

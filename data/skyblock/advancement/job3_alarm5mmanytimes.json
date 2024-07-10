@@ -13,7 +13,7 @@
             "color": "dark_purple"
         },
         "icon": {
-            "item": "minecraft:compass"
+            "id": "minecraft:compass"
         },
         "frame": "goal",
         "show_toast": true,

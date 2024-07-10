@@ -10,7 +10,7 @@
 "color": "dark_purple"
         },
         "icon": {
-            "item": "minecraft:skull_banner_pattern"
+            "id": "minecraft:skull_banner_pattern"
         },
         "frame": "task",
         "show_toast": true,

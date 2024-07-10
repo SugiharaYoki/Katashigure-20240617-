@@ -10,7 +10,7 @@
             "color": "green"
         },
         "icon": {
-            "item": "minecraft:bow"
+            "id": "minecraft:bow"
         },
         "frame": "task",
         "show_toast": true,

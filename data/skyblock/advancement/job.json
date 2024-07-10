@@ -11,7 +11,7 @@
             "color": "green"
         },
         "icon": {
-            "item": "minecraft:blast_furnace"
+            "id": "minecraft:blast_furnace"
         },
         "frame": "task",
         "show_toast": true,

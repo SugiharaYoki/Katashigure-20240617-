@@ -10,7 +10,7 @@
             "color": "green"
         },
         "icon": {
-            "item": "minecraft:wheat"
+            "id": "minecraft:wheat"
         },
         "frame": "task",
         "show_toast": true,

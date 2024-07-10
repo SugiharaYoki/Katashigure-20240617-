@@ -12,7 +12,7 @@
             "color": "white"
         },
         "icon": {
-            "item": "minecraft:dripstone_block"
+            "id": "minecraft:dripstone_block"
         },
         "frame": "task",
         "show_toast": false,

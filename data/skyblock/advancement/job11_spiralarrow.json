@@ -10,7 +10,7 @@
             "color": "dark_purple"
         },
         "icon": {
-            "item": "minecraft:arrow"
+            "id": "minecraft:arrow"
         },
         "frame": "task",
         "show_toast": true,

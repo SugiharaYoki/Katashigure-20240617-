@@ -10,7 +10,7 @@
 "color": "dark_purple"
         },
         "icon": {
-            "item": "minecraft:sweet_berries"
+            "id": "minecraft:sweet_berries"
         },
         "frame": "task",
         "show_toast": true,

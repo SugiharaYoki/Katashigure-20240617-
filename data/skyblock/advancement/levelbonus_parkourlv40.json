@@ -12,7 +12,7 @@
             "italic": false
         },
         "icon": {
-            "item": "minecraft:air"
+            "id": "minecraft:air"
         },
         "frame": "challenge",
         "show_toast": true,

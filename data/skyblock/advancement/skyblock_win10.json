@@ -13,7 +13,7 @@
             "color": "white"
         },
         "icon": {
-            "item": "minecraft:stone_hoe"
+            "id": "minecraft:stone_hoe"
         },
         "frame": "task",
         "show_toast": true,

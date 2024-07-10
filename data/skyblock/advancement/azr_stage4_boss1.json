@@ -12,7 +12,7 @@
             "color": "white"
         },
         "icon": {
-            "item": "minecraft:nether_star"
+            "id": "minecraft:nether_star"
         },
         "frame": "goal",
         "show_toast": false,

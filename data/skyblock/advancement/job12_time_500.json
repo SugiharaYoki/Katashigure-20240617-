@@ -10,7 +10,7 @@
             "text": "选择职业<落叶镇农民>至少500次"
         },
         "icon": {
-            "item": "minecraft:wheat"
+            "id": "minecraft:wheat"
         },
         "frame": "goal",
         "show_toast": true,

@@ -13,7 +13,7 @@
             "color": "white"
         },
         "icon": {
-            "item": "minecraft:wooden_hoe"
+            "id": "minecraft:wooden_hoe"
         },
         "frame": "task",
         "show_toast": true,

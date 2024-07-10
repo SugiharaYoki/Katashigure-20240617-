@@ -7,7 +7,7 @@ execute if score stageSeconds Azr_system matches 1 run bossbar set azr:progress_
 execute if score stageSeconds Azr_system matches 1..27 store result bossbar azr:progress_bar_normal value run scoreboard players get stageSeconds Azr_system
 execute if score stageSeconds Azr_system matches 27 run bossbar remove azr:progress_bar_normal
 #wtf
-execute if score stageSeconds Azr_system matches 2 run scoreboard players set @e[tag=sc,limit=1] SeGa_StandLastQ -1
+#execute if score stageSeconds Azr_system matches 2 run scoreboard players set @e[tag=sc,limit=1] SeGa_StandLastQ -1
 #关卡特效
 execute if score stageSeconds Azr_system matches 11 positioned -79930.5 38.0 3.5 run function skyblock:azr/effects/basalt_open
 #刷怪时序

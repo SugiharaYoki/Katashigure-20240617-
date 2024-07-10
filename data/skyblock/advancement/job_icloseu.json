@@ -13,7 +13,7 @@
             "color": "white"
         },
         "icon": {
-            "item": "minecraft:crossbow"
+            "id": "minecraft:crossbow"
         },
         "frame": "task",
         "show_toast": true,
