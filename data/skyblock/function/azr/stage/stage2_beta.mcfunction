@@ -1,7 +1,7 @@
 execute if score stageSeconds Azr_system matches 2..6 as @a[tag=azrPlayer] at @s unless block ~ ~-1 ~ air unless block ~ ~-1 ~ lava unless block ~ ~ ~ lava run spawnpoint @s ~ ~ ~
-execute if score stageSeconds Azr_system matches 1 run bossbar add azr:progress_bar_normalnormal "Stage 2"
-execute if score stageSeconds Azr_system matches 1 run bossbar set azr:progress_bar_normalnormal color white
-execute if score stageSeconds Azr_system matches 1 run bossbar set azr:progress_bar_normalnormal players @a[tag=azrPlayer]
+execute if score stageSeconds Azr_system matches 1 run bossbar add azr:progress_bar_normal "Stage 2"
+execute if score stageSeconds Azr_system matches 1 run bossbar set azr:progress_bar_normal color white
+execute if score stageSeconds Azr_system matches 1 run bossbar set azr:progress_bar_normal players @a[tag=azrPlayer]
 execute if score stageSeconds Azr_system matches 1 run bossbar set azr:progress_bar_normal max 99
 execute if score stageSeconds Azr_system matches 1 run tellraw @a[tag=DebugMode] [{"text":"You are playing \"Stage 2β\", with playerCount = "},{"score":{"objective":"Azr_system","name":"playerCount"}}]
 execute if score stageSeconds Azr_system matches 1..99 store result bossbar azr:progress_bar_normal value run scoreboard players get stageSeconds Azr_system
