@@ -172,7 +172,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:netherite_scrap",
-          "weight": 4,
+          "weight": 7,
           "functions": [
             {
               "function": "minecraft:set_count",

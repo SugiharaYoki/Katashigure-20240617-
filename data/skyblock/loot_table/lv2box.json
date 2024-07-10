@@ -101,7 +101,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:netherite_upgrade_smithing_template",
-          "weight": 5,
+          "weight": 9,
           "functions": [
             {
               "function": "minecraft:set_count",
