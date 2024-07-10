@@ -151,6 +151,7 @@ execute as @a[scores={MultiMenu=824}] at @s run function skyblock:multimenu824_t
 execute as @a[scores={MultiMenu=825}] at @s run function skyblock:multimenu825_teleport_m03
 execute as @a[scores={MultiMenu=826}] at @s run function skyblock:multimenu826_teleport_ukiyohotel
 execute as @a[scores={MultiMenu=827}] at @s run function skyblock:multimenu827_teleport_oneshot
+execute as @a[scores={MultiMenu=828}] at @s run function skyblock:multimenu828_teleport_xuanyuland1
 execute as @a[scores={MultiMenu=829}] at @s if entity @s[tag=sea_dead] if entity @a[tag=SEAPT] run tellraw @s {"text":"你并不是调查小队的指定成员，请等待上级部门的指令。","color":"dark_blue"}
 execute as @a[scores={MultiMenu=829}] at @s if entity @s[tag=sea_dead] if entity @a[tag=SEAPT] run scoreboard players set @s MultiMenu 0
 execute as @a[scores={MultiMenu=829}] at @s if entity @s[tag=sea_dead] unless entity @a[tag=SEAPT] run function skyblock:multimenu829_teleport_m04
