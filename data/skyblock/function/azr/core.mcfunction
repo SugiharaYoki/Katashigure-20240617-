@@ -3,7 +3,7 @@
 #alreadyexecuted#scoreboard objectives add SeGa_NumMob dummy
 #alreadyexecuted#scoreboard objectives add SeGa_StandLastQ dummy
 
-#统计信息
+#统计信息，怪物统计limit=70是因为停秒统计最多出现65，这样写是为了优化选择器
 execute store result score playerCount Azr_system if entity @a[tag=azrPlayer]
 execute store result score mobCount Azr_system if entity @e[tag=AzrielMob,tag=!AzrielDecMob,x=-79931,y=100,z=0,distance=..10000,limit=70]
 #停秒
