@@ -1,12 +1,6 @@
 playsound minecraft:ui.button.click master @s ~ ~ ~ 0.3 1.4 0.4
 tellraw @s {"text":"「交错维度的螺旋」","color":"blue"}
 tellraw @s {"text":" "}
-execute as @a[tag=!gaming,scores={MultiMenu=101971}] at @s run scoreboard players set @s ZeroBGM 1
-execute as @a[tag=!gaming,scores={MultiMenu=101976}] at @s run scoreboard players set @s ZeroBGM 2
-execute as @a[tag=!gaming,scores={MultiMenu=101977}] at @s run scoreboard players set @s ZeroBGM 3
-execute as @a[tag=!gaming,scores={MultiMenu=101978}] at @s run scoreboard players set @s ZeroBGM 4
-execute as @a[tag=!gaming,scores={MultiMenu=101979}] at @s run scoreboard players set @s ZeroBGM 5
-execute as @a[tag=!gaming,scores={MultiMenu=101980}] at @s run scoreboard players set @s ZeroBGM 6
 execute if score @s ZeroBGM matches 2.. run tellraw @s [{"text":"  Replica by. Sky_Delta + 藍月なくる - 匿名之都·主题曲","color":"aqua","hoverEvent":{"action":"show_text","contents":{"text":"匿名ナ都 BGM Extension Vol2~3.5","color":"gray"}}},{"text":"  点唱 ","color":"green","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 101761"},"hoverEvent":{"action":"show_text","contents":{"text":"立即播放该曲","color":"white"}}},{"text":" 刻印","color":"green","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 101971"},"hoverEvent":{"action":"show_text","contents":{"text":"设置为你的零点曲","color":"white"}}}]
 execute unless score @s ZeroBGM matches 2.. run tellraw @s [{"text":"  Replica by. Sky_Delta + 藍月なくる - 匿名之都·主题曲","color":"aqua","hoverEvent":{"action":"show_text","contents":{"text":"匿名ナ都 BGM Extension Vol2~3.5","color":"gray"}}},{"text":"  点唱 ","color":"green","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 101761"},"hoverEvent":{"action":"show_text","contents":{"text":"立即播放该曲","color":"white"}}},{"text":" 刻印","color":"dark_gray"}]
 tellraw @s [{"text":"  Nalca by. onoken","color":"aqua","hoverEvent":{"action":"show_text","contents":{"text":"匿名ナ都 BGM Extension Vol2~3.5","color":"gray"}}},{"text":"  点唱","color":"green","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 101765"},"hoverEvent":{"action":"show_text","contents":{"text":"立即播放该曲","color":"white"}}}]

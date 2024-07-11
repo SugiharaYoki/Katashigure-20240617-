@@ -209,7 +209,7 @@ execute as @a[scores={MultiMenu=120}] at @s run function skyblock:multimenu120_s
 execute as @a[scores={MultiMenu=121}] at @s run function skyblock:multimenu121_setting_selectcitybgm_extend2c
 
 execute as @a[scores={MultiMenu=119001..119099}] at @s run function skyblock:world_system_functionreader_pvpjob
-execute as @a[scores={MultiMenu=101700..101900}] at @s run function skyblock:world_system_functionreader_musicbox
+execute as @a[scores={MultiMenu=101700..102000}] at @s run function skyblock:world_system_functionreader_musicbox
 execute as @a[scores={MultiMenu=16210001..16329999}] at @s run function skyblock:world_system_functionreader_purchase
 #execute as @a[scores={MultiMenu=16220001}] at @s run function skyblock:azr/ingame_azrielsmidgarden_tellraw_rule_2_sub1
 #execute as @a[scores={MultiMenu=16220002}] at @s run function skyblock:azr/ingame_azrielsmidgarden_tellraw_rule_2_sub2
