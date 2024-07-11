@@ -1,4 +1,5 @@
 #商店检测+处理器
+#WTF:怎么丢了几个函数？
 execute as @a[tag=SeGa_DVA,scores={SeGa_DVInv2U=1..}] at @s run function skyblock:dv/pu_inv02
 execute as @a[tag=SeGa_DVA,scores={SeGa_DVInv6U=1..}] at @s run function skyblock:dv/pu_inv06
 execute as @a[tag=SeGa_DVA,scores={SeGa_DVInv9Q=1..}] at @s run function skyblock:dv/pu_inv09
