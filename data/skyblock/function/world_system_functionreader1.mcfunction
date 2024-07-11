@@ -221,4 +221,7 @@ execute as @a[scores={MultiMenu=993}] at @s run function skyblock:multimenu993_a
 execute as @a[scores={MultiMenu=994}] at @s run function skyblock:multimenu994_anypage_pauseskywar
 execute as @a[scores={MultiMenu=995}] at @s run function skyblock:multimenu995_anypage_long_disableskywar
 execute as @a[scores={MultiMenu=996}] at @s run function skyblock:multimenu996_anypage_recountskywar
+execute as @a[scores={MultiMenu=1001}] at @s run function skyblock:multimenu1001_afk_noa_pa
+execute as @a[scores={MultiMenu=1002}] at @s run function skyblock:multimenu1002_afk_noa_pb
+
 execute as @a[scores={MultiMenu=7450101..7459999}] at @s run function skyblock:world_system_functionreader_mg
