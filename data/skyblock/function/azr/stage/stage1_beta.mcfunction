@@ -4,7 +4,7 @@ execute if score stageSeconds Azr_system matches 1 run bossbar add azr:progress_
 execute if score stageSeconds Azr_system matches 1 run bossbar set azr:progress_bar_normal color white
 execute if score stageSeconds Azr_system matches 1 run bossbar set azr:progress_bar_normal players @a[tag=azrPlayer]
 execute if score stageSeconds Azr_system matches 1 run bossbar set azr:progress_bar_normal max 31
-execute if score stageSeconds Azr_system matches 1 run tellraw @a[tag=DebugMode] [{"text":"You are playing \"Stage 1β\", with playerCount = "},{"score":{"objective":"Azr_system","name":"playerCount"}}]
+execute if score stageSeconds Azr_system matches 1 run tellraw @a[tag=DebugMode,tag=azrPlayer] [{"text":"You are playing \"Stage 1β\", with playerCount = "},{"score":{"objective":"Azr_system","name":"playerCount"}}]
 execute if score stageSeconds Azr_system matches 1..31 store result bossbar azr:progress_bar_normal value run scoreboard players get stageSeconds Azr_system
 execute if score stageSeconds Azr_system matches 31 run bossbar remove azr:progress_bar_normal
 #wtf
@@ -32,6 +32,9 @@ execute if score stageSeconds Azr_system matches 27 run playsound ambient.crimso
 execute if score stageSeconds Azr_system matches 27 run title @a[tag=azrPlayer] actionbar {"text":"Stage Clear","color":"green"}
 execute if score stageSeconds Azr_system matches 31.. run fill -79931 40 6 -79931 38 6 air destroy
 execute if score stageSeconds Azr_system matches 31.. run fill -79928 40 1 -79928 38 -1 air destroy
+#to stage3b - the first door
+execute if score stageSeconds Azr_system matches 31.. if score playerCount Azr_system matches 3.. run tellraw @a[tag=DebugMode,tag=azrPlayer] {"text":"[DEBUG MODE MESSAGE] You have opened stage3β - DOOR I"}
+execute if score stageSeconds Azr_system matches 31.. if score playerCount Azr_system matches 3.. run fill -79934 40 -1 -79934 38 1 air destroy
 execute if score stageSeconds Azr_system matches 31.. run tellraw @a[tag=azrPlayer,tag=!hasLifeVitae] {"text":""}
 execute if score stageSeconds Azr_system matches 31.. run tellraw @a[tag=azrPlayer,tag=!hasLifeVitae] {"text":"成功通过了第1关的挑战！"}
 execute if score stageSeconds Azr_system matches 31.. run tellraw @a[tag=azrPlayer,tag=!hasLifeVitae] {"text":"在此之后还会有数不尽的敌人与关卡，请随时做好死亡的准备。"}
