@@ -42,8 +42,7 @@ execute if entity @n[tag=sc,scores={TempIf_Job6D=4},limit=1] as @a[tag=PVPing,sc
 execute if entity @n[tag=sc,scores={TempIf_Job6D=1},limit=1] as @a[tag=PVPing,scores={Job=3,Job_SpiritProp=2}] at @s if block ~ ~-1 ~ soul_sand run effect give @s regeneration 2 0 true
 execute if entity @n[tag=sc,scores={TempIf_Job6D=4},limit=1] as @a[tag=PVPing,scores={Job=3,Job_SpiritProp=2}] at @s if block ~ ~-1 ~ soul_sand run effect give @s regeneration 2 0 true
 
-execute if entity @n[tag=sc,scores={TempIf_Job6D=1},limit=1] as @a[tag=PVPing,nbt={Inventory:[{Slot:-106b,id:"minecraft:iron_nugget",tag:{display:{Name:"{\"text\":\"探索者手镯\",\"italic\":false,\"color\":\"dark_purple\"}"}}}]}] at @s run effect give @s regeneration 2 0 true
-# execute if entity @n[tag=sc,scores={TempIf_Job6D=1},limit=1] as @a[tag=PVPing,nbt={Inventory:[{Slot:-106b,id:"minecraft:iron_nugget",components:{"minecraft:custom_name":"{\"text\":\"探索者手镯\",\"italic\":false,\"color\":\"dark_purple\"}"}}]}] at @s run effect give @s regeneration 2 0 true
+execute if entity @n[tag=sc,scores={TempIf_Job6D=1},limit=1] as @a[tag=PVPing,nbt={Inventory:[{Slot:-106b,id:"minecraft:iron_nugget",components:{"minecraft:custom_name":"{\"text\":\"探索者手镯\",\"italic\":false,\"color\":\"dark_purple\"}"}}]}] at @s run effect give @s regeneration 2 0 true
 
 
 execute if entity @n[tag=sc,scores={TempIf_Job6D=1},limit=1] as @a[tag=PVPing,scores={Job=9,Job_SpiritProp=1}] at @s if block ~ ~ ~ water[level=15] run effect give @s health_boost 20 2 true

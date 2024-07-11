@@ -111,10 +111,10 @@ summon minecraft:interaction 90094 123.3 135 {CustomName:'[{"text":"多功能工
 summon minecraft:interaction 90142 123.3 136 {CustomName:'[{"text":"多功能工作站"}]',Tags:["SEAcrafter"]}
 setblock 90131 123 111 minecraft:crimson_button[facing=south]
 fill 90111 122 143 90108 122 143 lever[facing=north,powered=false]
-summon painting 90136 124 115 {facing:2,variant:"minecraft:meditative"}
-summon painting 90135 123 115 {facing:2,variant:"minecraft:meditative"}
-summon painting 90134 123 115 {facing:2,variant:"minecraft:meditative"}
-summon painting 90133 124 115 {facing:2,variant:"minecraft:meditative"}
+summon painting 90136 124 115 {Facing:2,variant:"minecraft:meditative"}
+summon painting 90135 123 115 {Facing:2,variant:"minecraft:meditative"}
+summon painting 90134 123 115 {Facing:2,variant:"minecraft:meditative"}
+summon painting 90133 124 115 {Facing:2,variant:"minecraft:meditative"}
 
 setblock 90127 122 127 furnace[facing=east]
 setblock 90127 122 128 chest[facing=east]
