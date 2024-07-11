@@ -13,7 +13,7 @@
             "color": "dark_purple"
         },
         "icon": {
-            "item": "minecraft:quartz_bricks"
+            "id": "minecraft:quartz_bricks"
         },
         "frame": "goal",
         "show_toast": true,

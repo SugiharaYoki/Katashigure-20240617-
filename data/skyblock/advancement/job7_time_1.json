@@ -13,7 +13,7 @@
             "color": "green"
         },
         "icon": {
-            "item": "minecraft:ghast_tear"
+            "id": "minecraft:ghast_tear"
         },
         "frame": "task",
         "show_toast": true,

@@ -10,7 +10,7 @@
             "text": "选择职业<湖灯使者>至少500次"
         },
         "icon": {
-            "item": "minecraft:fishing_rod"
+            "id": "minecraft:fishing_rod"
         },
         "frame": "goal",
         "show_toast": true,

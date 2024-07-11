@@ -12,7 +12,7 @@
             "italic": false
         },
         "icon": {
-            "item": "minecraft:acacia_fence"
+            "id": "minecraft:acacia_fence"
         },
         "frame": "task",
         "show_toast": true,

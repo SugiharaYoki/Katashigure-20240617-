@@ -12,7 +12,7 @@
             "color": "dark_green"
         },
         "icon": {
-            "item": "minecraft:emerald"
+            "id": "minecraft:emerald"
         },
         "frame": "task",
         "show_toast": true,
@@ -25,7 +25,9 @@
             "conditions": {
                 "items": [
                     {
-                        "item": "minecraft:emerald",
+                        "items": "minecraft:emerald",
+                        "components":{"custom_data": {"shinyemerald":1}},
+                        "WARNING": "改变了条件，需要改变对应物品来源的组件",
                         "nbt": "{display:{Name:\"{\\\"bold\\\":true,\\\"italic\\\":false,\\\"color\\\":\\\"green\\\",\\\"text\\\":\\\"闪绿宝石\\\"}\",Lore:[\"{\\\"italic\\\":false,\\\"text\\\":\\\"当两位玩家分别在物品栏位1与9选中此物品时，强制中断游戏。\\\"}\"]}}",
                         "count": {
                             "min": 1,

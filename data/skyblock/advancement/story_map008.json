@@ -13,7 +13,7 @@
             "color": "dark_purple"
         },
         "icon": {
-            "item": "minecraft:sandstone"
+            "id": "minecraft:sandstone"
         },
         "frame": "goal",
         "show_toast": true,

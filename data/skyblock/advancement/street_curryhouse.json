@@ -13,7 +13,7 @@
             "color": "yellow"
         },
         "icon": {
-            "item": "minecraft:rabbit_stew"
+            "id": "minecraft:rabbit_stew"
         },
         "frame": "task",
         "show_toast": true,

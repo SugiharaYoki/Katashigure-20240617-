@@ -13,7 +13,7 @@
             "color": "white"
         },
         "icon": {
-            "item": "minecraft:diamond_hoe"
+            "id": "minecraft:diamond_hoe"
         },
         "frame": "challenge",
         "show_toast": true,

@@ -13,7 +13,7 @@
             "color": "white"
         },
         "icon": {
-            "item": "minecraft:netherite_ingot"
+            "id": "minecraft:netherite_ingot"
         },
         "frame": "challenge",
         "show_toast": true,

@@ -13,7 +13,7 @@
             "color": "green"
         },
         "icon": {
-            "item": "minecraft:turtle_helmet"
+            "id": "minecraft:turtle_helmet"
         },
         "frame": "task",
         "show_toast": true,

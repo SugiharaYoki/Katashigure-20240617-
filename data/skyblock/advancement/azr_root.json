@@ -12,7 +12,7 @@
             "color": "white"
         },
         "icon": {
-            "item": "minecraft:beacon"
+            "id": "minecraft:beacon"
         },
         "frame": "goal",
         "show_toast": false,

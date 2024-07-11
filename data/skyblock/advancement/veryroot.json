@@ -12,7 +12,7 @@
             "color": "white"
         },
         "icon": {
-            "item": "minecraft:fletching_table"
+            "id": "minecraft:fletching_table"
         },
         "frame": "task",
         "show_toast": true,

@@ -10,7 +10,7 @@
 "color": "dark_purple"
         },
         "icon": {
-            "item": "minecraft:shield"
+            "id": "minecraft:shield"
         },
         "frame": "task",
         "show_toast": true,

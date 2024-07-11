@@ -13,7 +13,7 @@
             "color": "white"
         },
         "icon": {
-            "item": "minecraft:netherite_hoe"
+            "id": "minecraft:netherite_hoe"
         },
         "frame": "challenge",
         "show_toast": true,

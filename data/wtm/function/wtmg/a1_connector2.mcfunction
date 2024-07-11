@@ -1,1 +1,1 @@
-function wtm:wtmgr/a1_connector1
+function wtm:wtmg/a1_connector1

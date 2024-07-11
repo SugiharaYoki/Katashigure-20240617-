@@ -12,7 +12,7 @@
             "color": "white"
         },
         "icon": {
-            "item": "minecraft:crimson_nylium"
+            "id": "minecraft:crimson_nylium"
         },
         "frame": "goal",
         "show_toast": false,

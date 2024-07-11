@@ -12,7 +12,7 @@
             "color": "light_purple"
         },
         "icon": {
-            "item": "minecraft:yellow_glazed_terracotta"
+            "id": "minecraft:yellow_glazed_terracotta"
         },
         "frame": "task",
         "show_toast": false,

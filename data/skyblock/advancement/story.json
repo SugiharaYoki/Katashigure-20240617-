@@ -12,7 +12,7 @@
             "color": "white"
         },
         "icon": {
-            "item": "minecraft:warped_hyphae"
+            "id": "minecraft:warped_hyphae"
         },
         "frame": "task",
         "show_toast": true,

@@ -9,7 +9,7 @@
             "text": "选择职业<影猎人>至少10次"
         },
         "icon": {
-            "item": "minecraft:flint"
+            "id": "minecraft:flint"
         },
         "frame": "task",
         "show_toast": true,

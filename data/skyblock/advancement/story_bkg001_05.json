@@ -13,7 +13,7 @@
             "color": "white"
         },
         "icon": {
-            "item": "minecraft:book"
+            "id": "minecraft:book"
         },
         "frame": "task",
         "show_toast": true,

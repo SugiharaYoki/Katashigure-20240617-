@@ -171,6 +171,24 @@
         },
         {
           "type": "minecraft:item",
+          "name": "minecraft:netherite_scrap",
+          "weight": 7,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:limit_count",
+              "limit": {
+                "min": 1,
+                "max": 2
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
           "name": "minecraft:cactus",
           "weight": 18,
           "functions": [

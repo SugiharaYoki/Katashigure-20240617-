@@ -10,7 +10,7 @@
             "color": "black"
         },
         "icon": {
-            "item": "minecraft:ender_eye"
+            "id": "minecraft:ender_eye"
         },
         "frame": "task",
         "show_toast": true,

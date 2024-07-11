@@ -12,7 +12,7 @@
             "color": "white"
         },
         "icon": {
-            "item": "minecraft:bookshelf"
+            "id": "minecraft:bookshelf"
         },
         "frame": "task",
         "show_toast": false,

@@ -10,7 +10,7 @@
             "color": "green"
         },
         "icon": {
-            "item": "minecraft:iron_horse_armor"
+            "id": "minecraft:iron_horse_armor"
         },
         "frame": "task",
         "show_toast": true,

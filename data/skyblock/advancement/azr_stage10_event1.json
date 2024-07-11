@@ -12,7 +12,7 @@
             "color": "white"
         },
         "icon": {
-            "item": "minecraft:netherite_block"
+            "id": "minecraft:netherite_block"
         },
         "frame": "goal",
         "show_toast": false,

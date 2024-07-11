@@ -12,7 +12,7 @@
             "color": "white"
         },
         "icon": {
-            "item": "minecraft:polished_diorite"
+            "id": "minecraft:polished_diorite"
         },
         "frame": "goal",
         "show_toast": false,

@@ -13,7 +13,7 @@
             "color": "dark_red"
         },
         "icon": {
-            "item": "minecraft:crimson_roots"
+            "id": "minecraft:crimson_roots"
         },
         "frame": "task",
         "show_toast": true,

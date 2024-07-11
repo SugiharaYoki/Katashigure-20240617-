@@ -10,7 +10,7 @@
             "color": "red"
         },
         "icon": {
-            "item": "minecraft:bucket"
+            "id": "minecraft:bucket"
         },
         "frame": "task",
         "show_toast": true,

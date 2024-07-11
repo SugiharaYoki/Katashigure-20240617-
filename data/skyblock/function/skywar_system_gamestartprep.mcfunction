@@ -197,7 +197,7 @@ execute if score @n[tag=sc] SSgspT matches 13 if score @n[tag=sc] Map_Code match
 execute if score @n[tag=sc] SSgspT matches 13 if score @n[tag=sc] Map_Code matches 5 run title @a[tag=PVP_see] title {"text":"献堂的圣咏","color":"white"}
 execute if score @n[tag=sc] SSgspT matches 13 if score @n[tag=sc] Map_Code matches 5 run title @a[tag=PVP_see] subtitle {"text":"反叛的旗帜 被悄然掀起……","color":"white"}
 execute if score @n[tag=sc] SSgspT matches 13 if score @n[tag=sc] Map_Code matches 7 run title @a[tag=PVP_see] title {"text":"亚兹列尔的钟台","color":"white"}
-execute if score @n[tag=sc] SSgspT matches 13 if score @n[tag=sc] Map_Code matches 7 run title @a[tag=PVP_see] subtitle {"text":"穹顶钟声回档之时 某个生命便会陨落","color":"white"}
+execute if score @n[tag=sc] SSgspT matches 13 if score @n[tag=sc] Map_Code matches 7 run title @a[tag=PVP_see] subtitle {"text":"穹顶钟声回荡之时 某个生命便会陨落","color":"white"}
 execute if score @n[tag=sc] SSgspT matches 13 if score @n[tag=sc] Map_Code matches 8 run title @a[tag=PVP_see] title {"text":"荒废之地的民谣","color":"white"}
 execute if score @n[tag=sc] SSgspT matches 13 if score @n[tag=sc] Map_Code matches 8 run title @a[tag=PVP_see] subtitle {"text":"残羹断瓦的下方 曾是一座巨型遗迹","color":"white"}
 execute if score @n[tag=sc] SSgspT matches 13 if score @n[tag=sc] Map_Code matches 13 run title @a[tag=PVP_see] title {"text":"混沌魔方","color":"white"}
@@ -209,7 +209,7 @@ execute if score @n[tag=sc] SSgspT matches 13 if score @n[tag=sc] Map_Code match
 execute if score @n[tag=sc] SSgspT matches 13 if score @n[tag=sc] Map_Code matches 16 run title @a[tag=PVP_see] title {"text":"绯染缥茫的世花源","color":"white"}
 execute if score @n[tag=sc] SSgspT matches 13 if score @n[tag=sc] Map_Code matches 16 run title @a[tag=PVP_see] subtitle {"text":"樱色的梦境 将在此刻破碎","color":"white"}
 execute if score @n[tag=sc] SSgspT matches 13 if score @n[tag=sc] Map_Code matches 17 run title @a[tag=PVP_see] title {"text":"天穹巨兽古伽兰那","color":"white"}
-execute if score @n[tag=sc] SSgspT matches 13 if score @n[tag=sc] Map_Code matches 17 run title @a[tag=PVP_see] subtitle {"text":"空中军舰锈迹斑斑 而前方即是雷暴云海","color":"white"}
+execute if score @n[tag=sc] SSgspT matches 13 if score @n[tag=sc] Map_Code matches 17 run title @a[tag=PVP_see] subtitle {"text":"空中军舰锈迹斑斑 刺耳的金属尖啸诠释着何类的昔日辉煌？","color":"white"}
 #[futuredevskywar]
 execute if block -19 23 32 minecraft:soul_lantern if score @n[tag=sc] SSgspT matches 17 run execute as @a[tag=PVPing] at @s run function skyblock:skywar_system_jobbonus
 execute if score @n[tag=sc] SSgspT matches 17 run execute as @a[tag=PVPing] at @s run function skyblock:skywar_system_levelbonus
@@ -218,6 +218,7 @@ execute if block 43 58 55 minecraft:soul_lantern if score @n[tag=sc] SSgspT matc
 execute if block 44 57 54 minecraft:lantern if score @n[tag=sc] SSgspT matches 17 run execute as @a[tag=PVPing] at @s run give @s enchanted_golden_apple
 execute if block 44 59 56 minecraft:soul_lantern if score @n[tag=sc] SSgspT matches 17 run execute as @a[tag=PVPing] at @s run effect give @s absorption 300 3 true
 execute if block 45 60 55 minecraft:soul_lantern if score @n[tag=sc] SSgspT matches 17 run execute as @a[tag=PVPing] at @s run effect give @s regeneration 300 1 true
+execute if block 44 61 54 minecraft:soul_lantern if score @n[tag=sc] SSgspT matches 17 run execute as @a[tag=PVPing] at @s run item replace entity @s armor.head with melon[minecraft:enchantments={binding_curse:1,blast_protection:4}]
 
 #execute if score @n[tag=sc] SSgspT matches 18 run tellraw @a[tag=PVPing] {"text":"看板狐： 所有参与者已合并为 A C 两组","color":"dark_green"}
 #execute if score @n[tag=sc] SSgspT matches 18 run team join Team1_1 @a[team=Team1_3]

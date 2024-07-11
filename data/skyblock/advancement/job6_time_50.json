@@ -9,7 +9,7 @@
             "text": "选择职业<艾弗斯驯兽人>至少50次"
         },
         "icon": {
-            "item": "minecraft:bone"
+            "id": "minecraft:bone"
         },
         "frame": "task",
         "show_toast": true,

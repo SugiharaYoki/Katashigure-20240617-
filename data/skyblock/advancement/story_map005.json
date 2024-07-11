@@ -13,7 +13,7 @@
             "color": "dark_purple"
         },
         "icon": {
-            "item": "minecraft:polished_diorite"
+            "id": "minecraft:polished_diorite"
         },
         "frame": "goal",
         "show_toast": true,

@@ -10,7 +10,7 @@
             "text": "选择职业<新约之圣女>至少500次"
         },
         "icon": {
-            "item": "minecraft:ghast_tear"
+            "id": "minecraft:ghast_tear"
         },
         "frame": "goal",
         "show_toast": true,

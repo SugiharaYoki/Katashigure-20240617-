@@ -10,10 +10,11 @@
         },
         "description": {
             "text": "被包围在仅12格宽的世界内",
-            "color": "light_gray"
+            "WARNING": "light_gray不再支持",
+            "color": "gray"
         },
         "icon": {
-            "item": "minecraft:iron_bars"
+            "id": "minecraft:iron_bars"
         },
         "frame": "task",
         "show_toast": true,

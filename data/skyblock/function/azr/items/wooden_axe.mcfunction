@@ -1,0 +1,1 @@
+give @s wooden_axe[custom_name='{"text":"木斧","italic":false}']
