@@ -3,7 +3,8 @@ scoreboard players add @n[tag=sc] AnnouncementRo 1
 scoreboard players add @n[tag=sc] AnnouncementRoB 1
 #
 execute as @n[tag=sc,type=witch,scores={AnnouncementRo=1}] as @a at @s run scoreboard players add @s Perm_PersonFSB 10
-execute as @n[tag=sc,type=witch,scores={AnnouncementRo=1}] as @a at @s run tellraw @s[tag=!Gaming] {"text":" - 在线奖励 10 FSB - ","color":"dark_gray"}
+execute as @n[tag=sc,type=witch,scores={AnnouncementRo=1}] as @a at @s run tellraw @s[tag=!Gaming,tag=!AFKING] {"text":" - 在线奖励 10 FSB - ","color":"dark_gray"}
+execute as @n[tag=sc,type=witch,scores={AnnouncementRo=1}] as @a at @s run scoreboard players add @s Afk_totalFSB 10
 execute as @n[tag=sc,type=witch,scores={AnnouncementRo=8}] at @s run scoreboard objectives setdisplay sidebar Perm_PersonWins
 execute as @n[tag=sc,type=witch,scores={AnnouncementRo=16}] at @s run scoreboard objectives setdisplay sidebar Perm_PersonDeath
 #execute as @n[tag=sc,scores={AnnouncementRo=23}] as @a at @s run scoreboard players operation @s SeGa_ParkourS = @s ParkourLastStage

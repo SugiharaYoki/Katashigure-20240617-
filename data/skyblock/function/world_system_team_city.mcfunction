@@ -15,7 +15,7 @@ team modify TokumeiM prefix "[CM]"
 team modify TokumeiO prefix "[CO]"
 team modify AFK prefix "[AFK]"
 
-team join Tokumei @s[tag=!Gaming,tag!=AFKING]
-team join TokumeiM @s[tag=!Gaming,tag=ServerManager,tag=!ServerOperator,tag=!AFKING]
-team join TokumeiO @s[tag=!Gaming,tag=ServerManager,tag=ServerOperator,tag=!AFKING]
+team join Tokumei @s[tag=!Gaming]
+team join TokumeiM @s[tag=!Gaming,tag=ServerManager,tag=!ServerOperator]
+team join TokumeiO @s[tag=!Gaming,tag=ServerManager,tag=ServerOperator]
 team join AFK @s[tag=!Gaming,tag=AFKING]
