@@ -118,7 +118,7 @@ execute if score stageSeconds Azr_system matches 137 run playsound minecraft:amb
 execute if score stageSeconds Azr_system matches 137 run playsound minecraft:ambient.soul_sand_valley.additions master @a -79926 38 34 1000 1
 execute if score stageSeconds Azr_system matches 137 run playsound minecraft:ambient.soul_sand_valley.mood master @a -79926 38 34 1000 1
 #回秒
-execute if score stageSeconds Azr_system matches 134..138 if entity @e[tag=AzrielMob,tag=!AzrielDecMob] run scoreboard players set stageSeconds Azr_system 134
+execute if score stageSeconds Azr_system matches 134 if entity @e[tag=AzrielMob,tag=!AzrielDecMob] run scoreboard players set stageSeconds Azr_system 133
 execute if score stageSeconds Azr_system matches 148 run title @a[tag=azrPlayer] actionbar {"text":"Wave Clear","color":"green"}
 execute if score stageSeconds Azr_system matches 148 run scoreboard players set @a[tag=azrPlayer] Azr_wave 5
 #第三波
