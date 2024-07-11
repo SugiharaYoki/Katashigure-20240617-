@@ -14,7 +14,7 @@ execute if entity @e[tag=sc,limit=1,scores={Azr_Timerx4=45}] run tp @e[tag=Azrie
 execute if entity @e[tag=sc,limit=1,scores={Azr_Timerx4=45}] run particle minecraft:reverse_portal -79542 25 -408 0.5 0.6 0.5 0.5 40
 execute if entity @e[tag=sc,limit=1,scores={Azr_Timerx4=45}] run playsound item.chorus_fruit.teleport master @a -79542 25 -408 1 0.9
 
-execute if entity @e[tag=sc,limit=1,scores={Azr_Timerx4=45}] run summon parrot -79543 26 -409 {PersistenceRequired:1,Invulnerable:1b,Tags:["AzrielDecMob","AzrielFriendly"],DeathLootTable:"skyblock:azriel_creeper_tier2",Attributes:[{Name:generic.max_health,Base:50.0},{Name:generic.flying_speed,Base:0.0},{Name:generic.movement_speed,Base:0.0}],Health:34.0f,CustomName:"\"小鸢\"",Variant:2}
+execute if entity @e[tag=sc,limit=1,scores={Azr_Timerx4=45}] run summon parrot -79543 26 -409 {PersistenceRequired:1b,Invulnerable:1b,Tags:["AzrielDecMob","AzrielFriendly"],DeathLootTable:"skyblock:azriel_creeper_tier2",Attributes:[{Name:generic.max_health,Base:50.0},{Name:generic.flying_speed,Base:0.0},{Name:generic.movement_speed,Base:0.0}],Health:34.0f,CustomName:"\"小鸢\"",Variant:2}
 
 execute if entity @e[tag=sc,limit=1,scores={Azr_Timerx4=51}] run forceload add -79762 376 -79782 -396
 execute if entity @e[tag=sc,limit=1,scores={Azr_Timerx4=52}] as @e[tag=AzrielBossFA] at @s run tp @s ~ ~ ~ facing -79545 23 -414
