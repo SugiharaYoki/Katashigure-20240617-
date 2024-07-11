@@ -3,7 +3,7 @@ execute if score stageSeconds Azr_system matches 1 run bossbar add azr:progress_
 execute if score stageSeconds Azr_system matches 1 run bossbar set azr:progress_bar_normal color white
 execute if score stageSeconds Azr_system matches 1 run bossbar set azr:progress_bar_normal players @a[tag=azrPlayer]
 execute if score stageSeconds Azr_system matches 1 run bossbar set azr:progress_bar_normal max 99
-execute if score stageSeconds Azr_system matches 1 run tellraw @a[tag=DebugMode] [{"text":"You are playing \"Stage 2β\", with playerCount = "},{"score":{"objective":"Azr_system","name":"playerCount"}}]
+execute if score stageSeconds Azr_system matches 1 run tellraw @a[tag=DebugMode,tag=azrPlayer] [{"text":"[DEBUG MODE MESSAGE] You are playing \"Stage 2β\", with playerCount = "},{"score":{"objective":"Azr_system","name":"playerCount"}}]
 execute if score stageSeconds Azr_system matches 1..99 store result bossbar azr:progress_bar_normal value run scoreboard players get stageSeconds Azr_system
 execute if score stageSeconds Azr_system matches 99 run bossbar remove azr:progress_bar_normal
 #
@@ -105,7 +105,9 @@ execute if score stageSeconds Azr_system matches 99 run playsound ambient.crimso
 execute if score stageSeconds Azr_system matches 99 run playsound ambient.crimson_forest.mood ambient @a[tag=azrPlayer] -78000 100 0 1000
 execute if score stageSeconds Azr_system matches 99 run playsound ambient.crimson_forest.additions ambient @a[tag=azrPlayer] -78000 100 0 1000
 execute if score stageSeconds Azr_system matches 99 run fill -79931 38 22 -79931 40 22 air destroy
-execute if score stageSeconds Azr_system matches 99 run fill -79942 40 3 -79944 38 3 air destroy
+#to stage3b - the second door
+execute if score stageSeconds Azr_system matches 99 if score playerCount Azr_system matches 3.. run tellraw @a[tag=DebugMode,tag=azrPlayer] {"text":"[DEBUG MODE MESSAGE] You have opened stage3β - DOOR II"}
+execute if score stageSeconds Azr_system matches 99 if score playerCount Azr_system matches 3.. run fill -79942 40 3 -79944 38 3 air destroy
 execute if score stageSeconds Azr_system matches 99 run clone -79927 38 0 -79927 38 0 -79934 38 18 replace move
 execute if score stageSeconds Azr_system matches 99 run particle minecraft:end_rod -79927 39 0 0.6 0.6 0.6 0.0 13
 execute if score stageSeconds Azr_system matches 99 run particle minecraft:end_rod -79934 39 18 0.6 0.6 0.6 0.0 13
