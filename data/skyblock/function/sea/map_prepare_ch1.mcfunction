@@ -205,3 +205,9 @@ item replace block 90105 122 106 container.14 with raiser_armor_trim_smithing_te
 fill 90094 124 107 90092 122 107 white_stained_glass
 fill 90094 122 102 90092 124 102 white_stained_glass
 fill 90087 122 105 90087 124 104 white_stained_glass
+setblock 90089 122 134 anvil
+setblock 90091 122 128 furnace[facing=west]
+setblock 90091 122 130 chest[facing=west]
+item replace block 90091 122 130 container.13 with coal 1
+fill 90086 122 105 90086 122 104 minecraft:redstone_block
+fill 90086 122 105 90086 122 104 minecraft:air
