@@ -336,6 +336,7 @@ execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=2355}] positione
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=2355}] positioned 90104 122 100 if entity @n[tag=sc,scores={sea_player=5..}] run function skyblock:sea/m/silverfish
 
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=2355..2800}] if entity @a[tag=SEAPT,x=90099,y=122,z=103,distance=0..3.5] run scoreboard players set @n[tag=sc] sea_4temp2 3000
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=3000..3900}] run scoreboard players add @s sea_4temp2 1
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=3001}] positioned 90093 122 101 run function skyblock:sea/m/drowned_shield
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=3001}] positioned 90093 122 101 run function skyblock:sea/m/drowned_shield
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=3001}] positioned 90093 122 101 run function skyblock:sea/m/silverfish
