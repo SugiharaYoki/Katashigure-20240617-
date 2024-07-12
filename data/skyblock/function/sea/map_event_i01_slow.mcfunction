@@ -384,7 +384,7 @@ execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=4000..5000}] as 
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=4000..5000}] as @n[tag=SEAboss1,scores={rng1=5..6}] at @s run particle minecraft:crimson_spore ~ ~1 ~ 0.5 1 0.5 0.2 10
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=4000..5000}] if block 90078 124 101 minecraft:waxed_copper_bulb[lit=false] if block 90078 124 104 minecraft:waxed_copper_bulb[lit=false] if block 90078 124 107 minecraft:waxed_copper_bulb[lit=false] if block 90078 124 110 minecraft:waxed_copper_bulb[lit=false] if block 90078 124 113 minecraft:waxed_copper_bulb[lit=false] if block 90078 124 116 minecraft:waxed_copper_bulb[lit=false] as @n[tag=SEAboss1] at @s run effect give @s weakness 3 1 true
 
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=2355..2800}] if entity @a[tag=SEAPT,x=90074,y=122,z=118,distance=0..4] run scoreboard players set @n[tag=sc] sea_4temp2 4000
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=2355..3950}] if entity @a[tag=SEAPT,x=90074,y=122,z=118,distance=0..4] run scoreboard players set @n[tag=sc] sea_4temp2 4000
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=4000..5000}] run scoreboard players add @n[tag=sc] sea_4temp2 1
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=4800..4810}] run scoreboard players add @n[tag=sc] sea_4temp2 4800
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=4001}] run scoreboard players set @n[tag=sc] sea_4temp5 1
