@@ -403,7 +403,7 @@ execute if entity @n[tag=sc,scores={sea_4temp2=3000..5000,sea_4temp5=8..34}] as 
 execute if entity @n[tag=sc,scores={sea_4temp2=3000..5000,sea_4temp5=8..34}] as @n[tag=SEAelectric] at @s as @a[tag=SEAPT,distance=0..0.8] run damage @s 2 minecraft:lightning_bolt
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=3000..5000}] run scoreboard players add @s sea_4temp5 1
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=3000..5000,sea_4temp5=80}] run scoreboard players set @s sea_4temp5 10
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=3000..5000,sea_4temp5=1}] run summon marker 90081 122 100 {Tags:{"SEAelectric"}}
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=3000..5000,sea_4temp5=1}] run summon marker 90081 122 100 {Tags:["SEAelectric"]}
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=3000..5000,sea_4temp5=8..10}] as @n[tag=SEAelectric] at @s run tp @s ~-1 ~ ~
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=3000..5000,sea_4temp5=11..28}] as @n[tag=SEAelectric] at @s run tp @s ~ ~ ~1
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=3000..5000,sea_4temp5=29..34}] as @n[tag=SEAelectric] at @s run tp @s ~1 ~ ~
