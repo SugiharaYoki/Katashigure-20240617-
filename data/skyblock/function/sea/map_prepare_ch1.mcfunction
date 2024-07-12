@@ -109,6 +109,7 @@ tag @n[tag=sc] add SeGa_sea_ch1
 fill 90110 122 134 90109 124 134 air
 summon minecraft:interaction 90094 123.3 135 {CustomName:'[{"text":"多功能工作站"}]',Tags:["SEAcrafter"]}
 summon minecraft:interaction 90142 123.3 136 {CustomName:'[{"text":"多功能工作站"}]',Tags:["SEAcrafter"]}
+summon minecraft:interaction 90099 123.3 117 {CustomName:'[{"text":"多功能工作站"}]',Tags:["SEAcrafter"]}
 setblock 90131 123 111 minecraft:crimson_button[facing=south]
 fill 90111 122 143 90108 122 143 lever[facing=north,powered=false]
 summon painting 90136 124 115 {Facing:2,variant:"minecraft:meditative"}
@@ -205,9 +206,18 @@ item replace block 90105 122 106 container.14 with raiser_armor_trim_smithing_te
 fill 90094 124 107 90092 122 107 white_stained_glass
 fill 90094 122 102 90092 124 102 white_stained_glass
 fill 90087 122 105 90087 124 104 white_stained_glass
-setblock 90089 122 134 anvil
+setblock 90089 122 134 potted_azalea_bush
 setblock 90091 122 128 furnace[facing=west]
 setblock 90091 122 130 chest[facing=west]
 item replace block 90091 122 130 container.13 with coal 1
 fill 90086 122 105 90086 122 104 minecraft:redstone_block
 fill 90086 122 105 90086 122 104 minecraft:air
+setblock 90096 122 117 chest[facing=north]{Lock:"扫除用具间钥匙"}
+item replace block 90096 122 117 container.11 with arrow 3
+item replace block 90096 122 117 container.13 with wayfinder_armor_trim_smithing_template
+item replace block 90096 122 117 container.15 with wild_armor_trim_smithing_template
+fill 90078 124 116 90078 124 101 minecraft:waxed_copper_bulb[lit=true] replace minecraft:waxed_copper_bulb[lit=false]
+setblock 90089 123 138 air
+setblock 90089 123 138 lever[powered=false]
+setblock 90090 122 115 air
+setblock 90090 122 115 minecraft:redstone_block
