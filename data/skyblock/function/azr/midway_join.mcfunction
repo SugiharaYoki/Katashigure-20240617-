@@ -19,7 +19,7 @@ execute if entity @s[scores={Azr_wave=10..}] run item replace entity @s inventor
 execute if entity @s[scores={Azr_wave=10..}] run item replace entity @s inventory.1 with stick 3
 execute if entity @s[scores={Azr_wave=10..}] run item replace entity @s inventory.2 with flint 3
 #23波后
-execute if entity @s[scores={Azr_wave=23..}] run function skyblock:azr/items/traditional_bow
+execute if entity @s[scores={Azr_wave=23..}] run function skyblock:azr/items/bow
 execute if entity @s[scores={Azr_wave=23..}] run item replace entity @s inventory.0 with rotten_flesh 6
 execute if entity @s[scores={Azr_wave=23..}] run item replace entity @s inventory.3 with bone[custom_name='{"text":"硬骨","italic":false}'] 3
 execute if entity @s[scores={Azr_wave=23..}] run item replace entity @s inventory.4 with iron_nugget[custom_name='{"text":"盾牌碎片","italic":false}'] 3
