@@ -24,7 +24,7 @@ execute if entity @e[tag=sc,limit=1,scores={SeGa_StandLast=282..310,rng16=1..2}]
 execute if entity @e[tag=sc,limit=1,scores={SeGa_StandLast=282..310,rng16=4..6}] if entity @a[tag=azrPlayer,scores={SeGa_StandLastBH=..22}] run scoreboard players add @e[tag=sc,limit=1] SeGa_StandLast 1
 
 execute if entity @e[tag=sc,limit=1,scores={SeGa_StandLast=1..,rng5=3}] run give @a[tag=azrPlayer,x=-79926,y=38,z=134,distance=0..2] arrow 1 
-execute if entity @e[tag=sc,limit=1,scores={SeGa_StandLast=1..,rng5=3}] run particle minecraft:ambient_entity_effect -79926 38.2 134 1 0 1 2.0 50
+execute if entity @e[tag=sc,limit=1,scores={SeGa_StandLast=1..,rng5=3}] run particle minecraft:entity_effect{color:[1.0f,1.0f,1.0f,1.0f]} -79926 38.2 134 1 0 1 2.0 50
 execute if entity @e[tag=sc,limit=1,scores={SeGa_StandLast=3..}] run function skyblock:tool_rng
 
 execute if entity @e[tag=sc,limit=1,scores={SeGa_StandLast=1..80}] run function skyblock:azr/azrielsmidgarden_stage_6_1
