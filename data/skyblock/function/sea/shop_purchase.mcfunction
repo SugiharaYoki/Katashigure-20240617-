@@ -28,7 +28,7 @@ execute if score @s[nbt={Inventory:[{id:"minecraft:iron_axe",components:{"minecr
 execute if score @s[nbt={Inventory:[{id:"minecraft:iron_axe",components:{"minecraft:custom_data":{sea_safeaxe:true}}}]}] sea_crafter matches 10009 as @s[scores={sea_i_emerald=15..}] run tag @s add sea_purchase_pass
 execute if entity @s[tag=sea_purchase_pass] run playsound minecraft:item.armor.equip_iron neutral @s ~ ~ ~ 100
 execute if entity @s[tag=sea_purchase_pass] run clear @s iron_axe[custom_data={sea_safeaxe:true}] 1
-execute if entity @s[tag=sea_purchase_pass] run give @s iron_axe[custom_name='{"text":"战斧","italic":false,"color":"red"}',custom_data={sea_axe:true},attribute_modifiers=[{type:"generic.attack_damage",slot:"hand",id:"sea_weapon:006_01",amount:8.0,operation:"add_value"},{type:"generic.attack_speed",slot:"hand",id:"sea_weapon:006_02",amount:-2.8,operation:"add_value"},{type:"player.entity_interaction_range",slot:"hand",id:"sea_weapon:006_03",amount:0.3,operation:"add_value"}],unbreakable={}]
+execute if entity @s[tag=sea_purchase_pass] run give @s iron_axe[custom_name='{"text":"战斧","italic":false,"color":"red"}',custom_data={sea_axe:true},attribute_modifiers=[{type:"generic.attack_damage",slot:"hand",id:"sea_weapon:006_01",amount:8.0,operation:"add_value"},{type:"generic.attack_speed",slot:"hand",id:"sea_weapon:006_02",amount:-2.7,operation:"add_value"},{type:"player.entity_interaction_range",slot:"hand",id:"sea_weapon:006_03",amount:0.3,operation:"add_value"}],unbreakable={}]
 execute if entity @s[tag=sea_purchase_pass] run clear @s emerald 15
 tag @s remove sea_purchase_pass
 
