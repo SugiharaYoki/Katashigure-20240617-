@@ -212,6 +212,7 @@ setblock 90091 122 130 chest[facing=west]
 item replace block 90091 122 130 container.13 with coal 1
 fill 90086 122 105 90086 122 104 minecraft:redstone_block
 fill 90086 122 105 90086 122 104 minecraft:air
+setblock 90096 122 117 air
 setblock 90096 122 117 chest[facing=north]{Lock:"扫除用具间钥匙"}
 item replace block 90096 122 117 container.11 with arrow 3
 item replace block 90096 122 117 container.13 with wayfinder_armor_trim_smithing_template
