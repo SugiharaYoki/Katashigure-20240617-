@@ -1,1 +1,1 @@
-summon spider ~ ~ ~ {CustomName:'[{"text":"巨型蜘蛛"}]',DeathLootTable:"skyblock:sea_spider1",Tags:["SEAmob"],attributes:[{id:"generic.attack_damage",base:4.0},{id:"generic.movement_speed",base:0.45},{id:"generic.follow_range",base:5}]}
+summon spider ~ ~ ~ {CustomName:'[{"text":"巨型蜘蛛"}]',DeathLootTable:"skyblock:sea_spider1",Tags:["SEAmob"],attributes:[{id:"generic.attack_damage",base:4.0},{id:"generic.movement_speed",base:0.45},{id:"generic.follow_range",base:5}],PersistenceRequired:1b}
