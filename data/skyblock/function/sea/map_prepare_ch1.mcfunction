@@ -219,6 +219,6 @@ item replace block 90096 122 117 container.15 with wild_armor_trim_smithing_temp
 fill 90078 124 116 90078 124 101 minecraft:waxed_copper_bulb[lit=true] replace minecraft:waxed_copper_bulb[lit=false]
 setblock 90089 123 138 air
 setblock 90089 123 138 lever[powered=false]
-setblock 90090 122 115 air
 setblock 90090 122 115 minecraft:redstone_block
+setblock 90090 122 115 air
 fill 90076 124 121 90076 122 123 iron_block
