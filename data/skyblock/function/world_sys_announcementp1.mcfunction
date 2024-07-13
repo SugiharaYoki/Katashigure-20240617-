@@ -3,8 +3,7 @@ scoreboard players add @n[tag=sc] AnnouncementRo 1
 scoreboard players add @n[tag=sc] AnnouncementRoB 1
 #
 execute as @n[tag=sc,type=witch,scores={AnnouncementRo=1}] as @a at @s run scoreboard players add @s Perm_PersonFSB 10
-execute as @n[tag=sc,type=witch,scores={AnnouncementRo=1}] as @a at @s run tellraw @s[tag=!Gaming,tag=!AFKING] {"text":" - 在线奖励 10 FSB - ","color":"dark_gray"}
-execute as @n[tag=sc,type=witch,scores={AnnouncementRo=1}] as @a at @s run scoreboard players add @s Afk_totalFSB 10
+execute as @n[tag=sc,type=witch,scores={AnnouncementRo=1}] as @a at @s run tellraw @s[tag=!Gaming] {"text":" - 在线奖励 10 FSB - ","color":"dark_gray"}
 execute as @n[tag=sc,type=witch,scores={AnnouncementRo=8}] at @s run scoreboard objectives setdisplay sidebar Perm_PersonWins
 execute as @n[tag=sc,type=witch,scores={AnnouncementRo=16}] at @s run scoreboard objectives setdisplay sidebar Perm_PersonDeath
 #execute as @n[tag=sc,scores={AnnouncementRo=23}] as @a at @s run scoreboard players operation @s SeGa_ParkourS = @s ParkourLastStage
@@ -35,11 +34,14 @@ tag @a[tag=!Gaming] remove NoMultiMenu
 stopsound @a music minecraft:music.game
 stopsound @a music minecraft:music.creative
 scoreboard players set @a[scores={AnnouncementTime=270..}] AnnouncementTime -40
-execute as @a[scores={AnnouncementTime=8},tag=!NoAnnouncement,tag=!Gaming] at @s run tellraw @s [{"text":"GameLand三周目企划正式开始！中枢之城规划建设中！","color":"green"}]
-execute as @a[tag=!NoAnnouncement,tag=!Gaming,scores={AnnouncementTime=32}] at @s run tellraw @s [{"text":"看板狐： 多功能菜单能够用于查看更完整的成绩历史，甚至可以进行等级奖励与精神力属性的设置哦！","color":"aqua"}]
-execute as @a[tag=!NoAnnouncement,tag=!Gaming,scores={AnnouncementTime=58}] at @s run tellraw @s [{"text":"看板狐： 请不要傻乎乎地踩在切石机上！你会受伤的，真的会受伤的！","color":"aqua"}]
-execute as @a[tag=!NoAnnouncement,tag=!Gaming,scores={AnnouncementTime=84}] at @s run tellraw @s [{"text":"看板狐： 『荒废之地的民谣』已作为空岛战争地图回归！","color":"aqua"}]
-execute as @a[tag=!NoAnnouncement,tag=!Gaming,scores={AnnouncementTime=126}] at @s run tellraw @s [{"text":"看板狐： 职业系统有着别样的乐趣！如果不熟悉职业系统的话，可以先尝试旅行者·日/月/星。","color":"aqua"}]
-execute as @a[tag=!NoAnnouncement,tag=!Gaming,scores={AnnouncementTime=168}] at @s run tellraw @s [{"text":"看板狐： 『亚兹列尔的中庭花园』已成为历史！","color":"aqua"}]
-execute as @a[tag=!NoAnnouncement,tag=!Gaming,scores={AnnouncementTime=210}] at @s run tellraw @s [{"text":"看板狐： 精神值系统已被移除！","color":"aqua"}]
-execute as @a[scores={AnnouncementTime=210},tag=!Gaming] at @s run advancement grant @s only skyblock:skyblock_lastannouncement
+execute as @a[tag=!NoAnnouncement,tag=!Gaming,scores={AnnouncementTime=32}] at @s store result score @s rng2 run random value 1..10
+execute as @a[tag=!NoAnnouncement,tag=!Gaming,scores={AnnouncementTime=32,rng2=1}] run tellraw @s [{"text":"看板狐： 多功能菜单能够用于查看更完整的成绩历史，甚至还能用来传送与点歌哦。","color":"aqua"}]
+execute as @a[tag=!NoAnnouncement,tag=!Gaming,scores={AnnouncementTime=32,rng2=2}] run tellraw @s [{"text":"GameLand三周目企划正式开始！方时雨城规划建设中！","color":"green"}]
+execute as @a[tag=!NoAnnouncement,tag=!Gaming,scores={AnnouncementTime=32,rng2=3}] run tellraw @s [{"text":"看板狐： 请不要傻乎乎地踩在切石机上！你会受伤的，真的会受伤的！","color":"aqua"}]
+execute as @a[tag=!NoAnnouncement,tag=!Gaming,scores={AnnouncementTime=32,rng2=4}] run tellraw @s [{"text":"看板狐： 『绯染缥茫的世花源』已作为1v1v1空岛战争地图上架！","color":"aqua"}]
+execute as @a[tag=!NoAnnouncement,tag=!Gaming,scores={AnnouncementTime=32,rng2=5}] run tellraw @s [{"text":"GameLand三周目企划正式开始！方时雨城规划建设中！","color":"green"}]
+execute as @a[tag=!NoAnnouncement,tag=!Gaming,scores={AnnouncementTime=32,rng2=6}] run tellraw @s [{"text":"看板狐： 在赌场玩叠倍机前，记得存够浮世币哦！","color":"aqua"}]
+execute as @a[tag=!NoAnnouncement,tag=!Gaming,scores={AnnouncementTime=32,rng2=7}] run tellraw @s [{"text":"看板狐： 『亚兹列尔的中庭花园』已成为历史，但前传兼续作『厄珀娅的悲歌』已上架！","color":"aqua"}]
+execute as @a[tag=!NoAnnouncement,tag=!Gaming,scores={AnnouncementTime=32,rng2=8}] run tellraw @s [{"text":"看板狐： 大型空岛战争地图『天穹巨兽古伽兰那·维修层』已上架！多种房间结构，挑战你的随机应变极限！","color":"aqua"}]
+execute as @a[tag=!NoAnnouncement,tag=!Gaming,scores={AnnouncementTime=32,rng2=9}] run tellraw @s [{"text":"你有尝试寻找城市内的彩蛋区域吗？这座城市有一些隐藏的地带哟！","color":"green"}]
+execute as @a[tag=!NoAnnouncement,tag=!Gaming,scores={AnnouncementTime=32,rng2=10}] run tellraw @s [{"text":"PVP战争职业系统修复中！","color":"green"}]
