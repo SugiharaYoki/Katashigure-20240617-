@@ -37,7 +37,7 @@ execute if score stageSeconds Azr_system matches 25 if score playerCount Azr_sys
 execute if score stageSeconds Azr_system matches 25 if score playerCount Azr_system matches 5.. positioned -79935 38 20 run function skyblock:azr/m/vindicator_t1
 execute if score stageSeconds Azr_system matches 25 if score playerCount Azr_system matches 6.. positioned -79927 38 8 run function skyblock:azr/m/vindicator_t1
 execute if score stageSeconds Azr_system matches 25 if score playerCount Azr_system matches 6.. positioned -79935 38 8 run function skyblock:azr/m/vindicator_t1
-execute if score stageSeconds Azr_system matches 24 positioned -79935 38 20 run function skyblock:azr/m/pillager_t1_shild
+execute if score stageSeconds Azr_system matches 24 positioned -79935 38 20 run function skyblock:azr/m/pillager_t1_shield
 execute if score stageSeconds Azr_system matches 26 positioned -79922 38 14 run function skyblock:azr/m/zombie_t1_5hp
 execute if score stageSeconds Azr_system matches 28 positioned -79935 38 20 run function skyblock:azr/m/pillager_t1
 execute if score stageSeconds Azr_system matches 31 positioned -79935 38 8 run function skyblock:azr/m/pillager_t1
@@ -67,14 +67,14 @@ execute if score stageSeconds Azr_system matches 51 if score playerCount Azr_sys
 execute store result score random Azr_system run random value 1..3
 execute if score stageSeconds Azr_system matches 52 if score random Azr_system matches 1 positioned -79927 38 8 run function skyblock:azr/m/cow
 execute if score stageSeconds Azr_system matches 54 positioned -79922 38 14 run function skyblock:azr/m/zombie_t1_5hp_full_armor
-execute if score stageSeconds Azr_system matches 56 positioned -79940 38 14 run function skyblock:azr/m/zombie_t2_shild
+execute if score stageSeconds Azr_system matches 56 positioned -79940 38 14 run function skyblock:azr/m/zombie_t2_shield
 execute if score stageSeconds Azr_system matches 58 positioned -79922 38 14 run function skyblock:azr/m/zombie_t1_5hp_full_armor
-execute if score stageSeconds Azr_system matches 60 positioned -79940 38 14 run function skyblock:azr/m/zombie_t2_shild
+execute if score stageSeconds Azr_system matches 60 positioned -79940 38 14 run function skyblock:azr/m/zombie_t2_shield
 execute if score stageSeconds Azr_system matches 62 positioned -79922 38 14 run function skyblock:azr/m/zombie_t1_5hp_full_armor
-execute if score stageSeconds Azr_system matches 64 positioned -79922 38 14 run function skyblock:azr/m/zombie_t2_shild
-execute if score stageSeconds Azr_system matches 61 if score playerCount Azr_system matches 4.. positioned -79940 38 14 run function skyblock:azr/m/zombie_t2_shild
+execute if score stageSeconds Azr_system matches 64 positioned -79922 38 14 run function skyblock:azr/m/zombie_t2_shield
+execute if score stageSeconds Azr_system matches 61 if score playerCount Azr_system matches 4.. positioned -79940 38 14 run function skyblock:azr/m/zombie_t2_shield
 execute if score stageSeconds Azr_system matches 63 if score playerCount Azr_system matches 4.. positioned -79922 38 14 run function skyblock:azr/m/zombie_t1_5hp_full_armor
-execute if score stageSeconds Azr_system matches 65 if score playerCount Azr_system matches 4.. positioned -79922 38 14 run function skyblock:azr/m/zombie_t2_shild
+execute if score stageSeconds Azr_system matches 65 if score playerCount Azr_system matches 4.. positioned -79922 38 14 run function skyblock:azr/m/zombie_t2_shield
 execute if score stageSeconds Azr_system matches 66 positioned -79935 38 16 run function skyblock:azr/m/pillager_t1
 execute store result score random Azr_system run random value 1..3
 execute if score stageSeconds Azr_system matches 62 if score random Azr_system matches 1 positioned -79927 38 12 run function skyblock:azr/m/cow
@@ -88,12 +88,12 @@ execute if score stageSeconds Azr_system matches 75 if score playerCount Azr_sys
 execute if score stageSeconds Azr_system matches 78 if score playerCount Azr_system matches 5.. positioned -79922 38 14 run function skyblock:azr/m/zombie_t1_5hp_full_armor
 execute store result score random Azr_system run random value 1..3
 execute if score stageSeconds Azr_system matches 83 if score random Azr_system matches 1 positioned -79940 38 14 run function skyblock:azr/m/zombie_t1_5hp_full_armor
-execute if score stageSeconds Azr_system matches 83 if score random Azr_system matches 2 positioned -79922 38 14 run function skyblock:azr/m/zombie_t2_shild
+execute if score stageSeconds Azr_system matches 83 if score random Azr_system matches 2 positioned -79922 38 14 run function skyblock:azr/m/zombie_t2_shield
 execute if score stageSeconds Azr_system matches 85 positioned -79940 38 14 run function skyblock:azr/m/zombie_t1_5hp_full_armor
-execute if score stageSeconds Azr_system matches 87 if score playerCount Azr_system matches 5.. positioned -79922 38 14 run function skyblock:azr/m/zombie_t2_shild
-execute if score stageSeconds Azr_system matches 87 if score playerCount Azr_system matches 5.. positioned -79940 38 14 run function skyblock:azr/m/zombie_t2_shild
-execute if score stageSeconds Azr_system matches 89 positioned -79922 38 14 run function skyblock:azr/m/zombie_t2_shild
-execute if score stageSeconds Azr_system matches 89 positioned -79940 38 14 run function skyblock:azr/m/zombie_t2_shild
+execute if score stageSeconds Azr_system matches 87 if score playerCount Azr_system matches 5.. positioned -79922 38 14 run function skyblock:azr/m/zombie_t2_shield
+execute if score stageSeconds Azr_system matches 87 if score playerCount Azr_system matches 5.. positioned -79940 38 14 run function skyblock:azr/m/zombie_t2_shield
+execute if score stageSeconds Azr_system matches 89 positioned -79922 38 14 run function skyblock:azr/m/zombie_t2_shield
+execute if score stageSeconds Azr_system matches 89 positioned -79940 38 14 run function skyblock:azr/m/zombie_t2_shield
 execute if score stageSeconds Azr_system matches 92 positioned -79927 38 16 run function skyblock:azr/m/pillager_t1
 execute if score stageSeconds Azr_system matches 92 positioned -79935 38 12 run function skyblock:azr/m/pillager_t1
 execute if score stageSeconds Azr_system matches 90 positioned -79940 38 14 run function skyblock:azr/m/zombie_t1_5hp_full_armor
