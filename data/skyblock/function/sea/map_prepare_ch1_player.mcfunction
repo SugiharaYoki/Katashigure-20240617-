@@ -9,7 +9,9 @@ give @s spyglass
 give @s compass
 give @s baked_potato 3
 item replace entity @s armor.chest with leather_chestplate[custom_name='{"text":"基础防护服","italic":false,"color":"red"}',custom_data={sea_chest:true},attribute_modifiers=[{type:"generic.armor",slot:"chest",id:"sea_armor:002_01",amount:1.0,operation:"add_value"},{type:"generic.armor_toughness",slot:"chest",id:"sea_armor:002_02",amount:0.5,operation:"add_value"}],unbreakable={}]
-
+effect give @s regeneration 1 39 false
+effect give @s saturation 1 3 false
+effect give @s fire_resistance 1 0 false
 
 team join SEA @s
 tag @s add Gaming

@@ -458,3 +458,5 @@ execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=3000..5000,sea_4
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=3000..5000,sea_4temp5=11..28}] as @n[tag=SEAelectric] at @s run tp @s ~ ~ ~1
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=3000..5000,sea_4temp5=29..34}] as @n[tag=SEAelectric] at @s run tp @s ~1 ~ ~
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=3000..5000,sea_4temp5=40}] as @n[tag=SEAelectric] at @s run kill @s
+
+give @s netherite_hoe[custom_name='{"text":"圣撬棍"}',attribute_modifiers=[{type:"generic.attack_damage",slot:"hand",id:"11100",amount:5.5,operation:"add_value"},{type:"generic.attack_speed",slot:"hand",id:"111100",amount:-0.8,operation:"add_value"}],unbreakable={}]
