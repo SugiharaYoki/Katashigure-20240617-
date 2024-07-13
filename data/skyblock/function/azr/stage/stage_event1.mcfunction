@@ -1,7 +1,6 @@
 execute if score stageSeconds Azr_system matches 1..2 as @a[tag=azrPlayer] at @s unless block ~ ~-1 ~ air unless block ~ ~-1 ~ lava unless block ~ ~ ~ lava run spawnpoint @s ~ ~ ~
 execute if score stageSeconds Azr_system matches 3..5 run scoreboard players set stageSeconds Azr_system 3
-#wtf: 为什么event1要检测cerement按钮 execute if block -79946 39 50 minecraft:birch_button[powered=true] run scoreboard players set @e[tag=sc,limit=1] Azr_Progress 30
-#execute if score stageSeconds Azr_system matches -1..5 as @a[tag=azrPlayer,x=-79931,y=38,z=62,distance=..4.5] at @s run tp @a[tag=azrPlayer,distance=3..] @s
+execute if score stageSeconds Azr_system matches 3..5 as @a[tag=azrPlayer,x=-79931,y=38,z=62,distance=..4.5] at @s run tp @a[tag=azrPlayer,distance=3..] @s
 execute if score stageSeconds Azr_system matches 3..5 if entity @a[tag=azrPlayer,x=-79931,y=38,z=62,distance=..4.5] run setblock -79946 39 50 air
 execute if score stageSeconds Azr_system matches 3..5 if entity @a[tag=azrPlayer,x=-79931,y=38,z=62,distance=..4.5] run scoreboard players set stageSeconds Azr_system 300
 execute if score stageSeconds Azr_system matches 300 run fill -79938 39 49 -79938 38 49 minecraft:purple_stained_glass

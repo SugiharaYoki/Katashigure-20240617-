@@ -397,6 +397,7 @@ execute if score stageSeconds Azr_system matches 247 run fill -79948 38 45 -7995
 execute if score stageSeconds Azr_system matches 247 run setblock -79938 39 49 air destroy
 execute if score stageSeconds Azr_system matches 247 run setblock -79938 38 49 air destroy
 execute if score stageSeconds Azr_system matches 251 run scoreboard players set stage Azr_system 9
+execute if score stageSeconds Azr_system matches 251 run scoreboard players set stageSeconds Azr_system 0
 #execute if score stageSeconds Azr_system matches 251 run scoreboard players set @a[tag=azrPlayer,scores={Azr_PlyPtsH=..3}] Azr_PlyPtsH 4
 execute if score stageSeconds Azr_system matches 251 run title @a[tag=azrPlayer] actionbar {"text":"Stage Clear..?","color":"green"}
 execute if score stageSeconds Azr_system matches 251 run clone -79934 38 18 -79934 38 18 -79931 38 42 replace move

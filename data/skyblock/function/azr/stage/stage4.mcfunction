@@ -336,6 +336,7 @@ execute if score stageSeconds Azr_system matches 289 run setblock -79938 39 49 a
 execute if score stageSeconds Azr_system matches 289 run setblock -79938 38 49 air destroy
 execute if score stageSeconds Azr_system matches 289 run scoreboard players set @a[tag=azrPlayer] Azr_wave 7
 execute if score stageSeconds Azr_system matches 293 run scoreboard players set stage Azr_system 9
+execute if score stageSeconds Azr_system matches 293 run scoreboard players set stageSeconds Azr_system 0
 #execute if score stageSeconds Azr_system matches 293 run scoreboard players set @a[tag=azrPlayer,scores={Azr_PlyPtsH=..3}] Azr_PlyPtsH 4
 execute if score stageSeconds Azr_system matches 293 run title @a[tag=azrPlayer] actionbar {"text":"Stage Clear..?","color":"green"}
 execute if score stageSeconds Azr_system matches 293 run advancement grant @a[tag=azrPlayer] only skyblock:azr_stage4
