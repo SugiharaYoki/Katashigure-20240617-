@@ -30,6 +30,11 @@ scoreboard players set @n[tag=sc] sea_4temp2 0
 scoreboard players set @n[tag=sc] sea_4temp3 0
 scoreboard players set @n[tag=sc] sea_4temp4 0
 scoreboard players set @n[tag=sc] sea_4temp5 0
+scoreboard players set @n[tag=sc] sea_4temp6 0
+scoreboard players set @n[tag=sc] sea_4temp7 0
+scoreboard players set @n[tag=sc] sea_4temp8 0
+scoreboard players set @n[tag=sc] sea_4temp9 0
+scoreboard players set @n[tag=sc] sea_4temp10 0
 kill @e[tag=SEAcrafter,type=interaction]
 
 forceload remove 90000 0 90200 200
