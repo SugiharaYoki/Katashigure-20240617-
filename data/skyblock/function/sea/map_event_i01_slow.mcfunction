@@ -81,7 +81,7 @@ execute if block 90089 128 124 minecraft:waxed_copper_door[open=true] run setblo
 
 
 execute as @n[tag=sc] unless entity @s[scores={sea_4temp2=-9999..}] run scoreboard players set @s sea_4temp2 0
-execute unless block 90095 122 128 chest{Items:[{Slot:26b,id:"minecraft:amethyst_shard",count:1}]} run scoreboard players add @n[tag=sc,scores={sea_4temp2=..0}] sea_4temp2 1
+execute unless block 90058 103 142 grindstone unless block 90095 122 128 chest{Items:[{Slot:26b,id:"minecraft:amethyst_shard",count:1}]} run scoreboard players add @n[tag=sc,scores={sea_4temp2=..0}] sea_4temp2 1
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=1..169}] run scoreboard players add @s sea_4temp2 1
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=8}] run playsound minecraft:item.goat_horn.sound.6 master @a[tag=SEAPT] 90100 0 100 10000 0.8
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=8}] run playsound minecraft:item.goat_horn.sound.6 master @a[tag=SEAPT] 90100 0 100 10000 0.87
@@ -437,16 +437,16 @@ execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=5001}] run stops
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=5001}] as @a[tag=SEAPT] at @s run playsound item.trident.thunder ambient @s ~ ~ ~ 100 0.5
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=5002}] run give @a[tag=SEAPT] nether_star
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=5012}] as @a[tag=SEAPT] at @s run tellraw @s {"text":"……安息吧，法莫洛斯先生。","color":"gray"}
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=5020}] as @a[tag=SEAPT] at @s run tellraw @s {"text":"你的医道是那般崇高，你的灵魂是那般神圣。","color":"gray"}
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=5040}] run playsound minecraft:block.iron_door.open ambient @a 90076 125 121 4 0.3
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=5042}] run playsound minecraft:block.iron_door.open ambient @a 90076 125 121 4 0.3
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=5044}] run playsound minecraft:block.iron_door.open ambient @a 90076 125 121 4 0.3
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=5040}] run fill 90076 122 121 90076 122 123 air
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=5042}] run fill 90076 123 121 90076 123 123 air
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=5044}] run fill 90076 124 121 90076 124 123 air
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=5045}] as @a[tag=SEAPT] at @s run tellraw @s {"text":"『厄珀尔的悲歌』第一章 完","color":"blue"}
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=5045}] as @a[tag=SEAPT] at @s run playsound music_disc.creator_music_box music @a[tag=SEAPT] ~ ~ ~ 1000 0.9
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=5045}] run function skyblock:sea/map_prepare_ch2
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=5030}] as @a[tag=SEAPT] at @s run tellraw @s {"text":"你的医道是那般崇高，你的灵魂是那般神圣。","color":"gray"}
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=5050}] run playsound minecraft:block.iron_door.open ambient @a 90076 125 121 4 0.3
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=5052}] run playsound minecraft:block.iron_door.open ambient @a 90076 125 121 4 0.3
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=5054}] run playsound minecraft:block.iron_door.open ambient @a 90076 125 121 4 0.3
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=5050}] run fill 90076 122 121 90076 122 123 air
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=5052}] run fill 90076 123 121 90076 123 123 air
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=5054}] run fill 90076 124 121 90076 124 123 air
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=5055}] as @a[tag=SEAPT] at @s run tellraw @s {"text":"『厄珀尔的悲歌』第一章 完","color":"blue"}
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=5055}] as @a[tag=SEAPT] at @s run playsound music_disc.creator_music_box music @a[tag=SEAPT] ~ ~ ~ 1000 0.9
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=5055}] run function skyblock:sea/map_prepare_ch2
 
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=3000..5000}] run scoreboard players add @s sea_4temp5 1
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=3000..5000,sea_4temp5=80..}] run scoreboard players set @s sea_4temp5 1
