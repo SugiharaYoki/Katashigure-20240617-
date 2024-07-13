@@ -30,16 +30,19 @@ execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system 
 execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 4 if score playerCount Azr_system matches 3.. run function skyblock:azr/stage/stage2_beta
 #第二关-第三关 5
 execute if score stage Azr_system matches 5 run scoreboard players set stageSeconds Azr_system 0
-#第三关 6
+#第三关 6/32
 execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 6 run function skyblock:azr/stage/stage3
 execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 32 run function skyblock:azr/stage/stage3_beta
 #第三关-第四关 7
 execute if score stage Azr_system matches 7 run scoreboard players set stageSeconds Azr_system 0
-#第四关 8
+#第四关 8/33
 execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 8 run function skyblock:azr/stage/stage4
 execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 33 run function skyblock:azr/stage/stage4_beta
-#第四关-第五关 9
-execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 9 run function skyblock:azr/stage/event1
+#奖励关 Stage Cerement 30
+execute if block -79946 39 50 minecraft:birch_button[powered=true] run function skyblock:azr/stage/stage_cerement_prep
+execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 30 run function skyblock:azr/stage/stage_cerement
+#第四关-BOSS1 9
+execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 10 run function skyblock:azr/stage/event1
 
 #function skyblock:azr/ingame_azrielsmidgarden_core_sub1
 #execute if entity @e[tag=sc,limit=1,scores={SeGa_StandLastP=11}] run scoreboard players set @e[tag=sc,limit=1] SeGa_StandLast 0
