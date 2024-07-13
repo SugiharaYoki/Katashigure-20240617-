@@ -108,17 +108,17 @@ execute if score stageSeconds Azr_system matches 111 if score playerCount Azr_sy
 execute if score stageSeconds Azr_system matches 111 if score playerCount Azr_system matches 7.. positioned -79959 38 6 run function skyblock:azr/m/zombie_t1_5hp_full_armor
 execute if score stageSeconds Azr_system matches 133 if score playerCount Azr_system matches 5.. positioned -79959 38 6 run function skyblock:azr/m/zombie_t1_5hp_full_armor
 execute if score stageSeconds Azr_system matches 133 if score playerCount Azr_system matches 6.. positioned -79959 38 6 run function skyblock:azr/m/zombie_t1_5hp_full_armor
-execute if score stageSeconds Azr_system matches 135 if score playerCount Azr_system matches 6.. positioned -79948 38 6 run function skyblock:azr/m/zombie_t2_shield
-execute if score stageSeconds Azr_system matches 135 if score playerCount Azr_system matches 5.. positioned -79959 38 6 run function skyblock:azr/m/zombie_t2_shield
+execute if score stageSeconds Azr_system matches 138 if score playerCount Azr_system matches 6.. positioned -79948 38 6 run function skyblock:azr/m/zombie_t2_shield
+execute if score stageSeconds Azr_system matches 139 if score playerCount Azr_system matches 5.. positioned -79959 38 6 run function skyblock:azr/m/zombie_t2_shield
 execute if score stageSeconds Azr_system matches 112 if score playerCount Azr_system matches 7.. positioned -79959 38 6 run function skyblock:azr/m/zombie_t1_5hp_full_armor
 execute if score stageSeconds Azr_system matches 112 if score playerCount Azr_system matches 7.. positioned -79959 38 6 run function skyblock:azr/m/zombie_t1_5hp_full_armor
-execute if score stageSeconds Azr_system matches 137 run playsound minecraft:ambient.soul_sand_valley.mood master @a -79926 38 34 1000 1.3
-execute if score stageSeconds Azr_system matches 137 run playsound minecraft:ambient.soul_sand_valley.loop master @a -79926 38 34 1000 1.3
-execute if score stageSeconds Azr_system matches 137 run playsound minecraft:ambient.soul_sand_valley.mood master @a -79926 38 34 1000 1
-execute if score stageSeconds Azr_system matches 137 run playsound minecraft:ambient.soul_sand_valley.additions master @a -79926 38 34 1000 1
-execute if score stageSeconds Azr_system matches 137 run playsound minecraft:ambient.soul_sand_valley.mood master @a -79926 38 34 1000 1
+execute if score stageSeconds Azr_system matches 139 run playsound minecraft:ambient.soul_sand_valley.mood master @a -79926 38 34 1000 1.3
+execute if score stageSeconds Azr_system matches 139 run playsound minecraft:ambient.soul_sand_valley.loop master @a -79926 38 34 1000 1.3
+execute if score stageSeconds Azr_system matches 139 run playsound minecraft:ambient.soul_sand_valley.mood master @a -79926 38 34 1000 1
+execute if score stageSeconds Azr_system matches 139 run playsound minecraft:ambient.soul_sand_valley.additions master @a -79926 38 34 1000 1
+execute if score stageSeconds Azr_system matches 139 run playsound minecraft:ambient.soul_sand_valley.mood master @a -79926 38 34 1000 1
 #回秒
-execute if score stageSeconds Azr_system matches 135 if entity @e[tag=AzrielMob,tag=!AzrielDecMob] run scoreboard players set stageSeconds Azr_system 134
+execute if score stageSeconds Azr_system matches 134..137 if entity @e[tag=AzrielMob,tag=!AzrielDecMob] run scoreboard players set stageSeconds Azr_system 134
 execute if score stageSeconds Azr_system matches 148 run title @a[tag=azrPlayer] actionbar {"text":"Wave Clear","color":"green"}
 execute if score stageSeconds Azr_system matches 148 run scoreboard players set @a[tag=azrPlayer] Azr_wave 5
 #第三波
