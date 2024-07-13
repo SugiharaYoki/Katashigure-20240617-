@@ -224,3 +224,4 @@ setblock 90090 122 115 air
 fill 90076 124 121 90076 122 123 iron_block
 setblock 90084 122 106 chest[facing=west]
 setblock 90085 122 146 chest[facing=north]
+setblock 90058 103 142 minecraft:air

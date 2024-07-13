@@ -431,7 +431,15 @@ execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=4001}] positione
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=4001}] run tp @n[tag=SEAboss1] 90074 122 120.9 facing 90074 122 119
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=4001}] as @a[tag=SEAPT] at @s run playsound minecraft:app2.heracles music @a[tag=SEAPT] ~ ~ ~ 1000 1.0
 
-
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=4100..5000}] unless entity @n[tag=SEAboss1] run scoreboard players add @n[tag=sc] sea_4temp2 5001
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=5001}] run stopsound @a[tag=SEAPT] music
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=5001}] as @a[tag=SEAPT] at @s run playsound item.trident.thunder ambient @s ~ ~ ~ 100 0.5
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=5002}] run give @a[tag=SEAPT] nether_star
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=5012}] as @a[tag=SEAPT] at @s run tellraw @s {"text":"……安息吧，法莫洛斯先生。","color":"gray"}
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=5020}] as @a[tag=SEAPT] at @s run tellraw @s {"text":"你为这里的人所做的一切都崇高而神圣。","color":"gray"}
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=5045}] as @a[tag=SEAPT] at @s run tellraw @s {"text":"『厄珀尔的悲歌』第一章 完","color":"blue"}
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=5045}] as @a[tag=SEAPT] at @s run playsound music_disc.creator_music_box music @a[tag=SEAPT] ~ ~ ~ 1000 0.9
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=5045}] run function skyblock:sea/map_prepare_ch2
 
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=3000..5000}] run scoreboard players add @s sea_4temp5 1
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=3000..5000,sea_4temp5=80..}] run scoreboard players set @s sea_4temp5 1
