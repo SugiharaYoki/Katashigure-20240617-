@@ -116,6 +116,7 @@ execute if score stageSeconds Azr_system matches 151..154 run playsound ambient.
 execute if score stageSeconds Azr_system matches 151..154 run playsound ambient.soul_sand_valley.loop ambient @a[tag=azrPlayer] -78000 100 0 1000
 execute if score stageSeconds Azr_system matches 151..154 run playsound ambient.soul_sand_valley.mood ambient @a[tag=azrPlayer] -78000 100 0 1000
 execute if score stageSeconds Azr_system matches 154 run scoreboard players set stage Azr_system 9
+execute if score stageSeconds Azr_system matches 154 run scoreboard players set stageSeconds Azr_system 0
 #function skyblock:tool_rng
 #execute if score stageSeconds Azr_system matches 143}] rng3 matches 1 run 
 #【僵尸 lv1】execute if score stageSeconds Azr_system matches 1 positioned -79946 38 61 run function skyblock:azr/m/zombie_t1_4hp
