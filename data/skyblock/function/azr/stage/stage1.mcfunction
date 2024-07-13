@@ -8,7 +8,7 @@ execute if score stageSeconds Azr_system matches 1 run tellraw @a[tag=DebugMode,
 execute if score stageSeconds Azr_system matches 1..40 store result bossbar azr:progress_bar_normal value run scoreboard players get stageSeconds Azr_system
 execute if score stageSeconds Azr_system matches 40 run bossbar remove azr:progress_bar_normal
 #wtf
-#execute if score stageSeconds Azr_system matches 2 run scoreboard players set @e[tag=sc,limit=1] SeGa_StandLastQ -1
+scoreboard players set tickTimer Azr_system -1
 #关卡特效
 execute if score stageSeconds Azr_system matches 19 positioned -79930.5 38.0 3.5 run function skyblock:azr/effects/basalt_open
 #刷怪时序

@@ -43,6 +43,8 @@ execute if block -79946 39 50 minecraft:birch_button[powered=true] run function 
 execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 30 run function skyblock:azr/stage/stage_cerement
 #第四关-BOSS1 9
 execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 9 run function skyblock:azr/stage/stage_event1
+#BOSS1 10
+execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 10 run function skyblock:azr/stage/stage_boss1
 
 #function skyblock:azr/ingame_azrielsmidgarden_core_sub1
 #execute if entity @e[tag=sc,limit=1,scores={SeGa_StandLastP=11}] run scoreboard players set @e[tag=sc,limit=1] SeGa_StandLast 0
