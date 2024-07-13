@@ -18,6 +18,7 @@ tag @n[tag=sc] remove sea_cb016
 tag @n[tag=sc] remove sea_cb017
 tag @n[tag=sc] remove sea_cb018
 tag @n[tag=sc] remove sea_cb019
+bossbar remove 9066601
 setblock -25 23 32 air
 fill 90065 104 139 90065 104 141 barrier
 gamerule doDaylightCycle true
