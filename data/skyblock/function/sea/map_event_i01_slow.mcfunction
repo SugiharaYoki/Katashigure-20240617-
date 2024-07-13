@@ -434,6 +434,7 @@ execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=4001}] as @a[tag
 
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=4100..5000}] unless entity @n[tag=SEAboss1] run scoreboard players set @n[tag=sc] sea_4temp2 5001
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=5001}] run kill @e[tag=SEAboss1mob]
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=5001}] run bossbar remove 9066601
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=5001}] run stopsound @a[tag=SEAPT] music
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=5001}] as @a[tag=SEAPT] at @s run playsound item.trident.thunder ambient @s ~ ~ ~ 100 0.5
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=5002}] run give @a[tag=SEAPT] nether_star
