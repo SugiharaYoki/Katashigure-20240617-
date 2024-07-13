@@ -5,9 +5,9 @@ execute if score stageSeconds Azr_system matches 3..5 if entity @a[tag=azrPlayer
 execute if score stageSeconds Azr_system matches 3..5 if entity @a[tag=azrPlayer,x=-79931,y=38,z=62,distance=..4.5] run scoreboard players set stageSeconds Azr_system 300
 execute if score stageSeconds Azr_system matches 300 run fill -79938 39 49 -79938 38 49 minecraft:purple_stained_glass
 execute if score stageSeconds Azr_system matches 300 run fill -79930 42 54 -79932 42 54 anvil
-execute if score stageSeconds Azr_system matches 300 run fill -79930 42 54 -79932 42 54 anvil
 execute if score stageSeconds Azr_system matches 301 run fill -79930 42 54 -79932 42 54 anvil
 execute if score stageSeconds Azr_system matches 302 run fill -79930 42 54 -79932 42 54 anvil
+execute if score stageSeconds Azr_system matches 303 run fill -79930 42 54 -79932 42 54 anvil
 execute if score stageSeconds Azr_system matches 303..306 positioned -79929 38 75 run function skyblock:azr/m/zombie_t2_shield_iron
 execute if score stageSeconds Azr_system matches 303..306 positioned -79933 38 75 run function skyblock:azr/m/zombie_t2_shield_iron
 execute if score stageSeconds Azr_system matches 303 positioned -79934 38 46 run function skyblock:azr/m/spider_t3_nightmare

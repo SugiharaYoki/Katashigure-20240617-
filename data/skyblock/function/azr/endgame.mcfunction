@@ -98,6 +98,9 @@ item replace block -79951 38 59 container.13 with minecraft:emerald 10
 item replace block -79951 38 59 container.15 with minecraft:emerald 10
 fill -79950 38 58 -79951 39 58 quartz_block
 
+#even1
+fill -79930 42 54 -79932 38 54 air{name: "clear anvil barrier"}
+
 #______________________________________________________________#
 
 setblock -79956 39 -29 air
@@ -292,7 +295,6 @@ fill -79519 42 -321 -79553 42 -355 air replace fire
 fill -79948 38 -13 -79948 42 -16 air
 fill -79928 38 34 -79928 39 35 white_concrete
 fill -79906 40 27 -79906 38 29 minecraft:purple_stained_glass
-fill -79930 42 54 -79932 38 54 air
 fill -79932 38 104 -79930 42 104 minecraft:red_stained_glass
 fill -79932 38 72 -79930 42 72 air
 fill -79932 42 130 -79930 38 130 minecraft:purple_stained_glass
