@@ -5,6 +5,8 @@ scoreboard objectives add Azr_forceDeath dummy
 scoreboard objectives add Azr_isDead deathCount
 scoreboard objectives add Azr_startCount dummy
 scoreboard objectives add Azr_skillPoints dummy
+#AZS_57534用于boss技能
+scoreboard objectives add AZS_57534 dummy
 #tokumei-api
 scoreboard objectives add SeGa_StandLastBH dummy
 scoreboard objectives add MultiMenu trigger
@@ -23,7 +25,7 @@ scoreboard players set stopSeconds Azr_system 0
 #重置bossbar
 bossbar remove azr:progress_bar_normal
 bossbar remove minecraft:8432198
-bossbar remove minecraft:8432101
+bossbar remove azr:boss_hp_bar
 bossbar remove minecraft:8432102
 #清场
 kill @e[type=!player,tag=!protected_entity,x=-80000,y=100,z=0,distance=0..1000]

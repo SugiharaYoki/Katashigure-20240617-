@@ -1,0 +1,1 @@
+summon skeleton ~ ~ ~ {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_shadow_tier1",attributes:[{id:"generic.max_health",base:3.0},{id:"generic.knockback_resistance",base:1.0}],Health:1.0f,CustomName:'"骸骨幻影"',CanPickUpLoot:0b,HandItems:[{count:1,id:bow},{}],HandDropChances:[0.00f,0.00f],ArmorItems:[{},{},{},{}]}

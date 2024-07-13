@@ -1,5 +1,5 @@
 scoreboard objectives add Azr_system dummy
-scoreboard players set DEBUG_maxStageLimit Azr_system 10
+scoreboard players set DEBUG_maxStageLimit Azr_system 11
 #scoreboard players set DEBUG_fakePlayer Azr_system 10
 execute as @r[tag=azrPlayer] if score stage Azr_system = DEBUG_maxStageLimit Azr_system run tellraw @a[tag=azrPlayer] [{"text":"You have passed maximum stage(limited in debug mode) ","color": "red"},{"score":{"objective": "Azr_system","name": "stage"},"color":"light_purple"},{"text":"/","color":"light_purple"},{"score":{"objective": "Azr_system","name": "DEBUG_maxStageLimit"},"color":"light_purple"}]
 execute as @r[tag=azrPlayer] if score stage Azr_system = DEBUG_maxStageLimit Azr_system run function skyblock:azr/endgame
@@ -23,6 +23,9 @@ execute as @a[tag=azrPlayer,scores={Azr_forceDeath=1..}] at @s run function skyb
 execute as @a[tag=azrPlayer,scores={Azr_isDead=1..}] at @s run function skyblock:azr/end_game/player_dead
 execute if score isStarted Azr_system matches 1 if score gametick Azr_system matches 20.. run function skyblock:azr/core
 execute if entity @a[tag=azrPlayer] run scoreboard players add gametick Azr_system 1
+execute if score tickTimer Azr_system matches -2147483648..2147483647 run scoreboard players add tickTimer Azr_system 1
+#BOSS1 10
+execute if score isStarted Azr_system matches 1 unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 10 run function skyblock:azr/stage/stage_boss1
 #打印剧情 考虑是否实装
 #execute as @a if data entity @s Inventory[{id:"minecraft:skull_banner_pattern"}] run tellraw @a [{"selector":"@s"},{"text":"解锁了剧情"}]
 #execute as @a if data entity @s Inventory[{id:"minecraft:skull_banner_pattern"}].components."minecraft:custom_name" run tellraw @a [{"nbt":"Inventory[{id:\"minecraft:skull_banner_pattern\"}].components.\"minecraft:custom_name\"","entity":"@s","interpret":true}]

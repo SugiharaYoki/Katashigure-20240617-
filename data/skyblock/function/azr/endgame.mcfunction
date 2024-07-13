@@ -411,7 +411,7 @@ item replace block -79867 40 -103 container.14 with tripwire_hook[custom_name='{
 item replace block -79863 40 -76 container.12 with stone_axe[custom_name='{"text":"苔石斧·笼怨","italic":false}',attribute_modifiers=[{type:"generic.knockback_resistance",slot:"mainhand",id:"azr:mossstone_axe.knockback_resistance",amount:0.13,operation:"add_value"},{type:"generic.attack_damage",slot:"mainhand",id:"azr:mossstone_axe.attack_damage",amount:10.5,operation:"add_value"},{type:"generic.attack_speed",slot:"mainhand",id:"azr:mossstone_axe.attack_speed",amount:-3.2,operation:"add_value"}],enchantments={"unbreaking":2}] 1
 item replace block -79929 49 -123 container.12 with raw_iron[custom_name='{"text":"钝铁","italic":false}'] 1
 item replace block -79929 49 -123 container.14 with tripwire_hook[custom_name='{"text":"杜鹃花钥匙","color":"blue","italic":false}'] 1
-item replace block -79782 27 -286 container.13 with nether_star 1
+item replace block -79782 27 -286 container.13 with nether_star[custom_name='{"text":"下界命星","color":"yellow","italic":false}',custom_data={Azr_revivalStar:1b}] 1
 item replace block -79770 23 -460 container.13 with minecraft:gold_nugget 30
 item replace block -79765 24 -469 container.13 with minecraft:gold_nugget 28
 item replace block -79713 22 -461 container.13 with paper[custom_name='{"text":"圣殿信条","color":"blue","italic":false}'] 3

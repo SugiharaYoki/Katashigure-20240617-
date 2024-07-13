@@ -36,8 +36,8 @@ execute if entity @s[scores={Azr_wave=36..}] run function skyblock:azr/items/iro
 execute if entity @s[scores={Azr_wave=36..}] run function skyblock:azr/items/soul_expel_torch
 execute if entity @s[scores={Azr_wave=36..}] run give @s cooked_salmon 16
 execute if entity @s[scores={Azr_wave=36..}] run give @s golden_carrot 2
-execute if entity @s[scores={Azr_wave=36..}] run item replace entity @s inventory.0 with nether_star
-execute if entity @s[scores={Azr_wave=36..}] run item replace entity @s inventory.1 with nether_star
+execute if entity @s[scores={Azr_wave=36..}] run item replace entity @s inventory.0 with nether_star[custom_name='{"text":"下界命星","color":"yellow","italic":false}',custom_data={Azr_revivalStar:1b}]
+execute if entity @s[scores={Azr_wave=36..}] run item replace entity @s inventory.1 with nether_star[custom_name='{"text":"下界命星","color":"yellow","italic":false}',custom_data={Azr_revivalStar:1b}]
 execute if entity @s[scores={Azr_wave=36..}] run item replace entity @s inventory.2 with flint_and_steel[enchantments={fire_aspect:2}]
 execute if entity @s[scores={Azr_wave=36..}] run item replace entity @s inventory.3 with beetroot[custom_name='{"text":"爆裂菜根","italic":false}',lore=['{"text":"投掷 - 轰炸（射程较低）","color":"yellow"}'],enchantments={punch:1}] 5
 execute if entity @s[scores={Azr_wave=36..}] run item replace entity @s inventory.4 with arrow 38
