@@ -398,8 +398,8 @@ execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=4000..5000}] as 
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=4000..5000}] as @n[tag=SEAboss1,tag=!SEAboss1_002,scores={sea_boss1_hp=..30}] at @s run function skyblock:sea/m/silverfish
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=4000..5000}] as @n[tag=SEAboss1,tag=!SEAboss1_002,scores={sea_boss1_hp=..30}] at @s run tag @s add SEAboss1_002
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=4000..5000}] as @n[tag=SEAboss1,scores={rng2=5..6}] at @s if entity @a[tag=SEAPT,distance=0..15] run effect give @s slowness 1 12 true
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=4000..5000}] run scoreboard players add @n[tag=SEAboss11,scores={sea_4temp1=0..80}] sea_4temp1 1
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=4000..5000}] run scoreboard players add @n[tag=SEAboss11,scores={sea_4temp1=99..130}] sea_4temp1 1
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=4000..5000}] run scoreboard players add @n[tag=SEAboss1,scores={sea_4temp1=0..80}] sea_4temp1 1
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=4000..5000}] run scoreboard players add @n[tag=SEAboss1,scores={sea_4temp1=99..130}] sea_4temp1 1
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=4000..5000}] as @n[tag=SEAboss1,scores={rng2=5..6}] at @s if entity @a[tag=SEAPT,distance=0..15] run function skyblock:sea/m/silverfish
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=4000..5000}] as @n[tag=SEAboss1,scores={rng2=5..6}] at @s if entity @a[tag=SEAPT,distance=0..15] run function skyblock:sea/m/silverfish
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=4000..5000}] as @n[tag=SEAboss1,scores={rng2=5..6}] at @s if entity @a[tag=SEAPT,distance=0..15] run function skyblock:sea/m/silverfish
@@ -420,7 +420,7 @@ execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=4001}] run bossb
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=4001}] run bossbar set minecraft:9066601 name "圣献的医者 - 法莫洛斯"
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=4001}] run bossbar set minecraft:9066601 players @a[tag=SEAPT]
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=4001}] run bossbar set minecraft:9066601 style progress
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=4001}] run bossbar set minecraft:9066601 max 300
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=4001}] run bossbar set minecraft:9066601 max 700
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=4000..5000}] store result bossbar minecraft:9066601 value run data get entity @e[tag=SEAboss1,limit=1] Health
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=4001}] run scoreboard players set @n[tag=sc] sea_4temp5 1
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=4001}] run particle minecraft:large_smoke 90074.45 123.00 122.35 1 1 1 0.1 200
@@ -431,7 +431,7 @@ execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=4001}] positione
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=4001}] run tp @n[tag=SEAboss1] 90074 122 120.9 facing 90074 122 119
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=4001}] as @a[tag=SEAPT] at @s run playsound minecraft:app2.heracles music @a[tag=SEAPT] ~ ~ ~ 1000 1.0
 
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=4100..5000}] unless entity @n[tag=SEAboss1] run scoreboard players add @n[tag=sc] sea_4temp2 5001
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=4100..5000}] unless entity @n[tag=SEAboss1] run scoreboard players set @n[tag=sc] sea_4temp2 5001
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=5001}] run stopsound @a[tag=SEAPT] music
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=5001}] as @a[tag=SEAPT] at @s run playsound item.trident.thunder ambient @s ~ ~ ~ 100 0.5
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=5002}] run give @a[tag=SEAPT] nether_star
