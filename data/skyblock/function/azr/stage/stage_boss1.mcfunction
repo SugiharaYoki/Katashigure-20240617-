@@ -1,3 +1,4 @@
+say hi
 scoreboard objectives add HP dummy
 execute as @e[tag=AzrielBossA] store result score @s HP run data get entity @s Health
 execute if score tickTimer Azr_system matches 3..50 as @a[tag=azrPlayer] at @s unless block ~ ~-1 ~ air unless block ~ ~-1 ~ lava unless block ~ ~ ~ lava run spawnpoint @s ~ ~ ~
