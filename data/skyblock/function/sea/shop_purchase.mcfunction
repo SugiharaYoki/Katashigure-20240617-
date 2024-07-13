@@ -92,7 +92,7 @@ execute if entity @s[tag=sea_purchase_pass,scores={rng1=26..35}] run give @s eme
 execute if entity @s[tag=sea_purchase_pass] run clear @s raiser_armor_trim_smithing_template 2
 tag @s remove sea_purchase_pass
 
-execute if score @s sea_crafter matches 20002 as @s[tag=seaPerm001,scores={sea_i_trim_zombie=1..,sea_i_trim_spider=2..}] run tag @s add sea_purchase_pass
+execute if score @s sea_crafter matches 20002 as @s[tag=seaPerm001,scores={sea_i_trim_zombie=1..,sea_i_trim_spider=1..}] run tag @s add sea_purchase_pass
 execute if score @s sea_crafter matches 20002 as @s[tag=!sea_purchase_pass] run tellraw @s {"text":"你的吟唱并未得到海妖的回应……","color":"red"}
 execute if entity @s[tag=sea_purchase_pass] run playsound minecraft:item.lodestone_compass.lock neutral @s ~ ~ ~ 100 0.8
 execute if entity @s[tag=sea_purchase_pass] run playsound minecraft:block.enchantment_table.use neutral @s ~ ~ ~ 100 0.9
