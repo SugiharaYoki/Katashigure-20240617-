@@ -4,7 +4,7 @@ execute if score stageSeconds Azr_system matches 1 run bossbar add azr:progress_
 execute if score stageSeconds Azr_system matches 1 run bossbar set azr:progress_bar_normal color white
 execute if score stageSeconds Azr_system matches 1 run bossbar set azr:progress_bar_normal players @a[tag=azrPlayer]
 execute if score stageSeconds Azr_system matches 1 run bossbar set azr:progress_bar_normal max 204
-execute if score stageSeconds Azr_system matches 1 run tellraw @a[tag=DebugMode,tag=azrPlayer] [{"text":"[DEBUG MODE MESSAGE] You are playing \"Stage 3β\", with playerCount = "},{"score":{"objective":"Azr_system","name":"playerCount"}}]
+execute if score stageSeconds Azr_system matches 1 run tellraw @a[tag=DebugMode,tag=azrPlayer] [{"text":"[DEBUG MODE MESSAGE] You are playing \"Stage 3β\", with playerCount = "},{"score":{"objective":"Azr_system","name":"playerCount"}},{"text":" Maximum Seconds =204"}]
 execute if score stageSeconds Azr_system matches 1..204 store result bossbar azr:progress_bar_normal value run scoreboard players get stageSeconds Azr_system
 execute if score stageSeconds Azr_system matches 204 run bossbar remove azr:progress_bar_normal
 #刷怪时序
@@ -162,28 +162,29 @@ execute if score stageSeconds Azr_system matches 182 if score playerCount Azr_sy
 execute if score stageSeconds Azr_system matches 182 positioned -79943 38 10 run function skyblock:azr/m/spider_t1_ruin
 execute if score stageSeconds Azr_system matches 184 positioned -79943 38 10 run function skyblock:azr/m/spider_t1_dust
 execute if score stageSeconds Azr_system matches 182 if score playerCount Azr_system matches 4.. positioned -79943 38 10 run function skyblock:azr/m/spider_t1_dust
-execute if score stageSeconds Azr_system matches 183 positioned -79943 38 10 run function skyblock:azr/m/spide_t1_swift
-execute if score stageSeconds Azr_system matches 183 positioned -79943 38 10 run function skyblock:azr/m/spide_t1_swift
-execute if score stageSeconds Azr_system matches 184 if score playerCount Azr_system matches 7.. positioned -79943 38 10 run function skyblock:azr/m/spide_t1_swift
-execute if score stageSeconds Azr_system matches 184 if score playerCount Azr_system matches 7.. positioned -79943 38 10 run function skyblock:azr/m/spide_t1_swift
+execute if score stageSeconds Azr_system matches 183 positioned -79943 38 10 run function skyblock:azr/m/spider_t1_swift
+execute if score stageSeconds Azr_system matches 183 positioned -79943 38 10 run function skyblock:azr/m/spider_t1_swift
+execute if score stageSeconds Azr_system matches 184 if score playerCount Azr_system matches 7.. positioned -79943 38 10 run function skyblock:azr/m/spider_t1_swift
+execute if score stageSeconds Azr_system matches 184 if score playerCount Azr_system matches 7.. positioned -79943 38 10 run function skyblock:azr/m/spider_t1_swift
 execute if score stageSeconds Azr_system matches 185 positioned -79943 38 10 run function skyblock:azr/m/spider_t1_ruin
-execute if score stageSeconds Azr_system matches 185 positioned -79943 38 10 run function skyblock:azr/m/spide_t1_swift
+execute if score stageSeconds Azr_system matches 185 positioned -79943 38 10 run function skyblock:azr/m/spider_t1_swift
 execute if score stageSeconds Azr_system matches 186 positioned -79943 38 10 run function skyblock:azr/m/spider_t1_ruin
-execute if score stageSeconds Azr_system matches 187 positioned -79943 38 10 run function skyblock:azr/m/spide_t1_swift
-execute if score stageSeconds Azr_system matches 187 if score @e[tag=sc,limit=1] rng4 matches 1 positioned -79943 38 10 run function skyblock:azr/m/spider_t1_dust
-execute if score stageSeconds Azr_system matches 188 if score @e[tag=sc,limit=1] rng4 matches 2 positioned -79943 38 10 run function skyblock:azr/m/spider_t1_ruin
-execute if score stageSeconds Azr_system matches 189 if score @e[tag=sc,limit=1] rng4 matches 3 positioned -79943 38 10 run function skyblock:azr/m/spide_t1_swift
-execute if score stageSeconds Azr_system matches 190 if score @e[tag=sc,limit=1] rng4 matches 4 positioned -79943 38 10 run function skyblock:azr/m/spide_t1_swift
-execute if score stageSeconds Azr_system matches 191 if score playerCount Azr_system matches 4.. if score @e[tag=sc,limit=1] rng4 matches 1 positioned -79943 38 10 run function skyblock:azr/m/spider_t1_dust
-execute if score stageSeconds Azr_system matches 192 if score playerCount Azr_system matches 4.. if score @e[tag=sc,limit=1] rng4 matches 2 positioned -79943 38 10 run function skyblock:azr/m/spider_t1_ruin
-execute if score stageSeconds Azr_system matches 193 if score playerCount Azr_system matches 4.. if score @e[tag=sc,limit=1] rng4 matches 3 positioned -79943 38 10 run function skyblock:azr/m/spide_t1_swift
-execute if score stageSeconds Azr_system matches 194 if score playerCount Azr_system matches 4.. if score @e[tag=sc,limit=1] rng4 matches 4 positioned -79943 38 10 run function skyblock:azr/m/spide_t1_swift
-execute if score stageSeconds Azr_system matches 195 if score @e[tag=sc,limit=1] rng4 matches 1 positioned -79943 38 10 run function skyblock:azr/m/spider_t1_dust
-execute if score stageSeconds Azr_system matches 196 if score @e[tag=sc,limit=1] rng4 matches 2 positioned -79943 38 10 run function skyblock:azr/m/spider_t1_ruin
-execute if score stageSeconds Azr_system matches 197 if score @e[tag=sc,limit=1] rng4 matches 3 positioned -79943 38 10 run function skyblock:azr/m/spide_t1_swift
-execute if score stageSeconds Azr_system matches 196 if score @e[tag=sc,limit=1] rng4 matches 4 positioned -79943 38 10 run function skyblock:azr/m/spide_t1_swift
-execute if score stageSeconds Azr_system matches 195 positioned -79943 38 10 run function skyblock:azr/m/spide_t1_swift
-execute if score stageSeconds Azr_system matches 193 positioned -79943 38 10 run function skyblock:azr/m/spide_t1_swift
+execute if score stageSeconds Azr_system matches 187 positioned -79943 38 10 run function skyblock:azr/m/spider_t1_swift
+execute store result score random Azr_system run random value 1..4
+execute if score stageSeconds Azr_system matches 187 if score random Azr_system matches 1 positioned -79943 38 10 run function skyblock:azr/m/spider_t1_dust
+execute if score stageSeconds Azr_system matches 188 if score random Azr_system matches 2 positioned -79943 38 10 run function skyblock:azr/m/spider_t1_ruin
+execute if score stageSeconds Azr_system matches 189 if score random Azr_system matches 3 positioned -79943 38 10 run function skyblock:azr/m/spider_t1_swift
+execute if score stageSeconds Azr_system matches 190 if score random Azr_system matches 4 positioned -79943 38 10 run function skyblock:azr/m/spider_t1_swift
+execute if score stageSeconds Azr_system matches 191 if score playerCount Azr_system matches 4.. if score random Azr_system matches 1 positioned -79943 38 10 run function skyblock:azr/m/spider_t1_dust
+execute if score stageSeconds Azr_system matches 192 if score playerCount Azr_system matches 4.. if score random Azr_system matches 2 positioned -79943 38 10 run function skyblock:azr/m/spider_t1_ruin
+execute if score stageSeconds Azr_system matches 193 if score playerCount Azr_system matches 4.. if score random Azr_system matches 3 positioned -79943 38 10 run function skyblock:azr/m/spider_t1_swift
+execute if score stageSeconds Azr_system matches 194 if score playerCount Azr_system matches 4.. if score random Azr_system matches 4 positioned -79943 38 10 run function skyblock:azr/m/spider_t1_swift
+execute if score stageSeconds Azr_system matches 195 if score random Azr_system matches 1 positioned -79943 38 10 run function skyblock:azr/m/spider_t1_dust
+execute if score stageSeconds Azr_system matches 196 if score random Azr_system matches 2 positioned -79943 38 10 run function skyblock:azr/m/spider_t1_ruin
+execute if score stageSeconds Azr_system matches 197 if score random Azr_system matches 3 positioned -79943 38 10 run function skyblock:azr/m/spider_t1_swift
+execute if score stageSeconds Azr_system matches 196 if score random Azr_system matches 4 positioned -79943 38 10 run function skyblock:azr/m/spider_t1_swift
+execute if score stageSeconds Azr_system matches 195 positioned -79943 38 10 run function skyblock:azr/m/spider_t1_swift
+execute if score stageSeconds Azr_system matches 193 positioned -79943 38 10 run function skyblock:azr/m/spider_t1_swift
 execute if score stageSeconds Azr_system matches 182 if score playerCount Azr_system matches 1.. positioned -79943 38 10 run function skyblock:azr/m/zombie_t1_5hp_full_armor
 execute if score stageSeconds Azr_system matches 187 if score playerCount Azr_system matches 1.. positioned -79943 38 10 run function skyblock:azr/m/zombie_t1_5hp_full_armor
 execute if score stageSeconds Azr_system matches 193 if score playerCount Azr_system matches 5.. positioned -79943 38 10 run function skyblock:azr/m/zombie_t1_5hp_full_armor

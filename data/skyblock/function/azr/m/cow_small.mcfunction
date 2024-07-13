@@ -1,0 +1,1 @@
+summon cow ~ ~ ~ {PersistenceRequired:1b,Tags:["AzrielDecMob"],DeathLootTable:"skyblock:azriel_cow_tier1",CustomName:'"小牛子"',Age:-90000}

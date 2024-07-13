@@ -27,8 +27,8 @@ execute at @p run spawnpoint @s ~ ~ ~
 advancement revoke @s from skyblock:azr_root
 advancement grant @s only skyblock:azr_root
 #wtf Azr_skillPoints是啥？
-#scoreboard players add @s[scores={Azr_skillPoints=3..}] Azr_emerald 5
-#scoreboard players add @s[scores={Azr_skillPoints=6..}] Azr_emerald 5
+scoreboard players add @s[scores={Azr_skillPoints=3..}] Azr_emerald 5
+scoreboard players add @s[scores={Azr_skillPoints=6..}] Azr_emerald 5
 scoreboard players operation @s Azr_startCount = Pointer Azr_startCount
 team add AzrPlayer
 team join AzrPlayer @s

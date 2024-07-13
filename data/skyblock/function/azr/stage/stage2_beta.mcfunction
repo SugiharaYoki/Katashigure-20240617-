@@ -1,12 +1,14 @@
+#开局行为
 execute if score stageSeconds Azr_system matches 2..6 as @a[tag=azrPlayer] at @s unless block ~ ~-1 ~ air unless block ~ ~-1 ~ lava unless block ~ ~ ~ lava run spawnpoint @s ~ ~ ~
 execute if score stageSeconds Azr_system matches 1 run bossbar add azr:progress_bar_normal "Stage 2"
 execute if score stageSeconds Azr_system matches 1 run bossbar set azr:progress_bar_normal color white
 execute if score stageSeconds Azr_system matches 1 run bossbar set azr:progress_bar_normal players @a[tag=azrPlayer]
 execute if score stageSeconds Azr_system matches 1 run bossbar set azr:progress_bar_normal max 99
-execute if score stageSeconds Azr_system matches 1 run tellraw @a[tag=DebugMode,tag=azrPlayer] [{"text":"[DEBUG MODE MESSAGE] You are playing \"Stage 2β\", with playerCount = "},{"score":{"objective":"Azr_system","name":"playerCount"}}]
+execute if score stageSeconds Azr_system matches 1 run tellraw @a[tag=DebugMode,tag=azrPlayer] [{"text":"[DEBUG MODE MESSAGE] You are playing \"Stage 2β\", with playerCount = "},{"score":{"objective":"Azr_system","name":"playerCount"}},{"text":" Maximum Seconds = 99"}]
 execute if score stageSeconds Azr_system matches 1..99 store result bossbar azr:progress_bar_normal value run scoreboard players get stageSeconds Azr_system
 execute if score stageSeconds Azr_system matches 99 run bossbar remove azr:progress_bar_normal
-#
+#刷怪时序
+#第一波
 execute if score stageSeconds Azr_system matches 21 run playsound block.bell.use ambient @a[tag=azrPlayer] -79887 50 164 100 0.7
 execute if score stageSeconds Azr_system matches 23 run playsound block.bell.use ambient @a[tag=azrPlayer] -79887 50 164 100 0.7
 execute if score stageSeconds Azr_system matches 25 run playsound block.bell.use ambient @a[tag=azrPlayer] -79887 50 164 100 0.7
@@ -62,8 +64,8 @@ execute if score stageSeconds Azr_system matches 51 if score playerCount Azr_sys
 execute if score stageSeconds Azr_system matches 51 if score playerCount Azr_system matches 5.. positioned -79935 38 8 run function skyblock:azr/m/pillager_t1
 execute if score stageSeconds Azr_system matches 51 if score playerCount Azr_system matches 5.. positioned -79927 38 20 run function skyblock:azr/m/pillager_t1
 execute if score stageSeconds Azr_system matches 51 if score playerCount Azr_system matches 5.. positioned -79927 38 8 run function skyblock:azr/m/pillager_t1
-function skyblock:tool_rng
-execute if score stageSeconds Azr_system matches 52 if score @e[tag=sc,limit=1] rng3 matches 1 positioned -79927 38 8 run function skyblock:azr/m/cow
+execute store result score random Azr_system run random value 1..3
+execute if score stageSeconds Azr_system matches 52 if score random Azr_system matches 1 positioned -79927 38 8 run function skyblock:azr/m/cow
 execute if score stageSeconds Azr_system matches 54 positioned -79922 38 14 run function skyblock:azr/m/zombie_t1_5hp_full_armor
 execute if score stageSeconds Azr_system matches 56 positioned -79940 38 14 run function skyblock:azr/m/zombie_t2_shild
 execute if score stageSeconds Azr_system matches 58 positioned -79922 38 14 run function skyblock:azr/m/zombie_t1_5hp_full_armor
@@ -74,8 +76,8 @@ execute if score stageSeconds Azr_system matches 61 if score playerCount Azr_sys
 execute if score stageSeconds Azr_system matches 63 if score playerCount Azr_system matches 4.. positioned -79922 38 14 run function skyblock:azr/m/zombie_t1_5hp_full_armor
 execute if score stageSeconds Azr_system matches 65 if score playerCount Azr_system matches 4.. positioned -79922 38 14 run function skyblock:azr/m/zombie_t2_shild
 execute if score stageSeconds Azr_system matches 66 positioned -79935 38 16 run function skyblock:azr/m/pillager_t1
-function skyblock:tool_rng
-execute if score stageSeconds Azr_system matches 62 if score @e[tag=sc,limit=1] rng3 matches 1 positioned -79927 38 12 run function skyblock:azr/m/cow
+execute store result score random Azr_system run random value 1..3
+execute if score stageSeconds Azr_system matches 62 if score random Azr_system matches 1 positioned -79927 38 12 run function skyblock:azr/m/cow
 execute if score stageSeconds Azr_system matches 70 positioned -79927 38 12 run function skyblock:azr/m/pillager_t1
 execute if score stageSeconds Azr_system matches 70 if score playerCount Azr_system matches 6.. positioned -79935 38 12 run function skyblock:azr/m/pillager_t1
 execute if score stageSeconds Azr_system matches 73 positioned -79940 38 14 run function skyblock:azr/m/zombie_t1_5hp_full_armor
@@ -84,9 +86,9 @@ execute if score stageSeconds Azr_system matches 74 if score playerCount Azr_sys
 execute if score stageSeconds Azr_system matches 77 if score playerCount Azr_system matches 4.. positioned -79922 38 14 run function skyblock:azr/m/zombie_t1_5hp_full_armor
 execute if score stageSeconds Azr_system matches 75 if score playerCount Azr_system matches 5.. positioned -79940 38 14 run function skyblock:azr/m/zombie_t1_5hp_full_armor
 execute if score stageSeconds Azr_system matches 78 if score playerCount Azr_system matches 5.. positioned -79922 38 14 run function skyblock:azr/m/zombie_t1_5hp_full_armor
-function skyblock:tool_rng
-execute if score stageSeconds Azr_system matches 83 if score @e[tag=sc,limit=1] rng3 matches 1 positioned -79940 38 14 run function skyblock:azr/m/zombie_t1_5hp_full_armor
-execute if score stageSeconds Azr_system matches 83 if score @e[tag=sc,limit=1] rng3 matches 2 positioned -79922 38 14 run function skyblock:azr/m/zombie_t2_shild
+execute store result score random Azr_system run random value 1..3
+execute if score stageSeconds Azr_system matches 83 if score random Azr_system matches 1 positioned -79940 38 14 run function skyblock:azr/m/zombie_t1_5hp_full_armor
+execute if score stageSeconds Azr_system matches 83 if score random Azr_system matches 2 positioned -79922 38 14 run function skyblock:azr/m/zombie_t2_shild
 execute if score stageSeconds Azr_system matches 85 positioned -79940 38 14 run function skyblock:azr/m/zombie_t1_5hp_full_armor
 execute if score stageSeconds Azr_system matches 87 if score playerCount Azr_system matches 5.. positioned -79922 38 14 run function skyblock:azr/m/zombie_t2_shild
 execute if score stageSeconds Azr_system matches 87 if score playerCount Azr_system matches 5.. positioned -79940 38 14 run function skyblock:azr/m/zombie_t2_shild

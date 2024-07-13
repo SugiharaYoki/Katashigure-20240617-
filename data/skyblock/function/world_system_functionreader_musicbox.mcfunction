@@ -38,6 +38,8 @@ execute as @a[tag=!gaming,scores={MultiMenu=101785}] at @s run playsound minecra
 execute as @a[tag=!gaming,scores={MultiMenu=101787}] at @s run playsound minecraft:app2.fft music @s ~ ~ ~ 5000
 execute as @a[tag=!gaming,scores={MultiMenu=101788}] at @s run playsound minecraft:app2.manifoldhypothesis music @s ~ ~ ~ 5000
 execute as @a[tag=!gaming,scores={MultiMenu=101789}] at @s run playsound minecraft:app2.noiseproof music @s ~ ~ ~ 5000
+execute as @a[tag=!gaming,scores={MultiMenu=101790}] at @s run playsound minecraft:app2.hugandkill music @s ~ ~ ~ 5000
+execute as @a[tag=!gaming,scores={MultiMenu=101791}] at @s run playsound minecraft:app2.heracles music @s ~ ~ ~ 5000
 
 execute as @a[tag=!gaming,scores={MultiMenu=101806}] at @s run playsound minecraft:vol1.bookstore music @s ~ ~ ~ 5000
 execute as @a[tag=!gaming,scores={MultiMenu=101805}] at @s run playsound minecraft:vol1.autumnmemories music @s ~ ~ ~ 5000
