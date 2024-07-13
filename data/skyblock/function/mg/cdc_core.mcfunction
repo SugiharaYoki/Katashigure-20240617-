@@ -108,12 +108,12 @@ execute if block 0 58 113 minecraft:waxed_oxidized_copper_bulb[lit=true] positio
 execute if block 0 58 113 minecraft:waxed_oxidized_copper_bulb[lit=true] positioned 0 56 101 as @e[tag=mg_cdc_mob,distance=0..1] at @s run kill @e[tag=mg_cdc_mob,distance=0..2.5]
 execute if block 0 56 101 air run setblock 0 58 113 minecraft:waxed_oxidized_copper_bulb[lit=false]
 
-execute if block 0 58 113 minecraft:waxed_oxidized_copper_bulb[lit=false] run setblock -5 59 112 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"]}
 execute if block 0 58 113 minecraft:waxed_oxidized_copper_bulb[lit=false] as @a[tag=mg_cdc,tag=mg_cdc_start,scores={mg_cdc_money=100..}] if block -5 59 112 air run setblock 0 56 101 amethyst_cluster
 execute if block 0 58 113 minecraft:waxed_oxidized_copper_bulb[lit=false] as @a[tag=mg_cdc,tag=mg_cdc_start,scores={mg_cdc_money=100..}] if block -5 59 112 air run kill @e[type=arrow,x=-5,y=59,z=112,distance=0..1.5]
 execute if block 0 58 113 minecraft:waxed_oxidized_copper_bulb[lit=false] as @a[tag=mg_cdc,tag=mg_cdc_start,scores={mg_cdc_money=100..}] if block -5 59 112 air run tellraw @s [{"text":"水晶重生！","color":"green","bold":true}]
 execute if block 0 58 113 minecraft:waxed_oxidized_copper_bulb[lit=false] as @a[tag=mg_cdc,tag=mg_cdc_start,scores={mg_cdc_money=100..}] if block -5 59 112 air run scoreboard players remove @s mg_cdc_money 100
 execute if block 0 58 113 minecraft:waxed_oxidized_copper_bulb[lit=false] if block 0 56 101 amethyst_cluster run setblock 0 58 113 minecraft:waxed_oxidized_copper_bulb[lit=true]
+execute if block 0 58 113 minecraft:waxed_oxidized_copper_bulb[lit=false] run setblock -5 59 112 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"]}
 
 execute as @n[tag=sc,scores={mg_cdc_timer=300}] run scoreboard players add @s mg_cdc_loopbonus 1
 execute as @n[tag=sc,scores={mg_cdc_timer=700}] run scoreboard players add @s mg_cdc_loopbonus 1
