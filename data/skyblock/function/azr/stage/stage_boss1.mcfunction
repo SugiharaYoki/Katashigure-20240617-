@@ -282,6 +282,7 @@ execute if score tickTimer Azr_system matches 3175 run tellraw @a[tag=azrPlayer]
 execute if score tickTimer Azr_system matches 3001 run bossbar remove azr:boss_hp_bar
 execute if score tickTimer Azr_system matches 3200 run scoreboard players set @a[tag=azrPlayer] Azr_wave 10
 execute if score tickTimer Azr_system matches 3200 run scoreboard players set stage Azr_system 11
+execute if score tickTimer Azr_system matches 3200 run scoreboard players reset tickTimer Azr_system
 #execute if score tickTimer Azr_system matches 3200 run scoreboard players set @a[tag=azrPlayer,scores={Azr_PlyPtsH=..4}] Azr_PlyPtsH 5
 execute if score tickTimer Azr_system matches 3140 run playsound minecraft:ui.toast.challenge_complete master @a[tag=azrPlayer] ~ ~ ~ 2 0.9
 execute if score tickTimer Azr_system matches 3140 run title @a[tag=azrPlayer] actionbar {"text":"Chapter Clear","color":"gold"}
