@@ -3,7 +3,7 @@ execute if score stageSeconds Azr_system matches 1 run bossbar add minecraft:843
 execute if score stageSeconds Azr_system matches 1 run bossbar set minecraft:8432199 color white
 execute if score stageSeconds Azr_system matches 1 run bossbar set minecraft:8432199 players @a[tag=AZRPT]
 execute if score stageSeconds Azr_system matches 1 run bossbar set minecraft:8432199 max 154
-execute if score stageSeconds Azr_system matches 1..154 store result bossbar minecraft:8432199 value run scoreboard players get @e[tag=sc,limit=1] stageSeconds
+execute if score stageSeconds Azr_system matches 1..154 store result bossbar minecraft:8432199 value run scoreboard players get stageSeconds Azr_system
 execute if score stageSeconds Azr_system matches 154 run bossbar remove minecraft:8432199
 #
 #leftside:-79922 38 122
@@ -162,7 +162,7 @@ execute if score stageSeconds Azr_system matches 63 if score playerCount Azr_sys
 execute if score stageSeconds Azr_system matches 64 run summon spider -79922 38 122 {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_spider_tier1",Health:8.0f,CustomName:'"禁尘蜘蛛"',attributes:[{id:"generic.max_health",base:8.0d},{id:"generic.attack_damage",base:2.0d},{id:"generic.knockback_resistance",base:0.5d},{id:"generic.movement_speed",base:0.18d}],active_effects:[{id:"resistance",amplifier:0,duration:10000,ambient:0b},{id:"regeneration",amplifier:0,duration:10000,ambient:0b}]}
 execute if score stageSeconds Azr_system matches 64 run summon spider -79940 38 122 {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_spider_tier1",Health:8.0f,CustomName:'"禁尘蜘蛛"',attributes:[{id:"generic.max_health",base:8.0d},{id:"generic.attack_damage",base:2.0d},{id:"generic.knockback_resistance",base:0.5d},{id:"generic.movement_speed",base:0.18d}],active_effects:[{id:"resistance",amplifier:0,duration:10000,ambient:0b},{id:"regeneration",amplifier:0,duration:10000,ambient:0b}]}
 
-execute if score stageSeconds Azr_system matches 65..70 if entity @e[tag=AzrielMob,tag=!AzrielDecMob] run scoreboard players set @e[tag=sc,limit=1] stageSeconds 65
+execute if score stageSeconds Azr_system matches 65..70 if entity @e[tag=AzrielMob,tag=!AzrielDecMob] run scoreboard players set stageSeconds Azr_system 65
 execute if score stageSeconds Azr_system matches 68 run title @a[tag=AZRPT] actionbar {"text":"Wave Clear","color":"green"}
 execute if score stageSeconds Azr_system matches 68 run scoreboard players set @a[tag=AZRPT] Azr_wave 11
 execute if score stageSeconds Azr_system matches 73 run title @a[tag=AZRPT] actionbar {"text":"7","color":"yellow"}
@@ -300,7 +300,7 @@ execute if score stageSeconds Azr_system matches 148 if score playerCount Azr_sy
 execute if score stageSeconds Azr_system matches 149 run summon vindicator -79922 38 122 {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_vindicator_tier1",Health:12.0f,CustomName:'"圣殿巡逻兵"',CanPickUpLoot:0b,HandItems:[{count:1,id:"stone_sword",components:{custom_name:'{"text":"石剑","italic":false,"color":"white"}'}},{}],HandDropChances:[0.003f,0.003f],attributes:[{id:"generic.max_health",base:12.0d},{id:"generic.attack_damage",base:0.0d},{id:"generic.movement_speed",base:0.2d}]}
 execute if score stageSeconds Azr_system matches 149 run summon vindicator -79940 38 122 {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_vindicator_tier1",Health:12.0f,CustomName:'"圣殿巡逻兵"',CanPickUpLoot:0b,HandItems:[{count:1,id:"stone_sword",components:{custom_name:'{"text":"石剑","italic":false,"color":"white"}'}},{}],HandDropChances:[0.003f,0.003f],attributes:[{id:"generic.max_health",base:12.0d},{id:"generic.attack_damage",base:0.0d},{id:"generic.movement_speed",base:0.2d}]}
 
-execute if score stageSeconds Azr_system matches 150..152 if entity @e[tag=AzrielMob,tag=!AzrielDecMob] run scoreboard players set @e[tag=sc,limit=1] stageSeconds 150
+execute if score stageSeconds Azr_system matches 150..152 if entity @e[tag=AzrielMob,tag=!AzrielDecMob] run scoreboard players set stageSeconds Azr_system 150
 execute if score stageSeconds Azr_system matches 154 run playsound ambient.crimson_forest.loop ambient @a[tag=AZRPT] -78000 100 0 1000
 execute if score stageSeconds Azr_system matches 154 run playsound ambient.crimson_forest.mood ambient @a[tag=AZRPT] -78000 100 0 1000
 execute if score stageSeconds Azr_system matches 154 run playsound ambient.crimson_forest.additions ambient @a[tag=AZRPT] -78000 100 0 1000
@@ -347,11 +347,11 @@ execute if score stageSeconds Azr_system matches 161 if score rng4 Azr_system ma
 
 execute if score stageSeconds Azr_system matches 161 run fill -79944 34 145 -79944 32 145 minecraft:purple_stained_glass
 execute if score stageSeconds Azr_system matches 161 run fill -79935 9 147 -79935 8 147 minecraft:quartz_pillar
-execute if score stageSeconds Azr_system matches 161 run scoreboard players set @a[tag=AZRPT] Azr_wave 12
-execute if score stageSeconds Azr_system matches 161 run scoreboard players set @e[tag=sc,limit=1] Azr_Progress 14
-execute if score stageSeconds Azr_system matches 161 run tellraw @a[scores={Azr_PlyPtsH=..5}] {"text":"永久升级 - 初始绿宝石数量 +5","color":"light_purple"}
-execute if score stageSeconds Azr_system matches 161 run scoreboard players set @a[tag=AZRPT,scores={Azr_PlyPtsH=..5}] Azr_PlyPtsH 6
-execute if score stageSeconds Azr_system matches 161 run advancement grant @a[tag=AZRPT] only skyblock:azr_stage5
+execute if score stageSeconds Azr_system matches 161 run scoreboard players set @a[tag=azrPlayer] Azr_wave 12
+execute if score stageSeconds Azr_system matches 161 run scoreboard players set stage Azr_system 14
+execute if score stageSeconds Azr_system matches 161 run tellraw @a[scores={Azr_skillPoints=..5}] {"text":"永久升级 - 初始绿宝石数量 +5","color":"light_purple"}
+execute if score stageSeconds Azr_system matches 161 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..5}] Azr_skillPoints 6
+execute if score stageSeconds Azr_system matches 161 run advancement grant @a[tag=azrPlayer] only skyblock:azr_stage5
 
 execute if score stageSeconds Azr_system matches 154 if score rng2 Azr_system matches 1 run summon slime -79921 38 136 {PersistenceRequired:1b,Tags:["AzrielDecMob","Immune"],DeathLootTable:"skyblock:azriel_slime_tier1",Health:4.0f,CustomName:'"史莱姆"',CanPickUpLoot:0b,Size:2,ArmorItems:[{},{},{},{}],attributes:[{id:"generic.max_health",base:4.0d},{id:"generic.attack_damage",base:3.0d}]}
 execute if score stageSeconds Azr_system matches 154 if score rng3 Azr_system matches 1 run summon slime -79910 38 135 {PersistenceRequired:1b,Tags:["AzrielDecMob","Immune"],DeathLootTable:"skyblock:azriel_slime_tier1",Health:3.0f,CustomName:'"史莱姆"',CanPickUpLoot:0b,Size:1,ArmorItems:[{},{},{},{}],attributes:[{id:"generic.max_health",base:3.0d},{id:"generic.attack_damage",base:2.0d}]}
