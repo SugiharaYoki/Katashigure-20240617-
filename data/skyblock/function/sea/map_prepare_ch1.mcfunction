@@ -231,3 +231,15 @@ fill 90076 124 121 90076 122 123 iron_block
 setblock 90084 122 106 chest[facing=west]
 setblock 90085 122 146 chest[facing=north]
 setblock 90058 103 142 minecraft:air
+
+
+
+
+
+fill 90076 105 141 90076 103 139 minecraft:waxed_copper_grate
+fill 90085 111 137 90085 109 139 minecraft:waxed_copper_grate
+setblock 90078 110 111 minecraft:redstone_block
+setblock 90078 110 111 minecraft:air
+setblock 90074 110 132 chest[facing=north]
+item replace block 90074 110 132 container.13 with wild_armor_trim_smithing_template 2
+fill 90076 121 109 90077 121 108 minecraft:waxed_copper_grate

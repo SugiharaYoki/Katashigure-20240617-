@@ -37,6 +37,13 @@ scoreboard players set @n[tag=sc] sea_4temp9 0
 scoreboard players set @n[tag=sc] sea_4temp10 0
 kill @e[tag=SEAcrafter,type=interaction]
 
+tag @s remove SeGa_sea_ch1
+tag @s remove SeGa_sea_ch2
+tag @s remove SeGa_sea_ch3
+tag @s remove SeGa_sea_ch4
+tag @s remove SeGa_sea_ch5
+tag @s remove SeGa_sea_ch6
+
 forceload remove 90000 0 90200 200
 setblock 90060 104 144 stone_button[facing=south,face=floor]
 summon minecraft:armor_stand 90060 106 144 {CustomName:'{"text": "『厄珀娅的悲歌』","color": "blue","bold": true}',DisabledSlots:65793,CustomNameVisible:1b,Invisible:1b,Marker:1b,NoGravity:1b}
