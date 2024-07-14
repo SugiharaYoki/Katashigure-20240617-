@@ -34,7 +34,7 @@
           "children": [
             {
               "type": "minecraft:item",
-              "name": "minecraft:diamond_sword",
+              "name": "minecraft:diamond_axe",
               "weight": 1,
               "functions": [
                 {
@@ -227,7 +227,7 @@
             },
             {
               "type": "minecraft:item",
-              "name": "minecraft:iron_hoe",
+              "name": "minecraft:diamond_hoe",
               "weight": 25,
               "functions": [
                 {
@@ -247,6 +247,7 @@
                   "function": "minecraft:enchant_randomly",
                   "options": [
                     "minecraft:unbreaking",
+                    "minecraft:knockback",
                     "minecraft:sharpness"
                   ]
                 }
@@ -366,7 +367,7 @@
             },
             {
               "type": "minecraft:item",
-              "name": "minecraft:diamond_hoe",
+              "name": "minecraft:diamond_sword",
               "weight": 6,
               "functions": [
                 {
@@ -728,7 +729,7 @@
             {
               "type": "minecraft:item",
               "name": "minecraft:potion",
-              "weight": 3,
+              "weight": 2,
               "functions": [
                 {
                   "function": "minecraft:set_potion",
