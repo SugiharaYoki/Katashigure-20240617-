@@ -1,0 +1,1 @@
+summon slime ~ ~ ~ {PersistenceRequired:1b,Tags:["AzrielDecMob","Immune"],DeathLootTable:"skyblock:azriel_slime_tier1",Health:3.0f,CustomName:'"史莱姆"',CanPickUpLoot:0b,Size:1,ArmorItems:[{},{},{},{}],attributes:[{id:"generic.max_health",base:3.0d},{id:"generic.attack_damage",base:2.0d}]}
