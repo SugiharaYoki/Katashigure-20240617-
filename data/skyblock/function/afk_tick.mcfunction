@@ -19,7 +19,7 @@ scoreboard players operation @s Afk_totalDistance += @s Afk_distUnderWater
 
 # - Without moving
 # - - Not AFKed
-scoreboard players add @s[scores={Afk_totalDistance=0..0}] Afk_tick 1
+scoreboard players add @s[scores={Afk_totalDistance=0..0},tag=!Gaming] Afk_tick 1
 execute if entity @s[tag=!AFKING,scores={Afk_tick=2400..}] run tellraw @a [{"selector":"@s","color":"gold","bold":true},{"text":"摸了！","color":"gray"}]
 execute if entity @s[tag=!AFKING,scores={Afk_tick=2400..}] run scoreboard players set @s Afk_totalFSB 0
 execute if entity @s[tag=!AFKING,scores={Afk_tick=2400..},tag=!NoAutoNoA] run tag @s add NoAnnouncement
@@ -36,7 +36,7 @@ execute if entity @s[tag=AFKING] run scoreboard players operation @s Afk_floatSe
 execute if entity @s[tag=AFKING] if score @s Afk_floatSec matches 6.. run title @s actionbar [{"text":"你已经摸了","color":"aqua"},{"score":{"name":"@s","objective":"Afk_sec"},"color":"gold","bold":true},{"text":".","color":"gold","bold":true},{"score":{"name":"@s","objective":"Afk_floatSec"},"color":"gold","bold":true},{"text":"秒了   ","color":"aqua"},{"text":"浮世币总收益为：","color":"gray"},{"score":{"name":"@s","objective":"Afk_totalFSB"},"color":"gold","bold":true}]
 execute if entity @s[tag=AFKING] if score @s Afk_floatSec matches 0..0 run title @s actionbar [{"text":"你已经摸了","color":"aqua"},{"score":{"name":"@s","objective":"Afk_sec"},"color":"gold","bold":true},{"text":".0","color":"gold","bold":true},{"score":{"name":"@s","objective":"Afk_floatSec"},"color":"gold","bold":true},{"text":"秒了   ","color":"aqua"},{"text":"浮世币总收益为：","color":"gray"},{"score":{"name":"@s","objective":"Afk_totalFSB"},"color":"gold","bold":true}]
 execute if entity @s[tag=AFKING] if score @s Afk_floatSec matches 5..5 run title @s actionbar [{"text":"你已经摸了","color":"aqua"},{"score":{"name":"@s","objective":"Afk_sec"},"color":"gold","bold":true},{"text":".0","color":"gold","bold":true},{"score":{"name":"@s","objective":"Afk_floatSec"},"color":"gold","bold":true},{"text":"秒了   ","color":"aqua"},{"text":"浮世币总收益为：","color":"gray"},{"score":{"name":"@s","objective":"Afk_totalFSB"},"color":"gold","bold":true}]
-execute as @s[tag=AFKING] at @s run particle minecraft:ash ~ ~1.5 ~ 0.4 0.7 0.4 0 50 normal
+#execute as @s[tag=AFKING] at @s run particle minecraft:ash ~ ~1.5 ~ 0.4 0.7 0.4 0 50 normal
 
 # - Moved
 # - - Not AFKING @s[tag=!AFKING,scores={Afk_totalDistance=0..}]

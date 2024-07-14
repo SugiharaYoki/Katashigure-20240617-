@@ -93,19 +93,19 @@ tellraw @s {"text":"     - 健康 -","color":"white"}
 scoreboard players operation @s dailydiv_w = @s dailydiv1
 scoreboard players operation @s dailydiv_wy = @s dailydiv1y
 function skyblock:city_utility_divination_result
-tellraw @s {"text":"     - 桃花 -","color":"white"}
-scoreboard players operation @s dailydiv_w = @s dailydiv2
-scoreboard players operation @s dailydiv_wy = @s dailydiv2y
-function skyblock:city_utility_divination_result
 tellraw @s {"text":"     - 家庭 -","color":"white"}
 scoreboard players operation @s dailydiv_w = @s dailydiv3
 scoreboard players operation @s dailydiv_wy = @s dailydiv3y
 function skyblock:city_utility_divination_result
-tellraw @s {"text":"     - 友情 -","color":"white"}
+tellraw @s {"text":"     - 友谊 -","color":"white"}
 scoreboard players operation @s dailydiv_w = @s dailydiv4
 scoreboard players operation @s dailydiv_wy = @s dailydiv4y
 function skyblock:city_utility_divination_result
-tellraw @s {"text":"     - 学业 -","color":"white"}
+tellraw @s {"text":"     - 桃花 -","color":"white"}
+scoreboard players operation @s dailydiv_w = @s dailydiv2
+scoreboard players operation @s dailydiv_wy = @s dailydiv2y
+function skyblock:city_utility_divination_result
+tellraw @s {"text":"     - 事业 -","color":"white"}
 scoreboard players operation @s dailydiv_w = @s dailydiv5
 scoreboard players operation @s dailydiv_wy = @s dailydiv5y
 function skyblock:city_utility_divination_result
