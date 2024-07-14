@@ -171,7 +171,7 @@ execute if score @n[tag=sc] SSgspT matches 11 run execute if score @n[tag=sc] Ma
 execute if score @n[tag=sc] SSgspT matches 11 run execute if score @n[tag=sc] Map_Type matches 5 run title @a[tag=PVPing] title {"text":"欢迎来到 PVP战场","color":"white"}
 execute if score @n[tag=sc] SSgspT matches 11 run title @a[tag=PVPing] actionbar {"text":"分配成员中……","color":"white"}
 
-execute if score @n[tag=sc] SSgspT matches 11 run gamerule keepInventory false
+execute if score @n[tag=sc] SSgspT matches 11 run gamerule keepInventory true
 execute if score @n[tag=sc] SSgspT matches 11 run effect give @a[tag=PVPing] minecraft:fire_resistance 3 20 true
 execute if score @n[tag=sc] SSgspT matches 11 run effect give @a[tag=PVPing] minecraft:regeneration 8 20 true
 execute if score @n[tag=sc] SSgspT matches 11 run effect give @a[tag=PVPing] minecraft:slow_falling 3 20 true
