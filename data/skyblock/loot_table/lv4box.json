@@ -728,7 +728,7 @@
             {
               "type": "minecraft:item",
               "name": "minecraft:potion",
-              "weight": 8,
+              "weight": 3,
               "functions": [
                 {
                   "function": "minecraft:set_potion",
