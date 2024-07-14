@@ -9,6 +9,11 @@ scoreboard objectives add sea_4temp2 dummy
 scoreboard objectives add sea_4temp3 dummy
 scoreboard objectives add sea_4temp4 dummy
 scoreboard objectives add sea_4temp5 dummy
+scoreboard objectives add sea_4temp6 dummy
+scoreboard objectives add sea_4temp7 dummy
+scoreboard objectives add sea_4temp8 dummy
+scoreboard objectives add sea_4temp9 dummy
+scoreboard objectives add sea_4temp10 dummy
 scoreboard objectives add sea_crafter trigger
 scoreboard objectives add sea_i_emerald dummy
 scoreboard objectives add sea_i_trim_zombie dummy
