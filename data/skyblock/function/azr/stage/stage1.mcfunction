@@ -38,5 +38,6 @@ execute if score stageSeconds Azr_system matches 40.. run tag @a[tag=azrPlayer,t
 execute if score stageSeconds Azr_system matches 40.. run tellraw @a[tag=azrPlayer,tag=!hasLifeVitae] {"text":""}
 execute if score stageSeconds Azr_system matches 40.. run scoreboard players set stage Azr_system 3
 execute if score stageSeconds Azr_system matches 40.. run scoreboard players set @a[tag=azrPlayer] Azr_wave 1
+execute if score stageSeconds Azr_system matches 40.. run scoreboard players reset tickTimer Azr_system
 execute if score stageSeconds Azr_system matches 40.. run advancement grant @a[tag=azrPlayer] only skyblock:azr_stage1
 execute if score stageSeconds Azr_system matches 40.. run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..0}] Azr_skillPoints 1
