@@ -125,4 +125,5 @@ execute if entity @s[tag=sea_purchase_pass] run clear @s sentry_armor_trim_smith
 execute if entity @s[tag=sea_purchase_pass] run clear @s wayfinder_armor_trim_smithing_template 1
 tag @s remove sea_purchase_pass
 
-scoreboard players set @s sea_crafter 1
+execute if score @s sea_crafter matches 20000..29999 run scoreboard players set @s sea_crafter 20000
+execute if score @s sea_crafter matches 10000..19999 run scoreboard players set @s sea_crafter 1
