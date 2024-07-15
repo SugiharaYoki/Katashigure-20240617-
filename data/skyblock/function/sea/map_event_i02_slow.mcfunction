@@ -21,10 +21,10 @@ execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=33}] run setbloc
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=36}] run setblock 90096 132 112 air destroy
 
 execute as @a[tag=SEAPT,x=90116,y=128,z=129,distance=0..2] run scoreboard players set @n[tag=sc,scores={sea_4temp2=..49}] sea_4temp2 50
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=50..58}] run scoreboard players add @s sea_4temp2 1
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=50..65}] run scoreboard players add @s sea_4temp2 1
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=51}] as @e[tag=SEAeventi02slow1] at @s run data modify entity @s NoAI set value false
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=53}] as @e[tag=SEAeventi02slow1] at @s run data modify entity @s NoAI set value true
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=57}] as @e[tag=SEAeventi02slow1,sort=random,limit=1] at @s as @a[tag=SEAPT,distance=0..5] run tellraw @s {"text": "是我的……幻觉？","color": "gray"}
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=56}] as @e[tag=SEAeventi02slow1] at @s run data modify entity @s NoAI set value true
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=65}] as @a[x=90116,y=128,z=129,tag=SEAPT,distance=0..7] run tellraw @s {"text": "是我的……幻觉？","color": "gray"}
 
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=11}] run summon skeleton 90113 128 130 {NoAI:true,Invulnerable:true,Rotation:[180.0f,0.0f],DeathLootTable:"skyblock:sea_skeleton1",Tags:["SEAmob","SEAeventi02slow1"],attributes:[{id:"generic.attack_damage",base:2.0},{id:"generic.movement_speed",base:0.16},{id:"generic.max_health",base:12}],Health:12,PersistenceRequired:1b}
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=11}] run summon skeleton 90111 128 130 {NoAI:true,Invulnerable:true,Rotation:[180.0f,0.0f],DeathLootTable:"skyblock:sea_skeleton1",Tags:["SEAmob","SEAeventi02slow1"],attributes:[{id:"generic.attack_damage",base:2.0},{id:"generic.movement_speed",base:0.16},{id:"generic.max_health",base:12}],Health:12,PersistenceRequired:1b}
@@ -47,13 +47,13 @@ execute as @a[tag=SEAPT,x=90111,y=128,z=125,distance=0..2.3,tag=!e_i_15] run tag
 
 
 execute as @n[tag=sc] if block 90100 129 127 stone_button[powered=true] unless entity @s[scores={sea_4temp6=1..}] run scoreboard players set @s sea_4temp6 1
-execute if entity @a[tag=SEAPT] as @n[tag=sc,tag=sea_cb001,scores={sea_4temp6=1..8}] run scoreboard players add @s sea_4temp6 1
-execute if entity @a[tag=SEAPT] as @n[tag=sc,tag=sea_cb001,scores={sea_4temp6=1}] run fill 90098 128 128 90098 128 127 air
-execute if entity @a[tag=SEAPT] as @n[tag=sc,tag=sea_cb001,scores={sea_4temp6=3}] run fill 90098 129 128 90098 129 127 air
-execute if entity @a[tag=SEAPT] as @n[tag=sc,tag=sea_cb001,scores={sea_4temp6=5}] run fill 90098 130 128 90098 130 127 air
-execute if entity @a[tag=SEAPT] as @n[tag=sc,tag=sea_cb001,scores={sea_4temp6=1}] run playsound minecraft:block.iron_door.open ambient @a 90098 131 128 3 0.3
-execute if entity @a[tag=SEAPT] as @n[tag=sc,tag=sea_cb001,scores={sea_4temp6=3}] run playsound minecraft:block.iron_door.open ambient @a 90098 131 128 3 0.3
-execute if entity @a[tag=SEAPT] as @n[tag=sc,tag=sea_cb001,scores={sea_4temp6=5}] run playsound minecraft:block.iron_door.open ambient @a 90098 131 128 3 0.3
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp6=1..8}] run scoreboard players add @s sea_4temp6 1
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp6=1}] run fill 90098 128 128 90098 128 127 air
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp6=3}] run fill 90098 129 128 90098 129 127 air
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp6=5}] run fill 90098 130 128 90098 130 127 air
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp6=1}] run playsound minecraft:block.iron_door.open ambient @a 90098 131 128 3 0.3
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp6=3}] run playsound minecraft:block.iron_door.open ambient @a 90098 131 128 3 0.3
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp6=5}] run playsound minecraft:block.iron_door.open ambient @a 90098 131 128 3 0.3
 
 
 
