@@ -482,7 +482,7 @@ item replace block -79791 28 -294 container.13 with minecraft:bundle
 tag @a remove azrDead
 #tag @e[tag=sc,limit=1] remove Azr_Doppel
 #______________________________________________________________#
-bossbar remove minecraft:8432101
+bossbar remove azr:boss_hp_bar
 bossbar remove minecraft:8432102
 bossbar remove azr:progress_bar_normal
 bossbar remove minecraft:8432198
