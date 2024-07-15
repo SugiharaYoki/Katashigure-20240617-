@@ -8,6 +8,8 @@ tag @s remove NoMultiMenu
 tag @s remove Gaming
 tag @s remove Azr_ShopEnt
 tag @s add azrDead
+bossbar set azr:progress_bar_normal players @a[tag=azrPlayer]
+bossbar set azr:boss_hp_bar players @a[tag=azrPlayer]
 #输出
 tellraw @a[tag=azrPlayer,distance=..10000] [{"selector":"@s","color":"blue"},{"text":" 阵亡了！","color":"dark_red"}]
 tellraw @s [{"text":"你已经死亡！最终坚持关数： ","color":"red"},{"score":{"name":"@s","objective":"Azr_wave"}}]
