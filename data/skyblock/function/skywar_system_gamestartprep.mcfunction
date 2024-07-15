@@ -171,7 +171,7 @@ execute if score @n[tag=sc] SSgspT matches 11 run execute if score @n[tag=sc] Ma
 execute if score @n[tag=sc] SSgspT matches 11 run execute if score @n[tag=sc] Map_Type matches 5 run title @a[tag=PVPing] title {"text":"欢迎来到 PVP战场","color":"white"}
 execute if score @n[tag=sc] SSgspT matches 11 run title @a[tag=PVPing] actionbar {"text":"分配成员中……","color":"white"}
 
-execute if score @n[tag=sc] SSgspT matches 11 run gamerule keepInventory false
+execute if score @n[tag=sc] SSgspT matches 11 run gamerule keepInventory true
 execute if score @n[tag=sc] SSgspT matches 11 run effect give @a[tag=PVPing] minecraft:fire_resistance 3 20 true
 execute if score @n[tag=sc] SSgspT matches 11 run effect give @a[tag=PVPing] minecraft:regeneration 8 20 true
 execute if score @n[tag=sc] SSgspT matches 11 run effect give @a[tag=PVPing] minecraft:slow_falling 3 20 true
@@ -211,14 +211,21 @@ execute if score @n[tag=sc] SSgspT matches 13 if score @n[tag=sc] Map_Code match
 execute if score @n[tag=sc] SSgspT matches 13 if score @n[tag=sc] Map_Code matches 17 run title @a[tag=PVP_see] title {"text":"天穹巨兽古伽兰那","color":"white"}
 execute if score @n[tag=sc] SSgspT matches 13 if score @n[tag=sc] Map_Code matches 17 run title @a[tag=PVP_see] subtitle {"text":"空中军舰锈迹斑斑 刺耳的金属尖啸诠释着何类的昔日辉煌？","color":"white"}
 #[futuredevskywar]
+execute if block -19 23 32 minecraft:soul_lantern if score @n[tag=sc] SSgspT matches 17 run effect clear @a[tag=PVPing]
 execute if block -19 23 32 minecraft:soul_lantern if score @n[tag=sc] SSgspT matches 17 run execute as @a[tag=PVPing] at @s run function skyblock:skywar_system_jobbonus
 execute if score @n[tag=sc] SSgspT matches 17 run execute as @a[tag=PVPing] at @s run function skyblock:skywar_system_levelbonus
 execute if block -19 23 32 minecraft:soul_lantern if score @n[tag=sc] SSgspT matches 17 run execute as @a[tag=PVPing] at @s run function skyblock:skywar_system_levelbonus2
 execute if block 43 58 55 minecraft:soul_lantern if score @n[tag=sc] SSgspT matches 17 run execute as @a[tag=PVPing] at @s run give @s tnt 20
 execute if block 44 57 54 minecraft:lantern if score @n[tag=sc] SSgspT matches 17 run execute as @a[tag=PVPing] at @s run give @s enchanted_golden_apple
-execute if block 44 59 56 minecraft:soul_lantern if score @n[tag=sc] SSgspT matches 17 run execute as @a[tag=PVPing] at @s run effect give @s absorption 300 3 true
-execute if block 45 60 55 minecraft:soul_lantern if score @n[tag=sc] SSgspT matches 17 run execute as @a[tag=PVPing] at @s run effect give @s regeneration 300 1 true
+execute if block -131 59 -128 minecraft:green_concrete if score @n[tag=sc] SSgspT matches 17 run execute as @a[tag=PVPing] at @s run effect give @s absorption 300 3 true
+execute if block -131 59 -127 green_concrete if score @n[tag=sc] SSgspT matches 17 run execute as @a[tag=PVPing] at @s run effect give @s regeneration 300 1 true
 execute if block 44 61 54 minecraft:soul_lantern if score @n[tag=sc] SSgspT matches 17 run execute as @a[tag=PVPing] at @s run item replace entity @s armor.head with melon[minecraft:enchantments={binding_curse:1,blast_protection:4}]
+
+execute if block -131 59 -119 green_concrete if score @n[tag=sc] SSgspT matches 17 run execute as @a[tag=PVPing] at @s run give @s ender_pearl 3
+execute if block -131 59 -119 green_concrete if score @n[tag=sc] SSgspT matches 17 run execute as @a[tag=PVPing] at @s run give @s firework_rocket 8
+execute if block -131 59 -119 green_concrete if score @n[tag=sc] SSgspT matches 17 run execute as @a[tag=PVPing] at @s run give @s elytra 1
+execute if block -131 59 -119 green_concrete if score @n[tag=sc] SSgspT matches 17 run execute as @a[tag=PVPing] at @s run give @s obsidian 3
+execute if block -131 59 -119 green_concrete if score @n[tag=sc] SSgspT matches 17 run execute as @a[tag=PVPing] at @s run give @s end_crystal 1
 
 #execute if score @n[tag=sc] SSgspT matches 18 run tellraw @a[tag=PVPing] {"text":"看板狐： 所有参与者已合并为 A C 两组","color":"dark_green"}
 #execute if score @n[tag=sc] SSgspT matches 18 run team join Team1_1 @a[team=Team1_3]

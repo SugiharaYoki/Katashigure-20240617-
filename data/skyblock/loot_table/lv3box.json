@@ -18,8 +18,6 @@
               "options": [
                 "minecraft:fire_aspect",
                 "minecraft:knockback",
-                "minecraft:looting",
-                "minecraft:mending",
                 "minecraft:sharpness",
                 "minecraft:sweeping_edge",
                 "minecraft:unbreaking"
@@ -41,9 +39,8 @@
             {
               "function": "minecraft:enchant_randomly",
               "options": [
-                "minecraft:looting",
-                "minecraft:mending",
                 "minecraft:sharpness",
+                "minecraft:knockback",
                 "minecraft:unbreaking"
               ],
               "conditions": [
@@ -64,7 +61,6 @@
               "function": "minecraft:enchant_randomly",
               "options": [
                 "minecraft:knockback",
-                "minecraft:mending",
                 "minecraft:sharpness",
                 "minecraft:unbreaking"
               ],
@@ -89,8 +85,7 @@
                 "minecraft:blast_protection",
                 "minecraft:projectile_protection",
                 "minecraft:protection",
-                "minecraft:unbreaking",
-                "minecraft:mending"
+                "minecraft:unbreaking"
               ],
               "conditions": [
                 {
@@ -113,8 +108,7 @@
                 "minecraft:blast_protection",
                 "minecraft:projectile_protection",
                 "minecraft:protection",
-                "minecraft:unbreaking",
-                "minecraft:mending"
+                "minecraft:unbreaking"
               ],
               "conditions": [
                 {
@@ -137,8 +131,7 @@
                 "minecraft:blast_protection",
                 "minecraft:projectile_protection",
                 "minecraft:protection",
-                "minecraft:unbreaking",
-                "minecraft:mending"
+                "minecraft:unbreaking"
               ],
               "conditions": [
                 {
@@ -162,7 +155,6 @@
                 "minecraft:projectile_protection",
                 "minecraft:protection",
                 "minecraft:unbreaking",
-                "minecraft:mending",
                 "minecraft:feather_falling",
                 "minecraft:frost_walker",
                 "minecraft:soul_speed",
@@ -232,7 +224,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:potion",
-          "weight": 4,
+          "weight": 5,
           "functions": [
             {
               "function": "minecraft:set_potion",
@@ -254,7 +246,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:potion",
-          "weight": 4,
+          "weight": 7,
           "functions": [
             {
               "function": "minecraft:set_potion",
@@ -265,7 +257,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:potion",
-          "weight": 3,
+          "weight": 4,
           "functions": [
             {
               "function": "minecraft:set_potion",
@@ -276,7 +268,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:potion",
-          "weight": 3,
+          "weight": 2,
           "functions": [
             {
               "function": "minecraft:set_potion",
@@ -287,12 +279,12 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:lever",
-          "weight": 3
+          "weight": 4
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:salmon",
-          "weight": 5,
+          "weight": 6,
           "functions": [
             {
               "function": "minecraft:set_count",
