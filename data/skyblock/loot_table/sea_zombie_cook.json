@@ -1,0 +1,75 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 3,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:air",
+          "weight": 28
+        },
+	      {
+          "type": "minecraft:item",
+          "name": "minecraft:raiser_armor_trim_smithing_template",
+          "weight": 4
+        },
+	      {
+          "type": "minecraft:item",
+          "name": "minecraft:emerald",
+          "weight": 20
+        },
+	      {
+          "type": "minecraft:item",
+          "name": "minecraft:bread",
+          "weight": 8
+        },
+	      {
+          "type": "minecraft:item",
+          "name": "minecraft:chicken",
+          "weight": 8
+        },
+	      {
+          "type": "minecraft:item",
+          "name": "minecraft:beef",
+          "weight": 8
+        }
+      ]
+    },
+    {
+      "rolls": 2,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:air",
+          "weight": 30
+        },
+	      {
+          "type": "minecraft:item",
+          "name": "minecraft:emerald",
+          "weight": 20
+        },
+	      {
+          "type": "minecraft:item",
+          "name": "minecraft:flint",
+          "weight": 20
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:air",
+          "weight": 995
+        },
+	      {
+          "type": "minecraft:item",
+          "name": "minecraft:glistering_melon_slice",
+          "weight": 5
+        }
+      ]
+    }
+  ]
+}

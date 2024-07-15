@@ -43,7 +43,7 @@ fill 90103 129 103 90104 128 103 minecraft:dark_prismarine
 
 summon minecraft:interaction 90113 129.3 113 {CustomName:'[{"text":"多功能工作站"}]',Tags:["SEAcrafter"]}
 
-
+fill 90098 128 128 90098 130 127 iron_block
 
 
 
