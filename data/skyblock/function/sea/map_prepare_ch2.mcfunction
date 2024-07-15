@@ -38,9 +38,16 @@ fill 90076 121 109 90077 121 108 minecraft:air
 setblock 90102 128 113 minecraft:brown_shulker_box
 item replace block 90102 128 113 container.12 with rotten_flesh 2
 item replace block 90102 128 113 container.14 with rotten_flesh 2
+fill 90103 129 103 90104 128 103 minecraft:dark_prismarine
 
 
 summon minecraft:interaction 90113 129.3 113 {CustomName:'[{"text":"多功能工作站"}]',Tags:["SEAcrafter"]}
+
+
+
+
+
+
 
 
 
