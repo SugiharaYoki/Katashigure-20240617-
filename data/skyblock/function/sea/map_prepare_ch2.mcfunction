@@ -66,6 +66,7 @@ setblock 90123 129 131 air
 setblock 90111 129 130 air
 setblock 90110 131 126 lantern[hanging=true]
 setblock 90112 131 126 lantern[hanging=true]
+fill 90131 130 129 90131 128 129 minecraft:dark_prismarine
 
 summon marker 90124 128 129 {Tags:["SEAmagma1"]}
 summon marker 90128 128 128 {Tags:["SEAmagma1"]}
