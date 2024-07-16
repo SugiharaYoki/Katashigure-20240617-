@@ -72,7 +72,8 @@ execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=127}] run setblo
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=131}] run setblock 90123 131 123 minecraft:tinted_glass
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=132}] run setblock 90118 130 130 air destroy
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=135}] run setblock 90103 130 129 air destroy
-
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=139}] run setblock 90110 131 126 air destroy
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=139}] run setblock 90112 131 126 air destroy
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=145}] run setblock 90123 129 131 minecraft:redstone_wall_torch[facing=north]
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=145}] run setblock 90111 129 130 minecraft:redstone_wall_torch[facing=north]
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=110}] run playsound minecraft:block.fire.ambient ambient @a 90111.53 129.47 130.69 10 1.5

@@ -64,6 +64,8 @@ setblock 90118 130 130 lantern[hanging=true]
 setblock 90103 130 129 lantern[hanging=true]
 setblock 90123 129 131 air
 setblock 90111 129 130 air
+setblock 90110 131 126 lantern[hanging=true]
+setblock 90112 131 126 lantern[hanging=true]
 
 summon marker 90124 128 129 {Tags:["SEAmagma1"]}
 summon marker 90128 128 128 {Tags:["SEAmagma1"]}
