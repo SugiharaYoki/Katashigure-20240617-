@@ -55,6 +55,13 @@ item replace block 90125 128 124 container.12 with bread 2
 item replace block 90125 128 124 container.14 with rotten_flesh 2
 setblock 90120 129 131 minecraft:potted_jungle_sapling
 setblock 90120 129 127 minecraft:potted_jungle_sapling
+setblock 90121 132 129 minecraft:white_stained_glass
+setblock 90124 132 129 minecraft:white_stained_glass
+setblock 90150 131 129 minecraft:redstone_lamp[lit=false]
+setblock 90123 131 123 minecraft:white_stained_glass
+setblock 90128 132 129 minecraft:white_stained_glass
+setblock 90118 130 130 lantern[hanging=true]
+setblock 90103 130 129 lantern[hanging=true]
 
 summon marker 90124 128 129 {Tags:["SEAmagma1"]}
 summon marker 90128 128 128 {Tags:["SEAmagma1"]}

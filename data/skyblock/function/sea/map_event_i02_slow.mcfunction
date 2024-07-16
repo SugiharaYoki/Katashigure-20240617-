@@ -56,11 +56,18 @@ execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp6=2}] run playsoun
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp6=4}] run playsound minecraft:block.iron_door.open ambient @a 90098 131 128 3 0.3
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp6=6}] run playsound minecraft:block.iron_door.open ambient @a 90098 131 128 3 0.3
 
-
-
-
-
-
-
-
-
+execute as @n[tag=sc] if block 90149 130 129 stone_button[powered=true] unless entity @s[scores={sea_4temp2=100..}] run scoreboard players set @s sea_4temp2 100
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=105..115}] run playsound minecraft:ambient.soul_sand_valley.additions ambient @a 90139.60 132.00 129.32 10 1.5
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=101..110}] run playsound minecraft:block.chain.fall ambient @a 90139.60 132.00 129.32 10 0.5
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=105}] run setblock 90150 131 129 minecraft:redstone_lamp[lit=true]
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=110}] run setblock 90150 131 129 minecraft:redstone_lamp[lit=false]
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=110}] run playsound minecraft:entity.generic.explode ambient @a 90139.60 132.00 129.32 10 0.8
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=110}] run playsound minecraft:entity.generic.explode ambient @a 90139.60 132.00 129.32 10 0.8
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=110}] run playsound minecraft:block.fire.extinguish ambient @a 90139.60 132.00 129.32 10 0.5
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=114}] run tellraw @s {"text": "播报：系统警告，东区保险丝熔断，请检查东区电路箱。","color": "red"}
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=119}] run setblock 90128 132 129 minecraft:tinted_glass
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=124}] run setblock 90121 132 129 minecraft:tinted_glass
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=127}] run setblock 90124 132 129 minecraft:tinted_glass
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=131}] run setblock 90123 131 123 minecraft:tinted_glass
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=132}] run setblock 90118 130 130 air destroy
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=135}] run setblock 90103 130 129 air destroy
