@@ -49,12 +49,12 @@ execute as @a[tag=SEAPT,x=90111,y=128,z=125,distance=0..2.3,tag=!e_i_15] run tag
 
 execute as @n[tag=sc] if block 90100 129 127 stone_button[powered=true] unless entity @s[scores={sea_4temp6=1..}] run scoreboard players set @s sea_4temp6 1
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp6=1..8}] run scoreboard players add @s sea_4temp6 1
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp6=1}] run fill 90098 128 128 90098 128 127 air
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp6=3}] run fill 90098 129 128 90098 129 127 air
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp6=5}] run fill 90098 130 128 90098 130 127 air
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp6=1}] run playsound minecraft:block.iron_door.open ambient @a 90098 131 128 3 0.3
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp6=3}] run playsound minecraft:block.iron_door.open ambient @a 90098 131 128 3 0.3
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp6=5}] run playsound minecraft:block.iron_door.open ambient @a 90098 131 128 3 0.3
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp6=2}] run fill 90098 128 128 90098 128 127 air
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp6=4}] run fill 90098 129 128 90098 129 127 air
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp6=6}] run fill 90098 130 128 90098 130 127 air
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp6=2}] run playsound minecraft:block.iron_door.open ambient @a 90098 131 128 3 0.3
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp6=4}] run playsound minecraft:block.iron_door.open ambient @a 90098 131 128 3 0.3
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp6=6}] run playsound minecraft:block.iron_door.open ambient @a 90098 131 128 3 0.3
 
 
 
