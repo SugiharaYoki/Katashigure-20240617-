@@ -62,6 +62,8 @@ setblock 90123 131 123 minecraft:white_stained_glass
 setblock 90128 132 129 minecraft:white_stained_glass
 setblock 90118 130 130 lantern[hanging=true]
 setblock 90103 130 129 lantern[hanging=true]
+setblock 90123 129 131 air
+setblock 90111 129 130 air
 
 summon marker 90124 128 129 {Tags:["SEAmagma1"]}
 summon marker 90128 128 128 {Tags:["SEAmagma1"]}
