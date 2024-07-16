@@ -209,6 +209,8 @@ setblock 90105 122 106 chest[facing=west]
 item replace block 90105 122 106 container.12 with arrow 3
 item replace block 90105 122 106 container.14 with raiser_armor_trim_smithing_template
 
+summon minecraft:item_frame 90091 128 133 {Invisible:1b,Fixed:0b,Invulnerable:0b,Facing:1b,Item:{id:"minecraft:bread"}}
+
 fill 90094 124 107 90092 122 107 white_stained_glass
 fill 90094 122 102 90092 124 102 white_stained_glass
 fill 90087 122 105 90087 124 104 white_stained_glass

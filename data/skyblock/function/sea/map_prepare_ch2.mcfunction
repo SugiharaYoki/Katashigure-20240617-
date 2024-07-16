@@ -48,7 +48,19 @@ fill 90098 128 128 90098 130 127 iron_block
 
 summon minecraft:item_frame 90118 129 122 {Invisible:1b,Fixed:0b,Invulnerable:0b,Facing:1b,Item:{id:"minecraft:bread"}}
 summon minecraft:item_frame 90106 129 123 {Invisible:1b,Fixed:0b,Invulnerable:0b,Facing:1b,Item:{id:"minecraft:flint"}}
+fill 90125 128 121 90125 128 122 smoker[facing=west]
 
+setblock 90125 128 124 chest[facing=west]
+item replace block 90125 128 124 container.12 with bread 2
+item replace block 90125 128 124 container.14 with rotten_flesh 2
+setblock 90120 129 131 minecraft:potted_jungle_sapling
+setblock 90120 129 127 minecraft:potted_jungle_sapling
+
+summon marker 90124 128 129 {Tags:["SEAmagma1"]}
+summon marker 90128 128 128 {Tags:["SEAmagma1"]}
+summon marker 90129 128 130 {Tags:["SEAmagma1"]}
+
+execute as @e[tag=SEAmagma1,type=marker] at @s if block ~ ~ ~ air run setblock ~ ~ ~ basalt
 
 
 
