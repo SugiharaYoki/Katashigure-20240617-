@@ -57,6 +57,7 @@ execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp6=4}] run playsoun
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp6=6}] run playsound minecraft:block.iron_door.open ambient @a 90098 131 128 3 0.3
 
 execute as @n[tag=sc] if block 90149 130 129 stone_button[powered=true] unless entity @s[scores={sea_4temp2=100..}] run scoreboard players set @s sea_4temp2 100
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=100..160}] run scoreboard players add @s sea_4temp2 1
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=105..115}] run playsound minecraft:ambient.soul_sand_valley.additions ambient @a 90139.60 132.00 129.32 10 1.5
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=101..110}] run playsound minecraft:block.chain.fall ambient @a 90139.60 132.00 129.32 10 0.5
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=105}] run setblock 90150 131 129 minecraft:redstone_lamp[lit=true]
