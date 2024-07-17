@@ -35,23 +35,38 @@ execute unless entity @e[limit=1,tag=sc,scores={dailydiv7=-1..}] run scoreboard 
 execute unless entity @e[limit=1,tag=sc,scores={dailydiv8=-1..}] run scoreboard objectives add dailydiv8 dummy
 execute unless entity @e[limit=1,tag=sc,scores={dailydiv8=-1..}] run scoreboard objectives add dailydiv8y dummy
 execute unless entity @e[limit=1,tag=sc,scores={dailydiv8=-1..}] run scoreboard players set @n[tag=sc] dailydiv8 999
+execute unless entity @e[limit=1,tag=sc,scores={dailydiv1S=-1..}] run scoreboard objectives add dailydiv1S dummy
+execute unless entity @e[limit=1,tag=sc,scores={dailydiv1S=-1..}] run scoreboard players set @n[tag=sc] dailydiv1S 999
+execute unless entity @e[limit=1,tag=sc,scores={dailydiv2S=-1..}] run scoreboard objectives add dailydiv2S dummy
+execute unless entity @e[limit=1,tag=sc,scores={dailydiv2S=-1..}] run scoreboard players set @n[tag=sc] dailydiv2S 999
+execute unless entity @e[limit=1,tag=sc,scores={dailydiv3S=-1..}] run scoreboard objectives add dailydiv3S dummy
+execute unless entity @e[limit=1,tag=sc,scores={dailydiv3S=-1..}] run scoreboard players set @n[tag=sc] dailydiv3S 999
+execute unless entity @e[limit=1,tag=sc,scores={dailydiv4S=-1..}] run scoreboard objectives add dailydiv4S dummy
+execute unless entity @e[limit=1,tag=sc,scores={dailydiv4S=-1..}] run scoreboard players set @n[tag=sc] dailydiv4S 999
+execute unless entity @e[limit=1,tag=sc,scores={dailydiv5S=-1..}] run scoreboard objectives add dailydiv5S dummy
+execute unless entity @e[limit=1,tag=sc,scores={dailydiv5S=-1..}] run scoreboard players set @n[tag=sc] dailydiv5S 999
 execute unless entity @e[limit=1,tag=sc,scores={dailylogin=-1..}] run scoreboard players set @n[tag=sc] dailylogin 0
 execute unless entity @e[limit=1,tag=sc,scores={dailylogin_c=-1..}] run scoreboard players set @n[tag=sc] dailylogin_c 0
 #玩家日数刷新
-execute if score @s dailydiv1 matches 0 run scoreboard players set @s dailydiv1 11
-execute if score @s dailydiv2 matches 0 run scoreboard players set @s dailydiv2 11
-execute if score @s dailydiv3 matches 0 run scoreboard players set @s dailydiv3 11
-execute if score @s dailydiv4 matches 0 run scoreboard players set @s dailydiv4 11
-execute if score @s dailydiv5 matches 0 run scoreboard players set @s dailydiv5 11
-execute if score @s dailydiv6 matches 0 run scoreboard players set @s dailydiv6 11
-execute if score @s dailydiv7 matches 0 run scoreboard players set @s dailydiv7 11
-execute if score @s dailydiv1y matches 0 run scoreboard players set @s dailydiv1y 11
-execute if score @s dailydiv2y matches 0 run scoreboard players set @s dailydiv2y 11
-execute if score @s dailydiv3y matches 0 run scoreboard players set @s dailydiv3y 11
-execute if score @s dailydiv4y matches 0 run scoreboard players set @s dailydiv4y 11
-execute if score @s dailydiv5y matches 0 run scoreboard players set @s dailydiv5y 11
-execute if score @s dailydiv6y matches 0 run scoreboard players set @s dailydiv6y 11
-execute if score @s dailydiv7y matches 0 run scoreboard players set @s dailydiv7y 11
+execute if score @s dailydiv1 matches 0 run scoreboard players set @s dailydiv1 12
+execute if score @s dailydiv1 matches 0 run scoreboard players set @s dailydiv1S 1
+execute if score @s dailydiv2 matches 0 run scoreboard players set @s dailydiv2 12
+execute if score @s dailydiv1 matches 0 run scoreboard players set @s dailydiv2S 1
+execute if score @s dailydiv3 matches 0 run scoreboard players set @s dailydiv3 12
+execute if score @s dailydiv1 matches 0 run scoreboard players set @s dailydiv3S 1
+execute if score @s dailydiv4 matches 0 run scoreboard players set @s dailydiv4 12
+execute if score @s dailydiv4 matches 0 run scoreboard players set @s dailydiv4S 12
+execute if score @s dailydiv5 matches 0 run scoreboard players set @s dailydiv5 12
+execute if score @s dailydiv5 matches 0 run scoreboard players set @s dailydiv5S 12
+execute if score @s dailydiv6 matches 0 run scoreboard players set @s dailydiv6 12
+execute if score @s dailydiv7 matches 0 run scoreboard players set @s dailydiv7 12
+execute if score @s dailydiv1y matches 0 run scoreboard players set @s dailydiv1y 12
+execute if score @s dailydiv2y matches 0 run scoreboard players set @s dailydiv2y 12
+execute if score @s dailydiv3y matches 0 run scoreboard players set @s dailydiv3y 12
+execute if score @s dailydiv4y matches 0 run scoreboard players set @s dailydiv4y 12
+execute if score @s dailydiv5y matches 0 run scoreboard players set @s dailydiv5y 12
+execute if score @s dailydiv6y matches 0 run scoreboard players set @s dailydiv6y 12
+execute if score @s dailydiv7y matches 0 run scoreboard players set @s dailydiv7y 12
 execute unless entity @s[scores={dailydiv=-1..}] run scoreboard players set @s dailydiv 0
 execute if score @s dailydiv < @e[limit=1,tag=sc] dailydiv run scoreboard players operation @s dailydiv1y = @s dailydiv1
 execute if score @s dailydiv < @e[limit=1,tag=sc] dailydiv run scoreboard players operation @s dailydiv2y = @s dailydiv2
@@ -61,32 +76,47 @@ execute if score @s dailydiv < @e[limit=1,tag=sc] dailydiv run scoreboard player
 execute if score @s dailydiv < @e[limit=1,tag=sc] dailydiv run scoreboard players operation @s dailydiv6y = @s dailydiv6
 execute if score @s dailydiv < @e[limit=1,tag=sc] dailydiv run scoreboard players operation @s dailydiv7y = @s dailydiv7
 execute if score @s dailydiv < @e[limit=1,tag=sc] dailydiv run scoreboard players operation @s dailydiv8y = @s dailydiv8
-execute if score @s dailydiv < @e[limit=1,tag=sc] dailydiv run scoreboard players set @s dailydiv1 11
-execute if score @s dailydiv < @e[limit=1,tag=sc] dailydiv run scoreboard players set @s dailydiv2 11
-execute if score @s dailydiv < @e[limit=1,tag=sc] dailydiv run scoreboard players set @s dailydiv3 11
-execute if score @s dailydiv < @e[limit=1,tag=sc] dailydiv run scoreboard players set @s dailydiv4 11
-execute if score @s dailydiv < @e[limit=1,tag=sc] dailydiv run scoreboard players set @s dailydiv5 11
-execute if score @s dailydiv < @e[limit=1,tag=sc] dailydiv run scoreboard players set @s dailydiv6 11
-execute if score @s dailydiv < @e[limit=1,tag=sc] dailydiv run scoreboard players set @s dailydiv7 11
+execute if score @s dailydiv < @e[limit=1,tag=sc] dailydiv run scoreboard players set @s dailydiv1 12
+execute if score @s dailydiv < @e[limit=1,tag=sc] dailydiv run scoreboard players set @s dailydiv2 12
+execute if score @s dailydiv < @e[limit=1,tag=sc] dailydiv run scoreboard players set @s dailydiv3 12
+execute if score @s dailydiv < @e[limit=1,tag=sc] dailydiv run scoreboard players set @s dailydiv4 12
+execute if score @s dailydiv < @e[limit=1,tag=sc] dailydiv run scoreboard players set @s dailydiv5 12
+execute if score @s dailydiv < @e[limit=1,tag=sc] dailydiv run scoreboard players set @s dailydiv6 12
+execute if score @s dailydiv < @e[limit=1,tag=sc] dailydiv run scoreboard players set @s dailydiv7 12
 execute if score @s dailydiv < @e[limit=1,tag=sc] dailydiv run scoreboard players set @s dailydiv8 0
+execute if score @s dailydiv < @e[limit=1,tag=sc] dailydiv run scoreboard players set @s dailydiv1S 1
+execute if score @s dailydiv < @e[limit=1,tag=sc] dailydiv run scoreboard players set @s dailydiv2S 1
+execute if score @s dailydiv < @e[limit=1,tag=sc] dailydiv run scoreboard players set @s dailydiv3S 1
+execute if score @s dailydiv < @e[limit=1,tag=sc] dailydiv run scoreboard players set @s dailydiv4S 1
+execute if score @s dailydiv < @e[limit=1,tag=sc] dailydiv run scoreboard players set @s dailydiv5S 1
 execute if score @s dailydiv < @e[limit=1,tag=sc] dailydiv run scoreboard players operation @s dailydiv = @e[limit=1,tag=sc] dailydiv
 #占卜开始
-function skyblock:tool_rng
-execute if score @s dailydiv1 matches 11 run scoreboard players operation @s dailydiv1 = @n[tag=sc] rng11
-function skyblock:tool_rng
-execute if score @s dailydiv2 matches 11 run scoreboard players operation @s dailydiv2 = @n[tag=sc] rng11
-function skyblock:tool_rng
-execute if score @s dailydiv3 matches 11 run scoreboard players operation @s dailydiv3 = @n[tag=sc] rng11
-function skyblock:tool_rng
-execute if score @s dailydiv4 matches 11 run scoreboard players operation @s dailydiv4 = @n[tag=sc] rng11
-function skyblock:tool_rng
-execute if score @s dailydiv5 matches 11 run scoreboard players operation @s dailydiv5 = @n[tag=sc] rng11
-function skyblock:tool_rng
-execute if score @s dailydiv6 matches 11 run scoreboard players operation @s dailydiv6 = @n[tag=sc] rng11
-function skyblock:tool_rng
-execute if score @s dailydiv7 matches 11 run scoreboard players operation @s dailydiv7 = @n[tag=sc] rng11
-function skyblock:tool_rng
-execute if score @s dailydiv8 matches 0 run scoreboard players operation @s dailydiv8 = @n[tag=sc] rng6_36
+execute store result score @s rng1 run random value 1..12
+execute if score @s dailydiv1 matches 12 run scoreboard players operation @s dailydiv1 = @s rng1
+execute store result score @s rng1 run random value 1..12
+execute if score @s dailydiv2 matches 12 run scoreboard players operation @s dailydiv2 = @s rng1
+execute store result score @s rng1 run random value 1..12
+execute if score @s dailydiv3 matches 12 run scoreboard players operation @s dailydiv3 = @s rng1
+execute store result score @s rng1 run random value 1..12
+execute if score @s dailydiv4 matches 12 run scoreboard players operation @s dailydiv4 = @s rng1
+execute store result score @s rng1 run random value 1..12
+execute if score @s dailydiv5 matches 12 run scoreboard players operation @s dailydiv5 = @s rng1
+execute store result score @s rng1 run random value 1..12
+execute if score @s dailydiv6 matches 12 run scoreboard players operation @s dailydiv6 = @s rng1
+execute store result score @s rng1 run random value 1..12
+execute if score @s dailydiv7 matches 12 run scoreboard players operation @s dailydiv7 = @s rng1
+execute store result score @s rng1 run random value 6..36
+execute if score @s dailydiv8 matches 0 run scoreboard players operation @s dailydiv8 = @s rng1
+execute store result score @s rng1 run random value 2..5
+execute if score @s dailydiv1S matches 1 run scoreboard players operation @s dailydiv1S = @s rng1
+execute store result score @s rng1 run random value 2..5
+execute if score @s dailydiv2S matches 1 run scoreboard players operation @s dailydiv2S = @s rng1
+execute store result score @s rng1 run random value 2..5
+execute if score @s dailydiv3S matches 1 run scoreboard players operation @s dailydiv3S = @s rng1
+execute store result score @s rng1 run random value 2..6
+execute if score @s dailydiv4S matches 1 run scoreboard players operation @s dailydiv4S = @s rng1
+execute store result score @s rng1 run random value 2..5
+execute if score @s dailydiv5S matches 1 run scoreboard players operation @s dailydiv5S = @s rng1
 #告知占卜结果
 tellraw @s {"text":"   『御神签』今日运势","color":"gold","bold":true}
 tellraw @s {"text":"     - 健康 -","color":"white"}
@@ -117,4 +147,18 @@ tellraw @s {"text":"     - 财富 -","color":"white"}
 scoreboard players operation @s dailydiv_w = @s dailydiv7
 scoreboard players operation @s dailydiv_wy = @s dailydiv7y
 function skyblock:city_utility_divination_result
+
+execute if score @s dailydiv1S matches 2 run tellraw @s {"text":"     ◇ 寻找中的失物：似乎就在你触手可及的地方","color":"white"}
+execute if score @s dailydiv1S matches 3 run tellraw @s {"text":"     ◇ 寻找中的失物：近期或许可以找到","color":"white"}
+execute if score @s dailydiv1S matches 4 run tellraw @s {"text":"     ◇ 寻找中的失物：近期或许找不到","color":"white"}
+execute if score @s dailydiv1S matches 5 run tellraw @s {"text":"     ◇ 寻找中的失物：放弃似乎是更好的选择","color":"white"}
+execute if score @s dailydiv2S matches 2 run tellraw @s {"text":"     ◇ 等待的人：似乎就在你的日常生活之中","color":"white"}
+execute if score @s dailydiv2S matches 3 run tellraw @s {"text":"     ◇ 等待的人：近期或许会出现","color":"white"}
+execute if score @s dailydiv2S matches 4 run tellraw @s {"text":"     ◇ 等待的人：近期或许不会出现","color":"white"}
+execute if score @s dailydiv2S matches 5 run tellraw @s {"text":"     ◇ 等待的人：你与对方似乎暂无缘分的交集","color":"white"}
+execute if score @s dailydiv3S matches 2 run tellraw @s {"text":"     ◇ 下一场旅行：可能要做好遇到突发情况的准备","color":"white"}
+execute if score @s dailydiv3S matches 3 run tellraw @s {"text":"     ◇ 下一场旅行：或许会一帆风顺","color":"white"}
+execute if score @s dailydiv3S matches 4 run tellraw @s {"text":"     ◇ 下一场旅行：可能要做好出发或归来的日程推迟或提前的准备","color":"white"}
+execute if score @s dailydiv3S matches 5 run tellraw @s {"text":"     ◇ 下一场旅行：可能需要破财消灾","color":"white"}
+execute if score @s dailydiv3S matches 5 run tellraw @s {"text":"     ◇ 下一场旅行：可能需要看管好自己的随身财物","color":"white"}
 scoreboard players set @s MultiMenu 0
