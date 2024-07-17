@@ -55,9 +55,9 @@ execute unless score @s dailydiv2S matches -999.. run scoreboard players set @s 
 execute unless score @s dailydiv3 matches -999.. run scoreboard players set @s dailydiv3 12
 execute unless score @s dailydiv3S matches -999.. run scoreboard players set @s dailydiv3S 1
 execute unless score @s dailydiv4 matches -999.. run scoreboard players set @s dailydiv4 12
-execute unless score @s dailydiv4S matches -999.. run scoreboard players set @s dailydiv4S 12
+execute unless score @s dailydiv4S matches -999.. run scoreboard players set @s dailydiv4S 1
 execute unless score @s dailydiv5 matches -999.. run scoreboard players set @s dailydiv5 12
-execute unless score @s dailydiv5S matches -999.. run scoreboard players set @s dailydiv5S 12
+execute unless score @s dailydiv5S matches -999.. run scoreboard players set @s dailydiv5S 1
 execute unless score @s dailydiv6 matches -999.. run scoreboard players set @s dailydiv6 12
 execute unless score @s dailydiv7 matches -999.. run scoreboard players set @s dailydiv7 12
 execute unless score @s dailydiv1y matches -999.. run scoreboard players set @s dailydiv1y 12
