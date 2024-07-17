@@ -166,5 +166,9 @@ execute if score @s dailydiv4S matches 3 run tellraw @s {"text":"   ◇ 恋爱�
 execute if score @s dailydiv4S matches 4 run tellraw @s {"text":"   ◇ 恋爱走向：近期或许会有微小的坎坷","color":"white"}
 execute if score @s dailydiv4S matches 5 run tellraw @s {"text":"   ◇ 恋爱走向：或许近期需要少去在意","color":"white"}
 execute if score @s dailydiv4S matches 6 run tellraw @s {"text":"   ◇ 恋爱走向：或许该送出某种形式的礼物了","color":"white"}
+execute if score @s dailydiv5S matches 2 run tellraw @s {"text":"   ◇ 正在纠结的开支：或许该付出这笔钱财","color":"white"}
+execute if score @s dailydiv5S matches 3 run tellraw @s {"text":"   ◇ 正在纠结的开支：或许不该付出这笔钱财","color":"white"}
+execute if score @s dailydiv5S matches 4 run tellraw @s {"text":"   ◇ 正在纠结的开支：或许找错了付出钱财的方向","color":"white"}
+execute if score @s dailydiv5S matches 5 run tellraw @s {"text":"   ◇ 正在纠结的开支：或许付出了也无法获得想要的结果","color":"white"}
 scoreboard players set @s MultiMenu 0
 scoreboard players set @s If_TalkVill 0
