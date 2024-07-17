@@ -26,7 +26,7 @@ execute as @a[tag=SEAPT,tag=e_w_02] at @s if entity @s[scores={sea_cursor=..0}] 
 execute as @a[tag=SEAPT,tag=!e_w_03] at @s if entity @s[nbt={Inventory:[{id:"minecraft:crossbow"}]}] run playsound minecraft:ui.toast.challenge_complete player @s ~ ~ ~ 1 1
 execute as @a[tag=SEAPT,tag=!e_w_03] at @s if entity @s[nbt={Inventory:[{id:"minecraft:crossbow"}]}] run tellraw @s {"text": "获得新武器：工程弩","color": "dark_red"}
 execute as @a[tag=SEAPT,tag=!e_w_03] at @s if entity @s[nbt={Inventory:[{id:"minecraft:crossbow"}]}] run tellraw @s {"text": "远程武器，原本是用于射出钩缆的工具，搭载弩箭后也可作攻击用途。","color": "white"}
-execute as @a[tag=SEAPT,tag=!e_w_03] at @s if entity @s[nbt={Inventory:[{id:"minecraft:crossbow"}]}] run tag @s add e_w_02
+execute as @a[tag=SEAPT,tag=!e_w_03] at @s if entity @s[nbt={Inventory:[{id:"minecraft:crossbow"}]}] run tag @s add e_w_03
 execute as @a[tag=SEAPT,tag=e_w_03] store result score @s sea_cursor run clear @s crossbow 0
 execute as @a[tag=SEAPT,tag=e_w_03] at @s if entity @s[scores={sea_cursor=..0}] run give @s crossbow[custom_name='{"text":"工程弩","italic":false,"color":"red"}',custom_data={sea_crossbow:true},unbreakable={}]
 
