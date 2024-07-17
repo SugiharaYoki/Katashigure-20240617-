@@ -21,7 +21,7 @@ execute if score @s[nbt={Inventory:[{id:"minecraft:iron_hoe",components:{"minecr
 execute if score @s[nbt={Inventory:[{id:"minecraft:iron_hoe",components:{"minecraft:custom_data":{sea_crowbar3:true}}}]}] sea_crafter matches 10010 as @s[scores={sea_i_emerald=50..}] run tag @s add sea_purchase_pass
 execute if entity @s[tag=sea_purchase_pass] run playsound minecraft:item.armor.equip_iron neutral @s ~ ~ ~ 100
 execute if entity @s[tag=sea_purchase_pass] run clear @s iron_hoe[custom_data={sea_crowbar3:true}] 1
-execute if entity @s[tag=sea_purchase_pass] run give @s netherite_hoe[custom_name='{"text":"重工业撬棍","italic":false,"color":"red"}',custom_data={sea_crowbar3:true},attribute_modifiers=[{type:"generic.attack_damage",slot:"hand",id:"sea_weapon:007_01",amount:4.0,operation:"add_value"},{type:"generic.attack_speed",slot:"hand",id:"sea_weapon:007_02",amount:-1.4,operation:"add_value"}],unbreakable={}]
+execute if entity @s[tag=sea_purchase_pass] run give @s netherite_hoe[custom_name='{"text":"重工业撬棍","italic":false,"color":"red"}',custom_data={sea_crowbar3:true},attribute_modifiers=[{type:"generic.attack_damage",slot:"hand",id:"sea_weapon:007_01",amount:4.0,operation:"add_value"},{type:"generic.attack_speed",slot:"hand",id:"sea_weapon:007_02",amount:-1.2,operation:"add_value"}],unbreakable={}]
 execute if entity @s[tag=sea_purchase_pass] run clear @s emerald 50
 tag @s remove sea_purchase_pass
 
