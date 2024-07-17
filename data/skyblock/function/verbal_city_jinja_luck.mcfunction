@@ -162,3 +162,4 @@ execute if score @s dailydiv3S matches 4 run tellraw @s {"text":"     ◇ 下一
 execute if score @s dailydiv3S matches 5 run tellraw @s {"text":"     ◇ 下一场旅行：可能需要破财消灾","color":"white"}
 execute if score @s dailydiv3S matches 5 run tellraw @s {"text":"     ◇ 下一场旅行：可能需要看管好自己的随身财物","color":"white"}
 scoreboard players set @s MultiMenu 0
+scoreboard players set @s If_TalkVill 0
