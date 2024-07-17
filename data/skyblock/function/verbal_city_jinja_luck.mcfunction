@@ -48,25 +48,25 @@ execute unless entity @e[limit=1,tag=sc,scores={dailydiv5S=-1..}] run scoreboard
 execute unless entity @e[limit=1,tag=sc,scores={dailylogin=-1..}] run scoreboard players set @n[tag=sc] dailylogin 0
 execute unless entity @e[limit=1,tag=sc,scores={dailylogin_c=-1..}] run scoreboard players set @n[tag=sc] dailylogin_c 0
 #玩家日数刷新
-execute if score @s dailydiv1 matches 0 run scoreboard players set @s dailydiv1 12
-execute if score @s dailydiv1 matches 0 run scoreboard players set @s dailydiv1S 1
-execute if score @s dailydiv2 matches 0 run scoreboard players set @s dailydiv2 12
-execute if score @s dailydiv1 matches 0 run scoreboard players set @s dailydiv2S 1
-execute if score @s dailydiv3 matches 0 run scoreboard players set @s dailydiv3 12
-execute if score @s dailydiv1 matches 0 run scoreboard players set @s dailydiv3S 1
-execute if score @s dailydiv4 matches 0 run scoreboard players set @s dailydiv4 12
-execute if score @s dailydiv4 matches 0 run scoreboard players set @s dailydiv4S 12
-execute if score @s dailydiv5 matches 0 run scoreboard players set @s dailydiv5 12
-execute if score @s dailydiv5 matches 0 run scoreboard players set @s dailydiv5S 12
-execute if score @s dailydiv6 matches 0 run scoreboard players set @s dailydiv6 12
-execute if score @s dailydiv7 matches 0 run scoreboard players set @s dailydiv7 12
-execute if score @s dailydiv1y matches 0 run scoreboard players set @s dailydiv1y 12
-execute if score @s dailydiv2y matches 0 run scoreboard players set @s dailydiv2y 12
-execute if score @s dailydiv3y matches 0 run scoreboard players set @s dailydiv3y 12
-execute if score @s dailydiv4y matches 0 run scoreboard players set @s dailydiv4y 12
-execute if score @s dailydiv5y matches 0 run scoreboard players set @s dailydiv5y 12
-execute if score @s dailydiv6y matches 0 run scoreboard players set @s dailydiv6y 12
-execute if score @s dailydiv7y matches 0 run scoreboard players set @s dailydiv7y 12
+execute unless score @s dailydiv1 matches -999.. run scoreboard players set @s dailydiv1 12
+execute unless score @s dailydiv1 matches -999.. run scoreboard players set @s dailydiv1S 1
+execute unless score @s dailydiv2 matches -999.. run scoreboard players set @s dailydiv2 12
+execute unless score @s dailydiv1 matches -999.. run scoreboard players set @s dailydiv2S 1
+execute unless score @s dailydiv3 matches -999.. run scoreboard players set @s dailydiv3 12
+execute unless score @s dailydiv1 matches -999.. run scoreboard players set @s dailydiv3S 1
+execute unless score @s dailydiv4 matches -999.. run scoreboard players set @s dailydiv4 12
+execute unless score @s dailydiv4 matches -999.. run scoreboard players set @s dailydiv4S 12
+execute unless score @s dailydiv5 matches -999.. run scoreboard players set @s dailydiv5 12
+execute unless score @s dailydiv5 matches -999.. run scoreboard players set @s dailydiv5S 12
+execute unless score @s dailydiv6 matches -999.. run scoreboard players set @s dailydiv6 12
+execute unless score @s dailydiv7 matches -999.. run scoreboard players set @s dailydiv7 12
+execute unless score @s dailydiv1y matches -999.. run scoreboard players set @s dailydiv1y 12
+execute unless score @s dailydiv2y matches -999.. run scoreboard players set @s dailydiv2y 12
+execute unless score @s dailydiv3y matches -999.. run scoreboard players set @s dailydiv3y 12
+execute unless score @s dailydiv4y matches -999.. run scoreboard players set @s dailydiv4y 12
+execute unless score @s dailydiv5y matches -999.. run scoreboard players set @s dailydiv5y 12
+execute unless score @s dailydiv6y matches -999.. run scoreboard players set @s dailydiv6y 12
+execute unless score @s dailydiv7y matches -999.. run scoreboard players set @s dailydiv7y 12
 execute unless entity @s[scores={dailydiv=-1..}] run scoreboard players set @s dailydiv 0
 execute if score @s dailydiv < @e[limit=1,tag=sc] dailydiv run scoreboard players operation @s dailydiv1y = @s dailydiv1
 execute if score @s dailydiv < @e[limit=1,tag=sc] dailydiv run scoreboard players operation @s dailydiv2y = @s dailydiv2
