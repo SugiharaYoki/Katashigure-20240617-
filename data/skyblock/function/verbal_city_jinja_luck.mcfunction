@@ -111,14 +111,14 @@ execute store result score @s rng1 run random value 2..5
 execute if score @s dailydiv1S matches 1 run scoreboard players operation @s dailydiv1S = @s rng1
 execute store result score @s rng1 run random value 2..5
 execute if score @s dailydiv2S matches 1 run scoreboard players operation @s dailydiv2S = @s rng1
-execute store result score @s rng1 run random value 2..5
+execute store result score @s rng1 run random value 2..6
 execute if score @s dailydiv3S matches 1 run scoreboard players operation @s dailydiv3S = @s rng1
 execute store result score @s rng1 run random value 2..6
 execute if score @s dailydiv4S matches 1 run scoreboard players operation @s dailydiv4S = @s rng1
 execute store result score @s rng1 run random value 2..5
 execute if score @s dailydiv5S matches 1 run scoreboard players operation @s dailydiv5S = @s rng1
 #告知占卜结果
-tellraw @s {"text":"   『御神签』今日运势","color":"gold","bold":true}
+tellraw @s {"text":"  『御神签』今日运势","color":"gold","bold":true}
 tellraw @s {"text":"     - 健康 -","color":"white"}
 scoreboard players operation @s dailydiv_w = @s dailydiv1
 scoreboard players operation @s dailydiv_wy = @s dailydiv1y
@@ -147,19 +147,24 @@ tellraw @s {"text":"     - 财富 -","color":"white"}
 scoreboard players operation @s dailydiv_w = @s dailydiv7
 scoreboard players operation @s dailydiv_wy = @s dailydiv7y
 function skyblock:city_utility_divination_result
-
-execute if score @s dailydiv1S matches 2 run tellraw @s {"text":"     ◇ 寻找中的失物：似乎就在你触手可及的地方","color":"white"}
-execute if score @s dailydiv1S matches 3 run tellraw @s {"text":"     ◇ 寻找中的失物：近期或许可以找到","color":"white"}
-execute if score @s dailydiv1S matches 4 run tellraw @s {"text":"     ◇ 寻找中的失物：近期或许找不到","color":"white"}
-execute if score @s dailydiv1S matches 5 run tellraw @s {"text":"     ◇ 寻找中的失物：放弃似乎是更好的选择","color":"white"}
-execute if score @s dailydiv2S matches 2 run tellraw @s {"text":"     ◇ 等待的人：似乎就在你的日常生活之中","color":"white"}
-execute if score @s dailydiv2S matches 3 run tellraw @s {"text":"     ◇ 等待的人：近期或许会出现","color":"white"}
-execute if score @s dailydiv2S matches 4 run tellraw @s {"text":"     ◇ 等待的人：近期或许不会出现","color":"white"}
-execute if score @s dailydiv2S matches 5 run tellraw @s {"text":"     ◇ 等待的人：你与对方似乎暂无缘分的交集","color":"white"}
-execute if score @s dailydiv3S matches 2 run tellraw @s {"text":"     ◇ 下一场旅行：可能要做好遇到突发情况的准备","color":"white"}
-execute if score @s dailydiv3S matches 3 run tellraw @s {"text":"     ◇ 下一场旅行：或许会一帆风顺","color":"white"}
-execute if score @s dailydiv3S matches 4 run tellraw @s {"text":"     ◇ 下一场旅行：可能要做好出发或归来的日程推迟或提前的准备","color":"white"}
-execute if score @s dailydiv3S matches 5 run tellraw @s {"text":"     ◇ 下一场旅行：可能需要破财消灾","color":"white"}
-execute if score @s dailydiv3S matches 5 run tellraw @s {"text":"     ◇ 下一场旅行：可能需要看管好自己的随身财物","color":"white"}
+tellraw @s {"text":"","color":"white"}
+execute if score @s dailydiv1S matches 2 run tellraw @s {"text":"   ◇ 寻找中的失物：似乎就在你触手可及的地方","color":"white"}
+execute if score @s dailydiv1S matches 3 run tellraw @s {"text":"   ◇ 寻找中的失物：近期或许可以找到","color":"white"}
+execute if score @s dailydiv1S matches 4 run tellraw @s {"text":"   ◇ 寻找中的失物：近期或许找不到","color":"white"}
+execute if score @s dailydiv1S matches 5 run tellraw @s {"text":"   ◇ 寻找中的失物：放弃似乎是更好的选择","color":"white"}
+execute if score @s dailydiv2S matches 2 run tellraw @s {"text":"   ◇ 等待的人：似乎就在你的日常生活之中","color":"white"}
+execute if score @s dailydiv2S matches 3 run tellraw @s {"text":"   ◇ 等待的人：近期或许会出现","color":"white"}
+execute if score @s dailydiv2S matches 4 run tellraw @s {"text":"   ◇ 等待的人：近期或许不会出现","color":"white"}
+execute if score @s dailydiv2S matches 5 run tellraw @s {"text":"   ◇ 等待的人：你与对方似乎暂无缘分的交集","color":"white"}
+execute if score @s dailydiv3S matches 2 run tellraw @s {"text":"   ◇ 下一场旅行：可能要做好遇到突发情况的准备","color":"white"}
+execute if score @s dailydiv3S matches 3 run tellraw @s {"text":"   ◇ 下一场旅行：或许会一帆风顺","color":"white"}
+execute if score @s dailydiv3S matches 4 run tellraw @s {"text":"   ◇ 下一场旅行：可能要做好出发或归来的日程推迟或提前的准备","color":"white"}
+execute if score @s dailydiv3S matches 5 run tellraw @s {"text":"   ◇ 下一场旅行：可能需要破财消灾","color":"white"}
+execute if score @s dailydiv3S matches 6 run tellraw @s {"text":"   ◇ 下一场旅行：可能需要看管好自己的随身财物","color":"white"}
+execute if score @s dailydiv4S matches 2 run tellraw @s {"text":"   ◇ 恋爱走向：近期可能要多上心一些","color":"white"}
+execute if score @s dailydiv4S matches 3 run tellraw @s {"text":"   ◇ 恋爱走向：近期或许会一帆风顺","color":"white"}
+execute if score @s dailydiv4S matches 4 run tellraw @s {"text":"   ◇ 恋爱走向：近期或许会有微小的坎坷","color":"white"}
+execute if score @s dailydiv4S matches 5 run tellraw @s {"text":"   ◇ 恋爱走向：或许近期需要少去在意","color":"white"}
+execute if score @s dailydiv4S matches 6 run tellraw @s {"text":"   ◇ 恋爱走向：或许该送出某种形式的礼物了","color":"white"}
 scoreboard players set @s MultiMenu 0
 scoreboard players set @s If_TalkVill 0
