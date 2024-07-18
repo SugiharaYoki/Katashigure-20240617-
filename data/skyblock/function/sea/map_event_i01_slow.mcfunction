@@ -179,8 +179,7 @@ execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=1144}] positione
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=1144}] run summon evoker 90142.0 122 119 {DeathLootTable:"skyblock:sea_pillager1",Tags:["SEAmob","SEAtestfor1"],attributes:[{id:"generic.armor",base:1.0},{id:"generic.movement_speed",base:0.0},{id:"generic.max_health",base:100}],Health:100,ArmorItems:[{id:leather_boots,count:1},{id:leather_leggings,count:1},{id:leather_chestplate,count:1},{id:leather_helmet,count:1}],ArmorDropChances:[0f,0f,0f,0f],Silent:true,NoAI:true,Rotation:[180,0],PersistenceRequired:true}
 execute store result score @n[tag=SEAtestfor1] sea_boss1_hp run data get entity @n[tag=SEAtestfor1] Health
 execute if entity @a[tag=SEAPT] as @n[tag=SEAtestfor1] at @s run tp @s ~ ~ ~ facing 90142 123.0 117
-execute store result score @n[tag=SEAboss1] sea_boss1_hp run data get entity @n[tag=SEAboss1] Health
-
+execute if entity @a[tag=SEAPT] as @n[tag=SEAtestfor1,scores={sea_boss1_hp=50..99}] at @s run function skyblock:sea/e/ev001
 
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=2000..2400}] run scoreboard players add @s sea_4temp2 1
 execute as @a[tag=SEAPT,x=90146,y=122,z=106,distance=0..3] run scoreboard players set @n[tag=sc,scores={sea_4temp2=..1999}] sea_4temp2 2000
@@ -302,6 +301,7 @@ execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=3001}] positione
 
 
 
+execute store result score @n[tag=SEAboss1] sea_boss1_hp run data get entity @n[tag=SEAboss1] Health
 execute store result score @n[tag=SEAboss1] rng1 run random value 1..20
 execute store result score @n[tag=SEAboss1] rng2 run random value 1..350
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=4000..5000}] as @n[tag=SEAboss1,scores={rng2=1..6}] at @s run playsound minecraft:entity.zombie_villager.ambient master @a ~ ~ ~ 3 0.8
