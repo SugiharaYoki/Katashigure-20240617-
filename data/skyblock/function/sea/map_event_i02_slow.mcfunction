@@ -133,8 +133,8 @@ execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=505}] positioned
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=505}] positioned 90100 128 120 run function skyblock:sea/m/silverfish
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=505}] positioned 90100 128 120 run function skyblock:sea/m/silverfish
 
-particle minecraft:snowflake 90139.33 132.00 128.33 6 0 6 0.0 2
-particle minecraft:snowflake 90141 132 138 6 0 6 0.0 2
+particle minecraft:snowflake 90139.33 132.00 128.33 7 0 6 0.0 2
+particle minecraft:snowflake 90141 132 138 6 0 6 0.0 3
 
 
 
