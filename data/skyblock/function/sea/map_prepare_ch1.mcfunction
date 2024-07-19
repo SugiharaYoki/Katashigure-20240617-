@@ -238,7 +238,11 @@ setblock 90085 122 146 chest[facing=north]
 setblock 90058 103 142 minecraft:air
 
 
-
+setblock 90135 124 126 minecraft:redstone_lamp[lit=false]
+setblock 90135 124 124 minecraft:redstone_lamp[lit=false]
+setblock 90135 124 122 minecraft:redstone_lamp[lit=false]
+setblock 90135 124 120 minecraft:redstone_lamp[lit=false]
+setblock 90135 124 118 minecraft:redstone_lamp[lit=false]
 
 
 fill 90076 105 141 90076 103 139 minecraft:waxed_copper_grate
