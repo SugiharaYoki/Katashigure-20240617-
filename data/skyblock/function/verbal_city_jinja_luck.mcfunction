@@ -92,31 +92,31 @@ execute if score @s dailydiv < @n[tag=sc] dailydiv run scoreboard players set @s
 execute if score @s dailydiv < @n[tag=sc] dailydiv run scoreboard players operation @s dailydiv = @n[tag=sc] dailydiv
 #占卜开始
 execute store result score @s rng1 run random value 1..11
-execute if score @s dailydiv1 matches 12 run scoreboard players operation @s dailydiv1 = @s rng1
+execute if score @s dailydiv1 matches 12.. run scoreboard players operation @s dailydiv1 = @s rng1
 execute store result score @s rng1 run random value 1..11
-execute if score @s dailydiv2 matches 12 run scoreboard players operation @s dailydiv2 = @s rng1
+execute if score @s dailydiv2 matches 12.. run scoreboard players operation @s dailydiv2 = @s rng1
 execute store result score @s rng1 run random value 1..11
-execute if score @s dailydiv3 matches 12 run scoreboard players operation @s dailydiv3 = @s rng1
+execute if score @s dailydiv3 matches 12.. run scoreboard players operation @s dailydiv3 = @s rng1
 execute store result score @s rng1 run random value 1..11
-execute if score @s dailydiv4 matches 12 run scoreboard players operation @s dailydiv4 = @s rng1
+execute if score @s dailydiv4 matches 12.. run scoreboard players operation @s dailydiv4 = @s rng1
 execute store result score @s rng1 run random value 1..11
-execute if score @s dailydiv5 matches 12 run scoreboard players operation @s dailydiv5 = @s rng1
+execute if score @s dailydiv5 matches 12.. run scoreboard players operation @s dailydiv5 = @s rng1
 execute store result score @s rng1 run random value 1..11
-execute if score @s dailydiv6 matches 12 run scoreboard players operation @s dailydiv6 = @s rng1
+execute if score @s dailydiv6 matches 12.. run scoreboard players operation @s dailydiv6 = @s rng1
 execute store result score @s rng1 run random value 1..11
-execute if score @s dailydiv7 matches 12 run scoreboard players operation @s dailydiv7 = @s rng1
+execute if score @s dailydiv7 matches 12.. run scoreboard players operation @s dailydiv7 = @s rng1
 execute store result score @s rng1 run random value 6..36
 execute if score @s dailydiv8 matches 0 run scoreboard players operation @s dailydiv8 = @s rng1
 execute store result score @s rng1 run random value 2..5
-execute if score @s dailydiv1S matches 1 run scoreboard players operation @s dailydiv1S = @s rng1
+execute if score @s dailydiv1S matches ..1 run scoreboard players operation @s dailydiv1S = @s rng1
 execute store result score @s rng1 run random value 2..5
-execute if score @s dailydiv2S matches 1 run scoreboard players operation @s dailydiv2S = @s rng1
+execute if score @s dailydiv2S matches ..1 run scoreboard players operation @s dailydiv2S = @s rng1
 execute store result score @s rng1 run random value 2..6
-execute if score @s dailydiv3S matches 1 run scoreboard players operation @s dailydiv3S = @s rng1
+execute if score @s dailydiv3S matches ..1 run scoreboard players operation @s dailydiv3S = @s rng1
 execute store result score @s rng1 run random value 2..6
-execute if score @s dailydiv4S matches 1 run scoreboard players operation @s dailydiv4S = @s rng1
+execute if score @s dailydiv4S matches ..1 run scoreboard players operation @s dailydiv4S = @s rng1
 execute store result score @s rng1 run random value 2..5
-execute if score @s dailydiv5S matches 1 run scoreboard players operation @s dailydiv5S = @s rng1
+execute if score @s dailydiv5S matches ..1 run scoreboard players operation @s dailydiv5S = @s rng1
 #告知占卜结果
 tellraw @s {"text":"  『御神签』今日运势","color":"gold","bold":true}
 tellraw @s {"text":"     - 健康 -","color":"white"}
