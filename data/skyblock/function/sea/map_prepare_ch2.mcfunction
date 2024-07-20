@@ -74,7 +74,7 @@ summon marker 90129 128 130 {Tags:["SEAmagma1"]}
 
 execute as @e[tag=SEAmagma1,type=marker] at @s if block ~ ~ ~ air run setblock ~ ~ ~ basalt
 
-fill 90140 128 134 90141 129 134 snow
+fill 90140 128 134 90141 129 134 snow_block
 fill 90141 131 141 90141 131 145 minecraft:waxed_oxidized_copper_bulb[lit=false]
 fill 90139 128 146 90139 129 146 minecraft:polished_diorite
 setblock 90139 133 144 air

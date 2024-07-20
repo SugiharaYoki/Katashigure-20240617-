@@ -124,7 +124,7 @@ execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=439}] run setblo
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=445}] run setblock 90123 129 131 minecraft:redstone_wall_torch[facing=north]
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=445}] run setblock 90111 129 130 minecraft:redstone_wall_torch[facing=north]
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=410}] run playsound minecraft:block.fire.ambient ambient @a 90111.53 129.47 130.69 10 1.5
-
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=405..410}] run playsound minecraft:entity.minecart.riding ambient @a 90139.46 132.00 129.65 3 0.7
 
 execute as @a[tag=SEAPT,x=90111,y=128,z=129,distance=0..2] unless entity @s[scores={sea_4temp2=500..}] run scoreboard players set @s sea_4temp2 500
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=500..510}] run scoreboard players add @s sea_4temp2 1
@@ -133,7 +133,8 @@ execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=505}] positioned
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=505}] positioned 90100 128 120 run function skyblock:sea/m/silverfish
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=505}] positioned 90100 128 120 run function skyblock:sea/m/silverfish
 
-
+particle minecraft:snowflake 90139.33 132.00 128.33 7 0 6 0.0 2
+particle minecraft:snowflake 90141 132 138 6 0 6 0.0 3
 
 
 
