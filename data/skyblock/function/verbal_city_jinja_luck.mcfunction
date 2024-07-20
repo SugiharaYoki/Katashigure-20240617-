@@ -68,42 +68,42 @@ execute unless score @s dailydiv5y matches -999.. run scoreboard players set @s 
 execute unless score @s dailydiv6y matches -999.. run scoreboard players set @s dailydiv6y 12
 execute unless score @s dailydiv7y matches -999.. run scoreboard players set @s dailydiv7y 12
 execute unless entity @s[scores={dailydiv=-1..}] run scoreboard players set @s dailydiv 0
-execute if score @s dailydiv < @e[limit=1,tag=sc] dailydiv run scoreboard players operation @s dailydiv1y = @s dailydiv1
-execute if score @s dailydiv < @e[limit=1,tag=sc] dailydiv run scoreboard players operation @s dailydiv2y = @s dailydiv2
-execute if score @s dailydiv < @e[limit=1,tag=sc] dailydiv run scoreboard players operation @s dailydiv3y = @s dailydiv3
-execute if score @s dailydiv < @e[limit=1,tag=sc] dailydiv run scoreboard players operation @s dailydiv4y = @s dailydiv4
-execute if score @s dailydiv < @e[limit=1,tag=sc] dailydiv run scoreboard players operation @s dailydiv5y = @s dailydiv5
-execute if score @s dailydiv < @e[limit=1,tag=sc] dailydiv run scoreboard players operation @s dailydiv6y = @s dailydiv6
-execute if score @s dailydiv < @e[limit=1,tag=sc] dailydiv run scoreboard players operation @s dailydiv7y = @s dailydiv7
-execute if score @s dailydiv < @e[limit=1,tag=sc] dailydiv run scoreboard players operation @s dailydiv8y = @s dailydiv8
-execute if score @s dailydiv < @e[limit=1,tag=sc] dailydiv run scoreboard players set @s dailydiv1 12
-execute if score @s dailydiv < @e[limit=1,tag=sc] dailydiv run scoreboard players set @s dailydiv2 12
-execute if score @s dailydiv < @e[limit=1,tag=sc] dailydiv run scoreboard players set @s dailydiv3 12
-execute if score @s dailydiv < @e[limit=1,tag=sc] dailydiv run scoreboard players set @s dailydiv4 12
-execute if score @s dailydiv < @e[limit=1,tag=sc] dailydiv run scoreboard players set @s dailydiv5 12
-execute if score @s dailydiv < @e[limit=1,tag=sc] dailydiv run scoreboard players set @s dailydiv6 12
-execute if score @s dailydiv < @e[limit=1,tag=sc] dailydiv run scoreboard players set @s dailydiv7 12
-execute if score @s dailydiv < @e[limit=1,tag=sc] dailydiv run scoreboard players set @s dailydiv8 0
-execute if score @s dailydiv < @e[limit=1,tag=sc] dailydiv run scoreboard players set @s dailydiv1S 1
-execute if score @s dailydiv < @e[limit=1,tag=sc] dailydiv run scoreboard players set @s dailydiv2S 1
-execute if score @s dailydiv < @e[limit=1,tag=sc] dailydiv run scoreboard players set @s dailydiv3S 1
-execute if score @s dailydiv < @e[limit=1,tag=sc] dailydiv run scoreboard players set @s dailydiv4S 1
-execute if score @s dailydiv < @e[limit=1,tag=sc] dailydiv run scoreboard players set @s dailydiv5S 1
-execute if score @s dailydiv < @e[limit=1,tag=sc] dailydiv run scoreboard players operation @s dailydiv = @e[limit=1,tag=sc] dailydiv
+execute if score @s dailydiv < @n[tag=sc] dailydiv run scoreboard players operation @s dailydiv1y = @s dailydiv1
+execute if score @s dailydiv < @n[tag=sc] dailydiv run scoreboard players operation @s dailydiv2y = @s dailydiv2
+execute if score @s dailydiv < @n[tag=sc] dailydiv run scoreboard players operation @s dailydiv3y = @s dailydiv3
+execute if score @s dailydiv < @n[tag=sc] dailydiv run scoreboard players operation @s dailydiv4y = @s dailydiv4
+execute if score @s dailydiv < @n[tag=sc] dailydiv run scoreboard players operation @s dailydiv5y = @s dailydiv5
+execute if score @s dailydiv < @n[tag=sc] dailydiv run scoreboard players operation @s dailydiv6y = @s dailydiv6
+execute if score @s dailydiv < @n[tag=sc] dailydiv run scoreboard players operation @s dailydiv7y = @s dailydiv7
+execute if score @s dailydiv < @n[tag=sc] dailydiv run scoreboard players operation @s dailydiv8y = @s dailydiv8
+execute if score @s dailydiv < @n[tag=sc] dailydiv run scoreboard players set @s dailydiv1 12
+execute if score @s dailydiv < @n[tag=sc] dailydiv run scoreboard players set @s dailydiv2 12
+execute if score @s dailydiv < @n[tag=sc] dailydiv run scoreboard players set @s dailydiv3 12
+execute if score @s dailydiv < @n[tag=sc] dailydiv run scoreboard players set @s dailydiv4 12
+execute if score @s dailydiv < @n[tag=sc] dailydiv run scoreboard players set @s dailydiv5 12
+execute if score @s dailydiv < @n[tag=sc] dailydiv run scoreboard players set @s dailydiv6 12
+execute if score @s dailydiv < @n[tag=sc] dailydiv run scoreboard players set @s dailydiv7 12
+execute if score @s dailydiv < @n[tag=sc] dailydiv run scoreboard players set @s dailydiv8 0
+execute if score @s dailydiv < @n[tag=sc] dailydiv run scoreboard players set @s dailydiv1S 1
+execute if score @s dailydiv < @n[tag=sc] dailydiv run scoreboard players set @s dailydiv2S 1
+execute if score @s dailydiv < @n[tag=sc] dailydiv run scoreboard players set @s dailydiv3S 1
+execute if score @s dailydiv < @n[tag=sc] dailydiv run scoreboard players set @s dailydiv4S 1
+execute if score @s dailydiv < @n[tag=sc] dailydiv run scoreboard players set @s dailydiv5S 1
+execute if score @s dailydiv < @n[tag=sc] dailydiv run scoreboard players operation @s dailydiv = @n[tag=sc] dailydiv
 #占卜开始
-execute store result score @s rng1 run random value 1..12
+execute store result score @s rng1 run random value 1..11
 execute if score @s dailydiv1 matches 12 run scoreboard players operation @s dailydiv1 = @s rng1
-execute store result score @s rng1 run random value 1..12
+execute store result score @s rng1 run random value 1..11
 execute if score @s dailydiv2 matches 12 run scoreboard players operation @s dailydiv2 = @s rng1
-execute store result score @s rng1 run random value 1..12
+execute store result score @s rng1 run random value 1..11
 execute if score @s dailydiv3 matches 12 run scoreboard players operation @s dailydiv3 = @s rng1
-execute store result score @s rng1 run random value 1..12
+execute store result score @s rng1 run random value 1..11
 execute if score @s dailydiv4 matches 12 run scoreboard players operation @s dailydiv4 = @s rng1
-execute store result score @s rng1 run random value 1..12
+execute store result score @s rng1 run random value 1..11
 execute if score @s dailydiv5 matches 12 run scoreboard players operation @s dailydiv5 = @s rng1
-execute store result score @s rng1 run random value 1..12
+execute store result score @s rng1 run random value 1..11
 execute if score @s dailydiv6 matches 12 run scoreboard players operation @s dailydiv6 = @s rng1
-execute store result score @s rng1 run random value 1..12
+execute store result score @s rng1 run random value 1..11
 execute if score @s dailydiv7 matches 12 run scoreboard players operation @s dailydiv7 = @s rng1
 execute store result score @s rng1 run random value 6..36
 execute if score @s dailydiv8 matches 0 run scoreboard players operation @s dailydiv8 = @s rng1
