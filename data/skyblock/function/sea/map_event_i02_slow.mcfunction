@@ -155,7 +155,7 @@ execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=409}] positioned
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=409}] positioned 90139 128 135 run function skyblock:sea/m/skeleton
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=409}] positioned 90139 128 135 run function skyblock:sea/m/skeleton_melee
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=409}] positioned 90139 128 135 if entity @n[tag=sc,scores={sea_player=3..}] run function skyblock:sea/m/skeleton
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=405}] run tellraw @a[tag=SEAPT] {"text": "播报：东冷冻库功率已切换至“最高”。","color": "green"}
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=405}] run tellraw @a[tag=SEAPT] {"text": "播报：东冷冻库冷凝机功率已切换至“最高”。","color": "green"}
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=414}] run tellraw @a[tag=SEAPT] {"text": "播报：系统警告，东区保险丝熔断，请检查东区电路箱。","color": "red"}
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=422}] run tellraw @a[tag=SEAPT] [{"selector":"@r[tag=SEAPT]","color":"white"},{"text":"：我可不是电工。","color":"white"}]
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=447}] run tellraw @a[tag=SEAPT] [{"selector":"@r[tag=SEAPT]","color":"white"},{"text":"：至少冷冻库本身还是运作的，不用去费心思修电箱。","color":"white"}]
@@ -191,7 +191,7 @@ execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp4=400..460}] run s
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp4=405..415}] run playsound minecraft:ambient.soul_sand_valley.additions ambient @a 90139.60 132.00 129.32 10 1.5
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp4=401..410}] run playsound minecraft:block.chain.fall ambient @a 90139.60 132.00 129.32 10 0.5
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp4=405}] run setblock 90132 130 136 minecraft:redstone_lamp[lit=true]
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp4=405}] run tellraw @a[tag=SEAPT] {"text": "播报：南冷冻库功率已切换至“最高”。","color": "green"}
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp4=405}] run tellraw @a[tag=SEAPT] {"text": "播报：南冷冻库冷凝机功率已切换至“最高”。","color": "green"}
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp4=419}] positioned 90130 128 144 run function skyblock:sea/m/skeleton
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp4=419}] positioned 90130 128 144 run function skyblock:sea/m/skeleton
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp4=419}] positioned 90130 128 144 run function skyblock:sea/m/skeleton_melee
