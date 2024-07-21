@@ -5,3 +5,8 @@ execute unless entity @a[tag=OneShotAccept] run setblock -17 23 28 air
 execute unless entity @a[tag=OneShotAccept] run tag @a remove OneShotAccept
 execute unless entity @a[tag=OneShotAccept] run tell @a[tag=Debug] "Oneshot Expiring"
 execute unless entity @a[tag=OneShotAccept] run tag @a remove OneShotInvite
+tag @n[tag=sc] remove OneShotMap001
+tag @n[tag=sc] remove OneShotMap002
+tag @n[tag=sc] remove OneShotMap003
+tag @n[tag=sc] remove OneShotMap004
+tag @n[tag=sc] remove OneShotMap005
