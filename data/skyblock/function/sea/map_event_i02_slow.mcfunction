@@ -36,7 +36,7 @@ execute as @a[tag=SEAPT,x=90111,y=128,z=117,distance=0..2.3,tag=!e_i_14] at @s r
 
 
 execute unless entity @a[tag=SEAPT,tag=e_i_18] run particle minecraft:squid_ink 90117.90 131.00 137.01 1 2 2 0.0 30
-execute unless entity @a[tag=SEAPT,tag=e_i_18] run execute positioned 90117.52 128.00 137.03 as @e[distance=0..4] at @s run damage @s 8 minecraft:hot_floor
+execute unless entity @a[tag=SEAPT,tag=e_i_18] run execute positioned 90117.52 128.00 137.03 as @e[distance=0..3] at @s run damage @s 8 minecraft:hot_floor
 
 execute as @a[tag=SEAPT,x=90112,y=128,z=136,distance=0..2.3,tag=!e_i_17] at @s run tellraw @s {"text": "这毒气让我有不好的预感……我可不要直接走进去。","color": "red"}
 execute as @a[tag=SEAPT,x=90112,y=128,z=136,distance=0..2.3,tag=!e_i_17] at @s run tag @s add e_i_17
@@ -170,7 +170,7 @@ execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=439}] run setblo
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=445}] run setblock 90123 129 131 minecraft:redstone_wall_torch[facing=north]
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=445}] run setblock 90111 129 130 minecraft:redstone_wall_torch[facing=north]
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=410}] run playsound minecraft:block.fire.ambient ambient @a 90111.53 129.47 130.69 10 1.5
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=405..}] run playsound minecraft:entity.minecart.riding ambient @a 90139.46 132.00 129.65 3 0.7
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=405..}] run playsound minecraft:entity.minecart.riding ambient @a 90139.46 132.00 129.65 2 0.7
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=407..424}] run particle minecraft:large_smoke 90149.38 130.10 129.43 0.5 0 0.5 0.0 10
 
 execute as @a[tag=SEAPT,x=90111,y=128,z=129,distance=0..2] unless entity @s[scores={sea_4temp2=500..}] run scoreboard players set @s sea_4temp2 500
@@ -198,7 +198,7 @@ execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp4=419}] positioned
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp4=419}] positioned 90130 128 144 if entity @n[tag=sc,scores={sea_player=2..}] run function skyblock:sea/m/skeleton_melee
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp4=419}] positioned 90130 128 144 if entity @n[tag=sc,scores={sea_player=4..}] run function skyblock:sea/m/skeleton
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp4=423}] run fill 90130 129 144 90130 128 144 air destroy
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp4=405..}] run playsound minecraft:entity.minecart.riding ambient @a 90130 132 141 3 0.7
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp4=405..}] run playsound minecraft:entity.minecart.riding ambient @a 90130 132 141 2 0.7
 
 
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp4=449}] positioned 90129 128 139 run function skyblock:sea/m/skeleton
