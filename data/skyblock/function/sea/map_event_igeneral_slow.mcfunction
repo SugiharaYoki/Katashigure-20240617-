@@ -77,6 +77,9 @@ execute as @e[type=interaction,tag=SEAcrafter] on target run scoreboard players 
 execute as @e[type=interaction,tag=SEAcrafter] on target run scoreboard players set @s sea_crafter 1
 execute as @e[type=interaction,tag=SEAcrafter] run data remove entity @s interaction
 
+execute as @e[type=interaction,tag=SEAaidbox] on target run effect give @s instant_health 1 0 true
+execute as @e[type=interaction,tag=SEAaidbox] run data remove entity @s interaction
+
 
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp1=50..60}] run scoreboard players add @s sea_4temp1 1
 execute if block 90118 123 134 lever[powered=true,facing=east] run scoreboard players set @n[tag=sc,scores={sea_4temp1=..49}] sea_4temp1 50

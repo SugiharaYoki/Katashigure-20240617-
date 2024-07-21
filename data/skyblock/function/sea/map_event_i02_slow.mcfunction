@@ -49,11 +49,26 @@ execute as @a[tag=SEAPT,x=90111,y=128,z=125,distance=0..2.3,tag=!e_i_15] positio
 execute as @a[tag=SEAPT,x=90111,y=128,z=125,distance=0..2.3,tag=!e_i_15] run tag @a[tag=SEAPT] add e_i_15
 
 
+execute as @a[tag=SEAPT,x=90110,y=128,z=150,distance=0..1.3,tag=!e_i_16] at @s run summon minecraft:lightning_bolt 90118 115 174
+execute as @a[tag=SEAPT,x=90110,y=128,z=150,distance=0..1.3,tag=!e_i_16] at @s run summon minecraft:lightning_bolt 90118 115 174
+execute as @a[tag=SEAPT,x=90110,y=128,z=150,distance=0..1.3,tag=!e_i_16] at @s run summon minecraft:lightning_bolt 90118 115 174
+execute as @a[tag=SEAPT,x=90110,y=128,z=150,distance=0..1.3,tag=!e_i_16] at @s run summon minecraft:lightning_bolt 90118 115 174
+execute as @a[tag=SEAPT,x=90110,y=128,z=150,distance=0..1.3,tag=!e_i_16] at @s run playsound minecraft:ambient.soul_sand_valley.additions master @a 90118 115 194 9 0.7
+execute as @a[tag=SEAPT,x=90110,y=128,z=150,distance=0..1.3,tag=!e_i_16] at @s run playsound minecraft:ambient.soul_sand_valley.additions master @a 90118 115 194 9 0.7
+execute as @a[tag=SEAPT,x=90110,y=128,z=150,distance=0..1.3,tag=!e_i_16] at @s run playsound minecraft:ambient.soul_sand_valley.additions master @a 90118 115 194 9 0.7
+execute as @a[tag=SEAPT,x=90110,y=128,z=150,distance=0..1.3,tag=!e_i_16] at @s run playsound minecraft:ambient.soul_sand_valley.additions master @a 90118 115 194 9 0.7
+execute as @a[tag=SEAPT,x=90110,y=128,z=150,distance=0..1.3,tag=!e_i_16] at @s run tag @a[tag=SEAPT] add e_i_16
+
+
+
 execute as @n[tag=sc] if block 90100 129 127 stone_button[powered=true] unless entity @s[scores={sea_4temp6=1..}] run scoreboard players set @s sea_4temp6 1
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp6=1..8}] run scoreboard players add @s sea_4temp6 1
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp6=2}] run fill 90098 128 128 90098 128 127 air
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp6=4}] run fill 90098 129 128 90098 129 127 air
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp6=6}] run fill 90098 130 128 90098 130 127 air
+#execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp6=2}] run fill 90089 128 130 90088 128 130 air
+#execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp6=4}] run fill 90089 129 130 90088 129 130 air
+#execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp6=6}] run fill 90089 130 130 90088 130 130 air
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp6=2}] run playsound minecraft:block.iron_door.open ambient @a 90098 131 128 3 0.3
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp6=4}] run playsound minecraft:block.iron_door.open ambient @a 90098 131 128 3 0.3
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp6=6}] run playsound minecraft:block.iron_door.open ambient @a 90098 131 128 3 0.3

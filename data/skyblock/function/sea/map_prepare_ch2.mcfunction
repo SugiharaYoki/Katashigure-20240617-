@@ -42,6 +42,7 @@ fill 90103 129 103 90104 128 103 minecraft:dark_prismarine
 
 
 summon minecraft:interaction 90113 129.3 113 {CustomName:'[{"text":"多功能工作站"}]',Tags:["SEAcrafter"]}
+summon minecraft:interaction 90112 129.3 144 {CustomName:'[{"text":"固定式治疗仪"}]',Tags:["SEAaidbox"]}
 
 fill 90098 128 128 90098 130 127 iron_block
 
@@ -78,4 +79,11 @@ fill 90140 128 134 90141 129 134 snow_block
 fill 90141 131 141 90141 131 145 minecraft:waxed_oxidized_copper_bulb[lit=false]
 fill 90139 128 146 90139 129 146 minecraft:polished_diorite
 setblock 90139 133 144 air
+setblock 90101 128 150 chest[facing=south]
+item replace block 90101 128 150 container.12 with emerald 2
+item replace block 90101 128 150 container.14 with emerald 2
+setblock 90101 128 141 minecraft:jukebox
+
+
+
 
