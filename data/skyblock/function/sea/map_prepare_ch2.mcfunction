@@ -90,5 +90,17 @@ setblock 90101 128 141 minecraft:jukebox
 
 setblock 90101 129 138 minecraft:redstone_block
 setblock 90101 129 136 minecraft:redstone_block
+setblock 90110 128 135 chest[facing=south]
+setblock 90111 128 135 chest[facing=south]
+item replace block 90110 128 135 container.11 with bread 2
+item replace block 90110 128 135 container.15 with dune_armor_trim_smithing_template 1
+item replace block 90111 128 135 container.12 with rotten_flesh 2
+item replace block 90111 128 135 container.14 with rotten_flesh 2
+setblock 90110 130 135 minecraft:potted_blue_orchid
+
+
+
+
+
 
 
