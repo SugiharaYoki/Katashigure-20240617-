@@ -45,7 +45,7 @@ fill 90103 129 103 90104 128 103 minecraft:dark_prismarine
 summon minecraft:interaction 90113 129.3 113 {CustomName:'[{"text":"多功能工作站"}]',Tags:["SEAcrafter"]}
 summon minecraft:interaction 90112 129.3 144 {CustomName:'[{"text":"器械式治疗仪"}]',Tags:["SEAaidbox"]}
 
-fill 90098 128 128 90098 130 127 iron_block
+
 
 
 summon minecraft:item_frame 90118 129 122 {Invisible:1b,Fixed:0b,Invulnerable:0b,Facing:1b,Item:{id:"minecraft:bread"}}

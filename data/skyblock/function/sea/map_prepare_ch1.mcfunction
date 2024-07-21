@@ -203,7 +203,7 @@ setblock 90134 123 100 minecraft:potted_azalea_bush
 setblock 90134 123 108 minecraft:potted_azalea_bush
 setblock 90106 123 102 minecraft:potted_azalea_bush
 setblock 90113 123 102 minecraft:potted_azalea_bush
-
+fill 90098 128 128 90098 130 127 iron_block
 setblock 90103 122 109 minecraft:redstone_block
 setblock 90103 122 109 minecraft:air
 setblock 90105 122 104 minecraft:potted_cherry_sapling
