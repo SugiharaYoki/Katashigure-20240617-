@@ -148,7 +148,7 @@ execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=410}] run playso
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=410}] run playsound minecraft:entity.generic.explode ambient @a 90139.60 132.00 129.32 10 0.8
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=410}] run playsound minecraft:block.fire.extinguish ambient @a 90139.60 132.00 129.32 10 0.5
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=410}] run fill 90140 129 134 90141 129 134 air destroy
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=410}] run fill 90140 128 134 90141 128 134 powder_snow
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=410}] run fill 90140 128 134 90141 128 134 air destroy
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=409}] positioned 90142 128 135 run function skyblock:sea/m/skeleton
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=409}] positioned 90142 128 135 run function skyblock:sea/m/skeleton_melee
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=409}] positioned 90142 128 135 if entity @n[tag=sc,scores={sea_player=3..}] run function skyblock:sea/m/skeleton
