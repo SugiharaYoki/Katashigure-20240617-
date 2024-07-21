@@ -173,7 +173,7 @@ execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=410}] run playso
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=405..}] run playsound minecraft:entity.minecart.riding ambient @a 90139.46 132.00 129.65 2 0.7
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=407..424}] run particle minecraft:large_smoke 90149.38 130.10 129.43 0.5 0 0.5 0.0 10
 
-execute as @a[tag=SEAPT,x=90111,y=128,z=129,distance=0..2] unless entity @s[scores={sea_4temp2=500..}] run scoreboard players set @s sea_4temp2 500
+execute as @a[tag=SEAPT,x=90111,y=128,z=129,distance=0..2] as @n[tag=sc,scores={sea_4temp2=450..}] unless entity @s[scores={sea_4temp2=500..}] run scoreboard players set @s sea_4temp2 500
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=500..510}] run scoreboard players add @s sea_4temp2 1
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=505}] as @e[tag=SEAeventi02slow1] at @s run data modify entity @s NoAI set value false
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=505}] positioned 90100 128 120 run function skyblock:sea/m/silverfish
