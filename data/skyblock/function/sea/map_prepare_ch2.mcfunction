@@ -97,10 +97,11 @@ item replace block 90110 128 135 container.15 with dune_armor_trim_smithing_temp
 item replace block 90111 128 135 container.12 with rotten_flesh 2
 item replace block 90111 128 135 container.14 with rotten_flesh 2
 setblock 90110 130 135 minecraft:potted_blue_orchid
+fill 90124 130 137 90124 128 136 minecraft:dark_prismarine
+fill 90130 129 144 90130 128 144 powder_snow
+fill 90129 129 139 90129 128 139 powder_snow
 
-
-
-
+setblock 90132 130 136 minecraft:redstone_lamp[lit=false]
 
 
 
