@@ -124,6 +124,7 @@ execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=339}] positioned
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=365}] positioned 90122 128 131 as @p[tag=SEAPT] run tellraw @a[distance=0..50] {"text":"玛瑞莲：“关闭系统的总控已经被我们的人破坏，但如果同时开启南区与东区的冷冻系统，就有办法将北区的系统过载掉。”","color":"dark_purple"} 
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=388}] positioned 90122 128 131 as @p[tag=SEAPT] if entity @n[tag=sc,scores={sea_player=1}] run tellraw @a[distance=0..50] {"text":"玛瑞莲：“我会帮你开启南东两区的冷冻库大门，接下来就只能交给你了……祝你好运。”","color":"dark_purple"} 
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=388}] positioned 90122 128 131 as @p[tag=SEAPT] if entity @n[tag=sc,scores={sea_player=2..}] run tellraw @a[distance=0..50] {"text":"玛瑞莲：“我会帮你们开启南东两区的冷冻库大门，接下来就只能交给你们了……祝你好运。”","color":"dark_purple"} 
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=392}] positioned 90127 128 139 run function skyblock:sea/m/drowned_maintenance
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=392}] run fill 90131 130 129 90131 128 129 air
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=392}] run fill 90124 130 137 90124 128 136 minecraft:air
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=392}] run playsound minecraft:entity.zombie.attack_iron_door ambient @a 90131.00 129.44 129.35 2 0.5
@@ -154,7 +155,10 @@ execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=409}] positioned
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=409}] positioned 90139 128 135 run function skyblock:sea/m/skeleton
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=409}] positioned 90139 128 135 run function skyblock:sea/m/skeleton_melee
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=409}] positioned 90139 128 135 if entity @n[tag=sc,scores={sea_player=3..}] run function skyblock:sea/m/skeleton
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=405}] run tellraw @a[tag=SEAPT] {"text": "播报：东冷冻库功率已切换至“最高”。","color": "green"}
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=414}] run tellraw @a[tag=SEAPT] {"text": "播报：系统警告，东区保险丝熔断，请检查东区电路箱。","color": "red"}
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=422}] run tellraw @a[tag=SEAPT] [{"selector":"@r[tag=SEAPT]","color":"white"},{"text":"：我可不是电工。","color":"white"}]
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=447}] run tellraw @a[tag=SEAPT] [{"selector":"@r[tag=SEAPT]","color":"white"},{"text":"：至少冷冻库本身还是运作的，不用去费心思修电箱。","color":"white"}]
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=419}] run setblock 90128 132 129 minecraft:tinted_glass
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=424}] run setblock 90121 132 129 minecraft:tinted_glass
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=427}] run setblock 90124 132 129 minecraft:tinted_glass
@@ -166,7 +170,7 @@ execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=439}] run setblo
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=445}] run setblock 90123 129 131 minecraft:redstone_wall_torch[facing=north]
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=445}] run setblock 90111 129 130 minecraft:redstone_wall_torch[facing=north]
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=410}] run playsound minecraft:block.fire.ambient ambient @a 90111.53 129.47 130.69 10 1.5
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=405..410}] run playsound minecraft:entity.minecart.riding ambient @a 90139.46 132.00 129.65 3 0.7
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=405..}] run playsound minecraft:entity.minecart.riding ambient @a 90139.46 132.00 129.65 3 0.7
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=407..424}] run particle minecraft:large_smoke 90149.38 130.10 129.43 0.5 0 0.5 0.0 10
 
 execute as @a[tag=SEAPT,x=90111,y=128,z=129,distance=0..2] unless entity @s[scores={sea_4temp2=500..}] run scoreboard players set @s sea_4temp2 500
@@ -187,7 +191,7 @@ execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp4=400..460}] run s
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp4=405..415}] run playsound minecraft:ambient.soul_sand_valley.additions ambient @a 90139.60 132.00 129.32 10 1.5
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp4=401..410}] run playsound minecraft:block.chain.fall ambient @a 90139.60 132.00 129.32 10 0.5
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp4=405}] run setblock 90132 130 136 minecraft:redstone_lamp[lit=true]
-
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp4=405}] run tellraw @a[tag=SEAPT] {"text": "播报：南冷冻库功率已切换至“最高”。","color": "green"}
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp4=419}] positioned 90130 128 144 run function skyblock:sea/m/skeleton
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp4=419}] positioned 90130 128 144 run function skyblock:sea/m/skeleton
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp4=419}] positioned 90130 128 144 run function skyblock:sea/m/skeleton_melee
