@@ -184,6 +184,10 @@ particle minecraft:snowflake 90139.33 132.00 128.33 7 0 6 0.0 2
 particle minecraft:snowflake 90141 132 138 6 0 6 0.0 3
 particle minecraft:snowflake 90128.54 132.00 140.29 2 0 3 0.0 3
 
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=405..}] run particle minecraft:snowflake 90139.33 132.00 128.33 7 0 6 0.0 5
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=405..}] run particle minecraft:snowflake 90141 132 138 6 0 6 0.0 6
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp4=405..}] run particle minecraft:snowflake 90128.54 132.00 140.29 2 0 3 0.0 6
+
 
 execute as @n[tag=sc] if block 90132 129 137 stone_button[powered=true] unless entity @s[scores={sea_4temp4=400..}] run scoreboard players set @s sea_4temp4 400
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp4=400..460}] run scoreboard players add @s sea_4temp4 1
