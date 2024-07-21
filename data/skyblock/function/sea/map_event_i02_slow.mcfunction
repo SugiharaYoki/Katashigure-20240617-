@@ -176,6 +176,7 @@ execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=407..424}] run p
 execute as @a[tag=SEAPT,x=90111,y=128,z=129,distance=0..2] as @n[tag=sc,scores={sea_4temp2=450..}] unless entity @s[scores={sea_4temp2=500..}] run scoreboard players set @s sea_4temp2 500
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=500..510}] run scoreboard players add @s sea_4temp2 1
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=505}] as @e[tag=SEAeventi02slow1] at @s run data modify entity @s NoAI set value false
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=505}] as @e[tag=SEAeventi02slow1] at @s run data modify entity @s Invulnerable set value false
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=505}] positioned 90100 128 120 run function skyblock:sea/m/silverfish
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=505}] positioned 90100 128 120 run function skyblock:sea/m/silverfish
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=505}] positioned 90100 128 120 run function skyblock:sea/m/silverfish
