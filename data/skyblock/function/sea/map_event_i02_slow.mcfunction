@@ -32,7 +32,17 @@ execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=11}] run summon 
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=11}] run summon skeleton 90107 128 130 {StrayConversionTime:999999,NoAI:true,Invulnerable:true,Rotation:[180.0f,0.0f],DeathLootTable:"skyblock:sea_skeleton1",Tags:["SEAmob","SEAeventi02slow1"],attributes:[{id:"generic.attack_damage",base:2.0},{id:"generic.movement_speed",base:0.16},{id:"generic.max_health",base:12}],Health:12,PersistenceRequired:1b}
 
 execute as @a[tag=SEAPT,x=90111,y=128,z=117,distance=0..2.3,tag=!e_i_14] at @s run tellraw @s {"text": "物资储藏室空无一物。依据正常消耗来说……不论如何也该剩下些什么。","color": "gray"}
+execute as @a[tag=SEAPT,x=90111,y=128,z=117,distance=0..2.3,tag=!e_i_14] at @s run scoreboard players set @n[tag=sc,scores={sea_4temp3=..0}] sea_4temp3 10
+execute as @a[tag=SEAPT,x=90111,y=128,z=117,distance=0..2.3,tag=!e_i_14] at @s run scoreboard players set @n[tag=sc,scores={sea_4temp3=100..}] sea_4temp3 10
 execute as @a[tag=SEAPT,x=90111,y=128,z=117,distance=0..2.3,tag=!e_i_14] at @s run tag @s add e_i_14
+
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp3=10..80}] run scoreboard players add @s sea_4temp3 1
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp3=31}] run scoreboard players set @s sea_4temp3 11
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp3=11}] run setblock 90101 129 138 minecraft:redstone_block
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp3=16}] run setblock 90101 129 136 minecraft:redstone_block
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp3=21}] run setblock 90101 129 138 minecraft:air
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp3=26}] run setblock 90101 129 136 minecraft:air
+
 
 execute as @a[tag=SEAPT,x=90111,y=128,z=125,distance=0..2.3,tag=!e_i_15] positioned 90109 128 120 run function skyblock:sea/m/silverfish
 execute as @a[tag=SEAPT,x=90111,y=128,z=125,distance=0..2.3,tag=!e_i_15] positioned 90109 128 120 run function skyblock:sea/m/silverfish
@@ -57,6 +67,9 @@ execute as @a[tag=SEAPT,x=90110,y=128,z=150,distance=0..1.3,tag=!e_i_16] at @s r
 execute as @a[tag=SEAPT,x=90110,y=128,z=150,distance=0..1.3,tag=!e_i_16] at @s run playsound minecraft:ambient.soul_sand_valley.additions master @a 90118 115 194 9 0.7
 execute as @a[tag=SEAPT,x=90110,y=128,z=150,distance=0..1.3,tag=!e_i_16] at @s run playsound minecraft:ambient.soul_sand_valley.additions master @a 90118 115 194 9 0.7
 execute as @a[tag=SEAPT,x=90110,y=128,z=150,distance=0..1.3,tag=!e_i_16] at @s run playsound minecraft:ambient.soul_sand_valley.additions master @a 90118 115 194 9 0.7
+execute as @a[tag=SEAPT,x=90110,y=128,z=150,distance=0..1.3,tag=!e_i_16] at @s positioned 90104 128 150 run function skyblock:sea/m/zombie_cook
+execute as @a[tag=SEAPT,x=90110,y=128,z=150,distance=0..1.3,tag=!e_i_16] at @s positioned 90104 128 150 run function skyblock:sea/m/drowned_maintenance
+execute as @a[tag=SEAPT,x=90110,y=128,z=150,distance=0..1.3,tag=!e_i_16] at @s positioned 90104 128 150 if entity @n[tag=sc,scores={sea_player=3..}] run function skyblock:sea/m/drowned_maintenance
 execute as @a[tag=SEAPT,x=90110,y=128,z=150,distance=0..1.3,tag=!e_i_16] at @s run tag @a[tag=SEAPT] add e_i_16
 
 
@@ -108,7 +121,6 @@ execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=390..395}] run p
 
 
 
-
 execute as @n[tag=sc] if block 90149 130 129 stone_button[powered=true] unless entity @s[scores={sea_4temp2=400..}] run scoreboard players set @s sea_4temp2 400
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=400..460}] run scoreboard players add @s sea_4temp2 1
 
@@ -140,6 +152,7 @@ execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=445}] run setblo
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=445}] run setblock 90111 129 130 minecraft:redstone_wall_torch[facing=north]
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=410}] run playsound minecraft:block.fire.ambient ambient @a 90111.53 129.47 130.69 10 1.5
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=405..410}] run playsound minecraft:entity.minecart.riding ambient @a 90139.46 132.00 129.65 3 0.7
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=407..424}] run particle minecraft:large_smoke 90149.38 130.10 129.43 0.5 0 0.5 0.0 10
 
 execute as @a[tag=SEAPT,x=90111,y=128,z=129,distance=0..2] unless entity @s[scores={sea_4temp2=500..}] run scoreboard players set @s sea_4temp2 500
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=500..510}] run scoreboard players add @s sea_4temp2 1

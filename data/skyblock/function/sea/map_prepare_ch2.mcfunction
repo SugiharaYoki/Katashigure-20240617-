@@ -11,6 +11,7 @@ setblock 90084 128 116 minecraft:redstone_block
 setblock 90084 128 116 minecraft:air
 
 scoreboard players set @n[tag=sc] sea_4temp2 0
+scoreboard players set @n[tag=sc] sea_4temp3 0
 tag @n[tag=sc] add SeGa_sea_ch2
 
 fill 90080 128 113 90078 128 113 redstone_block
@@ -42,7 +43,7 @@ fill 90103 129 103 90104 128 103 minecraft:dark_prismarine
 
 
 summon minecraft:interaction 90113 129.3 113 {CustomName:'[{"text":"多功能工作站"}]',Tags:["SEAcrafter"]}
-summon minecraft:interaction 90112 129.3 144 {CustomName:'[{"text":"固定式治疗仪"}]',Tags:["SEAaidbox"]}
+summon minecraft:interaction 90112 129.3 144 {CustomName:'[{"text":"器械式治疗仪"}]',Tags:["SEAaidbox"]}
 
 fill 90098 128 128 90098 130 127 iron_block
 
@@ -72,6 +73,9 @@ fill 90131 130 129 90131 128 129 minecraft:dark_prismarine
 summon marker 90124 128 129 {Tags:["SEAmagma1"]}
 summon marker 90128 128 128 {Tags:["SEAmagma1"]}
 summon marker 90129 128 130 {Tags:["SEAmagma1"]}
+summon marker 90110 128 142 {Tags:["SEAmagma1"]}
+summon marker 90106 128 146 {Tags:["SEAmagma1"]}
+summon marker 90108 128 152 {Tags:["SEAmagma1"]}
 
 execute as @e[tag=SEAmagma1,type=marker] at @s if block ~ ~ ~ air run setblock ~ ~ ~ basalt
 
@@ -84,6 +88,7 @@ item replace block 90101 128 150 container.12 with emerald 2
 item replace block 90101 128 150 container.14 with emerald 2
 setblock 90101 128 141 minecraft:jukebox
 
-
+setblock 90101 129 138 minecraft:redstone_block
+setblock 90101 129 136 minecraft:redstone_block
 
 
