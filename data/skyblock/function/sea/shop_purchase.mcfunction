@@ -40,11 +40,11 @@ execute if entity @s[tag=sea_purchase_pass] run give @s iron_axe[custom_name='{"
 execute if entity @s[tag=sea_purchase_pass] run clear @s emerald 15
 tag @s remove sea_purchase_pass
 
-execute if score @s[nbt={Inventory:[{id:"minecraft:crossbow",components:{"minecraft:custom_data":{sea_crowbar:true}}}]}] sea_crafter matches 10012 as @s[scores={sea_i_emerald=..29}] run tellraw @s {"text":"失败！余额不足！","color":"red"}
-execute if score @s[nbt={Inventory:[{id:"minecraft:crossbow",components:{"minecraft:custom_data":{sea_crowbar:true}}}]}] sea_crafter matches 10012 as @s[scores={sea_i_emerald=30..}] run tag @s add sea_purchase_pass
+execute if score @s[nbt={Inventory:[{id:"minecraft:crossbow",components:{"minecraft:custom_data":{sea_crossbow:true}}}]}] sea_crafter matches 10012 as @s[scores={sea_i_emerald=..29}] run tellraw @s {"text":"失败！余额不足！","color":"red"}
+execute if score @s[nbt={Inventory:[{id:"minecraft:crossbow",components:{"minecraft:custom_data":{sea_crossbow:true}}}]}] sea_crafter matches 10012 as @s[scores={sea_i_emerald=30..}] run tag @s add sea_purchase_pass
 execute if entity @s[tag=sea_purchase_pass] run playsound minecraft:item.armor.equip_iron neutral @s ~ ~ ~ 100
-execute if entity @s[tag=sea_purchase_pass] run clear @s crossbow[custom_data={sea_crowbar:true}] 1
-execute if entity @s[tag=sea_purchase_pass] run give @s crossbow[custom_name='{"text":"工程弩","italic":false,"color":"red"}',custom_data={sea_crossbow2:true},enchantments={quick_charge:1},unbreakable={}]
+execute if entity @s[tag=sea_purchase_pass] run clear @s crossbow[custom_data={sea_crossbow:true}] 1
+execute if entity @s[tag=sea_purchase_pass] run give @s crossbow[custom_name='{"text":"工程弩·二版","italic":false,"color":"red"}',custom_data={sea_crossbow2:true},enchantments={quick_charge:1},unbreakable={}]
 execute if entity @s[tag=sea_purchase_pass] run clear @s emerald 30
 tag @s remove sea_purchase_pass
 
