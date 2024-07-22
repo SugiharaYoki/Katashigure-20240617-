@@ -84,8 +84,8 @@ execute as @a[tag=SEAPT,x=90110,y=128,z=150,distance=0..1.3,tag=!e_i_16] at @s r
 execute as @a[tag=SEAPT,x=90110,y=128,z=150,distance=0..1.3,tag=!e_i_16] at @s run playsound minecraft:ambient.soul_sand_valley.additions master @a 90118 115 194 9 0.7
 execute as @a[tag=SEAPT,x=90110,y=128,z=150,distance=0..1.3,tag=!e_i_16] at @s positioned 90104 128 150 run function skyblock:sea/m/zombie_cook
 execute as @a[tag=SEAPT,x=90110,y=128,z=150,distance=0..1.3,tag=!e_i_16] at @s positioned 90104 128 150 run function skyblock:sea/m/drowned_maintenance
-execute as @a[tag=SEAPT,x=90110,y=128,z=150,distance=0..1.3,tag=!e_i_16] at @s positioned 90123 128 146 run function skyblock:sea/m/silverfish_big
-execute as @a[tag=SEAPT,x=90110,y=128,z=150,distance=0..1.3,tag=!e_i_16] at @s positioned 90123 128 146 run function skyblock:sea/m/spider
+execute as @a[tag=SEAPT,x=90110,y=128,z=150,distance=0..1.3,tag=!e_i_16] at @s positioned 90122 128 144 run function skyblock:sea/m/silverfish_big
+execute as @a[tag=SEAPT,x=90110,y=128,z=150,distance=0..1.3,tag=!e_i_16] at @s positioned 90122 128 144 run function skyblock:sea/m/spider
 execute as @a[tag=SEAPT,x=90110,y=128,z=150,distance=0..1.3,tag=!e_i_16] at @s positioned 90104 128 150 if entity @n[tag=sc,scores={sea_player=3..}] run function skyblock:sea/m/drowned_maintenance
 execute as @a[tag=SEAPT,x=90110,y=128,z=150,distance=0..1.3,tag=!e_i_16] at @s run tag @a[tag=SEAPT] add e_i_16
 
@@ -211,6 +211,8 @@ execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp4=419}] positioned
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp4=423}] run fill 90130 129 144 90130 128 144 air destroy
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp4=405..}] run playsound minecraft:entity.minecart.riding ambient @a 90130 132 141 1.5 0.7
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp4=403}] positioned 90099 128 143 run function skyblock:sea/m/special_rivette
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp4=405}] run setblock 90100 128 142 air
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp4=405}] run setblock 90100 129 142 air
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp4=405}] run setblock 90100 128 142 iron_door[facing=west,half=lower,open=true]
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp4=405}] run setblock 90100 129 142 iron_door[facing=west,half=upper,open=true]
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp4=405}] run playsound block.iron_door.open block @a 90100 129 142 0.5 0.8
@@ -225,8 +227,8 @@ execute if block 90118 129 141 lever[facing=south,powered=true] unless entity @a
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp7=1..90}] run scoreboard players add @s sea_4temp7 1
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp7=3}] run playsound minecraft:entity.generic.extinguish_fire ambient @a 90119.08 130.36 141.00 2 0.5
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp7=9}] run tellraw @a[tag=SEAPT] {"text": "播报：南冷冻库空气循环系统已关闭。","color": "green"}
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp7=35}] run tellraw @a[tag=SEAPT,tag=e_i_17] {"text": "这样应该就能安全走过那段毒气了。","color": "gray"}
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp7=35}] run tellraw @a[tag=SEAPT,tag=!e_i_17] {"text": "嗯？空气循环系统？不会不小心关了什么糟糕的东西吧。","color": "gray"}
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp7=25}] run tellraw @a[tag=SEAPT,tag=e_i_17] {"text": "这样应该就能安全走过那段毒气了。","color": "gray"}
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp7=25}] run tellraw @a[tag=SEAPT,tag=!e_i_17] {"text": "嗯？空气循环系统？不会不小心关了什么糟糕的东西吧。","color": "gray"}
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp7=35}] run tag @a[tag=SEAPT] add e_i_18
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp7=12}] run playsound minecraft:block.copper.step hostile @a 90120 132 143 0.3 0.87
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp7=13}] run playsound minecraft:block.copper.step hostile @a 90120 132 143 0.3 0.87
