@@ -106,3 +106,10 @@ setblock 90132 130 136 minecraft:redstone_lamp[lit=false]
 setblock 90100 128 142 iron_door[facing=west,half=lower,open=false]
 setblock 90100 129 142 iron_door[facing=west,half=upper,open=false]
 setblock 90118 129 141 lever[facing=south,powered=false]
+setblock 90123 128 141 chest[facing=south]{Lock:"空气循环控制室钥匙"}
+item replace block 90123 128 141 container.12 with coal 1
+item replace block 90123 128 141 container.14 with flint 1
+
+setblock 90118 128 120 chest[facing=west]
+
+
