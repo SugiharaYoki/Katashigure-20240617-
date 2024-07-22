@@ -14,6 +14,16 @@ tag @s remove e_i_12
 tag @s remove e_i_13
 tag @s remove e_i_14
 tag @s remove e_i_15
+tag @s remove e_i_16
+tag @s remove e_i_17
+tag @s remove e_i_18
+tag @s remove e_i_19
+tag @s remove e_i_20
+tag @s remove e_i_21
+tag @s remove e_i_22
+tag @s remove e_i_23
+tag @s remove e_i_24
+tag @s remove e_i_25
 tag @s remove e_w_01
 tag @s remove e_w_02
 tag @s remove e_w_03
