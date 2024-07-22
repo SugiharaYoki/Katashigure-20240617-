@@ -195,19 +195,19 @@ execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=2006}] run plays
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=2007}] run playsound block.copper_bulb.turn_on ambient @a 90143 123 109 10 0.8
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=2010}] run playsound block.copper_bulb.turn_on ambient @a 90143 123 111 10 0.8
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=2015}] run playsound block.copper_bulb.turn_on ambient @a 90143 123 113 10 0.8
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=1991}] positioned 90144 122 113 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=1991..1994}] positioned 90144 122 113 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=2001}] positioned 90144 122 113 run function skyblock:sea/m/zombie_security
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=2001}] positioned 90144 122 113 run function skyblock:sea/m/drowned
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=2001}] positioned 90144 122 113 if entity @n[tag=sc,scores={sea_player=4..}] run function skyblock:sea/m/zombie_security
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=1991}] positioned 90148 122 112 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=1991..1994}] positioned 90148 122 112 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=2001}] positioned 90148 122 112 run function skyblock:sea/m/zombie_security
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=2001}] positioned 90148 122 112 run function skyblock:sea/m/drowned
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=2001}] positioned 90148 122 112 if entity @n[tag=sc,scores={sea_player=5..}] run function skyblock:sea/m/zombie_security
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=1991}] positioned 90143 122 100 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=1991..1994}] positioned 90143 122 100 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=2001}] positioned 90143 122 100 run function skyblock:sea/m/zombie_security
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=2001}] positioned 90143 122 100 run function skyblock:sea/m/drowned
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=2001}] positioned 90143 122 100 if entity @n[tag=sc,scores={sea_player=2..}] run function skyblock:sea/m/zombie_security
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=1991}] positioned 90149 122 101 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=1991..1994}] positioned 90149 122 101 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=2001}] positioned 90149 122 101 run function skyblock:sea/m/zombie_security
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=2001}] positioned 90149 122 101 run function skyblock:sea/m/drowned
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=2001}] positioned 90149 122 101 if entity @n[tag=sc,scores={sea_player=3..}] run function skyblock:sea/m/zombie_security
@@ -225,7 +225,10 @@ execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=2091}] positione
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=2081}] positioned 90149 122 101 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=2091}] positioned 90149 122 101 run function skyblock:sea/m/drowned_shield
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=2091}] positioned 90149 122 101 if entity @n[tag=sc,scores={sea_player=4..}] run function skyblock:sea/m/drowned_shield
-
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=2091}] run scoreboard players add @n[tag=sc,scores={sea_player=1}] sea_4temp2 10
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=2091}] run scoreboard players add @n[tag=sc,scores={sea_player=2}] sea_4temp2 25
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=2091}] run scoreboard players add @n[tag=sc,scores={sea_player=3}] sea_4temp2 40
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=2091}] run scoreboard players add @n[tag=sc,scores={sea_player=4..}] sea_4temp2 50
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=2141}] positioned 90143 122 100 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=2151}] positioned 90143 122 100 run function skyblock:sea/m/pillager
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=2151}] positioned 90143 122 100 if entity @n[tag=sc,scores={sea_player=4..}] run function skyblock:sea/m/pillager
@@ -372,6 +375,9 @@ execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=5054}] run fill 
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=5055}] as @a[tag=SEAPT] at @s run tellraw @s {"text":"『厄珀尔的悲歌』第一章 完","color":"blue","bold": true}
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=5055}] as @a[tag=SEAPT] at @s run playsound music_disc.creator_music_box music @a[tag=SEAPT] ~ ~ ~ 1000 0.9
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=5055}] run function skyblock:sea/map_prepare_ch2
+
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=5054}] run setblock 90108 118 136 minecraft:waxed_copper_bulb[lit=false]
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=5054}] run setblock 90112 118 140 minecraft:waxed_copper_bulb[lit=false]
 
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=3000..5000}] run scoreboard players add @s sea_4temp5 1
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=3000..5000,sea_4temp5=80..}] run scoreboard players set @s sea_4temp5 1
