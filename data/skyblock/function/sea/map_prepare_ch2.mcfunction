@@ -102,6 +102,6 @@ fill 90130 129 144 90130 128 144 powder_snow
 fill 90129 129 139 90129 128 139 powder_snow
 
 setblock 90132 130 136 minecraft:redstone_lamp[lit=false]
-
-
+setblock 90100 128 142 iron_door[facing=west,half=lower,open=false]
+setblock 90100 129 142 iron_door[facing=west,half=upper,open=false]
 

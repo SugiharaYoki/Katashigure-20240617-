@@ -41,6 +41,10 @@ execute unless entity @a[tag=SEAPT,tag=e_i_18] run execute positioned 90117.52 1
 execute as @a[tag=SEAPT,x=90112,y=128,z=136,distance=0..2.3,tag=!e_i_17] at @s run tellraw @s {"text": "这毒气让我有不好的预感……我可不要直接走进去。","color": "red"}
 execute as @a[tag=SEAPT,x=90112,y=128,z=136,distance=0..2.3,tag=!e_i_17] at @s run tag @s add e_i_17
 
+
+execute at @n[tag=SEArivette] as @a[tag=SEAPT,distance=0..3.3,tag=!e_i_19] at @s run tellraw @s {"text": "这家伙……怎么回事？！","color": "red"}
+execute at @n[tag=SEArivette] as @a[tag=SEAPT,distance=0..3.3,tag=!e_i_19] at @s run tag @s add e_i_19
+
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp3=10..80}] run scoreboard players add @s sea_4temp3 1
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp3=31}] run scoreboard players set @s sea_4temp3 11
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp3=11}] run setblock 90101 129 138 minecraft:redstone_block
@@ -204,8 +208,10 @@ execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp4=419}] positioned
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp4=419}] positioned 90130 128 144 if entity @n[tag=sc,scores={sea_player=4..}] run function skyblock:sea/m/skeleton
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp4=423}] run fill 90130 129 144 90130 128 144 air destroy
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp4=405..}] run playsound minecraft:entity.minecart.riding ambient @a 90130 132 141 1.5 0.7
-
-
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp4=403}] positioned 90099 128 143 run function skyblock:sea/m/special_rivette
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp4=405}] run setblock 90100 128 142 iron_door[facing=west,half=lower,open=true]
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp4=405}] run setblock 90100 129 142 iron_door[facing=west,half=upper,open=true]
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp4=405}] run playsound block.iron_door.open block @a 90100 129 142 0.5 0.8
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp4=449}] positioned 90129 128 139 run function skyblock:sea/m/skeleton
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp4=449}] positioned 90129 128 139 run function skyblock:sea/m/skeleton
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp4=449}] positioned 90129 128 139 run function skyblock:sea/m/skeleton_melee
