@@ -2,27 +2,27 @@ tag @a[tag=Temp_NoSkyWar] remove NoSkyWar
 tag @a[tag=Temp_NoSkyWar] remove Temp_NoSkyWar
 tag @n[tag=sc] remove MapLoaAlr
 #成就系统
-advancement grant @a[level=100..] only skyblock:levelbonus_level100
-advancement grant @a[level=1000..] only skyblock:levelbonus_level1000
-execute as @a[scores={Perm_PersonWins=1..}] at @s run advancement grant @s only skyblock:skyblock_win1
-execute as @a[scores={Perm_PersonWins=10..}] at @s run advancement grant @s only skyblock:skyblock_win10
-execute as @a[scores={Perm_PersonWins=50..}] at @s run advancement grant @s only skyblock:skyblock_win50
-execute as @a[scores={Perm_PersonWins=120..}] at @s run advancement grant @s only skyblock:skyblock_win120
-execute as @a[scores={Perm_PersonWins=240..}] at @s run advancement grant @s only skyblock:skyblock_win240
-execute as @a[scores={Perm_PersonWins=500..}] at @s run advancement grant @s only skyblock:skyblock_win500
-execute as @a[scores={Perm_PersonWins=1000..}] at @s run advancement grant @s only skyblock:skyblock_win1000
-execute as @a[scores={Perm_PersonDeath=1..}] at @s run advancement grant @s only skyblock:skyblock_lost1
-execute as @a[scores={Perm_PersonDeath=10..}] at @s run advancement grant @s only skyblock:skyblock_lost10
-execute as @a[scores={Perm_PersonDeath=100..}] at @s run advancement grant @s only skyblock:skyblock_lost100
-execute as @a[scores={Perm_PersonDeath=1000..}] at @s run advancement grant @s only skyblock:skyblock_lost1000
-execute as @a[scores={Perm_PersonDeath=10000..}] at @s run advancement grant @s only skyblock:skyblock_lost10000
+#advancement grant @a[level=100..] only skyblock:levelbonus_level100
+#advancement grant @a[level=1000..] only skyblock:levelbonus_level1000
+#execute as @a[scores={Perm_PersonWins=1..}] at @s run advancement grant @s only skyblock:skyblock_win1
+#execute as @a[scores={Perm_PersonWins=10..}] at @s run advancement grant @s only skyblock:skyblock_win10
+#execute as @a[scores={Perm_PersonWins=50..}] at @s run advancement grant @s only skyblock:skyblock_win50
+#execute as @a[scores={Perm_PersonWins=120..}] at @s run advancement grant @s only skyblock:skyblock_win120
+#execute as @a[scores={Perm_PersonWins=240..}] at @s run advancement grant @s only skyblock:skyblock_win240
+#execute as @a[scores={Perm_PersonWins=500..}] at @s run advancement grant @s only skyblock:skyblock_win500
+#execute as @a[scores={Perm_PersonWins=1000..}] at @s run advancement grant @s only skyblock:skyblock_win1000
+#execute as @a[scores={Perm_PersonDeath=1..}] at @s run advancement grant @s only skyblock:skyblock_lost1
+#execute as @a[scores={Perm_PersonDeath=10..}] at @s run advancement grant @s only skyblock:skyblock_lost10
+#execute as @a[scores={Perm_PersonDeath=100..}] at @s run advancement grant @s only skyblock:skyblock_lost100
+#execute as @a[scores={Perm_PersonDeath=1000..}] at @s run advancement grant @s only skyblock:skyblock_lost1000
+#execute as @a[scores={Perm_PersonDeath=10000..}] at @s run advancement grant @s only skyblock:skyblock_lost10000
 #初始化玩家变量与状态
 xp set @a[tag=PVPing] 0
 execute as @a[tag=PVPing] at @s run function skyblock:skywar_system_levelbonus
 scoreboard players set @a Temp4 0
 gamemode adventure @a[gamemode=!creative]
 scoreboard objectives remove PersonTimeRemain
-scoreboard objectives add PersonTimeRemain dummy "精神值系统 空闲"
+#scoreboard objectives add PersonTimeRemain dummy "精神值系统 空闲"
 scoreboard players reset @a TimeRemainUnsee
 scoreboard players reset @a DeathCount
 effect clear @a[tag=PVPing]
