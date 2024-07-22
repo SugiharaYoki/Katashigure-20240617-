@@ -76,7 +76,8 @@ summon marker 90129 128 130 {Tags:["SEAmagma1"]}
 summon marker 90110 128 142 {Tags:["SEAmagma1"]}
 summon marker 90106 128 146 {Tags:["SEAmagma1"]}
 summon marker 90108 128 152 {Tags:["SEAmagma1"]}
-
+summon marker 90118 131 148 {Tags:["SEAmagma1"]}
+summon marker 90119 131 148 {Tags:["SEAmagma1"]}
 execute as @e[tag=SEAmagma1,type=marker] at @s if block ~ ~ ~ air run setblock ~ ~ ~ basalt
 
 fill 90140 128 134 90141 129 134 snow_block
@@ -104,4 +105,4 @@ fill 90129 129 139 90129 128 139 powder_snow
 setblock 90132 130 136 minecraft:redstone_lamp[lit=false]
 setblock 90100 128 142 iron_door[facing=west,half=lower,open=false]
 setblock 90100 129 142 iron_door[facing=west,half=upper,open=false]
-
+setblock 90118 129 141 lever[facing=south,powered=false]

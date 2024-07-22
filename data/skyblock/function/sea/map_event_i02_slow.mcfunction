@@ -84,6 +84,8 @@ execute as @a[tag=SEAPT,x=90110,y=128,z=150,distance=0..1.3,tag=!e_i_16] at @s r
 execute as @a[tag=SEAPT,x=90110,y=128,z=150,distance=0..1.3,tag=!e_i_16] at @s run playsound minecraft:ambient.soul_sand_valley.additions master @a 90118 115 194 9 0.7
 execute as @a[tag=SEAPT,x=90110,y=128,z=150,distance=0..1.3,tag=!e_i_16] at @s positioned 90104 128 150 run function skyblock:sea/m/zombie_cook
 execute as @a[tag=SEAPT,x=90110,y=128,z=150,distance=0..1.3,tag=!e_i_16] at @s positioned 90104 128 150 run function skyblock:sea/m/drowned_maintenance
+execute as @a[tag=SEAPT,x=90110,y=128,z=150,distance=0..1.3,tag=!e_i_16] at @s positioned 90123 128 146 run function skyblock:sea/m/silverfish_big
+execute as @a[tag=SEAPT,x=90110,y=128,z=150,distance=0..1.3,tag=!e_i_16] at @s positioned 90123 128 146 run function skyblock:sea/m/spider
 execute as @a[tag=SEAPT,x=90110,y=128,z=150,distance=0..1.3,tag=!e_i_16] at @s positioned 90104 128 150 if entity @n[tag=sc,scores={sea_player=3..}] run function skyblock:sea/m/drowned_maintenance
 execute as @a[tag=SEAPT,x=90110,y=128,z=150,distance=0..1.3,tag=!e_i_16] at @s run tag @a[tag=SEAPT] add e_i_16
 
@@ -219,9 +221,17 @@ execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp4=449}] positioned
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp4=449}] positioned 90129 128 139 if entity @n[tag=sc,scores={sea_player=5..}] run function skyblock:sea/m/skeleton
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp4=453}] run fill 90129 129 139 90129 128 139 air destroy
 
-
-
-
-
+execute if block 90118 129 141 lever[facing=south,powered=true] unless entity @a[tag=SEAPT,tag=e_i_18] as @e[tag=sc] unless entity @s[scores={sea_4temp7=1..}] run scoreboard players set @s sea_4temp7 1
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp7=1..90}] run scoreboard players add @s sea_4temp7 1
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp7=3}] run playsound minecraft:entity.generic.extinguish_fire ambient @a 90119.08 130.36 141.00 2 0.5
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp7=9}] run tellraw @a[tag=SEAPT] {"text": "播报：南冷冻库空气循环系统已关闭。","color": "green"}
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp7=35}] run tellraw @a[tag=SEAPT,tag=e_i_17] {"text": "这样应该就能安全走过那段毒气了。","color": "gray"}
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp7=35}] run tellraw @a[tag=SEAPT,tag=!e_i_17] {"text": "嗯？空气循环系统？不会不小心关了什么糟糕的东西吧。","color": "gray"}
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp7=35}] run tag @a[tag=SEAPT] add e_i_18
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp7=12}] run playsound minecraft:block.copper.step hostile @a 90120 132 143 0.3 0.87
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp7=13}] run playsound minecraft:block.copper.step hostile @a 90120 132 143 0.3 0.87
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp7=15}] run playsound minecraft:block.copper.step hostile @a 90120 132 143 0.3 0.87
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp7=17}] run playsound minecraft:block.copper.step hostile @a 90121 132 143 0.3 0.87
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp7=18}] run playsound minecraft:block.copper.step hostile @a 90121 132 143 0.3 0.87
 
 
