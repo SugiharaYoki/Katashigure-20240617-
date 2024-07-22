@@ -4,7 +4,7 @@ execute if block -17 23 32 soul_lantern run scoreboard players add @n[tag=sc,sco
 #-#-#setblock 10 66 -12 minecraft:redstone_wire
 #-#-#setblock 11 60 -10 minecraft:redstone_wire
 #-#-#scoreboard players set @n[tag=sc] TempPaus 0
-
+execute if score @n[tag=sc] SSgspT matches 2 run fill -130 59 -117 -130 59 -128 air
 
 #《初始化队伍》
 execute if score @n[tag=sc] SSgspT matches 2 run function skyblock:skywar_system_gamestartprep_team_create
@@ -221,11 +221,25 @@ execute if block -131 59 -128 minecraft:green_concrete if score @n[tag=sc] SSgsp
 execute if block -131 59 -127 green_concrete if score @n[tag=sc] SSgspT matches 17 run execute as @a[tag=PVPing] at @s run effect give @s regeneration 300 1 true
 execute if block 44 61 54 minecraft:soul_lantern if score @n[tag=sc] SSgspT matches 17 run execute as @a[tag=PVPing] at @s run item replace entity @s armor.head with melon[minecraft:enchantments={binding_curse:1,blast_protection:4}]
 
-execute if block -131 59 -119 green_concrete if score @n[tag=sc] SSgspT matches 17 run execute as @a[tag=PVPing] at @s run give @s ender_pearl 3
-execute if block -131 59 -119 green_concrete if score @n[tag=sc] SSgspT matches 17 run execute as @a[tag=PVPing] at @s run give @s firework_rocket 8
-execute if block -131 59 -119 green_concrete if score @n[tag=sc] SSgspT matches 17 run execute as @a[tag=PVPing] at @s run give @s elytra 1
-execute if block -131 59 -119 green_concrete if score @n[tag=sc] SSgspT matches 17 run execute as @a[tag=PVPing] at @s run give @s obsidian 3
-execute if block -131 59 -119 green_concrete if score @n[tag=sc] SSgspT matches 17 run execute as @a[tag=PVPing] at @s run give @s end_crystal 1
+execute if score @n[tag=sc] SSgspT matches 1 if block -131 59 -119 green_concrete run tellraw @a[tag=!Gaming] {"text":"◇ 请注意：全局虚弱III已开启","color":"red"}
+execute if score @n[tag=sc] SSgspT matches 1 if block -131 59 -122 green_concrete run tellraw @a[tag=!Gaming] {"text":"◇ 请注意：全局挖掘疲劳已开启","color":"red"}
+execute if score @n[tag=sc] SSgspT matches 1 if block -131 59 -123 green_concrete run tellraw @a[tag=!Gaming] {"text":"◇ 请注意：全局隐身已开启","color":"red"}
+execute if score @n[tag=sc] SSgspT matches 1 if block -131 59 -124 green_concrete run tellraw @a[tag=!Gaming] {"text":"◇ 请注意：全局隐身已开启","color":"red"}
+execute if score @n[tag=sc] SSgspT matches 1 if block -131 59 -125 green_concrete run tellraw @a[tag=!Gaming] {"text":"◇ 玩家将在开局获得20个TNT","color":"red"}
+
+execute if block -131 59 -118 green_concrete if score @n[tag=sc] SSgspT matches 17 run execute as @a[tag=PVPing] at @s run give @s ender_pearl 3
+execute if block -131 59 -118 green_concrete if score @n[tag=sc] SSgspT matches 17 run execute as @a[tag=PVPing] at @s run give @s firework_rocket 8
+execute if block -131 59 -118 green_concrete if score @n[tag=sc] SSgspT matches 17 run execute as @a[tag=PVPing] at @s run give @s elytra 1
+execute if block -131 59 -118 green_concrete if score @n[tag=sc] SSgspT matches 17 run execute as @a[tag=PVPing] at @s run give @s obsidian 3
+execute if block -131 59 -118 green_concrete if score @n[tag=sc] SSgspT matches 17 run execute as @a[tag=PVPing] at @s run give @s end_crystal 1
+
+execute if block -131 59 -117 green_concrete if score @n[tag=sc] SSgspT matches 17 run execute as @a[tag=PVPing] at @s run give @s wolf_spawn_egg 4
+execute if block -131 59 -117 green_concrete if score @n[tag=sc] SSgspT matches 17 run execute as @a[tag=PVPing] at @s run give @s bone 32
+execute if block -131 59 -117 green_concrete if score @n[tag=sc] SSgspT matches 17 run execute as @a[tag=PVPing] at @s run give @s beef 8
+execute if block -131 59 -117 green_concrete if score @n[tag=sc] SSgspT matches 17 run execute as @a[tag=PVPing] at @s run give @s red_dye 8
+execute if block -131 59 -117 green_concrete if score @n[tag=sc] SSgspT matches 17 run execute as @a[tag=PVPing] at @s run give @s blue_dye 8
+execute if block -131 59 -117 green_concrete if score @n[tag=sc] SSgspT matches 17 run execute as @a[tag=PVPing] at @s run give @s green_dye 8
+execute if block -131 59 -117 green_concrete if score @n[tag=sc] SSgspT matches 17 run execute as @a[tag=PVPing] at @s run give @s yellow_dye 8
 
 #execute if score @n[tag=sc] SSgspT matches 18 run tellraw @a[tag=PVPing] {"text":"看板狐： 所有参与者已合并为 A C 两组","color":"dark_green"}
 #execute if score @n[tag=sc] SSgspT matches 18 run team join Team1_1 @a[team=Team1_3]

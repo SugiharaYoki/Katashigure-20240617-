@@ -6,3 +6,4 @@ scoreboard objectives remove TempIf_Job6C
 scoreboard objectives remove TempIf_Job6D
 scoreboard objectives remove TempIf_Job6E
 scoreboard objectives remove TempIf_Job3
+fill -130 59 -117 -130 59 -128 minecraft:cherry_button[facing=east]

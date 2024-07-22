@@ -16,6 +16,7 @@ team remove Team1_4
 team remove Temp1_5
 team remove Temp1_6
 team join HajimetanoMachi @a[tag=PVP_see]
+fill -130 59 -117 -130 59 -128 minecraft:cherry_button[facing=east]
 #《游戏规则初始化》
 #gamerule doFireTick false
 #《玩家事件/文字显示/传送支援》
@@ -45,22 +46,9 @@ scoreboard players set @s DeathCountTemp 0
 tag @s remove LeftGame
 #-#-#execute if score @n[tag=sc] SSgspT matches 2 run execute as @s[tag=!NoSkyWar] at @s run function skyblock:fallensquare_subreset
 #《职业变量初始化》
-scoreboard players set @s If_Squat 0
-scoreboard players set @s If_Carrot 0
-scoreboard players set @s If_BakedPotato 0
-scoreboard players set @s If_Beetrtsoup 0
-scoreboard players set @s If_Bread 0
-scoreboard players set @s If_EscDeath 0
 function skyblock:skywar_system_removeallmd
-scoreboard players set @s If_DamageTaken 0
 #??scoreboard players set @s If_EnchantArrow 0
-scoreboard players set @s If_GoldApple 0
-scoreboard players set @s If_OpenShulker 0
-scoreboard players set @s If_Run10000cm 0
-scoreboard players set @s If_Bred 0
-scoreboard players set @s If_Dead 0
-scoreboard players set @s If_RotFle 0
-scoreboard players set @s If_MelonS 0
+
 scoreboard objectives remove TempIf_Job6A
 scoreboard objectives remove TempIf_Job6B
 scoreboard objectives remove TempIf_Job6C
