@@ -12,3 +12,8 @@ scoreboard players reset @s If_MD_11
 scoreboard players reset @s If_MD_Wait
 scoreboard players reset @s If_MD_Pigstep
 scoreboard players reset @s If_MD_Otherside
+scoreboard players set @s ishtar_core_1 0
+scoreboard players set @s ishtar_core_2 0
+scoreboard players set @s ishtar_core_3 0
+scoreboard players set @s ishtar_core_4 0
+scoreboard players set @s ishtar_core_5 0

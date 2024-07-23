@@ -1,5 +1,7 @@
 playsound minecraft:ui.button.click master @s ~ ~ ~ 0.3 1.4 0.4
 tellraw @s {"text":"- 纺之礼 -","color":"yellow"}
+execute if entity @s[scores={ishtar_bless_3=8}] run tellraw @s {"text":"    启礼「黄金圣果」","color":"gold","hoverEvent":{"action":"show_text","contents":{"text":"附魔金苹果×1","color":"white"}}}
+execute unless entity @s[scores={ishtar_bless_3=8}] run tellraw @s {"text":"    启礼「黄金圣果」","color":"gray","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 133008"},"hoverEvent":{"action":"show_text","contents":{"text":"点击装备该礼装","color":"green"}}}
 execute if entity @s[scores={ishtar_bless_3=1}] run tellraw @s {"text":"    统礼「末影水晶」","color":"gold","hoverEvent":{"action":"show_text","contents":{"text":"末影水晶×1","color":"white"}}}
 execute unless entity @s[scores={ishtar_bless_3=1}] run tellraw @s {"text":"    统礼「末影水晶」","color":"gray","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 133001"},"hoverEvent":{"action":"show_text","contents":{"text":"点击装备该礼装","color":"green"}}}
 execute if entity @s[scores={ishtar_bless_3=2}] run tellraw @s {"text":"    纵礼「不死图腾」","color":"gold","hoverEvent":{"action":"show_text","contents":{"text":"不死图腾×1","color":"white"}}}

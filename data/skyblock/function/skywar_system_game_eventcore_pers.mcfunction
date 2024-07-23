@@ -29,3 +29,5 @@ execute if block 43 50 55 soul_lantern as @a[tag=PVPing] at @s run effect give @
 execute if block 44 51 56 lantern as @a[tag=PVPing] at @s run effect give @s mining_fatigue 10 1 true
 execute if block 44 51 56 soul_lantern as @a[tag=PVPing] at @s run effect give @s haste 10 1 true
 execute if block -131 59 -119 green_concrete as @a[tag=PVPing] at @s run effect give @s weakness 10 2 true
+
+execute if block -131 58 -133 diamond_block as @a[tag=PVPing] at @s run function skyblock:skywar_ishtar_core
