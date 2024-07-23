@@ -1,4 +1,4 @@
-playsound minecraft:ui.button.click master @s ~ ~ ~ 0.3 1.4 0.4
+
 playsound minecraft:block.beacon.power_select ambient @s ~ ~ ~ 0.8 1.2
 execute as @s[scores={MultiMenu=131001}] at @s run scoreboard players set @s ishtar_bless_1 1
 execute as @s[scores={MultiMenu=131002}] at @s run scoreboard players set @s ishtar_bless_1 2
