@@ -123,6 +123,7 @@ setblock 90111 128 110 decorated_pot{sherds:["prize_pottery_sherd","prize_potter
 setblock 90082 128 110 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:flint"}}
 setblock 90088 128 114 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:raw_iron"}}
 setblock 90095 128 119 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 3, id:"minecraft:echo_shard"}}
+setblock 90115 128 150 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 3, id:"minecraft:echo_shard"}}
 fill 90088 129 115 90088 128 115 minecraft:polished_tuff_wall
 setblock 90101 129 125 air
 setblock 90101 129 125 lever[facing=west,face=ceiling]
