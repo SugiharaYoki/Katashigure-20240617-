@@ -12,6 +12,10 @@ setblock 90084 128 116 minecraft:air
 
 scoreboard players set @n[tag=sc] sea_4temp2 0
 scoreboard players set @n[tag=sc] sea_4temp3 0
+scoreboard players set @n[tag=sc] sea_4temp5 0
+scoreboard players set @n[tag=sc] sea_4temp6 0
+scoreboard players set @n[tag=sc] sea_4temp7 0
+scoreboard players set @n[tag=sc] sea_4temp8 0
 tag @n[tag=sc] add SeGa_sea_ch2
 
 fill 90080 128 113 90078 128 113 redstone_block
