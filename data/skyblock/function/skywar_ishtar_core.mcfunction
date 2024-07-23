@@ -32,5 +32,8 @@ execute if entity @s[scores={If_MD_Strad=1..}] run summon area_effect_cloud ~ ~ 
 execute if entity @s[scores={If_MD_Strad=1..}] run scoreboard players set @s If_MD_Strad 0
 
 execute if entity @s[scores={If_MD_Wait=1..}] run playsound minecraft:block.beacon.deactivate ambient @a ~ ~1 ~ 4 0.8
-execute if entity @s[scores={If_MD_Wait=1..}] run summon area_effect_cloud ~ ~ ~ {Particle:ash,Radius:5,Duration:200,potion_contents:{custom_color:1908001,custom_effects:[{id:resistance,duration:100,amplifier:4,show_particles:1b,show_icon:1},{id:slowness,duration:100,amplifier:199,show_particles:1b,show_icon:1},{id:wither,duration:100,amplifier:0,show_particles:1b,show_icon:1}]}}
+execute if entity @s[scores={If_MD_Wait=1..}] run particle dripping_obsidian_tear ~ ~1 ~ 5 5 5 0.2 80
+execute if entity @s[scores={If_MD_Wait=1..}] run effect give @a[tag=PVPing,distance=0.1..5.3] slowness 5 199
+execute if entity @s[scores={If_MD_Wait=1..}] run effect give @a[tag=PVPing,distance=0.1..5.3] resistance 5 4
+execute if entity @s[scores={If_MD_Wait=1..}] run effect give @a[tag=PVPing,distance=0.1..5.3] wither 5 0
 execute if entity @s[scores={If_MD_Wait=1..}] run scoreboard players set @s If_MD_Wait 0

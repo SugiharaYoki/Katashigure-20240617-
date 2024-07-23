@@ -22,5 +22,7 @@ execute if entity @s[scores={ishtar_bless_1=10}] run tellraw @s {"text":"    救
 execute unless entity @s[scores={ishtar_bless_1=10}] run tellraw @s {"text":"    救赎「顷刻天国」","color":"gray","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 131010"},"hoverEvent":{"action":"show_text","contents":{"text":"点击装备该礼装","color":"green"}}}
 execute if entity @s[scores={ishtar_bless_1=11}] run tellraw @s {"text":"    神威「陨落压制」","color":"gold","hoverEvent":{"action":"show_text","contents":{"text":"陨落压制核心×2","color":"white"}}}
 execute unless entity @s[scores={ishtar_bless_1=11}] run tellraw @s {"text":"    神威「陨落压制」","color":"gray","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 131011"},"hoverEvent":{"action":"show_text","contents":{"text":"点击装备该礼装","color":"green"}}}
+execute if entity @s[scores={ishtar_bless_1=12}] run tellraw @s {"text":"    逃亡「刹踪烟消」","color":"gold","hoverEvent":{"action":"show_text","contents":{"text":"刹踪烟消药剂×2","color":"white"}}}
+execute unless entity @s[scores={ishtar_bless_1=12}] run tellraw @s {"text":"    逃亡「刹踪烟消」","color":"gray","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 131012"},"hoverEvent":{"action":"show_text","contents":{"text":"点击装备该礼装","color":"green"}}}
 tellraw @s {"text":"   [返回PVP主页]","color":"yellow","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 118"},"hoverEvent":{"action":"show_text","contents":{"text":"返回PVP设置菜单","color":"green"}}}
 scoreboard players set @s MultiMenu 0

@@ -32,4 +32,6 @@ execute if entity @s[scores={ishtar_bless_3=10}] run give @s music_disc_strad[cu
 execute if entity @s[scores={ishtar_bless_1=11}] run give @s music_disc_wait[custom_name='{"text":"陨落压制核心","italic":false,"color":"green"}',custom_data={skywar:1}] 2
 execute if entity @s[scores={ishtar_bless_2=11}] run give @s music_disc_wait[custom_name='{"text":"陨落压制核心","italic":false,"color":"green"}',custom_data={skywar:1}] 2
 execute if entity @s[scores={ishtar_bless_3=11}] run give @s music_disc_wait[custom_name='{"text":"陨落压制核心","italic":false,"color":"green"}',custom_data={skywar:1}] 2
-
+execute if entity @s[scores={ishtar_bless_1=12}] run give @s potion[potion_contents={custom_color:12489686,custom_effects:[{id:speed,duration:60,amplifier:4},{id:jump_boost,duration:60,amplifier:1}]},custom_name='["",{"text":"刹踪烟消药剂","italic":false}]'] 2
+execute if entity @s[scores={ishtar_bless_2=12}] run give @s potion[potion_contents={custom_color:12489686,custom_effects:[{id:speed,duration:60,amplifier:4},{id:jump_boost,duration:60,amplifier:1}]},custom_name='["",{"text":"刹踪烟消药剂","italic":false}]'] 2
+execute if entity @s[scores={ishtar_bless_3=12}] run give @s potion[potion_contents={custom_color:12489686,custom_effects:[{id:speed,duration:60,amplifier:4},{id:jump_boost,duration:60,amplifier:1}]},custom_name='["",{"text":"刹踪烟消药剂","italic":false}]'] 2
