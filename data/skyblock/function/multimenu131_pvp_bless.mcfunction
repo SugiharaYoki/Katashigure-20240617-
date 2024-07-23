@@ -11,3 +11,4 @@ execute if entity @s[scores={ishtar_bless_1=5}] run tellraw @s {"text":"    猎�
 execute unless entity @s[scores={ishtar_bless_1=5}] run tellraw @s {"text":"    猎夜「彻锋戮影」","color":"gray","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 131005"},"hoverEvent":{"action":"show_text","contents":{"text":"点击装备该礼装","color":"green"}}}
 execute if entity @s[scores={ishtar_bless_1=5}] run tellraw @s {"text":"    袖剑「轮月」","color":"gold","hoverEvent":{"action":"show_text","contents":{"text":"慢充能高攻击剑×1","color":"white"}}}
 execute unless entity @s[scores={ishtar_bless_1=6}] run tellraw @s {"text":"    袖剑「轮月」","color":"gray","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 131006"},"hoverEvent":{"action":"show_text","contents":{"text":"点击装备该礼装","color":"green"}}}
+scoreboard players set @s MultiMenu 0
