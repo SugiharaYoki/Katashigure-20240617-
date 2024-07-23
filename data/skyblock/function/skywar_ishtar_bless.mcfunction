@@ -23,3 +23,7 @@ execute if entity @s[scores={ishtar_bless_1=8}] run give @s enchanted_golden_app
 execute if entity @s[scores={ishtar_bless_2=8}] run give @s enchanted_golden_apple
 execute if entity @s[scores={ishtar_bless_3=8}] run give @s enchanted_golden_apple
 
+execute if entity @s[scores={ishtar_bless_1=9}] run give @s music_disc_13[custom_name='{"text":"高速堡垒核心","italic":false,"color":"green"}']
+execute if entity @s[scores={ishtar_bless_2=9}] run give @s music_disc_13[custom_name='{"text":"高速堡垒核心","italic":false,"color":"green"}']
+execute if entity @s[scores={ishtar_bless_3=9}] run give @s music_disc_13[custom_name='{"text":"高速堡垒核心","italic":false,"color":"green"}']
+
