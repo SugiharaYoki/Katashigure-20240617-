@@ -82,6 +82,8 @@ summon marker 90106 128 146 {Tags:["SEAmagma1"]}
 summon marker 90108 128 152 {Tags:["SEAmagma1"]}
 summon marker 90118 131 148 {Tags:["SEAmagma1"]}
 summon marker 90119 131 148 {Tags:["SEAmagma1"]}
+summon marker 90083 128 150 {Tags:["SEAmagma1"]}
+summon marker 90092 128 153 {Tags:["SEAmagma1"]}
 execute as @e[tag=SEAmagma1,type=marker] at @s if block ~ ~ ~ air run setblock ~ ~ ~ basalt
 
 fill 90140 128 134 90141 129 134 snow_block
@@ -121,6 +123,8 @@ setblock 90112 130 142 barrel[facing=west]
 item replace block 90112 130 142 container.6 with music_disc_stal 1
 fill 90093 128 136 90093 128 140 minecraft:redstone_block
 fill 90093 128 136 90093 128 140 minecraft:air
+setblock 90086 128 146 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 1, id:"minecraft:beef"}}
+setblock 90092 128 143 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 1, id:"minecraft:beef"}}
 setblock 90096 128 151 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 1, id:"minecraft:bread"}}
 setblock 90106 128 137 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 1, id:"minecraft:bread"}}
 setblock 90111 128 110 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:flint"}}
@@ -136,3 +140,5 @@ item replace block 90088 131 118 container.12 with wayfinder_armor_trim_smithing
 item replace block 90088 131 118 container.14 with wild_armor_trim_smithing_template 2
 
 
+setblock 90086 129 143 minecraft:potted_azalea_bush
+setblock 90091 129 143 minecraft:potted_azalea_bush

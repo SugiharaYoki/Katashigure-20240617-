@@ -146,6 +146,9 @@ execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=388}] positioned
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=392}] positioned 90127 128 139 run function skyblock:sea/m/drowned_maintenance
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=392}] positioned 90091 128 141 run function skyblock:sea/m/skeleton_melee
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=392}] positioned 90091 128 141 run function skyblock:sea/m/skeleton_melee
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=392}] positioned 90088 127 131 run function skyblock:sea/m/drowned_maintenance
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=392}] positioned 90088 127 131 run function skyblock:sea/m/drowned
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=392}] positioned 90088 127 131 run function skyblock:sea/m/drowned
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=392}] run fill 90131 130 129 90131 128 129 air
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=392}] run fill 90124 130 137 90124 128 136 minecraft:air
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=392}] run playsound minecraft:entity.zombie.attack_iron_door ambient @a 90131.00 129.44 129.35 2 0.5
