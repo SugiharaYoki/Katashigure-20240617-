@@ -114,7 +114,7 @@ execute as @a[tag=SEAPT,nbt={SelectedItem:{id:"minecraft:recovery_compass"}}] at
 execute as @a[tag=SEAPT,nbt={SelectedItem:{id:"minecraft:recovery_compass"}}] at @s at @e[tag=SEAmob,distance=8..16,scores={sea_4temp9=4}] run playsound minecraft:entity.warden.heartbeat hostile @a ~ ~ ~ 0.3 0.9
 execute as @a[tag=SEAPT,nbt={SelectedItem:{id:"minecraft:recovery_compass"}}] at @s at @e[tag=SEAmob,distance=3..8,scores={sea_4temp9=4}] run playsound minecraft:entity.warden.heartbeat hostile @a ~ ~ ~ 0.3 1.2
 execute as @a[tag=SEAPT,nbt={SelectedItem:{id:"minecraft:recovery_compass"}}] at @s at @e[tag=SEAmob,distance=3..8,scores={sea_4temp9=2}] run playsound minecraft:entity.warden.heartbeat hostile @a ~ ~ ~ 0.3 1.2
-execute as @a[tag=SEAPT,nbt={SelectedItem:{id:"minecraft:recovery_compass"}}] at @s at @e[tag=SEAmob,distance=..3,scores={sea_4temp9=1}] run playsound minecraft:entity.warden.heartbeat hostile @a ~ ~ ~ 0.4 1.3
+execute as @a[tag=SEAPT,nbt={SelectedItem:{id:"minecraft:recovery_compass"}}] at @s at @e[tag=SEAmob,distance=..3,scores={sea_4temp9=1..4}] run playsound minecraft:entity.warden.heartbeat hostile @a ~ ~ ~ 0.4 1.3
 execute as @a[tag=SEAPT,nbt={SelectedItem:{id:"minecraft:recovery_compass"}}] at @s as @e[tag=SEAmob,distance=0..16,scores={sea_4temp9=4}] at @s run scoreboard players set @s sea_4temp9 0
 
 execute as @a[tag=SEAPT] at @s unless block ~ ~-1 ~ air if block ~ ~ ~ air run spawnpoint @s ~ ~ ~
