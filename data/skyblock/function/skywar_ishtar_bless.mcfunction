@@ -41,3 +41,8 @@ execute if entity @s[scores={ishtar_bless_3=13}] run give @s bow[custom_name='{"
 execute if entity @s[scores={ishtar_bless_1=13}] run give @s arrow 5
 execute if entity @s[scores={ishtar_bless_2=13}] run give @s arrow 5
 execute if entity @s[scores={ishtar_bless_3=13}] run give @s arrow 5
+
+execute if entity @s[scores={ishtar_bless_1=14}] run give @s potion[potion_contents={custom_color:7471142,custom_effects:[{id:wither,duration:100,amplifier:4},{id:fire_resistance,duration:100,amplifier:0},{id:strength,duration:100,amplifier:2}]},custom_name='["",{"text":"湮体崩裂药剂","italic":false}]']
+execute if entity @s[scores={ishtar_bless_2=14}] run give @s potion[potion_contents={custom_color:7471142,custom_effects:[{id:wither,duration:100,amplifier:4},{id:fire_resistance,duration:100,amplifier:0},{id:strength,duration:100,amplifier:2}]},custom_name='["",{"text":"湮体崩裂药剂","italic":false}]']
+execute if entity @s[scores={ishtar_bless_3=14}] run give @s potion[potion_contents={custom_color:7471142,custom_effects:[{id:wither,duration:100,amplifier:4},{id:fire_resistance,duration:100,amplifier:0},{id:strength,duration:100,amplifier:2}]},custom_name='["",{"text":"湮体崩裂药剂","italic":false}]']
+
