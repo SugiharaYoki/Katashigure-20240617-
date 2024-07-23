@@ -1,4 +1,5 @@
 playsound minecraft:ui.button.click master @s ~ ~ ~ 0.3 1.4 0.4
+tellraw @s {"text":"- 纺之礼 -","color":"yellow"}
 execute if entity @s[scores={ishtar_bless_3=1}] run tellraw @s {"text":"    统礼「末影水晶」","color":"gold","hoverEvent":{"action":"show_text","contents":{"text":"末影水晶×1","color":"white"}}}
 execute unless entity @s[scores={ishtar_bless_3=1}] run tellraw @s {"text":"    统礼「末影水晶」","color":"gray","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 133001"},"hoverEvent":{"action":"show_text","contents":{"text":"点击装备该礼装","color":"green"}}}
 execute if entity @s[scores={ishtar_bless_3=2}] run tellraw @s {"text":"    纵礼「不死图腾」","color":"gold","hoverEvent":{"action":"show_text","contents":{"text":"不死图腾×1","color":"white"}}}
@@ -13,4 +14,5 @@ execute if entity @s[scores={ishtar_bless_3=6}] run tellraw @s {"text":"    袖�
 execute unless entity @s[scores={ishtar_bless_3=6}] run tellraw @s {"text":"    袖剑「轮月」","color":"gray","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 133006"},"hoverEvent":{"action":"show_text","contents":{"text":"点击装备该礼装","color":"green"}}}
 execute if entity @s[scores={ishtar_bless_3=7}] run tellraw @s {"text":"    命唤「尸亡重兽」","color":"gold","hoverEvent":{"action":"show_text","contents":{"text":"僵尸疣猪兽蛋×2","color":"white"}}}
 execute unless entity @s[scores={ishtar_bless_3=7}] run tellraw @s {"text":"    命唤「尸亡重兽」","color":"gray","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 133007"},"hoverEvent":{"action":"show_text","contents":{"text":"点击装备该礼装","color":"green"}}}
+tellraw @s {"text":"   [返回PVP主页]","color":"yellow","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 118"},"hoverEvent":{"action":"show_text","contents":{"text":"返回PVP设置菜单","color":"green"}}}
 scoreboard players set @s MultiMenu 0
