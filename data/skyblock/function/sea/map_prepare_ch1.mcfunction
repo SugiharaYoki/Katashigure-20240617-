@@ -25,6 +25,7 @@ scoreboard objectives add sea_i_trim_ghost dummy
 scoreboard objectives add sea_i_trim_skeleton dummy
 scoreboard objectives add sea_i_iron_ingot dummy
 scoreboard objectives add sea_i_flint dummy
+scoreboard objectives add sea_i_echo_shard dummy
 scoreboard objectives add sea_chapter dummy
 scoreboard objectives add sea_boss1_hp dummy
 scoreboard objectives add sea_cursor dummy

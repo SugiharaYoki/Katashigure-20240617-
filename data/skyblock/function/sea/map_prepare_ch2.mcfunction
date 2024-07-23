@@ -115,4 +115,19 @@ item replace block 90123 128 141 container.14 with flint 1
 setblock 90118 128 120 chest[facing=west]
 setblock 90112 130 142 barrel[facing=west]
 item replace block 90112 130 142 container.6 with music_disc_stal 1
+fill 90093 128 136 90093 128 140 minecraft:redstone_block
+fill 90093 128 136 90093 128 140 minecraft:air
+setblock 90096 128 151 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 1, id:"minecraft:bread"}}
+setblock 90106 128 137 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 1, id:"minecraft:bread"}}
+setblock 90111 128 110 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:flint"}}
+setblock 90082 128 110 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:flint"}}
+setblock 90088 128 114 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:raw_iron"}}
+setblock 90095 128 119 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 3, id:"minecraft:echo_shard"}}
+fill 90088 129 115 90088 128 115 minecraft:polished_tuff_wall
+setblock 90101 129 125 air
+setblock 90101 129 125 lever[facing=west,face=ceiling]
+setblock 90088 131 118 chest[facing=north]
+item replace block 90088 131 118 container.12 with wayfinder_armor_trim_smithing_template 2
+item replace block 90088 131 118 container.14 with wild_armor_trim_smithing_template 2
+
 

@@ -92,6 +92,15 @@ execute if entity @s[tag=sea_purchase_pass] run give @s shield[custom_name='{"te
 execute if entity @s[tag=sea_purchase_pass] run clear @s iron_ingot 2
 tag @s remove sea_purchase_pass
 
+execute if score @s sea_crafter matches 10013 as @s[scores={sea_i_echo_shard=..4}] run tellraw @s {"text":"失败！素材不足！","color":"red"}
+execute if score @s sea_crafter matches 10013 as @s[nbt=!{Inventory:[{id:"minecraft:compass"}]}] run tellraw @s {"text":"我的指南针被我……丢哪去了？","color":"red"}
+execute if score @s sea_crafter matches 10013 as @s[scores={sea_i_echo_shard=5..},nbt={Inventory:[{id:"minecraft:compass"}]}] run tag @s add sea_purchase_pass
+execute if entity @s[tag=sea_purchase_pass] run playsound minecraft:item.armor.equip_iron neutral @s ~ ~ ~ 100
+execute if entity @s[tag=sea_purchase_pass] run give @s recovery_compass[custom_name='{"text":"回响指南针","italic":false,"color":"dark_blue"}',custom_data={echo_compass:true}]
+execute if entity @s[tag=sea_purchase_pass] run clear @s echo_shard 5
+execute if entity @s[tag=sea_purchase_pass] run clear @s compass 1
+tag @s remove sea_purchase_pass
+
 execute if score @s sea_crafter matches 10011 as @s[scores={sea_i_flint=..1}] run tellraw @s {"text":"失败！素材不足！","color":"red"}
 execute if score @s sea_crafter matches 10011 as @s[scores={sea_i_flint=2..},nbt=!{Inventory:[{id:"minecraft:crossbow"}]}] run tellraw @s {"text":"失败！就算制作了箭矢也使用不了！","color":"red"}
 execute if score @s sea_crafter matches 10011 as @s[scores={sea_i_flint=2..},nbt={Inventory:[{id:"minecraft:crossbow"}]}] run tag @s add sea_purchase_pass
