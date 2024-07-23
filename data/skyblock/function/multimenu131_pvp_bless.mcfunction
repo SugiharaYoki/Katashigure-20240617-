@@ -24,5 +24,7 @@ execute if entity @s[scores={ishtar_bless_1=11}] run tellraw @s {"text":"    神
 execute unless entity @s[scores={ishtar_bless_1=11}] run tellraw @s {"text":"    神威「陨落压制」","color":"gray","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 131011"},"hoverEvent":{"action":"show_text","contents":{"text":"点击装备该礼装","color":"green"}}}
 execute if entity @s[scores={ishtar_bless_1=12}] run tellraw @s {"text":"    逃亡「刹踪烟消」","color":"gold","hoverEvent":{"action":"show_text","contents":{"text":"刹踪烟消药剂×2","color":"white"}}}
 execute unless entity @s[scores={ishtar_bless_1=12}] run tellraw @s {"text":"    逃亡「刹踪烟消」","color":"gray","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 131012"},"hoverEvent":{"action":"show_text","contents":{"text":"点击装备该礼装","color":"green"}}}
+execute if entity @s[scores={ishtar_bless_1=13}] run tellraw @s {"text":"    华弓「花散绯芒」","color":"gold","hoverEvent":{"action":"show_text","contents":{"text":"超多重射击弓 箭矢×5","color":"white"}}}
+execute unless entity @s[scores={ishtar_bless_1=13}] run tellraw @s {"text":"    华弓「花散绯芒」","color":"gray","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 131013"},"hoverEvent":{"action":"show_text","contents":{"text":"点击装备该礼装","color":"green"}}}
 tellraw @s {"text":"   [返回PVP主页]","color":"yellow","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 118"},"hoverEvent":{"action":"show_text","contents":{"text":"返回PVP设置菜单","color":"green"}}}
 scoreboard players set @s MultiMenu 0
