@@ -241,6 +241,7 @@ execute if block -131 59 -117 green_concrete if score @n[tag=sc] SSgspT matches 
 execute if block -131 59 -117 green_concrete if score @n[tag=sc] SSgspT matches 17 run execute as @a[tag=PVPing] at @s run give @s green_dye 8
 execute if block -131 59 -117 green_concrete if score @n[tag=sc] SSgspT matches 17 run execute as @a[tag=PVPing] at @s run give @s yellow_dye 8
 
+execute if block -131 58 -133 diamond_block if score @n[tag=sc] SSgspT matches 17 run execute as @a[tag=PVPing] at @s run function skyblock:skywar_ishtar_bless
 #execute if score @n[tag=sc] SSgspT matches 18 run tellraw @a[tag=PVPing] {"text":"看板狐： 所有参与者已合并为 A C 两组","color":"dark_green"}
 #execute if score @n[tag=sc] SSgspT matches 18 run team join Team1_1 @a[team=Team1_3]
 #execute if score @n[tag=sc] SSgspT matches 18 run team join Team1_2 @a[team=Team1_4]

@@ -208,6 +208,11 @@ execute as @a[scores={MultiMenu=119}] at @s run function skyblock:multimenu119_p
 execute as @a[scores={MultiMenu=120}] at @s run function skyblock:multimenu120_setting_selectcitybgm_extend2b
 execute as @a[scores={MultiMenu=121}] at @s run function skyblock:multimenu121_setting_selectcitybgm_extend2c
 
+execute as @a[scores={MultiMenu=131}] at @s run function skyblock:multimenu131_pvp_bless
+execute as @a[scores={MultiMenu=132}] at @s run function skyblock:multimenu132_pvp_bless
+execute as @a[scores={MultiMenu=133}] at @s run function skyblock:multimenu133_pvp_bless
+execute as @a[scores={MultiMenu=131001..133999}] at @s run function skyblock:multimenu131_pvp_bless_execute
+
 execute as @a[scores={MultiMenu=119001..119099}] at @s run function skyblock:world_system_functionreader_pvpjob
 execute as @a[scores={MultiMenu=101700..102000}] at @s run function skyblock:world_system_functionreader_musicbox
 execute as @a[scores={MultiMenu=16210001..16329999}] at @s run function skyblock:world_system_functionreader_purchase
