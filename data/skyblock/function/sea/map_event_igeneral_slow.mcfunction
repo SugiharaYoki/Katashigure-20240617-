@@ -108,7 +108,7 @@ execute as @a[tag=SEAPT,x=90131,y=122,z=136,distance=0..2.4,tag=!e_i_11] run tag
 
 
 #回响指南针
-execute as @a[tag=SEAPT,nbt={SelectedItem:{id:"minecraft:recovery_compass"}}] run effect give @s darkness 1 0 true
+execute as @a[tag=SEAPT,nbt={SelectedItem:{id:"minecraft:recovery_compass"}}] run effect give @s darkness 3 0 true
 execute as @a[tag=SEAPT,nbt={SelectedItem:{id:"minecraft:recovery_compass"}}] at @s run effect give @e[tag=SEAmob,distance=0..12] glowing 1 0 false
 execute as @a[tag=SEAPT,nbt={SelectedItem:{id:"minecraft:recovery_compass"}}] as @e[tag=SEAmob,distance=0..16] at @s run scoreboard players add @s sea_4temp9 1
 execute as @a[tag=SEAPT,nbt={SelectedItem:{id:"minecraft:recovery_compass"}}] at @e[tag=SEAmob,distance=8..16,scores={sea_4temp9=4}] run playsound minecraft:entity.warden.heartbeat hostile @a ~ ~ ~ 0.3 0.9
