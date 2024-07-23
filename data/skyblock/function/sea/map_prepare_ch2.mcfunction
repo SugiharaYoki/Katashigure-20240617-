@@ -113,5 +113,6 @@ item replace block 90123 128 141 container.12 with coal 1
 item replace block 90123 128 141 container.14 with flint 1
 
 setblock 90118 128 120 chest[facing=west]
-
+setblock 90112 130 142 barrel[facing=west]
+item replace block 90112 130 142 container.6 with music_disc_stal 1
 
