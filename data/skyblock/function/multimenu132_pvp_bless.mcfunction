@@ -28,5 +28,7 @@ execute if entity @s[scores={ishtar_bless_2=13}] run tellraw @s {"text":"    华
 execute unless entity @s[scores={ishtar_bless_2=13}] run tellraw @s {"text":"    华弓「花散绯芒」","color":"gray","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 132013"},"hoverEvent":{"action":"show_text","contents":{"text":"点击装备该礼装","color":"green"}}}
 execute if entity @s[scores={ishtar_bless_2=14}] run tellraw @s {"text":"    暴劣「湮体崩裂」","color":"gold","hoverEvent":{"action":"show_text","contents":{"text":"药剂 自残并增加攻击力5秒","color":"white"}}}
 execute unless entity @s[scores={ishtar_bless_2=14}] run tellraw @s {"text":"    暴劣「湮体崩裂」","color":"gray","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 132014"},"hoverEvent":{"action":"show_text","contents":{"text":"点击装备该礼装","color":"green"}}}
+execute if entity @s[scores={ishtar_bless_2=15}] run tellraw @s {"text":"    筑稳「雕刻罗盘」","color":"gold","hoverEvent":{"action":"show_text","contents":{"text":"罗盘 副手持有时增加方块操作距离","color":"white"}}}
+execute unless entity @s[scores={ishtar_bless_2=15}] run tellraw @s {"text":"    筑稳「雕刻罗盘」","color":"gray","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 132015"},"hoverEvent":{"action":"show_text","contents":{"text":"点击装备该礼装","color":"green"}}}
 tellraw @s {"text":"   [返回PVP主页]","color":"yellow","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 118"},"hoverEvent":{"action":"show_text","contents":{"text":"返回PVP设置菜单","color":"green"}}}
 scoreboard players set @s MultiMenu 0
