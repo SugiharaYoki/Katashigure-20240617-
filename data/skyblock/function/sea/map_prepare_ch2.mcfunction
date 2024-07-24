@@ -149,10 +149,10 @@ setblock 90086 129 143 minecraft:potted_azalea_bush
 setblock 90091 129 143 minecraft:potted_azalea_bush
 setblock 90074 129 148 minecraft:potted_bamboo
 
-setblock 90077 130 141 minecraft:waxed_copper_grate
+setblock 90077 130 141 minecraft:waxed_oxidized_copper_grate
 setblock 90077 129 152 air
 setblock 90077 129 152 lever[facing=west]
-fill 90077 129 145 90077 128 145 minecraft:waxed_copper_grate
+fill 90077 129 145 90077 128 145 minecraft:waxed_oxidized_copper_grate
 
 
 setblock 90070 122 145 chest[facing=east]
