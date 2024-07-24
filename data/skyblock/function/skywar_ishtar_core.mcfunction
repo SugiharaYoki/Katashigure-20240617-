@@ -37,3 +37,8 @@ execute if entity @s[scores={If_MD_Wait=1..}] run effect give @a[tag=PVPing,dist
 execute if entity @s[scores={If_MD_Wait=1..}] run effect give @a[tag=PVPing,distance=0.1..5.3] resistance 5 4
 execute if entity @s[scores={If_MD_Wait=1..}] run effect give @a[tag=PVPing,distance=0.1..5.3] wither 5 0
 execute if entity @s[scores={If_MD_Wait=1..}] run scoreboard players set @s If_MD_Wait 0
+
+
+execute if entity @s[nbt={SelectedItem:{components:{"minecraft:custom_data":{skywar_antiinvis:1}}}}] at @a[distance=0.1..5,nbt={active_effects:[{id:"minecraft:invisibility"}]}] run playsound minecraft:block.note_block.chime ambient @a ~ ~1 ~ 4 1.5
+execute if entity @s[nbt={SelectedItem:{components:{"minecraft:custom_data":{skywar_antiinvis:1}}}}] as @a[distance=0.1..5,nbt={active_effects:[{id:"minecraft:invisibility"}]}] at @s run effect give @s glowing 5 0 true
+execute if entity @s[nbt={SelectedItem:{components:{"minecraft:custom_data":{skywar_antiinvis:1}}}}] as @a[distance=0.1..5,nbt={active_effects:[{id:"minecraft:invisibility"}]}] at @s run effect clear @s invisibility
