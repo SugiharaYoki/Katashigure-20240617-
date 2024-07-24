@@ -12,7 +12,7 @@ execute positioned 90121 123 140 unless entity @e[type=glow_item_frame,distance=
 execute positioned 90123 123 101 unless entity @e[type=glow_item_frame,distance=0..4] run summon minecraft:glow_item_frame ~ ~ ~ {Tags:[iframe_sea,iframe_sea_safeaxe],Invisible:0b,Fixed:0b,Invulnerable:0b,Facing:4b,Item:{id:"minecraft:iron_axe",components:{custom_name:'{"text":"消防斧","italic":false,"color":"red"}',custom_data:{sea_safeaxe:true},attribute_modifiers:[{type:"generic.attack_damage",slot:"hand",id:"sea_weapon:004_01",amount:6.5,operation:"add_value"},{type:"generic.attack_speed",slot:"hand",id:"sea_weapon:004_02",amount:-3.0,operation:"add_value"}],unbreakable:{}}}}
 execute positioned 90137 129 137 unless entity @e[type=glow_item_frame,distance=0..4] run summon minecraft:glow_item_frame ~ ~ ~ {Tags:[iframe_sea,iframe_sea_crossbow],Invisible:0b,Fixed:0b,Invulnerable:0b,Facing:5b,Item:{id:"minecraft:crossbow",components:{custom_name:'{"text":"工程弩","italic":false,"color":"red"}',custom_data:{sea_crossbow:true},unbreakable:{}}}}
 
-execute positioned 90075 129 120 unless entity @e[type=glow_item_frame,distance=0..4] run summon minecraft:glow_item_frame ~ ~ ~ {Tags:[iframe_sea,iframe_sea_spectral],Invisible:0b,Fixed:0b,Invulnerable:0b,Facing:1b,Item:{id:"minecraft:flow_armor_trim_smithing_template",components:{custom_name:'{"text":"光棱魔板","italic":true,"color":"light_purple","italic":false}',lore:['{"text":"静滞光锥 I","color":"white","italic":false}'],custom_data:{sea_t_spectral1:true}}}}
+execute positioned 90075 129 120 unless entity @e[type=glow_item_frame,distance=0..4] run summon minecraft:glow_item_frame ~ ~ ~ {Tags:[iframe_sea,iframe_sea_spectral],Invisible:1b,Fixed:0b,Invulnerable:0b,Facing:1b,Item:{id:"minecraft:flow_armor_trim_smithing_template",components:{custom_name:'{"text":"光棱魔板","italic":true,"color":"light_purple","italic":false}',lore:['{"text":"静滞光锥 I","color":"white","italic":false}'],custom_data:{sea_t_spectral1:true}}}}
 
 
 execute as @a[tag=SEAPT,tag=!e_w_01] at @s if entity @s[nbt={Inventory:[{id:"minecraft:iron_hoe"}]}] run tellraw @s {"text": "获得武器：撬棍","color": "dark_red"}
@@ -157,6 +157,7 @@ execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp3=18}] run setbloc
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp3=28}] run setblock 90079 129 136 minecraft:air
 
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp3=38}] as @a[tag=SEAPT] store result score @s sea_i_spectral run clear @s spectral_arrow 0
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp3=38}] as @a[tag=SEAPT] unless entity @s[scores={sea_i_spectral_load=-999..}] run scoreboard players set @s sea_i_spectral_load 0
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp3=38}] as @a[tag=SEAPT,scores={sea_i_spectral=..2,sea_i_spectral_load=..4}] run scoreboard players add @s sea_i_spectral_load 1
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp3=38}] as @a[tag=SEAPT,scores={sea_i_spectral=..2,sea_i_spectral_load=5..}] run give @s spectral_arrow
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp3=38}] as @a[tag=SEAPT,scores={sea_i_spectral=..2,sea_i_spectral_load=5..}] run scoreboard players set @s sea_i_spectral_load 0
