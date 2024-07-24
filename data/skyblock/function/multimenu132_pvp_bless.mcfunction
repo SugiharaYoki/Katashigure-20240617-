@@ -30,7 +30,7 @@ execute if entity @s[scores={ishtar_bless_2=14}] run tellraw @s {"text":"    暴
 execute unless entity @s[scores={ishtar_bless_2=14}] run tellraw @s {"text":"    暴劣「湮体崩裂」","color":"gray","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 132014"},"hoverEvent":{"action":"show_text","contents":{"text":"点击装备该礼装","color":"green"}}}
 execute if entity @s[scores={ishtar_bless_2=15}] run tellraw @s {"text":"    筑稳「雕刻罗盘」","color":"gold","hoverEvent":{"action":"show_text","contents":{"text":"罗盘 持有时增加方块操作距离","color":"white"}}}
 execute unless entity @s[scores={ishtar_bless_2=15}] run tellraw @s {"text":"    筑稳「雕刻罗盘」","color":"gray","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 132015"},"hoverEvent":{"action":"show_text","contents":{"text":"点击装备该礼装","color":"green"}}}
-execute if entity @s[scores={ishtar_bless_2=16}] run tellraw @s {"text":"    夜城「刺客尊荣」","color":"gold","hoverEvent":{"action":"show_text","contents":{"text":"特殊模板 持有时5格内隐身玩家显形","color":"white"}}}
+execute if entity @s[scores={ishtar_bless_2=16}] run tellraw @s {"text":"    夜城「刺客尊荣」","color":"gold","hoverEvent":{"action":"show_text","contents":{"text":"特殊模板 背包里存在时5格内隐身玩家显形","color":"white"}}}
 execute unless entity @s[scores={ishtar_bless_2=16}] run tellraw @s {"text":"    夜城「刺客尊荣」","color":"gray","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 132016"},"hoverEvent":{"action":"show_text","contents":{"text":"点击装备该礼装","color":"green"}}}
 tellraw @s {"text":"   [返回PVP主页]","color":"yellow","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 118"},"hoverEvent":{"action":"show_text","contents":{"text":"返回PVP设置菜单","color":"green"}}}
 scoreboard players set @s MultiMenu 0
