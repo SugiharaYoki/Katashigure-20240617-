@@ -39,6 +39,27 @@ execute if block 90088 128 114 air unless entity @a[tag=SEAPT,tag=e_i_20] positi
 execute if block 90088 128 114 air unless entity @a[tag=SEAPT,tag=e_i_20] run fill 90088 129 115 90088 128 115 minecraft:air destroy
 execute if block 90088 128 114 air unless entity @a[tag=SEAPT,tag=e_i_20] run tag @a[tag=SEAPT] add e_i_20
 
+
+
+execute as @a[tag=SEAPT,x=90081,y=128,z=141,distance=0..1.3,tag=!e_i_21] at @s positioned 90077 128 144 run function skyblock:sea/m/silverfish_big
+execute as @a[tag=SEAPT,x=90081,y=128,z=141,distance=0..1.3,tag=!e_i_21] at @s positioned 90077 128 144 run function skyblock:sea/m/silverfish_big
+execute as @a[tag=SEAPT,x=90081,y=128,z=141,distance=0..1.3,tag=!e_i_21] at @s positioned 90077 131 141 run function skyblock:sea/m/pillager
+execute as @a[tag=SEAPT,x=90081,y=128,z=141,distance=0..1.3,tag=!e_i_21] positioned 90075 128 129 run function skyblock:sea/m/pillager
+execute as @a[tag=SEAPT,x=90081,y=128,z=141,distance=0..1.3,tag=!e_i_21] positioned 90075 128 129 run function skyblock:sea/m/pillager
+execute as @a[tag=SEAPT,x=90081,y=128,z=141,distance=0..1.3,tag=!e_i_21] positioned 90075 128 129 run function skyblock:sea/m/drowned_hat
+execute as @a[tag=SEAPT,x=90081,y=128,z=141,distance=0..1.3,tag=!e_i_21] positioned 90075 128 129 run function skyblock:sea/m/drowned_hat
+execute as @a[tag=SEAPT,x=90081,y=128,z=141,distance=0..1.3,tag=!e_i_21] positioned 90075 128 129 run function skyblock:sea/m/drowned_hat
+execute as @a[tag=SEAPT,x=90081,y=128,z=141,distance=0..1.3,tag=!e_i_21] positioned 90075 128 129 run function skyblock:sea/m/drowned_shield
+execute as @a[tag=SEAPT,x=90081,y=128,z=141,distance=0..1.3,tag=!e_i_21] at @s run setblock 90077 130 141 air destroy
+execute as @a[tag=SEAPT,x=90081,y=128,z=141,distance=0..1.3,tag=!e_i_21] at @s run tag @a[tag=SEAPT] add e_i_21
+
+execute if block 90077 130 141 air unless block 90077 129 145 air unless entity @e[tag=SEAmob,x=90075,y=127,z=130,distance=0..6] run fill 90077 129 145 90077 128 145 air destroy
+execute if block 90077 130 141 air unless block 90075 129 126 air unless entity @e[tag=SEAmob,x=90075,y=127,z=130,distance=0..6] positioned 90075 128 125 run function skyblock:sea/m/drowned_shield
+execute if block 90077 130 141 air unless block 90075 129 126 air unless entity @e[tag=SEAmob,x=90075,y=127,z=130,distance=0..6] positioned 90075 128 125 run function skyblock:sea/m/drowned_shield
+execute if block 90077 130 141 air unless block 90075 129 126 air unless entity @e[tag=SEAmob,x=90075,y=127,z=130,distance=0..6] positioned 90075 128 125 run function skyblock:sea/m/zombie_security
+execute if block 90077 130 141 air unless block 90075 129 126 air unless entity @e[tag=SEAmob,x=90075,y=127,z=130,distance=0..6] positioned 90075 128 125 run function skyblock:sea/m/zombie_security
+execute if block 90077 130 141 air unless block 90075 129 126 air unless entity @e[tag=SEAmob,x=90075,y=127,z=130,distance=0..6] run fill 90075 128 126 90075 129 126 air destroy
+
 execute unless entity @a[tag=SEAPT,tag=e_i_18] run particle minecraft:squid_ink 90117.90 131.00 137.01 1 2 2 0.0 30
 execute unless entity @a[tag=SEAPT,tag=e_i_18] run execute positioned 90117.52 128.00 137.03 as @e[distance=0..3] at @s run damage @s 12 minecraft:hot_floor
 
@@ -49,18 +70,11 @@ execute as @a[tag=SEAPT,x=90112,y=128,z=136,distance=0..2.3,tag=!e_i_17] at @s r
 execute at @n[tag=SEArivette] as @a[tag=SEAPT,distance=0..3.3,tag=!e_i_19] at @s run tellraw @s {"text": "这家伙……怎么回事？！","color": "red"}
 execute at @n[tag=SEArivette] as @a[tag=SEAPT,distance=0..3.3,tag=!e_i_19] at @s run tag @s add e_i_19
 
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp3=10..80}] run scoreboard players add @s sea_4temp3 1
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp3=31}] run scoreboard players set @s sea_4temp3 11
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp3=11}] run setblock 90101 129 138 minecraft:redstone_block
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp3=16}] run setblock 90101 129 136 minecraft:redstone_block
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp3=21}] run setblock 90101 129 138 minecraft:air
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp3=26}] run setblock 90101 129 136 minecraft:air
+
 
 
 execute as @a[tag=SEAPT,x=90111,y=128,z=125,distance=0..2.3,tag=!e_i_15] positioned 90109 128 120 run function skyblock:sea/m/silverfish
 execute as @a[tag=SEAPT,x=90111,y=128,z=125,distance=0..2.3,tag=!e_i_15] positioned 90109 128 120 run function skyblock:sea/m/silverfish
-execute as @a[tag=SEAPT,x=90111,y=128,z=125,distance=0..2.3,tag=!e_i_15] at @s run scoreboard players set @n[tag=sc,scores={sea_4temp3=..0}] sea_4temp3 10
-execute as @a[tag=SEAPT,x=90111,y=128,z=125,distance=0..2.3,tag=!e_i_15] at @s run scoreboard players set @n[tag=sc,scores={sea_4temp3=100..}] sea_4temp3 10
 execute as @a[tag=SEAPT,x=90111,y=128,z=125,distance=0..2.3,tag=!e_i_15] positioned 90109 128 120 if entity @n[tag=sc,scores={sea_player=2..}] run function skyblock:sea/m/silverfish
 execute as @a[tag=SEAPT,x=90111,y=128,z=125,distance=0..2.3,tag=!e_i_15] positioned 90109 128 120 if entity @n[tag=sc,scores={sea_player=4..}] run function skyblock:sea/m/silverfish
 execute as @a[tag=SEAPT,x=90111,y=128,z=125,distance=0..2.3,tag=!e_i_15] positioned 90106 128 137 run function skyblock:sea/m/drowned_hat
@@ -204,6 +218,7 @@ execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=505}] as @e[tag=
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=505}] positioned 90100 128 120 run function skyblock:sea/m/silverfish
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=505}] positioned 90100 128 120 run function skyblock:sea/m/silverfish
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=505}] positioned 90100 128 120 run function skyblock:sea/m/silverfish
+
 
 particle minecraft:snowflake 90139.33 132.00 128.33 7 0 6 0.0 2
 particle minecraft:snowflake 90141 132 138 6 0 6 0.0 3

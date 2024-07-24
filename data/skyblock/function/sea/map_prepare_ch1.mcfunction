@@ -14,6 +14,7 @@ scoreboard objectives add sea_4temp7 dummy
 scoreboard objectives add sea_4temp8 dummy
 scoreboard objectives add sea_4temp9 dummy
 scoreboard objectives add sea_4temp10 dummy
+scoreboard objectives add sea_static minecraft.used:minecraft.snowball
 scoreboard objectives add sea_crafter trigger
 scoreboard objectives add sea_i_emerald dummy
 scoreboard objectives add sea_i_trim_zombie dummy
@@ -24,6 +25,8 @@ scoreboard objectives add sea_i_trim_sea dummy
 scoreboard objectives add sea_i_trim_ghost dummy
 scoreboard objectives add sea_i_trim_skeleton dummy
 scoreboard objectives add sea_i_iron_ingot dummy
+scoreboard objectives add sea_i_spectral dummy
+scoreboard objectives add sea_i_spectral_load dummy
 scoreboard objectives add sea_i_flint dummy
 scoreboard objectives add sea_i_echo_shard dummy
 scoreboard objectives add sea_chapter dummy

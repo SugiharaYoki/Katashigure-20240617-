@@ -129,9 +129,14 @@ setblock 90096 128 151 decorated_pot{sherds:["heart_pottery_sherd","heart_potter
 setblock 90106 128 137 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 1, id:"minecraft:bread"}}
 setblock 90111 128 110 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:flint"}}
 setblock 90082 128 110 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:flint"}}
+setblock 90070 128 153 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:flint"}}
 setblock 90088 128 114 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:raw_iron"}}
-setblock 90095 128 119 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 3, id:"minecraft:echo_shard"}}
-setblock 90115 128 150 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 3, id:"minecraft:echo_shard"}}
+setblock 90073 128 150 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:coal"}}
+setblock 90095 128 119 decorated_pot{sherds:["mourner_pottery_sherd","mourner_pottery_sherd","mourner_pottery_sherd","mourner_pottery_sherd"],item:{count: 3, id:"minecraft:echo_shard"}}
+setblock 90115 128 150 decorated_pot{sherds:["mourner_pottery_sherd","mourner_pottery_sherd","mourner_pottery_sherd","mourner_pottery_sherd"],item:{count: 3, id:"minecraft:echo_shard"}}
+setblock 90082 122 148 decorated_pot{sherds:["mourner_pottery_sherd","mourner_pottery_sherd","mourner_pottery_sherd","mourner_pottery_sherd"],item:{count: 2, id:"minecraft:echo_shard"}}
+
+
 fill 90088 129 115 90088 128 115 minecraft:polished_tuff_wall
 setblock 90101 129 125 air
 setblock 90101 129 125 lever[facing=west,face=ceiling]
@@ -142,3 +147,24 @@ item replace block 90088 131 118 container.14 with wild_armor_trim_smithing_temp
 
 setblock 90086 129 143 minecraft:potted_azalea_bush
 setblock 90091 129 143 minecraft:potted_azalea_bush
+setblock 90074 129 148 minecraft:potted_bamboo
+
+setblock 90077 130 141 minecraft:waxed_copper_grate
+setblock 90077 129 152 air
+setblock 90077 129 152 lever[facing=west]
+fill 90077 129 145 90077 128 145 minecraft:waxed_copper_grate
+
+
+setblock 90070 122 145 chest[facing=east]
+setblock 90073 122 143 chest[facing=south]
+setblock 90075 122 143 chest[facing=south]
+item replace block 90070 122 145 container.12 with beef 2
+item replace block 90070 122 145 container.14 with beef 1
+item replace block 90073 122 143 container.11 with arrow 1
+item replace block 90073 122 143 container.13 with arrow 2
+item replace block 90073 122 143 container.15 with arrow 1
+item replace block 90075 122 143 container.12 with nether_star
+setblock 90075 122 148 furnace[facing=north]
+setblock 90075 131 127 chest[facing=north]
+item replace block 90075 131 127 container.13 with golden_carrot 3
+fill 90075 128 126 90075 129 126 minecraft:chiseled_bookshelf[facing=south]
