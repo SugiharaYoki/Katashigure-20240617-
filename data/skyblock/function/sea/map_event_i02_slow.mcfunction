@@ -54,8 +54,8 @@ execute as @a[tag=SEAPT,x=90081,y=128,z=141,distance=0..1.3,tag=!e_i_21] at @s r
 execute as @a[tag=SEAPT,x=90081,y=128,z=141,distance=0..1.3,tag=!e_i_21] at @s run tag @a[tag=SEAPT] add e_i_21
 
 execute if block 90077 130 141 air unless block 90077 129 145 air unless entity @e[tag=SEAmob,x=90075,y=127,z=130,distance=0..6] run fill 90077 129 145 90077 128 145 air destroy
-execute if block 90077 130 141 air unless block 90075 129 126 air unless entity @e[tag=SEAmob,x=90075,y=127,z=130,distance=0..6] positioned 90075 128 125 run function skyblock:sea/m/drowned_shield
 execute if block 90077 130 141 air unless block 90075 128 126 air unless entity @e[tag=SEAmob,x=90075,y=127,z=130,distance=0..6] run fill 90075 128 126 90075 128 126 air destroy
+execute if block 90077 130 141 air if block 90075 128 126 air unless block 90075 129 126 air positioned 90075 128 125 run function skyblock:sea/m/drowned_shield
 execute if block 90077 130 141 air if block 90075 128 126 air unless block 90075 129 126 air positioned 90075 128 125 run function skyblock:sea/m/drowned_shield
 execute if block 90077 130 141 air if block 90075 128 126 air unless block 90075 129 126 air positioned 90075 128 125 run function skyblock:sea/m/zombie_security
 execute if block 90077 130 141 air if block 90075 128 126 air unless block 90075 129 126 air positioned 90075 128 125 run function skyblock:sea/m/zombie_security
