@@ -11,4 +11,8 @@ execute as @e[type=spectral_arrow,tag=SEAspectral] at @s as @e[tag=SEAmob,distan
 execute as @e[type=spectral_arrow,tag=SEAspectral] at @s as @e[tag=SEAmob,distance=0..1.5,tag=!SEAspectral_immune] run particle minecraft:enchant ~ ~ ~ 0.2 1 0.2 0.7 20
 execute as @e[type=spectral_arrow,tag=SEAspectral] at @s as @e[tag=SEAmob,distance=0..1.5,tag=!SEAspectral_immune] run effect give @s slowness 5 19 false
 execute as @e[type=spectral_arrow,tag=SEAspectral] at @s as @e[tag=SEAmob,distance=0..1.5,tag=!SEAspectral_immune] run effect give @s glowing 5 0 false
+execute as @e[type=spectral_arrow,tag=SEAspectral] at @s run particle end_rod ^0.3 ^ ^ 0 0 0 0.0 1
+execute as @e[type=spectral_arrow,tag=SEAspectral] at @s run particle end_rod ^-0.3 ^ ^ 0 0 0 0.0 1
+execute as @e[type=spectral_arrow,tag=SEAspectral] at @s run particle end_rod ^ ^0.3 ^ 0 0 0 0.0 1
+execute as @e[type=spectral_arrow,tag=SEAspectral] at @s run particle end_rod ^ ^-0.3 ^ 0 0 0 0.0 1
 execute as @e[type=spectral_arrow,tag=SEAspectral,nbt={inGround:true}] at @s run kill @s
