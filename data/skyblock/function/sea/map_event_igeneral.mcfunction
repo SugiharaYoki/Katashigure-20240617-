@@ -10,7 +10,7 @@ execute as @e[type=spectral_arrow,tag=SEAspectral] at @s run function skyblock:s
 execute as @e[type=spectral_arrow,tag=SEAspectral,nbt={inGround:true}] at @s run kill @s
 
 
-execute store result score @e[type=husk,tag=SEAmob] rng1 run random value 1..20
+execute store result score @e[type=husk,tag=SEAmob] rng1 run random value 1..30
 execute store result score @e[type=husk,tag=SEAmob] rng5 run random value 5..15
 execute as @e[type=husk,tag=SEAmob,scores={rng1=1..2}] run effect give @s invisibility 1 0 true
 execute as @e[type=husk,tag=SEAmob,scores={rng1=1..2}] run particle flash ~ ~1 ~ 0 0 0 0.1 1
