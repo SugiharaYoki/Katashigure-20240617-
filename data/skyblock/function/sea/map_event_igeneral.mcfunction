@@ -21,27 +21,27 @@ execute as @e[type=husk,tag=SEAmob,scores={rng1=3..4}] run particle minecraft:so
 execute as @e[type=husk,tag=SEAmob,scores={rng5=6..7}] run effect give @s slowness 1 3 true
 execute as @e[type=husk,tag=SEAmob,scores={rng5=8..9}] run effect clear @s slowness
 execute as @e[type=husk,tag=SEAmob,scores={rng1=5..18}] run effect clear @s speed
-execute as @e[type=husk,tag=SEAmob,scores={rng1=9,rng3=..0,rng4=..0}] run scoreboard players set @s rng2 4
-execute as @e[type=husk,tag=SEAmob,scores={rng1=10,rng2=..0,rng4=..0}] run scoreboard players set @s rng3 4
-execute as @e[type=husk,tag=SEAmob,scores={rng1=11,rng2=..0,rng3=..0}] run scoreboard players set @s rng4 4
+execute as @e[type=husk,tag=SEAmob,scores={rng1=9,rng3=..0,rng4=..0}] run scoreboard players set @s rng2 5
+execute as @e[type=husk,tag=SEAmob,scores={rng1=10,rng2=..0,rng4=..0}] run scoreboard players set @s rng3 5
+execute as @e[type=husk,tag=SEAmob,scores={rng1=11,rng2=..0,rng3=..0}] run scoreboard players set @s rng4 5
 execute as @e[type=husk,tag=SEAmob] run scoreboard players remove @s rng2 1
 execute as @e[type=husk,tag=SEAmob] run scoreboard players remove @s rng3 1
 execute as @e[type=husk,tag=SEAmob] run scoreboard players remove @s rng4 1
 execute as @e[type=husk,tag=SEAmob,scores={rng2=2..3}] at @s run particle minecraft:end_rod ~ ~1 ~ 0.5 0.5 0.5 0.2 10
 execute as @e[type=husk,tag=SEAmob,scores={rng2=2..3}] at @s run playsound minecraft:entity.husk.ambient hostile @a ~ ~ ~ 0.3 1.3
 execute as @e[type=husk,tag=SEAmob,scores={rng2=3}] at @s rotated ~ 0 positioned ^15 ^ ^ run tp @s ~ ~ ~
-execute as @e[type=husk,tag=SEAmob,scores={rng2=3}] at @s run data modify entity @s NoAI set value 1b
+execute as @e[type=husk,tag=SEAmob,scores={rng2=4}] at @s run data modify entity @s NoAI set value 1b
 execute as @e[type=husk,tag=SEAmob,scores={rng2=2}] at @s positioned ^-15 ^ ^ run tp @s ~ ~ ~
 execute as @e[type=husk,tag=SEAmob,scores={rng2=2}] at @s run data modify entity @s NoAI set value 0b
 execute as @e[type=husk,tag=SEAmob,scores={rng3=2..3}] at @s run particle minecraft:end_rod ~ ~1 ~ 0.5 0.5 0.5 0.2 10
 execute as @e[type=husk,tag=SEAmob,scores={rng3=2..3}] at @s run playsound minecraft:entity.husk.ambient hostile @a ~ ~ ~ 0.3 1.3
 execute as @e[type=husk,tag=SEAmob,scores={rng3=3}] at @s rotated ~ 0 positioned ^-15 ^ ^ run tp @s ~ ~ ~
-execute as @e[type=husk,tag=SEAmob,scores={rng3=3}] at @s run data modify entity @s NoAI set value 1b
+execute as @e[type=husk,tag=SEAmob,scores={rng3=4}] at @s run data modify entity @s NoAI set value 1b
 execute as @e[type=husk,tag=SEAmob,scores={rng3=2}] at @s positioned ^15 ^ ^ run tp @s ~ ~ ~
 execute as @e[type=husk,tag=SEAmob,scores={rng3=2}] at @s run data modify entity @s NoAI set value 0b
 execute as @e[type=husk,tag=SEAmob,scores={rng4=2..3}] at @s run particle minecraft:end_rod ~ ~1 ~ 0.5 0.5 0.5 0.2 10
 execute as @e[type=husk,tag=SEAmob,scores={rng4=2..3}] at @s run playsound minecraft:entity.husk.ambient hostile @a ~ ~ ~ 0.3 1.3
 execute as @e[type=husk,tag=SEAmob,scores={rng4=3}] at @s rotated ~ 0 positioned ^ ^ ^5 run tp @s ~ ~ ~
-execute as @e[type=husk,tag=SEAmob,scores={rng4=3}] at @s run data modify entity @s NoAI set value 1b
+execute as @e[type=husk,tag=SEAmob,scores={rng4=4}] at @s run data modify entity @s NoAI set value 1b
 execute as @e[type=husk,tag=SEAmob,scores={rng4=2}] at @s positioned ^ ^ ^-4.6 run tp @s ~ ~ ~
 execute as @e[type=husk,tag=SEAmob,scores={rng4=2}] at @s run data modify entity @s NoAI set value 0b
