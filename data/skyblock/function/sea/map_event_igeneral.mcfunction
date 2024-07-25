@@ -20,9 +20,9 @@ execute as @e[type=husk,tag=SEAmob,scores={rng1=3..4}] at @s run particle minecr
 execute as @e[type=husk,tag=SEAmob,scores={rng5=6}] run effect give @s slowness 1 3 true
 execute as @e[type=husk,tag=SEAmob,scores={rng5=7..30}] run effect clear @s slowness
 execute as @e[type=husk,tag=SEAmob,scores={rng1=5..18}] run effect clear @s speed
-execute as @e[type=husk,tag=SEAmob,scores={rng1=9,rng3=..0,rng4=..0}] run scoreboard players set @s rng2 5
-execute as @e[type=husk,tag=SEAmob,scores={rng1=10,rng2=..0,rng4=..0}] run scoreboard players set @s rng3 5
-execute as @e[type=husk,tag=SEAmob,scores={rng1=11,rng2=..0,rng3=..0}] run scoreboard players set @s rng4 5
+execute as @e[type=husk,tag=SEAmob,scores={rng1=9..11,rng3=..0,rng4=..0}] run scoreboard players set @s rng2 5
+execute as @e[type=husk,tag=SEAmob,scores={rng1=12..14,rng2=..0,rng4=..0}] run scoreboard players set @s rng3 5
+execute as @e[type=husk,tag=SEAmob,scores={rng1=15,rng2=..0,rng3=..0}] run scoreboard players set @s rng4 5
 execute as @e[type=husk,tag=SEAmob] run scoreboard players remove @s rng2 1
 execute as @e[type=husk,tag=SEAmob] run scoreboard players remove @s rng3 1
 execute as @e[type=husk,tag=SEAmob] run scoreboard players remove @s rng4 1
