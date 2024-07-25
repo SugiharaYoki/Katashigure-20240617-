@@ -116,3 +116,7 @@ effect give @s weakness 1 0 true
 effect give @s speed 1 0 true
 effect give @s slowness 1 0 true
 effect give @s jump_boost 1 0 true
+effect give @s absorption 1 0 true
+effect give @s health_boost 1 0 true
+effect give @s poison 1 0 true
+effect give @s wither 1 0 true
