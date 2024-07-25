@@ -123,6 +123,18 @@ setblock 90112 130 142 barrel[facing=west]
 item replace block 90112 130 142 container.6 with music_disc_stal 1
 fill 90093 128 136 90093 128 140 minecraft:redstone_block
 fill 90093 128 136 90093 128 140 minecraft:air
+setblock 90086 128 146 air
+setblock 90092 128 143 air
+setblock 90096 128 151 air
+setblock 90106 128 137 air
+setblock 90111 128 110 air
+setblock 90082 128 110 air
+setblock 90070 128 153 air
+setblock 90088 128 114 air
+setblock 90073 128 150 air
+setblock 90095 128 119 air
+setblock 90115 128 150 air
+setblock 90082 122 148 air
 setblock 90086 128 146 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 1, id:"minecraft:beef"}}
 setblock 90092 128 143 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 1, id:"minecraft:beef"}}
 setblock 90096 128 151 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 1, id:"minecraft:bread"}}

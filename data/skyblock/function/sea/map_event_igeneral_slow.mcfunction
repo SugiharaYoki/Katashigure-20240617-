@@ -140,21 +140,21 @@ scoreboard players set @n[tag=sc,scores={sea_4temp3=..0}] sea_4temp3 10
 scoreboard players set @n[tag=sc,scores={sea_4temp3=100..}] sea_4temp3 10
 
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp3=10..80}] run scoreboard players add @s sea_4temp3 1
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp3=31}] run scoreboard players set @s sea_4temp3 11
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp3=41}] run scoreboard players set @s sea_4temp3 10
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp3=11}] run setblock 90101 129 138 minecraft:redstone_block
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp3=16}] run setblock 90101 129 136 minecraft:redstone_block
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp3=21}] run setblock 90101 129 138 minecraft:air
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp3=26}] run setblock 90101 129 136 minecraft:air
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp3=5}] run setblock 90080 129 139 minecraft:redstone_block
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp3=10}] run setblock 90082 129 139 minecraft:redstone_block
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp3=15}] run setblock 90084 129 139 minecraft:redstone_block
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp3=16}] run setblock 90080 129 139 minecraft:air
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp3=21}] run setblock 90082 129 139 minecraft:air
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp3=26}] run setblock 90084 129 139 minecraft:air
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp3=13}] run setblock 90079 129 138 minecraft:redstone_block
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp3=23}] run setblock 90079 129 136 minecraft:redstone_block
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp3=18}] run setblock 90079 129 138 minecraft:air
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp3=28}] run setblock 90079 129 136 minecraft:air
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp3=15}] run setblock 90080 129 139 minecraft:redstone_block
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp3=20}] run setblock 90082 129 139 minecraft:redstone_block
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp3=25}] run setblock 90084 129 139 minecraft:redstone_block
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp3=26}] run setblock 90080 129 139 minecraft:air
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp3=31}] run setblock 90082 129 139 minecraft:air
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp3=36}] run setblock 90084 129 139 minecraft:air
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp3=23}] run setblock 90079 129 138 minecraft:redstone_block
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp3=33}] run setblock 90079 129 136 minecraft:redstone_block
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp3=28}] run setblock 90079 129 138 minecraft:air
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp3=38}] run setblock 90079 129 136 minecraft:air
 
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp3=28}] as @a[tag=SEAPT] store result score @s sea_i_spectral run clear @s spectral_arrow 0
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp3=28}] as @a[tag=SEAPT] unless entity @s[scores={sea_i_spectral_load=-999..}] run scoreboard players set @s sea_i_spectral_load 0
