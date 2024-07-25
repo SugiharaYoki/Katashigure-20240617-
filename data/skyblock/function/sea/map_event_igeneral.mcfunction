@@ -14,6 +14,7 @@ execute store result score @e[type=husk,tag=SEAmob] rng1 run random value 1..30
 execute store result score @e[type=husk,tag=SEAmob] rng5 run random value 5..15
 execute as @e[type=husk,tag=SEAmob,scores={rng1=1..3}] run effect give @s invisibility 1 0 true
 execute as @e[type=husk,tag=SEAmob,scores={rng1=1}] at @s run particle sonic_boom ~ ~1 ~ 0 0 0 0.1 1
+execute as @e[type=husk,tag=SEAmob,scores={rng1=29..30}] at @s run particle electric_spark ~ ~1 ~ 0 0 0 0.1 5
 execute as @e[type=husk,tag=SEAmob,scores={rng1=4..30}] run effect clear @s invisibility
 execute as @e[type=husk,tag=SEAmob,scores={rng1=3..4}] run effect give @s speed 1 3 true
 execute as @e[type=husk,tag=SEAmob,scores={rng1=3..4}] at @s run particle minecraft:sonic_boom ~ ~1 ~ 0.3 0.3 0.3 1 2
