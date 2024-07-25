@@ -23,7 +23,7 @@ execute as @e[type=husk,tag=SEAmob,scores={rng5=8..9}] run effect clear @s slown
 execute as @e[type=husk,tag=SEAmob,scores={rng1=5..18}] run effect clear @s speed
 execute as @e[type=husk,tag=SEAmob,scores={rng1=9..11}] run scoreboard players set @s rng2 4
 execute as @e[type=husk,tag=SEAmob,scores={rng1=12..13}] run scoreboard players set @s rng3 4
-execute as @e[type=husk,tag=SEAmob,scores={rng1=14..15}] run scoreboard players set @s rng4 1
+execute as @e[type=husk,tag=SEAmob,scores={rng1=14..15}] run scoreboard players set @s rng4 4
 execute as @e[type=husk,tag=SEAmob] run scoreboard players remove @s rng2 1
 execute as @e[type=husk,tag=SEAmob] run scoreboard players remove @s rng3 1
 execute as @e[type=husk,tag=SEAmob] run scoreboard players remove @s rng4 1
