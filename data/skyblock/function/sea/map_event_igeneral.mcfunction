@@ -18,8 +18,8 @@ execute as @e[type=husk,tag=SEAmob,scores={rng1=4..30}] run effect clear @s invi
 execute as @e[type=husk,tag=SEAmob,scores={rng1=29..30}] run particle end_rod ~ ~1 ~ 0.2 0.4 0.2 0.1 10
 execute as @e[type=husk,tag=SEAmob,scores={rng1=3..4}] run effect give @s speed 1 3 true
 execute as @e[type=husk,tag=SEAmob,scores={rng1=3..4}] run particle minecraft:sonic_boom ~ ~1 ~ 0.3 0.3 0.3 1 2
-execute as @e[type=husk,tag=SEAmob,scores={rng5=6..7}] run effect give @s slowness 1 3 true
-execute as @e[type=husk,tag=SEAmob,scores={rng5=8..9}] run effect clear @s slowness
+execute as @e[type=husk,tag=SEAmob,scores={rng5=6}] run effect give @s slowness 1 3 true
+execute as @e[type=husk,tag=SEAmob,scores={rng5=7..30}] run effect clear @s slowness
 execute as @e[type=husk,tag=SEAmob,scores={rng1=5..18}] run effect clear @s speed
 execute as @e[type=husk,tag=SEAmob,scores={rng1=9,rng3=..0,rng4=..0}] run scoreboard players set @s rng2 5
 execute as @e[type=husk,tag=SEAmob,scores={rng1=10,rng2=..0,rng4=..0}] run scoreboard players set @s rng3 5
