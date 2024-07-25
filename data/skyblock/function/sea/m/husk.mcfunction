@@ -1,0 +1,1 @@
+summon husk ~ ~ ~ {CustomName:'[{"text":"呻吟者"}]',DeathLootTable:"skyblock:sea_drowned1",Tags:["SEAmob","SEAspectral_immune"],attributes:[{id:"generic.attack_damage",base:3.0},{id:"generic.movement_speed",base:0.39},{id:"generic.max_health",base:18}],Health:18,PersistenceRequired:1b}
