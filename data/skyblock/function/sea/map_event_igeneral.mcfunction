@@ -14,7 +14,7 @@ execute store result score @e[type=husk,tag=SEAmob] rng1 run random value 1..30
 execute store result score @e[type=husk,tag=SEAmob] rng5 run random value 5..15
 execute as @e[type=husk,tag=SEAmob,scores={rng1=1..3}] run effect give @s invisibility 1 0 true
 execute as @e[type=husk,tag=SEAmob,scores={rng1=1..3}] run effect give @s glowing 1 0 true
-execute as @e[type=husk,tag=SEAmob,scores={rng1=1..3}] run particle flash ~ ~1 ~ 0 0 0 0.1 1
+execute as @e[type=husk,tag=SEAmob,scores={rng1=1..3}] run particle sonic_boom ~ ~1 ~ 0 0 0 0.1 1
 execute as @e[type=husk,tag=SEAmob,scores={rng1=4..30}] run effect clear @s invisibility
 execute as @e[type=husk,tag=SEAmob,scores={rng1=4..30}] run effect clear @s glowing
 execute as @e[type=husk,tag=SEAmob,scores={rng1=29..30}] run particle end_rod ~ ~1 ~ 0.2 0.4 0.2 0.1 10
@@ -29,15 +29,15 @@ execute as @e[type=husk,tag=SEAmob,scores={rng1=14..15}] run scoreboard players 
 execute as @e[type=husk,tag=SEAmob] run scoreboard players remove @s rng2 1
 execute as @e[type=husk,tag=SEAmob] run scoreboard players remove @s rng3 1
 execute as @e[type=husk,tag=SEAmob] run scoreboard players remove @s rng4 1
-execute as @e[type=husk,tag=SEAmob,scores={rng2=2..3}] at @s run particle minecraft:flash ~ ~1 ~ 0.5 0.5 0.5 0.2 10
+execute as @e[type=husk,tag=SEAmob,scores={rng2=2..3}] at @s run particle minecraft:end_rod ~ ~1 ~ 0.5 0.5 0.5 0.2 10
 execute as @e[type=husk,tag=SEAmob,scores={rng2=2..3}] at @s run playsound minecraft:entity.husk.ambient hostile @a ~ ~ ~ 0.3 1.3
 execute as @e[type=husk,tag=SEAmob,scores={rng2=3}] at @s rotated ~ 0 positioned ^15 ^ ^ align y run tp @s ~ ~ ~
 execute as @e[type=husk,tag=SEAmob,scores={rng2=2}] at @s rotated ~ 0 positioned ^-15 ^ ^ align y run tp @s ~ ~ ~
-execute as @e[type=husk,tag=SEAmob,scores={rng3=2..3}] at @s run particle minecraft:flash ~ ~1 ~ 0.5 0.5 0.5 0.2 10
+execute as @e[type=husk,tag=SEAmob,scores={rng3=2..3}] at @s run particle minecraft:end_rod ~ ~1 ~ 0.5 0.5 0.5 0.2 10
 execute as @e[type=husk,tag=SEAmob,scores={rng3=2..3}] at @s run playsound minecraft:entity.husk.ambient hostile @a ~ ~ ~ 0.3 1.3
 execute as @e[type=husk,tag=SEAmob,scores={rng3=3}] at @s rotated ~ 0 positioned ^-15 ^ ^ align y run tp @s ~ ~ ~
 execute as @e[type=husk,tag=SEAmob,scores={rng3=2}] at @s rotated ~ 0 positioned ^15 ^ ^ align y run tp @s ~ ~ ~
-execute as @e[type=husk,tag=SEAmob,scores={rng4=2..3}] at @s run particle minecraft:flash ~ ~1 ~ 0.5 0.5 0.5 0.2 10
+execute as @e[type=husk,tag=SEAmob,scores={rng4=2..3}] at @s run particle minecraft:end_rod ~ ~1 ~ 0.5 0.5 0.5 0.2 10
 execute as @e[type=husk,tag=SEAmob,scores={rng4=2..3}] at @s run playsound minecraft:entity.husk.ambient hostile @a ~ ~ ~ 0.3 1.3
 execute as @e[type=husk,tag=SEAmob,scores={rng4=3}] at @s rotated ~ 0 positioned ^ ^ ^5 align y run tp @s ~ ~ ~
 execute as @e[type=husk,tag=SEAmob,scores={rng4=2}] at @s rotated ~ 0 positioned ^ ^ ^-4.6 align y run tp @s ~ ~ ~
