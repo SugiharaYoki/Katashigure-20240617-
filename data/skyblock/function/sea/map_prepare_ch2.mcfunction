@@ -180,3 +180,8 @@ setblock 90075 122 148 furnace[facing=north]
 setblock 90075 131 127 chest[facing=north]
 item replace block 90075 131 127 container.13 with golden_carrot 3
 fill 90075 128 126 90075 129 126 minecraft:chiseled_bookshelf[facing=south]
+setblock 90073 129 120 minecraft:potted_torchflower
+setblock 90077 129 120 minecraft:potted_torchflower
+
+
+

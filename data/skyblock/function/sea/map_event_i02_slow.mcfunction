@@ -128,6 +128,10 @@ execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp6=1..8}] run score
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp6=2}] run fill 90098 128 128 90098 128 127 air
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp6=4}] run fill 90098 129 128 90098 129 127 air
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp6=6}] run fill 90098 130 128 90098 130 127 air
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp6=5}] positioned 90087 128 123 run function skyblock:sea/m/silverfish
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp6=5}] positioned 90087 128 123 run function skyblock:sea/m/silverfish
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp6=5}] positioned 90087 128 123 run function skyblock:sea/m/silverfish
+
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp6=2}] run playsound minecraft:block.iron_door.open ambient @a 90098 131 128 3 0.3
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp6=4}] run playsound minecraft:block.iron_door.open ambient @a 90098 131 128 3 0.3
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp6=6}] run playsound minecraft:block.iron_door.open ambient @a 90098 131 128 3 0.3
