@@ -12,10 +12,10 @@ execute as @e[type=spectral_arrow,tag=SEAspectral,nbt={inGround:true}] at @s run
 
 execute store result score @e[type=husk,tag=SEAmob] rng1 run random value 1..30
 execute store result score @e[type=husk,tag=SEAmob] rng5 run random value 5..15
-execute as @e[type=husk,tag=SEAmob,scores={rng1=1..2}] run effect give @s invisibility 1 0 true
-execute as @e[type=husk,tag=SEAmob,scores={rng1=1..2}] run particle flash ~ ~1 ~ 0 0 0 0.1 1
-execute as @e[type=husk,tag=SEAmob,scores={rng1=19..20}] run effect clear @s invisibility
-execute as @e[type=husk,tag=SEAmob,scores={rng1=19..20}] run particle end_rod ~ ~1 ~ 0.2 0.4 0.2 0.1 10
+execute as @e[type=husk,tag=SEAmob,scores={rng1=1..3}] run effect give @s invisibility 1 0 true
+execute as @e[type=husk,tag=SEAmob,scores={rng1=1..3}] run particle flash ~ ~1 ~ 0 0 0 0.1 1
+execute as @e[type=husk,tag=SEAmob,scores={rng1=4..30}] run effect clear @s invisibility
+execute as @e[type=husk,tag=SEAmob,scores={rng1=29..30}] run particle end_rod ~ ~1 ~ 0.2 0.4 0.2 0.1 10
 execute as @e[type=husk,tag=SEAmob,scores={rng1=3..4}] run effect give @s speed 1 3 true
 execute as @e[type=husk,tag=SEAmob,scores={rng1=3..4}] run particle minecraft:sonic_boom ~ ~1 ~ 0.3 0.3 0.3 1 2
 execute as @e[type=husk,tag=SEAmob,scores={rng5=6..7}] run effect give @s slowness 1 3 true
