@@ -38,3 +38,4 @@ fill 50141 31 50554 50000 31 50400 water replace minecraft:blue_concrete
 summon guardian 50073 30 50472
 summon guardian 50073 30 50472
 setblock 50048 51 50440 air
+setblock 50048 51 50488 air
