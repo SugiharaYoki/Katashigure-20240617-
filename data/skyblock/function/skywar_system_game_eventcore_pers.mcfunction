@@ -4,6 +4,8 @@ execute if entity @n[tag=sc,scores={Temp5_LoopE=0}] unless entity @a[team=Team1_
 execute if entity @n[tag=sc,scores={Temp5_LoopE=0}] unless entity @a[team=Team1_1,tag=!PVP_observer] run execute unless entity @a[team=Team1_2,tag=!PVP_observer] run execute unless entity @a[team=Team1_3,tag=!PVP_observer] run scoreboard players add @n[tag=sc] Temp5_LoopE 1
 execute as @a[tag=PVP_see,tag=!PVPing,gamemode=!creative] at @s run gamemode spectator @s
 execute as @a[tag=PVPing,scores={DeathCount=1..}] run tag @s add PVP_observer
+execute as @a[tag=PVP_observer] run tag @s add PVP_see
+execute as @a[tag=!Gaming,tag=!NoSkyWar,gamemode=spectator] run tag @s add PVP_see
 execute as @a[tag=PVP_observer,gamemode=!creative] at @s run gamemode spectator @s
 execute as @a[tag=PVP_observer] at @s run tag @s remove PVPing
 execute as @a[tag=PVP_observer] at @s run tag @s add PVP_dead

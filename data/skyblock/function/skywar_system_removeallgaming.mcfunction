@@ -110,3 +110,13 @@ attribute @s generic.attack_speed modifier remove 8603fc7b-b1fa-47c6-91f5-84321a
 attribute @s generic.attack_speed modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd410
 attribute @s generic.attack_speed modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd411
 attribute @s generic.attack_speed modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd412
+
+effect give @s strength 1 0 true
+effect give @s weakness 1 0 true
+effect give @s speed 1 0 true
+effect give @s slowness 1 0 true
+effect give @s jump_boost 1 0 true
+effect give @s absorption 1 0 true
+effect give @s health_boost 1 0 true
+effect give @s poison 1 0 true
+effect give @s wither 1 0 true
