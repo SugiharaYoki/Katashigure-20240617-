@@ -185,3 +185,11 @@ setblock 90077 129 120 minecraft:potted_torchflower
 
 
 
+setblock 90093 128 136 minecraft:redstone_block
+setblock 90093 128 136 minecraft:air
+setblock 90093 128 138 minecraft:redstone_block
+setblock 90093 128 138 minecraft:air
+setblock 90093 128 140 minecraft:redstone_block
+setblock 90093 128 140 minecraft:air
+
+
