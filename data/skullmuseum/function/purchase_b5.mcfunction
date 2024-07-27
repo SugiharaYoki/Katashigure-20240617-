@@ -2,5 +2,5 @@ execute if entity @s[scores={SkMu_Silv=1..}] run tellraw @s {"text":"已成功�
 execute if entity @s[scores={SkMu_Silv=..0}] run tellraw @s [{"text":"票券不足！","color":"red"},{"text":" 需求品质： 银","color":"gray"}]
 execute if entity @s[scores={SkMu_Silv=1..}] run tag @s add purchasesuccess
 execute as @s at @s[tag=purchasesuccess] run tag @s remove SkMu_Silv
-execute as @s at @s[tag=purchasesuccess] run give @s minecraft:player_head[custom_name='{"text":"Clock"}',profile={name:"Johnsquawk"}] 1
+execute as @s at @s[tag=purchasesuccess] run give @s minecraft:player_head[minecraft:profile={name:"Johnsquawk",properties:[{name:"textures",value:"ewogICJ0aW1lc3RhbXAiIDogMTYxNzY2MjYzMDYxOCwKICAicHJvZmlsZUlkIiA6ICIyNWRiNjg3ZDQ3OTg0MThiYTMzNjUyNTcyMTRmZDVlMiIsCiAgInByb2ZpbGVOYW1lIiA6ICJKb2huc3F1YXdrIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2ZiYzQyYmMxN2MzYzE2Yjk5ZDc4ZGJhMDQ3NWM3YjNkZjdjNzM2OTk4ODJjNWRlY2RjMDA4ZjY4ZDQ0N2RlMWUiCiAgICB9CiAgfQp9"}],id:[I;635136125,1201160587,-1556721065,558880226]},custom_name='"Clock"'] 1
 execute as @s at @s[tag=purchasesuccess] run tag @s remove purchasesuccess

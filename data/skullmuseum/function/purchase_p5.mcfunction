@@ -2,5 +2,5 @@ execute if entity @s[scores={SkMu_Gold=1..}] run tellraw @s {"text":"已成功�
 execute if entity @s[scores={SkMu_Gold=..0}] run tellraw @s [{"text":"票券不足！","color":"red"},{"text":" 需求品质： 金","color":"gray"}]
 execute if entity @s[scores={SkMu_Gold=1..}] run tag @s add purchasesuccess
 execute as @s at @s[tag=purchasesuccess] run tag @s remove SkMu_Gold
-execute as @s at @s[tag=purchasesuccess] run give @s minecraft:player_head[profile="Botium_"] 1
+execute as @s at @s[tag=purchasesuccess] run give @s minecraft:player_head[minecraft:profile={name:"Botium_",properties:[{name:"textures",value:"ewogICJ0aW1lc3RhbXAiIDogMTYxODM0ODg1MDcyNSwKICAicHJvZmlsZUlkIiA6ICJhNDI4ZDAyZDNjMzM0YzI0YmQwNDkxNjZhYTc3NjcxYSIsCiAgInByb2ZpbGVOYW1lIiA6ICJCb3RpdW1fIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2U1N2NiMDRjYjdlZmViNjRkY2E3ZDJlODcwYTE1OGI3OTExYTlmZTNkYWQyZGQyYmQzZjk5M2JiMGVkMzk3YzMiCiAgICB9CiAgfQp9"}],id:[I;-1540829139,1009994788,-1123774106,-1435015398]}] 1
 execute as @s at @s[tag=purchasesuccess] run tag @s remove purchasesuccess
