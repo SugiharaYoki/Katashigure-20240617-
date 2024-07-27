@@ -265,7 +265,7 @@ execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp4=419}] positioned
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp4=419}] positioned 90130 128 144 if entity @n[tag=sc,scores={sea_player=4..}] run function skyblock:sea/m/skeleton
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp4=423}] run fill 90130 129 144 90130 128 144 air destroy
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp4=405..}] run playsound minecraft:entity.minecart.riding ambient @a 90130 132 141 1.5 0.7
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp4=403}] positioned 90099 128 143 run function skyblock:sea/m/special_rivette
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp4=403}] positioned 90100 128 142 run function skyblock:sea/m/special_rivette
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp4=405}] run setblock 90100 128 142 air
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp4=405}] run setblock 90100 129 142 air
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp4=405}] run setblock 90100 128 142 iron_door[facing=west,half=lower,open=true]
