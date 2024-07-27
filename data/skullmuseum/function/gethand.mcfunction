@@ -1,4 +1,5 @@
 data modify storage skullmuseum name set from entity @s SelectedItem.components."minecraft:profile".name
+data modify storage minecraft:skullmuseum custom_name set value ""
 data modify storage skullmuseum custom_name set from entity @s SelectedItem.components."minecraft:custom_name"
 data modify storage skullmuseum signature set from entity @s SelectedItem.components."minecraft:profile".properties[{name:"textures"}].signature
 data modify storage skullmuseum value set from entity @s SelectedItem.components."minecraft:profile".properties[{name:"textures"}].value
