@@ -7,11 +7,3 @@ data modify storage skullmuseum id2 set from entity @s SelectedItem.components."
 data modify storage skullmuseum id3 set from entity @s SelectedItem.components."minecraft:profile".id[3]
 
 function skullmuseum:gethand_sub1 with storage skullmuseum
-
-data remove storage skullmuseum name
-data remove storage skullmuseum signature
-data remove storage skullmuseum value
-data remove storage skullmuseum id0
-data remove storage skullmuseum id1
-data remove storage skullmuseum id2
-data remove storage skullmuseum id3
