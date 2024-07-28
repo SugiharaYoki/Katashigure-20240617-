@@ -1,0 +1,1 @@
+$give @s minecraft:player_head[minecraft:profile={name:"$(name)",properties:[{name:"textures",signature:"$(signature)",value:"$(value)"}],id:[I;$(id0),$(id1),$(id2),$(id3)]}]
