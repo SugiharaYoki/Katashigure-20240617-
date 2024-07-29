@@ -1,4 +1,4 @@
-tellraw @a[tag=SEAPT] [{"selector":"@s","color":"blue"},{"text":" 正在使用多功能工作站","color":"gray"}]
+
 function skyblock:sea/shop_calculation
 tellraw @s {"text":"『多功能工作站』","bold":true,"color":"white"}
 tellraw @s {"text":"   "}
