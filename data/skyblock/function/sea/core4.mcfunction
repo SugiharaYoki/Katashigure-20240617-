@@ -35,11 +35,11 @@ execute as @a[tag=SEAPT,nbt=!{Inventory:[{components:{"minecraft:custom_data":{s
 execute as @a[tag=SEAPT,nbt={Inventory:[{components:{"minecraft:custom_data":{sea_t_damage3:true}}}]}] run attribute @s minecraft:generic.attack_damage modifier add sea_t_damage3 1 add_value
 execute as @a[tag=SEAPT,nbt=!{Inventory:[{components:{"minecraft:custom_data":{sea_t_damage3:true}}}]}] run attribute @s minecraft:generic.attack_damage modifier remove sea_t_damage3
 
-execute as @a[tag=SEAPT,nbt={Inventory:[{components:{"minecraft:custom_data":{sea_t_speed1:true}}}]}] run attribute @s minecraft:generic.movement_speed modifier add sea_t_speed1 0.02 add_value
+execute as @a[tag=SEAPT,nbt={Inventory:[{components:{"minecraft:custom_data":{sea_t_speed1:true}}}]}] run attribute @s minecraft:generic.movement_speed modifier add sea_t_speed1 0.01 add_value
 execute as @a[tag=SEAPT,nbt=!{Inventory:[{components:{"minecraft:custom_data":{sea_t_speed1:true}}}]}] run attribute @s minecraft:generic.movement_speed modifier remove sea_t_speed1
-execute as @a[tag=SEAPT,nbt={Inventory:[{components:{"minecraft:custom_data":{sea_t_speed2:true}}}]}] run attribute @s minecraft:generic.movement_speed modifier add sea_t_speed2 0.04 add_value
+execute as @a[tag=SEAPT,nbt={Inventory:[{components:{"minecraft:custom_data":{sea_t_speed2:true}}}]}] run attribute @s minecraft:generic.movement_speed modifier add sea_t_speed2 0.01 add_value
 execute as @a[tag=SEAPT,nbt=!{Inventory:[{components:{"minecraft:custom_data":{sea_t_speed2:true}}}]}] run attribute @s minecraft:generic.movement_speed modifier remove sea_t_speed2
-execute as @a[tag=SEAPT,nbt={Inventory:[{components:{"minecraft:custom_data":{sea_t_speed3:true}}}]}] run attribute @s minecraft:generic.movement_speed modifier add sea_t_speed3 0.04 add_value
+execute as @a[tag=SEAPT,nbt={Inventory:[{components:{"minecraft:custom_data":{sea_t_speed3:true}}}]}] run attribute @s minecraft:generic.movement_speed modifier add sea_t_speed3 0.01 add_value
 execute as @a[tag=SEAPT,nbt=!{Inventory:[{components:{"minecraft:custom_data":{sea_t_speed3:true}}}]}] run attribute @s minecraft:generic.movement_speed modifier remove sea_t_speed3
 
 execute as @a[tag=SEAPT,nbt={Inventory:[{components:{"minecraft:custom_data":{sea_t_attackspeed1:true}}}]}] run attribute @s minecraft:generic.attack_speed modifier add sea_t_attackspeed1 0.05 add_value
