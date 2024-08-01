@@ -296,14 +296,14 @@ execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp7=18}] run playsou
 
 
 execute as @n[tag=sc,scores={sea_4temp2=509..600,sea_4temp4=454..}] run scoreboard players set @s sea_4temp2 800
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=800..830}] run scoreboard players add @s sea_4temp4 1
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=840..850}] run scoreboard players add @s sea_4temp4 1
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=860..870}] run scoreboard players add @s sea_4temp4 1
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=800..830}] run scoreboard players add @s sea_4temp2 1
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=840..850}] run scoreboard players add @s sea_4temp2 1
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=860..870}] run scoreboard players add @s sea_4temp2 1
 
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=..805}] run playsound minecraft:entity.minecart.riding ambient @a 90104 133 100 1.0 0.7
 
-execute if entity @a[x=90111,y=128,z=123,distance=0..3] as @n[tag=sc,scores={sea_4temp2=830..839}] run scoreboard players set @s sea_4temp4 840
-execute if entity @a[x=90105,y=128,z=110,distance=0..5] as @n[tag=sc,scores={sea_4temp2=849..851}] run scoreboard players set @s sea_4temp4 860
+execute if entity @a[x=90111,y=128,z=123,distance=0..3] as @n[tag=sc,scores={sea_4temp2=830..839}] run scoreboard players set @s sea_4temp2 840
+execute if entity @a[x=90105,y=128,z=110,distance=0..5] as @n[tag=sc,scores={sea_4temp2=849..851}] run scoreboard players set @s sea_4temp2 860
 
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=841}] run summon minecraft:piglin 90111 128 115 {Rotation:[0f,0f],NoAI:1b,Tags:["SEAeventfirstpig"]}
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=841}] run setblock 90110 131 116 air
