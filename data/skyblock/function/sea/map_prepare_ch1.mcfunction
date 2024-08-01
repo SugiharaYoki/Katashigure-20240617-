@@ -263,7 +263,7 @@ fill 90076 121 109 90077 121 108 minecraft:waxed_copper_grate
 
 
 setblock 90084 101 139 furnace[facing=south]
-
+setblock 90087 101 135 chest[facing=south]
 
 
 
