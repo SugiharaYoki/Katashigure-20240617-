@@ -87,12 +87,14 @@ item replace block 90084 122 106 container.13 with flow_banner_pattern[custom_na
 
 item replace block 90125 128 124 container.2 with flow_banner_pattern[custom_name='{"text":"工程处后厨的笔记 - 瑞佛特","italic":true,"color":"dark_purple","italic":false}',lore=['{"text":"23号 处理掉了剩下还没有腐烂的猪肉","color":"white","italic":false}','{"text":"24号 没有粮食了 只能吃干面包 通风管道里好吵","color":"white","italic":false}','{"text":"25号 干面包很难吃 德怀特还没有从通风系统维护处回来","color":"white","italic":false}','{"text":"26号 德怀特带来了新鲜的猪肉 配着面包吃 通风管道好吵","color":"white","italic":false}','{"text":"27号 通风管道好吵","color":"white","italic":false}','{"text":"28号 已经没有新鲜的猪肉了 现在该派潘去修通风系统了","color":"white","italic":false}','{"text":"29号 没有猪肉 只有干面包","color":"white","italic":false}','{"text":"30号 我终于醒悟了 我的身上也有猪肉","color":"white","italic":false}']]
 item replace block 90110 128 135 container.13 with flow_banner_pattern[custom_name='{"text":"南冷冻室门口的笔记 - 德怀特","italic":true,"color":"dark_purple","italic":false}',lore=['{"text":"他们已经连续开了六天的会议，看来已经无法回头了。","color":"white","italic":false}','{"text":"这里根本不会有猪肉，我们从来就没有进过猪肉。","color":"white","italic":false}','{"text":"但是没人敢忤逆瑞佛特主厨，他是我们之间唯一拿着弩的。","color":"white","italic":false}','{"text":"南冷冻室天天传来噪音，伙计们的神智本就已经不太稳定。","color":"white","italic":false}','{"text":"今天打开大门果真发现了变异的怪物。为了调查，我会把这些尸体带回去。","color":"white","italic":false}']]
+
 execute as @e[type=interaction,tag=SEAcrafter] on target run scoreboard players enable @s sea_crafter
 execute as @e[type=interaction,tag=SEAcrafter] on target run tellraw @a[tag=SEAPT] [{"selector":"@s","color":"blue"},{"text":" 正在使用多功能工作站","color":"gray"}]
 execute as @e[type=interaction,tag=SEAcrafter] on target run scoreboard players set @s sea_crafter 1
 execute as @e[type=interaction,tag=SEAcrafter] run data remove entity @s interaction
 
 execute as @e[type=interaction,tag=SEAaidbox] on target run effect give @s instant_health 1 0 true
+execute as @e[type=interaction,tag=SEAaidbox] on target run playsound minecraft:entity.generic.drink player @a ~ ~ ~ 0.5 0.6
 execute as @e[type=interaction,tag=SEAaidbox] run data remove entity @s interaction
 
 #particle minecraft:trial_spawner_detection_ominous 90117.90 127.00 137.01 2 0 2 0.0 30
