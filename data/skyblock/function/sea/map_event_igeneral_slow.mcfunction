@@ -145,7 +145,7 @@ execute as @e[tag=SEAmagma1,type=marker] at @s if entity @a[tag=SEAPT,distance=0
 scoreboard players set @n[tag=sc,scores={sea_4temp_environment=..0}] sea_4temp_environment 10
 scoreboard players set @n[tag=sc,scores={sea_4temp_environment=100..}] sea_4temp_environment 10
 
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp_environment=10..80}] run scoreboard players add @s sea_4temp_environment 1
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp_environment=1..80}] run scoreboard players add @s sea_4temp_environment 1
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp_environment=41}] run scoreboard players set @s sea_4temp_environment 10
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp_environment=11}] run setblock 90101 129 138 minecraft:redstone_block
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp_environment=16}] run setblock 90101 129 136 minecraft:redstone_block
