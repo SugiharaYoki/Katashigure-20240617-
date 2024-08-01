@@ -299,7 +299,11 @@ execute as @n[tag=sc,scores={sea_4temp2=509..600,sea_4temp4=454..}] run scoreboa
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=800..900}] run scoreboard players add @s sea_4temp4 1
 
 
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=810}] run tellraw @a[tag=SEAPT] {"text": "播报：系统警告，北区冷冻库系统过载，请相关工作人员检查电路系统。","color": "red"}
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=810}] run tellraw @a[tag=SEAPT] {"text": "播报：系统警告，北区冷冻库系统过","color": "red"}
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=813}] run tellraw @a[tag=SEAPT] {"text": "库系统过载，请相","color": "red"}
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=814}] run tellraw @a[tag=SEAPT] {"text": "冻库系统过","color": "red"}
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=819}] run tellraw @a[tag=SEAPT] {"text": "工作人员检查电","color": "red"}
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=823}] run tellraw @a[tag=SEAPT] {"text": "关工作人员检","color": "red"}
 
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=..805}] run playsound minecraft:entity.minecart.riding ambient @a 90104 133 100 1.0 0.7
 
