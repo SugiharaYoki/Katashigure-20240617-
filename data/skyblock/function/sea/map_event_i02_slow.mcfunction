@@ -301,5 +301,6 @@ execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=800..900}] run s
 
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=810}] run tellraw @a[tag=SEAPT] {"text": "播报：系统警告，北区冷冻库系统过载，请相关工作人员检查电路系统。","color": "red"}
 
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=..805}] run playsound minecraft:entity.minecart.riding ambient @a 90104 133 100 1.0 0.7
 
 
