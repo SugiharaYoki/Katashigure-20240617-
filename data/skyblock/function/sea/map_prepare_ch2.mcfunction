@@ -198,3 +198,10 @@ fill 90073 128 144 90073 129 144 minecraft:waxed_oxidized_copper
 fill 90148 131 142 90146 129 142 polished_diorite
 setblock 90148 130 132 redstone_block
 setblock 90148 130 132 air
+
+summon minecraft:interaction 90083 102.3 139 {CustomName:'[{"text":"多功能工作站"}]',Tags:["SEAcrafter"]}
+
+
+
+
+

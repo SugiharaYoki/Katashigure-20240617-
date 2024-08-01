@@ -260,3 +260,10 @@ setblock 90078 110 111 minecraft:air
 setblock 90074 110 132 chest[facing=north]
 item replace block 90074 110 132 container.13 with wild_armor_trim_smithing_template 2
 fill 90076 121 109 90077 121 108 minecraft:waxed_copper_grate
+
+
+setblock 90084 101 139 furnace[facing=south]
+
+
+
+
