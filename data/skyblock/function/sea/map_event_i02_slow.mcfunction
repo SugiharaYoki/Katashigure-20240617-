@@ -296,7 +296,7 @@ execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp7=18}] run playsou
 
 
 execute as @n[tag=sc,scores={sea_4temp2=509..600,sea_4temp4=454..}] run scoreboard players set @s sea_4temp2 800
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=800..900}] run scoreboard players add @s sea_4temp4 1
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=800..830}] run scoreboard players add @s sea_4temp4 1
 
 
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=810}] run tellraw @a[tag=SEAPT] {"text": "播报：系统警告，北区冷冻库系统过","color": "red"}
