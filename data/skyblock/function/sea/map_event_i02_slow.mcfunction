@@ -317,6 +317,7 @@ execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=813}] run tellra
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=814}] run tellraw @a[tag=SEAPT] {"text": "冻库系统过","color": "red"}
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=819}] run tellraw @a[tag=SEAPT] {"text": "工作人员检查电","color": "red"}
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=823}] run tellraw @a[tag=SEAPT] {"text": "关工作人员检","color": "red"}
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=826..829}] run tellraw @a[tag=SEAPT] {"text": "电路系","color": "red"}
 
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=861}] run setblock 90101 132 110 minecraft:tinted_glass
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=861}] run setblock 90106 132 110 minecraft:tinted_glass
