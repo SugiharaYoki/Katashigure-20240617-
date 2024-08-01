@@ -201,7 +201,7 @@ setblock 90148 130 132 air
 
 summon minecraft:interaction 90083 102.3 139 {CustomName:'[{"text":"多功能工作站"}]',Tags:["SEAcrafter"]}
 
-
+fill 90133 129 126 90133 128 126 minecraft:powder_snow
 
 
 
