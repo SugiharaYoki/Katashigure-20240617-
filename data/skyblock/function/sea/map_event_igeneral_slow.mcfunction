@@ -94,7 +94,7 @@ execute as @e[type=interaction,tag=SEAcrafter] on target run scoreboard players 
 execute as @e[type=interaction,tag=SEAcrafter] run data remove entity @s interaction
 
 execute as @e[type=interaction,tag=SEAaidbox] on target run effect give @s instant_health 1 0 true
-execute as @e[type=interaction,tag=SEAaidbox] on target run playsound minecraft:entity.generic.drink player @a ~ ~ ~ 0.5 0.6
+execute as @e[type=interaction,tag=SEAaidbox] on target at @s run playsound minecraft:entity.generic.drink player @a ~ ~ ~ 0.5 0.6
 execute as @e[type=interaction,tag=SEAaidbox] run data remove entity @s interaction
 
 #particle minecraft:trial_spawner_detection_ominous 90117.90 127.00 137.01 2 0 2 0.0 30
