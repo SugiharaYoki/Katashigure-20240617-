@@ -55,3 +55,10 @@ execute as @a[tag=SEAPT,nbt={Inventory:[{components:{"minecraft:custom_data":{se
 execute as @a[tag=SEAPT,nbt=!{Inventory:[{components:{"minecraft:custom_data":{sea_t_health2:true}}}]}] run attribute @s minecraft:generic.max_health modifier remove sea_t_health2
 execute as @a[tag=SEAPT,nbt={Inventory:[{components:{"minecraft:custom_data":{sea_t_health3:true}}}]}] run attribute @s minecraft:generic.max_health modifier add sea_t_health3 4 add_value
 execute as @a[tag=SEAPT,nbt=!{Inventory:[{components:{"minecraft:custom_data":{sea_t_health3:true}}}]}] run attribute @s minecraft:generic.max_health modifier remove sea_t_health3
+
+execute as @a[tag=SEAPT,nbt={Inventory:[{components:{"minecraft:custom_data":{sea_t_knockback1:true}}}]}] run attribute @s minecraft:generic.attack_knockback modifier add sea_t_knockback1 0.2 add_value
+execute as @a[tag=SEAPT,nbt=!{Inventory:[{components:{"minecraft:custom_data":{sea_t_knockback1:true}}}]}] run attribute @s minecraft:generic.attack_knockback modifier remove sea_t_knockback1
+execute as @a[tag=SEAPT,nbt={Inventory:[{components:{"minecraft:custom_data":{sea_t_knockback2:true}}}]}] run attribute @s minecraft:generic.attack_knockback modifier add sea_t_knockback2 0.4 add_value
+execute as @a[tag=SEAPT,nbt=!{Inventory:[{components:{"minecraft:custom_data":{sea_t_knockback2:true}}}]}] run attribute @s minecraft:generic.attack_knockback modifier remove sea_t_knockback2
+execute as @a[tag=SEAPT,nbt={Inventory:[{components:{"minecraft:custom_data":{sea_t_knockback3:true}}}]}] run attribute @s minecraft:generic.attack_knockback modifier add sea_t_knockback3 0.4 add_value
+execute as @a[tag=SEAPT,nbt=!{Inventory:[{components:{"minecraft:custom_data":{sea_t_knockback3:true}}}]}] run attribute @s minecraft:generic.attack_knockback modifier remove sea_t_knockback3

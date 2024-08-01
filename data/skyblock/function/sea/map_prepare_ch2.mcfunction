@@ -191,5 +191,10 @@ setblock 90093 128 138 minecraft:redstone_block
 setblock 90093 128 138 minecraft:air
 setblock 90093 128 140 minecraft:redstone_block
 setblock 90093 128 140 minecraft:air
+setblock 90075 128 140 furnace[facing=west]
+setblock 90075 128 142 furnace[facing=west]
 
-
+fill 90073 128 144 90073 129 144 minecraft:waxed_oxidized_copper
+fill 90148 131 142 90146 129 142 polished_diorite
+setblock 90148 130 132 redstone_block
+setblock 90148 130 132 air
