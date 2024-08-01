@@ -320,6 +320,8 @@ execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=823}] run tellra
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=826..829}] run tellraw @a[tag=SEAPT] {"text": "路系统","color": "red"}
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=813..822}] run playsound minecraft:ambient.soul_sand_valley.mood ambient @a 90104 133 100 13 1.5
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=813..829}] run playsound minecraft:ambient.soul_sand_valley.additions ambient @a 90104 133 100 13 1.5
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=823}] run fill 90104 130 103 90103 128 103 air
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=823}] run playsound minecraft:entity.zombie.attack_iron_door ambient @a 90103 128 103 2 0.5
 
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=861}] run setblock 90101 132 110 minecraft:tinted_glass
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=861}] run setblock 90106 132 110 minecraft:tinted_glass
