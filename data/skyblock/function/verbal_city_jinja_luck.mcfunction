@@ -67,7 +67,14 @@ execute unless score @s dailydiv4y matches -999.. run scoreboard players set @s 
 execute unless score @s dailydiv5y matches -999.. run scoreboard players set @s dailydiv5y 12
 execute unless score @s dailydiv6y matches -999.. run scoreboard players set @s dailydiv6y 12
 execute unless score @s dailydiv7y matches -999.. run scoreboard players set @s dailydiv7y 12
-execute unless entity @s[scores={dailydiv=-1..}] run scoreboard players set @s dailydiv 0
+execute if score @s dailydiv1y matches 13.. run scoreboard players set @s dailydiv1y 12
+execute if score @s dailydiv2y matches 13.. run scoreboard players set @s dailydiv2y 12
+execute if score @s dailydiv3y matches 13.. run scoreboard players set @s dailydiv3y 12
+execute if score @s dailydiv4y matches 13.. run scoreboard players set @s dailydiv4y 12
+execute if score @s dailydiv5y matches 13.. run scoreboard players set @s dailydiv5y 12
+execute if score @s dailydiv6y matches 13.. run scoreboard players set @s dailydiv6y 12
+execute if score @s dailydiv7y matches 13.. run scoreboard players set @s dailydiv7y 12
+execute if entity @s[scores={dailydiv=-1..}] run scoreboard players set @s dailydiv 0
 execute if score @s dailydiv < @n[tag=sc] dailydiv run scoreboard players operation @s dailydiv1y = @s dailydiv1
 execute if score @s dailydiv < @n[tag=sc] dailydiv run scoreboard players operation @s dailydiv2y = @s dailydiv2
 execute if score @s dailydiv < @n[tag=sc] dailydiv run scoreboard players operation @s dailydiv3y = @s dailydiv3
