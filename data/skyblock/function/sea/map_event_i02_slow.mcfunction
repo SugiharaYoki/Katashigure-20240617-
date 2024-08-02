@@ -22,14 +22,14 @@ execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=36}] run setbloc
 
 execute as @a[tag=SEAPT,x=90116,y=128,z=129,distance=0..2] run scoreboard players set @n[tag=sc,scores={sea_4temp2=..49}] sea_4temp2 50
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=50..65}] run scoreboard players add @s sea_4temp2 1
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=51}] as @e[tag=SEAeventi02slow1] at @s run data modify entity @s NoAI set value false
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=52}] as @e[tag=SEAeventi02slow1] at @s run data modify entity @s NoAI set value true
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=51}] as @e[tag=SEAeventi02slow2] at @s run data modify entity @s NoAI set value false
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=52}] as @e[tag=SEAeventi02slow2] at @s run data modify entity @s NoAI set value true
 #execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=65}] as @a[x=90116,y=128,z=129,tag=SEAPT,distance=0..7] run tellraw @s {"text": "是我的……幻觉？","color": "gray"}
 
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=11}] run summon skeleton 90113 128 130 {StrayConversionTime:999999,NoAI:true,Invulnerable:true,Rotation:[180.0f,0.0f],DeathLootTable:"skyblock:sea_skeleton1",Tags:["SEAmob","SEAeventi02slow1"],attributes:[{id:"generic.attack_damage",base:2.0},{id:"generic.movement_speed",base:0.16},{id:"generic.max_health",base:12}],Health:12,PersistenceRequired:1b}
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=11}] run summon skeleton 90115 128 130 {StrayConversionTime:999999,NoAI:true,Invulnerable:true,Rotation:[180.0f,0.0f],DeathLootTable:"skyblock:sea_skeleton1",Tags:["SEAmob","SEAeventi02slow1"],attributes:[{id:"generic.attack_damage",base:2.0},{id:"generic.movement_speed",base:0.16},{id:"generic.max_health",base:12}],Health:12,PersistenceRequired:1b}
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=11}] run summon skeleton 90109 128 130 {StrayConversionTime:999999,NoAI:true,Invulnerable:true,Rotation:[180.0f,0.0f],DeathLootTable:"skyblock:sea_skeleton1",Tags:["SEAmob","SEAeventi02slow1"],attributes:[{id:"generic.attack_damage",base:2.0},{id:"generic.movement_speed",base:0.16},{id:"generic.max_health",base:12}],Health:12,PersistenceRequired:1b}
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=11}] run summon skeleton 90107 128 130 {StrayConversionTime:999999,NoAI:true,Invulnerable:true,Rotation:[180.0f,0.0f],DeathLootTable:"skyblock:sea_skeleton1",Tags:["SEAmob","SEAeventi02slow1"],attributes:[{id:"generic.attack_damage",base:2.0},{id:"generic.movement_speed",base:0.16},{id:"generic.max_health",base:12}],Health:12,PersistenceRequired:1b}
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=11}] run summon skeleton 90113 128 130 {StrayConversionTime:999999,NoAI:true,Invulnerable:true,Rotation:[180.0f,0.0f],DeathLootTable:"skyblock:sea_skeleton1",Tags:["SEAmob","SEAeventi02slow2"],attributes:[{id:"generic.attack_damage",base:2.0},{id:"generic.movement_speed",base:0.16},{id:"generic.max_health",base:12}],Health:12,PersistenceRequired:1b}
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=11}] run summon skeleton 90115 128 130 {StrayConversionTime:999999,NoAI:true,Invulnerable:true,Rotation:[180.0f,0.0f],DeathLootTable:"skyblock:sea_skeleton1",Tags:["SEAmob","SEAeventi02slow2"],attributes:[{id:"generic.attack_damage",base:2.0},{id:"generic.movement_speed",base:0.16},{id:"generic.max_health",base:12}],Health:12,PersistenceRequired:1b}
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=11}] run summon skeleton 90109 128 130 {StrayConversionTime:999999,NoAI:true,Invulnerable:true,Rotation:[180.0f,0.0f],DeathLootTable:"skyblock:sea_skeleton1",Tags:["SEAmob","SEAeventi02slow2"],attributes:[{id:"generic.attack_damage",base:2.0},{id:"generic.movement_speed",base:0.16},{id:"generic.max_health",base:12}],Health:12,PersistenceRequired:1b}
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=11}] run summon skeleton 90107 128 130 {StrayConversionTime:999999,NoAI:true,Invulnerable:true,Rotation:[180.0f,0.0f],DeathLootTable:"skyblock:sea_skeleton1",Tags:["SEAmob","SEAeventi02slow2"],attributes:[{id:"generic.attack_damage",base:2.0},{id:"generic.movement_speed",base:0.16},{id:"generic.max_health",base:12}],Health:12,PersistenceRequired:1b}
 
 execute as @a[tag=SEAPT,x=90111,y=128,z=117,distance=0..2.3,tag=!e_i_14] at @s run tellraw @s {"text": "物资储藏室空无一物。依据正常消耗来说……不论如何也该剩下些什么。","color": "gray"}
 execute as @a[tag=SEAPT,x=90111,y=128,z=117,distance=0..2.3,tag=!e_i_14] at @s run tag @s add e_i_14
@@ -235,8 +235,8 @@ execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=407..424}] run p
 
 execute as @a[tag=SEAPT,x=90111,y=128,z=129,distance=0..2] as @n[tag=sc,scores={sea_4temp2=450..}] unless entity @s[scores={sea_4temp2=500..}] run scoreboard players set @s sea_4temp2 500
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=500..510}] run scoreboard players add @s sea_4temp2 1
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=505}] as @e[tag=SEAeventi02slow1] at @s run data modify entity @s NoAI set value false
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=505}] as @e[tag=SEAeventi02slow1] at @s run data modify entity @s Invulnerable set value false
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=505}] as @e[tag=SEAeventi02slow2] at @s run data modify entity @s NoAI set value false
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=505}] as @e[tag=SEAeventi02slow2] at @s run data modify entity @s Invulnerable set value false
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=505}] positioned 90100 128 120 run function skyblock:sea/m/silverfish
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=505}] positioned 90100 128 120 run function skyblock:sea/m/silverfish
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=505}] positioned 90100 128 120 run function skyblock:sea/m/silverfish
@@ -300,11 +300,16 @@ execute as @n[tag=sc,scores={sea_4temp2=509..600,sea_4temp4=454..}] run scoreboa
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=800..830}] run scoreboard players add @s sea_4temp2 1
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=840..850}] run scoreboard players add @s sea_4temp2 1
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=860..870}] run scoreboard players add @s sea_4temp2 1
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=900..920}] run scoreboard players add @s sea_4temp2 1
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=950..960}] run scoreboard players add @s sea_4temp2 1
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=1000..1200}] run scoreboard players add @s sea_4temp2 1
 
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=..805}] run playsound minecraft:entity.minecart.riding ambient @a 90104 133 100 0.7 0.7
 
 execute if entity @a[x=90111,y=128,z=125,distance=0..3] as @n[tag=sc,scores={sea_4temp2=830..839}] run scoreboard players set @s sea_4temp2 840
-execute if entity @a[x=90103,y=128,z=107,distance=0..8] as @n[tag=sc,scores={sea_4temp2=849..851}] run scoreboard players set @s sea_4temp2 860
+execute if entity @a[x=90103,y=128,z=107,distance=0..8] as @n[tag=sc,scores={sea_4temp2=849..852}] run scoreboard players set @s sea_4temp2 860
+execute if entity @a[x=90138,y=129,z=117,distance=0..3] as @n[tag=sc,scores={sea_4temp2=869..872}] run scoreboard players set @s sea_4temp2 900
+execute if entity @a[x=90138,y=129,z=117,distance=0..3] as @n[tag=sc,scores={sea_4temp2=955..962}] run scoreboard players set @s sea_4temp2 1000
 
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=841}] run summon minecraft:piglin 90111 128 115 {Rotation:[0f,0f],NoAI:1b,Tags:["SEAeventfirstpig"]}
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=841}] run setblock 90110 131 116 air
@@ -323,6 +328,11 @@ execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=813..822}] run p
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=813..829}] run playsound minecraft:ambient.soul_sand_valley.additions ambient @a 90104 133 100 13 1.5
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=823}] run fill 90104 130 103 90103 128 103 air
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=823}] run playsound minecraft:entity.zombie.attack_iron_door ambient @a 90103 128 103 2 0.5
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=813}] run time set 13600t
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=816}] run time set 13700t
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=819}] run time set 13800t
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=821}] run time set 13900t
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=824}] run time set 14000t
 
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=861}] run setblock 90101 132 110 minecraft:tinted_glass
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=861}] run setblock 90106 132 110 minecraft:tinted_glass
@@ -344,3 +354,37 @@ execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=868..869}] posit
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=861..862}] positioned 90104 128 103 run function skyblock:sea/m/drowned_small
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=861..862}] positioned 90104 128 103 run function skyblock:sea/m/drowned_small
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=861..862}] positioned 90104 128 103 if entity @n[tag=sc,scores={sea_player=4..}] run function skyblock:sea/m/drowned_small
+
+
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=901}] positioned 90133 129 114 run summon stray ~ ~ ~ {NoAI:true,Invulnerable:true,Rotation:[0.0f,0.0f],DeathLootTable:"skyblock:sea_skeleton1",Tags:["SEAmob","SEAeventi02slow2"],attributes:[{id:"generic.attack_damage",base:2.0},{id:"generic.movement_speed",base:0.16},{id:"generic.max_health",base:12}],Health:12,PersistenceRequired:1b}
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=901}] positioned 90135 129 114 run summon stray ~ ~ ~ {NoAI:true,Invulnerable:true,Rotation:[0.0f,0.0f],DeathLootTable:"skyblock:sea_skeleton1",Tags:["SEAmob","SEAeventi02slow2"],attributes:[{id:"generic.attack_damage",base:2.0},{id:"generic.movement_speed",base:0.16},{id:"generic.max_health",base:12}],Health:12,PersistenceRequired:1b}
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=901}] positioned 90137 129 114 run summon stray ~ ~ ~ {NoAI:true,Invulnerable:true,Rotation:[0.0f,0.0f],DeathLootTable:"skyblock:sea_skeleton1",Tags:["SEAmob","SEAeventi02slow2"],attributes:[{id:"generic.attack_damage",base:2.0},{id:"generic.movement_speed",base:0.16},{id:"generic.max_health",base:12}],Health:12,PersistenceRequired:1b}
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=901}] positioned 90139 129 114 run summon stray ~ ~ ~ {NoAI:true,Invulnerable:true,Rotation:[0.0f,0.0f],DeathLootTable:"skyblock:sea_skeleton1",Tags:["SEAmob","SEAeventi02slow2"],attributes:[{id:"generic.attack_damage",base:2.0},{id:"generic.movement_speed",base:0.16},{id:"generic.max_health",base:12}],Health:12,PersistenceRequired:1b}
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=901}] positioned 90141 129 114 run summon stray ~ ~ ~ {NoAI:true,Invulnerable:true,Rotation:[0.0f,0.0f],DeathLootTable:"skyblock:sea_skeleton1",Tags:["SEAmob","SEAeventi02slow2"],attributes:[{id:"generic.attack_damage",base:2.0},{id:"generic.movement_speed",base:0.16},{id:"generic.max_health",base:12}],Health:12,PersistenceRequired:1b}
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=901}] positioned 90133 129 120 run summon stray ~ ~ ~ {NoAI:true,Invulnerable:true,Rotation:[180.0f,0.0f],DeathLootTable:"skyblock:sea_skeleton1",Tags:["SEAmob","SEAeventi02slow2"],attributes:[{id:"generic.attack_damage",base:2.0},{id:"generic.movement_speed",base:0.16},{id:"generic.max_health",base:12}],Health:12,PersistenceRequired:1b}
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=901}] positioned 90135 129 120 run summon stray ~ ~ ~ {NoAI:true,Invulnerable:true,Rotation:[180.0f,0.0f],DeathLootTable:"skyblock:sea_skeleton1",Tags:["SEAmob","SEAeventi02slow2"],attributes:[{id:"generic.attack_damage",base:2.0},{id:"generic.movement_speed",base:0.16},{id:"generic.max_health",base:12}],Health:12,PersistenceRequired:1b}
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=901}] positioned 90137 129 120 run summon stray ~ ~ ~ {NoAI:true,Invulnerable:true,Rotation:[180.0f,0.0f],DeathLootTable:"skyblock:sea_skeleton1",Tags:["SEAmob","SEAeventi02slow2"],attributes:[{id:"generic.attack_damage",base:2.0},{id:"generic.movement_speed",base:0.16},{id:"generic.max_health",base:12}],Health:12,PersistenceRequired:1b}
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=901}] positioned 90139 129 120 run summon stray ~ ~ ~ {NoAI:true,Invulnerable:true,Rotation:[180.0f,0.0f],DeathLootTable:"skyblock:sea_skeleton1",Tags:["SEAmob","SEAeventi02slow2"],attributes:[{id:"generic.attack_damage",base:2.0},{id:"generic.movement_speed",base:0.16},{id:"generic.max_health",base:12}],Health:12,PersistenceRequired:1b}
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=901}] positioned 90141 129 120 run summon stray ~ ~ ~ {NoAI:true,Invulnerable:true,Rotation:[180.0f,0.0f],DeathLootTable:"skyblock:sea_skeleton1",Tags:["SEAmob","SEAeventi02slow2"],attributes:[{id:"generic.attack_damage",base:2.0},{id:"generic.movement_speed",base:0.16},{id:"generic.max_health",base:12}],Health:12,PersistenceRequired:1b}
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=901..909}] positioned 90141 128 117 run stopsound @a[distance=0..8]
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=901..909}] positioned 90141 128 117 run playsound minecraft:ambient.nether_wastes.mood master @a ~ ~ ~ 5 0.7
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=901..903}] positioned 90141 128 117 run playsound minecraft:ambient.nether_wastes.additions master @a ~ ~ ~ 5 0.7
+
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=901}] run setblock 90134 128 115 minecraft:waxed_oxidized_copper_bulb[lit=false]
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=901}] run setblock 90140 128 115 minecraft:waxed_oxidized_copper_bulb[lit=false]
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=901}] run setblock 90140 128 119 minecraft:waxed_oxidized_copper_bulb[lit=false]
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=901}] run setblock 90134 128 119 minecraft:waxed_oxidized_copper_bulb[lit=false]
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=901}] run playsound block.stone_button.click_off block @a 90134 128 115 0.8 1.4
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=901}] run playsound block.stone_button.click_off block @a 90140 128 115 0.8 1.4
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=901}] run playsound block.stone_button.click_off block @a 90140 128 119 0.8 1.4
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=901}] run playsound block.stone_button.click_off block @a 90134 128 119 0.8 1.4
+
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=901}] run fill 90130 129 119 90129 131 119 air
+#fill 90143 131 116 90143 129 118 air
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=901}] run setblock 90125 130 115 minecraft:air
+
+execute if block 90129 129 124 stone_button[powered=true] run scoreboard players set @s sea_4temp2 950
+
+
+
+

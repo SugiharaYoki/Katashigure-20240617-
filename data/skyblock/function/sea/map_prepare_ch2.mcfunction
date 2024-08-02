@@ -216,3 +216,10 @@ setblock 90116 129 117 chest[facing=east]
 item replace block 90116 129 117 container.12 with arrow 2
 item replace block 90116 129 117 container.14 with bread 1
 
+setblock 90134 128 115 minecraft:waxed_oxidized_copper_bulb[lit=false]
+setblock 90140 128 115 minecraft:waxed_oxidized_copper_bulb[lit=false]
+setblock 90140 128 119 minecraft:waxed_oxidized_copper_bulb[lit=false]
+setblock 90134 128 119 minecraft:waxed_oxidized_copper_bulb[lit=false]
+fill 90130 131 119 90129 129 119 minecraft:waxed_oxidized_copper_grate
+fill 90143 131 116 90143 129 118 minecraft:waxed_oxidized_copper_grate
+setblock 90125 130 115 minecraft:stone_button[facing=west]
