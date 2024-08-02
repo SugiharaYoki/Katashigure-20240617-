@@ -223,3 +223,8 @@ setblock 90134 128 119 minecraft:waxed_oxidized_copper_bulb[lit=false]
 fill 90130 131 119 90129 129 119 minecraft:waxed_oxidized_copper_grate
 fill 90143 131 116 90143 129 118 minecraft:waxed_oxidized_copper_grate
 setblock 90125 130 115 minecraft:stone_button[facing=west]
+fill 90131 131 118 90131 129 116 minecraft:air
+
+fill 90133 130 113 90133 129 113 minecraft:waxed_oxidized_copper
+fill 90133 130 121 90133 129 121 minecraft:waxed_oxidized_copper
+
