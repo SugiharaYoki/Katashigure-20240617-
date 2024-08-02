@@ -308,7 +308,7 @@ execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=1300..1400}] run
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=..805}] run playsound minecraft:entity.minecart.riding ambient @a 90104 133 100 0.7 0.7
 
 execute if entity @a[tag=SEAPT,x=90111,y=128,z=125,distance=0..3] as @n[tag=sc,scores={sea_4temp2=830..839}] run scoreboard players set @s sea_4temp2 840
-execute if entity @a[tag=SEAPT,x=90103,y=128,z=107,distance=0..8] as @n[tag=sc,scores={sea_4temp2=849..852}] run scoreboard players set @s sea_4temp2 860
+execute if entity @a[tag=SEAPT,x=90103,y=128,z=107,distance=0..8] as @n[tag=sc,scores={sea_4temp2=830..852}] run scoreboard players set @s sea_4temp2 860
 execute if entity @a[tag=SEAPT,x=90138,y=129,z=117,distance=0..3] as @n[tag=sc,scores={sea_4temp2=869..872}] run scoreboard players set @s sea_4temp2 900
 execute if entity @a[tag=SEAPT,x=90138,y=129,z=117,distance=0..3] unless entity @a[tag=SEAPT,x=90142,y=129,z=117,distance=8..] as @n[tag=sc,scores={sea_4temp2=955..962}] run scoreboard players set @s sea_4temp2 1000
 execute as @a[tag=SEAPT,x=90138,y=129,z=117,distance=0..3,tag=!e_i_22] if entity @a[tag=SEAPT,x=90142,y=129,z=117,distance=8..] if entity @n[tag=sc,scores={sea_4temp2=955..962}] run tellraw @s {"text": "总感觉似乎……所有人都得到这里来才能安全前进。","color": "gray"}
