@@ -387,6 +387,8 @@ execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=901}] run fill 9
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=901}] run setblock 90125 130 115 minecraft:air
 
 execute if block 90129 129 124 stone_button[powered=true] run scoreboard players set @s sea_4temp2 950
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=951}] run tellraw @a[tag=SEAPT] {"text": "播报：北冷冻库空气循环系统已关闭。","color": "green"}
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=951}] run kill @n[tag=SEArivette]
 
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=1001}] run fill 90131 131 118 90131 129 116 minecraft:waxed_oxidized_copper_grate
 execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=1001}] as @a[tag=SEAPT] at @s run playsound minecraft:entity.evoker.ambient hostile @s ~ ~ ~ 10 0.7
