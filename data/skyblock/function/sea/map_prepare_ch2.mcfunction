@@ -84,6 +84,9 @@ summon marker 90118 131 148 {Tags:["SEAmagma1"]}
 summon marker 90119 131 148 {Tags:["SEAmagma1"]}
 summon marker 90083 128 150 {Tags:["SEAmagma1"]}
 summon marker 90092 128 153 {Tags:["SEAmagma1"]}
+summon marker 90121 128 103 {Tags:["SEAmagma1"]}
+summon marker 90110 128 104 {Tags:["SEAmagma1"]}
+summon marker 90112 128 101 {Tags:["SEAmagma1"]}
 execute as @e[tag=SEAmagma1,type=marker] at @s if block ~ ~ ~ air run setblock ~ ~ ~ basalt
 
 fill 90140 128 134 90141 129 134 snow_block
@@ -209,5 +212,7 @@ setblock 90112 131 116 lantern[hanging=true]
 fill 90104 130 103 90103 128 103 dark_prismarine
 
 
-
+setblock 90116 129 117 chest[facing=east]
+item replace block 90116 129 117 container.12 with arrow 2
+item replace block 90116 129 117 container.14 with bread 1
 

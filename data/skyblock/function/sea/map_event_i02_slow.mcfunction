@@ -304,7 +304,7 @@ execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=860..870}] run s
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=..805}] run playsound minecraft:entity.minecart.riding ambient @a 90104 133 100 1.0 0.7
 
 execute if entity @a[x=90111,y=128,z=125,distance=0..3] as @n[tag=sc,scores={sea_4temp2=830..839}] run scoreboard players set @s sea_4temp2 840
-execute if entity @a[x=90105,y=128,z=110,distance=0..5] as @n[tag=sc,scores={sea_4temp2=849..851}] run scoreboard players set @s sea_4temp2 860
+execute if entity @a[x=90103,y=128,z=107,distance=0..8] as @n[tag=sc,scores={sea_4temp2=849..851}] run scoreboard players set @s sea_4temp2 860
 
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=841}] run summon minecraft:piglin 90111 128 115 {Rotation:[0f,0f],NoAI:1b,Tags:["SEAeventfirstpig"]}
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=841}] run setblock 90110 131 116 air
@@ -330,6 +330,17 @@ execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=861}] run playso
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=861}] run playsound block.stone_button.click_off block @a 90106 132 110 2 1.4
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=861}] positioned 90105 128 107 run function skyblock:sea/m/pillager
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=861}] positioned 90105 128 107 run function skyblock:sea/m/pillager
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=861}] positioned 90105 128 107 if entity @n[tag=sc,scores={sea_player=3..}] run function skyblock:sea/m/pillager
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=861}] positioned 90105 128 107 if entity @n[tag=sc,scores={sea_player=3..}] run function skyblock:sea/m/zombie_cook
 
-
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=868}] positioned 90119 128 107 run function skyblock:sea/m/silverfish_big
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=868..869}] positioned 90119 128 107 run function skyblock:sea/m/silverfish
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=868}] positioned 90119 128 107 if entity @n[tag=sc,scores={sea_player=4..}] run function skyblock:sea/m/silverfish
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=868}] positioned 90130 129 106 run function skyblock:sea/m/skeleton
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=868}] positioned 90130 129 106 if entity @n[tag=sc,scores={sea_player=3..}] run function skyblock:sea/m/skeleton
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=867..869}] positioned 90130 129 106 if entity @n[tag=sc,scores={sea_player=5..}] run function skyblock:sea/m/skeleton_melee
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=867..869}] positioned 90116 129 118 run function skyblock:sea/m/drowned_small
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=868..869}] positioned 90116 129 118 if entity @n[tag=sc,scores={sea_player=3..}] run function skyblock:sea/m/drowned_small
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=868..869}] positioned 90116 129 118 if entity @n[tag=sc,scores={sea_player=5..}] run function skyblock:sea/m/drowned_small
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=861..862}] positioned 90104 128 103 run function skyblock:sea/m/drowned_small
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=861..862}] positioned 90104 128 103 run function skyblock:sea/m/drowned_small
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=861..862}] positioned 90104 128 103 if entity @n[tag=sc,scores={sea_player=4..}] run function skyblock:sea/m/drowned_small
