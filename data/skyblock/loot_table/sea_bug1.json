@@ -12,12 +12,34 @@
         {
                 "type": "minecraft:item",
                 "name": "minecraft:wild_armor_trim_smithing_template",
-                "weight": 2
+                "weight": 2,
+                "functions": [
+                  {
+                    "function": "minecraft:set_name",
+                    "name": {
+                      "text": "狂荒石板",
+                      "color": "light_purple",
+                      "bold": false,
+                      "italic": false
+                    }
+                  }
+                ]
               },
               {
                       "type": "minecraft:item",
                       "name": "minecraft:sentry_armor_trim_smithing_template",
-                      "weight": 7
+                      "weight": 7,
+                      "functions": [
+                        {
+                          "function": "minecraft:set_name",
+                          "name": {
+                            "text": "辽哨石板",
+                            "color": "light_purple",
+                            "bold": false,
+                            "italic": false
+                          }
+                        }
+                      ]
                     },
 	{
           "type": "minecraft:item",

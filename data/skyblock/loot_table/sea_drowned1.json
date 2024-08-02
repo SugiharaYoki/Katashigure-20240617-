@@ -12,7 +12,18 @@
 	{
           "type": "minecraft:item",
           "name": "minecraft:raiser_armor_trim_smithing_template",
-          "weight": 7
+          "weight": 7,
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "牧羊人石板",
+                "color": "light_purple",
+                "bold": false,
+                "italic": false
+              }
+            }
+          ]
         },
 	{
           "type": "minecraft:item",
