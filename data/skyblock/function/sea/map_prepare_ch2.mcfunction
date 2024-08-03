@@ -87,6 +87,9 @@ summon marker 90092 128 153 {Tags:["SEAmagma1"]}
 summon marker 90121 128 103 {Tags:["SEAmagma1"]}
 summon marker 90110 128 104 {Tags:["SEAmagma1"]}
 summon marker 90112 128 101 {Tags:["SEAmagma1"]}
+summon marker 90146 131 111 {Tags:["SEAmagma1"]}
+summon marker 90147 131 111 {Tags:["SEAmagma1"]}
+summon marker 90148 131 111 {Tags:["SEAmagma1"]}
 execute as @e[tag=SEAmagma1,type=marker] at @s if block ~ ~ ~ air run setblock ~ ~ ~ basalt
 
 fill 90140 128 134 90141 129 134 snow_block
@@ -150,7 +153,9 @@ setblock 90073 128 150 decorated_pot{sherds:["prize_pottery_sherd","prize_potter
 setblock 90095 128 119 decorated_pot{sherds:["mourner_pottery_sherd","mourner_pottery_sherd","mourner_pottery_sherd","mourner_pottery_sherd"],item:{count: 3, id:"minecraft:echo_shard"}}
 setblock 90115 128 150 decorated_pot{sherds:["mourner_pottery_sherd","mourner_pottery_sherd","mourner_pottery_sherd","mourner_pottery_sherd"],item:{count: 3, id:"minecraft:echo_shard"}}
 setblock 90082 122 148 decorated_pot{sherds:["mourner_pottery_sherd","mourner_pottery_sherd","mourner_pottery_sherd","mourner_pottery_sherd"],item:{count: 2, id:"minecraft:echo_shard"}}
-
+setblock 90146 129 122 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:coal"}}
+setblock 90145 129 115 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 1, id:"minecraft:beef"}}
+setblock 90148 129 112 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 1, id:"minecraft:beef"}}
 
 fill 90088 129 115 90088 128 115 minecraft:polished_tuff_wall
 setblock 90101 129 125 air
@@ -203,6 +208,7 @@ setblock 90148 130 132 redstone_block
 setblock 90148 130 132 air
 
 summon minecraft:interaction 90083 102.3 139 {CustomName:'[{"text":"多功能工作站"}]',Tags:["SEAcrafter"]}
+summon minecraft:interaction 90147 130.3 124 {CustomName:'[{"text":"多功能工作站"}]',Tags:["SEAcrafter"]}
 
 fill 90133 129 126 90133 128 126 minecraft:powder_snow
 setblock 90101 132 110 minecraft:white_stained_glass
@@ -228,12 +234,15 @@ fill 90131 131 118 90131 129 116 minecraft:air
 fill 90133 130 113 90133 129 113 minecraft:waxed_oxidized_copper
 fill 90133 130 121 90133 129 121 minecraft:waxed_oxidized_copper
 
-
-
-
-
-
-
+setblock 90147 132 117 minecraft:tinted_glass
+setblock 90147 132 121 minecraft:tinted_glass
+setblock 90147 132 113 minecraft:tinted_glass
+setblock 90148 129 113 chest[facing=west]
+item replace block 90148 129 113 container.12 with arrow 2
+item replace block 90148 129 113 container.14 with arrow 2
+setblock 90117 129 133 stone_button[facing=west]
+setblock 90117 131 133 minecraft:waxed_oxidized_copper
+setblock 90113 129 133 air
 
 
 
