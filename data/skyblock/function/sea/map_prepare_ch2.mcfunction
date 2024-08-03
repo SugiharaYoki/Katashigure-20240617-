@@ -54,6 +54,9 @@ summon minecraft:interaction 90112 129.3 144 {CustomName:'[{"text":"器械式治
 
 summon minecraft:item_frame 90118 129 122 {Invisible:1b,Fixed:0b,Invulnerable:0b,Facing:1b,Item:{id:"minecraft:bread"}}
 summon minecraft:item_frame 90106 129 123 {Invisible:1b,Fixed:0b,Invulnerable:0b,Facing:1b,Item:{id:"minecraft:flint"}}
+summon minecraft:item_frame 90099 129 137 {Invisible:1b,Fixed:0b,Invulnerable:0b,Facing:1b,Item:{id:"minecraft:pumpkin_pie"}}
+summon minecraft:item_frame 90098 129 140 {Invisible:1b,Fixed:0b,Invulnerable:0b,Facing:1b,Item:{id:"minecraft:pumpkin_pie"}}
+
 fill 90125 128 121 90125 128 122 smoker[facing=west]
 
 setblock 90125 128 124 chest[facing=west]
@@ -153,9 +156,21 @@ setblock 90073 128 150 decorated_pot{sherds:["prize_pottery_sherd","prize_potter
 setblock 90095 128 119 decorated_pot{sherds:["mourner_pottery_sherd","mourner_pottery_sherd","mourner_pottery_sherd","mourner_pottery_sherd"],item:{count: 3, id:"minecraft:echo_shard"}}
 setblock 90115 128 150 decorated_pot{sherds:["mourner_pottery_sherd","mourner_pottery_sherd","mourner_pottery_sherd","mourner_pottery_sherd"],item:{count: 3, id:"minecraft:echo_shard"}}
 setblock 90082 122 148 decorated_pot{sherds:["mourner_pottery_sherd","mourner_pottery_sherd","mourner_pottery_sherd","mourner_pottery_sherd"],item:{count: 2, id:"minecraft:echo_shard"}}
+
+setblock 90146 129 122 air
+setblock 90145 129 115 air
+setblock 90148 129 112 air
+setblock 90101 128 130 air
+setblock 90109 128 132 air
 setblock 90146 129 122 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:coal"}}
 setblock 90145 129 115 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 1, id:"minecraft:beef"}}
 setblock 90148 129 112 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 1, id:"minecraft:beef"}}
+setblock 90101 128 130 decorated_pot{sherds:["friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd"],item:{count: 3, id:"minecraft:emerald"}}
+setblock 90109 128 132 decorated_pot{sherds:["friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd"],item:{count: 3, id:"minecraft:emerald"}}
+
+setblock 90144 128 103 air
+setblock 90144 128 103 decorated_pot{sherds:["burn_pottery_sherd","burn_pottery_sherd","burn_pottery_sherd","burn_pottery_sherd"],item:{count: 1, id:"minecraft:blaze_powder"}}
+
 
 fill 90088 129 115 90088 128 115 minecraft:polished_tuff_wall
 setblock 90101 129 125 air
@@ -243,7 +258,10 @@ item replace block 90148 129 113 container.14 with arrow 2
 setblock 90117 129 133 stone_button[facing=west]
 setblock 90117 131 133 minecraft:waxed_oxidized_copper
 setblock 90113 129 133 air
-
+setblock 90099 129 132 barrel[facing=south]
+item replace block 90099 129 132 container.13 with apple 1
+setblock 90097 129 130 barrel[facing=south]
+item replace block 90097 129 130 container.13 with emerald 2
 
 
 #ch4
