@@ -206,7 +206,7 @@ fill 90075 128 126 90075 129 126 minecraft:chiseled_bookshelf[facing=south]
 setblock 90073 129 120 minecraft:potted_torchflower
 setblock 90077 129 120 minecraft:potted_torchflower
 
-
+setblock 90145 129 121 minecraft:furnace[facing=east]
 
 setblock 90093 128 136 minecraft:redstone_block
 setblock 90093 128 136 minecraft:air

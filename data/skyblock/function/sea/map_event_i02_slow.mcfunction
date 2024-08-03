@@ -449,6 +449,16 @@ execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=1301}] ru
 execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=1301}] run setblock 90147 132 121 minecraft:white_stained_glass
 execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=1301}] run setblock 90147 132 113 minecraft:white_stained_glass
 
+execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=1301}] positioned 90142 128 102 run function skyblock:sea/m/zombie_cook
+execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=1301}] positioned 90142 128 102 run function skyblock:sea/m/zombie_cook
+execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=1301}] positioned 90142 128 102 run function skyblock:sea/m/skeleton
+execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=1301}] positioned 90142 128 102 run function skyblock:sea/m/skeleton
+execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=1301}] positioned 90142 128 102 run function skyblock:sea/m/skeleton
+execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=1301}] positioned 90142 128 102 run function skyblock:sea/m/drowned_shield
+execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=1301}] positioned 90142 128 102 run function skyblock:sea/m/drowned_shield
+execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=1301}] positioned 90142 128 102 run function skyblock:sea/m/drowned_shield
+execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=1301}] positioned 90142 128 102 run function skyblock:sea/m/drowned_shield
+
 
 
 
