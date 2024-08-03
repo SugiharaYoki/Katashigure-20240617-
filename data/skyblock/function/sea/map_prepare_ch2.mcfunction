@@ -228,3 +228,17 @@ fill 90131 131 118 90131 129 116 minecraft:air
 fill 90133 130 113 90133 129 113 minecraft:waxed_oxidized_copper
 fill 90133 130 121 90133 129 121 minecraft:waxed_oxidized_copper
 
+
+
+
+
+
+
+
+
+
+#ch4
+setblock 90095 130 73 minecraft:potted_allium
+
+
+

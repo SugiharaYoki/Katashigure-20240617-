@@ -171,4 +171,6 @@ execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp_environment=28}] 
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp_environment=28}] as @a[tag=SEAPT,scores={sea_i_spectral=..2,sea_i_spectral_load=5..}] run clear @s arrow 1
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp_environment=28}] as @a[tag=SEAPT,scores={sea_i_spectral=..2,sea_i_spectral_load=5..}] run give @s spectral_arrow 1
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp_environment=28}] as @a[tag=SEAPT,scores={sea_i_spectral=..2,sea_i_spectral_load=5..}] run scoreboard players set @s sea_i_spectral_load 0
+execute if entity @a[tag=SEAPT] as @s[scores={sea_i_spectral=4..}] run give @s arrow 1
+execute if entity @a[tag=SEAPT] as @s[scores={sea_i_spectral=4..}] run clear @s spectral_arrow 1
 

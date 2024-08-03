@@ -428,3 +428,11 @@ execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=1198..129
 
 execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=1301}] run fill 90131 131 118 90131 129 116 minecraft:air
 execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=1301}] run fill 90143 131 116 90143 129 118 minecraft:air
+execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=1301}] positioned 90105 128 101 run function skyblock:sea/m/zombie_cook
+execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=1301}] positioned 90105 128 101 run function skyblock:sea/m/zombie_cook
+execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=1301}] positioned 90105 128 101 run function skyblock:sea/m/pillager
+execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=1301}] positioned 90105 128 101 run function skyblock:sea/m/pillager
+execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=1301}] positioned 90095 128 112 run function skyblock:sea/m/drowned_small
+execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=1301}] positioned 90095 128 112 run function skyblock:sea/m/drowned_small
+execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=1301}] positioned 90095 128 112 run function skyblock:sea/m/drowned_small
+execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=1301}] positioned 90095 128 112 run function skyblock:sea/m/drowned_small
