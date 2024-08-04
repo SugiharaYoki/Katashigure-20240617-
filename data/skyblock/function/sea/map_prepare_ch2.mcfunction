@@ -170,7 +170,8 @@ setblock 90109 128 132 decorated_pot{sherds:["friend_pottery_sherd","friend_pott
 
 setblock 90144 128 103 air
 setblock 90144 128 103 decorated_pot{sherds:["burn_pottery_sherd","burn_pottery_sherd","burn_pottery_sherd","burn_pottery_sherd"],item:{count: 1, id:"minecraft:blaze_powder"}}
-
+setblock 90130 128 92 air
+setblock 90130 128 92 decorated_pot{sherds:["burn_pottery_sherd","burn_pottery_sherd","burn_pottery_sherd","burn_pottery_sherd"],item:{count: 1, id:"minecraft:blaze_powder"}}
 
 fill 90088 129 115 90088 128 115 minecraft:polished_tuff_wall
 setblock 90101 129 125 air
@@ -263,9 +264,25 @@ item replace block 90099 129 132 container.13 with apple 1
 setblock 90097 129 130 barrel[facing=south]
 item replace block 90097 129 130 container.13 with emerald 2
 
+#boss-ch2
+setblock 90132 128 94 barrel[facing=east]{Lock:"SystemCardinal"}
+setblock 90132 129 94 barrel[facing=up]{Lock:"SystemCardinal"}
+setblock 90131 128 93 barrel[facing=up]{Lock:"SystemCardinal"}
+setblock 90132 128 93 minecraft:grindstone[face=floor]
+setblock 90132 128 92 chest[facing=north]{Lock:"SystemCardinal"}
+setblock 90131 128 92 minecraft:composter
+setblock 90132 129 93 barrier
+setblock 90132 129 92 barrier
+
+setblock 90123 129 93 air
+setblock 90123 128 93 air
+setblock 90123 129 93 iron_door[facing=west,half=upper]
+setblock 90123 128 93 iron_door[facing=west,half=lower]
+setblock 90147 132 91 lantern
+
+
 
 #ch4
 setblock 90095 130 73 minecraft:potted_allium
-
 
 

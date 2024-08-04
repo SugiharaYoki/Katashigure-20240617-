@@ -313,6 +313,7 @@ execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=900..920}] run s
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=950..960}] run scoreboard players add @s sea_4temp2 1
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=1000..1200}] run scoreboard players add @s sea_4temp2 1
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=1300..1400}] run scoreboard players add @s sea_4temp2 1
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=2000..4000}] run scoreboard players add @s sea_4temp2 1
 
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=..805}] run playsound minecraft:entity.minecart.riding ambient @a 90104 133 100 0.7 0.7
 
@@ -461,10 +462,44 @@ execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=1301}] po
 
 
 
+execute if entity @a[tag=SEAPT,x=90146,y=128,z=93,distance=0..4] as @n[tag=sc,scores={sea_4temp2=..1999}] run scoreboard players set @s sea_4temp2 2000
+execute if entity @n[tag=sc,scores={sea_4temp2=2001}] positioned 90151.66 128.00 96.00 run function skyblock:sea/m/special_rivette
+execute if entity @n[tag=sc,scores={sea_4temp2=2001..2099}] if entity @n[type=piglin,x=90138,y=128,z=93,distance=0..3.2] run fill 90132 129 94 90131 128 92 air
+execute unless block 90132 128 94 air as @n[tag=sc,scores={sea_4temp2=2085..2099}] run scoreboard players set @s sea_4temp2 2085
+execute if block 90132 128 94 air as @n[tag=sc,scores={sea_4temp2=..2099}] run scoreboard players set @s sea_4temp2 2101
+
+execute if entity @n[tag=sc,scores={sea_4temp2=2101}] run particle large_smoke 90132 129.9 93 1 2 2 0.0 40
+execute if entity @n[tag=sc,scores={sea_4temp2=2101}] run particle explosion 90132 129.9 93 1 2 2 0.0 20
+execute if entity @n[tag=sc,scores={sea_4temp2=2101}] run playsound entity.generic.explode block @a 90132 129.9 93 1 1
+execute if entity @n[tag=sc,scores={sea_4temp2=2101}] run summon lightning_bolt 90130 128 92
+execute if entity @n[tag=sc,scores={sea_4temp2=2101}] positioned 90128 128 97 run function skyblock:sea/m/silverfish
+execute if entity @n[tag=sc,scores={sea_4temp2=2101}] positioned 90128 128 97 run function skyblock:sea/m/silverfish
+execute if entity @n[tag=sc,scores={sea_4temp2=2101}] positioned 90128 128 97 run function skyblock:sea/m/silverfish
+
+execute if entity @n[tag=sc,scores={sea_4temp2=2101..2199}] if entity @n[type=piglin,x=90130,y=128,z=93,distance=0..3.2] run scoreboard players set @s sea_4temp2 2201
+execute unless block 90132 128 94 air as @n[tag=sc,scores={sea_4temp2=2185..2199}] run scoreboard players set @s sea_4temp2 2085
+execute if entity @n[tag=sc,scores={sea_4temp2=2102}] run setblock 90147 132 91 air destroy
+execute if entity @n[tag=sc,scores={sea_4temp2=2102}] run summon lightning_bolt
+execute if entity @n[tag=sc,scores={sea_4temp2=2102..2111}] positioned 90141 128 93 run particle minecraft:trial_omen ~ ~ ~ 1 1 1 0 20
+execute if entity @n[tag=sc,scores={sea_4temp2=2112}] positioned 90141 128 93 run particle minecraft:sculk_soul ~ ~ ~ 1 1 1 0 20
+execute if entity @n[tag=sc,scores={sea_4temp2=2112}] positioned 90141 128 93 run function skyblock:sea/m/boss2
+execute if entity @n[tag=sc,scores={sea_4temp2=2112}] positioned 90141 128 93 run function skyblock:sea/m/boss2
+
+execute as @n[tag=SEAboss2] at @s run particle minecraft:trial_spawner_detection_ominous ~ ~0.5 ~ 0.5 0.2 0.5 0 5
+execute if entity @n[tag=sc,scores={sea_4temp2=2113..2115}] as @n[tag=SEAboss2] at @s positioned ~ ~1.5 ~0.3 run particle minecraft:sculk_soul ~ ~ ~ 0.1 0.1 0.1 0 3
+execute if entity @n[tag=sc,scores={sea_4temp2=2114..2116}] as @n[tag=SEAboss2] at @s positioned ~ ~1.5 ~0.3 run summon arrow ~ ~ ~ {Motion:[-2d,0d,0d]}
+execute if entity @n[tag=sc,scores={sea_4temp2=2113..2115}] as @n[tag=SEAboss2] at @s positioned ~ ~1.5 ~-0.3 run particle minecraft:sculk_soul ~ ~ ~ 0.1 0.1 0.1 0 3
+execute if entity @n[tag=sc,scores={sea_4temp2=2114..2116}] as @n[tag=SEAboss2] at @s positioned ~ ~1.5 ~-0.3 run summon arrow ~ ~ ~ {Motion:[-2d,0d,0d]}
+execute if entity @n[tag=sc,scores={sea_4temp2=2113..2115}] as @n[tag=SEAboss2] at @s positioned ~-0.6 ~1.3 ~ run particle minecraft:sculk_soul ~ ~ ~ 0.1 0.1 0.1 0 3
+execute if entity @n[tag=sc,scores={sea_4temp2=2114..2116}] as @n[tag=SEAboss2] at @s positioned ~-0.6 ~1.3 ~ run summon arrow ~ ~ ~ {Motion:[-2d,0d,0d]}
 
 
-
-
+execute store result score @n[tag=SEAboss2] rng2 run random value 1..29
+execute if entity @n[tag=sc,scores={sea_4temp2=2113..3999}] as @n[tag=SEAboss2,scores={rng2=1..9}] at @s unless entity @a[tag=SEAPT,distance=0..2] run item replace entity @s weapon.offhand with arrow
+execute if entity @n[tag=sc,scores={sea_4temp2=2113..3999}] as @n[tag=SEAboss2,scores={rng2=10..19}] at @s unless entity @a[tag=SEAPT,distance=0..2] run item replace entity @s weapon.offhand with tipped_arrow[potion_contents={custom_effects:[{id:slowness,duration:60,amplifier:2}]}]
+execute if entity @n[tag=sc,scores={sea_4temp2=2113..3999}] as @n[tag=SEAboss2,scores={rng2=20..29}] at @s unless entity @a[tag=SEAPT,distance=0..2] run item replace entity @s weapon.offhand with tipped_arrow[potion_contents={custom_effects:[{id:weakness,duration:60,amplifier:1}]}]
+execute if entity @n[tag=sc,scores={sea_4temp2=2113..3999}] as @n[tag=SEAboss2] at @s if entity @a[tag=SEAPT,distance=0..2] run item replace entity @s weapon.mainhand with iron_axe
+execute if entity @n[tag=sc,scores={sea_4temp2=2113..3999}] as @n[tag=SEAboss2] at @s unless entity @a[tag=SEAPT,distance=0..2] run item replace entity @s weapon.mainhand with bow
 
 
 
