@@ -481,6 +481,10 @@ execute if entity @n[tag=sc,scores={sea_4temp2=2101..2199}] if entity @n[tag=SEA
 execute unless block 90132 128 94 air as @n[tag=sc,scores={sea_4temp2=2185..2199}] run scoreboard players set @s sea_4temp2 2085
 execute if entity @n[tag=sc,scores={sea_4temp2=2102}] run setblock 90147 132 91 air destroy
 execute if entity @n[tag=sc,scores={sea_4temp2=2102}] run summon lightning_bolt
+execute if entity @n[tag=sc,scores={sea_4temp2=2102..2104}] positioned 90141 128 93 run playsound block.trial_spawner.detect_player hostile @a ~ ~ ~ 20 0.6
+execute if entity @n[tag=sc,scores={sea_4temp2=2102..2111}] positioned 90141 128 93 run playsound block.trial_spawner.ambient_ominous hostile @a ~ ~ ~ 20 0.6
+execute if entity @n[tag=sc,scores={sea_4temp2=2102..2111}] positioned 90141 128 93 run playsound ambient.soul_sand_valley.mood hostile @a ~ ~ ~ 20 0.8
+execute if entity @n[tag=sc,scores={sea_4temp2=2102..2104}] positioned 90141 128 93 run playsound ambient.soul_sand_valley.additions hostile @a ~ ~ ~ 20 0.8
 execute if entity @n[tag=sc,scores={sea_4temp2=2102..2111}] positioned 90141 128 93 run particle minecraft:trial_omen ~ ~ ~ 1 1 1 0 20
 execute if entity @n[tag=sc,scores={sea_4temp2=2112}] positioned 90141 128 93 run particle minecraft:sculk_soul ~ ~ ~ 1 1 1 0 20
 execute if entity @n[tag=sc,scores={sea_4temp2=2112}] positioned 90141 128 93 run function skyblock:sea/m/boss2
