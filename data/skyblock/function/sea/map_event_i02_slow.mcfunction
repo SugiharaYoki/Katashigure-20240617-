@@ -527,11 +527,11 @@ execute if entity @n[tag=sc,scores={sea_4temp2=2222}] as @n[tag=SEAboss2] at @s 
 
 
 execute store result score @n[tag=SEAboss2] rng2 run random value 1..60
-execute if entity @n[tag=sc,scores={sea_4temp2=2113..3999}] as @n[tag=SEAboss2,scores={rng2=3,sea_boss1_hp=36..}] at @s unless entity @a[tag=SEAPT,distance=0..2] run item replace entity @s weapon.offhand with arrow
-execute if entity @n[tag=sc,scores={sea_4temp2=2113..3999}] as @n[tag=SEAboss2,scores={rng2=1,sea_boss1_hp=36..}] at @s unless entity @a[tag=SEAPT,distance=0..2] run item replace entity @s weapon.offhand with tipped_arrow[potion_contents={custom_effects:[{id:slowness,duration:60,amplifier:2}]}]
-execute if entity @n[tag=sc,scores={sea_4temp2=2113..3999}] as @n[tag=SEAboss2,scores={rng2=2,sea_boss1_hp=36..}] at @s unless entity @a[tag=SEAPT,distance=0..2] run item replace entity @s weapon.offhand with tipped_arrow[potion_contents={custom_effects:[{id:weakness,duration:60,amplifier:1}]}]
-execute if entity @n[tag=sc,scores={sea_4temp2=2113..3999}] as @n[tag=SEAboss2,scores={sea_boss1_hp=36..}] at @s if entity @a[tag=SEAPT,distance=0..2] run item replace entity @s weapon.mainhand with netherite_hoe
-execute if entity @n[tag=sc,scores={sea_4temp2=2113..3999}] as @n[tag=SEAboss2,scores={sea_boss1_hp=..35}] at @s unless entity @a[tag=SEAPT,distance=0..2] run item replace entity @s weapon.mainhand with bow
+execute if entity @n[tag=sc,scores={sea_4temp2=2113..3999}] as @n[tag=SEAboss2,scores={rng2=3,sea_boss1_hp=36..}] at @s unless entity @a[tag=SEAPT,distance=0..2.3] run item replace entity @s weapon.offhand with arrow
+execute if entity @n[tag=sc,scores={sea_4temp2=2113..3999}] as @n[tag=SEAboss2,scores={rng2=1,sea_boss1_hp=36..}] at @s unless entity @a[tag=SEAPT,distance=0..2.3] run item replace entity @s weapon.offhand with tipped_arrow[potion_contents={custom_effects:[{id:slowness,duration:60,amplifier:2}]}]
+execute if entity @n[tag=sc,scores={sea_4temp2=2113..3999}] as @n[tag=SEAboss2,scores={rng2=2,sea_boss1_hp=36..}] at @s unless entity @a[tag=SEAPT,distance=0..2.3] run item replace entity @s weapon.offhand with tipped_arrow[potion_contents={custom_effects:[{id:weakness,duration:60,amplifier:1}]}]
+execute if entity @n[tag=sc,scores={sea_4temp2=2113..3999}] as @n[tag=SEAboss2,scores={sea_boss1_hp=36..}] at @s if entity @a[tag=SEAPT,distance=0..2.3] run item replace entity @s weapon.mainhand with netherite_hoe
+execute if entity @n[tag=sc,scores={sea_4temp2=2113..3999}] as @n[tag=SEAboss2,scores={sea_boss1_hp=36..}] at @s unless entity @a[tag=SEAPT,distance=0..2.3] run item replace entity @s weapon.mainhand with bow
 execute if entity @n[tag=sc,scores={sea_4temp2=2113..3999}] as @n[tag=SEAboss2,scores={sea_boss1_hp=..35}] at @s run item replace entity @s weapon.mainhand with netherite_hoe
 
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=2120..}] run bossbar add 9066601 "荣获深邃祝福的骸骨 - 德怀特"
