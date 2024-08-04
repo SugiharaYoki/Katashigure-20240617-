@@ -609,6 +609,17 @@ execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] 
 execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,x=90068,y=128,z=93,distance=0..6,tag=!boss2hplock3] at @s run tag @s add boss2hplock3
 
 
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=2900..5000}] unless entity @n[tag=SEAboss2] run scoreboard players set @n[tag=sc] sea_4temp2 5001
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=5001}] run bossbar remove 9066601
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=5001}] run stopsound @a[tag=SEAPT] music
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=5001}] as @a[tag=SEAPT] at @s run playsound item.trident.thunder ambient @s ~ ~ ~ 100 0.5
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=5002}] run give @a[tag=SEAPT] nether_star
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=5012}] as @a[tag=SEAPT] at @s run tellraw @s {"text":"终于解决了这几个家伙。……","color":"gray"}
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=5030}] as @a[tag=SEAPT] at @s run tellraw @s {"text":"是时候往更上层去了。","color":"gray"}
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=5055}] as @a[tag=SEAPT] at @s run tellraw @s {"text":"『厄珀尔的悲歌』第二章 完","color":"blue","bold": true}
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=5055}] as @a[tag=SEAPT] at @s run playsound music_disc.creator_music_box music @a[tag=SEAPT] ~ ~ ~ 1000 0.8
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=5055}] run function skyblock:sea/map_prepare_ch3
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=5030}] run setblock 90066 129 112 minecraft:stone_button[facing=north]
 
 
 #setblock 90066 129 112 minecraft:stone_button[facing=north]
