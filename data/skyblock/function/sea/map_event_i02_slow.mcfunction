@@ -513,10 +513,10 @@ execute if entity @n[tag=sc,scores={sea_4temp2=2193}] as @n[tag=SEAboss2] at @s 
 execute if entity @n[tag=sc,scores={sea_4temp2=2193}] as @n[tag=SEAboss2] at @s positioned ~1 ~0 ~-0.5 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
 
 
-execute store result score @n[tag=SEAboss2] rng2 run random value 1..29
-execute if entity @n[tag=sc,scores={sea_4temp2=2113..3999}] as @n[tag=SEAboss2,scores={rng2=1..9}] at @s unless entity @a[tag=SEAPT,distance=0..2] run item replace entity @s weapon.offhand with arrow
-execute if entity @n[tag=sc,scores={sea_4temp2=2113..3999}] as @n[tag=SEAboss2,scores={rng2=10..19}] at @s unless entity @a[tag=SEAPT,distance=0..2] run item replace entity @s weapon.offhand with tipped_arrow[potion_contents={custom_effects:[{id:slowness,duration:60,amplifier:2}]}]
-execute if entity @n[tag=sc,scores={sea_4temp2=2113..3999}] as @n[tag=SEAboss2,scores={rng2=20..29}] at @s unless entity @a[tag=SEAPT,distance=0..2] run item replace entity @s weapon.offhand with tipped_arrow[potion_contents={custom_effects:[{id:weakness,duration:60,amplifier:1}]}]
+execute store result score @n[tag=SEAboss2] rng2 run random value 1..800
+execute if entity @n[tag=sc,scores={sea_4temp2=2113..3999}] as @n[tag=SEAboss2,scores={rng2=201..800}] at @s unless entity @a[tag=SEAPT,distance=0..2] run item replace entity @s weapon.offhand with arrow
+execute if entity @n[tag=sc,scores={sea_4temp2=2113..3999}] as @n[tag=SEAboss2,scores={rng2=1..100}] at @s unless entity @a[tag=SEAPT,distance=0..2] run item replace entity @s weapon.offhand with tipped_arrow[potion_contents={custom_effects:[{id:slowness,duration:60,amplifier:2}]}]
+execute if entity @n[tag=sc,scores={sea_4temp2=2113..3999}] as @n[tag=SEAboss2,scores={rng2=101..200}] at @s unless entity @a[tag=SEAPT,distance=0..2] run item replace entity @s weapon.offhand with tipped_arrow[potion_contents={custom_effects:[{id:weakness,duration:60,amplifier:1}]}]
 execute if entity @n[tag=sc,scores={sea_4temp2=2113..3999}] as @n[tag=SEAboss2] at @s if entity @a[tag=SEAPT,distance=0..2] run item replace entity @s weapon.mainhand with netherite_hoe
 execute if entity @n[tag=sc,scores={sea_4temp2=2113..3999}] as @n[tag=SEAboss2] at @s unless entity @a[tag=SEAPT,distance=0..2] run item replace entity @s weapon.mainhand with bow
 
@@ -535,9 +535,9 @@ execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] 
 execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,scores={rng1=4}] at @s positioned ~2 ~ ~1 if block ~ ~ ~ air unless block ~ ~-1 ~ air run summon evoker_fangs
 execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,scores={rng1=5}] at @s positioned ~2 ~ ~-1 if block ~ ~ ~ air unless block ~ ~-1 ~ air run summon evoker_fangs
 execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,scores={rng1=6}] at @s positioned ~2 ~ ~ if block ~ ~ ~ air unless block ~ ~-1 ~ air run summon evoker_fangs
-execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2] at @s positioned ~6 ~1 ~ run particle sculk_soul ~ ~ ~ 2 3 3 0.0 5
-execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2] at @s positioned ~6 ~ ~ as @a[tag=SEAPT,distance=0..5] at @s run effect give @s wither 2 3 false
-execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2] at @s positioned ~9 ~ ~ as @a[tag=SEAPT,distance=0..5] at @s run effect give @s wither 2 3 false
-execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2] at @s positioned ~12 ~ ~ as @a[tag=SEAPT,distance=0..5] at @s run effect give @s wither 2 6 false
-execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2] at @s positioned ~15 ~ ~ as @a[tag=SEAPT,distance=0..5] at @s run effect give @s wither 2 9 false
-execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2] at @s positioned ~18 ~ ~ as @a[tag=SEAPT,distance=0..5] at @s run effect give @s wither 2 19 false
+execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2] at @s positioned ~6 ~1 ~ run particle sculk_soul ~ ~ ~ 2 3 3 0.0 15
+execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2] at @s positioned ~3 ~ ~ as @a[tag=SEAPT,distance=0..5] at @s run effect give @s wither 2 3 false
+execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2] at @s positioned ~5 ~ ~ as @a[tag=SEAPT,distance=0..5] at @s run effect give @s wither 2 3 false
+execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2] at @s positioned ~7 ~ ~ as @a[tag=SEAPT,distance=0..5] at @s run effect give @s wither 2 6 false
+execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2] at @s positioned ~9 ~ ~ as @a[tag=SEAPT,distance=0..5] at @s run effect give @s wither 2 9 false
+execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2] at @s positioned ~11 ~ ~ as @a[tag=SEAPT,distance=0..5] at @s run effect give @s wither 2 19 false
