@@ -2,7 +2,7 @@
   "type": "minecraft:generic",
   "pools": [
     {
-      "rolls": 10,
+      "rolls": 15,
       "entries": [
         {
           "type": "minecraft:item",
@@ -11,13 +11,13 @@
         },
 	{
           "type": "minecraft:item",
-          "name": "minecraft:wayfinder_armor_trim_smithing_template",
+          "name": "minecraft:dune_armor_trim_smithing_template",
           "weight": 7,
           "functions": [
             {
               "function": "minecraft:set_name",
               "name": {
-                "text": "醒殉徒石板",
+                "text": "金砂石板",
                 "color": "light_purple",
                 "bold": false,
                 "italic": false
@@ -28,7 +28,7 @@
 	{
           "type": "minecraft:item",
           "name": "minecraft:raiser_armor_trim_smithing_template",
-          "weight": 7,
+          "weight": 10,
           "functions": [
             {
               "function": "minecraft:set_name",
@@ -44,28 +44,7 @@
 	{
           "type": "minecraft:item",
           "name": "minecraft:emerald",
-          "weight": 32
-        }
-      ]
-    },
-    {
-      "rolls": 5,
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:air",
-          "weight": 30
-        },
-	{
-          "type": "minecraft:item",
-          "name": "minecraft:potion",
-          "weight": 30,
-          "functions": [
-            {
-              "function": "minecraft:set_potion",
-              "id": "minecraft:healing"
-            }
-          ]
+          "weight": 52
         }
       ]
     },
