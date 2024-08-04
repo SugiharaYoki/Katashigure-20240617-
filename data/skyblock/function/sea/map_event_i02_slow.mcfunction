@@ -473,8 +473,8 @@ execute if block 90132 128 94 air as @n[tag=sc,scores={sea_4temp2=..2099}] run s
 execute if entity @n[tag=sc,scores={sea_4temp2=2102}] run particle large_smoke 90132 129.9 93 1 2 2 0.0 40
 execute if entity @n[tag=sc,scores={sea_4temp2=2102}] run particle explosion 90132 129.9 93 1 2 2 0.0 20
 execute if entity @n[tag=sc,scores={sea_4temp2=2102}] run playsound entity.generic.explode block @a 90132 129.9 93 1 1
-execute if entity @n[tag=sc,scores={sea_4temp2=2102}] run summon lightning_bolt 90130 128 92
-execute if entity @n[tag=sc,scores={sea_4temp2=2102}] run setblock 90130 128 92 air destroy
+execute if entity @n[tag=sc,scores={sea_4temp2=2101}] run summon lightning_bolt 90130 128 92
+execute if entity @n[tag=sc,scores={sea_4temp2=2101}] run setblock 90130 128 92 air destroy
 
 
 
@@ -494,16 +494,16 @@ execute if entity @n[tag=sc,scores={sea_4temp2=2129}] positioned 90128 128 97 ru
 
 
 execute as @n[tag=SEAboss2] at @s run particle minecraft:trial_spawner_detection_ominous ~ ~0.5 ~ 0.5 0.2 0.5 0 5
-execute if entity @n[tag=sc,scores={sea_4temp2=2113..2116}] as @n[tag=SEAboss2] at @s positioned ~ ~1.5 ~0.3 run particle minecraft:sculk_soul ~ ~ ~ 0.1 0.1 0.1 0 3
+execute if entity @n[tag=sc,scores={sea_4temp2=2123..2126}] as @n[tag=SEAboss2] at @s positioned ~ ~1.5 ~0.3 run particle minecraft:sculk_soul ~ ~ ~ 0.1 0.1 0.1 0 3
 #execute if entity @n[tag=sc,scores={sea_4temp2=2114..2117}] as @n[tag=SEAboss2] at @s positioned ~ ~1.5 ~0.3 run playsound minecraft:item.crossbow.shoot hostile @a ~ ~ ~ 1.0 0.7
 #execute if entity @n[tag=sc,scores={sea_4temp2=2114..2117}] as @n[tag=SEAboss2] at @s positioned ~ ~1.5 ~-0.3 run playsound minecraft:item.crossbow.shoot hostile @a ~ ~ ~ 1.0 0.7
-execute if entity @n[tag=sc,scores={sea_4temp2=2114..2117}] as @n[tag=SEAboss2] at @s positioned ~-0.6 ~1.3 ~ run playsound minecraft:item.crossbow.shoot hostile @a ~ ~ ~ 1.0 0.7
-execute if entity @n[tag=sc,scores={sea_4temp2=2114..2117}] as @n[tag=SEAboss2] at @s positioned ~ ~1.5 ~0.3 run summon arrow ~ ~ ~ {Motion:[-1.8d,0d,0d]}
-execute if entity @n[tag=sc,scores={sea_4temp2=2113..2116}] as @n[tag=SEAboss2] at @s positioned ~ ~1.5 ~-0.3 run particle minecraft:sculk_soul ~ ~ ~ 0.1 0.1 0.1 0 3
-execute if entity @n[tag=sc,scores={sea_4temp2=2114..2117}] as @n[tag=SEAboss2] at @s positioned ~ ~1.5 ~-0.3 run summon arrow ~ ~ ~ {Motion:[-1.8d,0d,0d]}
-execute if entity @n[tag=sc,scores={sea_4temp2=2113..2116}] as @n[tag=SEAboss2] at @s positioned ~-0.6 ~1.3 ~ run particle minecraft:sculk_soul ~ ~ ~ 0.1 0.1 0.1 0 3
-execute if entity @n[tag=sc,scores={sea_4temp2=2114..2117}] as @n[tag=SEAboss2] at @s positioned ~-0.6 ~1.3 ~ run summon arrow ~ ~ ~ {Motion:[-1.8d,0d,0d]}
-execute if entity @n[tag=sc,scores={sea_4temp2=2116..2118}] as @n[tag=SEArivette] at @s run damage @s 800 arrow
+execute if entity @n[tag=sc,scores={sea_4temp2=2124..2127}] as @n[tag=SEAboss2] at @s positioned ~-0.6 ~1.3 ~ run playsound minecraft:item.crossbow.shoot hostile @a ~ ~ ~ 1.0 0.7
+execute if entity @n[tag=sc,scores={sea_4temp2=2124..2127}] as @n[tag=SEAboss2] at @s positioned ~ ~1.5 ~0.3 run summon arrow ~ ~ ~ {Motion:[-1.8d,0d,0d]}
+execute if entity @n[tag=sc,scores={sea_4temp2=2123..2126}] as @n[tag=SEAboss2] at @s positioned ~ ~1.5 ~-0.3 run particle minecraft:sculk_soul ~ ~ ~ 0.1 0.1 0.1 0 3
+execute if entity @n[tag=sc,scores={sea_4temp2=2124..2127}] as @n[tag=SEAboss2] at @s positioned ~ ~1.5 ~-0.3 run summon arrow ~ ~ ~ {Motion:[-1.8d,0d,0d]}
+execute if entity @n[tag=sc,scores={sea_4temp2=2123..2126}] as @n[tag=SEAboss2] at @s positioned ~-0.6 ~1.3 ~ run particle minecraft:sculk_soul ~ ~ ~ 0.1 0.1 0.1 0 3
+execute if entity @n[tag=sc,scores={sea_4temp2=2124..2127}] as @n[tag=SEAboss2] at @s positioned ~-0.6 ~1.3 ~ run summon arrow ~ ~ ~ {Motion:[-1.8d,0d,0d]}
+execute if entity @n[tag=sc,scores={sea_4temp2=2126..2128}] as @n[tag=SEArivette] at @s run damage @s 800 arrow
 
 execute if entity @n[tag=sc,scores={sea_4temp2=2101..2199}] if entity @n[tag=SEAboss2,x=90127,y=128,z=93,distance=0..3.2] run scoreboard players set @s sea_4temp2 2201
 
