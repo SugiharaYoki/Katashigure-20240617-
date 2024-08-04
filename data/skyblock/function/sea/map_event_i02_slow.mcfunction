@@ -517,5 +517,11 @@ execute if entity @n[tag=sc,scores={sea_4temp2=2113..3999}] as @n[tag=SEAboss2,s
 execute if entity @n[tag=sc,scores={sea_4temp2=2113..3999}] as @n[tag=SEAboss2] at @s if entity @a[tag=SEAPT,distance=0..2] run item replace entity @s weapon.mainhand with iron_axe
 execute if entity @n[tag=sc,scores={sea_4temp2=2113..3999}] as @n[tag=SEAboss2] at @s unless entity @a[tag=SEAPT,distance=0..2] run item replace entity @s weapon.mainhand with bow
 
-
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=2120..}] run bossbar add 9066601 "荣获深邃祝福的骸骨 - 德怀特"
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=2120..}] run bossbar set minecraft:9066601 color red
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=2120..}] run bossbar set minecraft:9066601 name "荣获深邃祝福的骸骨 - 德怀特"
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=2120..}] run bossbar set minecraft:9066601 players @a[tag=SEAPT]
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=2120..}] run bossbar set minecraft:9066601 style progress
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=2120..}] run bossbar set minecraft:9066601 max 500
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=2120..5000}] store result bossbar minecraft:9066601 value run data get entity @e[tag=SEAboss2,limit=1] Health
 
