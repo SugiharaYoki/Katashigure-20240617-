@@ -554,9 +554,9 @@ execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=2120..}] run bos
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=2120..5000}] store result bossbar minecraft:9066601 value run data get entity @e[tag=SEAboss2,limit=1] Health
 
 execute store result score @n[tag=SEAboss2] rng1 run random value 1..10
-execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,tag=!boss2hplock3,scores={rng1=1}] at @s positioned ~1 ~ ~1 if block ~ ~ ~ air unless block ~ ~-1 ~ air run summon evoker_fangs
-execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,tag=!boss2hplock3,scores={rng1=2}] at @s positioned ~1 ~ ~-1 if block ~ ~ ~ air unless block ~ ~-1 ~ air run summon evoker_fangs
-execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,tag=!boss2hplock3,scores={rng1=3}] at @s positioned ~1 ~ ~ if block ~ ~ ~ air unless block ~ ~-1 ~ air run summon evoker_fangs
+execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,tag=!boss2hplock3,scores={rng1=1}] at @s positioned ~3 ~ ~1 if block ~ ~ ~ air unless block ~ ~-1 ~ air run summon evoker_fangs
+execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,tag=!boss2hplock3,scores={rng1=2}] at @s positioned ~3 ~ ~-1 if block ~ ~ ~ air unless block ~ ~-1 ~ air run summon evoker_fangs
+execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,tag=!boss2hplock3,scores={rng1=3}] at @s positioned ~3 ~ ~ if block ~ ~ ~ air unless block ~ ~-1 ~ air run summon evoker_fangs
 execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,tag=!boss2hplock3,scores={rng1=4}] at @s positioned ~2 ~ ~1 if block ~ ~ ~ air unless block ~ ~-1 ~ air run summon evoker_fangs
 execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,tag=!boss2hplock3,scores={rng1=5}] at @s positioned ~2 ~ ~-1 if block ~ ~ ~ air unless block ~ ~-1 ~ air run summon evoker_fangs
 execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,tag=!boss2hplock3,scores={rng1=6}] at @s positioned ~2 ~ ~ if block ~ ~ ~ air unless block ~ ~-1 ~ air run summon evoker_fangs
