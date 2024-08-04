@@ -535,39 +535,39 @@ execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=2120..}] run bos
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=2120..5000}] store result bossbar minecraft:9066601 value run data get entity @e[tag=SEAboss2,limit=1] Health
 
 execute store result score @n[tag=SEAboss2] rng1 run random value 1..10
-execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,scores={rng1=1}] at @s positioned ~1 ~ ~1 if block ~ ~ ~ air unless block ~ ~-1 ~ air run summon evoker_fangs
-execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,scores={rng1=2}] at @s positioned ~1 ~ ~-1 if block ~ ~ ~ air unless block ~ ~-1 ~ air run summon evoker_fangs
-execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,scores={rng1=3}] at @s positioned ~1 ~ ~ if block ~ ~ ~ air unless block ~ ~-1 ~ air run summon evoker_fangs
-execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,scores={rng1=4}] at @s positioned ~2 ~ ~1 if block ~ ~ ~ air unless block ~ ~-1 ~ air run summon evoker_fangs
-execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,scores={rng1=5}] at @s positioned ~2 ~ ~-1 if block ~ ~ ~ air unless block ~ ~-1 ~ air run summon evoker_fangs
-execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,scores={rng1=6}] at @s positioned ~2 ~ ~ if block ~ ~ ~ air unless block ~ ~-1 ~ air run summon evoker_fangs
+execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,tag=!boss2hplock3,scores={rng1=1}] at @s positioned ~1 ~ ~1 if block ~ ~ ~ air unless block ~ ~-1 ~ air run summon evoker_fangs
+execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,tag=!boss2hplock3,scores={rng1=2}] at @s positioned ~1 ~ ~-1 if block ~ ~ ~ air unless block ~ ~-1 ~ air run summon evoker_fangs
+execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,tag=!boss2hplock3,scores={rng1=3}] at @s positioned ~1 ~ ~ if block ~ ~ ~ air unless block ~ ~-1 ~ air run summon evoker_fangs
+execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,tag=!boss2hplock3,scores={rng1=4}] at @s positioned ~2 ~ ~1 if block ~ ~ ~ air unless block ~ ~-1 ~ air run summon evoker_fangs
+execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,tag=!boss2hplock3,scores={rng1=5}] at @s positioned ~2 ~ ~-1 if block ~ ~ ~ air unless block ~ ~-1 ~ air run summon evoker_fangs
+execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,tag=!boss2hplock3,scores={rng1=6}] at @s positioned ~2 ~ ~ if block ~ ~ ~ air unless block ~ ~-1 ~ air run summon evoker_fangs
 execute if entity @n[tag=sc,scores={sea_player=1..2}] store result score @n[tag=SEAboss2] rng1 run random value 1..48
 execute if entity @n[tag=sc,scores={sea_player=3..4}] store result score @n[tag=SEAboss2] rng1 run random value 1..40
 execute if entity @n[tag=sc,scores={sea_player=5..}] store result score @n[tag=SEAboss2] rng1 run random value 1..32
-execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,scores={rng1=1}] at @s positioned ~1 ~0 0.5 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
-execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,scores={rng1=1}] at @s positioned ~1 ~0 0.5 run function skyblock:sea/m/skeleton_melee
-execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,scores={rng1=2}] at @s positioned ~1 ~0 0.5 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
-execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,scores={rng1=2}] at @s positioned ~1 ~0 0.5 run function skyblock:sea/m/skeleton_melee
-execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,scores={rng1=3}] at @s positioned ~1 ~0 0.5 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
-execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,scores={rng1=3}] at @s positioned ~1 ~0 0.5 run function skyblock:sea/m/drowned_small
-execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,scores={rng1=4}] at @s positioned ~1 ~0 0.5 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
-execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,scores={rng1=4}] at @s positioned ~1 ~0 0.5 run function skyblock:sea/m/drowned_small
+execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,tag=!boss2hplock3,scores={rng1=1}] at @s positioned ~1 ~0 0.5 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
+execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,tag=!boss2hplock3,scores={rng1=1}] at @s positioned ~1 ~0 0.5 run function skyblock:sea/m/skeleton_melee
+execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,tag=!boss2hplock3,scores={rng1=2}] at @s positioned ~1 ~0 0.5 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
+execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,tag=!boss2hplock3,scores={rng1=2}] at @s positioned ~1 ~0 0.5 run function skyblock:sea/m/skeleton_melee
+execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,tag=!boss2hplock3,scores={rng1=3}] at @s positioned ~1 ~0 0.5 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
+execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,tag=!boss2hplock3,scores={rng1=3}] at @s positioned ~1 ~0 0.5 run function skyblock:sea/m/drowned_small
+execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,tag=!boss2hplock3,scores={rng1=4}] at @s positioned ~1 ~0 0.5 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
+execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,tag=!boss2hplock3,scores={rng1=4}] at @s positioned ~1 ~0 0.5 run function skyblock:sea/m/drowned_small
 
 execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2] at @s if block ~ ~ ~ cobweb run setblock ~ ~ ~ air destroy
 
-execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2] at @s positioned ~6 ~1 ~ run particle sculk_soul ~ ~ ~ 2 3 3 0.0 15
-execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2] at @s positioned ~3.5 ~ ~ as @a[tag=SEAPT,distance=0..4] at @s run effect give @s wither 2 3 false
-execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2] at @s positioned ~5.5 ~ ~ as @a[tag=SEAPT,distance=0..4] at @s run effect give @s wither 2 3 false
-execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2] at @s positioned ~7.5 ~ ~ as @a[tag=SEAPT,distance=0..4] at @s run effect give @s wither 2 6 false
-execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2] at @s positioned ~9.5 ~ ~ as @a[tag=SEAPT,distance=0..5] at @s run effect give @s wither 2 9 false
-execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2] at @s positioned ~11.5 ~ ~ as @a[tag=SEAPT,distance=0..5] at @s run effect give @s wither 2 19 false
+execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,tag=!boss2hplock3] at @s positioned ~6 ~1 ~ run particle sculk_soul ~ ~ ~ 2 3 3 0.0 15
+execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,tag=!boss2hplock3] at @s positioned ~3.5 ~ ~ as @a[tag=SEAPT,distance=0..4] at @s run effect give @s wither 2 3 false
+execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,tag=!boss2hplock3] at @s positioned ~5.5 ~ ~ as @a[tag=SEAPT,distance=0..4] at @s run effect give @s wither 2 3 false
+execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,tag=!boss2hplock3] at @s positioned ~7.5 ~ ~ as @a[tag=SEAPT,distance=0..4] at @s run effect give @s wither 2 6 false
+execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,tag=!boss2hplock3] at @s positioned ~9.5 ~ ~ as @a[tag=SEAPT,distance=0..5] at @s run effect give @s wither 2 9 false
+execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,tag=!boss2hplock3] at @s positioned ~11.5 ~ ~ as @a[tag=SEAPT,distance=0..5] at @s run effect give @s wither 2 19 false
 
 execute store result score @n[tag=SEAboss2] sea_boss1_hp run data get entity @n[tag=SEAboss2] Health
 execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,scores={sea_boss1_hp=..350},tag=!boss2hplock1] run effect give @s resistance 3 9 true
 execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,scores={sea_boss1_hp=..250},tag=!boss2hplock2] run effect give @s resistance 3 9 true
 execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,scores={sea_boss1_hp=101..250}] run effect give @s speed 3 0 true
 execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,scores={sea_boss1_hp=..100},tag=!boss2hplock3] run effect give @s resistance 3 9 true
-execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,scores={sea_boss1_hp=30..100}] run effect give @s speed 3 1 true
+execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,scores={sea_boss1_hp=30..100}] run effect give @s speed 3 2 true
 
 execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,x=90105,y=128,z=93,distance=0..6,tag=!boss2hplock1] at @s run fill 90099 130 94 90099 128 92 iron_bars destroy
 execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,x=90105,y=128,z=93,distance=0..6,tag=!boss2hplock1] at @s positioned 90092 128 96 run function skyblock:sea/m/zombie_cook
@@ -576,15 +576,19 @@ execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] 
 execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,x=90105,y=128,z=93,distance=0..6,tag=!boss2hplock1] at @s positioned 90079 128 93 run function skyblock:sea/m/spider
 execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,x=90105,y=128,z=93,distance=0..6,tag=!boss2hplock1] at @s run tag @s add boss2hplock1
 
-execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,x=90080,y=128,z=93,distance=0..6,tag=!boss2hplock2] at @s positioned ~1 ~0 0.5 run function skyblock:sea/m/skeleton
-execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,x=90080,y=128,z=93,distance=0..6,tag=!boss2hplock2] at @s positioned ~1 ~0 -0.5 run function skyblock:sea/m/skeleton
-execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,x=90080,y=128,z=93,distance=0..6,tag=!boss2hplock2] at @s positioned ~1 ~0 0.5 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
-execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,x=90080,y=128,z=93,distance=0..6,tag=!boss2hplock2] at @s positioned ~1 ~0 -0.5 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
-execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,x=90080,y=128,z=93,distance=0..6,tag=!boss2hplock2] at @s run tag @s add boss2hplock2
+execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,x=90085,y=128,z=93,distance=0..6,tag=!boss2hplock2] at @s positioned ~1 ~0 0.5 run function skyblock:sea/m/skeleton
+execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,x=90085,y=128,z=93,distance=0..6,tag=!boss2hplock2] at @s positioned ~1 ~0 -0.5 run function skyblock:sea/m/skeleton
+execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,x=90085,y=128,z=93,distance=0..6,tag=!boss2hplock2] at @s positioned ~1 ~0 0.5 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
+execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,x=90085,y=128,z=93,distance=0..6,tag=!boss2hplock2] at @s positioned ~1 ~0 -0.5 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
+execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,x=90085,y=128,z=93,distance=0..6,tag=!boss2hplock2] at @s run tag @s add boss2hplock2
+
+execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,x=90068,y=128,z=93,distance=0..6,tag=!boss2hplock3] at @s run particle minecraft:sculk_soul ~ ~ ~ 1 1 1 0 20
+execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,x=90068,y=128,z=93,distance=0..6,tag=!boss2hplock3] at @s run playsound block.trial_spawner.ambient_ominous hostile @a ~ ~ ~ 20 0.6
+execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,x=90068,y=128,z=93,distance=0..6,tag=!boss2hplock3] at @s run fill 90066 128 96 90066 129 97 air destroy
+execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,x=90068,y=128,z=93,distance=0..6,tag=!boss2hplock3] at @s run tag @s add boss2hplock3
 
 
 
 
-
-
+#setblock 90066 129 112 minecraft:stone_button[facing=north]
 

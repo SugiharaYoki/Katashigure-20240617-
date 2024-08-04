@@ -162,11 +162,15 @@ setblock 90145 129 115 air
 setblock 90148 129 112 air
 setblock 90101 128 130 air
 setblock 90109 128 132 air
+setblock 90082 128 104 air
+setblock 90084 128 101 air
 setblock 90146 129 122 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:coal"}}
 setblock 90145 129 115 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 1, id:"minecraft:beef"}}
 setblock 90148 129 112 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 1, id:"minecraft:beef"}}
 setblock 90101 128 130 decorated_pot{sherds:["friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd"],item:{count: 3, id:"minecraft:emerald"}}
 setblock 90109 128 132 decorated_pot{sherds:["friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd"],item:{count: 3, id:"minecraft:emerald"}}
+setblock 90082 128 104 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 1, id:"minecraft:beef"}}
+setblock 90084 128 101 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:flint"}}
 
 setblock 90144 128 103 air
 setblock 90130 128 92 air
@@ -174,12 +178,16 @@ setblock 90146 128 109 air
 setblock 90114 128 92 air
 setblock 90104 128 94 air
 setblock 90094 128 92 air
+setblock 90070 128 94 air
 setblock 90144 128 103 decorated_pot{sherds:["burn_pottery_sherd","burn_pottery_sherd","burn_pottery_sherd","burn_pottery_sherd"],item:{count: 1, id:"minecraft:blaze_powder"}}
 setblock 90130 128 92 decorated_pot{sherds:["burn_pottery_sherd","burn_pottery_sherd","burn_pottery_sherd","burn_pottery_sherd"],item:{count: 1, id:"minecraft:blaze_powder"}}
 setblock 90146 128 109 decorated_pot{sherds:["burn_pottery_sherd","burn_pottery_sherd","burn_pottery_sherd","burn_pottery_sherd"],item:{count: 1, id:"minecraft:blaze_powder"}}
 setblock 90114 128 92 decorated_pot{sherds:["burn_pottery_sherd","burn_pottery_sherd","burn_pottery_sherd","burn_pottery_sherd"],item:{count: 1, id:"minecraft:blaze_powder"}}
 setblock 90104 128 94 decorated_pot{sherds:["burn_pottery_sherd","burn_pottery_sherd","burn_pottery_sherd","burn_pottery_sherd"],item:{count: 1, id:"minecraft:blaze_powder"}}
 setblock 90094 128 92 decorated_pot{sherds:["burn_pottery_sherd","burn_pottery_sherd","burn_pottery_sherd","burn_pottery_sherd"],item:{count: 1, id:"minecraft:blaze_powder"}}
+setblock 90070 128 94 decorated_pot{sherds:["burn_pottery_sherd","burn_pottery_sherd","burn_pottery_sherd","burn_pottery_sherd"],item:{count: 1, id:"minecraft:blaze_powder"}}
+
+
 
 fill 90088 129 115 90088 128 115 minecraft:polished_tuff_wall
 setblock 90101 129 125 air
@@ -296,6 +304,19 @@ setblock 90085 128 94 minecraft:cobweb
 setblock 90083 128 92 minecraft:cobweb
 setblock 90082 128 94 minecraft:cobweb
 setblock 90081 128 91 minecraft:cobweb
+fill 90083 130 99 90082 128 99 iron_block
+fill 90085 130 105 90083 128 105 iron_block
+setblock 90065 128 121 chest[facing=north]
+item replace block 90065 128 121 container.11 with carrot 2
+item replace block 90065 128 121 container.13 with golden_carrot 2
+item replace block 90065 128 121 container.15 with carrot 2
+
+setblock 90066 129 112 minecraft:air
+fill 90066 128 96 90066 129 97 iron_bars
+
+
+
+
 
 #ch4
 setblock 90095 130 73 minecraft:potted_allium
