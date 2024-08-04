@@ -465,7 +465,7 @@ execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=1301}] po
 
 execute if entity @a[tag=SEAPT,x=90146,y=128,z=93,distance=0..4] as @n[tag=sc,scores={sea_4temp2=..1999}] run scoreboard players set @s sea_4temp2 2000
 execute if entity @n[tag=sc,scores={sea_4temp2=2001}] positioned 90151.66 128.00 96.00 run function skyblock:sea/m/special_rivette
-execute if entity @n[tag=sc,scores={sea_4temp2=2001..2099}] if entity @n[type=piglin,x=90138,y=128,z=93,distance=0..3.2] run fill 90132 129 94 90131 128 92 air
+execute if entity @n[tag=sc,scores={sea_4temp2=2001..2099}] if entity @n[tag=SEArivette,x=90138,y=128,z=93,distance=0..3.2] run fill 90132 129 94 90131 128 92 air
 execute unless block 90132 128 94 air as @n[tag=sc,scores={sea_4temp2=2085..2099}] run scoreboard players set @s sea_4temp2 2085
 execute if block 90132 128 94 air as @n[tag=sc,scores={sea_4temp2=..2099}] run scoreboard players set @s sea_4temp2 2101
 
@@ -477,7 +477,7 @@ execute if entity @n[tag=sc,scores={sea_4temp2=2101}] positioned 90128 128 97 ru
 execute if entity @n[tag=sc,scores={sea_4temp2=2101}] positioned 90128 128 97 run function skyblock:sea/m/silverfish
 execute if entity @n[tag=sc,scores={sea_4temp2=2101}] positioned 90128 128 97 run function skyblock:sea/m/silverfish
 
-execute if entity @n[tag=sc,scores={sea_4temp2=2101..2199}] if entity @n[type=piglin,x=90130,y=128,z=93,distance=0..3.2] run scoreboard players set @s sea_4temp2 2201
+execute if entity @n[tag=sc,scores={sea_4temp2=2101..2199}] if entity @n[tag=SEArivette,x=90130,y=128,z=93,distance=0..3.2] run scoreboard players set @s sea_4temp2 2201
 execute unless block 90132 128 94 air as @n[tag=sc,scores={sea_4temp2=2185..2199}] run scoreboard players set @s sea_4temp2 2085
 execute if entity @n[tag=sc,scores={sea_4temp2=2102}] run setblock 90147 132 91 air destroy
 execute if entity @n[tag=sc,scores={sea_4temp2=2102}] run summon lightning_bolt
