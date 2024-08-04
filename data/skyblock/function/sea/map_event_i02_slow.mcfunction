@@ -615,7 +615,7 @@ execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=5001}] run bossb
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=5001}] run stopsound @a[tag=SEAPT] music
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=5001}] as @a[tag=SEAPT] at @s run playsound item.trident.thunder ambient @s ~ ~ ~ 100 0.5
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=5002}] run give @a[tag=SEAPT] nether_star
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=5012}] as @a[tag=SEAPT] at @s run tellraw @s {"text":"终于解决了这几个家伙。……","color":"gray"}
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=5012}] as @a[tag=SEAPT] at @s run tellraw @s {"text":"一番苦战，但终于解决这几个家伙了。","color":"gray"}
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=5030}] as @a[tag=SEAPT] at @s run tellraw @s {"text":"是时候往更上层去了。","color":"gray"}
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=5055}] as @a[tag=SEAPT] at @s run tellraw @s {"text":"『厄珀尔的悲歌』第二章 完","color":"blue","bold": true}
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=5055}] as @a[tag=SEAPT] at @s run playsound music_disc.creator_music_box music @a[tag=SEAPT] ~ ~ ~ 1000 0.8
