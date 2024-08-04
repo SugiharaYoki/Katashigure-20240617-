@@ -489,9 +489,9 @@ execute if entity @n[tag=sc,scores={sea_4temp2=2112..2114}] positioned 90141 128
 execute if entity @n[tag=sc,scores={sea_4temp2=2112..2121}] positioned 90141 128 93 run particle minecraft:trial_omen ~ ~ ~ 1 1 1 0 20
 execute if entity @n[tag=sc,scores={sea_4temp2=2122}] positioned 90141 128 93 run particle minecraft:sculk_soul ~ ~ ~ 1 1 1 0 20
 execute if entity @n[tag=sc,scores={sea_4temp2=2122}] positioned 90141 128 93 run function skyblock:sea/m/boss2
-execute if entity @n[tag=sc,scores={sea_4temp2=2129}] positioned 90128 128 97 run function skyblock:sea/m/silverfish
-execute if entity @n[tag=sc,scores={sea_4temp2=2129}] positioned 90128 128 97 run function skyblock:sea/m/silverfish
-execute if entity @n[tag=sc,scores={sea_4temp2=2129}] positioned 90128 128 97 run function skyblock:sea/m/silverfish
+execute if entity @n[tag=sc,scores={sea_4temp2=2279}] positioned 90128 128 97 run function skyblock:sea/m/silverfish
+execute if entity @n[tag=sc,scores={sea_4temp2=2279}] positioned 90128 128 97 run function skyblock:sea/m/silverfish
+execute if entity @n[tag=sc,scores={sea_4temp2=2279}] positioned 90128 128 97 run function skyblock:sea/m/silverfish
 
 
 execute as @n[tag=SEAboss2] at @s run particle minecraft:trial_spawner_detection_ominous ~ ~0.5 ~ 0.5 0.2 0.5 0 5
