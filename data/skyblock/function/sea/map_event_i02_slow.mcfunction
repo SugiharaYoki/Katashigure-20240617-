@@ -525,3 +525,16 @@ execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=2120..}] run bos
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=2120..}] run bossbar set minecraft:9066601 max 500
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=2120..5000}] store result bossbar minecraft:9066601 value run data get entity @e[tag=SEAboss2,limit=1] Health
 
+execute store result score @n[tag=SEAboss2] rng1 run random value 1..10
+execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,scores={rng1=1}] positioned ~1 ~ ~1 if block ~ ~ ~ air unless block ~ ~-1 ~ air run summon evoker_fangs
+execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,scores={rng1=2}] positioned ~1 ~ ~-1 if block ~ ~ ~ air unless block ~ ~-1 ~ air run summon evoker_fangs
+execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,scores={rng1=3}] positioned ~1 ~ ~ if block ~ ~ ~ air unless block ~ ~-1 ~ air run summon evoker_fangs
+execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,scores={rng1=4}] positioned ~2 ~ ~1 if block ~ ~ ~ air unless block ~ ~-1 ~ air run summon evoker_fangs
+execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,scores={rng1=5}] positioned ~2 ~ ~-1 if block ~ ~ ~ air unless block ~ ~-1 ~ air run summon evoker_fangs
+execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,scores={rng1=6}] positioned ~2 ~ ~ if block ~ ~ ~ air unless block ~ ~-1 ~ air run summon evoker_fangs
+execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2] positioned ~6 ~1 ~ run particle sculk_soul ~ ~ ~ 2 3 3 0.0 5
+execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2] positioned ~6 ~ ~ as @a[tag=SEAPT,distance=0..5] at @s run effect give @s wither 2 3 false
+execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2] positioned ~9 ~ ~ as @a[tag=SEAPT,distance=0..5] at @s run effect give @s wither 2 3 false
+execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2] positioned ~12 ~ ~ as @a[tag=SEAPT,distance=0..5] at @s run effect give @s wither 2 6 false
+execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2] positioned ~15 ~ ~ as @a[tag=SEAPT,distance=0..5] at @s run effect give @s wither 2 9 false
+execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2] positioned ~18 ~ ~ as @a[tag=SEAPT,distance=0..5] at @s run effect give @s wither 2 19 false
