@@ -553,7 +553,7 @@ execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=2120..}] run bos
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=2120..}] run bossbar set minecraft:9066601 players @a[tag=SEAPT]
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=2120..}] run bossbar set minecraft:9066601 style progress
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=2120..}] run bossbar set minecraft:9066601 max 500
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=2120..5000}] store result bossbar minecraft:9066601 value run data get entity @e[tag=SEAboss2,limit=1] Health
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=2120..5000}] store result bossbar minecraft:9066601 value run data get entity @e[tag=SEAboss2,limit=1,type=bogged] Health
 
 execute store result score @n[tag=SEAboss2] rng1 run random value 1..10
 execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,tag=!boss2hplock3,scores={rng1=1}] at @s positioned ~3 ~ ~1 if block ~ ~ ~ air unless block ~ ~-1 ~ air run summon evoker_fangs
