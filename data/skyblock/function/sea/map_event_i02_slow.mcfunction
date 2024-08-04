@@ -470,26 +470,28 @@ execute if entity @n[tag=sc,scores={sea_4temp2=2001}] positioned 90151.66 128.00
 execute if entity @n[tag=sc,scores={sea_4temp2=2001..2099}] if entity @n[tag=SEArivette,x=90138,y=128,z=93,distance=0..3.2] run fill 90132 129 94 90131 128 92 air
 execute unless block 90132 128 94 air as @n[tag=sc,scores={sea_4temp2=2085..2099}] run scoreboard players set @s sea_4temp2 2085
 execute if block 90132 128 94 air as @n[tag=sc,scores={sea_4temp2=..2099}] run scoreboard players set @s sea_4temp2 2101
+execute if entity @n[tag=sc,scores={sea_4temp2=2102}] run particle large_smoke 90132 129.9 93 1 2 2 0.0 40
+execute if entity @n[tag=sc,scores={sea_4temp2=2102}] run particle explosion 90132 129.9 93 1 2 2 0.0 20
+execute if entity @n[tag=sc,scores={sea_4temp2=2102}] run playsound entity.generic.explode block @a 90132 129.9 93 1 1
+execute if entity @n[tag=sc,scores={sea_4temp2=2102}] run summon lightning_bolt 90130 128 92
+execute if entity @n[tag=sc,scores={sea_4temp2=2102}] run setblock 90130 128 92 air destroy
 
 
-execute if entity @n[tag=sc,scores={sea_4temp2=2101..2199}] if entity @n[tag=SEArivette,x=90130,y=128,z=93,distance=0..3.2] run scoreboard players set @s sea_4temp2 2201
-execute unless block 90132 128 94 air as @n[tag=sc,scores={sea_4temp2=2185..2199}] run scoreboard players set @s sea_4temp2 2085
-execute if entity @n[tag=sc,scores={sea_4temp2=2102}] run setblock 90147 132 91 air destroy
-execute if entity @n[tag=sc,scores={sea_4temp2=2102}] run summon lightning_bolt
-execute if entity @n[tag=sc,scores={sea_4temp2=2102..2104}] positioned 90145 128 93 run playsound block.trial_spawner.detect_player hostile @a ~ ~ ~ 20 0.6
-execute if entity @n[tag=sc,scores={sea_4temp2=2102..2111}] positioned 90145 128 93 run playsound block.trial_spawner.ambient_ominous hostile @a ~ ~ ~ 20 0.6
-execute if entity @n[tag=sc,scores={sea_4temp2=2102..2111}] positioned 90145 128 93 run playsound ambient.soul_sand_valley.mood hostile @a ~ ~ ~ 20 0.8
-execute if entity @n[tag=sc,scores={sea_4temp2=2102..2104}] positioned 90145 128 93 run playsound ambient.soul_sand_valley.additions hostile @a ~ ~ ~ 20 0.8
-execute if entity @n[tag=sc,scores={sea_4temp2=2102..2111}] positioned 90145 128 93 run particle minecraft:trial_omen ~ ~ ~ 1 1 1 0 20
-execute if entity @n[tag=sc,scores={sea_4temp2=2112}] positioned 90145 128 93 run particle minecraft:sculk_soul ~ ~ ~ 1 1 1 0 20
-execute if entity @n[tag=sc,scores={sea_4temp2=2112}] positioned 90145 128 93 run function skyblock:sea/m/boss2
-execute if entity @n[tag=sc,scores={sea_4temp2=2119}] positioned 90128 128 97 run function skyblock:sea/m/silverfish
-execute if entity @n[tag=sc,scores={sea_4temp2=2119}] positioned 90128 128 97 run function skyblock:sea/m/silverfish
-execute if entity @n[tag=sc,scores={sea_4temp2=2119}] positioned 90128 128 97 run function skyblock:sea/m/silverfish
-execute if entity @n[tag=sc,scores={sea_4temp2=2119}] run particle large_smoke 90132 129.9 93 1 2 2 0.0 40
-execute if entity @n[tag=sc,scores={sea_4temp2=2119}] run particle explosion 90132 129.9 93 1 2 2 0.0 20
-execute if entity @n[tag=sc,scores={sea_4temp2=2119}] run playsound entity.generic.explode block @a 90132 129.9 93 1 1
-execute if entity @n[tag=sc,scores={sea_4temp2=2119}] run summon lightning_bolt 90130 128 92
+
+execute unless block 90132 128 94 air as @n[tag=sc,scores={sea_4temp2=2185..2199}] run scoreboard players set @s sea_4temp2 2185
+execute if entity @n[tag=sc,scores={sea_4temp2=2109}] run setblock 90147 132 91 air destroy
+execute if entity @n[tag=sc,scores={sea_4temp2=2109}] run summon lightning_bolt
+execute if entity @n[tag=sc,scores={sea_4temp2=2112..2114}] positioned 90145 128 93 run playsound block.trial_spawner.detect_player hostile @a ~ ~ ~ 20 0.6
+execute if entity @n[tag=sc,scores={sea_4temp2=2112..2121}] positioned 90145 128 93 run playsound block.trial_spawner.ambient_ominous hostile @a ~ ~ ~ 20 0.6
+execute if entity @n[tag=sc,scores={sea_4temp2=2112..2121}] positioned 90145 128 93 run playsound ambient.soul_sand_valley.mood hostile @a ~ ~ ~ 20 0.8
+execute if entity @n[tag=sc,scores={sea_4temp2=2112..2114}] positioned 90145 128 93 run playsound ambient.soul_sand_valley.additions hostile @a ~ ~ ~ 20 0.8
+execute if entity @n[tag=sc,scores={sea_4temp2=2112..2121}] positioned 90145 128 93 run particle minecraft:trial_omen ~ ~ ~ 1 1 1 0 20
+execute if entity @n[tag=sc,scores={sea_4temp2=2122}] positioned 90145 128 93 run particle minecraft:sculk_soul ~ ~ ~ 1 1 1 0 20
+execute if entity @n[tag=sc,scores={sea_4temp2=2122}] positioned 90145 128 93 run function skyblock:sea/m/boss2
+execute if entity @n[tag=sc,scores={sea_4temp2=2129}] positioned 90128 128 97 run function skyblock:sea/m/silverfish
+execute if entity @n[tag=sc,scores={sea_4temp2=2129}] positioned 90128 128 97 run function skyblock:sea/m/silverfish
+execute if entity @n[tag=sc,scores={sea_4temp2=2129}] positioned 90128 128 97 run function skyblock:sea/m/silverfish
+
 
 execute as @n[tag=SEAboss2] at @s run particle minecraft:trial_spawner_detection_ominous ~ ~0.5 ~ 0.5 0.2 0.5 0 5
 execute if entity @n[tag=sc,scores={sea_4temp2=2113..2116}] as @n[tag=SEAboss2] at @s positioned ~ ~1.5 ~0.3 run particle minecraft:sculk_soul ~ ~ ~ 0.1 0.1 0.1 0 3
@@ -502,21 +504,26 @@ execute if entity @n[tag=sc,scores={sea_4temp2=2114..2117}] as @n[tag=SEAboss2] 
 execute if entity @n[tag=sc,scores={sea_4temp2=2113..2116}] as @n[tag=SEAboss2] at @s positioned ~-0.6 ~1.3 ~ run particle minecraft:sculk_soul ~ ~ ~ 0.1 0.1 0.1 0 3
 execute if entity @n[tag=sc,scores={sea_4temp2=2114..2117}] as @n[tag=SEAboss2] at @s positioned ~-0.6 ~1.3 ~ run summon arrow ~ ~ ~ {Motion:[-1.8d,0d,0d]}
 execute if entity @n[tag=sc,scores={sea_4temp2=2116..2118}] as @n[tag=SEArivette] at @s run damage @s 800 arrow
-execute if entity @n[tag=sc,scores={sea_4temp2=2220}] run summon minecraft:lightning_bolt 90123.53 128.00 93.50
-execute if entity @n[tag=sc,scores={sea_4temp2=2220}] run fill 90123 128 93 90123 129 93 air destroy
+
+execute if entity @n[tag=sc,scores={sea_4temp2=2101..2199}] if entity @n[tag=SEAboss2,x=90127,y=128,z=93,distance=0..3.2] run scoreboard players set @s sea_4temp2 2201
+
+execute if entity @n[tag=sc,scores={sea_4temp2=4900..5000}] if entity @n[tag=SEAboss2] run scoreboard players set @s sea_4temp2 4900
+
+execute if entity @n[tag=sc,scores={sea_4temp2=2202}] run summon minecraft:lightning_bolt 90123.53 128.00 93.50
+execute if entity @n[tag=sc,scores={sea_4temp2=2202}] run fill 90123 128 93 90123 129 93 air destroy
 execute if entity @n[tag=sc,scores={sea_4temp2=2120}] as @a[tag=SEAPT] at @s run playsound minecraft:app2.manifoldhypothesis music @a[tag=SEAPT] ~ ~ ~ 1000 1.0
-execute if entity @n[tag=sc,scores={sea_4temp2=2131}] as @n[tag=SEAboss2] at @s positioned ~1 ~0 0.5 run function skyblock:sea/m/skeleton_melee
-execute if entity @n[tag=sc,scores={sea_4temp2=2131}] as @n[tag=SEAboss2] at @s positioned ~1 ~0 ~-0.5 run function skyblock:sea/m/skeleton_melee
-execute if entity @n[tag=sc,scores={sea_4temp2=2251}] as @n[tag=SEAboss2] at @s positioned ~1 ~0 0.5 run function skyblock:sea/m/skeleton_melee
-execute if entity @n[tag=sc,scores={sea_4temp2=2251}] as @n[tag=SEAboss2] at @s positioned ~1 ~0 ~-0.5 run function skyblock:sea/m/skeleton_melee
-execute if entity @n[tag=sc,scores={sea_4temp2=2253}] as @n[tag=SEAboss2] at @s positioned ~1 ~0 0.5 run function skyblock:sea/m/skeleton
-execute if entity @n[tag=sc,scores={sea_4temp2=2253}] as @n[tag=SEAboss2] at @s positioned ~1 ~0 ~-0.5 run function skyblock:sea/m/skeleton
-execute if entity @n[tag=sc,scores={sea_4temp2=2231}] as @n[tag=SEAboss2] at @s positioned ~1 ~0 0.5 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
-execute if entity @n[tag=sc,scores={sea_4temp2=2231}] as @n[tag=SEAboss2] at @s positioned ~1 ~0 ~-0.5 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
-execute if entity @n[tag=sc,scores={sea_4temp2=2251}] as @n[tag=SEAboss2] at @s positioned ~1 ~0 0.5 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
-execute if entity @n[tag=sc,scores={sea_4temp2=2251}] as @n[tag=SEAboss2] at @s positioned ~1 ~0 ~-0.5 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
-execute if entity @n[tag=sc,scores={sea_4temp2=2253}] as @n[tag=SEAboss2] at @s positioned ~1 ~0 0.5 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
-execute if entity @n[tag=sc,scores={sea_4temp2=2253}] as @n[tag=SEAboss2] at @s positioned ~1 ~0 ~-0.5 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
+execute if entity @n[tag=sc,scores={sea_4temp2=2211}] as @n[tag=SEAboss2] at @s positioned ~1 ~0 0.5 run function skyblock:sea/m/skeleton_melee
+execute if entity @n[tag=sc,scores={sea_4temp2=2211}] as @n[tag=SEAboss2] at @s positioned ~1 ~0 ~-0.5 run function skyblock:sea/m/skeleton_melee
+execute if entity @n[tag=sc,scores={sea_4temp2=2213}] as @n[tag=SEAboss2] at @s positioned ~1 ~0 0.5 run function skyblock:sea/m/skeleton_melee
+execute if entity @n[tag=sc,scores={sea_4temp2=2213}] as @n[tag=SEAboss2] at @s positioned ~1 ~0 ~-0.5 run function skyblock:sea/m/skeleton_melee
+execute if entity @n[tag=sc,scores={sea_4temp2=2222}] as @n[tag=SEAboss2] at @s positioned ~1 ~0 0.5 run function skyblock:sea/m/skeleton
+execute if entity @n[tag=sc,scores={sea_4temp2=2222}] as @n[tag=SEAboss2] at @s positioned ~1 ~0 ~-0.5 run function skyblock:sea/m/skeleton
+execute if entity @n[tag=sc,scores={sea_4temp2=2211}] as @n[tag=SEAboss2] at @s positioned ~1 ~0 0.5 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
+execute if entity @n[tag=sc,scores={sea_4temp2=2211}] as @n[tag=SEAboss2] at @s positioned ~1 ~0 ~-0.5 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
+execute if entity @n[tag=sc,scores={sea_4temp2=2213}] as @n[tag=SEAboss2] at @s positioned ~1 ~0 0.5 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
+execute if entity @n[tag=sc,scores={sea_4temp2=2213}] as @n[tag=SEAboss2] at @s positioned ~1 ~0 ~-0.5 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
+execute if entity @n[tag=sc,scores={sea_4temp2=2222}] as @n[tag=SEAboss2] at @s positioned ~1 ~0 0.5 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
+execute if entity @n[tag=sc,scores={sea_4temp2=2222}] as @n[tag=SEAboss2] at @s positioned ~1 ~0 ~-0.5 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
 
 
 execute store result score @n[tag=SEAboss2] rng2 run random value 1..800
