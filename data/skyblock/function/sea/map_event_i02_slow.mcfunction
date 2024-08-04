@@ -487,6 +487,9 @@ execute if entity @n[tag=sc,scores={sea_4temp2=2112}] positioned 90141 128 93 ru
 
 execute as @n[tag=SEAboss2] at @s run particle minecraft:trial_spawner_detection_ominous ~ ~0.5 ~ 0.5 0.2 0.5 0 5
 execute if entity @n[tag=sc,scores={sea_4temp2=2113..2116}] as @n[tag=SEAboss2] at @s positioned ~ ~1.5 ~0.3 run particle minecraft:sculk_soul ~ ~ ~ 0.1 0.1 0.1 0 3
+#execute if entity @n[tag=sc,scores={sea_4temp2=2114..2117}] as @n[tag=SEAboss2] at @s positioned ~ ~1.5 ~0.3 run playsound minecraft:item.crossbow.shoot hostile @a ~ ~ ~ 1.0 0.7
+#execute if entity @n[tag=sc,scores={sea_4temp2=2114..2117}] as @n[tag=SEAboss2] at @s positioned ~ ~1.5 ~-0.3 run playsound minecraft:item.crossbow.shoot hostile @a ~ ~ ~ 1.0 0.7
+execute if entity @n[tag=sc,scores={sea_4temp2=2114..2117}] as @n[tag=SEAboss2] at @s positioned ~-0.6 ~1.3 ~ run playsound minecraft:item.crossbow.shoot hostile @a ~ ~ ~ 1.0 0.7
 execute if entity @n[tag=sc,scores={sea_4temp2=2114..2117}] as @n[tag=SEAboss2] at @s positioned ~ ~1.5 ~0.3 run summon arrow ~ ~ ~ {Motion:[-2d,0d,0d]}
 execute if entity @n[tag=sc,scores={sea_4temp2=2113..2116}] as @n[tag=SEAboss2] at @s positioned ~ ~1.5 ~-0.3 run particle minecraft:sculk_soul ~ ~ ~ 0.1 0.1 0.1 0 3
 execute if entity @n[tag=sc,scores={sea_4temp2=2114..2117}] as @n[tag=SEAboss2] at @s positioned ~ ~1.5 ~-0.3 run summon arrow ~ ~ ~ {Motion:[-2d,0d,0d]}
