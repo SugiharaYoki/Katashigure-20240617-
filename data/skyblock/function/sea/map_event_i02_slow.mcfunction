@@ -480,7 +480,7 @@ execute if entity @n[tag=sc,scores={sea_4temp2=2101}] run setblock 90130 128 92 
 
 execute unless block 90132 128 94 air as @n[tag=sc,scores={sea_4temp2=2185..2199}] run scoreboard players set @s sea_4temp2 2185
 execute if entity @n[tag=sc,scores={sea_4temp2=2103}] run setblock 90147 132 91 air destroy
-execute if entity @n[tag=sc,scores={sea_4temp2=2103}] run summon lightning_bolt
+execute if entity @n[tag=sc,scores={sea_4temp2=2103}] run summon lightning_bolt 90147 131 91
 execute if entity @n[tag=sc,scores={sea_4temp2=2112..2114}] positioned 90141 128 93 run playsound block.trial_spawner.detect_player hostile @a ~ ~ ~ 20 0.6
 execute if entity @n[tag=sc,scores={sea_4temp2=2112..2121}] positioned 90141 128 93 run playsound block.trial_spawner.ambient_ominous hostile @a ~ ~ ~ 20 0.6
 execute if entity @n[tag=sc,scores={sea_4temp2=2112..2121}] positioned 90141 128 93 run playsound ambient.soul_sand_valley.mood hostile @a ~ ~ ~ 20 0.8
