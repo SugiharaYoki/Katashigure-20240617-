@@ -314,7 +314,11 @@ item replace block 90065 128 121 container.15 with carrot 2
 setblock 90066 129 112 minecraft:air
 fill 90066 128 96 90066 129 97 iron_bars
 
-
+setblock 90138 128 101 chest[facing=south]
+item replace block 90138 128 101 container.10 with arrow 3
+item replace block 90138 128 101 container.12 with bread 2
+item replace block 90138 128 101 container.14 with bread 2
+item replace block 90138 128 101 container.16 with arrow 3
 
 
 
