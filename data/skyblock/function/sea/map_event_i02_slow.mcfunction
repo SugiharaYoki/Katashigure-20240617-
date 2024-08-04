@@ -79,8 +79,8 @@ execute as @a[tag=SEAPT,x=90112,y=128,z=136,distance=0..2.3,tag=!e_i_17,tag=!e_i
 execute as @a[tag=SEAPT,x=90112,y=128,z=136,distance=0..2.3,tag=!e_i_17] at @s run tag @s add e_i_17
 
 
-execute at @n[tag=SEArivette] as @a[tag=SEAPT,distance=0..3.3,tag=!e_i_19] at @s run tellraw @s {"text": "这家伙……怎么回事？！","color": "red"}
-execute at @n[tag=SEArivette] as @a[tag=SEAPT,distance=0..3.3,tag=!e_i_19] at @s run tag @s add e_i_19
+execute at @n[tag=SEArivette,tag=!SEArivetteboss2] as @a[tag=SEAPT,distance=0..3.3,tag=!e_i_19] at @s run tellraw @s {"text": "这家伙……怎么回事？！","color": "red"}
+execute at @n[tag=SEArivette,tag=!SEArivetteboss2] as @a[tag=SEAPT,distance=0..3.3,tag=!e_i_19] at @s run tag @s add e_i_19
 
 execute at @n[tag=SEArivetteboss2] as @a[tag=SEAPT,distance=0..3.3,tag=e_i_19,tag=!e_i_23] at @s run tellraw @s {"text": "怎么又是这个家伙？！我不可能打得过他，得往反方向跑！","color": "red"}
 execute at @n[tag=SEArivetteboss2] as @a[tag=SEAPT,distance=0..3.3,tag=!e_i_19,tag=!e_i_23] at @s run tellraw @s {"text": "这家伙……怎么回事？！他看着完全不像我打得过的样子，得往反方向跑！","color": "red"}
@@ -471,13 +471,6 @@ execute if entity @n[tag=sc,scores={sea_4temp2=2001..2099}] if entity @n[tag=SEA
 execute unless block 90132 128 94 air as @n[tag=sc,scores={sea_4temp2=2085..2099}] run scoreboard players set @s sea_4temp2 2085
 execute if block 90132 128 94 air as @n[tag=sc,scores={sea_4temp2=..2099}] run scoreboard players set @s sea_4temp2 2101
 
-execute if entity @n[tag=sc,scores={sea_4temp2=2101}] run particle large_smoke 90132 129.9 93 1 2 2 0.0 40
-execute if entity @n[tag=sc,scores={sea_4temp2=2101}] run particle explosion 90132 129.9 93 1 2 2 0.0 20
-execute if entity @n[tag=sc,scores={sea_4temp2=2101}] run playsound entity.generic.explode block @a 90132 129.9 93 1 1
-execute if entity @n[tag=sc,scores={sea_4temp2=2101}] run summon lightning_bolt 90130 128 92
-execute if entity @n[tag=sc,scores={sea_4temp2=2101}] positioned 90128 128 97 run function skyblock:sea/m/silverfish
-execute if entity @n[tag=sc,scores={sea_4temp2=2101}] positioned 90128 128 97 run function skyblock:sea/m/silverfish
-execute if entity @n[tag=sc,scores={sea_4temp2=2101}] positioned 90128 128 97 run function skyblock:sea/m/silverfish
 
 execute if entity @n[tag=sc,scores={sea_4temp2=2101..2199}] if entity @n[tag=SEArivette,x=90130,y=128,z=93,distance=0..3.2] run scoreboard players set @s sea_4temp2 2201
 execute unless block 90132 128 94 air as @n[tag=sc,scores={sea_4temp2=2185..2199}] run scoreboard players set @s sea_4temp2 2085
@@ -490,6 +483,13 @@ execute if entity @n[tag=sc,scores={sea_4temp2=2102..2104}] positioned 90141 128
 execute if entity @n[tag=sc,scores={sea_4temp2=2102..2111}] positioned 90141 128 93 run particle minecraft:trial_omen ~ ~ ~ 1 1 1 0 20
 execute if entity @n[tag=sc,scores={sea_4temp2=2112}] positioned 90141 128 93 run particle minecraft:sculk_soul ~ ~ ~ 1 1 1 0 20
 execute if entity @n[tag=sc,scores={sea_4temp2=2112}] positioned 90141 128 93 run function skyblock:sea/m/boss2
+execute if entity @n[tag=sc,scores={sea_4temp2=2119}] positioned 90128 128 97 run function skyblock:sea/m/silverfish
+execute if entity @n[tag=sc,scores={sea_4temp2=2119}] positioned 90128 128 97 run function skyblock:sea/m/silverfish
+execute if entity @n[tag=sc,scores={sea_4temp2=2119}] positioned 90128 128 97 run function skyblock:sea/m/silverfish
+execute if entity @n[tag=sc,scores={sea_4temp2=2119}] run particle large_smoke 90132 129.9 93 1 2 2 0.0 40
+execute if entity @n[tag=sc,scores={sea_4temp2=2119}] run particle explosion 90132 129.9 93 1 2 2 0.0 20
+execute if entity @n[tag=sc,scores={sea_4temp2=2119}] run playsound entity.generic.explode block @a 90132 129.9 93 1 1
+execute if entity @n[tag=sc,scores={sea_4temp2=2119}] run summon lightning_bolt 90130 128 92
 
 execute as @n[tag=SEAboss2] at @s run particle minecraft:trial_spawner_detection_ominous ~ ~0.5 ~ 0.5 0.2 0.5 0 5
 execute if entity @n[tag=sc,scores={sea_4temp2=2113..2116}] as @n[tag=SEAboss2] at @s positioned ~ ~1.5 ~0.3 run particle minecraft:sculk_soul ~ ~ ~ 0.1 0.1 0.1 0 3
