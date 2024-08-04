@@ -434,6 +434,7 @@ execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=1195}] po
 execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=1195}] positioned 90133 129 112 if entity @n[tag=sc,scores={sea_player=4..}] run function skyblock:sea/m/zombie_cook
 execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=1198}] run fill 90133 130 113 90133 129 113 minecraft:air destroy
 execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=1198}] run fill 90133 130 121 90133 129 121 minecraft:air destroy
+execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=1198}] run effect give @a[tag=SEAPT] darkness 3 0 true
 execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=1198..1299}] if block 90133 129 121 air unless entity @e[tag=SEAmob,x=90137,y=129,z=117,distance=..7] run scoreboard players set @n[tag=sc] sea_4temp2 1300
 
 execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=1301}] run fill 90131 131 118 90131 129 116 minecraft:air
