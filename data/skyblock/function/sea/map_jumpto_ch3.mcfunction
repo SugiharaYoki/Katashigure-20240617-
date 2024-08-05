@@ -127,7 +127,7 @@ setblock 90092 132 112 white_stained_glass
 setblock 90088 132 112 white_stained_glass
 setblock 90084 132 112 white_stained_glass
 
-
+setblock 90066 129 112 minecraft:stone_button[facing=north]
 
 
 
