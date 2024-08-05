@@ -50,7 +50,7 @@ summon minecraft:interaction 90113 129.3 113 {CustomName:'[{"text":"多功能工
 summon minecraft:interaction 90112 129.3 144 {CustomName:'[{"text":"器械式治疗仪"}]',Tags:["SEAaidbox"]}
 
 
-
+fill 90070 130 144 90070 130 141 minecraft:waxed_oxidized_copper_bulb[lit=false]
 
 summon minecraft:item_frame 90118 129 122 {Invisible:1b,Fixed:0b,Invulnerable:0b,Facing:1b,Item:{id:"minecraft:bread"}}
 summon minecraft:item_frame 90106 129 123 {Invisible:1b,Fixed:0b,Invulnerable:0b,Facing:1b,Item:{id:"minecraft:flint"}}
