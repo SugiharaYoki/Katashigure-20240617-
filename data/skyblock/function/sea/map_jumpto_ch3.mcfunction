@@ -34,7 +34,7 @@ give @s sentry_armor_trim_smithing_template 6
 give @s dune_armor_trim_smithing_template 4
 give @s emerald 64
 give @s emerald 24
-give @s flow_armor_trim_smithing_template[custom_name='{"text":"光棱魔板","italic":true,"color":"light_purple","italic":false}',lore=['{"text":"静滞光锥 I","color":"white","italic":false}'],custom_data={sea_t_spectral1:true}] 24 
+give @s flow_armor_trim_smithing_template[custom_name='{"text":"光棱魔板","italic":true,"color":"light_purple","italic":false}',lore=['{"text":"静滞光锥 I","color":"white","italic":false}'],custom_data={sea_t_spectral1:true}] 1 
 
 
 fill 90129 122 119 90129 122 120 air
