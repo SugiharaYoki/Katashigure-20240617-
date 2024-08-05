@@ -11,9 +11,9 @@ tag @n[tag=sc] add SeGa_sea_ch3
 
 fill 90083 130 99 90082 128 99 air
 fill 90085 130 105 90083 128 105 air
-fill 90136 128 96 90137 128 96 minecraft:spruce_stairs[facing=south]
-
-
+fill 90137 128 98 90136 128 98 air
+fill 90137 128 97 90136 128 97 air
+fill 90137 129 97 90136 129 97 air
 
 
 

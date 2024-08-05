@@ -39,6 +39,9 @@ fill 90076 105 141 90076 103 139 minecraft:air
 fill 90085 111 137 90085 109 139 minecraft:air
 fill 90076 121 109 90077 121 108 minecraft:air
 
+fill 90137 128 98 90136 128 98 minecraft:spruce_stairs[facing=north]
+fill 90137 128 97 90136 128 97 minecraft:spruce_fence
+fill 90137 129 97 90136 129 97 spruce_slab[type=bottom]
 
 setblock 90102 128 113 minecraft:brown_shulker_box
 item replace block 90102 128 113 container.12 with rotten_flesh 2
@@ -290,10 +293,8 @@ setblock 90131 128 92 minecraft:composter
 setblock 90132 129 93 barrier
 setblock 90132 129 92 barrier
 
-setblock 90123 129 93 air
-setblock 90123 128 93 air
-setblock 90123 129 93 iron_door[facing=west,half=upper]
-setblock 90123 128 93 iron_door[facing=west,half=lower]
+fill 90123 130 94 90123 128 92 iron_bars
+
 setblock 90147 132 91 lantern
 fill 90099 130 94 90099 128 92 iron_bars
 
