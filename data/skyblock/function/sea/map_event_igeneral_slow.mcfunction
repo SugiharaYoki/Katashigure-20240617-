@@ -175,3 +175,9 @@ execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp_environment=28}] 
 execute if entity @a[tag=SEAPT] as @s[scores={sea_i_spectral=4..}] run give @s arrow 1
 execute if entity @a[tag=SEAPT] as @s[scores={sea_i_spectral=4..}] run clear @s spectral_arrow 1
 
+execute if block 90088 128 114 air unless entity @a[tag=SEAPT,tag=e_i_20] positioned 90088 128 117 run function skyblock:sea/m/silverfish_big
+execute if block 90088 128 114 air unless entity @a[tag=SEAPT,tag=e_i_20] positioned 90088 128 117 run function skyblock:sea/m/silverfish_big
+execute if block 90088 128 114 air unless entity @a[tag=SEAPT,tag=e_i_20] run fill 90088 129 115 90088 128 115 minecraft:air destroy
+execute if block 90088 128 114 air unless entity @a[tag=SEAPT,tag=e_i_20] run tag @a[tag=SEAPT] add e_i_20
+
+

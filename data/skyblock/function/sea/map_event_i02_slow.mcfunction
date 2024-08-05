@@ -35,10 +35,7 @@ execute as @a[tag=SEAPT,x=90111,y=128,z=117,distance=0..2.3,tag=!e_i_14] at @s r
 execute as @a[tag=SEAPT,x=90111,y=128,z=117,distance=0..2.3,tag=!e_i_14] positioned 90108.00 128.00 133.00 run function skyblock:sea/m/spider
 execute as @a[tag=SEAPT,x=90111,y=128,z=117,distance=0..2.3,tag=!e_i_14] at @s run tag @s add e_i_14
 
-execute if block 90088 128 114 air unless entity @a[tag=SEAPT,tag=e_i_20] positioned 90088 128 117 run function skyblock:sea/m/silverfish_big
-execute if block 90088 128 114 air unless entity @a[tag=SEAPT,tag=e_i_20] positioned 90088 128 117 run function skyblock:sea/m/silverfish_big
-execute if block 90088 128 114 air unless entity @a[tag=SEAPT,tag=e_i_20] run fill 90088 129 115 90088 128 115 minecraft:air destroy
-execute if block 90088 128 114 air unless entity @a[tag=SEAPT,tag=e_i_20] run tag @a[tag=SEAPT] add e_i_20
+
 
 
 
