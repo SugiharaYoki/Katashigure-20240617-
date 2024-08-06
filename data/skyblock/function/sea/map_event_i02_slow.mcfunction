@@ -587,9 +587,9 @@ execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] 
 execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,scores={sea_boss1_hp=..100},tag=!boss2hplock3] run effect give @s resistance 3 9 true
 execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,scores={sea_boss1_hp=30..100}] run effect give @s speed 3 2 true
 
-execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2] at @s unless entity @a[tag=SEAPT,distance=0..5] at @p[tag=SEAPT] if block ~2 ~ ~ air run tp @s ~2 ~ ~
-execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2] at @s unless entity @a[tag=SEAPT,distance=0..5] at @p[tag=SEAPT] unless block ~2 ~ ~ air if block ~2 ~ ~1 air run tp @s ~2 ~ ~1
-execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2] at @s unless entity @a[tag=SEAPT,distance=0..5] at @p[tag=SEAPT] unless block ~2 ~ ~ air unless block ~2 ~ ~1 air if block ~2 ~ ~-1 air run tp @s ~2 ~ ~-1
+execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2220..}] as @n[tag=SEAboss2] at @s unless entity @a[tag=SEAPT,distance=0..5] at @p[tag=SEAPT] if block ~2 ~ ~ air run tp @s ~2 ~ ~
+execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2220..}] as @n[tag=SEAboss2] at @s unless entity @a[tag=SEAPT,distance=0..5] at @p[tag=SEAPT] unless block ~2 ~ ~ air if block ~2 ~ ~1 air run tp @s ~2 ~ ~1
+execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2220..}] as @n[tag=SEAboss2] at @s unless entity @a[tag=SEAPT,distance=0..5] at @p[tag=SEAPT] unless block ~2 ~ ~ air unless block ~2 ~ ~1 air if block ~2 ~ ~-1 air run tp @s ~2 ~ ~-1
 
 execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,x=90105,y=128,z=93,distance=0..6,tag=!boss2hplock1] at @s run fill 90099 130 94 90099 128 92 air destroy
 execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,x=90105,y=128,z=93,distance=0..6,tag=!boss2hplock1] at @s positioned 90092 128 96 run function skyblock:sea/m/zombie_cook
