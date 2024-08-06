@@ -348,7 +348,8 @@ execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=4001}] run bossb
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=4001}] run bossbar set minecraft:9066601 name "圣献的医者 - 法莫洛斯"
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=4001}] run bossbar set minecraft:9066601 players @a[tag=SEAPT]
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=4001}] run bossbar set minecraft:9066601 style progress
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=4001}] run bossbar set minecraft:9066601 max 700
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=4001}] run bossbar set minecraft:9066601 max 600
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=4001}] if entity @n[tag=sc,scores={sea_player=3..}] run bossbar set minecraft:9066601 max 700
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=4000..5000}] store result bossbar minecraft:9066601 value run data get entity @e[tag=SEAboss1,limit=1] Health
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=4001}] run scoreboard players set @n[tag=sc] sea_4temp5 1
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=4001}] run particle minecraft:large_smoke 90074.45 123.00 122.35 1 1 1 0.1 200
