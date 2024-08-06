@@ -531,16 +531,16 @@ execute if entity @n[tag=sc,scores={sea_4temp2=2113..3999}] as @n[tag=SEAboss2,s
 execute if entity @n[tag=sc,scores={sea_4temp2=2113..3999}] as @n[tag=SEAboss2,scores={rng2=1,sea_boss1_hp=36..},tag=SEAboss2bow] run item replace entity @s weapon.offhand with tipped_arrow[potion_contents={custom_effects:[{id:slowness,duration:60,amplifier:2}]}]
 execute if entity @n[tag=sc,scores={sea_4temp2=2113..3999}] as @n[tag=SEAboss2,scores={rng2=2,sea_boss1_hp=36..},tag=SEAboss2bow] run item replace entity @s weapon.offhand with tipped_arrow[potion_contents={custom_effects:[{id:weakness,duration:60,amplifier:1}]}]
 #execute if entity @n[tag=sc,scores={sea_4temp2=2113..3999}] as @n[tag=SEAboss2,tag=SEAboss2melee] run item replace entity @s weapon.offhand with air
-execute if entity @n[tag=sc,scores={sea_4temp2=2113..3999}] as @n[tag=SEAboss2,scores={sea_boss1_hp=36..},tag=SEAboss2bow] at @s if entity @a[tag=SEAPT,distance=0..2.3] run item replace entity @s weapon.mainhand with netherite_hoe
+execute if entity @n[tag=sc,scores={sea_4temp2=2113..3999}] as @n[tag=SEAboss2,scores={sea_boss1_hp=36..},tag=SEAboss2bow] at @s if entity @a[tag=SEAPT,distance=0..2.3] run item replace entity @s weapon.mainhand with wooden_shovel
 execute if entity @n[tag=sc,scores={sea_4temp2=2113..3999}] as @n[tag=SEAboss2,scores={sea_boss1_hp=36..},tag=SEAboss2bow] at @s if entity @a[tag=SEAPT,distance=0..2.3] run tag @s add SEAboss2melee
 execute if entity @n[tag=sc,scores={sea_4temp2=2113..3999}] as @n[tag=SEAboss2,scores={sea_boss1_hp=36..},tag=SEAboss2bow] at @s if entity @a[tag=SEAPT,distance=0..2.3] run tag @s remove SEAboss2bow
-execute if entity @n[tag=sc,scores={sea_4temp2=2113..3999}] as @n[tag=SEAboss2,scores={sea_boss1_hp=36..},tag=SEAboss2bow] at @s if entity @a[tag=SEAPT,distance=4..] run item replace entity @s weapon.mainhand with netherite_hoe
+execute if entity @n[tag=sc,scores={sea_4temp2=2113..3999}] as @n[tag=SEAboss2,scores={sea_boss1_hp=36..},tag=SEAboss2bow] at @s if entity @a[tag=SEAPT,distance=4..] run item replace entity @s weapon.mainhand with wooden_shovel
 execute if entity @n[tag=sc,scores={sea_4temp2=2113..3999}] as @n[tag=SEAboss2,scores={sea_boss1_hp=36..},tag=SEAboss2bow] at @s if entity @a[tag=SEAPT,distance=4..] run tag @s add SEAboss2melee
 execute if entity @n[tag=sc,scores={sea_4temp2=2113..3999}] as @n[tag=SEAboss2,scores={sea_boss1_hp=36..},tag=SEAboss2bow] at @s if entity @a[tag=SEAPT,distance=4..] run tag @s remove SEAboss2bow
 execute if entity @n[tag=sc,scores={sea_4temp2=2113..3999}] as @n[tag=SEAboss2,scores={sea_boss1_hp=36..},tag=SEAboss2melee] at @s unless entity @a[tag=SEAPT,distance=0..2.3] unless entity @a[tag=SEAPT,distance=4..] run item replace entity @s weapon.mainhand with bow
 execute if entity @n[tag=sc,scores={sea_4temp2=2113..3999}] as @n[tag=SEAboss2,scores={sea_boss1_hp=36..},tag=SEAboss2melee] at @s unless entity @a[tag=SEAPT,distance=0..2.3] unless entity @a[tag=SEAPT,distance=4..] run tag @s add SEAboss2bow
 execute if entity @n[tag=sc,scores={sea_4temp2=2113..3999}] as @n[tag=SEAboss2,scores={sea_boss1_hp=36..},tag=SEAboss2melee] at @s unless entity @a[tag=SEAPT,distance=0..2.3] unless entity @a[tag=SEAPT,distance=4..] run tag @s remove SEAboss2melee
-execute if entity @n[tag=sc,scores={sea_4temp2=2113..3999}] as @n[tag=SEAboss2,scores={sea_boss1_hp=..35},tag=SEAboss2bow] at @s run item replace entity @s weapon.mainhand with netherite_hoe
+execute if entity @n[tag=sc,scores={sea_4temp2=2113..3999}] as @n[tag=SEAboss2,scores={sea_boss1_hp=..35},tag=SEAboss2bow] at @s run item replace entity @s weapon.mainhand with wooden_shovel
 execute if entity @n[tag=sc,scores={sea_4temp2=2113..3999}] as @n[tag=SEAboss2,scores={sea_boss1_hp=..35},tag=SEAboss2bow] at @s run tag @s add SEAboss2melee
 execute if entity @n[tag=sc,scores={sea_4temp2=2113..3999}] as @n[tag=SEAboss2,scores={sea_boss1_hp=..35},tag=SEAboss2bow] at @s run tag @s remove SEAboss2bow
 
@@ -587,9 +587,9 @@ execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] 
 execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,scores={sea_boss1_hp=..100},tag=!boss2hplock3] run effect give @s resistance 3 9 true
 execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,scores={sea_boss1_hp=30..100}] run effect give @s speed 3 2 true
 
-execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2220..}] as @n[tag=SEAboss2] at @s unless entity @a[tag=SEAPT,distance=0..5] at @p[tag=SEAPT] if block ~2 ~ ~ air run tp @s ~2 ~ ~
-execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2220..}] as @n[tag=SEAboss2] at @s unless entity @a[tag=SEAPT,distance=0..5] at @p[tag=SEAPT] unless block ~2 ~ ~ air if block ~2 ~ ~1 air run tp @s ~2 ~ ~1
-execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2220..}] as @n[tag=SEAboss2] at @s unless entity @a[tag=SEAPT,distance=0..5] at @p[tag=SEAPT] unless block ~2 ~ ~ air unless block ~2 ~ ~1 air if block ~2 ~ ~-1 air run tp @s ~2 ~ ~-1
+execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2220..}] as @n[tag=SEAboss2,tag=!boss2hplock3] at @s unless entity @a[tag=SEAPT,distance=0..5.8] at @p[tag=SEAPT] if block ~2 ~ ~ air run tp @s ~2 ~ ~
+execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2220..}] as @n[tag=SEAboss2,tag=!boss2hplock3] at @s unless entity @a[tag=SEAPT,distance=0..5.8] at @p[tag=SEAPT] unless block ~2 ~ ~ air if block ~2 ~ ~1 air run tp @s ~2 ~ ~1
+execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2220..}] as @n[tag=SEAboss2,tag=!boss2hplock3] at @s unless entity @a[tag=SEAPT,distance=0..5.8] at @p[tag=SEAPT] unless block ~2 ~ ~ air unless block ~2 ~ ~1 air if block ~2 ~ ~-1 air run tp @s ~2 ~ ~-1
 
 execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,x=90105,y=128,z=93,distance=0..6,tag=!boss2hplock1] at @s run fill 90099 130 94 90099 128 92 air destroy
 execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,x=90105,y=128,z=93,distance=0..6,tag=!boss2hplock1] at @s positioned 90092 128 96 run function skyblock:sea/m/zombie_cook
@@ -615,10 +615,11 @@ execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=5001..5005}] run
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=5001}] run stopsound @a[tag=SEAPT] music
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=5001}] as @a[tag=SEAPT] at @s run playsound item.trident.thunder ambient @s ~ ~ ~ 100 0.5
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=5002}] run give @a[tag=SEAPT] nether_star
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=5012}] as @a[tag=SEAPT] at @s run tellraw @s {"text":"一番苦战，但终于解决这几个家伙了。","color":"gray"}
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=5012}] as @a[tag=SEAPT] at @s run tellraw @s {"text":"一番苦战，但终于解决了这几个家伙。","color":"gray"}
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=5030}] as @a[tag=SEAPT] at @s run tellraw @s {"text":"是时候往更上层去了。","color":"gray"}
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=5057}] as @a[tag=SEAPT] at @s run tellraw @s {"text":"『厄珀尔的悲歌』第二章 完","color":"blue","bold": true}
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=5057}] as @a[tag=SEAPT] at @s run playsound music_disc.creator_music_box music @a[tag=SEAPT] ~ ~ ~ 1000 0.8
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=5057}] as @a[tag=SEAPT] at @s run tellraw @s {"text":"……我甚至无法想象上面会是怎样的情景。","color":"gray"}
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=5087}] as @a[tag=SEAPT] at @s run tellraw @s {"text":"『厄珀尔的悲歌』第二章 完","color":"blue","bold": true}
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=5087}] as @a[tag=SEAPT] at @s run playsound music_disc.creator_music_box music @a[tag=SEAPT] ~ ~ ~ 1000 0.8
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=5057}] run function skyblock:sea/map_prepare_ch3
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=5030}] run setblock 90066 129 112 minecraft:stone_button[facing=north]
 
