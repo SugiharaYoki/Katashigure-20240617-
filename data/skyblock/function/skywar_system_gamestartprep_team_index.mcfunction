@@ -1,6 +1,7 @@
 #《队伍分配&开局传送》
 execute if score @n[tag=sc] Map_Code matches 2 run function skyblock:skywar_system_gamestartprep_team_002
 execute if score @n[tag=sc] Map_Code matches 3 run function skyblock:skywar_system_gamestartprep_team_003
+execute if score @n[tag=sc] Map_Code matches 4 run function skyblock:skywar_system_gamestartprep_team_004
 execute if score @n[tag=sc] Map_Code matches 5 run function skyblock:skywar_system_gamestartprep_team_005
 execute if score @n[tag=sc] Map_Code matches 7 run function skyblock:skywar_system_gamestartprep_team_007
 execute if score @n[tag=sc] Map_Code matches 8 run function skyblock:skywar_system_gamestartprep_team_008

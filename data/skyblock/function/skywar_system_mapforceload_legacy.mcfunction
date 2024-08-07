@@ -79,7 +79,7 @@ execute if entity @e[scores={Map_Code=2}] run forceload add 13180 13180 13000 13
 #沉默的亚特兰蒂斯
 execute if entity @e[scores={Map_Code=3}] run forceload add -16990 -16990 -17150 -17150
 execute if entity @e[scores={Map_Code=3}] run forceload add 16990 16990 17150 17150
-#炙热地狱的梦魇
+#炙魇的黑城
 execute if entity @e[scores={Map_Code=4}] run forceload add -21000 -21000 -21200 -21200
 execute if entity @e[scores={Map_Code=4}] run forceload add 21000 21000 21200 21200
 #鲜血的兰花教堂

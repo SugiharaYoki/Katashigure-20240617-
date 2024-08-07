@@ -54,6 +54,7 @@ execute if entity @n[tag=sc,scores={SSgspT=2}] as @e[tag=!NoSkyWar,tag=!Gaming] 
 execute if entity @e[tag=!MapLoaAlr,tag=sc,limit=1,scores={SSgspT=2,Map_Code=14}] run forceload add -9838 -10164 -9709 -10035
 execute if entity @e[tag=!MapLoaAlr,tag=sc,limit=1,scores={SSgspT=2,Map_Code=2}] run function skyblock:preload_map_pvp_map002_part1
 execute if entity @e[tag=!MapLoaAlr,tag=sc,limit=1,scores={SSgspT=2,Map_Code=3}] run function skyblock:preload_map_pvp_map003_part1
+execute if entity @e[tag=!MapLoaAlr,tag=sc,limit=1,scores={SSgspT=2,Map_Code=4}] run function skyblock:preload_map_pvp_map004_part1_hard
 execute if entity @e[tag=!MapLoaAlr,tag=sc,limit=1,scores={SSgspT=2,Map_Code=5}] run function skyblock:preload_map_pvp_map005_part1
 execute if entity @e[tag=!MapLoaAlr,tag=sc,limit=1,scores={SSgspT=2,Map_Code=7}] run function skyblock:preload_map_pvp_map007_part1
 execute if entity @e[tag=!MapLoaAlr,tag=sc,limit=1,scores={SSgspT=2,Map_Code=8}] run function skyblock:preload_map_pvp_map008_part1
@@ -194,6 +195,8 @@ execute if score @n[tag=sc] SSgspT matches 13 if score @n[tag=sc] Map_Code match
 execute if score @n[tag=sc] SSgspT matches 13 if score @n[tag=sc] Map_Code matches 2 run title @a[tag=PVP_see] subtitle {"text":"针叶林深处的歪曲小道尽头 坐落着昔日的祭坛","color":"white"}
 execute if score @n[tag=sc] SSgspT matches 13 if score @n[tag=sc] Map_Code matches 3 run title @a[tag=PVP_see] title {"text":"沉默的亚特兰蒂斯","color":"white"}
 execute if score @n[tag=sc] SSgspT matches 13 if score @n[tag=sc] Map_Code matches 3 run title @a[tag=PVP_see] subtitle {"text":"结界的中心 是黑水翻腾的神秘古城","color":"white"}
+execute if score @n[tag=sc] SSgspT matches 13 if score @n[tag=sc] Map_Code matches 4 run title @a[tag=PVP_see] title {"text":"炙魇的黑城","color":"white"}
+execute if score @n[tag=sc] SSgspT matches 13 if score @n[tag=sc] Map_Code matches 4 run title @a[tag=PVP_see] subtitle {"text":"梦醒之时 周遭已是鲜红的炼狱","color":"white"}
 execute if score @n[tag=sc] SSgspT matches 13 if score @n[tag=sc] Map_Code matches 5 run title @a[tag=PVP_see] title {"text":"献堂的圣咏","color":"white"}
 execute if score @n[tag=sc] SSgspT matches 13 if score @n[tag=sc] Map_Code matches 5 run title @a[tag=PVP_see] subtitle {"text":"反叛的旗帜 被悄然掀起……","color":"white"}
 execute if score @n[tag=sc] SSgspT matches 13 if score @n[tag=sc] Map_Code matches 7 run title @a[tag=PVP_see] title {"text":"亚兹列尔的钟台","color":"white"}

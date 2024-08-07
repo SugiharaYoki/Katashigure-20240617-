@@ -1,6 +1,6 @@
 # Map_Type 1:空岛战争 2:起床战争 3:爪巴战争 4:棋盘战争
 # Map_Code List:
-# 002:腐败的祭坛 003:沉默的亚特兰蒂斯 [X004:炙热地狱的梦魇X] 005:献堂的圣咏 010:[X破碎灵脉的大地之泉X] 012:[X煌逝的近礁X] 014:折翼界空的夜明之塔 
+# 002:腐败的祭坛 003:沉默的亚特兰蒂斯 [X004:炙魇的黑城X] 005:献堂的圣咏 010:[X破碎灵脉的大地之泉X] 012:[X煌逝的近礁X] 014:折翼界空的夜明之塔 
 # 006:浮游要塞伊什塔尔 007:亚兹列尔的钟台 008:荒废之地的民谣
 # 009:[X爪巴战争·小爬怡情X] [X011:棋盘战争X] 013:混沌魔方
 #地图选择初始化
@@ -15,8 +15,8 @@ execute if entity @n[tag=sc,scores={Map_Code=2}] run clone 12 8 28 16 12 32 -118
 execute if entity @n[tag=sc,scores={Map_Code=3}] run title @a[tag=!Gaming] actionbar {"text":"空岛战争T4 沉默的亚特兰蒂斯","bold":true,"color":"light_purple"}
 execute if entity @n[tag=sc,scores={Map_Code=3}] run clone 12 3 28 16 7 32 -118 56 -110
 #map004
-execute if entity @n[tag=sc,scores={Map_Code=4}] run title @a[tag=!Gaming] actionbar {"text":"空岛战争T4 炙热地狱的梦魇","bold":true,"color":"light_purple"}
-#execute if entity @n[tag=sc,scores={Map_Code=4}] run clone 0 51 64 5 53 69 31 86 70
+execute if entity @n[tag=sc,scores={Map_Code=4}] run title @a[tag=!Gaming] actionbar {"text":"空岛战争T4 炙魇的黑城","bold":true,"color":"light_purple"}
+execute if entity @n[tag=sc,scores={Map_Code=4}] run clone 12 -28 28 16 -32 32 -118 56 -110
 #map005
 execute if entity @n[tag=sc,scores={Map_Code=5}] run title @a[tag=!Gaming] actionbar {"text":"空岛战争T4 献堂的圣咏","bold":true,"color":"light_purple"}
 execute if entity @n[tag=sc,scores={Map_Code=5}] run clone 12 -2 28 16 2 32 -118 56 -110

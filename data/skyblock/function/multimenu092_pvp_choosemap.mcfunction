@@ -3,7 +3,7 @@ playsound entity.villager.yes ambient @s ~ ~ ~ 10
 tellraw @s {"text":"腐败的祭坛 ~ Depraved Altar of Χρόνος","color":"gold","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 92002"}}
 tellraw @s {"text":"煌逝的近礁 ~ Offshore Ruin of Decay","color":"gold","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 92012"}}
 tellraw @s {"text":"沉默的亚特兰蒂斯 ~ The Voiceless Ἀτλαντὶς","color":"gold","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 92003"}}
-tellraw @s {"text":"炙热地狱的梦魇 ~ Nightmare of Ablaze Hell","color":"gold","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 92004"}}
+tellraw @s {"text":"炙魇的黑城 ~ Nightmare of Ablaze Hell","color":"gold","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 92004"}}
 tellraw @s {"text":"鲜血的兰花教堂 ~ Orchid Chapel in Blood","color":"gold","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 92005"}}
 tellraw @s {"text":"浮游要塞伊什塔尔 ~ Floating Fortress Ishtar","color":"blue","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 92006"}}
 tellraw @s {"text":"亚兹列尔的钟台 ~ Clock Platform of Azriel","color":"blue","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 92007"}}

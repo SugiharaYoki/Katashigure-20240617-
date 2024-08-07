@@ -23,7 +23,7 @@ forceload remove 13180 13180 13000 13000
 #沉默的亚特兰蒂斯
 forceload remove -16990 -16990 -17150 -17150
 forceload remove 16990 16990 17150 17150
-#炙热地狱的梦魇
+#炙魇的黑城
 forceload remove -21000 -21000 -21200 -21200
 forceload remove 21000 21000 21200 21200
 #鲜血的兰花教堂
