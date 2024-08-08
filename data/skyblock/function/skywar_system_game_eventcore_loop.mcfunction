@@ -20,42 +20,42 @@ scoreboard players set 『匿名·方时雨城』Katashigure Temp5 -98
 scoreboard players set IP地址＜mc.tokumei.studio Temp5 -99
 scoreboard players set  Temp5 -96
 
-execute unless entity @n[tag=sc,scores={Map_Code=4}] fill 50000 -1 50000 50100 -2 50100 air
-execute unless entity @n[tag=sc,scores={Map_Code=4}] fill 50000 -1 50100 50100 -2 50200 air
-execute unless entity @n[tag=sc,scores={Map_Code=4}] fill 50000 -1 50200 50100 -2 50300 air
-execute unless entity @n[tag=sc,scores={Map_Code=4}] fill 50000 -1 50300 50100 -2 50400 air
-execute unless entity @n[tag=sc,scores={Map_Code=4}] fill 50000 -1 50400 50100 -2 50500 air
-execute unless entity @n[tag=sc,scores={Map_Code=4}] fill 50000 -1 50500 50100 -2 50600 air
-execute unless entity @n[tag=sc,scores={Map_Code=4}] fill 50100 -1 50000 50200 -2 50100 air
-execute unless entity @n[tag=sc,scores={Map_Code=4}] fill 50100 -1 50100 50200 -2 50200 air
-execute unless entity @n[tag=sc,scores={Map_Code=4}] fill 50100 -1 50200 50200 -2 50300 air
-execute unless entity @n[tag=sc,scores={Map_Code=4}] fill 50100 -1 50300 50200 -2 50400 air
-execute unless entity @n[tag=sc,scores={Map_Code=4}] fill 50100 -1 50400 50200 -2 50500 air
-execute unless entity @n[tag=sc,scores={Map_Code=4}] fill 50100 -1 50500 50200 -2 50600 air
-execute unless entity @n[tag=sc,scores={Map_Code=4}] fill 50200 -1 50000 50300 -2 50100 air
-execute unless entity @n[tag=sc,scores={Map_Code=4}] fill 50200 -1 50100 50300 -2 50200 air
-execute unless entity @n[tag=sc,scores={Map_Code=4}] fill 50200 -1 50200 50300 -2 50300 air
-execute unless entity @n[tag=sc,scores={Map_Code=4}] fill 50200 -1 50300 50300 -2 50400 air
-execute unless entity @n[tag=sc,scores={Map_Code=4}] fill 50200 -1 50400 50300 -2 50500 air
-execute unless entity @n[tag=sc,scores={Map_Code=4}] fill 50200 -1 50500 50300 -2 50600 air
-execute unless entity @n[tag=sc,scores={Map_Code=4}] fill 50300 -1 50000 50400 -2 50100 air
-execute unless entity @n[tag=sc,scores={Map_Code=4}] fill 50300 -1 50100 50400 -2 50200 air
-execute unless entity @n[tag=sc,scores={Map_Code=4}] fill 50300 -1 50200 50400 -2 50300 air
-execute unless entity @n[tag=sc,scores={Map_Code=4}] fill 50300 -1 50300 50400 -2 50400 air
-execute unless entity @n[tag=sc,scores={Map_Code=4}] fill 50300 -1 50400 50400 -2 50500 air
-execute unless entity @n[tag=sc,scores={Map_Code=4}] fill 50300 -1 50500 50400 -2 50600 air
-execute unless entity @n[tag=sc,scores={Map_Code=4}] fill 50400 -1 50000 50500 -2 50100 air
-execute unless entity @n[tag=sc,scores={Map_Code=4}] fill 50400 -1 50100 50500 -2 50200 air
-execute unless entity @n[tag=sc,scores={Map_Code=4}] fill 50400 -1 50200 50500 -2 50300 air
-execute unless entity @n[tag=sc,scores={Map_Code=4}] fill 50400 -1 50300 50500 -2 50400 air
-execute unless entity @n[tag=sc,scores={Map_Code=4}] fill 50400 -1 50400 50500 -2 50500 air
-execute unless entity @n[tag=sc,scores={Map_Code=4}] fill 50400 -1 50500 50500 -2 50600 air
-execute unless entity @n[tag=sc,scores={Map_Code=4}] fill 50500 -1 50000 50600 -2 50100 air
-execute unless entity @n[tag=sc,scores={Map_Code=4}] fill 50500 -1 50100 50600 -2 50200 air
-execute unless entity @n[tag=sc,scores={Map_Code=4}] fill 50500 -1 50200 50600 -2 50300 air
-execute unless entity @n[tag=sc,scores={Map_Code=4}] fill 50500 -1 50300 50600 -2 50400 air
-execute unless entity @n[tag=sc,scores={Map_Code=4}] fill 50500 -1 50400 50600 -2 50500 air
-execute unless entity @n[tag=sc,scores={Map_Code=4}] fill 50500 -1 50500 50600 -2 50600 air
+execute unless entity @n[tag=sc,scores={Map_Code=4}] run fill 50000 -1 50000 50100 -2 50100 air
+execute unless entity @n[tag=sc,scores={Map_Code=4}] run fill 50000 -1 50100 50100 -2 50200 air
+execute unless entity @n[tag=sc,scores={Map_Code=4}] run fill 50000 -1 50200 50100 -2 50300 air
+execute unless entity @n[tag=sc,scores={Map_Code=4}] run fill 50000 -1 50300 50100 -2 50400 air
+execute unless entity @n[tag=sc,scores={Map_Code=4}] run fill 50000 -1 50400 50100 -2 50500 air
+execute unless entity @n[tag=sc,scores={Map_Code=4}] run fill 50000 -1 50500 50100 -2 50600 air
+execute unless entity @n[tag=sc,scores={Map_Code=4}] run fill 50100 -1 50000 50200 -2 50100 air
+execute unless entity @n[tag=sc,scores={Map_Code=4}] run fill 50100 -1 50100 50200 -2 50200 air
+execute unless entity @n[tag=sc,scores={Map_Code=4}] run fill 50100 -1 50200 50200 -2 50300 air
+execute unless entity @n[tag=sc,scores={Map_Code=4}] run fill 50100 -1 50300 50200 -2 50400 air
+execute unless entity @n[tag=sc,scores={Map_Code=4}] run fill 50100 -1 50400 50200 -2 50500 air
+execute unless entity @n[tag=sc,scores={Map_Code=4}] run fill 50100 -1 50500 50200 -2 50600 air
+execute unless entity @n[tag=sc,scores={Map_Code=4}] run fill 50200 -1 50000 50300 -2 50100 air
+execute unless entity @n[tag=sc,scores={Map_Code=4}] run fill 50200 -1 50100 50300 -2 50200 air
+execute unless entity @n[tag=sc,scores={Map_Code=4}] run fill 50200 -1 50200 50300 -2 50300 air
+execute unless entity @n[tag=sc,scores={Map_Code=4}] run fill 50200 -1 50300 50300 -2 50400 air
+execute unless entity @n[tag=sc,scores={Map_Code=4}] run fill 50200 -1 50400 50300 -2 50500 air
+execute unless entity @n[tag=sc,scores={Map_Code=4}] run fill 50200 -1 50500 50300 -2 50600 air
+execute unless entity @n[tag=sc,scores={Map_Code=4}] run fill 50300 -1 50000 50400 -2 50100 air
+execute unless entity @n[tag=sc,scores={Map_Code=4}] run fill 50300 -1 50100 50400 -2 50200 air
+execute unless entity @n[tag=sc,scores={Map_Code=4}] run fill 50300 -1 50200 50400 -2 50300 air
+execute unless entity @n[tag=sc,scores={Map_Code=4}] run fill 50300 -1 50300 50400 -2 50400 air
+execute unless entity @n[tag=sc,scores={Map_Code=4}] run fill 50300 -1 50400 50400 -2 50500 air
+execute unless entity @n[tag=sc,scores={Map_Code=4}] run fill 50300 -1 50500 50400 -2 50600 air
+execute unless entity @n[tag=sc,scores={Map_Code=4}] run fill 50400 -1 50000 50500 -2 50100 air
+execute unless entity @n[tag=sc,scores={Map_Code=4}] run fill 50400 -1 50100 50500 -2 50200 air
+execute unless entity @n[tag=sc,scores={Map_Code=4}] run fill 50400 -1 50200 50500 -2 50300 air
+execute unless entity @n[tag=sc,scores={Map_Code=4}] run fill 50400 -1 50300 50500 -2 50400 air
+execute unless entity @n[tag=sc,scores={Map_Code=4}] run fill 50400 -1 50400 50500 -2 50500 air
+execute unless entity @n[tag=sc,scores={Map_Code=4}] run fill 50400 -1 50500 50500 -2 50600 air
+execute unless entity @n[tag=sc,scores={Map_Code=4}] run fill 50500 -1 50000 50600 -2 50100 air
+execute unless entity @n[tag=sc,scores={Map_Code=4}] run fill 50500 -1 50100 50600 -2 50200 air
+execute unless entity @n[tag=sc,scores={Map_Code=4}] run fill 50500 -1 50200 50600 -2 50300 air
+execute unless entity @n[tag=sc,scores={Map_Code=4}] run fill 50500 -1 50300 50600 -2 50400 air
+execute unless entity @n[tag=sc,scores={Map_Code=4}] run fill 50500 -1 50400 50600 -2 50500 air
+execute unless entity @n[tag=sc,scores={Map_Code=4}] run fill 50500 -1 50500 50600 -2 50600 air
 execute if entity @n[tag=sc,scores={Temp5_LoopF=1}] run scoreboard objectives modify Temp5 displayname [{"text":"战","color":"gold"},{"text":"局","color":"gold"},{"text":"报","color":"gold"},{"text":"告","color":"gold"}]
 execute if entity @n[tag=sc,scores={Temp5_LoopF=5}] run scoreboard objectives modify Temp5 displayname [{"text":"战","color":"blue"},{"text":"局","color":"gold"},{"text":"报","color":"gold"},{"text":"告","color":"gold"}]
 execute if entity @n[tag=sc,scores={Temp5_LoopF=6}] run scoreboard objectives modify Temp5 displayname [{"text":"战","color":"blue"},{"text":"局","color":"blue"},{"text":"报","color":"gold"},{"text":"告","color":"gold"}]
