@@ -71,9 +71,9 @@ tag @a[team=Team1_3] add PVPTeamed
 team join Team1_4 @r[tag=PVPing,tag=!PVPTeamed]
 tag @a[team=Team1_4] add PVPTeamed
 #
-tp @a[team=Team1_1] 50025 224 50014 facing 50025 224 50015
-tp @a[team=Team1_2] 50111 224 50124 facing 50111 224 50123
-tp @a[team=Team1_3] 50111 224 50014 facing 50111 224 50015
-tp @a[team=Team1_4] 50025 224 50124 facing 50025 224 50123
+tp @a[team=Team1_1] 50022 -16 50019 facing 50068 14 50068
+tp @a[team=Team1_2] 50114 -16 50117 facing 50068 14 50068
+tp @a[team=Team1_3] 50019 -16 50114 facing 50068 14 50068
+tp @a[team=Team1_4] 50117 -16 50022 facing 50068 14 50068
 
-tp @a[tag=PVP_see,tag=!PVPTeamed] 50073 243 50059
+tp @a[tag=PVP_see,tag=!PVPTeamed] 50068 14 50068

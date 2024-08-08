@@ -1,6 +1,6 @@
 execute if score @n[tag=sc] Map_Code matches 2 run scoreboard players set @n[tag=sc] TimeRemainUnsee 605
 execute if score @n[tag=sc] Map_Code matches 3 run scoreboard players set @n[tag=sc] TimeRemainUnsee 665
-execute if score @n[tag=sc] Map_Code matches 4 run scoreboard players set @n[tag=sc] TimeRemainUnsee 605
+execute if score @n[tag=sc] Map_Code matches 4 run scoreboard players set @n[tag=sc] TimeRemainUnsee 805
 execute if score @n[tag=sc] Map_Code matches 5 run scoreboard players set @n[tag=sc] TimeRemainUnsee 725
 execute if score @n[tag=sc] Map_Code matches 6 run scoreboard players set @n[tag=sc] TimeRemainUnsee 605
 execute if score @n[tag=sc] Map_Code matches 7 run scoreboard players set @n[tag=sc] TimeRemainUnsee 345
@@ -20,7 +20,7 @@ scoreboard players set @a[tag=!NoSkyWar] DeathCount 0
 scoreboard players set @a[tag=!NoSkyWar] DeathCountTemp 0
 execute if score @n[tag=sc] Map_Code matches 2 run spawnpoint @a[tag=!NoSkyWar] 50062 60 50052
 execute if score @n[tag=sc] Map_Code matches 3 run spawnpoint @a[tag=!NoSkyWar] 50073 42 50472
-execute if score @n[tag=sc] Map_Code matches 4 run spawnpoint @a[tag=!NoSkyWar] 50080 240 50070
+execute if score @n[tag=sc] Map_Code matches 4 run spawnpoint @a[tag=!NoSkyWar] 50068 36 50068
 execute if score @n[tag=sc] Map_Code matches 5 run spawnpoint @a[tag=!NoSkyWar] 50460 47 50460
 execute if score @n[tag=sc] Map_Code matches 6 run spawnpoint @a[tag=!NoSkyWar] 50000 100 50000
 execute if score @n[tag=sc] Map_Code matches 7 run spawnpoint @a[tag=!NoSkyWar] 50471 43 50471
@@ -57,7 +57,7 @@ execute if score @n[tag=sc] Map_Code matches 2 run execute unless entity @n[tag=
 execute if score @n[tag=sc] Map_Code matches 2 run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run worldborder set 116
 execute if score @n[tag=sc] Map_Code matches 3 run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run worldborder center 50073 50472
 execute if score @n[tag=sc] Map_Code matches 3 run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run worldborder set 146
-execute if score @n[tag=sc] Map_Code matches 4 run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run worldborder center 50080 50070
+execute if score @n[tag=sc] Map_Code matches 4 run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run worldborder center 50068 50068
 execute if score @n[tag=sc] Map_Code matches 4 run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run worldborder set 180
 execute if score @n[tag=sc] Map_Code matches 5 run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run worldborder center 50460 50460
 execute if score @n[tag=sc] Map_Code matches 5 run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run worldborder set 140
