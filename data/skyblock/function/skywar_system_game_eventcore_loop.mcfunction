@@ -192,6 +192,14 @@ execute if entity @n[tag=sc,scores={TimeRemainUnsee=0,Map_Code=17}] run execute 
 execute if entity @n[tag=sc,scores={TimeRemainUnsee=0,Map_Code=17}] run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run title @a[tag=PVP_see] subtitle {"text":"“再不离开这头空中巨兽 我等皆会化作其腹中食物”","color":"yellow"}
 execute if entity @n[tag=sc,scores={TimeRemainUnsee=0,Map_Code=17}] run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run worldborder set 20 300
 
+execute if entity @n[tag=sc,scores={TimeRemainUnsee=803,Map_Code=4}] run summon piglin 50070 11 50068
+execute if entity @n[tag=sc,scores={TimeRemainUnsee=803,Map_Code=4}] run summon piglin 50070 11 50068
+execute if entity @n[tag=sc,scores={TimeRemainUnsee=803,Map_Code=4}] run summon piglin 50070 11 50068
+execute if entity @n[tag=sc,scores={TimeRemainUnsee=803,Map_Code=4}] run summon piglin 50070 11 50068
+execute if entity @n[tag=sc,scores={TimeRemainUnsee=803,Map_Code=4}] run summon blaze 50062 34 50068
+execute if entity @n[tag=sc,scores={TimeRemainUnsee=803,Map_Code=4}] run summon blaze 50062 34 50068
+execute if entity @n[tag=sc,scores={TimeRemainUnsee=803,Map_Code=4}] run summon blaze 50074 34 50068
+execute if entity @n[tag=sc,scores={TimeRemainUnsee=803,Map_Code=4}] run summon blaze 50074 34 50068
 execute if entity @n[tag=sc,scores={TimeRemainUnsee=600,Map_Code=4}] run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run title @a[tag=PVP_see] times 0 60 60
 execute if entity @n[tag=sc,scores={TimeRemainUnsee=600,Map_Code=4}] run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run title @a[tag=PVP_see] title {"text":"地图边界开始缩小","color":"yellow"}
 execute if entity @n[tag=sc,scores={TimeRemainUnsee=600,Map_Code=4}] run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run title @a[tag=PVP_see] subtitle {"text":"“噩梦带来的 从来都会是 也只会是痛苦”","color":"yellow"}
