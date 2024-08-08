@@ -20,7 +20,7 @@ scoreboard players set 『匿名·方时雨城』Katashigure Temp5 -98
 scoreboard players set IP地址＜mc.tokumei.studio Temp5 -99
 scoreboard players set  Temp5 -96
 
-fill 50000 -1 50000 50100 -2 50100 air 
+fill 50000 -1 50000 50100 -2 50100 air
 fill 50000 -1 50100 50100 -2 50200 air
 fill 50000 -1 50200 50100 -2 50300 air
 fill 50000 -1 50300 50100 -2 50400 air
