@@ -12,6 +12,7 @@ execute as @a[tag=PVP_observer] at @s run tag @s add PVP_dead
 execute as @a[tag=PVP_observer] at @s run team leave @s
 execute if score @n[tag=sc] Map_Code matches 2 as @a[tag=PVPing] at @s if entity @s[y=70,dy=5] run tp ~ ~-1 ~
 execute if score @n[tag=sc] Map_Code matches 3 as @a[tag=PVPing] at @s if entity @s[y=80,dy=5] run tp ~ ~-1 ~
+execute if score @n[tag=sc] Map_Code matches 4 as @a[tag=PVPing] at @s if entity @s[y=46,dy=5] run tp ~ ~-1 ~
 execute if score @n[tag=sc] Map_Code matches 5 as @a[tag=PVPing] at @s if entity @s[y=75,dy=5] run tp ~ ~-1 ~
 execute if score @n[tag=sc] Map_Code matches 7 as @a[tag=PVPing] at @s if entity @s[y=79,dy=5] run tp ~ ~-1 ~
 #[futuredevskywar]

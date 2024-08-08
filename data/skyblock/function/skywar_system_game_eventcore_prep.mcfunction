@@ -20,7 +20,7 @@ scoreboard players set @a[tag=!NoSkyWar] DeathCount 0
 scoreboard players set @a[tag=!NoSkyWar] DeathCountTemp 0
 execute if score @n[tag=sc] Map_Code matches 2 run spawnpoint @a[tag=!NoSkyWar] 50062 60 50052
 execute if score @n[tag=sc] Map_Code matches 3 run spawnpoint @a[tag=!NoSkyWar] 50073 42 50472
-execute if score @n[tag=sc] Map_Code matches 4 run spawnpoint @a[tag=!NoSkyWar] 50000 100 50000
+execute if score @n[tag=sc] Map_Code matches 4 run spawnpoint @a[tag=!NoSkyWar] 50080 240 50070
 execute if score @n[tag=sc] Map_Code matches 5 run spawnpoint @a[tag=!NoSkyWar] 50460 47 50460
 execute if score @n[tag=sc] Map_Code matches 6 run spawnpoint @a[tag=!NoSkyWar] 50000 100 50000
 execute if score @n[tag=sc] Map_Code matches 7 run spawnpoint @a[tag=!NoSkyWar] 50471 43 50471
@@ -43,6 +43,7 @@ execute if score @n[tag=sc] Map_Code matches 7 run gamemode adventure @a[tag=PVP
 
 execute if score @n[tag=sc] Map_Code matches 2 as @a[tag=PVP_see] at @s run playsound music.end music @s ~ ~ ~ 10
 execute if score @n[tag=sc] Map_Code matches 3 as @a[tag=PVP_see] at @s run playsound music.under_water music @s ~ ~ ~ 10
+execute if score @n[tag=sc] Map_Code matches 4 as @a[tag=PVP_see] at @s run playsound minecraft:music.nether.crimson_forest music @s ~ ~ ~ 10
 execute if score @n[tag=sc] Map_Code matches 7 as @a[tag=PVP_see] at @s run playsound music_disc.13 music @s ~ ~ ~ 10
 execute if score @n[tag=sc] Map_Code matches 13 as @a[tag=PVP_see] at @s run playsound music.end music @s ~ ~ ~ 10
 execute if score @n[tag=sc] Map_Code matches 15 as @a[tag=PVP_see] at @s run playsound music.nether.nether_wastes music @s ~ ~ ~ 10
@@ -56,6 +57,8 @@ execute if score @n[tag=sc] Map_Code matches 2 run execute unless entity @n[tag=
 execute if score @n[tag=sc] Map_Code matches 2 run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run worldborder set 116
 execute if score @n[tag=sc] Map_Code matches 3 run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run worldborder center 50073 50472
 execute if score @n[tag=sc] Map_Code matches 3 run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run worldborder set 146
+execute if score @n[tag=sc] Map_Code matches 4 run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run worldborder center 50080 50070
+execute if score @n[tag=sc] Map_Code matches 4 run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run worldborder set 180
 execute if score @n[tag=sc] Map_Code matches 5 run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run worldborder center 50460 50460
 execute if score @n[tag=sc] Map_Code matches 5 run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run worldborder set 140
 execute if score @n[tag=sc] Map_Code matches 7 run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run worldborder center 50471 50471
