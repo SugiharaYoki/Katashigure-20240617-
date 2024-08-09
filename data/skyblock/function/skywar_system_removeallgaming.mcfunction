@@ -9,7 +9,7 @@ tag @s remove Gaming
 tag @s remove ContinuePermission
 tag @s remove PVPTeamed
 tag @s remove FallenSquareEntering
-tag @s remove SeGa_StandLastA
+tag @s remove Azr_player
 tag @s remove NoMultiMenu
 tag @s remove SeGa_SLAQuake
 tag @s remove SeGa_DVA
