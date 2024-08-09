@@ -17,6 +17,7 @@ execute if score @n[tag=sc] Map_Code matches 5 as @a[tag=PVPing] at @s if entity
 execute if score @n[tag=sc] Map_Code matches 7 as @a[tag=PVPing] at @s if entity @s[y=79,dy=5] run tp ~ ~-1 ~
 #[futuredevskywar]
 execute if score @n[tag=sc] Map_Code matches 8 as @a[tag=PVPing] at @s if entity @s[y=45,dy=5] run tp ~ ~-1 ~
+execute if score @n[tag=sc] Map_Code matches 10 as @a[tag=PVPing] at @s if entity @s[y=60,dy=5] run tp ~ ~-1 ~
 execute if score @n[tag=sc] Map_Code matches 13 as @a[tag=PVPing] at @s if entity @s[y=85,dy=5] run tp ~ ~-1 ~
 execute if score @n[tag=sc] Map_Code matches 14 as @a[tag=PVPing] at @s if entity @s[y=230,dy=5] run tp ~ ~-1 ~
 execute if score @n[tag=sc] Map_Code matches 15 as @a[tag=PVPing] at @s if entity @s[y=40,dy=5] run tp ~ ~-1 ~

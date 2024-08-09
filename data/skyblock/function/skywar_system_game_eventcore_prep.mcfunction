@@ -26,7 +26,7 @@ execute if score @n[tag=sc] Map_Code matches 6 run spawnpoint @a[tag=!NoSkyWar] 
 execute if score @n[tag=sc] Map_Code matches 7 run spawnpoint @a[tag=!NoSkyWar] 50471 43 50471
 execute if score @n[tag=sc] Map_Code matches 8 run spawnpoint @a[tag=!NoSkyWar] 50449 30 50049
 execute if score @n[tag=sc] Map_Code matches 9 run spawnpoint @a[tag=!NoSkyWar] 50000 100 50000
-execute if score @n[tag=sc] Map_Code matches 10 run spawnpoint @a[tag=!NoSkyWar] 50000 100 50000
+execute if score @n[tag=sc] Map_Code matches 10 run spawnpoint @a[tag=!NoSkyWar] 50068 36 50068
 execute if score @n[tag=sc] Map_Code matches 14 run spawnpoint @a[tag=!NoSkyWar] 50060 60 50060
 execute if score @n[tag=sc] Map_Code matches 15 run spawnpoint @a[tag=!NoSkyWar] 50069 40 50070
 execute if score @n[tag=sc] Map_Code matches 16 run spawnpoint @a[tag=!NoSkyWar] 50069 40 50070
@@ -45,6 +45,7 @@ execute if score @n[tag=sc] Map_Code matches 2 as @a[tag=PVP_see] at @s run play
 execute if score @n[tag=sc] Map_Code matches 3 as @a[tag=PVP_see] at @s run playsound music.under_water music @s ~ ~ ~ 10
 execute if score @n[tag=sc] Map_Code matches 4 as @a[tag=PVP_see] at @s run playsound minecraft:music.nether.crimson_forest music @s ~ ~ ~ 10
 execute if score @n[tag=sc] Map_Code matches 7 as @a[tag=PVP_see] at @s run playsound music_disc.13 music @s ~ ~ ~ 10
+execute if score @n[tag=sc] Map_Code matches 10 as @a[tag=PVP_see] at @s run playsound music.end music @s ~ ~ ~ 10
 execute if score @n[tag=sc] Map_Code matches 13 as @a[tag=PVP_see] at @s run playsound music.end music @s ~ ~ ~ 10
 execute if score @n[tag=sc] Map_Code matches 15 as @a[tag=PVP_see] at @s run playsound music.nether.nether_wastes music @s ~ ~ ~ 10
 execute if score @n[tag=sc] Map_Code matches 16 as @a[tag=PVP_see] at @s run playsound music.overworld.cherry_grove music @s ~ ~ ~ 10
@@ -65,6 +66,8 @@ execute if score @n[tag=sc] Map_Code matches 7 run execute unless entity @n[tag=
 execute if score @n[tag=sc] Map_Code matches 7 run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run worldborder set 142
 execute if score @n[tag=sc] Map_Code matches 8 run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run worldborder center 50449 50049
 execute if score @n[tag=sc] Map_Code matches 8 run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run worldborder set 98
+execute if score @n[tag=sc] Map_Code matches 10 run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run worldborder center 50068 50068
+execute if score @n[tag=sc] Map_Code matches 10 run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run worldborder set 138
 execute if score @n[tag=sc] Map_Code matches 13 if block 27 56 -105 stripped_birch_wood run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run worldborder center 50434 50434
 execute if score @n[tag=sc] Map_Code matches 13 if block 27 56 -105 stripped_birch_wood run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run worldborder set 70
 execute if score @n[tag=sc] Map_Code matches 13 if block 27 56 -105 oak_planks run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run worldborder center 50434 50434

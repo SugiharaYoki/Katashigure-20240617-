@@ -1,8 +1,10 @@
 # Map_Type 1:空岛战争 2:起床战争 3:爪巴战争 4:棋盘战争
 # Map_Code List:
-# 002:腐败的祭坛 003:沉默的亚特兰蒂斯 [X004:炙魇的黑城X] 005:献堂的圣咏 010:[X破碎灵脉的大地之泉X] 012:[X煌逝的近礁X] 014:折翼界空的夜明之塔 
-# 006:浮游要塞伊什塔尔 007:亚兹列尔的钟台 008:荒废之地的民谣
-# 009:[X爪巴战争·小爬怡情X] [X011:棋盘战争X] 013:混沌魔方
+# T4 - 002:腐败的祭坛 003:沉默的亚特兰蒂斯 004:炙魇的黑城 005:献堂的圣咏 010:碎晦坍殒的地灵脉 017:天穹巨兽古伽兰那
+# T2 - 007:亚兹列尔的钟台 008:荒废之地的民谣
+# T3 - 014:折翼界空的夜明之塔 015:浮岛空舰站 016:绯染缥茫的世花源 
+# TD - [X006:浮游要塞伊什塔尔X] [X009:爪巴战争·小爬怡情X] [X011:棋盘战争X] [X012:煌逝的近礁X]
+# TS - 013:混沌魔方
 #地图选择初始化
 #setblock -4 12 6 minecraft:redstone_block
 title @a[tag=!Gaming] times 10 20 10
@@ -33,8 +35,8 @@ execute if entity @n[tag=sc,scores={Map_Code=8}] run clone 12 -7 28 16 -3 32 -11
 execute if entity @n[tag=sc,scores={Map_Code=9}] run title @a[tag=!Gaming] actionbar {"text":"爪巴战争 预设世界","bold":true,"color":"light_purple"}
 #execute if entity @n[tag=sc,scores={Map_Code=9}] run clone 0 51 99 5 53 104 31 86 70
 #map010
-execute if entity @n[tag=sc,scores={Map_Code=10}] run title @a[tag=!Gaming] actionbar {"text":"空岛战争 破碎灵脉的大地之泉","bold":true,"color":"light_purple"}
-#execute if entity @n[tag=sc,scores={Map_Code=10}] run clone 0 51 106 5 53 111 31 86 70
+execute if entity @n[tag=sc,scores={Map_Code=10}] run title @a[tag=!Gaming] actionbar {"text":"空岛战争T4 碎晦坍殒的地灵脉","bold":true,"color":"light_purple"}
+execute if entity @n[tag=sc,scores={Map_Code=10}] run clone 12 -33 28 16 -37 32 -118 56 -110
 #map011
 execute if entity @n[tag=sc,scores={Map_Code=11}] run title @a[tag=!Gaming] actionbar {"text":"棋盘战争 光辉的生存竞技场","bold":true,"color":"light_purple"}
 #execute if entity @n[tag=sc,scores={Map_Code=11}] run clone 0 51 113 5 53 118 31 86 70
