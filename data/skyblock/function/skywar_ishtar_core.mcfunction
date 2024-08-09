@@ -28,7 +28,7 @@ execute if entity @s[scores={If_MD_13=1..,ishtar_core_1=10}] run scoreboard play
 execute if entity @s[scores={ishtar_core_1=10..}] run scoreboard players set @s ishtar_core_1 0
 
 execute if entity @s[scores={If_MD_Strad=1..}] run playsound minecraft:block.beacon.power_select ambient @a ~ ~2 ~ 4 0.5
-execute if entity @s[scores={If_MD_Strad=1..}] run summon area_effect_cloud ~ ~ ~ {Particle:end_rod,Radius:5,Duration:200,potion_contents:{custom_color:16383998,custom_effects:[{id:levitation,duration:120,amplifier:2,show_particles:1b,show_icon:1},{id:glowing,duration:120,amplifier:0,show_particles:1b,show_icon:1}]}}
+execute if entity @s[scores={If_MD_Strad=1..}] run summon area_effect_cloud ~ ~ ~ {Particle:{type:"end_rod"},Radius:5,Duration:200,potion_contents:{custom_color:16383998,custom_effects:[{id:levitation,duration:120,amplifier:2,show_particles:1b,show_icon:1},{id:glowing,duration:120,amplifier:0,show_particles:1b,show_icon:1}]}}
 execute if entity @s[scores={If_MD_Strad=1..}] run scoreboard players set @s If_MD_Strad 0
 
 execute if entity @s[scores={If_MD_Wait=1..}] run playsound minecraft:block.beacon.deactivate ambient @a ~ ~1 ~ 4 0.8
