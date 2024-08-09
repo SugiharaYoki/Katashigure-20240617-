@@ -4,7 +4,7 @@ tag @s add PVP_see
 tag @s remove PVPing
 scoreboard players reset @s DeathCount
 gamemode spectator
-tell @a[tag=DebugMode] dead!
+#tell @a[tag=DebugMode] dead!
 summon chest_minecart ~ ~ ~ {Tags:["skywar_deaddropitem_1"]}
 data modify entity @e[tag=skywar_deaddropitem_1,limit=1,sort=nearest] Items append from entity @s Inventory[0]
 data modify entity @e[tag=skywar_deaddropitem_1,limit=1,sort=nearest] Items append from entity @s Inventory[1]
