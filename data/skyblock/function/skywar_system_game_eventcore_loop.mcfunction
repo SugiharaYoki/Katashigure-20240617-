@@ -1,4 +1,4 @@
-execute as @a[tag=PVPing,gamemode=survival] at @s run spawnpoint @s ~ ~ ~
+#execute as @a[tag=PVPing,gamemode=survival] at @s run spawnpoint @s ~ ~ ~
 
 scoreboard players add @n[tag=sc] Temp5_Loop 1
 execute if entity @n[tag=sc,scores={Temp5_Loop=10..20}] run scoreboard objectives setdisplay sidebar Temp5
