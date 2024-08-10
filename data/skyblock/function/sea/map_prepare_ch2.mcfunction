@@ -119,6 +119,9 @@ setblock 90110 130 135 minecraft:potted_blue_orchid
 fill 90124 130 137 90124 128 136 minecraft:dark_prismarine
 fill 90130 129 144 90130 128 144 powder_snow
 fill 90129 129 139 90129 128 139 powder_snow
+setblock 90129 128 135 powder_snow
+fill 90126 128 135 90127 128 135 minecraft:powder_snow
+setblock 90126 129 135 minecraft:powder_snow
 
 setblock 90132 130 136 minecraft:redstone_lamp[lit=false]
 setblock 90100 128 142 air
