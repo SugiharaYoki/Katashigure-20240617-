@@ -19,3 +19,6 @@ clone -9410 32 -9888 -9295 61 -9882 50010 200 50122 masked
 forceload remove -9410 -10000 -9295 -9882
 
 title @a actionbar {"text":"空岛战争： 天穹巨兽古伽兰那 · 维修层","bold":true,"color":"blue"}
+forceload add 50000 50000 50200 50200
+fillbiome 50000 200 50200 50200 260 50200 basalt_deltas
+forceload remove 50000 50000 50200 50200

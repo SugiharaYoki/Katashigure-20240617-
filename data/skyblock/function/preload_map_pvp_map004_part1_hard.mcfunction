@@ -45,3 +45,6 @@ summon blaze 50074 34 50068
 summon blaze 50074 34 50068
 
 title @a actionbar {"text":"空岛战争： 炙魇的黑城","bold":true,"color":"blue"}
+forceload add 50000 50000 50200 50200
+fillbiome 50000 -21 50200 50200 30 50200 crimson_forest
+forceload remove 50000 50000 50200 50200
