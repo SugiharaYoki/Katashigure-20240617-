@@ -32,6 +32,7 @@ kill @e[type=!player,tag=!protected_entity,x=-80000,y=100,z=0,distance=0..1000]
 #初始化玩家
 tag @a[x=-79953.0,y=38,z=-14.0,distance=..1000,gamemode=!spectator] add azrPlayer
 execute as @a[tag=azrPlayer] run function skyblock:azr/system_sub/player_init
+execute as @a[tag=azrPlayer] run function skyblock:clear_attribute_modifiers
 
 #地图更改
 #开始强制加载
