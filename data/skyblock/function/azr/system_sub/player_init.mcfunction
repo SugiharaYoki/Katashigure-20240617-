@@ -1,3 +1,4 @@
+effect clear @s
 tag @s remove azrDead
 tag @s add Gaming
 tag @s add AzrielRefreshSuccess
