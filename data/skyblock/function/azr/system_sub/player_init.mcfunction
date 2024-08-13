@@ -1,4 +1,4 @@
-effect clear @s
+function skyblock:clear_attribute_modifiers
 tag @s remove azrDead
 tag @s add Gaming
 tag @s add AzrielRefreshSuccess
@@ -24,6 +24,7 @@ scoreboard players set @s Azr_emerald 0
 scoreboard players set @s Azr_isDead 0
 gamemode adventure @s
 effect give @s saturation 3 29 true
+effect give @s instant_health 3 29 true
 execute at @p run spawnpoint @s ~ ~ ~
 advancement revoke @s from skyblock:azr_root
 advancement grant @s only skyblock:azr_root
