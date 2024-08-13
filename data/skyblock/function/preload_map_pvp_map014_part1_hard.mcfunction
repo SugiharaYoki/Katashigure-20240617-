@@ -134,3 +134,6 @@ clone -9738 14 -10054 -9728 74 -10044 50100 0 50110 masked
 clone -9728 14 -10054 -9718 74 -10044 50110 0 50110 masked
 
 title @a actionbar {"text":"空岛战争： 折翼界空的夜明之塔","bold":true,"color":"blue"}
+forceload add 50000 50000 50200 50200
+fillbiome 50000 0 50200 50200 250 50200 taiga
+forceload remove 50000 50000 50200 50200

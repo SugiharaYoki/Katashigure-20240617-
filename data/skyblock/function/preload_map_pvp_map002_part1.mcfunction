@@ -33,3 +33,6 @@ setblock 50108 10 50053 green_shulker_box{LootTable:"skyblock:orebox"}
 summon rabbit 50067 26 50070
 summon rabbit 50055 26 50033
 summon rabbit 50061 26 50048
+forceload add 50000 50000 50200 50200
+fillbiome 50000 0 50200 50200 50 50200 old_growth_spruce_taiga
+forceload remove 50000 50000 50200 50200
