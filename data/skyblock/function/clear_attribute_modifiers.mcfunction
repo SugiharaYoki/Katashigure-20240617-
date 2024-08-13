@@ -7,4 +7,5 @@ attribute @s generic.attack_speed modifier remove minecraft:effect.haste
 attribute @s generic.safe_fall_distance modifier remove minecraft:effect.jump_boost
 attribute @s generic.movement_speed modifier remove minecraft:effect.slowness
 attribute @s generic.movement_speed modifier remove minecraft:effect.speed
+effect clear @s
 return 1
