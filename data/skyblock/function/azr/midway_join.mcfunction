@@ -1,3 +1,5 @@
+#多功能菜单
+scoreboard players set @s MultiMenu 0
 #输出提示消息
 execute unless score isStarted Azr_system matches 1 run tellraw @s [{"text":"加入失败！没有正在进行中的游戏！","color":"red"}]
 execute unless score isStarted Azr_system matches 1 run return fail
@@ -44,5 +46,3 @@ execute if entity @s[scores={Azr_wave=36..}] run item replace entity @s inventor
 execute if entity @s[scores={Azr_wave=36..}] run item replace entity @s inventory.2 with flint_and_steel[enchantments={fire_aspect:2}]
 execute if entity @s[scores={Azr_wave=36..}] run item replace entity @s inventory.3 with beetroot[custom_name='{"text":"爆裂菜根","italic":false}',lore=['{"text":"投掷 - 轰炸（射程较低）","color":"yellow"}'],enchantments={punch:1}] 5
 execute if entity @s[scores={Azr_wave=36..}] run item replace entity @s inventory.4 with arrow 38
-#多功能菜单
-scoreboard players set @s MultiMenu 0
