@@ -50,6 +50,12 @@ execute if score stage Azr_system matches 301 run function skyblock:azr/stage/st
 execute if score stage Azr_system matches 11 run scoreboard players set stageSeconds Azr_system 0
 #第五关-BOSS1 12..13
 execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 12..13 run function skyblock:azr/stage/stage5
+#第五关-第六关 14
+execute if score stage Azr_system matches 7 run scoreboard players set stageSeconds Azr_system 0
+#第六关 15
+execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 15 run function skyblock:azr/stage/stage6
+#第六关-第七关 16
+execute if score stage Azr_system matches 16 run scoreboard players set stageSeconds Azr_system 0
 
 
 #function skyblock:azr/ingame_azrielsmidgarden_core_sub1
