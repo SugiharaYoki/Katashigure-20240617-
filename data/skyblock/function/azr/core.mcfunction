@@ -44,6 +44,8 @@ execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system 
 #第四关-BOSS1 9
 execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 9 run function skyblock:azr/stage/stage_event1
 #BOSS1 10
+#BOSS1 Stage Diffident
+execute if score stage Azr_system matches 301 run function skyblock:azr/stage/stage_diffident
 #BOSS1-第五关 11
 execute if score stage Azr_system matches 11 run scoreboard players set stageSeconds Azr_system 0
 #第五关-BOSS1 12..13

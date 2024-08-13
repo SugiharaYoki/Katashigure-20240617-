@@ -79,7 +79,7 @@ execute if score stageSeconds Azr_system matches 132 positioned -79931 42 40 run
 execute if score stageSeconds Azr_system matches 138 positioned -79931 38 25 run function skyblock:azr/m/zombie_t2_shield
 execute if score stageSeconds Azr_system matches 143 positioned -79931 38 25 run function skyblock:azr/m/zombie_t1_5hp_full_armor
 execute store result score random Azr_system run random value 1..3
-execute if score stageSeconds Azr_system matches 143 if score @e[tag=sc,limit=1] rng3 matches 1 positioned -79931 38 25 run function skyblock:azr/m/zombie_t2_shield
+execute if score stageSeconds Azr_system matches 143 if score @e[tag=sc,limit=1] #rng3 matches 1 positioned -79931 38 25 run function skyblock:azr/m/zombie_t2_shield
 execute if score stageSeconds Azr_system matches 142 positioned -79931 38 25 run function skyblock:azr/m/zombie_t1_5hp_full_armor
 execute if score stageSeconds Azr_system matches 144 positioned -79931 38 25 run function skyblock:azr/m/zombie_t1_5hp_full_armor
 execute if score stageSeconds Azr_system matches 143 if score playerCount Azr_system matches 3.. positioned -79931 38 25 run function skyblock:azr/m/zombie_t1_5hp_full_armor

@@ -24,7 +24,7 @@ scoreboard players set isStarted Azr_system 1
 scoreboard players set stopSeconds Azr_system 0
 #重置bossbar
 bossbar remove azr:progress_bar_normal
-bossbar remove minecraft:8432198
+bossbar remove azr:progress_bar_special
 bossbar remove azr:boss_hp_bar
 bossbar remove minecraft:8432102
 #清场
