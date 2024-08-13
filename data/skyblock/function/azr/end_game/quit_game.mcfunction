@@ -3,6 +3,7 @@ stopsound @s
 team leave @s
 clear @s
 effect clear @s
+function skyblock:clear_attribute_modifiers
 tag @s remove azrPlayer
 tag @s remove NoMultiMenu
 tag @s remove Gaming
