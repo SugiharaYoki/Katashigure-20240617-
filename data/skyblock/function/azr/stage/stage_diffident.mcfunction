@@ -3,6 +3,7 @@ execute if score stageSeconds Azr_system matches 502 run bossbar add azr:progres
 execute if score stageSeconds Azr_system matches 502 run bossbar set azr:progress_bar_special color blue
 execute if score stageSeconds Azr_system matches 502 run bossbar set azr:progress_bar_special players @a[tag=azrPlayer]
 execute if score stageSeconds Azr_system matches 502 run bossbar set azr:progress_bar_special max 35
+execute if score stageSeconds Azr_system matches 1 run tellraw @a[tag=DebugMode,tag=azrPlayer] [{"text":"[DEBUG MODE MESSAGE] You are playing \"Stage Diffident\", with playerCount = "},{"score":{"objective":"Azr_system","name":"playerCount"}},{"text":" Maximum MobCount = 35"}]
 execute if score stageSeconds Azr_system matches 502..550 store result bossbar azr:progress_bar_special value run scoreboard players get mobCount Azr_system
 execute if score stageSeconds Azr_system matches 5511 run bossbar remove azr:progress_bar_special
 #
