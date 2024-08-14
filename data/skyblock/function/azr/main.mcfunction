@@ -28,6 +28,8 @@ execute if score tickTimer Azr_system matches -2147483648..2147483647 run scoreb
 execute if score isStarted Azr_system matches 1 unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 2 run function skyblock:azr/stage/stage1_event
 #BOSS1 10
 execute if score isStarted Azr_system matches 1 unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 10 run function skyblock:azr/stage/stage_boss1
+#BOSS2 23-24
+execute if score isStarted Azr_system matches 1 unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 23..24 run function skyblock:azr/stage/stage_boss2
 #打印剧情 考虑是否实装
 #execute as @a if data entity @s Inventory[{id:"minecraft:skull_banner_pattern"}] run tellraw @a [{"selector":"@s"},{"text":"解锁了剧情"}]
 #execute as @a if data entity @s Inventory[{id:"minecraft:skull_banner_pattern"}].components."minecraft:custom_name" run tellraw @a [{"nbt":"Inventory[{id:\"minecraft:skull_banner_pattern\"}].components.\"minecraft:custom_name\"","entity":"@s","interpret":true}]

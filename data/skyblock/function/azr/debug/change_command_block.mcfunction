@@ -25,7 +25,8 @@ scoreboard objectives remove SeGa_NumMob
 #tag AzrCookie ？
 #tag Azr_LM 生命手册标记 -> hasLifeVitae
 #tag Azr_SExUP ？
-#tag Azr_Skun 解锁灵能手册
+#tag Even2Suc 获取灵能手册时的临时变量 -> TEMP_azrEvent2
+#tag Azr_Skun 解锁灵能手册 -> hasSkills
 #tag AzrileRefreshSuccess ？
 #score AzrielStartedC 开始次数 -> Azr_startCount(Pointer替代sc) 追踪玩家和指针（虚拟实体）
 #score SeGa_StandLast 关卡读秒

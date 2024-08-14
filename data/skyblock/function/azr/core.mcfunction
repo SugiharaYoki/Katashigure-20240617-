@@ -38,9 +38,7 @@ execute if score stage Azr_system matches 7 run scoreboard players set stageSeco
 #第四关 8/33
 execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 8 run function skyblock:azr/stage/stage4
 execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 33 run function skyblock:azr/stage/stage4_beta
-#奖励关 Stage Cerement 30
-execute if block -79946 39 50 minecraft:birch_button[powered=true] run function skyblock:azr/stage/stage_cerement_prep
-execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 30 run function skyblock:azr/stage/stage_cerement
+
 #第四关-BOSS1 9
 execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 9 run function skyblock:azr/stage/stage_event1
 #BOSS1 10
@@ -55,13 +53,32 @@ execute if score stage Azr_system matches 7 run scoreboard players set stageSeco
 #第六关 15
 execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 15 run function skyblock:azr/stage/stage6
 #第六关-第七关 16
-execute if score stage Azr_system matches 16 run scoreboard players set stageSeconds Azr_system 0
+execute if score stage Azr_system matches 16 run function skyblock:azr/stage/stage_event2
 #第七关 17
 execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 17 run function skyblock:azr/stage/stage7
 #第七关beta 18
 execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 18 run function skyblock:azr/stage/stage7_beta
 #第七关-第八关 19
 execute if score stage Azr_system matches 19 run scoreboard players set stageSeconds Azr_system 0
+
+#TODO
+#第八关 20
+execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 20 run function skyblock:azr/stage/stage8
+#第八关-BOSS2（EVENT3) 21-22
+execute if score stage Azr_system matches 21..22 run function skyblock:azr/stage/stage_event3
+#BOSS2 23-24
+
+#奖励关 Stage Cerement 30
+execute if block -79946 39 50 minecraft:birch_button[powered=true] run function skyblock:azr/stage/stage_cerement_prep
+execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 30 run function skyblock:azr/stage/stage_cerement
+#奖励关 Stage Entertain 31
+execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 31 run function skyblock:azr/stage/stage_entertain
+#奖励关 Stage Vestige 240
+execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 240 run function skyblock:azr/stage/stage_vestige
+#奖励关 Stage Appetence 34
+execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 34 run function skyblock:azr/stage/stage_appetence
+
+
 
 #function skyblock:azr/ingame_azrielsmidgarden_core_sub1
 #execute if entity @e[tag=sc,limit=1,scores={SeGa_StandLastP=11}] run scoreboard players set @e[tag=sc,limit=1] SeGa_StandLast 0
@@ -87,3 +104,18 @@ execute if score stage Azr_system matches 19 run scoreboard players set stageSec
 #重置计时器
 
 scoreboard players set gametick Azr_system 0
+
+#第一章-第二章 TODO：
+#Stage Entertain 31（stage7二楼）
+#Stage Vestige 240[24->240]（Boss2战前隐藏通路）
+#stage8 20[19+1]
+#event3 21~22[20~21+1]
+#BOSS2-prep 23[22+1]
+#BOSS2 24[23+1]
+#Stage Appetence 34(stage6下边)
+#许愿池stage6-7
+#灵能
+#商店
+#button2（stage7二楼）
+#button3（stage7三楼）
+#button4（图书馆）
