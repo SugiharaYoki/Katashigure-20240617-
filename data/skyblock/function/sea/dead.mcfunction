@@ -24,6 +24,16 @@ tag @s remove e_i_22
 tag @s remove e_i_23
 tag @s remove e_i_24
 tag @s remove e_i_25
+tag @s remove e_i_30
+tag @s remove e_i_31
+tag @s remove e_i_32
+tag @s remove e_i_33
+tag @s remove e_i_34
+tag @s remove e_i_35
+tag @s remove e_i_36
+tag @s remove e_i_37
+tag @s remove e_i_38
+tag @s remove e_i_39
 tag @s remove e_w_01
 tag @s remove e_w_02
 tag @s remove e_w_03
