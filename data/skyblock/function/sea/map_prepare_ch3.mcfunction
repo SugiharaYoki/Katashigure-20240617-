@@ -41,7 +41,8 @@ item replace block 90067 139 104 container.14 with gunpowder 1
 setblock 90073 139 107 minecraft:brown_shulker_box
 item replace block 90073 139 107 container.13 with flint 1
 
-
+setblock 90084 149 110 chest[facing=south]
+item replace block 90084 149 110 container.13 with arrow 3
 
 
 

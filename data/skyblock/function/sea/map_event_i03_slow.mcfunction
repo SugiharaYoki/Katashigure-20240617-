@@ -13,9 +13,9 @@ execute as @a[tag=SEAPT,x=90067,y=137,z=125,distance=0..3.8,tag=!e_i_30] at @s r
 execute as @a[tag=SEAPT,x=90067,y=137,z=125,distance=0..3.8,tag=!e_i_30] at @s run playsound ambient.crimson_forest.additions master @s ~ ~ ~ 100 0.7
 execute as @a[tag=SEAPT,x=90067,y=137,z=125,distance=0..3.8,tag=!e_i_30] at @s run tag @s add e_i_30
 
-execute positioned 90084 136 115 if entity @a[distance=..13] unless entity @n[tag=SEAch3_spawn,distance=0..3] at @s run function skyblock:sea/m/drowned_maintenance
-execute positioned 90084 136 115 if entity @a[distance=..13] unless entity @n[tag=SEAch3_spawn,distance=0..3] at @s run function skyblock:sea/m/drowned_maintenance
-execute positioned 90084 136 115 if entity @a[distance=..13] unless entity @n[tag=SEAch3_spawn,distance=0..3] at @s run summon marker ~ ~ ~ {Tags:["SEAch3_spawn"]}
+execute positioned 90084 137 115 if entity @a[distance=..13] unless entity @n[tag=SEAch3_spawn,distance=0..3] at @s run function skyblock:sea/m/drowned_maintenance
+execute positioned 90084 137 115 if entity @a[distance=..13] unless entity @n[tag=SEAch3_spawn,distance=0..3] at @s run function skyblock:sea/m/drowned_maintenance
+execute positioned 90084 137 115 if entity @a[distance=..13] unless entity @n[tag=SEAch3_spawn,distance=0..3] at @s run summon marker ~ ~ ~ {Tags:["SEAch3_spawn"]}
 execute positioned 90091 137 118 if entity @a[distance=..13] unless entity @n[tag=SEAch3_spawn,distance=0..3] at @s run function skyblock:sea/m/drowned_hat
 execute positioned 90091 137 118 if entity @a[distance=..13] unless entity @n[tag=SEAch3_spawn,distance=0..3] at @s run function skyblock:sea/m/drowned_hat
 execute positioned 90091 137 118 if entity @a[distance=..13] unless entity @n[tag=SEAch3_spawn,distance=0..3] at @s run summon marker ~ ~ ~ {Tags:["SEAch3_spawn"]}
@@ -26,5 +26,35 @@ execute positioned 90072 139 110 if entity @a[distance=..13] unless entity @n[ta
 execute positioned 90072 139 110 if entity @a[distance=..13] unless entity @n[tag=SEAch3_spawn,distance=0..3] at @s positioned 90067 139 103 run function skyblock:sea/m/spider
 
 execute positioned 90072 139 110 if entity @a[distance=..13] unless entity @n[tag=SEAch3_spawn,distance=0..3] at @s run summon marker ~ ~ ~ {Tags:["SEAch3_spawn"]}
+
+
+
+execute positioned 90100 137 100 if entity @a[distance=..13] unless entity @n[tag=SEAch3_spawn,distance=0..3] at @s run function skyblock:sea/m/drowned_small
+execute positioned 90100 137 100 if entity @a[distance=..13] unless entity @n[tag=SEAch3_spawn,distance=0..3] at @s run function skyblock:sea/m/drowned_small
+execute positioned 90100 137 100 if entity @a[distance=..13] unless entity @n[tag=SEAch3_spawn,distance=0..3] at @s run function skyblock:sea/m/drowned_small
+execute positioned 90100 137 100 if entity @a[distance=..13] unless entity @n[tag=SEAch3_spawn,distance=0..3] at @s run function skyblock:sea/m/drowned_small
+execute positioned 90100 137 100 if entity @a[distance=..13] unless entity @n[tag=SEAch3_spawn,distance=0..3] at @s run summon marker ~ ~ ~ {Tags:["SEAch3_spawn"]}
+
+execute positioned 90086 137 95 if entity @a[distance=..13] unless entity @n[tag=SEAch3_spawn,distance=0..3] at @s run function skyblock:sea/m/zombie_cook
+execute positioned 90086 137 95 if entity @a[distance=..13] unless entity @n[tag=SEAch3_spawn,distance=0..3] at @s run function skyblock:sea/m/skeleton
+execute positioned 90086 137 95 if entity @a[distance=..13] unless entity @n[tag=SEAch3_spawn,distance=0..3] at @s run function skyblock:sea/m/skeleton
+execute positioned 90086 137 95 if entity @a[distance=..13] unless entity @n[tag=SEAch3_spawn,distance=0..3] at @s run summon marker ~ ~ ~ {Tags:["SEAch3_spawn"]}
+
+execute positioned 90087 143 121 if entity @a[distance=..13] unless entity @n[tag=SEAch3_spawn,distance=0..3] at @s run function skyblock:sea/m/skeleton_melee
+execute positioned 90087 143 121 if entity @a[distance=..13] unless entity @n[tag=SEAch3_spawn,distance=0..3] at @s run function skyblock:sea/m/skeleton_melee
+execute positioned 90087 143 121 if entity @a[distance=..13] unless entity @n[tag=SEAch3_spawn,distance=0..3] at @s run function skyblock:sea/m/skeleton
+execute positioned 90087 143 121 if entity @a[distance=..13] unless entity @n[tag=SEAch3_spawn,distance=0..3] at @s run function skyblock:sea/m/skeleton
+execute positioned 90087 143 121 if entity @a[distance=..13] unless entity @n[tag=SEAch3_spawn,distance=0..3] at @s run summon marker ~ ~ ~ {Tags:["SEAch3_spawn"]}
+
+
+
+
+
+
+
+
+
+
+
 
 
