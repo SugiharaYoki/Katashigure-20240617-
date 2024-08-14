@@ -200,7 +200,7 @@ execute if score SeGa_StandLast Azr_system matches 256..266 if score #rng9 Azr_s
 execute if score SeGa_StandLast Azr_system matches 256..266 if score #rng9 Azr_system matches 8 if score Azr_Player Azr_system matches 3.. run summon cave_spider -79889 38 121 {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_cave_spider_tier1",Health:2.5f,CustomName:'"毒木棘"',attributes:[{id:"generic.max_health",base:2.5d},{id:"generic.attack_damage",base:0.5d},{id:"generic.movement_speed",base:0.3d}]}
 execute if score SeGa_StandLast Azr_system matches 256..266 if score #rng9 Azr_system matches 9 if score Azr_Player Azr_system matches 2.. run summon spider -79889 38 121 {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_spider_tier2",Health:9.5f,CustomName:'"残城蜘蛛"',attributes:[{id:"generic.max_health",base:9.5d},{id:"generic.attack_damage",base:2.0d},{id:"generic.movement_speed",base:0.24d},{id:"generic.knockback_resistance",base:0.4d}]}
 
-execute if score SeGa_StandLast Azr_system matches 268..278 unless entity @e[tag=sc,limit=1,scores={Azr_Enemy=..2}] run scoreboard players set stageSeconds Azr_system 276
+execute if score SeGa_StandLast Azr_system matches 268..278 unless score mobCount Azr_system matches ..2 run scoreboard players set stageSeconds Azr_system 276
 
 execute if score SeGa_StandLast Azr_system matches 249 run tellraw @a[tag=azrPlayer] {"text":"你感知到某种魔力极为强大的生物正在靠近你……","color":"gray"}
 execute if score SeGa_StandLast Azr_system matches 279..280 run playsound minecraft:entity.lightning_bolt.thunder ambient @a[tag=azrPlayer] -78889 38 121 120 0.5
@@ -210,7 +210,7 @@ execute if score SeGa_StandLast Azr_system matches 279 run playsound minecraft:e
 execute if score SeGa_StandLast Azr_system matches 281 run playsound minecraft:entity.zombie_villager.cure ambient @a[tag=azrPlayer] -78889 38 121 90 0.74
 execute if score SeGa_StandLast Azr_system matches 281 run playsound minecraft:entity.elder_guardian.curse ambient @a[tag=azrPlayer] -78889 38 121 100 0.4
 execute if score SeGa_StandLast Azr_system matches 281 run playsound minecraft:entity.generic.explode ambient @a[tag=azrPlayer] -78889 38 121 98 0.7
-execute if score SeGa_StandLast Azr_system matches 281 run scoreboard players set @e[tag=sc,limit=1] SeGa_StandLastQ 0
+execute if score SeGa_StandLast Azr_system matches 281 run scoreboard players set tickTimer Azr_system 0
 execute if score SeGa_StandLast Azr_system matches 281 run tag @a[tag=azrPlayer] add SeGa_SLAQuake
 execute if score SeGa_StandLast Azr_system matches 282 run tag @a[tag=azrPlayer] remove SeGa_SLAQuake
 execute if score SeGa_StandLast Azr_system matches 281 as @e[tag=AzrielMob,tag=!AzrielDecMob] at @s unless entity @r[tag=SeGa_StandLast,distance=0..3] run kill @s
