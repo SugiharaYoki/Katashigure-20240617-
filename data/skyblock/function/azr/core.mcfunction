@@ -56,7 +56,12 @@ execute if score stage Azr_system matches 7 run scoreboard players set stageSeco
 execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 15 run function skyblock:azr/stage/stage6
 #第六关-第七关 16
 execute if score stage Azr_system matches 16 run scoreboard players set stageSeconds Azr_system 0
-
+#第七关 17
+execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 17 run function skyblock:azr/stage/stage7
+#第七关beta 18
+execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 18 run function skyblock:azr/stage/stage7_beta
+#第七关-第八关 19
+execute if score stage Azr_system matches 19 run scoreboard players set stageSeconds Azr_system 0
 
 #function skyblock:azr/ingame_azrielsmidgarden_core_sub1
 #execute if entity @e[tag=sc,limit=1,scores={SeGa_StandLastP=11}] run scoreboard players set @e[tag=sc,limit=1] SeGa_StandLast 0

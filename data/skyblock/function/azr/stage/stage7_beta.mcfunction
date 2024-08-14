@@ -3,6 +3,7 @@ execute if score SeGa_StandLast Azr_system matches 1 run bossbar add minecraft:8
 execute if score SeGa_StandLast Azr_system matches 1 run bossbar set minecraft:8432199 color white
 execute if score SeGa_StandLast Azr_system matches 1 run bossbar set minecraft:8432199 players @a[tag=azrPlayer]
 execute if score SeGa_StandLast Azr_system matches 1 run bossbar set minecraft:8432199 max 310
+execute if score stageSeconds Azr_system matches 1 run tellraw @a[tag=DebugMode,tag=azrPlayer] [{"text":"[DEBUG MODE MESSAGE] You are playing \"Stage 7β\", with playerCount = "},{"score":{"objective":"Azr_system","name":"playerCount"}},{"text":" Maximum Seconds = 310"}]
 execute if score SeGa_StandLast Azr_system matches 0..3 run setblock -79904 41 97 air
 execute if score SeGa_StandLast Azr_system matches 1..303 store result bossbar minecraft:8432199 value run scoreboard players get stageSeconds Azr_system
 execute if score SeGa_StandLast Azr_system matches 303.. run bossbar remove minecraft:8432199
@@ -264,8 +265,8 @@ execute if score SeGa_StandLast Azr_system matches 301..304 run fill -79886 46 1
 execute if score SeGa_StandLast Azr_system matches 301..304 run fill -79895 50 126 -79895 48 127 minecraft:air destroy
 execute if score SeGa_StandLast Azr_system matches 301 run title @a[tag=azrPlayer] actionbar {"text":"Stage Clear","color":"green"}
 execute if score SeGa_StandLast Azr_system matches 304 run advancement grant @a[tag=azrPlayer] only skyblock:azr_stage7_alt
-execute if score SeGa_StandLast Azr_system matches 304 run scoreboard players set @a[tag=azrPlayer] Azr_wave 18
-execute if score SeGa_StandLast Azr_system matches 304 run scoreboard players set stage Azr_system 18
+execute if score SeGa_StandLast Azr_system matches 304 run scoreboard players set @a[tag=azrPlayer] Azr_wave 19
+execute if score SeGa_StandLast Azr_system matches 304 run scoreboard players set stage Azr_system 19
 execute if score SeGa_StandLast Azr_system matches 304 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..7}] Azr_skillPoints 8
 execute if score SeGa_StandLast Azr_system matches 281 run fill -79901 39 88 -79901 38 88 air destroy
 execute if score SeGa_StandLast Azr_system matches 303 run summon bee -79890 38 82 {PersistenceRequired:1b,Tags:["AzrielDecMob"],DeathLootTable:"skyblock:azriel_bee_tier1",Health:10.0f,CustomName:'"花园蜂"',Age:0,attributes:[{id:"generic.max_health",base:10.0d},{id:"generic.movement_speed",base:0.25d},{id:"generic.attack_damage",base:3.5d}]}
