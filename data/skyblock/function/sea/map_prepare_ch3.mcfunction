@@ -30,21 +30,18 @@ setblock 90083 143 123 decorated_pot{sherds:["burn_pottery_sherd","burn_pottery_
 setblock 90091 137 122 minecraft:green_shulker_box
 item replace block 90091 137 122 container.12 with arrow 2
 item replace block 90091 137 122 container.14 with gunpowder 1
-
 setblock 90089 143 123 chest[facing=north]
 item replace block 90089 143 123 container.13 with beef 1
-
 setblock 90067 139 104 minecraft:green_shulker_box
 item replace block 90067 139 104 container.12 with coal 1
 item replace block 90067 139 104 container.14 with gunpowder 1
-
 setblock 90073 139 107 minecraft:brown_shulker_box
 item replace block 90073 139 107 container.13 with flint 1
-
 setblock 90084 149 110 chest[facing=south]
 item replace block 90084 149 110 container.13 with arrow 3
 
-
+setblock 90066 138 153 air
+setblock 90066 138 153 lever[facing=south]
 
 
 
