@@ -37,14 +37,14 @@ tag @a[tag=PVPing] remove NoMultiMenu
 #无意义变量 scoreboard players reset @a RemainPlayer
 #组队结束
 team leave @a
-team modify Team1_2 color aqua
-team modify Team1_3 color blue
 team remove Team1_1
 team remove Team1_2
 team remove Team1_3
 team remove Team1_4
 team remove Temp1_5
 team remove Temp1_6
+team remove Temp1_7
+team remove Temp1_8
 team join HajimetanoMachi @a[tag=PVP_see]
 #回归主城
 worldborder set 30000000

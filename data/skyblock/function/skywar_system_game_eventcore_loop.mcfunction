@@ -14,6 +14,10 @@ execute store result score @n[tag=sc] Team1Rem if entity @a[team=Team1_1,gamemod
 execute store result score @n[tag=sc] Team2Rem if entity @a[team=Team1_2,gamemode=!spectator]
 execute store result score @n[tag=sc] Team3Rem if entity @a[team=Team1_3,gamemode=!spectator]
 execute store result score @n[tag=sc] Team4Rem if entity @a[team=Team1_4,gamemode=!spectator]
+execute store result score @n[tag=sc] Team5Rem if entity @a[team=Team1_5,gamemode=!spectator]
+execute store result score @n[tag=sc] Team6Rem if entity @a[team=Team1_6,gamemode=!spectator]
+execute store result score @n[tag=sc] Team7Rem if entity @a[team=Team1_7,gamemode=!spectator]
+execute store result score @n[tag=sc] Team8Rem if entity @a[team=Team1_8,gamemode=!spectator]
 scoreboard players set 「服务器情报」 Temp5 -97
 scoreboard players set 「队伍信息」 Temp5 99
 scoreboard players set 『匿名·方时雨城』Katashigure Temp5 -98

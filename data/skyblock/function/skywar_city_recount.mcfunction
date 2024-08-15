@@ -7,14 +7,14 @@ execute unless block -17 23 32 soul_lantern run scoreboard players set @n[tag=sc
 
 #《初始化队伍》
 team leave @a
-team modify Team1_2 color aqua
-team modify Team1_3 color blue
 team remove Team1_1
 team remove Team1_2
 team remove Team1_3
 team remove Team1_4
 team remove Temp1_5
 team remove Temp1_6
+team remove Temp1_7
+team remove Temp1_8
 team join HajimetanoMachi @a[tag=PVP_see]
 #《游戏规则初始化》
 #gamerule doFireTick false
