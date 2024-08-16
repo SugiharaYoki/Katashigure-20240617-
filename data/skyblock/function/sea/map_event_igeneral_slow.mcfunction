@@ -181,3 +181,8 @@ execute if block 90088 128 114 air unless entity @a[tag=SEAPT,tag=e_i_20] run fi
 execute if block 90088 128 114 air unless entity @a[tag=SEAPT,tag=e_i_20] run tag @a[tag=SEAPT] add e_i_20
 
 
+
+clear @a[tag=SEAPT] basalt
+clear @a[tag=SEAPT] item_frame
+clear @a[tag=SEAPT] iron_bars
+clear @a[tag=SEAPT] deepslate_tiles
