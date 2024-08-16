@@ -1,6 +1,8 @@
 function skyblock:sea/map_prepare_ch1
 function skyblock:sea/map_prepare_ch2
 
+tp @s 90136 129 117 facing 90137 129 117
+
 scoreboard players set @n[tag=sc] sea_4temp2 1300
 
 clear @s
