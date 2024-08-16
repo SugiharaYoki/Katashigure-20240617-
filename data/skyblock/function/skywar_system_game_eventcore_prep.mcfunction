@@ -27,7 +27,8 @@ execute if score @n[tag=sc] Map_Code matches 7 run spawnpoint @a[tag=!NoSkyWar] 
 execute if score @n[tag=sc] Map_Code matches 8 run spawnpoint @a[tag=!NoSkyWar] 50449 30 50049
 execute if score @n[tag=sc] Map_Code matches 9 run spawnpoint @a[tag=!NoSkyWar] 50000 100 50000
 execute if score @n[tag=sc] Map_Code matches 10 run spawnpoint @a[tag=!NoSkyWar] 50068 36 50068
-execute if score @n[tag=sc] Map_Code matches 14 run spawnpoint @a[tag=!NoSkyWar] 50060 60 50060
+execute if score @n[tag=sc] Map_Code matches 14 unless block -156 59 -114 diamond_block run spawnpoint @a[tag=!NoSkyWar] 50060 60 50060
+execute if score @n[tag=sc] Map_Code matches 14 if block -156 59 -114 diamond_block run spawnpoint @a[tag=!NoSkyWar] 50068 120 50068
 execute if score @n[tag=sc] Map_Code matches 15 run spawnpoint @a[tag=!NoSkyWar] 50069 40 50070
 execute if score @n[tag=sc] Map_Code matches 16 run spawnpoint @a[tag=!NoSkyWar] 50069 40 50070
 execute if score @n[tag=sc] Map_Code matches 17 run spawnpoint @a[tag=!NoSkyWar] 50080 240 50070
@@ -77,8 +78,10 @@ execute if score @n[tag=sc] Map_Code matches 13 if block 27 56 -105 jungle_log r
 execute if score @n[tag=sc] Map_Code matches 13 if block 27 56 -105 crimson_hyphae run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run worldborder center 50474 50474
 execute if score @n[tag=sc] Map_Code matches 13 if block 27 56 -105 crimson_hyphae run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run worldborder set 150
 #[futuredevskywar]
-execute if score @n[tag=sc] Map_Code matches 14 run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run worldborder center 50065 50065
-execute if score @n[tag=sc] Map_Code matches 14 run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run worldborder set 99
+execute if score @n[tag=sc] Map_Code matches 14 unless block -156 59 -114 diamond_block run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run worldborder center 50065 50065
+execute if score @n[tag=sc] Map_Code matches 14 unless block -156 59 -114 diamond_block run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run worldborder set 99
+execute if score @n[tag=sc] Map_Code matches 14 if block -156 59 -114 diamond_block run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run worldborder center 50068 50068
+execute if score @n[tag=sc] Map_Code matches 14 if block -156 59 -114 diamond_block run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run worldborder set 135
 execute if score @n[tag=sc] Map_Code matches 15 run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run worldborder center 50069 50070
 execute if score @n[tag=sc] Map_Code matches 15 run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run worldborder set 138
 execute if score @n[tag=sc] Map_Code matches 16 run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run worldborder center 50069 50070

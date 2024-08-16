@@ -60,7 +60,8 @@ execute if entity @e[tag=!MapLoaAlr,tag=sc,limit=1,scores={SSgspT=2,Map_Code=7}]
 execute if entity @e[tag=!MapLoaAlr,tag=sc,limit=1,scores={SSgspT=2,Map_Code=8}] run function skyblock:preload_map_pvp_map008_part1
 execute if entity @e[tag=!MapLoaAlr,tag=sc,limit=1,scores={SSgspT=2,Map_Code=10}] run function skyblock:preload_map_pvp_map010_part1_hard
 execute if entity @e[tag=!MapLoaAlr,tag=sc,limit=1,scores={SSgspT=2,Map_Code=13}] run function skyblock:preload_map_pvp_map013_part1
-execute if entity @e[tag=!MapLoaAlr,tag=sc,limit=1,scores={SSgspT=2,Map_Code=14}] run function skyblock:preload_map_pvp_map014_part1_hard
+execute if entity @e[tag=!MapLoaAlr,tag=sc,limit=1,scores={SSgspT=2,Map_Code=14}] unless block -156 59 -114 diamond_block run function skyblock:preload_map_pvp_map014_part1_hard
+execute if entity @e[tag=!MapLoaAlr,tag=sc,limit=1,scores={SSgspT=2,Map_Code=14}] if block -156 59 -114 diamond_block run function skyblock:preload_map_pvp_map014alt_part1_hard
 execute if entity @e[tag=!MapLoaAlr,tag=sc,limit=1,scores={SSgspT=2,Map_Code=15}] run function skyblock:preload_map_pvp_map015_part1_hard
 execute if entity @e[tag=!MapLoaAlr,tag=sc,limit=1,scores={SSgspT=2,Map_Code=16}] run function skyblock:preload_map_pvp_map016_part1_hard
 execute if entity @e[tag=!MapLoaAlr,tag=sc,limit=1,scores={SSgspT=2,Map_Code=17}] run function skyblock:preload_map_pvp_map017_part1_hard

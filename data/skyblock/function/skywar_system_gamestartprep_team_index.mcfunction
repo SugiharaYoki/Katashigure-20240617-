@@ -7,7 +7,8 @@ execute if score @n[tag=sc] Map_Code matches 7 run function skyblock:skywar_syst
 execute if score @n[tag=sc] Map_Code matches 8 run function skyblock:skywar_system_gamestartprep_team_008
 execute if score @n[tag=sc] Map_Code matches 10 run function skyblock:skywar_system_gamestartprep_team_010
 execute if score @n[tag=sc] Map_Code matches 13 run function skyblock:skywar_system_gamestartprep_team_013
-execute if score @n[tag=sc] Map_Code matches 14 run function skyblock:skywar_system_gamestartprep_team_014
+execute if score @n[tag=sc] Map_Code matches 14 unless block -156 59 -114 diamond_block run function skyblock:skywar_system_gamestartprep_team_014
+execute if score @n[tag=sc] Map_Code matches 14 if block -156 59 -114 diamond_block run function skyblock:skywar_system_gamestartprep_team_014alt
 
 execute if score @n[tag=sc] Map_Code matches 15 run function skyblock:skywar_system_gamestartprep_team_015
 execute if score @n[tag=sc] Map_Code matches 16 run function skyblock:skywar_system_gamestartprep_team_016
