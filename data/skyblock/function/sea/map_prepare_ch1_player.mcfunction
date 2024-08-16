@@ -31,6 +31,7 @@ execute if entity @a[tag=SEAPT,tag=e_i_06] run tag @s add e_i_06
 execute if entity @a[tag=SEAPT,tag=e_i_07] run tag @s add e_i_07
 execute if entity @a[tag=SEAPT,tag=e_i_08] run tag @s add e_i_08
 execute if entity @a[tag=SEAPT,tag=e_i_11] run tag @s add e_i_11
+execute if entity @a[tag=SEAPT,tag=e_i_13] run tag @s add e_i_13
 execute if entity @a[tag=SEAPT,tag=e_i_15] run tag @s add e_i_15
 execute if entity @a[tag=SEAPT,tag=e_i_16] run tag @s add e_i_16
 execute if entity @a[tag=SEAPT,tag=e_i_18] run tag @s add e_i_18
