@@ -473,6 +473,7 @@ execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=1301}] po
 execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=1301}] positioned 90142 128 102 run function skyblock:sea/m/drowned_shield
 execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=1301}] positioned 90142 128 102 run function skyblock:sea/m/drowned_shield
 execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=1301}] positioned 90142 128 102 run function skyblock:sea/m/drowned_shield
+execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=1301}] run setblock 90125 130 115 minecraft:stone_button[facing=west]
 
 
 
