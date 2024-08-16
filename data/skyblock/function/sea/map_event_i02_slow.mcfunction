@@ -473,6 +473,7 @@ execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=1301}] po
 execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=1301}] positioned 90142 128 102 run function skyblock:sea/m/drowned_shield
 execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=1301}] positioned 90142 128 102 run function skyblock:sea/m/drowned_shield
 execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=1301}] positioned 90142 128 102 run function skyblock:sea/m/drowned_shield
+execute if entity @a[tag=SEAPT] if entity @n[tag=sc,scores={sea_4temp2=1301}] run setblock 90125 130 115 minecraft:stone_button[facing=west]
 
 
 
@@ -632,7 +633,7 @@ execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=5002}] run give 
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=5012}] as @a[tag=SEAPT] at @s run tellraw @s {"text":"一番苦战，但终于解决了这几个家伙。","color":"gray"}
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=5030}] as @a[tag=SEAPT] at @s run tellraw @s {"text":"是时候往更上层去了。","color":"gray"}
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=5057}] as @a[tag=SEAPT] at @s run tellraw @s {"text":"……我甚至无法想象上面会是怎样的情景。","color":"gray"}
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=5089}] as @a[tag=SEAPT] at @s run tellraw @s {"text":"『厄珀尔的悲歌』第二章 完","color":"blue","bold": true}
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=5089}] as @a[tag=SEAPT] at @s run tellraw @s {"text":"『厄珀娅的悲歌』第二章 完","color":"blue","bold": true}
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=5089}] as @a[tag=SEAPT] at @s run playsound music_disc.creator_music_box music @a[tag=SEAPT] ~ ~ ~ 1000 0.8
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=5057}] run function skyblock:sea/map_prepare_ch3
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=5030}] run setblock 90066 129 112 minecraft:stone_button[facing=north]

@@ -1,6 +1,9 @@
 function skyblock:sea/map_prepare_ch1
 function skyblock:sea/map_prepare_ch2
-function skyblock:sea/map_prepare_ch3
+
+tp @s 90136 129 117 facing 90137 129 117
+
+scoreboard players set @n[tag=sc] sea_4temp2 1300
 
 clear @s
 item replace entity @s armor.head with chainmail_helmet[custom_name='{"text":"电工安全帽","italic":false,"color":"red"}',custom_data={sea_safehat:true},attribute_modifiers=[{type:"generic.armor",slot:"head",id:"sea_armor:003_01",amount:1.0,operation:"add_value"},{type:"generic.knockback_resistance",slot:"head",id:"sea_armor:003_02",amount:0.1,operation:"add_value"}],unbreakable={}]
@@ -79,11 +82,11 @@ fill 90076 124 121 90076 124 123 air
 
 
 fill 90066 128 96 90066 129 97 air
-fill 90099 130 94 90099 128 92 air
-fill 90123 128 94 90123 130 92 air
-setblock 90130 128 92 air
-setblock 90147 132 91 air
-fill 90132 129 94 90131 128 92 air
+#fill 90099 130 94 90099 128 92 air
+#fill 90123 128 94 90123 130 92 air
+#setblock 90130 128 92 air
+#setblock 90147 132 91 air
+#fill 90132 129 94 90131 128 92 air
 fill 90131 131 118 90131 129 116 minecraft:air
 fill 90143 131 116 90143 129 118 minecraft:air
 
@@ -127,7 +130,7 @@ setblock 90092 132 112 white_stained_glass
 setblock 90088 132 112 white_stained_glass
 setblock 90084 132 112 white_stained_glass
 
-setblock 90066 129 112 minecraft:stone_button[facing=north]
+#setblock 90066 129 112 minecraft:stone_button[facing=north]
 
 
 

@@ -55,6 +55,7 @@ spawnpoint @s -43 55 0 -90
 tp @s -43 55 0
 tag @s add sea_dead
 scoreboard players reset @s sea_dead_check
+gamemode @s[tag=ServerManager] creative
 
 attribute @s minecraft:generic.armor modifier remove sea_t_armor1
 attribute @s minecraft:generic.armor modifier remove sea_t_armor2
