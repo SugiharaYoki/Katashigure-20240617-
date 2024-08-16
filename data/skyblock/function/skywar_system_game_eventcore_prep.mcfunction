@@ -28,7 +28,7 @@ execute if score @n[tag=sc] Map_Code matches 8 run spawnpoint @a[tag=!NoSkyWar] 
 execute if score @n[tag=sc] Map_Code matches 9 run spawnpoint @a[tag=!NoSkyWar] 50000 100 50000
 execute if score @n[tag=sc] Map_Code matches 10 run spawnpoint @a[tag=!NoSkyWar] 50068 36 50068
 execute if score @n[tag=sc] Map_Code matches 14 unless block -156 59 -114 diamond_block run spawnpoint @a[tag=!NoSkyWar] 50060 60 50060
-execute if score @n[tag=sc] Map_Code matches 14 if block -156 59 -114 diamond_block run spawnpoint @a[tag=!NoSkyWar] 50068 120 50068
+execute if score @n[tag=sc] Map_Code matches 14 if block -156 59 -114 diamond_block run spawnpoint @a[tag=!NoSkyWar] 50071 80 50068
 execute if score @n[tag=sc] Map_Code matches 15 run spawnpoint @a[tag=!NoSkyWar] 50069 40 50070
 execute if score @n[tag=sc] Map_Code matches 16 run spawnpoint @a[tag=!NoSkyWar] 50069 40 50070
 execute if score @n[tag=sc] Map_Code matches 17 run spawnpoint @a[tag=!NoSkyWar] 50080 240 50070
