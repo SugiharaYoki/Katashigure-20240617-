@@ -209,8 +209,10 @@ execute if score @n[tag=sc] SSgspT matches 13 if score @n[tag=sc] Map_Code match
 execute if score @n[tag=sc] SSgspT matches 13 if score @n[tag=sc] Map_Code matches 10 run title @a[tag=PVP_see] subtitle {"text":"曾经地元素最为充沛之所 今日映入眼帘的仅有腐败","color":"white"}
 execute if score @n[tag=sc] SSgspT matches 13 if score @n[tag=sc] Map_Code matches 13 run title @a[tag=PVP_see] title {"text":"混沌魔方","color":"white"}
 execute if score @n[tag=sc] SSgspT matches 13 if score @n[tag=sc] Map_Code matches 13 run title @a[tag=PVP_see] subtitle {"text":"混沌未分天地乱 茫茫渺渺无人见","color":"white"}
-execute if score @n[tag=sc] SSgspT matches 13 if score @n[tag=sc] Map_Code matches 14 run title @a[tag=PVP_see] title {"text":"折翼界空的夜明之塔","color":"white"}
-execute if score @n[tag=sc] SSgspT matches 13 if score @n[tag=sc] Map_Code matches 14 run title @a[tag=PVP_see] subtitle {"text":"天灾已过 人去楼空","color":"white"}
+execute if score @n[tag=sc] SSgspT matches 13 if score @n[tag=sc] Map_Code matches 14 unless block -156 59 -114 diamond_block run title @a[tag=PVP_see] title {"text":"折翼界空的夜明之塔","color":"white"}
+execute if score @n[tag=sc] SSgspT matches 13 if score @n[tag=sc] Map_Code matches 14 if block -156 59 -114 diamond_block run title @a[tag=PVP_see] title {"text":"折羽界离的夜明之塔","color":"dark_red"}
+execute if score @n[tag=sc] SSgspT matches 13 if score @n[tag=sc] Map_Code matches 14 unless block -156 59 -114 diamond_block run title @a[tag=PVP_see] subtitle {"text":"天灾已过 人去楼空","color":"white"}
+execute if score @n[tag=sc] SSgspT matches 13 if score @n[tag=sc] Map_Code matches 14 if block -156 59 -114 diamond_block run title @a[tag=PVP_see] subtitle {"text":"天灾已过 末日却尚未降临","color":"dark_red"}
 execute if score @n[tag=sc] SSgspT matches 13 if score @n[tag=sc] Map_Code matches 15 run title @a[tag=PVP_see] title {"text":"浮岛空舰站","color":"white"}
 execute if score @n[tag=sc] SSgspT matches 13 if score @n[tag=sc] Map_Code matches 15 run title @a[tag=PVP_see] subtitle {"text":"伊什塔尔的边界 坐落着这古代科技的前哨","color":"white"}
 execute if score @n[tag=sc] SSgspT matches 13 if score @n[tag=sc] Map_Code matches 16 run title @a[tag=PVP_see] title {"text":"绯染缥茫的世花源","color":"white"}
