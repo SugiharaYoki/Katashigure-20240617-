@@ -279,4 +279,4 @@ setblock 90087 128 123 decorated_pot{sherds:["prize_pottery_sherd","prize_potter
 
 setblock 90075 103 141 minecraft:air
 
-tp @s 90060 103 141 facing 90061 103 141
+tp @a[distance=0..300] 90060 103 141 facing 90061 103 141
