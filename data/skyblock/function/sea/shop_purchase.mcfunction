@@ -161,17 +161,21 @@ execute if entity @s[tag=sea_purchase_pass] run give @s flint_and_steel[custom_n
 execute if entity @s[tag=sea_purchase_pass] run clear @s emerald 2
 tag @s remove sea_purchase_pass
 
-execute store result score @s rng1 run random value 1..20
 execute if score @s sea_crafter matches 10005 as @s[scores={sea_i_emerald=..0}] run tellraw @s {"text":"失败！余额不足！","color":"red"}
 execute if score @s sea_crafter matches 10005 as @s[scores={sea_i_emerald=1..}] run tag @s add sea_purchase_pass
 execute if entity @s[tag=sea_purchase_pass] run playsound minecraft:item.armor.equip_iron neutral @s ~ ~ ~ 100
-execute if entity @s[tag=sea_purchase_pass,scores={rng1=1..4}] run give @s potato
-execute if entity @s[tag=sea_purchase_pass,scores={rng1=5..8}] run give @s carrot
-execute if entity @s[tag=sea_purchase_pass,scores={rng1=9..12}] run give @s apple
-execute if entity @s[tag=sea_purchase_pass,scores={rng1=13..17}] run give @s bread
-execute if entity @s[tag=sea_purchase_pass,scores={rng1=18..19}] run give @s rotten_flesh
-execute if entity @s[tag=sea_purchase_pass,scores={rng1=20}] run give @s golden_carrot
+execute if entity @s[tag=sea_purchase_pass] run function skyblock:sea/shop_purchase_food
 execute if entity @s[tag=sea_purchase_pass] run clear @s emerald 1
+tag @s remove sea_purchase_pass
+execute if score @s sea_crafter matches 10027 as @s[scores={sea_i_emerald=..4}] run tellraw @s {"text":"失败！余额不足！","color":"red"}
+execute if score @s sea_crafter matches 10027 as @s[scores={sea_i_emerald=5..}] run tag @s add sea_purchase_pass
+execute if entity @s[tag=sea_purchase_pass] run playsound minecraft:item.armor.equip_iron neutral @s ~ ~ ~ 100
+execute if entity @s[tag=sea_purchase_pass] run function skyblock:sea/shop_purchase_food
+execute if entity @s[tag=sea_purchase_pass] run function skyblock:sea/shop_purchase_food
+execute if entity @s[tag=sea_purchase_pass] run function skyblock:sea/shop_purchase_food
+execute if entity @s[tag=sea_purchase_pass] run function skyblock:sea/shop_purchase_food
+execute if entity @s[tag=sea_purchase_pass] run function skyblock:sea/shop_purchase_food
+execute if entity @s[tag=sea_purchase_pass] run clear @s emerald 5
 tag @s remove sea_purchase_pass
 
 execute if score @s sea_crafter matches 10013 as @s[scores={sea_i_echo_shard=..4}] run tellraw @s {"text":"失败！素材不足！","color":"red"}

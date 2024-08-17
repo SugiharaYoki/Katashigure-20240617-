@@ -189,8 +189,8 @@ setblock 90137 122 129 air
 fill 90143 123 130 90143 122 130 minecraft:deepslate_tiles
 setblock 90141 122 139 minecraft:air
 setblock 90142 122 143 chest[facing=east]
-item replace block 90142 122 143 container.12 with wild_armor_trim_smithing_template[custom_name='{"text":"狂荒石板","italic":true,"color":"light_purple","italic":false}']
-item replace block 90142 122 143 container.14 with wayfinder_armor_trim_smithing_template[custom_name='{"text":"醒殉徒石板","italic":true,"color":"light_purple","italic":false}']
+item replace block 90142 122 143 container.12 with wild_armor_trim_smithing_template[custom_name='{"text":"狂荒石板","bold":false,"italic":true,"color":"light_purple","italic":false}']
+item replace block 90142 122 143 container.14 with wayfinder_armor_trim_smithing_template[custom_name='{"text":"醒殉徒石板","bold":false,"italic":true,"color":"light_purple","italic":false}']
 setblock 90107 123 117 air
 setblock 90107 123 117 lever[powered=false,facing=west]
 
@@ -217,7 +217,7 @@ setblock 90103 122 109 minecraft:air
 setblock 90105 122 104 minecraft:potted_cherry_sapling
 setblock 90105 122 106 chest[facing=west]
 item replace block 90105 122 106 container.12 with arrow 3
-item replace block 90105 122 106 container.14 with raiser_armor_trim_smithing_template[custom_name='{"text":"牧羊人石板","italic":true,"color":"light_purple","italic":false}']
+item replace block 90105 122 106 container.14 with raiser_armor_trim_smithing_template[custom_name='{"text":"牧羊人石板","bold":false,"italic":true,"color":"light_purple","italic":false}']
 
 summon minecraft:item_frame 90091 128 133 {Invisible:1b,Fixed:0b,Invulnerable:0b,Facing:1b,Item:{id:"minecraft:bread"}}
 
@@ -233,8 +233,8 @@ fill 90086 122 105 90086 122 104 minecraft:air
 setblock 90096 122 117 air
 setblock 90096 122 117 chest[facing=north]{Lock:"扫除用具间钥匙"}
 item replace block 90096 122 117 container.11 with arrow 3
-item replace block 90096 122 117 container.13 with wayfinder_armor_trim_smithing_template[custom_name='{"text":"醒殉徒石板","italic":true,"color":"light_purple","italic":false}']
-item replace block 90096 122 117 container.15 with wild_armor_trim_smithing_template[custom_name='{"text":"狂荒石板","italic":true,"color":"light_purple","italic":false}']
+item replace block 90096 122 117 container.13 with wayfinder_armor_trim_smithing_template[custom_name='{"text":"醒殉徒石板","bold":false,"italic":true,"color":"light_purple","italic":false}']
+item replace block 90096 122 117 container.15 with wild_armor_trim_smithing_template[custom_name='{"text":"狂荒石板","bold":false,"italic":true,"color":"light_purple","italic":false}']
 fill 90078 124 116 90078 124 101 minecraft:waxed_copper_bulb[lit=true] replace minecraft:waxed_copper_bulb[lit=false]
 setblock 90089 123 138 air
 setblock 90089 123 138 lever[powered=false,facing=east]
@@ -259,7 +259,7 @@ fill 90085 111 137 90085 109 139 minecraft:waxed_copper_grate
 setblock 90078 110 111 minecraft:redstone_block
 setblock 90078 110 111 minecraft:air
 setblock 90074 110 132 chest[facing=north]
-item replace block 90074 110 132 container.13 with wild_armor_trim_smithing_template[custom_name='{"text":"狂荒石板","italic":true,"color":"light_purple","italic":false}'] 2
+item replace block 90074 110 132 container.13 with wild_armor_trim_smithing_template[custom_name='{"text":"狂荒石板","bold":false,"italic":true,"color":"light_purple","italic":false}'] 2
 fill 90076 121 109 90077 121 108 minecraft:waxed_copper_grate
 
 
