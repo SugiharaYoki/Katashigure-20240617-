@@ -65,7 +65,7 @@ execute if score stage Azr_system matches 19 run scoreboard players set stageSec
 #第八关 20
 execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 20 run function skyblock:azr/stage/stage8
 #第八关-BOSS2（EVENT3) 21-22
-execute if score stage Azr_system matches 21..22 run function skyblock:azr/stage/stage_event3
+#    execute if score stage Azr_system matches 21..22 run function skyblock:azr/stage/stage_event3
 #BOSS2 23-24
 
 #奖励关 Stage Cerement 30

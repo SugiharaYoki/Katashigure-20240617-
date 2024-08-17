@@ -1,4 +1,5 @@
 #《初始化队伍》
+team add HajimetanoMachi
 team add Team1_1
 team add Team1_2
 team add Team1_3

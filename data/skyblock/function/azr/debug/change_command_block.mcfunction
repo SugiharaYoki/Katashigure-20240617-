@@ -9,17 +9,6 @@ setblock -79935 39 4 minecraft:chain_command_block[facing=west]{Command:"scorebo
 setblock -79936 39 23 minecraft:command_block[facing=down]{Command:'title @a[tag=azrPlayer] actionbar {"color":"red","text":"Stage 2 - Wave 1"}'} destroy
 setblock -79936 38 23 minecraft:chain_command_block[facing=down]{Command:"scoreboard players set stage Azr_system 4",auto:1b} destroy
 
-tag @a remove xy_fp_player
-scoreboard objectives remove SeGa_StandLast
-scoreboard objectives remove SeGa_StandLastB
-scoreboard objectives remove SeGa_StandLastD
-scoreboard objectives remove SeGa_StandLastDD
-scoreboard objectives remove SeGa_StandLastP
-scoreboard objectives remove SeGa_StandLastS
-scoreboard objectives remove SeGa_StandLastQ
-scoreboard objectives remove SeGa_NumPartic
-scoreboard objectives remove SeGa_NumMob
-
 #tag azr_DeadAlready死亡玩家 -> azrDead
 #tag SeGa_StandLastA 花园玩家 -> azrPlayer
 #tag AzrCookie ？

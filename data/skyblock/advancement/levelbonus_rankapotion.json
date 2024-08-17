@@ -1,5 +1,4 @@
 {
-    "__comment": "Advancement Author is SugiharaYoki",
     "display": {
         "title": {
             "text": "这是饮料吗？",
@@ -26,8 +25,6 @@
                 "item": {
                     "items": "minecraft:potion",
                     "components": {"custom_data":{"rankaotion":1}},
-                    "WARNING": "改变了条件，需要改变对应物品来源的组件", 
-                    "nbt": "{CustomPotionEffects:[{Id:12,Amplifier:2,Duration:120},{Id:3,Amplifier:2,Duration:120},{Id:1,Amplifier:2,Duration:120},{Id:8,Amplifier:2,Duration:120}],display:{Name:\"{\\\"text\\\":\\\"兰花药水·旅行版\\\",\\\"color\\\":\\\"aqua\\\",\\\"italic\\\":\\\"false\\\"}\",Lore:[\"{\\\"text\\\":\\\"兰花之城的大魔法师专门研制的便捷药水。\\\",\\\"color\\\":\\\"dark_aqua\\\",\\\"italic\\\":\\\"false\\\"}\"]},CustomPotionColor:1216233}",
                     "count": {
                         "min": 1,
                         "max": 1

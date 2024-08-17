@@ -1,5 +1,4 @@
 {
-    "__comment": "Advancement Author is SugiharaYoki",
     "display": {
         "title": {
             "text": "市面上那种确实是饮料",
@@ -23,10 +22,8 @@
             "conditions": {
                 "item": {
                     "items": "minecraft:potion",
-                    "components":{"custom_data": {"rankaotion":1}},
-                    "WARNING": "改变了条件，需要改变对应物品来源的组件",
-                    "nbt": "{CustomPotionEffects:[{Id:3,Amplifier:2,Duration:600},{Id:1,Amplifier:2,Duration:600},{Id:8,Amplifier:2,Duration:600},{Id:7,Amplifier:1,Duration:0}],display:{Name:\"{\\\"text\\\":\\\"真·兰花药水\\\",\\\"color\\\":\\\"dark_green\\\",\\\"italic\\\":\\\"false\\\"}\",Lore:[\"{\\\"text\\\":\\\"提高奔跑、挖掘速度与跳跃高度，但同时受到巨大的可致死伤害。\\\",\\\"color\\\":\\\"dark_aqua\\\",\\\"italic\\\":\\\"false\\\"}\"]},CustomPotionColor:1197674}",
-           "count": {
+                    "components":{"custom_data": {"true_rankaotion":1}},
+                    "count": {
                         "min": 1,
                         "max": 1
                     }

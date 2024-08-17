@@ -11,7 +11,7 @@ execute as @s at @s[scores={CkWr_EquiA=..0,Perm_PersonFSB=500..},tag=CkEA1Info] 
 execute as @s at @s[scores={CkWr_EquiA=..0,Perm_PersonFSB=500..},tag=CkEA1Info] run tag @s add CkEA1Al
 execute as @s at @s[tag=CkEA1Al] run tag @s remove CkEA1Info
 execute as @s at @s[tag=CkEA1Al] run scoreboard players remove @s Perm_PersonFSB 500
-execute as @s at @s[tag=CkEA1Al] run tellraw @s  [{"text":"如今持有FSB： ","color":"gold"},{"score":{"name":"@s","objective":"Perm_PersonFSB"}}]
+execute as @s at @s[tag=CkEA1Al] run tellraw @s [{"text":"如今持有FSB： ","color":"gold"},{"score":{"name":"@s","objective":"Perm_PersonFSB"}}]
 execute as @s at @s[tag=CkEA1Al] run scoreboard players set @s CkWr_EquiA 1
 execute as @s at @s[scores={CkWr_EquiA=1}] run tag @s remove CkEA1Al
 execute as @s at @s[scores={CkWr_EquiA=..0,Perm_PersonFSB=..499},tag=CkEA1Info] run tellraw @s {"text":"购买失败！余额不足500浮世币！","color":"red"}

@@ -1,4 +1,6 @@
 scoreboard objectives add Azr_system dummy
+#skills
+scoreboard objectives add Azr_SK10 dummy
 scoreboard players set DEBUG_maxStageLimit Azr_system 21
 #scoreboard players set DEBUG_fakePlayer Azr_system 10
 execute as @r[tag=azrPlayer] if score stage Azr_system = DEBUG_maxStageLimit Azr_system run tellraw @a[tag=azrPlayer] [{"text":"You have passed maximum stage(limited in debug mode) ","color": "red"},{"score":{"objective": "Azr_system","name": "stage"},"color":"light_purple"},{"text":"/","color":"light_purple"},{"score":{"objective": "Azr_system","name": "DEBUG_maxStageLimit"},"color":"light_purple"}]

@@ -105,7 +105,7 @@ execute if score @n[tag=sc] SSgspT matches 3 as @a[tag=!NoSkyWar] at @s run scor
 execute if score @n[tag=sc] SSgspT matches 3 as @a[tag=!NoSkyWar] at @s run scoreboard players set @s If_GoldApple 0
 execute if score @n[tag=sc] SSgspT matches 3 as @a[tag=!NoSkyWar] at @s run scoreboard players set @s If_OpenShulker 0
 execute if score @n[tag=sc] SSgspT matches 3 as @a[tag=!NoSkyWar] at @s run scoreboard players set @s If_Run10000cm 0
-execute if score @n[tag=sc] SSgspT matches 3 as @a[tag=!NoSkyWar] at @s run scoreboard players set @s If_Bred 0
+execute if score @n[tag=sc] SSgspT matches 3 as @a[tag=!NoSkyWar] at @s run scoreboard players set @s If_Bread 0
 execute if score @n[tag=sc] SSgspT matches 3 as @a[tag=!NoSkyWar] at @s run scoreboard players set @s If_Dead 0
 execute if score @n[tag=sc] SSgspT matches 3 as @a[tag=!NoSkyWar] at @s run scoreboard players set @s If_RotFle 0
 execute if score @n[tag=sc] SSgspT matches 3 as @a[tag=!NoSkyWar] at @s run scoreboard players set @s If_MelonS 0

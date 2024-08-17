@@ -8,7 +8,7 @@ execute as @s at @s[tag=!CkWrSpStB4,scores={Perm_PersonFSB=800..},tag=CkWrSpStB4
 execute as @s at @s[tag=!CkWrSpStB4,scores={Perm_PersonFSB=800..},tag=CkWrSpStB4Info] run tag @s add CkWrSpStB4Al
 execute as @s at @s[tag=CkWrSpStB4Al] run tag @s remove CkWrSpStB4Info
 execute as @s at @s[tag=CkWrSpStB4Al] run scoreboard players remove @s Perm_PersonFSB 800
-execute as @s at @s[tag=CkWrSpStB4Al] run tellraw @s  [{"text":"如今持有FSB： ","color":"gold"},{"score":{"name":"@s","objective":"Perm_PersonFSB"}}]
+execute as @s at @s[tag=CkWrSpStB4Al] run tellraw @s [{"text":"如今持有FSB： ","color":"gold"},{"score":{"name":"@s","objective":"Perm_PersonFSB"}}]
 execute as @s at @s[tag=CkWrSpStB4Al] run scoreboard players set @s CkWr_SpawnBase 4
 execute as @s at @s[tag=CkWrSpStB4Al] run tag @s add CkWrSpStB4
 execute as @s at @s[tag=CkWrSpStB4] run tag @s remove CkWrSpStB4Al

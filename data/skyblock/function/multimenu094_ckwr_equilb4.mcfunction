@@ -11,7 +11,7 @@ execute as @s at @s[scores={CkWr_EquiB=..3,Perm_PersonCCT=10..},tag=CkEB4Info] r
 execute as @s at @s[scores={CkWr_EquiB=..3,Perm_PersonCCT=10..},tag=CkEB4Info] run tag @s add CkEB4Al
 execute as @s at @s[tag=CkEB4Al] run tag @s remove CkEB4Info
 execute as @s at @s[tag=CkEB4Al] run scoreboard players remove @s Perm_PersonCCT 10
-execute as @s at @s[tag=CkEB4Al] run tellraw @s  [{"text":"如今持有CCT： ","color":"gold"},{"score":{"name":"@s","objective":"Perm_PersonCCT"}}]
+execute as @s at @s[tag=CkEB4Al] run tellraw @s [{"text":"如今持有CCT： ","color":"gold"},{"score":{"name":"@s","objective":"Perm_PersonCCT"}}]
 execute as @s at @s[tag=CkEB4Al] run scoreboard players set @s CkWr_EquiB 4
 execute as @s at @s[scores={CkWr_EquiB=4}] run tag @s remove CkEB4Al
 execute as @s at @s[scores={CkWr_EquiB=..3,Perm_PersonCCT=..9},tag=CkEB4Info] run tellraw @s {"text":"购买失败！余额不足10方解石！","color":"red"}

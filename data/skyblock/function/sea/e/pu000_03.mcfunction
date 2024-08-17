@@ -8,7 +8,7 @@ execute positioned 90116 122 107 run playsound minecraft:ambient.crimson_forest.
 execute positioned 90116 122 107 run playsound minecraft:ambient.crimson_forest.additions master @a[tag=SEAPT,distance=0..10,tag=!seaPerm000] 90116 122 107 10 0.8
 execute positioned 90116 122 107 run playsound minecraft:ambient.crimson_forest.additions master @a[tag=SEAPT,distance=0..10,tag=!seaPerm000] 90116 122 107 10 0.8
 execute positioned 90116 122 107 run playsound minecraft:ambient.crimson_forest.additions master @a[tag=SEAPT,distance=0..10,tag=!seaPerm000] 90116 122 107 10 0.8
-execute positioned 90116 122 107 at @a[tag=SEAPT,distance=0..10,tag=!seaPerm000] positioned ~ ~0.5 ~ run function skyblock:azr/azrielsmidgarden_effect_player_magic_release
+execute positioned 90116 122 107 at @a[tag=SEAPT,distance=0..10,tag=!seaPerm000] positioned ~ ~0.5 ~ run function skyblock:azr/effects/player_magic_release
 execute positioned 90116 122 107 run tellraw @a[tag=SEAPT,distance=0..10,tag=!seaPerm000] [{"text":"已解锁『塞壬的指引』","color":"aqua","bold": true}]
 execute positioned 90116 122 107 run tellraw @a[tag=SEAPT,distance=0..10,tag=!seaPerm000] [{"text":"现在可以于多功能工作站使用石板进行锻造，","color":"white"}]
 execute positioned 90116 122 107 run tellraw @a[tag=SEAPT,distance=0..10,tag=!seaPerm000] [{"text":"利用潜藏其中的神秘力量增强自己的战斗能力。","color":"white"}]

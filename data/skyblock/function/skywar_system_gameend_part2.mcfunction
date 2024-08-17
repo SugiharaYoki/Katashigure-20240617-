@@ -21,7 +21,7 @@ xp set @a[tag=PVPing] 0
 execute as @a[tag=PVPing] at @s run function skyblock:skywar_system_levelbonus
 scoreboard players set @a Temp4 0
 gamemode adventure @a[gamemode=!creative]
-scoreboard objectives remove PersonTimeRemain
+#scoreboard objectives remove PersonTimeRemain
 #scoreboard objectives add PersonTimeRemain dummy "精神值系统 空闲"
 scoreboard players reset @a TimeRemainUnsee
 scoreboard players reset @a DeathCount

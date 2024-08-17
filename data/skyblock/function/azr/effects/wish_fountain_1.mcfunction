@@ -1,103 +1,102 @@
-#等待修复
 kill @e[x=-79908,y=37.5,z=123,distance=0..1.48,type=item,nbt={Item:{id:"minecraft:emerald_block"}},limit=1]
-function skyblock:tool_rng
-execute if entity @e[tag=sc,limit=1,scores={rng3=1,rng4=1..2,rng9=1}] run summon item -79908 40 126 {Item:{id:"emerald",count:6b}}
-execute if entity @e[tag=sc,limit=1,scores={rng3=1,rng4=1..2,rng9=2}] run summon item -79908 40 126 {Item:{id:"emerald",count:9b}}
-execute if entity @e[tag=sc,limit=1,scores={rng3=1,rng4=1..2,rng9=3}] run summon item -79908 40 126 {Item:{id:"emerald",count:3b}}
-execute if entity @e[tag=sc,limit=1,scores={rng3=1,rng4=1..2,rng9=4}] run summon item -79908 40 126 {Item:{id:"porkchop",count:1b}}
-execute if entity @e[tag=sc,limit=1,scores={rng3=1,rng4=1..2,rng9=5}] run summon item -79908 40 126 {Item:{id:"arrow",count:1b}}
-execute if entity @e[tag=sc,limit=1,scores={rng3=2,rng4=1..2,rng9=1}] run summon item -79908 40 126 {Item:{id:"arrow",count:1b}}
-execute if entity @e[tag=sc,limit=1,scores={rng3=2,rng4=1..2,rng9=2}] run summon item -79908 40 126 {Item:{id:"arrow",count:1b}}
-execute if entity @e[tag=sc,limit=1,scores={rng3=2,rng4=1..2,rng9=3}] run summon item -79908 40 126 {Item:{id:"porkchop",count:1b}}
-execute if entity @e[tag=sc,limit=1,scores={rng3=2,rng4=1..2,rng9=4}] run summon item -79908 40 126 {Item:{id:"flint",count:1b}}
-execute if entity @e[tag=sc,limit=1,scores={rng3=2,rng4=1..2,rng9=5}] run summon item -79908 40 126 {Item:{id:"emerald",count:3b}}
-execute if entity @e[tag=sc,limit=1,scores={rng3=3,rng4=1..2,rng9=1}] run summon item -79908 40 126 {Item:{id:"flint",count:1b}}
-execute if entity @e[tag=sc,limit=1,scores={rng3=3,rng4=1..2,rng9=2}] run summon item -79908 40 126 {Item:{id:"string",count:1b}}
-execute if entity @e[tag=sc,limit=1,scores={rng3=3,rng4=1..2,rng9=3}] run summon item -79908 40 126 {Item:{id:"rotten_flesh",count:1b}}
-execute if entity @e[tag=sc,limit=1,scores={rng3=3,rng4=1..2,rng9=4}] run summon item -79908 40 126 {Item:{id:"rotten_flesh",count:1b}}
-execute if entity @e[tag=sc,limit=1,scores={rng3=3,rng4=1..2,rng9=5}] run summon item -79908 40 126 {Item:{id:"string",count:1b}}
+function skyblock:azr/tool_rng
+execute if score #rng3 Azr_system matches 1 if score #rng4 Azr_system matches 1..2 if score #rng9 Azr_system matches 1 run summon item -79908 40 126 {Item:{id:"emerald",count:6b}}
+execute if score #rng3 Azr_system matches 1 if score #rng4 Azr_system matches 1..2 if score #rng9 Azr_system matches 2 run summon item -79908 40 126 {Item:{id:"emerald",count:9b}}
+execute if score #rng3 Azr_system matches 1 if score #rng4 Azr_system matches 1..2 if score #rng9 Azr_system matches 3 run summon item -79908 40 126 {Item:{id:"emerald",count:3b}}
+execute if score #rng3 Azr_system matches 1 if score #rng4 Azr_system matches 1..2 if score #rng9 Azr_system matches 4 run summon item -79908 40 126 {Item:{id:"porkchop",count:1b}}
+execute if score #rng3 Azr_system matches 1 if score #rng4 Azr_system matches 1..2 if score #rng9 Azr_system matches 5 run summon item -79908 40 126 {Item:{id:"arrow",count:1b}}
+execute if score #rng3 Azr_system matches 2 if score #rng4 Azr_system matches 1..2 if score #rng9 Azr_system matches 1 run summon item -79908 40 126 {Item:{id:"arrow",count:1b}}
+execute if score #rng3 Azr_system matches 2 if score #rng4 Azr_system matches 1..2 if score #rng9 Azr_system matches 2 run summon item -79908 40 126 {Item:{id:"arrow",count:1b}}
+execute if score #rng3 Azr_system matches 2 if score #rng4 Azr_system matches 1..2 if score #rng9 Azr_system matches 3 run summon item -79908 40 126 {Item:{id:"porkchop",count:1b}}
+execute if score #rng3 Azr_system matches 2 if score #rng4 Azr_system matches 1..2 if score #rng9 Azr_system matches 4 run summon item -79908 40 126 {Item:{id:"flint",count:1b}}
+execute if score #rng3 Azr_system matches 2 if score #rng4 Azr_system matches 1..2 if score #rng9 Azr_system matches 5 run summon item -79908 40 126 {Item:{id:"emerald",count:3b}}
+execute if score #rng3 Azr_system matches 3 if score #rng4 Azr_system matches 1..2 if score #rng9 Azr_system matches 1 run summon item -79908 40 126 {Item:{id:"flint",count:1b}}
+execute if score #rng3 Azr_system matches 3 if score #rng4 Azr_system matches 1..2 if score #rng9 Azr_system matches 2 run summon item -79908 40 126 {Item:{id:"string",count:1b}}
+execute if score #rng3 Azr_system matches 3 if score #rng4 Azr_system matches 1..2 if score #rng9 Azr_system matches 3 run summon item -79908 40 126 {Item:{id:"rotten_flesh",count:1b}}
+execute if score #rng3 Azr_system matches 3 if score #rng4 Azr_system matches 1..2 if score #rng9 Azr_system matches 4 run summon item -79908 40 126 {Item:{id:"rotten_flesh",count:1b}}
+execute if score #rng3 Azr_system matches 3 if score #rng4 Azr_system matches 1..2 if score #rng9 Azr_system matches 5 run summon item -79908 40 126 {Item:{id:"string",count:1b}}
 #
-execute if entity @e[tag=sc,limit=1,scores={rng3=1,rng4=1..2,rng9=6}] run summon item -79908 40 126 {Item:{id:"charcoal",count:1b}}
-execute if entity @e[tag=sc,limit=1,scores={rng3=2,rng4=1..2,rng9=6}] run summon item -79908 40 126 {Item:{id:"honeycomb",count:1b}}
-execute if entity @e[tag=sc,limit=1,scores={rng3=3,rng4=1..2,rng9=6}] run summon item -79908 40 126 {Item:{id:"minecraft:paper",tag:{display:{Name:"{\"text\":\"圣殿信条\",\"italic\":false,\"color\":\"blue\"}"}},count:1b}}
+execute if score #rng3 Azr_system matches 1 if score #rng4 Azr_system matches 1..2 if score #rng9 Azr_system matches 6 run summon item -79908 40 126 {Item:{id:"charcoal",count:1b}}
+execute if score #rng3 Azr_system matches 2 if score #rng4 Azr_system matches 1..2 if score #rng9 Azr_system matches 6 run summon item -79908 40 126 {Item:{id:"honeycomb",count:1b}}
+execute if score #rng3 Azr_system matches 3 if score #rng4 Azr_system matches 1..2 if score #rng9 Azr_system matches 6 run summon item -79908 40 126 {Item:{id:"minecraft:paper",count:1b,components:{custom_name:'{"text":"圣殿信条","italic":false,"color":"blue"}'}}}
 #
-execute if entity @e[tag=sc,limit=1,scores={rng3=1,rng4=1..2,rng9=7}] run summon item -79908 40 126 {Item:{id:"charcoal",count:1b}}
-execute if entity @e[tag=sc,limit=1,scores={rng3=2,rng4=1..2,rng9=7}] run summon item -79908 40 126 {Item:{id:"minecraft:raw_iron",tag:{display:{Name:"{\"text\":\"钝铁\",\"italic\":false,\"color\":\"white\"}"}},count:1b}}
-execute if entity @e[tag=sc,limit=1,scores={rng3=3,rng4=1..2,rng9=7}] run summon item -79908 40 126 {Item:{id:"leather",count:1b}}
+execute if score #rng3 Azr_system matches 1 if score #rng4 Azr_system matches 1..2 if score #rng9 Azr_system matches 7 run summon item -79908 40 126 {Item:{id:"charcoal",count:1b}}
+execute if score #rng3 Azr_system matches 2 if score #rng4 Azr_system matches 1..2 if score #rng9 Azr_system matches 7 run summon item -79908 40 126 {Item:{id:"minecraft:raw_iron",count:1b,components:{custom_name:'{"text":"钝铁","italic":false,"color":"white"}'}}}
+execute if score #rng3 Azr_system matches 3 if score #rng4 Azr_system matches 1..2 if score #rng9 Azr_system matches 7 run summon item -79908 40 126 {Item:{id:"leather",count:1b}}
 #
-execute if entity @e[tag=sc,limit=1,scores={rng3=1,rng4=1..2,rng9=8}] run summon item -79908 40 126 {Item:{id:"slime_ball",count:1b}}
-execute if entity @e[tag=sc,limit=1,scores={rng3=2,rng4=1..2,rng9=8}] run summon item -79908 40 126 {Item:{id:"carrot",count:1b}}
-execute if entity @e[tag=sc,limit=1,scores={rng3=3,rng4=1..2,rng9=8}] run summon item -79908 40 126 {Item:{id:"minecraft:iron_nugget",tag:{display:{Name:"{\"text\":\"盾牌碎片\",\"italic\":false,\"color\":\"white\"}"}},count:1b}}
+execute if score #rng3 Azr_system matches 1 if score #rng4 Azr_system matches 1..2 if score #rng9 Azr_system matches 8 run summon item -79908 40 126 {Item:{id:"slime_ball",count:1b}}
+execute if score #rng3 Azr_system matches 2 if score #rng4 Azr_system matches 1..2 if score #rng9 Azr_system matches 8 run summon item -79908 40 126 {Item:{id:"carrot",count:1b}}
+execute if score #rng3 Azr_system matches 3 if score #rng4 Azr_system matches 1..2 if score #rng9 Azr_system matches 8 run summon item -79908 40 126 {Item:{id:"minecraft:iron_nugget",count:1b,components:{custom_name:'{"text":"盾牌碎片","italic":false,"color":"white"}'}}}
 #/
-execute if entity @e[tag=sc,limit=1,scores={rng3=1,rng4=4,rng9=1..8,rng13=4..6}] run summon item -79908 40 126 {Item:{id:"minecraft:ghast_tear",tag:{display:{Name:"{\"text\":\"光明精华\",\"italic\":false,\"color\":\"blue\"}"}},count:1b}}
-execute if entity @e[tag=sc,limit=1,scores={rng3=2,rng4=4,rng9=1..8,rng13=4..6}] run summon item -79908 40 126 {Item:{id:"shield",count:1b,tag:{display:{Name:"{\"text\":\"刺盾·遂望\",\"italic\":false,\"color\":\"dark_red\"}"},AttributeModifiers:[{AttributeName:"generic.attack_damage",Amount:7.0,Operation:0,UUID:[I;84300,135,20991,27],Slot:"mainhand"},{AttributeName:"generic.attack_speed",Amount:-2.8,Operation:0,UUID:[I;84300,135,20991,28],Slot:"mainhand"},{AttributeName:"generic.movement_speed",Amount:0.015,Operation:0,UUID:[I;84300,135,20991,2802],Slot:"mainhand"}],Unbreakable:1b}}}
-execute if entity @e[tag=sc,limit=1,scores={rng3=3,rng4=4,rng9=1..8,rng13=4..6}] run summon item -79908 40 126 {Item:{id:"crossbow",count:1b,tag:{display:{Name:"{\"text\":\"刃弩·迅穿\",\"italic\":false,\"color\":\"dark_red\"}"},Enchantments:[{id:quick_charge,lvl:1},{id:piercing,lvl:1}],AttributeModifiers:[{AttributeName:"generic.attack_damage",Amount:3.5,Operation:0,UUID:[I;84300,135,20992,27],Slot:"mainhand"},{AttributeName:"generic.attack_speed",Amount:-2.3,Operation:0,UUID:[I;84300,135,20992,28],Slot:"mainhand"}],Unbreakable:1b}}}
-execute if predicate skyblock:raining if entity @e[tag=sc,limit=1,scores={rng3=1,rng4=4,rng9=1..8,rng13=7..8}] run summon item -79908 40 126 {Item:{id:"minecraft:ghast_tear",tag:{display:{Name:"{\"text\":\"光明精华\",\"italic\":false,\"color\":\"blue\"}"}},count:1b}}
-execute if predicate skyblock:raining if entity @e[tag=sc,limit=1,scores={rng3=2,rng4=4,rng9=1..8,rng13=7..8}] run summon item -79908 40 126 {Item:{id:"shield",count:1b,tag:{display:{Name:"{\"text\":\"刺盾·遂望\",\"italic\":false,\"color\":\"dark_red\"}"},AttributeModifiers:[{AttributeName:"generic.attack_damage",Amount:7.0,Operation:0,UUID:[I;84300,135,20991,27],Slot:"mainhand"},{AttributeName:"generic.attack_speed",Amount:-2.8,Operation:0,UUID:[I;84300,135,20991,28],Slot:"mainhand"},{AttributeName:"generic.movement_speed",Amount:0.015,Operation:0,UUID:[I;84300,135,20991,2802],Slot:"mainhand"}],Unbreakable:1b}}}
-execute if predicate skyblock:raining if entity @e[tag=sc,limit=1,scores={rng3=3,rng4=4,rng9=1..8,rng13=7..8}] run summon item -79908 40 126 {Item:{id:"crossbow",count:1b,tag:{display:{Name:"{\"text\":\"刃弩·迅穿\",\"italic\":false,\"color\":\"dark_red\"}"},Enchantments:[{id:quick_charge,lvl:1},{id:piercing,lvl:1}],AttributeModifiers:[{AttributeName:"generic.attack_damage",Amount:3.5,Operation:0,UUID:[I;84300,135,20992,27],Slot:"mainhand"},{AttributeName:"generic.attack_speed",Amount:-2.3,Operation:0,UUID:[I;84300,135,20992,28],Slot:"mainhand"}],Unbreakable:1b}}}
+execute if score #rng3 Azr_system matches 1 if score #rng4 Azr_system matches 4 if score #rng9 Azr_system matches 1..8 if score #rng13 Azr_system matches 4..6 run summon item -79908 40 126 {Item:{id:"minecraft:ghast_tear",count:1b,components:{custom_name:'{"text":"光明精华","italic":false,"color":"blue"}'}}}
+execute if score #rng3 Azr_system matches 2 if score #rng4 Azr_system matches 4 if score #rng9 Azr_system matches 1..8 if score #rng13 Azr_system matches 4..6 run summon item -79908 40 126 {Item:{id:"shield",count:1b,components:{custom_name:'{"text":"刺盾·遂望","italic":false,"color":"dark_red"}',attribute_modifiers:[{type:"generic.attack_damage",amount:7.0d,operation:"add_value",id:"i_84300_135_20991_27",slot:"mainhand"},{type:"generic.attack_speed",amount:-2.8d,operation:"add_value",id:"i_84300_135_20991_28",slot:"mainhand"},{type:"generic.movement_speed",amount:0.015d,operation:"add_value",id:"i_84300_135_20991_2802",slot:"mainhand"}],unbreakable:{}}}}
+execute if score #rng3 Azr_system matches 3 if score #rng4 Azr_system matches 4 if score #rng9 Azr_system matches 1..8 if score #rng13 Azr_system matches 4..6 run summon item -79908 40 126 {Item:{id:"crossbow",count:1b,components:{custom_name:'{"text":"刃弩·迅穿","italic":false,"color":"dark_red"}',enchantments:{quick_charge:1,piercing:1},attribute_modifiers:[{type:"generic.attack_damage",amount:3.5d,operation:"add_value",id:"i_84300_135_20992_27",slot:"mainhand"},{type:"generic.attack_speed",amount:-2.3d,operation:"add_value",id:"i_84300_135_20992_28",slot:"mainhand"}],unbreakable:{}}}}
+execute if predicate skyblock:raining if score #rng3 Azr_system matches 1 if score #rng4 Azr_system matches 4 if score #rng9 Azr_system matches 1..8 if score #rng13 Azr_system matches 7..8 run summon item -79908 40 126 {Item:{id:"minecraft:ghast_tear",count:1b,components:{custom_name:'{"text":"光明精华","italic":false,"color":"blue"}'}}}
+execute if predicate skyblock:raining if score #rng3 Azr_system matches 2 if score #rng4 Azr_system matches 4 if score #rng9 Azr_system matches 1..8 if score #rng13 Azr_system matches 7..8 run summon item -79908 40 126 {Item:{id:"shield",count:1b,components:{custom_name:'{"text":"刺盾·遂望","italic":false,"color":"dark_red"}',attribute_modifiers:[{type:"generic.attack_damage",amount:7.0d,operation:"add_value",id:"i_84300_135_20991_27",slot:"mainhand"},{type:"generic.attack_speed",amount:-2.8d,operation:"add_value",id:"i_84300_135_20991_28",slot:"mainhand"},{type:"generic.movement_speed",amount:0.015d,operation:"add_value",id:"i_84300_135_20991_2802",slot:"mainhand"}],unbreakable:{}}}}
+execute if predicate skyblock:raining if score #rng3 Azr_system matches 3 if score #rng4 Azr_system matches 4 if score #rng9 Azr_system matches 1..8 if score #rng13 Azr_system matches 7..8 run summon item -79908 40 126 {Item:{id:"crossbow",count:1b,components:{custom_name:'{"text":"刃弩·迅穿","italic":false,"color":"dark_red"}',enchantments:{quick_charge:1,piercing:1},attribute_modifiers:[{type:"generic.attack_damage",amount:3.5d,operation:"add_value",id:"i_84300_135_20992_27",slot:"mainhand"},{type:"generic.attack_speed",amount:-2.3d,operation:"add_value",id:"i_84300_135_20992_28",slot:"mainhand"}],unbreakable:{}}}}
 
-function skyblock:tool_rng
-execute if entity @e[tag=sc,limit=1,scores={rng3=1,rng4=1..3,rng9=1}] run summon item -79908 40 126 {Item:{id:"emerald",count:6b}}
-execute if entity @e[tag=sc,limit=1,scores={rng3=1,rng4=1..3,rng9=2}] run summon item -79908 40 126 {Item:{id:"emerald",count:9b}}
-execute if entity @e[tag=sc,limit=1,scores={rng3=1,rng4=1..3,rng9=3}] run summon item -79908 40 126 {Item:{id:"emerald",count:3b}}
-execute if entity @e[tag=sc,limit=1,scores={rng3=1,rng4=1..3,rng9=4}] run summon item -79908 40 126 {Item:{id:"porkchop",count:1b}}
-execute if entity @e[tag=sc,limit=1,scores={rng3=1,rng4=1..3,rng9=5}] run summon item -79908 40 126 {Item:{id:"arrow",count:1b}}
-execute if entity @e[tag=sc,limit=1,scores={rng3=2,rng4=1..3,rng9=1}] run summon item -79908 40 126 {Item:{id:"arrow",count:1b}}
-execute if entity @e[tag=sc,limit=1,scores={rng3=2,rng4=1..3,rng9=2}] run summon item -79908 40 126 {Item:{id:"arrow",count:1b}}
-execute if entity @e[tag=sc,limit=1,scores={rng3=2,rng4=1..3,rng9=3}] run summon item -79908 40 126 {Item:{id:"porkchop",count:1b}}
-execute if entity @e[tag=sc,limit=1,scores={rng3=2,rng4=1..3,rng9=4}] run summon item -79908 40 126 {Item:{id:"flint",count:1b}}
-execute if entity @e[tag=sc,limit=1,scores={rng3=2,rng4=1..3,rng9=5}] run summon item -79908 40 126 {Item:{id:"emerald",count:3b}}
-execute if entity @e[tag=sc,limit=1,scores={rng3=3,rng4=1..3,rng9=1}] run summon item -79908 40 126 {Item:{id:"flint",count:1b}}
-execute if entity @e[tag=sc,limit=1,scores={rng3=3,rng4=1..3,rng9=2}] run summon item -79908 40 126 {Item:{id:"string",count:1b}}
-execute if entity @e[tag=sc,limit=1,scores={rng3=3,rng4=1..3,rng9=3}] run summon item -79908 40 126 {Item:{id:"rotten_flesh",count:1b}}
-execute if entity @e[tag=sc,limit=1,scores={rng3=3,rng4=1..3,rng9=4}] run summon item -79908 40 126 {Item:{id:"rotten_flesh",count:1b}}
-execute if entity @e[tag=sc,limit=1,scores={rng3=3,rng4=1..3,rng9=5}] run summon item -79908 40 126 {Item:{id:"string",count:1b}}
+function skyblock:azr/tool_rng
+execute if score #rng3 Azr_system matches 1 if score #rng4 Azr_system matches 1..3 if score #rng9 Azr_system matches 1 run summon item -79908 40 126 {Item:{id:"emerald",count:6b}}
+execute if score #rng3 Azr_system matches 1 if score #rng4 Azr_system matches 1..3 if score #rng9 Azr_system matches 2 run summon item -79908 40 126 {Item:{id:"emerald",count:9b}}
+execute if score #rng3 Azr_system matches 1 if score #rng4 Azr_system matches 1..3 if score #rng9 Azr_system matches 3 run summon item -79908 40 126 {Item:{id:"emerald",count:3b}}
+execute if score #rng3 Azr_system matches 1 if score #rng4 Azr_system matches 1..3 if score #rng9 Azr_system matches 4 run summon item -79908 40 126 {Item:{id:"porkchop",count:1b}}
+execute if score #rng3 Azr_system matches 1 if score #rng4 Azr_system matches 1..3 if score #rng9 Azr_system matches 5 run summon item -79908 40 126 {Item:{id:"arrow",count:1b}}
+execute if score #rng3 Azr_system matches 2 if score #rng4 Azr_system matches 1..3 if score #rng9 Azr_system matches 1 run summon item -79908 40 126 {Item:{id:"arrow",count:1b}}
+execute if score #rng3 Azr_system matches 2 if score #rng4 Azr_system matches 1..3 if score #rng9 Azr_system matches 2 run summon item -79908 40 126 {Item:{id:"arrow",count:1b}}
+execute if score #rng3 Azr_system matches 2 if score #rng4 Azr_system matches 1..3 if score #rng9 Azr_system matches 3 run summon item -79908 40 126 {Item:{id:"porkchop",count:1b}}
+execute if score #rng3 Azr_system matches 2 if score #rng4 Azr_system matches 1..3 if score #rng9 Azr_system matches 4 run summon item -79908 40 126 {Item:{id:"flint",count:1b}}
+execute if score #rng3 Azr_system matches 2 if score #rng4 Azr_system matches 1..3 if score #rng9 Azr_system matches 5 run summon item -79908 40 126 {Item:{id:"emerald",count:3b}}
+execute if score #rng3 Azr_system matches 3 if score #rng4 Azr_system matches 1..3 if score #rng9 Azr_system matches 1 run summon item -79908 40 126 {Item:{id:"flint",count:1b}}
+execute if score #rng3 Azr_system matches 3 if score #rng4 Azr_system matches 1..3 if score #rng9 Azr_system matches 2 run summon item -79908 40 126 {Item:{id:"string",count:1b}}
+execute if score #rng3 Azr_system matches 3 if score #rng4 Azr_system matches 1..3 if score #rng9 Azr_system matches 3 run summon item -79908 40 126 {Item:{id:"rotten_flesh",count:1b}}
+execute if score #rng3 Azr_system matches 3 if score #rng4 Azr_system matches 1..3 if score #rng9 Azr_system matches 4 run summon item -79908 40 126 {Item:{id:"rotten_flesh",count:1b}}
+execute if score #rng3 Azr_system matches 3 if score #rng4 Azr_system matches 1..3 if score #rng9 Azr_system matches 5 run summon item -79908 40 126 {Item:{id:"string",count:1b}}
 #
-execute if entity @e[tag=sc,limit=1,scores={rng3=1,rng4=1..3,rng9=6}] run summon item -79908 40 126 {Item:{id:"charcoal",count:1b}}
-execute if entity @e[tag=sc,limit=1,scores={rng3=2,rng4=1..3,rng9=6}] run summon item -79908 40 126 {Item:{id:"honeycomb",count:1b}}
-execute if entity @e[tag=sc,limit=1,scores={rng3=3,rng4=1..3,rng9=6}] run summon item -79908 40 126 {Item:{id:"minecraft:paper",tag:{display:{Name:"{\"text\":\"圣殿信条\",\"italic\":false,\"color\":\"blue\"}"}},count:1b}}
+execute if score #rng3 Azr_system matches 1 if score #rng4 Azr_system matches 1..3 if score #rng9 Azr_system matches 6 run summon item -79908 40 126 {Item:{id:"charcoal",count:1b}}
+execute if score #rng3 Azr_system matches 2 if score #rng4 Azr_system matches 1..3 if score #rng9 Azr_system matches 6 run summon item -79908 40 126 {Item:{id:"honeycomb",count:1b}}
+execute if score #rng3 Azr_system matches 3 if score #rng4 Azr_system matches 1..3 if score #rng9 Azr_system matches 6 run summon item -79908 40 126 {Item:{id:"minecraft:paper",count:1b,components:{custom_name:'{"text":"圣殿信条","italic":false,"color":"blue"}'}}}
 #
-execute if entity @e[tag=sc,limit=1,scores={rng3=1,rng4=1..3,rng9=7}] run summon item -79908 40 126 {Item:{id:"charcoal",count:1b}}
-execute if entity @e[tag=sc,limit=1,scores={rng3=2,rng4=1..3,rng9=7}] run summon item -79908 40 126 {Item:{id:"minecraft:raw_iron",tag:{display:{Name:"{\"text\":\"钝铁\",\"italic\":false,\"color\":\"white\"}"}},count:1b}}
-execute if entity @e[tag=sc,limit=1,scores={rng3=3,rng4=1..3,rng9=7}] run summon item -79908 40 126 {Item:{id:"leather",count:1b}}
+execute if score #rng3 Azr_system matches 1 if score #rng4 Azr_system matches 1..3 if score #rng9 Azr_system matches 7 run summon item -79908 40 126 {Item:{id:"charcoal",count:1b}}
+execute if score #rng3 Azr_system matches 2 if score #rng4 Azr_system matches 1..3 if score #rng9 Azr_system matches 7 run summon item -79908 40 126 {Item:{id:"minecraft:raw_iron",count:1b,components:{custom_name:'{"text":"钝铁","italic":false,"color":"white"}'}}}
+execute if score #rng3 Azr_system matches 3 if score #rng4 Azr_system matches 1..3 if score #rng9 Azr_system matches 7 run summon item -79908 40 126 {Item:{id:"leather",count:1b}}
 #
-execute if entity @e[tag=sc,limit=1,scores={rng3=1,rng4=1..3,rng9=8}] run summon item -79908 40 126 {Item:{id:"slime_ball",count:1b}}
-execute if entity @e[tag=sc,limit=1,scores={rng3=2,rng4=1..3,rng9=8}] run summon item -79908 40 126 {Item:{id:"carrot",count:1b}}
-execute if entity @e[tag=sc,limit=1,scores={rng3=3,rng4=1..3,rng9=8}] run summon item -79908 40 126 {Item:{id:"minecraft:iron_nugget",tag:{display:{Name:"{\"text\":\"盾牌碎片\",\"italic\":false,\"color\":\"white\"}"}},count:1b}}
+execute if score #rng3 Azr_system matches 1 if score #rng4 Azr_system matches 1..3 if score #rng9 Azr_system matches 8 run summon item -79908 40 126 {Item:{id:"slime_ball",count:1b}}
+execute if score #rng3 Azr_system matches 2 if score #rng4 Azr_system matches 1..3 if score #rng9 Azr_system matches 8 run summon item -79908 40 126 {Item:{id:"carrot",count:1b}}
+execute if score #rng3 Azr_system matches 3 if score #rng4 Azr_system matches 1..3 if score #rng9 Azr_system matches 8 run summon item -79908 40 126 {Item:{id:"minecraft:iron_nugget",count:1b,components:{custom_name:'{"text":"盾牌碎片","italic":false,"color":"white"}'}}}
 #
-execute if entity @e[tag=sc,limit=1,scores={rng3=1,rng4=4,rng9=1..8,rng13=4..6}] run summon item -79908 40 126 {Item:{id:"minecraft:ghast_tear",tag:{display:{Name:"{\"text\":\"光明精华\",\"italic\":false,\"color\":\"blue\"}"}},count:1b}}
-execute if entity @e[tag=sc,limit=1,scores={rng3=2,rng4=4,rng9=1..8,rng13=4..6}] run summon item -79908 40 126 {Item:{id:"shield",count:1b,tag:{display:{Name:"{\"text\":\"刺盾·遂望\",\"italic\":false,\"color\":\"dark_red\"}"},AttributeModifiers:[{AttributeName:"generic.attack_damage",Amount:7.0,Operation:0,UUID:[I;84300,135,20991,27],Slot:"mainhand"},{AttributeName:"generic.attack_speed",Amount:-2.8,Operation:0,UUID:[I;84300,135,20991,28],Slot:"mainhand"},{AttributeName:"generic.movement_speed",Amount:0.015,Operation:0,UUID:[I;84300,135,20991,2802],Slot:"mainhand"}],Unbreakable:1b}}}
-execute if entity @e[tag=sc,limit=1,scores={rng3=3,rng4=4,rng9=1..8,rng13=4..6}] run summon item -79908 40 126 {Item:{id:"crossbow",count:1b,tag:{display:{Name:"{\"text\":\"刃弩·迅穿\",\"italic\":false,\"color\":\"dark_red\"}"},Enchantments:[{id:quick_charge,lvl:1},{id:piercing,lvl:1}],AttributeModifiers:[{AttributeName:"generic.attack_damage",Amount:3.5,Operation:0,UUID:[I;84300,135,20992,27],Slot:"mainhand"},{AttributeName:"generic.attack_speed",Amount:-2.3,Operation:0,UUID:[I;84300,135,20992,28],Slot:"mainhand"}],Unbreakable:1b}}}
+execute if score #rng3 Azr_system matches 1 if score #rng4 Azr_system matches 4 if score #rng9 Azr_system matches 1..8 if score #rng13 Azr_system matches 4..6 run summon item -79908 40 126 {Item:{id:"minecraft:ghast_tear",count:1b,components:{custom_name:'{"text":"光明精华","italic":false,"color":"blue"}'}}}
+execute if score #rng3 Azr_system matches 2 if score #rng4 Azr_system matches 4 if score #rng9 Azr_system matches 1..8 if score #rng13 Azr_system matches 4..6 run summon item -79908 40 126 {Item:{id:"shield",count:1b,components:{custom_name:'{"text":"刺盾·遂望","italic":false,"color":"dark_red"}',attribute_modifiers:[{type:"generic.attack_damage",amount:7.0d,operation:"add_value",id:"i_84300_135_20991_27",slot:"mainhand"},{type:"generic.attack_speed",amount:-2.8d,operation:"add_value",id:"i_84300_135_20991_28",slot:"mainhand"},{type:"generic.movement_speed",amount:0.015d,operation:"add_value",id:"i_84300_135_20991_2802",slot:"mainhand"}],unbreakable:{}}}}
+execute if score #rng3 Azr_system matches 3 if score #rng4 Azr_system matches 4 if score #rng9 Azr_system matches 1..8 if score #rng13 Azr_system matches 4..6 run summon item -79908 40 126 {Item:{id:"crossbow",count:1b,components:{custom_name:'{"text":"刃弩·迅穿","italic":false,"color":"dark_red"}',enchantments:{quick_charge:1,piercing:1},attribute_modifiers:[{type:"generic.attack_damage",amount:3.5d,operation:"add_value",id:"i_84300_135_20992_27",slot:"mainhand"},{type:"generic.attack_speed",amount:-2.3d,operation:"add_value",id:"i_84300_135_20992_28",slot:"mainhand"}],unbreakable:{}}}}
 
-function skyblock:tool_rng
-execute if entity @e[tag=sc,limit=1,scores={rng3=1,rng4=1..3,rng9=1}] run summon item -79908 40 126 {Item:{id:"emerald",count:6b}}
-execute if entity @e[tag=sc,limit=1,scores={rng3=1,rng4=1..3,rng9=2}] run summon item -79908 40 126 {Item:{id:"emerald",count:9b}}
-execute if entity @e[tag=sc,limit=1,scores={rng3=1,rng4=1..3,rng9=3}] run summon item -79908 40 126 {Item:{id:"emerald",count:3b}}
-execute if entity @e[tag=sc,limit=1,scores={rng3=1,rng4=1..3,rng9=4}] run summon item -79908 40 126 {Item:{id:"porkchop",count:2b}}
-execute if entity @e[tag=sc,limit=1,scores={rng3=1,rng4=1..3,rng9=5}] run summon item -79908 40 126 {Item:{id:"arrow",count:2b}}
-execute if entity @e[tag=sc,limit=1,scores={rng3=2,rng4=1..3,rng9=1}] run summon item -79908 40 126 {Item:{id:"arrow",count:1b}}
-execute if entity @e[tag=sc,limit=1,scores={rng3=2,rng4=1..3,rng9=2}] run summon item -79908 40 126 {Item:{id:"arrow",count:1b}}
-execute if entity @e[tag=sc,limit=1,scores={rng3=2,rng4=1..3,rng9=3}] run summon item -79908 40 126 {Item:{id:"porkchop",count:1b}}
-execute if entity @e[tag=sc,limit=1,scores={rng3=2,rng4=1..3,rng9=4}] run summon item -79908 40 126 {Item:{id:"flint",count:2b}}
-execute if entity @e[tag=sc,limit=1,scores={rng3=2,rng4=1..3,rng9=5}] run summon item -79908 40 126 {Item:{id:"emerald",count:3b}}
-execute if entity @e[tag=sc,limit=1,scores={rng3=3,rng4=1..3,rng9=1}] run summon item -79908 40 126 {Item:{id:"flint",count:1b}}
-execute if entity @e[tag=sc,limit=1,scores={rng3=3,rng4=1..3,rng9=2}] run summon item -79908 40 126 {Item:{id:"string",count:1b}}
-execute if entity @e[tag=sc,limit=1,scores={rng3=3,rng4=1..3,rng9=3}] run summon item -79908 40 126 {Item:{id:"rotten_flesh",count:2b}}
-execute if entity @e[tag=sc,limit=1,scores={rng3=3,rng4=1..3,rng9=4}] run summon item -79908 40 126 {Item:{id:"rotten_flesh",count:1b}}
-execute if entity @e[tag=sc,limit=1,scores={rng3=3,rng4=1..3,rng9=5}] run summon item -79908 40 126 {Item:{id:"string",count:1b}}
+function skyblock:azr/tool_rng
+execute if score #rng3 Azr_system matches 1 if score #rng4 Azr_system matches 1..3 if score #rng9 Azr_system matches 1 run summon item -79908 40 126 {Item:{id:"emerald",count:6b}}
+execute if score #rng3 Azr_system matches 1 if score #rng4 Azr_system matches 1..3 if score #rng9 Azr_system matches 2 run summon item -79908 40 126 {Item:{id:"emerald",count:9b}}
+execute if score #rng3 Azr_system matches 1 if score #rng4 Azr_system matches 1..3 if score #rng9 Azr_system matches 3 run summon item -79908 40 126 {Item:{id:"emerald",count:3b}}
+execute if score #rng3 Azr_system matches 1 if score #rng4 Azr_system matches 1..3 if score #rng9 Azr_system matches 4 run summon item -79908 40 126 {Item:{id:"porkchop",count:2b}}
+execute if score #rng3 Azr_system matches 1 if score #rng4 Azr_system matches 1..3 if score #rng9 Azr_system matches 5 run summon item -79908 40 126 {Item:{id:"arrow",count:2b}}
+execute if score #rng3 Azr_system matches 2 if score #rng4 Azr_system matches 1..3 if score #rng9 Azr_system matches 1 run summon item -79908 40 126 {Item:{id:"arrow",count:1b}}
+execute if score #rng3 Azr_system matches 2 if score #rng4 Azr_system matches 1..3 if score #rng9 Azr_system matches 2 run summon item -79908 40 126 {Item:{id:"arrow",count:1b}}
+execute if score #rng3 Azr_system matches 2 if score #rng4 Azr_system matches 1..3 if score #rng9 Azr_system matches 3 run summon item -79908 40 126 {Item:{id:"porkchop",count:1b}}
+execute if score #rng3 Azr_system matches 2 if score #rng4 Azr_system matches 1..3 if score #rng9 Azr_system matches 4 run summon item -79908 40 126 {Item:{id:"flint",count:2b}}
+execute if score #rng3 Azr_system matches 2 if score #rng4 Azr_system matches 1..3 if score #rng9 Azr_system matches 5 run summon item -79908 40 126 {Item:{id:"emerald",count:3b}}
+execute if score #rng3 Azr_system matches 3 if score #rng4 Azr_system matches 1..3 if score #rng9 Azr_system matches 1 run summon item -79908 40 126 {Item:{id:"flint",count:1b}}
+execute if score #rng3 Azr_system matches 3 if score #rng4 Azr_system matches 1..3 if score #rng9 Azr_system matches 2 run summon item -79908 40 126 {Item:{id:"string",count:1b}}
+execute if score #rng3 Azr_system matches 3 if score #rng4 Azr_system matches 1..3 if score #rng9 Azr_system matches 3 run summon item -79908 40 126 {Item:{id:"rotten_flesh",count:2b}}
+execute if score #rng3 Azr_system matches 3 if score #rng4 Azr_system matches 1..3 if score #rng9 Azr_system matches 4 run summon item -79908 40 126 {Item:{id:"rotten_flesh",count:1b}}
+execute if score #rng3 Azr_system matches 3 if score #rng4 Azr_system matches 1..3 if score #rng9 Azr_system matches 5 run summon item -79908 40 126 {Item:{id:"string",count:1b}}
 #
-execute if entity @e[tag=sc,limit=1,scores={rng3=1,rng4=1..3,rng9=6}] run summon item -79908 40 126 {Item:{id:"charcoal",count:1b}}
-execute if entity @e[tag=sc,limit=1,scores={rng3=2,rng4=1..3,rng9=6}] run summon item -79908 40 126 {Item:{id:"honeycomb",count:1b}}
-execute if entity @e[tag=sc,limit=1,scores={rng3=3,rng4=1..3,rng9=6}] run summon item -79908 40 126 {Item:{id:"minecraft:paper",tag:{display:{Name:"{\"text\":\"圣殿信条\",\"italic\":false,\"color\":\"blue\"}"}},count:1b}}
+execute if score #rng3 Azr_system matches 1 if score #rng4 Azr_system matches 1..3 if score #rng9 Azr_system matches 6 run summon item -79908 40 126 {Item:{id:"charcoal",count:1b}}
+execute if score #rng3 Azr_system matches 2 if score #rng4 Azr_system matches 1..3 if score #rng9 Azr_system matches 6 run summon item -79908 40 126 {Item:{id:"honeycomb",count:1b}}
+execute if score #rng3 Azr_system matches 3 if score #rng4 Azr_system matches 1..3 if score #rng9 Azr_system matches 6 run summon item -79908 40 126 {Item:{id:"minecraft:paper",count:1b,components:{custom_name:'{"text":"圣殿信条","italic":false,"color":"blue"}'}}}
 #
-execute if entity @e[tag=sc,limit=1,scores={rng3=1,rng4=1..3,rng9=7}] run summon item -79908 40 126 {Item:{id:"charcoal",count:1b}}
-execute if entity @e[tag=sc,limit=1,scores={rng3=2,rng4=1..3,rng9=7}] run summon item -79908 40 126 {Item:{id:"minecraft:raw_iron",tag:{display:{Name:"{\"text\":\"钝铁\",\"italic\":false,\"color\":\"white\"}"}},count:1b}}
-execute if entity @e[tag=sc,limit=1,scores={rng3=3,rng4=1..3,rng9=7}] run summon item -79908 40 126 {Item:{id:"leather",count:1b}}
+execute if score #rng3 Azr_system matches 1 if score #rng4 Azr_system matches 1..3 if score #rng9 Azr_system matches 7 run summon item -79908 40 126 {Item:{id:"charcoal",count:1b}}
+execute if score #rng3 Azr_system matches 2 if score #rng4 Azr_system matches 1..3 if score #rng9 Azr_system matches 7 run summon item -79908 40 126 {Item:{id:"minecraft:raw_iron",count:1b,components:{custom_name:'{"text":"钝铁","italic":false,"color":"white"}'}}}
+execute if score #rng3 Azr_system matches 3 if score #rng4 Azr_system matches 1..3 if score #rng9 Azr_system matches 7 run summon item -79908 40 126 {Item:{id:"leather",count:1b}}
 #
-execute if entity @e[tag=sc,limit=1,scores={rng3=1,rng4=1..3,rng9=8}] run summon item -79908 40 126 {Item:{id:"slime_ball",count:1b}}
-execute if entity @e[tag=sc,limit=1,scores={rng3=2,rng4=1..3,rng9=8}] run summon item -79908 40 126 {Item:{id:"carrot",count:1b}}
-execute if entity @e[tag=sc,limit=1,scores={rng3=3,rng4=1..3,rng9=8}] run summon item -79908 40 126 {Item:{id:"minecraft:iron_nugget",tag:{display:{Name:"{\"text\":\"盾牌碎片\",\"italic\":false,\"color\":\"white\"}"}},count:1b}}
+execute if score #rng3 Azr_system matches 1 if score #rng4 Azr_system matches 1..3 if score #rng9 Azr_system matches 8 run summon item -79908 40 126 {Item:{id:"slime_ball",count:1b}}
+execute if score #rng3 Azr_system matches 2 if score #rng4 Azr_system matches 1..3 if score #rng9 Azr_system matches 8 run summon item -79908 40 126 {Item:{id:"carrot",count:1b}}
+execute if score #rng3 Azr_system matches 3 if score #rng4 Azr_system matches 1..3 if score #rng9 Azr_system matches 8 run summon item -79908 40 126 {Item:{id:"minecraft:iron_nugget",count:1b,components:{custom_name:'{"text":"盾牌碎片","italic":false,"color":"white"}'}}}
 #
-execute if entity @e[tag=sc,limit=1,scores={rng3=1,rng4=4,rng9=1..8,rng13=4..6}] run summon item -79908 40 126 {Item:{id:"minecraft:ghast_tear",tag:{display:{Name:"{\"text\":\"光明精华\",\"italic\":false,\"color\":\"blue\"}"}},count:1b}}
-execute if entity @e[tag=sc,limit=1,scores={rng3=2,rng4=4,rng9=1..8,rng13=4..6}] run summon item -79908 40 126 {Item:{id:"shield",count:1b,tag:{display:{Name:"{\"text\":\"刺盾·遂望\",\"italic\":false,\"color\":\"dark_red\"}"},AttributeModifiers:[{AttributeName:"generic.attack_damage",Amount:7.0,Operation:0,UUID:[I;84300,135,20991,27],Slot:"mainhand"},{AttributeName:"generic.attack_speed",Amount:-2.8,Operation:0,UUID:[I;84300,135,20991,28],Slot:"mainhand"},{AttributeName:"generic.movement_speed",Amount:0.015,Operation:0,UUID:[I;84300,135,20991,2802],Slot:"mainhand"}],Unbreakable:1b}}}
-execute if entity @e[tag=sc,limit=1,scores={rng3=3,rng4=4,rng9=1..8,rng13=4..6}] run summon item -79908 40 126 {Item:{id:"crossbow",count:1b,tag:{display:{Name:"{\"text\":\"刃弩·迅穿\",\"italic\":false,\"color\":\"dark_red\"}"},Enchantments:[{id:quick_charge,lvl:1},{id:piercing,lvl:1}],AttributeModifiers:[{AttributeName:"generic.attack_damage",Amount:3.5,Operation:0,UUID:[I;84300,135,20992,27],Slot:"mainhand"},{AttributeName:"generic.attack_speed",Amount:-2.3,Operation:0,UUID:[I;84300,135,20992,28],Slot:"mainhand"}],Unbreakable:1b}}}
+execute if score #rng3 Azr_system matches 1 if score #rng4 Azr_system matches 4 if score #rng9 Azr_system matches 1..8 if score #rng13 Azr_system matches 4..6 run summon item -79908 40 126 {Item:{id:"minecraft:ghast_tear",count:1b,components:{custom_name:'{"text":"光明精华","italic":false,"color":"blue"}'}}}
+execute if score #rng3 Azr_system matches 2 if score #rng4 Azr_system matches 4 if score #rng9 Azr_system matches 1..8 if score #rng13 Azr_system matches 4..6 run summon item -79908 40 126 {Item:{id:"shield",count:1b,components:{custom_name:'{"text":"刺盾·遂望","italic":false,"color":"dark_red"}',attribute_modifiers:[{type:"generic.attack_damage",amount:7.0d,operation:"add_value",id:"i_84300_135_20991_27",slot:"mainhand"},{type:"generic.attack_speed",amount:-2.8d,operation:"add_value",id:"i_84300_135_20991_28",slot:"mainhand"},{type:"generic.movement_speed",amount:0.015d,operation:"add_value",id:"i_84300_135_20991_2802",slot:"mainhand"}],unbreakable:{}}}}
+execute if score #rng3 Azr_system matches 3 if score #rng4 Azr_system matches 4 if score #rng9 Azr_system matches 1..8 if score #rng13 Azr_system matches 4..6 run summon item -79908 40 126 {Item:{id:"crossbow",count:1b,components:{custom_name:'{"text":"刃弩·迅穿","italic":false,"color":"dark_red"}',enchantments:{quick_charge:1,piercing:1},attribute_modifiers:[{type:"generic.attack_damage",amount:3.5d,operation:"add_value",id:"i_84300_135_20992_27",slot:"mainhand"},{type:"generic.attack_speed",amount:-2.3d,operation:"add_value",id:"i_84300_135_20992_28",slot:"mainhand"}],unbreakable:{}}}}

@@ -18,6 +18,7 @@ scoreboard objectives add rng16 dummy
 scoreboard objectives add rng17 dummy
 scoreboard objectives add rng18 dummy
 scoreboard objectives add rng19 dummy
+scoreboard objectives add rng20 dummy
 scoreboard objectives add rng4_24 dummy
 scoreboard objectives add rng5_30 dummy
 scoreboard objectives add rng6_36 dummy

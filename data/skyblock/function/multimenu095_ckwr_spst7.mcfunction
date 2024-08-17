@@ -8,7 +8,7 @@ execute as @s at @s[tag=!CkWrSpStB7,scores={Perm_PersonCCT=8..},tag=CkWrSpStB7In
 execute as @s at @s[tag=!CkWrSpStB7,scores={Perm_PersonCCT=8..},tag=CkWrSpStB7Info] run tag @s add CkWrSpStB7Al
 execute as @s at @s[tag=CkWrSpStB7Al] run tag @s remove CkWrSpStB7Info
 execute as @s at @s[tag=CkWrSpStB7Al] run scoreboard players remove @s Perm_PersonCCT 8
-execute as @s at @s[tag=CkWrSpStB7Al] run tellraw @s  [{"text":"如今持有CCT： ","color":"gold"},{"score":{"name":"@s","objective":"Perm_PersonCCT"}}]
+execute as @s at @s[tag=CkWrSpStB7Al] run tellraw @s [{"text":"如今持有CCT： ","color":"gold"},{"score":{"name":"@s","objective":"Perm_PersonCCT"}}]
 execute as @s at @s[tag=CkWrSpStB7Al] run scoreboard players set @s CkWr_SpawnBase 7
 execute as @s at @s[tag=CkWrSpStB7Al] run tag @s add CkWrSpStB7
 execute as @s at @s[tag=CkWrSpStB7] run tag @s remove CkWrSpStB7Al

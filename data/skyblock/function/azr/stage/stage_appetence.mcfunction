@@ -18,8 +18,8 @@ execute if score Azr_Timerx4 Azr_system matches 5 run fill -79936 54 -120 -79935
 execute if score Azr_Timerx4 Azr_system matches 6 as @a[tag=azrPlayer,x=-79913.0,y=54,z=-105.0,distance=15..] at @s run tp -79913.0 54 -105.0
 execute if score Azr_Timerx4 Azr_system matches 6 as @a[tag=azrPlayer,y=0,dy=52] at @s run tp -79913.0 54 -105.0
 
-execute if score Azr_Timerx4 Azr_system matches 20.. as @e[name="僵尸盔甲匠"] at @s run function skyblock:azr/azrielsmidgarden_effect_zombie_armorer
-execute if score Azr_Timerx4 Azr_system matches 20.. as @e[name="僵尸牧师"] at @s if score #rng8 Azr_system matches 1 run function skyblock:azr/azrielsmidgarden_effect_zombie_cleric
+execute if score Azr_Timerx4 Azr_system matches 20.. as @e[name="僵尸盔甲匠"] at @s run function skyblock:azr/effects/zombie_armorer
+execute if score Azr_Timerx4 Azr_system matches 20.. as @e[name="僵尸牧师"] at @s if score #rng8 Azr_system matches 1 run function skyblock:azr/effects/zombie_cleric
 
 
 execute if score Azr_Timerx4 Azr_system matches 7..9 if score #rng3 Azr_system matches 1 if score playerCount Azr_system matches 1.. run summon zombie -79935 53.51 -94 {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_zombie_tier1",Health:4.0f,CustomName:'"僵尸"',CanPickUpLoot:0b,IsBaby:0b,ArmorItems:[{},{},{},{}],attributes:[{id:"generic.max_health",base:4.0d},{id:"generic.attack_damage",base:1.5d}]}

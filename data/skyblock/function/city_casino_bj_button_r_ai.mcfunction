@@ -73,6 +73,7 @@ execute if entity @s[tag=CasBJG2] run tellraw @s [{"text":"黑杰克 玩家A： 
 execute if entity @s[tag=CasBJG2] run tellraw @s [{"text":"黑杰克 玩家B： ","color":"white"},{"selector":"@s","color":"blue"}]
 
 execute if entity @s[tag=CasBJG2] run scoreboard objectives add CasBJGTemp1 dummy
+execute if entity @s[tag=CasBJG2] run scoreboard objectives add CasBJGTemp2 dummy
 execute if entity @s[tag=CasBJG2] run scoreboard objectives add CasBJGDraw dummy
 
 execute if entity @s[tag=CasBJG2] run tellraw @s [{"text":"左按键： ","color":"red"},{"text":"抽牌 （最多五次）","color":"white"}]

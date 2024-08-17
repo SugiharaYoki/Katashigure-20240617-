@@ -57,7 +57,7 @@ scoreboard players set @s If_DamageTaken 0
 scoreboard players set @s If_GoldApple 0
 scoreboard players set @s If_OpenShulker 0
 scoreboard players set @s If_Run10000cm 0
-scoreboard players set @s If_Bred 0
+scoreboard players set @s If_Bread 0
 scoreboard players set @s If_Dead 0
 scoreboard players set @s If_RotFle 0
 scoreboard players set @s If_MelonS 0
