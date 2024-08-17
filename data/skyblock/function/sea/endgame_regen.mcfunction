@@ -20,7 +20,7 @@ tag @n[tag=sc] remove sea_cb018
 tag @n[tag=sc] remove sea_cb019
 bossbar remove 9066601
 setblock -25 23 32 air
-fill 90065 104 139 90065 104 141 barrier
+#fill 90065 104 139 90065 104 141 barrier
 gamerule doDaylightCycle true
 tellraw @a {"text": "忒尔克西海上钻井平台已经失联24小时整，","color": "blue"}
 tellraw @a {"text": "太平洋石油管理局的高层决定派你前去调查情况。","color": "blue"}
@@ -46,7 +46,7 @@ tag @s remove SeGa_sea_ch5
 tag @s remove SeGa_sea_ch6
 
 forceload remove 90000 0 90200 200
-setblock 90060 104 144 stone_button[facing=south,face=floor]
-summon minecraft:armor_stand 90060 106 144 {CustomName:'{"text": "『厄珀娅的悲歌』","color": "blue","bold": true}',DisabledSlots:65793,CustomNameVisible:1b,Invisible:1b,Marker:1b,NoGravity:1b}
-summon minecraft:armor_stand 90060 105.5 144 {CustomName:'{"text": "探索孤独而死寂的海上堡垒","color": "white"}',DisabledSlots:65793,CustomNameVisible:1b,Invisible:1b,Marker:1b,NoGravity:1b}
-summon minecraft:armor_stand 90060 105.2 144 {CustomName:'{"text": "解开忒尔克西海上钻井平台的秘密","color": "white"}',DisabledSlots:65793,CustomNameVisible:1b,Invisible:1b,Marker:1b,NoGravity:1b}
+#setblock 90060 104 144 stone_button[facing=south,face=floor]
+summon minecraft:armor_stand 90074 93.5 139 {CustomName:'{"text": "『厄珀娅的悲歌』","color": "blue","bold": true}',DisabledSlots:65793,CustomNameVisible:1b,Invisible:1b,Marker:1b,NoGravity:1b}
+summon minecraft:armor_stand 90074 93 139 {CustomName:'{"text": "探索孤独而死寂的海上堡垒","color": "white"}',DisabledSlots:65793,CustomNameVisible:1b,Invisible:1b,Marker:1b,NoGravity:1b}
+summon minecraft:armor_stand 90074 92.7 139 {CustomName:'{"text": "解开忒尔克西海上钻井平台的秘密","color": "white"}',DisabledSlots:65793,CustomNameVisible:1b,Invisible:1b,Marker:1b,NoGravity:1b}
