@@ -16,7 +16,8 @@ execute if score @n[tag=sc] Map_Code matches 7 as @a[tag=PVPing] at @s if entity
 execute if score @n[tag=sc] Map_Code matches 8 as @a[tag=PVPing] at @s if entity @s[y=45,dy=5] run tp ~ ~-1 ~
 execute if score @n[tag=sc] Map_Code matches 10 as @a[tag=PVPing] at @s if entity @s[y=60,dy=5] run tp ~ ~-1 ~
 execute if score @n[tag=sc] Map_Code matches 13 as @a[tag=PVPing] at @s if entity @s[y=85,dy=5] run tp ~ ~-1 ~
-execute if score @n[tag=sc] Map_Code matches 14 as @a[tag=PVPing] at @s if entity @s[y=230,dy=5] run tp ~ ~-1 ~
+execute if score @n[tag=sc] Map_Code matches 14 as @a[tag=PVPing] at @s if entity @s[y=230,dy=5] unless block -156 59 -114 diamond_block run tp ~ ~-1 ~
+execute if score @n[tag=sc] Map_Code matches 14 as @a[tag=PVPing] at @s if entity @s[y=116,dy=5] if block -156 59 -114 diamond_block run tp ~ ~-1 ~
 execute if score @n[tag=sc] Map_Code matches 15 as @a[tag=PVPing] at @s if entity @s[y=40,dy=5] run tp ~ ~-1 ~
 execute if score @n[tag=sc] Map_Code matches 16 as @a[tag=PVPing] at @s if entity @s[y=45,dy=5] run tp ~ ~-1 ~
 execute if score @n[tag=sc] Map_Code matches 17 as @a[tag=PVPing] at @s if entity @s[y=224,dy=5] run tp ~ ~-1 ~
