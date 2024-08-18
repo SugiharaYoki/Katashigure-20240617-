@@ -140,6 +140,27 @@ scoreboard objectives add dailylogin_c dummy
 scoreboard objectives add AnnouncementRo dummy
 scoreboard objectives add AnnouncementRoB dummy
 
+scoreboard objectives add rng1 dummy
+scoreboard objectives add rng2 dummy
+scoreboard objectives add rng3 dummy
+scoreboard objectives add rng4 dummy
+scoreboard objectives add rng5 dummy
+scoreboard objectives add rng6 dummy
+scoreboard objectives add rng7 dummy
+scoreboard objectives add rng8 dummy
+scoreboard objectives add rng9 dummy
+scoreboard objectives add rng10 dummy
+scoreboard objectives add rng11 dummy
+scoreboard objectives add rng12 dummy
+scoreboard objectives add rng13 dummy
+scoreboard objectives add rng14 dummy
+scoreboard objectives add rng15 dummy
+scoreboard objectives add rng16 dummy
+scoreboard objectives add rng17 dummy
+scoreboard objectives add rng18 dummy
+scoreboard objectives add rng19 dummy
+scoreboard objectives add rng20 dummy
+
 team add TokumeiA
 team add TokumeiB
 team add TokumeiC
