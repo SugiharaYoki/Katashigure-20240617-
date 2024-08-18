@@ -8,7 +8,7 @@ execute if score @s sea_4temp1 matches 50 run playsound minecraft:block.note_blo
 execute if score @s sea_4temp1 matches 53 run playsound minecraft:block.note_block.hat player @a ~ ~ ~ 0.8 0.7
 execute if score @s sea_4temp1 matches 55 run playsound minecraft:block.note_block.hat player @a ~ ~ ~ 0.8 0.7
 execute if score @s sea_4temp1 matches 56..59 run playsound minecraft:block.note_block.hat player @a ~ ~ ~ 0.8 0.7
-execute if score @s sea_4temp1 matches 20..59 run particle smoke ~ ~ ~ 0.3 0.3 0.3 0.2 10
-execute if score @s sea_4temp1 matches 40..59 run particle smoke ~ ~ ~ 0.3 0.3 0.3 0.4 10
+execute if score @s sea_4temp1 matches 20..59 run particle smoke ~ ~ ~ 0.3 0.3 0.3 0.02 4
+execute if score @s sea_4temp1 matches 40..59 run particle smoke ~ ~ ~ 0.3 0.3 0.3 0.05 6
 execute if score @s sea_4temp1 matches 60 run particle flame ~ ~ ~ 0.3 0.3 0.3 0.3 35
 execute if score @s sea_4temp1 matches 60.. run function skyblock:sea/p/bomb
