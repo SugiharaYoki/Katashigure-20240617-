@@ -1,7 +1,7 @@
 tellraw @s {"text":"『梦蝶的长廊』存档点传送 第1页","bold":true,"color":"yellow","hoverEvent":{"action":"show_text","contents":{"text":"选择想要传送的跑酷存档点","color":"white"}}}
-tellraw @s[scores={parkour_stage=1..}] [{"text":"  白染岩台 1","bold":false,"color":"blue","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 832001"}}]
-tellraw @s[scores={parkour_stage=2..}] [{"text":"  白染岩台 2","bold":false,"color":"blue","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 832002"}}]
-tellraw @s[scores={parkour_stage=3..}] [{"text":"  柔光书室 3","bold":false,"color":"blue","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 832003"}}]
+tellraw @s[] [{"text":"  白染岩台 1","bold":false,"color":"blue","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 832001"}}]
+tellraw @s[] [{"text":"  白染岩台 2","bold":false,"color":"blue","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 832002"}}]
+tellraw @s[] [{"text":"  柔光书室 3","bold":false,"color":"blue","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 832003"}}]
 tellraw @s[scores={parkour_stage=4..}] [{"text":"  柔光书室 4","bold":false,"color":"blue","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 832004"}}]
 tellraw @s[scores={parkour_stage=5..}] [{"text":"  柔光书室 5","bold":false,"color":"blue","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 832005"}}]
 tellraw @s[scores={parkour_stage=6..}] [{"text":"  柔光书室 6","bold":false,"color":"blue","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 832006"}}]
