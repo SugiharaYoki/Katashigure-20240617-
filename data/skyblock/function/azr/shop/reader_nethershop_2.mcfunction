@@ -1,6 +1,6 @@
 function skyblock:azr/ingame_azrielsmidgarden_shop_purchase_execute_calculation
-tellraw @s[scores={SeGa_StandLastB=..51}] {"text":"『第四章』","bold":true,"color":"white"}
-tellraw @s[scores={SeGa_StandLastB=..51}] {"text":"   "}
+tellraw @s[scores={Azr_wave=..51}] {"text":"『第四章』","bold":true,"color":"white"}
+tellraw @s[scores={Azr_wave=..51}] {"text":"   "}
 tellraw @s [{"text":"   - "},{"text":"金萝卜","color":"white"},{"text":"  6 金粒 ","color":"gold"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8431711"}},{"text":"  ||  熟猪排","color":"white"},{"text":"  5 金粒 ","color":"gold"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8431712"}}]
 tellraw @s [{"text":"   - "},{"text":"投掷瓶·抗火 LV1","color":"white"},{"text":"  10 金粒 ","color":"gold"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8431713"}},{"text":"  ||  LV2","color":"white"},{"text":"  1 光明精华 ","color":"gold"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8431714"}}]
 tellraw @s [{"text":"   - "},{"text":"投掷瓶·迅捷 LV1","color":"white"},{"text":"  1 黑暗精华 ","color":"gold"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8431715"}}]
@@ -12,4 +12,3 @@ tellraw @s [{"text":"   - "},{"text":"武器：镀金阔斧","color":"white"},{"
 tellraw @s [{"text":"   - "},{"text":"防具：刺盾·怠伐","color":"white"},{"text":"  2 遗存的狂戮 ","color":"gold"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8431720"}}]
 tellraw @s [{"text":"   - "},{"text":"防具：镀金工帽","color":"white"},{"text":"  20 金粒 ","color":"gold"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8431721"}}]
 tellraw @s [{"text":"   - "},{"text":"防具：镀金护腿","color":"white"},{"text":"  2 软金 ","color":"gold"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8431722"}}]
-scoreboard players set @s Azr_Shop 0

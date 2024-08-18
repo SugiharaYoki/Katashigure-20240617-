@@ -1,6 +1,6 @@
 function skyblock:azr/ingame_azrielsmidgarden_shop_purchase_execute_calculation
-tellraw @s[scores={SeGa_StandLastB=..51}] {"text":"『第四章』","bold":true,"color":"white"}
-tellraw @s[scores={SeGa_StandLastB=..51}] {"text":"   "}
+tellraw @s[scores={Azr_wave=..51}] {"text":"『第四章』","bold":true,"color":"white"}
+tellraw @s[scores={Azr_wave=..51}] {"text":"   "}
 tellraw @s [{"text":"   - "},{"text":"面包","color":"white"},{"text":"  1 绿宝石 ","color":"gold"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8431611"}},{"text":"  ||  熟猪排","color":"white"},{"text":"  1 腐肉 ","color":"gold"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8431612"}}]
 tellraw @s [{"text":"   - "},{"text":"西瓜 ×3","color":"white"},{"text":"  1 虫骸 ","color":"gold"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8431613"}},{"text":"  ||  金萝卜","color":"white"},{"text":"  2 胡萝卜 ","color":"gold"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8431614"}}]
 tellraw @s [{"text":"   - "},{"text":"箭 ×3","color":"white"},{"text":"  1 燧石 ","color":"gold"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8431617"}},{"text":"  ||  爆裂菜根","color":"white"},{"text":"  1 甜菜种子 ","color":"gold"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8431618"}}]
@@ -17,5 +17,4 @@ tellraw @s [{"text":"   - "},{"text":"防具：试造狱铁铠","color":"white"}
 tellraw @s [{"text":"   - "},{"text":"防具：试造狱铁靴","color":"white"},{"text":"  20 绿宝石 1 碳钢 ","color":"gold"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8431628"}}]
 tellraw @s [{"text":"   - "},{"text":"机械弩·柒壹式","color":"white"},{"text":"  5 硬骨 5 丝线 5 燧石 ","color":"gold"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8431631"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗特殊弹药进行超高速射击的弩","color":"white"}}},{"text":" || 弹药×16","color":"white"},{"text":"  1 炽焰粉尘 ","color":"gold"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8431632"}}]
 tellraw @s {"text":"   "}
-tellraw @s[scores={SeGa_StandLastB=..51}] [{"text":"   "},{"text":"〈雷米尔的指引〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 3"}},{"text":"  〈权之残影的弓术商店〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 4"}}]
-scoreboard players set @s Azr_Shop 0
+tellraw @s[scores={Azr_wave=..51}] [{"text":"   "},{"text":"〈雷米尔的指引〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 3"}},{"text":"  〈权之残影的弓术商店〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 4"}}]

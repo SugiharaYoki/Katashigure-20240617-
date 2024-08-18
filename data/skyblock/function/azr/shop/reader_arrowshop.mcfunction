@@ -1,5 +1,5 @@
 function skyblock:azr/ingame_azrielsmidgarden_shop_purchase_execute_calculation
-tellraw @s[scores={SeGa_StandLastB=..51}] [{"text":"『权之残影的弓术商店』","color":"aqua"}]
+tellraw @s[scores={Azr_wave=..51}] [{"text":"『权之残影的弓术商店』","color":"aqua"}]
 tellraw @s [{"text":" - 原型箭矢工坊","color":"gray"}]
 tellraw @s [{"text":"   - "},{"text":"虚弱之箭(Lv1) ×8","color":"white"},{"text":"  1 燧石 1 腐肉 ","color":"gold"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8431511"}}]
 tellraw @s [{"text":"   - "},{"text":"迟缓之箭(Lv1) ×8","color":"white"},{"text":"  1 丝线 1 粘液球 ","color":"gold"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8431512"}}]
@@ -14,4 +14,3 @@ tellraw @s[scores={Azr_SK9=1..}] [{"text":"   - "},{"text":"主动灵能「残�
 execute unless entity @s[scores={Azr_SK11=1..}] run tellraw @s [{"text":"   - "},{"text":"主动灵能「螺旋风压」","color":"white"},{"text":"  5 锁链 ","color":"gold"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Common set 16310111"},"hoverEvent":{"action":"show_text","contents":{"text":"将身边的敌人暴吹而开","color":"white"}}}]
 tellraw @s[scores={Azr_SK11=1..}] [{"text":"   - "},{"text":"主动灵能「螺旋风压」","color":"dark_gray"},{"text":"   5 锁链   ","color":"dark_gray"}]
 tellraw @s {"text":"   "}
-scoreboard players set @s Azr_Shop 0

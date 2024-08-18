@@ -1,4 +1,4 @@
-scoreboard players set version skyblock_system 41
+scoreboard players set version skyblock_system 42
 
 scoreboard objectives add skyblock_system dummy
 execute unless score last_version skyblock_system = version skyblock_system run tellraw @a[tag=DebugMode] [{"text":"【Shop trigger fix】Datapack has successfully updated. version: "},{"score":{"name":"version","objective":"skyblock_system"},"color":"green","bold":true}]

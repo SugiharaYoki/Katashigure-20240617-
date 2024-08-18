@@ -25,6 +25,7 @@ execute if score chapter Azr_system matches 4 run function skyblock:azr/shop/rea
 #execute if entity @s[tag=azrShopRefresh] if score chapter Azr_system matches 7 run function skyblock:azr/shop/roll_chapter7
 tellraw @s {"text":"   "}
 
+execute store result score @s melonCount run clear @s glistering_melon_slice 0
 #print extra-shops
 execute if score @s Azr_wave matches 1..5 if data entity @s Inventory[{id:"minecraft:glistering_melon_slice"}] run tellraw @s [{"text":"   "},{"text":"〈刷新商店〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 21"}},{"text":" | WAIVE： ","color":"gray"},{"score":{"name":"@s","objective":"Temp_PersonSHME"}},{"text":"/1 闪烁的西瓜","color":"gray"}]
 execute if score @s Azr_wave matches 6..9 if data entity @s Inventory[{id:"minecraft:glistering_melon_slice"}] run tellraw @s [{"text":"   "},{"text":"〈刷新商店〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 21"}},{"text":" | WAIVE： ","color":"gray"},{"score":{"name":"@s","objective":"Temp_PersonSHME"}},{"text":"/1 闪烁的西瓜","color":"gray"}]
@@ -45,7 +46,7 @@ tellraw @s {"text":"   "}
 
 #print last line
 tellraw @s [{"text":"  绿宝石余额：  ","color":"yellow"},{"score":{"name":"@s","objective":"Azr_emerald"}}]
-#execute if entity @s[scores={SeGa_StandLastB=10..}] run tellraw @s [{"text":"  绿宝石余额：  ","color":"yellow"},{"score":{"name":"@s","objective":"Temp_PersonAZS"}},{"text":"   沙利叶之星：  ","color":"yellow"},{"score":{"name":"@s","objective":"Temp_PersonAZSt"}}]
+#execute if entity @s[scores={Azr_wave=10..}] run tellraw @s [{"text":"  绿宝石余额：  ","color":"yellow"},{"score":{"name":"@s","objective":"Azr_emerald"}},{"text":"   沙利叶之星：  ","color":"yellow"},{"score":{"name":"@s","objective":"Azr_sarielStar"}}]
 tellraw @s {"text":"   "}
 
 tag @s add azrShopOnUse

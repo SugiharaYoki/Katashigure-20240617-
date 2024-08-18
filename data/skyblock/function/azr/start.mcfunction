@@ -10,6 +10,7 @@ scoreboard objectives add Azr_isDead deathCount
 scoreboard objectives add Azr_emerald dummy
 scoreboard objectives add Azr_Shop trigger
 scoreboard objectives add Azr_Shop_rng dummy
+scoreboard objectives add melonCount dummy
 #AZS_57534用于boss技能
 scoreboard objectives add AZS_57534 dummy
 
