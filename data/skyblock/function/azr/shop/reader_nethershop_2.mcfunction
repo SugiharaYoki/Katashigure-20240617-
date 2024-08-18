@@ -1,4 +1,3 @@
-function skyblock:azr/ingame_azrielsmidgarden_shop_purchase_execute_calculation
 tellraw @s[scores={Azr_wave=..51}] {"text":"『第四章』","bold":true,"color":"white"}
 tellraw @s[scores={Azr_wave=..51}] {"text":"   "}
 tellraw @s [{"text":"   - "},{"text":"金萝卜","color":"white"},{"text":"  6 金粒 ","color":"gold"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8431711"}},{"text":"  ||  熟猪排","color":"white"},{"text":"  5 金粒 ","color":"gold"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8431712"}}]

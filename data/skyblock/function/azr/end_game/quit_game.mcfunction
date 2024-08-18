@@ -1,13 +1,10 @@
 #处理玩家数据
-stopsound @s
-team leave @s
-clear @s
-effect clear @s
-function skyblock:clear_attribute_modifiers
+function skyblock:api_quit_any_game
 tag @s remove azrPlayer
-tag @s remove NoMultiMenu
-tag @s remove Gaming
-tag @s remove Azr_ShopEnt
+tag @s remove azrShopOnUse
+tag @s remove azrShopRefresh
+tag @s remove azrBanLifeVitae
+tag @s remove azrUpgrateLifeVitae
 tag @s add azrDead
 function skyblock:azr/update_bossbar
 #输出
