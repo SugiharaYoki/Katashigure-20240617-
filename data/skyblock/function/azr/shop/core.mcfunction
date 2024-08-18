@@ -6,4 +6,4 @@ execute unless data entity @s Inventory[{Slot:8b}] if entity @s[tag=azrBanLifeVi
 #绿宝石管理
 execute if data entity @s[tag=hasLifeVitae] Inventory[{id:"minecraft:emerald"}] run function skyblock:azr/shop/money_conversion
 #商店入口
-execute unless entity @s[tag=azrShopOnUse] run function skyblock:azr/shop/build
+execute if items entity @s weapon.mainhand *[custom_data={LifeVitae:1b}] unless entity @s[tag=azrShopOnUse] run function skyblock:azr/shop/build

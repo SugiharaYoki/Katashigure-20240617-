@@ -44,7 +44,7 @@ execute if score @s Azr_wave matches 10.. run tellraw @s [{"text":"   "},{"text"
 tellraw @s {"text":"   "}
 
 #print last line
-tellraw @s [{"text":"  绿宝石余额：  ","color":"yellow"},{"score":{"name":"@s","objective":"Temp_PersonAZS"}}]
+tellraw @s [{"text":"  绿宝石余额：  ","color":"yellow"},{"score":{"name":"@s","objective":"Azr_emerald"}}]
 #execute if entity @s[scores={SeGa_StandLastB=10..}] run tellraw @s [{"text":"  绿宝石余额：  ","color":"yellow"},{"score":{"name":"@s","objective":"Temp_PersonAZS"}},{"text":"   沙利叶之星：  ","color":"yellow"},{"score":{"name":"@s","objective":"Temp_PersonAZSt"}}]
 tellraw @s {"text":"   "}
 
