@@ -11,4 +11,28 @@ playsound entity.generic.explode block @a ~ ~ ~ 0.7 0.8
 playsound entity.creeper.primed block @a ~ ~ ~ 0.7 0.8
 kill @s[type=item]
 
-fill ~2 ~2 ~2 ~-2 ~-2 ~-2 air replace decorated_pot
+execute positioned ~2 ~ ~-2 if block ~ ~ ~ decorated_pot run setblock ~ ~ ~ air destroy
+execute positioned ~2 ~ ~-1 if block ~ ~ ~ decorated_pot run setblock ~ ~ ~ air destroy
+execute positioned ~2 ~ ~0 if block ~ ~ ~ decorated_pot run setblock ~ ~ ~ air destroy
+execute positioned ~2 ~ ~1 if block ~ ~ ~ decorated_pot run setblock ~ ~ ~ air destroy
+execute positioned ~2 ~ ~2 if block ~ ~ ~ decorated_pot run setblock ~ ~ ~ air destroy
+execute positioned ~1 ~ ~-2 if block ~ ~ ~ decorated_pot run setblock ~ ~ ~ air destroy
+execute positioned ~1 ~ ~-1 if block ~ ~ ~ decorated_pot run setblock ~ ~ ~ air destroy
+execute positioned ~1 ~ ~0 if block ~ ~ ~ decorated_pot run setblock ~ ~ ~ air destroy
+execute positioned ~1 ~ ~1 if block ~ ~ ~ decorated_pot run setblock ~ ~ ~ air destroy
+execute positioned ~1 ~ ~2 if block ~ ~ ~ decorated_pot run setblock ~ ~ ~ air destroy
+execute positioned ~0 ~ ~-2 if block ~ ~ ~ decorated_pot run setblock ~ ~ ~ air destroy
+execute positioned ~0 ~ ~-1 if block ~ ~ ~ decorated_pot run setblock ~ ~ ~ air destroy
+execute positioned ~0 ~ ~0 if block ~ ~ ~ decorated_pot run setblock ~ ~ ~ air destroy
+execute positioned ~0 ~ ~1 if block ~ ~ ~ decorated_pot run setblock ~ ~ ~ air destroy
+execute positioned ~0 ~ ~2 if block ~ ~ ~ decorated_pot run setblock ~ ~ ~ air destroy
+execute positioned ~-1 ~ ~-2 if block ~ ~ ~ decorated_pot run setblock ~ ~ ~ air destroy
+execute positioned ~-1 ~ ~-1 if block ~ ~ ~ decorated_pot run setblock ~ ~ ~ air destroy
+execute positioned ~-1 ~ ~0 if block ~ ~ ~ decorated_pot run setblock ~ ~ ~ air destroy
+execute positioned ~-1 ~ ~1 if block ~ ~ ~ decorated_pot run setblock ~ ~ ~ air destroy
+execute positioned ~-1 ~ ~2 if block ~ ~ ~ decorated_pot run setblock ~ ~ ~ air destroy
+execute positioned ~-2 ~ ~-2 if block ~ ~ ~ decorated_pot run setblock ~ ~ ~ air destroy
+execute positioned ~-2 ~ ~-1 if block ~ ~ ~ decorated_pot run setblock ~ ~ ~ air destroy
+execute positioned ~-2 ~ ~0 if block ~ ~ ~ decorated_pot run setblock ~ ~ ~ air destroy
+execute positioned ~-2 ~ ~1 if block ~ ~ ~ decorated_pot run setblock ~ ~ ~ air destroy
+execute positioned ~-2 ~ ~2 if block ~ ~ ~ decorated_pot run setblock ~ ~ ~ air destroy
