@@ -1,20 +1,19 @@
-function skyblock:azr/debug/change_command_block
-#初始化记分板
+#tokumei-api
+#scoreboard objectives add SeGa_StandLastBH dummy
+#scoreboard objectives add MultiMenu trigger
+#scoreboard objectives add Perm_PersonSHD dummy
+
+#初始化临时记分板 这些记分板将在游戏结束后销毁
 scoreboard objectives add Azr_wave dummy
 scoreboard objectives add Azr_forceDeath dummy
 scoreboard objectives add Azr_isDead deathCount
-scoreboard objectives add Azr_startCount dummy
-scoreboard objectives add Azr_skillPoints dummy
+scoreboard objectives add Azr_emerald dummy
 #AZS_57534用于boss技能
 scoreboard objectives add AZS_57534 dummy
-#tokumei-api
-scoreboard objectives add SeGa_StandLastBH dummy
-scoreboard objectives add MultiMenu trigger
-scoreboard objectives add Perm_PersonSHD dummy
+
 #unused
-scoreboard objectives add Azr_shop_trigger trigger
-scoreboard objectives add Azr_emerald dummy
-scoreboard objectives add Azr_sarielStar dummy
+#scoreboard objectives add Azr_shop_trigger trigger
+#scoreboard objectives add Azr_sarielStar dummy
 
 #设置游戏数据
 scoreboard players add Pointer Azr_startCount 1

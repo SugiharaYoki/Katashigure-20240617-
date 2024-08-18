@@ -1,19 +1,21 @@
 #该函数是花园的时序函数，每秒运行一次
-#alreadyexecuted#scoreboard objectives add SeGa_NumPartic dummy
-#alreadyexecuted#scoreboard objectives add SeGa_NumMob dummy
-#alreadyexecuted#scoreboard objectives add SeGa_StandLastQ dummy
+#自动读秒
+execute unless score stopSeconds Azr_system matches 1 run scoreboard players add stageSeconds Azr_system 1
+
+#系统信息部分
+#调试信息
 execute as @a[tag=azrPlayer,tag=DebugMode] run scoreboard objectives setdisplay sidebar Azr_system
 #统计信息，怪物统计limit=70是因为停秒统计最多出现65，这样写是为了优化选择器
 execute store result score playerCount Azr_system if entity @a[tag=azrPlayer]
 scoreboard players operation playerCount Azr_system += DEBUG_fakePlayer Azr_system
 execute store result score mobCount Azr_system if entity @e[tag=AzrielMob,tag=!AzrielDecMob,x=-79931,y=100,z=0,distance=..10000,limit=70]
-#停秒
+
+#难度调整部分
+#根据怪物数量自动停秒
 scoreboard players set stopSeconds Azr_system 0
 execute if score playerCount Azr_system matches 1..4 if score mobCount Azr_system matches 7.. run scoreboard players set stopSeconds Azr_system 1
 execute if score playerCount Azr_system matches 5..6 if score mobCount Azr_system matches 9.. run scoreboard players set stopSeconds Azr_system 1
 execute if score playerCount Azr_system matches 7.. if score mobCount Azr_system matches 10.. run scoreboard players set stopSeconds Azr_system 1
-#自动读秒
-execute unless score stopSeconds Azr_system matches 1 run scoreboard players add stageSeconds Azr_system 1
 #在部分关卡强制读秒
 execute if score stopSeconds Azr_system matches 1 run function skyblock:azr/system_sub/force_seconds
 
@@ -38,7 +40,6 @@ execute if score stage Azr_system matches 7 run scoreboard players set stageSeco
 #第四关 8/33
 execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 8 run function skyblock:azr/stage/stage4
 execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 33 run function skyblock:azr/stage/stage4_beta
-
 #第四关-BOSS1 9
 execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 9 run function skyblock:azr/stage/stage_event1
 #BOSS1 10

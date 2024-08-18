@@ -139,6 +139,7 @@ scoreboard objectives add dailylogin dummy
 scoreboard objectives add dailylogin_c dummy
 scoreboard objectives add AnnouncementRo dummy
 scoreboard objectives add AnnouncementRoB dummy
+scoreboard objectives add SeGa_StandLastBH dummy
 
 scoreboard objectives add rng1 dummy
 scoreboard objectives add rng2 dummy

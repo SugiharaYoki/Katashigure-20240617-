@@ -495,19 +495,22 @@ tellraw @a[tag=!Gaming] [{"text":"『亚兹列尔的中庭花园』","color":"li
 #DEBUG: 当该函数被管理员/服务器后台强制执行时，杀死所有玩家。正常流程中触发该函数的同时不会存在玩家。
 scoreboard players set @a[tag=azrPlayer] Azr_forceDeath 1
 execute as @a[tag=azrPlayer] run function skyblock:azr/end_game/quit_game
-#删除记分板 Azr_system不删除
+#删除临时
 scoreboard objectives remove Azr_wave
 scoreboard objectives remove Azr_forceDeath
 scoreboard objectives remove Azr_isDead
 #scoreboard objectives remove Azr_startCount
 scoreboard objectives remove Azr_skillPoints
-scoreboard objectives remove Azr_shop_trigger
-scoreboard objectives remove Azr_emerald
-scoreboard objectives remove Azr_sarielStar
 scoreboard players set stageSeconds Azr_system 0
 scoreboard players set stage Azr_system 0
 scoreboard players set isStarted Azr_system 0
 scoreboard objectives setdisplay sidebar SeGa_StandLastBH
+
+#unused
+#scoreboard objectives remove Azr_shop_trigger
+#scoreboard objectives remove Azr_emerald
+#scoreboard objectives remove Azr_sarielStar
+
 #______________________________________________________________#
 forceload remove -80000 -400 -79800 -200
 forceload remove -80000 -200 -79800 000

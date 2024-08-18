@@ -1,52 +1,49 @@
-function skyblock:clear_attribute_modifiers
+function skyblock:api_start_any_game
+#azr-tags
 tag @s remove azrDead
-tag @s add Gaming
-tag @s add AzrielRefreshSuccess
-tag @s add NoMultiMenu
 tag @s add azrPlayer
-#scoreboard players reset @s If_MD_Cat
-#scoreboard players reset @s If_MD_13
-#scoreboard players reset @s If_MD_Blocks
-#scoreboard players reset @s If_MD_Chirp
-#scoreboard players reset @s If_MD_Far
-#scoreboard players reset @s If_MD_Mall
-#scoreboard players reset @s If_MD_Mellohi
-#scoreboard players reset @s If_MD_Stal
-#scoreboard players reset @s If_MD_Strad
-#scoreboard players reset @s If_MD_Ward
-#scoreboard players reset @s If_MD_11
-#scoreboard players reset @s If_MD_Wait
-#scoreboard players reset @s If_MD_Pigstep
-#scoreboard players reset @s If_MD_Otherside
-scoreboard players set @s Azr_forceDeath -1
-scoreboard players set @s Azr_emerald 0
-#scoreboard players set @s Azr_sarielStar 0
-scoreboard players set @s Azr_isDead 0
+
+#azr-player initialization
 gamemode adventure @s
-effect give @s saturation 3 29 true
-effect give @s instant_health 3 29 true
-execute at @p run spawnpoint @s ~ ~ ~
-advancement revoke @s from skyblock:azr_root
-advancement grant @s only skyblock:azr_root
-#wtf Azr_skillPoints是啥？
-scoreboard players add @s[scores={Azr_skillPoints=3..}] Azr_emerald 5
-scoreboard players add @s[scores={Azr_skillPoints=6..}] Azr_emerald 5
-scoreboard players operation @s Azr_startCount = Pointer Azr_startCount
+#状态初始化 这里先clear再给予是为了效果仅维持1tick
+effect clear @s saturation
+effect clear @s instant_health
+effect give @s saturation 3 100 true
+effect give @s instant_health 3 100 true
+
+spawnpoint @s ~ ~ ~
 team add AzrPlayer
 team join AzrPlayer @s
 team modify AzrPlayer color green
 team modify AzrPlayer friendlyFire false
 team modify AzrPlayer collisionRule never
-clear @s
+team modify AzrPlayer prefix {"text":"test","color":"green"}
 xp set @s 0
 xp set @s 0 levels
-tp @s -79936.0 38.15 -14.0 facing -79935.0 38.15 -14.0
+
+#位置初始化
+execute as @s[x=-79936.0,y=38.15,z=-14.0,distance=10..] run tp @s -79936.0 38.15 -14.0 facing -79935.0 38.15 -14.0
+
+#进度初始化
+advancement revoke @s from skyblock:azr_root
+advancement grant @s only skyblock:azr_root
+
+#背包初始化
+clear @s
 function skyblock:azr/items/wooden_sword
 function skyblock:azr/items/wooden_axe
 give @s pumpkin_pie 8
 give @s nether_star[custom_name='{"text":"下界命星","color":"yellow","italic":false}',custom_data={Azr_revivalStar:1b}] 1
+
+#游戏数据初始化
+scoreboard players add @s[scores={Azr_skillPoints=3..}] Azr_emerald 5
+scoreboard players add @s[scores={Azr_skillPoints=6..}] Azr_emerald 5
+scoreboard players operation @s Azr_startCount = Pointer Azr_startCount
+
+#输出信息
 tellraw @s {"text":"游戏开始……","color":"green"}
-function skyblock:clear_attribute_modifiers
+
+
 #function skyblock:azr/purchase_sega_azriel_plypts_react1
 
 #wtf
