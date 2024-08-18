@@ -12,17 +12,17 @@ execute if score chapter Azr_system matches 7 run tellraw @s {"text":"『第七�
 tellraw @s {"text":"   "}
 
 #print trades
-execute if score chapter Azr_system matches 1 run function skyblock:azr/shop/roll_chapter1
-execute if score chapter Azr_system matches 2 run function skyblock:azr/shop/roll_chapter2
-execute if score chapter Azr_system matches 3 run function skyblock:azr/shop/roll_chapter3
+execute if entity @s[tag=azrShopRefresh] if score chapter Azr_system matches 1 run function skyblock:azr/shop/roll_chapter1
+execute if entity @s[tag=azrShopRefresh] if score chapter Azr_system matches 2 run function skyblock:azr/shop/roll_chapter2
+execute if entity @s[tag=azrShopRefresh] if score chapter Azr_system matches 3 run function skyblock:azr/shop/roll_chapter3
 execute if score chapter Azr_system matches 1..3 run function skyblock:azr/shop/reader
-execute if score chapter Azr_system matches 4 run function skyblock:azr/shop/roll_chapter4
+execute if entity @s[tag=azrShopRefresh] if score chapter Azr_system matches 4 run function skyblock:azr/shop/roll_chapter4
 execute if score chapter Azr_system matches 4 run function skyblock:azr/shop/reader_nethershop_1
-#execute if score chapter Azr_system matches 5 run function skyblock:azr/shop/roll_chapter5
+#execute if entity @s[tag=azrShopRefresh] if score chapter Azr_system matches 5 run function skyblock:azr/shop/roll_chapter5
 #execute if score chapter Azr_system matches 5 run function skyblock:azr/shop/reader_nethershop_2
-#execute if score chapter Azr_system matches 6 run function skyblock:azr/shop/roll_chapter6
+#execute if entity @s[tag=azrShopRefresh] if score chapter Azr_system matches 6 run function skyblock:azr/shop/roll_chapter6
 #execute if score chapter Azr_system matches 6 run function skyblock:azr/shop/reader_nethershop_1
-#execute if score chapter Azr_system matches 7 run function skyblock:azr/shop/roll_chapter7
+#execute if entity @s[tag=azrShopRefresh] if score chapter Azr_system matches 7 run function skyblock:azr/shop/roll_chapter7
 tellraw @s {"text":"   "}
 
 #print extra-shops
@@ -49,3 +49,5 @@ tellraw @s [{"text":"  绿宝石余额：  ","color":"yellow"},{"score":{"name":
 tellraw @s {"text":"   "}
 
 tag @s add azrShopOnUse
+tag @s remove azrShopRefresh
+scoreboard players set @s Azr_Shop 0

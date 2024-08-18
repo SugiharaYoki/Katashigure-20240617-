@@ -7,3 +7,7 @@ execute unless data entity @s Inventory[{Slot:8b}] if entity @s[tag=azrBanLifeVi
 execute if data entity @s[tag=hasLifeVitae] Inventory[{id:"minecraft:emerald"}] run function skyblock:azr/shop/money_conversion
 #商店入口
 execute if items entity @s weapon.mainhand *[custom_data~{LifeVitae:1b}] unless entity @s[tag=azrShopOnUse] run function skyblock:azr/shop/build
+execute unless items entity @s weapon.mainhand *[custom_data~{LifeVitae:1b}] run tag @s remove azrShopOnUse
+execute if items entity @s weapon.mainhand *[custom_data~{LifeVitae:1b}] if score @s Azr_Shop matches 20..40 run function skyblock:azr/shop/refresh
+#trigger
+scoreboard players enable @a Azr_Shop
