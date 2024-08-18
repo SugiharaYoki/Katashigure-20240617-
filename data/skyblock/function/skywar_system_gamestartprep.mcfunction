@@ -222,8 +222,8 @@ execute if score @n[tag=sc] SSgspT matches 13 if score @n[tag=sc] Map_Code match
 #[futuredevskywar]
 execute if block -19 23 32 minecraft:soul_lantern if score @n[tag=sc] SSgspT matches 17 run effect clear @a[tag=PVPing]
 execute if block -19 23 32 minecraft:soul_lantern if score @n[tag=sc] SSgspT matches 17 run execute as @a[tag=PVPing] at @s run function skyblock:skywar_system_jobbonus
-execute if score @n[tag=sc] SSgspT matches 17 run execute as @a[tag=PVPing] at @s run function skyblock:skywar_system_levelbonus
-execute if block -19 23 32 minecraft:soul_lantern if score @n[tag=sc] SSgspT matches 17 run execute as @a[tag=PVPing] at @s run function skyblock:skywar_system_levelbonus2
+#execute if score @n[tag=sc] SSgspT matches 17 run execute as @a[tag=PVPing] at @s run function skyblock:skywar_system_levelbonus
+#execute if block -19 23 32 minecraft:soul_lantern if score @n[tag=sc] SSgspT matches 17 run execute as @a[tag=PVPing] at @s run function skyblock:skywar_system_levelbonus2
 execute if block 43 58 55 minecraft:soul_lantern if score @n[tag=sc] SSgspT matches 17 run execute as @a[tag=PVPing] at @s run give @s tnt 20
 execute if block -131 59 -126 minecraft:green_concrete if score @n[tag=sc] SSgspT matches 17 run execute as @a[tag=PVPing] at @s run give @s golden_carrot 3
 execute if block -131 59 -128 minecraft:green_concrete if score @n[tag=sc] SSgspT matches 17 run execute as @a[tag=PVPing] at @s run effect give @s absorption 300 3 true
