@@ -26,11 +26,11 @@ execute if score @n[tag=sc] SSgspT matches 1 run tellraw @a[tag=!Gaming,tag=!NoS
 execute if score @n[tag=sc] SSgspT matches 1 run tellraw @a[tag=!Gaming,tag=!NoSkyWar] {"text":"   —— [不参加游戏： 直到自己重新打开] ——","color":"green","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 995"},"hoverEvent":{"action":"show_text","contents":{"text":"开启“自动参加PVP战争”","color":"green"}}}
 execute if score @n[tag=sc] SSgspT matches 1 run tellraw @a[tag=!Gaming,tag=!NoSkyWar] {"text":"   —— [暂停开局] ——","color":"yellow","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 994"},"hoverEvent":{"action":"show_text","contents":{"text":"暂停PVP战场的开局","color":"green"}}}
 execute if score @n[tag=sc] SSgspT matches 1 run tellraw @a[tag=!Gaming,tag=!NoSkyWar] {"text":"   —— [重置倒计时] ——","color":"yellow","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 996"},"hoverEvent":{"action":"show_text","contents":{"text":"重置PVP战场的开局倒计时","color":"green"}}}
-execute if score @n[tag=sc] SSgspT matches 1 as @a[tag=!NoSkyWar] at @s unless entity @s[scores={Job=0..}] run tellraw @s {"text":"您的职业为空！系统已经自动将您的职业初始化至「旅行家」","color":"light_purple"}
-execute if score @n[tag=sc] SSgspT matches 1 as @a[tag=!NoSkyWar] at @s unless entity @s[scores={Job=0..}] run scoreboard players set @s Job 3
-execute if score @n[tag=sc] SSgspT matches 1 as @a[tag=!NoSkyWar] at @s unless entity @s[scores={Job_SpiritProp=0..}] run tellraw @s {"text":"您还没有设定精神力属性！系统已经自动将您的属性设置为「日」","color":"light_purple" }
-execute if score @n[tag=sc] SSgspT matches 1 as @a[tag=!NoSkyWar] at @s unless entity @s[scores={Job_SpiritProp=0..}] run tellraw @s {"text":"小贴士： 您可以在多功能菜单的“游戏选项”中更换精神力属性。","color":"light_purple"}
-execute if score @n[tag=sc] SSgspT matches 1 as @a[tag=!NoSkyWar] at @s unless entity @s[scores={Job_SpiritProp=0..}] run scoreboard players set @s Job_SpiritProp 1
+#execute if score @n[tag=sc] SSgspT matches 1 as @a[tag=!NoSkyWar] at @s unless entity @s[scores={Job=0..}] run tellraw @s {"text":"您的职业为空！系统已经自动将您的职业初始化至「旅行家」","color":"light_purple"}
+#execute if score @n[tag=sc] SSgspT matches 1 as @a[tag=!NoSkyWar] at @s unless entity @s[scores={Job=0..}] run scoreboard players set @s Job 3
+#execute if score @n[tag=sc] SSgspT matches 1 as @a[tag=!NoSkyWar] at @s unless entity @s[scores={Job_SpiritProp=0..}] run tellraw @s {"text":"您还没有设定精神力属性！系统已经自动将您的属性设置为「日」","color":"light_purple" }
+#execute if score @n[tag=sc] SSgspT matches 1 as @a[tag=!NoSkyWar] at @s unless entity @s[scores={Job_SpiritProp=0..}] run tellraw @s {"text":"小贴士： 您可以在多功能菜单的“游戏选项”中更换精神力属性。","color":"light_purple"}
+#execute if score @n[tag=sc] SSgspT matches 1 as @a[tag=!NoSkyWar] at @s unless entity @s[scores={Job_SpiritProp=0..}] run scoreboard players set @s Job_SpiritProp 1
 #《地图预加载初始化》
 #-#-#setblock 12 60 -7 green_wool
 #-#-#setblock 19 60 -7 green_wool
