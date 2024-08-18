@@ -499,6 +499,7 @@ scoreboard objectives remove Azr_wave
 scoreboard objectives remove Azr_forceDeath
 scoreboard objectives remove Azr_isDead
 scoreboard objectives remove Azr_emerald
+scoreboard objectives remove Azr_Shop_rng
 #scoreboard objectives remove Azr_startCount
 scoreboard objectives remove Azr_skillPoints
 scoreboard players set stageSeconds Azr_system 0
