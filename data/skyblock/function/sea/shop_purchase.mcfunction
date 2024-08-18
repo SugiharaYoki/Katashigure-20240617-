@@ -224,6 +224,13 @@ execute if entity @s[tag=sea_purchase_pass] run give @s arrow 8
 execute if entity @s[tag=sea_purchase_pass] run clear @s flint 2
 tag @s remove sea_purchase_pass
 
+execute if score @s sea_crafter matches 10028 as @s[scores={sea_i_gunpowder=..2}] run tellraw @s {"text":"失败！素材不足！","color":"red"}
+execute if score @s sea_crafter matches 10028 as @s[scores={sea_i_gunpowder=3..}] run tag @s add sea_purchase_pass
+execute if entity @s[tag=sea_purchase_pass] run playsound minecraft:block.note_block.hat player @a ~ ~ ~ 0.8 0.7
+execute if entity @s[tag=sea_purchase_pass] run give @s fire_charge 3
+execute if entity @s[tag=sea_purchase_pass] run clear @s gunpowder 3
+tag @s remove sea_purchase_pass
+
 
 #塞壬铜板
 execute store result score @s rng1 run random value 1..35

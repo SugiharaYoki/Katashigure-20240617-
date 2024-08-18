@@ -9,3 +9,4 @@ execute as @s store result score @s sea_i_trim_skeleton run clear @s dune_armor_
 execute as @s store result score @s sea_i_iron_ingot run clear @s iron_ingot 0
 execute as @s store result score @s sea_i_flint run clear @s flint 0
 execute as @s store result score @s sea_i_echo_shard run clear @s echo_shard 0
+execute as @s store result score @s sea_i_gunpowder run clear @s gunpowder 0

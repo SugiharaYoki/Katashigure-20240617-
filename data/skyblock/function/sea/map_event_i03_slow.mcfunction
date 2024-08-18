@@ -98,7 +98,7 @@ execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=366}] positioned
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=388}] positioned 90133 137 108 as @p[tag=SEAPT] run scoreboard players set @a[tag=SEAPT,scores={SEA_story=..1}] SEA_story 2
 
 
-
+execute if block 90107 138 117 iron_bars if block 90104 138 125 lever[powered=false] if block 90104 138 124 lever[powered=false] if block 90104 138 123 lever[powered=true] if block 90104 138 122 lever[powered=false] if block 90104 138 121 lever[powered=true] if block 90104 138 120 lever[powered=true] run fill 90107 138 117 90107 137 117 air destroy
 
 
 

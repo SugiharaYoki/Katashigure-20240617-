@@ -68,11 +68,32 @@ item replace block 90113 140 109 container.13 with emerald 3
 setblock 90136 138 109 polished_tuff
 setblock 90136 137 109 polished_andesite
 
-
+setblock 90122 137 120 chest[facing=east]
+setblock 90086 145 116 chest[facing=north]{Lock:"器械资源室2F 燃料架 - B"}
+item replace block 90086 145 116 container.12 with flint 1
+item replace block 90086 145 116 container.14 with coal 2
+setblock 90086 143 116 chest[facing=north]{Lock:"器械资源室2F 燃料架 - B"}
+fill 90104 138 120 90104 138 125 air
+fill 90104 138 120 90104 138 125 lever[facing=east]
+setblock 90104 137 117 chest[facing=east]
+item replace block 90104 137 117 container.12 with wild_armor_trim_smithing_template[custom_name='{"text":"狂荒石板","bold":false,"italic":true,"color":"light_purple","italic":false}'] 2
+item replace block 90104 137 117 container.14 with gunpowder 2
+fill 90107 138 117 90107 137 117 iron_bars
 
 summon marker 90111 137 101 {Tags:["SEAmagma1"]}
 summon marker 90119 137 110 {Tags:["SEAmagma1"]}
 summon marker 90121 137 108 {Tags:["SEAmagma1"]}
 summon marker 90094 137 97 {Tags:["SEAmagma1"]}
 summon marker 90094 137 124 {Tags:["SEAmagma1"]}
+
+
+
+
+
+
+
+
+
+
+
 
