@@ -483,9 +483,8 @@ tag @a remove azrDead
 #tag @e[tag=sc,limit=1] remove Azr_Doppel
 #______________________________________________________________#
 bossbar remove azr:boss_hp_bar
-bossbar remove minecraft:8432102
+bossbar remove azr:progress_bar_special
 bossbar remove azr:progress_bar_normal
-bossbar remove minecraft:8432198
 #______________________________________________________________#
 #清场
 kill @e[type=!player,tag=!protected_entity,x=-80000,y=100,z=0,distance=0..1000]
@@ -495,10 +494,11 @@ tellraw @a[tag=!Gaming] [{"text":"『亚兹列尔的中庭花园』","color":"li
 #DEBUG: 当该函数被管理员/服务器后台强制执行时，杀死所有玩家。正常流程中触发该函数的同时不会存在玩家。
 scoreboard players set @a[tag=azrPlayer] Azr_forceDeath 1
 execute as @a[tag=azrPlayer] run function skyblock:azr/end_game/quit_game
-#删除临时
+#删除临时记分板
 scoreboard objectives remove Azr_wave
 scoreboard objectives remove Azr_forceDeath
 scoreboard objectives remove Azr_isDead
+scoreboard objectives remove Azr_emerald
 #scoreboard objectives remove Azr_startCount
 scoreboard objectives remove Azr_skillPoints
 scoreboard players set stageSeconds Azr_system 0
