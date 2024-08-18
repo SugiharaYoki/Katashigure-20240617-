@@ -1,5 +1,6 @@
 execute unless block -17 23 32 soul_lantern run scoreboard players add @n[tag=sc,scores={SSgspT=..10}] SSgspT 1
 execute if block -17 23 32 soul_lantern run scoreboard players add @n[tag=sc,scores={SSgspT=11..}] SSgspT 1
+execute unless entity @n[tag=sc,scores={SSgspT=-9999..}] run scoreboard players add @n[tag=sc] SSgspT 1
 #《计时器初始化》
 #-#-#setblock 10 66 -12 minecraft:redstone_wire
 #-#-#setblock 11 60 -10 minecraft:redstone_wire
