@@ -1,4 +1,5 @@
 
+setblock 90078 92 143 air
 setblock 90078 92 143 lever[facing=north,powered=false]
 
 execute if entity @n[tag=SEA_choose_chapter_1,type=armor_stand] run setblock 90078 91 145 green_concrete
