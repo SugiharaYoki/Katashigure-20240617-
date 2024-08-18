@@ -4,22 +4,22 @@ tag @s remove azrDead
 tag @s add azrPlayer
 
 #azr-player initialization
+#玩家初始化
 gamemode adventure @s
-#状态初始化 这里先clear再给予是为了效果仅维持1tick
-effect clear @s saturation
-effect clear @s instant_health
-effect give @s saturation 3 100 true
-effect give @s instant_health 3 100 true
-
 spawnpoint @s ~ ~ ~
 team add AzrPlayer
 team join AzrPlayer @s
 team modify AzrPlayer color green
 team modify AzrPlayer friendlyFire false
 team modify AzrPlayer collisionRule never
-team modify AzrPlayer prefix {"text":"test","color":"green"}
 xp set @s 0
 xp set @s 0 levels
+
+#状态初始化 这里先clear再给予是为了效果仅维持1tick
+effect clear @s saturation
+effect clear @s instant_health
+effect give @s saturation 3 100 true
+effect give @s instant_health 3 100 true
 
 #位置初始化
 execute as @s[x=-79936.0,y=38.15,z=-14.0,distance=10..] run tp @s -79936.0 38.15 -14.0 facing -79935.0 38.15 -14.0
@@ -42,8 +42,6 @@ scoreboard players operation @s Azr_startCount = Pointer Azr_startCount
 
 #输出信息
 tellraw @s {"text":"游戏开始……","color":"green"}
-
-
 #function skyblock:azr/purchase_sega_azriel_plypts_react1
 
 #wtf
