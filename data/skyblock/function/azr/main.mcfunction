@@ -59,3 +59,12 @@ execute if score isStarted Azr_system matches 1 if entity @a[x=-79931,y=100,z=0,
 #DEBUG-关卡上限提示
 execute as @r[tag=azrPlayer] if score stage Azr_system = DEBUG_maxStageLimit Azr_system run tellraw @a[tag=azrPlayer] [{"text":"You have passed maximum stage(limited in debug mode) ","color": "red"},{"score":{"objective": "Azr_system","name": "stage"},"color":"light_purple"},{"text":"/","color":"light_purple"},{"score":{"objective": "Azr_system","name": "DEBUG_maxStageLimit"},"color":"light_purple"}]
 execute as @r[tag=azrPlayer] if score stage Azr_system = DEBUG_maxStageLimit Azr_system run function skyblock:azr/endgame
+#DEBUG-错误信息
+execute as @a if items entity @s weapon.mainhand *[custom_data~{Error:1b}] run tellraw @a [{"text":"\n=============\n"},\
+{"text":"游戏发生错误，请将此信息截图并发送给管理员以协助解决此错误\n"},\
+{"text":"\nstage"},{"score":{"name":"stage","objective":"Azr_system"}},\
+{"text":"\nstageSeconds"},{"score":{"name":"stageSeconds","objective":"Azr_system"}},\
+{"text":"\nstopSeconds"},{"score":{"name":"stopSeconds","objective":"Azr_system"}},\
+{"text":"\nplayerCount"},{"score":{"name":"playerCount","objective":"Azr_system"}},\
+{"text":"\nmobCount"},{"score":{"name":"mobCount","objective":"Azr_system"}},\
+{"text":"\n=============\n"}]
