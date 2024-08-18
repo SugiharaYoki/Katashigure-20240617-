@@ -8,12 +8,12 @@ scoreboard objectives add Azr_wave dummy
 scoreboard objectives add Azr_forceDeath dummy
 scoreboard objectives add Azr_isDead deathCount
 scoreboard objectives add Azr_emerald dummy
+scoreboard objectives add Azr_Shop trigger
 scoreboard objectives add Azr_Shop_rng dummy
 #AZS_57534用于boss技能
 scoreboard objectives add AZS_57534 dummy
 
 #unused
-#scoreboard objectives add Azr_shop_trigger trigger
 #scoreboard objectives add Azr_sarielStar dummy
 
 #设置游戏数据
