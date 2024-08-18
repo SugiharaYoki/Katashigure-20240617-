@@ -1,6 +1,5 @@
 {
     "values": [
-        "skyblock:azr/main",
-        "skyblock:inventory_manager"
+        "skyblock:azr/main"
     ]
 }
