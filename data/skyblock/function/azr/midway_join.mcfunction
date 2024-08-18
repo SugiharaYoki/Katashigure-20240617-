@@ -13,9 +13,9 @@ scoreboard players operation @s Azr_emerald = @r[tag=azrPlayer] Azr_wave
 scoreboard players operation @s Azr_emerald += @s Azr_emerald
 scoreboard players operation @s Azr_emerald += @s Azr_emerald
 #初始化并传送自己
-function skyblock:azr/system_sub/player_init
 execute at @r[tag=azrPlayer,distance=0.1..] run spawnpoint @s
 tp @s @r[tag=azrPlayer,distance=0.1..]
+function skyblock:azr/system_sub/player_init
 function skyblock:azr/update_bossbar
 #生命手册
 execute if score stage Azr_system matches 3.. run tellraw @s[tag=!hasLifeVitae] {"text":"你已永久解锁「生命手册」。记得收集绿宝石与素材，使用手册换取必要的武器与道具。"}
@@ -42,8 +42,8 @@ execute if entity @s[scores={Azr_wave=36..}] run function skyblock:azr/items/iro
 execute if entity @s[scores={Azr_wave=36..}] run function skyblock:azr/items/soul_expel_torch
 execute if entity @s[scores={Azr_wave=36..}] run give @s cooked_salmon 16
 execute if entity @s[scores={Azr_wave=36..}] run give @s golden_carrot 2
-execute if entity @s[scores={Azr_wave=36..}] run item replace entity @s inventory.0 with nether_star[custom_name='{"text":"下界命星","color":"yellow","italic":false}',custom_data={Azr_revivalStar:1b}]
-execute if entity @s[scores={Azr_wave=36..}] run item replace entity @s inventory.1 with nether_star[custom_name='{"text":"下界命星","color":"yellow","italic":false}',custom_data={Azr_revivalStar:1b}]
+execute if entity @s[scores={Azr_wave=36..}] run function skyblock:azr/items/revival_star
+execute if entity @s[scores={Azr_wave=36..}] run function skyblock:azr/items/revival_star
 execute if entity @s[scores={Azr_wave=36..}] run item replace entity @s inventory.2 with flint_and_steel[enchantments={fire_aspect:2}]
 execute if entity @s[scores={Azr_wave=36..}] run item replace entity @s inventory.3 with beetroot[custom_name='{"text":"爆裂菜根","italic":false}',lore=['{"text":"投掷 - 轰炸（射程较低）","color":"yellow"}'],enchantments={punch:1}] 5
 execute if entity @s[scores={Azr_wave=36..}] run item replace entity @s inventory.4 with arrow 38

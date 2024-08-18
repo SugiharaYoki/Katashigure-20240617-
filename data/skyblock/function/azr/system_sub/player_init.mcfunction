@@ -32,8 +32,8 @@ advancement grant @s only skyblock:azr_root
 clear @s
 function skyblock:azr/items/wooden_sword
 function skyblock:azr/items/wooden_axe
+function skyblock:azr/items/revival_star
 give @s pumpkin_pie 8
-give @s nether_star[custom_name='{"text":"下界命星","color":"yellow","italic":false}',custom_data={Azr_revivalStar:1b}] 1
 
 #游戏数据初始化
 scoreboard players add @s[scores={Azr_skillPoints=3..}] Azr_emerald 5

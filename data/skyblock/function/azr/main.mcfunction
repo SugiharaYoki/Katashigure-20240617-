@@ -43,6 +43,9 @@ execute if score isStarted Azr_system matches 1 unless score stopSeconds Azr_sys
 #execute as @a if data entity @s Inventory[{id:"minecraft:skull_banner_pattern"}].components."minecraft:lore"[5] run tellraw @a [{"nbt":"Inventory[{id:\"minecraft:skull_banner_pattern\"}].components.\"minecraft:lore\"[5]","entity":"@s","interpret":true}]
 #execute as @a if data entity @s Inventory[{id:"minecraft:skull_banner_pattern"}] run clear @s minecraft:skull_banner_pattern
 
+#商店系统
+execute if score isStarted Azr_system matches 1 as @a[tag=hasLifeVitae] run function skyblock:azr/shop/core
+
 #结束游戏
 #游戏未开始或对局不匹配时强制杀死玩家
 execute if score isStarted Azr_system matches 0 as @a[tag=azrPlayer] run function skyblock:azr/end_game/quit_game
