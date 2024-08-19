@@ -82,6 +82,9 @@ item replace block 90086 143 114 container.11 with gunpowder 2
 item replace block 90086 143 114 container.13 with emerald 5
 item replace block 90086 143 114 container.15 with gunpowder 2
 
+setblock 90154 129 98 air
+setblock 90154 129 98 lever[facing=east]
+
 fill 90104 138 120 90104 138 125 air
 fill 90104 138 120 90104 138 125 lever[facing=east]
 setblock 90104 137 117 chest[facing=east]
@@ -97,7 +100,9 @@ summon marker 90094 137 124 {Tags:["SEAmagma1"]}
 
 fill 90086 138 128 90086 137 128 minecraft:slime_block
 
-
+setblock 90152 128 122 chest[facing=north]
+item replace block 90152 128 122 container.12 with compass 1
+item replace block 90152 128 122 container.14 with dune_armor_trim_smithing_template[custom_name='{"text":"金砂石板","italic":true,"color":"light_purple","italic":false}'] 2
 
 
 
