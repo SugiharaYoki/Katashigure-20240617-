@@ -1,21 +1,16 @@
 #该函数是花园的时序函数，每秒运行一次
-#自动读秒
-execute unless score stopSeconds Azr_system matches 1 run scoreboard players add stageSeconds Azr_system 1
-
-#系统信息部分
-#调试信息
 execute as @a[tag=azrPlayer,tag=DebugMode] run scoreboard objectives setdisplay sidebar Azr_system
 #统计信息，怪物统计limit=70是因为停秒统计最多出现65，这样写是为了优化选择器
 execute store result score playerCount Azr_system if entity @a[tag=azrPlayer]
 scoreboard players operation playerCount Azr_system += DEBUG_fakePlayer Azr_system
 execute store result score mobCount Azr_system if entity @e[tag=AzrielMob,tag=!AzrielDecMob,x=-79931,y=100,z=0,distance=..10000,limit=70]
-
-#难度调整部分
-#根据怪物数量自动停秒
+#停秒
 scoreboard players set stopSeconds Azr_system 0
 execute if score playerCount Azr_system matches 1..4 if score mobCount Azr_system matches 7.. run scoreboard players set stopSeconds Azr_system 1
 execute if score playerCount Azr_system matches 5..6 if score mobCount Azr_system matches 9.. run scoreboard players set stopSeconds Azr_system 1
 execute if score playerCount Azr_system matches 7.. if score mobCount Azr_system matches 10.. run scoreboard players set stopSeconds Azr_system 1
+#自动读秒
+execute unless score stopSeconds Azr_system matches 1 run scoreboard players add stageSeconds Azr_system 1
 #在部分关卡强制读秒
 execute if score stopSeconds Azr_system matches 1 run function skyblock:azr/system_sub/force_seconds
 
@@ -40,6 +35,7 @@ execute if score stage Azr_system matches 7 run scoreboard players set stageSeco
 #第四关 8/33
 execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 8 run function skyblock:azr/stage/stage4
 execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 33 run function skyblock:azr/stage/stage4_beta
+
 #第四关-BOSS1 9
 execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 9 run function skyblock:azr/stage/stage_event1
 #BOSS1 10
@@ -73,13 +69,18 @@ execute if score stage Azr_system matches 21..22 run function skyblock:azr/stage
 execute if block -79946 39 50 minecraft:birch_button[powered=true] run function skyblock:azr/stage/stage_cerement_prep
 execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 30 run function skyblock:azr/stage/stage_cerement
 #奖励关 Stage Entertain 31
+execute if block -79887 44 164 minecraft:birch_button[powered=true] run function skyblock:azr/stage/stage_entertain_prep
 execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 31 run function skyblock:azr/stage/stage_entertain
 #奖励关 Stage Vestige 240
 execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 240 run function skyblock:azr/stage/stage_vestige
 #奖励关 Stage Appetence 34
 execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 34 run function skyblock:azr/stage/stage_appetence
 
-
+#章节设置
+execute if entity @a[scores={Azr_wave=0..9}] run scoreboard players set chapter Azr_system 1
+execute if entity @a[scores={Azr_wave=10..22}] run scoreboard players set chapter Azr_system 2
+execute if entity @a[scores={Azr_wave=23..35}] run scoreboard players set chapter Azr_system 3
+execute if entity @a[scores={Azr_wave=23..36}] run scoreboard players set chapter Azr_system 4
 
 #function skyblock:azr/ingame_azrielsmidgarden_core_sub1
 #execute if entity @e[tag=sc,limit=1,scores={SeGa_StandLastP=11}] run scoreboard players set @e[tag=sc,limit=1] SeGa_StandLast 0
