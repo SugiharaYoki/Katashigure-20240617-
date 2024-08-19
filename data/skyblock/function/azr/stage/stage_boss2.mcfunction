@@ -1,5 +1,5 @@
-execute as @a[x=-79903,y=38,z=-5,distance=..2,tag=azrPlayer] run tp @a[tag=azrPlayer] @s
-execute as @a[x=-79903,y=38,z=-5,distance=..2,tag=azrPlayer] run scoreboard players set tickTimer Azr_system 0
+execute unless score tickTimer Azr_system matches -2147483648..2147483647 as @a[x=-79903,y=38,z=-5,distance=..2,tag=azrPlayer] run tp @a[tag=azrPlayer] @s
+execute unless score tickTimer Azr_system matches -2147483648..2147483647 as @a[x=-79903,y=38,z=-5,distance=..2,tag=azrPlayer] run scoreboard players set tickTimer Azr_system 0
 execute if score tickTimer Azr_system matches 3..50 as @a[tag=azrPlayer] at @s unless block ~ ~-1 ~ air unless block ~ ~-1 ~ lava unless block ~ ~ ~ lava run spawnpoint @s ~ ~ ~
 execute if score tickTimer Azr_system matches 2 run fill -79904 41 0 -79902 38 0 minecraft:red_stained_glass
 execute if score tickTimer Azr_system matches 2 run setblock -79879 48 -16 anvil
