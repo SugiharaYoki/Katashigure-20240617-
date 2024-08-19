@@ -74,6 +74,7 @@ execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system 
 #奖励关 Stage Vestige 240
 execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 240 run function skyblock:azr/stage/stage_vestige
 #奖励关 Stage Appetence 34
+execute if block -79949 33 140 minecraft:birch_button[powered=true] run function skyblock:azr/stage/stage_appetence_prep
 execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 34 run function skyblock:azr/stage/stage_appetence
 
 #章节设置
@@ -115,9 +116,9 @@ scoreboard players set gametick Azr_system 0
 #BOSS2-prep 23[22+1]
 #BOSS2 24[23+1]
 #Stage Appetence 34(stage6下边)
-#许愿池stage6-7
+#许愿池stage6-7 见sub_core4x_stagerocess
 #灵能
-#商店
 #button2（stage7二楼）
 #button3（stage7三楼）
 #button4（图书馆）
+#event6 见sub_core4x_stagerocess
