@@ -2,7 +2,7 @@ execute if score stageSeconds Azr_system matches 2..6 as @a[tag=azrPlayer] at @s
 execute if score stageSeconds Azr_system matches 7 run bossbar add azr:progress_bar_normal "Stage 8"
 execute if score stageSeconds Azr_system matches 7 run bossbar set azr:progress_bar_normal color white
 execute if score stageSeconds Azr_system matches 7 run bossbar set azr:progress_bar_normal players @a[tag=azrPlayer]
-execute if score stageSeconds Azr_system matches 7 run bossbar set azr:progress_bar_normal max 600
+execute if score stageSeconds Azr_system matches 7 run bossbar set azr:progress_bar_normal max 370
 execute if score stageSeconds Azr_system matches 7..300 store result bossbar azr:progress_bar_normal value run scoreboard players get stageSeconds Azr_system
 execute if score stageSeconds Azr_system matches 300 run bossbar remove azr:progress_bar_normal
 execute if score stageSeconds Azr_system matches 1.. run function skyblock:azr/tool_rng

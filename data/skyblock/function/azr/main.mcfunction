@@ -46,7 +46,7 @@ scoreboard objectives add Azr_SK15 dummy
 #skill 16 unused
 scoreboard objectives add Azr_SK16 dummy
 #设置系统参数
-scoreboard players set DEBUG_maxStageLimit Azr_system 21
+scoreboard players set DEBUG_maxStageLimit Azr_system 24
 #scoreboard players set DEBUG_fakePlayer Azr_system 10
 
 #游戏运行时
