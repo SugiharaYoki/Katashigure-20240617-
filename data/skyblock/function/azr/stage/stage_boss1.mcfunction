@@ -1,4 +1,8 @@
 scoreboard objectives add Azr_mobHealth dummy
+
+execute as @e[tag=57531b,type=armor_stand] at @s run function skyblock:azr/stage/boss1/arroworb
+execute as @e[tag=57531bpl,type=armor_stand] at @s run function skyblock:azr/stage/boss1/arroworb2
+
 execute as @e[tag=AzrielBossA] store result score @s Azr_mobHealth run data get entity @s Health
 execute if score tickTimer Azr_system matches 3..50 as @a[tag=azrPlayer] at @s unless block ~ ~-1 ~ air unless block ~ ~-1 ~ lava unless block ~ ~ ~ lava run spawnpoint @s ~ ~ ~
 execute if score tickTimer Azr_system matches 1 run fill -79932 38 72 -79930 42 72 red_stained_glass

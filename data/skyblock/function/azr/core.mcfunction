@@ -104,8 +104,8 @@ execute if entity @a[scores={Azr_wave=23..36}] run scoreboard players set chapte
 #execute as @a[nbt={SelectedItem:{id:"minecraft:compass"}}] at @s unless entity @e[distance=0..20,tag=AzrielBossB] run function skyblock:azr/azrielsmidgarden_effect_compass
 #execute as @a[nbt={SelectedItem:{id:"minecraft:compass"}}] at @s if entity @e[distance=0..20,tag=AzrielBossB] run function skyblock:azr/azrielsmidgarden_effect_compass_boss3
 #execute as @a[tag=azrPlayer] at @s if score @s Azr_startCount < Pointer Azr_startCount run kill @s
-#重置计时器
 
+#重置计时器
 scoreboard players set gametick Azr_system 0
 
 #第一章-第二章 TODO：

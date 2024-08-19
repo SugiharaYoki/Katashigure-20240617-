@@ -52,6 +52,10 @@ scoreboard players set DEBUG_maxStageLimit Azr_system 21
 #游戏运行时
 execute as @a[tag=azrPlayer,scores={Azr_forceDeath=1..}] at @s run function skyblock:azr/end_game/player_dead
 execute as @a[tag=azrPlayer,scores={Azr_isDead=1..}] at @s run function skyblock:azr/end_game/player_dead
+
+#在appetence的四倍速走秒
+execute if score isStarted Azr_system matches 1 if score stage Azr_system matches 34 if score gametick Azr_system matches 5.. run function skyblock:azr/core
+execute if score isStarted Azr_system matches 1 if score stage Azr_system matches 34 if score gametick Azr_system matches 5.. run function skyblock:azr/core
 execute if score isStarted Azr_system matches 1 if score gametick Azr_system matches 20.. run function skyblock:azr/core
 #使用了tickTimer的关卡在这里处理
 #timerTimer读秒，要停下只需reset记分板
