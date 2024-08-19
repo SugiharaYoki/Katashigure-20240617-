@@ -31,3 +31,4 @@ execute if score tickTimer Azr_system matches 57 run particle minecraft:end_rod 
 execute if score tickTimer Azr_system matches 59 run particle minecraft:end_rod -79930.5 38.5 -8.5 0 0 0 0.01 1
 execute if score tickTimer Azr_system matches 61 run particle minecraft:end_rod -79930.5 38.0 -8.5 0 0 0 0.01 1
 execute if score tickTimer Azr_system matches 63 positioned -79930.5 38.0 -8.5 run function skyblock:azr/effects/basalt_open
+execute if score tickTimer Azr_system matches 64 run scoreboard players reset tickTimer
