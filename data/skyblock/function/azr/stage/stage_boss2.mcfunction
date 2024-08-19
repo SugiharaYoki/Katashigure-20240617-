@@ -495,7 +495,6 @@ execute if score tickTimer Azr_system matches 6782 as @a[tag=azrPlayer,scores={A
 execute if score tickTimer Azr_system matches 6760 run fill -79927 38 -13 -79927 42 -16 minecraft:air destroy
 execute if score tickTimer Azr_system matches 6760 run clone -79902 36 -41 -79898 43 -32 -79933 37 -27
 execute if score tickTimer Azr_system matches 6520 run scoreboard players set stageSeconds Azr_system 0
-execute if score tickTimer Azr_system matches 6789 run scoreboard players reset tickTimer Azr_system
 execute if score tickTimer Azr_system matches 6790 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..9}] Azr_skillPoints 10
 execute if score tickTimer Azr_system matches 6790 run scoreboard players set stage Azr_system 25
 execute if score tickTimer Azr_system matches 6750 run summon pillager -79932 38 -32 {Rotation:[-28.6f,0.0f],Invulnerable:1b,CanPickUpLoot:0b,PersistenceRequired:1b,Tags:["AzrielFriendly"],Health:3.0f,CustomName:'"弩手"',attributes:[{id:"generic.max_health",base:3.0d},{id:"generic.movement_speed",base:0.1d}]}
@@ -530,3 +529,5 @@ execute if score tickTimer Azr_system matches 6750 if score playerCount Azr_syst
 execute if score tickTimer Azr_system matches 6750 if score playerCount Azr_system matches 5.. run summon silverfish -79937 37 -85 {PersistenceRequired:1b,Tags:["AzrielMob","AzrielDecMob"],DeathLootTable:"skyblock:azriel_silverfish_tier2_grass",Health:8.5f,CustomName:'"苔廊虫"',attributes:[{id:"generic.max_health",base:8.5d},{id:"generic.attack_damage",base:2.5d},{id:"generic.movement_speed",base:0.22d}]}
 execute if score tickTimer Azr_system matches 6750 if score playerCount Azr_system matches 6.. run summon silverfish -79937 37 -85 {PersistenceRequired:1b,Tags:["AzrielMob","AzrielDecMob"],DeathLootTable:"skyblock:azriel_silverfish_tier2_grass",Health:8.5f,CustomName:'"苔廊虫"',attributes:[{id:"generic.max_health",base:8.5d},{id:"generic.attack_damage",base:2.5d},{id:"generic.movement_speed",base:0.22d}]}
 execute if score tickTimer Azr_system matches 6750 if score playerCount Azr_system matches 7.. run summon silverfish -79937 37 -85 {PersistenceRequired:1b,Tags:["AzrielMob","AzrielDecMob"],DeathLootTable:"skyblock:azriel_silverfish_tier2_grass",Health:8.5f,CustomName:'"苔廊虫"',attributes:[{id:"generic.max_health",base:8.5d},{id:"generic.attack_damage",base:2.5d},{id:"generic.movement_speed",base:0.22d}]}
+
+execute if score tickTimer Azr_system matches 6789 run scoreboard players reset tickTimer Azr_system
