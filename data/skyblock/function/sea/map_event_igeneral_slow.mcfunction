@@ -40,6 +40,12 @@ execute as @a[tag=SEAPT,tag=!e_w_03] at @s if entity @s[nbt={Inventory:[{id:"min
 execute as @a[tag=SEAPT,tag=!e_w_03] at @s if entity @s[nbt={Inventory:[{id:"minecraft:crossbow"}]}] run tag @s add e_w_03
 execute as @a[tag=SEAPT,tag=e_w_03] store result score @s sea_cursor run clear @s crossbow 0
 execute as @a[tag=SEAPT,tag=e_w_03] at @s if entity @s[scores={sea_cursor=..0}] run give @s crossbow[custom_name='{"text":"工程弩","italic":false,"color":"red"}',custom_data={sea_crossbow:true},unbreakable={}]
+execute as @a[tag=SEAPT,tag=!e_w_04] at @s if entity @s[nbt={Inventory:[{components:{"minecraft:custom_data":{sea_flamethrower:true}}}]}] run playsound minecraft:ui.toast.challenge_complete player @s ~ ~ ~ 1 1
+execute as @a[tag=SEAPT,tag=!e_w_04] at @s if entity @s[nbt={Inventory:[{components:{"minecraft:custom_data":{sea_flamethrower:true}}}]}] run tellraw @s {"text": "获得新武器：喷火器","color": "dark_red"}
+execute as @a[tag=SEAPT,tag=!e_w_04] at @s if entity @s[nbt={Inventory:[{components:{"minecraft:custom_data":{sea_flamethrower:true}}}]}] run tellraw @s {"text": "中程武器，右键时向前方射出火舌。虽然弹药是无限的，但作为武器的威力欠佳。","color": "white"}
+execute as @a[tag=SEAPT,tag=!e_w_04] at @s if entity @s[nbt={Inventory:[{components:{"minecraft:custom_data":{sea_flamethrower:true}}}]}] run tag @s add e_w_04
+execute as @a[tag=SEAPT,tag=e_w_04] store result score @s sea_cursor run clear @s shears 0
+execute as @a[tag=SEAPT,tag=e_w_04] at @s if entity @s[scores={sea_cursor=..0}] run give @s shears[custom_name='{"text":"喷火器","italic":false,"color":"red"}',custom_data={sea_flamethrower:true},unbreakable={}]
 
 
 execute as @n[tag=sc] unless entity @s[scores={sea_4temp1=-9999..}] run scoreboard players set @s sea_4temp1 -1

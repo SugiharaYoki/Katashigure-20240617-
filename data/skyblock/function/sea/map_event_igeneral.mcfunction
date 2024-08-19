@@ -14,3 +14,8 @@ execute as @e[type=item,nbt={Item:{id:"minecraft:fire_charge"}}] at @s if entity
 execute as @e[type=item,nbt={Item:{id:"minecraft:blaze_powder"}}] at @s if entity @a[tag=SEAPT,distance=0..80] at @s run function skyblock:sea/p/bomb
 
 execute as @e[type=husk,tag=SEAmob] at @s run function skyblock:sea/p/husk
+
+
+
+execute as @e[type=interaction,tag=flamethrowerdetect] at @s unless entity @a[distance=..0.3] run kill @s
+execute as @a at @s if data entity @s SelectedItem.components.minecraft:custom_data run function skyblock:sea/p/flamethrower
