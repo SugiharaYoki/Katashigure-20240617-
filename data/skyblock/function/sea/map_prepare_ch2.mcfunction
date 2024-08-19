@@ -324,6 +324,22 @@ item replace block 90138 128 101 container.12 with bread 2
 item replace block 90138 128 101 container.14 with bread 2
 item replace block 90138 128 101 container.16 with arrow 3
 
+fill 90138 129 147 90138 128 147 slime_block
+
+setblock 90121 130 153 air
+setblock 90121 130 153 lever[facing=east]
+
+
+setblock 90124 128 150 air
+setblock 90124 128 150 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 3, id:"minecraft:bread"}}
+setblock 90128 128 150 chest[facing=south]
+item replace block 90128 128 150 container.14 with emerald 3
+setblock 90126 129 143 chest[facing=east]
+fill 90069 129 121 90069 128 121 slime_block
+
+setblock 90070 128 124 chest[facing=north]
+item replace block 90070 128 124 container.12 with gunpowder 3
+item replace block 90070 128 124 container.14 with arrow 3
 
 
 #ch4

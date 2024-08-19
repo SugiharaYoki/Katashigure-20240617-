@@ -36,3 +36,30 @@ execute positioned ~-2 ~ ~-1 if block ~ ~ ~ decorated_pot run setblock ~ ~ ~ air
 execute positioned ~-2 ~ ~0 if block ~ ~ ~ decorated_pot run setblock ~ ~ ~ air destroy
 execute positioned ~-2 ~ ~1 if block ~ ~ ~ decorated_pot run setblock ~ ~ ~ air destroy
 execute positioned ~-2 ~ ~2 if block ~ ~ ~ decorated_pot run setblock ~ ~ ~ air destroy
+
+execute positioned ~2 ~ ~-2 if block ~ ~ ~ slime_block run setblock ~ ~ ~ air destroy
+execute positioned ~2 ~ ~-1 if block ~ ~ ~ slime_block run setblock ~ ~ ~ air destroy
+execute positioned ~2 ~ ~0 if block ~ ~ ~ slime_block run setblock ~ ~ ~ air destroy
+execute positioned ~2 ~ ~1 if block ~ ~ ~ slime_block run setblock ~ ~ ~ air destroy
+execute positioned ~2 ~ ~2 if block ~ ~ ~ slime_block run setblock ~ ~ ~ air destroy
+execute positioned ~1 ~ ~-2 if block ~ ~ ~ slime_block run setblock ~ ~ ~ air destroy
+execute positioned ~1 ~ ~-1 if block ~ ~ ~ slime_block run setblock ~ ~ ~ air destroy
+execute positioned ~1 ~ ~0 if block ~ ~ ~ slime_block run setblock ~ ~ ~ air destroy
+execute positioned ~1 ~ ~1 if block ~ ~ ~ slime_block run setblock ~ ~ ~ air destroy
+execute positioned ~1 ~ ~2 if block ~ ~ ~ slime_block run setblock ~ ~ ~ air destroy
+execute positioned ~0 ~ ~-2 if block ~ ~ ~ slime_block run setblock ~ ~ ~ air destroy
+execute positioned ~0 ~ ~-1 if block ~ ~ ~ slime_block run setblock ~ ~ ~ air destroy
+execute positioned ~0 ~ ~0 if block ~ ~ ~ slime_block run setblock ~ ~ ~ air destroy
+execute positioned ~0 ~ ~1 if block ~ ~ ~ slime_block run setblock ~ ~ ~ air destroy
+execute positioned ~0 ~ ~2 if block ~ ~ ~ slime_block run setblock ~ ~ ~ air destroy
+execute positioned ~-1 ~ ~-2 if block ~ ~ ~ slime_block run setblock ~ ~ ~ air destroy
+execute positioned ~-1 ~ ~-1 if block ~ ~ ~ slime_block run setblock ~ ~ ~ air destroy
+execute positioned ~-1 ~ ~0 if block ~ ~ ~ slime_block run setblock ~ ~ ~ air destroy
+execute positioned ~-1 ~ ~1 if block ~ ~ ~ slime_block run setblock ~ ~ ~ air destroy
+execute positioned ~-1 ~ ~2 if block ~ ~ ~ slime_block run setblock ~ ~ ~ air destroy
+execute positioned ~-2 ~ ~-2 if block ~ ~ ~ slime_block run setblock ~ ~ ~ air destroy
+execute positioned ~-2 ~ ~-1 if block ~ ~ ~ slime_block run setblock ~ ~ ~ air destroy
+execute positioned ~-2 ~ ~0 if block ~ ~ ~ slime_block run setblock ~ ~ ~ air destroy
+execute positioned ~-2 ~ ~1 if block ~ ~ ~ slime_block run setblock ~ ~ ~ air destroy
+execute positioned ~-2 ~ ~2 if block ~ ~ ~ slime_block run setblock ~ ~ ~ air destroy
+

@@ -173,6 +173,10 @@ execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=1144}] positione
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=1144}] positioned 90133 122 129 run function skyblock:sea/m/drowned_shield
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=1144}] positioned 90133 122 129 run function skyblock:sea/m/drowned_hat
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=1144}] positioned 90133 122 129 run function skyblock:sea/m/drowned_hat
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=1144}] positioned 90140 115 148 run function skyblock:sea/m/zombie_security2
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=1144}] positioned 90140 115 148 run function skyblock:sea/m/drowned_shield
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=1144}] positioned 90140 115 148 run function skyblock:sea/m/drowned_shield
+
 
 
 

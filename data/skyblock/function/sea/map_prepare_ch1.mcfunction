@@ -281,3 +281,26 @@ setblock 90087 128 123 decorated_pot{sherds:["prize_pottery_sherd","prize_potter
 setblock 90075 103 141 minecraft:air
 
 tp @a[distance=0..300] 90060 103 141 facing 90061 103 141
+
+fill 90070 123 126 90070 122 126 minecraft:slime_block
+setblock 90070 122 131 chest[facing=north]
+item replace block 90070 122 131 container.12 with coal 2
+item replace block 90070 122 131 container.14 with gunpowder 2
+fill 90128 123 145 90128 122 145 minecraft:slime_block
+fill 90134 124 147 90134 122 147 minecraft:slime_block
+setblock 90133 123 149 chest[facing=north]
+item replace block 90133 123 149 container.12 with wayfinder_armor_trim_smithing_template[custom_name='{"text":"醒殉徒石板","bold":false,"italic":true,"color":"light_purple","italic":false}'] 2
+item replace block 90133 123 149 container.14 with raiser_armor_trim_smithing_template[custom_name='{"text":"牧羊人石板","bold":false,"italic":true,"color":"light_purple","italic":false}'] 2
+
+setblock 90139 115 147 air
+setblock 90140 115 147 air
+setblock 90139 115 147 decorated_pot{sherds:["friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd"],item:{count: 4, id:"minecraft:emerald"}}
+setblock 90140 115 147 decorated_pot{sherds:["mourner_pottery_sherd","mourner_pottery_sherd","mourner_pottery_sherd","mourner_pottery_sherd"],item:{count: 2, id:"minecraft:echo_shard"}}
+
+
+fill 90101 123 116 90101 122 116 minecraft:slime_block
+fill 90117 123 126 90117 122 126 minecraft:slime_block
+
+setblock 90114 123 125 chest[facing=east]
+
+

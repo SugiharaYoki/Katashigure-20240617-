@@ -73,6 +73,15 @@ setblock 90086 145 116 chest[facing=north]{Lock:"器械资源室2F 燃料架 - B
 item replace block 90086 145 116 container.12 with flint 1
 item replace block 90086 145 116 container.14 with coal 2
 setblock 90086 143 116 chest[facing=north]{Lock:"器械资源室2F 燃料架 - B"}
+
+setblock 90086 145 114 chest[facing=north]{Lock:"器械资源室2F 燃料架 - A 内有慰问品"}
+item replace block 90086 145 114 container.12 with gunpowder 2
+item replace block 90086 145 114 container.14 with gunpowder 2
+setblock 90086 143 114 chest[facing=north]{Lock:"器械资源室2F 燃料架 - A 内有慰问品"}
+item replace block 90086 143 114 container.11 with gunpowder 2
+item replace block 90086 143 114 container.13 with emerald 5
+item replace block 90086 143 114 container.15 with gunpowder 2
+
 fill 90104 138 120 90104 138 125 air
 fill 90104 138 120 90104 138 125 lever[facing=east]
 setblock 90104 137 117 chest[facing=east]
@@ -86,7 +95,7 @@ summon marker 90121 137 108 {Tags:["SEAmagma1"]}
 summon marker 90094 137 97 {Tags:["SEAmagma1"]}
 summon marker 90094 137 124 {Tags:["SEAmagma1"]}
 
-
+fill 90086 138 128 90086 137 128 minecraft:slime_block
 
 
 
