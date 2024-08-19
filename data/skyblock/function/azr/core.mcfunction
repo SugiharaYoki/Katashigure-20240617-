@@ -73,9 +73,11 @@ execute if block -79887 44 164 minecraft:birch_button[powered=true] run function
 execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 31 run function skyblock:azr/stage/stage_entertain
 #奖励关 Stage Vestige 240
 execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 240 run function skyblock:azr/stage/stage_vestige
-#奖励关 Stage Appetence 34
-execute if block -79949 33 140 minecraft:birch_button[powered=true] run function skyblock:azr/stage/stage_appetence_prep
-execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 34 run function skyblock:azr/stage/stage_appetence
+#奖励关 Stage Suspension 34
+execute if block -79949 33 140 minecraft:birch_button[powered=true] run function skyblock:azr/stage/stage_suspension_prep
+execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 34 run function skyblock:azr/stage/stage_suspension
+#奖励关 Stage Appetence 39
+execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 39 run function skyblock:azr/stage/stage_appetence
 
 #章节设置
 execute if entity @a[scores={Azr_wave=0..9}] run scoreboard players set chapter Azr_system 1
