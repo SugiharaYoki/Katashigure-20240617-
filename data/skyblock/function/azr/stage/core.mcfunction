@@ -78,7 +78,11 @@ execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system 
 #奖励关 Stage Appetence 34
 execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 34 run function skyblock:azr/stage/stage_appetence
 
-
+#章节设置
+execute if entity @a[scores={Azr_wave=0..9}] run scoreboard players set chapter Azr_system 1
+execute if entity @a[scores={Azr_wave=10..22}] run scoreboard players set chapter Azr_system 2
+execute if entity @a[scores={Azr_wave=23..35}] run scoreboard players set chapter Azr_system 3
+execute if entity @a[scores={Azr_wave=23..36}] run scoreboard players set chapter Azr_system 4
 
 #function skyblock:azr/ingame_azrielsmidgarden_core_sub1
 #execute if entity @e[tag=sc,limit=1,scores={SeGa_StandLastP=11}] run scoreboard players set @e[tag=sc,limit=1] SeGa_StandLast 0
