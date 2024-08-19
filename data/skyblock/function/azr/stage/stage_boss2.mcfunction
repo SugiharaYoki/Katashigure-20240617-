@@ -530,4 +530,4 @@ execute if score tickTimer Azr_system matches 6750 if score playerCount Azr_syst
 execute if score tickTimer Azr_system matches 6750 if score playerCount Azr_system matches 6.. run summon silverfish -79937 37 -85 {PersistenceRequired:1b,Tags:["AzrielMob","AzrielDecMob"],DeathLootTable:"skyblock:azriel_silverfish_tier2_grass",Health:8.5f,CustomName:'"苔廊虫"',attributes:[{id:"generic.max_health",base:8.5d},{id:"generic.attack_damage",base:2.5d},{id:"generic.movement_speed",base:0.22d}]}
 execute if score tickTimer Azr_system matches 6750 if score playerCount Azr_system matches 7.. run summon silverfish -79937 37 -85 {PersistenceRequired:1b,Tags:["AzrielMob","AzrielDecMob"],DeathLootTable:"skyblock:azriel_silverfish_tier2_grass",Health:8.5f,CustomName:'"苔廊虫"',attributes:[{id:"generic.max_health",base:8.5d},{id:"generic.attack_damage",base:2.5d},{id:"generic.movement_speed",base:0.22d}]}
 
-execute if score tickTimer Azr_system matches 6789 run scoreboard players reset tickTimer Azr_system
+execute if score tickTimer Azr_system matches 6790 run scoreboard players reset tickTimer Azr_system
