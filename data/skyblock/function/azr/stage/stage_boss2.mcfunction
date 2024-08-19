@@ -1,3 +1,5 @@
+execute as @a[x=-79903,y=38,z=-5,distance=..2,tag=azrPlayer] run tp @a[tag=azrPlayer] @s
+execute as @a[x=-79903,y=38,z=-5,distance=..2,tag=azrPlayer] run scoreboard players set tickTimer Azr_system 0
 execute if score tickTimer Azr_system matches 3..50 as @a[tag=azrPlayer] at @s unless block ~ ~-1 ~ air unless block ~ ~-1 ~ lava unless block ~ ~ ~ lava run spawnpoint @s ~ ~ ~
 execute if score tickTimer Azr_system matches 2 run fill -79904 41 0 -79902 38 0 minecraft:red_stained_glass
 execute if score tickTimer Azr_system matches 2 run setblock -79879 48 -16 anvil
@@ -16,7 +18,7 @@ execute if score tickTimer Azr_system matches 2 run setblock -79879 45 -16 anvil
 execute if score tickTimer Azr_system matches 2 run setblock -79879 45 -15 anvil
 execute if score tickTimer Azr_system matches 2 run setblock -79879 45 -14 anvil
 execute if score tickTimer Azr_system matches 2 run setblock -79879 45 -13 anvil
-execute if score tickTimer Azr_system matches 1..10 run scoreboard players set stage Azr_system 23
+execute if score tickTimer Azr_system matches 1..10 run scoreboard players set stage Azr_system 24
 execute if score tickTimer Azr_system matches 2..31 positioned -79903 38.4 -14.0 run function skyblock:azr/effects/zanei_appear
 execute if score tickTimer Azr_system matches 2 as @p[x=-79885,y=38.8,z=-15,distance=0..18,tag=azrPlayer] at @s run tp @a[tag=azrPlayer,distance=10..] @s
 execute if score tickTimer Azr_system matches 2 run tellraw @a[tag=azrPlayer] {"text":"权之残影：","color":"red"}
@@ -493,7 +495,7 @@ execute if score tickTimer Azr_system matches 6782 as @a[tag=azrPlayer,scores={A
 execute if score tickTimer Azr_system matches 6760 run fill -79927 38 -13 -79927 42 -16 minecraft:air destroy
 execute if score tickTimer Azr_system matches 6760 run clone -79902 36 -41 -79898 43 -32 -79933 37 -27
 execute if score tickTimer Azr_system matches 6520 run scoreboard players set stageSeconds Azr_system 0
-execute if score tickTimer Azr_system matches 6789 run scoreboard players set stageSeconds Azr_system 0
+execute if score tickTimer Azr_system matches 6789 run scoreboard players reset tickTimer Azr_system
 execute if score tickTimer Azr_system matches 6790 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..9}] Azr_skillPoints 10
 execute if score tickTimer Azr_system matches 6790 run scoreboard players set stage Azr_system 25
 execute if score tickTimer Azr_system matches 6750 run summon pillager -79932 38 -32 {Rotation:[-28.6f,0.0f],Invulnerable:1b,CanPickUpLoot:0b,PersistenceRequired:1b,Tags:["AzrielFriendly"],Health:3.0f,CustomName:'"弩手"',attributes:[{id:"generic.max_health",base:3.0d},{id:"generic.movement_speed",base:0.1d}]}
