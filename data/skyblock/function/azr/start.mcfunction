@@ -44,25 +44,25 @@ execute if entity @a[tag=azrPlayer,tag=AZS_BoS01] run setblock -79915 39 34 mine
 execute if entity @a[tag=azrPlayer,tag=AZS_BoS01] run setblock -79915 38 34 minecraft:air
 execute if entity @a[tag=azrPlayer,tag=AZS_BoS01] run setblock -79915 40 34 minecraft:air
 #开始强制加载
-forceload add -80000 -400 -79800 -200
-forceload add -80000 -200 -79800 000
-forceload add -80000 000 -79800 200
-forceload add -80000 200 -79800 400
-forceload add -79800 -600 -79600 -400
-forceload add -79800 -400 -79600 -200
-forceload add -79800 -200 -79600 000
-forceload add -79800 000 -79600 200
-forceload add -79800 200 -79600 400
-forceload add -79600 -600 -79400 -400
-forceload add -79600 -400 -79400 -200
-forceload add -79600 -200 -79400 000
-forceload add -79600 000 -79400 200
-forceload add -79600 200 -79400 400
-forceload add -79400 -600 -79200 -400
-forceload add -79400 -400 -79200 -200
-forceload add -79400 -200 -79200 000
-forceload add -79400 000 -79200 200
-forceload add -79400 200 -79200 400
+#forceload add -80000 -400 -79800 -200
+#forceload add -80000 -200 -79800 000
+#forceload add -80000 000 -79800 200
+#forceload add -80000 200 -79800 400
+#forceload add -79800 -600 -79600 -400
+#forceload add -79800 -400 -79600 -200
+#forceload add -79800 -200 -79600 000
+#forceload add -79800 000 -79600 200
+#forceload add -79800 200 -79600 400
+#forceload add -79600 -600 -79400 -400
+#forceload add -79600 -400 -79400 -200
+#forceload add -79600 -200 -79400 000
+#forceload add -79600 000 -79400 200
+#forceload add -79600 200 -79400 400
+#forceload add -79400 -600 -79200 -400
+#forceload add -79400 -400 -79200 -200
+#forceload add -79400 -200 -79200 000
+#forceload add -79400 000 -79200 200
+#forceload add -79400 200 -79200 400
 
 
 #wtf 这些原本应该在初始化玩家前
