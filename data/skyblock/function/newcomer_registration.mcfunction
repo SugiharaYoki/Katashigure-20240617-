@@ -56,7 +56,7 @@ scoreboard players set @s Job_Rite 0
 scoreboard players set @s SocialOath 0
 scoreboard players set @s HajimetaBGM 1
 tag @s remove NoSkyWar
-tag @s remove NoMultiMenu 
+tag @s remove NoMultiMenu
 tp @s -43 55 0 facing -42 55 0
 spawnpoint @s -43 55 0 -90
 advancement grant @s only skyblock:veryroot

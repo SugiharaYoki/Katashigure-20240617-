@@ -38,7 +38,7 @@ execute if entity @s[tag=CasinoMultSuc,scores={Cas_Mtpl_A=8,Cas_Mtpl_C=1}] run s
 execute if entity @s[tag=CasinoMultSuc,scores={Cas_Mtpl_A=9,Cas_Mtpl_C=1}] run scoreboard players set @s Cas_Mtpl_B 50
 execute if entity @s[tag=CasinoMultSuc,scores={Cas_Mtpl_A=10,Cas_Mtpl_C=1}] run scoreboard players set @s Cas_Mtpl_B 55
 
-execute if entity @s[tag=CasinoMultSuc,scores={Cas_Mtpl_A=1,Cas_Mtpl_C=2..}] run scoreboard players operation @s Cas_Mtpl_B *= @n[tag=sc] 2 
+execute if entity @s[tag=CasinoMultSuc,scores={Cas_Mtpl_A=1,Cas_Mtpl_C=2..}] run scoreboard players operation @s Cas_Mtpl_B *= @n[tag=sc] 2
 execute if entity @s[tag=CasinoMultSuc,scores={Cas_Mtpl_A=2,Cas_Mtpl_C=2..}] run scoreboard players operation @s Cas_Mtpl_B *= @n[tag=sc] 2
 execute if entity @s[tag=CasinoMultSuc,scores={Cas_Mtpl_A=2,Cas_Mtpl_C=2..}] run scoreboard players operation @s Cas_Mtpl_B *= @n[tag=sc] 2
 execute if entity @s[tag=CasinoMultSuc,scores={Cas_Mtpl_A=3,Cas_Mtpl_C=2..}] run playsound minecraft:item.armor.equip_gold neutral @a ~ ~ ~ 3

@@ -414,7 +414,7 @@ execute if score stageSeconds Azr_system matches 251 if score playerCount Azr_sy
 
 
 #function skyblock:tool_rng
-#execute if score stageSeconds Azr_system matches 143 if score random Azr_system matches 1 run 
+#execute if score stageSeconds Azr_system matches 143 if score random Azr_system matches 1 run
 #【僵尸 lv1】execute if score stageSeconds Azr_system matches 1 positioned -79939 32 39 run function skyblock:azr/m/zombie_t1_4hp
 #【僵尸+ lv2】execute if score stageSeconds Azr_system matches 1 positioned -79939 32 39 run function skyblock:azr/m/zombie_t1_5hp_full_armor
 #【僵尸++ lv6】execute if score stageSeconds Azr_system matches 1 positioned -79939 32 39 {PersistenceRequired:1,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_zombie_tier1",Attributes:[{Name:generic.max_health,Base:6.5},{Name:generic.attack_damage,Base:2.0}],Health:6.5f,CustomName:"\"僵尸\"",CanPickUpLoot:0,IsBaby:0,ArmorItems:[{Count:1,id:"leather_boots",tag:{display:{Name:"{\"text\":\"皮革靴\",\"italic\":false,\"color\":\"white\"}"}}},{Count:1,id:"leather_leggings",tag:{display:{Name:"{\"text\":\"皮革裤\",\"italic\":false,\"color\":\"white\"}"}}},{Count:1,id:leather_chestplate,tag:{Enchantments:[{id:protection,lvl:1}]}},{Count:1,id:leather_helmet,tag:{Enchantments:[{id:protection,lvl:1}]}}],ArmorDropChances:[0.02f,0.02f,0.02f,0.02f]}

@@ -29,7 +29,7 @@ scoreboard objectives add Azr_SK6 dummy
 scoreboard objectives add Azr_SK7 dummy
 #skill 8 膳食搭配 lv2
 scoreboard objectives add Azr_SK8 dummy
-#skill 9 残城箭影 lv5   
+#skill 9 残城箭影 lv5  
 scoreboard objectives add Azr_SK9 dummy
 #skill 10 滞空斩击 lv6
 scoreboard objectives add Azr_SK10 dummy
@@ -46,7 +46,7 @@ scoreboard objectives add Azr_SK15 dummy
 #skill 16 unused
 scoreboard objectives add Azr_SK16 dummy
 #设置系统参数
-scoreboard players set DEBUG_maxStageLimit Azr_system 24
+scoreboard players set DEBUG_maxStageLimit Azr_system 25
 #scoreboard players set DEBUG_fakePlayer Azr_system 10
 
 #游戏运行时

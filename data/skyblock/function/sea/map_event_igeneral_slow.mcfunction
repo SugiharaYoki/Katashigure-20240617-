@@ -190,7 +190,7 @@ execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp_environment=28}] 
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp_environment=28}] as @a[tag=SEAPT,scores={sea_i_spectral=..2,sea_i_spectral_load=5..}] run give @s spectral_arrow 1
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp_environment=28}] as @a[tag=SEAPT,scores={sea_i_spectral=..2,sea_i_spectral_load=5..}] run scoreboard players set @s sea_i_spectral_load 0
 execute if entity @a[tag=SEAPT] as @s[scores={sea_i_spectral=4..}] run give @s arrow 1
-execute if entity @a[tag=SEAPT] as @s[scores={sea_i_spectral=4..}] run clear @s spectral_arrow[custom_name='{"text":"静滞光棱箭","italic":true,"color":"blue","italic":false}',lore=['{"text":"箭身被某种力量转换成了金色的不明材质。","color":"white","italic":false}','{"text":"“射出后能使飞行路径范围内的怪物大幅迟缓。”","color":"white","italic":false}']] 1 
+execute if entity @a[tag=SEAPT] as @s[scores={sea_i_spectral=4..}] run clear @s spectral_arrow[custom_name='{"text":"静滞光棱箭","italic":true,"color":"blue","italic":false}',lore=['{"text":"箭身被某种力量转换成了金色的不明材质。","color":"white","italic":false}','{"text":"“射出后能使飞行路径范围内的怪物大幅迟缓。”","color":"white","italic":false}']] 1
 
 execute if block 90088 128 114 air unless entity @a[tag=SEAPT,tag=e_i_20] positioned 90088 128 117 run function skyblock:sea/m/silverfish_big
 execute if block 90088 128 114 air unless entity @a[tag=SEAPT,tag=e_i_20] positioned 90088 128 117 run function skyblock:sea/m/silverfish_big

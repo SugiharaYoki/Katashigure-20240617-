@@ -87,7 +87,7 @@ execute if entity @n[tag=sc,scores={SeGa_DVTimer=31}] run tellraw @a[tag=SeGa_DV
 execute if entity @n[tag=sc,scores={SeGa_DVTimer=31..}] run function skyblock:tool_rng
 #实时排行分数
 #scoreboard players add @n[tag=sc] SeGa_DVTimerLB 1
-#execute if score @n[tag=sc] SeGa_DVTimerLB matches 1 run scoreboard objectives setdisplay sidebar 
+#execute if score @n[tag=sc] SeGa_DVTimerLB matches 1 run scoreboard objectives setdisplay sidebar
 #execute if score @n[tag=sc] SeGa_DVTimerLB matches 6 run function skyblock:dv/dv_corex10
 #execute if score @n[tag=sc] SeGa_DVTimerLB matches 10.. run scoreboard players set @n[tag=sc] SeGa_DVTimerQT 0
 

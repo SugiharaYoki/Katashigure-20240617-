@@ -244,7 +244,7 @@ execute if score stageSeconds Azr_system matches 406 run fill -79936 55 -120 -79
 execute if score stageSeconds Azr_system matches 405 run fill -79936 54 -120 -79935 54 -120 air replace
 
 #function skyblock:tool_rng
-#execute if entity @e[tag=sc,limit=1,scores={stageSeconds=143}] rng3 matches 1 run 
+#execute if entity @e[tag=sc,limit=1,scores={stageSeconds=143}] rng3 matches 1 run
 #【猪灵侦察兵 lv7】summon piglin -79935 53.51 -94 {IsImmuneToZombification:1b,PersistenceRequired:1,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_piglin_tier1",Attributes:[{Name:generic.max_health,Base:10.0},{Name:generic.attack_damage,Base:1.5}],Health:10.0f,CustomName:"\"猪灵侦察兵\"",CanPickUpLoot:0,IsBaby:0,HandItems:[{Count:1,id:"golden_sword",tag:{display:{Name:"{\"text\":\"金剑\",\"italic\":false,\"color\":\"white\"}"}}}],HandDropChances:[0.001f],ArmorItems:[{},{Count:1,id:golden_leggings,tag:{display:{Name:"{\"text\":\"金护腿\",\"italic\":false,\"color\":\"white\"}"}}},{Count:1,id:"golden_chestplate",tag:{display:{Name:"{\"text\":\"金胸甲\",\"italic\":false,\"color\":\"white\"}"}}},{}],ArmorDropChances:[0.02f,0.01f,0.01f,0.02f]}
 #【史莱姆 lv3】summon slime -79935 53.51 -94 {PersistenceRequired:1,Tags:["AzrielMob","Immune"],DeathLootTable:"skyblock:azriel_slime_tier1",Attributes:[{Name:generic.max_health,Base:4.0},{Name:generic.attack_damage,Base:3.0}],Health:4.0f,CustomName:"\"史莱姆\"",CanPickUpLoot:0,Size:2,ArmorItems:[{},{},{},{}]}
 #【污浊史莱姆 lv5】summon slime -79935 53.51 -94 {PersistenceRequired:1,Tags:["AzrielMob","Immune"],DeathLootTable:"skyblock:azriel_slime_tier1",Attributes:[{Name:generic.max_health,Base:4.0},{Name:generic.attack_damage,Base:4.0}],Health:4.0f,CustomName:"\"污浊史莱姆\"",CanPickUpLoot:0,Size:2,ArmorItems:[{},{},{},{}]}

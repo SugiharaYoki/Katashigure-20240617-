@@ -7,11 +7,11 @@ execute if entity @s[scores={Temp1=20}] unless entity @a[distance=0..20] run tp 
 execute if entity @s[scores={Temp1=38}] unless entity @a[distance=0..15] run tp -79984.0 45 -14.0
 execute if entity @s[scores={Temp1=60}] unless entity @a[distance=0..20] run tp -79984.0 45 -14.0
 execute if entity @s[scores={Temp1=5..10}] run tp @s ~ 46.5 ~
-execute if entity @s[scores={Temp1=24}] run tp ^ ^-1 ^4 
+execute if entity @s[scores={Temp1=24}] run tp ^ ^-1 ^4
 execute if entity @s[scores={Temp1=25..30}] run tp @s ~ 46.5 ~
 execute if entity @s[scores={Temp1=44}] run tp ^ ^-1 ^4
 execute if entity @s[scores={Temp1=45..50}] run tp @s ~ 46.5 ~
-execute if entity @s[scores={Temp1=64}] run tp ^ ^-1 ^4 
+execute if entity @s[scores={Temp1=64}] run tp ^ ^-1 ^4
 execute if entity @s[scores={Temp1=65..70}] run tp @s ~ 47.5 ~
 execute if entity @s[scores={Temp1=5}] run particle minecraft:flame ~ ~1 ~ 0.5 0.5 0.5 0.01 100
 execute if entity @s[scores={Temp1=5}] run playsound minecraft:block.bell.use master @a ~ ~ ~ 25 0
@@ -83,7 +83,7 @@ execute if entity @s[scores={Temp1=45}] run playsound minecraft:ambient.nether_w
 execute if entity @s[scores={Temp1=50}] run playsound minecraft:entity.blaze.shoot master @a ~ ~ ~ 8 1
 execute if entity @s[scores={Temp1=50}] run playsound minecraft:entity.blaze.shoot master @a ~ ~ ~ 8 1
 execute if entity @s[scores={Temp1=50}] run playsound minecraft:entity.blaze.shoot master @a ~ ~ ~ 8 1
-execute if entity @s[scores={Temp1=54}] run tp ~0.5 ~0.5 ~ 
+execute if entity @s[scores={Temp1=54}] run tp ~0.5 ~0.5 ~
 execute if entity @s[scores={Temp1=55}] run playsound minecraft:entity.blaze.shoot master @a ~ ~ ~ 8 1
 execute if entity @s[scores={Temp1=55}] run playsound minecraft:entity.blaze.shoot master @a ~ ~ ~ 8 1
 execute if entity @s[scores={Temp1=55}] run playsound minecraft:entity.blaze.shoot master @a ~ ~ ~ 8 1

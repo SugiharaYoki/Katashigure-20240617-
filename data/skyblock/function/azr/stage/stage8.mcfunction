@@ -3,8 +3,8 @@ execute if score stageSeconds Azr_system matches 7 run bossbar add azr:progress_
 execute if score stageSeconds Azr_system matches 7 run bossbar set azr:progress_bar_normal color white
 execute if score stageSeconds Azr_system matches 7 run bossbar set azr:progress_bar_normal players @a[tag=azrPlayer]
 execute if score stageSeconds Azr_system matches 7 run bossbar set azr:progress_bar_normal max 370
-execute if score stageSeconds Azr_system matches 7..300 store result bossbar azr:progress_bar_normal value run scoreboard players get stageSeconds Azr_system
-execute if score stageSeconds Azr_system matches 300 run bossbar remove azr:progress_bar_normal
+execute if score stageSeconds Azr_system matches 7..370 store result bossbar azr:progress_bar_normal value run scoreboard players get stageSeconds Azr_system
+execute if score stageSeconds Azr_system matches 370 run bossbar remove azr:progress_bar_normal
 execute if score stageSeconds Azr_system matches 1.. run function skyblock:azr/tool_rng
 #
 #nearside:-79887 38 61
@@ -410,7 +410,7 @@ execute if score stageSeconds Azr_system matches 370 run clone -79900 38 142 -79
 
 
 #function skyblock:tool_rng
-#execute if entity @e[tag=sc,limit=1,scores={SeGa_StandLast=143}] rng3 matches 1 run 
+#execute if entity @e[tag=sc,limit=1,scores={SeGa_StandLast=143}] rng3 matches 1 run
 #【僵尸 lv1】execute if entity @e[tag=sc,limit=1,scores={SeGa_StandLast=1}] run summon zombie -79887 38 61 {PersistenceRequired:1,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_zombie_tier1",Attributes:[{Name:generic.max_health,Base:4.0},{Name:generic.attack_damage,Base:1.5}],Health:4.0f,CustomName:"\"僵尸\"",CanPickUpLoot:0,IsBaby:0,ArmorItems:[{},{},{},{}]}
 #【僵尸+ lv2】execute if entity @e[tag=sc,limit=1,scores={SeGa_StandLast=1}] run summon zombie -79887 38 61 {PersistenceRequired:1,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_zombie_tier1",Attributes:[{Name:generic.max_health,Base:5.0},{Name:generic.attack_damage,Base:2.0}],Health:5.0f,CustomName:"\"僵尸\"",CanPickUpLoot:0,IsBaby:0,ArmorItems:[{Count:1,id:"leather_boots",tag:{display:{Name:"{\"text\":\"皮革靴\",\"italic\":false,\"color\":\"white\"}"}}},{Count:1,id:"leather_leggings",tag:{display:{Name:"{\"text\":\"皮革裤\",\"italic\":false,\"color\":\"white\"}"}}},{Count:1,id:"leather_chestplate",tag:{display:{Name:"{\"text\":\"皮革甲\",\"italic\":false,\"color\":\"white\"}"}}},{Count:1,id:"leather_helmet",tag:{display:{Name:"{\"text\":\"皮革帽\",\"italic\":false,\"color\":\"white\"}"}}}],ArmorDropChances:[0.02f,0.02f,0.02f,0.02f]}
 #【僵尸++ lv6】execute if entity @e[tag=sc,limit=1,scores={SeGa_StandLast=1}] run summon zombie -79887 38 61 {PersistenceRequired:1,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_zombie_tier1",Attributes:[{Name:generic.max_health,Base:6.5},{Name:generic.attack_damage,Base:2.0}],Health:6.5f,CustomName:"\"僵尸\"",CanPickUpLoot:0,IsBaby:0,ArmorItems:[{Count:1,id:"leather_boots",tag:{display:{Name:"{\"text\":\"皮革靴\",\"italic\":false,\"color\":\"white\"}"}}},{Count:1,id:"leather_leggings",tag:{display:{Name:"{\"text\":\"皮革裤\",\"italic\":false,\"color\":\"white\"}"}}},{Count:1,id:"leather_chestplate",tag:{Enchantments:[{id:protection,lvl:1}]}},{Count:1,id:"leather_helmet",tag:{Enchantments:[{id:protection,lvl:1}]}}],ArmorDropChances:[0.02f,0.02f,0.02f,0.02f]}

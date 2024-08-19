@@ -1,4 +1,4 @@
-scoreboard players add @s AZS_57534 1 
+scoreboard players add @s AZS_57534 1
 function skyblock:azr/tool_rng
 execute as @s[tag=57531bpl,type=armor_stand,scores={AZS_57534=1}] at @s run tp @s ~ ~1.5 ~
 execute as @s[tag=57531bpl,type=armor_stand,scores={AZS_57534=1}] at @s run particle minecraft:instant_effect ~ ~3.5 ~ 0.1 6 0.1 0.001 60

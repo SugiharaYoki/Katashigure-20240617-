@@ -37,7 +37,7 @@ give @a[tag=SEAPT] sentry_armor_trim_smithing_template 6
 give @a[tag=SEAPT] dune_armor_trim_smithing_template 4
 give @a[tag=SEAPT] emerald 64
 give @a[tag=SEAPT] emerald 24
-give @a[tag=SEAPT] flow_armor_trim_smithing_template[custom_name='{"text":"光棱魔板","italic":true,"color":"light_purple","italic":false}',lore=['{"text":"静滞光锥 I","color":"white","italic":false}'],custom_data={sea_t_spectral1:true}] 1 
+give @a[tag=SEAPT] flow_armor_trim_smithing_template[custom_name='{"text":"光棱魔板","italic":true,"color":"light_purple","italic":false}',lore=['{"text":"静滞光锥 I","color":"white","italic":false}'],custom_data={sea_t_spectral1:true}] 1
 
 
 fill 90129 122 119 90129 122 120 air

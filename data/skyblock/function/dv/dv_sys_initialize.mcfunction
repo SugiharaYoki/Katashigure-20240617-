@@ -39,7 +39,7 @@ scoreboard objectives add Temp_PersonDVSt dummy {"text":"钻石数量","color":"
 scoreboard players set @a Temp_PersonDVS 0
 scoreboard players set @a Temp_PersonDVSt 0
 setblock -23 143 -52 air
-bossbar remove minecraft:8532101 
+bossbar remove minecraft:8532101
 
 scoreboard objectives remove SeGa_DVInv0
 scoreboard objectives remove SeGa_DVInv1

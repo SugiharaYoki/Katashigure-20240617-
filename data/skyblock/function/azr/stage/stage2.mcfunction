@@ -35,7 +35,7 @@ execute if score stageSeconds Azr_system matches 40 positioned -79922 38 14 run 
 execute if score stageSeconds Azr_system matches 40 if score playerCount Azr_system matches 2.. positioned -79940 38 14 run function skyblock:azr/m/zombie_t1_6hp
 #回秒
 execute if score stageSeconds Azr_system matches 41..46 if entity @e[tag=AzrielMob,tag=!AzrielDecMob] run scoreboard players set stageSeconds Azr_system 41
-execute if score stageSeconds Azr_system matches 44 run title @a[tag=azrPlayer] actionbar {"text":"Wave Clear","color":"green"} 
+execute if score stageSeconds Azr_system matches 44 run title @a[tag=azrPlayer] actionbar {"text":"Wave Clear","color":"green"}
 execute if score stageSeconds Azr_system matches 45 run scoreboard players set @a[tag=azrPlayer] Azr_wave 2
 execute if score stageSeconds Azr_system matches 49 run title @a[tag=azrPlayer] actionbar {"text":"5","color":"yellow"}
 execute if score stageSeconds Azr_system matches 50 run title @a[tag=azrPlayer] actionbar {"text":"4","color":"yellow"}
