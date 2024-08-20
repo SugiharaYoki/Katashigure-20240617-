@@ -2,7 +2,7 @@
 execute positioned ~ ~1 ~ unless entity @n[type=interaction,tag=flamethrowerdetect,distance=..0.3] run summon interaction ~ ~ ~ {Tags:["flamethrowerdetect"]}
 execute positioned ~ ~1 ~ if entity @n[type=interaction,tag=flamethrowerdetect,distance=..0.3] run tp @n[type=interaction,tag=flamethrowerdetect,distance=..0.3] ~ ~ ~
 
-execute positioned ~ ~1 ~ as @n[type=interaction,tag=flamethrowerdetect] at @s run kill @e[type=interaction,tag=flamethrowerdetect,distance=0.3..]
+execute positioned ~ ~1 ~ as @n[type=interaction,tag=flamethrowerdetect] at @s run kill @e[type=interaction,tag=flamethrowerdetect,distance=2.3..]
 
 execute as @n[type=interaction,tag=flamethrowerdetect] on target at @s anchored eyes positioned ~ ~-0.5 ~ run playsound minecraft:item.flintandsteel.use player @a ~ ~ ~ 0.8 1.3
 execute as @n[type=interaction,tag=flamethrowerdetect] on target at @s anchored eyes positioned ~ ~-0.5 ~ run playsound minecraft:block.fire.ambient player @a ~ ~ ~ 0.8 1.2
