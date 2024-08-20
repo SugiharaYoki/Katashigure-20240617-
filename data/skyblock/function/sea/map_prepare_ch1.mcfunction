@@ -300,7 +300,10 @@ setblock 90140 115 147 decorated_pot{sherds:["mourner_pottery_sherd","mourner_po
 
 fill 90101 123 116 90101 122 116 minecraft:slime_block
 fill 90117 123 126 90117 122 126 minecraft:slime_block
+fill 90080 122 144 90080 123 144 minecraft:slime_block
 
+setblock 90081 122 145 chest[facing=north]
 setblock 90114 123 125 chest[facing=east]
 
-
+item replace block 90081 122 145 container.11 with arrow 5
+item replace block 90081 122 145 container.15 with raiser_armor_trim_smithing_template[custom_name='{"text":"牧羊人石板","bold":false,"italic":true,"color":"light_purple","italic":false}'] 2
