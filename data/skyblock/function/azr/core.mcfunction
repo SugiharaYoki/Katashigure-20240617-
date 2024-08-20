@@ -111,13 +111,6 @@ execute if entity @a[scores={Azr_wave=36..}] run scoreboard players set chapter 
 scoreboard players set gametick Azr_system 0
 
 #第一章-第二章 TODO：
-#Stage Entertain 31（stage7二楼）
-#Stage Vestige 240[24->240]（Boss2战前隐藏通路）
-#stage8 20[19+1]
-#event3 21~22[20~21+1]
-#BOSS2-prep 23[22+1]
-#BOSS2 24[23+1]
-#Stage Appetence 34(stage6下边)
 #许愿池stage6-7 见sub_core4x_stagerocess
 #灵能
 #button2（stage7二楼）
