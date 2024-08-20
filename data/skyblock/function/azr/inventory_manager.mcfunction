@@ -1,3 +1,7 @@
+#SlotLock 0-8 对应 hotbar.0-8
+#SlotLock 9-35 对应 inventory.0-26
+#SlotLock 36-39 对应 crafting.0-3
+#SlotLock 40 对应 cursor
 execute if data entity @s[tag=!DebugMode] Inventory[{Slot:0b}].components."minecraft:custom_data".SlotLock unless data entity @s {Inventory:[{Slot:0b,components:{"minecraft:custom_data":{SlotLock:0b}}}]} run item replace entity @s hotbar.0 with air
 execute if data entity @s[tag=!DebugMode] Inventory[{Slot:1b}].components."minecraft:custom_data".SlotLock unless data entity @s {Inventory:[{Slot:1b,components:{"minecraft:custom_data":{SlotLock:1b}}}]} run item replace entity @s hotbar.1 with air
 execute if data entity @s[tag=!DebugMode] Inventory[{Slot:2b}].components."minecraft:custom_data".SlotLock unless data entity @s {Inventory:[{Slot:2b,components:{"minecraft:custom_data":{SlotLock:2b}}}]} run item replace entity @s hotbar.2 with air
@@ -34,39 +38,8 @@ execute if data entity @s[tag=!DebugMode] Inventory[{Slot:32b}].components."mine
 execute if data entity @s[tag=!DebugMode] Inventory[{Slot:33b}].components."minecraft:custom_data".SlotLock unless data entity @s {Inventory:[{Slot:33b,components:{"minecraft:custom_data":{SlotLock:33b}}}]} run item replace entity @s inventory.24 with air
 execute if data entity @s[tag=!DebugMode] Inventory[{Slot:34b}].components."minecraft:custom_data".SlotLock unless data entity @s {Inventory:[{Slot:34b,components:{"minecraft:custom_data":{SlotLock:34b}}}]} run item replace entity @s inventory.25 with air
 execute if data entity @s[tag=!DebugMode] Inventory[{Slot:35b}].components."minecraft:custom_data".SlotLock unless data entity @s {Inventory:[{Slot:35b,components:{"minecraft:custom_data":{SlotLock:35b}}}]} run item replace entity @s inventory.26 with air
-execute if items entity @s[tag=!DebugMode] player.cursor *[\
-custom_data~{SlotLock:0b}|\
-custom_data~{SlotLock:1b}|\
-custom_data~{SlotLock:2b}|\
-custom_data~{SlotLock:3b}|\
-custom_data~{SlotLock:4b}|\
-custom_data~{SlotLock:5b}|\
-custom_data~{SlotLock:6b}|\
-custom_data~{SlotLock:8b}|\
-custom_data~{SlotLock:9b}|\
-custom_data~{SlotLock:10b}|\
-custom_data~{SlotLock:11b}|\
-custom_data~{SlotLock:12b}|\
-custom_data~{SlotLock:13b}|\
-custom_data~{SlotLock:14b}|\
-custom_data~{SlotLock:15b}|\
-custom_data~{SlotLock:16b}|\
-custom_data~{SlotLock:17b}|\
-custom_data~{SlotLock:18b}|\
-custom_data~{SlotLock:19b}|\
-custom_data~{SlotLock:20b}|\
-custom_data~{SlotLock:21b}|\
-custom_data~{SlotLock:22b}|\
-custom_data~{SlotLock:23b}|\
-custom_data~{SlotLock:24b}|\
-custom_data~{SlotLock:25b}|\
-custom_data~{SlotLock:26b}|\
-custom_data~{SlotLock:27b}|\
-custom_data~{SlotLock:28b}|\
-custom_data~{SlotLock:29b}|\
-custom_data~{SlotLock:30b}|\
-custom_data~{SlotLock:31b}|\
-custom_data~{SlotLock:32b}|\
-custom_data~{SlotLock:33b}|\
-custom_data~{SlotLock:34b}|\
-custom_data~{SlotLock:35b}] run item replace entity @s player.cursor with air
+execute if items entity @s[tag=!DebugMode] player.crafting.0 *[custom_data~{SlotLock:0b}|custom_data~{SlotLock:1b}|custom_data~{SlotLock:2b}|custom_data~{SlotLock:3b}|custom_data~{SlotLock:4b}|custom_data~{SlotLock:5b}|custom_data~{SlotLock:6b}|custom_data~{SlotLock:8b}|custom_data~{SlotLock:9b}|custom_data~{SlotLock:10b}|custom_data~{SlotLock:11b}|custom_data~{SlotLock:12b}|custom_data~{SlotLock:13b}|custom_data~{SlotLock:14b}|custom_data~{SlotLock:15b}|custom_data~{SlotLock:16b}|custom_data~{SlotLock:17b}|custom_data~{SlotLock:18b}|custom_data~{SlotLock:19b}|custom_data~{SlotLock:20b}|custom_data~{SlotLock:21b}|custom_data~{SlotLock:22b}|custom_data~{SlotLock:23b}|custom_data~{SlotLock:24b}|custom_data~{SlotLock:25b}|custom_data~{SlotLock:26b}|custom_data~{SlotLock:27b}|custom_data~{SlotLock:28b}|custom_data~{SlotLock:29b}|custom_data~{SlotLock:30b}|custom_data~{SlotLock:31b}|custom_data~{SlotLock:32b}|custom_data~{SlotLock:33b}|custom_data~{SlotLock:34b}|custom_data~{SlotLock:35b}|custom_data~{SlotLock:37b}|custom_data~{SlotLock:38b}|custom_data~{SlotLock:39b}|custom_data~{SlotLock:40b}] run item replace entity @s player.crafting.0 with air
+execute if items entity @s[tag=!DebugMode] player.crafting.1 *[custom_data~{SlotLock:0b}|custom_data~{SlotLock:1b}|custom_data~{SlotLock:2b}|custom_data~{SlotLock:3b}|custom_data~{SlotLock:4b}|custom_data~{SlotLock:5b}|custom_data~{SlotLock:6b}|custom_data~{SlotLock:8b}|custom_data~{SlotLock:9b}|custom_data~{SlotLock:10b}|custom_data~{SlotLock:11b}|custom_data~{SlotLock:12b}|custom_data~{SlotLock:13b}|custom_data~{SlotLock:14b}|custom_data~{SlotLock:15b}|custom_data~{SlotLock:16b}|custom_data~{SlotLock:17b}|custom_data~{SlotLock:18b}|custom_data~{SlotLock:19b}|custom_data~{SlotLock:20b}|custom_data~{SlotLock:21b}|custom_data~{SlotLock:22b}|custom_data~{SlotLock:23b}|custom_data~{SlotLock:24b}|custom_data~{SlotLock:25b}|custom_data~{SlotLock:26b}|custom_data~{SlotLock:27b}|custom_data~{SlotLock:28b}|custom_data~{SlotLock:29b}|custom_data~{SlotLock:30b}|custom_data~{SlotLock:31b}|custom_data~{SlotLock:32b}|custom_data~{SlotLock:33b}|custom_data~{SlotLock:34b}|custom_data~{SlotLock:35b}|custom_data~{SlotLock:36b}|custom_data~{SlotLock:38b}|custom_data~{SlotLock:39b}|custom_data~{SlotLock:40b}] run item replace entity @s player.crafting.1 with air
+execute if items entity @s[tag=!DebugMode] player.crafting.2 *[custom_data~{SlotLock:0b}|custom_data~{SlotLock:1b}|custom_data~{SlotLock:2b}|custom_data~{SlotLock:3b}|custom_data~{SlotLock:4b}|custom_data~{SlotLock:5b}|custom_data~{SlotLock:6b}|custom_data~{SlotLock:8b}|custom_data~{SlotLock:9b}|custom_data~{SlotLock:10b}|custom_data~{SlotLock:11b}|custom_data~{SlotLock:12b}|custom_data~{SlotLock:13b}|custom_data~{SlotLock:14b}|custom_data~{SlotLock:15b}|custom_data~{SlotLock:16b}|custom_data~{SlotLock:17b}|custom_data~{SlotLock:18b}|custom_data~{SlotLock:19b}|custom_data~{SlotLock:20b}|custom_data~{SlotLock:21b}|custom_data~{SlotLock:22b}|custom_data~{SlotLock:23b}|custom_data~{SlotLock:24b}|custom_data~{SlotLock:25b}|custom_data~{SlotLock:26b}|custom_data~{SlotLock:27b}|custom_data~{SlotLock:28b}|custom_data~{SlotLock:29b}|custom_data~{SlotLock:30b}|custom_data~{SlotLock:31b}|custom_data~{SlotLock:32b}|custom_data~{SlotLock:33b}|custom_data~{SlotLock:34b}|custom_data~{SlotLock:35b}|custom_data~{SlotLock:36b}|custom_data~{SlotLock:37b}|custom_data~{SlotLock:39b}|custom_data~{SlotLock:40b}] run item replace entity @s player.crafting.2 with air
+execute if items entity @s[tag=!DebugMode] player.crafting.3 *[custom_data~{SlotLock:0b}|custom_data~{SlotLock:1b}|custom_data~{SlotLock:2b}|custom_data~{SlotLock:3b}|custom_data~{SlotLock:4b}|custom_data~{SlotLock:5b}|custom_data~{SlotLock:6b}|custom_data~{SlotLock:8b}|custom_data~{SlotLock:9b}|custom_data~{SlotLock:10b}|custom_data~{SlotLock:11b}|custom_data~{SlotLock:12b}|custom_data~{SlotLock:13b}|custom_data~{SlotLock:14b}|custom_data~{SlotLock:15b}|custom_data~{SlotLock:16b}|custom_data~{SlotLock:17b}|custom_data~{SlotLock:18b}|custom_data~{SlotLock:19b}|custom_data~{SlotLock:20b}|custom_data~{SlotLock:21b}|custom_data~{SlotLock:22b}|custom_data~{SlotLock:23b}|custom_data~{SlotLock:24b}|custom_data~{SlotLock:25b}|custom_data~{SlotLock:26b}|custom_data~{SlotLock:27b}|custom_data~{SlotLock:28b}|custom_data~{SlotLock:29b}|custom_data~{SlotLock:30b}|custom_data~{SlotLock:31b}|custom_data~{SlotLock:32b}|custom_data~{SlotLock:33b}|custom_data~{SlotLock:34b}|custom_data~{SlotLock:35b}|custom_data~{SlotLock:36b}|custom_data~{SlotLock:37b}|custom_data~{SlotLock:38b}|custom_data~{SlotLock:40b}] run item replace entity @s player.crafting.3 with air
+execute if items entity @s[tag=!DebugMode] player.cursor *[custom_data~{SlotLock:0b}|custom_data~{SlotLock:1b}|custom_data~{SlotLock:2b}|custom_data~{SlotLock:3b}|custom_data~{SlotLock:4b}|custom_data~{SlotLock:5b}|custom_data~{SlotLock:6b}|custom_data~{SlotLock:8b}|custom_data~{SlotLock:9b}|custom_data~{SlotLock:10b}|custom_data~{SlotLock:11b}|custom_data~{SlotLock:12b}|custom_data~{SlotLock:13b}|custom_data~{SlotLock:14b}|custom_data~{SlotLock:15b}|custom_data~{SlotLock:16b}|custom_data~{SlotLock:17b}|custom_data~{SlotLock:18b}|custom_data~{SlotLock:19b}|custom_data~{SlotLock:20b}|custom_data~{SlotLock:21b}|custom_data~{SlotLock:22b}|custom_data~{SlotLock:23b}|custom_data~{SlotLock:24b}|custom_data~{SlotLock:25b}|custom_data~{SlotLock:26b}|custom_data~{SlotLock:27b}|custom_data~{SlotLock:28b}|custom_data~{SlotLock:29b}|custom_data~{SlotLock:30b}|custom_data~{SlotLock:31b}|custom_data~{SlotLock:32b}|custom_data~{SlotLock:33b}|custom_data~{SlotLock:34b}|custom_data~{SlotLock:35b}|custom_data~{SlotLock:36b}|custom_data~{SlotLock:37b}|custom_data~{SlotLock:38b}|custom_data~{SlotLock:39b}] run item replace entity @s player.cursor with air
