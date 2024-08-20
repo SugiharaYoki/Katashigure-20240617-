@@ -1,8 +1,8 @@
 
-execute anchored eyes positioned ~ ~-0.5 ~ unless entity @n[type=interaction,tag=flamethrowerdetect,distance=..0.3] run summon interaction ^ ^0 ^0 {Tags:["flamethrowerdetect"]}
-execute anchored eyes positioned ~ ~-0.5 ~ if entity @n[type=interaction,tag=flamethrowerdetect,distance=..0.3] run tp @n[type=interaction,tag=flamethrowerdetect,distance=..0.3] ^ ^0 ^0
+execute unless entity @n[type=interaction,tag=flamethrowerdetect,distance=..0.3] run summon interaction ^ ^0 ^0 {Tags:["flamethrowerdetect"]}
+execute if entity @n[type=interaction,tag=flamethrowerdetect,distance=..0.3] run tp @n[type=interaction,tag=flamethrowerdetect,distance=..0.3] ^ ^0 ^0
 
-execute anchored eyes positioned ~ ~-0.5 ~ as @n[type=interaction,tag=flamethrowerdetect] at @s run kill @e[type=interaction,tag=flamethrowerdetect,distance=0.3..]
+execute as @n[type=interaction,tag=flamethrowerdetect] at @s run kill @e[type=interaction,tag=flamethrowerdetect,distance=0.3..]
 
 execute as @n[type=interaction,tag=flamethrowerdetect] on target at @s run say hi
 execute as @n[type=interaction,tag=flamethrowerdetect] on target at @s anchored eyes positioned ~ ~-0.5 ~ run particle flame ^ ^ ^0.2 0.1 0.1 0.1 0.3 5
