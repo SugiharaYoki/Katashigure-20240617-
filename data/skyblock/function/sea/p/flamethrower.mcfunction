@@ -4,6 +4,8 @@ execute if entity @n[type=interaction,tag=flamethrowerdetect,distance=..0.3] anc
 
 execute as @n[type=interaction,tag=flamethrowerdetect] at @s run kill @e[type=interaction,tag=flamethrowerdetect,distance=0.29..]
 
+execute as @n[type=interaction,tag=flamethrowerdetect] on target run tell @a hi
+execute as @n[type=interaction] on target run tell @a hello
 execute as @n[type=interaction,tag=flamethrowerdetect] on target at @s run say hi
 execute as @n[type=interaction,tag=flamethrowerdetect] on target at @s anchored eyes positioned ~ ~-0.5 ~ run particle flame ^ ^ ^0.2 0.1 0.1 0.1 0.3 5
 execute as @n[type=interaction,tag=flamethrowerdetect] on target at @s anchored eyes positioned ~ ~-0.5 ~ run particle flame ^ ^ ^0.4 0.1 0.1 0.1 0.3 5
