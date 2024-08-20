@@ -18,4 +18,4 @@ execute as @e[type=husk,tag=SEAmob] at @s run function skyblock:sea/p/husk
 
 
 execute as @e[type=interaction,tag=flamethrowerdetect] at @s unless entity @a[distance=..0.3] run kill @s
-execute as @a at @s if data entity @s SelectedItem.components.minecraft:custom_data run function skyblock:sea/p/flamethrower
+execute as @a at @s if entity @s[nbt={SelectedItem:{id:"minecraft:shears",components:{"minecraft:custom_data":{sea_flamethrower:true}}}}] run function skyblock:sea/p/flamethrower
