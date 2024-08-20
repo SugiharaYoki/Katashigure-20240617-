@@ -1,6 +1,6 @@
 
 execute positioned ~ ~1 ~ unless entity @n[type=interaction,tag=flamethrowerdetect,distance=..0.3] run summon interaction ~ ~ ~ {Tags:["flamethrowerdetect"]}
-execute positioned ~ ~1 ~ unless entity @n[type=interaction,tag=flamethrowerdetect,distance=..0.1] if entity @n[type=interaction,tag=flamethrowerdetect,distance=..0.3] run tp @s ~ ~ ~
+execute positioned ~ ~1 ~ unless entity @n[type=interaction,tag=flamethrowerdetect,distance=..0.1] as @n[type=interaction,tag=flamethrowerdetect,distance=..0.3] run tp @s ~ ~ ~
 
 
 
