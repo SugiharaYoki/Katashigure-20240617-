@@ -17,6 +17,6 @@ execute as @e[type=husk,tag=SEAmob] at @s run function skyblock:sea/p/husk
 
 
 
-execute positioned ~ ~1 ~ as @n[type=interaction,tag=flamethrowerdetect] as @e[type=interaction,tag=flamethrowerdetect,distance=0.2..] at @s positioned ~ ~-1 ~ unless entity @a[tag=SEAPT,distance=0..0.2] run kill @s
+execute positioned ~ ~1 ~ as @n[type=interaction,tag=flamethrowerdetect] as @e[type=interaction,tag=flamethrowerdetect,distance=0.3..] at @s positioned ~ ~-1 ~ unless entity @a[tag=SEAPT,distance=0..0.3] run kill @s
 execute as @a at @s if entity @s[nbt={SelectedItem:{id:"minecraft:shears",components:{"minecraft:custom_data":{sea_flamethrower:true}}}}] run function skyblock:sea/p/flamethrower
 
