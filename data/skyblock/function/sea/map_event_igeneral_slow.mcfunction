@@ -112,6 +112,7 @@ item replace block 90081 122 145 container.13 with flow_banner_pattern[custom_na
 execute as @e[type=interaction,tag=SEAcrafter] on target run scoreboard players enable @s sea_crafter
 execute as @e[type=interaction,tag=SEAcrafter] on target run tellraw @a[tag=SEAPT] [{"selector":"@s","color":"blue"},{"text":" 正在使用多功能工作站","color":"gray"}]
 execute as @e[type=interaction,tag=SEAcrafter] on target run scoreboard players set @s sea_crafter 1
+execute as @e[type=interaction,tag=SEAcrafter] run say hi
 execute as @e[type=interaction,tag=SEAcrafter] run data remove entity @s interaction
 
 execute as @e[type=interaction,tag=SEAaidbox] on target run effect give @s instant_health 1 0 true
