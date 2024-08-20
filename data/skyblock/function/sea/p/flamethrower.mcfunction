@@ -15,4 +15,4 @@ execute as @n[type=interaction,tag=flamethrowerdetect] on target at @s anchored 
 execute as @n[type=interaction,tag=flamethrowerdetect] on target at @s anchored eyes positioned ~ ~-0.5 ~ positioned ^ ^ ^0.6 as @e[tag=SEAmob] run damage @s 1 campfire
 execute as @n[type=interaction,tag=flamethrowerdetect] on target at @s anchored eyes positioned ~ ~-0.5 ~ positioned ^ ^ ^0.8 as @e[tag=SEAmob] run damage @s 1 campfire
 execute as @n[type=interaction,tag=flamethrowerdetect] on target at @s anchored eyes positioned ~ ~-0.5 ~ positioned ^ ^ ^1.0 as @e[tag=SEAmob] run damage @s 1 campfire
-execute as @n[type=interaction,tag=flamethrowerdetect] run data remove entity @s interaction
+#execute as @n[type=interaction,tag=flamethrowerdetect] run data remove entity @s interaction
