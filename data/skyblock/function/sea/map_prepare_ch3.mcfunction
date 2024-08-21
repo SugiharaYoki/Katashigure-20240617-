@@ -26,6 +26,7 @@ setblock 90135 137 104 air
 setblock 90137 137 98 air
 setblock 90108 137 99 air
 setblock 90098 137 95 air
+setblock 90126 144 118 air
 setblock 90084 143 123 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 1, id:"minecraft:beef"}}
 setblock 90083 143 123 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:flint"}}
 setblock 90121 137 105 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:flint"}}
@@ -33,6 +34,7 @@ setblock 90135 137 104 decorated_pot{sherds:["friend_pottery_sherd","friend_pott
 setblock 90137 137 98 decorated_pot{sherds:["friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd"],item:{count: 3, id:"minecraft:emerald"}}
 setblock 90108 137 99 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 1, id:"minecraft:beef"}}
 setblock 90098 137 95 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 1, id:"minecraft:beef"}}
+setblock 90126 144 118 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:iron_ingot"}}
 #炸药桶
 setblock 90084 137 126 air
 setblock 90103 137 109 air
@@ -104,9 +106,11 @@ setblock 90152 128 122 chest[facing=north]
 item replace block 90152 128 122 container.12 with compass 1
 item replace block 90152 128 122 container.14 with dune_armor_trim_smithing_template[custom_name='{"text":"金砂石板","italic":true,"color":"light_purple","italic":false}'] 2
 
-
-
-
+setblock 90119 138 132 air
+setblock 90119 138 132 lever[facing=south]
+setblock 90121 135 131 air
+setblock 90129 135 131 air
+setblock 90130 135 131 air
 
 
 

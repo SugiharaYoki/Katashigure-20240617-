@@ -103,5 +103,18 @@ execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=388}] positioned
 execute if block 90107 138 117 iron_bars if block 90104 138 125 lever[powered=false] if block 90104 138 124 lever[powered=false] if block 90104 138 123 lever[powered=true] if block 90104 138 122 lever[powered=false] if block 90104 138 121 lever[powered=true] if block 90104 138 120 lever[powered=true] run fill 90107 138 117 90107 137 117 air destroy
 
 
+execute if block 90119 138 132 lever[powered=true] run setblock 90121 135 131 redstone_torch
+execute if block 90119 138 132 lever[powered=true] run setblock 90129 135 131 redstone_torch
+execute if block 90119 138 132 lever[powered=true] run setblock 90130 135 131 redstone_torch
+execute if block 90119 138 132 lever[powered=false] run setblock 90121 135 131 air
+execute if block 90119 138 132 lever[powered=false] run setblock 90129 135 131 air
+execute if block 90119 138 132 lever[powered=false] run setblock 90130 135 131 air
+
+
+
+
+
+
+
 
 
