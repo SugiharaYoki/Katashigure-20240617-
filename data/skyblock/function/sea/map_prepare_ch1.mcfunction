@@ -149,7 +149,7 @@ item replace block 90103 122 115 container.12 with coal 1
 item replace block 90103 122 115 container.14 with potato 2
 setblock 90118 123 134 lever[powered=false,facing=east]
 fill 90114 124 133 90114 122 132 iron_block
-item replace block 90095 122 128 container.26 with amethyst_shard
+item replace block 90095 122 128 container.26 with amethyst_shard[custom_name='{"text":"紫水晶碎块","bold":false,"italic":true,"color":"gold","italic":false}',lore=['{"text":"散发着诡谲气息的宝石。","color":"white","italic":false}']] 1
 
 setblock 90106 122 145 minecraft:chiseled_bookshelf[facing=east]
 forceload add 90000 0 90200 200

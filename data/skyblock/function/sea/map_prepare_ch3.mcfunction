@@ -27,6 +27,9 @@ setblock 90137 137 98 air
 setblock 90108 137 99 air
 setblock 90098 137 95 air
 setblock 90126 144 118 air
+setblock 90094 145 118 air
+setblock 90119 149 113 air
+setblock 90115 149 112 air
 setblock 90084 143 123 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 1, id:"minecraft:beef"}}
 setblock 90083 143 123 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:flint"}}
 setblock 90121 137 105 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:flint"}}
@@ -35,6 +38,9 @@ setblock 90137 137 98 decorated_pot{sherds:["friend_pottery_sherd","friend_potte
 setblock 90108 137 99 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 1, id:"minecraft:beef"}}
 setblock 90098 137 95 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 1, id:"minecraft:beef"}}
 setblock 90126 144 118 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:iron_ingot"}}
+setblock 90094 145 118 decorated_pot{sherds:["friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd"],item:{count: 3, id:"minecraft:emerald"}}
+setblock 90119 149 113 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 2, id:"minecraft:beef"}}
+setblock 90115 149 112 decorated_pot{sherds:["friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd"],item:{count: 3, id:"minecraft:emerald"}}
 #炸药桶
 setblock 90084 137 126 air
 setblock 90103 137 109 air
@@ -112,6 +118,15 @@ setblock 90121 135 131 air
 setblock 90129 135 131 air
 setblock 90130 135 131 air
 
+setblock 90101 145 105 furnace[facing=east]
+setblock 90101 145 104 furnace[facing=east]
+
+setblock 90112 145 99 chest[facing=south]
+item replace block 90112 145 99 container.14 with gunpowder 2
+setblock 90134 137 121 chest[facing=west]
+item replace block 90134 137 121 container.13 with raw_iron 1
+
+setblock 90133 138 127 air
 
 
 
