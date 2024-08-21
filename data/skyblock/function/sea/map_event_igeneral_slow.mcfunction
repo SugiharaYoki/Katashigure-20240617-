@@ -47,6 +47,9 @@ execute as @a[tag=SEAPT,tag=!e_w_04] at @s if entity @s[nbt={Inventory:[{compone
 execute as @a[tag=SEAPT,tag=e_w_04] store result score @s sea_cursor run clear @s shears 0
 execute as @a[tag=SEAPT,tag=e_w_04] at @s if entity @s[scores={sea_cursor=..0}] run give @s shears[custom_name='{"text":"喷火器","italic":false,"color":"red"}',custom_data={sea_flamethrower:true},unbreakable={}]
 execute as @a[tag=SEAPT,tag=e_w_04,level=..7] run xp add @s 1 points
+execute as @a[tag=SEAPT,tag=e_w_04,level=..7] as @s[nbt={Inventory:[{components:{"minecraft:custom_data":{sea_t_flamethrower1:true}}}]}] run xp add @s 1 points
+execute as @a[tag=SEAPT,tag=e_w_04,level=..7] as @s[nbt={Inventory:[{components:{"minecraft:custom_data":{sea_t_flamethrower2:true}}}]}] run xp add @s 1 points
+execute as @a[tag=SEAPT,tag=e_w_04,level=..7] as @s[nbt={Inventory:[{components:{"minecraft:custom_data":{sea_t_flamethrower3:true}}}]}] run xp add @s 1 points
 execute as @a[tag=SEAPT,tag=e_w_04,level=8..] run xp set @s 8 levels
 execute as @a[tag=SEAPT,tag=e_w_04,level=8..] run xp set @s 0 points
 
