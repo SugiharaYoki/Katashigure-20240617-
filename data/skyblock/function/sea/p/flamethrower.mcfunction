@@ -15,7 +15,6 @@ execute as @n[type=interaction,tag=flamethrowerdetect] on target if entity @s[le
 execute as @n[type=interaction,tag=flamethrowerdetect] on target if entity @s[level=1..] anchored eyes run particle flame ^ ^ ^3.8 0.1 0.1 0.1 0.01 4
 execute as @n[type=interaction,tag=flamethrowerdetect] on target if entity @s[level=1..] anchored eyes run particle flame ^ ^ ^4.3 0.1 0.1 0.1 0.01 4
 execute as @n[type=interaction,tag=flamethrowerdetect] on target if entity @s[level=1..] anchored eyes run particle flame ^ ^ ^4.8 0.1 0.1 0.1 0.01 4
-execute as @n[type=interaction,tag=flamethrowerdetect] on target if entity @s[level=1..] anchored eyes run xp add @s -7 points
 execute as @n[type=interaction,tag=flamethrowerdetect] on target if entity @s[level=1..] anchored eyes positioned ^ ^ ^0.3 as @e[tag=SEAmob,distance=0..1.5] run damage @s 1.5 campfire
 execute as @n[type=interaction,tag=flamethrowerdetect] on target if entity @s[level=1..] anchored eyes positioned ^ ^ ^0.8 as @e[tag=SEAmob,distance=0..1.5] run damage @s 1.5 campfire
 execute as @n[type=interaction,tag=flamethrowerdetect] on target if entity @s[level=1..] anchored eyes positioned ^ ^ ^1.3 as @e[tag=SEAmob,distance=0..1.5] run damage @s 1.5 campfire
@@ -26,4 +25,5 @@ execute as @n[type=interaction,tag=flamethrowerdetect] on target if entity @s[le
 execute as @n[type=interaction,tag=flamethrowerdetect] on target if entity @s[level=1..] anchored eyes positioned ^ ^ ^3.8 as @e[tag=SEAmob,distance=0..1.5] run damage @s 1.5 campfire
 execute as @n[type=interaction,tag=flamethrowerdetect] on target if entity @s[level=1..] anchored eyes positioned ^ ^ ^4.3 as @e[tag=SEAmob,distance=0..1.5] run damage @s 1.5 campfire
 execute as @n[type=interaction,tag=flamethrowerdetect] on target if entity @s[level=1..] anchored eyes positioned ^ ^ ^4.8 as @e[tag=SEAmob,distance=0..1.5] run damage @s 1.5 campfire
+execute as @n[type=interaction,tag=flamethrowerdetect] on target if entity @s[level=1..] anchored eyes run xp add @s -7 points
 execute as @n[type=interaction,tag=flamethrowerdetect] run data remove entity @s interaction
