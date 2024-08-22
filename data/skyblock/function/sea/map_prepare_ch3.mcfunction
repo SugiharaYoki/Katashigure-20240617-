@@ -109,11 +109,6 @@ item replace block 90104 137 117 container.12 with wild_armor_trim_smithing_temp
 item replace block 90104 137 117 container.14 with gunpowder 2
 fill 90107 138 117 90107 137 117 iron_bars
 
-summon marker 90111 137 101 {Tags:["SEAmagma1"]}
-summon marker 90119 137 110 {Tags:["SEAmagma1"]}
-summon marker 90121 137 108 {Tags:["SEAmagma1"]}
-summon marker 90094 137 97 {Tags:["SEAmagma1"]}
-summon marker 90094 137 124 {Tags:["SEAmagma1"]}
 
 fill 90086 138 128 90086 137 128 minecraft:slime_block
 
