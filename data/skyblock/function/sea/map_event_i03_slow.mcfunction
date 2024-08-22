@@ -174,7 +174,7 @@ execute if block 90119 138 132 lever[powered=false] run setblock 90130 135 131 a
 execute if block 90125 138 128 minecraft:waxed_copper_bulb[lit=true] \
  if block 90132 142 111 minecraft:waxed_copper_bulb[lit=true] \
  if block 90095 144 113 minecraft:waxed_copper_bulb[lit=true] \
- run scoreboard players set @n[tag=sc] sea_4temp3 101
+ run scoreboard players set @n[tag=sc,scores={sea_4temp3=-20..99}] sea_4temp3 101
 
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp3=100..300}] run scoreboard players add @s sea_4temp3 1
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp3=120}] positioned 90133 137 108 \
