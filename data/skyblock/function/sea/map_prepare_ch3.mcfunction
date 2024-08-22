@@ -69,7 +69,6 @@ setblock 90066 138 153 lever[facing=south]
 summon minecraft:interaction 90128 138.3 97 {CustomName:'[{"text":"多功能工作站"}]',Tags:["SEAcrafter"]}
 summon minecraft:interaction 90082 144.3 117 {CustomName:'[{"text":"器械式治疗仪"}]',Tags:["SEAaidbox"]}
 
-fill 90143 143 100 90143 141 102 minecraft:mangrove_roots
 setblock 90113 140 109 chest[facing=north]
 item replace block 90113 140 109 container.13 with emerald 3
 
@@ -127,6 +126,17 @@ setblock 90134 137 121 chest[facing=west]
 item replace block 90134 137 121 container.13 with raw_iron 1
 
 setblock 90133 138 127 air
+
+setblock 90125 138 128 minecraft:waxed_copper_bulb[lit=false]
+setblock 90132 142 111 minecraft:waxed_copper_bulb[lit=false]
+setblock 90095 144 113 minecraft:waxed_copper_bulb[lit=false]
+
+setblock 90124 144 116 chest[facing=south]
+item replace block 90124 144 116 container.12 with emerald 5
+item replace block 90124 144 116 container.14 with emerald 5
+fill 90124 144 117 90124 145 117 minecraft:waxed_copper_block
+
+
 
 
 

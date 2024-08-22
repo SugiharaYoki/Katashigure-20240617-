@@ -217,3 +217,11 @@ clear @a[tag=SEAPT] basalt
 clear @a[tag=SEAPT] item_frame
 clear @a[tag=SEAPT] iron_bars
 clear @a[tag=SEAPT] deepslate_tiles
+clear @a[tag=SEAPT] waxed_copper_block
+clear @a[tag=SEAPT] slime_block
+clear @a[tag=SEAPT] string
+
+
+
+execute as @a[tag=SEAPT,x=80000,dx=20000,z=-10000,dz=20000,y=102,dy=5] at @s if block ~ ~-1 ~ waxed_weathered_cut_copper_slab if block ~ ~-0.1 ~ air run tp @s ~ 127.0 ~
+execute as @a[tag=SEAPT,x=80000,dx=20000,z=-10000,dz=20000,y=126,dy=5] at @s if block ~ ~-1 ~ waxed_weathered_cut_copper_slab if block ~ ~-0.1 ~ air run tp @s ~ 103.0 ~
