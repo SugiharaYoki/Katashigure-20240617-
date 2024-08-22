@@ -37,6 +37,7 @@ function skyblock:azr/items/revival_star
 give @s pumpkin_pie 8
 
 #游戏数据初始化
+scoreboard players set @s Azr_forceDeath 0
 scoreboard players set @s Azr_emerald 0
 scoreboard players add @s[scores={Azr_skillPoints=3..}] Azr_emerald 5
 scoreboard players add @s[scores={Azr_skillPoints=6..}] Azr_emerald 5
