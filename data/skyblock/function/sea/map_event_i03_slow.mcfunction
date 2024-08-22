@@ -74,13 +74,40 @@ execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer1,scores={sea_4temp1
 execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer1,scores={sea_4temp1=11}] positioned 90105 138 110 run function skyblock:sea/m/skeleton_melee
 
 execute positioned 90099 137 120 if entity @a[distance=..2.5] unless entity @n[tag=SEAch3_spawn_timer2,distance=0..3] run summon marker ~ ~ ~ {Tags:["SEAch3_spawn_timer","SEAch3_spawn_timer2"]}
-execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer1,scores={sea_4temp1=1..10}] positioned 90099 137 131 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
-execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer1,scores={sea_4temp1=11}] positioned 90099 137 131 run function skyblock:sea/m/skeleton
-execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer1,scores={sea_4temp1=11}] positioned 90099 137 131 run function skyblock:sea/m/skeleton
-execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer1,scores={sea_4temp1=11}] positioned 90099 137 131 run function skyblock:sea/m/skeleton
-execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer1,scores={sea_4temp1=15..25}] positioned 90099 137 131 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
-execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer1,scores={sea_4temp1=26}] positioned 90099 137 131 run function skyblock:sea/m/silverfish_big
-execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer1,scores={sea_4temp1=26}] positioned 90099 137 131 run function skyblock:sea/m/silverfish_big
+execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer2,scores={sea_4temp1=1..10}] positioned 90099 137 131 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
+execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer2,scores={sea_4temp1=11}] positioned 90099 137 131 run function skyblock:sea/m/skeleton
+execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer2,scores={sea_4temp1=11}] positioned 90099 137 131 run function skyblock:sea/m/skeleton
+execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer2,scores={sea_4temp1=11}] positioned 90099 137 131 run function skyblock:sea/m/skeleton
+execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer2,scores={sea_4temp1=15..25}] positioned 90099 137 131 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
+execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer2,scores={sea_4temp1=26}] positioned 90099 137 131 run function skyblock:sea/m/silverfish_big
+execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer2,scores={sea_4temp1=26}] positioned 90099 137 131 run function skyblock:sea/m/silverfish_big
+execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer2,scores={sea_4temp1=26}] positioned 90087 137 147 run function skyblock:sea/m/silverfish_big
+execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer2,scores={sea_4temp1=26}] positioned 90087 137 147 run function skyblock:sea/m/silverfish_big
+execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer2,scores={sea_4temp1=26}] positioned 90077 137 146 run function skyblock:sea/m/zombie_security2
+execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer2,scores={sea_4temp1=26}] positioned 90077 137 146 run function skyblock:sea/m/drowned_hat
+execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer2,scores={sea_4temp1=26}] positioned 90077 137 146 run function skyblock:sea/m/drowned_hat
+execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer2,scores={sea_4temp1=26}] positioned 90102 137 153 run function skyblock:sea/m/zombie_cook
+execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer2,scores={sea_4temp1=26}] positioned 90102 137 153 run function skyblock:sea/m/silverfish
+execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer2,scores={sea_4temp1=26}] positioned 90102 137 153 run function skyblock:sea/m/silverfish
+
+
+scoreboard players add @e[tag=SEAch3_spawn_timer] sea_4temp1 1
+execute positioned 90085 137 140 if entity @a[distance=..2.5] unless entity @n[tag=SEAch3_spawn_timer3,distance=0..3] run summon marker ~ ~ ~ {Tags:["SEAch3_spawn_timer","SEAch3_spawn_timer3"]}
+execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer3,scores={sea_4temp1=1..10}] positioned 90078 138 141 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
+execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer3,scores={sea_4temp1=11}] positioned 90078 138 141 run function skyblock:sea/m/zombie_security2
+execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer3,scores={sea_4temp1=1..10}] positioned 90078 138 139 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
+execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer3,scores={sea_4temp1=11}] positioned 90078 138 139 run function skyblock:sea/m/zombie_security2
+execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer3,scores={sea_4temp1=1..10}] positioned 90084 137 147 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
+execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer3,scores={sea_4temp1=11}] positioned 90084 137 147 run function skyblock:sea/m/drowned_shield
+execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer3,scores={sea_4temp1=1..10}] positioned 90086 137 147 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
+execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer3,scores={sea_4temp1=11}] positioned 90086 137 147 run function skyblock:sea/m/drowned_shield
+
+scoreboard players add @e[tag=SEAch3_spawn_timer] sea_4temp1 1
+execute positioned 90106 137 152 if entity @a[distance=..2.5] unless entity @n[tag=SEAch3_spawn_timer4,distance=0..3] run summon marker ~ ~ ~ {Tags:["SEAch3_spawn_timer","SEAch3_spawn_timer4"]}
+execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer4,scores={sea_4temp1=1..10}] positioned 90106 137 140 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
+execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer4,scores={sea_4temp1=1..10}] positioned 90106 137 140 run particle sculk_soul ~ ~1 ~ 0.3 0.5 0.3 0.05 10
+execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer4,scores={sea_4temp1=11}] positioned 90106 137 140 run function skyblock:sea/m/husk
+
 
 
 execute as @n[tag=sc] if block 90133 137 108 minecraft:warped_button[powered=true] unless entity @s[scores={sea_4temp2=80..}] run scoreboard players set @s sea_4temp2 80
