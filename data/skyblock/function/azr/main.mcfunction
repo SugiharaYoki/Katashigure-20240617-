@@ -80,9 +80,12 @@ execute if score isStarted Azr_system matches 1 unless score stopSeconds Azr_sys
 
 #商店系统
 execute as @a[tag=azrPlayer,tag=hasLifeVitae] run function skyblock:azr/shop/core
+execute as @a[tag=azrPlayer,scores={Azr_Shop=84301..8439999}] run function skyblock:azr/shop/purchase
 
 #背包管理器
 execute as @a[tag=azrPlayer] run function skyblock:azr/inventory_manager
+execute as @a[tag=removeSpark] if data entity @s SelectedItem.components."minecraft:custom_data"{InstantSpark:1b} run playsound item.shield.break master @s ~ ~ ~
+execute as @a[tag=removeSpark] if data entity @s SelectedItem.components."minecraft:custom_data"{InstantSpark:1b} run item replace entity @s weapon.mainhand with air
 
 #结束游戏
 #游戏未开始或对局不匹配时强制杀死玩家

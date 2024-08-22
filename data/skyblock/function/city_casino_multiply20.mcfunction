@@ -5,8 +5,10 @@ scoreboard objectives add Cas_Mtpl_A dummy
 scoreboard objectives add Cas_Mtpl_B dummy
 scoreboard objectives add Cas_Mtpl_C dummy
 function skyblock:tool_rng
+
 #土块
 execute if entity @s[tag=DEBUG_dirt] if score @n[tag=sc] rng4 matches 4 run scoreboard players set @n[tag=sc] rng4 3
+
 execute if entity @s[tag=CasinoMultSuc] run scoreboard players remove @s Perm_PersonFSB 20
 execute if entity @s[tag=CasinoMultSuc,scores={Cas_Mtpl_C=1}] if entity @n[tag=sc,scores={rng10=1}] run tellraw @s {"text":"<< 10 >>","color":"yellow"}
 execute if entity @s[tag=CasinoMultSuc,scores={Cas_Mtpl_C=1}] if entity @n[tag=sc,scores={rng10=2}] run tellraw @s {"text":"<< 15 >>","color":"yellow"}
