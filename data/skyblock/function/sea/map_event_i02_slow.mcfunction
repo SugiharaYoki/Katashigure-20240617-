@@ -637,6 +637,7 @@ execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=5057}] as @a[tag
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=5089}] as @a[tag=SEAPT] at @s run tellraw @s {"text":"『厄珀娅的悲歌』第二章 完","color":"blue","bold": true}
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=5089}] as @a[tag=SEAPT] at @s run playsound music_disc.creator_music_box music @a[tag=SEAPT] ~ ~ ~ 1000 0.8
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=5089}] run function skyblock:sea/map_prepare_ch3
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=5030}] run setblock 90071 137 151 minecraft:iron_trapdoor[facing=north,open=true]
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=5030}] run setblock 90066 129 112 minecraft:stone_button[facing=north]
 
 

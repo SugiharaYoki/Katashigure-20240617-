@@ -129,5 +129,5 @@ setblock 90084 132 112 white_stained_glass
 
 setblock 90066 129 112 minecraft:stone_button[facing=north]
 
-
+setblock 90071 137 151 minecraft:iron_trapdoor[facing=north,open=true]
 

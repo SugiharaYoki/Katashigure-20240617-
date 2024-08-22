@@ -136,7 +136,7 @@ item replace block 90124 144 116 container.12 with emerald 5
 item replace block 90124 144 116 container.14 with emerald 5
 fill 90124 144 117 90124 145 117 minecraft:waxed_copper_block
 
-
-
+setblock 90071 138 148 air
+setblock 90071 138 148 lever[facing=north]
 
 

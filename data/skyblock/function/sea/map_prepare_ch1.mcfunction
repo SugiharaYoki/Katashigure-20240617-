@@ -301,7 +301,7 @@ setblock 90140 115 147 decorated_pot{sherds:["mourner_pottery_sherd","mourner_po
 setblock 90073 103 154 decorated_pot{sherds:["friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd"],item:{count: 3, id:"minecraft:emerald"}}
 setblock 90074 103 154 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 1, id:"minecraft:beef"}}
 
-
+setblock 90071 137 151 minecraft:iron_trapdoor[facing=north]
 fill 90101 123 116 90101 122 116 minecraft:slime_block
 fill 90117 123 126 90117 122 126 minecraft:slime_block
 fill 90080 122 144 90080 123 144 minecraft:slime_block
