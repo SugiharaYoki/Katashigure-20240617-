@@ -93,7 +93,6 @@ execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer2,scores={sea_4temp1
 execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer2,scores={sea_4temp1=26}] positioned 90102 137 153 run function skyblock:sea/m/silverfish
 
 
-scoreboard players add @e[tag=SEAch3_spawn_timer] sea_4temp1 1
 execute positioned 90085 137 140 if entity @a[distance=..2.5] unless entity @n[tag=SEAch3_spawn_timer3,distance=0..3] run summon marker ~ ~ ~ {Tags:["SEAch3_spawn_timer","SEAch3_spawn_timer3"]}
 execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer3,scores={sea_4temp1=1..10}] positioned 90078 138 141 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
 execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer3,scores={sea_4temp1=11}] positioned 90078 138 141 run function skyblock:sea/m/zombie_security2
@@ -104,7 +103,6 @@ execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer3,scores={sea_4temp1
 execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer3,scores={sea_4temp1=1..10}] positioned 90086 137 147 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
 execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer3,scores={sea_4temp1=11}] positioned 90086 137 147 run function skyblock:sea/m/drowned_shield
 
-scoreboard players add @e[tag=SEAch3_spawn_timer] sea_4temp1 1
 execute positioned 90106 137 152 if entity @a[distance=..2.5] unless entity @n[tag=SEAch3_spawn_timer4,distance=0..3] run summon marker ~ ~ ~ {Tags:["SEAch3_spawn_timer","SEAch3_spawn_timer4"]}
 execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer4,scores={sea_4temp1=1..10}] positioned 90106 137 140 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
 execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer4,scores={sea_4temp1=1..10}] positioned 90106 137 140 run particle sculk_soul ~ ~1 ~ 0.3 0.5 0.3 0.05 10
