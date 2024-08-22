@@ -13,7 +13,8 @@ tellraw @a[tag=azrPlayer,distance=..10000] [{"selector":"@s","color":"blue"},{"t
 tellraw @s [{"text":"你已经死亡！最终坚持关数： ","color":"red"},{"score":{"name":"@s","objective":"Azr_wave"}}]
 tellraw @s [{"text":"现在持有的影之石： ","color":"white"},{"score":{"name":"@s","objective":"Perm_PersonSHD"}}]
 #更新战绩
-execute if score @s SeGa_StandLastBH < @s Azr_wave run scoreboard players operation @s SeGa_StandLastBH = @a Azr_wave
+execute unless score @s SeGa_StandLastBH matches -2147483648..2147483647 run scoreboard players set @s Azr_system 0
+execute if score @s SeGa_StandLastBH < @s Azr_wave run scoreboard players operation @s SeGa_StandLastBH = @s Azr_wave
 execute if entity @a[tag=azrPlayer] run scoreboard players set @s Azr_wave 0
 #后续处理
 execute if entity @s[x=-79900,y=40,z=0,distance=0..800] run spawnpoint @s -79953 38 -14 -90

@@ -31,7 +31,6 @@ scoreboard objectives remove Azr_forceDeath
 scoreboard objectives remove Azr_isDead
 scoreboard objectives remove Azr_emerald
 scoreboard objectives remove Azr_Shop
-scoreboard objectives remove Azr_Shop_rng
 scoreboard objectives remove Azr_Shop_rng2
 scoreboard objectives remove Azr_Shop_rng3
 scoreboard objectives remove Azr_Shop_rng4
