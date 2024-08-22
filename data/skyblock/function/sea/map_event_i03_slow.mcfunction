@@ -187,6 +187,6 @@ execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp3=240}] positioned
  run tellraw @a[distance=0..250] {"text":"？？？：“希望你会知道我说的是哪里。”","color":"dark_purple"}
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp3=280}] positioned 90133 137 108 \
  run tellraw @a[distance=0..250] {"text":"？？？：“先去钢处理车间的楼顶，我给你准备了礼物。不要辜负我。”","color":"dark_purple"}
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp3=280}] run fill 90124 144 117 90124 145 117 minecraft:waxed_copper_block destroy
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp3=280}] run fill 90124 144 117 90124 145 117 minecraft:air destroy
 
 
