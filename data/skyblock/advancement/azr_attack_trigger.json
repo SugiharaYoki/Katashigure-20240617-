@@ -1,0 +1,13 @@
+{
+    "criteria": {
+        "requirement":{
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                
+            }
+        }
+    },
+    "rewards": {
+        "function": "skyblock:azr/debug/attack"
+    }
+}

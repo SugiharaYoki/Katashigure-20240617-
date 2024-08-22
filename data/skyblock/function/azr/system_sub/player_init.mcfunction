@@ -47,28 +47,6 @@ tellraw @s {"text":"游戏开始……","color":"green"}
 #function skyblock:azr/purchase_sega_azriel_plypts_react1
 
 #wtf
-#scoreboard players set @s srn_tempch 1
-#scoreboard players set @s srn_tempch 1
-#scoreboard players set @s srn_temp1 -1
-#scoreboard players set @s srn_temp2 -1
-#scoreboard players set @s srn_temp3 -1
-#scoreboard players set @s srn_temp4 -1
-#scoreboard players set @s srn_temp5 -1
-#scoreboard players set @s srn_temp6 -1
-#scoreboard players set @s srn_temp7 -1
-#scoreboard players set @s srn_temp8 -1
-#scoreboard players set @s srn_temp9 -1
-#scoreboard players set @s srn_temp10 -1
-#scoreboard players set @s srn_temp11 -1
-#scoreboard players set @s srn_temp12 -1
-#scoreboard players set @s srn_temp13 -1
-#scoreboard players set @s srn_temp14 -1
-#scoreboard players set @s srn_temp15 -1
-#scoreboard players set @s srn_temp16 -1
-#scoreboard players set @s srn_temp17 -1
-#scoreboard players set @s srn_temp18 -1
-#scoreboard players set @s srn_temp19 -1
-#scoreboard players set @s srn_temp20 -1
 #scoreboard players set @s AzrielTag10 10
 #scoreboard players operation @s AzrielTagTemp2 = @s AzrielTagTemp1
 #scoreboard players operation @s AzrielTagTemp3 = @s AzrielTagTemp2

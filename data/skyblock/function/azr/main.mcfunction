@@ -80,6 +80,7 @@ execute if score isStarted Azr_system matches 1 unless score stopSeconds Azr_sys
 
 #商店系统
 execute as @a[tag=azrPlayer,tag=hasLifeVitae] run function skyblock:azr/shop/core
+execute as @e run function skyblock:azr/shop/purchase
 
 #背包管理器
 execute as @a[tag=azrPlayer] run function skyblock:azr/inventory_manager

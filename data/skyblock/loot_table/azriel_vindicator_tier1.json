@@ -26,8 +26,13 @@
           "weight": 10,
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:\"{\\\"text\\\":\\\"圣殿信条\\\",\\\"italic\\\":false,\\\"color\\\":\\\"blue\\\"}\"}}"
+              "function": "minecraft:set_components",
+              "components": {
+                "custom_name": "{\"text\":\"圣殿信条\",\"italic\":false,\"color\":\"blue\"}",
+                "custom_data": {
+                  "sanct_credo":1
+                }
+              }
             }
 ]
         },

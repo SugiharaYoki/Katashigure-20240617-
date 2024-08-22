@@ -81,7 +81,7 @@ setblock -79938 39 49 minecraft:quartz_bricks{name: "to Stage Cerement"}
 
 #Stage4 beta
 setblock -79939 38 20 chest[facing=west]{Lock:"木船图案的钥匙"}
-item replace block -79939 38 20 container.11 with minecraft:paper[custom_name='{"text":"圣殿信条","color":"blue","italic":false}'] 3
+item replace block -79939 38 20 container.11 with minecraft:paper[custom_name='{"text":"圣殿信条","color":"blue","italic":false}',custom_data={sanct_credo:1b}] 3
 item replace block -79939 38 20 container.13 with skull_banner_pattern[custom_name='{"text":"“仍旧在调查魔物失控的真相”","color":"dark_purple","italic":false}',lore=['{"text":"拉斐尔大人告知我丢失钥匙并无大碍，","color":"white","italic":false}','{"text":"地下水路东区不存在任何有用的事物。","color":"white","italic":false}','{"text":"可那里明明封印着源自各处的亡灵……","color":"white","italic":false}']]
 item replace block -79939 38 20 container.15 with iron_ingot[custom_name='{"text":"碳钢","italic":false}'] 1
 fill -79948 36 45 -79950 38 45 minecraft:purple_stained_glass{name: "to Stage Cerement"}
@@ -386,7 +386,7 @@ item replace block -79917 40 -62 container.11 with minecraft:paper[custom_name='
 item replace block -79917 40 -62 container.13 with minecraft:chain 5
 item replace block -79917 40 -62 container.15 with skull_banner_pattern[custom_name='{"text":"“拉斐尔大人与能天使大人吵了一架”","color":"dark_purple","italic":false}',lore=['{"text":"希望神庭近些日子不要遭遇困难。","color":"white","italic":false}','{"text":"这两天拉斐尔大人的脾气特别不稳定，","color":"white","italic":false}','{"text":"还时不时地跟我们说，","color":"white","italic":false}','{"text":"“百千年的重头戏终于要到来了”。","color":"white","italic":false}']] 1
 item replace block -79875 38 64 container.13 with tripwire_hook[custom_name='{"text":"粗石英钥匙","color":"blue","italic":false}'] 1
-item replace block -79895 48 136 container.11 with minecraft:paper[custom_name='{"text":"圣殿信条","color":"blue","italic":false}'] 2
+item replace block -79895 48 136 container.11 with minecraft:paper[custom_name='{"text":"圣殿信条","color":"blue","italic":false}',custom_data={sanct_credo:1b}] 2
 item replace block -79895 48 136 container.13 with minecraft:carrot 5
 item replace block -79902 43 109 container.12 with minecraft:arrow 6
 item replace block -79902 43 109 container.12 with tripwire_hook[custom_name='{"text":"椅子形状的钥匙","color":"blue","italic":false}'] 1
@@ -414,8 +414,8 @@ item replace block -79929 49 -123 container.14 with tripwire_hook[custom_name='{
 item replace block -79782 27 -286 container.13 with nether_star[custom_name='{"text":"下界命星","color":"yellow","italic":false}',custom_data={Azr_revivalStar:1b}] 1
 item replace block -79770 23 -460 container.13 with minecraft:gold_nugget 30
 item replace block -79765 24 -469 container.13 with minecraft:gold_nugget 28
-item replace block -79713 22 -461 container.13 with paper[custom_name='{"text":"圣殿信条","color":"blue","italic":false}'] 3
-item replace block -79626 21 -415 container.11 with minecraft:paper[custom_name='{"text":"圣殿信条","color":"blue","italic":false}'] 3
+item replace block -79713 22 -461 container.13 with paper[custom_name='{"text":"圣殿信条","color":"blue","italic":false}',custom_data={sanct_credo:1b}] 3
+item replace block -79626 21 -415 container.11 with minecraft:paper[custom_name='{"text":"圣殿信条","color":"blue","italic":false}',custom_data={sanct_credo:1b}] 3
 item replace block -79626 21 -415 container.13 with skull_banner_pattern[custom_name='{"text":"“神罚 这一切都是神罚 全部都是”","color":"dark_purple","italic":false}',lore=['{"text":"我们触怒了神庭 我们触怒了神庭","color":"white","italic":false}','{"text":"我们触怒了神庭 我们触怒了神庭","color":"white","italic":false}','{"text":"现在轮到我们自取灭亡了","color":"white","italic":false}','{"text":"现在轮到我们自取灭亡了","color":"white","italic":false}']] 1
 item replace block -79626 21 -415 container.15 with flint 5
 item replace block 79588 8 -427 container.11 with firework_star[custom_name='{"text":"机械箭","italic":false}'] 5
