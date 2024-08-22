@@ -1,6 +1,6 @@
 #-----------------1
 execute if score temp1 Azr_Shop_rng matches 0 if score @s Azr_Shop matches 84301 \
-    if items entity @s container.* emerald[count={min:1}] run tag @s add TEMP_purchase_success
+    if score @s Azr_emerald matches 1.. run tag @s add TEMP_purchase_success
 execute if score temp1 Azr_Shop_rng matches 0 if score @s Azr_Shop matches 84301 \
     run give @s[tag=TEMP_purchase_success] bread 1
 tag @s remove TEMP_purchase_success
@@ -12,25 +12,25 @@ execute if score temp1 Azr_Shop_rng matches 1 if score @s Azr_Shop matches 84301
 tag @s remove TEMP_purchase_success
 
 execute if score temp1 Azr_Shop_rng matches 2 if score @s Azr_Shop matches 84301 \
-    if items entity @s container.* emerald[count={min:3}] run tag @s add TEMP_purchase_success
+    if score @s Azr_emerald matches 3.. run tag @s add TEMP_purchase_success
 execute if score temp1 Azr_Shop_rng matches 2 if score @s Azr_Shop matches 84301 \
     run give @s[tag=TEMP_purchase_success] cooked_porkchop
 tag @s remove TEMP_purchase_success
 
 execute if score temp1 Azr_Shop_rng matches 3 if score @s Azr_Shop matches 8430133 \
-    if items entity @s container.* emerald[count={min:2}] run tag @s add TEMP_purchase_success
+    if score @s Azr_emerald matches 2.. run tag @s add TEMP_purchase_success
 execute if score temp1 Azr_Shop_rng matches 3 if score @s Azr_Shop matches 8430133 \
     run give @s[tag=TEMP_purchase_success] cooked_chicken
 tag @s remove TEMP_purchase_success
 
 execute if score temp1 Azr_Shop_rng matches 4 if score @s Azr_Shop matches 84301 \
-    if items entity @s container.* emerald[count={min:2}] run tag @s add TEMP_purchase_success
+    if score @s Azr_emerald matches 2.. run tag @s add TEMP_purchase_success
 execute if score temp1 Azr_Shop_rng matches 4 if score @s Azr_Shop matches 84301 \
     run give @s[tag=TEMP_purchase_success] kelp 8
 tag @s remove TEMP_purchase_success
 
 execute if score temp1 Azr_Shop_rng matches 5 if score @s Azr_Shop matches 84301 \
-    if items entity @s container.* emerald[count={min:2}] run tag @s add TEMP_purchase_success
+    if score @s Azr_emerald matches 2.. run tag @s add TEMP_purchase_success
 execute if score temp1 Azr_Shop_rng matches 5 if score @s Azr_Shop matches 84301 \
     run give @s[tag=TEMP_purchase_success] melon_slice 5
 tag @s remove TEMP_purchase_success
@@ -48,13 +48,13 @@ execute if score temp1 Azr_Shop_rng matches 7 if score @s Azr_Shop matches 84301
 tag @s remove TEMP_purchase_success
 
 execute if score temp1 Azr_Shop_rng matches 8 if score @s Azr_Shop matches 84301 \
-    if items entity @s container.* emerald[count={min:2}] run tag @s add TEMP_purchase_success
+    if score @s Azr_emerald matches 2.. run tag @s add TEMP_purchase_success
 execute if score temp1 Azr_Shop_rng matches 8 if score @s Azr_Shop matches 84301 \
     run give @s[tag=TEMP_purchase_success] mushroom_stew 1
 tag @s remove TEMP_purchase_success
 
 execute if score temp1 Azr_Shop_rng matches 9 if score @s Azr_Shop matches 84301 \
-    if items entity @s container.* emerald[count={min:3}] run tag @s add TEMP_purchase_success
+    if score @s Azr_emerald matches 3.. run tag @s add TEMP_purchase_success
 execute if score temp1 Azr_Shop_rng matches 9 if score @s Azr_Shop matches 84301 \
     run give @s[tag=TEMP_purchase_success] arrow 10
 tag @s remove TEMP_purchase_success
@@ -66,7 +66,7 @@ execute if score temp1 Azr_Shop_rng matches 10 if score @s Azr_Shop matches 8430
 tag @s remove TEMP_purchase_success
 
 execute if score temp1 Azr_Shop_rng matches 11 if score @s Azr_Shop matches 84301 \
-    if items entity @s container.* emerald[count={min:1}] run tag @s add TEMP_purchase_success
+    if score @s Azr_emerald matches 1.. run tag @s add TEMP_purchase_success
 execute if score temp1 Azr_Shop_rng matches 11 if score @s Azr_Shop matches 84301 \
     run give @s[tag=TEMP_purchase_success] cod 1
 tag @s remove TEMP_purchase_success
@@ -92,7 +92,7 @@ execute if score temp1 Azr_Shop_rng matches 14 if score @s Azr_Shop matches 8430
 tag @s remove TEMP_purchase_success
 
 execute if score temp1 Azr_Shop_rng matches 15 if score @s Azr_Shop matches 84301 \
-    if items entity @s container.* emerald[count={min:4}] run tag @s add TEMP_purchase_success
+    if score @s Azr_emerald matches 4.. run tag @s add TEMP_purchase_success
 execute if score temp1 Azr_Shop_rng matches 15 if score @s Azr_Shop matches 84301 \
     run give @s[tag=TEMP_purchase_success] bread 5
 tag @s remove TEMP_purchase_success
@@ -135,7 +135,7 @@ tag @s remove TEMP_purchase_success
 #execute if score temp1 Azr_Shop_rng matches 24 run tellraw @s [{"text":"   "},{"text":"金萝卜 ×2","color":"white"},{"text":"  6 绿宝石 1 胡萝卜 1 软金 ","color":"gold"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 84301"}}]
 
 execute if score temp1 Azr_Shop_rng matches 25 if score @s Azr_Shop matches 84301 \
-    if items entity @s container.* emerald[count={min:3}] \
+    if score @s Azr_emerald matches 3.. \
     if items entity @s container.* carrot[count={min:4}] run tag @s add TEMP_purchase_success
 execute if score temp1 Azr_Shop_rng matches 25 if score @s Azr_Shop matches 84301 \
     run give @s[tag=TEMP_purchase_success] golden_carrot 1
@@ -176,7 +176,7 @@ tag @s remove TEMP_purchase_success
 #-----------------2
 
 execute if score temp2 Azr_Shop_rng matches 0 if score @s Azr_Shop matches 84304 \
-    if items entity @s container.* emerald[count={min:1}] run tag @s add TEMP_purchase_success
+    if score @s Azr_emerald matches 1.. run tag @s add TEMP_purchase_success
 execute if score temp2 Azr_Shop_rng matches 0 if score @s Azr_Shop matches 84304 \
     run give @s[tag=TEMP_purchase_success] bread 1
 tag @s remove TEMP_purchase_success
@@ -188,25 +188,25 @@ execute if score temp2 Azr_Shop_rng matches 1 if score @s Azr_Shop matches 84304
 tag @s remove TEMP_purchase_success
 
 execute if score temp2 Azr_Shop_rng matches 2 if score @s Azr_Shop matches 84304 \
-    if items entity @s container.* emerald[count={min:3}] run tag @s add TEMP_purchase_success
+    if score @s Azr_emerald matches 3.. run tag @s add TEMP_purchase_success
 execute if score temp2 Azr_Shop_rng matches 2 if score @s Azr_Shop matches 84304 \
     run give @s[tag=TEMP_purchase_success] cooked_porkchop
 tag @s remove TEMP_purchase_success
 
 execute if score temp2 Azr_Shop_rng matches 3 if score @s Azr_Shop matches 8430433 \
-    if items entity @s container.* emerald[count={min:2}] run tag @s add TEMP_purchase_success
+    if score @s Azr_emerald matches 2.. run tag @s add TEMP_purchase_success
 execute if score temp2 Azr_Shop_rng matches 3 if score @s Azr_Shop matches 8430433 \
     run give @s[tag=TEMP_purchase_success] cooked_chicken
 tag @s remove TEMP_purchase_success
 
 execute if score temp2 Azr_Shop_rng matches 4 if score @s Azr_Shop matches 84304 \
-    if items entity @s container.* emerald[count={min:2}] run tag @s add TEMP_purchase_success
+    if score @s Azr_emerald matches 2.. run tag @s add TEMP_purchase_success
 execute if score temp2 Azr_Shop_rng matches 4 if score @s Azr_Shop matches 84304 \
     run give @s[tag=TEMP_purchase_success] kelp 8
 tag @s remove TEMP_purchase_success
 
 execute if score temp2 Azr_Shop_rng matches 5 if score @s Azr_Shop matches 84304 \
-    if items entity @s container.* emerald[count={min:2}] run tag @s add TEMP_purchase_success
+    if score @s Azr_emerald matches 2.. run tag @s add TEMP_purchase_success
 execute if score temp2 Azr_Shop_rng matches 5 if score @s Azr_Shop matches 84304 \
     run give @s[tag=TEMP_purchase_success] melon_slice 5
 tag @s remove TEMP_purchase_success
@@ -224,13 +224,13 @@ execute if score temp2 Azr_Shop_rng matches 7 if score @s Azr_Shop matches 84304
 tag @s remove TEMP_purchase_success
 
 execute if score temp2 Azr_Shop_rng matches 8 if score @s Azr_Shop matches 84304 \
-    if items entity @s container.* emerald[count={min:2}] run tag @s add TEMP_purchase_success
+    if score @s Azr_emerald matches 2.. run tag @s add TEMP_purchase_success
 execute if score temp2 Azr_Shop_rng matches 8 if score @s Azr_Shop matches 84304 \
     run give @s[tag=TEMP_purchase_success] mushroom_stew 1
 tag @s remove TEMP_purchase_success
 
 execute if score temp2 Azr_Shop_rng matches 9 if score @s Azr_Shop matches 84304 \
-    if items entity @s container.* emerald[count={min:3}] run tag @s add TEMP_purchase_success
+    if score @s Azr_emerald matches 3.. run tag @s add TEMP_purchase_success
 execute if score temp2 Azr_Shop_rng matches 9 if score @s Azr_Shop matches 84304 \
     run give @s[tag=TEMP_purchase_success] arrow 10
 tag @s remove TEMP_purchase_success
@@ -242,7 +242,7 @@ execute if score temp2 Azr_Shop_rng matches 10 if score @s Azr_Shop matches 8430
 tag @s remove TEMP_purchase_success
 
 execute if score temp2 Azr_Shop_rng matches 11 if score @s Azr_Shop matches 84304 \
-    if items entity @s container.* emerald[count={min:1}] run tag @s add TEMP_purchase_success
+    if score @s Azr_emerald matches 1.. run tag @s add TEMP_purchase_success
 execute if score temp2 Azr_Shop_rng matches 11 if score @s Azr_Shop matches 84304 \
     run give @s[tag=TEMP_purchase_success] cod 1
 tag @s remove TEMP_purchase_success
@@ -268,7 +268,7 @@ execute if score temp2 Azr_Shop_rng matches 14 if score @s Azr_Shop matches 8430
 tag @s remove TEMP_purchase_success
 
 execute if score temp2 Azr_Shop_rng matches 15 if score @s Azr_Shop matches 84304 \
-    if items entity @s container.* emerald[count={min:4}] run tag @s add TEMP_purchase_success
+    if score @s Azr_emerald matches 4.. run tag @s add TEMP_purchase_success
 execute if score temp2 Azr_Shop_rng matches 15 if score @s Azr_Shop matches 84304 \
     run give @s[tag=TEMP_purchase_success] bread 5
 tag @s remove TEMP_purchase_success
@@ -311,7 +311,7 @@ tag @s remove TEMP_purchase_success
 #execute if score temp2 Azr_Shop_rng matches 24 run tellraw @s [{"text":"   "},{"text":"金萝卜 ×2","color":"white"},{"text":"  6 绿宝石 1 胡萝卜 1 软金 ","color":"gold"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 84304"}}]
 
 execute if score temp2 Azr_Shop_rng matches 25 if score @s Azr_Shop matches 84304 \
-    if items entity @s container.* emerald[count={min:3}] \
+    if score @s Azr_emerald matches 3.. \
     if items entity @s container.* carrot[count={min:4}] run tag @s add TEMP_purchase_success
 execute if score temp2 Azr_Shop_rng matches 25 if score @s Azr_Shop matches 84304 \
     run give @s[tag=TEMP_purchase_success] golden_carrot 1
@@ -352,7 +352,7 @@ tag @s remove TEMP_purchase_success
 #-----------------3
 
 execute if score temp3 Azr_Shop_rng matches 0 if score @s Azr_Shop matches 84307 \
-    if items entity @s container.* emerald[count={min:1}] run tag @s add TEMP_purchase_success
+    if score @s Azr_emerald matches 1.. run tag @s add TEMP_purchase_success
 execute if score temp3 Azr_Shop_rng matches 0 if score @s Azr_Shop matches 84307 \
     run give @s[scores={Azr_SK5=1..},tag=TEMP_purchase_success] bread 1
 tag @s remove TEMP_purchase_success
@@ -364,25 +364,25 @@ execute if score temp3 Azr_Shop_rng matches 1 if score @s Azr_Shop matches 84307
 tag @s remove TEMP_purchase_success
 
 execute if score temp3 Azr_Shop_rng matches 2 if score @s Azr_Shop matches 84307 \
-    if items entity @s container.* emerald[count={min:3}] run tag @s add TEMP_purchase_success
+    if score @s Azr_emerald matches 3.. run tag @s add TEMP_purchase_success
 execute if score temp3 Azr_Shop_rng matches 2 if score @s Azr_Shop matches 84307 \
     run give @s[scores={Azr_SK5=1..},tag=TEMP_purchase_success] cooked_porkchop
 tag @s remove TEMP_purchase_success
 
 execute if score temp3 Azr_Shop_rng matches 3 if score @s Azr_Shop matches 8430733 \
-    if items entity @s container.* emerald[count={min:2}] run tag @s add TEMP_purchase_success
+    if score @s Azr_emerald matches 2.. run tag @s add TEMP_purchase_success
 execute if score temp3 Azr_Shop_rng matches 3 if score @s Azr_Shop matches 8430733 \
     run give @s[scores={Azr_SK5=1..},tag=TEMP_purchase_success] cooked_chicken
 tag @s remove TEMP_purchase_success
 
 execute if score temp3 Azr_Shop_rng matches 4 if score @s Azr_Shop matches 84307 \
-    if items entity @s container.* emerald[count={min:2}] run tag @s add TEMP_purchase_success
+    if score @s Azr_emerald matches 2.. run tag @s add TEMP_purchase_success
 execute if score temp3 Azr_Shop_rng matches 4 if score @s Azr_Shop matches 84307 \
     run give @s[scores={Azr_SK5=1..},tag=TEMP_purchase_success] kelp 8
 tag @s remove TEMP_purchase_success
 
 execute if score temp3 Azr_Shop_rng matches 5 if score @s Azr_Shop matches 84307 \
-    if items entity @s container.* emerald[count={min:2}] run tag @s add TEMP_purchase_success
+    if score @s Azr_emerald matches 2.. run tag @s add TEMP_purchase_success
 execute if score temp3 Azr_Shop_rng matches 5 if score @s Azr_Shop matches 84307 \
     run give @s[scores={Azr_SK5=1..},tag=TEMP_purchase_success] melon_slice 5
 tag @s remove TEMP_purchase_success
@@ -400,13 +400,13 @@ execute if score temp3 Azr_Shop_rng matches 7 if score @s Azr_Shop matches 84307
 tag @s remove TEMP_purchase_success
 
 execute if score temp3 Azr_Shop_rng matches 8 if score @s Azr_Shop matches 84307 \
-    if items entity @s container.* emerald[count={min:2}] run tag @s add TEMP_purchase_success
+    if score @s Azr_emerald matches 2.. run tag @s add TEMP_purchase_success
 execute if score temp3 Azr_Shop_rng matches 8 if score @s Azr_Shop matches 84307 \
     run give @s[scores={Azr_SK5=1..},tag=TEMP_purchase_success] mushroom_stew 1
 tag @s remove TEMP_purchase_success
 
 execute if score temp3 Azr_Shop_rng matches 9 if score @s Azr_Shop matches 84307 \
-    if items entity @s container.* emerald[count={min:3}] run tag @s add TEMP_purchase_success
+    if score @s Azr_emerald matches 3.. run tag @s add TEMP_purchase_success
 execute if score temp3 Azr_Shop_rng matches 9 if score @s Azr_Shop matches 84307 \
     run give @s[scores={Azr_SK5=1..},tag=TEMP_purchase_success] arrow 10
 tag @s remove TEMP_purchase_success
@@ -418,7 +418,7 @@ execute if score temp3 Azr_Shop_rng matches 10 if score @s Azr_Shop matches 8430
 tag @s remove TEMP_purchase_success
 
 execute if score temp3 Azr_Shop_rng matches 11 if score @s Azr_Shop matches 84307 \
-    if items entity @s container.* emerald[count={min:1}] run tag @s add TEMP_purchase_success
+    if score @s Azr_emerald matches 1.. run tag @s add TEMP_purchase_success
 execute if score temp3 Azr_Shop_rng matches 11 if score @s Azr_Shop matches 84307 \
     run give @s[scores={Azr_SK5=1..},tag=TEMP_purchase_success] cod 1
 tag @s remove TEMP_purchase_success
@@ -444,7 +444,7 @@ execute if score temp3 Azr_Shop_rng matches 14 if score @s Azr_Shop matches 8430
 tag @s remove TEMP_purchase_success
 
 execute if score temp3 Azr_Shop_rng matches 15 if score @s Azr_Shop matches 84307 \
-    if items entity @s container.* emerald[count={min:4}] run tag @s add TEMP_purchase_success
+    if score @s Azr_emerald matches 4.. run tag @s add TEMP_purchase_success
 execute if score temp3 Azr_Shop_rng matches 15 if score @s Azr_Shop matches 84307 \
     run give @s[scores={Azr_SK5=1..},tag=TEMP_purchase_success] bread 5
 tag @s remove TEMP_purchase_success
@@ -487,7 +487,7 @@ tag @s remove TEMP_purchase_success
 #execute if score temp3 Azr_Shop_rng matches 24 run tellraw @s [{"text":"   "},{"text":"金萝卜 ×2","color":"white"},{"text":"  6 绿宝石 1 胡萝卜 1 软金 ","color":"gold"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 84307"}}]
 
 execute if score temp3 Azr_Shop_rng matches 25 if score @s Azr_Shop matches 84307 \
-    if items entity @s container.* emerald[count={min:3}] \
+    if score @s Azr_emerald matches 3.. \
     if items entity @s container.* carrot[count={min:4}] run tag @s add TEMP_purchase_success
 execute if score temp3 Azr_Shop_rng matches 25 if score @s Azr_Shop matches 84307 \
     run give @s[scores={Azr_SK5=1..},tag=TEMP_purchase_success] golden_carrot 1
@@ -813,3 +813,5 @@ execute if score temp8 Azr_Shop_rng matches 7 run tellraw @s [{"text":"   "},{"t
 #execute if score temp11 Azr_Shop_rng matches 16 run tellraw @s[tag=!Azr_BuyOnce,scores={Azr_SK5=4..}] [{"text":"   "},{"text":"复之核心+","color":"aqua"},{"text":"   1 复之核心 20 绿宝石 3 牧师的草药 ","color":"gold"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 84314"}}]
 #execute if score temp11 Azr_Shop_rng matches 17 run tellraw @s[tag=!Azr_BuyOnce,scores={Azr_SK5=4..}] [{"text":"   "},{"text":"轰之核心","color":"aqua"},{"text":"   15 绿宝石 1 工匠的桌板 2 光明精华 ","color":"gold"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 84314"}}]
 #execute if score temp11 Azr_Shop_rng matches 18 run tellraw @s[tag=!Azr_BuyOnce,scores={Azr_SK5=4..}] [{"text":"   "},{"text":"轰之核心+","color":"aqua"},{"text":"   1 轰之核心 20 绿宝石 3 工匠的桌板 ","color":"gold"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 84314"}}]
+
+scoreboard players set @s Azr_Shop 0
