@@ -234,10 +234,10 @@ execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=2091}] run score
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=2091}] run scoreboard players add @n[tag=sc,scores={sea_player=2}] sea_4temp2 25
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=2091}] run scoreboard players add @n[tag=sc,scores={sea_player=3}] sea_4temp2 40
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=2091}] run scoreboard players add @n[tag=sc,scores={sea_player=4..}] sea_4temp2 50
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=2141..2250}] positioned 90143 122 100 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=2141..2150}] positioned 90143 122 100 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=2151}] positioned 90143 122 100 run function skyblock:sea/m/pillager
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=2151}] positioned 90143 122 100 if entity @n[tag=sc,scores={sea_player=4..}] run function skyblock:sea/m/pillager
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=2141..2250}] positioned 90149 122 101 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=2141..2150}] positioned 90149 122 101 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=2151}] positioned 90149 122 101 run function skyblock:sea/m/pillager
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=2151}] positioned 90149 122 101 if entity @n[tag=sc,scores={sea_player=5..}] run function skyblock:sea/m/pillager
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=2231..2240}] positioned 90143 122 100 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
