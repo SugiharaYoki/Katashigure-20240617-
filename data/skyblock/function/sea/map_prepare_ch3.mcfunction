@@ -86,8 +86,6 @@ summon minecraft:interaction 90082 144.3 117 {CustomName:'[{"text":"器械式治
 setblock 90113 140 109 chest[facing=north]
 item replace block 90113 140 109 container.13 with emerald 3
 
-setblock 90136 138 109 polished_tuff
-setblock 90136 137 109 polished_andesite
 
 setblock 90122 137 120 chest[facing=east]
 setblock 90086 145 116 chest[facing=north]{Lock:"器械资源室2F 燃料架 - B"}
