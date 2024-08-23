@@ -130,7 +130,7 @@ execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=122}] positioned
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=122}] positioned 90133 137 108 as @p[tag=SEAPT] if entity @n[tag=sc,scores={sea_player=2..}] \
  run tellraw @a[distance=0..50] [{"selector":"@s","color":"white"},{"text":"：玛瑞莲小姐，这里通往办公区域的所有通道都被堵住了，我们该怎么上去？","color":"white"}]
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=145}] positioned 90133 137 108 as @p[tag=SEAPT] \
- run tellraw @a[distance=0..50] {"text":"玛瑞莲：“您不必清除那些路障，那些植物在上层肆意生长，我们许多人都被藤蔓给活生生吞噬。”","color":"dark_purple"}
+ run tellraw @a[distance=0..50] {"text":"玛瑞莲：“您不必清除那些路障，那些植物在上层肆意生长，我们之中的许多人都被藤蔓给活生生吞噬。”","color":"dark_purple"}
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=172}] positioned 90133 137 108 as @p[tag=SEAPT] \
  run tellraw @a[distance=0..50] {"text":"玛瑞莲：“这植物唯一的弱点是高频声波。邪教徒显然意识到了这一点，他们占领了整座通讯中心，关停了通讯阵列。”","color":"dark_purple"}
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=203}] positioned 90133 137 108 as @p[tag=SEAPT] if entity @n[tag=sc,scores={sea_player=1..}] run tellraw @a[distance=0..50] [{"selector":"@s","color":"white"},{"text":"：通讯中心？是指在桥对面的附属平台吗？","color":"white"}]
@@ -180,13 +180,13 @@ execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp3=100..300}] run s
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp3=120}] positioned 90133 137 108 \
  run tellraw @a[distance=0..250] {"text":"？？？：“你……打开了备用电台？你是谁，你现在在甲板上吗？”","color":"dark_purple"}
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp3=160}] positioned 90133 137 108 \
- run tellraw @a[distance=0..250] {"text":"？？？：“……你是值得信任的人。他们只会关灯，绝不会忙着开这么多灯。”","color":"dark_purple"}
+ run tellraw @a[distance=0..250] {"text":"？？？：“……你是个值得信任的家伙，告诉我我说的对不对？我想也是，那群疯子只会关灯，不可能忙里忙外把这么多灯给开了。”","color":"dark_purple"}
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp3=200}] positioned 90133 137 108 \
- run tellraw @a[distance=0..250] {"text":"？？？：“水晶祀堂，我会在那里等你。”","color":"dark_purple"}
+ run tellraw @a[distance=0..250] {"text":"？？？：“让我想想，我该怎么才能……水晶祀堂！对，我会在那里等你。”","color":"dark_purple"}
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp3=240}] positioned 90133 137 108 \
- run tellraw @a[distance=0..250] {"text":"？？？：“希望你会知道我说的是哪里。”","color":"dark_purple"}
+ run tellraw @a[distance=0..250] {"text":"？？？：“希望你知道我指的是哪。如果你不知道的话就请别来了，那样的话我就提供不了你任何帮助。”","color":"dark_purple"}
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp3=280}] positioned 90133 137 108 \
- run tellraw @a[distance=0..250] {"text":"？？？：“先去钢处理车间的楼顶，我给你准备了礼物。不要辜负我。”","color":"dark_purple"}
+ run tellraw @a[distance=0..250] {"text":"？？？：“你这样，先去钢处理车间的楼顶，那儿有我藏起来的10颗绿宝石。不要辜负我。”","color":"dark_purple"}
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp3=280}] run fill 90124 144 117 90124 145 117 minecraft:air destroy
 
 
