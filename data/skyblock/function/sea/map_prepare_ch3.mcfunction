@@ -156,7 +156,8 @@ setblock 90138 137 108 chest[facing=south]
 item replace block 90138 137 108 container.14 with coal 1
 setblock 90141 137 117 chest[facing=north]
 item replace block 90141 137 117 container.14 with arrow 2
-
+setblock 90132 137 107 chest[facing=east]
+item replace block 90132 137 107 container.13 with fire_charge[custom_name='{"text":"定时炸弹","italic":true,"color":"blue","italic":false}',lore=['{"text":"它会在你丢出去3秒后爆炸！","color":"white","italic":false}','{"text":"炸到自己的话，职业生涯就会结束了吧。","color":"white","italic":false}','{"text":"可用于破坏凝胶壁障与瓦罐。","color":"white","italic":false}']] 1
 
 
 
