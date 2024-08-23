@@ -25,5 +25,15 @@ execute as @n[type=interaction,tag=flamethrowerdetect] on target if entity @s[le
 execute as @n[type=interaction,tag=flamethrowerdetect] on target if entity @s[level=1..] anchored eyes positioned ^ ^ ^3.8 as @e[tag=SEAmob,distance=0..1.5] run damage @s 1.5 campfire
 execute as @n[type=interaction,tag=flamethrowerdetect] on target if entity @s[level=1..] anchored eyes positioned ^ ^ ^4.3 as @e[tag=SEAmob,distance=0..1.5] run damage @s 1.5 campfire
 execute as @n[type=interaction,tag=flamethrowerdetect] on target if entity @s[level=1..] anchored eyes positioned ^ ^ ^4.8 as @e[tag=SEAmob,distance=0..1.5] run damage @s 1.5 campfire
+execute as @n[type=interaction,tag=flamethrowerdetect] on target if entity @s[level=1..] anchored eyes positioned ^ ^ ^0.3 as @e[tag=SEAmagma1,type=marker,distance=..1.5] at @s run function skyblock:sea/p/magma
+execute as @n[type=interaction,tag=flamethrowerdetect] on target if entity @s[level=1..] anchored eyes positioned ^ ^ ^0.8 as @e[tag=SEAmagma1,type=marker,distance=..1.5] at @s run function skyblock:sea/p/magma
+execute as @n[type=interaction,tag=flamethrowerdetect] on target if entity @s[level=1..] anchored eyes positioned ^ ^ ^1.3 as @e[tag=SEAmagma1,type=marker,distance=..1.5] at @s run function skyblock:sea/p/magma
+execute as @n[type=interaction,tag=flamethrowerdetect] on target if entity @s[level=1..] anchored eyes positioned ^ ^ ^1.8 as @e[tag=SEAmagma1,type=marker,distance=..1.5] at @s run function skyblock:sea/p/magma
+execute as @n[type=interaction,tag=flamethrowerdetect] on target if entity @s[level=1..] anchored eyes positioned ^ ^ ^2.3 as @e[tag=SEAmagma1,type=marker,distance=..1.5] at @s run function skyblock:sea/p/magma
+execute as @n[type=interaction,tag=flamethrowerdetect] on target if entity @s[level=1..] anchored eyes positioned ^ ^ ^2.8 as @e[tag=SEAmagma1,type=marker,distance=..1.5] at @s run function skyblock:sea/p/magma
+execute as @n[type=interaction,tag=flamethrowerdetect] on target if entity @s[level=1..] anchored eyes positioned ^ ^ ^3.3 as @e[tag=SEAmagma1,type=marker,distance=..1.5] at @s run function skyblock:sea/p/magma
+execute as @n[type=interaction,tag=flamethrowerdetect] on target if entity @s[level=1..] anchored eyes positioned ^ ^ ^3.8 as @e[tag=SEAmagma1,type=marker,distance=..1.5] at @s run function skyblock:sea/p/magma
+execute as @n[type=interaction,tag=flamethrowerdetect] on target if entity @s[level=1..] anchored eyes positioned ^ ^ ^4.3 as @e[tag=SEAmagma1,type=marker,distance=..1.5] at @s run function skyblock:sea/p/magma
+execute as @n[type=interaction,tag=flamethrowerdetect] on target if entity @s[level=1..] anchored eyes positioned ^ ^ ^4.8 as @e[tag=SEAmagma1,type=marker,distance=..1.5] at @s run function skyblock:sea/p/magma
 execute as @n[type=interaction,tag=flamethrowerdetect] on target if entity @s[level=1..] anchored eyes run xp add @s -7 points
 execute as @n[type=interaction,tag=flamethrowerdetect] run data remove entity @s interaction

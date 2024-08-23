@@ -101,6 +101,8 @@ summon marker 90119 137 110 {Tags:["SEAmagma1"]}
 summon marker 90121 137 108 {Tags:["SEAmagma1"]}
 summon marker 90094 137 97 {Tags:["SEAmagma1"]}
 summon marker 90094 137 124 {Tags:["SEAmagma1"]}
+summon marker 90139 137 108 {Tags:["SEAmagma1"]}
+summon marker 90138 139 110 {Tags:["SEAmagma1"]}
 execute as @e[tag=SEAmagma1,type=marker] at @s if block ~ ~ ~ air run setblock ~ ~ ~ basalt
 
 fill 90140 128 134 90141 129 134 snow_block

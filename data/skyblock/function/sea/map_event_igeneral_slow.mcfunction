@@ -101,6 +101,18 @@ item replace block 90122 137 120 container.13 with trial_key[custom_name='{"text
 item replace block 90114 123 125 container.14 with trial_key[custom_name='{"text":"器械资源室2F 燃料架 - A 内有慰问品","italic":true,"color":"yellow","italic":false}']
 item replace block 90086 143 116 container.13 with flow_banner_pattern[custom_name='{"text":"燃料架B内的便签纸","italic":true,"color":"dark_purple","italic":false}',lore=['{"text":"上面写着歪歪扭扭的字：","color":"white","italic":false}','{"text":"“从右到左仔细观察北水箱西面的蜡烛”","color":"white","italic":false}']]
 item replace block 90095 122 128 container.3 with globe_banner_pattern[custom_name='{"text":"何日的新闻","italic":true,"color":"dark_purple","italic":false}',lore=['{"text":"这座忒尔克西作为2130年往后的唯一一座新建钻井平台，其背负的不仅是开采石油的使命。","color":"white","italic":false}','{"text":"于2128年在大洋洲火圈地带接连发生的火山喷发，将这一批埋藏于地层深处的石油送入了太平洋。","color":"white","italic":false}','{"text":"这些石油在地理位置的分布再一次提醒了现代的人们过去有关“姆大陆”的学术猜想。","color":"white","italic":false}','{"text":"忒尔克西海上钻井平台在开采这批石油的同时，也将探索位于各处石油分布区域汇聚……","color":"white","italic":false}']]
+#法莫洛斯：医务部门 总管
+#玛瑞莲：机械研发部门 贝塔小组 组长
+#菲尔娜：舵长的女儿
+#艾德雯娜：美国中央情报局 探员
+#诺曼：生物化学分析部门 首席科学家
+#麦迪逊：机械研发部门 阿尔法小组 开发员
+#越涵：维修部门 维修员
+#史丹尼：钻井平台舵长
+#瑞弗特：餐饮部门 主厨
+#德怀特：餐饮部门 厨师
+#潘：餐饮部门 厨师
+
 item replace block 90095 122 128 container.15 with flow_banner_pattern[custom_name='{"text":"文件室的笔记 - 玛瑞莲","italic":true,"color":"dark_purple","italic":false}',lore=['{"text":"绝对不可让他们知道密钥……不能落入那群教徒的手中。","color":"white","italic":false}','{"text":"我不知道诺曼博士是如何说服了史丹尼舵长去听信那种鬼话。","color":"white","italic":false}','{"text":"居住区已经被游行的钻井队占领了，但偏偏是这种时候？","color":"white","italic":false}','{"text":"愚蠢至极，我无法忍受。","color":"white","italic":false}','{"text":"细菌感染爆发，安保杀了许多无辜的人，事态已经无法控制。","color":"white","italic":false}']]
 item replace block 90104 122 131 container.6 with flow_banner_pattern[custom_name='{"text":"钥匙箱内的笔记 - 德怀特","italic":true,"color":"dark_purple","italic":false}',lore=['{"text":"只要把钥匙上的标签全部打乱，他们就没法打开文件柜了。","color":"white","italic":false}','{"text":"工具维护室的门一直是开的，没人会想到取走这一把。","color":"white","italic":false}','{"text":"绝对不能让他们找到开关把手，维修层现在堪称暂时的净土。","color":"white","italic":false}','{"text":"我不会让法莫洛斯医生为我们创造的安全条件被那般轻易地打破。","color":"white","italic":false}']]
 item replace block 90108 122 146 container.22 with flow_banner_pattern[custom_name='{"text":"机械暗室的笔记 - 玛瑞莲","italic":true,"color":"dark_purple","italic":false}',lore=['{"text":"他们已经连续开了六天的会议，看来已经无法回头了。","color":"white","italic":false}','{"text":"从地下开采到的那个东西可以改变整个地表文明的秩序，但这是否真的是好事？","color":"white","italic":false}','{"text":"永远的和平，杜绝一切战争、纷争、斗争？那我们真的还能算是人类吗？","color":"white","italic":false}']]
@@ -115,6 +127,8 @@ item replace block 90075 122 143 container.15 with flow_banner_pattern[custom_na
 item replace block 90084 122 106 container.13 with flow_banner_pattern[custom_name='{"text":"医疗报告8 - 法莫洛斯","italic":true,"color":"dark_purple","italic":false}',lore=['{"text":"我自己的症状终于恶化了……","color":"white","italic":false}','{"text":"维修层终于也失守了。但我不该就此放弃，高层很快便会发现这座钻井平台的异常。","color":"white","italic":false}','{"text":"因此，我会继续药物的研究。已经快要成功了，距离达成我的夙愿近在咫尺。","color":"white","italic":false}','{"text":"倘若在那之前我失败了，我会破坏这里的电闸，这样就不用担心我也会变成他们那样……","color":"white","italic":false}']]
 
 item replace block 90114 123 125 container.12 with flow_banner_pattern[custom_name='{"text":"维修仓库的笔记 - 麦迪逊","italic":true,"color":"dark_purple","italic":false}',lore=['{"text":"你是谁？","color":"white","italic":false}','{"text":"能找到这里来，你肯定已经做出炸弹了吧。","color":"white","italic":false}','{"text":"我把这些地方用凝胶封了起来。","color":"white","italic":false}','{"text":"看来你是有资格的人。燃料室有我给你准备的礼物。","color":"white","italic":false}']]
+item replace block 90138 137 108 container.12 with flow_banner_pattern[custom_name='{"text":"主平台甲板通讯室储藏间的笔记A - 麦迪逊","italic":true,"color":"dark_purple","italic":false}',lore=['{"text":"我在针对甲板上出现的一种新型怪物做研究。","color":"white","italic":false}','{"text":"外貌特征为深红色的球体，拥有极高的表面温度。","color":"white","italic":false}','{"text":"它们不像是凭空出现的，每一只都对应着一具消失的尸体。","color":"white","italic":false}','{"text":"我认为它们很有可能是因遭遇怪物袭击，","color":"white","italic":false}','{"text":"而被随之沾染的火焰给活活烧死的遇难者。","color":"white","italic":false}','{"text":"维修层暂时没有这种怪物。","color":"white","italic":false}','{"text":"考虑到有它们的地方必然有火源，我该暂时更改据点。","color":"white","italic":false}']]
+item replace block 90141 137 117 container.12 with flow_banner_pattern[custom_name='{"text":"主平台甲板通讯室储藏间的笔记B - 麦迪逊","italic":true,"color":"dark_purple","italic":false}',lore=['{"text":"终于成功了，我将那块带着圣水晶力量的石板","color":"white","italic":false}','{"text":"改造成了类似铜板的魔力储存模块。","color":"white","italic":false}','{"text":"根据我的观察，它会将箭矢逐渐转化为一种金色的矢状物。","color":"white","italic":false}','{"text":"我在那些怪物身上做了实验，","color":"white","italic":false}','{"text":"金色的箭矢能让它们在几秒内近乎无法动弹。","color":"white","italic":false}','{"text":"可是那些被藤蔓掏空的怪物在被我射中后陷入了诡异的状态。","color":"white","italic":false}','{"text":"我无法对它们进一步实验，它们直接在我眼前消失了。","color":"white","italic":false}']]
 
 item replace block 90125 128 124 container.2 with flow_banner_pattern[custom_name='{"text":"工程处后厨的笔记 - 瑞佛特","italic":true,"color":"dark_purple","italic":false}',lore=['{"text":"23号 处理掉了剩下还没有腐烂的猪肉","color":"white","italic":false}','{"text":"24号 没有粮食了 只能吃干面包 通风管道里好吵","color":"white","italic":false}','{"text":"25号 干面包很难吃 德怀特还没有从通风系统维护处回来","color":"white","italic":false}','{"text":"26号 德怀特带来了新鲜的猪肉 配着面包吃 通风管道好吵","color":"white","italic":false}','{"text":"27号 通风管道好吵","color":"white","italic":false}','{"text":"28号 已经没有新鲜的猪肉了 现在该派潘去修通风系统了","color":"white","italic":false}','{"text":"29号 没有猪肉 只有干面包","color":"white","italic":false}','{"text":"30号 我终于醒悟了 我的身上也有猪肉","color":"white","italic":false}']]
 item replace block 90110 128 135 container.13 with flow_banner_pattern[custom_name='{"text":"南冷冻室门口的笔记 - 德怀特","italic":true,"color":"dark_purple","italic":false}',lore=['{"text":"他们已经连续开了六天的会议，看来已经无法回头了。","color":"white","italic":false}','{"text":"这里根本不会有猪肉，我们从来就没有进过猪肉。","color":"white","italic":false}','{"text":"但是没人敢忤逆瑞佛特主厨，他是我们之间唯一拿着弩的。","color":"white","italic":false}','{"text":"南冷冻室天天传来噪音，伙计们的神智本就已经不太稳定。","color":"white","italic":false}','{"text":"今天打开大门果真发现了变异的怪物。为了调查，我会把这些尸体带回去。","color":"white","italic":false}']]
@@ -173,9 +187,7 @@ execute unless entity @a[tag=SEAPT,tag=!seaPerm000] run clone 90121 122 109 9012
 
 
 
-execute as @e[tag=SEAmagma1,type=marker] at @s if entity @a[tag=SEAPT,distance=0..2.5] run setblock ~ ~ ~ air destroy
-execute as @e[tag=SEAmagma1,type=marker] at @s if entity @a[tag=SEAPT,distance=0..2.5] run function skyblock:sea/m/magma
-execute as @e[tag=SEAmagma1,type=marker] at @s if entity @a[tag=SEAPT,distance=0..2.5] run kill @s
+execute as @e[tag=SEAmagma1,type=marker] at @s if entity @a[tag=SEAPT,distance=0..2.5] run function skyblock:sea/p/magma
 
 
 

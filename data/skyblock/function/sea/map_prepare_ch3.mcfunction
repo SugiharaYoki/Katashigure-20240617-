@@ -33,6 +33,8 @@ setblock 90115 149 112 air
 setblock 90071 137 143 air
 setblock 90078 137 129 air
 setblock 90137 145 125 air
+setblock 90138 137 113 air
+setblock 90142 137 114 air
 setblock 90084 143 123 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 1, id:"minecraft:beef"}}
 setblock 90083 143 123 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:flint"}}
 setblock 90121 137 105 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:flint"}}
@@ -47,6 +49,8 @@ setblock 90115 149 112 decorated_pot{sherds:["friend_pottery_sherd","friend_pott
 setblock 90071 137 143 decorated_pot{sherds:["friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd"],item:{count: 3, id:"minecraft:emerald"}}
 setblock 90078 137 129 decorated_pot{sherds:["mourner_pottery_sherd","mourner_pottery_sherd","mourner_pottery_sherd","mourner_pottery_sherd"],item:{count: 2, id:"minecraft:echo_shard"}}
 setblock 90137 145 125 decorated_pot{sherds:["mourner_pottery_sherd","mourner_pottery_sherd","mourner_pottery_sherd","mourner_pottery_sherd"],item:{count: 2, id:"minecraft:echo_shard"}}
+setblock 90138 137 113 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:coal"}}
+setblock 90142 137 114 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:gunpowder"}}
 #炸药桶
 setblock 90084 137 126 air
 setblock 90103 137 109 air
@@ -143,5 +147,24 @@ fill 90124 144 117 90124 145 117 minecraft:waxed_copper_block
 
 setblock 90071 138 148 air
 setblock 90071 138 148 lever[facing=north]
+setblock 90109 138 154 air
+setblock 90109 138 154 lever[facing=east]
+
+fill 90137 138 109 90137 137 109 minecraft:slime_block
+fill 90139 138 112 90139 137 112 minecraft:slime_block
+setblock 90138 137 108 chest[facing=south]
+item replace block 90138 137 108 container.14 with coal 1
+setblock 90141 137 117 chest[facing=north]
+item replace block 90141 137 117 container.14 with arrow 2
+
+
+
+
+
+
+
+
+
+
 
 
