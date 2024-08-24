@@ -17,11 +17,11 @@ execute as @a[tag=SEAPT,scores={sea_is_running=1..,sea_runs=..0}] at @s run attr
 execute as @a[tag=SEAPT,scores={sea_is_running=1..,sea_runs=..0}] at @s run attribute @s generic.knockback_resistance modifier add sea_running_1b 1 add_value
 execute as @a[tag=SEAPT,scores={sea_is_running=1..,sea_runs=..0}] at @s run scoreboard players set @s sea_runs 1
 execute as @a[tag=SEAPT,scores={sea_runs=1..}] at @s run scoreboard players add @s sea_runs 1
-execute as @a[tag=SEAPT,scores={sea_is_running=..0,sea_runs=50..}] at @s run tag @s add sea_run_stops
-scoreboard players remove @a[tag=sea_run_stops] sea_runs 21
+#execute as @a[tag=SEAPT,scores={sea_runs=50..},tag=!sea_run_stops] at @s run tag @s add sea_run_stops
+#scoreboard players remove @a[tag=sea_run_stops] sea_runs 1
 execute as @a[tag=SEAPT,scores={sea_runs=6..}] at @s run attribute @s generic.movement_speed modifier remove sea_running_1a
 execute as @a[tag=SEAPT,scores={sea_runs=7..}] at @s run attribute @s generic.knockback_resistance modifier remove sea_running_1b
-scoreboard players set @a[tag=SEAPT] sea_is_running 0
+scoreboard players remove @a[tag=SEAPT] sea_is_running 1
 
 
 
