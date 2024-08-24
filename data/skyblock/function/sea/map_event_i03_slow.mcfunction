@@ -204,4 +204,24 @@ execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp3=280}] positioned
  run tellraw @a[distance=0..250] {"text":"？？？：“你这样，先去钢处理车间的楼顶，那儿有我藏起来的10颗绿宝石。不要辜负我。”","color":"dark_purple"}
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp3=280}] run fill 90124 144 117 90124 145 117 minecraft:air destroy
 
+execute if block 90137 136 144 minecraft:polished_tuff \
+if block 90137 139 141 lever[powered=true] \
+if block 90137 139 142 lever[powered=false] \
+if block 90137 139 143 lever[powered=true] \
+if block 90137 138 140 lever[powered=true] \
+if block 90137 138 142 lever[powered=false] \
+if block 90137 138 144 lever[powered=true] \
+if block 90137 137 141 lever[powered=true] \
+if block 90137 137 142 lever[powered=false] \
+if block 90137 137 143 lever[powered=true] \
+run setblock 90137 136 144 air destroy
+
+
+
+
+
+
+
+
+
 

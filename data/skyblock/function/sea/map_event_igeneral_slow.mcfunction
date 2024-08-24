@@ -27,7 +27,9 @@ execute positioned 90117 138 121 if entity @a[tag=SEAPT,distance=0..20] unless e
 #execute as @a[tag=SEAPT,nbt={Inventory:[{id:"minecraft:iron_hoe"}]}] at @s run clear @s iron_axe
 #execute as @a[tag=SEAPT] at @s run clear @s iron_hoe[!custom_data={sea_crowbar_t:true}]
 clear @a[tag=SEAPT] barrier
-item replace entity @a[tag=SEAPT] player.crafting.0 with barrier
+clear @a[tag=SEAPT] flow_armor_trim_smithing_template
+item replace entity @a[tag=SEAPT,tag=!sea_t_spectral1] player.crafting.0 with barrier
+item replace entity @a[tag=SEAPT,tag=sea_t_spectral1] player.crafting.0 with flow_armor_trim_smithing_template[custom_name='{"text":"光棱魔板","italic":true,"color":"light_purple","italic":false}',lore=['{"text":"静滞光锥 I","color":"white","italic":false}'],custom_data={sea_t_spectral1:true}]
 item replace entity @a[tag=SEAPT] player.crafting.1 with barrier
 item replace entity @a[tag=SEAPT] player.crafting.2 with barrier
 item replace entity @a[tag=SEAPT] player.crafting.3 with barrier
@@ -221,9 +223,12 @@ execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp_environment=33}] 
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp_environment=28}] run setblock 90079 129 138 minecraft:air
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp_environment=38}] run setblock 90079 129 136 minecraft:air
 
+execute if entity @a[tag=SEAPT] as @a[tag=SEAPT,nbt={Inventory:[{components:{"minecraft:custom_data":{sea_t_spectral1:true}}}]}] at @s run tag @s add sea_t_spectral1
+execute if entity @a[tag=SEAPT] as @a[tag=SEAPT,nbt={Inventory:[{components:{"minecraft:custom_data":{sea_t_spectral1:true}}}]}] at @s run clear @s flow_armor_trim_smithing_template[custom_data={sea_t_spectral1:true}] 1
+
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp_environment=28}] as @a[tag=SEAPT] store result score @s sea_i_spectral run clear @s spectral_arrow 0
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp_environment=28}] as @a[tag=SEAPT] unless entity @s[scores={sea_i_spectral_load=-999..}] run scoreboard players set @s sea_i_spectral_load 0
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp_environment=28}] as @a[tag=SEAPT,nbt={Inventory:[{components:{"minecraft:custom_data":{sea_t_spectral1:true}}},{id:"minecraft:arrow"}]},scores={sea_i_spectral=..2,sea_i_spectral_load=..4}] run scoreboard players add @s sea_i_spectral_load 1
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp_environment=28}] as @a[tag=SEAPT,tag=sea_t_spectral1,nbt={Inventory:[{id:"minecraft:arrow"}]},scores={sea_i_spectral=..2,sea_i_spectral_load=..4}] run scoreboard players add @s sea_i_spectral_load 1
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp_environment=28}] as @a[tag=SEAPT,scores={sea_i_spectral=..2,sea_i_spectral_load=5..}] run clear @s arrow 1
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp_environment=28}] as @a[tag=SEAPT,scores={sea_i_spectral=..2,sea_i_spectral_load=5..}] run give @s spectral_arrow 1
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp_environment=28}] as @a[tag=SEAPT,scores={sea_i_spectral=..2,sea_i_spectral_load=5..}] run scoreboard players set @s sea_i_spectral_load 0
@@ -251,3 +256,18 @@ execute as @a[tag=SEAPT,x=80000,dx=20000,z=-10000,dz=20000,y=102,dy=5] at @s if 
 execute as @a[tag=SEAPT,x=80000,dx=20000,z=-10000,dz=20000,y=126,dy=5] at @s if block ~ ~-1 ~ waxed_weathered_cut_copper_slab if block ~ ~-0.1 ~ air run tp @s ~ 103.0 ~
 execute as @a[tag=SEAPT,x=80000,dx=20000,z=-10000,dz=20000,y=102,dy=5] at @s if block ~ ~-1.5 ~ waxed_weathered_cut_copper_slab if block ~ ~-0.1 ~ air run tp @s ~ 127.0 ~
 execute as @a[tag=SEAPT,x=80000,dx=20000,z=-10000,dz=20000,y=126,dy=5] at @s if block ~ ~-1.5 ~ waxed_weathered_cut_copper_slab if block ~ ~-0.1 ~ air run tp @s ~ 103.0 ~
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

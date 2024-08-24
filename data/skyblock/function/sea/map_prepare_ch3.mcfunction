@@ -195,10 +195,18 @@ item replace block 90122 138 148 container.15 with beef 1
 
 summon minecraft:item_frame 90124 138 151 {Invisible:1b,Fixed:0b,Invulnerable:0b,Facing:1b,Item:{id:"minecraft:pumpkin_pie"}}
 
+fill 90137 139 141 90137 139 143 air
+fill 90137 138 140 90137 138 144 air
+fill 90137 137 141 90137 137 143 air
+fill 90137 139 141 90137 139 143 lever[facing=west]
+fill 90137 138 140 90137 138 144 lever[facing=west]
+fill 90137 137 141 90137 137 143 lever[facing=west]
+setblock 90137 138 141 air
+setblock 90137 138 143 air
+setblock 90137 136 144 minecraft:polished_tuff
 
-
-
-
-
-
+setblock 90141 134 140 minecraft:flower_pot
+setblock 90142 134 138 chest[facing=west]
+item replace block 90142 134 138 container.12 with apple 2
+item replace block 90142 134 138 container.14 with music_disc_stal
 
