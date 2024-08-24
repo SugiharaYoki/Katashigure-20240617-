@@ -5,13 +5,13 @@ scoreboard players add @n[tag=sc] AnnouncementRoB 1
 execute as @n[tag=sc,type=witch,scores={AnnouncementRo=1}] as @a at @s run scoreboard players add @s Perm_PersonFSB 10
 execute as @n[tag=sc,type=witch,scores={AnnouncementRo=1}] as @a at @s run tellraw @s[tag=!Gaming,tag=!AFKING] {"text":" - 在线奖励 10 FSB - ","color":"dark_gray"}
 execute as @n[tag=sc,type=witch,scores={AnnouncementRo=1}] as @a at @s run scoreboard players add @s Afk_totalFSB 10
-execute as @n[tag=sc,type=witch,scores={AnnouncementRo=8}] at @s unless entity @a[tag=!Gaming] run scoreboard objectives setdisplay sidebar Perm_PersonWins
-execute as @n[tag=sc,type=witch,scores={AnnouncementRo=16}] at @s unless entity @a[tag=!Gaming] run scoreboard objectives setdisplay sidebar Perm_PersonDeath
+execute as @n[tag=sc,type=witch,scores={AnnouncementRo=8}] at @s if entity @a[tag=!Gaming] run scoreboard objectives setdisplay sidebar Perm_PersonWins
+execute as @n[tag=sc,type=witch,scores={AnnouncementRo=16}] at @s if entity @a[tag=!Gaming] run scoreboard objectives setdisplay sidebar Perm_PersonDeath
 #execute as @n[tag=sc,scores={AnnouncementRo=23}] as @a at @s run scoreboard players operation @s SeGa_ParkourS = @s ParkourLastStage
 #execute as @n[tag=sc,scores={AnnouncementRo=23}] as @a at @s run scoreboard players operation @s SeGa_ParkourS += @s ParkourRouteB
 #execute as @n[tag=sc,scores={AnnouncementRo=24}] at @s run scoreboard objectives setdisplay sidebar SeGa_ParkourS
 #execute as @n[tag=sc,type=witch,scores={AnnouncementRo=32}] at @s run scoreboard objectives setdisplay sidebar Perm_BlackJackW
-execute as @n[tag=sc,type=witch,scores={AnnouncementRo=40}] at @s unless entity @a[tag=!Gaming] run scoreboard objectives setdisplay sidebar SeGa_StandLastBH
+execute as @n[tag=sc,type=witch,scores={AnnouncementRo=40}] at @s if entity @a[tag=!Gaming] run scoreboard objectives setdisplay sidebar SeGa_StandLastBH
 execute as @n[tag=sc,type=witch,scores={AnnouncementRo=48..}] at @s run scoreboard players set @s AnnouncementRo 0
 #
 execute if block -41 156 -57 lime_stained_glass as @n[tag=sc,type=witch,scores={AnnouncementRoB=1}] as @a at @s unless score @s dailydiv_n >= @e[limit=1,tag=sc] dailydiv run function skyblock:city_utility_dayshift_notice
