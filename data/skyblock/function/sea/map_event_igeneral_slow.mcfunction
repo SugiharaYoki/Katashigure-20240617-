@@ -27,11 +27,13 @@ execute positioned 90117 138 121 if entity @a[tag=SEAPT,distance=0..20] unless e
 #execute as @a[tag=SEAPT,nbt={Inventory:[{id:"minecraft:iron_hoe"}]}] at @s run clear @s iron_axe
 #execute as @a[tag=SEAPT] at @s run clear @s iron_hoe[!custom_data={sea_crowbar_t:true}]
 execute if entity @a[tag=SEAPT] as @a[tag=SEAPT,nbt={Inventory:[{components:{"minecraft:custom_data":{sea_t_spectral1:true}}}]}] at @s run tag @s add sea_t_spectral1
-execute if entity @a[tag=SEAPT] as @a[tag=SEAPT,nbt={Inventory:[{components:{"minecraft:custom_data":{sea_t_spectral1:true}}}]}] at @s run clear @s flow_armor_trim_smithing_template[custom_data={sea_t_spectral1:true}] 1
+execute if entity @a[tag=SEAPT] as @a[tag=SEAPT,nbt={Inventory:[{components:{"minecraft:custom_data":{sea_t_sprint1:true}}}]}] at @s run tag @s add sea_t_sprint1
+execute if entity @a[tag=SEAPT] as @a[tag=SEAPT,nbt={Inventory:[{components:{"minecraft:custom_data":{sea_t_spectral1:true}}}]}] at @s run clear @s flow_armor_trim_smithing_template
 clear @a[tag=SEAPT] barrier
 clear @a[tag=SEAPT] flow_armor_trim_smithing_template
 item replace entity @a[tag=SEAPT,tag=!sea_t_spectral1] player.crafting.0 with barrier
 item replace entity @a[tag=SEAPT,tag=sea_t_spectral1] player.crafting.0 with flow_armor_trim_smithing_template[custom_name='{"text":"光棱魔板","italic":true,"color":"light_purple","italic":false}',lore=['{"text":"静滞光锥 I","color":"white","italic":false}'],custom_data={sea_t_spectral1:true}]
+item replace entity @a[tag=SEAPT,tag=sea_t_sprint1] player.crafting.1 with flow_armor_trim_smithing_template[custom_name='{"text":"残影魔板","italic":true,"color":"light_purple","italic":false}',lore=['{"text":"绿色指示灯亮起时，起跑将被替换为冲刺","color":"white","italic":false}','{"text":"期间防御、移动速度、击退抗性巨幅提升","color":"white","italic":false}'],custom_data={sea_t_sprint1:true}]
 item replace entity @a[tag=SEAPT] player.crafting.1 with barrier
 item replace entity @a[tag=SEAPT] player.crafting.2 with barrier
 item replace entity @a[tag=SEAPT] player.crafting.3 with barrier
@@ -112,6 +114,7 @@ item replace block 90091 122 130 container.3 with trial_key[custom_name='{"text"
 item replace block 90118 128 120 container.13 with trial_key[custom_name='{"text":"空气循环控制室钥匙","italic":true,"color":"yellow","italic":false}']
 item replace block 90122 137 120 container.13 with trial_key[custom_name='{"text":"器械资源室2F 燃料架 - B","italic":true,"color":"yellow","italic":false}']
 item replace block 90114 123 125 container.14 with trial_key[custom_name='{"text":"器械资源室2F 燃料架 - A 内有慰问品","italic":true,"color":"yellow","italic":false}']
+item replace block 90142 134 138 container.14 with trial_key[custom_name='{"text":"宿舍楼3楼某处的钥匙","italic":true,"color":"yellow","italic":false}']
 item replace block 90086 143 116 container.13 with flow_banner_pattern[custom_name='{"text":"燃料架B内的便签纸","italic":true,"color":"dark_purple","italic":false}',lore=['{"text":"上面写着歪歪扭扭的字：","color":"white","italic":false}','{"text":"“从右到左仔细观察北水箱西面的蜡烛”","color":"white","italic":false}']]
 item replace block 90095 122 128 container.3 with globe_banner_pattern[custom_name='{"text":"何日的新闻","italic":true,"color":"dark_purple","italic":false}',lore=['{"text":"这座忒尔克西作为2130年往后的唯一一座新建钻井平台，其背负的不仅是开采石油的使命。","color":"white","italic":false}','{"text":"于2128年在大洋洲火圈地带接连发生的火山喷发，将这一批埋藏于地层深处的石油送入了太平洋。","color":"white","italic":false}','{"text":"这些石油在地理位置的分布再一次提醒了现代的人们过去有关“姆大陆”的学术猜想。","color":"white","italic":false}','{"text":"忒尔克西海上钻井平台在开采这批石油的同时，也将探索位于各处石油分布区域汇聚……","color":"white","italic":false}']]
 #法莫洛斯：医务部门 总管

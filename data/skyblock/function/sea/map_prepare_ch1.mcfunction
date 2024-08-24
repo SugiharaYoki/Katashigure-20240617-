@@ -298,10 +298,12 @@ setblock 90139 115 147 air
 setblock 90140 115 147 air
 setblock 90073 103 154 air
 setblock 90074 103 154 air
+setblock 90151 145 103 air
 setblock 90139 115 147 decorated_pot{sherds:["friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd"],item:{count: 4, id:"minecraft:emerald"}}
 setblock 90140 115 147 decorated_pot{sherds:["mourner_pottery_sherd","mourner_pottery_sherd","mourner_pottery_sherd","mourner_pottery_sherd"],item:{count: 2, id:"minecraft:echo_shard"}}
 setblock 90073 103 154 decorated_pot{sherds:["friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd"],item:{count: 3, id:"minecraft:emerald"}}
 setblock 90074 103 154 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 1, id:"minecraft:beef"}}
+setblock 90151 145 103 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 3, id:"minecraft:golden_carrot"}}
 
 setblock 90071 137 151 minecraft:iron_trapdoor[facing=north]
 fill 90101 123 116 90101 122 116 minecraft:slime_block
@@ -317,8 +319,14 @@ item replace block 90081 122 145 container.15 with raiser_armor_trim_smithing_te
 scoreboard objectives add sea_is_running minecraft.custom:minecraft.sprint_one_cm
 scoreboard objectives add sea_runs dummy
 
+setblock 90075 132 166 chest[facing=south]
+item replace block 90075 132 166 container.11 with emerald 25
+item replace block 90075 132 166 container.13 with emerald 25
+item replace block 90075 132 166 container.15 with emerald 25
 
-
-
+setblock 90153 145 133 chest[facing=east]
+item replace block 90153 145 133 container.11 with arrow 10
+item replace block 90153 145 133 container.13 with flint 5
+item replace block 90153 145 133 container.15 with arrow 10
 
 

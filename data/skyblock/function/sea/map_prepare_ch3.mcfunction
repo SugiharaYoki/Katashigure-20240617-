@@ -207,6 +207,13 @@ setblock 90137 136 144 minecraft:polished_tuff
 
 setblock 90141 134 140 minecraft:flower_pot
 setblock 90142 134 138 chest[facing=west]
-item replace block 90142 134 138 container.12 with apple 2
-item replace block 90142 134 138 container.14 with music_disc_stal
+item replace block 90142 134 138 container.12 with emerald 3
+setblock 90102 137 130 chest[facing=east]
+item replace block 90102 137 130 container.12 with coal 1
+item replace block 90102 137 130 container.14 with coal 1
+
+
+
+
+
 
