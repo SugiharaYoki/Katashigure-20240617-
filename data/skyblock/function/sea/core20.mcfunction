@@ -21,7 +21,8 @@ execute as @a[tag=SEAPT,scores={sea_runs=1..}] at @s run scoreboard players add 
 #scoreboard players remove @a[tag=sea_run_stops] sea_runs 1
 execute as @a[tag=SEAPT,scores={sea_runs=6..}] at @s run attribute @s generic.movement_speed modifier remove sea_running_1a
 execute as @a[tag=SEAPT,scores={sea_runs=7..}] at @s run attribute @s generic.knockback_resistance modifier remove sea_running_1b
-scoreboard players remove @a[tag=SEAPT] sea_is_running 1
+scoreboard players remove @a[tag=SEAPT,scores={sea_is_running=1..}] sea_is_running 1
+scoreboard players set @a[tag=SEAPT,scores={sea_is_running=50..}] sea_is_running 50
 
 
 
