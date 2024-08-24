@@ -354,11 +354,17 @@ execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=813..822}] run p
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=813..829}] run playsound minecraft:ambient.soul_sand_valley.additions ambient @a 90104 133 100 13 1.5
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=823}] run fill 90104 130 103 90103 128 103 air
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=823}] run playsound minecraft:entity.zombie.attack_iron_door ambient @a 90103 128 103 2 0.5
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=813}] run time set 13600t
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=816}] run time set 13700t
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=819}] run time set 13800t
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=821}] run time set 13900t
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=824}] run time set 14000t
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=813}] run time set 13750t
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=816}] run time set 14000t
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=819}] run time set 14250t
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=821}] run time set 14500t
+
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=1023}] run time set 14750t
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=1026}] run time set 15000t
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=1029}] run time set 15250t
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=1032}] run time set 15500t
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=1035}] run time set 15750t
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=1038}] run time set 16000t
 
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=861}] run setblock 90101 132 110 minecraft:tinted_glass
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=861}] run setblock 90106 132 110 minecraft:tinted_glass

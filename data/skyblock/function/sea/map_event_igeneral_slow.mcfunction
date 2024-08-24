@@ -26,10 +26,11 @@ execute positioned 90117 138 121 if entity @a[tag=SEAPT,distance=0..20] unless e
 #antichear
 #execute as @a[tag=SEAPT,nbt={Inventory:[{id:"minecraft:iron_hoe"}]}] at @s run clear @s iron_axe
 #execute as @a[tag=SEAPT] at @s run clear @s iron_hoe[!custom_data={sea_crowbar_t:true}]
-item replace entity @a player.crafting.0 with barrier
-item replace entity @a player.crafting.1 with barrier
-item replace entity @a player.crafting.2 with barrier
-item replace entity @a player.crafting.3 with barrier
+clear @a[tag=SEAPT] barrier
+item replace entity @a[tag=SEAPT] player.crafting.0 with barrier
+item replace entity @a[tag=SEAPT] player.crafting.1 with barrier
+item replace entity @a[tag=SEAPT] player.crafting.2 with barrier
+item replace entity @a[tag=SEAPT] player.crafting.3 with barrier
 
 execute as @a[tag=SEAPT,tag=!e_w_01] at @s if entity @s[nbt={Inventory:[{id:"minecraft:iron_hoe"}]}] run tellraw @s {"text": "获得武器：撬棍","color": "dark_red"}
 execute as @a[tag=SEAPT,tag=!e_w_01] at @s if entity @s[nbt={Inventory:[{id:"minecraft:iron_hoe"}]}] run tellraw @s {"text": "防身武器，较快的攻击速度与略微优于赤手空拳的伤害。","color": "white"}
