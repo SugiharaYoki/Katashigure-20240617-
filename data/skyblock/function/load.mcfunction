@@ -17,7 +17,7 @@ scoreboard objectives add DeathCountTemp dummy
 scoreboard objectives add CasinoBlJarE dummy
 scoreboard objectives add Perm_BlackJackW dummy
 scoreboard objectives add 2 dummy
-scoreboard objectives add Perm_PersonWins dummy
+scoreboard objectives add Perm_PersonWins dummy {"text":"PVP战争 历史胜利场数排行榜","color":"gold","bold":true}
 scoreboard objectives add HajimetaBGM dummy
 scoreboard objectives add HajimetaBGM2 dummy
 scoreboard objectives add AnnouncementTime dummy
@@ -44,8 +44,8 @@ scoreboard objectives add If_5cmAlarmMany dummy
 scoreboard objectives add If_DropBtrt dummy
 scoreboard objectives add If_CrBow dummy
 scoreboard objectives add Perm_PersonCCT dummy
-scoreboard objectives add Perm_PersonKills dummy
-scoreboard objectives add Perm_PersonDeath dummy
+scoreboard objectives add Perm_PersonKills dummy {"text":"PVP战争 历史击杀人数排行榜","color":"light_purple","bold":true}
+scoreboard objectives add Perm_PersonDeath dummy {"text":"PVP战争 历史死亡场数排行榜","color":"red","bold":true}
 scoreboard objectives add LevelBonus_1 dummy
 scoreboard objectives add LevelBonus_2 dummy
 scoreboard objectives add LevelBonus_3 dummy
@@ -139,7 +139,7 @@ scoreboard objectives add dailylogin dummy
 scoreboard objectives add dailylogin_c dummy
 scoreboard objectives add AnnouncementRo dummy
 scoreboard objectives add AnnouncementRoB dummy
-scoreboard objectives add SeGa_StandLastBH dummy
+scoreboard objectives add SeGa_StandLastBH dummy {"text":"『亚兹列尔的中庭花园』神界的认可度","color":"aqua","bold":true}
 
 scoreboard objectives add rng1 dummy
 scoreboard objectives add rng2 dummy
