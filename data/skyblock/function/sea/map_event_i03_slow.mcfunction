@@ -133,37 +133,47 @@ execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer5,scores={sea_4temp1
 execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer5,scores={sea_4temp1=11}] positioned 90151 137 155 run function skyblock:sea/m/husk
 
 execute positioned 90127 137 137 if entity @a[distance=..4] unless entity @n[tag=SEAch3_spawn_timer6,distance=0..3] as @n[tag=sc,scores={sea_4temp2=390..}] run summon marker ~ ~ ~ {Tags:["SEAch3_spawn_timer","SEAch3_spawn_timer6"]}
-execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=1}] positioned 90127 137 140 run function skyblock:sea/m/zombie_cook
-execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=1}] positioned 90126 137 140 run function skyblock:sea/m/zombie_cook
-execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=1}] positioned 90128 137 140 run function skyblock:sea/m/drowned_hat
-execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=1}] positioned 90127 137 141 run function skyblock:sea/m/drowned
-execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=1}] positioned 90126 137 141 run function skyblock:sea/m/drowned_maintenance
-execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=1}] positioned 90128 137 141 run function skyblock:sea/m/drowned_hat
-execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=1}] positioned 90127 137 139 run function skyblock:sea/m/drowned_hat
-execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=1}] positioned 90126 137 139 run function skyblock:sea/m/drowned_maintenance
-execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=1}] positioned 90128 137 139 run function skyblock:sea/m/drowned
-execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=1}] positioned 90128 137 144 run function skyblock:sea/m/drowned
-execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=1}] positioned 90127 137 144 run function skyblock:sea/m/drowned_maintenance
-execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=1}] positioned 90129 137 144 run function skyblock:sea/m/drowned
-execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=1}] positioned 90128 137 145 run function skyblock:sea/m/drowned_hat
-execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=1}] positioned 90127 137 145 run function skyblock:sea/m/drowned
-execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=1}] positioned 90129 137 145 run function skyblock:sea/m/drowned_hat
-execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=1}] positioned 90124 137 150 run function skyblock:sea/m/zombie_cook
-execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=1}] positioned 90124 137 150 run function skyblock:sea/m/drowned_maintenance
-execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=1}] positioned 90119 137 147 run function skyblock:sea/m/zombie_security2
-execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=1}] positioned 90119 137 147 run function skyblock:sea/m/zombie_security2
-execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=1}] positioned 90119 137 147 run function skyblock:sea/m/zombie_security2
-execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=1}] positioned 90119 137 147 run function skyblock:sea/m/zombie_security2
-
-
-execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=1}] run fill 90128 137 137 90126 137 137 air
-execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=3}] run fill 90128 138 137 90126 138 137 air
-execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=5}] run fill 90128 139 137 90126 139 137 air
-execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=7}] run fill 90128 140 137 90126 140 137 air
-execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=1}] run playsound minecraft:block.iron_door.open ambient @a 90127 140 1373 0.3
-execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=3}] run playsound minecraft:block.iron_door.open ambient @a 90127 140 1373 0.3
-execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=5}] run playsound minecraft:block.iron_door.open ambient @a 90127 140 1373 0.3
-execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=7}] run playsound minecraft:block.iron_door.open ambient @a 90127 140 1373 0.3
+execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90127 137 140 run function skyblock:sea/m/zombie_cook
+execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90126 137 140 run function skyblock:sea/m/zombie_cook
+execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90128 137 140 run function skyblock:sea/m/drowned_hat
+execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90127 137 141 run function skyblock:sea/m/drowned
+execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90126 137 141 run function skyblock:sea/m/drowned_maintenance
+execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90128 137 141 run function skyblock:sea/m/drowned_hat
+execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90127 137 139 run function skyblock:sea/m/drowned_hat
+execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90126 137 139 run function skyblock:sea/m/drowned_maintenance
+execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90128 137 139 run function skyblock:sea/m/drowned
+execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90128 137 144 run function skyblock:sea/m/drowned
+execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90127 137 144 run function skyblock:sea/m/drowned_maintenance
+execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90129 137 144 run function skyblock:sea/m/drowned
+execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90128 137 145 run function skyblock:sea/m/drowned_hat
+execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90127 137 145 run function skyblock:sea/m/drowned
+execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90129 137 145 run function skyblock:sea/m/drowned_hat
+execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90124 137 150 run function skyblock:sea/m/zombie_cook
+execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90124 137 150 run function skyblock:sea/m/drowned_maintenance
+execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90119 137 147 run function skyblock:sea/m/zombie_security2
+execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90119 137 147 run function skyblock:sea/m/zombie_security2
+execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90119 137 147 run function skyblock:sea/m/zombie_security2
+execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90119 137 147 run function skyblock:sea/m/zombie_security2
+execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=1}] run playsound minecraft:item.goat_horn.sound.6 master @a[tag=SEAPT] 90100 0 100 10000 0.8
+execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=1}] run playsound minecraft:item.goat_horn.sound.6 master @a[tag=SEAPT] 90100 0 100 10000 0.87
+execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=1}] run playsound minecraft:item.goat_horn.sound.6 master @a[tag=SEAPT] 90100 0 100 10000 0.84
+execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=31}] run playsound minecraft:item.goat_horn.sound.6 master @a[tag=SEAPT] 90100 0 100 10000 0.8
+execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=31}] run playsound minecraft:item.goat_horn.sound.6 master @a[tag=SEAPT] 90100 0 100 10000 0.87
+execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=31}] run playsound minecraft:item.goat_horn.sound.6 master @a[tag=SEAPT] 90100 0 100 10000 0.84
+execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=61}] run playsound minecraft:item.goat_horn.sound.6 master @a[tag=SEAPT] 90100 0 100 10000 0.8
+execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=61}] run playsound minecraft:item.goat_horn.sound.6 master @a[tag=SEAPT] 90100 0 100 10000 0.87
+execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=61}] run playsound minecraft:item.goat_horn.sound.6 master @a[tag=SEAPT] 90100 0 100 10000 0.84
+execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=91}] run playsound minecraft:item.goat_horn.sound.6 master @a[tag=SEAPT] 90100 0 100 10000 0.8
+execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=91}] run playsound minecraft:item.goat_horn.sound.6 master @a[tag=SEAPT] 90100 0 100 10000 0.87
+execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=91}] run playsound minecraft:item.goat_horn.sound.6 master @a[tag=SEAPT] 90100 0 100 10000 0.84
+execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=31}] run fill 90128 137 137 90126 137 137 air
+execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=34}] run fill 90128 138 137 90126 138 137 air
+execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=37}] run fill 90128 139 137 90126 139 137 air
+execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=40}] run fill 90128 140 137 90126 140 137 air
+execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=31}] run playsound minecraft:block.iron_door.open ambient @a 90127 140 137 0.3
+execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=34}] run playsound minecraft:block.iron_door.open ambient @a 90127 140 137 0.3
+execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=37}] run playsound minecraft:block.iron_door.open ambient @a 90127 140 137 0.3
+execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=40}] run playsound minecraft:block.iron_door.open ambient @a 90127 140 137 0.3
 
 
 
