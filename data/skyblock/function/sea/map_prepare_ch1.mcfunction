@@ -313,3 +313,12 @@ setblock 90114 123 125 chest[facing=east]
 
 item replace block 90081 122 145 container.11 with arrow 5
 item replace block 90081 122 145 container.15 with raiser_armor_trim_smithing_template[custom_name='{"text":"牧羊人石板","bold":false,"italic":true,"color":"light_purple","italic":false}'] 2
+
+scoreboard objectives add sea_is_running minecraft.custom:minecraft.sprint_one_cm
+scoreboard objectives add sea_runs dummy
+
+
+
+
+
+

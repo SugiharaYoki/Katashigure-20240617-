@@ -10,3 +10,17 @@ execute as @n[tag=sc,scores={seact=5}] run scoreboard players set @n[tag=sc] sea
 execute store result score @n[tag=sc] rng1 run random value 1..3
 execute as @a[tag=SEAPT,scores={sea_do_attack=1..},nbt={SelectedItem:{components:{"minecraft:custom_data":{sea_1time_flint:true}}}}] if entity @n[scores={rng1=1..2}] run clear @s flint_and_steel[custom_data={sea_1time_flint:true}] 1
 scoreboard players reset @a[tag=SEAPT,scores={sea_do_attack=1..}] sea_do_attack
+
+
+execute as @a[tag=SEAPT,scores={sea_is_running=1..}] at @s run scoreboard players add @s sea_runs 1
+execute as @a[tag=SEAPT,scores={sea_runs=1..}] at @s run scoreboard players add @s sea_runs 1
+execute as @a[tag=SEAPT,scores={sea_runs=20}] at @s run scoreboard players set @s sea_runs 0
+execute as @a[tag=SEAPT,scores={sea_runs=1}] at @s run attribute @s generic.movement_speed modifier add sea_running_1a 0.04 add_value
+execute as @a[tag=SEAPT,scores={sea_runs=3}] at @s run attribute @s generic.movement_speed modifier remove sea_running_1a
+scoreboard players set @a[tag=SEAPT] sea_is_running 0
+
+
+
+
+
+
