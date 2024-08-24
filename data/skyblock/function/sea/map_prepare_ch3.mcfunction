@@ -35,6 +35,9 @@ setblock 90078 137 129 air
 setblock 90137 145 125 air
 setblock 90138 137 113 air
 setblock 90142 137 114 air
+setblock 90148 137 153 air
+setblock 90154 137 135 air
+setblock 90151 128 122 air
 setblock 90084 143 123 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 1, id:"minecraft:beef"}}
 setblock 90083 143 123 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:flint"}}
 setblock 90121 137 105 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:flint"}}
@@ -51,17 +54,22 @@ setblock 90078 137 129 decorated_pot{sherds:["mourner_pottery_sherd","mourner_po
 setblock 90137 145 125 decorated_pot{sherds:["mourner_pottery_sherd","mourner_pottery_sherd","mourner_pottery_sherd","mourner_pottery_sherd"],item:{count: 2, id:"minecraft:echo_shard"}}
 setblock 90138 137 113 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:coal"}}
 setblock 90142 137 114 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:gunpowder"}}
+setblock 90148 137 153 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:gunpowder"}}
+setblock 90154 137 135 decorated_pot{sherds:["friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd"],item:{count: 3, id:"minecraft:emerald"}}
+setblock 90151 128 122 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:flint"}}
 #炸药桶
 setblock 90084 137 126 air
 setblock 90103 137 109 air
 setblock 90107 138 105 air
 setblock 90085 137 132 air
 setblock 90080 137 134 air
+fill 90135 137 147 90135 138 147 air
 setblock 90083 143 123 decorated_pot{sherds:["burn_pottery_sherd","burn_pottery_sherd","burn_pottery_sherd","burn_pottery_sherd"],item:{count: 1, id:"minecraft:blaze_powder"}}
 setblock 90103 137 109 decorated_pot{sherds:["burn_pottery_sherd","burn_pottery_sherd","burn_pottery_sherd","burn_pottery_sherd"],item:{count: 1, id:"minecraft:blaze_powder"}}
 setblock 90107 138 105 decorated_pot{sherds:["burn_pottery_sherd","burn_pottery_sherd","burn_pottery_sherd","burn_pottery_sherd"],item:{count: 1, id:"minecraft:blaze_powder"}}
 setblock 90085 137 132 decorated_pot{sherds:["burn_pottery_sherd","burn_pottery_sherd","burn_pottery_sherd","burn_pottery_sherd"],item:{count: 1, id:"minecraft:blaze_powder"}}
 setblock 90080 137 134 decorated_pot{sherds:["burn_pottery_sherd","burn_pottery_sherd","burn_pottery_sherd","burn_pottery_sherd"],item:{count: 1, id:"minecraft:blaze_powder"}}
+fill 90135 137 147 90135 138 147 decorated_pot{sherds:["burn_pottery_sherd","burn_pottery_sherd","burn_pottery_sherd","burn_pottery_sherd"],item:{count: 1, id:"minecraft:blaze_powder"}}
 
 
 setblock 90091 137 122 minecraft:green_shulker_box
@@ -82,6 +90,7 @@ setblock 90066 138 153 lever[facing=south]
 
 summon minecraft:interaction 90128 138.3 97 {CustomName:'[{"text":"多功能工作站"}]',Tags:["SEAcrafter"]}
 summon minecraft:interaction 90082 144.3 117 {CustomName:'[{"text":"器械式治疗仪"}]',Tags:["SEAaidbox"]}
+summon minecraft:interaction 90118 138.3 143 {CustomName:'[{"text":"器械式治疗仪"}]',Tags:["SEAaidbox"]}
 
 setblock 90113 140 109 chest[facing=north]
 item replace block 90113 140 109 container.13 with emerald 3
@@ -157,8 +166,34 @@ item replace block 90141 137 117 container.14 with arrow 2
 setblock 90132 137 107 chest[facing=east]
 item replace block 90132 137 107 container.13 with fire_charge[custom_name='{"text":"定时炸弹","italic":true,"color":"blue","italic":false}',lore=['{"text":"它会在你丢出去3秒后爆炸！","color":"white","italic":false}','{"text":"炸到自己的话，职业生涯就会结束了吧。","color":"white","italic":false}','{"text":"可用于破坏凝胶壁障与瓦罐。","color":"white","italic":false}']] 1
 
+#宿舍楼往后
+fill 90123 137 153 90122 137 153 smoker[facing=north]
+setblock 90125 137 143 minecraft:spruce_trapdoor[facing=north,open=true]
+fill 90126 137 146 90126 137 144 minecraft:spruce_trapdoor[facing=east,open=true]
+
+fill 90156 138 156 90156 137 155 minecraft:slime_block
+fill 90157 138 155 90157 137 155 minecraft:slime_block
+
+setblock 90117 139 155 air
+setblock 90117 139 155 lever[facing=east]
+setblock 90117 137 142 chest[facing=north]
+item replace block 90117 137 142 container.13 with arrow 2
+
+summon painting 90122 138 146 {facing:2b,variant:"minecraft:humble"}
+summon painting 90123 138 145 {facing:1,variant:"minecraft:prairie_ride"}
+setblock 90123 138 146 minecraft:potted_azure_bluet
+setblock 90130 138 140 minecraft:potted_cherry_sapling
+
+setblock 90124 139 148 barrel[facing=south]
+item replace block 90124 139 148 container.12 with apple 2
+item replace block 90124 139 148 container.14 with music_disc_stal
+setblock 90122 138 148 barrel[facing=south]
+item replace block 90122 138 148 container.11 with beef 1
+item replace block 90122 138 148 container.13 with beef 1
+item replace block 90122 138 148 container.15 with beef 1
 
 
+summon minecraft:item_frame 90124 138 151 {Invisible:1b,Fixed:0b,Invulnerable:0b,Facing:1b,Item:{id:"minecraft:pumpkin_pie"}}
 
 
 
