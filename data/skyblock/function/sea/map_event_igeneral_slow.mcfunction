@@ -23,8 +23,8 @@ execute positioned 90119 138 121 if entity @a[tag=SEAPT,distance=0..20] unless e
 execute positioned 90118 138 121 if entity @a[tag=SEAPT,distance=0..20] unless entity @e[type=glow_item_frame,distance=0..0.5] run summon minecraft:glow_item_frame ~ ~ ~ {Tags:[iframe_sea,iframe_sea_leg],Invisible:0b,Fixed:0b,Invulnerable:0b,Facing:2b,Item:{id:"minecraft:leather_leggings",components:{custom_name:'{"text":"基础防护裤","italic":false,"color":"red"}',custom_data:{sea_leg:true},attribute_modifiers:[{type:"generic.armor",slot:"legs",id:"sea_armor:001_01",amount:1.0,operation:"add_value"},{type:"generic.armor_toughness",slot:"legs",id:"sea_armor:001_02",amount:0.5,operation:"add_value"}],unbreakable:{}}}}
 execute positioned 90117 138 121 if entity @a[tag=SEAPT,distance=0..20] unless entity @e[type=glow_item_frame,distance=0..0.5] run summon minecraft:glow_item_frame ~ ~ ~ {Tags:[iframe_sea,iframe_sea_feet],Invisible:0b,Fixed:0b,Invulnerable:0b,Facing:2b,Item:{id:"minecraft:leather_boots",components:{custom_name:'{"text":"基础防护靴","italic":false,"color":"red"}',custom_data:{sea_feet:true},attribute_modifiers:[{type:"generic.armor",slot:"feet",id:"sea_armor:008_01",amount:1.0,operation:"add_value"},{type:"generic.armor_toughness",slot:"feet",id:"sea_armor:008_02",amount:0.5,operation:"add_value"}],unbreakable:{}}}}
 
-execute as @a[tag=SEAPT] at @s run clear @s iron_axe[!custom_data={sea_safeaxe_t:true}]
-execute as @a[tag=SEAPT] at @s run clear @s iron_hoe[!custom_data={sea_crowbar_t:true}]
+#execute as @a[tag=SEAPT] at @s run clear @s iron_axe[!custom_data={sea_safeaxe_t:true}]
+#execute as @a[tag=SEAPT] at @s run clear @s iron_hoe[!custom_data={sea_crowbar_t:true}]
 
 execute as @a[tag=SEAPT,tag=!e_w_01] at @s if entity @s[nbt={Inventory:[{id:"minecraft:iron_hoe"}]}] run tellraw @s {"text": "获得武器：撬棍","color": "dark_red"}
 execute as @a[tag=SEAPT,tag=!e_w_01] at @s if entity @s[nbt={Inventory:[{id:"minecraft:iron_hoe"}]}] run tellraw @s {"text": "防身武器，较快的攻击速度与略微优于赤手空拳的伤害。","color": "white"}
