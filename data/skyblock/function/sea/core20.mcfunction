@@ -14,6 +14,8 @@ scoreboard players reset @a[tag=SEAPT,scores={sea_do_attack=1..}] sea_do_attack
 
 execute as @a[tag=SEAPT,scores={sea_runs=..0}] at @s run tag @s remove sea_run_stops
 execute as @a[tag=SEAPT,scores={sea_is_running=0,sea_runs=10..}] at @s run scoreboard players set @s sea_runs 0
+execute as @a[tag=SEAPT,scores={sea_runs=..0}] at @s run effect give @s luck
+execute as @a[tag=SEAPT,scores={sea_runs=1..}] at @s run effect clear @s luck
 execute as @a[tag=SEAPT,scores={sea_is_running=1..,sea_runs=..0}] at @s run scoreboard players set @s sea_runs 1
 execute as @a[tag=SEAPT,scores={sea_runs=1..10}] at @s run scoreboard players add @s sea_runs 1
 #execute as @a[tag=SEAPT,scores={sea_runs=50..},tag=!sea_run_stops] at @s run tag @s add sea_run_stops
