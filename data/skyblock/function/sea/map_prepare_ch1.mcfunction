@@ -39,6 +39,8 @@ scoreboard objectives add sea_cursor2 dummy
 scoreboard objectives add sea_do_attack minecraft.custom:minecraft.damage_dealt
 scoreboard objectives add SEA_story dummy
 scoreboard players set @n[tag=sc] sea_chapter 1
+
+
 setblock -25 23 32 soul_lantern
 fill 90065 104 139 90065 104 141 air
 weather thunder 1000000s
