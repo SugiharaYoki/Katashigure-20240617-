@@ -344,7 +344,7 @@ execute if entity @s[tag=sea_purchase_pass,scores={rng1=21..27}] run give @s bol
 execute if entity @s[tag=sea_purchase_pass,scores={rng1=28..35}] run give @s bolt_armor_trim_smithing_template[custom_name='{"text":"精制铜板","italic":true,"color":"light_purple","italic":false}',lore=['{"text":"冲斥 II 强化击退","color":"white","italic":false}'],custom_data={sea_t_knockback2:true}]
 execute if entity @s[tag=sea_purchase_pass,scores={rng1=36..40}] run give @s bolt_armor_trim_smithing_template[custom_name='{"text":"密械铜板","italic":true,"color":"light_purple","italic":false}',lore=['{"text":"冲斥 III 强化击退","color":"white","italic":false}'],custom_data={sea_t_knockback3:true}]
 execute if entity @s[tag=sea_purchase_pass,scores={rng1=41..45}] run give @s netherite_scrap[custom_name='{"text":"废物铜板","italic":true,"color":"gray","italic":false}',lore=['{"text":"毫无任何魔力感应","color":"gray","italic":false}'],custom_data={sea_t_empty:true}]
-execute if entity @s[tag=sea_purchase_pass,scores={rng1=41..45}] run give @s emerald 5
+execute if entity @s[tag=sea_purchase_pass,scores={rng1=41..45}] run give @s emerald 6
 execute if entity @s[tag=sea_purchase_pass] run clear @s raiser_armor_trim_smithing_template 3
 execute if entity @s[tag=sea_purchase_pass] run clear @s dune_armor_trim_smithing_template 1
 tag @s remove sea_purchase_pass
@@ -360,7 +360,7 @@ execute if entity @s[tag=sea_purchase_pass,scores={rng1=21..27}] run give @s bol
 execute if entity @s[tag=sea_purchase_pass,scores={rng1=28..35}] run give @s bolt_armor_trim_smithing_template[custom_name='{"text":"精制铜板","italic":true,"color":"light_purple","italic":false}',lore=['{"text":"烈躁 II 增加攻击速度","color":"white","italic":false}'],custom_data={sea_t_attackspeed2:true}]
 execute if entity @s[tag=sea_purchase_pass,scores={rng1=36..40}] run give @s bolt_armor_trim_smithing_template[custom_name='{"text":"密械铜板","italic":true,"color":"light_purple","italic":false}',lore=['{"text":"烈躁 III 增加攻击速度","color":"white","italic":false}'],custom_data={sea_t_attackspeed3:true}]
 execute if entity @s[tag=sea_purchase_pass,scores={rng1=41..45}] run give @s netherite_scrap[custom_name='{"text":"废物铜板","italic":true,"color":"gray","italic":false}',lore=['{"text":"毫无任何魔力感应","color":"gray","italic":false}'],custom_data={sea_t_empty:true}]
-execute if entity @s[tag=sea_purchase_pass,scores={rng1=41..45}] run give @s emerald 5
+execute if entity @s[tag=sea_purchase_pass,scores={rng1=41..45}] run give @s emerald 8
 execute if entity @s[tag=sea_purchase_pass] run clear @s wayfinder_armor_trim_smithing_template 3
 execute if entity @s[tag=sea_purchase_pass] run clear @s wild_armor_trim_smithing_template 2
 tag @s remove sea_purchase_pass
