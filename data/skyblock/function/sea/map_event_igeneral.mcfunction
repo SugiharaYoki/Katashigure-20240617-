@@ -11,6 +11,11 @@ execute as @e[type=spectral_arrow,tag=SEAspectral,nbt={inGround:true}] at @s run
 
 execute as @e[type=item,nbt={Item:{id:"minecraft:fire_charge"}}] at @s if entity @a[tag=SEAPT,distance=0..80] at @s run function skyblock:sea/p/fire_charge
 execute as @e[type=item,nbt={Item:{id:"minecraft:barrier"}}] at @s run kill @s
+execute as @e[type=item,nbt={Item:{id:"minecraft:heart_pottery_sherd"}}] at @s run kill @s
+execute as @e[type=item,nbt={Item:{id:"minecraft:friend_pottery_sherd"}}] at @s run kill @s
+execute as @e[type=item,nbt={Item:{id:"minecraft:burn_pottery_sherd"}}] at @s run kill @s
+execute as @e[type=item,nbt={Item:{id:"minecraft:prize_pottery_sherd"}}] at @s run kill @s
+execute as @e[type=item,nbt={Item:{id:"minecraft:mourner_pottery_sherd"}}] at @s run kill @s
 execute as @e[type=item,nbt={Item:{id:"minecraft:item_frame"}}] at @s run kill @s
 
 execute as @e[type=item,nbt={Item:{id:"minecraft:blaze_powder"}}] at @s if entity @a[tag=SEAPT,distance=0..80] at @s run function skyblock:sea/p/bomb
