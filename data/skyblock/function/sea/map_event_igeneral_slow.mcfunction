@@ -252,6 +252,11 @@ clear @a[tag=SEAPT] deepslate_tiles
 clear @a[tag=SEAPT] waxed_copper_block
 clear @a[tag=SEAPT] slime_block
 clear @a[tag=SEAPT] string
+clear @a[tag=SEAPT] heart_pottery_sherd
+clear @a[tag=SEAPT] burn_pottery_sherd
+clear @a[tag=SEAPT] friend_pottery_sherd
+clear @a[tag=SEAPT] prize_pottery_sherd
+clear @a[tag=SEAPT] mourner_pottery_sherd
 
 
 
