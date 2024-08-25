@@ -22,7 +22,8 @@ execute as @e[type=item,nbt={Item:{id:"minecraft:blaze_powder"}}] at @s if entit
 
 execute as @e[type=husk,tag=SEAmob] at @s run function skyblock:sea/p/husk
 
-
+execute as @e[type=endermite,tag=SEAmob] at @s run playsound ambient.basalt_deltas.additions hostile @a ~ ~ ~ 0.6 1.3
+execute as @e[type=endermite,tag=SEAmob] at @s run playsound minecraft:entity.endermite.ambient hostile @a ~ ~ ~ 0.5 1.3
 
 execute positioned ~ ~1 ~ as @n[type=interaction,tag=flamethrowerdetect] as @e[type=interaction,tag=flamethrowerdetect,distance=0.3..] at @s positioned ~ ~-1 ~ unless entity @a[tag=SEAPT,distance=0..0.3] run kill @s
 execute as @a at @s if entity @s[nbt={SelectedItem:{id:"minecraft:shears",components:{"minecraft:custom_data":{sea_flamethrower:true}}}}] run function skyblock:sea/p/flamethrower
