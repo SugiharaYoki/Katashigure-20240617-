@@ -17,10 +17,10 @@ give @a[tag=SEAPT] baked_potato 3
 
 tag @a[tag=SEAPT] add e_w_01
 tag @a[tag=SEAPT] add e_w_02
-give @a[tag=SEAPT] raiser_armor_trim_smithing_template[custom_name='{"text":"牧羊人石板","bold":false,"italic":true,"color":"light_purple","italic":false}'] 5
-give @a[tag=SEAPT] wild_armor_trim_smithing_template[custom_name='{"text":"狂荒石板","bold":false,"italic":true,"color":"light_purple","italic":false}'] 2
-give @a[tag=SEAPT] wayfinder_armor_trim_smithing_template[custom_name='{"text":"醒殉徒石板","bold":false,"italic":true,"color":"light_purple","italic":false}'] 2
-give @a[tag=SEAPT] sentry_armor_trim_smithing_template[custom_name='{"text":"辽哨石板","bold":false,"italic":true,"color":"light_purple","italic":false}'] 2
+give @a[tag=SEAPT] raiser_armor_trim_smithing_template[custom_name='{"text":"牧羊人石板","italic":true,"color":"light_purple","italic":false}'] 5
+give @a[tag=SEAPT] wild_armor_trim_smithing_template[custom_name='{"text":"狂荒石板","italic":true,"color":"light_purple","italic":false}'] 2
+give @a[tag=SEAPT] wayfinder_armor_trim_smithing_template[custom_name='{"text":"醒殉徒石板","italic":true,"color":"light_purple","italic":false}'] 2
+give @a[tag=SEAPT] sentry_armor_trim_smithing_template[custom_name='{"text":"辽哨石板","italic":true,"color":"light_purple","italic":false}'] 2
 give @a[tag=SEAPT] arrow 8
 give @a[tag=SEAPT] emerald 48
 

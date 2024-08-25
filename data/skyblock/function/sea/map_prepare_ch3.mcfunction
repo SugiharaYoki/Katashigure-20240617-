@@ -118,7 +118,7 @@ setblock 90154 129 98 lever[facing=east]
 fill 90104 138 120 90104 138 125 air
 fill 90104 138 120 90104 138 125 lever[facing=east]
 setblock 90104 137 117 chest[facing=east]
-item replace block 90104 137 117 container.12 with wild_armor_trim_smithing_template[custom_name='{"text":"狂荒石板","bold":false,"italic":true,"color":"light_purple","italic":false}'] 2
+item replace block 90104 137 117 container.12 with wild_armor_trim_smithing_template[custom_name='{"text":"狂荒石板","italic":true,"color":"light_purple","italic":false}'] 2
 item replace block 90104 137 117 container.14 with gunpowder 2
 fill 90107 138 117 90107 137 117 iron_bars
 
