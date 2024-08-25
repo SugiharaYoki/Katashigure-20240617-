@@ -22,9 +22,9 @@ execute as @e[type=item,nbt={Item:{id:"minecraft:blaze_powder"}}] at @s if entit
 
 execute as @e[type=husk,tag=SEAmob] at @s run function skyblock:sea/p/husk
 
-execute store result score @e[type=endermite,tag=SEAmob] rng1 run random value 1..10
-execute as @e[type=endermite,tag=SEAmob,scores={rng1=1..7}] at @s run playsound ambient.basalt_deltas.additions hostile @a ~ ~ ~ 0.4 1.3
-execute as @e[type=endermite,tag=SEAmob,scores={rng1=8..10}] at @s run playsound minecraft:entity.endermite.ambient hostile @a ~ ~ ~ 0.5 1.5
+execute store result score @e[type=endermite,tag=SEAmob] rng1 run random value 1..9
+execute as @e[type=endermite,tag=SEAmob,scores={rng1=1..5}] at @s run playsound minecraft:entity.endermite.ambient hostile @s ~ ~ ~ 0.5 1.3
+execute as @e[type=endermite,tag=SEAmob,scores={rng1=6..8}] at @s as @a[tag=SEAPT,distance=0..4] at @s run playsound ambient.basalt_deltas.additions hostile @a ~ ~ ~ 1.3 1.5
 
 execute positioned ~ ~1 ~ as @n[type=interaction,tag=flamethrowerdetect] as @e[type=interaction,tag=flamethrowerdetect,distance=0.3..] at @s positioned ~ ~-1 ~ unless entity @a[tag=SEAPT,distance=0..0.3] run kill @s
 execute as @a at @s if entity @s[nbt={SelectedItem:{id:"minecraft:shears",components:{"minecraft:custom_data":{sea_flamethrower:true}}}}] run function skyblock:sea/p/flamethrower
