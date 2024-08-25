@@ -329,4 +329,9 @@ item replace block 90153 145 133 container.11 with arrow 10
 item replace block 90153 145 133 container.13 with flint 5
 item replace block 90153 145 133 container.15 with arrow 10
 
+#电梯2
+fill 90163 129 113 90163 127 114 iron_bars
+
+
+
 
