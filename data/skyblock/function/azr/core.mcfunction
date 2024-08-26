@@ -117,3 +117,13 @@ scoreboard players set gametick Azr_system 0
 #button3（stage7三楼）
 #button4（图书馆）
 #event6 见sub_core4x_stagerocess
+
+#牢房区域 TODO 纸张图案的钥匙-提示
+#summon minecraft:item_frame -79898.50 40.03 -116.50 {ItemRotation: 2b, Invulnerable: 1b, Item: {count: 1, id: "minecraft:map"}, Invisible: 1b}
+#summon minecraft:item_frame -79897.50 40.03 -115.50 {ItemRotation: 0b, Invulnerable: 1b, Item: {count: 1, id: "minecraft:paper"}, Invisible: 1b}
+#summon minecraft:item_frame -79897.50 40.03 -114.50 {ItemRotation: 3b, Invulnerable: 1b, Item: {count: 1, id: "minecraft:paper"}, Invisible: 1b}
+#summon minecraft:item_frame -79896.50 40.03 -116.50 {ItemRotation: 1b, Invulnerable: 1b, Item: {count: 1, id: "minecraft:paper"}, Invisible: 1b}
+#summon minecraft:item_frame -79896.50 40.03 -115.50 {ItemRotation: 1b, Invulnerable: 1b, Item: {count: 1, id: "minecraft:book"}, Invisible: 1b}
+
+#第四章 TODO 金镐图案的钥匙-提示
+#summon minecraft:item_frame -79571.50 12.03 -410.50 {ItemRotation: 0b, Invulnerable: 1b, Item: {count: 1, id: "minecraft:golden_pickaxe"}, Invisible: 1b}
