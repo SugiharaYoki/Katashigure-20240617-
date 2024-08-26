@@ -17,7 +17,7 @@ execute if score @s dailydiv9 matches 99 run scoreboard players operation @s dai
 #告知占卜结果
 tellraw @s {"text":"   『今日占星结果』","color":"gold","bold":true}
 tellraw @s {"text":"     - 星象 -","color":"white"}
-scoreboard players operation @s dailydiv_w = @s dailydiv8
-scoreboard players operation @s dailydiv_wy = @s dailydiv8y
+scoreboard players operation @s dailydiv_w = @s dailydiv9
+scoreboard players operation @s dailydiv_wy = @s dailydiv9y
 function skyblock:city_utility_divination_result_astrology
 scoreboard players set @s MultiMenu 0
