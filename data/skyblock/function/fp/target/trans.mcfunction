@@ -2,6 +2,9 @@
 function skyblock:fp/tool/distance_macro with storage temp:matrix display
 data modify storage temp:matrix display.height set from storage festering:functions Math[{id:"distance"}].output
 #拆分数据
+data modify storage temp:matrix display.start0 set from storage temp:matrix display.start[0]
+data modify storage temp:matrix display.start1 set from storage temp:matrix display.start[1]
+data modify storage temp:matrix display.start2 set from storage temp:matrix display.start[2]
 data modify storage temp:matrix display.end0 set from storage temp:matrix display.end[0]
 data modify storage temp:matrix display.end1 set from storage temp:matrix display.end[1]
 data modify storage temp:matrix display.end2 set from storage temp:matrix display.end[2]
