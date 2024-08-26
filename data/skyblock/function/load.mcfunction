@@ -55,6 +55,8 @@ scoreboard objectives add LevelBonus_6 dummy
 scoreboard objectives add LevelBonus_7 dummy
 scoreboard objectives add LevelBonus_8 dummy
 scoreboard objectives add LevelBonus_9 dummy
+scoreboard objectives add 2 dummy
+scoreboard players set @n[tag=sc] 2 2
 scoreboard objectives add SocialOath dummy
 scoreboard objectives add SocialStatus dummy
 scoreboard objectives add Parkour_Chall dummy
