@@ -136,7 +136,8 @@ execute store result score @n[tag=sc,scores={sea_4temp2=200..1200,sea_player=3..
 execute store result score @n[tag=sc,scores={sea_4temp2=200..1200,sea_player=5..}] rng1 run random value 1..13
 execute store result score @n[tag=sc,scores={sea_4temp2=200..600}] rng2 run random value 1..6
 execute store result score @n[tag=sc,scores={sea_4temp2=601..1200}] rng2 run random value 1..10
-execute if entity @a[tag=SEAPT,x=90125,y=123,z=118,distance=0..9.2] as @n[tag=sc,scores={sea_4temp2=200..1200}] run scoreboard players add @s sea_4temp2 1
+execute if entity @a[tag=SEAPT,x=90125,y=123,z=118,distance=0..9.2] as @n[tag=sc,scores={sea_4temp2=200..1150}] run scoreboard players add @s sea_4temp2 1
+execute as @n[tag=sc,scores={sea_4temp2=1151..1200}] run scoreboard players add @s sea_4temp2 1
 execute if entity @a[tag=SEAPT,x=90125,y=123,z=118,distance=0..9.2] as @n[tag=sc,scores={sea_4temp2=400}] run scoreboard players add @s sea_4temp2 100
 execute if entity @a[tag=SEAPT,x=90125,y=123,z=118,distance=0..9.2] as @n[tag=sc,scores={sea_4temp2=540}] run scoreboard players add @s sea_4temp2 30
 execute if entity @a[tag=SEAPT,x=90125,y=123,z=118,distance=0..9.2] as @n[tag=sc,scores={sea_4temp2=600}] run scoreboard players add @s sea_4temp2 60
@@ -162,7 +163,7 @@ execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=1068}] positione
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=1068}] positioned 90120 123 123 run playsound minecraft:entity.endermite.ambient ambient @a ~ ~ ~ 0.8 0.1
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=1095}] positioned 90120 123 123 run tellraw @a[distance=0..55] {"text":"联络机台：“我这里已经不安全了，去物资层找台联络机台联系我，那里至少还没断电——”","color":"dark_purple"}
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=1095}] positioned 90120 123 123 run playsound minecraft:entity.endermite.ambient ambient @a ~ ~ ~ 0.8 0.1
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=1160}] positioned 90120 123 123 run tellraw @a[distance=0..55] {"text":"联络机台：“……”","color":"dark_purple"}
+execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=1260}] positioned 90120 123 123 run tellraw @a[distance=0..55] {"text":"联络机台：“……”","color":"dark_purple"}
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=1140}] run fill 90129 122 119 90129 122 120 air
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=1144}] run fill 90129 123 119 90129 123 120 air
 execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp2=1140}] run playsound minecraft:block.iron_door.open ambient @a 90129 125 120 4 0.3
