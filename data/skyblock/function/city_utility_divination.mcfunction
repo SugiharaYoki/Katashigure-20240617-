@@ -13,6 +13,7 @@ execute if score @s dailydiv < @e[limit=1,tag=sc] dailydiv run scoreboard player
 execute if score @s dailydiv < @e[limit=1,tag=sc] dailydiv run scoreboard players operation @s dailydiv = @e[limit=1,tag=sc] dailydiv
 #占卜开始
 execute store result score @s rng1 run random value 6..36
+execute if score @s dailydiv9 matches ..5 run scoreboard players operation @s dailydiv9 = @s rng1
 execute if score @s dailydiv9 matches 99 run scoreboard players operation @s dailydiv9 = @s rng1
 #告知占卜结果
 tellraw @s {"text":"   『今日占星结果』","color":"gold","bold":true}
