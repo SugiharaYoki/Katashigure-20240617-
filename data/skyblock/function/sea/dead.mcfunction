@@ -57,6 +57,7 @@ tag @s add sea_dead
 scoreboard players reset @s sea_dead_check
 gamemode creative @s[tag=ServerManager]
 tag @s remove sea_t_spectral1
+tag @s remove sea_t_sprint1
 scoreboard players set @s sea_is_running 0
 
 attribute @s minecraft:generic.armor modifier remove sea_t_armor1
