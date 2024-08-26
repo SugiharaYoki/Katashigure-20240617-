@@ -42,7 +42,7 @@ execute as @a[tag=!NoAnnouncement,tag=!Gaming,scores={AnnouncementTime=32,rng2=3
 execute as @a[tag=!NoAnnouncement,tag=!Gaming,scores={AnnouncementTime=32,rng2=4}] run tellraw @s [{"text":"看板狐： 『绯染缥茫的世花源』已作为1v1v1空岛战争地图上架！","color":"aqua"}]
 execute as @a[tag=!NoAnnouncement,tag=!Gaming,scores={AnnouncementTime=32,rng2=5}] run tellraw @s [{"text":"GameLand三周目企划正式开始！方时雨城规划建设中！","color":"green"}]
 execute as @a[tag=!NoAnnouncement,tag=!Gaming,scores={AnnouncementTime=32,rng2=6}] run tellraw @s [{"text":"看板狐： 在赌场玩叠倍机前，记得存够浮世币哦！","color":"aqua"}]
-execute as @a[tag=!NoAnnouncement,tag=!Gaming,scores={AnnouncementTime=32,rng2=7}] run tellraw @s [{"text":"看板狐： 『亚兹列尔的中庭花园』已成为历史，但前传兼续作『厄珀娅的悲歌』已上架！","color":"aqua"}]
+execute as @a[tag=!NoAnnouncement,tag=!Gaming,scores={AnnouncementTime=32,rng2=7}] run tellraw @s [{"text":"看板狐： 『亚兹列尔的中庭花园』的前传兼续作『厄珀娅的悲歌』已上架！","color":"aqua"}]
 execute as @a[tag=!NoAnnouncement,tag=!Gaming,scores={AnnouncementTime=32,rng2=8}] run tellraw @s [{"text":"看板狐： 大型空岛战争地图『天穹巨兽古伽兰那·维修层』已上架！多种房间结构，挑战你的随机应变极限！","color":"aqua"}]
 execute as @a[tag=!NoAnnouncement,tag=!Gaming,scores={AnnouncementTime=32,rng2=9}] run tellraw @s [{"text":"你有尝试寻找城市内的彩蛋区域吗？这座城市有一些隐藏的地带哟！","color":"green"}]
 execute as @a[tag=!NoAnnouncement,tag=!Gaming,scores={AnnouncementTime=32,rng2=10}] run tellraw @s [{"text":"PVP战争职业系统修复中！","color":"green"}]
