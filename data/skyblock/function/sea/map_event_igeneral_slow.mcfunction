@@ -132,6 +132,16 @@ item replace block 90095 122 128 container.3 with globe_banner_pattern[custom_na
 #权之殊能：大天使沙利叶麾下的能天使
 #权之执理：大天使拉贵尔麾下的主天使
 
+execute unless block 90084 122 139 air run title @a[tag=SEAPT,tag=!e_i_04] actionbar {"text":"目标：进入忒尔克西的维修层","color":"green"}
+execute unless block 90084 122 139 air run title @a[tag=SEAPT,tag=e_i_04] actionbar {"text":"目标：想办法打开消毒间的门 & 寻找可用的联络装置","color":"green"}
+execute if block 90084 122 139 air if block 90102 122 125 iron_block run title @a[tag=SEAPT,tag=!e_i_07] actionbar {"text":"目标：在有限的空间内搜索一番 & 寻找可用的联络装置","color":"green"}
+execute if block 90084 122 139 air if block 90102 122 125 iron_block unless block 90129 123 120 air run title @a[tag=SEAPT,tag=e_i_07] actionbar {"text":"目标：找到文件室上锁箱子的钥匙","color":"green"}
+execute if block 90084 122 139 air if block 90102 122 125 air unless block 90129 123 120 air run title @a[tag=SEAPT] actionbar {"text":"目标：寻找可用的联络装置","color":"green"}
+execute if block 90129 123 120 air run title @a[tag=SEAPT] actionbar {"text":"目标：探索维修层 & 寻找通往物资层的上行楼梯","color":"green"}
+
+
+
+
 item replace block 90095 122 128 container.15 with flow_banner_pattern[custom_name=\
 '{"text":"文件室的笔记 - 玛瑞莲","italic":true,"color":"dark_purple","italic":false}',\
 lore=['{"text":"绝对不可让他们知道密钥……不能落入那群教徒的手中。","color":"white","italic":false}','{"text":"我不知道诺曼博士是如何说服了史丹尼舵长去听信那种鬼话。","color":"white","italic":false}','{"text":"居住区已经被游行的钻井队占领了，但偏偏是这种时候？","color":"white","italic":false}','{"text":"愚蠢至极，我无法忍受。","color":"white","italic":false}','{"text":"细菌感染爆发，安保杀了许多无辜的人，事态已经无法控制。","color":"white","italic":false}']]
