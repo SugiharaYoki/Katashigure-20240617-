@@ -4,3 +4,4 @@ tellraw XuanYu1725_XYU [{"text":"backward第"},{"score": {"name": "fabrik_backwa
 execute if score fabrik_id festering_leg_subid matches 0.. run scoreboard players remove fabrik_id festering_leg_subid 1
 execute if score fabrik_id festering_leg_subid matches 0.. if score fabrik_backward_count festering_fabrik matches ..10 run scoreboard players add fabrik_backward_count festering_fabrik 1
 execute if score fabrik_id festering_leg_subid matches 0 if score fabrik_backward_count festering_fabrik matches ..10 run function skyblock:fp/target/fabrik_forward with storage temp:fabrik
+execute if score fabrik_id festering_leg_subid matches 0.. if score fabrik_backward_count festering_fabrik matches ..10 run function skyblock:fp/target/fabrik_backward with storage temp:fabrik

@@ -4,3 +4,4 @@ tellraw XuanYu1725_XYU [{"text":"forward第"},{"score": {"name": "fabrik_forward
 $execute if score fabrik_id festering_leg_subid matches ..$(count) run scoreboard players add fabrik_id festering_leg_subid 1
 $execute if score fabrik_id festering_leg_subid matches $(count) if score fabrik_forward_count festering_fabrik matches ..10 run scoreboard players add fabrik_forward_count festering_fabrik 1
 $execute if score fabrik_id festering_leg_subid matches $(count) if score fabrik_forward_count festering_fabrik matches ..10 run function skyblock:fp/target/fabrik_backward with storage temp:fabrik
+$execute if score fabrik_id festering_leg_subid matches ..$(count) if score fabrik_forward_count festering_fabrik matches ..10 run function skyblock:fp/target/fabrik_forward with storage temp:fabrik
