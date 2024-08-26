@@ -10,7 +10,7 @@ data modify storage temp:matrix display.end1 set from storage temp:matrix displa
 data modify storage temp:matrix display.end2 set from storage temp:matrix display.end[2]
 #获得矩阵
 data modify entity 0-0-0-0-0 Pos set from storage temp:matrix display.end
-execute at @s facing entity 0-0-0-0-0 feet positioned 0. 0. 0. run function skyblock:fp/target/upd_matrix with storage temp:matrix display 
+execute at @s facing entity 0-0-0-0-0 feet positioned 0. 0. 0. run function skyblock:fp/target/upd_matrix with storage temp:matrix display
 #变换
 data modify entity @s Pos set from storage temp:matrix display.start
 data modify entity @s block_state set from storage temp:matrix block_state
