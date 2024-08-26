@@ -137,8 +137,8 @@ item replace block 90095 122 128 container.3 with globe_banner_pattern[custom_na
 execute unless block 90058 103 142 minecraft:grindstone unless block 90084 122 139 air run title @a[tag=SEAPT,tag=!e_i_04] actionbar {"text":"目标：进入忒尔克西的维修层","color":"green"}
 execute unless block 90058 103 142 minecraft:grindstone unless block 90084 122 139 air run title @a[tag=SEAPT,tag=e_i_04] actionbar {"text":"目标：想办法打开消毒间的门 & 寻找可用的联络装置","color":"green"}
 execute unless block 90058 103 142 minecraft:grindstone if block 90084 122 139 air if block 90102 122 125 iron_block run title @a[tag=SEAPT,tag=!e_i_07] actionbar {"text":"目标：在有限的空间内搜索一番 & 寻找可用的联络装置","color":"green"}
-execute unless block 90058 103 142 minecraft:grindstone if block 90084 122 139 air if block 90102 122 125 iron_block unless block 90129 123 120 air run title @a[tag=SEAPT,tag=e_i_07] actionbar {"text":"目标：找到文件室上锁箱子的钥匙","color":"green"}
-execute unless block 90058 103 142 minecraft:grindstone if block 90084 122 139 air if block 90102 122 125 air unless block 90129 123 120 air run title @a[tag=SEAPT] actionbar {"text":"目标：寻找可用的联络装置","color":"green"}
+execute unless block 90058 103 142 minecraft:grindstone if block 90102 122 125 iron_block unless block 90129 123 120 air run title @a[tag=SEAPT,tag=e_i_07] actionbar {"text":"目标：找到文件室上锁箱子的钥匙","color":"green"}
+execute unless block 90058 103 142 minecraft:grindstone if block 90102 122 125 air unless block 90129 123 120 air run title @a[tag=SEAPT] actionbar {"text":"目标：寻找可用的联络装置","color":"green"}
 execute unless block 90058 103 142 minecraft:grindstone if block 90129 123 120 air run title @a[tag=SEAPT] actionbar {"text":"目标：探索维修层 & 寻找通往物资层的上行楼梯","color":"green"}
 execute unless block 90058 103 142 minecraft:grindstone if block 90129 123 120 air as @n[tag=sc,scores={sea_4temp2=4001..5000}] run title @a[tag=SEAPT] actionbar {"text":"目标：击败法莫洛斯","color":"green"}
 execute if block 90058 103 142 minecraft:grindstone if block 90075 103 141 air run title @a[tag=SEAPT,tag=!e_i_13] actionbar {"text":"目标：寻找通往物资层的上行楼梯","color":"green"}
