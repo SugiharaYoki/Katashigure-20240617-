@@ -89,6 +89,10 @@ execute as @a[tag=SEAPT,x=90112,y=128,z=136,distance=0..2.3,tag=!e_i_17,tag=!e_i
 execute as @a[tag=SEAPT,x=90112,y=128,z=136,distance=0..2.3,tag=!e_i_17] at @s run tag @s add e_i_17
 
 
+execute if block 90141 128 134 air if block 90132 130 136 redstone_lamp[lit=true] as @a[tag=SEAPT,x=90105,y=128,z=101,distance=0..2.3,tag=!e_i_24] at @s run tellraw @s {"text": "终于到达北冷冻库了……通过这里之后就能找到上行路线吧。","color": "gray"}
+execute if block 90141 128 134 air if block 90132 130 136 redstone_lamp[lit=true] as @a[tag=SEAPT,x=90105,y=128,z=101,distance=0..2.3,tag=!e_i_24] at @s run tag @s add e_i_24
+
+
 execute at @n[tag=SEArivette,tag=!SEArivetteboss2] as @a[tag=SEAPT,distance=0..3.3,tag=!e_i_19] at @s run tellraw @s {"text": "这家伙……怎么回事？！","color": "red"}
 execute at @n[tag=SEArivette,tag=!SEArivetteboss2] as @a[tag=SEAPT,distance=0..3.3,tag=!e_i_19] at @s run tag @s add e_i_19
 

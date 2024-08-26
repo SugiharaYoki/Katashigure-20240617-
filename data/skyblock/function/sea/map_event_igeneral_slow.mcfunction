@@ -117,6 +117,7 @@ item replace block 90114 123 125 container.14 with trial_key[custom_name='{"text
 item replace block 90142 134 138 container.14 with trial_key[custom_name='{"text":"宿舍楼3楼某处的钥匙","italic":true,"color":"yellow","italic":false}']
 item replace block 90086 143 116 container.13 with flow_banner_pattern[custom_name='{"text":"燃料架B内的便签纸","italic":true,"color":"dark_purple","italic":false}',lore=['{"text":"上面写着歪歪扭扭的字：","color":"white","italic":false}','{"text":"“从右到左仔细观察北水箱西面的蜡烛”","color":"white","italic":false}']]
 item replace block 90095 122 128 container.3 with globe_banner_pattern[custom_name='{"text":"何日的新闻","italic":true,"color":"dark_purple","italic":false}',lore=['{"text":"这座忒尔克西作为2130年往后的唯一一座新建钻井平台，其背负的不仅是开采石油的使命。","color":"white","italic":false}','{"text":"于2128年在大洋洲火圈地带接连发生的火山喷发，将这一批埋藏于地层深处的石油送入了太平洋。","color":"white","italic":false}','{"text":"这些石油在地理位置的分布再一次提醒了现代的人们过去有关“姆大陆”的学术猜想。","color":"white","italic":false}','{"text":"忒尔克西海上钻井平台在开采这批石油的同时，也将探索位于各处石油分布区域汇聚……","color":"white","italic":false}']]
+
 #法莫洛斯：医务部门 总管 - 死亡：被感染成为腐尸，第一章结尾被主角杀死
 #玛瑞莲：机械研发部门 贝塔小组 组长 - 死亡：被艾德雯娜用弩箭杀害
 #菲尔娜：舵长的女儿 - 死亡：被玛瑞莲偷袭而死
@@ -132,12 +133,29 @@ item replace block 90095 122 128 container.3 with globe_banner_pattern[custom_na
 #权之殊能：大天使沙利叶麾下的能天使
 #权之执理：大天使拉贵尔麾下的主天使
 
-execute unless block 90084 122 139 air run title @a[tag=SEAPT,tag=!e_i_04] actionbar {"text":"目标：进入忒尔克西的维修层","color":"green"}
-execute unless block 90084 122 139 air run title @a[tag=SEAPT,tag=e_i_04] actionbar {"text":"目标：想办法打开消毒间的门 & 寻找可用的联络装置","color":"green"}
-execute if block 90084 122 139 air if block 90102 122 125 iron_block run title @a[tag=SEAPT,tag=!e_i_07] actionbar {"text":"目标：在有限的空间内搜索一番 & 寻找可用的联络装置","color":"green"}
-execute if block 90084 122 139 air if block 90102 122 125 iron_block unless block 90129 123 120 air run title @a[tag=SEAPT,tag=e_i_07] actionbar {"text":"目标：找到文件室上锁箱子的钥匙","color":"green"}
-execute if block 90084 122 139 air if block 90102 122 125 air unless block 90129 123 120 air run title @a[tag=SEAPT] actionbar {"text":"目标：寻找可用的联络装置","color":"green"}
-execute if block 90129 123 120 air run title @a[tag=SEAPT] actionbar {"text":"目标：探索维修层 & 寻找通往物资层的上行楼梯","color":"green"}
+#任务目标列表
+execute unless block 90058 103 142 minecraft:grindstone unless block 90084 122 139 air run title @a[tag=SEAPT,tag=!e_i_04] actionbar {"text":"目标：进入忒尔克西的维修层","color":"green"}
+execute unless block 90058 103 142 minecraft:grindstone unless block 90084 122 139 air run title @a[tag=SEAPT,tag=e_i_04] actionbar {"text":"目标：想办法打开消毒间的门 & 寻找可用的联络装置","color":"green"}
+execute unless block 90058 103 142 minecraft:grindstone if block 90084 122 139 air if block 90102 122 125 iron_block run title @a[tag=SEAPT,tag=!e_i_07] actionbar {"text":"目标：在有限的空间内搜索一番 & 寻找可用的联络装置","color":"green"}
+execute unless block 90058 103 142 minecraft:grindstone if block 90084 122 139 air if block 90102 122 125 iron_block unless block 90129 123 120 air run title @a[tag=SEAPT,tag=e_i_07] actionbar {"text":"目标：找到文件室上锁箱子的钥匙","color":"green"}
+execute unless block 90058 103 142 minecraft:grindstone if block 90084 122 139 air if block 90102 122 125 air unless block 90129 123 120 air run title @a[tag=SEAPT] actionbar {"text":"目标：寻找可用的联络装置","color":"green"}
+execute unless block 90058 103 142 minecraft:grindstone if block 90129 123 120 air run title @a[tag=SEAPT] actionbar {"text":"目标：探索维修层 & 寻找通往物资层的上行楼梯","color":"green"}
+execute unless block 90058 103 142 minecraft:grindstone if block 90129 123 120 air as @n[tag=sc,scores={sea_4temp2=4001..5000}] run title @a[tag=SEAPT] actionbar {"text":"目标：击败法莫洛斯","color":"green"}
+execute if block 90058 103 142 minecraft:grindstone if block 90075 103 141 air run title @a[tag=SEAPT,tag=!e_i_13] actionbar {"text":"目标：寻找通往物资层的上行楼梯","color":"green"}
+execute if block 90058 103 142 minecraft:grindstone if block 90075 103 141 air as @n[tag=sc,scores={sea_4temp2=..88}] run title @a[tag=SEAPT,tag=e_i_13] actionbar {"text":"目标：寻找可用的联络装置","color":"green"}
+execute if block 90058 103 142 minecraft:grindstone if block 90075 103 141 air if block 90131 128 129 air unless block 90141 128 134 air if block 90132 130 136 redstone_lamp[lit=false] run title @a[tag=SEAPT,tag=!e_i_17] actionbar {"text":"目标：调高东冷冻库的功率 & 调高南冷冻库的功率","color":"green"}
+execute if block 90058 103 142 minecraft:grindstone if block 90075 103 141 air if block 90131 128 129 air if block 90141 128 134 air if block 90132 130 136 redstone_lamp[lit=false] run title @a[tag=SEAPT,tag=!e_i_17] actionbar {"text":"目标：调高南冷冻库的功率","color":"green"}
+execute if block 90058 103 142 minecraft:grindstone if block 90075 103 141 air if block 90131 128 129 air unless block 90141 128 134 air if block 90132 130 136 redstone_lamp[lit=false] run title @a[tag=SEAPT,tag=e_i_17] actionbar {"text":"目标：调高东冷冻库的功率 & 关闭南冷冻库的空气循环系统","color":"green"}
+execute if block 90058 103 142 minecraft:grindstone if block 90075 103 141 air if block 90131 128 129 air if block 90141 128 134 air if block 90132 130 136 redstone_lamp[lit=false] run title @a[tag=SEAPT,tag=e_i_17] actionbar {"text":"目标：关闭南冷冻库的空气循环系统","color":"green"}
+execute if block 90058 103 142 minecraft:grindstone if block 90075 103 141 air if block 90131 128 129 air unless block 90141 128 134 air if block 90132 130 136 redstone_lamp[lit=false] run title @a[tag=SEAPT,tag=e_i_18] actionbar {"text":"目标：调高东冷冻库的功率 & 调高南冷冻库的功率","color":"green"}
+execute if block 90058 103 142 minecraft:grindstone if block 90075 103 141 air if block 90131 128 129 air if block 90141 128 134 air if block 90132 130 136 redstone_lamp[lit=false] run title @a[tag=SEAPT,tag=e_i_18] actionbar {"text":"目标：调高南冷冻库的功率","color":"green"}
+execute if block 90058 103 142 minecraft:grindstone if block 90075 103 141 air if block 90131 128 129 air unless block 90141 128 134 air if block 90132 130 136 redstone_lamp[lit=true] run title @a[tag=SEAPT] actionbar {"text":"目标：调高东冷冻库的功率","color":"green"}
+execute if block 90058 103 142 minecraft:grindstone if block 90075 103 141 air if block 90131 128 129 air if block 90141 128 134 air if block 90132 130 136 redstone_lamp[lit=true] run title @a[tag=SEAPT,tag=!e_i_24] actionbar {"text":"目标：前往北冷冻库","color":"green"}
+execute if block 90058 103 142 minecraft:grindstone if block 90075 103 141 air if block 90131 128 129 air if entity @n[tag=sc,scores={sea_4temp2=..2000}] run title @a[tag=SEAPT,tag=e_i_24] actionbar {"text":"目标：寻找通往主平台甲板的上行楼梯","color":"green"}
+execute if block 90058 103 142 minecraft:grindstone if block 90075 103 141 air if block 90131 128 129 air if entity @n[tag=sc,scores={sea_4temp2=2001..}] run title @a[tag=SEAPT] actionbar {"text":"目标：调查前方","color":"green"}
+execute if block 90058 103 142 minecraft:grindstone if block 90075 103 141 air if block 90131 128 129 air if entity @n[tag=sc,scores={sea_4temp2=2120..}] run title @a[tag=SEAPT] actionbar {"text":"目标：后撤，寻找方法击败德怀特","color":"green"}
+execute if block 90058 103 142 minecraft:grindstone if block 90075 103 141 air if block 90131 128 129 air if entity @n[tag=sc,scores={sea_4temp2=5001..}] run title @a[tag=SEAPT] actionbar {"text":"目标：寻找通往主平台甲板的上行楼梯","color":"green"}
+execute if block 90075 103 141 cauldron if block 90131 128 129 air if entity @n[tag=sc,scores={sea_4temp2=5001..}] run title @a[tag=SEAPT] actionbar {"text":"目标：寻找通往主平台甲板的上行楼梯","color":"green"}
 
 
 
