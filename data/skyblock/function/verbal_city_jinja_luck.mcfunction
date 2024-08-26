@@ -11,29 +11,29 @@ execute unless entity @e[limit=1,tag=sc,scores={dailydiv=-1..}] run scoreboard o
 execute unless entity @e[limit=1,tag=sc,scores={dailydiv=-1..}] run scoreboard objectives add dailydiv_w dummy
 execute unless entity @e[limit=1,tag=sc,scores={dailydiv=-1..}] run scoreboard objectives add dailydiv_wy dummy
 execute unless entity @e[limit=1,tag=sc,scores={dailydiv=-1..}] run scoreboard players set @n[tag=sc] dailydiv 999
-execute unless entity @e[limit=1,tag=sc,scores={dailydiv1=-1..}] run scoreboard objectives add dailydiv1 dummy
 execute unless entity @e[limit=1,tag=sc,scores={dailydiv1=-1..}] run scoreboard objectives add dailydiv1y dummy
+execute unless entity @e[limit=1,tag=sc,scores={dailydiv1=-1..}] run scoreboard objectives add dailydiv1 dummy
 execute unless entity @e[limit=1,tag=sc,scores={dailydiv1=-1..}] run scoreboard players set @n[tag=sc] dailydiv1 999
-execute unless entity @e[limit=1,tag=sc,scores={dailydiv2=-1..}] run scoreboard objectives add dailydiv2 dummy
 execute unless entity @e[limit=1,tag=sc,scores={dailydiv2=-1..}] run scoreboard objectives add dailydiv2y dummy
+execute unless entity @e[limit=1,tag=sc,scores={dailydiv2=-1..}] run scoreboard objectives add dailydiv2 dummy
 execute unless entity @e[limit=1,tag=sc,scores={dailydiv2=-1..}] run scoreboard players set @n[tag=sc] dailydiv2 999
-execute unless entity @e[limit=1,tag=sc,scores={dailydiv3=-1..}] run scoreboard objectives add dailydiv3 dummy
 execute unless entity @e[limit=1,tag=sc,scores={dailydiv3=-1..}] run scoreboard objectives add dailydiv3y dummy
+execute unless entity @e[limit=1,tag=sc,scores={dailydiv3=-1..}] run scoreboard objectives add dailydiv3 dummy
 execute unless entity @e[limit=1,tag=sc,scores={dailydiv3=-1..}] run scoreboard players set @n[tag=sc] dailydiv3 999
-execute unless entity @e[limit=1,tag=sc,scores={dailydiv4=-1..}] run scoreboard objectives add dailydiv4 dummy
 execute unless entity @e[limit=1,tag=sc,scores={dailydiv4=-1..}] run scoreboard objectives add dailydiv4y dummy
+execute unless entity @e[limit=1,tag=sc,scores={dailydiv4=-1..}] run scoreboard objectives add dailydiv4 dummy
 execute unless entity @e[limit=1,tag=sc,scores={dailydiv4=-1..}] run scoreboard players set @n[tag=sc] dailydiv4 999
-execute unless entity @e[limit=1,tag=sc,scores={dailydiv5=-1..}] run scoreboard objectives add dailydiv5 dummy
 execute unless entity @e[limit=1,tag=sc,scores={dailydiv5=-1..}] run scoreboard objectives add dailydiv5y dummy
+execute unless entity @e[limit=1,tag=sc,scores={dailydiv5=-1..}] run scoreboard objectives add dailydiv5 dummy
 execute unless entity @e[limit=1,tag=sc,scores={dailydiv5=-1..}] run scoreboard players set @n[tag=sc] dailydiv5 999
-execute unless entity @e[limit=1,tag=sc,scores={dailydiv6=-1..}] run scoreboard objectives add dailydiv6 dummy
 execute unless entity @e[limit=1,tag=sc,scores={dailydiv6=-1..}] run scoreboard objectives add dailydiv6y dummy
+execute unless entity @e[limit=1,tag=sc,scores={dailydiv6=-1..}] run scoreboard objectives add dailydiv6 dummy
 execute unless entity @e[limit=1,tag=sc,scores={dailydiv6=-1..}] run scoreboard players set @n[tag=sc] dailydiv6 999
-execute unless entity @e[limit=1,tag=sc,scores={dailydiv7=-1..}] run scoreboard objectives add dailydiv7 dummy
 execute unless entity @e[limit=1,tag=sc,scores={dailydiv7=-1..}] run scoreboard objectives add dailydiv7y dummy
+execute unless entity @e[limit=1,tag=sc,scores={dailydiv7=-1..}] run scoreboard objectives add dailydiv7 dummy
 execute unless entity @e[limit=1,tag=sc,scores={dailydiv7=-1..}] run scoreboard players set @n[tag=sc] dailydiv7 999
-execute unless entity @e[limit=1,tag=sc,scores={dailydiv8=-1..}] run scoreboard objectives add dailydiv8 dummy
 execute unless entity @e[limit=1,tag=sc,scores={dailydiv8=-1..}] run scoreboard objectives add dailydiv8y dummy
+execute unless entity @e[limit=1,tag=sc,scores={dailydiv8=-1..}] run scoreboard objectives add dailydiv8 dummy
 execute unless entity @e[limit=1,tag=sc,scores={dailydiv8=-1..}] run scoreboard players set @n[tag=sc] dailydiv8 999
 execute unless entity @e[limit=1,tag=sc,scores={dailydiv1S=-1..}] run scoreboard objectives add dailydiv1S dummy
 execute unless entity @e[limit=1,tag=sc,scores={dailydiv1S=-1..}] run scoreboard players set @n[tag=sc] dailydiv1S 999
@@ -74,7 +74,7 @@ execute if score @s dailydiv4y matches 13.. run scoreboard players set @s dailyd
 execute if score @s dailydiv5y matches 13.. run scoreboard players set @s dailydiv5y 12
 execute if score @s dailydiv6y matches 13.. run scoreboard players set @s dailydiv6y 12
 execute if score @s dailydiv7y matches 13.. run scoreboard players set @s dailydiv7y 12
-execute if entity @s[scores={dailydiv=-1..}] run scoreboard players set @s dailydiv 0
+execute unless entity @s[scores={dailydiv=-1..}] run scoreboard players set @s dailydiv 0
 execute if score @s dailydiv < @n[tag=sc] dailydiv run scoreboard players operation @s dailydiv1y = @s dailydiv1
 execute if score @s dailydiv < @n[tag=sc] dailydiv run scoreboard players operation @s dailydiv2y = @s dailydiv2
 execute if score @s dailydiv < @n[tag=sc] dailydiv run scoreboard players operation @s dailydiv3y = @s dailydiv3
