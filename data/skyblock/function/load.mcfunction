@@ -1,7 +1,7 @@
-scoreboard players set version skyblock_system 88
+scoreboard players set version skyblock_system 89
 
 scoreboard objectives add skyblock_system dummy
-execute unless score last_version skyblock_system = version skyblock_system run tellraw @a[tag=DebugMode] [{"text":"【fabrik test】Datapack has successfully updated. version: "},{"score":{"name":"version","objective":"skyblock_system"},"color":"green","bold":true}]
+execute unless score last_version skyblock_system = version skyblock_system run tellraw @a[tag=DebugMode] [{"text":"【这次再不对我洗澡去了 妈的】Datapack has successfully updated. version: "},{"score":{"name":"version","objective":"skyblock_system"},"color":"green","bold":true}]
 scoreboard players operation last_version skyblock_system = version skyblock_system
 
 scoreboard objectives add MultiMenu trigger
