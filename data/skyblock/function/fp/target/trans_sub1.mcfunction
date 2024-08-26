@@ -1,1 +1,1 @@
-$execute at @s facing $(end0) $(end1) $(end2) positioned 0. 0. 0. run function skyblock:fp/target/upd_matrix with storage temp:matrix display
+$execute at @s facing $(end0) $(end1) $(end2) positioned 0. 0. 0. as 0-0-0-0-0 run function skyblock:fp/target/upd_matrix with storage temp:matrix display
