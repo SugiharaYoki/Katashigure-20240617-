@@ -105,6 +105,7 @@ setblock 90104 122 131 chest[facing=west]
 fill 90097 123 148 90097 122 148 deepslate_tiles
 setblock 90091 128 121 potted_azalea_bush
 setblock 90136 123 115 potted_cactus
+setblock 90133 123 115 potted_cactus
 setblock 90095 122 128 chest[facing=south]{Lock:"工具维护室钥匙"}
 
 item replace block 90095 122 128 container.7 with apple 2
@@ -134,7 +135,7 @@ kill @e[type=painting,x=90136,y=124,z=115,distance=0..5]
 summon painting 90136 124 115 {facing:2b,variant:"minecraft:meditative"}
 summon painting 90135 123 115 {facing:2b,variant:"minecraft:meditative"}
 summon painting 90134 123 115 {facing:2b,variant:"minecraft:meditative"}
-summon painting 90133 124 115 {facing:1b,variant:"minecraft:meditative"}
+summon painting 90133 124 115 {facing:2b,variant:"minecraft:meditative"}
 
 setblock 90127 122 127 furnace[facing=east]
 setblock 90127 122 128 chest[facing=east]
