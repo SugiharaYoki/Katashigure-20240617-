@@ -15,4 +15,3 @@ data modify storage temp:matrix transformation[6] set from entity 0-0-0-0-0 Pos[
 data modify storage temp:matrix transformation[10] set from entity 0-0-0-0-0 Pos[2]
 
 tp @s 0.0 0.0 0.0
-say hi

@@ -1,2 +1,2 @@
-data merge storage temp:matrix {display:{start:[0.0d, 0.0d, 0.0d]}, end:[0.0d, 1.0d, 1.0d], block_state:{Name:"minecraft:netherite_block"}, width:0.2d, length:0.2d}
+data merge storage temp:matrix {display:{start:[0.0d, 0.0d, 0.0d], end:[0.0d, 1.0d, 1.0d], block_state:{Name:"minecraft:netherite_block"}, width:0.2d, length:0.2d}}
 execute as @e[tag=target] run function skyblock:fp/target/trans
