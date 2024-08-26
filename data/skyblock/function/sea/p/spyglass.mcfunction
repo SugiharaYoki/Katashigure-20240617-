@@ -22,5 +22,5 @@ execute if block 90058 103 142 minecraft:grindstone if block 90075 103 141 air i
 execute if block 90058 103 142 minecraft:grindstone if block 90075 103 141 air if block 90131 128 129 air if entity @n[tag=sc,scores={sea_4temp2=2120..}] run title @s[tag=SEAPT] actionbar {"text":"目标：后撤，寻找方法击败德怀特","color":"dark_green"}
 execute if block 90058 103 142 minecraft:grindstone if block 90075 103 141 air if block 90131 128 129 air if entity @n[tag=sc,scores={sea_4temp2=5001..}] run title @s[tag=SEAPT] actionbar {"text":"目标：寻找通往主平台甲板的上行楼梯","color":"dark_green"}
 execute if block 90075 103 141 cauldron run title @s[tag=SEAPT,tag=!e_i_30] actionbar {"text":"目标：寻找通往主平台甲板的上行楼梯","color":"green"}
-execute if block 90075 103 141 cauldron as @n[tag=sc,scores={sea_4temp2=..88}] run title @s[tag=SEAPT,tag=e_i_30] actionbar {"text":"目标：寻找可用的联络装置 & 前往办公区域","color":"green"}
+execute if block 90075 103 141 cauldron unless entity @n[tag=sc,scores={sea_4temp2=88..}] run title @s[tag=SEAPT,tag=e_i_30] actionbar {"text":"目标：寻找可用的联络装置 & 前往办公区域","color":"green"}
 execute if block 90075 103 141 cauldron as @n[tag=sc,scores={sea_4temp2=366..}] run title @s[tag=SEAPT,tag=e_i_30] actionbar {"text":"目标：前往宿舍楼","color":"green"}
