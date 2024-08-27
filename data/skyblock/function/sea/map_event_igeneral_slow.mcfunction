@@ -318,6 +318,8 @@ clear @a[tag=SEAPT] waxed_copper_grate
 clear @a[tag=SEAPT] waxed_oxidized_copper_grate
 clear @a[tag=SEAPT] lantern
 clear @a[tag=SEAPT] polished_diorite
+clear @a[tag=SEAPT] polished_tuff_wall
+clear @a[tag=SEAPT] decorated_pot
 
 
 
