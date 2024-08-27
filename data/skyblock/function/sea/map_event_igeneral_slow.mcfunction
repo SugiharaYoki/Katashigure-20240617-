@@ -182,6 +182,9 @@ lore=['{"text":"我在针对甲板上出现的一种新型怪物做研究。","c
 item replace block 90141 137 117 container.12 with flow_banner_pattern[custom_name=\
 '{"text":"主平台甲板通讯室储藏间的笔记B - 麦迪逊","italic":true,"color":"dark_purple","italic":false}',\
 lore=['{"text":"终于成功了，我将那块带着圣水晶力量的石板","color":"white","italic":false}','{"text":"改造成了类似铜板的魔力储存模块。","color":"white","italic":false}','{"text":"根据我的观察，它会将箭矢逐渐转化为一种金色的矢状物。","color":"white","italic":false}','{"text":"我在那些怪物身上做了实验，","color":"white","italic":false}','{"text":"金色的箭矢能让它们在几秒内近乎无法动弹。","color":"white","italic":false}','{"text":"可是那些被藤蔓掏空的怪物在被我射中后陷入了诡异的状态。","color":"white","italic":false}','{"text":"我无法对它们进一步实验，它们直接在我眼前消失了。","color":"white","italic":false}']]
+item replace block 90099 130 148 container.14 with flow_banner_pattern[custom_name=\
+'{"text":"物资层休息室的笔记 - 麦迪逊","italic":true,"color":"dark_purple","italic":false}',\
+lore=['{"text":"那块魔法石板被我藏在了物资层西面的日常物资大仓库内。","color":"white","italic":false}','{"text":"要想对付北冷冻库那堆怪物，没有静滞光棱的力量等同于送死。","color":"white","italic":false}','{"text":"但是我要它已无用。我会从通风管道逃向水下研究设施。","color":"white","italic":false}']]
 
 item replace block 90125 128 124 container.2 with flow_banner_pattern[custom_name=\
 '{"text":"工程处后厨的笔记 - 瑞佛特","italic":true,"color":"dark_purple","italic":false}',\
