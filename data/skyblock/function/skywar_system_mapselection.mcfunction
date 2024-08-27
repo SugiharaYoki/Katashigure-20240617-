@@ -72,4 +72,5 @@ execute if entity @n[tag=sc,scores={Map_Type=1}] run summon minecraft:armor_stan
 #execute if entity @n[tag=sc,scores={Map_Type=4}] run summon minecraft:armor_stand -121 60.7 -108 {CustomName:"{\"text\":\"开启\",\"color\":\"aqua\"}",DisabledSlots:65793,CustomNameVisible:1b,Invisible:1b,Marker:1b,NoGravity:1b}
 #execute if entity @n[tag=sc,scores={Map_Type=4}] run summon minecraft:armor_stand -121 60.35 -108 {CustomName:"{\"text\":\"匿名之都 棋盘战争\",\"color\":\"red\"}",DisabledSlots:65793,CustomNameVisible:1b,Invisible:1b,Marker:1b,NoGravity:1b}
 
-function skyblock:skywar_city_pause2
+
+execute if entity @n[tag=sc,scores={SSgspT=1..}] run function skyblock:skywar_city_pause

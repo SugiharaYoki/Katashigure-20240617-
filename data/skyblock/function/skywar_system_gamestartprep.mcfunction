@@ -52,29 +52,29 @@ execute if entity @n[tag=sc,scores={SSgspT=2,Map_Theme=4}] run forceload add 503
 execute if entity @n[tag=sc,scores={SSgspT=2,Map_Theme=4}] run forceload add 50600 50390 50800 50600
 execute if entity @n[tag=sc,scores={SSgspT=2,Map_Theme=4}] run forceload add 50600 50600 50800 50800
 execute if entity @n[tag=sc,scores={SSgspT=2}] as @e[tag=!NoSkyWar,tag=!Gaming] run kill @e[type=wolf,distance=0..10,tag=!Wolfer]
-execute if entity @e[tag=!MapLoaAlr,tag=sc,limit=1,scores={SSgspT=2,Map_Code=14}] run forceload add -9838 -10164 -9709 -10035
-execute if entity @e[tag=!MapLoaAlr,tag=sc,limit=1,scores={SSgspT=2,Map_Code=2}] run function skyblock:preload_map_pvp_map002_part1
-execute if entity @e[tag=!MapLoaAlr,tag=sc,limit=1,scores={SSgspT=2,Map_Code=3}] run function skyblock:preload_map_pvp_map003_part1
-execute if entity @e[tag=!MapLoaAlr,tag=sc,limit=1,scores={SSgspT=2,Map_Code=4}] run function skyblock:preload_map_pvp_map004_part1_hard
-execute if entity @e[tag=!MapLoaAlr,tag=sc,limit=1,scores={SSgspT=2,Map_Code=5}] run function skyblock:preload_map_pvp_map005_part1
-execute if entity @e[tag=!MapLoaAlr,tag=sc,limit=1,scores={SSgspT=2,Map_Code=7}] run function skyblock:preload_map_pvp_map007_part1
-execute if entity @e[tag=!MapLoaAlr,tag=sc,limit=1,scores={SSgspT=2,Map_Code=8}] run function skyblock:preload_map_pvp_map008_part1
-execute if entity @e[tag=!MapLoaAlr,tag=sc,limit=1,scores={SSgspT=2,Map_Code=10}] run function skyblock:preload_map_pvp_map010_part1_hard
-execute if entity @e[tag=!MapLoaAlr,tag=sc,limit=1,scores={SSgspT=2,Map_Code=13}] run function skyblock:preload_map_pvp_map013_part1
-execute if entity @e[tag=!MapLoaAlr,tag=sc,limit=1,scores={SSgspT=2,Map_Code=14}] unless block -156 59 -114 diamond_block run function skyblock:preload_map_pvp_map014_part1_hard
-execute if entity @e[tag=!MapLoaAlr,tag=sc,limit=1,scores={SSgspT=2,Map_Code=14}] if block -156 59 -114 diamond_block run function skyblock:preload_map_pvp_map014alt_part1_hard
-execute if entity @e[tag=!MapLoaAlr,tag=sc,limit=1,scores={SSgspT=2,Map_Code=15}] run function skyblock:preload_map_pvp_map015_part1_hard
-execute if entity @e[tag=!MapLoaAlr,tag=sc,limit=1,scores={SSgspT=2,Map_Code=16}] run function skyblock:preload_map_pvp_map016_part1_hard
-execute if entity @e[tag=!MapLoaAlr,tag=sc,limit=1,scores={SSgspT=2,Map_Code=17}] run function skyblock:preload_map_pvp_map017_part1_hard
+execute if entity @n[tag=!MapLoaAlr,tag=sc,scores={SSgspT=2,Map_Code=14}] run forceload add -9838 -10164 -9709 -10035
+execute if entity @n[tag=!MapLoaAlr,tag=sc,scores={SSgspT=2,Map_Code=2}] run function skyblock:preload_map_pvp_map002_part1
+execute if entity @n[tag=!MapLoaAlr,tag=sc,scores={SSgspT=2,Map_Code=3}] run function skyblock:preload_map_pvp_map003_part1
+execute if entity @n[tag=!MapLoaAlr,tag=sc,scores={SSgspT=2,Map_Code=4}] run function skyblock:preload_map_pvp_map004_part1_hard
+execute if entity @n[tag=!MapLoaAlr,tag=sc,scores={SSgspT=2,Map_Code=5}] run function skyblock:preload_map_pvp_map005_part1
+execute if entity @n[tag=!MapLoaAlr,tag=sc,scores={SSgspT=2,Map_Code=7}] run function skyblock:preload_map_pvp_map007_part1
+execute if entity @n[tag=!MapLoaAlr,tag=sc,scores={SSgspT=2,Map_Code=8}] run function skyblock:preload_map_pvp_map008_part1
+execute if entity @n[tag=!MapLoaAlr,tag=sc,scores={SSgspT=2,Map_Code=10}] run function skyblock:preload_map_pvp_map010_part1_hard
+execute if entity @n[tag=!MapLoaAlr,tag=sc,scores={SSgspT=2,Map_Code=13}] run function skyblock:preload_map_pvp_map013_part1
+execute if entity @n[tag=!MapLoaAlr,tag=sc,scores={SSgspT=2,Map_Code=14}] unless block -156 59 -114 diamond_block run function skyblock:preload_map_pvp_map014_part1_hard
+execute if entity @n[tag=!MapLoaAlr,tag=sc,scores={SSgspT=2,Map_Code=14}] if block -156 59 -114 diamond_block run function skyblock:preload_map_pvp_map014alt_part1_hard
+execute if entity @n[tag=!MapLoaAlr,tag=sc,scores={SSgspT=2,Map_Code=15}] run function skyblock:preload_map_pvp_map015_part1_hard
+execute if entity @n[tag=!MapLoaAlr,tag=sc,scores={SSgspT=2,Map_Code=16}] run function skyblock:preload_map_pvp_map016_part1_hard
+execute if entity @n[tag=!MapLoaAlr,tag=sc,scores={SSgspT=2,Map_Code=17}] run function skyblock:preload_map_pvp_map017_part1_hard
 #[futuredevskywar]
-execute if entity @e[tag=!MapLoaAlr,tag=sc,limit=1,scores={SSgspT=3,Map_Code=14}] run forceload remove -9838 -10164 -9709 -10035
-execute if entity @e[tag=!MapLoaAlr,tag=sc,limit=1,scores={SSgspT=3}] run tag @n[tag=sc] add MapLoaAlr
+execute if entity @n[tag=!MapLoaAlr,tag=sc,scores={SSgspT=3,Map_Code=14}] run forceload remove -9838 -10164 -9709 -10035
+execute if entity @n[tag=!MapLoaAlr,tag=sc,scores={SSgspT=3}] run tag @n[tag=sc] add MapLoaAlr
 execute if entity @n[tag=sc,scores={SSgspT=2}] run kill @e[x=50000,y=50,z=50000,distance=..1500,type=!player]
 #《禁止提前预加载》
 #-#-#setblock 12 88 86 air
 #《禁止再次开局》
 #《计入历史启动》
-execute if score @n[tag=sc] SSgspT matches 1 run execute unless entity @e[limit=1,tag=sc,scores={HistoryPVP=-1..}] run scoreboard objectives add HistoryPVP dummy
+execute if score @n[tag=sc] SSgspT matches 1 run execute unless entity @n[tag=sc,scores={HistoryPVP=-1..}] run scoreboard objectives add HistoryPVP dummy
 execute if score @n[tag=sc] SSgspT matches 1 run scoreboard players add @n[tag=sc] HistoryPVP 1
 #无意义变量 scoreboard players set @s Random1 0
 #《变量初始化》
