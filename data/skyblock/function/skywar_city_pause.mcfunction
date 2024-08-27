@@ -57,3 +57,8 @@ scoreboard objectives remove TempIf_Job6D
 scoreboard objectives remove TempIf_Job6E
 scoreboard objectives remove TempIf_Job3
 setblock -27 143 -58 air
+
+function skyblock:preload_map_pvp_common_partdeletemap_1
+function skyblock:preload_map_pvp_common_partdeletemap_2
+function skyblock:preload_map_pvp_common_partdeletemap_3
+function skyblock:preload_map_pvp_common_partdeletemap_4
