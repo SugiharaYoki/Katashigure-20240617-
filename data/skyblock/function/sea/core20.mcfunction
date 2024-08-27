@@ -13,6 +13,7 @@ scoreboard players reset @a[tag=SEAPT,scores={sea_do_attack=1..}] sea_do_attack
 
 
 execute as @a[tag=SEAPT,tag=sea_t_sprint1,scores={sea_runs=..0}] at @s run tag @s remove sea_run_stops
+execute as @a[tag=SEAPT,tag=sea_t_sprint1] unless entity @s[scores={sea_runs=-9999..}] run scoreboard players set @s sea_runs 0
 execute as @a[tag=SEAPT,tag=sea_t_sprint1,scores={sea_is_running=0,sea_runs=10..}] at @s run scoreboard players set @s sea_runs 0
 execute as @a[tag=SEAPT,tag=sea_t_sprint1,scores={sea_runs=..0}] at @s run effect give @s luck
 execute as @a[tag=SEAPT,tag=sea_t_sprint1,scores={sea_runs=1..}] at @s run effect clear @s luck

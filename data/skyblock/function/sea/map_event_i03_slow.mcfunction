@@ -125,7 +125,7 @@ execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer4,scores={sea_4temp1
 execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer4,scores={sea_4temp1=11}] positioned 90135 137 138 run function skyblock:sea/m/drowned_small
 execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer4,scores={sea_4temp1=11}] positioned 90135 137 138 if entity @n[tag=sc,scores={sea_player=3..}] run function skyblock:sea/m/drowned_small
 
-execute positioned 90151 137 144 if entity @a[distance=..2.5] unless entity @n[tag=SEAch3_spawn_timer5,distance=0..3] run summon marker ~ ~ ~ {Tags:["SEAch3_spawn_timer","SEAch3_spawn_timer5"]}
+execute positioned 90141 137 154 if entity @a[distance=..2.5] unless entity @n[tag=SEAch3_spawn_timer5,distance=0..3] run summon marker ~ ~ ~ {Tags:["SEAch3_spawn_timer","SEAch3_spawn_timer5"]}
 execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer5,scores={sea_4temp1=1..10}] positioned 90151 137 153 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
 execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer5,scores={sea_4temp1=1..10}] positioned 90151 137 153 run particle sculk_soul ~ ~1 ~ 0.3 0.5 0.3 0.05 10
 execute if entity @a[tag=SEAPT] as @n[tag=SEAch3_spawn_timer5,scores={sea_4temp1=11}] positioned 90151 137 153 run function skyblock:sea/m/husk
