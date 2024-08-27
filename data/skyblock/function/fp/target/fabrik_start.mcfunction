@@ -1,8 +1,8 @@
-scoreboard players set fabrik_count festering_fabrik 0
-scoreboard players set fabrik_delta festering_fabrik -1
-$execute store result score fabrik_id festering_fabrik run data get storage leg_data list[{leg_id:$(leg_id)}].value
+#此函数必须指定festering_fabrik下的leg_id和id，分别代表腿的id和起始(最大)关节id，详见fabrik_start_macro
 
-execute store result storage temp:fabrik count int 1.0 run scoreboard players get fabrik_id festering_fabrik
-$data modify storage temp:fabrik leg_id set value $(leg_id)
+scoreboard players set count festering_fabrik 0
+scoreboard players set delta festering_fabrik -1
+#此处id是指定的起始搜寻位置，length则是最大长度，与起始搜寻位置相等
+execute store result score length festering_fabrik run scoreboard players get id festering_fabrik
 
-function skyblock:fp/target/fabrik_loop with storage temp:fabrik
+function skyblock:fp/target/fabrik_loop

@@ -1,1 +1,1 @@
-$tellraw @a[tag=DebugMode] "backward-$(fabrik_id)"
+tellraw @a[tag=DebugMode] [{"score":{"name": "id","objective": "festering_fabrik"}},"-state:backward"]
