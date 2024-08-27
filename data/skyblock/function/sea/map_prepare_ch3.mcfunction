@@ -66,12 +66,14 @@ setblock 90107 138 105 air
 setblock 90085 137 132 air
 setblock 90080 137 134 air
 fill 90135 137 147 90135 138 147 air
+setblock 90127 143 147 air
 setblock 90084 137 126 decorated_pot{sherds:["burn_pottery_sherd","burn_pottery_sherd","burn_pottery_sherd","burn_pottery_sherd"],item:{count: 1, id:"minecraft:blaze_powder"}}
 setblock 90103 137 109 decorated_pot{sherds:["burn_pottery_sherd","burn_pottery_sherd","burn_pottery_sherd","burn_pottery_sherd"],item:{count: 1, id:"minecraft:blaze_powder"}}
 setblock 90107 138 105 decorated_pot{sherds:["burn_pottery_sherd","burn_pottery_sherd","burn_pottery_sherd","burn_pottery_sherd"],item:{count: 1, id:"minecraft:blaze_powder"}}
 setblock 90085 137 132 decorated_pot{sherds:["burn_pottery_sherd","burn_pottery_sherd","burn_pottery_sherd","burn_pottery_sherd"],item:{count: 1, id:"minecraft:blaze_powder"}}
 setblock 90080 137 134 decorated_pot{sherds:["burn_pottery_sherd","burn_pottery_sherd","burn_pottery_sherd","burn_pottery_sherd"],item:{count: 1, id:"minecraft:blaze_powder"}}
 fill 90135 137 147 90135 138 147 decorated_pot{sherds:["burn_pottery_sherd","burn_pottery_sherd","burn_pottery_sherd","burn_pottery_sherd"],item:{count: 1, id:"minecraft:blaze_powder"}}
+setblock 90127 143 147 decorated_pot{sherds:["burn_pottery_sherd","burn_pottery_sherd","burn_pottery_sherd","burn_pottery_sherd"],item:{count: 1, id:"minecraft:blaze_powder"}}
 
 
 setblock 90091 137 122 minecraft:green_shulker_box
@@ -91,6 +93,7 @@ setblock 90066 138 153 air
 setblock 90066 138 153 lever[facing=south]
 
 summon minecraft:interaction 90128 138.3 97 {CustomName:'[{"text":"多功能工作站"}]',Tags:["SEAcrafter"]}
+summon minecraft:interaction 90130 144.3 141 {CustomName:'[{"text":"多功能工作站"}]',Tags:["SEAcrafter"]}
 summon minecraft:interaction 90082 144.3 117 {CustomName:'[{"text":"器械式治疗仪"}]',Tags:["SEAaidbox"]}
 summon minecraft:interaction 90118 138.3 143 {CustomName:'[{"text":"器械式治疗仪"}]',Tags:["SEAaidbox"]}
 
@@ -216,6 +219,20 @@ item replace block 90102 137 130 container.14 with coal 1
 
 
 fill 90128 140 137 90126 137 137 iron_block
+setblock 90118 137 151 minecraft:potted_jungle_sapling
+setblock 90120 144 136 minecraft:potted_azure_bluet
+setblock 90132 144 145 minecraft:potted_cherry_sapling
+fill 90124 143 143 90125 143 143 minecraft:redstone_block
+fill 90124 143 143 90125 143 143 air
+fill 90130 143 146 90124 143 146 minecraft:redstone_block
+fill 90130 143 146 90124 143 146 air
 
+setblock 90124 143 153 chest[facing=north]
+item replace block 90124 143 153 container.12 with cooked_beef 2
+item replace block 90124 143 153 container.14 with gunpowder 1
+setblock 90126 143 138 chest[facing=south]
+item replace block 90126 143 138 container.12 with emerald 3
+fill 90117 143 134 90119 143 134 minecraft:iron_trapdoor[facing=north,open=true]
 
-
+setblock 90116 144 143 air
+setblock 90116 144 143 lever[powered=false,facing=east]

@@ -351,7 +351,6 @@ item replace block 90070 128 124 container.14 with arrow 3
 setblock 90099 130 148 chest[facing=west]
 item replace block 90099 130 148 container.12 with arrow 3
 
-
 #ch4
 setblock 90095 130 73 minecraft:potted_allium
 
