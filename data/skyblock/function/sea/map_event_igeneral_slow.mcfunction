@@ -131,6 +131,7 @@ item replace block 90095 122 128 container.3 with globe_banner_pattern[custom_na
 #德怀特：餐饮部门 厨师 - 死亡：被瑞弗特杀死食用，遗体被遗弃在冷冻库，后被藤蔓侵蚀骸骨化，第二章结尾被主角杀死
 #潘：餐饮部门 厨师 - 死亡：被瑞弗特杀死食用，遗体位置不明
 #斯顿：钻井作业小组A 成员 - 死亡：在宿舍楼失守后与其他人员一同遇难
+#马绍尔：钻井作业小组A 成员 - 死亡：在宿舍楼失守后与其他人员一同遇难
 #权之殊能：大天使沙利叶麾下的能天使
 #权之执理：大天使拉贵尔麾下的主天使
 
@@ -205,6 +206,9 @@ lore=['{"text":"那些棕藤长得到处都是，有些还顺着通风系统爬�
 item replace block 90117 137 142 container.16 with flow_banner_pattern[custom_name=\
 '{"text":"宿舍楼图书馆的笔记 - 斯顿","italic":true,"color":"dark_purple","italic":false}',\
 lore=['{"text":"邪教徒已经占领了通讯中心。","color":"white","italic":false}','{"text":"但这并不是世界末日，我们也守住了宿舍楼的所有入口。","color":"white","italic":false}','{"text":"关键点是在大门的防守被冲破前找到其他的逃生路线。","color":"white","italic":false}','{"text":"他们捣毁了全部的救生艇，但若是想办法抵达维修层的话……","color":"white","italic":false}','{"text":"现在的希望在维修部门那群人身上，他们要带领大家从维修路线逃跑。","color":"white","italic":false}']]
+item replace block 90126 143 138 container.14 with flow_banner_pattern[custom_name=\
+'{"text":"宿舍楼二楼的笔记 - 马绍尔","italic":true,"color":"dark_purple","italic":false}',\
+lore=['{"text":"以前他们都说我是阴谋论，那现在又怎么讲？","color":"white","italic":false}','{"text":"我早就说了，谁没事会在钻井平台上建钢处理车间。","color":"white","italic":false}','{"text":"还有仓库楼，存比石油还多的乱七八糟的东西？","color":"white","italic":false}','{"text":"咱们平台水下那个设施到底是研究什么的？","color":"white","italic":false}','{"text":"细菌是不是从那里头出来的，不然还能是哪？","color":"white","italic":false}']]
 
 execute as @e[type=interaction,tag=SEAcrafter] on target run scoreboard players enable @s sea_crafter
 execute as @e[type=interaction,tag=SEAcrafter] on target run tellraw @a[tag=SEAPT] [{"selector":"@s","color":"blue"},{"text":" 正在使用多功能工作站","color":"gray"}]
@@ -255,7 +259,7 @@ execute if entity @a[tag=SEAPT,tag=!seaPerm000] run clone 90121 122 108 90121 12
 execute unless entity @a[tag=SEAPT,tag=!seaPerm000] run clone 90121 122 109 90121 122 109 90118 123 106
 
 
-
+#炽热球体
 execute as @e[tag=SEAmagma1,type=marker] at @s if entity @a[tag=SEAPT,distance=0..2.5] run function skyblock:sea/p/magma
 
 
