@@ -9,7 +9,7 @@ data modify storage temp:matrix display.end0 set from storage temp:matrix displa
 data modify storage temp:matrix display.end1 set from storage temp:matrix display.end[1]
 data modify storage temp:matrix display.end2 set from storage temp:matrix display.end[2]
 #获得矩阵
-function skyblock:fp/target/trans_sub1 with storage temp:matrix display
+function skyblock:fp/target/connect_sub with storage temp:matrix display
 #变换
 data modify entity @s Pos set from storage temp:matrix display.start
 data modify entity @s block_state set from storage temp:matrix block_state
