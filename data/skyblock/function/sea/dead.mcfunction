@@ -42,6 +42,26 @@ tag @s remove e_w_05
 tag @s remove e_w_06
 tag @s remove e_w_07
 tag @s remove e_w_08
+tag @s remove sea_teleport01
+tag @s remove sea_teleport02
+tag @s remove sea_teleport03
+tag @s remove sea_teleport04
+tag @s remove sea_teleport05
+tag @s remove sea_teleport06
+tag @s remove sea_teleport07
+tag @s remove sea_teleport08
+tag @s remove sea_teleport09
+tag @s remove sea_teleport10
+tag @s remove sea_teleport11
+tag @s remove sea_teleport12
+tag @s remove sea_teleport13
+tag @s remove sea_teleport14
+tag @s remove sea_teleport15
+tag @s remove sea_teleport16
+tag @s remove sea_teleport17
+tag @s remove sea_teleport18
+tag @s remove sea_teleport19
+tag @s remove sea_teleport20
 scoreboard players reset @s sea_dead
 scoreboard players reset @s sea_dead_check
 team leave @s

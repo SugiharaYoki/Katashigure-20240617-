@@ -126,9 +126,12 @@ fill 90129 124 120 90129 122 119 iron_bars
 setblock 90127 125 122 minecraft:iron_trapdoor[half=bottom,open=false]
 tag @n[tag=sc] add SeGa_sea_ch1
 fill 90110 122 134 90109 124 134 air
-summon minecraft:interaction 90094 123.3 135 {CustomName:'[{"text":"多功能工作站"}]',Tags:["SEAcrafter"]}
-summon minecraft:interaction 90142 123.3 136 {CustomName:'[{"text":"多功能工作站"}]',Tags:["SEAcrafter"]}
-summon minecraft:interaction 90099 123.3 117 {CustomName:'[{"text":"多功能工作站"}]',Tags:["SEAcrafter"]}
+summon minecraft:interaction 90094 123.3 135 {CustomName:'[{"text":"多功能工作站"}]',Tags:["SEAcrafter","SEAcrafter1"]}
+summon minecraft:marker 90094 122 136 {Tags:["SEAcrafter_tp","SEAcrafter_tp1"]}
+summon minecraft:interaction 90142 123.3 136 {CustomName:'[{"text":"多功能工作站"}]',Tags:["SEAcrafter","SEAcrafter2"]}
+summon minecraft:marker 90141 122 136 {Tags:["SEAcrafter_tp","SEAcrafter_tp2"]}
+summon minecraft:interaction 90099 123.3 117 {CustomName:'[{"text":"多功能工作站"}]',Tags:["SEAcrafter","SEAcrafter3"]}
+summon minecraft:marker 90099 122 116 {Tags:["SEAcrafter_tp","SEAcrafter_tp3"]}
 setblock 90131 123 111 minecraft:crimson_button[facing=south]
 fill 90111 122 143 90108 122 143 lever[facing=north,powered=false]
 kill @e[type=painting,x=90136,y=124,z=115,distance=0..5]

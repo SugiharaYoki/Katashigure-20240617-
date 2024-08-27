@@ -37,6 +37,7 @@ scoreboard players set @n[tag=sc] sea_4temp9 0
 scoreboard players set @n[tag=sc] sea_4temp10 0
 scoreboard players set @n[tag=sc] sea_4temp_environment 0
 kill @e[tag=SEAcrafter,type=interaction]
+kill @e[tag=SEAcrafter_tp,type=marker]
 kill @e[tag=SEAaidbox,type=interaction]
 
 tag @s remove SeGa_sea_ch1
