@@ -39,6 +39,7 @@ setblock 90148 137 153 air
 setblock 90154 137 135 air
 setblock 90151 128 122 air
 setblock 90081 110 132 air
+setblock 90126 149 144 air
 setblock 90084 143 123 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 1, id:"minecraft:beef"}}
 setblock 90083 143 123 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:flint"}}
 setblock 90121 137 105 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:flint"}}
@@ -59,6 +60,8 @@ setblock 90148 137 153 decorated_pot{sherds:["prize_pottery_sherd","prize_potter
 setblock 90154 137 135 decorated_pot{sherds:["friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd"],item:{count: 3, id:"minecraft:emerald"}}
 setblock 90151 128 122 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:flint"}}
 setblock 90081 110 132 decorated_pot{sherds:["friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd"],item:{count: 8, id:"minecraft:emerald"}}
+setblock 90126 149 144 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 2, id:"minecraft:beef"}}
+
 #炸药桶
 setblock 90084 137 126 air
 setblock 90103 137 109 air
@@ -201,6 +204,7 @@ item replace block 90122 138 148 container.15 with beef 1
 
 
 summon minecraft:item_frame 90124 138 151 {Invisible:1b,Fixed:0b,Invulnerable:0b,Facing:1b,Item:{id:"minecraft:pumpkin_pie"}}
+summon minecraft:item_frame 90121 150 148 {Invisible:1b,Fixed:0b,Invulnerable:0b,Facing:1b,Item:{id:"minecraft:pumpkin_pie"}}
 
 fill 90137 139 141 90137 139 143 air
 fill 90137 138 140 90137 138 144 air
@@ -238,3 +242,19 @@ fill 90117 143 134 90119 143 134 minecraft:iron_trapdoor[facing=north,open=true]
 
 setblock 90116 144 143 air
 setblock 90116 144 143 lever[powered=false,facing=east]
+setblock 90119 150 138 minecraft:potted_azure_bluet
+
+setblock 90124 149 145 redstone_block
+setblock 90128 149 145 redstone_block
+setblock 90125 149 147 redstone_block
+setblock 90124 149 145 air
+setblock 90128 149 145 air
+setblock 90125 149 147 air
+setblock 90128 150 140 minecraft:potted_blue_orchid
+
+setblock 90122 149 139 chest[facing=west]
+item replace block 90122 149 139 container.12 with fire_charge[custom_name='{"text":"定时炸弹","italic":true,"color":"blue","italic":false}',lore=['{"text":"它会在你丢出去3秒后爆炸！","color":"white","italic":false}','{"text":"炸到自己的话，职业生涯就会结束了吧。","color":"white","italic":false}','{"text":"可用于破坏凝胶壁障与瓦罐。","color":"white","italic":false}']] 1
+item replace block 90122 149 139 container.14 with fire_charge[custom_name='{"text":"定时炸弹","italic":true,"color":"blue","italic":false}',lore=['{"text":"它会在你丢出去3秒后爆炸！","color":"white","italic":false}','{"text":"炸到自己的话，职业生涯就会结束了吧。","color":"white","italic":false}','{"text":"可用于破坏凝胶壁障与瓦罐。","color":"white","italic":false}']] 1
+
+
+

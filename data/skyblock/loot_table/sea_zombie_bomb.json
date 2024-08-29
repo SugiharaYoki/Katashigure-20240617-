@@ -1,0 +1,90 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 2,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:air",
+          "weight": 28
+        },
+	      {
+          "type": "minecraft:item",
+          "name": "minecraft:raiser_armor_trim_smithing_template",
+          "weight": 4,
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "牧羊人石板",
+                "color": "light_purple",
+                "italic": false
+              }
+            }
+          ]
+        },
+	      {
+          "type": "minecraft:item",
+          "name": "minecraft:wild_armor_trim_smithing_template",
+          "weight": 4,
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "狂荒石板",
+                "color": "light_purple",
+                "italic": false
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 2,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:air",
+          "weight": 30
+        },
+	      {
+          "type": "minecraft:item",
+          "name": "minecraft:gunpowder",
+          "weight": 20
+        },
+	      {
+          "type": "minecraft:item",
+          "name": "minecraft:flint",
+          "weight": 20
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:air",
+          "weight": 995
+        },
+	      {
+          "type": "minecraft:item",
+          "name": "minecraft:glistering_melon_slice",
+          "weight": 5
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+	      {
+          "type": "minecraft:item",
+          "name": "minecraft:blaze_powder",
+          "weight": 5
+        }
+      ]
+    }
+  ]
+}
