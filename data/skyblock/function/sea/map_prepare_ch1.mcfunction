@@ -193,11 +193,11 @@ item replace block 90139 123 124 container.14 with potion 1
 item replace block 90139 123 124 container.16 with glass_bottle 1
 setblock 90137 122 129 redstone_block
 setblock 90137 122 129 air
-fill 90143 123 130 90143 122 130 minecraft:deepslate_tiles
+fill 90146 122 133 90145 124 133 minecraft:deepslate_tiles
 setblock 90141 122 139 minecraft:air
-setblock 90142 122 143 chest[facing=east]
-item replace block 90142 122 143 container.12 with wild_armor_trim_smithing_template[custom_name='{"text":"狂荒石板","color":"light_purple","italic":false}']
-item replace block 90142 122 143 container.14 with wayfinder_armor_trim_smithing_template[custom_name='{"text":"醒殉徒石板","color":"light_purple","italic":false}']
+setblock 90148 122 144 chest[facing=north]
+item replace block 90148 122 144 container.12 with wild_armor_trim_smithing_template[custom_name='{"text":"狂荒石板","color":"light_purple","italic":false}']
+item replace block 90148 122 144 container.14 with wayfinder_armor_trim_smithing_template[custom_name='{"text":"醒殉徒石板","color":"light_purple","italic":false}']
 setblock 90107 123 117 air
 setblock 90107 123 117 lever[powered=false,facing=west]
 

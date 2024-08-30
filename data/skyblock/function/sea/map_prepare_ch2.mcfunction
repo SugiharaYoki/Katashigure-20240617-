@@ -55,7 +55,7 @@ summon minecraft:interaction 90083 102.3 139 {CustomName:'[{"text":"多功能工
 summon minecraft:marker 90083 101 140 {Tags:["SEAcrafter_tp","SEAcrafter_tp5"]}
 summon minecraft:interaction 90147 130.3 124 {CustomName:'[{"text":"多功能工作站"}]',Tags:["SEAcrafter","SEAcrafter6"]}
 summon minecraft:marker 90147 129 123 {Tags:["SEAcrafter_tp","SEAcrafter_tp6"]}
-summon minecraft:interaction 90112 129.3 144 {CustomName:'[{"text":"器械式治疗仪"}]',Tags:["SEAaidbox"]}
+summon minecraft:interaction 90113 129.3 144 {CustomName:'[{"text":"器械式治疗仪"}]',Tags:["SEAaidbox"]}
 
 
 fill 90070 130 144 90070 130 141 minecraft:waxed_oxidized_copper_bulb[lit=false]
@@ -64,13 +64,15 @@ summon minecraft:item_frame 90118 129 122 {Invisible:1b,Fixed:0b,Invulnerable:0b
 summon minecraft:item_frame 90106 129 123 {Invisible:1b,Fixed:0b,Invulnerable:0b,Facing:1b,Item:{id:"minecraft:flint"}}
 summon minecraft:item_frame 90099 129 137 {Invisible:1b,Fixed:0b,Invulnerable:0b,Facing:1b,Item:{id:"minecraft:pumpkin_pie"}}
 summon minecraft:item_frame 90098 129 140 {Invisible:1b,Fixed:0b,Invulnerable:0b,Facing:1b,Item:{id:"minecraft:pumpkin_pie"}}
+summon minecraft:item_frame 90106 130 125 {Invisible:1b,Fixed:0b,Invulnerable:0b,Facing:1b,Item:{id:"minecraft:carrot"}}
+
 
 fill 90125 128 121 90125 128 122 smoker[facing=west]
 
-setblock 90125 128 124 chest[facing=west]
-item replace block 90125 128 124 container.12 with bread 2
-item replace block 90125 128 124 container.14 with rotten_flesh 2
-setblock 90120 129 131 minecraft:potted_jungle_sapling
+setblock 90126 128 124 chest[facing=west]
+item replace block 90126 128 124 container.12 with bread 2
+item replace block 90126 128 124 container.14 with rotten_flesh 2
+setblock 90125 129 127 minecraft:potted_jungle_sapling
 setblock 90120 129 127 minecraft:potted_jungle_sapling
 setblock 90121 132 129 minecraft:white_stained_glass
 setblock 90124 132 129 minecraft:white_stained_glass
@@ -79,7 +81,7 @@ setblock 90123 131 123 minecraft:white_stained_glass
 setblock 90128 132 129 minecraft:white_stained_glass
 setblock 90118 130 130 lantern[hanging=true]
 setblock 90103 130 129 lantern[hanging=true]
-setblock 90123 129 131 air
+setblock 90123 129 132 air
 setblock 90111 129 130 air
 setblock 90110 131 126 lantern[hanging=true]
 setblock 90112 131 126 lantern[hanging=true]
@@ -178,14 +180,14 @@ setblock 90082 122 148 decorated_pot{sherds:["mourner_pottery_sherd","mourner_po
 setblock 90146 129 122 air
 setblock 90145 129 115 air
 setblock 90148 129 112 air
-setblock 90101 128 130 air
+setblock 90101 128 129 air
 setblock 90109 128 132 air
 setblock 90082 128 104 air
 setblock 90084 128 101 air
 setblock 90146 129 122 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:coal"}}
 setblock 90145 129 115 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 1, id:"minecraft:beef"}}
 setblock 90148 129 112 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 1, id:"minecraft:beef"}}
-setblock 90101 128 130 decorated_pot{sherds:["friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd"],item:{count: 3, id:"minecraft:emerald"}}
+setblock 90101 128 129 decorated_pot{sherds:["friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd"],item:{count: 3, id:"minecraft:emerald"}}
 setblock 90109 128 132 decorated_pot{sherds:["friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd"],item:{count: 3, id:"minecraft:emerald"}}
 setblock 90082 128 104 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 1, id:"minecraft:beef"}}
 setblock 90084 128 101 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:flint"}}
@@ -219,7 +221,7 @@ setblock 90086 129 143 minecraft:potted_azalea_bush
 setblock 90091 129 143 minecraft:potted_azalea_bush
 setblock 90074 129 148 minecraft:potted_bamboo
 
-setblock 90077 130 141 minecraft:waxed_oxidized_copper_grate
+setblock 90077 131 141 minecraft:waxed_oxidized_copper_grate
 setblock 90077 129 152 air
 setblock 90077 129 152 lever[facing=west]
 fill 90077 129 145 90077 128 145 minecraft:waxed_oxidized_copper_grate
@@ -291,10 +293,10 @@ item replace block 90148 129 113 container.14 with arrow 2
 setblock 90117 129 133 stone_button[facing=west]
 setblock 90117 131 133 minecraft:waxed_oxidized_copper
 setblock 90113 129 133 air
-setblock 90099 129 132 barrel[facing=south]
-item replace block 90099 129 132 container.13 with apple 1
-setblock 90097 129 130 barrel[facing=south]
-item replace block 90097 129 130 container.13 with emerald 2
+setblock 90099 129 131 barrel[facing=east]
+item replace block 90099 129 131 container.13 with apple 1
+setblock 90097 129 132 barrel[facing=east]
+item replace block 90097 129 132 container.13 with emerald 2
 
 #boss-ch2
 setblock 90132 128 94 barrel[facing=east]{Lock:"SystemCardinal"}
@@ -353,6 +355,8 @@ item replace block 90070 128 124 container.14 with arrow 3
 
 setblock 90099 130 148 chest[facing=west]
 item replace block 90099 130 148 container.12 with arrow 3
+
+setblock 90105 132 126 white_stained_glass
 
 #ch4
 setblock 90095 130 73 minecraft:potted_allium

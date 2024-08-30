@@ -106,7 +106,7 @@ setblock 90118 130 130 air
 setblock 90103 130 129 air
 setblock 90110 131 126 air
 setblock 90112 131 126 air
-setblock 90123 129 131 minecraft:redstone_wall_torch[facing=north]
+setblock 90123 129 132 minecraft:redstone_wall_torch[facing=north]
 setblock 90111 129 130 minecraft:redstone_wall_torch[facing=north]
 fill 90140 129 134 90141 129 134 air
 fill 90140 128 134 90141 128 134 air
@@ -121,7 +121,7 @@ fill 90098 129 128 90098 129 127 air
 fill 90098 130 128 90098 130 127 air
 
 fill 90075 129 126 90075 128 126 air
-setblock 90077 130 141 air
+setblock 90077 131 141 air
 
 
 setblock 90096 132 112 air
