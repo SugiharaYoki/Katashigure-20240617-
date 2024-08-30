@@ -305,6 +305,26 @@ execute if entity @s[tag=sea_purchase_pass] run clear @s iron_ingot 9
 execute if entity @s[tag=sea_purchase_pass] run clear @s flint 9
 tag @s remove sea_purchase_pass
 
+#闪烁的瓜片
+execute if score @s sea_crafter matches 10039 as @s[scores={sea_i_glistering_melon=1..,sea_i_gold_ingot=1..}] run tag @s add sea_purchase_pass
+execute if score @s sea_crafter matches 10039 as @s[tag=!sea_purchase_pass] run tellraw @s {"text":"失败！素材不足！","color":"red"}
+execute if entity @s[tag=sea_purchase_pass] run playsound minecraft:item.armor.equip_iron neutral @s ~ ~ ~ 100
+execute if entity @s[tag=sea_purchase_pass] run give @s nether_star
+execute if entity @s[tag=sea_purchase_pass] run clear @s glistering_melon_slice 1
+execute if entity @s[tag=sea_purchase_pass] run clear @s gold_ingot 1
+tag @s remove sea_purchase_pass
+execute if score @s sea_crafter matches 10040 as @s[scores={sea_i_glistering_melon=1..}] run tag @s add sea_purchase_pass
+execute if score @s sea_crafter matches 10040 as @s[tag=!sea_purchase_pass] run tellraw @s {"text":"失败！素材不足！","color":"red"}
+execute if entity @s[tag=sea_purchase_pass] run playsound minecraft:item.armor.equip_iron neutral @s ~ ~ ~ 100
+execute if entity @s[tag=sea_purchase_pass] run give @s golden_carrot 3
+execute if entity @s[tag=sea_purchase_pass] run clear @s glistering_melon_slice 1
+tag @s remove sea_purchase_pass
+execute if score @s sea_crafter matches 10041 as @s[scores={sea_i_glistering_melon=1..}] run tag @s add sea_purchase_pass
+execute if score @s sea_crafter matches 10041 as @s[tag=!sea_purchase_pass] run tellraw @s {"text":"失败！素材不足！","color":"red"}
+execute if entity @s[tag=sea_purchase_pass] run playsound minecraft:item.armor.equip_iron neutral @s ~ ~ ~ 100
+execute if entity @s[tag=sea_purchase_pass] run give @s emerald 15
+execute if entity @s[tag=sea_purchase_pass] run clear @s glistering_melon_slice 1
+tag @s remove sea_purchase_pass
 
 #塞壬铜板
 execute store result score @s rng1 run random value 1..35

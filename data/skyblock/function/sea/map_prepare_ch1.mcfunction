@@ -32,6 +32,8 @@ scoreboard objectives add sea_i_spectral_load dummy
 scoreboard objectives add sea_i_flint dummy
 scoreboard objectives add sea_i_echo_shard dummy
 scoreboard objectives add sea_i_gunpowder dummy
+scoreboard objectives add sea_i_glistering_melon dummy
+scoreboard objectives add sea_i_gold_ingot dummy
 scoreboard objectives add sea_chapter dummy
 scoreboard objectives add sea_boss1_hp dummy
 scoreboard objectives add sea_cursor dummy
