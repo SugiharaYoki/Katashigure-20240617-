@@ -1,7 +1,7 @@
 execute if score id festering_fabrik matches ..1 run scoreboard players add count festering_fabrik 1
 execute if score id festering_fabrik matches ..1 run scoreboard players set delta festering_fabrik 1
-execute if score id festering_fabrik > length festering_fabrik run scoreboard players add count festering_fabrik 1
-execute if score id festering_fabrik > length festering_fabrik run scoreboard players set delta festering_fabrik -1
+execute if score id festering_fabrik >= length festering_fabrik run scoreboard players add count festering_fabrik 1
+execute if score id festering_fabrik >= length festering_fabrik run scoreboard players set delta festering_fabrik -1
 
 execute if score delta festering_fabrik matches -1 run function skyblock:fp/fabrik/backward
 execute if score delta festering_fabrik matches 1 run function skyblock:fp/fabrik/forward
