@@ -27,11 +27,13 @@ give @a[tag=SEAPT] coal 2
 tag @a[tag=SEAPT] add e_w_01
 tag @a[tag=SEAPT] add e_w_02
 tag @a[tag=SEAPT] add e_w_03
-give @a[tag=SEAPT] raiser_armor_trim_smithing_template[custom_name='{"text":"牧羊人石板","color":"light_purple","italic":false}'] 12
-give @a[tag=SEAPT] wild_armor_trim_smithing_template[custom_name='{"text":"狂荒石板","color":"light_purple","italic":false}'] 4
-give @a[tag=SEAPT] wayfinder_armor_trim_smithing_template[custom_name='{"text":"醒殉徒石板","color":"light_purple","italic":false}'] 4
-give @a[tag=SEAPT] sentry_armor_trim_smithing_template[custom_name='{"text":"辽哨石板","color":"light_purple","italic":false}'] 6
-give @a[tag=SEAPT] dune_armor_trim_smithing_template[custom_name='{"text":"金砂石板","color":"light_purple","italic":false}'] 4
+scoreboard players set @s sea_i_trim_zombie 12
+scoreboard players set @s sea_i_trim_spider 4
+scoreboard players set @s sea_i_trim_human 4
+scoreboard players set @s sea_i_trim_bug 6
+scoreboard players set @s sea_i_trim_skeleton 4
+scoreboard players set @s sea_i_trim_sea 0 
+scoreboard players set @s sea_i_trim_ghost 0
 give @a[tag=SEAPT] emerald 64
 give @a[tag=SEAPT] emerald 24
 give @a[tag=SEAPT] flow_armor_trim_smithing_template[custom_name='{"text":"光棱魔板","italic":true,"color":"light_purple","italic":false}',lore=['{"text":"静滞光锥 I","color":"white","italic":false}'],custom_data={sea_t_spectral1:true}] 1

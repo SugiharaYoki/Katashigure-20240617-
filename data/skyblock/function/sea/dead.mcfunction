@@ -88,7 +88,13 @@ scoreboard players operation @s Perm_PersonSHD += @s sea_i_trim_bug
 scoreboard players operation @s Perm_PersonSHD += @s sea_i_trim_sea
 scoreboard players operation @s Perm_PersonSHD += @s sea_i_trim_ghost
 scoreboard players operation @s Perm_PersonSHD += @s sea_i_trim_skeleton
-
+scoreboard players set @s sea_i_trim_zombie 0
+scoreboard players set @s sea_i_trim_spider 0
+scoreboard players set @s sea_i_trim_human 0
+scoreboard players set @s sea_i_trim_bug 0 
+scoreboard players set @s sea_i_trim_sea 0 
+scoreboard players set @s sea_i_trim_ghost 0
+scoreboard players set @s sea_i_trim_skeleton 0
 
 clear @s
 effect clear @s
