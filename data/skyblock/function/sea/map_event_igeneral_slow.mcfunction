@@ -305,6 +305,7 @@ clear @a[tag=SEAPT] basalt
 clear @a[tag=SEAPT] item_frame
 clear @a[tag=SEAPT] iron_bars
 clear @a[tag=SEAPT] deepslate_tiles
+clear @a[tag=SEAPT] cracked_deepslate_tiles
 clear @a[tag=SEAPT] deepslate_tile_slab
 clear @a[tag=SEAPT] waxed_copper_block
 clear @a[tag=SEAPT] slime_block
