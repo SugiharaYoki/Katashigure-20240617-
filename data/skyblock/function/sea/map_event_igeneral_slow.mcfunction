@@ -321,6 +321,14 @@ clear @a[tag=SEAPT] polished_diorite
 clear @a[tag=SEAPT] polished_tuff_wall
 clear @a[tag=SEAPT] decorated_pot
 
+execute as @a[tag=SEAPT,nbt={Inventory:[{id:"minecraft:raiser_armor_trim_smithing_template"}]}] at @s run function skyblock:sea/shop_trim {trim:sea_i_trim_zombie, trim_name:"牧羊人",trim_type:raiser_armor_trim_smithing_template}
+execute as @a[tag=SEAPT,nbt={Inventory:[{id:"minecraft:wayfinder_armor_trim_smithing_template"}]}] at @s run function skyblock:sea/shop_trim {trim:sea_i_trim_human, trim_name:"醒殉徒",trim_type:wayfinder_armor_trim_smithing_template}
+execute as @a[tag=SEAPT,nbt={Inventory:[{id:"minecraft:wild_armor_trim_smithing_template"}]}] at @s run function skyblock:sea/shop_trim {trim:sea_i_trim_spider, trim_name:"狂荒",trim_type:wild_armor_trim_smithing_template}
+execute as @a[tag=SEAPT,nbt={Inventory:[{id:"minecraft:sentry_armor_trim_smithing_template"}]}] at @s run function skyblock:sea/shop_trim {trim:sea_i_trim_bug, trim_name:"辽哨",trim_type:sentry_armor_trim_smithing_template}
+execute as @a[tag=SEAPT,nbt={Inventory:[{id:"minecraft:dune_armor_trim_smithing_template"}]}] at @s run function skyblock:sea/shop_trim {trim:sea_i_trim_skeleton, trim_name:"金砂",trim_type:dune_armor_trim_smithing_template}
+execute as @a[tag=SEAPT,nbt={Inventory:[{id:"minecraft:vex_armor_trim_smithing_template"}]}] at @s run function skyblock:sea/shop_trim {trim:sea_i_trim_ghost, trim_name:"招魂",trim_type:vex_armor_trim_smithing_template}
+execute as @a[tag=SEAPT,nbt={Inventory:[{id:"minecraft:coast_armor_trim_smithing_template"}]}] at @s run function skyblock:sea/shop_trim {trim:sea_i_trim_sea, trim_name:"海啸",trim_type:coast_armor_trim_smithing_template}
+
 
 
 execute as @a[tag=SEAPT,x=80000,dx=20000,z=-10000,dz=20000,y=102,dy=5] at @s if block ~ ~-1 ~ waxed_weathered_cut_copper_slab if block ~ ~-0.1 ~ air run tp @s ~ 127.0 ~
