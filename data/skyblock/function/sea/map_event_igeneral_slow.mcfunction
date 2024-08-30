@@ -116,8 +116,6 @@ item replace block 90118 128 120 container.13 with trial_key[custom_name='{"text
 item replace block 90122 137 120 container.13 with trial_key[custom_name='{"text":"器械资源室2F 燃料架 - B","italic":true,"color":"yellow","italic":false}']
 item replace block 90114 123 125 container.14 with trial_key[custom_name='{"text":"器械资源室2F 燃料架 - A 内有慰问品","italic":true,"color":"yellow","italic":false}']
 item replace block 90142 134 138 container.14 with trial_key[custom_name='{"text":"宿舍楼3楼某处的钥匙","italic":true,"color":"yellow","italic":false}']
-item replace block 90086 143 116 container.13 with flow_banner_pattern[custom_name='{"text":"燃料架B内的便签纸","italic":true,"color":"dark_purple","italic":false}',lore=['{"text":"上面写着歪歪扭扭的字：","color":"white","italic":false}','{"text":"“从右到左仔细观察北水箱西面的蜡烛”","color":"white","italic":false}']]
-item replace block 90095 122 128 container.3 with globe_banner_pattern[custom_name='{"text":"何日的新闻","italic":true,"color":"dark_purple","italic":false}',lore=['{"text":"这座忒尔克西作为2130年往后的唯一一座新建钻井平台，其背负的不仅是开采石油的使命。","color":"white","italic":false}','{"text":"于2128年在大洋洲火圈地带接连发生的火山喷发，将这一批埋藏于地层深处的石油送入了太平洋。","color":"white","italic":false}','{"text":"这些石油在地理位置的分布再一次提醒了现代的人们过去有关“姆大陆”的学术猜想。","color":"white","italic":false}','{"text":"忒尔克西海上钻井平台在开采这批石油的同时，也将探索位于各处石油分布区域汇聚……","color":"white","italic":false}']]
 
 #法莫洛斯：医务部门 总管 - 死亡：被感染成为腐尸，第一章结尾被主角杀死
 #玛瑞莲：机械研发部门 贝塔小组 组长 - 死亡：被艾德雯娜用弩箭杀害
@@ -139,6 +137,8 @@ item replace block 90095 122 128 container.3 with globe_banner_pattern[custom_na
 execute as @a[tag=SEAPT,nbt={SelectedItem:{id:"minecraft:spyglass"}}] at @s run function skyblock:sea/p/spyglass
 
 
+item replace block 90086 143 116 container.13 with flow_banner_pattern[custom_name='{"text":"燃料架B内的便签纸","italic":true,"color":"dark_purple","italic":false}',lore=['{"text":"上面写着歪歪扭扭的字：","color":"white","italic":false}','{"text":"“从右到左仔细观察北水箱西面的蜡烛”","color":"white","italic":false}']]
+item replace block 90095 122 128 container.3 with globe_banner_pattern[custom_name='{"text":"何日的新闻","italic":true,"color":"dark_purple","italic":false}',lore=['{"text":"这座忒尔克西作为2130年往后的唯一一座新建钻井平台，其背负的不仅是开采石油的使命。","color":"white","italic":false}','{"text":"于2128年在大洋洲火圈地带接连发生的火山喷发，将这一批埋藏于地层深处的石油送入了太平洋。","color":"white","italic":false}','{"text":"这些石油在地理位置的分布再一次提醒了现代的人们过去有关“姆大陆”的学术猜想。","color":"white","italic":false}','{"text":"忒尔克西海上钻井平台在开采这批石油的同时，也将探索位于各处石油分布区域汇聚……","color":"white","italic":false}']]
 item replace block 90095 122 128 container.15 with flow_banner_pattern[custom_name=\
 '{"text":"文件室的笔记 - 玛瑞莲","italic":true,"color":"dark_purple","italic":false}',\
 lore=['{"text":"绝对不可让他们知道密钥……不能落入那群教徒的手中。","color":"white","italic":false}','{"text":"我不知道诺曼博士是如何说服了史丹尼舵长去听信那种鬼话。","color":"white","italic":false}','{"text":"居住区已经被游行的钻井队占领了，但偏偏是这种时候？","color":"white","italic":false}','{"text":"愚蠢至极，我无法忍受。","color":"white","italic":false}','{"text":"细菌感染爆发，安保杀了许多无辜的人，事态已经无法控制。","color":"white","italic":false}']]
@@ -147,7 +147,7 @@ item replace block 90104 122 131 container.6 with flow_banner_pattern[custom_nam
 lore=['{"text":"只要把钥匙上的标签全部打乱，他们就没法打开文件柜了。","color":"white","italic":false}','{"text":"工具维护室的门一直是开的，没人会想到取走这一把。","color":"white","italic":false}','{"text":"绝对不能让他们找到开关把手，维修层现在堪称暂时的净土。","color":"white","italic":false}','{"text":"我不会让法莫洛斯医生为我们创造的安全条件被那般轻易地打破。","color":"white","italic":false}']]
 item replace block 90108 122 146 container.22 with flow_banner_pattern[custom_name=\
 '{"text":"机械暗室的笔记 - 玛瑞莲","italic":true,"color":"dark_purple","italic":false}',\
-lore=['{"text":"他们连续开了六天的会议，看来已经无法回头了。","color":"white","italic":false}','{"text":"从地下开采到的那个东西可以改变整个地表文明的秩序，但这是否真的是好事？","color":"white","italic":false}','{"text":"永远的和平，杜绝一切战争、纷争、斗争？那我们真的还能算是人类吗？","color":"white","italic":false}']]
+lore=['{"text":"他们连续开了六天的会议，看来已经无法回头了。","color":"white","italic":false}','{"text":"从地下开采到的那个东西可以改变整个地表文明的秩序，","color":"white","italic":false}','{"text":"但这是否真的是好事？","color":"white","italic":false}','{"text":"永远的和平，杜绝一切战争、纷争、斗争？那我们真的还能算是人类吗？","color":"white","italic":false}']]
 item replace block 90122 122 128 container.13 with trial_key[custom_name='{"text":"折断的饮用水房钥匙","italic":true,"color":"yellow","italic":false}',\
 lore=['{"text":"010?1","color":"white","italic":false}']]
 item replace block 90085 122 146 container.13 with flow_banner_pattern[custom_name=\
