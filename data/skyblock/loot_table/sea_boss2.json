@@ -47,14 +47,14 @@
       ]
     },
     {
-      "rolls": 3,
+      "rolls": 1,
       "entries": [
         {
           "type": "minecraft:item",
           "name": "minecraft:air",
-          "weight": 995
+          "weight": 95
         },
-	{
+	      {
           "type": "minecraft:item",
           "name": "minecraft:glistering_melon_slice",
           "weight": 5
