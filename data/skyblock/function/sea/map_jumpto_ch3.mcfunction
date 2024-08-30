@@ -27,13 +27,13 @@ give @a[tag=SEAPT] coal 2
 tag @a[tag=SEAPT] add e_w_01
 tag @a[tag=SEAPT] add e_w_02
 tag @a[tag=SEAPT] add e_w_03
-scoreboard players set @s sea_i_trim_zombie 12
-scoreboard players set @s sea_i_trim_spider 4
-scoreboard players set @s sea_i_trim_human 4
-scoreboard players set @s sea_i_trim_bug 6
-scoreboard players set @s sea_i_trim_skeleton 4
-scoreboard players set @s sea_i_trim_sea 0 
-scoreboard players set @s sea_i_trim_ghost 0
+scoreboard players set @a[tag=SEAPT] sea_i_trim_zombie 12
+scoreboard players set @a[tag=SEAPT] sea_i_trim_spider 4
+scoreboard players set @a[tag=SEAPT] sea_i_trim_human 4
+scoreboard players set @a[tag=SEAPT] sea_i_trim_bug 6
+scoreboard players set @a[tag=SEAPT] sea_i_trim_skeleton 4
+scoreboard players set @a[tag=SEAPT] sea_i_trim_sea 0 
+scoreboard players set @a[tag=SEAPT] sea_i_trim_ghost 0
 give @a[tag=SEAPT] emerald 64
 give @a[tag=SEAPT] emerald 24
 give @a[tag=SEAPT] flow_armor_trim_smithing_template[custom_name='{"text":"光棱魔板","italic":true,"color":"light_purple","italic":false}',lore=['{"text":"静滞光锥 I","color":"white","italic":false}'],custom_data={sea_t_spectral1:true}] 1
