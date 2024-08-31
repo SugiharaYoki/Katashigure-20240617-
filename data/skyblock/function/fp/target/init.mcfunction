@@ -1,3 +1,7 @@
+scoreboard objectives add festering_leg_id dummy
+scoreboard objectives add festering_leg_subid dummy
+scoreboard objectives add festering_fabrik dummy
+
 summon marker 0 0 0 {UUID:[I;0,0,0,0],Tags:["fp_sc"]}
 scoreboard objectives add festering_math dummy
 scoreboard objectives add constant dummy
