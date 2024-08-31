@@ -335,6 +335,13 @@ item replace block 90153 145 133 container.11 with arrow 10
 item replace block 90153 145 133 container.13 with flint 5
 item replace block 90153 145 133 container.15 with arrow 10
 
+summon minecraft:item_frame 90126 123 146 {Invisible:1b,Fixed:0b,Invulnerable:0b,Facing:1b,Item:{id:"minecraft:gold_ingot"}}
+summon minecraft:item_frame 90068 123 129 {Invisible:1b,Fixed:0b,Invulnerable:0b,Facing:1b,Item:{id:"minecraft:gold_ingot"}}
+summon minecraft:item_frame 90142 122 141 {Invisible:1b,Fixed:0b,Invulnerable:0b,Facing:1b,Item:{id:"minecraft:gold_ingot"}}
+setblock 90088 123 128 barrel[facing=east]
+item replace block 90088 123 128 container.13 with gold_ingot 1
+
+
 #电梯2
 fill 90163 129 113 90163 127 114 iron_bars
 
