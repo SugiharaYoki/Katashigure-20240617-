@@ -14,7 +14,7 @@ data modify storage temp:matrix transformation[2] set from entity @s Pos[0]
 data modify storage temp:matrix transformation[6] set from entity @s Pos[1]
 data modify storage temp:matrix transformation[10] set from entity @s Pos[2]
 
-$tp @s ^$(width) ^$(length) ^
+$tp @s ^-$(width) ^-$(length) ^
 data modify storage temp:matrix transformation[3] set from entity @s Pos[0]
 data modify storage temp:matrix transformation[7] set from entity @s Pos[1]
 data modify storage temp:matrix transformation[11] set from entity @s Pos[2]
