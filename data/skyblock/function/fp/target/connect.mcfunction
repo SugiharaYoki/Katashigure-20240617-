@@ -25,7 +25,7 @@ execute store result storage temp:matrix display.end2 double 0.01 run scoreboard
 function skyblock:fp/target/connect_sub with storage temp:matrix display
 
 execute store result entity @s Pos[0] double 0.01 run scoreboard players get temp_start_x festering_math
-execute store result entity @s Pos[1] double 0.01 run scoreboard players get temp_start_y festering_math
+data modify entity @s Pos[1] set from storage temp:matrix display.start[1]
 execute store result entity @s Pos[2] double 0.01 run scoreboard players get temp_start_z festering_math
 data modify entity @s block_state set from storage temp:matrix block_state
 data modify entity @s transformation set from storage temp:matrix transformation
