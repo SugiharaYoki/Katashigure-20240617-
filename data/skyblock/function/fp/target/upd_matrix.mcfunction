@@ -19,4 +19,6 @@ data modify storage temp:matrix transformation[3] set from entity @s Pos[0]
 data modify storage temp:matrix transformation[7] set from entity @s Pos[1]
 data modify storage temp:matrix transformation[11] set from entity @s Pos[2]
 
+$data modify storage temp:matrix transformation[15] set value $(scale)
+
 tp @s 0.0 0.0 0.0
