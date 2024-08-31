@@ -19,6 +19,4 @@ data modify entity @s Pos set from storage temp:matrix display.start
 data modify entity @s block_state set from storage temp:matrix block_state
 data modify entity @s transformation set from storage temp:matrix transformation
 
-function skyblock:fp/legs/particle with storage temp:matrix
-say hi
-particle angry_villager ~ ~ ~ 0 0 0 0 10 force
+function skyblock:fp/legs/particle with storage temp:matrix display
