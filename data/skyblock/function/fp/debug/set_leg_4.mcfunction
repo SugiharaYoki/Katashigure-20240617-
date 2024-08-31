@@ -1,0 +1,2 @@
+$data modify storage minecraft:leg_data list[{leg_id:$(leg_id)}].value[{subid:3}].end set from entity @s Pos
+$data modify storage minecraft:leg_data list[{leg_id:$(leg_id)}].target set from entity @s Pos
