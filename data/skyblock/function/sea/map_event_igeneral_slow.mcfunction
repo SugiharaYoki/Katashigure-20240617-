@@ -26,7 +26,7 @@ execute positioned 90117 138 121 if entity @a[tag=SEAPT,distance=0..20] unless e
 
 #地图
 execute positioned 90102 123 121 if entity @a[tag=SEAPT,distance=0..20] unless entity @e[type=glow_item_frame,distance=0..0.5] run summon minecraft:glow_item_frame ~ ~ ~ {Tags:[iframe_sea,iframe_sea_map_01],Invisible:0b,Fixed:0b,Invulnerable:0b,Facing:5b,Item:{id:"minecraft:filled_map",components:{custom_name:'{"text":"维修层地图","italic":false,"color":"dark_purple"}',map_id:4}}}
-
+execute positioned 90081 129 123 if entity @a[tag=SEAPT,distance=0..20] unless entity @e[type=glow_item_frame,distance=0..0.5] run summon minecraft:glow_item_frame ~ ~ ~ {Tags:[iframe_sea,iframe_sea_map_02],Invisible:0b,Fixed:0b,Invulnerable:0b,Facing:4b,Item:{id:"minecraft:filled_map",components:{custom_name:'{"text":"物资层地图","italic":false,"color":"dark_purple"}',map_id:5}}}
 
 #antichear
 #execute as @a[tag=SEAPT,nbt={Inventory:[{id:"minecraft:iron_hoe"}]}] at @s run clear @s iron_axe
