@@ -28,4 +28,4 @@ function skyblock:fp/legs/transfer_all {leg_id:7,subid:3}
 
 function skyblock:fp/legs/transfer_all {leg_id:8,subid:1}
 function skyblock:fp/legs/transfer_all {leg_id:8,subid:2}
-function skyblock:fp/legs/transfer_all {leg_id:9,subid:3}
+function skyblock:fp/legs/transfer_all {leg_id:8,subid:3}
