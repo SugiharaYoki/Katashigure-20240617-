@@ -16,9 +16,9 @@ execute store result storage temp:fabrik id int 1.0 run scoreboard players get i
 execute store result storage temp:fabrik less_id int 1.0 run scoreboard players get less_id festering_fabrik
 execute store result storage temp:fabrik more_id int 1.0 run scoreboard players get more_id festering_fabrik
 
-execute if score count festering_fabrik matches ..11 if score delta festering_fabrik matches -1 run function skyblock:fp/fabrik/backward with storage temp:fabrik
-execute if score count festering_fabrik matches ..11 if score delta festering_fabrik matches 1 run function skyblock:fp/fabrik/forward with storage temp:fabrik
+execute if score count festering_fabrik matches ..3 if score delta festering_fabrik matches -1 run function skyblock:fp/fabrik/backward with storage temp:fabrik
+execute if score count festering_fabrik matches ..3 if score delta festering_fabrik matches 1 run function skyblock:fp/fabrik/forward with storage temp:fabrik
 
 scoreboard players operation id festering_fabrik += delta festering_fabrik
 
-execute if score count festering_fabrik matches ..11 run function skyblock:fp/fabrik/loop
+execute if score count festering_fabrik matches ..3 run function skyblock:fp/fabrik/loop
