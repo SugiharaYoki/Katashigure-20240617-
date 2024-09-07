@@ -1,3 +1,4 @@
+scoreboard objectives add festering_math dummy
 #计算距离
 function skyblock:fp/tool/distance_macro with storage temp:matrix display
 data modify storage temp:matrix display.height set from storage festering:functions Math[{id:"distance"}].output
@@ -17,6 +18,6 @@ function skyblock:fp/target/connect_sub with storage temp:matrix display
 #变换
 data modify entity @s Pos set from storage temp:matrix display.start
 data modify entity @s block_state set from storage temp:matrix block_state
-data modify entity @s transformation set from storage temp:matrix transformation
 
-function skyblock:fp/legs/particle with storage temp:matrix display
+data modify entity @s transformation set from storage temp:matrix transformation
+data merge entity @s {start_interpolation:0,interpolation_duration:1}
