@@ -40,6 +40,12 @@ function skyblock:fp/legs/transfer_all {leg_id:8,subid:2}
 function skyblock:fp/legs/transfer_all {leg_id:8,subid:3}
 
 function skyblock:fp/fabrik/start_macro1 {leg_id:9}
-function skyblock:fp/legs/transfer_all {leg_id:8,subid:1}
-function skyblock:fp/legs/transfer_all {leg_id:8,subid:2}
-function skyblock:fp/legs/transfer_all {leg_id:8,subid:3}
+function skyblock:fp/legs/transfer_all {leg_id:9,subid:1}
+function skyblock:fp/legs/transfer_all {leg_id:9,subid:2}
+function skyblock:fp/legs/transfer_all {leg_id:9,subid:3}
+function skyblock:fp/legs/transfer_all {leg_id:9,subid:4}
+function skyblock:fp/legs/transfer_all {leg_id:9,subid:5}
+function skyblock:fp/legs/transfer_all {leg_id:9,subid:6}
+function skyblock:fp/legs/transfer_all {leg_id:9,subid:7}
+function skyblock:fp/legs/transfer_all {leg_id:9,subid:8}
+function skyblock:fp/legs/transfer_all {leg_id:9,subid:9}
