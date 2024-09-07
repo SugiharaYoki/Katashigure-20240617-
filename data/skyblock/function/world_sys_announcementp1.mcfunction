@@ -34,7 +34,7 @@ gamemode adventure @a[tag=!Gaming,tag=!ServerManager,tag=!ServerOperator]
 tag @a[tag=!Gaming] remove NoMultiMenu
 stopsound @a music minecraft:music.game
 stopsound @a music minecraft:music.creative
-scoreboard players set @a[scores={AnnouncementTime=270..}] AnnouncementTime -40
+scoreboard players set @a[scores={AnnouncementTime=290..}] AnnouncementTime -40
 execute as @a[tag=!NoAnnouncement,tag=!Gaming,scores={AnnouncementTime=32}] at @s store result score @s rng2 run random value 1..10
 execute as @a[tag=!NoAnnouncement,tag=!Gaming,scores={AnnouncementTime=32,rng2=1}] run tellraw @s [{"text":"看板狐： 多功能菜单能够用于查看更完整的成绩历史，甚至还能用来传送与点歌哦。","color":"aqua"}]
 execute as @a[tag=!NoAnnouncement,tag=!Gaming,scores={AnnouncementTime=32,rng2=2}] run tellraw @s [{"text":"GameLand三周目企划正式开始！方时雨城规划建设中！","color":"green"}]
