@@ -341,6 +341,8 @@ summon minecraft:item_frame 90142 122 141 {Invisible:1b,Fixed:0b,Invulnerable:0b
 setblock 90088 123 128 barrel[facing=east]
 item replace block 90088 123 128 container.13 with gold_ingot 1
 
+setblock 90080 103 134 barrel[facing=south]
+setblock 90081 103 134 barrel[facing=south]
 
 #电梯2
 fill 90163 129 113 90163 127 114 iron_bars
