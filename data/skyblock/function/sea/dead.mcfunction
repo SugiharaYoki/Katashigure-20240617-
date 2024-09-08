@@ -70,6 +70,7 @@ tag @s remove NoMultiMenu
 function skyblock:skywar_system_removeallmd
 function skyblock:sea/shop_calculation
 scoreboard objectives add Perm_PersonSHD dummy
+scoreboard objectives add sea_remiel_shadow dummy
 scoreboard objectives add constant dummy
 scoreboard players set 2 constant 2
 scoreboard players set 5 constant 5
@@ -88,6 +89,9 @@ scoreboard players operation @s Perm_PersonSHD += @s sea_i_trim_bug
 scoreboard players operation @s Perm_PersonSHD += @s sea_i_trim_sea
 scoreboard players operation @s Perm_PersonSHD += @s sea_i_trim_ghost
 scoreboard players operation @s Perm_PersonSHD += @s sea_i_trim_skeleton
+execute as @s store result score @s sea_i_emerald run clear @s emerald 0
+scoreboard players operation @s sea_i_emerald /= 10 constant
+scoreboard players operation @s sea_remiel_shadow = @s sea_i_emerald
 scoreboard players set @s sea_i_trim_zombie 0
 scoreboard players set @s sea_i_trim_spider 0
 scoreboard players set @s sea_i_trim_human 0

@@ -30,7 +30,7 @@ execute as @a[tag=SEAPT,tag=sea_t_sprint1,scores={sea_runs=7..}] at @s run attri
 scoreboard players remove @a[tag=SEAPT,tag=sea_t_sprint1,scores={sea_is_running=1..}] sea_is_running 1
 scoreboard players set @a[tag=SEAPT,tag=sea_t_sprint1,scores={sea_is_running=30..}] sea_is_running 30
 
-
+execute as @a[tag=SEAPT] at @s if score @s sea_remiel_shadow matches 1.. run function skyblock:sea/p/remiel_shadow
 
 
 
