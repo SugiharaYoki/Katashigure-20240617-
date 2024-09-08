@@ -119,7 +119,7 @@ setblock 90086 129 122 minecraft:redstone_lamp[lit=true]
 setblock 90091 128 127 air
 fill 90102 124 125 90102 122 126 iron_block
 fill 90109 122 117 90110 123 117 iron_bars
-setblock 90117 122 115 chest[facing=north]
+setblock 90117 122 115 chest[facing=south]
 item replace block 90117 122 115 container.12 with cookie 2
 item replace block 90117 122 115 container.14 with cookie 2
 fill 90125 125 114 90125 124 114 iron_bars
