@@ -18,6 +18,15 @@ $summon block_display ~ ~ ~ {Tags:["leg$(leg_id)","subid6"]}
 $summon block_display ~ ~ ~ {Tags:["leg$(leg_id)","subid7"]}
 $summon block_display ~ ~ ~ {Tags:["leg$(leg_id)","subid8"]}
 $summon block_display ~ ~ ~ {Tags:["leg$(leg_id)","subid9"]}
+$summon block_display ~ ~ ~ {Tags:["leg$(leg_id)","subid10"]}
+$summon block_display ~ ~ ~ {Tags:["leg$(leg_id)","subid11"]}
+$summon block_display ~ ~ ~ {Tags:["leg$(leg_id)","subid12"]}
+$summon block_display ~ ~ ~ {Tags:["leg$(leg_id)","subid13"]}
+$summon block_display ~ ~ ~ {Tags:["leg$(leg_id)","subid14"]}
+$summon block_display ~ ~ ~ {Tags:["leg$(leg_id)","subid15"]}
+$summon block_display ~ ~ ~ {Tags:["leg$(leg_id)","subid16"]}
+$summon block_display ~ ~ ~ {Tags:["leg$(leg_id)","subid17"]}
+$summon block_display ~ ~ ~ {Tags:["leg$(leg_id)","subid18"]}
 
 
 $data modify storage leg_data list[{leg_id:$(leg_id)}].target set from storage leg_data list[{leg_id:$(leg_id)}].value[{subid:9}].end
