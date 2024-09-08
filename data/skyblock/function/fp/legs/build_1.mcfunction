@@ -29,4 +29,4 @@ $summon block_display ~ ~ ~ {Tags:["leg$(leg_id)","subid17"]}
 $summon block_display ~ ~ ~ {Tags:["leg$(leg_id)","subid18"]}
 
 
-$data modify storage leg_data list[{leg_id:$(leg_id)}].target set from storage leg_data list[{leg_id:$(leg_id)}].value[{subid:9}].end
+$data modify storage leg_data list[{leg_id:$(leg_id)}].target set from storage leg_data list[{leg_id:$(leg_id)}].value[{subid:18}].end
