@@ -364,3 +364,4 @@ setblock 90105 132 126 white_stained_glass
 setblock 90095 130 73 minecraft:potted_allium
 
 
+setblock 90143 123 109 minecraft:waxed_copper_bulb[lit=true]
