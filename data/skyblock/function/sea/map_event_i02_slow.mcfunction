@@ -241,7 +241,7 @@ execute as @n[tag=sc,scores={sea_4temp2=424}] run setblock 90121 132 129 minecra
 execute as @n[tag=sc,scores={sea_4temp2=427}] run setblock 90124 132 129 minecraft:tinted_glass
 execute as @n[tag=sc,scores={sea_4temp2=431}] run setblock 90123 131 123 minecraft:tinted_glass
 execute as @n[tag=sc,scores={sea_4temp2=432}] run setblock 90118 130 130 air destroy
-execute as @n[tag=sc,scores={sea_4temp2=435}] run setblock 90103 130 129 air destroy
+execute as @n[tag=sc,scores={sea_4temp2=435}] run setblock 90103 131 129 air destroy
 execute as @n[tag=sc,scores={sea_4temp2=439}] run setblock 90110 131 126 air destroy
 execute as @n[tag=sc,scores={sea_4temp2=439}] run setblock 90112 131 126 air destroy
 execute as @n[tag=sc,scores={sea_4temp2=439}] run setblock 90105 132 126 tinted_glass

@@ -80,7 +80,7 @@ setblock 90150 131 129 minecraft:redstone_lamp[lit=false]
 setblock 90123 131 123 minecraft:white_stained_glass
 setblock 90128 132 129 minecraft:white_stained_glass
 setblock 90118 130 130 lantern[hanging=true]
-setblock 90103 130 129 lantern[hanging=true]
+setblock 90103 131 129 lantern[hanging=true]
 setblock 90123 129 132 air
 setblock 90111 129 130 air
 setblock 90110 131 126 lantern[hanging=true]

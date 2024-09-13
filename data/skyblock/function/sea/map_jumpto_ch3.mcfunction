@@ -103,7 +103,7 @@ setblock 90100 129 142 iron_door[facing=west,half=upper,open=true]
 fill 90130 129 144 90130 128 144 air
 
 setblock 90118 130 130 air
-setblock 90103 130 129 air
+setblock 90103 131 129 air
 setblock 90110 131 126 air
 setblock 90112 131 126 air
 setblock 90123 129 132 minecraft:redstone_wall_torch[facing=north]
