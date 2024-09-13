@@ -358,7 +358,7 @@ summon block_display 90147.0 123.8 115.50 {transformation:{left_rotation:[0f,0f,
 #采矿输油系统主控
 summon block_display 90118.5 123.5 116.00 {transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[2.2f,0.03f,0.03f],translation:[0f,0f,0f]},block_state:{Name:redstone_block},Rotation:[90f,0f],Tags:["sea_blockdisplay","sea_laser_close_6"]}
 
-summon block_display 90145.5 121.0 102.5 {transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[0.03f,4.3f,0.03f],translation:[0f,0f,0f]},block_state:{Name:redstone_block},Tags:["sea_blockdisplay","sea_laser_close_5"]}
+summon block_display 90145.5 122.0 102.5 {transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[0.03f,4.3f,0.03f],translation:[0f,0f,0f]},block_state:{Name:redstone_block},Tags:["sea_blockdisplay","sea_laser_close_5"]}
 
 setblock 90109 123 120 crimson_button[facing=east,face=wall]
 setblock 90109 123 130 crimson_button[facing=east,face=wall]

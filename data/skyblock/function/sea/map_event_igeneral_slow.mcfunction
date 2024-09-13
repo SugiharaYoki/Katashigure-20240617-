@@ -34,9 +34,9 @@ execute if block 90075 103 141 minecraft:cauldron positioned 90079 105 143 if en
 #antichear
 #execute as @a[tag=SEAPT,nbt={Inventory:[{id:"minecraft:iron_hoe"}]}] at @s run clear @s iron_axe
 #execute as @a[tag=SEAPT] at @s run clear @s iron_hoe[!custom_data={sea_crowbar_t:true}]
-execute if entity @a[tag=SEAPT] as @a[tag=SEAPT,nbt={Inventory:[{components:{"minecraft:custom_data":{sea_t_spectral1:true}}}]}] at @s run tag @s add sea_t_spectral1
-execute if entity @a[tag=SEAPT] as @a[tag=SEAPT,nbt={Inventory:[{components:{"minecraft:custom_data":{sea_t_sprint1:true}}}]}] at @s run tag @s add sea_t_sprint1
-execute if entity @a[tag=SEAPT] as @a[tag=SEAPT,nbt={Inventory:[{components:{"minecraft:custom_data":{sea_t_spectral1:true}}}]}] at @s run clear @s flow_armor_trim_smithing_template
+execute as @a[tag=SEAPT,nbt={Inventory:[{components:{"minecraft:custom_data":{sea_t_spectral1:true}}}]}] at @s run tag @s add sea_t_spectral1
+execute as @a[tag=SEAPT,nbt={Inventory:[{components:{"minecraft:custom_data":{sea_t_sprint1:true}}}]}] at @s run tag @s add sea_t_sprint1
+execute as @a[tag=SEAPT,nbt={Inventory:[{components:{"minecraft:custom_data":{sea_t_spectral1:true}}}]}] at @s run clear @s flow_armor_trim_smithing_template
 clear @a[tag=SEAPT] barrier
 clear @a[tag=SEAPT] flow_armor_trim_smithing_template
 item replace entity @a[tag=SEAPT,tag=!sea_t_spectral1] player.crafting.0 with barrier
@@ -82,20 +82,20 @@ execute as @a[tag=SEAPT,tag=e_w_04,level=8..] run xp set @s 8 levels
 execute as @a[tag=SEAPT,tag=e_w_04,level=8..] run xp set @s 0 points
 
 execute as @n[tag=sc] unless entity @s[scores={sea_4temp1=-9999..}] run scoreboard players set @s sea_4temp1 -1
-execute if entity @a[tag=SEAPT] as @n[tag=sc,tag=sea_cb001,scores={sea_4temp1=-1..4}] run scoreboard players add @s sea_4temp1 1
-execute if entity @a[tag=SEAPT] as @n[tag=sc,tag=sea_cb001,scores={sea_4temp1=1}] run setblock 90084 122 139 air
-execute if entity @a[tag=SEAPT] as @n[tag=sc,tag=sea_cb001,scores={sea_4temp1=2}] run setblock 90084 123 139 air
-execute if entity @a[tag=SEAPT] as @n[tag=sc,tag=sea_cb001,scores={sea_4temp1=3}] run setblock 90084 124 139 air
-execute if entity @a[tag=SEAPT] as @n[tag=sc,tag=sea_cb001,scores={sea_4temp1=1}] run playsound minecraft:block.iron_door.open ambient @a 90084 124 139 4 0.3
-execute if entity @a[tag=SEAPT] as @n[tag=sc,tag=sea_cb001,scores={sea_4temp1=2}] run playsound minecraft:block.iron_door.open ambient @a 90084 124 139 4 0.3
-execute if entity @a[tag=SEAPT] as @n[tag=sc,tag=sea_cb001,scores={sea_4temp1=3}] run playsound minecraft:block.iron_door.open ambient @a 90084 124 139 4 0.3
-execute if entity @a[tag=SEAPT] as @n[tag=sc,tag=sea_cb002,scores={sea_4temp1=7..10}] run scoreboard players add @s sea_4temp1 1
-execute if entity @a[tag=SEAPT] as @n[tag=sc,tag=sea_cb002,scores={sea_4temp1=8}] run setblock 90084 124 139 iron_bars
-execute if entity @a[tag=SEAPT] as @n[tag=sc,tag=sea_cb002,scores={sea_4temp1=9}] run setblock 90084 123 139 iron_bars
-execute if entity @a[tag=SEAPT] as @n[tag=sc,tag=sea_cb002,scores={sea_4temp1=10}] run setblock 90084 122 139 iron_bars
-execute if entity @a[tag=SEAPT] as @n[tag=sc,tag=sea_cb002,scores={sea_4temp1=8}] run playsound minecraft:block.iron_door.open ambient @a 90084 124 139 4 0.3
-execute if entity @a[tag=SEAPT] as @n[tag=sc,tag=sea_cb002,scores={sea_4temp1=9}] run playsound minecraft:block.iron_door.open ambient @a 90084 124 139 4 0.3
-execute if entity @a[tag=SEAPT] as @n[tag=sc,tag=sea_cb002,scores={sea_4temp1=10}] run playsound minecraft:block.iron_door.open ambient @a 90084 124 139 4 0.3
+execute as @n[tag=sc,tag=sea_cb001,scores={sea_4temp1=-1..4}] run scoreboard players add @s sea_4temp1 1
+execute as @n[tag=sc,tag=sea_cb001,scores={sea_4temp1=1}] run setblock 90084 122 139 air
+execute as @n[tag=sc,tag=sea_cb001,scores={sea_4temp1=2}] run setblock 90084 123 139 air
+execute as @n[tag=sc,tag=sea_cb001,scores={sea_4temp1=3}] run setblock 90084 124 139 air
+execute as @n[tag=sc,tag=sea_cb001,scores={sea_4temp1=1}] run playsound minecraft:block.iron_door.open ambient @a 90084 124 139 4 0.3
+execute as @n[tag=sc,tag=sea_cb001,scores={sea_4temp1=2}] run playsound minecraft:block.iron_door.open ambient @a 90084 124 139 4 0.3
+execute as @n[tag=sc,tag=sea_cb001,scores={sea_4temp1=3}] run playsound minecraft:block.iron_door.open ambient @a 90084 124 139 4 0.3
+execute as @n[tag=sc,tag=sea_cb002,scores={sea_4temp1=7..10}] run scoreboard players add @s sea_4temp1 1
+execute as @n[tag=sc,tag=sea_cb002,scores={sea_4temp1=8}] run setblock 90084 124 139 iron_bars
+execute as @n[tag=sc,tag=sea_cb002,scores={sea_4temp1=9}] run setblock 90084 123 139 iron_bars
+execute as @n[tag=sc,tag=sea_cb002,scores={sea_4temp1=10}] run setblock 90084 122 139 iron_bars
+execute as @n[tag=sc,tag=sea_cb002,scores={sea_4temp1=8}] run playsound minecraft:block.iron_door.open ambient @a 90084 124 139 4 0.3
+execute as @n[tag=sc,tag=sea_cb002,scores={sea_4temp1=9}] run playsound minecraft:block.iron_door.open ambient @a 90084 124 139 4 0.3
+execute as @n[tag=sc,tag=sea_cb002,scores={sea_4temp1=10}] run playsound minecraft:block.iron_door.open ambient @a 90084 124 139 4 0.3
 
 
 execute if block 90105 123 125 air run item replace block 90127 122 128 container.15 with lever[minecraft:can_place_on={blocks:"chiseled_deepslate"},custom_data={sea_lever2:true}] 1
@@ -491,14 +491,14 @@ execute as @e[type=interaction,tag=SEAaidbox] on target at @s run playsound mine
 execute as @e[type=interaction,tag=SEAaidbox] run data remove entity @s interaction
 
 #particle minecraft:trial_spawner_detection_ominous 90117.90 127.00 137.01 2 0 2 0.0 30
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp1=50..60}] run scoreboard players add @s sea_4temp1 1
+execute as @n[tag=sc,scores={sea_4temp1=50..60}] run scoreboard players add @s sea_4temp1 1
 execute if block 90118 123 134 lever[powered=true,facing=east] run scoreboard players set @n[tag=sc,scores={sea_4temp1=..49}] sea_4temp1 50
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp1=51}] run fill 90114 122 133 90114 122 132 air
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp1=53}] run fill 90114 123 133 90114 123 132 air
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp1=55}] run fill 90114 124 133 90114 124 132 air
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp1=51}] run playsound minecraft:block.iron_door.open ambient @a 90114 125 132 4 0.3
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp1=53}] run playsound minecraft:block.iron_door.open ambient @a 90114 125 132 4 0.3
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp1=55}] run playsound minecraft:block.iron_door.open ambient @a 90114 125 132 4 0.3
+execute as @n[tag=sc,scores={sea_4temp1=51}] run fill 90114 122 133 90114 122 132 air
+execute as @n[tag=sc,scores={sea_4temp1=53}] run fill 90114 123 133 90114 123 132 air
+execute as @n[tag=sc,scores={sea_4temp1=55}] run fill 90114 124 133 90114 124 132 air
+execute as @n[tag=sc,scores={sea_4temp1=51}] run playsound minecraft:block.iron_door.open ambient @a 90114 125 132 4 0.3
+execute as @n[tag=sc,scores={sea_4temp1=53}] run playsound minecraft:block.iron_door.open ambient @a 90114 125 132 4 0.3
+execute as @n[tag=sc,scores={sea_4temp1=55}] run playsound minecraft:block.iron_door.open ambient @a 90114 125 132 4 0.3
 
 execute if block 90111 122 143 lever[powered=false] if block 90110 122 143 lever[powered=true] if block 90109 122 143 lever[powered=true] if block 90108 122 143 lever[powered=false] run setblock 90118 122 142 minecraft:redstone_block
 
@@ -538,32 +538,32 @@ execute as @e[tag=SEAmagma1,type=marker] at @s if entity @a[tag=SEAPT,distance=0
 scoreboard players set @n[tag=sc,scores={sea_4temp_environment=..0}] sea_4temp_environment 10
 scoreboard players set @n[tag=sc,scores={sea_4temp_environment=100..}] sea_4temp_environment 10
 
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp_environment=1..80}] run scoreboard players add @s sea_4temp_environment 1
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp_environment=41}] run scoreboard players set @s sea_4temp_environment 10
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp_environment=11}] run setblock 90101 129 138 minecraft:redstone_block
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp_environment=16}] run setblock 90101 129 136 minecraft:redstone_block
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp_environment=21}] run setblock 90101 129 138 minecraft:air
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp_environment=26}] run setblock 90101 129 136 minecraft:air
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp_environment=15}] run setblock 90080 129 139 minecraft:redstone_block
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp_environment=20}] run setblock 90082 129 139 minecraft:redstone_block
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp_environment=25}] run setblock 90084 129 139 minecraft:redstone_block
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp_environment=26}] run setblock 90080 129 139 minecraft:air
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp_environment=31}] run setblock 90082 129 139 minecraft:air
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp_environment=36}] run setblock 90084 129 139 minecraft:air
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp_environment=23}] run setblock 90079 129 138 minecraft:redstone_block
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp_environment=33}] run setblock 90079 129 136 minecraft:redstone_block
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp_environment=28}] run setblock 90079 129 138 minecraft:air
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp_environment=38}] run setblock 90079 129 136 minecraft:air
+execute as @n[tag=sc,scores={sea_4temp_environment=1..80}] run scoreboard players add @s sea_4temp_environment 1
+execute as @n[tag=sc,scores={sea_4temp_environment=41}] run scoreboard players set @s sea_4temp_environment 10
+execute as @n[tag=sc,scores={sea_4temp_environment=11}] run setblock 90101 129 138 minecraft:redstone_block
+execute as @n[tag=sc,scores={sea_4temp_environment=16}] run setblock 90101 129 136 minecraft:redstone_block
+execute as @n[tag=sc,scores={sea_4temp_environment=21}] run setblock 90101 129 138 minecraft:air
+execute as @n[tag=sc,scores={sea_4temp_environment=26}] run setblock 90101 129 136 minecraft:air
+execute as @n[tag=sc,scores={sea_4temp_environment=15}] run setblock 90080 129 139 minecraft:redstone_block
+execute as @n[tag=sc,scores={sea_4temp_environment=20}] run setblock 90082 129 139 minecraft:redstone_block
+execute as @n[tag=sc,scores={sea_4temp_environment=25}] run setblock 90084 129 139 minecraft:redstone_block
+execute as @n[tag=sc,scores={sea_4temp_environment=26}] run setblock 90080 129 139 minecraft:air
+execute as @n[tag=sc,scores={sea_4temp_environment=31}] run setblock 90082 129 139 minecraft:air
+execute as @n[tag=sc,scores={sea_4temp_environment=36}] run setblock 90084 129 139 minecraft:air
+execute as @n[tag=sc,scores={sea_4temp_environment=23}] run setblock 90079 129 138 minecraft:redstone_block
+execute as @n[tag=sc,scores={sea_4temp_environment=33}] run setblock 90079 129 136 minecraft:redstone_block
+execute as @n[tag=sc,scores={sea_4temp_environment=28}] run setblock 90079 129 138 minecraft:air
+execute as @n[tag=sc,scores={sea_4temp_environment=38}] run setblock 90079 129 136 minecraft:air
 
 
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp_environment=28}] as @a[tag=SEAPT] store result score @s sea_i_spectral run clear @s spectral_arrow 0
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp_environment=28}] as @a[tag=SEAPT] unless entity @s[scores={sea_i_spectral_load=-999..}] run scoreboard players set @s sea_i_spectral_load 0
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp_environment=28}] as @a[tag=SEAPT,tag=sea_t_spectral1,nbt={Inventory:[{id:"minecraft:arrow"}]},scores={sea_i_spectral=..2,sea_i_spectral_load=..4}] run scoreboard players add @s sea_i_spectral_load 1
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp_environment=28}] as @a[tag=SEAPT,scores={sea_i_spectral=..2,sea_i_spectral_load=5..}] run clear @s arrow 1
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp_environment=28}] as @a[tag=SEAPT,scores={sea_i_spectral=..2,sea_i_spectral_load=5..}] run give @s spectral_arrow 1
-execute if entity @a[tag=SEAPT] as @n[tag=sc,scores={sea_4temp_environment=28}] as @a[tag=SEAPT,scores={sea_i_spectral=..2,sea_i_spectral_load=5..}] run scoreboard players set @s sea_i_spectral_load 0
-execute if entity @a[tag=SEAPT] as @s[scores={sea_i_spectral=4..}] run give @s arrow 1
-execute if entity @a[tag=SEAPT] as @s[scores={sea_i_spectral=4..}] run clear @s spectral_arrow[custom_name='{"text":"静滞光棱箭","italic":true,"color":"blue","italic":false}',lore=['{"text":"箭身被某种力量转换成了金色的不明材质。","color":"white","italic":false}','{"text":"“射出后能使飞行路径范围内的怪物大幅迟缓。”","color":"white","italic":false}']] 1
+execute as @n[tag=sc,scores={sea_4temp_environment=28}] as @a[tag=SEAPT] store result score @s sea_i_spectral run clear @s spectral_arrow 0
+execute as @n[tag=sc,scores={sea_4temp_environment=28}] as @a[tag=SEAPT] unless entity @s[scores={sea_i_spectral_load=-999..}] run scoreboard players set @s sea_i_spectral_load 0
+execute as @n[tag=sc,scores={sea_4temp_environment=28}] as @a[tag=SEAPT,tag=sea_t_spectral1,nbt={Inventory:[{id:"minecraft:arrow"}]},scores={sea_i_spectral=..2,sea_i_spectral_load=..4}] run scoreboard players add @s sea_i_spectral_load 1
+execute as @n[tag=sc,scores={sea_4temp_environment=28}] as @a[tag=SEAPT,scores={sea_i_spectral=..2,sea_i_spectral_load=5..}] run clear @s arrow 1
+execute as @n[tag=sc,scores={sea_4temp_environment=28}] as @a[tag=SEAPT,scores={sea_i_spectral=..2,sea_i_spectral_load=5..}] run give @s spectral_arrow 1
+execute as @n[tag=sc,scores={sea_4temp_environment=28}] as @a[tag=SEAPT,scores={sea_i_spectral=..2,sea_i_spectral_load=5..}] run scoreboard players set @s sea_i_spectral_load 0
+execute as @s[scores={sea_i_spectral=4..}] run give @s arrow 1
+execute as @s[scores={sea_i_spectral=4..}] run clear @s spectral_arrow[custom_name='{"text":"静滞光棱箭","italic":true,"color":"blue","italic":false}',lore=['{"text":"箭身被某种力量转换成了金色的不明材质。","color":"white","italic":false}','{"text":"“射出后能使飞行路径范围内的怪物大幅迟缓。”","color":"white","italic":false}']] 1
 
 execute if block 90088 128 114 air unless entity @a[tag=SEAPT,tag=e_i_20] positioned 90088 128 117 run function skyblock:sea/m/silverfish_big
 execute if block 90088 128 114 air unless entity @a[tag=SEAPT,tag=e_i_20] positioned 90088 128 117 run function skyblock:sea/m/silverfish_big
