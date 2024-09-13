@@ -3,7 +3,7 @@ execute as @a[tag=SEAPT,x=90076,y=121,z=136,distance=0..25] at @s if entity @n[t
 execute as @a[tag=SEAPT,x=90076,y=121,z=136,distance=0..25] at @s if entity @n[tag=sc,scores={rng2=10}] run setblock 90078 125 137 minecraft:redstone_lamp[lit=false]
 #give @s iron_hoe[custom_name='{"text":"撬棍","italic":false,"color":"red"}',custom_data={sea_crowbar:true}]
 tp @e[tag=iframe_sea] ~ ~-500 ~
-kill @e[tag=iframe_sea]
+kill @e[tag=iframe_sea,x=80000,dx=20000,y=-1000,dy=999,z=-10000,dz=20000]
 execute positioned 90078 123 136 if entity @a[tag=SEAPT,distance=0..20] unless entity @e[type=glow_item_frame,distance=0..4] run summon minecraft:glow_item_frame ~ ~ ~ {Tags:[iframe_sea,iframe_sea_crowbar],Invisible:0b,Fixed:0b,Invulnerable:0b,Facing:3b,Item:{id:"minecraft:iron_hoe",components:{custom_name:'{"text":"撬棍","italic":false,"color":"red"}',custom_data:{sea_crowbar:true},attribute_modifiers:[{type:"generic.attack_damage",slot:"mainhand",id:"sea_weapon:001_01",amount:1.5,operation:"add_value"},{type:"generic.attack_speed",slot:"mainhand",id:"sea_weapon:001_02",amount:-1.5,operation:"add_value"}],unbreakable:{}}}}
 execute positioned 90106 129 141 if entity @a[tag=SEAPT,distance=0..20] unless entity @e[type=glow_item_frame,distance=0..4] run summon minecraft:glow_item_frame ~ ~ ~ {Tags:[iframe_sea,iframe_sea_crowbar],Invisible:0b,Fixed:0b,Invulnerable:0b,Facing:3b,Item:{id:"minecraft:iron_hoe",components:{custom_name:'{"text":"撬棍","italic":false,"color":"red"}',custom_data:{sea_crowbar:true},attribute_modifiers:[{type:"generic.attack_damage",slot:"mainhand",id:"sea_weapon:001_01",amount:1.5,operation:"add_value"},{type:"generic.attack_speed",slot:"mainhand",id:"sea_weapon:001_02",amount:-1.5,operation:"add_value"}],unbreakable:{}}}}
 execute positioned 90088 129 120 if entity @a[tag=SEAPT,distance=0..20] unless entity @e[type=glow_item_frame,distance=0..4] run summon minecraft:glow_item_frame ~ ~ ~ {Tags:[iframe_sea,iframe_sea_leg],Invisible:0b,Fixed:0b,Invulnerable:0b,Facing:3b,Item:{id:"minecraft:leather_leggings",components:{custom_name:'{"text":"基础防护裤","italic":false,"color":"red"}',custom_data:{sea_leg:true},attribute_modifiers:[{type:"generic.armor",slot:"legs",id:"sea_armor:001_01",amount:1.0,operation:"add_value"},{type:"generic.armor_toughness",slot:"legs",id:"sea_armor:001_02",amount:0.5,operation:"add_value"}],unbreakable:{}}}}
@@ -614,7 +614,7 @@ execute as @a[tag=SEAPT,x=80000,dx=20000,z=-10000,dz=20000,y=126,dy=5] at @s if 
 
 
 #激光
-execute as @a[x=90130.0,dx=2.2,y=124.5,dy=0,z=125.5,dz=0] run damage @s 3 sting
+execute as @e[x=90130.0,dx=2.2,y=124.5,dy=0,z=125.5,dz=0] run damage @s 3 sting
 execute if block 90146 123 130 crimson_button as @e[tag=!sea_laser_immune,x=90132.5,dx=0,y=122.2,dy=0,z=135.0,dz=3] run damage @s 3 sting
 execute if block 90109 123 120 crimson_button as @e[tag=!sea_laser_immune,x=90111.5,dx=0,y=123.5,dy=0,z=119.0,dz=2.3] run damage @s 3 sting
 execute if block 90109 123 130 crimson_button as @e[tag=!sea_laser_immune,x=90114.5,dx=0,y=123.5,dy=0,z=131.0,dz=2.3] run damage @s 3 sting
