@@ -232,14 +232,7 @@ lore=['{"text":"以前他们都说我是阴谋论，那现在又怎么讲？","c
 execute as @p[tag=SEAPT,nbt={Inventory:[{id:"minecraft:flow_banner_pattern"}]}] run function skyblock:sea/p/document
 
 
-execute as @e[type=interaction,tag=SEAcrafter] on target run scoreboard players enable @s sea_crafter
-execute as @e[type=interaction,tag=SEAcrafter] on target run tellraw @a[tag=SEAPT] [{"selector":"@s","color":"blue"},{"text":" 正在使用多功能工作站","color":"gray"}]
-execute as @e[type=interaction,tag=SEAcrafter] on target run scoreboard players set @s sea_crafter 1
-execute as @e[type=interaction,tag=SEAcrafter] run data remove entity @s interaction
-
-execute as @e[type=interaction,tag=SEAaidbox] on target run effect give @s instant_health 1 0 true
-execute as @e[type=interaction,tag=SEAaidbox] on target at @s run playsound minecraft:entity.generic.drink player @a ~ ~ ~ 0.5 0.6
-execute as @e[type=interaction,tag=SEAaidbox] run data remove entity @s interaction
+execute as @e[type=interaction,tag=SEAcrafter] at @s run function skyblock:sea/p/interaction
 
 #particle minecraft:trial_spawner_detection_ominous 90117.90 127.00 137.01 2 0 2 0.0 30
 execute as @n[tag=sc,scores={sea_4temp1=50..60}] run scoreboard players add @s sea_4temp1 1
@@ -267,14 +260,7 @@ execute as @a[tag=SEAPT,x=90131,y=122,z=136,distance=0..2.4,tag=!e_i_11] run tag
 
 
 #回响指南针
-execute as @a[tag=SEAPT,nbt={SelectedItem:{id:"minecraft:recovery_compass"}}] run effect give @s darkness 3 0 true
-execute as @a[tag=SEAPT,nbt={SelectedItem:{id:"minecraft:recovery_compass"}}] at @s run effect give @e[tag=SEAmob,distance=0..16] glowing 1 0 false
-execute if entity @a[tag=SEAPT,nbt={SelectedItem:{id:"minecraft:recovery_compass"}}] as @a at @s as @e[tag=SEAmob,distance=0..16] at @s run scoreboard players add @s sea_4temp9 1
-execute if entity @a[tag=SEAPT,nbt={SelectedItem:{id:"minecraft:recovery_compass"}}] as @a[tag=SEAPT] at @s at @e[tag=SEAmob,distance=8..16,scores={sea_4temp9=4}] run playsound minecraft:entity.warden.heartbeat hostile @s ~ ~ ~ 0.3 0.9
-execute if entity @a[tag=SEAPT,nbt={SelectedItem:{id:"minecraft:recovery_compass"}}] as @a[tag=SEAPT] at @s at @e[tag=SEAmob,distance=3..8,scores={sea_4temp9=4}] run playsound minecraft:entity.warden.heartbeat hostile @s ~ ~ ~ 0.3 1.2
-execute if entity @a[tag=SEAPT,nbt={SelectedItem:{id:"minecraft:recovery_compass"}}] as @a[tag=SEAPT] at @s at @e[tag=SEAmob,distance=3..8,scores={sea_4temp9=2}] run playsound minecraft:entity.warden.heartbeat hostile @s ~ ~ ~ 0.3 1.2
-execute if entity @a[tag=SEAPT,nbt={SelectedItem:{id:"minecraft:recovery_compass"}}] as @a[tag=SEAPT] at @s at @e[tag=SEAmob,distance=..3,scores={sea_4temp9=1..4}] run playsound minecraft:entity.warden.heartbeat hostile @s ~ ~ ~ 0.4 1.5
-execute as @a[tag=SEAPT,nbt={SelectedItem:{id:"minecraft:recovery_compass"}}] at @s as @e[tag=SEAmob,distance=0..16,scores={sea_4temp9=4}] at @s run scoreboard players set @s sea_4temp9 0
+execute as @a[tag=SEAPT,nbt={SelectedItem:{id:"minecraft:recovery_compass"}}] at @s run function skyblock:sea/p/echo_compass
 
 execute as @a[tag=SEAPT] at @s unless block ~ ~-1 ~ air if block ~ ~ ~ air run spawnpoint @s ~ ~ ~
 execute if entity @a[tag=SEAPT,tag=!seaPerm000] run clone 90121 122 108 90121 122 108 90118 123 106
@@ -322,28 +308,7 @@ execute if block 90088 128 114 air unless entity @a[tag=SEAPT,tag=e_i_20] run fi
 execute if block 90088 128 114 air unless entity @a[tag=SEAPT,tag=e_i_20] run tag @a[tag=SEAPT] add e_i_20
 
 
-
-clear @a[tag=SEAPT] basalt
-clear @a[tag=SEAPT] item_frame
-clear @a[tag=SEAPT] iron_bars
-clear @a[tag=SEAPT] deepslate_tiles
-clear @a[tag=SEAPT] cracked_deepslate_tiles
-clear @a[tag=SEAPT] deepslate_tile_slab
-clear @a[tag=SEAPT] waxed_copper_block
-clear @a[tag=SEAPT] slime_block
-clear @a[tag=SEAPT] string
-clear @a[tag=SEAPT] heart_pottery_sherd
-clear @a[tag=SEAPT] burn_pottery_sherd
-clear @a[tag=SEAPT] friend_pottery_sherd
-clear @a[tag=SEAPT] prize_pottery_sherd
-clear @a[tag=SEAPT] mourner_pottery_sherd
-clear @a[tag=SEAPT] waxed_copper_grate
-clear @a[tag=SEAPT] waxed_oxidized_copper_grate
-clear @a[tag=SEAPT] lantern
-clear @a[tag=SEAPT] polished_diorite
-clear @a[tag=SEAPT] polished_tuff_wall
-clear @a[tag=SEAPT] decorated_pot
-clear @a[tag=SEAPT] structure_void
+execute as @a[tag=SEAPT] at @s run function skyblock:sea/p/clear
 
 execute as @a[tag=SEAPT,nbt={Inventory:[{id:"minecraft:raiser_armor_trim_smithing_template"}]}] at @s run function skyblock:sea/shop_trim {trim:sea_i_trim_zombie, trim_name:"牧羊人",trim_type:raiser_armor_trim_smithing_template}
 execute as @a[tag=SEAPT,nbt={Inventory:[{id:"minecraft:wayfinder_armor_trim_smithing_template"}]}] at @s run function skyblock:sea/shop_trim {trim:sea_i_trim_human, trim_name:"醒殉徒",trim_type:wayfinder_armor_trim_smithing_template}
