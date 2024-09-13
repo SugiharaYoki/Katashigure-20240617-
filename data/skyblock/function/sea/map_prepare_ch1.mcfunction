@@ -372,3 +372,6 @@ setblock 90145 123 113 crimson_button[facing=north,face=wall]
 setblock 90145 123 100 crimson_button[facing=south,face=wall]
 
 setblock 90117 123 117 lever[facing=north,face=wall,powered=false]
+
+setblock 90074 123 138 minecraft:crimson_button[facing=east]
+setblock 90071 125 140 minecraft:redstone_lamp[lit=false]
