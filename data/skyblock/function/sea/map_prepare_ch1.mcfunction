@@ -354,6 +354,9 @@ summon block_display 90132.5 122.2 135.0 {transformation:{left_rotation:[0f,0f,0
 summon block_display 90111.5 123.5 119.00 {transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[3.2f,0.03f,0.03f],translation:[0f,0f,0f]},block_state:{Name:redstone_block},Rotation:[90f,0f],Tags:["sea_blockdisplay","sea_laser_close_1"]}
 summon block_display 90114.5 123.5 131.00 {transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[3.2f,0.03f,0.03f],translation:[0f,0f,0f]},block_state:{Name:redstone_block},Rotation:[90f,0f],Tags:["sea_blockdisplay","sea_laser_close_2"]}
 summon block_display 90146.0 124.0 115.50 {transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[3.2f,0.03f,0.03f],translation:[0f,0f,0f]},block_state:{Name:redstone_block},Tags:["sea_blockdisplay","sea_laser_close_4"]}
+
+summon block_display 90145.5 121.0 102.5 {transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[0.03f,4.3f,0.03f],translation:[0f,0f,0f]},block_state:{Name:redstone_block},Tags:["sea_blockdisplay","sea_laser_close_5"]}
+
 setblock 90109 123 120 crimson_button[facing=east,face=wall]
 setblock 90109 123 130 crimson_button[facing=east,face=wall]
 setblock 90094 124 147 minecraft:redstone_lamp[lit=false]
@@ -361,3 +364,5 @@ setblock 90095 123 145 crimson_button[facing=north,face=wall]
 
 setblock 90146 123 130 crimson_button[facing=east,face=wall]
 setblock 90145 123 113 crimson_button[facing=north,face=wall]
+setblock 90145 123 100 crimson_button[facing=south,face=wall]
+
