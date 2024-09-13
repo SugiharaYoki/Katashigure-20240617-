@@ -613,10 +613,25 @@ execute as @a[tag=SEAPT,x=80000,dx=20000,z=-10000,dz=20000,y=126,dy=5] at @s if 
 
 
 
+#激光
+execute as @a[x=90130.0,dx=2.2,y=124.5,dy=0,z=125.5,dz=0] run damage @s 3 sting
+execute if block 90146 123 130 crimson_button as @e[tag=!sea_laser_immune,x=90132.5,dx=0,y=122.2,dy=0,z=135.0,dz=3] run damage @s 3 sting
+execute if block 90109 123 120 crimson_button as @e[tag=!sea_laser_immune,x=90111.5,dx=0,y=123.5,dy=0,z=119.0,dz=2.3] run damage @s 3 sting
+execute if block 90109 123 130 crimson_button as @e[tag=!sea_laser_immune,x=90114.5,dx=0,y=123.5,dy=0,z=131.0,dz=2.3] run damage @s 3 sting
+execute if block 90145 123 113 crimson_button as @e[tag=!sea_laser_immune,x=90146.0,dx=2.2,y=124.0,dy=0,z=115.5,dz=0] run damage @s 3 sting
 
+execute if block 90109 123 120 crimson_button[powered=true] run kill @n[tag=sea_laser_close_1]
+execute if block 90109 123 120 crimson_button[powered=true] run setblock 90109 123 120 warped_button[facing=east,face=wall]
+execute if block 90109 123 130 crimson_button[powered=true] run kill @n[tag=sea_laser_close_2]
+execute if block 90109 123 130 crimson_button[powered=true] run setblock 90109 123 130 warped_button[facing=east,face=wall]
 
+execute if block 90095 123 145 crimson_button[powered=true] run setblock 90094 124 147 minecraft:redstone_lamp[lit=true]
+execute if block 90095 123 145 crimson_button[powered=true] run setblock 90095 123 145 warped_button[facing=north,face=wall]
 
-
+execute if block 90146 123 130 crimson_button[powered=true] run kill @n[tag=sea_laser_close_3]
+execute if block 90146 123 130 crimson_button[powered=true] run setblock 90146 123 130 warped_button[facing=east,face=wall]
+execute if block 90145 123 113 crimson_button[powered=true] run kill @n[tag=sea_laser_close_4]
+execute if block 90145 123 113 crimson_button[powered=true] run setblock 90145 123 113 warped_button[facing=east,face=wall]
 
 
 
