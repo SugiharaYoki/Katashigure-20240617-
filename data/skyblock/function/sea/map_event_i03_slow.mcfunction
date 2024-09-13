@@ -220,8 +220,8 @@ execute as @n[tag=sc,scores={sea_4temp2=103}] positioned 90133 137 108 if entity
  run tellraw @a[distance=0..50] {"text":"玛瑞莲：“这里是玛瑞莲。欢迎你们来到甲板。”","color":"dark_purple"}
 execute as @n[tag=sc,scores={sea_4temp2=103}] positioned 90133 137 108 as @p[tag=SEAPT] at @s \
  run tellraw @a[tag=SEAPT,distance=3..] [{"selector":"@s","color":"white"},{"text":"：我再次接通联络总站了！快来我这里。","color":"white"}]
-execute as @n[tag=sc,scores={sea_4temp2=103..364}] positioned 90133 137 108 as @p[tag=SEAPT,nbt={SelectedItem:{id:"minecraft:spyglass"}},scores={SEA_story=2..}] at @s run tellraw @a[tag=SEAPT] [{"selector":"@s","color":"white"},{"text":"：「跳过了剧情」","color":"white"}]
-execute as @n[tag=sc,scores={sea_4temp2=103..364}] positioned 90133 137 108 if entity @p[tag=SEAPT,nbt={SelectedItem:{id:"minecraft:spyglass"}},scores={SEA_story=2..}] run scoreboard players set @n[tag=sc] sea_4temp2 365
+execute as @n[tag=sc,scores={sea_4temp2=103..364}] positioned 90133 137 108 as @p[tag=SEAPT,nbt={SelectedItem:{id:"minecraft:spyglass"}},scores={SEA_story=2..}] unless entity @p[tag=SEAPT,scores={SEA_story=..1}] at @s run tellraw @a[tag=SEAPT] [{"selector":"@s","color":"white"},{"text":"：「跳过了剧情」","color":"white"}]
+execute as @n[tag=sc,scores={sea_4temp2=103..364}] positioned 90133 137 108 if entity @p[tag=SEAPT,nbt={SelectedItem:{id:"minecraft:spyglass"}},scores={SEA_story=2..}] unless entity @p[tag=SEAPT,scores={SEA_story=..1}] run scoreboard players set @n[tag=sc] sea_4temp2 365
 execute as @n[tag=sc,scores={sea_4temp2=122}] positioned 90133 137 108 as @p[tag=SEAPT] if entity @n[tag=sc,scores={sea_player=1}] \
  run tellraw @a[distance=0..50] [{"selector":"@s","color":"white"},{"text":"：玛瑞莲小姐，这里通往办公区域的所有通道都被堵住了，我该怎么上去？","color":"white"}]
 execute as @n[tag=sc,scores={sea_4temp2=122}] positioned 90133 137 108 as @p[tag=SEAPT] if entity @n[tag=sc,scores={sea_player=2..}] \
