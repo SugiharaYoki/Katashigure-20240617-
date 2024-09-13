@@ -263,8 +263,8 @@ item replace block 90081 104 134 container.27 with structure_void[custom_name='{
 
 item replace block 90080 104 134 container.0 with flow_banner_pattern[custom_data={sea_doc01:true},custom_name='{"text":"调查记录 6月29日 17:42","italic":true,"color":"dark_purple","italic":false}',lore=['{"text":"记录者为忒尔克西钻井平台调查小组成员，也是我本人。","color":"white","italic":false}','{"text":"钻井平台距离失联已经超过36小时，我们在黄昏之时赶到了平台的西南驳口。","color":"white","italic":false}','{"text":"整座海上设施此时一片死寂，至少上百名的工作人员皆数不见踪影。","color":"white","italic":false}']]
 
-item replace block 90095 122 128 container.3 with globe_banner_pattern[custom_data={sea_doc02:true},custom_name='{"text":"何日的新闻","italic":true,"color":"dark_purple","italic":false}',lore=['{"text":"这座忒尔克西作为2130年往后的唯一一座新建钻井平台，其背负的不仅是开采石油的使命。","color":"white","italic":false}','{"text":"于2128年在大洋洲火圈地带接连发生的火山喷发，将这一批埋藏于地层深处的石油送入了太平洋。","color":"white","italic":false}','{"text":"这些石油在地理位置的分布再一次提醒了现代的人们过去有关“姆大陆”的学术猜想。","color":"white","italic":false}','{"text":"忒尔克西海上钻井平台在开采这批石油的同时，也将探索位于各处石油分布区域汇聚……","color":"white","italic":false}']]
-execute if entity @n[tag=sc,tag=sea_doc02] run item replace block 90080 104 134 container.1 with globe_banner_pattern[custom_data={sea_doc02:true},custom_name='{"text":"何日的新闻","italic":true,"color":"dark_purple","italic":false}',lore=['{"text":"这座忒尔克西作为2130年往后的唯一一座新建钻井平台，其背负的不仅是开采石油的使命。","color":"white","italic":false}','{"text":"于2128年在大洋洲火圈地带接连发生的火山喷发，将这一批埋藏于地层深处的石油送入了太平洋。","color":"white","italic":false}','{"text":"这些石油在地理位置的分布再一次提醒了现代的人们过去有关“姆大陆”的学术猜想。","color":"white","italic":false}','{"text":"忒尔克西海上钻井平台在开采这批石油的同时，也将探索位于各处石油分布区域汇聚……","color":"white","italic":false}']]
+item replace block 90095 122 128 container.3 with flow_banner_pattern[custom_data={sea_doc02:true},custom_name='{"text":"何日的新闻","italic":true,"color":"dark_purple","italic":false}',lore=['{"text":"这座忒尔克西作为2130年往后的唯一一座新建钻井平台，其背负的不仅是开采石油的使命。","color":"white","italic":false}','{"text":"于2128年在大洋洲火圈地带接连发生的火山喷发，将这一批埋藏于地层深处的石油送入了太平洋。","color":"white","italic":false}','{"text":"这些石油在地理位置的分布再一次提醒了现代的人们过去有关“姆大陆”的学术猜想。","color":"white","italic":false}','{"text":"忒尔克西海上钻井平台在开采这批石油的同时，也将探索位于各处石油分布区域汇聚……","color":"white","italic":false}']]
+execute if entity @n[tag=sc,tag=sea_doc02] run item replace block 90080 104 134 container.1 with flow_banner_pattern[custom_data={sea_doc02:true},custom_name='{"text":"何日的新闻","italic":true,"color":"dark_purple","italic":false}',lore=['{"text":"这座忒尔克西作为2130年往后的唯一一座新建钻井平台，其背负的不仅是开采石油的使命。","color":"white","italic":false}','{"text":"于2128年在大洋洲火圈地带接连发生的火山喷发，将这一批埋藏于地层深处的石油送入了太平洋。","color":"white","italic":false}','{"text":"这些石油在地理位置的分布再一次提醒了现代的人们过去有关“姆大陆”的学术猜想。","color":"white","italic":false}','{"text":"忒尔克西海上钻井平台在开采这批石油的同时，也将探索位于各处石油分布区域汇聚……","color":"white","italic":false}']]
 
 item replace block 90095 122 128 container.15 with flow_banner_pattern[custom_data={sea_doc03:true},custom_name=\
 '{"text":"文件室的笔记 - 丹尼尔","italic":true,"color":"dark_purple","italic":false}',\
@@ -425,60 +425,7 @@ execute if entity @n[tag=sc,tag=sea_doc21] run item replace block 90080 104 134 
 '{"text":"宿舍楼二楼的笔记 - 马绍尔","italic":true,"color":"dark_purple","italic":false}',\
 lore=['{"text":"以前他们都说我是阴谋论，那现在又怎么讲？","color":"white","italic":false}','{"text":"我早就说了，谁没事会在钻井平台上建钢处理车间。","color":"white","italic":false}','{"text":"还有仓库楼，存比石油还多的乱七八糟的东西？","color":"white","italic":false}','{"text":"咱们平台水下那个设施到底是研究什么的？","color":"white","italic":false}','{"text":"细菌是不是从那里头出来的，不然还能是哪？","color":"white","italic":false}']]
 
-execute if entity @p[tag=SEAPT,nbt={Inventory:[{components:{"minecraft:custom_data":{sea_doc01:true}}}]}] run tag @n[tag=sc] add sea_doc01
-execute if entity @p[tag=SEAPT,nbt={Inventory:[{components:{"minecraft:custom_data":{sea_doc02:true}}}]}] run tag @n[tag=sc] add sea_doc02
-execute if entity @p[tag=SEAPT,nbt={Inventory:[{components:{"minecraft:custom_data":{sea_doc03:true}}}]}] run tag @n[tag=sc] add sea_doc03
-execute if entity @p[tag=SEAPT,nbt={Inventory:[{components:{"minecraft:custom_data":{sea_doc04:true}}}]}] run tag @n[tag=sc] add sea_doc04
-execute if entity @p[tag=SEAPT,nbt={Inventory:[{components:{"minecraft:custom_data":{sea_doc05:true}}}]}] run tag @n[tag=sc] add sea_doc05
-execute if entity @p[tag=SEAPT,nbt={Inventory:[{components:{"minecraft:custom_data":{sea_doc06:true}}}]}] run tag @n[tag=sc] add sea_doc06
-execute if entity @p[tag=SEAPT,nbt={Inventory:[{components:{"minecraft:custom_data":{sea_doc07:true}}}]}] run tag @n[tag=sc] add sea_doc07
-execute if entity @p[tag=SEAPT,nbt={Inventory:[{components:{"minecraft:custom_data":{sea_doc08:true}}}]}] run tag @n[tag=sc] add sea_doc08
-execute if entity @p[tag=SEAPT,nbt={Inventory:[{components:{"minecraft:custom_data":{sea_doc09:true}}}]}] run tag @n[tag=sc] add sea_doc09
-execute if entity @p[tag=SEAPT,nbt={Inventory:[{components:{"minecraft:custom_data":{sea_doc10:true}}}]}] run tag @n[tag=sc] add sea_doc10
-execute if entity @p[tag=SEAPT,nbt={Inventory:[{components:{"minecraft:custom_data":{sea_doc11:true}}}]}] run tag @n[tag=sc] add sea_doc11
-execute if entity @p[tag=SEAPT,nbt={Inventory:[{components:{"minecraft:custom_data":{sea_doc12:true}}}]}] run tag @n[tag=sc] add sea_doc12
-execute if entity @p[tag=SEAPT,nbt={Inventory:[{components:{"minecraft:custom_data":{sea_doc13:true}}}]}] run tag @n[tag=sc] add sea_doc13
-execute if entity @p[tag=SEAPT,nbt={Inventory:[{components:{"minecraft:custom_data":{sea_doc14:true}}}]}] run tag @n[tag=sc] add sea_doc14
-execute if entity @p[tag=SEAPT,nbt={Inventory:[{components:{"minecraft:custom_data":{sea_doc15:true}}}]}] run tag @n[tag=sc] add sea_doc15
-execute if entity @p[tag=SEAPT,nbt={Inventory:[{components:{"minecraft:custom_data":{sea_doc16:true}}}]}] run tag @n[tag=sc] add sea_doc16
-execute if entity @p[tag=SEAPT,nbt={Inventory:[{components:{"minecraft:custom_data":{sea_doc17:true}}}]}] run tag @n[tag=sc] add sea_doc17
-execute if entity @p[tag=SEAPT,nbt={Inventory:[{components:{"minecraft:custom_data":{sea_doc18:true}}}]}] run tag @n[tag=sc] add sea_doc18
-execute if entity @p[tag=SEAPT,nbt={Inventory:[{components:{"minecraft:custom_data":{sea_doc19:true}}}]}] run tag @n[tag=sc] add sea_doc19
-execute if entity @p[tag=SEAPT,nbt={Inventory:[{components:{"minecraft:custom_data":{sea_doc20:true}}}]}] run tag @n[tag=sc] add sea_doc20
-execute if entity @p[tag=SEAPT,nbt={Inventory:[{components:{"minecraft:custom_data":{sea_doc21:true}}}]}] run tag @n[tag=sc] add sea_doc21
-execute if entity @p[tag=SEAPT,nbt={Inventory:[{components:{"minecraft:custom_data":{sea_doc22:true}}}]}] run tag @n[tag=sc] add sea_doc22
-execute if entity @p[tag=SEAPT,nbt={Inventory:[{components:{"minecraft:custom_data":{sea_doc23:true}}}]}] run tag @n[tag=sc] add sea_doc23
-execute if entity @p[tag=SEAPT,nbt={Inventory:[{components:{"minecraft:custom_data":{sea_doc24:true}}}]}] run tag @n[tag=sc] add sea_doc24
-execute if entity @p[tag=SEAPT,nbt={Inventory:[{components:{"minecraft:custom_data":{sea_doc25:true}}}]}] run tag @n[tag=sc] add sea_doc25
-execute if entity @p[tag=SEAPT,nbt={Inventory:[{components:{"minecraft:custom_data":{sea_doc26:true}}}]}] run tag @n[tag=sc] add sea_doc26
-execute if entity @p[tag=SEAPT,nbt={Inventory:[{components:{"minecraft:custom_data":{sea_doc27:true}}}]}] run tag @n[tag=sc] add sea_doc27
-execute if entity @p[tag=SEAPT,nbt={Inventory:[{components:{"minecraft:custom_data":{sea_doc01b:true}}}]}] run tag @n[tag=sc] add sea_doc01b
-execute if entity @p[tag=SEAPT,nbt={Inventory:[{components:{"minecraft:custom_data":{sea_doc02b:true}}}]}] run tag @n[tag=sc] add sea_doc02b
-execute if entity @p[tag=SEAPT,nbt={Inventory:[{components:{"minecraft:custom_data":{sea_doc03b:true}}}]}] run tag @n[tag=sc] add sea_doc03b
-execute if entity @p[tag=SEAPT,nbt={Inventory:[{components:{"minecraft:custom_data":{sea_doc04b:true}}}]}] run tag @n[tag=sc] add sea_doc04b
-execute if entity @p[tag=SEAPT,nbt={Inventory:[{components:{"minecraft:custom_data":{sea_doc05b:true}}}]}] run tag @n[tag=sc] add sea_doc05b
-execute if entity @p[tag=SEAPT,nbt={Inventory:[{components:{"minecraft:custom_data":{sea_doc06b:true}}}]}] run tag @n[tag=sc] add sea_doc06b
-execute if entity @p[tag=SEAPT,nbt={Inventory:[{components:{"minecraft:custom_data":{sea_doc07b:true}}}]}] run tag @n[tag=sc] add sea_doc07b
-execute if entity @p[tag=SEAPT,nbt={Inventory:[{components:{"minecraft:custom_data":{sea_doc08b:true}}}]}] run tag @n[tag=sc] add sea_doc08b
-execute if entity @p[tag=SEAPT,nbt={Inventory:[{components:{"minecraft:custom_data":{sea_doc09b:true}}}]}] run tag @n[tag=sc] add sea_doc09b
-execute if entity @p[tag=SEAPT,nbt={Inventory:[{components:{"minecraft:custom_data":{sea_doc10b:true}}}]}] run tag @n[tag=sc] add sea_doc10b
-execute if entity @p[tag=SEAPT,nbt={Inventory:[{components:{"minecraft:custom_data":{sea_doc11b:true}}}]}] run tag @n[tag=sc] add sea_doc11b
-execute if entity @p[tag=SEAPT,nbt={Inventory:[{components:{"minecraft:custom_data":{sea_doc12b:true}}}]}] run tag @n[tag=sc] add sea_doc12b
-execute if entity @p[tag=SEAPT,nbt={Inventory:[{components:{"minecraft:custom_data":{sea_doc13b:true}}}]}] run tag @n[tag=sc] add sea_doc13b
-execute if entity @p[tag=SEAPT,nbt={Inventory:[{components:{"minecraft:custom_data":{sea_doc14b:true}}}]}] run tag @n[tag=sc] add sea_doc14b
-execute if entity @p[tag=SEAPT,nbt={Inventory:[{components:{"minecraft:custom_data":{sea_doc15b:true}}}]}] run tag @n[tag=sc] add sea_doc15b
-execute if entity @p[tag=SEAPT,nbt={Inventory:[{components:{"minecraft:custom_data":{sea_doc16b:true}}}]}] run tag @n[tag=sc] add sea_doc16b
-execute if entity @p[tag=SEAPT,nbt={Inventory:[{components:{"minecraft:custom_data":{sea_doc17b:true}}}]}] run tag @n[tag=sc] add sea_doc17b
-execute if entity @p[tag=SEAPT,nbt={Inventory:[{components:{"minecraft:custom_data":{sea_doc18b:true}}}]}] run tag @n[tag=sc] add sea_doc18b
-execute if entity @p[tag=SEAPT,nbt={Inventory:[{components:{"minecraft:custom_data":{sea_doc19b:true}}}]}] run tag @n[tag=sc] add sea_doc19b
-execute if entity @p[tag=SEAPT,nbt={Inventory:[{components:{"minecraft:custom_data":{sea_doc20b:true}}}]}] run tag @n[tag=sc] add sea_doc20b
-execute if entity @p[tag=SEAPT,nbt={Inventory:[{components:{"minecraft:custom_data":{sea_doc21b:true}}}]}] run tag @n[tag=sc] add sea_doc21b
-execute if entity @p[tag=SEAPT,nbt={Inventory:[{components:{"minecraft:custom_data":{sea_doc22b:true}}}]}] run tag @n[tag=sc] add sea_doc22b
-execute if entity @p[tag=SEAPT,nbt={Inventory:[{components:{"minecraft:custom_data":{sea_doc23b:true}}}]}] run tag @n[tag=sc] add sea_doc23b
-execute if entity @p[tag=SEAPT,nbt={Inventory:[{components:{"minecraft:custom_data":{sea_doc24b:true}}}]}] run tag @n[tag=sc] add sea_doc24b
-execute if entity @p[tag=SEAPT,nbt={Inventory:[{components:{"minecraft:custom_data":{sea_doc25b:true}}}]}] run tag @n[tag=sc] add sea_doc25b
-execute if entity @p[tag=SEAPT,nbt={Inventory:[{components:{"minecraft:custom_data":{sea_doc26b:true}}}]}] run tag @n[tag=sc] add sea_doc26b
-execute if entity @p[tag=SEAPT,nbt={Inventory:[{components:{"minecraft:custom_data":{sea_doc27b:true}}}]}] run tag @n[tag=sc] add sea_doc27b
+execute as @p[tag=SEAPT,nbt={Inventory:[{id:"minecraft:flow_banner_pattern"}]}] run function skyblock:sea/p/document
 
 
 execute as @e[type=interaction,tag=SEAcrafter] on target run scoreboard players enable @s sea_crafter
