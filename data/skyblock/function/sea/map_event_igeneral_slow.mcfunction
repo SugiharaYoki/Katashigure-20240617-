@@ -634,7 +634,7 @@ execute if block 90095 123 145 crimson_button[powered=true] run setblock 90095 1
 execute if block 90146 123 130 crimson_button[powered=true] run kill @n[tag=sea_laser_close_3]
 execute if block 90146 123 130 crimson_button[powered=true] run setblock 90146 123 130 warped_button[facing=east,face=wall]
 execute if block 90145 123 113 crimson_button[powered=true] run kill @n[tag=sea_laser_close_4]
-execute if block 90145 123 113 crimson_button[powered=true] run setblock 90145 123 113 warped_button[facing=east,face=wall]
+execute if block 90145 123 113 crimson_button[powered=true] run setblock 90145 123 113 warped_button[facing=north,face=wall]
 execute if block 90145 123 100 crimson_button[powered=true] run kill @n[tag=sea_laser_close_5]
 execute if block 90145 123 100 crimson_button[powered=true] run setblock 90145 123 100 warped_button[facing=south,face=wall]
 
