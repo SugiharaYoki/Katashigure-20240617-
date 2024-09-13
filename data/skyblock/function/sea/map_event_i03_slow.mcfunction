@@ -232,7 +232,7 @@ execute as @n[tag=sc,scores={sea_4temp2=172}] positioned 90133 137 108 as @p[tag
  run tellraw @a[distance=0..50] {"text":"玛瑞莲：“这植物唯一的弱点是高频声波。邪教徒显然意识到了这一点，他们占领了整座通讯中心，关停了通讯阵列。”","color":"dark_purple"}
 execute as @n[tag=sc,scores={sea_4temp2=203}] positioned 90133 137 108 as @p[tag=SEAPT] if entity @n[tag=sc,scores={sea_player=1..}] run tellraw @a[distance=0..50] [{"selector":"@s","color":"white"},{"text":"：通讯中心？是指在桥对面的附属平台吗？","color":"white"}]
 execute as @n[tag=sc,scores={sea_4temp2=232}] positioned 90133 137 108 as @p[tag=SEAPT] \
- run tellraw @a[distance=0..50] {"text":"玛瑞莲：“没错……您得想办法到那里操控卫星天线。办公区域的天线只能用来有线通话，无法进行广播，因此我这里无能为力。”","color":"dark_purple"}
+ run tellraw @a[distance=0..50] {"text":"玛瑞莲：“没错……您得想办法到那里操控卫星天线。办公区域的天线只能用来即时通话，无法进行广播，因此我这里无能为力。”","color":"dark_purple"}
 execute as @n[tag=sc,scores={sea_4temp2=270}] positioned 90133 137 108 as @p[tag=SEAPT] if entity @n[tag=sc,scores={sea_player=1}] \
  run tellraw @a[distance=0..50] [{"selector":"@s","color":"white"},{"text":"：底下的门是锁的，我该如何到达对面？我一个人去强行突破的话，胜算是多少？","color":"white"}]
 execute as @n[tag=sc,scores={sea_4temp2=270}] positioned 90133 137 108 as @p[tag=SEAPT] if entity @n[tag=sc,scores={sea_player=2..3}] \
