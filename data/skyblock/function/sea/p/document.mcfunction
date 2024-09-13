@@ -53,4 +53,4 @@ execute if entity @s[nbt={Inventory:[{components:{"minecraft:custom_data":{sea_d
 execute if entity @s[nbt={Inventory:[{components:{"minecraft:custom_data":{sea_doc26b:true}}}]}] run tag @n[tag=sc] add sea_doc26b
 execute if entity @s[nbt={Inventory:[{components:{"minecraft:custom_data":{sea_doc27b:true}}}]}] run tag @n[tag=sc] add sea_doc27b
 clear @s flow_banner_pattern
-tellraw @s {"text":"已收录新的档案","color":"green"}
+tellraw @s {"text":"档案已收录","color":"green"}
