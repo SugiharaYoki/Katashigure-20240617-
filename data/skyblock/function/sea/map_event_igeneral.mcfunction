@@ -5,9 +5,8 @@ execute store result score @n[tag=sc] rng1 run random value 1..10
 execute if entity @n[tag=sc,scores={rng1=1..4}] run particle minecraft:electric_spark 90109.07 123.43 120.69 0.2 0.2 0.2 0.05 1
 execute if entity @n[tag=sc,scores={rng1=1..4}] run particle minecraft:electric_spark 90115.88 123.41 138.48 0.2 0.2 0.2 0.05 1
 
-execute as @e[type=spectral_arrow] at @s if entity @a[tag=SEAPT,distance=0..5] run tag @s add SEAspectral
-execute as @e[type=spectral_arrow,tag=SEAspectral] at @s run function skyblock:sea/p/spectral
-execute as @e[type=spectral_arrow,tag=SEAspectral,nbt={inGround:true}] at @s run kill @s
+execute as @e[type=spectral_arrow,x=90000,y=100,z=0,distance=..5000] run tag @s add SEAspectral
+execute as @e[type=spectral_arrow,tag=SEAspectral,nbt={inGround:false}] at @s run function skyblock:sea/p/spectral
 
 execute as @e[type=item,x=90000,y=100,z=100,distance=..3000] at @s run function skyblock:sea/p/item
 
