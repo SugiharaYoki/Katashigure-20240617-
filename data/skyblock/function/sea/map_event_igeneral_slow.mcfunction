@@ -621,6 +621,8 @@ execute if block 90109 123 130 crimson_button as @e[tag=!sea_laser_immune,x=9011
 execute if block 90145 123 113 crimson_button as @e[tag=!sea_laser_immune,x=90146.0,dx=2.2,y=123.8,dy=0,z=115.5,dz=0] run damage @s 3 sting
 execute if block 90145 123 100 crimson_button as @e[tag=!sea_laser_immune,x=90145.0,dx=0,y=121.0,dy=5,z=102.5,dz=0] run damage @s 3 sting
 
+execute if block 90117 123 117 lever[powered=false] as @e[tag=!sea_laser_immune,x=90118.5,dx=0,y=123.5,dy=0,z=115.0,dz=2.0] run damage @s 3 sting
+
 execute if block 90109 123 120 crimson_button[powered=true] run kill @n[tag=sea_laser_close_1]
 execute if block 90109 123 120 crimson_button[powered=true] run setblock 90109 123 120 warped_button[facing=east,face=wall]
 execute if block 90109 123 130 crimson_button[powered=true] run kill @n[tag=sea_laser_close_2]
@@ -636,8 +638,7 @@ execute if block 90145 123 113 crimson_button[powered=true] run setblock 90145 1
 execute if block 90145 123 100 crimson_button[powered=true] run kill @n[tag=sea_laser_close_5]
 execute if block 90145 123 100 crimson_button[powered=true] run setblock 90145 123 100 warped_button[facing=south,face=wall]
 
-
-
-
+execute if block 90117 123 117 lever[powered=true] run kill @n[tag=sea_laser_close_6]
+execute if block 90117 123 117 lever[powered=false] unless entity @n[tag=sea_laser_close_6] run summon block_display 90118.5 123.5 115.00 {transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[2.2f,0.03f,0.03f],translation:[0f,0f,0f]},block_state:{Name:redstone_block},Rotation:[90f,0f],Tags:["sea_blockdisplay","sea_laser_close_6"]}
 
 
