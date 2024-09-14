@@ -329,8 +329,6 @@ execute positioned 90113 149 147 if entity @a[tag=SEAPT,distance=..2.3] unless e
 execute positioned 90113 149 147 if entity @a[tag=SEAPT,distance=..2.3] unless entity @n[tag=SEAch3_spawn,distance=0..3] positioned 90102 149 144 run function skyblock:sea/m/drowned_maintenance
 execute positioned 90113 149 147 if entity @a[tag=SEAPT,distance=..2.3] unless entity @n[tag=SEAch3_spawn,distance=0..3] positioned 90102 149 144 run function skyblock:sea/m/drowned
 execute positioned 90113 149 147 if entity @a[tag=SEAPT,distance=..2.3] unless entity @n[tag=SEAch3_spawn,distance=0..3] positioned 90102 149 144 run function skyblock:sea/m/drowned
-execute positioned 90113 149 147 if entity @a[tag=SEAPT,distance=..2.3] unless entity @n[tag=SEAch3_spawn,distance=0..3] positioned 90110 149 135 run function skyblock:sea/m/zombie_security2
-execute positioned 90113 149 147 if entity @a[tag=SEAPT,distance=..2.3] unless entity @n[tag=SEAch3_spawn,distance=0..3] positioned 90110 149 135 run function skyblock:sea/m/zombie_security2
 execute positioned 90113 149 147 if entity @a[tag=SEAPT,distance=..2.3] unless entity @n[tag=SEAch3_spawn,distance=0..3] positioned 90107 155 143 run function skyblock:sea/m/zombie_bomb
 execute positioned 90113 149 147 if entity @a[tag=SEAPT,distance=..2.3] unless entity @n[tag=SEAch3_spawn,distance=0..3] positioned 90107 155 143 run function skyblock:sea/m/skeleton
 execute positioned 90113 149 147 if entity @a[tag=SEAPT,distance=..2.3] unless entity @n[tag=SEAch3_spawn,distance=0..3] positioned 90107 155 143 run function skyblock:sea/m/skeleton
