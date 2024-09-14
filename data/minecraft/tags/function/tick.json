@@ -1,5 +1,6 @@
 {
     "values": [
-        "skyblock:azr/main"
+        "skyblock:azr/main",
+        "skyblock:cmd/cmd_main"
     ]
 }
