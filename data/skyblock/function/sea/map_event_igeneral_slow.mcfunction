@@ -243,7 +243,7 @@ item replace block 90107 156 135 container.13 with flow_banner_pattern[custom_da
 execute as @p[tag=SEAPT,nbt={Inventory:[{id:"minecraft:flow_banner_pattern"}]}] run function skyblock:sea/p/document
 
 
-execute as @e[type=interaction,tag=SEAcrafter] at @s run function skyblock:sea/p/interaction
+execute as @e[type=interaction,x=90000,y=100,z=100,distance=..5000] at @s run function skyblock:sea/p/interaction
 
 #particle minecraft:trial_spawner_detection_ominous 90117.90 127.00 137.01 2 0 2 0.0 30
 execute as @n[tag=sc,scores={sea_4temp1=50..60}] run scoreboard players add @s sea_4temp1 1
