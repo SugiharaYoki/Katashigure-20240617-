@@ -8,7 +8,7 @@ execute unless score @s CmdType matches -2147483648..2147483647 if score @s CmdT
 
 execute unless score @s CmdType matches -2147483648..2147483647 if score @s CmdTrigger matches 2 run function skyblock:cmd/hanoi/init with storage cmd:io
 #Hanoi - running
-execute if score @s CmdType matches 0 if score @s CmdTrigger matches 0 run function skyblock:cmd/hanoi/bttn_0
-execute if score @s CmdType matches 0 if score @s CmdTrigger matches 1 run function skyblock:cmd/hanoi/bttn_1
-execute if score @s CmdType matches 0 if score @s CmdTrigger matches 2 run function skyblock:cmd/hanoi/bttn_2
+execute if score @s CmdType matches 0 if score @s CmdTrigger matches 0 run function skyblock:cmd/hanoi/bttn_0 with storage cmd:io
+execute if score @s CmdType matches 0 if score @s CmdTrigger matches 1 run function skyblock:cmd/hanoi/bttn_1 with storage cmd:io
+execute if score @s CmdType matches 0 if score @s CmdTrigger matches 2 run function skyblock:cmd/hanoi/bttn_2 with storage cmd:io
 execute if score @s CmdType matches 0 if score @s CmdTrigger matches 3 run function skyblock:cmd/hanoi/bttn_3
