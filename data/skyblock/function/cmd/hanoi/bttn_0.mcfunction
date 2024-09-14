@@ -20,3 +20,4 @@ scoreboard players reset cmd:io.temp2 skyblock_system
 
 #output
 $execute unless data storage data_space[{UUID:$(current_user)}].List1[-1] run data merge storage cmd:io {color1:"gray"}
+function skyblock:cmd/hanoi/print_main with storage cmd:io
