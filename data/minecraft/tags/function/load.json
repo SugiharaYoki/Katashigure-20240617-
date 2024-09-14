@@ -1,5 +1,6 @@
 {
     "values": [
-        "skyblock:load"
+        "skyblock:load",
+        "skyblock:cmd/cmd_init"
     ]
 }

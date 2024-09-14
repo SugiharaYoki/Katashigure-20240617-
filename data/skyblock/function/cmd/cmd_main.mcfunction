@@ -1,0 +1,1 @@
+execute as @a[scores={CmdTrigger=-2147483648..2147483647}] run function skyblock:cmd/cmd_trigger

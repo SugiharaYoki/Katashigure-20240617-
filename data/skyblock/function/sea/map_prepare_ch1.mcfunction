@@ -335,6 +335,9 @@ item replace block 90153 145 133 container.11 with arrow 10
 item replace block 90153 145 133 container.13 with flint 5
 item replace block 90153 145 133 container.15 with arrow 10
 
+setblock 90072 110 145 chest[facing=west]
+item replace block 90072 110 145 container.13 with emerald 5
+
 summon minecraft:item_frame 90126 123 146 {Invisible:1b,Fixed:0b,Invulnerable:0b,Facing:1b,Item:{id:"minecraft:gold_ingot"}}
 summon minecraft:item_frame 90068 123 129 {Invisible:1b,Fixed:0b,Invulnerable:0b,Facing:1b,Item:{id:"minecraft:gold_ingot"}}
 summon minecraft:item_frame 90142 122 141 {Invisible:1b,Fixed:0b,Invulnerable:0b,Facing:1b,Item:{id:"minecraft:gold_ingot"}}
@@ -348,5 +351,27 @@ setblock 90081 104 134 barrel[facing=south]
 fill 90163 129 113 90163 127 114 iron_bars
 
 
+#试作激光
+summon block_display 90130.0 124.5 125.5 {transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[3.2f,0.03f,0.03f],translation:[0f,0f,0f]},block_state:{Name:redstone_block},Tags:["sea_blockdisplay"]}
+summon block_display 90132.5 122.2 135.0 {transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[3.2f,0.03f,0.03f],translation:[0f,0f,0f]},block_state:{Name:redstone_block},Rotation:[90f,0f],Tags:["sea_blockdisplay","sea_laser_close_3"]}
+summon block_display 90111.5 123.5 119.00 {transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[3.2f,0.03f,0.03f],translation:[0f,0f,0f]},block_state:{Name:redstone_block},Rotation:[90f,0f],Tags:["sea_blockdisplay","sea_laser_close_1"]}
+summon block_display 90114.5 123.5 131.00 {transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[3.2f,0.03f,0.03f],translation:[0f,0f,0f]},block_state:{Name:redstone_block},Rotation:[90f,0f],Tags:["sea_blockdisplay","sea_laser_close_2"]}
+summon block_display 90147.0 123.8 115.50 {transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[3.2f,0.03f,0.03f],translation:[0f,0f,0f]},block_state:{Name:redstone_block},Tags:["sea_blockdisplay","sea_laser_close_4"]}
 
+#采矿输油系统主控激光
+summon block_display 90118.5 123.5 116.00 {transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[2.2f,0.03f,0.03f],translation:[0f,0f,0f]},block_state:{Name:redstone_block},Rotation:[90f,0f],Tags:["sea_blockdisplay","sea_laser_close_6"]}
+summon block_display 90145.5 122.0 102.5 {transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[0.03f,4.3f,0.03f],translation:[0f,0f,0f]},block_state:{Name:redstone_block},Tags:["sea_blockdisplay","sea_laser_close_5"]}
 
+setblock 90109 123 120 crimson_button[facing=east,face=wall]
+setblock 90109 123 130 crimson_button[facing=east,face=wall]
+setblock 90094 124 147 minecraft:redstone_lamp[lit=false]
+setblock 90095 123 145 crimson_button[facing=north,face=wall]
+
+setblock 90146 123 130 crimson_button[facing=east,face=wall]
+setblock 90145 123 113 crimson_button[facing=north,face=wall]
+setblock 90145 123 100 crimson_button[facing=south,face=wall]
+
+setblock 90117 123 117 lever[facing=north,face=wall,powered=false]
+
+setblock 90074 123 138 minecraft:crimson_button[facing=east]
+setblock 90071 125 140 minecraft:redstone_lamp[lit=false]
