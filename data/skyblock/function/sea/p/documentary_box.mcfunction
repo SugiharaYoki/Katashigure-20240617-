@@ -112,6 +112,7 @@ item replace block 90081 104 134 container.27 with structure_void[custom_name='{
 ,lore=['{"text":"暂无解锁方式。","color":"white","italic":false}']]
 
 
+
 item replace block 90080 104 134 container.0 with globe_banner_pattern[custom_data={sea_doc01:true},custom_name='{"text":"调查记录 6月29日 17:42","italic":true,"color":"dark_purple","italic":false}',lore=['{"text":"记录者为忒尔克西钻井平台调查小组成员，也是我本人。","color":"white","italic":false}','{"text":"钻井平台距离失联已经超过36小时，我们在黄昏之时赶到了平台的西南驳口。","color":"white","italic":false}','{"text":"整座海上设施此时一片死寂，至少上百名的工作人员皆数不见踪影。","color":"white","italic":false}']]
 execute if entity @s[tag=sea_doc02] run item replace block 90080 104 134 container.1 with flow_banner_pattern[custom_data={sea_doc02:true},custom_name='{"text":"何日的新闻","italic":true,"color":"dark_purple","italic":false}',lore=['{"text":"这座忒尔克西作为2130年往后的唯一一座新建钻井平台，其背负的不仅是开采石油的使命。","color":"white","italic":false}','{"text":"于2128年在大洋洲火圈地带接连发生的火山喷发，将这一批埋藏于地层深处的石油送入了太平洋。","color":"white","italic":false}','{"text":"这些石油在地理位置的分布再一次提醒了现代的人们过去有关“姆大陆”的学术猜想。","color":"white","italic":false}','{"text":"忒尔克西海上钻井平台在开采这批石油的同时，也将探索位于各处石油分布区域汇聚……","color":"white","italic":false}']]
 execute if entity @s[tag=sea_doc03] run item replace block 90080 104 134 container.2 with flow_banner_pattern[custom_data={sea_doc03:true},custom_name=\
@@ -147,6 +148,11 @@ lore=['{"text":"我自己的症状终于恶化了……","color":"white","italic
 execute if entity @s[tag=sea_doc14] run item replace block 90080 104 134 container.13 with flow_banner_pattern[custom_data={sea_doc14:true},custom_name=\
 '{"text":"不明来历的纸条","italic":true,"color":"dark_purple","italic":false}',\
 lore=['{"text":"法莫洛斯医生也变成了怪物。","color":"white","italic":false}','{"text":"我顺着痕迹找到这里，但是幸存者均已离去。","color":"white","italic":false}','{"text":"他们之中定是有人掌握了新情报。","color":"white","italic":false}']]
+
+
+execute if entity @s[tag=sea_doc01b] run item replace block 90081 104 134 container.0 with flow_banner_pattern[custom_data={sea_doc01b:true},custom_name='{"text":"燃料架B内的便签纸","italic":true,"color":"dark_purple","italic":false}',lore=['{"text":"上面写着歪歪扭扭的字：","color":"white","italic":false}','{"text":"“从右到左仔细观察北水箱西面的蜡烛”","color":"white","italic":false}']]
+execute if entity @s[tag=sea_doc02b] run item replace block 90081 104 134 container.1 with flow_banner_pattern[custom_data={sea_doc02b:true},custom_name='{"text":"副宿舍楼个人储藏柜内的便签纸","italic":true,"color":"dark_purple","italic":false}',lore=['{"text":"上面写着歪歪扭扭的字：","color":"white","italic":false}','{"text":"“正方形左上”","color":"white","italic":false}','{"text":"“左上的斜对角”","color":"white","italic":false}','{"text":"“右上”","color":"white","italic":false}','{"text":"“剩下的那个角”","color":"white","italic":false}']]
+
 execute if entity @s[tag=sea_doc10b] run item replace block 90081 104 134 container.9 with flow_banner_pattern[custom_data={sea_doc10b:true},custom_name=\
 '{"text":"维修仓库的笔记 - 麦迪逊","italic":true,"color":"dark_purple","italic":false}',\
 lore=['{"text":"你是谁？","color":"white","italic":false}','{"text":"能找到这里来，你肯定已经做出炸弹了吧。","color":"white","italic":false}','{"text":"我把这些地方用凝胶封了起来。","color":"white","italic":false}','{"text":"看来你是有资格的人。燃料室有我给你准备的礼物。","color":"white","italic":false}']]
@@ -180,3 +186,6 @@ lore=['{"text":"邪教徒已经占领了通讯中心。","color":"white","italic
 execute if entity @s[tag=sea_doc21] run item replace block 90080 104 134 container.20 with flow_banner_pattern[custom_data={sea_doc21:true},custom_name=\
 '{"text":"宿舍楼二楼的笔记 - 马绍尔","italic":true,"color":"dark_purple","italic":false}',\
 lore=['{"text":"以前他们都说我是阴谋论，那现在又怎么讲？","color":"white","italic":false}','{"text":"我早就说了，谁没事会在钻井平台上建钢处理车间。","color":"white","italic":false}','{"text":"还有仓库楼，存比石油还多的乱七八糟的东西？","color":"white","italic":false}','{"text":"咱们平台水下那个设施到底是研究什么的？","color":"white","italic":false}','{"text":"细菌是不是从那里头出来的，不然还能是哪？","color":"white","italic":false}']]
+execute if entity @s[tag=sea_doc22] run item replace block 90080 104 134 container.21 with flow_banner_pattern[custom_data={sea_doc22:true},custom_name=\
+'{"text":"副宿舍楼二楼的笔记 - 肯","italic":true,"color":"dark_purple","italic":false}',\
+lore=['{"text":"19号 28万桶 - 石油开采量未满足需求。","color":"white","italic":false}','{"text":"20号 31万桶 - 石油开采量满足需求。","color":"white","italic":false}','{"text":"接下来的两个月内将尝试增加20%产量。","color":"white","italic":false}','{"text":"预计明天产量30万桶——理所当然。","color":"white","italic":false}','{"text":"实验体人数（后面的字都被狠狠划掉了）","color":"white","italic":false}']]

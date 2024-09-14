@@ -257,4 +257,45 @@ item replace block 90122 149 139 container.12 with fire_charge[custom_name='{"te
 item replace block 90122 149 139 container.14 with fire_charge[custom_name='{"text":"定时炸弹","italic":true,"color":"blue","italic":false}',lore=['{"text":"它会在你丢出去3秒后爆炸！","color":"white","italic":false}','{"text":"炸到自己的话，职业生涯就会结束了吧。","color":"white","italic":false}','{"text":"可用于破坏凝胶壁障与瓦罐。","color":"white","italic":false}']] 1
 
 
+#宿舍侧楼 门
+setblock 90106 149 149 redstone_block
+setblock 90106 149 149 air
+setblock 90100 150 149 minecraft:potted_allium
+setblock 90106 149 143 redstone_block
+setblock 90106 149 143 air
+setblock 90100 150 143 minecraft:potted_azure_bluet
+setblock 90106 155 149 redstone_block
+setblock 90106 155 149 air
+setblock 90100 156 149 minecraft:potted_poppy
+setblock 90106 155 143 redstone_block
+setblock 90106 155 143 air
+setblock 90100 156 143 minecraft:potted_blue_orchid
 
+setblock 90100 150 135 minecraft:potted_jungle_sapling
+
+setblock 90105 149 146 air
+setblock 90106 149 135 air
+setblock 90104 155 141 air
+setblock 90105 155 146 air
+setblock 90105 149 146 decorated_pot{sherds:["friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd"],item:{count: 3, id:"minecraft:emerald"}}
+setblock 90106 149 135 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 1, id:"minecraft:beef"}}
+setblock 90104 155 141 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 1, id:"minecraft:cooked_beef"}}
+setblock 90105 155 146 decorated_pot{sherds:["burn_pottery_sherd","burn_pottery_sherd","burn_pottery_sherd","burn_pottery_sherd"],item:{count: 1, id:"minecraft:blaze_powder"}}
+
+setblock 90100 155 139 chest[facing=north]
+item replace block 90100 155 139 container.12 with arrow 3
+
+
+setblock 90107 156 135 barrel[facing=south]{Lock:"副宿舍楼2F - 个人储藏柜2B的钥匙"}
+item replace block 90107 156 135 container.11 with gunpowder 1
+
+item replace block 90107 156 135 container.15 with emerald 2
+
+setblock 90104 155 151 chest[facing=north]
+
+fill 90115 150 127 90115 137 127 air
+fill 90130 153 129 90124 153 129 lever[facing=north]
+
+setblock 90101 149 131 minecraft:red_candle[candles=3,lit=true]
+setblock 90103 149 131 minecraft:red_candle[candles=3,lit=true]
+setblock 90102 150 130 minecraft:amethyst_cluster

@@ -125,6 +125,8 @@ item replace block 90114 123 125 container.14 with trial_key[custom_name='{"text
 item replace block 90142 134 138 container.14 with trial_key[custom_name='{"text":"宿舍楼3楼某处的钥匙","italic":true,"color":"yellow","italic":false}']
 item replace block 90122 122 128 container.13 with trial_key[custom_name='{"text":"折断的饮用水房钥匙","italic":true,"color":"yellow","italic":false}',\
 lore=['{"text":"010?1","color":"white","italic":false}']]
+item replace block 90104 155 151 container.13 with trial_key[custom_name='{"text":"副宿舍楼2F - 个人储藏柜2B的钥匙","italic":true,"color":"yellow","italic":false}',\
+lore=['{"text":"没错，就是最中间那个，别多想了！","color":"white","italic":false}']]
 
 #法莫洛斯：医务部门 总管 - 死亡：被感染成为腐尸，第一章结尾被主角杀死
 #玛瑞莲：机械研发部门 贝塔小组 组长 - 死亡：被艾德雯娜用弩箭杀害
@@ -139,6 +141,7 @@ lore=['{"text":"010?1","color":"white","italic":false}']]
 #潘：餐饮部门 厨师 - 死亡：被瑞弗特杀死食用，遗体位置不明
 #斯顿：钻井作业小组A 成员 - 死亡：在宿舍楼失守后与其他人员一同遇难
 #马绍尔：钻井作业小组A 成员 - 死亡：在宿舍楼失守后与其他人员一同遇难
+#肯：物资盘点小组 成员 - 死亡：在宿舍楼失守后与其他人员一同遇难
 #丹尼尔：医务部门 医务员 - 死亡：为法莫洛斯殿后，被腐尸围攻致死
 #权之殊能：大天使沙利叶麾下的能天使
 #权之执理：大天使拉贵尔麾下的主天使
@@ -191,7 +194,7 @@ item replace block 90075 122 143 container.15 with flow_banner_pattern[custom_da
 lore=['{"text":"法莫洛斯医生也变成了怪物。","color":"white","italic":false}','{"text":"我顺着痕迹找到这里，但是幸存者均已离去。","color":"white","italic":false}','{"text":"他们之中定是有人掌握了新情报。","color":"white","italic":false}']]
 
 item replace block 90086 143 116 container.13 with flow_banner_pattern[custom_data={sea_doc01b:true},custom_name='{"text":"燃料架B内的便签纸","italic":true,"color":"dark_purple","italic":false}',lore=['{"text":"上面写着歪歪扭扭的字：","color":"white","italic":false}','{"text":"“从右到左仔细观察北水箱西面的蜡烛”","color":"white","italic":false}']]
-execute if entity @n[tag=sc,tag=sea_doc01b] run item replace block 90081 104 134 container.0 with flow_banner_pattern[custom_data={sea_doc01b:true},custom_name='{"text":"燃料架B内的便签纸","italic":true,"color":"dark_purple","italic":false}',lore=['{"text":"上面写着歪歪扭扭的字：","color":"white","italic":false}','{"text":"“从右到左仔细观察北水箱西面的蜡烛”","color":"white","italic":false}']]
+
 
 item replace block 90114 123 125 container.12 with flow_banner_pattern[custom_data={sea_doc10b:true},custom_name=\
 '{"text":"维修仓库的笔记 - 麦迪逊","italic":true,"color":"dark_purple","italic":false}',\
@@ -228,6 +231,14 @@ lore=['{"text":"邪教徒已经占领了通讯中心。","color":"white","italic
 item replace block 90126 143 138 container.14 with flow_banner_pattern[custom_data={sea_doc21:true},custom_name=\
 '{"text":"宿舍楼二楼的笔记 - 马绍尔","italic":true,"color":"dark_purple","italic":false}',\
 lore=['{"text":"以前他们都说我是阴谋论，那现在又怎么讲？","color":"white","italic":false}','{"text":"我早就说了，谁没事会在钻井平台上建钢处理车间。","color":"white","italic":false}','{"text":"还有仓库楼，存比石油还多的乱七八糟的东西？","color":"white","italic":false}','{"text":"咱们平台水下那个设施到底是研究什么的？","color":"white","italic":false}','{"text":"细菌是不是从那里头出来的，不然还能是哪？","color":"white","italic":false}']]
+
+item replace block 90100 155 139 container.14 with flow_banner_pattern[custom_data={sea_doc22:true},custom_name=\
+'{"text":"副宿舍楼二楼的笔记 - 肯","italic":true,"color":"dark_purple","italic":false}',\
+lore=['{"text":"19号 28万桶 - 石油开采量未满足需求。","color":"white","italic":false}','{"text":"20号 31万桶 - 石油开采量满足需求。","color":"white","italic":false}','{"text":"接下来的两个月内将尝试增加20%产量。","color":"white","italic":false}','{"text":"预计明天产量30万桶——理所当然。","color":"white","italic":false}','{"text":"实验体人数（后面的字都被狠狠划掉了）","color":"white","italic":false}']]
+
+item replace block 90107 156 135 container.13 with flow_banner_pattern[custom_data={sea_doc02b:true},custom_name='{"text":"副宿舍楼个人储藏柜内的便签纸","italic":true,"color":"dark_purple","italic":false}',lore=['{"text":"上面写着歪歪扭扭的字：","color":"white","italic":false}','{"text":"“正方形左上”","color":"white","italic":false}','{"text":"“左上的斜对角”","color":"white","italic":false}','{"text":"“右上”","color":"white","italic":false}','{"text":"“剩下的那个角”","color":"white","italic":false}','{"text":"“第一个角”","color":"white","italic":false}','{"text":"“左下”","color":"white","italic":false}','{"text":"“第四个角的斜对面”","color":"white","italic":false}']]
+#红白蓝紫红紫
+#1001110
 
 execute as @p[tag=SEAPT,nbt={Inventory:[{id:"minecraft:flow_banner_pattern"}]}] run function skyblock:sea/p/document
 
@@ -360,3 +371,9 @@ execute if block 90117 123 117 lever[powered=false] unless entity @n[tag=sea_las
 
 execute if block 90074 123 138 crimson_button[powered=true] run setblock 90071 125 140 minecraft:redstone_lamp[lit=true]
 execute if block 90074 123 138 crimson_button[powered=true] run setblock 90074 123 138 warped_button[facing=east,face=wall]
+
+execute if block 90115 152 127 bamboo_button[powered=true] run fill 90115 150 127 90115 137 127 ladder[facing=west]
+
+
+
+
