@@ -1,4 +1,6 @@
-$data merge storage cmd:io {data_space:[{UUID:$(current_user),List1:[],List2:[],List3:[]}]}
+$data modify storage cmd:io data_space[{UUID:$(current_user)}].List1 set value []
+$data modify storage cmd:io data_space[{UUID:$(current_user)}].List2 set value []
+$data modify storage cmd:io data_space[{UUID:$(current_user)}].List3 set value []
 scoreboard players operation temp HanoiCount = @s HanoiCount 
 function skyblock:cmd/hanoi/init_loop with storage cmd:io
 
