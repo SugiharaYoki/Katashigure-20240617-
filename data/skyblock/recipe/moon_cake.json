@@ -1,0 +1,35 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#H#",
+        "WEW"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:sugar"
+        },
+        "H": {
+            "item": "minecraft:honey_bottle"
+        },
+        "W": {
+            "item": "minecraft:wheat"
+        },
+        "E": {
+            "item": "minecraft:egg"
+        }
+    },
+    "result": {
+        "id": "pumpkin_pie",
+        "count": 2,
+        "components": {
+            "food": {
+                "can_always_eat": true,
+                "eat_seconds": 2,
+                "nutrition": 3,
+                "saturation": 3
+            },
+            "custom_name": "{\"text\":\"月饼\",\"italic\":true,\"color\":\"gold\"}",
+            "lore":["{\"text\":\"中秋快乐\",\"italic\":true,\"color\":\"white\"}"]
+        }
+    }
+}
