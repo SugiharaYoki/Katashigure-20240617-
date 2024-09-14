@@ -6,7 +6,3 @@ execute unless score @s CmdType matches -2147483648..2147483647 if score @s CmdT
 
 execute unless score @s CmdType matches -2147483648..2147483647 if score @s CmdTrigger matches 2 run data modify storage cmd:io current_user set from entity @s UUID
 execute unless score @s CmdType matches -2147483648..2147483647 if score @s CmdTrigger matches 2 run function skyblock:cmd/hanoi/init with storage cmd:io
-
-scoreboard players reset @a CmdTrigger
-scoreboard players enable @a CmdTrigger
-scoreboard players enable @a HanoiCount
