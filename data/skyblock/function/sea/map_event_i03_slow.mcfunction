@@ -63,7 +63,7 @@ execute positioned 90072 139 110 if entity @a[distance=..43] unless entity @n[ta
 execute positioned 90072 139 110 if entity @a[distance=..43] unless entity @n[tag=SEAch3_spawn_initial,distance=0..3] positioned 90102 137 153 run function skyblock:sea/m/silverfish
 execute positioned 90072 139 110 if entity @a[distance=..43] unless entity @n[tag=SEAch3_spawn_initial,distance=0..3] run summon marker ~ ~ ~ {Tags:["SEAch3_spawn_initial"]}
 
-
+#give @p written_book[written_book_content={pages:['["",{"text":"\\u526f\\u5bbf\\u820d\\u697c\\u7684\\u56db\\u95f4\\u6807\\u51c6\\u623f\\u91cc\\u90fd\\u6709\\u82b1\\u5bf9\\u5427\\uff0c\\u90a3\\u4fbf\\u662f\\u5bc6\\u7801\\u3002\\n\\n\\n"},{"text":"\\u7ea2\\u8272","color":"red"},{"text":"\\u4ee3\\u88681\\n\\n","color":"black"},{"text":"\\u84dd\\u8272","color":"blue"},{"text":"\\u4ee3\\u88680\\n\\n","color":"black"},{"text":"\\u767d\\u8272","color":"gray"},{"text":"\\u4e0d\\u4ee3\\u8868","color":"black"},{"text":"\\u7ea2\\u8272","color":"red"},{"text":"\\n\\n","color":"black"},{"text":"1","color":"red"},{"text":"+","color":"black"},{"text":"1","color":"blue"},{"text":"=1","color":"black"}]'],title:"副宿舍楼2F的展示书",author:"斯顿"}]
 
 execute positioned 90100 137 100 if entity @a[distance=..13] unless entity @n[tag=SEAch3_spawn,distance=0..3] run function skyblock:sea/m/drowned_small
 execute positioned 90100 137 100 if entity @a[distance=..13] unless entity @n[tag=SEAch3_spawn,distance=0..3] run function skyblock:sea/m/drowned_small
@@ -321,3 +321,41 @@ execute positioned 90119 144 149 if entity @a[distance=..3] unless entity @n[tag
 execute positioned 90120 149 144 if entity @a[distance=..1.7] unless entity @n[tag=SEAch3_spawn,distance=0..3] positioned 90118 149 143 run function skyblock:sea/m/silverfish
 execute positioned 90120 149 144 if entity @a[distance=..1.7] unless entity @n[tag=SEAch3_spawn,distance=0..3] positioned 90118 149 143 run function skyblock:sea/m/silverfish
 execute positioned 90120 149 144 if entity @a[distance=..1.7] unless entity @n[tag=SEAch3_spawn,distance=0..3] run summon marker ~ ~ ~ {Tags:["SEAch3_spawn"]}
+
+
+
+
+execute positioned 90113 149 147 if entity @a[distance=..2.3] unless entity @n[tag=SEAch3_spawn,distance=0..3] positioned 90109 149 141 run function skyblock:sea/m/nightblind
+execute positioned 90113 149 147 if entity @a[distance=..2.3] unless entity @n[tag=SEAch3_spawn,distance=0..3] positioned 90102 149 144 run function skyblock:sea/m/drowned_maintenance
+execute positioned 90113 149 147 if entity @a[distance=..2.3] unless entity @n[tag=SEAch3_spawn,distance=0..3] positioned 90102 149 144 run function skyblock:sea/m/drowned
+execute positioned 90113 149 147 if entity @a[distance=..2.3] unless entity @n[tag=SEAch3_spawn,distance=0..3] positioned 90102 149 144 run function skyblock:sea/m/drowned
+execute positioned 90113 149 147 if entity @a[distance=..2.3] unless entity @n[tag=SEAch3_spawn,distance=0..3] positioned 90110 149 135 run function skyblock:sea/m/zombie_security2
+execute positioned 90113 149 147 if entity @a[distance=..2.3] unless entity @n[tag=SEAch3_spawn,distance=0..3] positioned 90110 149 135 run function skyblock:sea/m/zombie_security2
+execute positioned 90113 149 147 if entity @a[distance=..2.3] unless entity @n[tag=SEAch3_spawn,distance=0..3] positioned 90107 155 143 run function skyblock:sea/m/zombie_bomb
+execute positioned 90113 149 147 if entity @a[distance=..2.3] unless entity @n[tag=SEAch3_spawn,distance=0..3] positioned 90107 155 143 run function skyblock:sea/m/skeleton
+execute positioned 90113 149 147 if entity @a[distance=..2.3] unless entity @n[tag=SEAch3_spawn,distance=0..3] positioned 90107 155 143 run function skyblock:sea/m/skeleton
+execute positioned 90113 149 147 if entity @a[distance=..2.3] unless entity @n[tag=SEAch3_spawn,distance=0..3] positioned 90103 155 138 run function skyblock:sea/m/skeleton_melee
+execute positioned 90113 149 147 if entity @a[distance=..2.3] unless entity @n[tag=SEAch3_spawn,distance=0..3] positioned 90103 155 138 run function skyblock:sea/m/skeleton_melee
+execute positioned 90113 149 147 if entity @a[distance=..2.3] unless entity @n[tag=SEAch3_spawn,distance=0..3] positioned 90102 149 139 run function skyblock:sea/m/drowned
+execute positioned 90113 149 147 if entity @a[distance=..2.3] unless entity @n[tag=SEAch3_spawn,distance=0..3] positioned 90102 149 139 run function skyblock:sea/m/drowned
+execute positioned 90113 149 147 if entity @a[distance=..2.3] unless entity @n[tag=SEAch3_spawn,distance=0..3] positioned 90102 149 139 run function skyblock:sea/m/drowned
+execute positioned 90113 149 147 if entity @a[distance=..2.3] unless entity @n[tag=SEAch3_spawn,distance=0..3] positioned 90102 149 139 run function skyblock:sea/m/drowned
+execute positioned 90113 149 147 if entity @a[distance=..2.3] unless entity @n[tag=SEAch3_spawn,distance=0..3] positioned 90102 149 131 run function skyblock:sea/m/special_ston
+execute positioned 90113 149 147 if entity @a[distance=..2.3] unless entity @n[tag=SEAch3_spawn,distance=0..3] run summon marker ~ ~ ~ {Tags:["SEAch3_spawn"]}
+
+execute positioned 90102 149 131 if entity @a[distance=..2.3] unless block 90102 150 130 air as @n[tag=SEAeventch3_m_ston] at @s run data modify entity @s NoAI set value false
+execute positioned 90102 149 131 if entity @a[distance=..2.3] unless block 90102 150 130 air run playsound block.candle.extinguish block @a 90101 149 131 1 0.8
+execute positioned 90102 149 131 if entity @a[distance=..2.3] unless block 90102 150 130 air run playsound block.candle.extinguish block @a 90103 149 131 1 0.8
+execute positioned 90102 149 131 if entity @a[distance=..2.3] unless block 90102 150 130 air run setblock 90101 149 131 minecraft:red_candle[candles=3,lit=false]
+execute positioned 90102 149 131 if entity @a[distance=..2.3] unless block 90102 150 130 air run setblock 90103 149 131 minecraft:red_candle[candles=3,lit=false]
+execute positioned 90102 149 131 if entity @a[distance=..2.3] unless block 90102 150 130 air run kill @e[type=item,x=90102,y=150,z=130,distance=0..3]
+execute positioned 90102 149 131 if entity @a[distance=..2.3] unless block 90102 150 130 air run setblock 90102 150 130 air destroy
+
+execute positioned 90107 155 147 if entity @a[distance=..2.3] unless entity @n[tag=SEAch3_spawn,distance=0..3] positioned 90102 155 149 run function skyblock:sea/m/nightblind
+execute positioned 90107 155 147 if entity @a[distance=..2.3] unless entity @n[tag=SEAch3_spawn,distance=0..3] positioned 90101 155 150 run function skyblock:sea/m/skeleton_melee
+execute positioned 90107 155 147 if entity @a[distance=..2.3] unless entity @n[tag=SEAch3_spawn,distance=0..3] positioned 90101 155 150 run function skyblock:sea/m/skeleton_melee
+
+execute positioned 90107 155 147 if entity @a[distance=..2.3] unless entity @n[tag=SEAch3_spawn,distance=0..3] run summon marker ~ ~ ~ {Tags:["SEAch3_spawn"]}
+
+
+
