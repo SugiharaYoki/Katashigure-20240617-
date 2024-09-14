@@ -1,4 +1,4 @@
-data merge storage cmd:io {color1:"green"}
+data merge storage cmd:io {color3:"green"}
 #pickup
 $execute unless data storage cmd:io data_space[{UUID:$(current_user)}].pickup run data modify storage cmd:io data_space[{UUID:$(current_user)}].temp set from storage cmd:io data_space[{UUID:$(current_user)}].List3[-1]
 $execute if data storage cmd:io data_space[{UUID:$(current_user)}].temp run data modify storage cmd:io data_space[{UUID:$(current_user)}].pickup set from storage cmd:io data_space[{UUID:$(current_user)}].temp
