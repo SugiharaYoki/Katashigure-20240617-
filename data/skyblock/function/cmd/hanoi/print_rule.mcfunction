@@ -1,4 +1,4 @@
-function skyblock:cmd/hanoi/mainpage
+function skyblock:cmd/hanoi/print_mainpage
 
 tellraw @s [{"text":"· 汉诺塔","color":"green"},{"text":"规则一览","color":"yellow"}]
 tellraw @s [{"text":"  - 游戏开始时，你将获得三个列表，其中一个列表从大到小排列了一些数字","color": "gray"}]
