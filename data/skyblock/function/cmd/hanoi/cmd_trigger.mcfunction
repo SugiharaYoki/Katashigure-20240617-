@@ -11,5 +11,3 @@ execute if score @s CmdType matches 0 if score @s CmdTrigger matches 0 run funct
 execute if score @s CmdType matches 0 if score @s CmdTrigger matches 1 run function skyblock:cmd/hanoi/bttn_1 with storage cmd:io
 execute if score @s CmdType matches 0 if score @s CmdTrigger matches 2 run function skyblock:cmd/hanoi/bttn_2 with storage cmd:io
 execute if score @s CmdType matches 0 if score @s CmdTrigger matches 3 run function skyblock:cmd/hanoi/bttn_3
-
-w XuanYu1725_XYU 1?
