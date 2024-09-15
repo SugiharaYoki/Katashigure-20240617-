@@ -1,9 +1,9 @@
 #-----------------1
 function skyblock:azr/shop/purchase/categorie1 {rng:1,trigger:84301}
 #-----------------2
-function skyblock:azr/shop/purchase/categorie1 {rng:1,trigger:84304}
+function skyblock:azr/shop/purchase/categorie1 {rng:2,trigger:84304}
 #-----------------3
-function skyblock:azr/shop/purchase/categorie1 {rng:1,trigger:84307}
+function skyblock:azr/shop/purchase/categorie1 {rng:3,trigger:84307}
 #-----------------4
 
 #execute if score @s Azr_Shop_rng4 matches 0 run tellraw @s [{"text":"   "},{"text":"木剑","color":"white"},{"text":"  2 绿宝石 ","color":"gold"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 84302"},"hoverEvent":{"action":"show_text","contents":{"text":"普通的木剑","color":"white"}}},{"text":" || 木斧","color":"white"},{"text":"  2 绿宝石 ","color":"gold"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8430233"},"hoverEvent":{"action":"show_text","contents":{"text":"普通的木斧","color":"white"}}}]
