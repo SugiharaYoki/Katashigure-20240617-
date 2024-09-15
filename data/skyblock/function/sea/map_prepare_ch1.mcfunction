@@ -376,3 +376,6 @@ setblock 90117 123 117 lever[facing=north,face=wall,powered=false]
 
 setblock 90074 123 138 minecraft:crimson_button[facing=east]
 setblock 90071 125 140 minecraft:redstone_lamp[lit=false]
+
+
+fill 90085 103 140 90085 101 141 minecraft:waxed_copper_grate
