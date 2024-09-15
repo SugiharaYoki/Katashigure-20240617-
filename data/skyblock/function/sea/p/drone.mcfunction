@@ -1,6 +1,7 @@
-execute if entity @a[tag=SEAPT,distance=0..4] unless entity @s[scores={sea_4temp1=-11..}] run scoreboard players set @s sea_4temp1 -10
-execute if score @s sea_4temp1 matches -9 run playsound minecraft:block.note_block.bell block @a ~ ~ ~ 0.8 1.3
-scoreboard players add @s[scores={sea_4temp1=-11..}] sea_4temp1 1
+execute if entity @a[tag=SEAPT,distance=0..4] unless entity @s[scores={sea_4temp1=-16..}] run scoreboard players set @s sea_4temp1 -15
+execute if score @s sea_4temp1 matches -14 run playsound minecraft:block.note_block.bell block @a ~ ~ ~ 0.8 1.3
+execute if score @s sea_4temp1 matches -14..-10 run particle minecraft:trial_spawner_detection_ominous ~ ~0.3 ~ 0.1 0.3 0.1 0 4
+scoreboard players add @s[scores={sea_4temp1=-16..}] sea_4temp1 1
 execute if score @s sea_4temp1 matches 2 run playsound block.bamboo.step block @a ~ ~ ~ 0.7 1.35
 execute if score @s sea_4temp1 matches 8 run playsound block.bamboo.step block @a ~ ~ ~ 0.7 1.4
 execute if score @s sea_4temp1 matches 13 run playsound block.bamboo.step block @a ~ ~ ~ 0.7 1.45
