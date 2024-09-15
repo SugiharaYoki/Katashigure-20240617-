@@ -183,9 +183,9 @@ execute as @n[tag=sc,scores={sea_4temp2=1144}] run playsound minecraft:block.iro
 
 execute as @n[tag=sc,scores={sea_4temp2=1144}] positioned 90133 122 114 run function skyblock:sea/m/pillager
 execute as @n[tag=sc,scores={sea_4temp2=1144}] positioned 90138 122 115 run function skyblock:sea/m/drowned_shield
-execute as @n[tag=sc,scores={sea_4temp2=1144}] positioned 90133 122 129 run function skyblock:sea/m/drowned_shield
-execute as @n[tag=sc,scores={sea_4temp2=1144}] positioned 90133 122 129 run function skyblock:sea/m/drowned_hat
-execute as @n[tag=sc,scores={sea_4temp2=1144}] positioned 90133 122 129 run function skyblock:sea/m/drowned_hat
+execute as @n[tag=sc,scores={sea_4temp2=1144,sea_player=2..}] positioned 90133 122 129 run function skyblock:sea/m/drowned_shield
+execute as @n[tag=sc,scores={sea_4temp2=1144,sea_player=4..}] positioned 90133 122 129 run function skyblock:sea/m/drowned_hat
+execute as @n[tag=sc,scores={sea_4temp2=1144,sea_player=4..}] positioned 90133 122 129 run function skyblock:sea/m/drowned_hat
 execute as @n[tag=sc,scores={sea_4temp2=1144}] positioned 90140 115 148 run function skyblock:sea/m/zombie_security2
 execute as @n[tag=sc,scores={sea_4temp2=1144}] positioned 90140 115 148 run function skyblock:sea/m/drowned_shield
 execute as @n[tag=sc,scores={sea_4temp2=1144}] positioned 90140 115 148 run function skyblock:sea/m/drowned_shield
