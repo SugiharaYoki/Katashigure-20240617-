@@ -24,24 +24,31 @@ execute if score @s sea_4temp1 matches 36.. run scoreboard players add @s sea_4t
 execute if score @s sea_4temp1 matches 38.. run scoreboard players add @s sea_4temp2 3
 execute if score @s sea_4temp1 matches 40.. run scoreboard players add @s sea_4temp2 3
 
-execute if score @s sea_4temp1 matches 2.. store result score @s sea_4temp5 run random value 1..16
-execute if score @s sea_4temp1 matches 24.. if score @s sea_4temp5 matches 1 run summon arrow ~ ~0.1 ~ {Motion:[1.0,0.1,0.0],damage:3}
-execute if score @s sea_4temp1 matches 24.. if score @s sea_4temp5 matches 2 run summon arrow ~ ~0.1 ~ {Motion:[0.0,0.1,1.0],damage:3}
-execute if score @s sea_4temp1 matches 24.. if score @s sea_4temp5 matches 3 run summon arrow ~ ~0.1 ~ {Motion:[-1.0,0.1,0.0],damage:3}
-execute if score @s sea_4temp1 matches 24.. if score @s sea_4temp5 matches 4 run summon arrow ~ ~0.1 ~ {Motion:[0.0,0.1,-1.0],damage:3}
-execute if score @s sea_4temp1 matches 24.. if score @s sea_4temp5 matches 5 run summon arrow ~ ~0.1 ~ {Motion:[0.8,0.1,0.8],damage:3}
-execute if score @s sea_4temp1 matches 24.. if score @s sea_4temp5 matches 6 run summon arrow ~ ~0.1 ~ {Motion:[0.8,0.1,-0.8],damage:3}
-execute if score @s sea_4temp1 matches 24.. if score @s sea_4temp5 matches 7 run summon arrow ~ ~0.1 ~ {Motion:[-0.8,0.1,0.8],damage:3}
-execute if score @s sea_4temp1 matches 24.. if score @s sea_4temp5 matches 8 run summon arrow ~ ~0.1 ~ {Motion:[-0.8,0.1,-0.8],damage:3}
-execute if score @s sea_4temp1 matches 24.. if score @s sea_4temp5 matches 9 run summon arrow ~ ~0.1 ~ {Motion:[0.7,0.15,0.0],damage:3}
-execute if score @s sea_4temp1 matches 24.. if score @s sea_4temp5 matches 10 run summon arrow ~ ~0.1 ~ {Motion:[0.0,0.15,0.7],damage:3}
-execute if score @s sea_4temp1 matches 24.. if score @s sea_4temp5 matches 11 run summon arrow ~ ~0.1 ~ {Motion:[-0.7,0.15,0.0],damage:3}
-execute if score @s sea_4temp1 matches 24.. if score @s sea_4temp5 matches 12 run summon arrow ~ ~0.1 ~ {Motion:[0.0,0.15,-0.7],damage:3}
-execute if score @s sea_4temp1 matches 24.. if score @s sea_4temp5 matches 13 run summon arrow ~ ~0.1 ~ {Motion:[0.5,0.15,0.5],damage:3}
-execute if score @s sea_4temp1 matches 24.. if score @s sea_4temp5 matches 14 run summon arrow ~ ~0.1 ~ {Motion:[0.5,0.15,-0.5],damage:3}
-execute if score @s sea_4temp1 matches 24.. if score @s sea_4temp5 matches 15 run summon arrow ~ ~0.1 ~ {Motion:[-0.5,0.15,0.5],damage:3}
-execute if score @s sea_4temp1 matches 24.. if score @s sea_4temp5 matches 16 run summon arrow ~ ~0.1 ~ {Motion:[-0.5,0.15,-0.5],damage:3}
+#execute if score @s sea_4temp1 matches 2.. store result score @s sea_4temp5 run random value 1..16
+#execute if score @s sea_4temp1 matches 24.. if score @s sea_4temp5 matches 1 run summon arrow ~ ~0.1 ~ {Motion:[1.0,0.1,0.0],damage:5,Tags:["sea_drone_arrow"]}
+#execute if score @s sea_4temp1 matches 24.. if score @s sea_4temp5 matches 2 run summon arrow ~ ~0.1 ~ {Motion:[0.0,0.1,1.0],damage:5,Tags:["sea_drone_arrow"]}
+#execute if score @s sea_4temp1 matches 24.. if score @s sea_4temp5 matches 3 run summon arrow ~ ~0.1 ~ {Motion:[-1.0,0.1,0.0],damage:5,Tags:["sea_drone_arrow"]}
+#execute if score @s sea_4temp1 matches 24.. if score @s sea_4temp5 matches 4 run summon arrow ~ ~0.1 ~ {Motion:[0.0,0.1,-1.0],damage:5,Tags:["sea_drone_arrow"]}
+#execute if score @s sea_4temp1 matches 24.. if score @s sea_4temp5 matches 5 run summon arrow ~ ~0.1 ~ {Motion:[0.8,0.1,0.8],damage:5,Tags:["sea_drone_arrow"]}
+#execute if score @s sea_4temp1 matches 24.. if score @s sea_4temp5 matches 6 run summon arrow ~ ~0.1 ~ {Motion:[0.8,0.1,-0.8],damage:5,Tags:["sea_drone_arrow"]}
+#execute if score @s sea_4temp1 matches 24.. if score @s sea_4temp5 matches 7 run summon arrow ~ ~0.1 ~ {Motion:[-0.8,0.1,0.8],damage:5,Tags:["sea_drone_arrow"]}
+#execute if score @s sea_4temp1 matches 24.. if score @s sea_4temp5 matches 8 run summon arrow ~ ~0.1 ~ {Motion:[-0.8,0.1,-0.8],damage:5,Tags:["sea_drone_arrow"]}
+#execute if score @s sea_4temp1 matches 24.. if score @s sea_4temp5 matches 9 run summon arrow ~ ~0.1 ~ {Motion:[0.7,0.15,0.0],damage:5,Tags:["sea_drone_arrow"]}
+#execute if score @s sea_4temp1 matches 24.. if score @s sea_4temp5 matches 10 run summon arrow ~ ~0.1 ~ {Motion:[0.0,0.15,0.7],damage:5,Tags:["sea_drone_arrow"]}
+#execute if score @s sea_4temp1 matches 24.. if score @s sea_4temp5 matches 11 run summon arrow ~ ~0.1 ~ {Motion:[-0.7,0.15,0.0],damage:5,Tags:["sea_drone_arrow"]}
+#execute if score @s sea_4temp1 matches 24.. if score @s sea_4temp5 matches 12 run summon arrow ~ ~0.1 ~ {Motion:[0.0,0.15,-0.7],damage:5,Tags:["sea_drone_arrow"]}
+#execute if score @s sea_4temp1 matches 24.. if score @s sea_4temp5 matches 13 run summon arrow ~ ~0.1 ~ {Motion:[0.5,0.15,0.5],damage:5,Tags:["sea_drone_arrow"]}
+#execute if score @s sea_4temp1 matches 24.. if score @s sea_4temp5 matches 14 run summon arrow ~ ~0.1 ~ {Motion:[0.5,0.15,-0.5],damage:5,Tags:["sea_drone_arrow"]}
+#execute if score @s sea_4temp1 matches 24.. if score @s sea_4temp5 matches 15 run summon arrow ~ ~0.1 ~ {Motion:[-0.5,0.15,0.5],damage:5,Tags:["sea_drone_arrow"]}
+#execute if score @s sea_4temp1 matches 24.. if score @s sea_4temp5 matches 16 run summon arrow ~ ~0.1 ~ {Motion:[-0.5,0.15,-0.5],damage:5,Tags:["sea_drone_arrow"]}
 execute if score @s sea_4temp1 matches 24.. run playsound entity.arrow.shoot hostile @a ~ ~0.1 ~ 0.4 1.3
+
+
+execute if score @s sea_4temp1 matches 24.. store result storage sea_drone:rotation M_x float 0.1 run random value -60..60
+execute if score @s sea_4temp1 matches 24.. store result storage sea_drone:rotation M_z float 0.1 run random value -60..60
+execute if score @s sea_4temp1 matches 24.. run data modify entity @n[tag=sea_drone_arrow,tag=!sea_drone_arrow_modified] Motion[0] set from storage sea_drone:rotation M_x
+execute if score @s sea_4temp1 matches 24.. run data modify entity @n[tag=sea_drone_arrow,tag=!sea_drone_arrow_modified] Motion[2] set from storage sea_drone:rotation M_z
+execute if score @s sea_4temp1 matches 24.. run tag @n[tag=sea_drone_arrow,tag=!sea_drone_arrow_modified] add sea_drone_arrow_modified
 
 execute if score @s sea_4temp1 matches 1..3 at @s run tp @s ~ ~0.21 ~
 execute if score @s sea_4temp1 matches 4..6 at @s run tp @s ~ ~0.15 ~
