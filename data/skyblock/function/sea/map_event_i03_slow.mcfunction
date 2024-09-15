@@ -388,12 +388,14 @@ execute positioned 90113 149 147 if entity @a[tag=SEAPT,distance=..2.3] unless e
 execute positioned 90113 149 147 if entity @a[tag=SEAPT,distance=..2.3] unless entity @n[tag=SEAch3_spawn,distance=0..3] run summon marker ~ ~ ~ {Tags:["SEAch3_spawn"]}
 
 execute positioned 90102 149 131 if entity @a[tag=SEAPT,distance=..3.5] unless block 90102 150 130 air as @n[tag=SEAeventch3_m_ston] at @s run data modify entity @s NoAI set value false
+execute positioned 90102 149 131 if entity @a[tag=SEAPT,distance=..3.5] unless block 90102 150 130 air as @n[tag=SEAeventch3_m_ston] at @s run data modify entity @s Invulnerable set value false
 execute positioned 90102 149 131 if entity @a[tag=SEAPT,distance=..3.5] unless block 90102 150 130 air run playsound block.candle.extinguish block @a 90101 149 131 1 0.8
 execute positioned 90102 149 131 if entity @a[tag=SEAPT,distance=..3.5] unless block 90102 150 130 air run playsound block.candle.extinguish block @a 90103 149 131 1 0.8
 execute positioned 90102 149 131 if entity @a[tag=SEAPT,distance=..3.5] unless block 90102 150 130 air run setblock 90101 149 131 minecraft:red_candle[candles=3,lit=false]
 execute positioned 90102 149 131 if entity @a[tag=SEAPT,distance=..3.5] unless block 90102 150 130 air run setblock 90103 149 131 minecraft:red_candle[candles=3,lit=false]
-execute positioned 90102 149 131 if entity @a[tag=SEAPT,distance=..3.5] unless block 90102 150 130 air run kill @e[type=item,x=90102,y=150,z=130,distance=0..3]
-execute positioned 90102 149 131 if entity @a[tag=SEAPT,distance=..3.5] unless block 90102 150 130 air run setblock 90102 150 130 air destroy
+execute positioned 90102 149 131 if entity @a[tag=SEAPT,distance=..3.5] unless block 90102 150 130 air run playsound block.amethyst_cluster.break block @a ~ ~ ~ 1 0.8
+execute positioned 90102 149 131 if entity @a[tag=SEAPT,distance=..3.5] unless block 90102 150 130 air run playsound block.amethyst_block.chime block @a ~ ~ ~ 1 0.8
+execute positioned 90102 149 131 if entity @a[tag=SEAPT,distance=..3.5] unless block 90102 150 130 air run setblock 90102 150 130 air
 
 execute positioned 90107 155 147 if entity @a[tag=SEAPT,distance=..2.3] unless entity @n[tag=SEAch3_spawn,distance=0..3] positioned 90102 155 149 run function skyblock:sea/m/nightblind
 execute positioned 90107 155 147 if entity @a[tag=SEAPT,distance=..2.3] unless entity @n[tag=SEAch3_spawn,distance=0..3] positioned 90101 155 150 run function skyblock:sea/m/skeleton_melee
