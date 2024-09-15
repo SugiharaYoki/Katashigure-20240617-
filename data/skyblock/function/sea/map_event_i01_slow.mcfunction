@@ -288,12 +288,12 @@ execute as @n[tag=sc,scores={sea_4temp2=2355}] positioned 90104 122 100 if entit
 execute as @n[tag=sc,scores={sea_4temp2=2355..2800}] if entity @a[tag=SEAPT,x=90099,y=122,z=103,distance=0..3.5] run scoreboard players set @n[tag=sc] sea_4temp2 3000
 execute as @n[tag=sc,scores={sea_4temp2=3000..3900}] run scoreboard players add @s sea_4temp2 1
 execute as @n[tag=sc,scores={sea_4temp2=5000..6000}] run scoreboard players add @s sea_4temp2 1
-execute as @n[tag=sc,scores={sea_4temp2=3001}] positioned 90093 122 101 run function skyblock:sea/m/drowned_shield
-execute as @n[tag=sc,scores={sea_4temp2=3001}] positioned 90093 122 101 run function skyblock:sea/m/drowned_shield
+execute as @n[tag=sc,scores={sea_4temp2=3001}] if entity @n[tag=sc,scores={sea_player=3..}] positioned 90093 122 101 run function skyblock:sea/m/drowned_shield
+execute as @n[tag=sc,scores={sea_4temp2=3001}] if entity @n[tag=sc,scores={sea_player=3..}] positioned 90093 122 101 run function skyblock:sea/m/drowned_shield
 execute as @n[tag=sc,scores={sea_4temp2=3001}] positioned 90093 122 101 run function skyblock:sea/m/silverfish
 execute as @n[tag=sc,scores={sea_4temp2=3001}] positioned 90093 122 101 run function skyblock:sea/m/silverfish
 execute as @n[tag=sc,scores={sea_4temp2=3001}] positioned 90093 122 108 run function skyblock:sea/m/drowned_shield
-execute as @n[tag=sc,scores={sea_4temp2=3001}] positioned 90093 122 108 run function skyblock:sea/m/drowned_shield
+execute as @n[tag=sc,scores={sea_4temp2=3001}] if entity @n[tag=sc,scores={sea_player=2..}] positioned 90093 122 108 run function skyblock:sea/m/drowned_shield
 execute as @n[tag=sc,scores={sea_4temp2=3001}] positioned 90093 122 108 run function skyblock:sea/m/silverfish
 execute as @n[tag=sc,scores={sea_4temp2=3001}] positioned 90093 122 108 run function skyblock:sea/m/silverfish
 execute as @n[tag=sc,scores={sea_4temp2=3001}] run fill 90094 124 107 90094 122 107 air destroy
@@ -304,11 +304,12 @@ execute as @n[tag=sc,scores={sea_4temp2=3032}] run fill 90093 124 102 90093 122 
 execute as @n[tag=sc,scores={sea_4temp2=3033}] run fill 90092 124 102 90092 122 102 air destroy
 execute as @n[tag=sc,scores={sea_4temp2=3093}] run fill 90087 122 105 90087 124 104 air destroy
 execute as @n[tag=sc,scores={sea_4temp2=3003}] positioned 90086 122 103 run function skyblock:sea/m/zombie_security
+execute as @n[tag=sc,scores={sea_4temp2=3003}] if entity @n[tag=sc,scores={sea_player=2..}] positioned 90086 122 103 run function skyblock:sea/m/zombie_security
 execute as @n[tag=sc,scores={sea_4temp2=3003}] positioned 90086 122 103 run function skyblock:sea/m/zombie_security
-execute as @n[tag=sc,scores={sea_4temp2=3003}] positioned 90086 122 103 run function skyblock:sea/m/zombie_security
+execute as @n[tag=sc,scores={sea_4temp2=3001}] if entity @n[tag=sc,scores={sea_player=3..}] positioned 90086 122 103 run function skyblock:sea/m/silverfish
+execute as @n[tag=sc,scores={sea_4temp2=3001}] if entity @n[tag=sc,scores={sea_player=5..}] positioned 90086 122 103 run function skyblock:sea/m/silverfish
 execute as @n[tag=sc,scores={sea_4temp2=3001}] positioned 90086 122 103 run function skyblock:sea/m/silverfish
-execute as @n[tag=sc,scores={sea_4temp2=3001}] positioned 90086 122 103 run function skyblock:sea/m/silverfish
-execute as @n[tag=sc,scores={sea_4temp2=3003}] if entity @n[tag=sc,scores={sea_player=3..}] positioned 90086 122 103 run function skyblock:sea/m/zombie_security
+execute as @n[tag=sc,scores={sea_4temp2=3003}] if entity @n[tag=sc,scores={sea_player=4..}] positioned 90086 122 103 run function skyblock:sea/m/zombie_security
 execute as @n[tag=sc,scores={sea_4temp2=3003}] if entity @n[tag=sc,scores={sea_player=4..}] positioned 90086 122 103 run function skyblock:sea/m/zombie_security
 execute as @n[tag=sc,scores={sea_4temp2=3003}] if entity @n[tag=sc,scores={sea_player=5..}] positioned 90086 122 103 run function skyblock:sea/m/zombie_security
 execute as @n[tag=sc,scores={sea_4temp2=3001}] positioned 90092 122 119 run function skyblock:sea/m/drowned_shield
@@ -354,8 +355,8 @@ execute as @n[tag=sc,scores={sea_4temp2=4000..5000}] as @n[tag=SEAboss1,scores={
 execute as @n[tag=sc,scores={sea_4temp2=4000..5000}] as @n[tag=SEAboss1,scores={sea_4temp1=100..112}] at @s run particle minecraft:crimson_spore ~ ~1 ~ 0.5 1 0.5 0.2 10
 execute as @n[tag=sc,scores={sea_4temp2=4000..5000}] if block 90078 124 101 minecraft:waxed_copper_bulb[lit=false] if block 90078 124 104 minecraft:waxed_copper_bulb[lit=false] if block 90078 124 107 minecraft:waxed_copper_bulb[lit=false] if block 90078 124 110 minecraft:waxed_copper_bulb[lit=false] if block 90078 124 113 minecraft:waxed_copper_bulb[lit=false] if block 90078 124 116 minecraft:waxed_copper_bulb[lit=false] as @n[tag=SEAboss1] at @s run effect give @s weakness 3 1 true
 
-execute as @n[tag=sc,scores={sea_4temp2=3001..3950,sea_speedrun_ch1=2161..}] if entity @a[tag=SEAPT,x=90074,y=122,z=118,distance=0..4] run scoreboard players set @n[tag=sc] sea_4temp2 4000
-execute as @n[tag=sc,scores={sea_4temp2=3001..3950,sea_speedrun_ch1=..2160}] if entity @a[tag=SEAPT,x=90085,y=122,z=104,distance=0..4] run scoreboard players set @n[tag=sc] sea_4temp2 6000
+execute as @n[tag=sc,scores={sea_4temp2=3001..3950,sea_speedrun_ch1=1921..}] if entity @a[tag=SEAPT,x=90074,y=122,z=118,distance=0..4] run scoreboard players set @n[tag=sc] sea_4temp2 4000
+execute as @n[tag=sc,scores={sea_4temp2=3001..3950,sea_speedrun_ch1=..1920}] if entity @a[tag=SEAPT,x=90085,y=122,z=104,distance=0..4] run scoreboard players set @n[tag=sc] sea_4temp2 6000
 execute as @n[tag=sc,scores={sea_4temp2=4000..5000}] run scoreboard players add @n[tag=sc] sea_4temp2 1
 execute as @n[tag=sc,scores={sea_4temp2=4800..4810}] run scoreboard players set @n[tag=sc] sea_4temp2 4800
 execute as @n[tag=sc,scores={sea_4temp2=4001}] run bossbar add 9066601 "圣献的医者 - 法莫洛斯"
