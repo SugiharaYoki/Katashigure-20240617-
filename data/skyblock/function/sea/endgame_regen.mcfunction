@@ -102,6 +102,8 @@ tag @s remove SeGa_sea_ch4
 tag @s remove SeGa_sea_ch5
 tag @s remove SeGa_sea_ch6
 
+tag @s remove sea_ch1_speedrun_butif
+
 forceload remove 90000 0 90200 200
 #setblock 90060 104 144 stone_button[facing=south,face=floor]
 summon minecraft:armor_stand 90074 93.5 139 {CustomName:'{"text": "『厄珀娅的悲歌』","color": "blue","bold": true}',DisabledSlots:65793,CustomNameVisible:1b,Invisible:1b,Marker:1b,NoGravity:1b}

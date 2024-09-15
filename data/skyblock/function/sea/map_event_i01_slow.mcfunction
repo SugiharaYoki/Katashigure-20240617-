@@ -372,8 +372,10 @@ execute as @n[tag=sc,scores={sea_4temp2=4001}] run particle minecraft:large_smok
 execute as @n[tag=sc,scores={sea_4temp2=4001}] run particle minecraft:crimson_spore 90074.45 123.00 122.35 1 1 1 0.0 100
 execute as @n[tag=sc,scores={sea_4temp2=4001}] run playsound minecraft:item.trident.thunder hostile @a 90074.45 122.00 122.35 10 1.3
 execute as @n[tag=sc,scores={sea_4temp2=4001}] run playsound minecraft:item.trident.thunder hostile @a 90074.45 122.00 122.35 10 0.7
-execute as @n[tag=sc,scores={sea_4temp2=4001}] positioned 90074 122 122 run function skyblock:sea/m/boss1
-execute as @n[tag=sc,scores={sea_4temp2=4001}] run tp @n[tag=SEAboss1] 90074 122 120.9 facing 90074 122 119
+execute as @n[tag=sc,scores={sea_4temp2=4001},tag=sea_ch1_speedrun_butif] as @n[tag=SEAframauros] run kill @s
+execute as @n[tag=sc,scores={sea_4temp2=4001},tag=sea_ch1_speedrun_butif] at @n[tag=SEAframauros] run function skyblock:sea/m/boss1
+execute as @n[tag=sc,scores={sea_4temp2=4001},tag=!sea_ch1_speedrun_butif] positioned 90074 122 122 run function skyblock:sea/m/boss1
+execute as @n[tag=sc,scores={sea_4temp2=4001},tag=!sea_ch1_speedrun_butif] run tp @n[tag=SEAboss1] 90074 122 120.9 facing 90074 122 119
 execute as @n[tag=sc,scores={sea_4temp2=4001}] as @a[tag=SEAPT] at @s run playsound minecraft:app2.heracles music @a[tag=SEAPT] ~ ~ ~ 1000 1.0
 execute as @n[tag=sc,scores={sea_4temp2=4001}] as @r[tag=SEAPT] at @s as @a[tag=!SEAPT,tag=spectator,distance=0..200] run playsound minecraft:app2.heracles music @a[tag=SEAPT] ~ ~ ~ 1000 1.0
 
@@ -442,4 +444,20 @@ execute as @n[tag=sc,scores={sea_4temp2=6304}] at @n[tag=SEAframauros] run tellr
 execute as @n[tag=sc,scores={sea_4temp2=6334}] at @n[tag=SEAframauros] run playsound entity.villager.ambient neutral @a ~ ~ ~ 0.8 0.7
 execute as @n[tag=sc,scores={sea_4temp2=6334}] at @n[tag=SEAframauros] run tellraw @a[tag=SEAPT,distance=0.1..35] {"text":"法莫洛斯：能杀了我吗……？","color":"green"}
 execute as @n[tag=sc,scores={sea_4temp2=6334}] as @n[tag=SEAframauros] run data modify entity @s Invulnerable set value 0b
+
+
+execute as @n[tag=sc,scores={sea_4temp2=6434}] at @n[tag=SEAframauros] run playsound entity.villager.ambient neutral @a ~ ~ ~ 0.8 0.7
+execute as @n[tag=sc,scores={sea_4temp2=6434}] at @n[tag=SEAframauros] if entity @n[tag=sc,scores={sea_player=1}] run tellraw @a[tag=SEAPT,distance=0.1..35] {"text":"法莫洛斯：我知道这听上去很困难……但、只有你能做到了。拜托你……","color":"green"}
+execute as @n[tag=sc,scores={sea_4temp2=6434}] at @n[tag=SEAframauros] if entity @n[tag=sc,scores={sea_player=2..}] run tellraw @a[tag=SEAPT,distance=0.1..35] {"text":"法莫洛斯：我知道这听上去很困难……但、只有你们能做到了。拜托你们……","color":"green"}
+execute as @n[tag=sc,scores={sea_4temp2=6534}] at @n[tag=SEAframauros] run playsound entity.villager.ambient neutral @a ~ ~ ~ 0.8 0.7
+execute as @n[tag=sc,scores={sea_4temp2=6534}] at @n[tag=SEAframauros] run tellraw @a[tag=SEAPT,distance=0.1..35] {"text":"法莫洛斯：求求你们……我没有多少时间了……","color":"green"}
+execute as @n[tag=sc,scores={sea_4temp2=6634}] at @n[tag=SEAframauros] run playsound entity.villager.ambient neutral @a ~ ~ ~ 0.8 0.7
+execute as @n[tag=sc,scores={sea_4temp2=6634}] at @n[tag=SEAframauros] run tellraw @a[tag=SEAPT,distance=0.1..35] {"text":"法莫洛斯：我需要……保持、……我该自杀，对吗？……","color":"green"}
+execute as @n[tag=sc,scores={sea_4temp2=6734}] at @n[tag=SEAframauros] run playsound entity.villager.ambient neutral @a ~ ~ ~ 0.8 0.7
+execute as @n[tag=sc,scores={sea_4temp2=6734}] at @n[tag=SEAframauros] run tellraw @a[tag=SEAPT,distance=0.1..35] {"text":"法莫洛斯：快要……来不及……了……","color":"green"}
+execute as @n[tag=sc,scores={sea_4temp2=6834}] at @n[tag=SEAframauros] run playsound entity.villager.ambient neutral @a ~ ~ ~ 0.8 0.7
+execute as @n[tag=sc,scores={sea_4temp2=6834}] at @n[tag=SEAframauros] run tellraw @a[tag=SEAPT,distance=0.1..35] {"text":"法莫洛斯：我本该……有时间……自杀的……","color":"green"}
+execute as @n[tag=sc,scores={sea_4temp2=6934}] at @n[tag=SEAframauros] run tag @n[tag=sc] add sea_ch1_speedrun_butif
+execute as @n[tag=sc,scores={sea_4temp2=6934}] at @n[tag=SEAframauros] run scoreboard players set @n[tag=sc] sea_4temp2 4000
+
 execute as @n[tag=sc,scores={sea_4temp2=6300..7000}] unless entity @n[tag=SEAframauros] run scoreboard players set @n[tag=sc] sea_4temp2 5002
