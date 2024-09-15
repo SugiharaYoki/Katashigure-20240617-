@@ -45,8 +45,8 @@ execute if score @s sea_4temp1 matches 24.. run playsound entity.arrow.shoot hos
 
 
 execute if score @s sea_4temp1 matches 24.. run summon arrow ~ ~0.1 ~ {Motion:[0.0,0.1,0.0],damage:5,Tags:["sea_drone_arrow"]}
-execute if score @s sea_4temp1 matches 24.. store result storage sea_drone:rotation M_x float 0.1 run random value -60..60
-execute if score @s sea_4temp1 matches 24.. store result storage sea_drone:rotation M_z float 0.1 run random value -60..60
+execute if score @s sea_4temp1 matches 24.. store result storage sea_drone:rotation M_x double 0.1 run random value -6..6
+execute if score @s sea_4temp1 matches 24.. store result storage sea_drone:rotation M_z double 0.1 run random value -6..6
 execute if score @s sea_4temp1 matches 24.. run data modify entity @n[tag=sea_drone_arrow,tag=!sea_drone_arrow_modified] Motion[0] set from storage sea_drone:rotation M_x
 execute if score @s sea_4temp1 matches 24.. run data modify entity @n[tag=sea_drone_arrow,tag=!sea_drone_arrow_modified] Motion[2] set from storage sea_drone:rotation M_z
 execute if score @s sea_4temp1 matches 24.. run tag @n[tag=sea_drone_arrow,tag=!sea_drone_arrow_modified] add sea_drone_arrow_modified
