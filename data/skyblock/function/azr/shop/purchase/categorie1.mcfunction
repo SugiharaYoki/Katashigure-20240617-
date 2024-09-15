@@ -6,6 +6,22 @@ $execute if score @s Azr_Shop_rng$(rng) matches 0 if score @s Azr_Shop matches $
     run scoreboard players remove @s[tag=TEMP_purchase_success] Azr_emerald 1
 tag @s remove TEMP_purchase_success
 
+$execute if score @s Azr_Shop_rng$(rng) matches 0 if score @s Azr_Shop matches $(trigger)33 \
+    if items entity @s container.* rotten_flesh[count={min:1}] run tag @s add TEMP_purchase_success
+$execute if score @s Azr_Shop_rng$(rng) matches 0 if score @s Azr_Shop matches $(trigger)33 \
+    run give @s[tag=TEMP_purchase_success] bread 2
+$execute if score @s Azr_Shop_rng$(rng) matches 0 if score @s Azr_Shop matches $(trigger)33 \
+    run clear @s[tag=TEMP_purchase_success] rotten_flesh 1
+tag @s remove TEMP_purchase_success
+
+$execute if score @s Azr_Shop_rng$(rng) matches 1 if score @s Azr_Shop matches $(trigger) \
+    if score @s Azr_emerald matches 1.. run tag @s add TEMP_purchase_success
+$execute if score @s Azr_Shop_rng$(rng) matches 1 if score @s Azr_Shop matches $(trigger) \
+    run give @s[tag=TEMP_purchase_success] bread 1
+$execute if score @s Azr_Shop_rng$(rng) matches 1 if score @s Azr_Shop matches $(trigger) \
+    run scoreboard players remove @s[tag=TEMP_purchase_success] Azr_emerald 1
+tag @s remove TEMP_purchase_success
+
 $execute if score @s Azr_Shop_rng$(rng) matches 1 if score @s Azr_Shop matches $(trigger)33 \
     if items entity @s container.* rotten_flesh[count={min:1}] run tag @s add TEMP_purchase_success
 $execute if score @s Azr_Shop_rng$(rng) matches 1 if score @s Azr_Shop matches $(trigger)33 \
@@ -19,6 +35,22 @@ $execute if score @s Azr_Shop_rng$(rng) matches 2 if score @s Azr_Shop matches $
 $execute if score @s Azr_Shop_rng$(rng) matches 2 if score @s Azr_Shop matches $(trigger) \
     run give @s[tag=TEMP_purchase_success] cooked_porkchop
 $execute if score @s Azr_Shop_rng$(rng) matches 2 if score @s Azr_Shop matches $(trigger) \
+    run scoreboard players remove @s[tag=TEMP_purchase_success] Azr_emerald 3
+tag @s remove TEMP_purchase_success
+
+$execute if score @s Azr_Shop_rng$(rng) matches 2 if score @s Azr_Shop matches $(trigger)33 \
+    if score @s Azr_emerald matches 2.. run tag @s add TEMP_purchase_success
+$execute if score @s Azr_Shop_rng$(rng) matches 2 if score @s Azr_Shop matches $(trigger)33 \
+    run give @s[tag=TEMP_purchase_success] cooked_chicken
+$execute if score @s Azr_Shop_rng$(rng) matches 2 if score @s Azr_Shop matches $(trigger)33 \
+    run scoreboard players remove @s[tag=TEMP_purchase_success] Azr_emerald 2
+tag @s remove TEMP_purchase_success
+
+$execute if score @s Azr_Shop_rng$(rng) matches 3 if score @s Azr_Shop matches $(trigger) \
+    if score @s Azr_emerald matches 3.. run tag @s add TEMP_purchase_success
+$execute if score @s Azr_Shop_rng$(rng) matches 3 if score @s Azr_Shop matches $(trigger) \
+    run give @s[tag=TEMP_purchase_success] cooked_porkchop
+$execute if score @s Azr_Shop_rng$(rng) matches 3 if score @s Azr_Shop matches $(trigger) \
     run scoreboard players remove @s[tag=TEMP_purchase_success] Azr_emerald 3
 tag @s remove TEMP_purchase_success
 
@@ -51,6 +83,22 @@ $execute if score @s Azr_Shop_rng$(rng) matches 6 if score @s Azr_Shop matches $
 $execute if score @s Azr_Shop_rng$(rng) matches 6 if score @s Azr_Shop matches $(trigger) \
     run give @s[tag=TEMP_purchase_success] beef 1
 $execute if score @s Azr_Shop_rng$(rng) matches 6 if score @s Azr_Shop matches $(trigger) \
+    run clear @s[tag=TEMP_purchase_success] rotten_flesh 1
+tag @s remove TEMP_purchase_success
+
+$execute if score @s Azr_Shop_rng$(rng) matches 6 if score @s Azr_Shop matches $(trigger)33 \
+    if items entity @s container.* rotten_flesh[count={min:1}] run tag @s add TEMP_purchase_success
+$execute if score @s Azr_Shop_rng$(rng) matches 6 if score @s Azr_Shop matches $(trigger)33 \
+    run give @s[tag=TEMP_purchase_success] beef 1
+$execute if score @s Azr_Shop_rng$(rng) matches 6 if score @s Azr_Shop matches $(trigger)33 \
+    run clear @s[tag=TEMP_purchase_success] rotten_flesh 1
+tag @s remove TEMP_purchase_success
+
+$execute if score @s Azr_Shop_rng$(rng) matches 7 if score @s Azr_Shop matches $(trigger) \
+    if items entity @s container.* rotten_flesh[count={min:1}] run tag @s add TEMP_purchase_success
+$execute if score @s Azr_Shop_rng$(rng) matches 7 if score @s Azr_Shop matches $(trigger) \
+    run give @s[tag=TEMP_purchase_success] beef 1
+$execute if score @s Azr_Shop_rng$(rng) matches 7 if score @s Azr_Shop matches $(trigger) \
     run clear @s[tag=TEMP_purchase_success] rotten_flesh 1
 tag @s remove TEMP_purchase_success
 
