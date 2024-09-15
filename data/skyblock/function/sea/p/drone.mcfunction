@@ -22,16 +22,21 @@ execute if score @s sea_4temp1 matches 18.. run scoreboard players add @s sea_4t
 execute if score @s sea_4temp1 matches 20.. run scoreboard players add @s sea_4temp2 2
 execute if score @s sea_4temp1 matches 22.. run scoreboard players add @s sea_4temp2 2
 execute if score @s sea_4temp1 matches 24.. run scoreboard players add @s sea_4temp2 2
-execute if score @s sea_4temp1 matches 26.. run scoreboard players add @s sea_4temp2 3
-execute if score @s sea_4temp1 matches 28.. run scoreboard players add @s sea_4temp2 3
-execute if score @s sea_4temp1 matches 30.. run scoreboard players add @s sea_4temp2 3
+execute if score @s sea_4temp1 matches 36.. run scoreboard players add @s sea_4temp2 3
+execute if score @s sea_4temp1 matches 38.. run scoreboard players add @s sea_4temp2 3
+execute if score @s sea_4temp1 matches 40.. run scoreboard players add @s sea_4temp2 3
 execute if score @s sea_4temp1 matches 1..3 at @s run tp @s ~ ~0.21 ~
 execute if score @s sea_4temp1 matches 4..6 at @s run tp @s ~ ~0.15 ~
 execute if score @s sea_4temp1 matches 7..9 at @s run tp @s ~ ~0.1 ~
 execute if score @s sea_4temp1 matches 10..12 at @s run tp @s ~ ~0.06 ~
 execute if score @s sea_4temp1 matches 13..15 at @s run tp @s ~ ~0.03 ~
 execute if score @s sea_4temp1 matches 16..18 at @s run tp @s ~ ~0.01 ~
-execute if score @s sea_4temp1 matches 31.. run kill @s[type=block_display]
+execute if score @s sea_4temp1 matches 21.. run particle white_smoke ~ ~ ~ 0.1 0.1 0.1 0.02 3
+execute if score @s sea_4temp1 matches 31.. run particle white_smoke ~ ~ ~ 0.1 0.1 0.1 0.02 4
+execute if score @s sea_4temp1 matches 38.. run particle smoke ~ ~ ~ 0.1 0.1 0.1 0.02 3
+execute if score @s sea_4temp1 matches 41.. run particle smoke ~ ~ ~ 0.1 0.1 0.1 0.02 10
+execute if score @s sea_4temp1 matches 41.. run playsound block.fire.extinguish block @a ~ ~ ~ 0.6 1.4
+execute if score @s sea_4temp1 matches 41.. run kill @s[type=block_display]
 execute if score @s sea_4temp1 matches 2.. store result storage sea_drone:rotation Rot float 1 run scoreboard players get @s sea_4temp2
 execute if score @s sea_4temp1 matches 2.. run data modify entity @s Rotation[0] set from storage sea_drone:rotation Rot
 
