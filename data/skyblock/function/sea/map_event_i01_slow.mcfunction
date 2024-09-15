@@ -419,7 +419,7 @@ execute as @n[tag=sc,scores={sea_4temp2=6002..6500}] at @n[tag=SEAframauros] if 
 execute as @n[tag=sc,scores={sea_4temp2=6000..6001}] run scoreboard players add @n[tag=sc] sea_4temp2 1
 
 execute as @n[tag=sc,scores={sea_4temp2=6001}] positioned 90073 122 122 run function skyblock:sea/m/npc_framauros
-execute as @n[tag=sc,scores={sea_4temp2=6003..}] at @n[tag=SEAframauros] at @s at @s run tp @s ~ ~ ~ facing entity @p
+execute as @n[tag=sc,scores={sea_4temp2=6003..}] as @n[tag=SEAframauros] at @s run tp @s ~ ~ ~ facing entity @p
 execute as @n[tag=sc,scores={sea_4temp2=6003}] at @n[tag=SEAframauros] run playsound entity.villager.ambient neutral @a ~ ~ ~ 0.8 0.7
 execute as @n[tag=sc,scores={sea_4temp2=6003}] at @n[tag=SEAframauros] run tellraw @a[tag=SEAPT,distance=0.1..35] {"text":"法莫洛斯：……活着的人。","color":"green"}
 execute as @n[tag=sc,scores={sea_4temp2=6037}] at @n[tag=SEAframauros] run playsound entity.villager.ambient neutral @a ~ ~ ~ 0.8 0.7
