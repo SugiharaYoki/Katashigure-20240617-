@@ -43,6 +43,7 @@ scoreboard objectives add SEA_story dummy
 scoreboard objectives add sea_oxygen dummy
 scoreboard objectives add sea_speedrun_ch1 dummy
 scoreboard players set @n[tag=sc] sea_chapter 1
+scoreboard players set @n[tag=sc] sea_speedrun_ch1 0
 
 
 setblock -25 23 32 soul_lantern
