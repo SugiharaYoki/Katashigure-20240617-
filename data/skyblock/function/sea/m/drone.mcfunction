@@ -1,0 +1,1 @@
+summon block_display ~ ~ ~ {transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[0.4f,0.4f,0.4f],translation:[0f,0f,0f]},block_state:{Name:dispenser},Tags:["sea_blockdisplay","sea_drone"],Rotation:[45f,0f]}

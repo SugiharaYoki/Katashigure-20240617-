@@ -9,6 +9,7 @@ execute as @e[type=spectral_arrow,x=90000,y=100,z=0,distance=..5000] run tag @s 
 execute as @e[type=spectral_arrow,tag=SEAspectral,nbt={inGround:false}] at @s run function skyblock:sea/p/spectral
 
 execute as @e[type=item,x=90000,y=100,z=100,distance=..3000] at @s run function skyblock:sea/p/item
+execute as @e[tag=sea_drone,x=90000,y=100,z=100,distance=..3000] at @s run function skyblock:sea/p/drone
 
 execute as @e[type=husk,tag=SEAmob] at @s run function skyblock:sea/p/husk
 
