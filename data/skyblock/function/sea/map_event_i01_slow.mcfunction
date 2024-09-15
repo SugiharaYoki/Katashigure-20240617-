@@ -150,9 +150,9 @@ execute as @n[tag=sc,scores={sea_4temp2=200..297}] run scoreboard players add @s
 execute if entity @a[tag=SEAPT,x=90125,y=123,z=118,distance=0..9.2] as @n[tag=sc,scores={sea_4temp2=298..1050}] run scoreboard players add @s sea_4temp2 1
 execute as @n[tag=sc,scores={sea_4temp2=1051..1200}] run scoreboard players add @s sea_4temp2 1
 execute as @n[tag=sc,scores={sea_4temp2=400}] run scoreboard players add @s sea_4temp2 120
-execute as @n[tag=sc,scores={sea_4temp2=540}] run scoreboard players add @s sea_4temp2 40
-execute as @n[tag=sc,scores={sea_4temp2=600}] run scoreboard players add @s sea_4temp2 60
-execute as @n[tag=sc,scores={sea_4temp2=700}] run scoreboard players add @s sea_4temp2 200
+execute as @n[tag=sc,scores={sea_4temp2=530}] run scoreboard players add @s sea_4temp2 60
+execute as @n[tag=sc,scores={sea_4temp2=600}] run scoreboard players add @s sea_4temp2 90
+execute as @n[tag=sc,scores={sea_4temp2=700}] run scoreboard players add @s sea_4temp2 209
 execute if entity @a[tag=SEAPT,x=90125,y=123,z=118,distance=0..9.2] as @n[tag=sc,scores={sea_4temp2=270}] positioned 90119 124 113 run function skyblock:sea/m/drowned
 execute if entity @a[tag=SEAPT,x=90125,y=123,z=118,distance=0..9.2] as @n[tag=sc,scores={sea_4temp2=300}] positioned 90119 124 113 run function skyblock:sea/m/drowned
 execute if entity @a[tag=SEAPT,x=90125,y=123,z=118,distance=0..9.2] as @n[tag=sc,scores={sea_4temp2=342}] positioned 90128 124 113 run function skyblock:sea/m/drowned
