@@ -45,7 +45,7 @@ execute if score @s sea_4temp1 matches 40.. run scoreboard players add @s sea_4t
 execute if score @s sea_4temp1 matches 24.. run playsound entity.arrow.shoot hostile @a ~ ~0.1 ~ 0.4 1.3
 
 
-execute if score @s sea_4temp1 matches 24.. run summon arrow ~ ~0.3 ~ {Motion:[0.0,0.1,0.0],damage:5,Tags:["sea_drone_arrow"]}
+execute if score @s sea_4temp1 matches 24.. run summon arrow ~ ~0.3 ~ {Motion:[0.0,0.1,0.0],damage:5,Tags:["sea_drone_arrow"],life:1100}
 execute if score @s sea_4temp1 matches 24.. store result storage sea_drone:rotation M_x double 0.1 run random value -6..6
 execute if score @s sea_4temp1 matches 24.. store result storage sea_drone:rotation M_z double 0.1 run random value -6..6
 execute if score @s sea_4temp1 matches 24.. run data modify entity @n[tag=sea_drone_arrow,tag=!sea_drone_arrow_modified] Motion[0] set from storage sea_drone:rotation M_x
@@ -59,11 +59,11 @@ execute if score @s sea_4temp1 matches 10..12 at @s run tp @s ~ ~0.06 ~
 execute if score @s sea_4temp1 matches 13..15 at @s run tp @s ~ ~0.03 ~
 execute if score @s sea_4temp1 matches 16..18 at @s run tp @s ~ ~0.01 ~
 execute if score @s sea_4temp1 matches 21.. run particle white_smoke ~ ~0.1 ~ 0.1 0.1 0.1 0.02 3
-execute if score @s sea_4temp1 matches 31.. run particle white_smoke ~ ~0.1 ~ 0.1 0.1 0.1 0.02 4
-execute if score @s sea_4temp1 matches 38.. run particle smoke ~ ~0.1 ~ 0.1 0.1 0.1 0.02 3
-execute if score @s sea_4temp1 matches 41.. run particle smoke ~ ~0.1 ~ 0.1 0.1 0.1 0.05 20
-execute if score @s sea_4temp1 matches 41.. run playsound block.fire.extinguish block @a ~ ~ ~ 0.6 1.4
-execute if score @s sea_4temp1 matches 41.. run kill @s[type=block_display]
+execute if score @s sea_4temp1 matches 35.. run particle white_smoke ~ ~0.1 ~ 0.1 0.1 0.1 0.02 4
+execute if score @s sea_4temp1 matches 42.. run particle smoke ~ ~0.1 ~ 0.1 0.1 0.1 0.02 3
+execute if score @s sea_4temp1 matches 48.. run particle smoke ~ ~0.1 ~ 0.1 0.1 0.1 0.05 20
+execute if score @s sea_4temp1 matches 48.. run playsound block.fire.extinguish block @a ~ ~ ~ 0.6 1.4
+execute if score @s sea_4temp1 matches 48.. run kill @s[type=block_display]
 execute if score @s sea_4temp1 matches 2.. store result storage sea_drone:rotation Rot float 1 run scoreboard players get @s sea_4temp2
 execute if score @s sea_4temp1 matches 2.. run data modify entity @s Rotation[0] set from storage sea_drone:rotation Rot
 
