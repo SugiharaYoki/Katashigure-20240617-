@@ -356,8 +356,8 @@ execute as @n[tag=sc,scores={sea_4temp2=4000..5000}] as @n[tag=SEAboss1,scores={
 execute as @n[tag=sc,scores={sea_4temp2=4000..5000}] as @n[tag=SEAboss1,scores={sea_4temp1=100..112}] at @s run particle minecraft:crimson_spore ~ ~1 ~ 0.5 1 0.5 0.2 10
 execute as @n[tag=sc,scores={sea_4temp2=4000..5000}] if block 90078 124 101 minecraft:waxed_copper_bulb[lit=false] if block 90078 124 104 minecraft:waxed_copper_bulb[lit=false] if block 90078 124 107 minecraft:waxed_copper_bulb[lit=false] if block 90078 124 110 minecraft:waxed_copper_bulb[lit=false] if block 90078 124 113 minecraft:waxed_copper_bulb[lit=false] if block 90078 124 116 minecraft:waxed_copper_bulb[lit=false] as @n[tag=SEAboss1] at @s run effect give @s weakness 3 1 true
 
-execute as @n[tag=sc,scores={sea_4temp2=..3950,sea_speedrun_ch1=2161..}] if entity @a[tag=SEAPT,x=90074,y=122,z=118,distance=0..4] run scoreboard players set @n[tag=sc] sea_4temp2 4000
-execute as @n[tag=sc,scores={sea_4temp2=..3950,sea_speedrun_ch1=..2160}] if entity @a[tag=SEAPT,x=90074,y=122,z=118,distance=0..30] run scoreboard players set @n[tag=sc] sea_4temp2 6000
+execute as @n[tag=sc,scores={sea_4temp2=3001..3950,sea_speedrun_ch1=2161..}] if entity @a[tag=SEAPT,x=90074,y=122,z=118,distance=0..4] run scoreboard players set @n[tag=sc] sea_4temp2 4000
+execute as @n[tag=sc,scores={sea_4temp2=3001..3950,sea_speedrun_ch1=..2160}] if entity @a[tag=SEAPT,x=90085,y=122,z=104,distance=0..4] run scoreboard players set @n[tag=sc] sea_4temp2 6000
 execute as @n[tag=sc,scores={sea_4temp2=4000..5000}] run scoreboard players add @n[tag=sc] sea_4temp2 1
 execute as @n[tag=sc,scores={sea_4temp2=4800..4810}] run scoreboard players set @n[tag=sc] sea_4temp2 4800
 execute as @n[tag=sc,scores={sea_4temp2=4001}] run bossbar add 9066601 "圣献的医者 - 法莫洛斯"
