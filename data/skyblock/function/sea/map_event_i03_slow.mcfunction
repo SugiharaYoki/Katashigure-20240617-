@@ -305,33 +305,33 @@ execute as @n[tag=SEAch3_spawn_timer8,scores={sea_4temp1=23}] at @n[tag=SEAyueha
 execute as @n[tag=SEAch3_spawn_timer8,scores={sea_4temp1=23}] at @n[tag=SEAyuehan] run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
 
 execute at @n[tag=SEAyuehan] if entity @a[tag=SEAPT,distance=..6] run scoreboard players add @n[tag=SEAyuehan] sea_4temp1 1
-execute as @n[tag=SEAyuehan,scores={sea_4temp1=3}] at @n[tag=SEAyuehan] run tellraw @a[distance=0..250] {"text":"？？？：“你、你没被感染吧？”","color":"green"}
-execute as @n[tag=SEAyuehan,scores={sea_4temp1=3}] at @n[tag=SEAyuehan] run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
-execute as @n[tag=SEAyuehan,scores={sea_4temp1=23}] at @n[tag=SEAyuehan] if entity @n[tag=sc,scores={sea_player=1}] run tellraw @a[distance=0..250] {"text":"？？？：“调查员……？他们那群傻逼居然还真的知道该派人来，但我操，就派一个人？我去他妈的。”","color":"green"}
-execute as @n[tag=SEAyuehan,scores={sea_4temp1=23}] at @n[tag=SEAyuehan] if entity @n[tag=sc,scores={sea_player=2..}] run tellraw @a[distance=0..250] {"text":"？？？：“调查小组……？他们那群傻逼居然还真的知道该派人来，但不派海警派维修工？我日，脑子里进屎了吗？”","color":"green"}
-execute as @n[tag=SEAyuehan,scores={sea_4temp1=23}] at @n[tag=SEAyuehan] run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
-execute as @n[tag=SEAyuehan,scores={sea_4temp1=53}] at @n[tag=SEAyuehan] run tellraw @a[distance=0..250] {"text":"越涵：“那个……你听我讲，我是维修部门的越涵，他们没想到我会躲在他们以为我最不会来的地方。怎么样，中国人的大智慧。”","color":"green"}
-execute as @n[tag=SEAyuehan,scores={sea_4temp1=53}] at @n[tag=SEAyuehan] run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
-execute as @n[tag=SEAyuehan,scores={sea_4temp1=80}] at @n[tag=SEAyuehan] run tellraw @a[distance=0..250] {"text":"越涵：“外头还有那些神棍吗？……呃，那我就不跟你一起出去了。”","color":"green"}
-execute as @n[tag=SEAyuehan,scores={sea_4temp1=80}] at @n[tag=SEAyuehan] run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
-execute as @n[tag=SEAyuehan,scores={sea_4temp1=102}] at @n[tag=SEAyuehan] run tellraw @a[distance=0..250] {"text":"越涵：“你看到这个房间中间的水晶了吗？对，它飘在空中，不借助任何科技手段。而且它一直会自主长成说是十字架的模样。”","color":"green"}
+execute as @n[tag=SEAyuehan,scores={sea_4temp1=19}] at @n[tag=SEAyuehan] run tellraw @a[distance=0..250] {"text":"？？？：“你、你没被感染吧？”","color":"green"}
+execute as @n[tag=SEAyuehan,scores={sea_4temp1=19}] at @n[tag=SEAyuehan] run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
+execute as @n[tag=SEAyuehan,scores={sea_4temp1=39}] at @n[tag=SEAyuehan] if entity @n[tag=sc,scores={sea_player=1}] run tellraw @a[distance=0..250] {"text":"？？？：“调查员……？他们那群傻逼居然还真的知道该派人来，但我操，就派一个人？我去他妈的，纯他妈傻逼。”","color":"green"}
+execute as @n[tag=SEAyuehan,scores={sea_4temp1=39}] at @n[tag=SEAyuehan] if entity @n[tag=sc,scores={sea_player=2..}] run tellraw @a[distance=0..250] {"text":"？？？：“调查小组……？他们那群傻逼居然还真的知道该派人来，但不派海警派维修工？我日，脑子里进屎了吗？”","color":"green"}
+execute as @n[tag=SEAyuehan,scores={sea_4temp1=39}] at @n[tag=SEAyuehan] run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
+execute as @n[tag=SEAyuehan,scores={sea_4temp1=70}] at @n[tag=SEAyuehan] run tellraw @a[distance=0..250] {"text":"越涵：“那个……你听我讲，我是维修部门的越涵，他们没想到我会躲在他们以为我最不会来的地方。怎么样，中国人的大智慧。”","color":"green"}
+execute as @n[tag=SEAyuehan,scores={sea_4temp1=70}] at @n[tag=SEAyuehan] run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
+execute as @n[tag=SEAyuehan,scores={sea_4temp1=102}] at @n[tag=SEAyuehan] run tellraw @a[distance=0..250] {"text":"越涵：“外头还有那些神棍吗？……呃，那我就不跟你一起出去了。”","color":"green"}
 execute as @n[tag=SEAyuehan,scores={sea_4temp1=102}] at @n[tag=SEAyuehan] run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
-execute as @n[tag=SEAyuehan,scores={sea_4temp1=132}] at @n[tag=SEAyuehan] run tellraw @a[distance=0..250] {"text":"越涵：“我真的搞不懂，这他妈哪里像十字架了，明眼人一看就知道这不是个什么好东西。诺曼博士还说这能防止那些细菌的侵入，结果放哪哪暴乱。”","color":"green"}
-execute as @n[tag=SEAyuehan,scores={sea_4temp1=132}] at @n[tag=SEAyuehan] run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
-execute as @n[tag=SEAyuehan,scores={sea_4temp1=164}] at @n[tag=SEAyuehan] run tellraw @a[distance=0..250] {"text":"越涵：“我跟你讲，远离这些水晶，虽然散布甲板上的那几块都基本被我们敲干净了。这玩意绝对有问题，问题大了去了。”","color":"green"}
-execute as @n[tag=SEAyuehan,scores={sea_4temp1=164}] at @n[tag=SEAyuehan] run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
-execute as @n[tag=SEAyuehan,scores={sea_4temp1=192}] at @n[tag=SEAyuehan] run tellraw @a[distance=0..250] {"text":"越涵：“我不知道这里还有多少人活着，但我认识一个老哥叫斯顿的被困在宿舍楼。我一小时前才跟他断联。”","color":"green"}
-execute as @n[tag=SEAyuehan,scores={sea_4temp1=192}] at @n[tag=SEAyuehan] run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
-execute as @n[tag=SEAyuehan,scores={sea_4temp1=218}] at @n[tag=SEAyuehan] if entity @n[tag=sc,scores={sea_player=1}] run tellraw @a[distance=0..250] {"text":"越涵：“你能帮我找找他吗？对、我知道我还活着，你别一脸如释重负的表情了……”","color":"green"}
-execute as @n[tag=SEAyuehan,scores={sea_4temp1=218}] at @n[tag=SEAyuehan] if entity @n[tag=sc,scores={sea_player=2}] run tellraw @a[distance=0..250] {"text":"越涵：“你俩能帮我找找他吗？对、我知道我还活着，你别一脸如释重负的表情了……”","color":"green"}
-execute as @n[tag=SEAyuehan,scores={sea_4temp1=218}] at @n[tag=SEAyuehan] if entity @n[tag=sc,scores={sea_player=3..}] run tellraw @a[distance=0..250] {"text":"越涵：“你们几位能帮我找找他吗？对、我知道我还活着，你别一脸如释重负的表情了……”","color":"green"}
-execute as @n[tag=SEAyuehan,scores={sea_4temp1=218}] at @n[tag=SEAyuehan] run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
-execute as @n[tag=SEAyuehan,scores={sea_4temp1=243}] at @n[tag=SEAyuehan] run tellraw @a[distance=0..250] {"text":"越涵：“你听着，你想活着离开这里，我比你更想活着离开这里。你如果想的话帮我找下斯顿，他在这种场合下比我更有主意。”","color":"green"}
-execute as @n[tag=SEAyuehan,scores={sea_4temp1=243}] at @n[tag=SEAyuehan] run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
-execute as @n[tag=SEAyuehan,scores={sea_4temp1=271}] at @n[tag=SEAyuehan] if entity @n[tag=sc,scores={sea_player=1}] run tellraw @a[distance=0..250] {"text":"越涵：“我这儿有点绿宝石，你拿去买多功能工作站里的玩意。我塞进去的肉估计都变质了，你最好别吃。”","color":"green"}
-execute as @n[tag=SEAyuehan,scores={sea_4temp1=271}] at @n[tag=SEAyuehan] if entity @n[tag=sc,scores={sea_player=2..}] run tellraw @a[distance=0..250] {"text":"越涵：“我这儿有点绿宝石，你拿去买多功能工作站里的玩意。我塞进去的肉估计都变质了，你最好叫你的同事们都别吃。”","color":"green"}
-execute as @n[tag=SEAyuehan,scores={sea_4temp1=271}] at @n[tag=SEAyuehan] run give @a[tag=SEAPT] emerald 16
-execute as @n[tag=SEAyuehan,scores={sea_4temp1=271}] at @n[tag=SEAyuehan] run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
+execute as @n[tag=SEAyuehan,scores={sea_4temp1=124}] at @n[tag=SEAyuehan] run tellraw @a[distance=0..250] {"text":"越涵：“你看到这个房间中间的水晶了吗？对，它飘在空中，不借助任何科技手段。而且它一直会自主长成说是十字架的模样。”","color":"green"}
+execute as @n[tag=SEAyuehan,scores={sea_4temp1=124}] at @n[tag=SEAyuehan] run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
+execute as @n[tag=SEAyuehan,scores={sea_4temp1=152}] at @n[tag=SEAyuehan] run tellraw @a[distance=0..250] {"text":"越涵：“我真的搞不懂，这他妈哪里像十字架了，明眼人一看就知道这不是个什么好东西。诺曼博士还说这能防止那些细菌的侵入，结果放哪哪暴乱。”","color":"green"}
+execute as @n[tag=SEAyuehan,scores={sea_4temp1=152}] at @n[tag=SEAyuehan] run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
+execute as @n[tag=SEAyuehan,scores={sea_4temp1=184}] at @n[tag=SEAyuehan] run tellraw @a[distance=0..250] {"text":"越涵：“我跟你讲，远离这些水晶，虽然散布甲板上的那几块都基本被我们敲干净了。这玩意绝对有问题，问题大了去了。”","color":"green"}
+execute as @n[tag=SEAyuehan,scores={sea_4temp1=184}] at @n[tag=SEAyuehan] run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
+execute as @n[tag=SEAyuehan,scores={sea_4temp1=210}] at @n[tag=SEAyuehan] run tellraw @a[distance=0..250] {"text":"越涵：“我不知道这里还有多少人活着，但我认识一个老哥叫斯顿的被困在宿舍楼。我一小时前才跟他断联。”","color":"green"}
+execute as @n[tag=SEAyuehan,scores={sea_4temp1=210}] at @n[tag=SEAyuehan] run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
+execute as @n[tag=SEAyuehan,scores={sea_4temp1=238}] at @n[tag=SEAyuehan] if entity @n[tag=sc,scores={sea_player=1}] run tellraw @a[distance=0..250] {"text":"越涵：“你能帮我找找他吗？对、我知道我还活着，你别一脸如释重负的表情了……”","color":"green"}
+execute as @n[tag=SEAyuehan,scores={sea_4temp1=238}] at @n[tag=SEAyuehan] if entity @n[tag=sc,scores={sea_player=2}] run tellraw @a[distance=0..250] {"text":"越涵：“你俩能帮我找找他吗？对、我知道我还活着，你别一脸如释重负的表情了……”","color":"green"}
+execute as @n[tag=SEAyuehan,scores={sea_4temp1=238}] at @n[tag=SEAyuehan] if entity @n[tag=sc,scores={sea_player=3..}] run tellraw @a[distance=0..250] {"text":"越涵：“你们几位能帮我找找他吗？对、我知道我还活着，你别一脸如释重负的表情了……”","color":"green"}
+execute as @n[tag=SEAyuehan,scores={sea_4temp1=238}] at @n[tag=SEAyuehan] run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
+execute as @n[tag=SEAyuehan,scores={sea_4temp1=263}] at @n[tag=SEAyuehan] run tellraw @a[distance=0..250] {"text":"越涵：“你听着，你想活着离开这里，我比你更想活着离开这里。你如果想的话帮我找下斯顿，他在这种场合下比我更有主意。”","color":"green"}
+execute as @n[tag=SEAyuehan,scores={sea_4temp1=263}] at @n[tag=SEAyuehan] run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
+execute as @n[tag=SEAyuehan,scores={sea_4temp1=291}] at @n[tag=SEAyuehan] if entity @n[tag=sc,scores={sea_player=1}] run tellraw @a[distance=0..250] {"text":"越涵：“我这儿有点绿宝石，你拿去买多功能工作站里的玩意。我塞进去的肉估计都变质了，你最好别吃。”","color":"green"}
+execute as @n[tag=SEAyuehan,scores={sea_4temp1=291}] at @n[tag=SEAyuehan] if entity @n[tag=sc,scores={sea_player=2..}] run tellraw @a[distance=0..250] {"text":"越涵：“我这儿有点绿宝石，你拿去买多功能工作站里的玩意。我塞进去的肉估计都变质了，你最好叫你的同事们都别吃。”","color":"green"}
+execute as @n[tag=SEAyuehan,scores={sea_4temp1=291}] at @n[tag=SEAyuehan] run give @a[tag=SEAPT] emerald 16
+execute as @n[tag=SEAyuehan,scores={sea_4temp1=291}] at @n[tag=SEAyuehan] run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
 
 execute if block 90137 136 144 minecraft:polished_tuff \
 if block 90137 139 141 lever[powered=true] \
