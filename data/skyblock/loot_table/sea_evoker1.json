@@ -11,20 +11,35 @@
         },
 	      {
           "type": "minecraft:item",
-          "name": "minecraft:wild_armor_trim_smithing_template",
-          "weight": 7,
+          "name": "minecraft:wayfinder_armor_trim_smithing_template",
+          "weight": 5,
           "functions": [
             {
               "function": "minecraft:set_name",
               "name": {
-                "text": "狂荒石板",
+                "text": "醒殉徒石板",
                 "color": "light_purple",
                 "italic": false
               }
             }
           ]
         },
-	{
+	      {
+          "type": "minecraft:item",
+          "name": "sentry_armor_trim_smithing_template",
+                "weight": 7,
+                "functions": [
+                  {
+                    "function": "minecraft:set_name",
+                    "name": {
+                      "text": "辽哨石板",
+                "color": "light_purple",
+                "italic": false
+              }
+            }
+          ]
+        },
+	      {
           "type": "minecraft:item",
           "name": "minecraft:emerald",
           "weight": 16
@@ -32,17 +47,22 @@
       ]
     },
     {
-      "rolls": 2,
+      "rolls": 4,
       "entries": [
         {
           "type": "minecraft:item",
           "name": "minecraft:air",
           "weight": 30
         },
-	{
+	      {
           "type": "minecraft:item",
           "name": "minecraft:emerald",
-          "weight": 20
+          "weight": 40
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:flint",
+          "weight": 5
         }
       ]
     },

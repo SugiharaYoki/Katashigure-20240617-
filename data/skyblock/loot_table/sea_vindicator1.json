@@ -11,6 +11,21 @@
         },
 	      {
           "type": "minecraft:item",
+          "name": "minecraft:wayfinder_armor_trim_smithing_template",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "醒殉徒石板",
+                "color": "light_purple",
+                "italic": false
+              }
+            }
+          ]
+        },
+	      {
+          "type": "minecraft:item",
           "name": "minecraft:wild_armor_trim_smithing_template",
           "weight": 7,
           "functions": [
@@ -24,7 +39,7 @@
             }
           ]
         },
-	{
+	      {
           "type": "minecraft:item",
           "name": "minecraft:emerald",
           "weight": 16
@@ -32,16 +47,21 @@
       ]
     },
     {
-      "rolls": 2,
+      "rolls": 3,
       "entries": [
         {
           "type": "minecraft:item",
           "name": "minecraft:air",
           "weight": 30
         },
-	{
+	      {
           "type": "minecraft:item",
           "name": "minecraft:emerald",
+          "weight": 20
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:bread",
           "weight": 20
         }
       ]
@@ -57,7 +77,7 @@
 	{
           "type": "minecraft:item",
           "name": "minecraft:glistering_melon_slice",
-          "weight": 5
+          "weight": 10
         }
       ]
     }
