@@ -14,7 +14,7 @@ execute if score @s sea_4temp1 matches 7..9 at @s run tp @s ~ ~0.1 ~
 execute if score @s sea_4temp1 matches 10..12 at @s run tp @s ~ ~0.06 ~
 execute if score @s sea_4temp1 matches 13..15 at @s run tp @s ~ ~0.03 ~
 execute if score @s sea_4temp1 matches 16..18 at @s run tp @s ~ ~0.01 ~
-execute if score @s sea_4temp1 matches 100 run kill @s[type=block_display]
+execute if score @s sea_4temp1 matches 100.. run kill @s[type=block_display]
 execute if score @s sea_4temp1 matches 2.. store result storage sea_drone:rotation Rot float 1 run scoreboard players get @s sea_4temp2
 execute if score @s sea_4temp1 matches 2.. run data modify entity @s Rotation[0] set from storage sea_drone:rotation Rot
 
