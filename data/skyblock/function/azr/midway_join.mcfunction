@@ -27,8 +27,8 @@ execute if entity @s[scores={Azr_wave=10..}] run item replace entity @s inventor
 #23波后
 execute if entity @s[scores={Azr_wave=23..}] run function skyblock:azr/items/bow
 execute if entity @s[scores={Azr_wave=23..}] run item replace entity @s inventory.0 with rotten_flesh 6
-execute if entity @s[scores={Azr_wave=23..}] run item replace entity @s inventory.3 with bone[custom_name='{"text":"硬骨","italic":false}'] 3
-execute if entity @s[scores={Azr_wave=23..}] run item replace entity @s inventory.4 with iron_nugget[custom_name='{"text":"盾牌碎片","italic":false}'] 3
+execute if entity @s[scores={Azr_wave=23..}] run item replace entity @s inventory.3 with bone[custom_name='{"text":"硬骨","italic":false}',custom_data={hard_bone:1b}] 3
+execute if entity @s[scores={Azr_wave=23..}] run item replace entity @s inventory.4 with iron_nugget[custom_name='{"text":"盾牌碎片","italic":false,"color":"white"}',custom_data={shild_shard:1b}] 3
 #36波（第四章）后
 execute if entity @s[scores={Azr_wave=36..}] run clear @s
 execute if entity @s[scores={Azr_wave=36..}] run function skyblock:azr/items/prison_iron_sword
