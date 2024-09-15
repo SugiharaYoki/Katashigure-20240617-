@@ -29,5 +29,5 @@ run scoreboard players remove @s[scores={sea_oxygen=-10..}] sea_oxygen 2
 
 execute at @s unless block ~ ~ ~ water unless block ~ ~1 ~ water run scoreboard players add @s[scores={sea_oxygen=..20}] sea_oxygen 10
 
-effect give @s[scores={sea_oxygen=..-1}] wither 3 6 true
-effect give @s[scores={sea_oxygen=..-1}] slowness 3 6 true
+damage @s[scores={sea_oxygen=..-1}] 10 drown
+effect give @s[scores={sea_oxygen=..-1}] slowness 2 6 true
