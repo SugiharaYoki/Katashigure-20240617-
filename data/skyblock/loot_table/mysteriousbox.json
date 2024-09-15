@@ -112,7 +112,7 @@
           "functions": [
             {
               "function": "minecraft:enchant_randomly",
-              "enchantments": [
+              "options": [
                 "minecraft:loyalty",
                 "minecraft:riptide",
                 "minecraft:channeling"

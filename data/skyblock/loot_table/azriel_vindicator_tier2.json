@@ -9,18 +9,23 @@
           "name": "minecraft:air",
           "weight": 60
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:raw_iron",
           "weight": 2,
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:\"{\\\"text\\\":\\\"钝铁\\\",\\\"italic\\\":false,\\\"color\\\":\\\"white\\\"}\"}}"
+              "function": "set_components",
+              "components": {
+                "custom_name": "{\"text\":\"钝铁\",\"italic\":false,\"color\":\"white\"}",
+                "custom_data": {
+                  "raw_iron": 1
+                }
+              }
             }
-]
+          ]
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:paper",
           "weight": 3,
@@ -30,13 +35,13 @@
               "components": {
                 "custom_name": "{\"text\":\"圣殿信条\",\"italic\":false,\"color\":\"blue\"}",
                 "custom_data": {
-                  "sanct_credo":1
+                  "sanct_credo": 1
                 }
               }
             }
-]
+          ]
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:emerald",
           "weight": 20
@@ -51,21 +56,26 @@
           "name": "minecraft:air",
           "weight": 55
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:emerald",
           "weight": 20
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:ghast_tear",
           "weight": 3,
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:\"{\\\"text\\\":\\\"光明精华\\\",\\\"italic\\\":false,\\\"color\\\":\\\"blue\\\"}\"}}"
+              "function": "set_components",
+              "components": {
+                "custom_name": "{\"text\":\"光明精华\",\"italic\":false,\"color\":\"blue\"}",
+                "custom_data": {
+                  "light_essence": 1
+                }
+              }
             }
-]
+          ]
         }
       ]
     },
@@ -77,7 +87,7 @@
           "name": "minecraft:air",
           "weight": 995
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:glistering_melon_slice",
           "weight": 5

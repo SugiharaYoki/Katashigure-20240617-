@@ -9,40 +9,69 @@
           "name": "minecraft:air",
           "weight": 900
         },
-	      {
+        {
           "type": "minecraft:item",
           "name": "minecraft:arrow",
           "weight": 50
         },
-	      {
+        {
           "type": "minecraft:item",
           "name": "minecraft:stick",
           "weight": 50
         },
-	      {
+        {
           "type": "minecraft:item",
           "name": "minecraft:emerald",
           "weight": 50
         },
-	      {
+        {
           "type": "minecraft:item",
           "name": "minecraft:bone",
           "weight": 150,
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:\"{\\\"text\\\":\\\"硬骨\\\",\\\"italic\\\":false,\\\"color\\\":\\\"white\\\"}\"}}"
+              "function": "set_components",
+              "components": {
+                "custom_name": "{\"text\":\"硬骨\",\"italic\":false,\"color\":\"white\"}",
+                "custom_data": {
+                  "hard_bone": 1
+                }
+              }
             }
           ]
         },
-	      {
+        {
           "type": "minecraft:item",
           "name": "minecraft:stone_shovel",
           "weight": 2,
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:\"{\\\"text\\\":\\\"硬骨铲\\\",\\\"italic\\\":false,\\\"color\\\":\\\"dark_red\\\"}\"},AttributeModifiers:[{AttributeName:\"generic.attack_damage\",Amount:12.0,Operation:0,UUID:[I;84300,1,1,7],Slot:\"mainhand\"},{AttributeName:\"generic.attack_speed\",Amount:-3.5,Operation:0,UUID:[I;84300,1,1,8],Slot:\"mainhand\"}],Enchantments:[{id:\"minecraft:bane_of_arthropods\",lvl:1}]}"
+              "function": "set_components",
+              "components": {
+                "custom_name": "{\"text\":\"硬骨铲\",\"italic\":false,\"color\":\"dark_red\"}",
+                "attribute_modifiers": [
+                  {
+                    "type": "generic.attack_damage",
+                    "id": "azr:bone_shovel.attack_damage",
+                    "amount": 12,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                  },
+                  {
+                    "type": "generic.attack_speed",
+                    "id": "azr:bone_shovel.attack_speed",
+                    "amount": -3.50,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                  }
+                ],
+                "enchantments": {
+                  "bane_of_arthropods": 1
+                },
+                "custom_data": {
+                  "weapon_bone_shovel": 1
+                }
+              }
             }
           ]
         }
@@ -56,7 +85,7 @@
           "name": "minecraft:air",
           "weight": 50
         },
-	      {
+        {
           "type": "minecraft:item",
           "name": "minecraft:emerald",
           "weight": 20
@@ -71,7 +100,7 @@
           "name": "minecraft:air",
           "weight": 995
         },
-	      {
+        {
           "type": "minecraft:item",
           "name": "minecraft:glistering_melon_slice",
           "weight": 5

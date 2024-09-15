@@ -9,17 +9,17 @@
           "name": "minecraft:air",
           "weight": 90
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:string",
           "weight": 20
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:spider_eye",
           "weight": 2
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:emerald",
           "weight": 8
@@ -34,7 +34,7 @@
           "name": "minecraft:air",
           "weight": 50
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:emerald",
           "weight": 20

@@ -50,8 +50,13 @@
           "name": "minecraft:iron_nugget",
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:\"{\\\"text\\\":\\\"盾牌碎片\\\",\\\"italic\\\":false,\\\"color\\\":\\\"white\\\"}\"}}"
+              "function": "set_components",
+              "components": {
+                "custom_name": "{\"text\":\"盾牌碎片\",\"italic\":false,\"color\":\"white\"}",
+                "custom_data": {
+                  "shild_shard": 1
+                }
+              }
             }
           ]
         }
@@ -65,7 +70,7 @@
           "name": "minecraft:air",
           "weight": 995
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:glistering_melon_slice",
           "weight": 5

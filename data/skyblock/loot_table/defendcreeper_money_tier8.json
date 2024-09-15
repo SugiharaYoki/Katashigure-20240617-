@@ -9,12 +9,12 @@
           "name": "minecraft:air",
           "weight": 30
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:emerald",
           "weight": 70
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:diamond",
           "weight": 10

@@ -9,17 +9,17 @@
           "name": "minecraft:air",
           "weight": 70
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:rotten_flesh",
           "weight": 7
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:emerald",
           "weight": 16
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:chain",
           "weight": 1
@@ -34,26 +34,31 @@
           "name": "minecraft:air",
           "weight": 70
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:emerald",
           "weight": 28
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:stick",
           "weight": 8
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:raw_iron",
           "weight": 2,
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:\"{\\\"text\\\":\\\"钝铁\\\",\\\"italic\\\":false,\\\"color\\\":\\\"white\\\"}\"}}"
+              "function": "set_components",
+              "components": {
+                "custom_name": "{\"text\":\"钝铁\",\"italic\":false,\"color\":\"white\"}",
+                "custom_data": {
+                  "raw_iron": 1
+                }
+              }
             }
-]
+          ]
         }
       ]
     },
@@ -65,21 +70,26 @@
           "name": "minecraft:air",
           "weight": 995
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:glistering_melon_slice",
           "weight": 5
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:zombie_head",
           "weight": 2,
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:\"{\\\"text\\\":\\\"腐烂的尸首\\\",\\\"italic\\\":false,\\\"color\\\":\\\"blue\\\"}\"}}"
+              "function": "set_components",
+              "components": {
+                "custom_name": "{\"text\":\"腐烂的尸首\",\"italic\":false,\"color\":\"blue\"}",
+                "custom_data": {
+                  "zombie_head": 1
+                }
+              }
             }
-	  ]
+          ]
         }
       ]
     }

@@ -9,18 +9,23 @@
           "name": "minecraft:air",
           "weight": 50
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:black_dye",
           "weight": 30,
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:\"{\\\"text\\\":\\\"虫骸\\\",\\\"italic\\\":false,\\\"color\\\":\\\"white\\\"}\"}}"
+              "function": "set_components",
+              "components": {
+                "custom_name": "{\"text\":\"虫骸\",\"italic\":false,\"color\":\"white\"}",
+                "custom_data": {
+                  "insect_remains": 1
+                }
+              }
             }
-]
+          ]
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:emerald",
           "weight": 10
@@ -35,7 +40,7 @@
           "name": "minecraft:air",
           "weight": 50
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:flint",
           "weight": 50

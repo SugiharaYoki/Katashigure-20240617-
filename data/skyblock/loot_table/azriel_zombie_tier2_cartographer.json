@@ -9,31 +9,36 @@
           "name": "minecraft:air",
           "weight": 70
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:rotten_flesh",
           "weight": 7
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:emerald",
           "weight": 16
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:chain",
           "weight": 1
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:ghast_tear",
           "weight": 3,
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:\"{\\\"text\\\":\\\"黑暗精华\\\",\\\"italic\\\":false,\\\"color\\\":\\\"dark_purple\\\"}\"}}"
+              "function": "set_components",
+              "components": {
+                "custom_name": "{\"text\":\"黑暗精华\",\"italic\":false,\"color\":\"dark_purple\"}",
+                "custom_data": {
+                  "dark_essence": 1
+                }
+              }
             }
-]
+          ]
         }
       ]
     },
@@ -45,17 +50,17 @@
           "name": "minecraft:air",
           "weight": 70
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:emerald",
           "weight": 20
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:sugar",
           "weight": 10
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:apple",
           "weight": 2
@@ -70,21 +75,26 @@
           "name": "minecraft:air",
           "weight": 995
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:glistering_melon_slice",
           "weight": 5
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:zombie_head",
           "weight": 2,
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:\"{\\\"text\\\":\\\"腐烂的尸首\\\",\\\"italic\\\":false,\\\"color\\\":\\\"blue\\\"}\"}}"
+              "function": "set_components",
+              "components": {
+                "custom_name": "{\"text\":\"腐烂的尸首\",\"italic\":false,\"color\":\"blue\"}",
+                "custom_data": {
+                  "zombie_head": 1
+                }
+              }
             }
-	  ]
+          ]
         }
       ]
     }

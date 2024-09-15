@@ -174,7 +174,7 @@
           "name": "coal",
           "weight": 60
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "tnt",
           "weight": 5,
@@ -195,7 +195,7 @@
             }
           ]
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "stonecutter",
           "weight": 12,

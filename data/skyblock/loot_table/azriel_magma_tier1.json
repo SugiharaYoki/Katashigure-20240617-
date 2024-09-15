@@ -9,17 +9,17 @@
           "name": "minecraft:air",
           "weight": 100
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:emerald",
           "weight": 15
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:slime_ball",
           "weight": 5
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:magma_cream",
           "weight": 5
@@ -34,7 +34,7 @@
           "name": "minecraft:air",
           "weight": 999
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:glistering_melon_slice",
           "weight": 1

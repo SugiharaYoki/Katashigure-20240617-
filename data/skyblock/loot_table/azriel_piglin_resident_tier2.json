@@ -9,31 +9,36 @@
           "name": "minecraft:air",
           "weight": 70
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:bread",
           "weight": 8
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:melon_slice",
           "weight": 16
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:gold_nugget",
           "weight": 40
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:raw_gold",
           "weight": 1,
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:\"{\\\"text\\\":\\\"钝金\\\",\\\"italic\\\":false,\\\"color\\\":\\\"white\\\"}\"}}"
+              "function": "set_components",
+              "components": {
+                "custom_name": "{\"text\":\"钝金\",\"italic\":false,\"color\":\"white\"}",
+                "custom_data": {
+                  "raw_gold": 1
+                }
+              }
             }
-	  ]
+          ]
         }
       ]
     },
@@ -45,16 +50,21 @@
           "name": "minecraft:air",
           "weight": 48
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:ghast_tear",
           "weight": 1,
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:\"{\\\"text\\\":\\\"黑暗精华\\\",\\\"italic\\\":false,\\\"color\\\":\\\"dark_purple\\\"}\"}}"
+              "function": "set_components",
+              "components": {
+                "custom_name": "{\"text\":\"黑暗精华\",\"italic\":false,\"color\":\"dark_purple\"}",
+                "custom_data": {
+                  "dark_essence": 1
+                }
+              }
             }
-]
+          ]
         }
       ]
     },
@@ -66,7 +76,7 @@
           "name": "minecraft:air",
           "weight": 995
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:glistering_melon_slice",
           "weight": 5

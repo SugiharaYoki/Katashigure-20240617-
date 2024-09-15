@@ -255,7 +255,7 @@
             }
           ]
         },
-{
+        {
           "type": "minecraft:item",
           "name": "minecraft:ancient_debris",
           "weight": 65,

@@ -9,26 +9,31 @@
           "name": "minecraft:air",
           "weight": 80
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:leather",
           "weight": 10
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:porkchop",
           "weight": 10
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:ghast_tear",
           "weight": 1,
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:\"{\\\"text\\\":\\\"光明精华\\\",\\\"italic\\\":false,\\\"color\\\":\\\"blue\\\"}\"}}"
+              "function": "set_components",
+              "components": {
+                "custom_name": "{\"text\":\"光明精华\",\"italic\":false,\"color\":\"blue\"}",
+                "custom_data": {
+                  "light_essence": 1
+                }
+              }
             }
-]
+          ]
         }
       ]
     },
@@ -40,21 +45,45 @@
           "name": "minecraft:air",
           "weight": 895
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:glistering_melon_slice",
           "weight": 5
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:brick",
           "weight": 3,
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:\"{\\\"text\\\":\\\"小巧的猪板砖\\\",\\\"italic\\\":false,\\\"color\\\":\\\"dark_red\\\"}\"},AttributeModifiers:[{AttributeName:\"generic.attack_damage\",Amount:2.0,Operation:0,UUID:[I;84300,1,1099203,7],Slot:\"mainhand\"},{AttributeName:\"generic.attack_speed\",Amount:-3.00,Operation:0,UUID:[I;84300,1,1099203,8],Slot:\"mainhand\"}],Enchantments:[{id:\"minecraft:knockback\",lvl:2}]}"
+              "function": "set_components",
+              "components": {
+                "custom_name": "{\"text\":\"小巧的猪板砖\",\"italic\":false,\"color\":\"dark_red\"}",
+                "attribute_modifiers": [
+                  {
+                    "type": "generic.attack_damage",
+                    "id": "azr:brick.attack_damage",
+                    "amount": 2,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                  },
+                  {
+                    "type": "generic.attack_speed",
+                    "id": "azr:brick.attack_speed",
+                    "amount": -3.00,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                  }
+                ],
+                "enchantments": {
+                  "knockback": 2
+                },
+                "custom_data": {
+                  "weapon_brick": 1
+                }
+              }
             }
-]
+          ]
         }
       ]
     }

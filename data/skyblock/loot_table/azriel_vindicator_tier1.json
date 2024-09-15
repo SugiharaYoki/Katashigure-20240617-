@@ -9,18 +9,23 @@
           "name": "minecraft:air",
           "weight": 800
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:raw_iron",
           "weight": 10,
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:\"{\\\"text\\\":\\\"钝铁\\\",\\\"italic\\\":false,\\\"color\\\":\\\"white\\\"}\"}}"
+              "function": "set_components",
+              "components": {
+                "custom_name": "{\"text\":\"钝铁\",\"italic\":false,\"color\":\"white\"}",
+                "custom_data": {
+                  "raw_iron": 1
+                }
+              }
             }
-]
+          ]
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:paper",
           "weight": 10,
@@ -30,36 +35,80 @@
               "components": {
                 "custom_name": "{\"text\":\"圣殿信条\",\"italic\":false,\"color\":\"blue\"}",
                 "custom_data": {
-                  "sanct_credo":1
+                  "sanct_credo": 1
                 }
               }
             }
-]
+          ]
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:emerald",
           "weight": 200
         },
-	      {
+        {
           "type": "minecraft:item",
           "name": "minecraft:iron_sword",
           "weight": 2,
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:\"{\\\"text\\\":\\\"铁剑·黑钢\\\",\\\"italic\\\":false,\\\"color\\\":\\\"dark_red\\\"}\"},AttributeModifiers:[{AttributeName:\"generic.attack_damage\",Amount:5.5,Operation:0,UUID:[I;84300,191,1,85],Slot:\"mainhand\"},{AttributeName:\"generic.attack_speed\",Amount:-2.3,Operation:0,UUID:[I;84300,191,1,86],Slot:\"mainhand\"}],Unbreakable:true}"
+              "function": "set_components",
+              "components": {
+                "custom_name": "{\"text\":\"铁剑·黑钢\",\"italic\":false,\"color\":\"dark_red\"}",
+                "attribute_modifiers": [
+                  {
+                    "type": "generic.attack_damage",
+                    "id": "azr:black_iron_sword.attack_damage",
+                    "amount": 5.5,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                  },
+                  {
+                    "type": "generic.attack_speed",
+                    "id": "azr:black_iron_sword.attack_speed",
+                    "amount": -2.3,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                  }
+                ],
+                "unbreakable": {},
+                "custom_data": {
+                  "weapon_black_iron_sword": 1
+                }
+              }
             }
           ]
         },
-	      {
+        {
           "type": "minecraft:item",
           "name": "minecraft:iron_axe",
           "weight": 2,
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:\"{\\\"text\\\":\\\"铁斧·黑钢\\\",\\\"italic\\\":false,\\\"color\\\":\\\"dark_red\\\"}\"},AttributeModifiers:[{AttributeName:\"generic.attack_damage\",Amount:8.5,Operation:0,UUID:[I;84300,191,1,87],Slot:\"mainhand\"},{AttributeName:\"generic.attack_speed\",Amount:-2.95,Operation:0,UUID:[I;84300,191,1,88],Slot:\"mainhand\"}],Unbreakable:true}"
+              "function": "set_components",
+              "components": {
+                "custom_name": "{\"text\":\"铁斧·黑钢\",\"italic\":false,\"color\":\"dark_red\"}",
+                "attribute_modifiers": [
+                  {
+                    "type": "generic.attack_damage",
+                    "id": "azr:black_iron_axe.attack_damage",
+                    "amount": 8.5,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                  },
+                  {
+                    "type": "generic.attack_speed",
+                    "id": "azr:black_iron_axe.attack_speed",
+                    "amount": -2.95,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                  }
+                ],
+                "unbreakable": {},
+                "custom_data": {
+                  "weapon_black_iron_axe": 1
+                }
+              }
             }
           ]
         }
@@ -73,7 +122,7 @@
           "name": "minecraft:air",
           "weight": 55
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:emerald",
           "weight": 20
@@ -88,7 +137,7 @@
           "name": "minecraft:air",
           "weight": 995
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:glistering_melon_slice",
           "weight": 5

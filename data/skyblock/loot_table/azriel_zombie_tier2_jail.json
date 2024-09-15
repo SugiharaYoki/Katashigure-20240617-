@@ -9,17 +9,17 @@
           "name": "minecraft:air",
           "weight": 70
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:rotten_flesh",
           "weight": 7
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:emerald",
           "weight": 16
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:chain",
           "weight": 3
@@ -34,7 +34,7 @@
           "name": "minecraft:air",
           "weight": 70
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:emerald",
           "weight": 20
@@ -49,21 +49,43 @@
           "name": "minecraft:air",
           "weight": 995
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:glistering_melon_slice",
           "weight": 5
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:stone_axe",
           "weight": 1,
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:\"{\\\"text\\\":\\\"磐石斧·尸劣\\\",\\\"italic\\\":false,\\\"color\\\":\\\"dark_red\\\"}\"},AttributeModifiers:[{AttributeName:\"generic.attack_damage\",Amount:10.5,Operation:0,UUID:[I;84300,1,109925,7079],Slot:\"mainhand\"},{AttributeName:\"generic.attack_speed\",Amount:-2.77,Operation:0,UUID:[I;84300,1,109925,8079],Slot:\"mainhand\"}],Unbreakable:1b}"
+              "function": "set_components",
+              "components": {
+                "custom_name": "{\"text\":\"磐石斧·尸劣\",\"italic\":false,\"color\":\"dark_red\"}",
+                "attribute_modifiers": [
+                  {
+                    "type": "generic.attack_damage",
+                    "id": "azr:zombie_stone_axe.attack_damage",
+                    "amount": 10.5,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                  },
+                  {
+                    "type": "generic.attack_speed",
+                    "id": "azr:zombie_stone_axe.attack_speed",
+                    "amount": -2.77,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                  }
+                ],
+                "unbreakable": {},
+                "custom_data": {
+                  "weapon_zombie_stone_axe": 1
+                }
+              }
             }
-]
+          ]
         }
       ]
     }

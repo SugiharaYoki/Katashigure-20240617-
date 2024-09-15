@@ -139,12 +139,14 @@
           "weight": 4,
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{Damage:120}"
+              "function": "set_components",
+              "components": {
+                "damage": 120
+              }
             },
             {
               "function": "minecraft:enchant_randomly",
-              "enchantments": [
+              "options": [
                 "minecraft:vanishing_curse"
               ],
               "conditions": [
@@ -162,8 +164,10 @@
           "weight": 2,
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{Damage:54}"
+              "function": "set_components",
+              "components": {
+                "damage": 54
+              }
             }
           ]
         }

@@ -9,7 +9,7 @@
           "name": "minecraft:air",
           "weight": 90
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:emerald",
           "weight": 10

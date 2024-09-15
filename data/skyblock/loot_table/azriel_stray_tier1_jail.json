@@ -9,38 +9,43 @@
           "name": "minecraft:air",
           "weight": 80
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:spectral_arrow",
           "weight": 3
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:chain",
           "weight": 5
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:stick",
           "weight": 3
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:emerald",
           "weight": 9
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:bone",
           "weight": 12,
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:\"{\\\"text\\\":\\\"冻骨\\\",\\\"italic\\\":false,\\\"color\\\":\\\"white\\\"}\"}}"
+              "function": "set_components",
+              "components": {
+                "custom_name": "{\"text\":\"冻骨\",\"italic\":false,\"color\":\"white\"}",
+                "custom_data": {
+                  "frozen_bone": 1
+                }
+              }
             }
-]
+          ]
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:leather",
           "weight": 9
@@ -55,7 +60,7 @@
           "name": "minecraft:air",
           "weight": 50
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:emerald",
           "weight": 20
@@ -70,7 +75,7 @@
           "name": "minecraft:air",
           "weight": 995
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:glistering_melon_slice",
           "weight": 5
