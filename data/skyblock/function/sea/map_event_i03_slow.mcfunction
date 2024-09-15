@@ -61,6 +61,12 @@ execute positioned 90072 139 110 if entity @a[tag=SEAPT,distance=..43] unless en
 execute positioned 90072 139 110 if entity @a[tag=SEAPT,distance=..43] unless entity @n[tag=SEAch3_spawn_initial,distance=0..3] positioned 90102 137 153 run function skyblock:sea/m/zombie_cook
 execute positioned 90072 139 110 if entity @a[tag=SEAPT,distance=..43] unless entity @n[tag=SEAch3_spawn_initial,distance=0..3] positioned 90102 137 153 run function skyblock:sea/m/silverfish
 execute positioned 90072 139 110 if entity @a[tag=SEAPT,distance=..43] unless entity @n[tag=SEAch3_spawn_initial,distance=0..3] positioned 90102 137 153 run function skyblock:sea/m/silverfish
+execute positioned 90072 139 110 if entity @a[tag=SEAPT,distance=..43] unless entity @n[tag=SEAch3_spawn_initial,distance=0..3] positioned 90130 137 102 run function skyblock:sea/m/drone
+execute positioned 90072 139 110 if entity @a[tag=SEAPT,distance=..43] unless entity @n[tag=SEAch3_spawn_initial,distance=0..3] positioned 90124 144 118 run function skyblock:sea/m/drone
+execute positioned 90072 139 110 if entity @a[tag=SEAPT,distance=..43] unless entity @n[tag=SEAch3_spawn_initial,distance=0..3] positioned 90097 145 116 run function skyblock:sea/m/drone
+execute positioned 90072 139 110 if entity @a[tag=SEAPT,distance=..43] unless entity @n[tag=SEAch3_spawn_initial,distance=0..3] positioned 90117 152 131 run function skyblock:sea/m/drone
+#execute positioned 90072 139 110 if entity @a[tag=SEAPT,distance=..43] unless entity @n[tag=SEAch3_spawn_initial,distance=0..3] positioned 90117 152 131 run function skyblock:sea/m/drone
+
 execute positioned 90072 139 110 if entity @a[tag=SEAPT,distance=..43] unless entity @n[tag=SEAch3_spawn_initial,distance=0..3] run summon marker ~ ~ ~ {Tags:["SEAch3_spawn_initial"]}
 
 #give @p written_book[written_book_content={pages:['["",{"text":"\\u526f\\u5bbf\\u820d\\u697c\\u7684\\u56db\\u95f4\\u6807\\u51c6\\u623f\\u91cc\\u90fd\\u6709\\u82b1\\u5bf9\\u5427\\uff0c\\u90a3\\u4fbf\\u662f\\u5bc6\\u7801\\u3002\\n\\n\\n"},{"text":"\\u7ea2\\u8272","color":"red"},{"text":"\\u4ee3\\u88681\\n\\n","color":"black"},{"text":"\\u84dd\\u8272","color":"blue"},{"text":"\\u4ee3\\u88680\\n\\n","color":"black"},{"text":"\\u767d\\u8272","color":"gray"},{"text":"\\u4e0d\\u4ee3\\u8868","color":"black"},{"text":"\\u7ea2\\u8272","color":"red"},{"text":"\\n\\n","color":"black"},{"text":"1","color":"red"},{"text":"+","color":"black"},{"text":"1","color":"blue"},{"text":"=1","color":"black"}]'],title:"副宿舍楼2F的展示书",author:"斯顿"}]
