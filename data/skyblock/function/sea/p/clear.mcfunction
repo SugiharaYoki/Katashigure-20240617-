@@ -21,7 +21,6 @@ clear @s[gamemode=!creative] decorated_pot
 clear @s[gamemode=!creative] structure_void
 
 execute at @s \
-if block ~ ~0 ~ water \
 if block ~ ~-1 ~ water \
 if block ~ ~-2 ~ water \
 if block ~ ~-3 ~ water \
