@@ -370,3 +370,9 @@ setblock 90095 130 73 minecraft:potted_allium
 
 
 setblock 90143 123 109 minecraft:waxed_copper_bulb[lit=true]
+
+
+fill 90085 103 140 90085 101 141 minecraft:air
+
+
+fill 90091 131 98 90095 128 98 minecraft:bricks

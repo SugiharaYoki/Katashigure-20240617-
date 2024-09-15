@@ -40,6 +40,8 @@ scoreboard objectives add sea_cursor dummy
 scoreboard objectives add sea_cursor2 dummy
 scoreboard objectives add sea_do_attack minecraft.custom:minecraft.damage_dealt
 scoreboard objectives add SEA_story dummy
+scoreboard objectives add sea_oxygen dummy
+scoreboard objectives add sea_speedrun_ch1 dummy
 scoreboard players set @n[tag=sc] sea_chapter 1
 
 
@@ -375,3 +377,6 @@ setblock 90117 123 117 lever[facing=north,face=wall,powered=false]
 
 setblock 90074 123 138 minecraft:crimson_button[facing=east]
 setblock 90071 125 140 minecraft:redstone_lamp[lit=false]
+
+
+fill 90085 103 140 90085 101 141 minecraft:waxed_copper_grate

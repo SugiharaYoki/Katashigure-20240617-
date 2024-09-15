@@ -16,6 +16,7 @@ effect give @s fire_resistance 1 0 false
 team join SEA @s
 tag @s add Gaming
 tag @s add NoMultiMenu
+scoreboard players set @s sea_oxygen 20
 
 function skyblock:skywar_system_removeallmd
 
