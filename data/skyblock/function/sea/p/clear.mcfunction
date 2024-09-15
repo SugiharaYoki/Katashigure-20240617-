@@ -26,6 +26,6 @@ if block ~ ~-2 ~ water \
 if block ~ ~-3 ~ water \
 run scoreboard players remove @s[scores={sea_oxygen=-10..}] sea_oxygen 2
 
-execute at @s unless block ~ ~ ~ water unless block ~ ~1 ~ water run scoreboard players add @s[scores={sea_oxygen=..20}] sea_oxygen 10
+execute at @s unless block ~ ~-1 ~ water unless block ~ ~ ~ water run scoreboard players add @s[scores={sea_oxygen=..20}] sea_oxygen 10
 
 damage @s[scores={sea_oxygen=..-1}] 10 drown
