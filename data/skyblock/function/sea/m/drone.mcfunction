@@ -1,1 +1,1 @@
-summon block_display ~ ~ ~ {transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[0.3f,0.15f,0.3f],translation:[-0.15f,0f,-0.15f]},block_state:{Name:dispenser},Tags:["sea_blockdisplay","sea_drone"],Rotation:[45f,0f]}
+summon block_display ~ ~ ~ {transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[0.3f,0.22f,0.3f],translation:[-0.15f,0f,-0.15f]},block_state:{Name:dispenser},Tags:["sea_blockdisplay","sea_drone"],Rotation:[45f,0f]}

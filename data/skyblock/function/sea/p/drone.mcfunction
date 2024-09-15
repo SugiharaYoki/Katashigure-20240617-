@@ -23,6 +23,18 @@ execute if score @s sea_4temp1 matches 24.. run scoreboard players add @s sea_4t
 execute if score @s sea_4temp1 matches 36.. run scoreboard players add @s sea_4temp2 3
 execute if score @s sea_4temp1 matches 38.. run scoreboard players add @s sea_4temp2 3
 execute if score @s sea_4temp1 matches 40.. run scoreboard players add @s sea_4temp2 3
+
+execute if score @s sea_4temp1 matches 2.. store result score @s sea_4temp5 run random value 1..8
+execute if score @s sea_4temp1 matches 24.. if score @s sea_4temp5 matches 1 run summon arrow ~ ~0.1 ~ {Motion:[2.0,0.1,2.0]}
+execute if score @s sea_4temp1 matches 24.. if score @s sea_4temp5 matches 2 run summon arrow ~ ~0.1 ~ {Motion:[3.0,0.1,0.0]}
+execute if score @s sea_4temp1 matches 24.. if score @s sea_4temp5 matches 3 run summon arrow ~ ~0.1 ~ {Motion:[0.0,0.1,3.0]}
+execute if score @s sea_4temp1 matches 24.. if score @s sea_4temp5 matches 4 run summon arrow ~ ~0.1 ~ {Motion:[2.0,0.1,-2.0]}
+execute if score @s sea_4temp1 matches 24.. if score @s sea_4temp5 matches 5 run summon arrow ~ ~0.1 ~ {Motion:[-3.0,0.1,0.0]}
+execute if score @s sea_4temp1 matches 24.. if score @s sea_4temp5 matches 6 run summon arrow ~ ~0.1 ~ {Motion:[0.0,0.1,-3.0]}
+execute if score @s sea_4temp1 matches 24.. if score @s sea_4temp5 matches 7 run summon arrow ~ ~0.1 ~ {Motion:[-2.0,0.1,2.0]}
+execute if score @s sea_4temp1 matches 24.. if score @s sea_4temp5 matches 8 run summon arrow ~ ~0.1 ~ {Motion:[-2.0,0.1,-2.0]}
+execute if score @s sea_4temp1 matches 24.. run playsound entity.arrow.shoot hostile @a ~ ~0.1 ~ 0.4 1.3
+
 execute if score @s sea_4temp1 matches 1..3 at @s run tp @s ~ ~0.21 ~
 execute if score @s sea_4temp1 matches 4..6 at @s run tp @s ~ ~0.15 ~
 execute if score @s sea_4temp1 matches 7..9 at @s run tp @s ~ ~0.1 ~
