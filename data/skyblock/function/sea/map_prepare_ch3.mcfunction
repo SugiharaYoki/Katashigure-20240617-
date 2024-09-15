@@ -257,6 +257,12 @@ item replace block 90122 149 139 container.12 with fire_charge[custom_name='{"te
 item replace block 90122 149 139 container.14 with fire_charge[custom_name='{"text":"定时炸弹","italic":true,"color":"blue","italic":false}',lore=['{"text":"它会在你丢出去3秒后爆炸！","color":"white","italic":false}','{"text":"炸到自己的话，职业生涯就会结束了吧。","color":"white","italic":false}','{"text":"可用于破坏凝胶壁障与瓦罐。","color":"white","italic":false}']] 1
 
 
+summon marker 90108 149 141 {Tags:["SEAmagma1"]}
+summon marker 90107 149 150 {Tags:["SEAmagma1"]}
+summon marker 90104 158 143 {Tags:["SEAmagma1"]}
+summon marker 90103 155 143 {Tags:["SEAmagma1"]}
+execute as @e[tag=SEAmagma1,type=marker] at @s if block ~ ~ ~ air run setblock ~ ~ ~ basalt
+
 #宿舍侧楼 门
 setblock 90106 149 149 redstone_block
 setblock 90106 149 149 air
