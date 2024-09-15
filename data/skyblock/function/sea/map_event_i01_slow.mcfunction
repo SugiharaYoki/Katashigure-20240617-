@@ -108,6 +108,7 @@ execute as @n[tag=sc,scores={sea_4temp2=35}] positioned 90114 122 116 run functi
 execute as @n[tag=sc,scores={sea_4temp2=35}] positioned 90112 122 132 run function skyblock:sea/m/drowned_maintenance
 execute as @n[tag=sc,scores={sea_4temp2=35}] positioned 90114 122 116 run function skyblock:sea/m/spider
 execute as @n[tag=sc,scores={sea_4temp2=169}] run fill 90109 122 117 90110 123 117 air destroy
+execute as @n[tag=sc,scores={sea_4temp2=219}] run fill 90109 122 117 90110 123 117 air destroy
 
 
 
@@ -183,9 +184,9 @@ execute as @n[tag=sc,scores={sea_4temp2=1144}] run playsound minecraft:block.iro
 
 execute as @n[tag=sc,scores={sea_4temp2=1144}] positioned 90133 122 114 run function skyblock:sea/m/pillager
 execute as @n[tag=sc,scores={sea_4temp2=1144}] positioned 90138 122 115 run function skyblock:sea/m/drowned_shield
-execute as @n[tag=sc,scores={sea_4temp2=1144,sea_player=2..}] positioned 90133 122 129 run function skyblock:sea/m/drowned_shield
-execute as @n[tag=sc,scores={sea_4temp2=1144,sea_player=4..}] positioned 90133 122 129 run function skyblock:sea/m/drowned_hat
-execute as @n[tag=sc,scores={sea_4temp2=1144,sea_player=4..}] positioned 90133 122 129 run function skyblock:sea/m/drowned_hat
+execute as @n[tag=sc,scores={sea_4temp2=1144}] positioned 90133 122 129 run function skyblock:sea/m/drowned_shield
+execute as @n[tag=sc,scores={sea_4temp2=1144}] positioned 90133 122 129 run function skyblock:sea/m/drowned_hat
+execute as @n[tag=sc,scores={sea_4temp2=1144}] positioned 90133 122 129 run function skyblock:sea/m/drowned_hat
 execute as @n[tag=sc,scores={sea_4temp2=1144}] positioned 90140 115 148 run function skyblock:sea/m/zombie_security2
 execute as @n[tag=sc,scores={sea_4temp2=1144}] positioned 90140 115 148 run function skyblock:sea/m/drowned_shield
 execute as @n[tag=sc,scores={sea_4temp2=1144}] positioned 90140 115 148 run function skyblock:sea/m/drowned_shield
@@ -199,8 +200,8 @@ execute store result score @n[tag=SEAtestfor1] sea_boss1_hp run data get entity 
 execute as @n[tag=SEAtestfor1] at @s run tp @s ~ ~ ~ facing 90142 123.0 117
 execute as @n[tag=SEAtestfor1,scores={sea_boss1_hp=50..99}] at @s run function skyblock:sea/e/ev001
 
-execute as @n[tag=sc,scores={sea_4temp2=2000..2400}] run scoreboard players add @s sea_4temp2 1
-execute as @a[tag=SEAPT,x=90146,y=122,z=106,distance=0..3] run scoreboard players set @n[tag=sc,scores={sea_4temp2=..1999}] sea_4temp2 2000
+execute as @n[tag=sc,scores={sea_4temp2=1991..2400}] run scoreboard players add @s sea_4temp2 1
+execute as @a[tag=SEAPT,x=90146,y=122,z=106,distance=0..3] run scoreboard players set @n[tag=sc,scores={sea_4temp2=..1990}] sea_4temp2 1991
 execute as @n[tag=sc,scores={sea_4temp2=2001}] run setblock 90143 123 103 minecraft:waxed_copper_bulb[lit=true]
 execute as @n[tag=sc,scores={sea_4temp2=2004}] run setblock 90143 123 105 minecraft:waxed_copper_bulb[lit=true]
 execute as @n[tag=sc,scores={sea_4temp2=2006}] run setblock 90143 123 107 minecraft:waxed_copper_bulb[lit=true]
@@ -215,18 +216,14 @@ execute as @n[tag=sc,scores={sea_4temp2=2010}] run playsound block.copper_bulb.t
 execute as @n[tag=sc,scores={sea_4temp2=2015}] run playsound block.copper_bulb.turn_on ambient @a 90143 123 113 10 0.8
 execute as @n[tag=sc,scores={sea_4temp2=1991..2000}] positioned 90144 122 113 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
 execute as @n[tag=sc,scores={sea_4temp2=2001}] positioned 90144 122 113 run function skyblock:sea/m/zombie_security
-execute as @n[tag=sc,scores={sea_4temp2=2001}] positioned 90144 122 113 run function skyblock:sea/m/drowned
 execute as @n[tag=sc,scores={sea_4temp2=2001}] positioned 90144 122 113 if entity @n[tag=sc,scores={sea_player=4..}] run function skyblock:sea/m/zombie_security
 execute as @n[tag=sc,scores={sea_4temp2=1991..2000}] positioned 90148 122 112 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
 execute as @n[tag=sc,scores={sea_4temp2=2001}] positioned 90148 122 112 run function skyblock:sea/m/zombie_security
-execute as @n[tag=sc,scores={sea_4temp2=2001}] positioned 90148 122 112 run function skyblock:sea/m/drowned
 execute as @n[tag=sc,scores={sea_4temp2=2001}] positioned 90148 122 112 if entity @n[tag=sc,scores={sea_player=5..}] run function skyblock:sea/m/zombie_security
 execute as @n[tag=sc,scores={sea_4temp2=1991..2000}] positioned 90143 122 100 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
-execute as @n[tag=sc,scores={sea_4temp2=2001}] positioned 90143 122 100 run function skyblock:sea/m/zombie_security
 execute as @n[tag=sc,scores={sea_4temp2=2001}] positioned 90143 122 100 run function skyblock:sea/m/drowned
 execute as @n[tag=sc,scores={sea_4temp2=2001}] positioned 90143 122 100 if entity @n[tag=sc,scores={sea_player=2..}] run function skyblock:sea/m/zombie_security
 execute as @n[tag=sc,scores={sea_4temp2=1991..2000}] positioned 90149 122 101 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
-execute as @n[tag=sc,scores={sea_4temp2=2001}] positioned 90149 122 101 run function skyblock:sea/m/zombie_security
 execute as @n[tag=sc,scores={sea_4temp2=2001}] positioned 90149 122 101 run function skyblock:sea/m/drowned
 execute as @n[tag=sc,scores={sea_4temp2=2001}] positioned 90149 122 101 if entity @n[tag=sc,scores={sea_player=3..}] run function skyblock:sea/m/zombie_security
 
