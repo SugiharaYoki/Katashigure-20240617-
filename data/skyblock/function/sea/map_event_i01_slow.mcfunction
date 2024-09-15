@@ -442,5 +442,5 @@ execute as @n[tag=sc,scores={sea_4temp2=6304}] at @n[tag=SEAframauros] run plays
 execute as @n[tag=sc,scores={sea_4temp2=6304}] at @n[tag=SEAframauros] run tellraw @a[tag=SEAPT,distance=0.1..35] {"text":"法莫洛斯：以及……","color":"green"}
 execute as @n[tag=sc,scores={sea_4temp2=6334}] at @n[tag=SEAframauros] run playsound entity.villager.ambient neutral @a ~ ~ ~ 0.8 0.7
 execute as @n[tag=sc,scores={sea_4temp2=6334}] at @n[tag=SEAframauros] run tellraw @a[tag=SEAPT,distance=0.1..35] {"text":"法莫洛斯：能杀了我吗……？","color":"green"}
-execute as @n[tag=sc,scores={sea_4temp2=6334}] at @n[tag=SEAframauros] run data modify entity @s Invulnerable set value 0b
+execute as @n[tag=sc,scores={sea_4temp2=6334}] as @n[tag=SEAframauros] run data modify entity @s Invulnerable set value 0b
 execute as @n[tag=sc,scores={sea_4temp2=6300..7000}] unless entity @n[tag=SEAframauros] run scoreboard players set @n[tag=sc] sea_4temp2 5002
