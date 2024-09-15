@@ -377,3 +377,7 @@ execute if block 90115 152 127 bamboo_button[powered=true] run fill 90115 150 12
 execute as @n[tag=SEAmob_carrybomb,nbt=!{Fire:-1s}] run kill @s
 
 
+
+#水晶祀堂
+particle enchant 90093 131 102 3 3 3 0.01 20
+particle portal 90093 131 102 0.5 0.5 0.5 0.01 10
