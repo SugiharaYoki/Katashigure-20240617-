@@ -10,38 +10,38 @@
           "weight": 90
         },
         {
-                "type": "minecraft:item",
-                "name": "minecraft:wild_armor_trim_smithing_template",
-                "weight": 1,
-                "functions": [
-                  {
-                    "function": "minecraft:set_name",
-                    "name": {
-                      "text": "狂荒石板",
-                      "color": "light_purple",
-                      "bold": false,
-                      "italic": false
-                    }
-                  }
-                ]
-              },
-              {
-                      "type": "minecraft:item",
-                      "name": "minecraft:sentry_armor_trim_smithing_template",
-                      "weight": 4,
-                      "functions": [
-                        {
-                          "function": "minecraft:set_name",
-                          "name": {
-                            "text": "辽哨石板",
-                            "color": "light_purple",
-                            "bold": false,
-                            "italic": false
-                          }
-                        }
-                      ]
-                    },
-	{
+          "type": "minecraft:item",
+          "name": "minecraft:wild_armor_trim_smithing_template",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "狂荒石板",
+                "color": "light_purple",
+                "bold": false,
+                "italic": false
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:sentry_armor_trim_smithing_template",
+          "weight": 4,
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "辽哨石板",
+                "color": "light_purple",
+                "bold": false,
+                "italic": false
+              }
+            }
+          ]
+        },
+        {
           "type": "minecraft:item",
           "name": "minecraft:emerald",
           "weight": 30
@@ -56,7 +56,7 @@
           "name": "minecraft:air",
           "weight": 180
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:flint",
           "weight": 10

@@ -1,5 +1,5 @@
 execute store result score random Azr_system run random value 0..1
-execute if score random Azr_system matches 1 if data entity @s {Inventory:[{components:{"minecraft:custom_data":{id:"azr:greed_totem"}}}]} run scoreboard players remove @s[scores={Azr_emerald=1..}] Azr_emerald 1
+execute if score random Azr_system matches 1 if data entity @s {Inventory:[{components:{"minecraft:custom_data":{greed_totem:1b}}}]} run scoreboard players remove @s[scores={Azr_emerald=1..}] Azr_emerald 1
 
 #print title
 execute if score chapter Azr_system matches 1 run tellraw @s {"text":"『第一章 - Chapter 1』","bold":true,"color":"white"}

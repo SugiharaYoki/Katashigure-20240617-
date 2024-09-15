@@ -171,7 +171,7 @@
             }
           ]
         },
-{
+        {
           "type": "minecraft:item",
           "weight": 2,
           "name": "minecraft:wolf_spawn_egg",

@@ -9,31 +9,36 @@
           "name": "minecraft:air",
           "weight": 80
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:arrow",
           "weight": 5
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:stick",
           "weight": 5
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:emerald",
           "weight": 8
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:bone",
           "weight": 25,
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:\"{\\\"text\\\":\\\"硬骨\\\",\\\"italic\\\":false,\\\"color\\\":\\\"white\\\"}\"}}"
+              "function": "set_components",
+              "components": {
+                "custom_name": "{\"text\":\"硬骨\",\"italic\":false,\"color\":\"white\"}",
+                "custom_data": {
+                  "hard_bone": 1
+                }
+              }
             }
-]
+          ]
         }
       ]
     },
@@ -45,7 +50,7 @@
           "name": "minecraft:air",
           "weight": 50
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:emerald",
           "weight": 20
@@ -60,7 +65,7 @@
           "name": "minecraft:air",
           "weight": 995
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:glistering_melon_slice",
           "weight": 5

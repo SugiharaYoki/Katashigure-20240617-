@@ -9,22 +9,22 @@
           "name": "minecraft:air",
           "weight": 94
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:rotten_flesh",
           "weight": 4
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:emerald",
           "weight": 5
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:leather",
           "weight": 8
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:beetroot_seeds",
           "weight": 8
@@ -39,7 +39,7 @@
           "name": "minecraft:air",
           "weight": 40
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:emerald",
           "weight": 20
@@ -54,7 +54,7 @@
           "name": "minecraft:air",
           "weight": 995
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:glistering_melon_slice",
           "weight": 5

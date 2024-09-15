@@ -9,46 +9,103 @@
           "name": "minecraft:air",
           "weight": 1180
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:cooked_porkchop",
           "weight": 140
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:gold_nugget",
           "weight": 760
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:raw_gold",
           "weight": 40,
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:\"{\\\"text\\\":\\\"钝金\\\",\\\"italic\\\":false,\\\"color\\\":\\\"white\\\"}\"}}"
+              "function": "set_components",
+              "components": {
+                "custom_name": "{\"text\":\"钝金\",\"italic\":false,\"color\":\"white\"}",
+                "custom_data": {
+                  "raw_gold": 1
+                }
+              }
             }
-	  ]
+          ]
         },
-	      {
+        {
           "type": "minecraft:item",
           "name": "minecraft:golden_sword",
           "weight": 4,
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:\"{\\\"text\\\":\\\"纯金单刃剑\\\",\\\"italic\\\":false,\\\"color\\\":\\\"dark_red\\\"}\"},AttributeModifiers:[{AttributeName:\"generic.attack_damage\",Amount:8.0,Operation:0,UUID:[I;84300,102,1,7045],Slot:\"mainhand\"},{AttributeName:\"generic.attack_speed\",Amount:-2.3,Operation:0,UUID:[I;84300,102,1,8045],Slot:\"mainhand\"}],Enchantments:[{id:\"minecraft:smite\",lvl:2},{id:\"minecraft:bane_of_arthropods\",lvl:2},{id:\"minecraft:unbreaking\",lvl:5}]}"
+              "function": "set_components",
+              "components": {
+                "custom_name": "{\"text\":\"纯金单刃剑\",\"italic\":false,\"color\":\"dark_red\"}",
+                "attribute_modifiers": [
+                  {
+                    "type": "generic.attack_damage",
+                    "id": "azr:gold_sword.attack_damage",
+                    "amount": 8,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                  },
+                  {
+                    "type": "generic.attack_speed",
+                    "id": "azr:gold_sword.attack_speed",
+                    "amount": -2.30,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                  }
+                ],
+                "enchantments": {
+                  "smite": 2,
+                  "bane_of_arthropods": 2,
+                  "unbreaking": 5
+                },
+                "custom_data": {
+                  "weapon_gold_sword": 1
+                }
+              }
             }
           ]
         },
-	      {
+        {
           "type": "minecraft:item",
           "name": "minecraft:golden_axe",
           "weight": 1,
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:\"{\\\"text\\\":\\\"纯金长柄斧\\\",\\\"italic\\\":false,\\\"color\\\":\\\"dark_red\\\"}\"},AttributeModifiers:[{AttributeName:\"generic.attack_damage\",Amount:11.0,Operation:0,UUID:[I;84300,102,1,70452],Slot:\"mainhand\"},{AttributeName:\"generic.attack_speed\",Amount:-2.7,Operation:0,UUID:[I;84300,102,1,80452],Slot:\"mainhand\"}],Enchantments:[{id:\"minecraft:smite\",lvl:2},{id:\"minecraft:bane_of_arthropods\",lvl:2},{id:\"minecraft:unbreaking\",lvl:5}]}"
+              "function": "set_components",
+              "components": {
+                "custom_name": "{\"text\":\"纯金长柄斧\",\"italic\":false,\"color\":\"dark_red\"}",
+                "attribute_modifiers": [
+                  {
+                    "type": "generic.attack_damage",
+                    "id": "azr:gold_axe.attack_damage",
+                    "amount": 11,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                  },
+                  {
+                    "type": "generic.attack_speed",
+                    "id": "azr:gold_axe.attack_speed",
+                    "amount": -2.70,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                  }
+                ],
+                "enchantments": {
+                  "smite": 2,
+                  "bane_of_arthropods": 2,
+                  "unbreaking": 5
+                },
+                "custom_data": {
+                  "weapon_gold_axe": 1
+                }
+              }
             }
           ]
         }
@@ -62,16 +119,21 @@
           "name": "minecraft:air",
           "weight": 50
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:ghast_tear",
           "weight": 1,
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:\"{\\\"text\\\":\\\"黑暗精华\\\",\\\"italic\\\":false,\\\"color\\\":\\\"dark_purple\\\"}\"}}"
+              "function": "set_components",
+              "components": {
+                "custom_name": "{\"text\":\"黑暗精华\",\"italic\":false,\"color\":\"dark_purple\"}",
+                "custom_data": {
+                  "dark_essence": 1
+                }
+              }
             }
-]
+          ]
         }
       ]
     },
@@ -83,7 +145,7 @@
           "name": "minecraft:air",
           "weight": 995
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:glistering_melon_slice",
           "weight": 5

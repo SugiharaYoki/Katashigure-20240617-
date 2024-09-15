@@ -9,7 +9,7 @@
           "name": "minecraft:air",
           "weight": 20
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:wayfinder_armor_trim_smithing_template",
           "weight": 7,
@@ -24,7 +24,7 @@
             }
           ]
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:raiser_armor_trim_smithing_template",
           "weight": 7,
@@ -39,7 +39,7 @@
             }
           ]
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:emerald",
           "weight": 32
@@ -54,7 +54,7 @@
           "name": "minecraft:air",
           "weight": 30
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:potion",
           "weight": 30,
@@ -75,7 +75,7 @@
           "name": "minecraft:air",
           "weight": 15
         },
-	      {
+        {
           "type": "minecraft:item",
           "name": "minecraft:glistering_melon_slice",
           "weight": 5

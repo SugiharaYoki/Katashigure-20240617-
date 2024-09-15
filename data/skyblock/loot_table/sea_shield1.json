@@ -10,27 +10,27 @@
           "weight": 30
         },
         {
-                "type": "minecraft:item",
-                "name": "minecraft:raiser_armor_trim_smithing_template",
-                "weight": 7,
-                "functions": [
-                  {
-                    "function": "minecraft:set_name",
-                    "name": {
-                      "text": "牧羊人石板",
-                      "color": "light_purple",
-                      "bold": false,
-                      "italic": false
-                    }
-                  }
-                ]
-              },
-              {
-                      "type": "minecraft:item",
-                      "name": "minecraft:raw_iron",
-                      "weight": 9
-                    },
-	{
+          "type": "minecraft:item",
+          "name": "minecraft:raiser_armor_trim_smithing_template",
+          "weight": 7,
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "牧羊人石板",
+                "color": "light_purple",
+                "bold": false,
+                "italic": false
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:raw_iron",
+          "weight": 9
+        },
+        {
           "type": "minecraft:item",
           "name": "minecraft:emerald",
           "weight": 15
@@ -45,7 +45,7 @@
           "name": "minecraft:air",
           "weight": 30
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:emerald",
           "weight": 20
@@ -60,7 +60,7 @@
           "name": "minecraft:air",
           "weight": 995
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:glistering_melon_slice",
           "weight": 5

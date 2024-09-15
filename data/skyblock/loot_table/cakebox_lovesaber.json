@@ -23,7 +23,8 @@
               }
             }
           ]
-        }, {
+        },
+        {
           "type": "minecraft:item",
           "name": "chorus_fruit",
           "weight": 3,
@@ -88,7 +89,8 @@
               "entity": "this"
             }
           ]
-        }, {
+        },
+        {
           "type": "minecraft:item",
           "name": "mooshroom_spawn_egg",
           "weight": 3,
@@ -204,7 +206,8 @@
               }
             }
           ]
-        },{
+        },
+        {
           "type": "minecraft:item",
           "name": "potato",
           "weight": 22,

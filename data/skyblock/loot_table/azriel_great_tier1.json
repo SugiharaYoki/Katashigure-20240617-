@@ -9,37 +9,47 @@
           "name": "minecraft:air",
           "weight": 80
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:emerald",
           "weight": 80
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:porkchop",
           "weight": 20
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:blaze_powder",
           "weight": 8,
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:\"{\\\"text\\\":\\\"炽焰粉尘\\\",\\\"italic\\\":false,\\\"color\\\":\\\"dark_purple\\\"}\"}}"
+              "function": "set_components",
+              "components": {
+                "custom_name": "{\"text\":\"炽焰粉尘\",\"italic\":false,\"color\":\"dark_purple\"}",
+                "custom_data": {
+                  "flame_powder": 1
+                }
+              }
             }
-]
+          ]
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:ghast_tear",
           "weight": 8,
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:\"{\\\"text\\\":\\\"黑暗精华\\\",\\\"italic\\\":false,\\\"color\\\":\\\"dark_purple\\\"}\"}}"
+              "function": "set_components",
+              "components": {
+                "custom_name": "{\"text\":\"黑暗精华\",\"italic\":false,\"color\":\"dark_purple\"}",
+                "custom_data": {
+                  "dark_essence": 1
+                }
+              }
             }
-	  ]
+          ]
         }
       ]
     },
@@ -51,7 +61,7 @@
           "name": "minecraft:air",
           "weight": 995
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:glistering_melon_slice",
           "weight": 5

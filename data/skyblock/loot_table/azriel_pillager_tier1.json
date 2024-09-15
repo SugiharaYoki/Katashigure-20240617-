@@ -9,17 +9,17 @@
           "name": "minecraft:air",
           "weight": 80
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:arrow",
           "weight": 10
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:stick",
           "weight": 10
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:emerald",
           "weight": 10
@@ -34,7 +34,7 @@
           "name": "minecraft:air",
           "weight": 65
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:emerald",
           "weight": 20
@@ -49,7 +49,7 @@
           "name": "minecraft:air",
           "weight": 995
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:glistering_melon_slice",
           "weight": 5

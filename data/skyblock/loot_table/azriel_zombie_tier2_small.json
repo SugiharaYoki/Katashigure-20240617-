@@ -9,12 +9,12 @@
           "name": "minecraft:air",
           "weight": 94
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:rotten_flesh",
           "weight": 3
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:emerald",
           "weight": 5
@@ -25,8 +25,13 @@
           "name": "minecraft:rabbit_foot",
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:\"{\\\"text\\\":\\\"尸爪\\\",\\\"italic\\\":false,\\\"color\\\":\\\"white\\\"}\"}}"
+              "function": "set_components",
+              "components": {
+                "custom_name": "{\"text\":\"尸爪\",\"italic\":false,\"color\":\"white\"}",
+                "custom_data": {
+                  "claw": 1
+                }
+              }
             }
           ]
         }
@@ -40,7 +45,7 @@
           "name": "minecraft:air",
           "weight": 80
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:emerald",
           "weight": 20
@@ -55,7 +60,7 @@
           "name": "minecraft:air",
           "weight": 995
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:glistering_melon_slice",
           "weight": 5

@@ -9,46 +9,57 @@
           "name": "minecraft:air",
           "weight": 900
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:string",
           "weight": 100
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:spider_eye",
           "weight": 10
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:emerald",
           "weight": 40
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:fermented_spider_eye",
           "weight": 60,
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:\"{\\\"text\\\":\\\"蛛毒囊\\\",\\\"italic\\\":false,\\\"color\\\":\\\"white\\\"}\"}}"
+              "function": "set_components",
+              "components": {
+                "custom_name": "{\"text\":\"蛛毒囊\",\"italic\":false,\"color\":\"white\"}",
+                "custom_data": {
+                  "poison_sac": 1
+                }
+              }
             }
-	  ]
+          ]
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:tipped_arrow",
           "weight": 5,
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{Potion:\"minecraft:strong_poison\",display:{Name:\"{\\\"text\\\":\\\"魔蚀·散羽之箭\\\",\\\"italic\\\":false,\\\"color\\\":\\\"dark_blue\\\"}\"}}"
+              "function": "set_components",
+              "components": {
+                "custom_name": "{\"text\":\"魔蚀·散羽之箭\",\"italic\":false,\"color\":\"dark_blue\"}",
+                "potion_contents": "strong_poison",
+                "custom_data": {
+                  "magical_arrow_strong": 1
+                }
+              }
             },
             {
               "function": "minecraft:set_count",
               "count": 3
             }
-	  ]
+          ]
         }
       ]
     },
@@ -60,7 +71,7 @@
           "name": "minecraft:air",
           "weight": 50
         },
-	{
+        {
           "type": "minecraft:item",
           "name": "minecraft:emerald",
           "weight": 20

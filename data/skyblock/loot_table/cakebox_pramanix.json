@@ -1,314 +1,319 @@
 {
-    "pools": [
-      {
-        "rolls": 26,
-        "entries": [
-          {
-            "type": "minecraft:item",
-            "name": "sweet_berries",
-            "weight": 20,
-            "functions": [
-              {
-                "function": "minecraft:set_count",
-                "count": {
-                  "min": 3,
-                  "max": 12
-                }
-              },
-              {
-                "function": "minecraft:limit_count",
-                "limit": {
-                  "min": 3,
-                  "max": 12
-                }
+  "pools": [
+    {
+      "rolls": 26,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "sweet_berries",
+          "weight": 20,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 3,
+                "max": 12
               }
-            ]
-          }, {
-            "type": "minecraft:item",
-            "name": "glow_berries",
-            "weight": 3,
-            "functions": [
-              {
-                "function": "minecraft:set_count",
-                "count": {
-                  "min": 1,
-                  "max": 3
-                }
-              },
-              {
-                "function": "minecraft:limit_count",
-                "limit": {
-                  "min": 1,
-                  "max": 3
-                }
+            },
+            {
+              "function": "minecraft:limit_count",
+              "limit": {
+                "min": 3,
+                "max": 12
               }
-            ]
-          },
-          {
-            "type": "minecraft:item",
-            "name": "air",
-            "weight": 510
-          },
-          {
-            "type": "minecraft:item",
-            "name": "cookie",
-            "weight": 40,
-            "functions": [
-              {
-                "function": "minecraft:set_count",
-                "count": {
-                  "min": 1,
-                  "max": 4
-                }
-              },
-              {
-                "function": "minecraft:limit_count",
-                "limit": {
-                  "min": 1,
-                  "max": 4
-                }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "glow_berries",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 3
               }
-            ]
-          },
-          {
-            "type": "minecraft:item",
-            "name": "red_dye",
-            "weight": 10,
-            "functions": [
-              {
-                "function": "minecraft:limit_count",
-                "limit": {
-                  "min": 1,
-                  "max": 1
-                }
-              },
-              {
-                "function": "minecraft:set_name",
-                "name": "缘结神的染料",
-                "entity": "this"
+            },
+            {
+              "function": "minecraft:limit_count",
+              "limit": {
+                "min": 1,
+                "max": 3
               }
-            ]
-          }, {
-            "type": "minecraft:item",
-            "name": "axolotl_spawn_egg",
-            "weight": 3,
-            "functions": [
-              {
-                "function": "minecraft:limit_count",
-                "limit": {
-                  "min": 1,
-                  "max": 3
-                }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "air",
+          "weight": 510
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cookie",
+          "weight": 40,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 4
               }
-            ]
-          },
-          {
-            "type": "minecraft:item",
-            "name": "glistering_melon_slice",
-            "weight": 12,
-            "functions": [
-              {
-                "function": "minecraft:limit_count",
-                "limit": {
-                  "min": 1,
-                  "max": 1
-                }
+            },
+            {
+              "function": "minecraft:limit_count",
+              "limit": {
+                "min": 1,
+                "max": 4
               }
-            ]
-          },
-          {
-            "type": "minecraft:item",
-            "name": "pufferfish",
-            "weight": 5,
-            "functions": [
-              {
-                "function": "minecraft:set_count",
-                "count": {
-                  "min": 2,
-                  "max": 3
-                }
-              },
-              {
-                "function": "minecraft:limit_count",
-                "limit": {
-                  "min": 2,
-                  "max": 3
-                }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "red_dye",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "minecraft:limit_count",
+              "limit": {
+                "min": 1,
+                "max": 1
               }
-            ]
-          },
-          {
-            "type": "minecraft:item",
-            "name": "baked_potato",
-            "weight": 20,
-            "functions": [
-              {
-                "function": "minecraft:set_count",
-                "count": {
-                  "min": 1,
-                  "max": 4
-                }
-              },
-              {
-                "function": "minecraft:limit_count",
-                "limit": {
-                  "min": 1,
-                  "max": 4
-                }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": "缘结神的染料",
+              "entity": "this"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "axolotl_spawn_egg",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "minecraft:limit_count",
+              "limit": {
+                "min": 1,
+                "max": 3
               }
-            ]
-          },
-          {
-            "type": "minecraft:item",
-            "name": "goat_spawn_egg",
-            "weight": 1,
-            "functions": [
-              {
-                "function": "minecraft:set_count",
-                "count": {
-                  "min": 2,
-                  "max": 6
-                }
-              },
-              {
-                "function": "minecraft:limit_count",
-                "limit": {
-                  "min": 2,
-                  "max": 3
-                }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "glistering_melon_slice",
+          "weight": 12,
+          "functions": [
+            {
+              "function": "minecraft:limit_count",
+              "limit": {
+                "min": 1,
+                "max": 1
               }
-            ]
-          },
-          {
-            "type": "minecraft:item",
-            "name": "bowl",
-            "weight": 14,
-            "functions": [
-              {
-                "function": "minecraft:set_count",
-                "count": {
-                  "min": 3,
-                  "max": 9
-                }
-              },
-              {
-                "function": "minecraft:limit_count",
-                "limit": {
-                  "min": 1,
-                  "max": 12
-                }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "pufferfish",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 2,
+                "max": 3
               }
-            ]
-          },{
-            "type": "minecraft:item",
-            "name": "amethyst_shard",
-            "weight": 12,
-            "functions": [
-              {
-                "function": "minecraft:set_count",
-                "count": {
-                  "min": 3,
-                  "max": 9
-                }
-              },
-              {
-                "function": "minecraft:limit_count",
-                "limit": {
-                  "min": 1,
-                  "max": 12
-                }
+            },
+            {
+              "function": "minecraft:limit_count",
+              "limit": {
+                "min": 2,
+                "max": 3
               }
-            ]
-          },{
-            "type": "minecraft:item",
-            "name": "rail",
-            "weight": 12,
-            "functions": [
-              {
-                "function": "minecraft:set_count",
-                "count": {
-                  "min": 3,
-                  "max": 9
-                }
-              },
-              {
-                "function": "minecraft:limit_count",
-                "limit": {
-                  "min": 1,
-                  "max": 12
-                }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "baked_potato",
+          "weight": 20,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 4
               }
-            ]
-          },{
-            "type": "minecraft:item",
-            "name": "sponge",
-            "weight": 3,
-            "functions": [
-              {
-                "function": "minecraft:set_count",
-                "count": {
-                  "min": 1,
-                  "max": 3
-                }
-              },
-              {
-                "function": "minecraft:limit_count",
-                "limit": {
-                  "min": 1,
-                  "max": 6
-                }
+            },
+            {
+              "function": "minecraft:limit_count",
+              "limit": {
+                "min": 1,
+                "max": 4
               }
-            ]
-          },
-          {
-            "type": "minecraft:item",
-            "name": "totem_of_undying",
-            "weight": 1
-          },
-          {
-            "type": "minecraft:item",
-            "name": "ender_pearl",
-            "weight": 1
-          },
-          {
-            "type": "minecraft:item",
-            "name": "activator_rail",
-            "weight": 3
-          },
-          {
-            "type": "minecraft:item",
-            "name": "cooked_mutton",
-            "weight": 5
-          },
-          {
-            "type": "minecraft:item",
-            "name": "carrot",
-            "weight": 19,
-            "functions": [
-              {
-                "function": "minecraft:set_count",
-                "count": 4
-              },
-              {
-                "function": "minecraft:limit_count",
-                "limit": {
-                  "min": 4,
-                  "max": 6
-                }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "goat_spawn_egg",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 2,
+                "max": 6
               }
-            ]
-          }
-        ]
-      },
-      {
-        "rolls": 1,
-        "entries": [
-          {
-            "type": "minecraft:item",
-            "name": "cake",
-            "weight": 100
-          }
-        ]
-      }
-    ]
-  }
+            },
+            {
+              "function": "minecraft:limit_count",
+              "limit": {
+                "min": 2,
+                "max": 3
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "bowl",
+          "weight": 14,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 3,
+                "max": 9
+              }
+            },
+            {
+              "function": "minecraft:limit_count",
+              "limit": {
+                "min": 1,
+                "max": 12
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "amethyst_shard",
+          "weight": 12,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 3,
+                "max": 9
+              }
+            },
+            {
+              "function": "minecraft:limit_count",
+              "limit": {
+                "min": 1,
+                "max": 12
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "rail",
+          "weight": 12,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 3,
+                "max": 9
+              }
+            },
+            {
+              "function": "minecraft:limit_count",
+              "limit": {
+                "min": 1,
+                "max": 12
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "sponge",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 3
+              }
+            },
+            {
+              "function": "minecraft:limit_count",
+              "limit": {
+                "min": 1,
+                "max": 6
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "totem_of_undying",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "ender_pearl",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "activator_rail",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cooked_mutton",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "carrot",
+          "weight": 19,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 4
+            },
+            {
+              "function": "minecraft:limit_count",
+              "limit": {
+                "min": 4,
+                "max": 6
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "cake",
+          "weight": 100
+        }
+      ]
+    }
+  ]
+}
