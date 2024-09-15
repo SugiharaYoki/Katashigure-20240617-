@@ -357,7 +357,7 @@ execute as @n[tag=sc,scores={sea_4temp2=4000..5000}] as @n[tag=SEAboss1,scores={
 execute as @n[tag=sc,scores={sea_4temp2=4000..5000}] if block 90078 124 101 minecraft:waxed_copper_bulb[lit=false] if block 90078 124 104 minecraft:waxed_copper_bulb[lit=false] if block 90078 124 107 minecraft:waxed_copper_bulb[lit=false] if block 90078 124 110 minecraft:waxed_copper_bulb[lit=false] if block 90078 124 113 minecraft:waxed_copper_bulb[lit=false] if block 90078 124 116 minecraft:waxed_copper_bulb[lit=false] as @n[tag=SEAboss1] at @s run effect give @s weakness 3 1 true
 
 execute as @n[tag=sc,scores={sea_4temp2=..3950,sea_speedrun_ch1=2161..}] if entity @a[tag=SEAPT,x=90074,y=122,z=118,distance=0..4] run scoreboard players set @n[tag=sc] sea_4temp2 4000
-execute as @n[tag=sc,scores={sea_4temp2=..3950,sea_speedrun_ch1=..2160}] if entity @a[tag=SEAPT,x=90074,y=122,z=118,distance=0..4] run scoreboard players set @n[tag=sc] sea_4temp2 6000
+execute as @n[tag=sc,scores={sea_4temp2=..3950,sea_speedrun_ch1=..2160}] if entity @a[tag=SEAPT,x=90074,y=122,z=118,distance=0..30] run scoreboard players set @n[tag=sc] sea_4temp2 6000
 execute as @n[tag=sc,scores={sea_4temp2=4000..5000}] run scoreboard players add @n[tag=sc] sea_4temp2 1
 execute as @n[tag=sc,scores={sea_4temp2=4800..4810}] run scoreboard players set @n[tag=sc] sea_4temp2 4800
 execute as @n[tag=sc,scores={sea_4temp2=4001}] run bossbar add 9066601 "圣献的医者 - 法莫洛斯"
@@ -415,9 +415,10 @@ execute as @n[tag=sc,scores={sea_4temp2=3000..5000,sea_4temp5=40}] as @n[tag=SEA
 
 
 
-execute as @n[tag=sc,scores={sea_4temp2=6000..6500}] at @s if entity @a[tag=SEAPT,distance=0.1..5] run scoreboard players add @n[tag=sc] sea_4temp2 1
+execute as @n[tag=sc,scores={sea_4temp2=6002..6500}] at @n[tag=SEAframauros] if entity @a[tag=SEAPT,distance=0.1..5] run scoreboard players add @n[tag=sc] sea_4temp2 1
+execute as @n[tag=sc,scores={sea_4temp2=6000..6001}] run scoreboard players add @n[tag=sc] sea_4temp2 1
 
-execute as @n[tag=sc,scores={sea_4temp2=6001}] positioned 90076 122 122 run function skyblock:sea/m/npc_framauros
+execute as @n[tag=sc,scores={sea_4temp2=6001}] positioned 90073 122 122 run function skyblock:sea/m/npc_framauros
 execute as @n[tag=sc,scores={sea_4temp2=6003..}] at @n[tag=SEAframauros] at @s at @s run tp @s ~ ~ ~ facing entity @p
 execute as @n[tag=sc,scores={sea_4temp2=6003}] at @n[tag=SEAframauros] run playsound entity.villager.ambient neutral @a ~ ~ ~ 0.8 0.7
 execute as @n[tag=sc,scores={sea_4temp2=6003}] at @n[tag=SEAframauros] run tellraw @a[tag=SEAPT,distance=0.1..35] {"text":"法莫洛斯：……活着的人。","color":"green"}
