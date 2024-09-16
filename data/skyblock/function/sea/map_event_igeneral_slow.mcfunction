@@ -18,8 +18,8 @@ execute positioned 90137 138 126 if entity @a[tag=SEAPT,distance=0..20] unless e
 
 
 
-execute positioned 90075 129 120 if entity @a[tag=SEAPT,distance=0..20] unless entity @e[type=glow_item_frame,distance=0..4] run summon minecraft:glow_item_frame ~ ~ ~ {Tags:[iframe_sea,iframe_sea_spectral],Invisible:1b,Fixed:0b,Invulnerable:0b,Facing:1b,Item:{id:"minecraft:flow_armor_trim_smithing_template",components:{custom_name:'{"text":"光棱魔板","italic":true,"color":"light_purple","italic":false}',lore:['{"text":"静滞光锥 I","color":"white","italic":false}'],custom_data:{sea_t_spectral1:true}}}}
-execute positioned 90129 144 141 if entity @a[tag=SEAPT,distance=0..20] unless entity @e[type=glow_item_frame,distance=0..4] run summon minecraft:glow_item_frame ~ ~ ~ {Tags:[iframe_sea,iframe_sea_spectral],Invisible:1b,Fixed:0b,Invulnerable:0b,Facing:1b,Item:{id:"minecraft:flow_armor_trim_smithing_template",components:{custom_name:'{"text":"残影魔板","italic":true,"color":"light_purple","italic":false}',lore:['{"text":"绿色指示灯亮起时，起跑将被替换为冲刺","color":"white","italic":false}','{"text":"期间防御、移动速度、击退抗性巨幅提升","color":"white","italic":false}'],custom_data:{sea_t_sprint1:true}}}}
+execute positioned 90075 129 120 if entity @a[tag=SEAPT,distance=0..20] unless entity @e[type=glow_item_frame,distance=0..4] run summon minecraft:glow_item_frame ~ ~ ~ {Tags:[iframe_sea,iframe_sea_spectral],Invisible:1b,Fixed:0b,Invulnerable:0b,Facing:1b,Item:{id:"minecraft:flow_armor_trim_smithing_template",components:{custom_name:'{"text":"光棱魔板","italic":true,"color":"light_purple","italic":false}',custom_data:{sea_t_spectral1:true}}}}
+execute positioned 90129 144 141 if entity @a[tag=SEAPT,distance=0..20] unless entity @e[type=glow_item_frame,distance=0..4] run summon minecraft:glow_item_frame ~ ~ ~ {Tags:[iframe_sea,iframe_sea_spectral],Invisible:1b,Fixed:0b,Invulnerable:0b,Facing:1b,Item:{id:"minecraft:flow_armor_trim_smithing_template",components:{custom_name:'{"text":"残影魔板","italic":true,"color":"light_purple","italic":false}',custom_data:{sea_t_sprint1:true}}}}
 
 execute positioned 90120 138 121 if entity @a[tag=SEAPT,distance=0..20] unless entity @e[type=glow_item_frame,distance=0..0.5] run summon minecraft:glow_item_frame ~ ~ ~ {Tags:[iframe_sea,iframe_sea_safehat],Invisible:0b,Fixed:0b,Invulnerable:0b,Facing:2b,Item:{id:"minecraft:chainmail_helmet",components:{custom_name:'{"text":"电工安全帽","italic":false,"color":"red"}',custom_data:{sea_safehat:true},attribute_modifiers:[{type:"generic.armor",slot:"head",id:"sea_armor:003_01",amount:1.0,operation:"add_value"},{type:"generic.knockback_resistance",slot:"head",id:"sea_armor:003_02",amount:0.1,operation:"add_value"}],unbreakable:{}}}}
 execute positioned 90119 138 121 if entity @a[tag=SEAPT,distance=0..20] unless entity @e[type=glow_item_frame,distance=0..0.5] run summon minecraft:glow_item_frame ~ ~ ~ {Tags:[iframe_sea,iframe_sea_chest],Invisible:0b,Fixed:0b,Invulnerable:0b,Facing:2b,Item:{id:"minecraft:leather_chestplate",components:{custom_name:'{"text":"基础防护服","italic":false,"color":"red"}',custom_data:{sea_chest:true},attribute_modifiers:[{type:"generic.armor",slot:"legs",id:"sea_armor:002_01",amount:1.0,operation:"add_value"},{type:"generic.armor_toughness",slot:"legs",id:"sea_armor:002_02",amount:0.5,operation:"add_value"}],unbreakable:{}}}}
@@ -36,17 +36,7 @@ execute if block 90075 103 141 minecraft:cauldron positioned 90079 105 143 if en
 #antichear
 #execute as @a[tag=SEAPT,nbt={Inventory:[{id:"minecraft:iron_hoe"}]}] at @s run clear @s iron_axe
 #execute as @a[tag=SEAPT] at @s run clear @s iron_hoe[!custom_data={sea_crowbar_t:true}]
-execute as @a[tag=SEAPT,nbt={Inventory:[{components:{"minecraft:custom_data":{sea_t_spectral1:true}}}]}] at @s run tag @s add sea_t_spectral1
-execute as @a[tag=SEAPT,nbt={Inventory:[{components:{"minecraft:custom_data":{sea_t_sprint1:true}}}]}] at @s run tag @s add sea_t_sprint1
-execute as @a[tag=SEAPT,nbt={Inventory:[{components:{"minecraft:custom_data":{sea_t_spectral1:true}}}]}] at @s run clear @s flow_armor_trim_smithing_template
-clear @a[tag=SEAPT] barrier
-clear @a[tag=SEAPT] flow_armor_trim_smithing_template
-item replace entity @a[tag=SEAPT,tag=!sea_t_spectral1] player.crafting.0 with barrier
-item replace entity @a[tag=SEAPT,tag=sea_t_spectral1] player.crafting.0 with flow_armor_trim_smithing_template[custom_name='{"text":"光棱魔板","italic":true,"color":"light_purple","italic":false}',lore=['{"text":"静滞光锥 I","color":"white","italic":false}'],custom_data={sea_t_spectral1:true}]
-item replace entity @a[tag=SEAPT] player.crafting.1 with barrier
-item replace entity @a[tag=SEAPT,tag=sea_t_sprint1] player.crafting.1 with flow_armor_trim_smithing_template[custom_name='{"text":"残影魔板","italic":true,"color":"light_purple","italic":false}',lore=['{"text":"绿色指示灯亮起时，起跑将被替换为冲刺","color":"white","italic":false}','{"text":"期间防御、移动速度、击退抗性巨幅提升","color":"white","italic":false}'],custom_data={sea_t_sprint1:true}]
-item replace entity @a[tag=SEAPT] player.crafting.2 with barrier
-item replace entity @a[tag=SEAPT] player.crafting.3 with barrier
+
 
 
 
@@ -228,15 +218,7 @@ execute if block 90111 122 143 lever[powered=false] if block 90110 122 143 lever
 
 execute if block 90136 123 126 lever[powered=false] if block 90136 123 124 lever[powered=true] if block 90136 123 122 lever[powered=false] if block 90136 123 120 lever[powered=true] if block 90136 123 118 lever[powered=true] run setblock 90141 122 139 minecraft:redstone_block
 
-execute as @a[tag=SEAPT,x=90131,y=122,z=136,distance=0..2.4,tag=!e_i_11] if entity @n[tag=sc,scores={sea_player=1..}] positioned 90128 122 132 run function skyblock:sea/m/pillager
-execute as @a[tag=SEAPT,x=90131,y=122,z=136,distance=0..2.4,tag=!e_i_11] if entity @n[tag=sc,scores={sea_player=1..}] positioned 90128 122 132 run function skyblock:sea/m/pillager
-execute as @a[tag=SEAPT,x=90131,y=122,z=136,distance=0..2.4,tag=!e_i_11] if entity @n[tag=sc,scores={sea_player=3..}] positioned 90128 122 132 run function skyblock:sea/m/pillager
-execute as @a[tag=SEAPT,x=90131,y=122,z=136,distance=0..2.4,tag=!e_i_11] if entity @n[tag=sc,scores={sea_player=5..}] positioned 90128 122 132 run function skyblock:sea/m/pillager
-execute as @a[tag=SEAPT,x=90131,y=122,z=136,distance=0..2.4,tag=!e_i_11] if entity @n[tag=sc,scores={sea_player=1..}] positioned 90128 122 139 run function skyblock:sea/m/pillager
-execute as @a[tag=SEAPT,x=90131,y=122,z=136,distance=0..2.4,tag=!e_i_11] if entity @n[tag=sc,scores={sea_player=1..}] positioned 90128 122 139 run function skyblock:sea/m/pillager
-execute as @a[tag=SEAPT,x=90131,y=122,z=136,distance=0..2.4,tag=!e_i_11] if entity @n[tag=sc,scores={sea_player=3..}] positioned 90128 122 139 run function skyblock:sea/m/pillager
-execute as @a[tag=SEAPT,x=90131,y=122,z=136,distance=0..2.4,tag=!e_i_11] if entity @n[tag=sc,scores={sea_player=5..}] positioned 90128 122 139 run function skyblock:sea/m/pillager
-execute as @a[tag=SEAPT,x=90131,y=122,z=136,distance=0..2.4,tag=!e_i_11] run tag @a[tag=SEAPT] add e_i_11
+execute if entity @a[tag=SEAPT,x=90131,y=122,z=136,distance=0..2.4,tag=!e_i_11] run function skyblock:sea/e/ev003
 
 
 #回响指南针
@@ -251,34 +233,33 @@ execute unless entity @a[tag=SEAPT,tag=!seaPerm000] run clone 90121 122 109 9012
 execute as @e[tag=SEAmagma1,type=marker] at @s if entity @a[tag=SEAPT,distance=0..2.5] run function skyblock:sea/p/magma
 
 
+execute as sea run scoreboard players set @s[scores={sea_4temp_environment=..0}] sea_4temp_environment 10
+execute as sea run scoreboard players set @s[scores={sea_4temp_environment=100..}] sea_4temp_environment 10
 
-scoreboard players set @n[tag=sc,scores={sea_4temp_environment=..0}] sea_4temp_environment 10
-scoreboard players set @n[tag=sc,scores={sea_4temp_environment=100..}] sea_4temp_environment 10
-
-execute as @n[tag=sc,scores={sea_4temp_environment=1..80}] run scoreboard players add @s sea_4temp_environment 1
-execute as @n[tag=sc,scores={sea_4temp_environment=41}] run scoreboard players set @s sea_4temp_environment 10
-execute as @n[tag=sc,scores={sea_4temp_environment=11}] run setblock 90101 129 138 minecraft:redstone_block
-execute as @n[tag=sc,scores={sea_4temp_environment=16}] run setblock 90101 129 136 minecraft:redstone_block
-execute as @n[tag=sc,scores={sea_4temp_environment=21}] run setblock 90101 129 138 minecraft:air
-execute as @n[tag=sc,scores={sea_4temp_environment=26}] run setblock 90101 129 136 minecraft:air
-execute as @n[tag=sc,scores={sea_4temp_environment=15}] run setblock 90080 129 139 minecraft:redstone_block
-execute as @n[tag=sc,scores={sea_4temp_environment=20}] run setblock 90082 129 139 minecraft:redstone_block
-execute as @n[tag=sc,scores={sea_4temp_environment=25}] run setblock 90084 129 139 minecraft:redstone_block
-execute as @n[tag=sc,scores={sea_4temp_environment=26}] run setblock 90080 129 139 minecraft:air
-execute as @n[tag=sc,scores={sea_4temp_environment=31}] run setblock 90082 129 139 minecraft:air
-execute as @n[tag=sc,scores={sea_4temp_environment=36}] run setblock 90084 129 139 minecraft:air
-execute as @n[tag=sc,scores={sea_4temp_environment=23}] run setblock 90079 129 138 minecraft:redstone_block
-execute as @n[tag=sc,scores={sea_4temp_environment=33}] run setblock 90079 129 136 minecraft:redstone_block
-execute as @n[tag=sc,scores={sea_4temp_environment=28}] run setblock 90079 129 138 minecraft:air
-execute as @n[tag=sc,scores={sea_4temp_environment=38}] run setblock 90079 129 136 minecraft:air
+execute if score sea sea_4temp_environment matches 1..80 run scoreboard players add @s sea_4temp_environment 1
+execute if score sea sea_4temp_environment matches 41 run scoreboard players set @s sea_4temp_environment 10
+execute if score sea sea_4temp_environment matches 11 run setblock 90101 129 138 minecraft:redstone_block
+execute if score sea sea_4temp_environment matches 16 run setblock 90101 129 136 minecraft:redstone_block
+execute if score sea sea_4temp_environment matches 21 run setblock 90101 129 138 minecraft:air
+execute if score sea sea_4temp_environment matches 26 run setblock 90101 129 136 minecraft:air
+execute if score sea sea_4temp_environment matches 15 run setblock 90080 129 139 minecraft:redstone_block
+execute if score sea sea_4temp_environment matches 20 run setblock 90082 129 139 minecraft:redstone_block
+execute if score sea sea_4temp_environment matches 25 run setblock 90084 129 139 minecraft:redstone_block
+execute if score sea sea_4temp_environment matches 26 run setblock 90080 129 139 minecraft:air
+execute if score sea sea_4temp_environment matches 31 run setblock 90082 129 139 minecraft:air
+execute if score sea sea_4temp_environment matches 36 run setblock 90084 129 139 minecraft:air
+execute if score sea sea_4temp_environment matches 23 run setblock 90079 129 138 minecraft:redstone_block
+execute if score sea sea_4temp_environment matches 33 run setblock 90079 129 136 minecraft:redstone_block
+execute if score sea sea_4temp_environment matches 28 run setblock 90079 129 138 minecraft:air
+execute if score sea sea_4temp_environment matches 38 run setblock 90079 129 136 minecraft:air
 
 
-execute as @n[tag=sc,scores={sea_4temp_environment=28}] as @a[tag=SEAPT] store result score @s sea_i_spectral run clear @s spectral_arrow 0
-execute as @n[tag=sc,scores={sea_4temp_environment=28}] as @a[tag=SEAPT] unless entity @s[scores={sea_i_spectral_load=-999..}] run scoreboard players set @s sea_i_spectral_load 0
-execute as @n[tag=sc,scores={sea_4temp_environment=28}] as @a[tag=SEAPT,tag=sea_t_spectral1,nbt={Inventory:[{id:"minecraft:arrow"}]},scores={sea_i_spectral=..2,sea_i_spectral_load=..4}] run scoreboard players add @s sea_i_spectral_load 1
-execute as @n[tag=sc,scores={sea_4temp_environment=28}] as @a[tag=SEAPT,scores={sea_i_spectral=..2,sea_i_spectral_load=5..}] run clear @s arrow 1
-execute as @n[tag=sc,scores={sea_4temp_environment=28}] as @a[tag=SEAPT,scores={sea_i_spectral=..2,sea_i_spectral_load=5..}] run give @s spectral_arrow 1
-execute as @n[tag=sc,scores={sea_4temp_environment=28}] as @a[tag=SEAPT,scores={sea_i_spectral=..2,sea_i_spectral_load=5..}] run scoreboard players set @s sea_i_spectral_load 0
+execute if score sea sea_4temp_environment matches 28 as @a[tag=SEAPT] store result score @s sea_i_spectral run clear @s spectral_arrow 0
+execute if score sea sea_4temp_environment matches 28 as @a[tag=SEAPT] unless entity @s[scores={sea_i_spectral_load=-999..}] run scoreboard players set @s sea_i_spectral_load 0
+execute if score sea sea_4temp_environment matches 28 as @a[tag=SEAPT,tag=sea_t_spectral1,nbt={Inventory:[{id:"minecraft:arrow"}]},scores={sea_i_spectral=..2,sea_i_spectral_load=..4}] run scoreboard players add @s sea_i_spectral_load 1
+execute if score sea sea_4temp_environment matches 28 as @a[tag=SEAPT,scores={sea_i_spectral=..2,sea_i_spectral_load=5..}] run clear @s arrow 1
+execute if score sea sea_4temp_environment matches 28 as @a[tag=SEAPT,scores={sea_i_spectral=..2,sea_i_spectral_load=5..}] run give @s spectral_arrow 1
+execute if score sea sea_4temp_environment matches 28 as @a[tag=SEAPT,scores={sea_i_spectral=..2,sea_i_spectral_load=5..}] run scoreboard players set @s sea_i_spectral_load 0
 execute as @s[scores={sea_i_spectral=4..}] run give @s arrow 1
 execute as @s[scores={sea_i_spectral=4..}] run clear @s spectral_arrow 1
 
@@ -288,15 +269,8 @@ execute if block 90088 128 114 air unless entity @a[tag=SEAPT,tag=e_i_20] run fi
 execute if block 90088 128 114 air unless entity @a[tag=SEAPT,tag=e_i_20] run tag @a[tag=SEAPT] add e_i_20
 
 
-execute as @a[tag=SEAPT] at @s run function skyblock:sea/p/clear
+execute as @a[tag=SEAPT] at @s run function skyblock:sea/p/player
 
-execute as @a[tag=SEAPT,nbt={Inventory:[{id:"minecraft:raiser_armor_trim_smithing_template"}]}] at @s run function skyblock:sea/shop_trim {trim:sea_i_trim_zombie, trim_name:"牧羊人",trim_type:raiser_armor_trim_smithing_template}
-execute as @a[tag=SEAPT,nbt={Inventory:[{id:"minecraft:wayfinder_armor_trim_smithing_template"}]}] at @s run function skyblock:sea/shop_trim {trim:sea_i_trim_human, trim_name:"醒殉徒",trim_type:wayfinder_armor_trim_smithing_template}
-execute as @a[tag=SEAPT,nbt={Inventory:[{id:"minecraft:wild_armor_trim_smithing_template"}]}] at @s run function skyblock:sea/shop_trim {trim:sea_i_trim_spider, trim_name:"狂荒",trim_type:wild_armor_trim_smithing_template}
-execute as @a[tag=SEAPT,nbt={Inventory:[{id:"minecraft:sentry_armor_trim_smithing_template"}]}] at @s run function skyblock:sea/shop_trim {trim:sea_i_trim_bug, trim_name:"辽哨",trim_type:sentry_armor_trim_smithing_template}
-execute as @a[tag=SEAPT,nbt={Inventory:[{id:"minecraft:dune_armor_trim_smithing_template"}]}] at @s run function skyblock:sea/shop_trim {trim:sea_i_trim_skeleton, trim_name:"金砂",trim_type:dune_armor_trim_smithing_template}
-execute as @a[tag=SEAPT,nbt={Inventory:[{id:"minecraft:vex_armor_trim_smithing_template"}]}] at @s run function skyblock:sea/shop_trim {trim:sea_i_trim_ghost, trim_name:"招魂",trim_type:vex_armor_trim_smithing_template}
-execute as @a[tag=SEAPT,nbt={Inventory:[{id:"minecraft:coast_armor_trim_smithing_template"}]}] at @s run function skyblock:sea/shop_trim {trim:sea_i_trim_sea, trim_name:"海啸",trim_type:coast_armor_trim_smithing_template}
 
 
 
