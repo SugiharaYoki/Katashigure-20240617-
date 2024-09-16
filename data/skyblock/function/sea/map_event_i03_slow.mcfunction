@@ -191,6 +191,7 @@ execute as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90123 1
 execute as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90123 143 150 if entity @n[tag=sc,scores={sea_player=3..}] run function skyblock:sea/m/drowned
 
 
+execute as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=1}] run scoreboard players set @a[tag=SEAPT,scores={sea_progress=..6}] sea_progress 7
 execute as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=1}] run playsound minecraft:item.goat_horn.sound.6 master @a[tag=SEAPT] 90100 0 100 10000 0.8
 execute as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=1}] run playsound minecraft:item.goat_horn.sound.6 master @a[tag=SEAPT] 90100 0 100 10000 0.87
 execute as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=1}] run playsound minecraft:item.goat_horn.sound.6 master @a[tag=SEAPT] 90100 0 100 10000 0.84
