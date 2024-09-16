@@ -411,27 +411,6 @@ execute positioned 90107 155 147 if entity @a[tag=SEAPT,distance=..2.3] unless e
 
 
 
-
+#BADEND
 execute positioned 90119 129 84 if entity @a[tag=SEAPT,distance=..4] unless entity @n[tag=SEAch3_spawn_timer7,distance=0..3] run summon marker ~ ~ ~ {Tags:["SEAch3_spawn_timer","SEAch3_spawn_timer7"]}
-execute as @n[tag=SEAch3_spawn_timer7,scores={sea_4temp1=1..10}] positioned 90116 129 73 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
-execute as @n[tag=SEAch3_spawn_timer7,scores={sea_4temp1=1..10}] positioned 90116 129 73 run particle sculk_soul ~ ~1 ~ 0.3 0.5 0.3 0.05 10
-execute as @n[tag=SEAch3_spawn_timer7,scores={sea_4temp1=11..15}] positioned 90116 129 73 run function skyblock:sea/m/pillager2
-execute as @n[tag=SEAch3_spawn_timer7,scores={sea_4temp1=14..15}] positioned 90116 129 73 run function skyblock:sea/m/nightblind
-execute as @n[tag=SEAch3_spawn_timer7,scores={sea_4temp1=1..10}] positioned 90122 129 73 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
-execute as @n[tag=SEAch3_spawn_timer7,scores={sea_4temp1=1..10}] positioned 90122 129 73 run particle sculk_soul ~ ~1 ~ 0.3 0.5 0.3 0.05 10
-execute as @n[tag=SEAch3_spawn_timer7,scores={sea_4temp1=11..15}] positioned 90122 129 73 run function skyblock:sea/m/pillager2
-execute as @n[tag=SEAch3_spawn_timer7,scores={sea_4temp1=14..15}] positioned 90122 129 73 run function skyblock:sea/m/nightblind
-execute as @n[tag=SEAch3_spawn_timer7,scores={sea_4temp1=21..30}] positioned 90116 129 73 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
-execute as @n[tag=SEAch3_spawn_timer7,scores={sea_4temp1=21..30}] positioned 90116 129 73 run particle sculk_soul ~ ~1 ~ 0.3 0.5 0.3 0.05 10
-execute as @n[tag=SEAch3_spawn_timer7,scores={sea_4temp1=31..33}] positioned 90116 129 73 run function skyblock:sea/m/vindicator
-execute as @n[tag=SEAch3_spawn_timer7,scores={sea_4temp1=21..30}] positioned 90122 129 73 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
-execute as @n[tag=SEAch3_spawn_timer7,scores={sea_4temp1=21..30}] positioned 90122 129 73 run particle sculk_soul ~ ~1 ~ 0.3 0.5 0.3 0.05 10
-execute as @n[tag=SEAch3_spawn_timer7,scores={sea_4temp1=31..33}] positioned 90122 129 73 run function skyblock:sea/m/vindicator
-
-execute as @n[tag=SEAch3_spawn_timer7,scores={sea_4temp1=11..20}] positioned 90119 129 71 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
-execute as @n[tag=SEAch3_spawn_timer7,scores={sea_4temp1=11..20}] positioned 90119 129 71 run particle sculk_soul ~ ~1 ~ 0.3 0.5 0.3 0.05 10
-execute as @n[tag=SEAch3_spawn_timer7,scores={sea_4temp1=21}] positioned 90119 129 71 run function skyblock:sea/m/evoker
-execute as @n[tag=SEAch3_spawn_timer7,scores={sea_4temp1=31..40}] positioned 90119 129 71 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
-execute as @n[tag=SEAch3_spawn_timer7,scores={sea_4temp1=31..40}] positioned 90119 129 71 run particle sculk_soul ~ ~1 ~ 0.3 0.5 0.3 0.05 10
-execute as @n[tag=SEAch3_spawn_timer7,scores={sea_4temp1=41}] positioned 90119 129 71 run function skyblock:sea/m/evoker
-
+execute as @n[tag=SEAch3_spawn_timer7] run function skyblock:sea/e/ev002

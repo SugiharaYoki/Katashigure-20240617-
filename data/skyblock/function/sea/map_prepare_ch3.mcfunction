@@ -309,7 +309,7 @@ setblock 90101 149 131 minecraft:red_candle[candles=3,lit=true]
 setblock 90103 149 131 minecraft:red_candle[candles=3,lit=true]
 setblock 90102 150 130 minecraft:amethyst_cluster
 
-
+setblock 90117 137 146 minecraft:jukebox
 
 
 
