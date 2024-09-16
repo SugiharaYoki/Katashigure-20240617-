@@ -1,5 +1,5 @@
 execute as @a unless entity @s[scores={sea_progress=-999..}] run scoreboard players set @s sea_progress 0
-kill @a[x=90000,y=100,z=100,distance=..5000,scores={sea_progress=..4}] 
+tp @a[x=90000,y=100,z=100,distance=..5000,scores={sea_progress=..4}] -43 55 0
 
 function skyblock:sea/map_prepare_ch1
 function skyblock:sea/map_prepare_ch2
