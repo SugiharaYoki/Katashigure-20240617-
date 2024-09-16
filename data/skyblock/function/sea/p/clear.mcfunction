@@ -122,9 +122,20 @@ execute as @s[tag=!e_w_04] at @s if entity @s[nbt={Inventory:[{components:{"mine
 execute as @s[tag=!e_w_04] at @s if entity @s[nbt={Inventory:[{components:{"minecraft:custom_data":{sea_flamethrower:true}}}]}] run tag @s add e_w_04
 #execute as @s[tag=e_w_04] store result score @s sea_cursor run clear @s shears 0
 #execute as @s[tag=e_w_04] at @s if entity @s[scores={sea_cursor=..0}] run give @s shears[custom_name='{"text":"喷火器","italic":false,"color":"red"}',custom_data={sea_flamethrower:true},unbreakable={}]
-execute as @s[tag=e_w_04,level=..7] run xp add @s 1 points
-execute as @s[tag=e_w_04,level=..7] as @s[nbt={Inventory:[{components:{"minecraft:custom_data":{sea_t_flamethrower1:true}}}]}] run xp add @s 1 points
-execute as @s[tag=e_w_04,level=..7] as @s[nbt={Inventory:[{components:{"minecraft:custom_data":{sea_t_flamethrower2:true}}}]}] run xp add @s 1 points
-execute as @s[tag=e_w_04,level=..7] as @s[nbt={Inventory:[{components:{"minecraft:custom_data":{sea_t_flamethrower3:true}}}]}] run xp add @s 1 points
-execute as @s[tag=e_w_04,level=8..] run xp set @s 8 levels
-execute as @s[tag=e_w_04,level=8..] run xp set @s 0 points
+execute as @s[tag=e_w_04,level=..7,scores={sea_oxygen=20..}] run xp add @s 1 points
+execute as @s[tag=e_w_04,level=..7,scores={sea_oxygen=20..}] as @s[nbt={Inventory:[{components:{"minecraft:custom_data":{sea_t_flamethrower1:true}}}]}] run xp add @s 1 points
+execute as @s[tag=e_w_04,level=..7,scores={sea_oxygen=20..}] as @s[nbt={Inventory:[{components:{"minecraft:custom_data":{sea_t_flamethrower2:true}}}]}] run xp add @s 1 points
+execute as @s[tag=e_w_04,level=..7,scores={sea_oxygen=20..}] as @s[nbt={Inventory:[{components:{"minecraft:custom_data":{sea_t_flamethrower3:true}}}]}] run xp add @s 1 points
+execute as @s[tag=e_w_04,level=8..,scores={sea_oxygen=20..}] run xp set @s 8 levels
+execute as @s[tag=e_w_04,level=8..,scores={sea_oxygen=20..}] run xp set @s 0 points
+
+execute as @s[scores={sea_oxygen=..19}] run xp set @s 0 levels
+execute as @s[scores={sea_oxygen=..0}] run xp set @s 0 points
+execute as @s[scores={sea_oxygen=1..3}] run xp set @s 1 points
+execute as @s[scores={sea_oxygen=4..6}] run xp set @s 2 points
+execute as @s[scores={sea_oxygen=7..9}] run xp set @s 3 points
+execute as @s[scores={sea_oxygen=10..12}] run xp set @s 4 points
+execute as @s[scores={sea_oxygen=13..15}] run xp set @s 5 points
+execute as @s[scores={sea_oxygen=16..19}] run xp set @s 6 points
+
+
