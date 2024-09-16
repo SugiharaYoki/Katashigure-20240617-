@@ -143,8 +143,8 @@ execute as @s[scores={sea_oxygen=16..19}] run xp set @s 6 points
 execute store result score @s sea_cursor run clear @s flow_armor_trim_smithing_template[custom_data={sea_t_sprint_disabled:true}] 0
 execute store result score @s sea_cursor2 run clear @s flow_armor_trim_smithing_template[custom_data={sea_t_sprint1:true}] 0
 
-execute if items entity @s player.cursor flow_armor_trim_smithing_template[custom_data={sea_t_sprint_disabled:true}] run tag @s add sea_t_sprint_disabled
-execute if items entity @s player.cursor flow_armor_trim_smithing_template[custom_data={sea_t_sprint1:true}] run tag @s remove sea_t_sprint_disabled
+execute if items entity @s player.cursor flow_armor_trim_smithing_template[custom_data={sea_t_sprint_disabled:true}] run tag @s remove sea_t_sprint_disabled
+execute if items entity @s player.cursor flow_armor_trim_smithing_template[custom_data={sea_t_sprint1:true}] run tag @s add sea_t_sprint_disabled
 #execute if score @s sea_cursor2 matches 1.. run say hello
 
 execute as @s[nbt={Inventory:[{components:{"minecraft:custom_data":{sea_t_spectral1:true}}}]}] at @s run tag @s add sea_t_spectral1
