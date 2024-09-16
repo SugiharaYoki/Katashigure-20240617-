@@ -215,3 +215,20 @@ execute if entity @n[tag=sc,scores={TimeRemainUnsee=0,Map_Code=4}] run execute u
 execute if entity @n[tag=sc,scores={TimeRemainUnsee=0,Map_Code=4}] run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run worldborder set 20 300
 
 #[futuredevskywar]
+
+
+
+
+execute if entity @n[tag=sc,scores={TimeRemainUnsee=600,Map_Code=10}] run summon frog 50048 21 50076 {variant:warm}
+execute if entity @n[tag=sc,scores={TimeRemainUnsee=600,Map_Code=10}] run summon frog 50076 21 50048 {variant:warm}
+execute if entity @n[tag=sc,scores={TimeRemainUnsee=600,Map_Code=10}] run summon frog 50090 21 50076 {variant:warm}
+execute if entity @n[tag=sc,scores={TimeRemainUnsee=600,Map_Code=10}] run summon frog 50076 21 50090 {variant:warm}
+execute if entity @n[tag=sc,scores={TimeRemainUnsee=600,Map_Code=10}] run summon frog 50048 21 50076 {variant:warm}
+execute if entity @n[tag=sc,scores={TimeRemainUnsee=600,Map_Code=10}] run summon frog 50076 21 50048 {variant:warm}
+execute if entity @n[tag=sc,scores={TimeRemainUnsee=600,Map_Code=10}] run summon frog 50090 21 50076 {variant:warm}
+execute if entity @n[tag=sc,scores={TimeRemainUnsee=600,Map_Code=10}] run summon frog 50076 21 50090 {variant:warm}
+
+execute if entity @n[tag=sc,scores={TimeRemainUnsee=300,Map_Code=10}] run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run title @a[tag=PVP_see] times 0 60 60
+execute if entity @n[tag=sc,scores={TimeRemainUnsee=300,Map_Code=10}] run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run title @a[tag=PVP_see] title {"text":"地灵脉的召唤","color":"yellow"}
+execute if entity @n[tag=sc,scores={TimeRemainUnsee=300,Map_Code=10}] run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run title @a[tag=PVP_see] subtitle {"text":"“汝并不该来到此地 但汝身后已无退路”","color":"yellow"}
+execute if entity @n[tag=sc,scores={TimeRemainUnsee=300,Map_Code=10}] run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run worldborder set 60 300
