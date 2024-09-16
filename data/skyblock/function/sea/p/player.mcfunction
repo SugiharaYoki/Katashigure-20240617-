@@ -143,11 +143,11 @@ execute as @s[nbt={Inventory:[{components:{"minecraft:custom_data":{sea_t_spectr
 execute as @s[nbt={Inventory:[{components:{"minecraft:custom_data":{sea_t_sprint1:true}}}]}] at @s run tag @s add sea_t_sprint1
 clear @s barrier
 clear @s flow_armor_trim_smithing_template
-item replace entity @s[tag=SEAPT,tag=!sea_t_spectral1] player.crafting.0 with barrier
-item replace entity @s[tag=SEAPT,tag=sea_t_spectral1] player.crafting.0 with flow_armor_trim_smithing_template[custom_name='{"text":"光棱魔板","italic":true,"color":"light_purple","italic":false}',lore=['{"text":"静滞光锥 I","color":"white","italic":false}','{"text":"箭矢路径的小范围内怪物大幅减速","color":"white","italic":false}'],custom_data={sea_t_spectral1:true}]
+item replace entity @s[tag=!sea_t_spectral1] player.crafting.0 with barrier
+item replace entity @s[tag=sea_t_spectral1] player.crafting.0 with flow_armor_trim_smithing_template[custom_name='{"text":"光棱魔板","italic":true,"color":"light_purple","italic":false}',lore=['{"text":"静滞光锥 I","color":"white","italic":false}','{"text":"箭矢路径的小范围内怪物大幅减速","color":"white","italic":false}'],custom_data={sea_t_spectral1:true}]
 item replace entity @s[tag=SEAPT] player.crafting.1 with barrier
-item replace entity @s[tag=SEAPT,tag=sea_t_sprint1,tag=!sea_t_sprint_disabled] player.crafting.1 with flow_armor_trim_smithing_template[custom_name='{"text":"残影魔板","italic":true,"color":"light_purple","italic":false}',lore=['{"text":"绿色指示灯亮起时，起跑将被替换为冲刺","color":"white","italic":false}','{"text":"期间防御、移动速度、击退抗性巨幅提升","color":"white","italic":false}','{"text":"点击禁用","color":"green","italic":false}'],custom_data={sea_t_sprint1:true}]
-item replace entity @s[tag=SEAPT,tag=sea_t_sprint1,tag=sea_t_sprint_disabled] player.crafting.1 with flow_armor_trim_smithing_template[custom_name='{"text":"残影魔板 - 禁用中","italic":true,"color":"light_purple","italic":false}',lore=['{"text":"绿色指示灯亮起时，起跑将被替换为冲刺","color":"white","italic":false}','{"text":"期间防御、移动速度、击退抗性巨幅提升","color":"white","italic":false}'],custom_data={sea_t_sprint_disabled:true},enchantments={"vanishing_curse":1}]
+item replace entity @s[tag=sea_t_sprint1,tag=!sea_t_sprint_disabled] player.crafting.1 with flow_armor_trim_smithing_template[custom_name='{"text":"残影魔板","italic":true,"color":"light_purple","italic":false}',lore=['{"text":"绿色指示灯亮起时，起跑将被替换为冲刺","color":"white","italic":false}','{"text":"期间防御、移动速度、击退抗性巨幅提升","color":"white","italic":false}','{"text":"点击禁用","color":"green","italic":false}'],custom_data={sea_t_sprint1:true}]
+item replace entity @s[tag=sea_t_sprint1,tag=sea_t_sprint_disabled] player.crafting.1 with flow_armor_trim_smithing_template[custom_name='{"text":"残影魔板 - 禁用中","italic":true,"color":"light_purple","italic":false}',lore=['{"text":"绿色指示灯亮起时，起跑将被替换为冲刺","color":"white","italic":false}','{"text":"期间防御、移动速度、击退抗性巨幅提升","color":"white","italic":false}'],custom_data={sea_t_sprint_disabled:true},enchantments={"vanishing_curse":1}]
 item replace entity @s[tag=SEAPT] player.crafting.2 with barrier
 item replace entity @s[tag=SEAPT] player.crafting.3 with barrier
 
