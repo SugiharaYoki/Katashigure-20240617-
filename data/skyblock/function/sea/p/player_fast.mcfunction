@@ -23,7 +23,7 @@ scoreboard players set @s[tag=!sea_t_sprint_disabled,tag=sea_t_sprint1,scores={s
 
 
 
-execute as @s[tag=sea_t_parry1,nbt=!{SelectedItem:{id:"minecraft:shield"}}] run scoreboard players set @s sea_shield_switch 6
+execute as @s[tag=sea_t_parry1,nbt=!{SelectedItem:{id:"minecraft:shield"}}] run scoreboard players set @s sea_shield_switch 12
 execute as @s[tag=sea_t_parry1,nbt=!{SelectedItem:{id:"minecraft:shield"}}] run scoreboard players set @s sea_shielding 0
 execute as @s[tag=sea_t_parry1,nbt={SelectedItem:{id:"minecraft:shield"}}] run scoreboard players remove @s sea_shield_switch 1
 execute as @s[tag=sea_t_parry1,nbt={SelectedItem:{id:"minecraft:shield"}},scores={sea_shielding=1..,sea_shield_switch=0..}] run effect give @s slowness 1 0 false
