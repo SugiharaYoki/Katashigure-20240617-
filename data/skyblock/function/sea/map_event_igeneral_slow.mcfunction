@@ -265,14 +265,7 @@ execute if block 90080 129 135 minecraft:waxed_oxidized_copper_bulb[lit=true] if
 execute if block 90080 129 135 minecraft:waxed_oxidized_copper_bulb[lit=true] if block 90089 131 127 white_stained_glass run setblock 90089 131 127 tinted_glass
 
 
-execute if score sea sea_4temp_environment matches 28 as @a[tag=SEAPT] store result score @s sea_i_spectral run clear @s spectral_arrow 0
-execute if score sea sea_4temp_environment matches 28 as @a[tag=SEAPT] unless entity @s[scores={sea_i_spectral_load=-999..}] run scoreboard players set @s sea_i_spectral_load 0
-execute if score sea sea_4temp_environment matches 28 as @a[tag=SEAPT,tag=sea_t_spectral1,nbt={Inventory:[{id:"minecraft:arrow"}]},scores={sea_i_spectral=..2,sea_i_spectral_load=..4}] run scoreboard players add @s sea_i_spectral_load 1
-execute if score sea sea_4temp_environment matches 28 as @a[tag=SEAPT,scores={sea_i_spectral=..2,sea_i_spectral_load=5..}] run clear @s arrow 1
-execute if score sea sea_4temp_environment matches 28 as @a[tag=SEAPT,scores={sea_i_spectral=..2,sea_i_spectral_load=5..}] run give @s spectral_arrow 1
-execute if score sea sea_4temp_environment matches 28 as @a[tag=SEAPT,scores={sea_i_spectral=..2,sea_i_spectral_load=5..}] run scoreboard players set @s sea_i_spectral_load 0
-execute as @s[scores={sea_i_spectral=4..}] run give @s arrow 1
-execute as @s[scores={sea_i_spectral=4..}] run clear @s spectral_arrow 1
+
 
 execute if block 90088 128 114 air unless entity @a[tag=SEAPT,tag=e_i_20] positioned 90088 128 117 run function skyblock:sea/m/silverfish_big
 execute if block 90088 128 114 air unless entity @a[tag=SEAPT,tag=e_i_20] positioned 90088 128 117 run function skyblock:sea/m/silverfish_big

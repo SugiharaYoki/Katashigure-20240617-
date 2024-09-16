@@ -310,7 +310,7 @@ execute as @n[tag=SEAch3_spawn_timer8,scores={sea_4temp1=16}] positioned 90090 1
 execute as @n[tag=SEAch3_spawn_timer8,scores={sea_4temp1=23}] at @n[tag=SEAyuehan] run tellraw @a[distance=0..250] {"text":"？？？：“电……电台里的就是你？”","color":"green"}
 execute as @n[tag=SEAch3_spawn_timer8,scores={sea_4temp1=23}] at @n[tag=SEAyuehan] run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
 
-execute at @n[tag=SEAyuehan] if entity @a[tag=SEAPT,distance=..6] run scoreboard players add @n[tag=SEAyuehan] sea_4temp1 1
+execute at @n[tag=SEAyuehan] if entity @a[tag=SEAPT,distance=..6] run scoreboard players add @n[tag=SEAyuehan,scores={sea_4temp1=..295}] sea_4temp1 1
 execute as @n[tag=SEAyuehan,scores={sea_4temp1=19}] at @s run tellraw @a[distance=0..250] {"text":"？？？：“你、你没被感染吧？”","color":"green"}
 execute as @n[tag=SEAyuehan,scores={sea_4temp1=19}] at @s run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
 execute as @n[tag=SEAyuehan,scores={sea_4temp1=19..270}] at @s run tp @s ~ ~ ~ facing entity @p
@@ -339,6 +339,50 @@ execute as @n[tag=SEAyuehan,scores={sea_4temp1=291}] at @s if entity @n[tag=sc,s
 execute as @n[tag=SEAyuehan,scores={sea_4temp1=291}] at @s if entity @n[tag=sc,scores={sea_player=2..}] run tellraw @a[distance=0..250] {"text":"越涵：“我这儿有点绿宝石，你拿去买多功能工作站里的玩意。我塞进去的肉估计都变质了，你最好叫你的同事们都别吃。”","color":"green"}
 execute as @n[tag=SEAyuehan,scores={sea_4temp1=291}] at @s run give @a[tag=SEAPT] emerald 16
 execute as @n[tag=SEAyuehan,scores={sea_4temp1=291}] at @s run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
+execute as @n[tag=SEAyuehan,scores={sea_4temp1=291}] at @s if entity @a[tag=SEAPT,tag=e_i_25] run scoreboard players set @n[tag=SEAyuehan] sea_4temp1 1400
+
+execute at @n[tag=SEAyuehan] if entity @a[tag=SEAPT,distance=..6,tag=e_i_25] run scoreboard players set @n[tag=SEAyuehan,scores={sea_4temp1=299..300}] sea_4temp1 400
+execute at @n[tag=SEAyuehan] if entity @a[tag=SEAPT,distance=..6] run scoreboard players add @n[tag=SEAyuehan,scores={sea_4temp1=400..700}] sea_4temp1 1
+execute as @n[tag=SEAyuehan,scores={sea_4temp1=402}] at @s run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
+execute as @n[tag=SEAyuehan,scores={sea_4temp1=402}] at @s if entity @n[tag=sc,scores={sea_player=1}] run tellraw @a[distance=0..250] {"text":"越涵：“哎，你找到斯顿了吗？”","color":"green"}
+execute as @n[tag=SEAyuehan,scores={sea_4temp1=402}] at @s if entity @n[tag=sc,scores={sea_player=2..}] run tellraw @a[distance=0..250] {"text":"越涵：“哎，你们找到斯顿了吗？”","color":"green"}
+execute as @n[tag=SEAyuehan,scores={sea_4temp1=435}] at @s run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
+execute as @n[tag=SEAyuehan,scores={sea_4temp1=435}] at @s if entity @n[tag=sc,scores={sea_player=1}] run tellraw @a[distance=0..250] {"text":"越涵：“什……你说他、……什么？”","color":"green"}
+execute as @n[tag=SEAyuehan,scores={sea_4temp1=435}] at @s if entity @n[tag=sc,scores={sea_player=2..}] run tellraw @a[distance=0..250] {"text":"越涵：“什……你们说他、……什么？”","color":"green"}
+execute as @n[tag=SEAyuehan,scores={sea_4temp1=462}] at @s run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
+execute as @n[tag=SEAyuehan,scores={sea_4temp1=462}] at @s run tellraw @a[distance=0..250] {"text":"越涵：“不、不对，他不可能有这么蠢的，一定有什么搞错了……”","color":"green"}
+execute as @n[tag=SEAyuehan,scores={sea_4temp1=499}] at @s run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
+execute as @n[tag=SEAyuehan,scores={sea_4temp1=499}] at @s run tellraw @a[distance=0..250] {"text":"越涵：“……抱歉，给我点时间。辛苦了，专程为了这种事替我跑一次。”","color":"green"}
+execute as @n[tag=SEAyuehan,scores={sea_4temp1=539}] at @s run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
+execute as @n[tag=SEAyuehan,scores={sea_4temp1=539}] at @s run tellraw @a[distance=0..250] {"text":"越涵：“嗯对了，走之前拿上这个吧。它对我而言已经……没用了。”","color":"green"}
+execute as @n[tag=SEAyuehan,scores={sea_4temp1=539}] at @s run give @a[tag=SEAPT] snout_armor_trim_smithing_template[custom_name='{"text":"透光吸附 I","italic":true,"color":"light_purple","italic":false}',lore=['{"text":"光谱 I 光棱箭的转换速度加快","color":"white","italic":false}'],custom_data={sea_t_spectral_load1:true}]
+execute as @n[tag=SEAyuehan,scores={sea_4temp1=650}] at @s run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
+execute as @n[tag=SEAyuehan,scores={sea_4temp1=650}] at @s run tellraw @a[distance=0..250] {"text":"越涵：“……能让我一个人静一静吗？”","color":"green"}
+execute as @n[tag=SEAyuehan,scores={sea_4temp1=699}] at @s run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
+execute as @n[tag=SEAyuehan,scores={sea_4temp1=699}] at @s run tellraw @a[distance=0..250] {"text":"越涵：“……算了。”","color":"green"}
+execute as @n[tag=SEAyuehan,scores={sea_4temp1=540..800}] at @s unless entity @a[tag=SEAPT,distance=..11] run tp @s ~ ~-500 ~
+execute as @n[tag=SEAyuehan,scores={sea_4temp1=540..800}] at @s unless entity @a[tag=SEAPT,distance=..11] run kill @s
+
+execute at @n[tag=SEAyuehan] if entity @a[tag=SEAPT,distance=..6] run scoreboard players add @n[tag=SEAyuehan,scores={sea_4temp1=1400..1700}] sea_4temp1 1
+execute as @n[tag=SEAyuehan,scores={sea_4temp1=1402}] at @s run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
+execute as @n[tag=SEAyuehan,scores={sea_4temp1=1402}] at @s if entity @n[tag=sc,scores={sea_player=1}] run tellraw @a[distance=0..250] {"text":"越涵：“啊、什么，你说你已经找到斯顿了？”","color":"green"}
+execute as @n[tag=SEAyuehan,scores={sea_4temp1=1402}] at @s if entity @n[tag=sc,scores={sea_player=2..}] run tellraw @a[distance=0..250] {"text":"越涵：“啊、什么，你们说已经找到斯顿了？”","color":"green"}
+execute as @n[tag=SEAyuehan,scores={sea_4temp1=1435}] at @s run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
+execute as @n[tag=SEAyuehan,scores={sea_4temp1=1435}] at @s if entity @n[tag=sc,scores={sea_player=1}] run tellraw @a[distance=0..250] {"text":"越涵：“早点告诉我呢，他还好吗？……什、你说……他已经、他……死了？”","color":"green"}
+execute as @n[tag=SEAyuehan,scores={sea_4temp1=1435}] at @s if entity @n[tag=sc,scores={sea_player=2..}] run tellraw @a[distance=0..250] {"text":"越涵：“早点告诉我呢，他还好吗？……什、你们说……他已经、他……死了？”","color":"green"}
+execute as @n[tag=SEAyuehan,scores={sea_4temp1=1462}] at @s run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
+execute as @n[tag=SEAyuehan,scores={sea_4temp1=1462}] at @s run tellraw @a[distance=0..250] {"text":"越涵：“不、不对，他不可能有这么蠢的，一定有什么搞错了……”","color":"green"}
+execute as @n[tag=SEAyuehan,scores={sea_4temp1=1499}] at @s run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
+execute as @n[tag=SEAyuehan,scores={sea_4temp1=1499}] at @s run tellraw @a[distance=0..250] {"text":"越涵：“……抱歉，给我点时间。”","color":"green"}
+execute as @n[tag=SEAyuehan,scores={sea_4temp1=1539}] at @s run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
+execute as @n[tag=SEAyuehan,scores={sea_4temp1=1539}] at @s run tellraw @a[distance=0..250] {"text":"越涵：“嗯对了，走之前拿上这个吧。它对我而言已经……没用了。”","color":"green"}
+execute as @n[tag=SEAyuehan,scores={sea_4temp1=1539}] at @s run give @a[tag=SEAPT] snout_armor_trim_smithing_template[custom_name='{"text":"透光吸附 I","italic":true,"color":"light_purple","italic":false}',lore=['{"text":"光谱 I 光棱箭的转换速度加快","color":"white","italic":false}'],custom_data={sea_t_spectral_load1:true}]
+execute as @n[tag=SEAyuehan,scores={sea_4temp1=1650}] at @s run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
+execute as @n[tag=SEAyuehan,scores={sea_4temp1=1650}] at @s run tellraw @a[distance=0..250] {"text":"越涵：“……能让我一个人静一静吗？”","color":"green"}
+execute as @n[tag=SEAyuehan,scores={sea_4temp1=1699}] at @s run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
+execute as @n[tag=SEAyuehan,scores={sea_4temp1=1699}] at @s run tellraw @a[distance=0..250] {"text":"越涵：“……算了。”","color":"green"}
+execute as @n[tag=SEAyuehan,scores={sea_4temp1=1540..1800}] at @s unless entity @a[tag=SEAPT,distance=..11] run tp @s ~ ~-500 ~
+execute as @n[tag=SEAyuehan,scores={sea_4temp1=1540..1800}] at @s unless entity @a[tag=SEAPT,distance=..11] run kill @s
 
 execute if block 90137 136 144 minecraft:polished_tuff \
 if block 90137 139 141 lever[powered=true] \
@@ -401,6 +445,7 @@ execute positioned 90102 149 131 if entity @a[tag=SEAPT,distance=..3.5] unless b
 execute positioned 90102 149 131 if entity @a[tag=SEAPT,distance=..3.5] unless block 90102 150 130 air run setblock 90103 149 131 minecraft:red_candle[candles=3,lit=false]
 execute positioned 90102 149 131 if entity @a[tag=SEAPT,distance=..3.5] unless block 90102 150 130 air run playsound block.amethyst_cluster.break block @a ~ ~ ~ 1 0.8
 execute positioned 90102 149 131 if entity @a[tag=SEAPT,distance=..3.5] unless block 90102 150 130 air run playsound block.amethyst_block.chime block @a ~ ~ ~ 1 0.8
+execute positioned 90102 149 131 if entity @a[tag=SEAPT,distance=..3.5] unless block 90102 150 130 air run tag @a add e_i_25
 execute positioned 90102 149 131 if entity @a[tag=SEAPT,distance=..3.5] unless block 90102 150 130 air run setblock 90102 150 130 air
 
 execute positioned 90107 155 147 if entity @a[tag=SEAPT,distance=..2.3] unless entity @n[tag=SEAch3_spawn,distance=0..3] positioned 90102 155 149 run function skyblock:sea/m/nightblind
