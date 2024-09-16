@@ -297,7 +297,6 @@ item replace block 90100 155 139 container.12 with arrow 3
 
 setblock 90107 156 135 barrel[facing=south]{Lock:"副宿舍楼2F - 个人储藏柜2B的钥匙"}
 item replace block 90107 156 135 container.11 with gunpowder 1
-
 item replace block 90107 156 135 container.15 with emerald 2
 
 setblock 90104 155 151 chest[facing=north]
@@ -311,6 +310,11 @@ setblock 90102 150 130 minecraft:amethyst_cluster
 
 setblock 90117 137 146 minecraft:jukebox
 
+fill 90145 135 113 90147 135 119 iron_block
 
-
+setblock 90155 138 121 air
+setblock 90155 138 121 lever[facing=south,face=wall]
+setblock 90151 137 116 chest[facing=east]
+item replace block 90151 137 116 container.12 with flint 1
+item replace block 90151 137 116 container.14 with gunpowder 1
 
