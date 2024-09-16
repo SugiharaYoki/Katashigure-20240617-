@@ -252,6 +252,9 @@ setblock 90128 149 145 air
 setblock 90125 149 147 air
 setblock 90128 150 140 minecraft:potted_blue_orchid
 
+fill 90128 155 145 90127 155 145 minecraft:redstone_block
+fill 90128 155 145 90127 155 145 minecraft:air
+
 setblock 90122 149 139 chest[facing=west]
 item replace block 90122 149 139 container.12 with fire_charge[custom_name='{"text":"定时炸弹","italic":true,"color":"blue","italic":false}',lore=['{"text":"它会在你丢出去3秒后爆炸！","color":"white","italic":false}','{"text":"炸到自己的话，职业生涯就会结束了吧。","color":"white","italic":false}','{"text":"可用于破坏凝胶壁障与瓦罐。","color":"white","italic":false}']] 1
 item replace block 90122 149 139 container.14 with fire_charge[custom_name='{"text":"定时炸弹","italic":true,"color":"blue","italic":false}',lore=['{"text":"它会在你丢出去3秒后爆炸！","color":"white","italic":false}','{"text":"炸到自己的话，职业生涯就会结束了吧。","color":"white","italic":false}','{"text":"可用于破坏凝胶壁障与瓦罐。","color":"white","italic":false}']] 1
@@ -305,3 +308,9 @@ fill 90130 153 129 90124 153 129 lever[facing=north]
 setblock 90101 149 131 minecraft:red_candle[candles=3,lit=true]
 setblock 90103 149 131 minecraft:red_candle[candles=3,lit=true]
 setblock 90102 150 130 minecraft:amethyst_cluster
+
+
+
+
+
+
