@@ -20,4 +20,4 @@ data modify entity @s Pos set from storage temp:matrix display.start
 data modify entity @s block_state set from storage temp:matrix block_state
 
 data modify entity @s transformation set from storage temp:matrix transformation
-data merge entity @s {start_interpolation:0,interpolation_duration:2,teleport_duration:2}
+data merge entity @s {start_interpolation:0,interpolation_duration:3,teleport_duration:3}
