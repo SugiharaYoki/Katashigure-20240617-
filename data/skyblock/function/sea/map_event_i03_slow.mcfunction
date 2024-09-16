@@ -340,7 +340,7 @@ execute as @n[tag=SEAyuehan,scores={sea_4temp1=291}] at @s if entity @n[tag=sc,s
 execute as @n[tag=SEAyuehan,scores={sea_4temp1=291}] at @s if entity @n[tag=sc,scores={sea_player=2..}] run tellraw @a[distance=0..250] {"text":"越涵：“我这儿有点绿宝石，你拿去买多功能工作站里的玩意。我塞进去的肉估计都变质了，你最好叫你的同事们都别吃。”","color":"green"}
 execute as @n[tag=SEAyuehan,scores={sea_4temp1=291}] at @s run give @a[tag=SEAPT] emerald 16
 execute as @n[tag=SEAyuehan,scores={sea_4temp1=291}] at @s run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
-execute as @n[tag=SEAyuehan,scores={sea_4temp1=291}] at @s if entity @a[tag=SEAPT,tag=e_i_25] run scoreboard players set @n[tag=SEAyuehan] sea_4temp1 1400
+execute as @n[tag=SEAyuehan,scores={sea_4temp1=291}] at @s if entity @a[tag=SEAPT,tag=e_i_25] run scoreboard players set @n[tag=SEAyuehan] sea_4temp1 1360
 
 execute at @n[tag=SEAyuehan] if entity @a[tag=SEAPT,distance=..6,tag=e_i_25] run scoreboard players set @n[tag=SEAyuehan,scores={sea_4temp1=299..300}] sea_4temp1 400
 execute at @n[tag=SEAyuehan] if entity @a[tag=SEAPT,distance=..6] run scoreboard players add @n[tag=SEAyuehan,scores={sea_4temp1=400..700}] sea_4temp1 1
@@ -364,7 +364,7 @@ execute as @n[tag=SEAyuehan,scores={sea_4temp1=699}] at @s run tellraw @a[distan
 execute as @n[tag=SEAyuehan,scores={sea_4temp1=540..800}] at @s unless entity @a[tag=SEAPT,distance=..11] run tp @s ~ ~-500 ~
 execute as @n[tag=SEAyuehan,scores={sea_4temp1=540..800}] at @s unless entity @a[tag=SEAPT,distance=..11] run kill @s
 
-execute at @n[tag=SEAyuehan] if entity @a[tag=SEAPT,distance=..6] run scoreboard players add @n[tag=SEAyuehan,scores={sea_4temp1=1400..1700}] sea_4temp1 1
+execute at @n[tag=SEAyuehan] if entity @a[tag=SEAPT,distance=..6] run scoreboard players add @n[tag=SEAyuehan,scores={sea_4temp1=1359..1700}] sea_4temp1 1
 execute as @n[tag=SEAyuehan,scores={sea_4temp1=1402}] at @s run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
 execute as @n[tag=SEAyuehan,scores={sea_4temp1=1402}] at @s if entity @n[tag=sc,scores={sea_player=1}] run tellraw @a[distance=0..250] {"text":"越涵：“啊、什么，你说你已经找到斯顿了？”","color":"green"}
 execute as @n[tag=SEAyuehan,scores={sea_4temp1=1402}] at @s if entity @n[tag=sc,scores={sea_player=2..}] run tellraw @a[distance=0..250] {"text":"越涵：“啊、什么，你们说已经找到斯顿了？”","color":"green"}
