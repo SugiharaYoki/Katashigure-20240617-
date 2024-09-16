@@ -69,6 +69,8 @@ execute if block 90148 130 132 lever run clear @a[tag=SEAPT] lever[custom_data={
 
 execute if block 90133 138 127 air run item replace block 90112 145 99 container.12 with lever[minecraft:can_place_on={blocks:"stripped_crimson_stem"},custom_data={sea_lever4:true}] 1
 execute if block 90133 138 127 lever run clear @a[tag=SEAPT] lever[custom_data={sea_lever4:true}]
+#execute if block 90145 136 127 air run item replace block 90112 145 99 container.12 with lever[minecraft:can_place_on={blocks:"stripped_mangrove_log"},custom_data={sea_lever5:true}] 1
+#execute if block 90145 136 127 lever run clear @a[tag=SEAPT] lever[custom_data={sea_lever5:true}]
 
 
 item replace block 90104 122 131 container.18 with trial_key[custom_name='{"text":"器械室钥匙","italic":true,"color":"yellow","italic":false}']
@@ -163,10 +165,13 @@ item replace block 90138 137 108 container.12 with flow_banner_pattern[custom_da
 lore=['{"text":"我在针对甲板上出现的一种新型怪物做研究。","color":"white","italic":false}','{"text":"外貌特征为深红色的球体，拥有极高的表面温度。","color":"white","italic":false}','{"text":"它们不像是凭空出现的，每一只都对应着一具消失的尸体。","color":"white","italic":false}','{"text":"我认为它们很有可能是因遭遇怪物袭击，","color":"white","italic":false}','{"text":"而被随之沾染的火焰给活活烧死的遇难者。","color":"white","italic":false}','{"text":"维修层暂时没有这种怪物。","color":"white","italic":false}','{"text":"考虑到有它们的地方必然有火源，我该暂时更改据点。","color":"white","italic":false}']]
 item replace block 90141 137 117 container.12 with flow_banner_pattern[custom_data={sea_doc12b:true},custom_name=\
 '{"text":"主平台甲板通讯室储藏间的笔记B - 麦迪逊","italic":true,"color":"dark_purple","italic":false}',\
-lore=['{"text":"终于成功了，我将那块带着圣水晶力量的石板","color":"white","italic":false}','{"text":"改造成了类似铜板的魔力储存模块。","color":"white","italic":false}','{"text":"根据我的观察，它会将箭矢逐渐转化为一种金色的矢状物。","color":"white","italic":false}','{"text":"我在那些怪物身上做了实验，","color":"white","italic":false}','{"text":"金色的箭矢能让它们在几秒内近乎无法动弹。","color":"white","italic":false}','{"text":"可是那些被藤蔓掏空的怪物在被我射中后陷入了诡异的状态。","color":"white","italic":false}','{"text":"我无法对它们进一步实验，它们直接在我眼前消失了。","color":"white","italic":false}']]
+lore=['{"text":"终于成功了，我将那块带着圣水晶力量的铜板","color":"white","italic":false}','{"text":"改造成了与原本类似相反效果的魔力储存模块。","color":"white","italic":false}','{"text":"根据我的观察，它会将箭矢逐渐转化为一种金色的矢状物。","color":"white","italic":false}','{"text":"我在那些怪物身上做了实验，","color":"white","italic":false}','{"text":"金色的箭矢能让它们在几秒内近乎无法动弹。","color":"white","italic":false}','{"text":"可是那些被藤蔓掏空的怪物在被我射中后陷入了诡异的状态。","color":"white","italic":false}','{"text":"我无法对它们进一步实验，它们直接在我眼前消失了。","color":"white","italic":false}']]
 item replace block 90099 130 148 container.14 with flow_banner_pattern[custom_data={sea_doc13b:true},custom_name=\
 '{"text":"物资层休息室的笔记 - 麦迪逊","italic":true,"color":"dark_purple","italic":false}',\
 lore=['{"text":"那块魔法石板被我藏在了物资层西面的日常物资大仓库内。","color":"white","italic":false}','{"text":"要想对付北冷冻库那堆怪物，没有静滞光棱的力量等同于送死。","color":"white","italic":false}','{"text":"但是我要它已无用。我会从通风管道逃向水下研究设施。","color":"white","italic":false}']]
+item replace block 90144 136 131 container.13 with flow_banner_pattern[custom_data={sea_doc14b:true},custom_name=\
+'{"text":"泄水通道秘密实验室的笔记 - 麦迪逊","italic":true,"color":"dark_purple","italic":false}',\
+lore=['{"text":"圣晶能够吸引的不止拥有自主思维的生物的意志。","color":"white","italic":false}','{"text":"似乎电磁波与微波也会朝圣晶扭曲，","color":"white","italic":false}','{"text":"这或许才是钻井平台与外界失联的真正原因。","color":"white","italic":false}','{"text":"为什么偏偏是十几小时前才被切断通讯？","color":"white","italic":false}','{"text":"在这段时间里圣晶有过什么变化？是否在持续吸收某种能量？","color":"white","italic":false}','{"text":"被我故意放在水晶祀堂的空铜板被扭曲成了","color":"white","italic":false}','{"text":"能够令使用者爆发力剧增的魔法铜板。","color":"white","italic":false}','{"text":"静滞光棱的诞生也是我在对这种特殊铜板","color":"white","italic":false}','{"text":"实行逆向破解的过程中得到的意外收获。","color":"white","italic":false}']]
 
 item replace block 90126 128 124 container.2 with flow_banner_pattern[custom_data={sea_doc15:true},custom_name=\
 '{"text":"工程处后厨的笔记 - 瑞佛特","italic":true,"color":"dark_purple","italic":false}',\
@@ -196,7 +201,7 @@ item replace block 90100 155 139 container.14 with flow_banner_pattern[custom_da
 lore=['{"text":"19号 28万桶 - 石油开采量未满足需求。","color":"white","italic":false}','{"text":"20号 31万桶 - 石油开采量满足需求。","color":"white","italic":false}','{"text":"接下来的两个月内将尝试增加20%产量。","color":"white","italic":false}','{"text":"预计明天产量30万桶——理所当然。","color":"white","italic":false}','{"text":"实验体人数（后面的字都被狠狠划掉了）","color":"white","italic":false}']]
 
 item replace block 90107 156 135 container.13 with flow_banner_pattern[custom_data={sea_doc02b:true},custom_name='{"text":"副宿舍楼个人储藏柜内的便签纸","italic":true,"color":"dark_purple","italic":false}',lore=['{"text":"上面写着歪歪扭扭的字：","color":"white","italic":false}','{"text":"“正方形左上”","color":"white","italic":false}','{"text":"“左上的斜对角”","color":"white","italic":false}','{"text":"“右上”","color":"white","italic":false}','{"text":"“剩下的那个角”","color":"white","italic":false}','{"text":"“第一个角”","color":"white","italic":false}','{"text":"“左下”","color":"white","italic":false}','{"text":"“第四个角的斜对面”","color":"white","italic":false}']]
-#红白蓝紫红紫
+#红白蓝紫红紫蓝
 #1001110
 
 execute as @p[tag=SEAPT,nbt={Inventory:[{id:"minecraft:flow_banner_pattern"}]}] run function skyblock:sea/p/document

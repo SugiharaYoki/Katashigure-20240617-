@@ -81,7 +81,7 @@ item replace block 90081 104 134 container.11 with structure_void[custom_name='{
 item replace block 90081 104 134 container.12 with structure_void[custom_name='{"text":"未发现的档案","italic":true,"color":"gray","italic":false}'\
 ,lore=['{"text":"在物资层的休息室似乎存有某位工程师的笔记。","color":"white","italic":false}']]
 item replace block 90081 104 134 container.13 with structure_void[custom_name='{"text":"未发现的档案","italic":true,"color":"gray","italic":false}'\
-,lore=['{"text":"暂无解锁方式。","color":"white","italic":false}']]
+,lore=['{"text":"在主平台甲板泄水通道的某间操作室内似乎存有某位工程师的笔记。","color":"white","italic":false}']]
 item replace block 90081 104 134 container.14 with structure_void[custom_name='{"text":"未发现的档案","italic":true,"color":"gray","italic":false}'\
 ,lore=['{"text":"暂无解锁方式。","color":"white","italic":false}']]
 item replace block 90081 104 134 container.15 with structure_void[custom_name='{"text":"未发现的档案","italic":true,"color":"gray","italic":false}'\
@@ -161,10 +161,14 @@ execute if entity @s[tag=sea_doc11b] run item replace block 90081 104 134 contai
 lore=['{"text":"我在针对甲板上出现的一种新型怪物做研究。","color":"white","italic":false}','{"text":"外貌特征为深红色的球体，拥有极高的表面温度。","color":"white","italic":false}','{"text":"它们不像是凭空出现的，每一只都对应着一具消失的尸体。","color":"white","italic":false}','{"text":"我认为它们很有可能是因遭遇怪物袭击，","color":"white","italic":false}','{"text":"而被随之沾染的火焰给活活烧死的遇难者。","color":"white","italic":false}','{"text":"维修层暂时没有这种怪物。","color":"white","italic":false}','{"text":"考虑到有它们的地方必然有火源，我该暂时更改据点。","color":"white","italic":false}']]
 execute if entity @s[tag=sea_doc12b] run item replace block 90081 104 134 container.11 with flow_banner_pattern[custom_data={sea_doc12b:true},custom_name=\
 '{"text":"主平台甲板通讯室储藏间的笔记B - 麦迪逊","italic":true,"color":"dark_purple","italic":false}',\
-lore=['{"text":"终于成功了，我将那块带着圣水晶力量的石板","color":"white","italic":false}','{"text":"改造成了类似铜板的魔力储存模块。","color":"white","italic":false}','{"text":"根据我的观察，它会将箭矢逐渐转化为一种金色的矢状物。","color":"white","italic":false}','{"text":"我在那些怪物身上做了实验，","color":"white","italic":false}','{"text":"金色的箭矢能让它们在几秒内近乎无法动弹。","color":"white","italic":false}','{"text":"可是那些被藤蔓掏空的怪物在被我射中后陷入了诡异的状态。","color":"white","italic":false}','{"text":"我无法对它们进一步实验，它们直接在我眼前消失了。","color":"white","italic":false}']]
+lore=['{"text":"终于成功了，我将那块带着圣水晶力量的铜板","color":"white","italic":false}','{"text":"改造成了与原本类似相反效果的魔力储存模块。","color":"white","italic":false}','{"text":"根据我的观察，它会将箭矢逐渐转化为一种金色的矢状物。","color":"white","italic":false}','{"text":"我在那些怪物身上做了实验，","color":"white","italic":false}','{"text":"金色的箭矢能让它们在几秒内近乎无法动弹。","color":"white","italic":false}','{"text":"可是那些被藤蔓掏空的怪物在被我射中后陷入了诡异的状态。","color":"white","italic":false}','{"text":"我无法对它们进一步实验，它们直接在我眼前消失了。","color":"white","italic":false}']]
 execute if entity @s[tag=sea_doc13b] run item replace block 90081 104 134 container.12 with flow_banner_pattern[custom_data={sea_doc13b:true},custom_name=\
 '{"text":"物资层休息室的笔记 - 麦迪逊","italic":true,"color":"dark_purple","italic":false}',\
 lore=['{"text":"那块魔法石板被我藏在了物资层西面的日常物资大仓库内。","color":"white","italic":false}','{"text":"要想对付北冷冻库那堆怪物，没有静滞光棱的力量等同于送死。","color":"white","italic":false}','{"text":"但是我要它已无用。我会从通风管道逃向水下研究设施。","color":"white","italic":false}']]
+execute if entity @s[tag=sea_doc14b] run item replace block 90081 104 134 container.13 with flow_banner_pattern[custom_data={sea_doc14b:true},custom_name=\
+'{"text":"泄水通道秘密实验室的笔记 - 麦迪逊","italic":true,"color":"dark_purple","italic":false}',\
+lore=['{"text":"圣晶能够吸引的不止拥有自主思维的生物的意志。","color":"white","italic":false}','{"text":"似乎电磁波与微波也会朝圣晶扭曲，","color":"white","italic":false}','{"text":"这或许才是钻井平台与外界失联的真正原因。","color":"white","italic":false}','{"text":"为什么偏偏是十几小时前才被切断通讯？","color":"white","italic":false}','{"text":"在这段时间里圣晶有过什么变化？是否在持续吸收某种能量？","color":"white","italic":false}','{"text":"被我故意放在水晶祀堂的空铜板被扭曲成了","color":"white","italic":false}','{"text":"能够令使用者爆发力剧增的魔法铜板。","color":"white","italic":false}','{"text":"静滞光棱的诞生也是我在对这种特殊铜板","color":"white","italic":false}','{"text":"实行逆向破解的过程中得到的意外收获。","color":"white","italic":false}']]
+
 execute if entity @s[tag=sea_doc15] run item replace block 90080 104 134 container.14 with flow_banner_pattern[custom_data={sea_doc15:true},custom_name=\
 '{"text":"工程处后厨的笔记 - 瑞佛特","italic":true,"color":"dark_purple","italic":false}',\
 lore=['{"text":"23号 处理掉了剩下还没有腐烂的猪肉","color":"white","italic":false}','{"text":"24号 没有粮食了 只能吃干面包 通风管道里好吵","color":"white","italic":false}','{"text":"25号 干面包很难吃 德怀特还没有从通风系统维护处回来","color":"white","italic":false}','{"text":"26号 德怀特带来了新鲜的猪肉 配着面包吃 通风管道好吵","color":"white","italic":false}','{"text":"27号 通风管道好吵","color":"white","italic":false}','{"text":"28号 已经没有新鲜的猪肉了 现在该派潘去修通风系统了","color":"white","italic":false}','{"text":"29号 没有猪肉 只有干面包","color":"white","italic":false}','{"text":"30号 我终于醒悟了 我的身上也有猪肉","color":"white","italic":false}']]

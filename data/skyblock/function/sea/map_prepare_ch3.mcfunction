@@ -318,3 +318,19 @@ setblock 90151 137 116 chest[facing=east]
 item replace block 90151 137 116 container.12 with flint 1
 item replace block 90151 137 116 container.14 with gunpowder 1
 
+setblock 90137 134 124 chest[facing=south]
+item replace block 90137 134 124 container.12 with arrow 2
+item replace block 90137 134 124 container.14 with coal 1
+
+setblock 90145 136 127 air
+setblock 90148 135 133 furnace[facing=north]
+item replace block 90148 135 133 container.1 with coal 3
+item replace block 90148 135 133 container.2 with iron_ingot 3
+setblock 90144 136 131 chest[facing=east]
+
+fill 90121 155 139 90120 155 139 air
+
+
+
+
+

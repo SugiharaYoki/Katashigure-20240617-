@@ -452,7 +452,6 @@ execute positioned 90102 149 131 if entity @a[tag=SEAPT,distance=..3.5] unless b
 execute positioned 90107 155 147 if entity @a[tag=SEAPT,distance=..2.3] unless entity @n[tag=SEAch3_spawn,distance=0..3] positioned 90102 155 149 run function skyblock:sea/m/nightblind
 execute positioned 90107 155 147 if entity @a[tag=SEAPT,distance=..2.3] unless entity @n[tag=SEAch3_spawn,distance=0..3] positioned 90101 155 150 run function skyblock:sea/m/skeleton_melee
 execute positioned 90107 155 147 if entity @a[tag=SEAPT,distance=..2.3] unless entity @n[tag=SEAch3_spawn,distance=0..3] positioned 90101 155 150 run function skyblock:sea/m/skeleton_melee
-
 execute positioned 90107 155 147 if entity @a[tag=SEAPT,distance=..2.3] unless entity @n[tag=SEAch3_spawn,distance=0..3] run summon marker ~ ~ ~ {Tags:["SEAch3_spawn"]}
 
 #无人机陷阱
@@ -461,3 +460,21 @@ execute positioned 90146 135 117 if entity @a[tag=SEAPT,distance=..1.5] unless e
 #BADEND
 execute positioned 90119 129 84 if entity @a[tag=SEAPT,distance=..4] unless entity @n[tag=SEAch3_spawn_timer7,distance=0..3] run summon marker ~ ~ ~ {Tags:["SEAch3_spawn_timer","SEAch3_spawn_timer7"]}
 execute as @n[tag=SEAch3_spawn_timer7] run function skyblock:sea/e/ev002
+
+execute positioned 90135 134 131 if entity @a[tag=SEAPT,distance=..1] unless entity @n[tag=SEAch3_spawn,distance=0..1] positioned 90138 134 128 run function skyblock:sea/m/nightblind
+execute positioned 90135 134 131 if entity @a[tag=SEAPT,distance=..1] unless entity @n[tag=SEAch3_spawn,distance=0..1] positioned 90130 134 133 run function skyblock:sea/m/drowned_small
+execute positioned 90135 134 131 if entity @a[tag=SEAPT,distance=..1] unless entity @n[tag=SEAch3_spawn,distance=0..1] run summon marker ~ ~ ~ {Tags:["SEAch3_spawn"]}
+
+
+#宿舍楼谜题解开
+execute if block 90130 153 129 lever[powered=true] \
+if block 90129 153 129 lever[powered=false] \
+if block 90128 153 129 lever[powered=false] \
+if block 90127 153 129 lever[powered=true] \
+if block 90126 153 129 lever[powered=true] \
+if block 90125 153 129 lever[powered=true] \
+if block 90124 153 129 lever[powered=false] \
+run fill 90121 155 139 90120 155 139 jungle_pressure_plate
+
+
+
