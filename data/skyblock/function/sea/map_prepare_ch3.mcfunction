@@ -99,6 +99,8 @@ summon minecraft:interaction 90128 138.3 97 {CustomName:'[{"text":"多功能工�
 summon minecraft:marker 90129 137 97 {Tags:["SEAcrafter_tp","SEAcrafter_tp7"]}
 summon minecraft:interaction 90130 144.3 141 {CustomName:'[{"text":"多功能工作站"}]',Tags:["SEAcrafter","SEAcrafter8"]}
 summon minecraft:marker 90130 143 142 {Tags:["SEAcrafter_tp","SEAcrafter_tp8"]}
+summon minecraft:interaction 90121 156.3 145 {CustomName:'[{"text":"多功能工作站"}]',Tags:["SEAcrafter","SEAcrafter9"]}
+summon minecraft:marker 90121 155 144 {Tags:["SEAcrafter_tp","SEAcrafter_tp9"]}
 summon minecraft:interaction 90082 144.3 117 {CustomName:'[{"text":"器械式治疗仪"}]',Tags:["SEAaidbox"]}
 summon minecraft:interaction 90118 138.3 143 {CustomName:'[{"text":"器械式治疗仪"}]',Tags:["SEAaidbox"]}
 
@@ -330,7 +332,7 @@ setblock 90144 136 131 chest[facing=east]
 
 fill 90121 155 139 90120 155 139 air
 
-
-
+setblock 90136 155 146 chest[facing=west]
+item replace block 90136 155 146 container.14 with emerald 3
 
 

@@ -69,8 +69,8 @@ execute if block 90148 130 132 lever run clear @a[tag=SEAPT] lever[custom_data={
 
 execute if block 90133 138 127 air run item replace block 90112 145 99 container.12 with lever[minecraft:can_place_on={blocks:"stripped_crimson_stem"},custom_data={sea_lever4:true}] 1
 execute if block 90133 138 127 lever run clear @a[tag=SEAPT] lever[custom_data={sea_lever4:true}]
-#execute if block 90145 136 127 air run item replace block 90112 145 99 container.12 with lever[minecraft:can_place_on={blocks:"stripped_mangrove_log"},custom_data={sea_lever5:true}] 1
-#execute if block 90145 136 127 lever run clear @a[tag=SEAPT] lever[custom_data={sea_lever5:true}]
+execute if block 90145 136 127 air run item replace block 90136 155 146 container.12 with lever[minecraft:can_place_on={blocks:"stripped_mangrove_log"},custom_data={sea_lever5:true}] 1
+execute if block 90145 136 127 lever run clear @a[tag=SEAPT] lever[custom_data={sea_lever5:true}]
 
 
 item replace block 90104 122 131 container.18 with trial_key[custom_name='{"text":"器械室钥匙","italic":true,"color":"yellow","italic":false}']
