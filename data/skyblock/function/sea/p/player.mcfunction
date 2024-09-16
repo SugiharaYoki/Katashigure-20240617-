@@ -88,7 +88,7 @@ execute as @s[nbt=!{Inventory:[{components:{"minecraft:custom_data":{sea_t_knock
 
 execute as @s store result score @s sea_i_spectral run clear @s spectral_arrow 0
 execute as @s unless entity @s[scores={sea_i_spectral_load=-999..}] run scoreboard players set @s sea_i_spectral_load 0
-execute as @s[tag=sea_t_spectral1,nbt={Inventory:[{id:"minecraft:arrow"}]},scores={sea_i_spectral=..2,sea_i_spectral_load=..4}] run scoreboard players add @s sea_i_spectral_load 1
+execute as @s[tag=sea_t_spectral1,nbt={Inventory:[{id:"minecraft:arrow"}]},scores={sea_i_spectral=..2,sea_i_spectral_load=..100}] run scoreboard players add @s sea_i_spectral_load 1
 execute as @s[scores={sea_i_spectral=..2,sea_i_spectral_load=100..},nbt=!{Inventory:[{components:{"minecraft:custom_data":{sea_t_spectral_load1:true}}}]}] run clear @s arrow 1
 execute as @s[scores={sea_i_spectral=..2,sea_i_spectral_load=100..},nbt=!{Inventory:[{components:{"minecraft:custom_data":{sea_t_spectral_load1:true}}}]}] run give @s spectral_arrow 1
 execute as @s[scores={sea_i_spectral=..2,sea_i_spectral_load=100..},nbt=!{Inventory:[{components:{"minecraft:custom_data":{sea_t_spectral_load1:true}}}]}] run scoreboard players set @s sea_i_spectral_load 0
