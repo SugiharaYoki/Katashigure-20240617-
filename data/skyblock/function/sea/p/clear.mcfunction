@@ -14,6 +14,7 @@ clear @s[gamemode=!creative] prize_pottery_sherd
 clear @s[gamemode=!creative] mourner_pottery_sherd
 clear @s[gamemode=!creative] waxed_copper_grate
 clear @s[gamemode=!creative] waxed_oxidized_copper_grate
+clear @s[gamemode=!creative] waxed_oxidized_copper
 clear @s[gamemode=!creative] lantern
 clear @s[gamemode=!creative] polished_diorite
 clear @s[gamemode=!creative] polished_tuff_wall
