@@ -236,8 +236,8 @@ execute as @e[tag=SEAmagma1,type=marker] at @s if entity @a[tag=SEAPT,distance=0
 execute as sea run scoreboard players set @s[scores={sea_4temp_environment=..0}] sea_4temp_environment 10
 execute as sea run scoreboard players set @s[scores={sea_4temp_environment=100..}] sea_4temp_environment 10
 
-execute if score sea sea_4temp_environment matches 1..80 run scoreboard players add @s sea_4temp_environment 1
-execute if score sea sea_4temp_environment matches 41 run scoreboard players set @s sea_4temp_environment 10
+execute if score sea sea_4temp_environment matches 1..80 run scoreboard players add sea sea_4temp_environment 1
+execute if score sea sea_4temp_environment matches 41 run scoreboard players set sea sea_4temp_environment 10
 execute if score sea sea_4temp_environment matches 11 if block 90080 129 135 minecraft:waxed_oxidized_copper_bulb[lit=true] run setblock 90101 129 138 minecraft:redstone_block
 execute if score sea sea_4temp_environment matches 16 if block 90080 129 135 minecraft:waxed_oxidized_copper_bulb[lit=true] run setblock 90101 129 136 minecraft:redstone_block
 execute if score sea sea_4temp_environment matches 21 if block 90080 129 135 minecraft:waxed_oxidized_copper_bulb[lit=true] run setblock 90101 129 138 minecraft:air
