@@ -381,3 +381,14 @@ setblock 90071 125 140 minecraft:redstone_lamp[lit=false]
 
 
 fill 90085 103 140 90085 101 141 minecraft:waxed_copper_grate
+
+
+#第二章 活塞控制器
+setblock 90080 129 135 minecraft:waxed_oxidized_copper_bulb[lit=true]
+setblock 90080 129 133 minecraft:waxed_oxidized_copper_bulb[lit=false]
+
+setblock 90089 131 127 minecraft:tinted_glass
+setblock 90098 132 131 tinted_glass
+setblock 90102 132 131 tinted_glass
+setblock 90083 131 134 tinted_glass
+setblock 90079 131 123 tinted_glass

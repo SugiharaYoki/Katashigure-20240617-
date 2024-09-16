@@ -317,9 +317,9 @@ setblock 90147 132 91 lantern
 fill 90099 130 94 90099 128 92 iron_bars
 
 setblock 90089 128 93 minecraft:cobweb
-setblock 90087 128 91 minecraft:cobweb
-setblock 90086 128 93 minecraft:cobweb
-setblock 90085 128 94 minecraft:cobweb
+#setblock 90087 128 91 minecraft:cobweb
+#setblock 90086 128 93 minecraft:cobweb
+#setblock 90085 128 94 minecraft:cobweb
 setblock 90083 128 92 minecraft:cobweb
 setblock 90082 128 94 minecraft:cobweb
 setblock 90081 128 91 minecraft:cobweb

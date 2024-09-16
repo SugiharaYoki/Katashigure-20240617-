@@ -238,20 +238,31 @@ execute as sea run scoreboard players set @s[scores={sea_4temp_environment=100..
 
 execute if score sea sea_4temp_environment matches 1..80 run scoreboard players add @s sea_4temp_environment 1
 execute if score sea sea_4temp_environment matches 41 run scoreboard players set @s sea_4temp_environment 10
-execute if score sea sea_4temp_environment matches 11 run setblock 90101 129 138 minecraft:redstone_block
-execute if score sea sea_4temp_environment matches 16 run setblock 90101 129 136 minecraft:redstone_block
-execute if score sea sea_4temp_environment matches 21 run setblock 90101 129 138 minecraft:air
-execute if score sea sea_4temp_environment matches 26 run setblock 90101 129 136 minecraft:air
-execute if score sea sea_4temp_environment matches 15 run setblock 90080 129 139 minecraft:redstone_block
-execute if score sea sea_4temp_environment matches 20 run setblock 90082 129 139 minecraft:redstone_block
-execute if score sea sea_4temp_environment matches 25 run setblock 90084 129 139 minecraft:redstone_block
-execute if score sea sea_4temp_environment matches 26 run setblock 90080 129 139 minecraft:air
-execute if score sea sea_4temp_environment matches 31 run setblock 90082 129 139 minecraft:air
-execute if score sea sea_4temp_environment matches 36 run setblock 90084 129 139 minecraft:air
-execute if score sea sea_4temp_environment matches 23 run setblock 90079 129 138 minecraft:redstone_block
-execute if score sea sea_4temp_environment matches 33 run setblock 90079 129 136 minecraft:redstone_block
-execute if score sea sea_4temp_environment matches 28 run setblock 90079 129 138 minecraft:air
-execute if score sea sea_4temp_environment matches 38 run setblock 90079 129 136 minecraft:air
+execute if score sea sea_4temp_environment matches 11 if block 90080 129 135 minecraft:waxed_oxidized_copper_bulb[lit=true] run setblock 90101 129 138 minecraft:redstone_block
+execute if score sea sea_4temp_environment matches 16 if block 90080 129 135 minecraft:waxed_oxidized_copper_bulb[lit=true] run setblock 90101 129 136 minecraft:redstone_block
+execute if score sea sea_4temp_environment matches 21 if block 90080 129 135 minecraft:waxed_oxidized_copper_bulb[lit=true] run setblock 90101 129 138 minecraft:air
+execute if score sea sea_4temp_environment matches 26 if block 90080 129 135 minecraft:waxed_oxidized_copper_bulb[lit=true] run setblock 90101 129 136 minecraft:air
+execute if score sea sea_4temp_environment matches 15 if block 90080 129 135 minecraft:waxed_oxidized_copper_bulb[lit=true] run setblock 90080 129 139 minecraft:redstone_block
+execute if score sea sea_4temp_environment matches 20 if block 90080 129 135 minecraft:waxed_oxidized_copper_bulb[lit=true] run setblock 90082 129 139 minecraft:redstone_block
+execute if score sea sea_4temp_environment matches 25 if block 90080 129 135 minecraft:waxed_oxidized_copper_bulb[lit=true] run setblock 90084 129 139 minecraft:redstone_block
+execute if score sea sea_4temp_environment matches 26 if block 90080 129 135 minecraft:waxed_oxidized_copper_bulb[lit=true] run setblock 90080 129 139 minecraft:air
+execute if score sea sea_4temp_environment matches 31 if block 90080 129 135 minecraft:waxed_oxidized_copper_bulb[lit=true] run setblock 90082 129 139 minecraft:air
+execute if score sea sea_4temp_environment matches 36 if block 90080 129 135 minecraft:waxed_oxidized_copper_bulb[lit=true] run setblock 90084 129 139 minecraft:air
+execute if score sea sea_4temp_environment matches 23 if block 90080 129 135 minecraft:waxed_oxidized_copper_bulb[lit=true] run setblock 90079 129 138 minecraft:redstone_block
+execute if score sea sea_4temp_environment matches 33 if block 90080 129 135 minecraft:waxed_oxidized_copper_bulb[lit=true] run setblock 90079 129 136 minecraft:redstone_block
+execute if score sea sea_4temp_environment matches 28 if block 90080 129 135 minecraft:waxed_oxidized_copper_bulb[lit=true] run setblock 90079 129 138 minecraft:air
+execute if score sea sea_4temp_environment matches 38 if block 90080 129 135 minecraft:waxed_oxidized_copper_bulb[lit=true] run setblock 90079 129 136 minecraft:air
+
+execute if block 90080 129 135 minecraft:waxed_oxidized_copper_bulb[lit=false] if block 90089 131 127 tinted_glass run setblock 90098 132 131 white_stained_glass
+execute if block 90080 129 135 minecraft:waxed_oxidized_copper_bulb[lit=false] if block 90089 131 127 tinted_glass run setblock 90102 132 131 white_stained_glass
+execute if block 90080 129 135 minecraft:waxed_oxidized_copper_bulb[lit=false] if block 90089 131 127 tinted_glass run setblock 90083 131 134 white_stained_glass
+execute if block 90080 129 135 minecraft:waxed_oxidized_copper_bulb[lit=false] if block 90089 131 127 tinted_glass run setblock 90079 131 123 white_stained_glass
+execute if block 90080 129 135 minecraft:waxed_oxidized_copper_bulb[lit=false] if block 90089 131 127 tinted_glass run setblock 90089 131 127 white_stained_glass
+execute if block 90080 129 135 minecraft:waxed_oxidized_copper_bulb[lit=true] if block 90089 131 127 white_stained_glass run setblock 90098 132 131 tinted_glass
+execute if block 90080 129 135 minecraft:waxed_oxidized_copper_bulb[lit=true] if block 90089 131 127 white_stained_glass run setblock 90102 132 131 tinted_glass
+execute if block 90080 129 135 minecraft:waxed_oxidized_copper_bulb[lit=true] if block 90089 131 127 white_stained_glass run setblock 90083 131 134 tinted_glass
+execute if block 90080 129 135 minecraft:waxed_oxidized_copper_bulb[lit=true] if block 90089 131 127 white_stained_glass run setblock 90079 131 123 tinted_glass
+execute if block 90080 129 135 minecraft:waxed_oxidized_copper_bulb[lit=true] if block 90089 131 127 white_stained_glass run setblock 90089 131 127 tinted_glass
 
 
 execute if score sea sea_4temp_environment matches 28 as @a[tag=SEAPT] store result score @s sea_i_spectral run clear @s spectral_arrow 0
