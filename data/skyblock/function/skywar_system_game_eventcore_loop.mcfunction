@@ -213,6 +213,17 @@ execute if entity @n[tag=sc,scores={TimeRemainUnsee=0,Map_Code=4}] run execute u
 execute if entity @n[tag=sc,scores={TimeRemainUnsee=0,Map_Code=4}] run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run title @a[tag=PVP_see] title {"text":"梦醒时分已至","color":"red"}
 execute if entity @n[tag=sc,scores={TimeRemainUnsee=0,Map_Code=4}] run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run title @a[tag=PVP_see] subtitle {"text":"“人类啊 切勿迷失于纯黑的噩梦”","color":"red"}
 execute if entity @n[tag=sc,scores={TimeRemainUnsee=0,Map_Code=4}] run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run worldborder set 20 300
+execute if entity @n[tag=sc,scores={Map_Code=4}] if block 50068 -6 50068 air run execute unless entity @n[tag=sc,tag=Skyblock_map004_event] run particle flame ~ ~ ~ 0 0 0 0.3 180
+execute if entity @n[tag=sc,scores={Map_Code=4}] if block 50068 -6 50068 air run execute unless entity @n[tag=sc,tag=Skyblock_map004_event] run particle flame ~ ~ ~ 0 0 0 0.1 80
+execute if entity @n[tag=sc,scores={Map_Code=4}] if block 50068 -6 50068 air run execute unless entity @n[tag=sc,tag=Skyblock_map004_event] run particle flame ~ ~ ~ 0 0 0 0.5 80
+execute if entity @n[tag=sc,scores={Map_Code=4}] if block 50068 -6 50068 air run execute unless entity @n[tag=sc,tag=Skyblock_map004_event] run playsound item.trident.thunder hostile @a 50068 36 50068 10 0.8
+execute if entity @n[tag=sc,scores={Map_Code=4}] if block 50068 -6 50068 air run execute unless entity @n[tag=sc,tag=Skyblock_map004_event] run playsound entity.lightning_bolt.impact hostile @a 50068 36 50068 10 0.8
+execute if entity @n[tag=sc,scores={Map_Code=4}] if block 50068 -6 50068 air run execute unless entity @n[tag=sc,tag=Skyblock_map004_event] run summon blaze 50068 36 50068
+execute if entity @n[tag=sc,scores={Map_Code=4}] if block 50068 -6 50068 air run execute unless entity @n[tag=sc,tag=Skyblock_map004_event] run summon blaze 50068 36 50068
+execute if entity @n[tag=sc,scores={Map_Code=4}] if block 50068 -6 50068 air run execute unless entity @n[tag=sc,tag=Skyblock_map004_event] run summon blaze 50068 36 50068
+execute if entity @n[tag=sc,scores={Map_Code=4}] if block 50068 -6 50068 air run execute unless entity @n[tag=sc,tag=Skyblock_map004_event] run summon blaze 50068 36 50068
+execute if entity @n[tag=sc,scores={Map_Code=4}] if block 50068 -6 50068 air run execute unless entity @n[tag=sc,tag=Skyblock_map004_event] run summon blaze 50068 36 50068
+execute if entity @n[tag=sc,scores={Map_Code=4}] if block 50068 -6 50068 air run execute unless entity @n[tag=sc,tag=Skyblock_map004_event] run tag @n[tag=sc] add Skyblock_map004_event
 
 #[futuredevskywar]
 
