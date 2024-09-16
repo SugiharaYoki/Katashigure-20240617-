@@ -42,6 +42,7 @@ scoreboard objectives add sea_do_attack minecraft.custom:minecraft.damage_dealt
 scoreboard objectives add SEA_story dummy
 scoreboard objectives add sea_oxygen dummy
 scoreboard objectives add sea_speedrun_ch1 dummy
+scoreboard objectives add sea_progress dummy
 scoreboard players set @n[tag=sc] sea_chapter 1
 scoreboard players set @n[tag=sc] sea_speedrun_ch1 0
 

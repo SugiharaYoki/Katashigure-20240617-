@@ -458,6 +458,7 @@ execute if entity @n[tag=sc,scores={sea_4temp2=1195}] positioned 90133 129 122 i
 execute if entity @n[tag=sc,scores={sea_4temp2=1195}] positioned 90133 129 112 if entity @n[tag=sc,scores={sea_player=4..}] run function skyblock:sea/m/zombie_cook
 execute if entity @n[tag=sc,scores={sea_4temp2=1198}] run fill 90133 130 113 90133 129 113 minecraft:air destroy
 execute if entity @n[tag=sc,scores={sea_4temp2=1198}] run fill 90133 130 121 90133 129 121 minecraft:air destroy
+execute if entity @n[tag=sc,scores={sea_4temp2=1198}] run scoreboard players set @a[tag=SEAPT,scores={sea_progress=..4}] sea_progress 5
 execute if entity @n[tag=sc,scores={sea_4temp2=1198}] run effect give @a[tag=SEAPT] darkness 3 0 true
 execute if entity @n[tag=sc,scores={sea_4temp2=1198..1299}] if block 90133 129 121 air unless entity @e[tag=SEAmob,x=90137,y=129,z=117,distance=..7] run scoreboard players set @n[tag=sc] sea_4temp2 1300
 
@@ -644,6 +645,7 @@ execute as @n[tag=sc,scores={sea_4temp2=5001..5005}] run bossbar set minecraft:9
 execute as @n[tag=sc,scores={sea_4temp2=5001}] run stopsound @a[tag=SEAPT] music
 execute as @n[tag=sc,scores={sea_4temp2=5001}] as @a[tag=SEAPT] at @s run playsound item.trident.thunder ambient @s ~ ~ ~ 100 0.5
 execute as @n[tag=sc,scores={sea_4temp2=5002}] run give @a[tag=SEAPT] nether_star
+execute as @n[tag=sc,scores={sea_4temp2=5002}] run scoreboard players set @a[tag=SEAPT,scores={sea_progress=..5}] sea_progress 6
 execute as @n[tag=sc,scores={sea_4temp2=5012}] as @a[tag=SEAPT] at @s run tellraw @s {"text":"一番苦战，但终于解决了这几个家伙。","color":"gray"}
 execute as @n[tag=sc,scores={sea_4temp2=5030}] as @a[tag=SEAPT] at @s run tellraw @s {"text":"是时候往更上层去了。","color":"gray"}
 execute as @n[tag=sc,scores={sea_4temp2=5057}] as @a[tag=SEAPT] at @s run tellraw @s {"text":"……我甚至无法想象上面会是怎样的情景。","color":"gray"}
