@@ -139,6 +139,16 @@ execute as @s[scores={sea_oxygen=13..15}] run xp set @s 5 points
 execute as @s[scores={sea_oxygen=16..19}] run xp set @s 6 points
 
 
+
+execute store result score @s sea_cursor run clear @s flow_armor_trim_smithing_template[custom_data={sea_t_sprint_disabled:true}] 0
+execute store result score @s sea_cursor2 run clear @s flow_armor_trim_smithing_template[custom_data={sea_t_sprint1:true}] 0
+
+execute if score @s sea_cursor matches 1.. run clear @s flow_armor_trim_smithing_template[custom_data={sea_t_sprint_disabled:true}]
+execute if score @s sea_cursor matches 1.. run tag @s add sea_t_sprint_disabled
+
+execute if score @s sea_cursor2 matches 1.. run clear @s flow_armor_trim_smithing_template[custom_data={sea_t_sprint1:true}]
+execute if score @s sea_cursor2 matches 1.. run tag @s remove sea_t_sprint_disabled
+
 execute as @s[nbt={Inventory:[{components:{"minecraft:custom_data":{sea_t_spectral1:true}}}]}] at @s run tag @s add sea_t_spectral1
 execute as @s[nbt={Inventory:[{components:{"minecraft:custom_data":{sea_t_sprint1:true}}}]}] at @s run tag @s add sea_t_sprint1
 clear @s barrier
@@ -150,15 +160,6 @@ item replace entity @s[tag=sea_t_sprint1,tag=!sea_t_sprint_disabled] player.craf
 item replace entity @s[tag=sea_t_sprint1,tag=sea_t_sprint_disabled] player.crafting.1 with flow_armor_trim_smithing_template[custom_name='{"text":"残影魔板 - 禁用中","italic":true,"color":"light_purple","italic":false}',lore=['{"text":"绿色指示灯亮起时，起跑将被替换为冲刺","color":"white","italic":false}','{"text":"期间防御、移动速度、击退抗性巨幅提升","color":"white","italic":false}'],custom_data={sea_t_sprint_disabled:true},enchantments={"vanishing_curse":1}]
 item replace entity @s[tag=SEAPT] player.crafting.2 with barrier
 item replace entity @s[tag=SEAPT] player.crafting.3 with barrier
-
-execute store result score @s sea_cursor run clear @s flow_armor_trim_smithing_template[custom_data={sea_t_sprint_disabled:true}] 0
-execute store result score @s sea_cursor2 run clear @s flow_armor_trim_smithing_template[custom_data={sea_t_sprint1:true}] 0
-
-execute if score @s sea_cursor matches 1.. run clear @s flow_armor_trim_smithing_template[custom_data={sea_t_sprint_disabled:true}]
-execute if score @s sea_cursor matches 1.. run tag @s add sea_t_sprint_disabled
-
-execute if score @s sea_cursor2 matches 1.. run clear @s flow_armor_trim_smithing_template[custom_data={sea_t_sprint1:true}]
-execute if score @s sea_cursor2 matches 1.. run tag @s remove sea_t_sprint_disabled
 
 execute as @s[nbt={Inventory:[{id:"minecraft:raiser_armor_trim_smithing_template"}]}] at @s run function skyblock:sea/shop_trim {trim:sea_i_trim_zombie, trim_name:"牧羊人",trim_type:raiser_armor_trim_smithing_template}
 execute as @s[nbt={Inventory:[{id:"minecraft:wayfinder_armor_trim_smithing_template"}]}] at @s run function skyblock:sea/shop_trim {trim:sea_i_trim_human, trim_name:"醒殉徒",trim_type:wayfinder_armor_trim_smithing_template}
