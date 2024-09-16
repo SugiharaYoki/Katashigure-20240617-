@@ -241,6 +241,7 @@ tag @s remove sea_purchase_pass
 execute if score @s sea_crafter matches 10006 as @s[scores={sea_i_iron_ingot=..1}] run tellraw @s {"text":"失败！素材不足！","color":"red"}
 execute if score @s sea_crafter matches 10006 as @s[scores={sea_i_iron_ingot=2..}] run tag @s add sea_purchase_pass
 execute if entity @s[tag=sea_purchase_pass] run playsound minecraft:item.armor.equip_iron neutral @s ~ ~ ~ 100
+#execute if entity @s[tag=sea_purchase_pass] run give @s shield[custom_name='{"text":"防护盾","italic":false,"color":"red"}',custom_data={sea_shield:true},attribute_modifiers=[{type:"generic.movement_speed",slot:"hand",id:"sea_armor:004_01",amount:-0.03,operation:"add_value"}],lore=['{"text":"主手选至此道具的瞬间获得极短暂无敌（无需右键使用）","color":"white","italic":false}','{"text":"在这期间受到攻击并反击可以造成巨额伤害","color":"white","italic":false}']]
 execute if entity @s[tag=sea_purchase_pass] run give @s shield[custom_name='{"text":"防护盾","italic":false,"color":"red"}',custom_data={sea_shield:true},attribute_modifiers=[{type:"generic.movement_speed",slot:"hand",id:"sea_armor:004_01",amount:-0.03,operation:"add_value"}],lore=['{"text":"主手选至此道具的瞬间获得极短暂无敌（无需右键使用）","color":"white","italic":false}','{"text":"在这期间受到攻击并反击可以造成巨额伤害","color":"white","italic":false}']]
 execute if entity @s[tag=sea_purchase_pass] run clear @s iron_ingot 2
 tag @s remove sea_purchase_pass
@@ -250,7 +251,8 @@ execute if score @s[nbt={Inventory:[{components:{"minecraft:custom_data":{sea_sh
 execute if score @s[nbt={Inventory:[{components:{"minecraft:custom_data":{sea_shield:true}}}]}] sea_crafter matches 10014 as @s[scores={sea_i_iron_ingot=2..,sea_i_flint=2..}] run tag @s add sea_purchase_pass
 execute if entity @s[tag=sea_purchase_pass] run playsound minecraft:item.armor.equip_iron neutral @s ~ ~ ~ 100
 execute if entity @s[tag=sea_purchase_pass] run clear @s shield[custom_data={sea_shield:true}] 1
-execute if entity @s[tag=sea_purchase_pass] run give @s shield[custom_name='{"text":"坚刺盾","italic":false,"color":"red"}',custom_data={sea_shield2:true},attribute_modifiers=[{type:"generic.movement_speed",slot:"hand",id:"sea_armor:006_01",amount:-0.02,operation:"add_value"},{type:"generic.attack_damage",slot:"mainhand",id:"sea_armor:006_02",amount:2.0,operation:"add_value"},{type:"generic.attack_speed",slot:"mainhand",id:"sea_armor:006_02",amount:-2.0,operation:"add_value"},{type:"generic.armor",slot:"hand",id:"sea_armor:006_03",amount:0.5,operation:"add_value"}],lore=['{"text":"主手选至此道具的瞬间获得极短暂无敌（无需右键使用）","color":"white","italic":false}','{"text":"在这期间受到攻击并反击可以造成巨额伤害","color":"white","italic":false}']]
+#execute if entity @s[tag=sea_purchase_pass] run give @s shield[custom_name='{"text":"坚刺盾","italic":false,"color":"red"}',custom_data={sea_shield2:true},attribute_modifiers=[{type:"generic.movement_speed",slot:"hand",id:"sea_armor:006_01",amount:-0.02,operation:"add_value"},{type:"generic.attack_damage",slot:"mainhand",id:"sea_armor:006_02",amount:2.0,operation:"add_value"},{type:"generic.attack_speed",slot:"mainhand",id:"sea_armor:006_02",amount:-2.0,operation:"add_value"},{type:"generic.armor",slot:"hand",id:"sea_armor:006_03",amount:0.5,operation:"add_value"}],lore=['{"text":"主手选至此道具的瞬间获得极短暂无敌（无需右键使用）","color":"white","italic":false}','{"text":"在这期间受到攻击并反击可以造成巨额伤害","color":"white","italic":false}']]
+execute if entity @s[tag=sea_purchase_pass] run give @s shield[custom_name='{"text":"坚刺盾","italic":false,"color":"red"}',custom_data={sea_shield2:true},attribute_modifiers=[{type:"generic.movement_speed",slot:"hand",id:"sea_armor:006_01",amount:-0.02,operation:"add_value"},{type:"generic.armor",slot:"hand",id:"sea_armor:006_03",amount:0.5,operation:"add_value"}],lore=['{"text":"主手选至此道具的瞬间获得极短暂无敌（无需右键使用）","color":"white","italic":false}','{"text":"在这期间受到攻击并反击可以造成巨额伤害","color":"white","italic":false}']]
 execute if entity @s[tag=sea_purchase_pass] run clear @s iron_ingot 2
 execute if entity @s[tag=sea_purchase_pass] run clear @s flint 2
 tag @s remove sea_purchase_pass
@@ -260,9 +262,46 @@ execute if score @s[nbt={Inventory:[{components:{"minecraft:custom_data":{sea_sh
 execute if score @s[nbt={Inventory:[{components:{"minecraft:custom_data":{sea_shield2:true}}}]}] sea_crafter matches 10026 as @s[scores={sea_i_iron_ingot=2..,sea_i_flint=2..}] run tag @s add sea_purchase_pass
 execute if entity @s[tag=sea_purchase_pass] run playsound minecraft:item.armor.equip_iron neutral @s ~ ~ ~ 100
 execute if entity @s[tag=sea_purchase_pass] run clear @s shield[custom_data={sea_shield2:true}] 1
-execute if entity @s[tag=sea_purchase_pass] run give @s shield[custom_name='{"text":"箍刺盾","italic":false,"color":"red"}',custom_data={sea_shield3:true},attribute_modifiers=[{type:"generic.movement_speed",slot:"hand",id:"sea_armor:017_01",amount:-0.02,operation:"add_value"},{type:"generic.attack_damage",slot:"mainhand",id:"sea_armor:017_02",amount:3.5,operation:"add_value"},{type:"generic.attack_speed",slot:"mainhand",id:"sea_armor:017_02",amount:-2.0,operation:"add_value"},{type:"generic.armor",slot:"hand",id:"sea_armor:017_03",amount:1.0,operation:"add_value"}],lore=['{"text":"主手选至此道具的瞬间获得极短暂无敌（无需右键使用）","color":"white","italic":false}','{"text":"在这期间受到攻击并反击可以造成巨额伤害","color":"white","italic":false}']]
+#execute if entity @s[tag=sea_purchase_pass] run give @s shield[custom_name='{"text":"箍刺盾","italic":false,"color":"red"}',custom_data={sea_shield3:true},attribute_modifiers=[{type:"generic.movement_speed",slot:"hand",id:"sea_armor:017_01",amount:-0.02,operation:"add_value"},{type:"generic.attack_damage",slot:"mainhand",id:"sea_armor:017_02",amount:3.5,operation:"add_value"},{type:"generic.attack_speed",slot:"mainhand",id:"sea_armor:017_02",amount:-2.0,operation:"add_value"},{type:"generic.armor",slot:"hand",id:"sea_armor:017_03",amount:1.0,operation:"add_value"}],lore=['{"text":"主手选至此道具的瞬间获得极短暂无敌（无需右键使用）","color":"white","italic":false}','{"text":"在这期间受到攻击并反击可以造成巨额伤害","color":"white","italic":false}']]
+execute if entity @s[tag=sea_purchase_pass] run give @s shield[custom_name='{"text":"箍刺盾","italic":false,"color":"red"}',custom_data={sea_shield3:true},attribute_modifiers=[{type:"generic.movement_speed",slot:"hand",id:"sea_armor:017_01",amount:-0.02,operation:"add_value"},{type:"generic.armor",slot:"hand",id:"sea_armor:017_03",amount:0.5,operation:"add_value"}],lore=['{"text":"主手选至此道具的瞬间获得极短暂无敌（无需右键使用）","color":"white","italic":false}','{"text":"在这期间受到攻击并反击可以造成巨额伤害","color":"white","italic":false}']]
 execute if entity @s[tag=sea_purchase_pass] run clear @s iron_ingot 2
 execute if entity @s[tag=sea_purchase_pass] run clear @s flint 2
+tag @s remove sea_purchase_pass
+
+execute if score @s sea_crafter matches 10042 as @s[nbt={Inventory:[{components:{"minecraft:custom_data":{sea_shield3:true}}}]},scores={sea_i_iron_ingot=2..,sea_i_flint=3..}] run tag @s add sea_purchase_pass
+execute if score @s sea_crafter matches 10042 as @s[tag=!sea_purchase_pass] run tellraw @s {"text":"失败！素材不足！","color":"red"}
+execute if entity @s[tag=sea_purchase_pass] run playsound minecraft:item.armor.equip_iron neutral @s ~ ~ ~ 100
+execute if entity @s[tag=sea_purchase_pass] run clear @s shield[custom_data={sea_shield3:true}] 1
+execute if entity @s[tag=sea_purchase_pass] run give @s shield[custom_name='{"text":"钢刺盾","italic":false,"color":"red"}',custom_data={sea_shield4:true},attribute_modifiers=[{type:"generic.movement_speed",slot:"hand",id:"sea_armor:shield4_1",amount:-0.02,operation:"add_value"},{type:"generic.armor",slot:"hand",id:"sea_armor:shield4_2",amount:1.0,operation:"add_value"}],lore=['{"text":"主手选至此道具的瞬间获得极短暂无敌（无需右键使用）","color":"white","italic":false}','{"text":"在这期间受到攻击并反击可以造成巨额伤害","color":"white","italic":false}']]
+execute if entity @s[tag=sea_purchase_pass] run clear @s iron_ingot 2
+execute if entity @s[tag=sea_purchase_pass] run clear @s flint 3
+tag @s remove sea_purchase_pass
+
+execute if score @s sea_crafter matches 10043 as @s[nbt={Inventory:[{components:{"minecraft:custom_data":{sea_shield4:true}}}]},scores={sea_i_iron_ingot=3..,sea_i_flint=5..}] run tag @s add sea_purchase_pass
+execute if score @s sea_crafter matches 10043 as @s[tag=!sea_purchase_pass] run tellraw @s {"text":"失败！素材不足！","color":"red"}
+execute if entity @s[tag=sea_purchase_pass] run playsound minecraft:item.armor.equip_iron neutral @s ~ ~ ~ 100
+execute if entity @s[tag=sea_purchase_pass] run clear @s shield[custom_data={sea_shield4:true}] 1
+execute if entity @s[tag=sea_purchase_pass] run give @s shield[custom_name='{"text":"秘钢重盾","italic":false,"color":"red"}',custom_data={sea_shield5:true},attribute_modifiers=[{type:"generic.movement_speed",slot:"hand",id:"sea_armor:shield5_1",amount:-0.04,operation:"add_value"},{type:"generic.armor",slot:"hand",id:"sea_armor:shield5_2",amount:1.5,operation:"add_value"}],lore=['{"text":"主手选至此道具的瞬间获得极短暂无敌（无需右键使用）","color":"white","italic":false}','{"text":"在这期间受到攻击并反击可以造成巨额伤害","color":"white","italic":false}']]
+execute if entity @s[tag=sea_purchase_pass] run clear @s iron_ingot 3
+execute if entity @s[tag=sea_purchase_pass] run clear @s flint 5
+tag @s remove sea_purchase_pass
+
+execute if score @s sea_crafter matches 10044 as @s[nbt={Inventory:[{components:{"minecraft:custom_data":{sea_shield5:true}}}]},scores={sea_i_iron_ingot=4..,sea_i_flint=8..}] run tag @s add sea_purchase_pass
+execute if score @s sea_crafter matches 10044 as @s[tag=!sea_purchase_pass] run tellraw @s {"text":"失败！素材不足！","color":"red"}
+execute if entity @s[tag=sea_purchase_pass] run playsound minecraft:item.armor.equip_iron neutral @s ~ ~ ~ 100
+execute if entity @s[tag=sea_purchase_pass] run clear @s shield[custom_data={sea_shield5:true}] 1
+execute if entity @s[tag=sea_purchase_pass] run give @s shield[custom_name='{"text":"砌城壁垒","italic":false,"color":"red"}',custom_data={sea_shield6:true},attribute_modifiers=[{type:"generic.movement_speed",slot:"hand",id:"sea_armor:shield6_1",amount:-0.04,operation:"add_value"},{type:"generic.armor",slot:"hand",id:"sea_armor:shield6_2",amount:2.0,operation:"add_value"}],lore=['{"text":"主手选至此道具的瞬间获得极短暂无敌（无需右键使用）","color":"white","italic":false}','{"text":"在这期间受到攻击并反击可以造成巨额伤害","color":"white","italic":false}']]
+execute if entity @s[tag=sea_purchase_pass] run clear @s iron_ingot 4
+execute if entity @s[tag=sea_purchase_pass] run clear @s flint 8
+tag @s remove sea_purchase_pass
+
+execute if score @s sea_crafter matches 10045 as @s[nbt={Inventory:[{components:{"minecraft:custom_data":{sea_shield6:true}}}]},scores={sea_i_iron_ingot=8..,sea_i_flint=16..}] run tag @s add sea_purchase_pass
+execute if score @s sea_crafter matches 10045 as @s[tag=!sea_purchase_pass] run tellraw @s {"text":"失败！素材不足！","color":"red"}
+execute if entity @s[tag=sea_purchase_pass] run playsound minecraft:item.armor.equip_iron neutral @s ~ ~ ~ 100
+execute if entity @s[tag=sea_purchase_pass] run clear @s shield[custom_data={sea_shield6:true}] 1
+execute if entity @s[tag=sea_purchase_pass] run give @s shield[custom_name='{"text":"砌尽城垣","italic":false,"color":"red"}',custom_data={sea_shield7:true},attribute_modifiers=[{type:"generic.movement_speed",slot:"hand",id:"sea_armor:shield7_1",amount:-0.05,operation:"add_value"},{type:"generic.armor",slot:"hand",id:"sea_armor:shield7_2",amount:3.0,operation:"add_value"},{type:"generic.armor_toughness",slot:"hand",id:"sea_armor:shield7_3",amount:2.0,operation:"add_value"}],lore=['{"text":"主手选至此道具的瞬间获得极短暂无敌（无需右键使用）","color":"white","italic":false}','{"text":"在这期间受到攻击并反击可以造成巨额伤害","color":"white","italic":false}']]
+execute if entity @s[tag=sea_purchase_pass] run clear @s iron_ingot 8
+execute if entity @s[tag=sea_purchase_pass] run clear @s flint 16
 tag @s remove sea_purchase_pass
 
 execute if score @s sea_crafter matches 10011 as @s[scores={sea_i_flint=..1}] run tellraw @s {"text":"失败！素材不足！","color":"red"}
