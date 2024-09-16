@@ -38,8 +38,8 @@ execute as @s[tag=sea_t_parry1,nbt=!{SelectedItem:{id:"minecraft:shield"}}] run 
 execute as @s[tag=sea_t_parry1,nbt=!{SelectedItem:{id:"minecraft:shield"}}] run scoreboard players set @s sea_shielding 0
 execute as @s[tag=sea_t_parry1,nbt={SelectedItem:{id:"minecraft:shield"}}] run scoreboard players remove @s sea_shield_switch 1
 execute as @s[tag=sea_t_parry1,nbt={SelectedItem:{id:"minecraft:shield"}},scores={sea_shielding=1..,sea_shield_switch=15..20}] run effect give @s resistance 1 5 false
-execute as @s[tag=sea_t_parry1,nbt={SelectedItem:{id:"minecraft:shield"}},scores={sea_shielding_2=1..,sea_shield_switch=0..}] run effect give @s slowness 1 0 false
-execute as @s[tag=sea_t_parry1,nbt={SelectedItem:{id:"minecraft:shield"}},scores={sea_shielding_2=1..3,sea_shield_switch=0..}] run effect give @s strength 1 1 false
-execute as @s[tag=sea_t_parry1,nbt={SelectedItem:{id:"minecraft:shield"}},scores={sea_shielding_2=4..6,sea_shield_switch=0..}] run effect give @s strength 1 2 false
-execute as @s[tag=sea_t_parry1,nbt={SelectedItem:{id:"minecraft:shield"}},scores={sea_shielding_2=7..9,sea_shield_switch=0..}] run effect give @s strength 1 3 false
-execute as @s[tag=sea_t_parry1,nbt={SelectedItem:{id:"minecraft:shield"}},scores={sea_shielding_2=10..,sea_shield_switch=0..}] run effect give @s strength 1 4 false
+execute as @s[tag=sea_t_parry1,nbt={SelectedItem:{id:"minecraft:shield"}},scores={sea_shielding_2=1..,sea_shield_switch=14..}] run effect give @s slowness 1 0 false
+execute as @s[tag=sea_t_parry1,nbt={SelectedItem:{id:"minecraft:shield"}},scores={sea_shielding_2=1..3,sea_shield_switch=14..}] run effect give @s strength 1 1 false
+execute as @s[tag=sea_t_parry1,nbt={SelectedItem:{id:"minecraft:shield"}},scores={sea_shielding_2=4..6,sea_shield_switch=14..}] run effect give @s strength 1 2 false
+execute as @s[tag=sea_t_parry1,nbt={SelectedItem:{id:"minecraft:shield"}},scores={sea_shielding_2=7..9,sea_shield_switch=14..}] run effect give @s strength 1 3 false
+execute as @s[tag=sea_t_parry1,nbt={SelectedItem:{id:"minecraft:shield"}},scores={sea_shielding_2=10..,sea_shield_switch=14..}] run effect give @s strength 1 4 false
