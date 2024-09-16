@@ -601,13 +601,14 @@ execute if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,tag=!
 
 execute if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2] at @s if block ~ ~ ~ cobweb run setblock ~ ~ ~ air destroy
 
-execute if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,tag=!boss2hplock3] at @s positioned ~6 ~1 ~ run particle sculk_soul ~ ~ ~ 2 3 3 0.0 45
+execute if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,tag=!boss2hplock3] at @s positioned ~6 ~1 ~ run particle sculk_soul ~ ~ ~ 2 3 3 0.0 85
+execute if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,tag=!boss2hplock3] at @s positioned ~6 ~1 ~ run particle soul_fire_flame ~ ~ ~ 2 3 3 0.0 85
 execute if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,tag=!boss2hplock3] at @s positioned ~2.5 ~ ~ as @a[tag=SEAPT,distance=0..3] at @s run tellraw @s {"text":"跑错方向了，不能往它的后方跑！","color":"red"}
-execute if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,tag=!boss2hplock3] at @s positioned ~3.5 ~ ~ as @a[tag=SEAPT,distance=0..4] at @s run effect give @s wither 2 3 false
-execute if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,tag=!boss2hplock3] at @s positioned ~5.5 ~ ~ as @a[tag=SEAPT,distance=0..4] at @s run effect give @s wither 2 9 false
-execute if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,tag=!boss2hplock3] at @s positioned ~7.5 ~ ~ as @a[tag=SEAPT,distance=0..4] at @s run effect give @s wither 2 39 false
-execute if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,tag=!boss2hplock3] at @s positioned ~9.5 ~ ~ as @a[tag=SEAPT,distance=0..5] at @s run effect give @s wither 2 79 false
-execute if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,tag=!boss2hplock3] at @s positioned ~11.5 ~ ~ as @a[tag=SEAPT,distance=0..5] at @s run effect give @s wither 2 89 false
+execute if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,tag=!boss2hplock3] at @s positioned ~3.5 ~ ~ as @a[tag=SEAPT,distance=0..3.3] at @s run effect give @s wither 2 3 false
+execute if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,tag=!boss2hplock3] at @s positioned ~5.5 ~ ~ as @a[tag=SEAPT,distance=0..5.3] at @s run effect give @s wither 2 9 false
+execute if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,tag=!boss2hplock3] at @s positioned ~7.5 ~ ~ as @a[tag=SEAPT,distance=0..7.3] at @s run effect give @s wither 2 39 false
+execute if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,tag=!boss2hplock3] at @s positioned ~9.5 ~ ~ as @a[tag=SEAPT,distance=0..9.3] at @s run effect give @s wither 2 79 false
+execute if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,tag=!boss2hplock3] at @s positioned ~11.5 ~ ~ as @a[tag=SEAPT,distance=0..11.3] at @s run effect give @s wither 2 89 false
 
 execute store result score @n[tag=SEAboss2] sea_boss1_hp run data get entity @n[tag=SEAboss2] Health
 execute if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,scores={sea_boss1_hp=..350},tag=!boss2hplock1] run effect give @s resistance 3 9 true
