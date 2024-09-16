@@ -308,6 +308,7 @@ execute as @n[tag=SEAch3_spawn_timer8,scores={sea_4temp1=16..22}] run particle m
 execute as @n[tag=SEAch3_spawn_timer8,scores={sea_4temp1=16..22}] run particle minecraft:soul_fire_flame 90093.53 129.99 98.50 2.5 1.5 0.5 0 300
 execute as @n[tag=SEAch3_spawn_timer8,scores={sea_4temp1=16}] positioned 90090 128 99 run function skyblock:sea/m/npc_yuehan
 execute as @n[tag=SEAch3_spawn_timer8,scores={sea_4temp1=23}] at @n[tag=SEAyuehan] run tellraw @a[distance=0..250] {"text":"？？？：“电……电台里的就是你？”","color":"green"}
+execute as @n[tag=SEAch3_spawn_timer8,scores={sea_4temp1=23}] at @n[tag=SEAyuehan] run scoreboard players set @n[tag=SEAyuehan] sea_4temp1 0
 execute as @n[tag=SEAch3_spawn_timer8,scores={sea_4temp1=23}] at @n[tag=SEAyuehan] run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
 
 execute at @n[tag=SEAyuehan] if entity @a[tag=SEAPT,distance=..6] run scoreboard players add @n[tag=SEAyuehan,scores={sea_4temp1=..295}] sea_4temp1 1
