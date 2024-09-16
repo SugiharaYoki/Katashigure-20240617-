@@ -177,6 +177,7 @@ execute as @n[tag=sc,scores={sea_4temp2=1068}] positioned 90120 123 123 run play
 execute as @n[tag=sc,scores={sea_4temp2=1095}] positioned 90120 123 123 run tellraw @a[distance=0..55] {"text":"联络机台：“我这里已经不安全了，去物资层找台联络机台联系我，那里至少还没断电——”","color":"dark_purple"}
 execute as @n[tag=sc,scores={sea_4temp2=1095}] positioned 90120 123 123 run playsound minecraft:entity.endermite.ambient ambient @a ~ ~ ~ 0.8 0.1
 execute as @n[tag=sc,scores={sea_4temp2=1260}] positioned 90120 123 123 run tellraw @a[distance=0..55] {"text":"联络机台：“……”","color":"dark_purple"}
+execute as @n[tag=sc,scores={sea_4temp2=1140}] run scoreboard players set @a[tag=SEAPT,scores={sea_progress=..0}] sea_progress 1
 execute as @n[tag=sc,scores={sea_4temp2=1140}] run fill 90129 122 119 90129 122 120 air
 execute as @n[tag=sc,scores={sea_4temp2=1144}] run fill 90129 123 119 90129 123 120 air
 execute as @n[tag=sc,scores={sea_4temp2=1140}] run playsound minecraft:block.iron_door.open ambient @a 90129 125 120 4 0.3
@@ -275,6 +276,7 @@ execute as @n[tag=sc,scores={sea_4temp2=2355}] run fill 90141 124 101 90141 124 
 execute as @n[tag=sc,scores={sea_4temp2=2351}] run playsound minecraft:block.iron_door.open ambient @a 90141 125 101 4 0.3
 execute as @n[tag=sc,scores={sea_4temp2=2353}] run playsound minecraft:block.iron_door.open ambient @a 90141 125 101 4 0.3
 execute as @n[tag=sc,scores={sea_4temp2=2355}] run playsound minecraft:block.iron_door.open ambient @a 90141 125 101 4 0.3
+execute as @n[tag=sc,scores={sea_4temp2=2351}] run scoreboard players set @a[tag=SEAPT,scores={sea_progress=..1}] sea_progress 2
 execute as @n[tag=sc,scores={sea_4temp2=2355}] positioned 90114 122 100 run function skyblock:sea/m/drowned_hat
 execute as @n[tag=sc,scores={sea_4temp2=2355}] positioned 90114 122 100 run function skyblock:sea/m/drowned_hat
 execute as @n[tag=sc,scores={sea_4temp2=2355}] positioned 90114 122 100 if entity @n[tag=sc,scores={sea_player=3..}] run function skyblock:sea/m/drowned_hat
