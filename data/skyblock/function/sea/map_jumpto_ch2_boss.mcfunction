@@ -42,7 +42,6 @@ scoreboard players set @a[tag=SEAPT] sea_i_trim_sea 0
 scoreboard players set @a[tag=SEAPT] sea_i_trim_ghost 0
 give @a[tag=SEAPT] emerald 64
 give @a[tag=SEAPT] emerald 24
-tag @a[tag=SEAPT] add sea_t_spectral1
 
 fill 90129 122 119 90129 122 120 air
 fill 90129 123 119 90129 123 120 air
