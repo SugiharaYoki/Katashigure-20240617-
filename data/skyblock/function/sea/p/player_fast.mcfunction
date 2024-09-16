@@ -6,6 +6,7 @@ execute as @s[tag=!sea_t_sprint_disabled,tag=sea_t_sprint1] unless entity @s[sco
 execute as @s[tag=!sea_t_sprint_disabled,tag=sea_t_sprint1,scores={sea_is_running=0,sea_runs=10..}] at @s run scoreboard players set @s sea_runs 0
 execute as @s[tag=!sea_t_sprint_disabled,tag=sea_t_sprint1,scores={sea_runs=..0}] at @s run effect give @s luck
 execute as @s[tag=!sea_t_sprint_disabled,tag=sea_t_sprint1,scores={sea_runs=1..}] at @s run effect clear @s luck
+execute as @s[tag=sea_t_sprint_disabled] at @s run effect clear @s luck
 execute as @s[tag=!sea_t_sprint_disabled,tag=sea_t_sprint1,scores={sea_is_running=1..,sea_runs=..0}] at @s run scoreboard players set @s sea_runs 1
 execute as @s[tag=!sea_t_sprint_disabled,tag=sea_t_sprint1,scores={sea_runs=1..10}] at @s run scoreboard players add @s sea_runs 1
 #execute as @s[scores={sea_runs=50..},tag=!sea_run_stops] at @s run tag @s add sea_run_stops
