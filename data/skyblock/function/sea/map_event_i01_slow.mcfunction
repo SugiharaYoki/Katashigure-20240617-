@@ -374,9 +374,9 @@ execute as @n[tag=sc,scores={sea_4temp2=4001}] run particle minecraft:large_smok
 execute as @n[tag=sc,scores={sea_4temp2=4001}] run particle minecraft:crimson_spore 90074.45 123.00 122.35 1 1 1 0.0 100
 execute as @n[tag=sc,scores={sea_4temp2=4001}] run playsound minecraft:item.trident.thunder hostile @a 90074.45 122.00 122.35 10 1.3
 execute as @n[tag=sc,scores={sea_4temp2=4001}] run playsound minecraft:item.trident.thunder hostile @a 90074.45 122.00 122.35 10 0.7
+execute as @n[tag=sc,scores={sea_4temp2=4001},tag=sea_ch1_speedrun_butif] at @n[tag=SEAframauros] run function skyblock:sea/m/boss1
 execute as @n[tag=sc,scores={sea_4temp2=4001},tag=sea_ch1_speedrun_butif] as @n[tag=SEAframauros] at @s run tp @s ~ ~-500 ~
 execute as @n[tag=sc,scores={sea_4temp2=4001},tag=sea_ch1_speedrun_butif] as @n[tag=SEAframauros] run kill @s
-execute as @n[tag=sc,scores={sea_4temp2=4001},tag=sea_ch1_speedrun_butif] at @n[tag=SEAframauros] run function skyblock:sea/m/boss1
 execute as @n[tag=sc,scores={sea_4temp2=4001},tag=!sea_ch1_speedrun_butif] positioned 90074 122 122 run function skyblock:sea/m/boss1
 execute as @n[tag=sc,scores={sea_4temp2=4001},tag=!sea_ch1_speedrun_butif] run tp @n[tag=SEAboss1] 90074 122 120.9 facing 90074 122 119
 execute as @n[tag=sc,scores={sea_4temp2=4001}] as @a[tag=SEAPT] at @s run playsound minecraft:app2.heracles music @a[tag=SEAPT] ~ ~ ~ 1000 1.0
