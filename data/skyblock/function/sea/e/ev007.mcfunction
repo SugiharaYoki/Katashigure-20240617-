@@ -4,3 +4,7 @@ execute positioned 90122 153 130 run tellraw @a[tag=SEAPT,distance=..15] {"text"
 
 fill 90121 155 139 90120 155 139 jungle_pressure_plate
 
+summon item 90117 165 128 {Item:{id:"fire_charge",count:1b}}
+summon item 90118 165 130 {Item:{id:"fire_charge",count:1b}}
+
+
