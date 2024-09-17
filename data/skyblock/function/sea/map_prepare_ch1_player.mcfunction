@@ -42,6 +42,7 @@ execute if entity @a[tag=SEAPT,tag=e_i_18] run tag @s add e_i_18
 execute if entity @a[tag=SEAPT,tag=e_i_20] run tag @s add e_i_20
 execute if entity @a[tag=SEAPT,tag=e_i_21] run tag @s add e_i_21
 execute if entity @a[tag=SEAPT,tag=e_i_25] run tag @s add e_i_25
+execute if entity @a[tag=SEAPT,tag=e_i_26] run tag @s add e_i_26
 execute as @s at @s run spawnpoint @s ~ ~ ~
 execute unless entity @s[scores={SEA_story=-999..}] run scoreboard players set @s SEA_story 0
 execute unless entity @s[scores={sea_progress=-999..}] run scoreboard players set @s sea_progress 0

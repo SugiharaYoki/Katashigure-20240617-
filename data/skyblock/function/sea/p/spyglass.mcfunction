@@ -24,7 +24,10 @@ execute if block 90058 103 142 minecraft:grindstone if block 90075 103 141 air i
 execute if block 90075 103 141 cauldron run title @s[tag=SEAPT,tag=!e_i_30] actionbar {"text":"目标：寻找通往主平台甲板的上行楼梯","color":"green"}
 execute if block 90075 103 141 cauldron unless entity @n[tag=sc,scores={sea_4temp2=88..}] run title @s[tag=SEAPT,tag=e_i_30] actionbar {"text":"目标：寻找可用的联络装置 & 前往办公区域","color":"green"}
 execute if block 90075 103 141 cauldron if entity @n[tag=sc,scores={sea_4temp2=366..}] run title @s[tag=SEAPT] actionbar {"text":"目标：前往宿舍楼","color":"green"}
-
+execute if block 90075 103 141 cauldron if block 90126 140 137 air run title @s[tag=SEAPT] actionbar {"text":"目标：营救宿舍楼的幸存者","color":"green"}
+execute if block 90075 103 141 cauldron if block 90126 140 137 air if block 90121 155 139 air run title @s[tag=SEAPT,tag=e_i_26] actionbar {"text":"目标：解开副宿舍楼的谜题","color":"green"}
+execute if block 90075 103 141 cauldron unless block 90121 155 139 air run title @s[tag=SEAPT] actionbar {"text":"目标：前往宿舍楼的更高楼层","color":"green"}
+execute if block 90075 103 141 cauldron unless block 90131 161 144 air run title @s[tag=SEAPT] actionbar {"text":"目标：前往物资层东面的电梯","color":"green"}
 
 
 

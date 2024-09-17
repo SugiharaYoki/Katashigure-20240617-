@@ -337,4 +337,26 @@ fill 90121 155 139 90120 155 139 air
 setblock 90136 155 146 chest[facing=west]
 item replace block 90136 155 146 container.14 with emerald 3
 
+setblock 90120 161 144 redstone_block
+setblock 90120 161 144 air
+setblock 90125 161 143 redstone_block
+setblock 90125 161 143 air
+
+summon painting 90121 162 148 {facing:1b,variant:"minecraft:backyard"}
+setblock 90120 162 140 minecraft:potted_red_tulip
+setblock 90129 162 143 minecraft:potted_cherry_sapling
+
+setblock 90127 161 144 chest[facing=north]
+item replace block 90127 161 144 container.11 with emerald 5
+item replace block 90127 161 144 container.13 with emerald 5
+item replace block 90127 161 144 container.15 with emerald 5
+setblock 90131 161 144 air
+
+
+
+
+
+
+
+
 
