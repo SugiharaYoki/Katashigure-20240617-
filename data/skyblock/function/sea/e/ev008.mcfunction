@@ -3,7 +3,7 @@ execute as @s[scores={sea_4temp1=9}] at @s run tellraw @a[distance=0..250,tag=!e
 execute as @s[scores={sea_4temp1=9}] at @s run tellraw @a[distance=0..250,tag=e_i_28,tag=!e_i_27] {"text":"越涵：“居然有那么多活着的……嗯？”","color":"green"}
 execute as @s[scores={sea_4temp1=9}] at @s run tellraw @a[distance=0..250,tag=e_i_28,tag=e_i_27] {"text":"越涵：“啊。”","color":"green"}
 execute as @s[scores={sea_4temp1=9}] at @s run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
-execute as @s[scores={sea_4temp1=9..270}] at @s run tp @s ~ ~ ~ facing entity @p
+execute as @s[scores={sea_4temp1=4..270}] at @s run tp @s ~ ~ ~ facing entity @p
 
 
 execute as @s[scores={sea_4temp1=39}] at @s if entity @n[tag=sc,scores={sea_player=1}] run tellraw @a[distance=0..250,tag=!e_i_28,tag=!e_i_27] {"text":"？？？：“我懂了，那个信号弹说的就是你吧……你要去地下研究设施？可是为什么……”","color":"green"}
