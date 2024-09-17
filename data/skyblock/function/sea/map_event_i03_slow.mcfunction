@@ -215,7 +215,7 @@ execute as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=37}] run playsound mine
 execute as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=40}] run playsound minecraft:block.iron_door.open ambient @a 90127 140 137 0.3
 
 
-execute if entity @a[tag=SEAPT,x=90120,y=155,z=138,distance=0..3,tag=!e_i_26] run tag @a[tag=SEAPT] add e_i_26
+execute if entity @a[tag=SEAPT,x=90120,y=155,z=138,distance=0..4.5,tag=!e_i_26] run tag @a[tag=SEAPT] add e_i_26
 
 execute as @n[tag=sc] if block 90133 137 108 minecraft:warped_button[powered=true] unless entity @s[scores={sea_4temp2=80..}] run scoreboard players set @s sea_4temp2 80
 execute as @n[tag=sc,scores={sea_4temp2=80..395}] run scoreboard players add @s sea_4temp2 1
