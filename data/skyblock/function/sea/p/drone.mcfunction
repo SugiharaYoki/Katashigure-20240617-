@@ -8,7 +8,10 @@ execute if score @s sea_4temp1 matches 13 run playsound block.bamboo.step block 
 execute if score @s sea_4temp1 matches 17 run playsound block.bamboo.step block @a ~ ~ ~ 0.7 1.5
 execute if score @s sea_4temp1 matches 20 run playsound block.bamboo.step block @a ~ ~ ~ 0.7 1.5
 execute if score @s sea_4temp1 matches 22.. run playsound block.bamboo.step block @a ~ ~ ~ 0.7 1.5
-execute if score @s sea_4temp1 matches 1 run scoreboard players set @s sea_4temp2 45
+execute if score @s sea_4temp1 matches 1 if score @s sea_4temp3 matches 1 run scoreboard players set @s sea_4temp2 45
+execute if score @s sea_4temp1 matches 1 if score @s sea_4temp3 matches 2 run scoreboard players set @s sea_4temp2 135
+execute if score @s sea_4temp1 matches 1 if score @s sea_4temp3 matches 3 run scoreboard players set @s sea_4temp2 225
+execute if score @s sea_4temp1 matches 1 if score @s sea_4temp3 matches 4 run scoreboard players set @s sea_4temp2 315
 execute if score @s sea_4temp1 matches 2.. run scoreboard players add @s sea_4temp2 1
 execute if score @s sea_4temp1 matches 4.. run scoreboard players add @s sea_4temp2 1
 execute if score @s sea_4temp1 matches 6.. run scoreboard players add @s sea_4temp2 1
