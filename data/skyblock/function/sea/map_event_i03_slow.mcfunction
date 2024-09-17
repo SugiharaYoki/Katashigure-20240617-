@@ -408,3 +408,6 @@ run fill 90121 155 139 90120 155 139 jungle_pressure_plate
 
 execute as @n[tag=SEAmarshall] at @s run function skyblock:sea/e/ev006
 
+execute unless block 90131 161 144 air as @a[tag=SEAPT,tag=!e_i_27] if block ~ ~-1 ~ polished_tuff run function skyblock:sea/e/ev007
+
+
