@@ -39,5 +39,5 @@ execute as @s[tag=sea_t_parry1,nbt=!{SelectedItem:{id:"minecraft:shield"}}] run 
 execute as @s[tag=sea_t_parry1,nbt={SelectedItem:{id:"minecraft:shield"}}] run function skyblock:sea/p/parry
 
 
-execute as @s[tag=sea_t_axeparry1,nbt=!{SelectedItem:{id:"minecraft:netherite_axe"}},predicate=skyblock:sneaking,scores={sea_axeparry_jump=1..}] run function skyblock:sea/p/axeparry
+execute as @s[tag=sea_t_axeparry1,nbt={SelectedItem:{id:"minecraft:netherite_axe"}},predicate=skyblock:sneaking,scores={sea_axeparry_jump=1..}] run function skyblock:sea/p/axeparry
 execute as @s[scores={sea_axeparry_jump=1..}] run scoreboard players set @s sea_axeparry_jump 0
