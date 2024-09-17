@@ -445,10 +445,12 @@ execute if entity @n[tag=sc,scores={sea_4temp2=1089}] as @e[tag=SEAeventi02slow2
 execute if entity @n[tag=sc,scores={sea_4temp2=1128}] as @a[tag=SEAPT] at @s run playsound minecraft:entity.evoker.prepare_attack hostile @s ~ ~ ~ 10 0.9
 execute if entity @n[tag=sc,scores={sea_4temp2=1128}] as @e[tag=SEAeventi02slow2d] at @s run data modify entity @s NoAI set value false
 execute if entity @n[tag=sc,scores={sea_4temp2=1128}] as @e[tag=SEAeventi02slow2d] at @s run data modify entity @s Invulnerable set value false
-execute if entity @n[tag=sc,scores={sea_4temp2=1196..1197}] positioned 90133 129 122 run function skyblock:sea/m/drowned_shield
-execute if entity @n[tag=sc,scores={sea_4temp2=1196..1197}] positioned 90133 129 112 run function skyblock:sea/m/drowned_shield
-execute if entity @n[tag=sc,scores={sea_4temp2=1195}] positioned 90133 129 122 if entity @n[tag=sc,scores={sea_player=3..}] run function skyblock:sea/m/drowned_shield
-execute if entity @n[tag=sc,scores={sea_4temp2=1195}] positioned 90133 129 112 if entity @n[tag=sc,scores={sea_player=3..}] run function skyblock:sea/m/drowned_shield
+execute if entity @n[tag=sc,scores={sea_4temp2=1196}] positioned 90133 129 122 run function skyblock:sea/m/drowned_shield
+execute if entity @n[tag=sc,scores={sea_4temp2=1196}] positioned 90133 129 112 run function skyblock:sea/m/drowned_shield
+execute if entity @n[tag=sc,scores={sea_4temp2=1197}] positioned 90133 129 122 if entity @n[tag=sc,scores={sea_player=3..}] run function skyblock:sea/m/drowned_hat
+execute if entity @n[tag=sc,scores={sea_4temp2=1197}] positioned 90133 129 112 if entity @n[tag=sc,scores={sea_player=3..}] run function skyblock:sea/m/drowned_hat
+execute if entity @n[tag=sc,scores={sea_4temp2=1195}] positioned 90133 129 122 if entity @n[tag=sc,scores={sea_player=4..}] run function skyblock:sea/m/drowned_hat
+execute if entity @n[tag=sc,scores={sea_4temp2=1195}] positioned 90133 129 112 if entity @n[tag=sc,scores={sea_player=4..}] run function skyblock:sea/m/drowned_hat
 execute if entity @n[tag=sc,scores={sea_4temp2=1195}] positioned 90133 129 122 if entity @n[tag=sc,scores={sea_player=5..}] run function skyblock:sea/m/drowned_shield
 execute if entity @n[tag=sc,scores={sea_4temp2=1195}] positioned 90133 129 112 if entity @n[tag=sc,scores={sea_player=5..}] run function skyblock:sea/m/drowned_shield
 execute if entity @n[tag=sc,scores={sea_4temp2=1196..1197}] positioned 90133 129 122 run function skyblock:sea/m/drowned_small
