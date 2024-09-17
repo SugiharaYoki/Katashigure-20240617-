@@ -1,5 +1,5 @@
 execute as @s run scoreboard players remove @s sea_shield_switch 1
-execute as @s[nbt={SelectedItem:{components:{"minecraft:custom_data":{"sea_shield1":true}}}}] run tag @s add sea_shield1_checked
+execute as @s[nbt={SelectedItem:{components:{"minecraft:custom_data":{"sea_shield":true}}}}] run tag @s add sea_shield1_checked
 execute as @s[nbt={SelectedItem:{components:{"minecraft:custom_data":{"sea_shield2":true}}}}] run tag @s add sea_shield2_checked
 execute as @s[nbt={SelectedItem:{components:{"minecraft:custom_data":{"sea_shield3":true}}}}] run tag @s add sea_shield3_checked
 execute as @s[nbt={SelectedItem:{components:{"minecraft:custom_data":{"sea_shield4":true}}}}] run tag @s add sea_shield4_checked
