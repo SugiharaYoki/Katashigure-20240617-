@@ -19,6 +19,7 @@ execute as @s[scores={sea_4temp1=102}] at @s as @p[tag=SEAPT] if entity @n[tag=s
  run tellraw @a[distance=0..50] [{"selector":"@s","color":"white"},{"text":"：……抱歉，我来晚了。","color":"white"}]
 execute as @s[scores={sea_4temp1=102}] at @s as @p[tag=SEAPT] if entity @n[tag=sc,scores={sea_player=2..}] \
  run tellraw @a[distance=0..50] [{"selector":"@s","color":"white"},{"text":"：……抱歉，我们来晚了。","color":"white"}]
+execute as @s[scores={sea_4temp1=103}] at @s run scoreboard players add @s sea_4temp1 10
 
 execute as @s[scores={sea_4temp1=140}] at @s run tellraw @a[distance=0..250] {"text":"马绍尔：“哈哈，没什么晚不晚的。我们不可能活着逃出这座钻井平台。”","color":"green"}
 execute as @s[scores={sea_4temp1=140}] at @s run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
