@@ -283,7 +283,7 @@ execute if block 90125 138 128 minecraft:waxed_copper_bulb[lit=true] \
  if block 90095 144 113 minecraft:waxed_copper_bulb[lit=true] \
  run scoreboard players set @n[tag=sc,scores={sea_4temp3=-20..99}] sea_4temp3 101
 
-execute as @n[tag=sc,scores={sea_4temp3=100..300}] run scoreboard players add @s sea_4temp3 1
+execute as @n[tag=sc,scores={sea_4temp3=100..300}] if block 90131 161 144 air run scoreboard players add @s sea_4temp3 1
 execute as @n[tag=sc,scores={sea_4temp3=120}] positioned 90133 137 108 \
  run tellraw @a[distance=0..250] {"text":"？？？：“你……打开了备用电台？你是谁，你现在在甲板上吗？”","color":"green"}
 execute as @n[tag=sc,scores={sea_4temp3=160}] positioned 90133 137 108 \
@@ -313,7 +313,7 @@ execute as @n[tag=SEAch3_spawn_timer8,scores={sea_4temp1=23}] at @n[tag=SEAyueha
 execute as @n[tag=SEAch3_spawn_timer8,scores={sea_4temp1=23}] at @n[tag=SEAyuehan] run scoreboard players set @n[tag=SEAyuehan] sea_4temp1 0
 execute as @n[tag=SEAch3_spawn_timer8,scores={sea_4temp1=23}] at @n[tag=SEAyuehan] run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
 
-execute as @n[tag=SEAyuehan] at @s run function skyblock:sea/e/ev005
+execute as @n[tag=SEAyuehan] at @s if block 90131 161 144 air run function skyblock:sea/e/ev005
 
 execute if block 90137 136 144 minecraft:polished_tuff \
 if block 90137 139 141 lever[powered=true] \
@@ -410,4 +410,5 @@ execute as @n[tag=SEAmarshall] at @s run function skyblock:sea/e/ev006
 
 #execute unless block 90131 161 144 air as @a[tag=SEAPT,tag=!e_i_27] if block ~ ~-1 ~ polished_tuff run function skyblock:sea/e/ev007
 
+execute as @n[tag=SEAyuehan] at @s unless block 90131 161 144 air run function skyblock:sea/e/ev008
 

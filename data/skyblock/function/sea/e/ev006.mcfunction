@@ -4,8 +4,8 @@ execute as @s[scores={sea_4temp1=5}] at @s if entity @n[tag=sc,scores={sea_playe
 execute as @s[scores={sea_4temp1=5}] at @s if entity @n[tag=sc,scores={sea_player=3..}] run tellraw @a[distance=0..250] {"text":"？？？：“你们是第一批成功上来的幸存者。”","color":"green"}
 execute as @s[scores={sea_4temp1=5}] at @s run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
 
-execute as @s[scores={sea_4temp1=5..590}] as @p[tag=SEAPT,nbt={SelectedItem:{id:"minecraft:spyglass"}},scores={SEA_story=5..}] unless entity @p[tag=SEAPT,scores={SEA_story=..4}] at @s run tellraw @a[tag=SEAPT] [{"selector":"@s","color":"white"},{"text":"：「跳过了剧情」","color":"white"}]
-execute as @s[scores={sea_4temp1=5..590}] if entity @p[tag=SEAPT,nbt={SelectedItem:{id:"minecraft:spyglass"}},scores={SEA_story=5..}] unless entity @p[tag=SEAPT,scores={SEA_story=..4}] run scoreboard players set @n[tag=sc] sea_4temp2 591
+execute as @s[scores={sea_4temp1=5..589}] as @p[tag=SEAPT,nbt={SelectedItem:{id:"minecraft:spyglass"}},scores={SEA_story=5..}] unless entity @p[tag=SEAPT,scores={SEA_story=..4}] at @s run tellraw @a[tag=SEAPT] [{"selector":"@s","color":"white"},{"text":"：「跳过了剧情」","color":"white"}]
+execute as @s[scores={sea_4temp1=5..589}] if entity @p[tag=SEAPT,nbt={SelectedItem:{id:"minecraft:spyglass"}},scores={SEA_story=5..}] unless entity @p[tag=SEAPT,scores={SEA_story=..4}] run scoreboard players set @n[tag=sc] sea_4temp2 590
 
 execute as @s[scores={sea_4temp1=32..241}] at @s run tp @s ~ ~ ~ facing entity @p
 execute as @s[scores={sea_4temp1=32}] at @s if entity @n[tag=sc,scores={sea_player=1}] run tellraw @a[distance=0..250] {"text":"？？？：“怎么样？……你的忒尔克西之旅还顺利吗？”","color":"green"}
@@ -75,11 +75,50 @@ execute as @s[scores={sea_4temp1=600}] at @s run tp @s ~ ~ ~ facing 90126 163.0 
 execute as @s[scores={sea_4temp1=600}] at @s run setblock 90131 161 144 flower_pot
 execute as @s[scores={sea_4temp1=600}] at @s run scoreboard players set @a[tag=SEAPT,scores={sea_progress=..7}] sea_progress 8
 
-scoreboard players add @s[scores={sea_4temp1=593..}] sea_4temp1 1
+execute unless entity @a[tag=SEAPT,distance=..6] run scoreboard players add @s[scores={sea_4temp1=593..}] sea_4temp1 1
 
 execute as @s[scores={sea_4temp1=592}] run scoreboard players set @a[tag=SEAPT,scores={SEA_story=..4}] SEA_story 5
 
-execute unless entity @a[tag=SEAPT,distance=..6] run execute as @s[scores={sea_4temp1=730}] at @s run summon firework_rocket 90121 162 137 {LifeTime:35,FireworksItem:{id:firework_rocket,count:1,components:{fireworks:{flight_duration:25,explosions:[{shape:"large_ball",has_twinkle:0b,has_trail:1b,colors:[I;3887386],fade_colors:[I;4312372]}]}}}}
+execute as @s[scores={sea_4temp1=730}] at @s run summon firework_rocket 90121 162 137 {LifeTime:35,FireworksItem:{id:firework_rocket,count:1,components:{fireworks:{flight_duration:25,explosions:[{shape:"large_ball",has_twinkle:0b,has_trail:1b,colors:[I;3887386],fade_colors:[I;4312372]}]}}}}
+execute as @s[scores={sea_4temp1=760}] at @s run fill 90163 129 113 90163 127 114 air
+execute as @s[scores={sea_4temp1=759}] at @s run tp @n[tag=SEAyuehan] 90100 -500 100
+execute as @s[scores={sea_4temp1=759}] at @s run kill @n[tag=SEAyuehan]
+execute as @s[scores={sea_4temp1=760}] at @s positioned 90162 127 113 run function skyblock:sea/m/npc_yuehan
+
+execute as @s[scores={sea_4temp1=591..}] if block 90146 137 154 stone_bricks positioned 90149 137 151 run function skyblock:sea/m/skeleton_melee
+execute as @s[scores={sea_4temp1=591..}] if block 90146 137 154 stone_bricks positioned 90149 137 151 run function skyblock:sea/m/skeleton_melee
+execute as @s[scores={sea_4temp1=591..}] if block 90146 137 154 stone_bricks positioned 90149 137 151 run function skyblock:sea/m/skeleton_melee
+execute as @s[scores={sea_4temp1=591..}] if block 90146 137 154 stone_bricks positioned 90149 137 151 run function skyblock:sea/m/skeleton_melee
+execute as @s[scores={sea_4temp1=591..}] if block 90146 137 154 stone_bricks positioned 90149 137 151 run function skyblock:sea/m/skeleton_melee
+execute as @s[scores={sea_4temp1=591..}] if block 90146 137 154 stone_bricks positioned 90149 137 151 run function skyblock:sea/m/skeleton_melee
+execute as @s[scores={sea_4temp1=591..}] if block 90146 137 154 stone_bricks run particle explosion 90149 138.0 152 1 1 1 0.0 5
+execute as @s[scores={sea_4temp1=591..}] if block 90146 137 154 stone_bricks run particle smoke 90149 138.0 152 1 1 1 0.05 15
+execute as @s[scores={sea_4temp1=591..}] if block 90146 137 154 stone_bricks run playsound entity.generic.explode block @a 90149 138.0 152 1 0.9
+execute as @s[scores={sea_4temp1=591..}] if block 90146 137 154 stone_bricks run fill 90149 137 152 90149 138 152 air destroy
+
+execute as @s[scores={sea_4temp1=611..620}] positioned 90152 128 98 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
+execute as @s[scores={sea_4temp1=611..620}] positioned 90152 128 98 run particle sculk_soul ~ ~1 ~ 0.3 0.5 0.3 0.05 10
+execute as @s[scores={sea_4temp1=621}] positioned 90152 128 98 run function skyblock:sea/m/zombie_bomb
+execute as @s[scores={sea_4temp1=621}] positioned 90152 128 98 run function skyblock:sea/m/drowned_hat
+execute as @s[scores={sea_4temp1=621}] positioned 90152 128 98 run function skyblock:sea/m/drowned_hat
+execute as @s[scores={sea_4temp1=621}] positioned 90152 128 98 run function skyblock:sea/m/drowned_hat
+execute as @s[scores={sea_4temp1=621}] positioned 90152 128 98 run function skyblock:sea/m/drowned_hat
+execute as @s[scores={sea_4temp1=621}] positioned 90152 128 98 run function skyblock:sea/m/drowned_shield
+execute as @s[scores={sea_4temp1=621}] positioned 90152 128 98 run function skyblock:sea/m/drowned_shield
+execute as @s[scores={sea_4temp1=621}] positioned 90152 128 98 run function skyblock:sea/m/pillager
+execute as @s[scores={sea_4temp1=621}] positioned 90152 128 98 run function skyblock:sea/m/pillager
+
+execute as @s[scores={sea_4temp1=611..620}] positioned 90155 137 132 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
+execute as @s[scores={sea_4temp1=611..620}] positioned 90155 137 132 run particle sculk_soul ~ ~1 ~ 0.3 0.5 0.3 0.05 10
+execute as @s[scores={sea_4temp1=621}] positioned 90155 137 132 run function skyblock:sea/m/zombie_security2
+execute as @s[scores={sea_4temp1=621}] positioned 90155 137 132 run function skyblock:sea/m/zombie_security2
+execute as @s[scores={sea_4temp1=621}] positioned 90155 137 132 run function skyblock:sea/m/drowned_hat
+execute as @s[scores={sea_4temp1=621}] positioned 90155 137 132 run function skyblock:sea/m/pillager
+execute as @s[scores={sea_4temp1=621}] positioned 90155 137 132 run function skyblock:sea/m/pillager
+
 
 #execute as @s[scores={sea_4temp1=540..800}] at @s unless entity @a[tag=SEAPT,distance=..11] run tp @s ~ ~-500 ~
 #execute as @s[scores={sea_4temp1=540..800}] at @s unless entity @a[tag=SEAPT,distance=..11] run kill @s
+
+
+

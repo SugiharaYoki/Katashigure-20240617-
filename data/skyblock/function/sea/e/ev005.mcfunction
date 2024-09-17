@@ -7,6 +7,7 @@ execute as @s[scores={sea_4temp1=39}] at @s if entity @n[tag=sc,scores={sea_play
 execute as @s[scores={sea_4temp1=39}] at @s run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
 execute as @s[scores={sea_4temp1=70}] at @s run tellraw @a[distance=0..250] {"text":"越涵：“那个……你听我讲，我是维修部门的越涵，他们没想到我会躲在他们以为我最不会来的地方。怎么样，中国人的大智慧。”","color":"green"}
 execute as @s[scores={sea_4temp1=70}] at @s run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
+execute as @s[scores={sea_4temp1=70}] at @s run tag @a[tag=SEAPT] add e_i_28
 execute as @s[scores={sea_4temp1=102}] at @s run tellraw @a[distance=0..250] {"text":"越涵：“外头还有那些神棍吗？……呃，那我就不跟你一起出去了。”","color":"green"}
 execute as @s[scores={sea_4temp1=102}] at @s run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
 execute as @s[scores={sea_4temp1=124}] at @s run tellraw @a[distance=0..250] {"text":"越涵：“你看到这个房间中间的水晶了吗？对，它飘在空中，不借助任何科技手段。而且它一直会自主长成说是十字架的模样。”","color":"green"}
@@ -48,6 +49,7 @@ execute as @s[scores={sea_4temp1=650}] at @s run playsound entity.villager.ambie
 execute as @s[scores={sea_4temp1=650}] at @s run tellraw @a[distance=0..250] {"text":"越涵：“……能让我一个人静一静吗？”","color":"green"}
 execute as @s[scores={sea_4temp1=699}] at @s run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
 execute as @s[scores={sea_4temp1=699}] at @s run tellraw @a[distance=0..250] {"text":"越涵：“……算了。”","color":"green"}
+execute as @s[scores={sea_4temp1=435}] at @s run tag @a[tag=SEAPT] add e_i_27
 execute as @s[scores={sea_4temp1=540..800}] at @s unless entity @a[tag=SEAPT,distance=..11] run tp @s ~ ~-500 ~
 execute as @s[scores={sea_4temp1=540..800}] at @s unless entity @a[tag=SEAPT,distance=..11] run kill @s
 
@@ -69,5 +71,6 @@ execute as @s[scores={sea_4temp1=1650}] at @s run playsound entity.villager.ambi
 execute as @s[scores={sea_4temp1=1650}] at @s run tellraw @a[distance=0..250] {"text":"越涵：“……能让我一个人静一静吗？”","color":"green"}
 execute as @s[scores={sea_4temp1=1699}] at @s run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
 execute as @s[scores={sea_4temp1=1699}] at @s run tellraw @a[distance=0..250] {"text":"越涵：“……算了。”","color":"green"}
+execute as @s[scores={sea_4temp1=1435}] at @s run tag @a[tag=SEAPT] add e_i_27
 execute as @s[scores={sea_4temp1=1540..1800}] at @s unless entity @a[tag=SEAPT,distance=..11] run tp @s ~ ~-500 ~
 execute as @s[scores={sea_4temp1=1540..1800}] at @s unless entity @a[tag=SEAPT,distance=..11] run kill @s

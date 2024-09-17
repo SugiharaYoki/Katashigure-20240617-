@@ -352,8 +352,9 @@ item replace block 90127 161 144 container.13 with emerald 5
 item replace block 90127 161 144 container.15 with emerald 5
 setblock 90131 161 144 air
 
+fill 90149 137 152 90149 138 152 minecraft:stone_bricks
 
-
+#fill 90163 129 113 90163 127 114 iron_bars
 
 
 
