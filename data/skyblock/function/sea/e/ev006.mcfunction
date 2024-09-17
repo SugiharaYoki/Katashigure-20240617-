@@ -3,6 +3,10 @@ execute as @s[scores={sea_4temp1=5}] at @s if entity @n[tag=sc,scores={sea_playe
 execute as @s[scores={sea_4temp1=5}] at @s if entity @n[tag=sc,scores={sea_player=2}] run tellraw @a[distance=0..250] {"text":"？？？：“你们是唯二成功上来的幸存者。”","color":"green"}
 execute as @s[scores={sea_4temp1=5}] at @s if entity @n[tag=sc,scores={sea_player=3..}] run tellraw @a[distance=0..250] {"text":"？？？：“你们是第一批成功上来的幸存者。”","color":"green"}
 execute as @s[scores={sea_4temp1=5}] at @s run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
+
+execute as @s[scores={sea_4temp1=5..590}] as @p[tag=SEAPT,nbt={SelectedItem:{id:"minecraft:spyglass"}},scores={SEA_story=5..}] unless entity @p[tag=SEAPT,scores={SEA_story=..4}] at @s run tellraw @a[tag=SEAPT] [{"selector":"@s","color":"white"},{"text":"：「跳过了剧情」","color":"white"}]
+execute as @s[scores={sea_4temp1=5..590}] if entity @p[tag=SEAPT,nbt={SelectedItem:{id:"minecraft:spyglass"}},scores={SEA_story=5..}] unless entity @p[tag=SEAPT,scores={SEA_story=..4}] run scoreboard players set @n[tag=sc] sea_4temp2 591
+
 execute as @s[scores={sea_4temp1=32..241}] at @s run tp @s ~ ~ ~ facing entity @p
 execute as @s[scores={sea_4temp1=32}] at @s if entity @n[tag=sc,scores={sea_player=1}] run tellraw @a[distance=0..250] {"text":"？？？：“怎么样？……你的忒尔克西之旅还顺利吗？”","color":"green"}
 execute as @s[scores={sea_4temp1=32}] at @s if entity @n[tag=sc,scores={sea_player=2..}] run tellraw @a[distance=0..250] {"text":"？？？：“怎么样？……你们的忒尔克西之旅还顺利吗？”","color":"green"}
@@ -72,6 +76,7 @@ execute as @s[scores={sea_4temp1=600}] at @s run scoreboard players set @a[tag=S
 
 scoreboard players add @s[scores={sea_4temp1=593..}] sea_4temp1 1
 
+execute as @s[scores={sea_4temp1=592}] run scoreboard players set @a[tag=SEAPT,scores={SEA_story=..4}] SEA_story 5
 
 execute unless entity @a[tag=SEAPT,distance=..6] run execute as @s[scores={sea_4temp1=780}] at @s run summon firework_rocket ~ ~1 ~ {LifeTime:35,FireworksItem:{id:firework_rocket,count:1,components:{fireworks:{flight_duration:25,explosions:[{shape:"large_ball",has_twinkle:0b,has_trail:1b,colors:[I;3887386],fade_colors:[I;3887386,4312372]}]}}}}
 
