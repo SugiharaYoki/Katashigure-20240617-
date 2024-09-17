@@ -192,7 +192,7 @@ execute as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90123 1
 
 
 execute as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=1}] run scoreboard players set @a[tag=SEAPT,scores={sea_progress=..6}] sea_progress 7
-execute as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=1}] positioned 90126 161 148 run function skyblock:sea/m/npc_marshall
+
 execute as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=1}] run playsound minecraft:item.goat_horn.sound.6 master @a[tag=SEAPT] 90100 0 100 10000 0.8
 execute as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=1}] run playsound minecraft:item.goat_horn.sound.6 master @a[tag=SEAPT] 90100 0 100 10000 0.87
 execute as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=1}] run playsound minecraft:item.goat_horn.sound.6 master @a[tag=SEAPT] 90100 0 100 10000 0.84
