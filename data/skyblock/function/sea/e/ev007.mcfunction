@@ -1,2 +1,6 @@
-summon firework_rocket ~ ~1 ~ {LifeTime:35,FireworksItem:{id:firework_rocket,count:1,components:{fireworks:{flight_duration:25,explosions:[{shape:"large_ball",has_twinkle:0,has_trail:1,colors:[I;3887386],fade_colors:[I;3887386,4312372]}]}}}}
+playsound block.note_block.chime block @a 90122 153 130 10 0.7
+
+execute positioned 90122 153 130 run tellraw @a[tag=SEAPT,distance=..15] {"text": "密码好像对了……","color": "gray"}
+
+fill 90121 155 139 90120 155 139 jungle_pressure_plate
 

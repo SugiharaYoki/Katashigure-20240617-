@@ -404,7 +404,7 @@ if block 90127 153 129 lever[powered=true] \
 if block 90126 153 129 lever[powered=true] \
 if block 90125 153 129 lever[powered=true] \
 if block 90124 153 129 lever[powered=false] \
-run fill 90121 155 139 90120 155 139 jungle_pressure_plate
+if block 90120 155 139 air run function skyblock:sea/e/ev007
 
 execute as @n[tag=SEAmarshall] at @s run function skyblock:sea/e/ev006
 
