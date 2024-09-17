@@ -7,9 +7,9 @@ execute at @s[nbt={SelectedItem:{components:{"minecraft:custom_data":{"sea_axe3"
 execute at @s[nbt={SelectedItem:{components:{"minecraft:custom_data":{"sea_axe4":true}}}}] anchored eyes positioned ^ ^ ^1.5 as @e[tag=SEAmob,distance=..1.6] at @s run damage @s 3.5 minecraft:generic
 execute at @s[nbt={SelectedItem:{components:{"minecraft:custom_data":{"sea_axe5":true}}}}] anchored eyes positioned ^ ^ ^1.5 as @e[tag=SEAmob,distance=..1.75] at @s run damage @s 4 minecraft:generic
 
-execute at @s anchored eyes positioned ^ ^ ^1.0 as @e[type=arrow,distance=..1.0] at @s run playsound block.anvil.place player @a ~ ~ ~ 0.5 1.5
-execute at @s anchored eyes positioned ^ ^ ^1.0 as @e[type=arrow,distance=..1.0] at @s run particle white_smoke ~ ~ ~ 0.1 0.1 0.1 0.05 15
-execute at @s anchored eyes positioned ^ ^ ^1.0 as @e[type=arrow,distance=..1.0] at @s run kill @s
+execute at @s anchored eyes positioned ^ ^ ^1.1 as @e[type=arrow,distance=..1.1] at @s run playsound block.anvil.place player @a ~ ~ ~ 0.5 1.5
+execute at @s anchored eyes positioned ^ ^ ^1.1 as @e[type=arrow,distance=..1.1] at @s run particle white_smoke ~ ~ ~ 0.1 0.1 0.1 0.05 15
+execute at @s anchored eyes positioned ^ ^ ^1.1 as @e[type=arrow,distance=..1.1] at @s run kill @s
 
 
 
