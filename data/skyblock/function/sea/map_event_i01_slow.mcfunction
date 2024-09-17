@@ -423,6 +423,13 @@ execute as @n[tag=sc,scores={sea_4temp2=3000..5000,sea_4temp5=40}] as @n[tag=SEA
 execute as @n[tag=sc,scores={sea_4temp2=6002..6500}] at @n[tag=SEAframauros] if entity @a[tag=SEAPT,distance=0.1..5] run scoreboard players add @n[tag=sc] sea_4temp2 1
 execute as @n[tag=sc,scores={sea_4temp2=6000..6001}] run scoreboard players add @n[tag=sc] sea_4temp2 1
 
+execute as @n[tag=sc,scores={sea_4temp2=6002}] run fill 90094 124 107 90094 122 107 air destroy
+execute as @n[tag=sc,scores={sea_4temp2=6002}] run fill 90093 124 107 90093 122 107 air destroy
+execute as @n[tag=sc,scores={sea_4temp2=6002}] run fill 90092 124 107 90092 122 107 air destroy
+execute as @n[tag=sc,scores={sea_4temp2=6002}] run fill 90094 124 102 90094 122 102 air destroy
+execute as @n[tag=sc,scores={sea_4temp2=6002}] run fill 90093 124 102 90093 122 102 air destroy
+execute as @n[tag=sc,scores={sea_4temp2=6002}] run fill 90092 124 102 90092 122 102 air destroy
+execute as @n[tag=sc,scores={sea_4temp2=6002}] run fill 90087 122 105 90087 124 104 air destroy
 execute as @n[tag=sc,scores={sea_4temp2=6001}] positioned 90073 122 122 run function skyblock:sea/m/npc_framauros
 execute as @n[tag=sc,scores={sea_4temp2=6003..}] as @n[tag=SEAframauros] at @s run tp @s ~ ~ ~ facing entity @p
 execute as @n[tag=sc,scores={sea_4temp2=6003}] at @n[tag=SEAframauros] run playsound entity.villager.ambient neutral @a ~ ~ ~ 0.8 0.7
