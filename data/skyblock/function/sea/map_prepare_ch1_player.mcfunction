@@ -14,6 +14,7 @@ effect give @s saturation 1 3 false
 effect give @s fire_resistance 1 0 false
 
 tag @s add sea_t_parry1
+tag @s add sea_t_axeparry1
 
 team join SEA @s
 tag @s add Gaming
