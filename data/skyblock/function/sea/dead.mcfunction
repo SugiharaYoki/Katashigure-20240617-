@@ -104,6 +104,9 @@ scoreboard players set @s sea_i_trim_sea 0
 scoreboard players set @s sea_i_trim_ghost 0
 scoreboard players set @s sea_i_trim_skeleton 0
 
+attribute @s generic.gravity base set 0.08
+
+
 clear @s
 effect clear @s
 stopsound @s
