@@ -315,11 +315,13 @@ setblock 90140 115 147 air
 setblock 90073 103 154 air
 setblock 90074 103 154 air
 setblock 90151 145 103 air
+setblock 90151 128 144 air
 setblock 90139 115 147 decorated_pot{sherds:["friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd"],item:{count: 4, id:"minecraft:emerald"}}
 setblock 90140 115 147 decorated_pot{sherds:["mourner_pottery_sherd","mourner_pottery_sherd","mourner_pottery_sherd","mourner_pottery_sherd"],item:{count: 2, id:"minecraft:echo_shard"}}
 setblock 90073 103 154 decorated_pot{sherds:["friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd"],item:{count: 3, id:"minecraft:emerald"}}
 setblock 90074 103 154 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 1, id:"minecraft:beef"}}
 setblock 90151 145 103 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 3, id:"minecraft:golden_carrot"}}
+setblock 90151 128 144 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 2, id:"minecraft:raw_iron"}}
 
 setblock 90071 137 151 minecraft:iron_trapdoor[facing=north]
 fill 90101 123 116 90101 122 116 minecraft:slime_block
@@ -409,5 +411,8 @@ item replace block 90081 83 143 container.15 with flint 1
 setblock 90145 103 110 chest[facing=east]
 item replace block 90145 103 110 container.12 with coal 1
 item replace block 90145 103 110 container.14 with iron_ingot 1
+
+
+fill 90127 102 99 90125 102 101 barrier
 
 

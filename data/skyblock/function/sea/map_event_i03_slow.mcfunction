@@ -413,6 +413,7 @@ execute as @n[tag=SEAmarshall] at @s run function skyblock:sea/e/ev006
 execute as @n[tag=SEAyuehan] at @s unless block 90131 161 144 air run function skyblock:sea/e/ev008
 
 
+execute if entity @a[tag=SEAPT,x=90123,y=0,z=98,dx=7,dy=103,dz=7] at @s run function skyblock:sea/e/ev009
 
 
 

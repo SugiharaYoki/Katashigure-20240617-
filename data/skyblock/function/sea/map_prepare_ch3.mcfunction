@@ -357,7 +357,7 @@ fill 90149 137 152 90149 138 152 minecraft:stone_bricks
 #fill 90163 129 113 90163 127 114 iron_bars
 
 
-
+summon block_display 90125.0 102 99.0 {transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[3f,0.9f,3f],translation:[0f,0f,0f]},block_state:{Name:iron_block},Tags:["sea_blockdisplay","sea_ch4elevator1"],Rotation:[0f,0f]}
 
 
 
