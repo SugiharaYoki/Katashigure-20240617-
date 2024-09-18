@@ -24,6 +24,10 @@ tag @s remove e_i_22
 tag @s remove e_i_23
 tag @s remove e_i_24
 tag @s remove e_i_25
+tag @s remove e_i_26
+tag @s remove e_i_27
+tag @s remove e_i_28
+tag @s remove e_i_29
 tag @s remove e_i_30
 tag @s remove e_i_31
 tag @s remove e_i_32
