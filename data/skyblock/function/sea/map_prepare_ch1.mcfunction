@@ -397,3 +397,13 @@ setblock 90098 132 131 tinted_glass
 setblock 90102 132 131 tinted_glass
 setblock 90083 131 134 tinted_glass
 setblock 90079 131 123 tinted_glass
+
+#水下阴间宝箱
+setblock 90081 83 143 chest[facing=south,waterlogged=true]
+item replace block 90081 83 143 container.11 with flint 1
+item replace block 90081 83 143 container.13 with iron_ingot 1
+item replace block 90081 83 143 container.15 with flint 1
+
+
+
+
