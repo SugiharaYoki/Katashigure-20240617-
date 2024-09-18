@@ -85,6 +85,7 @@ execute as @s[scores={sea_4temp1=730}] at @s run summon firework_rocket 90121 16
 execute as @s[scores={sea_4temp1=759}] at @s run tp @n[tag=SEAyuehan] 90100 -500 100
 execute as @s[scores={sea_4temp1=759}] at @s run kill @n[tag=SEAyuehan]
 execute as @s[scores={sea_4temp1=760}] at @s positioned 90162 127 113 run function skyblock:sea/m/npc_yuehan
+execute as @s[scores={sea_4temp1=760}] run scoreboard players set @n[tag=SEAyuehan] sea_4temp1 0
 
 execute as @s[scores={sea_4temp1=591..}] if entity @a[tag=SEAPT,x=90147,y=137,z=155,distance=0..3] if block 90149 138 152 stone_bricks positioned 90149 137 151 run function skyblock:sea/m/skeleton_melee
 execute as @s[scores={sea_4temp1=591..}] if entity @a[tag=SEAPT,x=90147,y=137,z=155,distance=0..3] if block 90149 138 152 stone_bricks positioned 90149 137 151 run function skyblock:sea/m/skeleton_melee
