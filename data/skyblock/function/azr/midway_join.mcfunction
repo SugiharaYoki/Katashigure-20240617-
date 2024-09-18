@@ -4,7 +4,7 @@ scoreboard players set @s MultiMenu 0
 execute unless score isStarted Azr_system matches 1 run tellraw @s [{"text":"加入失败！没有正在进行中的游戏！","color":"red"}]
 execute unless score isStarted Azr_system matches 1 run return fail
 execute if score isStarted Azr_system matches 1 if score @s Azr_startCount = Pointer Azr_startCount run tellraw @s[tag=azrDead] [{"text":"加入失败！你已经死亡过一次了！","color":"red"}]
-execute if score isStarted Azr_system matches 1 if entity @s[tag=azrDead] run return fail
+execute if score isStarted Azr_system matches 1 if score @s Azr_startCount = Pointer Azr_startCount if entity @s[tag=azrDead] run return fail
 execute if score isStarted Azr_system matches 1 run tellraw @s[tag=!azrDead] [{"text":"加入游戏成功！正在跳转至游戏。","color":"green"}]
 #统一个人数据
 scoreboard players operation @s Azr_wave = @p[tag=azrPlayer,distance=..10000] Azr_wave
