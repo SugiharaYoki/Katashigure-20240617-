@@ -412,3 +412,9 @@ execute as @n[tag=SEAmarshall] at @s run function skyblock:sea/e/ev006
 
 execute as @n[tag=SEAyuehan] at @s unless block 90131 161 144 air run function skyblock:sea/e/ev008
 
+
+
+
+
+
+

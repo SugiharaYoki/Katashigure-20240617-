@@ -1,8 +1,8 @@
 execute if entity @a[tag=SEAPT,distance=..6] run scoreboard players add @s sea_4temp1 1
-execute as @s[scores={sea_4temp1=9}] at @s run tellraw @a[distance=0..250,tag=!e_i_28,tag=!e_i_27] {"text":"？？？：“你、你没被感染吧？”","color":"green"}
-execute as @s[scores={sea_4temp1=9}] at @s run tellraw @a[distance=0..250,tag=e_i_28,tag=!e_i_27] {"text":"越涵：“居然有那么多活着的……嗯？”","color":"green"}
-execute as @s[scores={sea_4temp1=9}] at @s run tellraw @a[distance=0..250,tag=e_i_28,tag=e_i_27] {"text":"越涵：“啊。”","color":"green"}
-execute as @s[scores={sea_4temp1=9}] at @s run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
+execute as @s[x=90161,y=128,z=112,distance=4..,scores={sea_4temp1=9}] at @s run tellraw @a[distance=0..250,tag=!e_i_28,tag=!e_i_27] {"text":"？？？：“你、你没被感染吧？”","color":"green"}
+execute as @s[x=90161,y=128,z=112,distance=4..,scores={sea_4temp1=9}] at @s run tellraw @a[distance=0..250,tag=e_i_28,tag=!e_i_27] {"text":"越涵：“居然有那么多活着的……嗯？”","color":"green"}
+execute as @s[x=90161,y=128,z=112,distance=4..,scores={sea_4temp1=9}] at @s run tellraw @a[distance=0..250,tag=e_i_28,tag=e_i_27] {"text":"越涵：“啊。”","color":"green"}
+execute as @s[x=90161,y=128,z=112,distance=4..,scores={sea_4temp1=9}] at @s run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
 execute as @s[scores={sea_4temp1=4..270}] at @s run tp @s ~ ~ ~ facing entity @p
 
 
@@ -13,15 +13,22 @@ execute as @s[scores={sea_4temp1=39}] at @s if entity @n[tag=sc,scores={sea_play
 execute as @s[scores={sea_4temp1=39}] at @s if entity @n[tag=sc,scores={sea_player=1..}] run tellraw @a[distance=0..250,tag=e_i_28,tag=e_i_27] {"text":"越涵：“原来如此。那就没有什么要多说的了。”","color":"green"}
 execute as @s[scores={sea_4temp1=39}] at @s run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
 
-execute as @s[scores={sea_4temp1=69}] at @s if entity @n[tag=sc,scores={sea_player=1..}] run tellraw @a[distance=0..250,tag=!e_i_28,tag=!e_i_27] {"text":"越涵：“我是维修部门的越涵。这里太危险了，我们下去说吧。”","color":"green"}
-execute as @s[scores={sea_4temp1=69}] at @s if entity @n[tag=sc,scores={sea_player=1..}] run tellraw @a[distance=0..250,tag=e_i_28,tag=!e_i_27] {"text":"越涵：“他们还好吗？等等，这里太危险了，我们下去说。”","color":"green"}
-execute as @s[scores={sea_4temp1=69}] at @s if entity @n[tag=sc,scores={sea_player=1..}] run tellraw @a[distance=0..250,tag=e_i_28,tag=e_i_27] {"text":"越涵：“电梯门已经开了，跟我来吧。”","color":"green"}
+execute as @s[scores={sea_4temp1=67}] at @s run fill 90163 129 113 90163 127 114 air
+execute as @s[scores={sea_4temp1=67}] at @s run playsound block.iron_trapdoor.open block @a 90163 129 114.0 1 0.8
+execute as @s[x=90161,y=128,z=112,distance=..4,scores={sea_4temp1=69}] at @s if entity @n[tag=sc,scores={sea_player=1..}] run tellraw @a[distance=0..250,tag=!e_i_28,tag=!e_i_27] {"text":"越涵：“我是维修部门的越涵。这里太危险了，我们下去说吧。”","color":"green"}
+execute as @s[x=90161,y=128,z=112,distance=..4,scores={sea_4temp1=69}] at @s if entity @n[tag=sc,scores={sea_player=1..}] run tellraw @a[distance=0..250,tag=e_i_28,tag=!e_i_27] {"text":"越涵：“他们还好吗？等等，这里太危险了，我们下去说。”","color":"green"}
+execute as @s[x=90161,y=128,z=112,distance=..4,scores={sea_4temp1=69}] at @s if entity @n[tag=sc,scores={sea_player=1..}] run tellraw @a[distance=0..250,tag=e_i_28,tag=e_i_27] {"text":"越涵：“电梯门已经开了，跟我来吧。”","color":"green"}
+execute as @s[x=90161,y=128,z=112,distance=4..,scores={sea_4temp1=69}] at @s if entity @n[tag=sc,scores={sea_player=1..}] run tellraw @a[distance=0..250,tag=!e_i_28,tag=!e_i_27] {"text":"越涵：“我是维修部门的越涵。上头太危险了，但既然你都跳下来了……哎老哥，以后能不能别做这种事？”","color":"green"}
+execute as @s[x=90161,y=128,z=112,distance=4..,scores={sea_4temp1=69}] at @s if entity @n[tag=sc,scores={sea_player=1..}] run tellraw @a[distance=0..250,tag=e_i_28,tag=!e_i_27] {"text":"越涵：“他们还好吗？还有……你他妈还好吗？”","color":"green"}
+execute as @s[x=90161,y=128,z=112,distance=4..,scores={sea_4temp1=69}] at @s if entity @n[tag=sc,scores={sea_player=1..}] run tellraw @a[distance=0..250,tag=e_i_28,tag=e_i_27] {"text":"越涵：“不，我还得说一句：你是傻逼吗，还嫌自己死的不够快？”","color":"green"}
 execute as @s[scores={sea_4temp1=69}] at @s run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
 
 execute as @s[scores={sea_4temp1=73}] at @s run tp @s ~ 103 ~
 
-
-
+execute if entity @s[x=90161,y=128,z=112,distance=..4,scores={sea_4temp1=..67}] if entity @a[tag=SEAPT,x=90136,dx=30,y=104,dy=8,z=88,dz=30] run tellraw @a[distance=0..250,tag=!e_i_28] {"text":"？？？：“啊等、你怎么直接往下跳了？你先过来啊……”","color":"green"}
+execute if entity @s[x=90161,y=128,z=112,distance=..4,scores={sea_4temp1=..67}] if entity @a[tag=SEAPT,x=90136,dx=30,y=104,dy=8,z=88,dz=30] run tellraw @a[distance=0..250,tag=e_i_28] {"text":"越涵：“我靠你干什么，你不要命了？老老实实坐电梯都不会的吗？”","color":"green"}
+execute if entity @s[x=90161,y=128,z=112,distance=..4,scores={sea_4temp1=..67}] if entity @a[tag=SEAPT,x=90136,dx=30,y=104,dy=8,z=88,dz=30] run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
+execute if entity @s[x=90161,y=128,z=112,distance=..4,scores={sea_4temp1=..67}] if entity @a[tag=SEAPT,x=90136,dx=30,y=104,dy=8,z=88,dz=30] at @s run tp @s ~ 103 ~
 
 execute as @s[scores={sea_4temp1=83}] at @s if entity @n[tag=sc,scores={sea_player=1}] run tellraw @a[distance=0..250,tag=!e_i_28,tag=!e_i_27] {"text":"越涵：“哎先听我说，你是从宿舍楼那儿过来的吧？你有见到过斯顿吗？”","color":"green"}
 execute as @s[scores={sea_4temp1=83}] at @s if entity @n[tag=sc,scores={sea_player=2..}] run tellraw @a[distance=0..250,tag=!e_i_28,tag=!e_i_27] {"text":"越涵：“哎先听我说，你们是从宿舍楼那儿过来的吧？你们谁有见到过斯顿吗？”","color":"green"}

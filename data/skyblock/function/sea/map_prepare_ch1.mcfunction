@@ -142,6 +142,8 @@ summon minecraft:interaction 90142 123.3 136 {CustomName:'[{"text":"多功能工
 summon minecraft:marker 90141 122 136 {Tags:["SEAcrafter_tp","SEAcrafter_tp2"]}
 summon minecraft:interaction 90099 123.3 117 {CustomName:'[{"text":"多功能工作站"}]',Tags:["SEAcrafter","SEAcrafter3"]}
 summon minecraft:marker 90099 122 116 {Tags:["SEAcrafter_tp","SEAcrafter_tp3"]}
+summon minecraft:interaction 90145 104.3 113 {CustomName:'[{"text":"多功能工作站"}]',Tags:["SEAcrafter","SEAcrafter10"]}
+summon minecraft:marker 90146 103 113 {Tags:["SEAcrafter_tp","SEAcrafter_tp10"]}
 setblock 90131 123 111 minecraft:crimson_button[facing=south]
 fill 90111 122 143 90108 122 143 lever[facing=north,powered=false]
 kill @e[type=painting,x=90136,y=124,z=115,distance=0..5]
@@ -404,6 +406,8 @@ item replace block 90081 83 143 container.11 with flint 1
 item replace block 90081 83 143 container.13 with iron_ingot 1
 item replace block 90081 83 143 container.15 with flint 1
 
-
+setblock 90145 103 110 chest[facing=east]
+item replace block 90145 103 110 container.12 with coal 1
+item replace block 90145 103 110 container.14 with iron_ingot 1
 
 
