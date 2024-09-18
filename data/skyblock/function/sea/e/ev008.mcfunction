@@ -58,8 +58,33 @@ execute as @s[scores={sea_4temp1=199}] at @s if entity @a[tag=SEAPT,x=90147,y=10
 execute as @s[scores={sea_4temp1=199},x=90143,y=103,z=99,distance=4.5..] at @s if entity @a[tag=SEAPT,x=90143,y=103,z=99,distance=0..4] unless entity @a[tag=SEAPT,x=90147,y=103,z=114,distance=0..4] unless entity @a[tag=SEAPT,x=90162,y=103,z=113,distance=0..5] run tp @s 90143 103 99
 
 
+execute as @s[scores={sea_4temp1=329}] at @s if entity @n[tag=sc,scores={sea_player=1..}] run tellraw @a[distance=0..250] {"text":"越涵：“说真的，没人能想到咱们这里能遇到这么离谱的事情。”","color":"green"}
+execute as @s[scores={sea_4temp1=329}] at @s if entity @a[tag=!e_i_27] run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
 
 
+execute as @s[scores={sea_4temp1=399}] at @s if entity @n[tag=sc,scores={sea_player=1}] run tellraw @a[distance=0..250] {"text":"越涵：“老哥，你在这里搜救多久了？”","color":"green"}
+execute as @s[scores={sea_4temp1=399}] at @s if entity @n[tag=sc,scores={sea_player=2..}] run tellraw @a[distance=0..250] {"text":"越涵：“老哥，你们在这里搜救多久了？”","color":"green"}
+execute as @s[scores={sea_4temp1=399}] at @s if entity @a[tag=!e_i_27] run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
+execute as @s[scores={sea_4temp1=429}] at @s if entity @n[tag=sc,scores={sea_player=1..}] run tellraw @a[distance=0..250] {"text":"越涵：“我靠，杀穿维修层和物资层，当代战神啊。”","color":"green"}
+execute as @s[scores={sea_4temp1=429}] at @s if entity @a[tag=!e_i_27] run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
+
+execute as @s[scores={sea_4temp1=539}] at @s if entity @n[tag=sc,scores={sea_player=1..}] run tellraw @a[distance=0..250] {"text":"越涵：“再不走黄花菜都凉喽。”","color":"green"}
+execute as @s[scores={sea_4temp1=539}] at @s if entity @a[tag=!e_i_27] run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
+
+execute as @s[scores={sea_4temp1=619}] at @s if entity @n[tag=sc,scores={sea_player=1..}] run tellraw @a[distance=0..250] {"text":"越涵：“你见过艾德雯娜了吗？她好像也在平台上行动，但我没有联系到她的方式。”","color":"green"}
+execute as @s[scores={sea_4temp1=619}] at @s if entity @a[tag=!e_i_27] run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
+
+execute as @s[scores={sea_4temp1=689}] at @s if entity @n[tag=sc,scores={sea_player=1..}] run tellraw @a[distance=0..250] {"text":"越涵：“对啊，艾德雯娜不知道还活没活着……她身手了得，应该不会有太大问题。”","color":"green"}
+execute as @s[scores={sea_4temp1=689}] at @s if entity @a[tag=!e_i_27] run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
+
+
+execute as @s[scores={sea_4temp1=839}] at @s if entity @n[tag=sc,scores={sea_player=1..}] run tellraw @a[distance=0..250] {"text":"越涵：“吃个苹果？”","color":"green"}
+execute as @s[scores={sea_4temp1=839}] at @s if entity @n[tag=sc,scores={sea_player=1..}] run give @p[distance=0..6] apple 1
+execute as @s[scores={sea_4temp1=839}] at @s if entity @a[tag=!e_i_27] run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
+
+
+execute as @s[scores={sea_4temp1=939}] at @s if entity @n[tag=sc,scores={sea_player=1..}] run tellraw @a[distance=0..250] {"text":"越涵：“还是快点出发吧。我们没多少时间。”","color":"green"}
+execute as @s[scores={sea_4temp1=939}] at @s if entity @a[tag=!e_i_27] run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
 
 
 
