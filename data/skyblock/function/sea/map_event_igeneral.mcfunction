@@ -18,3 +18,7 @@ execute positioned ~ ~1 ~ as @n[type=interaction,tag=flamethrowerdetect] as @e[t
 execute as @a at @s if entity @s[nbt={SelectedItem:{id:"minecraft:shears",components:{"minecraft:custom_data":{sea_flamethrower:true}}}}] run function skyblock:sea/p/flamethrower
 
 execute as @a[tag=SEAPT] at @s run function skyblock:sea/p/player_fast
+
+
+execute if entity @a[tag=SEAPT,x=90123,y=0,z=98,dx=7,dy=103,dz=7] at @s run function skyblock:sea/e/ev009
+
