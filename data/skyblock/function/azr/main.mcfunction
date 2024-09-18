@@ -93,8 +93,7 @@ tag @a[tag=removeSpark] remove removeSpark
 execute if score isStarted Azr_system matches 0 as @a[tag=azrPlayer] run function skyblock:azr/end_game/quit_game
 execute as @a[tag=azrPlayer] unless score @s Azr_startCount = Pointer Azr_startCount run function skyblock:azr/end_game/quit_game
 #重置判定 - 游戏已开始但没有玩家
-execute if score isStarted Azr_system matches 1 if entity @a[x=-79931,y=100,z=0,distance=..10000] unless entity @a[tag=azrPlayer] run function skyblock:azr/endgame
-#另一种判断 似乎未被使用 execute if block -79933 39 -14 air if score isStarted Azr_system matches 0 if entity @a run function skyblock:azr/endgame
+execute if score isStarted Azr_system matches 1 if entity @a[x=-79931,y=100,z=0,distance=..10000,gamemode=!spectator] unless entity @a[tag=azrPlayer] run function skyblock:azr/endgame
 #DEBUG-关卡上限提示
 execute as @r[tag=azrPlayer] if score stage Azr_system = DEBUG_maxStageLimit Azr_system run tellraw @a[tag=azrPlayer] [{"text":"You have passed maximum stage(limited in debug mode) ","color": "red"},{"score":{"objective": "Azr_system","name": "stage"},"color":"light_purple"},{"text":"/","color":"light_purple"},{"score":{"objective": "Azr_system","name": "DEBUG_maxStageLimit"},"color":"light_purple"}]
 execute as @r[tag=azrPlayer] if score stage Azr_system = DEBUG_maxStageLimit Azr_system run function skyblock:azr/endgame
