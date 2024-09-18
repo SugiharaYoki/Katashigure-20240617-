@@ -54,8 +54,8 @@ execute as @s[scores={sea_4temp1=199}] at @s if entity @a[tag=!e_i_27] run plays
 execute as @s[scores={sea_4temp1=259}] at @s if entity @n[tag=sc,scores={sea_player=1..}] run tellraw @a[distance=0..250,tag=!e_i_27] {"text":"越涵：“他、怎么会这样……”","color":"green"}
 execute as @s[scores={sea_4temp1=259}] at @s if entity @a[tag=!e_i_27] run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
 
-execute as @s[scores={sea_4temp1=199..},x=90147,y=103,z=114,distance=5..] at @s if entity @a[tag=SEAPT,x=90147,y=103,z=114,distance=0..4] unless entity @a[tag=SEAPT,x=90162,y=103,z=113,distance=0..5] run tp @s 90149 103 111
-execute as @s[scores={sea_4temp1=199..},x=90143,y=103,z=99,distance=4.5..] at @s if entity @a[tag=SEAPT,x=90143,y=103,z=99,distance=0..4] unless entity @a[tag=SEAPT,x=90147,y=103,z=114,distance=0..4] unless entity @a[tag=SEAPT,x=90162,y=103,z=113,distance=0..5] run tp @s 90143 103 99
+execute as @s[scores={sea_4temp1=199..},x=90147,y=103,z=114,distance=5..] at @s if entity @a[tag=SEAPT,x=90147,y=103,z=114,distance=0..4] unless entity @a[tag=SEAPT,x=90162,y=103,z=113,distance=0..5] unless entity @s[tag=SEAPT,x=90125,y=103,z=100,distance=0..5] run tp @s 90149 103 111
+execute as @s[scores={sea_4temp1=199..},x=90143,y=103,z=99,distance=4.5..] at @s if entity @a[tag=SEAPT,x=90143,y=103,z=99,distance=0..4] unless entity @a[tag=SEAPT,x=90147,y=103,z=114,distance=0..4] unless entity @a[tag=SEAPT,x=90162,y=103,z=113,distance=0..5] unless entity @s[tag=SEAPT,x=90125,y=103,z=100,distance=0..5] run tp @s 90143 103 99
 
 
 execute as @s[scores={sea_4temp1=329}] at @s if entity @n[tag=sc,scores={sea_player=1..}] run tellraw @a[distance=0..250] {"text":"越涵：“说真的，没人能想到咱们这里能遇到这么离谱的事情。”","color":"green"}
