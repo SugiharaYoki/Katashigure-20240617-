@@ -21,6 +21,7 @@ execute as @s[x=90161,y=128,z=112,distance=..4,scores={sea_4temp1=69}] at @s if 
 execute as @s[x=90161,y=128,z=112,distance=4..,scores={sea_4temp1=69}] at @s if entity @n[tag=sc,scores={sea_player=1..}] run tellraw @a[distance=0..250,tag=!e_i_28,tag=!e_i_27] {"text":"越涵：“我是维修部门的越涵。上头太危险了，但既然你都跳下来了……哎老哥，以后能不能别做这种事？”","color":"green"}
 execute as @s[x=90161,y=128,z=112,distance=4..,scores={sea_4temp1=69}] at @s if entity @n[tag=sc,scores={sea_player=1..}] run tellraw @a[distance=0..250,tag=e_i_28,tag=!e_i_27] {"text":"越涵：“他们还好吗？还有……你他妈还好吗？得亏你没摔死。”","color":"green"}
 execute as @s[x=90161,y=128,z=112,distance=4..,scores={sea_4temp1=69}] at @s if entity @n[tag=sc,scores={sea_player=1..}] run tellraw @a[distance=0..250,tag=e_i_28,tag=e_i_27] {"text":"越涵：“不，我还得说一句：你是傻逼吗，还嫌自己死的不够快？”","color":"green"}
+execute as @s[x=90161,y=128,z=112,distance=4..,scores={sea_4temp1=69}] at @s if entity @n[tag=sc,scores={sea_player=1..}] run fill 90163 129 113 90163 127 114 air
 execute as @s[scores={sea_4temp1=69}] at @s run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
 
 execute as @s[scores={sea_4temp1=73}] at @s run tp @s ~ 103 ~
