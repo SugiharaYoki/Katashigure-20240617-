@@ -37,7 +37,7 @@ scoreboard players remove @e[tag=SEAbossch3_light,scores={sea_4temp2=0..}] sea_4
 execute as @e[tag=SEAbossch3_light,scores={sea_4temp2=..0}] at @s if block ~ ~ ~ waxed_exposed_copper_bulb run setblock ~ ~ ~ waxed_exposed_copper_bulb[lit=false]
 tag @e[tag=SEAbossch3_light,scores={sea_4temp2=..0}] remove SEAbossch3_light_on
 
-execute as @e[tag=SEAbossch3_light] at @s if entity @a[tag=SEAPT,distance=0..2] run scoreboard players set @s sea_4temp2 60
+execute as @e[tag=SEAbossch3_light] at @s if entity @a[tag=SEAPT,distance=0..2] run scoreboard players set @s sea_4temp2 80
 execute as @e[tag=SEAbossch3_light] at @s if entity @a[tag=SEAPT,distance=0..2] if block ~ ~ ~ waxed_exposed_copper_bulb run setblock ~ ~ ~ waxed_exposed_copper_bulb[lit=true]
 execute as @e[tag=SEAbossch3_light] at @s if entity @a[tag=SEAPT,distance=0..2] run tag @s add SEAbossch3_light_on
 
