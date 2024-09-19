@@ -418,3 +418,4 @@ fill 90127 102 99 90125 102 101 barrier
 setblock 90116 104 104 chest[facing=south]
 item replace block 90116 104 104 container.12 with coal 1
 item replace block 90116 104 104 container.14 with gunpowder 2
+fill 90117 103 109 90117 99 109 air

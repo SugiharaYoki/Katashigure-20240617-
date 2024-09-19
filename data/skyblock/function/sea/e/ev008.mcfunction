@@ -24,10 +24,12 @@ execute as @s[x=90161,y=128,z=112,distance=4..,scores={sea_4temp1=69}] at @s if 
 execute as @s[scores={sea_4temp1=69}] at @s run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
 
 execute as @s[scores={sea_4temp1=73}] at @s run tp @s ~ 103 ~
+execute as @s[scores={sea_4temp1=73}] at @s run fill 90117 103 109 90117 99 109 ladder[facing=south]
 
 execute if entity @s[x=90161,y=128,z=112,distance=..4,scores={sea_4temp1=..67}] if entity @a[tag=SEAPT,x=90136,dx=30,y=104,dy=10,z=88,dz=30] run tellraw @a[distance=0..250,tag=!e_i_28] {"text":"？？？：“啊等、你怎么直接往下跳了？你先过来啊……”","color":"green"}
 execute if entity @s[x=90161,y=128,z=112,distance=..4,scores={sea_4temp1=..67}] if entity @a[tag=SEAPT,x=90136,dx=30,y=104,dy=10,z=88,dz=30] run tellraw @a[distance=0..250,tag=e_i_28] {"text":"越涵：“我靠你干什么，你不要命了？老老实实坐电梯都不会的吗？”","color":"green"}
 execute if entity @s[x=90161,y=128,z=112,distance=..4,scores={sea_4temp1=..67}] if entity @a[tag=SEAPT,x=90136,dx=30,y=104,dy=10,z=88,dz=30] run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
+
 execute if entity @s[x=90161,y=128,z=112,distance=..4,scores={sea_4temp1=..67}] if entity @a[tag=SEAPT,x=90136,dx=30,y=104,dy=10,z=88,dz=30] at @s run fill 90163 129 113 90163 127 114 air
 execute if entity @s[x=90161,y=128,z=112,distance=..4,scores={sea_4temp1=..67}] if entity @a[tag=SEAPT,x=90136,dx=30,y=104,dy=10,z=88,dz=30] at @s run tp @s ~ 103 ~
 
