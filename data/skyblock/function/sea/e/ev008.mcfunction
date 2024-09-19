@@ -91,16 +91,18 @@ execute as @s[scores={sea_4temp1=1239}] at @s if entity @a[tag=!e_i_27] run play
 
 
 execute if entity @a[tag=SEAPT,distance=..6] run scoreboard players add @s[scores={sea_4temp1=1302..}] sea_4temp1 1
+#bug排查：下面这条语句不会执行
 execute as @s[tag=SEA_ch4elevator_end,scores={sea_4temp1=..1300}] at @s run scoreboard players set @s[scores={sea_4temp1=..1301}] sea_4temp1 1302
 
-execute as @s[tag=SEA_ch4elevator_end,scores={sea_4temp1=..1310}] at @s if entity @n[tag=sc,scores={sea_player=1..}] run tellraw @a[distance=0..250] {"text":"越涵：“坏事了，这底下居然没有升降开关。”","color":"green"}
-execute as @s[tag=SEA_ch4elevator_end,scores={sea_4temp1=..1310}] at @s run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
+#修复了时间轴
+execute as @s[tag=SEA_ch4elevator_end,scores={sea_4temp1=1310}] at @s if entity @n[tag=sc,scores={sea_player=1..}] run tellraw @a[distance=0..250] {"text":"越涵：“坏事了，这底下居然没有升降开关。”","color":"green"}
+execute as @s[tag=SEA_ch4elevator_end,scores={sea_4temp1=1310}] at @s run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
 
-execute as @s[tag=SEA_ch4elevator_end,scores={sea_4temp1=..1340}] at @s if entity @n[tag=sc,scores={sea_player=1..}] run tellraw @a[distance=0..250] {"text":"越涵：“我就说他们怎么可能会留个这么方便的水下通道。妈的，果然中计了……”","color":"green"}
-execute as @s[tag=SEA_ch4elevator_end,scores={sea_4temp1=..1340}] at @s run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
+execute as @s[tag=SEA_ch4elevator_end,scores={sea_4temp1=1340}] at @s if entity @n[tag=sc,scores={sea_player=1..}] run tellraw @a[distance=0..250] {"text":"越涵：“我就说他们怎么可能会留个这么方便的水下通道。妈的，果然中计了……”","color":"green"}
+execute as @s[tag=SEA_ch4elevator_end,scores={sea_4temp1=1340}] at @s run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
 
-execute as @s[tag=SEA_ch4elevator_end,scores={sea_4temp1=..1375}] at @s if entity @n[tag=sc,scores={sea_player=1}] run tellraw @a[distance=0..250] {"text":"越涵：“但他们一定想不到你就一个人也能杀穿这座平台，干脆来个将计就计。反正本来就做好死在这儿的准备了。”","color":"green"}
-execute as @s[tag=SEA_ch4elevator_end,scores={sea_4temp1=..1375}] at @s if entity @n[tag=sc,scores={sea_player=2..}] run tellraw @a[distance=0..250] {"text":"越涵：“但他们一定想不到你们的实力如此强大，干脆来个将计就计。反正本来就做好死在这儿的准备了。”","color":"green"}
-execute as @s[tag=SEA_ch4elevator_end,scores={sea_4temp1=..1375}] at @s run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
+execute as @s[tag=SEA_ch4elevator_end,scores={sea_4temp1=1375}] at @s if entity @n[tag=sc,scores={sea_player=1}] run tellraw @a[distance=0..250] {"text":"越涵：“但他们一定想不到你就一个人也能杀穿这座平台，干脆来个将计就计。反正本来就做好死在这儿的准备了。”","color":"green"}
+execute as @s[tag=SEA_ch4elevator_end,scores={sea_4temp1=1375}] at @s if entity @n[tag=sc,scores={sea_player=2..}] run tellraw @a[distance=0..250] {"text":"越涵：“但他们一定想不到你们的实力如此强大，干脆来个将计就计。反正本来就做好死在这儿的准备了。”","color":"green"}
+execute as @s[tag=SEA_ch4elevator_end,scores={sea_4temp1=1375}] at @s run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
 
 
