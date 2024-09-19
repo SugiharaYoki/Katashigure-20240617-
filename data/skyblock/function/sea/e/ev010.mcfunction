@@ -12,13 +12,13 @@ execute if entity @a[tag=SEAPT,x=90138,y=17,z=100,distance=0..4,tag=!e_i_32] unl
 
 execute if entity @a[tag=SEAPT,x=90138,y=17,z=100,distance=0..4,tag=!e_i_32] store result bossbar minecraft:9066602 value if entity @e[tag=SEAbossch3_light,tag=SEAbossch3_light_on]
 
-execute unless entity @n[tag=SEAbossch3_core] run summon marker 90138 16 100 {Tags:["SEAbossch3_light"]}
-execute unless entity @n[tag=SEAbossch3_core] run summon marker 90138 16 93 {Tags:["SEAbossch3_light"]}
-execute unless entity @n[tag=SEAbossch3_core] run summon marker 90131 18 93 {Tags:["SEAbossch3_light"]}
-execute unless entity @n[tag=SEAbossch3_core] run summon marker 90130 20 80 {Tags:["SEAbossch3_light"]}
-execute unless entity @n[tag=SEAbossch3_core] run summon marker 90145 22 92 {Tags:["SEAbossch3_light"]}
-execute unless entity @n[tag=SEAbossch3_core] run summon marker 90152 16 80 {Tags:["SEAbossch3_light"]}
-execute unless entity @n[tag=SEAbossch3_core] run summon marker 90141 18 77 {Tags:["SEAbossch3_light"]}
+execute unless entity @n[tag=SEAbossch3_core] run summon marker 90138 16 100 {Tags:["SEAbossch3_light","SEAmarker_killable"]}
+execute unless entity @n[tag=SEAbossch3_core] run summon marker 90138 16 93 {Tags:["SEAbossch3_light","SEAmarker_killable"]}
+execute unless entity @n[tag=SEAbossch3_core] run summon marker 90131 18 93 {Tags:["SEAbossch3_light","SEAmarker_killable"]}
+execute unless entity @n[tag=SEAbossch3_core] run summon marker 90130 20 80 {Tags:["SEAbossch3_light","SEAmarker_killable"]}
+execute unless entity @n[tag=SEAbossch3_core] run summon marker 90145 22 92 {Tags:["SEAbossch3_light","SEAmarker_killable"]}
+execute unless entity @n[tag=SEAbossch3_core] run summon marker 90152 16 80 {Tags:["SEAbossch3_light","SEAmarker_killable"]}
+execute unless entity @n[tag=SEAbossch3_core] run summon marker 90141 18 77 {Tags:["SEAbossch3_light","SEAmarker_killable"]}
 execute unless entity @n[tag=SEAbossch3_core] run scoreboard players set @n[tag=SEAbossch3_light,x=90138,y=16,z=100,distance=0..3] sea_4temp2 -1
 execute unless entity @n[tag=SEAbossch3_core] run scoreboard players set @n[tag=SEAbossch3_light,x=90138,y=16,z=93,distance=0..3] sea_4temp2 40
 execute unless entity @n[tag=SEAbossch3_core] run scoreboard players set @n[tag=SEAbossch3_light,x=90131,y=18,z=93,distance=0..3] sea_4temp2 35
@@ -27,7 +27,7 @@ execute unless entity @n[tag=SEAbossch3_core] run scoreboard players set @n[tag=
 execute unless entity @n[tag=SEAbossch3_core] run scoreboard players set @n[tag=SEAbossch3_light,x=90152,y=16,z=80,distance=0..3] sea_4temp2 5
 execute unless entity @n[tag=SEAbossch3_core] run scoreboard players set @n[tag=SEAbossch3_light,x=90141,y=18,z=77,distance=0..3] sea_4temp2 -1
 
-summon marker 90138 18 104 {Tags:["SEAbossch3_core"]}
+summon marker 90138 18 104 {Tags:["SEAbossch3_core","SEAmarker_killable"]}
 
 execute as @a[tag=SEAPT,x=90138,y=17,z=100,distance=0..4,tag=!e_i_32] at @s run playsound minecraft:app2.darkenergy music @s ~ ~ ~ 1000 1.0
 execute as @a[tag=SEAPT,x=90138,y=17,z=100,distance=0..4,tag=!e_i_32] at @s run tag @s add e_i_32
