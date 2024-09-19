@@ -116,12 +116,12 @@ $execute as @s[scores={Azr_Shop_rng$(rng)=16,Azr_Shop=$(trigger)}] \
     rng16
 
 $execute as @s[scores={Azr_Shop_rng$(rng)=17,Azr_Shop=$(trigger)}] \
-    if items entity @s container.* paper[count={min:3},custom_data={sanct_credo:1b}] \
+    if items entity @s container.* paper[count={min:3},custom_data~{sanct_credo:1b}] \
     run function skyblock:azr/shop/purchase/categorie1/\
     rng17
 
 $execute as @s[scores={Azr_Shop_rng$(rng)=18,Azr_Shop=$(trigger)}] \
-    if items entity @s container.* raw_iron[count={min:1},custom_data={raw_iron:1b}] \
+    if items entity @s container.* raw_iron[count={min:1},custom_data~{raw_iron:1b}] \
     if items entity @s container.* charcoal[count={min:1}] \
     run function skyblock:azr/shop/purchase/categorie1/\
     rng18
@@ -142,20 +142,20 @@ $execute as @s[scores={Azr_Shop_rng$(rng)=21,Azr_Shop=$(trigger)}] \
     rng21
 
 $execute as @s[scores={Azr_Shop_rng$(rng)=22,Azr_Shop=$(trigger)}] \
-    if items entity @s container.* raw_gold[count={min:1},custom_data={raw_gold:1b}] \
+    if items entity @s container.* raw_gold[count={min:1},custom_data~{raw_gold:1b}] \
     if items entity @s container.* charcoal[count={min:1}] \
     run function skyblock:azr/shop/purchase/categorie1/\
     rng22
 
 $execute as @s[scores={Azr_Shop_rng$(rng)=23,Azr_Shop=$(trigger)}] \
-    if items entity @s container.* gold_ingot[count={min:1},custom_data={soft_gold:1b}] \
+    if items entity @s container.* gold_ingot[count={min:1},custom_data~{soft_gold:1b}] \
     if score @s Azr_emerald matches 8.. \
     run function skyblock:azr/shop/purchase/categorie1/\
     rng23
 
 $execute as @s[scores={Azr_Shop_rng$(rng)=24,Azr_Shop=$(trigger)}] \
     if items entity @s container.* carrot[count={min:1}] \
-    if items entity @s container.* gold_ingot[count={min:1},custom_data={soft_gold:1b}] \
+    if items entity @s container.* gold_ingot[count={min:1},custom_data~{soft_gold:1b}] \
     if score @s Azr_emerald matches 6.. \
     run function skyblock:azr/shop/purchase/categorie1/\
     rng24
