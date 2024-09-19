@@ -1,5 +1,5 @@
-execute if entity @a[tag=SeGa_DVA,nbt={Inventory:[{id:"minecraft:emerald"}]}] run function skyblock:dv/dv_currency_converter
-execute if entity @a[tag=SeGa_DVA,nbt={Inventory:[{id:"minecraft:diamond"}]}] run function skyblock:dv/dv_currency_converter
+execute as @a[tag=SeGa_DVA,nbt={Inventory:[{id:"minecraft:emerald"}]}] run function skyblock:dv/dv_currency_converter
+execute as @a[tag=SeGa_DVA,nbt={Inventory:[{id:"minecraft:diamond"}]}] run function skyblock:dv/dv_currency_converter
 execute if entity @n[tag=sc,scores={SeGa_DVTimer=6..}] store result bossbar minecraft:8532101 value run data get entity @e[tag=SeGaDVProt,limit=1] Health
 
 execute as @a[tag=SeGa_DVA] at @s run function skyblock:dv/dv_corex10_replacer

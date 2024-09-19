@@ -20,7 +20,6 @@ execute if entity @n[tag=sc,scores={SeGa_DVTimer=5}] run tellraw @a[tag=SeGa_DVA
 execute if entity @n[tag=sc,scores={SeGa_DVTimer=6}] run tellraw @a[tag=SeGa_DVA] {"text":" - 游戏开始 - ","color":"green"}
 execute if entity @n[tag=sc,scores={SeGa_DVTimer=6}] run scoreboard players set @n[tag=sc] SeGa_DVTimerx10 0
 execute if entity @n[tag=sc,scores={SeGa_DVTimer=6}] run scoreboard players set @n[tag=sc] SeGa_DVTimerQT 0
-execute if entity @n[tag=sc,scores={SeGa_DVTimer=6}] run execute as @a[tag=SeGa_DVA] at @s run function skyblock:dv/dv_sys_initialspawn
 #execute if entity @n[tag=sc,scores={SeGa_DVTimer=6..}] run effect give @a[tag=SeGa_DVA] haste 10 39 true
 execute if entity @n[tag=sc,scores={SeGa_DVTimer=6..}] if entity @a[tag=SeGa_DVA,x=-90001,y=105,z=56,distance=0..200,gamemode=!spectator] as @a[x=-90001,y=105,z=56,distance=0..200,tag=!SeGa_DVA,gamemode=!spectator] at @s run tellraw @s {"text":"你加入了一场正在进行中的『云亭攻防战』","color":"yellow"}
 execute if entity @n[tag=sc,scores={SeGa_DVTimer=6..}] if entity @a[tag=SeGa_DVA,x=-90001,y=105,z=56,distance=0..200,gamemode=!spectator] as @a[x=-90001,y=105,z=56,distance=0..200,tag=!SeGa_DVA,gamemode=!spectator] at @s run function skyblock:dv/dv_sys_initialspawn

@@ -1,4 +1,6 @@
 scoreboard players set @s MultiMenu 0
+function skyblock:api_start_any_game
+function skyblock:dv/dv_sys_initialspawn
 execute as @e[x=-90000,y=50,z=0,distance=..1000,type=!player] at @s run tp ~ ~-400 ~
 clone -90002 99 1 -90000 99 24 -90002 101 1
 fill -90002 101 25 -90002 101 25 grass_block
