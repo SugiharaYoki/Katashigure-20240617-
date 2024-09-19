@@ -359,5 +359,14 @@ fill 90149 137 152 90149 138 152 minecraft:stone_bricks
 
 summon block_display 90125.0 102 99.0 {transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[3f,0.9f,3f],translation:[0f,0f,0f]},block_state:{Name:iron_block},Tags:["sea_blockdisplay","sea_ch4elevator1"],Rotation:[0f,0f]}
 
+fill 90139 36 99 90137 36 101 waxed_copper_block
+setblock 90138 16 100 waxed_exposed_copper_bulb[lit=true]
+setblock 90138 16 93 waxed_exposed_copper_bulb[lit=true]
+setblock 90131 18 93 waxed_exposed_copper_bulb[lit=true]
+setblock 90130 20 80 waxed_exposed_copper_bulb[lit=true]
+setblock 90145 22 92 waxed_exposed_copper_bulb[lit=true]
+setblock 90152 16 80 waxed_exposed_copper_bulb[lit=true]
+setblock 90141 18 77 waxed_exposed_copper_bulb[lit=false]
+
 
 

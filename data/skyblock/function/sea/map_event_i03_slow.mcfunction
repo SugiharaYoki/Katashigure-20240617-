@@ -416,6 +416,6 @@ execute as @n[tag=SEAyuehan] at @s unless block 90131 161 144 air run function s
 execute as @a[tag=SEAPT,x=90138,y=103,z=100,distance=0..2.7,tag=!e_i_29] at @s run tellraw @s {"text": "我有预感……去了更下层后就很难再回来了。做好万全的准备再前进吧。","color": "gray"}
 execute as @a[tag=SEAPT,x=90138,y=103,z=100,distance=0..2.7,tag=!e_i_29] at @s run tag @s add e_i_29
 
-
-
+execute as @a[tag=SEAPT,x=90138,y=36,z=100,distance=0..2.7,tag=!e_i_31] at @s run function skyblock:sea/e/ev010
+execute if entity @n[tag=SEAbossch3_core] at @s run function skyblock:sea/e/ev010
 
