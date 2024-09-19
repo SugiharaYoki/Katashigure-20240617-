@@ -3,14 +3,14 @@ execute unless entity @n[tag=SEAbossch3_core] run fill 90139 36 99 90137 36 101 
 execute unless entity @n[tag=SEAbossch3_core] as @p[tag=SEAPT] at @s as @a[gamemode=spectator] at @s run playsound minecraft:app2.darkenergy music @s ~ ~ ~ 1000 1.0
 
 
-execute if entity @a[tag=SEAPT,x=90138,y=17,z=100,distance=0..4,tag=!e_i_32] unless entity @n[tag=SEAbossch3_core] run bossbar add 9066602 "命熄之灯 - 点燃数量"
-execute if entity @a[tag=SEAPT,x=90138,y=17,z=100,distance=0..4,tag=!e_i_32] unless entity @n[tag=SEAbossch3_core] run bossbar set minecraft:9066602 color purple
-execute if entity @a[tag=SEAPT,x=90138,y=17,z=100,distance=0..4,tag=!e_i_32] unless entity @n[tag=SEAbossch3_core] run bossbar set minecraft:9066602 name "命熄之灯 - 点燃数量"
-execute if entity @a[tag=SEAPT,x=90138,y=17,z=100,distance=0..4,tag=!e_i_32] unless entity @n[tag=SEAbossch3_core] run bossbar set minecraft:9066602 players @a[tag=SEAPT]
-execute if entity @a[tag=SEAPT,x=90138,y=17,z=100,distance=0..4,tag=!e_i_32] unless entity @n[tag=SEAbossch3_core] run bossbar set minecraft:9066602 style progress
-execute if entity @a[tag=SEAPT,x=90138,y=17,z=100,distance=0..4,tag=!e_i_32] unless entity @n[tag=SEAbossch3_core] run bossbar set minecraft:9066602 max 7
+execute unless entity @n[tag=SEAbossch3_core] run bossbar add 9066602 "命熄之灯 - 点燃数量"
+execute unless entity @n[tag=SEAbossch3_core] run bossbar set minecraft:9066602 color purple
+execute unless entity @n[tag=SEAbossch3_core] run bossbar set minecraft:9066602 name "命熄之灯 - 点燃数量"
+execute if entity @a[tag=SEAPT,x=90138,y=17,z=100,distance=0..4,tag=!e_i_32] run bossbar set minecraft:9066602 players @a[tag=SEAPT]
+execute unless entity @n[tag=SEAbossch3_core] run bossbar set minecraft:9066602 style progress
+execute unless entity @n[tag=SEAbossch3_core] run bossbar set minecraft:9066602 max 7
 
-execute if entity @a[tag=SEAPT,x=90138,y=17,z=100,distance=0..4,tag=!e_i_32] store result bossbar minecraft:9066602 value if entity @e[tag=SEAbossch3_light,tag=SEAbossch3_light_on]
+execute store result bossbar minecraft:9066602 value if entity @e[tag=SEAbossch3_light,tag=SEAbossch3_light_on]
 
 execute unless entity @n[tag=SEAbossch3_core] run summon marker 90138 16 100 {Tags:["SEAbossch3_light","SEAmarker_killable"]}
 execute unless entity @n[tag=SEAbossch3_core] run summon marker 90138 16 93 {Tags:["SEAbossch3_light","SEAmarker_killable"]}
