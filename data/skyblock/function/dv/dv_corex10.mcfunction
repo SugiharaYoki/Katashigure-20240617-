@@ -33,3 +33,4 @@ execute if entity @n[tag=sc,scores={SeGa_DVTimer=6..}] unless entity @e[tag=SeGa
 execute if entity @n[tag=sc,scores={SeGa_DVTimer=6..}] unless entity @e[tag=SeGaDVProt,x=-90001,y=105,z=56,distance=0..50] run summon lightning_bolt -90001 105 56
 execute if entity @n[tag=sc,scores={SeGa_DVTimer=6..}] unless entity @e[tag=SeGaDVProt,x=-90001,y=105,z=56,distance=0..50] run tellraw @a[tag=SeGa_DVA] {"text":"云端亭主不幸死亡！游戏结束！","color":"red"}
 execute if entity @n[tag=sc,scores={SeGa_DVTimer=6..}] unless entity @e[tag=SeGaDVProt,x=-90001,y=105,z=56,distance=0..50] run function skyblock:dv/dv_sys_initialize
+execute if entity @n[tag=sc,scores={SeGa_DVTimer=6..}] unless entity @e[tag=SeGaDVProt,x=-90001,y=105,z=56,distance=0..50] run function skyblock:api_quit_any_game
