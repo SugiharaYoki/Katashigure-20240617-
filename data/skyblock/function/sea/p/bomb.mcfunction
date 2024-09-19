@@ -1,3 +1,5 @@
+    function skyblock:protector/entity_count_start
+
 particle large_smoke ~ ~ ~ 4 1 4 0.0 20
 particle explosion ~ ~ ~ 1 1 1 0.0 5
 particle explosion_emitter ~ ~ ~ 0.8 0.8 0.8 0.0 10
@@ -93,3 +95,6 @@ execute positioned ~-2 ~1 ~2 if block ~ ~ ~ slime_block run setblock ~ ~ ~ air d
 
 execute as @e[tag=SEAmagma1,type=marker,distance=0..2.5] at @s run setblock ~ ~ ~ air destroy
 execute as @e[tag=SEAmagma1,type=marker,distance=0..2.5] at @s run kill @s
+
+
+    function skyblock:protector/entity_count_end {function:"slyblock:sea/p/bomb"}

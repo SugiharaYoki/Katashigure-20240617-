@@ -1,3 +1,5 @@
+    function skyblock:protector/entity_count_start
+
 execute store result score sea rng1 run random value 1..10
 execute if score sea rng1 matches 1..4 run particle minecraft:electric_spark 90109.07 123.43 120.69 0.2 0.2 0.2 0.05 1
 execute if score sea rng1 matches 1..4 run particle minecraft:electric_spark 90115.88 123.41 138.48 0.2 0.2 0.2 0.05 1
@@ -22,3 +24,4 @@ execute as @a[tag=SEAPT] at @s run function skyblock:sea/p/player_fast
 
 execute if entity @a[tag=SEAPT,x=90123,y=0,z=98,dx=7,dy=103,dz=7] run function skyblock:sea/e/ev009
 
+    function skyblock:protector/entity_count_end {function:"slyblock:sea/map_event_igeneral"}
