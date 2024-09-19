@@ -15,7 +15,7 @@ scoreboard players operation @s Azr_emerald += @s Azr_emerald
 #初始化并传送自己
 execute at @r[tag=azrPlayer,distance=0.1..] run spawnpoint @s
 tp @s @r[tag=azrPlayer,distance=0.1..]
-function skyblock:azr/system_sub/player_init
+execute as @s run function skyblock:azr/system_sub/player_init
 function skyblock:azr/update_bossbar
 #生命手册
 execute if score stage Azr_system matches 3.. run tellraw @s[tag=!hasLifeVitae] {"text":"你已永久解锁「生命手册」。记得收集绿宝石与素材，使用手册换取必要的武器与道具。"}

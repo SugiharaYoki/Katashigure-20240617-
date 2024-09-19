@@ -1,4 +1,4 @@
-clear @s iron_sword[custom_data={iron_sword_normal:1b}]
-clear @s iron_ingot[custom_data={}]
+clear @s iron_sword[custom_data~{iron_sword_normal:1b}] 1
+clear @s iron_ingot[custom_data~{coal_iron:1b}] 1
 
-give @s egg[potion_contents={custom_color:16750848}]
+function skyblock:azr/items/iron_sword_coal_iron
