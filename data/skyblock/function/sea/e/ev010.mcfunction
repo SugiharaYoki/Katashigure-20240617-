@@ -1,3 +1,5 @@
+    function skyblock:protector/entity_count_start
+
 execute unless entity @n[tag=SEAbossch3_core] run tag @a[tag=SEAPT] add e_i_31
 execute unless entity @n[tag=SEAbossch3_core] run fill 90139 36 99 90137 36 101 air destroy
 execute unless entity @n[tag=SEAbossch3_core] as @p[tag=SEAPT] at @s as @a[gamemode=spectator] at @s run playsound minecraft:app2.darkenergy music @s ~ ~ ~ 1000 1.0
@@ -42,3 +44,5 @@ execute as @e[tag=SEAbossch3_light] at @s if entity @a[tag=SEAPT,distance=0..2] 
 execute as @e[tag=SEAbossch3_light] at @s if entity @a[tag=SEAPT,distance=0..2] run tag @s add SEAbossch3_light_on
 
 
+
+    function skyblock:protector/entity_count_end {function:"slyblock:sea/e/ev010"}

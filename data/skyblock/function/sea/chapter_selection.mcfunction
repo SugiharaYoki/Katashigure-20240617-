@@ -1,3 +1,4 @@
+    function skyblock:protector/entity_count_start
 
 setblock 90078 92 143 air
 setblock 90078 92 143 lever[facing=north,powered=false]
@@ -16,3 +17,4 @@ execute if block 90078 91 145 red_concrete run summon minecraft:armor_stand 9007
 execute if block 90078 91 145 orange_concrete run summon minecraft:armor_stand 90074 92.3 139 {CustomName:'{"text": "第三章 初始","color": "green"}',DisabledSlots:65793,CustomNameVisible:1b,Invisible:1b,Marker:1b,NoGravity:1b,Tags:["SEA_choose_chapter_3","SEA_choose_chapter"]}
 execute if block 90078 91 145 yellow_concrete run summon minecraft:armor_stand 90074 92.3 139 {CustomName:'{"text": "第一章 初始","color": "green"}',DisabledSlots:65793,CustomNameVisible:1b,Invisible:1b,Marker:1b,NoGravity:1b,Tags:["SEA_choose_chapter_1","SEA_choose_chapter"]}
 
+    function skyblock:protector/entity_count_end {function:"slyblock:sea/chapter_selection"}

@@ -1,3 +1,5 @@
+    function skyblock:protector/entity_count_start
+
 execute as @a[tag=SEAPT] at @s run function skyblock:sea/dead
 tag @n[tag=sc] remove sea_cb001
 tag @n[tag=sc] remove sea_cb002
@@ -112,3 +114,5 @@ summon minecraft:armor_stand 90074 93.5 139 {CustomName:'{"text": "『厄珀娅�
 summon minecraft:armor_stand 90074 93 139 {CustomName:'{"text": "探索孤独而死寂的海上堡垒","color": "white"}',DisabledSlots:65793,CustomNameVisible:1b,Invisible:1b,Marker:1b,NoGravity:1b}
 summon minecraft:armor_stand 90074 92.7 139 {CustomName:'{"text": "解开忒尔克西海上钻井平台的秘密","color": "white"}',DisabledSlots:65793,CustomNameVisible:1b,Invisible:1b,Marker:1b,NoGravity:1b}
 summon minecraft:armor_stand 90074 92.3 139 {CustomName:'{"text": "第一章 初始","color": "green"}',DisabledSlots:65793,CustomNameVisible:1b,Invisible:1b,Marker:1b,NoGravity:1b,Tags:["SEA_choose_chapter_1","SEA_choose_chapter"]}
+
+    function skyblock:protector/entity_count_end {function:"slyblock:sea/endgame_regen"}

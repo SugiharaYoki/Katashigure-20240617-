@@ -1,3 +1,5 @@
+    function skyblock:protector/entity_count_start
+
 execute as @e[x=90100,y=100,z=100,distance=0..500,type=!player] at @s run tp ~ ~-500 ~
 
 scoreboard objectives add sea_dead minecraft.custom:minecraft.deaths
@@ -427,3 +429,4 @@ item replace block 90108 99 107 container.15 with dune_armor_trim_smithing_templ
 execute positioned 90108 99 108 run function skyblock:sea/m/zombie_bomb
 
 
+function skyblock:protector/entity_count_end {function:"slyblock:sea/map_prepare_ch1"}

@@ -1,3 +1,5 @@
+    function skyblock:protector/entity_count_start
+
 execute if entity @a[tag=SEAPT,distance=..6] run scoreboard players add @s[scores={sea_4temp1=..592}] sea_4temp1 1
 execute as @s[scores={sea_4temp1=5}] at @s if entity @n[tag=sc,scores={sea_player=1}] run tellraw @a[distance=0..250] {"text":"？？？：“你是第一个成功上来的幸存者。”","color":"green"}
 execute as @s[scores={sea_4temp1=5}] at @s if entity @n[tag=sc,scores={sea_player=2}] run tellraw @a[distance=0..250] {"text":"？？？：“你们是唯二成功上来的幸存者。”","color":"green"}
@@ -122,5 +124,4 @@ execute as @s[scores={sea_4temp1=621}] positioned 90155 137 132 run function sky
 #execute as @s[scores={sea_4temp1=540..800}] at @s unless entity @a[tag=SEAPT,distance=..11] run tp @s ~ ~-500 ~
 #execute as @s[scores={sea_4temp1=540..800}] at @s unless entity @a[tag=SEAPT,distance=..11] run kill @s
 
-
-
+    function skyblock:protector/entity_count_end {function:"slyblock:sea/e/ev006"}

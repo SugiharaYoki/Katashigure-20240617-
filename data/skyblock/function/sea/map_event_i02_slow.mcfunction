@@ -1,3 +1,5 @@
+    function skyblock:protector/entity_count_start
+
 execute as @a[tag=SEAPT,x=90084,y=128,z=113,distance=0..3,tag=!e_i_13] at @s run title @s times 2s 4s 2s
 execute as @a[tag=SEAPT,x=90084,y=128,z=113,distance=0..3,tag=!e_i_13] at @s run title @s title {"text": "忒尔克西 · 物资层","color": "dark_blue"}
 execute as @a[tag=SEAPT,x=90084,y=128,z=113,distance=0..3,tag=!e_i_13] at @s run title @s subtitle {"text": "厄珀娅的悲歌 第贰章","color": "gray"}
@@ -662,3 +664,4 @@ execute as @n[tag=sc,scores={sea_4temp2=5030}] run setblock 90066 129 112 minecr
 
 #setblock 90066 129 112 minecraft:stone_button[facing=north]
 
+    function skyblock:protector/entity_count_end {function:"slyblock:sea/map_event_i02_slow"}
