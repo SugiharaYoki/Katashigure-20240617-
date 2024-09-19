@@ -74,6 +74,7 @@ tag @n[tag=sc] remove sea_doc26b
 tag @n[tag=sc] remove sea_doc27b
 kill @e[type=marker,x=80000,dx=20000,y=-99999,dy=99800,z=-10000,dz=20000]
 bossbar remove 9066601
+bossbar remove 9066602
 setblock -25 23 32 air
 #fill 90065 104 139 90065 104 141 barrier
 gamerule doDaylightCycle true
