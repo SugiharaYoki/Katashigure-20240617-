@@ -1,0 +1,1 @@
+tellraw @a[tag=Debug] ["wow, 4000 or more entities summoned (",{"score": {"name": "entityCountStart","objective": "skyblock_system"}},")"]

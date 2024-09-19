@@ -1,0 +1,1 @@
+tellraw @a[tag=Debug] ["terrible, 8000 or more entities summoned, server can't keep up! (",{"score": {"name": "entityCountStart","objective": "skyblock_system"}},")"]

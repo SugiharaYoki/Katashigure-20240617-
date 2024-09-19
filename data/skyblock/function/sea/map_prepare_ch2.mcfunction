@@ -1,3 +1,5 @@
+    function skyblock:protector/entity_count_start
+
 setblock 90058 103 142 minecraft:grindstone[facing=west,face=floor]
 
 setblock 90104 122 134 minecraft:air
@@ -372,3 +374,6 @@ fill 90085 103 140 90085 101 141 minecraft:air
 
 
 fill 90091 131 98 90095 128 98 minecraft:bricks
+
+
+    function skyblock:protector/entity_count_end {function:"skyblock:sea/map_prepare_ch2.mcfunction"}

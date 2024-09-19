@@ -1,3 +1,5 @@
+    function skyblock:protector/entity_count_start
+
 execute as @a[tag=SEAPT,x=90081,y=106,z=146,distance=0..1.3,tag=!e_i_01] at @s run tellraw @s {"text": "接待窗口内并没有工作人员。我观察了里面的痕迹，似乎工作人员离开得很匆忙。","color": "gray"}
 execute as @a[tag=SEAPT,x=90081,y=106,z=146,distance=0..1.3,tag=!e_i_01] at @s run tag @s add e_i_01
 
@@ -472,3 +474,5 @@ execute as @n[tag=sc,scores={sea_4temp2=6934}] at @n[tag=SEAframauros] run tag @
 execute as @n[tag=sc,scores={sea_4temp2=6934}] at @n[tag=SEAframauros] run scoreboard players set @n[tag=sc] sea_4temp2 4000
 
 execute as @n[tag=sc,scores={sea_4temp2=6300..7000}] unless entity @n[tag=SEAframauros] run scoreboard players set @n[tag=sc] sea_4temp2 5002
+
+    function skyblock:protector/entity_count_end {function:"skyblock:sea/map_event_i01_slow.mcfunction"}

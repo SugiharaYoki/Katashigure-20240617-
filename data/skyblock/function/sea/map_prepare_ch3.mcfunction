@@ -1,3 +1,5 @@
+    function skyblock:protector/entity_count_start
+
 setblock 90075 103 141 minecraft:cauldron
 
 scoreboard players set @n[tag=sc] sea_4temp2 0
@@ -368,5 +370,4 @@ setblock 90145 22 92 waxed_exposed_copper_bulb[lit=true]
 setblock 90152 16 80 waxed_exposed_copper_bulb[lit=true]
 setblock 90141 18 77 waxed_exposed_copper_bulb[lit=false]
 
-
-
+    function skyblock:protector/entity_count_end {function:"skyblock:sea/map_prepare_ch3.mcfunction"}

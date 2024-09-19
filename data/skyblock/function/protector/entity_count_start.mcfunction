@@ -1,0 +1,1 @@
+execute store result score entityCountStart skyblock_system if entity @e
