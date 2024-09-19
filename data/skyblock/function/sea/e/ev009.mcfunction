@@ -12,10 +12,10 @@ execute as @a[tag=SEAPT] at @s if block ~ ~-1 ~ barrier unless entity @a[tag=SEA
 execute if entity @n[tag=SEAyuehan,tag=SEA_ch4elevator_start] if block 90125 102 101 barrier run fill 90125 102 101 90127 102 99 air
 execute if entity @n[tag=SEAyuehan,tag=SEA_ch4elevator_start] as @a[tag=SEAPT] at @s if entity @n[tag=sea_ch4elevator1,distance=0..4.1] run effect give @s slow_falling 3 149 true
 execute if entity @n[tag=SEAyuehan,tag=SEA_ch4elevator_start] as @a[tag=SEAPT] at @s if entity @n[tag=sea_ch4elevator1,distance=0..4.1] run attribute @s generic.gravity base set 0.01
-execute if entity @n[tag=SEAyuehan,tag=SEA_ch4elevator_start] as @n[tag=sea_ch4elevator1] at @s at @p[tag=SEAPT,distance=0..4.1] run tp @s 90125.0 ~-0.9 99.0
+execute if entity @n[tag=SEAyuehan,tag=SEA_ch4elevator_start] as @n[tag=sea_ch4elevator1] at @s at @p[tag=SEAPT,distance=0..4.1] run tp @s 90125.0 ~-1.1 99.0
 execute if entity @n[tag=SEAyuehan,tag=SEA_ch4elevator_start] as @n[tag=sea_ch4elevator1] at @s run playsound block.chain.step ambient @a ~ ~ ~ 0.6 1.1
 execute if entity @n[tag=SEAyuehan,tag=SEA_ch4elevator_start] as @n[tag=sea_ch4elevator1] at @s run playsound block.chain.step ambient @a ~ ~ ~ 0.5 1.05
-execute as @n[tag=SEAyuehan,tag=SEA_ch4elevator_start] at @n[tag=sea_ch4elevator1] run tp @s 90125 ~0.9 100
+execute as @n[tag=SEAyuehan,tag=SEA_ch4elevator_start] at @n[tag=sea_ch4elevator1] run tp @s 90125 ~0.5 100
 
 execute as @n[tag=SEAyuehan,tag=SEA_ch4elevator_start] at @s as @p at @s if block ~ ~-0.01 ~ barrier run playsound item.mace.smash_ground block @a 90126 36 100 1 0.5
 execute as @n[tag=SEAyuehan,tag=SEA_ch4elevator_start] at @s as @p at @s if block ~ ~-0.01 ~ barrier run tag @n[tag=SEAyuehan] add SEA_ch4elevator_end
