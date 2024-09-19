@@ -1,4 +1,4 @@
-    function skyblock:protector/entity_count_start
+#    function skyblock:protector/entity_count_start
 
 scoreboard players add @n[tag=sc] sea_speedrun_ch1 1
 
@@ -336,4 +336,4 @@ execute as @n[tag=SEAmob_carrybomb,nbt=!{Fire:-1s}] run kill @s
 particle enchant 90093 131 102 3 3 3 0.01 20
 particle portal 90093 131 102 0.5 0.5 0.5 0.01 10
 
-    function skyblock:protector/entity_count_end {function:"slyblock:sea/map_event_igeneral_slow"}
+#    function skyblock:protector/entity_count_end {function:"slyblock:sea/map_event_igeneral_slow"}
