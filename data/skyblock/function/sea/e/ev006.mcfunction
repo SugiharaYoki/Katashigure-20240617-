@@ -62,7 +62,7 @@ execute as @s[scores={sea_4temp1=476}] at @s run playsound entity.villager.ambie
 execute as @s[scores={sea_4temp1=506}] at @s if entity @n[tag=sc,scores={sea_player=1}] run tellraw @a[distance=0..250] {"text":"马绍尔：“这样吧，我为你最后指一条路。”","color":"green"}
 execute as @s[scores={sea_4temp1=506}] at @s if entity @n[tag=sc,scores={sea_player=2..}] run tellraw @a[distance=0..250] {"text":"马绍尔：“这样吧，我为你们最后指一条路。”","color":"green"}
 execute as @s[scores={sea_4temp1=506}] at @s run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
-
+#建议把后面的流程控制放到这句话下面，玩家听完这句话可能就去电梯了
 execute as @s[scores={sea_4temp1=538}] at @s if entity @n[tag=sc,scores={sea_player=1..}] run tellraw @a[distance=0..250] {"text":"马绍尔：“沿着宿舍楼外的东南走道一直走，下到物资层。那里有一架电梯。”","color":"green"}
 execute as @s[scores={sea_4temp1=538}] at @s run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
 
@@ -84,6 +84,7 @@ execute as @s[scores={sea_4temp1=592}] run scoreboard players set @a[tag=SEAPT,s
 
 execute as @s[scores={sea_4temp1=730}] at @s run summon firework_rocket 90121 162 137 {LifeTime:35,FireworksItem:{id:firework_rocket,count:1,components:{fireworks:{flight_duration:25,explosions:[{shape:"large_ball",has_twinkle:0b,has_trail:1b,colors:[I;3887386],fade_colors:[I;4312372]}]}}}}
 
+#bug排查：这条tp没有意义
 execute as @s[scores={sea_4temp1=759}] at @s run tp @n[tag=SEAyuehan] 90100 -500 100
 execute as @s[scores={sea_4temp1=759}] at @s run kill @n[tag=SEAyuehan]
 execute as @s[scores={sea_4temp1=760}] at @s positioned 90162 127 113 run function skyblock:sea/m/npc_yuehan
