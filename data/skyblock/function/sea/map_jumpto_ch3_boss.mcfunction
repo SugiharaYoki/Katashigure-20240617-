@@ -33,6 +33,7 @@ give @a[tag=SEAPT] coal 3
 tag @a[tag=SEAPT] add e_w_01
 tag @a[tag=SEAPT] add e_w_02
 tag @a[tag=SEAPT] add e_w_03
+tag @a[tag=SEAPT] add e_w_04
 scoreboard players set @a[tag=SEAPT] sea_i_trim_zombie 24
 scoreboard players set @a[tag=SEAPT] sea_i_trim_spider 6
 scoreboard players set @a[tag=SEAPT] sea_i_trim_human 6
@@ -98,6 +99,9 @@ execute positioned 90126 161 148 run function skyblock:sea/m/npc_marshall
 scoreboard players set @n[tag=SEAmarshall] sea_4temp1 99999
 
 
+
+
+scoreboard players set @e[tag=SEAch3_spawn_timer] sea_4temp1 99999
 
 
 
