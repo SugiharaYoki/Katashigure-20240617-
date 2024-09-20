@@ -45,4 +45,4 @@ execute as @e[tag=SEAbossch3_light] at @s if entity @a[tag=SEAPT,distance=0..2] 
 
 
 
-    function skyblock:protector/entity_count_end {function:"slyblock:sea/e/ev010"}
+#    function skyblock:protector/entity_count_end {function:"slyblock:sea/e/ev010"}
