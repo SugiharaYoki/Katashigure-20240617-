@@ -124,3 +124,7 @@ execute positioned 90152 128 98 run function skyblock:sea/m/drowned_shield
 execute positioned 90152 128 98 run function skyblock:sea/m/drowned_shield
 execute positioned 90152 128 98 run function skyblock:sea/m/pillager
 execute positioned 90152 128 98 run function skyblock:sea/m/pillager
+
+
+execute positioned 90149 108 103 run tellraw @a[distance=0..250] {"text":"越涵：“……们、哥们？哎哟你终于有反应了，你在这发什么呆呢？怎么叫你都不理我。着魔了？”","color":"green"}
+execute positioned 90149 108 103 run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
