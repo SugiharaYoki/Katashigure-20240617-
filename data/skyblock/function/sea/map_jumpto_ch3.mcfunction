@@ -1,7 +1,7 @@
 execute as @a unless entity @s[scores={sea_progress=-999..}] run scoreboard players set @s sea_progress 0
 tp @a[x=90000,y=100,z=100,distance=..5000,scores={sea_progress=..5}] -43 55 0
 
-function skyblock:sea/map_jumpto_ch2
+function skyblock:sea/map_jumpto_ch2_boss
 function skyblock:sea/map_prepare_ch3
 
 clear @a[tag=SEAPT]
@@ -47,48 +47,6 @@ fill 90123 128 94 90123 130 92 air
 setblock 90130 128 92 air
 setblock 90147 132 91 air
 fill 90132 129 94 90131 128 92 air
-fill 90131 131 118 90131 129 116 minecraft:air
-fill 90143 131 116 90143 129 118 minecraft:air
-
-fill 90133 130 113 90133 129 113 minecraft:air
-fill 90133 130 121 90133 129 121 minecraft:air
-setblock 90125 130 115 minecraft:air
-fill 90130 129 119 90129 131 119 air
-fill 90104 130 103 90103 128 103 air
-setblock 90117 131 133 air
-fill 90129 129 139 90129 128 139 air
-setblock 90100 128 142 air
-setblock 90100 129 142 air
-setblock 90100 128 142 iron_door[facing=west,half=lower,open=true]
-setblock 90100 129 142 iron_door[facing=west,half=upper,open=true]
-fill 90130 129 144 90130 128 144 air
-
-setblock 90118 130 130 air
-setblock 90103 131 129 air
-setblock 90110 131 126 air
-setblock 90112 131 126 air
-setblock 90123 129 132 minecraft:redstone_wall_torch[facing=north]
-setblock 90111 129 130 minecraft:redstone_wall_torch[facing=north]
-fill 90140 129 134 90141 129 134 air
-fill 90140 128 134 90141 128 134 air
-
-fill 90131 130 129 90131 128 129 air
-fill 90124 130 137 90124 128 136 minecraft:air
-fill 90089 128 130 90088 128 130 air
-fill 90089 129 130 90088 129 130 air
-fill 90089 130 130 90088 130 130 air
-fill 90098 128 128 90098 128 127 air
-fill 90098 129 128 90098 129 127 air
-fill 90098 130 128 90098 130 127 air
-
-fill 90075 129 126 90075 128 126 air
-setblock 90077 131 141 air
-
-
-setblock 90096 132 112 air
-setblock 90092 132 112 white_stained_glass
-setblock 90088 132 112 white_stained_glass
-setblock 90084 132 112 white_stained_glass
 
 setblock 90066 129 112 minecraft:stone_button[facing=north]
 
