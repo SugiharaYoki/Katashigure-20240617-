@@ -45,7 +45,7 @@ execute as @e[tag=SEAbossch3_light] at @s if entity @a[tag=SEAPT,distance=0..2] 
 
 
 execute store result score SEA_CH3_BOSS sea_4temp1 run random value 1..20
-execute store result score SEA_CH3_BOSS sea_4temp2 run random value 1..8
+execute store result score SEA_CH3_BOSS sea_4temp2 run random value 1..4
 execute store result score SEA_CH3_BOSS sea_4temp3 run random value 1..12
 execute store result score SEA_CH3_BOSS sea_4temp4 at @n[tag=SEAbossch3_core] if entity @e[tag=SEAmob,distance=0..29]
 
