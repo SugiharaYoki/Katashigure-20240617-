@@ -94,7 +94,7 @@ execute if entity @n[tag=SEAbossch3_light_keep] at @n[tag=SEAbossch3_core,tag=!S
 execute if entity @n[tag=SEAbossch3_light_keep] at @n[tag=SEAbossch3_core,tag=!SEAbossch3_core_lighted] run stopsound @a[tag=SEAPT] music
 
 
-execute if entity @n[tag=SEAbossch3_light_keep] at @n[tag=SEAbossch3_core,tag=!SEAbossch3_core_lighted] run tag @s add SEAbossch3_core_lighted
+execute if entity @n[tag=SEAbossch3_light_keep] as @n[tag=SEAbossch3_core,tag=!SEAbossch3_core_lighted] run tag @s add SEAbossch3_core_lighted
 execute as @n[tag=SEAbossch3_core,tag=SEAbossch3_core_lighted] run scoreboard players add @s sea_4temp7 1
 
 execute as @n[tag=SEAbossch3_core,tag=SEAbossch3_core_lighted,scores={sea_4temp7=10}] run give @a[tag=SEAPT] nether_star
