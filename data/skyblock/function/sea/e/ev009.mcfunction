@@ -23,4 +23,4 @@ execute as @n[tag=SEAyuehan,tag=SEA_ch4elevator_start,scores={sea_4temp5=16..}] 
 execute as @n[tag=SEAyuehan,tag=SEA_ch4elevator_start,scores={sea_4temp5=16..}] at @s as @p[tag=SEAPT] at @s if block ~ ~-0.01 ~ barrier as @a[tag=SEAPT] run attribute @s generic.gravity base set 0.08
 execute as @n[tag=SEAyuehan,tag=SEA_ch4elevator_start,scores={sea_4temp5=16..}] at @s as @p[tag=SEAPT] at @s if block ~ ~-0.01 ~ barrier run tag @n[tag=SEAyuehan] remove SEA_ch4elevator_start
 
-scoreboard players add @n[tag=SEAyuehan] sea_4temp5 1
+execute as @a[tag=SEAPT] at @s if block ~ ~-1 ~ barrier run scoreboard players add @n[tag=SEAyuehan] sea_4temp5 1
