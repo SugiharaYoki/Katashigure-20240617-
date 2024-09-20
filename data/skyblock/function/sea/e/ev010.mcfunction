@@ -51,6 +51,14 @@ execute if entity @n[tag=SEAbossch3_core,scores={sea_4temp4=450}] unless entity 
 execute if entity @n[tag=SEAbossch3_core,scores={sea_4temp4=450}] unless entity @n[tag=SEAbossch3_light_keep] if entity @n[tag=sc,scores={sea_player=2..}] run tellraw @a[x=90100,y=100,z=100,distance=0..1000] {"text":"越涵：“我从墙里刨出电路了！我帮你们守着一盏灯，你们去搞其它的！”","color":"green"}
 execute if entity @n[tag=SEAbossch3_core,scores={sea_4temp4=450..}] unless entity @n[tag=SEAbossch3_light_keep] run setblock 90138 16 100 waxed_exposed_copper_bulb[lit=true]
 
+execute if entity @n[tag=SEAbossch3_core,scores={sea_4temp4=540}] unless entity @n[tag=SEAbossch3_light_keep] if entity @n[tag=sc,scores={sea_player=1}] if entity @a[tag=e_i_27] run tellraw @a[x=90100,y=100,z=100,distance=0..1000] {"text":"越涵：“第二……盏！！但我快坚持不住了，一定要做到，是你的话就绝对没问题！！”","color":"green"}
+execute if entity @n[tag=SEAbossch3_core,scores={sea_4temp4=540}] unless entity @n[tag=SEAbossch3_light_keep] if entity @n[tag=sc,scores={sea_player=2..}] if entity @a[tag=e_i_27] run tellraw @a[x=90100,y=100,z=100,distance=0..1000] {"text":"越涵：“第二……盏！！但我快坚持不住了，一定要做到，是你们的话就绝对没问题！！”","color":"green"}
+execute if entity @n[tag=SEAbossch3_core,scores={sea_4temp4=540..}] unless entity @n[tag=SEAbossch3_light_keep] if entity @a[tag=e_i_27] run setblock 90141 18 77 waxed_exposed_copper_bulb[lit=true]
+
+execute if entity @n[tag=SEAbossch3_core,scores={sea_4temp4=570}] unless entity @n[tag=SEAbossch3_light_keep] if entity @n[tag=sc,scores={sea_player=1}] if entity @a[tag=e_i_27] run tellraw @a[x=90100,y=100,z=100,distance=0..1000] {"text":"越涵：“操！我已经失去了斯顿，我不要连你也失去了！！他妈的，你给我活下来！！”","color":"green"}
+execute if entity @n[tag=SEAbossch3_core,scores={sea_4temp4=570}] unless entity @n[tag=SEAbossch3_light_keep] if entity @n[tag=sc,scores={sea_player=2..}] if entity @a[tag=e_i_27] run tellraw @a[x=90100,y=100,z=100,distance=0..1000] {"text":"越涵：“操！我已经失去了斯顿，我不要连你们也失去了！！他妈的，你们给我活下来！！”","color":"green"}
+
+
 execute as @a[tag=SEAPT,x=90138,y=17,z=100,distance=0..4,tag=!e_i_32] at @s run playsound minecraft:app2.darkenergy music @s ~ ~ ~ 1000 1.0
 execute as @a[tag=SEAPT,x=90138,y=17,z=100,distance=0..4,tag=!e_i_32] at @s run tag @s add e_i_32
 

@@ -413,6 +413,7 @@ execute as @n[tag=SEAmarshall] at @s run function skyblock:sea/e/ev006
 #execute unless block 90131 161 144 air as @a[tag=SEAPT,tag=!e_i_27] if block ~ ~-1 ~ polished_tuff run function skyblock:sea/e/ev007
 
 execute as @n[tag=SEAyuehan] at @s unless block 90131 161 144 air run function skyblock:sea/e/ev008
+execute as @n[tag=SEAyuehan] at @s unless entity @a[tag=e_i_25] unless block 90131 161 144 air run function skyblock:sea/e/ev008_b
 
 
 execute as @a[tag=SEAPT,x=90138,y=103,z=100,distance=0..2.7,tag=!e_i_29] at @s run tellraw @s {"text": "我有预感……去了更下层后就很难再回来了。做好万全的准备再前进吧。","color": "gray"}
