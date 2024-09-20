@@ -1,8 +1,7 @@
 execute as @a unless entity @s[scores={sea_progress=-999..}] run scoreboard players set @s sea_progress 0
 tp @a[x=90000,y=100,z=100,distance=..5000,scores={sea_progress=..5}] -43 55 0
 
-function skyblock:sea/map_prepare_ch1
-function skyblock:sea/map_prepare_ch2
+function skyblock:sea/map_jumpto_ch2
 function skyblock:sea/map_prepare_ch3
 
 clear @a[tag=SEAPT]
@@ -40,45 +39,6 @@ scoreboard players set @a[tag=SEAPT] sea_i_trim_ghost 0
 give @a[tag=SEAPT] emerald 64
 give @a[tag=SEAPT] emerald 24
 
-fill 90129 122 119 90129 122 120 air
-fill 90129 123 119 90129 123 120 air
-fill 90109 122 117 90110 123 117 air
-setblock 90127 121 117 redstone_lamp[lit=true]
-
-fill 90084 124 139 90084 122 139 air
-fill 90143 124 118 90143 122 119 air
-
-fill 90102 124 125 90102 124 126 air
-fill 90102 122 125 90102 122 126 air
-fill 90102 123 125 90102 123 126 air
-
-setblock 90086 129 122 minecraft:redstone_lamp[lit=false]
-setblock 90091 128 127 minecraft:red_candle[candles=1,lit=true]
-
-fill 90110 122 134 90109 122 134 air
-fill 90110 123 134 90109 123 134 air
-fill 90110 124 134 90109 124 134 air
-setblock 90104 122 134 minecraft:air
-fill 90097 123 148 90097 122 148 air
-
-fill 90122 125 114 90122 124 114 air
-fill 90125 125 114 90125 124 114 air
-
-fill 90141 122 101 90141 122 100 air
-fill 90141 123 101 90141 123 100 air
-fill 90141 124 101 90141 124 100 air
-
-fill 90094 124 107 90094 122 107 air
-fill 90093 124 107 90093 122 107 air
-fill 90092 124 107 90092 122 107 air
-fill 90094 124 102 90094 122 102 air
-fill 90093 124 102 90093 122 102 air
-fill 90092 124 102 90092 122 102 air
-fill 90087 122 105 90087 124 104 air
-
-fill 90076 122 121 90076 122 123 air
-fill 90076 123 121 90076 123 123 air
-fill 90076 124 121 90076 124 123 air
 
 
 fill 90066 128 96 90066 129 97 air
