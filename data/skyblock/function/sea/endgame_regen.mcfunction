@@ -74,7 +74,8 @@ tag @n[tag=sc] remove sea_doc24b
 tag @n[tag=sc] remove sea_doc25b
 tag @n[tag=sc] remove sea_doc26b
 tag @n[tag=sc] remove sea_doc27b
-kill @e[type=marker,x=80000,dx=20000,y=-99999,dy=99800,z=-10000,dz=20000]
+execute as @e[x=90100,y=100,z=100,distance=0..500,type=!player,type=!marker] at @s run tp ~ ~-500 ~
+kill @e[x=80000,dx=20000,y=-99999,dy=99800,z=-10000,dz=20000]
 kill @e[type=marker,x=80000,dx=20000,y=-99999,dy=199800,z=-10000,dz=20000,tag=SEAmarker_killable]
 bossbar remove 9066601
 bossbar remove 9066602
