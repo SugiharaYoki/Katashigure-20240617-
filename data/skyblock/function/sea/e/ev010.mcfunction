@@ -57,6 +57,8 @@ execute if entity @n[tag=SEAbossch3_core,scores={sea_4temp4=540..}] unless entit
 
 execute if entity @n[tag=SEAbossch3_core,scores={sea_4temp4=570}] unless entity @n[tag=SEAbossch3_light_keep] if entity @n[tag=sc,scores={sea_player=1}] if entity @a[tag=e_i_27] run tellraw @a[x=90100,y=100,z=100,distance=0..1000] {"text":"越涵：“操！我已经失去了斯顿，我不要连你也失去了！！他妈的，你给我活下来！！”","color":"green"}
 execute if entity @n[tag=SEAbossch3_core,scores={sea_4temp4=570}] unless entity @n[tag=SEAbossch3_light_keep] if entity @n[tag=sc,scores={sea_player=2..}] if entity @a[tag=e_i_27] run tellraw @a[x=90100,y=100,z=100,distance=0..1000] {"text":"越涵：“操！我已经失去了斯顿，我不要连你们也失去了！！他妈的，你们给我活下来！！”","color":"green"}
+execute if entity @n[tag=SEAbossch3_core,scores={sea_4temp4=570}] unless entity @n[tag=SEAbossch3_light_keep] if entity @n[tag=sc,scores={sea_player=1..}] if entity @a[tag=e_i_27] run effect give @a[tag=SEAPT] resistance 90 0 true
+execute if entity @n[tag=SEAbossch3_core,scores={sea_4temp4=570}] unless entity @n[tag=SEAbossch3_light_keep] if entity @n[tag=sc,scores={sea_player=1..}] if entity @a[tag=e_i_27] run effect give @a[tag=SEAPT] strength 90 0 true
 
 
 execute as @a[tag=SEAPT,x=90138,y=17,z=100,distance=0..4,tag=!e_i_32] at @s run playsound minecraft:app2.darkenergy music @s ~ ~ ~ 1000 1.0
