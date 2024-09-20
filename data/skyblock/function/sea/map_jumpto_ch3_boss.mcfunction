@@ -45,56 +45,78 @@ give @a[tag=SEAPT] emerald 64
 give @a[tag=SEAPT] emerald 24
 
 
-fill 90066 128 96 90066 129 97 air
-#fill 90099 130 94 90099 128 92 air
-#fill 90123 128 94 90123 130 92 air
-#setblock 90130 128 92 air
-#setblock 90147 132 91 air
-#fill 90132 129 94 90131 128 92 air
-fill 90131 131 118 90131 129 116 minecraft:air
-fill 90143 131 116 90143 129 118 minecraft:air
+tag @a add e_i_30
+execute positioned 90084 137 115 run summon marker ~ ~ ~ {Tags:["SEAch3_spawn"]}
+execute positioned 90091 137 118 run summon marker ~ ~ ~ {Tags:["SEAch3_spawn"]}
+execute positioned 90072 139 110 run summon marker ~ ~ ~ {Tags:["SEAch3_spawn"]}
+execute positioned 90072 139 110 positioned 90130 137 102 run function skyblock:sea/m/drone
+execute positioned 90072 139 110 positioned 90124 144 118 run function skyblock:sea/m/drone
+execute positioned 90072 139 110 positioned 90097 145 116 run function skyblock:sea/m/drone
+execute positioned 90072 139 110 positioned 90117 152 131 run function skyblock:sea/m/drone
 
-fill 90133 130 113 90133 129 113 minecraft:air
-fill 90133 130 121 90133 129 121 minecraft:air
-setblock 90125 130 115 minecraft:air
-fill 90130 129 119 90129 131 119 air
-fill 90104 130 103 90103 128 103 air
-setblock 90117 131 133 air
-fill 90129 129 139 90129 128 139 air
-setblock 90100 128 142 air
-setblock 90100 129 142 air
-setblock 90100 128 142 iron_door[facing=west,half=lower,open=true]
-setblock 90100 129 142 iron_door[facing=west,half=upper,open=true]
-fill 90130 129 144 90130 128 144 air
+execute positioned 90072 139 110 run summon marker ~ ~ ~ {Tags:["SEAch3_spawn_initial"]}
+execute positioned 90100 137 100 run summon marker ~ ~ ~ {Tags:["SEAch3_spawn"]}
+execute positioned 90086 137 95 run summon marker ~ ~ ~ {Tags:["SEAch3_spawn"]}
+execute positioned 90087 143 121 run summon marker ~ ~ ~ {Tags:["SEAch3_spawn"]}
 
-setblock 90118 130 130 air
-setblock 90103 131 129 air
-setblock 90110 131 126 air
-setblock 90112 131 126 air
-setblock 90123 129 132 minecraft:redstone_wall_torch[facing=north]
-setblock 90111 129 130 minecraft:redstone_wall_torch[facing=north]
-fill 90140 129 134 90141 129 134 air
-fill 90140 128 134 90141 128 134 air
+execute positioned 90106 138 104 run summon marker ~ ~ ~ {Tags:["SEAch3_spawn_timer","SEAch3_spawn_timer1"]}
+execute positioned 90099 137 120 run summon marker ~ ~ ~ {Tags:["SEAch3_spawn_timer","SEAch3_spawn_timer2"]}
+execute positioned 90085 137 140 run summon marker ~ ~ ~ {Tags:["SEAch3_spawn_timer","SEAch3_spawn_timer3"]}
 
-fill 90131 130 129 90131 128 129 air
-fill 90124 130 137 90124 128 136 minecraft:air
-fill 90089 128 130 90088 128 130 air
-fill 90089 129 130 90088 129 130 air
-fill 90089 130 130 90088 130 130 air
-fill 90098 128 128 90098 128 127 air
-fill 90098 129 128 90098 129 127 air
-fill 90098 130 128 90098 130 127 air
+execute positioned 90106 137 152 run summon marker ~ ~ ~ {Tags:["SEAch3_spawn_timer","SEAch3_spawn_timer4"]}
 
-fill 90075 129 126 90075 128 126 air
-setblock 90077 131 141 air
+execute positioned 90141 137 154 run summon marker ~ ~ ~ {Tags:["SEAch3_spawn_timer","SEAch3_spawn_timer5"]}
 
+execute positioned 90127 137 137 run summon marker ~ ~ ~ {Tags:["SEAch3_spawn_timer","SEAch3_spawn_timer6"]}
 
-setblock 90096 132 112 air
-setblock 90092 132 112 white_stained_glass
-setblock 90088 132 112 white_stained_glass
-setblock 90084 132 112 white_stained_glass
-
-#setblock 90066 129 112 minecraft:stone_button[facing=north]
+fill 90128 137 137 90126 137 137 air
+fill 90128 138 137 90126 138 137 air
+fill 90128 139 137 90126 139 137 air
+fill 90128 140 137 90126 140 137 air
+tag @a[tag=SEAPT] add e_i_26
 
 
 
+setblock 90121 135 131 redstone_torch
+setblock 90129 135 131 redstone_torch
+setblock 90130 135 131 redstone_torch
+
+fill 90117 143 134 90119 143 134 minecraft:iron_trapdoor[facing=north,open=true]
+
+
+execute positioned 90119 144 149 run summon marker ~ ~ ~ {Tags:["SEAch3_spawn"]}
+execute positioned 90120 149 144 run summon marker ~ ~ ~ {Tags:["SEAch3_spawn"]}
+
+execute positioned 90113 149 147 positioned 90102 149 131 run function skyblock:sea/m/special_ston
+execute positioned 90113 149 147 run summon marker ~ ~ ~ {Tags:["SEAch3_spawn"]}
+
+execute positioned 90107 155 147 run summon marker ~ ~ ~ {Tags:["SEAch3_spawn"]}
+
+fill 90121 155 139 90120 155 139 jungle_pressure_plate
+
+execute positioned 90126 161 148 run function skyblock:sea/m/npc_marshall
+scoreboard players set @n[tag=SEAmarshall] sea_4temp1 99999
+
+
+
+
+
+
+execute as @s[scores={sea_4temp1=592}] run scoreboard players set @a[tag=SEAPT,scores={SEA_story=..4}] SEA_story 5
+
+execute as @s[scores={sea_4temp1=730}] at @s run summon firework_rocket 90121 162 137 {LifeTime:35,FireworksItem:{id:firework_rocket,count:1,components:{fireworks:{flight_duration:25,explosions:[{shape:"large_ball",has_twinkle:0b,has_trail:1b,colors:[I;3887386],fade_colors:[I;4312372]}]}}}}
+
+execute positioned 90162 127 113 run function skyblock:sea/m/npc_yuehan
+scoreboard players set @n[tag=SEAyuehan] sea_4temp1 260
+
+fill 90149 137 152 90149 138 152 air destroy
+
+execute positioned 90152 128 98 run function skyblock:sea/m/zombie_bomb
+execute positioned 90152 128 98 run function skyblock:sea/m/drowned_hat
+execute positioned 90152 128 98 run function skyblock:sea/m/drowned_hat
+execute positioned 90152 128 98 run function skyblock:sea/m/drowned_hat
+execute positioned 90152 128 98 run function skyblock:sea/m/drowned_hat
+execute positioned 90152 128 98 run function skyblock:sea/m/drowned_shield
+execute positioned 90152 128 98 run function skyblock:sea/m/drowned_shield
+execute positioned 90152 128 98 run function skyblock:sea/m/pillager
+execute positioned 90152 128 98 run function skyblock:sea/m/pillager
