@@ -1,6 +1,5 @@
 #    function skyblock:protector/entity_count_start
 
-scoreboard players add @n[tag=sc] sea_speedrun_ch1 1
 
 execute store result score @n[tag=sc] rng2 run random value 1..10
 execute as @a[tag=SEAPT,x=90076,y=121,z=136,distance=0..25] at @s if entity @n[tag=sc,scores={rng2=1}] run setblock 90078 125 137 minecraft:redstone_lamp[lit=true]

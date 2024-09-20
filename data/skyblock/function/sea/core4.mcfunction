@@ -5,6 +5,11 @@ execute unless block 90075 103 137 scaffolding if entity @a[tag=SEAPT] if entity
 execute unless block 90059 103 141 grindstone if entity @a[tag=SEAPT] if entity @n[tag=sc,tag=SeGa_sea_ch4] run function skyblock:sea/map_event_i04_slow
 
 
+execute unless block 90058 103 142 grindstone run scoreboard players add @n[tag=sc] sea_speedrun_ch1 1
+execute if block 90058 103 142 grindstone unless block 90075 103 141 minecraft:cauldron run scoreboard players add @n[tag=sc] sea_speedrun_ch2 1
+execute if block 90075 103 141 minecraft:cauldron unless block 90075 103 137 scaffolding run scoreboard players add @n[tag=sc] sea_speedrun_ch3 1
+scoreboard players add @n[tag=sc] sea_speedrun_ch4 1
+
 execute store result score @n[tag=sc] sea_player run execute if entity @a[tag=SEAPT]
 
 

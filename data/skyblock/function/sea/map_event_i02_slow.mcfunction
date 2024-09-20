@@ -648,6 +648,7 @@ execute as @n[tag=sc,scores={sea_4temp2=2400..5000}] unless entity @n[tag=SEAbos
 execute as @n[tag=sc,scores={sea_4temp2=5001..5005}] as @a run bossbar remove 9066601
 execute as @n[tag=sc,scores={sea_4temp2=5001..5005}] as @a run bossbar set 9066601 visible false
 execute as @n[tag=sc,scores={sea_4temp2=5001..5005}] run bossbar set minecraft:9066601 players @s
+execute as @n[tag=sc,scores={sea_4temp2=5001}] as @a[tag=SEAPT] if score @s sea_speedrun_ch2 > @n[tag=sc] sea_speedrun_ch2 run scoreboard players operation @s sea_speedrun_ch2 = @n[tag=sc] sea_speedrun_ch2
 execute as @n[tag=sc,scores={sea_4temp2=5001}] run stopsound @a[tag=SEAPT] music
 execute as @n[tag=sc,scores={sea_4temp2=5001}] as @a[tag=SEAPT] at @s run playsound item.trident.thunder ambient @s ~ ~ ~ 100 0.5
 execute as @n[tag=sc,scores={sea_4temp2=5002}] run give @a[tag=SEAPT] nether_star
