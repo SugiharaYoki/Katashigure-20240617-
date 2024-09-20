@@ -22,12 +22,20 @@ execute unless entity @n[tag=SEAbossch3_core] run summon marker 90145 22 92 {Tag
 execute unless entity @n[tag=SEAbossch3_core] run summon marker 90152 16 80 {Tags:["SEAbossch3_light","SEAmarker_killable"]}
 execute unless entity @n[tag=SEAbossch3_core] run summon marker 90141 18 77 {Tags:["SEAbossch3_light","SEAmarker_killable"]}
 execute unless entity @n[tag=SEAbossch3_core] run scoreboard players set @n[tag=SEAbossch3_light,x=90138,y=16,z=100,distance=0..3] sea_4temp2 -1
-execute unless entity @n[tag=SEAbossch3_core] run scoreboard players set @n[tag=SEAbossch3_light,x=90138,y=16,z=93,distance=0..3] sea_4temp2 40
-execute unless entity @n[tag=SEAbossch3_core] run scoreboard players set @n[tag=SEAbossch3_light,x=90131,y=18,z=93,distance=0..3] sea_4temp2 35
-execute unless entity @n[tag=SEAbossch3_core] run scoreboard players set @n[tag=SEAbossch3_light,x=90130,y=20,z=80,distance=0..3] sea_4temp2 25
-execute unless entity @n[tag=SEAbossch3_core] run scoreboard players set @n[tag=SEAbossch3_light,x=90145,y=22,z=92,distance=0..3] sea_4temp2 15
-execute unless entity @n[tag=SEAbossch3_core] run scoreboard players set @n[tag=SEAbossch3_light,x=90152,y=16,z=80,distance=0..3] sea_4temp2 5
+execute unless entity @n[tag=SEAbossch3_core] run scoreboard players set @n[tag=SEAbossch3_light,x=90138,y=16,z=93,distance=0..3] sea_4temp2 80
+execute unless entity @n[tag=SEAbossch3_core] run scoreboard players set @n[tag=SEAbossch3_light,x=90131,y=18,z=93,distance=0..3] sea_4temp2 70
+execute unless entity @n[tag=SEAbossch3_core] run scoreboard players set @n[tag=SEAbossch3_light,x=90130,y=20,z=80,distance=0..3] sea_4temp2 50
+execute unless entity @n[tag=SEAbossch3_core] run scoreboard players set @n[tag=SEAbossch3_light,x=90145,y=22,z=92,distance=0..3] sea_4temp2 30
+execute unless entity @n[tag=SEAbossch3_core] run scoreboard players set @n[tag=SEAbossch3_light,x=90152,y=16,z=80,distance=0..3] sea_4temp2 10
 execute unless entity @n[tag=SEAbossch3_core] run scoreboard players set @n[tag=SEAbossch3_light,x=90141,y=18,z=77,distance=0..3] sea_4temp2 -1
+execute unless entity @n[tag=SEAbossch3_core] as @n[tag=SEAbossch3_light,x=90138,y=16,z=93,distance=0..3] at @s positioned ~ ~1 ~ run function skyblock:sea/m/drowned_shield
+execute unless entity @n[tag=SEAbossch3_core] as @n[tag=SEAbossch3_light,x=90131,y=18,z=93,distance=0..3] at @s positioned ~ ~1 ~ run function skyblock:sea/m/silverfish
+execute unless entity @n[tag=SEAbossch3_core] as @n[tag=SEAbossch3_light,x=90130,y=20,z=80,distance=0..3] at @s positioned ~ ~1 ~ run function skyblock:sea/m/silverfish
+execute unless entity @n[tag=SEAbossch3_core] as @n[tag=SEAbossch3_light,x=90145,y=22,z=92,distance=0..3] at @s positioned ~ ~1 ~ run function skyblock:sea/m/drowned_shield
+execute unless entity @n[tag=SEAbossch3_core] as @n[tag=SEAbossch3_light,x=90145,y=22,z=92,distance=0..3] at @s positioned ~ ~1 ~ run function skyblock:sea/m/drowned_hat
+execute unless entity @n[tag=SEAbossch3_core] as @n[tag=SEAbossch3_light,x=90152,y=16,z=80,distance=0..3] at @s positioned ~ ~1 ~ run function skyblock:sea/m/drowned_maintenance
+execute unless entity @n[tag=SEAbossch3_core] as @n[tag=SEAbossch3_light,x=90141,y=18,z=77,distance=0..3] at @s positioned ~ ~1 ~ run function skyblock:sea/m/zombie_cook
+execute unless entity @n[tag=SEAbossch3_core] as @n[tag=SEAbossch3_light,x=90141,y=18,z=77,distance=0..3] at @s positioned ~ ~1 ~ run function skyblock:sea/m/drowned_hat
 
 execute unless entity @n[tag=SEAbossch3_core] run summon marker 90138 18 104 {Tags:["SEAbossch3_core","SEAmarker_killable"]}
 execute if entity @a[tag=e_i_32,tag=SEAPT] run scoreboard players add @n[tag=SEAbossch3_core] sea_4temp4 1
@@ -47,11 +55,14 @@ execute as @a[tag=SEAPT,x=90138,y=17,z=100,distance=0..4,tag=!e_i_32] at @s run 
 execute as @a[tag=SEAPT,x=90138,y=17,z=100,distance=0..4,tag=!e_i_32] at @s run tag @s add e_i_32
 
 
-scoreboard players remove @e[tag=SEAbossch3_light,scores={sea_4temp2=0..},tag=!SEAbossch3_light_keep] sea_4temp2 1
+execute if entity @n[tag=sc,scores={sea_player=1..}] run scoreboard players remove @e[tag=SEAbossch3_light,scores={sea_4temp2=0..},tag=!SEAbossch3_light_keep] sea_4temp2 2
+execute if entity @n[tag=sc,scores={sea_player=2..}] run scoreboard players remove @e[tag=SEAbossch3_light,scores={sea_4temp2=0..},tag=!SEAbossch3_light_keep] sea_4temp2 1
+execute if entity @n[tag=sc,scores={sea_player=4..}] run scoreboard players remove @e[tag=SEAbossch3_light,scores={sea_4temp2=0..},tag=!SEAbossch3_light_keep] sea_4temp2 1
+execute if entity @n[tag=sc,scores={sea_player=6..}] run scoreboard players remove @e[tag=SEAbossch3_light,scores={sea_4temp2=0..},tag=!SEAbossch3_light_keep] sea_4temp2 1
 execute as @e[tag=SEAbossch3_light,scores={sea_4temp2=..0}] at @s if block ~ ~ ~ waxed_exposed_copper_bulb run setblock ~ ~ ~ waxed_exposed_copper_bulb[lit=false]
 tag @e[tag=SEAbossch3_light,scores={sea_4temp2=..0}] remove SEAbossch3_light_on
 
-execute as @e[tag=SEAbossch3_light] at @s if entity @a[tag=SEAPT,distance=0..2] run scoreboard players set @s sea_4temp2 80
+execute as @e[tag=SEAbossch3_light] at @s if entity @a[tag=SEAPT,distance=0..2] run scoreboard players set @s sea_4temp2 160
 execute as @e[tag=SEAbossch3_light] at @s if entity @a[tag=SEAPT,distance=0..2] if block ~ ~ ~ waxed_exposed_copper_bulb run setblock ~ ~ ~ waxed_exposed_copper_bulb[lit=true]
 execute as @e[tag=SEAbossch3_light] at @s if entity @a[tag=SEAPT,distance=0..2] run tag @s add SEAbossch3_light_on
 
@@ -63,13 +74,13 @@ execute store result score SEA_CH3_BOSS sea_4temp4 at @n[tag=SEAbossch3_core] if
 
 execute if score SEA_CH3_BOSS sea_4temp2 matches 4 if score SEA_CH3_BOSS sea_4temp1 matches 1..3 if entity @n[tag=sc,scores={sea_player=1}] if score SEA_CH3_BOSS sea_4temp4 matches ..15 at @e[tag=SEAbossch3_light,sort=random,limit=2] if block ~ ~ ~ waxed_exposed_copper_bulb[lit=false] run function skyblock:sea/e/ev010_2
 
-execute if score SEA_CH3_BOSS sea_4temp2 matches 4 if score SEA_CH3_BOSS sea_4temp1 matches 1..4 if entity @n[tag=sc,scores={sea_player=2..3}] if score SEA_CH3_BOSS sea_4temp4 matches ..20 at @e[tag=SEAbossch3_light,sort=random,limit=2] if block ~ ~ ~ waxed_exposed_copper_bulb[lit=false] run function skyblock:sea/e/ev010_2
+execute if score SEA_CH3_BOSS sea_4temp2 matches 4 if score SEA_CH3_BOSS sea_4temp1 matches 1..5 if entity @n[tag=sc,scores={sea_player=2..3}] if score SEA_CH3_BOSS sea_4temp4 matches ..20 at @e[tag=SEAbossch3_light,sort=random,limit=2] if block ~ ~ ~ waxed_exposed_copper_bulb[lit=false] run function skyblock:sea/e/ev010_2
 
-execute if score SEA_CH3_BOSS sea_4temp2 matches 4 if score SEA_CH3_BOSS sea_4temp1 matches 1..5 if entity @n[tag=sc,scores={sea_player=4..5}] if score SEA_CH3_BOSS sea_4temp4 matches ..25 at @e[tag=SEAbossch3_light,sort=random,limit=2] if block ~ ~ ~ waxed_exposed_copper_bulb[lit=false] run function skyblock:sea/e/ev010_2
+execute if score SEA_CH3_BOSS sea_4temp2 matches 4 if score SEA_CH3_BOSS sea_4temp1 matches 1..7 if entity @n[tag=sc,scores={sea_player=4..5}] if score SEA_CH3_BOSS sea_4temp4 matches ..25 at @e[tag=SEAbossch3_light,sort=random,limit=2] if block ~ ~ ~ waxed_exposed_copper_bulb[lit=false] run function skyblock:sea/e/ev010_2
 
-execute if score SEA_CH3_BOSS sea_4temp2 matches 4 if score SEA_CH3_BOSS sea_4temp1 matches 1..6 if entity @n[tag=sc,scores={sea_player=6..7}] if score SEA_CH3_BOSS sea_4temp4 matches ..30 at @e[tag=SEAbossch3_light,sort=random,limit=2] if block ~ ~ ~ waxed_exposed_copper_bulb[lit=false] run function skyblock:sea/e/ev010_2
+execute if score SEA_CH3_BOSS sea_4temp2 matches 4 if score SEA_CH3_BOSS sea_4temp1 matches 1..9 if entity @n[tag=sc,scores={sea_player=6..7}] if score SEA_CH3_BOSS sea_4temp4 matches ..30 at @e[tag=SEAbossch3_light,sort=random,limit=2] if block ~ ~ ~ waxed_exposed_copper_bulb[lit=false] run function skyblock:sea/e/ev010_2
 
-execute if score SEA_CH3_BOSS sea_4temp2 matches 4 if score SEA_CH3_BOSS sea_4temp1 matches 1..7 if entity @n[tag=sc,scores={sea_player=8..}] if score SEA_CH3_BOSS sea_4temp4 matches ..35 at @e[tag=SEAbossch3_light,sort=random,limit=2] if block ~ ~ ~ waxed_exposed_copper_bulb[lit=false] run function skyblock:sea/e/ev010_2
+execute if score SEA_CH3_BOSS sea_4temp2 matches 4 if score SEA_CH3_BOSS sea_4temp1 matches 1..11 if entity @n[tag=sc,scores={sea_player=8..}] if score SEA_CH3_BOSS sea_4temp4 matches ..35 at @e[tag=SEAbossch3_light,sort=random,limit=2] if block ~ ~ ~ waxed_exposed_copper_bulb[lit=false] run function skyblock:sea/e/ev010_2
 
 #    function skyblock:protector/entity_count_end {function:"slyblock:sea/e/ev010"}
 
@@ -104,5 +115,5 @@ execute as @n[tag=SEAbossch3_core,tag=SEAbossch3_core_lighted,scores={sea_4temp7
 execute as @n[tag=SEAbossch3_core,tag=SEAbossch3_core_lighted,scores={sea_4temp7=40}] if entity @n[tag=sc,scores={sea_player=2..}] run tellraw @a[x=90100,y=100,z=100,distance=0..2000] {"text":"越涵：“你们等着，我想办法找其他路来和你们汇合。”","color":"green"}
 
 execute as @n[tag=SEAbossch3_core,tag=SEAbossch3_core_lighted,scores={sea_4temp7=80}] as @a[tag=SEAPT] at @s run tellraw @s {"text":"『厄珀娅的悲歌』第三章 完","color":"blue","bold": true}
-execute as @n[tag=SEAbossch3_core,tag=SEAbossch3_core_lighted,scores={sea_4temp7=80}] as @a[tag=SEAPT] at @s run playsound minecraft:app1.speirapyrgos music @a[tag=SEAPT] ~ ~ ~ 1000 0.8
+execute as @n[tag=SEAbossch3_core,tag=SEAbossch3_core_lighted,scores={sea_4temp7=80}] as @a[tag=SEAPT] at @s run playsound minecraft:app1.speirapyrgos music @a[tag=SEAPT] ~ ~ ~ 1000 1
 execute as @n[tag=SEAbossch3_core,tag=SEAbossch3_core_lighted,scores={sea_4temp7=80}] run function skyblock:sea/map_prepare_ch4
