@@ -98,7 +98,7 @@ fill 90121 155 139 90120 155 139 jungle_pressure_plate
 execute positioned 90126 161 148 run function skyblock:sea/m/npc_marshall
 scoreboard players set @n[tag=SEAmarshall] sea_4temp1 99999
 
-
+setblock 90131 161 144 flower_pot
 
 
 scoreboard players set @e[tag=SEAch3_spawn_timer] sea_4temp1 99999
@@ -110,7 +110,7 @@ execute as @s[scores={sea_4temp1=592}] run scoreboard players set @a[tag=SEAPT,s
 
 execute as @s[scores={sea_4temp1=730}] at @s run summon firework_rocket 90121 162 137 {LifeTime:35,FireworksItem:{id:firework_rocket,count:1,components:{fireworks:{flight_duration:25,explosions:[{shape:"large_ball",has_twinkle:0b,has_trail:1b,colors:[I;3887386],fade_colors:[I;4312372]}]}}}}
 
-execute positioned 90162 127 113 run function skyblock:sea/m/npc_yuehan
+execute positioned 90149 108 103 run function skyblock:sea/m/npc_yuehan
 scoreboard players set @n[tag=SEAyuehan] sea_4temp1 260
 
 fill 90149 137 152 90149 138 152 air destroy
