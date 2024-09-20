@@ -39,6 +39,10 @@ execute if entity @n[tag=SEAbossch3_core,scores={sea_4temp4=240}] unless entity 
 execute if entity @n[tag=SEAbossch3_core,scores={sea_4temp4=270}] unless entity @n[tag=SEAbossch3_light_keep] run tellraw @a[x=90100,y=100,z=100,distance=0..1000] {"text":"越涵：“这灯泡好像只能坚持十几秒，必须保证要快！”","color":"green"}
 
 
+execute if entity @n[tag=SEAbossch3_core,scores={sea_4temp4=450}] unless entity @n[tag=SEAbossch3_light_keep] if entity @n[tag=sc,scores={sea_player=1}] run tellraw @a[x=90100,y=100,z=100,distance=0..1000] {"text":"越涵：“我从墙里刨出电路了！我帮你守着一盏灯，你去搞其它的！”","color":"green"}
+execute if entity @n[tag=SEAbossch3_core,scores={sea_4temp4=450}] unless entity @n[tag=SEAbossch3_light_keep] if entity @n[tag=sc,scores={sea_player=2..}] run tellraw @a[x=90100,y=100,z=100,distance=0..1000] {"text":"越涵：“我从墙里刨出电路了！我帮你们守着一盏灯，你们去搞其它的！”","color":"green"}
+execute if entity @n[tag=SEAbossch3_core,scores={sea_4temp4=450..}] unless entity @n[tag=SEAbossch3_light_keep] run setblock 90138 16 100 waxed_exposed_copper_bulb[lit=true]
+
 execute as @a[tag=SEAPT,x=90138,y=17,z=100,distance=0..4,tag=!e_i_32] at @s run playsound minecraft:app2.darkenergy music @s ~ ~ ~ 1000 1.0
 execute as @a[tag=SEAPT,x=90138,y=17,z=100,distance=0..4,tag=!e_i_32] at @s run tag @s add e_i_32
 
@@ -68,3 +72,37 @@ execute if score SEA_CH3_BOSS sea_4temp2 matches 4 if score SEA_CH3_BOSS sea_4te
 execute if score SEA_CH3_BOSS sea_4temp2 matches 4 if score SEA_CH3_BOSS sea_4temp1 matches 1..7 if entity @n[tag=sc,scores={sea_player=8..}] if score SEA_CH3_BOSS sea_4temp4 matches ..35 at @e[tag=SEAbossch3_light,sort=random,limit=2] if block ~ ~ ~ waxed_exposed_copper_bulb[lit=false] run function skyblock:sea/e/ev010_2
 
 #    function skyblock:protector/entity_count_end {function:"slyblock:sea/e/ev010"}
+
+execute if block 90138 16 100 waxed_exposed_copper_bulb[lit=true] \
+if block 90138 16 93 waxed_exposed_copper_bulb[lit=true] \
+if block 90131 18 93 waxed_exposed_copper_bulb[lit=true] \
+if block 90130 20 80 waxed_exposed_copper_bulb[lit=true] \
+if block 90145 22 92 waxed_exposed_copper_bulb[lit=true] \
+if block 90152 16 80 waxed_exposed_copper_bulb[lit=true] \
+if block 90141 18 77 waxed_exposed_copper_bulb[lit=true] run tag @e[tag=SEAbossch3_light] add SEAbossch3_light_keep
+execute if entity @n[tag=SEAbossch3_light_keep] at @n[tag=SEAbossch3_core,tag=!SEAbossch3_core_lighted] run playsound block.beacon.activate master @a ~ ~ ~ 10 0.8
+execute if entity @n[tag=SEAbossch3_light_keep] at @n[tag=SEAbossch3_core,tag=!SEAbossch3_core_lighted] run playsound block.beacon.activate master @a ~ ~ ~ 10 0.7
+execute if entity @n[tag=SEAbossch3_light_keep] at @n[tag=SEAbossch3_core,tag=!SEAbossch3_core_lighted] run playsound ambient.crimson_forest.additions master @a ~ ~ ~ 10 0.8
+execute if entity @n[tag=SEAbossch3_light_keep] at @n[tag=SEAbossch3_core,tag=!SEAbossch3_core_lighted] run playsound ambient.crimson_forest.additions master @a ~ ~ ~ 10 0.8
+execute if entity @n[tag=SEAbossch3_light_keep] at @n[tag=SEAbossch3_core,tag=!SEAbossch3_core_lighted] run playsound ambient.crimson_forest.additions master @a ~ ~ ~ 10 0.8
+execute if entity @n[tag=SEAbossch3_light_keep] at @n[tag=SEAbossch3_core,tag=!SEAbossch3_core_lighted] run playsound ambient.crimson_forest.additions master @a ~ ~ ~ 10 0.8
+ 
+
+execute if entity @n[tag=SEAbossch3_light_keep] at @n[tag=SEAbossch3_core,tag=!SEAbossch3_core_lighted] as @a run bossbar remove 9066602
+execute if entity @n[tag=SEAbossch3_light_keep] at @n[tag=SEAbossch3_core,tag=!SEAbossch3_core_lighted] as @a run bossbar set 9066602 visible false
+execute if entity @n[tag=SEAbossch3_light_keep] at @n[tag=SEAbossch3_core,tag=!SEAbossch3_core_lighted] run bossbar set minecraft:9066602 players @s
+execute if entity @n[tag=SEAbossch3_light_keep] at @n[tag=SEAbossch3_core,tag=!SEAbossch3_core_lighted] run stopsound @a[tag=SEAPT] music
+
+
+execute if entity @n[tag=SEAbossch3_light_keep] at @n[tag=SEAbossch3_core,tag=!SEAbossch3_core_lighted] run tag @s add SEAbossch3_core_lighted
+execute as @n[tag=SEAbossch3_core,tag=SEAbossch3_core_lighted] run scoreboard players add @s sea_4temp7 1
+
+execute as @n[tag=SEAbossch3_core,tag=SEAbossch3_core_lighted,scores={sea_4temp7=10}] run give @a[tag=SEAPT] nether_star
+execute as @n[tag=SEAbossch3_core,tag=SEAbossch3_core_lighted,scores={sea_4temp7=10}] run scoreboard players set @a[tag=SEAPT,scores={sea_progress=..8}] sea_progress 9
+execute as @n[tag=SEAbossch3_core,tag=SEAbossch3_core_lighted,scores={sea_4temp7=10}] run tellraw @a[x=90100,y=100,z=100,distance=0..2000] {"text":"越涵：“老哥，下面的问题是不是解决了？”","color":"green"}
+execute as @n[tag=SEAbossch3_core,tag=SEAbossch3_core_lighted,scores={sea_4temp7=40}] if entity @n[tag=sc,scores={sea_player=1}] run tellraw @a[x=90100,y=100,z=100,distance=0..2000] {"text":"越涵：“你等着，我想办法找其他路来和你汇合。”","color":"green"}
+execute as @n[tag=SEAbossch3_core,tag=SEAbossch3_core_lighted,scores={sea_4temp7=40}] if entity @n[tag=sc,scores={sea_player=2..}] run tellraw @a[x=90100,y=100,z=100,distance=0..2000] {"text":"越涵：“你们等着，我想办法找其他路来和你们汇合。”","color":"green"}
+
+execute as @n[tag=SEAbossch3_core,tag=SEAbossch3_core_lighted,scores={sea_4temp7=80}] as @a[tag=SEAPT] at @s run tellraw @s {"text":"『厄珀娅的悲歌』第三章 完","color":"blue","bold": true}
+execute as @n[tag=SEAbossch3_core,tag=SEAbossch3_core_lighted,scores={sea_4temp7=80}] as @a[tag=SEAPT] at @s run playsound minecraft:app1.speirapyrgos music @a[tag=SEAPT] ~ ~ ~ 1000 0.8
+execute as @n[tag=SEAbossch3_core,tag=SEAbossch3_core_lighted,scores={sea_4temp7=80}] run function skyblock:sea/map_prepare_ch4

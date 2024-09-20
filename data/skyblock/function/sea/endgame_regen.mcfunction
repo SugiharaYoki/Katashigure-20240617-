@@ -107,6 +107,8 @@ tag @s remove SeGa_sea_ch4
 tag @s remove SeGa_sea_ch5
 tag @s remove SeGa_sea_ch6
 
+setblock 90075 103 137 air
+
 tag @s remove sea_ch1_speedrun_butif
 
 forceload remove 90000 0 90200 200
