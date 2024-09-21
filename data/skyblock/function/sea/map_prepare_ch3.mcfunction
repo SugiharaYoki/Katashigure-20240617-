@@ -376,7 +376,7 @@ fill 90082 138 142 90081 137 142 minecraft:iron_bars
 setblock 90081 137 144 chest[facing=north]
 item replace block 90081 137 144 container.12 with gunpowder 2
 item replace block 90081 137 144 container.14 with emerald 5
-
+fill 90154 21 88 90154 19 89 minecraft:waxed_copper_grate
 
     function skyblock:protector/entity_count_end {function:"skyblock:sea/map_prepare_ch3.mcfunction"}
 

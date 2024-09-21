@@ -13,4 +13,24 @@ tag @n[tag=sc] add SeGa_sea_ch4
 kill @e[tag=SEAbossch3_core]
 kill @e[tag=SEAbossch3_light]
 
+
+fill 90154 21 88 90154 19 89 air destroy
+fill 90176 18 84 90175 18 87 minecraft:orange_stained_glass
+setblock 90169 20 80 air
+setblock 90169 20 80 lever[facing=north,face=floor]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     function skyblock:protector/entity_count_end {function:"skyblock:sea/map_prepare_ch4.mcfunction"}
