@@ -370,4 +370,15 @@ setblock 90145 22 92 waxed_exposed_copper_bulb[lit=true]
 setblock 90152 16 80 waxed_exposed_copper_bulb[lit=true]
 setblock 90141 18 77 waxed_exposed_copper_bulb[lit=false]
 
+fill 90077 140 137 90082 140 137 minecraft:waxed_oxidized_copper_bulb[lit=false]
+fill 90082 138 142 90081 137 142 minecraft:iron_bars
+
+setblock 90081 137 144 chest[facing=north]
+item replace block 90081 137 144 container.12 with gunpowder 2
+item replace block 90081 137 144 container.14 with emerald 5
+
+
     function skyblock:protector/entity_count_end {function:"skyblock:sea/map_prepare_ch3.mcfunction"}
+
+
+
