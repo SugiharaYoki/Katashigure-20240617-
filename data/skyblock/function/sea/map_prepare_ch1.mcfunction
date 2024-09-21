@@ -441,5 +441,6 @@ item replace block 90108 99 107 container.15 with dune_armor_trim_smithing_templ
 execute positioned 90108 99 108 run function skyblock:sea/m/zombie_bomb
 
 setblock 90074 103 141 chest[facing=north]
+setblock 90072 104 137 chest[facing=west]
 
 function skyblock:protector/entity_count_end {function:"slyblock:sea/map_prepare_ch1"}
