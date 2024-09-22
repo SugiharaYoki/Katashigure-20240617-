@@ -41,4 +41,7 @@ execute as @e[tag=sea_thunderrage_summon,scores={sea_thunderrage=1}] run particl
 execute as @e[tag=sea_thunderrage_summon,scores={sea_thunderrage=13}] run summon lightning_bolt
 execute as @e[tag=sea_thunderrage_summon,scores={sea_thunderrage=14}] run kill @s
 
-tag @s[scores={sea_thunderrage=30..}] remove sea_exp_thunderrage
+
+
+execute if entity @s[scores={sea_thunderrage=30..}] run scoreboard players set @s sea_thunderrage -1
+tag @s[scores={sea_thunderrage=-1}] remove sea_exp_thunderrage
