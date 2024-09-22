@@ -7,8 +7,8 @@ execute if entity @s[scores={sea_thunderblast=2}] positioned ~ ~ ~ if block ~ ~ 
 scoreboard players add @e[tag=sea_thunderblast_minor] sea_thunderblast 1
 
 execute as @e[tag=sea_thunderblast_minor,scores={sea_thunderblast=1..15}] at @s run tp @s ~ ~0.08 ~
-execute as @e[tag=sea_thunderblast_minor,scores={sea_thunderblast=1..5}] at @s run tp @s ~ ~0.08 ~
-execute as @e[tag=sea_thunderblast_minor,scores={sea_thunderblast=1..36}] at @s run tp @s ~ ~0.08 ~
+execute as @e[tag=sea_thunderblast_minor,scores={sea_thunderblast=1..5}] at @s run tp @s ~ ~0.07 ~
+execute as @e[tag=sea_thunderblast_minor,scores={sea_thunderblast=1..36}] at @s run tp @s ~ ~0.06 ~
 execute as @e[tag=sea_thunderblast_minor,scores={sea_thunderblast=1}] at @s run playsound entity.evoker.cast_spell hostile @a ~ ~ ~ 5 1.1
 execute as @e[tag=sea_thunderblast_minor,scores={sea_thunderblast=21}] at @s run playsound block.beacon.deactivate hostile @a ~ ~ ~ 5 0.7
 execute as @e[tag=sea_thunderblast_minor,scores={sea_thunderblast=1..}] at @s run particle electric_spark ~ ~ ~ 0.1 0.1 0.1 0.01 6
