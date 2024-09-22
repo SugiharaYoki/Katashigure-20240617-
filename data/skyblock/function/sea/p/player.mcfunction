@@ -21,6 +21,16 @@ clear @s[gamemode=!creative] polished_tuff_wall
 clear @s[gamemode=!creative] decorated_pot
 clear @s[gamemode=!creative] structure_void
 
+
+execute as @s[scores={sea_crafter=1}] at @s run function skyblock:sea/shop_reader
+execute as @s[scores={sea_crafter=10000..19999}] at @s if entity @n[tag=SEAcrafter,distance=0..5] run function skyblock:sea/shop_purchase
+execute as @s[scores={sea_crafter=30000..39999}] at @s if entity @n[tag=SEAcrafter,distance=0..5] run function skyblock:sea/shop_purchase
+execute as @s[tag=seaPerm000,scores={sea_crafter=20000}] at @s if entity @n[tag=SEAcrafter,distance=0..5] run function skyblock:sea/shop_enchant
+execute as @s[tag=seaPerm000,scores={sea_crafter=30000}] at @s if entity @n[tag=SEAcrafter,distance=0..5] run function skyblock:sea/shop_tp
+execute as @s[tag=seaPerm000,scores={sea_crafter=20001..29999}] at @s if entity @n[tag=SEAcrafter,distance=0..5] run function skyblock:sea/shop_purchase
+execute at @s if entity @n[tag=SEAcrafter,distance=0..5] run scoreboard players enable @s sea_crafter
+
+
 execute at @s \
 if block ~ ~-1 ~ water \
 if block ~ ~-2 ~ water \
@@ -176,3 +186,13 @@ execute as @s[nbt={Inventory:[{id:"minecraft:sentry_armor_trim_smithing_template
 execute as @s[nbt={Inventory:[{id:"minecraft:dune_armor_trim_smithing_template"}]}] at @s run function skyblock:sea/shop_trim {trim:sea_i_trim_skeleton, trim_name:"金砂",trim_type:dune_armor_trim_smithing_template}
 execute as @s[nbt={Inventory:[{id:"minecraft:vex_armor_trim_smithing_template"}]}] at @s run function skyblock:sea/shop_trim {trim:sea_i_trim_ghost, trim_name:"招魂",trim_type:vex_armor_trim_smithing_template}
 execute as @s[nbt={Inventory:[{id:"minecraft:coast_armor_trim_smithing_template"}]}] at @s run function skyblock:sea/shop_trim {trim:sea_i_trim_sea, trim_name:"海啸",trim_type:coast_armor_trim_smithing_template}
+
+
+
+execute as @s[x=80000,dx=20000,z=-10000,dz=20000,y=102,dy=5] at @s if block ~ ~-1 ~ waxed_weathered_cut_copper_slab if block ~ ~-0.1 ~ air run tp @s ~ 127.0 ~
+execute as @s[x=80000,dx=20000,z=-10000,dz=20000,y=126,dy=5] at @s if block ~ ~-1 ~ waxed_weathered_cut_copper_slab if block ~ ~-0.1 ~ air run tp @s ~ 103.0 ~
+execute as @s[x=80000,dx=20000,z=-10000,dz=20000,y=102,dy=5] at @s if block ~ ~-1.5 ~ waxed_weathered_cut_copper_slab if block ~ ~-0.1 ~ air run tp @s ~ 127.0 ~
+execute as @s[x=80000,dx=20000,z=-10000,dz=20000,y=126,dy=5] at @s if block ~ ~-1.5 ~ waxed_weathered_cut_copper_slab if block ~ ~-0.1 ~ air run tp @s ~ 103.0 ~
+
+
+
