@@ -120,3 +120,9 @@ effect give @s absorption 1 0 true
 effect give @s health_boost 1 0 true
 effect give @s poison 1 0 true
 effect give @s wither 1 0 true
+
+
+
+tag @s remove ukiyo_nrb
+tag @s remove UNRBPT
+tag @s remove got_hit
