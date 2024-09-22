@@ -32,13 +32,13 @@ execute if entity @s[scores={sea_thunderrage=2}] positioned ~-1 ~ ~ if block ~ ~
 
 scoreboard players add @e[tag=sea_thunderrage_summon] sea_thunderrage 1
 
-execute as @e[tag=sea_thunderrage_summon,scores={sea_thunderrage=1}] run particle electric_spark ~ ~ ~ 0.2 0.2 0.2 0.01 5
-execute as @e[tag=sea_thunderrage_summon,scores={sea_thunderrage=1}] run particle soul_fire_flame ~ ~-0.6 ~ 0 0 0 0.00 1
-execute as @e[tag=sea_thunderrage_summon,scores={sea_thunderrage=1}] run particle soul_fire_flame ~ ~-0.3 ~ 0 0 0 0.00 1
-execute as @e[tag=sea_thunderrage_summon,scores={sea_thunderrage=1}] run particle soul_fire_flame ~ ~ ~ 0 0 0 0.00 1
-execute as @e[tag=sea_thunderrage_summon,scores={sea_thunderrage=1}] run particle soul_fire_flame ~ ~0.3 ~ 0 0 0 0.00 1
-execute as @e[tag=sea_thunderrage_summon,scores={sea_thunderrage=1}] run particle soul_fire_flame ~ ~0.6 ~ 0 0 0 0.00 1
-execute as @e[tag=sea_thunderrage_summon,scores={sea_thunderrage=13}] run summon lightning_bolt
+execute as @e[tag=sea_thunderrage_summon,scores={sea_thunderrage=1}] at @s run particle electric_spark ~ ~ ~ 0.2 0.2 0.2 0.01 5
+execute as @e[tag=sea_thunderrage_summon,scores={sea_thunderrage=1}] at @s run particle soul_fire_flame ~ ~-0.6 ~ 0 0 0 0.00 1
+execute as @e[tag=sea_thunderrage_summon,scores={sea_thunderrage=1}] at @s run particle soul_fire_flame ~ ~-0.3 ~ 0 0 0 0.00 1
+execute as @e[tag=sea_thunderrage_summon,scores={sea_thunderrage=1}] at @s run particle soul_fire_flame ~ ~ ~ 0 0 0 0.00 1
+execute as @e[tag=sea_thunderrage_summon,scores={sea_thunderrage=1}] at @s run particle soul_fire_flame ~ ~0.3 ~ 0 0 0 0.00 1
+execute as @e[tag=sea_thunderrage_summon,scores={sea_thunderrage=1}] at @s run particle soul_fire_flame ~ ~0.6 ~ 0 0 0 0.00 1
+execute as @e[tag=sea_thunderrage_summon,scores={sea_thunderrage=13}] at @s run summon lightning_bolt
 execute as @e[tag=sea_thunderrage_summon,scores={sea_thunderrage=14}] run kill @s
 
 
