@@ -21,7 +21,7 @@ scoreboard players remove @s[tag=!sea_t_sprint_disabled,tag=sea_t_sprint1,scores
 scoreboard players set @s[tag=!sea_t_sprint_disabled,tag=sea_t_sprint1,scores={sea_is_running=30..}] sea_is_running 30
 
 
-execute as @s[tag=sea_exp_thunderrage] at @s run function skyblodk:sea/experimental/thunderrage
+execute as @s[tag=sea_exp_thunderrage] at @s run function skyblock:sea/experimental/thunderrage
 
 
 #execute as @s[tag=sea_t_parry1,nbt=!{SelectedItem:{id:"minecraft:shield"}}] run scoreboard players set @s sea_shield_switch 20
