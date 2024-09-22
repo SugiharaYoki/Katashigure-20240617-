@@ -53,5 +53,5 @@ execute as @a[tag=!NoAnnouncement,tag=!Gaming,scores={AnnouncementTime=32,rng2=1
 
 
 
+execute as @a[scores={AnnouncementTime=1},tag=!Gaming] at @s run function skyblock:world_sys_announcementp2_bgm
 
-gamemode adventure @a[gamemode=creative,tag=!ServerManager]
