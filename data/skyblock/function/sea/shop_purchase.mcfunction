@@ -266,14 +266,16 @@ execute if entity @s[tag=sea_purchase_pass] run give @s flint_and_steel[custom_n
 execute if entity @s[tag=sea_purchase_pass] run clear @s emerald 2
 tag @s remove sea_purchase_pass
 
-execute if score @s sea_crafter matches 10005 as @s[scores={sea_i_emerald=..0}] run tellraw @s {"text":"失败！余额不足！","color":"red"}
-execute if score @s sea_crafter matches 10005 as @s[scores={sea_i_emerald=1..}] run tag @s add sea_purchase_pass
+execute if score @s sea_crafter matches 10005 as @s[scores={sea_i_emerald=..0}] unless entity @n[type=interaction,tag=SEAcrafter_foodless,distance=0..3] run tellraw @s {"text":"失败！余额不足！","color":"red"}
+execute if score @s sea_crafter matches 10005 if entity @n[type=interaction,tag=SEAcrafter_foodless,distance=0..3] run tellraw @s {"text":"这台多功能工作站不售卖食物。虽然我也不清楚自己是怎么找到的购买食物选项。","color":"red"}
+execute if score @s sea_crafter matches 10005 as @s[scores={sea_i_emerald=1..}] unless entity @n[type=interaction,tag=SEAcrafter_foodless,distance=0..3] run tag @s add sea_purchase_pass
 execute if entity @s[tag=sea_purchase_pass] run playsound minecraft:item.armor.equip_iron neutral @s ~ ~ ~ 100
 execute if entity @s[tag=sea_purchase_pass] run function skyblock:sea/shop_purchase_food
 execute if entity @s[tag=sea_purchase_pass] run clear @s emerald 1
 tag @s remove sea_purchase_pass
-execute if score @s sea_crafter matches 10027 as @s[scores={sea_i_emerald=..4}] run tellraw @s {"text":"失败！余额不足！","color":"red"}
-execute if score @s sea_crafter matches 10027 as @s[scores={sea_i_emerald=5..}] run tag @s add sea_purchase_pass
+execute if score @s sea_crafter matches 10027 as @s[scores={sea_i_emerald=..4}] unless entity @n[type=interaction,tag=SEAcrafter_foodless,distance=0..3] run tellraw @s {"text":"失败！余额不足！","color":"red"}
+execute if score @s sea_crafter matches 10027 if entity @n[type=interaction,tag=SEAcrafter_foodless,distance=0..3] run tellraw @s {"text":"这台多功能工作站不售卖食物。虽然我也不清楚自己是怎么找到的购买食物选项。","color":"red"}
+execute if score @s sea_crafter matches 10027 as @s[scores={sea_i_emerald=5..}] unless entity @n[type=interaction,tag=SEAcrafter_foodless,distance=0..3] run tag @s add sea_purchase_pass
 execute if entity @s[tag=sea_purchase_pass] run playsound minecraft:item.armor.equip_iron neutral @s ~ ~ ~ 100
 execute if entity @s[tag=sea_purchase_pass] run function skyblock:sea/shop_purchase_food
 execute if entity @s[tag=sea_purchase_pass] run function skyblock:sea/shop_purchase_food
@@ -522,26 +524,26 @@ tag @s remove sea_purchase_pass
 execute if score @s sea_crafter matches 30001..39999 run playsound minecraft:ui.button.click master @s ~ ~ ~ 0.3 1.4 0.4
 execute if score @s sea_crafter matches 30001..39999 run playsound minecraft:item.chorus_fruit.teleport master @s ~ ~ ~ 1.2 0.7 0.1
 execute if score @s sea_crafter matches 30001..39999 run particle minecraft:portal ~ ~1 ~ 0.5 0.6 0.5 0.2 60
-execute if score @s[tag=sea_teleport01] sea_crafter matches 30001 at @n[tag=SEAcrafter_tp1,type=marker] run tp @s ~ ~ ~ facing entity @n[tag=SEAcrafter]
-execute if score @s[tag=sea_teleport02] sea_crafter matches 30002 at @n[tag=SEAcrafter_tp2,type=marker] run tp @s ~ ~ ~ facing entity @n[tag=SEAcrafter]
-execute if score @s[tag=sea_teleport03] sea_crafter matches 30003 at @n[tag=SEAcrafter_tp3,type=marker] run tp @s ~ ~ ~ facing entity @n[tag=SEAcrafter]
-execute if score @s[tag=sea_teleport04] sea_crafter matches 30004 at @n[tag=SEAcrafter_tp4,type=marker] run tp @s ~ ~ ~ facing entity @n[tag=SEAcrafter]
-execute if score @s[tag=sea_teleport05] sea_crafter matches 30005 at @n[tag=SEAcrafter_tp5,type=marker] run tp @s ~ ~ ~ facing entity @n[tag=SEAcrafter]
-execute if score @s[tag=sea_teleport06] sea_crafter matches 30006 at @n[tag=SEAcrafter_tp6,type=marker] run tp @s ~ ~ ~ facing entity @n[tag=SEAcrafter]
-execute if score @s[tag=sea_teleport07] sea_crafter matches 30007 at @n[tag=SEAcrafter_tp7,type=marker] run tp @s ~ ~ ~ facing entity @n[tag=SEAcrafter]
-execute if score @s[tag=sea_teleport08] sea_crafter matches 30008 at @n[tag=SEAcrafter_tp8,type=marker] run tp @s ~ ~ ~ facing entity @n[tag=SEAcrafter]
-execute if score @s[tag=sea_teleport09] sea_crafter matches 30009 at @n[tag=SEAcrafter_tp9,type=marker] run tp @s ~ ~ ~ facing entity @n[tag=SEAcrafter]
-execute if score @s[tag=sea_teleport10] sea_crafter matches 30010 at @n[tag=SEAcrafter_tp10,type=marker] run tp @s ~ ~ ~ facing entity @n[tag=SEAcrafter]
-execute if score @s[tag=sea_teleport11] sea_crafter matches 30011 at @n[tag=SEAcrafter_tp11,type=marker] run tp @s ~ ~ ~ facing entity @n[tag=SEAcrafter]
-execute if score @s[tag=sea_teleport12] sea_crafter matches 30012 at @n[tag=SEAcrafter_tp12,type=marker] run tp @s ~ ~ ~ facing entity @n[tag=SEAcrafter]
-execute if score @s[tag=sea_teleport13] sea_crafter matches 30013 at @n[tag=SEAcrafter_tp13,type=marker] run tp @s ~ ~ ~ facing entity @n[tag=SEAcrafter]
-execute if score @s[tag=sea_teleport14] sea_crafter matches 30014 at @n[tag=SEAcrafter_tp14,type=marker] run tp @s ~ ~ ~ facing entity @n[tag=SEAcrafter]
-execute if score @s[tag=sea_teleport15] sea_crafter matches 30015 at @n[tag=SEAcrafter_tp15,type=marker] run tp @s ~ ~ ~ facing entity @n[tag=SEAcrafter]
-execute if score @s[tag=sea_teleport16] sea_crafter matches 30016 at @n[tag=SEAcrafter_tp16,type=marker] run tp @s ~ ~ ~ facing entity @n[tag=SEAcrafter]
-execute if score @s[tag=sea_teleport17] sea_crafter matches 30017 at @n[tag=SEAcrafter_tp17,type=marker] run tp @s ~ ~ ~ facing entity @n[tag=SEAcrafter]
-execute if score @s[tag=sea_teleport18] sea_crafter matches 30018 at @n[tag=SEAcrafter_tp18,type=marker] run tp @s ~ ~ ~ facing entity @n[tag=SEAcrafter]
-execute if score @s[tag=sea_teleport19] sea_crafter matches 30019 at @n[tag=SEAcrafter_tp19,type=marker] run tp @s ~ ~ ~ facing entity @n[tag=SEAcrafter]
-execute if score @s[tag=sea_teleport20] sea_crafter matches 30020 at @n[tag=SEAcrafter_tp20,type=marker] run tp @s ~ ~ ~ facing entity @n[tag=SEAcrafter]
+execute if score @s[tag=sea_teleport01] sea_crafter matches 30001 at @n[tag=SEAcrafter_tp1,type=marker] unless entity @n[tag=SEAcrafter_foodless,distance=0..3] run tp @s ~ ~ ~ facing entity @n[tag=SEAcrafter]
+execute if score @s[tag=sea_teleport02] sea_crafter matches 30002 at @n[tag=SEAcrafter_tp2,type=marker] unless entity @n[tag=SEAcrafter_foodless,distance=0..3] run tp @s ~ ~ ~ facing entity @n[tag=SEAcrafter]
+execute if score @s[tag=sea_teleport03] sea_crafter matches 30003 at @n[tag=SEAcrafter_tp3,type=marker] unless entity @n[tag=SEAcrafter_foodless,distance=0..3] run tp @s ~ ~ ~ facing entity @n[tag=SEAcrafter]
+execute if score @s[tag=sea_teleport04] sea_crafter matches 30004 at @n[tag=SEAcrafter_tp4,type=marker] unless entity @n[tag=SEAcrafter_foodless,distance=0..3] run tp @s ~ ~ ~ facing entity @n[tag=SEAcrafter]
+execute if score @s[tag=sea_teleport05] sea_crafter matches 30005 at @n[tag=SEAcrafter_tp5,type=marker] unless entity @n[tag=SEAcrafter_foodless,distance=0..3] run tp @s ~ ~ ~ facing entity @n[tag=SEAcrafter]
+execute if score @s[tag=sea_teleport06] sea_crafter matches 30006 at @n[tag=SEAcrafter_tp6,type=marker] unless entity @n[tag=SEAcrafter_foodless,distance=0..3] run tp @s ~ ~ ~ facing entity @n[tag=SEAcrafter]
+execute if score @s[tag=sea_teleport07] sea_crafter matches 30007 at @n[tag=SEAcrafter_tp7,type=marker] unless entity @n[tag=SEAcrafter_foodless,distance=0..3] run tp @s ~ ~ ~ facing entity @n[tag=SEAcrafter]
+execute if score @s[tag=sea_teleport08] sea_crafter matches 30008 at @n[tag=SEAcrafter_tp8,type=marker] unless entity @n[tag=SEAcrafter_foodless,distance=0..3] run tp @s ~ ~ ~ facing entity @n[tag=SEAcrafter]
+execute if score @s[tag=sea_teleport09] sea_crafter matches 30009 at @n[tag=SEAcrafter_tp9,type=marker] unless entity @n[tag=SEAcrafter_foodless,distance=0..3] run tp @s ~ ~ ~ facing entity @n[tag=SEAcrafter]
+execute if score @s[tag=sea_teleport10] sea_crafter matches 30010 at @n[tag=SEAcrafter_tp10,type=marker] unless entity @n[tag=SEAcrafter_foodless,distance=0..3] run tp @s ~ ~ ~ facing entity @n[tag=SEAcrafter]
+execute if score @s[tag=sea_teleport11] sea_crafter matches 30011 at @n[tag=SEAcrafter_tp11,type=marker] if entity @n[tag=SEAcrafter_foodless,distance=0..3] run tp @s ~ ~ ~ facing entity @n[tag=SEAcrafter]
+execute if score @s[tag=sea_teleport12] sea_crafter matches 30012 at @n[tag=SEAcrafter_tp12,type=marker] if entity @n[tag=SEAcrafter_foodless,distance=0..3] run tp @s ~ ~ ~ facing entity @n[tag=SEAcrafter]
+execute if score @s[tag=sea_teleport13] sea_crafter matches 30013 at @n[tag=SEAcrafter_tp13,type=marker] if entity @n[tag=SEAcrafter_foodless,distance=0..3] run tp @s ~ ~ ~ facing entity @n[tag=SEAcrafter]
+execute if score @s[tag=sea_teleport14] sea_crafter matches 30014 at @n[tag=SEAcrafter_tp14,type=marker] if entity @n[tag=SEAcrafter_foodless,distance=0..3] run tp @s ~ ~ ~ facing entity @n[tag=SEAcrafter]
+execute if score @s[tag=sea_teleport15] sea_crafter matches 30015 at @n[tag=SEAcrafter_tp15,type=marker] unless entity @n[tag=SEAcrafter_foodless,distance=0..3] run tp @s ~ ~ ~ facing entity @n[tag=SEAcrafter]
+execute if score @s[tag=sea_teleport16] sea_crafter matches 30016 at @n[tag=SEAcrafter_tp16,type=marker] unless entity @n[tag=SEAcrafter_foodless,distance=0..3] run tp @s ~ ~ ~ facing entity @n[tag=SEAcrafter]
+execute if score @s[tag=sea_teleport17] sea_crafter matches 30017 at @n[tag=SEAcrafter_tp17,type=marker] unless entity @n[tag=SEAcrafter_foodless,distance=0..3] run tp @s ~ ~ ~ facing entity @n[tag=SEAcrafter]
+execute if score @s[tag=sea_teleport18] sea_crafter matches 30018 at @n[tag=SEAcrafter_tp18,type=marker] unless entity @n[tag=SEAcrafter_foodless,distance=0..3] run tp @s ~ ~ ~ facing entity @n[tag=SEAcrafter]
+execute if score @s[tag=sea_teleport19] sea_crafter matches 30019 at @n[tag=SEAcrafter_tp19,type=marker] unless entity @n[tag=SEAcrafter_foodless,distance=0..3] run tp @s ~ ~ ~ facing entity @n[tag=SEAcrafter]
+execute if score @s[tag=sea_teleport20] sea_crafter matches 30020 at @n[tag=SEAcrafter_tp20,type=marker] unless entity @n[tag=SEAcrafter_foodless,distance=0..3] run tp @s ~ ~ ~ facing entity @n[tag=SEAcrafter]
 execute if score @s sea_crafter matches 30001..39999 run execute at @s run playsound minecraft:item.chorus_fruit.teleport master @s ~ ~ ~ 1.2 0.7 0.1
 execute if score @s sea_crafter matches 30001..39999 run execute at @s run playsound ambient.soul_sand_valley.mood master @s ~ ~ ~ 1.2 0.7 0.1
 execute if score @s sea_crafter matches 30001..39999 run execute at @s run playsound ambient.crimson_forest.additions master @s ~ ~ ~ 1.2 0.7 0.1

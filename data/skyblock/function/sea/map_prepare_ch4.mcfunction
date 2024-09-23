@@ -20,11 +20,11 @@ setblock 90169 20 80 air
 setblock 90169 20 80 lever[facing=north,face=floor]
 
 fill 90177 18 88 90181 18 89 air
+setblock 90193 20 86 minecraft:waxed_copper_bulb[lit=false]
 
 
-
-
-
+summon minecraft:interaction 90192 20.3 85 {CustomName:'[{"text":"多功能工作站"}]',Tags:["SEAcrafter","SEAcrafter_foodless","SEAcrafter11"]}
+summon minecraft:marker 90191 19 85 {Tags:["SEAcrafter_tp","SEAcrafter_tp11"]}
 
 
 
