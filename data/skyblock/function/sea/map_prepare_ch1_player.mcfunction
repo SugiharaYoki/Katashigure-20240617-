@@ -58,3 +58,20 @@ execute if entity @a[tag=SEAPT,tag=e_w_01] run give @s iron_hoe[custom_name='{"t
 execute if entity @a[tag=SEAPT,tag=e_w_02] run give @s iron_axe[custom_name='{"text":"消防斧","italic":false,"color":"red"}',custom_data={sea_safeaxe:true},attribute_modifiers=[{type:"generic.attack_damage",slot:"mainhand",id:"sea_weapon:004_01",amount:6.5,operation:"add_value"},{type:"generic.attack_speed",slot:"mainhand",id:"sea_weapon:004_02",amount:-3.0,operation:"add_value"}],unbreakable={}]
 execute if entity @a[tag=SEAPT,tag=e_w_03] run give @s crossbow[custom_name='{"text":"工程弩","italic":false,"color":"red"}',custom_data={sea_crossbow:true},unbreakable={}]
 execute if entity @a[tag=SEAPT,tag=e_w_04] run give @s shears[custom_name='{"text":"喷火器","italic":false,"color":"red"}',custom_data={sea_flamethrower:true},unbreakable={}]
+
+
+
+execute unless score @s sea_speedrun_ch1 matches 1.. run scoreboard players set @s sea_speedrun_ch1 9999
+execute unless score @s sea_speedrun_ch2 matches 1.. run scoreboard players set @s sea_speedrun_ch2 9999
+execute unless score @s sea_speedrun_ch3 matches 1.. run scoreboard players set @s sea_speedrun_ch3 9999
+execute unless score @s sea_speedrun_ch4 matches 1.. run scoreboard players set @s sea_speedrun_ch4 9999
+execute unless score @s sea_speedrun_ch5 matches 1.. run scoreboard players set @s sea_speedrun_ch5 9999
+execute unless score @s sea_speedrun_ch6 matches 1.. run scoreboard players set @s sea_speedrun_ch6 9999
+execute unless score @s sea_speedrun_ch7 matches 1.. run scoreboard players set @s sea_speedrun_ch7 9999
+
+
+
+
+
+
+
