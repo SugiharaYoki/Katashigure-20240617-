@@ -3,7 +3,9 @@ execute if entity @n[tag=SEA_choose_chapter_2,type=armor_stand] run function sky
 execute if entity @n[tag=SEA_choose_chapter_2b,type=armor_stand] run function skyblock:sea/map_jumpto_ch2_boss
 execute if entity @n[tag=SEA_choose_chapter_3,type=armor_stand] run function skyblock:sea/map_jumpto_ch3
 execute if entity @n[tag=SEA_choose_chapter_3b,type=armor_stand] run function skyblock:sea/map_jumpto_ch3_boss
+execute if entity @n[tag=SEA_choose_chapter_3b,type=armor_stand] run function skyblock:sea/map_jumpto_ch3_boss_exclusive
 execute if entity @n[tag=SEA_choose_chapter_4,type=armor_stand] run function skyblock:sea/map_jumpto_ch4
+execute if entity @n[tag=SEA_choose_chapter_4,type=armor_stand] run function skyblock:sea/map_jumpto_ch4_exclusive
 execute if entity @n[tag=SEA_choose_chapter_4b,type=armor_stand] run function skyblock:sea/map_jumpto_ch4_boss
 execute if entity @n[tag=SEA_choose_chapter_5,type=armor_stand] run function skyblock:sea/map_jumpto_ch5
 execute if entity @n[tag=SEA_choose_chapter_5b,type=armor_stand] run function skyblock:sea/map_jumpto_ch5_boss

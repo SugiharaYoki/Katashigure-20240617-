@@ -108,12 +108,6 @@ scoreboard players set @e[tag=SEAch3_spawn_timer] sea_4temp1 99999
 
 
 
-execute as @s[scores={sea_4temp1=592}] run scoreboard players set @a[tag=SEAPT,scores={SEA_story=..4}] SEA_story 5
-
-execute as @s[scores={sea_4temp1=730}] at @s run summon firework_rocket 90121 162 137 {LifeTime:35,FireworksItem:{id:firework_rocket,count:1,components:{fireworks:{flight_duration:25,explosions:[{shape:"large_ball",has_twinkle:0b,has_trail:1b,colors:[I;3887386],fade_colors:[I;4312372]}]}}}}
-
-execute positioned 90149 108 103 run function skyblock:sea/m/npc_yuehan
-scoreboard players set @n[tag=SEAyuehan] sea_4temp1 260
 
 fill 90149 137 152 90149 138 152 air destroy
 
@@ -128,7 +122,5 @@ execute positioned 90152 128 98 run function skyblock:sea/m/pillager
 execute positioned 90152 128 98 run function skyblock:sea/m/pillager
 
 
-execute positioned 90149 108 103 run tellraw @a[distance=0..250] {"text":"越涵：“……们、哥们？哎哟你终于有反应了，你在这发什么呆呢？怎么叫你都不理我。着魔了？”","color":"green"}
-execute positioned 90149 108 103 run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
 fill 90163 129 113 90163 127 114 air
 
