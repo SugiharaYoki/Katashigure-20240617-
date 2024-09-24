@@ -12,7 +12,7 @@ scoreboard objectives add ZeroBGM dummy
 scoreboard objectives add If_Lectern minecraft.used:minecraft.lectern
 scoreboard objectives add Common trigger
 scoreboard objectives add HP dummy
-scoreboard objectives add DeathCountTemp dummy
+scoreboard objectives add DeathCountTemp minecraft.custom:minecraft.deaths
 scoreboard objectives add CasinoBlJarE dummy
 scoreboard objectives add Perm_BlackJackW dummy
 scoreboard objectives add 2 dummy
