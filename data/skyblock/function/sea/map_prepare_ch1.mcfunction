@@ -71,7 +71,6 @@ weather thunder 1000000s
 time set 12000t
 gamerule doDaylightCycle false
 gamerule keepInventory true
-scoreboard players set @n[tag=sc] sea_4temp1 -1
 
 
 setblock 90060 103 131 minecraft:jukebox[has_record=true]{RecordItem:{id:"minecraft:music_disc_creator_music_box"}}
