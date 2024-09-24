@@ -85,7 +85,7 @@ gamerule doDaylightCycle true
 tellraw @a {"text": "忒尔克西海上钻井平台已经失联24小时整，","color": "blue"}
 tellraw @a {"text": "太平洋石油管理局的高层决定派你前去调查情况。","color": "blue"}
 tag @a remove sea_dead
-scoreboard players set @n[tag=sc] sea_4temp1 0
+scoreboard players reset @n[tag=sc] sea_4temp1
 scoreboard players set @n[tag=sc] sea_4temp2 0
 scoreboard players set @n[tag=sc] sea_4temp3 0
 scoreboard players set @n[tag=sc] sea_4temp4 0
