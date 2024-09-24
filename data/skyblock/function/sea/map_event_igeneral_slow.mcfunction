@@ -319,7 +319,9 @@ execute if block 90115 152 127 bamboo_button[powered=true] run fill 90115 150 12
 
 execute as @n[tag=SEAmob_carrybomb,nbt=!{Fire:-1s}] run kill @s
 
-
+#ch4激光
+execute as @e[x=90184.0,dx=3.8,y=20.65,dy=0,z=97.0,dz=0] run damage @s 3 sting
+execute as @e[x=90184.0,dx=3.8,y=19.3,dy=0,z=93.0,dz=0] run damage @s 3 sting
 
 #水晶祀堂
 particle enchant 90093 131 102 3 3 3 0.01 20

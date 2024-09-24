@@ -26,11 +26,16 @@ setblock 90193 20 86 minecraft:waxed_copper_bulb[lit=false]
 summon minecraft:interaction 90192 20.3 85 {CustomName:'[{"text":"多功能工作站"}]',Tags:["SEAcrafter","SEAcrafter_foodless","SEAcrafter11"]}
 summon minecraft:marker 90191 19 85 {Tags:["SEAcrafter_tp","SEAcrafter_tp11"]}
 
+setblock 90188 14 89 chest[facing=west]
+item replace block 90188 14 89 container.12 with beef 1
+item replace block 90188 14 89 container.14 with beef 1
 
 
+execute positioned 90186 14 87 run function skyblock:sea/m/drowned_maintenance
+execute positioned 90186 14 87 run function skyblock:sea/m/drowned
+execute positioned 90188 19 100 run function skyblock:sea/m/drone
 
-
-
-
+summon block_display 90184.0 20.65 97.0 {transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[3.8f,0.03f,0.03f],translation:[0f,0f,0f]},block_state:{Name:redstone_block},Rotation:[0f,0f],Tags:["sea_blockdisplay","sea_laser_ch4_1"]}
+summon block_display 90184.0 19.3 93.0 {transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[3.8f,0.03f,0.03f],translation:[0f,0f,0f]},block_state:{Name:redstone_block},Rotation:[0f,0f],Tags:["sea_blockdisplay","sea_laser_ch4_2"]}
 
     function skyblock:protector/entity_count_end {function:"skyblock:sea/map_prepare_ch4.mcfunction"}
