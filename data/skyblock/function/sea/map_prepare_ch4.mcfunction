@@ -14,7 +14,7 @@ kill @e[tag=SEAbossch3_core]
 kill @e[tag=SEAbossch3_light]
 
 
-fill 90154 21 88 90154 19 89 air destroy
+fill 90154 21 88 90154 19 89 air
 fill 90176 18 84 90175 18 87 minecraft:lime_stained_glass
 setblock 90169 20 80 air
 setblock 90169 20 80 lever[facing=north,face=floor]
