@@ -13,6 +13,6 @@ scoreboard players add @n[tag=sc] sea_speedrun_ch4 1
 execute store result score @n[tag=sc] sea_player run execute if entity @a[tag=SEAPT]
 
 
-execute unless entity @a[tag=SEAPT] run function skyblock:sea/endgame_regen
+execute unless entity @a[tag=SEAPT] if entity @a[x=90074,y=92,z=139,distance=0..50,gamemode=!spectator] run function skyblock:sea/endgame_regen
 
 
