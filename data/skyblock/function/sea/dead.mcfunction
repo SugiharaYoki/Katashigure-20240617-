@@ -149,3 +149,6 @@ attribute @s minecraft:generic.max_health modifier remove sea_t_health2
 attribute @s minecraft:generic.max_health modifier remove sea_t_health3
 attribute @s minecraft:generic.max_health modifier remove sea_t_health4
 attribute @s minecraft:generic.max_health modifier remove sea_t_health5
+
+
+execute unless entity @a[tag=SEAPT] run function skyblock:sea/endgame_regen
