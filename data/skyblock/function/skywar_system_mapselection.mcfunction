@@ -3,7 +3,7 @@
 # T4 - 002:腐败的祭坛 003:沉默的亚特兰蒂斯 004:炙魇的黑城 005:献堂的圣咏 010:碎晦坍殒的地灵脉 017:天穹巨兽古伽兰那
 # T2 - 007:亚兹列尔的钟台 008:荒废之地的民谣
 # T3 - 014:折翼界空的夜明之塔 015:浮岛空舰站 016:绯染缥茫的世花源
-# TD - [X006:浮游要塞伊什塔尔X] [X009:爪巴战争·小爬怡情X] [X011:棋盘战争X] [X012:煌逝的近礁X]
+# TD - [X006:浮游要塞伊什塔尔X] [X009:爪巴战争·小爬怡情X] 011:棋盘战争 [X012:煌逝的近礁X]
 # TS - 013:混沌魔方
 #地图选择初始化
 #setblock -4 12 6 minecraft:redstone_block
@@ -38,8 +38,8 @@ execute if entity @n[tag=sc,scores={Map_Code=9}] run title @a[tag=!Gaming] actio
 execute if entity @n[tag=sc,scores={Map_Code=10}] run title @a[tag=!Gaming] actionbar {"text":"空岛战争T4 碎晦坍殒的地灵脉","bold":true,"color":"light_purple"}
 execute if entity @n[tag=sc,scores={Map_Code=10}] run clone 12 -33 28 16 -37 32 -118 56 -110
 #map011
-execute if entity @n[tag=sc,scores={Map_Code=11}] run title @a[tag=!Gaming] actionbar {"text":"棋盘战争 光辉的生存竞技场","bold":true,"color":"light_purple"}
-#execute if entity @n[tag=sc,scores={Map_Code=11}] run clone 0 51 113 5 53 118 31 86 70
+execute if entity @n[tag=sc,scores={Map_Code=11}] run title @a[tag=!Gaming] actionbar {"text":"星罗棋盘","bold":true,"color":"light_purple"}
+execute if entity @n[tag=sc,scores={Map_Code=11}] run clone 12 -38 28 16 -42 32 -118 56 -110
 #map012
 execute if entity @n[tag=sc,scores={Map_Code=12}] run title @a[tag=!Gaming] actionbar {"text":"空岛战争 煌逝的近礁","bold":true,"color":"light_purple"}
 #execute if entity @n[tag=sc,scores={Map_Code=12}] run clone 0 51 120 5 53 125 31 86 70
@@ -68,9 +68,9 @@ execute if entity @n[tag=sc,scores={Map_Type=1}] run summon minecraft:armor_stan
 #execute if entity @n[tag=sc,scores={Map_Type=3}] run summon minecraft:armor_stand -121 60.7 -108 {CustomName:"{\"text\":\"开启\",\"color\":\"aqua\"}",DisabledSlots:65793,CustomNameVisible:1b,Invisible:1b,Marker:1b,NoGravity:1b}
 #execute if entity @n[tag=sc,scores={Map_Type=3}] run summon minecraft:armor_stand -121 60.35 -108 {CustomName:"{\"text\":\"匿名之都 爪巴战争\",\"color\":\"green\"}",DisabledSlots:65793,CustomNameVisible:1b,Invisible:1b,Marker:1b,NoGravity:1b}
 #棋盘战争 初始化
-#execute if entity @n[tag=sc,scores={Map_Type=4}] run kill @e[type=minecraft:armor_stand,x=-121,y=60.5,z=-108,distance=0..2]
-#execute if entity @n[tag=sc,scores={Map_Type=4}] run summon minecraft:armor_stand -121 60.7 -108 {CustomName:"{\"text\":\"开启\",\"color\":\"aqua\"}",DisabledSlots:65793,CustomNameVisible:1b,Invisible:1b,Marker:1b,NoGravity:1b}
-#execute if entity @n[tag=sc,scores={Map_Type=4}] run summon minecraft:armor_stand -121 60.35 -108 {CustomName:"{\"text\":\"匿名之都 棋盘战争\",\"color\":\"red\"}",DisabledSlots:65793,CustomNameVisible:1b,Invisible:1b,Marker:1b,NoGravity:1b}
+execute if entity @n[tag=sc,scores={Map_Type=4}] run kill @e[type=minecraft:armor_stand,x=-121,y=60.5,z=-108,distance=0..2]
+execute if entity @n[tag=sc,scores={Map_Type=4}] run summon minecraft:armor_stand -121 60.7 -108 {CustomName:"{\"text\":\"开启\",\"color\":\"aqua\"}",DisabledSlots:65793,CustomNameVisible:1b,Invisible:1b,Marker:1b,NoGravity:1b}
+execute if entity @n[tag=sc,scores={Map_Type=4}] run summon minecraft:armor_stand -121 60.35 -108 {CustomName:"{\"text\":\"匿名之都 星罗棋盘\",\"color\":\"red\"}",DisabledSlots:65793,CustomNameVisible:1b,Invisible:1b,Marker:1b,NoGravity:1b}
 
 
 execute if entity @n[tag=sc,scores={SSgspT=1..}] run function skyblock:skywar_city_pause
