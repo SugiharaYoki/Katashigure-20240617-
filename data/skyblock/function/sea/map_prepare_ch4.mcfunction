@@ -42,6 +42,8 @@ execute positioned 90188 19 100 run function skyblock:sea/m/drone
 
 execute positioned 90191 19 87 run function skyblock:sea/m/silverfish_big
 
+execute positioned 90183 19 112 run function skyblock:sea/m/skeleton
+execute positioned 90183 19 112 run function skyblock:sea/m/skeleton
 
 
 summon block_display 90184.0 20.65 97.0 {transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[3.8f,0.03f,0.03f],translation:[0f,0f,0f]},block_state:{Name:redstone_block},Rotation:[0f,0f],Tags:["sea_blockdisplay","sea_laser_ch4_1"]}
