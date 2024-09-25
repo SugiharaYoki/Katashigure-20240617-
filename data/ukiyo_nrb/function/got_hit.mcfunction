@@ -1,4 +1,4 @@
-scoreboard players set @a nrb_does_damage 0
+
 scoreboard players set @a nrb_receive_damage 0
 
 scoreboard objectives add nrb_compare dummy
@@ -12,6 +12,8 @@ execute at @s rotated ~ 0 positioned ^ ^ ^-3 if entity @p[scores={nrb_does_damag
 execute at @s rotated ~ 0 positioned ^ ^ ^-3.5 if entity @p[scores={nrb_does_damage=1..},distance=..3.2] run tag @s add got_hit
 execute at @s rotated ~ 0 positioned ^ ^ ^-4 if entity @p[scores={nrb_does_damage=1..},distance=..3.7] run tag @s add got_hit
 execute at @s rotated ~ 0 positioned ^ ^ ^-4.5 if entity @p[scores={nrb_does_damage=1..},distance=..4.2] run tag @s add got_hit
+
+scoreboard players set @a nrb_does_damage 0
 
 execute if entity @s[tag=got_hit] run function ukiyo_nrb:decrease_life
 
