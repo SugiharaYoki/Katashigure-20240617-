@@ -14,14 +14,19 @@ kill @e[tag=SEAbossch3_core]
 kill @e[tag=SEAbossch3_light]
 
 
-fill 90154 21 88 90154 19 89 air
-fill 90176 18 84 90175 18 87 minecraft:lime_stained_glass
 setblock 90169 20 80 air
 setblock 90169 20 80 lever[facing=north,face=floor]
+fill 90154 21 88 90154 19 89 air
+fill 90176 18 84 90175 18 87 minecraft:lime_stained_glass
+
+setblock 90181 20 113 air
+setblock 90181 20 113 lever[face=floor,facing=south,powered=true]
+fill 90184 18 114 90190 18 112 minecraft:lime_stained_glass
 
 fill 90177 18 88 90181 18 89 air
 setblock 90193 20 86 minecraft:waxed_copper_bulb[lit=false]
-
+fill 90191 25 114 90193 25 112 minecraft:waxed_copper_grate
+fill 90193 19 121 90191 23 121 minecraft:lime_stained_glass
 
 summon minecraft:interaction 90192 20.3 85 {CustomName:'[{"text":"多功能工作站"}]',Tags:["SEAcrafter","SEAcrafter_foodless","SEAcrafter11"]}
 summon minecraft:marker 90191 19 85 {Tags:["SEAcrafter_tp","SEAcrafter_tp11"]}
