@@ -28,6 +28,8 @@ execute if block 90075 103 141 cauldron if block 90126 140 137 air run title @s[
 execute if block 90075 103 141 cauldron if block 90126 140 137 air if block 90121 155 139 air run title @s[tag=SEAPT,tag=e_i_26] actionbar {"text":"目标：解开副宿舍楼的谜题","color":"green"}
 execute if block 90075 103 141 cauldron unless block 90121 155 139 air run title @s[tag=SEAPT] actionbar {"text":"目标：前往宿舍楼的更高楼层","color":"green"}
 execute if block 90075 103 141 cauldron unless block 90131 161 144 air run title @s[tag=SEAPT] actionbar {"text":"目标：前往物资层东面的电梯","color":"green"}
+execute if block 90075 103 141 cauldron if block 90163 129 113 air run title @s[tag=SEAPT] actionbar {"text":"目标：乘座物资层东面的电梯 继续向下方前进","color":"green"}
+execute if block 90075 103 141 cauldron if block 90125 102 101 air run title @s[tag=SEAPT] actionbar {"text":"目标：前往水下研究设施","color":"green"}
 
 
 
