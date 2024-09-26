@@ -76,4 +76,9 @@ tp @a[team=Team1_2] 50022 110 50022
 tp @a[team=Team1_3] 50022 110 50070
 tp @a[team=Team1_4] 50070 110 50070
 
+execute if entity @a[team=Team1_1] run setblock 50070 109 50022 purple_stained_glass
+execute if entity @a[team=Team1_2] run setblock 50022 109 50022 purple_stained_glass
+execute if entity @a[team=Team1_3] run setblock 50022 109 50070 purple_stained_glass
+execute if entity @a[team=Team1_4] run setblock 50070 109 50070 purple_stained_glass
+
 tp @a[tag=PVP_see,tag=!PVPTeamed] 50046 130 50046
