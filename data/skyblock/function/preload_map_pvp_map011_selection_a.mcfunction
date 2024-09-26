@@ -10,6 +10,9 @@ execute if score SkyChess_Generator rng1 matches 101 positioned ~ ~-1 ~ run setb
 execute if score SkyChess_Generator rng1 matches 101 positioned ~ ~-2 ~ run setblock ~ ~ ~ redstone_block
 execute if score SkyChess_Generator rng1 matches 101 positioned ~ ~-1 ~ run fill ~ ~ ~ ~ ~-1 ~ air
 #铃兰遗迹1
+#brush cylinder 60%stone,30%diorite,10%mossy_cobblestone 3 3
+#brush cylinder 80%dirt,15%coarse_dirt,5%mossy_cobblestone 2 2
+#replace gravel 50%fern,30%short_grass,20%lily_of_the_valley
 execute if score SkyChess_Generator rng1 matches 102 positioned ~ ~-1 ~ run setblock ~ ~ ~ structure_block{name:"minecraft:skychess_102",posX:-6,posY:1,posZ:-6,rotation:"NONE",mirror:"NONE",mode:"LOAD"}
 execute if score SkyChess_Generator rng1 matches 102 positioned ~ ~-2 ~ run setblock ~ ~ ~ redstone_block
 execute if score SkyChess_Generator rng1 matches 102 positioned ~ ~-1 ~ run fill ~ ~ ~ ~ ~-1 ~ air
