@@ -60,6 +60,7 @@ execute if entity @n[tag=!MapLoaAlr,tag=sc,scores={SSgspT=2,Map_Code=5}] run fun
 execute if entity @n[tag=!MapLoaAlr,tag=sc,scores={SSgspT=2,Map_Code=7}] run function skyblock:preload_map_pvp_map007_part1
 execute if entity @n[tag=!MapLoaAlr,tag=sc,scores={SSgspT=2,Map_Code=8}] run function skyblock:preload_map_pvp_map008_part1
 execute if entity @n[tag=!MapLoaAlr,tag=sc,scores={SSgspT=2,Map_Code=10}] run function skyblock:preload_map_pvp_map010_part1_hard
+execute if entity @n[tag=!MapLoaAlr,tag=sc,scores={SSgspT=2,Map_Code=11}] run function skyblock:preload_map_pvp_map011_size1
 execute if entity @n[tag=!MapLoaAlr,tag=sc,scores={SSgspT=2,Map_Code=13}] run function skyblock:preload_map_pvp_map013_part1
 execute if entity @n[tag=!MapLoaAlr,tag=sc,scores={SSgspT=2,Map_Code=14}] unless block -156 59 -114 diamond_block run function skyblock:preload_map_pvp_map014_part1_hard
 execute if entity @n[tag=!MapLoaAlr,tag=sc,scores={SSgspT=2,Map_Code=14}] if block -156 59 -114 diamond_block run function skyblock:preload_map_pvp_map014alt_part1_hard
@@ -208,6 +209,8 @@ execute if score @n[tag=sc] SSgspT matches 13 if score @n[tag=sc] Map_Code match
 execute if score @n[tag=sc] SSgspT matches 13 if score @n[tag=sc] Map_Code matches 8 run title @a[tag=PVP_see] subtitle {"text":"残羹断瓦的下方 曾是一座巨型遗迹","color":"white"}
 execute if score @n[tag=sc] SSgspT matches 13 if score @n[tag=sc] Map_Code matches 10 run title @a[tag=PVP_see] title {"text":"碎晦坍殒的地灵脉","color":"white"}
 execute if score @n[tag=sc] SSgspT matches 13 if score @n[tag=sc] Map_Code matches 10 run title @a[tag=PVP_see] subtitle {"text":"曾经地元素最为充沛之所 今日映入眼帘的仅有腐败","color":"white"}
+execute if score @n[tag=sc] SSgspT matches 13 if score @n[tag=sc] Map_Code matches 11 run title @a[tag=PVP_see] title {"text":"星罗棋盘","color":"white"}
+execute if score @n[tag=sc] SSgspT matches 13 if score @n[tag=sc] Map_Code matches 11 run title @a[tag=PVP_see] subtitle {"text":"北风吹人不可出 清坐且可与君棋","color":"white"}
 execute if score @n[tag=sc] SSgspT matches 13 if score @n[tag=sc] Map_Code matches 13 run title @a[tag=PVP_see] title {"text":"混沌魔方","color":"white"}
 execute if score @n[tag=sc] SSgspT matches 13 if score @n[tag=sc] Map_Code matches 13 run title @a[tag=PVP_see] subtitle {"text":"混沌未分天地乱 茫茫渺渺无人见","color":"white"}
 execute if score @n[tag=sc] SSgspT matches 13 if score @n[tag=sc] Map_Code matches 14 unless block -156 59 -114 diamond_block run title @a[tag=PVP_see] title {"text":"折翼界空的夜明之塔","color":"white"}
