@@ -117,5 +117,5 @@ forceload remove -9800 -9800 -9600 -9780
 
 title @a actionbar {"text":"星罗棋盘","bold":true,"color":"blue"}
 
-fillbiome 50000 10 50200 50200 70 50200 basalt_deltas
+fillbiome 50000 90 50200 50200 120 50200 basalt_deltas
 forceload remove 50000 50000 50200 50200
