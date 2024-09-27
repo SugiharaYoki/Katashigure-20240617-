@@ -106,6 +106,7 @@ tag @n[tag=sc] remove SeGa_sea_ch3
 tag @n[tag=sc] remove SeGa_sea_ch4
 tag @n[tag=sc] remove SeGa_sea_ch5
 tag @n[tag=sc] remove SeGa_sea_ch6
+tag @n[tag=sc] remove SEAbossch3_lighted
 
 setblock 90075 103 137 air
 
