@@ -8,7 +8,7 @@ tellraw @s[scores={parkour_stage=6..}] [{"text":"  柔光书室 6","bold":false,
 tellraw @s[scores={parkour_stage=7..}] [{"text":"  花曳藤架 7","bold":false,"color":"blue","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 832007"}}]
 tellraw @s[scores={parkour_stage=8..}] [{"text":"  花曳藤架 8","bold":false,"color":"blue","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 832008"}}]
 tellraw @s[scores={parkour_stage=9..}] [{"text":"  花曳藤架 9","bold":false,"color":"blue","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 832009"}}]
-tellraw @s[scores={parkour_stage=10..}] [{"text":"  花曳藤架 10","bold":false,"color":"blue","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 832010"}}]
+tellraw @s[scores={parkour_stage=10..}] [{"text":"  腐败污池 10","bold":false,"color":"blue","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 832010"}}]
 tellraw @s[scores={parkour_stage=11..}] [{"text":"  11","bold":false,"color":"blue","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 832011"}}]
 tellraw @s[scores={parkour_stage=12..}] [{"text":"  12","bold":false,"color":"blue","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 832012"}}]
 tellraw @s[scores={parkour_stage=13..}] [{"text":"  13","bold":false,"color":"blue","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 832013"}}]
