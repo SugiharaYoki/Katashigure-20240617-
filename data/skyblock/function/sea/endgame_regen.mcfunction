@@ -100,12 +100,12 @@ kill @e[tag=SEAcrafter,type=interaction]
 kill @e[tag=SEAcrafter_tp,type=marker]
 kill @e[tag=SEAaidbox,type=interaction]
 kill @e[tag=sea_blockdisplay]
-tag @s remove SeGa_sea_ch1
-tag @s remove SeGa_sea_ch2
-tag @s remove SeGa_sea_ch3
-tag @s remove SeGa_sea_ch4
-tag @s remove SeGa_sea_ch5
-tag @s remove SeGa_sea_ch6
+tag @n[tag=sc] remove SeGa_sea_ch1
+tag @n[tag=sc] remove SeGa_sea_ch2
+tag @n[tag=sc] remove SeGa_sea_ch3
+tag @n[tag=sc] remove SeGa_sea_ch4
+tag @n[tag=sc] remove SeGa_sea_ch5
+tag @n[tag=sc] remove SeGa_sea_ch6
 
 setblock 90075 103 137 air
 
