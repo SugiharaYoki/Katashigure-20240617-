@@ -86,3 +86,6 @@ execute if entity @a[team=Team1_7] run setblock 50046 111 50070 air
 execute if entity @a[team=Team1_8] run setblock 50046 111 50022 air
 
 tp @a[tag=PVP_see,tag=!PVPTeamed] 50046 130 50046
+
+give @a[tag=PVPing,tag=PVPTeamed] wooden_pickaxe
+give @a[tag=PVPing,tag=PVPTeamed] bread
