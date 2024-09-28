@@ -30,7 +30,7 @@ execute if score @s PlayHouseTrigger matches 2 run scoreboard players set sc Ann
 execute if score @s PlayHouseTrigger matches 2 run scoreboard objectives setdisplay sidebar 4ASCEND_wins
 execute if score @s PlayHouseTrigger matches 2 run tellraw @s [{"text":"4ASCEND·接待员：\n","color":"aqua"},{"text":"已切换屏幕右侧的记分板为4ASCEND排行榜\n","color":"white"}]
 #Settings
-execute if score @s PlayHouseTrigger matches 3 run tellraw @s "\n\n\n"
+execute if score @s PlayHouseTrigger matches 3 run tellraw @s "\n\n"
     #HP
     execute if score @s PlayHouseTrigger matches 3 run tellraw @s [{"text":"设置自己的生命值：","color":"yellow"},{"score":{"name":"@s","objective":"4ASCEND_HP"},"color":"green","underlined":true,"clickEvent":{"action": "suggest_command","value": "/trigger 4ASCEND_HP_Trigger set 5"}}]
     execute if score @s PlayHouseTrigger matches 3 run tellraw @s {"text":"· 自己的生命值越低，胜利奖励越丰厚（不能低于2）","color":"gray"}
