@@ -1,4 +1,4 @@
-execute store result score SkyChess_Generator rng1 run random value 101..109
+execute store result score SkyChess_Generator rng1 run random value 101..111
 execute store result score SkyChess_Generator rng2 run random value 1..4
 #tell SugiharaYoki 地图加载中 - 选择池：A
 execute if score SkyChess_Generator rng1 matches 1..2 positioned ~ ~-1 ~ run setblock ~ ~ ~ structure_block{name:"minecraft:skychess_001",posX:-6,posY:1,posZ:-6,rotation:"NONE",mirror:"NONE",mode:"LOAD"}
@@ -169,6 +169,51 @@ execute if score SkyChess_Generator rng1 matches 109 positioned ~ ~-1 ~ run setb
 execute if score SkyChess_Generator rng1 matches 109 positioned ~ ~-2 ~ run setblock ~ ~ ~ redstone_block
 execute if score SkyChess_Generator rng1 matches 109 positioned ~ ~-1 ~ run fill ~ ~ ~ ~ ~-1 ~ air
 
+#风啸岩山1#17
+#brush cylinder 40%stone,10%diorite,15%cobblestone,10%granite,15%gravel,10%andesite 3 2
+execute if score SkyChess_Generator rng1 matches 110 if score SkyChess_Generator rng2 matches 1 positioned ~ ~-1 ~ run setblock ~ ~ ~ structure_block{name:"minecraft:skychess_117",posX:-6,posY:1,posZ:-6,rotation:"NONE",mirror:"NONE",mode:"LOAD"}
+execute if score SkyChess_Generator rng1 matches 110 if score SkyChess_Generator rng2 matches 2 positioned ~ ~-1 ~ run setblock ~ ~ ~ structure_block{name:"minecraft:skychess_117",posX:6,posY:1,posZ:-6,rotation:"CLOCKWISE_90",mirror:"NONE",mode:"LOAD"}
+execute if score SkyChess_Generator rng1 matches 110 if score SkyChess_Generator rng2 matches 3 positioned ~ ~-1 ~ run setblock ~ ~ ~ structure_block{name:"minecraft:skychess_117",posX:6,posY:1,posZ:6,rotation:"CLOCKWISE_180",mirror:"NONE",mode:"LOAD"}
+execute if score SkyChess_Generator rng1 matches 110 if score SkyChess_Generator rng2 matches 4 positioned ~ ~-1 ~ run setblock ~ ~ ~ structure_block{name:"minecraft:skychess_117",posX:-6,posY:1,posZ:6,rotation:"COUNTERCLOCKWISE_90",mirror:"NONE",mode:"LOAD"}
+execute if score SkyChess_Generator rng1 matches 110 positioned ~ ~-2 ~ run setblock ~ ~ ~ redstone_block
+execute if score SkyChess_Generator rng1 matches 110 positioned ~ ~-1 ~ run fill ~ ~ ~ ~ ~-1 ~ air
+execute if score SkyChess_Generator rng1 matches 110 positioned ~ ~-1 ~ run setblock ~ ~ ~ structure_block{name:"minecraft:skychess_ore_diamond",posX:-6,posY:1,posZ:-6,rotation:"NONE",mirror:"NONE",mode:"LOAD",integrity:0.06}
+execute if score SkyChess_Generator rng1 matches 110 positioned ~ ~-2 ~ run setblock ~ ~ ~ redstone_block
+execute if score SkyChess_Generator rng1 matches 110 positioned ~ ~-1 ~ run fill ~ ~ ~ ~ ~-1 ~ air
+execute if score SkyChess_Generator rng1 matches 110 positioned ~ ~-1 ~ run setblock ~ ~ ~ structure_block{name:"minecraft:skychess_ore_lapis",posX:-6,posY:1,posZ:-6,rotation:"NONE",mirror:"NONE",mode:"LOAD",integrity:0.05}
+execute if score SkyChess_Generator rng1 matches 110 positioned ~ ~-2 ~ run setblock ~ ~ ~ redstone_block
+execute if score SkyChess_Generator rng1 matches 110 positioned ~ ~-1 ~ run fill ~ ~ ~ ~ ~-1 ~ air
+execute if score SkyChess_Generator rng1 matches 110 positioned ~ ~-1 ~ run setblock ~ ~ ~ structure_block{name:"minecraft:skychess_ore_gold",posX:-6,posY:1,posZ:-6,rotation:"NONE",mirror:"NONE",mode:"LOAD",integrity:0.12}
+execute if score SkyChess_Generator rng1 matches 110 positioned ~ ~-2 ~ run setblock ~ ~ ~ redstone_block
+execute if score SkyChess_Generator rng1 matches 110 positioned ~ ~-1 ~ run fill ~ ~ ~ ~ ~-1 ~ air
+execute if score SkyChess_Generator rng1 matches 110 positioned ~ ~-1 ~ run setblock ~ ~ ~ structure_block{name:"minecraft:skychess_ore_iron",posX:-6,posY:1,posZ:-6,rotation:"NONE",mirror:"NONE",mode:"LOAD",integrity:0.14}
+execute if score SkyChess_Generator rng1 matches 110 positioned ~ ~-2 ~ run setblock ~ ~ ~ redstone_block
+execute if score SkyChess_Generator rng1 matches 110 positioned ~ ~-1 ~ run fill ~ ~ ~ ~ ~-1 ~ air
+execute if score SkyChess_Generator rng1 matches 110 positioned ~ ~-1 ~ run setblock ~ ~ ~ structure_block{name:"minecraft:skychess_ore_coal",posX:-6,posY:1,posZ:-6,rotation:"NONE",mirror:"NONE",mode:"LOAD",integrity:0.14}
+execute if score SkyChess_Generator rng1 matches 110 positioned ~ ~-2 ~ run setblock ~ ~ ~ redstone_block
+execute if score SkyChess_Generator rng1 matches 110 positioned ~ ~-1 ~ run fill ~ ~ ~ ~ ~-1 ~ air
+#风啸岩山2#18
+execute if score SkyChess_Generator rng1 matches 111 if score SkyChess_Generator rng2 matches 1 positioned ~ ~-1 ~ run setblock ~ ~ ~ structure_block{name:"minecraft:skychess_118",posX:-6,posY:1,posZ:-6,rotation:"NONE",mirror:"NONE",mode:"LOAD"}
+execute if score SkyChess_Generator rng1 matches 111 if score SkyChess_Generator rng2 matches 2 positioned ~ ~-1 ~ run setblock ~ ~ ~ structure_block{name:"minecraft:skychess_118",posX:6,posY:1,posZ:-6,rotation:"CLOCKWISE_90",mirror:"NONE",mode:"LOAD"}
+execute if score SkyChess_Generator rng1 matches 111 if score SkyChess_Generator rng2 matches 3 positioned ~ ~-1 ~ run setblock ~ ~ ~ structure_block{name:"minecraft:skychess_118",posX:6,posY:1,posZ:6,rotation:"CLOCKWISE_180",mirror:"NONE",mode:"LOAD"}
+execute if score SkyChess_Generator rng1 matches 111 if score SkyChess_Generator rng2 matches 4 positioned ~ ~-1 ~ run setblock ~ ~ ~ structure_block{name:"minecraft:skychess_118",posX:-6,posY:1,posZ:6,rotation:"COUNTERCLOCKWISE_90",mirror:"NONE",mode:"LOAD"}
+execute if score SkyChess_Generator rng1 matches 111 positioned ~ ~-2 ~ run setblock ~ ~ ~ redstone_block
+execute if score SkyChess_Generator rng1 matches 111 positioned ~ ~-1 ~ run fill ~ ~ ~ ~ ~-1 ~ air
+execute if score SkyChess_Generator rng1 matches 111 positioned ~ ~-1 ~ run setblock ~ ~ ~ structure_block{name:"minecraft:skychess_ore_diamond",posX:-6,posY:1,posZ:-6,rotation:"NONE",mirror:"NONE",mode:"LOAD",integrity:0.06}
+execute if score SkyChess_Generator rng1 matches 111 positioned ~ ~-2 ~ run setblock ~ ~ ~ redstone_block
+execute if score SkyChess_Generator rng1 matches 111 positioned ~ ~-1 ~ run fill ~ ~ ~ ~ ~-1 ~ air
+execute if score SkyChess_Generator rng1 matches 111 positioned ~ ~-1 ~ run setblock ~ ~ ~ structure_block{name:"minecraft:skychess_ore_lapis",posX:-6,posY:1,posZ:-6,rotation:"NONE",mirror:"NONE",mode:"LOAD",integrity:0.05}
+execute if score SkyChess_Generator rng1 matches 111 positioned ~ ~-2 ~ run setblock ~ ~ ~ redstone_block
+execute if score SkyChess_Generator rng1 matches 111 positioned ~ ~-1 ~ run fill ~ ~ ~ ~ ~-1 ~ air
+execute if score SkyChess_Generator rng1 matches 111 positioned ~ ~-1 ~ run setblock ~ ~ ~ structure_block{name:"minecraft:skychess_ore_gold",posX:-6,posY:2,posZ:-6,rotation:"NONE",mirror:"NONE",mode:"LOAD",integrity:0.12}
+execute if score SkyChess_Generator rng1 matches 111 positioned ~ ~-2 ~ run setblock ~ ~ ~ redstone_block
+execute if score SkyChess_Generator rng1 matches 111 positioned ~ ~-1 ~ run fill ~ ~ ~ ~ ~-1 ~ air
+execute if score SkyChess_Generator rng1 matches 111 positioned ~ ~-1 ~ run setblock ~ ~ ~ structure_block{name:"minecraft:skychess_ore_iron",posX:-6,posY:3,posZ:-6,rotation:"NONE",mirror:"NONE",mode:"LOAD",integrity:0.14}
+execute if score SkyChess_Generator rng1 matches 111 positioned ~ ~-2 ~ run setblock ~ ~ ~ redstone_block
+execute if score SkyChess_Generator rng1 matches 111 positioned ~ ~-1 ~ run fill ~ ~ ~ ~ ~-1 ~ air
+execute if score SkyChess_Generator rng1 matches 111 positioned ~ ~-1 ~ run setblock ~ ~ ~ structure_block{name:"minecraft:skychess_ore_coal",posX:-6,posY:4,posZ:-6,rotation:"NONE",mirror:"NONE",mode:"LOAD",integrity:0.14}
+execute if score SkyChess_Generator rng1 matches 111 positioned ~ ~-2 ~ run setblock ~ ~ ~ redstone_block
+execute if score SkyChess_Generator rng1 matches 111 positioned ~ ~-1 ~ run fill ~ ~ ~ ~ ~-1 ~ air
 
 
 
