@@ -8,4 +8,4 @@ execute as @a[x=-31,y=55,z=-67,distance=..5,scores={If_TalkVill=1..}] at @s run 
 execute as @a[scores={If_TalkVill=1..}] at @s if entity @e[tag=city_jinja_luck,distance=0..3] run function skyblock:verbal_city_jinja_luck
 execute as @a[scores={If_TalkVill=1..}] at @s if entity @e[tag=city_jinja_removebadluck,distance=0..3] run function skyblock:verbal_city_jinja_removebadluck
 execute if block -23 23 32 air as @a[x=-90001,y=105,z=56,distance=..6,scores={If_TalkVill=1..}] at @s run function skyblock:verbal_sega_dv_initial
-scoreboard players reset If_TalkVill
+scoreboard players reset @s If_TalkVill
