@@ -494,7 +494,7 @@ execute if entity @n[tag=sc,scores={sea_4temp2=1301}] run setblock 90125 130 115
 
 
 
-execute if entity @a[tag=SEAPT,x=90146,y=128,z=93,distance=0..4] as @n[tag=sc,scores={sea_4temp2=..1999}] run scoreboard players set @s sea_4temp2 2000
+execute if entity @a[tag=SEAPT,x=90132,y=120,z=91,dx=23,dy=15,dz=5] as @n[tag=sc,scores={sea_4temp2=..1999}] run scoreboard players set @s sea_4temp2 2000
 execute if entity @n[tag=sc,scores={sea_4temp2=2001}] positioned 90151.66 128.00 96.00 run function skyblock:sea/m/special_rivette
 execute if entity @n[tag=sc,scores={sea_4temp2=2001..2099}] if entity @n[tag=SEArivette,x=90138,y=128,z=93,distance=0..3.2] run fill 90132 129 94 90131 128 92 air
 execute unless block 90132 128 94 air as @n[tag=sc,scores={sea_4temp2=2085..2099}] run scoreboard players set @s sea_4temp2 2085
@@ -543,7 +543,7 @@ execute if entity @n[tag=sc,scores={sea_4temp2=4900..5000}] if entity @n[tag=SEA
 execute if entity @n[tag=sc,scores={sea_4temp2=2201..2203}] run summon minecraft:lightning_bolt 90123.53 128.00 93.50
 execute if entity @n[tag=sc,scores={sea_4temp2=2202}] run fill 90123 130 94 90123 128 92 air destroy
 execute if entity @n[tag=sc,scores={sea_4temp2=2120}] as @a[tag=SEAPT] at @s run playsound minecraft:app2.manifoldhypothesis music @a[tag=SEAPT] ~ ~ ~ 1000 1.0
-execute if entity @n[tag=sc,scores={sea_4temp2=2120}] as @r[tag=SEAPT] at @s as @a[tag=!SEAPT,tag=spectator,distance=0..200] run playsound minecraft:app2.manifoldhypothesis music @a[tag=SEAPT] ~ ~ ~ 1000 1.0
+execute if entity @n[tag=sc,scores={sea_4temp2=2120}] as @r[tag=SEAPT] at @s as @a[tag=!SEAPT,gamemode=spectator,distance=0..200] run playsound minecraft:app2.manifoldhypothesis music @a[tag=SEAPT] ~ ~ ~ 1000 1.0
 execute if entity @n[tag=sc,scores={sea_4temp2=2211}] as @n[tag=SEAboss2] at @s positioned ~1 ~0 0.5 run function skyblock:sea/m/skeleton_melee
 execute if entity @n[tag=sc,scores={sea_4temp2=2211}] as @n[tag=SEAboss2] at @s positioned ~1 ~0 ~-0.5 run function skyblock:sea/m/skeleton_melee
 execute if entity @n[tag=sc,scores={sea_4temp2=2213}] as @n[tag=SEAboss2] at @s positioned ~1 ~0 0.5 run function skyblock:sea/m/skeleton_melee
