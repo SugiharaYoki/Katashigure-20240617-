@@ -1,0 +1,1 @@
+give @s stone_hoe[custom_name='{"text":"石锄","italic":false}',custom_data={stone_hoe_normal:1b}]

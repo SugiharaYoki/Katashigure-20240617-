@@ -1,0 +1,1 @@
+give @s crossbow[custom_name='{"text":"弩·迅穿","color":"white","italic":true}',enchantments={piercing:1},custom_data={crossbow_piercing:1b}]

@@ -1,0 +1,1 @@
+give @s stone_axe[custom_name='{"text":"石斧","italic":false}',custom_data={stone_axe_normal:1b}]

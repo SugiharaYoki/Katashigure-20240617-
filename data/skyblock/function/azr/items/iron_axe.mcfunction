@@ -1,0 +1,1 @@
+give @s iron_axe[custom_name='{"text":"铁斧","italic":false}',custom_data={iron_axe_normal:1b}]

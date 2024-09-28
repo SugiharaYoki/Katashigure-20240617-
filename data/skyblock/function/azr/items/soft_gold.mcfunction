@@ -1,0 +1,1 @@
+give @s gold_ingot[custom_name='{"text":"软金","italic":false}',custom_data={soft_gold:1b}] 1

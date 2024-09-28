@@ -1,0 +1,1 @@
+give @s iron_shovel[custom_name='{"text":"锁链重锹","italic":false}',attribute_modifiers=[{id:"azr:iron_shovel_chain.attack_damage",type:"generic.attack_damage",amount:16.0,operation:"add_value",slot:"mainhand"},{id:"azr:iron_shovel_chain.attack_speed",type:"generic.attack_speed",amount:-3.92,operation:"add_value",slot:"mainhand"}],custom_data={iron_shovel_chain:1b}]

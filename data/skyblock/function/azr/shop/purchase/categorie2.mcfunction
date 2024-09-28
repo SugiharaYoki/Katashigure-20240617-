@@ -396,7 +396,7 @@ $execute as @s[scores={Azr_Shop_rng$(rng)=34,Azr_Shop=$(trigger)33}] \
     #34 alt @s 锁链正锹    15 铁链  
 
 $execute as @s[scores={Azr_Shop_rng$(rng)=35,Azr_Shop=$(trigger)}] \
-    if items entity @s container.* iron_sword[count={min:1},custom_data~{weapon_rapier_normal:1b}] \
+    if items entity @s container.* iron_sword[count={min:1},custom_data~{rapier_normal:1b}] \
     if items entity @s container.* slime_ball[count={min:5}] \
     if items entity @s container.* flint[count={min:2}] \
     run function skyblock:azr/shop/purchase/categorie2/\
@@ -404,7 +404,7 @@ $execute as @s[scores={Azr_Shop_rng$(rng)=35,Azr_Shop=$(trigger)}] \
     #35 @s  刺剑  （迅风）   1 刺剑·传统 5 粘液球 2 燧石 
 
 $execute as @s[scores={Azr_Shop_rng$(rng)=36,Azr_Shop=$(trigger)}] \
-    if items entity @s container.* iron_sword[count={min:1},custom_data~{weapon_rapier_normal:1b}] \
+    if items entity @s container.* iron_sword[count={min:1},custom_data~{rapier_normal:1b}] \
     if items entity @s container.* slime_ball[count={min:5}] \
     if items entity @s container.* flint[count={min:2}] \
     run function skyblock:azr/shop/purchase/categorie2/\
@@ -426,7 +426,7 @@ $execute as @s[scores={Azr_Shop_rng$(rng)=37,Azr_Shop=$(trigger)}] \
     #37 @s  锁链阔斧    5 铁链 1 石斧>铁斧
 
 $execute as @s[scores={Azr_Shop_rng$(rng)=38,Azr_Shop=$(trigger)}] \
-    if items entity @s container.* fishing_rod[count={min:1},custom_data~{weapon_chain_rod:1b}] \
+    if items entity @s container.* fishing_rod[count={min:1},custom_data~{chain_rod_heavy:1b}] \
     if items entity @s container.* slime_ball[count={min:3}] \
     if items entity @s container.* string[count={min:6}] \
     run function skyblock:azr/shop/purchase/categorie2/\

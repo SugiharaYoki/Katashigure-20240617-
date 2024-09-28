@@ -83,7 +83,7 @@ setblock -79938 39 49 minecraft:quartz_bricks{name: "to Stage Cerement"}
 setblock -79939 38 20 chest[facing=west]{Lock:"木船图案的钥匙"}
 item replace block -79939 38 20 container.11 with minecraft:paper[custom_name='{"text":"圣殿信条","color":"blue","italic":false}',custom_data={sanct_credo:1b}] 3
 item replace block -79939 38 20 container.13 with skull_banner_pattern[custom_name='{"text":"“仍旧在调查魔物失控的真相”","color":"dark_purple","italic":false}',lore=['{"text":"拉斐尔大人告知我丢失钥匙并无大碍，","color":"white","italic":false}','{"text":"地下水路东区不存在任何有用的事物。","color":"white","italic":false}','{"text":"可那里明明封印着源自各处的亡灵……","color":"white","italic":false}']]
-item replace block -79939 38 20 container.15 with iron_ingot[custom_name='{"text":"碳钢","italic":false}'] 1
+item replace block -79939 38 20 container.15 with iron_ingot[custom_name='{"text":"碳钢","italic":false}',custom_data={coal_iron:1b}] 1
 fill -79948 36 45 -79950 38 45 minecraft:purple_stained_glass{name: "to Stage Cerement"}
 
 #Stage Cerement

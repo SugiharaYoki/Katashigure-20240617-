@@ -1,0 +1,1 @@
+give @s bow[custom_name='{"text":"弓","color":"white","italic":true}',enchantments={power:1},custom_data={bow_power:1b}]

@@ -1,0 +1,1 @@
+give @s stone_hoe[custom_name='{"text":"石镰","italic":false}',attribute_modifiers=[{id:"azr:stone_sickle.attack_damage",type:"generic.attack_damage",amount:2.0,operation:"add_value",slot:"mainhand"},{id:"azr:stone_sickle.attack_speed",type:"generic.attack_speed",amount:-1.0,operation:"add_value",slot:"mainhand"}],enchantments={unbreaking:1},custom_data={stone_sickle:1b}]
