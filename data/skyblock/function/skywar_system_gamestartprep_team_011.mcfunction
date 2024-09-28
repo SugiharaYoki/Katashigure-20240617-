@@ -68,5 +68,21 @@ execute if entity @a[team=Team1_5] run setblock 50070 109 50046 purple_stained_g
 execute if entity @a[team=Team1_6] run setblock 50022 109 50046 purple_stained_glass
 execute if entity @a[team=Team1_7] run setblock 50046 109 50070 purple_stained_glass
 execute if entity @a[team=Team1_8] run setblock 50046 109 50022 purple_stained_glass
+execute if entity @a[team=Team1_1] run setblock 50070 110 50022 air
+execute if entity @a[team=Team1_2] run setblock 50022 110 50022 air
+execute if entity @a[team=Team1_3] run setblock 50022 110 50070 air
+execute if entity @a[team=Team1_4] run setblock 50070 110 50070 air
+execute if entity @a[team=Team1_5] run setblock 50070 110 50046 air
+execute if entity @a[team=Team1_6] run setblock 50022 110 50046 air
+execute if entity @a[team=Team1_7] run setblock 50046 110 50070 air
+execute if entity @a[team=Team1_8] run setblock 50046 110 50022 air
+execute if entity @a[team=Team1_1] run setblock 50070 111 50022 air
+execute if entity @a[team=Team1_2] run setblock 50022 111 50022 air
+execute if entity @a[team=Team1_3] run setblock 50022 111 50070 air
+execute if entity @a[team=Team1_4] run setblock 50070 111 50070 air
+execute if entity @a[team=Team1_5] run setblock 50070 111 50046 air
+execute if entity @a[team=Team1_6] run setblock 50022 111 50046 air
+execute if entity @a[team=Team1_7] run setblock 50046 111 50070 air
+execute if entity @a[team=Team1_8] run setblock 50046 111 50022 air
 
 tp @a[tag=PVP_see,tag=!PVPTeamed] 50046 130 50046
