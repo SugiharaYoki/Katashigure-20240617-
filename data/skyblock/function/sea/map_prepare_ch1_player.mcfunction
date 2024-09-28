@@ -19,6 +19,7 @@ tag @s add sea_t_axeparry1
 team join SEA @s
 tag @s add Gaming
 tag @s add NoMultiMenu
+tag @s add Temp_NoSkyWar
 scoreboard players set @s sea_oxygen 20
 
 function skyblock:skywar_system_removeallmd
