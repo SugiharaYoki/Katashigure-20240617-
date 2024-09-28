@@ -4,9 +4,6 @@ execute as @s[tag=!DebugMode] run tellraw @s [{"text":"4ASCEND·接待员：\n",
 execute as @s[tag=!DebugMode] run playsound entity.villager.no master @s
 execute as @s[tag=!DebugMode] run return 0
 
-scoreboard players enable @s PlayHouseTrigger
-scoreboard players enable @s 4ASCEND_HP_Trigger
-scoreboard players enable @s 4ASCEND_TIME_Trigger
 #Welcome
 execute unless score @s PlayHouseTrigger matches 1.. store result score temp skyblock_system run random value 0..5
 execute if score temp skyblock_system matches 0 unless score @s PlayHouseTrigger matches 1.. run tellraw @s [{"text":"4ASCEND·接待员：\n","color":"aqua"},{"text":"欢迎光临！\n","color":"white"}]
