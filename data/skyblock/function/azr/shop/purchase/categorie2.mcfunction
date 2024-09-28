@@ -72,7 +72,7 @@ $execute as @s[scores={Azr_Shop_rng$(rng)=5,Azr_Shop=$(trigger)},tag=Azr_SExUp03
     # 5 @s[tag=Azr_SExUp03] 石斧  1 木斧
 
 $execute as @s[scores={Azr_Shop_rng$(rng)=6,Azr_Shop=$(trigger)}] \
-    if items entity @s container.* wooden_axe[count={min:2}] \
+    if score @s Azr_emerald matches 2.. \
     if items entity @s container.* stick[count={min:3}] \
     run function skyblock:azr/shop/purchase/categorie2/\
     rng6
