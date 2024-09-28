@@ -99,8 +99,6 @@ execute if score @s PlayHouseTrigger matches 3 run tellraw @s "\n\n\n"
 #Games
 
 execute if score @s PlayHouseTrigger matches 1.. run scoreboard players reset @s PlayHouseTrigger
-execute if score @s 4ASCEND_HP_Trigger matches 1.. run scoreboard players operation @s 4ASCEND_HP = @s 4ASCEND_HP_Trigger
 execute if score @s 4ASCEND_HP_Trigger matches 1.. run scoreboard players reset @s 4ASCEND_HP_Trigger
-execute if score @s 4ASCEND_TIME_Trigger matches 1.. run scoreboard players operation @s 4ASCEND_TIME = @s 4ASCEND_TIME_Trigger
 execute if score @s 4ASCEND_TIME_Trigger matches 1.. run scoreboard players reset @s 4ASCEND_TIME_Trigger
 scoreboard players set @s If_TalkVill 0
