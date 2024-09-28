@@ -21,6 +21,7 @@ clear @s[gamemode=!creative] polished_tuff_wall
 clear @s[gamemode=!creative] decorated_pot
 clear @s[gamemode=!creative] structure_void
 
+tag @s remove PVP_see
 
 execute as @s[scores={sea_crafter=1}] at @s run function skyblock:sea/shop_reader
 execute as @s[scores={sea_crafter=10000..19999}] at @s if entity @n[tag=SEAcrafter,distance=0..5] run function skyblock:sea/shop_purchase
