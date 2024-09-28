@@ -1,4 +1,4 @@
-scoreboard players set version skyblock_system 154
+scoreboard players set version skyblock_system 155
 scoreboard objectives add skyblock_system dummy
 execute unless score last_version skyblock_system = version skyblock_system run tellraw @a[tag=DebugMode] [{"text":"【auto-seller finish】Datapack has successfully updated. version: "},{"score":{"name":"version","objective":"skyblock_system"},"color":"green","bold":true}]
 scoreboard players operation last_version skyblock_system = version skyblock_system
@@ -141,6 +141,7 @@ scoreboard objectives add dailylogin_c dummy
 scoreboard objectives add AnnouncementRo dummy
 scoreboard objectives add AnnouncementRoB dummy
 scoreboard objectives add SeGa_StandLastBH dummy {"text":"『亚兹列尔的中庭花园』","color":"aqua","bold":true}
+scoreboard objectives add PlayHouseTrigger trigger
 
 scoreboard objectives add rng1 dummy
 scoreboard objectives add rng2 dummy

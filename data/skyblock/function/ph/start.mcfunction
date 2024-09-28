@@ -1,0 +1,1 @@
+tellraw @a[tag=DebugMode] [{"text":"trying to start 4ASCEND. \n"},{"nbt":"start_init.player1","storage": "ph"}," vs ",{"nbt":"start_init.player2","storage": "ph"}," at table ",{"nbt":"start_init.table","storage": "ph"}]
