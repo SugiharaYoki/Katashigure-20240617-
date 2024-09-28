@@ -1,1 +1,1 @@
-give @s wooden_hoe[custom_name='{"text":"木锄","italic":false}',custom_data={wooden_hoe_normal:1b}]
+give @s wooden_hoe[custom_name='{"text":"木锄","italic":false}',enchantments={knockback:1},custom_data={wooden_hoe_normal:1b}]

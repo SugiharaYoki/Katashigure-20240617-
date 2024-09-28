@@ -97,6 +97,13 @@ $execute as @s[scores={Azr_Shop_rng$(rng)=8,Azr_Shop=$(trigger)}] \
     rng8
     # 8 @s  木锄    3 绿宝石   
 
+$execute as @s[scores={Azr_Shop_rng$(rng)=8,Azr_Shop=$(trigger)}] \
+    if score @s Azr_emerald matches 3.. \
+    if items entity @s container.* wooden_hoe[count={min:1},custom_data~{wooden_hoe_normal:1b}] \
+    run function skyblock:azr/shop/purchase/categorie2/\
+    rng8_alt
+    # 8 alt @s  石锄    3 绿宝石 1 木锄  
+
 $execute as @s[scores={Azr_Shop_rng$(rng)=9,Azr_Shop=$(trigger)}] \
     if score @s Azr_emerald matches 3.. \
     if items entity @s container.* wooden_hoe[count={min:1},custom_data~{wooden_hoe_normal:1b}] \
