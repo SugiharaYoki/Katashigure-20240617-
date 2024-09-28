@@ -1,0 +1,142 @@
+{
+    "type": "minecraft:generic",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:potion",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": 1
+                        },
+                        {
+                            "function": "set_components",
+                            "components": {
+                                "minecraft:custom_data": {
+                                    "rankaotion": 1
+                                },
+                                "minecraft:custom_name": "{\"italic\": false,\"text\": \"兰花药水·旅行版\"}",
+                                "minecraft:lore": [
+                                    "{\"color\": \"dark_aqua\",\"italic\": false,\"text\": \"兰花之城的大魔法师专门研制的便捷药水。\"}"
+                                ],
+                                "minecraft:potion_contents": {
+                                    "custom_color": 1216233,
+                                    "custom_effects": [
+                                        {
+                                            "amplifier": 2,
+                                            "duration": 120,
+                                            "id": "minecraft:fire_resistance",
+                                            "show_icon": true
+                                        },
+                                        {
+                                            "amplifier": 2,
+                                            "duration": 120,
+                                            "id": "minecraft:haste",
+                                            "show_icon": true
+                                        },
+                                        {
+                                            "amplifier": 2,
+                                            "duration": 120,
+                                            "id": "minecraft:speed",
+                                            "show_icon": true
+                                        },
+                                        {
+                                            "amplifier": 2,
+                                            "duration": 120,
+                                            "id": "minecraft:jump_boost",
+                                            "show_icon": true
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:potion",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": 1
+                        },
+                        {
+                            "function": "set_components",
+                            "components": {
+                                "minecraft:custom_name": "{\"color\": \"white\",\"italic\": true,\"text\": \"抹茶拿铁\"}",
+                                "minecraft:lore": [
+                                    "\"积木书房饮料吧台的特色饮品\""
+                                ],
+                                "minecraft:potion_contents": {
+                                    "custom_color": 8191829,
+                                    "custom_effects": [
+                                        {
+                                            "amplifier": 7,
+                                            "duration": 36000,
+                                            "id": "minecraft:regeneration",
+                                            "show_icon": true
+                                        },
+                                        {
+                                            "amplifier": 7,
+                                            "duration": 36000,
+                                            "id": "minecraft:resistance",
+                                            "show_icon": true
+                                        },
+                                        {
+                                            "amplifier": 7,
+                                            "duration": 36000,
+                                            "id": "minecraft:invisibility",
+                                            "show_icon": true
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:potion",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": 1
+                        },
+                        {
+                            "function": "set_components",
+                            "components": {
+                                "minecraft:custom_name": "{\"color\": \"white\",\"italic\": true,\"text\": \"草莓牛奶冰沙\"}",
+                                "minecraft:lore": [
+                                    "\"冰凉酸甜的积木书房特色饮品。\""
+                                ],
+                                "minecraft:potion_contents": {
+                                    "custom_color": 8191829,
+                                    "custom_effects": [
+                                        {
+                                            "amplifier": 7,
+                                            "duration": 36000,
+                                            "id": "minecraft:regeneration",
+                                            "show_icon": true
+                                        },
+                                        {
+                                            "amplifier": 7,
+                                            "duration": 36000,
+                                            "id": "minecraft:resistance",
+                                            "show_icon": true
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
