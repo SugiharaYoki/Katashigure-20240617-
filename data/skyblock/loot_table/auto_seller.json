@@ -59,7 +59,7 @@
                 {
                     "type": "minecraft:item",
                     "name": "minecraft:potion",
-                    "weight": 1,
+                    "weight": 2,
                     "functions": [
                         {
                             "function": "minecraft:set_count",
@@ -102,7 +102,7 @@
                 {
                     "type": "minecraft:item",
                     "name": "minecraft:potion",
-                    "weight": 1,
+                    "weight": 2,
                     "functions": [
                         {
                             "function": "minecraft:set_count",
@@ -116,7 +116,7 @@
                                     "\"冰凉酸甜的积木书房特色饮品。\""
                                 ],
                                 "minecraft:potion_contents": {
-                                    "custom_color": 8191829,
+                                    "custom_color": 16755406,
                                     "custom_effects": [
                                         {
                                             "amplifier": 7,
