@@ -39,61 +39,61 @@ execute if score @s PlayHouseTrigger matches 3 run tellraw @s "\n\n\n"
         execute if score @s PlayHouseTrigger matches 3 run scoreboard players operation temp 4ASCEND_system *= 45 4ASCEND_system
     execute if score @s PlayHouseTrigger matches 3 run tellraw @s [{"text":"· 当前 + ","color":"gray"},{"score":{"name":"temp","objective":"4ASCEND_system"}},{"text":" FSB","color":"gray"}]
     #TIME
-    execute if score @s PlayHouseTrigger matches 3 if score @s 4ASCEND_TIME matches 0 run tellraw @s [{"text":"设置决策时间：","color":"yellow"},\
-        {"text":"5s","color":"green","underlined":true,"clickEvent":{"action": "run_command","value": "/trigger 4ASCEND_TIME_Trigger set 0"}},\
-        {"text":"10s","color":"gray","underlined":true,"clickEvent":{"action": "run_command","value": "/trigger 4ASCEND_TIME_Trigger set 1"}},\
-        {"text":"20s","color":"gray","underlined":true,"clickEvent":{"action": "run_command","value": "/trigger 4ASCEND_TIME_Trigger set 2"}},\
-        {"text":"30s","color":"gray","underlined":true,"clickEvent":{"action": "run_command","value": "/trigger 4ASCEND_TIME_Trigger set 3"}},\
-        {"text":"60s","color":"gray","underlined":true,"clickEvent":{"action": "run_command","value": "/trigger 4ASCEND_TIME_Trigger set 4"}},\
-        {"text":"无限制","color":"gray","underlined":true,"clickEvent":{"action": "run_command","value": "/trigger 4ASCEND_TIME_Trigger set 5"}\
-        }]
     execute if score @s PlayHouseTrigger matches 3 if score @s 4ASCEND_TIME matches 1 run tellraw @s [{"text":"设置决策时间：","color":"yellow"},\
-        {"text":"5s","color":"gray","underlined":true,"clickEvent":{"action": "run_command","value": "/trigger 4ASCEND_TIME_Trigger set 0"}},\
-        {"text":"10s","color":"green","underlined":true,"clickEvent":{"action": "run_command","value": "/trigger 4ASCEND_TIME_Trigger set 1"}},\
-        {"text":"20s","color":"gray","underlined":true,"clickEvent":{"action": "run_command","value": "/trigger 4ASCEND_TIME_Trigger set 2"}},\
-        {"text":"30s","color":"gray","underlined":true,"clickEvent":{"action": "run_command","value": "/trigger 4ASCEND_TIME_Trigger set 3"}},\
-        {"text":"60s","color":"gray","underlined":true,"clickEvent":{"action": "run_command","value": "/trigger 4ASCEND_TIME_Trigger set 4"}},\
-        {"text":"无限制","color":"gray","underlined":true,"clickEvent":{"action": "run_command","value": "/trigger 4ASCEND_TIME_Trigger set 5"}\
+        {"text":"5s ","color":"green","underlined":true,"clickEvent":{"action": "run_command","value": "/trigger 4ASCEND_TIME_Trigger set 1"}},\
+        {"text":"10s ","color":"gray","underlined":true,"clickEvent":{"action": "run_command","value": "/trigger 4ASCEND_TIME_Trigger set 2"}},\
+        {"text":"20s ","color":"gray","underlined":true,"clickEvent":{"action": "run_command","value": "/trigger 4ASCEND_TIME_Trigger set 3"}},\
+        {"text":"30s ","color":"gray","underlined":true,"clickEvent":{"action": "run_command","value": "/trigger 4ASCEND_TIME_Trigger set 4"}},\
+        {"text":"60s ","color":"gray","underlined":true,"clickEvent":{"action": "run_command","value": "/trigger 4ASCEND_TIME_Trigger set 5"}},\
+        {"text":"无限制","color":"gray","underlined":true,"clickEvent":{"action": "run_command","value": "/trigger 4ASCEND_TIME_Trigger set 6"}\
         }]
     execute if score @s PlayHouseTrigger matches 3 if score @s 4ASCEND_TIME matches 2 run tellraw @s [{"text":"设置决策时间：","color":"yellow"},\
-        {"text":"5s","color":"gray","underlined":true,"clickEvent":{"action": "run_command","value": "/trigger 4ASCEND_TIME_Trigger set 0"}},\
-        {"text":"10s","color":"gray","underlined":true,"clickEvent":{"action": "run_command","value": "/trigger 4ASCEND_TIME_Trigger set 1"}},\
-        {"text":"20s","color":"green","underlined":true,"clickEvent":{"action": "run_command","value": "/trigger 4ASCEND_TIME_Trigger set 2"}},\
-        {"text":"30s","color":"gray","underlined":true,"clickEvent":{"action": "run_command","value": "/trigger 4ASCEND_TIME_Trigger set 3"}},\
-        {"text":"60s","color":"gray","underlined":true,"clickEvent":{"action": "run_command","value": "/trigger 4ASCEND_TIME_Trigger set 4"}},\
-        {"text":"无限制","color":"gray","underlined":true,"clickEvent":{"action": "run_command","value": "/trigger 4ASCEND_TIME_Trigger set 5"}\
+        {"text":"5s ","color":"gray","underlined":true,"clickEvent":{"action": "run_command","value": "/trigger 4ASCEND_TIME_Trigger set 1"}},\
+        {"text":"10s ","color":"green","underlined":true,"clickEvent":{"action": "run_command","value": "/trigger 4ASCEND_TIME_Trigger set 2"}},\
+        {"text":"20s ","color":"gray","underlined":true,"clickEvent":{"action": "run_command","value": "/trigger 4ASCEND_TIME_Trigger set 3"}},\
+        {"text":"30s ","color":"gray","underlined":true,"clickEvent":{"action": "run_command","value": "/trigger 4ASCEND_TIME_Trigger set 4"}},\
+        {"text":"60s ","color":"gray","underlined":true,"clickEvent":{"action": "run_command","value": "/trigger 4ASCEND_TIME_Trigger set 5"}},\
+        {"text":"无限制","color":"gray","underlined":true,"clickEvent":{"action": "run_command","value": "/trigger 4ASCEND_TIME_Trigger set 6"}\
         }]
     execute if score @s PlayHouseTrigger matches 3 if score @s 4ASCEND_TIME matches 3 run tellraw @s [{"text":"设置决策时间：","color":"yellow"},\
-        {"text":"5s","color":"gray","underlined":true,"clickEvent":{"action": "run_command","value": "/trigger 4ASCEND_TIME_Trigger set 0"}},\
-        {"text":"10s","color":"gray","underlined":true,"clickEvent":{"action": "run_command","value": "/trigger 4ASCEND_TIME_Trigger set 1"}},\
-        {"text":"20s","color":"gray","underlined":true,"clickEvent":{"action": "run_command","value": "/trigger 4ASCEND_TIME_Trigger set 2"}},\
-        {"text":"30s","color":"green","underlined":true,"clickEvent":{"action": "run_command","value": "/trigger 4ASCEND_TIME_Trigger set 3"}},\
-        {"text":"60s","color":"gray","underlined":true,"clickEvent":{"action": "run_command","value": "/trigger 4ASCEND_TIME_Trigger set 4"}},\
-        {"text":"无限制","color":"gray","underlined":true,"clickEvent":{"action": "run_command","value": "/trigger 4ASCEND_TIME_Trigger set 5"}\
+        {"text":"5s ","color":"gray","underlined":true,"clickEvent":{"action": "run_command","value": "/trigger 4ASCEND_TIME_Trigger set 1"}},\
+        {"text":"10s ","color":"gray","underlined":true,"clickEvent":{"action": "run_command","value": "/trigger 4ASCEND_TIME_Trigger set 2"}},\
+        {"text":"20s ","color":"green","underlined":true,"clickEvent":{"action": "run_command","value": "/trigger 4ASCEND_TIME_Trigger set 3"}},\
+        {"text":"30s ","color":"gray","underlined":true,"clickEvent":{"action": "run_command","value": "/trigger 4ASCEND_TIME_Trigger set 4"}},\
+        {"text":"60s ","color":"gray","underlined":true,"clickEvent":{"action": "run_command","value": "/trigger 4ASCEND_TIME_Trigger set 5"}},\
+        {"text":"无限制","color":"gray","underlined":true,"clickEvent":{"action": "run_command","value": "/trigger 4ASCEND_TIME_Trigger set 6"}\
         }]
     execute if score @s PlayHouseTrigger matches 3 if score @s 4ASCEND_TIME matches 4 run tellraw @s [{"text":"设置决策时间：","color":"yellow"},\
-        {"text":"5s","color":"gray","underlined":true,"clickEvent":{"action": "run_command","value": "/trigger 4ASCEND_TIME_Trigger set 0"}},\
-        {"text":"10s","color":"gray","underlined":true,"clickEvent":{"action": "run_command","value": "/trigger 4ASCEND_TIME_Trigger set 1"}},\
-        {"text":"20s","color":"gray","underlined":true,"clickEvent":{"action": "run_command","value": "/trigger 4ASCEND_TIME_Trigger set 2"}},\
-        {"text":"30s","color":"gray","underlined":true,"clickEvent":{"action": "run_command","value": "/trigger 4ASCEND_TIME_Trigger set 3"}},\
-        {"text":"60s","color":"green","underlined":true,"clickEvent":{"action": "run_command","value": "/trigger 4ASCEND_TIME_Trigger set 4"}},\
-        {"text":"无限制","color":"gray","underlined":true,"clickEvent":{"action": "run_command","value": "/trigger 4ASCEND_TIME_Trigger set 5"}\
+        {"text":"5s ","color":"gray","underlined":true,"clickEvent":{"action": "run_command","value": "/trigger 4ASCEND_TIME_Trigger set 1"}},\
+        {"text":"10s ","color":"gray","underlined":true,"clickEvent":{"action": "run_command","value": "/trigger 4ASCEND_TIME_Trigger set 2"}},\
+        {"text":"20s ","color":"gray","underlined":true,"clickEvent":{"action": "run_command","value": "/trigger 4ASCEND_TIME_Trigger set 3"}},\
+        {"text":"30s ","color":"green","underlined":true,"clickEvent":{"action": "run_command","value": "/trigger 4ASCEND_TIME_Trigger set 4"}},\
+        {"text":"60s ","color":"gray","underlined":true,"clickEvent":{"action": "run_command","value": "/trigger 4ASCEND_TIME_Trigger set 5"}},\
+        {"text":"无限制","color":"gray","underlined":true,"clickEvent":{"action": "run_command","value": "/trigger 4ASCEND_TIME_Trigger set 6"}\
         }]
     execute if score @s PlayHouseTrigger matches 3 if score @s 4ASCEND_TIME matches 5 run tellraw @s [{"text":"设置决策时间：","color":"yellow"},\
-        {"text":"5s","color":"gray","underlined":true,"clickEvent":{"action": "run_command","value": "/trigger 4ASCEND_TIME_Trigger set 0"}},\
-        {"text":"10s","color":"gray","underlined":true,"clickEvent":{"action": "run_command","value": "/trigger 4ASCEND_TIME_Trigger set 1"}},\
-        {"text":"20s","color":"gray","underlined":true,"clickEvent":{"action": "run_command","value": "/trigger 4ASCEND_TIME_Trigger set 2"}},\
-        {"text":"30s","color":"gray","underlined":true,"clickEvent":{"action": "run_command","value": "/trigger 4ASCEND_TIME_Trigger set 3"}},\
-        {"text":"60s","color":"gray","underlined":true,"clickEvent":{"action": "run_command","value": "/trigger 4ASCEND_TIME_Trigger set 4"}},\
-        {"text":"无限制","color":"green","underlined":true,"clickEvent":{"action": "run_command","value": "/trigger 4ASCEND_TIME_Trigger set 5"}\
+        {"text":"5s ","color":"gray","underlined":true,"clickEvent":{"action": "run_command","value": "/trigger 4ASCEND_TIME_Trigger set 1"}},\
+        {"text":"10s ","color":"gray","underlined":true,"clickEvent":{"action": "run_command","value": "/trigger 4ASCEND_TIME_Trigger set 2"}},\
+        {"text":"20s ","color":"gray","underlined":true,"clickEvent":{"action": "run_command","value": "/trigger 4ASCEND_TIME_Trigger set 3"}},\
+        {"text":"30s ","color":"gray","underlined":true,"clickEvent":{"action": "run_command","value": "/trigger 4ASCEND_TIME_Trigger set 4"}},\
+        {"text":"60s ","color":"green","underlined":true,"clickEvent":{"action": "run_command","value": "/trigger 4ASCEND_TIME_Trigger set 5"}},\
+        {"text":"无限制","color":"gray","underlined":true,"clickEvent":{"action": "run_command","value": "/trigger 4ASCEND_TIME_Trigger set 6"}\
+        }]
+    execute if score @s PlayHouseTrigger matches 3 if score @s 4ASCEND_TIME matches 6 run tellraw @s [{"text":"设置决策时间：","color":"yellow"},\
+        {"text":"5s ","color":"gray","underlined":true,"clickEvent":{"action": "run_command","value": "/trigger 4ASCEND_TIME_Trigger set 1"}},\
+        {"text":"10s ","color":"gray","underlined":true,"clickEvent":{"action": "run_command","value": "/trigger 4ASCEND_TIME_Trigger set 2"}},\
+        {"text":"20s ","color":"gray","underlined":true,"clickEvent":{"action": "run_command","value": "/trigger 4ASCEND_TIME_Trigger set 3"}},\
+        {"text":"30s ","color":"gray","underlined":true,"clickEvent":{"action": "run_command","value": "/trigger 4ASCEND_TIME_Trigger set 4"}},\
+        {"text":"60s ","color":"gray","underlined":true,"clickEvent":{"action": "run_command","value": "/trigger 4ASCEND_TIME_Trigger set 5"}},\
+        {"text":"无限制","color":"green","underlined":true,"clickEvent":{"action": "run_command","value": "/trigger 4ASCEND_TIME_Trigger set 6"}\
         }]
     execute if score @s PlayHouseTrigger matches 3 run tellraw @s {"text":"· 决策时间越长，扣分越多","color":"gray"}
-    execute if score @s PlayHouseTrigger matches 3 if score @s 4ASCEND_TIME matches 0 run tellraw @s [{"text":"· 当前 +80","color":"gray"},{"text":"FSB","color":"gray"}]
-    execute if score @s PlayHouseTrigger matches 3 if score @s 4ASCEND_TIME matches 1 run tellraw @s [{"text":"· 当前 +10","color":"gray"},{"text":"FSB","color":"gray"}]
-    execute if score @s PlayHouseTrigger matches 3 if score @s 4ASCEND_TIME matches 2 run tellraw @s [{"text":"· 当前 -40","color":"gray"},{"text":"FSB","color":"gray"}]
-    execute if score @s PlayHouseTrigger matches 3 if score @s 4ASCEND_TIME matches 3 run tellraw @s [{"text":"· 当前 -90","color":"gray"},{"text":"FSB","color":"gray"}]
-    execute if score @s PlayHouseTrigger matches 3 if score @s 4ASCEND_TIME matches 4 run tellraw @s [{"text":"· 当前 -110","color":"gray"},{"text":"FSB","color":"gray"}]
-    execute if score @s PlayHouseTrigger matches 3 if score @s 4ASCEND_TIME matches 5 run tellraw @s [{"text":"· 当前 -120","color":"gray"},{"text":"FSB","color":"gray"}]
+    execute if score @s PlayHouseTrigger matches 3 if score @s 4ASCEND_TIME matches 1 run tellraw @s [{"text":"· 当前 +80","color":"gray"},{"text":"FSB","color":"gray"}]
+    execute if score @s PlayHouseTrigger matches 3 if score @s 4ASCEND_TIME matches 2 run tellraw @s [{"text":"· 当前 +10","color":"gray"},{"text":"FSB","color":"gray"}]
+    execute if score @s PlayHouseTrigger matches 3 if score @s 4ASCEND_TIME matches 3 run tellraw @s [{"text":"· 当前 -40","color":"gray"},{"text":"FSB","color":"gray"}]
+    execute if score @s PlayHouseTrigger matches 3 if score @s 4ASCEND_TIME matches 4 run tellraw @s [{"text":"· 当前 -90","color":"gray"},{"text":"FSB","color":"gray"}]
+    execute if score @s PlayHouseTrigger matches 3 if score @s 4ASCEND_TIME matches 5 run tellraw @s [{"text":"· 当前 -110","color":"gray"},{"text":"FSB","color":"gray"}]
+    execute if score @s PlayHouseTrigger matches 3 if score @s 4ASCEND_TIME matches 6 run tellraw @s [{"text":"· 当前 -120","color":"gray"},{"text":"FSB","color":"gray"}]
 #Invitation
 
 #Games
