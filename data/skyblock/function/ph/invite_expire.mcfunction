@@ -13,3 +13,4 @@ execute if data storage ph {invitation:{table:4}} run data remove storage ph tab
 data remove storage ph invitation
 
 scoreboard players set hasInvitation 4ASCEND_system 0
+scoreboard players reset @s PlayHouseTrigger

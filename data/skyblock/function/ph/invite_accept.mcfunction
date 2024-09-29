@@ -12,3 +12,5 @@ tag @a remove 4ASCENDAccept
 tag @a remove 4ASCENDInvite
 data remove storage ph invitation
 scoreboard players set hasInvitation 4ASCEND_system 0
+
+scoreboard players reset @s PlayHouseTrigger
