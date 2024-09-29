@@ -21,3 +21,5 @@ function skyblock:ph/runtime/start
 
 #Cancel Invitation
 function skyblock:ph/invite/clear
+
+scoreboard players reset @s PlayHouseTrigger
