@@ -19,7 +19,7 @@ tellraw @s [{"text":"已向全服发出小游戏邀请！","color":"light_purple
 tellraw @s {"text":"—— [取消邀请] ——","color":"green","clickEvent":{"action":"run_command","value":"/trigger PlayHouseTrigger set 100"},"hoverEvent":{"action":"show_text","contents":{"text":"将这条邀请作废","color":"green"}}}
 
 #output-Accept
-tellraw @a[distance=0.001..,tag=!Gaming] [{"text":"「来自","color":"light_purple","bold":true},{"selector":"@p[tag=OneShotInvite]","color":"light_purple","bold":true},{"text":"的小游戏邀请」\n","color":"light_purple","bold":true},\
+tellraw @a[distance=0.001..,tag=!Gaming] [{"text":"「来自","color":"light_purple","bold":true},{"selector":"@s","color":"light_purple","bold":true},{"text":"的小游戏邀请」\n","color":"light_purple","bold":true},\
 {"text":"游戏：4ASCEND\n","bold":false,"color":"white"},\
 {"text":"邀请者让分：","bold":false,"color":"white"},{"score":{"name": "@s","objective": "4ASCEND_HP"},"color":"green","bold":false},{"text":"HP","color":"green","bold":false}]
 execute if score @s 4ASCEND_TIME matches 1 run tellraw @a[distance=0.001..,tag=!Gaming] {"text":"决策时间限制：5s","bold":false,"color":"green"}
