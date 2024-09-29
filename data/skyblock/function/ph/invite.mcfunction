@@ -10,9 +10,9 @@ execute if entity @a[tag=4ASCENDInvite] run tellraw @s [{"text":"4ASCEND·接待
 execute if entity @a[tag=4ASCENDInvite] run return 0
 
 #data modify
-execute if score @s PlayHouseTrigger matches 1 store result storage ph invitation.table int 1.0 run function skyblock:ph/get_available_table
-execute if score @s PlayHouseTrigger matches 1 if data storage ph {invitation:{table:-1}} run tellraw @s [{"text":"4ASCEND·接待员：\n","color":"aqua"},{"text":"很抱歉，目前没有空闲的桌子","color":"white"}]
-execute if score @s PlayHouseTrigger matches 1 if data storage ph {invitation:{table:-1}} run return 0
+execute store result storage ph invitation.table int 1.0 run function skyblock:ph/get_available_table
+execute if data storage ph {invitation:{table:-1}} run tellraw @s [{"text":"4ASCEND·接待员：\n","color":"aqua"},{"text":"很抱歉，目前没有空闲的桌子","color":"white"}]
+execute if data storage ph {invitation:{table:-1}} run return 0
 
 #output-Invite
 tellraw @s [{"text":"已向全服发出小游戏邀请！","color":"light_purple","bold":true}]

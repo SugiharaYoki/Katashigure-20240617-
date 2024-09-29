@@ -20,5 +20,5 @@ execute if data storage ph {end_init:{table:4}} run data remove storage ph table
 execute if data storage ph {end_init:{table:4}} run data remove storage ph table_manager[{id:4}].player2
 
 tag @a remove current_table
-
+data remove storage ph runtime
 data remove storage ph end_init
