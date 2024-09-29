@@ -96,9 +96,9 @@ execute if score @s PlayHouseTrigger matches 3 run tellraw @s "\n\n"
     execute if score @s PlayHouseTrigger matches 3 if score @s 4ASCEND_TIME matches 5 run tellraw @s [{"text":"· 当前 -110","color":"gray"},{"text":"FSB","color":"gray"}]
     execute if score @s PlayHouseTrigger matches 3 if score @s 4ASCEND_TIME matches 6 run tellraw @s [{"text":"· 当前 -120","color":"gray"},{"text":"FSB","color":"gray"}]
 #Invitation
-    function skyblock:ph/invite
+    execute if score @s PlayHouseTrigger matches 4 run function skyblock:ph/invite
 #Games
-    function skyblock:cmd/hanoi/print_mainpage
+    execute if score @s PlayHouseTrigger matches 5 run function skyblock:cmd/hanoi/print_mainpage
 
 #Reset triggers
 execute if score @s PlayHouseTrigger matches 1.. run scoreboard players reset @s PlayHouseTrigger

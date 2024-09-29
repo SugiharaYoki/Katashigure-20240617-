@@ -1,8 +1,12 @@
 execute as @s[tag=!DebugMode] run tellraw @s [{"text":"本店尚未开业！","color":"red"}]
 execute as @s[tag=!DebugMode] run return 0
 
+#repeat invitation
+execute if entity @s[tag=4ASCENDInvite] run tellraw @s [{"text":"4ASCEND·接待员：\n","color":"aqua"},{"text":"你发送过邀请了","color":"white"}]
+execute if entity @s[tag=4ASCENDInvite] run return 0
+
 #double invitation
-execute if entity @a[tag=4ASCENDInvite] run tellraw @s [{"text":"4ASCEND·接待员：\n","color":"aqua"},{"text":"已经有人发送过邀请了，你想要直接加入吗？","color":"white","clickEvent":{"action":"run_command","value":"/trigger PlayHouseTrigger set 101"},"hoverEvent":{"action":"show_text","contents":{"text":"接受这条邀请","color":"green"}}}]
+execute if entity @a[tag=4ASCENDInvite] run tellraw @s [{"text":"4ASCEND·接待员：\n","color":"aqua"},{"text":"已经有人发送过邀请了，你想要直接加入吗？","color":"white","underlined": true,"clickEvent":{"action":"run_command","value":"/trigger PlayHouseTrigger set 101"},"hoverEvent":{"action":"show_text","contents":{"text":"接受这条邀请","color":"green"}}}]
 execute if entity @a[tag=4ASCENDInvite] run return 0
 
 #data modify
