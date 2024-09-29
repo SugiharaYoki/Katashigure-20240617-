@@ -7,7 +7,7 @@ execute if score @n[tag=sc] Map_Code matches 7 run scoreboard players set @n[tag
 execute if score @n[tag=sc] Map_Code matches 8 run scoreboard players set @n[tag=sc] TimeRemainUnsee 605
 execute if score @n[tag=sc] Map_Code matches 9 run scoreboard players set @n[tag=sc] TimeRemainUnsee 605
 execute if score @n[tag=sc] Map_Code matches 10 run scoreboard players set @n[tag=sc] TimeRemainUnsee 605
-execute if score @n[tag=sc] Map_Code matches 11 run scoreboard players set @n[tag=sc] TimeRemainUnsee 1205
+execute if score @n[tag=sc] Map_Code matches 11 run scoreboard players set @n[tag=sc] TimeRemainUnsee 905
 execute if score @n[tag=sc] Map_Code matches 14 run scoreboard players set @n[tag=sc] TimeRemainUnsee 905
 execute if score @n[tag=sc] Map_Code matches 15 run scoreboard players set @n[tag=sc] TimeRemainUnsee 605
 execute if score @n[tag=sc] Map_Code matches 16 run scoreboard players set @n[tag=sc] TimeRemainUnsee 505

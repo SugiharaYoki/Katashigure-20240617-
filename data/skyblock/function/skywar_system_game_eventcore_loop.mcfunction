@@ -254,4 +254,4 @@ execute if entity @n[tag=sc,scores={TimeRemainUnsee=300,Map_Code=10}] run execut
 execute if entity @n[tag=sc,scores={TimeRemainUnsee=600,Map_Code=11}] run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run title @a[tag=PVP_see] times 0 60 60
 execute if entity @n[tag=sc,scores={TimeRemainUnsee=600,Map_Code=11}] run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run title @a[tag=PVP_see] title {"text":"莫作烂柯樵","color":"yellow"}
 execute if entity @n[tag=sc,scores={TimeRemainUnsee=600,Map_Code=11}] run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run title @a[tag=PVP_see] subtitle {"text":"“双棋未遍局 万物皆为空”","color":"yellow"}
-execute if entity @n[tag=sc,scores={TimeRemainUnsee=600,Map_Code=11}] run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run worldborder set 30 600
+execute if entity @n[tag=sc,scores={TimeRemainUnsee=600,Map_Code=11}] run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run worldborder set 30 480
