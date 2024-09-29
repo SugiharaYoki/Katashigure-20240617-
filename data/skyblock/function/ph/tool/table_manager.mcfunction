@@ -22,3 +22,9 @@
     execute if data storage ph {table_manager:[{table:2,available:1b}]} run data merge entity @e[tag=city_table_2,type=block_display,limit=1] {block_state:{Name:"stone_pressure_plate"}}
     execute if data storage ph {table_manager:[{table:3,available:1b}]} run data merge entity @e[tag=city_table_3,type=block_display,limit=1] {block_state:{Name:"stone_pressure_plate"}}
     execute if data storage ph {table_manager:[{table:4,available:1b}]} run data merge entity @e[tag=city_table_4,type=block_display,limit=1] {block_state:{Name:"stone_pressure_plate"}}
+    #remove players
+    execute if data storage ph {table_manager:[{table:0,available:1b}]} as @e[tag=table0] run function skyblock:ph/runtime/leave
+    execute if data storage ph {table_manager:[{table:1,available:1b}]} as @e[tag=table1] run function skyblock:ph/runtime/leave
+    execute if data storage ph {table_manager:[{table:2,available:1b}]} as @e[tag=table2] run function skyblock:ph/runtime/leave
+    execute if data storage ph {table_manager:[{table:3,available:1b}]} as @e[tag=table3] run function skyblock:ph/runtime/leave
+    execute if data storage ph {table_manager:[{table:4,available:1b}]} as @e[tag=table4] run function skyblock:ph/runtime/leave
