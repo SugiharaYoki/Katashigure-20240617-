@@ -1,6 +1,8 @@
 forceload add -9800 -9800 -9600 -9780
 forceload add 50000 50000 50200 50200
 
+function skyblock:preload_map_pvp_common_partdeletemap_1
+
 summon marker 50010 100 50010 {Tags:["SkyChess_Generator"]}
 execute at @n[type=marker,tag=SkyChess_Generator] run function skyblock:preload_map_pvp_map011_selection_a
 execute as @n[type=marker,tag=SkyChess_Generator] at @s run tp @s ~12 ~ ~

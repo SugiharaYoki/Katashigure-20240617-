@@ -241,21 +241,22 @@ execute if score SkyChess_Generator rng1 matches 112 if score SkyChess_Generator
 execute if score SkyChess_Generator rng1 matches 112 if score SkyChess_Generator rng2 matches 4 positioned ~ ~-1 ~ run setblock ~ ~ ~ structure_block{name:"minecraft:skychess_121",posX:-6,posY:1,posZ:6,rotation:"COUNTERCLOCKWISE_90",mirror:"NONE",mode:"LOAD"}
 execute if score SkyChess_Generator rng1 matches 112 positioned ~ ~-2 ~ run setblock ~ ~ ~ redstone_block
 execute if score SkyChess_Generator rng1 matches 112 positioned ~ ~-1 ~ run fill ~ ~ ~ ~ ~-1 ~ air
-execute if score SkyChess_Generator rng1 matches 112 positioned ~ ~-1 ~ run setblock ~ ~ ~ structure_block{name:"minecraft:skychess_ore_diamond",posX:-6,posY:1,posZ:-6,rotation:"NONE",mirror:"NONE",mode:"LOAD",integrity:0.02}
-execute if score SkyChess_Generator rng1 matches 112 positioned ~ ~-2 ~ run setblock ~ ~ ~ redstone_block
-execute if score SkyChess_Generator rng1 matches 112 positioned ~ ~-1 ~ run fill ~ ~ ~ ~ ~-1 ~ air
-execute if score SkyChess_Generator rng1 matches 112 positioned ~ ~-1 ~ run setblock ~ ~ ~ structure_block{name:"minecraft:skychess_ore_diamond",posX:-6,posY:3,posZ:-6,rotation:"NONE",mirror:"NONE",mode:"LOAD",integrity:0.01}
-execute if score SkyChess_Generator rng1 matches 112 positioned ~ ~-2 ~ run setblock ~ ~ ~ redstone_block
-execute if score SkyChess_Generator rng1 matches 112 positioned ~ ~-1 ~ run fill ~ ~ ~ ~ ~-1 ~ air
-execute if score SkyChess_Generator rng1 matches 112 positioned ~ ~-1 ~ run setblock ~ ~ ~ structure_block{name:"minecraft:skychess_ore_ironblock",posX:-6,posY:1,posZ:-6,rotation:"NONE",mirror:"NONE",mode:"LOAD",integrity:0.01}
-execute if score SkyChess_Generator rng1 matches 112 positioned ~ ~-2 ~ run setblock ~ ~ ~ redstone_block
-execute if score SkyChess_Generator rng1 matches 112 positioned ~ ~-1 ~ run fill ~ ~ ~ ~ ~-1 ~ air
-execute if score SkyChess_Generator rng1 matches 112 positioned ~ ~-1 ~ run setblock ~ ~ ~ structure_block{name:"minecraft:skychess_ore_gold",posX:-6,posY:1,posZ:-6,rotation:"NONE",mirror:"NONE",mode:"LOAD",integrity:0.16}
-execute if score SkyChess_Generator rng1 matches 112 positioned ~ ~-2 ~ run setblock ~ ~ ~ redstone_block
-execute if score SkyChess_Generator rng1 matches 112 positioned ~ ~-1 ~ run fill ~ ~ ~ ~ ~-1 ~ air
-execute if score SkyChess_Generator rng1 matches 112 positioned ~ ~-1 ~ run setblock ~ ~ ~ structure_block{name:"minecraft:skychess_ore_iron",posX:-6,posY:1,posZ:-6,rotation:"NONE",mirror:"NONE",mode:"LOAD",integrity:0.16}
-execute if score SkyChess_Generator rng1 matches 112 positioned ~ ~-2 ~ run setblock ~ ~ ~ redstone_block
-execute if score SkyChess_Generator rng1 matches 112 positioned ~ ~-1 ~ run fill ~ ~ ~ ~ ~-1 ~ air
+execute if score SkyChess_Generator rng1 matches 112 positioned ~ ~-2 ~ run setblock ~ ~ ~ structure_block{name:"minecraft:skychess_ore_diamond",posX:-6,posY:1,posZ:-6,rotation:"NONE",mirror:"NONE",mode:"LOAD",integrity:0.02}
+execute if score SkyChess_Generator rng1 matches 112 positioned ~ ~-3 ~ run setblock ~ ~ ~ redstone_block
+execute if score SkyChess_Generator rng1 matches 112 positioned ~ ~-2 ~ run fill ~ ~ ~ ~ ~-1 ~ air
+execute if score SkyChess_Generator rng1 matches 112 positioned ~ ~-2 ~ run setblock ~ ~ ~ structure_block{name:"minecraft:skychess_ore_diamond",posX:-6,posY:3,posZ:-6,rotation:"NONE",mirror:"NONE",mode:"LOAD",integrity:0.01}
+execute if score SkyChess_Generator rng1 matches 112 positioned ~ ~-3 ~ run setblock ~ ~ ~ redstone_block
+execute if score SkyChess_Generator rng1 matches 112 positioned ~ ~-2 ~ run fill ~ ~ ~ ~ ~-1 ~ air
+execute if score SkyChess_Generator rng1 matches 112 positioned ~ ~-2 ~ run setblock ~ ~ ~ structure_block{name:"minecraft:skychess_ore_ironblock",posX:-6,posY:1,posZ:-6,rotation:"NONE",mirror:"NONE",mode:"LOAD",integrity:0.01}
+execute if score SkyChess_Generator rng1 matches 112 positioned ~ ~-3 ~ run setblock ~ ~ ~ redstone_block
+execute if score SkyChess_Generator rng1 matches 112 positioned ~ ~-2 ~ run fill ~ ~ ~ ~ ~-1 ~ air
+execute if score SkyChess_Generator rng1 matches 112 positioned ~ ~-2 ~ run setblock ~ ~ ~ structure_block{name:"minecraft:skychess_ore_gold",posX:-6,posY:1,posZ:-6,rotation:"NONE",mirror:"NONE",mode:"LOAD",integrity:0.16}
+execute if score SkyChess_Generator rng1 matches 112 positioned ~ ~-3 ~ run setblock ~ ~ ~ redstone_block
+execute if score SkyChess_Generator rng1 matches 112 positioned ~ ~-2 ~ run fill ~ ~ ~ ~ ~-1 ~ air
+execute if score SkyChess_Generator rng1 matches 112 positioned ~ ~-2 ~ run setblock ~ ~ ~ structure_block{name:"minecraft:skychess_ore_iron",posX:-6,posY:1,posZ:-6,rotation:"NONE",mirror:"NONE",mode:"LOAD",integrity:0.16}
+execute if score SkyChess_Generator rng1 matches 112 positioned ~ ~-3 ~ run setblock ~ ~ ~ redstone_block
+execute if score SkyChess_Generator rng1 matches 112 positioned ~ ~-2 ~ run fill ~ ~ ~ ~ ~-1 ~ air
+execute if score SkyChess_Generator rng1 matches 112 positioned ~ ~-1 ~ run fill ~-8 ~ ~-8 ~8 ~-1 ~8 air
 
 #珊瑚礁石2#22
 execute if score SkyChess_Generator rng1 matches 113 if score SkyChess_Generator rng2 matches 1 positioned ~ ~-1 ~ run setblock ~ ~ ~ structure_block{name:"minecraft:skychess_122",posX:-6,posY:1,posZ:-6,rotation:"NONE",mirror:"NONE",mode:"LOAD"}
@@ -264,21 +265,23 @@ execute if score SkyChess_Generator rng1 matches 113 if score SkyChess_Generator
 execute if score SkyChess_Generator rng1 matches 113 if score SkyChess_Generator rng2 matches 4 positioned ~ ~-1 ~ run setblock ~ ~ ~ structure_block{name:"minecraft:skychess_122",posX:-6,posY:1,posZ:6,rotation:"COUNTERCLOCKWISE_90",mirror:"NONE",mode:"LOAD"}
 execute if score SkyChess_Generator rng1 matches 113 positioned ~ ~-2 ~ run setblock ~ ~ ~ redstone_block
 execute if score SkyChess_Generator rng1 matches 113 positioned ~ ~-1 ~ run fill ~ ~ ~ ~ ~-1 ~ air
-execute if score SkyChess_Generator rng1 matches 113 positioned ~ ~-1 ~ run setblock ~ ~ ~ structure_block{name:"minecraft:skychess_ore_diamond",posX:-6,posY:1,posZ:-6,rotation:"NONE",mirror:"NONE",mode:"LOAD",integrity:0.02}
-execute if score SkyChess_Generator rng1 matches 113 positioned ~ ~-2 ~ run setblock ~ ~ ~ redstone_block
-execute if score SkyChess_Generator rng1 matches 113 positioned ~ ~-1 ~ run fill ~ ~ ~ ~ ~-1 ~ air
-execute if score SkyChess_Generator rng1 matches 113 positioned ~ ~-1 ~ run setblock ~ ~ ~ structure_block{name:"minecraft:skychess_ore_diamond",posX:-6,posY:3,posZ:-6,rotation:"NONE",mirror:"NONE",mode:"LOAD",integrity:0.01}
-execute if score SkyChess_Generator rng1 matches 113 positioned ~ ~-2 ~ run setblock ~ ~ ~ redstone_block
-execute if score SkyChess_Generator rng1 matches 113 positioned ~ ~-1 ~ run fill ~ ~ ~ ~ ~-1 ~ air
-execute if score SkyChess_Generator rng1 matches 113 positioned ~ ~-1 ~ run setblock ~ ~ ~ structure_block{name:"minecraft:skychess_ore_ironblock",posX:-6,posY:1,posZ:-6,rotation:"NONE",mirror:"NONE",mode:"LOAD",integrity:0.01}
-execute if score SkyChess_Generator rng1 matches 113 positioned ~ ~-2 ~ run setblock ~ ~ ~ redstone_block
-execute if score SkyChess_Generator rng1 matches 113 positioned ~ ~-1 ~ run fill ~ ~ ~ ~ ~-1 ~ air
-execute if score SkyChess_Generator rng1 matches 113 positioned ~ ~-1 ~ run setblock ~ ~ ~ structure_block{name:"minecraft:skychess_ore_gold",posX:-6,posY:1,posZ:-6,rotation:"NONE",mirror:"NONE",mode:"LOAD",integrity:0.16}
-execute if score SkyChess_Generator rng1 matches 113 positioned ~ ~-2 ~ run setblock ~ ~ ~ redstone_block
-execute if score SkyChess_Generator rng1 matches 113 positioned ~ ~-1 ~ run fill ~ ~ ~ ~ ~-1 ~ air
-execute if score SkyChess_Generator rng1 matches 113 positioned ~ ~-1 ~ run setblock ~ ~ ~ structure_block{name:"minecraft:skychess_ore_iron",posX:-6,posY:1,posZ:-6,rotation:"NONE",mirror:"NONE",mode:"LOAD",integrity:0.16}
-execute if score SkyChess_Generator rng1 matches 113 positioned ~ ~-2 ~ run setblock ~ ~ ~ redstone_block
-execute if score SkyChess_Generator rng1 matches 113 positioned ~ ~-1 ~ run fill ~ ~ ~ ~ ~-1 ~ air
+execute if score SkyChess_Generator rng1 matches 113 positioned ~ ~-3 ~ run setblock ~ ~ ~ structure_block{name:"minecraft:skychess_ore_diamond",posX:-6,posY:1,posZ:-6,rotation:"NONE",mirror:"NONE",mode:"LOAD",integrity:0.02}
+execute if score SkyChess_Generator rng1 matches 113 positioned ~ ~-4 ~ run setblock ~ ~ ~ redstone_block
+execute if score SkyChess_Generator rng1 matches 113 positioned ~ ~-3 ~ run fill ~ ~ ~ ~ ~-1 ~ air
+execute if score SkyChess_Generator rng1 matches 113 positioned ~ ~-3 ~ run setblock ~ ~ ~ structure_block{name:"minecraft:skychess_ore_diamond",posX:-6,posY:3,posZ:-6,rotation:"NONE",mirror:"NONE",mode:"LOAD",integrity:0.01}
+execute if score SkyChess_Generator rng1 matches 113 positioned ~ ~-4 ~ run setblock ~ ~ ~ redstone_block
+execute if score SkyChess_Generator rng1 matches 113 positioned ~ ~-3 ~ run fill ~ ~ ~ ~ ~-1 ~ air
+execute if score SkyChess_Generator rng1 matches 113 positioned ~ ~-3 ~ run setblock ~ ~ ~ structure_block{name:"minecraft:skychess_ore_ironblock",posX:-6,posY:1,posZ:-6,rotation:"NONE",mirror:"NONE",mode:"LOAD",integrity:0.01}
+execute if score SkyChess_Generator rng1 matches 113 positioned ~ ~-4 ~ run setblock ~ ~ ~ redstone_block
+execute if score SkyChess_Generator rng1 matches 113 positioned ~ ~-3 ~ run fill ~ ~ ~ ~ ~-1 ~ air
+execute if score SkyChess_Generator rng1 matches 113 positioned ~ ~-3 ~ run setblock ~ ~ ~ structure_block{name:"minecraft:skychess_ore_gold",posX:-6,posY:1,posZ:-6,rotation:"NONE",mirror:"NONE",mode:"LOAD",integrity:0.16}
+execute if score SkyChess_Generator rng1 matches 113 positioned ~ ~-4 ~ run setblock ~ ~ ~ redstone_block
+execute if score SkyChess_Generator rng1 matches 113 positioned ~ ~-3 ~ run fill ~ ~ ~ ~ ~-1 ~ air
+execute if score SkyChess_Generator rng1 matches 113 positioned ~ ~-3 ~ run setblock ~ ~ ~ structure_block{name:"minecraft:skychess_ore_iron",posX:-6,posY:1,posZ:-6,rotation:"NONE",mirror:"NONE",mode:"LOAD",integrity:0.16}
+execute if score SkyChess_Generator rng1 matches 113 positioned ~ ~-4 ~ run setblock ~ ~ ~ redstone_block
+execute if score SkyChess_Generator rng1 matches 113 positioned ~ ~-3 ~ run fill ~ ~ ~ ~ ~-1 ~ air
+execute if score SkyChess_Generator rng1 matches 113 positioned ~ ~-1 ~ run fill ~-8 ~ ~-8 ~8 ~-1 ~8 air
 
+kill @e[type=item,distance=0..100]
 
-
+#execute positioned ~ ~-1 ~ run fill ~6 ~ ~6 ~-6 ~ ~-6 polished_tuff
