@@ -15,13 +15,9 @@ execute if data storage ph {start_init:{table:4}} run tag @a[tag=4ASCENDPlayer0]
 execute as @a[tag=4ASCENDPlayer0] run function skyblock:api_start_any_game
 tag @a[tag=4ASCENDPlayer0] add 4ASCENDPlayer
 tag @a[tag=4ASCENDPlayer] remove 4ASCENDPlayer0
+tag @a[tag=4ASCENDInvite] add 4ASCENDHost
+tag @a[tag=4ASCENDInvite] remove 4ASCENDInvite
 function skyblock:ph/runtime/start
 
 #Cancel Invitation
-tag @a[tag=4ASCENDInvite] add 4ASCENDHost
-tag @a[tag=4ASCENDInvite] remove 4ASCENDInvite
-data remove storage ph invitation
-scoreboard players set hasInvitation 4ASCEND_system 0
-schedule clear skyblock:ph/invite/expire
-
-scoreboard players reset @s PlayHouseTrigger
+function skyblock:ph/invite/clear
