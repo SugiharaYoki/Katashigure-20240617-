@@ -5,7 +5,7 @@ execute if data storage ph {runtime:{table:2}} run tag @a[tag=4ASCENDPlayer,tag=
 execute if data storage ph {runtime:{table:3}} run tag @a[tag=4ASCENDPlayer,tag=table3] add current_table
 execute if data storage ph {runtime:{table:4}} run tag @a[tag=4ASCENDPlayer,tag=table4] add current_table
 
-tellraw @a[tag=current_table] [{"text":"4ASCEND running, table: "},{"nbt":"end_init.table","storage":"ph"}]
+tellraw @a[tag=current_table] [{"text":"4ASCEND running, table: "},{"nbt":"runtime.table","storage":"ph"}]
 
 data modify storage ph end_init.table set from storage ph runtime.table
 function skyblock:ph/endgame
