@@ -10,7 +10,7 @@ execute if entity @a[tag=4ASCENDInvite] run tellraw @s [{"text":"4ASCEND·接待
 execute if entity @a[tag=4ASCENDInvite] run return 0
 
 #data modify
-execute store result storage ph invitation.table int 1.0 run function skyblock:ph/get_available_table
+execute store result storage ph invitation.table int 1.0 run function skyblock:ph/tool/get_available_table
 execute if data storage ph {invitation:{table:-1}} run tellraw @s [{"text":"4ASCEND·接待员：\n","color":"aqua"},{"text":"很抱歉，目前没有空闲的桌子","color":"white"}]
 execute if data storage ph {invitation:{table:-1}} run return 0
 
@@ -30,6 +30,6 @@ execute if score @s 4ASCEND_TIME matches 5 run tellraw @a[distance=0.001..,tag=!
 execute if score @s 4ASCEND_TIME matches 6 run tellraw @a[distance=0.001..,tag=!Gaming] {"text":"决策时间限制：无限制","bold":false,"color":"green"}
 tellraw @a[distance=0.001..,tag=!Gaming] {"text":"—— [参加游戏] ——","color":"green","clickEvent":{"action":"run_command","value":"/trigger PlayHouseTrigger set 101"},"hoverEvent":{"action":"show_text","contents":{"text":"接受这条邀请","color":"green"}}}
 
-schedule function skyblock:ph/invite_expire 15s
+schedule function skyblock:ph/invite/expire 15s
 tag @s add 4ASCENDInvite
 scoreboard players set hasInvitation 4ASCEND_system 1

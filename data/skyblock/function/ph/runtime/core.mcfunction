@@ -8,7 +8,7 @@ execute if data storage ph {runtime:{table:4}} run tag @a[tag=4ASCENDPlayer,tag=
 tellraw @a[tag=current_table] [{"text":"4ASCEND running, table: "},{"nbt":"runtime.table","storage":"ph"}]
 
 data modify storage ph end_init.table set from storage ph runtime.table
-function skyblock:ph/endgame
+function skyblock:ph/runtime/endgame
 
 #end
 tag @a remove current_table
