@@ -283,3 +283,4 @@ execute if score SkyChess_Generator rng1 matches 113 positioned ~ ~-3 ~ run fill
 execute if score SkyChess_Generator rng1 matches 113 positioned ~ ~-1 ~ run fill ~-8 ~ ~-8 ~8 ~-1 ~8 air
 
 
+execute positioned ~ ~-1 ~ run fill ~6 ~ ~6 ~-6 ~ ~-6 polished_tuff

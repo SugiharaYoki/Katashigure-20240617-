@@ -115,5 +115,6 @@ execute if score SkyChess_Generator rng1 matches 107 positioned ~ ~-2 ~ run setb
 execute if score SkyChess_Generator rng1 matches 107 positioned ~ ~-1 ~ run fill ~ ~ ~ ~ ~-1 ~ air
 
 
+execute positioned ~ ~-1 ~ run fill ~6 ~ ~6 ~-6 ~ ~-6 polished_tuff
 
 
