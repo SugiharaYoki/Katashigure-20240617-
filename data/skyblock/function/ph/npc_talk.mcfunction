@@ -25,6 +25,7 @@ execute if score @s PlayHouseTrigger matches 1 run data modify storage ph start_
 execute if score @s PlayHouseTrigger matches 1 run data modify storage ph start_init.player2.type set value "robot_tutorial"
 execute if score @s PlayHouseTrigger matches 1 store result storage ph start_init.table int 1.0 run function skyblock:ph/get_available_table
 execute if score @s PlayHouseTrigger matches 1 if data storage ph {start_init:{table:-1}} run tellraw @s [{"text":"4ASCEND·接待员：\n","color":"aqua"},{"text":"很抱歉，目前没有空闲的桌子进行新手教程……\n","color":"white"}]
+execute if score @s PlayHouseTrigger matches 1 unless data storage ph {start_init:{table:-1}} run tag @s add 4ASCENDPlayer
 execute if score @s PlayHouseTrigger matches 1 unless data storage ph {start_init:{table:-1}} run function skyblock:ph/start
 #Ranks
 execute if score @s PlayHouseTrigger matches 2 run scoreboard players set sc AnnouncementRo 48
@@ -96,7 +97,7 @@ execute if score @s PlayHouseTrigger matches 3 run tellraw @s "\n\n"
     execute if score @s PlayHouseTrigger matches 3 if score @s 4ASCEND_TIME matches 5 run tellraw @s [{"text":"· 当前 -110","color":"gray"},{"text":"FSB","color":"gray"}]
     execute if score @s PlayHouseTrigger matches 3 if score @s 4ASCEND_TIME matches 6 run tellraw @s [{"text":"· 当前 -120","color":"gray"},{"text":"FSB","color":"gray"}]
 #Invitation
-    execute if score @s PlayHouseTrigger matches 4 run function skyblock:ph/invite
+    execute if score @s PlayHouseTrigger matches 4 at @s run function skyblock:ph/invite
 #Games
     execute if score @s PlayHouseTrigger matches 5 run function skyblock:cmd/hanoi/print_mainpage
 
