@@ -412,7 +412,7 @@ execute positioned 90107 155 147 if entity @a[tag=SEAPT,distance=..2.3] unless e
 execute positioned 90146 135 117 if entity @a[tag=SEAPT,distance=..1.5] unless entity @n[tag=SEAch3_spawn,distance=0..1.5] run function skyblock:sea/e/ev004
 
 #BADEND
-execute positioned 90119 129 84 if entity @a[tag=SEAPT,distance=..4] unless entity @n[tag=SEAch3_spawn_timer7,distance=0..3] run summon marker ~ ~ ~ {Tags:["SEAch3_spawn_timer","SEAch3_spawn_timer7"]}
+execute positioned 90119 129 84 if entity @a[tag=SEAPT,distance=..5.5] unless entity @n[tag=SEAch3_spawn_timer7,distance=0..3] run summon marker ~ ~ ~ {Tags:["SEAch3_spawn_timer","SEAch3_spawn_timer7"]}
 execute as @n[tag=SEAch3_spawn_timer7] run function skyblock:sea/e/ev002
 
 execute positioned 90135 134 131 if entity @a[tag=SEAPT,distance=..1.5] unless entity @n[tag=SEAch3_spawn,distance=0..1] positioned 90130 134 133 run function skyblock:sea/m/nightblind
