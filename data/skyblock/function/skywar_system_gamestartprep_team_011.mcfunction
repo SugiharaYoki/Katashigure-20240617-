@@ -59,7 +59,7 @@ tp @a[team=Team1_5] 50070 110 50046
 tp @a[team=Team1_6] 50022 110 50046
 tp @a[team=Team1_7] 50046 110 50070
 tp @a[team=Team1_8] 50046 110 50022
-
+forceload add 50000 50000 50200 50200
 execute if entity @a[team=Team1_1] run setblock 50070 109 50022 purple_stained_glass
 execute if entity @a[team=Team1_2] run setblock 50022 109 50022 purple_stained_glass
 execute if entity @a[team=Team1_3] run setblock 50022 109 50070 purple_stained_glass
