@@ -549,8 +549,8 @@ execute if entity @n[tag=sc,scores={sea_4temp2=2211}] as @n[tag=SEAboss2] at @s 
 execute if entity @n[tag=sc,scores={sea_4temp2=2211}] as @n[tag=SEAboss2] at @s positioned ~1 ~0 ~-0.5 run function skyblock:sea/m/skeleton_melee
 execute if entity @n[tag=sc,scores={sea_4temp2=2213}] as @n[tag=SEAboss2] at @s positioned ~1 ~0 0.5 run function skyblock:sea/m/skeleton_melee
 execute if entity @n[tag=sc,scores={sea_4temp2=2213}] as @n[tag=SEAboss2] at @s positioned ~1 ~0 ~-0.5 run function skyblock:sea/m/skeleton_melee
-execute if entity @n[tag=sc,scores={sea_4temp2=2222}] as @n[tag=SEAboss2] at @s positioned ~1 ~0 0.5 run function skyblock:sea/m/skeleton
-execute if entity @n[tag=sc,scores={sea_4temp2=2222}] as @n[tag=SEAboss2] at @s positioned ~1 ~0 ~-0.5 run function skyblock:sea/m/skeleton
+execute if entity @n[tag=sc,scores={sea_4temp2=2222}] as @n[tag=SEAboss2] at @s positioned ~1 ~0 0.5 run function skyblock:sea/m/skeleton_melee
+execute if entity @n[tag=sc,scores={sea_4temp2=2222}] as @n[tag=SEAboss2] at @s positioned ~1 ~0 ~-0.5 run function skyblock:sea/m/skeleton_melee
 execute if entity @n[tag=sc,scores={sea_4temp2=2211}] as @n[tag=SEAboss2] at @s positioned ~1 ~0 0.5 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
 execute if entity @n[tag=sc,scores={sea_4temp2=2211}] as @n[tag=SEAboss2] at @s positioned ~1 ~0 ~-0.5 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
 execute if entity @n[tag=sc,scores={sea_4temp2=2213}] as @n[tag=SEAboss2] at @s positioned ~1 ~0 0.5 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
