@@ -17,6 +17,7 @@ function skyblock:ph/table_manager
 execute as @a[tag=4ASCENDInvite,limit=1] at @s if entity @a[tag=4ASCENDInvite,distance=0.001..] run tag @s remove 4ASCENDInvite
 execute if score hasInvitation 4ASCEND_system matches 1 unless entity @a[tag=4ASCENDInvite] run function skyblock:ph/invite_expire
 execute if score hasInvitation 4ASCEND_system matches 0 if entity @a[tag=4ASCENDInvite] run tag @a remove 4ASCENDInvite
+execute if score hasInvitation 4ASCEND_system matches 0 run data remove storage ph invitation
 
 scoreboard players enable @a PlayHouseTrigger
 scoreboard players enable @a 4ASCEND_HP_Trigger

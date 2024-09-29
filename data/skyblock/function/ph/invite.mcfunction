@@ -1,28 +1,20 @@
 execute as @s[tag=!DebugMode] run tellraw @s [{"text":"本店尚未开业！","color":"red"}]
 execute as @s[tag=!DebugMode] run return 0
 
+#double invitation
 execute if entity @a[tag=4ASCENDInvite] run tellraw @s [{"text":"4ASCEND·接待员：\n","color":"aqua"},{"text":"已经有人发送过邀请了，你想要直接加入吗？","color":"white","clickEvent":{"action":"run_command","value":"/trigger PlayHouseTrigger set 101"},"hoverEvent":{"action":"show_text","contents":{"text":"接受这条邀请","color":"green"}}}]
 execute if entity @a[tag=4ASCENDInvite] run return 0
 
-execute if score @s PlayHouseTrigger matches 1 store result storage ph start_init.table int 1.0 run function skyblock:ph/get_available_table
-execute if score @s PlayHouseTrigger matches 1 if data storage ph {start_init:{table:-1}} run tellraw @s [{"text":"4ASCEND·接待员：\n","color":"aqua"},{"text":"很抱歉，目前没有空闲的桌子","color":"white"}]
-execute if score @s PlayHouseTrigger matches 1 if data storage ph {start_init:{table:-1}} run return 0
+#data modify
+execute if score @s PlayHouseTrigger matches 1 store result storage ph invitation.table int 1.0 run function skyblock:ph/get_available_table
+execute if score @s PlayHouseTrigger matches 1 if data storage ph {invitation:{table:-1}} run tellraw @s [{"text":"4ASCEND·接待员：\n","color":"aqua"},{"text":"很抱歉，目前没有空闲的桌子","color":"white"}]
+execute if score @s PlayHouseTrigger matches 1 if data storage ph {invitation:{table:-1}} run return 0
 
-#occupy
-execute if score @s PlayHouseTrigger matches 1 if data storage ph {start_init:{table:0}} run data modify storage ph table_manager[{id:0}].player1.type set value "player"
-execute if score @s PlayHouseTrigger matches 1 if data storage ph {start_init:{table:0}} run data modify storage ph table_manager[{id:0}].player1.UUID set from entity @s UUID
-execute if score @s PlayHouseTrigger matches 1 if data storage ph {start_init:{table:1}} run data modify storage ph table_manager[{id:1}].player1.type set value "player"
-execute if score @s PlayHouseTrigger matches 1 if data storage ph {start_init:{table:1}} run data modify storage ph table_manager[{id:1}].player1.UUID set from entity @s UUID
-execute if score @s PlayHouseTrigger matches 1 if data storage ph {start_init:{table:2}} run data modify storage ph table_manager[{id:2}].player1.type set value "player"
-execute if score @s PlayHouseTrigger matches 1 if data storage ph {start_init:{table:2}} run data modify storage ph table_manager[{id:2}].player1.UUID set from entity @s UUID
-execute if score @s PlayHouseTrigger matches 1 if data storage ph {start_init:{table:3}} run data modify storage ph table_manager[{id:3}].player1.type set value "player"
-execute if score @s PlayHouseTrigger matches 1 if data storage ph {start_init:{table:3}} run data modify storage ph table_manager[{id:3}].player1.UUID set from entity @s UUID
-execute if score @s PlayHouseTrigger matches 1 if data storage ph {start_init:{table:4}} run data modify storage ph table_manager[{id:4}].player1.type set value "player"
-execute if score @s PlayHouseTrigger matches 1 if data storage ph {start_init:{table:4}} run data modify storage ph table_manager[{id:4}].player1.UUID set from entity @s UUID
-
+#output-Invite
 tellraw @s [{"text":"已向全服发出小游戏邀请！","color":"light_purple","bold":true}]
 tellraw @s {"text":"—— [取消邀请] ——","color":"green","clickEvent":{"action":"run_command","value":"/trigger PlayHouseTrigger set 100"},"hoverEvent":{"action":"show_text","contents":{"text":"将这条邀请作废","color":"green"}}}
 
+#output-Accept
 tellraw @a[distance=0.001..,tag=!Gaming] [{"text":"「来自","color":"light_purple","bold":true},{"selector":"@p[tag=OneShotInvite]","color":"light_purple","bold":true},{"text":"的小游戏邀请」\n","color":"light_purple","bold":true},\
 {"text":"游戏：4ASCEND\n","bold":false,"color":"white"},\
 {"text":"邀请者让分：","bold":false,"color":"white"},{"score":{"name": "@s","objective": "4ASCEND_HP"}},{"text":"HP"}]
