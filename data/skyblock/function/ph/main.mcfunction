@@ -23,10 +23,15 @@ execute if score hasInvitation 4ASCEND_system matches 0 run data remove storage 
 
 #4ASCEND runtime
 data modify storage ph runtime.table set value 0
+function skyblock:ph/runtime
 data modify storage ph runtime.table set value 1
+function skyblock:ph/runtime
 data modify storage ph runtime.table set value 2
+function skyblock:ph/runtime
 data modify storage ph runtime.table set value 3
+function skyblock:ph/runtime
 data modify storage ph runtime.table set value 4
+function skyblock:ph/runtime
 
 #enable triggers
 scoreboard players enable @a PlayHouseTrigger
