@@ -425,6 +425,10 @@ setblock 90145 103 110 chest[facing=east]
 item replace block 90145 103 110 container.12 with coal 1
 item replace block 90145 103 110 container.14 with iron_ingot 1
 
+setblock 90126 96 171 chest[facing=south]
+item replace block 90126 96 171 container.12 with emerald 15
+item replace block 90126 96 171 container.14 with emerald 15
+
 
 fill 90127 102 99 90125 102 101 barrier
 
