@@ -1,5 +1,11 @@
 #available
-    #check
+    #check_negative
+    execute if data storage ph table_manager[{id:0}].player1 run data modify storage ph table_manager[{id:0}].available set value 0b
+    execute if data storage ph table_manager[{id:1}].player1 run data modify storage ph table_manager[{id:1}].available set value 0b
+    execute if data storage ph table_manager[{id:2}].player1 run data modify storage ph table_manager[{id:2}].available set value 0b
+    execute if data storage ph table_manager[{id:3}].player1 run data modify storage ph table_manager[{id:3}].available set value 0b
+    execute if data storage ph table_manager[{id:4}].player1 run data modify storage ph table_manager[{id:4}].available set value 0b
+    #check-positive
     execute unless data storage ph table_manager[{id:0}].player1 run data modify storage ph table_manager[{id:0}].available set value 1b
     execute unless data storage ph table_manager[{id:1}].player1 run data modify storage ph table_manager[{id:1}].available set value 1b
     execute unless data storage ph table_manager[{id:2}].player1 run data modify storage ph table_manager[{id:2}].available set value 1b
