@@ -11,4 +11,4 @@ execute if data storage ph table_manager[{id:2}].player1 unless data storage ph 
 execute if data storage ph table_manager[{id:3}].player1 unless data storage ph table_manager[{id:3}].player2 run data remove storage ph table_manager[{id:3}].player1
 execute if data storage ph table_manager[{id:4}].player1 unless data storage ph table_manager[{id:4}].player2 run data remove storage ph table_manager[{id:4}].player1
 
-scoreboard players set hasInvitation skyblock_system 0
+scoreboard players set hasInvitation 4ASCEND_system 0
