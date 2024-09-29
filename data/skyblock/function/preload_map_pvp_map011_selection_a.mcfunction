@@ -282,5 +282,6 @@ execute if score SkyChess_Generator rng1 matches 113 positioned ~ ~-4 ~ run setb
 execute if score SkyChess_Generator rng1 matches 113 positioned ~ ~-3 ~ run fill ~ ~ ~ ~ ~-1 ~ air
 execute if score SkyChess_Generator rng1 matches 113 positioned ~ ~-1 ~ run fill ~-8 ~ ~-8 ~8 ~-1 ~8 air
 
+kill @e[type=item,distance=0..100]
 
 #execute positioned ~ ~-1 ~ run fill ~6 ~ ~6 ~-6 ~ ~-6 polished_tuff

@@ -114,5 +114,5 @@ execute if score SkyChess_Generator rng1 matches 107 if score SkyChess_Generator
 execute if score SkyChess_Generator rng1 matches 107 positioned ~ ~-2 ~ run setblock ~ ~ ~ redstone_block
 execute if score SkyChess_Generator rng1 matches 107 positioned ~ ~-1 ~ run fill ~ ~ ~ ~ ~-1 ~ air
 
-
+kill @e[type=item,distance=0..100]
 
