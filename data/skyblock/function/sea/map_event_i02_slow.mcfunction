@@ -634,17 +634,20 @@ execute if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,x=901
 execute if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,x=90105,y=128,z=93,distance=0..6,tag=!boss2hplock1] at @s positioned 90092 128 96 run function skyblock:sea/m/zombie_cook
 execute if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,x=90105,y=128,z=93,distance=0..6,tag=!boss2hplock1] at @s positioned 90079 128 93 run function skyblock:sea/m/spider
 execute if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,x=90105,y=128,z=93,distance=0..6,tag=!boss2hplock1] at @s positioned 90079 128 93 run function skyblock:sea/m/spider
+execute if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,x=90105,y=128,z=93,distance=0..6,tag=!boss2hplock1] at @s run particle minecraft:trial_spawner_detection_ominous ~ ~1 ~ 0.3 1.2 0.3 0 30
 execute if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,x=90105,y=128,z=93,distance=0..6,tag=!boss2hplock1] at @s run tag @s add boss2hplock1
 
 execute if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,x=90085,y=128,z=93,distance=0..6,tag=!boss2hplock2] at @s positioned ~1 ~0 0.5 run function skyblock:sea/m/skeleton
 execute if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,x=90085,y=128,z=93,distance=0..6,tag=!boss2hplock2] at @s positioned ~1 ~0 -0.5 run function skyblock:sea/m/skeleton
 execute if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,x=90085,y=128,z=93,distance=0..6,tag=!boss2hplock2] at @s positioned ~1 ~0 0.5 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
 execute if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,x=90085,y=128,z=93,distance=0..6,tag=!boss2hplock2] at @s positioned ~1 ~0 -0.5 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
+execute if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,x=90085,y=128,z=93,distance=0..6,tag=!boss2hplock2] at @s run particle minecraft:trial_spawner_detection_ominous ~ ~1 ~ 0.3 1.2 0.3 0 30
 execute if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,x=90085,y=128,z=93,distance=0..6,tag=!boss2hplock2] at @s run tag @s add boss2hplock2
 
 execute if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,x=90068,y=128,z=93,distance=0..6,tag=!boss2hplock3] at @s run particle minecraft:sculk_soul ~ ~ ~ 1 1 1 0 20
 execute if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,x=90068,y=128,z=93,distance=0..6,tag=!boss2hplock3] at @s run playsound block.trial_spawner.ambient_ominous hostile @a ~ ~ ~ 20 0.6
 execute if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,x=90068,y=128,z=93,distance=0..6,tag=!boss2hplock3] at @s run fill 90066 128 96 90066 129 97 air destroy
+execute if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,x=90068,y=128,z=93,distance=0..6,tag=!boss2hplock3] at @s run particle minecraft:trial_spawner_detection_ominous ~ ~1 ~ 0.3 1.2 0.3 0 30
 execute if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,x=90068,y=128,z=93,distance=0..6,tag=!boss2hplock3] at @s run tag @s add boss2hplock3
 
 
