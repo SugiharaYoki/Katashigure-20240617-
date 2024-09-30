@@ -1,3 +1,5 @@
+scoreboard players reset @s PlayHouseTrigger
+
 #double join
 execute unless score hasInvitation 4ASCEND_system matches 1 run tellraw @s [{"text":"已经满员了！","color":"red"}]
 execute unless score hasInvitation 4ASCEND_system matches 1 run return 0
@@ -25,5 +27,3 @@ function skyblock:ph/runtime/start
 
 #Cancel Invitation
 function skyblock:ph/invite/clear
-
-scoreboard players reset @s PlayHouseTrigger
