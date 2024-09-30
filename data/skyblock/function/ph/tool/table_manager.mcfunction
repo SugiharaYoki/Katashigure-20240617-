@@ -32,36 +32,36 @@
     execute if data storage ph {table_manager:[{table:4,available:0b}]} run data merge entity @e[tag=city_table_4,type=block_display,limit=1] {block_state:{Name:"white_carpet"}}
 #seats
     #count limitation
-    execute store result score temp skyblock_system if entity @e[tag=city_seat_0_A]
-    execute if score temp skyblock_system matches 0 at @n[tag=city_table_0] run summon item_display ~-1.25 ~0.1 ~ {Tags:["city_seat_0_A","protected"],Rotation:[-90f,0f]}
-    execute if score temp skyblock_system matches 2.. run kill @e[tag=city_seat_0_A,limit=1]
-    execute store result score temp skyblock_system if entity @e[tag=city_seat_1_A]
-    execute if score temp skyblock_system matches 0 at @n[tag=city_table_1] run summon item_display ~-1.25 ~0.1 ~ {Tags:["city_seat_1_A","protected"],Rotation:[-90f,0f]}
-    execute if score temp skyblock_system matches 2.. run kill @e[tag=city_seat_1_A,limit=1]
-    execute store result score temp skyblock_system if entity @e[tag=city_seat_2_A]
-    execute if score temp skyblock_system matches 0 at @n[tag=city_table_2] run summon item_display ~-1.25 ~0.1 ~ {Tags:["city_seat_2_A","protected"],Rotation:[-90f,0f]}
-    execute if score temp skyblock_system matches 2.. run kill @e[tag=city_seat_2_A,limit=1]
-    execute store result score temp skyblock_system if entity @e[tag=city_seat_3_A]
-    execute if score temp skyblock_system matches 0 at @n[tag=city_table_3] run summon item_display ~-1.25 ~0.1 ~ {Tags:["city_seat_3_A","protected"],Rotation:[-90f,0f]}
-    execute if score temp skyblock_system matches 2.. run kill @e[tag=city_seat_3_A,limit=1]
-    execute store result score temp skyblock_system if entity @e[tag=city_seat_4_A]
-    execute if score temp skyblock_system matches 0 at @n[tag=city_table_4] run summon item_display ~-1.25 ~0.1 ~ {Tags:["city_seat_4_A","protected"],Rotation:[-90f,0f]}
-    execute if score temp skyblock_system matches 2.. run kill @e[tag=city_seat_4_A,limit=1]
-    execute store result score temp skyblock_system if entity @e[tag=city_seat_0_B]
-    execute if score temp skyblock_system matches 0 at @n[tag=city_table_0] run summon item_display ~1.25 ~0.1 ~ {Tags:["city_seat_0_B","protected"],Rotation:[90f,0f]}
-    execute if score temp skyblock_system matches 2.. run kill @e[tag=city_seat_0_B,limit=1]
-    execute store result score temp skyblock_system if entity @e[tag=city_seat_1_B]
-    execute if score temp skyblock_system matches 0 at @n[tag=city_table_1] run summon item_display ~1.25 ~0.1 ~ {Tags:["city_seat_1_B","protected"],Rotation:[90f,0f]}
-    execute if score temp skyblock_system matches 2.. run kill @e[tag=city_seat_1_B,limit=1]
-    execute store result score temp skyblock_system if entity @e[tag=city_seat_2_B]
-    execute if score temp skyblock_system matches 0 at @n[tag=city_table_2] run summon item_display ~1.25 ~0.1 ~ {Tags:["city_seat_2_B","protected"],Rotation:[90f,0f]}
-    execute if score temp skyblock_system matches 2.. run kill @e[tag=city_seat_2_B,limit=1]
-    execute store result score temp skyblock_system if entity @e[tag=city_seat_3_B]
-    execute if score temp skyblock_system matches 0 at @n[tag=city_table_3] run summon item_display ~1.25 ~0.1 ~ {Tags:["city_seat_3_B","protected"],Rotation:[90f,0f]}
-    execute if score temp skyblock_system matches 2.. run kill @e[tag=city_seat_3_B,limit=1]
-    execute store result score temp skyblock_system if entity @e[tag=city_seat_4_B]
-    execute if score temp skyblock_system matches 0 at @n[tag=city_table_4] run summon item_display ~1.25 ~0.1 ~ {Tags:["city_seat_4_B","protected"],Rotation:[90f,0f]}
-    execute if score temp skyblock_system matches 2.. run kill @e[tag=city_seat_4_B,limit=1]
+    execute store result score temp 4ASCEND_system if entity @e[tag=city_seat_0_A]
+    execute if score temp 4ASCEND_system matches 0 at @n[tag=city_table_0] run summon item_display ~-1.25 ~0.1 ~ {Tags:["city_seat_0_A","protected"],Rotation:[-90f,0f]}
+    execute if score temp 4ASCEND_system matches 2.. run kill @e[tag=city_seat_0_A,limit=1]
+    execute store result score temp 4ASCEND_system if entity @e[tag=city_seat_1_A]
+    execute if score temp 4ASCEND_system matches 0 at @n[tag=city_table_1] run summon item_display ~-1.25 ~0.1 ~ {Tags:["city_seat_1_A","protected"],Rotation:[-90f,0f]}
+    execute if score temp 4ASCEND_system matches 2.. run kill @e[tag=city_seat_1_A,limit=1]
+    execute store result score temp 4ASCEND_system if entity @e[tag=city_seat_2_A]
+    execute if score temp 4ASCEND_system matches 0 at @n[tag=city_table_2] run summon item_display ~-1.25 ~0.1 ~ {Tags:["city_seat_2_A","protected"],Rotation:[-90f,0f]}
+    execute if score temp 4ASCEND_system matches 2.. run kill @e[tag=city_seat_2_A,limit=1]
+    execute store result score temp 4ASCEND_system if entity @e[tag=city_seat_3_A]
+    execute if score temp 4ASCEND_system matches 0 at @n[tag=city_table_3] run summon item_display ~-1.25 ~0.1 ~ {Tags:["city_seat_3_A","protected"],Rotation:[-90f,0f]}
+    execute if score temp 4ASCEND_system matches 2.. run kill @e[tag=city_seat_3_A,limit=1]
+    execute store result score temp 4ASCEND_system if entity @e[tag=city_seat_4_A]
+    execute if score temp 4ASCEND_system matches 0 at @n[tag=city_table_4] run summon item_display ~-1.25 ~0.1 ~ {Tags:["city_seat_4_A","protected"],Rotation:[-90f,0f]}
+    execute if score temp 4ASCEND_system matches 2.. run kill @e[tag=city_seat_4_A,limit=1]
+    execute store result score temp 4ASCEND_system if entity @e[tag=city_seat_0_B]
+    execute if score temp 4ASCEND_system matches 0 at @n[tag=city_table_0] run summon item_display ~1.25 ~0.1 ~ {Tags:["city_seat_0_B","protected"],Rotation:[90f,0f]}
+    execute if score temp 4ASCEND_system matches 2.. run kill @e[tag=city_seat_0_B,limit=1]
+    execute store result score temp 4ASCEND_system if entity @e[tag=city_seat_1_B]
+    execute if score temp 4ASCEND_system matches 0 at @n[tag=city_table_1] run summon item_display ~1.25 ~0.1 ~ {Tags:["city_seat_1_B","protected"],Rotation:[90f,0f]}
+    execute if score temp 4ASCEND_system matches 2.. run kill @e[tag=city_seat_1_B,limit=1]
+    execute store result score temp 4ASCEND_system if entity @e[tag=city_seat_2_B]
+    execute if score temp 4ASCEND_system matches 0 at @n[tag=city_table_2] run summon item_display ~1.25 ~0.1 ~ {Tags:["city_seat_2_B","protected"],Rotation:[90f,0f]}
+    execute if score temp 4ASCEND_system matches 2.. run kill @e[tag=city_seat_2_B,limit=1]
+    execute store result score temp 4ASCEND_system if entity @e[tag=city_seat_3_B]
+    execute if score temp 4ASCEND_system matches 0 at @n[tag=city_table_3] run summon item_display ~1.25 ~0.1 ~ {Tags:["city_seat_3_B","protected"],Rotation:[90f,0f]}
+    execute if score temp 4ASCEND_system matches 2.. run kill @e[tag=city_seat_3_B,limit=1]
+    execute store result score temp 4ASCEND_system if entity @e[tag=city_seat_4_B]
+    execute if score temp 4ASCEND_system matches 0 at @n[tag=city_table_4] run summon item_display ~1.25 ~0.1 ~ {Tags:["city_seat_4_B","protected"],Rotation:[90f,0f]}
+    execute if score temp 4ASCEND_system matches 2.. run kill @e[tag=city_seat_4_B,limit=1]
 #players
     #remove illegal players
     execute if data storage ph {table_manager:[{table:0,available:1b}]} as @e[tag=table0] run function skyblock:ph/runtime/leave
