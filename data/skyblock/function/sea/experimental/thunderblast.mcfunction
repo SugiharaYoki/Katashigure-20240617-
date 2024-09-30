@@ -23,10 +23,10 @@ execute as @e[tag=sea_thunderblast_minor,scores={sea_thunderblast=47}] at @s run
 execute as @e[tag=sea_thunderblast_minor,scores={sea_thunderblast=47}] at @s run particle explosion ~ ~ ~ 2 1.3 2 0.04 50
 execute as @e[tag=sea_thunderblast_minor,scores={sea_thunderblast=47}] at @s run playsound entity.generic.explode hostile @a ~ ~ ~ 5 0.8
 execute as @e[tag=sea_thunderblast_minor,scores={sea_thunderblast=47}] at @s run playsound entity.lightning_bolt.impact hostile @a ~ ~ ~ 5 1.2
-execute as @e[tag=sea_thunderblast_minor,scores={sea_thunderblast=47}] at @s as @a[gamemode=adventure,distance=..1] at @s run damage @s 30 lightning_bolt
-execute as @e[tag=sea_thunderblast_minor,scores={sea_thunderblast=47}] at @s as @a[gamemode=adventure,distance=..1.8] at @s run damage @s 15 lightning_bolt
-execute as @e[tag=sea_thunderblast_minor,scores={sea_thunderblast=47}] at @s as @a[gamemode=adventure,distance=..2.4] at @s run damage @s 8 lightning_bolt
-execute as @e[tag=sea_thunderblast_minor,scores={sea_thunderblast=47}] at @s as @a[gamemode=adventure,distance=..3] at @s run damage @s 3 lightning_bolt
+execute as @e[tag=sea_thunderblast_minor,scores={sea_thunderblast=47}] at @s as @a[gamemode=adventure,distance=..3] at @s run damage @s 30 lightning_bolt
+execute as @e[tag=sea_thunderblast_minor,scores={sea_thunderblast=47}] at @s as @a[gamemode=adventure,distance=..3.8] at @s run damage @s 15 lightning_bolt
+execute as @e[tag=sea_thunderblast_minor,scores={sea_thunderblast=47}] at @s as @a[gamemode=adventure,distance=..4.4] at @s run damage @s 8 lightning_bolt
+execute as @e[tag=sea_thunderblast_minor,scores={sea_thunderblast=47}] at @s as @a[gamemode=adventure,distance=..5] at @s run damage @s 3 lightning_bolt
 execute as @e[tag=sea_thunderblast_minor,scores={sea_thunderblast=47}] run kill @s
 
 
