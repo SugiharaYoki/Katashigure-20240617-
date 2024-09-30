@@ -13,3 +13,33 @@ execute if data storage ph {start_init:{table:1}} store result storage ph table_
 execute if data storage ph {start_init:{table:2}} store result storage ph table_manager[{table:2}].turn int 1.0 run random value 0..1
 execute if data storage ph {start_init:{table:3}} store result storage ph table_manager[{table:3}].turn int 1.0 run random value 0..1
 execute if data storage ph {start_init:{table:4}} store result storage ph table_manager[{table:4}].turn int 1.0 run random value 0..1
+
+summon block_display 0. 0. 0. {Tags:["crossline_a","protected","temp_crossline"],block_state:{Name:"obsidian"},transformation:[0.02, 0.0, 0.0, 0.39,  0.0, 0.02, 0.0, 0.0,  0.0, 0.0, 1.0, -0.5,  0.0, 0.0, 0.0, 1.0],Rotation:[0.0f, 0.0f]}
+summon block_display 0. 0. 0. {Tags:["crossline_b","protected","temp_crossline"],block_state:{Name:"obsidian"},transformation:[0.02, 0.0, 0.0, 0.29,  0.0, 0.02, 0.0, 0.0,  0.0, 0.0, 1.0, -0.5,  0.0, 0.0, 0.0, 1.0],Rotation:[0.0f, 0.0f]}
+summon block_display 0. 0. 0. {Tags:["crossline_c","protected","temp_crossline"],block_state:{Name:"obsidian"},transformation:[0.02, 0.0, 0.0, 0.19,  0.0, 0.02, 0.0, 0.0,  0.0, 0.0, 1.0, -0.5,  0.0, 0.0, 0.0, 1.0],Rotation:[0.0f, 0.0f]}
+summon block_display 0. 0. 0. {Tags:["crossline_d","protected","temp_crossline"],block_state:{Name:"obsidian"},transformation:[0.02, 0.0, 0.0, 0.09,  0.0, 0.02, 0.0, 0.0,  0.0, 0.0, 1.0, -0.5,  0.0, 0.0, 0.0, 1.0],Rotation:[0.0f, 0.0f]}
+summon block_display 0. 0. 0. {Tags:["crossline_e","protected","temp_crossline"],block_state:{Name:"obsidian"},transformation:[0.02, 0.0, 0.0, -0.01,  0.0, 0.02, 0.0, 0.0,  0.0, 0.0, 1.0, -0.5,  0.0, 0.0, 0.0, 1.0],Rotation:[0.0f, 0.0f]}
+summon block_display 0. 0. 0. {Tags:["crossline_f","protected","temp_crossline"],block_state:{Name:"obsidian"},transformation:[0.02, 0.0, 0.0, -0.11,  0.0, 0.02, 0.0, 0.0,  0.0, 0.0, 1.0, -0.5,  0.0, 0.0, 0.0, 1.0],Rotation:[0.0f, 0.0f]}
+summon block_display 0. 0. 0. {Tags:["crossline_g","protected","temp_crossline"],block_state:{Name:"obsidian"},transformation:[0.02, 0.0, 0.0, -0.21,  0.0, 0.02, 0.0, 0.0,  0.0, 0.0, 1.0, -0.5,  0.0, 0.0, 0.0, 1.0],Rotation:[0.0f, 0.0f]}
+summon block_display 0. 0. 0. {Tags:["crossline_h","protected","temp_crossline"],block_state:{Name:"obsidian"},transformation:[0.02, 0.0, 0.0, -0.31,  0.0, 0.02, 0.0, 0.0,  0.0, 0.0, 1.0, -0.5,  0.0, 0.0, 0.0, 1.0],Rotation:[0.0f, 0.0f]}
+summon block_display 0. 0. 0. {Tags:["crossline_i","protected","temp_crossline"],block_state:{Name:"obsidian"},transformation:[0.02, 0.0, 0.0, -0.41,  0.0, 0.02, 0.0, 0.0,  0.0, 0.0, 1.0, -0.5,  0.0, 0.0, 0.0, 1.0],Rotation:[0.0f, 0.0f]}
+
+summon block_display 0. 0. 0. {Tags:["crossline_1","protected","temp_crossline"],block_state:{Name:"obsidian"},transformation:[0.02, 0.0, 0.0, 0.39,  0.0, 0.02, 0.0, 0.0,  0.0, 0.0, 1.0, -0.5,  0.0, 0.0, 0.0, 1.0],Rotation:[-90.0f, 0.0f]}
+summon block_display 0. 0. 0. {Tags:["crossline_2","protected","temp_crossline"],block_state:{Name:"obsidian"},transformation:[0.02, 0.0, 0.0, 0.29,  0.0, 0.02, 0.0, 0.0,  0.0, 0.0, 1.0, -0.5,  0.0, 0.0, 0.0, 1.0],Rotation:[-90.0f, 0.0f]}
+summon block_display 0. 0. 0. {Tags:["crossline_3","protected","temp_crossline"],block_state:{Name:"obsidian"},transformation:[0.02, 0.0, 0.0, 0.19,  0.0, 0.02, 0.0, 0.0,  0.0, 0.0, 1.0, -0.5,  0.0, 0.0, 0.0, 1.0],Rotation:[-90.0f, 0.0f]}
+summon block_display 0. 0. 0. {Tags:["crossline_4","protected","temp_crossline"],block_state:{Name:"obsidian"},transformation:[0.02, 0.0, 0.0, 0.09,  0.0, 0.02, 0.0, 0.0,  0.0, 0.0, 1.0, -0.5,  0.0, 0.0, 0.0, 1.0],Rotation:[-90.0f, 0.0f]}
+summon block_display 0. 0. 0. {Tags:["crossline_5","protected","temp_crossline"],block_state:{Name:"obsidian"},transformation:[0.02, 0.0, 0.0, -0.01,  0.0, 0.02, 0.0, 0.0,  0.0, 0.0, 1.0, -0.5,  0.0, 0.0, 0.0, 1.0],Rotation:[-90.0f, 0.0f]}
+summon block_display 0. 0. 0. {Tags:["crossline_6","protected","temp_crossline"],block_state:{Name:"obsidian"},transformation:[0.02, 0.0, 0.0, -0.11,  0.0, 0.02, 0.0, 0.0,  0.0, 0.0, 1.0, -0.5,  0.0, 0.0, 0.0, 1.0],Rotation:[-90.0f, 0.0f]}
+summon block_display 0. 0. 0. {Tags:["crossline_7","protected","temp_crossline"],block_state:{Name:"obsidian"},transformation:[0.02, 0.0, 0.0, -0.21,  0.0, 0.02, 0.0, 0.0,  0.0, 0.0, 1.0, -0.5,  0.0, 0.0, 0.0, 1.0],Rotation:[-90.0f, 0.0f]}
+summon block_display 0. 0. 0. {Tags:["crossline_8","protected","temp_crossline"],block_state:{Name:"obsidian"},transformation:[0.02, 0.0, 0.0, -0.31,  0.0, 0.02, 0.0, 0.0,  0.0, 0.0, 1.0, -0.5,  0.0, 0.0, 0.0, 1.0],Rotation:[-90.0f, 0.0f]}
+summon block_display 0. 0. 0. {Tags:["crossline_9","protected","temp_crossline"],block_state:{Name:"obsidian"},transformation:[0.02, 0.0, 0.0, -0.41,  0.0, 0.02, 0.0, 0.0,  0.0, 0.0, 1.0, -0.5,  0.0, 0.0, 0.0, 1.0],Rotation:[-90.0f, 0.0f]}
+
+#enum template [$1=1..5]:
+#execute if data storage ph {start_init:{table:$1}} at @n[tag=city_table_$1] as @e[tag=temp_crossline] run ride @s mount @n[distance=..0.01]
+execute if data storage ph {start_init:{table:0}} at @n[tag=city_table_0] as @e[tag=temp_crossline] run ride @s mount @n[distance=..0.01]
+execute if data storage ph {start_init:{table:1}} at @n[tag=city_table_1] as @e[tag=temp_crossline] run ride @s mount @n[distance=..0.01]
+execute if data storage ph {start_init:{table:2}} at @n[tag=city_table_2] as @e[tag=temp_crossline] run ride @s mount @n[distance=..0.01]
+execute if data storage ph {start_init:{table:3}} at @n[tag=city_table_3] as @e[tag=temp_crossline] run ride @s mount @n[distance=..0.01]
+execute if data storage ph {start_init:{table:4}} at @n[tag=city_table_4] as @e[tag=temp_crossline] run ride @s mount @n[distance=..0.01]
+
+tag @e[tag=temp_crossline] remove temp_crossline
