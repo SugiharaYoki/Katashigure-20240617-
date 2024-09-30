@@ -17,6 +17,13 @@ execute if data storage ph {runtime:{table:4}} run data modify storage ph runtim
 
     #tellraw @a[tag=current_table] [{"text":"4ASCEND running, table: "},{"nbt":"runtime.table","storage":"ph"}]
 
+    #visualize turns
+    execute if data storage ph {runtime:{turn:0}} run effect give @a[tag=current_table,tag=4ASCENDHost] glowing 1 1 true
+    execute if data storage ph {runtime:{turn:0}} run effect clear @a[tag=current_table,tag=4ASCENDGuest] glowing
+    execute if data storage ph {runtime:{turn:1}} run effect give @a[tag=current_table,tag=4ASCENDGuest] glowing 1 1 true
+    execute if data storage ph {runtime:{turn:1}} run effect clear @a[tag=current_table,tag=4ASCENDHost] glowing
+
+    #endgame check
     data modify storage ph end_init.table set from storage ph runtime.table
     execute as @a[tag=current_table] on vehicle run tag @s add leave_check
     execute store result score temp skyblock_system if entity @e[tag=leave_check,limit=2,type=item_display]

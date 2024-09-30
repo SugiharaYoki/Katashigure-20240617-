@@ -8,6 +8,10 @@ scoreboard objectives add 4ASCEND_HP dummy
 scoreboard objectives add 4ASCEND_TIME dummy
 scoreboard objectives add 4ASCEND_system dummy
 scoreboard objectives add 4ASCEND_startCount dummy
+team add 4ASCENDHost
+team add 4ASCENDGuest
+team modify 4ASCENDHost color aqua
+team modify 4ASCENDGuest color dark_red
 data merge storage ph {table_manager:[{table:0,available:1b},{table:1,available:1b},{table:2,available:1b},{table:3,available:1b},{table:4,available:1b}]}
 
 #数值使用规范：

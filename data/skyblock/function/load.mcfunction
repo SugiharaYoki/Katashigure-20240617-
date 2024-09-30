@@ -1,4 +1,4 @@
-scoreboard players set version skyblock_system 182
+scoreboard players set version skyblock_system 183
 execute unless score last_version skyblock_system = version skyblock_system run tellraw @a[tag=DebugMode] [{"text":"【4ASCEND v0.1】Datapack has successfully updated. version: "},{"score":{"name":"version","objective":"skyblock_system"},"color":"green","bold":true}]
 scoreboard players operation last_version skyblock_system = version skyblock_system
 
@@ -182,6 +182,10 @@ scoreboard objectives add 4ASCEND_HP dummy
 scoreboard objectives add 4ASCEND_TIME dummy
 scoreboard objectives add 4ASCEND_system dummy
 scoreboard objectives add 4ASCEND_startCount dummy
+team add 4ASCENDHost
+team add 4ASCENDGuest
+team modify 4ASCENDHost color aqua
+team modify 4ASCENDGuest color dark_red
 #CMD Game
 scoreboard objectives add CmdTrigger trigger
 scoreboard objectives add CmdType dummy
