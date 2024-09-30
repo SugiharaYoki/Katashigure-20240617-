@@ -616,10 +616,10 @@ execute if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2] at @
 #execute if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,tag=!boss2hplock3] at @s positioned ~11.5 ~ ~ as @a[tag=SEAPT,distance=0..11.3] at @s run effect give @s instant_damage 2 2 false
 
 execute store result score @n[tag=SEAboss2] sea_boss1_hp run data get entity @n[tag=SEAboss2] Health
-execute if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,scores={sea_boss1_hp=..350},tag=!boss2hplock1] run effect give @s resistance 3 9 true
-execute if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,scores={sea_boss1_hp=..250},tag=!boss2hplock2] run effect give @s resistance 3 9 true
+execute if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,scores={sea_boss1_hp=..350},tag=!boss2hplock1] run effect give @s resistance 3 9 false
+execute if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,scores={sea_boss1_hp=..250},tag=!boss2hplock2] run effect give @s resistance 3 9 false
 execute if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,scores={sea_boss1_hp=101..250}] run effect give @s speed 3 0 true
-execute if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,scores={sea_boss1_hp=..100},tag=!boss2hplock3] run effect give @s resistance 3 9 true
+execute if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,scores={sea_boss1_hp=..100},tag=!boss2hplock3] run effect give @s resistance 3 9 false
 execute if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,scores={sea_boss1_hp=30..100}] run effect give @s speed 3 2 true
 
 execute if entity @n[tag=sc,scores={sea_4temp2=2220..}] as @n[tag=SEAboss2,tag=!boss2hplock3] at @s unless entity @a[tag=SEAPT,distance=0..5.8] at @p[tag=SEAPT] if block ~2 ~ ~ air run tp @s ~2 ~ ~
