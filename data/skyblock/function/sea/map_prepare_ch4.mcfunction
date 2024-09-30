@@ -24,7 +24,7 @@ setblock 90181 20 113 lever[face=floor,facing=south,powered=true]
 fill 90184 18 114 90190 18 112 minecraft:lime_stained_glass
 setblock 90213 20 108 air
 setblock 90213 20 108 lever[face=floor,facing=west]
-fill 90194 18 114 90202 18 112 minecraft:lime_stained_glass
+fill 90194 18 114 90203 18 112 minecraft:lime_stained_glass
 
 fill 90177 18 88 90181 18 89 air
 setblock 90193 20 86 minecraft:waxed_copper_bulb[lit=false]
