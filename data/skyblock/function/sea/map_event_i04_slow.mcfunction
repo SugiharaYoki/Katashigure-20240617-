@@ -70,8 +70,15 @@ execute positioned 90210 18 113 if entity @a[tag=SEAPT,distance=..2.7] unless en
 execute positioned 90210 18 113 if entity @a[tag=SEAPT,distance=..2.7] unless entity @n[tag=SEAch3_spawn,distance=0..3] positioned 90213 19 109 run function skyblock:sea/m/silverfish_big
 execute positioned 90210 18 113 if entity @a[tag=SEAPT,distance=..2.7] unless entity @n[tag=SEAch3_spawn,distance=0..3] run summon marker ~ ~ ~ {Tags:["SEAch3_spawn"]}
 
-
-
+scoreboard players add @e[tag=SEAch4_spawn_timer] sea_4temp1 1
+execute positioned 90192 18 103 if entity @a[tag=SEAPT,distance=..2.5] unless entity @n[tag=SEAch4_spawn_timer1,distance=0..3] run summon marker ~ ~ ~ {Tags:["SEAch4_spawn_timer","SEAch4_spawn_timer1"]}
+execute as @n[tag=SEAch4_spawn_timer1,scores={sea_4temp1=2..5}] as @n[tag=SEAedwina] at @s run tp @s ~ ~ ~1
+execute as @n[tag=SEAch4_spawn_timer1,scores={sea_4temp1=7..9}] as @n[tag=SEAedwina] at @s run tp @s ~ ~ ~1
+execute as @n[tag=SEAch4_spawn_timer1,scores={sea_4temp1=10}] as @n[tag=SEAedwina] at @s run tp @s ~ ~-500 ~
+execute as @n[tag=SEAch4_spawn_timer1,scores={sea_4temp1=11}] as @n[tag=SEAedwina] at @s run kill @s
+execute as @n[tag=SEAch4_spawn_timer1,scores={sea_4temp1=5}] run fill 90193 19 121 90191 23 121 minecraft:lime_stained_glass
+execute as @n[tag=SEAch4_spawn_timer1,scores={sea_4temp1=6}] run fill 90191 19 123 90193 23 123 minecraft:lime_stained_glass
+execute as @n[tag=SEAch4_spawn_timer1,scores={sea_4temp1=5..6}] run playsound block.beacon.activate block @a 90192 22 121 2 1.5
 
 
 

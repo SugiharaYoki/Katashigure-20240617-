@@ -29,8 +29,8 @@ fill 90194 18 114 90202 18 112 minecraft:lime_stained_glass
 fill 90177 18 88 90181 18 89 air
 setblock 90193 20 86 minecraft:waxed_copper_bulb[lit=false]
 fill 90191 25 114 90193 25 112 minecraft:waxed_copper_grate
-fill 90193 19 121 90191 23 121 minecraft:lime_stained_glass
-fill 90191 19 123 90193 23 123 minecraft:lime_stained_glass
+fill 90193 19 121 90191 23 121 air
+fill 90191 19 123 90193 23 123 air
 
 summon minecraft:interaction 90192 20.3 85 {CustomName:'[{"text":"多功能工作站"}]',Tags:["SEAcrafter","SEAcrafter_foodless","SEAcrafter11"]}
 summon minecraft:marker 90191 19 85 {Tags:["SEAcrafter_tp","SEAcrafter_tp11"]}
@@ -52,6 +52,7 @@ execute positioned 90183 19 112 run function skyblock:sea/m/skeleton
 execute positioned 90206 19 117 run function skyblock:sea/m/skeleton_melee
 execute positioned 90206 19 117 run function skyblock:sea/m/spider
 
+execute positioned 90192 19 120 run function skyblock:sea/m/npc_edwina
 
 setblock 90208 19 112 air
 setblock 90208 19 112 air
