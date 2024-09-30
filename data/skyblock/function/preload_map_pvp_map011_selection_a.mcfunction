@@ -326,6 +326,7 @@ execute if score SkyChess_Generator rng1 matches 116 positioned ~ ~-2 ~ run setb
 execute if score SkyChess_Generator rng1 matches 116 positioned ~ ~-1 ~ run fill ~ ~ ~ ~ ~-1 ~ air
 execute if score SkyChess_Generator rng1 matches 116 positioned ~ ~-1 ~ run setblock ~ ~ ~ structure_block{name:"minecraft:skychess_ore_smithing",posX:-6,posY:1,posZ:-6,rotation:"NONE",mirror:"NONE",mode:"LOAD",integrity:0.01}
 execute if score SkyChess_Generator rng1 matches 116 positioned ~ ~-2 ~ run setblock ~ ~ ~ redstone_block
+execute if score SkyChess_Generator rng1 matches 118 positioned ~ ~-1 ~ run fill ~ ~ ~ ~ ~-1 ~ air
 
 #丛林流域1#27
 execute if score SkyChess_Generator rng1 matches 117 if score SkyChess_Generator rng2 matches 1 positioned ~ ~-1 ~ run setblock ~ ~ ~ structure_block{name:"minecraft:skychess_127",posX:-6,posY:1,posZ:-6,rotation:"NONE",mirror:"NONE",mode:"LOAD"}
@@ -348,6 +349,7 @@ execute if score SkyChess_Generator rng1 matches 117 positioned ~ ~-2 ~ run setb
 execute if score SkyChess_Generator rng1 matches 117 positioned ~ ~-1 ~ run fill ~ ~ ~ ~ ~-1 ~ air
 execute if score SkyChess_Generator rng1 matches 117 positioned ~ ~-1 ~ run setblock ~ ~ ~ structure_block{name:"minecraft:skychess_ore_smithing",posX:-6,posY:1,posZ:-6,rotation:"NONE",mirror:"NONE",mode:"LOAD",integrity:0.01}
 execute if score SkyChess_Generator rng1 matches 117 positioned ~ ~-2 ~ run setblock ~ ~ ~ redstone_block
+execute if score SkyChess_Generator rng1 matches 118 positioned ~ ~-1 ~ run fill ~ ~ ~ ~ ~-1 ~ air
 #丛林流域1#28
 execute if score SkyChess_Generator rng1 matches 118 if score SkyChess_Generator rng2 matches 1 positioned ~ ~-1 ~ run setblock ~ ~ ~ structure_block{name:"minecraft:skychess_128",posX:-6,posY:1,posZ:-6,rotation:"NONE",mirror:"NONE",mode:"LOAD"}
 execute if score SkyChess_Generator rng1 matches 118 if score SkyChess_Generator rng2 matches 2 positioned ~ ~-1 ~ run setblock ~ ~ ~ structure_block{name:"minecraft:skychess_128",posX:6,posY:1,posZ:-6,rotation:"CLOCKWISE_90",mirror:"NONE",mode:"LOAD"}
@@ -369,6 +371,7 @@ execute if score SkyChess_Generator rng1 matches 118 positioned ~ ~-2 ~ run setb
 execute if score SkyChess_Generator rng1 matches 118 positioned ~ ~-1 ~ run fill ~ ~ ~ ~ ~-1 ~ air
 execute if score SkyChess_Generator rng1 matches 118 positioned ~ ~-1 ~ run setblock ~ ~ ~ structure_block{name:"minecraft:skychess_ore_smithing",posX:-6,posY:1,posZ:-6,rotation:"NONE",mirror:"NONE",mode:"LOAD",integrity:0.01}
 execute if score SkyChess_Generator rng1 matches 118 positioned ~ ~-2 ~ run setblock ~ ~ ~ redstone_block
+execute if score SkyChess_Generator rng1 matches 118 positioned ~ ~-1 ~ run fill ~ ~ ~ ~ ~-1 ~ air
 
 
 
