@@ -32,7 +32,7 @@ execute as @s[scores={sea_4temp1=291}] at @s run give @a[tag=SEAPT] emerald 16
 execute as @s[scores={sea_4temp1=291}] at @s run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
 execute as @s[scores={sea_4temp1=291}] at @s if entity @a[tag=SEAPT,tag=e_i_25] run scoreboard players set @n[tag=SEAyuehan] sea_4temp1 1360
 
-execute if entity @a[tag=SEAPT,distance=..6,tag=e_i_25] run scoreboard players set @s[scores={sea_4temp1=299..300}] sea_4temp1 400
+execute if entity @a[tag=SEAPT,distance=..6,tag=e_i_25] run scoreboard players set @s[scores={sea_4temp1=296..300}] sea_4temp1 400
 execute if entity @a[tag=SEAPT,distance=..6] run scoreboard players add @s[scores={sea_4temp1=400..700}] sea_4temp1 1
 execute as @s[scores={sea_4temp1=402}] at @s run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
 execute as @s[scores={sea_4temp1=402}] at @s if entity @n[tag=sc,scores={sea_player=1}] run tellraw @a[distance=0..250] {"text":"越涵：“哎，你找到斯顿了吗？”","color":"green"}
