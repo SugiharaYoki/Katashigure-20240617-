@@ -7,7 +7,7 @@ execute if score hasInvitation 4ASCEND_system matches 0 run function skyblock:ph
 
 #4ASCEND runtime
 #enum template [$1=1..5]:
-#data modify storage ph runtime.table set value 0
+#execute unless data storage ph {table_manager:[{table:$1,available:1b}]} run data modify storage ph runtime.table set value 0
 #execute unless data storage ph {table_manager:[{table:$1,available:1b}]} run function skyblock:ph/runtime/core
 execute unless data storage ph {table_manager:[{table:0,available:1b}]} run data modify storage ph runtime.table set value 0
 execute unless data storage ph {table_manager:[{table:0,available:1b}]} run function skyblock:ph/runtime/core

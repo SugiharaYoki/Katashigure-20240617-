@@ -8,4 +8,12 @@
 
     #release data
     data remove storage ph runtime
+    
+    #enum template [$1=1..5]:
+    #execute if data storage ph {end_init:{table:$1}} run data modify storage ph table_manager[{table:$1}] set value {table:$1,available:1b}
+    execute if data storage ph {end_init:{table:0}} run data modify storage ph table_manager[{table:0}] set value {table:0,available:1b}
+    execute if data storage ph {end_init:{table:1}} run data modify storage ph table_manager[{table:1}] set value {table:1,available:1b}
+    execute if data storage ph {end_init:{table:2}} run data modify storage ph table_manager[{table:2}] set value {table:2,available:1b}
+    execute if data storage ph {end_init:{table:3}} run data modify storage ph table_manager[{table:3}] set value {table:3,available:1b}
+    execute if data storage ph {end_init:{table:4}} run data modify storage ph table_manager[{table:4}] set value {table:4,available:1b}
 data remove storage ph end_init
