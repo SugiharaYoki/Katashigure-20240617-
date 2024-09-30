@@ -1,0 +1,2 @@
+execute store result storage ph runtime.turn int 1.0 if data storage ph {runtime:{turn:0}} run return 1
+execute store result storage ph runtime.turn int 1.0 if data storage ph {runtime:{turn:0}} run return 0
