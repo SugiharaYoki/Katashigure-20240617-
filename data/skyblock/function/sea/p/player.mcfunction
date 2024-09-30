@@ -100,6 +100,7 @@ execute as @s[nbt=!{Inventory:[{components:{"minecraft:custom_data":{sea_t_knock
 execute as @s store result score @s sea_i_spectral run clear @s spectral_arrow 0
 execute as @s unless entity @s[scores={sea_i_spectral_load=-999..}] run scoreboard players set @s sea_i_spectral_load 0
 execute as @s[tag=sea_t_spectral1,nbt={Inventory:[{id:"minecraft:arrow"}]},scores={sea_i_spectral=..2,sea_i_spectral_load=..160}] run scoreboard players add @s sea_i_spectral_load 1
+execute as @s[tag=sea_t_spectral2,nbt={Inventory:[{id:"minecraft:arrow"}]},scores={sea_i_spectral=..2,sea_i_spectral_load=..160}] run scoreboard players add @s sea_i_spectral_load 1
 execute as @s[scores={sea_i_spectral=..2,sea_i_spectral_load=160..},nbt=!{Inventory:[{components:{"minecraft:custom_data":{sea_t_spectral_load1:true}}}]}] run clear @s arrow 1
 execute as @s[scores={sea_i_spectral=..2,sea_i_spectral_load=160..},nbt=!{Inventory:[{components:{"minecraft:custom_data":{sea_t_spectral_load1:true}}}]}] run give @s spectral_arrow 1
 execute as @s[scores={sea_i_spectral=..2,sea_i_spectral_load=160..},nbt=!{Inventory:[{components:{"minecraft:custom_data":{sea_t_spectral_load1:true}}}]}] run scoreboard players set @s sea_i_spectral_load 0
@@ -109,10 +110,17 @@ execute as @s[scores={sea_i_spectral=..2,sea_i_spectral_load=120..},nbt={Invento
 execute as @s[scores={sea_i_spectral=4..}] run give @s arrow 1
 execute as @s[scores={sea_i_spectral=4..}] run clear @s spectral_arrow 1
 
+execute if entity @s[tag=sea_t_spectral2,nbt={SelectedItem:{id:"minecraft:crossbow"}}] \
+unless entity @s[nbt={SelectedItem:{components:{"minecraft:charged_projectiles":[{id:"minecraft:arrow"}]}}}] \
+unless entity @s[nbt={SelectedItem:{components:{"minecraft:charged_projectiles":[{id:"minecraft:spectral_arrow"}]}}}] \
+if entity @s[scores={sea_i_spectral=1..}] \
+run tag @s add SEA_spectral_autocharge
 
-
-
-
+execute as @a[tag=SEA_spectral_autocharge] at @s run item replace block 90205 13 112 container.0 from entity @s weapon.mainhand
+execute as @a[tag=SEA_spectral_autocharge] at @s run data modify block 90205 13 112 Items[0] merge value {components:{"minecraft:charged_projectiles":[{id:"minecraft:spectral_arrow"}]}}
+execute as @a[tag=SEA_spectral_autocharge] at @s run item replace entity @s weapon.mainhand from block 90205 13 112 container.0
+execute as @a[tag=SEA_spectral_autocharge] at @s run clear @s spectral_arrow 1
+execute as @a[tag=SEA_spectral_autocharge] at @s run tag @s remove SEA_spectral_autocharge
 
 
 execute as @s[tag=!e_w_01,nbt={Inventory:[{id:"minecraft:iron_hoe"}]}] run tellraw @s {"text": "获得武器：撬棍","color": "dark_red"}
@@ -169,11 +177,13 @@ execute if items entity @s player.cursor flow_armor_trim_smithing_template[custo
 #execute if score @s sea_cursor2 matches 1.. run say hello
 
 execute as @s[nbt={Inventory:[{components:{"minecraft:custom_data":{sea_t_spectral1:true}}}]}] at @s run tag @s add sea_t_spectral1
+execute as @s[nbt={Inventory:[{components:{"minecraft:custom_data":{sea_t_spectral2:true}}}]}] at @s run tag @s add sea_t_spectral2
 execute as @s[nbt={Inventory:[{components:{"minecraft:custom_data":{sea_t_sprint1:true}}}]}] at @s run tag @s add sea_t_sprint1
 clear @s barrier
 clear @s flow_armor_trim_smithing_template
 item replace entity @s[tag=!sea_t_spectral1] player.crafting.0 with barrier
-item replace entity @s[tag=sea_t_spectral1] player.crafting.0 with flow_armor_trim_smithing_template[custom_name='{"text":"光棱魔板","italic":true,"color":"light_purple","italic":false}',lore=['{"text":"静滞光锥 I","color":"white","italic":false}','{"text":"箭矢路径的小范围内怪物大幅减速","color":"white","italic":false}'],custom_data={sea_t_spectral1:true}]
+item replace entity @s[tag=sea_t_spectral1,tag=!sea_t_spectral2] player.crafting.0 with flow_armor_trim_smithing_template[custom_name='{"text":"光棱魔板","italic":true,"color":"light_purple","italic":false}',lore=['{"text":"静滞光锥 I","color":"white","italic":false}','{"text":"箭矢路径的小范围内怪物大幅减速","color":"white","italic":false}'],custom_data={sea_t_spectral1:true}]
+item replace entity @s[tag=sea_t_spectral2] player.crafting.0 with flow_armor_trim_smithing_template[custom_name='{"text":"二型光棱魔板","italic":true,"color":"light_purple","italic":false}',lore=['{"text":"静滞光锥 II","color":"white","italic":false}','{"text":"箭矢路径的小范围内怪物大幅减速","color":"white","italic":false}','{"text":"若持有光棱箭，将自动上膛","color":"white","italic":false}'],custom_data={sea_t_spectral2:true}]
 item replace entity @s player.crafting.1 with barrier
 item replace entity @s[tag=sea_t_sprint1,tag=!sea_t_sprint_disabled] player.crafting.1 with flow_armor_trim_smithing_template[custom_name='{"text":"残影魔板","italic":true,"color":"light_purple","italic":false}',lore=['{"text":"绿色指示灯亮起时，起跑将被替换为冲刺","color":"white","italic":false}','{"text":"期间防御、移动速度、击退抗性巨幅提升","color":"white","italic":false}','{"text":"点击禁用","color":"green","italic":false,"bold": true}'],custom_data={sea_t_sprint1:true}]
 item replace entity @s[tag=sea_t_sprint1,tag=sea_t_sprint_disabled] player.crafting.1 with flow_armor_trim_smithing_template[custom_name='{"text":"残影魔板 - 禁用中","italic":true,"color":"light_purple","italic":false}',lore=['{"text":"绿色指示灯亮起时，起跑将被替换为冲刺","color":"white","italic":false}','{"text":"期间防御、移动速度、击退抗性巨幅提升","color":"white","italic":false}','{"text":"点击启用","color":"green","italic":false,"bold": true}'],custom_data={sea_t_sprint_disabled:true},enchantments={"vanishing_curse":1}]
