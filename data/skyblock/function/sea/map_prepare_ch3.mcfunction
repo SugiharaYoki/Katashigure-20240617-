@@ -124,6 +124,10 @@ item replace block 90086 143 114 container.11 with gunpowder 2
 item replace block 90086 143 114 container.13 with emerald 5
 item replace block 90086 143 114 container.15 with gunpowder 2
 
+setblock 90130 151 142 chest[facing=east]{Lock:"宿舍楼3楼某处的钥匙"}
+item replace block 90130 151 142 container.12 with flint 1
+item replace block 90130 151 142 container.14 with coal 1
+
 setblock 90154 129 98 air
 setblock 90154 129 98 lever[facing=east]
 
