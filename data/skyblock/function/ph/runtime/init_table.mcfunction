@@ -43,3 +43,5 @@ execute if data storage ph {start_init:{table:3}} at @n[tag=city_table_3] as @e[
 execute if data storage ph {start_init:{table:4}} at @n[tag=city_table_4] as @e[tag=temp_crossline] run ride @s mount @n[distance=..0.01]
 
 tag @e[tag=temp_crossline] remove temp_crossline
+
+say test
