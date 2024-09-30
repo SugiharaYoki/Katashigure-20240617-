@@ -67,8 +67,8 @@ execute if score sea_ch4_switch_crossroad2 sea_4temp2 matches 22 run fill 90194 
 execute if score sea_ch4_switch_crossroad2 sea_4temp2 matches 22 run fill 90191 19 123 90193 23 123 minecraft:lime_stained_glass
 
 
-execute positioned 90210 18 113 if entity @a[tag=SEAPT,distance=..2.7] unless entity @n[tag=SEAch3_spawn,distance=0..3] positioned 90213 19 109 run function skyblock:sea/m/silverfish_big
-execute positioned 90210 18 113 if entity @a[tag=SEAPT,distance=..2.7] unless entity @n[tag=SEAch3_spawn,distance=0..3] positioned 90213 19 109 run function skyblock:sea/m/silverfish_big
+execute positioned 90210 18 113 if entity @a[tag=SEAPT,distance=..2.7] unless entity @n[tag=SEAch3_spawn,distance=0..3] positioned 90212 19 109 run function skyblock:sea/m/silverfish_big
+execute positioned 90210 18 113 if entity @a[tag=SEAPT,distance=..2.7] unless entity @n[tag=SEAch3_spawn,distance=0..3] positioned 90214 19 109 run function skyblock:sea/m/silverfish_big
 execute positioned 90210 18 113 if entity @a[tag=SEAPT,distance=..2.7] unless entity @n[tag=SEAch3_spawn,distance=0..3] run summon marker ~ ~ ~ {Tags:["SEAch3_spawn"]}
 
 scoreboard players add @e[tag=SEAch4_spawn_timer] sea_4temp1 1
