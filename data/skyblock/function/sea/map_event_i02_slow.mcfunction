@@ -17,7 +17,7 @@ execute as @n[tag=sc] unless entity @s[scores={sea_4temp2=-9999..}] run scoreboa
 
 execute store result score @n[tag=sc,scores={sea_4temp2=1..500}] rng2 run random value 1..6
 execute as @n[tag=sc,scores={sea_4temp2=1..40}] run scoreboard players add @s sea_4temp2 1
-execute as @a[tag=SEAPT,x=90084,y=128,z=113,distance=0..3] run scoreboard players set @n[tag=sc,scores={sea_4temp2=..1}] sea_4temp2 1
+execute as @a[tag=SEAPT,x=90084,y=128,z=113,distance=0..3,tag=!SEAPF] run scoreboard players set @n[tag=sc,scores={sea_4temp2=..1}] sea_4temp2 1
 
 execute as @n[tag=sc,scores={sea_4temp2=11}] run playsound block.stone_button.click_off block @a 90084 132 112 2 1.4
 execute as @n[tag=sc,scores={sea_4temp2=11}] run setblock 90084 132 112 white_stained_glass
@@ -95,7 +95,7 @@ execute if block 90141 128 134 air if block 90132 130 136 redstone_lamp[lit=true
 execute if block 90141 128 134 air if block 90132 130 136 redstone_lamp[lit=true] as @a[tag=SEAPT,x=90105,y=128,z=101,distance=0..2.3,tag=!e_i_24] at @s run tag @s add e_i_24
 
 
-execute at @n[tag=SEArivette,tag=!SEArivetteboss2] as @a[tag=SEAPT,distance=0..3.3,tag=!e_i_19] at @s run tellraw @s {"text": "这家伙……怎么回事？！","color": "red"}
+execute at @n[tag=SEArivette,tag=!SEArivetteboss2] as @a[tag=SEAPT,distance=0..3.3,tag=!e_i_19] at @s run tellraw @s {"text": "这家伙……怎么回事？！我可不能跟它打，得快点跑。","color": "red"}
 execute at @n[tag=SEArivette,tag=!SEArivetteboss2] as @a[tag=SEAPT,distance=0..3.3,tag=!e_i_19] at @s run tag @s add e_i_19
 
 execute at @n[tag=SEArivetteboss2] as @a[tag=SEAPT,distance=0..3.3,tag=e_i_19,tag=!e_i_23] at @s run tellraw @s {"text": "怎么又是这个家伙？！我不可能打得过他，得往反方向跑！","color": "red"}
@@ -124,22 +124,22 @@ execute as @a[tag=SEAPT,x=90111,y=128,z=125,distance=0..2.3,tag=!e_i_15] positio
 execute as @a[tag=SEAPT,x=90111,y=128,z=125,distance=0..2.3,tag=!e_i_15] run tag @a[tag=SEAPT] add e_i_15
 
 
-execute as @a[tag=SEAPT,x=90110,y=128,z=150,distance=0..1.3,tag=!e_i_16] at @s run summon minecraft:lightning_bolt 90118 115 174
-execute as @a[tag=SEAPT,x=90110,y=128,z=150,distance=0..1.3,tag=!e_i_16] at @s run summon minecraft:lightning_bolt 90118 115 174
-execute as @a[tag=SEAPT,x=90110,y=128,z=150,distance=0..1.3,tag=!e_i_16] at @s run summon minecraft:lightning_bolt 90118 115 174
-execute as @a[tag=SEAPT,x=90110,y=128,z=150,distance=0..1.3,tag=!e_i_16] at @s run summon minecraft:lightning_bolt 90118 115 174
-execute as @a[tag=SEAPT,x=90110,y=128,z=150,distance=0..1.3,tag=!e_i_16] at @s run playsound minecraft:ambient.soul_sand_valley.additions master @a 90118 115 194 9 0.7
-execute as @a[tag=SEAPT,x=90110,y=128,z=150,distance=0..1.3,tag=!e_i_16] at @s run playsound minecraft:ambient.soul_sand_valley.additions master @a 90118 115 194 9 0.7
-execute as @a[tag=SEAPT,x=90110,y=128,z=150,distance=0..1.3,tag=!e_i_16] at @s run playsound minecraft:ambient.soul_sand_valley.additions master @a 90118 115 194 9 0.7
-execute as @a[tag=SEAPT,x=90110,y=128,z=150,distance=0..1.3,tag=!e_i_16] at @s run playsound minecraft:ambient.soul_sand_valley.additions master @a 90118 115 194 9 0.7
-execute as @a[tag=SEAPT,x=90110,y=128,z=150,distance=0..1.3,tag=!e_i_16] at @s positioned 90104 128 150 run function skyblock:sea/m/zombie_cook
-execute as @a[tag=SEAPT,x=90110,y=128,z=150,distance=0..1.3,tag=!e_i_16] at @s positioned 90104 128 150 run function skyblock:sea/m/drowned_maintenance
-execute as @a[tag=SEAPT,x=90110,y=128,z=150,distance=0..1.3,tag=!e_i_16] at @s positioned 90104 128 150 if entity @n[tag=sc,scores={sea_player=2..}] run function skyblock:sea/m/drowned_maintenance
-execute as @a[tag=SEAPT,x=90110,y=128,z=150,distance=0..1.3,tag=!e_i_16] at @s positioned 90122 128 144 run function skyblock:sea/m/silverfish_big
-execute as @a[tag=SEAPT,x=90110,y=128,z=150,distance=0..1.3,tag=!e_i_16] at @s positioned 90122 128 144 if entity @n[tag=sc,scores={sea_player=3..}] run function skyblock:sea/m/silverfish_big
-execute as @a[tag=SEAPT,x=90110,y=128,z=150,distance=0..1.3,tag=!e_i_16] at @s positioned 90122 128 144 run function skyblock:sea/m/spider
-execute as @a[tag=SEAPT,x=90110,y=128,z=150,distance=0..1.3,tag=!e_i_16] at @s positioned 90104 128 150 if entity @n[tag=sc,scores={sea_player=3..}] run function skyblock:sea/m/drowned_maintenance
-execute as @a[tag=SEAPT,x=90110,y=128,z=150,distance=0..1.3,tag=!e_i_16] at @s run tag @a[tag=SEAPT] add e_i_16
+execute as @a[tag=SEAPT,x=90110,y=128,z=150,distance=0..1.3,tag=!e_i_16,tag=!SEAPF] at @s run summon minecraft:lightning_bolt 90118 115 174
+execute as @a[tag=SEAPT,x=90110,y=128,z=150,distance=0..1.3,tag=!e_i_16,tag=!SEAPF] at @s run summon minecraft:lightning_bolt 90118 115 174
+execute as @a[tag=SEAPT,x=90110,y=128,z=150,distance=0..1.3,tag=!e_i_16,tag=!SEAPF] at @s run summon minecraft:lightning_bolt 90118 115 174
+execute as @a[tag=SEAPT,x=90110,y=128,z=150,distance=0..1.3,tag=!e_i_16,tag=!SEAPF] at @s run summon minecraft:lightning_bolt 90118 115 174
+execute as @a[tag=SEAPT,x=90110,y=128,z=150,distance=0..1.3,tag=!e_i_16,tag=!SEAPF] at @s run playsound minecraft:ambient.soul_sand_valley.additions master @a 90118 115 194 9 0.7
+execute as @a[tag=SEAPT,x=90110,y=128,z=150,distance=0..1.3,tag=!e_i_16,tag=!SEAPF] at @s run playsound minecraft:ambient.soul_sand_valley.additions master @a 90118 115 194 9 0.7
+execute as @a[tag=SEAPT,x=90110,y=128,z=150,distance=0..1.3,tag=!e_i_16,tag=!SEAPF] at @s run playsound minecraft:ambient.soul_sand_valley.additions master @a 90118 115 194 9 0.7
+execute as @a[tag=SEAPT,x=90110,y=128,z=150,distance=0..1.3,tag=!e_i_16,tag=!SEAPF] at @s run playsound minecraft:ambient.soul_sand_valley.additions master @a 90118 115 194 9 0.7
+execute as @a[tag=SEAPT,x=90110,y=128,z=150,distance=0..1.3,tag=!e_i_16,tag=!SEAPF] at @s positioned 90104 128 150 run function skyblock:sea/m/zombie_cook
+execute as @a[tag=SEAPT,x=90110,y=128,z=150,distance=0..1.3,tag=!e_i_16,tag=!SEAPF] at @s positioned 90104 128 150 run function skyblock:sea/m/drowned_maintenance
+execute as @a[tag=SEAPT,x=90110,y=128,z=150,distance=0..1.3,tag=!e_i_16,tag=!SEAPF] at @s positioned 90104 128 150 if entity @n[tag=sc,scores={sea_player=2..}] run function skyblock:sea/m/drowned_maintenance
+execute as @a[tag=SEAPT,x=90110,y=128,z=150,distance=0..1.3,tag=!e_i_16,tag=!SEAPF] at @s positioned 90122 128 144 run function skyblock:sea/m/silverfish_big
+execute as @a[tag=SEAPT,x=90110,y=128,z=150,distance=0..1.3,tag=!e_i_16,tag=!SEAPF] at @s positioned 90122 128 144 if entity @n[tag=sc,scores={sea_player=3..}] run function skyblock:sea/m/silverfish_big
+execute as @a[tag=SEAPT,x=90110,y=128,z=150,distance=0..1.3,tag=!e_i_16,tag=!SEAPF] at @s positioned 90122 128 144 run function skyblock:sea/m/spider
+execute as @a[tag=SEAPT,x=90110,y=128,z=150,distance=0..1.3,tag=!e_i_16,tag=!SEAPF] at @s positioned 90104 128 150 if entity @n[tag=sc,scores={sea_player=3..}] run function skyblock:sea/m/drowned_maintenance
+execute as @a[tag=SEAPT,x=90110,y=128,z=150,distance=0..1.3,tag=!e_i_16,tag=!SEAPF] at @s run tag @a[tag=SEAPT] add e_i_16
 
 
 
@@ -337,9 +337,9 @@ execute as @n[tag=sc,scores={sea_4temp2=5000..5300}] run scoreboard players add 
 
 execute as @n[tag=sc,scores={sea_4temp2=..805}] run playsound minecraft:entity.minecart.riding ambient @a 90104 133 100 0.7 0.7
 
-execute if entity @a[tag=SEAPT,x=90111,y=128,z=125,distance=0..3] as @n[tag=sc,scores={sea_4temp2=830..839}] run scoreboard players set @s sea_4temp2 840
-execute if entity @a[tag=SEAPT,x=90103,y=128,z=107,distance=0..8] as @n[tag=sc,scores={sea_4temp2=830..852}] run scoreboard players set @s sea_4temp2 860
-execute if entity @a[tag=SEAPT,x=90138,y=129,z=117,distance=0..4] as @n[tag=sc,scores={sea_4temp2=869..872}] run scoreboard players set @s sea_4temp2 900
+execute if entity @a[tag=SEAPT,x=90111,y=128,z=125,distance=0..3,tag=!SEAPF] as @n[tag=sc,scores={sea_4temp2=830..839}] run scoreboard players set @s sea_4temp2 840
+execute if entity @a[tag=SEAPT,x=90103,y=128,z=107,distance=0..8,tag=!SEAPF] as @n[tag=sc,scores={sea_4temp2=830..852}] run scoreboard players set @s sea_4temp2 860
+execute if entity @a[tag=SEAPT,x=90138,y=129,z=117,distance=0..4,tag=!SEAPF] as @n[tag=sc,scores={sea_4temp2=869..872}] run scoreboard players set @s sea_4temp2 900
 execute if entity @a[tag=SEAPT,x=90138,y=129,z=117,distance=0..3] unless entity @a[tag=SEAPT,x=90142,y=129,z=117,distance=8..] as @n[tag=sc,scores={sea_4temp2=955..962}] run scoreboard players set @s sea_4temp2 1000
 execute as @a[tag=SEAPT,x=90138,y=129,z=117,distance=0..3,tag=!e_i_22] if entity @a[tag=SEAPT,x=90142,y=129,z=117,distance=8..] if entity @n[tag=sc,scores={sea_4temp2=955..962}] run tellraw @s {"text": "总感觉似乎……所有人都得到这里来才能安全前进。","color": "gray"}
 execute as @a[tag=SEAPT,x=90138,y=129,z=117,distance=0..3] if entity @a[tag=SEAPT,x=90142,y=129,z=117,distance=8..] if entity @n[tag=sc,scores={sea_4temp2=955..962}] run tag @s add e_i_22
@@ -494,7 +494,7 @@ execute if entity @n[tag=sc,scores={sea_4temp2=1301}] run setblock 90125 130 115
 
 
 
-execute if entity @a[tag=SEAPT,x=90132,y=120,z=91,dx=23,dy=15,dz=5] as @n[tag=sc,scores={sea_4temp2=..1999}] run scoreboard players set @s sea_4temp2 2000
+execute if entity @a[tag=SEAPT,x=90132,y=120,z=91,dx=23,dy=15,dz=5,tag=!SEAPF] as @n[tag=sc,scores={sea_4temp2=..1999}] run scoreboard players set @s sea_4temp2 2000
 execute if entity @n[tag=sc,scores={sea_4temp2=2001}] positioned 90151.66 128.00 96.00 run function skyblock:sea/m/special_rivette
 execute if entity @n[tag=sc,scores={sea_4temp2=2001}] at @a[tag=SEAPT,x=90132,y=120,z=91,dx=23,dy=15,dz=5,limit=1] run tp @a[tag=SEAPT] ~ ~ ~
 execute if entity @n[tag=sc,scores={sea_4temp2=2001..2099}] if entity @n[tag=SEArivette,x=90138,y=128,z=93,distance=0..3.2] run fill 90132 129 94 90131 128 92 air

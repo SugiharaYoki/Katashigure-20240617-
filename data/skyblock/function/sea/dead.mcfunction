@@ -1,4 +1,5 @@
 tag @s remove SEAPT
+tag @s remove SEAPF
 tag @s remove e_i_01
 tag @s remove e_i_02
 tag @s remove e_i_03
