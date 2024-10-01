@@ -337,7 +337,7 @@ execute as @n[tag=SEAch3_spawn_timer8,scores={sea_4temp1=23}] at @n[tag=SEAyueha
 execute as @n[tag=SEAch3_spawn_timer8,scores={sea_4temp1=23}] at @n[tag=SEAyuehan] run scoreboard players set @n[tag=SEAyuehan] sea_4temp1 0
 execute as @n[tag=SEAch3_spawn_timer8,scores={sea_4temp1=23}] at @n[tag=SEAyuehan] run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
 
-execute as @n[tag=SEAyuehan] at @s if block 90131 161 144 air run function skyblock:sea/e/ev005
+execute as @n[tag=SEAyuehan] at @s if block 90131 161 144 air if entity @a[tag=SEAPT,distance=..6] run function skyblock:sea/e/ev005
 
 execute if block 90137 136 144 minecraft:polished_tuff \
 if block 90137 139 141 lever[powered=true] \
