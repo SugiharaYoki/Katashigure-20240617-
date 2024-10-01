@@ -41,6 +41,11 @@
         },
         {
           "type": "minecraft:item",
+          "name": "minecraft:echo_shard",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
           "name": "minecraft:emerald",
           "weight": 20
         }

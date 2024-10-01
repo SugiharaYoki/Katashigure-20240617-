@@ -32,14 +32,19 @@
       ]
     },
     {
-      "rolls": 2,
+      "rolls": 4,
       "entries": [
         {
           "type": "minecraft:item",
           "name": "minecraft:air",
           "weight": 30
         },
-	{
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:raw_iron",
+          "weight": 9
+        },
+	      {
           "type": "minecraft:item",
           "name": "minecraft:emerald",
           "weight": 20
