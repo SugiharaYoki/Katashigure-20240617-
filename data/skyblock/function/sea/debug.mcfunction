@@ -13,4 +13,4 @@ give @s arrow 48
 give @s emerald 192
 give @s nether_star 10
 
-
+tag @s add SEAPF
