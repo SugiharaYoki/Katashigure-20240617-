@@ -19,12 +19,6 @@
     execute if data storage ph {invitation:{table:4}} run data modify storage ph table_manager[{table:4}].available set value 0b
 #players
     #remove illegal players
-    execute if data storage ph {table_manager:[{table:0,available:0b}]} as @a[tag=table0] run function skyblock:ph/runtime/leave
-    execute if data storage ph {table_manager:[{table:1,available:0b}]} as @a[tag=table1] run function skyblock:ph/runtime/leave
-    execute if data storage ph {table_manager:[{table:2,available:0b}]} as @a[tag=table2] run function skyblock:ph/runtime/leave
-    execute if data storage ph {table_manager:[{table:3,available:0b}]} as @a[tag=table3] run function skyblock:ph/runtime/leave
-    execute if data storage ph {table_manager:[{table:4,available:0b}]} as @a[tag=table4] run function skyblock:ph/runtime/leave
-    #remove illegal players
     execute as @a[tag=table0] if score @s 4ASCEND_startCount < table_0 4ASCEND_startCount run function skyblock:ph/runtime/leave
     execute as @a[tag=table1] if score @s 4ASCEND_startCount < table_1 4ASCEND_startCount run function skyblock:ph/runtime/leave
     execute as @a[tag=table2] if score @s 4ASCEND_startCount < table_2 4ASCEND_startCount run function skyblock:ph/runtime/leave
