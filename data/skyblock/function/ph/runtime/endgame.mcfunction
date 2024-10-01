@@ -4,12 +4,12 @@
 
     #clear table
     #enum template [$1=1..5]:
-    #execute if data storage ph {end_init:{table:$1}} as @e[tag=city_table_$1] on passengers run kill @s
-    execute if data storage ph {end_init:{table:0}} as @e[tag=city_table_0] on passengers run kill @s
-    execute if data storage ph {end_init:{table:1}} as @e[tag=city_table_1] on passengers run kill @s
-    execute if data storage ph {end_init:{table:2}} as @e[tag=city_table_2] on passengers run kill @s
-    execute if data storage ph {end_init:{table:3}} as @e[tag=city_table_3] on passengers run kill @s
-    execute if data storage ph {end_init:{table:4}} as @e[tag=city_table_4] on passengers run kill @s
+    #execute if data storage ph {end_init:{table:$1}} as @e[type=block_display,tag=city_table_$1] on passengers run kill @s
+    execute if data storage ph {end_init:{table:0}} as @e[type=block_display,tag=city_table_0] on passengers run kill @s
+    execute if data storage ph {end_init:{table:1}} as @e[type=block_display,tag=city_table_1] on passengers run kill @s
+    execute if data storage ph {end_init:{table:2}} as @e[type=block_display,tag=city_table_2] on passengers run kill @s
+    execute if data storage ph {end_init:{table:3}} as @e[type=block_display,tag=city_table_3] on passengers run kill @s
+    execute if data storage ph {end_init:{table:4}} as @e[type=block_display,tag=city_table_4] on passengers run kill @s
 
     #leave game
     execute as @a[tag=4ASCENDPlayer,tag=current_table] run function skyblock:ph/runtime/leave

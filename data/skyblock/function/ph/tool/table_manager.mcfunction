@@ -17,6 +17,19 @@
     execute if data storage ph {invitation:{table:2}} run data modify storage ph table_manager[{table:2}].available set value 0b
     execute if data storage ph {invitation:{table:3}} run data modify storage ph table_manager[{table:3}].available set value 0b
     execute if data storage ph {invitation:{table:4}} run data modify storage ph table_manager[{table:4}].available set value 0b
+#players
+    #remove illegal players
+    execute if data storage ph {table_manager:[{table:0,available:0b}]} as @a[tag=table0] run function skyblock:ph/runtime/leave
+    execute if data storage ph {table_manager:[{table:1,available:0b}]} as @a[tag=table1] run function skyblock:ph/runtime/leave
+    execute if data storage ph {table_manager:[{table:2,available:0b}]} as @a[tag=table2] run function skyblock:ph/runtime/leave
+    execute if data storage ph {table_manager:[{table:3,available:0b}]} as @a[tag=table3] run function skyblock:ph/runtime/leave
+    execute if data storage ph {table_manager:[{table:4,available:0b}]} as @a[tag=table4] run function skyblock:ph/runtime/leave
+    #remove illegal players
+    execute as @a[tag=table0] if score @s 4ASCEND_startCount < table_0 4ASCEND_startCount run function skyblock:ph/runtime/leave
+    execute as @a[tag=table1] if score @s 4ASCEND_startCount < table_1 4ASCEND_startCount run function skyblock:ph/runtime/leave
+    execute as @a[tag=table2] if score @s 4ASCEND_startCount < table_2 4ASCEND_startCount run function skyblock:ph/runtime/leave
+    execute as @a[tag=table3] if score @s 4ASCEND_startCount < table_3 4ASCEND_startCount run function skyblock:ph/runtime/leave
+    execute as @a[tag=table4] if score @s 4ASCEND_startCount < table_4 4ASCEND_startCount run function skyblock:ph/runtime/leave
 #tables
     #display style negative
     execute if data storage ph {table_manager:[{table:0,available:1b}]} run data merge entity @e[tag=city_table_0,type=block_display,limit=1] {block_state:{Name:"stone_pressure_plate"}}
@@ -62,16 +75,3 @@
     execute store result score temp 4ASCEND_system if entity @e[tag=city_seat_4_B]
     execute if score temp 4ASCEND_system matches 0 at @n[tag=city_table_4] run summon item_display ~1.25 ~0.1 ~ {Tags:["city_seat_4_B","protected"],Rotation:[90f,0f]}
     execute if score temp 4ASCEND_system matches 2.. run kill @e[tag=city_seat_4_B,limit=1]
-#players
-    #remove illegal players
-    execute if data storage ph {table_manager:[{table:0,available:1b}]} as @e[tag=table0] run function skyblock:ph/runtime/leave
-    execute if data storage ph {table_manager:[{table:1,available:1b}]} as @e[tag=table1] run function skyblock:ph/runtime/leave
-    execute if data storage ph {table_manager:[{table:2,available:1b}]} as @e[tag=table2] run function skyblock:ph/runtime/leave
-    execute if data storage ph {table_manager:[{table:3,available:1b}]} as @e[tag=table3] run function skyblock:ph/runtime/leave
-    execute if data storage ph {table_manager:[{table:4,available:1b}]} as @e[tag=table4] run function skyblock:ph/runtime/leave
-    #remove illegal players
-    execute as @a[tag=table0] if score @s 4ASCEND_startCount < table_0 4ASCEND_startCount run function skyblock:ph/runtime/leave
-    execute as @a[tag=table1] if score @s 4ASCEND_startCount < table_1 4ASCEND_startCount run function skyblock:ph/runtime/leave
-    execute as @a[tag=table2] if score @s 4ASCEND_startCount < table_2 4ASCEND_startCount run function skyblock:ph/runtime/leave
-    execute as @a[tag=table3] if score @s 4ASCEND_startCount < table_3 4ASCEND_startCount run function skyblock:ph/runtime/leave
-    execute as @a[tag=table4] if score @s 4ASCEND_startCount < table_4 4ASCEND_startCount run function skyblock:ph/runtime/leave

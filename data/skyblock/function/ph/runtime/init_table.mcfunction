@@ -35,12 +35,12 @@ summon block_display 0. 0. 0. {Tags:["crossline_8","protected","temp_crossline"]
 summon block_display 0. 0. 0. {Tags:["crossline_9","protected","temp_crossline"],block_state:{Name:"obsidian"},transformation:[0.02, 0.0, 0.0, -0.82,  0.0, 0.02, 0.0, 0.05,  0.0, 0.0, 1.8, -0.9,  0.0, 0.0, 0.0, 1.0],Rotation:[-90.0f, 0.0f],Glowing:1b}
 
 #enum template [$1=1..5]:
-#execute if data storage ph {start_init:{table:$1}} as @e[tag=temp_crossline] run ride @s mount @e[tag=city_table_$1,limit=1]
-execute if data storage ph {start_init:{table:0}} as @e[tag=temp_crossline] run ride @s mount @e[tag=city_table_0,limit=1]
-execute if data storage ph {start_init:{table:1}} as @e[tag=temp_crossline] run ride @s mount @e[tag=city_table_1,limit=1]
-execute if data storage ph {start_init:{table:2}} as @e[tag=temp_crossline] run ride @s mount @e[tag=city_table_2,limit=1]
-execute if data storage ph {start_init:{table:3}} as @e[tag=temp_crossline] run ride @s mount @e[tag=city_table_3,limit=1]
-execute if data storage ph {start_init:{table:4}} as @e[tag=temp_crossline] run ride @s mount @e[tag=city_table_4,limit=1]
+#execute if data storage ph {start_init:{table:$1}} as @e[type=block_display,tag=temp_crossline] run ride @s mount @e[type=block_display,tag=city_table_$1,limit=1]
+execute if data storage ph {start_init:{table:0}} as @e[type=block_display,tag=temp_crossline] run ride @s mount @e[type=block_display,tag=city_table_0,limit=1]
+execute if data storage ph {start_init:{table:1}} as @e[type=block_display,tag=temp_crossline] run ride @s mount @e[type=block_display,tag=city_table_1,limit=1]
+execute if data storage ph {start_init:{table:2}} as @e[type=block_display,tag=temp_crossline] run ride @s mount @e[type=block_display,tag=city_table_2,limit=1]
+execute if data storage ph {start_init:{table:3}} as @e[type=block_display,tag=temp_crossline] run ride @s mount @e[type=block_display,tag=city_table_3,limit=1]
+execute if data storage ph {start_init:{table:4}} as @e[type=block_display,tag=temp_crossline] run ride @s mount @e[type=block_display,tag=city_table_4,limit=1]
 
-tag @e[tag=temp_crossline] add crossline
-tag @e[tag=temp_crossline] remove temp_crossline
+tag @e[type=block_display,tag=temp_crossline] add crossline
+tag @e[type=block_display,tag=temp_crossline] remove temp_crossline
