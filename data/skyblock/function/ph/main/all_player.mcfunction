@@ -4,7 +4,7 @@ execute unless score @s 4ASCEND_HP matches 2..5 run scoreboard players set @s 4A
 execute unless score @s 4ASCEND_TIME matches 1..6 run scoreboard players set @s 4ASCEND_TIME 6
 
 #menu interaction
-execute as @s[x=-31,y=55,z=-67,distance=..50] run function skyblock:ph/main/setting_to_menu
+execute as @s[x=-31,y=55,z=-67,distance=..50] run function skyblock:ph/main/switch_to_menu
 execute as @s[scores={PlayHouseTrigger=100}] run function skyblock:ph/invite/expire
 execute as @s[scores={PlayHouseTrigger=101}] run function skyblock:ph/invite/accept
 
