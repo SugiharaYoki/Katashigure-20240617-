@@ -429,6 +429,10 @@ setblock 90126 96 171 chest[facing=south]
 item replace block 90126 96 171 container.12 with emerald 15
 item replace block 90126 96 171 container.14 with emerald 15
 
+setblock 90106 195 148 chest[facing=south]
+item replace block 90106 195 148 container.12 with raw_iron 1
+item replace block 90106 195 148 container.14 with raw_iron 1
+
 
 fill 90127 102 99 90125 102 101 barrier
 
