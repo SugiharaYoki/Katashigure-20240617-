@@ -3,8 +3,8 @@
 execute store result score @s[scores={rng1=2..13}] rng1 run random value 15..16
 execute store result score @s[scores={rng1=1}] rng1 run random value 2..13
 execute store result score @s[scores={rng1=14}] rng1 run random value 2..13
+execute store result score @s[scores={rng1=15..16}] rng2 run random value 1..3
 execute store result score @s[scores={rng1=15..16,rng2=1}] rng1 run random value 1..14
-execute store result score @s[scores={rng1=15..16}] rng2 run random value 1..2
 execute if entity @a[tag=SEAPT,distance=0..14] unless entity @s[scores={rng1=-5..}] run scoreboard players set @s rng1 5
 
 execute unless entity @a[tag=SEAPT,distance=0..14] run effect give @s invisibility infinite 0 true
@@ -25,6 +25,6 @@ execute if entity @a[tag=SEAPT,distance=0..14] if entity @s[scores={rng1=14}] ru
 
 
 
-execute if entity @a[tag=SEAPT,distance=0..14] run item replace block 90205 13 112 container.1 from entity @s armor.head
+item replace block 90205 13 112 container.1 from entity @s armor.head
 execute if entity @a[tag=SEAPT,distance=0..14] if entity @s[scores={rng1=1..2}] run item replace entity @s armor.head with air
 execute if entity @a[tag=SEAPT,distance=0..14] if entity @s[scores={rng1=14}] run item replace entity @s armor.head from block 90205 13 112 container.1
