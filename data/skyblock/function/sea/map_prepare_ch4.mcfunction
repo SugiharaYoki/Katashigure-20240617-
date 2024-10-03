@@ -54,6 +54,8 @@ execute positioned 90206 19 117 run function skyblock:sea/m/spider
 
 execute positioned 90192 19 120 run function skyblock:sea/m/npc_edwina
 
+execute positioned 90173 19 130 run function skyblock:sea/m/shadow
+
 setblock 90210 19 112 air
 setblock 90211 19 112 air
 setblock 90188 19 109 air
