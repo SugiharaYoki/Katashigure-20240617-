@@ -1,6 +1,7 @@
     function skyblock:protector/entity_count_start
 
 execute store result score @s[scores={rng1=1}] rng1 run random value 2..10
+execute unless entity @s[scores={rng1=-5..}] store result score @s rng1 run random value 1..10
 execute store result score @s[scores={rng1=10}] rng1 run random value 1..9
 
 execute unless entity @a[tag=SEAPT,distance=0..14] run effect give @s invisibility infinite 0 true
