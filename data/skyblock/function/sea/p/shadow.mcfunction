@@ -13,7 +13,7 @@ execute unless entity @a[tag=SEAPT,distance=0..10] at @s run tp @s ~ ~ ~ facing 
 execute unless entity @a[tag=SEAPT,distance=0..10] at @s run tp @s ~ ~ ~ 180 0
 execute if entity @a[tag=SEAPT,distance=0..14] if entity @s[scores={rng1=10}] run effect give @s invisibility infinite 0 true
 execute if entity @a[tag=SEAPT,distance=0..14] if entity @s[scores={rng1=10}] run effect give @s slowness infinite 29 true
-execute if entity @a[tag=SEAPT,distance=0..14] if entity @s[scores={rng1=10}] run particle minecraft:soul ~ ~1 ~ 0.2 0.7 0.2 0 10
+execute if entity @a[tag=SEAPT,distance=0..14] if entity @s[scores={rng1=10}] run particle minecraft:soul ~ ~1 ~ 0.2 0.7 0.2 0 7
 execute if entity @a[tag=SEAPT,distance=0..14] if entity @s[scores={rng1=10}] run playsound entity.zombie.infect hostile @a ~ ~ ~ 0.9 0.7
 
 
