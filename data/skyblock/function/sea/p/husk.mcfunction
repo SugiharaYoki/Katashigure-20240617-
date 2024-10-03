@@ -1,5 +1,7 @@
 
-execute store result score @s rng1 run random value 1..30
+execute store result score @s[scores={rng1=1..4}] rng1 run random value 5..30
+execute store result score @s[scores={rng1=29..30}] rng1 run random value 1..28
+
 execute store result score @s rng5 run random value 5..15
 execute as @s[scores={rng1=1..3}] run effect give @s invisibility 1 0 true
 execute as @s[scores={rng1=29..30}] at @s run particle electric_spark ~ ~1 ~ 0 0 0 0.1 5
