@@ -4,10 +4,7 @@ execute as @e[tag=SEAmob,distance=0..2.2,tag=!SEAspectral_immune] at @s run part
 execute as @e[tag=SEAmob,distance=0..2.2,tag=!SEAspectral_immune] at @s run particle minecraft:enchant ~ ~ ~ 0.2 1 0.2 0.7 20
 execute as @e[tag=SEAmob,distance=0..2.2,tag=!SEAspectral_immune] run effect give @s slowness 5 99 false
 execute as @e[tag=SEAmob,distance=0..2.2,tag=!SEAspectral_immune] run effect give @s glowing 5 0 false
-execute as @e[tag=SEAmob,distance=0..2.2,tag=SEAshadow] at @s run playsound entity.warden.attack_impact hostile @a ~ ~ ~ 1 0.7
-execute as @e[tag=SEAmob,distance=0..2.2,tag=SEAshadow] at @s run particle soul ~ ~1 ~ 0.3 1 0.3 0 30
-execute as @e[tag=SEAmob,distance=0..2.2,tag=SEAshadow] at @s run particle end_rod ~ ~1 ~ 0.3 1 0.3 0 15
-execute as @e[tag=SEAmob,distance=0..2.2,tag=SEAshadow] run kill @s
+
 particle end_rod ^0.3 ^ ^ 0 0 0 0.0 1
 particle end_rod ^-0.3 ^ ^ 0 0 0 0.0 1
 particle end_rod ^ ^0.3 ^ 0 0 0 0.0 1
