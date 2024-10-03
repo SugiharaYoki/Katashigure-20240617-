@@ -98,6 +98,10 @@ fill 90187 36 123 90187 34 124 iron_bars
 setblock 90180 35 139 minecraft:magenta_glazed_terracotta[facing=north]
 setblock 90184 37 139 minecraft:magenta_glazed_terracotta[facing=north]
 fill 90187 36 136 90187 34 137 iron_bars
+fill 90191 36 134 90190 34 134 iron_bars
 
+fill 90195 36 131 90195 34 129 iron_bars
+
+setblock 90199 35 130 lever[facing=north,face=floor,powered=true]
 
     function skyblock:protector/entity_count_end {function:"skyblock:sea/map_prepare_ch4.mcfunction"}
