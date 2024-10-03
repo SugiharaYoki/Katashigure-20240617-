@@ -23,6 +23,6 @@ execute if entity @a[tag=SEAPT,distance=0..14] if entity @s[scores={rng1=14}] ru
 
 
 
-execute if entity @a[tag=SEAPT,distance=0..14] if entity @s[scores={rng1=1..2}] run item replace block 90205 13 112 container.1 from entity @s armor.head
+execute if entity @a[tag=SEAPT,distance=0..14] run item replace block 90205 13 112 container.1 from entity @s armor.head
 execute if entity @a[tag=SEAPT,distance=0..14] if entity @s[scores={rng1=1..2}] run item replace entity @s armor.head with air
 execute if entity @a[tag=SEAPT,distance=0..14] if entity @s[scores={rng1=14}] run item replace entity @s armor.head from block 90205 13 112 container.1
