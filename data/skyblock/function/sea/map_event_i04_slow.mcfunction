@@ -82,8 +82,13 @@ execute as @n[tag=SEAch4_spawn_timer1,scores={sea_4temp1=3}] run setblock 90213 
 execute as @n[tag=SEAch4_spawn_timer1,scores={sea_4temp1=3..4}] run playsound block.beacon.activate block @a 90192 22 121 2 1.5
 
 
-
-
+execute positioned 90185 19 130 if entity @a[tag=SEAPT,distance=..4.7] unless entity @n[tag=SEAch3_spawn,distance=0..3] positioned 90160 13 136 run function skyblock:sea/m/zombie_security2
+execute positioned 90185 19 130 if entity @a[tag=SEAPT,distance=..4.7] unless entity @n[tag=SEAch3_spawn,distance=0..3] positioned 90160 13 124 run function skyblock:sea/m/zombie_security2
+execute positioned 90185 19 130 if entity @a[tag=SEAPT,distance=..4.7] unless entity @n[tag=SEAch3_spawn,distance=0..3] positioned 90169 19 126 run function skyblock:sea/m/drone
+execute positioned 90185 19 130 if entity @a[tag=SEAPT,distance=..4.7] unless entity @n[tag=SEAch3_spawn,distance=0..3] positioned 90180 19 122 run function skyblock:sea/m/drowned_maintenance
+execute positioned 90185 19 130 if entity @a[tag=SEAPT,distance=..4.7] unless entity @n[tag=SEAch3_spawn,distance=0..3] positioned 90178 34 130 run function skyblock:sea/m/skeleton
+execute positioned 90185 19 130 if entity @a[tag=SEAPT,distance=..4.7] unless entity @n[tag=SEAch3_spawn,distance=0..3] positioned 90178 34 130 run function skyblock:sea/m/nightblind
+execute positioned 90185 19 130 if entity @a[tag=SEAPT,distance=..4.7] unless entity @n[tag=SEAch3_spawn,distance=0..3] run summon marker ~ ~ ~ {Tags:["SEAch3_spawn"]}
 
 
 
