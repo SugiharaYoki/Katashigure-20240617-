@@ -92,5 +92,12 @@ setblock 90171 19 139 furnace[facing=north]
 setblock 90170 19 139 chest[facing=north]
 item replace block 90170 19 139 container.13 with coal 1
 
+setblock 90184 36 121 minecraft:magenta_glazed_terracotta[facing=south]
+fill 90187 36 123 90187 34 124 iron_bars
+
+setblock 90180 35 139 minecraft:magenta_glazed_terracotta[facing=north]
+setblock 90184 37 139 minecraft:magenta_glazed_terracotta[facing=north]
+fill 90187 36 136 90187 34 137 iron_bars
+
 
     function skyblock:protector/entity_count_end {function:"skyblock:sea/map_prepare_ch4.mcfunction"}
