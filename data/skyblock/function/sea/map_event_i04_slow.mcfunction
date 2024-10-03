@@ -77,8 +77,8 @@ execute as @n[tag=SEAch4_spawn_timer1,scores={sea_4temp1=1..4}] as @n[tag=SEAedw
 execute as @n[tag=SEAch4_spawn_timer1,scores={sea_4temp1=7..9}] as @n[tag=SEAedwina] at @s run tp @s ~ ~ ~1
 execute as @n[tag=SEAch4_spawn_timer1,scores={sea_4temp1=10}] as @n[tag=SEAedwina] at @s run tp @s ~ ~-500 ~
 execute as @n[tag=SEAch4_spawn_timer1,scores={sea_4temp1=11}] as @n[tag=SEAedwina] at @s run kill @s
-execute as @n[tag=SEAch4_spawn_timer1,scores={sea_4temp1=4}] run fill 90193 19 121 90191 23 121 minecraft:lime_stained_glass
-execute as @n[tag=SEAch4_spawn_timer1,scores={sea_4temp1=5}] run fill 90191 19 123 90193 23 123 minecraft:lime_stained_glass
+execute as @n[tag=SEAch4_spawn_timer1,scores={sea_4temp1=4}] run setblock 90181 20 113 lever[face=floor,facing=south,powered=true]
+execute as @n[tag=SEAch4_spawn_timer1,scores={sea_4temp1=5}] run setblock 90213 20 108 lever[face=floor,facing=west,powered=true]
 execute as @n[tag=SEAch4_spawn_timer1,scores={sea_4temp1=4..5}] run playsound block.beacon.activate block @a 90192 22 121 2 1.5
 
 
