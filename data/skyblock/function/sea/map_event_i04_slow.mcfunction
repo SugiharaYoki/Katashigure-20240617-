@@ -117,8 +117,8 @@ execute if block 90180 35 139 minecraft:magenta_glazed_terracotta[facing=west] i
 execute if block 90180 35 139 minecraft:magenta_glazed_terracotta[facing=west] if block 90184 37 139 minecraft:magenta_glazed_terracotta[facing=north] if block 90187 36 137 iron_bars run fill 90187 36 136 90187 34 137 air
 
 execute unless block 90184 37 139 minecraft:magenta_glazed_terracotta[facing=north] if block 90187 36 137 air run playsound block.iron_door.open block @a 90187.44 36.94 137.101 0.8
-execute unless block 90184 37 139 minecraft:magenta_glazed_terracotta[facing=west] if block 90187 36 137 air run fill 90187 36 136 90187 34 137 iron_bars
-execute unless block 90180 35 139 minecraft:magenta_glazed_terracotta[facing=north] if block 90187 36 137 air run playsound block.iron_door.open block @a 90187.44 36.94 137.101 0.8
+execute unless block 90184 37 139 minecraft:magenta_glazed_terracotta[facing=north] if block 90187 36 137 air run fill 90187 36 136 90187 34 137 iron_bars
+execute unless block 90180 35 139 minecraft:magenta_glazed_terracotta[facing=west] if block 90187 36 137 air run playsound block.iron_door.open block @a 90187.44 36.94 137.101 0.8
 execute unless block 90180 35 139 minecraft:magenta_glazed_terracotta[facing=west] if block 90187 36 137 air run fill 90187 36 136 90187 34 137 iron_bars
 
 execute if block 90180 35 139 minecraft:magenta_glazed_terracotta[facing=west] if block 90184 37 139 minecraft:magenta_glazed_terracotta[facing=west] if block 90190 34 134 iron_bars run playsound block.iron_door.open block @a 90191.01 36.98 134.44 0.8
