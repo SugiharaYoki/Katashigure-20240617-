@@ -69,5 +69,15 @@ setblock 90204 19 117 chest[facing=south]
 item replace block 90204 19 117 container.12 with emerald 5
 item replace block 90204 19 117 container.14 with arrow 3
 
+setblock 90182 20 139 minecraft:potted_fern
+fill 90184 19 133 90183 19 133 minecraft:redstone_block
+fill 90184 19 133 90183 19 133 minecraft:air
+
+summon minecraft:item_frame 90185 20 139 {Invisible:1b,Fixed:0b,Invulnerable:0b,Facing:1b,Item:{id:"minecraft:gunpowder"}}
+summon minecraft:item_frame 90186 20 139 {Invisible:1b,Fixed:0b,Invulnerable:0b,Facing:1b,Item:{id:"minecraft:pumpkin_pie"}}
+setblock 90170 21 134 minecraft:waxed_copper_bulb[lit=true]
+setblock 90170 21 126 minecraft:waxed_copper_bulb[lit=true]
+
+
 
     function skyblock:protector/entity_count_end {function:"skyblock:sea/map_prepare_ch4.mcfunction"}
