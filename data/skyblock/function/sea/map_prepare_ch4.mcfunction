@@ -106,6 +106,8 @@ fill 90191 36 134 90190 34 134 iron_bars
 
 fill 90195 36 131 90195 34 129 iron_bars
 
+fill 90190 37 122 90191 34 122 waxed_copper_grate
+
 setblock 90199 35 130 lever[facing=north,face=floor,powered=true]
 
     function skyblock:protector/entity_count_end {function:"skyblock:sea/map_prepare_ch4.mcfunction"}

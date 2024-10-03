@@ -4,6 +4,7 @@ execute unless score sea_ch4_switch_entrance sea_4temp2 matches -999.. run score
 execute unless score sea_ch4_switch_entrance2 sea_4temp2 matches -999.. run scoreboard players set sea_ch4_switch_entrance2 sea_4temp2 -9
 execute unless score sea_ch4_switch_crossroad sea_4temp2 matches -999.. run scoreboard players set sea_ch4_switch_crossroad sea_4temp2 -9
 execute unless score sea_ch4_switch_crossroad2 sea_4temp2 matches -999.. run scoreboard players set sea_ch4_switch_crossroad2 sea_4temp2 -9
+execute unless score sea_ch4_switch_secondfloor sea_4temp2 matches -999.. run scoreboard players set sea_ch4_switch_secondfloor sea_4temp2 -9
 
 execute if block 90169 20 79 redstone_lamp[lit=true] if score sea_ch4_switch_entrance sea_4temp2 matches 21.. run scoreboard players set sea_ch4_switch_entrance sea_4temp2 20
 execute if block 90169 20 79 redstone_lamp[lit=false] if score sea_ch4_switch_entrance sea_4temp2 matches ..19 run scoreboard players set sea_ch4_switch_entrance sea_4temp2 20
@@ -88,6 +89,11 @@ execute positioned 90185 19 130 if entity @a[tag=SEAPT,distance=..4.7] unless en
 execute positioned 90185 19 130 if entity @a[tag=SEAPT,distance=..4.7] unless entity @n[tag=SEAch3_spawn,distance=0..3] positioned 90180 19 122 run function skyblock:sea/m/drowned_maintenance
 execute positioned 90185 19 130 if entity @a[tag=SEAPT,distance=..4.7] unless entity @n[tag=SEAch3_spawn,distance=0..3] positioned 90178 34 130 run function skyblock:sea/m/skeleton
 execute positioned 90185 19 130 if entity @a[tag=SEAPT,distance=..4.7] unless entity @n[tag=SEAch3_spawn,distance=0..3] positioned 90178 34 130 run function skyblock:sea/m/nightblind
+execute positioned 90185 19 130 if entity @a[tag=SEAPT,distance=..4.7] unless entity @n[tag=SEAch3_spawn,distance=0..3] positioned 90190 34 121 run function skyblock:sea/m/zombie_bomb
+execute positioned 90185 19 130 if entity @a[tag=SEAPT,distance=..4.7] unless entity @n[tag=SEAch3_spawn,distance=0..3] positioned 90190 34 121 run function skyblock:sea/m/drowned_small
+execute positioned 90185 19 130 if entity @a[tag=SEAPT,distance=..4.7] unless entity @n[tag=SEAch3_spawn,distance=0..3] positioned 90190 34 121 run function skyblock:sea/m/drowned_small
+execute positioned 90185 19 130 if entity @a[tag=SEAPT,distance=..4.7] unless entity @n[tag=SEAch3_spawn,distance=0..3] positioned 90190 34 121 run function skyblock:sea/m/drowned_small
+
 execute positioned 90185 19 130 if entity @a[tag=SEAPT,distance=..4.7] unless entity @n[tag=SEAch3_spawn,distance=0..3] run summon marker ~ ~ ~ {Tags:["SEAch3_spawn"]}
 
 
@@ -131,6 +137,22 @@ execute unless block 90180 35 139 minecraft:magenta_glazed_terracotta[facing=wes
 
 
 
+
+execute if block 90212 20 108 redstone_lamp[lit=false] if score sea_ch4_switch_secondfloor sea_4temp2 matches 25.. run scoreboard players set sea_ch4_switch_secondfloor sea_4temp2 24
+execute if block 90212 20 108 redstone_lamp[lit=true] if score sea_ch4_switch_secondfloor sea_4temp2 matches ..24 run scoreboard players set sea_ch4_switch_secondfloor sea_4temp2 24
+execute if block 90212 20 108 redstone_lamp[lit=false] if score sea_ch4_switch_secondfloor sea_4temp2 matches 0.. run scoreboard players remove sea_ch4_switch_secondfloor sea_4temp2 1
+execute if block 90212 20 108 redstone_lamp[lit=true] if score sea_ch4_switch_secondfloor sea_4temp2 matches ..27 run scoreboard players add sea_ch4_switch_secondfloor sea_4temp2 1
+execute if score sea_ch4_switch_secondfloor sea_4temp2 matches 18 run fill 90191 37 139 90190 34 139 minecraft:red_stained_glass
+execute if score sea_ch4_switch_secondfloor sea_4temp2 matches 18 run playsound minecraft:block.note_block.pling block @a 90191.02 36.01 139.00 0.9 0.5
+execute if score sea_ch4_switch_secondfloor sea_4temp2 matches 12 run playsound minecraft:block.note_block.pling block @a 90191.02 36.01 139.00 0.9 0.5
+execute if score sea_ch4_switch_secondfloor sea_4temp2 matches 6 run playsound minecraft:block.note_block.pling block @a 90191.02 36.01 139.00 0.9 0.5
+execute if score sea_ch4_switch_secondfloor sea_4temp2 matches 0 run playsound block.beacon.deactivate block @a 90191.02 36.01 139.00 2 1.3
+execute if score sea_ch4_switch_secondfloor sea_4temp2 matches 0 run fill 90191 37 139 90190 34 139 air
+execute if score sea_ch4_switch_secondfloor sea_4temp2 matches 0 run fill 90190 37 122 90191 34 122 minecraft:air destroy
+execute if score sea_ch4_switch_secondfloor sea_4temp2 matches 27 run playsound block.beacon.activate block @a 90191.02 36.01 139.00 2 1.5
+execute if score sea_ch4_switch_secondfloor sea_4temp2 matches 27 run fill 90191 37 139 90190 34 139 minecraft:lime_stained_glass
+
+90185 34 130
 
 
     function skyblock:protector/entity_count_end {function:"skyblock:sea/map_event_i03_slow.mcfunction"}
