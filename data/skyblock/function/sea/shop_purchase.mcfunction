@@ -530,11 +530,11 @@ execute if entity @s[tag=sea_purchase_pass] run playsound minecraft:block.sculk_
 execute if entity @s[tag=sea_purchase_pass] run playsound minecraft:block.ender_chest.open neutral @s ~ ~ ~ 100 0.7
 execute if entity @s[tag=sea_purchase_pass] run particle sculk_soul ~ ~1 ~ 1 1 1 0.0 30
 execute if entity @s[tag=sea_purchase_pass] run clear @s gold_ingot 1
-execute if score @s sea_crafter matches 20007 if entity @s[tag=sea_purchase_pass] run give @s raiser_armor_trim_smithing_template 5
-execute if score @s sea_crafter matches 20008 if entity @s[tag=sea_purchase_pass] run give @s wild_armor_trim_smithing_template 3
-execute if score @s sea_crafter matches 20009 if entity @s[tag=sea_purchase_pass] run give @s wayfinder_armor_trim_smithing_template 3
-execute if score @s sea_crafter matches 20010 if entity @s[tag=sea_purchase_pass] run give @s sentry_armor_trim_smithing_template 3
-execute if score @s sea_crafter matches 20011 if entity @s[tag=sea_purchase_pass] run give @s dune_armor_trim_smithing_template 3
+execute if score @s sea_crafter matches 20007 if entity @s[tag=sea_purchase_pass] run scoreboard players add @s sea_i_trim_zombie 5
+execute if score @s sea_crafter matches 20008 if entity @s[tag=sea_purchase_pass] run scoreboard players add @s sea_i_trim_spider 3
+execute if score @s sea_crafter matches 20009 if entity @s[tag=sea_purchase_pass] run scoreboard players add @s sea_i_trim_human 3
+execute if score @s sea_crafter matches 20010 if entity @s[tag=sea_purchase_pass] run scoreboard players add @s sea_i_trim_bug 3
+execute if score @s sea_crafter matches 20011 if entity @s[tag=sea_purchase_pass] run scoreboard players add @s sea_i_trim_skeleton 3
 tag @s remove sea_purchase_pass
 
 
