@@ -530,6 +530,7 @@ execute if entity @s[tag=sea_purchase_pass] run playsound minecraft:block.sculk_
 execute if entity @s[tag=sea_purchase_pass] run playsound minecraft:block.ender_chest.open neutral @s ~ ~ ~ 100 0.7
 execute if entity @s[tag=sea_purchase_pass] run particle sculk_soul ~ ~1 ~ 1 1 1 0.0 30
 execute if entity @s[tag=sea_purchase_pass] run clear @s gold_ingot 1
+execute if score @s sea_crafter matches 20007..20011 as @s[tag=sea_purchase_pass] run tellraw @s {"text":"神明谱写的音符已被深渊的魔力侵蚀……","color":"dark_purple"}
 execute if score @s sea_crafter matches 20007 if entity @s[tag=sea_purchase_pass] run scoreboard players add @a[tag=SEAPT] sea_i_trim_zombie 5
 execute if score @s sea_crafter matches 20008 if entity @s[tag=sea_purchase_pass] run scoreboard players add @a[tag=SEAPT] sea_i_trim_spider 3
 execute if score @s sea_crafter matches 20009 if entity @s[tag=sea_purchase_pass] run scoreboard players add @a[tag=SEAPT] sea_i_trim_human 3
