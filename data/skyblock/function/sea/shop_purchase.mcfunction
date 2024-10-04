@@ -535,6 +535,7 @@ execute if score @s sea_crafter matches 20008 if entity @s[tag=sea_purchase_pass
 execute if score @s sea_crafter matches 20009 if entity @s[tag=sea_purchase_pass] run give @s wayfinder_armor_trim_smithing_template 3
 execute if score @s sea_crafter matches 20010 if entity @s[tag=sea_purchase_pass] run give @s sentry_armor_trim_smithing_template 3
 execute if score @s sea_crafter matches 20011 if entity @s[tag=sea_purchase_pass] run give @s dune_armor_trim_smithing_template 3
+tag @s remove sea_purchase_pass
 
 
 execute if score @s sea_crafter matches 30001..39999 run playsound minecraft:ui.button.click master @s ~ ~ ~ 0.3 1.4 0.4
