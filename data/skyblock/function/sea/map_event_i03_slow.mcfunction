@@ -111,6 +111,15 @@ execute as @n[tag=SEAch3_spawn_timer2,scores={sea_4temp1=26}] positioned 90099 1
 execute as @n[tag=SEAch3_spawn_timer2,scores={sea_4temp1=26}] positioned 90099 137 131 run function skyblock:sea/m/silverfish_big
 
 
+execute positioned 90149 137 138 if entity @a[tag=SEAPT,distance=..2.5,tag=!SEAPF] unless entity @n[tag=SEAch3_spawn_timer,distance=0..1] run summon marker ~ ~ ~ {Tags:["SEAch3_spawn_timer","SEAch3_spawn_timer20241004204001"]}
+execute as @n[tag=SEAch3_spawn_timer20241004204001,scores={sea_4temp1=11..20}] positioned 90149 137 134 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
+execute as @n[tag=SEAch3_spawn_timer20241004204001,scores={sea_4temp1=21}] positioned 90149 137 134 run function skyblock:sea/m/husk
+execute as @n[tag=SEAch3_spawn_timer20241004204001,scores={sea_4temp1=16..25}] positioned 90151 137 139 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
+execute as @n[tag=SEAch3_spawn_timer20241004204001,scores={sea_4temp1=26}] positioned 90151 137 139 run function skyblock:sea/m/husk
+execute as @n[tag=SEAch3_spawn_timer20241004204001,scores={sea_4temp1=26..35}] positioned 90144 137 136 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
+execute as @n[tag=SEAch3_spawn_timer20241004204001,scores={sea_4temp1=36}] positioned 90144 137 136 run function skyblock:sea/m/husk
+
+
 execute positioned 90085 137 140 if entity @a[tag=SEAPT,distance=..2.5,tag=!SEAPF] unless entity @n[tag=SEAch3_spawn_timer3,distance=0..3] run summon marker ~ ~ ~ {Tags:["SEAch3_spawn_timer","SEAch3_spawn_timer3"]}
 execute as @n[tag=SEAch3_spawn_timer3,scores={sea_4temp1=1..10}] positioned 90078 138 141 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
 execute as @n[tag=SEAch3_spawn_timer3,scores={sea_4temp1=11}] positioned 90078 138 141 run function skyblock:sea/m/zombie_security2
@@ -349,8 +358,19 @@ if block 90137 138 144 lever[powered=true] \
 if block 90137 137 141 lever[powered=true] \
 if block 90137 137 142 lever[powered=false] \
 if block 90137 137 143 lever[powered=true] \
-run setblock 90137 136 144 air destroy
+run fill 90134 134 135 90135 134 135 minecraft:stone_pressure_plate
 
+execute if block 90137 136 144 minecraft:polished_tuff \
+if block 90137 139 141 lever[powered=true] \
+if block 90137 139 142 lever[powered=false] \
+if block 90137 139 143 lever[powered=true] \
+if block 90137 138 140 lever[powered=true] \
+if block 90137 138 142 lever[powered=false] \
+if block 90137 138 144 lever[powered=true] \
+if block 90137 137 141 lever[powered=true] \
+if block 90137 137 142 lever[powered=false] \
+if block 90137 137 143 lever[powered=true] \
+run setblock 90137 136 144 air destroy
 
 execute if block 90116 144 143 lever[powered=false] if block 90117 143 134 minecraft:iron_trapdoor[open=false] run playsound block.iron_trapdoor.open block @a 90118 143 134 0.8 0.9
 execute if block 90116 144 143 lever[powered=false] run fill 90117 143 134 90119 143 134 minecraft:iron_trapdoor[facing=north,open=true]

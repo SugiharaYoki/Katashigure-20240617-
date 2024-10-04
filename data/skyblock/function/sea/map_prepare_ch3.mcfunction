@@ -42,6 +42,9 @@ setblock 90154 137 135 air
 setblock 90151 128 122 air
 setblock 90081 110 132 air
 setblock 90126 149 144 air
+setblock 90152 137 139 air
+setblock 90152 137 138 air
+setblock 90149 137 139 air
 setblock 90084 143 123 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 1, id:"minecraft:beef"}}
 setblock 90083 143 123 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:flint"}}
 setblock 90121 137 105 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:flint"}}
@@ -63,6 +66,9 @@ setblock 90154 137 135 decorated_pot{sherds:["friend_pottery_sherd","friend_pott
 setblock 90151 128 122 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:flint"}}
 setblock 90081 110 132 decorated_pot{sherds:["friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd"],item:{count: 8, id:"minecraft:emerald"}}
 setblock 90126 149 144 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 2, id:"minecraft:beef"}}
+setblock 90152 137 139 decorated_pot{sherds:["friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd"],item:{count: 3, id:"minecraft:emerald"}}
+setblock 90152 137 138 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:gold_ingot"}}
+setblock 90149 137 139 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:gunpowder"}}
 
 #炸药桶
 setblock 90084 137 126 air
@@ -210,6 +216,10 @@ item replace block 90122 138 148 container.11 with beef 1
 item replace block 90122 138 148 container.13 with beef 1
 item replace block 90122 138 148 container.15 with beef 1
 
+fill 90134 134 135 90135 134 135 air
+
+setblock 90152 138 135 air
+setblock 90152 138 135 lever[facing=west]
 
 summon minecraft:item_frame 90124 138 151 {Invisible:1b,Fixed:0b,Invulnerable:0b,Facing:1b,Item:{id:"minecraft:pumpkin_pie"}}
 summon minecraft:item_frame 90121 150 148 {Invisible:1b,Fixed:0b,Invulnerable:0b,Facing:1b,Item:{id:"minecraft:pumpkin_pie"}}
