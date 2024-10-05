@@ -44,5 +44,5 @@ execute if data storage ph {start_init:{table:2}} as @e[tag=temp_crossline] run 
 execute if data storage ph {start_init:{table:3}} as @e[tag=temp_crossline] run ride @s mount @e[type=block_display,tag=city_table_3,limit=1]
 execute if data storage ph {start_init:{table:4}} as @e[tag=temp_crossline] run ride @s mount @e[type=block_display,tag=city_table_4,limit=1]
 
-tag @e[type=block_display,tag=temp_crossline] add crossline
-tag @e[type=block_display,tag=temp_crossline] remove temp_crossline
+tag @e[tag=temp_crossline] add crossline
+tag @e[tag=temp_crossline] remove temp_crossline
