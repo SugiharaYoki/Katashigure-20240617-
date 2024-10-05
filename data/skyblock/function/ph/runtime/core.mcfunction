@@ -33,6 +33,8 @@ execute if data storage ph {runtime:{table:4}} run data modify storage ph runtim
     #visualize
     effect give @a[tag=current_table,tag=current_turn] glowing 1 1 true
     effect clear @a[tag=current_table,tag=!current_turn] glowing
+    effect give @a[tag=current_table,tag=!current_turn] invisibility 1 1 true
+    effect clear @a[tag=current_table,tag=current_turn] invisibility
     function skyblock:ph/runtime/check_slot
     scoreboard players set slot_available 4ASCEND_system 0
     execute if score slot_type 4ASCEND_system matches 0 run scoreboard players set slot_available 4ASCEND_system 1
@@ -40,7 +42,7 @@ execute if data storage ph {runtime:{table:4}} run data modify storage ph runtim
     execute if data storage ph {runtime:{turn:1}} as @e[type=block_display,tag=current_table,limit=1] on passengers as @s[tag=target,type=block_display] run data merge entity @s {block_state:{Name:"glass"},Glowing:1b,glow_color_override:9240576}
     function skyblock:ph/runtime/move_target
         
-    #event_callback
+    #event callback
     function skyblock:ph/runtime/interaction_callback
     execute as @a[tag=DEBUG_next] run function skyblock:ph/runtime/next
 
