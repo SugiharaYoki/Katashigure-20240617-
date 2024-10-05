@@ -24,6 +24,7 @@ execute if data storage ph {runtime:{table:4}} run data modify storage ph runtim
     execute if data storage ph {runtime:{turn:1}} run effect clear @a[tag=current_table,tag=4ASCENDHost] glowing
 
     #next
+    function skyblock:ph/runtime/interaction_callback
     execute as @a[tag=DEBUG_next] run function skyblock:ph/runtime/next
 
     #endgame check
