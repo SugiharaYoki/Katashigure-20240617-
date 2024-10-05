@@ -84,5 +84,7 @@ execute if score active_slot 4ASCEND_system matches 86 store result score check_
 execute if score active_slot 4ASCEND_system matches 87 store result score check_slot 4ASCEND_system run data get storage ph runtime.board[7][8]
 execute if score active_slot 4ASCEND_system matches 88 store result score check_slot 4ASCEND_system run data get storage ph runtime.board[8][8]
 
+scoreboard players operation slot_type 4ASCEND_system = check_slot 4ASCEND_system
 scoreboard players operation slot_type 4ASCEND_system %= 10 constant
+scoreboard players operation magic_power 4ASCEND_system = check_slot 4ASCEND_system
 scoreboard players operation magic_power 4ASCEND_system /= 10 constant
