@@ -1222,3 +1222,5 @@ execute if score i6_dot 4ASCEND_system matches 990000..1010000 run return 85
 execute if score i7_dot 4ASCEND_system matches 990000..1010000 run return 86
 execute if score i8_dot 4ASCEND_system matches 990000..1010000 run return 87
 execute if score i9_dot 4ASCEND_system matches 990000..1010000 run return 88
+
+return -1
