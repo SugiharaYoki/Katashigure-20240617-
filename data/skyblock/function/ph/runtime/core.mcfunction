@@ -36,8 +36,8 @@ execute if data storage ph {runtime:{table:4}} run data modify storage ph runtim
     function skyblock:ph/runtime/check_slot
     scoreboard players set slot_available 4ASCEND_system 0
     execute if score slot_type 4ASCEND_system matches 0 run scoreboard players set slot_available 4ASCEND_system 1
-    execute if data storage ph {runtime:{turn:0}} as @e[type=block_display,tag=current_table,limit=1] on passengers as @s[tag=target,type=block_display] run data merge entity @s {block_state:{Name:"light_blue_wool"}}
-    execute if data storage ph {runtime:{turn:1}} as @e[type=block_display,tag=current_table,limit=1] on passengers as @s[tag=target,type=block_display] run data merge entity @s {block_state:{Name:"red_wool"}}
+    execute if data storage ph {runtime:{turn:0}} as @e[type=block_display,tag=current_table,limit=1] on passengers as @s[tag=target,type=block_display] run data merge entity @s {block_state:{Name:"barrier"},Glowing:1b,glow_color_override:63487}
+    execute if data storage ph {runtime:{turn:1}} as @e[type=block_display,tag=current_table,limit=1] on passengers as @s[tag=target,type=block_display] run data merge entity @s {block_state:{Name:"barrier"},Glowing:1b,glow_color_override:9240576}
     function skyblock:ph/runtime/move_target
         
     #event_callback
