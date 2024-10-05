@@ -10,4 +10,4 @@ execute if entity @a[tag=current_turn,tag=4ASCENDHost] run function skyblock:ph/
 execute if entity @a[tag=current_turn,tag=4ASCENDGuest] run function skyblock:ph/runtime/new_guest
 tellraw @a[tag=current_table] [{"text":"Slot:"},{"score":{"name":"active_slot","objective":"4ASCEND_system"}},{"text":",data:"},{"score":{"name":"slot_data","objective":"4ASCEND_system"}},{"text":" 下一个玩家"}]
 function skyblock:ph/runtime/update
-schedule function skyblock:ph/runtime/next 0.5s
+function skyblock:ph/runtime/next
