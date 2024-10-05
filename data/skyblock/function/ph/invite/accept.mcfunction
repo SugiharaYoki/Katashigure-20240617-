@@ -13,7 +13,7 @@ data modify storage ph start_init.player2.UUID set from entity @s UUID
 data modify storage ph start_init.table set from storage ph invitation.table
 tag @s add 4ASCENDPlayer0
 tag @a[tag=4ASCENDInvite] add 4ASCENDPlayer0
-#enum template [$1=1..5]:
+#enum template [$1=0..4]:
 #execute if data storage ph {start_init:{table:$1}} run tag @a[tag=4ASCENDPlayer0] add table$1
 execute if data storage ph {start_init:{table:0}} run tag @a[tag=4ASCENDPlayer0] add table0
 execute if data storage ph {start_init:{table:1}} run tag @a[tag=4ASCENDPlayer0] add table1

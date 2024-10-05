@@ -3,7 +3,7 @@
     tellraw @a[tag=current_table] [{"text":"4ASCEND ended, table: "},{"nbt":"end_init.table","storage":"ph"}]
 
     #clear table
-    #enum template [$1=1..5]:
+    #enum template [$1=0..4]:
     #execute if data storage ph {end_init:{table:$1}} as @e[type=block_display,tag=city_table_$1] on passengers run kill @s
     execute if data storage ph {end_init:{table:0}} as @e[type=block_display,tag=city_table_0] on passengers run kill @s
     execute if data storage ph {end_init:{table:1}} as @e[type=block_display,tag=city_table_1] on passengers run kill @s
@@ -18,7 +18,7 @@
     #release data
     data remove storage ph runtime
     
-    #enum template [$1=1..5]:
+    #enum template [$1=0..4]:
     #execute if data storage ph {end_init:{table:$1}} run data modify storage ph table_manager[{table:$1}] set value {table:$1,available:1b}
     execute if data storage ph {end_init:{table:0}} run data modify storage ph table_manager[{table:0}] set value {table:0,available:1b}
     execute if data storage ph {end_init:{table:1}} run data modify storage ph table_manager[{table:1}] set value {table:1,available:1b}

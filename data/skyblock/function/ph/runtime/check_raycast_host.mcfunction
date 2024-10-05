@@ -1,3 +1,20 @@
+#此函数穷举了81个位置向量的点乘，并判断81个位置的角度
+#其中每个位置的视线向量存储在ph_cache all_vector.host/guest中
+
+
+#enum template [$1=a..i,$2=1..9]:
+#execute store result score $1$2_vector_x 4ASCEND_system run data get storage minecraft:ph_cache all_vector.host.$1$2.x
+#execute store result score $1$2_vector_y 4ASCEND_system run data get storage minecraft:ph_cache all_vector.host.$1$2.y
+#execute store result score $1$2_vector_z 4ASCEND_system run data get storage minecraft:ph_cache all_vector.host.$1$2.z
+#scoreboard players operation dot_x 4ASCEND_system = $1$2_vector_x 4ASCEND_system
+#scoreboard players operation dot_x 4ASCEND_system *= eye_vector_x 4ASCEND_system
+#scoreboard players operation dot_y 4ASCEND_system = $1$2_vector_y 4ASCEND_system
+#scoreboard players operation dot_y 4ASCEND_system *= eye_vector_y 4ASCEND_system
+#scoreboard players operation dot_z 4ASCEND_system = $1$2_vector_z 4ASCEND_system
+#scoreboard players operation dot_z 4ASCEND_system *= eye_vector_z 4ASCEND_system
+#scoreboard players operation $1$2_dot 4ASCEND_system = dot_x 4ASCEND_system
+#scoreboard players operation $1$2_dot 4ASCEND_system += dot_y 4ASCEND_system
+#scoreboard players operation $1$2_dot 4ASCEND_system += dot_z 4ASCEND_system
 #a1
 execute store result score a1_vector_x 4ASCEND_system run data get storage minecraft:ph_cache all_vector.host.a1.x
 execute store result score a1_vector_y 4ASCEND_system run data get storage minecraft:ph_cache all_vector.host.a1.y
@@ -1133,6 +1150,7 @@ scoreboard players operation i9_dot 4ASCEND_system += dot_y 4ASCEND_system
 scoreboard players operation i9_dot 4ASCEND_system += dot_z 4ASCEND_system
 
 #min
+#这里每个位置因为视角问题，检查范围有所不同不是简单枚举，而且host和guest中有所区别
 execute if score a1_dot 4ASCEND_system matches 998850..1001050 run return 0
 execute if score a2_dot 4ASCEND_system matches 998850..1001050 run return 1
 execute if score a3_dot 4ASCEND_system matches 998900..1001100 run return 2
@@ -1142,7 +1160,6 @@ execute if score a6_dot 4ASCEND_system matches 998300..1001700 run return 5
 execute if score a7_dot 4ASCEND_system matches 998100..1001900 run return 6
 execute if score a8_dot 4ASCEND_system matches 997900..1002100 run return 7
 execute if score a9_dot 4ASCEND_system matches 997700..1002300 run return 8
-
 execute if score b1_dot 4ASCEND_system matches 998850..1001050 run return 10
 execute if score b2_dot 4ASCEND_system matches 998850..1001050 run return 11
 execute if score b3_dot 4ASCEND_system matches 998900..1001100 run return 12
@@ -1152,7 +1169,6 @@ execute if score b6_dot 4ASCEND_system matches 998300..1001700 run return 15
 execute if score b7_dot 4ASCEND_system matches 998100..1001900 run return 16
 execute if score b8_dot 4ASCEND_system matches 997900..1002100 run return 17
 execute if score b9_dot 4ASCEND_system matches 997700..1002300 run return 18
-
 execute if score c1_dot 4ASCEND_system matches 998850..1001050 run return 20
 execute if score c2_dot 4ASCEND_system matches 998850..1001050 run return 21
 execute if score c3_dot 4ASCEND_system matches 998900..1001100 run return 22
@@ -1162,7 +1178,6 @@ execute if score c6_dot 4ASCEND_system matches 998300..1001700 run return 25
 execute if score c7_dot 4ASCEND_system matches 998100..1001900 run return 26
 execute if score c8_dot 4ASCEND_system matches 997900..1002100 run return 27
 execute if score c9_dot 4ASCEND_system matches 997700..1002300 run return 28
-
 execute if score d1_dot 4ASCEND_system matches 998850..1001050 run return 30
 execute if score d2_dot 4ASCEND_system matches 998850..1001050 run return 31
 execute if score d3_dot 4ASCEND_system matches 998900..1001100 run return 32
@@ -1172,7 +1187,6 @@ execute if score d6_dot 4ASCEND_system matches 998300..1001700 run return 35
 execute if score d7_dot 4ASCEND_system matches 998100..1001900 run return 36
 execute if score d8_dot 4ASCEND_system matches 997900..1002100 run return 37
 execute if score d9_dot 4ASCEND_system matches 997700..1002300 run return 38
-
 execute if score e1_dot 4ASCEND_system matches 998850..1001050 run return 40
 execute if score e2_dot 4ASCEND_system matches 998850..1001050 run return 41
 execute if score e3_dot 4ASCEND_system matches 998900..1001100 run return 42
@@ -1182,7 +1196,6 @@ execute if score e6_dot 4ASCEND_system matches 998300..1001700 run return 45
 execute if score e7_dot 4ASCEND_system matches 998100..1001900 run return 46
 execute if score e8_dot 4ASCEND_system matches 997900..1002100 run return 47
 execute if score e9_dot 4ASCEND_system matches 997700..1002300 run return 48
-
 execute if score f1_dot 4ASCEND_system matches 998850..1001050 run return 50
 execute if score f2_dot 4ASCEND_system matches 998850..1001050 run return 51
 execute if score f3_dot 4ASCEND_system matches 998900..1001100 run return 52
@@ -1192,7 +1205,6 @@ execute if score f6_dot 4ASCEND_system matches 998300..1001700 run return 55
 execute if score f7_dot 4ASCEND_system matches 998100..1001900 run return 56
 execute if score f8_dot 4ASCEND_system matches 997900..1002100 run return 57
 execute if score f9_dot 4ASCEND_system matches 997700..1002300 run return 58
-
 execute if score g1_dot 4ASCEND_system matches 998850..1001050 run return 60
 execute if score g2_dot 4ASCEND_system matches 998850..1001050 run return 61
 execute if score g3_dot 4ASCEND_system matches 998900..1001100 run return 62
@@ -1202,7 +1214,6 @@ execute if score g6_dot 4ASCEND_system matches 998300..1001700 run return 65
 execute if score g7_dot 4ASCEND_system matches 998100..1001900 run return 66
 execute if score g8_dot 4ASCEND_system matches 997900..1002100 run return 67
 execute if score g9_dot 4ASCEND_system matches 997700..1002300 run return 68
-
 execute if score h1_dot 4ASCEND_system matches 998850..1001050 run return 70
 execute if score h2_dot 4ASCEND_system matches 998850..1001050 run return 71
 execute if score h3_dot 4ASCEND_system matches 998900..1001100 run return 72
@@ -1212,7 +1223,6 @@ execute if score h6_dot 4ASCEND_system matches 998300..1001700 run return 75
 execute if score h7_dot 4ASCEND_system matches 998100..1001900 run return 76
 execute if score h8_dot 4ASCEND_system matches 997900..1002100 run return 77
 execute if score h9_dot 4ASCEND_system matches 997700..1002300 run return 78
-
 execute if score i1_dot 4ASCEND_system matches 998850..1001050 run return 80
 execute if score i2_dot 4ASCEND_system matches 998850..1001050 run return 81
 execute if score i3_dot 4ASCEND_system matches 998900..1001100 run return 82

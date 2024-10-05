@@ -1,4 +1,4 @@
-#enum template [$1=1..5]:
+#enum template [$1=0..4]:
 #execute if data storage ph {start_init:{table:$1}} run data modify storage ph table_manager[{table:$1}].board set from storage ph empty_board
 execute if data storage ph {start_init:{table:0}} run data modify storage ph table_manager[{table:0}].board set from storage ph empty_board
 execute if data storage ph {start_init:{table:1}} run data modify storage ph table_manager[{table:1}].board set from storage ph empty_board
@@ -6,7 +6,7 @@ execute if data storage ph {start_init:{table:2}} run data modify storage ph tab
 execute if data storage ph {start_init:{table:3}} run data modify storage ph table_manager[{table:3}].board set from storage ph empty_board
 execute if data storage ph {start_init:{table:4}} run data modify storage ph table_manager[{table:4}].board set from storage ph empty_board
 
-#enum template [$1=1..5]:
+#enum template [$1=0..4]:
 #execute if data storage ph {start_init:{table:$1}} store result storage ph table_manager[{table:$1}].turn int 1.0 run random value 0..1
 execute if data storage ph {start_init:{table:0}} store result storage ph table_manager[{table:0}].turn int 1.0 run random value 0..1
 execute if data storage ph {start_init:{table:1}} store result storage ph table_manager[{table:1}].turn int 1.0 run random value 0..1
@@ -14,6 +14,8 @@ execute if data storage ph {start_init:{table:2}} store result storage ph table_
 execute if data storage ph {start_init:{table:3}} store result storage ph table_manager[{table:3}].turn int 1.0 run random value 0..1
 execute if data storage ph {start_init:{table:4}} store result storage ph table_manager[{table:4}].turn int 1.0 run random value 0..1
 
+#enum no tamplete:
+#enum info : 穷举了9+9=18根棋盘线 或许可以通过将transformation存储在列表中简化
 summon block_display 0. 0. 0. {Tags:["crossline_a","protected","temp_crossline"],block_state:{Name:"obsidian"},transformation:[0.02, 0.0, 0.0, 0.78,  0.0, 0.02, 0.0, 0.05,  0.0, 0.0, 1.8, -0.9,  0.0, 0.0, 0.0, 1.0],Rotation:[0.0f, 0.0f],Glowing:1b}
 summon block_display 0. 0. 0. {Tags:["crossline_b","protected","temp_crossline"],block_state:{Name:"obsidian"},transformation:[0.02, 0.0, 0.0, 0.58,  0.0, 0.02, 0.0, 0.05,  0.0, 0.0, 1.8, -0.9,  0.0, 0.0, 0.0, 1.0],Rotation:[0.0f, 0.0f],Glowing:1b}
 summon block_display 0. 0. 0. {Tags:["crossline_c","protected","temp_crossline"],block_state:{Name:"obsidian"},transformation:[0.02, 0.0, 0.0, 0.38,  0.0, 0.02, 0.0, 0.05,  0.0, 0.0, 1.8, -0.9,  0.0, 0.0, 0.0, 1.0],Rotation:[0.0f, 0.0f],Glowing:1b}
@@ -37,7 +39,7 @@ summon block_display 0. 0. 0. {Tags:["crossline_9","protected","temp_crossline"]
 summon interaction 0. 0. 0. {Tags:["interaction","protected","temp_crossline"],width:2.0f,height:0.1f}
 summon block_display 0. 0. 0. {Tags:["target","protected","temp_crossline"],width:2.0f,height:0.1f,block_state:{Name:"yellow_wool"},Glowing:1b}
 
-#enum template [$1=1..5]:
+#enum template [$1=0..4]:
 #execute if data storage ph {start_init:{table:$1}} as @e[type=block_display,tag=temp_crossline] run ride @s mount @e[type=block_display,tag=city_table_$1,limit=1]
 execute if data storage ph {start_init:{table:0}} as @e[tag=temp_crossline] run ride @s mount @e[type=block_display,tag=city_table_0,limit=1]
 execute if data storage ph {start_init:{table:1}} as @e[tag=temp_crossline] run ride @s mount @e[type=block_display,tag=city_table_1,limit=1]

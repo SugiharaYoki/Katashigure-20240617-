@@ -6,7 +6,7 @@ execute if score hasInvitation 4ASCEND_system matches 1 unless entity @a[tag=4AS
 execute if score hasInvitation 4ASCEND_system matches 0 run function skyblock:ph/invite/clear
 
 #4ASCEND runtime
-#enum template [$1=1..5]:
+#enum template [$1=0..4]:
 #execute unless data storage ph {table_manager:[{table:$1,available:1b}]} run data modify storage ph runtime.table set value 0
 #execute unless data storage ph {table_manager:[{table:$1,available:1b}]} run function skyblock:ph/runtime/core
 execute unless data storage ph {table_manager:[{table:0,available:1b}]} run data modify storage ph runtime.table set value 0

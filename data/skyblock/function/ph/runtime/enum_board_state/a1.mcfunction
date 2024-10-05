@@ -1,1 +1,0 @@
-execute at @e[type=block_display,tag=current_table,limit=1] positioned ~0.8 ~0.1 ~-0.8 run particle minecraft:end_rod ~ ~ ~ 0 0 0 0 1 force @a[tag=current_turn]

@@ -1,4 +1,4 @@
-#enum template [$1=1..5]:
+#enum template [$1=0..4]:
 #execute if data storage ph {table_manager:[{table:$1,available:1b}]} run return $1
 execute if data storage ph {table_manager:[{table:0,available:1b}]} run return 0
 execute if data storage ph {table_manager:[{table:1,available:1b}]} run return 1
