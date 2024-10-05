@@ -176,3 +176,4 @@ execute if score active_slot 4ASCEND_system matches 88 store result storage ph r
 execute as @e[tag=temp_crossline] run ride @s mount @e[type=block_display,tag=current_table,limit=1]
 tag @e[tag=temp_crossline] add crossline
 tag @e[tag=temp_crossline] remove temp_crossline
+playsound minecraft:ui.button.click master @s ~ ~ ~ 0.3 1.4 0.4
