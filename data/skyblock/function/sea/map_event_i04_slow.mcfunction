@@ -140,7 +140,7 @@ execute if block 90188 35 123 minecraft:crimson_button[powered=true] run setbloc
 execute if block 90188 35 123 minecraft:crimson_button[powered=true] run setblock 90188 35 123 minecraft:crimson_button[powered=false,facing=south]
 execute if block 90188 35 137 minecraft:crimson_button[powered=true] run setblock 90184 35 137 minecraft:crimson_button[facing=north,face=floor,powered=true]
 execute if block 90188 35 137 minecraft:crimson_button[powered=true] run setblock 90188 35 137 minecraft:crimson_button[powered=false,facing=north]
-execute if block 90197 35 129 minecraft:crimson_button[powered=true] run setblock 90180 35 137 minecraft:crimson_button[facing=north,face=floor,powered=true]
+execute if block 90197 35 129 minecraft:crimson_button[powered=true] run setblock 90184 35 137 minecraft:crimson_button[facing=north,face=floor,powered=true]
 execute if block 90197 35 129 minecraft:crimson_button[powered=true] run setblock 90197 35 129 minecraft:crimson_button[powered=false,facing=south]
 
 #二楼右
