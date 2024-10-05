@@ -35,6 +35,7 @@ summon block_display 0. 0. 0. {Tags:["crossline_8","protected","temp_crossline"]
 summon block_display 0. 0. 0. {Tags:["crossline_9","protected","temp_crossline"],block_state:{Name:"obsidian"},transformation:[0.02, 0.0, 0.0, -0.82,  0.0, 0.02, 0.0, 0.05,  0.0, 0.0, 1.8, -0.9,  0.0, 0.0, 0.0, 1.0],Rotation:[-90.0f, 0.0f],Glowing:1b}
 summon block_display 0. 0. 0. {Tags:["crossline_9","protected","temp_crossline"],block_state:{Name:"obsidian"},transformation:[0.02, 0.0, 0.0, -0.82,  0.0, 0.02, 0.0, 0.05,  0.0, 0.0, 1.8, -0.9,  0.0, 0.0, 0.0, 1.0],Rotation:[-90.0f, 0.0f],Glowing:1b}
 summon interaction 0. 0. 0. {Tags:["interaction","protected","temp_crossline"],width:2.0f,height:0.1f}
+summon block_display 0. 0. 0. {Tags:["target","protected","temp_crossline"],width:2.0f,height:0.1f,block_state:{Name:"yellow_wool"},Glowing:1b}
 
 #enum template [$1=1..5]:
 #execute if data storage ph {start_init:{table:$1}} as @e[type=block_display,tag=temp_crossline] run ride @s mount @e[type=block_display,tag=city_table_$1,limit=1]
