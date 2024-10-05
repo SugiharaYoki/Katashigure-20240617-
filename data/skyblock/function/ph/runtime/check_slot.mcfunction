@@ -1,4 +1,6 @@
 #此函数检查每个位置的状态，在core中被循环调用
+execute if score active_slot 4ASCEND_system matches -1 store result score check_slot 4ASCEND_system run scoreboard players set slot_type 4ASCEND_system -1
+execute if score active_slot 4ASCEND_system matches -1 store result score check_slot 4ASCEND_system run return 0
 
 #enum template [$1=0..8,$2=0..8]:
 #execute if score active_slot 4ASCEND_system matches $1$2 store result score check_slot 4ASCEND_system run data get storage ph runtime.board[$2][$1]
