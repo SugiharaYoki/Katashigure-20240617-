@@ -1140,8 +1140,8 @@ execute if score a4_dot 4ASCEND_system matches 998300..1001700 run return 3
 execute if score a5_dot 4ASCEND_system matches 998500..1001500 run return 4
 execute if score a6_dot 4ASCEND_system matches 998700..1001300 run return 5
 execute if score a7_dot 4ASCEND_system matches 998900..1001100 run return 6
-execute if score a8_dot 4ASCEND_system matches 999100..1000900 run return 7
-execute if score a9_dot 4ASCEND_system matches 999300..1000700 run return 8
+execute if score a8_dot 4ASCEND_system matches 999000..1001000 run return 7
+execute if score a9_dot 4ASCEND_system matches 999100..1000900 run return 8
 
 execute if score b1_dot 4ASCEND_system matches 999500..1000500 run return 10
 execute if score b2_dot 4ASCEND_system matches 997900..1002100 run return 11
@@ -1150,8 +1150,8 @@ execute if score b4_dot 4ASCEND_system matches 998300..1001700 run return 13
 execute if score b5_dot 4ASCEND_system matches 998500..1001500 run return 14
 execute if score b6_dot 4ASCEND_system matches 998700..1001300 run return 15
 execute if score b7_dot 4ASCEND_system matches 998900..1001100 run return 16
-execute if score b8_dot 4ASCEND_system matches 999100..1000900 run return 17
-execute if score b9_dot 4ASCEND_system matches 999300..1000700 run return 18
+execute if score b8_dot 4ASCEND_system matches 999000..1001000 run return 17
+execute if score b9_dot 4ASCEND_system matches 999100..1000900 run return 18
 
 execute if score c1_dot 4ASCEND_system matches 999500..1000500 run return 20
 execute if score c2_dot 4ASCEND_system matches 997900..1002100 run return 21
@@ -1160,8 +1160,8 @@ execute if score c4_dot 4ASCEND_system matches 998300..1001700 run return 23
 execute if score c5_dot 4ASCEND_system matches 998500..1001500 run return 24
 execute if score c6_dot 4ASCEND_system matches 998700..1001300 run return 25
 execute if score c7_dot 4ASCEND_system matches 998900..1001100 run return 26
-execute if score c8_dot 4ASCEND_system matches 999100..1000900 run return 27
-execute if score c9_dot 4ASCEND_system matches 999300..1000700 run return 28
+execute if score c8_dot 4ASCEND_system matches 999000..1001000 run return 27
+execute if score c9_dot 4ASCEND_system matches 999100..1000900 run return 28
 
 execute if score d1_dot 4ASCEND_system matches 999500..1000500 run return 30
 execute if score d2_dot 4ASCEND_system matches 997900..1002100 run return 31
@@ -1170,8 +1170,8 @@ execute if score d4_dot 4ASCEND_system matches 998300..1001700 run return 33
 execute if score d5_dot 4ASCEND_system matches 998500..1001500 run return 34
 execute if score d6_dot 4ASCEND_system matches 998700..1001300 run return 35
 execute if score d7_dot 4ASCEND_system matches 998900..1001100 run return 36
-execute if score d8_dot 4ASCEND_system matches 999100..1000900 run return 37
-execute if score d9_dot 4ASCEND_system matches 999300..1000700 run return 38
+execute if score d8_dot 4ASCEND_system matches 999000..1001000 run return 37
+execute if score d9_dot 4ASCEND_system matches 999100..1000900 run return 38
 
 execute if score e1_dot 4ASCEND_system matches 999500..1000500 run return 40
 execute if score e2_dot 4ASCEND_system matches 997900..1002100 run return 41
@@ -1180,8 +1180,8 @@ execute if score e4_dot 4ASCEND_system matches 998300..1001700 run return 43
 execute if score e5_dot 4ASCEND_system matches 998500..1001500 run return 44
 execute if score e6_dot 4ASCEND_system matches 998700..1001300 run return 45
 execute if score e7_dot 4ASCEND_system matches 998900..1001100 run return 46
-execute if score e8_dot 4ASCEND_system matches 999100..1000900 run return 47
-execute if score e9_dot 4ASCEND_system matches 999300..1000700 run return 48
+execute if score e8_dot 4ASCEND_system matches 999000..1001000 run return 47
+execute if score e9_dot 4ASCEND_system matches 999100..1000900 run return 48
 
 execute if score f1_dot 4ASCEND_system matches 999500..1000500 run return 50
 execute if score f2_dot 4ASCEND_system matches 997900..1002100 run return 51
@@ -1190,8 +1190,8 @@ execute if score f4_dot 4ASCEND_system matches 998300..1001700 run return 53
 execute if score f5_dot 4ASCEND_system matches 998500..1001500 run return 54
 execute if score f6_dot 4ASCEND_system matches 998700..1001300 run return 55
 execute if score f7_dot 4ASCEND_system matches 998900..1001100 run return 56
-execute if score f8_dot 4ASCEND_system matches 999100..1000900 run return 57
-execute if score f9_dot 4ASCEND_system matches 999300..1000700 run return 58
+execute if score f8_dot 4ASCEND_system matches 999000..1001000 run return 57
+execute if score f9_dot 4ASCEND_system matches 999100..1000900 run return 58
 
 execute if score g1_dot 4ASCEND_system matches 999500..1000500 run return 60
 execute if score g2_dot 4ASCEND_system matches 997900..1002100 run return 61
@@ -1200,8 +1200,8 @@ execute if score g4_dot 4ASCEND_system matches 998300..1001700 run return 63
 execute if score g5_dot 4ASCEND_system matches 998500..1001500 run return 64
 execute if score g6_dot 4ASCEND_system matches 998700..1001300 run return 65
 execute if score g7_dot 4ASCEND_system matches 998900..1001100 run return 66
-execute if score g8_dot 4ASCEND_system matches 999100..1000900 run return 67
-execute if score g9_dot 4ASCEND_system matches 999300..1000700 run return 68
+execute if score g8_dot 4ASCEND_system matches 999000..1001000 run return 67
+execute if score g9_dot 4ASCEND_system matches 999100..1000900 run return 68
 
 execute if score h1_dot 4ASCEND_system matches 999500..1000500 run return 70
 execute if score h2_dot 4ASCEND_system matches 997900..1002100 run return 71
@@ -1210,8 +1210,8 @@ execute if score h4_dot 4ASCEND_system matches 998300..1001700 run return 73
 execute if score h5_dot 4ASCEND_system matches 998500..1001500 run return 74
 execute if score h6_dot 4ASCEND_system matches 998700..1001300 run return 75
 execute if score h7_dot 4ASCEND_system matches 998900..1001100 run return 76
-execute if score h8_dot 4ASCEND_system matches 999100..1000900 run return 77
-execute if score h9_dot 4ASCEND_system matches 999300..1000700 run return 78
+execute if score h8_dot 4ASCEND_system matches 999000..1001000 run return 77
+execute if score h9_dot 4ASCEND_system matches 999100..1000900 run return 78
 
 execute if score i1_dot 4ASCEND_system matches 999500..1000500 run return 80
 execute if score i2_dot 4ASCEND_system matches 997900..1002100 run return 81
@@ -1220,7 +1220,7 @@ execute if score i4_dot 4ASCEND_system matches 998300..1001700 run return 83
 execute if score i5_dot 4ASCEND_system matches 998500..1001500 run return 84
 execute if score i6_dot 4ASCEND_system matches 998700..1001300 run return 85
 execute if score i7_dot 4ASCEND_system matches 998900..1001100 run return 86
-execute if score i8_dot 4ASCEND_system matches 999100..1000900 run return 87
-execute if score i9_dot 4ASCEND_system matches 999300..1000700 run return 88
+execute if score i8_dot 4ASCEND_system matches 999000..1001000 run return 87
+execute if score i9_dot 4ASCEND_system matches 999100..1000900 run return 88
 
 return -1
