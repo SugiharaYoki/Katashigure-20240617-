@@ -26,5 +26,11 @@
     execute if data storage ph {end_init:{table:3}} run data modify storage ph table_manager[{table:3}] set value {table:3,available:1b}
     execute if data storage ph {end_init:{table:4}} run data modify storage ph table_manager[{table:4}] set value {table:4,available:1b}
 
+    execute if data storage ph {end_init:{table:0}} run scoreboard players add table_0 4ASCEND_startCount 1
+    execute if data storage ph {end_init:{table:1}} run scoreboard players add table_1 4ASCEND_startCount 1
+    execute if data storage ph {end_init:{table:2}} run scoreboard players add table_2 4ASCEND_startCount 1
+    execute if data storage ph {end_init:{table:3}} run scoreboard players add table_3 4ASCEND_startCount 1
+    execute if data storage ph {end_init:{table:4}} run scoreboard players add table_4 4ASCEND_startCount 1
+
     
 data remove storage ph end_init
