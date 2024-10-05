@@ -33,6 +33,11 @@ execute if data storage ph {runtime:{table:4}} run data modify storage ph runtim
     scoreboard players operation eye_vector_x 4ASCEND_system = getpos_x skyblock_system
     scoreboard players operation eye_vector_y 4ASCEND_system = getpos_y skyblock_system
     scoreboard players operation eye_vector_z 4ASCEND_system = getpos_z skyblock_system
+    execute store result score active_slot 4ASCEND_system if data storage ph {runtime:{turn:0}} run function skyblock:ph/runtime/check_raycast_host
+    execute store result score active_slot 4ASCEND_system if data storage ph {runtime:{turn:1}} run function skyblock:ph/runtime/check_raycast_guest
+
+    tellraw @a[tag=current_turn] {"score": {"name": "active_slot","objective": "4ASCEND_system"}}
+    
 
     #next
     function skyblock:ph/runtime/interaction_callback
