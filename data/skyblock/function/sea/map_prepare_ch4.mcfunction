@@ -108,6 +108,8 @@ fill 90195 36 131 90195 34 129 iron_bars
 
 fill 90190 37 122 90191 34 122 waxed_copper_grate
 
+fill 90196 37 142 90196 34 143 minecraft:lime_stained_glass
+
 setblock 90199 35 130 lever[facing=north,face=floor,powered=true]
 
     function skyblock:protector/entity_count_end {function:"skyblock:sea/map_prepare_ch4.mcfunction"}
