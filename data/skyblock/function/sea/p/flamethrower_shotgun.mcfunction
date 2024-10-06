@@ -12,6 +12,7 @@ execute as @n[tag=SEAshotgun_shoot] at @s run tp @s ~ ~1.5 ~
 
 execute as @n[tag=SEAshotgun_shoot] at @s run tp @s ^ ^ ^0.1
 execute at @n[tag=SEAshotgun_shoot] as @e[tag=SEAmob,distance=0..0.3] run damage @s 40 explosion
+execute at @n[tag=SEAshotgun_shoot] as @e[tag=SEAmob,distance=0..0.3] run say hi1
 execute at @n[tag=SEAshotgun_shoot] as @e[tag=SEAmob,distance=0..0.3] run data modify entity @s Fire set value 160s
 execute at @n[tag=SEAshotgun_shoot] as @e[tag=SEAmagma1,type=marker,distance=..0.3] at @s run function skyblock:sea/p/magma
 
@@ -19,6 +20,7 @@ execute as @n[tag=SEAshotgun_shoot] at @s run tp @s ^ ^ ^0.2
 execute as @n[tag=SEAshotgun_shoot] at @s run particle smoke ~ ~ ~ 0.2 0.2 0.2 0.03 20
 execute as @n[tag=SEAshotgun_shoot] at @s run particle small_flame ~ ~ ~ 0.15 0.15 0.15 0.0 20
 execute at @n[tag=SEAshotgun_shoot] as @e[tag=SEAmob,distance=0..0.3] run damage @s 30 explosion
+execute at @n[tag=SEAshotgun_shoot] as @e[tag=SEAmob,distance=0..0.3] run say hi2
 execute at @n[tag=SEAshotgun_shoot] as @e[tag=SEAmob,distance=0..0.3] run data modify entity @s Fire set value 140s
 execute at @n[tag=SEAshotgun_shoot] as @e[tag=SEAmagma1,type=marker,distance=..0.3] at @s run function skyblock:sea/p/magma
 
@@ -28,6 +30,7 @@ execute as @n[tag=SEAshotgun_shoot] at @s run tp @s ^ ^ ^0.5
 execute as @n[tag=SEAshotgun_shoot] at @s run particle smoke ~ ~ ~ 0.3 0.3 0.3 0.03 30
 execute as @n[tag=SEAshotgun_shoot] at @s run particle small_flame ~ ~ ~ 0.25 0.25 0.25 0.0 30
 execute at @n[tag=SEAshotgun_shoot] as @e[tag=SEAmob,distance=0..0.7] run damage @s 27 explosion
+execute at @n[tag=SEAshotgun_shoot] as @e[tag=SEAmob,distance=0..0.7] run say hi3
 execute at @n[tag=SEAshotgun_shoot] as @e[tag=SEAmob,distance=0..0.7] run data modify entity @s Fire set value 120s
 execute at @n[tag=SEAshotgun_shoot] as @e[tag=SEAmagma1,type=marker,distance=..0.7] at @s run function skyblock:sea/p/magma
 
