@@ -116,6 +116,11 @@ unless entity @s[nbt={SelectedItem:{components:{"minecraft:charged_projectiles":
 if entity @s[scores={sea_i_spectral=1..}] \
 run tag @s add SEA_spectral_autocharge
 
+execute if entity @s[nbt={SelectedItem:{id:"minecraft:crossbow",components:{"minecraft:charged_projectiles":[{id:"minecraft:arrow"}]}}}] \
+run title @s actionbar [{"text": "目前装填：","color": "gray"},{"text": "普通箭矢","color": "white"}]
+execute if entity @s[nbt={SelectedItem:{id:"minecraft:crossbow",components:{"minecraft:charged_projectiles":[{id:"minecraft:spectral_arrow"}]}}}] \
+run title @s actionbar [{"text": "目前装填：","color": "gray"},{"text": "静滞光棱","color": "gold"}]
+
 execute as @a[tag=SEA_spectral_autocharge] at @s run item replace block 90205 13 112 container.0 from entity @s weapon.mainhand
 execute as @a[tag=SEA_spectral_autocharge] at @s run data modify block 90205 13 112 Items[0] merge value {components:{"minecraft:charged_projectiles":[{id:"minecraft:spectral_arrow"}]}}
 execute as @a[tag=SEA_spectral_autocharge] at @s run item replace entity @s weapon.mainhand from block 90205 13 112 container.0

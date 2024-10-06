@@ -43,3 +43,5 @@ execute as @s[tag=sea_t_parry1,nbt={SelectedItem:{id:"minecraft:shield"}}] run f
 
 execute as @s[tag=sea_t_axeparry1,nbt={SelectedItem:{id:"minecraft:netherite_axe"}},predicate=skyblock:sneaking,scores={sea_axeparry_jump=1..}] run function skyblock:sea/p/axeparry
 execute as @s[scores={sea_axeparry_jump=1..}] run scoreboard players set @s sea_axeparry_jump 0
+
+execute as @s[nbt={Inventory:[{components:{"minecraft:custom_data":{sea_chest_shadowchest:true}},Slot:102b}]},predicate=skyblock:sneaking] run effect give @s invisibility 3 0 false
