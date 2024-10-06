@@ -622,6 +622,22 @@ execute if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,score
 execute if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,scores={sea_boss1_hp=..350},tag=!boss2hplock1] run particle sculk_soul ~ ~1 ~ 0.3 1 0.3 0 5
 execute if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,scores={sea_boss1_hp=..250},tag=!boss2hplock2] run particle sculk_soul ~ ~1 ~ 0.3 1 0.3 0 5
 execute if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,scores={sea_boss1_hp=..100},tag=!boss2hplock3] run particle sculk_soul ~ ~1 ~ 0.3 1 0.3 0 5
+
+
+execute if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,scores={sea_boss1_hp=..350},tag=!boss2hplock1,tag=!boss2hplock1warn] run tellraw @a[tag=SEAPT] {"text":"这家伙怎么变得刀枪不入……试着往太阳落下的方向后退看看！","color":"red"}
+execute if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,scores={sea_boss1_hp=..250},tag=!boss2hplock2,tag=!boss2hplock2warn] run tellraw @a[tag=SEAPT] {"text":"又打不动这家伙了，得赶紧后退！","color":"red"}
+execute if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,scores={sea_boss1_hp=..100},tag=!boss2hplock3,tag=!boss2hplock3warn] run tellraw @a[tag=SEAPT] {"text":"再次后退吧，感觉它应该快不行了！","color":"red"}
+execute if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,scores={sea_boss1_hp=..350},tag=!boss2hplock1,tag=!boss2hplock1warn] run tag @s add boss2hplock1warn
+execute if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,scores={sea_boss1_hp=..250},tag=!boss2hplock2,tag=!boss2hplock2warn] run tag @s add boss2hplock2warn
+execute if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,scores={sea_boss1_hp=..100},tag=!boss2hplock3,tag=!boss2hplock3warn] run tag @s add boss2hplock3warn
+
+execute if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,tag=boss2hplock1,tag=!boss2hplock1warn2] run tellraw @a[tag=SEAPT] {"text":"好像它身上的防御结界消失了！","color":"green"}
+execute if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,tag=boss2hplock2,tag=!boss2hplock2warn2] run tellraw @a[tag=SEAPT] {"text":"防御结界再次消失了，应战吧！","color":"green"}
+execute if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,tag=boss2hplock3,tag=!boss2hplock3warn2] run tellraw @a[tag=SEAPT] {"text":"好，这应该就是它最后的反抗了，一鼓作气干掉它吧！","color":"green"}
+execute if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,tag=boss2hplock1,tag=!boss2hplock1warn2] run tag @s add boss2hplock1warn2
+execute if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,tag=boss2hplock2,tag=!boss2hplock2warn2] run tag @s add boss2hplock2warn2
+execute if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,tag=boss2hplock3,tag=!boss2hplock3warn2] run tag @s add boss2hplock3warn2
+
 execute if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,scores={sea_boss1_hp=101..250}] run effect give @s speed 3 0 true
 execute if entity @n[tag=sc,scores={sea_4temp2=2120..}] as @n[tag=SEAboss2,scores={sea_boss1_hp=30..100}] run effect give @s speed 3 2 true
 
