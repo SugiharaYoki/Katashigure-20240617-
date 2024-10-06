@@ -7,7 +7,8 @@ playsound minecraft:entity.item.break player @a ~ ~ ~ 0.6 0.6
 
 execute rotated as @s run summon marker ~ ~1.5 ~ {Tags:["SEAshotgun_shoot"]}
 
-execute at @s as @n[tag=SEAshotgun_shoot] rotated as @p run tp @s ~ ~1.5 ~
+execute at @s as @n[tag=SEAshotgun_shoot] rotated as @p run tp @s ~ ~ ~ facing ^ ^ ^1
+execute as @n[tag=SEAshotgun_shoot] at @s run tp @s ~ ~1.5 ~
 
 execute as @n[tag=SEAshotgun_shoot] at @s run tp @s ^ ^ ^0.4
 execute as @n[tag=SEAshotgun_shoot] at @s run particle smoke ~ ~ ~ 0.2 0.2 0.2 0.03 20
@@ -47,7 +48,6 @@ execute as @n[tag=SEAshotgun_shoot] at @s unless block ~ ~ ~ air unless block ~ 
 
 execute as @n[tag=SEAshotgun_shoot] at @s run tp @s ^ ^ ^0.45
 execute as @n[tag=SEAshotgun_shoot] at @s run particle smoke ~ ~ ~ 0.8 0.8 0.8 0.03 60
-execute as @n[tag=SEAshotgun_shoot] at @s run particle small_flame ~ ~ ~ 0.8 0.8 0.8 0.0 60
 execute at @n[tag=SEAshotgun_shoot] as @e[tag=SEAmob,distance=0..1.1] run damage @s 17 campfire
 execute at @n[tag=SEAshotgun_shoot] as @e[tag=SEAmob,distance=0..1.1] run data modify entity @s Fire set value 60s
 execute at @n[tag=SEAshotgun_shoot] as @e[tag=SEAmagma1,type=marker,distance=..1.1] at @s run function skyblock:sea/p/magma
@@ -55,8 +55,7 @@ execute at @n[tag=SEAshotgun_shoot] as @e[tag=SEAmagma1,type=marker,distance=..1
 execute as @n[tag=SEAshotgun_shoot] at @s unless block ~ ~ ~ air unless block ~ ~ ~ fire unless block ~ ~ ~ ladder unless block ~ ~ ~ iron_bars unless block ~ ~ ~ #slabs unless block ~ ~ ~ #stairs unless block ~ ~ ~ #signs run kill @s
 
 execute as @n[tag=SEAshotgun_shoot] at @s run tp @s ^ ^ ^0.45
-execute as @n[tag=SEAshotgun_shoot] at @s run particle smoke ~ ~ ~ 0.8 0.8 0.8 0.03 70
-execute as @n[tag=SEAshotgun_shoot] at @s run particle small_flame ~ ~ ~ 0.8 0.8 0.8 0.0 70
+execute as @n[tag=SEAshotgun_shoot] at @s run particle smoke ~ ~ ~ 1 1 1 0.03 70
 execute at @n[tag=SEAshotgun_shoot] as @e[tag=SEAmob,distance=0..1.3] run damage @s 13 campfire
 execute at @n[tag=SEAshotgun_shoot] as @e[tag=SEAmob,distance=0..1.3] run data modify entity @s Fire set value 70s
 execute at @n[tag=SEAshotgun_shoot] as @e[tag=SEAmagma1,type=marker,distance=..1.3] at @s run function skyblock:sea/p/magma
@@ -64,8 +63,7 @@ execute at @n[tag=SEAshotgun_shoot] as @e[tag=SEAmagma1,type=marker,distance=..1
 execute as @n[tag=SEAshotgun_shoot] at @s unless block ~ ~ ~ air unless block ~ ~ ~ fire unless block ~ ~ ~ ladder unless block ~ ~ ~ iron_bars unless block ~ ~ ~ #slabs unless block ~ ~ ~ #stairs unless block ~ ~ ~ #signs run kill @s
 
 execute as @n[tag=SEAshotgun_shoot] at @s run tp @s ^ ^ ^0.45
-execute as @n[tag=SEAshotgun_shoot] at @s run particle smoke ~ ~ ~ 0.8 0.8 0.8 0.03 70
-execute as @n[tag=SEAshotgun_shoot] at @s run particle small_flame ~ ~ ~ 0.8 0.8 0.8 0.0 70
+execute as @n[tag=SEAshotgun_shoot] at @s run particle smoke ~ ~ ~ 1.3 1.3 1.3 0.03 70
 execute at @n[tag=SEAshotgun_shoot] as @e[tag=SEAmob,distance=0..1.5] run damage @s 9 campfire
 execute at @n[tag=SEAshotgun_shoot] as @e[tag=SEAmob,distance=0..1.5] run data modify entity @s Fire set value 70s
 execute at @n[tag=SEAshotgun_shoot] as @e[tag=SEAmagma1,type=marker,distance=..1.5] at @s run function skyblock:sea/p/magma
