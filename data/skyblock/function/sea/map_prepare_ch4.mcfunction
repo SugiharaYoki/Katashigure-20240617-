@@ -120,6 +120,7 @@ setblock 90195 29 121 minecraft:waxed_copper_bulb[lit=true]
 setblock 90195 29 125 minecraft:waxed_copper_bulb[lit=true]
 
 fill 90192 28 133 90192 27 133 iron_bars
+fill 90191 28 119 90192 27 119 iron_bars
 
 setblock 90180 35 137 minecraft:crimson_button[facing=south,face=floor,powered=false]
 setblock 90191 28 122 minecraft:crimson_button[facing=west,face=floor]

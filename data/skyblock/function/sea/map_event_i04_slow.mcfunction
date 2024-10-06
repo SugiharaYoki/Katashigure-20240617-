@@ -189,6 +189,7 @@ execute if block 90192 28 133 iron_bars positioned 90189 28 124 if block ~ ~ ~ m
 execute if block 90192 28 133 iron_bars positioned 90189 28 124 if block ~ ~ ~ minecraft:magenta_glazed_terracotta[facing=west] positioned 90189 28 122 if block ~ ~ ~ minecraft:magenta_glazed_terracotta[facing=west] positioned 90168 19 132 run function skyblock:sea/m/shadow
 execute if block 90192 28 133 iron_bars positioned 90189 28 124 if block ~ ~ ~ minecraft:magenta_glazed_terracotta[facing=west] positioned 90189 28 122 if block ~ ~ ~ minecraft:magenta_glazed_terracotta[facing=west] positioned 90192 27 134 run particle minecraft:soul ~ ~1 ~ 0.2 0.7 0.2 0 7
 execute if block 90192 28 133 iron_bars positioned 90189 28 124 if block ~ ~ ~ minecraft:magenta_glazed_terracotta[facing=west] positioned 90189 28 122 if block ~ ~ ~ minecraft:magenta_glazed_terracotta[facing=west] positioned 90192 27 134 run playsound entity.zombie.infect hostile @a ~ ~ ~ 0.7 0.7
+execute if block 90192 28 133 iron_bars positioned 90189 28 124 if block ~ ~ ~ minecraft:magenta_glazed_terracotta[facing=west] positioned 90189 28 122 if block ~ ~ ~ minecraft:magenta_glazed_terracotta[facing=west] run fill 90191 28 119 90192 27 119 air destroy
 execute if block 90192 28 133 iron_bars positioned 90189 28 124 if block ~ ~ ~ minecraft:magenta_glazed_terracotta[facing=west] positioned 90189 28 122 if block ~ ~ ~ minecraft:magenta_glazed_terracotta[facing=west] run fill 90192 28 133 90192 27 133 air destroy
 
 
