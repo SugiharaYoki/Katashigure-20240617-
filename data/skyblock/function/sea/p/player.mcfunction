@@ -215,3 +215,16 @@ execute as @s[x=80000,dx=20000,z=-10000,dz=20000,y=126,dy=5] at @s if block ~ ~-
 execute as @s[x=80000,dx=20000,z=-10000,dz=20000,y=18,dy=5] at @s if block ~ ~-1.5 ~ waxed_weathered_cut_copper_slab if block ~ ~-0.1 ~ air run tp @s ~ 34.0 ~
 execute as @s[x=80000,dx=20000,z=-10000,dz=20000,y=33,dy=5] at @s if block ~ ~-1.5 ~ waxed_weathered_cut_copper_slab if block ~ ~-0.1 ~ air run tp @s ~ 19.0 ~
 
+
+
+
+#回响指南针
+execute as @s[nbt={SelectedItem:{id:"minecraft:recovery_compass"}}] run function skyblock:sea/p/echo_compass
+
+execute unless block ~ ~-1 ~ air unless block ~ ~-1 ~ water if block ~ ~ ~ air if block ~ ~1 ~ air run spawnpoint @s ~ ~ ~
+execute if entity @s[tag=!seaPerm000] run clone 90121 122 108 90121 122 108 90118 123 106
+execute unless entity @s[tag=!seaPerm000] run clone 90121 122 109 90121 122 109 90118 123 106
+
+
+#炽热球体
+execute as @n[tag=SEAmagma1,type=marker,distance=0..2.5] run function skyblock:sea/p/magma
