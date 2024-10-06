@@ -67,19 +67,23 @@ execute as @s[scores={sea_4temp8=..0,rng1=1}] at @s run playsound entity.warden.
 execute as @s[scores={sea_4temp8=..0,rng1=1}] at @s run particle sonic_boom ~ ~0.3 ~ 1 0 1 0 20
 execute as @s[scores={sea_4temp8=..0,rng1=1}] at @s run scoreboard players set @s sea_4temp8 52
 execute as @s[scores={sea_4temp8=1..}] at @s run scoreboard players remove @s sea_4temp8 1
-execute store result score @s rng1 run random value 1..6
-execute as @s[scores={rng1=1,sea_4temp8=1..40}] at @s positioned ~-2 ~ ~1 if block ~ ~ ~ air unless block ~ ~-1 ~ air run summon evoker_fangs
-execute as @s[scores={rng1=2,sea_4temp8=1..40}] at @s positioned ~-2 ~ ~-1 if block ~ ~ ~ air unless block ~ ~-1 ~ air run summon evoker_fangs
-execute as @s[scores={rng1=3,sea_4temp8=1..40}] at @s positioned ~-2 ~ ~ if block ~ ~ ~ air unless block ~ ~-1 ~ air run summon evoker_fangs
-execute as @s[scores={rng1=4,sea_4temp8=1..40}] at @s positioned ~2 ~ ~1 if block ~ ~ ~ air unless block ~ ~-1 ~ air run summon evoker_fangs
-execute as @s[scores={rng1=5,sea_4temp8=1..40}] at @s positioned ~2 ~ ~-1 if block ~ ~ ~ air unless block ~ ~-1 ~ air run summon evoker_fangs
-execute as @s[scores={rng1=6,sea_4temp8=1..40}] at @s positioned ~2 ~ ~ if block ~ ~ ~ air unless block ~ ~-1 ~ air run summon evoker_fangs
-execute as @s[scores={rng1=1,sea_4temp8=1..40}] at @s positioned ~-2 ~-1 ~1 if block ~ ~ ~ air unless block ~ ~-1 ~ air run summon evoker_fangs
-execute as @s[scores={rng1=2,sea_4temp8=1..40}] at @s positioned ~-2 ~-1 ~-1 if block ~ ~ ~ air unless block ~ ~-1 ~ air run summon evoker_fangs
-execute as @s[scores={rng1=3,sea_4temp8=1..40}] at @s positioned ~-2 ~-1 ~ if block ~ ~ ~ air unless block ~ ~-1 ~ air run summon evoker_fangs
-execute as @s[scores={rng1=4,sea_4temp8=1..40}] at @s positioned ~2 ~-1 ~1 if block ~ ~ ~ air unless block ~ ~-1 ~ air run summon evoker_fangs
-execute as @s[scores={rng1=5,sea_4temp8=1..40}] at @s positioned ~2 ~-1 ~-1 if block ~ ~ ~ air unless block ~ ~-1 ~ air run summon evoker_fangs
-execute as @s[scores={rng1=6,sea_4temp8=1..40}] at @s positioned ~2 ~-1 ~ if block ~ ~ ~ air unless block ~ ~-1 ~ air run summon evoker_fangs
+execute store result score @s rng1 run random value 1..8
+execute as @s[scores={rng1=1,sea_4temp8=1..40}] at @s positioned ~-1 ~ ~1 if block ~ ~ ~ air unless block ~ ~-1 ~ air run summon evoker_fangs
+execute as @s[scores={rng1=2,sea_4temp8=1..40}] at @s positioned ~-1 ~ ~-1 if block ~ ~ ~ air unless block ~ ~-1 ~ air run summon evoker_fangs
+execute as @s[scores={rng1=3,sea_4temp8=1..40}] at @s positioned ~-1 ~ ~ if block ~ ~ ~ air unless block ~ ~-1 ~ air run summon evoker_fangs
+execute as @s[scores={rng1=4,sea_4temp8=1..40}] at @s positioned ~1 ~ ~1 if block ~ ~ ~ air unless block ~ ~-1 ~ air run summon evoker_fangs
+execute as @s[scores={rng1=5,sea_4temp8=1..40}] at @s positioned ~1 ~ ~-1 if block ~ ~ ~ air unless block ~ ~-1 ~ air run summon evoker_fangs
+execute as @s[scores={rng1=6,sea_4temp8=1..40}] at @s positioned ~1 ~ ~ if block ~ ~ ~ air unless block ~ ~-1 ~ air run summon evoker_fangs
+execute as @s[scores={rng1=7,sea_4temp8=1..40}] at @s positioned ~ ~ ~1 if block ~ ~ ~ air unless block ~ ~-1 ~ air run summon evoker_fangs
+execute as @s[scores={rng1=8,sea_4temp8=1..40}] at @s positioned ~ ~ ~-1 if block ~ ~ ~ air unless block ~ ~-1 ~ air run summon evoker_fangs
+execute as @s[scores={rng1=1,sea_4temp8=1..40}] at @s positioned ~-1 ~-1 ~1 if block ~ ~ ~ air unless block ~ ~-1 ~ air run summon evoker_fangs
+execute as @s[scores={rng1=2,sea_4temp8=1..40}] at @s positioned ~-1 ~-1 ~-1 if block ~ ~ ~ air unless block ~ ~-1 ~ air run summon evoker_fangs
+execute as @s[scores={rng1=3,sea_4temp8=1..40}] at @s positioned ~-1 ~-1 ~ if block ~ ~ ~ air unless block ~ ~-1 ~ air run summon evoker_fangs
+execute as @s[scores={rng1=4,sea_4temp8=1..40}] at @s positioned ~1 ~-1 ~1 if block ~ ~ ~ air unless block ~ ~-1 ~ air run summon evoker_fangs
+execute as @s[scores={rng1=5,sea_4temp8=1..40}] at @s positioned ~1 ~-1 ~-1 if block ~ ~ ~ air unless block ~ ~-1 ~ air run summon evoker_fangs
+execute as @s[scores={rng1=6,sea_4temp8=1..40}] at @s positioned ~1 ~-1 ~ if block ~ ~ ~ air unless block ~ ~-1 ~ air run summon evoker_fangs
+execute as @s[scores={rng1=7,sea_4temp8=1..40}] at @s positioned ~ ~-1 ~1 if block ~ ~ ~ air unless block ~ ~-1 ~ air run summon evoker_fangs
+execute as @s[scores={rng1=8,sea_4temp8=1..40}] at @s positioned ~ ~-1 ~-1 if block ~ ~ ~ air unless block ~ ~-1 ~ air run summon evoker_fangs
 execute if entity @n[tag=sc,scores={sea_player=1..2}] store result score @s rng1 run random value 1..48
 execute if entity @n[tag=sc,scores={sea_player=3..4}] store result score @s rng1 run random value 1..40
 execute if entity @n[tag=sc,scores={sea_player=5..}] store result score @s rng1 run random value 1..32
