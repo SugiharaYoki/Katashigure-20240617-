@@ -1,8 +1,8 @@
 execute if entity @a[tag=SEAPT] run function skyblock:sea/map_event_igeneral_slow
 execute unless block 90058 103 142 grindstone if entity @a[tag=SEAPT] run function skyblock:sea/map_event_i01_slow
-execute unless block 90075 103 141 minecraft:cauldron if entity @a[tag=SEAPT] run function skyblock:sea/map_event_i02_slow
-execute unless block 90075 103 137 scaffolding if entity @a[tag=SEAPT] run function skyblock:sea/map_event_i03_slow
-execute unless block 90059 103 141 grindstone if entity @a[tag=SEAPT] run function skyblock:sea/map_event_i04_slow
+execute if block 90058 103 142 grindstone unless block 90075 103 141 minecraft:cauldron if entity @a[tag=SEAPT] run function skyblock:sea/map_event_i02_slow
+execute if block 90075 103 141 minecraft:cauldron unless block 90075 103 137 scaffolding if entity @a[tag=SEAPT] run function skyblock:sea/map_event_i03_slow
+execute if block 90075 103 137 scaffolding unless block 90059 103 141 grindstone if entity @a[tag=SEAPT] run function skyblock:sea/map_event_i04_slow
 
 #execute if entity @a[tag=SEAPT] if entity @n[tag=sc,tag=SeGa_sea_ch1] run function skyblock:sea/map_event_igeneral_slow
 #execute unless block 90058 103 142 grindstone if entity @a[tag=SEAPT] if entity @n[tag=sc,tag=SeGa_sea_ch1] run function skyblock:sea/map_event_i01_slow
