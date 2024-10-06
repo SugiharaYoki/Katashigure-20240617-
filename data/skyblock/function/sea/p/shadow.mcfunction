@@ -21,8 +21,6 @@ execute if entity @a[tag=SEAPT,distance=0..14] if entity @s[scores={rng1=14}] ru
 execute if entity @a[tag=SEAPT,distance=0..14] if entity @s[scores={rng1=14}] run playsound entity.zombie.infect hostile @a ~ ~ ~ 0.7 0.7
 
 
-    function skyblock:protector/entity_count_end {function:"slyblock:sea/p/axeparry"}
-
 
 
 execute if entity @a[tag=SEAPT,distance=0..14] if entity @s[scores={rng1=14}] run item replace entity @s armor.head with air
