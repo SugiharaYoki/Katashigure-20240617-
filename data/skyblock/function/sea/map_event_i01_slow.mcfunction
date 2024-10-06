@@ -124,6 +124,8 @@ execute as @n[tag=sc,scores={sea_4temp2=272}] positioned 90120 123 123 if entity
 execute as @n[tag=sc,scores={sea_4temp2=272}] positioned 90120 123 123 if entity @n[tag=sc,scores={sea_player=2..}] run tellraw @a[distance=0..50] {"text":"联络机台：“我从监控看到你们附近的房间了！快从那里离开，立——”","color":"dark_purple"}
 execute as @n[tag=sc,scores={sea_4temp2=272}] positioned 90120 123 123 run playsound minecraft:entity.endermite.ambient ambient @a ~ ~ ~ 0.8 0.1
 execute as @n[tag=sc,scores={sea_4temp2=296}] positioned 90120 123 123 run tellraw @a[distance=0..50] {"text":"联络机台：“……”","color":"dark_purple"}
+execute as @n[tag=sc,scores={sea_4temp2=305}] positioned 90120 123 123 run tellraw @a[distance=0..50] {"text":"离开？把这些怪物放着不管吗？这不是我来这的目的。","color":"gray"}
+execute as @n[tag=sc,scores={sea_4temp2=335}] positioned 90120 123 123 run tellraw @a[distance=0..50] {"text":"我得守在这里，把这些怪东西全给解决掉。","color":"gray"}
 
 execute as @n[tag=sc,scores={sea_4temp2=254..1100}] run particle large_smoke 90120 123 115 0.2 0.5 0.2 0.01 3
 execute as @n[tag=sc,scores={sea_4temp2=344..1100}] run particle large_smoke 90125 123 115 0.2 0.5 0.2 0.01 3
