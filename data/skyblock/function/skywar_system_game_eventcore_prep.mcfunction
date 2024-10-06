@@ -95,6 +95,6 @@ execute if score @n[tag=sc] Map_Code matches 17 run execute unless entity @n[tag
 execute if score @n[tag=sc] Map_Code matches 17 run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run worldborder set 138
 #execute if score @n[tag=sc] Map_Code matches 10 run tp @a[tag=!PVPing,tag=PVP_see] 13072 80 13072
 #execute if score @n[tag=sc] Map_Code matches 10 run gamemode @a[tag=!PVPing,tag=PVP_see] spectator
-scoreboard players set @n[tag=sc] Temp5_LoopE 0
-scoreboard players set @n[tag=sc] Temp5_LoopF 0
-scoreboard players set @n[tag=sc] Temp5_Loop 0
+scoreboard players set sc Temp5_LoopE 0
+scoreboard players set sc Temp5_LoopF 0
+scoreboard players set sc Temp5_Loop 0
