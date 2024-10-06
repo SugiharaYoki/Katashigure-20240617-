@@ -68,9 +68,9 @@ execute if score sea_ch4_switch_crossroad sea_4temp2 matches 12 run fill 90193 1
 execute if score sea_ch4_switch_crossroad sea_4temp2 matches 12 run playsound minecraft:block.note_block.pling block @a 90187 18 113 0.9 0.5
 execute if score sea_ch4_switch_crossroad sea_4temp2 matches 8 run playsound minecraft:block.note_block.pling block @a 90187 18 113 0.9 0.5
 execute if score sea_ch4_switch_crossroad sea_4temp2 matches 4 run playsound minecraft:block.note_block.pling block @a 90187 18 113 0.9 0.5
-execute if score sea_ch4_switch_crossroad sea_4temp2 matches 7 positioned 90192 26 113 unless block 90192 20 121 air unless entity @n[tag=SEAch3_spawn,distance=0..3] run fill 90191 25 114 90193 25 112 minecraft:air destroy
-execute if score sea_ch4_switch_crossroad sea_4temp2 matches 7 positioned 90192 26 113 unless block 90192 20 121 air unless entity @n[tag=SEAch3_spawn,distance=0..3] run function skyblock:sea/m/cave_spider
-execute if score sea_ch4_switch_crossroad sea_4temp2 matches 7 positioned 90192 26 113 unless block 90192 20 121 air unless entity @n[tag=SEAch3_spawn,distance=0..3] run summon marker ~ ~ ~ {Tags:["SEAch3_spawn"]}
+execute if score sea_ch4_switch_crossroad sea_4temp2 matches 7 positioned 90192 26 113 unless block 90192 20 121 air unless entity @n[tag=SEAch4_spawn,distance=0..3] run fill 90191 25 114 90193 25 112 minecraft:air destroy
+execute if score sea_ch4_switch_crossroad sea_4temp2 matches 7 positioned 90192 26 113 unless block 90192 20 121 air unless entity @n[tag=SEAch4_spawn,distance=0..3] run function skyblock:sea/m/cave_spider
+execute if score sea_ch4_switch_crossroad sea_4temp2 matches 7 positioned 90192 26 113 unless block 90192 20 121 air unless entity @n[tag=SEAch4_spawn,distance=0..3] run summon marker ~ ~ ~ {Tags:["SEAch4_spawn"]}
 execute if score sea_ch4_switch_crossroad sea_4temp2 matches 0 run playsound block.beacon.deactivate block @a 90187 18 113 2 1.3
 execute if score sea_ch4_switch_crossroad sea_4temp2 matches 0 run fill 90184 18 114 90190 18 112 air
 execute if score sea_ch4_switch_crossroad sea_4temp2 matches 0 run fill 90193 19 121 90191 23 121 air
@@ -95,9 +95,9 @@ execute if score sea_ch4_switch_crossroad2 sea_4temp2 matches 27 run fill 90194 
 execute if score sea_ch4_switch_crossroad2 sea_4temp2 matches 27 run fill 90191 19 123 90193 23 123 minecraft:lime_stained_glass
 
 
-execute positioned 90210 18 113 if entity @a[tag=SEAPT,distance=..2.7] unless entity @n[tag=SEAch3_spawn,distance=0..3] positioned 90212 19 109 run function skyblock:sea/m/silverfish_big
-execute positioned 90210 18 113 if entity @a[tag=SEAPT,distance=..2.7] unless entity @n[tag=SEAch3_spawn,distance=0..3] positioned 90214 19 109 run function skyblock:sea/m/silverfish_big
-execute positioned 90210 18 113 if entity @a[tag=SEAPT,distance=..2.7] unless entity @n[tag=SEAch3_spawn,distance=0..3] run summon marker ~ ~ ~ {Tags:["SEAch3_spawn"]}
+execute positioned 90210 18 113 if entity @a[tag=SEAPT,distance=..2.7] unless entity @n[tag=SEAch4_spawn,distance=0..3] positioned 90212 19 109 run function skyblock:sea/m/silverfish_big
+execute positioned 90210 18 113 if entity @a[tag=SEAPT,distance=..2.7] unless entity @n[tag=SEAch4_spawn,distance=0..3] positioned 90214 19 109 run function skyblock:sea/m/silverfish_big
+execute positioned 90210 18 113 if entity @a[tag=SEAPT,distance=..2.7] unless entity @n[tag=SEAch4_spawn,distance=0..3] run summon marker ~ ~ ~ {Tags:["SEAch4_spawn"]}
 
 scoreboard players add @e[tag=SEAch4_spawn_timer] sea_4temp1 1
 execute positioned 90192 18 104 if entity @a[tag=SEAPT,distance=..4.6] unless entity @n[tag=SEAch4_spawn_timer1,distance=0..3] run summon marker ~ ~ ~ {Tags:["SEAch4_spawn_timer","SEAch4_spawn_timer1"]}
@@ -110,19 +110,19 @@ execute as @n[tag=SEAch4_spawn_timer1,scores={sea_4temp1=3}] run setblock 90213 
 execute as @n[tag=SEAch4_spawn_timer1,scores={sea_4temp1=3..4}] run playsound block.beacon.activate block @a 90192 22 121 2 1.5
 
 
-execute positioned 90185 19 130 if entity @a[tag=SEAPT,distance=..4.7] unless entity @n[tag=SEAch3_spawn,distance=0..3] positioned 90160 13 136 run function skyblock:sea/m/zombie_security2
-execute positioned 90185 19 130 if entity @a[tag=SEAPT,distance=..4.7] unless entity @n[tag=SEAch3_spawn,distance=0..3] positioned 90160 13 124 run function skyblock:sea/m/zombie_security2
-execute positioned 90185 19 130 if entity @a[tag=SEAPT,distance=..4.7] unless entity @n[tag=SEAch3_spawn,distance=0..3] positioned 90169 19 126 run function skyblock:sea/m/drone
-execute positioned 90185 19 130 if entity @a[tag=SEAPT,distance=..4.7] unless entity @n[tag=SEAch3_spawn,distance=0..3] positioned 90180 19 122 run function skyblock:sea/m/drowned_maintenance
-execute positioned 90185 19 130 if entity @a[tag=SEAPT,distance=..4.7] unless entity @n[tag=SEAch3_spawn,distance=0..3] positioned 90178 34 130 run function skyblock:sea/m/skeleton
-execute positioned 90185 19 130 if entity @a[tag=SEAPT,distance=..4.7] unless entity @n[tag=SEAch3_spawn,distance=0..3] positioned 90178 34 130 run function skyblock:sea/m/nightblind
-execute positioned 90185 19 130 if entity @a[tag=SEAPT,distance=..4.7] unless entity @n[tag=SEAch3_spawn,distance=0..3] positioned 90190 34 121 run function skyblock:sea/m/zombie_bomb
-execute positioned 90185 19 130 if entity @a[tag=SEAPT,distance=..4.7] unless entity @n[tag=SEAch3_spawn,distance=0..3] positioned 90190 34 121 run function skyblock:sea/m/drowned_small
-execute positioned 90185 19 130 if entity @a[tag=SEAPT,distance=..4.7] unless entity @n[tag=SEAch3_spawn,distance=0..3] positioned 90190 34 121 run function skyblock:sea/m/drowned_small
-execute positioned 90185 19 130 if entity @a[tag=SEAPT,distance=..4.7] unless entity @n[tag=SEAch3_spawn,distance=0..3] positioned 90190 34 121 run function skyblock:sea/m/drowned_small
-execute positioned 90185 19 130 if entity @a[tag=SEAPT,distance=..4.7] unless entity @n[tag=SEAch3_spawn,distance=0..3] positioned 90185 34 130 run function skyblock:sea/m/shadow
+execute positioned 90185 19 130 if entity @a[tag=SEAPT,distance=..4.7] unless entity @n[tag=SEAch4_spawn,distance=0..3] positioned 90160 13 136 run function skyblock:sea/m/zombie_security2
+execute positioned 90185 19 130 if entity @a[tag=SEAPT,distance=..4.7] unless entity @n[tag=SEAch4_spawn,distance=0..3] positioned 90160 13 124 run function skyblock:sea/m/zombie_security2
+execute positioned 90185 19 130 if entity @a[tag=SEAPT,distance=..4.7] unless entity @n[tag=SEAch4_spawn,distance=0..3] positioned 90169 19 126 run function skyblock:sea/m/drone
+execute positioned 90185 19 130 if entity @a[tag=SEAPT,distance=..4.7] unless entity @n[tag=SEAch4_spawn,distance=0..3] positioned 90180 19 122 run function skyblock:sea/m/drowned_maintenance
+execute positioned 90185 19 130 if entity @a[tag=SEAPT,distance=..4.7] unless entity @n[tag=SEAch4_spawn,distance=0..3] positioned 90178 34 130 run function skyblock:sea/m/skeleton
+execute positioned 90185 19 130 if entity @a[tag=SEAPT,distance=..4.7] unless entity @n[tag=SEAch4_spawn,distance=0..3] positioned 90178 34 130 run function skyblock:sea/m/nightblind
+execute positioned 90185 19 130 if entity @a[tag=SEAPT,distance=..4.7] unless entity @n[tag=SEAch4_spawn,distance=0..3] positioned 90190 34 121 run function skyblock:sea/m/zombie_bomb
+execute positioned 90185 19 130 if entity @a[tag=SEAPT,distance=..4.7] unless entity @n[tag=SEAch4_spawn,distance=0..3] positioned 90190 34 121 run function skyblock:sea/m/drowned_small
+execute positioned 90185 19 130 if entity @a[tag=SEAPT,distance=..4.7] unless entity @n[tag=SEAch4_spawn,distance=0..3] positioned 90190 34 121 run function skyblock:sea/m/drowned_small
+execute positioned 90185 19 130 if entity @a[tag=SEAPT,distance=..4.7] unless entity @n[tag=SEAch4_spawn,distance=0..3] positioned 90190 34 121 run function skyblock:sea/m/drowned_small
+execute positioned 90185 19 130 if entity @a[tag=SEAPT,distance=..4.7] unless entity @n[tag=SEAch4_spawn,distance=0..3] positioned 90185 34 130 run function skyblock:sea/m/shadow
 
-execute positioned 90185 19 130 if entity @a[tag=SEAPT,distance=..4.7] unless entity @n[tag=SEAch3_spawn,distance=0..3] run summon marker ~ ~ ~ {Tags:["SEAch3_spawn"]}
+execute positioned 90185 19 130 if entity @a[tag=SEAPT,distance=..4.7] unless entity @n[tag=SEAch4_spawn,distance=0..3] run summon marker ~ ~ ~ {Tags:["SEAch4_spawn"]}
 
 
 
