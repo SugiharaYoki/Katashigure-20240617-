@@ -7,6 +7,7 @@ playsound minecraft:entity.item.break player @a ~ ~ ~ 0.6 0.6
 
 execute rotated as @s run summon marker ~ ~ ~ {Tags:["SEAshotgun_shoot"]}
 
+execute as @n[tag=SEAshotgun_shoot] rotated as @s run tp @s ~ ~ ~ facing ^ ^ ^1
 
 execute as @n[tag=SEAshotgun_shoot] at @s run tp @s ^ ^ ^0.3
 execute as @n[tag=SEAshotgun_shoot] at @s run particle smoke ~ ~ ~ 0.3 0.3 0.3 0.03 70
