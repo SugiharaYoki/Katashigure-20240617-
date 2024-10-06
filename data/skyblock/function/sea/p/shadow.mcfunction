@@ -28,7 +28,7 @@ execute if entity @a[tag=SEAPT,distance=0..14] if entity @s[scores={rng1=14}] ru
 execute if entity @a[tag=SEAPT,distance=0..14] if entity @s[scores={rng1=14}] run item replace entity @s armor.head with air
 execute if entity @a[tag=SEAPT,distance=0..14] if entity @s[scores={rng1=1}] run item replace entity @s armor.head from block 90205 13 112 container.1
 execute if entity @a[tag=SEAPT,distance=0..14] if entity @s[scores={rng1=14}] run item replace entity @s armor.chest with air
-execute if entity @a[tag=SEAPT,distance=0..14] if entity @s[scores={rng1=1}] run item replace entity @s armor.chest from block 90205 13 112 container.1
+execute if entity @a[tag=SEAPT,distance=0..14] if entity @s[scores={rng1=1}] run item replace entity @s armor.chest from block 90205 13 112 container.2
 
 execute if entity @s[nbt={active_effects:[{id:"minecraft:glowing"}]}] at @s run playsound entity.warden.attack_impact hostile @a ~ ~ ~ 1 0.7
 execute if entity @s[nbt={active_effects:[{id:"minecraft:glowing"}]}] at @s run particle soul ~ ~1 ~ 0.3 1 0.3 0 30
