@@ -144,10 +144,8 @@ execute if block 90197 35 129 minecraft:crimson_button[powered=true] run setbloc
 execute if block 90197 35 129 minecraft:crimson_button[powered=true] run setblock 90197 35 129 minecraft:crimson_button[powered=false,facing=south]
 
 #二楼右
-execute if block 90180 35 137 minecraft:crimson_button[powered=true] positioned 90180 35 139 if block ~ ~ ~ minecraft:magenta_glazed_terracotta[facing=west] run setblock ~ ~ ~ gray_concrete
-execute if block 90180 35 137 minecraft:crimson_button[powered=true] positioned 90180 35 139 if block ~ ~ ~ minecraft:magenta_glazed_terracotta[facing=north] run setblock ~ ~ ~ minecraft:magenta_glazed_terracotta[facing=west]
-execute if block 90180 35 137 minecraft:crimson_button[powered=true] positioned 90180 35 139 if block ~ ~ ~ gray_concrete run setblock ~ ~ ~ minecraft:magenta_glazed_terracotta[facing=north]
-execute if block 90180 35 137 minecraft:crimson_button[powered=true] run setblock 90180 35 137 minecraft:crimson_button[facing=south,face=floor,powered=false]
+execute if block 90180 35 137 minecraft:crimson_button[powered=true] positioned 90180 35 139 if block ~ ~ ~ minecraft:magenta_glazed_terracotta[facing=west] run setblock ~ ~ ~ minecraft:magenta_glazed_terracotta[facing=north]
+execute if block 90180 35 137 minecraft:crimson_button[powered=true] run setblock 90180 35 137 minecraft:warped_button[facing=south,face=floor,powered=false]
 
 execute if block 90184 35 137 minecraft:crimson_button[powered=true] positioned 90184 37 139 if block ~ ~ ~ minecraft:magenta_glazed_terracotta[facing=north] run setblock ~ ~ ~ gray_concrete
 execute if block 90184 35 137 minecraft:crimson_button[powered=true] positioned 90184 37 139 if block ~ ~ ~ minecraft:magenta_glazed_terracotta[facing=west] run setblock ~ ~ ~ minecraft:magenta_glazed_terracotta[facing=north]
@@ -170,6 +168,22 @@ execute unless block 90184 37 139 minecraft:magenta_glazed_terracotta[facing=wes
 execute unless block 90180 35 139 minecraft:magenta_glazed_terracotta[facing=west] if block 90195 34 131 air run playsound block.iron_door.open block @a 90191.01 36.98 134.44 0.8
 execute unless block 90180 35 139 minecraft:magenta_glazed_terracotta[facing=west] if block 90195 34 131 air run fill 90195 36 129 90195 34 131 iron_bars
 
+#竖井2F
+execute if block 90191 28 122 minecraft:crimson_button[powered=true] positioned 90189 28 122 if block ~ ~ ~ minecraft:magenta_glazed_terracotta[facing=north] run setblock ~ ~ ~ minecraft:magenta_glazed_terracotta[facing=west]
+execute if block 90191 28 122 minecraft:crimson_button[powered=true] run setblock 90191 28 122 minecraft:warped_button[facing=west,face=floor,powered=false]
+
+execute if block 90191 28 124 minecraft:crimson_button[powered=true] positioned 90189 28 124 if block ~ ~ ~ minecraft:magenta_glazed_terracotta[facing=south] run setblock ~ ~ ~ gray_concrete
+execute if block 90191 28 124 minecraft:crimson_button[powered=true] positioned 90189 28 124 if block ~ ~ ~ minecraft:magenta_glazed_terracotta[facing=west] run setblock ~ ~ ~ minecraft:magenta_glazed_terracotta[facing=south]
+execute if block 90191 28 124 minecraft:crimson_button[powered=true] positioned 90189 28 124 if block ~ ~ ~ gray_concrete run setblock ~ ~ ~ minecraft:magenta_glazed_terracotta[facing=west]
+execute if block 90191 28 124 minecraft:crimson_button[powered=true] run setblock 90191 28 124 minecraft:crimson_button[facing=west,face=floor,powered=false]
+
+execute positioned 90189 28 124 if block ~ ~ ~ minecraft:magenta_glazed_terracotta[facing=west] if block 90195 29 121 minecraft:waxed_copper_bulb[lit=true] run playsound minecraft:block.copper_bulb.turn_off ambient @a 90194 29 123 0.8
+execute positioned 90189 28 124 if block ~ ~ ~ minecraft:magenta_glazed_terracotta[facing=west] if block 90195 29 121 minecraft:waxed_copper_bulb[lit=true] run setblock 90195 29 125 minecraft:waxed_copper_bulb[lit=false]
+execute positioned 90189 28 124 if block ~ ~ ~ minecraft:magenta_glazed_terracotta[facing=west] if block 90195 29 121 minecraft:waxed_copper_bulb[lit=true] run setblock 90195 29 121 minecraft:waxed_copper_bulb[lit=false]
+
+execute positioned 90189 28 124 if block ~ ~ ~ minecraft:magenta_glazed_terracotta[facing=south] if block 90195 29 121 minecraft:waxed_copper_bulb[lit=false] run playsound minecraft:block.copper_bulb.turn_on ambient @a 90194 29 123 0.8
+execute positioned 90189 28 124 if block ~ ~ ~ minecraft:magenta_glazed_terracotta[facing=south] if block 90195 29 121 minecraft:waxed_copper_bulb[lit=false] run setblock 90195 29 125 minecraft:waxed_copper_bulb[lit=true]
+execute positioned 90189 28 124 if block ~ ~ ~ minecraft:magenta_glazed_terracotta[facing=south] if block 90195 29 121 minecraft:waxed_copper_bulb[lit=false] run setblock 90195 29 121 minecraft:waxed_copper_bulb[lit=true]
 
 
 

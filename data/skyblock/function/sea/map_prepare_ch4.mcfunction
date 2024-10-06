@@ -114,7 +114,15 @@ setblock 90189 17 136 chest[facing=east]
 item replace block 90189 17 136 container.12 with cookie 3
 item replace block 90189 17 136 container.14 with emerald 3
 
+fill 90195 25 130 90195 19 130 air
 
+setblock 90195 29 121 minecraft:waxed_copper_bulb[lit=true]
+setblock 90195 29 125 minecraft:waxed_copper_bulb[lit=true]
+
+setblock 90180 35 137 minecraft:crimson_button[facing=south,face=floor,powered=false]
+setblock 90191 28 122 minecraft:crimson_button[facing=west,face=floor]
+setblock 90189 28 122 minecraft:magenta_glazed_terracotta[facing=north]
+setblock 90189 28 124 minecraft:magenta_glazed_terracotta[facing=south]
 
 setblock 90199 35 130 lever[facing=north,face=floor,powered=true]
 
