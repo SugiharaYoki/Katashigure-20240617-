@@ -1,4 +1,3 @@
-    function skyblock:protector/entity_count_start
 
 execute store result score @s[scores={rng1=2..13}] rng1 run random value 15..16
 execute store result score @s[scores={rng1=1}] rng1 run random value 2..13
