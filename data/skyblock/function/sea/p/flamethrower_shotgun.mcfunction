@@ -5,7 +5,7 @@ playsound minecraft:entity.firework_rocket.blast player @a ~ ~ ~ 1 0.6
 playsound minecraft:entity.firework_rocket.blast player @a ~ ~ ~ 1 0.75
 playsound minecraft:entity.item.break player @a ~ ~ ~ 0.6 0.6
 
-execute rotated as @s run summon marker ~ ~ ~ {Tags:["SEAshotgun_shoot"]}
+execute rotated as @s run summon marker ~ ~1.5 ~ {Tags:["SEAshotgun_shoot"]}
 
 execute as @n[tag=SEAshotgun_shoot] rotated as @p run tp @s ~ ~ ~ facing ^ ^ ^1
 
