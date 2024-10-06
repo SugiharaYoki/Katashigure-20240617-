@@ -1,25 +1,25 @@
-clear @s[gamemode=!creative] basalt
-clear @s[gamemode=!creative] item_frame
-clear @s[gamemode=!creative] iron_bars
-clear @s[gamemode=!creative] deepslate_tiles
-clear @s[gamemode=!creative] cracked_deepslate_tiles
-clear @s[gamemode=!creative] deepslate_tile_slab
-clear @s[gamemode=!creative] waxed_copper_block
-clear @s[gamemode=!creative] slime_block
-clear @s[gamemode=!creative] string
-clear @s[gamemode=!creative] heart_pottery_sherd
-clear @s[gamemode=!creative] burn_pottery_sherd
-clear @s[gamemode=!creative] friend_pottery_sherd
-clear @s[gamemode=!creative] prize_pottery_sherd
-clear @s[gamemode=!creative] mourner_pottery_sherd
-clear @s[gamemode=!creative] waxed_copper_grate
-clear @s[gamemode=!creative] waxed_oxidized_copper_grate
-clear @s[gamemode=!creative] waxed_oxidized_copper
-clear @s[gamemode=!creative] lantern
-clear @s[gamemode=!creative] polished_diorite
-clear @s[gamemode=!creative] polished_tuff_wall
-clear @s[gamemode=!creative] decorated_pot
-clear @s[gamemode=!creative] structure_void
+#clear @s[gamemode=!creative] basalt
+#clear @s[gamemode=!creative] item_frame
+#clear @s[gamemode=!creative] iron_bars
+#clear @s[gamemode=!creative] deepslate_tiles
+#clear @s[gamemode=!creative] cracked_deepslate_tiles
+#clear @s[gamemode=!creative] deepslate_tile_slab
+#clear @s[gamemode=!creative] waxed_copper_block
+#clear @s[gamemode=!creative] slime_block
+#clear @s[gamemode=!creative] string
+#clear @s[gamemode=!creative] heart_pottery_sherd
+#clear @s[gamemode=!creative] burn_pottery_sherd
+#clear @s[gamemode=!creative] friend_pottery_sherd
+#clear @s[gamemode=!creative] prize_pottery_sherd
+#clear @s[gamemode=!creative] mourner_pottery_sherd
+#clear @s[gamemode=!creative] waxed_copper_grate
+#clear @s[gamemode=!creative] waxed_oxidized_copper_grate
+#clear @s[gamemode=!creative] waxed_oxidized_copper
+#clear @s[gamemode=!creative] lantern
+#clear @s[gamemode=!creative] polished_diorite
+#clear @s[gamemode=!creative] polished_tuff_wall
+#clear @s[gamemode=!creative] decorated_pot
+#clear @s[gamemode=!creative] structure_void
 
 tag @s remove PVP_see
 
@@ -71,11 +71,11 @@ run title @s actionbar [{"text": "目前装填：","color": "gray"},{"text": "�
 execute if entity @s[nbt={SelectedItem:{id:"minecraft:crossbow",components:{"minecraft:charged_projectiles":[{id:"minecraft:spectral_arrow"}]}}}] \
 run title @s actionbar [{"text": "目前装填：","color": "gray"},{"text": "静滞光棱","color": "gold"}]
 
-execute as @a[tag=SEA_spectral_autocharge] at @s run item replace block 90205 13 112 container.0 from entity @s weapon.mainhand
-execute as @a[tag=SEA_spectral_autocharge] at @s run data modify block 90205 13 112 Items[0] merge value {components:{"minecraft:charged_projectiles":[{id:"minecraft:spectral_arrow"}]}}
-execute as @a[tag=SEA_spectral_autocharge] at @s run item replace entity @s weapon.mainhand from block 90205 13 112 container.0
-execute as @a[tag=SEA_spectral_autocharge] at @s run clear @s spectral_arrow 1
-execute as @a[tag=SEA_spectral_autocharge] at @s run tag @s remove SEA_spectral_autocharge
+execute as @s[tag=SEA_spectral_autocharge] at @s run item replace block 90205 13 112 container.0 from entity @s weapon.mainhand
+execute as @s[tag=SEA_spectral_autocharge] at @s run data modify block 90205 13 112 Items[0] merge value {components:{"minecraft:charged_projectiles":[{id:"minecraft:spectral_arrow"}]}}
+execute as @s[tag=SEA_spectral_autocharge] at @s run item replace entity @s weapon.mainhand from block 90205 13 112 container.0
+execute as @s[tag=SEA_spectral_autocharge] at @s run clear @s spectral_arrow 1
+execute as @s[tag=SEA_spectral_autocharge] at @s run tag @s remove SEA_spectral_autocharge
 
 
 execute as @s[tag=!e_w_01,nbt={Inventory:[{id:"minecraft:iron_hoe"}]}] run tellraw @s {"text": "获得武器：撬棍","color": "dark_red"}
