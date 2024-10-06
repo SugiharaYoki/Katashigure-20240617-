@@ -59,6 +59,8 @@ execute positioned 90173 19 130 run function skyblock:sea/m/shadow
 execute positioned 90192 34 130 run function skyblock:sea/m/cave_spider
 execute positioned 90192 34 130 run function skyblock:sea/m/cave_spider
 
+execute positioned 90179 19 119 run function skyblock:sea/m/zombie_cook
+execute positioned 90179 19 119 run function skyblock:sea/m/zombie_cook
 
 setblock 90210 19 112 air
 setblock 90211 19 112 air
@@ -128,5 +130,33 @@ setblock 90189 28 122 minecraft:magenta_glazed_terracotta[facing=north]
 setblock 90189 28 124 minecraft:magenta_glazed_terracotta[facing=south]
 
 setblock 90199 35 130 lever[facing=north,face=floor,powered=true]
+
+fill 90183 20 120 90183 19 120 minecraft:slime_block
+
+
+
+
+
+
+
+
+
+
+#最终大厅 第七章入口
+setblock 90154 18 134 minecraft:waxed_copper_bulb[lit=false]
+setblock 90154 18 126 minecraft:waxed_copper_bulb[lit=false]
+setblock 90151 17 134 minecraft:waxed_copper_bulb[lit=false]
+setblock 90151 17 126 minecraft:waxed_copper_bulb[lit=false]
+setblock 90148 16 134 minecraft:waxed_copper_bulb[lit=false]
+setblock 90148 16 126 minecraft:waxed_copper_bulb[lit=false]
+setblock 90145 15 134 minecraft:waxed_copper_bulb[lit=false]
+setblock 90145 15 126 minecraft:waxed_copper_bulb[lit=false]
+setblock 90142 14 134 minecraft:waxed_copper_bulb[lit=false]
+setblock 90142 14 126 minecraft:waxed_copper_bulb[lit=false]
+setblock 90139 13 134 minecraft:waxed_copper_bulb[lit=false]
+setblock 90139 13 126 minecraft:waxed_copper_bulb[lit=false]
+setblock 90136 12 134 minecraft:waxed_copper_bulb[lit=false]
+setblock 90136 12 126 minecraft:waxed_copper_bulb[lit=false]
+fill 90135 6 132 90135 -1 128 minecraft:netherite_block
 
     function skyblock:protector/entity_count_end {function:"skyblock:sea/map_prepare_ch4.mcfunction"}
