@@ -1,25 +1,25 @@
-#clear @s[gamemode=!creative] basalt
-#clear @s[gamemode=!creative] item_frame
-#clear @s[gamemode=!creative] iron_bars
-#clear @s[gamemode=!creative] deepslate_tiles
-#clear @s[gamemode=!creative] cracked_deepslate_tiles
-#clear @s[gamemode=!creative] deepslate_tile_slab
-#clear @s[gamemode=!creative] waxed_copper_block
-#clear @s[gamemode=!creative] slime_block
-#clear @s[gamemode=!creative] string
-#clear @s[gamemode=!creative] heart_pottery_sherd
-#clear @s[gamemode=!creative] burn_pottery_sherd
-#clear @s[gamemode=!creative] friend_pottery_sherd
-#clear @s[gamemode=!creative] prize_pottery_sherd
-#clear @s[gamemode=!creative] mourner_pottery_sherd
-#clear @s[gamemode=!creative] waxed_copper_grate
-#clear @s[gamemode=!creative] waxed_oxidized_copper_grate
-#clear @s[gamemode=!creative] waxed_oxidized_copper
-#clear @s[gamemode=!creative] lantern
-#clear @s[gamemode=!creative] polished_diorite
-#clear @s[gamemode=!creative] polished_tuff_wall
-#clear @s[gamemode=!creative] decorated_pot
-#clear @s[gamemode=!creative] structure_void
+clear @s[gamemode=!creative] basalt
+clear @s[gamemode=!creative] item_frame
+clear @s[gamemode=!creative] iron_bars
+clear @s[gamemode=!creative] deepslate_tiles
+clear @s[gamemode=!creative] cracked_deepslate_tiles
+clear @s[gamemode=!creative] deepslate_tile_slab
+clear @s[gamemode=!creative] waxed_copper_block
+clear @s[gamemode=!creative] slime_block
+clear @s[gamemode=!creative] string
+clear @s[gamemode=!creative] heart_pottery_sherd
+clear @s[gamemode=!creative] burn_pottery_sherd
+clear @s[gamemode=!creative] friend_pottery_sherd
+clear @s[gamemode=!creative] prize_pottery_sherd
+clear @s[gamemode=!creative] mourner_pottery_sherd
+clear @s[gamemode=!creative] waxed_copper_grate
+clear @s[gamemode=!creative] waxed_oxidized_copper_grate
+clear @s[gamemode=!creative] waxed_oxidized_copper
+clear @s[gamemode=!creative] lantern
+clear @s[gamemode=!creative] polished_diorite
+clear @s[gamemode=!creative] polished_tuff_wall
+clear @s[gamemode=!creative] decorated_pot
+clear @s[gamemode=!creative] structure_void
 
 tag @s remove PVP_see
 
@@ -49,26 +49,25 @@ damage @s[scores={sea_oxygen=..-1}] 10 drown
 
 execute as @s store result score @s sea_i_spectral run clear @s spectral_arrow 0
 execute as @s unless entity @s[scores={sea_i_spectral_load=-999..}] run scoreboard players set @s sea_i_spectral_load 0
-execute as @s[tag=sea_t_spectral1,nbt={Inventory:[{id:"minecraft:arrow"}]},scores={sea_i_spectral=..2,sea_i_spectral_load=..160}] run scoreboard players add @s sea_i_spectral_load 1
-execute as @s[tag=sea_t_spectral2,nbt={Inventory:[{id:"minecraft:arrow"}]},scores={sea_i_spectral=..2,sea_i_spectral_load=..160}] run scoreboard players add @s sea_i_spectral_load 1
-execute as @s[scores={sea_i_spectral=..2,sea_i_spectral_load=160..},nbt=!{Inventory:[{components:{"minecraft:custom_data":{sea_t_spectral_load1:true}}}]}] run clear @s arrow 1
-execute as @s[scores={sea_i_spectral=..2,sea_i_spectral_load=160..},nbt=!{Inventory:[{components:{"minecraft:custom_data":{sea_t_spectral_load1:true}}}]}] run give @s spectral_arrow 1
-execute as @s[scores={sea_i_spectral=..2,sea_i_spectral_load=160..},nbt=!{Inventory:[{components:{"minecraft:custom_data":{sea_t_spectral_load1:true}}}]}] run scoreboard players set @s sea_i_spectral_load 0
-execute as @s[scores={sea_i_spectral=..2,sea_i_spectral_load=120..},nbt={Inventory:[{components:{"minecraft:custom_data":{sea_t_spectral_load1:true}}}]}] run clear @s arrow 1
-execute as @s[scores={sea_i_spectral=..2,sea_i_spectral_load=120..},nbt={Inventory:[{components:{"minecraft:custom_data":{sea_t_spectral_load1:true}}}]}] run give @s spectral_arrow 1
-execute as @s[scores={sea_i_spectral=..2,sea_i_spectral_load=120..},nbt={Inventory:[{components:{"minecraft:custom_data":{sea_t_spectral_load1:true}}}]}] run scoreboard players set @s sea_i_spectral_load 0
+execute as @s[nbt=!{Inventory:[{id:"minecraft:arrow"}]}] run scoreboard players set @s sea_i_spectral_load 0
+execute as @s[tag=sea_t_spectral1,scores={sea_i_spectral=..2,sea_i_spectral_load=..160}] run scoreboard players add @s sea_i_spectral_load 1
+execute as @s[tag=sea_t_spectral2,scores={sea_i_spectral=..2,sea_i_spectral_load=..160}] run scoreboard players add @s sea_i_spectral_load 1
+execute as @s[scores={sea_i_spectral=..2,sea_i_spectral_load=40..50},nbt={Inventory:[{components:{"minecraft:custom_data":{sea_t_spectral_load1:true}}}]}] run scoreboard players add @s sea_i_spectral_load 40
+execute as @s[scores={sea_i_spectral=..2,sea_i_spectral_load=160..}] run clear @s arrow 1
+execute as @s[scores={sea_i_spectral=..2,sea_i_spectral_load=160..}] run give @s spectral_arrow 1
+execute as @s[scores={sea_i_spectral=..2,sea_i_spectral_load=160..}] run scoreboard players set @s sea_i_spectral_load 0
 execute as @s[scores={sea_i_spectral=4..}] run give @s arrow 1
 execute as @s[scores={sea_i_spectral=4..}] run clear @s spectral_arrow 1
 
-execute if entity @s[tag=sea_t_spectral2,nbt={SelectedItem:{id:"minecraft:crossbow"}}] \
-unless entity @s[nbt={SelectedItem:{components:{"minecraft:charged_projectiles":[{id:"minecraft:arrow"}]}}}] \
-unless entity @s[nbt={SelectedItem:{components:{"minecraft:charged_projectiles":[{id:"minecraft:spectral_arrow"}]}}}] \
+execute if items entity @s weapon.mainhand crossbow if entity @s[tag=sea_t_spectral2] \
+unless items entity @s weapon.mainhand crossbow[charged_projectiles=[{id:"minecraft:arrow"}]] \
+unless items entity @s weapon.mainhand crossbow[charged_projectiles=[{id:"minecraft:spectral_arrow"}]] \
 if entity @s[scores={sea_i_spectral=1..}] \
 run tag @s add SEA_spectral_autocharge
 
-execute if entity @s[nbt={SelectedItem:{id:"minecraft:crossbow",components:{"minecraft:charged_projectiles":[{id:"minecraft:arrow"}]}}}] \
+execute if items entity @s weapon.mainhand crossbow[charged_projectiles=[{id:"minecraft:arrow"}]] \
 run title @s actionbar [{"text": "目前装填：","color": "gray"},{"text": "普通箭矢","color": "white"}]
-execute if entity @s[nbt={SelectedItem:{id:"minecraft:crossbow",components:{"minecraft:charged_projectiles":[{id:"minecraft:spectral_arrow"}]}}}] \
+execute if items entity @s weapon.mainhand crossbow[charged_projectiles=[{id:"minecraft:spectral_arrow"}]] \
 run title @s actionbar [{"text": "目前装填：","color": "gray"},{"text": "静滞光棱","color": "gold"}]
 
 execute as @s[tag=SEA_spectral_autocharge] at @s run item replace block 90205 13 112 container.0 from entity @s weapon.mainhand
@@ -78,38 +77,38 @@ execute as @s[tag=SEA_spectral_autocharge] at @s run clear @s spectral_arrow 1
 execute as @s[tag=SEA_spectral_autocharge] at @s run tag @s remove SEA_spectral_autocharge
 
 
-execute as @s[tag=!e_w_01,nbt={Inventory:[{id:"minecraft:iron_hoe"}]}] run tellraw @s {"text": "获得武器：撬棍","color": "dark_red"}
-execute as @s[tag=!e_w_01,nbt={Inventory:[{id:"minecraft:iron_hoe"}]}] run tellraw @s {"text": "防身武器，较快的攻击速度与略微优于赤手空拳的伤害。","color": "white"}
-execute as @s[tag=!e_w_01,nbt={Inventory:[{id:"minecraft:iron_hoe"}]}] run tellraw @s {"text": "找台工作站将其改造一番，或许能够获得意想不到的提升……？","color": "white"}
-execute as @s[tag=!e_w_01,nbt={Inventory:[{id:"minecraft:iron_hoe"}]}] run tag @s add e_w_01
+execute if entity @s[tag=!e_w_01] if items entity @s container.* iron_hoe run tellraw @s {"text": "获得武器：撬棍","color": "dark_red"}
+execute if entity @s[tag=!e_w_01] if items entity @s container.* iron_hoe run tellraw @s {"text": "防身武器，较快的攻击速度与略微优于赤手空拳的伤害。","color": "white"}
+execute if entity @s[tag=!e_w_01] if items entity @s container.* iron_hoe run tellraw @s {"text": "找台工作站将其改造一番，或许能够获得意想不到的提升……？","color": "white"}
+execute if entity @s[tag=!e_w_01] if items entity @s container.* iron_hoe run tag @s add e_w_01
 #execute as @s[tag=e_w_01] store result score @s sea_cursor run clear @s iron_hoe 0
 #execute as @s[tag=e_w_01] store result score @s sea_cursor2 run clear @s netherite_hoe 0
 #execute as @s[tag=e_w_01] at @s if entity @s[scores={sea_cursor=..0,sea_cursor2=..0}] run give @s iron_hoe[custom_name='{"text":"撬棍","italic":false,"color":"red"}',custom_data={sea_crowbar:true},attribute_modifiers=[{type:"generic.attack_damage",slot:"mainhand",id:"sea_weapon:001_01",amount:1.5,operation:"add_value"},{type:"generic.attack_speed",slot:"mainhand",id:"sea_weapon:001_02",amount:-1.5,operation:"add_value"}],unbreakable={}]
-execute as @s[tag=!e_w_02,nbt={Inventory:[{id:"minecraft:iron_axe"}]}] run playsound minecraft:ui.toast.challenge_complete player @s ~ ~ ~ 1 1
-execute as @s[tag=!e_w_02,nbt={Inventory:[{id:"minecraft:iron_axe"}]}] run tellraw @s {"text": "获得新武器：消防斧","color": "dark_red"}
-execute as @s[tag=!e_w_02,nbt={Inventory:[{id:"minecraft:iron_axe"}]}] run tellraw @s {"text": "重型蓄力武器，以较低的速度换取高额攻击力，对单时给予我方优势。","color": "white"}
-execute as @s[tag=!e_w_02,nbt={Inventory:[{id:"minecraft:iron_axe"}]}] run tag @s add e_w_02
+execute if entity @s[tag=!e_w_02] if items entity @s container.* iron_axe run playsound minecraft:ui.toast.challenge_complete player @s ~ ~ ~ 1 1
+execute if entity @s[tag=!e_w_02] if items entity @s container.* iron_axe run tellraw @s {"text": "获得新武器：消防斧","color": "dark_red"}
+execute if entity @s[tag=!e_w_02] if items entity @s container.* iron_axe run tellraw @s {"text": "重型蓄力武器，以较低的速度换取高额攻击力，对单时给予我方优势。","color": "white"}
+execute if entity @s[tag=!e_w_02] if items entity @s container.* iron_axe run tag @s add e_w_02
 #execute as @s[tag=e_w_02] store result score @s sea_cursor run clear @s iron_axe 0
 #execute as @s[tag=e_w_02] store result score @s sea_cursor2 run clear @s netherite_axe 0
 #execute as @s[tag=e_w_02] at @s if entity @s[scores={sea_cursor=..0,sea_cursor2=..0}] run give @s iron_axe[custom_name='{"text":"消防斧","italic":false,"color":"red"}',custom_data={sea_safeaxe:true},attribute_modifiers=[{type:"generic.attack_damage",slot:"mainhand",id:"sea_weapon:004_01",amount:6.5,operation:"add_value"},{type:"generic.attack_speed",slot:"mainhand",id:"sea_weapon:004_02",amount:-3.0,operation:"add_value"}],unbreakable={}]
-execute as @s[tag=!e_w_03,nbt={Inventory:[{id:"minecraft:crossbow"}]}] run playsound minecraft:ui.toast.challenge_complete player @s ~ ~ ~ 1 1
-execute as @s[tag=!e_w_03,nbt={Inventory:[{id:"minecraft:crossbow"}]}] run tellraw @s {"text": "获得新武器：工程弩","color": "dark_red"}
-execute as @s[tag=!e_w_03,nbt={Inventory:[{id:"minecraft:crossbow"}]}] run tellraw @s {"text": "远程武器，原本是用于射出钩缆的工具，搭载弩箭后也可作攻击用途。","color": "white"}
-execute as @s[tag=!e_w_03,nbt={Inventory:[{id:"minecraft:crossbow"}]}] run tellraw @s {"text": "能够用于破坏陶罐。","color": "white"}
-execute as @s[tag=!e_w_03,nbt={Inventory:[{id:"minecraft:crossbow"}]}] run tag @s add e_w_03
+execute if entity @s[tag=!e_w_03] if items entity @s container.* crossbow run playsound minecraft:ui.toast.challenge_complete player @s ~ ~ ~ 1 1
+execute if entity @s[tag=!e_w_03] if items entity @s container.* crossbow run tellraw @s {"text": "获得新武器：工程弩","color": "dark_red"}
+execute if entity @s[tag=!e_w_03] if items entity @s container.* crossbow run tellraw @s {"text": "远程武器，原本是用于射出钩缆的工具，搭载弩箭后也可作攻击用途。","color": "white"}
+execute if entity @s[tag=!e_w_03] if items entity @s container.* crossbow run tellraw @s {"text": "能够用于破坏陶罐。","color": "white"}
+execute if entity @s[tag=!e_w_03] if items entity @s container.* crossbow run tag @s add e_w_03
 #execute as @s[tag=e_w_03] store result score @s sea_cursor run clear @s crossbow 0
 #execute as @s[tag=e_w_03] at @s if entity @s[scores={sea_cursor=..0}] run give @s crossbow[custom_name='{"text":"工程弩","italic":false,"color":"red"}',custom_data={sea_crossbow:true},unbreakable={}]
-execute as @s[tag=!e_w_04] at @s if entity @s[nbt={Inventory:[{components:{"minecraft:custom_data":{sea_flamethrower:true}}}]}] run playsound minecraft:ui.toast.challenge_complete player @s ~ ~ ~ 1 1
-execute as @s[tag=!e_w_04] at @s if entity @s[nbt={Inventory:[{components:{"minecraft:custom_data":{sea_flamethrower:true}}}]}] run tellraw @s {"text": "获得新武器：喷火器","color": "dark_red"}
-execute as @s[tag=!e_w_04] at @s if entity @s[nbt={Inventory:[{components:{"minecraft:custom_data":{sea_flamethrower:true}}}]}] run tellraw @s {"text": "中程武器，右键时向前方射出火舌。虽然燃料会随时间自然恢复，但作为武器的威力欠佳。","color": "white"}
-execute as @s[tag=!e_w_04] at @s if entity @s[nbt={Inventory:[{components:{"minecraft:custom_data":{sea_flamethrower:true}}}]}] run tellraw @s {"text": "射程内无限穿透，适合用于攻击成群的低血量怪物。","color": "white"}
-execute as @s[tag=!e_w_04] at @s if entity @s[nbt={Inventory:[{components:{"minecraft:custom_data":{sea_flamethrower:true}}}]}] run tag @s add e_w_04
+execute if entity @s[tag=!e_w_04] if items entity @s container.* shears[custom_data={sea_flamethrower:true}] run playsound minecraft:ui.toast.challenge_complete player @s ~ ~ ~ 1 1
+execute if entity @s[tag=!e_w_04] if items entity @s container.* shears[custom_data={sea_flamethrower:true}] run tellraw @s {"text": "获得新武器：喷火器","color": "dark_red"}
+execute if entity @s[tag=!e_w_04] if items entity @s container.* shears[custom_data={sea_flamethrower:true}] run tellraw @s {"text": "中程武器，右键时向前方射出火舌。虽然燃料会随时间自然恢复，但作为武器的威力欠佳。","color": "white"}
+execute if entity @s[tag=!e_w_04] if items entity @s container.* shears[custom_data={sea_flamethrower:true}] run tellraw @s {"text": "射程内无限穿透，适合用于攻击成群的低血量怪物。","color": "white"}
+execute if entity @s[tag=!e_w_04] if items entity @s container.* shears[custom_data={sea_flamethrower:true}] run tag @s add e_w_04
 #execute as @s[tag=e_w_04] store result score @s sea_cursor run clear @s shears 0
 #execute as @s[tag=e_w_04] at @s if entity @s[scores={sea_cursor=..0}] run give @s shears[custom_name='{"text":"喷火器","italic":false,"color":"red"}',custom_data={sea_flamethrower:true},unbreakable={}]
 execute as @s[tag=e_w_04,level=..7,scores={sea_oxygen=20..}] run xp add @s 1 points
-execute as @s[tag=e_w_04,level=..7,scores={sea_oxygen=20..}] as @s[nbt={Inventory:[{components:{"minecraft:custom_data":{sea_t_flamethrower1:true}}}]}] run xp add @s 1 points
-execute as @s[tag=e_w_04,level=..7,scores={sea_oxygen=20..}] as @s[nbt={Inventory:[{components:{"minecraft:custom_data":{sea_t_flamethrower2:true}}}]}] run xp add @s 1 points
-execute as @s[tag=e_w_04,level=..7,scores={sea_oxygen=20..}] as @s[nbt={Inventory:[{components:{"minecraft:custom_data":{sea_t_flamethrower3:true}}}]}] run xp add @s 1 points
+execute as @s[tag=e_w_04,level=..7,scores={sea_oxygen=20..}] if items entity @s container.* *[custom_data={sea_flamethrower1:true}] run xp add @s 1 points
+execute as @s[tag=e_w_04,level=..7,scores={sea_oxygen=20..}] if items entity @s container.* *[custom_data={sea_flamethrower2:true}] run xp add @s 1 points
+execute as @s[tag=e_w_04,level=..7,scores={sea_oxygen=20..}] if items entity @s container.* *[custom_data={sea_flamethrower3:true}] run xp add @s 1 points
 execute as @s[tag=e_w_04,level=8..,scores={sea_oxygen=20..}] run xp set @s 8 levels
 execute as @s[tag=e_w_04,level=8..,scores={sea_oxygen=20..}] run xp set @s 0 points
 
@@ -131,9 +130,10 @@ execute if items entity @s player.cursor flow_armor_trim_smithing_template[custo
 execute if items entity @s player.cursor flow_armor_trim_smithing_template[custom_data={sea_t_sprint1:true}] run tag @s add sea_t_sprint_disabled
 #execute if score @s sea_cursor2 matches 1.. run say hello
 
-execute as @s[nbt={Inventory:[{components:{"minecraft:custom_data":{sea_t_spectral1:true}}}]}] at @s run tag @s add sea_t_spectral1
-execute as @s[nbt={Inventory:[{components:{"minecraft:custom_data":{sea_t_spectral2:true}}}]}] at @s run tag @s add sea_t_spectral2
-execute as @s[nbt={Inventory:[{components:{"minecraft:custom_data":{sea_t_sprint1:true}}}]}] at @s run tag @s add sea_t_sprint1
+execute if items entity @s container.* *[custom_data={sea_t_spectral1:true}] run tag @s add sea_t_spectral1
+execute if items entity @s container.* *[custom_data={sea_t_spectral2:true}] run tag @s add sea_t_spectral2
+execute if items entity @s container.* *[custom_data={sea_t_sprint1:true}] run tag @s add sea_t_sprint1
+
 clear @s barrier
 clear @s flow_armor_trim_smithing_template
 item replace entity @s[tag=!sea_t_spectral1] player.crafting.0 with barrier
@@ -145,13 +145,13 @@ item replace entity @s[tag=sea_t_sprint1,tag=sea_t_sprint_disabled] player.craft
 item replace entity @s player.crafting.2 with barrier
 item replace entity @s player.crafting.3 with barrier
 
-execute as @s[nbt={Inventory:[{id:"minecraft:raiser_armor_trim_smithing_template"}]}] at @s run function skyblock:sea/shop_trim {trim:sea_i_trim_zombie, trim_name:"牧羊人",trim_type:raiser_armor_trim_smithing_template}
-execute as @s[nbt={Inventory:[{id:"minecraft:wayfinder_armor_trim_smithing_template"}]}] at @s run function skyblock:sea/shop_trim {trim:sea_i_trim_human, trim_name:"醒殉徒",trim_type:wayfinder_armor_trim_smithing_template}
-execute as @s[nbt={Inventory:[{id:"minecraft:wild_armor_trim_smithing_template"}]}] at @s run function skyblock:sea/shop_trim {trim:sea_i_trim_spider, trim_name:"狂荒",trim_type:wild_armor_trim_smithing_template}
-execute as @s[nbt={Inventory:[{id:"minecraft:sentry_armor_trim_smithing_template"}]}] at @s run function skyblock:sea/shop_trim {trim:sea_i_trim_bug, trim_name:"辽哨",trim_type:sentry_armor_trim_smithing_template}
-execute as @s[nbt={Inventory:[{id:"minecraft:dune_armor_trim_smithing_template"}]}] at @s run function skyblock:sea/shop_trim {trim:sea_i_trim_skeleton, trim_name:"金砂",trim_type:dune_armor_trim_smithing_template}
-execute as @s[nbt={Inventory:[{id:"minecraft:vex_armor_trim_smithing_template"}]}] at @s run function skyblock:sea/shop_trim {trim:sea_i_trim_ghost, trim_name:"招魂",trim_type:vex_armor_trim_smithing_template}
-execute as @s[nbt={Inventory:[{id:"minecraft:coast_armor_trim_smithing_template"}]}] at @s run function skyblock:sea/shop_trim {trim:sea_i_trim_sea, trim_name:"海啸",trim_type:coast_armor_trim_smithing_template}
+execute if items entity @s container.* raiser_armor_trim_smithing_template at @s run function skyblock:sea/shop_trim {trim:sea_i_trim_zombie, trim_name:"牧羊人",trim_type:raiser_armor_trim_smithing_template}
+execute if items entity @s container.* minecraft:wayfinder_armor_trim_smithing_template at @s run function skyblock:sea/shop_trim {trim:sea_i_trim_human, trim_name:"醒殉徒",trim_type:wayfinder_armor_trim_smithing_template}
+execute if items entity @s container.* minecraft:wild_armor_trim_smithing_template at @s run function skyblock:sea/shop_trim {trim:sea_i_trim_spider, trim_name:"狂荒",trim_type:wild_armor_trim_smithing_template}
+execute if items entity @s container.* minecraft:sentry_armor_trim_smithing_template at @s run function skyblock:sea/shop_trim {trim:sea_i_trim_bug, trim_name:"辽哨",trim_type:sentry_armor_trim_smithing_template}
+execute if items entity @s container.* minecraft:dune_armor_trim_smithing_template at @s run function skyblock:sea/shop_trim {trim:sea_i_trim_skeleton, trim_name:"金砂",trim_type:dune_armor_trim_smithing_template}
+execute if items entity @s container.* minecraft:vex_armor_trim_smithing_template at @s run function skyblock:sea/shop_trim {trim:sea_i_trim_ghost, trim_name:"招魂",trim_type:vex_armor_trim_smithing_template}
+execute if items entity @s container.* minecraft:coast_armor_trim_smithing_template at @s run function skyblock:sea/shop_trim {trim:sea_i_trim_sea, trim_name:"海啸",trim_type:coast_armor_trim_smithing_template}
 
 
 
@@ -169,7 +169,7 @@ execute as @s[x=80000,dx=20000,z=-10000,dz=20000,y=33,dy=5] at @s if block ~ ~-1
 
 
 #回响指南针
-execute as @s[nbt={SelectedItem:{id:"minecraft:recovery_compass"}}] run function skyblock:sea/p/echo_compass
+execute if items entity @s weapon.* minecraft:recovery_compass run function skyblock:sea/p/echo_compass
 
 execute unless block ~ ~-1 ~ air unless block ~ ~-1 ~ water if block ~ ~ ~ air if block ~ ~1 ~ air run spawnpoint @s ~ ~ ~
 execute if entity @s[tag=!seaPerm000] run clone 90121 122 108 90121 122 108 90118 123 106
