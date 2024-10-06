@@ -133,9 +133,9 @@ execute as @s[tag=boss2hplock3,tag=!boss2hplock3warn2] run tag @s add boss2hploc
 execute as @s[scores={sea_boss1_hp=101..250}] run effect give @s speed 3 0 true
 execute as @s[scores={sea_boss1_hp=30..100}] run effect give @s speed 3 2 true
 
-execute if entity @n[tag=sc,scores={sea_4temp2=2220..}] as @s[tag=!boss2hplock3] at @s unless entity @a[tag=SEAPT,distance=0..5.8] at @p[tag=SEAPT] if block ~2 ~ ~ air run tp @s ~2 ~ ~
-execute if entity @n[tag=sc,scores={sea_4temp2=2220..}] as @s[tag=!boss2hplock3] at @s unless entity @a[tag=SEAPT,distance=0..5.8] at @p[tag=SEAPT] unless block ~2 ~ ~ air if block ~2 ~ ~1 air run tp @s ~2 ~ ~1
-execute if entity @n[tag=sc,scores={sea_4temp2=2220..}] as @s[tag=!boss2hplock3] at @s unless entity @a[tag=SEAPT,distance=0..5.8] at @p[tag=SEAPT] unless block ~2 ~ ~ air unless block ~2 ~ ~1 air if block ~2 ~ ~-1 air run tp @s ~2 ~ ~-1
+execute if entity @n[tag=sc,scores={sea_4temp2=2220..}] as @s[tag=!boss2hplock3] at @s unless entity @a[tag=SEAPT,distance=0..7.8] at @p[tag=SEAPT] if block ~2 ~ ~ air run tp @s ~2 ~ ~
+execute if entity @n[tag=sc,scores={sea_4temp2=2220..}] as @s[tag=!boss2hplock3] at @s unless entity @a[tag=SEAPT,distance=0..7.8] at @p[tag=SEAPT] unless block ~2 ~ ~ air if block ~2 ~ ~1 air run tp @s ~2 ~ ~1
+execute if entity @n[tag=sc,scores={sea_4temp2=2220..}] as @s[tag=!boss2hplock3] at @s unless entity @a[tag=SEAPT,distance=0..7.8] at @p[tag=SEAPT] unless block ~2 ~ ~ air unless block ~2 ~ ~1 air if block ~2 ~ ~-1 air run tp @s ~2 ~ ~-1
 
 execute as @s[x=90105,y=128,z=93,distance=0..6,tag=!boss2hplock1] at @s run fill 90099 130 94 90099 128 92 air destroy
 execute as @s[x=90105,y=128,z=93,distance=0..6,tag=!boss2hplock1] at @s positioned 90092 128 96 run function skyblock:sea/m/zombie_cook
