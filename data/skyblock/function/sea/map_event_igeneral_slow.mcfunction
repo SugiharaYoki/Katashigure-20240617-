@@ -271,7 +271,7 @@ execute if block 90088 128 114 air unless block 90088 129 115 air positioned 900
 execute if block 90088 128 114 air unless block 90088 129 115 air run fill 90088 129 115 90088 128 115 minecraft:air destroy
 
 
-execute as @a[tag=SEAPT] at @s run function skyblock:sea/p/player
+#execute as @a[tag=SEAPT] at @s run function skyblock:sea/p/player
 
 
 
