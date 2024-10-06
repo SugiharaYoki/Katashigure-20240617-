@@ -61,6 +61,7 @@ bossbar set minecraft:9066601 style progress
 bossbar set minecraft:9066601 max 500
 execute store result bossbar minecraft:9066601 value run data get entity @e[tag=SEAboss2,limit=1,type=bogged] Health
 
+execute unless entity @s[scores={sea_4temp8=-999..}] run scoreboard players set @s sea_4temp8 0
 execute store result score @s[scores={sea_4temp8=..0}] rng1 run random value 1..20
 execute as @s[scores={sea_4temp8=..0,rng1=1}] at @s run scoreboard players set @s sea_4temp8 52
 execute as @s[scores={sea_4temp8=..0,rng1=1}] at @s run playsound entity.warden.sonic_charge hostile @a ~ ~ ~ 1 1.3
