@@ -8,26 +8,22 @@ execute unless score sea_ch4_switch_secondfloor sea_4temp2 matches -999.. run sc
 
 
 execute as @a[tag=SEAPT,x=90175,y=19,z=89,distance=0..4.8,tag=!e_i_33] at @s run title @s times 2s 4s 2s
-execute as @a[tag=SEAPT,x=90175,y=19,z=89,distance=0..4.8,tag=!e_i_33] at @s run title @s title {"text": "地下研究设施","color": "dark_blue"}
+execute as @a[tag=SEAPT,x=90175,y=19,z=89,distance=0..4.8,tag=!e_i_33] at @s run title @s title {"text": "地下研究设施 · 冷凝系统","color": "dark_blue"}
 execute as @a[tag=SEAPT,x=90175,y=19,z=89,distance=0..4.8,tag=!e_i_33] at @s run title @s subtitle {"text": "厄珀娅的悲歌 第肆章","color": "gray"}
 execute as @a[tag=SEAPT,x=90175,y=19,z=89,distance=0..4.8,tag=!e_i_33] at @s run playsound ambient.underwater.loop master @s ~ ~ ~ 100 0.8
 execute as @a[tag=SEAPT,x=90175,y=19,z=89,distance=0..4.8,tag=!e_i_33] at @s run playsound ambient.underwater.loop master @s ~ ~ ~ 100 0.8
 execute as @a[tag=SEAPT,x=90175,y=19,z=89,distance=0..4.8,tag=!e_i_33] at @s run playsound ambient.underwater.loop master @s ~ ~ ~ 100 1.2
 execute as @a[tag=SEAPT,x=90175,y=19,z=89,distance=0..4.8,tag=!e_i_33] at @s run playsound ambient.underwater.loop master @s ~ ~ ~ 100 1.2
 execute as @a[tag=SEAPT,x=90175,y=19,z=89,distance=0..4.8,tag=!e_i_33] at @s run playsound ambient.underwater.loop master @s ~ ~ ~ 100 1.2
-execute as @a[tag=SEAPT,x=90175,y=19,z=89,distance=0..4.8,tag=!e_i_33] at @s run playsound ambient.underwater.loop master @s ~ ~ ~ 100 1.2
-execute as @a[tag=SEAPT,x=90175,y=19,z=89,distance=0..4.8,tag=!e_i_33] at @s run playsound ambient.warped_forest.loop master @s ~ ~ ~ 100 0.9
-execute as @a[tag=SEAPT,x=90175,y=19,z=89,distance=0..4.8,tag=!e_i_33] at @s run playsound ambient.warped_forest.additions master @s ~ ~ ~ 100 0.9
-execute as @a[tag=SEAPT,x=90175,y=19,z=89,distance=0..4.8,tag=!e_i_33] at @s run playsound ambient.warped_forest.loop master @s ~ ~ ~ 100 0.7
-execute as @a[tag=SEAPT,x=90175,y=19,z=89,distance=0..4.8,tag=!e_i_33] at @s run playsound ambient.warped_forest.additions master @s ~ ~ ~ 100 0.7
-execute as @a[tag=SEAPT,x=90175,y=19,z=89,distance=0..4.8,tag=!e_i_33] at @s run playsound ambient.warped_forest.loop master @s ~ ~ ~ 100 0.9
-execute as @a[tag=SEAPT,x=90175,y=19,z=89,distance=0..4.8,tag=!e_i_33] at @s run playsound ambient.warped_forest.additions master @s ~ ~ ~ 100 0.9
-execute as @a[tag=SEAPT,x=90175,y=19,z=89,distance=0..4.8,tag=!e_i_33] at @s run playsound ambient.warped_forest.loop master @s ~ ~ ~ 100 0.7
-execute as @a[tag=SEAPT,x=90175,y=19,z=89,distance=0..4.8,tag=!e_i_33] at @s run playsound ambient.warped_forest.additions master @s ~ ~ ~ 100 0.7
-execute as @a[tag=SEAPT,x=90175,y=19,z=89,distance=0..4.8,tag=!e_i_33] at @s run playsound ambient.warped_forest.loop master @s ~ ~ ~ 100 0.9
-execute as @a[tag=SEAPT,x=90175,y=19,z=89,distance=0..4.8,tag=!e_i_33] at @s run playsound ambient.warped_forest.additions master @s ~ ~ ~ 100 0.9
-execute as @a[tag=SEAPT,x=90175,y=19,z=89,distance=0..4.8,tag=!e_i_33] at @s run playsound ambient.warped_forest.loop master @s ~ ~ ~ 100 0.7
-execute as @a[tag=SEAPT,x=90175,y=19,z=89,distance=0..4.8,tag=!e_i_33] at @s run playsound ambient.warped_forest.additions master @s ~ ~ ~ 100 0.7
+execute as @a[tag=SEAPT,x=90175,y=19,z=89,distance=0..4.8,tag=!e_i_33] at @s run playsound ambient.warped_forest.additions master @s ~ ~ ~ 100 0.8
+execute as @a[tag=SEAPT,x=90175,y=19,z=89,distance=0..4.8,tag=!e_i_33] at @s run playsound ambient.warped_forest.additions master @s ~ ~ ~ 100 0.8
+execute as @a[tag=SEAPT,x=90175,y=19,z=89,distance=0..4.8,tag=!e_i_33] at @s run playsound ambient.warped_forest.additions master @s ~ ~ ~ 100 0.8
+execute as @a[tag=SEAPT,x=90175,y=19,z=89,distance=0..4.8,tag=!e_i_33] at @s run playsound ambient.warped_forest.additions master @s ~ ~ ~ 100 0.8
+execute as @a[tag=SEAPT,x=90175,y=19,z=89,distance=0..4.8,tag=!e_i_33] at @s run playsound ambient.warped_forest.mood master @s ~ ~ ~ 100 0.6
+execute as @a[tag=SEAPT,x=90175,y=19,z=89,distance=0..4.8,tag=!e_i_33] at @s run playsound ambient.warped_forest.mood master @s ~ ~ ~ 100 0.6
+execute as @a[tag=SEAPT,x=90175,y=19,z=89,distance=0..4.8,tag=!e_i_33] at @s run playsound ambient.warped_forest.mood master @s ~ ~ ~ 100 0.6
+execute as @a[tag=SEAPT,x=90175,y=19,z=89,distance=0..4.8,tag=!e_i_33] at @s run playsound ambient.warped_forest.mood master @s ~ ~ ~ 100 0.6
+execute as @a[tag=SEAPT,x=90175,y=19,z=89,distance=0..4.8,tag=!e_i_33] at @s run playsound ambient.warped_forest.mood master @s ~ ~ ~ 100 0.6
 execute as @a[tag=SEAPT,x=90175,y=19,z=89,distance=0..4.8,tag=!e_i_33] at @s run tag @s add e_i_33
 
 
