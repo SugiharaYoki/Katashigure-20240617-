@@ -463,6 +463,7 @@ execute as @a[tag=SEAPT,x=90138,y=103,z=100,distance=0..2.7,tag=!e_i_29] at @s r
 
 execute as @a[tag=SEAPT,x=90138,y=36,z=100,distance=0..2.7,tag=!e_i_31] at @s run function skyblock:sea/e/ev010
 execute if entity @n[tag=SEAbossch3_core] at @s run function skyblock:sea/e/ev010
-
+say hello1
+execute if entity @n[tag=SEAbossch3_core] at @s run say hello2
 
     function skyblock:protector/entity_count_end {function:"skyblock:sea/map_event_i03_slow.mcfunction"}
