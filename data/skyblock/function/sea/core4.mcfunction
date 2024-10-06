@@ -16,7 +16,6 @@ execute if block 90075 103 141 minecraft:cauldron unless block 90075 103 137 sca
 scoreboard players add sc sea_speedrun_ch4 1
 
 execute store result score @n[tag=sc] sea_player run execute if entity @a[tag=SEAPT]
-say hi
 
 execute unless entity @a[tag=SEAPT] if entity @a[x=90074,y=92,z=139,distance=0..50,gamemode=!spectator] run function skyblock:sea/endgame_regen
 
