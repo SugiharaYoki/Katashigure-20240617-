@@ -1,5 +1,13 @@
 #head
 #enum template [$1=0..4]:
+#execute if data storage ph {runtime:{table:$1}} run data modify storage ph runtime merge from storage ph table_manager[{table:$1}]
+execute if data storage ph {runtime:{table:0}} run data modify storage ph runtime merge from storage ph table_manager[{table:0}]
+execute if data storage ph {runtime:{table:1}} run data modify storage ph runtime merge from storage ph table_manager[{table:1}]
+execute if data storage ph {runtime:{table:2}} run data modify storage ph runtime merge from storage ph table_manager[{table:2}]
+execute if data storage ph {runtime:{table:3}} run data modify storage ph runtime merge from storage ph table_manager[{table:3}]
+execute if data storage ph {runtime:{table:4}} run data modify storage ph runtime merge from storage ph table_manager[{table:4}]
+
+#enum template [$1=0..4]:
 #execute if data storage ph {runtime:{table:$1}} run tag @a[tag=4ASCENDPlayer,tag=table$1] add current_table
 execute if data storage ph {runtime:{table:0}} run tag @a[tag=4ASCENDPlayer,tag=table0] add current_table
 execute if data storage ph {runtime:{table:1}} run tag @a[tag=4ASCENDPlayer,tag=table1] add current_table
@@ -14,14 +22,6 @@ execute if data storage ph {runtime:{table:4}} run tag @e[type=block_display,tag
 execute if data storage ph {runtime:{turn:0}} run tag @a[tag=current_table,tag=4ASCENDHost] add current_turn
 execute if data storage ph {runtime:{turn:1}} run tag @a[tag=current_table,tag=4ASCENDGuest] add current_turn
 
-#enum template [$1=0..4]:
-#execute if data storage ph {runtime:{table:$1}} run data modify storage ph runtime merge from storage ph table_manager[{table:$1}]
-execute if data storage ph {runtime:{table:0}} run data modify storage ph runtime merge from storage ph table_manager[{table:0}]
-execute if data storage ph {runtime:{table:1}} run data modify storage ph runtime merge from storage ph table_manager[{table:1}]
-execute if data storage ph {runtime:{table:2}} run data modify storage ph runtime merge from storage ph table_manager[{table:2}]
-execute if data storage ph {runtime:{table:3}} run data modify storage ph runtime merge from storage ph table_manager[{table:3}]
-execute if data storage ph {runtime:{table:4}} run data modify storage ph runtime merge from storage ph table_manager[{table:4}]
-    
     #ray-cast
     execute as @a[tag=current_table,tag=current_turn] at @s as 0-0-0-0-0 positioned 0. 0. 0. positioned ^ ^ ^1 run function skyblock:api_world_entity_getpos
     scoreboard players operation eye_vector_x 4ASCEND_system = getpos_x skyblock_system
