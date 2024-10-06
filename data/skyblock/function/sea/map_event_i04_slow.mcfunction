@@ -185,6 +185,7 @@ execute positioned 90189 28 124 if block ~ ~ ~ minecraft:magenta_glazed_terracot
 execute positioned 90189 28 124 if block ~ ~ ~ minecraft:magenta_glazed_terracotta[facing=south] if block 90195 29 121 minecraft:waxed_copper_bulb[lit=false] run setblock 90195 29 125 minecraft:waxed_copper_bulb[lit=true]
 execute positioned 90189 28 124 if block ~ ~ ~ minecraft:magenta_glazed_terracotta[facing=south] if block 90195 29 121 minecraft:waxed_copper_bulb[lit=false] run setblock 90195 29 121 minecraft:waxed_copper_bulb[lit=true]
 
+execute if block 90192 28 133 iron_bars positioned 90189 28 124 if block ~ ~ ~ minecraft:magenta_glazed_terracotta[facing=west] positioned 90189 28 122 if block ~ ~ ~ minecraft:magenta_glazed_terracotta[facing=west] run fill 90192 28 133 90192 27 133 air destroy
 
 
 execute if block 90199 35 129 redstone_lamp[lit=false] if score sea_ch4_switch_secondfloor sea_4temp2 matches 25.. run scoreboard players set sea_ch4_switch_secondfloor sea_4temp2 24
