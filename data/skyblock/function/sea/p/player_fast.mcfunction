@@ -36,12 +36,12 @@ execute as @s[tag=sea_exp_thunderblast] at @s run function skyblock:sea/experime
 #execute as @s[tag=sea_t_parry1,nbt={SelectedItem:{id:"minecraft:shield"}},scores={sea_shielding=10..,sea_shield_switch=0..}] run effect give @s strength 1 4 false
 
 
-execute as @s[tag=sea_t_parry1,nbt=!{SelectedItem:{id:"minecraft:shield"}}] run scoreboard players set @s sea_shield_switch 20
-execute as @s[tag=sea_t_parry1,nbt=!{SelectedItem:{id:"minecraft:shield"}}] run scoreboard players set @s sea_shielding_2 0
-execute as @s[tag=sea_t_parry1,nbt={SelectedItem:{id:"minecraft:shield"}}] run function skyblock:sea/p/parry
+execute unless items entity @s weapon.mainhand shield as @s[tag=sea_t_parry1] run scoreboard players set @s sea_shield_switch 20
+execute unless items entity @s weapon.mainhand shield as @s[tag=sea_t_parry1] run scoreboard players set @s sea_shielding_2 0
+execute if items entity @s weapon.mainhand shield as @s[tag=sea_t_parry1] run function skyblock:sea/p/parry
 
 
 execute as @s[tag=sea_t_axeparry1,nbt={SelectedItem:{id:"minecraft:netherite_axe"}},predicate=skyblock:sneaking,scores={sea_axeparry_jump=1..}] run function skyblock:sea/p/axeparry
 execute as @s[scores={sea_axeparry_jump=1..}] run scoreboard players set @s sea_axeparry_jump 0
 
-execute as @s[nbt={Inventory:[{components:{"minecraft:custom_data":{sea_chest_shadowchest:true}},Slot:102b}]},predicate=skyblock:sneaking] run effect give @s invisibility 3 0 false
+execute if items entity @s armor.chest *[custom_data={sea_chest_shadowchest:true}] if entity @s[predicate=skyblock:sneaking] run effect give @s invisibility 3 0 false
