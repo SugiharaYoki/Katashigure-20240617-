@@ -48,4 +48,6 @@ execute at @n[tag=SEAshotgun_shoot] as @e[tag=SEAmob,distance=0..2.3] run damage
 execute at @n[tag=SEAshotgun_shoot] as @e[tag=SEAmob,distance=0..2.3] run data modify entity @s Fire set value 40s
 execute at @n[tag=SEAshotgun_shoot] as @e[tag=SEAmagma1,type=marker,distance=..2.3] at @s run function skyblock:sea/p/magma
 
+kill @n[tag=SEAshotgun_shoot]
+
 clear @s firework_star 1
