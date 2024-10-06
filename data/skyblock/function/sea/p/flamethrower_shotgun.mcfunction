@@ -1,8 +1,8 @@
 playsound minecraft:item.flintandsteel.use player @a ~ ~ ~ 0.8 1.2
 playsound minecraft:block.fire.ambient player @a ~ ~ ~ 0.8 1.2
 playsound minecraft:entity.firework_rocket.blast player @a ~ ~ ~ 1 0.5
-playsound minecraft:entity.firework_rocket.blast player @a ~ ~ ~ 1 0.7
-playsound minecraft:entity.firework_rocket.blast player @a ~ ~ ~ 1 0.8
+playsound minecraft:entity.firework_rocket.blast player @a ~ ~ ~ 1 0.6
+playsound minecraft:entity.firework_rocket.blast player @a ~ ~ ~ 1 0.75
 playsound minecraft:entity.item.break player @a ~ ~ ~ 0.6 0.6
 
 execute rotated as @s run summon marker ~ ~ ~ {Tags:["SEAshotgun_shoot"]}
