@@ -150,6 +150,11 @@ attribute @s minecraft:generic.max_health modifier remove sea_t_health2
 attribute @s minecraft:generic.max_health modifier remove sea_t_health3
 attribute @s minecraft:generic.max_health modifier remove sea_t_health4
 attribute @s minecraft:generic.max_health modifier remove sea_t_health5
+attribute @s minecraft:generic.attack_knockback modifier remove sea_t_knockback1
+attribute @s minecraft:generic.attack_knockback modifier remove sea_t_knockback2
+attribute @s minecraft:generic.attack_knockback modifier remove sea_t_knockback3
+attribute @s minecraft:generic.attack_knockback modifier remove sea_t_knockback4
+attribute @s minecraft:generic.attack_knockback modifier remove sea_t_knockback5
 
 tag @s remove sea_t_armor1
 tag @s remove sea_t_armor2
@@ -181,5 +186,10 @@ tag @s remove sea_t_health2
 tag @s remove sea_t_health3
 tag @s remove sea_t_health4
 tag @s remove sea_t_health5
+tag @s remove sea_t_knockback1
+tag @s remove sea_t_knockback2
+tag @s remove sea_t_knockback3
+tag @s remove sea_t_knockback4
+tag @s remove sea_t_knockback5
 
 execute unless entity @a[tag=SEAPT] run function skyblock:sea/endgame_regen

@@ -46,6 +46,14 @@ execute if entity @s[tag=!sea_t_health2] run data modify entity @n[tag=SEAenchan
 execute if entity @s[tag=!sea_t_health3] run data modify entity @n[tag=SEAenchant_illum3] CustomName set value '" x "'
 tellraw @s [{"text":" 汲冉之魂 ","color":"light_purple"},{"selector":"@n[tag=SEAenchant_illum1]","color":"dark_purple"},{"selector":"@n[tag=SEAenchant_illum2]","color":"dark_purple"},{"selector":"@n[tag=SEAenchant_illum3]","color":"dark_purple"}]
 
+execute if entity @s[tag=sea_t_attackspeed1] run data modify entity @n[tag=SEAenchant_illum1] CustomName set value '" I "'
+execute if entity @s[tag=sea_t_attackspeed2] run data modify entity @n[tag=SEAenchant_illum2] CustomName set value '" II "'
+execute if entity @s[tag=sea_t_attackspeed3] run data modify entity @n[tag=SEAenchant_illum3] CustomName set value '" III "'
+execute if entity @s[tag=!sea_t_attackspeed1] run data modify entity @n[tag=SEAenchant_illum1] CustomName set value '" x "'
+execute if entity @s[tag=!sea_t_attackspeed2] run data modify entity @n[tag=SEAenchant_illum2] CustomName set value '" x "'
+execute if entity @s[tag=!sea_t_attackspeed3] run data modify entity @n[tag=SEAenchant_illum3] CustomName set value '" x "'
+tellraw @s [{"text":" 烈躁之魂 ","color":"light_purple"},{"selector":"@n[tag=SEAenchant_illum1]","color":"dark_purple"},{"selector":"@n[tag=SEAenchant_illum2]","color":"dark_purple"},{"selector":"@n[tag=SEAenchant_illum3]","color":"dark_purple"}]
+
 execute if entity @s[tag=sea_t_knockback1] run data modify entity @n[tag=SEAenchant_illum1] CustomName set value '" I "'
 execute if entity @s[tag=sea_t_knockback2] run data modify entity @n[tag=SEAenchant_illum2] CustomName set value '" II "'
 execute if entity @s[tag=sea_t_knockback3] run data modify entity @n[tag=SEAenchant_illum3] CustomName set value '" III "'
