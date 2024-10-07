@@ -100,8 +100,8 @@ execute if entity @s[tag=!e_w_03b] if items entity @s container.* bow run playso
 execute if entity @s[tag=!e_w_03b] if items entity @s container.* bow run tellraw @s {"text": "获得新武器：复合弓","color": "dark_red"}
 execute if entity @s[tag=!e_w_03b] if items entity @s container.* bow run tellraw @s {"text": "远程武器，似乎是史丹尼舵长用于防身的武器。","color": "white"}
 execute if entity @s[tag=!e_w_03b] if items entity @s container.* bow run tellraw @s {"text": "绝大多数枪械都被邪教徒销毁。现如今，这种简单的武器也会发挥出意想不到的效果吧。","color": "white"}
-execute if entity @s[tag=!e_w_03b] if items entity @s container.* bow run tag @s add e_w_03b
 execute if entity @s[tag=!e_w_03b] if items entity @s container.* bow run tag @s add e_w_03b_eternal
+execute if entity @s[tag=!e_w_03b] if items entity @s container.* bow run tag @s add e_w_03b
 #execute as @s[tag=e_w_03] store result score @s sea_cursor run clear @s crossbow 0
 #execute as @s[tag=e_w_03] at @s if entity @s[scores={sea_cursor=..0}] run give @s crossbow[custom_name='{"text":"工程弩","italic":false,"color":"red"}',custom_data={sea_crossbow:true},unbreakable={}]
 execute if entity @s[tag=!e_w_04] if items entity @s container.* shears[custom_data={sea_flamethrower:true}] run playsound minecraft:ui.toast.challenge_complete player @s ~ ~ ~ 1 1
