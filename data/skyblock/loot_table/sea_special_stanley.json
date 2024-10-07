@@ -1,0 +1,85 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 6,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:air",
+          "weight": 30
+        },
+	      {
+          "type": "minecraft:item",
+          "name": "minecraft:raiser_armor_trim_smithing_template",
+          "weight": 7,
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "牧羊人石板",
+                "color": "light_purple",
+                "italic": false
+              }
+            }
+          ]
+        },
+	      {
+          "type": "minecraft:item",
+          "name": "minecraft:dune_armor_trim_smithing_template",
+          "weight": 7,
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "金砂石板",
+                "color": "light_purple",
+                "italic": false
+              }
+            }
+          ]
+        },
+	{
+          "type": "minecraft:item",
+          "name": "minecraft:emerald",
+          "weight": 16
+        }
+      ]
+    },
+    {
+      "rolls": 15,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:air",
+          "weight": 40
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:raw_iron",
+          "weight": 6
+        },
+	      {
+          "type": "minecraft:item",
+          "name": "minecraft:emerald",
+          "weight": 100
+        }
+      ]
+    },
+    {
+      "rolls": 3,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:air",
+          "weight": 5
+        },
+	      {
+          "type": "minecraft:item",
+          "name": "minecraft:glistering_melon_slice",
+          "weight": 5
+        }
+      ]
+    }
+  ]
+}
