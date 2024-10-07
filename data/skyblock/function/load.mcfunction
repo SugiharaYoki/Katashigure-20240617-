@@ -104,9 +104,6 @@ scoreboard objectives add Temp4 dummy
 scoreboard objectives add TimeRemainUnsee dummy
 scoreboard objectives add ZeroBGM dummy
 
-#轩宇1725：建议用虚拟玩家来做常数记分板
-scoreboard objectives add 2 dummy
-scoreboard players set @n[tag=sc] 2 2
 #constant
 scoreboard objectives add constant dummy
 scoreboard players set 2 constant 2

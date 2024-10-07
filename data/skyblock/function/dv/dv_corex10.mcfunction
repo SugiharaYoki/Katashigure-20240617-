@@ -20,8 +20,8 @@ kill @e[x=-90001,y=105,z=56,distance=0..500,type=item,nbt=!{Item:{id:"minecraft:
 
 
 
-execute as @a[tag=SeGa_DVA,scores={DeathCount=1..}] at @s run scoreboard players operation @s Temp_PersonDVS /= @n[tag=sc] 2
-execute as @a[tag=SeGa_DVA,scores={DeathCount=1..}] at @s run scoreboard players operation @s Temp_PersonDVSt /= @n[tag=sc] 2
+execute as @a[tag=SeGa_DVA,scores={DeathCount=1..}] at @s run scoreboard players operation @s Temp_PersonDVS /= 2 constant
+execute as @a[tag=SeGa_DVA,scores={DeathCount=1..}] at @s run scoreboard players operation @s Temp_PersonDVSt /= 2 constant
 execute as @a[tag=SeGa_DVA,scores={DeathCount=1..}] at @s run scoreboard players set @s DeathCount 0
 
 execute if entity @n[tag=sc,scores={SeGa_DVTimer=6..}] as @a[tag=SeGa_DVA,x=-90001,y=105,z=56,distance=0..200,gamemode=!spectator,gamemode=!creative] at @s unless block ~ ~ ~ water[level=15] if entity @s[y=0,dy=101] run tellraw @s {"text":"你失足坠崖了！已自动传送回亭内！","color":"yellow"}

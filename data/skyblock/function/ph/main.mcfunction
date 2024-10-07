@@ -19,3 +19,4 @@ execute unless data storage ph {table_manager:[{table:3,available:1b}]} run data
 execute unless data storage ph {table_manager:[{table:3,available:1b}]} run function skyblock:ph/runtime/core
 execute unless data storage ph {table_manager:[{table:4,available:1b}]} run data modify storage ph runtime.table set value 4
 execute unless data storage ph {table_manager:[{table:4,available:1b}]} run function skyblock:ph/runtime/core
+
