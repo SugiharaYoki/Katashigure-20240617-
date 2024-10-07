@@ -1,6 +1,6 @@
     function skyblock:protector/entity_count_start
 
-execute at @s run setblock ~ ~ ~ air destroy
+setblock ~ ~ ~ air destroy
 function skyblock:sea/m/magma
 kill @s
 

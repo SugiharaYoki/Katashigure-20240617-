@@ -177,4 +177,4 @@ execute unless entity @s[tag=!seaPerm000] run clone 90121 122 109 90121 122 109 
 
 
 #炽热球体
-execute as @n[tag=SEAmagma1,type=marker,distance=0..2.5] run function skyblock:sea/p/magma
+execute as @n[tag=SEAmagma1,type=marker,distance=0..2.5] at @s run function skyblock:sea/p/magma
