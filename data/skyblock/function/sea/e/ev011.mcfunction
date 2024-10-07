@@ -41,6 +41,11 @@ execute if score SEAchg_spawn_timer_longbridge rng1 matches 1 as @n[tag=SEAstanl
 execute if score SEAchg_spawn_timer_longbridge rng1 matches 1 as @n[tag=SEAstanley] at @s run particle enchant ~ ~0.28 ~ 0.8 0 0.8 0.05 40
 execute if score SEAchg_spawn_timer_longbridge rng1 matches 1 as @n[tag=SEAstanley] at @s run playsound entity.evoker.cast_spell hostile @a ~ ~ ~ 1 1.2
 
+
+execute if score SEAchg_spawn_timer_longbridge rng1 matches 50 as @n[tag=SEAstanley] at @s as @p[distance=0..4] at @s rotated ~ 0 positioned ^ ^ ^-3 if block ~ ~ ~ air if block ~ ~1 ~ air unless block ~ ~-1 ~ air at @n[tag=SEAstanley] run particle portal ~ ~1 ~ 0.5 0.5 0.5 0.05 50
+execute if score SEAchg_spawn_timer_longbridge rng1 matches 50 as @n[tag=SEAstanley] at @s as @p[distance=0..4] at @s rotated ~ 0 positioned ^ ^ ^-3 if block ~ ~ ~ air if block ~ ~1 ~ air unless block ~ ~-1 ~ air at @n[tag=SEAstanley] run playsound entity.player.teleport hostile @a ~ ~1 ~ 1 0.8
+execute if score SEAchg_spawn_timer_longbridge rng1 matches 50 as @n[tag=SEAstanley] at @s as @p[distance=0..4] at @s rotated ~ 0 positioned ^ ^ ^-3 if block ~ ~ ~ air if block ~ ~1 ~ air unless block ~ ~-1 ~ air run tp @n[tag=SEAstanley] ~ ~ ~
+
 execute if score SEAchg_spawn_timer_longbridge rng1 matches 30 as @n[tag=SEAstanley] at @s if block ~ ~ ~ air unless block ~ ~-1 ~ air run function skyblock:sea/m/drone
 execute if score SEAchg_spawn_timer_longbridge rng1 matches 30 as @n[tag=SEAstanley] at @s if block ~ ~ ~ air unless block ~ ~-1 ~ air run playsound block.iron_door.open block @a ~ ~ ~ 0.7 1.5
 execute if score SEAchg_spawn_timer_longbridge rng1 matches 30 as @n[tag=SEAstanley] at @s if block ~ ~ ~ air unless block ~ ~-1 ~ air run effect give @s speed 2 3 true
