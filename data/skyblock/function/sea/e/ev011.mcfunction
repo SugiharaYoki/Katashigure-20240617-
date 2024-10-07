@@ -36,7 +36,7 @@ execute store result score SEAchg_spawn_timer_longbridge rng1 run random value 1
 
 execute if score SEAchg_spawn_timer_longbridge rng1 matches 1 as @n[tag=SEAstanley] at @s run effect give @s absorption 10 1 false
 execute if score SEAchg_spawn_timer_longbridge rng1 matches 1 as @n[tag=SEAstanley] at @s run effect give @s slowness 3 200 true
-execute if score SEAchg_spawn_timer_longbridge rng1 matches 1 as @n[tag=SEAstanley] at @s run particle dripping_obsidian_tear ~ ~1 ~ 0.7 0.5 0.7 0 30
+execute if score SEAchg_spawn_timer_longbridge rng1 matches 1 as @n[tag=SEAstanley] at @s run particle falling_obsidian_tear ~ ~1 ~ 0.5 0.6 0.5 0 30
 execute if score SEAchg_spawn_timer_longbridge rng1 matches 1 as @n[tag=SEAstanley] at @s run particle enchant ~ ~0.11 ~ 1.2 0 1.2 0.05 70
 execute if score SEAchg_spawn_timer_longbridge rng1 matches 1 as @n[tag=SEAstanley] at @s run particle enchant ~ ~0.28 ~ 0.8 0 0.8 0.05 40
 execute if score SEAchg_spawn_timer_longbridge rng1 matches 1 as @n[tag=SEAstanley] at @s run playsound entity.evoker.cast_spell hostile @a ~ ~ ~ 1 1.2
