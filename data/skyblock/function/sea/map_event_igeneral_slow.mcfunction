@@ -333,4 +333,4 @@ particle portal 90093 131 102 0.5 0.5 0.5 0.01 10
 
 
 execute positioned 90140 114 210 if entity @a[tag=SEAPT,distance=..6.5,tag=!SEAPF] if block 90073 103 141 air unless entity @n[tag=SEAchg_spawn_timer_longbridge,distance=0..1] run summon marker ~ ~ ~ {Tags:["SEAchg_spawn_timer","SEAchg_spawn_timer_longbridge"]}
-execute if block 90073 103 141 air as @n[tag=SEAchg_spawn_timer_longbridgem,x=90140,y=114,z=210,distance=0..1] run function skyblock:sea/e/ev011
+execute if block 90073 103 141 air as @n[tag=SEAchg_spawn_timer_longbridge,x=90140,y=114,z=210,distance=0..1] run function skyblock:sea/e/ev011
