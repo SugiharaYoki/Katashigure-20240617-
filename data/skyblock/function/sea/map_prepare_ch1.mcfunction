@@ -450,4 +450,10 @@ execute positioned 90108 99 108 run function skyblock:sea/m/zombie_bomb
 setblock 90074 103 141 chest[facing=north]
 setblock 90072 104 137 chest[facing=west]
 
+#附属平台
+setblock 90135 115 249 chest[facing=east]
+item replace block 90135 115 249 container.12 with coal 2
+item replace block 90135 115 249 container.14 with 
+
+
 function skyblock:protector/entity_count_end {function:"slyblock:sea/map_prepare_ch1"}

@@ -177,6 +177,11 @@ item replace block 90144 136 131 container.13 with flow_banner_pattern[custom_da
 '{"text":"泄水通道秘密实验室的笔记 - 麦迪逊","italic":true,"color":"dark_purple","italic":false}',\
 lore=['{"text":"圣晶能够吸引的不止拥有自主思维的生物的意志。","color":"white","italic":false}','{"text":"似乎电磁波与微波也会朝圣晶扭曲，","color":"white","italic":false}','{"text":"这或许才是钻井平台与外界失联的真正原因。","color":"white","italic":false}','{"text":"为什么偏偏是十几小时前才被切断通讯？","color":"white","italic":false}','{"text":"在这段时间里圣晶有过什么变化？是否在持续吸收某种能量？","color":"white","italic":false}','{"text":"被我故意放在水晶祀堂的空铜板被扭曲成了","color":"white","italic":false}','{"text":"能够令使用者爆发力剧增的魔法铜板。","color":"white","italic":false}','{"text":"静滞光棱的诞生也是我在对这种特殊铜板","color":"white","italic":false}','{"text":"实行逆向破解的过程中得到的意外收获。","color":"white","italic":false}']]
 
+item replace block 90135 115 249 container.14 with flow_banner_pattern[custom_data={sea_doc19b:true},custom_name=\
+'{"text":"建材资源平台的笔记 - 史丹尼舵长","italic":true,"color":"dark_purple","italic":false}',\
+lore=['{"text":"本以为远离那群暴民我就能活下来……没想到还是被算计了呢。","color":"white","italic":false}','{"text":"不愧是我的女儿，我甘拜下风了。","color":"white","italic":false}','{"text":"这座附属平台早已不是最佳避难场所。","color":"white","italic":false}','{"text":"那群尸变体根本不是威胁的根源，从地底渗透上来的细菌才是。","color":"white","italic":false}','{"text":"诺曼说的没错，我们所有人打从一开始就被感染了。","color":"white","italic":false}','{"text":"受伤也只是加速了尸变的速度……","color":"white","italic":false}','{"text":"这下，我算是受了致命伤吧。","color":"white","italic":false}','{"text":"菲尔娜……我这也能算作是赎罪吗？","color":"white","italic":false}']]
+
+
 item replace block 90126 128 124 container.2 with flow_banner_pattern[custom_data={sea_doc15:true},custom_name=\
 '{"text":"工程处后厨的笔记 - 瑞佛特","italic":true,"color":"dark_purple","italic":false}',\
 lore=['{"text":"23号 处理掉了剩下还没有腐烂的猪肉","color":"white","italic":false}','{"text":"24号 没有粮食了 只能吃干面包 通风管道里好吵","color":"white","italic":false}','{"text":"25号 干面包很难吃 德怀特还没有从通风系统维护处回来","color":"white","italic":false}','{"text":"26号 德怀特带来了新鲜的猪肉 配着面包吃 通风管道好吵","color":"white","italic":false}','{"text":"27号 通风管道好吵","color":"white","italic":false}','{"text":"28号 已经没有新鲜的猪肉了 现在该派潘去修通风系统了","color":"white","italic":false}','{"text":"29号 没有猪肉 只有干面包","color":"white","italic":false}','{"text":"30号 我终于醒悟了 我的身上也有猪肉","color":"white","italic":false}']]
