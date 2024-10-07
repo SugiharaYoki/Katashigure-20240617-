@@ -18,6 +18,7 @@ execute positioned 90137 129 137 if entity @a[tag=SEAPT,distance=0..20] run summ
 execute positioned 90137 138 126 if entity @a[tag=SEAPT,distance=0..20] run summon minecraft:glow_item_frame ~ ~ ~ {Tags:[iframe_sea,iframe_sea_flamethrower],Invisible:0b,Fixed:0b,Invulnerable:0b,Facing:4b,Item:{id:"minecraft:shears",components:{custom_name:'{"text":"喷火器","italic":false,"color":"red"}',custom_data:{sea_flamethrower:true},unbreakable:{}}}}
 execute positioned 90120 156 143 if entity @a[tag=SEAPT,distance=0..20] run summon minecraft:glow_item_frame ~ ~ ~ {Tags:[iframe_sea,iframe_sea_crossbow],Invisible:0b,Fixed:0b,Invulnerable:0b,Facing:5b,Item:{id:"minecraft:crossbow",components:{custom_name:'{"text":"工程弩","italic":false,"color":"red"}',custom_data:{sea_crossbow:true},unbreakable:{}}}}
 
+item replace block 90134 121 253 container.13 with bow[custom_name='{"text":"复合弓","italic":false,"color":"red"}',custom_data={sea_bow1:true},enchantments={punch:1,power:1},unbreakable={}]
 
 execute positioned 90075 129 120 if entity @a[tag=SEAPT,distance=0..20] run summon minecraft:glow_item_frame ~ ~ ~ {Tags:[iframe_sea,iframe_sea_spectral],Invisible:1b,Fixed:0b,Invulnerable:0b,Facing:1b,Item:{id:"minecraft:flow_armor_trim_smithing_template",components:{custom_name:'{"text":"光棱魔板","italic":true,"color":"light_purple","italic":false}',custom_data:{sea_t_spectral1:true}}}}
 execute positioned 90129 144 141 if entity @a[tag=SEAPT,distance=0..20] run summon minecraft:glow_item_frame ~ ~ ~ {Tags:[iframe_sea,iframe_sea_spectral],Invisible:1b,Fixed:0b,Invulnerable:0b,Facing:1b,Item:{id:"minecraft:flow_armor_trim_smithing_template",components:{custom_name:'{"text":"残影魔板","italic":true,"color":"light_purple","italic":false}',custom_data:{sea_t_sprint1:true}}}}
@@ -179,7 +180,7 @@ lore=['{"text":"圣晶能够吸引的不止拥有自主思维的生物的意志�
 
 item replace block 90135 115 249 container.14 with flow_banner_pattern[custom_data={sea_doc19b:true},custom_name=\
 '{"text":"建材资源平台的笔记 - 史丹尼舵长","italic":true,"color":"dark_purple","italic":false}',\
-lore=['{"text":"本以为远离那群暴民我就能活下来……没想到还是被算计了呢。","color":"white","italic":false}','{"text":"不愧是我的女儿，我甘拜下风了。","color":"white","italic":false}','{"text":"这座附属平台早已不是最佳避难场所。","color":"white","italic":false}','{"text":"那群尸变体根本不是威胁的根源，从地底渗透上来的细菌才是。","color":"white","italic":false}','{"text":"诺曼说的没错，我们所有人打从一开始就被感染了。","color":"white","italic":false}','{"text":"受伤也只是加速了尸变的速度……","color":"white","italic":false}','{"text":"这下，我算是受了致命伤吧。","color":"white","italic":false}','{"text":"菲尔娜……我这也能算作是赎罪吗？","color":"white","italic":false}']]
+lore=['{"text":"本以为远离那群暴民我就能活下来……没想到还是被算计了呢。","color":"white","italic":false}','{"text":"不愧是我的女儿，我终究甘拜下风。","color":"white","italic":false}','{"text":"这座附属平台早已不是最佳避难场所。","color":"white","italic":false}','{"text":"那群尸变体根本不是威胁的根源，从地底渗透上来的细菌才是。","color":"white","italic":false}','{"text":"诺曼说的没错，我们所有人打从一开始就被感染了。","color":"white","italic":false}','{"text":"受伤也只是加速了尸变的速度……","color":"white","italic":false}','{"text":"这下，我算是受了致命伤吧。","color":"white","italic":false}','{"text":"菲尔娜……我这也能算作是赎罪吗？","color":"white","italic":false}']]
 
 
 item replace block 90126 128 124 container.2 with flow_banner_pattern[custom_data={sea_doc15:true},custom_name=\
@@ -213,7 +214,7 @@ item replace block 90107 156 135 container.13 with flow_banner_pattern[custom_da
 #红白蓝紫红紫蓝
 #1001110
 
-execute as @p[tag=SEAPT,nbt={Inventory:[{id:"minecraft:flow_banner_pattern"}]}] run function skyblock:sea/p/document
+
 
 
 execute as @e[type=interaction,x=90000,y=100,z=100,distance=..5000] at @s run function skyblock:sea/p/interaction
@@ -327,3 +328,9 @@ particle enchant 90093 131 102 3 3 3 0.01 20
 particle portal 90093 131 102 0.5 0.5 0.5 0.01 10
 
 #    function skyblock:protector/entity_count_end {function:"slyblock:sea/map_event_igeneral_slow"}
+
+
+
+
+execute positioned 90140 114 210 if entity @a[tag=SEAPT,distance=..6.5,tag=!SEAPF] if block 90073 103 141 air unless entity @n[tag=SEAchg_spawn_timer_longbridge,distance=0..1] run summon marker ~ ~ ~ {Tags:["SEAchg_spawn_timer","SEAchg_spawn_timer_longbridge"]}
+execute if block 90073 103 141 air as @n[tag=SEAchg_spawn_timer_longbridgem,x=90140,y=114,z=210,distance=0..1] run function skyblock:sea/e/ev011

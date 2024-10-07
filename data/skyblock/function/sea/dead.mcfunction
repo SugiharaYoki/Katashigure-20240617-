@@ -42,6 +42,7 @@ tag @s remove e_i_39
 tag @s remove e_w_01
 tag @s remove e_w_02
 tag @s remove e_w_03
+tag @s remove e_w_03b
 tag @s remove e_w_04
 tag @s remove e_w_05
 tag @s remove e_w_06

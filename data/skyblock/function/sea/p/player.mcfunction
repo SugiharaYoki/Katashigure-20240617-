@@ -96,6 +96,12 @@ execute if entity @s[tag=!e_w_03] if items entity @s container.* crossbow run te
 execute if entity @s[tag=!e_w_03] if items entity @s container.* crossbow run tellraw @s {"text": "远程武器，原本是用于射出钩缆的工具，搭载弩箭后也可作攻击用途。","color": "white"}
 execute if entity @s[tag=!e_w_03] if items entity @s container.* crossbow run tellraw @s {"text": "能够用于破坏陶罐。","color": "white"}
 execute if entity @s[tag=!e_w_03] if items entity @s container.* crossbow run tag @s add e_w_03
+execute if entity @s[tag=!e_w_03b] if items entity @s container.* bow run playsound minecraft:ui.toast.challenge_complete player @s ~ ~ ~ 1 1
+execute if entity @s[tag=!e_w_03b] if items entity @s container.* bow run tellraw @s {"text": "获得新武器：复合弓","color": "dark_red"}
+execute if entity @s[tag=!e_w_03b] if items entity @s container.* bow run tellraw @s {"text": "远程武器，似乎是史丹尼舵长用于防身的武器。","color": "white"}
+execute if entity @s[tag=!e_w_03b] if items entity @s container.* bow run tellraw @s {"text": "绝大多数枪械都被邪教徒销毁。现如今，这种简单的武器也会发挥出意想不到的效果吧。","color": "white"}
+execute if entity @s[tag=!e_w_03b] if items entity @s container.* bow run tag @s add e_w_03b
+execute if entity @s[tag=!e_w_03b] if items entity @s container.* bow run tag @s add e_w_03b_eternal
 #execute as @s[tag=e_w_03] store result score @s sea_cursor run clear @s crossbow 0
 #execute as @s[tag=e_w_03] at @s if entity @s[scores={sea_cursor=..0}] run give @s crossbow[custom_name='{"text":"工程弩","italic":false,"color":"red"}',custom_data={sea_crossbow:true},unbreakable={}]
 execute if entity @s[tag=!e_w_04] if items entity @s container.* shears[custom_data={sea_flamethrower:true}] run playsound minecraft:ui.toast.challenge_complete player @s ~ ~ ~ 1 1
@@ -178,3 +184,7 @@ execute unless entity @s[tag=!seaPerm000] run clone 90121 122 109 90121 122 109 
 
 #炽热球体
 execute as @n[tag=SEAmagma1,type=marker,distance=0..2.5] at @s run function skyblock:sea/p/magma
+
+
+
+execute if items entity @s container.* flow_banner_pattern run function skyblock:sea/p/document

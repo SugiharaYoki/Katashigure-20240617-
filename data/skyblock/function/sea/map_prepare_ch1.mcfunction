@@ -453,7 +453,8 @@ setblock 90072 104 137 chest[facing=west]
 #附属平台
 setblock 90135 115 249 chest[facing=east]
 item replace block 90135 115 249 container.12 with coal 2
-item replace block 90135 115 249 container.14 with 
+setblock 90134 121 253 chest[facing=south]
 
+setblock 90073 103 141 air
 
 function skyblock:protector/entity_count_end {function:"slyblock:sea/map_prepare_ch1"}
