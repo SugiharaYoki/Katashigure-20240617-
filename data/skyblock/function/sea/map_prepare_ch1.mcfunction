@@ -456,5 +456,6 @@ item replace block 90135 115 249 container.12 with coal 2
 setblock 90134 121 253 chest[facing=south]
 
 setblock 90073 103 141 air
+scoreboard players set SEAchg_spawn_timer_longbridge sea_4temp2 0
 
 function skyblock:protector/entity_count_end {function:"slyblock:sea/map_prepare_ch1"}
