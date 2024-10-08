@@ -86,15 +86,15 @@ execute store result score SEA_CH3_BOSS sea_4temp2 run random value 1..4
 execute store result score SEA_CH3_BOSS sea_4temp3 run random value 1..24
 execute store result score SEA_CH3_BOSS sea_4temp4 at @n[tag=SEAbossch3_core] if entity @e[tag=SEAmob,distance=0..29]
 
-execute if score SEA_CH3_BOSS sea_4temp2 matches 4 if score SEA_CH3_BOSS sea_4temp1 matches 1..3 if entity @n[tag=sc,scores={sea_player=1}] if score SEA_CH3_BOSS sea_4temp4 matches ..15 at @e[tag=SEAbossch3_light,sort=random,limit=2] if block ~ ~ ~ waxed_exposed_copper_bulb[lit=false] run function skyblock:sea/e/ev010_2
+execute if score SEA_CH3_BOSS sea_4temp2 matches 4 if score SEA_CH3_BOSS sea_4temp1 matches 1..3 if entity @n[tag=sc,scores={sea_player=1}] if score SEA_CH3_BOSS sea_4temp4 matches ..15 at @e[tag=SEAbossch3_light,sort=random,limit=2] if block ~ ~ ~ waxed_exposed_copper_bulb[lit=false] if score SEA_CH3_BOSS sea_4temp5 matches ..80 run function skyblock:sea/e/ev010_2
 
-execute if score SEA_CH3_BOSS sea_4temp2 matches 4 if score SEA_CH3_BOSS sea_4temp1 matches 1..5 if entity @n[tag=sc,scores={sea_player=2..3}] if score SEA_CH3_BOSS sea_4temp4 matches ..20 at @e[tag=SEAbossch3_light,sort=random,limit=2] if block ~ ~ ~ waxed_exposed_copper_bulb[lit=false] run function skyblock:sea/e/ev010_2
+execute if score SEA_CH3_BOSS sea_4temp2 matches 4 if score SEA_CH3_BOSS sea_4temp1 matches 1..5 if entity @n[tag=sc,scores={sea_player=2..3}] if score SEA_CH3_BOSS sea_4temp4 matches ..20 at @e[tag=SEAbossch3_light,sort=random,limit=2] if block ~ ~ ~ waxed_exposed_copper_bulb[lit=false] if score SEA_CH3_BOSS sea_4temp5 matches ..100 run function skyblock:sea/e/ev010_2
 
-execute if score SEA_CH3_BOSS sea_4temp2 matches 4 if score SEA_CH3_BOSS sea_4temp1 matches 1..7 if entity @n[tag=sc,scores={sea_player=4..5}] if score SEA_CH3_BOSS sea_4temp4 matches ..25 at @e[tag=SEAbossch3_light,sort=random,limit=2] if block ~ ~ ~ waxed_exposed_copper_bulb[lit=false] run function skyblock:sea/e/ev010_2
+execute if score SEA_CH3_BOSS sea_4temp2 matches 4 if score SEA_CH3_BOSS sea_4temp1 matches 1..7 if entity @n[tag=sc,scores={sea_player=4..5}] if score SEA_CH3_BOSS sea_4temp4 matches ..25 at @e[tag=SEAbossch3_light,sort=random,limit=2] if block ~ ~ ~ waxed_exposed_copper_bulb[lit=false] if score SEA_CH3_BOSS sea_4temp5 matches ..120 run function skyblock:sea/e/ev010_2
 
-execute if score SEA_CH3_BOSS sea_4temp2 matches 4 if score SEA_CH3_BOSS sea_4temp1 matches 1..9 if entity @n[tag=sc,scores={sea_player=6..7}] if score SEA_CH3_BOSS sea_4temp4 matches ..30 at @e[tag=SEAbossch3_light,sort=random,limit=2] if block ~ ~ ~ waxed_exposed_copper_bulb[lit=false] run function skyblock:sea/e/ev010_2
+execute if score SEA_CH3_BOSS sea_4temp2 matches 4 if score SEA_CH3_BOSS sea_4temp1 matches 1..9 if entity @n[tag=sc,scores={sea_player=6..7}] if score SEA_CH3_BOSS sea_4temp4 matches ..30 at @e[tag=SEAbossch3_light,sort=random,limit=2] if block ~ ~ ~ waxed_exposed_copper_bulb[lit=false] if score SEA_CH3_BOSS sea_4temp5 matches ..140 run function skyblock:sea/e/ev010_2
 
-execute if score SEA_CH3_BOSS sea_4temp2 matches 4 if score SEA_CH3_BOSS sea_4temp1 matches 1..11 if entity @n[tag=sc,scores={sea_player=8..}] if score SEA_CH3_BOSS sea_4temp4 matches ..35 at @e[tag=SEAbossch3_light,sort=random,limit=2] if block ~ ~ ~ waxed_exposed_copper_bulb[lit=false] run function skyblock:sea/e/ev010_2
+execute if score SEA_CH3_BOSS sea_4temp2 matches 4 if score SEA_CH3_BOSS sea_4temp1 matches 1..11 if entity @n[tag=sc,scores={sea_player=8..}] if score SEA_CH3_BOSS sea_4temp4 matches ..35 at @e[tag=SEAbossch3_light,sort=random,limit=2] if block ~ ~ ~ waxed_exposed_copper_bulb[lit=false] if score SEA_CH3_BOSS sea_4temp5 matches ..160 run function skyblock:sea/e/ev010_2
 
 #    function skyblock:protector/entity_count_end {function:"slyblock:sea/e/ev010"}
 

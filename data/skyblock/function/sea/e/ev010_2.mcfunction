@@ -13,3 +13,4 @@ execute positioned ~ ~1 ~ if score SEA_CH3_BOSS sea_4temp3 matches 7..8 run func
 execute positioned ~ ~1 ~ if score SEA_CH3_BOSS sea_4temp3 matches 9..11 run function skyblock:sea/m/skeleton_melee
 execute positioned ~ ~1 ~ if score SEA_CH3_BOSS sea_4temp3 matches 12 run function skyblock:sea/m/silverfish
 execute positioned ~ ~1 ~ if score SEA_CH3_BOSS sea_4temp3 matches 13 run function skyblock:sea/m/silverfish_big
+scoreboard players add SEA_CH3_BOSS sea_4temp5 1
