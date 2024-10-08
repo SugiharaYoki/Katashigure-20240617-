@@ -32,6 +32,13 @@ execute if score SEAchg_spawn_timer_longbridge sea_4temp2 matches 45 positioned 
 
 execute if score SEAchg_spawn_timer_longbridge sea_4temp2 matches 1 positioned 90130 121 270 run function skyblock:sea/m/special_stanley
 
+execute if score SEAchg_spawn_timer_longbridge sea_4temp2 matches 1 positioned 90139 133 266 run function skyblock:sea/m/skeleton_melee
+execute if score SEAchg_spawn_timer_longbridge sea_4temp2 matches 1 positioned 90139 133 266 run function skyblock:sea/m/skeleton_melee
+execute if score SEAchg_spawn_timer_longbridge sea_4temp2 matches 1 positioned 90139 133 266 run function skyblock:sea/m/skeleton_melee
+execute if score SEAchg_spawn_timer_longbridge sea_4temp2 matches 1 positioned 90139 133 266 run function skyblock:sea/m/skeleton_melee
+execute if score SEAchg_spawn_timer_longbridge sea_4temp2 matches 1 positioned 90139 133 266 run function skyblock:sea/m/nightblind
+execute if score SEAchg_spawn_timer_longbridge sea_4temp2 matches 1 positioned 90139 133 266 run function skyblock:sea/m/nightblind
+
 execute store result score SEAchg_spawn_timer_longbridge rng1 run random value 1..50
 
 execute if score SEAchg_spawn_timer_longbridge rng1 matches 1 as @n[tag=SEAstanley] at @s run effect give @s absorption 10 1 false

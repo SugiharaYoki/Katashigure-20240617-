@@ -458,6 +458,7 @@ setblock 90072 104 137 chest[facing=west]
 setblock 90135 115 249 chest[facing=east]
 item replace block 90135 115 249 container.12 with coal 2
 setblock 90134 121 253 chest[facing=south]
+fill 90149 122 254 90149 121 254 minecraft:slime_block
 
 setblock 90073 103 141 air
 scoreboard players set SEAchg_spawn_timer_longbridge sea_4temp2 0
