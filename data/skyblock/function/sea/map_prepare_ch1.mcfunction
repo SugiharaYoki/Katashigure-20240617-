@@ -1,10 +1,13 @@
     function skyblock:protector/entity_count_start
 execute as @e[x=90100,y=100,z=100,distance=0..500,type=!player] at @s run tp ~ ~-500 ~
 
+scoreboard players set @a SEAPT_member 0
+
 scoreboard objectives add sea_dead minecraft.custom:minecraft.deaths
 scoreboard objectives add sea_player dummy
 scoreboard objectives add sea_dead_check dummy
 scoreboard objectives add seact dummy
+scoreboard objectives add SEAPT_member dummy
 scoreboard objectives add sea_4temp1 dummy
 scoreboard objectives add sea_4temp2 dummy
 scoreboard objectives add sea_4temp3 dummy

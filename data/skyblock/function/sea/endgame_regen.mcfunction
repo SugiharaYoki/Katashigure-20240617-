@@ -108,6 +108,8 @@ tag @n[tag=sc] remove SeGa_sea_ch5
 tag @n[tag=sc] remove SeGa_sea_ch6
 tag @n[tag=sc] remove SEAbossch3_lighted
 
+
+
 setblock 90075 103 137 air
 
 tag @s remove sea_ch1_speedrun_butif

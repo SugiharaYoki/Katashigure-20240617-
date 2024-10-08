@@ -12,3 +12,11 @@ execute as @s store result score @s sea_i_echo_shard run clear @s echo_shard 0
 execute as @s store result score @s sea_i_gunpowder run clear @s gunpowder 0
 execute as @s store result score @s sea_i_glistering_melon run clear @s glistering_melon_slice 0
 execute as @s store result score @s sea_i_gold_ingot run clear @s gold_ingot 0
+
+execute if entity @s[tag=SEAPT,scores={SEAPT_member=1}] run data modify block 90112 100 135 Items set from entity @s Inventory
+execute if entity @s[tag=SEAPT,scores={SEAPT_member=2}] run data modify block 90111 100 135 Items set from entity @s Inventory
+execute if entity @s[tag=SEAPT,scores={SEAPT_member=3}] run data modify block 90110 100 135 Items set from entity @s Inventory
+execute if entity @s[tag=SEAPT,scores={SEAPT_member=4}] run data modify block 90109 100 135 Items set from entity @s Inventory
+execute if entity @s[tag=SEAPT,scores={SEAPT_member=5}] run data modify block 90108 100 135 Items set from entity @s Inventory
+execute if entity @s[tag=SEAPT,scores={SEAPT_member=6}] run data modify block 90107 100 135 Items set from entity @s Inventory
+execute if entity @s[tag=SEAPT,scores={SEAPT_member=7}] run data modify block 90106 100 135 Items set from entity @s Inventory

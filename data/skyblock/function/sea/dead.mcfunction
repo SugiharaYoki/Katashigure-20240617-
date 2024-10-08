@@ -107,7 +107,8 @@ scoreboard players set @s sea_i_trim_ghost 0
 scoreboard players set @s sea_i_trim_skeleton 0
 
 attribute @s generic.gravity base set 0.08
-
+ 
+scoreboard players set @s SEAPT_member 0
 
 clear @s
 effect clear @s
