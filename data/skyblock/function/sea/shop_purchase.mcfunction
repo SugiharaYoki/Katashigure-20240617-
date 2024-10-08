@@ -386,6 +386,12 @@ execute if entity @s[tag=sea_purchase_pass] run playsound minecraft:block.note_b
 execute if entity @s[tag=sea_purchase_pass] run give @s fire_charge[custom_name='{"text":"定时炸弹","italic":true,"color":"blue","italic":false}',lore=['{"text":"它会在你丢出去3秒后爆炸！","color":"white","italic":false}','{"text":"炸到自己的话，职业生涯就会结束了吧。","color":"white","italic":false}','{"text":"可用于破坏凝胶壁障与瓦罐。","color":"white","italic":false}']] 2
 execute if entity @s[tag=sea_purchase_pass] run clear @s gunpowder 3
 tag @s remove sea_purchase_pass
+execute if score @s sea_crafter matches 10055 as @s[scores={sea_i_gunpowder=..1}] run tellraw @s {"text":"失败！素材不足！","color":"red"}
+execute if score @s sea_crafter matches 10055 as @s[scores={sea_i_gunpowder=2..}] run tag @s add sea_purchase_pass
+execute if entity @s[tag=sea_purchase_pass] run playsound minecraft:block.note_block.hat player @a ~ ~ ~ 0.8 0.7
+execute if entity @s[tag=sea_purchase_pass] run give @s firework_star[custom_name='{"text":"燃爆剂","italic":true,"color":"blue","italic":false}',lore=['{"text":"喷火器专用燃爆剂。","color":"white","italic":false}','{"text":"使用喷火器时左键，瞬间对面前近距离造成大量伤害。","color":"white","italic":false}']] 8
+execute if entity @s[tag=sea_purchase_pass] run clear @s gunpowder 2
+tag @s remove sea_purchase_pass
 
 execute if score @s sea_crafter matches 10029 as @s[scores={sea_i_iron_ingot=..2}] run tellraw @s {"text":"失败！素材不足！","color":"red"}
 execute if score @s sea_crafter matches 10029 as @s[scores={sea_i_iron_ingot=3..,sea_i_flint=..2}] run tellraw @s {"text":"失败！素材不足！","color":"red"}

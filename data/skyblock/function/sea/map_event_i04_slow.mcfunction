@@ -205,5 +205,15 @@ execute if score sea_ch4_switch_secondfloor sea_4temp2 matches 27 run playsound 
 execute if score sea_ch4_switch_secondfloor sea_4temp2 matches 27 run fill 90191 37 139 90190 34 139 minecraft:lime_stained_glass
 execute if score sea_ch4_switch_secondfloor sea_4temp2 matches 27 run fill 90189 34 137 90189 37 136 air
 
+#蒸汽陷阱A
+execute if entity @a[tag=SEAPT,x=90169,y=12,z=155,distance=0..15] run function skyblock:sea/e/ev012_hotvaportrap
+
+
+
+
+
+
+
+
 
     function skyblock:protector/entity_count_end {function:"skyblock:sea/map_event_i03_slow.mcfunction"}
