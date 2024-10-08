@@ -1,3 +1,4 @@
+clear @s
 summon chest_minecart ~ ~1 ~ {Tags:[SEAinv_backup]}
 summon marker 90112 100 135 {Tags:[SEAinv_backup_marker]}
 execute if entity @s[scores={SEAPT_member=2..}] as @n[tag=SEAinv_backup_marker] at @s run tp @s ~-1 ~ ~
