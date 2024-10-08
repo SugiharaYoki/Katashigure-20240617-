@@ -11,6 +11,7 @@ execute unless entity @n[tag=SEAbossch3_core] run bossbar set minecraft:9066602 
 execute if entity @a[tag=SEAPT,x=90138,y=17,z=100,distance=0..4,tag=!e_i_32] run bossbar set minecraft:9066602 players @a[tag=SEAPT]
 execute unless entity @n[tag=SEAbossch3_core] run bossbar set minecraft:9066602 style progress
 execute unless entity @n[tag=SEAbossch3_core] run bossbar set minecraft:9066602 max 7
+execute unless entity @n[tag=SEAbossch3_core] run scoreboard players set SEA_CH3_BOSS sea_4temp5 0
 
 execute store result bossbar minecraft:9066602 value if entity @e[tag=SEAbossch3_light,tag=SEAbossch3_light_on]
 
