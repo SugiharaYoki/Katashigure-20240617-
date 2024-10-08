@@ -1,8 +1,8 @@
 execute if entity @a[tag=SEAPT,distance=..6] run scoreboard players add @s[scores={sea_4temp1=..1290}] sea_4temp1 1
-execute if entity @a[tag=SEAPT,distance=..6] as @s[x=90161,y=128,z=112,distance=4..,scores={sea_4temp1=9}] at @s run tellraw @a[distance=0..250,tag=!e_i_28,tag=!e_i_27] {"text":"？？？：“你、你没被感染吧？”","color":"green"}
-execute if entity @a[tag=SEAPT,distance=..6] as @s[x=90161,y=128,z=112,distance=4..,scores={sea_4temp1=9}] at @s run tellraw @a[distance=0..250,tag=e_i_28,tag=!e_i_27] {"text":"越涵：“居然有那么多活着的……嗯？”","color":"green"}
-execute if entity @a[tag=SEAPT,distance=..6] as @s[x=90161,y=128,z=112,distance=4..,scores={sea_4temp1=9}] at @s run tellraw @a[distance=0..250,tag=e_i_28,tag=e_i_27] {"text":"越涵：“啊。”","color":"green"}
-execute if entity @a[tag=SEAPT,distance=..6] as @s[x=90161,y=128,z=112,distance=4..,scores={sea_4temp1=9}] at @s run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
+execute if entity @a[tag=SEAPT,distance=..6] as @s[x=90161,y=128,z=112,distance=..4,scores={sea_4temp1=9}] at @s run tellraw @a[distance=0..250,tag=!e_i_28,tag=!e_i_27] {"text":"？？？：“你、你没被感染吧？”","color":"green"}
+execute if entity @a[tag=SEAPT,distance=..6] as @s[x=90161,y=128,z=112,distance=..4,scores={sea_4temp1=9}] at @s run tellraw @a[distance=0..250,tag=e_i_28,tag=!e_i_27] {"text":"越涵：“居然有那么多活着的……嗯？”","color":"green"}
+execute if entity @a[tag=SEAPT,distance=..6] as @s[x=90161,y=128,z=112,distance=..4,scores={sea_4temp1=9}] at @s run tellraw @a[distance=0..250,tag=e_i_28,tag=e_i_27] {"text":"越涵：“啊。”","color":"green"}
+execute if entity @a[tag=SEAPT,distance=..6] as @s[x=90161,y=128,z=112,distance=..4,scores={sea_4temp1=9}] at @s run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
 execute if entity @a[tag=SEAPT,distance=..6] as @s[scores={sea_4temp1=4..270}] at @s run tp @s ~ ~ ~ facing entity @p
 
 
