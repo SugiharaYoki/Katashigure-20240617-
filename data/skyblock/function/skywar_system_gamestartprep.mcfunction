@@ -166,6 +166,7 @@ execute if score @n[tag=sc] SSgspT matches 11 run worldborder set 30000000
 execute if score @n[tag=sc] SSgspT matches 11 run worldborder damage amount 0
 execute if score @n[tag=sc] SSgspT matches 11 run tag @a[tag=!NoSkyWar,tag=!Gaming] add NoMultiMenu
 execute if score @n[tag=sc] SSgspT matches 11 run tag @a[tag=!NoSkyWar,tag=!Gaming] add PVPing
+execute if score @n[tag=sc] SSgspT matches 11 run tag @a[tag=Gaming] remove PVPing
 execute if score @n[tag=sc] SSgspT matches 11 run tag @a[tag=PVPing] add Gaming
 execute if score @n[tag=sc] SSgspT matches 11 run team leave @a[tag=PVPing]
 execute if score @n[tag=sc] SSgspT matches 11 run title @a[tag=PVPing] times 10 80 10
