@@ -91,6 +91,32 @@ execute positioned ~-2 ~1 ~0 if block ~ ~ ~ slime_block run setblock ~ ~ ~ air d
 execute positioned ~-2 ~1 ~1 if block ~ ~ ~ slime_block run setblock ~ ~ ~ air destroy
 execute positioned ~-2 ~1 ~2 if block ~ ~ ~ slime_block run setblock ~ ~ ~ air destroy
 
+execute positioned ~2 ~2 ~-2 if block ~ ~ ~ slime_block run setblock ~ ~ ~ air destroy
+execute positioned ~2 ~2 ~-1 if block ~ ~ ~ slime_block run setblock ~ ~ ~ air destroy
+execute positioned ~2 ~2 ~0 if block ~ ~ ~ slime_block run setblock ~ ~ ~ air destroy
+execute positioned ~2 ~2 ~1 if block ~ ~ ~ slime_block run setblock ~ ~ ~ air destroy
+execute positioned ~2 ~2 ~2 if block ~ ~ ~ slime_block run setblock ~ ~ ~ air destroy
+execute positioned ~1 ~2 ~-2 if block ~ ~ ~ slime_block run setblock ~ ~ ~ air destroy
+execute positioned ~1 ~2 ~-1 if block ~ ~ ~ slime_block run setblock ~ ~ ~ air destroy
+execute positioned ~1 ~2 ~0 if block ~ ~ ~ slime_block run setblock ~ ~ ~ air destroy
+execute positioned ~1 ~2 ~1 if block ~ ~ ~ slime_block run setblock ~ ~ ~ air destroy
+execute positioned ~1 ~2 ~2 if block ~ ~ ~ slime_block run setblock ~ ~ ~ air destroy
+execute positioned ~0 ~2 ~-2 if block ~ ~ ~ slime_block run setblock ~ ~ ~ air destroy
+execute positioned ~0 ~2 ~-1 if block ~ ~ ~ slime_block run setblock ~ ~ ~ air destroy
+execute positioned ~0 ~2 ~0 if block ~ ~ ~ slime_block run setblock ~ ~ ~ air destroy
+execute positioned ~0 ~2 ~1 if block ~ ~ ~ slime_block run setblock ~ ~ ~ air destroy
+execute positioned ~0 ~2 ~2 if block ~ ~ ~ slime_block run setblock ~ ~ ~ air destroy
+execute positioned ~-1 ~2 ~-2 if block ~ ~ ~ slime_block run setblock ~ ~ ~ air destroy
+execute positioned ~-1 ~2 ~-1 if block ~ ~ ~ slime_block run setblock ~ ~ ~ air destroy
+execute positioned ~-1 ~2 ~0 if block ~ ~ ~ slime_block run setblock ~ ~ ~ air destroy
+execute positioned ~-1 ~2 ~1 if block ~ ~ ~ slime_block run setblock ~ ~ ~ air destroy
+execute positioned ~-1 ~2 ~2 if block ~ ~ ~ slime_block run setblock ~ ~ ~ air destroy
+execute positioned ~-2 ~2 ~-2 if block ~ ~ ~ slime_block run setblock ~ ~ ~ air destroy
+execute positioned ~-2 ~2 ~-1 if block ~ ~ ~ slime_block run setblock ~ ~ ~ air destroy
+execute positioned ~-2 ~2 ~0 if block ~ ~ ~ slime_block run setblock ~ ~ ~ air destroy
+execute positioned ~-2 ~2 ~1 if block ~ ~ ~ slime_block run setblock ~ ~ ~ air destroy
+execute positioned ~-2 ~2 ~2 if block ~ ~ ~ slime_block run setblock ~ ~ ~ air destroy
+
 
 
 execute as @e[tag=SEAmagma1,type=marker,distance=0..2.5] at @s run setblock ~ ~ ~ air destroy

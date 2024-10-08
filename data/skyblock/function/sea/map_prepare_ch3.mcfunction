@@ -395,5 +395,7 @@ fill 90154 21 88 90154 19 89 minecraft:waxed_copper_grate
 
     function skyblock:protector/entity_count_end {function:"skyblock:sea/map_prepare_ch3.mcfunction"}
 
-
-
+fill 90137 129 97 90136 129 97 air
+fill 90137 128 97 90136 128 97 air
+fill 90137 128 98 90136 128 98 air
+fill 90132 131 107 90132 129 106 minecraft:slime_block

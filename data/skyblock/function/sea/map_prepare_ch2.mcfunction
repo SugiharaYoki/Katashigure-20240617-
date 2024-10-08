@@ -376,5 +376,13 @@ fill 90085 103 140 90085 101 141 minecraft:air
 
 fill 90091 131 98 90095 128 98 minecraft:bricks
 
+fill 90142 122 123 90141 122 123 air
+fill 90142 122 122 90141 122 122 air
+
+fill 90137 129 97 90136 129 97 spruce_slab[type=bottom]
+fill 90137 128 97 90136 128 97 spruce_fence
+fill 90137 128 98 90136 128 98 spruce_stairs[facing=north]
+
+
 
     function skyblock:protector/entity_count_end {function:"skyblock:sea/map_prepare_ch2.mcfunction"}

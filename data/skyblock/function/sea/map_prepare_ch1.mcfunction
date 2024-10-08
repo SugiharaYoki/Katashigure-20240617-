@@ -454,6 +454,9 @@ execute positioned 90108 99 108 run function skyblock:sea/m/zombie_bomb
 setblock 90074 103 141 chest[facing=north]
 setblock 90072 104 137 chest[facing=west]
 
+fill 90142 122 123 90141 122 123 spruce_stairs[facing=north]
+fill 90142 122 122 90141 122 122 spruce_fence
+
 #附属平台
 setblock 90135 115 249 chest[facing=east]
 item replace block 90135 115 249 container.12 with coal 2
