@@ -189,6 +189,3 @@ execute as @n[tag=SEAmagma1,type=marker,distance=0..2.5] at @s run function skyb
 
 execute if items entity @s container.* flow_banner_pattern run function skyblock:sea/p/document
 
-
-#背包备份
-

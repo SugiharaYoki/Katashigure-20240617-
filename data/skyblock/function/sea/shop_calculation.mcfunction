@@ -13,6 +13,7 @@ execute as @s store result score @s sea_i_gunpowder run clear @s gunpowder 0
 execute as @s store result score @s sea_i_glistering_melon run clear @s glistering_melon_slice 0
 execute as @s store result score @s sea_i_gold_ingot run clear @s gold_ingot 0
 
+#背包备份
 execute if entity @s[tag=SEAPT,scores={SEAPT_member=1}] run data modify block 90112 100 135 Items set from entity @s Inventory
 execute if entity @s[tag=SEAPT,scores={SEAPT_member=2}] run data modify block 90111 100 135 Items set from entity @s Inventory
 execute if entity @s[tag=SEAPT,scores={SEAPT_member=3}] run data modify block 90110 100 135 Items set from entity @s Inventory
