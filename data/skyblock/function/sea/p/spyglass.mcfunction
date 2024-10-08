@@ -31,6 +31,7 @@ execute if block 90075 103 141 cauldron unless block 90131 161 144 air run title
 execute if block 90075 103 141 cauldron if block 90163 129 113 air run title @s[tag=SEAPT] actionbar {"text":"目标：乘座物资层东面的电梯 继续向下方前进","color":"green"}
 execute if block 90075 103 141 cauldron if block 90125 102 101 air run title @s[tag=SEAPT] actionbar {"text":"目标：前往水下研究设施","color":"green"}
 
+execute if block 90075 103 137 scaffolding run title @s[tag=SEAPT] actionbar {"text":"目标：寻找回到水下研究设施实验区的方法","color":"green"}
 
 
 

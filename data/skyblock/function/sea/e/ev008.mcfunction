@@ -6,10 +6,10 @@ execute if entity @a[tag=SEAPT,distance=..6] as @s[x=90161,y=128,z=112,distance=
 execute if entity @a[tag=SEAPT,distance=..6] as @s[scores={sea_4temp1=4..270}] at @s run tp @s ~ ~ ~ facing entity @p
 
 
-execute if entity @a[tag=SEAPT,distance=..6] as @s[scores={sea_4temp1=39}] at @s if entity @n[tag=sc,scores={sea_player=1}] run tellraw @a[distance=0..250,tag=!e_i_28,tag=!e_i_27] {"text":"？？？：“我懂了，那个信号弹说的就是你吧……你要去地下研究设施？可是为什么……”","color":"green"}
-execute if entity @a[tag=SEAPT,distance=..6] as @s[scores={sea_4temp1=39}] at @s if entity @n[tag=sc,scores={sea_player=2..}] run tellraw @a[distance=0..250,tag=!e_i_28,tag=!e_i_27] {"text":"？？？：“我懂了，那个信号弹说的就是你……你们。你们要去地下研究设施？可是为什么……”","color":"green"}
-execute if entity @a[tag=SEAPT,distance=..6] as @s[scores={sea_4temp1=39}] at @s if entity @n[tag=sc,scores={sea_player=1}] run tellraw @a[distance=0..250,tag=e_i_28,tag=!e_i_27] {"text":"越涵：“我靠，怎么是你啊。撞大运了。看来马绍尔足够信任你了，居然让我领你去地下研究设施。”","color":"green"}
-execute if entity @a[tag=SEAPT,distance=..6] as @s[scores={sea_4temp1=39}] at @s if entity @n[tag=sc,scores={sea_player=2..}] run tellraw @a[distance=0..250,tag=e_i_28,tag=!e_i_27] {"text":"越涵：“我靠，怎么是你们啊。撞大运了。看来马绍尔足够信任你们了，居然让我领你们去地下研究设施。”","color":"green"}
+execute if entity @a[tag=SEAPT,distance=..6] as @s[scores={sea_4temp1=39}] at @s if entity @n[tag=sc,scores={sea_player=1}] run tellraw @a[distance=0..250,tag=!e_i_28,tag=!e_i_27] {"text":"？？？：“我懂了，那个信号弹说的就是你吧……你要去水下研究设施？可是为什么……”","color":"green"}
+execute if entity @a[tag=SEAPT,distance=..6] as @s[scores={sea_4temp1=39}] at @s if entity @n[tag=sc,scores={sea_player=2..}] run tellraw @a[distance=0..250,tag=!e_i_28,tag=!e_i_27] {"text":"？？？：“我懂了，那个信号弹说的就是你……你们。你们要去水下研究设施？可是为什么……”","color":"green"}
+execute if entity @a[tag=SEAPT,distance=..6] as @s[scores={sea_4temp1=39}] at @s if entity @n[tag=sc,scores={sea_player=1}] run tellraw @a[distance=0..250,tag=e_i_28,tag=!e_i_27] {"text":"越涵：“我靠，怎么是你啊。撞大运了。看来马绍尔足够信任你了，居然让我领你去水下研究设施。”","color":"green"}
+execute if entity @a[tag=SEAPT,distance=..6] as @s[scores={sea_4temp1=39}] at @s if entity @n[tag=sc,scores={sea_player=2..}] run tellraw @a[distance=0..250,tag=e_i_28,tag=!e_i_27] {"text":"越涵：“我靠，怎么是你们啊。撞大运了。看来马绍尔足够信任你们了，居然让我领你们去水下研究设施。”","color":"green"}
 execute if entity @a[tag=SEAPT,distance=..6] as @s[scores={sea_4temp1=39}] at @s if entity @n[tag=sc,scores={sea_player=1..}] run tellraw @a[distance=0..250,tag=e_i_28,tag=e_i_27] {"text":"越涵：“原来如此。那就没有什么要多说的了。”","color":"green"}
 execute if entity @a[tag=SEAPT,distance=..6] as @s[scores={sea_4temp1=39}] at @s run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
 
@@ -37,7 +37,7 @@ execute if entity @a[tag=SEAPT,distance=..6] as @s[scores={sea_4temp1=85}] at @s
 execute if entity @a[tag=SEAPT,distance=..6] as @s[scores={sea_4temp1=85}] at @s if entity @n[tag=sc,scores={sea_player=2..}] run tellraw @a[distance=0..250,tag=!e_i_28,tag=!e_i_27] {"text":"越涵：“哎先听我说，你们是从宿舍楼那儿过来的吧？你们谁有见到过斯顿吗？”","color":"green"}
 execute if entity @a[tag=SEAPT,distance=..6] as @s[scores={sea_4temp1=85}] at @s if entity @n[tag=sc,scores={sea_player=1}] run tellraw @a[distance=0..250,tag=e_i_28,tag=!e_i_27] {"text":"越涵：“老哥你知道我在期待什么，你去过宿舍楼了吧？你见到斯顿了吗？”","color":"green"}
 execute if entity @a[tag=SEAPT,distance=..6] as @s[scores={sea_4temp1=85}] at @s if entity @n[tag=sc,scores={sea_player=2..}] run tellraw @a[distance=0..250,tag=e_i_28,tag=!e_i_27] {"text":"越涵：“老哥你知道我在期待什么，你们去过宿舍楼了吧？你见到斯顿了吗？”","color":"green"}
-execute if entity @a[tag=SEAPT,distance=..6] as @s[scores={sea_4temp1=85}] at @s if entity @n[tag=sc,scores={sea_player=1..}] run tellraw @a[distance=0..250,tag=e_i_28,tag=e_i_27] {"text":"越涵：“前面通向的便是忒尔克西的地下研究设施。走吧，我跟在后头。”","color":"green"}
+execute if entity @a[tag=SEAPT,distance=..6] as @s[scores={sea_4temp1=85}] at @s if entity @n[tag=sc,scores={sea_player=1..}] run tellraw @a[distance=0..250,tag=e_i_28,tag=e_i_27] {"text":"越涵：“前面通向的便是忒尔克西的水下研究设施。走吧，我跟在后头。”","color":"green"}
 execute if entity @a[tag=SEAPT,distance=..6] as @s[scores={sea_4temp1=85}] at @s run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
 
 execute if entity @a[tag=SEAPT,distance=..6] as @s[scores={sea_4temp1=113}] at @s if entity @n[tag=sc,scores={sea_player=1..}] run tellraw @a[distance=0..250,tag=!e_i_27] {"text":"越涵：“等等……你、你说什么？斯、斯顿他……”","color":"green"}

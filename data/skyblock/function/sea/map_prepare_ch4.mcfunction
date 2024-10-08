@@ -34,6 +34,8 @@ fill 90191 19 123 90193 23 123 air
 
 summon minecraft:interaction 90192 20.3 85 {CustomName:'[{"text":"多功能工作站"}]',Tags:["SEAcrafter","SEAcrafter_foodless","SEAcrafter11"]}
 summon minecraft:marker 90191 19 85 {Tags:["SEAcrafter_tp","SEAcrafter_tp11"]}
+summon minecraft:interaction 90176 14.3 164 {CustomName:'[{"text":"多功能工作站"}]',Tags:["SEAcrafter","SEAcrafter_foodless","SEAcrafter12"]}
+summon minecraft:marker 90176 13 163 {Tags:["SEAcrafter_tp","SEAcrafter_tp12"]}
 
 setblock 90188 14 89 chest[facing=west]
 item replace block 90188 14 89 container.12 with beef 1
@@ -58,6 +60,8 @@ execute positioned 90173 19 130 run function skyblock:sea/m/shadow
 
 execute positioned 90192 34 130 run function skyblock:sea/m/cave_spider
 execute positioned 90192 34 130 run function skyblock:sea/m/cave_spider
+execute positioned 90158 13 155 run function skyblock:sea/m/spider
+
 
 execute positioned 90179 19 119 run function skyblock:sea/m/zombie_cook
 execute positioned 90179 19 119 run function skyblock:sea/m/zombie_cook
@@ -69,6 +73,7 @@ setblock 90174 19 139 air
 setblock 90177 19 121 air
 setblock 90160 19 121 air
 setblock 90185 19 121 air
+setblock 90155 13 154 air
 setblock 90210 19 112 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:flint"}}
 setblock 90211 19 112 decorated_pot{sherds:["friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd"],item:{count: 3, id:"minecraft:emerald"}}
 setblock 90188 19 109 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 2, id:"minecraft:carrot"}}
@@ -76,6 +81,7 @@ setblock 90174 19 139 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery
 setblock 90177 19 121 decorated_pot{sherds:["friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd"],item:{count: 3, id:"minecraft:emerald"}}
 setblock 90160 19 121 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:gunpowder"}}
 setblock 90185 19 121 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:gunpowder"}}
+setblock 90155 13 154 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:gunpowder"}}
 
 
 summon block_display 90184.0 20.65 97.0 {transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[3.8f,0.03f,0.03f],translation:[0f,0f,0f]},block_state:{Name:redstone_block},Rotation:[0f,0f],Tags:["sea_blockdisplay","sea_laser_ch4_1"]}
@@ -134,7 +140,8 @@ setblock 90199 35 130 lever[facing=north,face=floor,powered=true]
 fill 90183 20 120 90183 19 120 minecraft:slime_block
 
 
-
+setblock 90173 15 161 minecraft:waxed_copper_bulb[lit=false]
+setblock 90179 15 161 minecraft:waxed_copper_bulb[lit=false]
 
 
 
