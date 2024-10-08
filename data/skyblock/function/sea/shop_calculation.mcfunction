@@ -20,6 +20,7 @@ execute if entity @s[tag=SEAPT,scores={SEAPT_member=4}] run data modify block 90
 execute if entity @s[tag=SEAPT,scores={SEAPT_member=5}] run data modify block 90108 100 135 Items set from entity @s Inventory
 execute if entity @s[tag=SEAPT,scores={SEAPT_member=6}] run data modify block 90107 100 135 Items set from entity @s Inventory
 execute if entity @s[tag=SEAPT,scores={SEAPT_member=7}] run data modify block 90106 100 135 Items set from entity @s Inventory
+execute if entity @s[tag=SEAPT,scores={SEAPT_member=8}] run data modify block 90105 100 135 Items set from entity @s Inventory
 
 execute if entity @s[tag=SEAPT,scores={SEAPT_member=1}] run item replace block 90112 100 134 container.0 from entity @s armor.head
 execute if entity @s[tag=SEAPT,scores={SEAPT_member=2}] run item replace block 90111 100 134 container.0 from entity @s armor.head
@@ -28,6 +29,7 @@ execute if entity @s[tag=SEAPT,scores={SEAPT_member=4}] run item replace block 9
 execute if entity @s[tag=SEAPT,scores={SEAPT_member=5}] run item replace block 90108 100 134 container.0 from entity @s armor.head
 execute if entity @s[tag=SEAPT,scores={SEAPT_member=6}] run item replace block 90107 100 134 container.0 from entity @s armor.head
 execute if entity @s[tag=SEAPT,scores={SEAPT_member=7}] run item replace block 90106 100 134 container.0 from entity @s armor.head
+execute if entity @s[tag=SEAPT,scores={SEAPT_member=8}] run item replace block 90105 100 134 container.0 from entity @s armor.head
 execute if entity @s[tag=SEAPT,scores={SEAPT_member=1}] run item replace block 90112 100 134 container.1 from entity @s armor.chest
 execute if entity @s[tag=SEAPT,scores={SEAPT_member=2}] run item replace block 90111 100 134 container.1 from entity @s armor.chest
 execute if entity @s[tag=SEAPT,scores={SEAPT_member=3}] run item replace block 90110 100 134 container.1 from entity @s armor.chest
@@ -35,6 +37,7 @@ execute if entity @s[tag=SEAPT,scores={SEAPT_member=4}] run item replace block 9
 execute if entity @s[tag=SEAPT,scores={SEAPT_member=5}] run item replace block 90108 100 134 container.1 from entity @s armor.chest
 execute if entity @s[tag=SEAPT,scores={SEAPT_member=6}] run item replace block 90107 100 134 container.1 from entity @s armor.chest
 execute if entity @s[tag=SEAPT,scores={SEAPT_member=7}] run item replace block 90106 100 134 container.1 from entity @s armor.chest
+execute if entity @s[tag=SEAPT,scores={SEAPT_member=8}] run item replace block 90105 100 134 container.1 from entity @s armor.chest
 execute if entity @s[tag=SEAPT,scores={SEAPT_member=1}] run item replace block 90112 100 134 container.2 from entity @s armor.legs
 execute if entity @s[tag=SEAPT,scores={SEAPT_member=2}] run item replace block 90111 100 134 container.2 from entity @s armor.legs
 execute if entity @s[tag=SEAPT,scores={SEAPT_member=3}] run item replace block 90110 100 134 container.2 from entity @s armor.legs
@@ -42,6 +45,7 @@ execute if entity @s[tag=SEAPT,scores={SEAPT_member=4}] run item replace block 9
 execute if entity @s[tag=SEAPT,scores={SEAPT_member=5}] run item replace block 90108 100 134 container.2 from entity @s armor.legs
 execute if entity @s[tag=SEAPT,scores={SEAPT_member=6}] run item replace block 90107 100 134 container.2 from entity @s armor.legs
 execute if entity @s[tag=SEAPT,scores={SEAPT_member=7}] run item replace block 90106 100 134 container.2 from entity @s armor.legs
+execute if entity @s[tag=SEAPT,scores={SEAPT_member=8}] run item replace block 90105 100 134 container.2 from entity @s armor.legs
 execute if entity @s[tag=SEAPT,scores={SEAPT_member=1}] run item replace block 90112 100 134 container.3 from entity @s armor.feet
 execute if entity @s[tag=SEAPT,scores={SEAPT_member=2}] run item replace block 90111 100 134 container.3 from entity @s armor.feet
 execute if entity @s[tag=SEAPT,scores={SEAPT_member=3}] run item replace block 90110 100 134 container.3 from entity @s armor.feet
@@ -49,6 +53,7 @@ execute if entity @s[tag=SEAPT,scores={SEAPT_member=4}] run item replace block 9
 execute if entity @s[tag=SEAPT,scores={SEAPT_member=5}] run item replace block 90108 100 134 container.3 from entity @s armor.feet
 execute if entity @s[tag=SEAPT,scores={SEAPT_member=6}] run item replace block 90107 100 134 container.3 from entity @s armor.feet
 execute if entity @s[tag=SEAPT,scores={SEAPT_member=7}] run item replace block 90106 100 134 container.3 from entity @s armor.feet
+execute if entity @s[tag=SEAPT,scores={SEAPT_member=8}] run item replace block 90105 100 134 container.3 from entity @s armor.feet
 execute if entity @s[tag=SEAPT,scores={SEAPT_member=1}] run item replace block 90112 100 134 container.4 from entity @s weapon.offhand
 execute if entity @s[tag=SEAPT,scores={SEAPT_member=2}] run item replace block 90111 100 134 container.4 from entity @s weapon.offhand
 execute if entity @s[tag=SEAPT,scores={SEAPT_member=3}] run item replace block 90110 100 134 container.4 from entity @s weapon.offhand
@@ -56,3 +61,4 @@ execute if entity @s[tag=SEAPT,scores={SEAPT_member=4}] run item replace block 9
 execute if entity @s[tag=SEAPT,scores={SEAPT_member=5}] run item replace block 90108 100 134 container.4 from entity @s weapon.offhand
 execute if entity @s[tag=SEAPT,scores={SEAPT_member=6}] run item replace block 90107 100 134 container.4 from entity @s weapon.offhand
 execute if entity @s[tag=SEAPT,scores={SEAPT_member=7}] run item replace block 90106 100 134 container.4 from entity @s weapon.offhand
+execute if entity @s[tag=SEAPT,scores={SEAPT_member=8}] run item replace block 90105 100 134 container.4 from entity @s weapon.offhand

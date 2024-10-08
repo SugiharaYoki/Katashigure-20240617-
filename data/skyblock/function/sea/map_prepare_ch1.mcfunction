@@ -8,6 +8,7 @@ scoreboard objectives add sea_player dummy
 scoreboard objectives add sea_dead_check dummy
 scoreboard objectives add seact dummy
 scoreboard objectives add SEAPT_member dummy
+scoreboard objectives add SEAPT_member_eternal dummy
 scoreboard objectives add sea_4temp1 dummy
 scoreboard objectives add sea_4temp2 dummy
 scoreboard objectives add sea_4temp3 dummy
