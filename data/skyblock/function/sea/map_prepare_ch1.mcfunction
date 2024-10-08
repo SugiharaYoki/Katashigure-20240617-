@@ -1,5 +1,4 @@
     function skyblock:protector/entity_count_start
-
 execute as @e[x=90100,y=100,z=100,distance=0..500,type=!player] at @s run tp ~ ~-500 ~
 
 scoreboard objectives add sea_dead minecraft.custom:minecraft.deaths
@@ -81,6 +80,8 @@ team modify SEA color dark_blue
 team modify SEA friendlyFire false
 team modify SEA seeFriendlyInvisibles true
 execute as @a[tag=SEAPT] at @s run function skyblock:sea/map_prepare_ch1_player
+
+tellraw @a[tag=SEAPT] {"text":"为了保证最大程度的沉浸体验，请开启音乐游玩（推荐值：50%）。","color":"dark_gray"}
 
 setblock 90061 103 134 chest[facing=west]
 
