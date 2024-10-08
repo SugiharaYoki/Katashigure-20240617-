@@ -69,6 +69,8 @@ execute as @a[scores={MultiMenu=832012,parkour_stage=12..}] at @s run tp @p -394
 execute as @a[scores={MultiMenu=832012,parkour_stage=12..}] at @s run tellraw @s [{"text":"已抵达","color":"white"},{"text":" 梦蝶的长廊 - 第12廊间","color":"green"}]
 execute as @a[scores={MultiMenu=832013,parkour_stage=13..}] at @s run tp @p -417 50 -118 facing -418 50 -118
 execute as @a[scores={MultiMenu=832013,parkour_stage=13..}] at @s run tellraw @s [{"text":"已抵达","color":"white"},{"text":" 梦蝶的长廊 - 第13廊间","color":"green"}]
+execute as @a[scores={MultiMenu=832014,parkour_stage=14..}] at @s run tp @p -453 52 -118 facing -454 52 -118
+execute as @a[scores={MultiMenu=832014,parkour_stage=14..}] at @s run tellraw @s [{"text":"已抵达","color":"white"},{"text":" 梦蝶的长廊 - 第14廊间","color":"green"}]
 #后续事件
 clear @s
 effect clear @s
