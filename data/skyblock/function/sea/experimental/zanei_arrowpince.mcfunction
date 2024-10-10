@@ -53,7 +53,7 @@ execute if score AZR_boss2_arrowpince rng1 matches 37..360 at @n[tag=AZR_boss2_a
 execute if score AZR_boss2_arrowpince rng1 matches 37..360 at @n[tag=AZR_boss2_arrowpince_marker,tag=AZR_summon_attack] run summon arrow ^ ^2 ^1.2 {Motion:[0d,-1d,0d],Rotation:[0f,-90f],life:1130,damage:4.0}
 execute if score AZR_boss2_arrowpince rng1 matches 37..360 at @n[tag=AZR_boss2_arrowpince_marker,tag=AZR_summon_attack] run summon arrow ^-0.3 ^2 ^1.2 {Motion:[0d,-1d,0d],Rotation:[0f,-90f],life:1130,damage:4.0}
 execute if score AZR_boss2_arrowpince rng1 matches 37..360 at @n[tag=AZR_boss2_arrowpince_marker,tag=AZR_summon_attack] run summon arrow ^0.3 ^2 ^1.2 {Motion:[0d,-1d,0d],Rotation:[0f,-90f],life:1130,damage:4.0}
-
+execute if score AZR_boss2_arrowpince rng1 matches 37..360 at @n[tag=AZR_boss2_arrowpince_marker,tag=AZR_summon_attack] run playsound minecraft:entity.arrow.shoot hostile @a ~ ~ ~ 1 1.2
 
 execute if score AZR_boss2_arrowpince rng1 matches 1..360 at @n[tag=AZR_boss2_arrowpince_marker,tag=AZR_summon_particle] run particle end_rod ^1 ^0.6 ^
 execute if score AZR_boss2_arrowpince rng1 matches 1..360 at @n[tag=AZR_boss2_arrowpince_marker,tag=AZR_summon_particle] run particle end_rod ^0.9 ^0.4 ^
