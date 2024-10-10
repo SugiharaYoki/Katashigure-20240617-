@@ -25,6 +25,8 @@ execute if score AZR_boss2_arrowpince rng1 matches 17 as @n[tag=AZR_boss2_arrowp
 execute if score AZR_boss2_arrowpince rng1 matches 17 run tag @n[tag=AZR_boss2_arrowpince_marker] add AZR_summon_particle
 execute if score AZR_boss2_arrowpince rng1 matches 20 as @n[tag=AZR_boss2_arrowpince_marker] at @s run tp @s ^ ^ ^1.2
 execute if score AZR_boss2_arrowpince rng1 matches 20 run tag @n[tag=AZR_boss2_arrowpince_marker] add AZR_summon_particle
+execute if score AZR_boss2_arrowpince rng1 matches 23 as @n[tag=AZR_boss2_arrowpince_marker] at @s run tp @s ^ ^ ^1.2
+execute if score AZR_boss2_arrowpince rng1 matches 23 run tag @n[tag=AZR_boss2_arrowpince_marker] add AZR_summon_particle
 
 #summon block_display 90130.0 124.5 125.5 {transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[3.2f,0.03f,0.03f],translation:[0f,0f,0f]},block_state:{Name:},Tags:["sea_blockdisplay"]}
 
@@ -40,6 +42,8 @@ execute if score AZR_boss2_arrowpince rng1 matches 45 as @n[tag=AZR_boss2_arrowp
 execute if score AZR_boss2_arrowpince rng1 matches 45 run tag @n[tag=AZR_boss2_arrowpince_marker] add AZR_summon_attack
 execute if score AZR_boss2_arrowpince rng1 matches 47 as @n[tag=AZR_boss2_arrowpince_marker] at @s run tp @s ^ ^ ^1.2
 execute if score AZR_boss2_arrowpince rng1 matches 47 run tag @n[tag=AZR_boss2_arrowpince_marker] add AZR_summon_attack
+execute if score AZR_boss2_arrowpince rng1 matches 49 as @n[tag=AZR_boss2_arrowpince_marker] at @s run tp @s ^ ^ ^1.2
+execute if score AZR_boss2_arrowpince rng1 matches 49 run tag @n[tag=AZR_boss2_arrowpince_marker] add AZR_summon_attack
 
 execute if score AZR_boss2_arrowpince rng1 matches 63.. run scoreboard players set AZR_boss2_arrowpince rng1 0
 execute if score AZR_boss2_arrowpince rng1 matches 63.. run tag @s remove AZR_boss2_skill_arrowpince
