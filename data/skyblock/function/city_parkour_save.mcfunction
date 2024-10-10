@@ -1,5 +1,6 @@
 scoreboard objectives add parkour_stage dummy
 #白红橙黄绿青蓝紫黑
+execute if block ~ ~-1 ~ emerald_block unless score @s parkour_stage matches 0.. run scoreboard players set @s parkour_stage 1
 execute if block ~ ~-1 ~ emerald_block if block ~ ~-2 ~ white_concrete if block ~ ~-3 ~ white_concrete unless score @s parkour_stage matches 0.. run scoreboard players set @s parkour_stage 1
 execute if block ~ ~-1 ~ emerald_block if block ~ ~-2 ~ white_concrete if block ~ ~-3 ~ red_concrete if score @s parkour_stage matches ..1 run scoreboard players set @s parkour_stage 2
 execute if block ~ ~-1 ~ emerald_block if block ~ ~-2 ~ white_concrete if block ~ ~-3 ~ orange_concrete if score @s parkour_stage matches ..2 run scoreboard players set @s parkour_stage 3
