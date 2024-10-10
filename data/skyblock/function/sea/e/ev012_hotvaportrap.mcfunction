@@ -1,6 +1,6 @@
 scoreboard players add SEAch4_hotvaportrapA sea_4temp2 1
 
-execute if score SEAch4_hotvaportrapA sea_4temp2 matches 50 run scoreboard players set SEAch4_hotvaportrapA sea_4temp2 1
+execute if score SEAch4_hotvaportrapA sea_4temp2 matches 50.. run scoreboard players set SEAch4_hotvaportrapA sea_4temp2 1
 
 execute positioned 90171 13 153 unless entity @n[tag=SEAch4_spawn,distance=0..3] positioned 90171 13 153 run function skyblock:sea/m/drowned_small
 execute positioned 90171 13 153 unless entity @n[tag=SEAch4_spawn,distance=0..3] positioned 90171 13 153 run function skyblock:sea/m/drowned_maintenance
