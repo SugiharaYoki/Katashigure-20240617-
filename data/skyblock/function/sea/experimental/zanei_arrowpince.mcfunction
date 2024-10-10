@@ -9,6 +9,7 @@ execute if score AZR_boss2_arrowpince rng1 matches 1 run kill @e[tag=AZR_boss2_a
 
 execute if score AZR_boss2_arrowpince rng1 matches 1 run summon marker ~ ~1 ~ {Tags:["AZR_boss2_arrowpince_origin"]}
 execute if score AZR_boss2_arrowpince rng1 matches 1 at @s rotated ~ 0 run tp @n[tag=AZR_boss2_arrowpince_origin] ^ ^ ^-1 facing entity @s
+execute if score AZR_boss2_arrowpince rng1 matches 1 as @n[tag=AZR_boss2_arrowpince_origin] at @s run tp ~ ~1.5 ~
 execute if score AZR_boss2_arrowpince rng1 matches 1 run summon marker ~ ~1 ~ {Tags:["AZR_boss2_arrowpince_marker"]}
 
 execute if score AZR_boss2_arrowpince rng1 matches 5 rotated as @n[tag=AZR_boss2_arrowpince_origin] run tp @n[tag=AZR_boss2_arrowpince_marker] ^ ^ ^1.2
