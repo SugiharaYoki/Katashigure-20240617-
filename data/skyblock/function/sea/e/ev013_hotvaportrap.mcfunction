@@ -2,11 +2,11 @@ scoreboard players add SEAch4_hotvaportrapA sea_4temp2 1
 
 execute if score SEAch4_hotvaportrapA sea_4temp2 matches 46 run scoreboard players set SEAch4_hotvaportrapA sea_4temp2 1
 
-execute positioned 90183 10 152 unless entity @n[tag=SEAch4_spawn,distance=0..3] positioned 90183 11 140 run function skyblock:sea/m/drowned_shield
-execute positioned 90183 10 152 unless entity @n[tag=SEAch4_spawn,distance=0..3] positioned 90183 11 140 run function skyblock:sea/m/cave_spider
-execute positioned 90183 10 152 unless entity @n[tag=SEAch4_spawn,distance=0..3] positioned 90183 11 140 run function skyblock:sea/m/cave_spider
+execute positioned 90183 10 139 unless entity @n[tag=SEAch4_spawn,distance=0..3] positioned 90183 10 139 run function skyblock:sea/m/drowned_shield
+execute positioned 90183 10 139 unless entity @n[tag=SEAch4_spawn,distance=0..3] positioned 90183 10 139 run function skyblock:sea/m/cave_spider
+execute positioned 90183 10 139 unless entity @n[tag=SEAch4_spawn,distance=0..3] positioned 90183 10 139 run function skyblock:sea/m/cave_spider
 
-execute positioned 90183 10 152 unless entity @n[tag=SEAch4_spawn,distance=0..3] run summon marker ~ ~ ~ {Tags:["SEAch4_spawn"]}
+execute positioned 90183 10 139 unless entity @n[tag=SEAch4_spawn,distance=0..3] run summon marker ~ ~ ~ {Tags:["SEAch4_spawn"]}
 
 
 

@@ -209,10 +209,12 @@ execute if score sea_ch4_switch_secondfloor sea_4temp2 matches 27 run fill 90189
 
 #蒸汽陷阱A
 execute if entity @a[tag=SEAPT,x=90169,y=12,z=155,distance=0..15] run function skyblock:sea/e/ev012_hotvaportrap
+#蒸汽陷阱B
+execute if entity @a[tag=SEAPT,x=90183,y=10,z=152,distance=0..15] run function skyblock:sea/e/ev013_hotvaportrap
 
 
 
-
+execute if block 90183 12 136 minecraft:crimson_button[powered=true] run function skyblock:sea/e/ev014_unlockelevator1
 
 
 

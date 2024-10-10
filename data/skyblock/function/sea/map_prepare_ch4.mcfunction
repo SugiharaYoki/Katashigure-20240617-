@@ -45,6 +45,8 @@ item replace block 90188 14 89 container.14 with beef 1
 execute positioned 90186 14 87 run function skyblock:sea/m/drowned_maintenance
 execute positioned 90186 14 87 run function skyblock:sea/m/drowned
 execute positioned 90188 19 100 run function skyblock:sea/m/drone
+execute positioned 90182 11 157 run function skyblock:sea/m/drone
+execute positioned 90185 11 142 run function skyblock:sea/m/drone
 
 execute positioned 90191 19 87 run function skyblock:sea/m/silverfish_big
 
@@ -69,6 +71,8 @@ execute positioned 90179 19 119 run function skyblock:sea/m/zombie_cook
 execute positioned 90194 20 95 run function skyblock:sea/m/npc_herb
 scoreboard players set @n[tag=SEAherb] sea_4temp1 1
 
+
+
 setblock 90210 19 112 air
 setblock 90211 19 112 air
 setblock 90188 19 109 air
@@ -77,6 +81,9 @@ setblock 90177 19 121 air
 setblock 90160 19 121 air
 setblock 90185 19 121 air
 setblock 90155 13 154 air
+setblock 90189 11 137 air
+setblock 90187 11 138 air
+setblock 90181 11 144 air
 setblock 90210 19 112 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:flint"}}
 setblock 90211 19 112 decorated_pot{sherds:["friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd"],item:{count: 3, id:"minecraft:emerald"}}
 setblock 90188 19 109 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 2, id:"minecraft:carrot"}}
@@ -85,6 +92,9 @@ setblock 90177 19 121 decorated_pot{sherds:["friend_pottery_sherd","friend_potte
 setblock 90160 19 121 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:gunpowder"}}
 setblock 90185 19 121 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:gunpowder"}}
 setblock 90155 13 154 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:gunpowder"}}
+setblock 90189 11 137 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:coal"}}
+setblock 90187 11 138 decorated_pot{sherds:["burn_pottery_sherd","burn_pottery_sherd","burn_pottery_sherd","burn_pottery_sherd"],item:{count: 1, id:"minecraft:blaze_powder"}}
+setblock 90181 11 144 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 2, id:"minecraft:gunpowder"}}
 
 
 summon block_display 90184.0 20.65 97.0 {transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[3.8f,0.03f,0.03f],translation:[0f,0f,0f]},block_state:{Name:redstone_block},Rotation:[0f,0f],Tags:["sea_blockdisplay","sea_laser_ch4_1"]}
@@ -147,9 +157,12 @@ setblock 90173 15 161 minecraft:waxed_copper_bulb[lit=false]
 setblock 90179 15 161 minecraft:waxed_copper_bulb[lit=false]
 
 
-
-
-
+#通往实验区的大电梯
+fill 90158 36 131 90158 34 129 minecraft:iron_bars
+fill 90159 38 131 90159 38 129 minecraft:redstone_lamp[lit=true]
+setblock 90183 12 136 minecraft:crimson_button[facing=north,face=floor]
+setblock 90182 12 136 minecraft:waxed_exposed_copper_bulb[lit=false]
+summon text_display 90159 36.5 130 {background:0,text:'{"text":"禁止通行 灾害应对","color":"dark_red"}',Rotation:[-90f,0f],shadow:1b}
 
 
 #最终大厅 第七章入口
