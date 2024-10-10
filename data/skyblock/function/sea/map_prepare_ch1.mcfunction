@@ -466,4 +466,14 @@ fill 90149 122 254 90149 121 254 minecraft:slime_block
 setblock 90073 103 141 air
 scoreboard players set SEAchg_spawn_timer_longbridge sea_4temp2 0
 
+
+
+summon text_display 90165 105 114.0 {background:7631988,text:'{"text":"轻按跳跃使用电梯","color":"aqua"}',Rotation:[90f,0f],shadow:1b,text_opacity:200}
+summon text_display 90165 129 114.0 {background:7631988,text:'{"text":"轻按跳跃使用电梯","color":"aqua"}',Rotation:[90f,0f],shadow:1b,text_opacity:200}
+
+summon text_display 90074.0 105 164 {background:7631988,text:'{"text":"轻按跳跃使用电梯","color":"aqua"}',Rotation:[180f,0f],shadow:1b,text_opacity:200}
+summon text_display 90074.0 129 164 {background:7631988,text:'{"text":"轻按跳跃使用电梯","color":"aqua"}',Rotation:[180f,0f],shadow:1b,text_opacity:200}
+
+
+
 function skyblock:protector/entity_count_end {function:"slyblock:sea/map_prepare_ch1"}
