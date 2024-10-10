@@ -1,6 +1,7 @@
 execute if entity @s[tag=AZR_boss2_skill_breakingout] run scoreboard players add AZR_boss2_breakingout rng1 1
 execute store result score AZR_boss2_breakingout rng2 run random value 1..5
 execute store result score AZR_boss2_breakingout rng3 run random value 1..9
+execute store result score AZR_boss2_breakingout rng4 run random value 1..9
 #execute if score AZR_boss2_breakingout rng1 matches 360.. run scoreboard players set AZR_boss2_breakingout rng1 1
 
 execute if score AZR_boss2_breakingout rng1 matches 65..68 run kill @e[tag=AZR_boss2_breakingout_origin]
@@ -60,8 +61,8 @@ execute if score AZR_boss2_breakingout rng1 matches 7 at @n[tag=AZR_boss2_breaki
 execute if score AZR_boss2_breakingout rng1 matches 9 at @n[tag=AZR_boss2_breakingout_3] run playsound minecraft:entity.generic.extinguish_fire hostile @a ~ ~ ~ 0.75 1.5
 execute if score AZR_boss2_breakingout rng1 matches 11 at @n[tag=AZR_boss2_breakingout_4] run playsound minecraft:entity.generic.extinguish_fire hostile @a ~ ~ ~ 0.75 1.5
 
-execute if score AZR_boss2_breakingout rng1 matches 5..62 at @e[tag=AZR_boss2_breakingout_marker] run playsound block.fire.ambient hostile @a ~ ~ ~ 1.2 0.9
+execute if score AZR_boss2_breakingout rng1 matches 5..62 at @e[tag=AZR_boss2_breakingout_marker] if score AZR_boss2_breakingout rng4 matches 1..3 run playsound block.fire.ambient hostile @a ~ ~ ~ 1.2 0.9
 execute if score AZR_boss2_breakingout rng1 matches 1..360 at @e[tag=AZR_boss2_breakingout_marker] run particle small_flame ~ ~ ~ 0.25 0.02 0.25 0.01 3
-execute if score AZR_boss2_breakingout rng1 matches 1..360 at @e[tag=AZR_boss2_breakingout_marker] run particle small_flame ~ ~ ~ 0.2 0.02 0.2 0.05 1
+execute if score AZR_boss2_breakingout rng1 matches 1..360 at @e[tag=AZR_boss2_breakingout_marker] if score AZR_boss2_breakingout rng4 matches 1..3 run particle small_flame ~ ~ ~ 0.2 0.02 0.2 0.05 3
 
 
