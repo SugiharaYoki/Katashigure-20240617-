@@ -44,6 +44,7 @@ execute if score AZR_boss2_stockpile rng1 matches 57 at @s run function skyblock
 execute if score AZR_boss2_stockpile rng1 matches 58 at @s run function skyblock:sea/experimental/zanei_stockpile_particle {p:0.05}
 execute if score AZR_boss2_stockpile rng1 matches 59 at @s run function skyblock:sea/experimental/zanei_stockpile_particle {p:0}
 execute if score AZR_boss2_stockpile rng1 matches 60 at @s run say hi
+execute if score AZR_boss2_stockpile rng1 matches 60 at @s run tag @s remove AZR_boss2_skill_stockpile
 
 execute if score AZR_boss2_stockpile rng3 matches 1..3 run playsound minecraft:item.crossbow.quick_charge_3 hostile @a ~ ~ ~ 5 0.9
 execute if score AZR_boss2_stockpile rng1 matches 40.. if score AZR_boss2_stockpile rng3 matches 1..3 run playsound minecraft:item.crossbow.loading_start hostile @a ~ ~ ~ 5 0.9
