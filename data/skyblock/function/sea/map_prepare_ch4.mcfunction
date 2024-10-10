@@ -66,6 +66,8 @@ execute positioned 90158 13 155 run function skyblock:sea/m/spider
 execute positioned 90179 19 119 run function skyblock:sea/m/zombie_cook
 execute positioned 90179 19 119 run function skyblock:sea/m/zombie_cook
 
+execute positioned 90194 20 95 run function skyblock:sea/m/npc_herb
+
 setblock 90210 19 112 air
 setblock 90211 19 112 air
 setblock 90188 19 109 air

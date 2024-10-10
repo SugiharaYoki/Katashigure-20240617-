@@ -26,6 +26,8 @@ execute as @a[tag=SEAPT,x=90175,y=19,z=89,distance=0..4.8,tag=!e_i_33] at @s run
 execute as @a[tag=SEAPT,x=90175,y=19,z=89,distance=0..4.8,tag=!e_i_33] at @s run playsound ambient.warped_forest.mood master @s ~ ~ ~ 100 0.6
 execute as @a[tag=SEAPT,x=90175,y=19,z=89,distance=0..4.8,tag=!e_i_33] at @s run tag @s add e_i_33
 
+execute as @a[tag=SEAPT,tag=!e_i_34] at @s if entity @n[tag=SEAherb,distance=0..2.5] run tellraw @s {"text": "嗯？小猫？你是怎么从怪物手里活下来的？","color": "gray"}
+execute as @a[tag=SEAPT,tag=!e_i_34] at @s if entity @n[tag=SEAherb,distance=0..2.5] run tag @s add e_i_34
 
 
 
