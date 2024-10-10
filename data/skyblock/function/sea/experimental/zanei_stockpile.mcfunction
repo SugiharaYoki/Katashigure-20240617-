@@ -8,9 +8,9 @@ execute if entity @s[tag=AZR_boss2_skill_stockpile] if score AZR_boss2_stockpile
 execute if score AZR_boss2_stockpile rng1 matches 1 run effect give @s slowness 10 150 true
 execute if score AZR_boss2_stockpile rng1 matches 1..50 at @s run tp @s ~ ~ ~ facing entity @p[tag=azrPlayer]
 
-execute if score AZR_boss2_stockpile rng1 matches 1..60 at @s positioned ~ ~1.5 ~ rotated ~ 0 run particle white_smoke ^ ^ ^0.2 0.3 0.3 0.3 0.03 5
-execute if score AZR_boss2_stockpile rng1 matches 21..60 at @s positioned ~ ~1.5 ~ rotated ~ 0 run particle white_smoke ^ ^ ^0.2 0.3 0.3 0.3 0.03 5
-execute if score AZR_boss2_stockpile rng1 matches 41..60 at @s positioned ~ ~1.5 ~ rotated ~ 0 run particle white_smoke ^ ^ ^0.2 0.3 0.3 0.3 0.03 5
+execute if score AZR_boss2_stockpile rng1 matches 1..60 at @s positioned ~ ~1.5 ~ rotated ~ 0 run particle white_smoke ^ ^ ^0.2 0.1 0.1 0.1 0.01 3
+execute if score AZR_boss2_stockpile rng1 matches 21..60 at @s positioned ~ ~1.5 ~ rotated ~ 0 run particle white_smoke ^ ^ ^0.2 0.08 0.08 0.08 0.02 3
+execute if score AZR_boss2_stockpile rng1 matches 41..60 at @s positioned ~ ~1.5 ~ rotated ~ 0 run particle white_smoke ^ ^ ^0.2 0.06 0.05 0.05 0.03 3
 execute if score AZR_boss2_stockpile rng1 matches 20 at @s positioned ~ ~1.5 ~ rotated ~ 0 run particle end_rod ^ ^ ^0.2 0 0 0 0.00 1
 execute if score AZR_boss2_stockpile rng1 matches 20 at @s positioned ~ ~1.5 ~ rotated ~ 0 run particle end_rod ^ ^0.2 ^0.2 0 0 0 0.00 1
 execute if score AZR_boss2_stockpile rng1 matches 20 at @s positioned ~ ~1.5 ~ rotated ~ 0 run particle end_rod ^0.2 ^ ^0.2 0 0 0 0.00 1
