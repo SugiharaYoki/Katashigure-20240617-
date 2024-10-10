@@ -12,7 +12,8 @@ execute if score AZR_boss2_arrowpince rng1 matches 1 at @s rotated ~ 0 run tp @n
 execute if score AZR_boss2_arrowpince rng1 matches 1 as @n[tag=AZR_boss2_arrowpince_origin] at @s run tp ~ ~1.5 ~
 execute if score AZR_boss2_arrowpince rng1 matches 1 run summon marker ~ ~1 ~ {Tags:["AZR_boss2_arrowpince_marker"]}
 
-execute if score AZR_boss2_arrowpince rng1 matches 5 rotated as @n[tag=AZR_boss2_arrowpince_origin] at @n[tag=AZR_boss2_arrowpince_origin] run tp @n[tag=AZR_boss2_arrowpince_marker] ^ ^ ^1.2
+execute if score AZR_boss2_arrowpince rng1 matches 5 at @n[tag=AZR_boss2_arrowpince_origin] run tp @n[tag=AZR_boss2_arrowpince_marker] ^ ^ ^-2.4 facing entity @n[tag=AZR_boss2_arrowpince_origin]
+execute if score AZR_boss2_arrowpince rng1 matches 5 as @n[tag=AZR_boss2_arrowpince_marker] at @s run tp @s ^ ^ ^2.4
 execute if score AZR_boss2_arrowpince rng1 matches 5 run tag @n[tag=AZR_boss2_arrowpince_marker] add AZR_summon_particle
 execute if score AZR_boss2_arrowpince rng1 matches 8 as @n[tag=AZR_boss2_arrowpince_marker] at @s run tp @s ^ ^ ^1.2
 execute if score AZR_boss2_arrowpince rng1 matches 8 run tag @n[tag=AZR_boss2_arrowpince_marker] add AZR_summon_particle
@@ -45,9 +46,9 @@ execute if score AZR_boss2_arrowpince rng1 matches 63.. run tag @s remove AZR_bo
 
 
 execute if score AZR_boss2_arrowpince rng1 matches 37..360 at @n[tag=AZR_boss2_arrowpince_marker,tag=AZR_summon_attack] run particle white_smoke ^ ^2 ^1.2 0.3 0.3 0.3 0.03 30
-execute if score AZR_boss2_arrowpince rng1 matches 37..360 at @n[tag=AZR_boss2_arrowpince_marker,tag=AZR_summon_attack] run summon arrow ^ ^2 ^1.2 {Motion:[0d,-1d,0d],Rotation:[0f,-90f]}
-execute if score AZR_boss2_arrowpince rng1 matches 37..360 at @n[tag=AZR_boss2_arrowpince_marker,tag=AZR_summon_attack] run summon arrow ^-0.3 ^2 ^1.2 {Motion:[0d,-1d,0d],Rotation:[0f,-90f]}
-execute if score AZR_boss2_arrowpince rng1 matches 37..360 at @n[tag=AZR_boss2_arrowpince_marker,tag=AZR_summon_attack] run summon arrow ^0.3 ^2 ^1.2 {Motion:[0d,-1d,0d],Rotation:[0f,-90f]}
+execute if score AZR_boss2_arrowpince rng1 matches 37..360 at @n[tag=AZR_boss2_arrowpince_marker,tag=AZR_summon_attack] run summon arrow ^ ^2 ^1.2 {Motion:[0d,-1d,0d],Rotation:[0f,-90f],life:1130,damage:4.0}
+execute if score AZR_boss2_arrowpince rng1 matches 37..360 at @n[tag=AZR_boss2_arrowpince_marker,tag=AZR_summon_attack] run summon arrow ^-0.3 ^2 ^1.2 {Motion:[0d,-1d,0d],Rotation:[0f,-90f],life:1130,damage:4.0}
+execute if score AZR_boss2_arrowpince rng1 matches 37..360 at @n[tag=AZR_boss2_arrowpince_marker,tag=AZR_summon_attack] run summon arrow ^0.3 ^2 ^1.2 {Motion:[0d,-1d,0d],Rotation:[0f,-90f],life:1130,damage:4.0}
 
 
 execute if score AZR_boss2_arrowpince rng1 matches 1..360 at @n[tag=AZR_boss2_arrowpince_marker,tag=AZR_summon_particle] run particle end_rod ^1 ^0.6 ^
