@@ -25,8 +25,8 @@ execute if score AZR_boss2_breakingout rng1 matches 11 as @n[tag=AZR_boss2_break
 
 #summon block_display 90130.0 124.5 125.5 {transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[3.2f,0.03f,0.03f],translation:[0f,0f,0f]},block_state:{Name:},Tags:["sea_blockdisplay"]}
 
-execute if score AZR_boss2_breakingout rng1 matches 49..62 if score AZR_boss2_breakingout rng2 matches 1..2 at @n[tag=AZR_boss2_breakingout_marker] run particle white_smoke ^ ^2 ^1.2 0.3 0.3 0.3 0.03 30
-execute if score AZR_boss2_breakingout rng1 matches 49..62 if score AZR_boss2_breakingout rng2 matches 1..2 at @n[tag=AZR_boss2_breakingout_marker] run summon arrow ^ ^2 ^1.2 {Motion:[0d,1d,0d],Rotation:[0f,90f],life:1100,damage:3.0,Fire:1b}
+execute if score AZR_boss2_breakingout rng1 matches 49..62 if score AZR_boss2_breakingout rng2 matches 1..6 at @n[tag=AZR_boss2_breakingout_marker] run particle white_smoke ^ ^2 ^1.2 0.3 0.3 0.3 0.03 30
+execute if score AZR_boss2_breakingout rng1 matches 49..62 if score AZR_boss2_breakingout rng2 matches 1..6 at @n[tag=AZR_boss2_breakingout_marker] run summon arrow ^ ^2 ^1.2 {Motion:[0d,1d,0d],Rotation:[0f,90f],life:1100,damage:3.0,Fire:100s}
 
 execute if score AZR_boss2_breakingout rng1 matches 67.. run tag @s remove AZR_boss2_skill_breakingout
 execute if score AZR_boss2_breakingout rng1 matches 67.. run scoreboard players set AZR_boss2_breakingout rng1 0
@@ -35,7 +35,7 @@ execute if score AZR_boss2_breakingout rng1 matches 67.. run scoreboard players 
 
 
 
-execute if score AZR_boss2_breakingout rng1 matches 1..360 at @e[tag=AZR_boss2_breakingout_marker] run particle squid_ink ~ ~ ~ 0.5 0.2 0.5 0.1 10
-execute if score AZR_boss2_breakingout rng1 matches 1..360 at @e[tag=AZR_boss2_breakingout_marker] run particle squid_ink ~ ~ ~ 0.5 0.2 0.5 0.5 2
+execute if score AZR_boss2_breakingout rng1 matches 1..360 at @e[tag=AZR_boss2_breakingout_marker] run particle small_flame ~ ~ ~ 0.5 0.2 0.5 0.1 10
+execute if score AZR_boss2_breakingout rng1 matches 1..360 at @e[tag=AZR_boss2_breakingout_marker] run particle small_flame ~ ~ ~ 0.5 0.2 0.5 0.5 2
 
 
