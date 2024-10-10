@@ -64,6 +64,7 @@ execute as @e[tag=arroworb2,type=marker] at @s run function skyblock:azr/stage/b
     execute if score tickTimer Azr_system matches 81 if score playerCount Azr_system matches 3.. run bossbar set azr:boss_hp_bar max 250
     execute if score tickTimer Azr_system matches 81 if score playerCount Azr_system matches 5.. run bossbar set azr:boss_hp_bar max 350
     execute if score tickTimer Azr_system matches 81 run bossbar set azr:boss_hp_bar players @a[tag=azrPlayer]
+    execute if score tickTimer Azr_system matches 81.. store result bossbar azr:boss_hp_bar value run scoreboard players get @n[tag=AzrielBossA] Azr_mobHealth
 
 #全局能力
     #AI-每刻有1/8的肯面向最近玩家
