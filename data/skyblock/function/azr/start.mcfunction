@@ -36,6 +36,9 @@ scoreboard players set stage Azr_system 1
 scoreboard players set isStarted Azr_system 1
 scoreboard players set stopSeconds Azr_system 0
 scoreboard players set chapter Azr_system 1
+#创建小队
+team add AzrBossA
+team modify AzrBossA friendlyFire false
 #重置bossbar
 bossbar remove azr:progress_bar_normal
 bossbar remove azr:progress_bar_special

@@ -19,6 +19,8 @@ bossbar remove azr:boss_hp_bar
 bossbar remove azr:progress_bar_special
 bossbar remove azr:progress_bar_normal
 #______________________________________________________________#
+#清理小队
+team remove AzrBossA
 #清场
 schedule function skyblock:azr/end_game/reset_map 10t
 stopsound @a[tag=azrPlayer]

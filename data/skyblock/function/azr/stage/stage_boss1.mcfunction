@@ -27,7 +27,7 @@ execute as @e[tag=arroworb2,type=marker] at @s run function skyblock:azr/stage/b
     execute if score tickTimer Azr_system matches 152 as @a[tag=azrPlayer] at @s run playsound minecraft:vol2.lethaldose master @s ~ ~ ~ 0.65
     #summon boss
     execute if score tickTimer Azr_system matches 80 run particle minecraft:smoke -79931 47 88 1 1 1 0.02 200
-    execute if score tickTimer Azr_system matches 80 if score playerCount Azr_system matches 1..2 positioned -79931 47 88 run function skyblock:azr/m/shadow_t1_simple
+    execute if score tickTimer Azr_system matches 80 if score playerCount Azr_system matches 1..2 positioned -79931 47 88 run function skyblock:azr/m/shadow_t1_easy
     execute if score tickTimer Azr_system matches 80 if score playerCount Azr_system matches 3..4 positioned -79931 47 88 run function skyblock:azr/m/shadow_t1_normal
     execute if score tickTimer Azr_system matches 80 if score playerCount Azr_system matches 5.. positioned -79931 47 88 run function skyblock:azr/m/shadow_t1_hard
     execute if score tickTimer Azr_system matches 81 run effect give @e[tag=AzrielBossA,limit=1] slow_falling 5 30 true
