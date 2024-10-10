@@ -1,6 +1,4 @@
-
-
-execute as @e[tag=,type=marker] at @s run function skyblock:azr/stage/boss1/arroworb
+execute as @e[tag=arroworb,type=marker] at @s run function skyblock:azr/stage/boss1/arroworb
 execute as @e[tag=arroworb2,type=marker] at @s run function skyblock:azr/stage/boss1/arroworb2
 
 #start
@@ -64,7 +62,7 @@ execute as @e[tag=arroworb2,type=marker] at @s run function skyblock:azr/stage/b
     execute if score tickTimer Azr_system matches 81 if score playerCount Azr_system matches 3.. run bossbar set azr:boss_hp_bar max 250
     execute if score tickTimer Azr_system matches 81 if score playerCount Azr_system matches 5.. run bossbar set azr:boss_hp_bar max 350
     execute if score tickTimer Azr_system matches 81 run bossbar set azr:boss_hp_bar players @a[tag=azrPlayer]
-    execute if score tickTimer Azr_system matches 81.. store result bossbar azr:boss_hp_bar value run scoreboard players get @n[tag=AzrielBossA] Azr_mobHealth
+    execute if score tickTimer Azr_system matches 82.. store result bossbar azr:boss_hp_bar value run scoreboard players get @n[tag=AzrielBossA] Azr_mobHealth
 
 #全局能力
     #AI-每刻有1/8的肯面向最近玩家
@@ -89,8 +87,8 @@ execute as @e[tag=arroworb2,type=marker] at @s run function skyblock:azr/stage/b
     # wave I - 只运行一次，自动进入下一阶段
     function skyblock:azr/tool_rng
     execute if score tickTimer Azr_system matches 152.. if score #rng7 Azr_system matches 1 if score #rng11 Azr_system matches 1 as @e[tag=AzrielBossA,limit=3] at @s if entity @a[tag=azrPlayer,distance=0..2.5] run function skyblock:azr/stage/boss1/tp1
-    execute if score tickTimer Azr_system matches 152.. if score playerCount Azr_system matches 3.. if score #rng7 Azr_system matches 1 if score #rng11 Azr_system matches 4 as @e[tag=AzrielBossA,limit=3] at @s run function skyblock:azr/stage/boss1/summon1
-    execute if score tickTimer Azr_system matches 152.. if score playerCount Azr_system matches 7.. if score #rng7 Azr_system matches 1 if score #rng9 Azr_system matches 4 as @e[tag=AzrielBossA,limit=3] at @s run function skyblock:azr/stage/boss1/summon1
+    execute if score tickTimer Azr_system matches 152.. if score playerCount Azr_system matches 3.. if score #rng7 Azr_system matches 1 if score #rng11 Azr_system matches 4 as @e[tag=AzrielBossA,limit=3] at @s run function skyblock:azr/stage/boss1/summon
+    execute if score tickTimer Azr_system matches 152.. if score playerCount Azr_system matches 7.. if score #rng7 Azr_system matches 1 if score #rng9 Azr_system matches 4 as @e[tag=AzrielBossA,limit=3] at @s run function skyblock:azr/stage/boss1/summon
     execute if score tickTimer Azr_system matches 152.. if score #rng5 Azr_system matches 1 if score #rng11 Azr_system matches 2 as @e[tag=AzrielBossA,limit=3] at @s if entity @a[tag=azrPlayer,distance=0..2.5] run function skyblock:azr/stage/boss1/tp2
     execute if score tickTimer Azr_system matches 152.. if score #rng5 Azr_system matches 1 if score #rng11 Azr_system matches 3 as @e[tag=AzrielBossA,limit=3] at @s if entity @a[tag=azrPlayer,distance=0..4.5] run function skyblock:azr/stage/boss1/move1
     execute if score tickTimer Azr_system matches 152.. if score #rng6 Azr_system matches 1 if score #rng8 Azr_system matches 4 as @e[tag=AzrielBossA,limit=3] at @s run summon arrow ~0 ~4 ~-2 {Motion:[0.0,-0.3,0.0],pickup:0,damage:0.5,life:1100}
@@ -156,30 +154,30 @@ execute if score tickTimer Azr_system matches 2501 if score playerCount Azr_syst
     #wave2 900..1880 反复回秒直到死亡
     execute if score tickTimer Azr_system matches 900..2800 if score playerCount Azr_system matches 1.. if score #rng19 Azr_system matches 1..11 if score #rng20 Azr_system matches 4..5 if entity @e[tag=AzrielBossA,scores={Azr_mobHealth=..30}] if entity @a[tag=azrPlayer,distance=0..2.5] run function skyblock:azr/stage/boss1/tp1
     execute if score tickTimer Azr_system matches 900..2800 if score playerCount Azr_system matches 1.. if score #rng19 Azr_system matches 1..11 if score #rng20 Azr_system matches 6..7 if entity @e[tag=AzrielBossA,scores={Azr_mobHealth=..50}] run function skyblock:azr/stage/boss1/flat1_w
-    execute if score tickTimer Azr_system matches 900..2800 if score playerCount Azr_system matches 1.. if score #rng19 Azr_system matches 1..11 if score #rng20 Azr_system matches 6..7 if entity @e[tag=AzrielBossA,scores={Azr_mobHealth=..50}] run schedule function skyblock:azr/stage/boss1/flat1 1s
+    execute if score tickTimer Azr_system matches 900..2800 if score playerCount Azr_system matches 1.. if score #rng19 Azr_system matches 1..11 if score #rng20 Azr_system matches 6..7 if entity @e[tag=AzrielBossA,scores={Azr_mobHealth=..50}] run function skyblock:azr/stage/boss1/flat1
     execute if score tickTimer Azr_system matches 900..2800 if score playerCount Azr_system matches 1.. if score #rng19 Azr_system matches 1..11 if score #rng20 Azr_system matches 8..9 if entity @e[tag=AzrielBossA,scores={Azr_mobHealth=..50}] run function skyblock:azr/stage/boss1/flat2_w
-    execute if score tickTimer Azr_system matches 900..2800 if score playerCount Azr_system matches 1.. if score #rng19 Azr_system matches 1..11 if score #rng20 Azr_system matches 8..9 if entity @e[tag=AzrielBossA,scores={Azr_mobHealth=..50}] run schedule function skyblock:azr/stage/boss1/flat2 1s
+    execute if score tickTimer Azr_system matches 900..2800 if score playerCount Azr_system matches 1.. if score #rng19 Azr_system matches 1..11 if score #rng20 Azr_system matches 8..9 if entity @e[tag=AzrielBossA,scores={Azr_mobHealth=..50}] run function skyblock:azr/stage/boss1/flat2
     execute if score tickTimer Azr_system matches 1020..1100 if score #rng15 Azr_system matches 1 as @e[tag=AzrielBossA,limit=3] at @s run function skyblock:azr/stage/boss1/flat1_w
-    execute if score tickTimer Azr_system matches 1020..1100 if score #rng15 Azr_system matches 1 as @e[tag=AzrielBossA,limit=3] at @s run schedule function skyblock:azr/stage/boss1/flat1 1s
+    execute if score tickTimer Azr_system matches 1020..1100 if score #rng15 Azr_system matches 1 as @e[tag=AzrielBossA,limit=3] at @s run function skyblock:azr/stage/boss1/flat1
     execute if score tickTimer Azr_system matches 1020..1100 if score #rng15 Azr_system matches 2 as @e[tag=AzrielBossA,limit=3] at @s run function skyblock:azr/stage/boss1/flat2_w
-    execute if score tickTimer Azr_system matches 1020..1100 if score #rng15 Azr_system matches 2 as @e[tag=AzrielBossA,limit=3] at @s run schedule function skyblock:azr/stage/boss1/flat2 1s
+    execute if score tickTimer Azr_system matches 1020..1100 if score #rng15 Azr_system matches 2 as @e[tag=AzrielBossA,limit=3] at @s run function skyblock:azr/stage/boss1/flat2
     execute if score tickTimer Azr_system matches 1030..1130 if score #rng14 Azr_system matches 1 as @e[tag=AzrielBossA,limit=3] at @s if entity @a[tag=azrPlayer,distance=0..4.5] run function skyblock:azr/stage/boss1/move1
-    execute if score tickTimer Azr_system matches 1030..1130 if score #rng14 Azr_system matches 2 as @e[tag=AzrielBossA,limit=3] at @s run schedule function skyblock:azr/stage/boss1/move2 0.5s
+    execute if score tickTimer Azr_system matches 1030..1130 if score #rng14 Azr_system matches 2 as @e[tag=AzrielBossA,limit=3] at @s run function skyblock:azr/stage/boss1/move2
     execute if score tickTimer Azr_system matches 1150..1250 if score #rng13 Azr_system matches 1 as @e[tag=AzrielBossA,limit=3] at @s run function skyblock:azr/stage/boss1/flat1_w
-    execute if score tickTimer Azr_system matches 1150..1250 if score #rng13 Azr_system matches 1 as @e[tag=AzrielBossA,limit=3] at @s run schedule function skyblock:azr/stage/boss1/flat1 1s
+    execute if score tickTimer Azr_system matches 1150..1250 if score #rng13 Azr_system matches 1 as @e[tag=AzrielBossA,limit=3] at @s run function skyblock:azr/stage/boss1/flat1
     execute if score tickTimer Azr_system matches 1150..1250 if score #rng13 Azr_system matches 2 as @e[tag=AzrielBossA,limit=3] at @s run function skyblock:azr/stage/boss1/flat2_w
-    execute if score tickTimer Azr_system matches 1150..1250 if score #rng13 Azr_system matches 2 as @e[tag=AzrielBossA,limit=3] at @s run schedule function skyblock:azr/stage/boss1/flat2 1s
+    execute if score tickTimer Azr_system matches 1150..1250 if score #rng13 Azr_system matches 2 as @e[tag=AzrielBossA,limit=3] at @s run function skyblock:azr/stage/boss1/flat2
     execute if score tickTimer Azr_system matches 1220 if score #rng3 Azr_system matches 1 as @e[tag=AzrielBossA,limit=3] at @s if entity @a[tag=azrPlayer,distance=0..2.5] run function skyblock:azr/stage/boss1/tp1
     execute if score tickTimer Azr_system matches 1220 if score #rng3 Azr_system matches 2 as @e[tag=AzrielBossA,limit=3] at @s if entity @a[tag=azrPlayer,distance=0..2.5] run function skyblock:azr/stage/boss1/tp2
     execute if score tickTimer Azr_system matches 1220 if score #rng3 Azr_system matches 3 as @e[tag=AzrielBossA,limit=3] at @s if entity @a[tag=azrPlayer,distance=0..4.5] run function skyblock:azr/stage/boss1/move2
     execute if score tickTimer Azr_system matches 1286 if score #rng4 Azr_system matches 1 as @e[tag=AzrielBossA,limit=3] at @s run function skyblock:azr/stage/boss1/flat1_w
-    execute if score tickTimer Azr_system matches 1286 if score #rng4 Azr_system matches 1 as @e[tag=AzrielBossA,limit=3] at @s run schedule function skyblock:azr/stage/boss1/flat1 1s
     execute if score tickTimer Azr_system matches 1286 if score #rng4 Azr_system matches 2 as @e[tag=AzrielBossA,limit=3] at @s run function skyblock:azr/stage/boss1/flat2_w
-    execute if score tickTimer Azr_system matches 1286 if score #rng4 Azr_system matches 2 as @e[tag=AzrielBossA,limit=3] at @s run schedule function skyblock:azr/stage/boss1/flat2 1s
     execute if score tickTimer Azr_system matches 1286 if score #rng4 Azr_system matches 3 as @e[tag=AzrielBossA,limit=3] at @s run function skyblock:azr/stage/boss1/flat3_w
-    execute if score tickTimer Azr_system matches 1286 if score #rng4 Azr_system matches 3 as @e[tag=AzrielBossA,limit=3] at @s run schedule function skyblock:azr/stage/boss1/flat3 1.5s
     execute if score tickTimer Azr_system matches 1286 if score #rng4 Azr_system matches 4 as @e[tag=AzrielBossA,limit=3] at @s run function skyblock:azr/stage/boss1/flat3_w
-    execute if score tickTimer Azr_system matches 1286 if score #rng4 Azr_system matches 4 as @e[tag=AzrielBossA,limit=3] at @s run schedule function skyblock:azr/stage/boss1/flat3 1.5s
+    execute if score tickTimer Azr_system matches 1306 if score #rng4 Azr_system matches 1 as @e[tag=AzrielBossA,limit=3] at @s run function skyblock:azr/stage/boss1/flat1
+    execute if score tickTimer Azr_system matches 1306 if score #rng4 Azr_system matches 2 as @e[tag=AzrielBossA,limit=3] at @s run function skyblock:azr/stage/boss1/flat2
+    execute if score tickTimer Azr_system matches 1316 if score #rng4 Azr_system matches 4 as @e[tag=AzrielBossA,limit=3] at @s run function skyblock:azr/stage/boss1/flat3
+    execute if score tickTimer Azr_system matches 1316 if score #rng4 Azr_system matches 3 as @e[tag=AzrielBossA,limit=3] at @s run function skyblock:azr/stage/boss1/flat3
     execute if score tickTimer Azr_system matches 1346 if score #rng3 Azr_system matches 1 as @e[tag=AzrielBossA,limit=3] at @s if entity @a[tag=azrPlayer,distance=0..2.5] run function skyblock:azr/stage/boss1/tp1
     execute if score tickTimer Azr_system matches 1346 if score #rng3 Azr_system matches 2 as @e[tag=AzrielBossA,limit=3] at @s if entity @a[tag=azrPlayer,distance=0..2.5] run function skyblock:azr/stage/boss1/tp2
     execute if score tickTimer Azr_system matches 1346 if score #rng3 Azr_system matches 3 as @e[tag=AzrielBossA,limit=3] at @s if entity @a[tag=azrPlayer,distance=0..4.5] run function skyblock:azr/stage/boss1/move2
@@ -228,34 +226,34 @@ execute if score tickTimer Azr_system matches 2501 if score playerCount Azr_syst
     execute if score tickTimer Azr_system matches 1466 as @e[tag=AzrielBossA,limit=3] at @s run summon arrow ~ ~1 ~ {Motion:[-1.6,0.1,-3.4],pickup:0,damage:1.0,life:1100}
     execute if score tickTimer Azr_system matches 1468 as @e[tag=AzrielBossA,limit=3] at @s run summon arrow ~ ~1 ~ {Motion:[-1.8,0.2,-3.2],pickup:0,damage:1.0,life:1100}
     execute if score tickTimer Azr_system matches 1530..1630 if score #rng2 Azr_system matches 2 if score #rng16 Azr_system matches 1 as @e[tag=AzrielBossA,limit=3] at @s run function skyblock:azr/stage/boss1/flat1_w
-    execute if score tickTimer Azr_system matches 1530..1630 if score #rng2 Azr_system matches 2 if score #rng16 Azr_system matches 1 as @e[tag=AzrielBossA,limit=3] at @s run schedule function skyblock:azr/stage/boss1/flat1 1s
+    execute if score tickTimer Azr_system matches 1530..1630 if score #rng2 Azr_system matches 2 if score #rng16 Azr_system matches 1 as @e[tag=AzrielBossA,limit=3] at @s run function skyblock:azr/stage/boss1/flat1
     execute if score tickTimer Azr_system matches 1530..1630 if score #rng2 Azr_system matches 2 if score #rng16 Azr_system matches 2 as @e[tag=AzrielBossA,limit=3] at @s run function skyblock:azr/stage/boss1/flat2_w
-    execute if score tickTimer Azr_system matches 1530..1630 if score #rng2 Azr_system matches 2 if score #rng16 Azr_system matches 2 as @e[tag=AzrielBossA,limit=3] at @s run schedule function skyblock:azr/stage/boss1/flat2 1s
+    execute if score tickTimer Azr_system matches 1530..1630 if score #rng2 Azr_system matches 2 if score #rng16 Azr_system matches 2 as @e[tag=AzrielBossA,limit=3] at @s run function skyblock:azr/stage/boss1/flat2
     execute if score tickTimer Azr_system matches 1530..1630 if score #rng2 Azr_system matches 2 if score #rng16 Azr_system matches 3 as @e[tag=AzrielBossA,limit=3] at @s run function skyblock:azr/stage/boss1/flat3_w
-    execute if score tickTimer Azr_system matches 1530..1630 if score #rng2 Azr_system matches 2 if score #rng16 Azr_system matches 3 as @e[tag=AzrielBossA,limit=3] at @s run schedule function skyblock:azr/stage/boss1/flat3 1.5s
+    execute if score tickTimer Azr_system matches 1530..1630 if score #rng2 Azr_system matches 2 if score #rng16 Azr_system matches 3 as @e[tag=AzrielBossA,limit=3] at @s run function skyblock:azr/stage/boss1/flat3
     execute if score tickTimer Azr_system matches 1530..1630 if score #rng2 Azr_system matches 2 if score #rng16 Azr_system matches 4 as @e[tag=AzrielBossA,limit=3] at @s run function skyblock:azr/stage/boss1/flat3_w
-    execute if score tickTimer Azr_system matches 1530..1630 if score #rng2 Azr_system matches 2 if score #rng16 Azr_system matches 4 as @e[tag=AzrielBossA,limit=3] at @s run schedule function skyblock:azr/stage/boss1/flat3 1.5s
+    execute if score tickTimer Azr_system matches 1530..1630 if score #rng2 Azr_system matches 2 if score #rng16 Azr_system matches 4 as @e[tag=AzrielBossA,limit=3] at @s run function skyblock:azr/stage/boss1/flat3
     execute if score tickTimer Azr_system matches 1610 if score #rng2 Azr_system matches 1 as @e[tag=AzrielBossA,limit=3] at @s if entity @a[tag=azrPlayer,distance=0..2.5] run function skyblock:azr/stage/boss1/tp1
     execute if score tickTimer Azr_system matches 1610 if score #rng2 Azr_system matches 2 as @e[tag=AzrielBossA,limit=3] at @s if entity @a[tag=azrPlayer,distance=0..2.5] run function skyblock:azr/stage/boss1/tp2
     execute if score tickTimer Azr_system matches 1630 if score #rng3 Azr_system matches 1 as @e[tag=AzrielBossA,limit=3] at @s run function skyblock:azr/stage/boss1/largeflat1_w
-    execute if score tickTimer Azr_system matches 1630 if score #rng3 Azr_system matches 1 as @e[tag=AzrielBossA,limit=3] at @s run schedule function skyblock:azr/stage/boss1/largeflat1 2s
-    execute if score tickTimer Azr_system matches 1630 if score #rng3 Azr_system matches 2 as @e[tag=AzrielBossA,limit=3] at @s run schedule function skyblock:azr/stage/boss1/largeflat1_w 1s
-    execute if score tickTimer Azr_system matches 1630 if score #rng3 Azr_system matches 2 as @e[tag=AzrielBossA,limit=3] at @s run schedule function skyblock:azr/stage/boss1/largeflat1 3s
-    execute if score tickTimer Azr_system matches 1630 if score #rng3 Azr_system matches 3 as @e[tag=AzrielBossA,limit=3] at @s run schedule function skyblock:azr/stage/boss1/summon1 1s
-    execute if score tickTimer Azr_system matches 1700 if score #rng3 Azr_system matches 1 as @e[tag=AzrielBossA,limit=3] at @s run schedule function skyblock:azr/stage/boss1/flat1_w 2s
-    execute if score tickTimer Azr_system matches 1700 if score #rng3 Azr_system matches 1 as @e[tag=AzrielBossA,limit=3] at @s run schedule function skyblock:azr/stage/boss1/flat1 3s
+    execute if score tickTimer Azr_system matches 1650 if score #rng3 Azr_system matches 2 as @e[tag=AzrielBossA,limit=3] at @s run function skyblock:azr/stage/boss1/largeflat1_w
+    execute if score tickTimer Azr_system matches 1650 if score #rng3 Azr_system matches 3 as @e[tag=AzrielBossA,limit=3] at @s run function skyblock:azr/stage/boss1/summon
+    execute if score tickTimer Azr_system matches 1670 if score #rng3 Azr_system matches 1 as @e[tag=AzrielBossA,limit=3] at @s run function skyblock:azr/stage/boss1/largeflat1
+    execute if score tickTimer Azr_system matches 1690 if score #rng3 Azr_system matches 2 as @e[tag=AzrielBossA,limit=3] at @s run function skyblock:azr/stage/boss1/largeflat1
     execute if score tickTimer Azr_system matches 1700 if score #rng3 Azr_system matches 2 as @e[tag=AzrielBossA,limit=3] at @s if entity @a[tag=azrPlayer,distance=0..2.5] run function skyblock:azr/stage/boss1/tp1
     execute if score tickTimer Azr_system matches 1700 if score #rng3 Azr_system matches 3 as @e[tag=AzrielBossA,limit=3] at @s if entity @a[tag=azrPlayer,distance=0..4.5] run function skyblock:azr/stage/boss1/move1
+    execute if score tickTimer Azr_system matches 1740 if score #rng3 Azr_system matches 1 as @e[tag=AzrielBossA,limit=3] at @s run function skyblock:azr/stage/boss1/flat1_w
+    execute if score tickTimer Azr_system matches 1760 if score #rng3 Azr_system matches 1 as @e[tag=AzrielBossA,limit=3] at @s run function skyblock:azr/stage/boss1/flat1
     execute if score tickTimer Azr_system matches 1790 if score #rng3 Azr_system matches 1 as @e[tag=AzrielBossA,limit=3] at @s run function skyblock:azr/stage/boss1/largeflat1_w
-    execute if score tickTimer Azr_system matches 1790 if score #rng3 Azr_system matches 1 as @e[tag=AzrielBossA,limit=3] at @s run schedule function skyblock:azr/stage/boss1/largeflat1 2s
-    execute if score tickTimer Azr_system matches 1790 if score #rng3 Azr_system matches 2 as @e[tag=AzrielBossA,limit=3] at @s run schedule function skyblock:azr/stage/boss1/largeflat1_w 1s
-    execute if score tickTimer Azr_system matches 1790 if score #rng3 Azr_system matches 2 as @e[tag=AzrielBossA,limit=3] at @s run schedule function skyblock:azr/stage/boss1/largeflat1 3s
-    execute if score tickTimer Azr_system matches 1790 if score #rng3 Azr_system matches 3 as @e[tag=AzrielBossA,limit=3] at @s run schedule function skyblock:azr/stage/boss1/summon1 1s
+    execute if score tickTimer Azr_system matches 1810 if score #rng3 Azr_system matches 2 as @e[tag=AzrielBossA,limit=3] at @s run function skyblock:azr/stage/boss1/largeflat1_w
+    execute if score tickTimer Azr_system matches 1810 if score #rng3 Azr_system matches 3 as @e[tag=AzrielBossA,limit=3] at @s run function skyblock:azr/stage/boss1/summon
+    execute if score tickTimer Azr_system matches 1829 if score playerCount Azr_system matches 4.. positioned -79939 44 96 run function skyblock:azr/m/skeleton_t1_guard
+    execute if score tickTimer Azr_system matches 1829 if score playerCount Azr_system matches 4.. positioned -79923 44 80 run function skyblock:azr/m/skeleton_t1_guard
+    execute if score tickTimer Azr_system matches 1830 if score #rng3 Azr_system matches 1 as @e[tag=AzrielBossA,limit=3] at @s run function skyblock:azr/stage/boss1/largeflat1
     execute if score tickTimer Azr_system matches 1840 if score #rng3 Azr_system matches 3 as @e[tag=AzrielBossA,limit=3] at @s if entity @a[tag=azrPlayer,distance=0..2.5] run function skyblock:azr/stage/boss1/tp1
     execute if score tickTimer Azr_system matches 1849 positioned -79939 44 96 run function skyblock:azr/m/skeleton_t1
     execute if score tickTimer Azr_system matches 1849 positioned -79923 44 80 run function skyblock:azr/m/skeleton_t1
-    execute if score tickTimer Azr_system matches 1829 if score playerCount Azr_system matches 4.. positioned -79939 44 96 run function skyblock:azr/m/skeleton_t1_guard
-    execute if score tickTimer Azr_system matches 1829 if score playerCount Azr_system matches 4.. positioned -79923 44 80 run function skyblock:azr/m/skeleton_t1_guard
+    execute if score tickTimer Azr_system matches 1850 if score #rng3 Azr_system matches 2 as @e[tag=AzrielBossA,limit=3] at @s run function skyblock:azr/stage/boss1/largeflat1
     execute if score tickTimer Azr_system matches 1850..1880 as @n[tag=AzrielBossA,scores={Azr_mobHealth=..75}] run scoreboard players set tickTimer Azr_system 1000
     execute if score tickTimer Azr_system matches 1850..1880 as @n[tag=AzrielBossA,scores={Azr_mobHealth=76..}] run scoreboard players set tickTimer Azr_system 940
 

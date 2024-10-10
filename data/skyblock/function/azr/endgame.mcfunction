@@ -1,4 +1,4 @@
-#scoreboard objectives remove AZS_57534
+#scoreboard objectives remove Azr_arrowOrbTimer
 #______________________________________________________________#
 #tag @e[tag=sc,limit=1] remove AzrielEvent382315A
 #tag @e[tag=sc,limit=1] remove AzrielEvent382315B

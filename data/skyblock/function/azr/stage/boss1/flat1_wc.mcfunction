@@ -1,3 +1,4 @@
+#THIS FUNCTION IS SCHEDULED
 execute as @e[tag=AzrielBossA,limit=1] at @s run particle minecraft:cloud ~4.5 ~1 ~ 0.0 0.0 0.0 0. 1
 execute as @e[tag=AzrielBossA,limit=1] at @s run particle minecraft:cloud ~-4.5 ~1 ~ 0.0 0.0 0.0 0. 1
 execute as @e[tag=AzrielBossA,limit=1] at @s run particle minecraft:cloud ~ ~1 ~4.5 0.0 0.0 0.0 0. 1

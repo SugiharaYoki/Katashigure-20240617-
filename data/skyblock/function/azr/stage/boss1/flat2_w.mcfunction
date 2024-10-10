@@ -1,15 +1,15 @@
-execute as @e[tag=AzrielBossA,limit=1] at @s run particle minecraft:soul_fire_flame ~4 ~1 ~4 0.1 0.1 0.1 0. 7
-execute as @e[tag=AzrielBossA,limit=1] at @s run particle minecraft:soul_fire_flame ~-4 ~1 ~4 0.1 0.1 0.1 0. 7
-execute as @e[tag=AzrielBossA,limit=1] at @s run particle minecraft:soul_fire_flame ~4 ~1 ~-4 0.1 0.1 0.1 0. 7
-execute as @e[tag=AzrielBossA,limit=1] at @s run particle minecraft:soul_fire_flame ~-4 ~1 ~-4 0.1 0.1 0.1 0. 7
-execute as @e[tag=AzrielBossA,limit=1] at @s run particle minecraft:soul_fire_flame ~4 ~2 ~4 0.1 0.1 0.1 0. 7
-execute as @e[tag=AzrielBossA,limit=1] at @s run particle minecraft:soul_fire_flame ~-4 ~2 ~4 0.1 0.1 0.1 0. 7
-execute as @e[tag=AzrielBossA,limit=1] at @s run particle minecraft:soul_fire_flame ~4 ~2 ~-4 0.1 0.1 0.1 0. 7
-execute as @e[tag=AzrielBossA,limit=1] at @s run particle minecraft:soul_fire_flame ~-4 ~2 ~-4 0.1 0.1 0.1 0. 7
-execute as @e[tag=AzrielBossA,limit=1] at @s run particle minecraft:soul_fire_flame ~4 ~1.5 ~4 0.1 0.1 0.1 0. 7
-execute as @e[tag=AzrielBossA,limit=1] at @s run particle minecraft:soul_fire_flame ~-4 ~1.5 ~4 0.1 0.1 0.1 0. 7
-execute as @e[tag=AzrielBossA,limit=1] at @s run particle minecraft:soul_fire_flame ~4 ~1.5 ~-4 0.1 0.1 0.1 0. 7
-execute as @e[tag=AzrielBossA,limit=1] at @s run particle minecraft:soul_fire_flame ~-4 ~1.5 ~-4 0.1 0.1 0.1 0. 7
+particle minecraft:soul_fire_flame ~4 ~1 ~4 0.1 0.1 0.1 0. 7
+particle minecraft:soul_fire_flame ~-4 ~1 ~4 0.1 0.1 0.1 0. 7
+particle minecraft:soul_fire_flame ~4 ~1 ~-4 0.1 0.1 0.1 0. 7
+particle minecraft:soul_fire_flame ~-4 ~1 ~-4 0.1 0.1 0.1 0. 7
+particle minecraft:soul_fire_flame ~4 ~2 ~4 0.1 0.1 0.1 0. 7
+particle minecraft:soul_fire_flame ~-4 ~2 ~4 0.1 0.1 0.1 0. 7
+particle minecraft:soul_fire_flame ~4 ~2 ~-4 0.1 0.1 0.1 0. 7
+particle minecraft:soul_fire_flame ~-4 ~2 ~-4 0.1 0.1 0.1 0. 7
+particle minecraft:soul_fire_flame ~4 ~1.5 ~4 0.1 0.1 0.1 0. 7
+particle minecraft:soul_fire_flame ~-4 ~1.5 ~4 0.1 0.1 0.1 0. 7
+particle minecraft:soul_fire_flame ~4 ~1.5 ~-4 0.1 0.1 0.1 0. 7
+particle minecraft:soul_fire_flame ~-4 ~1.5 ~-4 0.1 0.1 0.1 0. 7
 
 schedule function skyblock:azr/stage/boss1/flat2_wc 0t
 schedule function skyblock:azr/stage/boss1/flat2_wc 3t

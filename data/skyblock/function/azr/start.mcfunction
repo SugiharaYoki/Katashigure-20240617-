@@ -23,8 +23,8 @@ scoreboard objectives add Azr_Shop_rng11 dummy
 scoreboard objectives add Azr_Shop_rng12 dummy
 scoreboard objectives add Azr_Shop_rng13 dummy
 scoreboard objectives add melonCount dummy
-#AZS_57534用于boss技能
-scoreboard objectives add AZS_57534 dummy
+#Azr_arrowOrbTimer用于boss技能
+scoreboard objectives add Azr_arrowOrbTimer dummy
 
 #unused
 #scoreboard objectives add Azr_sarielStar dummy
@@ -80,7 +80,7 @@ execute if entity @a[tag=azrPlayer,tag=AZS_BoS01] run setblock -79915 40 34 mine
 
 #wtf 这些原本应该在初始化玩家前
 #scoreboard objectives add Azr dummy
-#scoreboard objectives add AZS_57534 dummy
+#scoreboard objectives add Azr_arrowOrbTimer dummy
 #scoreboard objectives add Azr_Timerx4T1 dummy
 #scoreboard objectives add AzrielTagTemp1 dummy
 #scoreboard objectives add AzrielTagTemp2 dummy

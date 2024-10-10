@@ -1,25 +1,25 @@
-execute as @e[tag=AzrielBossA,limit=1] at @s run particle minecraft:soul_fire_flame ~5 ~1 ~ 0.1 0.1 0.1 0. 7
-execute as @e[tag=AzrielBossA,limit=1] at @s run particle minecraft:soul_fire_flame ~-5 ~1 ~ 0.1 0.1 0.1 0. 7
-execute as @e[tag=AzrielBossA,limit=1] at @s run particle minecraft:soul_fire_flame ~ ~1 ~5 0.1 0.1 0.1 0. 7
-execute as @e[tag=AzrielBossA,limit=1] at @s run particle minecraft:soul_fire_flame ~ ~1 ~-5 0.1 0.1 0.1 0. 7
-execute as @e[tag=AzrielBossA,limit=1] at @s run particle minecraft:soul_fire_flame ~5 ~2 ~ 0.1 0.1 0.1 0. 7
-execute as @e[tag=AzrielBossA,limit=1] at @s run particle minecraft:soul_fire_flame ~-5 ~2 ~ 0.1 0.1 0.1 0. 7
-execute as @e[tag=AzrielBossA,limit=1] at @s run particle minecraft:soul_fire_flame ~ ~2 ~5 0.1 0.1 0.1 0. 7
-execute as @e[tag=AzrielBossA,limit=1] at @s run particle minecraft:soul_fire_flame ~ ~2 ~-5 0.1 0.1 0.1 0. 7
-execute as @e[tag=AzrielBossA,limit=1] at @s run particle minecraft:soul_fire_flame ~5 ~1.5 ~ 0.1 0.1 0.1 0. 7
-execute as @e[tag=AzrielBossA,limit=1] at @s run particle minecraft:soul_fire_flame ~-5 ~1.5 ~ 0.1 0.1 0.1 0. 7
-execute as @e[tag=AzrielBossA,limit=1] at @s run particle minecraft:soul_fire_flame ~ ~1.5 ~5 0.1 0.1 0.1 0. 7
-execute as @e[tag=AzrielBossA,limit=1] at @s run particle minecraft:soul_fire_flame ~ ~1.5 ~-5 0.1 0.1 0.1 0. 7
+particle minecraft:soul_fire_flame ~5 ~1 ~ 0.1 0.1 0.1 0. 7
+particle minecraft:soul_fire_flame ~-5 ~1 ~ 0.1 0.1 0.1 0. 7
+particle minecraft:soul_fire_flame ~ ~1 ~5 0.1 0.1 0.1 0. 7
+particle minecraft:soul_fire_flame ~ ~1 ~-5 0.1 0.1 0.1 0. 7
+particle minecraft:soul_fire_flame ~5 ~2 ~ 0.1 0.1 0.1 0. 7
+particle minecraft:soul_fire_flame ~-5 ~2 ~ 0.1 0.1 0.1 0. 7
+particle minecraft:soul_fire_flame ~ ~2 ~5 0.1 0.1 0.1 0. 7
+particle minecraft:soul_fire_flame ~ ~2 ~-5 0.1 0.1 0.1 0. 7
+particle minecraft:soul_fire_flame ~5 ~1.5 ~ 0.1 0.1 0.1 0. 7
+particle minecraft:soul_fire_flame ~-5 ~1.5 ~ 0.1 0.1 0.1 0. 7
+particle minecraft:soul_fire_flame ~ ~1.5 ~5 0.1 0.1 0.1 0. 7
+particle minecraft:soul_fire_flame ~ ~1.5 ~-5 0.1 0.1 0.1 0. 7
 
-execute as @e[tag=AzrielBossA,limit=1] at @s run particle minecraft:soul_fire_flame ~7 ~1 ~ 0.1 0.1 0.1 0. 7
-execute as @e[tag=AzrielBossA,limit=1] at @s run particle minecraft:soul_fire_flame ~-7 ~1 ~ 0.1 0.1 0.1 0. 7
-execute as @e[tag=AzrielBossA,limit=1] at @s run particle minecraft:soul_fire_flame ~ ~1 ~7 0.1 0.1 0.1 0. 7
-execute as @e[tag=AzrielBossA,limit=1] at @s run particle minecraft:soul_fire_flame ~ ~1 ~-7 0.1 0.1 0.1 0. 7
-execute as @e[tag=AzrielBossA,limit=1] at @s run particle minecraft:soul_fire_flame ~7 ~2 ~ 0.1 0.1 0.1 0. 7
-execute as @e[tag=AzrielBossA,limit=1] at @s run particle minecraft:soul_fire_flame ~-7 ~2 ~ 0.1 0.1 0.1 0. 7
-execute as @e[tag=AzrielBossA,limit=1] at @s run particle minecraft:soul_fire_flame ~ ~2 ~7 0.1 0.1 0.1 0. 7
-execute as @e[tag=AzrielBossA,limit=1] at @s run particle minecraft:soul_fire_flame ~ ~2 ~-7 0.1 0.1 0.1 0. 7
-execute as @e[tag=AzrielBossA,limit=1] at @s run particle minecraft:soul_fire_flame ~7 ~1.5 ~ 0.1 0.1 0.1 0. 7
-execute as @e[tag=AzrielBossA,limit=1] at @s run particle minecraft:soul_fire_flame ~-7 ~1.5 ~ 0.1 0.1 0.1 0. 7
-execute as @e[tag=AzrielBossA,limit=1] at @s run particle minecraft:soul_fire_flame ~ ~1.5 ~7 0.1 0.1 0.1 0. 7
-execute as @e[tag=AzrielBossA,limit=1] at @s run particle minecraft:soul_fire_flame ~ ~1.5 ~-7 0.1 0.1 0.1 0. 7
+particle minecraft:soul_fire_flame ~7 ~1 ~ 0.1 0.1 0.1 0. 7
+particle minecraft:soul_fire_flame ~-7 ~1 ~ 0.1 0.1 0.1 0. 7
+particle minecraft:soul_fire_flame ~ ~1 ~7 0.1 0.1 0.1 0. 7
+particle minecraft:soul_fire_flame ~ ~1 ~-7 0.1 0.1 0.1 0. 7
+particle minecraft:soul_fire_flame ~7 ~2 ~ 0.1 0.1 0.1 0. 7
+particle minecraft:soul_fire_flame ~-7 ~2 ~ 0.1 0.1 0.1 0. 7
+particle minecraft:soul_fire_flame ~ ~2 ~7 0.1 0.1 0.1 0. 7
+particle minecraft:soul_fire_flame ~ ~2 ~-7 0.1 0.1 0.1 0. 7
+particle minecraft:soul_fire_flame ~7 ~1.5 ~ 0.1 0.1 0.1 0. 7
+particle minecraft:soul_fire_flame ~-7 ~1.5 ~ 0.1 0.1 0.1 0. 7
+particle minecraft:soul_fire_flame ~ ~1.5 ~7 0.1 0.1 0.1 0. 7
+particle minecraft:soul_fire_flame ~ ~1.5 ~-7 0.1 0.1 0.1 0. 7
