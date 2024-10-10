@@ -50,13 +50,13 @@ execute if score AZR_boss2_stockpile rng1 matches 69 at @s run function skyblock
 execute if score AZR_boss2_stockpile rng1 matches 69..70 at @s run effect clear @s slowness
 
 execute if score AZR_boss2_stockpile rng1 matches 70 at @s run summon marker ~ ~1 ~ {Tags:["AZR_boss2_stockpile_marker"]}
-execute if score AZR_boss2_stockpile rng1 matches 70 rotated ~ 0 as @n[tag=AZR_boss2_stockpile_marker] run tp @s ^ ^ ^-1 facing entity @s
+execute if score AZR_boss2_stockpile rng1 matches 70 rotated ~ 0 run tp @n[tag=AZR_boss2_stockpile_marker] ^ ^ ^-1 facing entity @s
 execute if score AZR_boss2_stockpile rng1 matches 70 as @n[tag=AZR_boss2_stockpile_marker] at @s run tp @s ~ ~1.5 ~
 execute if score AZR_boss2_stockpile rng1 matches 70 as @n[tag=AZR_boss2_stockpile_marker] at @s run playsound minecraft:item.trident.throw hostile @a ~ ~ ~ 0.9 0.67
 execute if score AZR_boss2_stockpile rng1 matches 70 as @n[tag=AZR_boss2_stockpile_marker] at @s run playsound entity.arrow.shoot hostile @a ~ ~ ~ 2 0.9
 execute if score AZR_boss2_stockpile rng1 matches 70 as @n[tag=AZR_boss2_stockpile_marker] at @s run playsound entity.arrow.shoot hostile @a ~ ~ ~ 2 0.87
 execute if score AZR_boss2_stockpile rng1 matches 70 as @n[tag=AZR_boss2_stockpile_marker] at @s run playsound entity.arrow.shoot hostile @a ~ ~ ~ 2 0.85
-execute if score AZR_boss2_stockpile rng1 matches 70.. as @n[tag=AZR_boss2_stockpile_marker] at @s run tp @s ^ ^ ^1
+execute if score AZR_boss2_stockpile rng1 matches 70.. as @n[tag=AZR_boss2_stockpile_marker] at @s run tp @s ^ ^ ^2
 execute if score AZR_boss2_stockpile rng1 matches 70.. as @n[tag=AZR_boss2_stockpile_marker] at @s run particle explosion ~ ~ ~ 0.1 0.1 0.1 0 3
 execute if score AZR_boss2_stockpile rng1 matches 70.. as @n[tag=AZR_boss2_stockpile_marker] at @s run particle flash ~ ~ ~ 0.1 0.1 0.1 0 1
 execute if score AZR_boss2_stockpile rng1 matches 70.. as @n[tag=AZR_boss2_stockpile_marker] at @s run playsound entity.generic.explode hostile @a ~ ~ ~ 0.9 1.3
