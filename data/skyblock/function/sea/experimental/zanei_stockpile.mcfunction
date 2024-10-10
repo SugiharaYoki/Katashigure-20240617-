@@ -62,6 +62,10 @@ execute if score AZR_boss2_stockpile rng1 matches 70.. as @n[tag=AZR_boss2_stock
 execute if score AZR_boss2_stockpile rng1 matches 70.. as @n[tag=AZR_boss2_stockpile_marker] at @s run playsound entity.generic.explode hostile @a ~ ~ ~ 0.9 1.3
 execute if score AZR_boss2_stockpile rng1 matches 70.. as @n[tag=AZR_boss2_stockpile_marker] at @s as @a[distance=0..2.5] run damage @s 15 arrow
 execute if score AZR_boss2_stockpile rng1 matches 80.. as @e[tag=AZR_boss2_stockpile_marker,type=marker] at @s run kill @s
+execute if score AZR_boss2_stockpile rng1 matches 70.. as @e[tag=AZR_boss2_stockpile_marker,type=marker] at @s unless block ~ ~ ~ air run particle explosion ~ ~ ~ 0.8 0.8 0.8 0 15
+execute if score AZR_boss2_stockpile rng1 matches 70.. as @e[tag=AZR_boss2_stockpile_marker,type=marker] at @s unless block ~ ~ ~ air run playsound entity.generic.explode hostile @a ~ ~ ~ 1 0.9
+execute if score AZR_boss2_stockpile rng1 matches 70.. as @e[tag=AZR_boss2_stockpile_marker,type=marker] at @s unless block ~ ~ ~ air as @a[distance=0..4.5] run damage @s 10 explosion
+execute if score AZR_boss2_stockpile rng1 matches 70.. as @e[tag=AZR_boss2_stockpile_marker,type=marker] at @s unless block ~ ~ ~ air run kill @s
 
 execute if score AZR_boss2_stockpile rng1 matches 80.. at @s run tag @s remove AZR_boss2_skill_stockpile
 execute if score AZR_boss2_stockpile rng1 matches 80.. run scoreboard players set AZR_boss2_stockpile rng1 0
