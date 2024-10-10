@@ -1,5 +1,7 @@
 execute if entity @s[tag=AZR_boss2_skill_breakingout] run scoreboard players add AZR_boss2_breakingout rng1 1
-execute store result score AZR_boss2_breakingout rng2 run random value 1..5
+execute if score AZR_boss2_breakingout rng1 matches 69..79 store result score AZR_boss2_breakingout rng2 run random value 1..7
+execute if score AZR_boss2_breakingout rng1 matches 79..89 store result score AZR_boss2_breakingout rng2 run random value 1..5
+execute if score AZR_boss2_breakingout rng1 matches 89..92 store result score AZR_boss2_breakingout rng2 run random value 1..4
 execute store result score AZR_boss2_breakingout rng3 run random value 1..9
 execute store result score AZR_boss2_breakingout rng4 run random value 1..9
 #execute if score AZR_boss2_breakingout rng1 matches 360.. run scoreboard players set AZR_boss2_breakingout rng1 1
