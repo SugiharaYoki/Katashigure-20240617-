@@ -8,4 +8,4 @@ execute as @e[tag=AzrielBossA,limit=1] at @s run execute if score rng8 Azr_syste
 execute as @e[tag=AzrielBossA,limit=1] at @s run execute if score rng8 Azr_system matches 7 run data modify entity @s Motion set value [-1.0,0.1,1.0]
 execute as @e[tag=AzrielBossA,limit=1] at @s run execute if score rng8 Azr_system matches 8 run data modify entity @s Motion set value [-1.0,0.1,-1.0]
 
-execute as @e[tag=AzrielBossA,limit=1] at @s run execute if score @e[tag=sc,limit=1] rng13 matches 13 run summon armor_stand ~ ~ ~ {Tags:["57531b"],Invulnerable:1b,Invisible:1b,NoGravity:1b,Silent:1b}
+execute as @e[tag=AzrielBossA,limit=1] at @s run execute if score @e[tag=sc,limit=1] rng13 matches 13 run summon marker ~ ~ ~ {Tags:["arroworb"],Invulnerable:1b,Invisible:1b,NoGravity:1b,Silent:1b}

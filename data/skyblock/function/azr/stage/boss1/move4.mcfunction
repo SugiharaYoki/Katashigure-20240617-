@@ -39,8 +39,8 @@ execute as @e[tag=AzrielBossAM2,limit=1] at @s run execute if score rng4 Azr_sys
 execute as @e[tag=AzrielBossA,limit=1] at @s run execute if score rng4 Azr_system matches 4 run data modify entity @s Motion set value [0.0,0.3,-1.5]
 
 # ========================
-execute as @e[tag=AzrielBossAM1,limit=1] at @s run execute if score 13 Azr_system matches 1 if score 2 Azr_system matches 1 run summon armor_stand ~ ~ ~ {Tags:["57531b"],Invulnerable:1b,Invisible:1b,NoGravity:1b,Silent:1b}
-execute as @e[tag=AzrielBossAM2,limit=1] at @s run execute if score 13 Azr_system matches 2 if score 2 Azr_system matches 1 run summon armor_stand ~ ~ ~ {Tags:["57531b"],Invulnerable:1b,Invisible:1b,NoGravity:1b,Silent:1b}
-execute as @e[tag=AzrielBossAM3,limit=1] at @s run execute if score 13 Azr_system matches 3 if score 2 Azr_system matches 1 run summon armor_stand ~ ~ ~ {Tags:["57531b"],Invulnerable:1b,Invisible:1b,NoGravity:1b,Silent:1b}
-execute as @e[tag=AzrielBossA,limit=1] at @s run execute if score 13 Azr_system matches 4 if score 2 Azr_system matches 1 run summon armor_stand ~ ~ ~ {Tags:["57531b"],Invulnerable:1b,Invisible:1b,NoGravity:1b,Silent:1b}
+execute as @e[tag=AzrielBossAM1,limit=1] at @s run execute if score 13 Azr_system matches 1 if score 2 Azr_system matches 1 run summon marker ~ ~ ~ {Tags:["arroworb"],Invulnerable:1b,Invisible:1b,NoGravity:1b,Silent:1b}
+execute as @e[tag=AzrielBossAM2,limit=1] at @s run execute if score 13 Azr_system matches 2 if score 2 Azr_system matches 1 run summon marker ~ ~ ~ {Tags:["arroworb"],Invulnerable:1b,Invisible:1b,NoGravity:1b,Silent:1b}
+execute as @e[tag=AzrielBossAM3,limit=1] at @s run execute if score 13 Azr_system matches 3 if score 2 Azr_system matches 1 run summon marker ~ ~ ~ {Tags:["arroworb"],Invulnerable:1b,Invisible:1b,NoGravity:1b,Silent:1b}
+execute as @e[tag=AzrielBossA,limit=1] at @s run execute if score 13 Azr_system matches 4 if score 2 Azr_system matches 1 run summon marker ~ ~ ~ {Tags:["arroworb"],Invulnerable:1b,Invisible:1b,NoGravity:1b,Silent:1b}
 # ========================

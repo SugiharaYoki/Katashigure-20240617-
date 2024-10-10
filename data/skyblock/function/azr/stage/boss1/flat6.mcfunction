@@ -19,4 +19,4 @@ execute as @e[tag=ZaneiSpotCage] at @s run summon arrow ~ ~4 ~-1.2 {Motion:[0.0,
 execute as @e[tag=ZaneiSpotCage] at @s run summon arrow ~1 ~4 ~-1 {Motion:[0.0,-0.7,-0.1],pickup:0,damage:5.0,life:1100}
 execute as @e[tag=ZaneiSpotCage] at @s run summon arrow ~1.2 ~4 ~ {Motion:[0.0,-0.75,-0.1],pickup:0,damage:5.0,life:1100}
 
-kill @e[type=armor_stand,tag=ZaneiSpotCage]
+kill @e[type=marker,tag=ZaneiSpotCage]

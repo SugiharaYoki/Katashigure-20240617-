@@ -381,8 +381,8 @@ execute if score stageSeconds Azr_system matches 238..244 run playsound ambient.
 execute if score stageSeconds Azr_system matches 238..244 run playsound ambient.nether_wastes.mood ambient @a[tag=azrPlayer] -79931 38 53 10 0.7
 execute if score stageSeconds Azr_system matches 247 run effect give @a[tag=azrPlayer] blindness 5 0 true
 execute if score stageSeconds Azr_system matches 247 run effect give @a[tag=azrPlayer] unluck 60 0 false
-execute if score stageSeconds Azr_system matches 247 run kill @e[type=!player,type=!armor_stand,name=!System_Cardinal,tag=AzrielMob,x=-79900,y=40,z=0,distance=0..500]
-execute if score stageSeconds Azr_system matches 247 run kill @e[type=!player,type=!armor_stand,name=!System_Cardinal,tag=AzrielDecMob,x=-79900,y=40,z=0,distance=0..500]
+execute if score stageSeconds Azr_system matches 247 run kill @e[tag=AzrielMob,x=-79900,y=40,z=0,distance=0..500]
+execute if score stageSeconds Azr_system matches 247 run kill @e[tag=AzrielDecMob,x=-79900,y=40,z=0,distance=0..500]
 execute if score stageSeconds Azr_system matches 247 run playsound minecraft:entity.lightning_bolt.thunder ambient @a[tag=azrPlayer] -79931 38 53 100 0.5
 execute if score stageSeconds Azr_system matches 247 run playsound minecraft:entity.lightning_bolt.thunder ambient @a[tag=azrPlayer] -79931 38 53 100 0.75
 execute if score stageSeconds Azr_system matches 247 run playsound minecraft:entity.lightning_bolt.thunder ambient @a[tag=azrPlayer] -79931 38 53 100 1

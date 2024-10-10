@@ -402,8 +402,8 @@ function skyblock:azr/tool_rng
 
 
 
-execute if score tickTimer Azr_system matches 6001 run kill @e[type=armor_stand,tag=ZaneiSpotCage]
-execute if score tickTimer Azr_system matches 6001 run kill @e[type=armor_stand,tag=57531b]
+execute if score tickTimer Azr_system matches 6001 run kill @e[type=marker,tag=ZaneiSpotCage]
+execute if score tickTimer Azr_system matches 6001 run kill @e[type=marker,tag=arroworb]
 execute if score tickTimer Azr_system matches 6001 run kill @e[tag=AzrielDecMob]
 execute if score tickTimer Azr_system matches 6001 run kill @e[tag=AzrielMob]
 execute if score tickTimer Azr_system matches 6001 run stopsound @a[tag=azrPlayer]
