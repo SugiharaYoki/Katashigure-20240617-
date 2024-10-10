@@ -39,8 +39,8 @@ execute if score AZR_boss2_arrowpince rng1 matches 45 run tag @n[tag=AZR_boss2_a
 execute if score AZR_boss2_arrowpince rng1 matches 47 rotated as @n[tag=AZR_boss2_arrowpince_origin] run tp @n[tag=AZR_boss2_arrowpince_marker] ^ ^ ^1.2
 execute if score AZR_boss2_arrowpince rng1 matches 47 run tag @n[tag=AZR_boss2_arrowpince_marker] add AZR_summon_attack
 
-execute if score AZR_boss2_arrowpince rng1 matches 50 run scoreboard players set AZR_boss2_arrowpince rng1 0
-execute if score AZR_boss2_arrowpince rng1 matches 50 run tag @s remove AZR_boss2_skill_arrowpince
+execute if score AZR_boss2_arrowpince rng1 matches 63.. run scoreboard players set AZR_boss2_arrowpince rng1 0
+execute if score AZR_boss2_arrowpince rng1 matches 63.. run tag @s remove AZR_boss2_skill_arrowpince
 
 
 execute if score AZR_boss2_arrowpince rng1 matches 37..360 at @n[tag=AZR_boss2_arrowpince_origin,tag=AZR_summon_attack] run particle white_smoke ^ ^2 ^1.2 0.3 0.3 0.3 0.03 30
