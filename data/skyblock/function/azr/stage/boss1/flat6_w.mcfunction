@@ -34,3 +34,4 @@ playsound minecraft:entity.illusioner.cast_spell hostile @a[tag=azrPlayer] ~ ~ ~
 playsound minecraft:entity.illusioner.ambient hostile @a[tag=azrPlayer] ~ ~ ~ 100 0.6
 
 execute at @e[tag=azrPlayer] run summon marker ~ ~ ~ {Tags:["ZaneiSpotCage"]}
+schedule function skyblock:azr/stage/boss1/flat6 0.5s
