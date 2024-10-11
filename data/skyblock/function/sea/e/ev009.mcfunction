@@ -8,6 +8,8 @@ execute as @a[tag=SEAPT] at @s if block ~ ~-1 ~ barrier if entity @a[tag=SEAPT,d
 
 execute as @a[tag=SEAPT,x=90125,y=103,z=100,distance=0..8] at @s unless entity @n[tag=SEAyuehan,tag=SEA_ch4elevator_start,x=90125,y=103,z=100,distance=0..5,scores={sea_4temp5=..35}] run tp @n[tag=SEAyuehan,tag=!SEA_ch4elevator_end] 90125 103 100
 
+execute as @n[tag=SEAyuehan] at @s if block ~ ~ ~ barrier run tp @s ~ ~1 ~
+
 execute as @a[tag=SEAPT] at @s if block ~ ~-1 ~ barrier unless entity @a[tag=SEAPT,distance=2..] run tag @n[tag=SEAyuehan,x=90126,y=36,z=100,distance=10..,scores={sea_4temp5=36..}] add SEA_ch4elevator_start
 execute if entity @n[tag=SEAyuehan,tag=SEA_ch4elevator_start,scores={sea_4temp5=36..}] if block 90125 102 101 barrier run fill 90125 102 101 90127 102 99 air
 execute if entity @n[tag=SEAyuehan,tag=SEA_ch4elevator_start,scores={sea_4temp5=36..}] as @a[tag=SEAPT] at @s if entity @n[tag=sea_ch4elevator1,distance=0..4.1] run effect give @s slow_falling 5 149 true
