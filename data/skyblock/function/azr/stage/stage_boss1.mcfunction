@@ -113,40 +113,40 @@ execute as @e[tag=arroworb2,type=marker] at @s run function skyblock:azr/stage/b
     execute if score tickTimer Azr_system matches 152.. if score playerCount Azr_system matches 5.. if score #rng6 Azr_system matches 2..3 if score #rng8 Azr_system matches 4 as @e[tag=AzrielBossA,limit=3] at @s run summon arrow ~-3 ~7 ~0 {Motion:[0.0,-0.3,0.0],pickup:0,damage:0.5,life:1100}
     execute if score tickTimer Azr_system matches 152.. if score playerCount Azr_system matches 5.. if score #rng6 Azr_system matches 2..3 if score #rng8 Azr_system matches 4 as @e[tag=AzrielBossA,limit=3] at @s run summon arrow ~-3 ~8 ~-3 {Motion:[0.0,-0.3,0.0],pickup:0,damage:0.5,life:1100}
     execute if score tickTimer Azr_system matches 172 run scoreboard players set tickTimer Azr_system 1000
-
+    
 #跳秒
-execute if score tickTimer Azr_system matches 900..2800 if score playerCount Azr_system matches 1..2 if entity @e[tag=AzrielBossA,scores={Azr_mobHealth=..75}] run scoreboard players add tickTimer Azr_system 1
-execute if score tickTimer Azr_system matches 900..2800 if score playerCount Azr_system matches 3..4 if entity @e[tag=AzrielBossA,scores={Azr_mobHealth=..100}] run scoreboard players add tickTimer Azr_system 1
-execute if score tickTimer Azr_system matches 900..2800 if score playerCount Azr_system matches 5..6 if entity @e[tag=AzrielBossA,scores={Azr_mobHealth=..150}] run scoreboard players add tickTimer Azr_system 1
-execute if score tickTimer Azr_system matches 900..2800 if score playerCount Azr_system matches 7.. if entity @e[tag=AzrielBossA,scores={Azr_mobHealth=..200}] run scoreboard players add tickTimer Azr_system 1
-execute if score tickTimer Azr_system matches 1001 if score playerCount Azr_system matches 1..2 if entity @e[tag=AzrielBossA,scores={Azr_mobHealth=..75}] run scoreboard players add tickTimer Azr_system 1
-execute if score tickTimer Azr_system matches 1001 if score playerCount Azr_system matches 3..4 if entity @e[tag=AzrielBossA,scores={Azr_mobHealth=..100}] run scoreboard players add tickTimer Azr_system 1
-execute if score tickTimer Azr_system matches 1001 if score playerCount Azr_system matches 5..6 if entity @e[tag=AzrielBossA,scores={Azr_mobHealth=..150}] run scoreboard players add tickTimer Azr_system 1
-execute if score tickTimer Azr_system matches 1001 if score playerCount Azr_system matches 7.. if entity @e[tag=AzrielBossA,scores={Azr_mobHealth=..200}] run scoreboard players add tickTimer Azr_system 1
-execute if score tickTimer Azr_system matches 1251 if score playerCount Azr_system matches 1..2 if entity @e[tag=AzrielBossA,scores={Azr_mobHealth=..75}] run scoreboard players add tickTimer Azr_system 1
-execute if score tickTimer Azr_system matches 1251 if score playerCount Azr_system matches 3..4 if entity @e[tag=AzrielBossA,scores={Azr_mobHealth=..100}] run scoreboard players add tickTimer Azr_system 1
-execute if score tickTimer Azr_system matches 1251 if score playerCount Azr_system matches 5..6 if entity @e[tag=AzrielBossA,scores={Azr_mobHealth=..150}] run scoreboard players add tickTimer Azr_system 1
-execute if score tickTimer Azr_system matches 1251 if score playerCount Azr_system matches 7.. if entity @e[tag=AzrielBossA,scores={Azr_mobHealth=..200}] run scoreboard players add tickTimer Azr_system 1
-execute if score tickTimer Azr_system matches 1501 if score playerCount Azr_system matches 1..2 if entity @e[tag=AzrielBossA,scores={Azr_mobHealth=..75}] run scoreboard players add tickTimer Azr_system 1
-execute if score tickTimer Azr_system matches 1501 if score playerCount Azr_system matches 3..4 if entity @e[tag=AzrielBossA,scores={Azr_mobHealth=..100}] run scoreboard players add tickTimer Azr_system 1
-execute if score tickTimer Azr_system matches 1501 if score playerCount Azr_system matches 5..6 if entity @e[tag=AzrielBossA,scores={Azr_mobHealth=..150}] run scoreboard players add tickTimer Azr_system 1
-execute if score tickTimer Azr_system matches 1501 if score playerCount Azr_system matches 7.. if entity @e[tag=AzrielBossA,scores={Azr_mobHealth=..200}] run scoreboard players add tickTimer Azr_system 1
-execute if score tickTimer Azr_system matches 1501 if score playerCount Azr_system matches 7.. if entity @e[tag=AzrielBossA,scores={Azr_mobHealth=..200}] run scoreboard players add tickTimer Azr_system 1
-execute if score tickTimer Azr_system matches 1751 if score playerCount Azr_system matches 1..2 if entity @e[tag=AzrielBossA,scores={Azr_mobHealth=..75}] run scoreboard players add tickTimer Azr_system 1
-execute if score tickTimer Azr_system matches 1751 if score playerCount Azr_system matches 3..4 if entity @e[tag=AzrielBossA,scores={Azr_mobHealth=..100}] run scoreboard players add tickTimer Azr_system 1
-execute if score tickTimer Azr_system matches 1751 if score playerCount Azr_system matches 5..6 if entity @e[tag=AzrielBossA,scores={Azr_mobHealth=..150}] run scoreboard players add tickTimer Azr_system 1
-execute if score tickTimer Azr_system matches 1751 if score playerCount Azr_system matches 7.. if entity @e[tag=AzrielBossA,scores={Azr_mobHealth=..200}] run scoreboard players add tickTimer Azr_system 1
-execute if score tickTimer Azr_system matches 2001 if score playerCount Azr_system matches 1..2 if entity @e[tag=AzrielBossA,scores={Azr_mobHealth=..75}] run scoreboard players add tickTimer Azr_system 1
-execute if score tickTimer Azr_system matches 2001 if score playerCount Azr_system matches 3..4 if entity @e[tag=AzrielBossA,scores={Azr_mobHealth=..100}] run scoreboard players add tickTimer Azr_system 1
-execute if score tickTimer Azr_system matches 2001 if score playerCount Azr_system matches 5..6 if entity @e[tag=AzrielBossA,scores={Azr_mobHealth=..150}] run scoreboard players add tickTimer Azr_system 1
-execute if score tickTimer Azr_system matches 2001 if score playerCount Azr_system matches 7.. if entity @e[tag=AzrielBossA,scores={Azr_mobHealth=..200}] run scoreboard players add tickTimer Azr_system 1
-execute if score tickTimer Azr_system matches 2251 if score playerCount Azr_system matches 1..2 if entity @e[tag=AzrielBossA,scores={Azr_mobHealth=..75}] run scoreboard players add tickTimer Azr_system 1
-execute if score tickTimer Azr_system matches 2251 if score playerCount Azr_system matches 3..4 if entity @e[tag=AzrielBossA,scores={Azr_mobHealth=..100}] run scoreboard players add tickTimer Azr_system 1
-execute if score tickTimer Azr_system matches 2251 if score playerCount Azr_system matches 5..6 if entity @e[tag=AzrielBossA,scores={Azr_mobHealth=..150}] run scoreboard players add tickTimer Azr_system 1
-execute if score tickTimer Azr_system matches 2251 if score playerCount Azr_system matches 7.. if entity @e[tag=AzrielBossA,scores={Azr_mobHealth=..200}] run scoreboard players add tickTimer Azr_system 1
-execute if score tickTimer Azr_system matches 2501 if score playerCount Azr_system matches 1..2 if entity @e[tag=AzrielBossA,scores={Azr_mobHealth=..75}] run scoreboard players add tickTimer Azr_system 1
-execute if score tickTimer Azr_system matches 2501 if score playerCount Azr_system matches 3..4 if entity @e[tag=AzrielBossA,scores={Azr_mobHealth=..100}] run scoreboard players add tickTimer Azr_system 1
-execute if score tickTimer Azr_system matches 2501 if score playerCount Azr_system matches 5..6 if entity @e[tag=AzrielBossA,scores={Azr_mobHealth=..150}] run scoreboard players add tickTimer Azr_system 1
+    execute if score tickTimer Azr_system matches 900..2800 if score playerCount Azr_system matches 1..2 if entity @e[tag=AzrielBossA,scores={Azr_mobHealth=..75}] run scoreboard players add tickTimer Azr_system 1
+    execute if score tickTimer Azr_system matches 900..2800 if score playerCount Azr_system matches 3..4 if entity @e[tag=AzrielBossA,scores={Azr_mobHealth=..100}] run scoreboard players add tickTimer Azr_system 1
+    execute if score tickTimer Azr_system matches 900..2800 if score playerCount Azr_system matches 5..6 if entity @e[tag=AzrielBossA,scores={Azr_mobHealth=..150}] run scoreboard players add tickTimer Azr_system 1
+    execute if score tickTimer Azr_system matches 900..2800 if score playerCount Azr_system matches 7.. if entity @e[tag=AzrielBossA,scores={Azr_mobHealth=..200}] run scoreboard players add tickTimer Azr_system 1
+    execute if score tickTimer Azr_system matches 1001 if score playerCount Azr_system matches 1..2 if entity @e[tag=AzrielBossA,scores={Azr_mobHealth=..75}] run scoreboard players add tickTimer Azr_system 1
+    execute if score tickTimer Azr_system matches 1001 if score playerCount Azr_system matches 3..4 if entity @e[tag=AzrielBossA,scores={Azr_mobHealth=..100}] run scoreboard players add tickTimer Azr_system 1
+    execute if score tickTimer Azr_system matches 1001 if score playerCount Azr_system matches 5..6 if entity @e[tag=AzrielBossA,scores={Azr_mobHealth=..150}] run scoreboard players add tickTimer Azr_system 1
+    execute if score tickTimer Azr_system matches 1001 if score playerCount Azr_system matches 7.. if entity @e[tag=AzrielBossA,scores={Azr_mobHealth=..200}] run scoreboard players add tickTimer Azr_system 1
+    execute if score tickTimer Azr_system matches 1251 if score playerCount Azr_system matches 1..2 if entity @e[tag=AzrielBossA,scores={Azr_mobHealth=..75}] run scoreboard players add tickTimer Azr_system 1
+    execute if score tickTimer Azr_system matches 1251 if score playerCount Azr_system matches 3..4 if entity @e[tag=AzrielBossA,scores={Azr_mobHealth=..100}] run scoreboard players add tickTimer Azr_system 1
+    execute if score tickTimer Azr_system matches 1251 if score playerCount Azr_system matches 5..6 if entity @e[tag=AzrielBossA,scores={Azr_mobHealth=..150}] run scoreboard players add tickTimer Azr_system 1
+    execute if score tickTimer Azr_system matches 1251 if score playerCount Azr_system matches 7.. if entity @e[tag=AzrielBossA,scores={Azr_mobHealth=..200}] run scoreboard players add tickTimer Azr_system 1
+    execute if score tickTimer Azr_system matches 1501 if score playerCount Azr_system matches 1..2 if entity @e[tag=AzrielBossA,scores={Azr_mobHealth=..75}] run scoreboard players add tickTimer Azr_system 1
+    execute if score tickTimer Azr_system matches 1501 if score playerCount Azr_system matches 3..4 if entity @e[tag=AzrielBossA,scores={Azr_mobHealth=..100}] run scoreboard players add tickTimer Azr_system 1
+    execute if score tickTimer Azr_system matches 1501 if score playerCount Azr_system matches 5..6 if entity @e[tag=AzrielBossA,scores={Azr_mobHealth=..150}] run scoreboard players add tickTimer Azr_system 1
+    execute if score tickTimer Azr_system matches 1501 if score playerCount Azr_system matches 7.. if entity @e[tag=AzrielBossA,scores={Azr_mobHealth=..200}] run scoreboard players add tickTimer Azr_system 1
+    execute if score tickTimer Azr_system matches 1501 if score playerCount Azr_system matches 7.. if entity @e[tag=AzrielBossA,scores={Azr_mobHealth=..200}] run scoreboard players add tickTimer Azr_system 1
+    execute if score tickTimer Azr_system matches 1751 if score playerCount Azr_system matches 1..2 if entity @e[tag=AzrielBossA,scores={Azr_mobHealth=..75}] run scoreboard players add tickTimer Azr_system 1
+    execute if score tickTimer Azr_system matches 1751 if score playerCount Azr_system matches 3..4 if entity @e[tag=AzrielBossA,scores={Azr_mobHealth=..100}] run scoreboard players add tickTimer Azr_system 1
+    execute if score tickTimer Azr_system matches 1751 if score playerCount Azr_system matches 5..6 if entity @e[tag=AzrielBossA,scores={Azr_mobHealth=..150}] run scoreboard players add tickTimer Azr_system 1
+    execute if score tickTimer Azr_system matches 1751 if score playerCount Azr_system matches 7.. if entity @e[tag=AzrielBossA,scores={Azr_mobHealth=..200}] run scoreboard players add tickTimer Azr_system 1
+    execute if score tickTimer Azr_system matches 2001 if score playerCount Azr_system matches 1..2 if entity @e[tag=AzrielBossA,scores={Azr_mobHealth=..75}] run scoreboard players add tickTimer Azr_system 1
+    execute if score tickTimer Azr_system matches 2001 if score playerCount Azr_system matches 3..4 if entity @e[tag=AzrielBossA,scores={Azr_mobHealth=..100}] run scoreboard players add tickTimer Azr_system 1
+    execute if score tickTimer Azr_system matches 2001 if score playerCount Azr_system matches 5..6 if entity @e[tag=AzrielBossA,scores={Azr_mobHealth=..150}] run scoreboard players add tickTimer Azr_system 1
+    execute if score tickTimer Azr_system matches 2001 if score playerCount Azr_system matches 7.. if entity @e[tag=AzrielBossA,scores={Azr_mobHealth=..200}] run scoreboard players add tickTimer Azr_system 1
+    execute if score tickTimer Azr_system matches 2251 if score playerCount Azr_system matches 1..2 if entity @e[tag=AzrielBossA,scores={Azr_mobHealth=..75}] run scoreboard players add tickTimer Azr_system 1
+    execute if score tickTimer Azr_system matches 2251 if score playerCount Azr_system matches 3..4 if entity @e[tag=AzrielBossA,scores={Azr_mobHealth=..100}] run scoreboard players add tickTimer Azr_system 1
+    execute if score tickTimer Azr_system matches 2251 if score playerCount Azr_system matches 5..6 if entity @e[tag=AzrielBossA,scores={Azr_mobHealth=..150}] run scoreboard players add tickTimer Azr_system 1
+    execute if score tickTimer Azr_system matches 2251 if score playerCount Azr_system matches 7.. if entity @e[tag=AzrielBossA,scores={Azr_mobHealth=..200}] run scoreboard players add tickTimer Azr_system 1
+    execute if score tickTimer Azr_system matches 2501 if score playerCount Azr_system matches 1..2 if entity @e[tag=AzrielBossA,scores={Azr_mobHealth=..75}] run scoreboard players add tickTimer Azr_system 1
+    execute if score tickTimer Azr_system matches 2501 if score playerCount Azr_system matches 3..4 if entity @e[tag=AzrielBossA,scores={Azr_mobHealth=..100}] run scoreboard players add tickTimer Azr_system 1
+    execute if score tickTimer Azr_system matches 2501 if score playerCount Azr_system matches 5..6 if entity @e[tag=AzrielBossA,scores={Azr_mobHealth=..150}] run scoreboard players add tickTimer Azr_system 1
 
     # Wave II 900..1880 循环直到死亡
     execute if score tickTimer Azr_system matches 900..2800 if score playerCount Azr_system matches 1.. if score #rng19 Azr_system matches 1..11 if score #rng20 Azr_system matches 4..5 if entity @e[tag=AzrielBossA,scores={Azr_mobHealth=..30}] if entity @a[tag=azrPlayer,distance=0..2.5] run function skyblock:azr/stage/boss1/tp1
