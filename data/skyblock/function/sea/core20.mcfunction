@@ -16,3 +16,5 @@ execute as @a[tag=SEAPT] at @s if score @s sea_remiel_shadow matches 1.. run fun
 
 
 
+execute as @e[type=zombie,tag=SEAmob] at @s if block ~ ~1 ~ air run tp @s ~ ~0.1 ~
+execute as @e[type=husk,tag=SEAmob] at @s if block ~ ~1 ~ air run tp @s ~ ~0.1 ~
