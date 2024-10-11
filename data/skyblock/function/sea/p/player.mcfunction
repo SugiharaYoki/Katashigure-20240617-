@@ -12,6 +12,7 @@ clear @s[gamemode=!creative] burn_pottery_sherd
 clear @s[gamemode=!creative] friend_pottery_sherd
 clear @s[gamemode=!creative] prize_pottery_sherd
 clear @s[gamemode=!creative] mourner_pottery_sherd
+clear @s[gamemode=!creative] decorated_pot
 clear @s[gamemode=!creative] waxed_copper_grate
 clear @s[gamemode=!creative] waxed_oxidized_copper_grate
 clear @s[gamemode=!creative] waxed_oxidized_copper
@@ -21,6 +22,7 @@ clear @s[gamemode=!creative] polished_tuff_wall
 clear @s[gamemode=!creative] decorated_pot
 clear @s[gamemode=!creative] structure_void
 clear @s[gamemode=!creative] crimson_button
+clear @s[gamemode=!creative] warped_button
 
 tag @s remove PVP_see
 
@@ -41,6 +43,7 @@ run scoreboard players remove @s[scores={sea_oxygen=-10..}] sea_oxygen 2
 
 execute at @s unless block ~ ~-1 ~ water unless block ~ ~ ~ water run scoreboard players add @s[scores={sea_oxygen=..20}] sea_oxygen 10
 
+effect clear @s[scores={sea_oxygen=..-1}] resistance
 damage @s[scores={sea_oxygen=..-1}] 10 drown
 
 

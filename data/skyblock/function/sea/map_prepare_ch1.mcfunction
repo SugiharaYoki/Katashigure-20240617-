@@ -46,6 +46,7 @@ scoreboard objectives add sea_cursor2 dummy
 scoreboard objectives add sea_do_attack minecraft.custom:minecraft.damage_dealt
 scoreboard objectives add sea_shielding minecraft.custom:minecraft.damage_blocked_by_shield
 scoreboard objectives add sea_shielding_2 minecraft.custom:minecraft.damage_resisted
+scoreboard objectives add sea_shielding_3 dummy
 scoreboard objectives add sea_shield_switch dummy
 scoreboard objectives add sea_axeparry_jump minecraft.custom:jump
 scoreboard objectives add SEA_story dummy
