@@ -5,11 +5,11 @@ execute as @e[tag=arroworb2,type=marker] at @s run function skyblock:azr/stage/b
     execute if score tickTimer Azr_system matches 1 run tellraw @a[tag=DebugMode,tag=azrPlayer] [{"text":"[DEBUG MODE MESSAGE] You are playing \"Stage Boss1\", with playerCount = "},{"score":{"objective":"Azr_system","name":"playerCount"}},{"text":" Maximum tickTimer = 3162"}]
     #set spawnpoint
     execute if score tickTimer Azr_system matches 3..50 as @a[tag=azrPlayer] at @s unless block ~ ~-1 ~ air unless block ~ ~-1 ~ lava unless block ~ ~ ~ lava run spawnpoint @s ~ ~ ~
-    #init room
+    #init map
     execute if score tickTimer Azr_system matches 1 run fill -79932 38 72 -79930 42 72 red_stained_glass
     execute if score tickTimer Azr_system matches 1 at @p[x=-79931,y=38.8,z=88,distance=0..19,tag=azrPlayer] run tp @a[tag=azrPlayer,distance=9..] ~ ~ ~
     execute if score tickTimer Azr_system matches 1 run setblock -79931 39 88 air destroy
-    #effect & music
+    #effect & sound
     execute if score tickTimer Azr_system matches 1 run particle minecraft:soul_fire_flame -79931 38.8 88 0 0 0 0.3 200
     execute if score tickTimer Azr_system matches 1 run particle minecraft:explosion -79931 39.4 88 0.3 0.3 0.3 1 3
     execute if score tickTimer Azr_system matches 1 run playsound minecraft:entity.lightning_bolt.impact master @a[tag=azrPlayer] -79931 38.8 88 10 0.8
@@ -52,8 +52,7 @@ execute as @e[tag=arroworb2,type=marker] at @s run function skyblock:azr/stage/b
     execute if score tickTimer Azr_system matches 3175 run tellraw @a[tag=azrPlayer] {"text":"权之残影：","color":"red"}
     execute if score tickTimer Azr_system matches 3175 run tellraw @a[tag=azrPlayer] {"text":"“前方的道路乃真正的勇者才可生还之路。若真有胆量的话，就尽管前行吧。”","color":"white"}
 
-
-    #health check
+#health check
     scoreboard objectives add Azr_mobHealth dummy
     execute if score tickTimer Azr_system matches 81.. as @n[tag=AzrielBossA] store result score @s Azr_mobHealth run data get entity @s Health
     execute if score tickTimer Azr_system matches 81 run bossbar add azr:boss_hp_bar "沙利叶神使 权之残影"
@@ -63,29 +62,26 @@ execute as @e[tag=arroworb2,type=marker] at @s run function skyblock:azr/stage/b
     execute if score tickTimer Azr_system matches 81 if score playerCount Azr_system matches 5.. run bossbar set azr:boss_hp_bar max 350
     execute if score tickTimer Azr_system matches 81 run bossbar set azr:boss_hp_bar players @a[tag=azrPlayer]
     execute if score tickTimer Azr_system matches 82.. store result bossbar azr:boss_hp_bar value run scoreboard players get @n[tag=AzrielBossA] Azr_mobHealth
-
-#全局能力
-    #AI-每刻有1/8的肯面向最近玩家
+#AI 
+    #每刻有1/8的肯面向最近玩家
     execute store result score random Azr_system run random value 1..8
     execute if score tickTimer Azr_system matches 152..2800 if score random Azr_system matches 1 as @e[tag=AzrielBossA,limit=3] at @s run tp @s ~ ~ ~ facing entity @p[tag=azrPlayer]
     execute if score tickTimer Azr_system matches 152..2800 run team join AzrBossA @e[tag=AzrielMob,x=-79931,y=38,z=88,distance=..20]
-    #AI-状态效果控制
+    #状态效果控制
     effect clear @a[tag=azrPlayer] blindness
     effect clear @e[tag=AzrielBossA] invisibility
     effect give @e[tag=AzrielBossA] slow_falling 10 0 true
-    #AI-防止坠入虚空 传送到定点或传送到玩家各有一半可能
+    #防止坠入虚空 传送到定点或传送到玩家各有一半可能
     execute as @e[tag=AzrielBossA,limit=1] at @s if entity @s[y=0,dy=36] run effect give @s speed 3 1 false
     execute as @e[tag=AzrielBossA,limit=1] at @s if entity @s[y=0,dy=36] store result score random Azr_system run random value 1..2
     execute as @e[tag=AzrielBossA,limit=1] at @s if entity @s[y=0,dy=36] if score random Azr_system matches 1 run tp @s @r[tag=azrPlayer]
     execute as @e[tag=AzrielBossA,limit=1] at @s if entity @s[y=0,dy=36] if score random Azr_system matches 2 run tp @s -79931 45 88
-    #AI-防止卡在墙内 传送到最近玩家
+    #防止卡在墙内 传送到最近玩家
     execute as @e[tag=AzrielBossA,limit=1] at @s if block ~ ~1 ~ quartz_block run tp @s @r[tag=azrPlayer]
     execute as @e[tag=AzrielBossA,limit=1] at @s if block ~ ~1 ~ quartz_bricks run tp @s @r[tag=azrPlayer]
     execute as @e[tag=AzrielBossA,limit=1] at @s if block ~ ~1 ~ quartz_pillar run tp @s @r[tag=azrPlayer]
-
-#AI 
     # 152..172 -> 1000
-    # wave I - 只运行一次，自动进入下一阶段
+    # Wave I - 只运行一次，自动进入下一阶段
     function skyblock:azr/tool_rng
     execute if score tickTimer Azr_system matches 152.. if score #rng7 Azr_system matches 1 if score #rng11 Azr_system matches 1 as @e[tag=AzrielBossA,limit=3] at @s if entity @a[tag=azrPlayer,distance=0..2.5] run function skyblock:azr/stage/boss1/tp1
     execute if score tickTimer Azr_system matches 152.. if score playerCount Azr_system matches 3.. if score #rng7 Azr_system matches 1 if score #rng11 Azr_system matches 4 as @e[tag=AzrielBossA,limit=3] at @s run function skyblock:azr/stage/boss1/summon
@@ -152,7 +148,7 @@ execute if score tickTimer Azr_system matches 2501 if score playerCount Azr_syst
 execute if score tickTimer Azr_system matches 2501 if score playerCount Azr_system matches 3..4 if entity @e[tag=AzrielBossA,scores={Azr_mobHealth=..100}] run scoreboard players add tickTimer Azr_system 1
 execute if score tickTimer Azr_system matches 2501 if score playerCount Azr_system matches 5..6 if entity @e[tag=AzrielBossA,scores={Azr_mobHealth=..150}] run scoreboard players add tickTimer Azr_system 1
 
-    #wave2 900..1880 反复回秒直到死亡
+    # Wave II 900..1880 循环直到死亡
     execute if score tickTimer Azr_system matches 900..2800 if score playerCount Azr_system matches 1.. if score #rng19 Azr_system matches 1..11 if score #rng20 Azr_system matches 4..5 if entity @e[tag=AzrielBossA,scores={Azr_mobHealth=..30}] if entity @a[tag=azrPlayer,distance=0..2.5] run function skyblock:azr/stage/boss1/tp1
     execute if score tickTimer Azr_system matches 900..2800 if score playerCount Azr_system matches 1.. if score #rng19 Azr_system matches 1..11 if score #rng20 Azr_system matches 6..7 if entity @e[tag=AzrielBossA,scores={Azr_mobHealth=..50}] run function skyblock:azr/stage/boss1/flat1_w
     execute if score tickTimer Azr_system matches 900..2800 if score playerCount Azr_system matches 1.. if score #rng19 Azr_system matches 1..11 if score #rng20 Azr_system matches 6..7 if entity @e[tag=AzrielBossA,scores={Azr_mobHealth=..50}] run function skyblock:azr/stage/boss1/flat1
