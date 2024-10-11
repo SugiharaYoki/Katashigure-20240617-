@@ -20,6 +20,7 @@ clear @s[gamemode=!creative] polished_diorite
 clear @s[gamemode=!creative] polished_tuff_wall
 clear @s[gamemode=!creative] decorated_pot
 clear @s[gamemode=!creative] structure_void
+clear @s[gamemode=!creative] crimson_button
 
 tag @s remove PVP_see
 
