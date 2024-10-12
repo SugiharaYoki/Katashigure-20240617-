@@ -4,7 +4,7 @@ execute if entity @e[type=!marker,type=!painting,type=!item_frame,distance=0..1.
 execute if score @s sea_4temp1 matches -14 run playsound minecraft:block.note_block.imitate.creeper block @a ~ ~ ~ 1 1.3
 #execute if score @s sea_4temp1 matches -14 run summon firework_rocket ~ ~ ~ {LifeTime:1,FireworksItem:{id:firework_rocket,count:1,components:{fireworks:{flight_duration:1,explosions:[{shape:"burst",colors:[I;11743532,15435844]}]}}}}
 execute if score @s sea_4temp1 matches -14 run particle firework ~ ~ ~ 0 0 0 0.55 80
-execute if score @s sea_4temp1 matches -14 run playsound entity.firework_rocket.shoot block @a ~ ~ ~ 1 1.05
+execute if score @s sea_4temp1 matches -14 run playsound entity.firework_rocket.launch block @a ~ ~ ~ 1 1.05
 scoreboard players add @s[scores={sea_4temp1=-16..}] sea_4temp1 1
 
 execute if score @s sea_4temp1 matches -0 run playsound minecraft:block.note_block.harp block @a ~ ~ ~ 1 0.9
