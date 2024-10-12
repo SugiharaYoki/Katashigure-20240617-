@@ -18,7 +18,7 @@ execute as @s[scores={sea_4temp1=40..46}] run particle minecraft:large_smoke ~ ~
 execute as @s[scores={sea_4temp1=40}] run attribute @s generic.movement_speed base set 4
 execute as @s[scores={sea_4temp1=39}] run attribute @s generic.movement_speed base set 0.14
 
-execute as @s[scores={sea_4temp1=40}] run attribute @s generic.attack_knockback base set 3
+execute as @s[scores={sea_4temp1=40}] run attribute @s generic.attack_knockback base set 2
 execute as @s[scores={sea_4temp1=39}] run attribute @s generic.attack_knockback base set 0.0
 
 particle dripping_obsidian_tear ~ ~1.2 ~ 0.05 0.2 0.05 0 2
