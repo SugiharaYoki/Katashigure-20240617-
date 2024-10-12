@@ -125,7 +125,7 @@ execute positioned 90185 19 130 if entity @a[tag=SEAPT,distance=..4.7] unless en
 
 #
 execute if block 90193 34 181 stone_button[powered=true] if score sea_ch4_switch_waterstorage sea_4temp2 matches ..0 run scoreboard players set sea_ch4_switch_waterstorage sea_4temp2 31
-execute if block 90193 34 181 stone_button[powered=true] if score sea_ch4_switch_waterstorage sea_4temp2 matches 1.. run scoreboard players remove sea_ch4_switch_waterstorage sea_4temp2 1
+execute if score sea_ch4_switch_waterstorage sea_4temp2 matches 1.. run scoreboard players remove sea_ch4_switch_waterstorage sea_4temp2 1
 execute if score sea_ch4_switch_waterstorage sea_4temp2 matches 30 run playsound block.beacon.activate block @a 90190.55 38.00 171.99 2 1.5
 execute if score sea_ch4_switch_waterstorage sea_4temp2 matches 20 run fill 90187 37 172 90193 37 171 minecraft:lime_stained_glass
 execute if score sea_ch4_switch_waterstorage sea_4temp2 matches 10 run fill 90187 37 172 90193 37 171 minecraft:red_stained_glass
