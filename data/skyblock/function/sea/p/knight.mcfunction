@@ -27,6 +27,6 @@ execute as @s[scores={sea_4temp4=..10},nbt={Fire:-1s}] run particle portal ~ ~ ~
 execute as @s[scores={sea_4temp4=..10},nbt={Fire:-1s}] run particle infested ~ ~ ~ 0 0 0 0.2 50
 execute as @s[scores={sea_4temp4=..10},nbt={Fire:-1s}] run playsound entity.endermite.ambient hostile @a ~ ~ ~ 1 0.8
 execute as @s[scores={sea_4temp4=..10},nbt={Fire:-1s}] run function skyblock:sea/m/nightblind
-execute as @s[scores={sea_4temp4=..10},nbt={Fire:-1s}] run kill @s
+execute as @s[scores={sea_4temp4=..10}] run kill @s
 
 particle dripping_obsidian_tear ~ ~1.2 ~ 0.15 0.2 0.15 0 2
