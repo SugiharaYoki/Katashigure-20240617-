@@ -5,8 +5,7 @@ execute unless block -17 23 32 soul_lantern run scoreboard players set @n[tag=sc
 #-#-#scoreboard players set @n[tag=sc] TempPaus 0
 
 
-#《初始化队伍》
-team leave @a
+team leave @a[tag=!Gaming]
 team remove Team1_1
 team remove Team1_2
 team remove Team1_3
@@ -15,12 +14,12 @@ team remove Temp1_5
 team remove Temp1_6
 team remove Temp1_7
 team remove Temp1_8
-team join HajimetanoMachi @a[tag=PVP_see]
+team join HajimetanoMachi @a[tag=PVP_see,tag=!Gaming]
 #《游戏规则初始化》
 #gamerule doFireTick false
 #《玩家事件/文字显示/传送支援》
 tag @a[tag=Temp_NoSkyWar,tag=!Gaming] remove NoSkyWar
-tag @a remove Temp_NoSkyWar
+tag @a[tag=!Gaming] remove Temp_NoSkyWar
 #《地图预加载初始化》
 #-#-#setblock 12 60 -7 green_wool
 #-#-#setblock 19 60 -7 green_wool
