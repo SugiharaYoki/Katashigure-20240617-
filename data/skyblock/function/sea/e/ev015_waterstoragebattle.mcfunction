@@ -1,5 +1,6 @@
 execute as @s[scores={sea_4temp1=1..5}] run playsound ambient.soul_sand_valley.mood ambient @a 90185 38 172 1.5 0.9
 execute as @s[scores={sea_4temp1=1..2}] run playsound ambient.soul_sand_valley.additions ambient @a 90185 38 172 1.5 0.9
+execute as @s[scores={sea_4temp1=1..2}] run playsound ambient.soul_sand_valley.loop ambient @a 90185 38 172 1.5 0.9
 
 execute as @s[scores={sea_4temp1=1..10}] positioned 90186 36 175 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
 execute as @s[scores={sea_4temp1=1..10}] positioned 90186 36 175 run particle sculk_soul ~ ~1 ~ 0.3 0.5 0.3 0.05 10
