@@ -8,7 +8,6 @@ give @s[tag=seaPerm000] nether_star[custom_name='{"text":"神秘的星光宝石"
 give @s spyglass[lore=['{"text":"我随身携带的望远镜。","color":"white","italic":false}','{"text":"在前途未知的时刻，紧握住它可以让我不再迷惘。","color":"white","italic":false}','{"text":"手持时：显示任务目标 & 跳过已阅读的剧情对话","color":"green","italic":false}']]
 give @s compass
 give @s baked_potato 3
-item replace entity @s armor.chest with leather_chestplate[custom_name='{"text":"基础防护服","italic":false,"color":"red"}',custom_data={sea_chest:true},attribute_modifiers=[{type:"generic.armor",slot:"chest",id:"sea_armor:002_01",amount:1.0,operation:"add_value"},{type:"generic.armor_toughness",slot:"chest",id:"sea_armor:002_02",amount:0.5,operation:"add_value"}],unbreakable={}]
 effect give @s regeneration 1 39 false
 effect give @s saturation 1 3 false
 effect give @s fire_resistance 1 0 false
@@ -60,6 +59,45 @@ execute if entity @a[tag=SEAPT,tag=e_w_01] run give @s iron_hoe[custom_name='{"t
 execute if entity @a[tag=SEAPT,tag=e_w_02] run give @s iron_axe[custom_name='{"text":"消防斧","italic":false,"color":"red"}',custom_data={sea_safeaxe:true},attribute_modifiers=[{type:"generic.attack_damage",slot:"mainhand",id:"sea_weapon:004_01",amount:6.5,operation:"add_value"},{type:"generic.attack_speed",slot:"mainhand",id:"sea_weapon:004_02",amount:-3.0,operation:"add_value"}],unbreakable={}]
 execute if entity @a[tag=SEAPT,tag=e_w_03] run give @s crossbow[custom_name='{"text":"工程弩","italic":false,"color":"red"}',custom_data={sea_crossbow:true},unbreakable={}]
 execute if entity @a[tag=SEAPT,tag=e_w_04] run give @s shears[custom_name='{"text":"喷火器","italic":false,"color":"red"}',custom_data={sea_flamethrower:true},unbreakable={}]
+
+execute if items entity @a[tag=SEAPT] container.* shield run give @s shield[custom_name='{"text":"防护盾","italic":false,"color":"red"}',custom_data={sea_shield:true},attribute_modifiers=[{type:"generic.movement_speed",slot:"hand",id:"sea_armor:004_01",amount:-0.03,operation:"add_value"}],lore=['{"text":"主手选至此道具的瞬间获得极短暂无敌（无需右键使用）","color":"white","italic":false}','{"text":"在这期间受到攻击并反击可以造成巨额伤害","color":"white","italic":false}']]
+
+
+
+execute if block 90058 103 142 grindstone run item replace entity @a[tag=SEAPT] armor.head with chainmail_helmet[custom_name='{"text":"电工安全帽","italic":false,"color":"red"}',custom_data={sea_safehat:true},attribute_modifiers=[{type:"generic.armor",slot:"head",id:"sea_armor:003_01",amount:1.0,operation:"add_value"},{type:"generic.knockback_resistance",slot:"head",id:"sea_armor:003_02",amount:0.1,operation:"add_value"}],unbreakable={}]
+execute run item replace entity @a[tag=SEAPT] armor.chest with leather_chestplate[custom_name='{"text":"基础防护服","italic":false,"color":"red"}',custom_data={sea_chest:true},attribute_modifiers=[{type:"generic.armor",slot:"chest",id:"sea_armor:002_01",amount:1.0,operation:"add_value"},{type:"generic.armor_toughness",slot:"chest",id:"sea_armor:002_02",amount:0.5,operation:"add_value"}],unbreakable={}]
+execute if block 90058 103 142 grindstone run item replace entity @a[tag=SEAPT] armor.legs with leather_leggings[custom_name='{"text":"基础防护裤","italic":false,"color":"red"}',custom_data={sea_leg:true},attribute_modifiers=[{type:"generic.armor",slot:"legs",id:"sea_armor:001_01",amount:1.0,operation:"add_value"},{type:"generic.armor_toughness",slot:"legs",id:"sea_armor:001_02",amount:0.5,operation:"add_value"}],unbreakable={}]
+execute if block 90075 103 141 minecraft:cauldron run item replace entity @a[tag=SEAPT] armor.feet with leather_boots[custom_name='{"text":"基础防护靴","italic":false,"color":"red"}',custom_data={sea_feet:true},attribute_modifiers=[{type:"generic.armor",slot:"feet",id:"sea_armor:008_01",amount:1.0,operation:"add_value"},{type:"generic.armor_toughness",slot:"feet",id:"sea_armor:008_02",amount:0.5,operation:"add_value"}],unbreakable={}]
+
+execute if block 90075 103 137 grindstone run give @s flint 3
+execute if block 90075 103 141 minecraft:cauldron run give @s flint 3
+execute if block 90075 103 137 scaffolding run give @s flint 3
+execute if block 90075 103 137 grindstone run give @s iron_ingot 1
+execute if block 90075 103 141 minecraft:cauldron run give @s iron_ingot 1
+execute if block 90075 103 137 scaffolding run give @s iron_ingot 1
+execute if block 90075 103 137 grindstone run give @s baked_potato 3
+execute if block 90075 103 141 minecraft:cauldron run give @s baked_potato 3
+execute if block 90075 103 137 scaffolding run give @s baked_potato 3
+execute if block 90075 103 137 grindstone run give @s emerald 24
+execute if block 90075 103 141 minecraft:cauldron run give @s emerald 36
+execute if block 90075 103 137 scaffolding run give @s emerald 48
+execute if block 90075 103 137 grindstone run give @s arrow 12
+execute if block 90075 103 141 minecraft:cauldron run give @s arrow 24
+execute if block 90075 103 137 scaffolding run give @s arrow 24
+execute if block 90075 103 137 grindstone run give @s raiser_armor_trim_smithing_template 8
+execute if block 90075 103 141 minecraft:cauldron run give @s raiser_armor_trim_smithing_template 8
+execute if block 90075 103 137 scaffolding run give @s raiser_armor_trim_smithing_template 16
+execute if block 90075 103 137 grindstone run give @s wayfinder_armor_trim_smithing_template 2
+execute if block 90075 103 141 minecraft:cauldron run give @s wayfinder_armor_trim_smithing_template 2
+execute if block 90075 103 137 scaffolding run give @s wayfinder_armor_trim_smithing_template 2
+execute if block 90075 103 137 grindstone run give @s wild_armor_trim_smithing_template 1
+execute if block 90075 103 141 minecraft:cauldron run give @s wild_armor_trim_smithing_template 1
+execute if block 90075 103 137 scaffolding run give @s wild_armor_trim_smithing_template 2
+execute if block 90075 103 137 grindstone run give @s sentry_armor_trim_smithing_template 2
+execute if block 90075 103 141 minecraft:cauldron run give @s sentry_armor_trim_smithing_template 4
+execute if block 90075 103 137 scaffolding run give @s sentry_armor_trim_smithing_template 4
+execute if block 90075 103 141 minecraft:cauldron run give @s dune_armor_trim_smithing_template 4
+execute if block 90075 103 137 scaffolding run give @s dune_armor_trim_smithing_template 4
 
 
 
