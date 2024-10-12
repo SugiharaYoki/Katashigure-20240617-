@@ -38,7 +38,8 @@ execute as @s[tag=sea_exp_thunderblast] run function skyblock:sea/experimental/t
 
 execute unless items entity @s weapon.mainhand shield as @s[tag=sea_t_parry1] run scoreboard players set @s sea_shield_switch 20
 execute unless items entity @s weapon.mainhand shield as @s[tag=sea_t_parry1] run scoreboard players set @s sea_shielding_2 0
-execute if items entity @s weapon.mainhand shield as @s[tag=sea_t_parry1] run function skyblock:sea/p/parry
+execute as @s[tag=sea_t_parry1,scores={sea_shielding_3=1..}] run scoreboard players remove @s sea_shielding_3 1
+execute if items entity @s weapon.mainhand shield as @s[tag=sea_t_parry1,scores={sea_shielding_3=..0}] run function skyblock:sea/p/parry
 
 
 execute as @s[tag=sea_t_axeparry1,nbt={SelectedItem:{id:"minecraft:netherite_axe"}},predicate=skyblock:sneaking,scores={sea_axeparry_jump=1..}] run function skyblock:sea/p/axeparry
