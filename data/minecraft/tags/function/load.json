@@ -1,6 +1,7 @@
 {
     "values": [
         "skyblock:load",
-        "skyblock:cmd/cmd_init"
+        "skyblock:cmd/cmd_init",
+        "24_point_da651c:load"
     ]
 }

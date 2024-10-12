@@ -1,0 +1,1 @@
+execute as @a run function 24_point_da651c:if

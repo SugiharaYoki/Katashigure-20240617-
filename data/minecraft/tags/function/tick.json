@@ -1,6 +1,7 @@
 {
     "values": [
         "skyblock:azr/main",
-        "skyblock:cmd/cmd_main"
+        "skyblock:cmd/cmd_main",
+        "24_point_da651c:tick"
     ]
 }
