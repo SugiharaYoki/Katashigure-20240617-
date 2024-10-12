@@ -112,7 +112,9 @@ execute if entity @s[tag=!e_w_04] if items entity @s container.* shears[custom_d
 execute if entity @s[tag=!e_w_04] if items entity @s container.* shears[custom_data={sea_flamethrower:true}] run tellraw @s {"text": "获得新武器：喷火器","color": "dark_red"}
 execute if entity @s[tag=!e_w_04] if items entity @s container.* shears[custom_data={sea_flamethrower:true}] run tellraw @s {"text": "中程武器，右键时向前方射出火舌。虽然燃料会随时间自然恢复，但作为武器的威力欠佳。","color": "white"}
 execute if entity @s[tag=!e_w_04] if items entity @s container.* shears[custom_data={sea_flamethrower:true}] run tellraw @s {"text": "射程内无限穿透，适合用于攻击成群的低血量怪物。","color": "white"}
+execute if entity @s[tag=!e_w_04] if items entity @s container.* shears[custom_data={sea_flamethrower:true}] run tag @s add e_w_04_eternal
 execute if entity @s[tag=!e_w_04] if items entity @s container.* shears[custom_data={sea_flamethrower:true}] run tag @s add e_w_04
+execute if items entity @s container.* snout_armor_trim_smithing_template[custom_data={sea_t_shotgun1:true}] run tag @s add e_w_04b_eternal
 #execute as @s[tag=e_w_04] store result score @s sea_cursor run clear @s shears 0
 #execute as @s[tag=e_w_04] at @s if entity @s[scores={sea_cursor=..0}] run give @s shears[custom_name='{"text":"喷火器","italic":false,"color":"red"}',custom_data={sea_flamethrower:true},unbreakable={}]
 execute as @s[tag=e_w_04,level=..7,scores={sea_oxygen=20..}] run xp add @s 1 points
