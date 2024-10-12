@@ -19,3 +19,6 @@ execute as @s[scores={sea_4temp1=5}] positioned 90158 36 171 run summon glow_squ
 execute as @s[scores={sea_4temp1=7}] run tellraw @a[tag=SEAPT] {"text": "陌生的女声：“我已经看到你了。”","color": "green"}
 execute as @s[scores={sea_4temp1=29}] run tellraw @a[tag=SEAPT] {"text": "陌生的女声：“这是警告，不要再想着接近实验区。”","color": "green"}
 execute as @s[scores={sea_4temp1=50}] run tellraw @a[tag=SEAPT] {"text": "陌生的女声：“不听劝阻的人可不是好孩子。”","color": "green"}
+
+execute as @s[scores={sea_4temp1=13}] positioned 90191 34 156 run function skyblock:sea/m/mine
+execute as @s[scores={sea_4temp1=13}] positioned 90190 34 156 run function skyblock:sea/m/mine
