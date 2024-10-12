@@ -1,0 +1,1 @@
+summon block_display ~ ~ ~ {transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[0.2f,0.1f,0.2f],translation:[-0.1f,0f,-0.1f]},block_state:{Name:target},Tags:["sea_blockdisplay","sea_mine"],Rotation:[0f,0f]}

@@ -136,6 +136,7 @@ execute if score sea_ch4_switch_waterstorage sea_4temp2 matches 0 run playsound 
 
 execute if score sea_ch4_switch_waterstorage sea_4temp2 matches 27 positioned 90186 36 175 unless entity @n[tag=SEAch4_spawn_timer_waterstorage,distance=0..3] run summon marker ~ ~ ~ {Tags:["SEAch4_spawn_timer","SEAch4_spawn_timer_waterstorage"]}
 execute as @n[tag=SEAch4_spawn_timer_waterstorage] at @s run function skyblock:sea/e/ev015_waterstoragebattle
+execute as @n[tag=SEAch4_spawn_timer_waterstorage2] at @s run function skyblock:sea/e/ev015_waterstoragebattle2
 
 #二楼左
 execute if block 90184 35 123 minecraft:crimson_button[powered=true] positioned 90184 36 121 if block ~ ~ ~ minecraft:magenta_glazed_terracotta[facing=south] run setblock ~ ~ ~ gray_concrete
