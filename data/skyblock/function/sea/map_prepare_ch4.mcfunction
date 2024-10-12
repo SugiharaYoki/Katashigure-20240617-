@@ -71,6 +71,9 @@ execute positioned 90179 19 119 run function skyblock:sea/m/zombie_cook
 execute positioned 90194 20 95 run function skyblock:sea/m/npc_herb
 scoreboard players set @n[tag=SEAherb] sea_4temp1 1
 
+execute positioned 90159 11 115 run function skyblock:sea/m/drone
+execute positioned 90161 11 115 run function skyblock:sea/m/drone
+
 
 
 setblock 90210 19 112 air

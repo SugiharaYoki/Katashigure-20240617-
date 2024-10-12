@@ -44,6 +44,7 @@ execute if block 90075 103 141 minecraft:cauldron positioned 90079 105 143 if en
 #execute as @a[tag=SEAPT] at @s run clear @s iron_hoe[!custom_data={sea_crowbar_t:true}]
 
 
+execute as @e[type=zombie,tag=SEAknight,x=90000,y=100,z=100,distance=..3000] at @s run function skyblock:sea/p/knight
 
 
 execute as @n[tag=sc] unless entity @s[scores={sea_4temp1=-9999..}] run scoreboard players set @s sea_4temp1 -1
