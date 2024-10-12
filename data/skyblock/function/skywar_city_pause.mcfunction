@@ -6,7 +6,7 @@ execute unless block -17 23 32 soul_lantern run scoreboard players set @n[tag=sc
 
 
 #《初始化队伍》
-team leave @a
+team leave @a[tag=!Gaming]
 team remove Team1_1
 team remove Team1_2
 team remove Team1_3
@@ -16,13 +16,14 @@ team remove Temp1_6
 team remove Temp1_7
 team remove Temp1_8
 team join HajimetanoMachi @a[tag=PVP_see]
+team join HajimetanoMachi @a[tag=PVP_see,tag=!Gaming]
 fill -130 59 -117 -130 59 -128 minecraft:cherry_button[facing=east]
 #《游戏规则初始化》
 #gamerule doFireTick false
 #《玩家事件/文字显示/传送支援》
 tag @a[tag=Temp_NoSkyWar,tag=!Gaming] remove NoSkyWar
 tag @n[tag=sc] remove MapLoaAlr
-tag @a remove Temp_NoSkyWar
+tag @a[tag=!Gaming] remove Temp_NoSkyWar
 title @a[tag=!Gaming,tag=!NoSkyWar] times 0 30 5
 title @a[tag=!Gaming,tag=!NoSkyWar] title {"text":"开局暂停","bold":true,"color":"red"}
 #《地图预加载初始化》
