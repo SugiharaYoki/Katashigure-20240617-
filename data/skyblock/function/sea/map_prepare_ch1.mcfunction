@@ -84,6 +84,9 @@ team modify SEA collisionRule never
 team modify SEA color dark_blue
 team modify SEA friendlyFire false
 team modify SEA seeFriendlyInvisibles true
+setblock 90075 103 137 air
+setblock 90075 103 141 air
+setblock 90075 103 137 air
 execute as @a[tag=SEAPT] at @s run function skyblock:sea/map_prepare_ch1_player
 
 
