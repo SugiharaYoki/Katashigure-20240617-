@@ -2,7 +2,7 @@
 
 particle large_smoke ~ ~ ~ 4 1 4 0.0 20
 particle explosion ~ ~ ~ 1 1 1 0.0 5
-particle explosion_emitter ~ ~ ~ 0.8 0.8 0.8 0.0 10
+particle explosion_emitter ~ ~ ~ 0.8 0.8 0.8 0.0 4
 execute as @e[tag=SEAboss2,distance=0..4] run damage @s 72 explosion
 execute as @e[tag=SEAmob,distance=0..2.99999] run damage @s 24 explosion
 execute as @e[tag=SEAmob,distance=3..4] run damage @s 16 explosion
