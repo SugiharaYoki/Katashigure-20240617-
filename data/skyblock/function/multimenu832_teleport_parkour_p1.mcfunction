@@ -18,6 +18,9 @@ tellraw @s[scores={parkour_stage=16..}] [{"text":"  日光祭坛 16","bold":fals
 tellraw @s[scores={parkour_stage=17..}] [{"text":"   锃鉴金丘 17","bold":false,"color":"gold","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 832017"}}]
 tellraw @s[scores={parkour_stage=18..}] [{"text":"   锃鉴金丘 18","bold":false,"color":"gold","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 832018"}}]
 tellraw @s[scores={parkour_stage=19..}] [{"text":"   锃鉴金丘 19","bold":false,"color":"gold","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 832019"}}]
+tellraw @s[scores={parkour_stage=20..}] [{"text":"    辉彩荒脉 20","bold":false,"color":"gold","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 832020"}}]
+tellraw @s[scores={parkour_stage=21..}] [{"text":"    辉彩荒脉 21","bold":false,"color":"gold","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 832021"}}]
+tellraw @s[scores={parkour_stage=22..}] [{"text":"    辉彩荒脉 22","bold":false,"color":"gold","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 832022"}}]
 #tellraw @s[scores={MazeLS=??..}] {"text":"","bold":false}
 #tellraw @s[scores={MazeLS=??..}] {"text":"  [下一页]","bold":false,"color":"green","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 811"}}
 tellraw @s {"text":"","bold":false}
