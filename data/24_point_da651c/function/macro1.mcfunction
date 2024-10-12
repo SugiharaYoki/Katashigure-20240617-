@@ -1,0 +1,1 @@
+$data modify storage large_number:math q0 set from storage large_number:math 24_point_alllist[$(temp1)]
