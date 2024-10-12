@@ -1,3 +1,9 @@
+#Reset triggers
+execute if score @s PlayHouseTrigger matches 1.. run scoreboard players reset @s PlayHouseTrigger
+execute if score @s 4ASCEND_HP_Trigger matches 1.. run scoreboard players reset @s 4ASCEND_HP_Trigger
+execute if score @s 4ASCEND_TIME_Trigger matches 1.. run scoreboard players reset @s 4ASCEND_TIME_Trigger
+scoreboard players set @s If_TalkVill 0
+
 execute as @a unless score @s 4ASCEND_HP matches 2..5 run scoreboard players set @s 4ASCEND_HP 5
 execute as @a unless score @s 4ASCEND_TIME matches 1..6 run scoreboard players set @s 4ASCEND_TIME 6
 
@@ -19,9 +25,3 @@ execute if score @s PlayHouseTrigger matches 4 at @s run function skyblock:ph/in
 execute if score @s PlayHouseTrigger matches 5 run function skyblock:ph/runtime/singleplayer
 #Games
 execute if score @s PlayHouseTrigger matches 6 run function skyblock:cmd/hanoi/print_mainpage
-
-#Reset triggers
-execute if score @s PlayHouseTrigger matches 1.. run scoreboard players reset @s PlayHouseTrigger
-execute if score @s 4ASCEND_HP_Trigger matches 1.. run scoreboard players reset @s 4ASCEND_HP_Trigger
-execute if score @s 4ASCEND_TIME_Trigger matches 1.. run scoreboard players reset @s 4ASCEND_TIME_Trigger
-scoreboard players set @s If_TalkVill 0
