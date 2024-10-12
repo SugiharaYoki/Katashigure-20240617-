@@ -16,7 +16,7 @@ execute as @s[scores={sea_4temp1=49,rng2=9}] run tellraw @a[tag=SEAPT,distance=0
 execute as @s[scores={sea_4temp1=49}] run playsound entity.zombie.ambient hostile @a ~ ~ ~ 1 0.8
 execute as @s[scores={sea_4temp1=40..46}] run particle minecraft:large_smoke ~ ~1 ~ 0.3 1 0.3 0.1 10
 execute as @s[scores={sea_4temp1=40}] run attribute @s generic.movement_speed base set 4
-execute as @s[scores={sea_4temp1=39}] run attribute @s generic.movement_speed base set 0.1
+execute as @s[scores={sea_4temp1=39}] run attribute @s generic.movement_speed base set 0.14
 
 execute as @s[scores={sea_4temp1=40}] run attribute @s generic.attack_knockback base set 3
 execute as @s[scores={sea_4temp1=39}] run attribute @s generic.attack_knockback base set 0.0
