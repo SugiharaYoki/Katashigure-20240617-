@@ -21,4 +21,4 @@ execute as @s[scores={sea_4temp1=39}] run attribute @s generic.movement_speed ba
 execute as @s[scores={sea_4temp1=40}] run attribute @s generic.attack_knockback base set 3
 execute as @s[scores={sea_4temp1=39}] run attribute @s generic.attack_knockback base set 0.0
 
-particle dripping_obsidian_tear ~ ~1 ~ 0.05 0.5 0.05 0 5
+particle dripping_obsidian_tear ~ ~1.2 ~ 0.05 0.2 0.05 0 2
