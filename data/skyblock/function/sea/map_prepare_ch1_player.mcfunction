@@ -84,20 +84,20 @@ execute if block 90075 103 137 scaffolding run give @s emerald 48
 execute if block 90075 103 137 grindstone run give @s arrow 12
 execute if block 90075 103 141 minecraft:cauldron run give @s arrow 24
 execute if block 90075 103 137 scaffolding run give @s arrow 24
-execute if block 90075 103 137 grindstone run give @s raiser_armor_trim_smithing_template 8
-execute if block 90075 103 141 minecraft:cauldron run give @s raiser_armor_trim_smithing_template 8
-execute if block 90075 103 137 scaffolding run give @s raiser_armor_trim_smithing_template 16
-execute if block 90075 103 137 grindstone run give @s wayfinder_armor_trim_smithing_template 2
-execute if block 90075 103 141 minecraft:cauldron run give @s wayfinder_armor_trim_smithing_template 2
-execute if block 90075 103 137 scaffolding run give @s wayfinder_armor_trim_smithing_template 2
-execute if block 90075 103 137 grindstone run give @s wild_armor_trim_smithing_template 1
-execute if block 90075 103 141 minecraft:cauldron run give @s wild_armor_trim_smithing_template 1
-execute if block 90075 103 137 scaffolding run give @s wild_armor_trim_smithing_template 2
-execute if block 90075 103 137 grindstone run give @s sentry_armor_trim_smithing_template 2
-execute if block 90075 103 141 minecraft:cauldron run give @s sentry_armor_trim_smithing_template 4
-execute if block 90075 103 137 scaffolding run give @s sentry_armor_trim_smithing_template 4
-execute if block 90075 103 141 minecraft:cauldron run give @s dune_armor_trim_smithing_template 4
-execute if block 90075 103 137 scaffolding run give @s dune_armor_trim_smithing_template 4
+execute if block 90075 103 137 grindstone run scoreboard players add @s sea_i_trim_zombie 8
+execute if block 90075 103 141 minecraft:cauldron run scoreboard players add @s sea_i_trim_zombie 8
+execute if block 90075 103 137 scaffolding run scoreboard players add @s sea_i_trim_zombie 16
+execute if block 90075 103 137 grindstone run scoreboard players add @s sea_i_trim_human 2
+execute if block 90075 103 141 minecraft:cauldron run scoreboard players add @s sea_i_trim_human 2
+execute if block 90075 103 137 scaffolding run scoreboard players add @s sea_i_trim_human 2
+execute if block 90075 103 137 grindstone run scoreboard players add @s sea_i_trim_spider 1
+execute if block 90075 103 141 minecraft:cauldron run scoreboard players add @s sea_i_trim_spider 1
+execute if block 90075 103 137 scaffolding run scoreboard players add @s sea_i_trim_spider 2
+execute if block 90075 103 137 grindstone run scoreboard players add @s sea_i_trim_bug 2
+execute if block 90075 103 141 minecraft:cauldron run scoreboard players add @s sea_i_trim_bug 4
+execute if block 90075 103 137 scaffolding run scoreboard players add @s sea_i_trim_bug 4
+execute if block 90075 103 141 minecraft:cauldron run scoreboard players add @s sea_i_trim_skeleton 4
+execute if block 90075 103 137 scaffolding run scoreboard players add @s sea_i_trim_skeleton 4
 
 
 
