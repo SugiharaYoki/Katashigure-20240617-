@@ -134,7 +134,7 @@ execute if score sea_ch4_switch_waterstorage sea_4temp2 matches 20 run playsound
 execute if score sea_ch4_switch_waterstorage sea_4temp2 matches 10 run playsound minecraft:block.note_block.pling block @a 90190.55 38.00 171.99 0.9 0.5
 execute if score sea_ch4_switch_waterstorage sea_4temp2 matches 0 run playsound block.beacon.deactivate block @a 90190.55 38.00 171.99 2 1.3
 
-execute if score sea_ch4_switch_waterstorage sea_4temp2 matches 14 positioned 90186 36 175 unless entity @n[tag=SEAch4_spawn_timer_waterstorage,distance=0..3] run summon marker ~ ~ ~ {Tags:["SEAch4_spawn_timer","SEAch4_spawn_timer_waterstorage"]}
+execute if score sea_ch4_switch_waterstorage sea_4temp2 matches 27 positioned 90186 36 175 unless entity @n[tag=SEAch4_spawn_timer_waterstorage,distance=0..3] run summon marker ~ ~ ~ {Tags:["SEAch4_spawn_timer","SEAch4_spawn_timer_waterstorage"]}
 execute as @n[tag=SEAch4_spawn_timer_waterstorage] at @s run function skyblock:sea/e/ev015_waterstoragebattle
 
 #二楼左
