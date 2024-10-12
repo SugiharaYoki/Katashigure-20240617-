@@ -98,6 +98,16 @@ setblock 90187 11 138 decorated_pot{sherds:["burn_pottery_sherd","burn_pottery_s
 setblock 90181 11 144 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 2, id:"minecraft:gunpowder"}}
 setblock 90186 25 139 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 2, id:"minecraft:golden_carrot"}}
 
+fill 90202 30 175 90202 30 172 air
+fill 90202 30 175 90202 30 174 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 4, id:"minecraft:arrow"}}
+fill 90202 30 173 90202 30 172 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:flint"}}
+setblock 90187 36 174 air
+setblock 90187 36 174 decorated_pot{sherds:["burn_pottery_sherd","burn_pottery_sherd","burn_pottery_sherd","burn_pottery_sherd"],item:{count: 1, id:"minecraft:blaze_powder"}}
+setblock 90194 38 168 air
+setblock 90194 38 168 decorated_pot{sherds:["burn_pottery_sherd","burn_pottery_sherd","burn_pottery_sherd","burn_pottery_sherd"],item:{count: 1, id:"minecraft:blaze_powder"}}
+setblock 90187 34 164 air
+setblock 90187 34 164 decorated_pot{sherds:["burn_pottery_sherd","burn_pottery_sherd","burn_pottery_sherd","burn_pottery_sherd"],item:{count: 1, id:"minecraft:blaze_powder"}}
+
 summon block_display 90184.0 20.65 97.0 {transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[3.8f,0.03f,0.03f],translation:[0f,0f,0f]},block_state:{Name:redstone_block},Rotation:[0f,0f],Tags:["sea_blockdisplay","sea_laser_ch4_1"]}
 summon block_display 90184.0 19.3 93.0 {transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[3.8f,0.03f,0.03f],translation:[0f,0f,0f]},block_state:{Name:redstone_block},Rotation:[0f,0f],Tags:["sea_blockdisplay","sea_laser_ch4_2"]}
 
@@ -156,6 +166,10 @@ fill 90183 20 120 90183 19 120 minecraft:slime_block
 
 setblock 90173 15 161 minecraft:waxed_copper_bulb[lit=false]
 setblock 90179 15 161 minecraft:waxed_copper_bulb[lit=false]
+
+
+fill 90187 37 172 90193 37 171 minecraft:air
+
 
 
 #通往实验区的大电梯
