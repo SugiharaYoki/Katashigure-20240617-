@@ -170,7 +170,10 @@ setblock 90179 15 161 minecraft:waxed_copper_bulb[lit=false]
 
 fill 90187 37 172 90193 37 171 minecraft:air
 
-
+setblock 90192 27 118 chest[facing=south]
+item replace block 90192 27 118 container.11 with carrot 2
+item replace block 90192 27 118 container.13 with raw_iron 1
+item replace block 90192 27 118 container.15 with carrot 2
 
 #通往实验区的大电梯
 fill 90158 36 131 90158 34 129 minecraft:iron_bars
