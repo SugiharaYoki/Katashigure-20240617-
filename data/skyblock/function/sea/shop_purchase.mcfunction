@@ -313,6 +313,32 @@ execute if entity @s[tag=sea_purchase_pass] run give @s bow[custom_name='{"text"
 execute if entity @s[tag=sea_purchase_pass] run clear @s flint 2
 tag @s remove sea_purchase_pass
 
+execute if score @s[nbt={Inventory:[{components:{"minecraft:custom_data":{sea_bow1:true}}}]}] sea_crafter matches 10056 as @s[scores={sea_i_flint=..2}] run tellraw @s {"text":"失败！素材不足！","color":"red"}
+execute if score @s[nbt={Inventory:[{components:{"minecraft:custom_data":{sea_bow1:true}}}]}] sea_crafter matches 10056 as @s[scores={sea_i_flint=3..}] run tag @s add sea_purchase_pass
+execute if entity @s[tag=sea_purchase_pass] run playsound minecraft:item.armor.equip_iron neutral @s ~ ~ ~ 100
+execute if entity @s[tag=sea_purchase_pass] run clear @s bow[custom_data={sea_bow1:true}] 1
+execute if entity @s[tag=sea_purchase_pass] run give @s bow[custom_name='{"text":"复合弓·改","italic":false,"color":"red"}',custom_data={sea_bow2:true},enchantments={punch:2,power:2},unbreakable={},attribute_modifiers=[{type:"generic.movement_speed",slot:"hand",id:"sea_weapon:bow3_01",amount:0.01,operation:"add_value"}]]
+execute if entity @s[tag=sea_purchase_pass] run clear @s flint 3
+tag @s remove sea_purchase_pass
+
+execute if score @s[nbt={Inventory:[{components:{"minecraft:custom_data":{sea_bow2:true}}}]}] sea_crafter matches 10057 as @s[scores={sea_i_flint=..3}] run tellraw @s {"text":"失败！素材不足！","color":"red"}
+execute if score @s[nbt={Inventory:[{components:{"minecraft:custom_data":{sea_bow2:true}}}]}] sea_crafter matches 10057 as @s[scores={sea_i_flint=4..}] run tag @s add sea_purchase_pass
+execute if entity @s[tag=sea_purchase_pass] run playsound minecraft:item.armor.equip_iron neutral @s ~ ~ ~ 100
+execute if entity @s[tag=sea_purchase_pass] run clear @s bow[custom_data={sea_bow2:true}] 1
+execute if entity @s[tag=sea_purchase_pass] run give @s bow[custom_name='{"text":"战略复合弓","italic":false,"color":"red"}',custom_data={sea_bow3:true},enchantments={punch:2,power:3},unbreakable={},attribute_modifiers=[{type:"generic.movement_speed",slot:"hand",id:"sea_weapon:bow3_01",amount:0.02,operation:"add_value"}]]
+execute if entity @s[tag=sea_purchase_pass] run clear @s flint 4
+tag @s remove sea_purchase_pass
+
+execute if score @s[nbt={Inventory:[{components:{"minecraft:custom_data":{sea_bow3:true}}}]}] sea_crafter matches 10058 as @s[scores={sea_i_flint=..5}] run tellraw @s {"text":"失败！素材不足！","color":"red"}
+execute if score @s[nbt={Inventory:[{components:{"minecraft:custom_data":{sea_bow3:true}}}]}] sea_crafter matches 10058 as @s[scores={sea_i_flint=6..}] run tag @s add sea_purchase_pass
+execute if entity @s[tag=sea_purchase_pass] run playsound minecraft:item.armor.equip_iron neutral @s ~ ~ ~ 100
+execute if entity @s[tag=sea_purchase_pass] run clear @s bow[custom_data={sea_bow3:true}] 1
+execute if entity @s[tag=sea_purchase_pass] run give @s bow[custom_name='{"text":"战略复合弓·改","italic":false,"color":"red"}',custom_data={sea_bow4:true},enchantments={punch:3,power:4},unbreakable={},attribute_modifiers=[{type:"generic.movement_speed",slot:"hand",id:"sea_weapon:bow3_01",amount:0.03,operation:"add_value"}]]
+execute if entity @s[tag=sea_purchase_pass] run clear @s flint 6
+tag @s remove sea_purchase_pass
+
+#盾牌升级
+
 execute if score @s[nbt={Inventory:[{components:{"minecraft:custom_data":{sea_shield:true}}}]}] sea_crafter matches 10014 as @s[scores={sea_i_iron_ingot=..1}] run tellraw @s {"text":"失败！素材不足！","color":"red"}
 execute if score @s[nbt={Inventory:[{components:{"minecraft:custom_data":{sea_shield:true}}}]}] sea_crafter matches 10014 as @s[scores={sea_i_iron_ingot=2..,sea_i_flint=..1}] run tellraw @s {"text":"失败！素材不足！","color":"red"}
 execute if score @s[nbt={Inventory:[{components:{"minecraft:custom_data":{sea_shield:true}}}]}] sea_crafter matches 10014 as @s[scores={sea_i_iron_ingot=2..,sea_i_flint=2..}] run tag @s add sea_purchase_pass
