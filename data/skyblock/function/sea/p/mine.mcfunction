@@ -13,9 +13,9 @@ execute if score @s sea_4temp1 matches 8 run playsound minecraft:block.note_bloc
 execute if score @s sea_4temp1 matches 12 run playsound minecraft:block.note_block.harp block @a ~ ~ ~ 1 0.9
 execute if score @s sea_4temp1 matches 16 run playsound minecraft:block.note_block.harp block @a ~ ~ ~ 1 0.9
 execute if score @s sea_4temp1 matches 16 run tellraw @a[distance=0..5] {"text": "祝你有美好的一天！","color": "red"}
-execute if score @s sea_4temp1 matches 20 run particle explosion ~ ~ ~ 1 1 1 0 5
-execute if score @s sea_4temp1 matches 20 run particle explosion_emitter ~ ~ ~ 1 1 1 0.03 5
-execute if score @s sea_4temp1 matches 20 run particle smoke ~ ~ ~ 1.3 1.3 1.3 0.02 30
+execute if score @s sea_4temp1 matches 20 run particle explosion ~ ~ ~ 0.4 0.4 0.4 0 2
+execute if score @s sea_4temp1 matches 20 run particle explosion_emitter ~ ~ ~ 0.7 0.7 0.7 0.03 2
+execute if score @s sea_4temp1 matches 20 run particle smoke ~ ~ ~ 1.3 1.3 1.3 0.02 20
 execute if score @s sea_4temp1 matches 20 run playsound entity.generic.explode hostile @a ~ ~ ~ 1.5 0.9
 execute if score @s sea_4temp1 matches 20 as @e[distance=0..2] run damage @s 38 explosion
 execute if score @s sea_4temp1 matches 20 as @e[distance=0..3] run damage @s 26 explosion
