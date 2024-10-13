@@ -37,6 +37,8 @@ summon minecraft:marker 90191 19 85 {Tags:["SEAcrafter_tp","SEAcrafter_tp11"]}
 summon minecraft:interaction 90176 14.3 164 {CustomName:'[{"text":"多功能工作站"}]',Tags:["SEAcrafter","SEAcrafter_foodless","SEAcrafter12"]}
 summon minecraft:marker 90176 13 163 {Tags:["SEAcrafter_tp","SEAcrafter_tp12"]}
 
+summon minecraft:interaction 90164 14.3 98 {CustomName:'[{"text":"器械式治疗仪"}]',Tags:["SEAaidbox"]}
+
 setblock 90188 14 89 chest[facing=west]
 item replace block 90188 14 89 container.12 with beef 1
 item replace block 90188 14 89 container.14 with beef 1
@@ -215,7 +217,7 @@ setblock 90163 13 102 chest[facing=west]
 item replace block 90163 13 102 container.12 with bread 1
 item replace block 90163 13 102 container.14 with bread 1
 
-
+fill 90185 27 104 90186 27 104 air
 
 
 #最终大厅 第七章入口

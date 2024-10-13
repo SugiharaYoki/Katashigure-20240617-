@@ -248,5 +248,10 @@ execute positioned 90192 27 130 if entity @a[tag=SEAPT,distance=..5.7] unless it
 execute positioned 90170 38 172.0 if entity @a[tag=SEAPT,distance=..5.7] unless items entity @a[tag=SEAPT] container.* heart_of_the_sea unless entity @n[tag=SEAch4_spawn,distance=0..3] positioned ~ ~ ~ run function skyblock:sea/m/zombie_knight
 execute positioned 90170 38 172.0 if entity @a[tag=SEAPT,distance=..5.7] unless items entity @a[tag=SEAPT] container.* heart_of_the_sea unless entity @n[tag=SEAch4_spawn,distance=0..3] run summon marker ~ ~ ~ {Tags:["SEAch4_spawn"]}
 
+execute if block 90187 28 112 lever[powered=true] \
+if block 90187 28 114 lever[powered=false] \
+if block 90187 28 116 lever[powered=true] \
+if block 90187 28 118 lever[powered=false] \
+run function skyblock:sea/e/ev016_roadopener
 
     function skyblock:protector/entity_count_end {function:"skyblock:sea/map_event_i03_slow.mcfunction"}

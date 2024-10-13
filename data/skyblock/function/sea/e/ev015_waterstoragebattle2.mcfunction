@@ -20,5 +20,16 @@ execute as @s[scores={sea_4temp1=67}] run tellraw @a[tag=SEAPT] {"text": "陌生
 execute as @s[scores={sea_4temp1=99}] run tellraw @a[tag=SEAPT] {"text": "陌生的女声：“这是警告，不要再想着接近实验区。”","color": "green"}
 execute as @s[scores={sea_4temp1=130}] run tellraw @a[tag=SEAPT] {"text": "陌生的女声：“不听劝阻的人可不是好孩子。”","color": "green"}
 
-execute as @s[scores={sea_4temp1=13}] positioned 90191 34 156 run function skyblock:sea/m/mine
-execute as @s[scores={sea_4temp1=13}] positioned 90190 34 156 run function skyblock:sea/m/mine
+execute as @s[scores={sea_4temp1=13}] positioned 90191 34 156 unless entity @a[tag=SEAPT,distance=0..6] run function skyblock:sea/m/mine
+execute as @s[scores={sea_4temp1=13}] positioned 90190 34 156 unless entity @a[tag=SEAPT,distance=0..6] run function skyblock:sea/m/mine
+execute as @s[scores={sea_4temp1=13}] positioned 90186 34 125 unless entity @a[tag=SEAPT,distance=0..6] run function skyblock:sea/m/mine
+execute as @s[scores={sea_4temp1=13}] positioned 90181 34 129 unless entity @a[tag=SEAPT,distance=0..6] run function skyblock:sea/m/mine
+execute as @s[scores={sea_4temp1=13}] positioned 90185 27 109 unless entity @a[tag=SEAPT,distance=0..6] run function skyblock:sea/m/mine
+execute as @s[scores={sea_4temp1=13}] positioned 90181 11 155 unless entity @a[tag=SEAPT,distance=0..6] run function skyblock:sea/m/mine
+
+
+execute as @s[scores={sea_4temp1=13}] positioned 90187 27 111 unless entity @a[tag=SEAPT,distance=0..6] run function skyblock:sea/m/drone
+execute as @s[scores={sea_4temp1=13}] positioned 90163 13 153 unless entity @a[tag=SEAPT,distance=0..6] run function skyblock:sea/m/drone
+execute as @s[scores={sea_4temp1=13}] positioned 90182 11 153 unless entity @a[tag=SEAPT,distance=0..6] run function skyblock:sea/m/drone
+
+
