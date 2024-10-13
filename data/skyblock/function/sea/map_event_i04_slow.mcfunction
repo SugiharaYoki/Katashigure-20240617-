@@ -252,6 +252,11 @@ execute if block 90187 28 112 lever[powered=true] \
 if block 90187 28 114 lever[powered=false] \
 if block 90187 28 116 lever[powered=true] \
 if block 90187 28 118 lever[powered=false] \
-run function skyblock:sea/e/ev016_roadopener
+unless entity @n[tag=SEAch4_spawn_timer_leverway] run summon marker ~ ~ ~ {Tags:["SEAch4_spawn_timer","SEAch4_spawn_timer_leverway"]}
+
+execute as @n[tag=SEAch4_spawn_timer_leverway] at @s run function skyblock:sea/e/ev016_roadopener
+
+
+
 
     function skyblock:protector/entity_count_end {function:"skyblock:sea/map_event_i03_slow.mcfunction"}
