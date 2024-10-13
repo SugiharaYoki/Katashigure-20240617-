@@ -219,6 +219,7 @@ item replace block 90163 13 102 container.14 with bread 1
 
 fill 90185 27 104 90186 27 104 air
 
+setblock 90170 35 173 minecraft:air
 
 #最终大厅 第七章入口
 setblock 90154 18 134 minecraft:waxed_copper_bulb[lit=false]
