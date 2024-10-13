@@ -239,14 +239,14 @@ execute if block 90172 39 169 minecraft:crimson_button[powered=true] run functio
 #execute if block 90172 39 169 minecraft:crimson_button[powered=true] run function skyblock:sea/e/ev014_unlockelevator3
 
 
-execute positioned 90172 21 106 as @a[tag=SEAPT,distance=..5.7] unless items entity @s container.* heart_of_the_sea unless entity @n[tag=SEAch4_spawn,distance=0..3] positioned 90172 21 106 run function skyblock:sea/m/zombie_knight
-execute positioned 90172 21 106 as @a[tag=SEAPT,distance=..5.7] unless items entity @s container.* heart_of_the_sea unless entity @n[tag=SEAch4_spawn,distance=0..3] run summon marker ~ ~ ~ {Tags:["SEAch4_spawn"]}
+execute positioned 90172 21 106 if entity @a[tag=SEAPT,distance=..5.7] unless items entity @a[tag=SEAPT] container.* heart_of_the_sea unless entity @n[tag=SEAch4_spawn,distance=0..3] positioned 90172 21 106 run function skyblock:sea/m/zombie_knight
+execute positioned 90172 21 106 if entity @a[tag=SEAPT,distance=..5.7] unless items entity @a[tag=SEAPT] container.* heart_of_the_sea unless entity @n[tag=SEAch4_spawn,distance=0..3] run summon marker ~ ~ ~ {Tags:["SEAch4_spawn"]}
 
-execute positioned 90192 27 130 as @a[tag=SEAPT,distance=..5.7] unless items entity @s container.* heart_of_the_sea unless entity @n[tag=SEAch4_spawn,distance=0..3] positioned ~ ~ ~ run function skyblock:sea/m/zombie_knight
-execute positioned 90192 27 130 as @a[tag=SEAPT,distance=..5.7] unless items entity @s container.* heart_of_the_sea unless entity @n[tag=SEAch4_spawn,distance=0..3] run summon marker ~ ~ ~ {Tags:["SEAch4_spawn"]}
+execute positioned 90192 27 130 if entity @a[tag=SEAPT,distance=..5.7] unless items entity @a[tag=SEAPT] container.* heart_of_the_sea unless entity @n[tag=SEAch4_spawn,distance=0..3] positioned ~ ~ ~ run function skyblock:sea/m/zombie_knight
+execute positioned 90192 27 130 if entity @a[tag=SEAPT,distance=..5.7] unless items entity @a[tag=SEAPT] container.* heart_of_the_sea unless entity @n[tag=SEAch4_spawn,distance=0..3] run summon marker ~ ~ ~ {Tags:["SEAch4_spawn"]}
 
-execute positioned 90170 38 172.0 as @a[tag=SEAPT,distance=..5.7] unless items entity @s container.* heart_of_the_sea unless entity @n[tag=SEAch4_spawn,distance=0..3] positioned ~ ~ ~ run function skyblock:sea/m/zombie_knight
-execute positioned 90170 38 172.0 as @a[tag=SEAPT,distance=..5.7] unless items entity @s container.* heart_of_the_sea unless entity @n[tag=SEAch4_spawn,distance=0..3] run summon marker ~ ~ ~ {Tags:["SEAch4_spawn"]}
+execute positioned 90170 38 172.0 if entity @a[tag=SEAPT,distance=..5.7] unless items entity @a[tag=SEAPT] container.* heart_of_the_sea unless entity @n[tag=SEAch4_spawn,distance=0..3] positioned ~ ~ ~ run function skyblock:sea/m/zombie_knight
+execute positioned 90170 38 172.0 if entity @a[tag=SEAPT,distance=..5.7] unless items entity @a[tag=SEAPT] container.* heart_of_the_sea unless entity @n[tag=SEAch4_spawn,distance=0..3] run summon marker ~ ~ ~ {Tags:["SEAch4_spawn"]}
 
 
     function skyblock:protector/entity_count_end {function:"skyblock:sea/map_event_i03_slow.mcfunction"}
