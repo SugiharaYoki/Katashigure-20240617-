@@ -88,6 +88,7 @@ setblock 90189 11 137 air
 setblock 90187 11 138 air
 setblock 90181 11 144 air
 setblock 90186 25 139 air
+setblock 90161 19 147 air
 setblock 90210 19 112 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:flint"}}
 setblock 90211 19 112 decorated_pot{sherds:["friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd"],item:{count: 3, id:"minecraft:emerald"}}
 setblock 90188 19 109 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 2, id:"minecraft:carrot"}}
@@ -100,6 +101,21 @@ setblock 90189 11 137 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery
 setblock 90187 11 138 decorated_pot{sherds:["burn_pottery_sherd","burn_pottery_sherd","burn_pottery_sherd","burn_pottery_sherd"],item:{count: 1, id:"minecraft:blaze_powder"}}
 setblock 90181 11 144 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 2, id:"minecraft:gunpowder"}}
 setblock 90186 25 139 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 2, id:"minecraft:golden_carrot"}}
+setblock 90161 19 147 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 2, id:"minecraft:potato"}}
+
+#艾德雯娜的护身符
+setblock 90160 19 147 air
+setblock 90160 19 147 decorated_pot{sherds:["mourner_pottery_sherd","mourner_pottery_sherd","mourner_pottery_sherd","mourner_pottery_sherd"],item:{count: 1, id:"minecraft:prismarine_crystals"}}
+setblock 90178 22 118 air
+setblock 90178 22 118 decorated_pot{sherds:["mourner_pottery_sherd","mourner_pottery_sherd","mourner_pottery_sherd","mourner_pottery_sherd"],item:{count: 1, id:"minecraft:prismarine_crystals"}}
+setblock 90189 27 125 air
+setblock 90189 27 125 decorated_pot{sherds:["mourner_pottery_sherd","mourner_pottery_sherd","mourner_pottery_sherd","mourner_pottery_sherd"],item:{count: 1, id:"minecraft:prismarine_crystals"}}
+setblock 90155 12 150 air
+setblock 90155 12 150 decorated_pot{sherds:["mourner_pottery_sherd","mourner_pottery_sherd","mourner_pottery_sherd","mourner_pottery_sherd"],item:{count: 1, id:"minecraft:prismarine_crystals"}}
+setblock 90159 7 105 air
+setblock 90159 7 105 decorated_pot{sherds:["mourner_pottery_sherd","mourner_pottery_sherd","mourner_pottery_sherd","mourner_pottery_sherd"],item:{count: 1, id:"minecraft:prismarine_crystals"}}
+
+
 
 fill 90202 30 175 90202 30 172 air
 fill 90202 30 175 90202 30 174 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 4, id:"minecraft:arrow"}}
@@ -186,6 +202,20 @@ setblock 90182 12 136 minecraft:waxed_exposed_copper_bulb[lit=false]
 summon text_display 90159 36.5 130 {background:0,text:'{"text":"禁止通行 灾害应对","color":"dark_red"}',Rotation:[-90f,0f],shadow:1b}
 setblock 90172 39 169 minecraft:crimson_button[facing=north,face=floor]
 setblock 90171 39 169 minecraft:waxed_exposed_copper_bulb[lit=false]
+
+setblock 90187 28 112 lever[facing=west,powered=false]
+setblock 90187 28 114 lever[facing=west,powered=false]
+setblock 90187 28 116 lever[facing=west,powered=false]
+setblock 90187 28 118 lever[facing=west,powered=false]
+
+setblock 90176 21 102 chest[facing=west]
+item replace block 90176 21 102 container.12 with coal 1
+item replace block 90176 21 102 container.14 with flint 2
+setblock 90163 13 102 chest[facing=west]
+item replace block 90163 13 102 container.12 with bread 1
+item replace block 90163 13 102 container.14 with bread 1
+
+
 
 
 #最终大厅 第七章入口
