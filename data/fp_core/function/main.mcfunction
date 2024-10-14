@@ -20,3 +20,5 @@ function fp_core:listener/ray_trace_listener
 #由于结构优化，physicalDamageListener在state/entity和player函数中
 
 execute as @e[tag=fp_entity] run function fp_core:sys_check
+
+say running main
