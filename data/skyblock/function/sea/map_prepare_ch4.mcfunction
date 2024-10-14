@@ -91,6 +91,7 @@ setblock 90187 11 138 air
 setblock 90181 11 144 air
 setblock 90186 25 139 air
 setblock 90161 19 147 air
+setblock 90181 27 103 air
 setblock 90210 19 112 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:flint"}}
 setblock 90211 19 112 decorated_pot{sherds:["friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd"],item:{count: 3, id:"minecraft:emerald"}}
 setblock 90188 19 109 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 2, id:"minecraft:carrot"}}
@@ -104,6 +105,7 @@ setblock 90187 11 138 decorated_pot{sherds:["burn_pottery_sherd","burn_pottery_s
 setblock 90181 11 144 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 2, id:"minecraft:gunpowder"}}
 setblock 90186 25 139 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 2, id:"minecraft:golden_carrot"}}
 setblock 90161 19 147 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 2, id:"minecraft:potato"}}
+setblock 90181 27 103 decorated_pot{sherds:["friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd"],item:{count: 3, id:"minecraft:emerald"}}
 
 #艾德雯娜的护身符
 setblock 90160 19 147 air
@@ -220,6 +222,11 @@ item replace block 90163 13 102 container.14 with bread 1
 fill 90185 27 104 90186 27 104 air
 
 setblock 90170 35 173 minecraft:air
+
+setblock 90181 28 102 minecraft:potted_cactus
+
+
+
 
 #最终大厅 第七章入口
 setblock 90154 18 134 minecraft:waxed_copper_bulb[lit=false]
