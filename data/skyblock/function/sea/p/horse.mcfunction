@@ -46,6 +46,6 @@ execute as @s[scores={rng3=4}] at @s rotated ~ 0 positioned ^-2 ^ ^-2 if block ~
 
 execute as @s[nbt=!{Fire:-1s}] run playsound entity.zombie_horse.hurt hostile @a ~ ~ ~ 1 1.3
 execute as @s[nbt=!{Fire:-1s}] run playsound entity.generic.burn hostile @a ~ ~ ~ 1 0.8
-execute as @s[nbt=!{Fire:-1s}] run effect give @s instant_health 3 0 true
+execute as @s[nbt=!{Fire:-1s}] run effect give @s instant_health 3 1 true
 
 particle enchant ~ ~1.2 ~ 0.5 0.75 0.5 0.2 4
