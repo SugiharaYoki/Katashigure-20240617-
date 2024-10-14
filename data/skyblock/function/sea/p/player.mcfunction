@@ -7,6 +7,8 @@ clear @s[gamemode=!creative] deepslate_tile_slab
 clear @s[gamemode=!creative] waxed_copper_block
 clear @s[gamemode=!creative] slime_block
 clear @s[gamemode=!creative] string
+execute if items entity @s container.* blaze_powder at @s run function skyblock:sea/p/bomb
+clear @s[gamemode=!creative] blaze_powder
 clear @s[gamemode=!creative] heart_pottery_sherd
 clear @s[gamemode=!creative] burn_pottery_sherd
 clear @s[gamemode=!creative] friend_pottery_sherd
