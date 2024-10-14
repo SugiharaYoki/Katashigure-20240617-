@@ -225,7 +225,8 @@ setblock 90170 35 173 minecraft:air
 
 setblock 90181 28 102 minecraft:potted_cactus
 
-
+setblock 90183 28 93 minecraft:crimson_button[face=floor,facing=west]
+setblock 90183 28 94 minecraft:waxed_exposed_copper_bulb[lit=false]
 
 
 #最终大厅 第七章入口
