@@ -255,7 +255,13 @@ if block 90187 28 116 lever[powered=true] \
 if block 90187 28 118 lever[powered=false] \
 unless entity @n[tag=SEAch4_spawn_timer_leverway] run summon marker ~ ~ ~ {Tags:["SEAch4_spawn_timer","SEAch4_spawn_timer_leverway"]}
 
+execute if block 90159 38 131 minecraft:waxed_exposed_copper_bulb[lit=false] \
+if block 90159 38 130 minecraft:waxed_exposed_copper_bulb[lit=false] \
+if block 90159 38 129 minecraft:waxed_exposed_copper_bulb[lit=false] \
+run summon marker ~ ~ ~ {Tags:["SEAch4_spawn_timer","SEAch4_spawn_timer_largegate"]}
+
 execute as @n[tag=SEAch4_spawn_timer_leverway] at @s run function skyblock:sea/e/ev016_roadopener
+execute as @n[tag=SEAch4_spawn_timer_largegate] at @s run function skyblock:sea/e/ev017_largegate
 
 
 
