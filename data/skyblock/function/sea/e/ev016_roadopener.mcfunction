@@ -13,6 +13,11 @@ execute as @s[scores={sea_4temp1=1}] positioned 90164 34 132 unless entity @a[ta
 execute as @s[scores={sea_4temp1=1}] positioned 90168 34 128 unless entity @a[tag=SEAPT,distance=0..6] run function skyblock:sea/m/drone
 execute as @s[scores={sea_4temp1=1}] positioned 90168 34 132 unless entity @a[tag=SEAPT,distance=0..6] run function skyblock:sea/m/drone
 
+execute as @s[scores={sea_4temp1=1}] positioned 90186 27 91 unless entity @a[tag=SEAPT,distance=0..6] run function skyblock:sea/m/shadow
+execute as @s[scores={sea_4temp1=1}] positioned 90183 27 100 unless entity @a[tag=SEAPT,distance=0..6] run function skyblock:sea/m/zombie_bomb
+execute as @s[scores={sea_4temp1=1}] positioned 90183.0 27 100.7 unless entity @a[tag=SEAPT,distance=0..6] run function skyblock:sea/m/skeleton_melee
+execute as @s[scores={sea_4temp1=1}] positioned 90182.8 27 100 unless entity @a[tag=SEAPT,distance=0..6] run function skyblock:sea/m/skeleton_melee
+
 
 execute as @s[scores={sea_4temp1=67}] if block 90170 35 173 air run tellraw @a[tag=SEAPT] {"text": "陌生的女声：“我已经看到你了。”","color": "green"}
 execute as @s[scores={sea_4temp1=99}] if block 90170 35 173 air run tellraw @a[tag=SEAPT] {"text": "陌生的女声：“这是警告，不要再想着接近实验区。”","color": "green"}
