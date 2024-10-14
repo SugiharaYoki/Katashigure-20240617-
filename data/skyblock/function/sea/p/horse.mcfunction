@@ -1,5 +1,5 @@
 
-execute store result score @s rng1 run random value 2..20
+execute store result score @s rng1 run random value 2..10
 execute store result score @s rng2 run random value 1..8
 scoreboard players remove @s sea_4temp1 1
 
