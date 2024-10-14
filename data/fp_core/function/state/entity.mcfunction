@@ -1,5 +1,3 @@
-#初始化
-function fp_core:init_check
 #实体受伤处理器
 execute if entity @s[tag=physicalDamageListener] run function fp_core:listener/physical_damage_listener/fpc_listener
 #将血量或魔力溢出的玩家设置到上限值
