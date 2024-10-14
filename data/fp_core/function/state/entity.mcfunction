@@ -7,5 +7,3 @@ execute if entity @s if score @s mana > @s m_mana run scoreboard players operati
 tag @s[scores={health=..0}] add EVENT_killself
 #死亡抵抗自然恢复
 execute if entity @s if score @s death_defense < @s m_death_defense run scoreboard players add @s death_defense 5
-
-say running entity
