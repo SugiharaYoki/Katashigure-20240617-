@@ -19,6 +19,7 @@ execute if score @s sea_4temp1 matches 20 run particle explosion ~ ~ ~ 0.4 0.4 0
 execute if score @s sea_4temp1 matches 20 run particle explosion_emitter ~ ~ ~ 0.7 0.7 0.7 0.03 2
 execute if score @s sea_4temp1 matches 20 run particle large_smoke ~ ~ ~ 1.3 1.3 1.3 0.02 20
 execute if score @s sea_4temp1 matches 20 run playsound entity.generic.explode hostile @a ~ ~ ~ 1.5 0.9
+execute if score @s sea_4temp1 matches 20 as @e[distance=0..3] run effect clear @s resistance
 execute if score @s sea_4temp1 matches 20 as @e[distance=0..2] run damage @s 38 explosion
 execute if score @s sea_4temp1 matches 20 as @e[distance=0..3] run damage @s 26 explosion
 execute if score @s sea_4temp1 matches 20 as @e[distance=0..4] run damage @s 14 explosion
