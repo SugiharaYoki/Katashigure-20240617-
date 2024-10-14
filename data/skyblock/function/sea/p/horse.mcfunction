@@ -3,7 +3,7 @@ execute store result score @s rng1 run random value 2..20
 execute store result score @s rng2 run random value 1..8
 scoreboard players remove @s sea_4temp1 1
 
-execute as @s[scores={rng1=1..3,sea_4temp1=..10}] at @s if entity @a[tag=SEAPT,distance=0..9] run scoreboard players set @s sea_4temp1 40
+execute as @s[scores={rng1=1..4,sea_4temp1=..10}] at @s if entity @a[tag=SEAPT,distance=0..9] run scoreboard players set @s sea_4temp1 40
 
 
 execute as @s[scores={sea_4temp1=39}] run playsound entity.zombie_horse.ambient hostile @a ~ ~ ~ 1 0.8
