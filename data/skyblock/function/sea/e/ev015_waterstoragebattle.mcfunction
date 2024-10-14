@@ -9,12 +9,12 @@ execute as @s[scores={sea_4temp1=1..10}] positioned 90186 36 178 run particle tr
 execute as @s[scores={sea_4temp1=1..10}] positioned 90186 36 178 run particle sculk_soul ~ ~1 ~ 0.3 0.5 0.3 0.05 10
 execute as @s[scores={sea_4temp1=11}] positioned 90186 36 178 run function skyblock:sea/m/skeleton
 
-execute as @s[scores={sea_4temp1=41..50}] positioned 90186 36 174 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
-execute as @s[scores={sea_4temp1=4..50}] positioned 90186 36 174 run particle sculk_soul ~ ~1 ~ 0.3 0.5 0.3 0.05 10
-execute as @s[scores={sea_4temp1=51}] positioned 90186 36 174 run function skyblock:sea/m/skeleton
-execute as @s[scores={sea_4temp1=41..50}] positioned 90186 36 177 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
-execute as @s[scores={sea_4temp1=41..50}] positioned 90186 36 177 run particle sculk_soul ~ ~1 ~ 0.3 0.5 0.3 0.05 10
-execute as @s[scores={sea_4temp1=51}] positioned 90186 36 177 run function skyblock:sea/m/skeleton
+execute as @s[scores={sea_4temp1=81..90}] positioned 90186 36 174 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
+execute as @s[scores={sea_4temp1=81..90}] positioned 90186 36 174 run particle sculk_soul ~ ~1 ~ 0.3 0.5 0.3 0.05 10
+execute as @s[scores={sea_4temp1=91}] positioned 90186 36 174 run function skyblock:sea/m/skeleton
+execute as @s[scores={sea_4temp1=81..90}] positioned 90186 36 177 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
+execute as @s[scores={sea_4temp1=81..90}] positioned 90186 36 177 run particle sculk_soul ~ ~1 ~ 0.3 0.5 0.3 0.05 10
+execute as @s[scores={sea_4temp1=91}] positioned 90186 36 177 run function skyblock:sea/m/skeleton
 
 execute as @s[scores={sea_4temp1=21..30}] positioned 90195 38 172 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
 execute as @s[scores={sea_4temp1=21..30}] positioned 90195 38 172 run particle sculk_soul ~ ~1 ~ 0.3 0.5 0.3 0.05 10
@@ -37,9 +37,9 @@ execute as @s[scores={sea_4temp1=25}] positioned 90186 34 170 run function skybl
 execute as @s[scores={sea_4temp1=16..25}] positioned 90186 34 167 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
 execute as @s[scores={sea_4temp1=16..25}] positioned 90186 34 167 run particle sculk_soul ~ ~1 ~ 0.3 0.5 0.3 0.05 10
 execute as @s[scores={sea_4temp1=26}] positioned 90186 34 167 run function skyblock:sea/m/skeleton
-execute as @s[scores={sea_4temp1=17..26}] positioned 90186 34 164 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
-execute as @s[scores={sea_4temp1=17..26}] positioned 90186 34 164 run particle sculk_soul ~ ~1 ~ 0.3 0.5 0.3 0.05 10
-execute as @s[scores={sea_4temp1=27}] positioned 90186 34 164 run function skyblock:sea/m/skeleton
+execute as @s[scores={sea_4temp1=67..76}] positioned 90186 34 164 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
+execute as @s[scores={sea_4temp1=67..76}] positioned 90186 34 164 run particle sculk_soul ~ ~1 ~ 0.3 0.5 0.3 0.05 10
+execute as @s[scores={sea_4temp1=77}] positioned 90186 34 164 run function skyblock:sea/m/skeleton
 
 
 execute as @s[scores={sea_4temp1=21..30}] positioned 90189 34 161 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
@@ -49,9 +49,9 @@ execute as @s[scores={sea_4temp1=21..30}] positioned 90192 34 161 run particle t
 execute as @s[scores={sea_4temp1=21..30}] positioned 90192 34 161 run particle sculk_soul ~ ~1 ~ 0.3 0.5 0.3 0.05 10
 execute as @s[scores={sea_4temp1=31}] positioned 90192 34 161 run function skyblock:sea/m/zombie_security2
 
-execute as @s[scores={sea_4temp1=51..60}] positioned 90189 34 161 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
-execute as @s[scores={sea_4temp1=51..60}] positioned 90189 34 161 run particle sculk_soul ~ ~1 ~ 0.3 0.5 0.3 0.05 10
-execute as @s[scores={sea_4temp1=61}] positioned 90189 34 161 run function skyblock:sea/m/zombie_security2
-execute as @s[scores={sea_4temp1=51..60}] positioned 90192 34 161 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
-execute as @s[scores={sea_4temp1=51..60}] positioned 90192 34 161 run particle sculk_soul ~ ~1 ~ 0.3 0.5 0.3 0.05 10
-execute as @s[scores={sea_4temp1=61}] positioned 90192 34 161 run function skyblock:sea/m/zombie_security2
+execute as @s[scores={sea_4temp1=91..100}] positioned 90189 34 161 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
+execute as @s[scores={sea_4temp1=91..100}] positioned 90189 34 161 run particle sculk_soul ~ ~1 ~ 0.3 0.5 0.3 0.05 10
+execute as @s[scores={sea_4temp1=101}] positioned 90189 34 161 run function skyblock:sea/m/zombie_security2
+execute as @s[scores={sea_4temp1=91..100}] positioned 90192 34 161 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
+execute as @s[scores={sea_4temp1=91..100}] positioned 90192 34 161 run particle sculk_soul ~ ~1 ~ 0.3 0.5 0.3 0.05 10
+execute as @s[scores={sea_4temp1=101}] positioned 90192 34 161 run function skyblock:sea/m/zombie_security2
