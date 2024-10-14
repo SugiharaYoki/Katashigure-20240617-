@@ -1,6 +1,7 @@
 
 execute store result score @s rng1 run random value 2..10
 execute store result score @s rng2 run random value 1..8
+execute store result score @s rng3 run random value 1..12
 scoreboard players remove @s sea_4temp1 1
 
 execute as @s[scores={rng1=1..4,sea_4temp1=..19}] at @s if entity @a[tag=SEAPT,distance=0..9] run scoreboard players set @s sea_4temp1 40
@@ -24,6 +25,23 @@ execute as @s[scores={sea_4temp1=20,rng2=7}] at @s rotated ~ 0 positioned ^1 ^ ^
 execute as @s[scores={sea_4temp1=20,rng2=8}] at @s rotated ~ 0 positioned ^-1 ^ ^ if block ~ ~ ~ air run summon marker ~ ~ ~ {Tags:["SEAhorse_summoner"]}
 
 
+execute as @s[scores={rng3=1}] at @s rotated ~ 0 positioned ^ ^ ^1 if block ~ ~ ~ air run summon evoker_fangs
+execute as @s[scores={rng3=1}] at @s rotated ~ 0 positioned ^ ^ ^-1 if block ~ ~ ~ air run summon evoker_fangs
+execute as @s[scores={rng3=1}] at @s rotated ~ 0 positioned ^1 ^ ^ if block ~ ~ ~ air run summon evoker_fangs
+execute as @s[scores={rng3=1}] at @s rotated ~ 0 positioned ^-1 ^ ^ if block ~ ~ ~ air run summon evoker_fangs
+execute as @s[scores={rng3=3}] at @s rotated ~ 0 positioned ^1 ^ ^1 if block ~ ~ ~ air run summon evoker_fangs
+execute as @s[scores={rng3=3}] at @s rotated ~ 0 positioned ^-1 ^ ^1 if block ~ ~ ~ air run summon evoker_fangs
+execute as @s[scores={rng3=3}] at @s rotated ~ 0 positioned ^1 ^ ^-1 if block ~ ~ ~ air run summon evoker_fangs
+execute as @s[scores={rng3=3}] at @s rotated ~ 0 positioned ^-1 ^ ^-1 if block ~ ~ ~ air run summon evoker_fangs
+
+execute as @s[scores={rng3=2}] at @s rotated ~ 0 positioned ^ ^ ^2 if block ~ ~ ~ air run summon evoker_fangs
+execute as @s[scores={rng3=2}] at @s rotated ~ 0 positioned ^ ^ ^-2 if block ~ ~ ~ air run summon evoker_fangs
+execute as @s[scores={rng3=2}] at @s rotated ~ 0 positioned ^2 ^ ^ if block ~ ~ ~ air run summon evoker_fangs
+execute as @s[scores={rng3=2}] at @s rotated ~ 0 positioned ^-2 ^ ^ if block ~ ~ ~ air run summon evoker_fangs
+execute as @s[scores={rng3=4}] at @s rotated ~ 0 positioned ^2 ^ ^2 if block ~ ~ ~ air run summon evoker_fangs
+execute as @s[scores={rng3=4}] at @s rotated ~ 0 positioned ^-2 ^ ^2 if block ~ ~ ~ air run summon evoker_fangs
+execute as @s[scores={rng3=4}] at @s rotated ~ 0 positioned ^2 ^ ^-2 if block ~ ~ ~ air run summon evoker_fangs
+execute as @s[scores={rng3=4}] at @s rotated ~ 0 positioned ^-2 ^ ^-2 if block ~ ~ ~ air run summon evoker_fangs
 
 
 execute as @s[nbt=!{Fire:-1s}] run playsound entity.zombie_horse.hurt hostile @a ~ ~ ~ 1 1.3
