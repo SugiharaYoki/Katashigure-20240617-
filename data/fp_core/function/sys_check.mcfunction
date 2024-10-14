@@ -1,3 +1,8 @@
+#数值处理和初始化
+function fp_core:init_check
+execute unless entity @s[type=player] run function fp_core:state/entity
+execute if entity @s[type=player] run function fp_core:state/player
+
 #listener
 #通过tag控制是否监听
 #拥有tag的实体将自动监听并触发指定函数
@@ -47,10 +52,6 @@ execute if entity @s[tag=DUST_glow] at @s run particle end_rod ~ ~ ~ 0 0 0 0 1 f
 execute if entity @s[tag=DUST_falling_glow] at @s run particle end_rod ~ ~ ~ 0 -2 0 1 0 force
 execute if entity @s[tag=DUST_blue_light] at @s run particle dust{color:[0.561f,0.949f,1f],scale:0.2f} ~ ~ ~ 0.05 0.05 0.05 0 10 force
 
-#数值处理和初始化
-function fp_core:init_check
-execute unless entity @s[type=player] run function fp_core:state/entity
-execute if entity @s[type=player] run function fp_core:state/player
 #生存时间
 scoreboard players remove @s[scores={fp_life=1..}] fp_life 1
 tag @s[scores={fp_life=..0}] add EVENT_killself
