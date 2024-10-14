@@ -13,7 +13,7 @@ execute if entity @s[tag=damageListener,tag=EVENT_damage] at @s run function fp_
 execute if entity @s[tag=targetListener] at @s run function fp_core:listener/target_listener
 execute if entity @s[tag=effectListener] at @s run function fp_core:listener/effect_listener
 execute if entity @s[tag=globalListener] at @s run function fp_core:listener/global_listener
-#execute if entity @s[tag=exceptionListener] at @s run function fp_core:listener/exception_listener
+execute if entity @s[tag=exceptionListener] at @s run function fp_core:listener/exception_listener
 execute if entity @s[tag=timerListener] at @s run function fp_core:listener/timer_listener
 
 #event
