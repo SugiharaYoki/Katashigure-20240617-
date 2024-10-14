@@ -14,14 +14,14 @@ execute as @s[scores={sea_4temp1=29}] run attribute @s generic.movement_speed ba
 execute as @s[scores={sea_4temp1=30}] run attribute @s generic.armor base set 0
 execute as @s[scores={sea_4temp1=29}] run attribute @s generic.armor base set 10.0
 
-execute as @s[scores={sea_4temp1=20,rng2=1}] rotated ~ 0 positioned ^ ^ ^3 if block ~ ~ ~ air run summon marker ~ ~ ~ {Tags:["SEAhorse_summoner"]}
-execute as @s[scores={sea_4temp1=20,rng2=2}] rotated ~ 0 positioned ^ ^ ^-3 if block ~ ~ ~ air run summon marker ~ ~ ~ {Tags:["SEAhorse_summoner"]}
-execute as @s[scores={sea_4temp1=20,rng2=3}] rotated ~ 0 positioned ^3 ^ ^3 if block ~ ~ ~ air run summon marker ~ ~ ~ {Tags:["SEAhorse_summoner"]}
-execute as @s[scores={sea_4temp1=20,rng2=4}] rotated ~ 0 positioned ^-3 ^ ^3 if block ~ ~ ~ air run summon marker ~ ~ ~ {Tags:["SEAhorse_summoner"]}
-execute as @s[scores={sea_4temp1=20,rng2=5}] rotated ~ 0 positioned ^3 ^ ^-3 if block ~ ~ ~ air run summon marker ~ ~ ~ {Tags:["SEAhorse_summoner"]}
-execute as @s[scores={sea_4temp1=20,rng2=6}] rotated ~ 0 positioned ^-3 ^ ^-3 if block ~ ~ ~ air run summon marker ~ ~ ~ {Tags:["SEAhorse_summoner"]}
-execute as @s[scores={sea_4temp1=20,rng2=7}] rotated ~ 0 positioned ^3 ^ ^ if block ~ ~ ~ air run summon marker ~ ~ ~ {Tags:["SEAhorse_summoner"]}
-execute as @s[scores={sea_4temp1=20,rng2=8}] rotated ~ 0 positioned ^-3 ^ ^ if block ~ ~ ~ air run summon marker ~ ~ ~ {Tags:["SEAhorse_summoner"]}
+execute as @s[scores={sea_4temp1=20,rng2=1}] at @s rotated ~ 0 positioned ^ ^ ^3 if block ~ ~ ~ air run summon marker ~ ~ ~ {Tags:["SEAhorse_summoner"]}
+execute as @s[scores={sea_4temp1=20,rng2=2}] at @s rotated ~ 0 positioned ^ ^ ^-3 if block ~ ~ ~ air run summon marker ~ ~ ~ {Tags:["SEAhorse_summoner"]}
+execute as @s[scores={sea_4temp1=20,rng2=3}] at @s rotated ~ 0 positioned ^3 ^ ^3 if block ~ ~ ~ air run summon marker ~ ~ ~ {Tags:["SEAhorse_summoner"]}
+execute as @s[scores={sea_4temp1=20,rng2=4}] at @s rotated ~ 0 positioned ^-3 ^ ^3 if block ~ ~ ~ air run summon marker ~ ~ ~ {Tags:["SEAhorse_summoner"]}
+execute as @s[scores={sea_4temp1=20,rng2=5}] at @s rotated ~ 0 positioned ^3 ^ ^-3 if block ~ ~ ~ air run summon marker ~ ~ ~ {Tags:["SEAhorse_summoner"]}
+execute as @s[scores={sea_4temp1=20,rng2=6}] at @s rotated ~ 0 positioned ^-3 ^ ^-3 if block ~ ~ ~ air run summon marker ~ ~ ~ {Tags:["SEAhorse_summoner"]}
+execute as @s[scores={sea_4temp1=20,rng2=7}] at @s rotated ~ 0 positioned ^3 ^ ^ if block ~ ~ ~ air run summon marker ~ ~ ~ {Tags:["SEAhorse_summoner"]}
+execute as @s[scores={sea_4temp1=20,rng2=8}] at @s rotated ~ 0 positioned ^-3 ^ ^ if block ~ ~ ~ air run summon marker ~ ~ ~ {Tags:["SEAhorse_summoner"]}
 
 
 
