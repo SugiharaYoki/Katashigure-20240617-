@@ -236,7 +236,7 @@ execute positioned 90164 13 99 if entity @a[tag=SEAPT,distance=..6.7] unless ent
 
 execute if block 90183 12 136 minecraft:crimson_button[powered=true] run function skyblock:sea/e/ev014_unlockelevator1
 execute if block 90172 39 169 minecraft:crimson_button[powered=true] run function skyblock:sea/e/ev014_unlockelevator2
-execute if block 90183 28 93 minecraft:crimson_button[powered=true] run function skyblock:sea/e/ev014_unlockelevator2
+execute if block 90183 28 93 minecraft:crimson_button[powered=true] run function skyblock:sea/e/ev014_unlockelevator3
 #execute if block 90172 39 169 minecraft:crimson_button[powered=true] run function skyblock:sea/e/ev014_unlockelevator3
 
 
