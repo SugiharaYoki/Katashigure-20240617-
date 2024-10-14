@@ -124,15 +124,15 @@ execute positioned 90185 19 130 if entity @a[tag=SEAPT,distance=..4.7] unless en
 execute positioned 90185 19 130 if entity @a[tag=SEAPT,distance=..4.7] unless entity @n[tag=SEAch4_spawn,distance=0..3] run summon marker ~ ~ ~ {Tags:["SEAch4_spawn"]}
 
 #
-execute if block 90192 34 181 stone_button[powered=true] if score sea_ch4_switch_waterstorage sea_4temp2 matches ..0 run scoreboard players set sea_ch4_switch_waterstorage sea_4temp2 43
+execute if block 90192 34 181 stone_button[powered=true] if score sea_ch4_switch_waterstorage sea_4temp2 matches ..0 run scoreboard players set sea_ch4_switch_waterstorage sea_4temp2 41
 execute if score sea_ch4_switch_waterstorage sea_4temp2 matches 0.. run scoreboard players remove sea_ch4_switch_waterstorage sea_4temp2 1
-execute if score sea_ch4_switch_waterstorage sea_4temp2 matches 42 run playsound block.beacon.activate block @a 90190.55 38.00 171.99 2 1.5
-execute if score sea_ch4_switch_waterstorage sea_4temp2 matches 28 run fill 90187 37 172 90193 37 171 minecraft:lime_stained_glass
-execute if score sea_ch4_switch_waterstorage sea_4temp2 matches 14 run fill 90187 37 172 90193 37 171 minecraft:red_stained_glass
+execute if score sea_ch4_switch_waterstorage sea_4temp2 matches 40 run playsound block.beacon.activate block @a 90190.55 38.00 171.99 2 1.5
+execute if score sea_ch4_switch_waterstorage sea_4temp2 matches 40 run fill 90187 37 172 90193 37 171 minecraft:lime_stained_glass
+execute if score sea_ch4_switch_waterstorage sea_4temp2 matches 30 run fill 90187 37 172 90193 37 171 minecraft:red_stained_glass
 execute if score sea_ch4_switch_waterstorage sea_4temp2 matches 0 run fill 90187 37 172 90193 37 171 minecraft:air
-execute if score sea_ch4_switch_waterstorage sea_4temp2 matches 42 run playsound minecraft:block.note_block.pling block @a 90190.55 38.00 171.99 0.9 0.5
-execute if score sea_ch4_switch_waterstorage sea_4temp2 matches 28 run playsound minecraft:block.note_block.pling block @a 90190.55 38.00 171.99 0.9 0.5
-execute if score sea_ch4_switch_waterstorage sea_4temp2 matches 14 run playsound minecraft:block.note_block.pling block @a 90190.55 38.00 171.99 0.9 0.5
+execute if score sea_ch4_switch_waterstorage sea_4temp2 matches 30 run playsound minecraft:block.note_block.pling block @a 90190.55 38.00 171.99 0.9 0.5
+execute if score sea_ch4_switch_waterstorage sea_4temp2 matches 20 run playsound minecraft:block.note_block.pling block @a 90190.55 38.00 171.99 0.9 0.5
+execute if score sea_ch4_switch_waterstorage sea_4temp2 matches 10 run playsound minecraft:block.note_block.pling block @a 90190.55 38.00 171.99 0.9 0.5
 execute if score sea_ch4_switch_waterstorage sea_4temp2 matches 0 run playsound block.beacon.deactivate block @a 90190.55 38.00 171.99 2 1.3
 
 execute if score sea_ch4_switch_waterstorage sea_4temp2 matches 32 positioned 90186 36 175 unless entity @n[tag=SEAch4_spawn_timer_waterstorage,distance=0..3] run summon marker ~ ~ ~ {Tags:["SEAch4_spawn_timer","SEAch4_spawn_timer_waterstorage"]}
