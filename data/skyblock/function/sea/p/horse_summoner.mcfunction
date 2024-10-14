@@ -10,3 +10,5 @@ execute as @s[scores={sea_4temp1=11,rng1=7..9}] run function skyblock:sea/m/cave
 execute as @s[scores={sea_4temp1=11,rng1=10}] run function skyblock:sea/m/magma
 execute as @s[scores={sea_4temp1=11}] run kill @s
 execute unless entity @n[type=zombie_horse,distance=0..8] run kill @s
+
+scoreboard players add @s sea_4temp1 1

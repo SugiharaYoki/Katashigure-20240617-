@@ -46,7 +46,7 @@ execute if block 90075 103 141 minecraft:cauldron positioned 90079 105 143 if en
 
 execute as @e[type=zombie,tag=SEAknight,x=90000,y=100,z=100,distance=..3000] at @s if entity @a[tag=SEAPT,distance=0..8] run function skyblock:sea/p/knight
 execute as @e[type=zombie_horse,tag=SEAhorse,x=90000,y=100,z=100,distance=..3000] at @s if entity @a[tag=SEAPT,distance=0..8] run function skyblock:sea/p/horse
-execute as @e[tag=SEAhorse_summoner,type=marker,x=90000,y=100,z=100,distance=..3000] at @s if entity @a[tag=SEAPT,distance=0..8] run scoreboard players add @s sea_4temp1 1
+execute as @e[tag=SEAhorse_summoner,type=marker,x=90000,y=100,z=100,distance=..3000] at @s run function skyblock:sea/p/horse_summoner
 
 
 execute as @n[tag=sc] unless entity @s[scores={sea_4temp1=-9999..}] run scoreboard players set @s sea_4temp1 -1
