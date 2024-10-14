@@ -34,11 +34,11 @@ execute if data entity @s {Passengers:[{id:"minecraft:marker",Tags:["init"],data
 execute if data entity @s {Passengers:[{id:"minecraft:marker",Tags:["init"],data:{friend:true}}]} run tag @s add festering_friend
 tag @s[tag=!IGNORE_creature] add creature
 #init end
-execute on vehicle run tag @s[type=marker,tag=init] add temp_init
-execute on vehicle run tag @s[tag=temp_init] remove init
-execute on vehicle run tag @s[tag=temp_init] add entityData
+execute on passengers run tag @s[type=marker,tag=init] add temp_init
+execute on passengers run tag @s[tag=temp_init] remove init
+execute on passengers run tag @s[tag=temp_init] add entityData
 data remove entity @s[tag=temp_init] data.scores
-execute on vehicle run tag @s[tag=temp_init] remove temp_init
+execute on passengers run tag @s[tag=temp_init] remove temp_init
 #setup entity
 data modify entity @s attributes[{id:"minecraft:generic.max_health"}].base set value 1024
 data modify entity @s Health set value 1024
