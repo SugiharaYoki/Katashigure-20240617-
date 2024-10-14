@@ -37,6 +37,6 @@ function fp_core:funcs/tree/run/depth_1/1_6561
 scoreboard players reset Tree.run.target function_memory
 #    scoreboard players reset Tree.run.illegal_parameter function_memory
 #    scoreboard players reset Tree.run.out_of_range function_memory
-data remove storage festering:functions Tree[{id:"run"}]
+data remove storage festering:functions Tree[{id:"run"}].argument.target
 
 
