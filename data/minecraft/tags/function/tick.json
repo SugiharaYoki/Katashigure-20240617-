@@ -1,8 +1,8 @@
 {
     "values": [
+        "fp_core:application/main",
         "skyblock:azr/main",
         "skyblock:cmd/cmd_main",
-        "fp_core:main",
         "24_point_da651c:tick"
     ]
 }

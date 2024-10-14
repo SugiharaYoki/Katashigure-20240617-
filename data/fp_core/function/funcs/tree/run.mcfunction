@@ -10,7 +10,7 @@
 #void Tree.run(int target)
 
 
-#    scoreboard players operation Tree.run.exception_occured_0 function_memory = fp:exception_occured fp_system
+#    scoreboard players operation Tree.run.exception_occured_0 function_memory = exception_occured fp_system
 #    fp_core:exception/ null arguments
 #    execute unless data storage festering:functions Tree[{id:"run"}].argument.target run function fp_core:exception/system/null_arguments
 #    fp_core:exception/ illegal parameter
@@ -20,7 +20,7 @@
 #    this function has no overloading
 #initialize
 execute store result score Tree.run.target function_memory run data get storage festering:functions Tree[{id:"run"}].argument.target
-#    scoreboard players operation Tree.run.exception_occured_1 function_memory = fp:exception_occured fp_system
+#    scoreboard players operation Tree.run.exception_occured_1 function_memory = exception_occured fp_system
 #    scoreboard players operation Tree.run.exception_occured_1 function_memory -= Tree.run.exception_occured_0 function_memory
 #    execute if score Tree.run.exception_occured_1 function_memory matches 0 store result score Tree.run.illegal_parameter function_memory run data get storage festering:functions Tree[{id:"run"}].argument.target
 #    execute if score Tree.run.exception_occured_1 function_memory matches 0 store result score Tree.run.target function_memory run data get storage festering:functions Tree[{id:"run"}].argument.target
