@@ -8,3 +8,5 @@ execute as @s[scores={sea_4temp1=11,rng1=1..4}] run function skyblock:sea/m/drow
 execute as @s[scores={sea_4temp1=11,rng1=5..6}] run function skyblock:sea/m/silverfish
 execute as @s[scores={sea_4temp1=11,rng1=7..9}] run function skyblock:sea/m/cave_spider_small
 execute as @s[scores={sea_4temp1=11,rng1=10}] run function skyblock:sea/m/magma
+execute as @s[scores={sea_4temp1=11}] run kill @s
+execute unless entity @n[type=zombie_horse,distance=0..8] run kill @s
