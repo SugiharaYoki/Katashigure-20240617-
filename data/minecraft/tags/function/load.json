@@ -2,6 +2,7 @@
     "values": [
         "skyblock:load",
         "skyblock:cmd/cmd_init",
+        "fp_core:setup",
         "24_point_da651c:load"
     ]
 }

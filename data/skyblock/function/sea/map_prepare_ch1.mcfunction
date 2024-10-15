@@ -470,7 +470,7 @@ fill 90149 122 254 90149 121 254 minecraft:slime_block
 
 setblock 90073 103 141 air
 scoreboard players set SEAchg_spawn_timer_longbridge sea_4temp2 0
-
+setblock 90077 129 152 air
 
 
 summon text_display 90165 105 114.0 {background:7631988,text:'{"text":"轻按跳跃使用电梯","color":"aqua"}',Rotation:[90f,0f],shadow:1b,text_opacity:200}
@@ -479,6 +479,8 @@ summon text_display 90165 129 114.0 {background:7631988,text:'{"text":"轻按跳
 summon text_display 90074.0 105 164 {background:7631988,text:'{"text":"轻按跳跃使用电梯","color":"aqua"}',Rotation:[180f,0f],shadow:1b,text_opacity:200}
 summon text_display 90074.0 129 164 {background:7631988,text:'{"text":"轻按跳跃使用电梯","color":"aqua"}',Rotation:[180f,0f],shadow:1b,text_opacity:200}
 
+setblock 90068 128 136 chest[facing=west]
+item replace block 90068 128 136 container.13 with fire_charge[custom_name='{"text":"定时炸弹","italic":true,"color":"blue","italic":false}',lore=['{"text":"它会在你丢出去3秒后爆炸！","color":"white","italic":false}','{"text":"炸到自己的话，职业生涯就会结束了吧。","color":"white","italic":false}','{"text":"可用于破坏凝胶壁障与瓦罐。","color":"white","italic":false}']] 1
 
 
 function skyblock:protector/entity_count_end {function:"slyblock:sea/map_prepare_ch1"}
