@@ -76,7 +76,7 @@ scoreboard players set @n[tag=SEAherb] sea_4temp1 1
 execute positioned 90159 11 115 run function skyblock:sea/m/drone
 execute positioned 90161 11 115 run function skyblock:sea/m/drone
 
-
+fill 90191 37 139 90190 34 139 minecraft:lime_stained_glass
 
 setblock 90210 19 112 air
 setblock 90211 19 112 air
