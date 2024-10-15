@@ -6,8 +6,16 @@ execute if score breakpoint fp_system matches 0 run return 1
 
 #数值处理和初始化
 function fp_core:init_check
+
+execute if score breakpoint fp_system matches 5 run return 1
+
 execute unless entity @s[type=player] run function fp_core:state/entity
+
+execute if score breakpoint fp_system matches 6 run return 1
+
 execute if entity @s[type=player] run function fp_core:state/player
+
+execute if score breakpoint fp_system matches 7 run return 1
 
 execute if score breakpoint fp_system matches 1 run return 1
 
