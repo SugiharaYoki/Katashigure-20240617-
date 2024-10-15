@@ -34,7 +34,7 @@ execute if data entity @s {data:{enemy:true}} run tag @s add festering_enemy
 execute if data entity @s {data:{friend:true}} run tag @s add festering_friend
 tag @s[tag=!IGNORE_creature] add creature
 #init end
-tag @s remove self_init
+tag @s remove init_self
 tag @s add markerData
 data remove entity @s data.scores
 #setup entity
