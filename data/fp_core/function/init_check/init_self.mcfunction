@@ -40,7 +40,7 @@ data remove entity @s data.scores
 #setup entity
 data modify entity @s attributes[{id:"minecraft:generic.max_health"}].base set value 1024
 data merge entity @s {CustomNameVisible:1b}
-tag @s add displayListener
-tag @s add physicalDamageListener
+tag @s[tag=!IGNORE_displayListener] add displayListener
+tag @s[tag=!IGNORE_physicalDamageListener] add physicalDamageListener
 function fp_core:listener/init_listener
 function fp_core:show_state
