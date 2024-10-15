@@ -43,7 +43,7 @@ execute on passengers run tag @s[tag=temp_init] remove temp_init
 data modify entity @s attributes[{id:"minecraft:generic.max_health"}].base set value 1024
 data modify entity @s Health set value 1024
 data merge entity @s {CustomNameVisible:1b}
-tag @s add displayListener
-tag @s add physicalDamageListener
+tag @s[tag=!IGNORE_displayListener] add displayListener
+tag @s[tag=!IGNORE_physicalDamageListener] add physicalDamageListener
 function fp_core:show_state
 function fp_core:listener/init_listener
