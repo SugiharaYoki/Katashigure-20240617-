@@ -30,5 +30,7 @@ execute as @s[scores={sea_4temp1=1}] positioned 90150 44 129 run function skyblo
 execute as @s[scores={sea_4temp1=1}] positioned 90152 44 131 run function skyblock:sea/m/mine
 execute as @s[scores={sea_4temp1=1}] positioned 90150 44 131 run function skyblock:sea/m/mine
 execute as @s[scores={sea_4temp1=1}] positioned 90152 44 129 run function skyblock:sea/m/mine
+execute as @s[scores={sea_4temp1=1}] positioned 90170 45 123 run tp @n[tag=SEAherb] ~ ~ ~
+
 
 
