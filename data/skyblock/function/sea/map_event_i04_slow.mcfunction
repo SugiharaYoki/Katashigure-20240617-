@@ -158,7 +158,7 @@ execute if block 90197 35 129 minecraft:crimson_button[powered=true] run setbloc
 
 #二楼右
 execute if block 90180 35 137 minecraft:crimson_button[powered=true] positioned 90180 35 139 if block ~ ~ ~ minecraft:magenta_glazed_terracotta[facing=north] run setblock ~ ~ ~ minecraft:magenta_glazed_terracotta[facing=west]
-execute if block 90180 35 137 minecraft:crimson_button[powered=true] run setblock 90180 35 137 minecraft:warped_button[facing=south,face=floor,powered=false]
+execute if block 90180 35 137 minecraft:crimson_button[powered=true] run setblock 90180 35 137 air
 
 execute if block 90184 35 137 minecraft:crimson_button[powered=true] positioned 90184 37 139 if block ~ ~ ~ minecraft:magenta_glazed_terracotta[facing=north] run setblock ~ ~ ~ gray_concrete
 execute if block 90184 35 137 minecraft:crimson_button[powered=true] positioned 90184 37 139 if block ~ ~ ~ minecraft:magenta_glazed_terracotta[facing=west] run setblock ~ ~ ~ minecraft:magenta_glazed_terracotta[facing=north]
@@ -183,7 +183,7 @@ execute unless block 90180 35 139 minecraft:magenta_glazed_terracotta[facing=wes
 
 #竖井2F
 execute if block 90191 28 122 minecraft:crimson_button[powered=true] positioned 90189 28 122 if block ~ ~ ~ minecraft:magenta_glazed_terracotta[facing=north] run setblock ~ ~ ~ minecraft:magenta_glazed_terracotta[facing=west]
-execute if block 90191 28 122 minecraft:crimson_button[powered=true] run setblock 90191 28 122 minecraft:warped_button[facing=west,face=floor,powered=false]
+execute if block 90191 28 122 minecraft:crimson_button[powered=true] run setblock 90191 28 122 air
 
 execute if block 90191 28 124 minecraft:crimson_button[powered=true] positioned 90189 28 124 if block ~ ~ ~ minecraft:magenta_glazed_terracotta[facing=south] run setblock ~ ~ ~ gray_concrete
 execute if block 90191 28 124 minecraft:crimson_button[powered=true] positioned 90189 28 124 if block ~ ~ ~ minecraft:magenta_glazed_terracotta[facing=west] run setblock ~ ~ ~ minecraft:magenta_glazed_terracotta[facing=south]
@@ -263,7 +263,8 @@ unless entity @n[tag=SEAch4_spawn_timer_largegate] run summon marker 90160 34 13
 execute as @n[tag=SEAch4_spawn_timer_leverway] at @s run function skyblock:sea/e/ev016_roadopener
 execute as @n[tag=SEAch4_spawn_timer_largegate] at @s run function skyblock:sea/e/ev017_largegate
 
-
+execute if block 90168 35 88 warped_button[powered=true] unless entity @n[tag=SEAch4_spawn_timer_marilyn] run summon marker 90160 34 130 {Tags:["SEAch4_spawn_timer","SEAch4_spawn_timer_marilyn"]}
+execute as @n[tag=SEAch4_spawn_timer_marilyn] at @s run function skyblock:sea/e/ev018_communication
 
 
     function skyblock:protector/entity_count_end {function:"skyblock:sea/map_event_i03_slow.mcfunction"}

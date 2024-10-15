@@ -102,7 +102,7 @@ item replace block 90084 149 110 container.13 with arrow 3
 
 setblock 90066 138 153 air
 setblock 90066 138 153 lever[facing=south]
-
+setblock 90168 34 93 air
 summon minecraft:interaction 90128 138.3 97 {CustomName:'[{"text":"多功能工作站"}]',Tags:["SEAcrafter","SEAcrafter7"]}
 summon minecraft:marker 90129 137 97 {Tags:["SEAcrafter_tp","SEAcrafter_tp7"]}
 summon minecraft:interaction 90130 144.3 141 {CustomName:'[{"text":"多功能工作站"}]',Tags:["SEAcrafter","SEAcrafter8"]}

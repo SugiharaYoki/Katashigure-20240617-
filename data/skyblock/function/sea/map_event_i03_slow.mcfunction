@@ -292,6 +292,7 @@ execute as @n[tag=sc,scores={sea_4temp2=1260}] positioned 90133 137 108 if entit
  run tellraw @a[distance=0..50] {"text":"玛瑞莲：“先生，您会明白的。我们之后再聊。”","color":"dark_purple"}
 execute as @n[tag=sc,scores={sea_4temp2=1260}] positioned 90133 137 108 if entity @n[tag=sc,scores={sea_player=2..}] \
  run tellraw @a[distance=0..50] {"text":"玛瑞莲：“先生，你们会明白的。我们之后再聊。”","color":"dark_purple"}
+execute as @n[tag=sc,scores={sea_4temp2=1260}] run setblock 90168 34 93 blue_concrete
 
 execute if block 90107 138 117 iron_bars \
  if block 90104 138 125 lever[powered=false] \
