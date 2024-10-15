@@ -3,12 +3,12 @@ scoreboard players remove @s[scores={fp_life=1..}] fp_life 1
 tag @s[scores={fp_life=..0}] add EVENT_killself
 
 #数值处理和初始化
-function fp_core:init_check
-execute if score breakpoint fp_system matches 5 run return 1
+execute if data entity @s Passengers[{id:"minecraft:marker",Tags:["init"]}] run function fp_core:init_check/init
+execute if entity @s[tag=init_self] run function fp_core:init_check/init_self
+execute unless score @s[type=player] health matches -2147483648..2147483647 run function fp_core:init_check/init_player
+
 execute unless entity @s[type=player] run function fp_core:state/entity
-execute if score breakpoint fp_system matches 6 run return 1
 execute if entity @s[type=player] run function fp_core:state/player
-execute if score breakpoint fp_system matches 1 run return 1
 
 #listener
 #通过tag控制是否监听
