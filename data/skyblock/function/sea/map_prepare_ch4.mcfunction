@@ -229,19 +229,27 @@ setblock 90183 28 93 minecraft:crimson_button[face=floor,facing=west]
 setblock 90183 28 94 minecraft:waxed_exposed_copper_bulb[lit=false]
 fill 90191 36 134 90190 34 134 iron_bars
 
+
 #实验区
 setblock 90154 38 94 minecraft:potted_flowering_azalea_bush
 
 setblock 90155 36 120 chest[facing=west]
-item replace block 90155 36 120 container.12 with bread 1
-item replace block 90155 36 120 container.14 with bread 1
+item replace block 90155 36 120 container.12 with cookie 1
+item replace block 90155 36 120 container.14 with cookie 2
 setblock 90151 37 121 minecraft:potted_blue_orchid
 
 setblock 90154 36 113 redstone_block
 setblock 90154 36 113 air
 setblock 90155 36 110 redstone_block
 setblock 90155 36 110 air
-
+setblock 90172 44 132 redstone_block
+setblock 90172 44 132 air
+setblock 90166 44 132 redstone_block
+setblock 90166 44 132 air
+setblock 90172 44 128 redstone_block
+setblock 90172 44 128 air
+setblock 90166 44 128 redstone_block
+setblock 90166 44 128 air
 
 
 fill 90164 37 112 90163 37 112 barrel[facing=north]
@@ -255,6 +263,12 @@ item replace block 90157 37 112 container.13 with gunpowder 1
 item replace block 90163 37 108 container.13 with flint 2
 item replace block 90158 37 108 container.13 with bread 2
 
+setblock 90164 44 136 chest[facing=east]
+item replace block 90164 44 136 container.13 with bread 2
+setblock 90174 45 135 minecraft:potted_dandelion
+setblock 90171 44 126 chest[facing=north]
+item replace block 90171 44 126 container.12 with emerald 5
+item replace block 90171 44 126 container.14 with gunpowder 1
 
 #最终大厅 第七章入口
 setblock 90154 18 134 minecraft:waxed_copper_bulb[lit=false]
