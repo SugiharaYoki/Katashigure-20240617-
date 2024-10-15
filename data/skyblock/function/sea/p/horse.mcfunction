@@ -25,14 +25,14 @@ execute as @s[scores={sea_4temp1=20,rng2=7}] at @s rotated ~ 0 positioned ^1 ^ ^
 execute as @s[scores={sea_4temp1=20,rng2=8}] at @s rotated ~ 0 positioned ^-1 ^ ^ if block ~ ~ ~ air run summon marker ~ ~ ~ {Tags:["SEAhorse_summoner"]}
 
 
-execute as @s[scores={rng3=1}] at @s rotated ~ 0 positioned ^ ^ ^1 if block ~ ~ ~ air run summon evoker_fangs
-execute as @s[scores={rng3=1}] at @s rotated ~ 0 positioned ^ ^ ^-1 if block ~ ~ ~ air run summon evoker_fangs
-execute as @s[scores={rng3=1}] at @s rotated ~ 0 positioned ^1 ^ ^ if block ~ ~ ~ air run summon evoker_fangs
-execute as @s[scores={rng3=1}] at @s rotated ~ 0 positioned ^-1 ^ ^ if block ~ ~ ~ air run summon evoker_fangs
-execute as @s[scores={rng3=3}] at @s rotated ~ 0 positioned ^1 ^ ^1 if block ~ ~ ~ air run summon evoker_fangs
-execute as @s[scores={rng3=3}] at @s rotated ~ 0 positioned ^-1 ^ ^1 if block ~ ~ ~ air run summon evoker_fangs
-execute as @s[scores={rng3=3}] at @s rotated ~ 0 positioned ^1 ^ ^-1 if block ~ ~ ~ air run summon evoker_fangs
-execute as @s[scores={rng3=3}] at @s rotated ~ 0 positioned ^-1 ^ ^-1 if block ~ ~ ~ air run summon evoker_fangs
+execute as @s[scores={rng3=1}] at @s rotated ~ 0 positioned ^ ^ ^3 if block ~ ~ ~ air run summon evoker_fangs
+execute as @s[scores={rng3=1}] at @s rotated ~ 0 positioned ^ ^ ^-3 if block ~ ~ ~ air run summon evoker_fangs
+execute as @s[scores={rng3=1}] at @s rotated ~ 0 positioned ^3 ^ ^ if block ~ ~ ~ air run summon evoker_fangs
+execute as @s[scores={rng3=1}] at @s rotated ~ 0 positioned ^-3 ^ ^ if block ~ ~ ~ air run summon evoker_fangs
+execute as @s[scores={rng3=3}] at @s rotated ~ 0 positioned ^3 ^ ^3 if block ~ ~ ~ air run summon evoker_fangs
+execute as @s[scores={rng3=3}] at @s rotated ~ 0 positioned ^-3 ^ ^3 if block ~ ~ ~ air run summon evoker_fangs
+execute as @s[scores={rng3=3}] at @s rotated ~ 0 positioned ^3 ^ ^-3 if block ~ ~ ~ air run summon evoker_fangs
+execute as @s[scores={rng3=3}] at @s rotated ~ 0 positioned ^-3 ^ ^-3 if block ~ ~ ~ air run summon evoker_fangs
 
 execute as @s[scores={rng3=2}] at @s rotated ~ 0 positioned ^ ^ ^2 if block ~ ~ ~ air run summon evoker_fangs
 execute as @s[scores={rng3=2}] at @s rotated ~ 0 positioned ^ ^ ^-2 if block ~ ~ ~ air run summon evoker_fangs
