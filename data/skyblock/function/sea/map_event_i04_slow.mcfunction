@@ -44,6 +44,11 @@ execute as @a[tag=SEAPT,x=90177,y=44,z=130,distance=0..3.2,tag=!e_i_35] at @s ru
 execute as @a[tag=SEAPT,x=90177,y=44,z=130,distance=0..3.2,tag=!e_i_35] at @s run playsound ambient.warped_forest.mood master @s ~ ~ ~ 100 0.55
 execute as @a[tag=SEAPT,x=90177,y=44,z=130,distance=0..3.2,tag=!e_i_35] at @s run tag @s add e_i_35
 
+execute as @a[tag=SEAPT,tag=!e_i_36,tag=!e_i_34] at @s if entity @n[tag=SEAherb,tag=SEAherb2,distance=0..3.5,scores={sea_4temp1=..1}] run tellraw @s {"text": "嗯？小猫？你是怎么从怪物手里活下来的？","color": "gray"}
+execute as @a[tag=SEAPT,tag=!e_i_36,tag=e_i_34] at @s if entity @n[tag=SEAherb,tag=SEAherb2,distance=0..3.5,scores={sea_4temp1=..1}] run tellraw @s {"text": "又见面了，小猫。看来你掌握了几条捷径呢。","color": "gray"}
+execute as @a[tag=SEAPT,tag=!e_i_36] at @s if entity @n[tag=SEAherb,tag=SEAherb2,distance=0..3.5,scores={sea_4temp1=..1}] run tag @s add e_i_34
+execute as @a[tag=SEAPT,tag=!e_i_36] at @s if entity @n[tag=SEAherb,tag=SEAherb2,distance=0..3.5,scores={sea_4temp1=..1}] run tag @s add e_i_36
+
 execute as @a[tag=SEAPT,tag=!e_i_34] at @s if entity @n[tag=SEAherb,distance=0..3.5,scores={sea_4temp1=..1}] run tellraw @s {"text": "嗯？小猫？你是怎么从怪物手里活下来的？","color": "gray"}
 execute as @a[tag=SEAPT,tag=!e_i_34] at @s if entity @n[tag=SEAherb,distance=0..3.5,scores={sea_4temp1=..1}] run tag @s add e_i_34
 
