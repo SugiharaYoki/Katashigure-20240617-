@@ -266,5 +266,16 @@ execute as @n[tag=SEAch4_spawn_timer_largegate] at @s run function skyblock:sea/
 execute if block 90168 35 88 warped_button[powered=true] unless entity @n[tag=SEAch4_spawn_timer_marilyn] run summon marker 90160 34 130 {Tags:["SEAch4_spawn_timer","SEAch4_spawn_timer_marilyn"]}
 execute as @n[tag=SEAch4_spawn_timer_marilyn] at @s run function skyblock:sea/e/ev018_communication
 
+execute positioned 90163 44 130 if entity @a[tag=SEAPT,distance=..2.7] unless entity @n[tag=SEAch4_spawn,distance=0..1] positioned 90171 44 128 run function skyblock:sea/m/drowned_shield
+execute positioned 90163 44 130 if entity @a[tag=SEAPT,distance=..2.7] unless entity @n[tag=SEAch4_spawn,distance=0..1] positioned 90171 44 132 run function skyblock:sea/m/drowned_shield
+execute positioned 90163 44 130 if entity @a[tag=SEAPT,distance=..2.7] unless entity @n[tag=SEAch4_spawn,distance=0..1] run summon marker ~ ~ ~ {Tags:["SEAch4_spawn"]}
+
+execute positioned 90172 44 134 if entity @a[tag=SEAPT,distance=..1.5] unless entity @n[tag=SEAch4_spawn,distance=0..1] positioned 90172 44 138 run summon zombie ~ ~ ~ {CustomName:'[{"text":"爆弹僵尸"}]',DeathLootTable:"skyblock:sea_zombie_bomb",Tags:["SEAmob","SEAmob_carrybomb"],attributes:[{id:"generic.attack_damage",base:1.5},{id:"generic.movement_speed",base:0.26},{id:"generic.max_health",base:2.0},{id:"generic.knockback_resistance",base:0.5}],Health:2,HandItems:[{id:fire_charge,count:1},{}],HandDropChances:[0f,0f],ArmorItems:[{id:iron_boots,count:1,components:{"minecraft:trim":{material:"minecraft:copper",pattern:"minecraft:dune"}}},{id:iron_leggings,count:1,components:{"minecraft:trim":{material:"minecraft:copper",pattern:"minecraft:dune"}}},{id:iron_chestplate,count:1,components:{"minecraft:trim":{material:"minecraft:copper",pattern:"minecraft:dune"}}},{id:chainmail_helmet,count:1}],ArmorDropChances:[0f,0f,0f,0f],PersistenceRequired:1b,Rotation:[180f,0f]}
+execute positioned 90172 44 134 if entity @a[tag=SEAPT,distance=..1.5] unless entity @n[tag=SEAch4_spawn,distance=0..1] run setblock 90172 49 137 minecraft:tinted_glass destroy
+execute positioned 90172 44 134 if entity @a[tag=SEAPT,distance=..1.5] unless entity @n[tag=SEAch4_spawn,distance=0..1] run summon marker ~ ~ ~ {Tags:["SEAch4_spawn"]}
+
+
+execute positioned 90175 44 130 if entity @a[tag=SEAPT,distance=..4.7] unless items entity @a[tag=SEAPT] container.* heart_of_the_sea unless entity @n[tag=SEAch4_spawn,distance=0..3] positioned ~ ~ ~ run function skyblock:sea/m/zombie_knight
+execute positioned 90175 44 130 if entity @a[tag=SEAPT,distance=..4.7] unless items entity @a[tag=SEAPT] container.* heart_of_the_sea unless entity @n[tag=SEAch4_spawn,distance=0..3] run summon marker ~ ~ ~ {Tags:["SEAch4_spawn"]}
 
     function skyblock:protector/entity_count_end {function:"skyblock:sea/map_event_i03_slow.mcfunction"}

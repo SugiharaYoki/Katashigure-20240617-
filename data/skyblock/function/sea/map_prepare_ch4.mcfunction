@@ -251,6 +251,10 @@ setblock 90172 44 128 air
 setblock 90166 44 128 redstone_block
 setblock 90166 44 128 air
 
+setblock 90178 44 132 minecraft:potted_azalea_bush
+setblock 90178 44 128 minecraft:potted_azalea_bush
+
+setblock 90172 49 137 minecraft:white_stained_glass
 
 fill 90164 37 112 90163 37 112 barrel[facing=north]
 fill 90161 37 112 90160 37 112 barrel[facing=north]

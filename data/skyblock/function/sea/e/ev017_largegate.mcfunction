@@ -14,3 +14,9 @@ execute as @s[scores={sea_4temp1=51}] positioned 90160 34 130 run playsound ambi
 execute as @s[scores={sea_4temp1=51}] positioned 90160 34 130 run playsound ambient.warped_forest.additions ambient @a ~ ~ ~ 2 0.9
 execute as @s[scores={sea_4temp1=51}] positioned 90160 34 130 run playsound ambient.warped_forest.loop ambient @a ~ ~ ~ 2 0.9
 execute as @s[scores={sea_4temp1=61}] positioned 90160 34 130 run function skyblock:sea/m/zombie_horse
+
+
+execute as @s[scores={sea_4temp1=1}] positioned 90166 44 136 run function skyblock:sea/m/zombie_security2
+execute as @s[scores={sea_4temp1=1}] positioned 90168 46 126 run function skyblock:sea/m/silverfish
+
+execute as @s[scores={sea_4temp1=1}] positioned 90163 44 130 run function skyblock:sea/m/mine
