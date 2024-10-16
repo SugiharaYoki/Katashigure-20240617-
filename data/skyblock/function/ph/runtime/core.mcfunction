@@ -60,10 +60,6 @@ execute if data storage ph {runtime:{turn:1}} run tag @a[tag=current_table,tag=4
         
     #event callback
     function skyblock:ph/runtime/interaction_callback
-    execute if data storage ph {runtime:{isHostAttack:1b}} if data storage ph {runtime:{isGuestAttack:1b}} run function skyblock:ph/runtime/attack
-    execute if data storage ph {runtime:{isHostAttack:1b}} unless data storage ph {runtime:{isGuestAttack:1b}} run function skyblock:ph/runtime/attack
-    execute unless data storage ph {runtime:{isHostAttack:1b}} if data storage ph {runtime:{isGuestAttack:1b}} run function skyblock:ph/runtime/attack
-    execute unless data storage ph {runtime:{isHostAttack:1b}} unless data storage ph {runtime:{isGuestAttack:1b}} run data modify storage ph runtime.next set value 1b
     execute if data storage ph {runtime:{next:1b}} run function skyblock:ph/runtime/next
 
     #endgame check
