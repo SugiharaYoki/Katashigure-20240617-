@@ -170,7 +170,7 @@ execute if score active_slot 4ASCEND_system matches 88 at @e[tag=current_table,t
 #modify
 scoreboard players operation slot_data 4ASCEND_system = magic_power 4ASCEND_system
 scoreboard players operation slot_data 4ASCEND_system *= 10 constant
-scoreboard players add slot_data 4ASCEND_system 1
+scoreboard players add slot_data 4ASCEND_system 2
 
 #write
 #enum no tamplete:
