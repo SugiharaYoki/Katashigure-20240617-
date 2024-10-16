@@ -38,9 +38,9 @@ execute if data storage ph {runtime:{turn:1}} run tag @a[tag=current_table,tag=4
         effect clear @a[tag=current_table,tag=current_turn] invisibility
 
         #attack
-        execute if data storage ph {runtime:{isHostAttack:1b}} if data storage ph {runtime:{isGuestAttack:1b}} run data modify storage ph runtime merge value {isHostAttack:0b,isGuestAttack:1b}
-        execute if data storage ph {runtime:{isHostAttack:1b}} unless data storage ph {runtime:{isGuestAttack:1b}} run effect give @a[tag=current_table] darkness 1 1 true
-        execute unless data storage ph {runtime:{isHostAttack:1b}} if data storage ph {runtime:{isGuestAttack:1b}} run effect give @a[tag=current_table] darkness 1 1 true
+        execute if data storage ph {runtime:{isHostAttack:1b}} if data storage ph {runtime:{isGuestAttack:1b}} run data modify storage ph runtime merge value {isHostAttack:0b,isGuestAttack:0b}
+        execute if data storage ph {runtime:{isHostAttack:1b}} unless data storage ph {runtime:{isGuestAttack:1b}} run effect give @a[tag=current_table] darkness 10 1 true
+        execute unless data storage ph {runtime:{isHostAttack:1b}} if data storage ph {runtime:{isGuestAttack:1b}} run effect give @a[tag=current_table] darkness 10 1 true
         execute unless data storage ph {runtime:{isHostAttack:1b}} unless data storage ph {runtime:{isGuestAttack:1b}} run effect clear @a[tag=current_table] darkness
 
         #target
