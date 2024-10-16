@@ -86,6 +86,3 @@ execute if entity @a[tag=current_turn,tag=4ASCENDGuest] if score GUEST_COUNT_2 4
 #↖↘
 execute if entity @a[tag=current_turn,tag=4ASCENDHost] if score HOST_COUNT_3 4ASCEND_system matches 3.. run data modify storage ph runtime.host_attacking append from storage ph runtime.host_count_3[]
 execute if entity @a[tag=current_turn,tag=4ASCENDGuest] if score GUEST_COUNT_3 4ASCEND_system matches 3.. run data modify storage ph runtime.guest_attacking append from storage ph runtime.guest_count_3[]
-
-execute if data storage ph {runtime:{isHostAttack:1b}} run tellraw @a[tag=current_table] {"nbt":"runtime.host_attacking","storage":"ph"}
-execute if data storage ph {runtime:{isGuestAttack:1b}} run tellraw @a[tag=current_table] {"nbt":"runtime.host_attacking","storage":"ph"}
