@@ -10,7 +10,7 @@ execute if entity @a[tag=current_turn,tag=4ASCENDHost] run function skyblock:ph/
 execute if entity @a[tag=current_turn,tag=4ASCENDGuest] run function skyblock:ph/runtime/new_guest
 function skyblock:ph/runtime/update
 
-execute unless data storage ph {runtime:{isHostAttack:1b}} unless data storage ph {runtime:{isGuestAttack:1b}} run data modify storage ph runtime.next set value 1b
-execute unless data storage ph {runtime:{isHostAttack:1b}} unless data storage ph {runtime:{isGuestAttack:1b}} run return 1
 execute if entity @a[tag=current_turn,tag=4ASCENDHost] if data storage ph {runtime:{isGuestAttack:1b}} run function skyblock:ph/runtime/attack
 execute if entity @a[tag=current_turn,tag=4ASCENDGuest] if data storage ph {runtime:{isHostAttack:1b}} run function skyblock:ph/runtime/attack
+
+data modify storage ph runtime.next set value 1b
