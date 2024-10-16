@@ -48,6 +48,7 @@ execute if data storage ph {runtime:{turn:1}} run tag @a[tag=current_table,tag=4
         execute if data storage ph {runtime:{isHostAttack:1b}} unless data storage ph {runtime:{isGuestAttack:1b}} run effect give @a[tag=current_table] blindness 10 1 true
         execute unless data storage ph {runtime:{isHostAttack:1b}} if data storage ph {runtime:{isGuestAttack:1b}} run effect give @a[tag=current_table] blindness 10 1 true
         execute unless data storage ph {runtime:{isHostAttack:1b}} unless data storage ph {runtime:{isGuestAttack:1b}} run effect clear @a[tag=current_table] darkness
+        execute unless data storage ph {runtime:{isHostAttack:1b}} unless data storage ph {runtime:{isGuestAttack:1b}} run effect clear @a[tag=current_table] blindness
 
         #target
         function skyblock:ph/runtime/check_slot
@@ -59,7 +60,11 @@ execute if data storage ph {runtime:{turn:1}} run tag @a[tag=current_table,tag=4
         
     #event callback
     function skyblock:ph/runtime/interaction_callback
-    execute as @a[tag=DEBUG_next] run function skyblock:ph/runtime/next
+    execute if data storage ph {runtime:{isHostAttack:1b}} if data storage ph {runtime:{isGuestAttack:1b}} run function skyblock:ph/runtime/attack
+    execute if data storage ph {runtime:{isHostAttack:1b}} unless data storage ph {runtime:{isGuestAttack:1b}} run function skyblock:ph/runtime/attack
+    execute unless data storage ph {runtime:{isHostAttack:1b}} if data storage ph {runtime:{isGuestAttack:1b}} run function skyblock:ph/runtime/attack
+    execute unless data storage ph {runtime:{isHostAttack:1b}} unless data storage ph {runtime:{isGuestAttack:1b}} run data modify storage ph runtime.next set value 1b
+    execute if data storage ph {runtime:{next:1b}} run function skyblock:ph/runtime/next
 
     #endgame check
     data modify storage ph end_init.table set from storage ph runtime.table
