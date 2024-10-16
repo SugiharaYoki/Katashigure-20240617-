@@ -65,8 +65,8 @@ execute if entity @a[tag=current_turn,tag=4ASCENDHost] if score HOST_COUNT_3 4AS
 execute if entity @a[tag=current_turn,tag=4ASCENDGuest] if score GUEST_COUNT_3 4ASCEND_system matches 3.. run scoreboard players operation GUEST_COUNT 4ASCEND_system += GUEST_COUNT_3 4ASCEND_system
 
 
-data modify storage ph runtime.isHostAttack set value 1b
-data modify storage ph runtime.isGuestAttack set value 1b
+execute if score HOST_COUNT 4ASCEND_system matches 4.. run data modify storage ph runtime.isHostAttack set value 0b
+execute if score GUEST_COUNT 4ASCEND_system matches 4.. run data modify storage ph runtime.isGuestAttack set value 0b
 
 execute if entity @a[tag=current_turn,tag=4ASCENDHost] run data modify storage ph runtime.host_attacking set value [{}]
 execute if entity @a[tag=current_turn,tag=4ASCENDHost] store result storage ph runtime.host_attacking[-1].col int 1.0 run scoreboard players get col 4ASCEND_system
