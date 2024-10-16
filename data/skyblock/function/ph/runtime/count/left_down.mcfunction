@@ -15,6 +15,5 @@ execute if score temp_index_col 4ASCEND_system matches 0..8 if score temp_index_
 execute if score temp_index_col 4ASCEND_system matches 0..8 if score temp_index_row 4ASCEND_system matches 0..8 if entity @a[tag=current_turn,tag=4ASCENDGuest] if score slot_type 4ASCEND_system matches 2 run scoreboard players operation GUEST_COUNT 4ASCEND_system += magic_power 4ASCEND_system
 execute if score temp_index_col 4ASCEND_system matches 0..8 if score temp_index_row 4ASCEND_system matches 0..8 if entity @a[tag=current_turn,tag=4ASCENDGuest] if score slot_type 4ASCEND_system matches 1 run scoreboard players set temp_index_col 4ASCEND_system -1
 #END
-execute unless score temp_index_col 4ASCEND_system matches 0..8 if score temp_index_row 4ASCEND_system matches 0..8 run tellraw @a[tag=current_turn,tag=4ASCENDHost] {"score":{"name":"HOST_COUNT","objective":"4ASCEND_system"}}
-execute unless score temp_index_col 4ASCEND_system matches 0..8 if score temp_index_row 4ASCEND_system matches 0..8 run tellraw @a[tag=current_turn,tag=4ASCENDGuest] {"score":{"name":"GUEST_COUNT","objective":"4ASCEND_system"}}
+
 execute if score temp_index_col 4ASCEND_system matches 0..8 if score temp_index_row 4ASCEND_system matches 0..8 run function skyblock:ph/runtime/count/left_down

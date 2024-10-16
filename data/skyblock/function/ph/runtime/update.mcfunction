@@ -32,3 +32,6 @@ function skyblock:ph/runtime/count/right_up
 scoreboard players operation temp_index_row 4ASCEND_system = row 4ASCEND_system
 scoreboard players operation temp_index_col 4ASCEND_system = col 4ASCEND_system
 function skyblock:ph/runtime/count/right_down
+
+tellraw @a[tag=current_turn,tag=4ASCENDHost] {"score":{"name":"HOST_COUNT","objective":"4ASCEND_system"}}
+tellraw @a[tag=current_turn,tag=4ASCENDGuest] {"score":{"name":"GUEST_COUNT","objective":"4ASCEND_system"}}
