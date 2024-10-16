@@ -87,3 +87,6 @@ execute if entity @a[tag=current_turn,tag=4ASCENDHost] if score HOST_COUNT_3 4AS
 execute if entity @a[tag=current_turn,tag=4ASCENDHost] if score HOST_COUNT_3 4ASCEND_system matches 3.. run tellraw @a[tag=current_table] [{"text":"↖↘："},{"score": {"name": "HOST_COUNT","objective": "4ASCEND_system"}},",",{"nbt":"runtime.host_count_3","storage":"ph"}]
 execute if entity @a[tag=current_turn,tag=4ASCENDGuest] if score GUEST_COUNT_3 4ASCEND_system matches 3.. run scoreboard players operation GUEST_COUNT 4ASCEND_system += GUEST_COUNT_3 4ASCEND_system
 execute if entity @a[tag=current_turn,tag=4ASCENDGuest] if score GUEST_COUNT_3 4ASCEND_system matches 3.. run tellraw @a[tag=current_table] [{"text":"↖↘："},{"score": {"name": "GUEST_COUNT","objective": "4ASCEND_system"}},",",{"nbt":"runtime.guest_count_3","storage":"ph"}]
+
+execute if score HOST_COUNT 4ASCEND_system matches 4.. run data modify storage ph runtime.isHostAttack set value 1b
+execute if score GUEST_COUNT 4ASCEND_system matches 4.. run data modify storage ph runtime.isGuestAttack set value 1b

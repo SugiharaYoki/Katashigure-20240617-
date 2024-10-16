@@ -31,16 +31,25 @@ execute if data storage ph {runtime:{turn:1}} run tag @a[tag=current_table,tag=4
     execute store result score active_slot 4ASCEND_system if data storage ph {runtime:{turn:1}} run function skyblock:ph/runtime/check_raycast_guest
 
     #visualize
-    effect give @a[tag=current_table,tag=current_turn] glowing 1 1 true
-    effect clear @a[tag=current_table,tag=!current_turn] glowing
-    effect give @a[tag=current_table,tag=!current_turn] invisibility 1 1 true
-    effect clear @a[tag=current_table,tag=current_turn] invisibility
-    function skyblock:ph/runtime/check_slot
-    scoreboard players set slot_available 4ASCEND_system 0
-    execute if score slot_type 4ASCEND_system matches 0 run scoreboard players set slot_available 4ASCEND_system 1
-    execute if data storage ph {runtime:{turn:0}} as @e[type=block_display,tag=current_table,limit=1] on passengers as @s[tag=target,type=block_display] run data merge entity @s {block_state:{Name:"glass"},Glowing:1b,glow_color_override:63487}
-    execute if data storage ph {runtime:{turn:1}} as @e[type=block_display,tag=current_table,limit=1] on passengers as @s[tag=target,type=block_display] run data merge entity @s {block_state:{Name:"glass"},Glowing:1b,glow_color_override:9240576}
-    function skyblock:ph/runtime/move_target
+        #turn
+        effect give @a[tag=current_table,tag=current_turn] glowing 1 1 true
+        effect clear @a[tag=current_table,tag=!current_turn] glowing
+        effect give @a[tag=current_table,tag=!current_turn] invisibility 1 1 true
+        effect clear @a[tag=current_table,tag=current_turn] invisibility
+
+        #attack
+        execute if data storage ph {runtime:{isHostAttack:1b}} if data storage ph {runtime:{isGuestAttack:1b}} run data modify storage ph runtime merge value {isHostAttack:0b,isGuestAttack:1b}
+        execute if data storage ph {runtime:{isHostAttack:1b}} unless data storage ph {runtime:{isGuestAttack:1b}} run effect give @a[tag=current_table] darkness 1 1 true
+        execute unless data storage ph {runtime:{isHostAttack:1b}} if data storage ph {runtime:{isGuestAttack:1b}} run effect give @a[tag=current_table] darkness 1 1 true
+        execute unless data storage ph {runtime:{isHostAttack:1b}} unless data storage ph {runtime:{isGuestAttack:1b}} run effect clear @a[tag=current_table] darkness
+
+        #target
+        function skyblock:ph/runtime/check_slot
+        scoreboard players set slot_available 4ASCEND_system 0
+        execute if score slot_type 4ASCEND_system matches 0 run scoreboard players set slot_available 4ASCEND_system 1
+        execute if data storage ph {runtime:{turn:0}} as @e[type=block_display,tag=current_table,limit=1] on passengers as @s[tag=target,type=block_display] run data merge entity @s {block_state:{Name:"glass"},Glowing:1b,glow_color_override:63487}
+        execute if data storage ph {runtime:{turn:1}} as @e[type=block_display,tag=current_table,limit=1] on passengers as @s[tag=target,type=block_display] run data merge entity @s {block_state:{Name:"glass"},Glowing:1b,glow_color_override:9240576}
+        function skyblock:ph/runtime/move_target
         
     #event callback
     function skyblock:ph/runtime/interaction_callback
