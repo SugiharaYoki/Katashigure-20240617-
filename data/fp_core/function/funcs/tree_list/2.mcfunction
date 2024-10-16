@@ -1,2 +1,24 @@
-tellraw @a[tag=fp_entity,distance=..5] [{"text":"Damage : ","color":"aqua","bold":true},{"score":{"name":"@s","objective": "damage"},"color":"gold"}]
-tag @s add IGNORE_damage
+particle minecraft:dust{color:[1.0f,1.0f,1.0f],scale:0.2f} ^0.0000000 ^ ^0.1500000 0 0 0 0 1 force
+particle minecraft:dust{color:[1.0f,1.0f,1.0f],scale:0.2f} ^0.0388229 ^ ^0.1448889 0 0 0 0 1 force
+particle minecraft:dust{color:[1.0f,1.0f,1.0f],scale:0.2f} ^0.0750000 ^ ^0.1299038 0 0 0 0 1 force
+particle minecraft:dust{color:[1.0f,1.0f,1.0f],scale:0.2f} ^0.1060660 ^ ^0.1060660 0 0 0 0 1 force
+particle minecraft:dust{color:[1.0f,1.0f,1.0f],scale:0.2f} ^0.1299038 ^ ^0.0750000 0 0 0 0 1 force
+particle minecraft:dust{color:[1.0f,1.0f,1.0f],scale:0.2f} ^0.1448889 ^ ^0.0388229 0 0 0 0 1 force
+particle minecraft:dust{color:[1.0f,1.0f,1.0f],scale:0.2f} ^0.1500000 ^ ^0.0000000 0 0 0 0 1 force
+particle minecraft:dust{color:[1.0f,1.0f,1.0f],scale:0.2f} ^0.1448889 ^ ^-0.0388229 0 0 0 0 1 force
+particle minecraft:dust{color:[1.0f,1.0f,1.0f],scale:0.2f} ^0.1299038 ^ ^-0.0750000 0 0 0 0 1 force
+particle minecraft:dust{color:[1.0f,1.0f,1.0f],scale:0.2f} ^0.1060660 ^ ^-0.1060660 0 0 0 0 1 force
+particle minecraft:dust{color:[1.0f,1.0f,1.0f],scale:0.2f} ^0.0750000 ^ ^-0.1299038 0 0 0 0 1 force
+particle minecraft:dust{color:[1.0f,1.0f,1.0f],scale:0.2f} ^0.0388229 ^ ^-0.1448889 0 0 0 0 1 force
+particle minecraft:dust{color:[1.0f,1.0f,1.0f],scale:0.2f} ^0.0000000 ^ ^-0.1500000 0 0 0 0 1 force
+particle minecraft:dust{color:[1.0f,1.0f,1.0f],scale:0.2f} ^-0.0388229 ^ ^-0.1448889 0 0 0 0 1 force
+particle minecraft:dust{color:[1.0f,1.0f,1.0f],scale:0.2f} ^-0.0750000 ^ ^-0.1299038 0 0 0 0 1 force
+particle minecraft:dust{color:[1.0f,1.0f,1.0f],scale:0.2f} ^-0.1060660 ^ ^-0.1060660 0 0 0 0 1 force
+particle minecraft:dust{color:[1.0f,1.0f,1.0f],scale:0.2f} ^-0.1299038 ^ ^-0.0750000 0 0 0 0 1 force
+particle minecraft:dust{color:[1.0f,1.0f,1.0f],scale:0.2f} ^-0.1448889 ^ ^-0.0388229 0 0 0 0 1 force
+particle minecraft:dust{color:[1.0f,1.0f,1.0f],scale:0.2f} ^-0.1500000 ^ ^-0.0000000 0 0 0 0 1 force
+particle minecraft:dust{color:[1.0f,1.0f,1.0f],scale:0.2f} ^-0.1448889 ^ ^0.0388229 0 0 0 0 1 force
+particle minecraft:dust{color:[1.0f,1.0f,1.0f],scale:0.2f} ^-0.1299038 ^ ^0.0750000 0 0 0 0 1 force
+particle minecraft:dust{color:[1.0f,1.0f,1.0f],scale:0.2f} ^-0.1060660 ^ ^0.1060660 0 0 0 0 1 force
+particle minecraft:dust{color:[1.0f,1.0f,1.0f],scale:0.2f} ^-0.0750000 ^ ^0.1299038 0 0 0 0 1 force
+particle minecraft:dust{color:[1.0f,1.0f,1.0f],scale:0.2f} ^-0.0388229 ^ ^0.1448889 0 0 0 0 1 force
