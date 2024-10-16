@@ -78,7 +78,7 @@ gamerule doDaylightCycle false
 gamerule keepInventory true
 
 
-setblock 90060 103 131 minecraft:jukebox[has_record=true]{RecordItem:{id:"minecraft:music_disc_creator_music_box"}}
+setblock 90060 103 129 minecraft:jukebox[has_record=true]{RecordItem:{id:"minecraft:music_disc_creator_music_box"}}
 execute as @a[x=90060,y=102,z=140,distance=0..500,gamemode=!spectator] at @s run tag @s add SEAPT
 team add SEA
 team modify SEA collisionRule never
@@ -91,11 +91,11 @@ setblock 90075 103 137 air
 execute as @a[tag=SEAPT] at @s run function skyblock:sea/map_prepare_ch1_player
 
 
-setblock 90061 103 134 chest[facing=west]
+setblock 90061 103 132 chest[facing=west]
 
-item replace block 90061 103 134 container.11 with cookie 3
-item replace block 90061 103 134 container.13 with bread 3
-item replace block 90061 103 134 container.15 with cookie 3
+item replace block 90061 103 132 container.11 with cookie 3
+item replace block 90061 103 132 container.13 with bread 3
+item replace block 90061 103 132 container.15 with cookie 3
 gamemode adventure @a[tag=SEAPT]
 setblock 90077 103 146 barrel[facing=up]
 item replace block 90077 103 146 container.11 with potion 1
@@ -191,6 +191,8 @@ setblock 90118 123 134 lever[powered=false,facing=east]
 fill 90114 124 133 90114 122 132 iron_block
 item replace block 90095 122 128 container.26 with amethyst_shard[custom_name='{"text":"紫水晶碎块","bold":false,"italic":true,"color":"gold","italic":false}',lore=['{"text":"散发着诡谲气息的宝石。","color":"white","italic":false}']] 1
 
+setblock 90058 103 137 smoker[facing=east]
+
 setblock 90106 122 145 minecraft:chiseled_bookshelf[facing=east]
 forceload add 90000 0 90200 200
 setblock 90060 104 144 air
@@ -285,7 +287,7 @@ fill 90076 124 121 90076 122 123 iron_block
 fill 90089 130 130 90088 128 130 iron_block
 setblock 90084 122 106 chest[facing=west]
 setblock 90085 122 146 chest[facing=north]
-setblock 90058 103 142 minecraft:air
+setblock 90062 103 135 minecraft:air
 
 
 setblock 90135 124 126 minecraft:redstone_lamp[lit=false]

@@ -1,6 +1,6 @@
     function skyblock:protector/entity_count_start
 
-setblock 90058 103 142 minecraft:grindstone[facing=west,face=floor]
+setblock 90062 103 135 minecraft:grindstone[facing=west,face=floor]
 
 setblock 90104 122 134 minecraft:air
 
