@@ -1,5 +1,5 @@
-scoreboard players set version skyblock_system 251
-execute unless score last_version skyblock_system = version skyblock_system run tellraw @a[tag=DebugMode] [{"text":"【4ASCEND v0.2】Datapack has successfully updated. version: "},{"score":{"name":"version","objective":"skyblock_system"},"color":"green","bold":true}]
+scoreboard players set version skyblock_system 252
+execute unless score last_version skyblock_system = version skyblock_system run tellraw @a[tag=DebugMode] [{"text":"【4ASCEND v0.3】Datapack has successfully updated. version: "},{"score":{"name":"version","objective":"skyblock_system"},"color":"green","bold":true}]
 scoreboard players operation last_version skyblock_system = version skyblock_system
 
 #轮播内容
