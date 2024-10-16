@@ -20,27 +20,27 @@ data modify storage ph runtime.host_count_0 set value [{}]
 execute if entity @a[tag=current_turn,tag=4ASCENDHost] store result storage ph runtime.host_count_0[-1].col int 1.0 run scoreboard players get col 4ASCEND_system
 execute if entity @a[tag=current_turn,tag=4ASCENDHost] store result storage ph runtime.host_count_0[-1].row int 1.0 run scoreboard players get row 4ASCEND_system
 data modify storage ph runtime.host_count_1 set value [{}]
-execute if entity @a[tag=current_turn,tag=4ASCENDHost] store result storage ph runtime.host_count_0[-1].col int 1.0 run scoreboard players get col 4ASCEND_system
-execute if entity @a[tag=current_turn,tag=4ASCENDHost] store result storage ph runtime.host_count_0[-1].row int 1.0 run scoreboard players get row 4ASCEND_system
+execute if entity @a[tag=current_turn,tag=4ASCENDHost] store result storage ph runtime.host_count_1[-1].col int 1.0 run scoreboard players get col 4ASCEND_system
+execute if entity @a[tag=current_turn,tag=4ASCENDHost] store result storage ph runtime.host_count_1[-1].row int 1.0 run scoreboard players get row 4ASCEND_system
 data modify storage ph runtime.host_count_2 set value [{}]
-execute if entity @a[tag=current_turn,tag=4ASCENDHost] store result storage ph runtime.host_count_0[-1].col int 1.0 run scoreboard players get col 4ASCEND_system
-execute if entity @a[tag=current_turn,tag=4ASCENDHost] store result storage ph runtime.host_count_0[-1].row int 1.0 run scoreboard players get row 4ASCEND_system
+execute if entity @a[tag=current_turn,tag=4ASCENDHost] store result storage ph runtime.host_count_2[-1].col int 1.0 run scoreboard players get col 4ASCEND_system
+execute if entity @a[tag=current_turn,tag=4ASCENDHost] store result storage ph runtime.host_count_2[-1].row int 1.0 run scoreboard players get row 4ASCEND_system
 data modify storage ph runtime.host_count_3 set value [{}]
-execute if entity @a[tag=current_turn,tag=4ASCENDHost] store result storage ph runtime.host_count_0[-1].col int 1.0 run scoreboard players get col 4ASCEND_system
-execute if entity @a[tag=current_turn,tag=4ASCENDHost] store result storage ph runtime.host_count_0[-1].row int 1.0 run scoreboard players get row 4ASCEND_system
+execute if entity @a[tag=current_turn,tag=4ASCENDHost] store result storage ph runtime.host_count_3[-1].col int 1.0 run scoreboard players get col 4ASCEND_system
+execute if entity @a[tag=current_turn,tag=4ASCENDHost] store result storage ph runtime.host_count_3[-1].row int 1.0 run scoreboard players get row 4ASCEND_system
 
 data modify storage ph runtime.guest_count_0 set value [{}]
 execute if entity @a[tag=current_turn,tag=4ASCENDGuest] store result storage ph runtime.guest_count_0[-1].col int 1.0 run scoreboard players get col 4ASCEND_system
 execute if entity @a[tag=current_turn,tag=4ASCENDGuest] store result storage ph runtime.guest_count_0[-1].row int 1.0 run scoreboard players get row 4ASCEND_system
 data modify storage ph runtime.guest_count_1 set value [{}]
-execute if entity @a[tag=current_turn,tag=4ASCENDGuest] store result storage ph runtime.guest_count_0[-1].col int 1.0 run scoreboard players get col 4ASCEND_system
-execute if entity @a[tag=current_turn,tag=4ASCENDGuest] store result storage ph runtime.guest_count_0[-1].row int 1.0 run scoreboard players get row 4ASCEND_system
+execute if entity @a[tag=current_turn,tag=4ASCENDGuest] store result storage ph runtime.guest_count_1[-1].col int 1.0 run scoreboard players get col 4ASCEND_system
+execute if entity @a[tag=current_turn,tag=4ASCENDGuest] store result storage ph runtime.guest_count_1[-1].row int 1.0 run scoreboard players get row 4ASCEND_system
 data modify storage ph runtime.guest_count_2 set value [{}]
-execute if entity @a[tag=current_turn,tag=4ASCENDGuest] store result storage ph runtime.guest_count_0[-1].col int 1.0 run scoreboard players get col 4ASCEND_system
-execute if entity @a[tag=current_turn,tag=4ASCENDGuest] store result storage ph runtime.guest_count_0[-1].row int 1.0 run scoreboard players get row 4ASCEND_system
+execute if entity @a[tag=current_turn,tag=4ASCENDGuest] store result storage ph runtime.guest_count_2[-1].col int 1.0 run scoreboard players get col 4ASCEND_system
+execute if entity @a[tag=current_turn,tag=4ASCENDGuest] store result storage ph runtime.guest_count_2[-1].row int 1.0 run scoreboard players get row 4ASCEND_system
 data modify storage ph runtime.guest_count_3 set value [{}]
-execute if entity @a[tag=current_turn,tag=4ASCENDGuest] store result storage ph runtime.guest_count_0[-1].col int 1.0 run scoreboard players get col 4ASCEND_system
-execute if entity @a[tag=current_turn,tag=4ASCENDGuest] store result storage ph runtime.guest_count_0[-1].row int 1.0 run scoreboard players get row 4ASCEND_system
+execute if entity @a[tag=current_turn,tag=4ASCENDGuest] store result storage ph runtime.guest_count_3[-1].col int 1.0 run scoreboard players get col 4ASCEND_system
+execute if entity @a[tag=current_turn,tag=4ASCENDGuest] store result storage ph runtime.guest_count_3[-1].row int 1.0 run scoreboard players get row 4ASCEND_system
 
 scoreboard players operation temp_index_row 4ASCEND_system = row 4ASCEND_system
 scoreboard players operation temp_index_col 4ASCEND_system = col 4ASCEND_system
