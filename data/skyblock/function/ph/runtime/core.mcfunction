@@ -41,7 +41,6 @@ execute if data storage ph {runtime:{turn:1}} run tag @a[tag=current_table,tag=4
         execute if data storage ph {runtime:{isHostAttack:1b}} unless data storage ph {runtime:{isGuestAttack:1b}} as @a[tag=current_table] at @s run playsound minecraft:block.beacon.ambient master @s ~ ~ ~ 0.3
         execute unless data storage ph {runtime:{isHostAttack:1b}} if data storage ph {runtime:{isGuestAttack:1b}} as @a[tag=current_table] at @s run playsound minecraft:block.beacon.ambient master @s ~ ~ ~ 0.3
 
-        execute if data storage ph {runtime:{isHostAttack:1b}} if data storage ph {runtime:{isGuestAttack:1b}} run data modify storage ph runtime merge value {isHostAttack:0b,isGuestAttack:0b}
         execute if data storage ph {runtime:{isHostAttack:1b}} unless data storage ph {runtime:{isGuestAttack:1b}} run effect give @a[tag=current_table] darkness 10 1 true
         execute unless data storage ph {runtime:{isHostAttack:1b}} if data storage ph {runtime:{isGuestAttack:1b}} run effect give @a[tag=current_table] darkness 10 1 true
         execute if data storage ph {runtime:{isHostAttack:1b}} unless data storage ph {runtime:{isGuestAttack:1b}} run effect give @a[tag=current_table] blindness 10 1 true
