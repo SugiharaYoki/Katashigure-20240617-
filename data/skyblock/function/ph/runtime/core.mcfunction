@@ -38,7 +38,6 @@ execute if data storage ph {runtime:{turn:1}} run tag @a[tag=current_table,tag=4
         effect clear @a[tag=current_table,tag=current_turn] invisibility
 
         #attack
-        execute if data storage ph {runtime:{isHostAttack:1b}} if data storage ph {runtime:{isGuestAttack:1b}} as @a[tag=current_table] at @s run playsound minecraft:entity.zombie.break_wooden_door
         execute if data storage ph {runtime:{isHostAttack:1b}} unless data storage ph {runtime:{isGuestAttack:1b}} as @a[tag=current_table] at @s run playsound minecraft:block.beacon.ambient
         execute unless data storage ph {runtime:{isHostAttack:1b}} if data storage ph {runtime:{isGuestAttack:1b}} as @a[tag=current_table] at @s run playsound minecraft:block.beacon.ambient
 
