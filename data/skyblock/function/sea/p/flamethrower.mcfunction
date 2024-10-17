@@ -1,7 +1,7 @@
     function skyblock:protector/entity_count_start
 
-execute positioned ~ ~1 ~ unless entity @n[type=interaction,tag=flamethrowerdetect,distance=..0.3] run summon interaction ~ ~ ~ {Tags:["flamethrowerdetect"]}
-execute positioned ~ ~1 ~ unless entity @n[type=interaction,tag=flamethrowerdetect,distance=..0.1] as @n[type=interaction,tag=flamethrowerdetect,distance=..0.3] run tp @s ~ ~ ~
+execute positioned ^ ^ ^0.2 positioned ~ ~1 ~ unless entity @n[type=interaction,tag=flamethrowerdetect,distance=..0.3] run summon interaction ~ ~ ~ {Tags:["flamethrowerdetect"]}
+execute positioned ^ ^ ^0.2 positioned ~ ~1 ~ unless entity @n[type=interaction,tag=flamethrowerdetect,distance=..0.1] as @n[type=interaction,tag=flamethrowerdetect,distance=..0.3] run tp @s ~ ~ ~
 
 
 
