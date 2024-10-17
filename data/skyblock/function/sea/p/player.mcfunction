@@ -36,6 +36,7 @@ execute as @s[tag=seaPerm000,scores={sea_crafter=30000}] at @s if entity @n[tag=
 execute as @s[tag=seaPerm000,scores={sea_crafter=20001..29999}] at @s if entity @n[tag=SEAcrafter,distance=0..5] run function skyblock:sea/shop_purchase
 execute at @s if entity @n[tag=SEAcrafter,distance=0..5] run scoreboard players enable @s sea_crafter
 
+execute if score @s SEA_if_spying matches 1.. run function skyblock:sea/p/spyglass_pointout
 
 execute at @s \
 if block ~ ~-1 ~ water \
