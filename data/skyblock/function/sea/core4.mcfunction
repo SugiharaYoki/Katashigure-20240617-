@@ -20,3 +20,7 @@ execute store result score @n[tag=sc] sea_player run execute if entity @a[tag=SE
 execute unless entity @a[tag=SEAPT] if entity @a[x=90074,y=92,z=139,distance=0..50,gamemode=!spectator] run function skyblock:sea/endgame_regen
 
 
+
+execute as @s[nbt=!{Fire:-1s}] run playsound entity.silverfish.hurt hostile @a ~ ~ ~ 1 1.3
+execute as @s[nbt=!{Fire:-1s}] run playsound entity.generic.burn hostile @a ~ ~ ~ 1 0.8
+execute as @s[nbt=!{Fire:-1s}] run effect give @s instant_damage 3 0 true

@@ -25,6 +25,8 @@ execute as @s[tag=sea_exp_thunderrage] run function skyblock:sea/experimental/th
 execute as @s[tag=sea_exp_thunderblast] run function skyblock:sea/experimental/thunderblast
 
 
+execute if score @s SEA_if_spying matches 1.. run function skyblock:sea/p/spyglass_pointout
+
 #execute as @s[tag=sea_t_parry1,nbt=!{SelectedItem:{id:"minecraft:shield"}}] run scoreboard players set @s sea_shield_switch 20
 #execute as @s[tag=sea_t_parry1,nbt=!{SelectedItem:{id:"minecraft:shield"}}] run scoreboard players set @s sea_shielding 0
 #execute as @s[tag=sea_t_parry1,nbt={SelectedItem:{id:"minecraft:shield"}}] run scoreboard players remove @s sea_shield_switch 1
