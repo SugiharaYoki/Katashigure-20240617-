@@ -15,6 +15,8 @@ effect give @s fire_resistance 1 0 false
 tag @s add sea_t_parry1
 tag @s add sea_t_axeparry1
 
+scoreboard players set @s SEA_if_spying 0
+
 team join SEA @s
 tag @s add Gaming
 tag @s add NoMultiMenu
