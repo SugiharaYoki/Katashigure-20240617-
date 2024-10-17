@@ -8,7 +8,7 @@ execute if score @s SEA_if_spying matches 0 run kill @e[tag=SEA_spyglass_pointou
 
 
 
-execute if score @s SEA_if_spying matches 1.. unless score @n[tag=SEA_spyglass_pointout_marker] SEAPT_member_eternal = @s SEAPT_member_eternal run summon marker ~ ~1 ~ {Tags:["SEA_spyglass_pointout_marker"]}
+execute if score @s SEA_if_spying matches 1.. unless entity @e[tag=SEA_spyglass_pointout_marker,scores={SEAPT_member_eternal=-1..}] run summon marker ~ ~1 ~ {Tags:["SEA_spyglass_pointout_marker"]}
 execute if score @s SEA_if_spying matches 1.. as @n[tag=SEA_spyglass_pointout_marker] at @s unless entity @s[scores={SEAPT_member_eternal=1..}] run scoreboard players set @s SEAPT_member_eternal 0
 execute if score @s SEA_if_spying matches 1.. run scoreboard players operation @n[tag=SEA_spyglass_pointout_marker,scores={SEAPT_member_eternal=0}] SEAPT_member_eternal = @s SEAPT_member_eternal
 
