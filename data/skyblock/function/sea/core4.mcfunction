@@ -21,6 +21,6 @@ execute unless entity @a[tag=SEAPT] if entity @a[x=90074,y=92,z=139,distance=0..
 
 
 
-execute as @s[nbt=!{Fire:-1s}] run playsound entity.silverfish.hurt hostile @a ~ ~ ~ 1 1.3
-execute as @s[nbt=!{Fire:-1s}] run playsound entity.generic.burn hostile @a ~ ~ ~ 1 0.8
-execute as @s[nbt=!{Fire:-1s}] run effect give @s instant_damage 3 0 true
+execute as @e[type=silverfish,tag=SEAmob,x=90000,y=0,z=0,distance=..3000,nbt=!{Fire:-1s}] run playsound entity.silverfish.hurt hostile @a ~ ~ ~ 1 1.3
+execute as @e[type=silverfish,tag=SEAmob,x=90000,y=0,z=0,distance=..3000,nbt=!{Fire:-1s}] run playsound entity.generic.burn hostile @a ~ ~ ~ 1 0.8
+execute as @e[type=silverfish,tag=SEAmob,x=90000,y=0,z=0,distance=..3000,nbt=!{Fire:-1s}] run effect give @s instant_damage 3 0 true
