@@ -17,8 +17,8 @@ execute store result score @e[type=endermite,x=90000,y=100,z=100,distance=..3000
 execute as @e[type=endermite,scores={rng1=1..5},x=90000,y=100,z=100,distance=..3000] at @s run playsound minecraft:entity.endermite.ambient hostile @s ~ ~ ~ 0.5 1.3
 execute as @e[type=endermite,scores={rng1=6..8},x=90000,y=100,z=100,distance=..3000] at @s as @a[tag=SEAPT,distance=0..5.5] at @s run playsound ambient.basalt_deltas.additions hostile @a ~ ~ ~ 1.3 1.5
 
-execute positioned ~ ~1 ~ as @n[type=interaction,tag=flamethrowerdetect] as @e[type=interaction,tag=flamethrowerdetect,distance=0.3..] at @s positioned ~ ~-1 ~ unless entity @a[tag=SEAPT,distance=0..0.3] run kill @s
-execute as @a at @s if entity @s[nbt={SelectedItem:{id:"minecraft:shears",components:{"minecraft:custom_data":{sea_flamethrower:true}}}}] run function skyblock:sea/p/flamethrower
+execute as @a[tag=SEAPT] at @s positioned ^ ^ ^0.2 positioned ~ ~1 ~ as @n[type=interaction,tag=flamethrowerdetect] as @e[type=interaction,tag=flamethrowerdetect,distance=0.3..] at @s positioned ~ ~-1 ~ unless entity @a[tag=SEAPT,distance=0..1] run kill @s
+execute as @a at @s if items entity @s weapon.mainhand shears[custom_data={sea_flamethrower:true}] run function skyblock:sea/p/flamethrower
 
 execute as @a[tag=SEAPT] at @s run function skyblock:sea/p/player_fast
 
