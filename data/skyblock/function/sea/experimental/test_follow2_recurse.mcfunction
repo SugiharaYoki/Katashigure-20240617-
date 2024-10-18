@@ -32,7 +32,7 @@ execute as @n[tag=SEA_follow_target_destination] at @s run function skyblock:sea
 
 
 
-execute unless entity @e[tag=SEA_follow_target_destination] if entity @p[tag=SEA_follow_target,distance=..30] run function skyblock:sea/experimental/test_follow2_recurse
+execute unless entity @e[tag=SEA_follow_target_destination] run function skyblock:sea/experimental/test_follow2_recurse
 
 
 
