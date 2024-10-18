@@ -14,4 +14,4 @@ execute as @e[tag=SEA_follow_target_marker] unless score @s rng1 matches -999.. 
 
 execute as @e[tag=SEA_follow_target_marker] at @s as @p[tag=SEA_follow_target,distance=..3] at @s run tag @n[tag=SEA_follow_target_marker] add SEA_follow_target_destination
 
-execute unless entity @n[tag=SEA_follow_target_destination] if entity @p[tag=SEA_follow_target,distance=..30] run function skyblock:sea/experimental/test_follow2_recurse
+execute unless entity @n[tag=SEA_follow_target_destination] if entity @p[tag=SEA_follow_target,distance=..30] if entity @n[tag=SEA_follow_target_origin,scores={rng1=..10}] run function skyblock:sea/experimental/test_follow2_recurse
