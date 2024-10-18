@@ -27,6 +27,7 @@ execute if entity @n[tag=SEA_follow_target_destination] as @e[tag=SEA_follow_tar
 
 execute as @n[tag=SEA_follow_target_destination] at @s run kill @e[tag=SEA_follow_target_destination,distance=0.1..]
 
+execute as @n[tag=SEA_follow_target_destination] at @s run tellraw @a {"text": "SEA_follow 已搜索到终点","color": "dark_green"}
 execute as @n[tag=SEA_follow_target_destination] at @s run function skyblock:sea/experimental/test_follow2_recurseback
 
 
