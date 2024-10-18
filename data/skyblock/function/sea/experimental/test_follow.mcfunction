@@ -14,7 +14,7 @@ execute at @s[tag=SEA_follow] at @p[tag=SEA_follow_target] at @n[tag=SEA_follow_
 
 execute at @s[tag=SEA_follow] rotated ~ 0 run tp @s ~ ~ ~ facing entity @n[tag=SEA_follow_target_marker]
 execute at @s[tag=SEA_follow] run tp @s ^ ^ ^1
-execute at @s[tag=SEA_follow] run scoreboard players add @s rng1 10
+execute at @s[tag=SEA_follow] run scoreboard players add @s rng1 5
 
 kill @e[type=marker,tag=SEA_follow_target_marker]
 
