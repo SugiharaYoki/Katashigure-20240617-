@@ -13,3 +13,4 @@ execute if entity @s[tag=success] run summon marker ~ ~ ~ {Tags:["SEA_follow_tar
 execute if entity @s[tag=success2] unless entity @n[tag=SEA_follow_target_marker] run summon marker ~ ~1 ~ {Tags:["SEA_follow_target_marker"]} 
 
 tag @s remove success
+tag @s remove success2
