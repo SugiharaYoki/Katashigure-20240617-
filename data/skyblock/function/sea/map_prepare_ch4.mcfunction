@@ -274,6 +274,22 @@ setblock 90171 44 126 chest[facing=north]
 item replace block 90171 44 126 container.12 with emerald 5
 item replace block 90171 44 126 container.14 with gunpowder 1
 
+setblock 90196 44 131 chest[facing=north]
+setblock 90192 44 131 chest[facing=north]
+setblock 90196 46 131 chest[facing=north]
+setblock 90192 46 131 chest[facing=north]
+setblock 90194 47 131 chest[facing=north]
+
+item replace block 90192 44 131 container.13 with bread 2
+item replace block 90196 46 131 container.12 with honey_bottle 1
+item replace block 90196 46 131 container.14 with honey_bottle 1
+item replace block 90194 47 131 container.13 with golden_carrot 1
+
+
+
+
+
+
 #最终大厅 第七章入口
 setblock 90154 18 134 minecraft:waxed_copper_bulb[lit=false]
 setblock 90154 18 126 minecraft:waxed_copper_bulb[lit=false]
