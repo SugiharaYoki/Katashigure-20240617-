@@ -28,6 +28,6 @@ kill @e[type=marker,tag=SEA_follow_target_marker]
 
 execute if score @s[scores={rng1=..0}] rng4 matches 0 run kill @e[type=marker,tag=SEA_follow_target_marker_previous]
 
-tellraw @a[tag=SEA_follow_target] {"score":{"name":"@s","objective":"rng4"},"color":"green"}
+#tellraw @a[tag=SEA_follow_target] {"score":{"name":"@s","objective":"rng4"},"color":"green"}
 
 tag @s remove SEA_follow
