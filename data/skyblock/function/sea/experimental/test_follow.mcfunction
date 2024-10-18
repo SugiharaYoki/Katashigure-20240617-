@@ -16,7 +16,7 @@ execute at @s[tag=SEA_follow] positioned ~-0.5 ~ ~ run function skyblock:sea/exp
 
 execute at @s[tag=SEA_follow] run summon marker ~ ~ ~ {Tags:["SEA_follow_target_marker_previous"]} 
 
-execute store result score @s rng4 if entity @n[tag=SEA_follow_target_marker]
+execute store result score @s[scores={rng1=..0}] rng4 if entity @n[tag=SEA_follow_target_marker]
 
 execute at @s[tag=SEA_follow] at @p[tag=SEA_follow_target] at @n[tag=SEA_follow_target_marker] run kill @e[type=marker,tag=SEA_follow_target_marker,distance=0.2..8]
 
@@ -26,7 +26,7 @@ execute at @s[tag=SEA_follow] if entity @n[tag=SEA_follow_target_marker] run sco
 
 kill @e[type=marker,tag=SEA_follow_target_marker]
 
-execute if score @s rng4 matches 0 run kill @e[type=marker,tag=SEA_follow_target_marker_previous]
+execute if score @s[scores={rng1=..0}] rng4 matches 0 run kill @e[type=marker,tag=SEA_follow_target_marker_previous]
 
 tellraw @a[tag=SEA_follow_target] {"score":{"name":"@s","objective":"rng4"},"color":"green"}
 
