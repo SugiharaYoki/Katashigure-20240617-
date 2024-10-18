@@ -1,3 +1,6 @@
+kill @e[tag=SEA_follow_target_origin]
+kill @e[tag=SEA_follow_target_marker]
+
 execute at @s unless entity @n[tag=SEA_follow_target_origin] run summon marker ~ ~ ~ {Tags:["SEA_follow_target_origin"]} 
 
 execute store result score SEA_follow_overload rng1 if entity @e[tag=SEA_follow_target_marker]
