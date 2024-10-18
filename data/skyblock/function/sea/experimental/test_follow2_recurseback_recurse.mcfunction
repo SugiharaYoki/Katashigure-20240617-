@@ -1,5 +1,5 @@
 scoreboard players remove SEA_follow_target_step rng1 1
-scoreboard players set SEA_follow_target_step rng1 -1
+scoreboard players set @s rng1 -1
 
 tag @s add SEA_follow_target_stepped
 
