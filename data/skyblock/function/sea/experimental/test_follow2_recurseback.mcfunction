@@ -6,7 +6,7 @@ execute as @n[tag=SEA_follow_target_destination] at @s run kill @e[tag=SEA_follo
 
 execute as @e[tag=SEA_follow_target_marker,distance=0.1..] at @s if score @s rng1 = @n[tag=SEA_follow_target_step] rng1 run tag @s add optimizing
 execute as @e[tag=SEA_follow_target_marker,distance=0.1..] at @s if score @s rng1 = @n[tag=SEA_follow_target_step] rng1 run tellraw @a {"text": "SEA_follow 已寻找到step的分数适配对象","color": "dark_gray"}
-execute as @n[tag=optimizing,distance=0.1..] at @s run tag @s add optimized
+execute as @n[tag=optimizing] at @s run tag @s add optimized
 execute as @n[tag=optimizing,distance=0.1..] at @s run tellraw @a {"text": "SEA_follow 已决定最佳适配对象","color": "dark_gray"}
 execute unless entity @n[tag=optimizing,distance=0.1..] at @s run tellraw @a {"text": "SEA_follow 无法寻找到下一个适配对象","color": "dark_red"}
 execute as @n[tag=optimizing,distance=0.1..] at @s run tag @e[tag=optimizing] remove optimizing
