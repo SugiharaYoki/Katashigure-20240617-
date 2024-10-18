@@ -10,8 +10,6 @@ execute if score SEA_follow_target_step rng1 matches 1.. as @p[tag=SEA_follow_ta
 execute if score SEA_follow_target_step rng1 matches 1.. as @p[tag=SEA_follow_target] at @s as @n[tag=SEA_follow_target_traceback] at @s as @e[tag=SEA_follow_target_marker,distance=0.3..] if score @s rng1 >= SEA_follow_target_step rng1 run kill @s
 
 
-execute as @n[tag=SEA_follow_target_traceback] at @s run tag @s add SEA_follow_target_stepped
-execute as @n[tag=SEA_follow_target_traceback] at @s run scoreboard players set @s rng1 -1
 
 execute as @n[tag=SEA_follow_target_traceback] at @s run function skyblock:sea/experimental/test_follow2_recurseback_recurse
 
