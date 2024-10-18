@@ -15,12 +15,12 @@ execute at @s[tag=SEA_follow] positioned ~ ~ ~-0.5 run function skyblock:sea/exp
 execute at @s[tag=SEA_follow] positioned ~0.5 ~ ~ run function skyblock:sea/experimental/test_follow_available
 execute at @s[tag=SEA_follow] positioned ~-0.5 ~ ~ run function skyblock:sea/experimental/test_follow_available
 
-#execute store result score @s rng4 if entity @e[tag=SEA_follow_target_marker]
+execute store result score @s rng4 if entity @e[tag=SEA_follow_target_marker]
 
-execute at @s[tag=SEA_follow] positioned ~ ~ ~1.5 run function skyblock:sea/experimental/test_follow_available
-execute at @s[tag=SEA_follow] positioned ~ ~ ~-1.5 run function skyblock:sea/experimental/test_follow_available
-execute at @s[tag=SEA_follow] positioned ~1.5 ~ ~ run function skyblock:sea/experimental/test_follow_available
-execute at @s[tag=SEA_follow] positioned ~-1.5 ~ ~ run function skyblock:sea/experimental/test_follow_available
+execute at @s[tag=SEA_follow,scores={rng4=..0}] positioned ~ ~ ~1.5 run function skyblock:sea/experimental/test_follow_available
+execute at @s[tag=SEA_follow,scores={rng4=..0}] positioned ~ ~ ~-1.5 run function skyblock:sea/experimental/test_follow_available
+execute at @s[tag=SEA_follow,scores={rng4=..0}] positioned ~1.5 ~ ~ run function skyblock:sea/experimental/test_follow_available
+execute at @s[tag=SEA_follow,scores={rng4=..0}] positioned ~-1.5 ~ ~ run function skyblock:sea/experimental/test_follow_available
 
 execute store result score @s rng4 if entity @e[tag=SEA_follow_target_marker]
 
