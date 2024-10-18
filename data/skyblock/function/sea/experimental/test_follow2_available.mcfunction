@@ -19,3 +19,4 @@ execute if entity @s[tag=success2] run summon marker ~ ~1 ~ {Tags:["SEA_follow_t
 
 tag @s remove success
 tag @s remove success2
+tag @s remove success3
