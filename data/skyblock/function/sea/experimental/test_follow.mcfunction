@@ -9,11 +9,12 @@ execute at @s if entity @p[tag=SEA_follow_target,distance=3..20] run tag @s[scor
 
 execute at @s[tag=SEA_follow] rotated ~ 0 run tp @s ~ ~ ~ facing entity @p[tag=SEA_follow_target]
 
-execute at @s[tag=SEA_follow] run summon marker ~ ~ ~ {Tags:["SEA_follow_target_marker_previous"]} 
 execute at @s[tag=SEA_follow] positioned ~ ~ ~0.5 run function skyblock:sea/experimental/test_follow_available
 execute at @s[tag=SEA_follow] positioned ~ ~ ~-0.5 run function skyblock:sea/experimental/test_follow_available
 execute at @s[tag=SEA_follow] positioned ~0.5 ~ ~ run function skyblock:sea/experimental/test_follow_available
 execute at @s[tag=SEA_follow] positioned ~-0.5 ~ ~ run function skyblock:sea/experimental/test_follow_available
+
+execute at @s[tag=SEA_follow] run summon marker ~ ~ ~ {Tags:["SEA_follow_target_marker_previous"]} 
 
 execute store result score @s rng4 if entity @n[tag=SEA_follow_target_marker]
 
