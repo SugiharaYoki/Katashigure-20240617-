@@ -25,7 +25,7 @@ execute as @e[tag=SEA_follow_target_marker] at @s as @p[tag=SEA_follow_target,di
 
 execute if entity @n[tag=SEA_follow_target_destination] as @e[tag=SEA_follow_target_marker] at @s run particle end_rod ~ ~1 ~ 0 0 0 0 1
 
-
+execute as @n[tag=SEA_follow_target_destination] at @s run kill @e[tag=SEA_follow_target_destination,distance=0.1..]
 
 execute as @n[tag=SEA_follow_target_destination] at @s run function skyblock:sea/experimental/test_follow2_recurseback
 
