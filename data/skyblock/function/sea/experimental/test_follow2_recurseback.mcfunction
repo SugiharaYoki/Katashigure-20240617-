@@ -15,5 +15,5 @@ tellraw @a {"text": "SEA_follow 进行最优回归搜索","color": "dark_gray"}
 
 tag @s remove SEA_follow_target_step
 
-execute if entity @n[tag=SEA_follow_target_destination,scores={rng1=0..}] as @n[tag=optimized,tag=!SEA_follow_target_stepped] at @s run function skyblock:sea/experimental/test_follow2_recurseback
-execute if entity @n[tag=SEA_follow_target_destination,scores={rng1=..-1}] as @e[tag=optimized] at @s run particle end_rod ~ ~1 ~ 0 3 0 0 80
+execute if entity @n[tag=SEA_follow_target_destination,scores={rng1=1..}] as @n[tag=optimized,tag=!SEA_follow_target_stepped] at @s run function skyblock:sea/experimental/test_follow2_recurseback
+execute if entity @n[tag=SEA_follow_target_destination,scores={rng1=..0}] as @e[tag=optimized] at @s run particle end_rod ~ ~1 ~ 0 3 0 0 80
