@@ -1,13 +1,13 @@
-execute unless entity @e[tag=SEA_follow_target_destination] run scoreboard players add @n[tag=SEA_follow_target_origin] rng1 1
+execute run scoreboard players add @n[tag=SEA_follow_target_origin] rng1 1
 
 
-execute unless entity @e[tag=SEA_follow_target_destination] run tellraw @a [{"text": "SEA_follow 进行递归 ","color": "dark_gray"},{"score":{"name":"@n[tag=SEA_follow_target_origin]","objective":"rng1"},"color":"dark_gray"}]
+execute run tellraw @a [{"text": "SEA_follow 进行递归 ","color": "dark_gray"},{"score":{"name":"@n[tag=SEA_follow_target_origin]","objective":"rng1"},"color":"dark_gray"}]
 
-execute unless entity @e[tag=SEA_follow_target_destination] if entity @n[tag=SEA_follow_target_origin,scores={rng1=11..}] unless entity @p[tag=SEA_follow_target] run tag @n[tag=SEA_follow_target_marker] add SEA_follow_target_destination
-execute unless entity @e[tag=SEA_follow_target_destination] if entity @n[tag=SEA_follow_target_origin,scores={rng1=11..}] unless entity @n[tag=SEA_follow_target_marker] run tag @n[tag=SEA_follow_target_origin] add SEA_follow_target_destination
-execute unless entity @e[tag=SEA_follow_target_destination] if entity @n[tag=SEA_follow_target_origin,scores={rng1=11..}] unless entity @n[tag=SEA_follow_target_marker] run tellraw @a {"text": "SEA_follow 无法搜索到任何marker","color": "dark_red"}
-execute unless entity @e[tag=SEA_follow_target_destination] if entity @n[tag=SEA_follow_target_origin,scores={rng1=11..}] run tellraw @a {"text": "SEA_follow 无法搜索到有效终点","color": "dark_red"}
-execute unless entity @e[tag=SEA_follow_target_destination] if entity @n[tag=SEA_follow_target_origin,scores={rng1=11..}] as @p[tag=SEA_follow_target] at @s run tag @n[tag=SEA_follow_target_marker] add SEA_follow_target_destination
+execute if entity @n[tag=SEA_follow_target_origin,scores={rng1=11..}] unless entity @p[tag=SEA_follow_target] run tag @n[tag=SEA_follow_target_marker] add SEA_follow_target_destination
+execute if entity @n[tag=SEA_follow_target_origin,scores={rng1=11..}] unless entity @n[tag=SEA_follow_target_marker] run tag @n[tag=SEA_follow_target_origin] add SEA_follow_target_destination
+execute if entity @n[tag=SEA_follow_target_origin,scores={rng1=11..}] unless entity @n[tag=SEA_follow_target_marker] run tellraw @a {"text": "SEA_follow 无法搜索到任何marker","color": "dark_red"}
+execute if entity @n[tag=SEA_follow_target_origin,scores={rng1=11..}] run tellraw @a {"text": "SEA_follow 无法搜索到有效终点","color": "dark_red"}
+execute if entity @n[tag=SEA_follow_target_origin,scores={rng1=11..}] as @p[tag=SEA_follow_target] at @s run tag @n[tag=SEA_follow_target_marker] add SEA_follow_target_destination
 
 execute at @e[tag=SEA_follow_target_marker] positioned ~ ~ ~1 run function skyblock:sea/experimental/test_follow2_available
 execute at @e[tag=SEA_follow_target_marker] positioned ~ ~ ~-1 run function skyblock:sea/experimental/test_follow2_available
