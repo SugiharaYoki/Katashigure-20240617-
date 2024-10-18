@@ -27,7 +27,8 @@ execute at @s[tag=SEA_follow,scores={rng4=..0}] positioned ~-1.5 ~ ~ run functio
 
 execute store result score @s rng4 if entity @n[tag=SEA_follow_target_marker]
 
-execute at @s[tag=SEA_follow,scores={rng4=2..}] at @n[tag=SEA_follow_target_marker_previous] run kill @e[type=marker,tag=SEA_follow_target_marker,distance=0.2..0.5]
+execute at @s[tag=SEA_follow,scores={rng4=2..}] at @e[tag=SEA_follow_target_marker_previous] store result score @s rng8 if entity @n[tag=SEA_follow_target_marker,distance=0.6..]
+execute at @s[tag=SEA_follow,scores={rng4=2..,rng8=1..}] at @e[tag=SEA_follow_target_marker_previous] run kill @n[tag=SEA_follow_target_marker,distance=0..0.6]
 execute at @s[tag=SEA_follow] at @p[tag=SEA_follow_target] at @n[tag=SEA_follow_target_marker] run kill @e[type=marker,tag=SEA_follow_target_marker,distance=0.2..8]
 
 execute at @s[tag=SEA_follow] if entity @n[tag=SEA_follow_target_marker] rotated ~ 0 run tp @s ~ ~ ~ facing entity @n[tag=SEA_follow_target_marker]
