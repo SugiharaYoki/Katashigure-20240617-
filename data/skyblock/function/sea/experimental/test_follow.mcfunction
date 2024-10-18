@@ -32,6 +32,8 @@ execute store result score @s rng4 if entity @e[tag=SEA_follow_target_marker]
 
 execute at @s[tag=SEA_follow,scores={rng4=2..}] at @n[tag=SEA_follow_target_marker_origin] run kill @n[tag=SEA_follow_target_marker,type=marker]
 
+execute store result score @s rng4 if entity @e[tag=SEA_follow_target_marker]
+
 execute at @s[tag=SEA_follow] run summon marker ~ ~ ~ {Tags:["SEA_follow_target_marker_previous"]} 
 execute at @s[tag=SEA_follow] unless entity @n[tag=SEA_follow_target_marker_origin] run summon marker ~ ~ ~ {Tags:["SEA_follow_target_marker_origin","SEA_follow_target_marker_previous"]} 
 
