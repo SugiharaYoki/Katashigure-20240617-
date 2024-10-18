@@ -5,8 +5,8 @@ execute if block ~ ~ ~ air if block ~ ~1 ~ air unless block ~ ~-1 ~ air unless b
 
 execute if block ~ ~1 ~ air if block ~ ~2 ~ air unless block ~ ~ ~ air unless block ~ ~ ~ water unless block ~ ~ ~ lava run tag @s add success2
 
-execute if entity @n[tag=SEA_follow_target_marker_previous,distance=0..0.3] run tag @s remove success
-execute if entity @n[tag=SEA_follow_target_marker_previous,distance=0..0.3] run tag @s remove success2
+execute if entity @n[tag=SEA_follow_target_marker_previous,distance=0..0.2] run tag @s remove success
+execute if entity @n[tag=SEA_follow_target_marker_previous,distance=0..0.2] run tag @s remove success2
 
 
 execute if entity @s[tag=success] run summon marker ~ ~ ~ {Tags:["SEA_follow_target_marker"]} 
