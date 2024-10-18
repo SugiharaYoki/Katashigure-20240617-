@@ -27,7 +27,7 @@ execute if entity @n[tag=SEA_follow_target_destination] as @e[tag=SEA_follow_tar
 
 
 
-execute as @n[tag=SEA_follow_target_destination] run function skyblock:sea/experimental/test_follow2_recurseback
+execute as @n[tag=SEA_follow_target_destination] at @s run function skyblock:sea/experimental/test_follow2_recurseback
 
 
 
