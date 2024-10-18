@@ -8,4 +8,6 @@ execute if score SEA_follow_target_step rng1 matches 1.. as @p[tag=SEA_follow_ta
 
 tellraw @a {"text": "SEA_follow 最优回归搜索中","color": "dark_gray"}
 
+execute if score SEA_follow_target_step rng1 matches 0 run tellraw @a {"text": "SEA_follow 最优回归搜索完毕","color": "dark_green"}
+
 execute if score SEA_follow_target_step rng1 matches 1.. as @n[tag=SEA_follow_target_stepping,tag=!SEA_follow_target_stepped] at @s run function skyblock:sea/experimental/test_follow2_recurseback_recurse
