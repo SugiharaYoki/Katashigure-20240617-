@@ -6,6 +6,6 @@ execute if entity @n[tag=SEA_follow_target_stepped] at @s run tp @s ^ ^ ^0.5
 execute as @n[tag=SEA_follow_target_stepped,distance=0..0.6] run kill @s
 
 
-execute unless entity @n[tag=SEA_follow_target_stepped] run function skyblock:sea/experimental/test_follow2
+execute unless entity @n[tag=SEA_follow_target_origin] run function skyblock:sea/experimental/test_follow2
 
 tag @s remove SEA_follow
