@@ -41,6 +41,10 @@ summon minecraft:marker 90194 44 130 {Tags:["SEAcrafter_tp","SEAcrafter_tp13"]}
 
 
 
+setblock 90178 45 112 minecraft:potted_azalea_bush
+setblock 90178 45 124 minecraft:potted_azalea_bush
+
+
 summon minecraft:interaction 90164 14.3 98 {CustomName:'[{"text":"器械式治疗仪"}]',Tags:["SEAaidbox"]}
 
 setblock 90188 14 89 chest[facing=west]
