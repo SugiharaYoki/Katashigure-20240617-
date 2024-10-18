@@ -13,7 +13,7 @@ execute as @e[tag=optimizing,tag=!optimized,tag=SEA_follow_target_marker] run ki
 
 tellraw @a {"text": "SEA_follow 进行最优回归搜索","color": "dark_gray"}
 
-tag @e remove optimizing
+tag @e[tag=SEA_follow_target_marker] remove optimizing
 
 tag @s remove SEA_follow_target_step
 
