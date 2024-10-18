@@ -16,6 +16,9 @@ execute as @e[tag=SEA_follow_target_marker] at @s as @p[tag=SEA_follow_target,di
 
 execute unless entity @n[tag=SEA_follow_target_destination] if entity @p[tag=SEA_follow_target,distance=..30] if entity @n[tag=SEA_follow_target_origin,scores={rng1=..10}] run function skyblock:sea/experimental/test_follow2_recurse
 
-say hi
+
+execute unless entity @n[tag=SEA_follow_target_destination] run say hi1
+execute unless entity @n[tag=SEA_follow_target_destination] if entity @p[tag=SEA_follow_target,distance=..30] run say hi2
+execute unless entity @n[tag=SEA_follow_target_destination] if entity @p[tag=SEA_follow_target,distance=..30] if entity @n[tag=SEA_follow_target_origin,scores={rng1=..10}] run say hi3
 
 execute if entity @n[tag=SEA_follow_target_destination] as @e[tag=SEA_follow_target_marker] at @s run particle end_rod ~ ~1 ~ 0 0 0 0 1
