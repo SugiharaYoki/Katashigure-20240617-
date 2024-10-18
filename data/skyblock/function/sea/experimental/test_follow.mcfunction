@@ -28,9 +28,10 @@ execute store result score @s rng4 if entity @e[tag=SEA_follow_target_marker]
 
 
 execute at @s[tag=SEA_follow] at @n[tag=SEA_follow_target_marker_origin] as @e[tag=SEA_follow_target_marker,type=marker,limit=1,sort=furthest] at @s run tag @s add suspected
+execute at @s[tag=SEA_follow] at @n[tag=SEA_follow_target_marker_origin] as @e[tag=SEA_follow_target_marker,type=marker,limit=1,sort=nearest] at @s run tag @s add returned
 execute at @s[tag=SEA_follow] at @p[tag=SEA_follow_target] as @n[tag=SEA_follow_target_marker] at @s run tag @s add optimized
 execute at @s[tag=SEA_follow] as @n[tag=SEA_follow_target_marker,tag=suspected,tag=optimized] at @s run kill @e[tag=SEA_follow_target_marker,distance=0.3..]
-execute at @s[tag=SEA_follow] as @n[tag=SEA_follow_target_marker,tag=suspected,tag=!optimized] at @s run kill @e[tag=SEA_follow_target_marker,tag=optimized,distance=0.3..]
+execute at @s[tag=SEA_follow] as @n[tag=SEA_follow_target_marker,tag=returned,tag=optimized] at @s run kill @s
 
 
 execute store result score @s rng4 if entity @e[tag=SEA_follow_target_marker]
