@@ -1,6 +1,10 @@
 execute store result score @s rng2 run random value 1..2
 scoreboard players remove @s rng1 1
 
+
+execute as @e[tag=SEA_follow_target_marker] run particle end_rod ~ ~1 ~ 0 1 0 0 5
+execute as @e[tag=SEA_follow_target_marker_previous] run particle end_rod ~ ~ ~ 0 0 0 0 1
+
 execute at @s if entity @p[tag=SEA_follow_target,distance=3..20] run tag @s[scores={rng1=..0}] add SEA_follow
 
 execute at @s[tag=SEA_follow] rotated ~ 0 run tp @s ~ ~ ~ facing entity @p[tag=SEA_follow_target]
