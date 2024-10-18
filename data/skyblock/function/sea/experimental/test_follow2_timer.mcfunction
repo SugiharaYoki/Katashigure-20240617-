@@ -12,4 +12,4 @@ execute if entity @n[tag=SEA_follow_target_origin,distance=0..0.7] run kill @e[t
 
 execute unless entity @n[tag=SEA_follow_target_origin] run function skyblock:sea/experimental/test_follow2
 
-tag @s remove SEA_follow
+tag @s remove SEA_follow1
