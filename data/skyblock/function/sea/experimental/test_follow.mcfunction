@@ -29,7 +29,7 @@ execute store result score @s rng4 if entity @e[tag=SEA_follow_target_marker]
 
 execute at @s[tag=SEA_follow] at @n[tag=SEA_follow_target_marker_origin] as @e[tag=SEA_follow_target_marker,type=marker,limit=1,sort=furthest] at @s run tag @s add suspected
 execute at @s[tag=SEA_follow] at @p[tag=SEA_follow_target] at @n[tag=SEA_follow_target_marker] at @s run tag @s add optimized
-execute at @s[tag=SEA_follow] as @n[tag=suspected,tag=optimized] at @s run kill @e[tag=SEA_follow_target_marker,distance=0.3..]
+execute at @s[tag=SEA_follow] as @n[tag=SEA_follow_target_marker,tag=suspected,tag=optimized] at @s run kill @e[tag=SEA_follow_target_marker,distance=0.3..]
 
 
 execute store result score @s rng4 if entity @e[tag=SEA_follow_target_marker]
@@ -37,7 +37,7 @@ execute store result score @s rng4 if entity @e[tag=SEA_follow_target_marker]
 execute at @s[tag=SEA_follow] run summon marker ~ ~ ~ {Tags:["SEA_follow_target_marker_previous"]} 
 execute at @s[tag=SEA_follow] unless entity @n[tag=SEA_follow_target_marker_origin] run summon marker ~ ~ ~ {Tags:["SEA_follow_target_marker_origin","SEA_follow_target_marker_previous"]} 
 
-execute at @s[tag=SEA_follow,scores={rng4=2..}] at @n[tag=optimized] run kill @e[type=marker,tag=SEA_follow_target_marker,distance=0.2..8]
+execute at @s[tag=SEA_follow,scores={rng4=2..}] at @n[tag=SEA_follow_target_marker,tag=optimized] run kill @e[type=marker,tag=SEA_follow_target_marker,distance=0.2..8]
 
 execute at @s[tag=SEA_follow] if entity @n[tag=SEA_follow_target_marker] rotated ~ 0 run tp @s ~ ~ ~ facing entity @n[tag=SEA_follow_target_marker]
 execute at @s[tag=SEA_follow] if entity @n[tag=SEA_follow_target_marker] run tp @s ^ ^ ^0.5
