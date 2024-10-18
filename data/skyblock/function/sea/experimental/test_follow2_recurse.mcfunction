@@ -19,7 +19,7 @@ execute as @e[tag=SEA_follow_target_marker] unless score @s rng1 matches -999.. 
 execute as @p[tag=SEA_follow_target] at @s as @n[tag=SEA_follow_target_marker,distance=..3] run tag @s add SEA_follow_target_destination
 
 
-execute if entity @n[tag=SEA_follow_target_destination] as @e[tag=SEA_follow_target_marker] at @s run particle end_rod ~ ~1 ~ 0 0 0 0 1
+#execute if entity @n[tag=SEA_follow_target_destination] as @e[tag=SEA_follow_target_marker] at @s run particle end_rod ~ ~1 ~ 0 0 0 0 1
 
 execute as @n[tag=SEA_follow_target_destination] at @s run kill @e[tag=SEA_follow_target_destination,distance=0.1..]
 
