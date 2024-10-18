@@ -13,6 +13,9 @@
 
 tellraw @a {"text": "SEA_follow 进行最优回归搜索","color": "dark_gray"}
 
+execute as @p[tag=SEA_follow_targer] run tag @n[tag=SEA_follow_target_destination] add SEA_follow_target_traceback
+execute as @e[tag=SEA_follow_target_traceback] run tellraw @a {"text": "SEA_follow 已确认最优回归起点","color": "dark_gray"}
+
 #tag @e[tag=SEA_follow_target_marker] remove optimizing
 
 #tag @s remove SEA_follow_target_step
