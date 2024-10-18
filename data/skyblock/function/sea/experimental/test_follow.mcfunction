@@ -45,6 +45,8 @@ execute at @s[tag=SEA_follow] if entity @n[tag=SEA_follow_target_marker] run sco
 
 kill @e[type=marker,tag=SEA_follow_target_marker]
 
+execute as @n[tag=SEA_follow_target_marker_origin] at @s run kill @e[tag=SEA_follow_target_marker_origin,distance=0.3..]
+
 scoreboard players set @s rng8 0
 
 execute if score @s[scores={rng1=..0}] rng4 matches ..0 run kill @e[type=marker,tag=SEA_follow_target_marker_previous,tag=!SEA_follow_target_marker_origin]
