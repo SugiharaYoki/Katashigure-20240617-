@@ -5,6 +5,8 @@ execute if score SEA_follow_overload rng1 matches 300.. run tellraw @a {"text": 
 execute if score SEA_follow_overload rng1 matches 300.. as @e[tag=SEA_follow_target_marker] at @s as @p[tag=SEA_follow_target] at @s run tag @n[tag=SEA_follow_target_marker] add SEA_follow_target_destination
 execute if score SEA_follow_overload rng1 matches 300.. run kill @e[tag=SEA_follow_target_marker]
 
+tellraw @a {"text": "SEA_follow 进行递归","color": "dark_gray"}
+
 execute if entity @n[tag=SEA_follow_target_origin,scores={rng1=11..}] unless entity @p[tag=SEA_follow_target] run tag @e[tag=SEA_follow_target_marker] add SEA_follow_target_destination
 execute if entity @n[tag=SEA_follow_target_origin,scores={rng1=11..}] unless entity @n[tag=SEA_follow_target_marker] run tag @e[tag=SEA_follow_target_origin] add SEA_follow_target_destination
 execute if entity @n[tag=SEA_follow_target_origin,scores={rng1=11..}] unless entity @n[tag=SEA_follow_target_marker] run tellraw @a {"text": "SEA_follow 无法搜索到任何marker","color": "dark_red"}
