@@ -14,6 +14,10 @@ execute at @s[tag=SEA_follow] positioned ~ ~ ~0.5 run function skyblock:sea/expe
 execute at @s[tag=SEA_follow] positioned ~ ~ ~-0.5 run function skyblock:sea/experimental/test_follow_available
 execute at @s[tag=SEA_follow] positioned ~0.5 ~ ~ run function skyblock:sea/experimental/test_follow_available
 execute at @s[tag=SEA_follow] positioned ~-0.5 ~ ~ run function skyblock:sea/experimental/test_follow_available
+execute at @s[tag=SEA_follow] positioned ~ ~ ~1.5 run function skyblock:sea/experimental/test_follow_available
+execute at @s[tag=SEA_follow] positioned ~ ~ ~-1.5 run function skyblock:sea/experimental/test_follow_available
+execute at @s[tag=SEA_follow] positioned ~1.5 ~ ~ run function skyblock:sea/experimental/test_follow_available
+execute at @s[tag=SEA_follow] positioned ~-1.5 ~ ~ run function skyblock:sea/experimental/test_follow_available
 
 execute at @s[tag=SEA_follow] run summon marker ~ ~ ~ {Tags:["SEA_follow_target_marker_previous"]} 
 execute at @s[tag=SEA_follow] unless entity @n[tag=SEA_follow_target_marker_origin] run summon marker ~ ~ ~ {Tags:["SEA_follow_target_marker_origin","SEA_follow_target_marker_previous"]} 
