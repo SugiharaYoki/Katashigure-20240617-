@@ -13,10 +13,10 @@ execute if entity @n[tag=SEA_follow_target_origin,scores={rng1=11..}] unless ent
 execute if entity @n[tag=SEA_follow_target_origin,scores={rng1=11..}] run tellraw @a {"text": "SEA_follow 无法搜索到有效终点","color": "dark_red"}
 execute if entity @n[tag=SEA_follow_target_origin,scores={rng1=11..}] as @p[tag=SEA_follow_target] at @s run tag @n[tag=SEA_follow_target_marker] add SEA_follow_target_destination
 
-#execute at @e[tag=SEA_follow_target_marker] positioned ~ ~ ~0.5 run function skyblock:sea/experimental/test_follow2_available
-#execute at @e[tag=SEA_follow_target_marker] positioned ~ ~ ~-0.5 run function skyblock:sea/experimental/test_follow2_available
-#execute at @e[tag=SEA_follow_target_marker] positioned ~0.5 ~ ~ run function skyblock:sea/experimental/test_follow2_available
-#execute at @e[tag=SEA_follow_target_marker] positioned ~-0.5 ~ ~ run function skyblock:sea/experimental/test_follow2_available
+execute at @e[tag=SEA_follow_target_marker] positioned ~ ~ ~0.5 run function skyblock:sea/experimental/test_follow2_available
+execute at @e[tag=SEA_follow_target_marker] positioned ~ ~ ~-0.5 run function skyblock:sea/experimental/test_follow2_available
+execute at @e[tag=SEA_follow_target_marker] positioned ~0.5 ~ ~ run function skyblock:sea/experimental/test_follow2_available
+execute at @e[tag=SEA_follow_target_marker] positioned ~-0.5 ~ ~ run function skyblock:sea/experimental/test_follow2_available
 
 execute as @e[tag=SEA_follow_target_marker] unless score @s rng1 matches -999.. run scoreboard players operation @s rng1 = @n[tag=SEA_follow_target_origin] rng1
 
