@@ -31,7 +31,7 @@ execute if entity @n[tag=SEA_follow_target_destination] as @e[tag=SEA_follow_tar
 
 
 
-execute unless entity @n[tag=SEA_follow_target_destination] if entity @p[tag=SEA_follow_target,distance=..30] if entity @n[tag=SEA_follow_target_origin,scores={rng1=..10}] run function skyblock:sea/experimental/test_follow2_recurse
+execute unless entity @n[tag=SEA_follow_target_destination] if entity @p[tag=SEA_follow_target,distance=..30] if entity @n[tag=SEA_follow_target_origin] run function skyblock:sea/experimental/test_follow2_recurse
 
 
 
