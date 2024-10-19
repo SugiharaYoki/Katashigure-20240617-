@@ -10,7 +10,7 @@ playsound minecraft:entity.firework_rocket.twinkle_far player @a ~ ~ ~ 1 1.4
 
 
 summon marker ~ ~ ~ {Tags:["AZR_boss2_stockpile_marker"]}
-tp @n[tag=AZR_boss2_stockpile_marker] ^ ^ ^-1 facing entity @s
+tp @n[tag=AZR_boss2_stockpile_marker] ^ ^ ^-0.1 facing entity @s
 execute as @n[tag=AZR_boss2_stockpile_marker] at @s run tp @s ~ ~1.5 ~
 
 execute as @n[tag=AZR_boss2_stockpile_marker] at @s run tp @s ^ ^ ^0.5
