@@ -14,48 +14,78 @@ tp @n[tag=AZR_boss2_stockpile_marker] ^ ^ ^-0.1 facing entity @s
 execute as @n[tag=AZR_boss2_stockpile_marker] at @s run tp @s ~ ~1.5 ~
 
 execute as @n[tag=AZR_boss2_stockpile_marker] at @s run tp @s ^ ^ ^0.5
-execute as @n[tag=AZR_boss2_stockpile_marker] at @s run particle smoke ~ ~ ~ 0.02 0.02 0.02 0.1 5
+execute as @n[tag=AZR_boss2_stockpile_marker] at @s run particle smoke ~ ~ ~ 0.02 0.02 0.02 0.1 6
 execute as @n[tag=AZR_boss2_stockpile_marker] at @s as @n[tag=SEAmob,distance=0..2] at @s run damage @s 20 arrow
 execute as @n[tag=AZR_boss2_stockpile_marker] at @s if entity @n[tag=SEAmob,distance=0..2] run kill @s
 execute as @n[tag=AZR_boss2_stockpile_marker] at @s unless block ~ ~ ~ air run kill @s
 
 execute as @n[tag=AZR_boss2_stockpile_marker] at @s run tp @s ^ ^ ^0.5
-execute as @n[tag=AZR_boss2_stockpile_marker] at @s run particle white_smoke ~ ~ ~ 0.05 0.05 0.05 0.1 2
+execute as @n[tag=AZR_boss2_stockpile_marker] at @s run particle white_smoke ~ ~ ~ 0.05 0.05 0.05 0.03 2
 execute as @n[tag=AZR_boss2_stockpile_marker] at @s as @n[tag=SEAmob,distance=0..2] at @s run damage @s 20 arrow
 execute as @n[tag=AZR_boss2_stockpile_marker] at @s if entity @n[tag=SEAmob,distance=0..2] run kill @s
 execute as @n[tag=AZR_boss2_stockpile_marker] at @s unless block ~ ~ ~ air run kill @s
 execute as @n[tag=AZR_boss2_stockpile_marker] at @s run tp @s ^ ^ ^0.5
-execute as @n[tag=AZR_boss2_stockpile_marker] at @s run particle white_smoke ~ ~ ~ 0.05 0.05 0.05 0.1 2
+execute as @n[tag=AZR_boss2_stockpile_marker] at @s run particle white_smoke ~ ~ ~ 0.05 0.05 0.05 0.03 2
 execute as @n[tag=AZR_boss2_stockpile_marker] at @s as @n[tag=SEAmob,distance=0..2] at @s run damage @s 20 arrow
 execute as @n[tag=AZR_boss2_stockpile_marker] at @s if entity @n[tag=SEAmob,distance=0..2] run kill @s
 execute as @n[tag=AZR_boss2_stockpile_marker] at @s unless block ~ ~ ~ air run kill @s
 execute as @n[tag=AZR_boss2_stockpile_marker] at @s run tp @s ^ ^ ^0.5
-execute as @n[tag=AZR_boss2_stockpile_marker] at @s run particle white_smoke ~ ~ ~ 0.05 0.05 0.05 0.1 2
+execute as @n[tag=AZR_boss2_stockpile_marker] at @s run particle white_smoke ~ ~ ~ 0.05 0.05 0.05 0.03 2
 execute as @n[tag=AZR_boss2_stockpile_marker] at @s as @n[tag=SEAmob,distance=0..2] at @s run damage @s 20 arrow
 execute as @n[tag=AZR_boss2_stockpile_marker] at @s if entity @n[tag=SEAmob,distance=0..2] run kill @s
 execute as @n[tag=AZR_boss2_stockpile_marker] at @s unless block ~ ~ ~ air run kill @s
 execute as @n[tag=AZR_boss2_stockpile_marker] at @s run tp @s ^ ^ ^0.5
-execute as @n[tag=AZR_boss2_stockpile_marker] at @s run particle white_smoke ~ ~ ~ 0.05 0.05 0.05 0.1 2
+execute as @n[tag=AZR_boss2_stockpile_marker] at @s run particle white_smoke ~ ~ ~ 0.05 0.05 0.05 0.03 2
 execute as @n[tag=AZR_boss2_stockpile_marker] at @s as @n[tag=SEAmob,distance=0..2] at @s run damage @s 20 arrow
 execute as @n[tag=AZR_boss2_stockpile_marker] at @s if entity @n[tag=SEAmob,distance=0..2] run kill @s
 execute as @n[tag=AZR_boss2_stockpile_marker] at @s unless block ~ ~ ~ air run kill @s
 execute as @n[tag=AZR_boss2_stockpile_marker] at @s run tp @s ^ ^ ^0.5
-execute as @n[tag=AZR_boss2_stockpile_marker] at @s run particle white_smoke ~ ~ ~ 0.05 0.05 0.05 0.1 2
+execute as @n[tag=AZR_boss2_stockpile_marker] at @s run particle white_smoke ~ ~ ~ 0.05 0.05 0.05 0.03 2
 execute as @n[tag=AZR_boss2_stockpile_marker] at @s as @n[tag=SEAmob,distance=0..2] at @s run damage @s 20 arrow
 execute as @n[tag=AZR_boss2_stockpile_marker] at @s if entity @n[tag=SEAmob,distance=0..2] run kill @s
 execute as @n[tag=AZR_boss2_stockpile_marker] at @s unless block ~ ~ ~ air run kill @s
 execute as @n[tag=AZR_boss2_stockpile_marker] at @s run tp @s ^ ^ ^0.5
-execute as @n[tag=AZR_boss2_stockpile_marker] at @s run particle white_smoke ~ ~ ~ 0.05 0.05 0.05 0.1 2
+execute as @n[tag=AZR_boss2_stockpile_marker] at @s run particle white_smoke ~ ~ ~ 0.05 0.05 0.05 0.03 2
 execute as @n[tag=AZR_boss2_stockpile_marker] at @s as @n[tag=SEAmob,distance=0..2] at @s run damage @s 20 arrow
 execute as @n[tag=AZR_boss2_stockpile_marker] at @s if entity @n[tag=SEAmob,distance=0..2] run kill @s
 execute as @n[tag=AZR_boss2_stockpile_marker] at @s unless block ~ ~ ~ air run kill @s
 execute as @n[tag=AZR_boss2_stockpile_marker] at @s run tp @s ^ ^ ^0.5
-execute as @n[tag=AZR_boss2_stockpile_marker] at @s run particle white_smoke ~ ~ ~ 0.05 0.05 0.05 0.1 2
+execute as @n[tag=AZR_boss2_stockpile_marker] at @s run particle white_smoke ~ ~ ~ 0.05 0.05 0.05 0.03 2
 execute as @n[tag=AZR_boss2_stockpile_marker] at @s as @n[tag=SEAmob,distance=0..2] at @s run damage @s 20 arrow
 execute as @n[tag=AZR_boss2_stockpile_marker] at @s if entity @n[tag=SEAmob,distance=0..2] run kill @s
 execute as @n[tag=AZR_boss2_stockpile_marker] at @s unless block ~ ~ ~ air run kill @s
 execute as @n[tag=AZR_boss2_stockpile_marker] at @s run tp @s ^ ^ ^0.5
-execute as @n[tag=AZR_boss2_stockpile_marker] at @s run particle white_smoke ~ ~ ~ 0.05 0.05 0.05 0.1 2
+execute as @n[tag=AZR_boss2_stockpile_marker] at @s run particle white_smoke ~ ~ ~ 0.05 0.05 0.05 0.03 2
+execute as @n[tag=AZR_boss2_stockpile_marker] at @s as @n[tag=SEAmob,distance=0..2] at @s run damage @s 20 arrow
+execute as @n[tag=AZR_boss2_stockpile_marker] at @s if entity @n[tag=SEAmob,distance=0..2] run kill @s
+execute as @n[tag=AZR_boss2_stockpile_marker] at @s unless block ~ ~ ~ air run kill @s
+execute as @n[tag=AZR_boss2_stockpile_marker] at @s run tp @s ^ ^ ^0.5
+execute as @n[tag=AZR_boss2_stockpile_marker] at @s run particle white_smoke ~ ~ ~ 0.05 0.05 0.05 0.03 2
+execute as @n[tag=AZR_boss2_stockpile_marker] at @s as @n[tag=SEAmob,distance=0..2] at @s run damage @s 20 arrow
+execute as @n[tag=AZR_boss2_stockpile_marker] at @s if entity @n[tag=SEAmob,distance=0..2] run kill @s
+execute as @n[tag=AZR_boss2_stockpile_marker] at @s unless block ~ ~ ~ air run kill @s
+execute as @n[tag=AZR_boss2_stockpile_marker] at @s run tp @s ^ ^ ^0.5
+execute as @n[tag=AZR_boss2_stockpile_marker] at @s run particle white_smoke ~ ~ ~ 0.05 0.05 0.05 0.03 2
+execute as @n[tag=AZR_boss2_stockpile_marker] at @s as @n[tag=SEAmob,distance=0..2] at @s run damage @s 20 arrow
+execute as @n[tag=AZR_boss2_stockpile_marker] at @s if entity @n[tag=SEAmob,distance=0..2] run kill @s
+execute as @n[tag=AZR_boss2_stockpile_marker] at @s unless block ~ ~ ~ air run kill @s
+execute as @n[tag=AZR_boss2_stockpile_marker] at @s run tp @s ^ ^ ^0.5
+execute as @n[tag=AZR_boss2_stockpile_marker] at @s run particle white_smoke ~ ~ ~ 0.05 0.05 0.05 0.03 2
+execute as @n[tag=AZR_boss2_stockpile_marker] at @s as @n[tag=SEAmob,distance=0..2] at @s run damage @s 20 arrow
+execute as @n[tag=AZR_boss2_stockpile_marker] at @s if entity @n[tag=SEAmob,distance=0..2] run kill @s
+execute as @n[tag=AZR_boss2_stockpile_marker] at @s unless block ~ ~ ~ air run kill @s
+execute as @n[tag=AZR_boss2_stockpile_marker] at @s run tp @s ^ ^ ^0.5
+execute as @n[tag=AZR_boss2_stockpile_marker] at @s run particle white_smoke ~ ~ ~ 0.05 0.05 0.05 0.03 2
+execute as @n[tag=AZR_boss2_stockpile_marker] at @s as @n[tag=SEAmob,distance=0..2] at @s run damage @s 20 arrow
+execute as @n[tag=AZR_boss2_stockpile_marker] at @s if entity @n[tag=SEAmob,distance=0..2] run kill @s
+execute as @n[tag=AZR_boss2_stockpile_marker] at @s unless block ~ ~ ~ air run kill @s
+execute as @n[tag=AZR_boss2_stockpile_marker] at @s run tp @s ^ ^ ^0.5
+execute as @n[tag=AZR_boss2_stockpile_marker] at @s run particle white_smoke ~ ~ ~ 0.05 0.05 0.05 0.03 2
+execute as @n[tag=AZR_boss2_stockpile_marker] at @s as @n[tag=SEAmob,distance=0..2] at @s run damage @s 20 arrow
+execute as @n[tag=AZR_boss2_stockpile_marker] at @s if entity @n[tag=SEAmob,distance=0..2] run kill @s
+execute as @n[tag=AZR_boss2_stockpile_marker] at @s unless block ~ ~ ~ air run kill @s
+execute as @n[tag=AZR_boss2_stockpile_marker] at @s run tp @s ^ ^ ^0.5
+execute as @n[tag=AZR_boss2_stockpile_marker] at @s run particle white_smoke ~ ~ ~ 0.05 0.05 0.05 0.03 2
 execute as @n[tag=AZR_boss2_stockpile_marker] at @s as @n[tag=SEAmob,distance=0..2] at @s run damage @s 20 arrow
 execute as @n[tag=AZR_boss2_stockpile_marker] at @s if entity @n[tag=SEAmob,distance=0..2] run kill @s
 execute as @n[tag=AZR_boss2_stockpile_marker] at @s unless block ~ ~ ~ air run kill @s
