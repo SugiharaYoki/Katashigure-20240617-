@@ -301,6 +301,14 @@ item replace block 90158 6 124 container.14 with gunpowder 1
 setblock 90158 6 120 chest[facing=west,waterlogged=true]
 item replace block 90158 6 120 container.13 with flint 2
 
+setblock 90174 10 113 minecraft:crimson_button[facing=west,face=floor]
+fill 90179 8 101 90179 6 102 minecraft:waxed_copper_grate
+setblock 90172 10 113 minecraft:magenta_glazed_terracotta[facing=east]
+
+setblock 90173 6 104 chest[facing=east,waterlogged=true]
+item replace block 90173 6 104 container.11 with gunpowder 1
+item replace block 90173 6 104 container.15 with emerald 3
+
 #最终大厅 第七章入口
 setblock 90154 18 134 minecraft:waxed_copper_bulb[lit=false]
 setblock 90154 18 126 minecraft:waxed_copper_bulb[lit=false]
