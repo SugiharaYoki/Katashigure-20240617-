@@ -270,6 +270,7 @@ item replace block 90155 36 120 container.14 with cookie 2
 setblock 90151 37 121 minecraft:potted_blue_orchid
 
 setblock 90157 44 134 minecraft:furnace[facing=north]
+setblock 90157 47 133 minecraft:waxed_copper_bulb[lit=false]
 
 setblock 90154 36 113 redstone_block
 setblock 90154 36 113 air
