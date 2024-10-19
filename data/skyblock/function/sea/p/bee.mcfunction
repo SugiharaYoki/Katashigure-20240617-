@@ -12,5 +12,7 @@ execute as @s[scores={rng2=1..7,sea_4temp1=70..100}] at @s run particle minecraf
 execute as @s[scores={rng2=1..7,sea_4temp1=69..95}] at @s as @e[tag=SEAmob,distance=0..3] at @s run effect give @s instant_health 1 0 false
 execute as @s[scores={rng2=1..7,sea_4temp1=69..95}] at @s as @a[tag=SEAPT,distance=0..3] at @s run effect give @s poison 3 1 false
 execute as @s[scores={rng2=1..7,sea_4temp1=69..95}] at @s as @a[tag=SEAPT,distance=0..3] at @s run effect give @s hunger 3 1 false
-execute as @s[scores={rng2=1..7,sea_4temp1=69..95}] at @s if block ~ ~-1 ~ air if block ~ ~-2 ~ air if block ~ ~-3 ~ air positioned ~ ~-4 ~ as @e[tag=SEAmob,distance=0..3] at @s run effect give @s instant_health 1 0 false
-execute as @s[scores={rng2=1..7,sea_4temp1=69..95}] at @s if block ~ ~-1 ~ air if block ~ ~-2 ~ air if block ~ ~-3 ~ air positioned ~ ~-4 ~ as @a[tag=SEAPT,distance=0..3] at @s run effect give @s poison 1 0 false
+execute as @s[scores={rng2=1..7,sea_4temp1=69..95}] at @s if block ~ ~-1 ~ air if block ~ ~-2 ~ air positioned ~ ~-2 ~ as @e[tag=SEAmob,distance=0..3] at @s run effect give @s instant_health 1 0 false
+execute as @s[scores={rng2=1..7,sea_4temp1=69..95}] at @s if block ~ ~-1 ~ air if block ~ ~-2 ~ air positioned ~ ~-2 ~ as @a[tag=SEAPT,distance=0..3] at @s run effect give @s poison 1 0 false
+execute as @s[scores={rng2=1..7,sea_4temp1=69..95}] at @s if block ~ ~-1 ~ air if block ~ ~-2 ~ air if block ~ ~-3 ~ air if block ~ ~-4 ~ air positioned ~ ~-4 ~ as @e[tag=SEAmob,distance=0..3] at @s run effect give @s instant_health 1 0 false
+execute as @s[scores={rng2=1..7,sea_4temp1=69..95}] at @s if block ~ ~-1 ~ air if block ~ ~-2 ~ air if block ~ ~-3 ~ air if block ~ ~-4 ~ air positioned ~ ~-4 ~ as @a[tag=SEAPT,distance=0..3] at @s run effect give @s poison 1 0 false
