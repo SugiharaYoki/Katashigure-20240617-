@@ -46,6 +46,7 @@ execute if block 90075 103 141 minecraft:cauldron positioned 90079 105 143 if en
 
 execute as @e[type=zombie,tag=SEAknight,x=90000,y=100,z=100,distance=..3000] at @s if entity @a[tag=SEAPT,distance=0..8] run function skyblock:sea/p/knight
 execute as @e[type=zombie_horse,tag=SEAhorse,x=90000,y=100,z=100,distance=..3000] at @s if entity @a[tag=SEAPT,distance=0..8] run function skyblock:sea/p/horse
+execute as @e[type=bee,tag=SEAbee,x=90000,y=100,z=100,distance=..3000] at @s if entity @a[tag=SEAPT,distance=0..16] run function skyblock:sea/p/bee
 execute as @e[tag=SEAhorse_summoner,type=marker,x=90000,y=100,z=100,distance=..3000] at @s run function skyblock:sea/p/horse_summoner
 
 
@@ -117,6 +118,7 @@ lore=['{"text":"没错，就是最中间那个，别多想了！","color":"white
 #蕾娜：水下研究机构科研人员
 #米兰达：水下研究机构科研人员
 #阿诺尔德：水下研究机构信息安全部门成员
+#迈克：水下研究机构实验操作人员
 #肯：物资盘点小组 成员 - 死亡：在宿舍楼失守后与其他人员一同遇难
 #丹尼尔：医务部门 医务员 - 死亡：为法莫洛斯殿后，被腐尸围攻致死
 #权之殊能：大天使沙利叶麾下的能天使

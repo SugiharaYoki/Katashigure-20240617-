@@ -24,6 +24,10 @@ execute as @s[scores={sea_4temp1=1}] positioned 90163 44 130 run function skyblo
 execute as @s[scores={sea_4temp1=1}] positioned 90178 44 133 run function skyblock:sea/m/drone
 execute as @s[scores={sea_4temp1=1}] positioned 90178 44 127 run function skyblock:sea/m/drone
 
+execute as @s[scores={sea_4temp1=1}] positioned 90218 44 132 run function skyblock:sea/m/drone
+
+execute as @s[scores={sea_4temp1=1}] positioned 90194 44 130 run function skyblock:sea/m/mine
+execute as @s[scores={sea_4temp1=1}] positioned 90211 44 134 run function skyblock:sea/m/mine
 
 execute as @s[scores={sea_4temp1=1}] positioned 90151 44 130 run function skyblock:sea/m/mine
 execute as @s[scores={sea_4temp1=1}] positioned 90150 44 129 run function skyblock:sea/m/mine
