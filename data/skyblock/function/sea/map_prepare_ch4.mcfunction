@@ -298,7 +298,8 @@ setblock 90158 6 124 chest[facing=east,waterlogged=true]
 item replace block 90158 6 124 container.12 with honey_bottle 1
 item replace block 90158 6 124 container.14 with gunpowder 1
 
-
+setblock 90158 6 120 chest[facing=west,waterlogged=true]
+item replace block 90158 6 120 container.13 with flint 2
 
 #最终大厅 第七章入口
 setblock 90154 18 134 minecraft:waxed_copper_bulb[lit=false]
