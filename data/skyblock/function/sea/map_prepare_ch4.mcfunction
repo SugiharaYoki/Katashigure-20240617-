@@ -293,8 +293,10 @@ item replace block 90196 46 131 container.12 with honey_bottle 1
 item replace block 90196 46 131 container.14 with honey_bottle 1
 item replace block 90194 47 131 container.13 with golden_carrot 1
 
-
-
+#水下通道
+setblock 90158 6 124 chest[facing=east,waterlogged=true]
+item replace block 90158 6 124 container.12 with honey_bottle 1
+item replace block 90158 6 124 container.14 with gunpowder 1
 
 
 
