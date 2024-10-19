@@ -100,6 +100,7 @@ setblock 90181 11 144 air
 setblock 90186 25 139 air
 setblock 90161 19 147 air
 setblock 90181 27 103 air
+setblock 90193 44 122 air
 setblock 90210 19 112 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:flint"}}
 setblock 90211 19 112 decorated_pot{sherds:["friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd"],item:{count: 3, id:"minecraft:emerald"}}
 setblock 90188 19 109 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 2, id:"minecraft:carrot"}}
@@ -114,6 +115,7 @@ setblock 90181 11 144 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery
 setblock 90186 25 139 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 2, id:"minecraft:golden_carrot"}}
 setblock 90161 19 147 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 2, id:"minecraft:potato"}}
 setblock 90181 27 103 decorated_pot{sherds:["friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd"],item:{count: 3, id:"minecraft:emerald"}}
+setblock 90193 44 122 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 2, id:"minecraft:potato"}}
 
 #艾德雯娜的护身符
 setblock 90160 19 147 air
@@ -238,6 +240,27 @@ setblock 90183 28 94 minecraft:waxed_exposed_copper_bulb[lit=false]
 fill 90191 36 134 90190 34 134 iron_bars
 
 
+#水下通道
+setblock 90158 6 124 chest[facing=east,waterlogged=true]
+item replace block 90158 6 124 container.12 with honey_bottle 1
+item replace block 90158 6 124 container.14 with gunpowder 1
+
+setblock 90158 6 120 chest[facing=west,waterlogged=true]
+item replace block 90158 6 120 container.13 with flint 2
+
+setblock 90174 10 113 minecraft:crimson_button[facing=west,face=floor]
+fill 90179 8 101 90179 6 102 minecraft:waxed_copper_grate
+setblock 90172 10 113 minecraft:magenta_glazed_terracotta[facing=east]
+
+setblock 90173 6 104 chest[facing=east,waterlogged=true]
+item replace block 90173 6 104 container.11 with gunpowder 1
+item replace block 90173 6 104 container.15 with emerald 3
+
+setblock 90178 27 103 chest[facing=north]{Lock:"冷凝系统 - 休息区2F钥匙"}
+item replace block 90178 27 103 container.12 with raw_iron 1
+item replace block 90178 27 103 container.14 with coal 2
+
+
 #实验区
 setblock 90154 38 94 minecraft:potted_flowering_azalea_bush
 
@@ -245,6 +268,8 @@ setblock 90155 36 120 chest[facing=west]
 item replace block 90155 36 120 container.12 with cookie 1
 item replace block 90155 36 120 container.14 with cookie 2
 setblock 90151 37 121 minecraft:potted_blue_orchid
+
+setblock 90157 44 134 minecraft:furnace[facing=north]
 
 setblock 90154 36 113 redstone_block
 setblock 90154 36 113 air
@@ -293,25 +318,7 @@ item replace block 90196 46 131 container.12 with honey_bottle 1
 item replace block 90196 46 131 container.14 with honey_bottle 1
 item replace block 90194 47 131 container.13 with golden_carrot 1
 
-#水下通道
-setblock 90158 6 124 chest[facing=east,waterlogged=true]
-item replace block 90158 6 124 container.12 with honey_bottle 1
-item replace block 90158 6 124 container.14 with gunpowder 1
-
-setblock 90158 6 120 chest[facing=west,waterlogged=true]
-item replace block 90158 6 120 container.13 with flint 2
-
-setblock 90174 10 113 minecraft:crimson_button[facing=west,face=floor]
-fill 90179 8 101 90179 6 102 minecraft:waxed_copper_grate
-setblock 90172 10 113 minecraft:magenta_glazed_terracotta[facing=east]
-
-setblock 90173 6 104 chest[facing=east,waterlogged=true]
-item replace block 90173 6 104 container.11 with gunpowder 1
-item replace block 90173 6 104 container.15 with emerald 3
-
-setblock 90178 27 103 chest[facing=north]{Lock:"冷凝系统 - 休息区2F钥匙"}
-item replace block 90178 27 103 container.12 with raw_iron 1
-item replace block 90178 27 103 container.14 with coal 2
+setblock 90193 45 114 minecraft:potted_bamboo
 
 
 #最终大厅 第七章入口
