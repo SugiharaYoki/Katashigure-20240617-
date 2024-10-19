@@ -290,6 +290,8 @@ execute as @n[tag=SEAch4_spawn_timer_marilyn] at @s run function skyblock:sea/e/
 execute positioned 90163 44 130 if entity @a[tag=SEAPT,distance=..2.7] unless entity @n[tag=SEAch4_spawn,distance=0..1] positioned 90171 44 128 run function skyblock:sea/m/skeleton_shield
 execute positioned 90163 44 130 if entity @a[tag=SEAPT,distance=..2.7] unless entity @n[tag=SEAch4_spawn,distance=0..1] positioned 90171 44 132 run function skyblock:sea/m/skeleton_shield
 execute positioned 90163 44 130 if entity @a[tag=SEAPT,distance=..2.7] unless entity @n[tag=SEAch4_spawn,distance=0..1] positioned 90181 44 116 run function skyblock:sea/m/zombie_security2
+execute positioned 90163 44 130 if entity @a[tag=SEAPT,distance=..2.7] unless entity @n[tag=SEAch4_spawn,distance=0..1] positioned 90183 45 118 run function skyblock:sea/m/bee
+
 execute positioned 90163 44 130 if entity @a[tag=SEAPT,distance=..2.7] unless entity @n[tag=SEAch4_spawn,distance=0..1] positioned 90209 44 136 run function skyblock:sea/m/silverfish_big
 execute positioned 90163 44 130 if entity @a[tag=SEAPT,distance=..2.7] unless entity @n[tag=SEAch4_spawn,distance=0..1] positioned 90209 44 136 run function skyblock:sea/m/silverfish_big
 execute positioned 90163 44 130 if entity @a[tag=SEAPT,distance=..2.7] unless entity @n[tag=SEAch4_spawn,distance=0..1] positioned 90215 44 133 run function skyblock:sea/m/cave_spider
