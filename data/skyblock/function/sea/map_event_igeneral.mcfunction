@@ -19,6 +19,8 @@ execute as @e[type=endermite,scores={rng1=6..8},x=90000,y=100,z=100,distance=..3
 
 execute as @a[tag=SEAPT] at @s positioned ^ ^ ^0.2 positioned ~ ~1 ~ as @n[type=interaction,tag=flamethrowerdetect] as @e[type=interaction,tag=flamethrowerdetect,distance=0.3..] at @s positioned ~ ~-1 ~ unless entity @a[tag=SEAPT,distance=0..1] run kill @s
 execute as @a at @s if items entity @s weapon.mainhand shears[custom_data={sea_flamethrower:true}] run function skyblock:sea/p/flamethrower
+execute as @a[tag=SEAPT] at @s positioned ^ ^ ^0.2 positioned ~ ~1 ~ as @n[type=interaction,tag=pistoldetect] as @e[type=interaction,tag=pistoldetect,distance=0.3..] at @s positioned ~ ~-1 ~ unless entity @a[tag=SEAPT,distance=0..1] run kill @s
+execute as @a at @s if items entity @s weapon.mainhand shears[custom_data={sea_pistol:true}] run function skyblock:sea/p/pistol
 
 execute as @a[tag=SEAPT] at @s run function skyblock:sea/p/player_fast
 
