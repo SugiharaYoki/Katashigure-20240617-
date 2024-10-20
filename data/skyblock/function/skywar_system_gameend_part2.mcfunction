@@ -23,7 +23,7 @@ scoreboard players set @a Temp4 0
 gamemode adventure @a[gamemode=!creative]
 #scoreboard objectives remove PersonTimeRemain
 #scoreboard objectives add PersonTimeRemain dummy "精神值系统 空闲"
-scoreboard players reset @a TimeRemainUnsee
+scoreboard players reset sc TimeRemainUnsee
 scoreboard players reset @a DeathCount
 effect clear @a[tag=PVPing]
 effect give @a[tag=PVPing] slow_falling 2 1 true

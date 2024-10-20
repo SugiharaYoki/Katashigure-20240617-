@@ -90,6 +90,7 @@ execute if score @n[tag=sc] SSgspT matches 2 as @a[tag=!NoSkyWar] at @s run scor
 execute if score @n[tag=sc] SSgspT matches 2 as @a[tag=!NoSkyWar] at @s run function skyblock:skywar_system_removeallgaming
 #无意义变量 scoreboard players reset @s PersonTimeRemain
 execute if score @n[tag=sc] SSgspT matches 2 as @a[tag=!NoSkyWar] at @s run scoreboard players reset @s TimeRemainUnsee
+execute if score @n[tag=sc] SSgspT matches 2 as @a[tag=!NoSkyWar] at @s run scoreboard players reset sc TimeRemainUnsee
 execute if score @n[tag=sc] SSgspT matches 2 as @a[tag=!NoSkyWar] at @s run scoreboard players set @s LeftGame 0
 execute if score @n[tag=sc] SSgspT matches 2 as @a[tag=!NoSkyWar] at @s run scoreboard players set @s DeathCountTemp 0
 execute if score @n[tag=sc] SSgspT matches 2 as @a[tag=!NoSkyWar] at @s run tag @s remove LeftGame
