@@ -7,6 +7,5 @@ data modify entity @n[type=armor_stand,tag=SEA_bj_origin] Motion set from entity
 kill @e[type=marker,tag=SEA_bj_marker]
 
 
-tag @e[type=armor_stand,tag=SEA_bj_origin] remove SEA_bj_origin
 
 
