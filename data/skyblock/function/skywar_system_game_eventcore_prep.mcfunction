@@ -1,21 +1,21 @@
-execute if score @n[tag=sc] Map_Code matches 2 run scoreboard players set @n[tag=sc] TimeRemainUnsee 605
-execute if score @n[tag=sc] Map_Code matches 3 run scoreboard players set @n[tag=sc] TimeRemainUnsee 665
-execute if score @n[tag=sc] Map_Code matches 4 run scoreboard players set @n[tag=sc] TimeRemainUnsee 805
-execute if score @n[tag=sc] Map_Code matches 5 run scoreboard players set @n[tag=sc] TimeRemainUnsee 725
-execute if score @n[tag=sc] Map_Code matches 6 run scoreboard players set @n[tag=sc] TimeRemainUnsee 605
-execute if score @n[tag=sc] Map_Code matches 7 run scoreboard players set @n[tag=sc] TimeRemainUnsee 345
-execute if score @n[tag=sc] Map_Code matches 8 run scoreboard players set @n[tag=sc] TimeRemainUnsee 605
-execute if score @n[tag=sc] Map_Code matches 9 run scoreboard players set @n[tag=sc] TimeRemainUnsee 605
-execute if score @n[tag=sc] Map_Code matches 10 run scoreboard players set @n[tag=sc] TimeRemainUnsee 605
-execute if score @n[tag=sc] Map_Code matches 11 run scoreboard players set @n[tag=sc] TimeRemainUnsee 905
-execute if score @n[tag=sc] Map_Code matches 14 run scoreboard players set @n[tag=sc] TimeRemainUnsee 905
-execute if score @n[tag=sc] Map_Code matches 15 run scoreboard players set @n[tag=sc] TimeRemainUnsee 605
-execute if score @n[tag=sc] Map_Code matches 16 run scoreboard players set @n[tag=sc] TimeRemainUnsee 505
-execute if score @n[tag=sc] Map_Code matches 17 run scoreboard players set @n[tag=sc] TimeRemainUnsee 805
+execute if score @n[tag=sc] Map_Code matches 2 run scoreboard players set sc TimeRemainUnsee 605
+execute if score @n[tag=sc] Map_Code matches 3 run scoreboard players set sc TimeRemainUnsee 665
+execute if score @n[tag=sc] Map_Code matches 4 run scoreboard players set sc TimeRemainUnsee 805
+execute if score @n[tag=sc] Map_Code matches 5 run scoreboard players set sc TimeRemainUnsee 725
+execute if score @n[tag=sc] Map_Code matches 6 run scoreboard players set sc TimeRemainUnsee 605
+execute if score @n[tag=sc] Map_Code matches 7 run scoreboard players set sc TimeRemainUnsee 345
+execute if score @n[tag=sc] Map_Code matches 8 run scoreboard players set sc TimeRemainUnsee 605
+execute if score @n[tag=sc] Map_Code matches 9 run scoreboard players set sc TimeRemainUnsee 605
+execute if score @n[tag=sc] Map_Code matches 10 run scoreboard players set sc TimeRemainUnsee 605
+execute if score @n[tag=sc] Map_Code matches 11 run scoreboard players set sc TimeRemainUnsee 905
+execute if score @n[tag=sc] Map_Code matches 14 run scoreboard players set sc TimeRemainUnsee 905
+execute if score @n[tag=sc] Map_Code matches 15 run scoreboard players set sc TimeRemainUnsee 605
+execute if score @n[tag=sc] Map_Code matches 16 run scoreboard players set sc TimeRemainUnsee 505
+execute if score @n[tag=sc] Map_Code matches 17 run scoreboard players set sc TimeRemainUnsee 805
 #[futuredevskywar]
-execute if score @n[tag=sc] Map_Code matches 13 if block 27 56 -105 oak_planks run scoreboard players set @n[tag=sc] TimeRemainUnsee 485
-execute if score @n[tag=sc] Map_Code matches 13 if block 27 56 -105 jungle_log run scoreboard players set @n[tag=sc] TimeRemainUnsee 725
-execute if score @n[tag=sc] Map_Code matches 13 if block 27 56 -105 crimson_hyphae run scoreboard players set @n[tag=sc] TimeRemainUnsee 1085
+execute if score @n[tag=sc] Map_Code matches 13 if block 27 56 -105 oak_planks run scoreboard players set sc TimeRemainUnsee 485
+execute if score @n[tag=sc] Map_Code matches 13 if block 27 56 -105 jungle_log run scoreboard players set sc TimeRemainUnsee 725
+execute if score @n[tag=sc] Map_Code matches 13 if block 27 56 -105 crimson_hyphae run scoreboard players set sc TimeRemainUnsee 1085
 scoreboard objectives setdisplay list TimeRemainUnsee
 scoreboard players set @a[tag=!NoSkyWar] DeathCount 0
 scoreboard players set @a[tag=!NoSkyWar] DeathCountTemp 0
