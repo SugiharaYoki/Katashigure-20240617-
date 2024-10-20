@@ -1,6 +1,5 @@
 tag @s add SEA_bj_process
-execute as @e[type=armor_stand,tag=SEA_bj_origin] at @s if score @s SEAPT_member_eternal = @p[tag=SEA_bj_process] SEAPT_member_eternal run tp @s ~ ~ ~ facing entity @p[tag=SEA_bj_process]
-execute as @e[type=armor_stand,tag=SEA_bj_origin] at @s if score @s SEAPT_member_eternal = @p[tag=SEA_bj_process] SEAPT_member_eternal run tp @p[tag=SEA_bj_process] @s
+execute as @e[type=armor_stand,tag=SEA_bj_origin] at @s if score @s SEAPT_member_eternal = @p[tag=SEA_bj_process] SEAPT_member_eternal positioned ^ ^ ^-0.01 run tp @p[tag=SEA_bj_process] ~ ~ ~ facing entity @s
 
 
 tag @s remove SEA_bj_process
