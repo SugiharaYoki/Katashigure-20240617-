@@ -297,13 +297,13 @@ execute as @a[tag=SEAPT] at @s run function skyblock:sea/p/player
 
 #激光
 execute as @e[x=90130.0,dx=2.2,y=124.5,dy=0,z=125.5,dz=0] run damage @s 3 sting
-execute if block 90146 123 130 crimson_button as @e[tag=!sea_laser_immune,x=90132.5,dx=0,y=122.2,dy=0,z=135.0,dz=3] run damage @s 3 sting
-execute if block 90109 123 120 crimson_button as @e[tag=!sea_laser_immune,x=90111.5,dx=0,y=123.5,dy=0,z=119.0,dz=2.3] run damage @s 3 sting
-execute if block 90109 123 130 crimson_button as @e[tag=!sea_laser_immune,x=90114.5,dx=0,y=123.5,dy=0,z=131.0,dz=2.3] run damage @s 3 sting
-execute if block 90145 123 113 crimson_button as @e[tag=!sea_laser_immune,x=90146.0,dx=2.2,y=123.8,dy=0,z=115.5,dz=0] run damage @s 3 sting
-execute if block 90145 123 100 crimson_button as @e[tag=!sea_laser_immune,x=90145.0,dx=0,y=121.0,dy=5,z=102.5,dz=0] run damage @s 3 sting
+execute if block 90146 123 130 crimson_button as @e[tag=!sea_laser_immune,x=90132.00,dx=0,y=122.2,dy=0,z=135.0,dz=3] run damage @s 3 sting
+execute if block 90109 123 120 crimson_button as @e[tag=!sea_laser_immune,x=90111.00,dx=0,y=123.5,dy=0,z=119.0,dz=2.3] run damage @s 3 sting
+execute if block 90109 123 130 crimson_button as @e[tag=!sea_laser_immune,x=90114.00,dx=0,y=123.5,dy=0,z=131.0,dz=2.3] run damage @s 3 sting
+execute if block 90145 123 113 crimson_button as @e[tag=!sea_laser_immune,x=90146.0,dx=2.2,y=123.8,dy=0,z=115.00,dz=0] run damage @s 3 sting
+execute if block 90145 123 100 crimson_button as @e[tag=!sea_laser_immune,x=90145.0,dx=0,y=121.0,dy=5,z=102.00,dz=0] run damage @s 3 sting
 
-execute if block 90117 123 117 lever[powered=false] as @e[tag=!sea_laser_immune,x=90118.5,dx=0,y=123.5,dy=0,z=115.0,dz=2.0] run damage @s 3 sting
+execute if block 90117 123 117 lever[powered=false] as @e[tag=!sea_laser_immune,x=90118.00,dx=0,y=123.5,dy=0,z=115.0,dz=2.0] run damage @s 3 sting
 
 execute if block 90109 123 120 crimson_button[powered=true] run kill @n[tag=sea_laser_close_1]
 execute if block 90109 123 120 crimson_button[powered=true] run setblock 90109 123 120 warped_button[facing=east,face=wall]
@@ -333,8 +333,8 @@ execute if block 90195 27 130 bamboo_button[powered=true] run fill 90195 25 130 
 execute as @n[tag=SEAmob_carrybomb,nbt=!{Fire:-1s}] run kill @s
 
 #ch4激光
-execute as @e[x=90184.0,dx=3.8,y=20.65,dy=0,z=97.0,dz=0] run damage @s 3 sting
-execute as @e[x=90184.0,dx=3.8,y=19.05,dy=0,z=93.0,dz=0] run damage @s 3 sting
+execute as @e[x=90184.0,dx=3.8,y=20.65,dy=0,z=96.50,dz=0] run damage @s 3 sting
+execute as @e[x=90184.0,dx=3.8,y=18.55,dy=0,z=92.50,dz=0] run damage @s 3 sting
 
 #水晶祀堂
 particle enchant 90093 131 102 3 3 3 0.01 20
