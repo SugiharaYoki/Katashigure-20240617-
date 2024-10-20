@@ -7,3 +7,4 @@
 
 execute as @e[type=armor_stand,tag=SEA_bj_origin] at @s run scoreboard players add @s rng2 1
 execute as @e[type=armor_stand,tag=SEA_bj_origin,nbt={OnGround:1b},scores={rng2=5..}] at @s run kill @s
+execute as @e[type=armor_stand,tag=SEA_bj_origin,scores={rng2=8..}] at @s run kill @s
