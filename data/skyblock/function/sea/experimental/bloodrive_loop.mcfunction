@@ -12,4 +12,4 @@ execute as @e[type=text_display,tag=SEAmob_bloodrive] at @s rotated ~ 0 run tp @
 
 #data modify storage sea:bloodrive health 
 
-execute as @e[type=text_display,tag=SEAmob_bloodrive] run data modify entity @s text set from entity @s Health
+execute as @e[type=text_display,tag=SEAmob_bloodrive] run data modify entity @s text set from entity @n[tag=SEAmob_bloodrived] Health
