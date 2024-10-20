@@ -52,6 +52,7 @@ execute if entity @n[tag=sc,scores={SSgspT=2,Map_Theme=4}] run forceload add 503
 execute if entity @n[tag=sc,scores={SSgspT=2,Map_Theme=4}] run forceload add 50600 50390 50800 50600
 execute if entity @n[tag=sc,scores={SSgspT=2,Map_Theme=4}] run forceload add 50600 50600 50800 50800
 execute if entity @n[tag=sc,scores={SSgspT=2}] as @e[tag=!NoSkyWar,tag=!Gaming] run kill @e[type=wolf,distance=0..10,tag=!Wolfer]
+execute if entity @n[tag=sc,scores={SSgspT=2}] run kill @e[x=50000,y=50,z=50000,distance=..1500,type=!player]
 execute if entity @n[tag=!MapLoaAlr,tag=sc,scores={SSgspT=2,Map_Code=14}] run forceload add -9838 -10164 -9709 -10035
 execute if entity @n[tag=!MapLoaAlr,tag=sc,scores={SSgspT=2,Map_Code=2}] run function skyblock:preload_map_pvp_map002_part1
 execute if entity @n[tag=!MapLoaAlr,tag=sc,scores={SSgspT=2,Map_Code=3}] run function skyblock:preload_map_pvp_map003_part1
@@ -70,7 +71,6 @@ execute if entity @n[tag=!MapLoaAlr,tag=sc,scores={SSgspT=2,Map_Code=17}] run fu
 #[futuredevskywar]
 execute if entity @n[tag=!MapLoaAlr,tag=sc,scores={SSgspT=3,Map_Code=14}] run forceload remove -9838 -10164 -9709 -10035
 execute if entity @n[tag=!MapLoaAlr,tag=sc,scores={SSgspT=3}] run tag @n[tag=sc] add MapLoaAlr
-execute if entity @n[tag=sc,scores={SSgspT=2}] run kill @e[x=50000,y=50,z=50000,distance=..1500,type=!player]
 #《禁止提前预加载》
 #-#-#setblock 12 88 86 air
 #《禁止再次开局》
