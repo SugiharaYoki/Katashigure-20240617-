@@ -16,8 +16,5 @@ execute as @e[type=armor_stand,tag=SEA_bj_origin] if block ^ ^ ^-0.2 cobweb run 
 execute as @e[type=armor_stand,tag=SEA_bj_origin] if block ^ ^ ^-0.2 #flower_pots run tag @s remove SEA_bj_notokay
 execute as @e[type=armor_stand,tag=SEA_bj_origin] if block ^ ^ ^-0.2 player_head run tag @s remove SEA_bj_notokay
 execute as @e[type=armor_stand,tag=SEA_bj_origin] if block ^ ^ ^-0.2 player_wall_head run tag @s remove SEA_bj_notokay
-
-
 execute as @e[type=armor_stand,tag=SEA_bj_origin,tag=SEA_bj_notokay] at @s run kill @s
-
 
