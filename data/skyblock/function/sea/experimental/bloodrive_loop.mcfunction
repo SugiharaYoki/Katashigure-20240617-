@@ -6,7 +6,7 @@ execute as @e[type=text_display,tag=SEAmob_bloodrive] at @s rotated ~ 0 run tp @
 #execute as @e[type=text_display,tag=SEAmob_bloodrive] store result score @s rng1 run data get entity @s Health
 
 
-summon text_display ~ ~ ~ {Tags:["SEAmob_bloodrive"],background:3618615,text:'{"text":"20/20 \\n","color":"green"}',shadow:false,text_opacity:100}
+#summon text_display ~ ~ ~ {Tags:["SEAmob_bloodrive"],background:3618615,text:'{"text":"20/20 \\n","color":"green"}',shadow:false,text_opacity:100}
 
 #execute as @e[type=text_display,tag=SEAmob_bloodrive] store result storage sea:bloodrive health int 1 run data get entity @s Health
 
