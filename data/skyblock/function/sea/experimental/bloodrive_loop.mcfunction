@@ -3,7 +3,7 @@ execute as @e[type=text_display,tag=SEAmob_bloodrive] at @s rotated ~ 0 run tp @
 
 
 
-#execute as @e[type=text_display,tag=SEAmob_bloodrive] store result score @s rng1 run data get entity @s Health
+execute as @e[type=text_display,tag=SEAmob_bloodrive] store result score @s rng9 run data get entity @s Health
 
 
 #summon text_display ~ ~ ~ {Tags:["SEAmob_bloodrive"],background:3618615,text:'{"text":"20/20 \\n","color":"green"}',shadow:false,text_opacity:100}
@@ -12,4 +12,4 @@ execute as @e[type=text_display,tag=SEAmob_bloodrive] at @s rotated ~ 0 run tp @
 
 #data modify storage sea:bloodrive health 
 
-execute as @e[type=text_display,tag=SEAmob_bloodrive] run data modify entity @s text set from entity @n[tag=SEAmob_bloodrived] Health
+execute as @e[tag=SEAmob_bloodrived] on passengers as @s[tag=SEAmob_bloodrive] run data merge entity @s {text:'{"score":{"name":"health","objective":"rng9"},"color": "green"}'}

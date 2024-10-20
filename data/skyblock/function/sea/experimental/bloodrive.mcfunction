@@ -6,4 +6,4 @@ summon text_display ~ ~ ~ {Tags:["SEAmob_bloodrive"],background:3618615,text:'{"
 
 
 ride @n[tag=SEAmob_bloodrive] mount @n[tag=SEAmob,tag=!SEAmob_bloodrived]
-tag @n[tag=SEAmob,tag=!SEAmob_bloodrived] add SEAmob_bloodriveds
+tag @n[tag=SEAmob,tag=!SEAmob_bloodrived] add SEAmob_bloodrived
