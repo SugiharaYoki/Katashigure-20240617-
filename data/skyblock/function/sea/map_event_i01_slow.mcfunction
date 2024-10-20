@@ -56,11 +56,11 @@ execute as @n[tag=sc,scores={sea_4temp3=1..50}] run scoreboard players add @s se
 execute as @n[tag=sc,scores={sea_4temp3=60..75}] run scoreboard players add @s sea_4temp3 1
 execute if block 90108 118 136 minecraft:waxed_copper_bulb[lit=false] if block 90112 118 140 minecraft:waxed_copper_bulb[lit=false] run scoreboard players set @n[tag=sc,scores={sea_4temp3=..59}] sea_4temp3 60
 execute as @n[tag=sc,scores={sea_4temp3=61}] run fill 90110 122 134 90109 122 134 air
-execute as @n[tag=sc,scores={sea_4temp3=67}] run fill 90110 123 134 90109 123 134 air
-execute as @n[tag=sc,scores={sea_4temp3=73}] run fill 90110 124 134 90109 124 134 air
+execute as @n[tag=sc,scores={sea_4temp3=63}] run fill 90110 123 134 90109 123 134 air
+execute as @n[tag=sc,scores={sea_4temp3=65}] run fill 90110 124 134 90109 124 134 air
 execute as @n[tag=sc,scores={sea_4temp3=61}] run playsound minecraft:block.iron_door.open ambient @a 90109 125 134 4 0.3
-execute as @n[tag=sc,scores={sea_4temp3=67}] run playsound minecraft:block.iron_door.open ambient @a 90109 125 134 4 0.3
-execute as @n[tag=sc,scores={sea_4temp3=73}] run playsound minecraft:block.iron_door.open ambient @a 90109 125 134 4 0.3
+execute as @n[tag=sc,scores={sea_4temp3=63}] run playsound minecraft:block.iron_door.open ambient @a 90109 125 134 4 0.3
+execute as @n[tag=sc,scores={sea_4temp3=65}] run playsound minecraft:block.iron_door.open ambient @a 90109 125 134 4 0.3
 
 
 
