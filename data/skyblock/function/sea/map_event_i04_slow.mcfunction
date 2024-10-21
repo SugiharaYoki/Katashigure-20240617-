@@ -260,7 +260,7 @@ execute if entity @a[tag=SEAPT,x=90183,y=10,z=152,distance=0..15] run function s
 
 
 #水下门
-execute if block 90174 10 113 minecraft:crimson_button[facing=east,powered=true] unless block 90179 8 101 air run setblock 90172 10 113 minecraft:magenta_glazed_terracotta[facing=west]
+execute if block 90174 10 113 minecraft:crimson_button[powered=true] unless block 90179 8 101 air run setblock 90172 10 113 minecraft:magenta_glazed_terracotta[facing=west]
 execute if block 90172 10 113 minecraft:magenta_glazed_terracotta[facing=west] unless block 90179 8 101 air run setblock 90174 10 113 minecraft:warped_button[facing=west,face=floor]
 execute if block 90172 10 113 minecraft:magenta_glazed_terracotta[facing=west] unless block 90179 8 101 air run fill 90179 8 101 90179 6 102 minecraft:air destroy
 
