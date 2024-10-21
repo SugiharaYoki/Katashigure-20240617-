@@ -82,7 +82,7 @@ execute unless entity 0-0-0-0-1 run summon minecraft:text_display ~ ~ ~ {UUID:[I
 
 #gamerule
 gamerule sendCommandFeedback true
-gamerule naturalRegeneration false
+#gamerule naturalRegeneration false
 gamerule keepInventory true
 gamerule doMobSpawning false
 
