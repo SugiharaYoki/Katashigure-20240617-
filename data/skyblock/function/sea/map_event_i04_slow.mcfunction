@@ -331,7 +331,12 @@ execute positioned 90175 44 130 if entity @a[tag=SEAPT,distance=..4.7] unless it
 
 
 
-
+execute positioned 90187 47 105 if entity @a[tag=SEAPT,distance=..8] unless entity @n[tag=SEAch4_spawn,distance=0..1] positioned 90187 46 103 run function skyblock:sea/m/silverfish
+execute positioned 90187 47 105 if entity @a[tag=SEAPT,distance=..8] unless entity @n[tag=SEAch4_spawn,distance=0..1] positioned 90190 46 106 run function skyblock:sea/m/skeleton_melee
+execute positioned 90187 47 105 if entity @a[tag=SEAPT,distance=..8] unless entity @n[tag=SEAch4_spawn,distance=0..1] positioned 90191 46 105 run function skyblock:sea/m/cave_spider
+execute positioned 90187 47 105 if entity @a[tag=SEAPT,distance=..8] unless entity @n[tag=SEAch4_spawn,distance=0..1] positioned 90179 46 107 run function skyblock:sea/m/skeleton_shield
+execute positioned 90187 47 105 if entity @a[tag=SEAPT,distance=..8] unless entity @n[tag=SEAch4_spawn,distance=0..1] positioned 90179 46 105 run function skyblock:sea/m/skeleton_melee
+execute positioned 90187 47 105 if entity @a[tag=SEAPT,distance=..8] unless entity @n[tag=SEAch4_spawn,distance=0..1] run summon marker ~ ~ ~ {Tags:["SEAch4_spawn"]}
 
 
 
