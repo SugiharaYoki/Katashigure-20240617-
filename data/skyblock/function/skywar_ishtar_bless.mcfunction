@@ -54,3 +54,7 @@ execute if entity @s[scores={ishtar_bless_3=15}] run give @s recovery_compass[cu
 execute if entity @s[scores={ishtar_bless_1=16}] run give @s eye_armor_trim_smithing_template[custom_name='{"text":"刺客尊荣","italic":false,"color":"red"}',custom_data={skywar_antiinvis:1}] 1
 execute if entity @s[scores={ishtar_bless_2=16}] run give @s eye_armor_trim_smithing_template[custom_name='{"text":"刺客尊荣","italic":false,"color":"red"}',custom_data={skywar_antiinvis:1}] 1
 execute if entity @s[scores={ishtar_bless_3=16}] run give @s eye_armor_trim_smithing_template[custom_name='{"text":"刺客尊荣","italic":false,"color":"red"}',custom_data={skywar_antiinvis:1}] 1
+
+execute if entity @s[scores={ishtar_bless_1=17}] run give @s music_disc_chirp[custom_name='{"text":"扬烟剧爆核心","italic":false,"color":"green"}',custom_data={skywar:1}] 2
+execute if entity @s[scores={ishtar_bless_2=17}] run give @s music_disc_chirp[custom_name='{"text":"扬烟剧爆核心","italic":false,"color":"green"}',custom_data={skywar:1}] 2
+execute if entity @s[scores={ishtar_bless_3=17}] run give @s music_disc_chirp[custom_name='{"text":"扬烟剧爆核心","italic":false,"color":"green"}',custom_data={skywar:1}] 2

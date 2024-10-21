@@ -33,4 +33,6 @@ execute unless entity @s[scores={ishtar_bless_1=13}] run tellraw @s {"text":"   
 execute if entity @s[scores={ishtar_bless_1=14}] run tellraw @s {"text":"    暴劣「湮体崩裂」","color":"gold","hoverEvent":{"action":"show_text","contents":{"text":"药剂 自残并增加攻击力5秒","color":"white"}}}
 execute unless entity @s[scores={ishtar_bless_1=14}] run tellraw @s {"text":"    暴劣「湮体崩裂」","color":"gray","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 131014"},"hoverEvent":{"action":"show_text","contents":{"text":"点击装备该礼装","color":"green"}}}
 tellraw @s {"text":"   [返回PVP主页]","color":"yellow","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 118"},"hoverEvent":{"action":"show_text","contents":{"text":"返回PVP设置菜单","color":"green"}}}
+execute unless entity @s[scores={ishtar_bless_1=17}] run tellraw @s {"text":"    归尘「扬烟剧爆」","color":"gray","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 131017"},"hoverEvent":{"action":"show_text","contents":{"text":"点击装备该礼装","color":"green"}}}
+execute if entity @s[scores={ishtar_bless_1=17}] run tellraw @s {"text":"    归尘「扬烟剧爆」","color":"gold","hoverEvent":{"action":"show_text","contents":{"text":"扬烟剧爆核心×2 在身边召唤引燃的TNT","color":"white"}}}
 scoreboard players set @s MultiMenu 0
