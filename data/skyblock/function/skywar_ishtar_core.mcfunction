@@ -49,3 +49,16 @@ execute if entity @s[scores={If_MD_Chirp=1..}] run scoreboard players set @s If_
 execute if entity @s[nbt={Inventory:[{components:{"minecraft:custom_data":{skywar_antiinvis:1}}}]}] at @a[distance=0.1..5,nbt={active_effects:[{id:"minecraft:invisibility"}]}] run playsound minecraft:block.note_block.chime ambient @a ~ ~1 ~ 4 1.5
 execute if entity @s[nbt={Inventory:[{components:{"minecraft:custom_data":{skywar_antiinvis:1}}}]}] as @a[distance=0.1..5,nbt={active_effects:[{id:"minecraft:invisibility"}]}] at @s run effect give @s glowing 5 0 true
 execute if entity @s[nbt={Inventory:[{components:{"minecraft:custom_data":{skywar_antiinvis:1}}}]}] as @a[distance=0.1..5,nbt={active_effects:[{id:"minecraft:invisibility"}]}] at @s run effect clear @s invisibility
+
+
+execute if entity @s[scores={If_MD_Stal=1..}] run playsound entity.squid.squirt ambient @a ~ ~1 ~ 4 0.5
+execute if entity @s[scores={If_MD_Stal=1..}] positioned ^ ^ ^4 run summon marker ~ ~ ~ {Tags:["Skywar_ishtar_18"]}
+execute if entity @s[scores={If_MD_Stal=1..}] run scoreboard players set @s If_MD_Stal 0
+
+execute as @e[tag=Skywar_ishtar_18] at @s run scoreboard players add @s rng1 1
+execute as @e[tag=Skywar_ishtar_18] at @s if entity @a[gamemode=survival,distance=0..1.5] run scoreboard players add @s rng1 1
+execute as @e[tag=Skywar_ishtar_18] at @s as @a[gamemode=survival,distance=0..1.5] run effect give @s darkness 5 0 false
+execute as @e[tag=Skywar_ishtar_18] at @s if entity @a[gamemode=survival,distance=0..0.85] run scoreboard players add @s rng1 1
+execute as @e[tag=Skywar_ishtar_18] at @s run particle squid_ink ~ ~ ~ 0.3 0.3 0.3 0.03 10
+execute as @e[tag=Skywar_ishtar_18] at @s run particle large_smoke ~ ~ ~ 0.4 0.4 0.4 0.03 10
+execute as @e[tag=Skywar_ishtar_18,scores={rng1=800..}] at @s run kill @s
