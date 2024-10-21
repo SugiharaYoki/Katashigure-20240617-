@@ -62,3 +62,7 @@ execute if entity @s[scores={ishtar_bless_3=17}] run give @s music_disc_chirp[cu
 execute if entity @s[scores={ishtar_bless_1=18}] run give @s music_disc_stal[custom_name='{"text":"漆幕虚垒核心","italic":false,"color":"green"}',custom_data={skywar:1}] 2
 execute if entity @s[scores={ishtar_bless_2=18}] run give @s music_disc_stal[custom_name='{"text":"漆幕虚垒核心","italic":false,"color":"green"}',custom_data={skywar:1}] 2
 execute if entity @s[scores={ishtar_bless_3=18}] run give @s music_disc_stal[custom_name='{"text":"漆幕虚垒核心","italic":false,"color":"green"}',custom_data={skywar:1}] 2
+
+execute if entity @s[scores={ishtar_bless_1=19}] run give @s music_disc_ward[custom_name='{"text":"输载归初核心","italic":false,"color":"green"}',custom_data={skywar:1,skywar_ishtar_19:1}] 1
+execute if entity @s[scores={ishtar_bless_2=19}] run give @s music_disc_ward[custom_name='{"text":"输载归初核心","italic":false,"color":"green"}',custom_data={skywar:1,skywar_ishtar_19:1}] 1
+execute if entity @s[scores={ishtar_bless_3=19}] run give @s music_disc_ward[custom_name='{"text":"输载归初核心","italic":false,"color":"green"}',custom_data={skywar:1,skywar_ishtar_19:1}] 1
