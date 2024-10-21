@@ -340,6 +340,9 @@ execute positioned 90187 47 105 if entity @a[tag=SEAPT,distance=..8] unless enti
 
 
 
+execute positioned 90217 44 115 if entity @a[tag=SEAPT,distance=..2.7] unless items entity @a[tag=SEAPT] container.* heart_of_the_sea unless entity @n[tag=SEAch4_spawn,distance=0..3] positioned 90218 44 112 run function skyblock:sea/m/zombie_knight
+execute positioned 90217 44 115 if entity @a[tag=SEAPT,distance=..2.7] unless items entity @a[tag=SEAPT] container.* heart_of_the_sea unless entity @n[tag=SEAch4_spawn,distance=0..3] positioned 90216 44 112 run function skyblock:sea/m/zombie_knight
+execute positioned 90217 44 115 if entity @a[tag=SEAPT,distance=..2.7] unless items entity @a[tag=SEAPT] container.* heart_of_the_sea unless entity @n[tag=SEAch4_spawn,distance=0..3] run summon marker ~ ~ ~ {Tags:["SEAch4_spawn"]}
 
 
 
