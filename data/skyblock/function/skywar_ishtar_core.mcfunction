@@ -59,6 +59,6 @@ execute as @e[tag=Skywar_ishtar_18] at @s run scoreboard players add @s rng1 1
 execute as @e[tag=Skywar_ishtar_18] at @s if entity @a[gamemode=survival,distance=0..1.5] run scoreboard players add @s rng1 1
 execute as @e[tag=Skywar_ishtar_18] at @s as @a[gamemode=survival,distance=0..1.5] run effect give @s darkness 5 0 false
 execute as @e[tag=Skywar_ishtar_18] at @s if entity @a[gamemode=survival,distance=0..0.85] run scoreboard players add @s rng1 1
-execute as @e[tag=Skywar_ishtar_18] at @s run particle squid_ink ~ ~1 ~ 0.3 2.3 0.3 0.03 15
-execute as @e[tag=Skywar_ishtar_18] at @s run particle large_smoke ~ ~1.2 ~ 0.4 2.6 0.4 0.03 20
+execute as @e[tag=Skywar_ishtar_18] at @s run particle squid_ink ~ ~1 ~ 0.6 2.3 0.6 0.03 15
+execute as @e[tag=Skywar_ishtar_18] at @s run particle large_smoke ~ ~1.2 ~ 0.6 2.6 0.6 0.03 20
 execute as @e[tag=Skywar_ishtar_18,scores={rng1=800..}] at @s run kill @s
