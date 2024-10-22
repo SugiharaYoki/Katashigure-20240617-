@@ -14,7 +14,7 @@ execute if score zanei_flat_01_marker rng1 matches 1 positioned ~ ~1.5 ~ run par
 execute if score zanei_flat_01_marker rng1 matches 1 positioned ~ ~1.5 ~ run particle end_rod ^ ^0.2 ^1.3 0 0 0 0 1
 execute if score zanei_flat_01_marker rng1 matches 1 positioned ~ ~1.5 ~ run particle end_rod ^-0.2 ^ ^1.3 0 0 0 0 1
 execute if score zanei_flat_01_marker rng1 matches 1 positioned ~ ~1.5 ~ run particle end_rod ^ ^-0.2 ^1.3 0 0 0 0 1
-execute if score zanei_flat_01_marker rng1 matches 1..7 positioned ~ ~1.5 ~ run particle flame ^ ^ ^1.3 0 0 0 0.02 2
+execute if score zanei_flat_01_marker rng1 matches 1..7 positioned ~ ~1.5 ~ run particle soul_fire_flame ^ ^ ^1.3 0 0 0 0.04 2
 execute if score zanei_flat_01_marker rng1 matches 16 run playsound entity.arrow.shoot hostile @a ~ ~1.5 ~ 1 1.1
 execute if score zanei_flat_01_marker rng1 matches 19 run playsound entity.arrow.shoot hostile @a ~ ~1.5 ~ 1 1.1
 execute if score zanei_flat_01_marker rng1 matches 22 run playsound entity.arrow.shoot hostile @a ~ ~1.5 ~ 1 1.1
