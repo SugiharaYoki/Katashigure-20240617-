@@ -75,6 +75,9 @@ execute if entity @s[scores={If_MD_Ward=1..}] run scoreboard players set @s If_M
 
 execute if entity @s[nbt={Inventory:[{components:{"minecraft:custom_data":{skywar:1,skywar_ishtar_20:1}}}]},predicate=!skyblock:sneaking] positioned ~ ~-0.2 ~ if block ~ ~ ~ slime_block run effect give @s jump_boost 2 6 false
 
+
+execute if entity @s[nbt={Inventory:[{components:{"minecraft:custom_data":{skywar:1,skywar_ishtar_9:1}}}]}] run effect give @s haste 3 1 true
+
 execute if entity @s[scores={If_MD_Otherside=1..}] run playsound block.anvil.place ambient @a ~ ~1 ~ 1 1.3
 execute if entity @s[scores={If_MD_Otherside=1..}] run playsound item.mace.smash_ground_heavy ambient @a ~ ~1 ~ 1 1.3
 execute if entity @s[scores={If_MD_Otherside=1..}] run give @s mace

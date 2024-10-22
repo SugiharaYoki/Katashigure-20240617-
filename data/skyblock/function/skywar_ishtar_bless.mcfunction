@@ -23,9 +23,9 @@ execute if entity @s[scores={ishtar_bless_1=8}] run give @s enchanted_golden_app
 execute if entity @s[scores={ishtar_bless_2=8}] run give @s enchanted_golden_apple
 execute if entity @s[scores={ishtar_bless_3=8}] run give @s enchanted_golden_apple
 
-execute if entity @s[scores={ishtar_bless_1=9}] run give @s music_disc_13[custom_name='{"text":"高速堡垒核心","italic":false,"color":"green"}',custom_data={skywar:1}] 2
-execute if entity @s[scores={ishtar_bless_2=9}] run give @s music_disc_13[custom_name='{"text":"高速堡垒核心","italic":false,"color":"green"}',custom_data={skywar:1}] 2
-execute if entity @s[scores={ishtar_bless_3=9}] run give @s music_disc_13[custom_name='{"text":"高速堡垒核心","italic":false,"color":"green"}',custom_data={skywar:1}] 2
+execute if entity @s[scores={ishtar_bless_1=9}] run give @s music_disc_13[custom_name='{"text":"高速堡垒核心","italic":false,"color":"green"}',custom_data={skywar:1,skywar_ishtar_9:1}] 2
+execute if entity @s[scores={ishtar_bless_2=9}] run give @s music_disc_13[custom_name='{"text":"高速堡垒核心","italic":false,"color":"green"}',custom_data={skywar:1,skywar_ishtar_9:1}] 2
+execute if entity @s[scores={ishtar_bless_3=9}] run give @s music_disc_13[custom_name='{"text":"高速堡垒核心","italic":false,"color":"green"}',custom_data={skywar:1,skywar_ishtar_9:1}] 2
 execute if entity @s[scores={ishtar_bless_1=10}] run give @s music_disc_strad[custom_name='{"text":"顷刻天国核心","italic":false,"color":"green"}',custom_data={skywar:1}] 2
 execute if entity @s[scores={ishtar_bless_2=10}] run give @s music_disc_strad[custom_name='{"text":"顷刻天国核心","italic":false,"color":"green"}',custom_data={skywar:1}] 2
 execute if entity @s[scores={ishtar_bless_3=10}] run give @s music_disc_strad[custom_name='{"text":"顷刻天国核心","italic":false,"color":"green"}',custom_data={skywar:1}] 2
