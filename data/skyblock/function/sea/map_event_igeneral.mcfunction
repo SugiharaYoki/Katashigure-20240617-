@@ -10,7 +10,7 @@ execute as @e[type=item,x=90000,y=100,z=100,distance=..3000] at @s run function 
 execute as @e[tag=sea_drone,x=90000,y=100,z=100,distance=..3000] at @s run function skyblock:sea/p/drone
 execute as @e[tag=sea_mine,x=90000,y=100,z=100,distance=..3000] at @s run function skyblock:sea/p/mine
 
-execute as @e[type=husk,x=90000,y=100,z=100,distance=..3000] at @s run function skyblock:sea/p/husk
+execute as @e[type=husk,x=90000,y=100,z=100,distance=..3000] at @s run function skyblock:sea/p/husk_new
 execute as @e[type=zombie,tag=SEAshadow,x=90000,y=100,z=100,distance=..3000] at @s run function skyblock:sea/p/shadow
 
 execute store result score @e[type=endermite,x=90000,y=100,z=100,distance=..3000] rng1 run random value 1..9
