@@ -235,6 +235,42 @@
                   "options": [
                     "minecraft:knockback"
                   ]
+                },
+                {
+                  "function": "minecraft:set_enchantments",
+                  "enchantments": {
+                    "minecraft:knockback": 1
+                  },
+                  "conditions": [
+                    {
+                      "condition": "minecraft:random_chance",
+                      "chance": 0.3
+                    }
+                  ]
+                },
+                {
+                  "function": "minecraft:set_enchantments",
+                  "enchantments": {
+                    "minecraft:knockback": 2
+                  },
+                  "conditions": [
+                    {
+                      "condition": "minecraft:random_chance",
+                      "chance": 0.2
+                    }
+                  ]
+                },
+                {
+                  "function": "minecraft:set_enchantments",
+                  "enchantments": {
+                    "minecraft:knockback": 3
+                  },
+                  "conditions": [
+                    {
+                      "condition": "minecraft:random_chance",
+                      "chance": 0.1
+                    }
+                  ]
                 }
               ]
             },
@@ -337,6 +373,24 @@
                     "minecraft:power",
                     "minecraft:infinity",
                     "minecraft:flame"
+                  ],
+                  "conditions": [
+                    {
+                      "condition": "minecraft:random_chance",
+                      "chance": 0.5
+                    }
+                  ]
+                },
+                {
+                  "function": "minecraft:enchant_randomly",
+                  "options": [
+                    "minecraft:punch"
+                  ],
+                  "conditions": [
+                    {
+                      "condition": "minecraft:random_chance",
+                      "chance": 0.2
+                    }
                   ]
                 },
                 {
@@ -374,10 +428,28 @@
                   "function": "minecraft:enchant_randomly",
                   "options": [
                     "minecraft:sharpness",
-                    "minecraft:sweeping_edge",
                     "minecraft:binding_curse",
-                    "minecraft:knockback",
+                    "minecraft:knockback"
+                  ],
+                  "conditions": [
+                    {
+                      "condition": "minecraft:random_chance",
+                      "chance": 0.8
+                    }
+                  ]
+                },
+                {
+                  "function": "minecraft:enchant_randomly",
+                  "options": [
+                    "minecraft:unbreaking",
+                    "minecraft:sweeping_edge",
                     "minecraft:fire_aspect"
+                  ],
+                  "conditions": [
+                    {
+                      "condition": "minecraft:random_chance",
+                      "chance": 0.5
+                    }
                   ]
                 },
                 {
@@ -733,7 +805,7 @@
               "functions": [
                 {
                   "function": "minecraft:set_potion",
-                  "id": "minecraft:invisibility"
+                  "id": "minecraft:strong_swiftness"
                 }
               ]
             },

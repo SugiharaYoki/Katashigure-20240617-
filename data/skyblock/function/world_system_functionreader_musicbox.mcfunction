@@ -32,29 +32,31 @@ execute as @a[tag=!gaming,scores={MultiMenu=101780}] at @s run playsound minecra
 execute as @a[tag=!gaming,scores={MultiMenu=101781}] at @s run playsound minecraft:app1.caradbolg music @s ~ ~ ~ 5000
 execute as @a[tag=!gaming,scores={MultiMenu=101782}] at @s run playsound minecraft:app1.cristalisia music @s ~ ~ ~ 5000
 execute as @a[tag=!gaming,scores={MultiMenu=101783}] at @s run playsound minecraft:app2.neonlight music @s ~ ~ ~ 5000
-execute as @a[tag=!gaming,scores={MultiMenu=101784}] at @s run playsound minecraft:app2.flazard music @s ~ ~ ~ 5000
+execute as @a[tag=!gaming,scores={MultiMenu=101784}] at @s run playsound minecraft:app2.darkenergy music @s ~ ~ ~ 5000
 execute as @a[tag=!gaming,scores={MultiMenu=101785}] at @s run playsound minecraft:app2.aegleseeker music @s ~ ~ ~ 5000
 
 execute as @a[tag=!gaming,scores={MultiMenu=101787}] at @s run playsound minecraft:app2.fft music @s ~ ~ ~ 5000
 execute as @a[tag=!gaming,scores={MultiMenu=101788}] at @s run playsound minecraft:app2.manifoldhypothesis music @s ~ ~ ~ 5000
 execute as @a[tag=!gaming,scores={MultiMenu=101789}] at @s run playsound minecraft:app2.noiseproof music @s ~ ~ ~ 5000
-execute as @a[tag=!gaming,scores={MultiMenu=101790}] at @s run playsound minecraft:app2.hugandkill music @s ~ ~ ~ 5000
+execute as @a[tag=!gaming,scores={MultiMenu=101790}] at @s run playsound minecraft:app2.astrum music @s ~ ~ ~ 5000
 execute as @a[tag=!gaming,scores={MultiMenu=101791}] at @s run playsound minecraft:app2.heracles music @s ~ ~ ~ 5000
+execute as @a[tag=!gaming,scores={MultiMenu=101792}] at @s run playsound minecraft:app2.afterdark music @s ~ ~ ~ 5000
 
 execute as @a[tag=!gaming,scores={MultiMenu=101806}] at @s run playsound minecraft:vol1.bookstore music @s ~ ~ ~ 5000
 execute as @a[tag=!gaming,scores={MultiMenu=101805}] at @s run playsound minecraft:vol1.autumnmemories music @s ~ ~ ~ 5000
 execute as @a[tag=!gaming,scores={MultiMenu=101807}] at @s run playsound minecraft:vol1.poemoftherain music @s ~ ~ ~ 5000
 execute as @a[tag=!gaming,scores={MultiMenu=101804}] at @s run playsound minecraft:vol1.poemofthesnow music @s ~ ~ ~ 5000
 
-execute as @a[tag=!gaming,scores={MultiMenu=101971}] at @s run scoreboard players set @s ZeroBGM 1
+execute as @a[tag=!gaming,scores={MultiMenu=101971}] at @s run scoreboard players set @s ZeroBGM 7
 execute as @a[tag=!gaming,scores={MultiMenu=101976}] at @s run scoreboard players set @s ZeroBGM 2
 execute as @a[tag=!gaming,scores={MultiMenu=101977}] at @s run scoreboard players set @s ZeroBGM 3
 execute as @a[tag=!gaming,scores={MultiMenu=101978}] at @s run scoreboard players set @s ZeroBGM 4
 execute as @a[tag=!gaming,scores={MultiMenu=101979}] at @s run scoreboard players set @s ZeroBGM 5
 execute as @a[tag=!gaming,scores={MultiMenu=101980}] at @s run scoreboard players set @s ZeroBGM 6
+execute as @a[tag=!gaming,scores={MultiMenu=101981}] at @s run scoreboard players set @s ZeroBGM 1
 
 execute as @a[tag=!gaming,scores={MultiMenu=101771..101970}] at @s run scoreboard players set @s MultiMenu 120
 execute as @a[tag=!gaming,scores={MultiMenu=101971..101979}] at @s run function skyblock:multimenu120_setting_selectcitybgm_extend2b
-execute as @a[tag=!gaming,scores={MultiMenu=101980}] at @s run function skyblock:multimenu121_setting_selectcitybgm_extend2c
+execute as @a[tag=!gaming,scores={MultiMenu=101980..101981}] at @s run function skyblock:multimenu121_setting_selectcitybgm_extend2c
 execute as @a[tag=!gaming,scores={MultiMenu=..101770}] at @s run scoreboard players set @s MultiMenu 0
 execute as @a[tag=!gaming,scores={MultiMenu=101800..}] at @s run scoreboard players set @s MultiMenu 0

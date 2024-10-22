@@ -108,7 +108,15 @@ tag @n[tag=sc] remove SeGa_sea_ch5
 tag @n[tag=sc] remove SeGa_sea_ch6
 tag @n[tag=sc] remove SEAbossch3_lighted
 
+setblock 90187 36 99 minecraft:potted_azalea_bush
+setblock 90187 36 101 minecraft:potted_azalea_bush
 
+scoreboard players set sea_ch4_switch_entrance sea_4temp2 -9
+scoreboard players set sea_ch4_switch_entrance2 sea_4temp2 -9
+scoreboard players set sea_ch4_switch_crossroad sea_4temp2 -9
+scoreboard players set sea_ch4_switch_crossroad2 sea_4temp2 -9
+scoreboard players set sea_ch4_switch_secondfloor sea_4temp2 -9
+scoreboard players set sea_ch4_switch_waterstorage sea_4temp2 -9
 
 setblock 90075 103 137 air
 

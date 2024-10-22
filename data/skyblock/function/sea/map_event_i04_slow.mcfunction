@@ -260,9 +260,9 @@ execute if entity @a[tag=SEAPT,x=90183,y=10,z=152,distance=0..15] run function s
 
 
 #水下门
-execute if block 90174 10 113 minecraft:crimson_button[powered=true] unless block 90179 8 101 air run setblock 90174 10 113 minecraft:warped_button[facing=west,face=floor]
-execute if block 90174 10 113 minecraft:crimson_button[facing=east,powered=true] unless block 90179 8 101 air run setblock 90172 10 113 minecraft:magenta_glazed_terracotta[facing=west]
-execute if block 90174 10 113 minecraft:crimson_button[facing=east,powered=true] unless block 90179 8 101 air run fill 90179 8 101 90179 6 102 minecraft:air destroy
+execute if block 90174 10 113 minecraft:crimson_button[powered=true] unless block 90179 8 101 air run setblock 90172 10 113 minecraft:magenta_glazed_terracotta[facing=west]
+execute if block 90172 10 113 minecraft:magenta_glazed_terracotta[facing=west] unless block 90179 8 101 air run setblock 90174 10 113 minecraft:warped_button[facing=west,face=floor]
+execute if block 90172 10 113 minecraft:magenta_glazed_terracotta[facing=west] unless block 90179 8 101 air run fill 90179 8 101 90179 6 102 minecraft:air destroy
 
 
 execute positioned 90164 13 99 if entity @a[tag=SEAPT,distance=..6.7] unless entity @n[tag=SEAch4_spawn,distance=0..1] positioned 90164 13 99 run function skyblock:sea/m/zombie_security
@@ -315,6 +315,10 @@ execute positioned 90163 44 130 if entity @a[tag=SEAPT,distance=..2.7] unless en
 execute positioned 90163 44 130 if entity @a[tag=SEAPT,distance=..2.7] unless entity @n[tag=SEAch4_spawn,distance=0..1] positioned 90181 44 119 run function skyblock:sea/m/skeleton_melee
 execute positioned 90163 44 130 if entity @a[tag=SEAPT,distance=..2.7] unless entity @n[tag=SEAch4_spawn,distance=0..1] run summon marker ~ ~ ~ {Tags:["SEAch4_spawn"]}
 
+execute positioned 90163 44 130 if entity @a[tag=SEAPT,distance=..2.7] unless entity @n[tag=SEAch4_spawn,distance=0..1] positioned 90193 44 121 run function skyblock:sea/m/skeleton_shield
+execute positioned 90163 44 130 if entity @a[tag=SEAPT,distance=..2.7] unless entity @n[tag=SEAch4_spawn,distance=0..1] positioned 90193 44 121 run function skyblock:sea/m/skeleton_shield
+
+
 execute positioned 90172 44 134 if entity @a[tag=SEAPT,distance=..1.5] unless entity @n[tag=SEAch4_spawn,distance=0..1] positioned 90172 44 138 run summon zombie ~ ~ ~ {CustomName:'[{"text":"爆弹僵尸"}]',DeathLootTable:"skyblock:sea_zombie_bomb",Tags:["SEAmob","SEAmob_carrybomb"],attributes:[{id:"generic.attack_damage",base:1.5},{id:"generic.movement_speed",base:0.26},{id:"generic.max_health",base:2.0},{id:"generic.knockback_resistance",base:0.5}],Health:2,HandItems:[{id:fire_charge,count:1},{}],HandDropChances:[0f,0f],ArmorItems:[{id:iron_boots,count:1,components:{"minecraft:trim":{material:"minecraft:copper",pattern:"minecraft:dune"}}},{id:iron_leggings,count:1,components:{"minecraft:trim":{material:"minecraft:copper",pattern:"minecraft:dune"}}},{id:iron_chestplate,count:1,components:{"minecraft:trim":{material:"minecraft:copper",pattern:"minecraft:dune"}}},{id:chainmail_helmet,count:1}],ArmorDropChances:[0f,0f,0f,0f],PersistenceRequired:1b,Rotation:[180f,0f]}
 execute positioned 90172 44 134 if entity @a[tag=SEAPT,distance=..1.5] unless entity @n[tag=SEAch4_spawn,distance=0..1] run playsound entity.elder_guardian.curse hostile @a 90172 49 137 1 0.7
 execute positioned 90172 44 134 if entity @a[tag=SEAPT,distance=..1.5] unless entity @n[tag=SEAch4_spawn,distance=0..1] run setblock 90172 49 137 minecraft:tinted_glass destroy
@@ -327,10 +331,18 @@ execute positioned 90175 44 130 if entity @a[tag=SEAPT,distance=..4.7] unless it
 
 
 
+execute positioned 90187 47 105 if entity @a[tag=SEAPT,distance=..8] unless entity @n[tag=SEAch4_spawn,distance=0..1] positioned 90187 46 103 run function skyblock:sea/m/silverfish
+execute positioned 90187 47 105 if entity @a[tag=SEAPT,distance=..8] unless entity @n[tag=SEAch4_spawn,distance=0..1] positioned 90190 46 106 run function skyblock:sea/m/skeleton_melee
+execute positioned 90187 47 105 if entity @a[tag=SEAPT,distance=..8] unless entity @n[tag=SEAch4_spawn,distance=0..1] positioned 90191 46 105 run function skyblock:sea/m/cave_spider
+execute positioned 90187 47 105 if entity @a[tag=SEAPT,distance=..8] unless entity @n[tag=SEAch4_spawn,distance=0..1] positioned 90179 46 107 run function skyblock:sea/m/skeleton_shield
+execute positioned 90187 47 105 if entity @a[tag=SEAPT,distance=..8] unless entity @n[tag=SEAch4_spawn,distance=0..1] positioned 90179 46 105 run function skyblock:sea/m/skeleton_melee
+execute positioned 90187 47 105 if entity @a[tag=SEAPT,distance=..8] unless entity @n[tag=SEAch4_spawn,distance=0..1] run summon marker ~ ~ ~ {Tags:["SEAch4_spawn"]}
 
 
 
-
+execute positioned 90217 44 115 if entity @a[tag=SEAPT,distance=..2.7] unless items entity @a[tag=SEAPT] container.* heart_of_the_sea unless entity @n[tag=SEAch4_spawn,distance=0..3] positioned 90218 44 112 run function skyblock:sea/m/zombie_knight
+execute positioned 90217 44 115 if entity @a[tag=SEAPT,distance=..2.7] unless items entity @a[tag=SEAPT] container.* heart_of_the_sea unless entity @n[tag=SEAch4_spawn,distance=0..3] positioned 90216 44 112 run function skyblock:sea/m/zombie_knight
+execute positioned 90217 44 115 if entity @a[tag=SEAPT,distance=..2.7] unless items entity @a[tag=SEAPT] container.* heart_of_the_sea unless entity @n[tag=SEAch4_spawn,distance=0..3] run summon marker ~ ~ ~ {Tags:["SEAch4_spawn"]}
 
 
 

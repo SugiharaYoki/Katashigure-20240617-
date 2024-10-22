@@ -102,16 +102,16 @@ item replace block 90104 155 151 container.13 with trial_key[custom_name='{"text
 lore=['{"text":"没错，就是最中间那个，别多想了！","color":"white","italic":false}']]
 item replace block 90173 6 104 container.13 with trial_key[custom_name='{"text":"冷凝系统 - 休息区2F钥匙","italic":true,"color":"yellow","italic":false}']
 
-#法莫洛斯：医务部门 总管 - 死亡：被感染成为腐尸，第一章结尾被主角杀死
-#玛瑞莲：机械研发部门 贝塔小组 组长
+#法莫洛斯：医务部门 总管 - 死亡：被感染成为腐尸，第一章结尾被主角杀死 - 路加福音
+#玛瑞莲：机械研发部门 贝塔小组 组长 - 伪福音犹大福音
 #菲尔娜：舵长的女儿
 #艾德雯娜：美国中央情报局 探员
 #诺曼：生物化学分析部门 首席科学家
-#麦迪逊：机械研发部门 阿尔法小组 开发员 - 失踪：主角从未见过麦迪逊
-#越涵：维修部门 维修员
+#麦迪逊：机械研发部门 阿尔法小组 开发员 - 失踪：主角从未见过麦迪逊 - 马太福音
+#越涵：维修部门 维修员 - 约翰福音
 #史丹尼：钻井平台舵长
 #瑞弗特：餐饮部门 主厨 - 死亡：失去理智被深渊侵蚀成为猪人，后被骸骨化的德怀特杀死
-#德怀特：餐饮部门 厨师 - 死亡：被瑞弗特杀死食用，遗体被遗弃在冷冻库，后被藤蔓侵蚀骸骨化，第二章结尾被主角杀死
+#德怀特：餐饮部门 厨师 - 死亡：被瑞弗特杀死食用，遗体被遗弃在冷冻库，后被藤蔓侵蚀骸骨化，第二章结尾被主角杀死 - 马可福音
 #潘：餐饮部门 厨师 - 死亡：被瑞弗特杀死食用，遗体位置不明
 #斯顿：钻井作业小组A 成员 - 死亡：在宿舍楼失守后与其他人员一同遇难
 #马绍尔：钻井作业小组A 成员 - 死亡：在宿舍楼失守后与其他人员一同遇难
@@ -297,13 +297,13 @@ execute as @a[tag=SEAPT] at @s run function skyblock:sea/p/player
 
 #激光
 execute as @e[x=90130.0,dx=2.2,y=124.5,dy=0,z=125.5,dz=0] run damage @s 3 sting
-execute if block 90146 123 130 crimson_button as @e[tag=!sea_laser_immune,x=90132.5,dx=0,y=122.2,dy=0,z=135.0,dz=3] run damage @s 3 sting
-execute if block 90109 123 120 crimson_button as @e[tag=!sea_laser_immune,x=90111.5,dx=0,y=123.5,dy=0,z=119.0,dz=2.3] run damage @s 3 sting
-execute if block 90109 123 130 crimson_button as @e[tag=!sea_laser_immune,x=90114.5,dx=0,y=123.5,dy=0,z=131.0,dz=2.3] run damage @s 3 sting
-execute if block 90145 123 113 crimson_button as @e[tag=!sea_laser_immune,x=90146.0,dx=2.2,y=123.8,dy=0,z=115.5,dz=0] run damage @s 3 sting
-execute if block 90145 123 100 crimson_button as @e[tag=!sea_laser_immune,x=90145.0,dx=0,y=121.0,dy=5,z=102.5,dz=0] run damage @s 3 sting
+execute if block 90146 123 130 crimson_button as @e[tag=!sea_laser_immune,x=90132.00,dx=0,y=122.2,dy=0,z=135.0,dz=3] run damage @s 3 sting
+execute if block 90109 123 120 crimson_button as @e[tag=!sea_laser_immune,x=90111.00,dx=0,y=123.5,dy=0,z=119.0,dz=2.3] run damage @s 3 sting
+execute if block 90109 123 130 crimson_button as @e[tag=!sea_laser_immune,x=90114.00,dx=0,y=123.5,dy=0,z=131.0,dz=2.3] run damage @s 3 sting
+execute if block 90145 123 113 crimson_button as @e[tag=!sea_laser_immune,x=90146.0,dx=2.2,y=123.8,dy=0,z=115.00,dz=0] run damage @s 3 sting
+execute if block 90145 123 100 crimson_button as @e[tag=!sea_laser_immune,x=90145.0,dx=0,y=121.0,dy=5,z=102.00,dz=0] run damage @s 3 sting
 
-execute if block 90117 123 117 lever[powered=false] as @e[tag=!sea_laser_immune,x=90118.5,dx=0,y=123.5,dy=0,z=115.0,dz=2.0] run damage @s 3 sting
+execute if block 90117 123 117 lever[powered=false] as @e[tag=!sea_laser_immune,x=90118.00,dx=0,y=123.5,dy=0,z=115.0,dz=2.0] run damage @s 3 sting
 
 execute if block 90109 123 120 crimson_button[powered=true] run kill @n[tag=sea_laser_close_1]
 execute if block 90109 123 120 crimson_button[powered=true] run setblock 90109 123 120 warped_button[facing=east,face=wall]
@@ -333,8 +333,8 @@ execute if block 90195 27 130 bamboo_button[powered=true] run fill 90195 25 130 
 execute as @n[tag=SEAmob_carrybomb,nbt=!{Fire:-1s}] run kill @s
 
 #ch4激光
-execute as @e[x=90184.0,dx=3.8,y=20.65,dy=0,z=97.0,dz=0] run damage @s 3 sting
-execute as @e[x=90184.0,dx=3.8,y=19.05,dy=0,z=93.0,dz=0] run damage @s 3 sting
+execute as @e[x=90184.0,dx=3.8,y=20.65,dy=0,z=96.50,dz=0] run damage @s 3 sting
+execute as @e[x=90184.0,dx=3.8,y=18.55,dy=0,z=92.50,dz=0] run damage @s 3 sting
 
 #水晶祀堂
 particle enchant 90093 131 102 3 3 3 0.01 20

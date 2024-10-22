@@ -13,9 +13,9 @@ execute if entity @s[scores={ishtar_bless_3=4}] run give @s trident[custom_name=
 execute if entity @s[scores={ishtar_bless_1=5}] run give @s leather_boots[custom_name='{"text":"彻锋戮影","italic":false,"color":"red"}',dyed_color={rgb:3081303},attribute_modifiers=[{type:"generic.movement_speed",slot:"feet",id:"ishtar_bless:002_01",amount:0.07,operation:"add_value"},{type:"player.sneaking_speed",slot:"feet",id:"ishtar_bless:002_02",amount:0.55,operation:"add_value"},{type:"generic.max_health",slot:"feet",id:"ishtar_bless:002_03",amount:-4,operation:"add_value"}]]
 execute if entity @s[scores={ishtar_bless_2=5}] run give @s leather_boots[custom_name='{"text":"彻锋戮影","italic":false,"color":"red"}',dyed_color={rgb:3081303},attribute_modifiers=[{type:"generic.movement_speed",slot:"feet",id:"ishtar_bless:002_01",amount:0.07,operation:"add_value"},{type:"player.sneaking_speed",slot:"feet",id:"ishtar_bless:002_02",amount:0.55,operation:"add_value"},{type:"generic.max_health",slot:"feet",id:"ishtar_bless:002_03",amount:-4,operation:"add_value"}]]
 execute if entity @s[scores={ishtar_bless_3=5}] run give @s leather_boots[custom_name='{"text":"彻锋戮影","italic":false,"color":"red"}',dyed_color={rgb:3081303},attribute_modifiers=[{type:"generic.movement_speed",slot:"feet",id:"ishtar_bless:002_01",amount:0.07,operation:"add_value"},{type:"player.sneaking_speed",slot:"feet",id:"ishtar_bless:002_02",amount:0.55,operation:"add_value"},{type:"generic.max_health",slot:"feet",id:"ishtar_bless:002_03",amount:-4,operation:"add_value"}]]
-execute if entity @s[scores={ishtar_bless_1=6}] run give @s iron_sword[custom_name='{"text":"袖剑·轮月","italic":false,"color":"red"}',attribute_modifiers=[{type:"generic.movement_speed",slot:"hand",id:"ishtar_bless:003_01",amount:0.02,operation:"add_value"},{type:"generic.armor",slot:"hand",id:"ishtar_bless:003_02",amount:-2,operation:"add_value"},{type:"generic.attack_damage",slot:"hand",id:"ishtar_bless:003_03",amount:13,operation:"add_value"},{type:"generic.attack_speed",slot:"hand",id:"ishtar_bless:003_04",amount:-3.7,operation:"add_value"}],enchantments={fire_aspect:1}]
-execute if entity @s[scores={ishtar_bless_2=6}] run give @s iron_sword[custom_name='{"text":"袖剑·轮月","italic":false,"color":"red"}',attribute_modifiers=[{type:"generic.movement_speed",slot:"hand",id:"ishtar_bless:003_01",amount:0.02,operation:"add_value"},{type:"generic.armor",slot:"hand",id:"ishtar_bless:003_02",amount:-2,operation:"add_value"},{type:"generic.attack_damage",slot:"hand",id:"ishtar_bless:003_03",amount:13,operation:"add_value"},{type:"generic.attack_speed",slot:"hand",id:"ishtar_bless:003_04",amount:-3.7,operation:"add_value"}],enchantments={fire_aspect:1}]
-execute if entity @s[scores={ishtar_bless_3=6}] run give @s iron_sword[custom_name='{"text":"袖剑·轮月","italic":false,"color":"red"}',attribute_modifiers=[{type:"generic.movement_speed",slot:"hand",id:"ishtar_bless:003_01",amount:0.02,operation:"add_value"},{type:"generic.armor",slot:"hand",id:"ishtar_bless:003_02",amount:-2,operation:"add_value"},{type:"generic.attack_damage",slot:"hand",id:"ishtar_bless:003_03",amount:13,operation:"add_value"},{type:"generic.attack_speed",slot:"hand",id:"ishtar_bless:003_04",amount:-3.7,operation:"add_value"}],enchantments={fire_aspect:1}]
+execute if entity @s[scores={ishtar_bless_1=6}] run give @s iron_sword[custom_name='{"text":"袖剑·轮月","italic":false,"color":"red"}',attribute_modifiers=[{type:"generic.movement_speed",slot:"hand",id:"ishtar_bless:003_01",amount:0.02,operation:"add_value"},{type:"generic.armor",slot:"hand",id:"ishtar_bless:003_02",amount:-2,operation:"add_value"},{type:"generic.attack_damage",slot:"hand",id:"ishtar_bless:003_03",amount:12,operation:"add_value"},{type:"generic.attack_speed",slot:"hand",id:"ishtar_bless:003_04",amount:-3.7,operation:"add_value"}],enchantments={fire_aspect:1}]
+execute if entity @s[scores={ishtar_bless_2=6}] run give @s iron_sword[custom_name='{"text":"袖剑·轮月","italic":false,"color":"red"}',attribute_modifiers=[{type:"generic.movement_speed",slot:"hand",id:"ishtar_bless:003_01",amount:0.02,operation:"add_value"},{type:"generic.armor",slot:"hand",id:"ishtar_bless:003_02",amount:-2,operation:"add_value"},{type:"generic.attack_damage",slot:"hand",id:"ishtar_bless:003_03",amount:12,operation:"add_value"},{type:"generic.attack_speed",slot:"hand",id:"ishtar_bless:003_04",amount:-3.7,operation:"add_value"}],enchantments={fire_aspect:1}]
+execute if entity @s[scores={ishtar_bless_3=6}] run give @s iron_sword[custom_name='{"text":"袖剑·轮月","italic":false,"color":"red"}',attribute_modifiers=[{type:"generic.movement_speed",slot:"hand",id:"ishtar_bless:003_01",amount:0.02,operation:"add_value"},{type:"generic.armor",slot:"hand",id:"ishtar_bless:003_02",amount:-2,operation:"add_value"},{type:"generic.attack_damage",slot:"hand",id:"ishtar_bless:003_03",amount:12,operation:"add_value"},{type:"generic.attack_speed",slot:"hand",id:"ishtar_bless:003_04",amount:-3.7,operation:"add_value"}],enchantments={fire_aspect:1}]
 execute if entity @s[scores={ishtar_bless_1=7}] run give @s zoglin_spawn_egg 2
 execute if entity @s[scores={ishtar_bless_2=7}] run give @s zoglin_spawn_egg 2
 execute if entity @s[scores={ishtar_bless_3=7}] run give @s zoglin_spawn_egg 2
@@ -23,21 +23,21 @@ execute if entity @s[scores={ishtar_bless_1=8}] run give @s enchanted_golden_app
 execute if entity @s[scores={ishtar_bless_2=8}] run give @s enchanted_golden_apple
 execute if entity @s[scores={ishtar_bless_3=8}] run give @s enchanted_golden_apple
 
-execute if entity @s[scores={ishtar_bless_1=9}] run give @s music_disc_13[custom_name='{"text":"高速堡垒核心","italic":false,"color":"green"}',custom_data={skywar:1}] 2
-execute if entity @s[scores={ishtar_bless_2=9}] run give @s music_disc_13[custom_name='{"text":"高速堡垒核心","italic":false,"color":"green"}',custom_data={skywar:1}] 2
-execute if entity @s[scores={ishtar_bless_3=9}] run give @s music_disc_13[custom_name='{"text":"高速堡垒核心","italic":false,"color":"green"}',custom_data={skywar:1}] 2
-execute if entity @s[scores={ishtar_bless_1=10}] run give @s music_disc_strad[custom_name='{"text":"顷刻天国核心","italic":false,"color":"green"}',custom_data={skywar:1}] 2
-execute if entity @s[scores={ishtar_bless_2=10}] run give @s music_disc_strad[custom_name='{"text":"顷刻天国核心","italic":false,"color":"green"}',custom_data={skywar:1}] 2
-execute if entity @s[scores={ishtar_bless_3=10}] run give @s music_disc_strad[custom_name='{"text":"顷刻天国核心","italic":false,"color":"green"}',custom_data={skywar:1}] 2
+execute if entity @s[scores={ishtar_bless_1=9}] run give @s music_disc_13[custom_name='{"text":"高速堡垒核心","italic":false,"color":"green"}',custom_data={skywar:1,skywar_ishtar_9:1}] 2
+execute if entity @s[scores={ishtar_bless_2=9}] run give @s music_disc_13[custom_name='{"text":"高速堡垒核心","italic":false,"color":"green"}',custom_data={skywar:1,skywar_ishtar_9:1}] 2
+execute if entity @s[scores={ishtar_bless_3=9}] run give @s music_disc_13[custom_name='{"text":"高速堡垒核心","italic":false,"color":"green"}',custom_data={skywar:1,skywar_ishtar_9:1}] 2
+execute if entity @s[scores={ishtar_bless_1=10}] run give @s music_disc_strad[custom_name='{"text":"顷刻天国核心","italic":false,"color":"green"}',custom_data={skywar:1,skywar_ishtar_10:1}] 2
+execute if entity @s[scores={ishtar_bless_2=10}] run give @s music_disc_strad[custom_name='{"text":"顷刻天国核心","italic":false,"color":"green"}',custom_data={skywar:1,skywar_ishtar_10:1}] 2
+execute if entity @s[scores={ishtar_bless_3=10}] run give @s music_disc_strad[custom_name='{"text":"顷刻天国核心","italic":false,"color":"green"}',custom_data={skywar:1,skywar_ishtar_10:1}] 2
 execute if entity @s[scores={ishtar_bless_1=11}] run give @s music_disc_wait[custom_name='{"text":"陨落压制核心","italic":false,"color":"green"}',custom_data={skywar:1}] 2
 execute if entity @s[scores={ishtar_bless_2=11}] run give @s music_disc_wait[custom_name='{"text":"陨落压制核心","italic":false,"color":"green"}',custom_data={skywar:1}] 2
 execute if entity @s[scores={ishtar_bless_3=11}] run give @s music_disc_wait[custom_name='{"text":"陨落压制核心","italic":false,"color":"green"}',custom_data={skywar:1}] 2
 execute if entity @s[scores={ishtar_bless_1=12}] run give @s splash_potion[potion_contents={custom_color:12489686,custom_effects:[{id:speed,duration:60,amplifier:4},{id:jump_boost,duration:60,amplifier:1}]},custom_name='["",{"text":"刹踪烟消药剂","italic":false}]'] 2
 execute if entity @s[scores={ishtar_bless_2=12}] run give @s splash_potion[potion_contents={custom_color:12489686,custom_effects:[{id:speed,duration:60,amplifier:4},{id:jump_boost,duration:60,amplifier:1}]},custom_name='["",{"text":"刹踪烟消药剂","italic":false}]'] 2
 execute if entity @s[scores={ishtar_bless_3=12}] run give @s splash_potion[potion_contents={custom_color:12489686,custom_effects:[{id:speed,duration:60,amplifier:4},{id:jump_boost,duration:60,amplifier:1}]},custom_name='["",{"text":"刹踪烟消药剂","italic":false}]'] 2
-execute if entity @s[scores={ishtar_bless_1=13}] run give @s bow[custom_name='{"text":"绯华","italic":false,"color":"red"}',enchantments={multishot:4,power:2,piercing:2}]
-execute if entity @s[scores={ishtar_bless_2=13}] run give @s bow[custom_name='{"text":"绯华","italic":false,"color":"red"}',enchantments={multishot:4,power:2,piercing:2}]
-execute if entity @s[scores={ishtar_bless_3=13}] run give @s bow[custom_name='{"text":"绯华","italic":false,"color":"red"}',enchantments={multishot:4,power:2,piercing:2}]
+execute if entity @s[scores={ishtar_bless_1=13}] run give @s bow[custom_name='{"text":"绯华","italic":false,"color":"red"}',enchantments={multishot:3},repair_cost=1000]
+execute if entity @s[scores={ishtar_bless_2=13}] run give @s bow[custom_name='{"text":"绯华","italic":false,"color":"red"}',enchantments={multishot:3},repair_cost=1000]
+execute if entity @s[scores={ishtar_bless_3=13}] run give @s bow[custom_name='{"text":"绯华","italic":false,"color":"red"}',enchantments={multishot:3},repair_cost=1000]
 execute if entity @s[scores={ishtar_bless_1=13}] run give @s arrow 5
 execute if entity @s[scores={ishtar_bless_2=13}] run give @s arrow 5
 execute if entity @s[scores={ishtar_bless_3=13}] run give @s arrow 5
@@ -54,3 +54,22 @@ execute if entity @s[scores={ishtar_bless_3=15}] run give @s recovery_compass[cu
 execute if entity @s[scores={ishtar_bless_1=16}] run give @s eye_armor_trim_smithing_template[custom_name='{"text":"刺客尊荣","italic":false,"color":"red"}',custom_data={skywar_antiinvis:1}] 1
 execute if entity @s[scores={ishtar_bless_2=16}] run give @s eye_armor_trim_smithing_template[custom_name='{"text":"刺客尊荣","italic":false,"color":"red"}',custom_data={skywar_antiinvis:1}] 1
 execute if entity @s[scores={ishtar_bless_3=16}] run give @s eye_armor_trim_smithing_template[custom_name='{"text":"刺客尊荣","italic":false,"color":"red"}',custom_data={skywar_antiinvis:1}] 1
+
+execute if entity @s[scores={ishtar_bless_1=17}] run give @s music_disc_chirp[custom_name='{"text":"扬焱剧爆核心","italic":false,"color":"green"}',custom_data={skywar:1}] 2
+execute if entity @s[scores={ishtar_bless_2=17}] run give @s music_disc_chirp[custom_name='{"text":"扬焱剧爆核心","italic":false,"color":"green"}',custom_data={skywar:1}] 2
+execute if entity @s[scores={ishtar_bless_3=17}] run give @s music_disc_chirp[custom_name='{"text":"扬焱剧爆核心","italic":false,"color":"green"}',custom_data={skywar:1}] 2
+
+execute if entity @s[scores={ishtar_bless_1=18}] run give @s music_disc_stal[custom_name='{"text":"漆幕虚垒核心","italic":false,"color":"green"}',custom_data={skywar:1}] 2
+execute if entity @s[scores={ishtar_bless_2=18}] run give @s music_disc_stal[custom_name='{"text":"漆幕虚垒核心","italic":false,"color":"green"}',custom_data={skywar:1}] 2
+execute if entity @s[scores={ishtar_bless_3=18}] run give @s music_disc_stal[custom_name='{"text":"漆幕虚垒核心","italic":false,"color":"green"}',custom_data={skywar:1}] 2
+
+execute if entity @s[scores={ishtar_bless_1=19}] run give @s music_disc_ward[custom_name='{"text":"输载归初核心","italic":false,"color":"green"}',custom_data={skywar:1,skywar_ishtar_19:1}] 1
+execute if entity @s[scores={ishtar_bless_2=19}] run give @s music_disc_ward[custom_name='{"text":"输载归初核心","italic":false,"color":"green"}',custom_data={skywar:1,skywar_ishtar_19:1}] 1
+execute if entity @s[scores={ishtar_bless_3=19}] run give @s music_disc_ward[custom_name='{"text":"输载归初核心","italic":false,"color":"green"}',custom_data={skywar:1,skywar_ishtar_19:1}] 1
+
+execute if entity @s[scores={ishtar_bless_1=20}] run give @s music_disc_otherside[custom_name='{"text":"跃空战技核心","italic":false,"color":"green"}',custom_data={skywar:1,skywar_ishtar_20:1}] 1
+execute if entity @s[scores={ishtar_bless_2=20}] run give @s music_disc_otherside[custom_name='{"text":"跃空战技核心","italic":false,"color":"green"}',custom_data={skywar:1,skywar_ishtar_20:1}] 1
+execute if entity @s[scores={ishtar_bless_3=20}] run give @s music_disc_otherside[custom_name='{"text":"跃空战技核心","italic":false,"color":"green"}',custom_data={skywar:1,skywar_ishtar_20:1}] 1
+execute if entity @s[scores={ishtar_bless_1=20}] run give @s slime_block 3
+execute if entity @s[scores={ishtar_bless_2=20}] run give @s slime_block 3
+execute if entity @s[scores={ishtar_bless_3=20}] run give @s slime_block 3

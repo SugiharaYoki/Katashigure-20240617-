@@ -52,6 +52,7 @@ execute if entity @n[tag=sc,scores={SSgspT=2,Map_Theme=4}] run forceload add 503
 execute if entity @n[tag=sc,scores={SSgspT=2,Map_Theme=4}] run forceload add 50600 50390 50800 50600
 execute if entity @n[tag=sc,scores={SSgspT=2,Map_Theme=4}] run forceload add 50600 50600 50800 50800
 execute if entity @n[tag=sc,scores={SSgspT=2}] as @e[tag=!NoSkyWar,tag=!Gaming] run kill @e[type=wolf,distance=0..10,tag=!Wolfer]
+execute if entity @n[tag=sc,scores={SSgspT=2}] run kill @e[x=50000,y=50,z=50000,distance=..1500,type=!player]
 execute if entity @n[tag=!MapLoaAlr,tag=sc,scores={SSgspT=2,Map_Code=14}] run forceload add -9838 -10164 -9709 -10035
 execute if entity @n[tag=!MapLoaAlr,tag=sc,scores={SSgspT=2,Map_Code=2}] run function skyblock:preload_map_pvp_map002_part1
 execute if entity @n[tag=!MapLoaAlr,tag=sc,scores={SSgspT=2,Map_Code=3}] run function skyblock:preload_map_pvp_map003_part1
@@ -70,7 +71,6 @@ execute if entity @n[tag=!MapLoaAlr,tag=sc,scores={SSgspT=2,Map_Code=17}] run fu
 #[futuredevskywar]
 execute if entity @n[tag=!MapLoaAlr,tag=sc,scores={SSgspT=3,Map_Code=14}] run forceload remove -9838 -10164 -9709 -10035
 execute if entity @n[tag=!MapLoaAlr,tag=sc,scores={SSgspT=3}] run tag @n[tag=sc] add MapLoaAlr
-execute if entity @n[tag=sc,scores={SSgspT=2}] run kill @e[x=50000,y=50,z=50000,distance=..1500,type=!player]
 #《禁止提前预加载》
 #-#-#setblock 12 88 86 air
 #《禁止再次开局》
@@ -90,6 +90,7 @@ execute if score @n[tag=sc] SSgspT matches 2 as @a[tag=!NoSkyWar] at @s run scor
 execute if score @n[tag=sc] SSgspT matches 2 as @a[tag=!NoSkyWar] at @s run function skyblock:skywar_system_removeallgaming
 #无意义变量 scoreboard players reset @s PersonTimeRemain
 execute if score @n[tag=sc] SSgspT matches 2 as @a[tag=!NoSkyWar] at @s run scoreboard players reset @s TimeRemainUnsee
+execute if score @n[tag=sc] SSgspT matches 2 as @a[tag=!NoSkyWar] at @s run scoreboard players reset sc TimeRemainUnsee
 execute if score @n[tag=sc] SSgspT matches 2 as @a[tag=!NoSkyWar] at @s run scoreboard players set @s LeftGame 0
 execute if score @n[tag=sc] SSgspT matches 2 as @a[tag=!NoSkyWar] at @s run scoreboard players set @s DeathCountTemp 0
 execute if score @n[tag=sc] SSgspT matches 2 as @a[tag=!NoSkyWar] at @s run tag @s remove LeftGame
@@ -183,7 +184,7 @@ execute if score @n[tag=sc] SSgspT matches 11 run effect give @a[tag=PVPing] min
 execute if score @n[tag=sc] SSgspT matches 11 run effect give @a[tag=PVPing] minecraft:slow_falling 3 20 true
 execute if score @n[tag=sc] SSgspT matches 11 run effect give @a[tag=PVPing] minecraft:saturation 8 0 true
 
-execute if score @n[tag=sc] SSgspT matches 12 run clear @a[tag=!NoSkyWar]
+execute if score @n[tag=sc] SSgspT matches 12..14 run clear @a[tag=!NoSkyWar]
 execute if score @n[tag=sc] SSgspT matches 13 run function skyblock:skywar_system_gamestartprep_team_index
 execute if score @n[tag=sc] SSgspT matches 13 run gamemode spectator @a[tag=PVPing,tag=!PVPTeamed]
 execute if score @n[tag=sc] SSgspT matches 13 run tag @a[tag=PVPing] add PVP_see
@@ -255,7 +256,7 @@ execute if block -131 59 -117 green_concrete if score @n[tag=sc] SSgspT matches 
 execute if block -131 59 -117 green_concrete if score @n[tag=sc] SSgspT matches 17 run execute as @a[tag=PVPing] at @s run give @s green_dye 8
 execute if block -131 59 -117 green_concrete if score @n[tag=sc] SSgspT matches 17 run execute as @a[tag=PVPing] at @s run give @s yellow_dye 8
 
-execute if block -131 58 -133 diamond_block if score @n[tag=sc] SSgspT matches 17 run execute as @a[tag=PVPing] at @s run function skyblock:skywar_ishtar_bless
+execute if block -131 58 -133 diamond_block if score @n[tag=sc] SSgspT matches 15 run execute as @a[tag=PVPing] at @s run function skyblock:skywar_ishtar_bless
 #execute if score @n[tag=sc] SSgspT matches 18 run tellraw @a[tag=PVPing] {"text":"看板狐： 所有参与者已合并为 A C 两组","color":"dark_green"}
 #execute if score @n[tag=sc] SSgspT matches 18 run team join Team1_1 @a[team=Team1_3]
 #execute if score @n[tag=sc] SSgspT matches 18 run team join Team1_2 @a[team=Team1_4]

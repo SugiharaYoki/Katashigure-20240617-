@@ -32,13 +32,54 @@ execute if entity @s[scores={If_MD_Strad=1..}] run summon area_effect_cloud ~ ~ 
 execute if entity @s[scores={If_MD_Strad=1..}] run scoreboard players set @s If_MD_Strad 0
 
 execute if entity @s[scores={If_MD_Wait=1..}] run playsound minecraft:block.beacon.deactivate ambient @a ~ ~1 ~ 4 0.8
+#execute if entity @s[scores={If_MD_Wait=1..}] run playsound e ambient @a ~ ~1 ~ 4 0.8
 execute if entity @s[scores={If_MD_Wait=1..}] run particle dripping_obsidian_tear ~ ~1 ~ 5 5 5 0.2 80
-execute if entity @s[scores={If_MD_Wait=1..}] run effect give @a[tag=PVPing,distance=0.1..5.3] slowness 5 199
+execute if entity @s[scores={If_MD_Wait=1..}] run effect give @a[tag=PVPing,distance=0.1..5.3] slowness 14 199
 execute if entity @s[scores={If_MD_Wait=1..}] run effect give @a[tag=PVPing,distance=0.1..5.3] resistance 5 4
 execute if entity @s[scores={If_MD_Wait=1..}] run effect give @a[tag=PVPing,distance=0.1..5.3] wither 5 0
 execute if entity @s[scores={If_MD_Wait=1..}] run scoreboard players set @s If_MD_Wait 0
 
+execute if entity @s[scores={If_MD_Chirp=1..}] rotated ~ 0 run tellraw @a[distance=0.01..7] {"text": "送你一个礼物！","color": "gold","bold":true}
+execute if entity @s[scores={If_MD_Chirp=1..}] rotated ~ 0 run playsound block.note_block.bell master @a ~ ~ ~ 1 1.5
+execute if entity @s[scores={If_MD_Chirp=1..}] rotated ~ 0 positioned ^ ^ ^-1 if block ~ ~ ~ air run summon tnt ~ ~ ~ {fuse:80}
+execute if entity @s[scores={If_MD_Chirp=1..}] rotated ~ 0 positioned ^ ^ ^1 if block ~ ~ ~ air run summon tnt ~ ~ ~ {fuse:80}
+execute if entity @s[scores={If_MD_Chirp=1..}] rotated ~ 0 positioned ^-1 ^ ^ if block ~ ~ ~ air run summon tnt ~ ~ ~ {fuse:80}
+execute if entity @s[scores={If_MD_Chirp=1..}] rotated ~ 0 positioned ^1 ^ ^ if block ~ ~ ~ air run summon tnt ~ ~ ~ {fuse:80}
+execute if entity @s[scores={If_MD_Chirp=1..}] run scoreboard players set @s If_MD_Chirp 0
 
-execute if entity @s[nbt={Inventory:[{components:{"minecraft:custom_data":{skywar_antiinvis:1}}}]}] at @a[distance=0.1..5,nbt={active_effects:[{id:"minecraft:invisibility"}]}] run playsound minecraft:block.note_block.chime ambient @a ~ ~1 ~ 4 1.5
-execute if entity @s[nbt={Inventory:[{components:{"minecraft:custom_data":{skywar_antiinvis:1}}}]}] as @a[distance=0.1..5,nbt={active_effects:[{id:"minecraft:invisibility"}]}] at @s run effect give @s glowing 5 0 true
-execute if entity @s[nbt={Inventory:[{components:{"minecraft:custom_data":{skywar_antiinvis:1}}}]}] as @a[distance=0.1..5,nbt={active_effects:[{id:"minecraft:invisibility"}]}] at @s run effect clear @s invisibility
+execute if items entity @s[predicate=!skyblock:sneaking] container.* *[custom_data={skywar_antiinvis:1}] at @a[distance=0.1..5,nbt={active_effects:[{id:"minecraft:invisibility"}]}] run playsound minecraft:block.note_block.chime ambient @a ~ ~1 ~ 4 1.5
+execute if items entity @s[predicate=!skyblock:sneaking] container.* *[custom_data={skywar_antiinvis:1}] as @a[distance=0.1..5,nbt={active_effects:[{id:"minecraft:invisibility"}]}] at @s run effect give @s glowing 5 0 true
+execute if items entity @s[predicate=!skyblock:sneaking] container.* *[custom_data={skywar_antiinvis:1}] as @a[distance=0.1..5,nbt={active_effects:[{id:"minecraft:invisibility"}]}] at @s run effect clear @s invisibility
+
+
+execute if entity @s[scores={If_MD_Stal=1..}] run playsound entity.squid.squirt ambient @a ~ ~1 ~ 4 0.5
+execute if entity @s[scores={If_MD_Stal=1..}] positioned ^ ^ ^4 run summon marker ~ ~ ~ {Tags:["Skywar_ishtar_18"]}
+execute if entity @s[scores={If_MD_Stal=1..}] run scoreboard players set @s If_MD_Stal 0
+
+execute as @e[tag=Skywar_ishtar_18] at @s run scoreboard players add @s rng1 1
+execute as @e[tag=Skywar_ishtar_18] at @s if entity @a[gamemode=survival,distance=0..1.5] run scoreboard players add @s rng1 1
+execute as @e[tag=Skywar_ishtar_18] at @s as @a[gamemode=survival,distance=0..1.5] run effect give @s blindness 5 0 false
+execute as @e[tag=Skywar_ishtar_18] at @s if entity @a[gamemode=survival,distance=0..0.85] run scoreboard players add @s rng1 1
+execute as @e[tag=Skywar_ishtar_18] at @s run particle squid_ink ~ ~1 ~ 1.5 2.3 1.5 0.03 30
+execute as @e[tag=Skywar_ishtar_18] at @s run particle large_smoke ~ ~1.2 ~ 1.5 2.6 1.5 0.03 40
+execute as @e[tag=Skywar_ishtar_18,scores={rng1=800..}] at @s run kill @s
+
+execute if items entity @s[predicate=skyblock:sneaking] container.* *[custom_data={skywar:1,skywar_ishtar_19:1}] positioned ~ ~-1 ~ if block ~ ~ ~ #shulker_boxes run setblock ~ ~ ~ air destroy
+
+
+execute if entity @s[scores={If_MD_Ward=1..}] run playsound entity.shulker.open ambient @a ~ ~1 ~ 2 0.6
+execute if entity @s[scores={If_MD_Ward=1..}] run playsound block.shulker_box.close ambient @a ~ ~1 ~ 2 0.8
+execute if entity @s[scores={If_MD_Ward=1..}] run playsound entity.shulker.ambient ambient @a ~ ~1 ~ 2 0.8
+execute if entity @s[scores={If_MD_Ward=1..}] run fill ~4 ~4 ~4 ~-4 ~-4 ~-4 pink_shulker_box{LootTable:"skyblock:cakebox_pramanix"} replace #shulker_boxes
+execute if entity @s[scores={If_MD_Ward=1..}] run scoreboard players set @s If_MD_Ward 0
+
+execute if items entity @s[predicate=!skyblock:sneaking] container.* *[custom_data={skywar:1,skywar_ishtar_20:1}] positioned ~ ~-0.2 ~ if block ~ ~ ~ slime_block run effect give @s jump_boost 2 6 false
+
+
+execute if items entity @s container.* *[custom_data={skywar:1,skywar_ishtar_9:1}] run effect give @s haste 3 1 true
+execute if items entity @s container.* music_disc_wait[custom_data={skywar:1,skywar_ishtar_10:1}] run effect clear @s poison
+
+execute if entity @s[scores={If_MD_Otherside=1..}] run playsound block.anvil.place ambient @a ~ ~1 ~ 1 1.3
+execute if entity @s[scores={If_MD_Otherside=1..}] run playsound item.mace.smash_ground_heavy ambient @a ~ ~1 ~ 1 1.3
+execute if entity @s[scores={If_MD_Otherside=1..}] run give @s mace
+execute if entity @s[scores={If_MD_Otherside=1..}] run scoreboard players set @s If_MD_Otherside 0
