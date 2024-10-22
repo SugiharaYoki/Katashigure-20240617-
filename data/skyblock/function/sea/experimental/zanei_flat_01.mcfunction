@@ -1,3 +1,7 @@
+
+scoreboard players add zanei_flat_01_marker rng1 1
+
+
 execute if score zanei_flat_01_marker rng1 matches 16 run execute positioned 0.0 0 0.0 run summon marker ^ ^0.15 ^2 {Tags:["zanei_flat_01_marker"]}
 execute if score zanei_flat_01_marker rng1 matches 16 run execute as @e[tag=zanei_flat_01_marker,type=marker] at @s run tp @s ~ 0.05 ~
 
@@ -6,8 +10,6 @@ execute if score zanei_flat_01_marker rng1 matches 19 run execute as @e[tag=zane
 
 execute if score zanei_flat_01_marker rng1 matches 22 run execute positioned 0.0 0 0.0 run summon marker ^ ^0.15 ^2 {Tags:["zanei_flat_01_marker"]}
 execute if score zanei_flat_01_marker rng1 matches 22 run execute as @e[tag=zanei_flat_01_marker,type=marker] at @s run tp @s ~ 0.05 ~
-
-scoreboard players add zanei_flat_01_marker rng1 1
 
 execute if score zanei_flat_01_marker rng1 matches 1 run playsound item.crossbow.quick_charge_2 hostile @a ~ ~1.5 ~ 1 1.2
 execute if score zanei_flat_01_marker rng1 matches 1 positioned ~ ~1.5 ~ run particle end_rod ^0.2 ^ ^1.3 0 0 0 0 1
