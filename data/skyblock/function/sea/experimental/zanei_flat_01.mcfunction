@@ -28,3 +28,5 @@ execute if score zanei_flat_01_marker rng1 matches 22 run data modify entity @n[
 execute if score zanei_flat_01_marker rng1 matches 16 run kill @e[type=marker,tag=zanei_flat_01_marker]
 execute if score zanei_flat_01_marker rng1 matches 19 run kill @e[type=marker,tag=zanei_flat_01_marker]
 execute if score zanei_flat_01_marker rng1 matches 22 run kill @e[type=marker,tag=zanei_flat_01_marker]
+
+execute if score zanei_flat_01_marker rng1 matches 15 run kill @e[type=marker,tag=zanei_flat_01_marker]

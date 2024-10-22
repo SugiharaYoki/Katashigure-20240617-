@@ -57,3 +57,11 @@ execute if score zanei_flat_02_marker rng1 matches 22 run kill @e[type=marker,ta
 execute if score zanei_flat_02_marker rng1 matches 22 run kill @e[type=marker,tag=zanei_flat_02_marker3B]
 execute if score zanei_flat_02_marker rng1 matches 25 run kill @e[type=marker,tag=zanei_flat_02_marker4]
 execute if score zanei_flat_02_marker rng1 matches 25 run kill @e[type=marker,tag=zanei_flat_02_marker4B]
+
+execute if score zanei_flat_02_marker rng1 matches 15 run kill @e[type=marker,tag=zanei_flat_02_marker]
+execute if score zanei_flat_02_marker rng1 matches 15 run kill @e[type=marker,tag=zanei_flat_02_marker2]
+execute if score zanei_flat_02_marker rng1 matches 15 run kill @e[type=marker,tag=zanei_flat_02_marker2B]
+execute if score zanei_flat_02_marker rng1 matches 15 run kill @e[type=marker,tag=zanei_flat_02_marker3]
+execute if score zanei_flat_02_marker rng1 matches 15 run kill @e[type=marker,tag=zanei_flat_02_marker3B]
+execute if score zanei_flat_02_marker rng1 matches 15 run kill @e[type=marker,tag=zanei_flat_02_marker4]
+execute if score zanei_flat_02_marker rng1 matches 15 run kill @e[type=marker,tag=zanei_flat_02_marker4B]
