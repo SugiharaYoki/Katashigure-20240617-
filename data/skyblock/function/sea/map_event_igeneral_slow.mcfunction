@@ -332,6 +332,8 @@ execute if block 90195 27 130 bamboo_button[powered=true] run fill 90195 25 130 
 
 execute as @n[tag=SEAmob_carrybomb,nbt=!{Fire:-1s}] run kill @s
 
+execute as @e[type=silverfish,tag=SEAmob,x=90000,y=0,z=0,distance=..3000,nbt=!{Fire:-1s}] run function skyblock:sea/p/silverfish
+
 #ch4激光
 execute as @e[x=90184.0,dx=3.8,y=20.65,dy=0,z=96.50,dz=0] run damage @s 3 sting
 execute as @e[x=90184.0,dx=3.8,y=18.55,dy=0,z=92.50,dz=0] run damage @s 3 sting
