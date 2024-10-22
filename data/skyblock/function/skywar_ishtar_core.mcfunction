@@ -73,7 +73,7 @@ execute if entity @s[scores={If_MD_Ward=1..}] run playsound entity.shulker.ambie
 execute if entity @s[scores={If_MD_Ward=1..}] run fill ~4 ~4 ~4 ~-4 ~-4 ~-4 pink_shulker_box{LootTable:"skyblock:cakebox_pramanix"} replace #shulker_boxes
 execute if entity @s[scores={If_MD_Ward=1..}] run scoreboard players set @s If_MD_Ward 0
 
-execute if items entity @s[predicate=!skyblock:sneaking] container.* *[custom_data={skywar:1,skywar_ishtar_20:1}] positioned ~ ~-0.2 ~ if block ~ ~ ~ slime_block run effect give @s jump_boost 2 6 false
+execute if items entity @s[predicate=!skyblock:sneaking] container.* *[custom_data={skywar:1,skywar_ishtar_20:1}] positioned ~ ~-0.2 ~ if block ~ ~ ~ slime_block run effect give @s jump_boost 1 6 false
 
 
 execute if items entity @s container.* *[custom_data={skywar:1,skywar_ishtar_9:1}] run effect give @s haste 3 1 true
