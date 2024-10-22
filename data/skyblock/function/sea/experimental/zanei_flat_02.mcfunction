@@ -50,10 +50,10 @@ execute if score zanei_flat_02_marker rng1 matches 25 run data modify entity @n[
 execute if score zanei_flat_02_marker rng1 matches 25 positioned ^ ^ ^0.5 run summon arrow ~ ~1.5 ~ {Tags:["zanei_flat_02_arrow4B"],life:1100,damage:2.0}
 execute if score zanei_flat_02_marker rng1 matches 25 run data modify entity @n[type=arrow,tag=zanei_flat_02_arrow4B] Motion set from entity @n[type=marker,tag=zanei_flat_02_marker4B] Pos
 
-execute if score zanei_flat_02_marker rng1 matches 16 run kill @e[type=marker,tag=zanei_flat_02_marker]
-execute if score zanei_flat_02_marker rng1 matches 19 run kill @e[type=marker,tag=zanei_flat_02_marker2]
-execute if score zanei_flat_02_marker rng1 matches 19 run kill @e[type=marker,tag=zanei_flat_02_marker2B]
-execute if score zanei_flat_02_marker rng1 matches 22 run kill @e[type=marker,tag=zanei_flat_02_marker3]
-execute if score zanei_flat_02_marker rng1 matches 22 run kill @e[type=marker,tag=zanei_flat_02_marker3B]
-execute if score zanei_flat_02_marker rng1 matches 25 run kill @e[type=marker,tag=zanei_flat_02_marker4]
-execute if score zanei_flat_02_marker rng1 matches 25 run kill @e[type=marker,tag=zanei_flat_02_marker4B]
+execute if score zanei_flat_02_marker rng1 matches 17 run kill @e[type=marker,tag=zanei_flat_02_marker]
+execute if score zanei_flat_02_marker rng1 matches 20 run kill @e[type=marker,tag=zanei_flat_02_marker2]
+execute if score zanei_flat_02_marker rng1 matches 20 run kill @e[type=marker,tag=zanei_flat_02_marker2B]
+execute if score zanei_flat_02_marker rng1 matches 23 run kill @e[type=marker,tag=zanei_flat_02_marker3]
+execute if score zanei_flat_02_marker rng1 matches 23 run kill @e[type=marker,tag=zanei_flat_02_marker3B]
+execute if score zanei_flat_02_marker rng1 matches 26 run kill @e[type=marker,tag=zanei_flat_02_marker4]
+execute if score zanei_flat_02_marker rng1 matches 26 run kill @e[type=marker,tag=zanei_flat_02_marker4B]
