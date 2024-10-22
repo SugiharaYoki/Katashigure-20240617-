@@ -35,9 +35,9 @@ execute if entity @s[scores={ishtar_bless_3=11}] run give @s music_disc_wait[cus
 execute if entity @s[scores={ishtar_bless_1=12}] run give @s splash_potion[potion_contents={custom_color:12489686,custom_effects:[{id:speed,duration:60,amplifier:4},{id:jump_boost,duration:60,amplifier:1}]},custom_name='["",{"text":"刹踪烟消药剂","italic":false}]'] 2
 execute if entity @s[scores={ishtar_bless_2=12}] run give @s splash_potion[potion_contents={custom_color:12489686,custom_effects:[{id:speed,duration:60,amplifier:4},{id:jump_boost,duration:60,amplifier:1}]},custom_name='["",{"text":"刹踪烟消药剂","italic":false}]'] 2
 execute if entity @s[scores={ishtar_bless_3=12}] run give @s splash_potion[potion_contents={custom_color:12489686,custom_effects:[{id:speed,duration:60,amplifier:4},{id:jump_boost,duration:60,amplifier:1}]},custom_name='["",{"text":"刹踪烟消药剂","italic":false}]'] 2
-execute if entity @s[scores={ishtar_bless_1=13}] run give @s bow[custom_name='{"text":"绯华","italic":false,"color":"red"}',enchantments={multishot:3}]
-execute if entity @s[scores={ishtar_bless_2=13}] run give @s bow[custom_name='{"text":"绯华","italic":false,"color":"red"}',enchantments={multishot:3}]
-execute if entity @s[scores={ishtar_bless_3=13}] run give @s bow[custom_name='{"text":"绯华","italic":false,"color":"red"}',enchantments={multishot:3}]
+execute if entity @s[scores={ishtar_bless_1=13}] run give @s bow[custom_name='{"text":"绯华","italic":false,"color":"red"}',enchantments={multishot:3},repair_cost=1000]
+execute if entity @s[scores={ishtar_bless_2=13}] run give @s bow[custom_name='{"text":"绯华","italic":false,"color":"red"}',enchantments={multishot:3},repair_cost=1000]
+execute if entity @s[scores={ishtar_bless_3=13}] run give @s bow[custom_name='{"text":"绯华","italic":false,"color":"red"}',enchantments={multishot:3},repair_cost=1000]
 execute if entity @s[scores={ishtar_bless_1=13}] run give @s arrow 5
 execute if entity @s[scores={ishtar_bless_2=13}] run give @s arrow 5
 execute if entity @s[scores={ishtar_bless_3=13}] run give @s arrow 5
