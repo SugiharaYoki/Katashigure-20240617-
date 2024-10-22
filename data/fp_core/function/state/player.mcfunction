@@ -57,3 +57,11 @@ execute if score @s game_level < @s level run experience add @s 1 levels
 execute if score @s game_level > @s level run experience add @s -1 levels
 #为玩家显示数值（之后可能会改成和数据显示一样的方法）
 title @s actionbar [{"translate":"fp:states.health"},{"score":{"name": "@s","objective": "health"},"color":"red"},{"text":"/","color":"red"},{"score":{"name": "@s","objective": "m_health"},"color":"red"},"   ",{"translate":"fp:states.defense","color":"gold"},{"score":{"name": "@s","objective": "defense"},"color":"gold"},"   ",{"translate":"fp:states.mana"},{"score":{"name": "@s","objective": "mana"},"color":"aqua"},{"text":"/","color":"aqua"},{"score":{"name": "@s","objective": "m_mana"},"color":"aqua"}]
+
+#state machine
+    #state set
+    tag @s[tag=fp_state_onLeaves] remove fp_state_onLeaves
+    execute at @s[nbt={OnGround:1b}] if block ~ ~-0.25 ~ #minecraft:leaves run tag @s add fp_state_onLeaves
+
+    #state using
+    execute at @s[tag=fp_state_onLeaves] run tp @s ~ ~-0.2 ~
