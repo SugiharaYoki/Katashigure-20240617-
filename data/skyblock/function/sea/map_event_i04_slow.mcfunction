@@ -346,6 +346,15 @@ execute positioned 90217 44 115 if entity @a[tag=SEAPT,distance=..2.7] unless it
 
 
 
+execute positioned 90198 46 90 if entity @a[tag=SEAPT,distance=..4.6] unless entity @n[tag=SEAch4_spawn_timer1,distance=0..3] run summon marker ~ ~ ~ {Tags:["SEAch4_spawn_timer","SEAch4_spawn_timer_largestairtoentrance"]}
+execute as @n[tag=SEAch4_spawn_timer_largestairtoentrance] at @s run function skyblock:sea/e/ev019_largestairtoentrance
+
+
+
+
+
+
+
 
 
     function skyblock:protector/entity_count_end {function:"skyblock:sea/map_event_i03_slow.mcfunction"}
