@@ -1,0 +1,1 @@
+data modify block -23 54 27 Book set from storage library:library book_data
