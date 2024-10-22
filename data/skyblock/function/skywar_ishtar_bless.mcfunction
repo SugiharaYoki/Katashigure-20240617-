@@ -70,3 +70,6 @@ execute if entity @s[scores={ishtar_bless_3=19}] run give @s music_disc_ward[cus
 execute if entity @s[scores={ishtar_bless_1=20}] run give @s music_disc_otherside[custom_name='{"text":"跃空战技核心","italic":false,"color":"green"}',custom_data={skywar:1,skywar_ishtar_20:1}] 1
 execute if entity @s[scores={ishtar_bless_2=20}] run give @s music_disc_otherside[custom_name='{"text":"跃空战技核心","italic":false,"color":"green"}',custom_data={skywar:1,skywar_ishtar_20:1}] 1
 execute if entity @s[scores={ishtar_bless_3=20}] run give @s music_disc_otherside[custom_name='{"text":"跃空战技核心","italic":false,"color":"green"}',custom_data={skywar:1,skywar_ishtar_20:1}] 1
+execute if entity @s[scores={ishtar_bless_1=20}] run give @s slime_block 3
+execute if entity @s[scores={ishtar_bless_2=20}] run give @s slime_block 3
+execute if entity @s[scores={ishtar_bless_3=20}] run give @s slime_block 3
