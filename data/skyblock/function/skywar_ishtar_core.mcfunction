@@ -41,10 +41,10 @@ execute if entity @s[scores={If_MD_Wait=1..}] run scoreboard players set @s If_M
 
 execute if entity @s[scores={If_MD_Chirp=1..}] rotated ~ 0 run tellraw @a[distance=0.01..7] {"text": "送你一个礼物！","color": "gold","bold":true}
 execute if entity @s[scores={If_MD_Chirp=1..}] rotated ~ 0 run playsound block.note_block.bell master @a ~ ~ ~ 1 1.5
-execute if entity @s[scores={If_MD_Chirp=1..}] rotated ~ 0 positioned ^ ^ ^-1 if block ~ ~ ~ air run summon tnt ~ ~ ~ {fuse:100}
-execute if entity @s[scores={If_MD_Chirp=1..}] rotated ~ 0 positioned ^ ^ ^1 if block ~ ~ ~ air run summon tnt ~ ~ ~ {fuse:100}
-execute if entity @s[scores={If_MD_Chirp=1..}] rotated ~ 0 positioned ^-1 ^ ^ if block ~ ~ ~ air run summon tnt ~ ~ ~ {fuse:100}
-execute if entity @s[scores={If_MD_Chirp=1..}] rotated ~ 0 positioned ^1 ^ ^ if block ~ ~ ~ air run summon tnt ~ ~ ~ {fuse:100}
+execute if entity @s[scores={If_MD_Chirp=1..}] rotated ~ 0 positioned ^ ^ ^-1 if block ~ ~ ~ air run summon tnt ~ ~ ~ {fuse:80}
+execute if entity @s[scores={If_MD_Chirp=1..}] rotated ~ 0 positioned ^ ^ ^1 if block ~ ~ ~ air run summon tnt ~ ~ ~ {fuse:80}
+execute if entity @s[scores={If_MD_Chirp=1..}] rotated ~ 0 positioned ^-1 ^ ^ if block ~ ~ ~ air run summon tnt ~ ~ ~ {fuse:80}
+execute if entity @s[scores={If_MD_Chirp=1..}] rotated ~ 0 positioned ^1 ^ ^ if block ~ ~ ~ air run summon tnt ~ ~ ~ {fuse:80}
 execute if entity @s[scores={If_MD_Chirp=1..}] run scoreboard players set @s If_MD_Chirp 0
 
 execute if entity @s[nbt={Inventory:[{components:{"minecraft:custom_data":{skywar_antiinvis:1}}}]}] at @a[distance=0.1..5,nbt={active_effects:[{id:"minecraft:invisibility"}]}] run playsound minecraft:block.note_block.chime ambient @a ~ ~1 ~ 4 1.5
@@ -70,5 +70,12 @@ execute if entity @s[nbt={Inventory:[{components:{"minecraft:custom_data":{skywa
 execute if entity @s[scores={If_MD_Ward=1..}] run playsound entity.shulker.open ambient @a ~ ~1 ~ 2 0.6
 execute if entity @s[scores={If_MD_Ward=1..}] run playsound block.shulker_box.close ambient @a ~ ~1 ~ 2 0.8
 execute if entity @s[scores={If_MD_Ward=1..}] run playsound entity.shulker.ambient ambient @a ~ ~1 ~ 2 0.8
-execute if entity @s[scores={If_MD_Ward=1..}] run fill ~3 ~3 ~3 ~-3 ~-3 ~-3 pink_shulker_box{LootTable:"skyblock:cakebox_pramanix"} replace #shulker_boxes
+execute if entity @s[scores={If_MD_Ward=1..}] run fill ~4 ~4 ~4 ~-4 ~-4 ~-4 pink_shulker_box{LootTable:"skyblock:cakebox_pramanix"} replace #shulker_boxes
 execute if entity @s[scores={If_MD_Ward=1..}] run scoreboard players set @s If_MD_Ward 0
+
+execute if entity @s[nbt={Inventory:[{components:{"minecraft:custom_data":{skywar:1,skywar_ishtar_20:1}}}]},predicate=!skyblock:sneaking] positioned ~ ~-0.2 ~ if block ~ ~ ~ slime_block run effect give @s jump_boost 2 6 false
+
+execute if entity @s[scores={If_MD_Otherside=1..}] run playsound block.anvil.place ambient @a ~ ~1 ~ 1 1.3
+execute if entity @s[scores={If_MD_Otherside=1..}] run playsound item.mace.smash_ground_heavy ambient @a ~ ~1 ~ 1 1.3
+execute if entity @s[scores={If_MD_Otherside=1..}] run give @s mace
+execute if entity @s[scores={If_MD_Otherside=1..}] run scoreboard players set @s If_MD_Otherside 0
