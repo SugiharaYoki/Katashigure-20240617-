@@ -6,7 +6,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:coal",
-          "weight": 400,
+          "weight": 300,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -27,7 +27,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:charcoal",
-          "weight": 480,
+          "weight": 380,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -48,7 +48,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:iron_ore",
-          "weight": 350,
+          "weight": 250,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -69,7 +69,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:gold_ore",
-          "weight": 300,
+          "weight": 100,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -90,7 +90,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:lapis_ore",
-          "weight": 200,
+          "weight": 250,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -132,7 +132,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:coal_ore",
-          "weight": 70,
+          "weight": 30,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -153,7 +153,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:redstone_ore",
-          "weight": 150,
+          "weight": 50,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -174,7 +174,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:diamond_ore",
-          "weight": 280,
+          "weight": 80,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -195,7 +195,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:gilded_blackstone",
-          "weight": 180,
+          "weight": 80,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -258,7 +258,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:ancient_debris",
-          "weight": 65,
+          "weight": 25,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -279,7 +279,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:iron_ingot",
-          "weight": 45,
+          "weight": 35,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -342,7 +342,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:emerald",
-          "weight": 25,
+          "weight": 55,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -426,7 +426,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:netherite_ingot",
-          "weight": 3,
+          "weight": 10,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -447,7 +447,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:cave_spider_spawn_egg",
-          "weight": 3,
+          "weight": 14,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -468,7 +468,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:lava_bucket",
-          "weight": 8
+          "weight": 12
         },
         {
           "type": "minecraft:item",
