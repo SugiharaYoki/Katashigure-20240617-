@@ -19,11 +19,11 @@ execute if score zanei_flat_01_marker rng1 matches 16 run playsound entity.arrow
 execute if score zanei_flat_01_marker rng1 matches 19 run playsound entity.arrow.shoot hostile @a ~ ~ ~ 1 1.1
 execute if score zanei_flat_01_marker rng1 matches 22 run playsound entity.arrow.shoot hostile @a ~ ~ ~ 1 1.1
 execute if score zanei_flat_01_marker rng1 matches 16 run summon arrow ~ ~1.5 ~ {Tags:["zanei_flat_01_arrow1"],life:1100,damage:2.0}
-data modify entity @n[type=arrow,tag=zanei_flat_01_arrow1] Motion set from entity @n[type=marker,tag=zanei_flat_01_marker] Pos
+execute if score zanei_flat_01_marker rng1 matches 16 run data modify entity @n[type=arrow,tag=zanei_flat_01_arrow1] Motion set from entity @n[type=marker,tag=zanei_flat_01_marker] Pos
 execute if score zanei_flat_01_marker rng1 matches 19 run summon arrow ~ ~1.5 ~ {Tags:["zanei_flat_01_arrow2"],life:1100,damage:2.0}
-data modify entity @n[type=arrow,tag=zanei_flat_01_arrow2] Motion set from entity @n[type=marker,tag=zanei_flat_01_marker] Pos
+execute if score zanei_flat_01_marker rng1 matches 19 run data modify entity @n[type=arrow,tag=zanei_flat_01_arrow2] Motion set from entity @n[type=marker,tag=zanei_flat_01_marker] Pos
 execute if score zanei_flat_01_marker rng1 matches 22 run summon arrow ~ ~1.5 ~ {Tags:["zanei_flat_01_arrow3"],life:1100,damage:2.0}
-data modify entity @n[type=arrow,tag=zanei_flat_01_arrow3] Motion set from entity @n[type=marker,tag=zanei_flat_01_marker] Pos
+execute if score zanei_flat_01_marker rng1 matches 22 run data modify entity @n[type=arrow,tag=zanei_flat_01_arrow3] Motion set from entity @n[type=marker,tag=zanei_flat_01_marker] Pos
 
 execute if score zanei_flat_01_marker rng1 matches 16 run kill @e[type=marker,tag=zanei_flat_01_marker]
 execute if score zanei_flat_01_marker rng1 matches 19 run kill @e[type=marker,tag=zanei_flat_01_marker]
