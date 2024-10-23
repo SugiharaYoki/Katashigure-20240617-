@@ -476,6 +476,7 @@ setblock 90073 103 141 air
 scoreboard players set SEAchg_spawn_timer_longbridge sea_4temp2 0
 setblock 90077 129 152 air
 
+setblock 90060 101 142 air
 
 summon text_display 90165 105 114.0 {background:7631988,text:'{"text":"轻按跳跃使用电梯","color":"aqua"}',Rotation:[90f,0f],shadow:1b,text_opacity:200}
 summon text_display 90165 129 114.0 {background:7631988,text:'{"text":"轻按跳跃使用电梯","color":"aqua"}',Rotation:[90f,0f],shadow:1b,text_opacity:200}

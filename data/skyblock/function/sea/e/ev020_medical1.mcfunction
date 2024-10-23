@@ -25,4 +25,5 @@ execute as @n[tag=SEApillager_npc1,scores={rng1=100}] at @s run tellraw @a[tag=S
 
 
 execute as @n[tag=SEApillager_npc1,scores={rng1=130..}] at @s unless entity @a[tag=SEAPT,tag=!SEAPF,distance=..15] run tp @s ~ ~-500 ~
+execute as @n[tag=SEApillager_npc1,scores={rng1=130..}] at @s unless entity @a[tag=SEAPT,tag=!SEAPF,distance=..15] run setblock 90060 101 142 red_candle[lit=true]
 execute as @n[tag=SEApillager_npc1,scores={rng1=130..}] at @s unless entity @a[tag=SEAPT,tag=!SEAPF,distance=..15] run kill @s
