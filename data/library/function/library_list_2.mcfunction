@@ -1,0 +1,12 @@
+tellraw @s "当前页面展示书本数目为:10"
+tellraw @s ["",{"text":"闌夜珊--背叛者：第二章 （六）","color":"blue","hoverEvent":{"action":"show_text","value":"点击以加载书本至讲台"},"clickEvent":{"action":"run_command","value":"/trigger librarymenu set 21"}}]
+tellraw @s ["",{"text":"闌夜珊--舒华兹小姐的热水浸沐疗法","color":"blue","hoverEvent":{"action":"show_text","value":"点击以加载书本至讲台"},"clickEvent":{"action":"run_command","value":"/trigger librarymenu set 22"}}]
+tellraw @s ["",{"text":"闌夜珊--背叛者：第二章 （七）","color":"blue","hoverEvent":{"action":"show_text","value":"点击以加载书本至讲台"},"clickEvent":{"action":"run_command","value":"/trigger librarymenu set 23"}}]
+tellraw @s ["",{"text":"闌夜珊--博士的部分人设&舒华兹夫妇的非战斗日常","color":"blue","hoverEvent":{"action":"show_text","value":"点击以加载书本至讲台"},"clickEvent":{"action":"run_command","value":"/trigger librarymenu set 24"}}]
+tellraw @s ["",{"text":"闌夜珊--背叛者：第二章 （八）","color":"blue","hoverEvent":{"action":"show_text","value":"点击以加载书本至讲台"},"clickEvent":{"action":"run_command","value":"/trigger librarymenu set 25"}}]
+tellraw @s ["",{"text":"闌夜珊--外传：46号实验体","color":"blue","hoverEvent":{"action":"show_text","value":"点击以加载书本至讲台"},"clickEvent":{"action":"run_command","value":"/trigger librarymenu set 26"}}]
+tellraw @s ["",{"text":"闌夜珊--背叛者：第二章 （九）","color":"blue","hoverEvent":{"action":"show_text","value":"点击以加载书本至讲台"},"clickEvent":{"action":"run_command","value":"/trigger librarymenu set 27"}}]
+tellraw @s ["",{"text":"闌夜珊--背叛者：第二章 （十）","color":"blue","hoverEvent":{"action":"show_text","value":"点击以加载书本至讲台"},"clickEvent":{"action":"run_command","value":"/trigger librarymenu set 28"}}]
+tellraw @s ["",{"text":"闌夜珊--背叛者：第二章 尾声","color":"blue","hoverEvent":{"action":"show_text","value":"点击以加载书本至讲台"},"clickEvent":{"action":"run_command","value":"/trigger librarymenu set 29"}}]
+tellraw @s ["",{"text":"闌夜珊--外传：丛林之虎（一）","color":"blue","hoverEvent":{"action":"show_text","value":"点击以加载书本至讲台"},"clickEvent":{"action":"run_command","value":"/trigger librarymenu set 30"}}]
+tellraw @s ["",{"text":"上一页","color":"green","hoverEvent":{"action":"show_text","value":"点击以翻到上一页"},"clickEvent":{"action":"run_command","value":"/trigger librarymenu set 79"}},"3 / 8", {"text":"下一页","color":"green","hoverEvent":{"action":"show_text","value":"点击以翻到下一页"},"clickEvent":{"action":"run_command","value":"/trigger librarymenu set 81"}}]

@@ -1,0 +1,12 @@
+tellraw @s "当前页面展示书本数目为:10"
+tellraw @s ["",{"text":"闌夜珊--外传：丛林之虎（二）","color":"blue","hoverEvent":{"action":"show_text","value":"点击以加载书本至讲台"},"clickEvent":{"action":"run_command","value":"/trigger librarymenu set 31"}}]
+tellraw @s ["",{"text":"闌夜珊--外传：丛林之虎（三）","color":"blue","hoverEvent":{"action":"show_text","value":"点击以加载书本至讲台"},"clickEvent":{"action":"run_command","value":"/trigger librarymenu set 32"}}]
+tellraw @s ["",{"text":"闌夜珊--外传：丛林之虎（四）","color":"blue","hoverEvent":{"action":"show_text","value":"点击以加载书本至讲台"},"clickEvent":{"action":"run_command","value":"/trigger librarymenu set 33"}}]
+tellraw @s ["",{"text":"闌夜珊--谷雨","color":"blue","hoverEvent":{"action":"show_text","value":"点击以加载书本至讲台"},"clickEvent":{"action":"run_command","value":"/trigger librarymenu set 34"}}]
+tellraw @s ["",{"text":"闌夜珊--背叛者-第三章：昨夜的星辰（一）","color":"blue","hoverEvent":{"action":"show_text","value":"点击以加载书本至讲台"},"clickEvent":{"action":"run_command","value":"/trigger librarymenu set 35"}}]
+tellraw @s ["",{"text":"闌夜珊--【星熊x博士】酒醉的伦巴：妻子出差的博士和星熊饮酒消愁，酒后失举铸成背德之错","color":"blue","hoverEvent":{"action":"show_text","value":"点击以加载书本至讲台"},"clickEvent":{"action":"run_command","value":"/trigger librarymenu set 36"}}]
+tellraw @s ["",{"text":"闌夜珊--背叛者-第三章：昨夜的星辰（二）","color":"blue","hoverEvent":{"action":"show_text","value":"点击以加载书本至讲台"},"clickEvent":{"action":"run_command","value":"/trigger librarymenu set 37"}}]
+tellraw @s ["",{"text":"闌夜珊--背叛者-第三章：昨夜的星辰（三）","color":"blue","hoverEvent":{"action":"show_text","value":"点击以加载书本至讲台"},"clickEvent":{"action":"run_command","value":"/trigger librarymenu set 38"}}]
+tellraw @s ["",{"text":"闌夜珊--外传：战术女招待","color":"blue","hoverEvent":{"action":"show_text","value":"点击以加载书本至讲台"},"clickEvent":{"action":"run_command","value":"/trigger librarymenu set 39"}}]
+tellraw @s ["",{"text":"闌夜珊--背叛者-第三章：昨夜的星辰（四）","color":"blue","hoverEvent":{"action":"show_text","value":"点击以加载书本至讲台"},"clickEvent":{"action":"run_command","value":"/trigger librarymenu set 40"}}]
+tellraw @s ["",{"text":"上一页","color":"green","hoverEvent":{"action":"show_text","value":"点击以翻到上一页"},"clickEvent":{"action":"run_command","value":"/trigger librarymenu set 80"}},"4 / 8", {"text":"下一页","color":"green","hoverEvent":{"action":"show_text","value":"点击以翻到下一页"},"clickEvent":{"action":"run_command","value":"/trigger librarymenu set 82"}}]
