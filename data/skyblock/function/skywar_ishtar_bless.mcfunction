@@ -73,3 +73,10 @@ execute if entity @s[scores={ishtar_bless_3=20}] run give @s music_disc_othersid
 execute if entity @s[scores={ishtar_bless_1=20}] run give @s slime_block 3
 execute if entity @s[scores={ishtar_bless_2=20}] run give @s slime_block 3
 execute if entity @s[scores={ishtar_bless_3=20}] run give @s slime_block 3
+
+execute if entity @s[scores={ishtar_bless_1=21}] run give @s sentry_armor_trim_smithing_template[custom_name='{"text":"折剑以箭","italic":false,"color":"red"}',custom_data={skywar_ishtar_21:1}] 1
+execute if entity @s[scores={ishtar_bless_2=21}] run give @s sentry_armor_trim_smithing_template[custom_name='{"text":"折剑以箭","italic":false,"color":"red"}',custom_data={skywar_ishtar_21:1}] 1
+execute if entity @s[scores={ishtar_bless_3=21}] run give @s sentry_armor_trim_smithing_template[custom_name='{"text":"折剑以箭","italic":false,"color":"red"}',custom_data={skywar_ishtar_21:1}] 1
+execute if entity @s[scores={ishtar_bless_1=21}] run give @s goat_horn[instrument=seek_goat_horn]
+execute if entity @s[scores={ishtar_bless_2=21}] run give @s goat_horn[instrument=seek_goat_horn]
+execute if entity @s[scores={ishtar_bless_3=21}] run give @s goat_horn[instrument=seek_goat_horn]

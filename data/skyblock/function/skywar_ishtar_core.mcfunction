@@ -3,6 +3,9 @@ scoreboard objectives add ishtar_core_2 dummy
 scoreboard objectives add ishtar_core_3 dummy
 scoreboard objectives add ishtar_core_4 dummy
 scoreboard objectives add ishtar_core_5 dummy
+
+scoreboard objectives add Skywar_ishtar_usehorn minecraft.used:minecraft.goat_horn
+
 kill @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{skywar:1}}}}]
 execute if entity @s[scores={If_MD_13=1..},gamemode=survival] run scoreboard players add @s ishtar_core_1 1
 execute if entity @s[scores={If_MD_13=1..,ishtar_core_1=1..10},gamemode=survival] run playsound minecraft:entity.chicken.egg master @a ~ ~ ~ 1 0.8
@@ -83,3 +86,6 @@ execute if entity @s[scores={If_MD_Otherside=1..}] run playsound block.anvil.pla
 execute if entity @s[scores={If_MD_Otherside=1..}] run playsound item.mace.smash_ground_heavy ambient @a ~ ~1 ~ 1 1.3
 execute if entity @s[scores={If_MD_Otherside=1..}] run give @s mace[enchantments={wind_burst:2}]
 execute if entity @s[scores={If_MD_Otherside=1..}] run scoreboard players set @s If_MD_Otherside 0
+
+
+execute if items entity @s[scores={Skywar_ishtar_usehorn=1..}] container.* *[custom_data={skywar:1,skywar_ishtar_21:1}] run function skyblock:skywar_ishtar_core21

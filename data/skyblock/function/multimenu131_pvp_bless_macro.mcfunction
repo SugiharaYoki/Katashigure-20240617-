@@ -18,7 +18,7 @@ $execute if entity @s[scores={$(bless)=17}] run tellraw @s [{"text":" $(bless_na
 $execute if entity @s[scores={$(bless)=18}] run tellraw @s [{"text":" $(bless_name)： ","color":"yellow","bold": true},{"text":"唤尘「漆幕虚垒」","color":"white"}]
 $execute if entity @s[scores={$(bless)=19}] run tellraw @s [{"text":" $(bless_name)： ","color":"yellow","bold": true},{"text":"搬运「输载归初」","color":"white"}]
 $execute if entity @s[scores={$(bless)=20}] run tellraw @s [{"text":" $(bless_name)： ","color":"yellow","bold": true},{"text":"天威「跃空战技」","color":"white"}]
-$execute if entity @s[scores={$(bless)=21}] run tellraw @s [{"text":" $(bless_name)： ","color":"yellow","bold": true},{"text":"启礼「黄金圣果」","color":"white"}]
+$execute if entity @s[scores={$(bless)=21}] run tellraw @s [{"text":" $(bless_name)： ","color":"yellow","bold": true},{"text":"祭弓「折剑以箭」","color":"white"}]
 $execute if entity @s[scores={$(bless)=22}] run tellraw @s [{"text":" $(bless_name)： ","color":"yellow","bold": true},{"text":"启礼「黄金圣果」","color":"white"}]
 $execute if entity @s[scores={$(bless)=23}] run tellraw @s [{"text":" $(bless_name)： ","color":"yellow","bold": true},{"text":"启礼「黄金圣果」","color":"white"}]
 $execute if entity @s[scores={$(bless)=24}] run tellraw @s [{"text":" $(bless_name)： ","color":"yellow","bold": true},{"text":"启礼「黄金圣果」","color":"white"}]
