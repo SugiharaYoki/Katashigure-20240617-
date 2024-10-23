@@ -82,6 +82,7 @@ setblock 90085 137 132 air
 setblock 90080 137 134 air
 fill 90135 137 147 90135 138 147 air
 setblock 90127 143 147 air
+setblock 90066 145 143 air
 setblock 90084 137 126 decorated_pot{sherds:["burn_pottery_sherd","burn_pottery_sherd","burn_pottery_sherd","burn_pottery_sherd"],item:{count: 1, id:"minecraft:blaze_powder"}}
 setblock 90103 137 109 decorated_pot{sherds:["burn_pottery_sherd","burn_pottery_sherd","burn_pottery_sherd","burn_pottery_sherd"],item:{count: 1, id:"minecraft:blaze_powder"}}
 setblock 90107 138 105 decorated_pot{sherds:["burn_pottery_sherd","burn_pottery_sherd","burn_pottery_sherd","burn_pottery_sherd"],item:{count: 1, id:"minecraft:blaze_powder"}}
@@ -89,7 +90,7 @@ setblock 90085 137 132 decorated_pot{sherds:["burn_pottery_sherd","burn_pottery_
 setblock 90080 137 134 decorated_pot{sherds:["burn_pottery_sherd","burn_pottery_sherd","burn_pottery_sherd","burn_pottery_sherd"],item:{count: 1, id:"minecraft:blaze_powder"}}
 fill 90135 137 147 90135 138 147 decorated_pot{sherds:["burn_pottery_sherd","burn_pottery_sherd","burn_pottery_sherd","burn_pottery_sherd"],item:{count: 1, id:"minecraft:blaze_powder"}}
 setblock 90127 143 147 decorated_pot{sherds:["burn_pottery_sherd","burn_pottery_sherd","burn_pottery_sherd","burn_pottery_sherd"],item:{count: 1, id:"minecraft:blaze_powder"}}
-
+setblock 90066 145 143 decorated_pot{sherds:["burn_pottery_sherd","burn_pottery_sherd","burn_pottery_sherd","burn_pottery_sherd"],item:{count: 1, id:"minecraft:blaze_powder"}}
 
 setblock 90091 137 122 minecraft:green_shulker_box
 item replace block 90091 137 122 container.12 with arrow 2
