@@ -403,3 +403,16 @@ fill 90137 129 97 90136 129 97 air
 fill 90137 128 97 90136 128 97 air
 fill 90137 128 98 90136 128 98 air
 fill 90132 131 107 90132 129 106 minecraft:slime_block
+
+#医疗大楼
+fill 90086 150 123 90085 150 123 barrel[facing=north]
+fill 90083 150 123 90082 150 123 barrel[facing=north]
+
+item replace block 90085 150 123 container.13 with flint 1
+item replace block 90083 150 123 container.12 with emerald 3
+item replace block 90083 150 123 container.14 with emerald 3
+item replace block 90082 150 123 container.14 with arrow 2
+
+setblock 90119 161 142 chest[facing=east]
+item replace block 90119 161 142 container.13 with flint 1
+
