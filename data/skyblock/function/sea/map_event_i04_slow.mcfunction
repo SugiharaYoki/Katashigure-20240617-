@@ -330,7 +330,7 @@ execute positioned 90175 44 130 if entity @a[tag=SEAPT,distance=..4.7] unless it
 
 
 
-
+#会议室旁的办公室
 execute positioned 90187 47 105 if entity @a[tag=SEAPT,distance=..12] unless entity @n[tag=SEAch4_spawn,distance=0..1] positioned 90186 46 104 run function skyblock:sea/m/silverfish
 execute positioned 90187 47 105 if entity @a[tag=SEAPT,distance=..12] unless entity @n[tag=SEAch4_spawn,distance=0..1] positioned 90190 46 106 run function skyblock:sea/m/skeleton_melee
 execute positioned 90187 47 105 if entity @a[tag=SEAPT,distance=..12] unless entity @n[tag=SEAch4_spawn,distance=0..1] positioned 90191 46 105 run function skyblock:sea/m/cave_spider
@@ -338,8 +338,15 @@ execute positioned 90187 47 105 if entity @a[tag=SEAPT,distance=..12] unless ent
 execute positioned 90187 47 105 if entity @a[tag=SEAPT,distance=..12] unless entity @n[tag=SEAch4_spawn,distance=0..1] positioned 90179 46 105 run function skyblock:sea/m/skeleton_melee
 execute positioned 90187 47 105 if entity @a[tag=SEAPT,distance=..12] unless entity @n[tag=SEAch4_spawn,distance=0..1] run summon marker ~ ~ ~ {Tags:["SEAch4_spawn"]}
 
+#植物研究室
+execute positioned 90215 46 98 if entity @a[tag=SEAPT,distance=..15] unless entity @n[tag=SEAch4_spawn,distance=0..1] positioned 90212 48 97 run function skyblock:sea/m/bee
+execute positioned 90215 46 98 if entity @a[tag=SEAPT,distance=..15] unless entity @n[tag=SEAch4_spawn,distance=0..1] positioned 90221 48 87 run function skyblock:sea/m/bee
+execute positioned 90215 46 98 if entity @a[tag=SEAPT,distance=..15] unless entity @n[tag=SEAch4_spawn,distance=0..1] positioned 90221 46 91 run function skyblock:sea/m/cave_spider
+execute positioned 90215 46 98 if entity @a[tag=SEAPT,distance=..15] unless entity @n[tag=SEAch4_spawn,distance=0..1] positioned 90209 46 98 run function skyblock:sea/m/spider
+execute positioned 90215 46 98 if entity @a[tag=SEAPT,distance=..15] unless entity @n[tag=SEAch4_spawn,distance=0..1] positioned 90208 46 87 run function skyblock:sea/m/cave_spider
+execute positioned 90215 46 98 if entity @a[tag=SEAPT,distance=..15] unless entity @n[tag=SEAch4_spawn,distance=0..1] run summon marker ~ ~ ~ {Tags:["SEAch4_spawn"]}
 
-
+#水中廊桥
 execute positioned 90217 44 115 if entity @a[tag=SEAPT,distance=..2.7] unless items entity @a[tag=SEAPT] container.* heart_of_the_sea unless entity @n[tag=SEAch4_spawn,distance=0..3] positioned 90218 44 112 run function skyblock:sea/m/zombie_knight
 execute positioned 90217 44 115 if entity @a[tag=SEAPT,distance=..2.7] unless items entity @a[tag=SEAPT] container.* heart_of_the_sea unless entity @n[tag=SEAch4_spawn,distance=0..3] positioned 90216 44 112 run function skyblock:sea/m/zombie_knight
 execute positioned 90217 44 115 if entity @a[tag=SEAPT,distance=..2.7] unless items entity @a[tag=SEAPT] container.* heart_of_the_sea unless entity @n[tag=SEAch4_spawn,distance=0..3] run summon marker ~ ~ ~ {Tags:["SEAch4_spawn"]}
