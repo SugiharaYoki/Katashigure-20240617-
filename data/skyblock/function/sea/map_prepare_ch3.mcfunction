@@ -416,3 +416,18 @@ item replace block 90082 150 123 container.14 with arrow 2
 setblock 90119 161 142 chest[facing=east]
 item replace block 90119 161 142 container.13 with flint 1
 
+setblock 90087 145 144 minecraft:redstone_block
+setblock 90087 145 144 minecraft:air
+fill 90086 146 142 90086 146 140 minecraft:redstone_block
+fill 90086 146 142 90086 146 140 minecraft:air
+
+setblock 90081 145 138 chest[facing=south]
+item replace block 90081 145 138 container.13 with potion[potion_contents={potion:regeneration}] 1
+
+setblock 90080 146 142 minecraft:potted_red_tulip
+
+
+
+
+
+
