@@ -12,7 +12,7 @@ $execute if entity @s[scores={$(bless)=11}] run tellraw @s [{"text":" $(bless_na
 $execute if entity @s[scores={$(bless)=12}] run tellraw @s [{"text":" $(bless_name)： ","color":"yellow","bold": true},{"text":"逃亡「刹踪烟消」","color":"white"}]
 $execute if entity @s[scores={$(bless)=13}] run tellraw @s [{"text":" $(bless_name)： ","color":"yellow","bold": true},{"text":"华弓「花散绯芒」","color":"white"}]
 $execute if entity @s[scores={$(bless)=14}] run tellraw @s [{"text":" $(bless_name)： ","color":"yellow","bold": true},{"text":"暴劣「湮体崩裂」","color":"white"}]
-$execute if entity @s[scores={$(bless)=15}] run tellraw @s [{"text":" $(bless_name)： ","color":"yellow","bold": true},{"text":"筑稳「雕刻罗盘","color":"white"}]
+$execute if entity @s[scores={$(bless)=15}] run tellraw @s [{"text":" $(bless_name)： ","color":"yellow","bold": true},{"text":"筑稳「雕刻罗盘」","color":"white"}]
 $execute if entity @s[scores={$(bless)=16}] run tellraw @s [{"text":" $(bless_name)： ","color":"yellow","bold": true},{"text":"夜城「刺客尊荣」","color":"white"}]
 $execute if entity @s[scores={$(bless)=17}] run tellraw @s [{"text":" $(bless_name)： ","color":"yellow","bold": true},{"text":"归尘「扬焱剧爆」","color":"white"}]
 $execute if entity @s[scores={$(bless)=18}] run tellraw @s [{"text":" $(bless_name)： ","color":"yellow","bold": true},{"text":"唤尘「漆幕虚垒」","color":"white"}]
