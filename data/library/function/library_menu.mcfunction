@@ -77,6 +77,8 @@ execute if score @s librarymenu matches 75 run function library:book_data/190180
 execute if score @s librarymenu matches 76 run function library:book_data/19018049/19629492
 execute if score @s librarymenu matches 77 run function library:book_data/19018049/19748557
 execute if score @s librarymenu matches 1..77 run function library:write_to_bookshelf
+execute if score @s librarymenu matches 1..77 run playsound minecraft:item.book.page_turn block @s ~ ~ ~
+execute if score @s librarymenu matches 1..77 run tellraw @s "已将书本加载至讲台"
 execute if score @s librarymenu matches 78 run function library:library_list_0
 execute if score @s librarymenu matches 79 run function library:library_list_1
 execute if score @s librarymenu matches 80 run function library:library_list_2
@@ -85,4 +87,6 @@ execute if score @s librarymenu matches 82 run function library:library_list_4
 execute if score @s librarymenu matches 83 run function library:library_list_5
 execute if score @s librarymenu matches 84 run function library:library_list_6
 execute if score @s librarymenu matches 85 run function library:library_list_7
+execute if score @s librarymenu matches 78..85 run playsound minecraft:ui.button.click master @s ~ ~ ~ 0.3 1.4 0.4
+execute if score @s librarymenu matches 100000 run function library:index
 scoreboard players set @s librarymenu 0
