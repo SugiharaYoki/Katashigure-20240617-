@@ -19,6 +19,10 @@ scoreboard players operation @s rng4 += @s rng10
 scoreboard players operation @s rng5 += @s rng11
 scoreboard players operation @s rng6 += @s rng12
 
+
+playsound entity.evoker.prepare_attack master @a ~ ~2 ~ 2 1.2
+playsound item.armor.equip_chain master @a ~ ~2 ~ 1 1.2
+
 give @s[scores={rng1=1}] arrow 1
 give @s[scores={rng1=2}] arrow 2
 give @s[scores={rng1=3}] arrow 3

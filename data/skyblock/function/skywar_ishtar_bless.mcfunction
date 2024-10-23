@@ -80,3 +80,10 @@ execute if entity @s[scores={ishtar_bless_3=21}] run give @s sentry_armor_trim_s
 execute if entity @s[scores={ishtar_bless_1=21}] run give @s goat_horn[instrument=seek_goat_horn]
 execute if entity @s[scores={ishtar_bless_2=21}] run give @s goat_horn[instrument=seek_goat_horn]
 execute if entity @s[scores={ishtar_bless_3=21}] run give @s goat_horn[instrument=seek_goat_horn]
+
+execute if entity @s[scores={ishtar_bless_1=22}] run give @s wayfinder_armor_trim_smithing_template[custom_name='{"text":"顷刻人间","italic":false,"color":"red"}',custom_data={skywar_ishtar_22:1}] 1
+execute if entity @s[scores={ishtar_bless_2=22}] run give @s wayfinder_armor_trim_smithing_template[custom_name='{"text":"顷刻人间","italic":false,"color":"red"}',custom_data={skywar_ishtar_22:1}] 1
+execute if entity @s[scores={ishtar_bless_3=22}] run give @s wayfinder_armor_trim_smithing_template[custom_name='{"text":"顷刻人间","italic":false,"color":"red"}',custom_data={skywar_ishtar_22:1}] 1
+execute if entity @s[scores={ishtar_bless_1=22}] run give @s goat_horn[instrument=sing_goat_horn]
+execute if entity @s[scores={ishtar_bless_2=22}] run give @s goat_horn[instrument=sing_goat_horn]
+execute if entity @s[scores={ishtar_bless_3=22}] run give @s goat_horn[instrument=sing_goat_horn]
