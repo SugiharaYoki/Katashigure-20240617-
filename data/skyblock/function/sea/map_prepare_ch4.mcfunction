@@ -327,6 +327,10 @@ item replace block 90194 47 131 container.13 with golden_carrot 1
 
 setblock 90193 45 114 minecraft:potted_bamboo
 
+setblock 90158 35 95 chest[facing=south]
+item replace block 90158 35 95 container.11 with arrow 3
+item replace block 90158 35 95 container.13 with firework_star[custom_name='{"text":"燃爆剂","italic":true,"color":"blue","italic":false}',lore=['{"text":"喷火器专用燃爆剂。","color":"white","italic":false}','{"text":"使用喷火器时左键，瞬间对面前近距离造成大量伤害。","color":"white","italic":false}']] 3
+item replace block 90158 35 95 container.15 with arrow 3
 
 #最终大厅 第七章入口
 setblock 90154 18 134 minecraft:waxed_copper_bulb[lit=false]
