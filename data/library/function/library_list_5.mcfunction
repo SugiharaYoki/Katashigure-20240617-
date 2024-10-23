@@ -1,0 +1,12 @@
+tellraw @s "当前页面展示书本数目为:10"
+tellraw @s ["",{"text":"闌夜珊--背叛者-第四章：背叛者 （二）","color":"blue","hoverEvent":{"action":"show_text","value":"点击以加载书本至讲台"},"clickEvent":{"action":"run_command","value":"/trigger librarymenu set 51"}}]
+tellraw @s ["",{"text":"闌夜珊--背叛者-第四章：背叛者 （三）","color":"blue","hoverEvent":{"action":"show_text","value":"点击以加载书本至讲台"},"clickEvent":{"action":"run_command","value":"/trigger librarymenu set 52"}}]
+tellraw @s ["",{"text":"闌夜珊--背叛者-第四章：背叛者 （四）","color":"blue","hoverEvent":{"action":"show_text","value":"点击以加载书本至讲台"},"clickEvent":{"action":"run_command","value":"/trigger librarymenu set 53"}}]
+tellraw @s ["",{"text":"闌夜珊--背叛者-第四章：背叛者 （五）","color":"blue","hoverEvent":{"action":"show_text","value":"点击以加载书本至讲台"},"clickEvent":{"action":"run_command","value":"/trigger librarymenu set 54"}}]
+tellraw @s ["",{"text":"闌夜珊--背叛者-第四章：背叛者 （六）","color":"blue","hoverEvent":{"action":"show_text","value":"点击以加载书本至讲台"},"clickEvent":{"action":"run_command","value":"/trigger librarymenu set 55"}}]
+tellraw @s ["",{"text":"闌夜珊--背叛者-第四章：背叛者 （七）","color":"blue","hoverEvent":{"action":"show_text","value":"点击以加载书本至讲台"},"clickEvent":{"action":"run_command","value":"/trigger librarymenu set 56"}}]
+tellraw @s ["",{"text":"闌夜珊--背叛者-第四章：背叛者 （八）","color":"blue","hoverEvent":{"action":"show_text","value":"点击以加载书本至讲台"},"clickEvent":{"action":"run_command","value":"/trigger librarymenu set 57"}}]
+tellraw @s ["",{"text":"闌夜珊--背叛者-第四章：背叛者 （九）","color":"blue","hoverEvent":{"action":"show_text","value":"点击以加载书本至讲台"},"clickEvent":{"action":"run_command","value":"/trigger librarymenu set 58"}}]
+tellraw @s ["",{"text":"闌夜珊--【黑X银灰+博士?】友人之托：为繁育后代，将挚爱的妻子托付秘密友人借种怀胎","color":"blue","hoverEvent":{"action":"show_text","value":"点击以加载书本至讲台"},"clickEvent":{"action":"run_command","value":"/trigger librarymenu set 59"}}]
+tellraw @s ["",{"text":"闌夜珊--背叛者-第四章：背叛者 （十）","color":"blue","hoverEvent":{"action":"show_text","value":"点击以加载书本至讲台"},"clickEvent":{"action":"run_command","value":"/trigger librarymenu set 60"}}]
+tellraw @s ["",{"text":"上一页","color":"green","hoverEvent":{"action":"show_text","value":"点击以翻到上一页"},"clickEvent":{"action":"run_command","value":"/trigger librarymenu set 82"}},"6 / 8", {"text":"下一页","color":"green","hoverEvent":{"action":"show_text","value":"点击以翻到下一页"},"clickEvent":{"action":"run_command","value":"/trigger librarymenu set 84"}}]

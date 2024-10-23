@@ -1,0 +1,12 @@
+tellraw @s "当前页面展示书本数目为:10"
+tellraw @s ["",{"text":"闌夜珊--背叛者-第四章：背叛者 （十一）","color":"blue","hoverEvent":{"action":"show_text","value":"点击以加载书本至讲台"},"clickEvent":{"action":"run_command","value":"/trigger librarymenu set 61"}}]
+tellraw @s ["",{"text":"闌夜珊--背叛者-第四章：背叛者 （十二）","color":"blue","hoverEvent":{"action":"show_text","value":"点击以加载书本至讲台"},"clickEvent":{"action":"run_command","value":"/trigger librarymenu set 62"}}]
+tellraw @s ["",{"text":"闌夜珊--【黑X？？？】假面舞会：为救出被劫持的博士，杀手女王深入匪窝却遭胁迫，被拘束后的夫目前犯","color":"blue","hoverEvent":{"action":"show_text","value":"点击以加载书本至讲台"},"clickEvent":{"action":"run_command","value":"/trigger librarymenu set 63"}}]
+tellraw @s ["",{"text":"闌夜珊--背叛者-第四章：背叛者 （十三）","color":"blue","hoverEvent":{"action":"show_text","value":"点击以加载书本至讲台"},"clickEvent":{"action":"run_command","value":"/trigger librarymenu set 64"}}]
+tellraw @s ["",{"text":"闌夜珊--背叛者-第四章：背叛者 （十四）","color":"blue","hoverEvent":{"action":"show_text","value":"点击以加载书本至讲台"},"clickEvent":{"action":"run_command","value":"/trigger librarymenu set 65"}}]
+tellraw @s ["",{"text":"闌夜珊--【银灰X黑】友人之托2：为完成秘密友人借种怀胎的请求，单身贵族坠向对他人妻子的禁忌之恋","color":"blue","hoverEvent":{"action":"show_text","value":"点击以加载书本至讲台"},"clickEvent":{"action":"run_command","value":"/trigger librarymenu set 66"}}]
+tellraw @s ["",{"text":"闌夜珊--背叛者-第四章：背叛者 （十五）","color":"blue","hoverEvent":{"action":"show_text","value":"点击以加载书本至讲台"},"clickEvent":{"action":"run_command","value":"/trigger librarymenu set 67"}}]
+tellraw @s ["",{"text":"闌夜珊--背叛者-第四章：最后的外传，以及后记","color":"blue","hoverEvent":{"action":"show_text","value":"点击以加载书本至讲台"},"clickEvent":{"action":"run_command","value":"/trigger librarymenu set 68"}}]
+tellraw @s ["",{"text":"闌夜珊--【锡兰x路人】愿君勿忘：名门闺秀为拯救没落家族委身权贵，在心许的男孩面前向其他男人献上处子之身","color":"blue","hoverEvent":{"action":"show_text","value":"点击以加载书本至讲台"},"clickEvent":{"action":"run_command","value":"/trigger librarymenu set 69"}}]
+tellraw @s ["",{"text":"闌夜珊--【黑x路人】美好明日：曾经同生共死的伙伴再次重逢，昔日的杀手少女用身体的交合向过去的一切诀别","color":"blue","hoverEvent":{"action":"show_text","value":"点击以加载书本至讲台"},"clickEvent":{"action":"run_command","value":"/trigger librarymenu set 70"}}]
+tellraw @s ["",{"text":"上一页","color":"green","hoverEvent":{"action":"show_text","value":"点击以翻到上一页"},"clickEvent":{"action":"run_command","value":"/trigger librarymenu set 83"}},"7 / 8", {"text":"下一页","color":"green","hoverEvent":{"action":"show_text","value":"点击以翻到下一页"},"clickEvent":{"action":"run_command","value":"/trigger librarymenu set 85"}}]
