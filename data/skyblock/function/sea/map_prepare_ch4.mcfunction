@@ -46,6 +46,9 @@ setblock 90178 45 124 minecraft:potted_azalea_bush
 
 
 summon minecraft:interaction 90164 14.3 98 {CustomName:'[{"text":"器械式治疗仪"}]',Tags:["SEAaidbox"]}
+summon minecraft:interaction 90234 47.3 95 {CustomName:'[{"text":"器械式治疗仪"}]',Tags:["SEAaidbox"]}
+
+
 
 setblock 90188 14 89 chest[facing=west]
 item replace block 90188 14 89 container.12 with beef 1
