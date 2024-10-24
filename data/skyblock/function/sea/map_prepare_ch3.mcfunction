@@ -49,6 +49,8 @@ setblock 90088 149 110 air
 setblock 90089 149 110 air
 setblock 90067 145 134 air
 setblock 90077 145 149 air
+setblock 90129 149 102 air
+setblock 90128 145 110 air
 setblock 90084 143 123 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 1, id:"minecraft:beef"}}
 setblock 90083 143 123 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:flint"}}
 setblock 90121 137 105 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:flint"}}
@@ -77,6 +79,8 @@ setblock 90088 149 110 decorated_pot{sherds:["prize_pottery_sherd","prize_potter
 setblock 90089 149 110 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:gunpowder"}}
 setblock 90067 145 134 decorated_pot{sherds:["mourner_pottery_sherd","mourner_pottery_sherd","mourner_pottery_sherd","mourner_pottery_sherd"],item:{count: 2, id:"minecraft:echo_shard"}}
 setblock 90077 145 149 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:coal"}}
+setblock 90129 149 102 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:gunpowder"}}
+setblock 90128 145 110 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:flint"}}
 
 #炸药桶
 setblock 90084 137 126 air
@@ -408,6 +412,8 @@ fill 90137 129 97 90136 129 97 air
 fill 90137 128 97 90136 128 97 air
 fill 90137 128 98 90136 128 98 air
 fill 90132 131 107 90132 129 106 minecraft:slime_block
+
+
 
 #医疗大楼
 fill 90086 150 123 90085 150 123 barrel[facing=north]
