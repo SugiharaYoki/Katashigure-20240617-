@@ -25,6 +25,7 @@ clear @s[gamemode=!creative] decorated_pot
 clear @s[gamemode=!creative] structure_void
 clear @s[gamemode=!creative] crimson_button
 clear @s[gamemode=!creative] warped_button
+clear @s[gamemode=!creative] stone_button
 
 tag @s remove PVP_see
 
