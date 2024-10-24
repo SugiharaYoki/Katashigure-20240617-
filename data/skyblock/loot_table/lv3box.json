@@ -74,7 +74,6 @@
             {
               "function": "minecraft:enchant_randomly",
               "options": [
-                "minecraft:knockback",
                 "minecraft:unbreaking"
               ],
               "conditions": [
@@ -130,7 +129,6 @@
             {
               "function": "minecraft:enchant_randomly",
               "options": [
-                "minecraft:knockback",
                 "minecraft:sharpness",
                 "minecraft:unbreaking"
               ],

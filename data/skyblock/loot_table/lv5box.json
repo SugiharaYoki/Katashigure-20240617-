@@ -60,7 +60,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:air",
-          "weight": 3
+          "weight": 8
         }
       ]
     },
@@ -223,6 +223,18 @@
                 {
                   "condition": "minecraft:random_chance",
                   "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:knockback": 4
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.01
                 }
               ]
             }
