@@ -46,7 +46,7 @@ setblock 90152 137 139 air
 setblock 90152 137 138 air
 setblock 90149 137 139 air
 setblock 90088 149 110 air
-setblock 90089 149 110 air
+setblock 90087 149 110 air
 setblock 90067 145 134 air
 setblock 90077 145 149 air
 setblock 90129 149 102 air
@@ -76,7 +76,7 @@ setblock 90152 137 139 decorated_pot{sherds:["friend_pottery_sherd","friend_pott
 setblock 90152 137 138 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:gold_ingot"}}
 setblock 90149 137 139 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:gunpowder"}}
 setblock 90088 149 110 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:gold_ingot"}}
-setblock 90089 149 110 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:gunpowder"}}
+setblock 90087 149 110 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:gunpowder"}}
 setblock 90067 145 134 decorated_pot{sherds:["mourner_pottery_sherd","mourner_pottery_sherd","mourner_pottery_sherd","mourner_pottery_sherd"],item:{count: 2, id:"minecraft:echo_shard"}}
 setblock 90077 145 149 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:coal"}}
 setblock 90129 149 102 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:gunpowder"}}
@@ -423,6 +423,10 @@ item replace block 90085 150 123 container.13 with flint 1
 item replace block 90083 150 123 container.12 with emerald 3
 item replace block 90083 150 123 container.14 with emerald 3
 item replace block 90082 150 123 container.14 with arrow 2
+
+setblock 90089 147 109 air
+setblock 90091 150 110 air
+setblock 90091 150 110 lever[facing=south]
 
 setblock 90119 161 142 chest[facing=east]
 item replace block 90119 161 142 container.13 with flint 1
