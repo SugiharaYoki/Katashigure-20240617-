@@ -45,6 +45,10 @@ setblock 90126 149 144 air
 setblock 90152 137 139 air
 setblock 90152 137 138 air
 setblock 90149 137 139 air
+setblock 90088 149 110 air
+setblock 90089 149 110 air
+setblock 90067 145 134 air
+setblock 90077 145 149 air
 setblock 90084 143 123 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 1, id:"minecraft:beef"}}
 setblock 90083 143 123 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:flint"}}
 setblock 90121 137 105 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:flint"}}
@@ -69,6 +73,10 @@ setblock 90126 149 144 decorated_pot{sherds:["heart_pottery_sherd","heart_potter
 setblock 90152 137 139 decorated_pot{sherds:["friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd"],item:{count: 3, id:"minecraft:emerald"}}
 setblock 90152 137 138 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:gold_ingot"}}
 setblock 90149 137 139 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:gunpowder"}}
+setblock 90088 149 110 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:gold_ingot"}}
+setblock 90089 149 110 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:gunpowder"}}
+setblock 90067 145 134 decorated_pot{sherds:["mourner_pottery_sherd","mourner_pottery_sherd","mourner_pottery_sherd","mourner_pottery_sherd"],item:{count: 2, id:"minecraft:echo_shard"}}
+setblock 90077 145 149 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:coal"}}
 
 #炸药桶
 setblock 90084 137 126 air
@@ -78,6 +86,7 @@ setblock 90085 137 132 air
 setblock 90080 137 134 air
 fill 90135 137 147 90135 138 147 air
 setblock 90127 143 147 air
+setblock 90066 145 143 air
 setblock 90084 137 126 decorated_pot{sherds:["burn_pottery_sherd","burn_pottery_sherd","burn_pottery_sherd","burn_pottery_sherd"],item:{count: 1, id:"minecraft:blaze_powder"}}
 setblock 90103 137 109 decorated_pot{sherds:["burn_pottery_sherd","burn_pottery_sherd","burn_pottery_sherd","burn_pottery_sherd"],item:{count: 1, id:"minecraft:blaze_powder"}}
 setblock 90107 138 105 decorated_pot{sherds:["burn_pottery_sherd","burn_pottery_sherd","burn_pottery_sherd","burn_pottery_sherd"],item:{count: 1, id:"minecraft:blaze_powder"}}
@@ -85,7 +94,7 @@ setblock 90085 137 132 decorated_pot{sherds:["burn_pottery_sherd","burn_pottery_
 setblock 90080 137 134 decorated_pot{sherds:["burn_pottery_sherd","burn_pottery_sherd","burn_pottery_sherd","burn_pottery_sherd"],item:{count: 1, id:"minecraft:blaze_powder"}}
 fill 90135 137 147 90135 138 147 decorated_pot{sherds:["burn_pottery_sherd","burn_pottery_sherd","burn_pottery_sherd","burn_pottery_sherd"],item:{count: 1, id:"minecraft:blaze_powder"}}
 setblock 90127 143 147 decorated_pot{sherds:["burn_pottery_sherd","burn_pottery_sherd","burn_pottery_sherd","burn_pottery_sherd"],item:{count: 1, id:"minecraft:blaze_powder"}}
-
+setblock 90066 145 143 decorated_pot{sherds:["burn_pottery_sherd","burn_pottery_sherd","burn_pottery_sherd","burn_pottery_sherd"],item:{count: 1, id:"minecraft:blaze_powder"}}
 
 setblock 90091 137 122 minecraft:green_shulker_box
 item replace block 90091 137 122 container.12 with arrow 2
@@ -399,3 +408,33 @@ fill 90137 129 97 90136 129 97 air
 fill 90137 128 97 90136 128 97 air
 fill 90137 128 98 90136 128 98 air
 fill 90132 131 107 90132 129 106 minecraft:slime_block
+
+#医疗大楼
+fill 90086 150 123 90085 150 123 barrel[facing=north]
+fill 90083 150 123 90082 150 123 barrel[facing=north]
+
+item replace block 90085 150 123 container.13 with flint 1
+item replace block 90083 150 123 container.12 with emerald 3
+item replace block 90083 150 123 container.14 with emerald 3
+item replace block 90082 150 123 container.14 with arrow 2
+
+setblock 90119 161 142 chest[facing=east]
+item replace block 90119 161 142 container.13 with flint 1
+
+setblock 90087 145 144 minecraft:redstone_block
+setblock 90087 145 144 minecraft:air
+fill 90086 146 142 90086 146 140 minecraft:redstone_block
+fill 90086 146 142 90086 146 140 minecraft:air
+
+setblock 90081 145 138 chest[facing=south]
+item replace block 90081 145 138 container.13 with potion[potion_contents={potion:regeneration}] 1
+
+setblock 90080 146 142 minecraft:potted_red_tulip
+setblock 90094 146 143 minecraft:potted_red_tulip
+
+setblock 90087 164 147 chest[facing=east]
+item replace block 90087 164 147 container.12 with potion[potion_contents={potion:regeneration}] 1
+item replace block 90087 164 147 container.14 with flint 2
+
+
+

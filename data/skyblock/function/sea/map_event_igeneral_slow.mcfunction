@@ -73,7 +73,6 @@ execute if block 90105 123 125 lever run clear @a[tag=SEAPT] lever[custom_data={
 execute as @n[tag=sc,scores={sea_4temp1=..-1}] run item replace block 90071 122 139 container.13 with lever[minecraft:can_place_on={blocks:"chiseled_deepslate"},custom_data={sea_lever1:true}] 1
 execute as @n[tag=sc,scores={sea_4temp1=0..}] run clear @a[tag=SEAPT] lever[custom_data={sea_lever1:true}]
 
-
 execute if block 90148 130 132 air run item replace block 90075 128 144 container.12 with lever[minecraft:can_place_on={blocks:"stripped_birch_log"},custom_data={sea_lever3:true}] 1
 execute if block 90148 130 132 lever run clear @a[tag=SEAPT] lever[custom_data={sea_lever3:true}]
 
@@ -84,6 +83,9 @@ execute if block 90145 136 127 lever run clear @a[tag=SEAPT] lever[custom_data={
 
 execute if block 90192 28 118 air run item replace block 90136 155 146 container.12 with lever[minecraft:can_place_on={blocks:"stripped_acacia_log"},custom_data={sea_lever6:true}] 1
 execute if block 90192 28 118 lever run clear @a[tag=SEAPT] lever[custom_data={sea_lever6:true}]
+
+execute if block 90082 150 118 air run item replace block 90119 161 142 container.13 with lever[minecraft:can_place_on={blocks:"stripped_oak_log"},custom_data={sea_lever7:true}] 1
+execute if block 90082 150 118 lever run clear @a[tag=SEAPT] lever[custom_data={sea_lever7:true}]
 
 item replace block 90104 122 131 container.18 with trial_key[custom_name='{"text":"器械室钥匙","italic":true,"color":"yellow","italic":false}']
 item replace block 90104 122 131 container.12 with trial_key[custom_name='{"text":"文件柜A钥匙","italic":true,"color":"yellow","italic":false}']
@@ -293,7 +295,8 @@ execute if block 90088 128 114 air unless block 90088 129 115 air run fill 90088
 execute as @a[tag=SEAPT] at @s run function skyblock:sea/p/player
 
 
-
+execute positioned 90092 145 135 if entity @a[tag=SEAPT,distance=..4.6] unless entity @n[tag=SEAch4_spawn_timer_largestairtoentrance,distance=0..3] run summon marker ~ ~ ~ {Tags:["SEAchg_spawn_timer","SEAchg_spawn_timer_medical1"]}
+execute as @n[tag=SEAchg_spawn_timer_medical1] at @s run function skyblock:sea/e/ev020_medical1
 
 #激光
 execute as @e[x=90130.0,dx=2.2,y=124.5,dy=0,z=125.5,dz=0] run damage @s 3 sting
@@ -331,6 +334,8 @@ execute if block 90115 152 127 bamboo_button[powered=true] run fill 90115 150 12
 execute if block 90195 27 130 bamboo_button[powered=true] run fill 90195 25 130 90195 19 130 ladder[facing=east]
 
 execute as @n[tag=SEAmob_carrybomb,nbt=!{Fire:-1s}] run kill @s
+
+execute as @e[type=silverfish,tag=SEAmob,x=90000,y=0,z=0,distance=..3000,nbt=!{Fire:-1s}] run function skyblock:sea/p/silverfish
 
 #ch4激光
 execute as @e[x=90184.0,dx=3.8,y=20.65,dy=0,z=96.50,dz=0] run damage @s 3 sting

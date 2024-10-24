@@ -1,0 +1,12 @@
+tellraw @s "当前页面展示书本数目为:10"
+tellraw @s ["",{"text":"闌夜珊--附录三：丛林里的六天","color":"blue","hoverEvent":{"action":"show_text","value":"点击以加载书本至讲台"},"clickEvent":{"action":"run_command","value":"/trigger librarymenu set 11"}}]
+tellraw @s ["",{"text":"闌夜珊--补充内容：旅行","color":"blue","hoverEvent":{"action":"show_text","value":"点击以加载书本至讲台"},"clickEvent":{"action":"run_command","value":"/trigger librarymenu set 12"}}]
+tellraw @s ["",{"text":"闌夜珊--背叛者：第二章 （一）","color":"blue","hoverEvent":{"action":"show_text","value":"点击以加载书本至讲台"},"clickEvent":{"action":"run_command","value":"/trigger librarymenu set 13"}}]
+tellraw @s ["",{"text":"闌夜珊--背叛者：第二章 （二）","color":"blue","hoverEvent":{"action":"show_text","value":"点击以加载书本至讲台"},"clickEvent":{"action":"run_command","value":"/trigger librarymenu set 14"}}]
+tellraw @s ["",{"text":"闌夜珊--【黑x博士】舒华兹小姐的春天：杀手女王的情事","color":"blue","hoverEvent":{"action":"show_text","value":"点击以加载书本至讲台"},"clickEvent":{"action":"run_command","value":"/trigger librarymenu set 15"}}]
+tellraw @s ["",{"text":"闌夜珊--背叛者：第二章 （三）","color":"blue","hoverEvent":{"action":"show_text","value":"点击以加载书本至讲台"},"clickEvent":{"action":"run_command","value":"/trigger librarymenu set 16"}}]
+tellraw @s ["",{"text":"闌夜珊--背叛者：第二章 （四）","color":"blue","hoverEvent":{"action":"show_text","value":"点击以加载书本至讲台"},"clickEvent":{"action":"run_command","value":"/trigger librarymenu set 17"}}]
+tellraw @s ["",{"text":"闌夜珊--归乡之时","color":"blue","hoverEvent":{"action":"show_text","value":"点击以加载书本至讲台"},"clickEvent":{"action":"run_command","value":"/trigger librarymenu set 18"}}]
+tellraw @s ["",{"text":"闌夜珊--背叛者：第二章 （五）","color":"blue","hoverEvent":{"action":"show_text","value":"点击以加载书本至讲台"},"clickEvent":{"action":"run_command","value":"/trigger librarymenu set 19"}}]
+tellraw @s ["",{"text":"闌夜珊--酒醉的探戈","color":"blue","hoverEvent":{"action":"show_text","value":"点击以加载书本至讲台"},"clickEvent":{"action":"run_command","value":"/trigger librarymenu set 20"}}]
+tellraw @s ["",{"text":"上一页","color":"green","hoverEvent":{"action":"show_text","value":"点击以翻到上一页"},"clickEvent":{"action":"run_command","value":"/trigger librarymenu set 78"}},"2 / 8", {"text":"下一页","color":"green","hoverEvent":{"action":"show_text","value":"点击以翻到下一页"},"clickEvent":{"action":"run_command","value":"/trigger librarymenu set 80"}}]

@@ -87,6 +87,6 @@ execute as @s[scores={MultiMenu=133027}] at @s run scoreboard players set @s ish
 
 
 
-execute as @s[scores={MultiMenu=131001..131999}] at @s run scoreboard players set @s MultiMenu 131
-execute as @s[scores={MultiMenu=132001..132999}] at @s run scoreboard players set @s MultiMenu 132
-execute as @s[scores={MultiMenu=133001..133999}] at @s run scoreboard players set @s MultiMenu 133
+execute as @s[scores={MultiMenu=131001..133999}] at @s run scoreboard players set @s MultiMenu 131
+#execute as @s[scores={MultiMenu=132001..132999}] at @s run scoreboard players set @s MultiMenu 132
+#execute as @s[scores={MultiMenu=133001..133999}] at @s run scoreboard players set @s MultiMenu 133

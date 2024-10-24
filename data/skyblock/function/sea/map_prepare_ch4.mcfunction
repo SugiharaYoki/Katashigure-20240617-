@@ -46,6 +46,9 @@ setblock 90178 45 124 minecraft:potted_azalea_bush
 
 
 summon minecraft:interaction 90164 14.3 98 {CustomName:'[{"text":"器械式治疗仪"}]',Tags:["SEAaidbox"]}
+summon minecraft:interaction 90234 47.3 95 {CustomName:'[{"text":"器械式治疗仪"}]',Tags:["SEAaidbox"]}
+
+
 
 setblock 90188 14 89 chest[facing=west]
 item replace block 90188 14 89 container.12 with beef 1
@@ -103,6 +106,9 @@ setblock 90181 27 103 air
 setblock 90193 44 122 air
 setblock 90185 46 107 air
 setblock 90179 46 101 air
+setblock 90195 46 98 air
+setblock 90220 46 91 air
+setblock 90220 46 90 air
 setblock 90210 19 112 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:flint"}}
 setblock 90211 19 112 decorated_pot{sherds:["friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd"],item:{count: 3, id:"minecraft:emerald"}}
 setblock 90188 19 109 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 2, id:"minecraft:carrot"}}
@@ -120,6 +126,9 @@ setblock 90181 27 103 decorated_pot{sherds:["friend_pottery_sherd","friend_potte
 setblock 90193 44 122 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 2, id:"minecraft:potato"}}
 setblock 90185 46 107 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:flint"}}
 setblock 90179 46 101 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:flint"}}
+setblock 90195 46 98 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 1, id:"minecraft:potato"}}
+setblock 90220 46 91 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 1, id:"minecraft:golden_carrot"}}
+setblock 90220 46 90 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 2, id:"minecraft:potato"}}
 
 #艾德雯娜的护身符
 setblock 90160 19 147 air
@@ -325,6 +334,30 @@ item replace block 90194 47 131 container.13 with golden_carrot 1
 
 setblock 90193 45 114 minecraft:potted_bamboo
 
+setblock 90158 35 95 chest[facing=south]
+item replace block 90158 35 95 container.11 with arrow 3
+item replace block 90158 35 95 container.13 with firework_star[custom_name='{"text":"燃爆剂","italic":true,"color":"blue","italic":false}',lore=['{"text":"喷火器专用燃爆剂。","color":"white","italic":false}','{"text":"使用喷火器时左键，瞬间对面前近距离造成大量伤害。","color":"white","italic":false}']] 3
+item replace block 90158 35 95 container.15 with arrow 3
+
+fill 90167 35 89 90167 35 90 redstone_block
+fill 90167 35 89 90167 35 90 air
+
+
+setblock 90213 47 100 minecraft:potted_allium
+setblock 90212 47 100 minecraft:potted_fern
+setblock 90208 47 100 minecraft:potted_allium
+
+setblock 90226 47 92 minecraft:potted_allium
+
+
+
+
+
+
+
+
+
+
 
 #最终大厅 第七章入口
 setblock 90154 18 134 minecraft:waxed_copper_bulb[lit=false]
@@ -342,5 +375,8 @@ setblock 90139 8 126 minecraft:waxed_copper_bulb[lit=false]
 setblock 90136 6 134 minecraft:waxed_copper_bulb[lit=false]
 setblock 90136 6 126 minecraft:waxed_copper_bulb[lit=false]
 fill 90135 6 132 90135 -1 128 minecraft:netherite_block
+
+
+
 
     function skyblock:protector/entity_count_end {function:"skyblock:sea/map_prepare_ch4.mcfunction"}

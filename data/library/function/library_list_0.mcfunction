@@ -1,0 +1,12 @@
+tellraw @s "当前页面展示书本数目为:10"
+tellraw @s ["",{"text":"戏子琉璃--To Romantic and Unfailing Elysia","color":"blue","hoverEvent":{"action":"show_text","value":"点击以加载书本至讲台"},"clickEvent":{"action":"run_command","value":"/trigger librarymenu set 1"}}]
+tellraw @s ["",{"text":"戏子琉璃--Sway to My Beat in Cosmos","color":"blue","hoverEvent":{"action":"show_text","value":"点击以加载书本至讲台"},"clickEvent":{"action":"run_command","value":"/trigger librarymenu set 2"}}]
+tellraw @s ["",{"text":"闌夜珊--背叛者-序章","color":"blue","hoverEvent":{"action":"show_text","value":"点击以加载书本至讲台"},"clickEvent":{"action":"run_command","value":"/trigger librarymenu set 3"}}]
+tellraw @s ["",{"text":"闌夜珊--背叛者-第一章：新世界（一）","color":"blue","hoverEvent":{"action":"show_text","value":"点击以加载书本至讲台"},"clickEvent":{"action":"run_command","value":"/trigger librarymenu set 4"}}]
+tellraw @s ["",{"text":"闌夜珊--背叛者-第一章：新世界（二）","color":"blue","hoverEvent":{"action":"show_text","value":"点击以加载书本至讲台"},"clickEvent":{"action":"run_command","value":"/trigger librarymenu set 5"}}]
+tellraw @s ["",{"text":"闌夜珊--背叛者-第一章：新世界（三）","color":"blue","hoverEvent":{"action":"show_text","value":"点击以加载书本至讲台"},"clickEvent":{"action":"run_command","value":"/trigger librarymenu set 6"}}]
+tellraw @s ["",{"text":"闌夜珊--背叛者-第一章：新世界（四）","color":"blue","hoverEvent":{"action":"show_text","value":"点击以加载书本至讲台"},"clickEvent":{"action":"run_command","value":"/trigger librarymenu set 7"}}]
+tellraw @s ["",{"text":"闌夜珊--背叛者-第一章：新世界（五）","color":"blue","hoverEvent":{"action":"show_text","value":"点击以加载书本至讲台"},"clickEvent":{"action":"run_command","value":"/trigger librarymenu set 8"}}]
+tellraw @s ["",{"text":"闌夜珊--附录一：罪犯H的日志","color":"blue","hoverEvent":{"action":"show_text","value":"点击以加载书本至讲台"},"clickEvent":{"action":"run_command","value":"/trigger librarymenu set 9"}}]
+tellraw @s ["",{"text":"闌夜珊--附录二：繁花之眠","color":"blue","hoverEvent":{"action":"show_text","value":"点击以加载书本至讲台"},"clickEvent":{"action":"run_command","value":"/trigger librarymenu set 10"}}]
+tellraw @s ["", {"text":"下一页","color":"green","hoverEvent":{"action":"show_text","value":"点击以翻到下一页"},"clickEvent":{"action":"run_command","value":"/trigger librarymenu set 79"}},"1 / 8"]
