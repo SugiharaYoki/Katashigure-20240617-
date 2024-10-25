@@ -124,6 +124,7 @@ summon minecraft:interaction 90121 156.3 145 {CustomName:'[{"text":"多功能工
 summon minecraft:marker 90121 155 144 {Tags:["SEAcrafter_tp","SEAcrafter_tp9"]}
 summon minecraft:interaction 90082 144.3 117 {CustomName:'[{"text":"器械式治疗仪"}]',Tags:["SEAaidbox"]}
 summon minecraft:interaction 90118 138.3 143 {CustomName:'[{"text":"器械式治疗仪"}]',Tags:["SEAaidbox"]}
+summon minecraft:interaction 90087 154.3 138 {CustomName:'[{"text":"器械式治疗仪"}]',Tags:["SEAaidbox"]}
 
 setblock 90113 140 109 chest[facing=north]
 item replace block 90113 140 109 container.13 with emerald 3
@@ -445,6 +446,13 @@ setblock 90094 146 143 minecraft:potted_red_tulip
 setblock 90087 164 147 chest[facing=east]
 item replace block 90087 164 147 container.12 with potion[potion_contents={potion:regeneration}] 1
 item replace block 90087 164 147 container.14 with flint 2
+
+setblock 90092 153 144 minecraft:redstone_block
+setblock 90092 153 144 minecraft:air
+setblock 90089 153 144 minecraft:redstone_block
+setblock 90089 153 144 minecraft:air
+
+
 
 
 
