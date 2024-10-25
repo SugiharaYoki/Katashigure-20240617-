@@ -93,7 +93,7 @@ item replace block 90081 104 134 container.17 with structure_void[custom_name='{
 item replace block 90081 104 134 container.18 with structure_void[custom_name='{"text":"未发现的档案","italic":true,"color":"gray","italic":false}'\
 ,lore=['{"text":"在南面的建材资源附属平台似乎存有某位重要人物的笔记。","color":"white","italic":false}']]
 item replace block 90081 104 134 container.19 with structure_void[custom_name='{"text":"未发现的档案","italic":true,"color":"gray","italic":false}'\
-,lore=['{"text":"暂无解锁方式。","color":"white","italic":false}']]
+,lore=['{"text":"在主平台甲板医务中心似乎存有某位诊断医生的笔记。","color":"white","italic":false}']]
 item replace block 90081 104 134 container.20 with structure_void[custom_name='{"text":"未发现的档案","italic":true,"color":"gray","italic":false}'\
 ,lore=['{"text":"暂无解锁方式。","color":"white","italic":false}']]
 item replace block 90081 104 134 container.21 with structure_void[custom_name='{"text":"未发现的档案","italic":true,"color":"gray","italic":false}'\
@@ -175,7 +175,9 @@ lore=['{"text":"圣晶能够吸引的不止拥有自主思维的生物的意志�
 execute if entity @s[tag=sea_doc19b] run item replace block 90081 104 134 container.18 with flow_banner_pattern[custom_data={sea_doc19b:true},custom_name=\
 '{"text":"建材资源平台的笔记 - 史丹尼舵长","italic":true,"color":"dark_purple","italic":false}',\
 lore=['{"text":"本以为远离那群暴民我就能活下来……没想到还是被算计了呢。","color":"white","italic":false}','{"text":"不愧是我的女儿，我终究甘拜下风。","color":"white","italic":false}','{"text":"这座附属平台早已不是最佳避难场所。","color":"white","italic":false}','{"text":"那群尸变体根本不是威胁的根源，从地底渗透上来的细菌才是。","color":"white","italic":false}','{"text":"诺曼说的没错，我们所有人打从一开始就被感染了。","color":"white","italic":false}','{"text":"受伤也只是加速了尸变的速度……","color":"white","italic":false}','{"text":"这下，我算是受了致命伤吧。会先死去，还是会成为怪物？","color":"white","italic":false}','{"text":"唉，我的菲尔娜……我这也能算作是赎罪吗？","color":"white","italic":false}']]
-
+execute if entity @s[tag=sea_doc20b] run item replace block 90081 104 134 container.19 with flow_banner_pattern[custom_data={sea_doc20b:true},custom_name=\
+'{"text":"医务中心的笔记 - 丹尼尔","italic":true,"color":"dark_purple","italic":false}',\
+lore=['{"text":"原本医务中心由于细菌感染的原因就已经人满为患了，再加上暴乱……","color":"white","italic":false}','{"text":"这下子不论是医疗设施还是药品都已经严重不足了。","color":"white","italic":false}','{"text":"我为了自己人藏了几瓶药剂，隔天就发现药全都被暴民偷了。","color":"white","italic":false}','{"text":"他们根本不是要邪教徒跟他们讲道理，他们自己就不讲任何道理。","color":"white","italic":false}','{"text":"相反，那群邪教徒才是积极配合我们治疗病患的一方。","color":"white","italic":false}','{"text":"暴乱是从我们与外部失联，且通讯平台与主平台也失联后开始的。","color":"white","italic":false}','{"text":"但那显然不可能是邪教徒的手笔。他们巴不得圣水晶信仰传播到外界。","color":"white","italic":false}','{"text":"有一股神秘的力量吸收了电磁波。暴民们知道这一点，却装作不知道。","color":"white","italic":false}']]
 
 
 execute if entity @s[tag=sea_doc15] run item replace block 90080 104 134 container.14 with flow_banner_pattern[custom_data={sea_doc15:true},custom_name=\
@@ -305,3 +307,24 @@ lore=['{"text":"19号 28万桶 - 石油开采量未满足需求。","color":"whi
 #
 #此致 蕾娜
 #
+#
+#
+#这些细菌能够从微观层面上控制受感染者身体内的现存细胞……？
+#
+#我无法理解这种现象，这就好像逼着我去承认这些细菌拥有智能。
+#细菌的出现是从圣水晶从地下被带出来之后，这意味着什么？
+#圣水晶带来了细菌？
+#又或者说……圣水晶，守护着那地方，控制着那堆细菌？还是说……
+#
+#
+#
+#
+#
+#
+#
+#
+#
+
+
+
+
