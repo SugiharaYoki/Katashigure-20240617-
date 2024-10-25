@@ -109,6 +109,7 @@ setblock 90179 46 101 air
 setblock 90195 46 98 air
 setblock 90220 46 91 air
 setblock 90220 46 90 air
+setblock 90228 46 79 air
 setblock 90210 19 112 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:flint"}}
 setblock 90211 19 112 decorated_pot{sherds:["friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd"],item:{count: 3, id:"minecraft:emerald"}}
 setblock 90188 19 109 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 2, id:"minecraft:carrot"}}
@@ -129,6 +130,9 @@ setblock 90179 46 101 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery
 setblock 90195 46 98 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 1, id:"minecraft:potato"}}
 setblock 90220 46 91 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 1, id:"minecraft:golden_carrot"}}
 setblock 90220 46 90 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 2, id:"minecraft:potato"}}
+setblock 90228 46 79 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 2, id:"minecraft:carrot"}}
+
+
 
 #艾德雯娜的护身符
 setblock 90160 19 147 air
@@ -351,11 +355,20 @@ setblock 90226 47 92 minecraft:potted_allium
 
 
 
+fill 90227 47 76 90227 47 77 potted_fern
+setblock 90228 48 76 minecraft:potted_fern
+setblock 90228 48 78 minecraft:potted_fern
+setblock 90227 47 78 minecraft:flower_pot
+
+setblock 90228 47 80 minecraft:brewing_stand
+setblock 90227 47 86 minecraft:brewing_stand
 
 
 
-
-
+setblock 90222 46 76 chest[facing=south]
+item replace block 90222 46 76 container.11 with glow_berries 2
+item replace block 90222 46 76 container.13 with glow_berries 2
+item replace block 90222 46 76 container.15 with glow_berries 2
 
 
 
