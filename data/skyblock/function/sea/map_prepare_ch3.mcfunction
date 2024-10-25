@@ -84,7 +84,7 @@ setblock 90077 145 149 decorated_pot{sherds:["prize_pottery_sherd","prize_potter
 setblock 90129 149 102 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:gunpowder"}}
 setblock 90128 145 110 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:flint"}}
 setblock 90111 158 123 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 3, id:"minecraft:gunpowder"}}
-setblock 90060 165 130 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 3, id:"minecraft:coal"}}
+setblock 90060 165 130 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 12, id:"minecraft:arrow"}}
 
 #炸药桶
 setblock 90084 137 126 air
