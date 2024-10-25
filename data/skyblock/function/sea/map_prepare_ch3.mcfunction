@@ -452,7 +452,16 @@ setblock 90092 153 144 minecraft:air
 setblock 90089 153 144 minecraft:redstone_block
 setblock 90089 153 144 minecraft:air
 
+setblock 90086 154 138 minecraft:brewing_stand[has_bottle_3=true]
+setblock 90094 154 143 minecraft:brewing_stand
 
+setblock 90094 154 146 minecraft:brewing_stand[has_bottle_0=true,has_bottle_1=true]
 
-
+setblock 90093 156 149 barrel[facing=north]
+setblock 90094 156 149 barrel[facing=north]
+item replace block 90093 156 149 container.9 with potion[potion_contents={potion:"awkward"}] 1
+item replace block 90093 156 149 container.11 with potion[potion_contents={potion:"thick"}] 1
+item replace block 90093 156 149 container.13 with potion[potion_contents={potion:"awkward"}] 1
+item replace block 90093 156 149 container.15 with potion[potion_contents={potion:"weakness"}] 1
+item replace block 90093 156 149 container.17 with potion[potion_contents={potion:"thick"}] 1
 
