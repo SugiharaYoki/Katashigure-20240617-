@@ -5,6 +5,11 @@ execute if score SEAchg_spawn_timer_medical1 sea_4temp2 matches 1 positioned 900
 execute if score SEAchg_spawn_timer_medical1 sea_4temp2 matches 1 positioned 90083 145 146 run function skyblock:sea/m/skeleton_melee
 execute if score SEAchg_spawn_timer_medical1 sea_4temp2 matches 1 positioned 90084 145 147 run function skyblock:sea/m/skeleton_melee
 
+execute if score SEAchg_spawn_timer_medical1 sea_4temp2 matches 1 positioned 90089 153 140 run function skyblock:sea/m/silverfish
+execute if score SEAchg_spawn_timer_medical1 sea_4temp2 matches 1 positioned 90091 153 140 run function skyblock:sea/m/silverfish
+execute if score SEAchg_spawn_timer_medical1 sea_4temp2 matches 1 positioned 90088 153 141 run function skyblock:sea/m/skeleton
+execute if score SEAchg_spawn_timer_medical1 sea_4temp2 matches 1 positioned 90092 153 142 run function skyblock:sea/m/skeleton
+execute if score SEAchg_spawn_timer_medical1 sea_4temp2 matches 1 positioned 90090 153 142 run function skyblock:sea/m/spider
 
 
 execute if score SEAchg_spawn_timer_medical1 sea_4temp2 matches 1 positioned 90082 145 139 run function skyblock:sea/m/pillager_npc
