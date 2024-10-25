@@ -185,11 +185,12 @@ execute as @s[x=80000,dx=20000,z=-10000,dz=20000,y=33,dy=5] at @s if block ~ ~-1
 execute as @s[x=80000,dx=20000,z=-10000,dz=20000,y=33,dy=5] at @s if block ~ ~-1.5 ~ waxed_weathered_cut_copper_slab if block ~ ~-0.1 ~ air unless block ~ 18 ~ waxed_weathered_cut_copper_slab run tp @s ~ 44.0 ~
 
 
-execute if entity @s[tag=!e_w_51_eternal,tag=sea_doc06,tag=sea_doc07,tag=sea_doc08,tag=sea_doc09,tag=sea_doc10,tag=sea_doc11,tag=sea_doc12,tag=sea_doc13] run tellraw @s {"text": "已获取全部8份『法莫洛斯的医疗报告』！","color": "blue"}
-execute if entity @s[tag=!e_w_51_eternal,tag=sea_doc06,tag=sea_doc07,tag=sea_doc08,tag=sea_doc09,tag=sea_doc10,tag=sea_doc11,tag=sea_doc12,tag=sea_doc13] run tellraw @s {"text": "已获得可用于多功能工作站的永久升级。","color": "white"}
-execute if entity @s[tag=!e_w_51_eternal,tag=sea_doc06,tag=sea_doc07,tag=sea_doc08,tag=sea_doc09,tag=sea_doc10,tag=sea_doc11,tag=sea_doc12,tag=sea_doc13] run tellraw @s {"text": "以后不会通过工作站购买到腐肉了。","color": "white"}
-execute if entity @s[tag=!e_w_51_eternal,tag=sea_doc06,tag=sea_doc07,tag=sea_doc08,tag=sea_doc09,tag=sea_doc10,tag=sea_doc11,tag=sea_doc12,tag=sea_doc13] run tellraw @s {"text": "同时，金萝卜的获取概率也些微提升。","color": "white"}
-execute if entity @s[tag=!e_w_51_eternal,tag=sea_doc06,tag=sea_doc07,tag=sea_doc08,tag=sea_doc09,tag=sea_doc10,tag=sea_doc11,tag=sea_doc12,tag=sea_doc13] run tag @s add e_w_51_eternal
+execute if entity @s[tag=!e_w_51_eternal] if entity @n[tag=sc,tag=sea_doc06,tag=sea_doc07,tag=sea_doc08,tag=sea_doc09,tag=sea_doc10,tag=sea_doc11,tag=sea_doc12,tag=sea_doc13] run tellraw @s {"text": "已获取全部8份『法莫洛斯的医疗报告』！","color": "blue"}
+execute if entity @s[tag=!e_w_51_eternal] if entity @n[tag=sc,tag=sea_doc06,tag=sea_doc07,tag=sea_doc08,tag=sea_doc09,tag=sea_doc10,tag=sea_doc11,tag=sea_doc12,tag=sea_doc13] run playsound minecraft:ui.toast.challenge_complete player @s ~ ~ ~ 1 1
+execute if entity @s[tag=!e_w_51_eternal] if entity @n[tag=sc,tag=sea_doc06,tag=sea_doc07,tag=sea_doc08,tag=sea_doc09,tag=sea_doc10,tag=sea_doc11,tag=sea_doc12,tag=sea_doc13] run tellraw @s {"text": "已获得可用于多功能工作站的永久升级。","color": "white"}
+execute if entity @s[tag=!e_w_51_eternal] if entity @n[tag=sc,tag=sea_doc06,tag=sea_doc07,tag=sea_doc08,tag=sea_doc09,tag=sea_doc10,tag=sea_doc11,tag=sea_doc12,tag=sea_doc13] run tellraw @s {"text": "以后不会通过工作站购买到腐肉了。","color": "white"}
+execute if entity @s[tag=!e_w_51_eternal] if entity @n[tag=sc,tag=sea_doc06,tag=sea_doc07,tag=sea_doc08,tag=sea_doc09,tag=sea_doc10,tag=sea_doc11,tag=sea_doc12,tag=sea_doc13] run tellraw @s {"text": "同时，金萝卜的获取概率也些微提升。","color": "white"}
+execute if entity @s[tag=!e_w_51_eternal] if entity @n[tag=sc,tag=sea_doc06,tag=sea_doc07,tag=sea_doc08,tag=sea_doc09,tag=sea_doc10,tag=sea_doc11,tag=sea_doc12,tag=sea_doc13] run tag @s add e_w_51_eternal
 
 #回响指南针
 execute if items entity @s weapon.* minecraft:recovery_compass run function skyblock:sea/p/echo_compass
