@@ -85,6 +85,11 @@ execute as @s[scores={sea_4temp1=592}] run scoreboard players set @a[tag=SEAPT,s
 execute as @s[scores={sea_4temp1=622..718}] at @s if entity @a[x=90162,y=127,z=113,distance=0..10] run scoreboard players set @s sea_4temp1 719
 execute as @s[scores={sea_4temp1=720}] run summon firework_rocket 90121 162 137 {LifeTime:35,FireworksItem:{id:firework_rocket,count:1,components:{fireworks:{flight_duration:25,explosions:[{shape:"large_ball",has_twinkle:0b,has_trail:1b,colors:[I;3887386],fade_colors:[I;4312372]}]}}}}
 
+execute as @s[scores={sea_4temp1=592}] run fill 90093 145 137 90091 145 137 minecraft:air
+execute as @s[scores={sea_4temp1=594}] run fill 90093 146 137 90091 146 137 minecraft:air
+execute as @s[scores={sea_4temp1=596}] run fill 90093 147 137 90091 147 137 minecraft:air
+
+
 #bug排查：这条tp没有意义
 execute as @s[scores={sea_4temp1=739}] at @s run tp @n[tag=SEAyuehan] 90100 -500 100
 execute as @s[scores={sea_4temp1=739}] at @s run kill @n[tag=SEAyuehan]

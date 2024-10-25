@@ -455,6 +455,8 @@ setblock 90089 153 144 minecraft:air
 setblock 90086 154 138 minecraft:brewing_stand[has_bottle_2=true]
 setblock 90094 154 143 minecraft:brewing_stand
 
+fill 90093 147 137 90091 145 137 minecraft:iron_block
+
 setblock 90094 154 146 minecraft:brewing_stand[has_bottle_0=true,has_bottle_1=true]
 
 setblock 90093 156 149 barrel[facing=north]

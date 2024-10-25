@@ -296,7 +296,7 @@ execute if block 90088 128 114 air unless block 90088 129 115 air run fill 90088
 execute as @a[tag=SEAPT] at @s run function skyblock:sea/p/player
 
 
-execute positioned 90092 145 135 if entity @a[tag=SEAPT,distance=..4.6] unless entity @n[tag=SEAchg_spawn_timer_medical1,distance=0..3] run summon marker ~ ~ ~ {Tags:["SEAchg_spawn_timer","SEAchg_spawn_timer_medical1"]}
+execute positioned 90092 145 135 if block 90093 145 137 air if entity @a[tag=SEAPT,distance=..4.6] unless entity @n[tag=SEAchg_spawn_timer_medical1,distance=0..3] run summon marker ~ ~ ~ {Tags:["SEAchg_spawn_timer","SEAchg_spawn_timer_medical1"]}
 execute as @n[tag=SEAchg_spawn_timer_medical1] at @s run function skyblock:sea/e/ev020_medical1
 
 #激光
@@ -333,6 +333,7 @@ execute if block 90074 123 138 crimson_button[powered=true] run setblock 90074 1
 
 execute if block 90115 152 127 bamboo_button[powered=true] run fill 90115 150 127 90115 137 127 ladder[facing=west]
 execute if block 90195 27 130 bamboo_button[powered=true] run fill 90195 25 130 90195 19 130 ladder[facing=east]
+execute if block 90115 152 127 bamboo_button[powered=true] run fill 90115 150 127 90115 137 127 ladder[facing=west]
 
 execute as @n[tag=SEAmob_carrybomb,nbt=!{Fire:-1s}] run kill @s
 

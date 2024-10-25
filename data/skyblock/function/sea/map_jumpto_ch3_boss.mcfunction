@@ -103,7 +103,7 @@ setblock 90131 161 144 flower_pot
 
 scoreboard players set @e[tag=SEAch3_spawn_timer] sea_4temp1 99999
 
-
+fill 90093 147 137 90091 145 137 minecraft:air
 
 
 
