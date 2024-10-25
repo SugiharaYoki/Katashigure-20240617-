@@ -6,7 +6,6 @@ function skyblock:sea/map_jumpto_ch3
 tp @a[tag=SEAPT] 90148 103 113 facing 90147 103 113
 
 scoreboard players set @n[tag=sc] sea_4temp2 400
-scoreboard players set sc sea_speedrun_ch3 9999
 
 clear @a[tag=SEAPT]
 item replace entity @a[tag=SEAPT] armor.head with chainmail_helmet[custom_name='{"text":"电工安全帽","italic":false,"color":"red"}',custom_data={sea_safehat:true},attribute_modifiers=[{type:"generic.armor",slot:"head",id:"sea_armor:003_01",amount:1.0,operation:"add_value"},{type:"generic.knockback_resistance",slot:"head",id:"sea_armor:003_02",amount:0.1,operation:"add_value"}],unbreakable={}]

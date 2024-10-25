@@ -452,7 +452,7 @@ setblock 90092 153 144 minecraft:air
 setblock 90089 153 144 minecraft:redstone_block
 setblock 90089 153 144 minecraft:air
 
-setblock 90086 154 138 minecraft:brewing_stand[has_bottle_3=true]
+setblock 90086 154 138 minecraft:brewing_stand[has_bottle_2=true]
 setblock 90094 154 143 minecraft:brewing_stand
 
 setblock 90094 154 146 minecraft:brewing_stand[has_bottle_0=true,has_bottle_1=true]
