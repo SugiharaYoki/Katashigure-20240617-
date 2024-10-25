@@ -294,7 +294,7 @@ execute if block 90088 128 114 air unless block 90088 129 115 air run fill 90088
 
 execute as @a[tag=SEAPT] at @s run function skyblock:sea/p/player
 
-scoreboard players add @e[tag=SEAchg_spawn_timer] sea_4temp2 1
+
 execute positioned 90092 145 135 if entity @a[tag=SEAPT,distance=..4.6] unless entity @n[tag=SEAchg_spawn_timer_medical1,distance=0..3] run summon marker ~ ~ ~ {Tags:["SEAchg_spawn_timer","SEAchg_spawn_timer_medical1"]}
 execute as @n[tag=SEAchg_spawn_timer_medical1] at @s run function skyblock:sea/e/ev020_medical1
 
