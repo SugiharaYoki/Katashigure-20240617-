@@ -52,6 +52,3 @@ execute as @a[distance=0..4] at @s if items entity @s armor.feet iron_boots run 
 execute as @a[distance=0..4] at @s if items entity @s armor.feet diamond_boots run item replace entity @s armor.feet with diamond_boots
 execute as @a[distance=0..4] at @s if items entity @s armor.feet golden_boots run item replace entity @s armor.feet with golden_boots
 execute as @a[distance=0..4] at @s if items entity @s armor.feet netherite_boots run item replace entity @s armor.feet with netherite_boots
-
-
-scoreboard players set @s Skywar_ishtar_usehorn 0

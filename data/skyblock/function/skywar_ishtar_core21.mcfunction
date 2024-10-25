@@ -84,6 +84,3 @@ give @s[scores={rng6=8}] tipped_arrow[potion_contents={potion:strong_harming}] 1
 give @s[scores={rng6=9}] tipped_arrow[potion_contents={potion:strong_harming}] 18
 give @s[scores={rng6=10..}] tipped_arrow[potion_contents={potion:strong_harming}] 20
 
-
-
-scoreboard players set @s Skywar_ishtar_usehorn 0
