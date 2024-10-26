@@ -45,8 +45,8 @@ give @a[tag=SEAPT] emerald 24
 
 
 ####
-tag @s add e_i_33
-tag @s add e_i_35
+tag @a[tag=SEAPT] add e_i_33
+tag @a[tag=SEAPT] add e_i_35
 
 setblock 90169 20 79 redstone_lamp[lit=true]
 setblock 90169 20 79 redstone_lamp[lit=false]
@@ -133,8 +133,6 @@ execute positioned 90215 46 98 positioned 90231 46 95 run function skyblock:sea/
 execute positioned 90215 46 98 positioned 90252 46 105 run function skyblock:sea/m/cave_spider
 execute positioned 90215 46 98 positioned 90252 46 105 run function skyblock:sea/m/cave_spider_small
 execute positioned 90215 46 98 positioned 90252 46 105 run function skyblock:sea/m/cave_spider_small
-execute positioned 90215 46 98 positioned 90234 57 89 run function skyblock:sea/m/shadow
-execute positioned 90215 46 98 positioned 90234 57 89 run function skyblock:sea/m/drowned_maintenance
 execute positioned 90215 46 98 positioned 90234 57 89 run function skyblock:sea/m/drowned_maintenance
 
 execute positioned 90215 46 98 positioned 90238 57 95 run function skyblock:sea/m/mine
@@ -156,7 +154,7 @@ execute positioned 90198 46 90 run summon marker ~ ~ ~ {Tags:["SEAch4_spawn_time
 execute positioned 90216 57 91 run summon marker ~ ~ ~ {Tags:["SEAch4_spawn"]}
 execute positioned 90209 57 89 run summon marker ~ ~ ~ {Tags:["SEAch4_spawn"]}
 
-
+fill 90158 36 129 90158 34 131 air
 
 scoreboard players add @e[tag=SEAch4_spawn_timer] sea_4temp1 99999
 
