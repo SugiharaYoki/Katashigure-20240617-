@@ -38,6 +38,8 @@ summon minecraft:interaction 90176 14.3 164 {CustomName:'[{"text":"多功能工�
 summon minecraft:marker 90176 13 163 {Tags:["SEAcrafter_tp","SEAcrafter_tp12"]}
 summon minecraft:interaction 90194 45.3 131 {CustomName:'[{"text":"多功能工作站"}]',Tags:["SEAcrafter","SEAcrafter_foodless","SEAcrafter13"]}
 summon minecraft:marker 90194 44 130 {Tags:["SEAcrafter_tp","SEAcrafter_tp13"]}
+summon minecraft:interaction 90243 58.3 95 {CustomName:'[{"text":"多功能工作站"}]',Tags:["SEAcrafter","SEAcrafter_foodless","SEAcrafter14"]}
+summon minecraft:marker 90242 57 95 {Tags:["SEAcrafter_tp","SEAcrafter_tp14"]}
 
 
 
@@ -374,8 +376,11 @@ item replace block 90222 46 76 container.15 with glow_berries 2
 setblock 90254 46 101 chest[facing=west]
 item replace block 90254 46 101 container.13 with raw_iron 1
 
+setblock 90238 58 93 minecraft:waxed_copper_bulb[lit=false]
+setblock 90238 58 97 minecraft:waxed_copper_bulb[lit=false]
 
-
+setblock 90243 57 94 minecraft:furnace[facing=west]
+setblock 90243 57 96 minecraft:furnace[facing=west]
 
 #最终大厅 第七章入口
 setblock 90154 18 134 minecraft:waxed_copper_bulb[lit=false]
