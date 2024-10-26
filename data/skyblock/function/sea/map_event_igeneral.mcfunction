@@ -25,6 +25,16 @@ execute as @a at @s if items entity @s weapon.mainhand shears[custom_data={sea_p
 execute as @a[tag=SEAPT] at @s run function skyblock:sea/p/player_fast
 
 
+execute as @e[type=marker,x=90000,y=0,z=0,distance=..3000,tag=SEAedwina_smoke] at @s run scoreboard players add @s rng1 1
+execute as @e[type=marker,x=90000,y=0,z=0,distance=..3000,tag=SEAedwina_smoke,scores={rng1=1}] at @s run playsound item.flintandsteel.use hostile @a ~ ~ ~ 1 0.8
+execute as @e[type=marker,x=90000,y=0,z=0,distance=..3000,tag=SEAedwina_smoke,scores={rng1=10..}] at @s if entity @a[tag=SEAPT,distance=0..2.5] run scoreboard players add @s rng1 1
+execute as @e[type=marker,x=90000,y=0,z=0,distance=..3000,tag=SEAedwina_smoke,scores={rng1=10..}] at @s as @a[tag=SEAPT,distance=0..1.5] run effect give @s blindness 3 0 false
+execute as @e[type=marker,x=90000,y=0,z=0,distance=..3000,tag=SEAedwina_smoke,scores={rng1=10..}] at @s if entity @a[tag=SEAPT,distance=0..1.85] run scoreboard players add @s rng1 1
+execute as @e[type=marker,x=90000,y=0,z=0,distance=..3000,tag=SEAedwina_smoke,scores={rng1=10..}] at @s run particle squid_ink ~ ~1 ~ 1.3 2.3 1.3 0.03 30
+execute as @e[type=marker,x=90000,y=0,z=0,distance=..3000,tag=SEAedwina_smoke,scores={rng1=10..}] at @s run particle large_smoke ~ ~1.2 ~ 1.3 2.6 1.3 0.03 40
+execute as @e[type=marker,x=90000,y=0,z=0,distance=..3000,tag=SEAedwina_smoke,scores={rng1=400..}] at @s run kill @s
+
+
 execute if entity @a[tag=SEAPT,x=90123,y=0,z=98,dx=7,dy=103,dz=7] run function skyblock:sea/e/ev009
 
     function skyblock:protector/entity_count_end {function:"slyblock:sea/map_event_igeneral"}

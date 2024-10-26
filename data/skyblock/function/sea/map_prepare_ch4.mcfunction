@@ -382,6 +382,20 @@ setblock 90238 58 97 minecraft:waxed_copper_bulb[lit=false]
 setblock 90243 57 94 minecraft:furnace[facing=west]
 setblock 90243 57 96 minecraft:furnace[facing=west]
 
+setblock 90194 59 95 minecraft:waxed_copper_bulb[lit=true]
+setblock 90194 59 90 minecraft:waxed_copper_bulb[lit=true]
+
+
+
+
+
+
+
+
+
+
+
+
 #最终大厅 第七章入口
 setblock 90154 18 134 minecraft:waxed_copper_bulb[lit=false]
 setblock 90154 18 126 minecraft:waxed_copper_bulb[lit=false]
