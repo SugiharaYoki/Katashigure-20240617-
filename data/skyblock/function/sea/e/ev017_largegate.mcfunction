@@ -37,5 +37,5 @@ execute as @s[scores={sea_4temp1=1}] positioned 90152 44 129 run function skyblo
 execute as @s[scores={sea_4temp1=1}] positioned 90170 45 123 run tp @n[tag=SEAherb] ~ ~ ~
 execute as @s[scores={sea_4temp1=1}] positioned 90170 45 123 run tag @n[tag=SEAherb] add SEAherb2
 
-
+execute as @s[scores={sea_4temp1=1}] run scoreboard players set @a[tag=SEAPT,scores={sea_progress=..9}] sea_progress 10
 

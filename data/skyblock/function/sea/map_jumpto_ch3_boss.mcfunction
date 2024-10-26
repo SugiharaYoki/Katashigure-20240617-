@@ -33,7 +33,6 @@ give @a[tag=SEAPT] coal 3
 tag @a[tag=SEAPT] add e_w_01
 tag @a[tag=SEAPT] add e_w_02
 tag @a[tag=SEAPT] add e_w_03
-tag @a[tag=SEAPT] add e_w_04
 scoreboard players set @a[tag=SEAPT] sea_i_trim_zombie 24
 scoreboard players set @a[tag=SEAPT] sea_i_trim_spider 6
 scoreboard players set @a[tag=SEAPT] sea_i_trim_human 6

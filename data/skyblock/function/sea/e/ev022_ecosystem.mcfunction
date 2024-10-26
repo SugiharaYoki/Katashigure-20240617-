@@ -20,5 +20,6 @@ execute as @s[scores={sea_4temp1=68}] as @n[tag=SEAedwina] at @s run effect give
 execute as @s[scores={sea_4temp1=69}] as @n[tag=SEAedwina] at @s run tp @s ~ ~-500 ~
 execute as @s[scores={sea_4temp1=69}] as @n[tag=SEAedwina] at @s run kill @s
 
+#90236.00 63.00 107.99
 
-
+execute as @s[scores={sea_4temp1=1}] run scoreboard players set @a[tag=SEAPT,scores={sea_progress=..10}] sea_progress 11
