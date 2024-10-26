@@ -277,9 +277,9 @@ execute if block 90172 39 169 minecraft:crimson_button[powered=true] run functio
 execute if block 90183 28 93 minecraft:crimson_button[powered=true] run function skyblock:sea/e/ev014_unlockelevator3
 #execute if block 90172 39 169 minecraft:crimson_button[powered=true] run function skyblock:sea/e/ev014_unlockelevator3
 
-execute if block 90197 20 131 minecraft:crimson_button[powered=true] run function skyblock:sea/e/ev014_unlockelevator1
+execute if block 90197 20 129 minecraft:crimson_button[powered=true] run function skyblock:sea/e/ev014_unlockelevator1
 execute if block 90197 20 130 minecraft:crimson_button[powered=true] run function skyblock:sea/e/ev014_unlockelevator2
-execute if block 90197 20 129 minecraft:crimson_button[powered=true] run function skyblock:sea/e/ev014_unlockelevator3
+execute if block 90197 20 131 minecraft:crimson_button[powered=true] run function skyblock:sea/e/ev014_unlockelevator3
 
 execute positioned 90172 21 106 if entity @a[tag=SEAPT,distance=..5.7] unless items entity @a[tag=SEAPT] container.* heart_of_the_sea unless entity @n[tag=SEAch4_spawn,distance=0..3] positioned 90172 21 106 run function skyblock:sea/m/zombie_knight
 execute positioned 90172 21 106 if entity @a[tag=SEAPT,distance=..5.7] unless items entity @a[tag=SEAPT] container.* heart_of_the_sea unless entity @n[tag=SEAch4_spawn,distance=0..3] run summon marker ~ ~ ~ {Tags:["SEAch4_spawn"]}
