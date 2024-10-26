@@ -362,13 +362,18 @@ setblock 90227 47 78 minecraft:flower_pot
 
 setblock 90228 47 80 minecraft:brewing_stand
 setblock 90227 47 86 minecraft:brewing_stand
-
+setblock 90206 47 94 minecraft:brewing_stand
+setblock 90242 47 109 minecraft:brewing_stand
 
 
 setblock 90222 46 76 chest[facing=south]
 item replace block 90222 46 76 container.11 with glow_berries 2
 item replace block 90222 46 76 container.13 with glow_berries 2
 item replace block 90222 46 76 container.15 with glow_berries 2
+
+setblock 90254 46 101 chest[facing=west]
+item replace block 90254 46 101 container.13 with raw_iron 1
+
 
 
 
