@@ -24,3 +24,15 @@ execute as @s[scores={sea_4temp1=69}] as @n[tag=SEAedwina] at @s run kill @s
 
 execute as @s[scores={sea_4temp1=1}] run scoreboard players set @a[tag=SEAPT,scores={sea_progress=..10}] sea_progress 11
 execute as @s[scores={sea_4temp1=1}] run time set 18000
+
+execute as @s[scores={sea_4temp1=78}] run fill 90184 57 84 90185 57 84 air
+execute as @s[scores={sea_4temp1=79}] run fill 90184 58 84 90185 58 84 air
+execute as @s[scores={sea_4temp1=80}] run fill 90184 59 84 90185 59 84 air
+execute as @s[scores={sea_4temp1=78}] run playsound block.iron_door.open block @a 90185.0 59 84 1 0.8
+execute as @s[scores={sea_4temp1=79}] run playsound block.iron_door.open block @a 90185.0 59 84 1 0.8
+execute as @s[scores={sea_4temp1=80}] run playsound block.iron_door.open block @a 90185.0 59 84 1 0.8
+
+
+
+
+
