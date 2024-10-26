@@ -6,3 +6,5 @@ execute positioned 90155 13 155 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 1
 execute positioned 90155 13 155 run particle sculk_soul ~ ~1 ~ 0.3 0.5 0.3 0.05 10
 execute positioned 90155 13 155 run function skyblock:sea/m/skeleton
 execute positioned 90155 13 155 run function skyblock:sea/m/skeleton
+
+setblock 90197 20 129 air

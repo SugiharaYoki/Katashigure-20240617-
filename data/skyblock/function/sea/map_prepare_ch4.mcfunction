@@ -387,9 +387,9 @@ setblock 90194 59 90 minecraft:waxed_copper_bulb[lit=true]
 
 
 
+fill 90196 21 131 90196 19 129 minecraft:waxed_copper_block
 
-
-
+fill 90197 20 131 90197 20 129 minecraft:crimson_button[facing=west,face=floor]
 
 
 
