@@ -42,6 +42,7 @@ execute store result score @n[tag=SEAboss4] rng1 run random value 1..3
 execute if entity @n[tag=SEAboss4,scores={health=..70,rng2=..10}] run effect give @s resistance 3 0 true
 execute if entity @n[tag=SEAboss4,scores={health=..40,rng2=..10}] run effect give @s resistance 3 3 true
 
+execute as @n[tag=SEAboss4,scores={rng8=0}] at @s run tag @s remove SEAboss4_eat
 execute as @n[tag=SEAboss4,scores={health=..90,rng2=..10,rng1=1,rng8=..0}] run tag @s add SEAboss4_eat
 execute as @n[tag=SEAboss4,scores={health=..90,rng2=..10,rng1=1,rng8=..0}] run scoreboard players add @s rng8 1
 
@@ -61,7 +62,6 @@ execute as @n[tag=SEAboss4,scores={rng8=24},tag=SEAboss4_eat] at @s run playsoun
 execute as @n[tag=SEAboss4,scores={rng8=28},tag=SEAboss4_eat] at @s run playsound entity.generic.eat hostile @a ~ ~ ~ 0.7 1.1
 execute as @n[tag=SEAboss4,scores={rng8=28},tag=SEAboss4_eat] at @s run playsound entity.player.burp hostile @a ~ ~ ~ 0.7 1.1
 execute as @n[tag=SEAboss4,scores={rng8=28},tag=SEAboss4_eat] at @s run scoreboard players add @s rng2 1
-execute as @n[tag=SEAboss4,scores={rng8=28},tag=SEAboss4_eat] at @s run tag @s remove SEAboss4_eat
 execute as @n[tag=SEAboss4,scores={rng8=27},tag=SEAboss4_eat] at @s run effect give @s instant_health 1 4 true
 execute as @n[tag=SEAboss4,scores={rng8=30..},tag=SEAboss4_eat] at @s run scoreboard players set @s rng8 0
 
