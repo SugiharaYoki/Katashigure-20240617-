@@ -1,6 +1,7 @@
 execute store result score @n[tag=SEAboss4] rng1 run random value 1..5
 execute store result score @n[tag=SEAboss4] rng3 run random value 1..3
 execute store result score @n[tag=SEAboss4] rng4 run random value 1..3
+execute as @s[scores={sea_4temp1=1}] run data modify entity @n[tag=SEAboss4] NoAI set value false
 
 execute as @n[tag=SEAboss4,nbt=!{HurtTime:0s},scores={rng9=0,rng4=1},tag=!SEAboss4_attack] at @s run scoreboard players add @s rng9 1
 execute as @n[tag=SEAboss4,scores={rng9=1..}] at @s run scoreboard players add @s rng9 1
@@ -17,8 +18,7 @@ execute as @n[tag=SEAboss4,scores={rng9=12}] at @s run scoreboard players set @s
 
 execute as @n[tag=SEAboss4] at @s run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
 
-execute as @s[scores={sea_4temp1=1}] as @a[tag=SEAPT] at @s run playsound minecraft:app2.astrum music @s ~ ~ ~ 10 1
-execute as @s[scores={sea_4temp1=1}] positioned 90185 56 61 as @a[gamemode=spectator,distance=0..250] run playsound minecraft:app2.astrum music @s ~ ~ ~ 10 1
+
 
 
 execute as @s[scores={sea_4temp1=1}] run bossbar add 9066601 "无我唯生 皆数为存 - 艾德雯娜 · 塔尔索"
@@ -137,3 +137,6 @@ execute as @n[tag=SEAboss4,scores={rng8=29..},tag=SEAboss4_attack_dashheavy,nbt=
 execute as @n[tag=SEAboss4,scores={rng8=29..},tag=SEAboss4_attack_dashheavy,nbt={OnGround:1b}] at @s rotated ~ 0 run particle damage_indicator ^ ^0 ^0 2.3 0 2.3 0 45
 execute as @n[tag=SEAboss4,scores={rng8=29..},tag=SEAboss4_attack_dashheavy,nbt={OnGround:1b}] at @s as @a[tag=SEAPT,distance=0..3.3] at @s run damage @s 8 generic
 execute as @n[tag=SEAboss4,scores={rng8=29..},tag=SEAboss4_attack_dashheavy,nbt={OnGround:1b}] at @s run scoreboard players set @s rng8 0
+
+
+
