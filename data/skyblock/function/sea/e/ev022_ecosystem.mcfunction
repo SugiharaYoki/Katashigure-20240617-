@@ -7,6 +7,8 @@ execute as @s[scores={sea_4temp1=1}] run playsound block.copper_bulb.turn_off bl
 execute as @s[scores={sea_4temp1=1}] positioned 90184 62 91 run function skyblock:sea/m/npc_edwina
 execute as @s[scores={sea_4temp1=1..90}] positioned 90184 62 91 as @n[tag=SEAedwina] at @s run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
 
+execute as @s[scores={sea_4temp1=1}] run scoreboard players add @s sea_4temp1 8
+
 execute as @s[scores={sea_4temp1=15}] as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
 execute as @s[scores={sea_4temp1=33}] as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
 execute as @s[scores={sea_4temp1=46}] as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
