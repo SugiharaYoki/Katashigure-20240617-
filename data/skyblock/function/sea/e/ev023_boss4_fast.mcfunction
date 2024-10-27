@@ -9,11 +9,11 @@ execute as @n[tag=SEAboss4,scores={rng9=3,rng1=2}] at @s run function skyblock:s
 execute as @n[tag=SEAboss4,scores={rng9=9,rng3=1}] at @s run tp @s @n[tag=SEAboss4_tp,distance=8..]
 execute as @n[tag=SEAboss4,scores={rng9=9,rng3=2}] at @s run tp @s @n[tag=SEAboss4_tp,distance=3..]
 execute as @n[tag=SEAboss4,scores={rng9=9,rng3=3}] at @s run tp @s @n[tag=SEAboss4_tp,distance=13..]
-execute as @n[tag=SEAboss4,scores={rng9=9}] at @s run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
-execute as @n[tag=SEAboss4,scores={rng9=9}] at @s run data modify entity @s HurtTime set value 0s
-execute as @n[tag=SEAboss4,scores={rng9=9}] at @s run scoreboard players set @s rng8 1
-execute as @n[tag=SEAboss4,scores={rng9=9}] at @s run tag @s add SEAboss4_attack
-execute as @n[tag=SEAboss4,scores={rng9=9}] at @s run scoreboard players set @s rng9 0
+execute as @n[tag=SEAboss4,scores={rng9=9..11}] at @s run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
+execute as @n[tag=SEAboss4,scores={rng9=12}] at @s run data modify entity @s HurtTime set value 0s
+execute as @n[tag=SEAboss4,scores={rng9=12}] at @s run scoreboard players set @s rng8 1
+execute as @n[tag=SEAboss4,scores={rng9=12}] at @s run tag @s add SEAboss4_attack
+execute as @n[tag=SEAboss4,scores={rng9=12}] at @s run scoreboard players set @s rng9 0
 
 execute as @n[tag=SEAboss4] at @s run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
 
@@ -74,47 +74,47 @@ execute as @n[tag=SEAboss4,scores={rng8=30..},tag=SEAboss4_eat] at @s run scoreb
 execute store result score @n[tag=SEAboss4] rng5 run random value 1..2
 execute as @n[tag=SEAboss4,scores={rng8=2,rng5=1},tag=SEAboss4_attack] at @s run tag @s add SEAboss4_attack_dash
 execute as @n[tag=SEAboss4,scores={rng8=2..},tag=SEAboss4_attack_dash] at @s if entity @a[tag=SEAPT,distance=0..1.1] run playsound entity.player.attack.sweep hostile @a ~ ~ ~ 1 1.1
-execute as @n[tag=SEAboss4,scores={rng8=2..},tag=SEAboss4_attack_dash] at @s if entity @a[tag=SEAPT,distance=0..1.1] rotated ~ 0 run particle sweep_attack ^ ^1.2 ^1.1 0.2 0 0.2 0 1
+execute as @n[tag=SEAboss4,scores={rng8=2..},tag=SEAboss4_attack_dash] at @s if entity @a[tag=SEAPT,distance=0..1.1] rotated ~ 0 run particle sweep_attack ^ ^1.2 ^1.1 0.2 0 0.2 0 2
 execute as @n[tag=SEAboss4,scores={rng8=2..},tag=SEAboss4_attack_dash] at @s as @a[tag=SEAPT,distance=0..1.1] at @s run damage @s 7 generic
 execute as @n[tag=SEAboss4,scores={rng8=2..},tag=SEAboss4_attack_dash] at @s if entity @a[tag=SEAPT,distance=0..1.1] run scoreboard players set @s rng8 0
 execute as @n[tag=SEAboss4,scores={rng8=2},tag=SEAboss4_attack_dash] at @s run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
-execute as @n[tag=SEAboss4,scores={rng8=2},tag=SEAboss4_attack_dash] at @s positioned 0.0 0 0.0 run summon marker ^ ^0.1 ^1 {Tags:["SEA_boss4_marker"]}
+execute as @n[tag=SEAboss4,scores={rng8=2},tag=SEAboss4_attack_dash] at @s positioned 0.0 0 0.0 run summon marker ^ ^0.12 ^2 {Tags:["SEA_boss4_marker"]}
 execute as @n[tag=SEAboss4,scores={rng8=2},tag=SEAboss4_attack_dash] at @s run data modify entity @n[tag=SEAboss4_attack_dash] Motion set from entity @n[type=marker,tag=SEA_boss4_marker] Pos
 execute as @n[tag=SEAboss4,scores={rng8=2},tag=SEAboss4_attack_dash] at @s run kill @e[type=marker,tag=SEA_boss4_marker]
 execute as @n[tag=SEAboss4,scores={rng8=7},tag=SEAboss4_attack_dash] at @s run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
-execute as @n[tag=SEAboss4,scores={rng8=7},tag=SEAboss4_attack_dash] at @s positioned 0.0 0 0.0 run summon marker ^ ^0.1 ^1 {Tags:["SEA_boss4_marker"]}
+execute as @n[tag=SEAboss4,scores={rng8=7},tag=SEAboss4_attack_dash] at @s positioned 0.0 0 0.0 run summon marker ^ ^0.12 ^2 {Tags:["SEA_boss4_marker"]}
 execute as @n[tag=SEAboss4,scores={rng8=7},tag=SEAboss4_attack_dash] at @s run data modify entity @n[tag=SEAboss4_attack_dash] Motion set from entity @n[type=marker,tag=SEA_boss4_marker] Pos
 execute as @n[tag=SEAboss4,scores={rng8=7},tag=SEAboss4_attack_dash] at @s run kill @e[type=marker,tag=SEA_boss4_marker]
 execute as @n[tag=SEAboss4,scores={rng8=11},tag=SEAboss4_attack_dash] at @s run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
-execute as @n[tag=SEAboss4,scores={rng8=11},tag=SEAboss4_attack_dash] at @s positioned 0.0 0 0.0 run summon marker ^ ^0.1 ^1 {Tags:["SEA_boss4_marker"]}
+execute as @n[tag=SEAboss4,scores={rng8=11},tag=SEAboss4_attack_dash] at @s positioned 0.0 0 0.0 run summon marker ^ ^0.12 ^2 {Tags:["SEA_boss4_marker"]}
 execute as @n[tag=SEAboss4,scores={rng8=11},tag=SEAboss4_attack_dash] at @s run data modify entity @n[tag=SEAboss4_attack_dash] Motion set from entity @n[type=marker,tag=SEA_boss4_marker] Pos
 execute as @n[tag=SEAboss4,scores={rng8=11},tag=SEAboss4_attack_dash] at @s run kill @e[type=marker,tag=SEA_boss4_marker]
-execute as @n[tag=SEAboss4,scores={rng8=13},tag=SEAboss4_attack_dash] at @s run scoreboard players set @s rng8 0
+execute as @n[tag=SEAboss4,scores={rng8=16},tag=SEAboss4_attack_dash] at @s run scoreboard players set @s rng8 0
 
 execute store result score @n[tag=SEAboss4] rng4 run random value 1..3
 execute as @n[tag=SEAboss4,scores={rng8=2,rng5=2},tag=SEAboss4_attack] at @s run tag @s add SEAboss4_attack_drone
 execute as @n[tag=SEAboss4,scores={rng8=3},tag=SEAboss4_attack_drone] at @s if block ~ ~ ~ air unless block ~ ~-1 ~ air run function skyblock:sea/m/drone
 execute as @n[tag=SEAboss4,scores={rng8=3},tag=SEAboss4_attack_drone] at @s if block ~ ~ ~ air unless block ~ ~-1 ~ air run playsound block.iron_door.open block @a ~ ~ ~ 0.7 1.5
-execute as @n[tag=SEAboss4,scores={rng8=5..6,rng4=1},tag=SEAboss4_attack_drone] at @s rotated ~ 0 positioned ^ ^ ^1 if block ~ ~ ~ air run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
-execute as @n[tag=SEAboss4,scores={rng8=5..6,rng4=2},tag=SEAboss4_attack_drone] at @s rotated ~ 0 positioned ^0.7 ^ ^0.5 if block ~ ~ ~ air run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
-execute as @n[tag=SEAboss4,scores={rng8=5..6,rng4=3},tag=SEAboss4_attack_drone] at @s rotated ~ 0 positioned ^-0.7 ^ ^0.5 if block ~ ~ ~ air run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
+execute as @n[tag=SEAboss4,scores={rng8=5..6,rng4=1},tag=SEAboss4_attack_drone] at @s rotated ~ 0 positioned ^ ^ ^1.5 if block ~ ~ ~ air run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
+execute as @n[tag=SEAboss4,scores={rng8=5..6,rng4=2},tag=SEAboss4_attack_drone] at @s rotated ~ 0 positioned ^1 ^ ^0.9 if block ~ ~ ~ air run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
+execute as @n[tag=SEAboss4,scores={rng8=5..6,rng4=3},tag=SEAboss4_attack_drone] at @s rotated ~ 0 positioned ^-1 ^ ^0.9 if block ~ ~ ~ air run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
 
 execute as @n[tag=SEAboss4,scores={rng8=12},tag=SEAboss4_attack_drone] at @s if block ~ ~ ~ air unless block ~ ~-1 ~ air run function skyblock:sea/m/drone
 execute as @n[tag=SEAboss4,scores={rng8=12},tag=SEAboss4_attack_drone] at @s if block ~ ~ ~ air unless block ~ ~-1 ~ air run playsound block.iron_door.open block @a ~ ~ ~ 0.7 1.5
-execute as @n[tag=SEAboss4,scores={rng8=13..14,rng4=1},tag=SEAboss4_attack_drone] at @s rotated ~ 0 positioned ^ ^ ^1 if block ~ ~ ~ air run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
-execute as @n[tag=SEAboss4,scores={rng8=13..14,rng4=2},tag=SEAboss4_attack_drone] at @s rotated ~ 0 positioned ^0.7 ^ ^0.5 if block ~ ~ ~ air run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
-execute as @n[tag=SEAboss4,scores={rng8=13..14,rng4=3},tag=SEAboss4_attack_drone] at @s rotated ~ 0 positioned ^-0.7 ^ ^0.5 if block ~ ~ ~ air run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
+execute as @n[tag=SEAboss4,scores={rng8=13..14,rng4=1},tag=SEAboss4_attack_drone] at @s rotated ~ 0 positioned ^ ^ ^1.5 if block ~ ~ ~ air run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
+execute as @n[tag=SEAboss4,scores={rng8=13..14,rng4=2},tag=SEAboss4_attack_drone] at @s rotated ~ 0 positioned ^1 ^ ^0.9 if block ~ ~ ~ air run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
+execute as @n[tag=SEAboss4,scores={rng8=13..14,rng4=3},tag=SEAboss4_attack_drone] at @s rotated ~ 0 positioned ^-1 ^ ^0.9 if block ~ ~ ~ air run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
 
 execute as @n[tag=SEAboss4,scores={rng8=21},tag=SEAboss4_attack_drone] at @s if block ~ ~ ~ air unless block ~ ~-1 ~ air run function skyblock:sea/m/drone
 execute as @n[tag=SEAboss4,scores={rng8=21},tag=SEAboss4_attack_drone] at @s if block ~ ~ ~ air unless block ~ ~-1 ~ air run playsound block.iron_door.open block @a ~ ~ ~ 0.7 1.5
-execute as @n[tag=SEAboss4,scores={rng8=22..23,rng4=1},tag=SEAboss4_attack_drone] at @s rotated ~ 0 positioned ^ ^ ^1 if block ~ ~ ~ air run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
-execute as @n[tag=SEAboss4,scores={rng8=22..23,rng4=2},tag=SEAboss4_attack_drone] at @s rotated ~ 0 positioned ^0.7 ^ ^0.5 if block ~ ~ ~ air run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
-execute as @n[tag=SEAboss4,scores={rng8=22..23,rng4=3},tag=SEAboss4_attack_drone] at @s rotated ~ 0 positioned ^-0.7 ^ ^0.5 if block ~ ~ ~ air run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
+execute as @n[tag=SEAboss4,scores={rng8=22..23,rng4=1},tag=SEAboss4_attack_drone] at @s rotated ~ 0 positioned ^ ^ ^1.5 if block ~ ~ ~ air run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
+execute as @n[tag=SEAboss4,scores={rng8=22..23,rng4=2},tag=SEAboss4_attack_drone] at @s rotated ~ 0 positioned ^1 ^ ^0.9 if block ~ ~ ~ air run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
+execute as @n[tag=SEAboss4,scores={rng8=22..23,rng4=3},tag=SEAboss4_attack_drone] at @s rotated ~ 0 positioned ^-1 ^ ^0.9 if block ~ ~ ~ air run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
 
-execute as @n[tag=SEAboss4,scores={rng8=27,rng4=1..2},tag=SEAboss4_attack_drone] run scoreboard players set @s rng8 0
+execute as @n[tag=SEAboss4,scores={rng8=34,rng4=1..2},tag=SEAboss4_attack_drone] run scoreboard players set @s rng8 0
 
-execute as @n[tag=SEAboss4,scores={rng8=27,rng4=3},tag=SEAboss4_attack_drone] run tag @s add SEAboss4_attack_dash
-execute as @n[tag=SEAboss4,scores={rng8=27,rng4=3},tag=SEAboss4_attack_drone] run scoreboard players set @s rng8 1
-execute as @n[tag=SEAboss4,scores={rng8=32..},tag=SEAboss4_attack_drone] run scoreboard players set @s rng8 0
+execute as @n[tag=SEAboss4,scores={rng8=34,rng4=3},tag=SEAboss4_attack_drone] run tag @s add SEAboss4_attack_dash
+execute as @n[tag=SEAboss4,scores={rng8=34,rng4=3},tag=SEAboss4_attack_drone] run scoreboard players set @s rng8 1
+execute as @n[tag=SEAboss4,scores={rng8=40..},tag=SEAboss4_attack_drone] run scoreboard players set @s rng8 0
 
 
