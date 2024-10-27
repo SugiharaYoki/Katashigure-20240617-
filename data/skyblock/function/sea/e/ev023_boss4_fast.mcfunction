@@ -21,12 +21,28 @@ execute as @s[scores={sea_4temp1=1}] run bossbar set minecraft:9066601 players @
 execute as @s[scores={sea_4temp1=1}] run bossbar set minecraft:9066601 style progress
 execute as @s[scores={sea_4temp1=1}] run bossbar set minecraft:9066601 max 100
 execute as @s[scores={sea_4temp1=1..}] run execute store result bossbar minecraft:9066601 value run data get entity @n[tag=SEAboss4] Health
+execute as @s[scores={sea_4temp1=1..}] run execute store result score @n[tag=SEAboss4] health run data get entity @n[tag=SEAboss4] Health
+execute as @s[scores={sea_4temp1=1}] run scoreboard players set @n[tag=SEAboss4] rng1 0
+execute as @s[scores={sea_4temp1=1}] run scoreboard players set @n[tag=SEAboss4] rng2 0
+execute as @s[scores={sea_4temp1=1}] run scoreboard players set @n[tag=SEAboss4] rng3 0
+execute as @s[scores={sea_4temp1=1}] run scoreboard players set @n[tag=SEAboss4] rng4 0
+execute as @s[scores={sea_4temp1=1}] run scoreboard players set @n[tag=SEAboss4] rng5 0
+execute as @s[scores={sea_4temp1=1}] run scoreboard players set @n[tag=SEAboss4] rng6 0
+execute as @s[scores={sea_4temp1=1}] run scoreboard players set @n[tag=SEAboss4] rng7 0
+execute as @s[scores={sea_4temp1=1}] run scoreboard players set @n[tag=SEAboss4] rng8 0
+execute as @s[scores={sea_4temp1=1}] run scoreboard players set @n[tag=SEAboss4] rng9 0
+
+execute store result score @n[tag=SEAboss4] rng1 run random value 1..3
+
+execute if entity @n[tag=SEAboss4,scores={health=..70,rng2=..10}] run effect give @s resistance 3 0 true
+execute if entity @n[tag=SEAboss4,scores={health=..40,rng2=..10}] run effect give @s resistance 3 3 true
+
+execute if entity @n[tag=SEAboss4,scores={health=..90,rng2=..10,rng1=1,rng8=..0}] run scoreboard players add @s rng8 1
+execute if entity @n[tag=SEAboss4,scores={health=..90,rng2=..10,rng1=1,rng8=..0}] run tag @s add SEAboss4_eat
+execute if entity @n[tag=SEAboss4,scores={health=..90,rng2=..10,rng1=1,rng8=..0}] run scoreboard players add @s rng2 1
 
 
-
-
-
-
+execute as @n[tag=SEAboss4,scores={rng8=1..}] at @s run scoreboard players add @s rng8 1
 
 
 
