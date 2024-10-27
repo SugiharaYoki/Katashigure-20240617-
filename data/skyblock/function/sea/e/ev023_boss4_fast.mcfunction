@@ -42,8 +42,8 @@ execute store result score @n[tag=SEAboss4] rng1 run random value 1..3
 execute if entity @n[tag=SEAboss4,scores={health=..70,rng2=..10}] run effect give @s resistance 3 0 true
 execute if entity @n[tag=SEAboss4,scores={health=..40,rng2=..10}] run effect give @s resistance 3 3 true
 
-execute as @n[tag=SEAboss4,scores={health=..90,rng2=..10,rng1=1,rng8=..0}] run scoreboard players add @s rng8 1
 execute as @n[tag=SEAboss4,scores={health=..90,rng2=..10,rng1=1,rng8=..0}] run tag @s add SEAboss4_eat
+execute as @n[tag=SEAboss4,scores={health=..90,rng2=..10,rng1=1,rng8=..0}] run scoreboard players add @s rng8 1
 
 
 execute as @n[tag=SEAboss4,scores={rng8=1..}] at @s run scoreboard players add @s rng8 1
