@@ -20,7 +20,7 @@ execute as @s[scores={sea_4temp1=74}] run tellraw @a[tag=SEAPT] {"text": "陌生
 
 execute as @s[scores={sea_4temp1=56}] run data modify entity @n[tag=SEAboss4] NoAI set value 0b
 execute as @s[scores={sea_4temp1=76}] run data modify entity @n[tag=SEAboss4] Motion set value [0.0,0.0,-1.0]
-execute as @s[scores={sea_4temp1=76}] run effect give @s slow_falling 3 0 false
+#execute as @s[scores={sea_4temp1=76}] run effect give @s slow_falling 3 0 false
 
 execute as @s[scores={sea_4temp1=80..90}] run data modify entity @n[tag=SEAboss4,nbt={OnGround:1b}] Invulnerable set value 0b
 
