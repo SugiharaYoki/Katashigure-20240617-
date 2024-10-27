@@ -16,7 +16,7 @@ execute as @n[tag=SEAboss4,scores={rng9=12}] at @s run scoreboard players set @s
 execute as @n[tag=SEAboss4,scores={rng9=12}] at @s run tag @s add SEAboss4_attack
 execute as @n[tag=SEAboss4,scores={rng9=12}] at @s run scoreboard players set @s rng9 0
 
-execute as @n[tag=SEAboss4] at @s run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
+execute as @n[tag=SEAboss4,nbt={OnGround:1b}] at @s run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
 
 
 
