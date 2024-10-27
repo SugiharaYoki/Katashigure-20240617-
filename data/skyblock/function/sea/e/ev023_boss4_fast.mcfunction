@@ -80,15 +80,15 @@ execute as @n[tag=SEAboss4,scores={rng8=2..},tag=SEAboss4_attack_dash] at @s if 
 execute as @n[tag=SEAboss4,scores={rng8=2..},tag=SEAboss4_attack_dash] at @s as @a[tag=SEAPT,distance=0..1.1] at @s run damage @s 6 generic
 execute as @n[tag=SEAboss4,scores={rng8=2..},tag=SEAboss4_attack_dash] at @s if entity @a[tag=SEAPT,distance=0..1.1] run scoreboard players set @s rng8 0
 execute as @n[tag=SEAboss4,scores={rng8=5},tag=SEAboss4_attack_dash] at @s run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
-execute as @n[tag=SEAboss4,scores={rng8=5},tag=SEAboss4_attack_dash] at @s positioned 0.0 0 0.0 run summon marker ^ ^0.12 ^2 {Tags:["SEA_boss4_marker"]}
+execute as @n[tag=SEAboss4,scores={rng8=5},tag=SEAboss4_attack_dash] at @s positioned 0.0 0 0.0 run summon marker ^ ^0.12 ^1.4 {Tags:["SEA_boss4_marker"]}
 execute as @n[tag=SEAboss4,scores={rng8=5},tag=SEAboss4_attack_dash] at @s run data modify entity @n[tag=SEAboss4_attack_dash] Motion set from entity @n[type=marker,tag=SEA_boss4_marker] Pos
 execute as @n[tag=SEAboss4,scores={rng8=5},tag=SEAboss4_attack_dash] at @s run kill @e[type=marker,tag=SEA_boss4_marker]
 execute as @n[tag=SEAboss4,scores={rng8=16},tag=SEAboss4_attack_dash] at @s run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
-execute as @n[tag=SEAboss4,scores={rng8=16},tag=SEAboss4_attack_dash] at @s positioned 0.0 0 0.0 run summon marker ^ ^0.12 ^2 {Tags:["SEA_boss4_marker"]}
+execute as @n[tag=SEAboss4,scores={rng8=16},tag=SEAboss4_attack_dash] at @s positioned 0.0 0 0.0 run summon marker ^ ^0.12 ^1.4 {Tags:["SEA_boss4_marker"]}
 execute as @n[tag=SEAboss4,scores={rng8=16},tag=SEAboss4_attack_dash] at @s run data modify entity @n[tag=SEAboss4_attack_dash] Motion set from entity @n[type=marker,tag=SEA_boss4_marker] Pos
 execute as @n[tag=SEAboss4,scores={rng8=16},tag=SEAboss4_attack_dash] at @s run kill @e[type=marker,tag=SEA_boss4_marker]
 execute as @n[tag=SEAboss4,scores={rng8=27},tag=SEAboss4_attack_dash] at @s run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
-execute as @n[tag=SEAboss4,scores={rng8=27},tag=SEAboss4_attack_dash] at @s positioned 0.0 0 0.0 run summon marker ^ ^0.12 ^2 {Tags:["SEA_boss4_marker"]}
+execute as @n[tag=SEAboss4,scores={rng8=27},tag=SEAboss4_attack_dash] at @s positioned 0.0 0 0.0 run summon marker ^ ^0.12 ^1.4 {Tags:["SEA_boss4_marker"]}
 execute as @n[tag=SEAboss4,scores={rng8=27},tag=SEAboss4_attack_dash] at @s run data modify entity @n[tag=SEAboss4_attack_dash] Motion set from entity @n[type=marker,tag=SEA_boss4_marker] Pos
 execute as @n[tag=SEAboss4,scores={rng8=27},tag=SEAboss4_attack_dash] at @s run kill @e[type=marker,tag=SEA_boss4_marker]
 execute as @n[tag=SEAboss4,scores={rng8=36},tag=SEAboss4_attack_dash] at @s run scoreboard players set @s rng8 0
