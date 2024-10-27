@@ -394,7 +394,8 @@ fill 90197 20 131 90197 20 129 minecraft:crimson_button[facing=west,face=floor]
 
 fill 90184 59 84 90185 57 84 iron_block
 
-
+setblock 90182 71 74 minecraft:waxed_copper_bulb[lit=false]
+setblock 90187 71 74 minecraft:waxed_copper_bulb[lit=false]
 
 #最终大厅 第七章入口
 setblock 90154 18 134 minecraft:waxed_copper_bulb[lit=false]

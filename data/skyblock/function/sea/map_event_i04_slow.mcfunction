@@ -397,7 +397,8 @@ execute as @n[tag=SEAch4_spawn_timer_ecosystem] at @s run function skyblock:sea/
 
 particle minecraft:dripping_water 90204.61 50.00 90.51 1 0 1 0 20
 
-
+execute positioned 90184 56 48 if entity @a[tag=SEAPT,distance=..4.6] unless entity @n[tag=SEAch4_spawn_timer_boss4,distance=0..3] run summon marker ~ ~ ~ {Tags:["SEAch4_spawn_timer","SEAch4_spawn_timer_boss4"]}
+execute as @n[tag=SEAch4_spawn_timer_boss4] at @s run function skyblock:sea/e/ev023_boss4
 
 
 
