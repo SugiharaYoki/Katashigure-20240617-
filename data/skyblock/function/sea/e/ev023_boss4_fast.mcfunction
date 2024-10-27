@@ -19,9 +19,9 @@ execute as @s[scores={sea_4temp1=1}] as @a[tag=SEAPT] at @s run playsound minecr
 execute as @s[scores={sea_4temp1=1}] as @p[tag=SEAPT] at @s as @a[gamemode=spectator,distance=0..250] run playsound minecraft:app2.astrum music @s ~ ~ ~ 10 1
 
 
-execute as @s[scores={sea_4temp1=1}] run bossbar add 9066601 "无我唯生 皆数为灭 - 艾德雯娜 · 塔尔索"
+execute as @s[scores={sea_4temp1=1}] run bossbar add 9066601 "无我唯生 皆数为存 - 艾德雯娜 · 塔尔索"
 execute as @s[scores={sea_4temp1=1}] run bossbar set minecraft:9066601 color red
-execute as @s[scores={sea_4temp1=1}] run bossbar set minecraft:9066601 name "无我唯生 皆数为灭 - 艾德雯娜 · 塔尔索"
+execute as @s[scores={sea_4temp1=1}] run bossbar set minecraft:9066601 name "无我唯生 皆数为存 - 艾德雯娜 · 塔尔索"
 execute as @s[scores={sea_4temp1=1}] run bossbar set minecraft:9066601 players @a[tag=SEAPT]
 execute as @s[scores={sea_4temp1=1}] run bossbar set minecraft:9066601 style progress
 execute as @s[scores={sea_4temp1=1}] run bossbar set minecraft:9066601 max 100
