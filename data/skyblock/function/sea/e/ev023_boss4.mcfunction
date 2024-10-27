@@ -10,10 +10,13 @@ execute as @s[scores={sea_4temp1=51}] run tellraw @a[tag=SEAPT] {"text": "陌生
 execute as @s[scores={sea_4temp1=51}] positioned 90185.00 69.00 73.03 run function skyblock:sea/m/boss4
 execute as @s[scores={sea_4temp1=51..200}] as @n[tag=SEAboss4] at @s run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
 
+execute as @s[scores={sea_4temp1=49..55}] positioned 90185.00 69.00 73.03 run playsound ambient.cave ambient @a ~ ~ ~ 3 0.6
 
 execute as @s[scores={sea_4temp1=52}] run setblock 90182 71 74 minecraft:waxed_copper_bulb[lit=true]
 execute as @s[scores={sea_4temp1=52}] run setblock 90187 71 74 minecraft:waxed_copper_bulb[lit=true]
 
+execute as @s[scores={sea_4temp1=74}] as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
+execute as @s[scores={sea_4temp1=74}] run tellraw @a[tag=SEAPT] {"text": "陌生的女声：“明明再过三小时，这里的一切就会灰飞烟灭。我不会让你将你的所见所闻带出去。”","color": "green"}
 
 
 
