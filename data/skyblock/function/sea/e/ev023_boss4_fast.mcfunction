@@ -2,7 +2,7 @@ execute store result score @n[tag=SEAboss4] rng1 run random value 1..5
 execute store result score @n[tag=SEAboss4] rng3 run random value 1..3
 execute store result score @n[tag=SEAboss4] rng4 run random value 1..3
 
-execute as @n[tag=SEAboss4,nbt=!{HurtTime:0s},scores={rng9=0,rng4=1}] at @s run scoreboard players add @s rng9 1
+execute as @n[tag=SEAboss4,nbt=!{HurtTime:0s},scores={rng9=0,rng4=1},tag=!SEAboss4_attack] at @s run scoreboard players add @s rng9 1
 execute as @n[tag=SEAboss4,scores={rng9=1..}] at @s run scoreboard players add @s rng9 1
 execute as @n[tag=SEAboss4,scores={rng9=3,rng1=1}] at @s run summon marker ~ ~ ~ {Tags:["SEAedwina_smoke"]}
 execute as @n[tag=SEAboss4,scores={rng9=3,rng1=2}] at @s run function skyblock:sea/m/mine
@@ -11,6 +11,8 @@ execute as @n[tag=SEAboss4,scores={rng9=9,rng3=2}] at @s run tp @s @n[tag=SEAbos
 execute as @n[tag=SEAboss4,scores={rng9=9,rng3=3}] at @s run tp @s @n[tag=SEAboss4_tp,distance=13..]
 execute as @n[tag=SEAboss4,scores={rng9=9}] at @s run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
 execute as @n[tag=SEAboss4,scores={rng9=9}] at @s run data modify entity @s HurtTime set value 0s
+execute as @n[tag=SEAboss4,scores={rng9=9}] at @s run scoreboard players set @s rng8 1
+execute as @n[tag=SEAboss4,scores={rng9=9}] at @s run tag @s add SEAboss4_attack
 execute as @n[tag=SEAboss4,scores={rng9=9}] at @s run scoreboard players set @s rng9 0
 
 execute as @n[tag=SEAboss4] at @s run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
@@ -43,6 +45,8 @@ execute if entity @n[tag=SEAboss4,scores={health=..70,rng2=..10}] run effect giv
 execute if entity @n[tag=SEAboss4,scores={health=..40,rng2=..10}] run effect give @s resistance 3 3 true
 
 execute as @n[tag=SEAboss4,scores={rng8=0}] at @s run tag @s remove SEAboss4_eat
+execute as @n[tag=SEAboss4,scores={rng8=0}] at @s run tag @s remove SEAboss4_attack
+execute as @n[tag=SEAboss4,scores={health=..80,rng2=..10,rng1=1,rng8=..0}] run tag @s remove SEAboss4_attack
 execute as @n[tag=SEAboss4,scores={health=..80,rng2=..10,rng1=1,rng8=..0}] run tag @s add SEAboss4_eat
 execute as @n[tag=SEAboss4,scores={health=..80,rng2=..10,rng1=1,rng8=..0}] run scoreboard players add @s rng8 1
 
@@ -65,10 +69,24 @@ execute as @n[tag=SEAboss4,scores={rng8=28},tag=SEAboss4_eat] at @s run scoreboa
 execute as @n[tag=SEAboss4,scores={rng8=27},tag=SEAboss4_eat] at @s run effect give @s instant_health 1 4 true
 execute as @n[tag=SEAboss4,scores={rng8=30..},tag=SEAboss4_eat] at @s run scoreboard players set @s rng8 0
 
-
-
-
-
-
+execute store result score @n[tag=SEAboss4] rng5 run random value 1..4
+execute as @n[tag=SEAboss4,scores={rng8=2,rng5=1},tag=SEAboss4_attack] at @s run tag @s add SEAboss4_attack_dash
+execute as @n[tag=SEAboss4,scores={rng8=2..},tag=SEAboss4_attack_dash] at @s if entity @a[tag=SEAPT,distance=0..1.1] run playsound entity.player.attack.sweep hostile @a ~ ~ ~ 1 1.1
+execute as @n[tag=SEAboss4,scores={rng8=2..},tag=SEAboss4_attack_dash] at @s if entity @a[tag=SEAPT,distance=0..1.1] rotated ~ 0 run particle sweep_attack ^ ^1.2 ^1.1 0.2 0 0.2 0 1
+execute as @n[tag=SEAboss4,scores={rng8=2..},tag=SEAboss4_attack_dash] at @s as @a[tag=SEAPT,distance=0..1.1] at @s run damage @s 7 generic
+execute as @n[tag=SEAboss4,scores={rng8=2..},tag=SEAboss4_attack_dash] at @s if entity @a[tag=SEAPT,distance=0..1.1] run scoreboard players set @s rng8 0
+execute as @n[tag=SEAboss4,scores={rng8=2},tag=SEAboss4_attack_dash] at @s run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
+execute as @n[tag=SEAboss4,scores={rng8=2},tag=SEAboss4_attack_dash] at @s positioned 0.0 0 0.0 run summon marker ^ ^0.1 ^1 {Tags:["SEA_boss4_marker"]}
+execute as @n[tag=SEAboss4,scores={rng8=2},tag=SEAboss4_attack_dash] at @s run data modify entity @n[tag=SEAboss4_attack_dash] Motion set from entity @n[type=marker,tag=SEA_boss4_marker] Pos
+execute as @n[tag=SEAboss4,scores={rng8=2},tag=SEAboss4_attack_dash] at @s run kill @e[type=marker,tag=SEA_boss4_marker]
+execute as @n[tag=SEAboss4,scores={rng8=7},tag=SEAboss4_attack_dash] at @s run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
+execute as @n[tag=SEAboss4,scores={rng8=7},tag=SEAboss4_attack_dash] at @s positioned 0.0 0 0.0 run summon marker ^ ^0.1 ^1 {Tags:["SEA_boss4_marker"]}
+execute as @n[tag=SEAboss4,scores={rng8=7},tag=SEAboss4_attack_dash] at @s run data modify entity @n[tag=SEAboss4_attack_dash] Motion set from entity @n[type=marker,tag=SEA_boss4_marker] Pos
+execute as @n[tag=SEAboss4,scores={rng8=7},tag=SEAboss4_attack_dash] at @s run kill @e[type=marker,tag=SEA_boss4_marker]
+execute as @n[tag=SEAboss4,scores={rng8=11},tag=SEAboss4_attack_dash] at @s run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
+execute as @n[tag=SEAboss4,scores={rng8=11},tag=SEAboss4_attack_dash] at @s positioned 0.0 0 0.0 run summon marker ^ ^0.1 ^1 {Tags:["SEA_boss4_marker"]}
+execute as @n[tag=SEAboss4,scores={rng8=11},tag=SEAboss4_attack_dash] at @s run data modify entity @n[tag=SEAboss4_attack_dash] Motion set from entity @n[type=marker,tag=SEA_boss4_marker] Pos
+execute as @n[tag=SEAboss4,scores={rng8=11},tag=SEAboss4_attack_dash] at @s run kill @e[type=marker,tag=SEA_boss4_marker]
+execute as @n[tag=SEAboss4,scores={rng8=13},tag=SEAboss4_attack_dash] at @s run scoreboard players set @s rng8 0
 
 
