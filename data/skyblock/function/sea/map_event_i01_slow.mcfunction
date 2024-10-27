@@ -367,9 +367,9 @@ execute if score sc sea_speedrun_ch1 matches 1921.. as @n[tag=sc,scores={sea_4te
 execute if score sc sea_speedrun_ch1 matches ..1920 as @n[tag=sc,scores={sea_4temp2=3001..3950}] if entity @a[tag=SEAPT,x=90085,y=122,z=104,distance=0..4,tag=!SEAPF] run scoreboard players set @n[tag=sc] sea_4temp2 6000
 execute as @n[tag=sc,scores={sea_4temp2=4000..5000}] run scoreboard players add @n[tag=sc] sea_4temp2 1
 execute as @n[tag=sc,scores={sea_4temp2=4800..4810}] run scoreboard players set @n[tag=sc] sea_4temp2 4800
-execute as @n[tag=sc,scores={sea_4temp2=4001}] run bossbar add 9066601 "圣献的医者 - 法莫洛斯"
+execute as @n[tag=sc,scores={sea_4temp2=4001}] run bossbar add 9066601 "圣献的医者 - 狄奥斐卢斯 · 法莫洛斯"
 execute as @n[tag=sc,scores={sea_4temp2=4001}] run bossbar set minecraft:9066601 color red
-execute as @n[tag=sc,scores={sea_4temp2=4001}] run bossbar set minecraft:9066601 name "圣献的医者 - 法莫洛斯"
+execute as @n[tag=sc,scores={sea_4temp2=4001}] run bossbar set minecraft:9066601 name "圣献的医者 - 狄奥斐卢斯 · 法莫洛斯"
 execute as @n[tag=sc,scores={sea_4temp2=4001}] run bossbar set minecraft:9066601 players @a[tag=SEAPT]
 execute as @n[tag=sc,scores={sea_4temp2=4001}] run bossbar set minecraft:9066601 style progress
 execute as @n[tag=sc,scores={sea_4temp2=4001}] run bossbar set minecraft:9066601 max 600

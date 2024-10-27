@@ -53,9 +53,9 @@ execute if entity @n[tag=sc,scores={sea_4temp2=2113..3999}] as @s[scores={sea_bo
 execute if entity @n[tag=sc,scores={sea_4temp2=2113..3999}] as @s[scores={sea_boss1_hp=..35},tag=SEAboss2bow] at @s run tag @s add SEAboss2melee
 execute if entity @n[tag=sc,scores={sea_4temp2=2113..3999}] as @s[scores={sea_boss1_hp=..35},tag=SEAboss2bow] at @s run tag @s remove SEAboss2bow
 
-bossbar add 9066601 "荣获深邃祝福的骸骨 - 德怀特"
+bossbar add 9066601 "荣获深邃祝福的骸骨 - 迈克斯 · 德怀特"
 bossbar set minecraft:9066601 color red
-bossbar set minecraft:9066601 name "荣获深邃祝福的骸骨 - 德怀特"
+bossbar set minecraft:9066601 name "荣获深邃祝福的骸骨 - 迈克斯 · 德怀特"
 bossbar set minecraft:9066601 players @a[tag=SEAPT]
 bossbar set minecraft:9066601 style progress
 bossbar set minecraft:9066601 max 500
