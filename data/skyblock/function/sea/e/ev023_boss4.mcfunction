@@ -18,7 +18,7 @@ execute as @s[scores={sea_4temp1=52}] run setblock 90187 71 74 minecraft:waxed_c
 execute as @s[scores={sea_4temp1=74}] as @n[tag=SEAboss4] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
 execute as @s[scores={sea_4temp1=74}] run tellraw @a[tag=SEAPT] {"text": "陌生的女声：“明明再过三小时，这里的一切就会灰飞烟灭。我不会让你将你的所见所闻带出去。”","color": "green"}
 
-execute as @s[scores={sea_4temp1=56}] run data modify entity @n[tag=SEAboss4] NoAI set value 0b
+execute as @s[scores={sea_4temp1=75}] run data modify entity @n[tag=SEAboss4] NoAI set value 0b
 execute as @s[scores={sea_4temp1=76}] run data modify entity @n[tag=SEAboss4] Motion set value [0.0,0.0,-1.0]
 #execute as @s[scores={sea_4temp1=76}] run effect give @s slow_falling 3 0 false
 
