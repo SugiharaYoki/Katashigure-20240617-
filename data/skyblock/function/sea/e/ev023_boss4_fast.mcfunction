@@ -1,6 +1,7 @@
 execute store result score @n[tag=SEAboss4] rng1 run random value 1..5
 execute store result score @n[tag=SEAboss4] rng3 run random value 1..3
 execute store result score @n[tag=SEAboss4] rng4 run random value 1..3
+execute store result score @n[tag=SEAboss4] rng6 run random value 1..60
 execute as @s[scores={sea_4temp1=1}] run data modify entity @n[tag=SEAboss4] NoAI set value false
 
 execute as @n[tag=SEAboss4,nbt=!{HurtTime:0s},scores={rng9=0,rng4=1},tag=!SEAboss4_attack] at @s run scoreboard players add @s rng9 1
@@ -12,14 +13,18 @@ execute as @n[tag=SEAboss4,scores={rng9=9,rng3=2}] at @s run tp @s @n[tag=SEAbos
 execute as @n[tag=SEAboss4,scores={rng9=9,rng3=3}] at @s run tp @s @n[tag=SEAboss4_tp,distance=13..]
 execute as @n[tag=SEAboss4,scores={rng9=9..11}] at @s run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
 execute as @n[tag=SEAboss4,scores={rng9=12}] at @s run data modify entity @s HurtTime set value 0s
-execute as @n[tag=SEAboss4,scores={rng9=12}] at @s run scoreboard players set @s rng8 1
-execute as @n[tag=SEAboss4,scores={rng9=12}] at @s run tag @s add SEAboss4_attack
 execute as @n[tag=SEAboss4,scores={rng9=12}] at @s run scoreboard players set @s rng9 0
 
 execute as @n[tag=SEAboss4,nbt={OnGround:1b},tag=!SEAboss4_attack_dashheavy,tag=!SEAboss4_eat] at @s run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
 
 
 
+execute as @n[tag=SEAboss4,scores={rng2=0..3,rng6=1,rng8=..0,rng9=..0}] at @s run scoreboard players set @s rng8 1
+execute as @n[tag=SEAboss4,scores={rng2=0..3,rng6=1,rng8=..0,rng9=..0}] at @s run tag @s add SEAboss4_attack
+execute as @n[tag=SEAboss4,scores={rng2=4..7,rng6=1..2,rng8=..0,rng9=..0}] at @s run scoreboard players set @s rng8 1
+execute as @n[tag=SEAboss4,scores={rng2=4..7,rng6=1..2,rng8=..0,rng9=..0}] at @s run tag @s add SEAboss4_attack
+execute as @n[tag=SEAboss4,scores={rng2=8..,rng6=1..5,rng8=..0,rng9=..0}] at @s run scoreboard players set @s rng8 1
+execute as @n[tag=SEAboss4,scores={rng2=8..,rng6=1..5,rng8=..0,rng9=..0}] at @s run tag @s add SEAboss4_attack
 
 execute as @s[scores={sea_4temp1=1}] run bossbar add 9066601 "无我唯生 皆数为存 - 艾德雯娜 · 塔尔索"
 execute as @s[scores={sea_4temp1=1}] run bossbar set minecraft:9066601 color red
