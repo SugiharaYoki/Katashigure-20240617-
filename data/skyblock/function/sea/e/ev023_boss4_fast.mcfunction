@@ -19,12 +19,12 @@ execute as @n[tag=SEAboss4,nbt={OnGround:1b},tag=!SEAboss4_attack_dashheavy,tag=
 
 
 
-execute as @n[tag=SEAboss4,scores={rng2=0..3,rng6=1,rng8=..0,rng9=..0}] at @s run scoreboard players set @s rng8 1
-execute as @n[tag=SEAboss4,scores={rng2=0..3,rng6=1,rng8=..0,rng9=..0}] at @s run tag @s add SEAboss4_attack
-execute as @n[tag=SEAboss4,scores={rng2=4..7,rng6=1..2,rng8=..0,rng9=..0}] at @s run scoreboard players set @s rng8 1
-execute as @n[tag=SEAboss4,scores={rng2=4..7,rng6=1..2,rng8=..0,rng9=..0}] at @s run tag @s add SEAboss4_attack
-execute as @n[tag=SEAboss4,scores={rng2=8..,rng6=1..5,rng8=..0,rng9=..0}] at @s run scoreboard players set @s rng8 1
-execute as @n[tag=SEAboss4,scores={rng2=8..,rng6=1..5,rng8=..0,rng9=..0}] at @s run tag @s add SEAboss4_attack
+execute as @n[tag=SEAboss4,scores={rng2=0..3,rng6=1..3,rng8=..0,rng9=..0}] at @s run scoreboard players set @s rng8 1
+execute as @n[tag=SEAboss4,scores={rng2=0..3,rng6=1..3,rng8=..0,rng9=..0}] at @s run tag @s add SEAboss4_attack
+execute as @n[tag=SEAboss4,scores={rng2=4..7,rng6=1..6,rng8=..0,rng9=..0}] at @s run scoreboard players set @s rng8 1
+execute as @n[tag=SEAboss4,scores={rng2=4..7,rng6=1..6,rng8=..0,rng9=..0}] at @s run tag @s add SEAboss4_attack
+execute as @n[tag=SEAboss4,scores={rng2=8..,rng6=1..12,rng8=..0,rng9=..0}] at @s run scoreboard players set @s rng8 1
+execute as @n[tag=SEAboss4,scores={rng2=8..,rng6=1..12,rng8=..0,rng9=..0}] at @s run tag @s add SEAboss4_attack
 
 execute as @s[scores={sea_4temp1=1}] run bossbar add 9066601 "无我唯生 皆数为存 - 艾德雯娜 · 塔尔索"
 execute as @s[scores={sea_4temp1=1}] run bossbar set minecraft:9066601 color red
