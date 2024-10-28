@@ -12,7 +12,7 @@ execute as @n[tag=SEAboss4,scores={rng9=9,rng3=1}] at @s run tp @s @n[tag=SEAbos
 execute as @n[tag=SEAboss4,scores={rng9=9,rng3=2}] at @s run tp @s @n[tag=SEAboss4_tp,distance=3..]
 execute as @n[tag=SEAboss4,scores={rng9=9,rng3=3}] at @s run tp @s @n[tag=SEAboss4_tp,distance=13..]
 execute as @n[tag=SEAboss4,scores={rng9=9..11}] at @s run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
-execute as @n[tag=SEAboss4,scores={rng9=12}] at @s run data modify entity @s HurtTime set value 0s
+execute as @n[tag=SEAboss4] at @s run data modify entity @s HurtTime set value 0s
 execute as @n[tag=SEAboss4,scores={rng9=12}] at @s run scoreboard players set @s rng9 0
 
 execute as @n[tag=SEAboss4,nbt={OnGround:1b},tag=!SEAboss4_attack_dashheavy,tag=!SEAboss4_eat] at @s run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
@@ -119,11 +119,14 @@ execute as @n[tag=SEAboss4,scores={rng8=25},tag=SEAboss4_attack_drone] at @s if 
 execute as @n[tag=SEAboss4,scores={rng8=26..27,rng4=1},tag=SEAboss4_attack_drone] at @s rotated ~ 0 positioned ^ ^ ^1.5 if block ~ ~ ~ air run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
 execute as @n[tag=SEAboss4,scores={rng8=26..27,rng4=2},tag=SEAboss4_attack_drone] at @s rotated ~ 0 positioned ^1 ^ ^0.9 if block ~ ~ ~ air run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
 execute as @n[tag=SEAboss4,scores={rng8=26..27,rng4=3},tag=SEAboss4_attack_drone] at @s rotated ~ 0 positioned ^-1 ^ ^0.9 if block ~ ~ ~ air run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
+execute as @n[tag=SEAboss4,scores={rng8=36..37,rng4=1},tag=SEAboss4_attack_drone] at @s rotated ~ 0 positioned ^ ^ ^1.5 if block ~ ~ ~ air run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
+execute as @n[tag=SEAboss4,scores={rng8=36..37,rng4=2},tag=SEAboss4_attack_drone] at @s rotated ~ 0 positioned ^1 ^ ^0.9 if block ~ ~ ~ air run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
+execute as @n[tag=SEAboss4,scores={rng8=36..37,rng4=3},tag=SEAboss4_attack_drone] at @s rotated ~ 0 positioned ^-1 ^ ^0.9 if block ~ ~ ~ air run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
 
-execute as @n[tag=SEAboss4,scores={rng8=48,rng4=1..2},tag=SEAboss4_attack_drone] run scoreboard players set @s rng8 0
+#execute as @n[tag=SEAboss4,scores={rng8=48,rng4=1..2},tag=SEAboss4_attack_drone] run scoreboard players set @s rng8 0
 
-execute as @n[tag=SEAboss4,scores={rng8=48,rng4=3},tag=SEAboss4_attack_drone] run tag @s add SEAboss4_attack_dash
-execute as @n[tag=SEAboss4,scores={rng8=48,rng4=3},tag=SEAboss4_attack_drone] run scoreboard players set @s rng8 1
+execute as @n[tag=SEAboss4,scores={rng8=48,rng4=1..3},tag=SEAboss4_attack_drone] run tag @s add SEAboss4_attack_dash
+execute as @n[tag=SEAboss4,scores={rng8=48,rng4=1..3},tag=SEAboss4_attack_drone] run scoreboard players set @s rng8 1
 execute as @n[tag=SEAboss4,scores={rng8=53..},tag=SEAboss4_attack_drone] run scoreboard players set @s rng8 0
 
 
