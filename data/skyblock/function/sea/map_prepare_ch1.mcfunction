@@ -20,6 +20,7 @@ scoreboard objectives add sea_4temp8 dummy
 scoreboard objectives add sea_4temp9 dummy
 scoreboard objectives add sea_4temp10 dummy
 scoreboard objectives add SEA_if_spying minecraft.used:minecraft.spyglass
+scoreboard objectives add SEA_sneaking_time dummy
 scoreboard objectives add sea_4temp_environment dummy
 scoreboard players set sea sea_4temp_environment 1
 scoreboard objectives add sea_static minecraft.used:minecraft.snowball

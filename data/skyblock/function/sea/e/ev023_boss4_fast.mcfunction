@@ -4,6 +4,12 @@ execute store result score @n[tag=SEAboss4] rng4 run random value 1..3
 execute store result score @n[tag=SEAboss4] rng6 run random value 1..10
 execute as @s[scores={sea_4temp1=1}] run data modify entity @n[tag=SEAboss4] NoAI set value false
 
+execute as @a[tag=SEAPT,predicate=skyblock:sneaking] at @s run scoreboard players add @s SEA_sneaking_time 1
+execute as @a[tag=SEAPT,predicate=!skyblock:sneaking] at @s run scoreboard players set @s SEA_sneaking_time 0
+
+execute as @a[tag=SEAPT] at @s run tag @s remove SEAboss4_sneaked
+execute as @a[tag=SEAPT,scores={SEA_sneaking_time=1..10}] at @s run tag @s add SEAboss4_sneaked
+
 execute as @n[tag=SEAboss4,scores={rng9=0}] at @s if block ~ ~-1 ~ water run scoreboard players add @s rng9 1
 execute as @n[tag=SEAboss4,scores={rng9=3}] at @s if block ~ ~-1 ~ water run summon marker ~ ~ ~ {Tags:["SEAedwina_smoke"]}
 
@@ -97,7 +103,7 @@ execute as @n[tag=SEAboss4,scores={rng8=2},tag=SEAboss4_attack_dash] at @s run p
 execute as @n[tag=SEAboss4,scores={rng8=2},tag=SEAboss4_attack_dash] at @s run tellraw @a[tag=SEAPT] [{"text": "艾德雯娜","color": "red"},{"text": "举起消防斧。","color": "yellow"}]
 execute as @n[tag=SEAboss4,scores={rng8=16..29},tag=SEAboss4_attack_dash] at @s if entity @a[tag=SEAPT,distance=0..1.1] run playsound entity.player.attack.sweep hostile @a ~ ~ ~ 1 1.1
 execute as @n[tag=SEAboss4,scores={rng8=16..29},tag=SEAboss4_attack_dash] at @s if entity @a[tag=SEAPT,distance=0..1.1] rotated ~ 0 run particle sweep_attack ^ ^1.2 ^1.1 0.2 0 0.2 0 2
-execute as @n[tag=SEAboss4,scores={rng8=16..29},tag=SEAboss4_attack_dash] at @s as @a[tag=SEAPT,distance=0..1.1] at @s run damage @s 6 generic
+execute as @n[tag=SEAboss4,scores={rng8=16..29},tag=SEAboss4_attack_dash] at @s as @a[tag=SEAPT,distance=0..1.1,tag=!SEAboss4_sneaked] at @s run damage @s 6 generic
 execute as @n[tag=SEAboss4,scores={rng8=16..29},tag=SEAboss4_attack_dash] at @s if entity @a[tag=SEAPT,distance=0..1.1] run scoreboard players set @s rng8 0
 execute as @n[tag=SEAboss4,scores={rng8=3},tag=SEAboss4_attack_dash] at @s run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
 execute as @n[tag=SEAboss4,scores={rng8=5},tag=SEAboss4_attack_dash] at @s positioned 0.0 0 0.0 run summon marker ^ ^0.12 ^1.4 {Tags:["SEA_boss4_marker"]}
