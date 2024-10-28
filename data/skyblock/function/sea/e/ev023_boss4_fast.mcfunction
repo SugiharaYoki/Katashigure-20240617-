@@ -90,6 +90,7 @@ execute as @n[tag=SEAboss4,scores={rng8=30..},tag=SEAboss4_eat] at @s run scoreb
 
 execute store result score @n[tag=SEAboss4] rng5 run random value 1..3
 execute as @n[tag=SEAboss4,scores={rng8=2,rng5=1},tag=SEAboss4_attack] at @s run tag @s add SEAboss4_attack_dash
+execute as @n[tag=SEAboss4,scores={rng8=2},tag=SEAboss4_attack_dash] at @s run particle flame ~ ~1 ~ 0.5 0 0.5 0 10
 execute as @n[tag=SEAboss4,scores={rng8=2},tag=SEAboss4_attack_dash] at @s run tellraw @a[tag=SEAPT] [{"text": "艾德雯娜","color": "red"},{"text": "举起消防斧。","color": "yellow"}]
 execute as @n[tag=SEAboss4,scores={rng8=2..},tag=SEAboss4_attack_dash] at @s if entity @a[tag=SEAPT,distance=0..1.1] run playsound entity.player.attack.sweep hostile @a ~ ~ ~ 1 1.1
 execute as @n[tag=SEAboss4,scores={rng8=2..},tag=SEAboss4_attack_dash] at @s if entity @a[tag=SEAPT,distance=0..1.1] rotated ~ 0 run particle sweep_attack ^ ^1.2 ^1.1 0.2 0 0.2 0 2
@@ -143,6 +144,7 @@ execute as @n[tag=SEAboss4,scores={rng8=53..},tag=SEAboss4_attack_drone] run sco
 
 
 execute as @n[tag=SEAboss4,scores={rng8=2,rng5=3},tag=SEAboss4_attack] at @s run tag @s add SEAboss4_attack_dashheavy
+execute as @n[tag=SEAboss4,scores={rng8=2},tag=SEAboss4_attack_dashheavy] at @s run particle flame ~ ~1 ~ 0.5 0 0.5 0 10
 execute as @n[tag=SEAboss4,scores={rng8=2},tag=SEAboss4_attack_dashheavy] at @s run tellraw @a[tag=SEAPT] [{"text": "艾德雯娜","color": "red"},{"text": "举起消防斧。","color": "yellow"}]
 execute as @n[tag=SEAboss4,scores={rng8=4},tag=SEAboss4_attack_dashheavy] at @s run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
 execute as @n[tag=SEAboss4,scores={rng8=4},tag=SEAboss4_attack_dashheavy] at @s positioned 0.0 0 0.0 run summon marker ^ ^0.12 ^2.3 {Tags:["SEA_boss4_marker"]}
