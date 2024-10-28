@@ -135,7 +135,7 @@ execute as @n[tag=SEAboss4,scores={rng8=4},tag=SEAboss4_attack_dashheavy] at @s 
 execute as @n[tag=SEAboss4,scores={rng8=4},tag=SEAboss4_attack_dashheavy] at @s run data modify entity @n[tag=SEAboss4_attack_dashheavy] Motion set from entity @n[type=marker,tag=SEA_boss4_marker] Pos
 execute as @n[tag=SEAboss4,scores={rng8=4},tag=SEAboss4_attack_dashheavy] at @s run kill @e[type=marker,tag=SEA_boss4_marker]
 execute as @n[tag=SEAboss4,scores={rng8=20..36},tag=SEAboss4_attack_dashheavy] at @s rotated ~ 0 run particle minecraft:angry_villager ^ ^0 ^0 2.3 0 2.3 0 3
-execute as @n[tag=SEAboss4,scores={rng8=38},tag=SEAboss4_attack_dashheavy] at @s rotated ~ 0 run data modify entity @n[tag=SEAboss4_attack_dashheavy] Motion set value [0.0d,1.2d,0.0d]
+execute as @n[tag=SEAboss4,scores={rng8=38},tag=SEAboss4_attack_dashheavy] at @s rotated ~ 0 run data modify entity @n[tag=SEAboss4_attack_dashheavy] Motion set value [0.0d,0.6d,0.0d]
 execute as @n[tag=SEAboss4,scores={rng8=40..},tag=SEAboss4_attack_dashheavy,nbt={OnGround:1b}] at @s run playsound item.mace.smash_ground_heavy hostile @a ~ ~ ~ 1.2 1.2
 execute as @n[tag=SEAboss4,scores={rng8=40..},tag=SEAboss4_attack_dashheavy,nbt={OnGround:1b}] at @s run playsound entity.player.attack.sweep hostile @a ~ ~ ~ 1.2 0.9
 execute as @n[tag=SEAboss4,scores={rng8=40..},tag=SEAboss4_attack_dashheavy,nbt={OnGround:1b}] at @s rotated ~ 0 run particle sweep_attack ^ ^1.2 ^0 2.3 0 2.3 0 8
