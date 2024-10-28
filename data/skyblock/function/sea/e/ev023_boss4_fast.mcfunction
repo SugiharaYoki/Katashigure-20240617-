@@ -4,13 +4,16 @@ execute store result score @n[tag=SEAboss4] rng4 run random value 1..3
 execute store result score @n[tag=SEAboss4] rng6 run random value 1..10
 execute as @s[scores={sea_4temp1=1}] run data modify entity @n[tag=SEAboss4] NoAI set value false
 
+execute as @n[tag=SEAboss4,scores={rng9=0}] at @s if block ~ ~-1 ~ water run scoreboard players add @s rng9 1
+execute as @n[tag=SEAboss4,scores={rng9=3}] at @s if block ~ ~-1 ~ water run summon marker ~ ~ ~ {Tags:["SEAedwina_smoke"]}
+
 execute as @n[tag=SEAboss4,nbt=!{HurtTime:0s},scores={rng9=0,rng4=1},tag=!SEAboss4_attack] at @s run scoreboard players add @s rng9 1
 execute as @n[tag=SEAboss4,scores={rng9=1..}] at @s run scoreboard players add @s rng9 1
 execute as @n[tag=SEAboss4,scores={rng9=3,rng6=1..3}] at @s run summon marker ~ ~ ~ {Tags:["SEAedwina_smoke"]}
 execute as @n[tag=SEAboss4,scores={rng9=3,rng1=1,rng6=4..10}] at @s run function skyblock:sea/m/mine
-execute as @n[tag=SEAboss4,scores={rng9=9,rng3=1,rng6=1..3}] at @s run tp @s @n[tag=SEAboss4_tp,distance=8..]
-execute as @n[tag=SEAboss4,scores={rng9=9,rng3=2,rng6=1..3}] at @s run tp @s @n[tag=SEAboss4_tp,distance=3..]
-execute as @n[tag=SEAboss4,scores={rng9=9,rng3=3,rng6=1..3}] at @s run tp @s @n[tag=SEAboss4_tp,distance=13..]
+execute as @n[tag=SEAboss4,scores={rng9=9,rng3=1}] at @s if entity @n[tag=SEAedwina_smoke,distance=0..2.8] run tp @s @n[tag=SEAboss4_tp,distance=8..]
+execute as @n[tag=SEAboss4,scores={rng9=9,rng3=2}] at @s if entity @n[tag=SEAedwina_smoke,distance=0..2.8] run tp @s @n[tag=SEAboss4_tp,distance=3..]
+execute as @n[tag=SEAboss4,scores={rng9=9,rng3=3}] at @s if entity @n[tag=SEAedwina_smoke,distance=0..2.8] run tp @s @n[tag=SEAboss4_tp,distance=1..]
 execute as @n[tag=SEAboss4,scores={rng9=9,rng3=1,rng6=4..10}] at @s positioned 0.0 0 0.0 run summon marker ^ ^0.12 ^-0.5 {Tags:["SEA_boss4_marker"]}
 execute as @n[tag=SEAboss4,scores={rng9=9,rng3=2,rng6=4..10}] at @s positioned 0.0 0 0.0 run summon marker ^-0.4 ^0.12 ^-0.5 {Tags:["SEA_boss4_marker"]}
 execute as @n[tag=SEAboss4,scores={rng9=9,rng3=3,rng6=4..10}] at @s positioned 0.0 0 0.0 run summon marker ^0.4 ^0.12 ^-0.5 {Tags:["SEA_boss4_marker"]}
