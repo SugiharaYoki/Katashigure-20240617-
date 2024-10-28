@@ -1,22 +1,33 @@
 execute store result score @n[tag=SEAboss4] rng1 run random value 1..5
 execute store result score @n[tag=SEAboss4] rng3 run random value 1..3
 execute store result score @n[tag=SEAboss4] rng4 run random value 1..3
-execute store result score @n[tag=SEAboss4] rng6 run random value 1..60
+execute store result score @n[tag=SEAboss4] rng6 run random value 1..10
 execute as @s[scores={sea_4temp1=1}] run data modify entity @n[tag=SEAboss4] NoAI set value false
 
 execute as @n[tag=SEAboss4,nbt=!{HurtTime:0s},scores={rng9=0,rng4=1},tag=!SEAboss4_attack] at @s run scoreboard players add @s rng9 1
 execute as @n[tag=SEAboss4,scores={rng9=1..}] at @s run scoreboard players add @s rng9 1
-execute as @n[tag=SEAboss4,scores={rng9=3,rng1=1}] at @s run summon marker ~ ~ ~ {Tags:["SEAedwina_smoke"]}
-execute as @n[tag=SEAboss4,scores={rng9=3,rng1=2}] at @s run function skyblock:sea/m/mine
-execute as @n[tag=SEAboss4,scores={rng9=9,rng3=1}] at @s run tp @s @n[tag=SEAboss4_tp,distance=8..]
-execute as @n[tag=SEAboss4,scores={rng9=9,rng3=2}] at @s run tp @s @n[tag=SEAboss4_tp,distance=3..]
-execute as @n[tag=SEAboss4,scores={rng9=9,rng3=3}] at @s run tp @s @n[tag=SEAboss4_tp,distance=13..]
+execute as @n[tag=SEAboss4,scores={rng9=3,rng6=1..3}] at @s run summon marker ~ ~ ~ {Tags:["SEAedwina_smoke"]}
+execute as @n[tag=SEAboss4,scores={rng9=3,rng1=1,rng6=4..10}] at @s run function skyblock:sea/m/mine
+execute as @n[tag=SEAboss4,scores={rng9=9,rng3=1,rng6=1..3}] at @s run tp @s @n[tag=SEAboss4_tp,distance=8..]
+execute as @n[tag=SEAboss4,scores={rng9=9,rng3=2,rng6=1..3}] at @s run tp @s @n[tag=SEAboss4_tp,distance=3..]
+execute as @n[tag=SEAboss4,scores={rng9=9,rng3=3,rng6=1..3}] at @s run tp @s @n[tag=SEAboss4_tp,distance=13..]
+execute as @n[tag=SEAboss4,scores={rng9=9,rng3=1,rng6=4..10}] at @s positioned 0.0 0 0.0 run summon marker ^ ^0.12 ^-0.5 {Tags:["SEA_boss4_marker"]}
+execute as @n[tag=SEAboss4,scores={rng9=9,rng3=2,rng6=4..10}] at @s positioned 0.0 0 0.0 run summon marker ^-0.4 ^0.12 ^-0.5 {Tags:["SEA_boss4_marker"]}
+execute as @n[tag=SEAboss4,scores={rng9=9,rng3=3,rng6=4..10}] at @s positioned 0.0 0 0.0 run summon marker ^0.4 ^0.12 ^-0.5 {Tags:["SEA_boss4_marker"]}
+execute as @n[tag=SEAboss4,scores={rng9=9,rng3=1..3,rng6=4..10}] at @s run data modify entity @n[tag=SEAboss4_attack_dash] Motion set from entity @n[type=marker,tag=SEA_boss4_marker] Pos
+execute as @n[tag=SEAboss4,scores={rng9=9,rng3=1..3,rng6=4..10}] at @s run kill @e[type=marker,tag=SEA_boss4_marker]
+execute as @n[tag=SEAboss4,scores={rng9=10,rng3=1,rng6=4..10}] at @s if entity @n[tag=SEA_mine,distance=0..2.8] positioned 0.0 0 0.0 run summon marker ^ ^0.12 ^-0.5 {Tags:["SEA_boss4_marker"]}
+execute as @n[tag=SEAboss4,scores={rng9=10,rng3=2,rng6=4..10}] at @s if entity @n[tag=SEA_mine,distance=0..2.8] positioned 0.0 0 0.0 run summon marker ^-0.4 ^0.12 ^-0.5 {Tags:["SEA_boss4_marker"]}
+execute as @n[tag=SEAboss4,scores={rng9=10,rng3=3,rng6=4..10}] at @s if entity @n[tag=SEA_mine,distance=0..2.8] positioned 0.0 0 0.0 run summon marker ^0.4 ^0.12 ^-0.5 {Tags:["SEA_boss4_marker"]}
+execute as @n[tag=SEAboss4,scores={rng9=10,rng3=1..3,rng6=4..10}] at @s if entity @n[tag=SEA_mine,distance=0..2.8] run data modify entity @n[tag=SEAboss4_attack_dash] Motion set from entity @n[type=marker,tag=SEA_boss4_marker] Pos
+execute as @n[tag=SEAboss4,scores={rng9=10,rng3=1..3,rng6=4..10}] at @s if entity @n[tag=SEA_mine,distance=0..2.8] run kill @e[type=marker,tag=SEA_boss4_marker]
 execute as @n[tag=SEAboss4,scores={rng9=9..11}] at @s run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
 execute as @n[tag=SEAboss4] at @s run data modify entity @s HurtTime set value 0s
 execute as @n[tag=SEAboss4,scores={rng9=12}] at @s run scoreboard players set @s rng9 0
 
 execute as @n[tag=SEAboss4,nbt={OnGround:1b},tag=!SEAboss4_attack_dashheavy,tag=!SEAboss4_eat] at @s run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
 
+execute store result score @n[tag=SEAboss4] rng6 run random value 1..60
 
 
 execute as @n[tag=SEAboss4,scores={rng2=0..3,rng6=1..3,rng8=..0,rng9=..0}] at @s run tag @s add SEAboss4_attack
