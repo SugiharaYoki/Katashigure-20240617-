@@ -385,7 +385,7 @@ setblock 90243 57 96 minecraft:furnace[facing=west]
 setblock 90194 59 95 minecraft:waxed_copper_bulb[lit=true]
 setblock 90194 59 90 minecraft:waxed_copper_bulb[lit=true]
 
-
+setblock 90236 63 85 minecraft:air
 
 fill 90196 21 131 90196 19 129 minecraft:waxed_copper_block
 
