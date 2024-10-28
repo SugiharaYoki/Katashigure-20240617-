@@ -4,14 +4,14 @@ execute as @s[scores={sea_4temp1=1}] if block 90236 63 85 air run tellraw @a[tag
 execute as @s[scores={sea_4temp1=1}] if block 90236 63 85 air run scoreboard players add @s sea_4temp1 8
 execute as @s[scores={sea_4temp1=1}] if block 90236 63 85 grindstone as @n[tag=SEAboss4] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
 execute as @s[scores={sea_4temp1=1}] if block 90236 63 85 grindstone run tellraw @a[tag=SEAPT] {"text": "艾德雯娜：“和我梦到的一样。”","color": "green"}
-execute as @s[scores={sea_4temp1=1}] if block 90236 63 85 grindstone run scoreboard players set @s sea_4temp1 51
+execute as @s[scores={sea_4temp1=31}] if block 90236 63 85 grindstone run scoreboard players set @s sea_4temp1 51
 execute as @s[scores={sea_4temp1=32}] as @n[tag=SEAboss4] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
 execute as @s[scores={sea_4temp1=32}] run tellraw @a[tag=SEAPT] {"text": "陌生的女声：“我曾来到这里，我现在很后悔自己中途离开。”","color": "green"}
 execute as @s[scores={sea_4temp1=52}] if block 90236 63 85 air as @n[tag=SEAboss4] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
 execute as @s[scores={sea_4temp1=52}] if block 90236 63 85 air run tellraw @a[tag=SEAPT] {"text": "艾德雯娜：“他们没能破坏生态主控，但冷凝系统的过热使得研究设施无法再撑超过3小时。”","color": "green"}
 execute as @s[scores={sea_4temp1=52}] if block 90236 63 85 grindstone as @n[tag=SEAboss4] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
 execute as @s[scores={sea_4temp1=52}] if block 90236 63 85 grindstone run tellraw @a[tag=SEAPT] {"text": "艾德雯娜：“那就继续吧，我们之间这战必然会发生。”","color": "green"}
-execute as @s[scores={sea_4temp1=68}] if block 90236 63 85 grindstone run scoreboard players set @s sea_4temp1 75
+execute as @s[scores={sea_4temp1=55}] if block 90236 63 85 grindstone run scoreboard players set @s sea_4temp1 75
 
 execute as @s[scores={sea_4temp1=51}] positioned 90185.00 69.00 73.03 run function skyblock:sea/m/boss4
 execute as @s[scores={sea_4temp1=51..200}] as @n[tag=SEAboss4] at @s run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
