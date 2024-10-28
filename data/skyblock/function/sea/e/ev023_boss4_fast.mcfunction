@@ -74,6 +74,7 @@ execute as @n[tag=SEAboss4,scores={rng8=0}] at @s run tag @s remove SEAboss4_att
 execute as @n[tag=SEAboss4,scores={rng8=0}] at @s run tag @s remove SEAboss4_attack_dash
 execute as @n[tag=SEAboss4,scores={rng8=0}] at @s run tag @s remove SEAboss4_attack_dashheavy
 execute as @n[tag=SEAboss4,scores={rng8=0}] at @s run tag @s remove SEAboss4_attack_drone
+execute as @n[tag=SEAboss4,scores={rng8=0}] at @s run tag @s remove SEAboss4_defense
 execute as @n[tag=SEAboss4,scores={health=..80,rng2=..10,rng1=1,rng8=..0}] run tag @s remove SEAboss4_attack
 execute as @n[tag=SEAboss4,scores={health=..80,rng2=..10,rng1=1,rng8=..0}] run tag @s add SEAboss4_eat
 execute as @n[tag=SEAboss4,scores={health=..80,rng2=..10,rng1=1,rng8=..0}] run scoreboard players add @s rng8 1
@@ -106,7 +107,7 @@ execute as @n[tag=SEAboss4,scores={rng8=2},tag=SEAboss4_attack_dash] at @s run t
 execute as @n[tag=SEAboss4,scores={rng8=2..29},tag=SEAboss4_attack_dash] at @s run item replace entity @s weapon.mainhand with iron_axe
 execute as @n[tag=SEAboss4,scores={rng8=16..29},tag=SEAboss4_attack_dash] at @s if entity @a[tag=SEAPT,distance=0..1.1] run playsound entity.player.attack.sweep hostile @a ~ ~ ~ 1 1.1
 execute as @n[tag=SEAboss4,scores={rng8=16..29},tag=SEAboss4_attack_dash] at @s if entity @a[tag=SEAPT,distance=0..1.1] rotated ~ 0 run particle sweep_attack ^ ^1.2 ^1.1 0.2 0 0.2 0 2
-execute as @n[tag=SEAboss4,scores={rng8=16..29},tag=SEAboss4_attack_dash] at @s as @a[tag=SEAPT,distance=0..1.1,tag=!SEAboss4_sneaked] at @s run damage @s 6 generic
+execute as @n[tag=SEAboss4,scores={rng8=16..29},tag=SEAboss4_attack_dash] at @s positioned ^ ^ ^0.5 as @a[tag=SEAPT,distance=0..1.1,tag=!SEAboss4_sneaked] at @s run damage @s 6 generic
 execute as @n[tag=SEAboss4,scores={rng8=16..29},tag=SEAboss4_attack_dash] at @s if entity @a[tag=SEAPT,distance=0..1.1] run scoreboard players set @s rng8 0
 execute as @n[tag=SEAboss4,scores={rng8=3},tag=SEAboss4_attack_dash] at @s run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
 execute as @n[tag=SEAboss4,scores={rng8=5},tag=SEAboss4_attack_dash] at @s positioned 0.0 0 0.0 run summon marker ^ ^0.12 ^1.4 {Tags:["SEA_boss4_marker"]}
@@ -175,7 +176,17 @@ execute as @n[tag=SEAboss4,scores={rng8=40..},tag=SEAboss4_attack_dashheavy,nbt=
 
 
 execute as @n[tag=SEAboss4,scores={rng8=2,rng5=4},tag=SEAboss4_attack] at @s run tag @s add SEAboss4_defense
-execute as @n[tag=SEAboss4,scores={rng8=2},tag=SEAboss4_attack_dashheavy] at @s run tellraw @a[tag=SEAPT] [{"text": "艾德雯娜","color": "red"},{"text": "防守中。","color": "yellow"}]
+execute as @n[tag=SEAboss4,scores={rng8=2},tag=SEAboss4_defense] at @s run tellraw @a[tag=SEAPT] [{"text": "艾德雯娜","color": "red"},{"text": "防守中。","color": "yellow"}]
+execute as @n[tag=SEAboss4,scores={rng8=2..60},tag=SEAboss4_defense] at @s run item replace entity @s weapon.mainhand with shield
+execute as @n[tag=SEAboss4,scores={rng8=2},tag=SEAboss4_defense] at @s run effect give @s resistance 3 3 true
+execute as @n[tag=SEAboss4,scores={rng8=2},tag=SEAboss4_defense] at @s run particle trial_spawner_detection ~ ~ ~ 0.8 0 0.8 0 5
+execute as @n[tag=SEAboss4,scores={rng8=53},tag=SEAboss4_defense] at @s run particle flame ~ ~1 ~ 0.9 0 0.9 0 10
+execute as @n[tag=SEAboss4,scores={rng8=60},tag=SEAboss4_defense] at @s run item replace entity @s weapon.mainhand with iron_axe
+execute as @n[tag=SEAboss4,scores={rng8=63},tag=SEAboss4_defense] at @s run playsound entity.player.attack.sweep hostile @a ~ ~ ~ 1 1.1
+execute as @n[tag=SEAboss4,scores={rng8=63},tag=SEAboss4_defense] at @s run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
+execute as @n[tag=SEAboss4,scores={rng8=63},tag=SEAboss4_defense] at @s rotated ~ 0 run particle sweep_attack ^ ^1.2 ^1.1 0.2 0 0.2 0 2
+execute as @n[tag=SEAboss4,scores={rng8=63},tag=SEAboss4_defense] at @s positioned ^ ^ ^0.5 as @a[tag=SEAPT,distance=0..1.1,tag=!SEAboss4_sneaked] at @s run damage @s 6 generic
+execute as @n[tag=SEAboss4,scores={rng8=69},tag=SEAboss4_defense] at @s run scoreboard players set @s rng8 0
 
 #/summon minecraft:item_display ~ ~ ~ {item:{id:"shield"},billboard:center,item_display:firstperson_righthand,transformation:{scale:[0.5f,0.5f,0.5f]}}
 
