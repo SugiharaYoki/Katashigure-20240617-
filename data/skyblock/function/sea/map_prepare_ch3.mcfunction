@@ -9,6 +9,7 @@ scoreboard players set @n[tag=sc] sea_4temp6 0
 scoreboard players set @n[tag=sc] sea_4temp7 0
 scoreboard players set @n[tag=sc] sea_4temp8 0
 tag @n[tag=sc] add SeGa_sea_ch3
+scoreboard players set SEAmusic rng1 0
 
 
 fill 90083 130 99 90082 128 99 air

@@ -19,6 +19,7 @@ scoreboard players set @n[tag=sc] sea_4temp6 0
 scoreboard players set @n[tag=sc] sea_4temp7 0
 scoreboard players set @n[tag=sc] sea_4temp8 0
 tag @n[tag=sc] add SeGa_sea_ch2
+scoreboard players set SEAmusic rng1 0
 
 fill 90080 128 113 90078 128 113 redstone_block
 fill 90080 128 113 90078 128 113 air

@@ -9,6 +9,7 @@ scoreboard players set @n[tag=sc] sea_4temp6 0
 scoreboard players set @n[tag=sc] sea_4temp7 0
 scoreboard players set @n[tag=sc] sea_4temp8 0
 tag @n[tag=sc] add SeGa_sea_ch4
+scoreboard players set SEAmusic rng1 0
 
 kill @e[tag=SEAbossch3_core]
 kill @e[tag=SEAbossch3_light]

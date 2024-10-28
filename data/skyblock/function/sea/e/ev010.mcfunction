@@ -4,6 +4,7 @@ execute unless entity @n[tag=SEAbossch3_core] run tag @a[tag=SEAPT] add e_i_31
 execute unless entity @n[tag=SEAbossch3_core] run fill 90139 36 99 90137 36 101 air destroy
 execute unless entity @n[tag=SEAbossch3_core] as @p[tag=SEAPT] at @s as @a[gamemode=spectator,distance=0..200] at @s run playsound minecraft:app2.darkenergy music @s ~ ~ ~ 1000 1.0
 
+scoreboard players add SEAmusic rng1 1
 
 execute unless entity @n[tag=SEAbossch3_core] run bossbar add 9066602 "命熄之灯 - 点燃数量"
 execute unless entity @n[tag=SEAbossch3_core] run bossbar set minecraft:9066602 color purple

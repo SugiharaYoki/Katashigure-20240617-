@@ -38,6 +38,7 @@ execute as @n[tag=SEAboss4,nbt={OnGround:1b},tag=!SEAboss4_attack_dashheavy,tag=
 
 execute store result score @n[tag=SEAboss4] rng6 run random value 1..60
 
+scoreboard players add SEAmusic rng1 1
 
 execute as @n[tag=SEAboss4,scores={rng2=0..3,rng6=1..3,rng8=..0,rng9=..0}] at @s run tag @s add SEAboss4_attack
 execute as @n[tag=SEAboss4,scores={rng2=0..3,rng6=1..3,rng8=..0,rng9=..0}] at @s run scoreboard players set @s rng8 1
