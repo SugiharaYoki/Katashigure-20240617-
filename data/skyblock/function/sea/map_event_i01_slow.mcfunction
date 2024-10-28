@@ -473,7 +473,7 @@ execute as @n[tag=sc,scores={sea_4temp2=6434}] at @n[tag=SEAframauros] run plays
 execute as @n[tag=sc,scores={sea_4temp2=6434}] at @n[tag=SEAframauros] if entity @n[tag=sc,scores={sea_player=1}] run tellraw @a[tag=SEAPT,distance=0.1..35] {"text":"法莫洛斯：我知道这听上去很困难……但、只有你能做到了。拜托你……","color":"green"}
 execute as @n[tag=sc,scores={sea_4temp2=6434}] at @n[tag=SEAframauros] if entity @n[tag=sc,scores={sea_player=2..}] run tellraw @a[tag=SEAPT,distance=0.1..35] {"text":"法莫洛斯：我知道这听上去很困难……但、只有你们能做到了。拜托你们……","color":"green"}
 execute as @n[tag=sc,scores={sea_4temp2=6534}] at @n[tag=SEAframauros] run playsound entity.villager.ambient neutral @a ~ ~ ~ 0.8 0.7
-execute as @n[tag=sc,scores={sea_4temp2=6534}] at @n[tag=SEAframauros] run tellraw @a[tag=SEAPT,distance=0.1..35] {"text":"法莫洛斯：求求你们……我没有多少时间了……","color":"green"}
+execute as @n[tag=sc,scores={sea_4temp2=6534}] at @n[tag=SEAframauros] run tellraw @a[tag=SEAPT,distance=0.1..35] {"text":"法莫洛斯：求求你……我没有多少时间了……","color":"green"}
 execute as @n[tag=sc,scores={sea_4temp2=6634}] at @n[tag=SEAframauros] run playsound entity.villager.ambient neutral @a ~ ~ ~ 0.8 0.7
 execute as @n[tag=sc,scores={sea_4temp2=6634}] at @n[tag=SEAframauros] run tellraw @a[tag=SEAPT,distance=0.1..35] {"text":"法莫洛斯：我需要……保持、……我该自杀，对吗？……","color":"green"}
 execute as @n[tag=sc,scores={sea_4temp2=6734}] at @n[tag=SEAframauros] run playsound entity.villager.ambient neutral @a ~ ~ ~ 0.8 0.7
