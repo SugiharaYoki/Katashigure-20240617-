@@ -53,7 +53,7 @@ execute if entity @n[tag=sc,scores={sea_4temp2=2113..3999}] as @s[scores={sea_bo
 execute if entity @n[tag=sc,scores={sea_4temp2=2113..3999}] as @s[scores={sea_boss1_hp=..35},tag=SEAboss2bow] at @s run tag @s add SEAboss2melee
 execute if entity @n[tag=sc,scores={sea_4temp2=2113..3999}] as @s[scores={sea_boss1_hp=..35},tag=SEAboss2bow] at @s run tag @s remove SEAboss2bow
 
-execute if entity @n[tag=sc,scores={sea_4temp2=2124..}] run scoreboard players add SEAmusic rng1 1
+execute if entity @n[tag=sc,scores={sea_4temp2=2124..}] if entity @n[tag=SEAboss2] run scoreboard players add SEAmusic rng1 1
 execute if score SEAmusic rng1 matches 596 as @a[tag=SEAPT] at @s as @a[tag=SEAPT] at @s run playsound minecraft:app2.manifoldhypothesis music @s ~ ~ ~ 1000 1.0
 execute if score SEAmusic rng1 matches 596 as @r[tag=SEAPT] at @s as @r[tag=SEAPT] at @s as @a[tag=!SEAPT,gamemode=spectator,distance=0..200] run playsound minecraft:app2.manifoldhypothesis music @s ~ ~ ~ 1000 1.0
 execute if score SEAmusic rng1 matches 596.. run scoreboard players set SEAmusic rng1 0
