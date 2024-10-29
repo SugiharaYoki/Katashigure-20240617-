@@ -80,11 +80,15 @@ execute as @n[tag=SEAboss4,scores={rng8=0}] at @s run tag @s remove SEAboss4_att
 execute as @n[tag=SEAboss4,scores={rng8=0}] at @s run tag @s remove SEAboss4_attack_drone
 execute as @n[tag=SEAboss4,scores={rng8=0}] at @s run tag @s remove SEAboss4_defense
 execute as @n[tag=SEAboss4,scores={rng8=0}] at @s run tag @s remove SEAboss4_spectral
+execute as @n[tag=SEAboss4,scores={rng8=0}] at @s run tag @s remove SEAboss4_shadow
 execute as @n[tag=SEAboss4,scores={rng8=0}] at @s run item replace entity @s weapon.mainhand with air
 execute as @n[tag=SEAboss4,scores={health=..80,rng2=..10,rng1=1,rng8=..0}] run tag @s remove SEAboss4_attack
 execute as @n[tag=SEAboss4,scores={health=..80,rng2=..10,rng1=1,rng8=..0}] run tag @s add SEAboss4_eat
 execute as @n[tag=SEAboss4,scores={health=..80,rng2=..10,rng1=1,rng8=..0}] run scoreboard players add @s rng8 1
 
+
+execute as @n[tag=SEAboss4,scores={rng2=4..},tag=!SEAboss4_phase2] run tellraw @a[tag=SEAPT] {"text": "艾德雯娜：“真不赖，可惜偷偷告诉你，你手上的装备，我也全都有。”","color": "green"}
+execute as @n[tag=SEAboss4,scores={rng2=4..},tag=!SEAboss4_phase2] run tag @s add SEAboss4_phase2
 
 execute as @n[tag=SEAboss4,scores={rng8=1..}] at @s run scoreboard players add @s rng8 1
 
@@ -107,7 +111,7 @@ execute as @n[tag=SEAboss4,scores={rng8=27},tag=SEAboss4_eat] at @s run effect g
 execute as @n[tag=SEAboss4,scores={rng8=30..},tag=SEAboss4_eat] at @s run scoreboard players set @s rng8 0
 
 execute store result score @n[tag=SEAboss4] rng5 run random value 1..4
-execute store result score @n[tag=SEAboss4,scores={rng2=4..7}] rng5 run random value 1..5
+execute store result score @n[tag=SEAboss4,scores={rng2=4..7}] rng5 run random value 1..6
 execute as @n[tag=SEAboss4,scores={rng8=2,rng5=1},tag=SEAboss4_attack] at @s run tag @s add SEAboss4_attack_dash
 execute as @n[tag=SEAboss4,scores={rng8=2},tag=SEAboss4_attack_dash] at @s run particle flame ~ ~1 ~ 0.9 0 0.9 0 10
 execute as @n[tag=SEAboss4,scores={rng8=2},tag=SEAboss4_attack_dash] at @s run tellraw @a[tag=SEAPT] [{"text": "艾德雯娜","color": "red"},{"text": "举起消防斧。","color": "yellow"}]
@@ -224,7 +228,15 @@ execute as @e[type=spectral_arrow,tag=SEAboss4_spectral_arrow1,x=90000,y=100,z=0
 execute as @e[type=spectral_arrow,tag=SEAboss4_spectral_arrow1,x=90000,y=100,z=0,distance=..1000,nbt={inGround:false}] at @s run particle end_rod ^ ^0.6 ^ 0 0 0 0.0 1
 execute as @e[type=spectral_arrow,tag=SEAboss4_spectral_arrow1,x=90000,y=100,z=0,distance=..1000,nbt={inGround:false}] at @s run particle end_rod ^ ^-0.6 ^ 0 0 0 0.0 1
 
-execute as @n[tag=SEAboss4,scores={rng8=75},tag=SEAboss4_spectral] at @s run scoreboard players set @s rng8 0
+execute as @n[tag=SEAboss4,scores={rng8=2,rng5=6},tag=SEAboss4_attack] at @s run tag @s add SEAboss4_shadow
+execute as @n[tag=SEAboss4,scores={rng8=2},tag=SEAboss4_shadow] at @s run tellraw @a[tag=SEAPT] [{"text": "艾德雯娜","color": "red"},{"text": "启动残影模板。","color": "light_purple"}]
+execute as @n[tag=SEAboss4,scores={rng8=2},tag=SEAboss4_shadow] at @s run particle portal ~ ~1 ~ 0.8 1.0 0.8 0 50
+execute as @n[tag=SEAboss4,scores={rng8=2},tag=SEAboss4_shadow,nbt={OnGround:true}] at @s run function skyblock:sea/m/mine
+execute as @n[tag=SEAboss4,scores={rng8=2},tag=SEAboss4_shadow] at @s run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
+execute as @n[tag=SEAboss4,scores={rng8=2},tag=SEAboss4_shadow] at @s positioned 0.0 0 0.0 run summon marker ^ ^0.12 ^5.4 {Tags:["SEA_boss4_marker"]}
+execute as @n[tag=SEAboss4,scores={rng8=2},tag=SEAboss4_shadow] at @s run data modify entity @n[tag=SEAboss4_shadow] Motion set from entity @n[type=marker,tag=SEA_boss4_marker] Pos
+
+execute as @n[tag=SEAboss4,scores={rng8=40},tag=SEAboss4_shadow] at @s run scoreboard players set @s rng8 0
 
 #/summon minecraft:item_display ~ ~ ~ {item:{id:"shield"},billboard:center,item_display:firstperson_righthand,transformation:{scale:[0.5f,0.5f,0.5f]}}
 
