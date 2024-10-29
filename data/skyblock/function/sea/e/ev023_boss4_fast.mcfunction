@@ -34,7 +34,7 @@ execute as @n[tag=SEAboss4,scores={rng9=9..11}] at @s run tp @s ~ ~ ~ facing ent
 execute as @n[tag=SEAboss4] at @s run data modify entity @s HurtTime set value 0s
 execute as @n[tag=SEAboss4,scores={rng9=12}] at @s run scoreboard players set @s rng9 0
 
-execute as @n[tag=SEAboss4,nbt={OnGround:1b},tag=!SEAboss4_attack_dashheavy,tag=!SEAboss4_eat] at @s run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
+execute as @n[tag=SEAboss4,nbt={OnGround:1b},tag=!SEAboss4_attack_dashheavy,tag=!SEAboss4_eat,tag=!SEAboss4_spectral_arrow1] at @s run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
 
 execute store result score @n[tag=SEAboss4] rng6 run random value 1..60
 
@@ -206,6 +206,8 @@ execute as @n[tag=SEAboss4,scores={rng8=10},tag=SEAboss4_spectral] at @s run pla
 execute as @n[tag=SEAboss4,scores={rng8=20},tag=SEAboss4_spectral] at @s run playsound item.crossbow.loading_middle hostile @a ~ ~ ~ 1 1.1
 execute as @n[tag=SEAboss4,scores={rng8=30},tag=SEAboss4_spectral] at @s run playsound item.crossbow.loading_end hostile @a ~ ~ ~ 1 1.1
 
+execute as @n[tag=SEAboss4,scores={rng8=30..52},tag=SEAboss4_spectral] at @s run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
+
 execute as @n[tag=SEAboss4,scores={rng8=30..59},tag=SEAboss4_spectral] at @s anchored eyes positioned ^ ^ ^1.5 run particle end_rod ~ ~ ~ 0 0 0 0 1
 execute as @n[tag=SEAboss4,scores={rng8=30..59},tag=SEAboss4_spectral] at @s anchored eyes positioned ^ ^ ^1.8 run particle end_rod ~ ~ ~ 0 0 0 0 1
 execute as @n[tag=SEAboss4,scores={rng8=30..59},tag=SEAboss4_spectral] at @s anchored eyes positioned ^ ^ ^2.1 run particle end_rod ~ ~ ~ 0 0 0 0 1
@@ -227,10 +229,10 @@ execute as @n[tag=SEAboss4,scores={rng8=70..},tag=SEAboss4_spectral] at @s run s
 
 execute as @e[type=spectral_arrow,tag=SEAboss4_spectral_arrow1,x=90000,y=100,z=0,distance=..1000,nbt={inGround:false}] at @s run playsound minecraft:item.trident.riptide_3 player @a ~ ~ ~ 1 0.7
 execute as @e[type=spectral_arrow,tag=SEAboss4_spectral_arrow1,x=90000,y=100,z=0,distance=..1000,nbt={inGround:false}] at @s run playsound minecraft:entity.player.hurt_freeze player @a ~ ~ ~ 0.5 1.5
-execute as @e[type=spectral_arrow,tag=SEAboss4_spectral_arrow1,x=90000,y=100,z=0,distance=..1000,nbt={inGround:false}] at @s positioned ^ ^ ^0.5 as @a[tag=SEAPT,distance=0..2.03,tag=!SEAboss4_sneaked] at @s run particle minecraft:item_snowball ~ ~ ~ 0.2 1 0.2 0.0 20
-execute as @e[type=spectral_arrow,tag=SEAboss4_spectral_arrow1,x=90000,y=100,z=0,distance=..1000,nbt={inGround:false}] at @s positioned ^ ^ ^0.5 as @a[tag=SEAPT,distance=0..2.03,tag=!SEAboss4_sneaked] at @s run particle minecraft:enchant ~ ~ ~ 0.2 1 0.2 0.7 20
-execute as @e[type=spectral_arrow,tag=SEAboss4_spectral_arrow1,x=90000,y=100,z=0,distance=..1000,nbt={inGround:false}] at @s positioned ^ ^ ^0.5 as @a[tag=SEAPT,distance=0..2.03,tag=!SEAboss4_sneaked] run effect give @s slowness 5 99 false
-execute as @e[type=spectral_arrow,tag=SEAboss4_spectral_arrow1,x=90000,y=100,z=0,distance=..1000,nbt={inGround:false}] at @s positioned ^ ^ ^0.5 as @a[tag=SEAPT,distance=0..2.03,tag=!SEAboss4_sneaked] run effect give @s glowing 5 0 false
+execute as @e[type=spectral_arrow,tag=SEAboss4_spectral_arrow1,x=90000,y=100,z=0,distance=..1000,nbt={inGround:false}] at @s positioned ^ ^ ^0.3 as @a[tag=SEAPT,distance=0..2.02,tag=!SEAboss4_sneaked] at @s run particle minecraft:item_snowball ~ ~ ~ 0.2 1 0.2 0.0 20
+execute as @e[type=spectral_arrow,tag=SEAboss4_spectral_arrow1,x=90000,y=100,z=0,distance=..1000,nbt={inGround:false}] at @s positioned ^ ^ ^0.3 as @a[tag=SEAPT,distance=0..2.02,tag=!SEAboss4_sneaked] at @s run particle minecraft:enchant ~ ~ ~ 0.2 1 0.2 0.7 20
+execute as @e[type=spectral_arrow,tag=SEAboss4_spectral_arrow1,x=90000,y=100,z=0,distance=..1000,nbt={inGround:false}] at @s positioned ^ ^ ^0.3 as @a[tag=SEAPT,distance=0..2.02,tag=!SEAboss4_sneaked] run effect give @s slowness 5 99 false
+execute as @e[type=spectral_arrow,tag=SEAboss4_spectral_arrow1,x=90000,y=100,z=0,distance=..1000,nbt={inGround:false}] at @s positioned ^ ^ ^0.3 as @a[tag=SEAPT,distance=0..2.02,tag=!SEAboss4_sneaked] run effect give @s glowing 5 0 false
 execute as @e[type=spectral_arrow,tag=SEAboss4_spectral_arrow1,x=90000,y=100,z=0,distance=..1000,nbt={inGround:false}] at @s run particle end_rod ^0.3 ^ ^ 0 0 0 0.0 1
 execute as @e[type=spectral_arrow,tag=SEAboss4_spectral_arrow1,x=90000,y=100,z=0,distance=..1000,nbt={inGround:false}] at @s run particle end_rod ^-0.3 ^ ^ 0 0 0 0.0 1
 execute as @e[type=spectral_arrow,tag=SEAboss4_spectral_arrow1,x=90000,y=100,z=0,distance=..1000,nbt={inGround:false}] at @s run particle end_rod ^ ^0.3 ^ 0 0 0 0.0 1
