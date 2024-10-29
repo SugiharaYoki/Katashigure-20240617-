@@ -227,10 +227,10 @@ execute as @n[tag=SEAboss4,scores={rng8=70..},tag=SEAboss4_spectral] at @s run s
 
 execute as @e[type=spectral_arrow,tag=SEAboss4_spectral_arrow1,x=90000,y=100,z=0,distance=..1000,nbt={inGround:false}] at @s run playsound minecraft:item.trident.riptide_3 player @a ~ ~ ~ 1 0.7
 execute as @e[type=spectral_arrow,tag=SEAboss4_spectral_arrow1,x=90000,y=100,z=0,distance=..1000,nbt={inGround:false}] at @s run playsound minecraft:entity.player.hurt_freeze player @a ~ ~ ~ 0.5 1.5
-execute as @e[type=spectral_arrow,tag=SEAboss4_spectral_arrow1,x=90000,y=100,z=0,distance=..1000,nbt={inGround:false}] at @s positioned ^ ^ ^0.5 as @a[tag=SEAPT,distance=0..2] at @s run particle minecraft:item_snowball ~ ~ ~ 0.2 1 0.2 0.0 20
-execute as @e[type=spectral_arrow,tag=SEAboss4_spectral_arrow1,x=90000,y=100,z=0,distance=..1000,nbt={inGround:false}] at @s positioned ^ ^ ^0.5 as @a[tag=SEAPT,distance=0..2] at @s run particle minecraft:enchant ~ ~ ~ 0.2 1 0.2 0.7 20
-execute as @e[type=spectral_arrow,tag=SEAboss4_spectral_arrow1,x=90000,y=100,z=0,distance=..1000,nbt={inGround:false}] at @s positioned ^ ^ ^0.5 as @a[tag=SEAPT,distance=0..2] run effect give @s slowness 5 99 false
-execute as @e[type=spectral_arrow,tag=SEAboss4_spectral_arrow1,x=90000,y=100,z=0,distance=..1000,nbt={inGround:false}] at @s positioned ^ ^ ^0.5 as @a[tag=SEAPT,distance=0..2] run effect give @s glowing 5 0 false
+execute as @e[type=spectral_arrow,tag=SEAboss4_spectral_arrow1,x=90000,y=100,z=0,distance=..1000,nbt={inGround:false}] at @s positioned ^ ^ ^0.5 as @a[tag=SEAPT,distance=0..2.03] at @s run particle minecraft:item_snowball ~ ~ ~ 0.2 1 0.2 0.0 20
+execute as @e[type=spectral_arrow,tag=SEAboss4_spectral_arrow1,x=90000,y=100,z=0,distance=..1000,nbt={inGround:false}] at @s positioned ^ ^ ^0.5 as @a[tag=SEAPT,distance=0..2.03] at @s run particle minecraft:enchant ~ ~ ~ 0.2 1 0.2 0.7 20
+execute as @e[type=spectral_arrow,tag=SEAboss4_spectral_arrow1,x=90000,y=100,z=0,distance=..1000,nbt={inGround:false}] at @s positioned ^ ^ ^0.5 as @a[tag=SEAPT,distance=0..2.03] run effect give @s slowness 5 99 false
+execute as @e[type=spectral_arrow,tag=SEAboss4_spectral_arrow1,x=90000,y=100,z=0,distance=..1000,nbt={inGround:false}] at @s positioned ^ ^ ^0.5 as @a[tag=SEAPT,distance=0..2.03] run effect give @s glowing 5 0 false
 execute as @e[type=spectral_arrow,tag=SEAboss4_spectral_arrow1,x=90000,y=100,z=0,distance=..1000,nbt={inGround:false}] at @s run particle end_rod ^0.3 ^ ^ 0 0 0 0.0 1
 execute as @e[type=spectral_arrow,tag=SEAboss4_spectral_arrow1,x=90000,y=100,z=0,distance=..1000,nbt={inGround:false}] at @s run particle end_rod ^-0.3 ^ ^ 0 0 0 0.0 1
 execute as @e[type=spectral_arrow,tag=SEAboss4_spectral_arrow1,x=90000,y=100,z=0,distance=..1000,nbt={inGround:false}] at @s run particle end_rod ^ ^0.3 ^ 0 0 0 0.0 1
@@ -244,6 +244,8 @@ execute as @n[tag=SEAboss4,scores={rng8=2,rng5=6},tag=SEAboss4_attack] at @s run
 execute as @n[tag=SEAboss4,scores={rng8=2},tag=SEAboss4_shadow] at @s run tellraw @a[tag=SEAPT] [{"text": "艾德雯娜","color": "red"},{"text": "启动残影模板。","color": "light_purple"}]
 execute as @n[tag=SEAboss4,scores={rng8=2},tag=SEAboss4_shadow] at @s run particle portal ~ ~1 ~ 0.8 1.0 0.8 0 50
 execute as @n[tag=SEAboss4,scores={rng8=2},tag=SEAboss4_shadow,nbt={OnGround:true}] at @s run function skyblock:sea/m/mine
+execute as @n[tag=SEAboss4,scores={rng8=2},tag=SEAboss4_shadow,nbt={OnGround:true}] at @s positioned ^ ^ ^2 unless block ~ ~-0. ~ air run function skyblock:sea/m/mine
+execute as @n[tag=SEAboss4,scores={rng8=2},tag=SEAboss4_shadow,nbt={OnGround:true}] at @s positioned ^ ^ ^4 unless block ~ ~-0. ~ air run function skyblock:sea/m/mine
 execute as @n[tag=SEAboss4,scores={rng8=2},tag=SEAboss4_shadow] at @s run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
 execute as @n[tag=SEAboss4,scores={rng8=2},tag=SEAboss4_shadow] at @s positioned 0.0 0 0.0 run summon marker ^ ^0.32 ^5.4 {Tags:["SEA_boss4_marker"]}
 execute as @n[tag=SEAboss4,scores={rng8=2},tag=SEAboss4_shadow] at @s run data modify entity @n[tag=SEAboss4_shadow] Motion set from entity @n[type=marker,tag=SEA_boss4_marker] Pos
