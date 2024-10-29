@@ -108,10 +108,10 @@ execute as @n[tag=SEAboss4,scores={rng7=180}] positioned 90185.01 69.00 72.02 ru
 execute as @n[tag=SEAboss4,scores={rng7=180..}] as @e[tag=SEAyuehan] at @s run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
 
 
-execute as @n[tag=SEAboss4,scores={rng7=180}] as @a run bossbar remove 9066601
-execute as @n[tag=SEAboss4,scores={rng7=180}] as @a run bossbar set 9066601 visible false
-execute as @n[tag=SEAboss4,scores={rng7=180}] as @a run bossbar set minecraft:9066601 players @s
-execute as @n[tag=SEAboss4,scores={rng7=180}] as @a[tag=SEAPT] if score @s sea_speedrun_ch4 > sc sea_speedrun_ch4 run scoreboard players operation @s sea_speedrun_ch4 = sc sea_speedrun_ch4
+execute as @n[tag=SEAboss4,scores={rng7=240}] as @a run bossbar remove 9066601
+execute as @n[tag=SEAboss4,scores={rng7=240}] as @a run bossbar set 9066601 visible false
+execute as @n[tag=SEAboss4,scores={rng7=240}] as @a run bossbar set minecraft:9066601 players @s
+execute as @n[tag=SEAboss4,scores={rng7=240}] as @a[tag=SEAPT] if score @s sea_speedrun_ch4 > sc sea_speedrun_ch4 run scoreboard players operation @s sea_speedrun_ch4 = sc sea_speedrun_ch4
 
 execute as @n[tag=SEAboss4,scores={rng8=4},tag=SEAboss4_eat] at @s run tellraw @a[tag=SEAPT] [{"text": "艾德雯娜","color": "red"},{"text": "准备食用面包。","color": "green"}]
 execute as @n[tag=SEAboss4,scores={rng8=6..27},tag=SEAboss4_eat] at @s run item replace entity @s weapon.mainhand with bread
