@@ -79,6 +79,7 @@ execute as @n[tag=SEAboss4,scores={rng8=0}] at @s run tag @s remove SEAboss4_att
 execute as @n[tag=SEAboss4,scores={rng8=0}] at @s run tag @s remove SEAboss4_attack_dashheavy
 execute as @n[tag=SEAboss4,scores={rng8=0}] at @s run tag @s remove SEAboss4_attack_drone
 execute as @n[tag=SEAboss4,scores={rng8=0}] at @s run tag @s remove SEAboss4_defense
+execute as @n[tag=SEAboss4,scores={rng8=0}] at @s run tag @s remove SEAboss4_spectral
 execute as @n[tag=SEAboss4,scores={rng8=0}] at @s run item replace entity @s weapon.mainhand with air
 execute as @n[tag=SEAboss4,scores={health=..80,rng2=..10,rng1=1,rng8=..0}] run tag @s remove SEAboss4_attack
 execute as @n[tag=SEAboss4,scores={health=..80,rng2=..10,rng1=1,rng8=..0}] run tag @s add SEAboss4_eat
@@ -106,6 +107,7 @@ execute as @n[tag=SEAboss4,scores={rng8=27},tag=SEAboss4_eat] at @s run effect g
 execute as @n[tag=SEAboss4,scores={rng8=30..},tag=SEAboss4_eat] at @s run scoreboard players set @s rng8 0
 
 execute store result score @n[tag=SEAboss4] rng5 run random value 1..4
+execute store result score @n[tag=SEAboss4,scores={rng2=4..7}] rng5 run random value 1..5
 execute as @n[tag=SEAboss4,scores={rng8=2,rng5=1},tag=SEAboss4_attack] at @s run tag @s add SEAboss4_attack_dash
 execute as @n[tag=SEAboss4,scores={rng8=2},tag=SEAboss4_attack_dash] at @s run particle flame ~ ~1 ~ 0.9 0 0.9 0 10
 execute as @n[tag=SEAboss4,scores={rng8=2},tag=SEAboss4_attack_dash] at @s run tellraw @a[tag=SEAPT] [{"text": "艾德雯娜","color": "red"},{"text": "举起消防斧。","color": "yellow"}]
@@ -192,6 +194,37 @@ execute as @n[tag=SEAboss4,scores={rng8=63},tag=SEAboss4_defense] at @s run tp @
 execute as @n[tag=SEAboss4,scores={rng8=63},tag=SEAboss4_defense] at @s rotated ~ 0 run particle sweep_attack ^ ^1.2 ^1.1 0.2 0 0.2 0 2
 execute as @n[tag=SEAboss4,scores={rng8=63},tag=SEAboss4_defense] at @s positioned ^ ^ ^0.5 as @a[tag=SEAPT,distance=0..1.1,tag=!SEAboss4_sneaked] at @s run damage @s 6 generic
 execute as @n[tag=SEAboss4,scores={rng8=69},tag=SEAboss4_defense] at @s run scoreboard players set @s rng8 0
+
+execute as @n[tag=SEAboss4,scores={rng8=2,rng5=4},tag=SEAboss4_attack] at @s run tag @s add SEAboss4_spectral
+execute as @n[tag=SEAboss4,scores={rng8=2},tag=SEAboss4_spectral] at @s run tellraw @a[tag=SEAPT] [{"text": "艾德雯娜","color": "red"},{"text": "举起工程弩。","color": "yellow"}]
+execute as @n[tag=SEAboss4,scores={rng8=2..60},tag=SEAboss4_spectral] at @s run item replace entity @s weapon.mainhand with crossbow
+execute as @n[tag=SEAboss4,scores={rng8=10},tag=SEAboss4_spectral] at @s run playsound item.crossbow.loading_start hostile @a ~ ~ ~ 1 1.1
+execute as @n[tag=SEAboss4,scores={rng8=20},tag=SEAboss4_spectral] at @s run playsound item.crossbow.loading_middle hostile @a ~ ~ ~ 1 1.1
+execute as @n[tag=SEAboss4,scores={rng8=30},tag=SEAboss4_spectral] at @s run playsound item.crossbow.loading_end hostile @a ~ ~ ~ 1 1.1
+
+execute as @n[tag=SEAboss4,scores={rng8=50},tag=SEAboss4_spectral] at @s run execute positioned 0.0 0 0.0 run summon marker ^ ^0.15 ^2 {Tags:["SEAboss4_spectral_marker"]}
+execute as @n[tag=SEAboss4,scores={rng8=50},tag=SEAbosSEAboss4_spectrals4_defense] at @s run execute as @e[tag=SEAboss4_spectral_marker,type=marker] at @s run tp @s ~ 0.05 ~
+execute as @n[tag=SEAboss4,scores={rng8=50},tag=SEAboss4_spectral] at @s run playsound entity.arrow.shoot hostile @a ~ ~1.5 ~ 1 1.1
+execute as @n[tag=SEAboss4,scores={rng8=50},tag=SEAboss4_spectral] at @s positioned ^ ^ ^0.5 run summon spectral_arrow ~ ~1.5 ~ {Tags:["SEAboss4_spectral_arrow1"],life:1100,damage:2.0}
+execute as @n[tag=SEAboss4,scores={rng8=50},tag=SEAboss4_spectral] at @s run data modify entity @n[type=spectral_arrow,tag=SEAboss4_spectral_arrow1] Motion set from entity @n[type=marker,tag=SEAboss4_spectral_marker] Pos
+execute as @n[tag=SEAboss4,scores={rng8=50},tag=SEAboss4_spectral] at @s run kill @e[type=marker,tag=SEAboss4_spectral_marker]
+
+execute as @e[type=spectral_arrow,tag=SEAboss4_spectral_arrow1,x=90000,y=100,z=0,distance=..1000,nbt={inGround:false}] at @s run playsound minecraft:item.trident.riptide_3 player @a ~ ~ ~ 1 0.7
+execute as @e[type=spectral_arrow,tag=SEAboss4_spectral_arrow1,x=90000,y=100,z=0,distance=..1000,nbt={inGround:false}] at @s run playsound minecraft:entity.player.hurt_freeze player @a ~ ~ ~ 0.5 1.5
+execute as @e[type=spectral_arrow,tag=SEAboss4_spectral_arrow1,x=90000,y=100,z=0,distance=..1000,nbt={inGround:false}] at @s as @a[tag=SEAPT,distance=0..2.2] at @s run particle minecraft:item_snowball ~ ~ ~ 0.2 1 0.2 0.0 20
+execute as @e[type=spectral_arrow,tag=SEAboss4_spectral_arrow1,x=90000,y=100,z=0,distance=..1000,nbt={inGround:false}] at @s as @a[tag=SEAPT,distance=0..2.2] at @s run particle minecraft:enchant ~ ~ ~ 0.2 1 0.2 0.7 20
+execute as @e[type=spectral_arrow,tag=SEAboss4_spectral_arrow1,x=90000,y=100,z=0,distance=..1000,nbt={inGround:false}] at @s as @a[tag=SEAPT,distance=0..2.2] run effect give @s slowness 5 99 false
+execute as @e[type=spectral_arrow,tag=SEAboss4_spectral_arrow1,x=90000,y=100,z=0,distance=..1000,nbt={inGround:false}] at @s as @a[tag=SEAPT,distance=0..2.2] run effect give @s glowing 5 0 false
+execute as @e[type=spectral_arrow,tag=SEAboss4_spectral_arrow1,x=90000,y=100,z=0,distance=..1000,nbt={inGround:false}] at @s run particle end_rod ^0.3 ^ ^ 0 0 0 0.0 1
+execute as @e[type=spectral_arrow,tag=SEAboss4_spectral_arrow1,x=90000,y=100,z=0,distance=..1000,nbt={inGround:false}] at @s run particle end_rod ^-0.3 ^ ^ 0 0 0 0.0 1
+execute as @e[type=spectral_arrow,tag=SEAboss4_spectral_arrow1,x=90000,y=100,z=0,distance=..1000,nbt={inGround:false}] at @s run particle end_rod ^ ^0.3 ^ 0 0 0 0.0 1
+execute as @e[type=spectral_arrow,tag=SEAboss4_spectral_arrow1,x=90000,y=100,z=0,distance=..1000,nbt={inGround:false}] at @s run particle end_rod ^ ^-0.3 ^ 0 0 0 0.0 1
+execute as @e[type=spectral_arrow,tag=SEAboss4_spectral_arrow1,x=90000,y=100,z=0,distance=..1000,nbt={inGround:false}] at @s run particle end_rod ^0.6 ^ ^ 0 0 0 0.0 1
+execute as @e[type=spectral_arrow,tag=SEAboss4_spectral_arrow1,x=90000,y=100,z=0,distance=..1000,nbt={inGround:false}] at @s run particle end_rod ^-0.6 ^ ^ 0 0 0 0.0 1
+execute as @e[type=spectral_arrow,tag=SEAboss4_spectral_arrow1,x=90000,y=100,z=0,distance=..1000,nbt={inGround:false}] at @s run particle end_rod ^ ^0.6 ^ 0 0 0 0.0 1
+execute as @e[type=spectral_arrow,tag=SEAboss4_spectral_arrow1,x=90000,y=100,z=0,distance=..1000,nbt={inGround:false}] at @s run particle end_rod ^ ^-0.6 ^ 0 0 0 0.0 1
+
+execute as @n[tag=SEAboss4,scores={rng8=75},tag=SEAboss4_spectral] at @s run scoreboard players set @s rng8 0
 
 #/summon minecraft:item_display ~ ~ ~ {item:{id:"shield"},billboard:center,item_display:firstperson_righthand,transformation:{scale:[0.5f,0.5f,0.5f]}}
 
