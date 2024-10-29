@@ -43,12 +43,12 @@ execute if score SEAmusic rng1 matches 3500 as @a[tag=SEAPT] at @s as @a[tag=SEA
 execute if score SEAmusic rng1 matches 3500 as @r[tag=SEAPT] at @s positioned 90185 56 61 as @a[gamemode=spectator,distance=0..250] run playsound minecraft:app2.astrum music @s ~ ~ ~ 10 1
 execute if score SEAmusic rng1 matches 3500.. run scoreboard players set SEAmusic rng1 0
 
-execute as @n[tag=SEAboss4,scores={rng2=0..3,rng6=1..3,rng8=..0,rng9=..0}] at @s run tag @s add SEAboss4_attack
-execute as @n[tag=SEAboss4,scores={rng2=0..3,rng6=1..3,rng8=..0,rng9=..0}] at @s run scoreboard players set @s rng8 1
+execute as @n[tag=SEAboss4,scores={rng2=0..3,rng6=1..2,rng8=..0,rng9=..0}] at @s run tag @s add SEAboss4_attack
+execute as @n[tag=SEAboss4,scores={rng2=0..3,rng6=1..2,rng8=..0,rng9=..0}] at @s run scoreboard players set @s rng8 1
 execute as @n[tag=SEAboss4,scores={rng2=4..7,rng6=1..6,rng8=..0,rng9=..0}] at @s run tag @s add SEAboss4_attack
 execute as @n[tag=SEAboss4,scores={rng2=4..7,rng6=1..6,rng8=..0,rng9=..0}] at @s run scoreboard players set @s rng8 1
-execute as @n[tag=SEAboss4,scores={rng2=8..,rng6=1..12,rng8=..0,rng9=..0}] at @s run tag @s add SEAboss4_attack
-execute as @n[tag=SEAboss4,scores={rng2=8..,rng6=1..12,rng8=..0,rng9=..0}] at @s run scoreboard players set @s rng8 1
+execute as @n[tag=SEAboss4,scores={rng2=8..,rng6=1..30,rng8=..0,rng9=..0}] at @s run tag @s add SEAboss4_attack
+execute as @n[tag=SEAboss4,scores={rng2=8..,rng6=1..30,rng8=..0,rng9=..0}] at @s run scoreboard players set @s rng8 1
 
 execute as @s[scores={sea_4temp1=1}] run bossbar add 9066601 "无我唯生 皆数为存 - 艾德雯娜 · 塔尔索"
 execute as @s[scores={sea_4temp1=1}] run bossbar set minecraft:9066601 color red
@@ -85,10 +85,17 @@ execute as @n[tag=SEAboss4,scores={rng8=0}] at @s run item replace entity @s wea
 execute as @n[tag=SEAboss4,scores={health=..80,rng2=..10,rng1=1,rng8=..0}] run tag @s remove SEAboss4_attack
 execute as @n[tag=SEAboss4,scores={health=..80,rng2=..10,rng1=1,rng8=..0}] run tag @s add SEAboss4_eat
 execute as @n[tag=SEAboss4,scores={health=..80,rng2=..10,rng1=1,rng8=..0}] run scoreboard players add @s rng8 1
+execute as @n[tag=SEAboss4,scores={health=..80,rng2=11..}] run scoreboard players add @s rng7 1
 
 
 execute as @n[tag=SEAboss4,scores={rng2=4..},tag=!SEAboss4_phase2] run tellraw @a[tag=SEAPT] {"text": "艾德雯娜：“真不赖，可惜偷偷告诉你，你手上的装备，我也全都有。”","color": "green"}
 execute as @n[tag=SEAboss4,scores={rng2=4..},tag=!SEAboss4_phase2] run tag @s add SEAboss4_phase2
+
+execute as @n[tag=SEAboss4,scores={rng2=8..},tag=!SEAboss4_phase2] run tellraw @a[tag=SEAPT] {"text": "艾德雯娜：“没想到能让我陷入苦战呢……我该拿出全部实力了。”","color": "green"}
+execute as @n[tag=SEAboss4,scores={rng2=8..},tag=!SEAboss4_phase2] run scoreboard players set @s rng8 0
+execute as @n[tag=SEAboss4,scores={rng2=8..},tag=!SEAboss4_phase2] run playsound minecraft:item.trident.thunder hostile @a ~ ~ ~ 3 0.83
+execute as @n[tag=SEAboss4,scores={rng2=8..},tag=!SEAboss4_phase2] run particle flame ~ ~ ~ 3 0 3 0.05 40
+execute as @n[tag=SEAboss4,scores={rng2=8..},tag=!SEAboss4_phase2] run tag @s add SEAboss4_phase2
 
 execute as @n[tag=SEAboss4,scores={rng8=1..}] at @s run scoreboard players add @s rng8 1
 
@@ -112,6 +119,7 @@ execute as @n[tag=SEAboss4,scores={rng8=30..},tag=SEAboss4_eat] at @s run scoreb
 
 execute store result score @n[tag=SEAboss4] rng5 run random value 1..4
 execute store result score @n[tag=SEAboss4,scores={rng2=4..7}] rng5 run random value 1..6
+execute store result score @n[tag=SEAboss4,scores={rng2=8..}] rng5 run random value 1..6
 execute as @n[tag=SEAboss4,scores={rng8=2,rng5=1},tag=SEAboss4_attack] at @s run tag @s add SEAboss4_attack_dash
 execute as @n[tag=SEAboss4,scores={rng8=2},tag=SEAboss4_attack_dash] at @s run particle flame ~ ~1 ~ 0.9 0 0.9 0 10
 execute as @n[tag=SEAboss4,scores={rng8=2},tag=SEAboss4_attack_dash] at @s run tellraw @a[tag=SEAPT] [{"text": "艾德雯娜","color": "red"},{"text": "举起消防斧。","color": "yellow"}]
