@@ -206,6 +206,16 @@ execute as @n[tag=SEAboss4,scores={rng8=10},tag=SEAboss4_spectral] at @s run pla
 execute as @n[tag=SEAboss4,scores={rng8=20},tag=SEAboss4_spectral] at @s run playsound item.crossbow.loading_middle hostile @a ~ ~ ~ 1 1.1
 execute as @n[tag=SEAboss4,scores={rng8=30},tag=SEAboss4_spectral] at @s run playsound item.crossbow.loading_end hostile @a ~ ~ ~ 1 1.1
 
+execute as @n[tag=SEAboss4,scores={rng8=30..59},tag=SEAboss4_spectral] at @s anchored eyes positioned ^ ^ ^1.5 run particle end_rod ~ ~ ~ 0 0 0 0 1
+execute as @n[tag=SEAboss4,scores={rng8=30..59},tag=SEAboss4_spectral] at @s anchored eyes positioned ^ ^ ^1.8 run particle end_rod ~ ~ ~ 0 0 0 0 1
+execute as @n[tag=SEAboss4,scores={rng8=30..59},tag=SEAboss4_spectral] at @s anchored eyes positioned ^ ^ ^2.1 run particle end_rod ~ ~ ~ 0 0 0 0 1
+execute as @n[tag=SEAboss4,scores={rng8=30..59},tag=SEAboss4_spectral] at @s anchored eyes positioned ^ ^ ^2.4 run particle end_rod ~ ~ ~ 0 0 0 0 1
+execute as @n[tag=SEAboss4,scores={rng8=30..59},tag=SEAboss4_spectral] at @s anchored eyes positioned ^ ^ ^2.7 run particle end_rod ~ ~ ~ 0 0 0 0 1
+execute as @n[tag=SEAboss4,scores={rng8=30..59},tag=SEAboss4_spectral] at @s anchored eyes positioned ^ ^ ^3.0 run particle end_rod ~ ~ ~ 0 0 0 0 1
+execute as @n[tag=SEAboss4,scores={rng8=30..59},tag=SEAboss4_spectral] at @s anchored eyes positioned ^ ^ ^3.3 run particle end_rod ~ ~ ~ 0 0 0 0 1
+execute as @n[tag=SEAboss4,scores={rng8=30..59},tag=SEAboss4_spectral] at @s anchored eyes positioned ^ ^ ^3.6 run particle end_rod ~ ~ ~ 0 0 0 0 1
+execute as @n[tag=SEAboss4,scores={rng8=30..59},tag=SEAboss4_spectral] at @s anchored eyes positioned ^ ^ ^3.9 run particle end_rod ~ ~ ~ 0 0 0 0 1
+execute as @n[tag=SEAboss4,scores={rng8=30..59},tag=SEAboss4_spectral] at @s anchored eyes positioned ^ ^ ^4.2 run particle end_rod ~ ~ ~ 0 0 0 0 1
 execute as @n[tag=SEAboss4,scores={rng8=60},tag=SEAboss4_spectral] at @s run execute positioned 0.0 0 0.0 run summon marker ^ ^0.15 ^2 {Tags:["SEAboss4_spectral_marker"]}
 execute as @n[tag=SEAboss4,scores={rng8=60},tag=SEAboss4_spectral] at @s run execute as @e[tag=SEAboss4_spectral_marker,type=marker] at @s run tp @s ~ 0.05 ~
 execute as @n[tag=SEAboss4,scores={rng8=60},tag=SEAboss4_spectral] at @s run playsound entity.arrow.shoot hostile @a ~ ~1.5 ~ 1 1.1
