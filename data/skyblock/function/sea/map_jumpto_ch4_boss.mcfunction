@@ -43,7 +43,7 @@ execute positioned 90185 19 130 run summon marker ~ ~ ~ {Tags:["SEAch4_spawn"]}
 execute positioned 90186 36 175 run summon marker ~ ~ ~ {Tags:["SEAch4_spawn_timer","SEAch4_spawn_timer_waterstorage"]}
 
 
-execute positioned 90164 13 99 positioned 90163 13 102 run function skyblock:sea/m/drowned
+execute positioned 90164 13 99 positioned 90162 13 102 run function skyblock:sea/m/drowned
 execute positioned 90164 13 99 positioned 90157 13 102 run function skyblock:sea/m/drowned_hat
 execute positioned 90164 13 99 run summon marker ~ ~ ~ {Tags:["SEAch4_spawn"]}
 
