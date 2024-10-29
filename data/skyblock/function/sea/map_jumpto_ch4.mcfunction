@@ -23,7 +23,7 @@ give @a[tag=SEAPT] nether_star 3
 
 give @a[tag=SEAPT] spyglass[lore=['{"text":"我随身携带的望远镜。","color":"white","italic":false}','{"text":"在前途未知的时刻，紧握住它可以让我不再迷惘。","color":"white","italic":false}','{"text":"手持时：显示任务目标 & 跳过已阅读的剧情对话","color":"green","italic":false}']]
 give @a[tag=SEAPT] compass
-give @a[tag=SEAPT] bread 3
+give @a[tag=SEAPT] bread 6
 give @a[tag=SEAPT] carrot 5
 give @a[tag=SEAPT] potato 5
 give @a[tag=SEAPT] arrow 5
