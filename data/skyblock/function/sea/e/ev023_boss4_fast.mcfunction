@@ -206,12 +206,12 @@ execute as @n[tag=SEAboss4,scores={rng8=10},tag=SEAboss4_spectral] at @s run pla
 execute as @n[tag=SEAboss4,scores={rng8=20},tag=SEAboss4_spectral] at @s run playsound item.crossbow.loading_middle hostile @a ~ ~ ~ 1 1.1
 execute as @n[tag=SEAboss4,scores={rng8=30},tag=SEAboss4_spectral] at @s run playsound item.crossbow.loading_end hostile @a ~ ~ ~ 1 1.1
 
-execute as @n[tag=SEAboss4,scores={rng8=50},tag=SEAboss4_spectral] at @s run execute positioned 0.0 0 0.0 run summon marker ^ ^0.15 ^2 {Tags:["SEAboss4_spectral_marker"]}
-execute as @n[tag=SEAboss4,scores={rng8=50},tag=SEAboss4_spectral] at @s run execute as @e[tag=SEAboss4_spectral_marker,type=marker] at @s run tp @s ~ 0.05 ~
-execute as @n[tag=SEAboss4,scores={rng8=50},tag=SEAboss4_spectral] at @s run playsound entity.arrow.shoot hostile @a ~ ~1.5 ~ 1 1.1
-execute as @n[tag=SEAboss4,scores={rng8=50},tag=SEAboss4_spectral] at @s positioned ^ ^ ^0.5 run summon spectral_arrow ~ ~1.5 ~ {Tags:["SEAboss4_spectral_arrow1"],life:1100,damage:2.0}
-execute as @n[tag=SEAboss4,scores={rng8=50},tag=SEAboss4_spectral] at @s run data modify entity @n[type=spectral_arrow,tag=SEAboss4_spectral_arrow1] Motion set from entity @n[type=marker,tag=SEAboss4_spectral_marker] Pos
-execute as @n[tag=SEAboss4,scores={rng8=50},tag=SEAboss4_spectral] at @s run kill @e[type=marker,tag=SEAboss4_spectral_marker]
+execute as @n[tag=SEAboss4,scores={rng8=60},tag=SEAboss4_spectral] at @s run execute positioned 0.0 0 0.0 run summon marker ^ ^0.15 ^2 {Tags:["SEAboss4_spectral_marker"]}
+execute as @n[tag=SEAboss4,scores={rng8=60},tag=SEAboss4_spectral] at @s run execute as @e[tag=SEAboss4_spectral_marker,type=marker] at @s run tp @s ~ 0.05 ~
+execute as @n[tag=SEAboss4,scores={rng8=60},tag=SEAboss4_spectral] at @s run playsound entity.arrow.shoot hostile @a ~ ~1.5 ~ 1 1.1
+execute as @n[tag=SEAboss4,scores={rng8=60},tag=SEAboss4_spectral] at @s positioned ^ ^ ^0.5 run summon spectral_arrow ~ ~1.5 ~ {Tags:["SEAboss4_spectral_arrow1"],life:1100,damage:2.0}
+execute as @n[tag=SEAboss4,scores={rng8=60},tag=SEAboss4_spectral] at @s run data modify entity @n[type=spectral_arrow,tag=SEAboss4_spectral_arrow1] Motion set from entity @n[type=marker,tag=SEAboss4_spectral_marker] Pos
+execute as @n[tag=SEAboss4,scores={rng8=60},tag=SEAboss4_spectral] at @s run kill @e[type=marker,tag=SEAboss4_spectral_marker]
 
 execute as @n[tag=SEAboss4,scores={rng8=70..},tag=SEAboss4_spectral] at @s run scoreboard players set @s rng8 0
 
