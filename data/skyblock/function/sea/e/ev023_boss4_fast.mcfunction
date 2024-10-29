@@ -39,9 +39,9 @@ execute as @n[tag=SEAboss4,nbt={OnGround:1b},tag=!SEAboss4_attack_dashheavy,tag=
 execute store result score @n[tag=SEAboss4] rng6 run random value 1..60
 
 scoreboard players add SEAmusic rng1 1
-execute if score SEAmusic rng1 matches 700 as @a[tag=SEAPT] at @s as @a[tag=SEAPT] at @s run playsound minecraft:app2.astrum music @s ~ ~ ~ 10 1
-execute if score SEAmusic rng1 matches 700 as @r[tag=SEAPT] at @s positioned 90185 56 61 as @a[gamemode=spectator,distance=0..250] run playsound minecraft:app2.astrum music @s ~ ~ ~ 10 1
-execute if score SEAmusic rng1 matches 700.. run scoreboard players set SEAmusic rng1 0
+execute if score SEAmusic rng1 matches 3500 as @a[tag=SEAPT] at @s as @a[tag=SEAPT] at @s run playsound minecraft:app2.astrum music @s ~ ~ ~ 10 1
+execute if score SEAmusic rng1 matches 3500 as @r[tag=SEAPT] at @s positioned 90185 56 61 as @a[gamemode=spectator,distance=0..250] run playsound minecraft:app2.astrum music @s ~ ~ ~ 10 1
+execute if score SEAmusic rng1 matches 3500.. run scoreboard players set SEAmusic rng1 0
 
 execute as @n[tag=SEAboss4,scores={rng2=0..3,rng6=1..3,rng8=..0,rng9=..0}] at @s run tag @s add SEAboss4_attack
 execute as @n[tag=SEAboss4,scores={rng2=0..3,rng6=1..3,rng8=..0,rng9=..0}] at @s run scoreboard players set @s rng8 1
