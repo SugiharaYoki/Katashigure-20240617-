@@ -195,7 +195,7 @@ execute as @n[tag=SEAboss4,scores={rng8=63},tag=SEAboss4_defense] at @s rotated 
 execute as @n[tag=SEAboss4,scores={rng8=63},tag=SEAboss4_defense] at @s positioned ^ ^ ^0.5 as @a[tag=SEAPT,distance=0..1.1,tag=!SEAboss4_sneaked] at @s run damage @s 6 generic
 execute as @n[tag=SEAboss4,scores={rng8=69},tag=SEAboss4_defense] at @s run scoreboard players set @s rng8 0
 
-execute as @n[tag=SEAboss4,scores={rng8=2,rng5=4},tag=SEAboss4_attack] at @s run tag @s add SEAboss4_spectral
+execute as @n[tag=SEAboss4,scores={rng8=2,rng5=5},tag=SEAboss4_attack] at @s run tag @s add SEAboss4_spectral
 execute as @n[tag=SEAboss4,scores={rng8=2},tag=SEAboss4_spectral] at @s run tellraw @a[tag=SEAPT] [{"text": "艾德雯娜","color": "red"},{"text": "举起工程弩。","color": "yellow"}]
 execute as @n[tag=SEAboss4,scores={rng8=2..60},tag=SEAboss4_spectral] at @s run item replace entity @s weapon.mainhand with crossbow
 execute as @n[tag=SEAboss4,scores={rng8=10},tag=SEAboss4_spectral] at @s run playsound item.crossbow.loading_start hostile @a ~ ~ ~ 1 1.1
