@@ -99,6 +99,20 @@ execute as @n[tag=SEAboss4,scores={rng2=8..},tag=!SEAboss4_phase2] run tag @s ad
 
 execute as @n[tag=SEAboss4,scores={rng8=1..}] at @s run scoreboard players add @s rng8 1
 
+
+execute as @n[tag=SEAboss4,scores={rng7=180..}] run scoreboard players set @s rng8 0
+execute as @n[tag=SEAboss4,scores={rng7=180}] run data modify entity @s Invulnerable set value 1b
+execute as @n[tag=SEAboss4,scores={rng7=180}] run stopsound @a[tag=SEAPT]
+execute as @n[tag=SEAboss4,scores={rng7=180}] run tellraw @a[tag=SEAPT] {"text": "越涵：“都、都别打了！！全都是自己人！！”","color": "green"}
+execute as @n[tag=SEAboss4,scores={rng7=180}] positioned 90185.01 69.00 72.02 run function skyblock:sea/m/npc_yuehan
+execute as @n[tag=SEAboss4,scores={rng7=180..}] as @e[tag=SEAyuehan] at @s run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
+
+
+execute as @n[tag=SEAboss4,scores={rng7=180}] as @a run bossbar remove 9066601
+execute as @n[tag=SEAboss4,scores={rng7=180}] as @a run bossbar set 9066601 visible false
+execute as @n[tag=SEAboss4,scores={rng7=180}] as @a run bossbar set minecraft:9066601 players @s
+execute as @n[tag=SEAboss4,scores={rng7=180}] as @a[tag=SEAPT] if score @s sea_speedrun_ch4 > sc sea_speedrun_ch4 run scoreboard players operation @s sea_speedrun_ch4 = sc sea_speedrun_ch4
+
 execute as @n[tag=SEAboss4,scores={rng8=4},tag=SEAboss4_eat] at @s run tellraw @a[tag=SEAPT] [{"text": "艾德雯娜","color": "red"},{"text": "准备食用面包。","color": "green"}]
 execute as @n[tag=SEAboss4,scores={rng8=6..27},tag=SEAboss4_eat] at @s run item replace entity @s weapon.mainhand with bread
 execute as @n[tag=SEAboss4,scores={rng8=28},tag=SEAboss4_eat] at @s run item replace entity @s weapon.mainhand with air
