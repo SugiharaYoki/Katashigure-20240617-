@@ -45,7 +45,7 @@ execute as @s[scores={sea_4temp1=90}] positioned 90185.01 57.00 51.95 run summon
 execute as @s[scores={sea_4temp1=90}] positioned 90189 57 54 run summon marker ~ ~ ~ {Tags:["SEAboss4_tp"]}
 execute as @s[scores={sea_4temp1=90}] positioned 90191.99 57.00 59.01 run summon marker ~ ~ ~ {Tags:["SEAboss4_tp"]}
 
-execute if entity @n[tag=SEAboss_end] run scoreboard players add @s rng1 1
+execute if entity @n[tag=SEAboss4_end] run scoreboard players add @s rng1 1
 
 execute as @s[scores={rng1=5}] run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
 execute as @s[scores={rng1=5}] if entity @n[tag=sc,scores={sea_player=1}] run tellraw @a[distance=0..250] {"text": "艾德雯娜：“沈越涵……？我的天，所以你是他们信得过的人。”","color": "green"}
