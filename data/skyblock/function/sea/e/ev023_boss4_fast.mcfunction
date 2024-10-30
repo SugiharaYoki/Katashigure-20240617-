@@ -192,6 +192,7 @@ execute as @n[tag=SEAboss4,scores={rng8=48,rng4=1..3},tag=SEAboss4_attack_drone]
 execute as @n[tag=SEAboss4,scores={rng8=53..},tag=SEAboss4_attack_drone] run scoreboard players set @s rng8 0
 
 execute as @a[tag=SEAPT,nbt={active_effects:[{id:"minecraft:glowing"}]}] run effect give @s slowness 3 99 false
+execute as @a[tag=SEAPT,nbt={active_effects:[{id:"minecraft:glowing"}]}] run effect clear @s glowing
 
 execute as @n[tag=SEAboss4,scores={rng8=2,rng5=3},tag=SEAboss4_attack] at @s run tag @s add SEAboss4_attack_dashheavy
 execute as @n[tag=SEAboss4,scores={rng8=2},tag=SEAboss4_attack_dashheavy] at @s run particle flame ~ ~1 ~ 0.9 0 0.9 0 10
@@ -273,8 +274,10 @@ execute as @n[tag=SEAboss4,scores={rng8=2,rng5=6},tag=SEAboss4_attack] at @s run
 execute as @n[tag=SEAboss4,scores={rng8=2},tag=SEAboss4_shadow] at @s run tellraw @a[tag=SEAPT] [{"text": "艾德雯娜","color": "red"},{"text": "启动残影模板。","color": "light_purple"}]
 execute as @n[tag=SEAboss4,scores={rng8=2},tag=SEAboss4_shadow] at @s run particle portal ~ ~1 ~ 0.8 1.0 0.8 0 50
 execute as @n[tag=SEAboss4,scores={rng8=2},tag=SEAboss4_shadow,nbt={OnGround:true}] at @s run function skyblock:sea/m/mine
-execute as @n[tag=SEAboss4,scores={rng8=2},tag=SEAboss4_shadow,nbt={OnGround:true}] at @s positioned ^ ^ ^2 if block ~ ~ ~ air unless block ~ ~-0. ~ air run function skyblock:sea/m/mine
-execute as @n[tag=SEAboss4,scores={rng8=2},tag=SEAboss4_shadow,nbt={OnGround:true}] at @s positioned ^ ^ ^4 if block ~ ~ ~ air unless block ~ ~-0. ~ air run function skyblock:sea/m/mine
+execute as @n[tag=SEAboss4,scores={rng8=2},tag=SEAboss4_shadow,nbt={OnGround:true}] at @s positioned ^ ^ ^2 if block ~ ~-0 ~ air unless block ~ ~-1 ~ air run function skyblock:sea/m/mine
+execute as @n[tag=SEAboss4,scores={rng8=2},tag=SEAboss4_shadow,nbt={OnGround:true}] at @s positioned ^ ^ ^4 if block ~ ~-0 ~ air unless block ~ ~-1 ~ air run function skyblock:sea/m/mine
+execute as @n[tag=SEAboss4,scores={rng8=2},tag=SEAboss4_shadow,nbt={OnGround:true}] at @s positioned ^ ^ ^2 if block ~ ~-1 ~ air unless block ~ ~-2 ~ air run function skyblock:sea/m/mine
+execute as @n[tag=SEAboss4,scores={rng8=2},tag=SEAboss4_shadow,nbt={OnGround:true}] at @s positioned ^ ^ ^4 if block ~ ~-1 ~ air unless block ~ ~-2 ~ air run function skyblock:sea/m/mine
 execute as @n[tag=SEAboss4,scores={rng8=2},tag=SEAboss4_shadow] at @s run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
 execute as @n[tag=SEAboss4,scores={rng8=2},tag=SEAboss4_shadow] at @s positioned 0.0 0 0.0 run summon marker ^ ^0.32 ^5.4 {Tags:["SEA_boss4_marker"]}
 execute as @n[tag=SEAboss4,scores={rng8=2},tag=SEAboss4_shadow] at @s run data modify entity @n[tag=SEAboss4_shadow] Motion set from entity @n[type=marker,tag=SEA_boss4_marker] Pos
