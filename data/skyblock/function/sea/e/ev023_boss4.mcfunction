@@ -71,6 +71,13 @@ execute as @s[scores={rng1=42}] as @n[tag=SEAyuehan] at @s run tp @s 90180 57 81
 execute as @s[scores={rng1=44..}] as @n[tag=SEAyuehan] at @s run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
 
 
+execute as @s[scores={rng1=63}] run fill 90182 57 81 90182 57 80 air
+execute as @s[scores={rng1=65}] run fill 90182 58 81 90182 58 80 air
+execute as @s[scores={rng1=67}] run fill 90182 59 81 90182 59 80 air
+execute as @s[scores={rng1=63}] run playsound block.iron_door.open block @a 90183.00 59.91 80.91 1 0.8
+execute as @s[scores={rng1=65}] run playsound block.iron_door.open block @a 90183.00 59.91 80.91 1 0.8
+execute as @s[scores={rng1=67}] run playsound block.iron_door.open block @a 90183.00 59.91 80.91 1 0.8
+
 execute as @s[scores={rng1=55}] run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
 execute as @s[scores={rng1=55}] run tellraw @a[distance=0..250] {"text": "艾德雯娜：“抱歉，还好没酿成悲剧。”","color": "green"}
 
