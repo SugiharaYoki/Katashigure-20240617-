@@ -219,9 +219,9 @@ execute as @n[tag=SEAboss4,scores={rng8=2},tag=SEAboss4_defense] at @s run effec
 execute as @n[tag=SEAboss4,scores={rng8=2},tag=SEAboss4_defense] at @s run particle trial_spawner_detection ~ ~ ~ 0.8 0 0.8 0 5
 execute as @n[tag=SEAboss4,scores={rng8=53},tag=SEAboss4_defense] at @s run particle flame ~ ~1 ~ 0.9 0 0.9 0 10
 execute as @n[tag=SEAboss4,scores={rng8=60},tag=SEAboss4_defense] at @s run item replace entity @s weapon.mainhand with iron_axe
-execute as @n[tag=SEAboss4,scores={rng8=60,rng2=7..},tag=SEAboss4_defense] at @s positioned 0.0 0 0.0 run summon marker ^ ^0.12 ^0.8 {Tags:["SEA_boss4_marker"]}
-execute as @n[tag=SEAboss4,scores={rng8=60,rng2=7..},tag=SEAboss4_defense] at @s run data modify entity @n[tag=SEAboss4_defense] Motion set from entity @n[type=marker,tag=SEA_boss4_marker] Pos
-execute as @n[tag=SEAboss4,scores={rng8=60,rng2=7..},tag=SEAboss4_defense] at @s run kill @e[type=marker,tag=SEA_boss4_marker]
+execute as @n[tag=SEAboss4,scores={rng8=60,rng2=8..},tag=SEAboss4_defense] at @s positioned 0.0 0 0.0 run summon marker ^ ^0.12 ^0.8 {Tags:["SEA_boss4_marker"]}
+execute as @n[tag=SEAboss4,scores={rng8=60,rng2=8..},tag=SEAboss4_defense] at @s run data modify entity @n[tag=SEAboss4_defense] Motion set from entity @n[type=marker,tag=SEA_boss4_marker] Pos
+execute as @n[tag=SEAboss4,scores={rng8=60,rng2=8..},tag=SEAboss4_defense] at @s run kill @e[type=marker,tag=SEA_boss4_marker]
 execute as @n[tag=SEAboss4,scores={rng8=63},tag=SEAboss4_defense] at @s run playsound entity.player.attack.sweep hostile @a ~ ~ ~ 1 1.1
 execute as @n[tag=SEAboss4,scores={rng8=63},tag=SEAboss4_defense] at @s run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
 execute as @n[tag=SEAboss4,scores={rng8=63},tag=SEAboss4_defense] at @s rotated ~ 0 run particle sweep_attack ^ ^1.2 ^1.1 0.2 0 0.2 0 2
