@@ -12,6 +12,14 @@ execute as @s[scores={sea_4temp1=11}] positioned 90158 36 110 run function skybl
 
 execute as @s[scores={sea_4temp1=11}] positioned 90153 36 110 run function skyblock:sea/m/skeleton
 
+#食堂
+execute as @s[scores={sea_4temp1=11}] positioned 90177 38 81 run function skyblock:sea/m/skeleton
+execute as @s[scores={sea_4temp1=11}] positioned 90174 38 82 run function skyblock:sea/m/skeleton_melee
+execute as @s[scores={sea_4temp1=11}] positioned 90177 38 86 run function skyblock:sea/m/skeleton_melee
+execute as @s[scores={sea_4temp1=11}] positioned 90175 38 82 run function skyblock:sea/m/shadow
+execute as @s[scores={sea_4temp1=11}] positioned 90168 38 83 run function skyblock:sea/m/zombie_cook
+execute as @s[scores={sea_4temp1=11}] positioned 90168 38 83 run function skyblock:sea/m/zombie_cook
+execute as @s[scores={sea_4temp1=11}] positioned 90168 38 83 run function skyblock:sea/m/zombie_security2
 
 
 execute as @s[scores={sea_4temp1=100..110}] positioned 90169 35 100 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10

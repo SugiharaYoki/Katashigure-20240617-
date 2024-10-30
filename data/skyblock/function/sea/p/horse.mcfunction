@@ -1,10 +1,10 @@
 
-execute store result score @s rng1 run random value 2..10
+execute store result score @s rng1 run random value 2..8
 execute store result score @s rng2 run random value 1..8
 execute store result score @s rng3 run random value 1..12
 scoreboard players remove @s sea_4temp1 1
 
-execute as @s[scores={rng1=1..4,sea_4temp1=..19}] at @s if entity @a[tag=SEAPT,distance=0..9] run scoreboard players set @s sea_4temp1 40
+execute as @s[scores={rng1=1..4,sea_4temp1=..24}] at @s if entity @a[tag=SEAPT,distance=0..9] run scoreboard players set @s sea_4temp1 40
 
 
 execute as @s[scores={sea_4temp1=39}] run playsound entity.zombie_horse.ambient hostile @a ~ ~ ~ 1 0.8
@@ -15,14 +15,14 @@ execute as @s[scores={sea_4temp1=29}] run attribute @s generic.movement_speed ba
 execute as @s[scores={sea_4temp1=30}] run attribute @s generic.armor base set 0
 execute as @s[scores={sea_4temp1=29}] run attribute @s generic.armor base set 10.0
 
-execute as @s[scores={sea_4temp1=20,rng2=1}] at @s rotated ~ 0 positioned ^ ^ ^1 if block ~ ~ ~ air run summon marker ~ ~ ~ {Tags:["SEAhorse_summoner"]}
-execute as @s[scores={sea_4temp1=20,rng2=2}] at @s rotated ~ 0 positioned ^ ^ ^-1 if block ~ ~ ~ air run summon marker ~ ~ ~ {Tags:["SEAhorse_summoner"]}
-execute as @s[scores={sea_4temp1=20,rng2=3}] at @s rotated ~ 0 positioned ^1 ^ ^1 if block ~ ~ ~ air run summon marker ~ ~ ~ {Tags:["SEAhorse_summoner"]}
-execute as @s[scores={sea_4temp1=20,rng2=4}] at @s rotated ~ 0 positioned ^-1 ^ ^1 if block ~ ~ ~ air run summon marker ~ ~ ~ {Tags:["SEAhorse_summoner"]}
-execute as @s[scores={sea_4temp1=20,rng2=5}] at @s rotated ~ 0 positioned ^1 ^ ^-1 if block ~ ~ ~ air run summon marker ~ ~ ~ {Tags:["SEAhorse_summoner"]}
-execute as @s[scores={sea_4temp1=20,rng2=6}] at @s rotated ~ 0 positioned ^-1 ^ ^-1 if block ~ ~ ~ air run summon marker ~ ~ ~ {Tags:["SEAhorse_summoner"]}
-execute as @s[scores={sea_4temp1=20,rng2=7}] at @s rotated ~ 0 positioned ^1 ^ ^ if block ~ ~ ~ air run summon marker ~ ~ ~ {Tags:["SEAhorse_summoner"]}
-execute as @s[scores={sea_4temp1=20,rng2=8}] at @s rotated ~ 0 positioned ^-1 ^ ^ if block ~ ~ ~ air run summon marker ~ ~ ~ {Tags:["SEAhorse_summoner"]}
+execute as @s[scores={sea_4temp1=25,rng2=1}] at @s rotated ~ 0 positioned ^ ^ ^1 if block ~ ~ ~ air run summon marker ~ ~ ~ {Tags:["SEAhorse_summoner"]}
+execute as @s[scores={sea_4temp1=25,rng2=2}] at @s rotated ~ 0 positioned ^ ^ ^-1 if block ~ ~ ~ air run summon marker ~ ~ ~ {Tags:["SEAhorse_summoner"]}
+execute as @s[scores={sea_4temp1=25,rng2=3}] at @s rotated ~ 0 positioned ^1 ^ ^1 if block ~ ~ ~ air run summon marker ~ ~ ~ {Tags:["SEAhorse_summoner"]}
+execute as @s[scores={sea_4temp1=25,rng2=4}] at @s rotated ~ 0 positioned ^-1 ^ ^1 if block ~ ~ ~ air run summon marker ~ ~ ~ {Tags:["SEAhorse_summoner"]}
+execute as @s[scores={sea_4temp1=25,rng2=5}] at @s rotated ~ 0 positioned ^1 ^ ^-1 if block ~ ~ ~ air run summon marker ~ ~ ~ {Tags:["SEAhorse_summoner"]}
+execute as @s[scores={sea_4temp1=25,rng2=6}] at @s rotated ~ 0 positioned ^-1 ^ ^-1 if block ~ ~ ~ air run summon marker ~ ~ ~ {Tags:["SEAhorse_summoner"]}
+execute as @s[scores={sea_4temp1=25,rng2=7}] at @s rotated ~ 0 positioned ^1 ^ ^ if block ~ ~ ~ air run summon marker ~ ~ ~ {Tags:["SEAhorse_summoner"]}
+execute as @s[scores={sea_4temp1=25,rng2=8}] at @s rotated ~ 0 positioned ^-1 ^ ^ if block ~ ~ ~ air run summon marker ~ ~ ~ {Tags:["SEAhorse_summoner"]}
 
 
 #execute as @s[scores={rng3=1}] at @s rotated ~ 0 positioned ^ ^ ^3 if block ~ ~ ~ air run summon evoker_fangs

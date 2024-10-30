@@ -410,6 +410,15 @@ fill 90184 59 84 90185 57 84 iron_block
 setblock 90182 71 74 minecraft:waxed_copper_bulb[lit=false]
 setblock 90187 71 74 minecraft:waxed_copper_bulb[lit=false]
 
+fill 90169 39 85 90167 39 85 barrel[facing=north]
+item replace block 90167 39 85 container.13 with cookie 3
+item replace block 90168 39 85 container.13 with cookie 3
+item replace block 90169 39 85 container.13 with bread 2
+
+fill 90165 38 82 90165 38 81 smoker[facing=east]
+summon minecraft:item_frame 90169 39 77 {Invisible:1b,Fixed:0b,Invulnerable:0b,Facing:1b,Item:{id:"minecraft:pumpkin_pie"}}
+summon minecraft:item_frame 90167 39 77 {Invisible:1b,Fixed:0b,Invulnerable:0b,Facing:1b,Item:{id:"minecraft:pumpkin_pie"}}
+
 #最终大厅 第七章入口
 setblock 90154 18 134 minecraft:waxed_copper_bulb[lit=false]
 setblock 90154 18 126 minecraft:waxed_copper_bulb[lit=false]
