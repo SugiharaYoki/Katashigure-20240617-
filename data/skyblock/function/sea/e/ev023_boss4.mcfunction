@@ -81,6 +81,8 @@ execute as @s[scores={rng1=86}] if entity @n[tag=sc,scores={sea_player=1}] if it
 execute as @s[scores={rng1=86}] if entity @n[tag=sc,scores={sea_player=2..}] if items entity @s container.* bread run tellraw @a[distance=0..250] [{"selector":"@s","color":"white"},{"text":"：有是有，但我得先问我同事他要不要。我可不想面包直接被你霍霍了。","color":"white"}]
 
 execute as @s[scores={rng1=100}] run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
+execute as @s[scores={rng1=100}] if entity @n[tag=sc,scores={sea_player=1}] unless items entity @s container.* bread run tellraw @a[distance=0..250] {"text": "艾德雯娜：“嗯，想必也是如此……抱歉。我们先去找越涵吧。”","color": "green"}
+execute as @s[scores={rng1=100}] if entity @n[tag=sc,scores={sea_player=2..}] unless items entity @s container.* bread run tellraw @a[distance=0..250] {"text": "艾德雯娜：“嗯，想必也是如此……抱歉。我们先去找越涵吧。”","color": "green"}
 execute as @s[scores={rng1=100}] if entity @n[tag=sc,scores={sea_player=1}] if items entity @s container.* bread run tellraw @a[distance=0..250] {"text": "艾德雯娜：“待会……分我一块吧，不过先过一会儿。来吧，我们去跟越涵解释一下。”","color": "green"}
 execute as @s[scores={rng1=100}] if entity @n[tag=sc,scores={sea_player=2..}] if items entity @s container.* bread run tellraw @a[distance=0..250] {"text": "艾德雯娜：“也是，你没有义务给我。都来吧，我们去跟越涵解释一下。”","color": "green"}
 
