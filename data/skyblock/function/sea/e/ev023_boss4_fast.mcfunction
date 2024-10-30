@@ -92,11 +92,11 @@ execute as @n[tag=SEAboss4,scores={health=..80,rng2=11..}] run scoreboard player
 execute as @n[tag=SEAboss4,scores={rng2=4..},tag=!SEAboss4_phase2] run tellraw @a[tag=SEAPT] {"text": "艾德雯娜：“真不赖，可惜偷偷告诉你，你手上的装备，我也全都有。”","color": "green"}
 execute as @n[tag=SEAboss4,scores={rng2=4..},tag=!SEAboss4_phase2] run tag @s add SEAboss4_phase2
 
-execute as @n[tag=SEAboss4,scores={rng2=8..},tag=!SEAboss4_phase2] run tellraw @a[tag=SEAPT] {"text": "艾德雯娜：“没想到能让我陷入苦战呢……我该拿出全部实力了。”","color": "green"}
-execute as @n[tag=SEAboss4,scores={rng2=8..},tag=!SEAboss4_phase2] run scoreboard players set @s rng8 0
-execute as @n[tag=SEAboss4,scores={rng2=8..},tag=!SEAboss4_phase2] run playsound minecraft:item.trident.thunder hostile @a ~ ~ ~ 3 0.83
-execute as @n[tag=SEAboss4,scores={rng2=8..},tag=!SEAboss4_phase2] run particle flame ~ ~ ~ 3 0 3 0.05 40
-execute as @n[tag=SEAboss4,scores={rng2=8..},tag=!SEAboss4_phase2] run tag @s add SEAboss4_phase2
+execute as @n[tag=SEAboss4,scores={rng2=8..},tag=!SEAboss4_phase3] run tellraw @a[tag=SEAPT] {"text": "艾德雯娜：“没想到能让我陷入苦战呢……我该拿出全部实力了。”","color": "green"}
+execute as @n[tag=SEAboss4,scores={rng2=8..},tag=!SEAboss4_phase3] run scoreboard players set @s rng8 0
+execute as @n[tag=SEAboss4,scores={rng2=8..},tag=!SEAboss4_phase3] run playsound minecraft:item.trident.thunder hostile @a ~ ~ ~ 3 0.83
+execute as @n[tag=SEAboss4,scores={rng2=8..},tag=!SEAboss4_phase3] run particle flame ~ ~ ~ 3 0 3 0.05 40
+execute as @n[tag=SEAboss4,scores={rng2=8..},tag=!SEAboss4_phase3] run tag @s add SEAboss4_phase3
 
 execute as @n[tag=SEAboss4,scores={rng8=1..}] at @s run scoreboard players add @s rng8 1
 
