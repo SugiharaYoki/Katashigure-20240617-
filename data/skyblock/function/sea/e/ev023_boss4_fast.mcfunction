@@ -81,6 +81,7 @@ execute as @n[tag=SEAboss4,scores={rng8=0}] at @s run tag @s remove SEAboss4_att
 execute as @n[tag=SEAboss4,scores={rng8=0}] at @s run tag @s remove SEAboss4_defense
 execute as @n[tag=SEAboss4,scores={rng8=0}] at @s run tag @s remove SEAboss4_spectral
 execute as @n[tag=SEAboss4,scores={rng8=0}] at @s run tag @s remove SEAboss4_shadow
+execute as @n[tag=SEAboss4,scores={rng8=0}] at @s run tag @s remove SEAboss4_cannon
 execute as @n[tag=SEAboss4,scores={rng8=0}] at @s run item replace entity @s weapon.mainhand with air
 execute as @n[tag=SEAboss4,scores={health=..80,rng2=..10,rng1=1,rng8=..0}] run tag @s remove SEAboss4_attack
 execute as @n[tag=SEAboss4,scores={health=..80,rng2=..10,rng1=1,rng8=..0}] run tag @s add SEAboss4_eat
