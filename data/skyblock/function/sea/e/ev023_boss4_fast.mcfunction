@@ -327,19 +327,19 @@ execute as @n[tag=SEAboss4,scores={rng8=60},tag=SEAboss4_cannon] at @s run execu
 execute as @n[tag=SEAboss4,scores={rng8=60},tag=SEAboss4_cannon] at @s run execute at @s as @n[tag=SEAshotgun_shoot_boss4] rotated as @p run tp @s ~ ~ ~ facing ^ ^ ^1
 execute as @n[tag=SEAboss4,scores={rng8=60},tag=SEAboss4_cannon] at @s run execute as @n[tag=SEAshotgun_shoot_boss4] at @s run tp @s ~ ~ ~
 execute as @n[tag=SEAboss4,scores={rng8=60},tag=SEAboss4_cannon] at @s run execute as @n[tag=SEAshotgun_shoot_boss4] at @s run tp @s ^ ^ ^0.1
-execute as @n[tag=SEAboss4,scores={rng8=60},tag=SEAboss4_cannon] at @s run execute at @n[tag=SEAshotgun_shoot_boss4] as @a[distance=0..1.3] run damage @s 80 explosion
+execute as @n[tag=SEAboss4,scores={rng8=60},tag=SEAboss4_cannon] at @s run execute at @n[tag=SEAshotgun_shoot_boss4] as @a[distance=0..1.3] run damage @s 20 explosion
 execute as @n[tag=SEAboss4,scores={rng8=60},tag=SEAboss4_cannon] at @s run execute at @n[tag=SEAshotgun_shoot_boss4] as @a[distance=0..1.3] run data modify entity @s Fire set value 160s
 execute as @n[tag=SEAboss4,scores={rng8=60},tag=SEAboss4_cannon] at @s run execute as @n[tag=SEAshotgun_shoot_boss4] at @s run tp @s ^ ^ ^0.2
-execute as @n[tag=SEAboss4,scores={rng8=60},tag=SEAboss4_cannon] at @s run execute at @n[tag=SEAshotgun_shoot_boss4] as @a[distance=0..1.3] run damage @s 65 explosion
+execute as @n[tag=SEAboss4,scores={rng8=60},tag=SEAboss4_cannon] at @s run execute at @n[tag=SEAshotgun_shoot_boss4] as @a[distance=0..1.3] run damage @s 16 explosion
 execute as @n[tag=SEAboss4,scores={rng8=60},tag=SEAboss4_cannon] at @s run execute at @n[tag=SEAshotgun_shoot_boss4] as @a[distance=0..1.3] run data modify entity @s Fire set value 140s
 execute as @n[tag=SEAboss4,scores={rng8=60},tag=SEAboss4_cannon] at @s run execute as @n[tag=SEAshotgun_shoot_boss4] at @s run tp @s ^ ^ ^0.5
-execute as @n[tag=SEAboss4,scores={rng8=60},tag=SEAboss4_cannon] at @s run execute at @n[tag=SEAshotgun_shoot_boss4] as @a[distance=0..1.7] run damage @s 50 explosion
+execute as @n[tag=SEAboss4,scores={rng8=60},tag=SEAboss4_cannon] at @s run execute at @n[tag=SEAshotgun_shoot_boss4] as @a[distance=0..1.7] run damage @s 14 explosion
 execute as @n[tag=SEAboss4,scores={rng8=60},tag=SEAboss4_cannon] at @s run execute at @n[tag=SEAshotgun_shoot_boss4] as @a[distance=0..1.7] run data modify entity @s Fire set value 120s
 execute as @n[tag=SEAboss4,scores={rng8=60},tag=SEAboss4_cannon] at @s run execute as @n[tag=SEAshotgun_shoot_boss4] at @s run tp @s ^ ^ ^0.5
-execute as @n[tag=SEAboss4,scores={rng8=60},tag=SEAboss4_cannon] at @s run execute at @n[tag=SEAshotgun_shoot_boss4] as @a[distance=0..1.7] run damage @s 35 explosion
+execute as @n[tag=SEAboss4,scores={rng8=60},tag=SEAboss4_cannon] at @s run execute at @n[tag=SEAshotgun_shoot_boss4] as @a[distance=0..1.7] run damage @s 12 explosion
 execute as @n[tag=SEAboss4,scores={rng8=60},tag=SEAboss4_cannon] at @s run execute at @n[tag=SEAshotgun_shoot_boss4] as @a[distance=0..1.7] run data modify entity @s Fire set value 100s
 execute as @n[tag=SEAboss4,scores={rng8=60},tag=SEAboss4_cannon] at @s run execute as @n[tag=SEAshotgun_shoot_boss4] at @s run tp @s ^ ^ ^0.5
-execute as @n[tag=SEAboss4,scores={rng8=60},tag=SEAboss4_cannon] at @s run execute at @n[tag=SEAshotgun_shoot_boss4] as @a[distance=0..1.9] run damage @s 30 explosion
+execute as @n[tag=SEAboss4,scores={rng8=60},tag=SEAboss4_cannon] at @s run execute at @n[tag=SEAshotgun_shoot_boss4] as @a[distance=0..1.9] run damage @s 10 explosion
 execute as @n[tag=SEAboss4,scores={rng8=60},tag=SEAboss4_cannon] at @s run execute at @n[tag=SEAshotgun_shoot_boss4] as @a[distance=0..1.9] run data modify entity @s Fire set value 80s
 execute as @n[tag=SEAboss4,scores={rng8=60},tag=SEAboss4_cannon] at @s run kill @n[tag=SEAshotgun_shoot_boss4]
 execute as @n[tag=SEAboss4,scores={rng8=60},tag=SEAboss4_cannon] at @s positioned ^ ^1.2 ^1 run particle smoke ~ ~ ~ 0.11 0.11 0.11 0 10
