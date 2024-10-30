@@ -136,7 +136,7 @@ execute as @n[tag=SEAboss4,scores={rng8=30..},tag=SEAboss4_eat] at @s run scoreb
 
 execute store result score @n[tag=SEAboss4] rng5 run random value 1..4
 execute store result score @n[tag=SEAboss4,scores={rng2=4..7}] rng5 run random value 1..6
-execute store result score @n[tag=SEAboss4,scores={rng2=8..}] rng5 run random value 1..6
+execute store result score @n[tag=SEAboss4,scores={rng2=8..}] rng5 run random value 1..7
 execute as @n[tag=SEAboss4,scores={rng8=2,rng5=1},tag=SEAboss4_attack] at @s run tag @s add SEAboss4_attack_dash
 execute as @n[tag=SEAboss4,scores={rng8=2},tag=SEAboss4_attack_dash] at @s run particle flame ~ ~1 ~ 0.9 0 0.9 0 10
 execute as @n[tag=SEAboss4,scores={rng8=2},tag=SEAboss4_attack_dash] at @s run tellraw @a[tag=SEAPT] [{"text": "艾德雯娜","color": "red"},{"text": "举起消防斧。","color": "yellow"}]
@@ -280,6 +280,78 @@ execute as @n[tag=SEAboss4,scores={rng8=3},tag=SEAboss4_shadow] at @s run data m
 execute as @n[tag=SEAboss4,scores={rng8=3},tag=SEAboss4_shadow] at @s run kill @e[type=marker,tag=SEA_boss4_marker]
 
 execute as @n[tag=SEAboss4,scores={rng8=40},tag=SEAboss4_shadow] at @s run scoreboard players set @s rng8 0
+
+
+execute as @n[tag=SEAboss4,scores={rng8=2,rng5=7},tag=SEAboss4_attack] at @s run tag @s add SEAboss4_cannon
+execute as @n[tag=SEAboss4,scores={rng8=2},tag=SEAboss4_cannon] at @s run tellraw @a[tag=SEAPT] [{"text": "艾德雯娜","color": "red"},{"text": "举起霰弹枪！","color": "yellow"}]
+execute as @n[tag=SEAboss4,scores={rng8=2..60},tag=SEAboss4_cannon] at @s run item replace entity @s weapon.mainhand with shears
+execute as @n[tag=SEAboss4,scores={rng8=30..52},tag=SEAboss4_cannon] at @s run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
+execute as @n[tag=SEAboss4,scores={rng8=30..59},tag=SEAboss4_cannon] at @s anchored eyes positioned ^ ^ ^1.5 run particle end_rod ~ ~ ~ 0 0 0 0 1
+execute as @n[tag=SEAboss4,scores={rng8=30..59},tag=SEAboss4_cannon] at @s anchored eyes positioned ^ ^ ^1.8 run particle end_rod ~ ~ ~ 0 0 0 0 1
+execute as @n[tag=SEAboss4,scores={rng8=30..59},tag=SEAboss4_cannon] at @s anchored eyes positioned ^ ^ ^2.1 run particle end_rod ~ ~ ~ 0 0 0 0 1
+execute as @n[tag=SEAboss4,scores={rng8=30..59},tag=SEAboss4_cannon] at @s anchored eyes positioned ^ ^ ^2.4 run particle end_rod ~ ~ ~ 0 0 0 0 1
+execute as @n[tag=SEAboss4,scores={rng8=30..59},tag=SEAboss4_cannon] at @s anchored eyes positioned ^ ^ ^2.7 run particle end_rod ~ ~ ~ 0 0 0 0 1
+execute as @n[tag=SEAboss4,scores={rng8=30..59},tag=SEAboss4_cannon] at @s anchored eyes positioned ^ ^ ^3.0 run particle end_rod ~ ~ ~ 0 0 0 0 1
+execute as @n[tag=SEAboss4,scores={rng8=30..59},tag=SEAboss4_cannon] at @s anchored eyes positioned ^ ^ ^3.3 run particle end_rod ~ ~ ~ 0 0 0 0 1
+execute as @n[tag=SEAboss4,scores={rng8=30..59},tag=SEAboss4_cannon] at @s anchored eyes positioned ^ ^ ^3.6 run particle end_rod ~ ~ ~ 0 0 0 0 1
+execute as @n[tag=SEAboss4,scores={rng8=30..59},tag=SEAboss4_cannon] at @s anchored eyes positioned ^ ^ ^3.9 run particle end_rod ~ ~ ~ 0 0 0 0 1
+execute as @n[tag=SEAboss4,scores={rng8=30..59},tag=SEAboss4_cannon] at @s anchored eyes positioned ^ ^ ^4.2 run particle end_rod ~ ~ ~ 0 0 0 0 1
+execute as @n[tag=SEAboss4,scores={rng8=30..59},tag=SEAboss4_cannon] at @s anchored eyes positioned ^0.5 ^ ^1.5 run particle end_rod ~ ~ ~ 0 0 0 0 1
+execute as @n[tag=SEAboss4,scores={rng8=30..59},tag=SEAboss4_cannon] at @s anchored eyes positioned ^0.5 ^ ^1.8 run particle end_rod ~ ~ ~ 0 0 0 0 1
+execute as @n[tag=SEAboss4,scores={rng8=30..59},tag=SEAboss4_cannon] at @s anchored eyes positioned ^0.5 ^ ^2.1 run particle end_rod ~ ~ ~ 0 0 0 0 1
+execute as @n[tag=SEAboss4,scores={rng8=30..59},tag=SEAboss4_cannon] at @s anchored eyes positioned ^0.5 ^ ^2.4 run particle end_rod ~ ~ ~ 0 0 0 0 1
+execute as @n[tag=SEAboss4,scores={rng8=30..59},tag=SEAboss4_cannon] at @s anchored eyes positioned ^0.5 ^ ^2.7 run particle end_rod ~ ~ ~ 0 0 0 0 1
+execute as @n[tag=SEAboss4,scores={rng8=30..59},tag=SEAboss4_cannon] at @s anchored eyes positioned ^0.5 ^ ^3.0 run particle end_rod ~ ~ ~ 0 0 0 0 1
+execute as @n[tag=SEAboss4,scores={rng8=30..59},tag=SEAboss4_cannon] at @s anchored eyes positioned ^0.5 ^ ^3.3 run particle end_rod ~ ~ ~ 0 0 0 0 1
+execute as @n[tag=SEAboss4,scores={rng8=30..59},tag=SEAboss4_cannon] at @s anchored eyes positioned ^0.5 ^ ^3.6 run particle end_rod ~ ~ ~ 0 0 0 0 1
+execute as @n[tag=SEAboss4,scores={rng8=30..59},tag=SEAboss4_cannon] at @s anchored eyes positioned ^0.5 ^ ^3.9 run particle end_rod ~ ~ ~ 0 0 0 0 1
+execute as @n[tag=SEAboss4,scores={rng8=30..59},tag=SEAboss4_cannon] at @s anchored eyes positioned ^0.5 ^ ^4.2 run particle end_rod ~ ~ ~ 0 0 0 0 1
+execute as @n[tag=SEAboss4,scores={rng8=30..59},tag=SEAboss4_cannon] at @s anchored eyes positioned ^-0.5 ^ ^1.5 run particle end_rod ~ ~ ~ 0 0 0 0 1
+execute as @n[tag=SEAboss4,scores={rng8=30..59},tag=SEAboss4_cannon] at @s anchored eyes positioned ^-0.5 ^ ^1.8 run particle end_rod ~ ~ ~ 0 0 0 0 1
+execute as @n[tag=SEAboss4,scores={rng8=30..59},tag=SEAboss4_cannon] at @s anchored eyes positioned ^-0.5 ^ ^2.1 run particle end_rod ~ ~ ~ 0 0 0 0 1
+execute as @n[tag=SEAboss4,scores={rng8=30..59},tag=SEAboss4_cannon] at @s anchored eyes positioned ^-0.5 ^ ^2.4 run particle end_rod ~ ~ ~ 0 0 0 0 1
+execute as @n[tag=SEAboss4,scores={rng8=30..59},tag=SEAboss4_cannon] at @s anchored eyes positioned ^-0.5 ^ ^2.7 run particle end_rod ~ ~ ~ 0 0 0 0 1
+execute as @n[tag=SEAboss4,scores={rng8=30..59},tag=SEAboss4_cannon] at @s anchored eyes positioned ^-0.5 ^ ^3.0 run particle end_rod ~ ~ ~ 0 0 0 0 1
+execute as @n[tag=SEAboss4,scores={rng8=30..59},tag=SEAboss4_cannon] at @s anchored eyes positioned ^-0.5 ^ ^3.3 run particle end_rod ~ ~ ~ 0 0 0 0 1
+execute as @n[tag=SEAboss4,scores={rng8=30..59},tag=SEAboss4_cannon] at @s anchored eyes positioned ^-0.5 ^ ^3.6 run particle end_rod ~ ~ ~ 0 0 0 0 1
+execute as @n[tag=SEAboss4,scores={rng8=30..59},tag=SEAboss4_cannon] at @s anchored eyes positioned ^-0.5 ^ ^3.9 run particle end_rod ~ ~ ~ 0 0 0 0 1
+execute as @n[tag=SEAboss4,scores={rng8=30..59},tag=SEAboss4_cannon] at @s anchored eyes positioned ^-0.5 ^ ^4.2 run particle end_rod ~ ~ ~ 0 0 0 0 1
+
+execute as @n[tag=SEAboss4,scores={rng8=60},tag=SEAboss4_cannon] at @s run playsound minecraft:item.flintandsteel.use player @a ~ ~ ~ 0.8 1.2
+execute as @n[tag=SEAboss4,scores={rng8=60},tag=SEAboss4_cannon] at @s run playsound minecraft:block.fire.ambient player @a ~ ~ ~ 0.8 1.2
+execute as @n[tag=SEAboss4,scores={rng8=60},tag=SEAboss4_cannon] at @s run playsound minecraft:entity.firework_rocket.blast player @a ~ ~ ~ 1 0.5
+execute as @n[tag=SEAboss4,scores={rng8=60},tag=SEAboss4_cannon] at @s run playsound minecraft:entity.firework_rocket.blast player @a ~ ~ ~ 1 0.6
+execute as @n[tag=SEAboss4,scores={rng8=60},tag=SEAboss4_cannon] at @s run playsound minecraft:entity.firework_rocket.blast player @a ~ ~ ~ 1 0.75
+execute as @n[tag=SEAboss4,scores={rng8=60},tag=SEAboss4_cannon] at @s run playsound minecraft:entity.item.break player @a ~ ~ ~ 0.6 0.6
+execute as @n[tag=SEAboss4,scores={rng8=60},tag=SEAboss4_cannon] at @s run execute rotated as @s run summon marker ~ ~ ~ {Tags:["SEAshotgun_shoot_boss4"]}
+execute as @n[tag=SEAboss4,scores={rng8=60},tag=SEAboss4_cannon] at @s run execute at @s as @n[tag=SEAshotgun_shoot_boss4] rotated as @p run tp @s ~ ~ ~ facing ^ ^ ^1
+execute as @n[tag=SEAboss4,scores={rng8=60},tag=SEAboss4_cannon] at @s run execute as @n[tag=SEAshotgun_shoot_boss4] at @s run tp @s ~ ~ ~
+execute as @n[tag=SEAboss4,scores={rng8=60},tag=SEAboss4_cannon] at @s run execute as @n[tag=SEAshotgun_shoot_boss4] at @s run tp @s ^ ^ ^0.1
+execute as @n[tag=SEAboss4,scores={rng8=60},tag=SEAboss4_cannon] at @s run execute at @n[tag=SEAshotgun_shoot_boss4] as @a[distance=0..1.3] run damage @s 80 explosion
+execute as @n[tag=SEAboss4,scores={rng8=60},tag=SEAboss4_cannon] at @s run execute at @n[tag=SEAshotgun_shoot_boss4] as @a[distance=0..1.3] run data modify entity @s Fire set value 160s
+execute as @n[tag=SEAboss4,scores={rng8=60},tag=SEAboss4_cannon] at @s run execute as @n[tag=SEAshotgun_shoot_boss4] at @s run tp @s ^ ^ ^0.2
+execute as @n[tag=SEAboss4,scores={rng8=60},tag=SEAboss4_cannon] at @s run execute at @n[tag=SEAshotgun_shoot_boss4] as @a[distance=0..1.3] run damage @s 65 explosion
+execute as @n[tag=SEAboss4,scores={rng8=60},tag=SEAboss4_cannon] at @s run execute at @n[tag=SEAshotgun_shoot_boss4] as @a[distance=0..1.3] run data modify entity @s Fire set value 140s
+execute as @n[tag=SEAboss4,scores={rng8=60},tag=SEAboss4_cannon] at @s run execute as @n[tag=SEAshotgun_shoot_boss4] at @s run tp @s ^ ^ ^0.5
+execute as @n[tag=SEAboss4,scores={rng8=60},tag=SEAboss4_cannon] at @s run execute at @n[tag=SEAshotgun_shoot_boss4] as @a[distance=0..1.7] run damage @s 50 explosion
+execute as @n[tag=SEAboss4,scores={rng8=60},tag=SEAboss4_cannon] at @s run execute at @n[tag=SEAshotgun_shoot_boss4] as @a[distance=0..1.7] run data modify entity @s Fire set value 120s
+execute as @n[tag=SEAboss4,scores={rng8=60},tag=SEAboss4_cannon] at @s run execute as @n[tag=SEAshotgun_shoot_boss4] at @s run tp @s ^ ^ ^0.5
+execute as @n[tag=SEAboss4,scores={rng8=60},tag=SEAboss4_cannon] at @s run execute at @n[tag=SEAshotgun_shoot_boss4] as @a[distance=0..1.7] run damage @s 35 explosion
+execute as @n[tag=SEAboss4,scores={rng8=60},tag=SEAboss4_cannon] at @s run execute at @n[tag=SEAshotgun_shoot_boss4] as @a[distance=0..1.7] run data modify entity @s Fire set value 100s
+execute as @n[tag=SEAboss4,scores={rng8=60},tag=SEAboss4_cannon] at @s run execute as @n[tag=SEAshotgun_shoot_boss4] at @s run tp @s ^ ^ ^0.5
+execute as @n[tag=SEAboss4,scores={rng8=60},tag=SEAboss4_cannon] at @s run execute at @n[tag=SEAshotgun_shoot_boss4] as @a[distance=0..1.9] run damage @s 30 explosion
+execute as @n[tag=SEAboss4,scores={rng8=60},tag=SEAboss4_cannon] at @s run execute at @n[tag=SEAshotgun_shoot_boss4] as @a[distance=0..1.9] run data modify entity @s Fire set value 80s
+execute as @n[tag=SEAboss4,scores={rng8=60},tag=SEAboss4_cannon] at @s run kill @n[tag=SEAshotgun_shoot_boss4]
+execute as @n[tag=SEAboss4,scores={rng8=60},tag=SEAboss4_cannon] at @s positioned ^ ^1.2 ^1 run particle smoke ~ ~ ~ 0.11 0.11 0.11 0 10
+execute as @n[tag=SEAboss4,scores={rng8=60},tag=SEAboss4_cannon] at @s positioned ^ ^1.2 ^1 run particle small_flame ~ ~ ~ 0.15 0.15 0.15 0.0 20
+execute as @n[tag=SEAboss4,scores={rng8=60},tag=SEAboss4_cannon] at @s positioned ^ ^1.2 ^2 run particle smoke ~ ~ ~ 0.11 0.11 0.11 0 10
+execute as @n[tag=SEAboss4,scores={rng8=60},tag=SEAboss4_cannon] at @s positioned ^ ^1.2 ^2 run particle small_flame ~ ~ ~ 0.15 0.15 0.15 0.0 20
+execute as @n[tag=SEAboss4,scores={rng8=60},tag=SEAboss4_cannon] at @s positioned ^ ^1.2 ^3 run particle smoke ~ ~ ~ 0.11 0.11 0.11 0 10
+execute as @n[tag=SEAboss4,scores={rng8=60},tag=SEAboss4_cannon] at @s positioned ^ ^1.2 ^3 run particle small_flame ~ ~ ~ 0.15 0.15 0.15 0.0 20
+
+execute as @n[tag=SEAboss4,scores={rng8=60},tag=SEAboss4_cannon] at @s run scoreboard players set @s rng8 0
+
+
 
 #/summon minecraft:item_display ~ ~ ~ {item:{id:"shield"},billboard:center,item_display:firstperson_righthand,transformation:{scale:[0.5f,0.5f,0.5f]}}
 
