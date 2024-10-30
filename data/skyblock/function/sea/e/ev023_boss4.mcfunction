@@ -45,4 +45,48 @@ execute as @s[scores={sea_4temp1=90}] positioned 90185.01 57.00 51.95 run summon
 execute as @s[scores={sea_4temp1=90}] positioned 90189 57 54 run summon marker ~ ~ ~ {Tags:["SEAboss4_tp"]}
 execute as @s[scores={sea_4temp1=90}] positioned 90191.99 57.00 59.01 run summon marker ~ ~ ~ {Tags:["SEAboss4_tp"]}
 
+execute if entity @n[tag=SEAboss_end] run scoreboard players add @s rng1 1
+
+execute as @s[scores={rng1=5}] run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
+execute as @s[scores={rng1=5}] if entity @n[tag=sc,scores={sea_player=1}] run tellraw @a[distance=0..250] {"text": "艾德雯娜：“沈越涵……？我的天，所以你是他们信得过的人。”","color": "green"}
+execute as @s[scores={rng1=5}] if entity @n[tag=sc,scores={sea_player=2}] run tellraw @a[distance=0..250] {"text": "艾德雯娜：“沈越涵……？我的天，所以你俩是他们信得过的人。”","color": "green"}
+execute as @s[scores={rng1=5}] if entity @n[tag=sc,scores={sea_player=3..}] run tellraw @a[distance=0..250] {"text": "艾德雯娜：“沈越涵……？我的天，所以你们几个是他们信得过的人。我还以为是暴民派下来的小队。”","color": "green"}
+execute as @s[scores={rng1=5}] as @n[tag=SEAboss_end] at @s run tp @s ~ ~ ~ facing entity @n[tag=SEAyuehan]
+execute as @s[scores={rng1=7}] as @n[tag=SEAboss_end] at @s run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
+
+
+execute as @s[scores={rng1=25}] run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
+execute as @s[scores={rng1=25}] run tellraw @a[distance=0..250] {"text": "艾德雯娜：“你怎么不告诉我这件事？”","color": "green"}
+
+execute as @s[scores={rng1=40}] if entity @n[tag=sc,scores={sea_player=1..}] run tellraw @a[distance=0..250] [{"selector":"@s","color":"white"},{"text":"：你……你也没问我啊，而且你是要我假设告诉你这件事，你就会信过我了？","color":"white"}]
+
+execute as @s[scores={rng1=36}] as @n[tag=SEAyuehan] at @s run data modify entity @s Motion set value [0.0,0.0,1.0]
+execute as @s[scores={rng1=39}] as @n[tag=SEAyuehan] at @s run data modify entity @s Motion set value [0.0,0.0,1.0]
+execute as @s[scores={rng1=42}] as @n[tag=SEAyuehan] at @s run data modify entity @s Motion set value [0.0,0.0,1.0]
+execute as @s[scores={rng1=42}] as @n[tag=SEAyuehan] at @s run data modify entity @s Motion set value [0.0,0.0,1.0]
+
+execute as @s[scores={rng1=42}] as @n[tag=SEAyuehan] at @s run tp @s 90180 57 81
+execute as @s[scores={rng1=44..}] as @n[tag=SEAyuehan] at @s run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
+
+
+execute as @s[scores={rng1=55}] run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
+execute as @s[scores={rng1=55}] run tellraw @a[distance=0..250] {"text": "艾德雯娜：“抱歉，还好没酿成悲剧。”","color": "green"}
+
+execute as @s[scores={rng1=70}] run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
+execute as @s[scores={rng1=70}] run tellraw @a[distance=0..250] {"text": "艾德雯娜：“我是艾德雯娜，美国CIA特工。那个，你身上有面包吗？”","color": "green"}
+
+execute as @s[scores={rng1=86}] if entity @n[tag=sc,scores={sea_player=1}] unless items entity @s container.* bread run tellraw @a[distance=0..250] [{"selector":"@s","color":"white"},{"text":"：那必然是没有的。你觉得就你需要一直吃东西？","color":"white"}]
+execute as @s[scores={rng1=86}] if entity @n[tag=sc,scores={sea_player=2..}] unless items entity @s container.* bread run tellraw @a[distance=0..250] [{"selector":"@s","color":"white"},{"text":"：那必然是没有的。至少我没了。","color":"white"}]
+execute as @s[scores={rng1=86}] if entity @n[tag=sc,scores={sea_player=1}] if items entity @s container.* bread run tellraw @a[distance=0..250] [{"selector":"@s","color":"white"},{"text":"：有是有。你又要啃？","color":"white"}]
+execute as @s[scores={rng1=86}] if entity @n[tag=sc,scores={sea_player=2..}] if items entity @s container.* bread run tellraw @a[distance=0..250] [{"selector":"@s","color":"white"},{"text":"：有是有，但我得先问我同事他要不要。我可不想面包直接被你霍霍了。","color":"white"}]
+
+execute as @s[scores={rng1=100}] run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
+execute as @s[scores={rng1=100}] if entity @n[tag=sc,scores={sea_player=1}] if items entity @s container.* bread run tellraw @a[distance=0..250] {"text": "艾德雯娜：“待会……分我一块吧，不过先过一会儿。来吧，我们去跟越涵解释一下。”","color": "green"}
+execute as @s[scores={rng1=100}] if entity @n[tag=sc,scores={sea_player=2..}] if items entity @s container.* bread run tellraw @a[distance=0..250] {"text": "艾德雯娜：“也是，你没有义务给我。都来吧，我们去跟越涵解释一下。”","color": "green"}
+
+
+
+
+
+
 
