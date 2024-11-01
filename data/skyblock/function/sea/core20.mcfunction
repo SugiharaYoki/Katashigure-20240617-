@@ -19,4 +19,4 @@ execute as @a[tag=SEAPT] at @s if score @s sea_remiel_shadow matches 1.. run fun
 execute as @e[type=zombie,tag=SEAmob,x=80000,dx=20000,z=-10000,dz=20000,y=-1000,dy=2000] at @s if block ~ ~1.3 ~ water run kill @s
 execute as @e[type=husk,tag=SEAmob,x=80000,dx=20000,z=-10000,dz=20000,y=-1000,dy=2000] at @s if block ~ ~1.3 ~ water run kill @s
 
-execute as @e[tag=SEAcrafter,type=marker,x=90000,y=0,z=0,distance=..1000] at @s positioned ~ ~-1 ~ run function skyblock:sea/shop_reader_box
+execute as @e[tag=SEAcrafter,type=interaction,x=90000,y=0,z=0,distance=..1000] at @s positioned ~ ~-1 ~ run function skyblock:sea/shop_reader_box
