@@ -30,6 +30,7 @@ give @a[tag=SEAPT] arrow 5
 give @a[tag=SEAPT] flint 10
 give @a[tag=SEAPT] iron_ingot 5
 give @a[tag=SEAPT] coal 3
+give @a[tag=SEAPT] gunpowder 8
 
 tag @a[tag=SEAPT] add e_w_01
 tag @a[tag=SEAPT] add e_w_02
