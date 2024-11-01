@@ -16,6 +16,9 @@ item replace block ~ ~ ~ container.5 with barrier[custom_data={"SEAcrafterbox":t
 execute if entity @a[tag=SEAPT,nbt={Inventory:[{id:"minecraft:gunpowder"}]}] run item replace block ~ ~ ~ container.5 with fire_charge[custom_data={"SEAcrafterbox":true},custom_name='{"text":"制作 定时炸弹×2","italic":false,"color":"green"}',lore=['{"text":"获得3枚定时炸弹。","color":"white","italic":false}','{"text":"消耗：3 火药","color":"red","italic":true}']]
 
 
+item replace block ~ ~ ~ container.6 with barrier[custom_data={"SEAcrafterbox":true}]
+item replace block ~ ~ ~ container.7 with barrier[custom_data={"SEAcrafterbox":true}]
+item replace block ~ ~ ~ container.8 with barrier[custom_data={"SEAcrafterbox":true}]
 
 
 execute as @a[tag=SEAPT] at @s if items entity @s player.cursor *[custom_data={"SEAcrafterbox":true}] run function skyblock:sea/shop_calculation
