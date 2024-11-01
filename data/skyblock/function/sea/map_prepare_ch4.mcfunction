@@ -421,6 +421,8 @@ summon minecraft:item_frame 90167 39 77 {Invisible:1b,Fixed:0b,Invulnerable:0b,F
 
 summon minecraft:item_frame 90213 45 141 {Invisible:1b,Fixed:0b,Invulnerable:0b,Facing:1b,Item:{id:"minecraft:flint"}}
 
+setblock 90213 49 145 chest[facing=north]
+item replace block 90213 49 145 container.13 with coal 1
 
 #最终大厅 第七章入口
 setblock 90154 18 134 minecraft:waxed_copper_bulb[lit=false]
