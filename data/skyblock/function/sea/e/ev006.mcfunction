@@ -89,6 +89,9 @@ execute as @s[scores={sea_4temp1=592}] run fill 90093 145 137 90091 145 137 mine
 execute as @s[scores={sea_4temp1=594}] run fill 90093 146 137 90091 146 137 minecraft:air
 execute as @s[scores={sea_4temp1=596}] run fill 90093 147 137 90091 147 137 minecraft:air
 
+execute as @s[scores={sea_4temp1=592}] run fill 90100 145 130 90100 145 132 minecraft:air
+execute as @s[scores={sea_4temp1=594}] run fill 90100 146 130 90100 146 132 minecraft:air
+
 execute as @s[scores={sea_4temp1=540}] positioned 90107 144 149 run function skyblock:sea/m/drowned
 execute as @s[scores={sea_4temp1=540}] positioned 90107 144 149 run function skyblock:sea/m/drowned
 execute as @s[scores={sea_4temp1=540}] positioned 90107 144 149 run function skyblock:sea/m/drowned_hat

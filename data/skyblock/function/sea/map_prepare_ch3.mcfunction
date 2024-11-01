@@ -476,17 +476,17 @@ item replace block 90093 156 149 container.17 with potion[potion_contents={potio
 setblock 90080 153 147 chest[facing=east]
 item replace block 90080 153 147 container.12 with potion[potion_contents={potion:regeneration}] 1
 
-
+fill 90100 146 130 90100 145 132 minecraft:iron_block
 setblock 90106 144 149 redstone_block
 setblock 90106 144 149 air
-
 setblock 90106 144 143 redstone_block
 setblock 90106 144 143 air
-
 setblock 90106 144 137 redstone_block
 setblock 90106 144 137 air
 
-
+setblock 90104 144 147 chest[facing=south]
+item replace block 90104 144 147 container.12 with gunpowder
+item replace block 90104 144 147 container.14 with gunpowder
 
 
 
