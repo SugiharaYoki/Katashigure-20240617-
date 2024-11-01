@@ -329,16 +329,12 @@ execute as @n[tag=SEAboss4,scores={rng8=60},tag=SEAboss4_cannon] at @s run plays
 execute as @n[tag=SEAboss4,scores={rng8=60},tag=SEAboss4_cannon] at @s run playsound minecraft:entity.firework_rocket.blast player @a ~ ~ ~ 1 0.75
 execute as @n[tag=SEAboss4,scores={rng8=60},tag=SEAboss4_cannon] at @s run playsound minecraft:entity.item.break player @a ~ ~ ~ 0.6 0.6
 execute as @n[tag=SEAboss4,scores={rng8=60},tag=SEAboss4_cannon] at @s run execute rotated as @s run summon marker ~ ~ ~ {Tags:["SEAshotgun_shoot_boss4"]}
-execute as @n[tag=SEAboss4,scores={rng8=60},tag=SEAboss4_cannon] at @s positioned ^ ^ ^1 as @a[distance=0..2.3] run damage @s 20 explosion
-execute as @n[tag=SEAboss4,scores={rng8=60},tag=SEAboss4_cannon] at @s positioned ^ ^ ^1 as @a[distance=0..2.3] run data modify entity @s Fire set value 160s
-execute as @n[tag=SEAboss4,scores={rng8=60},tag=SEAboss4_cannon] at @s positioned ^ ^ ^2 as @a[distance=0..2.3] run damage @s 16 explosion
-execute as @n[tag=SEAboss4,scores={rng8=60},tag=SEAboss4_cannon] at @s positioned ^ ^ ^2 as @a[distance=0..2.3] run data modify entity @s Fire set value 140s
-execute as @n[tag=SEAboss4,scores={rng8=60},tag=SEAboss4_cannon] at @s positioned ^ ^ ^3 as @a[distance=0..2.7] run damage @s 14 explosion
-execute as @n[tag=SEAboss4,scores={rng8=60},tag=SEAboss4_cannon] at @s positioned ^ ^ ^3 as @a[distance=0..2.7] run data modify entity @s Fire set value 120s
-execute as @n[tag=SEAboss4,scores={rng8=60},tag=SEAboss4_cannon] at @s positioned ^ ^ ^4 as @a[distance=0..2.7] run damage @s 12 explosion
-execute as @n[tag=SEAboss4,scores={rng8=60},tag=SEAboss4_cannon] at @s positioned ^ ^ ^4 as @a[distance=0..2.7] run data modify entity @s Fire set value 100s
-execute as @n[tag=SEAboss4,scores={rng8=60},tag=SEAboss4_cannon] at @s positioned ^ ^ ^5 as @a[distance=0..2.9] run damage @s 10 explosion
-execute as @n[tag=SEAboss4,scores={rng8=60},tag=SEAboss4_cannon] at @s positioned ^ ^ ^5 as @a[distance=0..2.9] run data modify entity @s Fire set value 80s
+execute as @n[tag=SEAboss4,scores={rng8=60},tag=SEAboss4_cannon] at @s positioned ^ ^ ^1 as @a[distance=0..2.7] run damage @s 14 explosion
+execute as @n[tag=SEAboss4,scores={rng8=60},tag=SEAboss4_cannon] at @s positioned ^ ^ ^1 as @a[distance=0..2.7] run data modify entity @s Fire set value 120s
+execute as @n[tag=SEAboss4,scores={rng8=60},tag=SEAboss4_cannon] at @s positioned ^ ^ ^2 as @a[distance=0..2.7] run damage @s 12 explosion
+execute as @n[tag=SEAboss4,scores={rng8=60},tag=SEAboss4_cannon] at @s positioned ^ ^ ^2 as @a[distance=0..2.7] run data modify entity @s Fire set value 100s
+execute as @n[tag=SEAboss4,scores={rng8=60},tag=SEAboss4_cannon] at @s positioned ^ ^ ^3 as @a[distance=0..2.9] run damage @s 10 explosion
+execute as @n[tag=SEAboss4,scores={rng8=60},tag=SEAboss4_cannon] at @s positioned ^ ^ ^3 as @a[distance=0..2.9] run data modify entity @s Fire set value 80s
 execute as @n[tag=SEAboss4,scores={rng8=60},tag=SEAboss4_cannon] at @s positioned ^ ^1.2 ^1 run particle smoke ~ ~ ~ 0.81 0.81 0.81 0 10
 execute as @n[tag=SEAboss4,scores={rng8=60},tag=SEAboss4_cannon] at @s positioned ^ ^1.2 ^1 run particle small_flame ~ ~ ~ 0.81 0.81 0.81 0.0 20
 execute as @n[tag=SEAboss4,scores={rng8=60},tag=SEAboss4_cannon] at @s positioned ^ ^1.2 ^2 run particle smoke ~ ~ ~ 0.81 0.81 0.81 0 10
