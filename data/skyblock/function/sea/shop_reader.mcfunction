@@ -95,23 +95,23 @@ tellraw @s[tag=seaPerm000] [{"text":"   ☆ "},{"text":"塞壬的指引  ","colo
 scoreboard players set @s sea_crafter 0
 
 
-execute if entity @n[type=interaction,tag=SEAcrafter1,distance=0..3] run tag @s add sea_teleport01
-execute if entity @n[type=interaction,tag=SEAcrafter2,distance=0..3] run tag @s add sea_teleport02
-execute if entity @n[type=interaction,tag=SEAcrafter3,distance=0..3] run tag @s add sea_teleport03
-execute if entity @n[type=interaction,tag=SEAcrafter4,distance=0..3] run tag @s add sea_teleport04
-execute if entity @n[type=interaction,tag=SEAcrafter5,distance=0..3] run tag @s add sea_teleport05
-execute if entity @n[type=interaction,tag=SEAcrafter6,distance=0..3] run tag @s add sea_teleport06
-execute if entity @n[type=interaction,tag=SEAcrafter7,distance=0..3] run tag @s add sea_teleport07
-execute if entity @n[type=interaction,tag=SEAcrafter8,distance=0..3] run tag @s add sea_teleport08
-execute if entity @n[type=interaction,tag=SEAcrafter9,distance=0..3] run tag @s add sea_teleport09
-execute if entity @n[type=interaction,tag=SEAcrafter10,distance=0..3] run tag @s add sea_teleport10
-execute if entity @n[type=interaction,tag=SEAcrafter11,distance=0..3] run tag @s add sea_teleport11
-execute if entity @n[type=interaction,tag=SEAcrafter12,distance=0..3] run tag @s add sea_teleport12
-execute if entity @n[type=interaction,tag=SEAcrafter13,distance=0..3] run tag @s add sea_teleport13
-execute if entity @n[type=interaction,tag=SEAcrafter14,distance=0..3] run tag @s add sea_teleport14
-execute if entity @n[type=interaction,tag=SEAcrafter15,distance=0..3] run tag @s add sea_teleport15
-execute if entity @n[type=interaction,tag=SEAcrafter16,distance=0..3] run tag @s add sea_teleport16
-execute if entity @n[type=interaction,tag=SEAcrafter17,distance=0..3] run tag @s add sea_teleport17
-execute if entity @n[type=interaction,tag=SEAcrafter18,distance=0..3] run tag @s add sea_teleport18
-execute if entity @n[type=interaction,tag=SEAcrafter19,distance=0..3] run tag @s add sea_teleport19
-execute if entity @n[type=interaction,tag=SEAcrafter20,distance=0..3] run tag @s add sea_teleport20
+execute if entity @n[type=interaction,tag=SEAcrafter1,distance=0..5] run tag @s add sea_teleport01
+execute if entity @n[type=interaction,tag=SEAcrafter2,distance=0..5] run tag @s add sea_teleport02
+execute if entity @n[type=interaction,tag=SEAcrafter3,distance=0..5] run tag @s add sea_teleport03
+execute if entity @n[type=interaction,tag=SEAcrafter4,distance=0..5] run tag @s add sea_teleport04
+execute if entity @n[type=interaction,tag=SEAcrafter5,distance=0..5] run tag @s add sea_teleport05
+execute if entity @n[type=interaction,tag=SEAcrafter6,distance=0..5] run tag @s add sea_teleport06
+execute if entity @n[type=interaction,tag=SEAcrafter7,distance=0..5] run tag @s add sea_teleport07
+execute if entity @n[type=interaction,tag=SEAcrafter8,distance=0..5] run tag @s add sea_teleport08
+execute if entity @n[type=interaction,tag=SEAcrafter9,distance=0..5] run tag @s add sea_teleport09
+execute if entity @n[type=interaction,tag=SEAcrafter10,distance=0..5] run tag @s add sea_teleport10
+execute if entity @n[type=interaction,tag=SEAcrafter11,distance=0..5] run tag @s add sea_teleport11
+execute if entity @n[type=interaction,tag=SEAcrafter12,distance=0..5] run tag @s add sea_teleport12
+execute if entity @n[type=interaction,tag=SEAcrafter13,distance=0..5] run tag @s add sea_teleport13
+execute if entity @n[type=interaction,tag=SEAcrafter14,distance=0..5] run tag @s add sea_teleport14
+execute if entity @n[type=interaction,tag=SEAcrafter15,distance=0..5] run tag @s add sea_teleport15
+execute if entity @n[type=interaction,tag=SEAcrafter16,distance=0..5] run tag @s add sea_teleport16
+execute if entity @n[type=interaction,tag=SEAcrafter17,distance=0..5] run tag @s add sea_teleport17
+execute if entity @n[type=interaction,tag=SEAcrafter18,distance=0..5] run tag @s add sea_teleport18
+execute if entity @n[type=interaction,tag=SEAcrafter19,distance=0..5] run tag @s add sea_teleport19
+execute if entity @n[type=interaction,tag=SEAcrafter20,distance=0..5] run tag @s add sea_teleport20
