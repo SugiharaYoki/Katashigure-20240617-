@@ -472,5 +472,23 @@ item replace block 90093 156 149 container.13 with potion[potion_contents={potio
 item replace block 90093 156 149 container.15 with potion[potion_contents={potion:"weakness"}] 1
 item replace block 90093 156 149 container.17 with potion[potion_contents={potion:"thick"}] 1
 
+
 setblock 90080 153 147 chest[facing=east]
 item replace block 90080 153 147 container.12 with potion[potion_contents={potion:regeneration}] 1
+
+
+setblock 90106 144 149 redstone_block
+setblock 90106 144 149 air
+
+setblock 90106 144 143 redstone_block
+setblock 90106 144 143 air
+
+setblock 90106 144 137 redstone_block
+setblock 90106 144 137 air
+
+
+
+
+
+
+
