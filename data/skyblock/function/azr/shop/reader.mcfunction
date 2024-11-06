@@ -226,9 +226,7 @@ execute if score @s Azr_Shop_rng6 matches 36 run tellraw @s[scores={Azr_SK5=2..}
 execute if score @s Azr_Shop_rng6 matches 37 run tellraw @s[scores={Azr_SK5=2..}] [{"text":"   "},{"text":"锁链阔斧","color":"white"},{"text":"  5 铁链 1 石斧>铁斧 ","color":"gold"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 84308"},"hoverEvent":{"action":"show_text","contents":{"text":"攻击力9 攻击速度0.85 攻击时2格内的队友33%概率获得10秒生命吸收I","color":"white"}}}]
 execute if score @s Azr_Shop_rng6 matches 38 run tellraw @s[scores={Azr_SK5=2..}] [{"text":"   "},{"text":"缠绕重杆","color":"white"},{"text":"（改）","color":"dark_purple"},{"text":" 1 缠绕重杆 3 粘液球 6 丝线 ","color":"gold"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 84308"},"hoverEvent":{"action":"show_text","contents":{"text":"攻击力+2.0 攻击速度+0.3","color":"white"}}}]
 
-#施工中----
-return 0
-#施工中----
+tellraw @s [{"text":"以下为测试项","color":"red"}]
 
 execute if score @s Azr_Shop_rng7 matches 0 run tellraw @s [{"text":"   "},{"text":"盾","color":"white"},{"text":"  2 绿宝石 2 盾牌碎片 ","color":"gold"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 84303"},"hoverEvent":{"action":"show_text","contents":{"text":"全用盾 普通的盾牌","color":"white"}}}]
 execute if score @s Azr_Shop_rng7 matches 1 run tellraw @s [{"text":"   "},{"text":"皮革帽","color":"white"},{"text":"  2 绿宝石 ","color":"gold"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 84303"},"hoverEvent":{"action":"show_text","contents":{"text":"普通的护甲","color":"white"}}},{"text":" || 皮革甲","color":"white"},{"text":"  3 绿宝石 ","color":"gold"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8430333"},"hoverEvent":{"action":"show_text","contents":{"text":"普通的护甲","color":"white"}}}]
@@ -367,6 +365,10 @@ execute if score @s Azr_Shop_rng9 matches 35 run tellraw @s[scores={Azr_SK5=3..}
 execute if score @s Azr_Shop_rng9 matches 36 run tellraw @s[scores={Azr_SK5=3..}] [{"text":"   "},{"text":"铁胸甲","color":"white"},{"text":"（暗窥）","color":"dark_purple"},{"text":" 1 铁胸甲 12 绿宝石 3 蜘蛛眼 1 冻骨 ","color":"gold"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 84309"},"hoverEvent":{"action":"show_text","contents":{"text":"生命上限+2 移动速度+2%","color":"white"}}}]
 execute if score @s Azr_Shop_rng9 matches 37 run tellraw @s[scores={Azr_SK5=3..}] [{"text":"   "},{"text":"铁护腿","color":"white"},{"text":"（暗窥）","color":"dark_purple"},{"text":" 1 铁护腿 12 绿宝石 1 蜘蛛眼 2 冻骨 ","color":"gold"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 84309"},"hoverEvent":{"action":"show_text","contents":{"text":"生命上限+2 移动速度+2%","color":"white"}}}]
 execute if score @s Azr_Shop_rng9 matches 38 run tellraw @s[scores={Azr_SK5=3..}] [{"text":"   "},{"text":"铁靴","color":"white"},{"text":"（暗窥）","color":"dark_purple"},{"text":" 1 铁靴 9 绿宝石 3 蜘蛛眼 1 冻骨 ","color":"gold"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 84309"},"hoverEvent":{"action":"show_text","contents":{"text":"生命上限+2 移动速度+2%","color":"white"}}}]
+
+#施工中----
+return 0
+#施工中----
 
 execute if score @s Azr_Shop_rng10 matches 13 run tellraw @s[tag=!Azr_BuyOnce] [{"text":"   "},{"text":"霾之核心","color":"aqua"},{"text":"   15 绿宝石 4 蛛毒囊 ","color":"gold"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 84313"}}]
 execute if score @s Azr_Shop_rng10 matches 14 run tellraw @s[tag=!Azr_BuyOnce] [{"text":"   "},{"text":"霾之核心+","color":"aqua"},{"text":"   1 霾之核心 20 绿宝石 8 蛛毒囊 ","color":"gold"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 84313"}}]
