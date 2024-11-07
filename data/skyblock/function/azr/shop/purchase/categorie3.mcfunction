@@ -1,6 +1,6 @@
 $execute as @s[scores={Azr_Shop_rng$(rng)=0,Azr_Shop=$(trigger)}] \
     if score @s Azr_emerald matches 2.. \
-    if items entity @s container.* iron_nugget[count={min:2},custom_data:{shild_shard:1b}] \
+    if items entity @s container.* iron_nugget[count={min:2},custom_data={shild_shard:1b}] \
     run function skyblock:azr/shop/purchase/categorie3/\
     rng0
     # 0 @s  绿宝石 2 盾牌碎片
@@ -104,35 +104,35 @@ $execute as @s[scores={Azr_Shop_rng$(rng)=8,Azr_Shop=$(trigger)33}] \
 
 
 $execute as @s[scores={Azr_Shop_rng$(rng)=9,Azr_Shop=$(trigger)}] \
-    if items entity @s container.* leather_helmet[count={min:1},custom_data:{leather_helmet_normal:1b}] \
+    if items entity @s container.* leather_helmet[count={min:1},custom_data={leather_helmet_normal:1b}] \
     if items entity @s container.* leather[count={min:2}] \
     run function skyblock:azr/shop/purchase/categorie3/\
     rng9
     # 9 皮革帽（加固） 1 皮革帽 2 皮革
 
 $execute as @s[scores={Azr_Shop_rng$(rng)=10,Azr_Shop=$(trigger)}] \
-    if items entity @s container.* leather_chestplate[count={min:1},custom_data:{leather_chestplate_normal:1b}] \
+    if items entity @s container.* leather_chestplate[count={min:1},custom_data={leather_chestplate_normal:1b}] \
     if items entity @s container.* leather[count={min:3}] \
     run function skyblock:azr/shop/purchase/categorie3/\
     rng10
     # 10 皮革甲（加固） 1 皮革甲 3 皮革
 
 $execute as @s[scores={Azr_Shop_rng$(rng)=11,Azr_Shop=$(trigger)}] \
-    if items entity @s container.* leather_leggings[count={min:1},custom_data:{leather_leggings_normal:1b}] \
+    if items entity @s container.* leather_leggings[count={min:1},custom_data={leather_leggings_normal:1b}] \
     if items entity @s container.* leather[count={min:3}] \
     run function skyblock:azr/shop/purchase/categorie3/\
     rng11
     # 11 皮革裤（加固） 1 皮革裤 3 皮革
 
 $execute as @s[scores={Azr_Shop_rng$(rng)=12,Azr_Shop=$(trigger)}] \
-    if items entity @s container.* leather_boots[count={min:1},custom_data:{leather_boots_normal:1b}] \
+    if items entity @s container.* leather_boots[count={min:1},custom_data={leather_boots_normal:1b}] \
     if items entity @s container.* leather[count={min:2}] \
     run function skyblock:azr/shop/purchase/categorie3/\
     rng12
     # 12 皮革靴（加固） 1 皮革靴 2 皮革
 
 $execute as @s[scores={Azr_Shop_rng$(rng)=13,Azr_Shop=$(trigger)}] \
-    if items entity @s container.* chainmail_helmet[count={min:1},custom_data:{chainmail_helmet_normal:1b}] \
+    if items entity @s container.* chainmail_helmet[count={min:1},custom_data={chainmail_helmet_normal:1b}] \
     if items entity @s container.* bone[count={min:2},custom_data={hard_bone:1b}] \
     if score @s Azr_emerald matches 3.. \
     run function skyblock:azr/shop/purchase/categorie3/\
@@ -140,7 +140,7 @@ $execute as @s[scores={Azr_Shop_rng$(rng)=13,Azr_Shop=$(trigger)}] \
     # 13 no tag 链帽（亡息） 1 链帽 3 绿宝石 2 硬骨 注：此处有无标签价格相同，商品属性不同
 
 $execute as @s[scores={Azr_Shop_rng$(rng)=14,Azr_Shop=$(trigger)}] \
-    if items entity @s container.* chainmial_chestplate[count={min:1},custom_data:{chainmial_chestplate_normal:1b}] \
+    if items entity @s container.* chainmial_chestplate[count={min:1},custom_data={chainmial_chestplate_normal:1b}] \
     if items entity @s container.* black_dye[count={min:3},custom_data={insect_remains:1b}] \
     if score @s Azr_emerald matches 3.. \
     run function skyblock:azr/shop/purchase/categorie3/\
@@ -148,7 +148,7 @@ $execute as @s[scores={Azr_Shop_rng$(rng)=14,Azr_Shop=$(trigger)}] \
     # 14 no tag 链甲（亡息） 1 链甲 3 绿宝石 3 虫骸 注：此处有无标签价格相同，商品属性不同
 
 $execute as @s[scores={Azr_Shop_rng$(rng)=15,Azr_Shop=$(trigger)}] \
-    if items entity @s container.* chainmail_leggings[count={min:1},custom_data:{chainmail_leggings_normal:1b}] \
+    if items entity @s container.* chainmail_leggings[count={min:1},custom_data={chainmail_leggings_normal:1b}] \
     if items entity @s container.* bone[count={min:3},custom_data={hard_bone:1b}] \
     if score @s Azr_emerald matches 3.. \
     run function skyblock:azr/shop/purchase/categorie3/\
@@ -156,7 +156,7 @@ $execute as @s[scores={Azr_Shop_rng$(rng)=15,Azr_Shop=$(trigger)}] \
     # 15 no tag 链裤（亡息） 1 链裤 3 绿宝石 3 硬骨 注：此处有无标签价格相同，商品属性不同
 
 $execute as @s[scores={Azr_Shop_rng$(rng)=16,Azr_Shop=$(trigger)}] \
-    if items entity @s container.* chainmial_boots[count={min:1},custom_data:{chainmial_boots_normal:1b}] \
+    if items entity @s container.* chainmial_boots[count={min:1},custom_data={chainmial_boots_normal:1b}] \
     if items entity @s container.* black_dye[count={min:2},custom_data={insect_remains:1b}] \
     if score @s Azr_emerald matches 3.. \
     run function skyblock:azr/shop/purchase/categorie3/\
