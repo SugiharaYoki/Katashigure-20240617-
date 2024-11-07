@@ -72,7 +72,7 @@ execute as @n[tag=AzrielBossA,type=illusioner] at @s run function skyblock:azr/s
 
 #AI
     #每刻有1/8的肯面向最近玩家
-    execute if score tickTimer Azr_system matches 152..5000 if score #rng8 Azr_system matches 1 as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run tp @s ~ ~ ~ facing entity @p[tag=azrPlayer]
+    execute if score tickTimer Azr_system matches 152..5000 if score #rng8 Azr_system matches 1 as @e[tag=AzrielBossA,type=illusioner,limit=3,nbt={OnGround:1b}] at @s run tp @s ~ ~ ~ facing entity @p[tag=azrPlayer]
     execute if score tickTimer Azr_system matches 152..5000 run team join AzrBossA @e[tag=AzrielMob,x=-79903,y=37,z=-15,distance=..100]
     #状态效果控制
     execute if score tickTimer Azr_system matches 152..5000 store result bossbar azr:boss_hp_bar value run data get entity @e[tag=AzrielBossA,type=illusioner,limit=1] Health
