@@ -17,6 +17,8 @@ $execute as @s[scores={Azr_Shop_rng$(rng)=1,Azr_Shop=$(trigger)33}] \
     rng1_alt
     # 1 alt @s  皮革甲 3 绿宝石
 
+say hi
+
 $execute as @s[scores={Azr_Shop_rng$(rng)=2,Azr_Shop=$(trigger)}] \
     if score @s Azr_emerald matches 2.. \
     run function skyblock:azr/shop/purchase/categorie3/\
