@@ -20,3 +20,5 @@ schedule function skyblock:azr/stage/boss1/flat1_wc 9t
 schedule function skyblock:azr/stage/boss1/flat1_wc 12t
 schedule function skyblock:azr/stage/boss1/flat1_wc 15t
 schedule function skyblock:azr/stage/boss1/flat1_wc 18t
+
+tag @s remove AzrielBoss_NoMove
