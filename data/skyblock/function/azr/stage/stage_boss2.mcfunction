@@ -400,7 +400,7 @@ execute as @n[tag=AzrielBossA,type=illusioner] at @s run function skyblock:azr/s
     execute if score tickTimer Azr_system matches 3120..4200 unless entity @e[tag=AzrielBossA,type=illusioner,limit=3] run scoreboard players set tickTimer Azr_system 6000
 
     #finalize
-    execute if score tickTimer Azr_system matches 152..5000 if score #rng8 Azr_system matches 1 as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run tp @s ~ ~ ~ facing entity @p[tag=azrPlayer]
+    execute if score tickTimer Azr_system matches 152..5000 if score #rng8 Azr_system matches 1 as @e[tag=AzrielBossA,type=illusioner,limit=3,nbt={OnGround:1b}] at @s run tp @s ~ ~ ~ facing entity @p[tag=azrPlayer]
     execute if score tickTimer Azr_system matches 6001 run kill @e[type=marker,tag=ZaneiSpotCage]
     execute if score tickTimer Azr_system matches 6001 run kill @e[type=marker,tag=arroworb]
     execute if score tickTimer Azr_system matches 6001 run kill @e[tag=AzrielDecMob]
@@ -421,7 +421,7 @@ execute as @n[tag=AzrielBossA,type=illusioner] at @s run function skyblock:azr/s
     execute if score tickTimer Azr_system matches 6110 run particle minecraft:portal -79886 44 -14.0 3 3 3 1.5 1600
     execute if score tickTimer Azr_system matches 6110 run particle minecraft:enchant -79886 44 -14.0 1 1 1 0.5 200
     execute if score tickTimer Azr_system matches 6110 run summon illusioner -79903 44 -14.0 {Silent:1b,PersistenceRequired:1b,Tags:["AzrielMob","AzrielBossA"],DeathLootTable:"skyblock:azriel_shadow_tier1",Health:150.0f,CustomName:'"权之残影"',Invulnerable:1b,attributes:[{id:"generic.max_health",base:150.0d},{id:"generic.movement_speed",base:0.15d},{id:"generic.knockback_resistance",base:1.0d}]}
-    execute if score tickTimer Azr_system matches 6115 as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run tp @s ~ ~ ~ facing entity @r[tag=azrPlayer]
+    execute if score tickTimer Azr_system matches 6115 as @e[tag=AzrielBossA,type=illusioner,limit=3,nbt={OnGround:1b}] at @s run tp @s ~ ~ ~ facing entity @r[tag=azrPlayer]
     execute if score tickTimer Azr_system matches 6120 as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run playsound minecraft:entity.illusioner.ambient hostile @a[tag=azrPlayer] ~ ~ ~ 100 0.6
     #verbal
     execute if score tickTimer Azr_system matches 6100 unless entity @a[tag=azrPlayer,scores={Azr_skillPoints=..9}] run tellraw @a[tag=azrPlayer] {"text":"〈跳过剧情〉","bold":true,"color":"blue","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 6"}}
