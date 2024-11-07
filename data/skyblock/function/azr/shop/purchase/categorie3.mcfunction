@@ -17,8 +17,6 @@ $execute as @s[scores={Azr_Shop_rng$(rng)=1,Azr_Shop=$(trigger)33}] \
     rng1_alt
     # 1 alt @s  皮革甲 3 绿宝石
 
-say hi
-
 $execute as @s[scores={Azr_Shop_rng$(rng)=2,Azr_Shop=$(trigger)}] \
     if score @s Azr_emerald matches 2.. \
     run function skyblock:azr/shop/purchase/categorie3/\
@@ -142,7 +140,7 @@ $execute as @s[scores={Azr_Shop_rng$(rng)=13,Azr_Shop=$(trigger)}] \
     # 13 no tag 链帽（亡息） 1 链帽 3 绿宝石 2 硬骨 注：此处有无标签价格相同，商品属性不同
 
 $execute as @s[scores={Azr_Shop_rng$(rng)=14,Azr_Shop=$(trigger)}] \
-    if items entity @s container.* chainmial_chestplate[count={min:1},custom_data={chainmial_chestplate_normal:1b}] \
+    if items entity @s container.* chainmail_chestplate[count={min:1},custom_data={chainmail_chestplate_normal:1b}] \
     if items entity @s container.* black_dye[count={min:3},custom_data={insect_remains:1b}] \
     if score @s Azr_emerald matches 3.. \
     run function skyblock:azr/shop/purchase/categorie3/\
@@ -158,7 +156,7 @@ $execute as @s[scores={Azr_Shop_rng$(rng)=15,Azr_Shop=$(trigger)}] \
     # 15 no tag 链裤（亡息） 1 链裤 3 绿宝石 3 硬骨 注：此处有无标签价格相同，商品属性不同
 
 $execute as @s[scores={Azr_Shop_rng$(rng)=16,Azr_Shop=$(trigger)}] \
-    if items entity @s container.* chainmial_boots[count={min:1},custom_data={chainmial_boots_normal:1b}] \
+    if items entity @s container.* chainmail_boots[count={min:1},custom_data={chainmail_boots_normal:1b}] \
     if items entity @s container.* black_dye[count={min:2},custom_data={insect_remains:1b}] \
     if score @s Azr_emerald matches 3.. \
     run function skyblock:azr/shop/purchase/categorie3/\

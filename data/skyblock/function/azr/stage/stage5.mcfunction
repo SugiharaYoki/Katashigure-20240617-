@@ -315,37 +315,37 @@ execute if score stageSeconds Azr_system matches 154 run particle minecraft:end_
 
 execute if score stageSeconds Azr_system matches 152..170 run function skyblock:azr/tool_rng
 execute if score stageSeconds Azr_system matches 158 if score #rng4 Azr_system matches 1 positioned -79922 38 122 run function skyblock:azr/m/zombie_t2_husk_leather
-execute if score stageSeconds Azr_system matches 158 if score #rng4 Azr_system matches 2 positioned -79922 38 122 run function skyblock:azr/m/zombie_t2_husk_chainmial
+execute if score stageSeconds Azr_system matches 158 if score #rng4 Azr_system matches 2 positioned -79922 38 122 run function skyblock:azr/m/zombie_t2_husk_chainmail
 execute if score stageSeconds Azr_system matches 158 if score #rng4 Azr_system matches 3 positioned -79940 38 122 run function skyblock:azr/m/zombie_t2_husk_leather
-execute if score stageSeconds Azr_system matches 158 if score #rng4 Azr_system matches 4 positioned -79940 38 122 run function skyblock:azr/m/zombie_t2_husk_chainmial
+execute if score stageSeconds Azr_system matches 158 if score #rng4 Azr_system matches 4 positioned -79940 38 122 run function skyblock:azr/m/zombie_t2_husk_chainmail
 execute if score stageSeconds Azr_system matches 159 if score #rng4 Azr_system matches 1 positioned -79922 38 122 run function skyblock:azr/m/zombie_t2_husk_leather
-execute if score stageSeconds Azr_system matches 159 if score #rng4 Azr_system matches 2 positioned -79922 38 122 run function skyblock:azr/m/zombie_t2_husk_chainmial
+execute if score stageSeconds Azr_system matches 159 if score #rng4 Azr_system matches 2 positioned -79922 38 122 run function skyblock:azr/m/zombie_t2_husk_chainmail
 execute if score stageSeconds Azr_system matches 159 if score #rng4 Azr_system matches 3 positioned -79940 38 122 run function skyblock:azr/m/zombie_t2_husk_leather
-execute if score stageSeconds Azr_system matches 159 if score #rng4 Azr_system matches 4 positioned -79940 38 122 run function skyblock:azr/m/zombie_t2_husk_chainmial
+execute if score stageSeconds Azr_system matches 159 if score #rng4 Azr_system matches 4 positioned -79940 38 122 run function skyblock:azr/m/zombie_t2_husk_chainmail
 execute if score stageSeconds Azr_system matches 160 if score #rng4 Azr_system matches 1 positioned -79922 38 122 run function skyblock:azr/m/zombie_t2_husk_leather
-execute if score stageSeconds Azr_system matches 160 if score #rng4 Azr_system matches 2 positioned -79922 38 122 run function skyblock:azr/m/zombie_t2_husk_chainmial
+execute if score stageSeconds Azr_system matches 160 if score #rng4 Azr_system matches 2 positioned -79922 38 122 run function skyblock:azr/m/zombie_t2_husk_chainmail
 execute if score stageSeconds Azr_system matches 160 if score #rng4 Azr_system matches 3 positioned -79940 38 122 run function skyblock:azr/m/zombie_t2_husk_leather
-execute if score stageSeconds Azr_system matches 160 if score #rng4 Azr_system matches 4 positioned -79940 38 122 run function skyblock:azr/m/zombie_t2_husk_chainmial
+execute if score stageSeconds Azr_system matches 160 if score #rng4 Azr_system matches 4 positioned -79940 38 122 run function skyblock:azr/m/zombie_t2_husk_chainmail
 execute if score stageSeconds Azr_system matches 161 if score #rng4 Azr_system matches 1 positioned -79922 38 122 run function skyblock:azr/m/zombie_t2_husk_leather
-execute if score stageSeconds Azr_system matches 161 if score #rng4 Azr_system matches 2 positioned -79922 38 122 run function skyblock:azr/m/zombie_t2_husk_chainmial
+execute if score stageSeconds Azr_system matches 161 if score #rng4 Azr_system matches 2 positioned -79922 38 122 run function skyblock:azr/m/zombie_t2_husk_chainmail
 execute if score stageSeconds Azr_system matches 161 if score #rng4 Azr_system matches 3 positioned -79940 38 122 run function skyblock:azr/m/zombie_t2_husk_leather
-execute if score stageSeconds Azr_system matches 161 if score #rng4 Azr_system matches 4 positioned -79940 38 122 run function skyblock:azr/m/zombie_t2_husk_chainmial
+execute if score stageSeconds Azr_system matches 161 if score #rng4 Azr_system matches 4 positioned -79940 38 122 run function skyblock:azr/m/zombie_t2_husk_chainmail
 execute if score stageSeconds Azr_system matches 158 if score #rng4 Azr_system matches 1 if score playerCount Azr_system matches 3.. positioned -79922 38 122 run function skyblock:azr/m/zombie_t2_husk_leather
-execute if score stageSeconds Azr_system matches 158 if score #rng4 Azr_system matches 2 if score playerCount Azr_system matches 3.. positioned -79922 38 122 run function skyblock:azr/m/zombie_t2_husk_chainmial
+execute if score stageSeconds Azr_system matches 158 if score #rng4 Azr_system matches 2 if score playerCount Azr_system matches 3.. positioned -79922 38 122 run function skyblock:azr/m/zombie_t2_husk_chainmail
 execute if score stageSeconds Azr_system matches 158 if score #rng4 Azr_system matches 3 if score playerCount Azr_system matches 3.. positioned -79940 38 122 run function skyblock:azr/m/zombie_t2_husk_leather
-execute if score stageSeconds Azr_system matches 158 if score #rng4 Azr_system matches 4 if score playerCount Azr_system matches 3.. positioned -79940 38 122 run function skyblock:azr/m/zombie_t2_husk_chainmial
+execute if score stageSeconds Azr_system matches 158 if score #rng4 Azr_system matches 4 if score playerCount Azr_system matches 3.. positioned -79940 38 122 run function skyblock:azr/m/zombie_t2_husk_chainmail
 execute if score stageSeconds Azr_system matches 159 if score #rng4 Azr_system matches 1 if score playerCount Azr_system matches 3.. positioned -79922 38 122 run function skyblock:azr/m/zombie_t2_husk_leather
-execute if score stageSeconds Azr_system matches 159 if score #rng4 Azr_system matches 2 if score playerCount Azr_system matches 3.. positioned -79922 38 122 run function skyblock:azr/m/zombie_t2_husk_chainmial
+execute if score stageSeconds Azr_system matches 159 if score #rng4 Azr_system matches 2 if score playerCount Azr_system matches 3.. positioned -79922 38 122 run function skyblock:azr/m/zombie_t2_husk_chainmail
 execute if score stageSeconds Azr_system matches 159 if score #rng4 Azr_system matches 3 if score playerCount Azr_system matches 3.. positioned -79940 38 122 run function skyblock:azr/m/zombie_t2_husk_leather
-execute if score stageSeconds Azr_system matches 159 if score #rng4 Azr_system matches 4 if score playerCount Azr_system matches 3.. positioned -79940 38 122 run function skyblock:azr/m/zombie_t2_husk_chainmial
+execute if score stageSeconds Azr_system matches 159 if score #rng4 Azr_system matches 4 if score playerCount Azr_system matches 3.. positioned -79940 38 122 run function skyblock:azr/m/zombie_t2_husk_chainmail
 execute if score stageSeconds Azr_system matches 160 if score #rng4 Azr_system matches 1 if score playerCount Azr_system matches 3.. positioned -79922 38 122 run function skyblock:azr/m/zombie_t2_husk_leather
-execute if score stageSeconds Azr_system matches 160 if score #rng4 Azr_system matches 2 if score playerCount Azr_system matches 3.. positioned -79922 38 122 run function skyblock:azr/m/zombie_t2_husk_chainmial
+execute if score stageSeconds Azr_system matches 160 if score #rng4 Azr_system matches 2 if score playerCount Azr_system matches 3.. positioned -79922 38 122 run function skyblock:azr/m/zombie_t2_husk_chainmail
 execute if score stageSeconds Azr_system matches 160 if score #rng4 Azr_system matches 3 if score playerCount Azr_system matches 3.. positioned -79940 38 122 run function skyblock:azr/m/zombie_t2_husk_leather
-execute if score stageSeconds Azr_system matches 160 if score #rng4 Azr_system matches 4 if score playerCount Azr_system matches 3.. positioned -79940 38 122 run function skyblock:azr/m/zombie_t2_husk_chainmial
+execute if score stageSeconds Azr_system matches 160 if score #rng4 Azr_system matches 4 if score playerCount Azr_system matches 3.. positioned -79940 38 122 run function skyblock:azr/m/zombie_t2_husk_chainmail
 execute if score stageSeconds Azr_system matches 161 if score #rng4 Azr_system matches 1 if score playerCount Azr_system matches 3.. positioned -79922 38 122 run function skyblock:azr/m/zombie_t2_husk_leather
-execute if score stageSeconds Azr_system matches 161 if score #rng4 Azr_system matches 2 if score playerCount Azr_system matches 3.. positioned -79922 38 122 run function skyblock:azr/m/zombie_t2_husk_chainmial
+execute if score stageSeconds Azr_system matches 161 if score #rng4 Azr_system matches 2 if score playerCount Azr_system matches 3.. positioned -79922 38 122 run function skyblock:azr/m/zombie_t2_husk_chainmail
 execute if score stageSeconds Azr_system matches 161 if score #rng4 Azr_system matches 3 if score playerCount Azr_system matches 3.. positioned -79940 38 122 run function skyblock:azr/m/zombie_t2_husk_leather
-execute if score stageSeconds Azr_system matches 161 if score #rng4 Azr_system matches 4 if score playerCount Azr_system matches 3.. positioned -79940 38 122 run function skyblock:azr/m/zombie_t2_husk_chainmial
+execute if score stageSeconds Azr_system matches 161 if score #rng4 Azr_system matches 4 if score playerCount Azr_system matches 3.. positioned -79940 38 122 run function skyblock:azr/m/zombie_t2_husk_chainmail
 
 execute if score stageSeconds Azr_system matches 161 run fill -79944 34 145 -79944 32 145 minecraft:purple_stained_glass
 execute if score stageSeconds Azr_system matches 161 run fill -79935 9 147 -79935 8 147 minecraft:quartz_pillar
