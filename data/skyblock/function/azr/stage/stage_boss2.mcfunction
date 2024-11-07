@@ -96,16 +96,12 @@ execute as @n[tag=AzrielBossA,type=illusioner] at @s run function skyblock:azr/s
     
     execute if score tickTimer Azr_system matches 1001.. as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run function skyblock:sea/experimental/zanei_flat_01
     execute if score tickTimer Azr_system matches 1021 if score #rng3 Azr_system matches 1 run scoreboard players set zanei_flat_01_marker rng1 0
-    execute if score tickTimer Azr_system matches 1026 if score #rng3 Azr_system matches 2 run scoreboard players set zanei_flat_01_marker rng1 0
-    execute if score tickTimer Azr_system matches 1031 if score #rng3 Azr_system matches 3 run scoreboard players set zanei_flat_01_marker rng1 0
     execute if score tickTimer Azr_system matches 1035..1510 if score #rng7 Azr_system matches 2 if score #rng2 Azr_system matches 1 as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s if entity @a[tag=azrPlayer,distance=0..4.5] run function skyblock:azr/stage/boss1/move1
     execute if score tickTimer Azr_system matches 1035..1510 if score #rng7 Azr_system matches 2 if score #rng2 Azr_system matches 2 as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s if entity @a[tag=azrPlayer,distance=0..4.5] run function skyblock:azr/stage/boss1/move2
     execute if score tickTimer Azr_system matches 1335 if score #rng7 Azr_system matches 3..4 if score #rng8 Azr_system matches 3..4 if score #rng6 Azr_system matches 4..5 as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run function skyblock:azr/stage/boss2/move4
     execute if score tickTimer Azr_system matches 1335 if score #rng7 Azr_system matches 5..6 if score #rng8 Azr_system matches 5..6 run kill @e[sort=random,limit=1,type=illusioner,tag=!AzrielBossA]
     execute if score tickTimer Azr_system matches 1040.. if score #rng7 Azr_system matches 1 as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run function skyblock:sea/experimental/zanei_flat_01
     execute if score tickTimer Azr_system matches 1040..1510 if score #rng7 Azr_system matches 1 if score #rng3 Azr_system matches 1 run scoreboard players set zanei_flat_01_marker rng1 0
-    execute if score tickTimer Azr_system matches 1040..1510 if score #rng7 Azr_system matches 1 if score #rng3 Azr_system matches 2 run scoreboard players set zanei_flat_01_marker rng1 0
-    execute if score tickTimer Azr_system matches 1040..1510 if score #rng7 Azr_system matches 1 if score #rng3 Azr_system matches 3 run scoreboard players set zanei_flat_01_marker rng1 0
     execute if score tickTimer Azr_system matches 1072 as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s if entity @a[tag=azrPlayer,distance=0..2.5] run function skyblock:azr/stage/boss1/tp2
     execute if score tickTimer Azr_system matches 1077 if score #rng2 Azr_system matches 1 as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s if entity @a[tag=azrPlayer,distance=0..4.5] run function skyblock:azr/stage/boss1/move1
     execute if score tickTimer Azr_system matches 1077 if score #rng2 Azr_system matches 2 as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s if entity @a[tag=azrPlayer,distance=0..4.5] run function skyblock:azr/stage/boss1/move2
