@@ -242,10 +242,12 @@ execute as @n[tag=AzrielBossA,type=illusioner] at @s run function skyblock:azr/s
     execute if score tickTimer Azr_system matches 1395 if score #rng4 Azr_system matches 4 as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run function skyblock:azr/stage/boss2/flat5d
     execute if score tickTimer Azr_system matches 1410 if score #rng2 Azr_system matches 1 as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s if entity @a[tag=azrPlayer,distance=0..4.5] run function skyblock:azr/stage/boss1/move1
     execute if score tickTimer Azr_system matches 1410 if score #rng2 Azr_system matches 2 as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s if entity @a[tag=azrPlayer,distance=0..4.5] run function skyblock:azr/stage/boss1/move2
-    execute if score tickTimer Azr_system matches 1430 as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run function skyblock:azr/stage/boss1/flat1_w
-    execute if score tickTimer Azr_system matches 1450 as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run function skyblock:azr/stage/boss1/flat1
-    execute if score tickTimer Azr_system matches 1456 as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run function skyblock:azr/stage/boss1/flat1
-    execute if score tickTimer Azr_system matches 1460 as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run function skyblock:azr/stage/boss1/flat1
+    execute if score tickTimer Azr_system matches 1450.. as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run function skyblock:sea/experimental/zanei_flat_01
+    execute if score tickTimer Azr_system matches 1450 run scoreboard players set zanei_flat_01_marker rng1 0
+    #execute if score tickTimer Azr_system matches 1430 as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run function skyblock:azr/stage/boss1/flat1_w
+    #execute if score tickTimer Azr_system matches 1450 as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run function skyblock:azr/stage/boss1/flat1
+    #execute if score tickTimer Azr_system matches 1456 as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run function skyblock:azr/stage/boss1/flat1
+    #execute if score tickTimer Azr_system matches 1460 as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run function skyblock:azr/stage/boss1/flat1
     execute if score tickTimer Azr_system matches 1450 as @a[tag=azrPlayer] at @s run summon spider ~ ~3 ~ {PersistenceRequired:1b,Tags:["AzrielDecMob"],DeathLootTable:"skyblock:azriel_spider_tier1",Health:2.5f,CustomName:'"缝迅蛛"',attributes:[{id:"generic.max_health",base:2.5d},{id:"generic.attack_damage",base:2.5d},{id:"generic.movement_speed",base:0.55d}]}
     execute if score tickTimer Azr_system matches 1475 if score #rng2 Azr_system matches 1 as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s if entity @a[tag=azrPlayer,distance=0..2.5] run function skyblock:azr/stage/boss1/tp1
     execute if score tickTimer Azr_system matches 1480 if score #rng2 Azr_system matches 1 as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s if entity @a[tag=azrPlayer,distance=0..2.5] run function skyblock:azr/stage/boss1/tp1
