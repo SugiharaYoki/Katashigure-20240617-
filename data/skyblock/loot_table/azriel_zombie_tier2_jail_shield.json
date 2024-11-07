@@ -59,7 +59,7 @@
               "components": {
                 "custom_name": "{\"text\":\"盾牌碎片\",\"italic\":false,\"color\":\"white\"}",
                 "custom_data": {
-                  "shild_shard": 1
+                  "shield_shard": 1
                 }
               }
             }
