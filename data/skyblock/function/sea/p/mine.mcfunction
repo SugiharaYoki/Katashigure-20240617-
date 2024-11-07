@@ -25,4 +25,6 @@ execute if score @s sea_4temp1 matches 20 as @e[distance=0..2.6] run damage @s 1
 execute if score @s sea_4temp1 matches 20 as @e[distance=0..3.3] run damage @s 12 explosion
 execute if score @s sea_4temp1 matches 20 as @e[distance=0..4.2] run damage @s 6 explosion
 
+execute if score @s sea_4temp1 matches 20 run kill @e[type=arrow,distance=0..2]
+execute if score @s sea_4temp1 matches 20 run kill @e[type=spectral_arrow,distance=0..2]
 execute if score @s sea_4temp1 matches 20 run kill @s[type=block_display]
