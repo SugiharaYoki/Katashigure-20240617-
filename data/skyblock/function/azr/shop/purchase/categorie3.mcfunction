@@ -392,7 +392,7 @@ $execute as @s[scores={Azr_Shop_rng$(rng)=34,Azr_Shop=$(trigger)}] \
 
 $execute as @s[scores={Azr_Shop_rng$(rng)=31,Azr_Shop=$(trigger)}] \
     if items entity @s container.* iron_helmet[count={min:1},custom_data={iron_helmet_normal:1b}] \
-    if score @s Azr_emerald matches 9. \
+    if score @s Azr_emerald matches 9.. \
     if items entity @s container.* spider_eye[count={min:1}] \
     if items entity @s container.* bone[count={min:2},custom_data={frozen_bone:1b}] \
     run function skyblock:azr/shop/purchase/categorie3/\
