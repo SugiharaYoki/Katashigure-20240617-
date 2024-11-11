@@ -71,35 +71,35 @@ execute run item replace entity @a[tag=SEAPT] armor.chest with leather_chestplat
 execute if block 90062 103 135 grindstone run item replace entity @a[tag=SEAPT] armor.legs with leather_leggings[custom_name='{"text":"基础防护裤","italic":false,"color":"red"}',custom_data={sea_leg:true},attribute_modifiers=[{type:"generic.armor",slot:"legs",id:"sea_armor:001_01",amount:1.0,operation:"add_value"},{type:"generic.armor_toughness",slot:"legs",id:"sea_armor:001_02",amount:0.5,operation:"add_value"}],unbreakable={}]
 execute if block 90075 103 141 minecraft:cauldron run item replace entity @a[tag=SEAPT] armor.feet with leather_boots[custom_name='{"text":"基础防护靴","italic":false,"color":"red"}',custom_data={sea_feet:true},attribute_modifiers=[{type:"generic.armor",slot:"feet",id:"sea_armor:008_01",amount:1.0,operation:"add_value"},{type:"generic.armor_toughness",slot:"feet",id:"sea_armor:008_02",amount:0.5,operation:"add_value"}],unbreakable={}]
 
-execute if block 90075 103 137 grindstone run give @s flint 3
+execute if block 90062 103 135 grindstone run give @s flint 3
 execute if block 90075 103 141 minecraft:cauldron run give @s flint 3
-execute if block 90075 103 137 scaffolding run give @s flint 3
-execute if block 90075 103 137 grindstone run give @s iron_ingot 1
+execute if block 90074 103 137 scaffolding run give @s flint 3
+execute if block 90062 103 135 grindstone run give @s iron_ingot 1
 execute if block 90075 103 141 minecraft:cauldron run give @s iron_ingot 1
-execute if block 90075 103 137 scaffolding run give @s iron_ingot 1
-execute if block 90075 103 137 grindstone run give @s baked_potato 3
+execute if block 90074 103 137 scaffolding run give @s iron_ingot 1
+execute if block 90062 103 135 grindstone run give @s baked_potato 3
 execute if block 90075 103 141 minecraft:cauldron run give @s baked_potato 3
-execute if block 90075 103 137 scaffolding run give @s baked_potato 3
-execute if block 90075 103 137 grindstone run give @s emerald 24
+execute if block 90074 103 137 scaffolding run give @s baked_potato 3
+execute if block 90062 103 135 grindstone run give @s emerald 24
 execute if block 90075 103 141 minecraft:cauldron run give @s emerald 36
-execute if block 90075 103 137 scaffolding run give @s emerald 48
-execute if block 90075 103 137 grindstone run give @s arrow 12
+execute if block 90074 103 137 scaffolding run give @s emerald 48
+execute if block 90062 103 135 grindstone run give @s arrow 12
 execute if block 90075 103 141 minecraft:cauldron run give @s arrow 24
-execute if block 90075 103 137 scaffolding run give @s arrow 24
-execute if block 90075 103 137 grindstone run scoreboard players add @s sea_i_trim_zombie 8
+execute if block 90074 103 137 scaffolding run give @s arrow 24
+execute if block 90062 103 135 grindstone run scoreboard players add @s sea_i_trim_zombie 8
 execute if block 90075 103 141 minecraft:cauldron run scoreboard players add @s sea_i_trim_zombie 8
-execute if block 90075 103 137 scaffolding run scoreboard players add @s sea_i_trim_zombie 16
-execute if block 90075 103 137 grindstone run scoreboard players add @s sea_i_trim_human 2
+execute if block 90074 103 137 scaffolding run scoreboard players add @s sea_i_trim_zombie 16
+execute if block 90062 103 135 grindstone run scoreboard players add @s sea_i_trim_human 2
 execute if block 90075 103 141 minecraft:cauldron run scoreboard players add @s sea_i_trim_human 2
-execute if block 90075 103 137 scaffolding run scoreboard players add @s sea_i_trim_human 2
-execute if block 90075 103 137 grindstone run scoreboard players add @s sea_i_trim_spider 1
+execute if block 90074 103 137 scaffolding run scoreboard players add @s sea_i_trim_human 2
+execute if block 90062 103 135 grindstone run scoreboard players add @s sea_i_trim_spider 1
 execute if block 90075 103 141 minecraft:cauldron run scoreboard players add @s sea_i_trim_spider 1
-execute if block 90075 103 137 scaffolding run scoreboard players add @s sea_i_trim_spider 2
-execute if block 90075 103 137 grindstone run scoreboard players add @s sea_i_trim_bug 2
+execute if block 90074 103 137 scaffolding run scoreboard players add @s sea_i_trim_spider 2
+execute if block 90062 103 135 grindstone run scoreboard players add @s sea_i_trim_bug 2
 execute if block 90075 103 141 minecraft:cauldron run scoreboard players add @s sea_i_trim_bug 4
-execute if block 90075 103 137 scaffolding run scoreboard players add @s sea_i_trim_bug 4
+execute if block 90074 103 137 scaffolding run scoreboard players add @s sea_i_trim_bug 4
 execute if block 90075 103 141 minecraft:cauldron run scoreboard players add @s sea_i_trim_skeleton 4
-execute if block 90075 103 137 scaffolding run scoreboard players add @s sea_i_trim_skeleton 4
+execute if block 90074 103 137 scaffolding run scoreboard players add @s sea_i_trim_skeleton 4
 
 
 

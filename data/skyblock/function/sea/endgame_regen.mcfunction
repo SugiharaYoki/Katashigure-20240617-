@@ -123,7 +123,7 @@ scoreboard players set sea_ch4_switch_crossroad2 sea_4temp2 -9
 scoreboard players set sea_ch4_switch_secondfloor sea_4temp2 -9
 scoreboard players set sea_ch4_switch_waterstorage sea_4temp2 -9
 
-setblock 90075 103 137 air
+setblock 90074 103 137 air
 
 tag @s remove sea_ch1_speedrun_butif
 

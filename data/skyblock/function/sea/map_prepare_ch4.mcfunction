@@ -1,6 +1,6 @@
     function skyblock:protector/entity_count_start
 
-setblock 90075 103 137 minecraft:scaffolding
+setblock 90074 103 137 minecraft:scaffolding
 
 scoreboard players set @n[tag=sc] sea_4temp2 0
 scoreboard players set @n[tag=sc] sea_4temp3 0
