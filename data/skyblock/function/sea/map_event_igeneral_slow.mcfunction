@@ -354,6 +354,8 @@ particle portal 90093 131 102 0.5 0.5 0.5 0.01 10
 
 execute if block 90089 147 109 air if block 90091 150 110 lever[powered=true] run setblock 90089 147 109 redstone_torch
 
+execute as @n[tag=SEAedwina] at @s as @e[tag=SEAmob,type=!villager,tag=!SEAedwina,distance=0..2.3] at @s run particle sweep_attack ~ ~0.7 ~ 0.2 0.2 0.2 0 2
+execute as @n[tag=SEAedwina] at @s as @e[tag=SEAmob,type=!villager,tag=!SEAedwina,distance=0..2.3] at @s run damage @s 5 generic
 
 execute positioned 90140 114 210 if entity @a[tag=SEAPT,distance=..6.5,tag=!SEAPF] if block 90073 103 141 air unless entity @n[tag=SEAchg_spawn_timer_longbridge,distance=0..1] run summon marker ~ ~ ~ {Tags:["SEAchg_spawn_timer","SEAchg_spawn_timer_longbridge"]}
 execute if block 90073 103 141 air as @n[tag=SEAchg_spawn_timer_longbridge,x=90140,y=114,z=210,distance=0..1] run function skyblock:sea/e/ev011

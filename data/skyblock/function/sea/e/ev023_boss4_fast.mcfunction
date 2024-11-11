@@ -89,6 +89,8 @@ execute as @n[tag=SEAboss4,scores={health=..80,rng2=..10,rng1=1,rng8=..0}] run s
 execute as @n[tag=SEAboss4,scores={health=..80,rng2=11..}] run scoreboard players add @s rng7 1
 
 
+
+
 execute as @n[tag=SEAboss4,scores={rng2=4..},tag=!SEAboss4_phase2] run tellraw @a[tag=SEAPT] {"text": "艾德雯娜：“真不赖，可惜偷偷告诉你，你手上的装备，我也全都有。”","color": "green"}
 execute as @n[tag=SEAboss4,scores={rng2=4..},tag=!SEAboss4_phase2] run tag @s add SEAboss4_phase2
 
