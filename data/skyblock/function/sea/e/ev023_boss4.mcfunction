@@ -32,8 +32,8 @@ execute as @s[scores={sea_4temp1=76}] run data modify entity @n[tag=SEAboss4] Mo
 execute as @s[scores={sea_4temp1=80..90}] run data modify entity @n[tag=SEAboss4,nbt={OnGround:1b}] Invulnerable set value 0b
 execute as @s[scores={sea_4temp1=90}] run effect give @n[tag=SEAboss4,nbt={OnGround:1b}] instant_health 1 3 true
 
-execute as @s[scores={sea_4temp1=90..}] unless entity @n[tag=SEAch4_spawn_timer_boss4_fast] at @n[tag=SEAboss4] unless entity @a[tag=SEAPT,distance=0..10] run effect give @s resistance 3 19 true
-execute as @s[scores={sea_4temp1=90..}] unless entity @n[tag=SEAch4_spawn_timer_boss4_fast] at @n[tag=SEAboss4] if entity @a[tag=SEAPT,distance=0..10] run effect clear @s resistance
+execute as @s[scores={sea_4temp1=50..}] unless entity @n[tag=SEAch4_spawn_timer_boss4_fast] as @n[tag=SEAboss4] at @s unless entity @a[tag=SEAPT,distance=0..10] run effect give @s resistance 3 19 true
+execute as @s[scores={sea_4temp1=90..}] unless entity @n[tag=SEAch4_spawn_timer_boss4_fast] as @n[tag=SEAboss4] at @s if entity @a[tag=SEAPT,distance=0..10] run effect clear @s resistance
 execute as @s[scores={sea_4temp1=90..}] unless entity @n[tag=SEAch4_spawn_timer_boss4_fast] at @n[tag=SEAboss4] if entity @a[tag=SEAPT,distance=0..10] as @a[tag=SEAPT] at @s run playsound minecraft:app2.astrum music @s ~ ~ ~ 10 1
 execute as @s[scores={sea_4temp1=90..}] unless entity @n[tag=SEAch4_spawn_timer_boss4_fast] at @n[tag=SEAboss4] if entity @a[tag=SEAPT,distance=0..10] positioned 90185 56 61 as @a[gamemode=spectator,distance=0..250] run playsound minecraft:app2.astrum music @s ~ ~ ~ 10 1
 execute as @s[scores={sea_4temp1=90..}] unless entity @n[tag=SEAch4_spawn_timer_boss4_fast] at @n[tag=SEAboss4] if entity @a[tag=SEAPT,distance=0..10] run summon marker ~ ~ ~ {Tags:["SEAch4_spawn_timer","SEAch4_spawn_timer_boss4_fast"]}
@@ -101,7 +101,7 @@ execute as @s[scores={rng1=100}] if entity @n[tag=sc,scores={sea_player=1}] if i
 execute as @s[scores={rng1=100}] if entity @n[tag=sc,scores={sea_player=2..}] if items entity @s container.* bread run tellraw @a[distance=0..250] {"text": "艾德雯娜：“也是，你没有义务给我。都来吧，我们去跟越涵解释一下。”","color": "green"}
 
 execute as @s[scores={rng1=104}] as @n[tag=SEAboss4_end] at @s run tp @s ~ ~ ~ facing 90185.00 57.14 80.87
-execute as @s[scores={rng1=105..135}] as @n[tag=SEAboss4_end,x=90185.00,y=57.14,z=80.87,distance=1.5..] at @s run tp @s ^ ^ ^0.5 facing 90185.00 57.14 80.87
+execute as @s[scores={rng1=105..190}] as @n[tag=SEAboss4_end,x=90185.00,y=57.14,z=80.87,distance=1.5..] at @s run tp @s ^ ^ ^0.5 facing 90185.00 57.14 80.87
 
 
 
