@@ -489,6 +489,8 @@ item replace block 90104 144 147 container.12 with gunpowder
 item replace block 90104 144 147 container.14 with gunpowder
 
 
-
+execute positioned 90083 150 160 run function skyblock:sea/m/drowned_maintenance
+execute positioned 90083 150 160 run function skyblock:sea/m/drowned_maintenance
+execute positioned 90083 150 160 run function skyblock:sea/m/skeleton
 
 

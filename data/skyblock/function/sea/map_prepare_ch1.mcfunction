@@ -491,4 +491,6 @@ item replace block 90068 128 136 container.13 with fire_charge[custom_name='{"te
 
 setblock 90074 103 136 minecraft:air
 
+fill 90092 144 154 90092 137 154 air
+
 function skyblock:protector/entity_count_end {function:"slyblock:sea/map_prepare_ch1"}

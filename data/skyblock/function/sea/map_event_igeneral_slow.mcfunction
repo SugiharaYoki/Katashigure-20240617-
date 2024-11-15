@@ -337,6 +337,8 @@ execute if block 90074 123 138 crimson_button[powered=true] run setblock 90074 1
 execute if block 90115 152 127 bamboo_button[powered=true] run fill 90115 150 127 90115 137 127 ladder[facing=west]
 execute if block 90195 27 130 bamboo_button[powered=true] run fill 90195 25 130 90195 19 130 ladder[facing=east]
 execute if block 90115 152 127 bamboo_button[powered=true] run fill 90115 150 127 90115 137 127 ladder[facing=west]
+execute if block 90093 146 153 bamboo_button[powered=true] run fill 90092 144 154 90092 137 154 ladder[facing=west]
+
 
 execute as @n[tag=SEAmob_carrybomb,nbt=!{Fire:-1s}] run kill @s
 
