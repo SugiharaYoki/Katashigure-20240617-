@@ -451,8 +451,8 @@ if block 90125 153 129 lever[powered=true] \
 if block 90124 153 129 lever[powered=false] \
 if block 90120 155 139 air run function skyblock:sea/e/ev007
 
-execute as @n[tag=SEAmarshall,scores={sea_4temp1=..592}] at @s if entity @a[tag=SEAPT,distance=..6] run function skyblock:sea/e/ev006
-execute as @n[tag=SEAmarshall,scores={sea_4temp1=593..}] at @s if entity @a[tag=SEAPT,distance=..600] run function skyblock:sea/e/ev006
+execute as @n[tag=SEAmarshall,scores={sea_4temp1=..538}] at @s if entity @a[tag=SEAPT,distance=..6] run function skyblock:sea/e/ev006
+execute as @n[tag=SEAmarshall,scores={sea_4temp1=539..}] at @s if entity @a[tag=SEAPT,distance=..600] run function skyblock:sea/e/ev006
 
 #execute unless block 90131 161 144 air as @a[tag=SEAPT,tag=!e_i_27] if block ~ ~-1 ~ polished_tuff run function skyblock:sea/e/ev007
 
