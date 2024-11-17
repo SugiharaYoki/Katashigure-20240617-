@@ -127,8 +127,7 @@ item replace block 90173 6 104 container.13 with trial_key[custom_name='{"text":
 #权之殊能：大天使沙利叶麾下的能天使
 #权之执理：大天使拉贵尔麾下的主天使
 
-#任务目标列表
-execute if items entity @a[tag=SEAPT] weapon.mainhand spyglass at @s run function skyblock:sea/p/spyglass
+
 
 #,custom_data={sea_lever2:true}
 

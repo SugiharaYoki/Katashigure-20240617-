@@ -50,14 +50,15 @@ execute at @s unless block ~ ~-1 ~ water unless block ~ ~ ~ water run scoreboard
 effect clear @s[scores={sea_oxygen=..-1}] resistance
 damage @s[scores={sea_oxygen=..-1}] 10 drown
 
-
+#任务目标列表
+execute if items entity @s weapon.mainhand spyglass at @s run function skyblock:sea/p/spyglass
 
 
 
 
 execute as @s store result score @s sea_i_spectral run clear @s spectral_arrow 0
 execute as @s unless entity @s[scores={sea_i_spectral_load=-999..}] run scoreboard players set @s sea_i_spectral_load 0
-execute as @s[nbt=!{Inventory:[{id:"minecraft:arrow"}]}] run scoreboard players set @s sea_i_spectral_load 0
+execute unless items entity @s container.* arrow run scoreboard players set @s sea_i_spectral_load 0
 execute as @s[tag=sea_t_spectral1,scores={sea_i_spectral=..2,sea_i_spectral_load=..160}] run scoreboard players add @s sea_i_spectral_load 1
 execute as @s[tag=sea_t_spectral2,scores={sea_i_spectral=..2,sea_i_spectral_load=..160}] run scoreboard players add @s sea_i_spectral_load 1
 execute as @s[scores={sea_i_spectral=..2,sea_i_spectral_load=40..50},nbt={Inventory:[{components:{"minecraft:custom_data":{sea_t_spectral_load1:true}}}]}] run scoreboard players add @s sea_i_spectral_load 40
@@ -89,16 +90,10 @@ execute if entity @s[tag=!e_w_01] if items entity @s container.* iron_hoe run te
 execute if entity @s[tag=!e_w_01] if items entity @s container.* iron_hoe run tellraw @s {"text": "防身武器，较快的攻击速度与略微优于赤手空拳的伤害。","color": "white"}
 execute if entity @s[tag=!e_w_01] if items entity @s container.* iron_hoe run tellraw @s {"text": "找台工作站将其改造一番，或许能够获得意想不到的提升……？","color": "white"}
 execute if entity @s[tag=!e_w_01] if items entity @s container.* iron_hoe run tag @s add e_w_01
-#execute as @s[tag=e_w_01] store result score @s sea_cursor run clear @s iron_hoe 0
-#execute as @s[tag=e_w_01] store result score @s sea_cursor2 run clear @s netherite_hoe 0
-#execute as @s[tag=e_w_01] at @s if entity @s[scores={sea_cursor=..0,sea_cursor2=..0}] run give @s iron_hoe[custom_name='{"text":"撬棍","italic":false,"color":"red"}',custom_data={sea_crowbar:true},attribute_modifiers=[{type:"generic.attack_damage",slot:"mainhand",id:"sea_weapon:001_01",amount:1.5,operation:"add_value"},{type:"generic.attack_speed",slot:"mainhand",id:"sea_weapon:001_02",amount:-1.5,operation:"add_value"}],unbreakable={}]
 execute if entity @s[tag=!e_w_02] if items entity @s container.* iron_axe run playsound minecraft:ui.toast.challenge_complete player @s ~ ~ ~ 1 1
 execute if entity @s[tag=!e_w_02] if items entity @s container.* iron_axe run tellraw @s {"text": "获得新武器：消防斧","color": "dark_red"}
 execute if entity @s[tag=!e_w_02] if items entity @s container.* iron_axe run tellraw @s {"text": "重型蓄力武器，以较低的速度换取高额攻击力，对单时给予我方优势。","color": "white"}
 execute if entity @s[tag=!e_w_02] if items entity @s container.* iron_axe run tag @s add e_w_02
-#execute as @s[tag=e_w_02] store result score @s sea_cursor run clear @s iron_axe 0
-#execute as @s[tag=e_w_02] store result score @s sea_cursor2 run clear @s netherite_axe 0
-#execute as @s[tag=e_w_02] at @s if entity @s[scores={sea_cursor=..0,sea_cursor2=..0}] run give @s iron_axe[custom_name='{"text":"消防斧","italic":false,"color":"red"}',custom_data={sea_safeaxe:true},attribute_modifiers=[{type:"generic.attack_damage",slot:"mainhand",id:"sea_weapon:004_01",amount:6.5,operation:"add_value"},{type:"generic.attack_speed",slot:"mainhand",id:"sea_weapon:004_02",amount:-3.0,operation:"add_value"}],unbreakable={}]
 execute if entity @s[tag=!e_w_03] if items entity @s container.* crossbow run playsound minecraft:ui.toast.challenge_complete player @s ~ ~ ~ 1 1
 execute if entity @s[tag=!e_w_03] if items entity @s container.* crossbow run tellraw @s {"text": "获得新武器：工程弩","color": "dark_red"}
 execute if entity @s[tag=!e_w_03] if items entity @s container.* crossbow run tellraw @s {"text": "远程武器，原本是用于射出钩缆的工具，搭载弩箭后也可作攻击用途。","color": "white"}
@@ -110,8 +105,6 @@ execute if entity @s[tag=!e_w_03b] if items entity @s container.* bow run tellra
 execute if entity @s[tag=!e_w_03b] if items entity @s container.* bow run tellraw @s {"text": "绝大多数枪械都被邪教徒销毁。现如今，这种简单的武器也会发挥出意想不到的效果吧。","color": "white"}
 execute if entity @s[tag=!e_w_03b] if items entity @s container.* bow run tag @s add e_w_03b_eternal
 execute if entity @s[tag=!e_w_03b] if items entity @s container.* bow run tag @s add e_w_03b
-#execute as @s[tag=e_w_03] store result score @s sea_cursor run clear @s crossbow 0
-#execute as @s[tag=e_w_03] at @s if entity @s[scores={sea_cursor=..0}] run give @s crossbow[custom_name='{"text":"工程弩","italic":false,"color":"red"}',custom_data={sea_crossbow:true},unbreakable={}]
 execute if entity @s[tag=!e_w_04] if items entity @s container.* shears[custom_data={sea_flamethrower:true}] run playsound minecraft:ui.toast.challenge_complete player @s ~ ~ ~ 1 1
 execute if entity @s[tag=!e_w_04] if items entity @s container.* shears[custom_data={sea_flamethrower:true}] run tellraw @s {"text": "获得新武器：喷火器","color": "dark_red"}
 execute if entity @s[tag=!e_w_04] if items entity @s container.* shears[custom_data={sea_flamethrower:true}] run tellraw @s {"text": "中程武器，右键时向前方射出火舌。虽然燃料会随时间自然恢复，但作为武器的威力欠佳。","color": "white"}
@@ -119,8 +112,6 @@ execute if entity @s[tag=!e_w_04] if items entity @s container.* shears[custom_d
 execute if entity @s[tag=!e_w_04] if items entity @s container.* shears[custom_data={sea_flamethrower:true}] run tag @s add e_w_04_eternal
 execute if entity @s[tag=!e_w_04] if items entity @s container.* shears[custom_data={sea_flamethrower:true}] run tag @s add e_w_04
 execute if items entity @s container.* snout_armor_trim_smithing_template[custom_data={sea_t_shotgun1:true}] run tag @s add e_w_04b_eternal
-#execute as @s[tag=e_w_04] store result score @s sea_cursor run clear @s shears 0
-#execute as @s[tag=e_w_04] at @s if entity @s[scores={sea_cursor=..0}] run give @s shears[custom_name='{"text":"喷火器","italic":false,"color":"red"}',custom_data={sea_flamethrower:true},unbreakable={}]
 execute as @s[tag=e_w_04,level=..7,scores={sea_oxygen=20..}] run xp add @s 1 points
 execute as @s[tag=e_w_04,level=..7,scores={sea_oxygen=20..}] if items entity @s container.* *[custom_data={sea_flamethrower1:true}] run xp add @s 1 points
 execute as @s[tag=e_w_04,level=..7,scores={sea_oxygen=20..}] if items entity @s container.* *[custom_data={sea_flamethrower2:true}] run xp add @s 1 points
