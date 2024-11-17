@@ -200,4 +200,5 @@ execute as @n[tag=SEAmagma1,type=marker,distance=0..2.5] at @s run function skyb
 execute if items entity @s container.* flow_banner_pattern run function skyblock:sea/p/document
 
 execute as @n[tag=SEAcrafter,type=interaction,x=90000,y=0,z=0,distance=..9] at @s positioned ~ ~-1 ~ run function skyblock:sea/shop_reader_box
+clear @s[tag=SEAPT] *[custom_data={"SEAcrafterbox":true}]
 
