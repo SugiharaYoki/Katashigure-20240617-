@@ -1,6 +1,7 @@
     function skyblock:protector/entity_count_start
 
 execute as @a[tag=SEAPT] at @s run function skyblock:sea/dead
+tag @n[tag=sc] remove sea_ch1_speedrun_butif
 tag @n[tag=sc] remove sea_cb001
 tag @n[tag=sc] remove sea_cb002
 tag @n[tag=sc] remove sea_cb003
