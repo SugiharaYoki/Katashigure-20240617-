@@ -174,6 +174,7 @@ execute if entity @s[tag=sea_purchase_pass] run playsound minecraft:item.armor.e
 execute if entity @s[tag=sea_purchase_pass] run clear @s chainmail_chestplate[custom_data={sea_chest3a:true}] 1
 execute if entity @s[tag=sea_purchase_pass] run give @s chainmail_chestplate[custom_name='{"text":"电工安全服·二型","italic":false,"color":"red"}',custom_data={sea_chest4a:true},attribute_modifiers=[{type:"generic.armor",id:"sea_armor:chest4a1",amount:2.5,operation:"add_value"},{type:"generic.movement_speed",id:"sea_armor:chest4a2",amount:-0.01,operation:"add_value"},{type:"generic.knockback_resistance",id:"sea_armor:chest4a3",amount:0.2,operation:"add_value"}],unbreakable={},enchantments={fire_protection:2},enchantment_glint_override=false]
 execute if entity @s[tag=sea_purchase_pass] run clear @s emerald 28
+tag @s remove sea_purchase_pass
 execute if score @s[nbt={Inventory:[{components:{"minecraft:custom_data":{sea_chest3b:true}}}]}] sea_crafter matches 10033 as @s[scores={sea_i_emerald=..27}] run tellraw @s {"text":"失败！余额不足！","color":"red"}
 execute if score @s[nbt={Inventory:[{components:{"minecraft:custom_data":{sea_chest3b:true}}}]}] sea_crafter matches 10033 as @s[scores={sea_i_emerald=28..}] run tag @s add sea_purchase_pass
 execute if entity @s[tag=sea_purchase_pass] run playsound minecraft:item.armor.equip_iron neutral @s ~ ~ ~ 100
@@ -212,6 +213,7 @@ execute if entity @s[tag=sea_purchase_pass] run playsound minecraft:item.armor.e
 execute if entity @s[tag=sea_purchase_pass] run clear @s chainmail_leggings[custom_data={sea_leg3a:true}] 1
 execute if entity @s[tag=sea_purchase_pass] run give @s chainmail_leggings[custom_name='{"text":"电工安全护腿·二型","italic":false,"color":"red"}',custom_data={sea_chest4a:true},attribute_modifiers=[{type:"generic.armor",id:"sea_armor:leg4a1",amount:2.5,operation:"add_value"},{type:"generic.movement_speed",id:"sea_armor:leg4a2",amount:-0.01,operation:"add_value"},{type:"generic.knockback_resistance",id:"sea_armor:leg4a3",amount:0.2,operation:"add_value"}],unbreakable={},enchantments={fire_protection:2},enchantment_glint_override=false]
 execute if entity @s[tag=sea_purchase_pass] run clear @s emerald 28
+tag @s remove sea_purchase_pass
 execute if score @s[nbt={Inventory:[{components:{"minecraft:custom_data":{sea_leg3b:true}}}]}] sea_crafter matches 10034 as @s[scores={sea_i_emerald=..27}] run tellraw @s {"text":"失败！余额不足！","color":"red"}
 execute if score @s[nbt={Inventory:[{components:{"minecraft:custom_data":{sea_leg3b:true}}}]}] sea_crafter matches 10034 as @s[scores={sea_i_emerald=28..}] run tag @s add sea_purchase_pass
 execute if entity @s[tag=sea_purchase_pass] run playsound minecraft:item.armor.equip_iron neutral @s ~ ~ ~ 100
@@ -250,6 +252,7 @@ execute if entity @s[tag=sea_purchase_pass] run playsound minecraft:item.armor.e
 execute if entity @s[tag=sea_purchase_pass] run clear @s chainmail_boots[custom_data={sea_feet3a:true}] 1
 execute if entity @s[tag=sea_purchase_pass] run give @s chainmail_boots[custom_name='{"text":"电工安全护腿·二型","italic":false,"color":"red"}',custom_data={sea_chest4a:true},attribute_modifiers=[{type:"generic.armor",id:"sea_armor:feet4a1",amount:2.5,operation:"add_value"},{type:"generic.movement_speed",id:"sea_armor:feet4a2",amount:-0.01,operation:"add_value"},{type:"generic.knockback_resistance",id:"sea_armor:feet4a3",amount:0.2,operation:"add_value"}],unbreakable={},enchantments={fire_protection:2},enchantment_glint_override=false]
 execute if entity @s[tag=sea_purchase_pass] run clear @s emerald 32
+tag @s remove sea_purchase_pass
 execute if score @s[nbt={Inventory:[{components:{"minecraft:custom_data":{sea_feet3b:true}}}]}] sea_crafter matches 10035 as @s[scores={sea_i_emerald=..31}] run tellraw @s {"text":"失败！余额不足！","color":"red"}
 execute if score @s[nbt={Inventory:[{components:{"minecraft:custom_data":{sea_feet3b:true}}}]}] sea_crafter matches 10035 as @s[scores={sea_i_emerald=32..}] run tag @s add sea_purchase_pass
 execute if entity @s[tag=sea_purchase_pass] run playsound minecraft:item.armor.equip_iron neutral @s ~ ~ ~ 100
