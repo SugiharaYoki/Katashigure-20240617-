@@ -201,5 +201,4 @@ execute if items entity @s container.* flow_banner_pattern run function skyblock
 
 execute if items entity @s player.cursor *[custom_data={"SEAcrafterbox":true}] as @n[tag=SEAcrafter,type=interaction,distance=..9] at @s positioned ~ ~-1 ~ run function skyblock:sea/shop_reader_box
 execute as @n[tag=SEAcrafter,type=interaction,distance=..9] at @s positioned ~ ~-1 ~ run function skyblock:sea/shop_reader_box
-clear @s[tag=SEAPT] *[custom_data={"SEAcrafterbox":true}]
 
