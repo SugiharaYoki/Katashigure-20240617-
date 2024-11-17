@@ -1,7 +1,7 @@
 item replace block ~ ~ ~ container.0 with barrier[custom_data={"SEAcrafterbox":true}]
 item replace block ~ ~ ~ container.3 with barrier[custom_data={"SEAcrafterbox":true}]
-item replace block ~ ~ ~ container.4 with barrier[custom_data={"SEAcrafterbox":true}]
-execute unless items entity @a[tag=SEAPT] container.* gunpowder run item replace block ~ ~ ~ container.5 with barrier[custom_data={"SEAcrafterbox":true}]
+execute unless items entity @a[tag=SEAPT] container.* gunpowder run item replace block ~ ~ ~ container.4 with barrier[custom_data={"SEAcrafterbox":true}]
+execute unless items entity @a[tag=SEAPT] container.* *[custom_data={"sea_t_shotgun1":true}] run item replace block ~ ~ ~ container.5 with barrier[custom_data={"SEAcrafterbox":true}]
 
 execute unless entity @s[tag=SEAcrafter_foodless] run item replace block ~ ~ ~ container.0 with bread[custom_data={"SEAcrafterbox":true},custom_name='{"text":"购买 储备粮","italic":false,"color":"green"}',lore=['{"text":"随机获得一种储备粮。","color":"white","italic":false}','{"text":"消耗：1 绿宝石","color":"red","italic":true}']]
 execute unless entity @s[tag=SEAcrafter_foodless] run item replace block ~ ~ ~ container.3 with golden_carrot[custom_data={"SEAcrafterbox":true},custom_name='{"text":"购买 储备粮×5","italic":false,"color":"green"}',lore=['{"text":"随机获得五个储备粮。","color":"white","italic":false}','{"text":"消耗：5 绿宝石","color":"red","italic":true}']]
