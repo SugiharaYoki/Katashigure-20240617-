@@ -442,6 +442,7 @@ setblock 90136 6 126 minecraft:waxed_copper_bulb[lit=false]
 fill 90135 6 132 90135 -1 128 minecraft:netherite_block
 
 
-
+tp @e[tag=SEAyuehan,type=villager] 90000 -500 0
+kill @e[tag=SEAyuehan,type=villager]
 
     function skyblock:protector/entity_count_end {function:"skyblock:sea/map_prepare_ch4.mcfunction"}
