@@ -154,8 +154,9 @@ particle minecraft:snowflake 90139.33 132.00 136.33 7 0 5 0.0 2
 particle minecraft:snowflake 90141 132 138 6 0 6 0.0 3
 particle minecraft:snowflake 90128.54 132.00 140.29 2 0 3 0.0 3
 
-execute as @n[tag=sc,scores={sea_4temp2=405..}] run particle minecraft:snowflake 90139.33 132.00 128.33 7 0 6 0.0 5
-execute as @n[tag=sc,scores={sea_4temp2=405..}] run particle minecraft:snowflake 90141 132 138 6 0 6 0.0 6
+execute if score sea_ch2_close_storage sea_4temp2 matches 405.. run particle minecraft:snowflake 90139.33 132.00 128.33 7 0 6 0.0 5
+execute if score sea_ch2_close_storage sea_4temp2 matches 405.. run particle minecraft:snowflake 90141 132 138 6 0 6 0.0 6
+execute if score sea_ch2_close_storage sea_4temp2 matches 405..901 run playsound minecraft:entity.minecart.riding ambient @a 90139.46 132.00 129.65 0.9 0.7
 execute as @n[tag=sc,scores={sea_4temp4=405..}] run particle minecraft:snowflake 90128.54 132.00 140.29 2 0 3 0.0 6
 execute as @n[tag=sc,scores={sea_4temp4=805..}] run particle minecraft:snowflake 90112.1 132.00 102.5 3 0 3 0.0 3
 
@@ -218,7 +219,7 @@ execute as @n[tag=sc,scores={sea_4temp2=840..850}] run scoreboard players add @s
 execute as @n[tag=sc,scores={sea_4temp2=860..870}] run scoreboard players add @s sea_4temp2 1
 execute as @n[tag=sc,scores={sea_4temp2=900..920}] run scoreboard players add @s sea_4temp2 1
 execute as @n[tag=sc,scores={sea_4temp2=950..960}] run scoreboard players add @s sea_4temp2 1
-execute as @n[tag=sc,scores={sea_4temp2=1000..1200}] run scoreboard players add @s sea_4temp2 1
+execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 1000.. run scoreboard players add sea_ch2_angel_bless_trial sea_4temp2 1
 execute as @n[tag=sc,scores={sea_4temp2=1300..1400}] run scoreboard players add @s sea_4temp2 1
 execute as @n[tag=sc,scores={sea_4temp2=2000..4000}] run scoreboard players add @s sea_4temp2 1
 execute as @n[tag=sc,scores={sea_4temp2=5000..5300}] run scoreboard players add @s sea_4temp2 1
@@ -232,28 +233,8 @@ execute if entity @a[tag=SEAPT,x=90138,y=129,z=117,distance=0..3] unless entity 
 execute as @a[tag=SEAPT,x=90138,y=129,z=117,distance=0..3,tag=!e_i_22] if entity @a[tag=SEAPT,x=90142,y=129,z=117,distance=8..] if entity @n[tag=sc,scores={sea_4temp2=955..962}] run tellraw @s {"text": "总感觉似乎……所有人都得到这里来才能安全前进。","color": "gray"}
 execute as @a[tag=SEAPT,x=90138,y=129,z=117,distance=0..3] if entity @a[tag=SEAPT,x=90142,y=129,z=117,distance=8..] if entity @n[tag=sc,scores={sea_4temp2=955..962}] run tag @s add e_i_22
 
-execute as @n[tag=sc,scores={sea_4temp2=841}] run summon minecraft:piglin 90111 128 115 {Rotation:[0f,0f],NoAI:1b,Tags:["SEAeventfirstpig"]}
-execute as @n[tag=sc,scores={sea_4temp2=841}] run setblock 90110 131 116 air
-execute as @n[tag=sc,scores={sea_4temp2=841}] run setblock 90112 131 116 air
-execute as @n[tag=sc,scores={sea_4temp2=842}] run setblock 90110 131 116 lantern[hanging=true]
-execute as @n[tag=sc,scores={sea_4temp2=842}] run setblock 90112 131 116 lantern[hanging=true]
-execute as @n[tag=sc,scores={sea_4temp2=842}] as @n[tag=SEAeventfirstpig] at @s run tp @s ~ -500 ~
 
-execute as @n[tag=sc,scores={sea_4temp2=810}] run scoreboard players set @a[tag=SEAPT,scores={sea_progress=..3}] sea_progress 4
-execute as @n[tag=sc,scores={sea_4temp2=810}] run tellraw @a[tag=SEAPT] {"text": "播报：系统警告，北区冷冻库系统过","color": "red"}
-execute as @n[tag=sc,scores={sea_4temp2=813}] run tellraw @a[tag=SEAPT] {"text": "库系统过载，请相","color": "red"}
-execute as @n[tag=sc,scores={sea_4temp2=814}] run tellraw @a[tag=SEAPT] {"text": "冻库系统过","color": "red"}
-execute as @n[tag=sc,scores={sea_4temp2=819}] run tellraw @a[tag=SEAPT] {"text": "工作人员检查电","color": "red"}
-execute as @n[tag=sc,scores={sea_4temp2=823}] run tellraw @a[tag=SEAPT] {"text": "关工作人员检","color": "red"}
-execute as @n[tag=sc,scores={sea_4temp2=826..829}] run tellraw @a[tag=SEAPT] {"text": "路系统","color": "red"}
-execute as @n[tag=sc,scores={sea_4temp2=813..822}] run playsound minecraft:ambient.soul_sand_valley.mood ambient @a 90104 133 100 13 1.5
-execute as @n[tag=sc,scores={sea_4temp2=813..829}] run playsound minecraft:ambient.soul_sand_valley.additions ambient @a 90104 133 100 13 1.5
-execute as @n[tag=sc,scores={sea_4temp2=823}] run fill 90104 130 103 90103 128 103 air
-execute as @n[tag=sc,scores={sea_4temp2=823}] run playsound minecraft:entity.zombie.attack_iron_door ambient @a 90103 128 103 2 0.5
-execute as @n[tag=sc,scores={sea_4temp2=813}] run time set 13750t
-execute as @n[tag=sc,scores={sea_4temp2=816}] run time set 14000t
-execute as @n[tag=sc,scores={sea_4temp2=819}] run time set 14250t
-execute as @n[tag=sc,scores={sea_4temp2=821}] run time set 14500t
+execute as @n[tag=sc,scores={sea_4temp2=810..869}] run function skyblock:sea/e/ev024_ch2_close_storage_both
 
 execute as @n[tag=sc,scores={sea_4temp2=1023}] run time set 14750t
 execute as @n[tag=sc,scores={sea_4temp2=1026}] run time set 15000t
@@ -261,27 +242,6 @@ execute as @n[tag=sc,scores={sea_4temp2=1029}] run time set 15250t
 execute as @n[tag=sc,scores={sea_4temp2=1032}] run time set 15500t
 execute as @n[tag=sc,scores={sea_4temp2=1035}] run time set 15750t
 execute as @n[tag=sc,scores={sea_4temp2=1038}] run time set 16000t
-
-execute as @n[tag=sc,scores={sea_4temp2=861}] run setblock 90101 132 110 minecraft:tinted_glass
-execute as @n[tag=sc,scores={sea_4temp2=861}] run setblock 90106 132 110 minecraft:tinted_glass
-execute as @n[tag=sc,scores={sea_4temp2=861}] run playsound block.stone_button.click_off block @a 90101 132 110 2 1.4
-execute as @n[tag=sc,scores={sea_4temp2=861}] run playsound block.stone_button.click_off block @a 90106 132 110 2 1.4
-execute as @n[tag=sc,scores={sea_4temp2=861}] positioned 90105 128 107 run function skyblock:sea/m/pillager
-execute as @n[tag=sc,scores={sea_4temp2=861}] positioned 90105 128 107 run function skyblock:sea/m/pillager
-execute as @n[tag=sc,scores={sea_4temp2=861}] positioned 90105 128 107 if entity @n[tag=sc,scores={sea_player=3..}] run function skyblock:sea/m/zombie_cook
-
-execute as @n[tag=sc,scores={sea_4temp2=868}] positioned 90119 128 107 run function skyblock:sea/m/silverfish_big
-execute as @n[tag=sc,scores={sea_4temp2=868..869}] positioned 90119 128 107 run function skyblock:sea/m/silverfish
-execute as @n[tag=sc,scores={sea_4temp2=868}] positioned 90119 128 107 if entity @n[tag=sc,scores={sea_player=4..}] run function skyblock:sea/m/silverfish
-execute as @n[tag=sc,scores={sea_4temp2=868}] positioned 90130 129 106 run function skyblock:sea/m/skeleton
-execute as @n[tag=sc,scores={sea_4temp2=868}] positioned 90130 129 106 if entity @n[tag=sc,scores={sea_player=3..}] run function skyblock:sea/m/skeleton
-execute as @n[tag=sc,scores={sea_4temp2=867..869}] positioned 90130 129 106 if entity @n[tag=sc,scores={sea_player=5..}] run function skyblock:sea/m/skeleton_melee
-execute as @n[tag=sc,scores={sea_4temp2=867..869}] positioned 90116 129 118 run function skyblock:sea/m/drowned_small
-execute as @n[tag=sc,scores={sea_4temp2=868..869}] positioned 90116 129 118 if entity @n[tag=sc,scores={sea_player=3..}] run function skyblock:sea/m/drowned_small
-execute as @n[tag=sc,scores={sea_4temp2=868..869}] positioned 90116 129 118 if entity @n[tag=sc,scores={sea_player=5..}] run function skyblock:sea/m/drowned_small
-execute as @n[tag=sc,scores={sea_4temp2=861..862}] positioned 90104 128 103 run function skyblock:sea/m/drowned_small
-execute as @n[tag=sc,scores={sea_4temp2=861..862}] positioned 90104 128 103 run function skyblock:sea/m/drowned_small
-execute as @n[tag=sc,scores={sea_4temp2=861..862}] positioned 90104 128 103 if entity @n[tag=sc,scores={sea_player=4..}] run function skyblock:sea/m/drowned_small
 
 
 execute as @n[tag=sc,scores={sea_4temp2=901}] positioned 90133 129 114 run summon stray ~ ~ ~ {NoAI:true,Invulnerable:true,Rotation:[0.0f,0.0f],DeathLootTable:"skyblock:sea_skeleton1",Tags:["SEAmob","SEAeventi02slow2a"],attributes:[{id:"generic.attack_damage",base:2.0},{id:"generic.movement_speed",base:0.17},{id:"generic.max_health",base:16}],Health:16,PersistenceRequired:1b,Silent:1b}
@@ -316,69 +276,7 @@ execute as @n[tag=sc,scores={sea_4temp2=951}] run tellraw @a[tag=SEAPT] {"text":
 execute as @n[tag=sc,scores={sea_4temp2=951}] run kill @n[tag=SEArivette]
 execute as @n[tag=sc,scores={sea_4temp2=951}] run time set 14500t
 
-execute as @n[tag=sc,scores={sea_4temp2=1001}] run fill 90131 131 118 90131 129 116 minecraft:waxed_oxidized_copper_grate
-execute if entity @n[tag=sc,scores={sea_4temp2=1001}] as @a[tag=SEAPT] at @s run playsound minecraft:entity.evoker.ambient hostile @s ~ ~ ~ 10 0.7
-execute if entity @n[tag=sc,scores={sea_4temp2=1001}] as @a[tag=SEAPT] at @s if entity @n[tag=sc,scores={sea_player=1}] run tellraw @s {"text":"神秘的低吟：“甚好，终于到了。”","color":"red"}
-execute if entity @n[tag=sc,scores={sea_4temp2=1001}] as @a[tag=SEAPT] at @s if entity @n[tag=sc,scores={sea_player=2..}] run tellraw @s {"text":"神秘的低吟：“甚好，所有人都到齐了。”","color":"red"}
-execute if entity @n[tag=sc,scores={sea_4temp2=1023}] as @a[tag=SEAPT] at @s run playsound minecraft:entity.evoker.ambient hostile @s ~ ~ ~ 10 0.7
-execute if entity @n[tag=sc,scores={sea_4temp2=1023}] as @a[tag=SEAPT] at @s if entity @n[tag=sc,scores={sea_player=1}] run tellraw @s {"text":"神秘的低吟：“吾为汝准备了完美的坟墓，珍惜吾之恩赐。”","color":"red"}
-execute if entity @n[tag=sc,scores={sea_4temp2=1023}] as @a[tag=SEAPT] at @s if entity @n[tag=sc,scores={sea_player=2..}] run tellraw @s {"text":"神秘的低吟：“吾为汝等准备了完美的坟墓，珍惜吾之恩赐。”","color":"red"}
-execute if entity @n[tag=sc,scores={sea_4temp2=1032}] as @a[tag=SEAPT] at @s run playsound minecraft:entity.evoker.prepare_attack hostile @s ~ ~ ~ 10 0.9
-execute if entity @n[tag=sc,scores={sea_4temp2=1032}] as @e[tag=SEAeventi02slow2a] at @s run data modify entity @s NoAI set value false
-execute if entity @n[tag=sc,scores={sea_4temp2=1032}] as @e[tag=SEAeventi02slow2a] at @s run data modify entity @s Invulnerable set value false
-execute if entity @n[tag=sc,scores={sea_4temp2=1057}] as @a[tag=SEAPT] at @s run playsound minecraft:entity.evoker.prepare_attack hostile @s ~ ~ ~ 10 0.9
-execute if entity @n[tag=sc,scores={sea_4temp2=1057}] as @e[tag=SEAeventi02slow2b] at @s run data modify entity @s NoAI set value false
-execute if entity @n[tag=sc,scores={sea_4temp2=1057}] as @e[tag=SEAeventi02slow2b] at @s run data modify entity @s Invulnerable set value false
-execute if entity @n[tag=sc,scores={sea_4temp2=1089}] as @a[tag=SEAPT] at @s run playsound minecraft:entity.evoker.prepare_attack hostile @s ~ ~ ~ 10 0.9
-execute if entity @n[tag=sc,scores={sea_4temp2=1089}] as @e[tag=SEAeventi02slow2c] at @s run data modify entity @s NoAI set value false
-execute if entity @n[tag=sc,scores={sea_4temp2=1089}] as @e[tag=SEAeventi02slow2c] at @s run data modify entity @s Invulnerable set value false
-execute if entity @n[tag=sc,scores={sea_4temp2=1128}] as @a[tag=SEAPT] at @s run playsound minecraft:entity.evoker.prepare_attack hostile @s ~ ~ ~ 10 0.9
-execute if entity @n[tag=sc,scores={sea_4temp2=1128}] as @e[tag=SEAeventi02slow2d] at @s run data modify entity @s NoAI set value false
-execute if entity @n[tag=sc,scores={sea_4temp2=1128}] as @e[tag=SEAeventi02slow2d] at @s run data modify entity @s Invulnerable set value false
-execute if entity @n[tag=sc,scores={sea_4temp2=1196}] positioned 90133 129 122 run function skyblock:sea/m/drowned_shield
-execute if entity @n[tag=sc,scores={sea_4temp2=1196}] positioned 90133 129 112 run function skyblock:sea/m/drowned_shield
-execute if entity @n[tag=sc,scores={sea_4temp2=1197}] positioned 90133 129 122 if entity @n[tag=sc,scores={sea_player=3..}] run function skyblock:sea/m/drowned_hat
-execute if entity @n[tag=sc,scores={sea_4temp2=1197}] positioned 90133 129 112 if entity @n[tag=sc,scores={sea_player=3..}] run function skyblock:sea/m/drowned_hat
-execute if entity @n[tag=sc,scores={sea_4temp2=1195}] positioned 90133 129 122 if entity @n[tag=sc,scores={sea_player=4..}] run function skyblock:sea/m/drowned_hat
-execute if entity @n[tag=sc,scores={sea_4temp2=1195}] positioned 90133 129 112 if entity @n[tag=sc,scores={sea_player=4..}] run function skyblock:sea/m/drowned_hat
-execute if entity @n[tag=sc,scores={sea_4temp2=1195}] positioned 90133 129 122 if entity @n[tag=sc,scores={sea_player=5..}] run function skyblock:sea/m/drowned_shield
-execute if entity @n[tag=sc,scores={sea_4temp2=1195}] positioned 90133 129 112 if entity @n[tag=sc,scores={sea_player=5..}] run function skyblock:sea/m/drowned_shield
-execute if entity @n[tag=sc,scores={sea_4temp2=1196..1197}] positioned 90133 129 122 run function skyblock:sea/m/drowned_small
-execute if entity @n[tag=sc,scores={sea_4temp2=1196..1197}] positioned 90133 129 112 run function skyblock:sea/m/drowned_small
-execute if entity @n[tag=sc,scores={sea_4temp2=1195}] positioned 90133 129 122 if entity @n[tag=sc,scores={sea_player=6..}] run function skyblock:sea/m/zombie_cook
-execute if entity @n[tag=sc,scores={sea_4temp2=1195}] positioned 90133 129 112 if entity @n[tag=sc,scores={sea_player=6..}] run function skyblock:sea/m/zombie_cook
-execute if entity @n[tag=sc,scores={sea_4temp2=1195}] positioned 90133 129 122 if entity @n[tag=sc,scores={sea_player=4..}] run function skyblock:sea/m/zombie_cook
-execute if entity @n[tag=sc,scores={sea_4temp2=1195}] positioned 90133 129 112 if entity @n[tag=sc,scores={sea_player=4..}] run function skyblock:sea/m/zombie_cook
-execute if entity @n[tag=sc,scores={sea_4temp2=1198}] run fill 90133 130 113 90133 129 113 minecraft:air destroy
-execute if entity @n[tag=sc,scores={sea_4temp2=1198}] run fill 90133 130 121 90133 129 121 minecraft:air destroy
-execute if entity @n[tag=sc,scores={sea_4temp2=1198}] run scoreboard players set @a[tag=SEAPT,scores={sea_progress=..4}] sea_progress 5
-execute if entity @n[tag=sc,scores={sea_4temp2=1198}] run effect give @a[tag=SEAPT] darkness 3 0 true
-execute if entity @n[tag=sc,scores={sea_4temp2=1198..1299}] if block 90133 129 121 air unless entity @e[tag=SEAmob,x=90137,y=129,z=117,distance=..7] run scoreboard players set @n[tag=sc] sea_4temp2 1300
-
-execute if entity @n[tag=sc,scores={sea_4temp2=1301}] run fill 90131 131 118 90131 129 116 minecraft:air
-execute if entity @n[tag=sc,scores={sea_4temp2=1301}] run fill 90143 131 116 90143 129 118 minecraft:air
-execute if entity @n[tag=sc,scores={sea_4temp2=1301}] positioned 90105 128 101 run function skyblock:sea/m/zombie_cook
-execute if entity @n[tag=sc,scores={sea_4temp2=1301}] positioned 90105 128 101 run function skyblock:sea/m/zombie_cook
-execute if entity @n[tag=sc,scores={sea_4temp2=1301}] positioned 90105 128 101 run function skyblock:sea/m/pillager
-execute if entity @n[tag=sc,scores={sea_4temp2=1301}] positioned 90105 128 101 run function skyblock:sea/m/pillager
-execute if entity @n[tag=sc,scores={sea_4temp2=1301}] positioned 90095 128 112 run function skyblock:sea/m/drowned_small
-execute if entity @n[tag=sc,scores={sea_4temp2=1301}] positioned 90095 128 112 run function skyblock:sea/m/drowned_small
-execute if entity @n[tag=sc,scores={sea_4temp2=1301}] positioned 90095 128 112 run function skyblock:sea/m/drowned_small
-execute if entity @n[tag=sc,scores={sea_4temp2=1301}] positioned 90095 128 112 run function skyblock:sea/m/drowned_small
-execute if entity @n[tag=sc,scores={sea_4temp2=1301}] run setblock 90147 132 117 minecraft:white_stained_glass
-execute if entity @n[tag=sc,scores={sea_4temp2=1301}] run setblock 90147 132 121 minecraft:white_stained_glass
-execute if entity @n[tag=sc,scores={sea_4temp2=1301}] run setblock 90147 132 113 minecraft:white_stained_glass
-
-execute if entity @n[tag=sc,scores={sea_4temp2=1301}] positioned 90142 128 102 run function skyblock:sea/m/zombie_cook
-execute if entity @n[tag=sc,scores={sea_4temp2=1301}] positioned 90142 128 102 run function skyblock:sea/m/zombie_cook
-execute if entity @n[tag=sc,scores={sea_4temp2=1301}] positioned 90142 128 102 run function skyblock:sea/m/skeleton
-execute if entity @n[tag=sc,scores={sea_4temp2=1301}] positioned 90142 128 102 run function skyblock:sea/m/skeleton
-execute if entity @n[tag=sc,scores={sea_4temp2=1301}] positioned 90142 128 102 run function skyblock:sea/m/skeleton
-execute if entity @n[tag=sc,scores={sea_4temp2=1301}] positioned 90142 128 102 run function skyblock:sea/m/drowned_shield
-execute if entity @n[tag=sc,scores={sea_4temp2=1301}] positioned 90142 128 102 run function skyblock:sea/m/drowned_shield
-execute if entity @n[tag=sc,scores={sea_4temp2=1301}] positioned 90142 128 102 run function skyblock:sea/m/drowned_shield
-execute if entity @n[tag=sc,scores={sea_4temp2=1301}] positioned 90142 128 102 run function skyblock:sea/m/drowned_shield
-execute if entity @n[tag=sc,scores={sea_4temp2=1301}] run setblock 90125 130 115 minecraft:stone_button[facing=west]
+execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 1001..1340 run function skyblock:sea/e/ev024_ch2_bless_from_the_angel
 
 
 

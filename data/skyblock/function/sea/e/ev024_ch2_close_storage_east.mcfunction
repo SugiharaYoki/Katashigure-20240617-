@@ -29,7 +29,6 @@ execute if score sea_ch2_close_storage sea_4temp2 matches 439 run setblock 90105
 execute if score sea_ch2_close_storage sea_4temp2 matches 445 run setblock 90123 129 132 minecraft:redstone_wall_torch[facing=north]
 execute if score sea_ch2_close_storage sea_4temp2 matches 445 run setblock 90111 129 130 minecraft:redstone_wall_torch[facing=north]
 execute if score sea_ch2_close_storage sea_4temp2 matches 410 run playsound minecraft:block.fire.ambient ambient @a 90111.53 129.47 130.69 10 1.5
-execute if score sea_ch2_close_storage sea_4temp2 matches 405..901 run playsound minecraft:entity.minecart.riding ambient @a 90139.46 132.00 129.65 0.9 0.7
 execute if score sea_ch2_close_storage sea_4temp2 matches 407..424 run particle minecraft:large_smoke 90149.38 130.10 129.43 0.5 0 0.5 0.0 10
 
 execute as @a[tag=SEAPT,x=90111,y=128,z=129,distance=0..2] if score sea_ch2_close_storage sea_4temp2 matches 409..500 run scoreboard players set sea_ch2_close_storage sea_4temp2 500
@@ -40,4 +39,4 @@ execute if score sea_ch2_close_storage sea_4temp2 matches 505 positioned 90100 1
 execute if score sea_ch2_close_storage sea_4temp2 matches 505 positioned 90100 128 120 run function skyblock:sea/m/silverfish
 execute if score sea_ch2_close_storage sea_4temp2 matches 505 positioned 90100 128 120 run function skyblock:sea/m/silverfish
 
-execute if score sea_ch2_close_storage sea_4temp2 matches 405 run scoreboard players set @n[tag=sc] sea_4temp2 400
+execute if score sea_ch2_close_storage sea_4temp2 matches 405 run scoreboard players set @n[tag=sc] sea_4temp2 420
