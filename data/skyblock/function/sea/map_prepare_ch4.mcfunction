@@ -424,6 +424,19 @@ summon minecraft:item_frame 90213 45 141 {Invisible:1b,Fixed:0b,Invulnerable:0b,
 setblock 90213 49 145 chest[facing=north]
 item replace block 90213 49 145 container.13 with coal 1
 
+setblock 90160 6 138 chest[facing=east,waterlogged=true]
+item replace block 90160 6 138 container.12 with emerald 3
+item replace block 90160 6 138 container.14 with emerald 3
+
+
+
+
+
+
+
+
+
+
 #最终大厅 第七章入口
 setblock 90154 18 134 minecraft:waxed_copper_bulb[lit=false]
 setblock 90154 18 126 minecraft:waxed_copper_bulb[lit=false]

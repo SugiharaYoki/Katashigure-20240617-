@@ -1,5 +1,5 @@
 
-playsound minecraft:entity.player.levelup master @a[tag=SEAPT,distance=0..10,tag=!seaPerm006] 90154.38 134.06 267.4710 0.8
+playsound minecraft:entity.player.levelup master @a[tag=SEAPT,distance=0..10,tag=!seaPerm006] 90154.38 134.06 267.47 10 0.8
 tellraw @a[tag=SEAPT,distance=0..10,tag=!seaPerm006] [{"text":"永久解锁新曲谱！","color":"aqua","bold": true}]
 tellraw @a[tag=SEAPT,distance=0..10,tag=!seaPerm006] [{"text":"曲谱：擅始惚终的提琴独奏","color":"aqua"}]
 tag @a[tag=SEAPT,distance=0..10,tag=!seaPerm006] add seaPerm006
