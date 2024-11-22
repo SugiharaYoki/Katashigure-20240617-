@@ -205,8 +205,8 @@ execute as @n[tag=sc,scores={sea_4temp2=800..830}] run scoreboard players add @s
 execute as @n[tag=sc,scores={sea_4temp2=840..850}] run scoreboard players add @s sea_4temp2 1
 execute as @n[tag=sc,scores={sea_4temp2=860..870}] run scoreboard players add @s sea_4temp2 1
 execute as @n[tag=sc,scores={sea_4temp2=900}] if score sea_ch2_angel_bless_trial sea_4temp2 matches ..99 run scoreboard players set sea_ch2_angel_bless_trial sea_4temp2 900
-execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 900..920 run scoreboard players add @s sea_4temp2 1
-execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 950..960 run scoreboard players add @s sea_4temp2 1
+execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 900..920 run scoreboard players add sea_ch2_angel_bless_trial sea_4temp2 1
+execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 950..960 run scoreboard players add sea_ch2_angel_bless_trial sea_4temp2 1
 execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 1000.. run scoreboard players add sea_ch2_angel_bless_trial sea_4temp2 1
 execute as @n[tag=sc,scores={sea_4temp2=1300..1400}] run scoreboard players add @s sea_4temp2 1
 execute as @n[tag=sc,scores={sea_4temp2=2000..4000}] run scoreboard players add @s sea_4temp2 1
