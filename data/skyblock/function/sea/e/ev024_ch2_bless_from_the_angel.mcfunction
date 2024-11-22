@@ -1,3 +1,57 @@
+
+
+
+execute if entity @a[tag=SEAPT,x=90138,y=129,z=117,distance=0..3] unless entity @a[tag=SEAPT,x=90142,y=129,z=117,distance=8..] if score sea_ch2_angel_bless_trial sea_4temp2 matches 955..962 run scoreboard players set sea_ch2_angel_bless_trial sea_4temp2 1000
+execute as @a[tag=SEAPT,x=90138,y=129,z=117,distance=0..3,tag=!e_i_22] if entity @a[tag=SEAPT,x=90142,y=129,z=117,distance=8..] if score sea_ch2_angel_bless_trial sea_4temp2 matches 955..962 run tellraw @s {"text": "总感觉似乎……所有人都得到这里来才能安全前进。","color": "gray"}
+execute as @a[tag=SEAPT,x=90138,y=129,z=117,distance=0..3] if entity @a[tag=SEAPT,x=90142,y=129,z=117,distance=8..] if score sea_ch2_angel_bless_trial sea_4temp2 matches 955..962 run tag @s add e_i_22
+
+
+
+
+
+execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 901 positioned 90133 129 114 run summon stray ~ ~ ~ {NoAI:true,Invulnerable:true,Rotation:[0.0f,0.0f],DeathLootTable:"skyblock:sea_skeleton1",Tags:["SEAmob","SEAeventi02slow2a"],attributes:[{id:"generic.attack_damage",base:2.0},{id:"generic.movement_speed",base:0.17},{id:"generic.max_health",base:16}],Health:16,PersistenceRequired:1b,Silent:1b}
+execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 901 positioned 90135 129 114 run summon stray ~ ~ ~ {NoAI:true,Invulnerable:true,Rotation:[0.0f,0.0f],DeathLootTable:"skyblock:sea_skeleton1",Tags:["SEAmob","SEAeventi02slow2c"],attributes:[{id:"generic.attack_damage",base:2.0},{id:"generic.movement_speed",base:0.17},{id:"generic.max_health",base:16}],Health:16,PersistenceRequired:1b,Silent:1b}
+execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 901 positioned 90137 129 114 run summon stray ~ ~ ~ {NoAI:true,Invulnerable:true,Rotation:[0.0f,0.0f],DeathLootTable:"skyblock:sea_skeleton1",Tags:["SEAmob","SEAeventi02slow2c"],attributes:[{id:"generic.attack_damage",base:2.0},{id:"generic.movement_speed",base:0.17},{id:"generic.max_health",base:16}],Health:16,PersistenceRequired:1b,Silent:1b}
+execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 901 positioned 90139 129 114 run summon stray ~ ~ ~ {NoAI:true,Invulnerable:true,Rotation:[0.0f,0.0f],DeathLootTable:"skyblock:sea_skeleton1",Tags:["SEAmob","SEAeventi02slow2d"],attributes:[{id:"generic.attack_damage",base:2.0},{id:"generic.movement_speed",base:0.17},{id:"generic.max_health",base:16}],Health:16,PersistenceRequired:1b,Silent:1b}
+execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 901 positioned 90141 129 114 run summon stray ~ ~ ~ {NoAI:true,Invulnerable:true,Rotation:[0.0f,0.0f],DeathLootTable:"skyblock:sea_skeleton1",Tags:["SEAmob","SEAeventi02slow2c"],attributes:[{id:"generic.attack_damage",base:2.0},{id:"generic.movement_speed",base:0.17},{id:"generic.max_health",base:16}],Health:16,PersistenceRequired:1b,Silent:1b}
+execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 901 positioned 90133 129 120 run summon stray ~ ~ ~ {NoAI:true,Invulnerable:true,Rotation:[180.0f,0.0f],DeathLootTable:"skyblock:sea_skeleton1",Tags:["SEAmob","SEAeventi02slow2d"],attributes:[{id:"generic.attack_damage",base:2.0},{id:"generic.movement_speed",base:0.17},{id:"generic.max_health",base:16}],Health:16,PersistenceRequired:1b,Silent:1b}
+execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 901 positioned 90135 129 120 run summon stray ~ ~ ~ {NoAI:true,Invulnerable:true,Rotation:[180.0f,0.0f],DeathLootTable:"skyblock:sea_skeleton1",Tags:["SEAmob","SEAeventi02slow2a"],attributes:[{id:"generic.attack_damage",base:2.0},{id:"generic.movement_speed",base:0.17},{id:"generic.max_health",base:16}],Health:16,PersistenceRequired:1b,Silent:1b}
+execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 901 positioned 90137 129 120 run summon stray ~ ~ ~ {NoAI:true,Invulnerable:true,Rotation:[180.0f,0.0f],DeathLootTable:"skyblock:sea_skeleton1",Tags:["SEAmob","SEAeventi02slow2b"],attributes:[{id:"generic.attack_damage",base:2.0},{id:"generic.movement_speed",base:0.17},{id:"generic.max_health",base:16}],Health:16,PersistenceRequired:1b,Silent:1b}
+execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 901 positioned 90139 129 120 run summon stray ~ ~ ~ {NoAI:true,Invulnerable:true,Rotation:[180.0f,0.0f],DeathLootTable:"skyblock:sea_skeleton1",Tags:["SEAmob","SEAeventi02slow2d"],attributes:[{id:"generic.attack_damage",base:2.0},{id:"generic.movement_speed",base:0.17},{id:"generic.max_health",base:16}],Health:16,PersistenceRequired:1b,Silent:1b}
+execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 901 positioned 90141 129 120 run summon stray ~ ~ ~ {NoAI:true,Invulnerable:true,Rotation:[180.0f,0.0f],DeathLootTable:"skyblock:sea_skeleton1",Tags:["SEAmob","SEAeventi02slow2b"],attributes:[{id:"generic.attack_damage",base:2.0},{id:"generic.movement_speed",base:0.17},{id:"generic.max_health",base:16}],Health:16,PersistenceRequired:1b,Silent:1b}
+execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 901..909 positioned 90141 128 117 run stopsound @a[distance=0..8]
+execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 901..909 positioned 90141 128 117 run playsound minecraft:ambient.nether_wastes.mood master @a ~ ~ ~ 5 0.7
+execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 901..903 positioned 90141 128 117 run playsound minecraft:ambient.nether_wastes.additions master @a ~ ~ ~ 5 0.7
+
+execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 901 run setblock 90134 128 115 minecraft:waxed_oxidized_copper_bulb[lit=true]
+execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 901 run setblock 90140 128 115 minecraft:waxed_oxidized_copper_bulb[lit=true]
+execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 901 run setblock 90140 128 119 minecraft:waxed_oxidized_copper_bulb[lit=true]
+execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 901 run setblock 90134 128 119 minecraft:waxed_oxidized_copper_bulb[lit=true]
+execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 901 run playsound block.stone_button.click_off block @a 90134 128 115 0.8 1.4
+execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 901 run playsound block.stone_button.click_off block @a 90140 128 115 0.8 1.4
+execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 901 run playsound block.stone_button.click_off block @a 90140 128 119 0.8 1.4
+execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 901 run playsound block.stone_button.click_off block @a 90134 128 119 0.8 1.4
+
+execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 901 run fill 90130 129 119 90129 131 119 air
+#fill 90143 131 116 90143 129 118 air
+execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 901 run setblock 90125 130 115 minecraft:air
+
+execute if block 90129 129 124 stone_button[powered=true] run scoreboard players set @n[tag=sc] sea_4temp2 950
+execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 951 run tellraw @a[tag=SEAPT] {"text": "播报：北冷冻库空气循环系统已关闭。","color": "green"}
+execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 951 run kill @n[tag=SEArivette]
+execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 951 run time set 14500t
+
+
+execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 1023 run time set 14750t
+execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 1026 run time set 15000t
+execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 1029 run time set 15250t
+execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 1032 run time set 15500t
+execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 1035 run time set 15750t
+execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 1038 run time set 16000t
+
+
+
+
 execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 1001 run fill 90131 131 118 90131 129 116 minecraft:waxed_oxidized_copper_grate
 execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 1001 as @a[tag=SEAPT] at @s run playsound minecraft:entity.evoker.ambient hostile @s ~ ~ ~ 10 0.7
 execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 1001 as @a[tag=SEAPT] at @s if entity @n[tag=sc,scores={sea_player=1}] run tellraw @s {"text":"神秘的低吟：“甚好，终于到了。”","color":"red"}
