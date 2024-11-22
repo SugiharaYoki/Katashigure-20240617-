@@ -159,7 +159,6 @@ execute positioned 90185 19 130 if entity @a[tag=SEAPT,distance=..4.7] unless en
 execute positioned 90185 19 130 if entity @a[tag=SEAPT,distance=..4.7] unless entity @n[tag=SEAch4_spawn,distance=0..3] positioned 90187 5 148 run function skyblock:sea/m/cave_spider_small
 execute positioned 90185 19 130 if entity @a[tag=SEAPT,distance=..4.7] unless entity @n[tag=SEAch4_spawn,distance=0..3] positioned 90187 5 148 run function skyblock:sea/m/cave_spider_small
 
-
 execute positioned 90185 19 130 if entity @a[tag=SEAPT,distance=..4.7] unless entity @n[tag=SEAch4_spawn,distance=0..3] run summon marker ~ ~ ~ {Tags:["SEAch4_spawn"]}
 
 #
