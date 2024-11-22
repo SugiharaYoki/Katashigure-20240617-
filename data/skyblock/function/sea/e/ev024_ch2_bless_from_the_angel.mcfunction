@@ -36,7 +36,7 @@ execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 901 run fill 90130
 #fill 90143 131 116 90143 129 118 air
 execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 901 run setblock 90125 130 115 minecraft:air
 
-execute if block 90129 129 124 stone_button[powered=true] run scoreboard players set @n[tag=sc] sea_4temp2 950
+execute if block 90129 129 124 stone_button[powered=true] run scoreboard players set sea_ch2_angel_bless_trial sea_4temp2 950
 execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 951 run tellraw @a[tag=SEAPT] {"text": "播报：北冷冻库空气循环系统已关闭。","color": "green"}
 execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 951 run kill @n[tag=SEArivette]
 execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 951 run time set 14500t
