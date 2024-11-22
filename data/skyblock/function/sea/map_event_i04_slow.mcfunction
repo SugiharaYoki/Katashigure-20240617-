@@ -152,8 +152,13 @@ execute positioned 90185 19 130 if entity @a[tag=SEAPT,distance=..4.7] unless en
 execute positioned 90185 19 130 if entity @a[tag=SEAPT,distance=..4.7] unless entity @n[tag=SEAch4_spawn,distance=0..3] positioned 90175 9 114 run function skyblock:sea/m/drowned_trident
 
 #水下额外区域
-execute positioned 90170 6 138 if entity @a[tag=SEAPT,distance=..4.7] unless entity @n[tag=SEAch4_spawn,distance=0..3] positioned 90175 9 114 run function skyblock:sea/m/drowned
-execute positioned 90170 6 138 if entity @a[tag=SEAPT,distance=..4.7] unless entity @n[tag=SEAch4_spawn,distance=0..3] positioned 90175 9 114 run function skyblock:sea/m/drowned_trident
+execute positioned 90185 19 130 if entity @a[tag=SEAPT,distance=..4.7] unless entity @n[tag=SEAch4_spawn,distance=0..3] positioned 90170 6 138 run function skyblock:sea/m/drowned
+execute positioned 90185 19 130 if entity @a[tag=SEAPT,distance=..4.7] unless entity @n[tag=SEAch4_spawn,distance=0..3] positioned 90170 6 138 run function skyblock:sea/m/drowned_trident
+execute positioned 90185 19 130 if entity @a[tag=SEAPT,distance=..4.7] unless entity @n[tag=SEAch4_spawn,distance=0..3] positioned 90187 5 148 run function skyblock:sea/m/cave_spider
+execute positioned 90185 19 130 if entity @a[tag=SEAPT,distance=..4.7] unless entity @n[tag=SEAch4_spawn,distance=0..3] positioned 90187 5 148 run function skyblock:sea/m/cave_spider_small
+execute positioned 90185 19 130 if entity @a[tag=SEAPT,distance=..4.7] unless entity @n[tag=SEAch4_spawn,distance=0..3] positioned 90187 5 148 run function skyblock:sea/m/cave_spider_small
+execute positioned 90185 19 130 if entity @a[tag=SEAPT,distance=..4.7] unless entity @n[tag=SEAch4_spawn,distance=0..3] positioned 90187 5 148 run function skyblock:sea/m/cave_spider_small
+
 
 execute positioned 90185 19 130 if entity @a[tag=SEAPT,distance=..4.7] unless entity @n[tag=SEAch4_spawn,distance=0..3] run summon marker ~ ~ ~ {Tags:["SEAch4_spawn"]}
 
