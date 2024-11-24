@@ -200,7 +200,7 @@ execute if block 90117 129 133 minecraft:stone_button[powered=true] if block 901
 
 
 
-execute as @n[tag=sc,scores={sea_4temp2=429..600,sea_4temp4=450..}] run scoreboard players set @s sea_4temp2 800
+execute as @n[tag=sc,scores={sea_4temp2=420..600,sea_4temp4=450..}] run scoreboard players set @s sea_4temp2 800
 execute as @n[tag=sc,scores={sea_4temp2=800..830}] run scoreboard players add @s sea_4temp2 1
 execute as @n[tag=sc,scores={sea_4temp2=840..850}] run scoreboard players add @s sea_4temp2 1
 execute as @n[tag=sc,scores={sea_4temp2=860..870}] run scoreboard players add @s sea_4temp2 1
