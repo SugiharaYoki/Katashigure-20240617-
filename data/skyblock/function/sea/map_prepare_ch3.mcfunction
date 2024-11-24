@@ -325,11 +325,13 @@ setblock 90106 149 135 air
 setblock 90104 155 141 air
 setblock 90105 155 146 air
 setblock 90121 155 147 air
+setblock 90072 145 127 air
 setblock 90105 149 146 decorated_pot{sherds:["friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd"],item:{count: 3, id:"minecraft:emerald"}}
 setblock 90106 149 135 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 1, id:"minecraft:beef"}}
 setblock 90104 155 141 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 1, id:"minecraft:cooked_beef"}}
 setblock 90105 155 146 decorated_pot{sherds:["burn_pottery_sherd","burn_pottery_sherd","burn_pottery_sherd","burn_pottery_sherd"],item:{count: 1, id:"minecraft:blaze_powder"}}
 setblock 90121 155 147 decorated_pot{sherds:["mourner_pottery_sherd","mourner_pottery_sherd","mourner_pottery_sherd","mourner_pottery_sherd"],item:{count: 2, id:"minecraft:echo_shard"}}
+setblock 90072 145 127 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 3, id:"minecraft:beef"}}
 
 setblock 90100 155 139 chest[facing=north]
 item replace block 90100 155 139 container.12 with arrow 3
