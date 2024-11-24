@@ -220,7 +220,7 @@ execute if entity @a[tag=SEAPT,x=90138,y=129,z=117,distance=0..4,tag=!SEAPF] as 
 
 
 
-execute as @n[tag=sc,scores={sea_4temp2=810..869}] run function skyblock:sea/e/ev024_ch2_close_storage_both
+execute if block 90105 132 126 tinted_glass if block 90100 129 142 air run function skyblock:sea/e/ev024_ch2_close_storage_both
 
 
 
