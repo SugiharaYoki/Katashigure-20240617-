@@ -1,4 +1,3 @@
-say 18_alt
-tellraw @a[tag=DebugMode] {"score":{"name":"@s","objective":"Azr_Shop_rng7"}}
-tellraw @a[tag=DebugMode] {"score":{"name":"@s","objective":"Azr_Shop_rng8"}}
-tellraw @a[tag=DebugMode] {"score":{"name":"@s","objective":"Azr_Shop_rng9"}}
+give @s iron_chestplate[custom_data={iron_chestplate_normal:1b}]
+
+scoreboard players remove @s Azr_emerald 16

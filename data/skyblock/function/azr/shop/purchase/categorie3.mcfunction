@@ -3,7 +3,7 @@ $execute as @s[scores={Azr_Shop_rng$(rng)=0,Azr_Shop=$(trigger)}] \
     if items entity @s container.* iron_nugget[count={min:2},custom_data={shield_shard:1b}] \
     run function skyblock:azr/shop/purchase/categorie3/\
     rng0
-    # 0 @s  绿宝石 2 盾牌碎片
+    # 0 @s  盾牌 2 绿宝石 2 盾牌碎片
 
 $execute as @s[scores={Azr_Shop_rng$(rng)=1,Azr_Shop=$(trigger)}] \
     if score @s Azr_emerald matches 2.. \
@@ -81,7 +81,7 @@ $execute as @s[scores={Azr_Shop_rng$(rng)=7,Azr_Shop=$(trigger)}] \
     if score @s Azr_emerald matches 7.. \
     run function skyblock:azr/shop/purchase/categorie3/\
     rng7
-    # 7 @s  链裤 7 绿宝石
+    # 7 @s  链裤 6 绿宝石
 
 $execute as @s[scores={Azr_Shop_rng$(rng)=7,Azr_Shop=$(trigger)33}] \
     if score @s Azr_emerald matches 4.. \
@@ -94,7 +94,7 @@ $execute as @s[scores={Azr_Shop_rng$(rng)=8,Azr_Shop=$(trigger)}] \
     if score @s Azr_emerald matches 7.. \
     run function skyblock:azr/shop/purchase/categorie3/\
     rng8
-    # 8 @s  链裤 7 绿宝石
+    # 8 @s  链裤 6 绿宝石
 
 $execute as @s[scores={Azr_Shop_rng$(rng)=8,Azr_Shop=$(trigger)33}] \
     if score @s Azr_emerald matches 4.. \
@@ -330,14 +330,6 @@ $execute as @s[scores={Azr_Shop_rng$(rng)=28,Azr_Shop=$(trigger)33}] \
     run function skyblock:azr/shop/purchase/categorie3/\
     rng28_alt
     # 28 alt 蜂棘帽 5 绿宝石 4 蜜脾 2 糖
-
-$execute as @s[scores={Azr_Shop_rng$(rng)=29,Azr_Shop=$(trigger)}] \
-    if items entity @s container.* shield[count={min:1},custom_data={shield_sturdy:1b}] \
-    if score @s Azr_emerald matches 10.. \
-    if items entity @s container.* iron_nugget[count={min:6},custom_data={shield_shard:1b}] \
-    run function skyblock:azr/shop/purchase/categorie3/\
-    rng29
-    # 29 坚盾（改造） 1坚盾 10 绿宝石 6 盾牌碎片
 
 $execute as @s[scores={Azr_Shop_rng$(rng)=29,Azr_Shop=$(trigger)}] \
     if items entity @s container.* shield[count={min:1},custom_data={shield_sturdy:1b}] \

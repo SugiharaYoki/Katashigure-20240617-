@@ -1,4 +1,3 @@
-say 2
-tellraw @a[tag=DebugMode] {"score":{"name":"@s","objective":"Azr_Shop_rng7"}}
-tellraw @a[tag=DebugMode] {"score":{"name":"@s","objective":"Azr_Shop_rng8"}}
-tellraw @a[tag=DebugMode] {"score":{"name":"@s","objective":"Azr_Shop_rng9"}}
+give @s leather_helmet[custom_data={leather_helmet_normal:1b}]
+
+scoreboard players remove @s Azr_emerald 2
