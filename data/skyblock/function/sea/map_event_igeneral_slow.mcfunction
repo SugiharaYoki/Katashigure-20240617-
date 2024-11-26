@@ -295,7 +295,7 @@ execute if block 90088 128 114 air unless block 90088 129 115 air positioned 900
 execute if block 90088 128 114 air unless block 90088 129 115 air run fill 90088 129 115 90088 128 115 minecraft:air destroy
 
 
-#execute as @a[tag=SEAPT] at @s run function skyblock:sea/p/player
+
 
 
 execute positioned 90092 145 135 if block 90093 145 137 air if entity @a[tag=SEAPT,distance=..4.6] unless entity @n[tag=SEAchg_spawn_timer_medical1,distance=0..3] run summon marker ~ ~ ~ {Tags:["SEAchg_spawn_timer","SEAchg_spawn_timer_medical1"]}

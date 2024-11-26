@@ -1,4 +1,6 @@
-say 21
-tellraw @a[tag=DebugMode] {"score":{"name":"@s","objective":"Azr_Shop_rng7"}}
-tellraw @a[tag=DebugMode] {"score":{"name":"@s","objective":"Azr_Shop_rng8"}}
-tellraw @a[tag=DebugMode] {"score":{"name":"@s","objective":"Azr_Shop_rng9"}}
+give @s[tag=!Azr_SExUp04] shield[custom_data={shield_solid:1b},custom_name='{"text":"坚盾","italic":false}',attribute_modifiers=[{type:"generic.armor_toughness","id":"azr:shield_solid.armor_toughness",amount:1.0,operation:"add_value",slot:"offhand"},{type:"generic.armor_toughness","id":"azr:shield_solid.armor_toughness",amount:1.0,operation:"add_value",slot:"mainhand"}]]
+give @s[tag=Azr_SExUp04] shield[custom_data={shield_solid:1b},custom_name='{"text":"坚盾","italic":false}',attribute_modifiers=[{type:"generic.armor_toughness","id":"azr:shield_solid.armor_toughness",amount:1.0,operation:"add_value",slot:"offhand"},{type:"generic.armor_toughness","id":"azr:shield_solid.armor_toughness",amount:1.0,operation:"add_value",slot:"mainhand"},{type:"generic.armor","id":"azr:shield_solid.armor",amount:0.5,operation:"add_value",slot:"offhand"},{type:"generic.armor","id":"azr:shield_solid.armor",amount:0.5,operation:"add_value",slot:"mainhand"}]]
+
+clear @s[tag=!Azr_SExUp04] shield[custom_data~{shield_normal:1b}] 1
+scoreboard players remove @s Azr_emerald 4
+clear @s iron_nugget[custom_data~{shield_shard:1b}] 4

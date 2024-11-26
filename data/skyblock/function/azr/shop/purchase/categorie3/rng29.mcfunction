@@ -1,4 +1,5 @@
-say 29
-tellraw @a[tag=DebugMode] {"score":{"name":"@s","objective":"Azr_Shop_rng7"}}
-tellraw @a[tag=DebugMode] {"score":{"name":"@s","objective":"Azr_Shop_rng8"}}
-tellraw @a[tag=DebugMode] {"score":{"name":"@s","objective":"Azr_Shop_rng9"}}
+give @s shield[custom_data={shield_solid_pro:1b},custom_name='{"text":"坚盾·改造","italic":false}',attribute_modifiers=[{type:"generic.armor_toughness",id:"azr:shield_solid_pro.armor_toughness",amount:2.5,operation:"add_value",slot:"offhand"},{type:"generic.armor_toughness",id:"azr:shield_solid_pro.armor_toughness",amount:1.0,operation:"add_value",slot:"mainhand"}]]
+
+clear @s shield[custom_data~{shield_solid:1b}] 1
+scoreboard players remove @s Azr_emerald 15
+clear @s rabbit_foot[custom_data~{claw:1b}] 6
