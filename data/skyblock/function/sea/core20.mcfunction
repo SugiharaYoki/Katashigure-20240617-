@@ -12,7 +12,7 @@ execute if score sc seact matches 5 run scoreboard players set sc seact 0
 
 
 
-execute as @a[tag=SEAPT] at @s if score @s sea_remiel_shadow matches 1.. run function skyblock:sea/p/remiel_shadow
+execute as @a[tag=SEAPT,scores={sea_remiel_shadow=1..}] at @s run function skyblock:sea/p/remiel_shadow
 
 
 
