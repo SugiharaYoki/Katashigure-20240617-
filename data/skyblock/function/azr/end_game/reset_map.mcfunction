@@ -44,6 +44,9 @@ fill -79928 40 1 -79928 38 -1 minecraft:purple_stained_glass{name: "Stage1 white
 fill -79931 38 6 -79931 40 6 purple_stained_glass{name: "to Stage2"}
 fill -79934 40 -1 -79934 38 1 purple_stained_glass{name: "to Stage3 beta"}
 setblock -79946 37 -8 minecraft:white_stained_glass{name: "Stage3 beta ladder"}
+#Stage1-Version2
+clone -79933 -14 -53 -79929 -3 -35 -79933 36 -53
+
 
 #Stage2
 fill -79931 38 22 -79931 40 22 purple_stained_glass{name: "to Stage3 alpha"}
