@@ -89,7 +89,7 @@ execute as @a[tag=removeSpark] if data entity @s SelectedItem.components."minecr
 tag @a[tag=removeSpark] remove removeSpark
 
 #索命连击
-execute as @a[tag=azrPlayer] run function skyblock:azr/system_sub/chain_kill
+execute as @a[tag=azrPlayer] at @s run function skyblock:azr/system_sub/chain_kill
 
 #结束游戏
 #游戏未开始或对局不匹配时强制杀死玩家
