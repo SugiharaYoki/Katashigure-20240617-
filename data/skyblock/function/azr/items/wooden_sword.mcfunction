@@ -1,1 +1,1 @@
-give @s wooden_sword[custom_name='{"text":"木剑","italic":false}',custom_data={wooden_sword_normal:1b}]
+give @s wooden_sword[custom_name='{"text":"木剑","italic":false}',custom_data={wooden_sword_normal:1b},custom_model_data=100001]

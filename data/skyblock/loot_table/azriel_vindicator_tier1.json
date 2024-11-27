@@ -17,6 +17,7 @@
               "function": "set_components",
               "components": {
                 "custom_name": "{\"text\":\"钝铁\",\"italic\":false,\"color\":\"white\"}",
+                "custom_model_data":100001,
                 "custom_data": {
                   "raw_iron": 1
                 }
@@ -33,6 +34,7 @@
               "function": "minecraft:set_components",
               "components": {
                 "custom_name": "{\"text\":\"圣殿信条\",\"italic\":false,\"color\":\"blue\"}",
+                "custom_model_data":100001,
                 "custom_data": {
                   "sanct_credo": 1
                 }
@@ -54,6 +56,7 @@
               "function": "set_components",
               "components": {
                 "custom_name": "{\"text\":\"铁剑·黑钢\",\"italic\":false,\"color\":\"dark_red\"}",
+                "custom_model_data": 100008,,
                 "attribute_modifiers": [
                   {
                     "type": "generic.attack_damage",
@@ -87,6 +90,7 @@
               "function": "set_components",
               "components": {
                 "custom_name": "{\"text\":\"铁斧·黑钢\",\"italic\":false,\"color\":\"dark_red\"}",
+                "custom_model_data": 100006,
                 "attribute_modifiers": [
                   {
                     "type": "generic.attack_damage",

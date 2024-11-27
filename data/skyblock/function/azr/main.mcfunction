@@ -88,6 +88,9 @@ execute as @a[tag=removeSpark] if data entity @s SelectedItem.components."minecr
 execute as @a[tag=removeSpark] if data entity @s SelectedItem.components."minecraft:custom_data"{instant_spark:1b} run item replace entity @s weapon.mainhand with air
 tag @a[tag=removeSpark] remove removeSpark
 
+#索命连击
+execute as @a[tag=azrPlayer] run function skyblock:azr/system_sub/chain_kill
+
 #结束游戏
 #游戏未开始或对局不匹配时强制杀死玩家
 execute if score isStarted Azr_system matches 0 as @a[tag=azrPlayer] run function skyblock:azr/end_game/quit_game

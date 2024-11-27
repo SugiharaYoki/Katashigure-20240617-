@@ -240,7 +240,7 @@ execute if score stageSeconds Azr_system matches 183..185 if entity @e[tag=Azrie
 execute if score stageSeconds Azr_system matches 186 run title @a[tag=azrPlayer] actionbar {"text":"Extra Stage Clear","color":"green"}
 execute if score stageSeconds Azr_system matches 186 run advancement grant @a[tag=azrPlayer] only skyblock:azr_stage_bonus_suspension
 execute if score stageSeconds Azr_system matches 186 as @a[tag=azrPlayer] at @s run tag @s add AZS_BoS04
-execute if score stageSeconds Azr_system matches 186 as @a[tag=azrPlayer] at @s run give @s ghast_tear[custom_name='{"text":"光明精华","italic":false,"color":"blue"}',custom_data={light_essence:1b}] 3
+execute if score stageSeconds Azr_system matches 186 as @a[tag=azrPlayer] at @s run give @s ghast_tear[custom_name='{"text":"光明精华","italic":false,"color":"blue"}',custom_data={light_essence:1b},custom_model_data=100001] 3
 execute if score stageSeconds Azr_system matches 186 as @a[tag=azrPlayer] at @s run give @s golden_carrot 5
 execute if score stageSeconds Azr_system matches 186 as @a[tag=azrPlayer] at @s run give @s end_crystal[custom_name='{"text":"流之核心","italic":false,"color":"yellow"}',lore=['{"text":"置于背包栏第1格时","color":"gray","italic":false}','{"text":"移动速度+15%","color":"dark_green","italic":false}']]
 execute if score stageSeconds Azr_system matches 186 as @a[tag=azrPlayer] at @s run give @s end_crystal[custom_name='{"text":"钢之核心","italic":false,"color":"yellow"}',lore=['{"text":"置于背包栏第3格时","color":"gray","italic":false}','{"text":"护甲韧度+30%","color":"dark_green","italic":false}']]

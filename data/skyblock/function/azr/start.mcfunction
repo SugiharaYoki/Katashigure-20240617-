@@ -23,6 +23,8 @@ scoreboard objectives add Azr_Shop_rng11 dummy
 scoreboard objectives add Azr_Shop_rng12 dummy
 scoreboard objectives add Azr_Shop_rng13 dummy
 scoreboard objectives add melonCount dummy
+scoreboard objectives add AZR_chainKill minecraft.custom:minecraft.mob_kills
+scoreboard objectives add AZR_chainKill_damage minecraft.custom:minecraft.damage_dealt
 #Azr_arrowOrbTimer用于boss技能
 scoreboard objectives add Azr_arrowOrbTimer dummy
 

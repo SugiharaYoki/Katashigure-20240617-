@@ -32,6 +32,7 @@
               "function": "set_components",
               "components": {
                 "custom_name": "{\"text\":\"硬骨\",\"italic\":false,\"color\":\"white\"}",
+                "custom_model_data":100001,
                 "custom_data": {
                   "hard_bone": 1
                 }
@@ -48,6 +49,7 @@
               "function": "set_components",
               "components": {
                 "custom_name": "{\"text\":\"硬骨铲\",\"italic\":false,\"color\":\"dark_red\"}",
+                "custom_model_data": 100001,
                 "attribute_modifiers": [
                   {
                     "type": "generic.attack_damage",

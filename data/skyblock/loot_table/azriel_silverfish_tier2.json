@@ -17,6 +17,7 @@
               "function": "set_components",
               "components": {
                 "custom_name": "{\"text\":\"虫骸\",\"italic\":false,\"color\":\"white\"}",
+                "custom_model_data":100001,
                 "custom_data": {
                   "insect_remains": 1
                 }

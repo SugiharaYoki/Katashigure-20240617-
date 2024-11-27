@@ -22,6 +22,7 @@
               "function": "set_components",
               "components": {
                 "custom_name": "{\"text\":\"炽焰粉尘\",\"italic\":false,\"color\":\"dark_purple\"}",
+                "custom_model_data":100001,
                 "custom_data": {
                   "flame_powder": 1
                 }
@@ -38,6 +39,7 @@
               "function": "set_components",
               "components": {
                 "custom_name": "{\"text\":\"黑暗精华\",\"italic\":false,\"color\":\"dark_purple\"}",
+                "custom_model_data":100002,
                 "custom_data": {
                   "dark_essence": 1
                 }

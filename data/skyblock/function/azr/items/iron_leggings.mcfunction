@@ -1,1 +1,1 @@
-item replace entity @s armor.head with iron_leggings[custom_name='{"text":"铁护腿","italic":false}',custom_data={iron_leggings_normal:1b}]
+item replace entity @s armor.head with iron_leggings[custom_name='{"text":"铁护腿","italic":false}',custom_data={iron_leggings_normal:1b},custom_model_data=100003]

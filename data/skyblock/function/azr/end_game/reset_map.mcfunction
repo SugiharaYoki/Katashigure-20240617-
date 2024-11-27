@@ -86,7 +86,7 @@ setblock -79938 39 49 minecraft:quartz_bricks{name: "to Stage Cerement"}
 setblock -79939 38 20 chest[facing=west]{Lock:"木船图案的钥匙"}
 item replace block -79939 38 20 container.11 with minecraft:paper[custom_name='{"text":"圣殿信条","color":"blue","italic":false}',custom_data={sanct_credo:1b}] 3
 item replace block -79939 38 20 container.13 with skull_banner_pattern[custom_name='{"text":"“仍旧在调查魔物失控的真相”","color":"dark_purple","italic":false}',lore=['{"text":"拉斐尔大人告知我丢失钥匙并无大碍，","color":"white","italic":false}','{"text":"地下水路东区不存在任何有用的事物。","color":"white","italic":false}','{"text":"可那里明明封印着源自各处的亡灵……","color":"white","italic":false}']]
-item replace block -79939 38 20 container.15 with iron_ingot[custom_name='{"text":"碳钢","italic":false}',custom_data={coal_iron:1b}] 1
+item replace block -79939 38 20 container.15 with iron_ingot[custom_name='{"text":"碳钢","italic":false}',custom_data={coal_iron:1b},custom_model_data=100001] 1
 fill -79948 36 45 -79950 38 45 minecraft:purple_stained_glass{name: "to Stage Cerement"}
 
 #Stage Cerement
@@ -412,13 +412,13 @@ item replace block -79865 42 -52 container.13 with carrot 2
 item replace block -79867 40 -103 container.12 with shulker_shell[custom_name='{"text":"弹簧箭盒","italic":false}',lore=['{"text":"敲击 - 散射36支箭矢（射程较高）","color":"yellow","italic":false}'],enchantments={blast_protection:1}] 2
 item replace block -79867 40 -103 container.14 with tripwire_hook[custom_name='{"text":"紫翡翠钥匙","color":"blue","italic":false}'] 1
 item replace block -79863 40 -76 container.12 with stone_axe[custom_name='{"text":"苔石斧·笼怨","italic":false}',attribute_modifiers=[{type:"generic.knockback_resistance",slot:"mainhand",id:"azr:mossstone_axe.knockback_resistance",amount:0.13,operation:"add_value"},{type:"generic.attack_damage",slot:"mainhand",id:"azr:mossstone_axe.attack_damage",amount:10.5,operation:"add_value"},{type:"generic.attack_speed",slot:"mainhand",id:"azr:mossstone_axe.attack_speed",amount:-3.2,operation:"add_value"}],enchantments={"unbreaking":2}] 1
-item replace block -79929 49 -123 container.12 with raw_iron[custom_name='{"text":"钝铁","italic":false}',custom_data={raw_iron:1b}] 1
+item replace block -79929 49 -123 container.12 with raw_iron[custom_name='{"text":"钝铁","italic":false}',custom_data={raw_iron:1b},custom_model_data=100001] 1
 item replace block -79929 49 -123 container.14 with tripwire_hook[custom_name='{"text":"杜鹃花钥匙","color":"blue","italic":false}'] 1
-item replace block -79782 27 -286 container.13 with nether_star[custom_name='{"text":"下界命星","color":"yellow","italic":false}',custom_data={revival_star:1b}] 1
+item replace block -79782 27 -286 container.13 with nether_star[custom_name='{"text":"下界命星","color":"yellow","italic":false}',custom_data={revival_star:1b},custom_model_data=100001] 1
 item replace block -79770 23 -460 container.13 with minecraft:gold_nugget 30
 item replace block -79765 24 -469 container.13 with minecraft:gold_nugget 28
-item replace block -79713 22 -461 container.13 with paper[custom_name='{"text":"圣殿信条","color":"blue","italic":false}',custom_data={sanct_credo:1b}] 3
-item replace block -79626 21 -415 container.11 with minecraft:paper[custom_name='{"text":"圣殿信条","color":"blue","italic":false}',custom_data={sanct_credo:1b}] 3
+item replace block -79713 22 -461 container.13 with paper[custom_name='{"text":"圣殿信条","color":"blue","italic":false}',custom_data={sanct_credo:1b},custom_model_data=100001] 3
+item replace block -79626 21 -415 container.11 with minecraft:paper[custom_name='{"text":"圣殿信条","color":"blue","italic":false}',custom_data={sanct_credo:1b},custom_model_data=100001] 3
 item replace block -79626 21 -415 container.13 with skull_banner_pattern[custom_name='{"text":"“神罚 这一切都是神罚 全部都是”","color":"dark_purple","italic":false}',lore=['{"text":"我们触怒了神庭 我们触怒了神庭","color":"white","italic":false}','{"text":"我们触怒了神庭 我们触怒了神庭","color":"white","italic":false}','{"text":"现在轮到我们自取灭亡了","color":"white","italic":false}','{"text":"现在轮到我们自取灭亡了","color":"white","italic":false}']] 1
 item replace block -79626 21 -415 container.15 with flint 5
 item replace block 79588 8 -427 container.11 with firework_star[custom_name='{"text":"机械箭","italic":false}'] 5
