@@ -99,7 +99,7 @@ execute if score stageSeconds Azr_system matches 18 if score stage Azr_system ma
 execute if score stageSeconds Azr_system matches 19 if score stage Azr_system matches 12 if score #rng2 Azr_system matches 1 if score playerCount Azr_system matches 4.. positioned -79940 38 122 run function skyblock:azr/m/zombie_t1_5hp_full_armor
 execute if score stageSeconds Azr_system matches 20 if score stage Azr_system matches 12 if score #rng2 Azr_system matches 1 if score playerCount Azr_system matches 3.. positioned -79940 38 122 run function skyblock:azr/m/zombie_t1_5hp_full_armor
 execute if score stageSeconds Azr_system matches 21 if score stage Azr_system matches 12 if score #rng2 Azr_system matches 1 if score playerCount Azr_system matches 4.. positioned -79940 38 122 run function skyblock:azr/m/zombie_militia_t1
-execute if score stageSeconds Azr_system matches 22..39 if score stage Azr_system matches 12 unless entity @n[tag=AzrielMob] run scoreboard players set stageSeconds Azr_system 3404
+execute if score stageSeconds Azr_system matches 22..39 if score stage Azr_system matches 12 unless entity @n[tag=AzrielMob] run scoreboard players set stageSeconds Azr_system 40
 execute if score stageSeconds Azr_system matches 40 if score stage Azr_system matches 12 run function skyblock:azr/tool_rng
 execute if score stageSeconds Azr_system matches 40 if score stage Azr_system matches 12 if score #rng2 Azr_system matches 1 positioned -79922 38 122 run function skyblock:azr/m/zombie_t1_5hp_full_armor
 execute if score stageSeconds Azr_system matches 41 if score stage Azr_system matches 12 if score #rng2 Azr_system matches 1 if score playerCount Azr_system matches 2.. positioned -79922 38 122 run function skyblock:azr/m/zombie_t1_5hp_full_armor
