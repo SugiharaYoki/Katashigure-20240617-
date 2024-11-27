@@ -5,9 +5,8 @@
       "rolls": 5,
       "entries": [
         {
-          "type": "minecraft:item",
-          "weight": 70,
-          "name": "minecraft:air"
+          "type": "minecraft:empty",
+          "weight": 70
         },
         {
           "type": "minecraft:item",
@@ -30,9 +29,8 @@
       "rolls": 4,
       "entries": [
         {
-          "type": "minecraft:item",
-          "weight": 70,
-          "name": "minecraft:air"
+          "type": "minecraft:empty",
+          "weight": 70
         },
         {
           "type": "minecraft:item",
@@ -45,9 +43,8 @@
       "rolls": 1,
       "entries": [
         {
-          "type": "minecraft:item",
-          "weight": 20,
-          "name": "minecraft:air"
+          "type": "minecraft:empty",
+          "weight": 20
         },
         {
           "type": "minecraft:item",
