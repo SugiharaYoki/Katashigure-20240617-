@@ -15,12 +15,17 @@ execute if score stageSeconds Azr_system matches 19 positioned -79930.5 38.0 3.5
 execute if score stageSeconds Azr_system matches 6 run playsound entity.zombie.ambient ambient @a[tag=azrPlayer] -80000 100 0 1000
 execute if score stageSeconds Azr_system matches 6 positioned -79931 38 -9 run function skyblock:azr/m/zombie_t1
 execute if score stageSeconds Azr_system matches 8 positioned -79931 38 -9 run function skyblock:azr/m/zombie_t1
+execute if score stageSeconds Azr_system matches 9..14 unless entity @n[tag=AzrielMob] run scoreboard players set stageSeconds Azr_system 15
 execute if score stageSeconds Azr_system matches 15 positioned -79931 38 -9 run function skyblock:azr/m/zombie_t1
+execute if score stageSeconds Azr_system matches 16..18 unless entity @n[tag=AzrielMob] run scoreboard players set stageSeconds Azr_system 19
 execute if score stageSeconds Azr_system matches 19 positioned -79931 38 -9 run function skyblock:azr/m/zombie_t1_4hp
+execute if score stageSeconds Azr_system matches 20..24 unless entity @n[tag=AzrielMob] run scoreboard players set stageSeconds Azr_system 25
 execute if score stageSeconds Azr_system matches 25 positioned -79931 38 -9 run function skyblock:azr/m/zombie_t1_4hp
+execute if score stageSeconds Azr_system matches 26..27 unless entity @n[tag=AzrielMob] run scoreboard players set stageSeconds Azr_system 28
 execute if score stageSeconds Azr_system matches 28 positioned -79931 38 3 run function skyblock:azr/m/pillager_t1
 execute if score stageSeconds Azr_system matches 20 if score playerCount Azr_system matches 2.. positioned -79931 38 3 run function skyblock:azr/m/pillager_t1
 execute if score stageSeconds Azr_system matches 30 positioned -79931 38 3 run function skyblock:azr/m/zombie_t1_5hp
+execute if score stageSeconds Azr_system matches 31..35 unless entity @n[tag=AzrielMob] run scoreboard players set stageSeconds Azr_system 36
 #回秒
 execute if score stageSeconds Azr_system matches 31..36 if entity @e[tag=AzrielMob,tag=!AzrielDecMob] run scoreboard players set stageSeconds Azr_system 31
 #结束
