@@ -4,5 +4,5 @@ execute as @s[tag=SEAcrafter] on target run scoreboard players set @s sea_crafte
 execute as @s[tag=SEAcrafter] run data remove entity @s interaction
 
 execute as @s[tag=SEAaidbox] on target run effect give @s instant_health 1 0 true
-execute as @s[tag=SEAaidbox] on target at @s run playsound minecraft:entity.generic.drink player @a ~ ~ ~ 0.5 0.6
+execute as @s[tag=SEAaidbox] on target at @s run playsound minecraft:entity.drink player @a ~ ~ ~ 0.5 0.6
 execute as @s[tag=SEAaidbox] run data remove entity @s interaction

@@ -2,8 +2,8 @@ execute if score sea_ch2_close_storage sea_4temp2 matches 405..415 run playsound
 execute if score sea_ch2_close_storage sea_4temp2 matches 401..410 run playsound minecraft:block.chain.fall ambient @a 90139.60 132.00 129.32 10 0.5
 execute if score sea_ch2_close_storage sea_4temp2 matches 405 run setblock 90150 131 129 minecraft:redstone_lamp[lit=true]
 execute if score sea_ch2_close_storage sea_4temp2 matches 410 run setblock 90150 131 129 minecraft:redstone_lamp[lit=false]
-execute if score sea_ch2_close_storage sea_4temp2 matches 410 run playsound minecraft:entity.generic.explode ambient @a 90139.60 132.00 129.32 10 0.8
-execute if score sea_ch2_close_storage sea_4temp2 matches 410 run playsound minecraft:entity.generic.explode ambient @a 90139.60 132.00 129.32 10 0.8
+execute if score sea_ch2_close_storage sea_4temp2 matches 410 run playsound minecraft:entity.explode ambient @a 90139.60 132.00 129.32 10 0.8
+execute if score sea_ch2_close_storage sea_4temp2 matches 410 run playsound minecraft:entity.explode ambient @a 90139.60 132.00 129.32 10 0.8
 execute if score sea_ch2_close_storage sea_4temp2 matches 410 run playsound minecraft:block.fire.extinguish ambient @a 90139.60 132.00 129.32 10 0.5
 execute if score sea_ch2_close_storage sea_4temp2 matches 410 run fill 90140 129 134 90141 129 134 air destroy
 execute if score sea_ch2_close_storage sea_4temp2 matches 410 run fill 90140 128 134 90141 128 134 air destroy

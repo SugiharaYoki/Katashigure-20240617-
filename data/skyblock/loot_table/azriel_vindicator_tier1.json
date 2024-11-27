@@ -5,8 +5,7 @@
       "rolls": 3,
       "entries": [
         {
-          "type": "minecraft:item",
-          "name": "minecraft:air",
+          "type": "minecraft:empty",
           "weight": 800
         },
         {
@@ -60,14 +59,14 @@
                 "custom_model_data": 100008,
                 "attribute_modifiers": [
                   {
-                    "type": "generic.attack_damage",
+                    "type": "attack_damage",
                     "id": "azr:black_iron_sword.attack_damage",
                     "amount": 5.5,
                     "operation": "add_value",
                     "slot": "mainhand"
                   },
                   {
-                    "type": "generic.attack_speed",
+                    "type": "attack_speed",
                     "id": "azr:black_iron_sword.attack_speed",
                     "amount": -2.3,
                     "operation": "add_value",
@@ -94,14 +93,14 @@
                 "custom_model_data": 100006,
                 "attribute_modifiers": [
                   {
-                    "type": "generic.attack_damage",
+                    "type": "attack_damage",
                     "id": "azr:black_iron_axe.attack_damage",
                     "amount": 8.5,
                     "operation": "add_value",
                     "slot": "mainhand"
                   },
                   {
-                    "type": "generic.attack_speed",
+                    "type": "attack_speed",
                     "id": "azr:black_iron_axe.attack_speed",
                     "amount": -2.95,
                     "operation": "add_value",
@@ -122,8 +121,7 @@
       "rolls": 3,
       "entries": [
         {
-          "type": "minecraft:item",
-          "name": "minecraft:air",
+          "type": "minecraft:empty",
           "weight": 55
         },
         {
@@ -137,8 +135,7 @@
       "rolls": 1,
       "entries": [
         {
-          "type": "minecraft:item",
-          "name": "minecraft:air",
+          "type": "minecraft:empty",
           "weight": 995
         },
         {

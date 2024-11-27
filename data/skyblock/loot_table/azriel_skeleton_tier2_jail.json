@@ -5,8 +5,7 @@
       "rolls": 4,
       "entries": [
         {
-          "type": "minecraft:item",
-          "name": "minecraft:air",
+          "type": "minecraft:empty",
           "weight": 80
         },
         {
@@ -58,14 +57,14 @@
                 "custom_model_data": 100002,
                 "attribute_modifiers": [
                   {
-                    "type": "generic.attack_damage",
+                    "type": "attack_damage",
                     "id": "azr:bone_shovel_pro.attack_damage",
                     "amount": 12,
                     "operation": "add_value",
                     "slot": "mainhand"
                   },
                   {
-                    "type": "generic.attack_speed",
+                    "type": "attack_speed",
                     "id": "azr:bone_shovel_pro.attack_speed",
                     "amount": -3.35,
                     "operation": "add_value",
@@ -89,8 +88,7 @@
       "rolls": 3,
       "entries": [
         {
-          "type": "minecraft:item",
-          "name": "minecraft:air",
+          "type": "minecraft:empty",
           "weight": 30
         },
         {
@@ -104,8 +102,7 @@
       "rolls": 1,
       "entries": [
         {
-          "type": "minecraft:item",
-          "name": "minecraft:air",
+          "type": "minecraft:empty",
           "weight": 995
         },
         {

@@ -58,10 +58,10 @@ execute if score AZR_boss2_breakingout rng1 matches 25 at @n[tag=AZR_boss2_break
 execute if score AZR_boss2_breakingout rng1 matches 27 at @n[tag=AZR_boss2_breakingout_2] run playsound item.flintandsteel.use hostile @a ~ ~ ~ 0.75 0.7
 execute if score AZR_boss2_breakingout rng1 matches 29 at @n[tag=AZR_boss2_breakingout_3] run playsound item.flintandsteel.use hostile @a ~ ~ ~ 0.75 0.7
 execute if score AZR_boss2_breakingout rng1 matches 31 at @n[tag=AZR_boss2_breakingout_4] run playsound item.flintandsteel.use hostile @a ~ ~ ~ 0.75 0.7
-execute if score AZR_boss2_breakingout rng1 matches 25 at @n[tag=AZR_boss2_breakingout_1] run playsound minecraft:entity.generic.extinguish_fire hostile @a ~ ~ ~ 0.75 1.5
-execute if score AZR_boss2_breakingout rng1 matches 27 at @n[tag=AZR_boss2_breakingout_2] run playsound minecraft:entity.generic.extinguish_fire hostile @a ~ ~ ~ 0.75 1.5
-execute if score AZR_boss2_breakingout rng1 matches 29 at @n[tag=AZR_boss2_breakingout_3] run playsound minecraft:entity.generic.extinguish_fire hostile @a ~ ~ ~ 0.75 1.5
-execute if score AZR_boss2_breakingout rng1 matches 31 at @n[tag=AZR_boss2_breakingout_4] run playsound minecraft:entity.generic.extinguish_fire hostile @a ~ ~ ~ 0.75 1.5
+execute if score AZR_boss2_breakingout rng1 matches 25 at @n[tag=AZR_boss2_breakingout_1] run playsound minecraft:entity.extinguish_fire hostile @a ~ ~ ~ 0.75 1.5
+execute if score AZR_boss2_breakingout rng1 matches 27 at @n[tag=AZR_boss2_breakingout_2] run playsound minecraft:entity.extinguish_fire hostile @a ~ ~ ~ 0.75 1.5
+execute if score AZR_boss2_breakingout rng1 matches 29 at @n[tag=AZR_boss2_breakingout_3] run playsound minecraft:entity.extinguish_fire hostile @a ~ ~ ~ 0.75 1.5
+execute if score AZR_boss2_breakingout rng1 matches 31 at @n[tag=AZR_boss2_breakingout_4] run playsound minecraft:entity.extinguish_fire hostile @a ~ ~ ~ 0.75 1.5
 
 execute if score AZR_boss2_breakingout rng1 matches 25..89 at @e[tag=AZR_boss2_breakingout_marker] if score AZR_boss2_breakingout rng4 matches 1..3 run playsound block.fire.ambient hostile @a ~ ~ ~ 1.2 0.9
 execute if score AZR_boss2_breakingout rng1 matches 21..360 at @e[tag=AZR_boss2_breakingout_marker] run particle small_flame ~ ~ ~ 0.25 0.02 0.25 0.01 3
