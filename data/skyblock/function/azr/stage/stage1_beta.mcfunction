@@ -24,6 +24,7 @@ execute if score stageSeconds Azr_system matches 16 positioned -79931 38 -9 run 
 execute if score stageSeconds Azr_system matches 17 positioned -79931 38 -9 run function skyblock:azr/m/zombie_t1_4hp
 execute if score stageSeconds Azr_system matches 12 if score playerCount Azr_system matches 5.. positioned -79931 38 3 run function skyblock:azr/m/pillager_t1
 execute if score stageSeconds Azr_system matches 18..20 unless entity @n[tag=AzrielMob] run scoreboard players set stageSeconds Azr_system 21
+execute if score stageSeconds Azr_system matches 21 positioned -79930.5 38.0 -8.5 run function skyblock:azr/effects/basalt_open
 execute if score stageSeconds Azr_system matches 21 positioned -79931 38 3 run function skyblock:azr/m/pillager_t1
 execute if score stageSeconds Azr_system matches 22 positioned -79931 38 -9 run function skyblock:azr/m/pillager_t1
 execute if score stageSeconds Azr_system matches 23..24 unless entity @n[tag=AzrielMob] run scoreboard players set stageSeconds Azr_system 25
