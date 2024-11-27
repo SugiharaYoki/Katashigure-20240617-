@@ -6,6 +6,7 @@ tag @s remove azrShopRefresh
 tag @s remove azrBanLifeVitae
 tag @s remove azrUpgrateLifeVitae
 tag @s add azrDead
+tag @s remove AZR_chainKill_activated
 scoreboard players set @s Azr_forceDeath 0
 function skyblock:azr/update_bossbar
 #输出
