@@ -30,6 +30,7 @@ execute as @a[tag=azrPlayer] run function skyblock:azr/end_game/quit_game
 #删除临时记分板
 scoreboard objectives remove AZR_chainKill
 scoreboard objectives remove AZR_chainKill_damage
+scoreboard objectives remove AZR_chainKill_count
 scoreboard objectives remove Azr_wave
 scoreboard objectives remove Azr_forceDeath
 scoreboard objectives remove Azr_isDead
