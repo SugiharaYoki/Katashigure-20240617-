@@ -197,7 +197,7 @@ execute if score stageSeconds Azr_system matches 243 if score random Azr_system 
 execute if score stageSeconds Azr_system matches 244..245 unless entity @n[tag=AzrielMob] run scoreboard players set stageSeconds Azr_system 246
 execute if score stageSeconds Azr_system matches 246 positioned -79926.0 38 34 run function skyblock:azr/m/spider_t1_swift
 execute if score stageSeconds Azr_system matches 246 positioned -79926.0 38 34 run function skyblock:azr/m/spider_t1_swift
-execute if score stageSeconds Azr_system matches 247..250 unless entity @n[tag=AzrielMob] run scoreboard players set stageSeconds Azr_system 251
+execute if score stageSeconds Azr_system matches 247..249 unless entity @n[tag=AzrielMob] run scoreboard players set stageSeconds Azr_system 250
 #回秒
 execute if score stageSeconds Azr_system matches 248..251 if entity @e[tag=AzrielMob,tag=!AzrielDecMob] run scoreboard players set stageSeconds Azr_system 248
 #结束
