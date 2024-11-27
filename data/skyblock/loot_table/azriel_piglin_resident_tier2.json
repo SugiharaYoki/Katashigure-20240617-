@@ -33,6 +33,7 @@
               "function": "set_components",
               "components": {
                 "custom_name": "{\"text\":\"钝金\",\"italic\":false,\"color\":\"white\"}",
+                "custom_model_data":100001,
                 "custom_data": {
                   "raw_gold": 1
                 }
@@ -59,6 +60,7 @@
               "function": "set_components",
               "components": {
                 "custom_name": "{\"text\":\"黑暗精华\",\"italic\":false,\"color\":\"dark_purple\"}",
+                "custom_model_data":100002,
                 "custom_data": {
                   "dark_essence": 1
                 }

@@ -28,6 +28,7 @@
               "function": "set_components",
               "components": {
                 "custom_name": "{\"text\":\"光明精华\",\"italic\":false,\"color\":\"blue\"}",
+                "custom_model_data":100001,
                 "custom_data": {
                   "light_essence": 1
                 }
@@ -59,6 +60,7 @@
               "function": "set_components",
               "components": {
                 "custom_name": "{\"text\":\"小巧的猪板砖\",\"italic\":false,\"color\":\"dark_red\"}",
+                "custom_model_data":100001,
                 "attribute_modifiers": [
                   {
                     "type": "generic.attack_damage",

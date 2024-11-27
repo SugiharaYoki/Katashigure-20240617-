@@ -1,1 +1,1 @@
-give @s iron_sword[custom_name='{"text":"铁剑·碳钢","italic":false}',unbreakable={},custom_data={iron_sword_coal_iron:1b}]
+give @s iron_sword[custom_name='{"text":"铁剑·碳钢","italic":false}',unbreakable={},custom_data={iron_sword_coal_iron:1b},custom_model_data=100004]
