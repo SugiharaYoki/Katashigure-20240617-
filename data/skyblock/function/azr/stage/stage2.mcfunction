@@ -74,7 +74,7 @@ execute if score stageSeconds Azr_system matches 85..89 unless entity @n[tag=Azr
 execute if score stageSeconds Azr_system matches 90 positioned -79922 38 14 run function skyblock:azr/m/zombie_t1_5hp_full_armor
 execute if score stageSeconds Azr_system matches 91..93 unless entity @n[tag=AzrielMob] run scoreboard players set stageSeconds Azr_system 94
 execute if score stageSeconds Azr_system matches 94 if score playerCount Azr_system matches 2.. positioned -79922 38 14 run function skyblock:azr/m/zombie_t1_5hp_full_armor
-execute if score stageSeconds Azr_system matches 95..97 unless entity @n[tag=AzrielMob] run scoreboard players set stageSeconds Azr_system 94
+execute if score stageSeconds Azr_system matches 95..97 unless entity @n[tag=AzrielMob] run scoreboard players set stageSeconds Azr_system 98
 execute if score stageSeconds Azr_system matches 98 positioned -79922 38 14 run function skyblock:azr/m/zombie_t2_shield
 execute if score stageSeconds Azr_system matches 99..101 unless entity @n[tag=AzrielMob] run scoreboard players set stageSeconds Azr_system 102
 execute if score stageSeconds Azr_system matches 102 if score playerCount Azr_system matches 2.. positioned -79922 38 14 run function skyblock:azr/m/zombie_t2_shield
