@@ -1,13 +1,13 @@
 playsound minecraft:block.trial_spawner.ominous_activate player @s ~ ~ ~ 0.8 1.2
 
 
-execute positioned ~ ~0.8 ~ run particle minecraft:enchanted_hit ^ ^ ^1.5 0.2 0.2 0.2 0.2 3
-execute positioned ~ ~0.8 ~ run particle minecraft:enchanted_hit ^ ^ ^2 0.2 0.2 0.2 0.2 3
-execute positioned ~ ~0.8 ~ run particle minecraft:enchanted_hit ^ ^ ^2.5 0.2 0.2 0.2 0.2 3
-execute positioned ~ ~0.8 ~ run particle minecraft:enchanted_hit ^ ^ ^3 0.2 0.2 0.2 0.2 3
-execute positioned ~ ~0.8 ~ run particle minecraft:enchanted_hit ^ ^ ^3.5 0.2 0.2 0.2 0.2 3
-execute positioned ~ ~0.8 ~ run particle minecraft:enchanted_hit ^ ^ ^4 0.2 0.2 0.2 0.2 3
-execute positioned ~ ~0.8 ~ run particle minecraft:enchanted_hit ^ ^ ^4.5 0.2 0.2 0.2 0.2 3
+execute positioned ~ ~1.0 ~ run particle minecraft:enchanted_hit ^ ^ ^1.5 0.2 0.2 0.2 0.2 3
+execute positioned ~ ~1.0 ~ run particle minecraft:enchanted_hit ^ ^ ^2 0.2 0.2 0.2 0.2 3
+execute positioned ~ ~1.0 ~ run particle minecraft:enchanted_hit ^ ^ ^2.5 0.2 0.2 0.2 0.2 3
+execute positioned ~ ~1.0 ~ run particle minecraft:enchanted_hit ^ ^ ^3 0.2 0.2 0.2 0.2 3
+execute positioned ~ ~1.0 ~ run particle minecraft:enchanted_hit ^ ^ ^3.5 0.2 0.2 0.2 0.2 3
+execute positioned ~ ~1.0 ~ run particle minecraft:enchanted_hit ^ ^ ^4 0.2 0.2 0.2 0.2 3
+execute positioned ~ ~1.0 ~ run particle minecraft:enchanted_hit ^ ^ ^4.5 0.2 0.2 0.2 0.2 3
 
 
 execute store result score random Azr_system run random value 1..5
