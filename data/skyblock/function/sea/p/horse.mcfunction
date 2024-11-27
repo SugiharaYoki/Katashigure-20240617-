@@ -9,11 +9,11 @@ execute as @s[scores={rng1=1..4,sea_4temp1=..24}] at @s if entity @a[tag=SEAPT,d
 
 execute as @s[scores={sea_4temp1=39}] run playsound entity.zombie_horse.ambient hostile @a ~ ~ ~ 1 0.8
 execute as @s[scores={sea_4temp1=30..36}] run particle minecraft:sculk_soul ~ ~1 ~ 0.6 1.2 0.6 0.1 10
-execute as @s[scores={sea_4temp1=30}] run attribute @s generic.movement_speed base set 0
-execute as @s[scores={sea_4temp1=29}] run attribute @s generic.movement_speed base set 0.14
+execute as @s[scores={sea_4temp1=30}] run attribute @s movement_speed base set 0
+execute as @s[scores={sea_4temp1=29}] run attribute @s movement_speed base set 0.14
 
-execute as @s[scores={sea_4temp1=30}] run attribute @s generic.armor base set 0
-execute as @s[scores={sea_4temp1=29}] run attribute @s generic.armor base set 10.0
+execute as @s[scores={sea_4temp1=30}] run attribute @s armor base set 0
+execute as @s[scores={sea_4temp1=29}] run attribute @s armor base set 10.0
 
 execute as @s[scores={sea_4temp1=25,rng2=1}] at @s rotated ~ 0 positioned ^ ^ ^1 if block ~ ~ ~ air run summon marker ~ ~ ~ {Tags:["SEAhorse_summoner"]}
 execute as @s[scores={sea_4temp1=25,rng2=2}] at @s rotated ~ 0 positioned ^ ^ ^-1 if block ~ ~ ~ air run summon marker ~ ~ ~ {Tags:["SEAhorse_summoner"]}
@@ -45,7 +45,7 @@ execute as @s[scores={sea_4temp1=25,rng2=8}] at @s rotated ~ 0 positioned ^-1 ^ 
 
 
 execute as @s[nbt=!{Fire:-1s}] run playsound entity.zombie_horse.hurt hostile @a ~ ~ ~ 1 1.3
-execute as @s[nbt=!{Fire:-1s}] run playsound entity.generic.burn hostile @a ~ ~ ~ 1 0.8
+execute as @s[nbt=!{Fire:-1s}] run playsound entity.burn hostile @a ~ ~ ~ 1 0.8
 execute as @s[nbt=!{Fire:-1s}] run effect give @s instant_health 3 1 true
 
 particle enchant ~ ~1.2 ~ 0.5 0.75 0.5 0.2 4
