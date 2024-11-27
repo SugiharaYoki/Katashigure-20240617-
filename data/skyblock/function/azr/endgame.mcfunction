@@ -28,6 +28,8 @@ clear @a[tag=azrPlayer]
 #DEBUG: 当该函数被管理员/服务器后台强制执行时，杀死所有玩家。正常流程中触发该函数的同时不会存在玩家。
 execute as @a[tag=azrPlayer] run function skyblock:azr/end_game/quit_game
 #删除临时记分板
+scoreboard objectives remove AZR_chainKill
+scoreboard objectives remove AZR_chainKill_damage
 scoreboard objectives remove Azr_wave
 scoreboard objectives remove Azr_forceDeath
 scoreboard objectives remove Azr_isDead
