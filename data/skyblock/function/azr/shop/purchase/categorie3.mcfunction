@@ -332,7 +332,7 @@ $execute as @s[scores={Azr_Shop_rng$(rng)=28,Azr_Shop=$(trigger)33}] \
     # 28 alt 蜂棘帽 5 绿宝石 4 蜜脾 2 糖
 
 $execute as @s[scores={Azr_Shop_rng$(rng)=29,Azr_Shop=$(trigger)}] \
-    if items entity @s container.* shield[count={min:1},custom_data={shield_sturdy:1b}] \
+    if items entity @s container.* shield[count={min:1},custom_data={shield_solid:1b}] \
     if score @s Azr_emerald matches 10.. \
     if items entity @s container.* iron_nugget[count={min:6},custom_data={shield_shard:1b}] \
     run function skyblock:azr/shop/purchase/categorie3/\
@@ -340,7 +340,7 @@ $execute as @s[scores={Azr_Shop_rng$(rng)=29,Azr_Shop=$(trigger)}] \
     # 29 坚盾（改造） 1坚盾 10 绿宝石 6 盾牌碎片
 
 $execute as @s[scores={Azr_Shop_rng$(rng)=30,Azr_Shop=$(trigger)}] \
-    if items entity @s container.* shield[count={min:1},custom_data={shield_spiny:1b}] \
+    if items entity @s container.* shield[count={min:1},custom_data={shield_sharp:1b}] \
     if score @s Azr_emerald matches 15.. \
     if items entity @s container.* rabbit_foot[count={min:6},custom_data={claw:1b}] \
     run function skyblock:azr/shop/purchase/categorie3/\
