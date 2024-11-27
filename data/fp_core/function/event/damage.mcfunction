@@ -3,7 +3,7 @@ function fp_core:damage_dummy
 #变红
 effect give @s instant_damage 1 255 true
 effect give @s instant_health 1 255 true
-data modify entity @s Health set from entity @s attributes[{id:"minecraft:generic.max_health"}].base
+data modify entity @s Health set from entity @s attributes[{id:"minecraft:max_health"}].base
 effect clear @s instant_damage
 effect clear @s instant_health
 #伤害处理
