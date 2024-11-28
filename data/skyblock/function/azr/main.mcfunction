@@ -68,7 +68,7 @@ execute if score isStarted Azr_system matches 1 unless score stopSeconds Azr_sys
 #BOSS2 code:[23,24]
 execute if score isStarted Azr_system matches 1 unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 23..24 run function skyblock:azr/stage/stage_boss2
 #打印剧情
-execute as @a if data entity @s Inventory[{id:"minecraft:skull_banner_pattern"}] run tellraw @a [{"selector":"@s"},{"text":"解锁了剧情"}]
+execute as @a if items entity @s container.* skull_banner_pattern run tellraw @a [{"selector":"@s"},{"text":"解锁了剧情"}]
 execute as @a if data entity @s Inventory[{id:"minecraft:skull_banner_pattern"}].components."minecraft:custom_name" run tellraw @a [{"nbt":"Inventory[{id:\"minecraft:skull_banner_pattern\"}].components.\"minecraft:custom_name\"","entity":"@s","interpret":true}]
 execute as @a if data entity @s Inventory[{id:"minecraft:skull_banner_pattern"}].components."minecraft:lore"[0] run tellraw @a [{"nbt":"Inventory[{id:\"minecraft:skull_banner_pattern\"}].components.\"minecraft:lore\"[0]","entity":"@s","interpret":true}]
 execute as @a if data entity @s Inventory[{id:"minecraft:skull_banner_pattern"}].components."minecraft:lore"[1] run tellraw @a [{"nbt":"Inventory[{id:\"minecraft:skull_banner_pattern\"}].components.\"minecraft:lore\"[1]","entity":"@s","interpret":true}]
@@ -76,7 +76,7 @@ execute as @a if data entity @s Inventory[{id:"minecraft:skull_banner_pattern"}]
 execute as @a if data entity @s Inventory[{id:"minecraft:skull_banner_pattern"}].components."minecraft:lore"[3] run tellraw @a [{"nbt":"Inventory[{id:\"minecraft:skull_banner_pattern\"}].components.\"minecraft:lore\"[3]","entity":"@s","interpret":true}]
 execute as @a if data entity @s Inventory[{id:"minecraft:skull_banner_pattern"}].components."minecraft:lore"[4] run tellraw @a [{"nbt":"Inventory[{id:\"minecraft:skull_banner_pattern\"}].components.\"minecraft:lore\"[4]","entity":"@s","interpret":true}]
 execute as @a if data entity @s Inventory[{id:"minecraft:skull_banner_pattern"}].components."minecraft:lore"[5] run tellraw @a [{"nbt":"Inventory[{id:\"minecraft:skull_banner_pattern\"}].components.\"minecraft:lore\"[5]","entity":"@s","interpret":true}]
-execute as @a if data entity @s Inventory[{id:"minecraft:skull_banner_pattern"}] run clear @s minecraft:skull_banner_pattern
+execute as @a if items entity @s container.* skull_banner_pattern run clear @s minecraft:skull_banner_pattern
 
 #商店系统
 execute as @a[tag=azrPlayer,tag=hasLifeVitae] run function skyblock:azr/shop/core
@@ -84,8 +84,8 @@ execute as @a[tag=azrPlayer,scores={Azr_Shop=84301..8439999}] run function skybl
 
 #背包管理器
 execute as @a[tag=azrPlayer] run function skyblock:azr/inventory_manager
-execute as @a[tag=removeSpark] if data entity @s SelectedItem.components."minecraft:custom_data"{instant_spark:1b} run playsound item.shield.break master @s ~ ~ ~
-execute as @a[tag=removeSpark] if data entity @s SelectedItem.components."minecraft:custom_data"{instant_spark:1b} run item replace entity @s weapon.mainhand with air
+execute as @a[tag=removeSpark] if items entity @s weapon.mainhand *[custom_data={instant_spark:1b}] run playsound item.shield.break master @s ~ ~ ~
+execute as @a[tag=removeSpark] if items entity @s weapon.mainhand *[custom_data={instant_spark:1b}] run item replace entity @s weapon.mainhand with air
 tag @a[tag=removeSpark] remove removeSpark
 
 #索命连击
