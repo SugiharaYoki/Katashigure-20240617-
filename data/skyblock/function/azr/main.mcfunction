@@ -53,6 +53,10 @@ scoreboard players set DEBUG_maxStageLimit Azr_system 25
 execute as @a[tag=azrPlayer,scores={Azr_forceDeath=1..}] at @s run function skyblock:azr/end_game/player_dead
 execute as @a[tag=azrPlayer,scores={Azr_isDead=1..}] at @s run function skyblock:azr/end_game/player_dead
 
+#update spawnpoint
+execute as @a[tag=azrPlayer,tag=azrUpdateSpawnPoint] at @s unless block ~ ~-1 ~ air unless block ~ ~-1 ~ lava unless block ~ ~ ~ lava run spawnpoint @s ~ ~ ~
+execute as @a[tag=azrPlayer,tag=azrUpdateSpawnPoint] at @s unless block ~ ~-1 ~ air unless block ~ ~-1 ~ lava unless block ~ ~ ~ lava run tag @s remove azrUpdateSpawnPoint
+
 #在appetence的四倍速走秒
 execute if score isStarted Azr_system matches 1 if score stage Azr_system matches 34 if score gametick Azr_system matches 5.. run function skyblock:azr/core
 execute if score isStarted Azr_system matches 1 if score stage Azr_system matches 34 if score gametick Azr_system matches 5.. run function skyblock:azr/core

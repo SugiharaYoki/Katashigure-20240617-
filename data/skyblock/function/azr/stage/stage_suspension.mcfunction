@@ -1,4 +1,4 @@
-execute if score stageSeconds Azr_system matches 2..6 as @a[tag=azrPlayer] at @s unless block ~ ~-1 ~ air unless block ~ ~-1 ~ lava unless block ~ ~ ~ lava run spawnpoint @s ~ ~ ~
+execute if score stageSeconds Azr_system matches 1 run tag @a[tag=azrPlayer] add azrUpdateSpawnPoint
 execute if score stageSeconds Azr_system matches 1 run bossbar add azr:progress_bar_normal "Stage Suspension"
 execute if score stageSeconds Azr_system matches 1 run bossbar set azr:progress_bar_normal color yellow
 execute if score stageSeconds Azr_system matches 1 run bossbar set azr:progress_bar_normal players @a[tag=azrPlayer]
@@ -90,7 +90,7 @@ execute if score stageSeconds Azr_system matches 62..66 if score #rng2 Azr_syste
 execute if score stageSeconds Azr_system matches 67..68 if entity @e[tag=AzrielMob,tag=!AzrielDecMob] run scoreboard players set stageSeconds Azr_system 67
 execute if score stageSeconds Azr_system matches 69 run title @a[tag=azrPlayer] actionbar {"text":"Wave Clear","color":"green"}
 execute if score stageSeconds Azr_system matches 69 run give @a[tag=azrPlayer] emerald 5
-execute if score stageSeconds Azr_system matches 69 run give @a[tag=azrPlayer] tipped_arrow[custom_name='{"text":"原型·虚弱之箭","color":"dark_blue","italic":true}',lore=['{"text":"短暂降低目标的近战攻击力","color":"white","italic":false}'],potion_contents={custom_color:2039310,potion:"minecraft:weakness"}] 10
+execute if score stageSeconds Azr_system matches 69 run give @a[tag=azrPlayer] tipped_arrow[custom_name='{"text":"原型·虚弱之箭","color":"dark_blue","italic":false}',lore=['{"text":"短暂降低目标的近战攻击力","color":"white","italic":false}'],potion_contents={custom_color:2039310,potion:"minecraft:weakness"}] 10
 execute if score stageSeconds Azr_system matches 74 run title @a[tag=azrPlayer] actionbar {"text":"5","color":"yellow"}
 execute if score stageSeconds Azr_system matches 75 run title @a[tag=azrPlayer] actionbar {"text":"4","color":"yellow"}
 execute if score stageSeconds Azr_system matches 76 run title @a[tag=azrPlayer] actionbar {"text":"3","color":"red"}

@@ -1,4 +1,4 @@
-execute if score stageSeconds Azr_system matches 502..507 as @a[tag=azrPlayer] at @s unless block ~ ~-1 ~ air unless block ~ ~-1 ~ lava unless block ~ ~ ~ lava run spawnpoint @s ~ ~ ~
+execute if score stageSeconds Azr_system matches 502 run tag @a[tag=azrPlayer] add azrUpdateSpawnPoint
 execute if score stageSeconds Azr_system matches 502 run bossbar add azr:progress_bar_special "Stage Diffident"
 execute if score stageSeconds Azr_system matches 502 run bossbar set azr:progress_bar_special color blue
 execute if score stageSeconds Azr_system matches 502 run bossbar set azr:progress_bar_special players @a[tag=azrPlayer]

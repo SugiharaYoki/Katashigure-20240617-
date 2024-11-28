@@ -1,4 +1,4 @@
-execute if score stageSeconds Azr_system matches 2..6 as @a[tag=azrPlayer] at @s unless block ~ ~-1 ~ air unless block ~ ~-1 ~ lava unless block ~ ~ ~ lava run spawnpoint @s ~ ~ ~
+execute if score stageSeconds Azr_system matches 1 run tag @a[tag=azrPlayer] add azrUpdateSpawnPoint
 execute if score stageSeconds Azr_system matches 1 run bossbar add azr:progress_bar_normal "Stage Vestige"
 execute if score stageSeconds Azr_system matches 1 run bossbar set azr:progress_bar_normal color yellow
 execute if score stageSeconds Azr_system matches 1 run bossbar set azr:progress_bar_normal players @a[tag=azrPlayer]
