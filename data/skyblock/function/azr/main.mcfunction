@@ -83,7 +83,7 @@ execute as @a[tag=azrPlayer,tag=hasLifeVitae] run function skyblock:azr/shop/cor
 execute as @a[tag=azrPlayer,scores={Azr_Shop=84301..8439999}] run function skyblock:azr/shop/purchase
 
 #背包管理器
-execute as @a[tag=azrPlayer] run function skyblock:azr/inventory_manager
+#execute as @a[tag=azrPlayer] run function skyblock:azr/inventory_manager
 execute as @a[tag=removeSpark] if items entity @s weapon.mainhand *[custom_data={instant_spark:1b}] run playsound item.shield.break master @s ~ ~ ~
 execute as @a[tag=removeSpark] if items entity @s weapon.mainhand *[custom_data={instant_spark:1b}] run item replace entity @s weapon.mainhand with air
 tag @a[tag=removeSpark] remove removeSpark
