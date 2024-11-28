@@ -220,9 +220,8 @@
           ]
         },
         {
-          "type": "minecraft:item",
-          "weight": 10,
-          "name": "minecraft:air"
+          "type": "minecraft:empty",
+          "weight": 10
         }
       ]
     }

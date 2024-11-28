@@ -79,7 +79,7 @@ execute if entity @s[tag=CasinoGeneralSuccess] if score @s Cas_Tig_A = @s Cas_Ti
 execute if entity @s[tag=CasinoGeneralSuccess] if score @s Cas_Tig_A = @s Cas_Tig_B if score @s Cas_Tig_B = @s Cas_Tig_C if score @s Cas_Tig_A matches 5 run tellraw @s {"text":"三个柠檬连成一线！除你之外的所有在线玩家都获得了30浮世币！","color":"green"}
 execute if entity @s[tag=CasinoGeneralSuccess] if score @s Cas_Tig_A = @s Cas_Tig_B if score @s Cas_Tig_B = @s Cas_Tig_C if score @s Cas_Tig_A matches 5 run scoreboard players add @a Perm_PersonFSB 30
 execute if entity @s[tag=CasinoGeneralSuccess] if score @s Cas_Tig_A = @s Cas_Tig_B if score @s Cas_Tig_B = @s Cas_Tig_C if score @s Cas_Tig_A matches 5 run scoreboard players remove @s Perm_PersonFSB 30
-execute if entity @s[tag=CasinoGeneralSuccess] if score @s Cas_Tig_A = @s Cas_Tig_B if score @s Cas_Tig_B = @s Cas_Tig_C if score @s Cas_Tig_A matches 5 run playsound minecraft:entity.generic.eat neutral @a ~ ~ ~ 3
+execute if entity @s[tag=CasinoGeneralSuccess] if score @s Cas_Tig_A = @s Cas_Tig_B if score @s Cas_Tig_B = @s Cas_Tig_C if score @s Cas_Tig_A matches 5 run playsound minecraft:entity.eat neutral @a ~ ~ ~ 3
 
 
 execute if entity @s[tag=CasinoGeneralSuccess] if score @s Cas_Tig_A = @s Cas_Tig_B if score @s Cas_Tig_B = @s Cas_Tig_C if score @s Cas_Tig_A matches 7 run tellraw @s {"text":"三个如饥似渴的发情板娘在床前排着队，太惊悚了，看来今晚自己要死了！获得了11451.4浮世币奖励！","color":"green"}

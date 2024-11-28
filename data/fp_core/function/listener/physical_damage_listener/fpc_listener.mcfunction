@@ -6,4 +6,4 @@ scoreboard players operation @s generic_damage = 1024 constant
 scoreboard players operation @s generic_damage -= @s generic_health
 execute if score @s generic_damage matches 1.. run tag @s add EVENT_damage
 execute if score @s generic_damage matches 1.. run scoreboard players operation @s damage = @s generic_damage
-execute if score @s generic_damage matches 1.. run data modify entity @s Health set from entity @s attributes[{id:"minecraft:generic.max_health"}].base
+execute if score @s generic_damage matches 1.. run data modify entity @s Health set from entity @s attributes[{id:"minecraft:max_health"}].base

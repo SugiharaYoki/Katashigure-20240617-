@@ -115,7 +115,7 @@ execute as @s[scores={sea_4temp1=591..}] if entity @a[tag=SEAPT,x=90147,y=137,z=
 execute as @s[scores={sea_4temp1=591..}] if entity @a[tag=SEAPT,x=90147,y=137,z=155,distance=0..3] if block 90149 138 152 stone_bricks positioned 90149 137 151 run function skyblock:sea/m/skeleton_melee
 execute as @s[scores={sea_4temp1=591..}] if entity @a[tag=SEAPT,x=90147,y=137,z=155,distance=0..3] if block 90149 138 152 stone_bricks run particle explosion 90149 138.0 152 1 1 1 0.0 5
 execute as @s[scores={sea_4temp1=591..}] if entity @a[tag=SEAPT,x=90147,y=137,z=155,distance=0..3] if block 90149 138 152 stone_bricks run particle smoke 90149 138.0 152 1 1 1 0.05 15
-execute as @s[scores={sea_4temp1=591..}] if entity @a[tag=SEAPT,x=90147,y=137,z=155,distance=0..3] if block 90149 138 152 stone_bricks run playsound entity.generic.explode block @a 90149 138.0 152 1 0.9
+execute as @s[scores={sea_4temp1=591..}] if entity @a[tag=SEAPT,x=90147,y=137,z=155,distance=0..3] if block 90149 138 152 stone_bricks run playsound entity.explode block @a 90149 138.0 152 1 0.9
 execute as @s[scores={sea_4temp1=591..}] if entity @a[tag=SEAPT,x=90147,y=137,z=155,distance=0..3] if block 90149 138 152 stone_bricks run fill 90149 137 152 90149 138 152 air destroy
 
 execute as @s[scores={sea_4temp1=611..620}] positioned 90152 128 98 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
