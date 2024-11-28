@@ -10,6 +10,6 @@ execute if items entity @s[tag=hasLifeVitae] container.* emerald run function sk
 execute if items entity @s player.cursor *[custom_data~{LifeVitae:1b}] run function skyblock:azr/shop/build
 execute if score @s Azr_Shop matches 20..40 run function skyblock:azr/shop/refresh
 execute if entity @s[tag=azrShopRefresh] run function skyblock:azr/shop/build
-clear @s *[custom_data~{LifeVitae:1b}]
+execute unless items entity @s inventory.* *[custom_data~{LifeVitae:1b}] run clear @s *[custom_data~{LifeVitae:1b}]
 #trigger
 scoreboard players enable @a Azr_Shop
