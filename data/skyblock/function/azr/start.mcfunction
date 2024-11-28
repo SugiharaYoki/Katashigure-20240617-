@@ -28,6 +28,7 @@ scoreboard objectives add AZR_chainKill_damage minecraft.custom:minecraft.damage
 scoreboard objectives add AZR_chainKill_count dummy
 #Azr_arrowOrbTimer用于boss技能
 scoreboard objectives add Azr_arrowOrbTimer dummy
+scoreboard objectives add Azr_shopChapter dummy
 
 #unused
 #scoreboard objectives add Azr_sarielStar dummy
