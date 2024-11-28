@@ -16,16 +16,6 @@ execute if score stageSeconds Azr_system matches 2 run scoreboard players set st
 execute if score stageSeconds Azr_system matches 5 run scoreboard players set stageSeconds Azr_system 6
 execute if score stageSeconds Azr_system matches 8 run scoreboard players set stageSeconds Azr_system 9
 execute if score stageSeconds Azr_system matches 15 run scoreboard players set stageSeconds Azr_system 16
-execute if score stageSeconds Azr_system matches 12..63 if score #rng16 Azr_system matches 1..2 run scoreboard players add stageSeconds Azr_system 1
-execute if score stageSeconds Azr_system matches 12..63 if score #rng16 Azr_system matches 5..7 if entity @a[tag=azrPlayer,scores={SeGa_StandLastBH=..22}] run scoreboard players add stageSeconds Azr_system 1
-execute if score stageSeconds Azr_system matches 84..159 if score #rng16 Azr_system matches 1..2 run scoreboard players add stageSeconds Azr_system 1
-execute if score stageSeconds Azr_system matches 84..159 if score #rng16 Azr_system matches 6..8 if entity @a[tag=azrPlayer,scores={SeGa_StandLastBH=..22}] run scoreboard players add stageSeconds Azr_system 1
-execute if score stageSeconds Azr_system matches 182..200 if score #rng16 Azr_system matches 1..2 run scoreboard players add stageSeconds Azr_system 1
-execute if score stageSeconds Azr_system matches 182..200 if score #rng16 Azr_system matches 4..6 if entity @a[tag=azrPlayer,scores={SeGa_StandLastBH=..22}] run scoreboard players add stageSeconds Azr_system 1
-execute if score stageSeconds Azr_system matches 229..268 if score #rng16 Azr_system matches 1..2 run scoreboard players add stageSeconds Azr_system 1
-execute if score stageSeconds Azr_system matches 229..268 if score #rng16 Azr_system matches 6..8 if entity @a[tag=azrPlayer,scores={SeGa_StandLastBH=..22}] run scoreboard players add stageSeconds Azr_system 1
-execute if score stageSeconds Azr_system matches 282..310 if score #rng16 Azr_system matches 1..2 run scoreboard players add stageSeconds Azr_system 1
-execute if score stageSeconds Azr_system matches 282..310 if score #rng16 Azr_system matches 4..6 if entity @a[tag=azrPlayer,scores={SeGa_StandLastBH=..22}] run scoreboard players add stageSeconds Azr_system 1
 
 execute if score stageSeconds Azr_system matches 1.. if score #rng5 Azr_system matches 3 run give @a[tag=azrPlayer,x=-79926,y=38,z=134,distance=0..2] arrow 1
 # execute if score stageSeconds Azr_system matches 1.. if score #rng5 Azr_system matches 3 run particle minecraft:ambient_entity_effect -79926 38.2 134 1 0 1 2.0 50
