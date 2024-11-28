@@ -7,6 +7,7 @@ execute unless items entity @s player.crafting.0 *[!custom_data~{LifeVitae:1b}] 
 #绿宝石管理
 execute if items entity @s[tag=hasLifeVitae] container.* emerald run function skyblock:azr/shop/money_conversion
 #商店入口
+scoreboard players set @s Azr_shopChapter 1
 execute if items entity @s player.cursor *[custom_data~{LifeVitae:1b}] run function skyblock:azr/shop/build
 execute if score @s Azr_Shop matches 20..40 run function skyblock:azr/shop/refresh
 execute if entity @s[tag=azrShopRefresh] run function skyblock:azr/shop/build
