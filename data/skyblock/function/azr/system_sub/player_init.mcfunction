@@ -3,11 +3,12 @@ function skyblock:api_start_any_game
 tag @s remove azrDead
 tag @s add azrPlayer
 tag @s add azrShopRefresh
+tag @s add azrNeverUsedShop
 
 #azr-player initialization
 #玩家初始化
 gamemode adventure @s
-spawnpoint @s ~ ~ ~
+execute at @s run spawnpoint @s ~ ~ ~
 team add AzrPlayer
 team join AzrPlayer @s
 team modify AzrPlayer color green

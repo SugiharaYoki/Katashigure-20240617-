@@ -2,7 +2,7 @@
 execute as @a[scores={MultiMenu=16220001}] run function skyblock:azr/info/guide_sub1
 execute as @a[scores={MultiMenu=16220002}] run function skyblock:azr/info/guide_sub2
 execute as @a[scores={MultiMenu=16220003}] run function skyblock:azr/info/guide_sub3
-execute as @a[scores={MultiMenu=112}] run function skyblock:azr/midway_join
+execute as @a[scores={MultiMenu=112}] at @s run function skyblock:azr/midway_join
 execute as @a[scores={MultiMenu=114}] run function skyblock:azr/info/toggle_money_remind
 execute as @a[scores={MultiMenu=115}] run function skyblock:azr/info/menu
 scoreboard players enable @a MultiMenu

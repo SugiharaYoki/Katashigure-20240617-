@@ -1,3 +1,7 @@
+#初次打开商店时刷新
+tag @s[tag=azrNeverUsedShop] add azrShopRefresh
+tag @s[tag=azrNeverUsedShop] remove azrNeverUsedShop
+
 #贪婪图腾效果
 execute store result score random Azr_system run random value 0..1
 execute if score random Azr_system matches 1 if data entity @s {Inventory:[{components:{"minecraft:custom_data":{greed_totem:1b}}}]} run scoreboard players remove @s[scores={Azr_emerald=1..}] Azr_emerald 1
