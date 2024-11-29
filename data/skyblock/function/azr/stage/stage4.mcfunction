@@ -115,17 +115,17 @@ execute if score stageSeconds Azr_system matches 98 if score random Azr_system m
 execute if score stageSeconds Azr_system matches 99 if score random Azr_system matches 1 positioned -79925 38 49 run function skyblock:azr/m/zombie_t1_5hp_full_armor
 execute if score stageSeconds Azr_system matches 99 if score random Azr_system matches 2 positioned -79937 38 49 run function skyblock:azr/m/zombie_t1_5hp_full_armor
 execute if score stageSeconds Azr_system matches 100..104 unless entity @n[tag=AzrielMob] run scoreboard players set stageSeconds Azr_system 105
-execute store result score random Azr_system run random value 1..4
+execute store result score random Azr_system run random value 1..2
 execute if score stageSeconds Azr_system matches 105 if score random Azr_system matches 1 positioned -79925 38 49 run function skyblock:azr/m/pillager_t2_charger
-execute if score stageSeconds Azr_system matches 105 if score random Azr_system matches 2 positioned -79937 38 49 run function skyblock:azr/m/pillager_t2_charger
-execute if score stageSeconds Azr_system matches 105 if score random Azr_system matches 3 positioned -79925 38 49 run function skyblock:azr/m/zombie_t2_shield
-execute if score stageSeconds Azr_system matches 105 if score random Azr_system matches 4 positioned -79937 38 49 run function skyblock:azr/m/zombie_t2_shield
+execute if score stageSeconds Azr_system matches 105 if score random Azr_system matches 1 positioned -79937 38 49 run function skyblock:azr/m/pillager_t2_charger
+execute if score stageSeconds Azr_system matches 105 if score random Azr_system matches 2 positioned -79925 38 49 run function skyblock:azr/m/zombie_t2_shield
+execute if score stageSeconds Azr_system matches 105 if score random Azr_system matches 2 positioned -79937 38 49 run function skyblock:azr/m/zombie_t2_shield
 execute if score stageSeconds Azr_system matches 106..108 unless entity @n[tag=AzrielMob] run scoreboard players set stageSeconds Azr_system 109
-execute store result score random Azr_system run random value 1..4
+execute store result score random Azr_system run random value 1..2
 execute if score stageSeconds Azr_system matches 109 if score random Azr_system matches 1 positioned -79925 38 49 run function skyblock:azr/m/pillager_t1_enchant
-execute if score stageSeconds Azr_system matches 109 if score random Azr_system matches 2 positioned -79937 38 49 run function skyblock:azr/m/pillager_t1_enchant
-execute if score stageSeconds Azr_system matches 109 if score random Azr_system matches 3 positioned -79925 38 49 run function skyblock:azr/m/zombie_militia_t1
-execute if score stageSeconds Azr_system matches 109 if score random Azr_system matches 4 positioned -79937 38 49 run function skyblock:azr/m/zombie_militia_t1
+execute if score stageSeconds Azr_system matches 109 if score random Azr_system matches 1 positioned -79937 38 49 run function skyblock:azr/m/pillager_t1_enchant
+execute if score stageSeconds Azr_system matches 109 if score random Azr_system matches 2 positioned -79925 38 49 run function skyblock:azr/m/zombie_militia_t1
+execute if score stageSeconds Azr_system matches 109 if score random Azr_system matches 2 positioned -79937 38 49 run function skyblock:azr/m/zombie_militia_t1
 execute if score stageSeconds Azr_system matches 109 if score playerCount Azr_system matches 3.. if score random Azr_system matches 3 positioned -79925 38 49 run function skyblock:azr/m/zombie_militia_t1
 execute if score stageSeconds Azr_system matches 109 if score playerCount Azr_system matches 3.. if score random Azr_system matches 4 positioned -79937 38 49 run function skyblock:azr/m/zombie_militia_t1
 execute if score stageSeconds Azr_system matches 110..118 unless entity @n[tag=AzrielMob] run scoreboard players set stageSeconds Azr_system 119
@@ -146,20 +146,22 @@ execute if score stageSeconds Azr_system matches 147 if score random Azr_system 
 execute if score stageSeconds Azr_system matches 147 if score random Azr_system matches 2 positioned -79937 38 49 run function skyblock:azr/m/silverfish_t1
 execute if score stageSeconds Azr_system matches 148..153 unless entity @n[tag=AzrielMob] run scoreboard players set stageSeconds Azr_system 154
 execute if score stageSeconds Azr_system matches 154 run function skyblock:tool_rng
-execute if score stageSeconds Azr_system matches 154 if score random Azr_system matches 1 positioned -79925 38 49 run function skyblock:azr/m/silverfish_t1
-execute if score stageSeconds Azr_system matches 154 if score random Azr_system matches 2 positioned -79937 38 49 run function skyblock:azr/m/silverfish_t1
+execute if score stageSeconds Azr_system matches 154 positioned -79925 38 49 run function skyblock:azr/m/silverfish_t1
+execute if score stageSeconds Azr_system matches 154 positioned -79937 38 49 run function skyblock:azr/m/silverfish_t1
 execute if score stageSeconds Azr_system matches 155 if score playerCount Azr_system matches 4.. if score random Azr_system matches 1 positioned -79925 38 49 run function skyblock:azr/m/silverfish_t1_corridor
 execute if score stageSeconds Azr_system matches 155 if score playerCount Azr_system matches 4.. if score random Azr_system matches 2 positioned -79937 38 49 run function skyblock:azr/m/silverfish_t1_corridor
-execute if score stageSeconds Azr_system matches 156 if score random Azr_system matches 1 positioned -79925 38 49 run function skyblock:azr/m/silverfish_t1_corridor
-execute if score stageSeconds Azr_system matches 156 if score random Azr_system matches 2 positioned -79937 38 49 run function skyblock:azr/m/silverfish_t1_corridor
+execute if score stageSeconds Azr_system matches 156 positioned -79925 38 49 run function skyblock:azr/m/silverfish_t1_corridor
+execute if score stageSeconds Azr_system matches 156 positioned -79937 38 49 run function skyblock:azr/m/silverfish_t1_corridor
 execute if score stageSeconds Azr_system matches 157..159 unless entity @n[tag=AzrielMob] run scoreboard players set stageSeconds Azr_system 160
 execute if score stageSeconds Azr_system matches 160.. run function skyblock:tool_rng
 execute if score stageSeconds Azr_system matches 160 positioned -79934 46 43 run function skyblock:azr/m/spider_t1_swift
 execute if score stageSeconds Azr_system matches 160 positioned -79928 46 43 run function skyblock:azr/m/spider_t1_swift
-execute if score stageSeconds Azr_system matches 161 if score random Azr_system matches 1 positioned -79925 38 49 run function skyblock:azr/m/silverfish_t1
-execute if score stageSeconds Azr_system matches 161 if score random Azr_system matches 2 positioned -79937 38 49 run function skyblock:azr/m/silverfish_t1
-execute if score stageSeconds Azr_system matches 162 if score random Azr_system matches 1 positioned -79925 38 49 run function skyblock:azr/m/silverfish_t1_corridor
-execute if score stageSeconds Azr_system matches 162 if score random Azr_system matches 2 positioned -79937 38 49 run function skyblock:azr/m/silverfish_t1_corridor
+execute if score stageSeconds Azr_system matches 160 positioned -79925 38 49 run function skyblock:azr/m/silverfish_t1
+execute if score stageSeconds Azr_system matches 160 positioned -79937 38 49 run function skyblock:azr/m/silverfish_t1
+execute if score stageSeconds Azr_system matches 161 positioned -79925 38 49 run function skyblock:azr/m/silverfish_t1
+execute if score stageSeconds Azr_system matches 161 positioned -79937 38 49 run function skyblock:azr/m/silverfish_t1
+execute if score stageSeconds Azr_system matches 162 positioned -79925 38 49 run function skyblock:azr/m/silverfish_t1_corridor
+execute if score stageSeconds Azr_system matches 162 positioned -79937 38 49 run function skyblock:azr/m/silverfish_t1_corridor
 execute if score stageSeconds Azr_system matches 163..169 unless entity @n[tag=AzrielMob] run scoreboard players set stageSeconds Azr_system 170
 execute if score stageSeconds Azr_system matches 170 if score random Azr_system matches 1 positioned -79925 38 49 run function skyblock:azr/m/silverfish_t1_corridor
 execute if score stageSeconds Azr_system matches 170 if score random Azr_system matches 2 positioned -79937 38 49 run function skyblock:azr/m/silverfish_t1_corridor
