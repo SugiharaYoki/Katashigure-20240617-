@@ -58,7 +58,7 @@ execute if score stageSeconds Azr_system matches 502 positioned -79936 38 83 run
 execute if score stageSeconds Azr_system matches 502 positioned -79926 38 93 run function skyblock:azr/m/skeleton_t1
 execute if score stageSeconds Azr_system matches 502 positioned -79926 38 93 run function skyblock:azr/m/skeleton_t1
 #34
-execute if score stageSeconds Azr_system matches 502 positioned -79921 38 90 run function skyblock:azr/m/vindicator_t1_guard
+execute if score stageSeconds Azr_system matches 502 positioned -79921 38 90 run function skyblock:azr/m/vindicator_t3
 #35
 
 
