@@ -41,6 +41,8 @@ execute as @a[scores={MultiMenu=815018,MazeLS=18..}] at @s run tp @p 133 46 -232
 execute as @a[scores={MultiMenu=815018,MazeLS=18..}] at @s run tellraw @s [{"text":"已抵达","color":"white"},{"text":" 世界塔 - 第18层","color":"green"}]
 execute as @a[scores={MultiMenu=815019,MazeLS=19..}] at @s run tp @p 108 46 -208 facing 108 46 -207
 execute as @a[scores={MultiMenu=815019,MazeLS=19..}] at @s run tellraw @s [{"text":"已抵达","color":"white"},{"text":" 世界塔 - 第19层","color":"green"}]
+execute as @a[scores={MultiMenu=815020,MazeLS=20..}] at @s run tp @p 132 46 -197 facing 133 46 -197
+execute as @a[scores={MultiMenu=815020,MazeLS=20..}] at @s run tellraw @s [{"text":"已抵达","color":"white"},{"text":" 世界塔 - 第20层","color":"green"}]
 
 
 execute as @a[scores={MultiMenu=832001}] at @s run tp @p -141 49 -118 facing -142 49 -118
