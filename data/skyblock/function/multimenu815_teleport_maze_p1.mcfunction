@@ -22,10 +22,11 @@ tellraw @s[scores={MazeLS=16..}] [{"text":"  11","bold":false,"color":"blue","cl
 tellraw @s[scores={MazeLS=17..}] {"text":"《锈蚀的污道》","bold":false,"color":"white"}
 tellraw @s[scores={MazeLS=17}] [{"text":"  17","bold":false,"color":"blue","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 815017"}}]
 tellraw @s[scores={MazeLS=18}] [{"text":"  17","bold":false,"color":"blue","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 815017"}},{"text":"  18","bold":false,"color":"blue","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 815018"}}]
-tellraw @s[scores={MazeLS=19..}] [{"text":"  17","bold":false,"color":"blue","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 815017"}},{"text":"  18","bold":false,"color":"blue","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 815018"}},{"text":"  19","bold":false,"color":"blue","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 815019"}}]
+tellraw @s[scores={MazeLS=19}] [{"text":"  17","bold":false,"color":"blue","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 815017"}},{"text":"  18","bold":false,"color":"blue","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 815018"}},{"text":"  19","bold":false,"color":"blue","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 815019"}}]
+tellraw @s[scores={MazeLS=20..}] [{"text":"  17","bold":false,"color":"blue","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 815017"}},{"text":"  18","bold":false,"color":"blue","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 815018"}},{"text":"  19","bold":false,"color":"blue","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 815019"}},{"text":"  20","bold":false,"color":"blue","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 815020"}}]
 
 
-#tellraw @s[scores={MazeLS=??..}] {"text":"","bold":false}
+#tellraw @s[scores={MazeLS=??..}] {"text":"","bold":false} 
 #tellraw @s[scores={MazeLS=??..}] {"text":"  [下一页]","bold":false,"color":"green","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 811"}}
 tellraw @s {"text":"","bold":false}
 #
