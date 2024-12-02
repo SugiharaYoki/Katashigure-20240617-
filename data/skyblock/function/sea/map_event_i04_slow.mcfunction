@@ -408,11 +408,7 @@ execute unless block 90241 46 134 air run scoreboard players add sea_ch4_aquatic
 execute unless block 90241 46 134 air if block 90213 45 144 minecraft:waxed_weathered_copper_bulb[lit=true] \
 if block 90232 47 138 minecraft:waxed_weathered_copper_bulb[lit=true] \
 if block 90236 51 139 minecraft:waxed_weathered_copper_bulb[lit=true] \
-run tellraw @a[tag=SEAPT] {"text": "播报：水生生物研究区域戒严管控 已被解除","color": "green"}
-execute unless block 90241 46 134 air if block 90213 45 144 minecraft:waxed_weathered_copper_bulb[lit=true] \
-if block 90232 47 138 minecraft:waxed_weathered_copper_bulb[lit=true] \
-if block 90236 51 139 minecraft:waxed_weathered_copper_bulb[lit=true] \
-run fill 90241 46 134 90241 44 134 minecraft:air
+run function skyblock:sea/e/ev025_ch4_aquatic_research
 
 execute positioned 90196 57 93 if entity @a[tag=SEAPT,distance=..4.6] unless entity @n[tag=SEAch4_spawn_timer_ecosystem,distance=0..3] run summon marker ~ ~ ~ {Tags:["SEAch4_spawn_timer","SEAch4_spawn_timer_ecosystem"]}
 execute as @n[tag=SEAch4_spawn_timer_ecosystem] at @s run function skyblock:sea/e/ev022_ecosystem
