@@ -22,9 +22,9 @@ give @a[tag=SEAPT] baked_potato 3
 
 tag @a[tag=SEAPT] add e_w_01
 tag @a[tag=SEAPT] add e_w_02
-scoreboard players set @a[tag=SEAPT] sea_i_trim_zombie 5
-scoreboard players set @a[tag=SEAPT] sea_i_trim_spider 3
-scoreboard players set @a[tag=SEAPT] sea_i_trim_human 2
+scoreboard players set @a[tag=SEAPT] sea_i_trim_zombie 3
+scoreboard players set @a[tag=SEAPT] sea_i_trim_spider 2
+scoreboard players set @a[tag=SEAPT] sea_i_trim_human 1
 scoreboard players set @a[tag=SEAPT] sea_i_trim_bug 2 
 scoreboard players set @a[tag=SEAPT] sea_i_trim_sea 0 
 scoreboard players set @a[tag=SEAPT] sea_i_trim_ghost 0

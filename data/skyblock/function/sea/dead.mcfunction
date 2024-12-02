@@ -163,57 +163,57 @@ attribute @s minecraft:generic.attack_knockback modifier remove sea_t_knockback5
 tag @s remove sea_t_armor1
 execute store result score @s rng2 run random value 1..4
 execute as @s[scores={rng2=1..3}] run tag @s remove sea_t_armor2
-execute store result score @s rng2 run random value 1..4
+execute store result score @s rng2 run random value 1..5
 execute as @s[scores={rng2=1..2}] run tag @s remove sea_t_armor3
-execute store result score @s rng2 run random value 1..4
+execute store result score @s rng2 run random value 1..6
 execute as @s[scores={rng2=1..1}] run tag @s remove sea_t_armor4
 tag @s remove sea_t_armor5
 tag @s remove sea_t_tough1
 execute store result score @s rng2 run random value 1..4
 execute as @s[scores={rng2=1..3}] run tag @s remove sea_t_tough2
-execute store result score @s rng2 run random value 1..4
+execute store result score @s rng2 run random value 1..5
 execute as @s[scores={rng2=1..2}] run tag @s remove sea_t_tough3
-execute store result score @s rng2 run random value 1..4
+execute store result score @s rng2 run random value 1..6
 execute as @s[scores={rng2=1..1}] run tag @s remove sea_t_tough4
 tag @s remove sea_t_tough5
 tag @s remove sea_t_damage1
 execute store result score @s rng2 run random value 1..4
 execute as @s[scores={rng2=1..3}] run tag @s remove sea_t_damage2
-execute store result score @s rng2 run random value 1..4
+execute store result score @s rng2 run random value 1..5
 execute as @s[scores={rng2=1..2}] run tag @s remove sea_t_damage3
-execute store result score @s rng2 run random value 1..4
+execute store result score @s rng2 run random value 1..6
 execute as @s[scores={rng2=1..1}] run tag @s remove sea_t_damage4
 tag @s remove sea_t_damage5
 tag @s remove sea_t_speed1
 execute store result score @s rng2 run random value 1..4
 execute as @s[scores={rng2=1..3}] run tag @s remove sea_t_speed2
-execute store result score @s rng2 run random value 1..4
+execute store result score @s rng2 run random value 1..5
 execute as @s[scores={rng2=1..2}] run tag @s remove sea_t_speed3
-execute store result score @s rng2 run random value 1..4
+execute store result score @s rng2 run random value 1..6
 execute as @s[scores={rng2=1..1}] run tag @s remove sea_t_speed4
 tag @s remove sea_t_speed5
 tag @s remove sea_t_attackspeed1
 execute store result score @s rng2 run random value 1..4
 execute as @s[scores={rng2=1..3}] run tag @s remove sea_t_attackspeed2
-execute store result score @s rng2 run random value 1..4
+execute store result score @s rng2 run random value 1..5
 execute as @s[scores={rng2=1..2}] run tag @s remove sea_t_attackspeed3
-execute store result score @s rng2 run random value 1..4
+execute store result score @s rng2 run random value 1..6
 execute as @s[scores={rng2=1..1}] run tag @s remove sea_t_attackspeed4
 tag @s remove sea_t_attackspeed5
 tag @s remove sea_t_health1
 execute store result score @s rng2 run random value 1..4
 execute as @s[scores={rng2=1..3}] run tag @s remove sea_t_health2
-execute store result score @s rng2 run random value 1..4
+execute store result score @s rng2 run random value 1..5
 execute as @s[scores={rng2=1..2}] run tag @s remove sea_t_health3
-execute store result score @s rng2 run random value 1..4
+execute store result score @s rng2 run random value 1..6
 execute as @s[scores={rng2=1..1}] run tag @s remove sea_t_health4
 tag @s remove sea_t_health5
 tag @s remove sea_t_knockback1
 execute store result score @s rng2 run random value 1..4
 execute as @s[scores={rng2=1..3}] run tag @s remove sea_t_knockback2
-execute store result score @s rng2 run random value 1..4
+execute store result score @s rng2 run random value 1..5
 execute as @s[scores={rng2=1..2}] run tag @s remove sea_t_knockback3
-execute store result score @s rng2 run random value 1..4
+execute store result score @s rng2 run random value 1..6
 execute as @s[scores={rng2=1..1}] run tag @s remove sea_t_knockback4
 tag @s remove sea_t_knockback5
 
