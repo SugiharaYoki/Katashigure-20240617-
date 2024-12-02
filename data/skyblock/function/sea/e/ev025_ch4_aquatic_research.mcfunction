@@ -3,3 +3,18 @@ fill 90241 46 134 90241 44 134 minecraft:air
 
 execute positioned 90243 44 134 run function skyblock:sea/m/shadow
 execute positioned 90243 44 134 run function skyblock:sea/m/shadow
+
+summon cod 90263 49 131
+summon cod 90263 49 131
+summon cod 90263 49 131
+summon tropical_fish 90263 49 131
+summon tropical_fish 90263 49 131
+summon tropical_fish 90263 49 131
+summon tropical_fish 90263 49 131
+summon tropical_fish 90263 49 131
+summon tropical_fish 90263 49 131
+summon tropical_fish 90263 49 131
+summon tropical_fish 90263 49 131
+summon tropical_fish 90263 49 131
+summon squid 90255 45 130
+summon squid 90255 45 130
