@@ -16,5 +16,8 @@ summon tropical_fish 90263 49 131
 summon tropical_fish 90263 49 131
 summon tropical_fish 90263 49 131
 summon tropical_fish 90263 49 131
+summon tropical_fish 90263 49 131
+summon tropical_fish 90263 49 131
+summon tropical_fish 90263 49 131
 summon squid 90255 45 130
 summon squid 90255 45 130
