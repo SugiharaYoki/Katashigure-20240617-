@@ -428,6 +428,8 @@ setblock 90160 6 138 chest[facing=east,waterlogged=true]
 item replace block 90160 6 138 container.12 with emerald 3
 item replace block 90160 6 138 container.14 with emerald 3
 
+#是否联系玛瑞莲
+setblock 90163 36 86 air
 
 #第二乐谱
 setblock 90244 51 132 chest[facing=south]
