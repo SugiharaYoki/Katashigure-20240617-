@@ -446,8 +446,7 @@ fill 90151 39 101 90151 37 99 air
 setblock 90249 44 129 air
 setblock 90249 44 129 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 2, id:"minecraft:beef"}}
 
-
-
+setblock 90249 46 139 minecraft:potted_allium
 
 
 
