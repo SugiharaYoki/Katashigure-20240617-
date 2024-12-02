@@ -495,4 +495,4 @@ execute positioned 90083 150 160 run function skyblock:sea/m/drowned_maintenance
 execute positioned 90083 150 160 run function skyblock:sea/m/drowned_maintenance
 execute positioned 90083 150 160 run function skyblock:sea/m/skeleton
 
-
+fill 90151 39 101 90151 37 99 iron_bars

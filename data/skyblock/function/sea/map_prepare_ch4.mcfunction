@@ -441,8 +441,7 @@ setblock 90232 47 138 minecraft:waxed_weathered_copper_bulb[lit=false]
 setblock 90236 51 139 minecraft:waxed_weathered_copper_bulb[lit=false]
 fill 90241 46 134 90241 44 134 minecraft:cyan_stained_glass
 
-
-
+fill 90151 39 101 90151 37 99 air
 
 #最终大厅 第七章入口
 setblock 90154 18 134 minecraft:waxed_copper_bulb[lit=false]
