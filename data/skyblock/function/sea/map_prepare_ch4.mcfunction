@@ -429,7 +429,10 @@ item replace block 90160 6 138 container.12 with emerald 3
 item replace block 90160 6 138 container.14 with emerald 3
 
 
-
+#第二乐谱
+setblock 90244 51 132 chest[facing=south]
+item replace block 90244 51 132 container.12 with flint 1
+item replace block 90244 51 132 container.14 with coal 1
 
 
 
