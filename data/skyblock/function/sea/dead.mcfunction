@@ -81,13 +81,13 @@ scoreboard objectives add constant dummy
 scoreboard players set 2 constant 2
 scoreboard players set 5 constant 5
 scoreboard players set 10 constant 10
-scoreboard players operation @s sea_i_trim_zombie *= 2 constant
-scoreboard players operation @s sea_i_trim_spider *= 2 constant
-scoreboard players operation @s sea_i_trim_human *= 2 constant
-scoreboard players operation @s sea_i_trim_bug *= 2 constant
-scoreboard players operation @s sea_i_trim_sea *= 2 constant
-scoreboard players operation @s sea_i_trim_ghost *= 2 constant
-scoreboard players operation @s sea_i_trim_skeleton *= 2 constant
+#scoreboard players operation @s sea_i_trim_zombie *= 2 constant
+#scoreboard players operation @s sea_i_trim_spider *= 2 constant
+#scoreboard players operation @s sea_i_trim_human *= 2 constant
+#scoreboard players operation @s sea_i_trim_bug *= 2 constant
+#scoreboard players operation @s sea_i_trim_sea *= 2 constant
+#scoreboard players operation @s sea_i_trim_ghost *= 2 constant
+#scoreboard players operation @s sea_i_trim_skeleton *= 2 constant
 scoreboard players operation @s Perm_PersonSHD += @s sea_i_trim_zombie
 scoreboard players operation @s Perm_PersonSHD += @s sea_i_trim_spider
 scoreboard players operation @s Perm_PersonSHD += @s sea_i_trim_human 
