@@ -438,7 +438,7 @@ item replace block 90244 51 132 container.14 with coal 1
 fill 90226 45 131 90224 44 131 minecraft:slime_block
 setblock 90213 45 144 minecraft:waxed_weathered_copper_bulb[lit=false]
 setblock 90232 47 138 minecraft:waxed_weathered_copper_bulb[lit=false]
-setblock 90236 51 139 minecraft:waxed_weathered_copper_bulb[lit=false]
+setblock 90236 52 140 minecraft:waxed_weathered_copper_bulb[lit=false]
 fill 90241 46 134 90241 44 134 minecraft:cyan_stained_glass
 
 fill 90151 39 101 90151 37 99 air

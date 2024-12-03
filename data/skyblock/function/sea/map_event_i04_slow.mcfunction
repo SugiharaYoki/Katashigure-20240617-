@@ -401,14 +401,14 @@ execute positioned 90216 57 91 if entity @a[tag=SEAPT,distance=..2.7] unless ite
 execute positioned 90209 57 89 if entity @a[tag=SEAPT,distance=..2.7] unless items entity @a[tag=SEAPT] container.* heart_of_the_sea unless entity @n[tag=SEAch4_spawn,distance=0..2] positioned 90209 57 89 run function skyblock:sea/m/zombie_knight
 execute positioned 90209 57 89 if entity @a[tag=SEAPT,distance=..2.7] unless items entity @a[tag=SEAPT] container.* heart_of_the_sea unless entity @n[tag=SEAch4_spawn,distance=0..2] run summon marker ~ ~ ~ {Tags:["SEAch4_spawn"]}
 
-execute unless block 90241 46 134 air if score sea_ch4_aquatic_alarm rng1 matches 50 positioned 90229 43 134 as @a[tag=SEAPT,distance=..20] run tellraw @a[tag=SEAPT] {"text": "警告：水生生物研究区域 戒严管控中 请无关人员不要接近该区域","color": "red"}
-execute if score sea_ch4_aquatic_alarm rng1 matches 50 positioned 90167 35 99 as @a[tag=SEAPT,distance=..12] run tellraw @a[tag=SEAPT] {"text": "播报：欢迎来到忒尔克西水下研究中心，世界级实验动物学研究机构","color": "green"}
+execute unless block 90241 46 134 air if score sea_ch4_aquatic_alarm rng1 matches 50 positioned 90229 43 134 as @a[tag=SEAPT,distance=..20] run tellraw @s {"text": "警告：水生生物研究区域 戒严管控中 请无关人员不要接近该区域","color": "red"}
+execute if score sea_ch4_aquatic_alarm rng1 matches 50 positioned 90167 35 99 as @a[tag=SEAPT,distance=..12] run tellraw @s {"text": "播报：欢迎来到忒尔克西水下研究中心，世界级实验动物学研究机构","color": "green"}
 execute if score sea_ch4_aquatic_alarm rng1 matches 50.. run scoreboard players set sea_ch4_aquatic_alarm rng1 0
 execute run scoreboard players add sea_ch4_aquatic_alarm rng1 1
 
 execute unless block 90241 46 134 air if block 90213 45 144 minecraft:waxed_weathered_copper_bulb[lit=true] \
 if block 90232 47 138 minecraft:waxed_weathered_copper_bulb[lit=true] \
-if block 90236 51 139 minecraft:waxed_weathered_copper_bulb[lit=true] \
+if block 90236 52 140 minecraft:waxed_weathered_copper_bulb[lit=true] \
 run function skyblock:sea/e/ev025_ch4_aquatic_research
 
 execute positioned 90196 57 93 if entity @a[tag=SEAPT,distance=..4.6] unless entity @n[tag=SEAch4_spawn_timer_ecosystem,distance=0..3] run summon marker ~ ~ ~ {Tags:["SEAch4_spawn_timer","SEAch4_spawn_timer_ecosystem"]}
