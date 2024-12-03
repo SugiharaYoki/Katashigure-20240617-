@@ -447,7 +447,9 @@ setblock 90249 44 129 air
 setblock 90249 44 129 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 2, id:"minecraft:beef"}}
 
 setblock 90249 46 139 minecraft:potted_allium
-
+setblock 90267 44 126 chest[facing=west]
+item replace block 90267 44 126 container.12 with echo_shard 1
+item replace block 90267 44 126 container.14 with flint 2
 
 
 
