@@ -50,6 +50,7 @@ scoreboard objectives remove Azr_Shop_rng12
 scoreboard objectives remove Azr_Shop_rng13
 scoreboard objectives remove melonCount
 scoreboard objectives remove Azr_skillPoints
+scoreboard objectives remove Azr_shopChapter
 scoreboard players set stageSeconds Azr_system 0
 scoreboard players set stage Azr_system 0
 scoreboard players set isStarted Azr_system 0

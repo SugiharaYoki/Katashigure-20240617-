@@ -47,7 +47,7 @@ execute as @s[scores={sea_4temp1=180}] positioned 90168 36 87 as @p[tag=SEAPT] i
 
 execute as @s[scores={sea_4temp1=206}] positioned 90168 36 87 as @p[tag=SEAPT] if entity @n[tag=sc,scores={sea_player=1..}] run tellraw @a[distance=0..50] {"text":"玛瑞莲：“水下研究设施的实验，对上面的普通工作人员来讲属于机密内容。”","color":"dark_purple"}
 
-execute as @s[scores={sea_4temp1=232}] positioned 90168 36 87 as @p[tag=SEAPT] if entity @n[tag=sc,scores={sea_player=1..}] run tellraw @a[distance=0..50] {"text":"玛瑞莲：“监控是肯定调取不到了。但我确实有注意到有人在尝试修复一架通往附属平台的研究设施电梯。”","color":"dark_purple"}
+execute as @s[scores={sea_4temp1=232}] positioned 90168 36 87 as @p[tag=SEAPT] if entity @n[tag=sc,scores={sea_player=1..}] run tellraw @a[distance=0..50] {"text":"玛瑞莲：“监控是肯定调取不到了。但我确实有注意到有人在尝试修复一架通往附属平台的研究设施电梯。方向来说，是在北边。”","color":"dark_purple"}
 
 
 execute as @s[scores={sea_4temp1=260}] positioned 90168 36 87 as @p[tag=SEAPT] if entity @n[tag=sc,scores={sea_player=1..}] run tellraw @a[distance=0..50] [{"selector":"@s","color":"white"},{"text":"：那么……不用想都知道那会是谁了。","color":"white"}]
@@ -61,3 +61,5 @@ execute as @s[scores={sea_4temp1=302}] positioned 90168 36 87 as @p[tag=SEAPT] i
 
 execute as @s[scores={sea_4temp1=326}] positioned 90168 36 87 as @p[tag=SEAPT] unless block 90168 34 93 blue_concrete if entity @n[tag=sc,scores={sea_player=1..}] run tellraw @a[distance=0..50] {"text":"玛瑞莲：“没问题，我一直都会在联络总站这里。”","color":"dark_purple"}
 execute as @s[scores={sea_4temp1=326}] positioned 90168 36 87 as @p[tag=SEAPT] if block 90168 34 93 blue_concrete if entity @n[tag=sc,scores={sea_player=1..}] run tellraw @a[distance=0..50] {"text":"玛瑞莲：“好，随时找我就可以。”","color":"dark_purple"}
+
+execute as @s[scores={sea_4temp1=326}] run setblock 90163 36 86 green_concrete

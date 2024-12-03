@@ -3,11 +3,12 @@ function skyblock:api_start_any_game
 tag @s remove azrDead
 tag @s add azrPlayer
 tag @s add azrShopRefresh
+tag @s add azrNeverUsedShop
 
 #azr-player initialization
 #玩家初始化
 gamemode adventure @s
-spawnpoint @s ~ ~ ~
+execute at @s run spawnpoint @s ~ ~ ~
 team add AzrPlayer
 team join AzrPlayer @s
 team modify AzrPlayer color green
@@ -21,9 +22,6 @@ effect clear @s saturation
 effect clear @s instant_health
 effect give @s saturation 3 100 true
 effect give @s instant_health 3 100 true
-
-#位置初始化
-execute as @s[x=-79936.0,y=38.15,z=-14.0,distance=10..] run tp @s -79936.0 38.15 -14.0 facing -79935.0 38.15 -14.0
 
 #进度初始化
 advancement revoke @s from skyblock:azr_root

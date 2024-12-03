@@ -32,8 +32,8 @@ execute if block 90075 103 141 cauldron if block 90163 129 113 air run title @s[
 execute if block 90075 103 141 cauldron if block 90125 102 101 air run title @s[tag=SEAPT] actionbar {"text":"目标：前往水下研究设施","color":"green"}
 
 execute if block 90074 103 137 scaffolding run title @s[tag=SEAPT] actionbar {"text":"目标：寻找回到水下研究设施实验区的方法","color":"green"}
-
-
+execute if block 90074 103 137 scaffolding run title @s[tag=SEAPT,tag=e_i_35] actionbar {"text":"目标：寻找越涵的行踪","color":"green"}
+execute if block 90074 103 137 scaffolding if block 90163 36 86 green_concrete run title @s[tag=SEAPT,tag=e_i_35] actionbar {"text":"目标：探索水下研究设施的北侧并找到前进的路线","color":"green"}
 
 
 

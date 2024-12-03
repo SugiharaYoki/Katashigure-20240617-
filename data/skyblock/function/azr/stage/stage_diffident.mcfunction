@@ -1,4 +1,4 @@
-execute if score stageSeconds Azr_system matches 502..507 as @a[tag=azrPlayer] at @s unless block ~ ~-1 ~ air unless block ~ ~-1 ~ lava unless block ~ ~ ~ lava run spawnpoint @s ~ ~ ~
+execute if score stageSeconds Azr_system matches 502 run tag @a[tag=azrPlayer] add azrUpdateSpawnPoint
 execute if score stageSeconds Azr_system matches 502 run bossbar add azr:progress_bar_special "Stage Diffident"
 execute if score stageSeconds Azr_system matches 502 run bossbar set azr:progress_bar_special color blue
 execute if score stageSeconds Azr_system matches 502 run bossbar set azr:progress_bar_special players @a[tag=azrPlayer]
@@ -58,7 +58,7 @@ execute if score stageSeconds Azr_system matches 502 positioned -79936 38 83 run
 execute if score stageSeconds Azr_system matches 502 positioned -79926 38 93 run function skyblock:azr/m/skeleton_t1
 execute if score stageSeconds Azr_system matches 502 positioned -79926 38 93 run function skyblock:azr/m/skeleton_t1
 #34
-execute if score stageSeconds Azr_system matches 502 positioned -79921 38 90 run function skyblock:azr/m/vindicator_t1_guard
+execute if score stageSeconds Azr_system matches 502 positioned -79921 38 90 run function skyblock:azr/m/vindicator_t3
 #35
 
 

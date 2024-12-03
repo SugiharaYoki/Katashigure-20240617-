@@ -57,3 +57,5 @@ execute as @a at @s if block ~ ~-1 ~ minecraft:emerald_block run function skyblo
 
 execute as @a[scores={AnnouncementTime=1},tag=!Gaming] at @s run function skyblock:world_sys_announcementp2_bgm
 
+execute as @a[x=102,y=5,z=-242,dx=58,dy=300,dz=58] at @s if items entity @s weapon.offhand totem_of_undying run tp @s -64 54 -181 facing -65 54 -180
+execute as @a[x=102,y=5,z=-242,dx=58,dy=300,dz=58] at @s run item replace entity @s container.0 with totem_of_undying[minecraft:custom_name='{"text":"光明图腾","italic":false,"color":"gold","bold":true}',lore=['{"text":"有效预防幽闭恐惧症！","italic":false}','{"text":"切换至副手：立即传送回主城。","italic":false,"color": "green"}']]

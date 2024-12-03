@@ -4,7 +4,7 @@ execute as @e[tag=arroworb2,type=marker] at @s run function skyblock:azr/stage/b
 #start
     execute if score tickTimer Azr_system matches 1 run tellraw @a[tag=DebugMode,tag=azrPlayer] [{"text":"[DEBUG MODE MESSAGE] You are playing \"Stage Boss1\", with playerCount = "},{"score":{"objective":"Azr_system","name":"playerCount"}},{"text":" Maximum tickTimer = 3162"}]
     #set spawnpoint
-    execute if score tickTimer Azr_system matches 3..50 as @a[tag=azrPlayer] at @s unless block ~ ~-1 ~ air unless block ~ ~-1 ~ lava unless block ~ ~ ~ lava run spawnpoint @s ~ ~ ~
+    execute if score tickTimer Azr_system matches 1 run tag @a[tag=azrPlayer] add azrUpdateSpawnPoint
     #init map
     execute if score tickTimer Azr_system matches 1 run fill -79932 38 72 -79930 42 72 red_stained_glass
     execute if score tickTimer Azr_system matches 1 at @p[x=-79931,y=38.8,z=88,distance=0..19,tag=azrPlayer] run tp @a[tag=azrPlayer,distance=9..] ~ ~ ~
