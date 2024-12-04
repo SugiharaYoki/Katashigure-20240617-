@@ -64,5 +64,5 @@ execute as @n[x=102,y=5,z=-242,dx=58,dy=300,dz=58,type=item] at @s unless block 
 execute as @n[x=102,y=5,z=-242,dx=58,dy=300,dz=58,type=item,scores={rng2=3}] at @s if entity @s[nbt={Item:{id:"minecraft:blaze_rod"}}] run particle composter ~ ~ ~ 0 0 0 0.5 20
 execute as @n[x=102,y=5,z=-242,dx=58,dy=300,dz=58,type=item,scores={rng2=3}] at @s if entity @s[nbt={Item:{id:"minecraft:blaze_rod"}}] run summon marker ~ ~ ~ {Tags:["MazeTower_Glowstick"]}
 execute as @n[x=102,y=5,z=-242,dx=58,dy=300,dz=58,type=item,scores={rng2=3..}] at @s run kill @s
-execute as @e[x=102,y=5,z=-242,dx=58,dy=300,dz=58,type=marker,tag=MazeTower_Glowstick,limit=120] at @s run function skyblock:city_maze_marker
+execute as @e[x=102,y=5,z=-242,dx=58,dy=300,dz=58,type=marker,tag=MazeTower_Glowstick,limit=120] at @s if entity @a[distance=..25] run function skyblock:city_maze_marker
 
