@@ -61,7 +61,8 @@ execute as @a[x=102,y=5,z=-242,dx=58,dy=300,dz=58] at @s if items entity @s weap
 execute as @a[x=102,y=5,z=-242,dx=58,dy=300,dz=58] at @s run item replace entity @s container.0 with totem_of_undying[minecraft:custom_name='{"text":"光明图腾","italic":false,"color":"gold","bold":true}',lore=['{"text":"有效预防幽闭恐惧症！","italic":false}','{"text":"切换至副手：立即传送回主城。","italic":false,"color": "green"}']]
 execute as @a[x=102,y=5,z=-242,dx=58,dy=300,dz=58] at @s run item replace entity @s container.1 with blaze_rod[minecraft:custom_name='{"text":"荧光棒","italic":false,"color":"green","bold":true}',lore=['{"text":"我猜这个不需要说明书。","italic":false}']]
 execute as @n[x=102,y=5,z=-242,dx=58,dy=300,dz=58,type=item] at @s unless block ~ ~-0.2 ~ air run scoreboard players add @s rng2 1
-execute as @n[x=102,y=5,z=-242,dx=58,dy=300,dz=58,type=item,scores={rng2=3..}] at @s if entity @s[nbt={Item:{id:"minecraft:blaze_rod"}}] run summon marker ~ ~ ~ {Tags:["MazeTower_Glowstick"]}
+execute as @n[x=102,y=5,z=-242,dx=58,dy=300,dz=58,type=item,scores={rng2=3}] at @s if entity @s[nbt={Item:{id:"minecraft:blaze_rod"}}] run particle composter ~ ~ ~ 0 0 0 0.5 20
+execute as @n[x=102,y=5,z=-242,dx=58,dy=300,dz=58,type=item,scores={rng2=3}] at @s if entity @s[nbt={Item:{id:"minecraft:blaze_rod"}}] run summon marker ~ ~ ~ {Tags:["MazeTower_Glowstick"]}
 execute as @n[x=102,y=5,z=-242,dx=58,dy=300,dz=58,type=item,scores={rng2=3..}] at @s run kill @s
 execute as @n[x=102,y=5,z=-242,dx=58,dy=300,dz=58,type=marker,tag=MazeTower_Glowstick] at @s run function skyblock:city_maze_marker
 
