@@ -10,6 +10,7 @@ tag @s remove AZR_chainKill_activated
 scoreboard players set @s Azr_forceDeath 0
 scoreboard players set @s AZR_chainKill_count 0
 scoreboard players set @s AZR_chainKill_damage 0
+scoreboard players set @s AZR_chainKill_chargeup 0
 function skyblock:azr/update_bossbar
 #输出
 tellraw @a[tag=azrPlayer,distance=..10000] [{"selector":"@s","color":"blue"},{"text":" 阵亡了！","color":"dark_red"}]
