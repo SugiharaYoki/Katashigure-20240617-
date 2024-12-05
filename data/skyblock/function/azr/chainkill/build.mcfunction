@@ -15,7 +15,12 @@ execute if entity @s[tag=!AZR_ChainKillUpg1] run data modify entity @n[tag=AZR_C
 execute if entity @s[tag=!AZR_ChainKillUpg2] run data modify entity @n[tag=AZR_ChainKillUpg_displaymarker2] CustomName set value '" □ "'
 execute if entity @s[tag=!AZR_ChainKillUpg3] run data modify entity @n[tag=AZR_ChainKillUpg_displaymarker3] CustomName set value '" □ "'
 execute if entity @s[tag=!AZR_ChainKillUpg4] run data modify entity @n[tag=AZR_ChainKillUpg_displaymarker4] CustomName set value '" □ "'
-tellraw @s [{"text":" ","color":"light_purple"},{"selector":"@n[tag=AZR_ChainKillUpg_displaymarker1]","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8900101"}},{"selector":"@n[tag=AZR_ChainKillUpg_displaymarker2]","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8900102"}},{"selector":"@n[tag=AZR_ChainKillUpg_displaymarker3]","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8900103"}},{"selector":"@n[tag=AZR_ChainKillUpg_displaymarker4]","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8900104"}},{"text":"充能效率","bold":false,"italic":true,"color":"white"}]
+tellraw @s [{"text":" ","color":"light_purple"},\
+{"selector":"@n[tag=AZR_ChainKillUpg_displaymarker1]","color":"gold","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8900101"},"hoverEvent":{"action":"show_text","contents":{"text":"选取任意紫格×2将开启『灵赋感知』可得知剩余索命连击次数","color":"white"}}},\
+{"selector":"@n[tag=AZR_ChainKillUpg_displaymarker2]","color":"gold","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8900102"},"hoverEvent":{"action":"show_text","contents":{"text":"选取任意紫格×2将开启『灵赋感知』可得知剩余索命连击次数","color":"white"}}},\
+{"selector":"@n[tag=AZR_ChainKillUpg_displaymarker3]","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8900103"}},\
+{"selector":"@n[tag=AZR_ChainKillUpg_displaymarker4]","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8900104"}},\
+{"text":"充能效率","bold":false,"italic":true,"color":"white"}]
 
 execute if entity @s[tag=AZR_ChainKillUpg5] run data modify entity @n[tag=AZR_ChainKillUpg_displaymarker1] CustomName set value '" ■ "'
 execute if entity @s[tag=AZR_ChainKillUpg6] run data modify entity @n[tag=AZR_ChainKillUpg_displaymarker2] CustomName set value '" ■ "'
@@ -25,7 +30,12 @@ execute if entity @s[tag=!AZR_ChainKillUpg5] run data modify entity @n[tag=AZR_C
 execute if entity @s[tag=!AZR_ChainKillUpg6] run data modify entity @n[tag=AZR_ChainKillUpg_displaymarker2] CustomName set value '" □ "'
 execute if entity @s[tag=!AZR_ChainKillUpg7] run data modify entity @n[tag=AZR_ChainKillUpg_displaymarker3] CustomName set value '" □ "'
 execute if entity @s[tag=!AZR_ChainKillUpg8] run data modify entity @n[tag=AZR_ChainKillUpg_displaymarker4] CustomName set value '" □ "'
-tellraw @s [{"text":" ","color":"light_purple"},{"selector":"@n[tag=AZR_ChainKillUpg_displaymarker1]","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8900105"}},{"selector":"@n[tag=AZR_ChainKillUpg_displaymarker2]","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8900106"}},{"selector":"@n[tag=AZR_ChainKillUpg_displaymarker3]","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8900107"}},{"selector":"@n[tag=AZR_ChainKillUpg_displaymarker4]","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8900108"}},{"text":"充能增量","bold":false,"italic":true,"color":"white"}]
+tellraw @s [{"text":" ","color":"light_purple"},\
+{"selector":"@n[tag=AZR_ChainKillUpg_displaymarker1]","color":"gold","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8900105"},"hoverEvent":{"action":"show_text","contents":{"text":"选取任意紫格×2将开启『灵赋感知』可得知剩余索命连击次数","color":"white"}}},\
+{"selector":"@n[tag=AZR_ChainKillUpg_displaymarker2]","color":"gold","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8900106"},"hoverEvent":{"action":"show_text","contents":{"text":"选取任意紫格×2将开启『灵赋感知』可得知剩余索命连击次数","color":"white"}}},\
+{"selector":"@n[tag=AZR_ChainKillUpg_displaymarker3]","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8900107"}},\
+{"selector":"@n[tag=AZR_ChainKillUpg_displaymarker4]","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8900108"}},\
+{"text":"充能增量","bold":false,"italic":true,"color":"white"}]
 
 execute if entity @s[tag=AZR_ChainKillUpg9] run data modify entity @n[tag=AZR_ChainKillUpg_displaymarker1] CustomName set value '" ■ "'
 execute if entity @s[tag=AZR_ChainKillUpg10] run data modify entity @n[tag=AZR_ChainKillUpg_displaymarker2] CustomName set value '" ■ "'
@@ -35,7 +45,11 @@ execute if entity @s[tag=!AZR_ChainKillUpg9] run data modify entity @n[tag=AZR_C
 execute if entity @s[tag=!AZR_ChainKillUpg10] run data modify entity @n[tag=AZR_ChainKillUpg_displaymarker2] CustomName set value '" □ "'
 execute if entity @s[tag=!AZR_ChainKillUpg11] run data modify entity @n[tag=AZR_ChainKillUpg_displaymarker3] CustomName set value '" □ "'
 execute if entity @s[tag=!AZR_ChainKillUpg12] run data modify entity @n[tag=AZR_ChainKillUpg_displaymarker4] CustomName set value '" □ "'
-tellraw @s [{"text":" ","color":"light_purple"},{"selector":"@n[tag=AZR_ChainKillUpg_displaymarker1]","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8900109"}},{"selector":"@n[tag=AZR_ChainKillUpg_displaymarker2]","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8900110"}},{"selector":"@n[tag=AZR_ChainKillUpg_displaymarker3]","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8900111"}},{"selector":"@n[tag=AZR_ChainKillUpg_displaymarker4]","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8900112"}}]
+tellraw @s [{"text":" ","color":"light_purple"},\
+{"selector":"@n[tag=AZR_ChainKillUpg_displaymarker1]","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8900109"}},\
+{"selector":"@n[tag=AZR_ChainKillUpg_displaymarker2]","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8900110"}},\
+{"selector":"@n[tag=AZR_ChainKillUpg_displaymarker3]","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8900111"}},\
+{"selector":"@n[tag=AZR_ChainKillUpg_displaymarker4]","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8900112"}}]
 
 execute if entity @s[tag=AZR_ChainKillUpg13] run data modify entity @n[tag=AZR_ChainKillUpg_displaymarker1] CustomName set value '" ■ "'
 execute if entity @s[tag=AZR_ChainKillUpg14] run data modify entity @n[tag=AZR_ChainKillUpg_displaymarker2] CustomName set value '" ■ "'
@@ -45,7 +59,11 @@ execute if entity @s[tag=!AZR_ChainKillUpg13] run data modify entity @n[tag=AZR_
 execute if entity @s[tag=!AZR_ChainKillUpg14] run data modify entity @n[tag=AZR_ChainKillUpg_displaymarker2] CustomName set value '" □ "'
 execute if entity @s[tag=!AZR_ChainKillUpg15] run data modify entity @n[tag=AZR_ChainKillUpg_displaymarker3] CustomName set value '" □ "'
 execute if entity @s[tag=!AZR_ChainKillUpg16] run data modify entity @n[tag=AZR_ChainKillUpg_displaymarker4] CustomName set value '" □ "'
-tellraw @s [{"text":" ","color":"light_purple"},{"selector":"@n[tag=AZR_ChainKillUpg_displaymarker1]","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8900113"}},{"selector":"@n[tag=AZR_ChainKillUpg_displaymarker2]","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8900114"}},{"selector":"@n[tag=AZR_ChainKillUpg_displaymarker3]","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8900115"}},{"selector":"@n[tag=AZR_ChainKillUpg_displaymarker4]","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8900116"}}]
+tellraw @s [{"text":" ","color":"light_purple"},\
+{"selector":"@n[tag=AZR_ChainKillUpg_displaymarker1]","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8900113"}},\
+{"selector":"@n[tag=AZR_ChainKillUpg_displaymarker2]","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8900114"}},\
+{"selector":"@n[tag=AZR_ChainKillUpg_displaymarker3]","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8900115"}},\
+{"selector":"@n[tag=AZR_ChainKillUpg_displaymarker4]","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8900116"}}]
 
 scoreboard players operation @s rng1 = @s AZR_chainKillUpg_pts
 scoreboard players remove @s[tag=AZR_ChainKillUpg1] rng1 1
