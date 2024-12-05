@@ -15,7 +15,7 @@ execute if entity @s[tag=!AZR_ChainKillUpg1] run data modify entity @n[tag=AZR_C
 execute if entity @s[tag=!AZR_ChainKillUpg2] run data modify entity @n[tag=AZR_ChainKillUpg_displaymarker2] CustomName set value '" □ "'
 execute if entity @s[tag=!AZR_ChainKillUpg3] run data modify entity @n[tag=AZR_ChainKillUpg_displaymarker3] CustomName set value '" □ "'
 execute if entity @s[tag=!AZR_ChainKillUpg4] run data modify entity @n[tag=AZR_ChainKillUpg_displaymarker4] CustomName set value '" □ "'
-tellraw @s [{"text":" ","color":"light_purple"},{"selector":"@n[tag=AZR_ChainKillUpg_displaymarker1]","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8900101"}},{"selector":"@n[tag=AZR_ChainKillUpg_displaymarker2]","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8900102"}},{"selector":"@n[tag=AZR_ChainKillUpg_displaymarker3]","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8900103"}},{"selector":"@n[tag=AZR_ChainKillUpg_displaymarker4]","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8900104"}}]
+tellraw @s [{"text":" ","color":"light_purple"},{"selector":"@n[tag=AZR_ChainKillUpg_displaymarker1]","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8900101"}},{"selector":"@n[tag=AZR_ChainKillUpg_displaymarker2]","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8900102"}},{"selector":"@n[tag=AZR_ChainKillUpg_displaymarker3]","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8900103"}},{"selector":"@n[tag=AZR_ChainKillUpg_displaymarker4]","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8900104"}},{"text":"充能效率","bold":false,"italic":true,"color":"white"}]
 
 execute if entity @s[tag=AZR_ChainKillUpg5] run data modify entity @n[tag=AZR_ChainKillUpg_displaymarker1] CustomName set value '" ■ "'
 execute if entity @s[tag=AZR_ChainKillUpg6] run data modify entity @n[tag=AZR_ChainKillUpg_displaymarker2] CustomName set value '" ■ "'
@@ -25,7 +25,7 @@ execute if entity @s[tag=!AZR_ChainKillUpg5] run data modify entity @n[tag=AZR_C
 execute if entity @s[tag=!AZR_ChainKillUpg6] run data modify entity @n[tag=AZR_ChainKillUpg_displaymarker2] CustomName set value '" □ "'
 execute if entity @s[tag=!AZR_ChainKillUpg7] run data modify entity @n[tag=AZR_ChainKillUpg_displaymarker3] CustomName set value '" □ "'
 execute if entity @s[tag=!AZR_ChainKillUpg8] run data modify entity @n[tag=AZR_ChainKillUpg_displaymarker4] CustomName set value '" □ "'
-tellraw @s [{"text":" ","color":"light_purple"},{"selector":"@n[tag=AZR_ChainKillUpg_displaymarker1]","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8900105"}},{"selector":"@n[tag=AZR_ChainKillUpg_displaymarker2]","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8900106"}},{"selector":"@n[tag=AZR_ChainKillUpg_displaymarker3]","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8900107"}},{"selector":"@n[tag=AZR_ChainKillUpg_displaymarker4]","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8900108"}}]
+tellraw @s [{"text":" ","color":"light_purple"},{"selector":"@n[tag=AZR_ChainKillUpg_displaymarker1]","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8900105"}},{"selector":"@n[tag=AZR_ChainKillUpg_displaymarker2]","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8900106"}},{"selector":"@n[tag=AZR_ChainKillUpg_displaymarker3]","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8900107"}},{"selector":"@n[tag=AZR_ChainKillUpg_displaymarker4]","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8900108"}},{"text":"充能增量","bold":false,"italic":true,"color":"white"}]
 
 execute if entity @s[tag=AZR_ChainKillUpg9] run data modify entity @n[tag=AZR_ChainKillUpg_displaymarker1] CustomName set value '" ■ "'
 execute if entity @s[tag=AZR_ChainKillUpg10] run data modify entity @n[tag=AZR_ChainKillUpg_displaymarker2] CustomName set value '" ■ "'
@@ -65,6 +65,10 @@ scoreboard players remove @s[tag=AZR_ChainKillUpg14] rng1 1
 scoreboard players remove @s[tag=AZR_ChainKillUpg15] rng1 1
 scoreboard players remove @s[tag=AZR_ChainKillUpg16] rng1 1
 
+tellraw @s [{"text":" 次 ","bold":false,"italic":true,"color":"white"},{"text":" 保 ","bold":false,"italic":true,"color":"white"}]
+tellraw @s [{"text":" 数 ","bold":false,"italic":true,"color":"white"},{"text":" 底 ","bold":false,"italic":true,"color":"white"}]
+tellraw @s [{"text":" 破 ","bold":false,"italic":true,"color":"white"},{"text":" 次 ","bold":false,"italic":true,"color":"white"}]
+tellraw @s [{"text":" 限 ","bold":false,"italic":true,"color":"white"},{"text":" 数 ","bold":false,"italic":true,"color":"white"}]
 tellraw @s {"text":""}
 tellraw @s[scores={rng1=1..}] [{"text":"剩余可分配点数：","bold":true,"color":"green"},{"bold":false,"score":{"name":"@s","objective":"rng1"},"color":"green"}]
 tellraw @s[scores={rng1=..0}] [{"text":"剩余可分配点数：","bold":true,"color":"green"},{"bold":false,"score":{"name":"@s","objective":"rng1"},"color":"red"}]
