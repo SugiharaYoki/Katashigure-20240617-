@@ -20,7 +20,7 @@ tellraw @s [{"text":" ","color":"light_purple"},\
 {"selector":"@n[tag=AZR_ChainKillUpg_displaymarker2]","color":"gold","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8900102"},"hoverEvent":{"action":"show_text","contents":{"text":"选取任意金色格×2将开启『灵赋感知』\n可得知剩余索命连击次数","color":"white"}}},\
 {"selector":"@n[tag=AZR_ChainKillUpg_displaymarker3]","color":"blue","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8900103"},"hoverEvent":{"action":"show_text","contents":{"text":"选取任意蓝色格×2\n可在发动索命连击时额外获得50%的防御力\n\n×4时，该效果将提升至100%","color":"white"}}},\
 {"selector":"@n[tag=AZR_ChainKillUpg_displaymarker4]","color":"dark_red","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8900104"},"hoverEvent":{"action":"show_text","contents":{"text":"选取任意红色格×1\n索命连击期间成功造成伤害可获得生命恢复效果\n选取的红色格数量越多 效果也将越强","color":"white"}}},\
-{"text":"充能效率","bold":false,"italic":true,"color":"white"}]
+{"text":" 充能效率","bold":false,"italic":true,"color":"white"}]
 
 execute if entity @s[tag=AZR_ChainKillUpg5] run data modify entity @n[tag=AZR_ChainKillUpg_displaymarker1] CustomName set value '" ■ "'
 execute if entity @s[tag=AZR_ChainKillUpg6] run data modify entity @n[tag=AZR_ChainKillUpg_displaymarker2] CustomName set value '" ■ "'
@@ -35,7 +35,7 @@ tellraw @s [{"text":" ","color":"light_purple"},\
 {"selector":"@n[tag=AZR_ChainKillUpg_displaymarker2]","color":"gold","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8900106"},"hoverEvent":{"action":"show_text","contents":{"text":"选取任意金色格×2将开启『灵赋感知』\n可得知剩余索命连击次数","color":"white"}}},\
 {"selector":"@n[tag=AZR_ChainKillUpg_displaymarker3]","color":"blue","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8900107"},"hoverEvent":{"action":"show_text","contents":{"text":"选取任意蓝色格×2\n可在发动索命连击时额外获得50%的防御力\n\n×4时，该效果将提升至100%","color":"white"}}},\
 {"selector":"@n[tag=AZR_ChainKillUpg_displaymarker4]","color":"dark_red","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8900108"},"hoverEvent":{"action":"show_text","contents":{"text":"选取任意红色格×1\n索命连击期间成功造成伤害可获得生命恢复效果\n选取的红色格数量越多 效果也将越强","color":"white"}}},\
-{"text":"充能增量","bold":false,"italic":true,"color":"white"}]
+{"text":" 充能增量","bold":false,"italic":true,"color":"white"}]
 
 execute if entity @s[tag=AZR_ChainKillUpg9] run data modify entity @n[tag=AZR_ChainKillUpg_displaymarker1] CustomName set value '" ■ "'
 execute if entity @s[tag=AZR_ChainKillUpg10] run data modify entity @n[tag=AZR_ChainKillUpg_displaymarker2] CustomName set value '" ■ "'
