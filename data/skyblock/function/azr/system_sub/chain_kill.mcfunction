@@ -1,4 +1,4 @@
-execute if entity @s store result score random Azr_system run random value 3..10
+execute if entity @s store result score random Azr_system run random value 3..20
 execute if entity @s[tag=!AZR_chainKill_activated,scores={AZR_chainKill=1..}] run scoreboard players operation @s AZR_chainKill_chargeup += random Azr_system
 execute if score @s AZR_chainKill_chargeup matches ..9 run xp set @s 0 points
 execute if score @s AZR_chainKill_chargeup matches 10..19 run xp set @s 11 points
