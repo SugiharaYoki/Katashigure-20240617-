@@ -27,6 +27,14 @@ scoreboard players add @s[tag=AZR_ChainKillUpg2] AZR_chainKillUpg_attackcountmin
 scoreboard players add @s[tag=AZR_ChainKillUpg6] AZR_chainKillUpg_attackcountmin 1
 scoreboard players add @s[tag=AZR_ChainKillUpg10] AZR_chainKillUpg_attackcountmin 1
 scoreboard players add @s[tag=AZR_ChainKillUpg14] AZR_chainKillUpg_attackcountmin 1
+scoreboard players add @s[tag=AZR_ChainKillUpg3] AZR_chainKillUpg_attackdamage 1
+scoreboard players add @s[tag=AZR_ChainKillUpg7] AZR_chainKillUpg_attackdamage 1
+scoreboard players add @s[tag=AZR_ChainKillUpg11] AZR_chainKillUpg_attackdamage 1
+scoreboard players add @s[tag=AZR_ChainKillUpg15] AZR_chainKillUpg_attackdamage 1
+scoreboard players add @s[tag=AZR_ChainKillUpg4] AZR_chainKillUpg_attackrange 1
+scoreboard players add @s[tag=AZR_ChainKillUpg8] AZR_chainKillUpg_attackrange 1
+scoreboard players add @s[tag=AZR_ChainKillUpg12] AZR_chainKillUpg_attackrange 1
+scoreboard players add @s[tag=AZR_ChainKillUpg16] AZR_chainKillUpg_attackrange 1
 
 
 scoreboard players add @s[tag=AZR_ChainKillUpg1] rng1 1
