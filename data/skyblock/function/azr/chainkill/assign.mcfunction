@@ -16,7 +16,7 @@ scoreboard players remove @s[tag=AZR_ChainKillUpg14] rng1 1
 scoreboard players remove @s[tag=AZR_ChainKillUpg15] rng1 1
 scoreboard players remove @s[tag=AZR_ChainKillUpg16] rng1 1
 
-execute if entity @s[scores={rng1=1..}] run tag @s add AZR_ChainKillUpg_FAILED
+execute if entity @s[scores={rng1=0}] run tag @s add AZR_ChainKillUpg_FAILED
 execute if entity @s[scores={Azr_Shop=8900101},tag=AZR_ChainKillUpg1] run tag @s remove AZR_ChainKillUpg_FAILED
 execute if entity @s[scores={Azr_Shop=8900102},tag=AZR_ChainKillUpg2] run tag @s remove AZR_ChainKillUpg_FAILED
 execute if entity @s[scores={Azr_Shop=8900103},tag=AZR_ChainKillUpg3] run tag @s remove AZR_ChainKillUpg_FAILED
