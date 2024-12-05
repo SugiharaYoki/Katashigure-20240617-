@@ -65,10 +65,10 @@ scoreboard players remove @s[tag=AZR_ChainKillUpg14] rng1 1
 scoreboard players remove @s[tag=AZR_ChainKillUpg15] rng1 1
 scoreboard players remove @s[tag=AZR_ChainKillUpg16] rng1 1
 
-tellraw @s [{"text":" 次 ","bold":false,"italic":true,"color":"white"},{"text":" 保 ","bold":false,"italic":true,"color":"white"}]
-tellraw @s [{"text":" 数 ","bold":false,"italic":true,"color":"white"},{"text":" 底 ","bold":false,"italic":true,"color":"white"}]
-tellraw @s [{"text":" 破 ","bold":false,"italic":true,"color":"white"},{"text":" 次 ","bold":false,"italic":true,"color":"white"}]
-tellraw @s [{"text":" 限 ","bold":false,"italic":true,"color":"white"},{"text":" 数 ","bold":false,"italic":true,"color":"white"}]
+tellraw @s [{"text":" "},{"text":" 次 ","bold":false,"italic":true,"color":"white"},{"text":"保 ","bold":false,"italic":true,"color":"white"}]
+tellraw @s [{"text":" "},{"text":" 数 ","bold":false,"italic":true,"color":"white"},{"text":"底 ","bold":false,"italic":true,"color":"white"}]
+tellraw @s [{"text":" "},{"text":" 破 ","bold":false,"italic":true,"color":"white"},{"text":"次 ","bold":false,"italic":true,"color":"white"}]
+tellraw @s [{"text":" "},{"text":" 限 ","bold":false,"italic":true,"color":"white"},{"text":"数 ","bold":false,"italic":true,"color":"white"}]
 tellraw @s {"text":""}
 tellraw @s[scores={rng1=1..}] [{"text":"剩余可分配点数：","bold":true,"color":"green"},{"bold":false,"score":{"name":"@s","objective":"rng1"},"color":"green"}]
 tellraw @s[scores={rng1=..0}] [{"text":"剩余可分配点数：","bold":true,"color":"green"},{"bold":false,"score":{"name":"@s","objective":"rng1"},"color":"red"}]
