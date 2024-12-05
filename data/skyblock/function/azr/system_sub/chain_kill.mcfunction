@@ -1,15 +1,15 @@
 execute if entity @s store result score random Azr_system run random value 3..10
 execute if entity @s[tag=!AZR_chainKill_activated,scores={AZR_chainKill=1..}] run scoreboard players operation @s AZR_chainKill_chargeup += random Azr_system
-execute if score @s AZR_chainKill_chargeup matches 0 run xp set @s 0 points
-execute if score @s AZR_chainKill_chargeup matches 10 run xp set @s 11 points
-execute if score @s AZR_chainKill_chargeup matches 20 run xp set @s 22 points
-execute if score @s AZR_chainKill_chargeup matches 30 run xp set @s 33 points
-execute if score @s AZR_chainKill_chargeup matches 40 run xp set @s 44 points
-execute if score @s AZR_chainKill_chargeup matches 50 run xp set @s 55 points
-execute if score @s AZR_chainKill_chargeup matches 60 run xp set @s 66 points
-execute if score @s AZR_chainKill_chargeup matches 70 run xp set @s 77 points
-execute if score @s AZR_chainKill_chargeup matches 80 run xp set @s 88 points
-execute if score @s AZR_chainKill_chargeup matches 90 run xp set @s 99 points
+execute if score @s AZR_chainKill_chargeup matches ..9 run xp set @s 0 points
+execute if score @s AZR_chainKill_chargeup matches 10..19 run xp set @s 11 points
+execute if score @s AZR_chainKill_chargeup matches 20..29 run xp set @s 22 points
+execute if score @s AZR_chainKill_chargeup matches 30..39 run xp set @s 33 points
+execute if score @s AZR_chainKill_chargeup matches 40..49 run xp set @s 44 points
+execute if score @s AZR_chainKill_chargeup matches 50..59 run xp set @s 55 points
+execute if score @s AZR_chainKill_chargeup matches 60..69 run xp set @s 66 points
+execute if score @s AZR_chainKill_chargeup matches 70..79 run xp set @s 77 points
+execute if score @s AZR_chainKill_chargeup matches 80..89 run xp set @s 88 points
+execute if score @s AZR_chainKill_chargeup matches 90..99 run xp set @s 99 points
 execute if score @s AZR_chainKill_chargeup matches 100.. run xp set @s 111 points
 execute if score @s AZR_chainKill_chargeup matches 100.. if entity @s[tag=!AZR_chainKill_activated] run function skyblock:azr/system_sub/chain_kill_execute
 
