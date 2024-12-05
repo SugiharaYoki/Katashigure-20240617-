@@ -9,6 +9,8 @@ attribute @s[scores={AZR_chainKillUpg_attackdamage=1}] minecraft:generic.attack_
 attribute @s[scores={AZR_chainKillUpg_attackdamage=2}] minecraft:generic.attack_damage modifier add azr_chainkill_02 0.7 add_multiplied_total
 attribute @s[scores={AZR_chainKillUpg_attackdamage=3}] minecraft:generic.attack_damage modifier add azr_chainkill_02 0.85 add_multiplied_total
 attribute @s[scores={AZR_chainKillUpg_attackdamage=4}] minecraft:generic.attack_damage modifier add azr_chainkill_02 1.0 add_multiplied_total
+attribute @s[scores={AZR_chainKillUpg_attackdamage=2..}] minecraft:generic.armor modifier add azr_chainkill_03 0.5 add_multiplied_total
+attribute @s[scores={AZR_chainKillUpg_attackdamage=4}] minecraft:generic.armor modifier add azr_chainkill_03 1.0 add_multiplied_total
 
 execute if entity @s[scores={AZR_chainKillUpg_attackcount=0}] store result score random Azr_system run random value 1..5
 execute if entity @s[scores={AZR_chainKillUpg_attackcount=1}] store result score random Azr_system run random value 1..7

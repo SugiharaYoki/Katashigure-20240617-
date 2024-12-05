@@ -34,6 +34,7 @@ scoreboard objectives add AZR_chainKillUpg_attackcount dummy
 scoreboard objectives add AZR_chainKillUpg_attackcountmin dummy
 scoreboard objectives add AZR_chainKillUpg_attackdamage dummy
 scoreboard objectives add AZR_chainKillUpg_attackrange dummy
+scoreboard objectives add AZR_chainKillUpg_defense dummy
 #Azr_arrowOrbTimer用于boss技能
 scoreboard objectives add Azr_arrowOrbTimer dummy
 scoreboard objectives add Azr_shopChapter dummy
@@ -44,6 +45,7 @@ execute as @a unless entity @s[scores={AZR_chainKillUpg_attackcount=-999..}] run
 execute as @a unless entity @s[scores={AZR_chainKillUpg_attackcountmin=-999..}] run scoreboard players set @s AZR_chainKillUpg_attackcountmin 0
 execute as @a unless entity @s[scores={AZR_chainKillUpg_attackdamage=-999..}] run scoreboard players set @s AZR_chainKillUpg_attackdamage 0
 execute as @a unless entity @s[scores={AZR_chainKillUpg_attackrange=-999..}] run scoreboard players set @s AZR_chainKillUpg_attackrange 0
+execute as @a unless entity @s[scores={AZR_chainKillUpg_defense=-999..}] run scoreboard players set @s AZR_chainKillUpg_defense 0
 
 #unused
 #scoreboard objectives add Azr_sarielStar dummy
