@@ -16,8 +16,8 @@ execute if entity @s[tag=!AZR_ChainKillUpg2] run data modify entity @n[tag=AZR_C
 execute if entity @s[tag=!AZR_ChainKillUpg3] run data modify entity @n[tag=AZR_ChainKillUpg_displaymarker3] CustomName set value '" □ "'
 execute if entity @s[tag=!AZR_ChainKillUpg4] run data modify entity @n[tag=AZR_ChainKillUpg_displaymarker4] CustomName set value '" □ "'
 tellraw @s [{"text":" ","color":"light_purple"},\
-{"selector":"@n[tag=AZR_ChainKillUpg_displaymarker1]","color":"gold","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8900101"},"hoverEvent":{"action":"show_text","contents":{"text":"选取任意金色格×2将开启『灵赋感知』可得知剩余索命连击次数","color":"white"}}},\
-{"selector":"@n[tag=AZR_ChainKillUpg_displaymarker2]","color":"gold","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8900102"},"hoverEvent":{"action":"show_text","contents":{"text":"选取任意金色格×2将开启『灵赋感知』可得知剩余索命连击次数","color":"white"}}},\
+{"selector":"@n[tag=AZR_ChainKillUpg_displaymarker1]","color":"gold","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8900101"},"hoverEvent":{"action":"show_text","contents":{"text":"选取任意金色格×2将开启『灵赋感知』\\n可得知剩余索命连击次数","color":"white"}}},\
+{"selector":"@n[tag=AZR_ChainKillUpg_displaymarker2]","color":"gold","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8900102"},"hoverEvent":{"action":"show_text","contents":{"text":"选取任意金色格×2将开启『灵赋感知』\\n可得知剩余索命连击次数","color":"white"}}},\
 {"selector":"@n[tag=AZR_ChainKillUpg_displaymarker3]","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8900103"}},\
 {"selector":"@n[tag=AZR_ChainKillUpg_displaymarker4]","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8900104"}},\
 {"text":"充能效率","bold":false,"italic":true,"color":"white"}]
@@ -31,8 +31,8 @@ execute if entity @s[tag=!AZR_ChainKillUpg6] run data modify entity @n[tag=AZR_C
 execute if entity @s[tag=!AZR_ChainKillUpg7] run data modify entity @n[tag=AZR_ChainKillUpg_displaymarker3] CustomName set value '" □ "'
 execute if entity @s[tag=!AZR_ChainKillUpg8] run data modify entity @n[tag=AZR_ChainKillUpg_displaymarker4] CustomName set value '" □ "'
 tellraw @s [{"text":" ","color":"light_purple"},\
-{"selector":"@n[tag=AZR_ChainKillUpg_displaymarker1]","color":"gold","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8900105"},"hoverEvent":{"action":"show_text","contents":{"text":"选取任意金色格×2将开启『灵赋感知』可得知剩余索命连击次数","color":"white"}}},\
-{"selector":"@n[tag=AZR_ChainKillUpg_displaymarker2]","color":"gold","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8900106"},"hoverEvent":{"action":"show_text","contents":{"text":"选取任意金色格×2将开启『灵赋感知』可得知剩余索命连击次数","color":"white"}}},\
+{"selector":"@n[tag=AZR_ChainKillUpg_displaymarker1]","color":"gold","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8900105"},"hoverEvent":{"action":"show_text","contents":{"text":"选取任意金色格×2将开启『灵赋感知』\\n可得知剩余索命连击次数","color":"white"}}},\
+{"selector":"@n[tag=AZR_ChainKillUpg_displaymarker2]","color":"gold","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8900106"},"hoverEvent":{"action":"show_text","contents":{"text":"选取任意金色格×2将开启『灵赋感知』\\n可得知剩余索命连击次数","color":"white"}}},\
 {"selector":"@n[tag=AZR_ChainKillUpg_displaymarker3]","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8900107"}},\
 {"selector":"@n[tag=AZR_ChainKillUpg_displaymarker4]","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8900108"}},\
 {"text":"充能增量","bold":false,"italic":true,"color":"white"}]
