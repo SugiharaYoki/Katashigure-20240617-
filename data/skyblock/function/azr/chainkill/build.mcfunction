@@ -65,6 +65,7 @@ scoreboard players remove @s[tag=AZR_ChainKillUpg14] rng1 1
 scoreboard players remove @s[tag=AZR_ChainKillUpg15] rng1 1
 scoreboard players remove @s[tag=AZR_ChainKillUpg16] rng1 1
 
+tellraw @s {"text":""}
 tellraw @s[scores={rng1=1..}] [{"text":"剩余可分配点数：","bold":true,"color":"green"},{"bold":false,"score":{"name":"@s","objective":"rng1"},"color":"green"}]
 tellraw @s[scores={rng1=..0}] [{"text":"剩余可分配点数：","bold":true,"color":"green"},{"bold":false,"score":{"name":"@s","objective":"rng1"},"color":"red"}]
 
