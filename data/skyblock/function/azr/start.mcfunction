@@ -27,6 +27,7 @@ scoreboard objectives add AZR_chainKill minecraft.custom:minecraft.mob_kills
 scoreboard objectives add AZR_chainKill_damage minecraft.custom:minecraft.damage_dealt
 scoreboard objectives add AZR_chainKill_count dummy
 scoreboard objectives add AZR_chainKill_chargeup dummy
+scoreboard objectives add AZR_chainKillUpg_pts dummy
 scoreboard objectives add AZR_chainKillUpg_chargespeed dummy
 scoreboard objectives add AZR_chainKillUpg_chargeboost dummy
 scoreboard objectives add AZR_chainKillUpg_attackcount dummy
@@ -34,6 +35,7 @@ scoreboard objectives add AZR_chainKillUpg_attackcountmin dummy
 #Azr_arrowOrbTimer用于boss技能
 scoreboard objectives add Azr_arrowOrbTimer dummy
 scoreboard objectives add Azr_shopChapter dummy
+execute as @a unless entity @s[scores={AZR_chainKillUpg_pts=-999..}] run scoreboard players set @s AZR_chainKillUpg_pts 0
 execute as @a unless entity @s[scores={AZR_chainKillUpg_chargespeed=-999..}] run scoreboard players set @s AZR_chainKillUpg_chargespeed 0
 execute as @a unless entity @s[scores={AZR_chainKillUpg_chargeboost=-999..}] run scoreboard players set @s AZR_chainKillUpg_chargeboost 0
 execute as @a unless entity @s[scores={AZR_chainKillUpg_attackcount=-999..}] run scoreboard players set @s AZR_chainKillUpg_attackcount 0
