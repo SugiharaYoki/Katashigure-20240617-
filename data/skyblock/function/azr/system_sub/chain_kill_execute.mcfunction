@@ -7,6 +7,16 @@ execute if entity @s[scores={AZR_chainKillUpg_attackcount=1}] store result score
 execute if entity @s[scores={AZR_chainKillUpg_attackcount=2}] store result score random Azr_system run random value 1..9
 execute if entity @s[scores={AZR_chainKillUpg_attackcount=3}] store result score random Azr_system run random value 1..11
 execute if entity @s[scores={AZR_chainKillUpg_attackcount=4}] store result score random Azr_system run random value 1..13
+execute if entity @s[scores={AZR_chainKillUpg_attackcountmin=1}] if score random Azr_system matches 1..4 store result score random rng2 run random value 0..1
+execute if entity @s[scores={AZR_chainKillUpg_attackcountmin=1..}] run scoreboard players operation random Azr_system += random rng2
+execute if entity @s[scores={AZR_chainKillUpg_attackcountmin=2}] if score random Azr_system matches 1..5 store result score random rng2 run random value 0..1
+execute if entity @s[scores={AZR_chainKillUpg_attackcountmin=2..}] run scoreboard players operation random Azr_system += random rng2
+execute if entity @s[scores={AZR_chainKillUpg_attackcountmin=3}] if score random Azr_system matches 1..6 store result score random rng2 run random value 0..1
+execute if entity @s[scores={AZR_chainKillUpg_attackcountmin=3..}] run scoreboard players operation random Azr_system += random rng2
+execute if entity @s[scores={AZR_chainKillUpg_attackcountmin=4}] if score random Azr_system matches 1..7 store result score random rng2 run random value 0..1
+execute if entity @s[scores={AZR_chainKillUpg_attackcountmin=4..}] run scoreboard players operation random Azr_system += random rng2
+
+
 scoreboard players set @s[tag=!AZR_chainKill_activated] AZR_chainKill_count 2
 execute if score random Azr_system matches 2..13 run scoreboard players add @s[tag=!AZR_chainKill_activated] AZR_chainKill_count 1
 execute if score random Azr_system matches 3..13 run scoreboard players add @s[tag=!AZR_chainKill_activated] AZR_chainKill_count 1
