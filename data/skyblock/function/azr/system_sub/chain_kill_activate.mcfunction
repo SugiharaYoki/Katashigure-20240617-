@@ -9,6 +9,10 @@ execute positioned ~ ~1.0 ~ run particle minecraft:enchanted_hit ^ ^ ^3.5 0.2 0.
 execute positioned ~ ~1.0 ~ run particle minecraft:enchanted_hit ^ ^ ^4 0.2 0.2 0.2 0.2 3
 execute positioned ~ ~1.0 ~ run particle minecraft:enchanted_hit ^ ^ ^4.5 0.2 0.2 0.2 0.2 3
 
+execute if entity @s[scores={AZR_chainKillUpg_attackheal=1}] run effect give @s regeneration 3 0 true
+execute if entity @s[scores={AZR_chainKillUpg_attackheal=2}] run effect give @s regeneration 3 1 true
+execute if entity @s[scores={AZR_chainKillUpg_attackheal=3}] run effect give @s regeneration 5 1 true
+execute if entity @s[scores={AZR_chainKillUpg_attackheal=4}] run effect give @s regeneration 7 1 true
 
 execute store result score random Azr_system run random value 1..5
 scoreboard players remove @s[scores={AZR_chainKill_count=1..}] AZR_chainKill_count 1
