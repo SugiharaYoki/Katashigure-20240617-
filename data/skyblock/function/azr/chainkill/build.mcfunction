@@ -1,60 +1,73 @@
-#初次打开商店时刷新
-tag @s[tag=azrNeverUsedShop] add azrShopRefresh
-tag @s[tag=azrNeverUsedShop] remove azrNeverUsedShop
-
-#贪婪图腾效果
-execute store result score random Azr_system run random value 0..1
-execute if score random Azr_system matches 1 if data entity @s {Inventory:[{components:{"minecraft:custom_data":{greed_totem:1b}}}]} run scoreboard players remove @s[scores={Azr_emerald=1..}] Azr_emerald 1
-
 #print title
-execute if score @s Azr_shopChapter matches 1 run tellraw @s {"text":"『第一章 - Chapter 1』","bold":true,"color":"white"}
-execute if score @s Azr_shopChapter matches 2 run tellraw @s {"text":"『第二章 - Chapter 2』","bold":true,"color":"white"}
-execute if score @s Azr_shopChapter matches 3 run tellraw @s {"text":"『第三章 - Chapter 3』","bold":true,"color":"white"}
-execute if score @s Azr_shopChapter matches 4 run tellraw @s {"text":"『绯红之章 - The Crimson Chapter』","bold":true,"color":"white"}
-execute if score @s Azr_shopChapter matches 5 run tellraw @s {"text":"『金锻之章 - The Gold Forged Chapter』","bold":true,"color":"white"}
-execute if score @s Azr_shopChapter matches 6 run tellraw @s {"text":"『诡蚀之章 - The Warped Chapter』","bold":true,"color":"white"}
-execute if score @s Azr_shopChapter matches 7 run tellraw @s {"text":"『第七章 - Chapter 7』","bold":true,"color":"white"}
-tellraw @s {"text":"   "}
+tellraw @s {"text":"『索命连击 灵能系统』","bold":true,"color":"white"}
+tellraw @s {"text":""}
 
-#print trades
-execute if entity @s[tag=azrShopRefresh] if score @s Azr_shopChapter matches 1 run function skyblock:azr/shop/roll_chapter1
-execute if entity @s[tag=azrShopRefresh] if score @s Azr_shopChapter matches 2 run function skyblock:azr/shop/roll_chapter2
-execute if entity @s[tag=azrShopRefresh] if score @s Azr_shopChapter matches 3 run function skyblock:azr/shop/roll_chapter3
-execute if score @s Azr_shopChapter matches 1..3 run function skyblock:azr/shop/reader
-execute if entity @s[tag=azrShopRefresh] if score @s Azr_shopChapter matches 4 run function skyblock:azr/shop/roll_chapter4
-execute if score @s Azr_shopChapter matches 4 run function skyblock:azr/shop/reader_nethershop_1
-#execute if entity @s[tag=azrShopRefresh] if score @s Azr_shopChapter matches 5 run function skyblock:azr/shop/roll_chapter5
-#execute if score @s Azr_shopChapter matches 5 run function skyblock:azr/shop/reader_nethershop_2
-#execute if entity @s[tag=azrShopRefresh] if score @s Azr_shopChapter matches 6 run function skyblock:azr/shop/roll_chapter6
-#execute if score @s Azr_shopChapter matches 6 run function skyblock:azr/shop/reader_nethershop_1
-#execute if entity @s[tag=azrShopRefresh] if score @s Azr_shopChapter matches 7 run function skyblock:azr/shop/roll_chapter7
-tellraw @s {"text":"   "}
 
-execute store result score @s melonCount run clear @s glistering_melon_slice 0
-#print extra-buttons
-execute if score @s Azr_wave matches 1..5 if items entity @s container.* glistering_melon_slice run tellraw @s [{"text":"   "},{"text":"〈刷新商店〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 20"}},{"text":" | WAIVE： ","color":"gray"},{"score":{"name":"@s","objective":"melonCount"}},{"text":"/1 闪烁的西瓜","color":"gray"}]
-execute if score @s Azr_wave matches 6..9 if items entity @s container.* glistering_melon_slice run tellraw @s [{"text":"   "},{"text":"〈刷新商店〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 20"}},{"text":" | WAIVE： ","color":"gray"},{"score":{"name":"@s","objective":"melonCount"}},{"text":"/1 闪烁的西瓜","color":"gray"}]
-execute if score @s Azr_wave matches 10..15 if items entity @s container.* glistering_melon_slice run tellraw @s [{"text":"   "},{"text":"〈壹〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 21"}},{"text":"〈贰〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 22"}},{"text":" | WAIVE： ","color":"gray"},{"score":{"name":"@s","objective":"melonCount"}},{"text":"/1 闪烁的西瓜","color":"gray"}]
-execute if score @s Azr_wave matches 16..22 if items entity @s container.* glistering_melon_slice run tellraw @s [{"text":"   "},{"text":"〈壹〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 21"}},{"text":"〈贰〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 22"}},{"text":" | WAIVE： ","color":"gray"},{"score":{"name":"@s","objective":"melonCount"}},{"text":"/1 闪烁的西瓜","color":"gray"}]
-execute if score @s Azr_wave matches 23..51 if items entity @s container.* glistering_melon_slice run tellraw @s [{"text":"   "},{"text":"〈壹〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 21"}},{"text":"〈贰〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 22"}},{"text":"〈叁〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 23"}},{"text":" | WAIVE： ","color":"gray"},{"score":{"name":"@s","objective":"melonCount"}},{"text":"/1 闪烁的西瓜","color":"gray"}]
-execute if score @s Azr_wave matches 52..130 if items entity @s container.* glistering_melon_slice run tellraw @s [{"text":"   "},{"text":"〈壹〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 21"}},{"text":"〈贰〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 22"}},{"text":"〈叁〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 23"}},{"text":"〈绯〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 24"}},{"text":"〈金〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 25"}},{"text":"〈诡〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 26"}},{"text":" | WAIVE： ","color":"gray"},{"score":{"name":"@s","objective":"melonCount"}},{"text":"/1 闪烁的西瓜","color":"gray"}]
+summon marker ~ ~ ~ {Tags:["AZR_ChainKillUpg_displaymarker","AZR_ChainKillUpg_displaymarker1"]}
+summon marker ~ ~ ~ {Tags:["AZR_ChainKillUpg_displaymarker","AZR_ChainKillUpg_displaymarker2"]}
+summon marker ~ ~ ~ {Tags:["AZR_ChainKillUpg_displaymarker","AZR_ChainKillUpg_displaymarker3"]}
+summon marker ~ ~ ~ {Tags:["AZR_ChainKillUpg_displaymarker","AZR_ChainKillUpg_displaymarker4"]}
+execute if entity @s[tag=AZR_ChainKillUpg1] run data modify entity @n[tag=AZR_ChainKillUpg_displaymarker1] CustomName set value '" ■ "'
+execute if entity @s[tag=AZR_ChainKillUpg2] run data modify entity @n[tag=AZR_ChainKillUpg_displaymarker2] CustomName set value '" ■ "'
+execute if entity @s[tag=AZR_ChainKillUpg3] run data modify entity @n[tag=AZR_ChainKillUpg_displaymarker3] CustomName set value '" ■ "'
+execute if entity @s[tag=AZR_ChainKillUpg4] run data modify entity @n[tag=AZR_ChainKillUpg_displaymarker4] CustomName set value '" ■ "'
+execute if entity @s[tag=!AZR_ChainKillUpg1] run data modify entity @n[tag=AZR_ChainKillUpg_displaymarker1] CustomName set value '" □ "'
+execute if entity @s[tag=!AZR_ChainKillUpg2] run data modify entity @n[tag=AZR_ChainKillUpg_displaymarker2] CustomName set value '" □ "'
+execute if entity @s[tag=!AZR_ChainKillUpg3] run data modify entity @n[tag=AZR_ChainKillUpg_displaymarker3] CustomName set value '" □ "'
+execute if entity @s[tag=!AZR_ChainKillUpg4] run data modify entity @n[tag=AZR_ChainKillUpg_displaymarker4] CustomName set value '" □ "'
+tellraw @s [{"text":" ","color":"light_purple"},{"selector":"@n[tag=AZR_ChainKillUpg_displaymarker1]","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8900101"}},{"selector":"@n[tag=AZR_ChainKillUpg_displaymarker2]","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8900102"}},{"selector":"@n[tag=AZR_ChainKillUpg_displaymarker3]","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8900103"}},{"selector":"@n[tag=AZR_ChainKillUpg_displaymarker4]","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8900104"}}]
 
-execute if score @s Azr_wave matches 1..5 unless items entity @s container.* glistering_melon_slice run tellraw @s [{"text":"   "},{"text":"〈刷新商店〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 20"}},{"text":"   花费 1 绿宝石   ","color":"gold"}]
-execute if score @s Azr_wave matches 6..9 unless items entity @s container.* glistering_melon_slice run tellraw @s [{"text":"   "},{"text":"〈刷新商店〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 20"}},{"text":"   花费 3 绿宝石   ","color":"gold"}]
-execute if score @s Azr_wave matches 10..15 unless items entity @s container.* glistering_melon_slice run tellraw @s [{"text":"   "},{"text":"〈壹〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 21"}},{"text":"〈贰〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 22"}},{"text":"   花费 3 绿宝石   ","color":"gold"}]
-execute if score @s Azr_wave matches 16..22 unless items entity @s container.* glistering_melon_slice run tellraw @s [{"text":"   "},{"text":"〈壹〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 21"}},{"text":"〈贰〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 22"}},{"text":"   花费 5 绿宝石   ","color":"gold"}]
-execute if score @s Azr_wave matches 23..51 unless items entity @s container.* glistering_melon_slice run tellraw @s [{"text":"   "},{"text":"〈壹〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 21"}},{"text":"〈贰〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 22"}},{"text":"〈叁〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 23"}},{"text":"   花费 7 绿宝石   ","color":"gold"}]
-execute if score @s Azr_wave matches 52..130 unless items entity @s container.* glistering_melon_slice run tellraw @s [{"text":"   "},{"text":"〈壹〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 21"}},{"text":"〈贰〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 22"}},{"text":"〈叁〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 23"}},{"text":"〈绯〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 24"}},{"text":"〈金〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 25"}},{"text":"〈诡〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 26"}},{"text":"   花费 3 绿宝石   ","color":"gold"}]
+execute if entity @s[tag=AZR_ChainKillUpg5] run data modify entity @n[tag=AZR_ChainKillUpg_displaymarker1] CustomName set value '" ■ "'
+execute if entity @s[tag=AZR_ChainKillUpg6] run data modify entity @n[tag=AZR_ChainKillUpg_displaymarker2] CustomName set value '" ■ "'
+execute if entity @s[tag=AZR_ChainKillUpg7] run data modify entity @n[tag=AZR_ChainKillUpg_displaymarker3] CustomName set value '" ■ "'
+execute if entity @s[tag=AZR_ChainKillUpg8] run data modify entity @n[tag=AZR_ChainKillUpg_displaymarker4] CustomName set value '" ■ "'
+execute if entity @s[tag=!AZR_ChainKillUpg5] run data modify entity @n[tag=AZR_ChainKillUpg_displaymarker1] CustomName set value '" □ "'
+execute if entity @s[tag=!AZR_ChainKillUpg6] run data modify entity @n[tag=AZR_ChainKillUpg_displaymarker2] CustomName set value '" □ "'
+execute if entity @s[tag=!AZR_ChainKillUpg7] run data modify entity @n[tag=AZR_ChainKillUpg_displaymarker3] CustomName set value '" □ "'
+execute if entity @s[tag=!AZR_ChainKillUpg8] run data modify entity @n[tag=AZR_ChainKillUpg_displaymarker4] CustomName set value '" □ "'
+tellraw @s [{"text":" ","color":"light_purple"},{"selector":"@n[tag=AZR_ChainKillUpg_displaymarker1]","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8900105"}},{"selector":"@n[tag=AZR_ChainKillUpg_displaymarker2]","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8900106"}},{"selector":"@n[tag=AZR_ChainKillUpg_displaymarker3]","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8900107"}},{"selector":"@n[tag=AZR_ChainKillUpg_displaymarker4]","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8900108"}}]
 
-execute if score @s Azr_wave matches 10.. run tellraw @s [{"text":"   "},{"text":"〈雷米尔的指引〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 3"}}]
-tellraw @s {"text":"   "}
+execute if entity @s[tag=AZR_ChainKillUpg9] run data modify entity @n[tag=AZR_ChainKillUpg_displaymarker1] CustomName set value '" ■ "'
+execute if entity @s[tag=AZR_ChainKillUpg10] run data modify entity @n[tag=AZR_ChainKillUpg_displaymarker2] CustomName set value '" ■ "'
+execute if entity @s[tag=AZR_ChainKillUpg11] run data modify entity @n[tag=AZR_ChainKillUpg_displaymarker3] CustomName set value '" ■ "'
+execute if entity @s[tag=AZR_ChainKillUpg12] run data modify entity @n[tag=AZR_ChainKillUpg_displaymarker4] CustomName set value '" ■ "'
+execute if entity @s[tag=!AZR_ChainKillUpg9] run data modify entity @n[tag=AZR_ChainKillUpg_displaymarker1] CustomName set value '" □ "'
+execute if entity @s[tag=!AZR_ChainKillUpg10] run data modify entity @n[tag=AZR_ChainKillUpg_displaymarker2] CustomName set value '" □ "'
+execute if entity @s[tag=!AZR_ChainKillUpg11] run data modify entity @n[tag=AZR_ChainKillUpg_displaymarker3] CustomName set value '" □ "'
+execute if entity @s[tag=!AZR_ChainKillUpg12] run data modify entity @n[tag=AZR_ChainKillUpg_displaymarker4] CustomName set value '" □ "'
+tellraw @s [{"text":" ","color":"light_purple"},{"selector":"@n[tag=AZR_ChainKillUpg_displaymarker1]","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8900109"}},{"selector":"@n[tag=AZR_ChainKillUpg_displaymarker2]","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8900110"}},{"selector":"@n[tag=AZR_ChainKillUpg_displaymarker3]","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8900111"}},{"selector":"@n[tag=AZR_ChainKillUpg_displaymarker4]","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8900112"}}]
 
-#print last line
-tellraw @s [{"text":"  绿宝石余额：  ","color":"yellow"},{"score":{"name":"@s","objective":"Azr_emerald"}}]
-#execute if entity @s[scores={Azr_wave=10..}] run tellraw @s [{"text":"  绿宝石余额：  ","color":"yellow"},{"score":{"name":"@s","objective":"Azr_emerald"}},{"text":"   沙利叶之星：  ","color":"yellow"},{"score":{"name":"@s","objective":"Azr_sarielStar"}}]
-tellraw @s {"text":"   "}
+execute if entity @s[tag=AZR_ChainKillUpg13] run data modify entity @n[tag=AZR_ChainKillUpg_displaymarker1] CustomName set value '" ■ "'
+execute if entity @s[tag=AZR_ChainKillUpg14] run data modify entity @n[tag=AZR_ChainKillUpg_displaymarker2] CustomName set value '" ■ "'
+execute if entity @s[tag=AZR_ChainKillUpg15] run data modify entity @n[tag=AZR_ChainKillUpg_displaymarker3] CustomName set value '" ■ "'
+execute if entity @s[tag=AZR_ChainKillUpg16] run data modify entity @n[tag=AZR_ChainKillUpg_displaymarker4] CustomName set value '" ■ "'
+execute if entity @s[tag=!AZR_ChainKillUpg13] run data modify entity @n[tag=AZR_ChainKillUpg_displaymarker1] CustomName set value '" □ "'
+execute if entity @s[tag=!AZR_ChainKillUpg14] run data modify entity @n[tag=AZR_ChainKillUpg_displaymarker2] CustomName set value '" □ "'
+execute if entity @s[tag=!AZR_ChainKillUpg15] run data modify entity @n[tag=AZR_ChainKillUpg_displaymarker3] CustomName set value '" □ "'
+execute if entity @s[tag=!AZR_ChainKillUpg16] run data modify entity @n[tag=AZR_ChainKillUpg_displaymarker4] CustomName set value '" □ "'
+tellraw @s [{"text":" ","color":"light_purple"},{"selector":"@n[tag=AZR_ChainKillUpg_displaymarker1]","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8900113"}},{"selector":"@n[tag=AZR_ChainKillUpg_displaymarker2]","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8900114"}},{"selector":"@n[tag=AZR_ChainKillUpg_displaymarker3]","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8900115"}},{"selector":"@n[tag=AZR_ChainKillUpg_displaymarker4]","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8900116"}}]
 
-tag @s add azrShopOnUse
-tag @s remove azrShopRefresh
+scoreboard players operation @s rng1 = @s AZR_chainKillUpg_pts
+scoreboard players remove @s[tag=AZR_ChainKillUpg1] rng1 1
+scoreboard players remove @s[tag=AZR_ChainKillUpg2] rng1 1
+scoreboard players remove @s[tag=AZR_ChainKillUpg3] rng1 1
+scoreboard players remove @s[tag=AZR_ChainKillUpg4] rng1 1
+scoreboard players remove @s[tag=AZR_ChainKillUpg5] rng1 1
+scoreboard players remove @s[tag=AZR_ChainKillUpg6] rng1 1
+scoreboard players remove @s[tag=AZR_ChainKillUpg7] rng1 1
+scoreboard players remove @s[tag=AZR_ChainKillUpg8] rng1 1
+scoreboard players remove @s[tag=AZR_ChainKillUpg9] rng1 1
+scoreboard players remove @s[tag=AZR_ChainKillUpg10] rng1 1
+scoreboard players remove @s[tag=AZR_ChainKillUpg11] rng1 1
+scoreboard players remove @s[tag=AZR_ChainKillUpg12] rng1 1
+scoreboard players remove @s[tag=AZR_ChainKillUpg13] rng1 1
+scoreboard players remove @s[tag=AZR_ChainKillUpg14] rng1 1
+scoreboard players remove @s[tag=AZR_ChainKillUpg15] rng1 1
+scoreboard players remove @s[tag=AZR_ChainKillUpg16] rng1 1
+
+tellraw @s[scores={rng1=1..}] [{"text":"剩余可分配点数：","bold":true,"color":"green"},{"bold":false,"score":{"name":"@s","objective":"rng1"},"color":"green"}]
+tellraw @s[scores={rng1=..0}] [{"text":"剩余可分配点数：","bold":true,"color":"green"},{"bold":false,"score":{"name":"@s","objective":"rng1"},"color":"red"}]
+
+kill @e[tag=AZR_ChainKillUpg_displaymarker,type=marker]
 scoreboard players set @s Azr_Shop 0
-execute if items entity @s player.cursor *[custom_data~{LifeVitae:1b}] run item replace entity @s player.cursor with air
+execute if items entity @s player.cursor *[custom_data~{PsychicVitae:1b}] run item replace entity @s player.cursor with air
