@@ -1,1 +1,1 @@
-execute as @e[tag=CNM_next,limit=20] at @s run function cnm:span
+execute as @e[tag=CNM_next] at @s run function cnm:span
