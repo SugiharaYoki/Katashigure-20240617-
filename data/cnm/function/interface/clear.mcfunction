@@ -1,0 +1,1 @@
+execute at @n[tag=CNM_centre] positioned ~ ~10 ~ run function cnm:reset with storage cnm
