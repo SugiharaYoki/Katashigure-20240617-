@@ -1,6 +1,6 @@
 scoreboard objectives add cnm dummy
 
-
+function cnm:rule
 
 execute if score type cnm matches 1 run setblock ~ ~ ~ deepslate
 execute if score type cnm matches 2 run setblock ~ ~ ~ ice
