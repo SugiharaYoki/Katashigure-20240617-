@@ -22,4 +22,4 @@ execute if score entity_count cnm matches 3000.. run return -1
 
 schedule function cnm:next 1t
 
-kill @s[tag=CNM_next]
+execute unless block ~ ~ ~ air run kill @s[tag=CNM_next]
