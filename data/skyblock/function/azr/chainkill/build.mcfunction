@@ -48,8 +48,8 @@ execute if entity @s[tag=!AZR_ChainKillUpg12] run data modify entity @n[tag=AZR_
 tellraw @s [{"text":" ","color":"light_purple"},\
 {"selector":"@n[tag=AZR_ChainKillUpg_displaymarker1]","color":"blue","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8900109"},"hoverEvent":{"action":"show_text","contents":{"text":"选取任意蓝色格×2\n可在发动索命连击时额外获得50%的防御力\n\n×4时，该效果将提升至100%","color":"white"}}},\
 {"selector":"@n[tag=AZR_ChainKillUpg_displaymarker2]","color":"blue","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8900110"},"hoverEvent":{"action":"show_text","contents":{"text":"选取任意蓝色格×2\n可在发动索命连击时额外获得50%的防御力\n\n×4时，该效果将提升至100%","color":"white"}}},\
-{"selector":"@n[tag=AZR_ChainKillUpg_displaymarker3]","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8900111"}},\
-{"selector":"@n[tag=AZR_ChainKillUpg_displaymarker4]","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8900112"}}]
+{"selector":"@n[tag=AZR_ChainKillUpg_displaymarker3]","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8900111"},"hoverEvent":{"action":"show_text","contents":{"text":"选取任意青色格×1\n使用盾牌防御时有概率增加索命连击充能\n选取的青色格数量越多 效果也将越强","color":"white"}}},\
+{"selector":"@n[tag=AZR_ChainKillUpg_displaymarker4]","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8900112"},"hoverEvent":{"action":"show_text","contents":{"text":"选取任意青色格×1\n使用盾牌防御时有概率增加索命连击充能\n选取的青色格数量越多 效果也将越强","color":"white"}}}]
 
 execute if entity @s[tag=AZR_ChainKillUpg13] run data modify entity @n[tag=AZR_ChainKillUpg_displaymarker1] CustomName set value '" ■ "'
 execute if entity @s[tag=AZR_ChainKillUpg14] run data modify entity @n[tag=AZR_ChainKillUpg_displaymarker2] CustomName set value '" ■ "'
@@ -62,8 +62,8 @@ execute if entity @s[tag=!AZR_ChainKillUpg16] run data modify entity @n[tag=AZR_
 tellraw @s [{"text":" ","color":"light_purple"},\
 {"selector":"@n[tag=AZR_ChainKillUpg_displaymarker1]","color":"dark_red","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8900113"},"hoverEvent":{"action":"show_text","contents":{"text":"选取任意红色格×1\n索命连击期间成功造成伤害可获得生命恢复效果\n选取的红色格数量越多 效果也将越强","color":"white"}}},\
 {"selector":"@n[tag=AZR_ChainKillUpg_displaymarker2]","color":"dark_red","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8900114"},"hoverEvent":{"action":"show_text","contents":{"text":"选取任意红色格×1\n索命连击期间成功造成伤害可获得生命恢复效果\n选取的红色格数量越多 效果也将越强","color":"white"}}},\
-{"selector":"@n[tag=AZR_ChainKillUpg_displaymarker3]","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8900115"}},\
-{"selector":"@n[tag=AZR_ChainKillUpg_displaymarker4]","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8900116"}}]
+{"selector":"@n[tag=AZR_ChainKillUpg_displaymarker3]","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8900115"},"hoverEvent":{"action":"show_text","contents":{"text":"选取任意青色格×1\n使用盾牌防御时有概率增加索命连击充能\n选取的青色格数量越多 效果也将越强","color":"white"}}},\
+{"selector":"@n[tag=AZR_ChainKillUpg_displaymarker4]","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8900116"},"hoverEvent":{"action":"show_text","contents":{"text":"选取任意青色格×1\n使用盾牌防御时有概率增加索命连击充能\n选取的青色格数量越多 效果也将越强","color":"white"}}}]
 
 scoreboard players operation @s rng1 = @s AZR_chainKillUpg_pts
 scoreboard players remove @s[tag=AZR_ChainKillUpg1] rng1 1
