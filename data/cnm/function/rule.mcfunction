@@ -2,34 +2,34 @@ execute as 0-0-0-0-0 run function cnm:rule1/world_entity_get_pose
 scoreboard players operation distance_deepslate cnm = pos_x_deepslate cnm
 scoreboard players operation distance_deepslate cnm -= pos_x_this cnm
 execute if score distance_deepslate cnm matches ..-1 run scoreboard players operation distance_deepslate cnm *= -1 constant
-scoreboard players operation distance_y_deepslate cnm = pos_y_deepslate cnm
-scoreboard players operation distance_y_deepslate cnm -= pos_y_this cnm
-execute if score distance_y_deepslate cnm matches ..-1 run scoreboard players operation distance_y_deepslate cnm *= -1 constant
-scoreboard players operation distance_deepslate cnm += distance_y_deepslate cnm
+scoreboard players operation distance_z_deepslate cnm = pos_z_deepslate cnm
+scoreboard players operation distance_z_deepslate cnm -= pos_z_this cnm
+execute if score distance_z_deepslate cnm matches ..-1 run scoreboard players operation distance_z_deepslate cnm *= -1 constant
+scoreboard players operation distance_deepslate cnm += distance_z_deepslate cnm
 
 scoreboard players operation distance_ice cnm = pos_x_ice cnm
 scoreboard players operation distance_ice cnm -= pos_x_this cnm
 execute if score distance_ice cnm matches ..-1 run scoreboard players operation distance_ice cnm *= -1 constant
-scoreboard players operation distance_y_ice cnm = pos_y_ice cnm
-scoreboard players operation distance_y_ice cnm -= pos_y_this cnm
-execute if score distance_y_ice cnm matches ..-1 run scoreboard players operation distance_y_ice cnm *= -1 constant
-scoreboard players operation distance_ice cnm += distance_y_ice cnm
+scoreboard players operation distance_z_ice cnm = pos_z_ice cnm
+scoreboard players operation distance_z_ice cnm -= pos_z_this cnm
+execute if score distance_z_ice cnm matches ..-1 run scoreboard players operation distance_z_ice cnm *= -1 constant
+scoreboard players operation distance_ice cnm += distance_z_ice cnm
 
 scoreboard players operation distance_grass_block cnm = pos_x_grass_block cnm
 scoreboard players operation distance_grass_block cnm -= pos_x_this cnm
 execute if score distance_grass_block cnm matches ..-1 run scoreboard players operation distance_grass_block cnm *= -1 constant
-scoreboard players operation distance_y_grass_block cnm = pos_y_grass_block cnm
-scoreboard players operation distance_y_grass_block cnm -= pos_y_this cnm
-execute if score distance_y_grass_block cnm matches ..-1 run scoreboard players operation distance_y_grass_block cnm *= -1 constant
-scoreboard players operation distance_grass_block cnm += distance_y_grass_block cnm
+scoreboard players operation distance_z_grass_block cnm = pos_z_grass_block cnm
+scoreboard players operation distance_z_grass_block cnm -= pos_z_this cnm
+execute if score distance_z_grass_block cnm matches ..-1 run scoreboard players operation distance_z_grass_block cnm *= -1 constant
+scoreboard players operation distance_grass_block cnm += distance_z_grass_block cnm
 
 scoreboard players operation distance_spruce_planks cnm = pos_x_spruce_planks cnm
 scoreboard players operation distance_spruce_planks cnm -= pos_x_this cnm
 execute if score distance_spruce_planks cnm matches ..-1 run scoreboard players operation distance_spruce_planks cnm *= -1 constant
-scoreboard players operation distance_y_spruce_planks cnm = pos_y_spruce_planks cnm
-scoreboard players operation distance_y_spruce_planks cnm -= pos_y_this cnm
-execute if score distance_y_spruce_planks cnm matches ..-1 run scoreboard players operation distance_y_spruce_planks cnm *= -1 constant
-scoreboard players operation distance_spruce_planks cnm += distance_y_spruce_planks cnm
+scoreboard players operation distance_z_spruce_planks cnm = pos_z_spruce_planks cnm
+scoreboard players operation distance_z_spruce_planks cnm -= pos_z_this cnm
+execute if score distance_z_spruce_planks cnm matches ..-1 run scoreboard players operation distance_z_spruce_planks cnm *= -1 constant
+scoreboard players operation distance_spruce_planks cnm += distance_z_spruce_planks cnm
 
 scoreboard players operation weight_deepslate_1 cnm = distance_deepslate cnm
 scoreboard players operation weight_deepslate_1 cnm += 1 constant
