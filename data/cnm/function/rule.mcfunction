@@ -31,45 +31,37 @@ scoreboard players operation distance_z_spruce_planks cnm -= pos_z_this cnm
 execute if score distance_z_spruce_planks cnm matches ..-1 run scoreboard players operation distance_z_spruce_planks cnm *= -1 constant
 scoreboard players operation distance_spruce_planks cnm += distance_z_spruce_planks cnm
 
-scoreboard players operation distance_deepslate cnm *= distance_deepslate cnm
-scoreboard players operation distance_ice cnm *= distance_ice cnm
-scoreboard players operation distance_grass_block cnm *= distance_grass_block cnm
-scoreboard players operation distance_spruce_planks cnm *= distance_spruce_planks cnm
-scoreboard players operation distance_deepslate cnm *= distance_deepslate cnm
-scoreboard players operation distance_ice cnm *= distance_ice cnm
-scoreboard players operation distance_grass_block cnm *= distance_grass_block cnm
-scoreboard players operation distance_spruce_planks cnm *= distance_spruce_planks cnm
-scoreboard players operation distance_deepslate cnm *= distance_deepslate cnm
-scoreboard players operation distance_ice cnm *= distance_ice cnm
-scoreboard players operation distance_grass_block cnm *= distance_grass_block cnm
-scoreboard players operation distance_spruce_planks cnm *= distance_spruce_planks cnm
+#base wight
+scoreboard players add distance_deepslate cnm 1
+scoreboard players add distance_ice cnm 1
+scoreboard players add distance_grass_block cnm 1
+scoreboard players add distance_spruce_planks cnm 1
 
-scoreboard players operation total_distance cnm = distance_deepslate cnm
-scoreboard players operation total_distance cnm += distance_ice cnm
-scoreboard players operation total_distance cnm += distance_grass_block cnm
-scoreboard players operation total_distance cnm += distance_spruce_planks cnm
-scoreboard players operation 3total_distance cnm = total_distance cnm
-scoreboard players operation 3total_distance cnm *= 3 constant
+scoreboard players operation weight_deepslate cnm = 1000 constant
+scoreboard players operation weight_deepslate cnm /= distance_deepslate cnm
+scoreboard players operation weight_deepslate cnm > 0 constant
 
-scoreboard players operation weight_deepslate cnm = total_distance cnm
-scoreboard players operation weight_deepslate cnm -= distance_deepslate cnm
-scoreboard players operation weight_deepslate cnm *= 1000 constant
-scoreboard players operation weight_deepslate cnm /= 3total_distance cnm
+scoreboard players operation weight_ice cnm = 1000 constant
+scoreboard players operation weight_ice cnm /= distance_ice cnm
+scoreboard players operation weight_ice cnm > 0 constant
 
-scoreboard players operation weight_ice cnm = total_distance cnm
-scoreboard players operation weight_ice cnm -= distance_ice cnm
-scoreboard players operation weight_ice cnm *= 1000 constant
-scoreboard players operation weight_ice cnm /= 3total_distance cnm
+scoreboard players operation weight_grass_block cnm = 1000 constant
+scoreboard players operation weight_grass_block cnm /= distance_grass_block cnm
+scoreboard players operation weight_grass_block cnm > 0 constant
 
-scoreboard players operation weight_grass_block cnm = total_distance cnm
-scoreboard players operation weight_grass_block cnm -= distance_grass_block cnm
-scoreboard players operation weight_grass_block cnm *= 1000 constant
-scoreboard players operation weight_grass_block cnm /= 3total_distance cnm
+scoreboard players operation weight_spruce_planks cnm = 1000 constant
+scoreboard players operation weight_spruce_planks cnm /= distance_spruce_planks cnm
+scoreboard players operation weight_spruce_planks cnm > 0 constant
 
-scoreboard players operation weight_spruce_planks cnm = total_distance cnm
-scoreboard players operation weight_spruce_planks cnm -= distance_spruce_planks cnm
-scoreboard players operation weight_spruce_planks cnm *= 1000 constant
-scoreboard players operation weight_spruce_planks cnm /= 3total_distance cnm
+#total
+scoreboard players operation total_weight cnm = weight_deepslate cnm
+scoreboard players operation total_weight cnm += weight_ice cnm
+scoreboard players operation total_weight cnm += weight_grass_block cnm
+scoreboard players operation total_weight cnm += weight_spruce_planks cnm
+
+execute store result score rng cnm run random value 1..1000
+scoreboard players operation rng cnm *= weight_spruce_planks cnm
+scoreboard players operation rng cnm /= 1000 constant
 
 scoreboard players operation t1 cnm = weight_deepslate cnm
 scoreboard players operation t2 cnm = t1 cnm
