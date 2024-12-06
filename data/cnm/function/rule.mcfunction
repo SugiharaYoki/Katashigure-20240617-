@@ -37,11 +37,11 @@ scoreboard players add distance_ice cnm 1
 scoreboard players add distance_grass_block cnm 1
 scoreboard players add distance_spruce_planks cnm 1
 
-scoreboard players operation weight_deepslate cnm = 200 constant
+scoreboard players operation weight_deepslate cnm = 2000 constant
 scoreboard players operation weight_deepslate cnm /= distance_deepslate cnm
 scoreboard players operation weight_deepslate cnm > 0 constant
 
-scoreboard players operation weight_ice cnm = 200 constant
+scoreboard players operation weight_ice cnm = 2000 constant
 scoreboard players operation weight_ice cnm /= distance_ice cnm
 scoreboard players operation weight_ice cnm > 0 constant
 
@@ -49,7 +49,7 @@ scoreboard players operation weight_grass_block cnm = 200 constant
 scoreboard players operation weight_grass_block cnm /= distance_grass_block cnm
 scoreboard players operation weight_grass_block cnm > 0 constant
 
-scoreboard players operation weight_spruce_planks cnm = 200 constant
+scoreboard players operation weight_spruce_planks cnm = 2000 constant
 scoreboard players operation weight_spruce_planks cnm /= distance_spruce_planks cnm
 scoreboard players operation weight_spruce_planks cnm > 0 constant
 
