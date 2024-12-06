@@ -31,25 +31,37 @@ scoreboard players operation distance_y_spruce_planks cnm -= pos_y_this cnm
 execute if score distance_y_spruce_planks cnm matches ..-1 run scoreboard players operation distance_y_spruce_planks cnm *= -1 constant
 scoreboard players operation distance_spruce_planks cnm += distance_y_spruce_planks cnm
 
-scoreboard players operation total_probability cnm = distance_deepslate cnm
-scoreboard players operation total_probability cnm += distance_ice cnm
-scoreboard players operation total_probability cnm += distance_grass_block cnm
-scoreboard players operation total_probability cnm += distance_spruce_planks cnm
+scoreboard players operation weight_deepslate_1 cnm = distance_deepslate cnm
+scoreboard players operation weight_deepslate_1 cnm += 1 constant
+scoreboard players operation weight_deepslate cnm = 1000 constant
+scoreboard players operation weight_deepslate cnm /= weight_deepslate_1 cnm
 
-scoreboard players operation t1 cnm = distance_deepslate cnm
+scoreboard players operation weight_ice_1 cnm = distance_ice cnm
+scoreboard players operation weight_ice_1 cnm += 1 constant
+scoreboard players operation weight_ice cnm = 1000 constant
+scoreboard players operation weight_ice cnm /= weight_ice_1 cnm
+
+scoreboard players operation weight_grass_block_1 cnm = distance_grass_block cnm
+scoreboard players operation weight_grass_block_1 cnm += 1 constant
+scoreboard players operation weight_grass_block cnm = 1000 constant
+scoreboard players operation weight_grass_block cnm /= weight_grass_block_1 cnm
+
+scoreboard players operation weight_spruce_planks_1 cnm = distance_spruce_planks cnm
+scoreboard players operation weight_spruce_planks_1 cnm += 1 constant
+scoreboard players operation weight_spruce_planks cnm = 1000 constant
+scoreboard players operation weight_spruce_planks cnm /= weight_spruce_planks_1 cnm
+
+
+scoreboard players operation t1 cnm = weight_deepslate cnm
 scoreboard players operation t2 cnm = t1 cnm
-scoreboard players operation t2 cnm += distance_ice cnm
+scoreboard players operation t2 cnm += weight_ice cnm
 scoreboard players operation t3 cnm = t2 cnm
-scoreboard players operation t3 cnm += distance_grass_block cnm
+scoreboard players operation t3 cnm += weight_grass_block cnm
 scoreboard players operation t4 cnm = t3 cnm
-scoreboard players operation t4 cnm += distance_spruce_planks cnm
+scoreboard players operation t4 cnm += weight_spruce_planks cnm
 
 execute store result score rng cnm run random value 1..1000
-scoreboard players operation rng cnm *= total_probability cnm
-scoreboard players operation rng cnm /= 1000 constant
-
-tellraw @a [{"score": {"name": "rng","objective": "cnm"}},"/",{"score": {"name": "total_probability","objective": "cnm"}}," t1:",{"score": {"name": "t1","objective": "cnm"}}," t2:",{"score": {"name": "t2","objective": "cnm"}}," t3:",{"score": {"name": "t3","objective": "cnm"}}," t4:",{"score": {"name": "t4","objective": "cnm"}}]
 execute if score rng cnm > 0 constant if score rng cnm <= t1 cnm run scoreboard players set type cnm 1
-execute if score rng cnm > t1 constant if score rng cnm <= t2 cnm run scoreboard players set type cnm 2
-execute if score rng cnm > t2 constant if score rng cnm <= t3 cnm run scoreboard players set type cnm 3
-execute if score rng cnm > t3 constant if score rng cnm <= t4 cnm run scoreboard players set type cnm 4
+execute if score rng cnm > t1 cnm if score rng cnm <= t2 cnm run scoreboard players set type cnm 2
+execute if score rng cnm > t2 cnm if score rng cnm <= t3 cnm run scoreboard players set type cnm 3
+execute if score rng cnm > t3 cnm if score rng cnm <= t4 cnm run scoreboard players set type cnm 4
