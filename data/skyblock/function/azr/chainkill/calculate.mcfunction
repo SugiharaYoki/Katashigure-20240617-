@@ -4,6 +4,10 @@ scoreboard players set @s AZR_chainKillUpg_attackcount 0
 scoreboard players set @s AZR_chainKillUpg_attackcountmin 0
 scoreboard players set @s AZR_chainKillUpg_defense 0
 scoreboard players set @s AZR_chainKillUpg_attackheal 0
+scoreboard players set @s AZR_chainKillUpg_attackdamage 0
+scoreboard players set @s AZR_chainKillUpg_attackrange 0
+scoreboard players set @s AZR_chainKillUpg_antichargedecrease 0
+scoreboard players set @s AZR_chainKillUpg_defensecharge 0
 scoreboard players set @s rng1 0
 scoreboard players set @s rng2 0
 scoreboard players set @s rng3 0
@@ -60,7 +64,7 @@ scoreboard players add @s[tag=AZR_ChainKillUpg13] AZR_chainKillUpg_attackheal 1
 scoreboard players add @s[tag=AZR_ChainKillUpg14] AZR_chainKillUpg_attackheal 1
 
 
-scoreboard players add @s[tag=AZR_ChainKillUpg11] AZR_chainKillUpg_defense 1
-scoreboard players add @s[tag=AZR_ChainKillUpg12] AZR_chainKillUpg_defense 1
-scoreboard players add @s[tag=AZR_ChainKillUpg15] AZR_chainKillUpg_defense 1
-scoreboard players add @s[tag=AZR_ChainKillUpg16] AZR_chainKillUpg_defense 1
+scoreboard players add @s[tag=AZR_ChainKillUpg11] AZR_chainKillUpg_defensecharge 1
+scoreboard players add @s[tag=AZR_ChainKillUpg12] AZR_chainKillUpg_defensecharge 1
+scoreboard players add @s[tag=AZR_ChainKillUpg15] AZR_chainKillUpg_defensecharge 1
+scoreboard players add @s[tag=AZR_ChainKillUpg16] AZR_chainKillUpg_defensecharge 1
