@@ -10,11 +10,11 @@ execute if entity @s[scores={AZR_chainKillUpg_chargeboost=4..}] run scoreboard p
 
 execute if entity @s[tag=!AZR_chainKill_activated,scores={AZR_chainKill=1..}] run scoreboard players operation @s AZR_chainKill_chargeup += random Azr_system
 
-execute if entity @s[scores={AZR_chainKillUpg_defensecharge=1}] store result score random Azr_system run random value 0..2
-execute if entity @s[scores={AZR_chainKillUpg_defensecharge=2}] store result score random Azr_system run random value 0..3
-execute if entity @s[scores={AZR_chainKillUpg_defensecharge=3}] store result score random Azr_system run random value 1..4
-execute if entity @s[scores={AZR_chainKillUpg_defensecharge=4}] store result score random Azr_system run random value 1..5
-execute if entity @s[tag=!AZR_chainKill_activated,scores={AZR_chainKillUpg_defensecharge=1..}] run scoreboard players operation @s AZR_chainKill_chargeup += random Azr_system
+execute if entity @s[scores={AZR_chainKillUpg_defensecharge=1,AZR_chainKill_damageblocked=1..}] store result score random Azr_system run random value 0..2
+execute if entity @s[scores={AZR_chainKillUpg_defensecharge=2,AZR_chainKill_damageblocked=1..}] store result score random Azr_system run random value 0..3
+execute if entity @s[scores={AZR_chainKillUpg_defensecharge=3,AZR_chainKill_damageblocked=1..}] store result score random Azr_system run random value 1..4
+execute if entity @s[scores={AZR_chainKillUpg_defensecharge=4,AZR_chainKill_damageblocked=1..}] store result score random Azr_system run random value 1..5
+execute if entity @s[tag=!AZR_chainKill_activated,scores={AZR_chainKillUpg_defensecharge=1..,AZR_chainKill_damageblocked=1..}] run scoreboard players operation @s AZR_chainKill_chargeup += random Azr_system
 
 execute if entity @s[scores={AZR_chainKillUpg_antichargedecrease=0}] run scoreboard players operation @s AZR_chainKill_damagetaken *= 8 constant
 execute if entity @s[scores={AZR_chainKillUpg_antichargedecrease=1}] run scoreboard players operation @s AZR_chainKill_damagetaken *= 6 constant
