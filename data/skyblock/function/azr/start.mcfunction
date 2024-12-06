@@ -74,7 +74,7 @@ tag @a[x=-79953.0,y=38,z=-14.0,distance=..1000,gamemode=!spectator] add azrPlaye
 execute as @a[tag=azrPlayer] at @s run function skyblock:azr/system_sub/player_init
 
 #位置初始化
-execute as @a[x=-79936.0,y=38.15,z=-14.0,distance=10..] run tp @s -79936.0 38.15 -14.0 facing -79935.0 38.15 -14.0
+execute as @a[x=-79936.0,y=38.15,z=-14.0,distance=10..1000] run tp @s -79936.0 38.15 -14.0 facing -79935.0 38.15 -14.0
 
 #地图更改
 #开局大门
