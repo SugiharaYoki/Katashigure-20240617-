@@ -1,0 +1,1 @@
+execute at @e[tag=CNM_next] run function cnm:span
