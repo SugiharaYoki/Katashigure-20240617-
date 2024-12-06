@@ -43,7 +43,7 @@ scoreboard players operation weight_deepslate cnm /= distance_deepslate cnm
 scoreboard players operation weight_ice cnm = 2000 constant
 scoreboard players operation weight_ice cnm /= distance_ice cnm
 
-scoreboard players operation weight_grass_block cnm = 200 constant
+scoreboard players operation weight_grass_block cnm = 2000 constant
 scoreboard players operation weight_grass_block cnm /= distance_grass_block cnm
 
 scoreboard players operation weight_spruce_planks cnm = 2000 constant
