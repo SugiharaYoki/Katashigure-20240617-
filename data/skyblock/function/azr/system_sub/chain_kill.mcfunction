@@ -16,6 +16,15 @@ execute if entity @s[scores={AZR_chainKillUpg_defensecharge=3}] store result sco
 execute if entity @s[scores={AZR_chainKillUpg_defensecharge=4}] store result score random Azr_system run random value 1..5
 execute if entity @s[tag=!AZR_chainKill_activated,scores={AZR_chainKillUpg_defensecharge=1..}] run scoreboard players operation @s AZR_chainKill_chargeup += random Azr_system
 
+execute if entity @s[scores={AZR_chainKillUpg_antichargedecrease=0}] run scoreboard players operation @s AZR_chainKill_damagetaken *= 4 constant
+execute if entity @s[scores={AZR_chainKillUpg_antichargedecrease=1}] run scoreboard players operation @s AZR_chainKill_damagetaken *= 3 constant
+execute if entity @s[scores={AZR_chainKillUpg_antichargedecrease=2}] run scoreboard players operation @s AZR_chainKill_damagetaken *= 2 constant
+execute if entity @s[scores={AZR_chainKillUpg_antichargedecrease=3}] run scoreboard players operation @s AZR_chainKill_damagetaken *= 1 constant
+execute if entity @s[scores={AZR_chainKillUpg_antichargedecrease=4}] run scoreboard players set @s AZR_chainKill_damagetaken 0
+scoreboard players operation @s AZR_chainKill_damagetaken /= 5 constant
+scoreboard players operation @s AZR_chainKill_chargeup -= @s AZR_chainKill_damagetaken
+ 
+ execute if score @s AZR_chainKill_chargeup matches ..0 run scoreboard players set @s AZR_chainKill_chargeup 0
 execute if score @s AZR_chainKill_chargeup matches ..9 run xp set @s 0 points
 execute if score @s AZR_chainKill_chargeup matches 10..19 run xp set @s 11 points
 execute if score @s AZR_chainKill_chargeup matches 20..29 run xp set @s 22 points
@@ -47,3 +56,5 @@ xp set @s 30 levels
 
 scoreboard players set @s AZR_chainKill 0
 scoreboard players set @s AZR_chainKill_damage 0
+scoreboard players set @s AZR_chainKill_damageblocked 0
+scoreboard players set @s AZR_chainKill_damagetaken 0
