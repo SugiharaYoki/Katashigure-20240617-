@@ -31,7 +31,7 @@ execute if entity @s[scores={AZR_chainKillUpg_attackcountmin=4}] if score random
 execute if entity @s[scores={AZR_chainKillUpg_attackcountmin=4..}] run scoreboard players operation random Azr_system += random rng2
 
 
-scoreboard players set @s[tag=!AZR_chainKill_activated] AZR_chainKill_count 2
+scoreboard players set @s[tag=!AZR_chainKill_activated] AZR_chainKill_count 4
 execute if score random Azr_system matches 2..13 run scoreboard players add @s[tag=!AZR_chainKill_activated] AZR_chainKill_count 1
 execute if score random Azr_system matches 3..13 run scoreboard players add @s[tag=!AZR_chainKill_activated] AZR_chainKill_count 1
 execute if score random Azr_system matches 4..13 run scoreboard players add @s[tag=!AZR_chainKill_activated] AZR_chainKill_count 1
