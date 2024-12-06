@@ -41,6 +41,10 @@ scoreboard players operation d0 cnm *= d0 cnm
 scoreboard players operation d1 cnm *= d1 cnm
 scoreboard players operation d2 cnm *= d2 cnm
 scoreboard players operation d3 cnm *= d3 cnm
+scoreboard players operation d0 cnm *= d0 cnm
+scoreboard players operation d1 cnm *= d1 cnm
+scoreboard players operation d2 cnm *= d2 cnm
+scoreboard players operation d3 cnm *= d3 cnm
 
 scoreboard players operation w0 cnm = 1000000 constant
 scoreboard players operation w0 cnm /= d0 cnm
