@@ -1,4 +1,4 @@
-scoreboard players set version skyblock_system 258
+scoreboard players set version skyblock_system 259
 execute unless score last_version skyblock_system = version skyblock_system run tellraw @a[tag=DebugMode] [{"text":"【azr shop upp】Datapack has successfully updated. version: "},{"score":{"name":"version","objective":"skyblock_system"},"color":"green","bold":true}]
 scoreboard players operation last_version skyblock_system = version skyblock_system
 
@@ -107,6 +107,7 @@ scoreboard objectives add ZeroBGM dummy
 #constant
 scoreboard objectives add constant dummy
 scoreboard players set 2 constant 2
+scoreboard players set 3 constant 3
 scoreboard players set 10 constant 10
 
 #职业战
