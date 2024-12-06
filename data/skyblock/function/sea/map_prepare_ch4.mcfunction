@@ -142,11 +142,11 @@ setblock 90246 64 88 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_
 setblock 90247 64 88 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 3, id:"minecraft:golden_carrot"}}
 
 setblock 90245 64 93 chest[facing=north]
-item replace block 90245 64 93 container.11 with wild_armor_trim_smithing_template[custom_name='{"text":"狂荒石板","color":"light_purple","italic":false}'] 6
-item replace block 90245 64 93 container.12 with raiser_armor_trim_smithing_template[custom_name='{"text":"牧羊人石板","color":"light_purple","italic":false}'] 8
+item replace block 90245 64 93 container.11 with wild_armor_trim_smithing_template[custom_name='{"text":"狂荒石板","color":"light_purple","italic":false}'] 1
+item replace block 90245 64 93 container.12 with raiser_armor_trim_smithing_template[custom_name='{"text":"牧羊人石板","color":"light_purple","italic":false}'] 1
 item replace block 90245 64 93 container.13 with glistering_melon_slice 1
-item replace block 90245 64 93 container.14 with sentry_armor_trim_smithing_template[custom_name='{"text":"辽哨石板","color":"light_purple","italic":false}'] 8
-item replace block 90245 64 93 container.15 with dune_armor_trim_smithing_template[custom_name='{"text":"金砂石板","color":"light_purple","italic":false}'] 6
+item replace block 90245 64 93 container.14 with sentry_armor_trim_smithing_template[custom_name='{"text":"辽哨石板","color":"light_purple","italic":false}'] 1
+item replace block 90245 64 93 container.15 with dune_armor_trim_smithing_template[custom_name='{"text":"金砂石板","color":"light_purple","italic":false}'] 1
 
 
 #艾德雯娜的护身符
@@ -428,12 +428,28 @@ setblock 90160 6 138 chest[facing=east,waterlogged=true]
 item replace block 90160 6 138 container.12 with emerald 3
 item replace block 90160 6 138 container.14 with emerald 3
 
+#是否联系玛瑞莲
+setblock 90163 36 86 air
 
+#第二乐谱
+setblock 90244 51 132 chest[facing=south]
+item replace block 90244 51 132 container.12 with flint 1
+item replace block 90244 51 132 container.14 with coal 1
+fill 90226 45 131 90224 44 131 minecraft:slime_block
+setblock 90213 45 144 minecraft:waxed_weathered_copper_bulb[lit=false]
+setblock 90232 47 138 minecraft:waxed_weathered_copper_bulb[lit=false]
+setblock 90236 52 140 minecraft:waxed_weathered_copper_bulb[lit=false]
+fill 90241 46 134 90241 44 134 minecraft:cyan_stained_glass
 
+fill 90151 39 101 90151 37 99 air
 
+setblock 90249 44 129 air
+setblock 90249 44 129 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 2, id:"minecraft:beef"}}
 
-
-
+setblock 90249 46 139 minecraft:potted_allium
+setblock 90267 44 126 chest[facing=west]
+item replace block 90267 44 126 container.12 with echo_shard 1
+item replace block 90267 44 126 container.14 with flint 2
 
 
 

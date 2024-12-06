@@ -32,13 +32,13 @@ give @a[tag=SEAPT] coal 2
 tag @a[tag=SEAPT] add e_w_01
 tag @a[tag=SEAPT] add e_w_02
 tag @a[tag=SEAPT] add e_w_03
-scoreboard players set @a[tag=SEAPT] sea_i_trim_zombie 12
-scoreboard players set @a[tag=SEAPT] sea_i_trim_spider 4
-scoreboard players set @a[tag=SEAPT] sea_i_trim_human 4
-scoreboard players set @a[tag=SEAPT] sea_i_trim_bug 6
-scoreboard players set @a[tag=SEAPT] sea_i_trim_skeleton 4
-scoreboard players set @a[tag=SEAPT] sea_i_trim_sea 0 
-scoreboard players set @a[tag=SEAPT] sea_i_trim_ghost 0
+#scoreboard players set @a[tag=SEAPT] sea_i_trim_zombie 8
+#scoreboard players set @a[tag=SEAPT] sea_i_trim_spider 4
+#scoreboard players set @a[tag=SEAPT] sea_i_trim_human 4
+#scoreboard players set @a[tag=SEAPT] sea_i_trim_bug 6
+#scoreboard players set @a[tag=SEAPT] sea_i_trim_sea 0
+#scoreboard players set @a[tag=SEAPT] sea_i_trim_ghost 0
+#scoreboard players set @a[tag=SEAPT] sea_i_trim_skeleton 4
 give @a[tag=SEAPT] emerald 64
 give @a[tag=SEAPT] emerald 24
 
@@ -56,3 +56,5 @@ setblock 90066 129 112 minecraft:stone_button[facing=north]
 setblock 90071 137 151 minecraft:iron_trapdoor[facing=north,open=true]
 setblock 90082 128 94 air
 time set 16000t
+
+

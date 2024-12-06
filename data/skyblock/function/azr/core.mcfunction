@@ -14,6 +14,9 @@ execute unless score stopSeconds Azr_system matches 1 run scoreboard players add
 #在部分关卡强制读秒
 execute if score stopSeconds Azr_system matches 1 run function skyblock:azr/system_sub/force_seconds
 
+#不死骑士（花园1）
+execute as @e[type=zombie,tag=AZRknight,x=-79943,y=38,z=135,distance=..4000] at @s if entity @a[tag=azrPlayer,distance=0..8] run function skyblock:azr/effects/zombie_knight
+
 #关卡控制部分
 #开始-第一关 1
 execute if score stage Azr_system matches 1 run scoreboard players set stageSeconds Azr_system 0

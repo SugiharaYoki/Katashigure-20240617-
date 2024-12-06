@@ -85,6 +85,7 @@ execute as @a if items entity @s container.* skull_banner_pattern run clear @s m
 #商店系统
 execute as @a[tag=azrPlayer,tag=hasLifeVitae] run function skyblock:azr/shop/core
 execute as @a[tag=azrPlayer,scores={Azr_Shop=84301..8439999}] run function skyblock:azr/shop/purchase
+execute as @a[tag=azrPlayer,scores={Azr_Shop=8900101..8900199}] run function skyblock:azr/chainkill/assign
 
 #背包管理器
 #execute as @a[tag=azrPlayer] run function skyblock:azr/inventory_manager
