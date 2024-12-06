@@ -18,6 +18,4 @@ execute if entity @e[tag=CNM_centre,distance=..50] positioned ~ ~ ~-1 if block ~
 
 execute as @e[scores={cnm=2..}] at @s run kill @e[tag=CNM_next,limit=1,distance=..0.1]
 
-schedule function cnm:next 1t
-
 execute unless block ~ ~ ~ air run kill @s[tag=CNM_next]

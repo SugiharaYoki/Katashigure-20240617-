@@ -35,6 +35,14 @@ scoreboard players operation distance_deepslate cnm *= distance_deepslate cnm
 scoreboard players operation distance_ice cnm *= distance_ice cnm
 scoreboard players operation distance_grass_block cnm *= distance_grass_block cnm
 scoreboard players operation distance_spruce_planks cnm *= distance_spruce_planks cnm
+scoreboard players operation distance_deepslate cnm *= distance_deepslate cnm
+scoreboard players operation distance_ice cnm *= distance_ice cnm
+scoreboard players operation distance_grass_block cnm *= distance_grass_block cnm
+scoreboard players operation distance_spruce_planks cnm *= distance_spruce_planks cnm
+scoreboard players operation distance_deepslate cnm *= distance_deepslate cnm
+scoreboard players operation distance_ice cnm *= distance_ice cnm
+scoreboard players operation distance_grass_block cnm *= distance_grass_block cnm
+scoreboard players operation distance_spruce_planks cnm *= distance_spruce_planks cnm
 
 scoreboard players operation total_distance cnm = distance_deepslate cnm
 scoreboard players operation total_distance cnm += distance_ice cnm
