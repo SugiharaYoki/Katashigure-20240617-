@@ -25,3 +25,4 @@ execute if score entity_count cnm matches 3000.. run return -1
 schedule function cnm:next 1t
 
 scoreboard objectives remove cnm
+kill @s[tag=CNM_next]
