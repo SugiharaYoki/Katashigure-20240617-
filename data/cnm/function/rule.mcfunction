@@ -67,8 +67,6 @@ scoreboard players operation t3 cnm += weight_grass_block cnm
 scoreboard players operation t4 cnm = t3 cnm
 scoreboard players operation t4 cnm += weight_spruce_planks cnm
 
-execute store result score rng cnm run random value 1..1000
-
 tellraw @a [{"score": {"name": "rng","objective": "cnm"}}," in"," t1:",{"score": {"name": "t1","objective": "cnm"}}," t2:",{"score": {"name": "t2","objective": "cnm"}}," t3:",{"score": {"name": "t3","objective": "cnm"}}," t4:",{"score": {"name": "t4","objective": "cnm"}}]
 
 execute if score rng cnm > 0 constant if score rng cnm <= t1 cnm run scoreboard players set type cnm 1
