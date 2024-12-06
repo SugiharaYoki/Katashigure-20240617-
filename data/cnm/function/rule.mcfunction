@@ -32,19 +32,15 @@ execute if score d3_z cnm matches ..-1 run scoreboard players operation d3_z cnm
 scoreboard players operation d3 cnm += d3_z cnm
 
 #base wight
+scoreboard players operation d0 cnm *= d0 cnm
+scoreboard players operation d1 cnm *= d1 cnm
+scoreboard players operation d2 cnm *= d2 cnm
+scoreboard players operation d3 cnm *= d3 cnm
+
 scoreboard players add d0 cnm 1
 scoreboard players add d1 cnm 1
 scoreboard players add d2 cnm 1
 scoreboard players add d3 cnm 1
-
-scoreboard players operation d0 cnm *= d0 cnm
-scoreboard players operation d1 cnm *= d1 cnm
-scoreboard players operation d2 cnm *= d2 cnm
-scoreboard players operation d3 cnm *= d3 cnm
-scoreboard players operation d0 cnm *= d0 cnm
-scoreboard players operation d1 cnm *= d1 cnm
-scoreboard players operation d2 cnm *= d2 cnm
-scoreboard players operation d3 cnm *= d3 cnm
 
 scoreboard players operation w0 cnm = 1000000 constant
 scoreboard players operation w0 cnm /= d0 cnm
