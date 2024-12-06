@@ -37,16 +37,21 @@ scoreboard players add d1 cnm 1
 scoreboard players add d2 cnm 1
 scoreboard players add d3 cnm 1
 
-scoreboard players operation w0 cnm = 2000 constant
+scoreboard players operation d0 cnm *= d0 cnm
+scoreboard players operation d1 cnm *= d1 cnm
+scoreboard players operation d2 cnm *= d2 cnm
+scoreboard players operation d3 cnm *= d3 cnm
+
+scoreboard players operation w0 cnm = 1000000 constant
 scoreboard players operation w0 cnm /= d0 cnm
 
-scoreboard players operation w1 cnm = 2000 constant
+scoreboard players operation w1 cnm = 1000000 constant
 scoreboard players operation w1 cnm /= d1 cnm
 
-scoreboard players operation w2 cnm = 2000 constant
+scoreboard players operation w2 cnm = 1000000 constant
 scoreboard players operation w2 cnm /= d2 cnm
 
-scoreboard players operation w3 cnm = 2000 constant
+scoreboard players operation w3 cnm = 1000000 constant
 scoreboard players operation w3 cnm /= d3 cnm
 
 #total
