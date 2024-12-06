@@ -48,7 +48,6 @@ execute store result score rng cnm run random value 1..1000
 scoreboard players operation rng cnm *= total_probability cnm
 scoreboard players operation rng cnm /= 1000 constant
 
-scoreboard players set type cnm 5
 execute if score rng cnm > 0 constant if score rng cnm < t1 cnm run scoreboard players set type cnm 1
 execute if score rng cnm > t1 constant if score rng cnm < t2 cnm run scoreboard players set type cnm 2
 execute if score rng cnm > t2 constant if score rng cnm < t3 cnm run scoreboard players set type cnm 3
