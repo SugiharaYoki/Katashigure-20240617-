@@ -56,7 +56,7 @@ scoreboard players operation total_weight cnm += weight_grass_block cnm
 scoreboard players operation total_weight cnm += weight_spruce_planks cnm
 
 execute store result score rng cnm run random value 1..1000
-scoreboard players operation rng cnm *= weight_spruce_planks cnm
+scoreboard players operation rng cnm *= total_weight cnm
 scoreboard players operation rng cnm /= 1000 constant
 
 scoreboard players operation t1 cnm = weight_deepslate cnm
