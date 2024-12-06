@@ -1,5 +1,15 @@
 scoreboard objectives add cnm dummy
 execute store result score rng cnm run random value 1..4
+
+execute if block ~1 ~ ~ ice store result score rng0 cnm run random value 1..4
+execute if block ~1 ~ ~ ice if score rng0 cnm matches 1 run scoreboard players set rng cnm 2
+execute if block ~-1 ~ ~ ice store result score rng0 cnm run random value 1..4
+execute if block ~-1 ~ ~ ice if score rng0 cnm matches 1 run scoreboard players set rng cnm 2
+execute if block ~ ~ ~1 ice store result score rng0 cnm run random value 1..4
+execute if block ~ ~ ~1 ice if score rng0 cnm matches 1 run scoreboard players set rng cnm 2
+execute if block ~ ~ ~-1 ice store result score rng0 cnm run random value 1..4
+execute if block ~ ~ ~-1 ice if score rng0 cnm matches 1 run scoreboard players set rng cnm 2
+
 execute if score rng cnm matches 1 run setblock ~ ~ ~ deepslate
 execute if score rng cnm matches 2 run setblock ~ ~ ~ ice
 execute if score rng cnm matches 3 run setblock ~ ~ ~ grass_block
