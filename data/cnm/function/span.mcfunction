@@ -1,11 +1,11 @@
 scoreboard players set type cnm 5
 function cnm:rule
 
-execute if score type cnm matches 1 run fill ~-5 ~ ~-5 ~5 ~ ~5 deepslate
-execute if score type cnm matches 2 run fill ~-5 ~ ~-5 ~5 ~ ~5 deepslate
-execute if score type cnm matches 3 run fill ~-5 ~ ~-5 ~5 ~ ~5 deepslate
-execute if score type cnm matches 4 run fill ~-5 ~ ~-5 ~5 ~ ~5 deepslate
-execute if score type cnm matches 5 run setblock ~ ~ ~ white_concrete
+execute if entity @e[tag=CNM_centre,distance=..150] if score type cnm matches 1 run fill ~-5 ~ ~-5 ~5 ~ ~5 deepslate
+execute if entity @e[tag=CNM_centre,distance=..150] if score type cnm matches 2 run fill ~-5 ~ ~-5 ~5 ~ ~5 deepslate
+execute if entity @e[tag=CNM_centre,distance=..150] if score type cnm matches 3 run fill ~-5 ~ ~-5 ~5 ~ ~5 deepslate
+execute if entity @e[tag=CNM_centre,distance=..150] if score type cnm matches 4 run fill ~-5 ~ ~-5 ~5 ~ ~5 deepslate
+execute if entity @e[tag=CNM_centre,distance=..150] if score type cnm matches 5 run setblock ~ ~ ~ white_concrete
 
 execute store result score entity_count cnm if entity @e[tag=CNM_next]
 execute if score entity_count cnm matches 3000.. run tellraw @a ["警告，3000个标记已生成"]
