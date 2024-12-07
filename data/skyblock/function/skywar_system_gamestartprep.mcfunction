@@ -86,6 +86,7 @@ execute if score @n[tag=sc] SSgspT matches 2 run scoreboard objectives add Temp5
 execute if score @n[tag=sc] SSgspT matches 2 run scoreboard objectives add Temp5_LoopE dummy
 execute if score @n[tag=sc] SSgspT matches 2 run scoreboard objectives add If_Bless23 dummy
 execute if score @n[tag=sc] SSgspT matches 2 run scoreboard objectives add If_Bless23c custom:damage_resisted
+execute if score @n[tag=sc] SSgspT matches 2 run scoreboard objectives add If_Bless23c2 custom:damage_taken
 #无意义变量 scoreboard players reset @s RemainPlayer
 execute if score @n[tag=sc] SSgspT matches 2 as @a[tag=!NoSkyWar] at @s run scoreboard players reset @s DeathCount
 #-#-#scoreboard players set @s Temp4 1
