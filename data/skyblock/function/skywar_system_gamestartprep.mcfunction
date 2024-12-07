@@ -117,6 +117,7 @@ execute if score @n[tag=sc] SSgspT matches 3 as @a[tag=!NoSkyWar] at @s run scor
 execute if score @n[tag=sc] SSgspT matches 3 as @a[tag=!NoSkyWar] at @s run scoreboard players set @s If_MelonS 0
 execute if score @n[tag=sc] SSgspT matches 3 as @a[tag=!NoSkyWar] at @s run scoreboard players set @s If_Bless23 0
 execute if score @n[tag=sc] SSgspT matches 3 as @a[tag=!NoSkyWar] at @s run scoreboard players set @s If_Bless23c 0
+execute if score @n[tag=sc] SSgspT matches 3 as @a[tag=!NoSkyWar] at @s run scoreboard players set @s If_Bless23c2 0
 execute if score @n[tag=sc] SSgspT matches 3 run scoreboard objectives add TempIf_Job6A dummy
 execute if score @n[tag=sc] SSgspT matches 3 run scoreboard objectives add TempIf_Job6B dummy
 execute if score @n[tag=sc] SSgspT matches 3 run scoreboard objectives add TempIf_Job6C dummy

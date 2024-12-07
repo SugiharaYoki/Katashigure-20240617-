@@ -8,14 +8,14 @@ execute if score @s[tag=Bless23_Effective] If_Bless23c matches 1.. run effect cl
 execute if score @s If_Bless23c matches 1.. run scoreboard players set @s If_Bless23 0
 execute if score @s If_Bless23c2 matches 1.. run scoreboard players set @s If_Bless23 0
 
-execute if score @s[tag=Bless23_Effective,team=Team1_1] If_Bless23c matches 1.. if entity @a[tag=PVPing,gamemode=survival,team=!Team1_1,distance=0..3] run give @s ender_eye
-execute if score @s[tag=Bless23_Effective,team=Team1_2] If_Bless23c matches 1.. if entity @a[tag=PVPing,gamemode=survival,team=!Team1_2,distance=0..3] run give @s ender_eye
-execute if score @s[tag=Bless23_Effective,team=Team1_3] If_Bless23c matches 1.. if entity @a[tag=PVPing,gamemode=survival,team=!Team1_3,distance=0..3] run give @s ender_eye
-execute if score @s[tag=Bless23_Effective,team=Team1_4] If_Bless23c matches 1.. if entity @a[tag=PVPing,gamemode=survival,team=!Team1_4,distance=0..3] run give @s ender_eye
-execute if score @s[tag=Bless23_Effective,team=Team1_5] If_Bless23c matches 1.. if entity @a[tag=PVPing,gamemode=survival,team=!Team1_5,distance=0..3] run give @s ender_eye
-execute if score @s[tag=Bless23_Effective,team=Team1_6] If_Bless23c matches 1.. if entity @a[tag=PVPing,gamemode=survival,team=!Team1_6,distance=0..3] run give @s ender_eye
-execute if score @s[tag=Bless23_Effective,team=Team1_7] If_Bless23c matches 1.. if entity @a[tag=PVPing,gamemode=survival,team=!Team1_7,distance=0..3] run give @s ender_eye
-execute if score @s[tag=Bless23_Effective,team=Team1_8] If_Bless23c matches 1.. if entity @a[tag=PVPing,gamemode=survival,team=!Team1_8,distance=0..3] run give @s ender_eye
+execute if score @s[tag=Bless23_Effective,team=Team1_1] If_Bless23c matches 1.. if entity @a[tag=PVPing,gamemode=survival,team=!Team1_1,distance=0..3] run give @s ender_pearl
+execute if score @s[tag=Bless23_Effective,team=Team1_2] If_Bless23c matches 1.. if entity @a[tag=PVPing,gamemode=survival,team=!Team1_2,distance=0..3] run give @s ender_pearl
+execute if score @s[tag=Bless23_Effective,team=Team1_3] If_Bless23c matches 1.. if entity @a[tag=PVPing,gamemode=survival,team=!Team1_3,distance=0..3] run give @s ender_pearl
+execute if score @s[tag=Bless23_Effective,team=Team1_4] If_Bless23c matches 1.. if entity @a[tag=PVPing,gamemode=survival,team=!Team1_4,distance=0..3] run give @s ender_pearl
+execute if score @s[tag=Bless23_Effective,team=Team1_5] If_Bless23c matches 1.. if entity @a[tag=PVPing,gamemode=survival,team=!Team1_5,distance=0..3] run give @s ender_pearl
+execute if score @s[tag=Bless23_Effective,team=Team1_6] If_Bless23c matches 1.. if entity @a[tag=PVPing,gamemode=survival,team=!Team1_6,distance=0..3] run give @s ender_pearl
+execute if score @s[tag=Bless23_Effective,team=Team1_7] If_Bless23c matches 1.. if entity @a[tag=PVPing,gamemode=survival,team=!Team1_7,distance=0..3] run give @s ender_pearl
+execute if score @s[tag=Bless23_Effective,team=Team1_8] If_Bless23c matches 1.. if entity @a[tag=PVPing,gamemode=survival,team=!Team1_8,distance=0..3] run give @s ender_pearl
 
 execute if score @s[tag=Bless23_Effective,team=Team1_1] If_Bless23c matches 1.. if entity @a[tag=PVPing,gamemode=survival,team=!Team1_1,distance=0..3] run effect give @s absorption 2 2 false
 execute if score @s[tag=Bless23_Effective,team=Team1_2] If_Bless23c matches 1.. if entity @a[tag=PVPing,gamemode=survival,team=!Team1_2,distance=0..3] run effect give @s absorption 2 2 false
@@ -26,8 +26,8 @@ execute if score @s[tag=Bless23_Effective,team=Team1_6] If_Bless23c matches 1.. 
 execute if score @s[tag=Bless23_Effective,team=Team1_7] If_Bless23c matches 1.. if entity @a[tag=PVPing,gamemode=survival,team=!Team1_7,distance=0..3] run effect give @s absorption 2 2 false
 execute if score @s[tag=Bless23_Effective,team=Team1_8] If_Bless23c matches 1.. if entity @a[tag=PVPing,gamemode=survival,team=!Team1_8,distance=0..3] run effect give @s absorption 2 2 false
 
-execute store result score @s rng1 run clear @s ender_eye 0
-execute if score @s rng1 matches 3.. run clear @s ender_eye 1
+execute store result score @s rng1 run clear @s ender_pearl 0
+execute if score @s rng1 matches 3.. run clear @s ender_pearl 1
 
 execute if score @s[tag=Bless23_Effective] If_Bless23c matches 1.. run playsound item.shield.block player @a ~ ~ ~ 0.9 1.2
 execute if score @s[tag=Bless23_Effective] If_Bless23c matches 1.. run playsound block.amethyst_block.break player @a ~ ~ ~ 0.9 0.8
