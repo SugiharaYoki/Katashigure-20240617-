@@ -50,6 +50,8 @@ tellraw @s [{"text":"    尘埃法师 归尘「扬焱剧爆」","color":"gold","
 
 tellraw @s [{"text":"    尘埃法师 唤尘「漆幕虚垒」","color":"gold","hoverEvent":{"action":"show_text","contents":{"text":"漆幕虚垒核心×2 在面前4格处召唤烟幕","color":"white"}}},{"text":" 统 ","color":"green","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 131018"}},{"text":" 纵 ","color":"green","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 132018"}},{"text":" 纺 ","color":"green","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 133018"}}]
 
+tellraw @s [{"text":"    欺诈师 瞒天「坠落狱穴」","color":"gold","hoverEvent":{"action":"show_text","contents":{"text":"号角与特殊模板 背包里存在时吹响号角即可将20格内的石/铁镐掉落物化作向下轰击的毁灭炮","color":"white"}}},{"text":" 统 ","color":"green","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 131024"}},{"text":" 纵 ","color":"green","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 132024"}},{"text":" 纺 ","color":"green","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 133024"}}]
+
 
 scoreboard players set @s MultiMenu 0
 

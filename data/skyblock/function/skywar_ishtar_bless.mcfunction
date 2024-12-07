@@ -91,3 +91,10 @@ execute if entity @s[scores={ishtar_bless_3=22}] run give @s goat_horn[instrumen
 execute if entity @s[scores={ishtar_bless_1=23}] run give @s vex_armor_trim_smithing_template[custom_name='{"text":"误月驱华","italic":false,"color":"red"}',custom_data={skywar_ishtar_23:1}] 1
 execute if entity @s[scores={ishtar_bless_2=23}] run give @s vex_armor_trim_smithing_template[custom_name='{"text":"误月驱华","italic":false,"color":"red"}',custom_data={skywar_ishtar_23:1}] 1
 execute if entity @s[scores={ishtar_bless_3=23}] run give @s vex_armor_trim_smithing_template[custom_name='{"text":"误月驱华","italic":false,"color":"red"}',custom_data={skywar_ishtar_23:1}] 1
+
+execute if entity @s[scores={ishtar_bless_1=24}] run give @s spire_armor_trim_smithing_template[custom_name='{"text":"坠落狱穴","italic":false,"color":"red"}',custom_data={skywar_ishtar_24:1}] 1
+execute if entity @s[scores={ishtar_bless_2=24}] run give @s spire_armor_trim_smithing_template[custom_name='{"text":"坠落狱穴","italic":false,"color":"red"}',custom_data={skywar_ishtar_24:1}] 1
+execute if entity @s[scores={ishtar_bless_3=24}] run give @s spire_armor_trim_smithing_template[custom_name='{"text":"坠落狱穴","italic":false,"color":"red"}',custom_data={skywar_ishtar_24:1}] 1
+execute if entity @s[scores={ishtar_bless_1=24}] run give @s goat_horn[instrument=call_goat_horn]
+execute if entity @s[scores={ishtar_bless_2=24}] run give @s goat_horn[instrument=call_goat_horn]
+execute if entity @s[scores={ishtar_bless_3=24}] run give @s goat_horn[instrument=call_goat_horn]
