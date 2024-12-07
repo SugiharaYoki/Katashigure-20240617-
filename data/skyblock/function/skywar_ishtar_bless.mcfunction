@@ -98,3 +98,10 @@ execute if entity @s[scores={ishtar_bless_3=24}] run give @s spire_armor_trim_sm
 execute if entity @s[scores={ishtar_bless_1=24}] run give @s goat_horn[instrument=call_goat_horn]
 execute if entity @s[scores={ishtar_bless_2=24}] run give @s goat_horn[instrument=call_goat_horn]
 execute if entity @s[scores={ishtar_bless_3=24}] run give @s goat_horn[instrument=call_goat_horn]
+
+execute if entity @s[scores={ishtar_bless_1=25}] run give @s wayfinder_armor_trim_smithing_template[custom_name='{"text":"诞生虚桥","italic":false,"color":"red"}',custom_data={skywar_ishtar_25:1}] 1
+execute if entity @s[scores={ishtar_bless_2=25}] run give @s wayfinder_armor_trim_smithing_template[custom_name='{"text":"诞生虚桥","italic":false,"color":"red"}',custom_data={skywar_ishtar_25:1}] 1
+execute if entity @s[scores={ishtar_bless_3=25}] run give @s wayfinder_armor_trim_smithing_template[custom_name='{"text":"诞生虚桥","italic":false,"color":"red"}',custom_data={skywar_ishtar_25:1}] 1
+execute if entity @s[scores={ishtar_bless_1=25}] run give @s egg 3
+execute if entity @s[scores={ishtar_bless_2=25}] run give @s egg 3
+execute if entity @s[scores={ishtar_bless_3=25}] run give @s egg 3
