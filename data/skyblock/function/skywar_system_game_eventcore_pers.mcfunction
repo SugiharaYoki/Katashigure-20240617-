@@ -34,4 +34,5 @@ execute if block 44 51 56 soul_lantern as @a[tag=PVPing] at @s run effect give @
 execute if block -131 59 -119 green_concrete as @a[tag=PVPing] at @s run effect give @s weakness 10 2 true
 
 execute if block -131 58 -133 diamond_block as @a[tag=PVPing] at @s run function skyblock:skywar_ishtar_core
+execute if block -131 58 -133 diamond_block as @e[type=egg,tag=Bless25,x=50062,y=226,z=50052,distance=..3000] at @s if entity @a[gamemode=survival,distance=0..25] run function skyblock:skywar_ishtar_core25e
 execute if block -131 58 -133 diamond_block if items entity @a[gamemode=survival] container.* *[custom_data={skywar_ishtar_24:1}] run function skyblock:skywar_ishtar_core24e

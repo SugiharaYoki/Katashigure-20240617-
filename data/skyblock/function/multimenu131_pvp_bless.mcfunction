@@ -52,6 +52,8 @@ tellraw @s [{"text":"    尘埃法师 唤尘「漆幕虚垒」","color":"gold","
 
 tellraw @s [{"text":"    欺诈师 瞒天「坠落狱穴」","color":"gold","hoverEvent":{"action":"show_text","contents":{"text":"号角与特殊模板 背包里存在时吹响号角即可将20格内的石/铁镐掉落物化作向下轰击的毁灭炮","color":"white"}}},{"text":" 统 ","color":"green","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 131024"}},{"text":" 纵 ","color":"green","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 132024"}},{"text":" 纺 ","color":"green","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 133024"}}]
 
+tellraw @s [{"text":"    欺诈师 乍现「诞生虚桥」","color":"gold","hoverEvent":{"action":"show_text","contents":{"text":"特殊模板 背包里存在时5格内的鸡蛋会被附上“欺诈”状态\n“欺诈”蛋会自动生成一条玻璃天桥\n距离25格内没有玩家时将自动取消“欺诈”状态","color":"white"}}},{"text":" 统 ","color":"green","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 131025"}},{"text":" 纵 ","color":"green","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 132025"}},{"text":" 纺 ","color":"green","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 133025"}}]
+
 
 scoreboard players set @s MultiMenu 0
 

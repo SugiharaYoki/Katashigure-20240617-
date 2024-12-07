@@ -1,0 +1,1 @@
+execute positioned ~ ~-0.5 ~ if block ~ ~ ~ air run setblock ~ ~ ~ magenta_stained_glass
