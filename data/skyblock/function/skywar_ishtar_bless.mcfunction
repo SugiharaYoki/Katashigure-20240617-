@@ -87,3 +87,7 @@ execute if entity @s[scores={ishtar_bless_3=22}] run give @s wayfinder_armor_tri
 execute if entity @s[scores={ishtar_bless_1=22}] run give @s goat_horn[instrument=sing_goat_horn]
 execute if entity @s[scores={ishtar_bless_2=22}] run give @s goat_horn[instrument=sing_goat_horn]
 execute if entity @s[scores={ishtar_bless_3=22}] run give @s goat_horn[instrument=sing_goat_horn]
+
+execute if entity @s[scores={ishtar_bless_1=23}] run give @s vex_armor_trim_smithing_template[custom_name='{"text":"误月驱华","italic":false,"color":"red"}',custom_data={skywar_ishtar_23:1}] 1
+execute if entity @s[scores={ishtar_bless_2=23}] run give @s vex_armor_trim_smithing_template[custom_name='{"text":"误月驱华","italic":false,"color":"red"}',custom_data={skywar_ishtar_23:1}] 1
+execute if entity @s[scores={ishtar_bless_3=23}] run give @s vex_armor_trim_smithing_template[custom_name='{"text":"误月驱华","italic":false,"color":"red"}',custom_data={skywar_ishtar_23:1}] 1

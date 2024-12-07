@@ -92,5 +92,7 @@ execute if items entity @s[scores={Skywar_ishtar_usehorn=1..}] container.* *[cus
 
 execute if items entity @s[scores={Skywar_ishtar_usehorn=1..}] container.* *[custom_data={skywar_ishtar_22:1}] run function skyblock:skywar_ishtar_core22
 
+execute if items entity @s container.* *[custom_data={skywar_ishtar_23:1}] run function skyblock:skywar_ishtar_core23
+
 
 scoreboard players set @s Skywar_ishtar_usehorn 0
