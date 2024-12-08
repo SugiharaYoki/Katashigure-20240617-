@@ -84,15 +84,7 @@ execute positioned 90085 137 140 if entity @a[tag=SEAPT,distance=..2.5,tag=!SEAP
 execute as @n[tag=SEAch3_spawn_timer3,scores={sea_4temp1=1..11}] run function skyblock:sea/e/ev026_ch3_main_platform_the_guard_in_basement
 
 execute positioned 90106 137 152 if entity @a[tag=SEAPT,distance=..2.5,tag=!SEAPF] unless entity @n[tag=SEAch3_spawn_timer4,distance=0..3] run summon marker ~ ~ ~ {Tags:["SEAch3_spawn_timer","SEAch3_spawn_timer4"]}
-execute as @n[tag=SEAch3_spawn_timer4,scores={sea_4temp1=1..10}] positioned 90106 137 140 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
-execute as @n[tag=SEAch3_spawn_timer4,scores={sea_4temp1=1..10}] positioned 90106 137 140 run particle sculk_soul ~ ~1 ~ 0.3 0.5 0.3 0.05 10
-execute as @n[tag=SEAch3_spawn_timer4,scores={sea_4temp1=11}] positioned 90106 137 140 run function skyblock:sea/m/husk
-execute as @n[tag=SEAch3_spawn_timer4,scores={sea_4temp1=11}] positioned 90112 137 151 run function skyblock:sea/m/zombie_cook
-execute as @n[tag=SEAch3_spawn_timer4,scores={sea_4temp1=11}] positioned 90112 137 151 run function skyblock:sea/m/zombie_security2
-execute as @n[tag=SEAch3_spawn_timer4,scores={sea_4temp1=11}] positioned 90135 137 138 run function skyblock:sea/m/drowned_small
-execute as @n[tag=SEAch3_spawn_timer4,scores={sea_4temp1=11}] positioned 90135 137 138 run function skyblock:sea/m/drowned_small
-execute as @n[tag=SEAch3_spawn_timer4,scores={sea_4temp1=11}] positioned 90135 137 138 run function skyblock:sea/m/drowned_small
-execute as @n[tag=SEAch3_spawn_timer4,scores={sea_4temp1=11}] positioned 90135 137 138 if entity @n[tag=sc,scores={sea_player=3..}] run function skyblock:sea/m/drowned_small
+execute as @n[tag=SEAch3_spawn_timer4,scores={sea_4temp1=1..11}] run function skyblock:sea/e/ev026_ch3_main_platform_before_the_dorm
 
 execute positioned 90141 137 154 if entity @a[tag=SEAPT,distance=..2.5,tag=!SEAPF] unless entity @n[tag=SEAch3_spawn_timer5,distance=0..3] run summon marker ~ ~ ~ {Tags:["SEAch3_spawn_timer","SEAch3_spawn_timer5"]}
 execute as @n[tag=SEAch3_spawn_timer5,scores={sea_4temp1=1..10}] positioned 90151 137 153 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
@@ -103,147 +95,22 @@ execute as @n[tag=SEAch3_spawn_timer5,scores={sea_4temp1=1..10}] positioned 9015
 execute as @n[tag=SEAch3_spawn_timer5,scores={sea_4temp1=11}] positioned 90151 137 155 run function skyblock:sea/m/husk
 
 execute positioned 90127 137 137 if entity @a[tag=SEAPT,distance=..4,tag=!SEAPF] unless entity @n[tag=SEAch3_spawn_timer6,distance=0..3] as @n[tag=sc,scores={sea_4temp2=390..}] run summon marker ~ ~ ~ {Tags:["SEAch3_spawn_timer","SEAch3_spawn_timer6"]}
-execute as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90127 137 140 run function skyblock:sea/m/zombie_cook
-execute as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90126 137 140 run function skyblock:sea/m/zombie_cook
-execute as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90126 137 140 if entity @n[tag=sc,scores={sea_player=4..}] run function skyblock:sea/m/zombie_cook
-execute as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90128 137 140 run function skyblock:sea/m/drowned_hat
-execute as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90127 137 141 run function skyblock:sea/m/drowned
-execute as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90126 137 141 run function skyblock:sea/m/drowned_maintenance
-execute as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90126 137 141 if entity @n[tag=sc,scores={sea_player=4..}] run function skyblock:sea/m/drowned_maintenance
-execute as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90128 137 141 run function skyblock:sea/m/drowned_hat
-execute as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90127 137 139 if entity @n[tag=sc,scores={sea_player=3..}] run function skyblock:sea/m/drowned_hat
-execute as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90126 137 139 run function skyblock:sea/m/drowned_maintenance
-execute as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90128 137 139 run function skyblock:sea/m/drowned
-execute as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90128 137 144 if entity @n[tag=sc,scores={sea_player=2..}] run function skyblock:sea/m/drowned
-execute as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90127 137 144 run function skyblock:sea/m/drowned_maintenance
-execute as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90129 137 144 run function skyblock:sea/m/drowned
-execute as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90128 137 145 run function skyblock:sea/m/drowned_hat
-execute as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90127 137 145 run function skyblock:sea/m/drowned
-execute as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90129 137 145 run function skyblock:sea/m/drowned_hat
-execute as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90124 137 150 run function skyblock:sea/m/zombie_cook
-execute as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90124 137 150 run function skyblock:sea/m/drowned_maintenance
-execute as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90119 137 147 run function skyblock:sea/m/zombie_security2
-execute as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90119 137 147 run function skyblock:sea/m/zombie_security2
-execute as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90119 137 147 run function skyblock:sea/m/zombie_security2
-execute as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90119 137 147 if entity @n[tag=sc,scores={sea_player=3..}] run function skyblock:sea/m/zombie_security2
-#二楼
-execute as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90117 143 149 run function skyblock:sea/m/skeleton
-execute as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90117 143 149 run function skyblock:sea/m/skeleton
-execute as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90117 143 149 if entity @n[tag=sc,scores={sea_player=3..}] run function skyblock:sea/m/skeleton
-execute as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90129 143 143 run function skyblock:sea/m/drowned_shield
-execute as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90129 143 143 run function skyblock:sea/m/drowned_shield
-execute as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90129 143 143 if entity @n[tag=sc,scores={sea_player=2..}] run function skyblock:sea/m/drowned_shield
-execute as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90129 143 143 run function skyblock:sea/m/drowned
-execute as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90129 143 143 run function skyblock:sea/m/drowned
-execute as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90129 143 143 if entity @n[tag=sc,scores={sea_player=3..}] run function skyblock:sea/m/drowned
-execute as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90129 143 143 if entity @n[tag=sc,scores={sea_player=2..}] run function skyblock:sea/m/drowned
-execute as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90129 143 143 run function skyblock:sea/m/spider
-execute as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90129 143 143 run function skyblock:sea/m/spider
-execute as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90124 143 140 run function skyblock:sea/m/drowned_hat
-execute as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90124 143 140 run function skyblock:sea/m/drowned
-execute as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90124 143 140 run function skyblock:sea/m/drowned
-execute as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90124 143 140 run function skyblock:sea/m/drowned
-execute as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90130 143 149 if entity @n[tag=sc,scores={sea_player=4..}] run function skyblock:sea/m/silverfish
-execute as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90130 143 149 if entity @n[tag=sc,scores={sea_player=4..}] run function skyblock:sea/m/silverfish
-execute as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90130 143 149 run function skyblock:sea/m/silverfish
-execute as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90130 143 149 run function skyblock:sea/m/silverfish
-execute as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90130 143 149 run function skyblock:sea/m/silverfish
-execute as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90123 143 150 run function skyblock:sea/m/drowned
-execute as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90123 143 150 run function skyblock:sea/m/drowned
-execute as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90123 143 150 if entity @n[tag=sc,scores={sea_player=3..}] run function skyblock:sea/m/drowned
+execute as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=1..92}] run function skyblock:sea/e/ev026_ch3_dorm
 
 
-execute as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=1}] run scoreboard players set @a[tag=SEAPT,scores={sea_progress=..6}] sea_progress 7
 
-execute as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=1}] run playsound minecraft:item.goat_horn.sound.6 master @a[tag=SEAPT] 90100 0 100 10000 0.8
-execute as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=1}] run playsound minecraft:item.goat_horn.sound.6 master @a[tag=SEAPT] 90100 0 100 10000 0.87
-execute as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=1}] run playsound minecraft:item.goat_horn.sound.6 master @a[tag=SEAPT] 90100 0 100 10000 0.84
-execute as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=31}] run playsound minecraft:item.goat_horn.sound.6 master @a[tag=SEAPT] 90100 0 100 10000 0.8
-execute as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=31}] run playsound minecraft:item.goat_horn.sound.6 master @a[tag=SEAPT] 90100 0 100 10000 0.87
-execute as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=31}] run playsound minecraft:item.goat_horn.sound.6 master @a[tag=SEAPT] 90100 0 100 10000 0.84
-execute as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=61}] run playsound minecraft:item.goat_horn.sound.6 master @a[tag=SEAPT] 90100 0 100 10000 0.8
-execute as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=61}] run playsound minecraft:item.goat_horn.sound.6 master @a[tag=SEAPT] 90100 0 100 10000 0.87
-execute as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=61}] run playsound minecraft:item.goat_horn.sound.6 master @a[tag=SEAPT] 90100 0 100 10000 0.84
-execute as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=91}] run playsound minecraft:item.goat_horn.sound.6 master @a[tag=SEAPT] 90100 0 100 10000 0.8
-execute as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=91}] run playsound minecraft:item.goat_horn.sound.6 master @a[tag=SEAPT] 90100 0 100 10000 0.87
-execute as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=91}] run playsound minecraft:item.goat_horn.sound.6 master @a[tag=SEAPT] 90100 0 100 10000 0.84
-execute as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=31}] run fill 90128 137 137 90126 137 137 air
-execute as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=34}] run fill 90128 138 137 90126 138 137 air
-execute as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=37}] run fill 90128 139 137 90126 139 137 air
-execute as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=40}] run fill 90128 140 137 90126 140 137 air
-execute as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=31}] run playsound minecraft:block.iron_door.open ambient @a 90127 140 137 0.3
-execute as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=34}] run playsound minecraft:block.iron_door.open ambient @a 90127 140 137 0.3
-execute as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=37}] run playsound minecraft:block.iron_door.open ambient @a 90127 140 137 0.3
-execute as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=40}] run playsound minecraft:block.iron_door.open ambient @a 90127 140 137 0.3
 
 
 execute if entity @a[tag=SEAPT,x=90120,y=155,z=138,distance=0..4.5,tag=!e_i_26] run tag @a[tag=SEAPT] add e_i_26
 
 execute as @n[tag=sc] if block 90133 137 108 minecraft:warped_button[powered=true] unless entity @s[scores={sea_4temp2=80..}] run scoreboard players set @s sea_4temp2 80
 execute as @n[tag=sc,scores={sea_4temp2=80..395}] run scoreboard players add @s sea_4temp2 1
-execute as @n[tag=sc,scores={sea_4temp2=89}] positioned 90133 137 108 \
- run tellraw @a[distance=0..50] {"text":"正在呼叫联络总站。","color":"dark_purple"}
-execute as @n[tag=sc,scores={sea_4temp2=89}] positioned 90133 137 108 run playsound minecraft:entity.endermite.ambient ambient @a ~ ~ ~ 0.8 0.1
-execute as @n[tag=sc,scores={sea_4temp2=103}] positioned 90133 137 108 if entity @n[tag=sc,scores={sea_player=1}] \
- run tellraw @a[distance=0..50] {"text":"玛瑞莲：“这里是玛瑞莲。欢迎你来到甲板。”","color":"dark_purple"}
-execute as @n[tag=sc,scores={sea_4temp2=103}] positioned 90133 137 108 if entity @n[tag=sc,scores={sea_player=2..}] \
- run tellraw @a[distance=0..50] {"text":"玛瑞莲：“这里是玛瑞莲。欢迎你们来到甲板。”","color":"dark_purple"}
-execute as @n[tag=sc,scores={sea_4temp2=103}] positioned 90133 137 108 as @p[tag=SEAPT] at @s \
- run tellraw @a[tag=SEAPT,distance=3..] [{"selector":"@s","color":"white"},{"text":"：我再次接通联络总站了！快来我这里。","color":"white"}]
-execute as @n[tag=sc,scores={sea_4temp2=103..364}] positioned 90133 137 108 as @p[tag=SEAPT,nbt={SelectedItem:{id:"minecraft:spyglass"}},scores={SEA_story=2..}] unless entity @a[tag=SEAPT,scores={SEA_story=..1}] at @s run tellraw @a[tag=SEAPT] [{"selector":"@s","color":"white"},{"text":"：「跳过了剧情」","color":"white"}]
-execute as @n[tag=sc,scores={sea_4temp2=103..364}] positioned 90133 137 108 if entity @p[tag=SEAPT,nbt={SelectedItem:{id:"minecraft:spyglass"}},scores={SEA_story=2..}] unless entity @a[tag=SEAPT,scores={SEA_story=..1}] run scoreboard players set @n[tag=sc] sea_4temp2 365
-execute as @n[tag=sc,scores={sea_4temp2=122}] positioned 90133 137 108 as @p[tag=SEAPT] if entity @n[tag=sc,scores={sea_player=1}] \
- run tellraw @a[distance=0..50] [{"selector":"@s","color":"white"},{"text":"：玛瑞莲小姐，这里通往办公区域的所有通道都被堵住了，我该怎么上去？","color":"white"}]
-execute as @n[tag=sc,scores={sea_4temp2=122}] positioned 90133 137 108 as @p[tag=SEAPT] if entity @n[tag=sc,scores={sea_player=2..}] \
- run tellraw @a[distance=0..50] [{"selector":"@s","color":"white"},{"text":"：玛瑞莲小姐，这里通往办公区域的所有通道都被堵住了，我们该怎么上去？","color":"white"}]
-execute as @n[tag=sc,scores={sea_4temp2=145}] positioned 90133 137 108 as @p[tag=SEAPT] \
- run tellraw @a[distance=0..50] {"text":"玛瑞莲：“您不必清除那些路障，那些植物在上层肆意生长，我们之中的许多人都被藤蔓给活生生吞噬。”","color":"dark_purple"}
-execute as @n[tag=sc,scores={sea_4temp2=172}] positioned 90133 137 108 as @p[tag=SEAPT] \
- run tellraw @a[distance=0..50] {"text":"玛瑞莲：“这植物唯一的弱点是高频声波。邪教徒显然意识到了这一点，他们占领了整座通讯中心，关停了通讯阵列。”","color":"dark_purple"}
-execute as @n[tag=sc,scores={sea_4temp2=203}] positioned 90133 137 108 as @p[tag=SEAPT] if entity @n[tag=sc,scores={sea_player=1..}] run tellraw @a[distance=0..50] [{"selector":"@s","color":"white"},{"text":"：通讯中心？是指在桥对面的附属平台吗？","color":"white"}]
-execute as @n[tag=sc,scores={sea_4temp2=232}] positioned 90133 137 108 as @p[tag=SEAPT] \
- run tellraw @a[distance=0..50] {"text":"玛瑞莲：“没错……您得想办法到那里操控卫星天线。办公区域的天线只能用来即时通话，无法进行广播，因此我这里无能为力。”","color":"dark_purple"}
-execute as @n[tag=sc,scores={sea_4temp2=270}] positioned 90133 137 108 as @p[tag=SEAPT] if entity @n[tag=sc,scores={sea_player=1}] \
- run tellraw @a[distance=0..50] [{"selector":"@s","color":"white"},{"text":"：底下的门是锁的，我该如何到达对面？我一个人去强行突破的话，胜算是多少？","color":"white"}]
-execute as @n[tag=sc,scores={sea_4temp2=270}] positioned 90133 137 108 as @p[tag=SEAPT] if entity @n[tag=sc,scores={sea_player=2..3}] \
- run tellraw @a[distance=0..50] [{"selector":"@s","color":"white"},{"text":"：底下的门是锁的，我们该如何到达对面？虽然我们人比较少，但强行突破听上去行得通吗？","color":"white"}]
-execute as @n[tag=sc,scores={sea_4temp2=270}] positioned 90133 137 108 as @p[tag=SEAPT] if entity @n[tag=sc,scores={sea_player=4..}] \
- run tellraw @a[distance=0..50] [{"selector":"@s","color":"white"},{"text":"：底下的门是锁的，我们该如何到达对面？我们人多，强行突破可行吗？","color":"white"}]
-execute as @n[tag=sc,scores={sea_4temp2=305}] positioned 90133 137 108 as @p[tag=SEAPT] if entity @n[tag=sc,scores={sea_player=1..3}] \
- run tellraw @a[distance=0..50] {"text":"玛瑞莲：“宿舍楼有一支幸存的小队，我与他们失联已经超过两小时，但他们有地下通道的钥匙。相信我，您不会想走大路。”","color":"dark_purple"}
-execute as @n[tag=sc,scores={sea_4temp2=305}] positioned 90133 137 108 as @p[tag=SEAPT] if entity @n[tag=sc,scores={sea_player=4..}] \
- run tellraw @a[distance=0..50] {"text":"玛瑞莲：“宿舍楼有一支幸存的小队，我与他们失联已经超过两小时，但他们有地下通道的钥匙。相信我，您不会想走大路，人再多也只会白白送命。”","color":"dark_purple"}
-execute as @n[tag=sc,scores={sea_4temp2=342}] positioned 90133 137 108 as @p[tag=SEAPT] \
- run tellraw @a[distance=0..50] {"text":"玛瑞莲：“我这里能够打开宿舍楼的门。记住，里面有相当恐怖的尸潮，不要贸然闯入。做好充足的准备后，找南面那栋红棕色外墙的楼。”","color":"dark_purple"}
-execute as @n[tag=sc,scores={sea_4temp2=366}] positioned 90133 137 108 as @p[tag=SEAPT] if entity @n[tag=sc,scores={sea_player=1}] \
- run tellraw @a[distance=0..50] {"text":"玛瑞莲：“等你到达宿舍楼前，我会远程开启大门……一定要小心，那里的怪物已经二次变异了。”","color":"dark_purple"}
-execute as @n[tag=sc,scores={sea_4temp2=366}] positioned 90133 137 108 as @p[tag=SEAPT] if entity @n[tag=sc,scores={sea_player=2..}] \
- run tellraw @a[distance=0..50] {"text":"玛瑞莲：“等你们到达宿舍楼前，我会远程开启大门……一定要小心，那里的怪物已经二次变异了。”","color":"dark_purple"}
-execute as @n[tag=sc,scores={sea_4temp2=388}] positioned 90133 137 108 as @p[tag=SEAPT] run scoreboard players set @a[tag=SEAPT,scores={SEA_story=..1}] SEA_story 2
+execute as @n[tag=sc,scores={sea_4temp2=80..395}] run function skyblock:sea/e/ev026_ch3_communication_1
 
 
 execute as @n[tag=sc] if block 90133 137 108 minecraft:warped_button[powered=true] unless block 90131 161 144 air run scoreboard players set @s sea_4temp2 1080
 execute as @n[tag=sc,scores={sea_4temp2=1080..1395}] run scoreboard players add @s sea_4temp2 1
-execute as @n[tag=sc,scores={sea_4temp2=1089}] positioned 90133 137 108 \
- run tellraw @a[distance=0..50] {"text":"正在呼叫联络总站。","color":"dark_purple"}
-execute as @n[tag=sc,scores={sea_4temp2=1089}] positioned 90133 137 108 run playsound minecraft:entity.endermite.ambient ambient @a ~ ~ ~ 0.8 0.1
-execute as @n[tag=sc,scores={sea_4temp2=1103}] positioned 90133 137 108 if entity @n[tag=sc,scores={sea_player=1}] \
- run tellraw @a[distance=0..50] {"text":"玛瑞莲：“恭喜，我很高兴听到你从宿舍楼活着出来了。”","color":"dark_purple"}
-execute as @n[tag=sc,scores={sea_4temp2=1103}] positioned 90133 137 108 if entity @n[tag=sc,scores={sea_player=2..}] \
- run tellraw @a[distance=0..50] {"text":"玛瑞莲：“恭喜，我很高兴听到你们从宿舍楼活着出来了。”","color":"dark_purple"}
-execute as @n[tag=sc,scores={sea_4temp2=1130}] positioned 90133 137 108 if entity @n[tag=sc,scores={sea_player=1..}] \
- run tellraw @a[distance=0..50] {"text":"玛瑞莲：“只有一个人幸存吗……唉，也合情合理。”","color":"dark_purple"}
-execute as @n[tag=sc,scores={sea_4temp2=1160}] positioned 90133 137 108 if entity @n[tag=sc,scores={sea_player=1..}] \
- run tellraw @a[distance=0..50] {"text":"玛瑞莲：“不过你提到的那位马绍尔果然让你从地下通道走，这点倒是在我预料之中。”","color":"dark_purple"}
-execute as @n[tag=sc,scores={sea_4temp2=1195}] positioned 90133 137 108 if entity @n[tag=sc,scores={sea_player=1..}] \
- run tellraw @a[distance=0..50] {"text":"玛瑞莲：“至于那下面有什么……呵呵，可能会超乎你的预料。”","color":"dark_purple"}
-execute as @n[tag=sc,scores={sea_4temp2=1222}] positioned 90133 137 108 if entity @n[tag=sc,scores={sea_player=1..}] \
- run tellraw @a[distance=0..50] {"text":"玛瑞莲：“我的建议是，别想着收集下面的任何情报。但……你可要多探索一下那地方。我相信，只有这样你才会理解我今后的用意。”","color":"dark_purple"}
-execute as @n[tag=sc,scores={sea_4temp2=1260}] positioned 90133 137 108 if entity @n[tag=sc,scores={sea_player=1}] \
- run tellraw @a[distance=0..50] {"text":"玛瑞莲：“先生，您会明白的。我们之后再聊。”","color":"dark_purple"}
-execute as @n[tag=sc,scores={sea_4temp2=1260}] positioned 90133 137 108 if entity @n[tag=sc,scores={sea_player=2..}] \
- run tellraw @a[distance=0..50] {"text":"玛瑞莲：“先生，你们会明白的。我们之后再聊。”","color":"dark_purple"}
-execute as @n[tag=sc,scores={sea_4temp2=1260}] run setblock 90168 34 93 blue_concrete
+execute as @n[tag=sc,scores={sea_4temp2=1080..1395}] run function skyblock:sea/e/ev026_ch3_communication_2
 
 execute if block 90107 138 117 iron_bars \
  if block 90104 138 125 lever[powered=false] \
@@ -348,21 +215,7 @@ execute positioned 90120 149 144 if entity @a[tag=SEAPT,distance=..1.7] unless e
 
 
 
-execute positioned 90113 149 147 if entity @a[tag=SEAPT,distance=..2.3,tag=!SEAPF] unless entity @n[tag=SEAch3_spawn,distance=0..3] positioned 90109 149 141 run function skyblock:sea/m/nightblind
-execute positioned 90113 149 147 if entity @a[tag=SEAPT,distance=..2.3,tag=!SEAPF] unless entity @n[tag=SEAch3_spawn,distance=0..3] positioned 90102 149 144 run function skyblock:sea/m/drowned_maintenance
-execute positioned 90113 149 147 if entity @a[tag=SEAPT,distance=..2.3,tag=!SEAPF] unless entity @n[tag=SEAch3_spawn,distance=0..3] positioned 90102 149 144 run function skyblock:sea/m/drowned
-execute positioned 90113 149 147 if entity @a[tag=SEAPT,distance=..2.3,tag=!SEAPF] unless entity @n[tag=SEAch3_spawn,distance=0..3] positioned 90102 149 144 run function skyblock:sea/m/drowned
-execute positioned 90113 149 147 if entity @a[tag=SEAPT,distance=..2.3,tag=!SEAPF] unless entity @n[tag=SEAch3_spawn,distance=0..3] positioned 90107 155 143 run function skyblock:sea/m/zombie_bomb
-execute positioned 90113 149 147 if entity @a[tag=SEAPT,distance=..2.3,tag=!SEAPF] unless entity @n[tag=SEAch3_spawn,distance=0..3] positioned 90107 155 143 run function skyblock:sea/m/skeleton
-execute positioned 90113 149 147 if entity @a[tag=SEAPT,distance=..2.3,tag=!SEAPF] unless entity @n[tag=SEAch3_spawn,distance=0..3] positioned 90107 155 143 run function skyblock:sea/m/skeleton
-execute positioned 90113 149 147 if entity @a[tag=SEAPT,distance=..2.3,tag=!SEAPF] unless entity @n[tag=SEAch3_spawn,distance=0..3] positioned 90103 155 138 run function skyblock:sea/m/skeleton_melee
-execute positioned 90113 149 147 if entity @a[tag=SEAPT,distance=..2.3,tag=!SEAPF] unless entity @n[tag=SEAch3_spawn,distance=0..3] positioned 90103 155 138 run function skyblock:sea/m/skeleton_melee
-execute positioned 90113 149 147 if entity @a[tag=SEAPT,distance=..2.3,tag=!SEAPF] unless entity @n[tag=SEAch3_spawn,distance=0..3] positioned 90110 155 136 run function skyblock:sea/m/drowned
-execute positioned 90113 149 147 if entity @a[tag=SEAPT,distance=..2.3,tag=!SEAPF] unless entity @n[tag=SEAch3_spawn,distance=0..3] positioned 90110 155 136 run function skyblock:sea/m/drowned
-execute positioned 90113 149 147 if entity @a[tag=SEAPT,distance=..2.3,tag=!SEAPF] unless entity @n[tag=SEAch3_spawn,distance=0..3] positioned 90110 155 136 run function skyblock:sea/m/drowned
-execute positioned 90113 149 147 if entity @a[tag=SEAPT,distance=..2.3,tag=!SEAPF] unless entity @n[tag=SEAch3_spawn,distance=0..3] positioned 90110 155 136 run function skyblock:sea/m/drowned
-execute positioned 90113 149 147 if entity @a[tag=SEAPT,distance=..2.3,tag=!SEAPF] unless entity @n[tag=SEAch3_spawn,distance=0..3] positioned 90102 149 131 run function skyblock:sea/m/special_ston
-execute positioned 90113 149 147 if entity @a[tag=SEAPT,distance=..2.3,tag=!SEAPF] unless entity @n[tag=SEAch3_spawn,distance=0..3] run summon marker ~ ~ ~ {Tags:["SEAch3_spawn"]}
+execute positioned 90113 149 147 if entity @a[tag=SEAPT,distance=..2.5,tag=!SEAPF] unless entity @n[tag=SEAch3_spawn,distance=0..3] run function skyblock:sea/e/ev026_ch3_dorm_sidedorm
 
 execute positioned 90102 149 131 if entity @a[tag=SEAPT,distance=..3.5,tag=!SEAPF] unless block 90102 150 130 air as @n[tag=SEAeventch3_m_ston] at @s run data modify entity @s NoAI set value false
 execute positioned 90102 149 131 if entity @a[tag=SEAPT,distance=..3.5,tag=!SEAPF] unless block 90102 150 130 air as @n[tag=SEAeventch3_m_ston] at @s run data modify entity @s Invulnerable set value false
