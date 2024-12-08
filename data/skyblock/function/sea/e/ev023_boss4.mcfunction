@@ -89,16 +89,16 @@ execute as @s[scores={rng1=55}] as @n[tag=SEAboss_end] run data modify entity @s
 execute as @s[scores={rng1=70}] run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
 execute as @s[scores={rng1=70}] run tellraw @a[distance=0..250] {"text": "艾德雯娜：“我是艾德雯娜，美国CIA特工。那个，你身上有面包吗？”","color": "green"}
 
-execute as @s[scores={rng1=86}] if entity @n[tag=sc,scores={sea_player=1}] unless items entity @s container.* bread run tellraw @a[distance=0..250] [{"selector":"@p[tag=SEAPT]","color":"white"},{"text":"：那必然是没有的。你觉得就你需要一直吃东西？","color":"white"}]
-execute as @s[scores={rng1=86}] if entity @n[tag=sc,scores={sea_player=2..}] unless items entity @s container.* bread run tellraw @a[distance=0..250] [{"selector":"@p[tag=SEAPT]","color":"white"},{"text":"：那必然是没有的。至少我没了。","color":"white"}]
-execute as @s[scores={rng1=86}] if entity @n[tag=sc,scores={sea_player=1}] if items entity @s container.* bread run tellraw @a[distance=0..250] [{"selector":"@p[tag=SEAPT]","color":"white"},{"text":"：有是有。你又要啃？","color":"white"}]
-execute as @s[scores={rng1=86}] if entity @n[tag=sc,scores={sea_player=2..}] if items entity @s container.* bread run tellraw @a[distance=0..250] [{"selector":"@p[tag=SEAPT]","color":"white"},{"text":"：有是有，但我得先问我同事他要不要。我可不想面包直接被你霍霍了。","color":"white"}]
+execute as @s[scores={rng1=86}] if entity @n[tag=sc,scores={sea_player=1}] unless items entity @a[tag=SEAPT] container.* bread run tellraw @a[distance=0..250] [{"selector":"@p[tag=SEAPT]","color":"white"},{"text":"：那必然是没有的。你觉得就你需要一直吃东西？","color":"white"}]
+execute as @s[scores={rng1=86}] if entity @n[tag=sc,scores={sea_player=2..}] unless items entity @a[tag=SEAPT] container.* bread run tellraw @a[distance=0..250] [{"selector":"@p[tag=SEAPT]","color":"white"},{"text":"：那必然是没有的。至少我没了。","color":"white"}]
+execute as @s[scores={rng1=86}] if entity @n[tag=sc,scores={sea_player=1}] if items entity @a[tag=SEAPT] container.* bread run tellraw @a[distance=0..250] [{"selector":"@p[tag=SEAPT]","color":"white"},{"text":"：有是有。你又要啃？","color":"white"}]
+execute as @s[scores={rng1=86}] if entity @n[tag=sc,scores={sea_player=2..}] if items entity @a[tag=SEAPT] container.* bread run tellraw @a[distance=0..250] [{"selector":"@p[tag=SEAPT]","color":"white"},{"text":"：有是有，但我得先问我同事他要不要。我可不想面包直接被你霍霍了。","color":"white"}]
 
 execute as @s[scores={rng1=100}] run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
-execute as @s[scores={rng1=100}] if entity @n[tag=sc,scores={sea_player=1}] unless items entity @s container.* bread run tellraw @a[distance=0..250] {"text": "艾德雯娜：“嗯，想必也是如此……抱歉。我们先去找越涵吧。”","color": "green"}
-execute as @s[scores={rng1=100}] if entity @n[tag=sc,scores={sea_player=2..}] unless items entity @s container.* bread run tellraw @a[distance=0..250] {"text": "艾德雯娜：“嗯，想必也是如此……抱歉。我们先去找越涵吧。”","color": "green"}
-execute as @s[scores={rng1=100}] if entity @n[tag=sc,scores={sea_player=1}] if items entity @s container.* bread run tellraw @a[distance=0..250] {"text": "艾德雯娜：“待会……分我一块吧，不过先过一会儿。来吧，我们去跟越涵解释一下。”","color": "green"}
-execute as @s[scores={rng1=100}] if entity @n[tag=sc,scores={sea_player=2..}] if items entity @s container.* bread run tellraw @a[distance=0..250] {"text": "艾德雯娜：“也是，你没有义务给我。都来吧，我们去跟越涵解释一下。”","color": "green"}
+execute as @s[scores={rng1=100}] if entity @n[tag=sc,scores={sea_player=1}] unless items entity @a[tag=SEAPT] container.* bread run tellraw @a[distance=0..250] {"text": "艾德雯娜：“嗯，想必也是如此……抱歉。我们先去找越涵吧。”","color": "green"}
+execute as @s[scores={rng1=100}] if entity @n[tag=sc,scores={sea_player=2..}] unless items entity @a[tag=SEAPT] container.* bread run tellraw @a[distance=0..250] {"text": "艾德雯娜：“嗯，想必也是如此……抱歉。我们先去找越涵吧。”","color": "green"}
+execute as @s[scores={rng1=100}] if entity @n[tag=sc,scores={sea_player=1}] if items entity @a[tag=SEAPT] container.* bread run tellraw @a[distance=0..250] {"text": "艾德雯娜：“待会……分我一块吧，不过先过一会儿。来吧，我们去跟越涵解释一下。”","color": "green"}
+execute as @s[scores={rng1=100}] if entity @n[tag=sc,scores={sea_player=2..}] if items entity @a[tag=SEAPT] container.* bread run tellraw @a[distance=0..250] {"text": "艾德雯娜：“也是，你没有义务给我。都来吧，我们去跟越涵解释一下。”","color": "green"}
 
 execute as @s[scores={rng1=104}] as @n[tag=SEAboss4_end] at @s run tp @s ~ ~ ~ facing 90185.00 57.14 80.87
 execute as @s[scores={rng1=105..190}] as @n[tag=SEAboss4_end,x=90185.00,y=57.14,z=80.87,distance=1.5..] at @s run tp @s ^ ^ ^0.5 facing 90185.00 57.14 80.87
