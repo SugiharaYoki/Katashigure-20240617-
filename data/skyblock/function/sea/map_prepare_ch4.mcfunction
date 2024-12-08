@@ -441,7 +441,7 @@ setblock 90232 47 138 minecraft:waxed_weathered_copper_bulb[lit=false]
 setblock 90236 52 140 minecraft:waxed_weathered_copper_bulb[lit=false]
 fill 90241 46 134 90241 44 134 minecraft:cyan_stained_glass
 
-fill 90151 39 101 90151 37 99 air
+
 
 setblock 90249 44 129 air
 setblock 90249 44 129 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 2, id:"minecraft:beef"}}
