@@ -1,6 +1,7 @@
 clear @s[gamemode=!creative] basalt
 clear @s[gamemode=!creative] item_frame
 clear @s[gamemode=!creative] iron_bars
+clear @s[gamemode=!creative] polished_tuff
 clear @s[gamemode=!creative] deepslate_tiles
 clear @s[gamemode=!creative] cracked_deepslate_tiles
 clear @s[gamemode=!creative] deepslate_tile_slab
