@@ -29,6 +29,7 @@ effect clear @a[tag=PVPing]
 effect give @a[tag=PVPing] slow_falling 2 1 true
 clear @a[tag=PVPing]
 clear @a[tag=PVP_dead]
+effect give @a[tag=PVPing] resistance 3 19 true
 stopsound @a[tag=PVP_see]
 scoreboard objectives setdisplay sidebar Perm_PersonWins
 tag @a[tag=PVPing] remove NoMultiMenu
