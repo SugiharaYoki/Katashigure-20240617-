@@ -82,6 +82,7 @@ kill @e[tag=SEAch4_spawn_timer]
 kill @e[tag=SEAchg_spawn_timer]
 kill @e[tag=SEAch5_spawn_timer]
 kill @e[tag=SEAch6_spawn_timer]
+kill @e[tag=SEAchg_spawn_timer_medical1]
 kill @e[type=marker,x=85000,dx=10000,y=-99999,dy=199800,z=-5000,dz=10000,tag=!SEAmarker_not_killable]
 bossbar remove 9066601
 bossbar remove 9066602

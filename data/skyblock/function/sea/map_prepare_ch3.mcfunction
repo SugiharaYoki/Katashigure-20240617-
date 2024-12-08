@@ -137,6 +137,7 @@ setblock 90113 140 109 chest[facing=north]
 item replace block 90113 140 109 container.13 with emerald 3
 
 
+
 setblock 90122 137 120 chest[facing=east]
 setblock 90086 145 116 chest[facing=north]{Lock:"器械资源室2F 燃料架 - B"}
 item replace block 90086 145 116 container.12 with flint 1
@@ -498,3 +499,5 @@ execute positioned 90083 150 160 run function skyblock:sea/m/drowned_maintenance
 execute positioned 90083 150 160 run function skyblock:sea/m/skeleton
 
 fill 90151 39 101 90151 37 99 iron_bars
+
+scoreboard players set SEAchg_spawn_timer_medical1 sea_4temp2 0
