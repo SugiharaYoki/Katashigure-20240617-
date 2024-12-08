@@ -21,6 +21,8 @@ fill 90137 129 97 90136 129 97 air
 setblock 90082 144 120 minecraft:potted_cherry_sapling
 setblock 90132 138 106 minecraft:potted_cherry_sapling
 
+#物资楼三楼
+setblock 90082 150 118 air
 #瓦罐章鱼
 setblock 90084 143 123 air
 setblock 90083 143 123 air

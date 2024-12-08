@@ -43,33 +43,7 @@ execute positioned 90072 139 110 if entity @a[tag=SEAPT,distance=..13] unless en
 execute positioned 90072 139 110 if entity @a[tag=SEAPT,distance=..13] unless entity @n[tag=SEAch3_spawn,distance=0..3] run function skyblock:sea/m/drowned_hat
 execute positioned 90072 139 110 if entity @a[tag=SEAPT,distance=..13] unless entity @n[tag=SEAch3_spawn,distance=0..3] run function skyblock:sea/m/silverfish_big
 execute positioned 90072 139 110 if entity @a[tag=SEAPT,distance=..13] unless entity @n[tag=SEAch3_spawn,distance=0..3] run summon marker ~ ~ ~ {Tags:["SEAch3_spawn"]}
-execute positioned 90072 139 110 if entity @a[tag=SEAPT,distance=..43] unless entity @n[tag=SEAch3_spawn_initial,distance=0..3] positioned 90067 139 103 run function skyblock:sea/m/spider
-execute positioned 90072 139 110 if entity @a[tag=SEAPT,distance=..43] unless entity @n[tag=SEAch3_spawn_initial,distance=0..3] positioned 90067 139 103 run function skyblock:sea/m/zombie_bomb
-execute positioned 90072 139 110 if entity @a[tag=SEAPT,distance=..43] unless entity @n[tag=SEAch3_spawn_initial,distance=0..3] positioned 90111 145 103 run function skyblock:sea/m/skeleton
-execute positioned 90072 139 110 if entity @a[tag=SEAPT,distance=..43] unless entity @n[tag=SEAch3_spawn_initial,distance=0..3] positioned 90111 145 103 run function skyblock:sea/m/skeleton
-execute positioned 90072 139 110 if entity @a[tag=SEAPT,distance=..43] unless entity @n[tag=SEAch3_spawn_initial,distance=0..3] positioned 90135 137 124 run function skyblock:sea/m/pillager
-execute positioned 90072 139 110 if entity @a[tag=SEAPT,distance=..43] unless entity @n[tag=SEAch3_spawn_initial,distance=0..3] positioned 90135 137 124 run function skyblock:sea/m/pillager
-execute positioned 90072 139 110 if entity @a[tag=SEAPT,distance=..43] unless entity @n[tag=SEAch3_spawn_initial,distance=0..3] positioned 90135 137 124 if entity @n[tag=sc,scores={sea_player=3..}] run function skyblock:sea/m/pillager
-execute positioned 90072 139 110 if entity @a[tag=SEAPT,distance=..43] unless entity @n[tag=SEAch3_spawn_initial,distance=0..3] positioned 90135 137 124 run function skyblock:sea/m/silverfish_big
-execute positioned 90072 139 110 if entity @a[tag=SEAPT,distance=..43] unless entity @n[tag=SEAch3_spawn_initial,distance=0..3] positioned 90119 149 112 run function skyblock:sea/m/silverfish
-execute positioned 90072 139 110 if entity @a[tag=SEAPT,distance=..43] unless entity @n[tag=SEAch3_spawn_initial,distance=0..3] positioned 90119 149 112 run function skyblock:sea/m/silverfish
-execute positioned 90072 139 110 if entity @a[tag=SEAPT,distance=..43] unless entity @n[tag=SEAch3_spawn_initial,distance=0..3] positioned 90119 149 112 run function skyblock:sea/m/skeleton
-execute positioned 90072 139 110 if entity @a[tag=SEAPT,distance=..43] unless entity @n[tag=SEAch3_spawn_initial,distance=0..3] positioned 90087 137 147 run function skyblock:sea/m/silverfish_big
-execute positioned 90072 139 110 if entity @a[tag=SEAPT,distance=..43] unless entity @n[tag=SEAch3_spawn_initial,distance=0..3] positioned 90087 137 147 if entity @n[tag=sc,scores={sea_player=4..}] run function skyblock:sea/m/silverfish_big
-execute positioned 90072 139 110 if entity @a[tag=SEAPT,distance=..43] unless entity @n[tag=SEAch3_spawn_initial,distance=0..3] positioned 90087 137 147 run function skyblock:sea/m/silverfish_big
-execute positioned 90072 139 110 if entity @a[tag=SEAPT,distance=..43] unless entity @n[tag=SEAch3_spawn_initial,distance=0..3] positioned 90077 137 146 run function skyblock:sea/m/zombie_security2
-execute positioned 90072 139 110 if entity @a[tag=SEAPT,distance=..43] unless entity @n[tag=SEAch3_spawn_initial,distance=0..3] positioned 90077 137 146 run function skyblock:sea/m/drowned_hat
-execute positioned 90072 139 110 if entity @a[tag=SEAPT,distance=..43] unless entity @n[tag=SEAch3_spawn_initial,distance=0..3] positioned 90077 137 146 run function skyblock:sea/m/drowned_hat
-execute positioned 90072 139 110 if entity @a[tag=SEAPT,distance=..43] unless entity @n[tag=SEAch3_spawn_initial,distance=0..3] positioned 90102 137 153 run function skyblock:sea/m/zombie_cook
-execute positioned 90072 139 110 if entity @a[tag=SEAPT,distance=..43] unless entity @n[tag=SEAch3_spawn_initial,distance=0..3] positioned 90102 137 153 run function skyblock:sea/m/silverfish
-execute positioned 90072 139 110 if entity @a[tag=SEAPT,distance=..43] unless entity @n[tag=SEAch3_spawn_initial,distance=0..3] positioned 90102 137 153 run function skyblock:sea/m/silverfish
-execute positioned 90072 139 110 if entity @a[tag=SEAPT,distance=..43] unless entity @n[tag=SEAch3_spawn_initial,distance=0..3] positioned 90130 137 102 run function skyblock:sea/m/drone
-execute positioned 90072 139 110 if entity @a[tag=SEAPT,distance=..43] unless entity @n[tag=SEAch3_spawn_initial,distance=0..3] positioned 90124 144 118 run function skyblock:sea/m/drone
-execute positioned 90072 139 110 if entity @a[tag=SEAPT,distance=..43] unless entity @n[tag=SEAch3_spawn_initial,distance=0..3] positioned 90097 145 116 run function skyblock:sea/m/drone
-execute positioned 90072 139 110 if entity @a[tag=SEAPT,distance=..43] unless entity @n[tag=SEAch3_spawn_initial,distance=0..3] positioned 90117 152 131 run function skyblock:sea/m/drone
-#execute positioned 90072 139 110 if entity @a[tag=SEAPT,distance=..43] unless entity @n[tag=SEAch3_spawn_initial,distance=0..3] positioned 90117 152 131 run function skyblock:sea/m/drone
-
-execute positioned 90072 139 110 if entity @a[tag=SEAPT,distance=..43] unless entity @n[tag=SEAch3_spawn_initial,distance=0..3] run summon marker ~ ~ ~ {Tags:["SEAch3_spawn_initial"]}
+execute positioned 90072 139 110 if entity @a[tag=SEAPT,distance=..43] unless entity @n[tag=SEAch3_spawn_initial,distance=0..3] run function skyblock:sea/e/ev026_ch3_main_platform
 
 #give @p written_book[written_book_content={pages:['["",{"text":"\\u526f\\u5bbf\\u820d\\u697c\\u7684\\u56db\\u95f4\\u6807\\u51c6\\u623f\\u91cc\\u90fd\\u6709\\u82b1\\u5bf9\\u5427\\uff0c\\u90a3\\u4fbf\\u662f\\u5bc6\\u7801\\u3002\\n\\n\\n"},{"text":"\\u7ea2\\u8272","color":"red"},{"text":"\\u4ee3\\u88681\\n\\n","color":"black"},{"text":"\\u84dd\\u8272","color":"blue"},{"text":"\\u4ee3\\u88680\\n\\n","color":"black"},{"text":"\\u767d\\u8272","color":"gray"},{"text":"\\u4e0d\\u4ee3\\u8868","color":"black"},{"text":"\\u7ea2\\u8272","color":"red"},{"text":"\\n\\n","color":"black"},{"text":"1","color":"red"},{"text":"+","color":"black"},{"text":"1","color":"blue"},{"text":"=1","color":"black"}]'],title:"副宿舍楼2F的展示书",author:"斯顿"}]
 
@@ -92,24 +66,10 @@ execute positioned 90087 143 121 if entity @a[tag=SEAPT,distance=..13,tag=!SEAPF
 
 scoreboard players add @e[tag=SEAch3_spawn_timer] sea_4temp1 1
 execute positioned 90106 138 104 if entity @a[tag=SEAPT,distance=..2.5,tag=!SEAPF] unless entity @n[tag=SEAch3_spawn_timer1,distance=0..3] run summon marker ~ ~ ~ {Tags:["SEAch3_spawn_timer","SEAch3_spawn_timer1"]}
-execute as @n[tag=SEAch3_spawn_timer1,scores={sea_4temp1=1..10}] positioned 90116 138 104 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
-execute as @n[tag=SEAch3_spawn_timer1,scores={sea_4temp1=11}] positioned 90116 138 104 run function skyblock:sea/m/zombie_security2
-execute as @n[tag=SEAch3_spawn_timer1,scores={sea_4temp1=1..10}] positioned 90116 138 105 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
-execute as @n[tag=SEAch3_spawn_timer1,scores={sea_4temp1=11}] positioned 90116 138 105 run function skyblock:sea/m/zombie_security2
-execute as @n[tag=SEAch3_spawn_timer1,scores={sea_4temp1=1..10}] positioned 90106 138 110 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
-execute as @n[tag=SEAch3_spawn_timer1,scores={sea_4temp1=11}] positioned 90106 138 110 run function skyblock:sea/m/skeleton_melee
-execute as @n[tag=SEAch3_spawn_timer1,scores={sea_4temp1=1..10}] positioned 90105 138 110 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
-execute as @n[tag=SEAch3_spawn_timer1,scores={sea_4temp1=11}] positioned 90105 138 110 run function skyblock:sea/m/skeleton_melee
+execute as @n[tag=SEAch3_spawn_timer1,scores={sea_4temp1=1..11}] run function skyblock:sea/e/ev026_ch3_main_platform_crossroad
 
 execute positioned 90099 137 120 if entity @a[tag=SEAPT,distance=..2.5,tag=!SEAPF] unless entity @n[tag=SEAch3_spawn_timer2,distance=0..3] run summon marker ~ ~ ~ {Tags:["SEAch3_spawn_timer","SEAch3_spawn_timer2"]}
-execute as @n[tag=SEAch3_spawn_timer2,scores={sea_4temp1=1..10}] positioned 90099 137 131 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
-execute as @n[tag=SEAch3_spawn_timer2,scores={sea_4temp1=11}] positioned 90099 137 131 run function skyblock:sea/m/skeleton
-execute as @n[tag=SEAch3_spawn_timer2,scores={sea_4temp1=11}] positioned 90099 137 131 run function skyblock:sea/m/skeleton
-execute as @n[tag=SEAch3_spawn_timer2,scores={sea_4temp1=11}] positioned 90099 137 131 run function skyblock:sea/m/skeleton
-execute as @n[tag=SEAch3_spawn_timer2,scores={sea_4temp1=15..25}] positioned 90099 137 131 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
-execute as @n[tag=SEAch3_spawn_timer2,scores={sea_4temp1=26}] positioned 90099 137 131 run function skyblock:sea/m/silverfish_big
-execute as @n[tag=SEAch3_spawn_timer2,scores={sea_4temp1=26}] positioned 90099 137 131 run function skyblock:sea/m/silverfish_big
-
+execute as @n[tag=SEAch3_spawn_timer2,scores={sea_4temp1=1..26}] run function skyblock:sea/e/ev026_ch3_main_platform_the_guard_to_basement
 
 execute positioned 90149 137 138 if entity @a[tag=SEAPT,distance=..2.5,tag=!SEAPF] unless entity @n[tag=SEAch3_spawn_timer,distance=0..1] run summon marker ~ ~ ~ {Tags:["SEAch3_spawn_timer","SEAch3_spawn_timer20241004204001"]}
 execute as @n[tag=SEAch3_spawn_timer20241004204001,scores={sea_4temp1=11..20}] positioned 90149 137 134 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
@@ -121,16 +81,7 @@ execute as @n[tag=SEAch3_spawn_timer20241004204001,scores={sea_4temp1=36}] posit
 
 
 execute positioned 90085 137 140 if entity @a[tag=SEAPT,distance=..2.5,tag=!SEAPF] unless entity @n[tag=SEAch3_spawn_timer3,distance=0..3] run summon marker ~ ~ ~ {Tags:["SEAch3_spawn_timer","SEAch3_spawn_timer3"]}
-execute as @n[tag=SEAch3_spawn_timer3,scores={sea_4temp1=1..10}] positioned 90078 138 141 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
-execute as @n[tag=SEAch3_spawn_timer3,scores={sea_4temp1=11}] positioned 90078 138 141 run function skyblock:sea/m/zombie_security2
-execute as @n[tag=SEAch3_spawn_timer3,scores={sea_4temp1=1..10}] positioned 90078 138 139 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
-execute as @n[tag=SEAch3_spawn_timer3,scores={sea_4temp1=11}] positioned 90078 138 139 run function skyblock:sea/m/zombie_security2
-execute as @n[tag=SEAch3_spawn_timer3,scores={sea_4temp1=1..10}] positioned 90084 137 147 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
-execute as @n[tag=SEAch3_spawn_timer3,scores={sea_4temp1=11}] positioned 90084 137 147 run function skyblock:sea/m/drowned_shield
-execute as @n[tag=SEAch3_spawn_timer3,scores={sea_4temp1=11}] positioned 90084 137 147 run function skyblock:sea/m/drowned_shield
-execute as @n[tag=SEAch3_spawn_timer3,scores={sea_4temp1=1..10}] positioned 90086 137 147 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
-execute as @n[tag=SEAch3_spawn_timer3,scores={sea_4temp1=11}] positioned 90086 137 147 run function skyblock:sea/m/drowned_shield
-execute as @n[tag=SEAch3_spawn_timer3,scores={sea_4temp1=11}] positioned 90086 137 147 run function skyblock:sea/m/drowned_shield
+execute as @n[tag=SEAch3_spawn_timer3,scores={sea_4temp1=1..11}] run function skyblock:sea/e/ev026_ch3_main_platform_the_guard_in_basement
 
 execute positioned 90106 137 152 if entity @a[tag=SEAPT,distance=..2.5,tag=!SEAPF] unless entity @n[tag=SEAch3_spawn_timer4,distance=0..3] run summon marker ~ ~ ~ {Tags:["SEAch3_spawn_timer","SEAch3_spawn_timer4"]}
 execute as @n[tag=SEAch3_spawn_timer4,scores={sea_4temp1=1..10}] positioned 90106 137 140 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
