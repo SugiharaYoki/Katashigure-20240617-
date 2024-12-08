@@ -81,7 +81,7 @@ execute if block 90133 138 127 lever run clear @a[tag=SEAPT] lever[custom_data={
 execute if block 90145 136 127 air run item replace block 90136 155 146 container.12 with lever[minecraft:can_place_on={blocks:"stripped_mangrove_log"},custom_data={sea_lever5:true}] 1
 execute if block 90145 136 127 lever run clear @a[tag=SEAPT] lever[custom_data={sea_lever5:true}]
 
-execute if block 90192 28 118 air run item replace block 90136 155 146 container.12 with lever[minecraft:can_place_on={blocks:"stripped_acacia_log"},custom_data={sea_lever6:true}] 1
+#execute if block 90192 28 118 air run item replace block 90136 155 146 container.12 with lever[minecraft:can_place_on={blocks:"stripped_acacia_log"},custom_data={sea_lever6:true}] 1
 execute if block 90192 28 118 lever run clear @a[tag=SEAPT] lever[custom_data={sea_lever6:true}]
 
 execute if block 90082 150 118 air run item replace block 90119 161 142 container.13 with lever[minecraft:can_place_on={blocks:"stripped_oak_log"},custom_data={sea_lever7:true}] 1
