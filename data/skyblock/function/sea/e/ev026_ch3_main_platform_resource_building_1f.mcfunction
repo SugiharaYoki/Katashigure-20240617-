@@ -1,0 +1,9 @@
+execute positioned 90084 137 115 if entity @a[tag=SEAPT,distance=..13] unless entity @n[tag=SEAch3_spawn,distance=0..3] positioned 90134 137 108 run function skyblock:sea/m/pillager
+execute positioned 90084 137 115 if entity @a[tag=SEAPT,distance=..13] unless entity @n[tag=SEAch3_spawn,distance=0..3] positioned 90134 137 108 run function skyblock:sea/m/pillager
+execute positioned 90084 137 115 if entity @a[tag=SEAPT,distance=..13] unless entity @n[tag=SEAch3_spawn,distance=0..3] positioned 90134 137 108 run function skyblock:sea/m/silverfish
+execute positioned 90084 137 115 if entity @a[tag=SEAPT,distance=..13] unless entity @n[tag=SEAch3_spawn,distance=0..3] positioned 90134 137 108 run function skyblock:sea/m/silverfish
+execute positioned 90084 137 115 if entity @a[tag=SEAPT,distance=..13] unless entity @n[tag=SEAch3_spawn,distance=0..3] positioned 90119 137 120 run function skyblock:sea/m/drowned_maintenance
+execute positioned 90084 137 115 if entity @a[tag=SEAPT,distance=..13] unless entity @n[tag=SEAch3_spawn,distance=0..3] positioned 90119 137 120 run function skyblock:sea/m/pillager
+execute positioned 90084 137 115 if entity @a[tag=SEAPT,distance=..13] unless entity @n[tag=SEAch3_spawn,distance=0..3] run function skyblock:sea/m/drowned_maintenance
+execute positioned 90084 137 115 if entity @a[tag=SEAPT,distance=..13] unless entity @n[tag=SEAch3_spawn,distance=0..3] run function skyblock:sea/m/drowned_maintenance
+execute positioned 90084 137 115 if entity @a[tag=SEAPT,distance=..13] unless entity @n[tag=SEAch3_spawn,distance=0..3] run summon marker ~ ~ ~ {Tags:["SEAch3_spawn"]}
