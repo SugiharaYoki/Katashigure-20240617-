@@ -119,27 +119,27 @@ execute if score sc TimeRemainUnsee matches 540 if entity @n[tag=sc,scores={Map_
 execute if score sc TimeRemainUnsee matches 540 if entity @n[tag=sc,scores={Map_Code=5}] run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run title @a[tag=PVP_see] subtitle {"text":"“选择追随上帝的神徒 定须背弃凡世万物”","color":"red"}
 execute if score sc TimeRemainUnsee matches 540 if entity @n[tag=sc,scores={Map_Code=5}] run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run worldborder set 70 100
 
-execute if score sc TimeRemainUnsee matches 300 if entity @n[tag=sc,scores={Map_Code=5}] run title @a[tag=PVP_see] times 0 60 60
-execute if score sc TimeRemainUnsee matches 300 if entity @n[tag=sc,scores={Map_Code=5}] run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run title @a[tag=PVP_see] title {"text":"反叛的狼烟遮掩大地","color":"yellow"}
-execute if score sc TimeRemainUnsee matches 300 if entity @n[tag=sc,scores={Map_Code=5}] run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run title @a[tag=PVP_see] subtitle {"text":"“汝本生自尘土 必将归于尘土”","color":"red"}
-execute if score sc TimeRemainUnsee matches 300 if entity @n[tag=sc,scores={Map_Code=5}] run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run worldborder set 36 100
+execute if score sc TimeRemainUnsee matches 400 if entity @n[tag=sc,scores={Map_Code=5}] run title @a[tag=PVP_see] times 0 60 60
+execute if score sc TimeRemainUnsee matches 400 if entity @n[tag=sc,scores={Map_Code=5}] run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run title @a[tag=PVP_see] title {"text":"反叛的狼烟遮掩大地","color":"yellow"}
+execute if score sc TimeRemainUnsee matches 400 if entity @n[tag=sc,scores={Map_Code=5}] run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run title @a[tag=PVP_see] subtitle {"text":"“汝本生自尘土 必将归于尘土”","color":"red"}
+execute if score sc TimeRemainUnsee matches 400 if entity @n[tag=sc,scores={Map_Code=5}] run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run worldborder set 36 100
 
-execute if score sc TimeRemainUnsee matches 120 if entity @n[tag=sc,scores={Map_Code=5}] run title @a[tag=PVP_see] times 0 60 60
-execute if score sc TimeRemainUnsee matches 120 if entity @n[tag=sc,scores={Map_Code=5}] run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run title @a[tag=PVP_see] title {"text":"审判日将近","color":"red"}
-execute if score sc TimeRemainUnsee matches 120 if entity @n[tag=sc,scores={Map_Code=5}] run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run title @a[tag=PVP_see] subtitle {"text":"“这是来自神子的最后宽限 罪恶者终将被烈火焚烧”","color":"red"}
-execute if score sc TimeRemainUnsee matches 120 if entity @n[tag=sc,scores={Map_Code=5}] run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run worldborder set 140 120
-execute if score sc TimeRemainUnsee matches 120 if entity @n[tag=sc,scores={Map_Code=5}] run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run stopsound @a[tag=PVP_see]
-execute if score sc TimeRemainUnsee matches 120 if entity @n[tag=sc,scores={Map_Code=5}] run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run playsound minecraft:entity.lightning_bolt.thunder music @a[tag=PVP_see] 25620 52 25620 800
-execute if score sc TimeRemainUnsee matches 120 if entity @n[tag=sc,scores={Map_Code=5}] run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run weather thunder 120
+execute if score sc TimeRemainUnsee matches 260 if entity @n[tag=sc,scores={Map_Code=5}] run title @a[tag=PVP_see] times 0 60 60
+execute if score sc TimeRemainUnsee matches 260 if entity @n[tag=sc,scores={Map_Code=5}] run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run title @a[tag=PVP_see] title {"text":"审判日将近","color":"red"}
+execute if score sc TimeRemainUnsee matches 260 if entity @n[tag=sc,scores={Map_Code=5}] run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run title @a[tag=PVP_see] subtitle {"text":"“这是来自神子的最后宽限 罪恶者终将被烈火焚烧”","color":"red"}
+execute if score sc TimeRemainUnsee matches 260 if entity @n[tag=sc,scores={Map_Code=5}] run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run worldborder set 140 120
+execute if score sc TimeRemainUnsee matches 260 if entity @n[tag=sc,scores={Map_Code=5}] run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run stopsound @a[tag=PVP_see]
+execute if score sc TimeRemainUnsee matches 260 if entity @n[tag=sc,scores={Map_Code=5}] run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run playsound minecraft:entity.lightning_bolt.thunder music @a[tag=PVP_see] 25620 52 25620 800
+execute if score sc TimeRemainUnsee matches 260 if entity @n[tag=sc,scores={Map_Code=5}] run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run weather thunder 120
 
-execute if score sc TimeRemainUnsee matches 0 if entity @n[tag=sc,scores={Map_Code=5}] run title @a[tag=PVP_see] times 0 50 30
-execute if score sc TimeRemainUnsee matches 0 if entity @n[tag=sc,scores={Map_Code=5}] run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run title @a[tag=PVP_see] title {"text":"天堂边境的阶梯已然垂下","color":"black"}
-execute if score sc TimeRemainUnsee matches 0 if entity @n[tag=sc,scores={Map_Code=5}] run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run title @a[tag=PVP_see] subtitle {"text":"“唯有鲜血才能被奉献给吾等伟大的创世神”","color":"black"}
-execute if score sc TimeRemainUnsee matches 0 if entity @n[tag=sc,scores={Map_Code=5}] run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run worldborder set 25 10
-execute if score sc TimeRemainUnsee matches 0 if entity @n[tag=sc,scores={Map_Code=5}] run playsound minecraft:music.nether.nether_wastes music @a[tag=PVP_see] 25620 52 25620 800
-execute if score sc TimeRemainUnsee matches 0..2 if entity @n[tag=sc,scores={Map_Code=5}] run playsound minecraft:ambient.nether_wastes.loop music @a[tag=PVP_see] 25620 52 25620 800 0.6
-execute if score sc TimeRemainUnsee matches 0..2 if entity @n[tag=sc,scores={Map_Code=5}] run playsound minecraft:ambient.nether_wastes.additions music @a[tag=PVP_see] 25620 52 25620 800 0.6
-execute if score sc TimeRemainUnsee matches 0..2 if entity @n[tag=sc,scores={Map_Code=5}] run playsound minecraft:ambient.nether_wastes.mood music @a[tag=PVP_see] 25620 52 25620 800 0.6
+execute if score sc TimeRemainUnsee matches 140 if entity @n[tag=sc,scores={Map_Code=5}] run title @a[tag=PVP_see] times 0 50 30
+execute if score sc TimeRemainUnsee matches 140 if entity @n[tag=sc,scores={Map_Code=5}] run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run title @a[tag=PVP_see] title {"text":"天堂边境的阶梯已然垂下","color":"black"}
+execute if score sc TimeRemainUnsee matches 140 if entity @n[tag=sc,scores={Map_Code=5}] run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run title @a[tag=PVP_see] subtitle {"text":"“唯有鲜血才能被奉献给吾等伟大的创世神”","color":"black"}
+execute if score sc TimeRemainUnsee matches 140 if entity @n[tag=sc,scores={Map_Code=5}] run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run worldborder set 25 10
+execute if score sc TimeRemainUnsee matches 140 if entity @n[tag=sc,scores={Map_Code=5}] run playsound minecraft:music.nether.nether_wastes music @a[tag=PVP_see] 25620 52 25620 800
+execute if score sc TimeRemainUnsee matches 140..142 if entity @n[tag=sc,scores={Map_Code=5}] run playsound minecraft:ambient.nether_wastes.loop music @a[tag=PVP_see] 25620 52 25620 800 0.6
+execute if score sc TimeRemainUnsee matches 140..142 if entity @n[tag=sc,scores={Map_Code=5}] run playsound minecraft:ambient.nether_wastes.additions music @a[tag=PVP_see] 25620 52 25620 800 0.6
+execute if score sc TimeRemainUnsee matches 140..142 if entity @n[tag=sc,scores={Map_Code=5}] run playsound minecraft:ambient.nether_wastes.mood music @a[tag=PVP_see] 25620 52 25620 800 0.6
 
 execute if score sc TimeRemainUnsee matches 300 if entity @n[tag=sc,scores={Map_Code=7}] run title @a[tag=PVP_see] times 0 60 60
 execute if score sc TimeRemainUnsee matches 300 if entity @n[tag=sc,scores={Map_Code=7}] run title @a[tag=PVP_see] title {"text":"钟声贯彻世间 决战之歌于此奏响","color":"red"}
