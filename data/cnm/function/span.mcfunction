@@ -6,7 +6,7 @@ $execute unless entity @e[tag=CNM_centre,distance=..$(max_radius)] run return -1
 
 $execute if entity @e[tag=CNM_centre,distance=..$(max_radius)] if score type cnm matches 1 run fill ~-$(room_size_half) ~ ~-$(room_size_half) ~$(room_size_half) ~$(room_size) ~$(room_size_half) deepslate hollow
 $execute if entity @e[tag=CNM_centre,distance=..$(max_radius)] if score type cnm matches 2 run fill ~-$(room_size_half) ~ ~-$(room_size_half) ~$(room_size_half) ~$(room_size) ~$(room_size_half) ice hollow
-$execute if entity @e[tag=CNM_centre,distance=..$(max_radius)] if score type cnm matches $(room_size_half) run fill ~-$(room_size_half) ~ ~-$(room_size_half) ~$(room_size_half) ~$(room_size) ~$(room_size_half) grass_block hollow
+$execute if entity @e[tag=CNM_centre,distance=..$(max_radius)] if score type cnm matches 3 run fill ~-$(room_size_half) ~ ~-$(room_size_half) ~$(room_size_half) ~$(room_size) ~$(room_size_half) grass_block hollow
 $execute if entity @e[tag=CNM_centre,distance=..$(max_radius)] if score type cnm matches 4 run fill ~-$(room_size_half) ~ ~-$(room_size_half) ~$(room_size_half) ~$(room_size) ~$(room_size_half) spruce_planks hollow
 $execute if entity @e[tag=CNM_centre,distance=..$(max_radius)] if score type cnm matches 5 run setblock ~ ~ ~ white_concrete
 
