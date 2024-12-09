@@ -15,5 +15,6 @@ execute store result storage cnm max_radius int 1.0 run scoreboard players get m
 execute store result storage cnm room_size_half int 1.0 run scoreboard players get room_size_half cnm
 execute store result storage cnm room_size int 1.0 run scoreboard players get room_size cnm
 execute store result storage cnm room_size_p int 1.0 run scoreboard players get room_size_p cnm
+execute store result storage cnm limit int 1.0 run scoreboard players get interface_limit cnm
 
 function cnm:init with storage cnm
