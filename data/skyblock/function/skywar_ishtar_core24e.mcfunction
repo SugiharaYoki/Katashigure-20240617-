@@ -10,6 +10,28 @@ execute as @e[type=marker,tag=Bless24_Marker,x=50062,y=226,z=50052,distance=..30
 execute as @e[type=marker,tag=Bless24_Marker,x=50062,y=226,z=50052,distance=..3000] at @s run particle large_smoke ~ ~ ~ 0.2 0.2 0.2 0.09 2
 execute as @e[type=marker,tag=Bless24_Marker,x=50062,y=226,z=50052,distance=..3000] at @s run playsound entity.generic.explode block @a ~ ~ ~ 1 0.9
 execute as @e[type=marker,tag=Bless24_Marker,x=50062,y=226,z=50052,distance=..3000] at @s unless block ~ ~ ~ bedrock run fill ~ ~ ~ ~ ~ ~ air destroy
+
+execute as @e[type=marker,tag=Bless24_Marker,x=50062,y=226,z=50052,distance=..3000,scores={rng5=2..}] at @s unless block ~1 ~ ~ bedrock run fill ~ ~ ~ ~ ~ ~ air destroy
+execute as @e[type=marker,tag=Bless24_Marker,x=50062,y=226,z=50052,distance=..3000,scores={rng5=2..}] at @s unless block ~-1 ~ ~ bedrock run fill ~ ~ ~ ~ ~ ~ air destroy
+execute as @e[type=marker,tag=Bless24_Marker,x=50062,y=226,z=50052,distance=..3000,scores={rng5=2..}] at @s unless block ~ ~ ~1 bedrock run fill ~ ~ ~ ~ ~ ~ air destroy
+execute as @e[type=marker,tag=Bless24_Marker,x=50062,y=226,z=50052,distance=..3000,scores={rng5=2..}] at @s unless block ~ ~ ~-1 bedrock run fill ~ ~ ~ ~ ~ ~ air destroy
+execute as @e[type=marker,tag=Bless24_Marker,x=50062,y=226,z=50052,distance=..3000,scores={rng5=3..}] at @s unless block ~1 ~ ~1 bedrock run fill ~ ~ ~ ~ ~ ~ air destroy
+execute as @e[type=marker,tag=Bless24_Marker,x=50062,y=226,z=50052,distance=..3000,scores={rng5=3..}] at @s unless block ~-1 ~ ~1 bedrock run fill ~ ~ ~ ~ ~ ~ air destroy
+execute as @e[type=marker,tag=Bless24_Marker,x=50062,y=226,z=50052,distance=..3000,scores={rng5=3..}] at @s unless block ~1 ~ ~-1 bedrock run fill ~ ~ ~ ~ ~ ~ air destroy
+execute as @e[type=marker,tag=Bless24_Marker,x=50062,y=226,z=50052,distance=..3000,scores={rng5=3..}] at @s unless block ~-1 ~ ~-1 bedrock run fill ~ ~ ~ ~ ~ ~ air destroy
+execute as @e[type=marker,tag=Bless24_Marker,x=50062,y=226,z=50052,distance=..3000,scores={rng5=4..}] at @s unless block ~2 ~ ~ bedrock run fill ~ ~ ~ ~ ~ ~ air destroy
+execute as @e[type=marker,tag=Bless24_Marker,x=50062,y=226,z=50052,distance=..3000,scores={rng5=4..}] at @s unless block ~-2 ~ ~ bedrock run fill ~ ~ ~ ~ ~ ~ air destroy
+execute as @e[type=marker,tag=Bless24_Marker,x=50062,y=226,z=50052,distance=..3000,scores={rng5=4..}] at @s unless block ~ ~ ~2 bedrock run fill ~ ~ ~ ~ ~ ~ air destroy
+execute as @e[type=marker,tag=Bless24_Marker,x=50062,y=226,z=50052,distance=..3000,scores={rng5=4..}] at @s unless block ~ ~ ~-2 bedrock run fill ~ ~ ~ ~ ~ ~ air destroy
+execute as @e[type=marker,tag=Bless24_Marker,x=50062,y=226,z=50052,distance=..3000,scores={rng5=5..}] at @s unless block ~2 ~ ~1 bedrock run fill ~ ~ ~ ~ ~ ~ air destroy
+execute as @e[type=marker,tag=Bless24_Marker,x=50062,y=226,z=50052,distance=..3000,scores={rng5=5..}] at @s unless block ~-2 ~ ~1 bedrock run fill ~ ~ ~ ~ ~ ~ air destroy
+execute as @e[type=marker,tag=Bless24_Marker,x=50062,y=226,z=50052,distance=..3000,scores={rng5=5..}] at @s unless block ~1 ~ ~2 bedrock run fill ~ ~ ~ ~ ~ ~ air destroy
+execute as @e[type=marker,tag=Bless24_Marker,x=50062,y=226,z=50052,distance=..3000,scores={rng5=5..}] at @s unless block ~1 ~ ~-2 bedrock run fill ~ ~ ~ ~ ~ ~ air destroy
+execute as @e[type=marker,tag=Bless24_Marker,x=50062,y=226,z=50052,distance=..3000,scores={rng5=5..}] at @s unless block ~2 ~ ~-1 bedrock run fill ~ ~ ~ ~ ~ ~ air destroy
+execute as @e[type=marker,tag=Bless24_Marker,x=50062,y=226,z=50052,distance=..3000,scores={rng5=5..}] at @s unless block ~-2 ~ ~-1 bedrock run fill ~ ~ ~ ~ ~ ~ air destroy
+execute as @e[type=marker,tag=Bless24_Marker,x=50062,y=226,z=50052,distance=..3000,scores={rng5=5..}] at @s unless block ~-1 ~ ~2 bedrock run fill ~ ~ ~ ~ ~ ~ air destroy
+execute as @e[type=marker,tag=Bless24_Marker,x=50062,y=226,z=50052,distance=..3000,scores={rng5=5..}] at @s unless block ~-1 ~ ~-2 bedrock run fill ~ ~ ~ ~ ~ ~ air destroy
+
 execute as @e[type=marker,tag=Bless24_Marker,x=50062,y=226,z=50052,distance=..3000] at @s run tp @s ~ ~-1 ~
 execute as @e[type=marker,tag=Bless24_Marker,x=40000,y=-3000,z=40000,dx=20000,dy=2800,dz=20000] at @s run kill @s
 
