@@ -19,6 +19,9 @@ execute if entity @s[scores={ishtar_bless_3=6}] run give @s iron_sword[custom_na
 execute if entity @s[scores={ishtar_bless_1=7}] run give @s zoglin_spawn_egg 2
 execute if entity @s[scores={ishtar_bless_2=7}] run give @s zoglin_spawn_egg 2
 execute if entity @s[scores={ishtar_bless_3=7}] run give @s zoglin_spawn_egg 2
+execute if entity @s[scores={ishtar_bless_1=7}] run give @s magma_cube_spawn_egg 2
+execute if entity @s[scores={ishtar_bless_2=7}] run give @s magma_cube_spawn_egg 2
+execute if entity @s[scores={ishtar_bless_3=7}] run give @s magma_cube_spawn_egg 2
 execute if entity @s[scores={ishtar_bless_1=8}] run give @s enchanted_golden_apple
 execute if entity @s[scores={ishtar_bless_2=8}] run give @s enchanted_golden_apple
 execute if entity @s[scores={ishtar_bless_3=8}] run give @s enchanted_golden_apple
