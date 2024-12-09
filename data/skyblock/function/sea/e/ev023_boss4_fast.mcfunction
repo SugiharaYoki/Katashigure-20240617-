@@ -103,6 +103,7 @@ execute as @n[tag=SEAboss4,scores={rng2=8..},tag=!SEAboss4_phase3] run tag @s ad
 execute as @n[tag=SEAboss4,scores={rng8=1..}] at @s run scoreboard players add @s rng8 1
 
 
+execute as @n[tag=SEAboss4,scores={health=..25,rng2=10..}] run scoreboard players set @s rng7 179
 execute as @n[tag=SEAboss4,scores={rng7=180..}] run scoreboard players set @s rng8 0
 execute as @n[tag=SEAboss4,scores={rng7=180}] run data modify entity @s Invulnerable set value 1b
 execute as @n[tag=SEAboss4,scores={rng7=180}] run stopsound @a[tag=SEAPT]
