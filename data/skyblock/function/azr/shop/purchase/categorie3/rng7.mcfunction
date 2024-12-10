@@ -1,3 +1,3 @@
-give @s chainmail_leggings[custom_data={chainmail_leggings_normal:1b},custom_model_data=100003]
+function skyblock:azr/items/chainmail_leggings_normal
 
 scoreboard players remove @s Azr_emerald 6

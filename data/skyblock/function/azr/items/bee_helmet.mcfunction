@@ -1,0 +1,1 @@
+give @s golden_helmet[custom_data={bee_helmet:1b},custom_name='{"text":"蜂棘帽","italic":false}',enchantments={thorns:2,unbreaking:2},custom_model_data=100001]

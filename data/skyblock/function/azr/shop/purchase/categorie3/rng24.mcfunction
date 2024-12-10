@@ -1,4 +1,4 @@
-give @s chainmail_helmet[custom_data={chainmail_helmet_protect:1b},custom_name='{"text":"链帽·反透","italic":false}',enchantments={protection:1},custom_model_data=100009]
+function skyblock:azr/items/chainmail_helmet_protect
 
 clear @s chainmail_helmet[custom_data~{chainmail_helmet_normal:1b}] 1
 scoreboard players remove @s Azr_emerald 3

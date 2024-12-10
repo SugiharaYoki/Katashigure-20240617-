@@ -1,3 +1,3 @@
-give @s leather_leggings[custom_data={leather_leggings_normal:1b},custom_model_data=100003]
+function skyblock:azr/items/leather_leggings_normal
 
 scoreboard players remove @s Azr_emerald 3

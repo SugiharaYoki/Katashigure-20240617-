@@ -1,0 +1,1 @@
+give @s chainmail_chestplate[custom_data={chainmail_chestplate_death:1b},custom_name='{"text":"链甲·亡息","italic":false}',attribute_modifiers=[{type:"minecraft:generic.armor",id:"azr:chainmail_chestplate_death.armor",amount:5.5,operation:"add_value"}],custom_model_data=100006]

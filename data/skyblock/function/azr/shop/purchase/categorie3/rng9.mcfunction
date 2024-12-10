@@ -1,3 +1,3 @@
-give @s leather_helmet[custom_data={leather_helmet_harden:1b},custom_name='{"text":"皮革帽·加固","italic":false}',attribute_modifiers=[{type:"minecraft:generic.armor",id:"azr:leather_helmet.armor",amount:1.5,operation:"add_value",slot:"head"}],custom_model_data=100005]
+function skyblock:azr/items/leather_helmet_harden
 
 clear @s leather 2

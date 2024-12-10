@@ -1,3 +1,3 @@
-give @s iron_boots[custom_data={iron_boots_normal:1b}]
+function skyblock:azr/items/iron_boots_normal
 
 scoreboard players remove @s Azr_emerald 12

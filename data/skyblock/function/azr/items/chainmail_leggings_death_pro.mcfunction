@@ -1,0 +1,1 @@
+give @s chainmail_leggings[custom_data={chainmail_leggings_death:1b},custom_name='{"text":"链裤·亡息","italic":false}',attribute_modifiers=[{type:"minecraft:generic.armor",id:"azr:chainmail_leggings_death.armor",amount:5.0,operation:"add_value"}],custom_model_data=100007]

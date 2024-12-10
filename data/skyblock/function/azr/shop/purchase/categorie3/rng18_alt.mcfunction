@@ -1,3 +1,3 @@
-give @s iron_chestplate[custom_data={iron_chestplate_normal:1b}]
+function skyblock:azr/items/iron_chestplate_normal
 
 scoreboard players remove @s Azr_emerald 16

@@ -1,0 +1,1 @@
+give @s leather_leggings[custom_data={leather_leggings_harden:1b},custom_name='{"text":"皮革裤·加固","italic":false}',attribute_modifiers=[{type:"minecraft:generic.armor",id:"azr:leather_leggings.armor",amount:2.5,operation:"add_value"}],custom_model_data=100007]

@@ -1,0 +1,175 @@
+石英
+    quartz 魔界石英 100001
+僵尸头
+    zombie_head 腐烂的尸首 100001
+打火石
+    instant_spark 一次性打火石 100001
+绿色染料
+    grass_remains 草附的虫骸 100001
+黑色染料
+    insect_remains 虫骸 100001
+红色染料
+    remnant 遗存的狂戮 100001
+骨头
+    hard_bone 硬骨 100001
+    frozen_bone 冻骨 100002
+铁粒
+    shield_shard 盾牌碎片 100001
+甜菜根
+    blast_root 爆裂菜根 100001
+纸
+    sanct_credo 神殿信条 100001
+生铁
+    raw_iron 钝铁 100001
+生金
+    raw_gold 钝金 100001
+兔子腿
+    claw 尸爪
+恶魂之泪
+    light_essence 光明精华 100001
+    dark_essence 黑暗精华 100002
+发酵的蛛眼
+    poison_sac 蛛毒囊 100001
+药水箭
+    magical_arrow_strong 魔蚀·散羽之箭 100001
+下界之星
+    revival_star 下界命星 100001
+铁锭
+    coal_iron 碳钢 100001
+金锭
+    soft_gold 软金 100001
+烈焰粉
+    flame_powder 炽焰粉尘 100001
+知识之书
+    LifeVitae 生命手册 100001
+    Error 错误 100002
+附魔书
+    PsychicVitae 灵能手册 100001
+不死图腾
+    greed_totem 贪婪图腾 100001
+灯笼
+    soul_expel_lantern 逐鬼的华灯 100001
+火把
+    soul_expel_torch 驱灵的火烛 100001
+钓竿
+    chain_rod 缠绕杆 100001
+    chain_rod_heavy 缠绕重杆 100002
+    chain_rod_heavy_pro 缠绕重杆·改 100003
+弓
+    bow_normal 弓·传统 100001
+    bow_god 神祝弓 100002
+弩
+    crossbow_normal 弩·传统 100001
+    crossbow_piercing 弩·迅穿 100002
+    crossbow_quick 弩·速填 100003
+    crossbow_power 弩·强化 100004
+盔甲
+    铁
+    iron_helmet_normal 铁头盔 100001
+    iron_chestplate_normal 铁胸甲 100002
+    iron_leggings_normal 铁护腿 100003
+    iron_boots_normal 铁靴 100004
+    iron_helmet_zombie 铁头盔·裹尸 100005
+    iron_chestplate_zombie 铁胸甲·裹尸 100006
+    iron_leggings_zombie 铁护腿·裹尸 100007
+    iron_boots_zombie 铁靴·裹尸 100008
+    皮革
+
+    leather_helmet_normal 皮革帽 100001
+    leather_chestplate_normal 皮革胸甲 100002
+    leather_leggings_normal 皮革护腿 100003
+    leather_boots_normal 皮革靴 100004
+    leather_helmet_harden 皮革帽·加固 100005
+    leather_chestplate_harden 皮革胸甲·加固 100006
+    leather_leggings_harden 皮革护腿·加固 100007
+    leather_boots_harden 皮革靴·加固 100008
+    锁链
+    chainmail_helmet_normal 锁链头盔 100001
+    chainmail_chestplate_normal 锁链胸甲 100002
+    chainmail_leggings_normal 锁链护腿 100003
+    chainmail_boots_normal 锁链靴 100004
+    chainmail_helmet_death 锁链头盔·亡息 100005
+    chainmail_chestplate_death 锁链胸甲·亡息 100006
+    chainmail_leggings_death 锁链护腿·亡息 100007
+    chainmail_boots_death 锁链靴·亡息 100008
+    chainmail_helmet_protect 锁链头盔·反透 100009
+    chainmail_chestplate_protect 锁链胸甲·反透 100010
+    chainmail_leggings_protect 锁链护腿·反透 100011
+    chainmail_boots_protect 锁链靴·反透 100012
+    金
+    bee_helmet 蜂棘帽 100001
+    bee_chestplate 黄蜂服 100002
+铲
+    铁
+    iron_shovel_chain 锁链重锹 100001
+    iron_shovel_chain_fixed 锁链正锹 100002
+    iron_shovel_prison 铁锹·狱锢 100003
+    石
+    weapon_bone_shovel 硬骨铲 100001
+    weapon_bone_shovel_pro 硬骨铲·改 100002
+    weapon_bone_shovel_flame 硬骨铲·焰 100003
+斧
+    金
+    weapon_gold_axe 纯金长柄斧 100001
+    铁
+    iron_axe_normal 铁斧 100001
+    iron_axe_chain_long 锁链长斧 100002
+    iron_axe_chain_wide 锁链阔斧 100003
+    iron_axe_coal_iron 铁斧·碳钢 100004
+    iron_axe_prison 铁斧·狱栅 100005
+    weapon_black_iron_axe 铁斧·黑钢 100006
+    石
+    stone_axe_normal 石斧 100001
+    stone_axe_zombie 石斧·尸变 100002
+    stone_axe_death 石斧·亡息 100003
+    stone_axe_evil 石斧·笼怨 100004
+    weapon_zombie_stone_axe 磐石斧·尸劣 100005
+    木
+    wooden_axe_normal 木斧 100001
+    wooden_axe_zombie 木斧·尸化 100002
+锄
+    铁
+    fighter_sickle 战镰 100001
+    石
+    stone_hoe_normal 石锄 100001
+    stone_hoe_bogged 石锄·沼赎 100002
+    stone_sickle 石镰 100003
+    木
+    wooden_hoe_normal 木锄 100001
+剑
+    金
+    weapon_gold_sword 纯金单刃剑 100001
+    铁
+    iron_sword_normal 铁剑 100001
+    iron_sword_bonecutter 长铸剑·斩骨 100002
+    iron_sword_chain 锁链长剑 100003
+    iron_sword_coal_iron 铁剑·碳钢 100004
+    iron_sword_long 长铸剑 100005
+    iron_sword_fire 火铸剑 100006
+    iron_sword_prison 铁剑·狱映 100007
+    weapon_black_iron_sword 铁剑·黑钢 100008
+    rapier_normal 刺剑·传统 100009
+    rapier_rain 刺剑·疾雨 100010
+    rapier_wind 刺剑·迅风 100011
+
+    石
+    stone_sword_normal 石剑 100001
+    stone_sword_zombie 石剑·尸变 100002
+    stone_sword_evil 石剑·笼怨 100003
+    木
+    wooden_sword_normal 木剑 100001
+    wooden_sword_death 木剑·亡息 100002
+    wooden_sword_zombie 木剑·尸化 100003
+盾
+    shield_normal 盾牌 100001
+    shield_solid 坚盾 100002
+    shield_sharp 刺盾 100003
+    shield_solid_pro 坚盾·改 100004
+    shield_sharp_pro 刺盾·改 100005
+砖
+    weapon_brick 小巧的猪板砖 100001
+末影水晶
+    core_force 蛮之核心 100001
+    core_melody 歌之核心 100002
+    core_flow 流之核心 100003
+    core_steel 钢之核心 100004
