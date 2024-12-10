@@ -1,3 +1,4 @@
+scoreboard players set stageSeconds Azr_system 0
 execute as @a[tag=azrPlayer,x=-79938,y=41,z=160,distance=5..] at @s run scoreboard players set @s If_Lectern 0
 
 execute as @a[tag=!hasSkills,tag=azrPlayer,x=-79938,y=41,z=160,distance=..5,scores={If_Lectern=1..}] at @s run tag @s add TEMP_azrEvent2
