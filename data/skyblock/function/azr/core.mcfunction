@@ -60,8 +60,8 @@ execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system 
 execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 18 run function skyblock:azr/stage/stage7_beta
 #第七关-第八关 19
 execute if score stage Azr_system matches 19 run scoreboard players set stageSeconds Azr_system 0
-
-#TODO
+#图书馆 (After Stage Vestige) 241
+execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 241 run function skyblock:azr/stage/stage_event6
 #第八关 20
 execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 20 run function skyblock:azr/stage/stage8
 #第八关-BOSS2（EVENT3) 21-22

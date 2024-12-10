@@ -1,0 +1,16 @@
+{
+    "lint": {
+        "undeclaredSymbol": [
+            {
+                "if": [
+                    {
+                        "category": "sound_event"
+                    }
+                ],
+                "then": {
+                    "report": "information"
+                }
+            }
+        ]
+    }
+}
