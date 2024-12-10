@@ -27,11 +27,12 @@ execute if entity @s[scores={If_MD_13=1..,ishtar_core_1=9},gamemode=survival] ru
 execute if entity @s[scores={If_MD_13=1..,ishtar_core_1=9},gamemode=survival] run fill ~2 ~2 ~-2 ~2 ~2 ~-2 lantern replace air
 execute if entity @s[scores={If_MD_13=1..,ishtar_core_1=9},gamemode=survival] run fill ~-2 ~2 ~2 ~-2 ~2 ~2 lantern replace air
 execute if entity @s[scores={If_MD_13=1..,ishtar_core_1=9},gamemode=survival] run fill ~-2 ~2 ~-2 ~-2 ~2 ~-2 lantern replace air
+execute if entity @s[scores={If_MD_13=1..,ishtar_core_1=9},gamemode=survival] run effect give @s jump_boost 5 2 false
 execute if entity @s[scores={If_MD_13=1..,ishtar_core_1=10}] run scoreboard players set @s If_MD_13 0
 execute if entity @s[scores={ishtar_core_1=10..}] run scoreboard players set @s ishtar_core_1 0
 
 execute if entity @s[scores={If_MD_Strad=1..}] run playsound minecraft:block.beacon.power_select ambient @a ~ ~2 ~ 4 0.5
-execute if entity @s[scores={If_MD_Strad=1..}] run summon area_effect_cloud ~ ~ ~ {Particle:{type:"end_rod"},Radius:5,Duration:200,potion_contents:{custom_color:16383998,custom_effects:[{id:levitation,duration:120,amplifier:2,show_particles:1b,show_icon:1b},{id:glowing,duration:120,amplifier:0,show_particles:1b,show_icon:1b}]}}
+execute if entity @s[scores={If_MD_Strad=1..}] run summon area_effect_cloud ~ ~ ~ {Particle:{type:"end_rod"},Radius:5,Duration:200,potion_contents:{custom_color:16383998,custom_effects:[{id:levitation,duration:120,amplifier:3,show_particles:1b,show_icon:1b},{id:glowing,duration:120,amplifier:0,show_particles:1b,show_icon:1b}]}}
 execute if entity @s[scores={If_MD_Strad=1..}] run scoreboard players set @s If_MD_Strad 0
 
 execute if entity @s[scores={If_MD_Wait=1..}] run playsound minecraft:block.beacon.deactivate ambient @a ~ ~1 ~ 4 0.8
@@ -44,6 +45,7 @@ execute if entity @s[scores={If_MD_Wait=1..}] run scoreboard players set @s If_M
 
 execute if entity @s[scores={If_MD_Chirp=1..}] rotated ~ 0 run tellraw @a[distance=0.01..7] {"text": "送你一个礼物！","color": "gold","bold":true}
 execute if entity @s[scores={If_MD_Chirp=1..}] rotated ~ 0 run playsound block.note_block.bell master @a ~ ~ ~ 1 1.5
+execute if entity @s[scores={If_MD_Chirp=1..}] rotated ~ 0 run give @s tnt 4
 execute if entity @s[scores={If_MD_Chirp=1..}] rotated ~ 0 positioned ^ ^ ^-1 if block ~ ~ ~ air run summon tnt ~ ~ ~ {fuse:80}
 execute if entity @s[scores={If_MD_Chirp=1..}] rotated ~ 0 positioned ^ ^ ^1 if block ~ ~ ~ air run summon tnt ~ ~ ~ {fuse:80}
 execute if entity @s[scores={If_MD_Chirp=1..}] rotated ~ 0 positioned ^-1 ^ ^ if block ~ ~ ~ air run summon tnt ~ ~ ~ {fuse:80}

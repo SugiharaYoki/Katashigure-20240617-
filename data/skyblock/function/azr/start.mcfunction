@@ -23,24 +23,6 @@ scoreboard objectives add Azr_Shop_rng11 dummy
 scoreboard objectives add Azr_Shop_rng12 dummy
 scoreboard objectives add Azr_Shop_rng13 dummy
 scoreboard objectives add melonCount dummy
-scoreboard objectives add AZR_chainKill minecraft.custom:minecraft.mob_kills
-scoreboard objectives add AZR_chainKill_damage minecraft.custom:minecraft.damage_dealt
-scoreboard objectives add AZR_chainKill_damageblocked minecraft.custom:minecraft.damage_blocked_by_shield
-scoreboard objectives add AZR_chainKill_damagetaken minecraft.custom:minecraft.damage_taken
-scoreboard objectives add AZR_chainKill_count dummy
-scoreboard objectives add AZR_chainKill_chargeup dummy
-scoreboard objectives add AZR_chainKillUpg_pts dummy
-scoreboard objectives add AZR_chainKillUpg_chargespeed dummy
-scoreboard objectives add AZR_chainKillUpg_chargeboost dummy
-scoreboard objectives add AZR_chainKillUpg_attackcount dummy
-scoreboard objectives add AZR_chainKillUpg_attackcountmin dummy
-scoreboard objectives add AZR_chainKillUpg_attackdamage dummy
-scoreboard objectives add AZR_chainKillUpg_attackrange dummy
-scoreboard objectives add AZR_chainKillUpg_defense dummy
-scoreboard objectives add AZR_chainKillUpg_attackheal dummy
-scoreboard objectives add AZR_chainKillUpg_defensecharge dummy
-scoreboard objectives add AZR_chainKillUpg_antichargedecrease dummy
-scoreboard objectives add AZR_chainKillUpg_attackspeed dummy
 #Azr_arrowOrbTimer用于boss技能
 scoreboard objectives add Azr_arrowOrbTimer dummy
 scoreboard objectives add Azr_shopChapter dummy
