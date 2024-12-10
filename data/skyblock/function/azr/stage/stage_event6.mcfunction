@@ -20,7 +20,7 @@ execute as @n[tag=AzrielEvent3756RTD] at @s unless entity @a[tag=azrPlayer,dista
 execute as @a[tag=azrPlayer] at @s if entity @n[tag=AzrielEvent3757,distance=..5.5] run tag @a[distance=..1000] add AzrielEvent3757S
 execute if entity @a[tag=AzrielEvent3757S] run tag @n[tag=AzrielEvent3757] remove AzrielEvent3757
 execute as @a[tag=AzrielEvent3757S] run tellraw @s {"text":"弩手：","color":"aqua"}
-execute if entity @a[tag=AzrielEvent3756S] at @n[tag=AzrielEvent3757] run playsound entity.vindicator.ambient master @a ~ ~ ~ 2 1.2
+execute if entity @a[tag=AzrielEvent3757] at @n[tag=AzrielEvent3757] run playsound entity.vindicator.ambient master @a ~ ~ ~ 2 1.2
 execute if score playerCount Azr_system matches 1 as @a[tag=AzrielEvent3757S] run tellraw @s {"text":"“我先拦住这个人类，你们快点绕路去缺口那里挡住魔界军！”","color":"white"}
 execute if score playerCount Azr_system matches 2 as @a[tag=AzrielEvent3757S] run tellraw @s {"text":"“我先拦住他俩，你们快点绕路去缺口那里挡住魔界军！”","color":"white"}
 execute if score playerCount Azr_system matches 3.. as @a[tag=AzrielEvent3757S] run tellraw @s {"text":"“我先拦住他们，你们快点绕路去缺口那里挡住魔界军！”","color":"white"}
