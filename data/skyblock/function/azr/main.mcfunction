@@ -12,6 +12,24 @@ scoreboard players enable @a MultiMenu
 scoreboard objectives add Azr_system dummy
 scoreboard objectives add Azr_startCount dummy
 scoreboard objectives add Azr_skillPoints dummy
+scoreboard objectives add AZR_chainKill minecraft.custom:minecraft.mob_kills
+scoreboard objectives add AZR_chainKill_damage minecraft.custom:minecraft.damage_dealt
+scoreboard objectives add AZR_chainKill_damageblocked minecraft.custom:minecraft.damage_blocked_by_shield
+scoreboard objectives add AZR_chainKill_damagetaken minecraft.custom:minecraft.damage_taken
+scoreboard objectives add AZR_chainKill_count dummy
+scoreboard objectives add AZR_chainKill_chargeup dummy
+scoreboard objectives add AZR_chainKillUpg_pts dummy
+scoreboard objectives add AZR_chainKillUpg_chargespeed dummy
+scoreboard objectives add AZR_chainKillUpg_chargeboost dummy
+scoreboard objectives add AZR_chainKillUpg_attackcount dummy
+scoreboard objectives add AZR_chainKillUpg_attackcountmin dummy
+scoreboard objectives add AZR_chainKillUpg_attackdamage dummy
+scoreboard objectives add AZR_chainKillUpg_attackrange dummy
+scoreboard objectives add AZR_chainKillUpg_defense dummy
+scoreboard objectives add AZR_chainKillUpg_attackheal dummy
+scoreboard objectives add AZR_chainKillUpg_defensecharge dummy
+scoreboard objectives add AZR_chainKillUpg_antichargedecrease dummy
+scoreboard objectives add AZR_chainKillUpg_attackspeed dummy
 #skills
 #skill 1 幽毒若水 lv3 - 厄渊毒霾 lv2
 scoreboard objectives add Azr_SK1 dummy
@@ -49,13 +67,7 @@ scoreboard objectives add Azr_SK16 dummy
 scoreboard players set DEBUG_maxStageLimit Azr_system 25
 #scoreboard players set DEBUG_fakePlayer Azr_system 10
 
-#游戏运行时
-execute as @a[tag=azrPlayer,scores={Azr_forceDeath=1..}] at @s run function skyblock:azr/end_game/player_dead
-execute as @a[tag=azrPlayer,scores={Azr_isDead=1..}] at @s run function skyblock:azr/end_game/player_dead
-
-#update spawnpoint
-execute as @a[tag=azrPlayer,tag=azrUpdateSpawnPoint] at @s unless block ~ ~-1 ~ air unless block ~ ~-1 ~ lava unless block ~ ~ ~ lava run spawnpoint @s ~ ~ ~
-execute as @a[tag=azrPlayer,tag=azrUpdateSpawnPoint] at @s unless block ~ ~-1 ~ air unless block ~ ~-1 ~ lava unless block ~ ~ ~ lava run tag @s remove azrUpdateSpawnPoint
+execute as @a[tag=azrPlayer] run function skyblock:azr/player
 
 #在appetence的四倍速走秒
 execute if score isStarted Azr_system matches 1 if score stage Azr_system matches 34 if score gametick Azr_system matches 5.. run function skyblock:azr/core
@@ -71,46 +83,9 @@ execute if score isStarted Azr_system matches 1 unless score stopSeconds Azr_sys
 execute if score isStarted Azr_system matches 1 unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 10 run function skyblock:azr/stage/stage_boss1
 #BOSS2 code:[23,24]
 execute if score isStarted Azr_system matches 1 unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 23..24 run function skyblock:azr/stage/stage_boss2
-#打印剧情
-execute as @a if items entity @s container.* skull_banner_pattern run tellraw @a [{"selector":"@s"},{"text":"解锁了剧情"}]
-execute as @a if data entity @s Inventory[{id:"minecraft:skull_banner_pattern"}].components."minecraft:custom_name" run tellraw @a [{"nbt":"Inventory[{id:\"minecraft:skull_banner_pattern\"}].components.\"minecraft:custom_name\"","entity":"@s","interpret":true}]
-execute as @a if data entity @s Inventory[{id:"minecraft:skull_banner_pattern"}].components."minecraft:lore"[0] run tellraw @a [{"nbt":"Inventory[{id:\"minecraft:skull_banner_pattern\"}].components.\"minecraft:lore\"[0]","entity":"@s","interpret":true}]
-execute as @a if data entity @s Inventory[{id:"minecraft:skull_banner_pattern"}].components."minecraft:lore"[1] run tellraw @a [{"nbt":"Inventory[{id:\"minecraft:skull_banner_pattern\"}].components.\"minecraft:lore\"[1]","entity":"@s","interpret":true}]
-execute as @a if data entity @s Inventory[{id:"minecraft:skull_banner_pattern"}].components."minecraft:lore"[2] run tellraw @a [{"nbt":"Inventory[{id:\"minecraft:skull_banner_pattern\"}].components.\"minecraft:lore\"[2]","entity":"@s","interpret":true}]
-execute as @a if data entity @s Inventory[{id:"minecraft:skull_banner_pattern"}].components."minecraft:lore"[3] run tellraw @a [{"nbt":"Inventory[{id:\"minecraft:skull_banner_pattern\"}].components.\"minecraft:lore\"[3]","entity":"@s","interpret":true}]
-execute as @a if data entity @s Inventory[{id:"minecraft:skull_banner_pattern"}].components."minecraft:lore"[4] run tellraw @a [{"nbt":"Inventory[{id:\"minecraft:skull_banner_pattern\"}].components.\"minecraft:lore\"[4]","entity":"@s","interpret":true}]
-execute as @a if data entity @s Inventory[{id:"minecraft:skull_banner_pattern"}].components."minecraft:lore"[5] run tellraw @a [{"nbt":"Inventory[{id:\"minecraft:skull_banner_pattern\"}].components.\"minecraft:lore\"[5]","entity":"@s","interpret":true}]
-execute as @a if items entity @s container.* skull_banner_pattern run clear @s minecraft:skull_banner_pattern
 
-#商店系统
-execute as @a[tag=azrPlayer,tag=hasLifeVitae] run function skyblock:azr/shop/core
-execute as @a[tag=azrPlayer,scores={Azr_Shop=84301..8439999}] run function skyblock:azr/shop/purchase
-execute as @a[tag=azrPlayer,scores={Azr_Shop=8900101..8900199}] run function skyblock:azr/chainkill/assign
-
-#背包管理器
-#execute as @a[tag=azrPlayer] run function skyblock:azr/inventory_manager
-execute as @a[tag=removeSpark] if items entity @s weapon.mainhand *[custom_data={instant_spark:1b}] run playsound item.shield.break master @s ~ ~ ~
-execute as @a[tag=removeSpark] if items entity @s weapon.mainhand *[custom_data={instant_spark:1b}] run item replace entity @s weapon.mainhand with air
-tag @a[tag=removeSpark] remove removeSpark
-
-#索命连击
-execute as @a[tag=azrPlayer] at @s run function skyblock:azr/system_sub/chain_kill
-
-#结束游戏
-#游戏未开始或对局不匹配时强制杀死玩家
-execute if score isStarted Azr_system matches 0 as @a[tag=azrPlayer] run function skyblock:azr/end_game/quit_game
-execute as @a[tag=azrPlayer] unless score @s Azr_startCount = Pointer Azr_startCount run function skyblock:azr/end_game/quit_game
 #重置判定 - 游戏已开始但没有玩家
 execute if score isStarted Azr_system matches 1 if entity @a[x=-79931,y=100,z=0,distance=..10000,gamemode=!spectator] unless entity @a[tag=azrPlayer] run function skyblock:azr/endgame
 #DEBUG-关卡上限提示
 execute as @r[tag=azrPlayer] if score stage Azr_system = DEBUG_maxStageLimit Azr_system run tellraw @a[tag=azrPlayer] [{"text":"You have passed maximum stage(limited in debug mode) ","color": "red"},{"score":{"objective": "Azr_system","name": "stage"},"color":"light_purple"},{"text":"/","color":"light_purple"},{"score":{"objective": "Azr_system","name": "DEBUG_maxStageLimit"},"color":"light_purple"}]
 execute as @r[tag=azrPlayer] if score stage Azr_system = DEBUG_maxStageLimit Azr_system run function skyblock:azr/endgame
-#DEBUG-错误信息
-execute as @a if items entity @s weapon.mainhand *[custom_data~{Error:1b}] run tellraw @a [{"text":"\n=============\n"},\
-{"text":"游戏发生错误，请将此信息截图并发送给管理员以协助解决此错误\n"},\
-{"text":"\nstage"},{"score":{"name":"stage","objective":"Azr_system"}},\
-{"text":"\nstageSeconds"},{"score":{"name":"stageSeconds","objective":"Azr_system"}},\
-{"text":"\nstopSeconds"},{"score":{"name":"stopSeconds","objective":"Azr_system"}},\
-{"text":"\nplayerCount"},{"score":{"name":"playerCount","objective":"Azr_system"}},\
-{"text":"\nmobCount"},{"score":{"name":"mobCount","objective":"Azr_system"}},\
-{"text":"\n=============\n"}]
