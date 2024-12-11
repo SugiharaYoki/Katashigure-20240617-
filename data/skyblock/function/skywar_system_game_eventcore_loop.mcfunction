@@ -163,7 +163,7 @@ execute if score sc TimeRemainUnsee matches 0 if entity @n[tag=sc,scores={Map_Co
 execute if score sc TimeRemainUnsee matches 450 if entity @n[tag=sc,scores={Map_Code=14}] run title @a[tag=PVP_see] times 0 60 60
 execute if score sc TimeRemainUnsee matches 450 if entity @n[tag=sc,scores={Map_Code=14}] run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run title @a[tag=PVP_see] title {"text":"来自古塔的召唤","color":"red"}
 execute if score sc TimeRemainUnsee matches 450 if entity @n[tag=sc,scores={Map_Code=14}] run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run title @a[tag=PVP_see] subtitle {"text":"“塔外已不再是留给生者的安全地带……”","color":"red"}
-execute if score sc TimeRemainUnsee matches 450 if entity @n[tag=sc,scores={Map_Code=14}] unless block -156 59 -114 diamond_block run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run worldborder set 80 60
+execute if score sc TimeRemainUnsee matches 450 if entity @n[tag=sc,scores={Map_Code=14}] unless block -156 59 -114 diamond_block run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run worldborder set 62 60
 execute if score sc TimeRemainUnsee matches 450 if entity @n[tag=sc,scores={Map_Code=14}] if block -156 59 -114 diamond_block run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run worldborder set 30 450
 
 execute if score sc TimeRemainUnsee matches 0 if entity @n[tag=sc,scores={Map_Code=14}] unless block -156 59 -114 diamond_block run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run weather thunder 300
