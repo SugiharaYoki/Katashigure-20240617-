@@ -10,3 +10,5 @@ fill -130 59 -117 -130 59 -128 minecraft:cherry_button[facing=east]
 tag @n[tag=sc] remove Skyblock_map004_event
 
 kill @e[type=marker,tag=Bless24_Marker,x=50062,y=26,z=50052,distance=..5000]
+
+kill @e[type=marker,tag=skywar_map014_lava,x=50062,y=26,z=50052,distance=..5000]

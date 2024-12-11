@@ -98,3 +98,4 @@ execute if score @n[tag=sc] Map_Code matches 17 run execute unless entity @n[tag
 scoreboard players set sc Temp5_LoopE 0
 scoreboard players set sc Temp5_LoopF 0
 scoreboard players set sc Temp5_Loop 0
+
