@@ -16,9 +16,9 @@ execute if entity @s[scores={ishtar_bless_3=5}] run give @s leather_boots[custom
 execute if entity @s[scores={ishtar_bless_1=6}] run give @s iron_sword[custom_name='{"text":"袖剑·轮月","italic":false,"color":"red"}',attribute_modifiers=[{type:"generic.movement_speed",slot:"hand",id:"ishtar_bless:003_01",amount:0.02,operation:"add_value"},{type:"generic.armor",slot:"hand",id:"ishtar_bless:003_02",amount:-2,operation:"add_value"},{type:"generic.attack_damage",slot:"hand",id:"ishtar_bless:003_03",amount:12,operation:"add_value"},{type:"generic.attack_speed",slot:"hand",id:"ishtar_bless:003_04",amount:-3.7,operation:"add_value"}],enchantments={fire_aspect:1}]
 execute if entity @s[scores={ishtar_bless_2=6}] run give @s iron_sword[custom_name='{"text":"袖剑·轮月","italic":false,"color":"red"}',attribute_modifiers=[{type:"generic.movement_speed",slot:"hand",id:"ishtar_bless:003_01",amount:0.02,operation:"add_value"},{type:"generic.armor",slot:"hand",id:"ishtar_bless:003_02",amount:-2,operation:"add_value"},{type:"generic.attack_damage",slot:"hand",id:"ishtar_bless:003_03",amount:12,operation:"add_value"},{type:"generic.attack_speed",slot:"hand",id:"ishtar_bless:003_04",amount:-3.7,operation:"add_value"}],enchantments={fire_aspect:1}]
 execute if entity @s[scores={ishtar_bless_3=6}] run give @s iron_sword[custom_name='{"text":"袖剑·轮月","italic":false,"color":"red"}',attribute_modifiers=[{type:"generic.movement_speed",slot:"hand",id:"ishtar_bless:003_01",amount:0.02,operation:"add_value"},{type:"generic.armor",slot:"hand",id:"ishtar_bless:003_02",amount:-2,operation:"add_value"},{type:"generic.attack_damage",slot:"hand",id:"ishtar_bless:003_03",amount:12,operation:"add_value"},{type:"generic.attack_speed",slot:"hand",id:"ishtar_bless:003_04",amount:-3.7,operation:"add_value"}],enchantments={fire_aspect:1}]
-execute if entity @s[scores={ishtar_bless_1=7}] run give @s zoglin_spawn_egg 2
-execute if entity @s[scores={ishtar_bless_2=7}] run give @s zoglin_spawn_egg 2
-execute if entity @s[scores={ishtar_bless_3=7}] run give @s zoglin_spawn_egg 2
+execute if entity @s[scores={ishtar_bless_1=7}] run give @s zoglin_spawn_egg 1
+execute if entity @s[scores={ishtar_bless_2=7}] run give @s zoglin_spawn_egg 1
+execute if entity @s[scores={ishtar_bless_3=7}] run give @s zoglin_spawn_egg 1
 execute if entity @s[scores={ishtar_bless_1=7}] run give @s magma_cube_spawn_egg 2
 execute if entity @s[scores={ishtar_bless_2=7}] run give @s magma_cube_spawn_egg 2
 execute if entity @s[scores={ishtar_bless_3=7}] run give @s magma_cube_spawn_egg 2
