@@ -165,6 +165,10 @@ execute if score sc TimeRemainUnsee matches 450 if entity @n[tag=sc,scores={Map_
 execute if score sc TimeRemainUnsee matches 450 if entity @n[tag=sc,scores={Map_Code=14}] run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run title @a[tag=PVP_see] subtitle {"text":"“塔外已不再是留给生者的安全地带……”","color":"red"}
 execute if score sc TimeRemainUnsee matches 450 if entity @n[tag=sc,scores={Map_Code=14}] unless block -156 59 -114 diamond_block run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run worldborder set 62 60
 execute if score sc TimeRemainUnsee matches 450 if entity @n[tag=sc,scores={Map_Code=14}] if block -156 59 -114 diamond_block run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run worldborder set 30 450
+execute if score sc TimeRemainUnsee matches 250 if entity @n[tag=sc,scores={Map_Code=14}] unless block -156 59 -114 diamond_block run summon marker 50035 0 50035 {Tags:["skywar_map014_lava"]}
+execute if score sc TimeRemainUnsee matches ..250 if entity @n[tag=sc,scores={Map_Code=14}] at @n[tag=skywar_map014_lava] unless block -156 59 -114 diamond_block run fill 50035 ~ 50035 50095 ~ 50096 lava
+execute if score sc TimeRemainUnsee matches ..250 if entity @n[tag=sc,scores={Map_Code=14}] as @n[tag=skywar_map014_lava] at @s unless block -156 59 -114 diamond_block run tp @s ~ ~1 ~
+
 
 execute if score sc TimeRemainUnsee matches 0 if entity @n[tag=sc,scores={Map_Code=14}] unless block -156 59 -114 diamond_block run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run weather thunder 300
 execute if score sc TimeRemainUnsee matches -5..-1 if entity @n[tag=sc,scores={Map_Code=14}] unless block -156 59 -114 diamond_block run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run summon phantom 50060 200 50060
