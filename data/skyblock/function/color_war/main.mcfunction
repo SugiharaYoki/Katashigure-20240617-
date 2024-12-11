@@ -1,0 +1,1 @@
+execute positioned 100000 5 0 as @e[type=interaction,distance=..50] run function skyblock:color_war/interaction
