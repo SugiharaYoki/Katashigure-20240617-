@@ -1,0 +1,6 @@
+execute if entity @s[scores={SkMu_Gold=1..}] run tellraw @s {"text":"已成功兑换头颅！","color":"green"}
+execute if entity @s[scores={SkMu_Gold=..0}] run tellraw @s [{"text":"票券不足！","color":"red"},{"text":" 需求品质： 金","color":"gray"}]
+execute if entity @s[scores={SkMu_Gold=1..}] run tag @s add purchasesuccess
+execute as @s at @s[tag=purchasesuccess] run tag @s remove SkMu_Gold
+execute as @s at @s[tag=purchasesuccess] run give @s minecraft:player_head[minecraft:profile={name:"xiyihan",properties:[{name:"textures",value:"ewogICJ0aW1lc3RhbXAiIDogMTczMzgyOTY3MDE2MCwKICAicHJvZmlsZUlkIiA6ICJiNzU2YTVkZDkzMzU0YmQzOGUzMmIwYWFmODAwMjg4OSIsCiAgInByb2ZpbGVOYW1lIiA6ICJ4aXlpaGFuIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzFhNGFmNzE4NDU1ZDRhYWI1MjhlN2E2MWY4NmZhMjVlNmEzNjlkMTc2OGRjYjEzZjdkZjMxOWE3MTNlYjgxMGIiCiAgICB9LAogICAgIkNBUEUiIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzIzNDBjMGUwM2RkMjRhMTFiMTVhOGIzM2MyYTdlOWUzMmFiYjIwNTFiMjQ4MWQwYmE3ZGVmZDYzNWNhN2E5MzMiCiAgICB9CiAgfQp9"}],id:[I;-1219058211,-1825223725,-1909280598,-134207351]}] 1
+execute as @s at @s[tag=purchasesuccess] run tag @s remove purchasesuccess
