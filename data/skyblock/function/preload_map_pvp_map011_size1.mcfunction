@@ -293,6 +293,9 @@ execute as @n[type=marker,tag=SkyChess_Generator] at @s run tp @s ~-96 ~ ~12
 
 kill @e[type=marker,tag=SkyChess_Generator]
 
+
+fill 50004 99 50004 50112 99 50112 deepslate_tiles
+
 forceload remove -9800 -9800 -9600 -9780
 
 
