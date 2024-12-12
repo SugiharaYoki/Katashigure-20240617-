@@ -1,5 +1,18 @@
 scoreboard players set starting color_war_system 1
-execute if score start_seconds color_war_system matches -2.. run scoreboard players remove start_seconds color_war_system 1
+
+execute if score start_seconds color_war_system matches 10 run tag @a[tag=!Gaming] remove Temp_NoSkyWar
+execute if score start_seconds color_war_system matches 10 run tag @a[tag=Gaming] add Temp_NoSkyWar
+execute if score start_seconds color_war_system matches 10 run tag @a[tag=Temp_NoSkyWar] add NoSkyWar
+execute if score start_seconds color_war_system matches 10 run title @a[tag=!Gaming,tag=!NoSkyWar] times 4 50 5
+execute if score start_seconds color_war_system matches 10 run title @a[tag=!Gaming,tag=!NoSkyWar] title {"text":"开启涂色战争","bold":true,"color":"gold"}
+execute if score start_seconds color_war_system matches 10 run tellraw @a[tag=!Gaming] {"text":"   『个人面板』","color":"yellow"}
+execute if score start_seconds color_war_system matches 10 run tellraw @a[tag=!Gaming,tag=NoSkyWar] {"text":"您设置了“禁用PVP战争”！请选择是否加入PVP","bold":false,"color":"light_purple"}
+execute if score start_seconds color_war_system matches 10 run tellraw @a[tag=!Gaming,tag=NoSkyWar] {"text":"   —— [参加游戏] ——","color":"green","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 992"},"hoverEvent":{"action":"show_text","contents":{"text":"暂时关闭“自动参加PVP战争”","color":"green"}}}
+execute if score start_seconds color_war_system matches 10 run tellraw @a[tag=!Gaming,tag=!NoSkyWar] {"text":"   —— [不参加游戏： 仅本局] ——","color":"green","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 993"},"hoverEvent":{"action":"show_text","contents":{"text":"关闭“自动参加PVP战争”","color":"green"}}}
+execute if score start_seconds color_war_system matches 10 run tellraw @a[tag=!Gaming,tag=!NoSkyWar] {"text":"   —— [不参加游戏： 直到自己重新打开] ——","color":"green","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 995"},"hoverEvent":{"action":"show_text","contents":{"text":"开启“自动参加PVP战争”","color":"green"}}}
+execute if score start_seconds color_war_system matches 10 run tellraw @a[tag=!Gaming,tag=!NoSkyWar] {"text":"   —— [暂停开局] ——","color":"yellow","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 134"},"hoverEvent":{"action":"show_text","contents":{"text":"暂停PVP战场的开局","color":"green"}}}
+execute if score start_seconds color_war_system matches 10 run tellraw @a[tag=!Gaming,tag=!NoSkyWar] {"text":"   —— [重置倒计时] ——","color":"yellow","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 135"},"hoverEvent":{"action":"show_text","contents":{"text":"重置PVP战场的开局倒计时","color":"green"}}}
+
 #开局计时器
 execute if score start_seconds color_war_system matches 9 run title @a[tag=!NoSkyWar] times 0 20 40
 execute if score start_seconds color_war_system matches 9 run playsound block.note_block.bell master @a[tag=!NoSkyWar] 0 100 0 10000 0.5
@@ -35,4 +48,5 @@ execute if score start_seconds color_war_system matches -2 run scoreboard player
 execute if score start_seconds color_war_system matches -2 run schedule clear skyblock:color_war/waiting_room/start
 execute if score start_seconds color_war_system matches -2 run return -1
 
+execute if score start_seconds color_war_system matches -2.. run scoreboard players remove start_seconds color_war_system 1
 execute if score start_seconds color_war_system matches -2.. run schedule function skyblock:color_war/waiting_room/start 1s
