@@ -4,12 +4,12 @@ scoreboard players add sc AnnouncementRoB 1
 #
 execute if score sc AnnouncementRo matches 1 as @a run scoreboard players add @s Perm_PersonFSB 10
 execute if score sc AnnouncementRo matches 1 as @a run tellraw @s[tag=!Gaming] {"text":" - 在线奖励 10 FSB - ","color":"dark_gray"}
-execute if score sc AnnouncementRo matches 8 if entity @a[tag=!Gaming] run scoreboard objectives setdisplay sidebar Perm_PersonWins
-execute if score sc AnnouncementRo matches 16 if entity @a[tag=!Gaming] run scoreboard objectives setdisplay sidebar Perm_PersonDeath
-execute if score sc AnnouncementRo matches 24 if entity @a[tag=!Gaming] run scoreboard objectives setdisplay sidebar SeGa_StandLastBH
-execute if score sc AnnouncementRo matches 32 if entity @a[tag=!Gaming] run scoreboard objectives setdisplay sidebar mg_cdc_kill_best
-execute if score sc AnnouncementRo matches 40 if entity @a[tag=!Gaming] run scoreboard objectives setdisplay sidebar Perm_PersonFSB
-execute if score sc AnnouncementRo matches 48 if entity @a[tag=!Gaming] run scoreboard objectives setdisplay sidebar 4ASCEND_wins
+execute if score sc AnnouncementRo matches 8 unless entity @a[tag=Gaming] run scoreboard objectives setdisplay sidebar Perm_PersonWins
+execute if score sc AnnouncementRo matches 16 unless entity @a[tag=Gaming] run scoreboard objectives setdisplay sidebar Perm_PersonDeath
+execute if score sc AnnouncementRo matches 24 unless entity @a[tag=Gaming] run scoreboard objectives setdisplay sidebar SeGa_StandLastBH
+execute if score sc AnnouncementRo matches 32 unless entity @a[tag=Gaming] run scoreboard objectives setdisplay sidebar mg_cdc_kill_best
+execute if score sc AnnouncementRo matches 40 unless entity @a[tag=Gaming] run scoreboard objectives setdisplay sidebar Perm_PersonFSB
+execute if score sc AnnouncementRo matches 48 unless entity @a[tag=Gaming] run scoreboard objectives setdisplay sidebar 4ASCEND_wins
 #execute as @n[tag=sc,scores={AnnouncementRo=23}] as @a at @s run scoreboard players operation @s SeGa_ParkourS = @s ParkourLastStage
 #execute as @n[tag=sc,scores={AnnouncementRo=23}] as @a at @s run scoreboard players operation @s SeGa_ParkourS += @s ParkourRouteB
 #execute as @n[tag=sc,scores={AnnouncementRo=24}] at @s run scoreboard objectives setdisplay sidebar SeGa_ParkourS
