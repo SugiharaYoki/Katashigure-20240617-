@@ -42,6 +42,8 @@ attribute @s generic.armor_toughness modifier remove 8603fc7b-b1fa-47c6-91f5-67d
 attribute @s generic.attack_knockback modifier remove 8603fc7b-b1fa-47c6-91f5-67d9b35e55b1
 attribute @s generic.attack_knockback modifier remove 8603fc7b-b1fa-47c6-91f5-67d9b35e55b2
 
+attribute @s generic.jump_strength modifier remove skywar_ishtar_bless11_01
+
 tag @s remove AzrielEvent3761S
 tag @s remove AzrielEvent3762S
 tag @s remove AzrielEvent3763S

@@ -85,8 +85,35 @@ execute as @s[scores={MultiMenu=133025}] at @s run scoreboard players set @s ish
 execute as @s[scores={MultiMenu=133026}] at @s run scoreboard players set @s ishtar_bless_3 26
 execute as @s[scores={MultiMenu=133027}] at @s run scoreboard players set @s ishtar_bless_3 27
 
+execute as @s[scores={MultiMenu=134001}] at @s run scoreboard players set @s ishtar_bless_4 1
+execute as @s[scores={MultiMenu=134002}] at @s run scoreboard players set @s ishtar_bless_4 2
+execute as @s[scores={MultiMenu=134003}] at @s run scoreboard players set @s ishtar_bless_4 3
+execute as @s[scores={MultiMenu=134004}] at @s run scoreboard players set @s ishtar_bless_4 4
+execute as @s[scores={MultiMenu=134005}] at @s run scoreboard players set @s ishtar_bless_4 5
+execute as @s[scores={MultiMenu=134006}] at @s run scoreboard players set @s ishtar_bless_4 6
+execute as @s[scores={MultiMenu=134007}] at @s run scoreboard players set @s ishtar_bless_4 7
+execute as @s[scores={MultiMenu=134008}] at @s run scoreboard players set @s ishtar_bless_4 8
+execute as @s[scores={MultiMenu=134009}] at @s run scoreboard players set @s ishtar_bless_4 9
+execute as @s[scores={MultiMenu=134010}] at @s run scoreboard players set @s ishtar_bless_4 10
+execute as @s[scores={MultiMenu=134011}] at @s run scoreboard players set @s ishtar_bless_4 11
+execute as @s[scores={MultiMenu=134012}] at @s run scoreboard players set @s ishtar_bless_4 12
+execute as @s[scores={MultiMenu=134013}] at @s run scoreboard players set @s ishtar_bless_4 13
+execute as @s[scores={MultiMenu=134014}] at @s run scoreboard players set @s ishtar_bless_4 14
+execute as @s[scores={MultiMenu=134015}] at @s run scoreboard players set @s ishtar_bless_4 15
+execute as @s[scores={MultiMenu=134016}] at @s run scoreboard players set @s ishtar_bless_4 16
+execute as @s[scores={MultiMenu=134017}] at @s run scoreboard players set @s ishtar_bless_4 17
+execute as @s[scores={MultiMenu=134018}] at @s run scoreboard players set @s ishtar_bless_4 18
+execute as @s[scores={MultiMenu=134019}] at @s run scoreboard players set @s ishtar_bless_4 19
+execute as @s[scores={MultiMenu=134020}] at @s run scoreboard players set @s ishtar_bless_4 20
+execute as @s[scores={MultiMenu=134021}] at @s run scoreboard players set @s ishtar_bless_4 21
+execute as @s[scores={MultiMenu=134022}] at @s run scoreboard players set @s ishtar_bless_4 22
+execute as @s[scores={MultiMenu=134023}] at @s run scoreboard players set @s ishtar_bless_4 23
+execute as @s[scores={MultiMenu=134024}] at @s run scoreboard players set @s ishtar_bless_4 24
+execute as @s[scores={MultiMenu=134025}] at @s run scoreboard players set @s ishtar_bless_4 25
+execute as @s[scores={MultiMenu=134026}] at @s run scoreboard players set @s ishtar_bless_4 26
+execute as @s[scores={MultiMenu=134027}] at @s run scoreboard players set @s ishtar_bless_4 27
 
 
-execute as @s[scores={MultiMenu=131001..133999}] at @s run scoreboard players set @s MultiMenu 131
+execute as @s[scores={MultiMenu=131001..134999}] at @s run scoreboard players set @s MultiMenu 131
 #execute as @s[scores={MultiMenu=132001..132999}] at @s run scoreboard players set @s MultiMenu 132
 #execute as @s[scores={MultiMenu=133001..133999}] at @s run scoreboard players set @s MultiMenu 133
