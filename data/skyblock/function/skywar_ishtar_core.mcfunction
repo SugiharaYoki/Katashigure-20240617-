@@ -41,6 +41,8 @@ execute if entity @s[scores={If_MD_Wait=1..}] run particle dripping_obsidian_tea
 execute if entity @s[scores={If_MD_Wait=1..}] run effect give @a[tag=PVPing,distance=0.1..5.3] slowness 14 199
 execute if entity @s[scores={If_MD_Wait=1..}] run effect give @a[tag=PVPing,distance=0.1..5.3] resistance 5 4
 execute if entity @s[scores={If_MD_Wait=1..}] run effect give @a[tag=PVPing,distance=0.1..5.3] wither 5 0
+execute if entity @s[scores={If_MD_Wait=1..}] run scoreboard players set @a[tag=PVPing,distance=0.1..5.3] If_Bless11 40
+execute if entity @s[scores={If_MD_Wait=1..}] as @a[tag=PVPing,gamemode=survival,scores={If_Bless11=1..}] at @s run function skyblock:skywar_ishtar_core11
 execute if entity @s[scores={If_MD_Wait=1..}] run scoreboard players set @s If_MD_Wait 0
 
 execute if entity @s[scores={If_MD_Chirp=1..}] rotated ~ 0 run tellraw @a[distance=0.01..7] {"text": "送你一个礼物！","color": "gold","bold":true}
@@ -78,7 +80,7 @@ execute if entity @s[scores={If_MD_Ward=1..}] run playsound entity.shulker.ambie
 execute if entity @s[scores={If_MD_Ward=1..}] run fill ~4 ~4 ~4 ~-4 ~-4 ~-4 pink_shulker_box{LootTable:"skyblock:cakebox_pramanix"} replace #shulker_boxes
 execute if entity @s[scores={If_MD_Ward=1..}] run scoreboard players set @s If_MD_Ward 0
 
-execute if items entity @s[predicate=!skyblock:sneaking] container.* *[custom_data={skywar:1,skywar_ishtar_20:1}] positioned ~ ~-0.2 ~ if block ~ ~ ~ slime_block run effect give @s jump_boost 1 6 false
+execute if items entity @s[predicate=!skyblock:sneaking] container.* *[custom_data={skywar:1,skywar_ishtar_20:1}] positioned ~ ~-0.2 ~ if block ~ ~ ~ slime_block run effect give @s jump_boost 1 7 false
 
 
 execute if items entity @s container.* *[custom_data={skywar:1,skywar_ishtar_9:1}] run effect give @s haste 3 1 true
