@@ -1,0 +1,1 @@
+give @p minecraft:milk_bucket[custom_name='{"text":"速干颜料","color":"light_purple","italic":false,"bold":true}',lore=['{"text":"[右键使用]","color":"yellow","bold":true}','{"text":"使你的颜色无法被其他人占领，持续5s"}'],minecraft:custom_data={drying_paint:1b},minecraft:custom_model_data=200001,food={nutrition:0,saturation:0,eat_seconds:10,can_always_eat:1b}]

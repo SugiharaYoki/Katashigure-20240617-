@@ -1,0 +1,1 @@
+give @p minecraft:powder_snow_bucket[custom_name='{"text":"黏糊糊颜料","color":"light_purple","italic":false,"bold":true}',lore=['{"text":"[右键使用]","color":"yellow","bold":true}','{"text":"对手经过你的颜料时，将被减速"}','{"text":"不会影响队友","color":"gray"}'],minecraft:custom_data={sticky_paint:1b},minecraft:custom_model_data=200001,food={nutrition:0,saturation:0,eat_seconds:10,can_always_eat:1b}]
