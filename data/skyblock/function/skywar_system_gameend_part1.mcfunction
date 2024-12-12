@@ -4,7 +4,7 @@ execute if entity @a[team=Team1_2] run execute unless entity @a[tag=PVP_win] run
 execute if entity @a[team=Team1_2] run scoreboard players add @a[tag=!PVP_win,tag=PVP_dead] Perm_PersonDeath 1
 execute if entity @a[team=Team1_2] run execute as @a[tag=PVP_win] at @s unless entity @s[scores={Job=5,Job_SpiritProp=3}] run tellraw @s {"text":"游戏胜利！获得了100浮世币的奖励！","color":"gold"}
 execute if entity @a[team=Team1_2] run scoreboard players add @a[tag=PVP_win] Perm_PersonFSB 100
-execute unless entity @a[team=Team1_2] run tellraw @a [{"text":"空岛战争结束 开启者： ","color":"green"},{"selector":"@a[tag=PVP_win]","color":"blue"},{"text":" ！恭喜存活 ♪♪","color":"green"}]
+execute unless entity @a[team=Team1_2] run tellraw @a [{"text":"PVP地图生成模拟结束！操作者： ","color":"green"},{"selector":"@a[tag=PVP_win]","color":"blue"}]
 execute unless entity @a[team=Team1_2] run execute as @a[tag=PVP_win] at @s unless entity @s[scores={Job=5,Job_SpiritProp=3}] run tellraw @s {"text":"获得了1浮世币的奖励","color":"gold"}
 execute unless entity @a[team=Team1_2] run scoreboard players add @a[tag=PVP_win] Perm_PersonFSB 1
 kill @e[type=!player,x=50050,y=50,z=50050,distance=..1700]
