@@ -1,0 +1,1 @@
+$tellraw @s {"nbt":"item_info[$(slot)]","storage":"color_war","interpret":true}

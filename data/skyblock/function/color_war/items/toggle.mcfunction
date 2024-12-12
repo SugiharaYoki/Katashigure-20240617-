@@ -1,0 +1,1 @@
+$scoreboard players operation toggle_$(slot) color_war_system *= -1 constant
