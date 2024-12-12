@@ -1,6 +1,7 @@
 execute as @s[tag=color_war_back] on target run function skyblock:color_war/waiting_room/back
 execute as @s[tag=color_war_setting] on target run function skyblock:color_war/waiting_room/setting
 execute as @s[tag=color_war_tutorial] on target run function skyblock:color_war/waiting_room/tutorial
+execute as @s[tag=color_war_start] on target unless score starting color_war_system matches 1 run scoreboard players set start_seconds color_war_system 10
 execute as @s[tag=color_war_start] on target run function skyblock:color_war/waiting_room/start
 
 execute as @s[tag=color_war_info_0] on target run function skyblock:color_war/items/info {slot:0}
