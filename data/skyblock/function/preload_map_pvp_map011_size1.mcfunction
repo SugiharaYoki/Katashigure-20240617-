@@ -17,7 +17,11 @@ execute as @n[type=marker,tag=SkyChess_Generator] at @s run tp @s ~12 ~ ~
 execute at @n[type=marker,tag=SkyChess_Generator] run function skyblock:preload_map_pvp_map011_selection_a
 execute as @n[type=marker,tag=SkyChess_Generator] at @s run tp @s ~12 ~ ~
 execute at @n[type=marker,tag=SkyChess_Generator] run function skyblock:preload_map_pvp_map011_selection_a
-execute as @n[type=marker,tag=SkyChess_Generator] at @s run tp @s ~-72 ~ ~12
+execute as @n[type=marker,tag=SkyChess_Generator] at @s run tp @s ~12 ~ ~
+execute at @n[type=marker,tag=SkyChess_Generator] run function skyblock:preload_map_pvp_map011_selection_a
+execute as @n[type=marker,tag=SkyChess_Generator] at @s run tp @s ~12 ~ ~
+execute at @n[type=marker,tag=SkyChess_Generator] run function skyblock:preload_map_pvp_map011_selection_a
+execute as @n[type=marker,tag=SkyChess_Generator] at @s run tp @s ~-96 ~ ~12
 
 execute at @n[type=marker,tag=SkyChess_Generator] run function skyblock:preload_map_pvp_map011_selection_a
 execute as @n[type=marker,tag=SkyChess_Generator] at @s run tp @s ~12 ~ ~
@@ -32,52 +36,12 @@ execute as @n[type=marker,tag=SkyChess_Generator] at @s run tp @s ~12 ~ ~
 execute at @n[type=marker,tag=SkyChess_Generator] run function skyblock:preload_map_pvp_map011_selection_a
 execute as @n[type=marker,tag=SkyChess_Generator] at @s run tp @s ~12 ~ ~
 execute at @n[type=marker,tag=SkyChess_Generator] run function skyblock:preload_map_pvp_map011_selection_a
-execute as @n[type=marker,tag=SkyChess_Generator] at @s run tp @s ~-72 ~ ~12
+execute as @n[type=marker,tag=SkyChess_Generator] at @s run tp @s ~12 ~ ~
+execute at @n[type=marker,tag=SkyChess_Generator] run function skyblock:preload_map_pvp_map011_selection_a
+execute as @n[type=marker,tag=SkyChess_Generator] at @s run tp @s ~12 ~ ~
+execute at @n[type=marker,tag=SkyChess_Generator] run function skyblock:preload_map_pvp_map011_selection_a
+execute as @n[type=marker,tag=SkyChess_Generator] at @s run tp @s ~-96 ~ ~12
 
-execute at @n[type=marker,tag=SkyChess_Generator] run function skyblock:preload_map_pvp_map011_selection_a
-execute as @n[type=marker,tag=SkyChess_Generator] at @s run tp @s ~12 ~ ~
-execute at @n[type=marker,tag=SkyChess_Generator] run function skyblock:preload_map_pvp_map011_selection_a
-execute as @n[type=marker,tag=SkyChess_Generator] at @s run tp @s ~12 ~ ~
-execute at @n[type=marker,tag=SkyChess_Generator] run function skyblock:preload_map_pvp_map011_selection_b
-execute as @n[type=marker,tag=SkyChess_Generator] at @s run tp @s ~12 ~ ~
-execute at @n[type=marker,tag=SkyChess_Generator] run function skyblock:preload_map_pvp_map011_selection_b
-execute as @n[type=marker,tag=SkyChess_Generator] at @s run tp @s ~12 ~ ~
-execute at @n[type=marker,tag=SkyChess_Generator] run function skyblock:preload_map_pvp_map011_selection_b
-execute as @n[type=marker,tag=SkyChess_Generator] at @s run tp @s ~12 ~ ~
-execute at @n[type=marker,tag=SkyChess_Generator] run function skyblock:preload_map_pvp_map011_selection_a
-execute as @n[type=marker,tag=SkyChess_Generator] at @s run tp @s ~12 ~ ~
-execute at @n[type=marker,tag=SkyChess_Generator] run function skyblock:preload_map_pvp_map011_selection_a
-execute as @n[type=marker,tag=SkyChess_Generator] at @s run tp @s ~-72 ~ ~12
-
-execute at @n[type=marker,tag=SkyChess_Generator] run function skyblock:preload_map_pvp_map011_selection_a
-execute as @n[type=marker,tag=SkyChess_Generator] at @s run tp @s ~12 ~ ~
-execute at @n[type=marker,tag=SkyChess_Generator] run function skyblock:preload_map_pvp_map011_selection_a
-execute as @n[type=marker,tag=SkyChess_Generator] at @s run tp @s ~12 ~ ~
-execute at @n[type=marker,tag=SkyChess_Generator] run function skyblock:preload_map_pvp_map011_selection_b
-execute as @n[type=marker,tag=SkyChess_Generator] at @s run tp @s ~12 ~ ~
-execute at @n[type=marker,tag=SkyChess_Generator] run function skyblock:preload_map_pvp_map011_selection_b
-execute as @n[type=marker,tag=SkyChess_Generator] at @s run tp @s ~12 ~ ~
-execute at @n[type=marker,tag=SkyChess_Generator] run function skyblock:preload_map_pvp_map011_selection_b
-execute as @n[type=marker,tag=SkyChess_Generator] at @s run tp @s ~12 ~ ~
-execute at @n[type=marker,tag=SkyChess_Generator] run function skyblock:preload_map_pvp_map011_selection_a
-execute as @n[type=marker,tag=SkyChess_Generator] at @s run tp @s ~12 ~ ~
-execute at @n[type=marker,tag=SkyChess_Generator] run function skyblock:preload_map_pvp_map011_selection_a
-execute as @n[type=marker,tag=SkyChess_Generator] at @s run tp @s ~-72 ~ ~12
-
-execute at @n[type=marker,tag=SkyChess_Generator] run function skyblock:preload_map_pvp_map011_selection_a
-execute as @n[type=marker,tag=SkyChess_Generator] at @s run tp @s ~12 ~ ~
-execute at @n[type=marker,tag=SkyChess_Generator] run function skyblock:preload_map_pvp_map011_selection_a
-execute as @n[type=marker,tag=SkyChess_Generator] at @s run tp @s ~12 ~ ~
-execute at @n[type=marker,tag=SkyChess_Generator] run function skyblock:preload_map_pvp_map011_selection_b
-execute as @n[type=marker,tag=SkyChess_Generator] at @s run tp @s ~12 ~ ~
-execute at @n[type=marker,tag=SkyChess_Generator] run function skyblock:preload_map_pvp_map011_selection_b
-execute as @n[type=marker,tag=SkyChess_Generator] at @s run tp @s ~12 ~ ~
-execute at @n[type=marker,tag=SkyChess_Generator] run function skyblock:preload_map_pvp_map011_selection_b
-execute as @n[type=marker,tag=SkyChess_Generator] at @s run tp @s ~12 ~ ~
-execute at @n[type=marker,tag=SkyChess_Generator] run function skyblock:preload_map_pvp_map011_selection_a
-execute as @n[type=marker,tag=SkyChess_Generator] at @s run tp @s ~12 ~ ~
-execute at @n[type=marker,tag=SkyChess_Generator] run function skyblock:preload_map_pvp_map011_selection_a
-execute as @n[type=marker,tag=SkyChess_Generator] at @s run tp @s ~-72 ~ ~12
 
 execute at @n[type=marker,tag=SkyChess_Generator] run function skyblock:preload_map_pvp_map011_selection_a
 execute as @n[type=marker,tag=SkyChess_Generator] at @s run tp @s ~12 ~ ~
@@ -92,7 +56,68 @@ execute as @n[type=marker,tag=SkyChess_Generator] at @s run tp @s ~12 ~ ~
 execute at @n[type=marker,tag=SkyChess_Generator] run function skyblock:preload_map_pvp_map011_selection_a
 execute as @n[type=marker,tag=SkyChess_Generator] at @s run tp @s ~12 ~ ~
 execute at @n[type=marker,tag=SkyChess_Generator] run function skyblock:preload_map_pvp_map011_selection_a
-execute as @n[type=marker,tag=SkyChess_Generator] at @s run tp @s ~-72 ~ ~12
+execute as @n[type=marker,tag=SkyChess_Generator] at @s run tp @s ~12 ~ ~
+execute at @n[type=marker,tag=SkyChess_Generator] run function skyblock:preload_map_pvp_map011_selection_a
+execute as @n[type=marker,tag=SkyChess_Generator] at @s run tp @s ~12 ~ ~
+execute at @n[type=marker,tag=SkyChess_Generator] run function skyblock:preload_map_pvp_map011_selection_a
+execute as @n[type=marker,tag=SkyChess_Generator] at @s run tp @s ~-96 ~ ~12
+
+execute at @n[type=marker,tag=SkyChess_Generator] run function skyblock:preload_map_pvp_map011_selection_a
+execute as @n[type=marker,tag=SkyChess_Generator] at @s run tp @s ~12 ~ ~
+execute at @n[type=marker,tag=SkyChess_Generator] run function skyblock:preload_map_pvp_map011_selection_a
+execute as @n[type=marker,tag=SkyChess_Generator] at @s run tp @s ~12 ~ ~
+execute at @n[type=marker,tag=SkyChess_Generator] run function skyblock:preload_map_pvp_map011_selection_a
+execute as @n[type=marker,tag=SkyChess_Generator] at @s run tp @s ~12 ~ ~
+execute at @n[type=marker,tag=SkyChess_Generator] run function skyblock:preload_map_pvp_map011_selection_b
+execute as @n[type=marker,tag=SkyChess_Generator] at @s run tp @s ~12 ~ ~
+execute at @n[type=marker,tag=SkyChess_Generator] run function skyblock:preload_map_pvp_map011_selection_b
+execute as @n[type=marker,tag=SkyChess_Generator] at @s run tp @s ~12 ~ ~
+execute at @n[type=marker,tag=SkyChess_Generator] run function skyblock:preload_map_pvp_map011_selection_b
+execute as @n[type=marker,tag=SkyChess_Generator] at @s run tp @s ~12 ~ ~
+execute at @n[type=marker,tag=SkyChess_Generator] run function skyblock:preload_map_pvp_map011_selection_a
+execute as @n[type=marker,tag=SkyChess_Generator] at @s run tp @s ~12 ~ ~
+execute at @n[type=marker,tag=SkyChess_Generator] run function skyblock:preload_map_pvp_map011_selection_a
+execute as @n[type=marker,tag=SkyChess_Generator] at @s run tp @s ~12 ~ ~
+execute at @n[type=marker,tag=SkyChess_Generator] run function skyblock:preload_map_pvp_map011_selection_a
+execute as @n[type=marker,tag=SkyChess_Generator] at @s run tp @s ~-96 ~ ~12
+
+execute at @n[type=marker,tag=SkyChess_Generator] run function skyblock:preload_map_pvp_map011_selection_a
+execute as @n[type=marker,tag=SkyChess_Generator] at @s run tp @s ~12 ~ ~
+execute at @n[type=marker,tag=SkyChess_Generator] run function skyblock:preload_map_pvp_map011_selection_a
+execute as @n[type=marker,tag=SkyChess_Generator] at @s run tp @s ~12 ~ ~
+execute at @n[type=marker,tag=SkyChess_Generator] run function skyblock:preload_map_pvp_map011_selection_a
+execute as @n[type=marker,tag=SkyChess_Generator] at @s run tp @s ~12 ~ ~
+execute at @n[type=marker,tag=SkyChess_Generator] run function skyblock:preload_map_pvp_map011_selection_b
+execute as @n[type=marker,tag=SkyChess_Generator] at @s run tp @s ~12 ~ ~
+execute at @n[type=marker,tag=SkyChess_Generator] run function skyblock:preload_map_pvp_map011_selection_b
+execute as @n[type=marker,tag=SkyChess_Generator] at @s run tp @s ~12 ~ ~
+execute at @n[type=marker,tag=SkyChess_Generator] run function skyblock:preload_map_pvp_map011_selection_b
+execute as @n[type=marker,tag=SkyChess_Generator] at @s run tp @s ~12 ~ ~
+execute at @n[type=marker,tag=SkyChess_Generator] run function skyblock:preload_map_pvp_map011_selection_a
+execute as @n[type=marker,tag=SkyChess_Generator] at @s run tp @s ~12 ~ ~
+execute at @n[type=marker,tag=SkyChess_Generator] run function skyblock:preload_map_pvp_map011_selection_a
+execute as @n[type=marker,tag=SkyChess_Generator] at @s run tp @s ~12 ~ ~
+execute at @n[type=marker,tag=SkyChess_Generator] run function skyblock:preload_map_pvp_map011_selection_a
+execute as @n[type=marker,tag=SkyChess_Generator] at @s run tp @s ~-96 ~ ~12
+
+execute at @n[type=marker,tag=SkyChess_Generator] run function skyblock:preload_map_pvp_map011_selection_a
+execute as @n[type=marker,tag=SkyChess_Generator] at @s run tp @s ~12 ~ ~
+execute at @n[type=marker,tag=SkyChess_Generator] run function skyblock:preload_map_pvp_map011_selection_a
+execute as @n[type=marker,tag=SkyChess_Generator] at @s run tp @s ~12 ~ ~
+execute at @n[type=marker,tag=SkyChess_Generator] run function skyblock:preload_map_pvp_map011_selection_a
+execute as @n[type=marker,tag=SkyChess_Generator] at @s run tp @s ~12 ~ ~
+execute at @n[type=marker,tag=SkyChess_Generator] run function skyblock:preload_map_pvp_map011_selection_b
+execute as @n[type=marker,tag=SkyChess_Generator] at @s run tp @s ~12 ~ ~
+execute at @n[type=marker,tag=SkyChess_Generator] run function skyblock:preload_map_pvp_map011_selection_b
+execute as @n[type=marker,tag=SkyChess_Generator] at @s run tp @s ~12 ~ ~
+execute at @n[type=marker,tag=SkyChess_Generator] run function skyblock:preload_map_pvp_map011_selection_b
+execute as @n[type=marker,tag=SkyChess_Generator] at @s run tp @s ~12 ~ ~
+execute at @n[type=marker,tag=SkyChess_Generator] run function skyblock:preload_map_pvp_map011_selection_a
+execute as @n[type=marker,tag=SkyChess_Generator] at @s run tp @s ~12 ~ ~
+execute at @n[type=marker,tag=SkyChess_Generator] run function skyblock:preload_map_pvp_map011_selection_a
+execute as @n[type=marker,tag=SkyChess_Generator] at @s run tp @s ~12 ~ ~
+execute at @n[type=marker,tag=SkyChess_Generator] run function skyblock:preload_map_pvp_map011_selection_a
+execute as @n[type=marker,tag=SkyChess_Generator] at @s run tp @s ~-96 ~ ~12
 
 execute at @n[type=marker,tag=SkyChess_Generator] run function skyblock:preload_map_pvp_map011_selection_a
 execute as @n[type=marker,tag=SkyChess_Generator] at @s run tp @s ~12 ~ ~
@@ -107,7 +132,49 @@ execute as @n[type=marker,tag=SkyChess_Generator] at @s run tp @s ~12 ~ ~
 execute at @n[type=marker,tag=SkyChess_Generator] run function skyblock:preload_map_pvp_map011_selection_a
 execute as @n[type=marker,tag=SkyChess_Generator] at @s run tp @s ~12 ~ ~
 execute at @n[type=marker,tag=SkyChess_Generator] run function skyblock:preload_map_pvp_map011_selection_a
-execute as @n[type=marker,tag=SkyChess_Generator] at @s run tp @s ~-72 ~ ~12
+execute as @n[type=marker,tag=SkyChess_Generator] at @s run tp @s ~12 ~ ~
+execute at @n[type=marker,tag=SkyChess_Generator] run function skyblock:preload_map_pvp_map011_selection_a
+execute as @n[type=marker,tag=SkyChess_Generator] at @s run tp @s ~12 ~ ~
+execute at @n[type=marker,tag=SkyChess_Generator] run function skyblock:preload_map_pvp_map011_selection_a
+execute as @n[type=marker,tag=SkyChess_Generator] at @s run tp @s ~-96 ~ ~12
+
+execute at @n[type=marker,tag=SkyChess_Generator] run function skyblock:preload_map_pvp_map011_selection_a
+execute as @n[type=marker,tag=SkyChess_Generator] at @s run tp @s ~12 ~ ~
+execute at @n[type=marker,tag=SkyChess_Generator] run function skyblock:preload_map_pvp_map011_selection_a
+execute as @n[type=marker,tag=SkyChess_Generator] at @s run tp @s ~12 ~ ~
+execute at @n[type=marker,tag=SkyChess_Generator] run function skyblock:preload_map_pvp_map011_selection_a
+execute as @n[type=marker,tag=SkyChess_Generator] at @s run tp @s ~12 ~ ~
+execute at @n[type=marker,tag=SkyChess_Generator] run function skyblock:preload_map_pvp_map011_selection_a
+execute as @n[type=marker,tag=SkyChess_Generator] at @s run tp @s ~12 ~ ~
+execute at @n[type=marker,tag=SkyChess_Generator] run function skyblock:preload_map_pvp_map011_selection_a
+execute as @n[type=marker,tag=SkyChess_Generator] at @s run tp @s ~12 ~ ~
+execute at @n[type=marker,tag=SkyChess_Generator] run function skyblock:preload_map_pvp_map011_selection_a
+execute as @n[type=marker,tag=SkyChess_Generator] at @s run tp @s ~12 ~ ~
+execute at @n[type=marker,tag=SkyChess_Generator] run function skyblock:preload_map_pvp_map011_selection_a
+execute as @n[type=marker,tag=SkyChess_Generator] at @s run tp @s ~12 ~ ~
+execute at @n[type=marker,tag=SkyChess_Generator] run function skyblock:preload_map_pvp_map011_selection_a
+execute as @n[type=marker,tag=SkyChess_Generator] at @s run tp @s ~12 ~ ~
+execute at @n[type=marker,tag=SkyChess_Generator] run function skyblock:preload_map_pvp_map011_selection_a
+execute as @n[type=marker,tag=SkyChess_Generator] at @s run tp @s ~-96 ~ ~12
+
+execute at @n[type=marker,tag=SkyChess_Generator] run function skyblock:preload_map_pvp_map011_selection_a
+execute as @n[type=marker,tag=SkyChess_Generator] at @s run tp @s ~12 ~ ~
+execute at @n[type=marker,tag=SkyChess_Generator] run function skyblock:preload_map_pvp_map011_selection_a
+execute as @n[type=marker,tag=SkyChess_Generator] at @s run tp @s ~12 ~ ~
+execute at @n[type=marker,tag=SkyChess_Generator] run function skyblock:preload_map_pvp_map011_selection_a
+execute as @n[type=marker,tag=SkyChess_Generator] at @s run tp @s ~12 ~ ~
+execute at @n[type=marker,tag=SkyChess_Generator] run function skyblock:preload_map_pvp_map011_selection_a
+execute as @n[type=marker,tag=SkyChess_Generator] at @s run tp @s ~12 ~ ~
+execute at @n[type=marker,tag=SkyChess_Generator] run function skyblock:preload_map_pvp_map011_selection_a
+execute as @n[type=marker,tag=SkyChess_Generator] at @s run tp @s ~12 ~ ~
+execute at @n[type=marker,tag=SkyChess_Generator] run function skyblock:preload_map_pvp_map011_selection_a
+execute as @n[type=marker,tag=SkyChess_Generator] at @s run tp @s ~12 ~ ~
+execute at @n[type=marker,tag=SkyChess_Generator] run function skyblock:preload_map_pvp_map011_selection_a
+execute as @n[type=marker,tag=SkyChess_Generator] at @s run tp @s ~12 ~ ~
+execute at @n[type=marker,tag=SkyChess_Generator] run function skyblock:preload_map_pvp_map011_selection_a
+execute as @n[type=marker,tag=SkyChess_Generator] at @s run tp @s ~12 ~ ~
+execute at @n[type=marker,tag=SkyChess_Generator] run function skyblock:preload_map_pvp_map011_selection_a
+execute as @n[type=marker,tag=SkyChess_Generator] at @s run tp @s ~-96 ~ ~12
 
 
 
