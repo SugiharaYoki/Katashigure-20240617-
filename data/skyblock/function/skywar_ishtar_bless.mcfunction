@@ -111,3 +111,10 @@ execute if entity @s[scores={ishtar_bless_3=25}] run give @s wayfinder_armor_tri
 execute if entity @s[scores={ishtar_bless_1=25}] run give @s egg 3
 execute if entity @s[scores={ishtar_bless_2=25}] run give @s egg 3
 execute if entity @s[scores={ishtar_bless_3=25}] run give @s egg 3
+
+execute if entity @s[scores={ishtar_bless_1=26}] run give @s silence_armor_trim_smithing_template[custom_name='{"text":"理性混淆","italic":false,"color":"red"}',custom_data={skywar_ishtar_25:1}] 1
+execute if entity @s[scores={ishtar_bless_2=26}] run give @s silence_armor_trim_smithing_template[custom_name='{"text":"理性混淆","italic":false,"color":"red"}',custom_data={skywar_ishtar_25:1}] 1
+execute if entity @s[scores={ishtar_bless_3=26}] run give @s silence_armor_trim_smithing_template[custom_name='{"text":"理性混淆","italic":false,"color":"red"}',custom_data={skywar_ishtar_25:1}] 1
+execute if entity @s[scores={ishtar_bless_1=26}] run give @s wind_charge 5
+execute if entity @s[scores={ishtar_bless_2=26}] run give @s wind_charge 5
+execute if entity @s[scores={ishtar_bless_3=26}] run give @s wind_charge 5
