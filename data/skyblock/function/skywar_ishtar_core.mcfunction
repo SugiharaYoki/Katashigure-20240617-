@@ -100,5 +100,7 @@ execute if items entity @s[scores={Skywar_ishtar_usehorn=1..}] container.* *[cus
 
 execute if items entity @s container.* *[custom_data={skywar_ishtar_25:1}] run tag @e[type=egg,distance=2..5] add Bless25
 
+execute if items entity @s container.* *[custom_data={skywar_ishtar_26:1}] run tag @e[type=wind_charge,distance=2..5] add Bless26
+
 
 scoreboard players set @s Skywar_ishtar_usehorn 0

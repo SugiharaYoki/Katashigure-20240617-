@@ -54,6 +54,8 @@ tellraw @s [{"text":"    欺诈师 瞒天「坠落狱穴」","color":"gold","hov
 
 tellraw @s [{"text":"    欺诈师 乍现「诞生虚桥」","color":"gold","hoverEvent":{"action":"show_text","contents":{"text":"鸡蛋×3 特殊模板 背包里存在时5格内的鸡蛋会被附上“欺诈”状态\n“欺诈”蛋会自动生成一条玻璃天桥\n距离25格内没有玩家时将自动取消“欺诈”状态","color":"white"}}},{"text":" 统 ","color":"green","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 131025"}},{"text":" 纵 ","color":"green","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 132025"}},{"text":" 纺 ","color":"green","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 133025"}}]
 
+tellraw @s [{"text":"    欺诈师 秘文「理性混淆」","color":"gold","hoverEvent":{"action":"show_text","contents":{"text":"风弹×5 特殊模板 背包里存在时5格内的风弹会被附上“混淆”状态\n“混淆”风弹会自动对周围64格内的玩家输入大量的干扰文字\n拥有“秘文「理性混淆」”模板的玩家可以免疫此效果","color":"white"}}},{"text":" 统 ","color":"green","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 131026"}},{"text":" 纵 ","color":"green","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 132026"}},{"text":" 纺 ","color":"green","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 133026"}}]
+
 
 scoreboard players set @s MultiMenu 0
 
