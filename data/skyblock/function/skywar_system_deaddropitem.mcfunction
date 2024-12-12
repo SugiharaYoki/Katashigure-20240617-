@@ -50,6 +50,10 @@ data modify entity @n[tag=skywar_deaddropitem_2] Items append from entity @s Inv
 data modify entity @n[tag=skywar_deaddropitem_2] Items append from entity @s Inventory[34]
 data modify entity @n[tag=skywar_deaddropitem_2] Items append from entity @s Inventory[35]
 data modify entity @n[tag=skywar_deaddropitem_2] Items append from entity @s Inventory[36]
+data modify entity @n[tag=skywar_deaddropitem_2] Items append from entity @s ArmorItems[0]
+data modify entity @n[tag=skywar_deaddropitem_2] Items append from entity @s ArmorItems[1]
+data modify entity @n[tag=skywar_deaddropitem_2] Items append from entity @s ArmorItems[2]
+data modify entity @n[tag=skywar_deaddropitem_2] Items append from entity @s ArmorItems[3]
 
 kill @e[tag=skywar_deaddropitem_1]
 kill @e[tag=skywar_deaddropitem_2]
