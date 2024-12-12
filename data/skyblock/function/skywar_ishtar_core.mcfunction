@@ -42,7 +42,7 @@ execute if entity @s[scores={If_MD_Wait=1..}] run effect give @a[tag=PVPing,dist
 execute if entity @s[scores={If_MD_Wait=1..}] run effect give @a[tag=PVPing,distance=0.1..5.3] resistance 5 19
 execute if entity @s[scores={If_MD_Wait=1..}] run effect give @a[tag=PVPing,distance=0.1..5.3] wither 5 0
 execute if entity @s[scores={If_MD_Wait=1..}] run scoreboard players set @a[tag=PVPing,distance=0.1..5.3] If_Bless11 40
-execute if entity @s[scores={If_MD_Wait=1..}] as @a[tag=PVPing,gamemode=survival,scores={If_Bless11=1..}] at @s run function skyblock:skywar_ishtar_core11
+execute as @a[tag=PVPing,gamemode=survival,scores={If_Bless11=1..}] at @s run function skyblock:skywar_ishtar_core11
 execute if entity @s[scores={If_MD_Wait=1..}] run scoreboard players set @s If_MD_Wait 0
 
 execute if entity @s[scores={If_MD_Chirp=1..}] rotated ~ 0 run tellraw @a[distance=0.01..7] {"text": "送你一个礼物！","color": "gold","bold":true}
