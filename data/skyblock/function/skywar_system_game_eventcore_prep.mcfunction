@@ -72,8 +72,8 @@ execute if score @n[tag=sc] Map_Code matches 8 run execute unless entity @n[tag=
 execute if score @n[tag=sc] Map_Code matches 8 run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run worldborder set 98
 execute if score @n[tag=sc] Map_Code matches 10 run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run worldborder center 50068 50068
 execute if score @n[tag=sc] Map_Code matches 10 run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run worldborder set 138
-execute if score @n[tag=sc] Map_Code matches 11 run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run worldborder center 50046 50046
-execute if score @n[tag=sc] Map_Code matches 11 run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run worldborder set 120
+execute if score @n[tag=sc] Map_Code matches 11 run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run worldborder center 50058 50058
+execute if score @n[tag=sc] Map_Code matches 11 run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run worldborder set 109
 execute if score @n[tag=sc] Map_Code matches 13 if block 27 56 -105 stripped_birch_wood run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run worldborder center 50434 50434
 execute if score @n[tag=sc] Map_Code matches 13 if block 27 56 -105 stripped_birch_wood run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run worldborder set 70
 execute if score @n[tag=sc] Map_Code matches 13 if block 27 56 -105 oak_planks run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run worldborder center 50434 50434

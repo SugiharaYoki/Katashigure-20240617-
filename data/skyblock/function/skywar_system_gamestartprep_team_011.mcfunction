@@ -51,41 +51,41 @@ team join Team1_8 @r[tag=PVPing,tag=!PVPTeamed]
 tag @a[team=Team1_8] add PVPTeamed
 #
 #
-tp @a[team=Team1_1] 50070 110 50022
+tp @a[team=Team1_1] 50094 110 50022
 tp @a[team=Team1_2] 50022 110 50022
-tp @a[team=Team1_3] 50022 110 50070
-tp @a[team=Team1_4] 50070 110 50070
-tp @a[team=Team1_5] 50070 110 50046
-tp @a[team=Team1_6] 50022 110 50046
-tp @a[team=Team1_7] 50046 110 50070
-tp @a[team=Team1_8] 50046 110 50022
+tp @a[team=Team1_3] 50022 110 50094
+tp @a[team=Team1_4] 50094 110 50094
+tp @a[team=Team1_5] 50094 110 50058
+tp @a[team=Team1_6] 50022 110 50058
+tp @a[team=Team1_7] 50058 110 50094
+tp @a[team=Team1_8] 50058 110 50022
 forceload add 50000 50000 50200 50200
-execute if entity @a[team=Team1_1] run setblock 50070 109 50022 purple_stained_glass
+execute if entity @a[team=Team1_1] run setblock 50094 109 50022 purple_stained_glass
 execute if entity @a[team=Team1_2] run setblock 50022 109 50022 purple_stained_glass
-execute if entity @a[team=Team1_3] run setblock 50022 109 50070 purple_stained_glass
-execute if entity @a[team=Team1_4] run setblock 50070 109 50070 purple_stained_glass
-execute if entity @a[team=Team1_5] run setblock 50070 109 50046 purple_stained_glass
-execute if entity @a[team=Team1_6] run setblock 50022 109 50046 purple_stained_glass
-execute if entity @a[team=Team1_7] run setblock 50046 109 50070 purple_stained_glass
-execute if entity @a[team=Team1_8] run setblock 50046 109 50022 purple_stained_glass
-execute if entity @a[team=Team1_1] run setblock 50070 110 50022 air
+execute if entity @a[team=Team1_3] run setblock 50022 109 50094 purple_stained_glass
+execute if entity @a[team=Team1_4] run setblock 50094 109 50094 purple_stained_glass
+execute if entity @a[team=Team1_5] run setblock 50094 109 50058 purple_stained_glass
+execute if entity @a[team=Team1_6] run setblock 50022 109 50058 purple_stained_glass
+execute if entity @a[team=Team1_7] run setblock 50058 109 50094 purple_stained_glass
+execute if entity @a[team=Team1_8] run setblock 50058 109 50022 purple_stained_glass
+execute if entity @a[team=Team1_1] run setblock 50094 110 50022 air
 execute if entity @a[team=Team1_2] run setblock 50022 110 50022 air
-execute if entity @a[team=Team1_3] run setblock 50022 110 50070 air
-execute if entity @a[team=Team1_4] run setblock 50070 110 50070 air
-execute if entity @a[team=Team1_5] run setblock 50070 110 50046 air
-execute if entity @a[team=Team1_6] run setblock 50022 110 50046 air
-execute if entity @a[team=Team1_7] run setblock 50046 110 50070 air
-execute if entity @a[team=Team1_8] run setblock 50046 110 50022 air
-execute if entity @a[team=Team1_1] run setblock 50070 111 50022 air
+execute if entity @a[team=Team1_3] run setblock 50022 110 50094 air
+execute if entity @a[team=Team1_4] run setblock 50094 110 50094 air
+execute if entity @a[team=Team1_5] run setblock 50094 110 50058 air
+execute if entity @a[team=Team1_6] run setblock 50022 110 50058 air
+execute if entity @a[team=Team1_7] run setblock 50058 110 50094 air
+execute if entity @a[team=Team1_8] run setblock 50058 110 50022 air
+execute if entity @a[team=Team1_1] run setblock 50094 111 50022 air
 execute if entity @a[team=Team1_2] run setblock 50022 111 50022 air
-execute if entity @a[team=Team1_3] run setblock 50022 111 50070 air
-execute if entity @a[team=Team1_4] run setblock 50070 111 50070 air
-execute if entity @a[team=Team1_5] run setblock 50070 111 50046 air
-execute if entity @a[team=Team1_6] run setblock 50022 111 50046 air
-execute if entity @a[team=Team1_7] run setblock 50046 111 50070 air
-execute if entity @a[team=Team1_8] run setblock 50046 111 50022 air
+execute if entity @a[team=Team1_3] run setblock 50022 111 50094 air
+execute if entity @a[team=Team1_4] run setblock 50094 111 50094 air
+execute if entity @a[team=Team1_5] run setblock 50094 111 50058 air
+execute if entity @a[team=Team1_6] run setblock 50022 111 50058 air
+execute if entity @a[team=Team1_7] run setblock 50058 111 50094 air
+execute if entity @a[team=Team1_8] run setblock 50058 111 50022 air
 
-tp @a[tag=PVP_see,tag=!PVPTeamed] 50046 130 50046
+tp @a[tag=PVP_see,tag=!PVPTeamed] 50058 130 50058
 
 give @a[tag=PVPing,tag=PVPTeamed] wooden_pickaxe
 give @a[tag=PVPing,tag=PVPTeamed] bread
