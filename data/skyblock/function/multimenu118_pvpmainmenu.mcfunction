@@ -15,6 +15,10 @@ scoreboard players set @s MultiMenu 0
 scoreboard objectives add ishtar_bless_1 dummy
 scoreboard objectives add ishtar_bless_2 dummy
 scoreboard objectives add ishtar_bless_3 dummy
+scoreboard objectives add ishtar_bless_4 dummy
+scoreboard objectives add ishtar_bless_5 dummy
 execute unless score @s ishtar_bless_1 matches -999.. run scoreboard players set @s ishtar_bless_1 0
 execute unless score @s ishtar_bless_2 matches -999.. run scoreboard players set @s ishtar_bless_2 0
 execute unless score @s ishtar_bless_3 matches -999.. run scoreboard players set @s ishtar_bless_3 0
+execute unless score @s ishtar_bless_4 matches -999.. run scoreboard players set @s ishtar_bless_4 0
+execute unless score @s ishtar_bless_5 matches -999.. run scoreboard players set @s ishtar_bless_5 0
