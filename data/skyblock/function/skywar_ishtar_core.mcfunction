@@ -27,7 +27,7 @@ execute if entity @s[scores={If_MD_13=1..,ishtar_core_1=9},gamemode=survival] ru
 execute if entity @s[scores={If_MD_13=1..,ishtar_core_1=9},gamemode=survival] run fill ~2 ~2 ~-2 ~2 ~2 ~-2 lantern replace air
 execute if entity @s[scores={If_MD_13=1..,ishtar_core_1=9},gamemode=survival] run fill ~-2 ~2 ~2 ~-2 ~2 ~2 lantern replace air
 execute if entity @s[scores={If_MD_13=1..,ishtar_core_1=9},gamemode=survival] run fill ~-2 ~2 ~-2 ~-2 ~2 ~-2 lantern replace air
-execute if entity @s[scores={If_MD_13=1..,ishtar_core_1=9},gamemode=survival] run effect give @s jump_boost 5 2 false
+execute as @s[scores={If_MD_13=1..,ishtar_core_1=9},gamemode=survival] run effect give @s jump_boost 5 2 false
 execute if entity @s[scores={If_MD_13=1..,ishtar_core_1=10}] run scoreboard players set @s If_MD_13 0
 execute if entity @s[scores={ishtar_core_1=10..}] run scoreboard players set @s ishtar_core_1 0
 
