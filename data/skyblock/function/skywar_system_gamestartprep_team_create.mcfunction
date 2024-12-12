@@ -32,6 +32,14 @@ team modify Team1_5 seeFriendlyInvisibles true
 team modify Team1_6 seeFriendlyInvisibles true
 team modify Team1_7 seeFriendlyInvisibles true
 team modify Team1_8 seeFriendlyInvisibles true
+team modify Team1_1 nametagVisibility hideForOtherTeams
+team modify Team1_2 nametagVisibility hideForOtherTeams
+team modify Team1_3 nametagVisibility hideForOtherTeams
+team modify Team1_4 nametagVisibility hideForOtherTeams
+team modify Team1_5 nametagVisibility hideForOtherTeams
+team modify Team1_6 nametagVisibility hideForOtherTeams
+team modify Team1_7 nametagVisibility hideForOtherTeams
+team modify Team1_8 nametagVisibility hideForOtherTeams
 team modify Team1_1 color green
 team modify Team1_2 color red
 team modify Team1_3 color blue
