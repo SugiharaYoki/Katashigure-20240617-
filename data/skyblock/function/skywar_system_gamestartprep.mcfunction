@@ -242,6 +242,7 @@ execute if block -131 59 -128 minecraft:green_concrete if score @n[tag=sc] SSgsp
 execute if block -131 59 -127 green_concrete if score @n[tag=sc] SSgspT matches 17 run execute as @a[tag=PVPing] at @s run effect give @s regeneration 300 1 true
 execute if block 44 61 54 minecraft:soul_lantern if score @n[tag=sc] SSgspT matches 17 run execute as @a[tag=PVPing] at @s run item replace entity @s armor.head with melon[minecraft:enchantments={binding_curse:1,blast_protection:4}]
 
+execute if score @n[tag=sc] SSgspT matches 1 if block -131 58 -133 diamond_block run tellraw @a[tag=!Gaming] {"text":"◇ 伊什塔尔的赐福 已开启","color":"aqua","bold": true}
 execute if score @n[tag=sc] SSgspT matches 1 if block -131 59 -119 green_concrete run tellraw @a[tag=!Gaming] {"text":"◇ 请注意：全局虚弱III已开启","color":"red"}
 execute if score @n[tag=sc] SSgspT matches 1 if block -131 59 -122 green_concrete run tellraw @a[tag=!Gaming] {"text":"◇ 请注意：全局挖掘疲劳已开启","color":"red"}
 execute if score @n[tag=sc] SSgspT matches 1 if block -131 59 -123 green_concrete run tellraw @a[tag=!Gaming] {"text":"◇ 请注意：全局隐身已开启","color":"red"}
@@ -266,6 +267,7 @@ execute if block -131 58 -133 diamond_block if score @n[tag=sc] SSgspT matches 1
 #execute if score @n[tag=sc] SSgspT matches 18 run tellraw @a[tag=PVPing] {"text":"看板狐： 所有参与者已合并为 A C 两组","color":"dark_green"}
 #execute if score @n[tag=sc] SSgspT matches 18 run team join Team1_1 @a[team=Team1_3]
 #execute if score @n[tag=sc] SSgspT matches 18 run team join Team1_2 @a[team=Team1_4]
+execute if score @n[tag=sc] SSgspT matches 19 if score @n[tag=sc] Map_Code matches 11 run effect give @a[tag=PVPing,tag=PVPTeamed] invisibility 120 0 true
 execute if score @n[tag=sc] SSgspT matches 19 if score @n[tag=sc] Map_Code matches 11 run give @a[tag=PVPing,tag=PVPTeamed] wooden_pickaxe
 execute if score @n[tag=sc] SSgspT matches 19 if score @n[tag=sc] Map_Code matches 11 run give @a[tag=PVPing,tag=PVPTeamed] bread
 
