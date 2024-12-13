@@ -82,7 +82,7 @@ execute if score sc Temp5_LoopE matches 2 run title @a[tag=PVP_see] actionbar {"
 execute if score sc Temp5_LoopE matches 2..6 as @a[tag=PVPing,tag=!PVP_observer] at @s run summon firework_rocket ~ ~1 ~ {LifeTime:30,FireworksItem:{id:firework_rocket,count:1,components:{fireworks:{flight_duration:1,explosions:[{shape:"small_ball",has_twinkle:true,has_trail:true,colors:[I;11743532,3887386,2437522,8073150,14602026,6719955,15435844],fade_colors:[I;14602026]}]}}}}
 execute if score sc Temp5_LoopE matches 2 run function skyblock:skywar_system_gameend_part0
 execute if score sc Temp5_LoopE matches 9 run function skyblock:skywar_system_gameend_part1
-execute if score sc Temp5_LoopE matches 10 run function skyblock:skywar_system_gameend_part2
+execute if score sc Temp5_LoopE matches 9 run function skyblock:skywar_system_gameend_part2
 
 scoreboard players remove sc TimeRemainUnsee 1
 #execute if entity @n[tag=sc,scores={TimeRemainUnsee=600,Map_Code=2}] unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run worldborder center 50100 50100
