@@ -20,4 +20,5 @@ execute at @s[y_rotation=45..135] if block ~ ~-0.1 ~ air run fill ~ ~0 ~ ~ ~8 ~ 
 
 playsound block.anvil.land block @a ~ ~ ~ 1 0.5
 playsound block.polished_deepslate.place block @a ~ ~ ~ 2 0.8
+
 scoreboard players set @s If_Bless27 0
