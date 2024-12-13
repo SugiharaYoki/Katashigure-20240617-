@@ -153,3 +153,12 @@ execute if entity @s[scores={ishtar_bless_1=26}] run give @s wind_charge 5
 execute if entity @s[scores={ishtar_bless_2=26}] run give @s wind_charge 5
 execute if entity @s[scores={ishtar_bless_3=26}] run give @s wind_charge 5
 execute if entity @s[scores={ishtar_bless_4=26}] run give @s wind_charge 5
+
+execute if entity @s[scores={ishtar_bless_1=27}] run give @s bolt_armor_trim_smithing_template[custom_name='{"text":"高速隧梯","italic":false,"color":"red"}',custom_data={skywar_ishtar_27:1}] 1
+execute if entity @s[scores={ishtar_bless_2=27}] run give @s bolt_armor_trim_smithing_template[custom_name='{"text":"高速隧梯","italic":false,"color":"red"}',custom_data={skywar_ishtar_27:1}] 1
+execute if entity @s[scores={ishtar_bless_3=27}] run give @s bolt_armor_trim_smithing_template[custom_name='{"text":"高速隧梯","italic":false,"color":"red"}',custom_data={skywar_ishtar_27:1}] 1
+execute if entity @s[scores={ishtar_bless_4=27}] run give @s bolt_armor_trim_smithing_template[custom_name='{"text":"高速隧梯","italic":false,"color":"red"}',custom_data={skywar_ishtar_27:1}] 1
+execute if entity @s[scores={ishtar_bless_1=27}] run give @s activator_rail 5
+execute if entity @s[scores={ishtar_bless_2=27}] run give @s activator_rail 5
+execute if entity @s[scores={ishtar_bless_3=27}] run give @s activator_rail 5
+execute if entity @s[scores={ishtar_bless_4=27}] run give @s activator_rail 5

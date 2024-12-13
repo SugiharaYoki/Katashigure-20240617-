@@ -104,5 +104,7 @@ execute if items entity @s container.* *[custom_data={skywar_ishtar_25:1}] run t
 
 execute if items entity @s container.* *[custom_data={skywar_ishtar_26:1}] run tag @e[type=wind_charge,distance=2..5] add Bless26
 
+execute if items entity @s[scores={If_Bless27=1..}] container.* *[custom_data={skywar_ishtar_27:1}] run function skyblock:skywar_ishtar_core27
+
 
 scoreboard players set @s Skywar_ishtar_usehorn 0
