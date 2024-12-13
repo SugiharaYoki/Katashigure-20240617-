@@ -81,8 +81,8 @@ execute if score sc Temp5_LoopE matches 2 run tag @a[tag=PVPing,tag=!PVP_observe
 execute if score sc Temp5_LoopE matches 2 run title @a[tag=PVP_see] actionbar {"text":"本局游戏结束","color":"green"}
 execute if score sc Temp5_LoopE matches 2..6 as @a[tag=PVPing,tag=!PVP_observer] at @s run summon firework_rocket ~ ~1 ~ {LifeTime:30,FireworksItem:{id:firework_rocket,count:1,components:{fireworks:{flight_duration:1,explosions:[{shape:"small_ball",has_twinkle:true,has_trail:true,colors:[I;11743532,3887386,2437522,8073150,14602026,6719955,15435844],fade_colors:[I;14602026]}]}}}}
 execute if score sc Temp5_LoopE matches 2 run function skyblock:skywar_system_gameend_part0
-execute if score sc Temp5_LoopE matches 9 run function skyblock:skywar_system_gameend_part1
 execute if score sc Temp5_LoopE matches 9 run function skyblock:preload_map_pvp_common_partdeletemap_1
+execute if score sc Temp5_LoopE matches 9 run function skyblock:skywar_system_gameend_part1
 execute if score sc Temp5_LoopE matches 10 run function skyblock:preload_map_pvp_common_partdeletemap_1b
 execute if score sc Temp5_LoopE matches 11 run function skyblock:preload_map_pvp_common_partdeletemap_1c
 execute if score sc Temp5_LoopE matches 11 run function skyblock:skywar_system_gameend_part3
