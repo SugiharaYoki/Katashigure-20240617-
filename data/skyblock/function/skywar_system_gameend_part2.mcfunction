@@ -80,6 +80,7 @@ setblock -27 143 -58 air
 #《PVP计时器关闭》
 setblock -54 143 -53 air
 #删除地图
+execute if entity @n[tag=sc,scores={Map_Theme=1}] run function skyblock:preload_map_pvp_common_partdeletemap_1
 execute if entity @n[tag=sc,scores={Map_Theme=2}] run function skyblock:preload_map_pvp_common_partdeletemap_2
 execute if entity @n[tag=sc,scores={Map_Theme=3}] run function skyblock:preload_map_pvp_common_partdeletemap_3
 execute if entity @n[tag=sc,scores={Map_Theme=4}] run function skyblock:preload_map_pvp_common_partdeletemap_4
