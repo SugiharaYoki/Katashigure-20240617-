@@ -14,9 +14,9 @@ execute if entity @n[tag=sc,scores={Map_Theme=2}] run function skyblock:preload_
 execute if entity @n[tag=sc,scores={Map_Theme=3}] run function skyblock:preload_map_pvp_common_partdeletemap_3
 execute if entity @n[tag=sc,scores={Map_Theme=4}] run function skyblock:preload_map_pvp_common_partdeletemap_4
 
-scoreboard players set @n[tag=sc] Temp5_LoopE 0
-scoreboard players set @n[tag=sc] Temp5_LoopF 0
-scoreboard players set @n[tag=sc] Temp5_Loop 0
+scoreboard players set sc Temp5_LoopE 0
+scoreboard players set sc Temp5_LoopF 0
+scoreboard players set sc Temp5_Loop 0
 
 
 #临时关闭职业系统·逆向解除
