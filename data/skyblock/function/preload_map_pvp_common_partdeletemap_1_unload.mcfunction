@@ -1,0 +1,7 @@
+#Forceload关闭
+forceload remove 50000 50000 50200 50200
+forceload remove 50000 50200 50200 50400
+forceload remove 50200 50000 50400 50200
+forceload remove 50200 50200 50400 50400
+forceload remove 49990 49990 49990 50000
+forceload remove 49990 49990 50000 49990
