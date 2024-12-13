@@ -8,13 +8,13 @@ execute if score sc Temp5_LoopE matches 0 if entity @a[team=Team1_7,tag=!ENKIDU]
 execute if score sc Temp5_LoopE matches 0 if entity @a[team=Team1_8,tag=!ENKIDU] unless entity @a[team=!Team1_8,tag=!PVP_observer,tag=PVPing] run scoreboard players add sc Temp5_LoopE 1
 execute as @a[tag=PVPing,scores={DeathCount=1..}] at @s run function skyblock:skywar_system_deaddropitem
 #execute if score @n[tag=sc] Map_Code matches 2 as @a[tag=PVPing] at @s if entity @s[y=70,dy=15] run tp ~ ~-1 ~
-#execute if score @n[tag=sc] Map_Code matches 2 as @a[tag=PVPing] at @s if entity @s[y=70,dy=15] run tp ~ ~-1 ~
-#execute if score @n[tag=sc] Map_Code matches 3 as @a[tag=PVPing] at @s if entity @s[y=80,dy=15] run tp ~ ~-1 ~
+execute if score @n[tag=sc] Map_Code matches 2 as @a[tag=PVPing] at @s if entity @s[y=70,dy=15] run tp ~ ~-1 ~
+execute if score @n[tag=sc] Map_Code matches 3 as @a[tag=PVPing] at @s if entity @s[y=80,dy=15] run tp ~ ~-1 ~
 #execute if score @n[tag=sc] Map_Code matches 4 as @a[tag=PVPing] at @s if entity @s[y=46,dy=15] run tp ~ ~-1 ~
-#execute if score @n[tag=sc] Map_Code matches 5 as @a[tag=PVPing] at @s if entity @s[y=75,dy=15] run tp ~ ~-1 ~
-#execute if score @n[tag=sc] Map_Code matches 7 as @a[tag=PVPing] at @s if entity @s[y=79,dy=15] run tp ~ ~-1 ~
+execute if score @n[tag=sc] Map_Code matches 5 as @a[tag=PVPing] at @s if entity @s[y=75,dy=15] run tp ~ ~-1 ~
+execute if score @n[tag=sc] Map_Code matches 7 as @a[tag=PVPing] at @s if entity @s[y=79,dy=15] run tp ~ ~-1 ~
 #[futuredevskywar]
-#execute if score @n[tag=sc] Map_Code matches 8 as @a[tag=PVPing] at @s if entity @s[y=45,dy=15] run tp ~ ~-1 ~
+execute if score @n[tag=sc] Map_Code matches 8 as @a[tag=PVPing] at @s if entity @s[y=45,dy=15] run tp ~ ~-1 ~
 #execute if score @n[tag=sc] Map_Code matches 10 as @a[tag=PVPing] at @s if entity @s[y=60,dy=15] run tp ~ ~-1 ~
 #execute if score @n[tag=sc] Map_Code matches 11 as @a[tag=PVPing] at @s if entity @s[y=118,dy=15] run tp ~ ~-1 ~
 #execute if score @n[tag=sc] Map_Code matches 13 as @a[tag=PVPing] at @s if entity @s[y=85,dy=15] run tp ~ ~-1 ~
