@@ -25,6 +25,6 @@ $execute if entity @s[scores={$(bless)=24}] run tellraw @s [{"text":" $(bless_na
 $execute if entity @s[scores={$(bless)=25}] run tellraw @s [{"text":" $(bless_name)： ","color":"yellow","bold": true},{"text":"乍现「诞生虚桥」","color":"white"}]
 $execute if entity @s[scores={$(bless)=26}] run tellraw @s [{"text":" $(bless_name)： ","color":"yellow","bold": true},{"text":"秘文「理性混淆」","color":"white"}]
 $execute if entity @s[scores={$(bless)=27}] run tellraw @s [{"text":" $(bless_name)： ","color":"yellow","bold": true},{"text":"筑道「高速隧梯」","color":"white"}]
-$execute if entity @s[scores={$(bless)=28}] run tellraw @s [{"text":" $(bless_name)： ","color":"yellow","bold": true},{"text":"乍现「诞生虚桥」","color":"white"}]
+$execute if entity @s[scores={$(bless)=28}] run tellraw @s [{"text":" $(bless_name)： ","color":"yellow","bold": true},{"text":"泯没「丛禾蓦至」","color":"white"}]
 $execute if entity @s[scores={$(bless)=29}] run tellraw @s [{"text":" $(bless_name)： ","color":"yellow","bold": true},{"text":"乍现「诞生虚桥」","color":"white"}]
 $execute if entity @s[scores={$(bless)=30}] run tellraw @s [{"text":" $(bless_name)： ","color":"yellow","bold": true},{"text":"乍现「诞生虚桥」","color":"white"}]
