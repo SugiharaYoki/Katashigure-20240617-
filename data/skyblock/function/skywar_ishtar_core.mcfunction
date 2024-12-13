@@ -7,29 +7,7 @@ scoreboard objectives add ishtar_core_5 dummy
 scoreboard objectives add Skywar_ishtar_usehorn minecraft.used:minecraft.goat_horn
 
 kill @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{skywar:1}}}}]
-execute if entity @s[scores={If_MD_13=1..},gamemode=survival] run scoreboard players add @s ishtar_core_1 1
-execute if entity @s[scores={If_MD_13=1..,ishtar_core_1=1..10},gamemode=survival] run playsound minecraft:entity.chicken.egg master @a ~ ~ ~ 1 0.8
-execute if entity @s[scores={If_MD_13=1..,ishtar_core_1=1},gamemode=survival] run fill ~1 ~-1 ~1 ~-1 ~-1 ~-1 stone_bricks replace air
-execute if entity @s[scores={If_MD_13=1..,ishtar_core_1=3},gamemode=survival] run fill ~2 ~-1 ~2 ~-2 ~-1 ~-2 polished_andesite replace air
-execute if entity @s[scores={If_MD_13=1..,ishtar_core_1=7},gamemode=survival] run fill ~1 ~ ~2 ~-1 ~ ~2 stone_brick_wall replace air
-execute if entity @s[scores={If_MD_13=1..,ishtar_core_1=7},gamemode=survival] run fill ~1 ~ ~-2 ~-1 ~ ~-2 stone_brick_wall replace air
-execute if entity @s[scores={If_MD_13=1..,ishtar_core_1=7},gamemode=survival] run fill ~2 ~ ~1 ~2 ~ ~-1 stone_brick_wall replace air
-execute if entity @s[scores={If_MD_13=1..,ishtar_core_1=7},gamemode=survival] run fill ~-2 ~ ~1 ~-2 ~ ~-1 stone_brick_wall replace air
-execute if entity @s[scores={If_MD_13=1..,ishtar_core_1=5},gamemode=survival] run fill ~2 ~ ~2 ~2 ~ ~2 polished_andesite replace air
-execute if entity @s[scores={If_MD_13=1..,ishtar_core_1=5},gamemode=survival] run fill ~2 ~ ~-2 ~2 ~ ~-2 polished_andesite replace air
-execute if entity @s[scores={If_MD_13=1..,ishtar_core_1=5},gamemode=survival] run fill ~-2 ~ ~2 ~-2 ~ ~2 polished_andesite replace air
-execute if entity @s[scores={If_MD_13=1..,ishtar_core_1=5},gamemode=survival] run fill ~-2 ~ ~-2 ~-2 ~ ~-2 polished_andesite replace air
-execute if entity @s[scores={If_MD_13=1..,ishtar_core_1=7},gamemode=survival] run fill ~2 ~1 ~2 ~2 ~1 ~2 polished_andesite replace air
-execute if entity @s[scores={If_MD_13=1..,ishtar_core_1=7},gamemode=survival] run fill ~2 ~1 ~-2 ~2 ~1 ~-2 polished_andesite replace air
-execute if entity @s[scores={If_MD_13=1..,ishtar_core_1=7},gamemode=survival] run fill ~-2 ~1 ~2 ~-2 ~1 ~2 polished_andesite replace air
-execute if entity @s[scores={If_MD_13=1..,ishtar_core_1=7},gamemode=survival] run fill ~-2 ~1 ~-2 ~-2 ~1 ~-2 polished_andesite replace air
-execute if entity @s[scores={If_MD_13=1..,ishtar_core_1=9},gamemode=survival] run fill ~2 ~2 ~2 ~2 ~2 ~2 lantern replace air
-execute if entity @s[scores={If_MD_13=1..,ishtar_core_1=9},gamemode=survival] run fill ~2 ~2 ~-2 ~2 ~2 ~-2 lantern replace air
-execute if entity @s[scores={If_MD_13=1..,ishtar_core_1=9},gamemode=survival] run fill ~-2 ~2 ~2 ~-2 ~2 ~2 lantern replace air
-execute if entity @s[scores={If_MD_13=1..,ishtar_core_1=9},gamemode=survival] run fill ~-2 ~2 ~-2 ~-2 ~2 ~-2 lantern replace air
-execute as @s[scores={If_MD_13=1..,ishtar_core_1=9},gamemode=survival] run effect give @s jump_boost 5 2 false
-execute if entity @s[scores={If_MD_13=1..,ishtar_core_1=10}] run scoreboard players set @s If_MD_13 0
-execute if entity @s[scores={ishtar_core_1=10..}] run scoreboard players set @s ishtar_core_1 0
+execute if entity @s[scores={If_MD_13=1..},gamemode=survival] run function skyblock:skywar_ishtar_core9
 
 execute if entity @s[scores={If_MD_Strad=1..}] run playsound minecraft:block.beacon.power_select ambient @a ~ ~2 ~ 4 0.5
 execute if entity @s[scores={If_MD_Strad=1..}] run summon area_effect_cloud ~ ~ ~ {Particle:{type:"end_rod"},Radius:5,Duration:200,potion_contents:{custom_color:16383998,custom_effects:[{id:levitation,duration:120,amplifier:3,show_particles:1b,show_icon:1b},{id:glowing,duration:120,amplifier:0,show_particles:1b,show_icon:1b}]}}
@@ -45,14 +23,7 @@ execute if entity @s[scores={If_MD_Wait=1..}] run scoreboard players set @a[tag=
 execute as @a[tag=PVPing,gamemode=survival,scores={If_Bless11=1..}] at @s run function skyblock:skywar_ishtar_core11
 execute if entity @s[scores={If_MD_Wait=1..}] run scoreboard players set @s If_MD_Wait 0
 
-execute if entity @s[scores={If_MD_Chirp=1..}] rotated ~ 0 run tellraw @a[distance=0.01..7] {"text": "送你一个礼物！","color": "gold","bold":true}
-execute if entity @s[scores={If_MD_Chirp=1..}] rotated ~ 0 run playsound block.note_block.bell master @a ~ ~ ~ 1 1.5
-execute if entity @s[scores={If_MD_Chirp=1..}] rotated ~ 0 run give @s tnt 4
-execute if entity @s[scores={If_MD_Chirp=1..}] rotated ~ 0 positioned ^ ^ ^-1 if block ~ ~ ~ air run summon tnt ~ ~ ~ {fuse:70}
-execute if entity @s[scores={If_MD_Chirp=1..}] rotated ~ 0 positioned ^ ^ ^1 if block ~ ~ ~ air run summon tnt ~ ~ ~ {fuse:70}
-execute if entity @s[scores={If_MD_Chirp=1..}] rotated ~ 0 positioned ^-1 ^ ^ if block ~ ~ ~ air run summon tnt ~ ~ ~ {fuse:70}
-execute if entity @s[scores={If_MD_Chirp=1..}] rotated ~ 0 positioned ^1 ^ ^ if block ~ ~ ~ air run summon tnt ~ ~ ~ {fuse:70}
-execute if entity @s[scores={If_MD_Chirp=1..}] run scoreboard players set @s If_MD_Chirp 0
+execute if entity @s[scores={If_MD_Chirp=1..}] rotated ~ 0 run function skyblock:skywar_ishtar_core17
 
 execute if items entity @s[predicate=!skyblock:sneaking] container.* *[custom_data={skywar_antiinvis:1}] at @a[distance=0.1..5,nbt={active_effects:[{id:"minecraft:invisibility"}]}] run playsound minecraft:block.note_block.chime ambient @a ~ ~1 ~ 4 1.5
 execute if items entity @s[predicate=!skyblock:sneaking] container.* *[custom_data={skywar_antiinvis:1}] as @a[distance=0.1..5,nbt={active_effects:[{id:"minecraft:invisibility"}]}] at @s run effect give @s glowing 5 0 true
@@ -81,6 +52,7 @@ execute if entity @s[scores={If_MD_Ward=1..}] run fill ~4 ~4 ~4 ~-4 ~-4 ~-4 pink
 execute if entity @s[scores={If_MD_Ward=1..}] run scoreboard players set @s If_MD_Ward 0
 
 execute if items entity @s[predicate=!skyblock:sneaking] container.* *[custom_data={skywar:1,skywar_ishtar_20:1}] positioned ~ ~-0.2 ~ if block ~ ~ ~ slime_block run effect give @s jump_boost 1 7 false
+execute if items entity @s[predicate=!skyblock:sneaking] container.* *[custom_data={skywar:1,skywar_ishtar_20:1}] positioned ~ ~-0.05 ~ if block ~ ~ ~ cake run effect give @s jump_boost 1 7 false
 
 
 execute if items entity @s container.* *[custom_data={skywar:1,skywar_ishtar_9:1}] run effect give @s haste 3 1 true
@@ -103,6 +75,10 @@ execute if items entity @s[scores={Skywar_ishtar_usehorn=1..}] container.* *[cus
 execute if items entity @s container.* *[custom_data={skywar_ishtar_25:1}] run tag @e[type=egg,distance=2..5] add Bless25
 
 execute if items entity @s container.* *[custom_data={skywar_ishtar_26:1}] run tag @e[type=wind_charge,distance=2..5] add Bless26
+
+execute if items entity @s[scores={If_Bless27=1..}] container.* *[custom_data={skywar_ishtar_27:1}] run function skyblock:skywar_ishtar_core27
+
+execute if items entity @s[predicate=skyblock:sneaking] container.* *[custom_data={skywar_ishtar_28:1}] at @s unless block ~ ~ ~ air run function skyblock:skywar_ishtar_core28
 
 
 scoreboard players set @s Skywar_ishtar_usehorn 0
