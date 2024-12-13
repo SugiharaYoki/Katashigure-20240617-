@@ -273,6 +273,8 @@ execute if block -131 58 -133 diamond_block if score @n[tag=sc] SSgspT matches 1
 #execute if score @n[tag=sc] SSgspT matches 18 run team join Team1_1 @a[team=Team1_3]
 #execute if score @n[tag=sc] SSgspT matches 18 run team join Team1_2 @a[team=Team1_4]
 execute if score @n[tag=sc] SSgspT matches 19 if score @n[tag=sc] Map_Code matches 11 run effect give @a[tag=PVPing,tag=PVPTeamed] invisibility 240 0 true
+execute if score @n[tag=sc] SSgspT matches 19 if score @n[tag=sc] Map_Code matches 11 run effect give @a[tag=PVPing,tag=PVPTeamed] strength 20 4 true
+execute if score @n[tag=sc] SSgspT matches 19 if score @n[tag=sc] Map_Code matches 11 run effect give @a[tag=PVPing,tag=PVPTeamed] resistance 20 2 true
 execute if score @n[tag=sc] SSgspT matches 19 if score @n[tag=sc] Map_Code matches 11 run give @a[tag=PVPing,tag=PVPTeamed] wooden_pickaxe
 execute if score @n[tag=sc] SSgspT matches 19 if score @n[tag=sc] Map_Code matches 11 run give @a[tag=PVPing,tag=PVPTeamed] bread
 
