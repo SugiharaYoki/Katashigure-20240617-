@@ -24,7 +24,7 @@ execute if entity @s[scores={Azr_wave=10..}] run item replace entity @s inventor
 execute if entity @s[scores={Azr_wave=10..}] run item replace entity @s inventory.1 with stick 3
 execute if entity @s[scores={Azr_wave=10..}] run item replace entity @s inventory.2 with flint 3
 #23波后
-execute if entity @s[scores={Azr_wave=23..}] run function skyblock:azr/items/bow
+execute if entity @s[scores={Azr_wave=23..}] run function skyblock:azr/items/bow_normal
 execute if entity @s[scores={Azr_wave=23..}] run item replace entity @s inventory.0 with rotten_flesh 6
 execute if entity @s[scores={Azr_wave=23..}] run item replace entity @s inventory.3 with bone[custom_name='{"text":"硬骨","italic":false}',custom_data={hard_bone:1b},custom_model_data=100001] 3
 execute if entity @s[scores={Azr_wave=23..}] run item replace entity @s inventory.4 with iron_nugget[custom_name='{"text":"盾牌碎片","italic":false,"color":"white"}',custom_data={shield_shard:1b},custom_model_data=100001] 3
@@ -34,10 +34,10 @@ execute if entity @s[scores={Azr_wave=36..}] run function skyblock:azr/items/iro
 execute if entity @s[scores={Azr_wave=36..}] run function skyblock:azr/items/iron_axe_prison
 execute if entity @s[scores={Azr_wave=36..}] run function skyblock:azr/items/iron_shovel_prison
 execute if entity @s[scores={Azr_wave=36..}] run function skyblock:azr/items/bow_god
-execute if entity @s[scores={Azr_wave=36..}] run function skyblock:azr/items/iron_helmet
-execute if entity @s[scores={Azr_wave=36..}] run function skyblock:azr/items/iron_chestplate
-execute if entity @s[scores={Azr_wave=36..}] run function skyblock:azr/items/iron_leggings
-execute if entity @s[scores={Azr_wave=36..}] run function skyblock:azr/items/iron_boots
+execute if entity @s[scores={Azr_wave=36..}] run function skyblock:azr/items/iron_helmet_normal_replace
+execute if entity @s[scores={Azr_wave=36..}] run function skyblock:azr/items/iron_chestplate_normal_replace
+execute if entity @s[scores={Azr_wave=36..}] run function skyblock:azr/items/iron_leggings_normal_replace
+execute if entity @s[scores={Azr_wave=36..}] run function skyblock:azr/items/iron_boots_normal_replace
 execute if entity @s[scores={Azr_wave=36..}] run function skyblock:azr/items/soul_expel_torch
 execute if entity @s[scores={Azr_wave=36..}] run give @s cooked_salmon 16
 execute if entity @s[scores={Azr_wave=36..}] run give @s golden_carrot 2
