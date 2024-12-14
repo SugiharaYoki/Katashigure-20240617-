@@ -1,8 +1,5 @@
-forceload add -8810 -10000 -8692 -9882
+forceload add -8810 -10000 -8612 -9802
 forceload add 50000 50000 50200 50200
-forceload add 50000 50200 50200 50300
-forceload add 50200 50000 50300 50200
-forceload add 50200 50200 50300 50300
 
 execute positioned -8410 58 -10000 run clone ~ ~ ~000 ~20 ~60 ~020 50010 10 50010 masked
 execute positioned -8410 58 -10000 run clone ~ ~ ~020 ~20 ~60 ~040 50010 10 50030 masked
@@ -63,16 +60,10 @@ execute positioned -8410 58 -10000 run clone ~120 ~ ~120 ~140 ~60 ~140 50130 10 
 
 
 
-forceload remove -8810 -10000 -8692 -9882
+forceload remove -8810 -10000 -8612 -9802
 
 
 title @a actionbar {"text":"空岛战争： 穷泽叢烬的水灵脉","bold":true,"color":"blue"}
 forceload add 50000 50000 50200 50200
 fillbiome 50000 10 50000 50200 70 50200 jungle
-fillbiome 50000 10 50200 50200 70 50300 jungle
-fillbiome 50200 10 50000 50200 70 50200 jungle
-fillbiome 50200 10 50200 50300 70 50300 jungle
 forceload remove 50000 50000 50200 50200
-forceload remove 50000 50200 50200 50300
-forceload remove 50200 50000 50300 50200
-forceload remove 50200 50200 50300 50300
