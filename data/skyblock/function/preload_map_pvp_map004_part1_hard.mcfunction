@@ -46,6 +46,38 @@ summon blaze 50074 34 50068
 
 title @a actionbar {"text":"空岛战争： 炙魇的黑城","bold":true,"color":"blue"}
 forceload add 50000 50000 50200 50200
-fillbiome 50000 -21 50000 50200 30 50200 crimson_forest
+fillbiome 50000 -0 50000 50180 -1 50180 crimson_forest
+fillbiome 50000 -2 50000 50180 -3 50180 crimson_forest
+fillbiome 50000 -4 50000 50180 -5 50180 crimson_forest
+fillbiome 50000 -6 50000 50180 -7 50180 crimson_forest
+fillbiome 50000 -8 50000 50180 -9 50180 crimson_forest
+fillbiome 50000 -10 50000 50180 -11 50180 crimson_forest
+fillbiome 50000 -12 50000 50180 -13 50180 crimson_forest
+fillbiome 50000 -14 50000 50180 -15 50180 crimson_forest
+fillbiome 50000 -16 50000 50180 -17 50180 crimson_forest
+fillbiome 50000 -18 50000 50180 -19 50180 crimson_forest
+fillbiome 50000 -20 50000 50180 -21 50180 crimson_forest
+fillbiome 50000 -22 50000 50180 -23 50180 crimson_forest
+fillbiome 50000 -24 50000 50180 -25 50180 crimson_forest
+fillbiome 50000 0 50000 50180 1 50180 crimson_forest
+fillbiome 50000 2 50000 50180 3 50180 crimson_forest
+fillbiome 50000 4 50000 50180 5 50180 crimson_forest
+fillbiome 50000 6 50000 50180 7 50180 crimson_forest
+fillbiome 50000 8 50000 50180 9 50180 crimson_forest
+fillbiome 50000 10 50000 50180 11 50180 crimson_forest
+fillbiome 50000 12 50000 50180 13 50180 crimson_forest
+fillbiome 50000 14 50000 50180 15 50180 crimson_forest
+fillbiome 50000 16 50000 50180 17 50180 crimson_forest
+fillbiome 50000 18 50000 50180 19 50180 crimson_forest
+fillbiome 50000 20 50000 50180 21 50180 crimson_forest
+fillbiome 50000 22 50000 50180 23 50180 crimson_forest
+fillbiome 50000 24 50000 50180 25 50180 crimson_forest
+fillbiome 50000 26 50000 50180 27 50180 crimson_forest
+fillbiome 50000 28 50000 50180 29 50180 crimson_forest
+fillbiome 50000 30 50000 50180 31 50180 crimson_forest
+fillbiome 50000 32 50000 50180 33 50180 crimson_forest
+fillbiome 50000 34 50000 50180 35 50180 crimson_forest
+fillbiome 50000 36 50000 50180 37 50180 crimson_forest
+fillbiome 50000 38 50000 50180 39 50180 crimson_forest
 forceload remove 50000 50000 50200 50200
 tag @n[tag=sc] remove Skyblock_map004_event

@@ -20,5 +20,34 @@ forceload remove -9410 -10000 -9295 -9882
 
 title @a actionbar {"text":"空岛战争： 天穹巨兽古伽兰那 · 维修层","bold":true,"color":"blue"}
 forceload add 50000 50000 50200 50200
-fillbiome 50000 200 50000 50200 260 50200 basalt_deltas
+fillbiome 50000 200 50000 50160 201 50160 basalt_deltas
+fillbiome 50000 202 50000 50160 203 50160 basalt_deltas
+fillbiome 50000 204 50000 50160 205 50160 basalt_deltas
+fillbiome 50000 206 50000 50160 207 50160 basalt_deltas
+fillbiome 50000 208 50000 50160 209 50160 basalt_deltas
+fillbiome 50000 210 50000 50160 211 50160 basalt_deltas
+fillbiome 50000 212 50000 50160 213 50160 basalt_deltas
+fillbiome 50000 214 50000 50160 215 50160 basalt_deltas
+fillbiome 50000 216 50000 50160 217 50160 basalt_deltas
+fillbiome 50000 218 50000 50160 219 50160 basalt_deltas
+fillbiome 50000 220 50000 50160 221 50160 basalt_deltas
+fillbiome 50000 222 50000 50160 223 50160 basalt_deltas
+fillbiome 50000 224 50000 50160 225 50160 basalt_deltas
+fillbiome 50000 226 50000 50160 227 50160 basalt_deltas
+fillbiome 50000 228 50000 50160 229 50160 basalt_deltas
+fillbiome 50000 230 50000 50160 231 50160 basalt_deltas
+fillbiome 50000 232 50000 50160 233 50160 basalt_deltas
+fillbiome 50000 234 50000 50160 235 50160 basalt_deltas
+fillbiome 50000 236 50000 50160 237 50160 basalt_deltas
+fillbiome 50000 238 50000 50160 239 50160 basalt_deltas
+fillbiome 50000 240 50000 50160 241 50160 basalt_deltas
+fillbiome 50000 242 50000 50160 243 50160 basalt_deltas
+fillbiome 50000 244 50000 50160 245 50160 basalt_deltas
+fillbiome 50000 246 50000 50160 247 50160 basalt_deltas
+fillbiome 50000 248 50000 50160 249 50160 basalt_deltas
+fillbiome 50000 250 50000 50160 251 50160 basalt_deltas
+fillbiome 50000 252 50000 50160 253 50160 basalt_deltas
+fillbiome 50000 254 50000 50160 255 50160 basalt_deltas
+fillbiome 50000 256 50000 50160 257 50160 basalt_deltas
+fillbiome 50000 258 50000 50160 259 50160 basalt_deltas
 forceload remove 50000 50000 50200 50200
