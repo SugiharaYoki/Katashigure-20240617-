@@ -1,4 +1,4 @@
-forceload add -8810 -10000 -8612 -9802
+forceload add -8410 -10000 -8212 -9802
 forceload add 50000 50000 50200 50200
 
 execute positioned -8410 58 -10000 run clone ~ ~ ~000 ~20 ~60 ~020 50010 10 50010 masked
