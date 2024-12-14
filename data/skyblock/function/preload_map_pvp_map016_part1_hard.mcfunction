@@ -37,5 +37,5 @@ forceload remove -9610 -10000 -9492 -9882
 
 title @a actionbar {"text":"空岛战争： 绯染缥茫的世花源","bold":true,"color":"blue"}
 forceload add 50000 50000 50200 50200
-fillbiome 50000 36 50200 50200 66 50200 cherry_grove
+fillbiome 50000 36 50000 50200 66 50200 cherry_grove
 forceload remove 50000 50000 50200 50200

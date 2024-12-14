@@ -1,4 +1,8 @@
 forceload add -8810 -10000 -8692 -9882
+forceload add 50000 50000 50200 50200
+forceload add 50000 50200 50200 50300
+forceload add 50200 50000 50300 50200
+forceload add 50200 50200 50300 50300
 clone -8810 58 -10000 -8692 93 -9994 50010 10 50010 masked
 clone -8810 58 -9993 -8692 93 -9987 50010 10 50017 masked
 clone -8810 58 -9986 -8692 93 -9980 50010 10 50024 masked
@@ -36,7 +40,13 @@ clone -8810 94 -9888 -8692 103 -9882 50010 46 50122 masked
 forceload remove -8810 -10000 -8692 -9882
 
 
-title @a actionbar {"text":"空岛战争： 碎晦坍殒的地灵脉","bold":true,"color":"blue"}
+title @a actionbar {"text":"空岛战争： 穷泽叢烬的水灵脉","bold":true,"color":"blue"}
 forceload add 50000 50000 50200 50200
-fillbiome 50000 10 50000 50200 70 50200 mangrove_swamp
+fillbiome 50000 10 50000 50200 70 50200 jungle
+fillbiome 50000 10 50200 50200 70 50300 jungle
+fillbiome 50200 10 50000 50200 70 50200 jungle
+fillbiome 50200 10 50200 50300 70 50300 jungle
 forceload remove 50000 50000 50200 50200
+forceload remove 50000 50200 50200 50300
+forceload remove 50200 50000 50300 50200
+forceload remove 50200 50200 50300 50300

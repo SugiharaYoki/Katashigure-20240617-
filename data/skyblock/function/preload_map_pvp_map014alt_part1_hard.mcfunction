@@ -72,5 +72,5 @@ forceload remove -8810 -10000 -8692 -9882
 
 title @a actionbar {"text":"混沌异象： 折羽界离的夜明之塔","bold":true,"color":"red"}
 forceload add 50000 50000 50200 50200
-fillbiome 50000 0 50200 50200 250 50200 taiga
+fillbiome 50000 0 50000 50200 250 50200 taiga
 forceload remove 50000 50000 50200 50200
