@@ -12,6 +12,7 @@ execute if score @n[tag=sc] Map_Code matches 14 run scoreboard players set sc Ti
 execute if score @n[tag=sc] Map_Code matches 15 run scoreboard players set sc TimeRemainUnsee 605
 execute if score @n[tag=sc] Map_Code matches 16 run scoreboard players set sc TimeRemainUnsee 505
 execute if score @n[tag=sc] Map_Code matches 17 run scoreboard players set sc TimeRemainUnsee 805
+execute if score @n[tag=sc] Map_Code matches 18 run scoreboard players set sc TimeRemainUnsee 605
 #[futuredevskywar]
 execute if score @n[tag=sc] Map_Code matches 13 if block 27 56 -105 oak_planks run scoreboard players set sc TimeRemainUnsee 485
 execute if score @n[tag=sc] Map_Code matches 13 if block 27 56 -105 jungle_log run scoreboard players set sc TimeRemainUnsee 725
@@ -34,6 +35,7 @@ execute if score @n[tag=sc] Map_Code matches 14 if block -156 59 -114 diamond_bl
 execute if score @n[tag=sc] Map_Code matches 15 run spawnpoint @a[tag=!NoSkyWar] 50069 40 50070
 execute if score @n[tag=sc] Map_Code matches 16 run spawnpoint @a[tag=!NoSkyWar] 50069 40 50070
 execute if score @n[tag=sc] Map_Code matches 17 run spawnpoint @a[tag=!NoSkyWar] 50080 240 50070
+execute if score @n[tag=sc] Map_Code matches 18 run spawnpoint @a[tag=!NoSkyWar] 50075 75 50075
 #[futuredevskywar]
 execute if score @n[tag=sc] Map_Code matches 13 if block 27 56 -105 stripped_birch_wood run spawnpoint @a[tag=!NoSkyWar] 50434 30 50434
 execute if score @n[tag=sc] Map_Code matches 13 if block 27 56 -105 oak_planks run spawnpoint @a[tag=!NoSkyWar] 50434 30 50434
@@ -93,6 +95,8 @@ execute if score @n[tag=sc] Map_Code matches 16 run execute unless entity @n[tag
 execute if score @n[tag=sc] Map_Code matches 16 run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run worldborder set 138
 execute if score @n[tag=sc] Map_Code matches 17 run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run worldborder center 50080 50070
 execute if score @n[tag=sc] Map_Code matches 17 run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run worldborder set 138
+execute if score @n[tag=sc] Map_Code matches 18 run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run worldborder center 50075 50075
+execute if score @n[tag=sc] Map_Code matches 18 run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run worldborder set 151
 #execute if score @n[tag=sc] Map_Code matches 10 run tp @a[tag=!PVPing,tag=PVP_see] 13072 80 13072
 #execute if score @n[tag=sc] Map_Code matches 10 run gamemode @a[tag=!PVPing,tag=PVP_see] spectator
 scoreboard players set sc Temp5_LoopE 0

@@ -37,5 +37,28 @@ forceload remove -9610 -10000 -9492 -9882
 
 title @a actionbar {"text":"空岛战争： 绯染缥茫的世花源","bold":true,"color":"blue"}
 forceload add 50000 50000 50200 50200
-fillbiome 50000 36 50200 50200 66 50200 cherry_grove
+fillbiome 50000 36 50000 50180 37 50180 cherry_grove
+fillbiome 50000 38 50000 50180 39 50180 cherry_grove
+fillbiome 50000 40 50000 50180 41 50180 cherry_grove
+fillbiome 50000 42 50000 50180 43 50180 cherry_grove
+fillbiome 50000 44 50000 50180 45 50180 cherry_grove
+fillbiome 50000 46 50000 50180 47 50180 cherry_grove
+fillbiome 50000 48 50000 50180 49 50180 cherry_grove
+fillbiome 50000 50 50000 50180 51 50180 cherry_grove
+fillbiome 50000 52 50000 50180 53 50180 cherry_grove
+fillbiome 50000 54 50000 50180 55 50180 cherry_grove
+fillbiome 50000 56 50000 50180 57 50180 cherry_grove
+fillbiome 50000 58 50000 50180 59 50180 cherry_grove
+fillbiome 50000 60 50000 50180 61 50180 cherry_grove
+fillbiome 50000 62 50000 50180 63 50180 cherry_grove
+fillbiome 50000 64 50000 50180 65 50180 cherry_grove
+fillbiome 50000 66 50000 50180 67 50180 cherry_grove
+fillbiome 50000 68 50000 50180 69 50180 cherry_grove
+fillbiome 50000 70 50000 50180 71 50180 cherry_grove
+fillbiome 50000 72 50000 50180 73 50180 cherry_grove
+fillbiome 50000 74 50000 50180 75 50180 cherry_grove
+fillbiome 50000 76 50000 50180 77 50180 cherry_grove
+fillbiome 50000 78 50000 50180 79 50180 cherry_grove
+fillbiome 50000 80 50000 50180 81 50180 cherry_grove
+fillbiome 50000 82 50000 50180 83 50180 cherry_grove
 forceload remove 50000 50000 50200 50200

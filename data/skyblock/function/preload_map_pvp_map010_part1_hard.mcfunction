@@ -38,5 +38,5 @@ forceload remove -8810 -10000 -8692 -9882
 
 title @a actionbar {"text":"空岛战争： 碎晦坍殒的地灵脉","bold":true,"color":"blue"}
 forceload add 50000 50000 50200 50200
-fillbiome 50000 10 50200 50200 70 50200 mangrove_swamp
+fillbiome 50000 10 50000 50200 70 50200 mangrove_swamp
 forceload remove 50000 50000 50200 50200

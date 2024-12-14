@@ -258,9 +258,14 @@ execute if score sc TimeRemainUnsee matches 603 if entity @n[tag=sc,scores={Map_
 execute if score sc TimeRemainUnsee matches 30 if entity @n[tag=sc,scores={Map_Code=10}] run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run title @a[tag=PVP_see] times 0 60 60
 execute if score sc TimeRemainUnsee matches 30 if entity @n[tag=sc,scores={Map_Code=10}] run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run title @a[tag=PVP_see] title {"text":"地灵脉的召唤","color":"yellow"}
 execute if score sc TimeRemainUnsee matches 30 if entity @n[tag=sc,scores={Map_Code=10}] run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run title @a[tag=PVP_see] subtitle {"text":"“汝并不该来到此地 但汝身后已无退路”","color":"yellow"}
-execute if score sc TimeRemainUnsee matches 30 if entity @n[tag=sc,scores={Map_Code=10}] run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run worldborder set 60 300
+execute if score sc TimeRemainUnsee matches 30 if entity @n[tag=sc,scores={Map_Code=10}] run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run worldborder set 20 300
 
 execute if score sc TimeRemainUnsee matches 600 if entity @n[tag=sc,scores={Map_Code=11}] run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run title @a[tag=PVP_see] times 0 60 60
 execute if score sc TimeRemainUnsee matches 600 if entity @n[tag=sc,scores={Map_Code=11}] run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run title @a[tag=PVP_see] title {"text":"莫作烂柯樵","color":"yellow"}
 execute if score sc TimeRemainUnsee matches 600 if entity @n[tag=sc,scores={Map_Code=11}] run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run title @a[tag=PVP_see] subtitle {"text":"“双棋未遍局 万物皆为空”","color":"yellow"}
 execute if score sc TimeRemainUnsee matches 600 if entity @n[tag=sc,scores={Map_Code=11}] run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run worldborder set 13 1200
+
+execute if score sc TimeRemainUnsee matches 300 if entity @n[tag=sc,scores={Map_Code=18}] run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run title @a[tag=PVP_see] times 0 60 60
+execute if score sc TimeRemainUnsee matches 300 if entity @n[tag=sc,scores={Map_Code=18}] run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run title @a[tag=PVP_see] title {"text":"水灵脉的诱惑","color":"yellow"}
+execute if score sc TimeRemainUnsee matches 300 if entity @n[tag=sc,scores={Map_Code=18}] run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run title @a[tag=PVP_see] subtitle {"text":"“你是否听到了水妖的歌声？那是为了将你引导至黄泉”","color":"yellow"}
+execute if score sc TimeRemainUnsee matches 300 if entity @n[tag=sc,scores={Map_Code=18}] run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run worldborder set 20 420
