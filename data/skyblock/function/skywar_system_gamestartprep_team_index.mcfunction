@@ -18,3 +18,7 @@ execute if score @n[tag=sc] Map_Code matches 18 run function skyblock:skywar_sys
 execute if score @n[tag=sc] Map_Code matches 19 run function skyblock:skywar_system_gamestartprep_team_019
 execute if score @n[tag=sc] Map_Code matches 20 run function skyblock:skywar_system_gamestartprep_team_020
 execute if score @n[tag=sc] Map_Code matches 21 run function skyblock:skywar_system_gamestartprep_team_021
+execute if score @n[tag=sc] Map_Code matches 22 run function skyblock:skywar_system_gamestartprep_team_022
+execute if score @n[tag=sc] Map_Code matches 23 run function skyblock:skywar_system_gamestartprep_team_023
+execute if score @n[tag=sc] Map_Code matches 24 run function skyblock:skywar_system_gamestartprep_team_024
+execute if score @n[tag=sc] Map_Code matches 25 run function skyblock:skywar_system_gamestartprep_team_025

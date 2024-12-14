@@ -68,6 +68,7 @@ execute if entity @n[tag=!MapLoaAlr,tag=sc,scores={SSgspT=2,Map_Code=14}] if blo
 execute if entity @n[tag=!MapLoaAlr,tag=sc,scores={SSgspT=2,Map_Code=15}] run function skyblock:preload_map_pvp_map015_part1_hard
 execute if entity @n[tag=!MapLoaAlr,tag=sc,scores={SSgspT=2,Map_Code=16}] run function skyblock:preload_map_pvp_map016_part1_hard
 execute if entity @n[tag=!MapLoaAlr,tag=sc,scores={SSgspT=2,Map_Code=17}] run function skyblock:preload_map_pvp_map017_part1_hard
+execute if entity @n[tag=!MapLoaAlr,tag=sc,scores={SSgspT=2,Map_Code=18}] run function skyblock:preload_map_pvp_map018_part1_hard
 #[futuredevskywar]
 execute if entity @n[tag=!MapLoaAlr,tag=sc,scores={SSgspT=3,Map_Code=14}] run forceload remove -9838 -10164 -9709 -10035
 execute if entity @n[tag=!MapLoaAlr,tag=sc,scores={SSgspT=3}] run tag @n[tag=sc] add MapLoaAlr
