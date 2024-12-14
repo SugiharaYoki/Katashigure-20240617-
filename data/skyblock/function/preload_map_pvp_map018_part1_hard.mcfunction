@@ -3,40 +3,66 @@ forceload add 50000 50000 50200 50200
 forceload add 50000 50200 50200 50300
 forceload add 50200 50000 50300 50200
 forceload add 50200 50200 50300 50300
-clone -8810 58 -10000 -8692 93 -9994 50010 10 50010 masked
-clone -8810 58 -9993 -8692 93 -9987 50010 10 50017 masked
-clone -8810 58 -9986 -8692 93 -9980 50010 10 50024 masked
-clone -8810 58 -9979 -8692 93 -9973 50010 10 50031 masked
-clone -8810 58 -9972 -8692 93 -9966 50010 10 50038 masked
-clone -8810 58 -9965 -8692 93 -9959 50010 10 50045 masked
-clone -8810 58 -9958 -8692 93 -9952 50010 10 50052 masked
-clone -8810 58 -9951 -8692 93 -9945 50010 10 50059 masked
-clone -8810 58 -9944 -8692 93 -9938 50010 10 50066 masked
-clone -8810 58 -9937 -8692 93 -9931 50010 10 50073 masked
-clone -8810 58 -9930 -8692 93 -9924 50010 10 50080 masked
-clone -8810 58 -9923 -8692 93 -9917 50010 10 50087 masked
-clone -8810 58 -9916 -8692 93 -9910 50010 10 50094 masked
-clone -8810 58 -9909 -8692 93 -9903 50010 10 50101 masked
-clone -8810 58 -9902 -8692 93 -9896 50010 10 50108 masked
-clone -8810 58 -9895 -8692 93 -9889 50010 10 50115 masked
-clone -8810 58 -9888 -8692 93 -9882 50010 10 50122 masked
-clone -8810 94 -10000 -8692 103 -9994 50010 46 50010 masked
-clone -8810 94 -9993 -8692 103 -9987 50010 46 50017 masked
-clone -8810 94 -9986 -8692 103 -9980 50010 46 50024 masked
-clone -8810 94 -9979 -8692 103 -9973 50010 46 50031 masked
-clone -8810 94 -9972 -8692 103 -9966 50010 46 50038 masked
-clone -8810 94 -9965 -8692 103 -9959 50010 46 50045 masked
-clone -8810 94 -9958 -8692 103 -9952 50010 46 50052 masked
-clone -8810 94 -9951 -8692 103 -9945 50010 46 50059 masked
-clone -8810 94 -9944 -8692 103 -9938 50010 46 50066 masked
-clone -8810 94 -9937 -8692 103 -9931 50010 46 50073 masked
-clone -8810 94 -9930 -8692 103 -9924 50010 46 50080 masked
-clone -8810 94 -9923 -8692 103 -9917 50010 46 50087 masked
-clone -8810 94 -9916 -8692 103 -9910 50010 46 50094 masked
-clone -8810 94 -9909 -8692 103 -9903 50010 46 50101 masked
-clone -8810 94 -9902 -8692 103 -9896 50010 46 50108 masked
-clone -8810 94 -9895 -8692 103 -9889 50010 46 50115 masked
-clone -8810 94 -9888 -8692 103 -9882 50010 46 50122 masked
+
+execute positioned -8410 58 -10000 run clone ~ ~ ~000 ~20 ~60 ~020 50010 10 50010 masked
+execute positioned -8410 58 -10000 run clone ~ ~ ~020 ~20 ~60 ~040 50010 10 50030 masked
+execute positioned -8410 58 -10000 run clone ~ ~ ~040 ~20 ~60 ~060 50010 10 50050 masked
+execute positioned -8410 58 -10000 run clone ~ ~ ~060 ~20 ~60 ~080 50010 10 50070 masked
+execute positioned -8410 58 -10000 run clone ~ ~ ~080 ~20 ~60 ~100 50010 10 50090 masked
+execute positioned -8410 58 -10000 run clone ~ ~ ~100 ~20 ~60 ~120 50010 10 50110 masked
+execute positioned -8410 58 -10000 run clone ~ ~ ~120 ~20 ~60 ~140 50010 10 50130 masked
+
+execute positioned -8410 58 -10000 run clone ~20 ~ ~000 ~40 ~60 ~020 50030 10 50010 masked
+execute positioned -8410 58 -10000 run clone ~20 ~ ~020 ~40 ~60 ~040 50030 10 50030 masked
+execute positioned -8410 58 -10000 run clone ~20 ~ ~040 ~40 ~60 ~060 50030 10 50050 masked
+execute positioned -8410 58 -10000 run clone ~20 ~ ~060 ~40 ~60 ~080 50030 10 50070 masked
+execute positioned -8410 58 -10000 run clone ~20 ~ ~080 ~40 ~60 ~100 50030 10 50090 masked
+execute positioned -8410 58 -10000 run clone ~20 ~ ~100 ~40 ~60 ~120 50030 10 50110 masked
+execute positioned -8410 58 -10000 run clone ~20 ~ ~120 ~40 ~60 ~140 50030 10 50130 masked
+
+execute positioned -8410 58 -10000 run clone ~40 ~ ~000 ~60 ~60 ~020 50050 10 50010 masked
+execute positioned -8410 58 -10000 run clone ~40 ~ ~020 ~60 ~60 ~040 50050 10 50030 masked
+execute positioned -8410 58 -10000 run clone ~40 ~ ~040 ~60 ~60 ~060 50050 10 50050 masked
+execute positioned -8410 58 -10000 run clone ~40 ~ ~060 ~60 ~60 ~080 50050 10 50070 masked
+execute positioned -8410 58 -10000 run clone ~40 ~ ~080 ~60 ~60 ~100 50050 10 50090 masked
+execute positioned -8410 58 -10000 run clone ~40 ~ ~100 ~60 ~60 ~120 50050 10 50110 masked
+execute positioned -8410 58 -10000 run clone ~40 ~ ~120 ~60 ~60 ~140 50050 10 50130 masked
+
+execute positioned -8410 58 -10000 run clone ~60 ~ ~000 ~80 ~60 ~020 50070 10 50010 masked
+execute positioned -8410 58 -10000 run clone ~60 ~ ~020 ~80 ~60 ~040 50070 10 50030 masked
+execute positioned -8410 58 -10000 run clone ~60 ~ ~040 ~80 ~60 ~060 50070 10 50050 masked
+execute positioned -8410 58 -10000 run clone ~60 ~ ~060 ~80 ~60 ~080 50070 10 50070 masked
+execute positioned -8410 58 -10000 run clone ~60 ~ ~080 ~80 ~60 ~100 50070 10 50090 masked
+execute positioned -8410 58 -10000 run clone ~60 ~ ~100 ~80 ~60 ~120 50070 10 50110 masked
+execute positioned -8410 58 -10000 run clone ~60 ~ ~120 ~80 ~60 ~140 50070 10 50130 masked
+
+execute positioned -8410 58 -10000 run clone ~80 ~ ~000 ~100 ~60 ~020 50090 10 50010 masked
+execute positioned -8410 58 -10000 run clone ~80 ~ ~020 ~100 ~60 ~040 50090 10 50030 masked
+execute positioned -8410 58 -10000 run clone ~80 ~ ~040 ~100 ~60 ~060 50090 10 50050 masked
+execute positioned -8410 58 -10000 run clone ~80 ~ ~060 ~100 ~60 ~080 50090 10 50070 masked
+execute positioned -8410 58 -10000 run clone ~80 ~ ~080 ~100 ~60 ~100 50090 10 50090 masked
+execute positioned -8410 58 -10000 run clone ~80 ~ ~100 ~100 ~60 ~120 50090 10 50110 masked
+execute positioned -8410 58 -10000 run clone ~80 ~ ~120 ~100 ~60 ~140 50090 10 50130 masked
+
+execute positioned -8410 58 -10000 run clone ~100 ~ ~000 ~120 ~60 ~020 50110 10 50010 masked
+execute positioned -8410 58 -10000 run clone ~100 ~ ~020 ~120 ~60 ~040 50110 10 50030 masked
+execute positioned -8410 58 -10000 run clone ~100 ~ ~040 ~120 ~60 ~060 50110 10 50050 masked
+execute positioned -8410 58 -10000 run clone ~100 ~ ~060 ~120 ~60 ~080 50110 10 50070 masked
+execute positioned -8410 58 -10000 run clone ~100 ~ ~080 ~120 ~60 ~100 50110 10 50090 masked
+execute positioned -8410 58 -10000 run clone ~100 ~ ~100 ~120 ~60 ~120 50110 10 50110 masked
+execute positioned -8410 58 -10000 run clone ~100 ~ ~120 ~120 ~60 ~140 50110 10 50130 masked
+
+execute positioned -8410 58 -10000 run clone ~120 ~ ~000 ~140 ~60 ~020 50130 10 50010 masked
+execute positioned -8410 58 -10000 run clone ~120 ~ ~020 ~140 ~60 ~040 50130 10 50030 masked
+execute positioned -8410 58 -10000 run clone ~120 ~ ~040 ~140 ~60 ~060 50130 10 50050 masked
+execute positioned -8410 58 -10000 run clone ~120 ~ ~060 ~140 ~60 ~080 50130 10 50070 masked
+execute positioned -8410 58 -10000 run clone ~120 ~ ~080 ~140 ~60 ~100 50130 10 50090 masked
+execute positioned -8410 58 -10000 run clone ~120 ~ ~100 ~140 ~60 ~120 50130 10 50110 masked
+execute positioned -8410 58 -10000 run clone ~120 ~ ~120 ~140 ~60 ~140 50130 10 50130 masked
+
+
+
+
 forceload remove -8810 -10000 -8692 -9882
 
 
