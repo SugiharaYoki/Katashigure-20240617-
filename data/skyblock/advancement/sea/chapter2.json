@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "忒尔克西 · 物资层",
+            "color": "blue",
+            "bold": true,
+            "italic": false
+        },
+        "description": {
+            "text": "这里曾经充满了各种生活必需品与建材资源。\n但现在，此地仅充斥着死亡的气息，以及挣扎者生命最后关头残留的绝望。",
+            "color": "light_purple"
+        },
+        "icon": {
+            "id": "minecraft:polished_diorite"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "sea": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:sea/chapter1"
+}

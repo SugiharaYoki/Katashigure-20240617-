@@ -1,26 +1,26 @@
 {
     "display": {
         "title": {
-            "text": "『忒尔克西钻井平台』",
-            "color": "dark_blue",
+            "text": "『初始之城』",
+            "color": "dark_purple",
             "bold": true,
             "italic": false
         },
         "description": {
-            "text": "忒尔克西海上钻井平台已经失联24小时整，太平洋石油管理局的高层决定派你前去调查情况。",
+            "text": "欢迎来到GameLand常驻小游戏服",
             "color": "white"
         },
         "icon": {
             "id": "minecraft:fletching_table"
         },
-        "frame": "task",
+        "frame": "goal",
         "show_toast": true,
         "announce_to_chat": true,
         "hidden": false,
         "background": "minecraft:textures/gui/advancements/backgrounds/stone.png"
     },
     "criteria": {
-        "sea": {
+        "skyblockwarjob": {
             "trigger": "minecraft:impossible"
         }
     }

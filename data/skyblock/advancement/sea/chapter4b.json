@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "水下研究设施 · 实验区",
+            "color": "blue",
+            "bold": true,
+            "italic": false
+        },
+        "description": {
+            "text": "“这里曾经有众多的安保人员、科研人员，甚至邪教徒的援军。\n存活人数是零。”",
+            "color": "light_purple"
+        },
+        "icon": {
+            "id": "minecraft:quartz_block"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "sea": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:sea/chapter4"
+}

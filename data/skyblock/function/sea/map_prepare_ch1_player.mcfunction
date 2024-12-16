@@ -127,3 +127,5 @@ execute unless entity @a[scores={SEAPT_member=9..}] unless entity @s[scores={SEA
 execute unless entity @s[scores={SEAPT_member_eternal=1..}] run scoreboard players add SEAPT_member_eternal SEAPT_member_eternal 1
 execute unless entity @s[scores={SEAPT_member_eternal=1..}] run scoreboard players operation @s SEAPT_member_eternal = SEAPT_member_eternal SEAPT_member_eternal
 
+#成就
+advancement grant @s only skyblock:thelxiepeia

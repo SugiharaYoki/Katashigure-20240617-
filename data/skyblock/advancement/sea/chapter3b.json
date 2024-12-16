@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "忒尔克西 · 宿舍楼",
+            "color": "blue",
+            "bold": true,
+            "italic": false
+        },
+        "description": {
+            "text": "“宿舍楼有一支幸存的小队，我与他们失联已经超过两小时，\n但他们有地下通道的钥匙。\n记住，里面有相当恐怖的尸潮。\n做好充足的准备后，找南面那栋红棕色外墙的楼。”",
+            "color": "light_purple"
+        },
+        "icon": {
+            "id": "minecraft:polished_granite"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "sea": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:sea/chapter3"
+}
