@@ -2,7 +2,7 @@
 #scoreboard players operation @s sea_i_emerald *= 9 constant
 #execute as @s store result score @s rng1 run clear @s emerald 0
 #scoreboard players operation @s sea_i_emerald += @s rng1
-execute as @s store result score @s sea_i_emerald run clear @s emerald 0
+#execute as @s store result score @s sea_i_emerald run clear @s emerald 0
 # execute as @s store result score @s sea_i_trim_zombie run clear @s raiser_armor_trim_smithing_template 0
 # execute as @s store result score @s sea_i_trim_spider run clear @s wild_armor_trim_smithing_template 0
 # execute as @s store result score @s sea_i_trim_human run clear @s wayfinder_armor_trim_smithing_template 0

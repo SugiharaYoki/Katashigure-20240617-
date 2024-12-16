@@ -62,6 +62,7 @@ summon minecraft:interaction 90147 130.3 124 {CustomName:'[{"text":"多功能工
 summon minecraft:marker 90147 129 123 {Tags:["SEAcrafter_tp","SEAcrafter_tp6"]}
 summon minecraft:interaction 90113 129.3 144 {CustomName:'[{"text":"器械式治疗仪"}]',Tags:["SEAaidbox"]}
 summon minecraft:interaction 90080 104.3 134 {CustomName:'[{"text":"器械式治疗仪"}]',Tags:["SEAaidbox"]}
+summon minecraft:interaction 90081 104.3 134 {CustomName:'[{"text":"绿宝石提取机"}]',Tags:["SEAemeraldextractor"]}
 
 
 fill 90070 130 144 90070 130 141 minecraft:waxed_oxidized_copper_bulb[lit=false]
