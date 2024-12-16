@@ -1,3 +1,4 @@
+execute store result storage sea:doc eid int 1.0 run scoreboard players get @s SEAPT_member_eternal
 clear @s
 effect clear @s
 tag @s[gamemode=!spectator] add SEAPT
@@ -132,3 +133,5 @@ advancement grant @s only skyblock:thelxiepeia
 advancement grant @s only skyblock:sea/doc/documentary1
 advancement grant @s only skyblock:sea/doc/a1
 scoreboard players add @s sea_count_played 1
+function skyblock:sea/map_prepare_ch1_player_macro_doc with storage sea:doc
+
