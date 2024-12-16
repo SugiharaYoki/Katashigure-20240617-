@@ -133,7 +133,7 @@ execute unless entity @s[scores={SEAPT_member_eternal=1..}] run scoreboard playe
 #成就
 advancement grant @s only skyblock:thelxiepeia
 advancement grant @s only skyblock:sea/doc/documentary1
-advancement grant @s only skyblock:sea/doc/a1
+advancement grant @s only skyblock:sea/doc/1
 scoreboard players add @s sea_count_played 1
 function skyblock:sea/map_prepare_ch1_player_macro_doc with storage sea:doc
 
