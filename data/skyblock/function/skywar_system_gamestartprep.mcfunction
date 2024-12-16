@@ -170,8 +170,6 @@ execute if score @n[tag=sc] SSgspT matches 10 run title @a[tag=!NoSkyWar] title 
 execute if score @n[tag=sc] SSgspT matches 11 run setblock -17 23 32 minecraft:soul_lantern
 execute if score @n[tag=sc] SSgspT matches 11 run title @a[tag=!NoSkyWar] times 0 120 40
 execute if score @n[tag=sc] SSgspT matches 11 run stopsound @s
-execute if score @n[tag=sc] SSgspT matches 11 run clear @a[tag=!NoSkyWar]
-execute if score @n[tag=sc] SSgspT matches 11 run effect clear @a[tag=!NoSkyWar]
 execute if score @n[tag=sc] SSgspT matches 11 run tag @n[tag=sc] remove MapLoaAlr
 
 #setblock -55 143 -58 redstone_wire
