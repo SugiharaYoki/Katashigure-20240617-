@@ -485,6 +485,13 @@ execute if entity @s[tag=sea_purchase_pass] run clear @s prismarine_crystals 5
 execute if entity @s[tag=sea_purchase_pass] run clear @s echo_shard 3
 tag @s remove sea_purchase_pass
 
+execute if score @s sea_crafter matches 10061 if items entity @s container.* emerald_block run tag @s add sea_purchase_pass
+execute if score @s sea_crafter matches 10061 as @s[tag=!sea_purchase_pass] run tellraw @s {"text":"失败！现在未持有绿宝石块！","color":"red"}
+execute if entity @s[tag=sea_purchase_pass] run playsound minecraft:ui.stonecutter.take_result neutral @s ~ ~ ~ 100 1.3
+execute if entity @s[tag=sea_purchase_pass] run scoreboard players add @s sea_i_emerald 9
+execute if entity @s[tag=sea_purchase_pass] run clear @s emerald_block 1
+tag @s remove sea_purchase_pass
+
 #塞壬铜板
 execute store result score @s rng1 run random value 1..33
 
