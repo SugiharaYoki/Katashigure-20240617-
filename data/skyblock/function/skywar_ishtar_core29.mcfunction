@@ -23,3 +23,4 @@ execute as @a[scores={rng1=12}] at @s positioned ^-6 ^ ^-6 run playsound entity.
 
 
 tag @a remove Bless29_effect
+scoreboard players set @s If_Bless29 0
