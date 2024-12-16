@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "燃料架B内的便签纸",
+            "color": "light_purple",
+            "bold": false,
+            "italic": false
+        },
+        "description": {
+            "text": "上面写着歪歪扭扭的字：\n“从右到左仔细观察北水箱西面的蜡烛”",
+            "color": "white"
+        },
+        "icon": {
+            "id": "minecraft:map"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "sea": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:sea/doc/documentary1"
+}

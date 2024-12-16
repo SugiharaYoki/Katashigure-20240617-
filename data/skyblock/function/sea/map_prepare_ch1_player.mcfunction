@@ -135,3 +135,19 @@ advancement grant @s only skyblock:sea/doc/a1
 scoreboard players add @s sea_count_played 1
 function skyblock:sea/map_prepare_ch1_player_macro_doc with storage sea:doc
 
+
+advancement grant @s[scores={sea_progress=1..}] only skyblock:sea/chapter1
+advancement grant @s[scores={sea_progress=1..}] only skyblock:sea/doc/documentary0
+advancement grant @s[scores={sea_progress=1..}] only skyblock:sea/doc/documentary1
+advancement grant @s[scores={sea_progress=3..}] only skyblock:sea/chapter2
+advancement grant @s[scores={sea_progress=3..}] only skyblock:sea/doc/documentary2
+advancement grant @s[scores={sea_progress=6..}] only skyblock:sea/chapter3
+advancement grant @s[scores={sea_progress=6..}] only skyblock:sea/doc/documentary3
+advancement grant @s[scores={sea_progress=7..}] only skyblock:sea/chapter3b
+advancement grant @s[scores={sea_progress=9..}] only skyblock:sea/chapter4
+advancement grant @s[scores={sea_progress=9..}] only skyblock:sea/doc/documentary4
+advancement grant @s[scores={sea_progress=10..}] only skyblock:sea/chapter4b
+
+
+
+
