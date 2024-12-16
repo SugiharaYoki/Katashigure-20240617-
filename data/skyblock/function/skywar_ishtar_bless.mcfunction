@@ -173,4 +173,9 @@ execute if entity @s[scores={ishtar_bless_1=29}] run give @s tide_armor_trim_smi
 execute if entity @s[scores={ishtar_bless_2=29}] run give @s tide_armor_trim_smithing_template[custom_name='{"text":"虚惊戏谑","italic":false,"color":"red"}',custom_data={skywar_ishtar_29:1}] 1
 execute if entity @s[scores={ishtar_bless_3=29}] run give @s tide_armor_trim_smithing_template[custom_name='{"text":"虚惊戏谑","italic":false,"color":"red"}',custom_data={skywar_ishtar_29:1}] 1
 execute if entity @s[scores={ishtar_bless_4=29}] run give @s tide_armor_trim_smithing_template[custom_name='{"text":"虚惊戏谑","italic":false,"color":"red"}',custom_data={skywar_ishtar_29:1}] 1
+execute if entity @s[scores={ishtar_bless_1=29}] run give @s snowball 16
+execute if entity @s[scores={ishtar_bless_2=29}] run give @s snowball 16
+execute if entity @s[scores={ishtar_bless_3=29}] run give @s snowball 16
+execute if entity @s[scores={ishtar_bless_4=29}] run give @s snowball 16
+
 
