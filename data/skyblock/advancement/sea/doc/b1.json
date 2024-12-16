@@ -1,7 +1,7 @@
 {
     "display": {
         "title": {
-            "text": "燃料架B内的便签纸",
+            "text": "副宿舍楼个人储藏柜内的便签纸",
             "color": "light_purple",
             "bold": false,
             "italic": false
@@ -16,7 +16,7 @@
         "frame": "task",
         "show_toast": true,
         "announce_to_chat": true,
-        "hidden": false
+        "hidden": true
     },
     "criteria": {
         "sea": {

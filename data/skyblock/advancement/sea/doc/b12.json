@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "主平台甲板通讯室储藏间的笔记B - 麦迪逊",
+            "color": "light_purple",
+            "bold": false,
+            "italic": false
+        },
+        "description": {
+            "text": "终于成功了，我将那块带着圣水晶力量的铜板\n改造成了与原本类似相反效果的魔力储存模块。\n根据我的观察，它会将箭矢逐渐转化为一种金色的矢状物。\n我在那些怪物身上做了实验，\n金色的箭矢能让它们在几秒内近乎无法动弹。\n可是那些被藤蔓掏空的怪物在被我射中后陷入了诡异的状态。\n我无法对它们进一步实验，它们直接在我眼前消失了。",
+            "color": "white"
+        },
+        "icon": {
+            "id": "minecraft:map"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "sea": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:sea/doc/b10"
+}

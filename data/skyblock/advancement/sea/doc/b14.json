@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "泄水通道秘密实验室的笔记 - 麦迪逊",
+            "color": "light_purple",
+            "bold": false,
+            "italic": false
+        },
+        "description": {
+            "text": "圣晶能够吸引的不止拥有自主思维的生物的意志。\n似乎电磁波与微波也会朝圣晶扭曲，\n这或许才是钻井平台与外界失联的真正原因。\n为什么偏偏是十几小时前才被切断通讯？\n在这段时间里圣晶有过什么变化？是否在持续吸收某种能量？\n被我故意放在水晶祀堂的空铜板被扭曲成了\n能够令使用者爆发力剧增的魔法铜板。\n静滞光棱的诞生也是我在对这种特殊铜板\n实行逆向破解的过程中得到的意外收获。",
+            "color": "white"
+        },
+        "icon": {
+            "id": "minecraft:map"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "sea": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:sea/doc/b10"
+}

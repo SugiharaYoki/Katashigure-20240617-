@@ -1,13 +1,13 @@
 {
     "display": {
         "title": {
-            "text": "宿舍楼二楼的笔记 - 马绍尔",
+            "text": "物资层休息室的笔记 - 麦迪逊",
             "color": "light_purple",
             "bold": false,
             "italic": false
         },
         "description": {
-            "text": "以前他们都说我是阴谋论，那现在又怎么讲？\n我早就说了，谁没事会在钻井平台上建钢处理车间。\n还有仓库楼，存比石油还多的乱七八糟的东西？\n咱们平台水下那个设施到底是研究什么的？\n细菌是不是从那里头出来的，不然还能是哪？",
+            "text": "那块魔法石板被我藏在了物资层西面的日常物资大仓库内。\n要想对付北冷冻库那堆怪物，没有静滞光棱的力量等同于送死。\n但是我要它已无用。我会从通风管道逃向水下研究设施。",
             "color": "white"
         },
         "icon": {
@@ -23,5 +23,5 @@
             "trigger": "minecraft:impossible"
         }
     },
-    "parent": "skyblock:sea/doc/documentary3"
+    "parent": "skyblock:sea/doc/b10"
 }
