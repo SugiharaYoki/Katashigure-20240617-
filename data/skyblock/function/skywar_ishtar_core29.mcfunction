@@ -1,4 +1,4 @@
-execute as @a[gamemode=survival,distance=0..30] at @s run tag @s add Bless29_effect
+execute as @a[distance=0..30] at @s run tag @s add Bless29_effect
 
 execute store result score @a[tag=Bless29_effect] rng1 run random value 1..15
 
