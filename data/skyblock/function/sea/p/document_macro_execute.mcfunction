@@ -1,1 +1,1 @@
-$data modify storage sea:doc merge $(eid).doc {${doc}:1b}
+$data modify storage sea:doc doc.$(eid) merge value {$(doc):1b}
