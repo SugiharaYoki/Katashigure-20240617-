@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "维修层空气循环系统控制室的笔记 - 越涵",
+            "color": "light_purple",
+            "bold": false,
+            "italic": false
+        },
+        "description": {
+            "text": "那些棕藤长得到处都是，有些还顺着通风系统爬进冷冻库了。\n我看它们已经包裹了德怀特的遗骨。\n不能放任这些东西乱长，诺曼已经警告过它们会制造毒气。\n我想去关了通风系统，但麦迪逊老哥阻止了我。",
+            "color": "white"
+        },
+        "icon": {
+            "id": "minecraft:map"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "sea": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:sea/doc/documentary2"
+}

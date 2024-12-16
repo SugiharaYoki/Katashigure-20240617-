@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "工程处后厨的笔记 - 瑞佛特",
+            "color": "light_purple",
+            "bold": false,
+            "italic": false
+        },
+        "description": {
+            "text": "23号 处理掉了剩下还没有腐烂的猪肉\n24号 没有粮食了 只能吃干面包 通风管道里好吵\n25号 干面包很难吃 德怀特还没有从通风系统维护处回来\n26号 德怀特带来了新鲜的猪肉 配着面包吃 通风管道好吵\n27号 通风管道好吵\n28号 已经没有新鲜的猪肉了 现在该派潘去修通风系统了\n29号 没有猪肉 只有干面包\n30号 我终于醒悟了 我的身上也有猪肉",
+            "color": "white"
+        },
+        "icon": {
+            "id": "minecraft:map"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "sea": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:sea/doc/documentary2"
+}

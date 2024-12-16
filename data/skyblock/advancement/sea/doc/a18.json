@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "北部通风管道的笔记 - 瑞佛特",
+            "color": "light_purple",
+            "bold": false,
+            "italic": false
+        },
+        "description": {
+            "text": "我为什么 我想不起来自己为什么要来这里\n是为了逃避邪教徒，根本不是为了进货\n食物 不是为了食物 我为什么会变成这样\n修理了但通风管道好吵\n找不到原因 一直好吵\n耳朵里好吵 脑袋里好吵 眼睛快要看不清了",
+            "color": "white"
+        },
+        "icon": {
+            "id": "minecraft:map"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "sea": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:sea/doc/documentary2"
+}
