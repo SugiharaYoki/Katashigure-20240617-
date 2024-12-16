@@ -3,16 +3,16 @@
     "display": {
         "title": {
             "text": "『忒尔克西钻井平台』",
-            "color": "dark_blue",
+            "color": "white",
             "bold": true,
             "italic": false
         },
         "description": {
             "text": "忒尔克西海上钻井平台已经失联24小时整，\n太平洋石油管理局的高层决定派我前去调查情况。\n真是见鬼，我一个维修工又能做什么。",
-            "color": "white"
+            "color": "dark_blue"
         },
         "icon": {
-            "id": "minecraft:fletching_table"
+            "id": "minecraft:end_crystal"
         },
         "frame": "task",
         "show_toast": true,

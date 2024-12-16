@@ -392,3 +392,4 @@ fill 90137 128 98 90136 128 98 spruce_stairs[facing=north]
 
 
     function skyblock:protector/entity_count_end {function:"skyblock:sea/map_prepare_ch2.mcfunction"}
+

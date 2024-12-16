@@ -7,8 +7,8 @@
             "italic": false
         },
         "description": {
-            "text": "“这里曾经有众多的安保人员、科研人员，甚至邪教徒的援军。\n存活人数是零。”",
-            "color": "light_purple"
+            "text": "“这里曾经有众多的安保人员、科研人员，甚至邪教徒的援军。\n\n存活人数是零。”",
+            "color": "white"
         },
         "icon": {
             "id": "minecraft:quartz_block"

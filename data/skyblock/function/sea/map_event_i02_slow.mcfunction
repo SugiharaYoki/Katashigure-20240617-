@@ -9,7 +9,8 @@ execute as @a[tag=SEAPT,x=90084,y=128,z=113,distance=0..3,tag=!e_i_13] at @s run
 execute as @a[tag=SEAPT,x=90084,y=128,z=113,distance=0..3,tag=!e_i_13] at @s run playsound ambient.crimson_forest.loop master @s ~ ~ ~ 100 0.9
 execute as @a[tag=SEAPT,x=90084,y=128,z=113,distance=0..3,tag=!e_i_13] at @s run playsound ambient.crimson_forest.loop master @s ~ ~ ~ 100 0.9
 execute as @a[tag=SEAPT,x=90084,y=128,z=113,distance=0..3,tag=!e_i_13] at @s run playsound ambient.crimson_forest.additions master @s ~ ~ ~ 100 0.9
-execute as @a[tag=SEAPT,x=90084,y=128,z=113,distance=0..3,tag=!e_i_13] at @s run time set 13500t
+
+execute as @a[tag=SEAPT,x=90084,y=128,z=113,distance=0..3,tag=!e_i_13] at @s run advancement grant @a[tag=SEAPT] only skyblock:sea/chapter2
 execute as @a[tag=SEAPT,x=90084,y=128,z=113,distance=0..3,tag=!e_i_13] at @s run tag @s add e_i_13
 
 execute as @n[tag=sc] unless entity @s[scores={sea_4temp2=-9999..}] run scoreboard players set @s sea_4temp2 0
@@ -33,6 +34,7 @@ execute as @n[tag=sc,scores={sea_4temp2=30}] run setblock 90096 132 112 white_st
 execute as @n[tag=sc,scores={sea_4temp2=31}] run setblock 90096 132 112 tinted_glass
 execute as @n[tag=sc,scores={sea_4temp2=33}] run setblock 90096 132 112 white_stained_glass
 execute as @n[tag=sc,scores={sea_4temp2=36}] run setblock 90096 132 112 air destroy
+execute as @n[tag=sc,scores={sea_4temp2=36}] run time set 13500t
 
 execute as @a[tag=SEAPT,x=90116,y=128,z=129,distance=0..2] run scoreboard players set @n[tag=sc,scores={sea_4temp2=..49}] sea_4temp2 50
 execute as @n[tag=sc,scores={sea_4temp2=50..65}] run scoreboard players add @s sea_4temp2 1
