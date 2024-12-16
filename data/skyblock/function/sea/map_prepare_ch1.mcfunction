@@ -62,6 +62,8 @@ scoreboard objectives add sea_speedrun_ch4 dummy
 scoreboard objectives add sea_speedrun_ch5 dummy
 scoreboard objectives add sea_speedrun_ch6 dummy
 scoreboard objectives add sea_speedrun_ch7 dummy
+scoreboard objectives add sea_count_played dummy
+scoreboard objectives add sea_count_dead dummy
 scoreboard objectives add sea_progress dummy
 scoreboard players set @n[tag=sc] sea_chapter 1
 scoreboard players set sc sea_speedrun_ch1 0
@@ -71,6 +73,8 @@ scoreboard players set sc sea_speedrun_ch4 0
 scoreboard players set sc sea_speedrun_ch5 0
 scoreboard players set sc sea_speedrun_ch6 0
 scoreboard players set sc sea_speedrun_ch7 0
+scoreboard players set sc sea_count_played 0
+scoreboard players set sc sea_count_dead 0
 
 
 setblock -25 23 32 soul_lantern

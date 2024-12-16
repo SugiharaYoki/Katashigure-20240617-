@@ -129,3 +129,4 @@ execute unless entity @s[scores={SEAPT_member_eternal=1..}] run scoreboard playe
 
 #成就
 advancement grant @s only skyblock:thelxiepeia
+scoreboard players add @s sea_count_played 1
