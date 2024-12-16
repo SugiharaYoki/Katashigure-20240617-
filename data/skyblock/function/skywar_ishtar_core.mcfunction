@@ -80,5 +80,7 @@ execute if items entity @s[scores={If_Bless27=1..}] container.* *[custom_data={s
 
 execute if items entity @s[predicate=skyblock:sneaking] container.* *[custom_data={skywar_ishtar_28:1}] at @s unless block ~ ~ ~ air run function skyblock:skywar_ishtar_core28
 
+execute if items entity @s[scores={If_Bless29=1..}] container.* *[custom_data={skywar_ishtar_29:1}] at @s run function skyblock:skywar_ishtar_core29
+
 
 scoreboard players set @s Skywar_ishtar_usehorn 0
