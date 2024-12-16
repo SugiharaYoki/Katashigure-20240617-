@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "医疗报告5 - 法莫洛斯",
+            "color": "light_purple",
+            "bold": false,
+            "italic": false
+        },
+        "description": {
+            "text": "我在现场救助伤者时被平台上的暴民误伤了。\n伤口血流不止，而且同样从中检测出那种神秘的细菌。\n这不知是否算作好消息，现在我可以毫无顾忌地用自己去进行一些治疗实验了。\n我的神智尚且清晰，但我知道未来的我或许会变成什么样的怪物。\n转移幸存者到维修层的计划，绝不可以出差错。",
+            "color": "white"
+        },
+        "icon": {
+            "id": "minecraft:map"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "sea": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:sea/doc/documentary0"
+}

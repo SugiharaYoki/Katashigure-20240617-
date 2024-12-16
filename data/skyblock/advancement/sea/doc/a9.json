@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "医疗报告4 - 法莫洛斯",
+            "color": "light_purple",
+            "bold": false,
+            "italic": false
+        },
+        "description": {
+            "text": "最近24小时以来，我接到了越来越多相似症状的患者。\n其中，患者艾瑞克被送来时的症状就已经严重到手头现有治疗方案全部毫无效用，\n难以想象这细菌已经传染了多少工人。\n没空为逝者默哀，医务室被新的病人挤爆了，我们现在最缺的是病床与尸袋。\n为什么经理还不去发救援请求？这座钻井平台上正在发生的一切真的有必要瞒着高层吗？\n他们迟早都是会发现的。",
+            "color": "white"
+        },
+        "icon": {
+            "id": "minecraft:map"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "sea": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:sea/doc/documentary0"
+}

@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "机械暗室的笔记 - 玛瑞莲",
+            "color": "light_purple",
+            "bold": false,
+            "italic": false
+        },
+        "description": {
+            "text": "他们连续开了六天的会议，看来已经无法回头了。\n从地下开采到的那个东西可以改变整个地表文明的秩序，\n但这是否真的是好事？\n永远的和平，杜绝一切战争、纷争、斗争？那我们真的还能算是人类吗？",
+            "color": "white"
+        },
+        "icon": {
+            "id": "minecraft:map"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "sea": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:sea/doc/documentary1"
+}

@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "医疗报告8 - 法莫洛斯",
+            "color": "light_purple",
+            "bold": false,
+            "italic": false
+        },
+        "description": {
+            "text": "我自己的症状终于恶化了……\n维修层终于也失守了。但我不该就此放弃，高层很快便会发现这座钻井平台的异常。\n因此，我会继续药物的研究。已经快要成功了，距离达成我的夙愿近在咫尺。\n倘若在那之前我失败了，我会破坏这里的电闸，这样就不用担心我也会变成他们那样……",
+            "color": "white"
+        },
+        "icon": {
+            "id": "minecraft:map"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "sea": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:sea/doc/documentary0"
+}

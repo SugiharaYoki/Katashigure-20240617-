@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "医疗报告2 - 法莫洛斯",
+            "color": "light_purple",
+            "bold": false,
+            "italic": false
+        },
+        "description": {
+            "text": "我尝试了数种不同的保守治疗，难不成真的得要用上会留下后遗症的疗法吗？\n常规抗生素拥有一定的抑制效果，但患者弥尔顿的不适却加重了。\n这种细菌能够伪装成人体原生细胞，不研发出特效药的话很难根除。\n得快点调查出细菌的起因，应该会对制定治疗方针起到帮助。",
+            "color": "white"
+        },
+        "icon": {
+            "id": "minecraft:map"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "sea": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:sea/doc/documentary0"
+}

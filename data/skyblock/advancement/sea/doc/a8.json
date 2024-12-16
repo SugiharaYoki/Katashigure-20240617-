@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "医疗报告3 - 法莫洛斯",
+            "color": "light_purple",
+            "bold": false,
+            "italic": false
+        },
+        "description": {
+            "text": "我在作业处最近蔓延生长的神秘棕色藤蔓中提取到了这种细菌。\n我不敢肯定这些植物是从哪里突然冒出来的。\n或许细菌来源于它们，或许它们也是被细菌感染。\n我发现细菌会使感染者亢奋，并同时承受巨大的痛楚。\n若是说它们激化了这些植物的生长也不无道理。",
+            "color": "white"
+        },
+        "icon": {
+            "id": "minecraft:map"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "sea": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:sea/doc/documentary0"
+}

@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "医疗报告7 - 法莫洛斯",
+            "color": "light_purple",
+            "bold": false,
+            "italic": false
+        },
+        "description": {
+            "text": "细菌果然是从地底出现的，而且任何现存抗菌素对它们都无效。\n诺曼博士说过，他自我们所有人的血液内都发现了同种细菌。\n受到致命伤会加速成为尸变体，但在这之前死亡的话则会快速化为骸骨。\n这细菌有智能……而且，他们在刻意绕着圣水晶跑。\n我的时间不多了，圣水晶是我们仅剩的希望。\n邪教徒们一定已经知道了这件事……但既然如此，为何还要将圣水晶送到我们这来？\n我开始觉得我们所有人都被一股势力利用了。邪教徒是，那群暴民也是。\n幸好，我们不属于他们的任何一者。",
+            "color": "white"
+        },
+        "icon": {
+            "id": "minecraft:map"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "sea": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:sea/doc/documentary0"
+}

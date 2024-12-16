@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "不明来历的纸条",
+            "color": "light_purple",
+            "bold": false,
+            "italic": false
+        },
+        "description": {
+            "text": "法莫洛斯医生也变成了怪物。\n我顺着痕迹找到这里，但是幸存者均已离去。\n他们之中定是有人掌握了新情报。\n我觉得我有必要再回一次水下。",
+            "color": "white"
+        },
+        "icon": {
+            "id": "minecraft:map"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "sea": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:sea/doc/documentary2"
+}

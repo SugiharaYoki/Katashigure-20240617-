@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "医疗报告6 - 法莫洛斯",
+            "color": "light_purple",
+            "bold": false,
+            "italic": false
+        },
+        "description": {
+            "text": "少数的幸存健康者在我的带领下到这间维修室内避难。\n这里在先前的规划中被弃用，路径复杂，那些怪物或许找不到这里。\n现在这里的感染者只有我一人，我……得在自己的病情恶化前离开这里。\n我已经发现这种细菌不属于医学史上的任何一种细菌分类。\n细菌十有八九来自于石油，这些石油凭空出现于地下一千米浅绝非奇迹。\n有人……不、有什么神秘的力量使得石油汇聚到了此处的地下。",
+            "color": "white"
+        },
+        "icon": {
+            "id": "minecraft:map"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "sea": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:sea/doc/documentary0"
+}
