@@ -149,6 +149,7 @@ advancement grant @s[scores={sea_progress=7..}] only skyblock:sea/chapter3b
 advancement grant @s[scores={sea_progress=9..}] only skyblock:sea/chapter4
 advancement grant @s[scores={sea_progress=9..}] only skyblock:sea/doc/documentary4
 advancement grant @s[scores={sea_progress=10..}] only skyblock:sea/chapter4b
+advancement grant @s[scores={sea_progress=10..}] only skyblock:sea/doc/documentary4b
 
 
 
