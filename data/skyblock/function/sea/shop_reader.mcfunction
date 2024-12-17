@@ -67,6 +67,10 @@ execute if entity @s[nbt={Inventory:[{components:{"minecraft:custom_data":{sea_l
 tellraw @s [{"text":"       - "},{"text":"电工安全护腿：升级  ","color":"blue"},{"score":{"name":"@s","objective":"sea_i_emerald"},"color":"white"},{"text":"/28 绿宝石 ","color":"gray"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 10037"}}]
 execute if entity @s[nbt={Inventory:[{components:{"minecraft:custom_data":{sea_leg3b:true}}}]},tag=SEAPT] run \
 tellraw @s [{"text":"       - "},{"text":"3级基础防护裤：升级  ","color":"blue"},{"score":{"name":"@s","objective":"sea_i_emerald"},"color":"white"},{"text":"/28 绿宝石 ","color":"gray"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 10034"}}]
+execute if entity @s[nbt={Inventory:[{components:{"minecraft:custom_data":{sea_leg3a:true}}}]},tag=SEAPT] run \
+tellraw @s [{"text":"       - "},{"text":"2级电工安全护腿：升级  ","color":"blue"},{"score":{"name":"@s","objective":"sea_i_emerald"},"color":"white"},{"text":"/60 绿宝石 ","color":"gray"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 10064"}}]
+execute if entity @s[nbt={Inventory:[{components:{"minecraft:custom_data":{sea_leg3b:true}}}]},tag=SEAPT] run \
+tellraw @s [{"text":"       - "},{"text":"4级基础防护裤：升级  ","color":"blue"},{"score":{"name":"@s","objective":"sea_i_emerald"},"color":"white"},{"text":"/60 绿宝石 ","color":"gray"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 10065"}}]
 
 execute if entity @s[nbt={Inventory:[{components:{"minecraft:custom_data":{sea_feet:true}}}]},tag=SEAPT] run \
 tellraw @s [{"text":"         - "},{"text":"基础防护靴：升级  ","color":"blue"},{"score":{"name":"@s","objective":"sea_i_emerald"},"color":"white"},{"text":"/12 绿宝石 ","color":"gray"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 10015"}}]
@@ -78,6 +82,10 @@ execute if entity @s[nbt={Inventory:[{components:{"minecraft:custom_data":{sea_f
 tellraw @s [{"text":"         - "},{"text":"电工安全靴：升级  ","color":"blue"},{"score":{"name":"@s","objective":"sea_i_emerald"},"color":"white"},{"text":"/32 绿宝石 ","color":"gray"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 10038"}}]
 execute if entity @s[nbt={Inventory:[{components:{"minecraft:custom_data":{sea_feet3b:true}}}]},tag=SEAPT] run \
 tellraw @s [{"text":"         - "},{"text":"3级基础防护靴：升级  ","color":"blue"},{"score":{"name":"@s","objective":"sea_i_emerald"},"color":"white"},{"text":"/32 绿宝石 ","color":"gray"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 10035"}}]
+execute if entity @s[nbt={Inventory:[{components:{"minecraft:custom_data":{sea_feet3a:true}}}]},tag=SEAPT] run \
+tellraw @s [{"text":"         - "},{"text":"2级电工安全靴：升级  ","color":"blue"},{"score":{"name":"@s","objective":"sea_i_emerald"},"color":"white"},{"text":"/60 绿宝石 ","color":"gray"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 10066"}}]
+execute if entity @s[nbt={Inventory:[{components:{"minecraft:custom_data":{sea_feet3b:true}}}]},tag=SEAPT] run \
+tellraw @s [{"text":"         - "},{"text":"4级基础防护靴：升级  ","color":"blue"},{"score":{"name":"@s","objective":"sea_i_emerald"},"color":"white"},{"text":"/60 绿宝石 ","color":"gray"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 10067"}}]
 
 execute unless entity @s[nbt={Inventory:[{id:"minecraft:shield"}]},tag=SEAPT] run \
 tellraw @s [{"text":"   - "},{"text":"制作 防护盾  ","color":"dark_aqua"},{"score":{"name":"@s","objective":"sea_i_iron_ingot"},"color":"white"},{"text":"/2 铁锭 ","color":"gray"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 10006"}}]
