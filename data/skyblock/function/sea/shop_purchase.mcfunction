@@ -477,6 +477,12 @@ execute if entity @s[tag=sea_purchase_pass] run playsound minecraft:block.note_b
 execute if entity @s[tag=sea_purchase_pass] run give @s firework_star[custom_name='{"text":"燃爆剂","italic":true,"color":"blue","italic":false}',lore=['{"text":"喷火器专用燃爆剂。","color":"white","italic":false}','{"text":"使用喷火器时左键，瞬间对面前近距离造成大量伤害。","color":"white","italic":false}']] 5
 execute if entity @s[tag=sea_purchase_pass] run clear @s gunpowder 2
 tag @s remove sea_purchase_pass
+execute if entity @a[advancements={skyblock:sea/chapter5=true}] if score @s sea_crafter matches 10068 as @s[scores={sea_i_emerald=..7}] run tellraw @s {"text":"失败！素材不足！","color":"red"}
+execute if entity @a[advancements={skyblock:sea/chapter5=true}] if score @s sea_crafter matches 10068 as @s[scores={sea_i_emerald=8..}] run tag @s add sea_purchase_pass
+execute if entity @s[tag=sea_purchase_pass] run playsound minecraft:block.note_block.hat player @a ~ ~ ~ 0.8 0.7
+execute if entity @s[tag=sea_purchase_pass] run give @s tnt[custom_name='{"text":"可控地雷触发装置","italic":true,"color":"blue","italic":false}',lore=['{"text":"它会在你丢出去3秒后爆炸！","color":"white","italic":false}','{"text":"放心，真的不会伤到友军！","color":"white","italic":false}','{"text":"请注意：丢出去之后可就没法拆卸了。","color":"white","italic":false}']] 1
+execute if entity @s[tag=sea_purchase_pass] run scoreboard players remove @s sea_i_emerald 8
+tag @s remove sea_purchase_pass
 
 execute if score @s sea_crafter matches 10029 as @s[scores={sea_i_iron_ingot=..2}] run tellraw @s {"text":"失败！素材不足！","color":"red"}
 execute if score @s sea_crafter matches 10029 as @s[scores={sea_i_iron_ingot=3..,sea_i_flint=..2}] run tellraw @s {"text":"失败！素材不足！","color":"red"}
