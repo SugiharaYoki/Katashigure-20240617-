@@ -504,3 +504,6 @@ fill 90092 144 154 90092 137 154 air
 function skyblock:protector/entity_count_end {function:"slyblock:sea/map_prepare_ch1"}
 
 advancement grant @a[tag=SEAPT] only skyblock:sea/chapter1
+
+#红色小蘑菇
+setblock 90074 104 135 air
