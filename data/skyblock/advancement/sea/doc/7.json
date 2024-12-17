@@ -14,7 +14,7 @@
             "id": "minecraft:map"
         },
         "frame": "task",
-        "show_toast": true,
+        "show_toast": false,
         "announce_to_chat": true,
         "hidden": true
     },
