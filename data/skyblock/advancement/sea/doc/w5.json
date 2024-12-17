@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "无名的笔记",
+            "color": "light_purple",
+            "bold": false,
+            "italic": false
+        },
+        "description": {
+            "text": "我把艾德雯娜小姐给我的护身符砸碎了。\n现在我将它们分为五份，放在了冷凝系统的五个地方。\n\n它确实能让我免受海水中的污染，但同时也会驱逐附近的那些“东西”。\n我不能让这群怪物因为护身符的作用而全都往平台跑。\n\n没错，我的目标是守住研究设施的关口。放走那些东西，这个目标就毫无意义。",
+            "color": "white"
+        },
+        "icon": {
+            "id": "minecraft:map"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "sea": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:sea/doc/documentary4"
+}

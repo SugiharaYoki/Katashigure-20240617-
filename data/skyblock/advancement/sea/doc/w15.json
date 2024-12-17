@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "桑迪普的遗言",
+            "color": "light_purple",
+            "bold": false,
+            "italic": false
+        },
+        "description": {
+            "text": "所有人都死了。\n我们的研究人员、邪教徒的援军、我心爱的米兰达……\n我也会死，没有任何人能活着离开水下研究设施。\n最坏的消息是，由于生态系统主控会一直维持运作，这些变异的怪物将能在研究设施长久地存活下去。\n\n我想要破坏主控，但拦在我前面的可不单单是尸变体。\n请允许我为了她最后一搏。\n对不起，没能保护好你……",
+            "color": "white"
+        },
+        "icon": {
+            "id": "minecraft:map"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "sea": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:sea/doc/documentary4b"
+}

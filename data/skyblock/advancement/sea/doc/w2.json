@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "无名的笔记",
+            "color": "light_purple",
+            "bold": false,
+            "italic": false
+        },
+        "description": {
+            "text": "成功了，\n我偷走的那几块光棱模板被我改造了一番，\n现在我应该能快速解决那堆闪影了。\n\n致幸存者，\n如果你正在读这段字，\n希望我的小小发明能够帮助到你……\n哪怕只有一点。\n\n你可要活下去啊，\n因为我不一定能做到了。",
+            "color": "white"
+        },
+        "icon": {
+            "id": "minecraft:map"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "sea": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:sea/doc/documentary4"
+}

@@ -204,5 +204,19 @@ execute if items entity @s container.* flow_banner_pattern run function skyblock
 execute if items entity @s player.cursor *[custom_data={"SEAcrafterbox":true}] as @n[tag=SEAcrafter,type=interaction,distance=..9] at @s positioned ~ ~-1 ~ run function skyblock:sea/shop_reader_box
 execute as @n[tag=SEAcrafter,type=interaction,distance=..9] at @s positioned ~ ~-1 ~ run function skyblock:sea/shop_reader_box
 
-execute positioned 90188 14 87 if entity @s[distance=0..5]
+execute positioned 90188 14 87 if entity @s[distance=0..5] run advancement grant @s only skyblock:sea/doc/w1
+execute positioned 90209 13 114 if entity @s[distance=0..4] run advancement grant @s only skyblock:sea/doc/w2
+execute positioned 90181 27 97 if entity @s[distance=0..4] run advancement grant @s only skyblock:sea/doc/w3
+execute positioned 90171 21 102 if entity @s[distance=0..4] run advancement grant @s only skyblock:sea/doc/w4
+execute positioned 90153 12 150 if entity @s[distance=0..5] run advancement grant @s only skyblock:sea/doc/w5
+execute positioned 90181 19 117 if entity @s[distance=0..3.5] run advancement grant @s only skyblock:sea/doc/w6
+execute positioned 90188 14 87 if entity @s[distance=0..5] run advancement grant @s only skyblock:sea/doc/w7
+execute positioned 90188 14 87 if entity @s[distance=0..5] run advancement grant @s only skyblock:sea/doc/w8
+execute positioned 90188 14 87 if entity @s[distance=0..5] run advancement grant @s only skyblock:sea/doc/w9
+execute positioned 90188 14 87 if entity @s[distance=0..5] run advancement grant @s only skyblock:sea/doc/w10
+execute positioned 90188 14 87 if entity @s[distance=0..5] run advancement grant @s only skyblock:sea/doc/w11
+execute positioned 90188 14 87 if entity @s[distance=0..5] run advancement grant @s only skyblock:sea/doc/w12
+execute positioned 90188 14 87 if entity @s[distance=0..5] run advancement grant @s only skyblock:sea/doc/w13
+execute positioned 90188 14 87 if entity @s[distance=0..5] run advancement grant @s only skyblock:sea/doc/w14
+execute positioned 90188 14 87 if entity @s[distance=0..5] run advancement grant @s only skyblock:sea/doc/w15
 

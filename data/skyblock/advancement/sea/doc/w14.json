@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "蕾娜发出的邮件",
+            "color": "light_purple",
+            "bold": false,
+            "italic": false
+        },
+        "description": {
+            "text": "邮件：发至 分组 水生研究\n\n快点撤出来，你们到底还在里面干什么？我发誓，再不出来的话我会进去亲自把你们拖出来。\n\n情势已经控制不住了，不要再惦记着观察局势了。全部研究报告都别留，快点逃！你们真的觉得自己的性命还没那些研究结果重要吗？！\n\n蕾娜",
+            "color": "white"
+        },
+        "icon": {
+            "id": "minecraft:map"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "sea": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:sea/doc/documentary4b"
+}

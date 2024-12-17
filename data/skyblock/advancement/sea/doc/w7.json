@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "无名的报告",
+            "color": "light_purple",
+            "bold": false,
+            "italic": false
+        },
+        "description": {
+            "text": "实验使用的活体节肢类生物因为细菌的影响而变得异常活跃且暴躁。\n我们养殖的蜘蛛幼体原先会在24小时内长至成年大小，但现在它们已经停止生长。\n\n实验员迈克使用化学气体杀死了一只外观色彩产生变化的蜘蛛。在解剖的时候，这只原本绝对死了的东西居然起死回生，将迈克的手指咬伤。\n迈克没能撑过10分钟。",
+            "color": "white"
+        },
+        "icon": {
+            "id": "minecraft:map"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "sea": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:sea/doc/documentary4b"
+}

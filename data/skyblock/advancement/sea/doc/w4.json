@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "无名的随笔",
+            "color": "light_purple",
+            "bold": false,
+            "italic": false
+        },
+        "description": {
+            "text": "神真的存在。\n但这也只是过去式。神早就已经死了。\n\n坚信世界上并不存在天使或恶魔的凡人只是一群愚昧而狂妄自大的家伙。\n\n我现在已知晓位居这世界之上的存在。\n但我带不走这则秘密。\n\n在我得知这件事的那一刻，我的死期就已经注定了。",
+            "color": "white"
+        },
+        "icon": {
+            "id": "minecraft:map"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "sea": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:sea/doc/documentary4"
+}

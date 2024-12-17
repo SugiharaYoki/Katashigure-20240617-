@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "无名的笔记",
+            "color": "light_purple",
+            "bold": false,
+            "italic": false
+        },
+        "description": {
+            "text": "我们拼尽全力都无法止住尸变体的攻势。现在幸存者被分隔为办公区和食堂两队，互相之间完全无法联系。\n\n我们不知道更上层的钻井平台正在经历什么。我希望他们没有遇到和这里同样危险的怪物。\n\n我已经知晓咱们没有一个人能活着离开这里。死亡后的我们也会化为骸骨，被细菌所操控。这太不幸了……",
+            "color": "white"
+        },
+        "icon": {
+            "id": "minecraft:map"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "sea": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:sea/doc/documentary4b"
+}
