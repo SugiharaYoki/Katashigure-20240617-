@@ -217,4 +217,4 @@ execute store result score @s rng2 run random value 1..6
 execute as @s[scores={rng2=1..1}] run tag @s remove sea_t_knockback4
 tag @s remove sea_t_knockback5
 
-execute unless entity @a[tag=SEAPT] run function skyblock:sea/endgame_regen
+#execute unless entity @a[tag=SEAPT] run function skyblock:sea/endgame_regen
