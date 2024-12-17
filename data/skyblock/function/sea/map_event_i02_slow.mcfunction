@@ -285,3 +285,9 @@ execute as @n[tag=sc,scores={sea_4temp2=5030}] run setblock 90066 129 112 minecr
 
 
 #setblock 90066 129 112 minecraft:stone_button[facing=north]
+
+#德怀特对话
+scoreboard players add sea_ch2_dwight_conversation rng1 1
+scoreboard players add sea_ch2_dwight_conversation rng2 1
+scoreboard players add sea_ch2_dwight_conversation rng3 1
+
