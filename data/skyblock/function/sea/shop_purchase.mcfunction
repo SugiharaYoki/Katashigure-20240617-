@@ -413,7 +413,9 @@ execute if score @s sea_crafter matches 10011 as @s[scores={sea_i_flint=2..},nbt
 execute if score @s sea_crafter matches 10011 as @s[scores={sea_i_flint=2..},nbt={Inventory:[{id:"minecraft:crossbow"}]}] run tag @s add sea_purchase_pass
 execute if score @s sea_crafter matches 10011 as @s[scores={sea_i_flint=2..},nbt={Inventory:[{id:"minecraft:bow"}]}] run tag @s add sea_purchase_pass
 execute if entity @s[tag=sea_purchase_pass] run playsound minecraft:item.armor.equip_iron neutral @s ~ ~ ~ 100
+execute if entity @s[tag=sea_purchase_pass] store result score @s rng1 run random value 1..3
 execute if entity @s[tag=sea_purchase_pass] run give @s arrow 8
+execute if entity @s[tag=sea_purchase_pass,scores={rng1=3}] if block 90074 104 135 minecraft:potted_red_mushroom run give @s arrow 2
 execute if entity @s[tag=sea_purchase_pass] run clear @s flint 2
 tag @s remove sea_purchase_pass
 
