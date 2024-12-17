@@ -244,4 +244,4 @@ execute as @n[tag=SEAbossch3_core] at @s run function skyblock:sea/e/ev010
 #德怀特彩蛋
 execute if block 90122 128 131 minecraft:warped_button[powered=true] run scoreboard players set sea_ch2_dwight_conversation rng6 1
 execute if score sea_ch2_dwight_conversation rng6 matches 1.. run scoreboard players add sea_ch2_dwight_conversation rng6 1
-execute if score sea_ch2_dwight_conversation rng6 matches 1.. run function skyblock:sea/e/ev024_ch2_the_first_conversation_exchange
+execute if score sea_ch2_dwight_conversation rng6 matches 1.. run function skyblock:sea/e/ev024_ch2_dwight_6
