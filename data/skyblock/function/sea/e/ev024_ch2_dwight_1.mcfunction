@@ -50,5 +50,18 @@ execute if score sea_ch2_dwight_conversation rng4 matches 39 positioned 90074 12
 execute if score sea_ch2_dwight_conversation rng4 matches 40 positioned 90074 128 147 run kill @s
 
 
+execute if score sea_ch2_dwight_conversation rng5 matches 1 positioned 90128 129 106 run function skyblock:sea/m/boss2_npc
+execute if score sea_ch2_dwight_conversation rng5 matches 1.. positioned 90128 129 106 as @n[tag=SEAboss2npc] at @s run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
+execute if score sea_ch2_dwight_conversation rng5 matches 5..10 run scoreboard players set sea_ch2_dwight_conversation rng1 5
+execute if score sea_ch2_dwight_conversation rng5 matches 1.. positioned 90128 129 106 as @n[tag=SEAboss2npc] at @s if entity @p[tag=SEAPT,tag=!SEAPF,distance=0..5] run scoreboard players set sea_ch2_dwight_conversation rng1 20
+execute if score sea_ch2_dwight_conversation rng5 matches 22 positioned 90128 129 106 run playsound entity.bogged.ambient neutral @a ~ ~ ~ 1 0.8
+execute if score sea_ch2_dwight_conversation rng5 matches 22 positioned 90128 129 106 run tellraw @a[distance=0..150] {"text":"神秘的骸骨：我……我不该在这里，我……为什么、我会忘记那么重要的事……","color":"dark_purple"}
+execute if score sea_ch2_dwight_conversation rng5 matches 30 positioned 90128 129 106 run playsound entity.bogged.ambient neutral @a ~ ~ ~ 1 0.8
+execute if score sea_ch2_dwight_conversation rng5 matches 30 positioned 90128 129 106 run tellraw @a[distance=0..150] {"text":"神秘的骸骨：不要相信那个女人、先生，……不对，快点离开这里……不然、我……","color":"dark_purple"}
+execute if score sea_ch2_dwight_conversation rng5 matches 39 positioned 90128 129 106 run playsound entity.bogged.ambient neutral @a ~ ~ ~ 1 0.8
+execute if score sea_ch2_dwight_conversation rng5 matches 39 positioned 90128 129 106 run tellraw @a[distance=0..150] {"text":"神秘的骸骨：从来都不是圣水晶导致的。我的灵魂……已经、坚持不了太久了……","color":"dark_purple"}
+execute if score sea_ch2_dwight_conversation rng5 matches 43 positioned 90128 129 106 run effect give @s invisibility infinite 0 true
+execute if score sea_ch2_dwight_conversation rng5 matches 44 positioned 90128 129 106 run tp @s ~ ~-500 ~
+execute if score sea_ch2_dwight_conversation rng5 matches 45 positioned 90128 129 106 run kill @s
 
 
