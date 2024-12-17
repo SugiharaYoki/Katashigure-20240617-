@@ -290,4 +290,5 @@ execute as @n[tag=sc,scores={sea_4temp2=5030}] run setblock 90066 129 112 minecr
 scoreboard players add sea_ch2_dwight_conversation rng1 1
 scoreboard players add sea_ch2_dwight_conversation rng2 1
 execute if block 90129 129 139 air run scoreboard players add sea_ch2_dwight_conversation rng3 1
+execute if block 90077 129 145 air run scoreboard players add sea_ch2_dwight_conversation rng4 1
 
