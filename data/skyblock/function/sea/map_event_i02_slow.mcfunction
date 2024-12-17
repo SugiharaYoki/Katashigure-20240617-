@@ -293,3 +293,4 @@ execute if block 90129 129 139 air run scoreboard players add sea_ch2_dwight_con
 execute if block 90077 129 145 air run scoreboard players add sea_ch2_dwight_conversation rng4 1
 scoreboard players add sea_ch2_dwight_conversation rng5 1
 
+function skyblock:sea/e/ev024_ch2_dwight_1
