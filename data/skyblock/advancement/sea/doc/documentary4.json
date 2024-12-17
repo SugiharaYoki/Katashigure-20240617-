@@ -1,13 +1,13 @@
 {
     "display": {
         "title": {
-            "text": "档案箱：第三章",
+            "text": "机密文档：冷凝系统",
             "color": "white",
             "bold": true,
             "italic": false
         },
         "description": {
-            "text": "我把自己在钻井平台获得的文件与线索集中整理在了这里。",
+            "text": "这些是最高保密级别的文档，就算我活着离开了这里也绝不能公开。\n我答应过艾德雯娜。",
             "color": "gray"
         },
         "icon": {
@@ -23,5 +23,5 @@
             "trigger": "minecraft:impossible"
         }
     },
-    "parent": "skyblock:sea/chapter3"
+    "parent": "skyblock:sea/chapter4"
 }

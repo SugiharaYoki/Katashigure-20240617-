@@ -1,13 +1,13 @@
 {
     "display": {
         "title": {
-            "text": "档案箱：第三章",
+            "text": "机密文档：实验区",
             "color": "white",
             "bold": true,
             "italic": false
         },
         "description": {
-            "text": "我把自己在钻井平台获得的文件与线索集中整理在了这里。",
+            "text": "写下这些报告、发出这些邮件的人，都死了。\n而我将他们杀了第二次。",
             "color": "gray"
         },
         "icon": {
@@ -23,5 +23,5 @@
             "trigger": "minecraft:impossible"
         }
     },
-    "parent": "skyblock:sea/chapter3"
+    "parent": "skyblock:sea/chapter4b"
 }
