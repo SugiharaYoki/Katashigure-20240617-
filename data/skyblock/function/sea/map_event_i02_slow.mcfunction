@@ -282,6 +282,7 @@ execute as @n[tag=sc,scores={sea_4temp2=5089}] as @a[tag=SEAPT] at @s run playso
 execute as @n[tag=sc,scores={sea_4temp2=5089}] run function skyblock:sea/map_prepare_ch3
 execute as @n[tag=sc,scores={sea_4temp2=5030}] run setblock 90071 137 151 minecraft:iron_trapdoor[facing=north,open=true]
 execute as @n[tag=sc,scores={sea_4temp2=5030}] run setblock 90066 129 112 minecraft:stone_button[facing=north]
+execute as @n[tag=sc,scores={sea_4temp2=5030}] run kill @e[tag=SEAboss2npc,distance=0..3000,x=90000,y=128,z=0]
 
 
 #setblock 90066 129 112 minecraft:stone_button[facing=north]
@@ -293,4 +294,4 @@ execute if block 90129 129 139 air run scoreboard players add sea_ch2_dwight_con
 execute if block 90077 129 145 air run scoreboard players add sea_ch2_dwight_conversation rng4 1
 scoreboard players add sea_ch2_dwight_conversation rng5 1
 
-function skyblock:sea/e/ev024_ch2_dwight_1
+execute if entity @n[tag=sc,scores={sea_4temp2=..2030}] run function skyblock:sea/e/ev024_ch2_dwight_1
