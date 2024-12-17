@@ -109,5 +109,20 @@ execute if items entity @s container.* *[custom_data={sea_doc25b:true}] run func
 execute if items entity @s container.* *[custom_data={sea_doc26b:true}] run function skyblock:sea/p/document_macro {doc:b26}
 execute if items entity @s container.* *[custom_data={sea_doc27b:true}] run function skyblock:sea/p/document_macro {doc:b27}
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 clear @s flow_banner_pattern
 tellraw @s {"text":"档案已收录","color":"green"}
