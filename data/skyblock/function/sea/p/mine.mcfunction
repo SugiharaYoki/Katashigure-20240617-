@@ -34,16 +34,16 @@ execute if entity @s[tag=sea_mine_player] if entity @e[tag=SEAmob,distance=0..1.
 
 
 execute if entity @s[tag=sea_mine_player] if score @s sea_4temp1 matches -0 run playsound minecraft:block.note_block.harp block @a ~ ~ ~ 1 1.5
-execute if entity @s[tag=sea_mine_player] if score @s sea_4temp1 matches -1 run playsound minecraft:block.note_block.harp block @a ~ ~ ~ 1 1.5
-execute if entity @s[tag=sea_mine_player] if score @s sea_4temp1 matches -2 run playsound minecraft:block.note_block.harp block @a ~ ~ ~ 1 1.5
-execute if entity @s[tag=sea_mine_player] if score @s sea_4temp1 matches 3 run particle explosion ~ ~ ~ 0.4 0.4 0.4 0 2
-execute if entity @s[tag=sea_mine_player] if score @s sea_4temp1 matches 3 run particle explosion_emitter ~ ~ ~ 0.7 0.7 0.7 0.03 2
-execute if entity @s[tag=sea_mine_player] if score @s sea_4temp1 matches 3 run particle large_smoke ~ ~ ~ 1.3 1.3 1.3 0.02 20
-execute if entity @s[tag=sea_mine_player] if score @s sea_4temp1 matches 3 run playsound entity.generic.explode hostile @a ~ ~ ~ 1.5 0.9
-execute if entity @s[tag=sea_mine_player] if score @s sea_4temp1 matches 3 as @e[tag=SEAmob,distance=0..3] run effect clear @s resistance
-execute if entity @s[tag=sea_mine_player] if score @s sea_4temp1 matches 3 as @e[tag=SEAmob,distance=0..1.3] run damage @s 24 explosion
-execute if entity @s[tag=sea_mine_player] if score @s sea_4temp1 matches 3 as @e[tag=SEAmob,distance=0..2.6] run damage @s 18 explosion
-execute if entity @s[tag=sea_mine_player] if score @s sea_4temp1 matches 3 as @e[tag=SEAmob,distance=0..3.3] run damage @s 12 explosion
-execute if entity @s[tag=sea_mine_player] if score @s sea_4temp1 matches 3 as @e[tag=SEAmob,distance=0..4.2] run damage @s 6 explosion
+execute if entity @s[tag=sea_mine_player] if score @s sea_4temp1 matches 2 run playsound minecraft:block.note_block.harp block @a ~ ~ ~ 1 1.5
+execute if entity @s[tag=sea_mine_player] if score @s sea_4temp1 matches 4 run playsound minecraft:block.note_block.harp block @a ~ ~ ~ 1 1.5
+execute if entity @s[tag=sea_mine_player] if score @s sea_4temp1 matches 6 run particle explosion ~ ~ ~ 0.4 0.4 0.4 0 2
+execute if entity @s[tag=sea_mine_player] if score @s sea_4temp1 matches 6 run particle explosion_emitter ~ ~ ~ 0.7 0.7 0.7 0.03 2
+execute if entity @s[tag=sea_mine_player] if score @s sea_4temp1 matches 6 run particle large_smoke ~ ~ ~ 1.3 1.3 1.3 0.02 20
+execute if entity @s[tag=sea_mine_player] if score @s sea_4temp1 matches 6 run playsound entity.generic.explode hostile @a ~ ~ ~ 1.5 0.9
+execute if entity @s[tag=sea_mine_player] if score @s sea_4temp1 matches 6 as @e[tag=SEAmob,distance=0..3] run effect clear @s resistance
+execute if entity @s[tag=sea_mine_player] if score @s sea_4temp1 matches 6 as @e[tag=SEAmob,distance=0..1.3] run damage @s 24 explosion
+execute if entity @s[tag=sea_mine_player] if score @s sea_4temp1 matches 6 as @e[tag=SEAmob,distance=0..2.6] run damage @s 18 explosion
+execute if entity @s[tag=sea_mine_player] if score @s sea_4temp1 matches 6 as @e[tag=SEAmob,distance=0..3.3] run damage @s 12 explosion
+execute if entity @s[tag=sea_mine_player] if score @s sea_4temp1 matches 6 as @e[tag=SEAmob,distance=0..4.2] run damage @s 6 explosion
 
-execute if entity @s[tag=sea_mine_player] if score @s sea_4temp1 matches 3 run kill @s[type=block_display]
+execute if entity @s[tag=sea_mine_player] if score @s sea_4temp1 matches 6 run kill @s[type=block_display]
