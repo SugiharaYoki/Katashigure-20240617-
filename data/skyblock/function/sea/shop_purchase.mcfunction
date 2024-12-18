@@ -135,12 +135,23 @@ execute if entity @s[tag=sea_purchase_pass] run scoreboard players remove @s sea
 tag @s remove sea_purchase_pass
 
 #防护帽
-execute if score @s[nbt={Inventory:[{components:{"minecraft:custom_data":{sea_safehat:true}}}]}] sea_crafter matches 10020 as @s[scores={sea_i_iron_ingot=..1}] run tellraw @s {"text":"失败！素材不足！","color":"red"}
-execute if score @s[nbt={Inventory:[{components:{"minecraft:custom_data":{sea_safehat:true}}}]}] sea_crafter matches 10020 as @s[scores={sea_i_iron_ingot=2..}] run tag @s add sea_purchase_pass
+execute if entity @s[tag=!e_w_ahl2_e] if score @s[nbt={Inventory:[{components:{"minecraft:custom_data":{sea_safehat:true}}}]}] sea_crafter matches 10020 as @s[scores={sea_i_iron_ingot=..1}] run tellraw @s {"text":"失败！素材不足！","color":"red"}
+execute if entity @s[tag=!e_w_ahl2_e] if score @s[nbt={Inventory:[{components:{"minecraft:custom_data":{sea_safehat:true}}}]}] sea_crafter matches 10020 as @s[scores={sea_i_iron_ingot=2..}] run tag @s add sea_purchase_pass
+execute if entity @s[tag=e_w_ahl2_e] if score @s[nbt={Inventory:[{components:{"minecraft:custom_data":{sea_safehat:true}}}]}] sea_crafter matches 10020 run tellraw @s {"text":"失败！素材不足！","color":"red"}
+execute if entity @s[tag=e_w_ahl2_e] if score @s[nbt={Inventory:[{components:{"minecraft:custom_data":{sea_safehat:true}}}]}] sea_crafter matches 10020 run tag @s add sea_purchase_pass
 execute if entity @s[tag=sea_purchase_pass] run playsound minecraft:item.armor.equip_iron neutral @s ~ ~ ~ 100
 execute if entity @s[tag=sea_purchase_pass] run clear @s chainmail_helmet[custom_data={sea_safehat:true}] 1
 execute if entity @s[tag=sea_purchase_pass] run give @s chainmail_helmet[custom_name='{"text":"电工安全帽·二型","italic":false,"color":"red"}',custom_data={sea_hat2a:true},attribute_modifiers=[{type:"generic.armor",id:"sea_armor:014_01",amount:2.0,operation:"add_value"},{type:"generic.knockback_resistance",id:"sea_armor:014_03",amount:0.1,operation:"add_value"}],unbreakable={},enchantments={fire_protection:1},enchantment_glint_override=false]
-execute if entity @s[tag=sea_purchase_pass] run clear @s iron_ingot 2
+execute if entity @s[tag=!e_w_ahl2_e] if entity @s[tag=sea_purchase_pass] run clear @s iron_ingot 2
+tag @s remove sea_purchase_pass
+
+
+execute if score @s[nbt={Inventory:[{components:{"minecraft:custom_data":{sea_safehat2a:true}}}]}] sea_crafter matches 10069 as @s[scores={sea_i_iron_ingot=..3}] run tellraw @s {"text":"失败！素材不足！","color":"red"}
+execute if score @s[nbt={Inventory:[{components:{"minecraft:custom_data":{sea_safehat2a:true}}}]}] sea_crafter matches 10069 as @s[scores={sea_i_iron_ingot=4..}] run tag @s add sea_purchase_pass
+execute if entity @s[tag=sea_purchase_pass] run playsound minecraft:item.armor.equip_iron neutral @s ~ ~ ~ 100
+execute if entity @s[tag=sea_purchase_pass] run clear @s chainmail_helmet[custom_data={sea_safehat2a:true}] 1
+execute if entity @s[tag=sea_purchase_pass] run give @s chainmail_helmet[custom_name='{"text":"电工安全帽·三型","italic":false,"color":"red"}',custom_data={sea_hat3a:true},attribute_modifiers=[{type:"generic.armor",id:"sea_armor:hat3a1",amount:3.0,operation:"add_value"},{type:"generic.knockback_resistance",id:"sea_armor:hat3a2",amount:0.15,operation:"add_value"}],unbreakable={},enchantments={fire_protection:2,blast_protection:1},enchantment_glint_override=false]
+execute if entity @s[tag=sea_purchase_pass] run clear @s iron_ingot 4
 tag @s remove sea_purchase_pass
 
 
