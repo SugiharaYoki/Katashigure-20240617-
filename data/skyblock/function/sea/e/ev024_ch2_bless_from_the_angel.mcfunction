@@ -116,3 +116,4 @@ execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 1301 positioned 90
 execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 1301 positioned 90142 128 102 run function skyblock:sea/m/drowned_shield
 execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 1301 positioned 90142 128 102 run function skyblock:sea/m/drowned_shield
 execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 1301 run setblock 90125 130 115 minecraft:stone_button[facing=west]
+execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 1301 run fill 90132 131 106 90132 129 107 slime_block

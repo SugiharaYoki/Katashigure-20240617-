@@ -21,6 +21,7 @@ execute as @n[tag=sc,scores={sea_4temp2=816}] run time set 14000t
 execute as @n[tag=sc,scores={sea_4temp2=819}] run time set 14250t
 execute as @n[tag=sc,scores={sea_4temp2=821}] run time set 14500t
 
+execute as @n[tag=sc,scores={sea_4temp2=861}] run fill 90132 131 106 90132 129 107 iron_block
 execute as @n[tag=sc,scores={sea_4temp2=861}] run setblock 90101 132 110 minecraft:tinted_glass
 execute as @n[tag=sc,scores={sea_4temp2=861}] run setblock 90106 132 110 minecraft:tinted_glass
 execute as @n[tag=sc,scores={sea_4temp2=861}] run playsound block.stone_button.click_off block @a 90101 132 110 2 1.4
