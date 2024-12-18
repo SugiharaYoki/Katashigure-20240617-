@@ -9,7 +9,9 @@ execute as @a[tag=SEAPT,x=90084,y=128,z=113,distance=0..3,tag=!e_i_13] at @s run
 execute as @a[tag=SEAPT,x=90084,y=128,z=113,distance=0..3,tag=!e_i_13] at @s run playsound ambient.crimson_forest.loop master @s ~ ~ ~ 100 0.9
 execute as @a[tag=SEAPT,x=90084,y=128,z=113,distance=0..3,tag=!e_i_13] at @s run playsound ambient.crimson_forest.loop master @s ~ ~ ~ 100 0.9
 execute as @a[tag=SEAPT,x=90084,y=128,z=113,distance=0..3,tag=!e_i_13] at @s run playsound ambient.crimson_forest.additions master @s ~ ~ ~ 100 0.9
-execute as @a[tag=SEAPT,x=90084,y=128,z=113,distance=0..3,tag=!e_i_13] at @s run time set 13500t
+
+execute as @a[tag=SEAPT,x=90084,y=128,z=113,distance=0..3,tag=!e_i_13] at @s run advancement grant @a[tag=SEAPT] only skyblock:sea/chapter2
+execute as @a[tag=SEAPT,x=90084,y=128,z=113,distance=0..3,tag=!e_i_13] at @s run advancement grant @s only skyblock:sea/doc/documentary2
 execute as @a[tag=SEAPT,x=90084,y=128,z=113,distance=0..3,tag=!e_i_13] at @s run tag @s add e_i_13
 
 execute as @n[tag=sc] unless entity @s[scores={sea_4temp2=-9999..}] run scoreboard players set @s sea_4temp2 0
@@ -33,6 +35,7 @@ execute as @n[tag=sc,scores={sea_4temp2=30}] run setblock 90096 132 112 white_st
 execute as @n[tag=sc,scores={sea_4temp2=31}] run setblock 90096 132 112 tinted_glass
 execute as @n[tag=sc,scores={sea_4temp2=33}] run setblock 90096 132 112 white_stained_glass
 execute as @n[tag=sc,scores={sea_4temp2=36}] run setblock 90096 132 112 air destroy
+execute as @n[tag=sc,scores={sea_4temp2=36}] run time set 13500t
 
 execute as @a[tag=SEAPT,x=90116,y=128,z=129,distance=0..2] run scoreboard players set @n[tag=sc,scores={sea_4temp2=..49}] sea_4temp2 50
 execute as @n[tag=sc,scores={sea_4temp2=50..65}] run scoreboard players add @s sea_4temp2 1
@@ -268,14 +271,27 @@ execute as @n[tag=sc,scores={sea_4temp2=5001}] run stopsound @a[tag=SEAPT] music
 execute as @n[tag=sc,scores={sea_4temp2=5001}] as @a[tag=SEAPT] at @s run playsound item.trident.thunder ambient @s ~ ~ ~ 100 0.5
 execute as @n[tag=sc,scores={sea_4temp2=5002}] run give @a[tag=SEAPT] nether_star
 execute as @n[tag=sc,scores={sea_4temp2=5002}] run scoreboard players set @a[tag=SEAPT,scores={sea_progress=..5}] sea_progress 6
-execute as @n[tag=sc,scores={sea_4temp2=5012}] as @a[tag=SEAPT] at @s run tellraw @s {"text":"一番苦战，但终于解决了这几个家伙。","color":"gray"}
-execute as @n[tag=sc,scores={sea_4temp2=5030}] as @a[tag=SEAPT] at @s run tellraw @s {"text":"是时候往更上层去了。","color":"gray"}
-execute as @n[tag=sc,scores={sea_4temp2=5057}] as @a[tag=SEAPT] at @s run tellraw @s {"text":"……我甚至无法想象上面会是怎样的情景。","color":"gray"}
+execute as @n[tag=sc,scores={sea_4temp2=5012}] as @a[tag=SEAPT] at @s unless entity @s[advancements={skyblock:sea/doc/a15=true,skyblock:sea/doc/a16=true,skyblock:sea/doc/a17=true,skyblock:sea/doc/a17=true}] run tellraw @s {"text":"一番苦战，但终于解决了这几个家伙。","color":"gray"}
+execute as @n[tag=sc,scores={sea_4temp2=5030}] as @a[tag=SEAPT] at @s unless entity @s[advancements={skyblock:sea/doc/a15=true,skyblock:sea/doc/a16=true,skyblock:sea/doc/a17=true,skyblock:sea/doc/a17=true}] run tellraw @s {"text":"是时候往更上层去了。","color":"gray"}
+execute as @n[tag=sc,scores={sea_4temp2=5057}] as @a[tag=SEAPT] at @s unless entity @s[advancements={skyblock:sea/doc/a15=true,skyblock:sea/doc/a16=true,skyblock:sea/doc/a17=true,skyblock:sea/doc/a17=true}] run tellraw @s {"text":"……我甚至无法想象上面会是怎样的情景。","color":"gray"}
+execute as @n[tag=sc,scores={sea_4temp2=5012}] as @a[tag=SEAPT] at @s if entity @s[advancements={skyblock:sea/doc/a15=true,skyblock:sea/doc/a16=true,skyblock:sea/doc/a17=true,skyblock:sea/doc/a17=true}] run tellraw @s {"text":"冤冤相报何时了，就算死亡、就算疯癫也无法为你们带来安息吗？","color":"gray"}
+execute as @n[tag=sc,scores={sea_4temp2=5030}] as @a[tag=SEAPT] at @s if entity @s[advancements={skyblock:sea/doc/a15=true,skyblock:sea/doc/a16=true,skyblock:sea/doc/a17=true,skyblock:sea/doc/a17=true}] run tellraw @s {"text":"但是，我已经见证了你们的结局。","color":"gray"}
+execute as @n[tag=sc,scores={sea_4temp2=5057}] as @a[tag=SEAPT] at @s if entity @s[advancements={skyblock:sea/doc/a15=true,skyblock:sea/doc/a16=true,skyblock:sea/doc/a17=true,skyblock:sea/doc/a17=true}] run tellraw @s {"text":"我对发生的一切感到很抱歉。虽然改变不了任何悲剧，但我会将此铭记。","color":"gray"}
 execute as @n[tag=sc,scores={sea_4temp2=5089}] as @a[tag=SEAPT] at @s run tellraw @s {"text":"『厄珀娅的悲歌』第二章 完","color":"blue","bold": true}
 execute as @n[tag=sc,scores={sea_4temp2=5089}] as @a[tag=SEAPT] at @s run playsound music_disc.creator_music_box music @a[tag=SEAPT] ~ ~ ~ 1000 0.8
 execute as @n[tag=sc,scores={sea_4temp2=5089}] run function skyblock:sea/map_prepare_ch3
 execute as @n[tag=sc,scores={sea_4temp2=5030}] run setblock 90071 137 151 minecraft:iron_trapdoor[facing=north,open=true]
 execute as @n[tag=sc,scores={sea_4temp2=5030}] run setblock 90066 129 112 minecraft:stone_button[facing=north]
+execute as @n[tag=sc,scores={sea_4temp2=5030}] run kill @e[tag=SEAboss2npc,distance=0..3000,x=90000,y=128,z=0]
 
 
 #setblock 90066 129 112 minecraft:stone_button[facing=north]
+
+#德怀特对话
+scoreboard players add sea_ch2_dwight_conversation rng1 1
+scoreboard players add sea_ch2_dwight_conversation rng2 1
+execute if block 90129 129 139 air run scoreboard players add sea_ch2_dwight_conversation rng3 1
+execute if block 90077 129 145 air run scoreboard players add sea_ch2_dwight_conversation rng4 1
+scoreboard players add sea_ch2_dwight_conversation rng5 1
+
+execute if entity @n[tag=sc,scores={sea_4temp2=..2030}] run function skyblock:sea/e/ev024_ch2_dwight_1

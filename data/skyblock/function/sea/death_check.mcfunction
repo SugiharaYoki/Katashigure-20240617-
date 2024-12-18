@@ -22,3 +22,6 @@ execute if score @s sea_dead_check matches 1.. run function skyblock:skywar_syst
 
 
 scoreboard players set @s sea_dead 0
+
+#成就
+scoreboard players add @s sea_count_dead 1

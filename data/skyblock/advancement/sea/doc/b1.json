@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "副宿舍楼个人储藏柜内的便签纸",
+            "color": "light_purple",
+            "bold": false,
+            "italic": false
+        },
+        "description": {
+            "text": "上面写着歪歪扭扭的字：\n“从右到左仔细观察北水箱西面的蜡烛”",
+            "color": "white"
+        },
+        "icon": {
+            "id": "minecraft:map"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "sea": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:sea/doc/documentary3"
+}

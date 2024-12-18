@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "米兰达发出的邮件 - 实验区失守",
+            "color": "light_purple",
+            "bold": false,
+            "italic": false
+        },
+        "description": {
+            "text": "邮件：发至 分组 生物实验\n\n我是材料分析师米兰达。实验区的生化防护门已经拦不住他们了。\n请所有人前往办公区避难。但我无法得知更下层正在经历什么，做好牺牲的准备。\n\n不要再让那群怪物借我们的尸体筑巢了，战死比变成尸变体要好上数倍。\n\n此致 米兰达",
+            "color": "white"
+        },
+        "icon": {
+            "id": "minecraft:map"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "sea": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:sea/doc/documentary4b"
+}

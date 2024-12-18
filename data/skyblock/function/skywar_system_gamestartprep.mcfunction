@@ -90,6 +90,7 @@ execute if score @n[tag=sc] SSgspT matches 2 run scoreboard objectives add If_Bl
 execute if score @n[tag=sc] SSgspT matches 2 run scoreboard objectives add If_Bless23c custom:damage_resisted
 execute if score @n[tag=sc] SSgspT matches 2 run scoreboard objectives add If_Bless23c2 custom:damage_taken
 execute if score @n[tag=sc] SSgspT matches 2 run scoreboard objectives add If_Bless27 minecraft.used:minecraft.activator_rail
+execute if score @n[tag=sc] SSgspT matches 2 run scoreboard objectives add If_Bless29 minecraft.used:minecraft.snowball
 execute if score @n[tag=sc] SSgspT matches 2 as @a[scores={If_Bless11=1..}] run attribute @s generic.jump_strength modifier remove skywar_ishtar_bless11_01
 #无意义变量 scoreboard players reset @s RemainPlayer
 execute if score @n[tag=sc] SSgspT matches 2 as @a[tag=!NoSkyWar] at @s run scoreboard players reset @s DeathCount
@@ -124,6 +125,7 @@ execute if score @n[tag=sc] SSgspT matches 3 as @a[tag=!NoSkyWar] at @s run scor
 execute if score @n[tag=sc] SSgspT matches 3 as @a[tag=!NoSkyWar] at @s run scoreboard players set @s If_Bless23c 0
 execute if score @n[tag=sc] SSgspT matches 3 as @a[tag=!NoSkyWar] at @s run scoreboard players set @s If_Bless23c2 0
 execute if score @n[tag=sc] SSgspT matches 3 as @a[tag=!NoSkyWar] at @s run scoreboard players set @s If_Bless27 0
+execute if score @n[tag=sc] SSgspT matches 3 as @a[tag=!NoSkyWar] at @s run scoreboard players set @s If_Bless29 0
 execute if score @n[tag=sc] SSgspT matches 3 run scoreboard objectives add TempIf_Job6A dummy
 execute if score @n[tag=sc] SSgspT matches 3 run scoreboard objectives add TempIf_Job6B dummy
 execute if score @n[tag=sc] SSgspT matches 3 run scoreboard objectives add TempIf_Job6C dummy
@@ -168,8 +170,6 @@ execute if score @n[tag=sc] SSgspT matches 10 run title @a[tag=!NoSkyWar] title 
 execute if score @n[tag=sc] SSgspT matches 11 run setblock -17 23 32 minecraft:soul_lantern
 execute if score @n[tag=sc] SSgspT matches 11 run title @a[tag=!NoSkyWar] times 0 120 40
 execute if score @n[tag=sc] SSgspT matches 11 run stopsound @s
-execute if score @n[tag=sc] SSgspT matches 11 run clear @a[tag=!NoSkyWar]
-execute if score @n[tag=sc] SSgspT matches 11 run effect clear @a[tag=!NoSkyWar]
 execute if score @n[tag=sc] SSgspT matches 11 run tag @n[tag=sc] remove MapLoaAlr
 
 #setblock -55 143 -58 redstone_wire

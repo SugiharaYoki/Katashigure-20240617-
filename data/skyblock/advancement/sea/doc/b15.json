@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "支架悬崖顶端的笔记 - 麦迪逊",
+            "color": "light_purple",
+            "bold": false,
+            "italic": false
+        },
+        "description": {
+            "text": "这些尸变体为何会成为行尸与骸骨两种主要形式？\n经过我在暗处的观察，这似乎与受害者的死亡方式有关。\n被细菌感染后，一旦受到致命伤便会加快尸变的速度。\n彻底病发后，便会成为再生能力极强的尸变体。\n在病情演变到无法控制前，身体机能就已经支撑不住，\n从而导致宿主死亡的话，尸体便会高速腐烂。\n在成为一具白骨后，它会加入行尸的行列，成为特殊的尸变体。\n就算自杀，也无法从细菌的感染解脱啊……",
+            "color": "white"
+        },
+        "icon": {
+            "id": "minecraft:map"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "sea": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:sea/doc/b10"
+}

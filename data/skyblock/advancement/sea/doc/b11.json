@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "主平台甲板通讯室的笔记A - 麦迪逊",
+            "color": "light_purple",
+            "bold": false,
+            "italic": false
+        },
+        "description": {
+            "text": "我在针对甲板上出现的一种新型怪物做研究。\n外貌特征为深红色的球体，拥有极高的表面温度。\n它们不像是凭空出现的，每一只都对应着一具消失的尸体。\n我认为它们很有可能是因遭遇怪物袭击，\n而被随之沾染的火焰给活活烧死的遇难者。\n维修层暂时没有这种怪物。\n考虑到有它们的地方必然有火源，我该暂时更改据点。",
+            "color": "white"
+        },
+        "icon": {
+            "id": "minecraft:map"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "sea": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:sea/doc/b10"
+}

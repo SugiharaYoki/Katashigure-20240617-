@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "燃料架B内的便签纸",
+            "color": "light_purple",
+            "bold": false,
+            "italic": false
+        },
+        "description": {
+            "text": "上面写着歪歪扭扭的字：\n“正方形左上”\n“左上的斜对角”\n“右上”\n“剩下的那个角”\n“第一个角”\n“左下”\n“第四个角的斜对面”",
+            "color": "white"
+        },
+        "icon": {
+            "id": "minecraft:map"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "sea": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:sea/doc/documentary3"
+}

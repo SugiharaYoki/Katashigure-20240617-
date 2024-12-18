@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "无名的笔记 - “某些”怪物的弱点是火焰",
+            "color": "light_purple",
+            "bold": false,
+            "italic": false
+        },
+        "description": {
+            "text": "冷凝装置已经过载。\n那些藤蔓将尸变体转换成了再生性极强的怪物。\n它们的唯一弱点就是火焰，可是在海底输水管道里上哪去找火？开玩笑吗？\n\n要不了多久系统就会瘫痪。\n那时整个研究设施都会在海中化为灰烬。\n\n那群邪教徒派来了几人说是要帮忙解决问题。\n是的，揣奸把猾的狐狸。",
+            "color": "white"
+        },
+        "icon": {
+            "id": "minecraft:map"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "sea": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:sea/doc/documentary4"
+}

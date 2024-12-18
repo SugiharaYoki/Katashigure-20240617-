@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "钥匙箱内的笔记 - 丹尼尔",
+            "color": "light_purple",
+            "bold": false,
+            "italic": false
+        },
+        "description": {
+            "text": "只要把钥匙上的标签全部打乱，他们就没法打开文件柜了。\n工具维护室的门一直是开的，没人会想到取走这一把。\n绝对不能让他们找到开关把手，维修层现在堪称暂时的净土。\n我不会让法莫洛斯医生为我们创造的安全条件被那般轻易地打破。",
+            "color": "white"
+        },
+        "icon": {
+            "id": "minecraft:map"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "sea": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:sea/doc/documentary1"
+}

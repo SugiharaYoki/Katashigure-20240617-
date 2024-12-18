@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "忒尔克西 · 维修层",
+            "color": "blue",
+            "bold": true,
+            "italic": false
+        },
+        "description": {
+            "text": "我奉命来到忒尔克西钻井平台进行调查。\n在这之后，我见证了一场绝非自然现象的天灾。",
+            "color": "light_purple"
+        },
+        "icon": {
+            "id": "minecraft:polished_deepslate"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "sea": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:thelxiepeia"
+}

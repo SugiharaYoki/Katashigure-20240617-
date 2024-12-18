@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "调查记录 6月29日 17:42",
+            "color": "light_purple",
+            "bold": false,
+            "italic": false
+        },
+        "description": {
+            "text": "记录者为忒尔克西钻井平台调查小组成员，也是我本人。\n钻井平台距离失联已经超过36小时，我们在黄昏之时赶到了平台的西南驳口。\n整座海上设施此时一片死寂，至少上百名的工作人员皆数不见踪影。",
+            "color": "white"
+        },
+        "icon": {
+            "id": "minecraft:map"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "sea": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:sea/doc/documentary1"
+}

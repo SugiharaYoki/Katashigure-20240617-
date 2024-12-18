@@ -93,7 +93,7 @@ execute if score @n[tag=sc] Map_Code matches 15 run execute unless entity @n[tag
 execute if score @n[tag=sc] Map_Code matches 15 run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run worldborder set 138
 execute if score @n[tag=sc] Map_Code matches 16 run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run worldborder center 50069 50070
 execute if score @n[tag=sc] Map_Code matches 16 run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run worldborder set 138
-execute if score @n[tag=sc] Map_Code matches 17 run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run worldborder center 50080 50070
+execute if score @n[tag=sc] Map_Code matches 17 run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run worldborder center 50068 50069
 execute if score @n[tag=sc] Map_Code matches 17 run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run worldborder set 138
 execute if score @n[tag=sc] Map_Code matches 18 run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run worldborder center 50075 50075
 execute if score @n[tag=sc] Map_Code matches 18 run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run worldborder set 151

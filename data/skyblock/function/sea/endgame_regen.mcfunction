@@ -125,6 +125,13 @@ scoreboard players set sea_ch4_switch_crossroad2 sea_4temp2 -9
 scoreboard players set sea_ch4_switch_secondfloor sea_4temp2 -9
 scoreboard players set sea_ch4_switch_waterstorage sea_4temp2 -9
 
+scoreboard players set sea_ch2_dwight_conversation rng1 0
+scoreboard players set sea_ch2_dwight_conversation rng2 0
+scoreboard players set sea_ch2_dwight_conversation rng3 0
+scoreboard players set sea_ch2_dwight_conversation rng4 0
+scoreboard players set sea_ch2_dwight_conversation rng5 0
+scoreboard players set sea_ch2_dwight_conversation rng6 0
+
 setblock 90074 103 137 air
 
 tag @s remove sea_ch1_speedrun_butif

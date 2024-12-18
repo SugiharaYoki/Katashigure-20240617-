@@ -80,6 +80,6 @@ tp @a[team=Team1_1] 50021 26 50126 facing 50075 49 50075
 tp @a[team=Team1_2] 50129 26 50024 facing 50075 49 50075
 tp @a[team=Team1_3] 50075 49 50078 facing 50075 49 50075
 tp @a[team=Team1_4] 50126 26 50129 facing 50075 49 50075
-tp @a[team=Team1_5] 50024 26 50121 facing 50075 49 50075
+tp @a[team=Team1_5] 50024 26 50021 facing 50075 49 50075
 
 tp @a[tag=PVP_see,tag=!PVPTeamed] 50075 75 50075

@@ -71,3 +71,5 @@ execute as @s[tag=SEAch3_spawn_timer6,scores={sea_4temp1=31}] run playsound mine
 execute as @s[tag=SEAch3_spawn_timer6,scores={sea_4temp1=34}] run playsound minecraft:block.iron_door.open ambient @a 90127 140 137 0.3
 execute as @s[tag=SEAch3_spawn_timer6,scores={sea_4temp1=37}] run playsound minecraft:block.iron_door.open ambient @a 90127 140 137 0.3
 execute as @s[tag=SEAch3_spawn_timer6,scores={sea_4temp1=40}] run playsound minecraft:block.iron_door.open ambient @a 90127 140 137 0.3
+
+execute as @s[tag=SEAch3_spawn_timer6,scores={sea_4temp1=43}] run advancement grant @a[tag=SEAPT] only skyblock:sea/chapter3b

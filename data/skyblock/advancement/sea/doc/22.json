@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "副宿舍楼二楼的笔记 - 肯",
+            "color": "light_purple",
+            "bold": false,
+            "italic": false
+        },
+        "description": {
+            "text": "19号 28万桶 - 石油开采量未满足需求。\n20号 31万桶 - 石油开采量满足需求。\n接下来的两个月内将尝试增加20%产量。\n预计明天产量30万桶——理所当然。\n实验体人数（后面的字都被狠狠划掉了）",
+            "color": "white"
+        },
+        "icon": {
+            "id": "minecraft:map"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "sea": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:sea/doc/documentary3"
+}

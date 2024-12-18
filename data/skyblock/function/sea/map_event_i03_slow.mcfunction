@@ -21,6 +21,8 @@ execute as @a[tag=SEAPT,x=90067,y=137,z=125,distance=0..3.8,tag=!e_i_30] at @s r
 execute as @a[tag=SEAPT,x=90067,y=137,z=125,distance=0..3.8,tag=!e_i_30] at @s run playsound ambient.crimson_forest.additions master @s ~ ~ ~ 100 0.9
 execute as @a[tag=SEAPT,x=90067,y=137,z=125,distance=0..3.8,tag=!e_i_30] at @s run playsound ambient.crimson_forest.loop master @s ~ ~ ~ 100 0.7
 execute as @a[tag=SEAPT,x=90067,y=137,z=125,distance=0..3.8,tag=!e_i_30] at @s run playsound ambient.crimson_forest.additions master @s ~ ~ ~ 100 0.7
+execute as @a[tag=SEAPT,x=90067,y=137,z=125,distance=0..3.8,tag=!e_i_30] at @s run advancement grant @a[tag=SEAPT] only skyblock:sea/chapter3
+execute as @a[tag=SEAPT,x=90067,y=137,z=125,distance=0..3.8,tag=!e_i_30] at @s run advancement grant @s only skyblock:sea/doc/documentary3
 execute as @a[tag=SEAPT,x=90067,y=137,z=125,distance=0..3.8,tag=!e_i_30] at @s run tag @s add e_i_30
 
 
@@ -237,3 +239,9 @@ execute as @a[tag=SEAPT,x=90138,y=36,z=100,distance=0..2.7,tag=!e_i_31] at @s ru
 execute as @n[tag=SEAbossch3_core] at @s run function skyblock:sea/e/ev010
 
 #    function skyblock:protector/entity_count_end {function:"skyblock:sea/map_event_i03_slow.mcfunction"}
+
+
+#德怀特彩蛋
+execute if block 90122 128 131 minecraft:warped_button[powered=true] run scoreboard players set sea_ch2_dwight_conversation rng6 1
+execute if score sea_ch2_dwight_conversation rng6 matches 1.. run scoreboard players add sea_ch2_dwight_conversation rng6 1
+execute if score sea_ch2_dwight_conversation rng6 matches 1.. run function skyblock:sea/e/ev024_ch2_dwight_6

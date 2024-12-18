@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "无名的笔记 - 似乎描述了静谧者的特征",
+            "color": "light_purple",
+            "bold": false,
+            "italic": false
+        },
+        "description": {
+            "text": "研究机构失守了。\n\n别提弹药问题了，我们根本看不见敌人在哪里。\n它们简直是从四面八方随机包围过来的。\n\n我们已经穷途末路了，只要它们不显形，我们根本对它们造成不了任何伤害。\n\n等等，我听到声音了……\n它们来",
+            "color": "white"
+        },
+        "icon": {
+            "id": "minecraft:map"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "sea": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:sea/doc/documentary4"
+}

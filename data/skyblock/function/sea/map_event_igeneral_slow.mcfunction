@@ -131,7 +131,7 @@ item replace block 90173 6 104 container.13 with trial_key[custom_name='{"text":
 
 #,custom_data={sea_lever2:true}
 
-execute if entity @p[x=90080,y=104,z=134,distance=0..9] as @n[tag=sc] run function skyblock:sea/p/documentary_box
+#execute if entity @p[x=90080,y=104,z=134,distance=0..9] as @n[tag=sc] run function skyblock:sea/p/documentary_box
 
 
 item replace block 90095 122 128 container.3 with flow_banner_pattern[custom_data={sea_doc02:true},custom_name='{"text":"何日的新闻","italic":true,"color":"dark_purple","italic":false}',lore=['{"text":"这座忒尔克西作为2130年往后的唯一一座新建钻井平台，其背负的不仅是开采石油的使命。","color":"white","italic":false}','{"text":"于2128年在大洋洲火圈地带接连发生的火山喷发，将这一批埋藏于地层深处的石油送入了太平洋。","color":"white","italic":false}','{"text":"这些石油在地理位置的分布再一次提醒了现代的人们过去有关“姆大陆”的学术猜想。","color":"white","italic":false}','{"text":"忒尔克西海上钻井平台在开采这批石油的同时，也将探索位于各处石油分布区域汇聚……","color":"white","italic":false}']]
@@ -172,7 +172,7 @@ lore=['{"text":"我自己的症状终于恶化了……","color":"white","italic
 
 item replace block 90075 122 143 container.15 with flow_banner_pattern[custom_data={sea_doc14:true},custom_name=\
 '{"text":"不明来历的纸条","italic":true,"color":"dark_purple","italic":false}',\
-lore=['{"text":"法莫洛斯医生也变成了怪物。","color":"white","italic":false}','{"text":"我顺着痕迹找到这里，但是幸存者均已离去。","color":"white","italic":false}','{"text":"他们之中定是有人掌握了新情报。","color":"white","italic":false}']]
+lore=['{"text":"法莫洛斯医生也变成了怪物。","color":"white","italic":false}','{"text":"我顺着痕迹找到这里，但是幸存者均已离去。","color":"white","italic":false}','{"text":"他们之中定是有人掌握了新情报。","color":"white","italic":false}','{"text":"我觉得我有必要再回一次水下。","color":"white","italic":false}']]
 
 item replace block 90086 143 116 container.13 with flow_banner_pattern[custom_data={sea_doc01b:true},custom_name='{"text":"燃料架B内的便签纸","italic":true,"color":"dark_purple","italic":false}',lore=['{"text":"上面写着歪歪扭扭的字：","color":"white","italic":false}','{"text":"“从右到左仔细观察北水箱西面的蜡烛”","color":"white","italic":false}']]
 
@@ -192,6 +192,9 @@ lore=['{"text":"那块魔法石板被我藏在了物资层西面的日常物资�
 item replace block 90144 136 131 container.13 with flow_banner_pattern[custom_data={sea_doc14b:true},custom_name=\
 '{"text":"泄水通道秘密实验室的笔记 - 麦迪逊","italic":true,"color":"dark_purple","italic":false}',\
 lore=['{"text":"圣晶能够吸引的不止拥有自主思维的生物的意志。","color":"white","italic":false}','{"text":"似乎电磁波与微波也会朝圣晶扭曲，","color":"white","italic":false}','{"text":"这或许才是钻井平台与外界失联的真正原因。","color":"white","italic":false}','{"text":"为什么偏偏是十几小时前才被切断通讯？","color":"white","italic":false}','{"text":"在这段时间里圣晶有过什么变化？是否在持续吸收某种能量？","color":"white","italic":false}','{"text":"被我故意放在水晶祀堂的空铜板被扭曲成了","color":"white","italic":false}','{"text":"能够令使用者爆发力剧增的魔法铜板。","color":"white","italic":false}','{"text":"静滞光棱的诞生也是我在对这种特殊铜板","color":"white","italic":false}','{"text":"实行逆向破解的过程中得到的意外收获。","color":"white","italic":false}']]
+item replace block 90067 150 154 container.13 with flow_banner_pattern[custom_data={sea_doc15b:true},custom_name=\
+'{"text":"支架悬崖顶端的笔记 - 麦迪逊","italic":true,"color":"dark_purple","italic":false}',\
+lore=['{"text":"这些尸变体为何会成为行尸与骸骨两种主要形式？","color":"white","italic":false}','{"text":"经过我在暗处的观察，这似乎与受害者的死亡方式有关。","color":"white","italic":false}','{"text":"被细菌感染后，一旦受到致命伤便会加快尸变的速度。","color":"white","italic":false}','{"text":"彻底病发后，便会成为再生能力极强的尸变体。","color":"white","italic":false}','{"text":"在病情演变到无法控制前，身体机能就已经支撑不住，","color":"white","italic":false}','{"text":"从而导致宿主死亡的话，尸体便会高速腐烂。","color":"white","italic":false}','{"text":"在成为一具白骨后，它会加入行尸的行列，成为特殊的尸变体。","color":"white","italic":false}','{"text":"就算自杀，也无法从细菌的感染解脱啊……","color":"white","italic":false}']]
 
 item replace block 90135 115 249 container.14 with flow_banner_pattern[custom_data={sea_doc19b:true},custom_name=\
 '{"text":"建材资源平台的笔记 - 史丹尼舵长","italic":true,"color":"dark_purple","italic":false}',\
@@ -360,3 +363,5 @@ execute as @n[tag=SEAedwina] at @s as @e[tag=SEAmob,type=!villager,tag=!SEAedwin
 
 execute positioned 90140 114 210 if entity @a[tag=SEAPT,distance=..6.5,tag=!SEAPF] if block 90073 103 141 air unless entity @n[tag=SEAchg_spawn_timer_longbridge,distance=0..1] run summon marker ~ ~ ~ {Tags:["SEAchg_spawn_timer","SEAchg_spawn_timer_longbridge"]}
 execute if block 90073 103 141 air as @n[tag=SEAchg_spawn_timer_longbridge,x=90140,y=114,z=210,distance=0..1] run function skyblock:sea/e/ev011
+
+

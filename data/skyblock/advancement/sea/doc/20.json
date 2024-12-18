@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "宿舍楼图书馆的笔记 - 斯顿",
+            "color": "light_purple",
+            "bold": false,
+            "italic": false
+        },
+        "description": {
+            "text": "邪教徒已经占领了通讯中心。\n但这并不是世界末日，我们也守住了宿舍楼的所有入口。\n关键点是在大门的防守被冲破前找到其他的逃生路线。\n他们捣毁了全部的救生艇，但若是想办法抵达维修层的话……\n现在的希望在维修部门那群人身上，他们要带领大家从维修路线逃跑。",
+            "color": "white"
+        },
+        "icon": {
+            "id": "minecraft:map"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "sea": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:sea/doc/documentary3"
+}

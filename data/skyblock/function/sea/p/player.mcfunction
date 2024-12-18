@@ -34,7 +34,7 @@ execute as @s[scores={sea_crafter=1}] at @s run function skyblock:sea/shop_reade
 execute as @s[scores={sea_crafter=10000..19999}] at @s if entity @n[tag=SEAcrafter,distance=0..5] run function skyblock:sea/shop_purchase
 execute as @s[scores={sea_crafter=30000..39999}] at @s if entity @n[tag=SEAcrafter,distance=0..5] run function skyblock:sea/shop_purchase
 execute as @s[tag=seaPerm000,scores={sea_crafter=20000}] at @s if entity @n[tag=SEAcrafter,distance=0..5] run function skyblock:sea/shop_enchant
-execute as @s[tag=seaPerm000,scores={sea_crafter=30000}] at @s if entity @n[tag=SEAcrafter,distance=0..5] run function skyblock:sea/shop_tp
+execute as @s[scores={sea_crafter=30000}] at @s if entity @n[tag=SEAcrafter,distance=0..5] run function skyblock:sea/shop_tp
 execute as @s[tag=seaPerm000,scores={sea_crafter=20001..29999}] at @s if entity @n[tag=SEAcrafter,distance=0..5] run function skyblock:sea/shop_purchase
 execute at @s if entity @n[tag=SEAcrafter,distance=0..5] run scoreboard players enable @s sea_crafter
 
@@ -160,7 +160,8 @@ execute if items entity @s container.* minecraft:sentry_armor_trim_smithing_temp
 execute if items entity @s container.* minecraft:dune_armor_trim_smithing_template at @s run function skyblock:sea/shop_trim {trim:sea_i_trim_skeleton, trim_name:"金砂",trim_type:dune_armor_trim_smithing_template}
 execute if items entity @s container.* minecraft:vex_armor_trim_smithing_template at @s run function skyblock:sea/shop_trim {trim:sea_i_trim_ghost, trim_name:"招魂",trim_type:vex_armor_trim_smithing_template}
 execute if items entity @s container.* minecraft:coast_armor_trim_smithing_template at @s run function skyblock:sea/shop_trim {trim:sea_i_trim_sea, trim_name:"海啸",trim_type:coast_armor_trim_smithing_template}
-
+execute if items entity @s container.* emerald at @s run scoreboard players add @s sea_i_emerald 1
+execute if items entity @s container.* emerald at @s run clear @s emerald 1
 
 
 execute as @s[x=80000,dx=20000,z=-10000,dz=20000,y=102,dy=5] at @s if block ~ ~-1 ~ waxed_weathered_cut_copper_slab if block ~ ~-0.1 ~ air run tp @s ~ 127.0 ~
@@ -178,12 +179,18 @@ execute as @s[x=80000,dx=20000,z=-10000,dz=20000,y=33,dy=5] at @s if block ~ ~-1
 execute as @s[x=80000,dx=20000,z=-10000,dz=20000,y=33,dy=5] at @s if block ~ ~-1.5 ~ waxed_weathered_cut_copper_slab if block ~ ~-0.1 ~ air unless block ~ 18 ~ waxed_weathered_cut_copper_slab run tp @s ~ 44.0 ~
 
 
-execute if entity @s[tag=!e_w_51_eternal] if entity @n[tag=sc,tag=sea_doc06,tag=sea_doc07,tag=sea_doc08,tag=sea_doc09,tag=sea_doc10,tag=sea_doc11,tag=sea_doc12,tag=sea_doc13] run tellraw @s {"text": "已获取全部8份『法莫洛斯的医疗报告』！","color": "blue"}
-execute if entity @s[tag=!e_w_51_eternal] if entity @n[tag=sc,tag=sea_doc06,tag=sea_doc07,tag=sea_doc08,tag=sea_doc09,tag=sea_doc10,tag=sea_doc11,tag=sea_doc12,tag=sea_doc13] run playsound minecraft:ui.toast.challenge_complete player @s ~ ~ ~ 1 1
-execute if entity @s[tag=!e_w_51_eternal] if entity @n[tag=sc,tag=sea_doc06,tag=sea_doc07,tag=sea_doc08,tag=sea_doc09,tag=sea_doc10,tag=sea_doc11,tag=sea_doc12,tag=sea_doc13] run tellraw @s {"text": "已获得可用于多功能工作站的永久升级。","color": "white"}
-execute if entity @s[tag=!e_w_51_eternal] if entity @n[tag=sc,tag=sea_doc06,tag=sea_doc07,tag=sea_doc08,tag=sea_doc09,tag=sea_doc10,tag=sea_doc11,tag=sea_doc12,tag=sea_doc13] run tellraw @s {"text": "以后不会通过工作站购买到腐肉了。","color": "white"}
-execute if entity @s[tag=!e_w_51_eternal] if entity @n[tag=sc,tag=sea_doc06,tag=sea_doc07,tag=sea_doc08,tag=sea_doc09,tag=sea_doc10,tag=sea_doc11,tag=sea_doc12,tag=sea_doc13] run tellraw @s {"text": "同时，金萝卜的获取概率也些微提升。","color": "white"}
-execute if entity @s[tag=!e_w_51_eternal] if entity @n[tag=sc,tag=sea_doc06,tag=sea_doc07,tag=sea_doc08,tag=sea_doc09,tag=sea_doc10,tag=sea_doc11,tag=sea_doc12,tag=sea_doc13] run tag @s add e_w_51_eternal
+execute if entity @s[tag=!e_w_51_eternal,advancements={skyblock:sea/doc/a06=true,skyblock:sea/doc/a07=true,skyblock:sea/doc/a08=true,skyblock:sea/doc/a09=true,skyblock:sea/doc/a10=true,skyblock:sea/doc/a11=true,skyblock:sea/doc/a12=true,skyblock:sea/doc/a13=true}] run tellraw @s {"text": "已获取全部8份『法莫洛斯的医疗报告』！","color": "blue"}
+execute if entity @s[tag=!e_w_51_eternal,advancements={skyblock:sea/doc/a06=true,skyblock:sea/doc/a07=true,skyblock:sea/doc/a08=true,skyblock:sea/doc/a09=true,skyblock:sea/doc/a10=true,skyblock:sea/doc/a11=true,skyblock:sea/doc/a12=true,skyblock:sea/doc/a13=true}] run playsound minecraft:ui.toast.challenge_complete player @s ~ ~ ~ 1 1
+execute if entity @s[tag=!e_w_51_eternal,advancements={skyblock:sea/doc/a06=true,skyblock:sea/doc/a07=true,skyblock:sea/doc/a08=true,skyblock:sea/doc/a09=true,skyblock:sea/doc/a10=true,skyblock:sea/doc/a11=true,skyblock:sea/doc/a12=true,skyblock:sea/doc/a13=true}] run tellraw @s {"text": "已获得可用于多功能工作站的永久升级。","color": "white"}
+execute if entity @s[tag=!e_w_51_eternal,advancements={skyblock:sea/doc/a06=true,skyblock:sea/doc/a07=true,skyblock:sea/doc/a08=true,skyblock:sea/doc/a09=true,skyblock:sea/doc/a10=true,skyblock:sea/doc/a11=true,skyblock:sea/doc/a12=true,skyblock:sea/doc/a13=true}] run tellraw @s {"text": "以后不会通过工作站购买到腐肉了。","color": "white"}
+execute if entity @s[tag=!e_w_51_eternal,advancements={skyblock:sea/doc/a06=true,skyblock:sea/doc/a07=true,skyblock:sea/doc/a08=true,skyblock:sea/doc/a09=true,skyblock:sea/doc/a10=true,skyblock:sea/doc/a11=true,skyblock:sea/doc/a12=true,skyblock:sea/doc/a13=true}] run tellraw @s {"text": "同时，金萝卜的获取概率也些微提升。","color": "white"}
+execute if entity @s[tag=!e_w_51_eternal,advancements={skyblock:sea/doc/a06=true,skyblock:sea/doc/a07=true,skyblock:sea/doc/a08=true,skyblock:sea/doc/a09=true,skyblock:sea/doc/a10=true,skyblock:sea/doc/a11=true,skyblock:sea/doc/a12=true,skyblock:sea/doc/a13=true}] run tag @s add e_w_51_eternal
+
+execute if entity @s[tag=!e_w_ahl2_e,advancements={skyblock:sea/doc/a15=true,skyblock:sea/doc/a16=true,skyblock:sea/doc/a17=true,skyblock:sea/doc/a18=true,skyblock:sea/doc/a19=true}] run tellraw @s {"text": "已获取物资层厨师团队所留下的全部笔记！","color": "blue"}
+execute if entity @s[tag=!e_w_ahl2_e,advancements={skyblock:sea/doc/a15=true,skyblock:sea/doc/a16=true,skyblock:sea/doc/a17=true,skyblock:sea/doc/a18=true,skyblock:sea/doc/a19=true}] run playsound minecraft:ui.toast.challenge_complete player @s ~ ~ ~ 1 1
+execute if entity @s[tag=!e_w_ahl2_e,advancements={skyblock:sea/doc/a15=true,skyblock:sea/doc/a16=true,skyblock:sea/doc/a17=true,skyblock:sea/doc/a18=true,skyblock:sea/doc/a19=true}] run tellraw @s {"text": "已获得可用于多功能工作站的永久升级。","color": "white"}
+execute if entity @s[tag=!e_w_ahl2_e,advancements={skyblock:sea/doc/a15=true,skyblock:sea/doc/a16=true,skyblock:sea/doc/a17=true,skyblock:sea/doc/a18=true,skyblock:sea/doc/a19=true}] run tellraw @s {"text": "以后电工安全帽可以免费升级至LV2了。","color": "white"}
+execute if entity @s[tag=!e_w_ahl2_e,advancements={skyblock:sea/doc/a15=true,skyblock:sea/doc/a16=true,skyblock:sea/doc/a17=true,skyblock:sea/doc/a18=true,skyblock:sea/doc/a19=true}] run tag @s add e_w_ahl2_e
 
 #回响指南针
 execute if items entity @s weapon.* minecraft:recovery_compass run function skyblock:sea/p/echo_compass
@@ -202,4 +209,20 @@ execute if items entity @s container.* flow_banner_pattern run function skyblock
 
 execute if items entity @s player.cursor *[custom_data={"SEAcrafterbox":true}] as @n[tag=SEAcrafter,type=interaction,distance=..9] at @s positioned ~ ~-1 ~ run function skyblock:sea/shop_reader_box
 execute as @n[tag=SEAcrafter,type=interaction,distance=..9] at @s positioned ~ ~-1 ~ run function skyblock:sea/shop_reader_box
+
+execute positioned 90188 14 87 if entity @s[distance=0..5] run advancement grant @s only skyblock:sea/doc/w1
+execute positioned 90209 13 114 if entity @s[distance=0..4] run advancement grant @s only skyblock:sea/doc/w2
+execute positioned 90181 27 97 if entity @s[distance=0..4] run advancement grant @s only skyblock:sea/doc/w3
+execute positioned 90171 21 102 if entity @s[distance=0..4] run advancement grant @s only skyblock:sea/doc/w4
+execute positioned 90153 12 150 if entity @s[distance=0..5] run advancement grant @s only skyblock:sea/doc/w5
+execute positioned 90181 19 117 if entity @s[distance=0..3.5] run advancement grant @s only skyblock:sea/doc/w6
+execute positioned 90206 44 135 if entity @s[distance=0..4] run advancement grant @s only skyblock:sea/doc/w7
+execute positioned 90164 44 134 if entity @s[distance=0..3.5] run advancement grant @s only skyblock:sea/doc/w8
+execute positioned 90171 35 95 if entity @s[distance=0..5] run advancement grant @s only skyblock:sea/doc/w9
+execute positioned 90151 36 116 if entity @s[distance=0..5] run advancement grant @s only skyblock:sea/doc/w10
+execute positioned 90225 46 80 if entity @s[distance=0..5] run advancement grant @s only skyblock:sea/doc/w11
+execute positioned 90165 38 79 if entity @s[distance=0..5] run advancement grant @s only skyblock:sea/doc/w12
+execute positioned 90251 44 126 if entity @s[distance=0..5] run advancement grant @s only skyblock:sea/doc/w13
+execute positioned 90255 44 119 if entity @s[distance=0..5] run advancement grant @s only skyblock:sea/doc/w14
+execute positioned 90235 57 85 if entity @s[distance=0..5] run advancement grant @s only skyblock:sea/doc/w15
 

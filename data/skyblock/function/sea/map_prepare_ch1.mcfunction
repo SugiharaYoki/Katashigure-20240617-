@@ -62,6 +62,8 @@ scoreboard objectives add sea_speedrun_ch4 dummy
 scoreboard objectives add sea_speedrun_ch5 dummy
 scoreboard objectives add sea_speedrun_ch6 dummy
 scoreboard objectives add sea_speedrun_ch7 dummy
+scoreboard objectives add sea_count_played dummy
+scoreboard objectives add sea_count_dead dummy
 scoreboard objectives add sea_progress dummy
 scoreboard players set @n[tag=sc] sea_chapter 1
 scoreboard players set sc sea_speedrun_ch1 0
@@ -71,6 +73,8 @@ scoreboard players set sc sea_speedrun_ch4 0
 scoreboard players set sc sea_speedrun_ch5 0
 scoreboard players set sc sea_speedrun_ch6 0
 scoreboard players set sc sea_speedrun_ch7 0
+scoreboard players set sc sea_count_played 0
+scoreboard players set sc sea_count_dead 0
 
 
 setblock -25 23 32 soul_lantern
@@ -388,8 +392,8 @@ summon minecraft:item_frame 90142 122 141 {Invisible:1b,Fixed:0b,Invulnerable:0b
 setblock 90088 123 128 barrel[facing=east]
 item replace block 90088 123 128 container.13 with gold_ingot 1
 
-setblock 90080 104 134 barrel[facing=south]
-setblock 90081 104 134 barrel[facing=south]
+#setblock 90080 104 134 barrel[facing=south]
+#setblock 90081 104 134 barrel[facing=south]
 
 #电梯2
 fill 90163 129 113 90163 127 114 iron_bars
@@ -498,3 +502,8 @@ setblock 90074 103 136 minecraft:air
 fill 90092 144 154 90092 137 154 air
 
 function skyblock:protector/entity_count_end {function:"slyblock:sea/map_prepare_ch1"}
+
+advancement grant @a[tag=SEAPT] only skyblock:sea/chapter1
+
+#红色小蘑菇
+setblock 90074 104 135 air

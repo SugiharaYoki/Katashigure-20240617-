@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "无名的随笔 - 细菌与圣水晶的关系？",
+            "color": "light_purple",
+            "bold": false,
+            "italic": false
+        },
+        "description": {
+            "text": "这些细菌能够从微观层面上控制受感染者身体内的现存细胞……？\n\n我无法理解这种现象，这就好像逼着我去承认这些细菌拥有智能。\n细菌的出现是从圣水晶从地下被带出来之后，这意味着什么？\n圣水晶带来了细菌？\n又或者说……圣水晶，守护着那地方，控制着那堆细菌？还是说……",
+            "color": "white"
+        },
+        "icon": {
+            "id": "minecraft:map"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "sea": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:sea/doc/documentary4b"
+}

@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "南冷冻室门口的笔记 - 德怀特",
+            "color": "light_purple",
+            "bold": false,
+            "italic": false
+        },
+        "description": {
+            "text": "他们已经连续开了六天的会议，看来已经无法回头了。\n这里根本不会有猪肉，我们从来就没有进过猪肉。\n但是没人敢忤逆瑞佛特主厨，他是我们之间唯一拿着弩的。\n南冷冻室天天传来噪音，伙计们的神智本就已经不太稳定。\n今天打开大门果真发现了变异的怪物。为了调查，我会把这些尸体带回去。",
+            "color": "white"
+        },
+        "icon": {
+            "id": "minecraft:map"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "sea": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:sea/doc/documentary2"
+}

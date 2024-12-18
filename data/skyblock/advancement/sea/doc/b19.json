@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "建材资源平台的笔记 - 史丹尼舵长",
+            "color": "light_purple",
+            "bold": false,
+            "italic": false
+        },
+        "description": {
+            "text": "本以为远离那群暴民我就能活下来……没想到还是被算计了呢。\n不愧是我的女儿，我终究甘拜下风。\n这座附属平台早已不是最佳避难场所。\n那群尸变体根本不是威胁的根源，从地底渗透上来的细菌才是。\n诺曼说的没错，我们所有人打从一开始就被感染了。\n受伤也只是加速了尸变的速度……\n这下，我算是受了致命伤吧。会先死去，还是会成为怪物？\n唉，我的菲尔娜……我这也能算作是赎罪吗？",
+            "color": "white"
+        },
+        "icon": {
+            "id": "minecraft:map"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "sea": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:sea/doc/documentary3"
+}

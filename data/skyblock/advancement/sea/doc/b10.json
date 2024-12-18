@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "维修仓库的笔记 - 麦迪逊",
+            "color": "light_purple",
+            "bold": false,
+            "italic": false
+        },
+        "description": {
+            "text": "你是谁？\n能找到这里来，你肯定已经做出炸弹了吧。\n我把这些地方用凝胶封了起来。\n看来你是有资格的人。燃料室有我给你准备的礼物。",
+            "color": "white"
+        },
+        "icon": {
+            "id": "minecraft:map"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "sea": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:sea/doc/documentary3"
+}

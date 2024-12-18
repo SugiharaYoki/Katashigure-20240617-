@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "医务中心的笔记 - 丹尼尔",
+            "color": "light_purple",
+            "bold": false,
+            "italic": false
+        },
+        "description": {
+            "text": "原本医务中心由于细菌感染的原因就已经人满为患了，再加上暴乱……\n这下子不论是医疗设施还是药品都已经严重不足了。\n我为了自己人藏了几瓶药剂，隔天就发现药全都被暴民偷了。\n他们根本不是要邪教徒跟他们讲道理，他们自己就不讲任何道理。\n相反，那群邪教徒才是积极配合我们治疗病患的一方。\n暴乱是从我们与外部失联，且通讯平台与主平台也失联后开始的。\n但那显然不可能是邪教徒的手笔。他们巴不得圣水晶信仰传播到外界。\n有一股神秘的力量吸收了电磁波。暴民们知道这一点，却装作不知道。",
+            "color": "white"
+        },
+        "icon": {
+            "id": "minecraft:map"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "sea": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:sea/doc/documentary3"
+}

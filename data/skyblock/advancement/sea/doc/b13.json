@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "物资层休息室的笔记 - 麦迪逊",
+            "color": "light_purple",
+            "bold": false,
+            "italic": false
+        },
+        "description": {
+            "text": "那块魔法石板被我藏在了物资层西面的日常物资大仓库内。\n要想对付北冷冻库那堆怪物，没有静滞光棱的力量等同于送死。\n但是我要它已无用。我会从通风管道逃向水下研究设施。",
+            "color": "white"
+        },
+        "icon": {
+            "id": "minecraft:map"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "sea": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:sea/doc/b10"
+}

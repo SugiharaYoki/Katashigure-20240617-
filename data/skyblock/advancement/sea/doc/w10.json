@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "蕾娜发出的邮件 - 有关桑迪普的邀请",
+            "color": "light_purple",
+            "bold": false,
+            "italic": false
+        },
+        "description": {
+            "text": "邮件：发至 米兰达\n\n你能让桑迪普不要再用工作邮箱邀请我共进那个天杀的晚餐了吗？\n这邮箱系统甚至不允许我将同部门同事的邮箱免打扰，确定不要找阿诺尔德聊聊这种非人性化设置？\n我实在是懒得跟桑迪普说上半句话，可以的话帮我找点理由，下次一起唱卡拉OK。\n\n此致 蕾娜",
+            "color": "white"
+        },
+        "icon": {
+            "id": "minecraft:map"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "sea": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:sea/doc/documentary4b"
+}

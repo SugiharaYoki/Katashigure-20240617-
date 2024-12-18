@@ -217,4 +217,20 @@ execute store result score @s rng2 run random value 1..6
 execute as @s[scores={rng2=1..1}] run tag @s remove sea_t_knockback4
 tag @s remove sea_t_knockback5
 
-execute unless entity @a[tag=SEAPT] run function skyblock:sea/endgame_regen
+execute unless entity @a[tag=SEAPT] unless entity @a[x=90074,y=92,z=139,distance=0..50,gamemode=!spectator] run function skyblock:sea/endgame_regen
+
+execute if entity @s[advancements={skyblock:sea/doc/w1=true}] run function skyblock:sea/p/document_macro {doc:w2}
+execute if entity @s[advancements={skyblock:sea/doc/w2=true}] run function skyblock:sea/p/document_macro {doc:w2}
+execute if entity @s[advancements={skyblock:sea/doc/w3=true}] run function skyblock:sea/p/document_macro {doc:w3}
+execute if entity @s[advancements={skyblock:sea/doc/w4=true}] run function skyblock:sea/p/document_macro {doc:w4}
+execute if entity @s[advancements={skyblock:sea/doc/w5=true}] run function skyblock:sea/p/document_macro {doc:w5}
+execute if entity @s[advancements={skyblock:sea/doc/w6=true}] run function skyblock:sea/p/document_macro {doc:w6}
+execute if entity @s[advancements={skyblock:sea/doc/w7=true}] run function skyblock:sea/p/document_macro {doc:w7}
+execute if entity @s[advancements={skyblock:sea/doc/w8=true}] run function skyblock:sea/p/document_macro {doc:w8}
+execute if entity @s[advancements={skyblock:sea/doc/w9=true}] run function skyblock:sea/p/document_macro {doc:w9}
+execute if entity @s[advancements={skyblock:sea/doc/w10=true}] run function skyblock:sea/p/document_macro {doc:w10}
+execute if entity @s[advancements={skyblock:sea/doc/w11=true}] run function skyblock:sea/p/document_macro {doc:w11}
+execute if entity @s[advancements={skyblock:sea/doc/w12=true}] run function skyblock:sea/p/document_macro {doc:w12}
+execute if entity @s[advancements={skyblock:sea/doc/w13=true}] run function skyblock:sea/p/document_macro {doc:w13}
+execute if entity @s[advancements={skyblock:sea/doc/w14=true}] run function skyblock:sea/p/document_macro {doc:w14}
+execute if entity @s[advancements={skyblock:sea/doc/w15=true}] run function skyblock:sea/p/document_macro {doc:w15}

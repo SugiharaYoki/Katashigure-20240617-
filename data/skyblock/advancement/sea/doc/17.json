@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "南冷冻室内部的笔记 - 潘",
+            "color": "light_purple",
+            "bold": false,
+            "italic": false
+        },
+        "description": {
+            "text": "那个婊子养的，居然把德怀特的遗骨这样随意丢进冷冻库？！",
+            "color": "white"
+        },
+        "icon": {
+            "id": "minecraft:map"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "sea": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:sea/doc/documentary2"
+}

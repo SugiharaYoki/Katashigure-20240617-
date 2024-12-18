@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "宿舍楼二楼的笔记 - 马绍尔",
+            "color": "light_purple",
+            "bold": false,
+            "italic": false
+        },
+        "description": {
+            "text": "以前他们都说我是阴谋论，那现在又怎么讲？\n我早就说了，谁没事会在钻井平台上建钢处理车间。\n还有仓库楼，存比石油还多的乱七八糟的东西？\n咱们平台水下那个设施到底是研究什么的？\n细菌是不是从那里头出来的，不然还能是哪？",
+            "color": "white"
+        },
+        "icon": {
+            "id": "minecraft:map"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "sea": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:sea/doc/documentary3"
+}

@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "无名的报告 - 圣水晶的资料",
+            "color": "light_purple",
+            "bold": false,
+            "italic": false
+        },
+        "description": {
+            "text": "圣水晶在被带离地底峡谷后便失去了原本的彩色光辉。\n现在它似乎会吸收一切波频过低或过高的电磁波。\n\n可以断定的是它不能吸收紫外线，这也是为何它呈现出深紫色。\n糟糕的是只要这水晶仍存在于忒尔克西，我们就没法从主平台发出去任何信息。\n而且这水晶的影响范围仍在不断成长……现在可能已经波及到通讯平台了。",
+            "color": "white"
+        },
+        "icon": {
+            "id": "minecraft:map"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "sea": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:sea/doc/documentary4"
+}

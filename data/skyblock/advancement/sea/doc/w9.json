@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "忒尔克西水下研究机构的介绍册",
+            "color": "light_purple",
+            "bold": false,
+            "italic": false
+        },
+        "description": {
+            "text": "欢迎来到忒尔克西水下研究中心！\n我们是太平洋最核心的世界级实验动物学研究机构。\n\n本研究所从事实验动植物学科研与生物化学兵器研究。\n您可在此处参观我们的实验动物和基因改造研究。\n\n在参观时，为了您与其他研究人员的生命安全，请严格遵循相关的安全条例与管控准则。",
+            "color": "white"
+        },
+        "icon": {
+            "id": "minecraft:map"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "sea": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:sea/doc/documentary4b"
+}

@@ -1,9 +1,12 @@
+execute store result storage sea:doc eid int 1.0 run scoreboard players get @s SEAPT_member_eternal
 clear @s
 effect clear @s
 tag @s[gamemode=!spectator] add SEAPT
 stopsound @s
 give @s globe_banner_pattern[custom_name='{"text":"调查记录 6月29日 17:42","italic":true,"color":"dark_purple","italic":false}',lore=['{"text":"记录者为忒尔克西钻井平台调查小组成员，也是我本人。","color":"white","italic":false}','{"text":"钻井平台距离失联已经超过36小时，我们在黄昏之时赶到了平台的西南驳口。","color":"white","italic":false}','{"text":"整座海上设施此时一片死寂，至少上百名的工作人员皆数不见踪影。","color":"white","italic":false}']]
 give @s[tag=seaPerm000] nether_star[custom_name='{"text":"神秘的星光宝石","italic":true,"color":"gold","italic":false}',lore=['{"text":"说实话吧，我并不知道这东西是怎么跑到我口袋里来的。","color":"white","italic":false}','{"text":"在我准备下船的时候，碰巧从衣服里摸出了它。","color":"white","italic":false}','{"text":"这上面闪烁的光泽，似乎在尝试向我述说某种既视感强烈的，并不存在的过去。","color":"white","italic":false}']]
+
+scoreboard players set @s sea_i_emerald 0
 
 give @s spyglass[lore=['{"text":"我随身携带的望远镜。","color":"white","italic":false}','{"text":"在前途未知的时刻，紧握住它可以让我不再迷惘。","color":"white","italic":false}','{"text":"手持时：显示任务目标 & 跳过已阅读的剧情对话","color":"green","italic":false}']]
 give @s compass
@@ -126,4 +129,28 @@ execute unless entity @a[scores={SEAPT_member=9..}] unless entity @s[scores={SEA
 
 execute unless entity @s[scores={SEAPT_member_eternal=1..}] run scoreboard players add SEAPT_member_eternal SEAPT_member_eternal 1
 execute unless entity @s[scores={SEAPT_member_eternal=1..}] run scoreboard players operation @s SEAPT_member_eternal = SEAPT_member_eternal SEAPT_member_eternal
+
+#成就
+advancement grant @s only skyblock:thelxiepeia
+advancement grant @s only skyblock:sea/doc/documentary1
+advancement grant @s only skyblock:sea/doc/1
+scoreboard players add @s sea_count_played 1
+function skyblock:sea/map_prepare_ch1_player_macro_doc with storage sea:doc
+
+
+advancement grant @s[scores={sea_progress=1..}] only skyblock:sea/chapter1
+advancement grant @s[scores={sea_progress=1..}] only skyblock:sea/doc/documentary0
+advancement grant @s[scores={sea_progress=1..}] only skyblock:sea/doc/documentary1
+advancement grant @s[scores={sea_progress=3..}] only skyblock:sea/chapter2
+advancement grant @s[scores={sea_progress=3..}] only skyblock:sea/doc/documentary2
+advancement grant @s[scores={sea_progress=6..}] only skyblock:sea/chapter3
+advancement grant @s[scores={sea_progress=6..}] only skyblock:sea/doc/documentary3
+advancement grant @s[scores={sea_progress=7..}] only skyblock:sea/chapter3b
+advancement grant @s[scores={sea_progress=9..}] only skyblock:sea/chapter4
+advancement grant @s[scores={sea_progress=9..}] only skyblock:sea/doc/documentary4
+advancement grant @s[scores={sea_progress=10..}] only skyblock:sea/chapter4b
+advancement grant @s[scores={sea_progress=10..}] only skyblock:sea/doc/documentary4b
+
+
+
 

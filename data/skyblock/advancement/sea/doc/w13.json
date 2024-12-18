@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "无名的报告 - 有关鱼类的变异",
+            "color": "light_purple",
+            "bold": false,
+            "italic": false
+        },
+        "description": {
+            "text": "鱼类已经连续好几天躁动不安。我们有猜测原因，答案似乎相当明显。这一切都是在圣水晶从地下峡谷被开采上来后才发生的。\n\n好在这些小鱼就算狂躁了也做不了什么。我觉得更需要担心的是昆虫与节肢动物研究部门。他们那里似乎情况有些难以控制。\n\n补充：变异会作用在基因层面。一切都发生得太快了。",
+            "color": "white"
+        },
+        "icon": {
+            "id": "minecraft:map"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "sea": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:sea/doc/documentary4b"
+}

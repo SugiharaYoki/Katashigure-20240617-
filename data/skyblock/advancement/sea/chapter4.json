@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "水下研究设施 · 冷凝系统",
+            "color": "blue",
+            "bold": true,
+            "italic": false
+        },
+        "description": {
+            "text": "坠入此地的我从未猜到，这条所谓的“捷径”，\n正是这整座钻井平台最为危险的黑渊。",
+            "color": "white"
+        },
+        "icon": {
+            "id": "minecraft:waxed_copper_block"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "sea": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:sea/chapter3b"
+}
