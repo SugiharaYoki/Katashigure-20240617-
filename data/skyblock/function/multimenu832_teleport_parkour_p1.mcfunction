@@ -21,6 +21,9 @@ tellraw @s[scores={parkour_stage=19..}] [{"text":"   锃鉴金丘 19","bold":fal
 tellraw @s[scores={parkour_stage=20..}] [{"text":"    辉彩荒脉 20","bold":false,"color":"gold","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 832020"}}]
 tellraw @s[scores={parkour_stage=21..}] [{"text":"    辉彩荒脉 21","bold":false,"color":"gold","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 832021"}}]
 tellraw @s[scores={parkour_stage=22..}] [{"text":"    辉彩荒脉 22","bold":false,"color":"gold","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 832022"}}]
+tellraw @s[scores={parkour_stage=23..}] [{"text":"     嵯峨竹道 23","bold":false,"color":"gold","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 832023"}}]
+tellraw @s[scores={parkour_stage=24..}] [{"text":"     嵯峨竹道 24","bold":false,"color":"gold","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 832024"}}]
+tellraw @s[scores={parkour_stage=25..}] [{"text":"     嵯峨竹道 25","bold":false,"color":"gold","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 832025"}}]
 #tellraw @s[scores={MazeLS=??..}] {"text":"","bold":false}
 #tellraw @s[scores={MazeLS=??..}] {"text":"  [下一页]","bold":false,"color":"green","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 811"}}
 tellraw @s {"text":"","bold":false}
