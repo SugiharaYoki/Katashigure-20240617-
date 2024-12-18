@@ -19,6 +19,7 @@ scoreboard objectives add AZR_chainKill_damagetaken minecraft.custom:minecraft.d
 scoreboard objectives add AZR_chainKill_count dummy
 scoreboard objectives add AZR_chainKill_chargeup dummy
 scoreboard objectives add AZR_chainKillUpg_pts dummy
+scoreboard objectives add AZR_chainKillUpg_pts_add dummy
 scoreboard objectives add AZR_chainKillUpg_chargespeed dummy
 scoreboard objectives add AZR_chainKillUpg_chargeboost dummy
 scoreboard objectives add AZR_chainKillUpg_attackcount dummy
