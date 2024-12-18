@@ -402,6 +402,7 @@ execute if score stageSeconds Azr_system matches 370 run playsound ambient.crims
 execute if score stageSeconds Azr_system matches 370 run playsound ambient.crimson_forest.additions ambient @a[tag=azrPlayer] -78000 100 0 1000 1.0
 execute if score stageSeconds Azr_system matches 370 run advancement grant @a[tag=azrPlayer] only skyblock:azr_stage8
 execute if score stageSeconds Azr_system matches 370 run scoreboard players set stage Azr_system 21
+scoreboard players set @a[scores={AZR_chainKillUpg_pts=..4}] AZR_chainKillUpg_pts 4
 
 execute if score stageSeconds Azr_system matches 370 run summon parrot -79900 43 34 {PersistenceRequired:1b,Invulnerable:1b,Tags:["AzrielDecMob","AzrielFriendly"],DeathLootTable:"skyblock:azriel_creeper_tier2",Health:47.0f,CustomName:'"小鸢"',Variant:2,attributes:[{id:"generic.max_health",base:50.0d},{id:"generic.flying_speed",base:0.0d},{id:"generic.movement_speed",base:0.0d}]}
 

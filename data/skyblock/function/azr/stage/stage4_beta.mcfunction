@@ -392,6 +392,7 @@ execute if score stageSeconds Azr_system matches 251 run title @a[tag=azrPlayer]
 execute if score stageSeconds Azr_system matches 251 run clone -79934 38 18 -79934 38 18 -79931 38 42 replace move
 execute if score stageSeconds Azr_system matches 251 run particle minecraft:end_rod -79931 39 42 0.6 0.6 0.6 0.0 13
 execute if score stageSeconds Azr_system matches 251 run particle minecraft:end_rod -79934 39 18 0.6 0.6 0.6 0.0 13
+scoreboard players set @a[scores={AZR_chainKillUpg_pts=..2}] AZR_chainKillUpg_pts 2
 
 execute if score stageSeconds Azr_system matches 251 run advancement grant @a[tag=azrPlayer] only skyblock:azr_stage4_alt
 execute if score stageSeconds Azr_system matches 251 positioned -79962 43 49 run function skyblock:azr/m/zombie_t2_miner

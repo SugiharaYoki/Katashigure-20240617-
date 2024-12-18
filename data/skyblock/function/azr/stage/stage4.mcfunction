@@ -330,6 +330,7 @@ execute if score stageSeconds Azr_system matches 293 run scoreboard players set 
 #execute if score stageSeconds Azr_system matches 293 run scoreboard players set @a[tag=azrPlayer,scores={Azr_PlyPtsH=..3}] Azr_PlyPtsH 4
 execute if score stageSeconds Azr_system matches 293 run title @a[tag=azrPlayer] actionbar {"text":"Stage Clear..?","color":"green"}
 execute if score stageSeconds Azr_system matches 293 run advancement grant @a[tag=azrPlayer] only skyblock:azr_stage4
+scoreboard players set @a[scores={AZR_chainKillUpg_pts=..2}] AZR_chainKillUpg_pts 2
 
 execute if score stageSeconds Azr_system matches 200.. run kill @e[x=-79900,y=130,z=0,distance=0..1000,type=item,nbt={Item:{id:"minecraft:quartz_block"}}]
 execute if score stageSeconds Azr_system matches 200.. run kill @e[x=-79900,y=130,z=0,distance=0..1000,type=item,nbt={Item:{id:"minecraft:quartz_bricks"}}]

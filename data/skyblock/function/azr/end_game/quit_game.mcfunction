@@ -25,9 +25,6 @@ tellraw @s [{"text":"现在持有的影之石： ","color":"white"},{"score":{"n
 #更新战绩
 execute unless score @s SeGa_StandLastBH matches -2147483648..2147483647 run scoreboard players set @s Azr_system 0
 execute if score @s SeGa_StandLastBH < @s Azr_wave run scoreboard players operation @s SeGa_StandLastBH = @s Azr_wave
-scoreboard players operation @s AZR_chainKillUpg_pts_add = stage Azr_system
-scoreboard players operation @s AZR_chainKillUpg_pts_add /= 2 constant
-scoreboard players operation @s AZR_chainKillUpg_pts += @s AZR_chainKillUpg_pts_add
 #后续处理
 execute if entity @s[x=-79900,y=40,z=0,distance=0..800] run spawnpoint @s -79953 38 -14 -90
 execute if entity @s[x=-79900,y=40,z=0,distance=0..800] run tp @s -79953.0 38.5 -14.0 facing -79952.0 38.5 -14.0

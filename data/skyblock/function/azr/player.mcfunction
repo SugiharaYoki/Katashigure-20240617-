@@ -28,7 +28,7 @@ execute as @s[tag=removeSpark] if items entity @s weapon.mainhand *[custom_data=
 execute as @s[tag=removeSpark] if items entity @s weapon.mainhand *[custom_data={instant_spark:1b}] run item replace entity @s weapon.mainhand with air
 tag @s[tag=removeSpark] remove removeSpark
 
-#索命连击
+#索命连击w 
 execute at @s run function skyblock:azr/system_sub/chain_kill
 
 #DEBUG-错误信息
