@@ -17,8 +17,8 @@ execute if score sea_ch2_close_storage sea_4temp2 matches 405 run tellraw @a[tag
 execute if score sea_ch2_close_storage sea_4temp2 matches 414 run tellraw @a[tag=SEAPT] {"text": "播报：系统警告，东区保险丝熔断，请检查东区电路箱。","color": "red"}
 execute if score sea_ch2_close_storage sea_4temp2 matches 422 run tellraw @a[tag=SEAPT] [{"selector":"@p[tag=SEAPT,scores={SEAPT_member=1}]","color":"white"},{"text":"：靠……我可不是电工。","color":"white"}]
 execute if score sea_ch2_close_storage sea_4temp2 matches 447 run tellraw @a[tag=SEAPT] [{"selector":"@p[tag=SEAPT,scores={SEAPT_member=1}]","color":"white"},{"text":"：不过至少冷冻库本身还是运作的，不用去费心思修电箱。","color":"white"}]
-execute if score sea_ch2_close_storage sea_4temp2 matches 468 run tellraw @a[tag=SEAPT] [{"selector":"@p[tag=SEAPT,scores={SEAPT_member=2}]","color":"white"},{"text":"：你说得轻巧，你带手电了吗？","color":"white"}]
-execute if score sea_ch2_close_storage sea_4temp2 matches 488 run tellraw @a[tag=SEAPT] [{"selector":"@p[tag=SEAPT,scores={SEAPT_member=3}]","color":"white"},{"text":"：带个屁手电噢，我现在只想要把步枪。","color":"white"}]
+execute if score sea_ch2_close_storage sea_4temp2 matches 459 run tellraw @a[tag=SEAPT] [{"selector":"@p[tag=SEAPT,scores={SEAPT_member=2}]","color":"white"},{"text":"：你说得轻巧，你带手电了吗？","color":"white"}]
+execute if score sea_ch2_close_storage sea_4temp2 matches 504 run tellraw @a[tag=SEAPT] [{"selector":"@p[tag=SEAPT,scores={SEAPT_member=3}]","color":"white"},{"text":"：带个屁手电噢，我现在只想要把步枪。","color":"white"}]
 execute if score sea_ch2_close_storage sea_4temp2 matches 419 run setblock 90128 132 129 minecraft:tinted_glass
 execute if score sea_ch2_close_storage sea_4temp2 matches 424 run setblock 90121 132 129 minecraft:tinted_glass
 execute if score sea_ch2_close_storage sea_4temp2 matches 427 run setblock 90124 132 129 minecraft:tinted_glass
