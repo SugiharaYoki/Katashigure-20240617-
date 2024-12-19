@@ -51,18 +51,20 @@ execute as @s[scores={rng5=215}] at @n[tag=SEAedwina] if entity @n[tag=sc,scores
 execute as @s[scores={rng5=240}] if entity @n[tag=sc,scores={sea_player=1}] as @p[tag=SEAPT,scores={SEAPT_member=1}] run tellraw @a[distance=0..50] [{"selector":"@s","color":"white"},{"text":"：那我还真的谢谢你啊。","color":"white"}]
 execute as @s[scores={rng5=240}] if entity @n[tag=sc,scores={sea_player=2..}] as @p[tag=SEAPT,scores={SEAPT_member=1}] run tellraw @a[distance=0..50] [{"selector":"@s","color":"white"},{"text":"：那我们还真的谢谢你啊。","color":"white"}]
 
-execute positioned 90163 75 88 if entity @a[tag=SEAPT,tag=!SEAPF,distance=0..5.5] run setblock 90159 80 90 minecraft:waxed_copper_bulb[lit=true]
-execute positioned 90163 75 88 if entity @a[tag=SEAPT,tag=!SEAPF,distance=0..5.5] run setblock 90159 80 87 minecraft:waxed_copper_bulb[lit=true]
-execute positioned 90163 75 88 if entity @a[tag=SEAPT,tag=!SEAPF,distance=0..5.5] positioned 90159 80 90 run playsound block.copper_bulb.turn_on block @a ~ ~ ~ 1 1
-execute positioned 90163 75 88 if entity @a[tag=SEAPT,tag=!SEAPF,distance=0..5.5] positioned 90159 80 87 run playsound block.copper_bulb.turn_on block @a ~ ~ ~ 1 1
-
-execute positioned 90158 78 89 if entity @a[tag=SEAPT,tag=!SEAPF,distance=0..5.5] run scoreboard players set @s[scores={rng6=..199}] rng6 200
+execute positioned 90164 76 88 if entity @a[tag=SEAPT,tag=!SEAPF,distance=0..5.5] run scoreboard players set @s[scores={rng6=..199}] rng6 200
 scoreboard players add @s[scores={rng6=200..299}] rng6 1
-execute if score @s rng6 matches 201 as @n[tag=SEAyuehan] at @s run tp @s 90164 76 88 facing entity @p[tag=SEAPT]
-execute if score @s rng6 matches 201 as @n[tag=SEAedwina] at @s run tp @s 90163 76 89 facing entity @p[tag=SEAPT]
 
+execute if score @s rng6 matches 201 run setblock 90159 80 90 minecraft:waxed_copper_bulb[lit=true]
+execute if score @s rng6 matches 201 run setblock 90159 80 87 minecraft:waxed_copper_bulb[lit=true]
+execute if score @s rng6 matches 201 positioned 90159 80 90 run playsound block.copper_bulb.turn_on block @a ~ ~ ~ 1 1
+execute if score @s rng6 matches 201 positioned 90159 80 87 run playsound block.copper_bulb.turn_on block @a ~ ~ ~ 1 1
 
+execute if score @s rng6 matches 208 as @n[tag=SEAedwina] at @s run tp @s 90163 76 89 facing entity @p[tag=SEAPT]
+execute if score @s rng6 matches 210 as @n[tag=SEAyuehan] at @s run tp @s 90164 76 88 facing entity @p[tag=SEAPT]
 
-
+execute if score @s rng6 matches 221 run setblock 90153 84 90 minecraft:waxed_copper_bulb[lit=true]
+execute if score @s rng6 matches 221 run setblock 90153 84 87 minecraft:waxed_copper_bulb[lit=true]
+execute if score @s rng6 matches 221 positioned 90153 84 90 run playsound block.copper_bulb.turn_on block @a ~ ~ ~ 1 
+execute if score @s rng6 matches 221 positioned 90153 84 87 run playsound block.copper_bulb.turn_on block @a ~ ~ ~ 1 
 
 

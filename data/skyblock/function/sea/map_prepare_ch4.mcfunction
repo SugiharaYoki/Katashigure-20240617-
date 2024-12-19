@@ -484,5 +484,7 @@ kill @e[tag=SEAyuehan,type=villager]
 #第四章尾声
 setblock 90159 80 90 minecraft:waxed_copper_bulb[lit=false]
 setblock 90159 80 87 minecraft:waxed_copper_bulb[lit=false]
+setblock 90153 84 90 minecraft:waxed_copper_bulb[lit=false]
+setblock 90153 84 87 minecraft:waxed_copper_bulb[lit=false]
 
 
