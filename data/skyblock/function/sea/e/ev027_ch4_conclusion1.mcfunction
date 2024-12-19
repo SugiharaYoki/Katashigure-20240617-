@@ -1,4 +1,5 @@
 scoreboard players add @s rng5 1
+execute as @s[scores={rng5=1}] run scoreboard players set @s rng7 0
 
 execute as @s[scores={rng5=1}] at @n[tag=SEAyuehan] run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
 execute as @s[scores={rng5=1}] at @n[tag=SEAyuehan] run tellraw @a[distance=0..250] {"text":"越涵：“你们可真有本事，我刚来你们就打成这样。”","color":"green"}
@@ -19,7 +20,19 @@ execute if score @s rng6 matches 12..22 as @n[tag=SEAyuehan] at @s run tp @s ~-1
 execute if score @s rng6 matches 11 as @n[tag=SEAedwina] at @s run tp @s 90179 57 80 facing 90163 57 81
 execute if score @s rng6 matches 12..22 as @n[tag=SEAedwina] at @s run tp @s ~-1 ~ ~ facing ~-2 ~ ~
 
-
+#面包投食
+execute as @s[scores={rng7=..5}] at @n[tag=SEAedwina] if entity @e[type=item,distance=0..3] if entity @e[type=item,distance=0..3,nbt={Item:{id:"minecraft:bread"}}] run scoreboard players add @s rng7 1
+execute as @s[scores={rng7=3}] at @n[tag=SEAedwina] run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 1.3
+execute as @s[scores={rng7=3}] at @n[tag=SEAedwina] run tellraw @a[distance=0..250] {"text":"艾德雯娜：“啊，谢谢。”","color":"green"}
+execute as @s[scores={rng7=3}] at @n[tag=SEAedwina] run kill @n[type=item,distance=0..3,nbt={Item:{id:"minecraft:bread"}}]
+execute as @s[scores={rng7=3}] as @n[tag=SEAedwina] run effect give @s instant_health 3 9 true
+execute as @s[scores={rng7=3}] run scoreboard players set @s rng7 6
+execute as @s[scores={rng7=6..80}] run scoreboard players add @s rng7 1
+execute as @s[scores={rng7=73}] at @n[tag=SEAedwina] run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 1.3
+execute as @s[scores={rng7=73}] at @n[tag=SEAedwina] run tellraw @a[distance=0..250] {"text":"艾德雯娜：“拿好这些，我用不到了。”","color":"green"}
+execute as @s[scores={rng7=73}] run give @a[tag=SEAPT] iron_ingot 1
+execute as @s[scores={rng7=73}] run give @a[tag=SEAPT] flint 1
+execute as @s[scores={rng7=73}] run give @a[tag=SEAPT] coal 1
 
 execute as @s[scores={rng5=73}] at @n[tag=SEAyuehan] run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
 execute as @s[scores={rng5=73}] at @n[tag=SEAyuehan] run tellraw @a[distance=0..250] {"text":"越涵：“所以，你打算接下来一步怎么走？”","color":"green"}
