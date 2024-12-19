@@ -50,6 +50,8 @@ setblock 90178 45 124 minecraft:potted_azalea_bush
 
 summon minecraft:interaction 90164 14.3 98 {CustomName:'[{"text":"器械式治疗仪"}]',Tags:["SEAaidbox"]}
 summon minecraft:interaction 90234 47.3 95 {CustomName:'[{"text":"器械式治疗仪"}]',Tags:["SEAaidbox"]}
+summon minecraft:interaction 90146 85.3 96 {CustomName:'[{"text":"器械式治疗仪"}]',Tags:["SEAaidbox"]}
+
 
 summon minecraft:interaction 90193 45.3 126 {CustomName:'[{"text":"绿宝石提取机"}]',Tags:["SEAemeraldextractor"]}
 
