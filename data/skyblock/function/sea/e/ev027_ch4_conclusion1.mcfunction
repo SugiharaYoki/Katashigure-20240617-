@@ -35,4 +35,5 @@ execute as @s[scores={rng5=137}] at @n[tag=SEAedwina] if entity @n[tag=sc,scores
 execute as @s[scores={rng5=137}] at @n[tag=SEAedwina] if entity @n[tag=sc,scores={sea_player=2..}] run tellraw @a[distance=0..250] {"text":"艾德雯娜：“那肯定并非如此。这里的事情决不能让外头知道。我想这也是为什么他们会派你的维修工朋友们过来，而不是特种部队。”","color":"green"}
 
 execute as @s[scores={rng5=155}] as @p[tag=SEAPT,scores={SEAPT_member=1}] run tellraw @a[distance=0..50] [{"selector":"@s","color":"white"},{"text":"：我叫","color":"white"},{"selector":"@s","color":"white"},{"text":"，不是‘维修工’。","color":"white"}]
+execute as @s[scores={rng5=163}] as @p[tag=SEAPT,scores={SEAPT_member=2}] run tellraw @a[distance=0..50] [{"selector":"@s","color":"white"},{"text":"：嗯，这里是","color":"white"},{"selector":"@s","color":"white"},{"text":"！现在被你打得浑身疼。","color":"white"}]
 
