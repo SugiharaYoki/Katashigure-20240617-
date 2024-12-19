@@ -11,7 +11,7 @@ execute as @s[scores={rng5=43}] at @n[tag=SEAedwina] run tellraw @a[distance=0..
 
 execute unless entity @s[scores={rng6=-99..}] run scoreboard players set @s rng6 0
 execute positioned 90164 56 81 if entity @a[tag=SEAPT,tag=!SEAPF,distance=0..5] run scoreboard players set @s[scores={rng6=..9}] rng6 10
-scoreboard players add @s[scores={rng6=10..}] rng6 1
+scoreboard players add @s[scores={rng6=10..60}] rng6 1
 
 execute if score @s rng6 matches 11 as @n[tag=SEAyuehan] at @s run tp @s 90177 57 81 facing 90163 57 81
 execute if score @s rng6 matches 12..22 as @n[tag=SEAyuehan] at @s run tp @s ~-1 ~ ~ facing ~-2 ~ ~
@@ -36,4 +36,33 @@ execute as @s[scores={rng5=137}] at @n[tag=SEAedwina] if entity @n[tag=sc,scores
 
 execute as @s[scores={rng5=155}] as @p[tag=SEAPT,scores={SEAPT_member=1}] run tellraw @a[distance=0..50] [{"selector":"@s","color":"white"},{"text":"：我叫","color":"white"},{"selector":"@s","color":"white"},{"text":"，不是‘维修工’。","color":"white"}]
 execute as @s[scores={rng5=163}] as @p[tag=SEAPT,scores={SEAPT_member=2}] run tellraw @a[distance=0..50] [{"selector":"@s","color":"white"},{"text":"：嗯，这里是","color":"white"},{"selector":"@s","color":"white"},{"text":"！现在被你打得浑身疼。","color":"white"}]
+execute as @s[scores={rng5=180}] as @p[tag=SEAPT,scores={SEAPT_member=3}] run tellraw @a[distance=0..50] [{"selector":"@s","color":"white"},{"text":"：懒得自我介绍，让我歇一会儿。","color":"white"}]
+
+execute positioned 90160 66 83 if entity @a[tag=SEAPT,tag=!SEAPF,distance=0..5] run scoreboard players set @s[scores={rng6=..99}] rng6 100
+scoreboard players add @s[scores={rng6=100..199}] rng6 1
+
+execute if score @s rng6 matches 101 as @n[tag=SEAyuehan] at @s run tp @s 90164 67 84 facing entity @p[tag=SEAPT]
+execute if score @s rng6 matches 101 as @n[tag=SEAedwina] at @s run tp @s 90162 67 85 facing entity @p[tag=SEAPT]
+
+execute as @s[scores={rng5=215}] at @n[tag=SEAedwina] run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 1.3
+execute as @s[scores={rng5=215}] at @n[tag=SEAedwina] if entity @n[tag=sc,scores={sea_player=1}] run tellraw @a[distance=0..250] {"text":"艾德雯娜：“对不起，我下手一直很重，你能活着已经很了不起了。”","color":"green"}
+execute as @s[scores={rng5=215}] at @n[tag=SEAedwina] if entity @n[tag=sc,scores={sea_player=2..}] run tellraw @a[distance=0..250] {"text":"艾德雯娜：“对不起，我下手一直很重，你们能活着已经很了不起了。”","color":"green"}
+
+execute as @s[scores={rng5=240}] if entity @n[tag=sc,scores={sea_player=1}] as @p[tag=SEAPT,scores={SEAPT_member=1}] run tellraw @a[distance=0..50] [{"selector":"@s","color":"white"},{"text":"：那我还真的谢谢你啊。","color":"white"}]
+execute as @s[scores={rng5=240}] if entity @n[tag=sc,scores={sea_player=2..}] as @p[tag=SEAPT,scores={SEAPT_member=1}] run tellraw @a[distance=0..50] [{"selector":"@s","color":"white"},{"text":"：那我们还真的谢谢你啊。","color":"white"}]
+
+execute positioned 90163 75 88 if entity @a[tag=SEAPT,tag=!SEAPF,distance=0..5.5] run setblock 90159 80 90 minecraft:waxed_copper_bulb[lit=true]
+execute positioned 90163 75 88 if entity @a[tag=SEAPT,tag=!SEAPF,distance=0..5.5] run setblock 90159 80 87 minecraft:waxed_copper_bulb[lit=true]
+execute positioned 90163 75 88 if entity @a[tag=SEAPT,tag=!SEAPF,distance=0..5.5] positioned 90159 80 90 run playsound block.copper_bulb.turn_on block @a ~ ~ ~ 1 1
+execute positioned 90163 75 88 if entity @a[tag=SEAPT,tag=!SEAPF,distance=0..5.5] positioned 90159 80 87 run playsound block.copper_bulb.turn_on block @a ~ ~ ~ 1 1
+
+execute positioned 90158 78 89 if entity @a[tag=SEAPT,tag=!SEAPF,distance=0..5.5] run scoreboard players set @s[scores={rng6=..199}] rng6 200
+scoreboard players add @s[scores={rng6=200..299}] rng6 1
+execute if score @s rng6 matches 201 as @n[tag=SEAyuehan] at @s run tp @s 90164 76 88 facing entity @p[tag=SEAPT]
+execute if score @s rng6 matches 201 as @n[tag=SEAedwina] at @s run tp @s 90163 76 89 facing entity @p[tag=SEAPT]
+
+
+
+
+
 

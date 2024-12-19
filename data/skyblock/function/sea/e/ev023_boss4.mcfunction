@@ -112,7 +112,6 @@ execute as @s[scores={rng1=105..}] if entity @n[tag=SEAboss4_end,x=90185.00,y=57
 
 
 
-
  
 
 

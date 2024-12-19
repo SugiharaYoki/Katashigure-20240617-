@@ -476,3 +476,13 @@ tp @e[tag=SEAyuehan,type=villager] 90000 -500 0
 kill @e[tag=SEAyuehan,type=villager]
 
     function skyblock:protector/entity_count_end {function:"skyblock:sea/map_prepare_ch4.mcfunction"}
+
+
+
+
+
+#第四章尾声
+setblock 90159 80 90 minecraft:waxed_copper_bulb[lit=false]
+setblock 90159 80 87 minecraft:waxed_copper_bulb[lit=false]
+
+
