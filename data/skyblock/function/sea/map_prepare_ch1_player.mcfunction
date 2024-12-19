@@ -117,15 +117,15 @@ execute unless score @s sea_speedrun_ch7 matches 1.. run scoreboard players set 
 
 
 
-execute unless entity @a[scores={SEAPT_member=1..}] unless entity @s[scores={SEAPT_member=1..}] run scoreboard players set @s SEAPT_member 1
-execute unless entity @a[scores={SEAPT_member=2..}] unless entity @s[scores={SEAPT_member=1..}] run scoreboard players set @s SEAPT_member 2
-execute unless entity @a[scores={SEAPT_member=3..}] unless entity @s[scores={SEAPT_member=1..}] run scoreboard players set @s SEAPT_member 3
-execute unless entity @a[scores={SEAPT_member=4..}] unless entity @s[scores={SEAPT_member=1..}] run scoreboard players set @s SEAPT_member 4
-execute unless entity @a[scores={SEAPT_member=5..}] unless entity @s[scores={SEAPT_member=1..}] run scoreboard players set @s SEAPT_member 5
-execute unless entity @a[scores={SEAPT_member=6..}] unless entity @s[scores={SEAPT_member=1..}] run scoreboard players set @s SEAPT_member 6
-execute unless entity @a[scores={SEAPT_member=7..}] unless entity @s[scores={SEAPT_member=1..}] run scoreboard players set @s SEAPT_member 7
-execute unless entity @a[scores={SEAPT_member=8..}] unless entity @s[scores={SEAPT_member=1..}] run scoreboard players set @s SEAPT_member 8
-execute unless entity @a[scores={SEAPT_member=9..}] unless entity @s[scores={SEAPT_member=1..}] run scoreboard players set @s SEAPT_member 9
+execute unless entity @a[scores={SEAPT_member=1}] unless entity @s[scores={SEAPT_member=1..}] run scoreboard players set @s SEAPT_member 1
+execute unless entity @a[scores={SEAPT_member=2}] unless entity @s[scores={SEAPT_member=1..}] run scoreboard players set @s SEAPT_member 2
+execute unless entity @a[scores={SEAPT_member=3}] unless entity @s[scores={SEAPT_member=1..}] run scoreboard players set @s SEAPT_member 3
+execute unless entity @a[scores={SEAPT_member=4}] unless entity @s[scores={SEAPT_member=1..}] run scoreboard players set @s SEAPT_member 4
+execute unless entity @a[scores={SEAPT_member=5}] unless entity @s[scores={SEAPT_member=1..}] run scoreboard players set @s SEAPT_member 5
+execute unless entity @a[scores={SEAPT_member=6}] unless entity @s[scores={SEAPT_member=1..}] run scoreboard players set @s SEAPT_member 6
+execute unless entity @a[scores={SEAPT_member=7}] unless entity @s[scores={SEAPT_member=1..}] run scoreboard players set @s SEAPT_member 7
+execute unless entity @a[scores={SEAPT_member=8}] unless entity @s[scores={SEAPT_member=1..}] run scoreboard players set @s SEAPT_member 8
+execute unless entity @a[scores={SEAPT_member=9}] unless entity @s[scores={SEAPT_member=1..}] run scoreboard players set @s SEAPT_member 9
 
 execute unless entity @s[scores={SEAPT_member_eternal=1..}] run scoreboard players add SEAPT_member_eternal SEAPT_member_eternal 1
 execute unless entity @s[scores={SEAPT_member_eternal=1..}] run scoreboard players operation @s SEAPT_member_eternal = SEAPT_member_eternal SEAPT_member_eternal
