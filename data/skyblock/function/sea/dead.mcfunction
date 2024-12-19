@@ -107,7 +107,14 @@ scoreboard players operation @s sea_remiel_shadow = @s sea_i_emerald
 #scoreboard players set @s sea_i_trim_skeleton 0
 
 attribute @s generic.gravity base set 0.08
- 
+
+execute if entity @a[scores={SEAPT_member=1}] if entity @a[scores={SEAPT_member=3}] unless entity @a[scores={SEAPT_member=2}] run scoreboard players set @a[scores={SEAPT_member=3}] SEAPT_member 2
+execute if entity @a[scores={SEAPT_member=2}] if entity @a[scores={SEAPT_member=4}] unless entity @a[scores={SEAPT_member=3}] run scoreboard players set @a[scores={SEAPT_member=4}] SEAPT_member 3
+execute if entity @a[scores={SEAPT_member=3}] if entity @a[scores={SEAPT_member=5}] unless entity @a[scores={SEAPT_member=4}] run scoreboard players set @a[scores={SEAPT_member=5}] SEAPT_member 4
+execute if entity @a[scores={SEAPT_member=4}] if entity @a[scores={SEAPT_member=6}] unless entity @a[scores={SEAPT_member=5}] run scoreboard players set @a[scores={SEAPT_member=6}] SEAPT_member 5
+execute if entity @a[scores={SEAPT_member=5}] if entity @a[scores={SEAPT_member=7}] unless entity @a[scores={SEAPT_member=6}] run scoreboard players set @a[scores={SEAPT_member=7}] SEAPT_member 6
+execute if entity @a[scores={SEAPT_member=6}] if entity @a[scores={SEAPT_member=8}] unless entity @a[scores={SEAPT_member=7}] run scoreboard players set @a[scores={SEAPT_member=8}] SEAPT_member 7
+
 scoreboard players set @s SEAPT_member 0
 
 clear @s
