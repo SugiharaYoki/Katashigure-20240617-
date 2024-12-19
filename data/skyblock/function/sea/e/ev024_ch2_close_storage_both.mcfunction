@@ -21,6 +21,9 @@ execute as @n[tag=sc,scores={sea_4temp2=816}] run time set 14000t
 execute as @n[tag=sc,scores={sea_4temp2=819}] run time set 14250t
 execute as @n[tag=sc,scores={sea_4temp2=821}] run time set 14500t
 
+execute as @n[tag=sc,scores={sea_4temp2=843}] run tellraw @a[tag=SEAPT] [{"selector":"@p[tag=SEAPT,scores={SEAPT_member=2}]","color":"white"},{"text":"：某人又闯大祸咯","color":"white"}]
+execute as @n[tag=sc,scores={sea_4temp2=866}] if entity @n[tag=sc,scores={sea_player=2..}] run tellraw @a[tag=SEAPT] [{"selector":"@p[tag=SEAPT,scores={SEAPT_member=1}]","color":"white"},{"text":"：我去……你闭嘴吧。","color":"white"}]
+
 execute as @n[tag=sc,scores={sea_4temp2=861}] run fill 90132 131 106 90132 129 107 iron_block
 execute as @n[tag=sc,scores={sea_4temp2=861}] run setblock 90101 132 110 minecraft:tinted_glass
 execute as @n[tag=sc,scores={sea_4temp2=861}] run setblock 90106 132 110 minecraft:tinted_glass
