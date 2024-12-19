@@ -68,3 +68,16 @@ execute if score @s rng6 matches 221 positioned 90153 84 90 run playsound block.
 execute if score @s rng6 matches 221 positioned 90153 84 87 run playsound block.copper_bulb.turn_on block @a ~ ~ ~ 1 1
 
 
+execute positioned 90146 83 89 if entity @a[tag=SEAPT,tag=!SEAPF,distance=0..5.5] run scoreboard players set @s[scores={rng6=..299}] rng6 300
+scoreboard players add @s[scores={rng6=300..399}] rng6 1
+execute if score @s rng6 matches 302 as @n[tag=SEAedwina] at @s run tp @s 90148 84 90 facing entity @p[tag=SEAPT]
+execute if score @s rng6 matches 302 as @n[tag=SEAyuehan] at @s run tp @s 90143 84 89 facing entity @p[tag=SEAPT]
+
+execute as @s[scores={rng5=245..,rng6=320}] at @n[tag=SEAyuehan] run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
+execute as @s[scores={rng5=245..,rng6=320}] at @n[tag=SEAyuehan] run tellraw @a[distance=0..250] {"text":"越涵：“这边一道铁门是通往主平台的快速通道。可惜，那里的电梯已经坏了。”","color":"green"}
+
+execute as @s[scores={rng5=245..,rng6=360}] at @n[tag=SEAyuehan] run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
+execute as @s[scores={rng5=245..,rng6=360}] at @n[tag=SEAyuehan] run tellraw @a[distance=0..250] {"text":"越涵：“那个……那女人没有吓死手吧？她也太过分了。”","color":"green"}
+
+execute as @s[scores={rng5=245..,rng6=379}] at @n[tag=SEAedwina] run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 1.3
+execute as @s[scores={rng5=245..,rng6=379}] at @n[tag=SEAedwina] run tellraw @a[distance=0..250] {"text":"艾德雯娜：“沈先生，我听得见。”","color":"green"}
