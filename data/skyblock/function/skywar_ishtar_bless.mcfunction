@@ -1,3 +1,9 @@
+execute unless entity @s[scores={ishtar_bless_1=-999..}] run tellraw @s {"text":"您还没有选择过礼装！系统已为您分配初始推荐礼装。\n高速堡垒核心可以快速建造小型围栏。\n刺客尊荣放在背包里就可以照亮附近的隐身玩家。\n诞生虚桥使得你丢出的鸡蛋会生成玻璃天桥。\n漆幕虚垒允许你制造烟幕。","color":"aqua"}
+execute unless entity @s[scores={ishtar_bless_1=-999..}] run scoreboard players set @s ishtar_bless_1 9
+execute unless entity @s[scores={ishtar_bless_2=-999..}] run scoreboard players set @s ishtar_bless_2 16
+execute unless entity @s[scores={ishtar_bless_3=-999..}] run scoreboard players set @s ishtar_bless_3 18
+execute unless entity @s[scores={ishtar_bless_4=-999..}] run scoreboard players set @s ishtar_bless_4 25
+
 execute if entity @s[scores={ishtar_bless_1=1}] run give @s end_crystal
 execute if entity @s[scores={ishtar_bless_2=1}] run give @s end_crystal
 execute if entity @s[scores={ishtar_bless_3=1}] run give @s end_crystal
