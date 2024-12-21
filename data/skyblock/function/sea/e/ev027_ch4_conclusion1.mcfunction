@@ -143,8 +143,16 @@ execute if score @s rng6 matches 1011 positioned 90148 83 79 run particle large_
 
 execute if score @s rng6 matches 1013 positioned 90147 83 74 run playsound entity.generic.explode block @a ~ ~ ~ 2 0.9
 execute if score @s rng6 matches 1013 positioned 90147 83 74 run particle explosion_emitter ~ ~ ~ 2 2 2 0 3
-execute if score @s rng6 matches 1013 positioned 90147 83 74 run particle large_smoke ~ ~ ~ 0.5 0.5 0.5 0.02 8
+execute if score @s rng6 matches 1013 positioned 90147 83 74 run particle large_smoke ~ ~ ~ 0.5 0.5 0.5 0.02 88
+execute if score @s rng6 matches 1015 positioned 90149 83 75 run playsound entity.generic.explode block @a ~ ~ ~ 2 0.9
+execute if score @s rng6 matches 1015 positioned 90149 83 75 run particle explosion_emitter ~ ~ ~ 2 2 2 0 3
+execute if score @s rng6 matches 1015 positioned 90149 83 75 run particle large_smoke ~ ~ ~ 0.5 0.5 0.5 0.02 88
 
+execute if score @s rng6 matches 1019 positioned 90148 83 72 run playsound entity.generic.explode block @a ~ ~ ~ 2 0.9
+execute if score @s rng6 matches 1019 positioned 90148 83 72 run particle explosion_emitter ~ ~ ~ 2 2 2 0 3
+execute if score @s rng6 matches 1019 positioned 90148 83 72 run particle large_smoke ~ ~ ~ 0.5 0.5 0.5 0.02 8
+execute if score @s rng6 matches 1019 positioned 90148 83 72 run fill 90147 83 73 90146 83 76 air destroy
+execute if score @s rng6 matches 1019 positioned 90148 83 72 as @n[tag=SEAyuehan] at @s run data modify entity @s NoAI set value 0b
 
 execute if score @s rng6 matches 1003 at @n[tag=SEAedwina] run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 1.3
 execute if score @s rng6 matches 1003 at @n[tag=SEAedwina] run tellraw @a[distance=0..250] {"text":"艾德雯娜：“那么快？！不好，快点离开这里！！”","color":"green"}
@@ -167,3 +175,9 @@ execute if score @s rng6 matches 1010 positioned 90148 84 47 run function skyblo
 execute if score @s rng6 matches 1012..1021 as @n[tag=SEAedwina] at @s anchored eyes if entity @n[tag=SEAmob,tag=SEAknight,distance=0..2] run item replace entity @s weapon.mainhand with iron_axe
 execute if score @s rng6 matches 1012..1021 as @n[tag=SEAedwina] at @s anchored eyes if entity @n[tag=SEAmob,tag=SEAknight,distance=0..2] run particle sweep_attack ^ ^ ^0.5 0.1 0.1 0.1 0 2
 execute if score @s rng6 matches 1012..1021 as @n[tag=SEAedwina] at @s anchored eyes as @n[tag=SEAmob,tag=SEAknight,distance=0..2] run damage @s 5 generic
+
+execute if score @s rng6 matches 1025 as @n[tag=SEAedwina] at @s run tp @s ~ ~ ~ facing 90147 84 73
+
+
+execute if score @s rng6 matches 1027 at @n[tag=SEAedwina] run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 1.3
+execute if score @s rng6 matches 1027 at @n[tag=SEAedwina] run tellraw @a[distance=0..250] {"text":"艾德雯娜：“越涵？！”","color":"green"}

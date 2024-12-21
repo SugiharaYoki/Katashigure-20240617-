@@ -489,4 +489,4 @@ setblock 90159 80 87 minecraft:waxed_copper_bulb[lit=false]
 setblock 90153 84 90 minecraft:waxed_copper_bulb[lit=false]
 setblock 90153 84 87 minecraft:waxed_copper_bulb[lit=false]
 
-
+fill 90147 83 73 90146 83 76 waxed_copper_block
