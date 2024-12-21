@@ -188,10 +188,10 @@ execute if score @s rng6 matches 1047 at @n[tag=SEAedwina] run playsound entity.
 execute if score @s rng6 matches 1047 at @n[tag=SEAedwina] run tellraw @a[distance=0..250] {"text":"艾德雯娜：“越涵？！”","color":"green"}
 
 execute if score @s rng6 matches 1040..1070 as @n[tag=SEAedwina] at @s run tp @s ~ ~ ~ facing entity @n[tag=SEAmob]
-execute if score @s rng6 matches 1052 as @n[tag=SEAedwina] at @s facing entity @n[tag=SEAmob,distance=0..5] eyes run tp @s ^ ^ ^0.7
-execute if score @s rng6 matches 1055 as @n[tag=SEAedwina] at @s facing entity @n[tag=SEAmob,distance=0..5] eyes run tp @s ^ ^ ^0.7
-execute if score @s rng6 matches 1058 as @n[tag=SEAedwina] at @s facing entity @n[tag=SEAmob,distance=0..5] eyes run tp @s ^ ^ ^0.7
-execute if score @s rng6 matches 1064 as @n[tag=SEAedwina] at @s facing entity @n[tag=SEAmob,distance=0..5] eyes run tp @s ^ ^ ^0.7
+execute if score @s rng6 matches 1052 as @n[tag=SEAedwina] at @s facing entity @n[tag=SEAmob,distance=0.01..15] eyes run tp @s ^ ^ ^1.7
+execute if score @s rng6 matches 1055 as @n[tag=SEAedwina] at @s facing entity @n[tag=SEAmob,distance=0.01..15] eyes run tp @s ^ ^ ^1.5
+execute if score @s rng6 matches 1058 as @n[tag=SEAedwina] at @s facing entity @n[tag=SEAmob,distance=0.01..15] eyes run tp @s ^ ^ ^1.3
+execute if score @s rng6 matches 1064 as @n[tag=SEAedwina] at @s facing entity @n[tag=SEAmob,distance=0.01..15] eyes run tp @s ^ ^ ^1.3
 
 execute if score @s rng6 matches 1040..1067 as @n[tag=SEAedwina] at @s anchored eyes if entity @n[tag=SEAmob,distance=0.01..2] run item replace entity @s weapon.mainhand with iron_axe
 execute if score @s rng6 matches 1040..1067 as @n[tag=SEAedwina] at @s anchored eyes if entity @n[tag=SEAmob,distance=0.01..2] run particle sweep_attack ^ ^ ^0.5 0.1 0.1 0.1 0 2
@@ -247,5 +247,11 @@ execute if score @s rng6 matches 1222 if entity @p[tag=SEAPT,scores={SEAPT_membe
 execute if score @s rng6 matches 1238 at @n[tag=SEAedwina] run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 1.3
 execute if score @s rng6 matches 1238 unless entity @p[tag=SEAPT,scores={SEAPT_member=2}] at @n[tag=SEAedwina] run tellraw @a[distance=0..250] {"text":"艾德雯娜：“希望你能理解，我不想再有人牺牲了。回头见。”","color":"green"}
 execute if score @s rng6 matches 1238 if entity @p[tag=SEAPT,scores={SEAPT_member=2}] at @n[tag=SEAedwina] run tellraw @a[distance=0..250] {"text":"艾德雯娜：“不了，你们有更重要的任务。……是我做不了的事情。”","color":"green"}
+
+#方块破碎
+execute if score @s rng6 matches 1023 run setblock 90146 88 62 air destroy
+execute if score @s rng6 matches 1028 run fill 90148 85 55 90148 86 55 air destroy
+execute if score @s rng6 matches 1031 run fill 90146 88 59 90145 88 60 air destroy
+execute if score @s rng6 matches 1017 run fill 90148 83 70 90147 83 69 air destroy
 
 

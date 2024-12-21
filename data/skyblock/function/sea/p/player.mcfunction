@@ -6,6 +6,8 @@ clear @s[gamemode=!creative] deepslate_tiles
 clear @s[gamemode=!creative] cracked_deepslate_tiles
 clear @s[gamemode=!creative] deepslate_tile_slab
 clear @s[gamemode=!creative] waxed_copper_block
+clear @s[gamemode=!creative] waxed_copper_bulb
+clear @s[gamemode=!creative] waxed_cut_copper_stairs
 clear @s[gamemode=!creative] slime_block
 clear @s[gamemode=!creative] string
 execute if items entity @s container.* blaze_powder at @s run function skyblock:sea/p/bomb

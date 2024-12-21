@@ -490,3 +490,18 @@ setblock 90153 84 90 minecraft:waxed_copper_bulb[lit=false]
 setblock 90153 84 87 minecraft:waxed_copper_bulb[lit=false]
 
 fill 90147 83 73 90146 83 76 waxed_copper_block
+setblock 90146 88 62 minecraft:waxed_copper_bulb[lit=true]
+fill 90148 85 55 90148 86 55 minecraft:waxed_cut_copper_stairs[facing=east]
+
+fill 90146 88 59 90145 88 60 minecraft:waxed_copper_block
+
+fill 90148 83 70 90147 83 69 minecraft:waxed_copper_block
+
+
+
+
+
+
+
+
+
