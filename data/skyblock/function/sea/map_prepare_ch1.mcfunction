@@ -76,6 +76,9 @@ scoreboard players set sc sea_speedrun_ch7 0
 scoreboard players set sc sea_count_played 0
 scoreboard players set sc sea_count_dead 0
 
+scoreboard players set sea_ch1_wasting_time rng1 0
+scoreboard players set sea_ch1_wasting_time rng2 0
+scoreboard players set sea_ch1_wasting_time rng3 0
 
 setblock -25 23 32 soul_lantern
 fill 90065 104 139 90065 104 141 air

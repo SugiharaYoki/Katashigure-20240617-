@@ -1,5 +1,9 @@
     function skyblock:protector/entity_count_start
 
+execute unless score sea_ch1_wasting_time rng1 matches ..390 run function skyblock:sea/e/ev028_ch1_wasting_time_1
+
+execute if entity @a[tag=e_i_07,tag=SEAPT] unless score sea_ch1_wasting_time rng2 matches ..390 if items block 90095 122 128 container.26 amethyst_shard run function skyblock:sea/e/ev028_ch1_wasting_time_1
+
 execute as @a[tag=SEAPT,x=90081,y=106,z=146,distance=0..1.3,tag=!e_i_01] at @s run tellraw @s {"text": "接待窗口内并没有工作人员。我观察了里面的痕迹，似乎工作人员离开得很匆忙。","color": "gray"}
 execute as @a[tag=SEAPT,x=90081,y=106,z=146,distance=0..1.3,tag=!e_i_01] at @s run tag @s add e_i_01
 
@@ -75,7 +79,7 @@ execute if block 90089 128 124 minecraft:waxed_copper_door[open=true] run setblo
 
 
 execute as @n[tag=sc] unless entity @s[scores={sea_4temp2=-9999..}] run scoreboard players set @s sea_4temp2 0
-execute unless block 90062 103 135 grindstone unless block 90095 122 128 chest{Items:[{Slot:26b,id:"minecraft:amethyst_shard",count:1}]} run scoreboard players add @n[tag=sc,scores={sea_4temp2=..0}] sea_4temp2 1
+execute unless block 90062 103 135 grindstone unless items block 90095 122 128 container.26 amethyst_shard run scoreboard players add @n[tag=sc,scores={sea_4temp2=..0}] sea_4temp2 1
 execute as @n[tag=sc,scores={sea_4temp2=1..169}] run scoreboard players add @s sea_4temp2 1
 execute as @n[tag=sc,scores={sea_4temp2=4}] run tellraw @a[tag=SEAPT] {"text":"为了最大程度地保证沉浸体验，请开启音乐游玩（推荐值：50%）。","color":"dark_gray"}
 execute as @n[tag=sc,scores={sea_4temp2=8}] run playsound minecraft:item.goat_horn.sound.6 master @a[tag=SEAPT] 90100 0 100 10000 0.8

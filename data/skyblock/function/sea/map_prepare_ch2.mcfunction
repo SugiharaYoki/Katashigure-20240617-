@@ -22,6 +22,9 @@ tag @n[tag=sc] add SeGa_sea_ch2
 scoreboard players set SEAmusic rng1 0
 scoreboard players set sea_ch2_close_storage sea_4temp2 0
 scoreboard players set sea_ch2_angel_bless_trial sea_4temp2 0
+scoreboard players set sea_ch2_close_storage rng7 0
+scoreboard players set sea_ch2_close_storage rng8 0
+scoreboard players set sea_ch2_close_storage rng9 0
 
 fill 90080 128 113 90078 128 113 redstone_block
 fill 90080 128 113 90078 128 113 air
