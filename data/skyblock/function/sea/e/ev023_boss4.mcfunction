@@ -100,9 +100,9 @@ execute as @s[scores={rng1=100}] at @n[tag=SEAedwina] if entity @n[tag=sc,scores
 execute as @s[scores={rng1=100}] at @n[tag=SEAedwina] if entity @n[tag=sc,scores={sea_player=1}] if items entity @a[tag=SEAPT] container.* bread run tellraw @a[distance=0..250] {"text": "艾德雯娜：“待会……分我一块吧，不过先过一会儿。来吧，我们去跟越涵解释一下。”","color": "green"}
 execute as @s[scores={rng1=100}] at @n[tag=SEAedwina] if entity @n[tag=sc,scores={sea_player=2..}] if items entity @a[tag=SEAPT] container.* bread run tellraw @a[distance=0..250] {"text": "艾德雯娜：“也是，你没有义务给我。都来吧，我们去跟越涵解释一下。”","color": "green"}
 
-execute as @s[scores={rng1=104}] as @n[tag=SEAboss4_end] at @s run tp @s ~ ~ ~ facing 90185.00 57.14 80.87
-execute as @s[scores={rng1=105..}] as @n[tag=SEAboss4_end,x=90185.00,y=57.14,z=80.87,distance=1.5..] at @s run tp @s ^ ^ ^0.5 facing 90185.00 57.14 80.87
-execute as @s[scores={rng1=105..}] if entity @n[tag=SEAboss4_end,x=90185.00,y=57.14,z=80.87,distance=..1.5] run tag @s add SEAch4_conclusion
+execute as @s[scores={rng1=104}] as @n[tag=SEAboss4_end] at @s rotated ~ 0 run tp @s ~ ~ ~ facing 90185.00 57.14 80.87
+execute as @s[scores={rng1=105..}] as @n[tag=SEAboss4_end,x=90185.00,y=57.14,z=80.87,distance=1.5..] at @s rotated ~ 0 run tp @s ^ ^ ^0.5 facing 90185.00 57.14 80.87
+execute as @s[scores={rng1=120}] run tag @s add SEAch4_conclusion
 
 
 
