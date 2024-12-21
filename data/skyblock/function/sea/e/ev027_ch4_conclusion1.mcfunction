@@ -183,3 +183,10 @@ execute if score @s rng6 matches 1025 as @n[tag=SEAedwina] at @s run tp @s ~ ~ ~
 
 execute if score @s rng6 matches 1027 at @n[tag=SEAedwina] run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 1.3
 execute if score @s rng6 matches 1027 at @n[tag=SEAedwina] run tellraw @a[distance=0..250] {"text":"艾德雯娜：“越涵？！”","color":"green"}
+
+
+
+
+
+
+
