@@ -120,9 +120,11 @@ execute if score @s rng6 matches 1013 positioned 90172 78 66 run particle explos
 execute if score @s rng6 matches 1013 positioned 90172 78 66 run particle bubble ~ ~ ~ 6 4 6 0 100
 
 execute if score @s rng6 matches 1015..1016 positioned 90172 78 66 run playsound entity.generic.explode block @a ~ ~ ~ 10 0.7
-execute if score @s rng6 matches 1015..1016 positioned 90172 78 66 run playsound entity.firework_rocket.large_blast_far block @a ~ ~ ~ 10 0.8
+execute if score @s rng6 matches 1016..1017 positioned 90172 78 66 run playsound entity.firework_rocket.large_blast_far block @a ~ ~ ~ 10 0.8
 execute if score @s rng6 matches 1015..1016 positioned 90172 78 66 run particle explosion_emitter ~ ~ ~-10 4 2 4 0 15
 execute if score @s rng6 matches 1015..1016 positioned 90172 78 66 run particle bubble ~ ~ ~-10 6 4 6 0 100
+
+execute if score @s rng6 matches 1021 positioned 90172 78 66 run playsound entity.firework_rocket.large_blast_far block @a ~ ~ ~ 10 0.8
 
 execute if score @s rng6 matches 1019 positioned 90172 78 66 run playsound entity.generic.explode block @a ~ ~ ~ 10 0.7
 execute if score @s rng6 matches 1019 positioned 90172 78 66 run particle explosion_emitter ~ ~ ~ 4 2 4 0 5
