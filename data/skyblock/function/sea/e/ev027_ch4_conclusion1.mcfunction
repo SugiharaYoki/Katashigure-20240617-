@@ -185,7 +185,14 @@ execute if score @s rng6 matches 1027 at @n[tag=SEAedwina] run playsound entity.
 execute if score @s rng6 matches 1027 at @n[tag=SEAedwina] run tellraw @a[distance=0..250] {"text":"艾德雯娜：“越涵？！”","color":"green"}
 
 execute if score @s rng6 matches 1030..1040 as @n[tag=SEAedwina] at @s run tp @s ~ ~ ~ facing entity @n[tag=SEAmob]
+execute if score @s rng6 matches 1032 as @n[tag=SEAedwina] at @s facing entity @n[tag=SEAmob,distance=0..5] eyes run tp @s ^ ^ ^0.7
+execute if score @s rng6 matches 1035 as @n[tag=SEAedwina] at @s facing entity @n[tag=SEAmob,distance=0..5] eyes run tp @s ^ ^ ^0.7
+execute if score @s rng6 matches 1038 as @n[tag=SEAedwina] at @s facing entity @n[tag=SEAmob,distance=0..5] eyes run tp @s ^ ^ ^0.7
+execute if score @s rng6 matches 1044 as @n[tag=SEAedwina] at @s facing entity @n[tag=SEAmob,distance=0..5] eyes run tp @s ^ ^ ^0.7
 
+execute if score @s rng6 matches 1030..1047 as @n[tag=SEAedwina] at @s anchored eyes if entity @n[tag=SEAmob,distance=0..2] run item replace entity @s weapon.mainhand with iron_axe
+execute if score @s rng6 matches 1030..1047 as @n[tag=SEAedwina] at @s anchored eyes if entity @n[tag=SEAmob,distance=0..2] run particle sweep_attack ^ ^ ^0.5 0.1 0.1 0.1 0 2
+execute if score @s rng6 matches 1030..1047 as @n[tag=SEAedwina] at @s anchored eyes as @n[tag=SEAmob,distance=0..2] run damage @s 5 generic
 
 
 
