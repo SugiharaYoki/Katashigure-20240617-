@@ -249,6 +249,8 @@ execute if score @s rng6 matches 1238 at @n[tag=SEAedwina] run playsound entity.
 execute if score @s rng6 matches 1238 unless entity @p[tag=SEAPT,scores={SEAPT_member=2}] at @n[tag=SEAedwina] run tellraw @a[distance=0..250] {"text":"艾德雯娜：“希望你能理解，我不想再有人牺牲了。回头见。”","color":"green"}
 execute if score @s rng6 matches 1238 if entity @p[tag=SEAPT,scores={SEAPT_member=2}] at @n[tag=SEAedwina] run tellraw @a[distance=0..250] {"text":"艾德雯娜：“不了，你们有更重要的任务。……是我做不了的事情。”","color":"green"}
 
+#90146 84 74
+
 #方块破碎
 execute if score @s rng6 matches 1023 run setblock 90146 88 62 air destroy
 execute if score @s rng6 matches 1028 run fill 90148 85 55 90148 86 55 air destroy
