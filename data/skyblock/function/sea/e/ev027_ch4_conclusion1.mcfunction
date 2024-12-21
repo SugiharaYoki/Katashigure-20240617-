@@ -144,6 +144,6 @@ execute if score @s rng6 matches 1004..1009 positioned 90148 84 47 run particle 
 execute if score @s rng6 matches 1004..1009 positioned 90148 84 47 run particle sculk_soul ~ ~1 ~ 0.3 0.5 0.3 0.05 10
 execute if score @s rng6 matches 1010 positioned 90148 84 47 run function skyblock:sea/m/zombie_knight
 
-execute as @n[tag=SEAedwina] at @s anchored eyes if entity @n[tag=SEAmob,tag=SEAknight,distance=0..2] run item replace entity @s weapon.mainhand with iron_axe
-execute as @n[tag=SEAedwina] at @s anchored eyes if entity @n[tag=SEAmob,tag=SEAknight,distance=0..2] run particle sweep_attack ^ ^ ^0.5 0.1 0.1 0.1 0 2
-execute as @n[tag=SEAedwina] at @s anchored eyes as @n[tag=SEAmob,tag=SEAknight,distance=0..2] run damage @s 5 generic
+execute if score @s rng6 matches 1012..1019 as @n[tag=SEAedwina] at @s anchored eyes if entity @n[tag=SEAmob,tag=SEAknight,distance=0..2] run item replace entity @s weapon.mainhand with iron_axe
+execute if score @s rng6 matches 1012..1019 as @n[tag=SEAedwina] at @s anchored eyes if entity @n[tag=SEAmob,tag=SEAknight,distance=0..2] run particle sweep_attack ^ ^ ^0.5 0.1 0.1 0.1 0 2
+execute if score @s rng6 matches 1012..1019 as @n[tag=SEAedwina] at @s anchored eyes as @n[tag=SEAmob,tag=SEAknight,distance=0..2] run damage @s 5 generic
