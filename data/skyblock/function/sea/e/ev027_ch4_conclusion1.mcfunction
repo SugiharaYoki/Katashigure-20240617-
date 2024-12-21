@@ -196,6 +196,6 @@ execute if score @s rng6 matches 1030..1047 as @n[tag=SEAedwina] at @s anchored 
 
 
 
-scoreboard players add @s[scores={rng6=1000}] rng6 1
+scoreboard players add @s[scores={rng6=1000..}] rng6 1
 
 
