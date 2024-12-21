@@ -106,93 +106,93 @@ execute if score @s rng6 matches 1002..1003 positioned 90172 78 66 run playsound
 execute if score @s rng6 matches 1002..1003 positioned 90172 78 66 run particle explosion_emitter ~ ~ ~ 4 2 4 0 5
 execute if score @s rng6 matches 1002..1003 positioned 90172 78 66 run particle bubble ~ ~ ~ 6 4 6 0 100
 
-execute if score @s rng6 matches 1005 positioned 90172 78 66 run playsound entity.generic.explode block @a ~ ~ ~ 10 0.5
-execute if score @s rng6 matches 1005 positioned 90172 78 66 run particle explosion_emitter ~ ~ ~-5 4 2 4 0 5
-execute if score @s rng6 matches 1005 positioned 90172 78 66 run particle bubble ~ ~ ~ 6 4 6 0 100
+execute if score @s rng6 matches 1006 positioned 90172 78 66 run playsound entity.generic.explode block @a ~ ~ ~ 10 0.5
+execute if score @s rng6 matches 1006 positioned 90172 78 66 run particle explosion_emitter ~ ~ ~-5 4 2 4 0 5
+execute if score @s rng6 matches 1006 positioned 90172 78 66 run particle bubble ~ ~ ~ 6 4 6 0 100
 
-execute if score @s rng6 matches 1007..1008 positioned 90172 78 66 run playsound entity.generic.explode block @a ~ ~ ~ 10 0.7
-execute if score @s rng6 matches 1007..1008 positioned 90172 78 66 run playsound entity.firework_rocket.large_blast_far block @a ~ ~ ~ 10 0.8
-execute if score @s rng6 matches 1007..1008 positioned 90172 78 66 run particle explosion_emitter ~ ~ ~-10 4 2 4 0 15
-execute if score @s rng6 matches 1007..1008 positioned 90172 78 66 run particle bubble ~ ~ ~-10 6 4 6 0 100
+execute if score @s rng6 matches 1009..1010 positioned 90172 78 66 run playsound entity.generic.explode block @a ~ ~ ~ 10 0.7
+execute if score @s rng6 matches 1009..1010 positioned 90172 78 66 run playsound entity.firework_rocket.large_blast_far block @a ~ ~ ~ 10 0.8
+execute if score @s rng6 matches 1009..1010 positioned 90172 78 66 run particle explosion_emitter ~ ~ ~-10 4 2 4 0 15
+execute if score @s rng6 matches 1009..1010 positioned 90172 78 66 run particle bubble ~ ~ ~-10 6 4 6 0 100
 
-execute if score @s rng6 matches 1013 positioned 90172 78 66 run playsound entity.generic.explode block @a ~ ~ ~ 10 0.5
-execute if score @s rng6 matches 1013 positioned 90172 78 66 run particle explosion_emitter ~ ~ ~-5 4 2 4 0 5
-execute if score @s rng6 matches 1013 positioned 90172 78 66 run particle bubble ~ ~ ~ 6 4 6 0 100
+execute if score @s rng6 matches 1016 positioned 90172 78 66 run playsound entity.generic.explode block @a ~ ~ ~ 10 0.5
+execute if score @s rng6 matches 1016 positioned 90172 78 66 run particle explosion_emitter ~ ~ ~-5 4 2 4 0 5
+execute if score @s rng6 matches 1016 positioned 90172 78 66 run particle bubble ~ ~ ~ 6 4 6 0 100
 
-execute if score @s rng6 matches 1015..1016 positioned 90172 78 66 run playsound entity.generic.explode block @a ~ ~ ~ 10 0.7
-execute if score @s rng6 matches 1017..1018 positioned 90172 78 66 run playsound entity.firework_rocket.large_blast_far block @a ~ ~ ~ 10 0.8
-execute if score @s rng6 matches 1015..1016 positioned 90172 78 66 run particle explosion_emitter ~ ~ ~-10 4 2 4 0 15
-execute if score @s rng6 matches 1015..1016 positioned 90172 78 66 run particle bubble ~ ~ ~-10 6 4 6 0 100
+execute if score @s rng6 matches 1019..1020 positioned 90172 78 66 run playsound entity.generic.explode block @a ~ ~ ~ 10 0.7
+execute if score @s rng6 matches 1023..1024 positioned 90172 78 66 run playsound entity.firework_rocket.large_blast_far block @a ~ ~ ~ 10 0.8
+execute if score @s rng6 matches 1019..1020 positioned 90172 78 66 run particle explosion_emitter ~ ~ ~-10 4 2 4 0 15
+execute if score @s rng6 matches 1019..1020 positioned 90172 78 66 run particle bubble ~ ~ ~-10 6 4 6 0 100
 
-execute if score @s rng6 matches 1023 positioned 90172 78 66 run playsound entity.firework_rocket.large_blast_far block @a ~ ~ ~ 10 0.8
+execute if score @s rng6 matches 1027 positioned 90172 78 66 run playsound entity.firework_rocket.large_blast_far block @a ~ ~ ~ 10 0.8
 
-execute if score @s rng6 matches 1021 positioned 90172 78 66 run playsound entity.generic.explode block @a ~ ~ ~ 10 0.7
-execute if score @s rng6 matches 1021 positioned 90172 78 66 run particle explosion_emitter ~ ~ ~ 4 2 4 0 5
-execute if score @s rng6 matches 1021 positioned 90172 78 66 run particle bubble ~ ~ ~ 6 4 6 0 100
+execute if score @s rng6 matches 1032 positioned 90172 78 66 run playsound entity.generic.explode block @a ~ ~ ~ 10 0.7
+execute if score @s rng6 matches 1032 positioned 90172 78 66 run particle explosion_emitter ~ ~ ~ 4 2 4 0 5
+execute if score @s rng6 matches 1032 positioned 90172 78 66 run particle bubble ~ ~ ~ 6 4 6 0 100
 
 execute if score @s rng6 matches 1006 positioned 90148 84 55 run playsound entity.generic.explode block @a ~ ~ ~ 2 0.9
 execute if score @s rng6 matches 1006 positioned 90148 84 55 run particle explosion_emitter ~ ~ ~ 2 2 2 0 3
 execute if score @s rng6 matches 1006 positioned 90148 84 55 run particle large_smoke ~ ~ ~ 0.5 0.5 0.5 0.02 8
 
-execute if score @s rng6 matches 1009 positioned 90145 87 66 run playsound entity.generic.explode block @a ~ ~ ~ 2 0.9
-execute if score @s rng6 matches 1009 positioned 90145 87 66 run particle explosion_emitter ~ ~ ~ 2 2 2 0 3
-execute if score @s rng6 matches 1009 positioned 90145 87 66 run particle large_smoke ~ ~ ~ 0.5 0.5 0.5 0.02 8
-execute if score @s rng6 matches 1011 positioned 90148 83 79 run playsound entity.generic.explode block @a ~ ~ ~ 2 0.9
-execute if score @s rng6 matches 1011 positioned 90148 83 79 run particle explosion_emitter ~ ~ ~ 2 2 2 0 3
-execute if score @s rng6 matches 1011 positioned 90148 83 79 run particle large_smoke ~ ~ ~ 0.5 0.5 0.5 0.02 8
+execute if score @s rng6 matches 1010 positioned 90145 87 66 run playsound entity.generic.explode block @a ~ ~ ~ 2 0.9
+execute if score @s rng6 matches 1010 positioned 90145 87 66 run particle explosion_emitter ~ ~ ~ 2 2 2 0 3
+execute if score @s rng6 matches 1010 positioned 90145 87 66 run particle large_smoke ~ ~ ~ 0.5 0.5 0.5 0.02 8
+execute if score @s rng6 matches 1023 positioned 90148 83 79 run playsound entity.generic.explode block @a ~ ~ ~ 2 0.9
+execute if score @s rng6 matches 1023 positioned 90148 83 79 run particle explosion_emitter ~ ~ ~ 2 2 2 0 3
+execute if score @s rng6 matches 1023 positioned 90148 83 79 run particle large_smoke ~ ~ ~ 0.5 0.5 0.5 0.02 8
 
-execute if score @s rng6 matches 1013 positioned 90147 83 74 run playsound entity.generic.explode block @a ~ ~ ~ 2 0.9
-execute if score @s rng6 matches 1013 positioned 90147 83 74 run particle explosion_emitter ~ ~ ~ 2 2 2 0 3
-execute if score @s rng6 matches 1013 positioned 90147 83 74 run particle large_smoke ~ ~ ~ 0.5 0.5 0.5 0.02 88
-execute if score @s rng6 matches 1015 positioned 90149 83 75 run playsound entity.generic.explode block @a ~ ~ ~ 2 0.9
-execute if score @s rng6 matches 1015 positioned 90149 83 75 run particle explosion_emitter ~ ~ ~ 2 2 2 0 3
-execute if score @s rng6 matches 1015 positioned 90149 83 75 run particle large_smoke ~ ~ ~ 0.5 0.5 0.5 0.02 88
+execute if score @s rng6 matches 1027 positioned 90147 83 74 run playsound entity.generic.explode block @a ~ ~ ~ 2 0.9
+execute if score @s rng6 matches 1027 positioned 90147 83 74 run particle explosion_emitter ~ ~ ~ 2 2 2 0 3
+execute if score @s rng6 matches 1027 positioned 90147 83 74 run particle large_smoke ~ ~ ~ 0.5 0.5 0.5 0.02 88
+execute if score @s rng6 matches 1033 positioned 90149 83 75 run playsound entity.generic.explode block @a ~ ~ ~ 2 0.9
+execute if score @s rng6 matches 1033 positioned 90149 83 75 run particle explosion_emitter ~ ~ ~ 2 2 2 0 3
+execute if score @s rng6 matches 1033 positioned 90149 83 75 run particle large_smoke ~ ~ ~ 0.5 0.5 0.5 0.02 88
 
-execute if score @s rng6 matches 1019 positioned 90148 83 72 run playsound entity.generic.explode block @a ~ ~ ~ 2 0.9
-execute if score @s rng6 matches 1019 positioned 90148 83 72 run particle explosion_emitter ~ ~ ~ 2 2 2 0 3
-execute if score @s rng6 matches 1019 positioned 90148 83 72 run particle large_smoke ~ ~ ~ 0.5 0.5 0.5 0.02 8
-execute if score @s rng6 matches 1019 positioned 90148 83 72 run fill 90147 83 73 90146 83 76 air destroy
-execute if score @s rng6 matches 1019 positioned 90148 83 72 as @n[tag=SEAyuehan] at @s run data modify entity @s NoAI set value 0b
-execute if score @s rng6 matches 1026 positioned 90148 83 72 as @n[tag=SEAyuehan] at @s run tp @s ~ ~-500 ~
-execute if score @s rng6 matches 1026 positioned 90148 83 72 as @n[tag=SEAyuehan] at @s run kill @s
+execute if score @s rng6 matches 1036 positioned 90148 83 72 run playsound entity.generic.explode block @a ~ ~ ~ 2 0.9
+execute if score @s rng6 matches 1036 positioned 90148 83 72 run particle explosion_emitter ~ ~ ~ 2 2 2 0 3
+execute if score @s rng6 matches 1036 positioned 90148 83 72 run particle large_smoke ~ ~ ~ 0.5 0.5 0.5 0.02 8
+execute if score @s rng6 matches 1036 positioned 90148 83 72 run fill 90147 83 73 90146 83 76 air destroy
+execute if score @s rng6 matches 1036 positioned 90148 83 72 as @n[tag=SEAyuehan] at @s run data modify entity @s NoAI set value 0b
+execute if score @s rng6 matches 1040 positioned 90148 83 72 as @n[tag=SEAyuehan] at @s run tp @s ~ ~-500 ~
+execute if score @s rng6 matches 1040 positioned 90148 83 72 as @n[tag=SEAyuehan] at @s run kill @s
 
-execute if score @s rng6 matches 1003 at @n[tag=SEAedwina] run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 1.3
-execute if score @s rng6 matches 1003 at @n[tag=SEAedwina] run tellraw @a[distance=0..250] {"text":"艾德雯娜：“那么快？！不好，快点离开这里！！”","color":"green"}
+execute if score @s rng6 matches 1004 at @n[tag=SEAedwina] run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 1.3
+execute if score @s rng6 matches 1004 at @n[tag=SEAedwina] run tellraw @a[distance=0..250] {"text":"艾德雯娜：“那么快？！不好，快点离开这里！！”","color":"green"}
 
-execute if score @s rng6 matches 1004..1014 as @n[tag=SEAedwina] at @s run tp @s ~ ~ ~-1.3 facing ~ ~ ~-2
-execute if score @s rng6 matches 1005..1013 as @n[tag=SEAyuehan] at @s run tp @s ~ ~ ~-1.2 facing entity @n[tag=SEAedwina]
+execute if score @s rng6 matches 1005..1019 as @n[tag=SEAedwina] at @s run tp @s ~ ~ ~-1.3 facing ~ ~ ~-2
+execute if score @s rng6 matches 1006..1014 as @n[tag=SEAyuehan] at @s run tp @s ~ ~ ~-1.2 facing entity @n[tag=SEAedwina]
 
-execute if score @s rng6 matches 1011 at @n[tag=SEAyuehan] run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
-execute if score @s rng6 matches 1011 at @n[tag=SEAyuehan] run tellraw @a[distance=0..250] {"text":"越涵：“怎、怎么说？！那台生态装……”","color":"green"}
+execute if score @s rng6 matches 1013 at @n[tag=SEAyuehan] run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
+execute if score @s rng6 matches 1013 at @n[tag=SEAyuehan] run tellraw @a[distance=0..250] {"text":"越涵：“怎、怎么说？！那台生态装……”","color":"green"}
 
-execute if score @s rng6 matches 1014..1024 as @n[tag=SEAedwina] at @s run tp @s ~ ~ ~ facing entity @n[tag=SEAmob]
+execute if score @s rng6 matches 1014..1029 as @n[tag=SEAedwina] at @s run tp @s ~ ~ ~ facing entity @n[tag=SEAmob]
 
-execute if score @s rng6 matches 1004..1009 positioned 90145 84 47 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
-execute if score @s rng6 matches 1004..1009 positioned 90145 84 47 run particle sculk_soul ~ ~1 ~ 0.3 0.5 0.3 0.05 10
-execute if score @s rng6 matches 1010 positioned 90145 84 47 run function skyblock:sea/m/zombie_knight
-execute if score @s rng6 matches 1004..1009 positioned 90148 84 47 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
-execute if score @s rng6 matches 1004..1009 positioned 90148 84 47 run particle sculk_soul ~ ~1 ~ 0.3 0.5 0.3 0.05 10
-execute if score @s rng6 matches 1010 positioned 90148 84 47 run function skyblock:sea/m/zombie_knight
+execute if score @s rng6 matches 1006..1010 positioned 90145 84 47 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
+execute if score @s rng6 matches 1006..1010 positioned 90145 84 47 run particle sculk_soul ~ ~1 ~ 0.3 0.5 0.3 0.05 10
+execute if score @s rng6 matches 1011 positioned 90145 84 47 run function skyblock:sea/m/zombie_knight
+execute if score @s rng6 matches 1006..1010 positioned 90148 84 47 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
+execute if score @s rng6 matches 1006..1010 positioned 90148 84 47 run particle sculk_soul ~ ~1 ~ 0.3 0.5 0.3 0.05 10
+execute if score @s rng6 matches 1011 positioned 90148 84 47 run function skyblock:sea/m/zombie_knight
 
-execute if score @s rng6 matches 1012..1021 as @n[tag=SEAedwina] at @s anchored eyes if entity @n[tag=SEAmob,distance=0..2] run item replace entity @s weapon.mainhand with iron_axe
-execute if score @s rng6 matches 1012..1021 as @n[tag=SEAedwina] at @s anchored eyes if entity @n[tag=SEAmob,distance=0..2] run particle sweep_attack ^ ^ ^0.5 0.1 0.1 0.1 0 2
-execute if score @s rng6 matches 1012..1021 as @n[tag=SEAedwina] at @s anchored eyes as @n[tag=SEAmob,distance=0..2] run damage @s 5 generic
+execute if score @s rng6 matches 1012..1035 as @n[tag=SEAedwina] at @s anchored eyes if entity @n[tag=SEAmob,distance=0.01..2] run item replace entity @s weapon.mainhand with iron_axe
+execute if score @s rng6 matches 1012..1035 as @n[tag=SEAedwina] at @s anchored eyes if entity @n[tag=SEAmob,distance=0.01..2] run particle sweep_attack ^ ^ ^0.5 0.1 0.1 0.1 0 2
+execute if score @s rng6 matches 1012..1035 as @n[tag=SEAedwina] at @s anchored eyes as @n[tag=SEAmob,distance=0.01..2] run damage @s 5 generic
 
-execute if score @s rng6 matches 1025 as @n[tag=SEAedwina] at @s run tp @s ~ ~ ~ facing 90147 84 73
+execute if score @s rng6 matches 1044 as @n[tag=SEAedwina] at @s run tp @s ~ ~ ~ facing 90147 84 73
 
 
-execute if score @s rng6 matches 1027 at @n[tag=SEAedwina] run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 1.3
-execute if score @s rng6 matches 1027 at @n[tag=SEAedwina] run tellraw @a[distance=0..250] {"text":"艾德雯娜：“越涵？！”","color":"green"}
+execute if score @s rng6 matches 1047 at @n[tag=SEAedwina] run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 1.3
+execute if score @s rng6 matches 1047 at @n[tag=SEAedwina] run tellraw @a[distance=0..250] {"text":"艾德雯娜：“越涵？！”","color":"green"}
 
-execute if score @s rng6 matches 1030..1040 as @n[tag=SEAedwina] at @s run tp @s ~ ~ ~ facing entity @n[tag=SEAmob]
-execute if score @s rng6 matches 1032 as @n[tag=SEAedwina] at @s facing entity @n[tag=SEAmob,distance=0..5] eyes run tp @s ^ ^ ^0.7
-execute if score @s rng6 matches 1035 as @n[tag=SEAedwina] at @s facing entity @n[tag=SEAmob,distance=0..5] eyes run tp @s ^ ^ ^0.7
-execute if score @s rng6 matches 1038 as @n[tag=SEAedwina] at @s facing entity @n[tag=SEAmob,distance=0..5] eyes run tp @s ^ ^ ^0.7
-execute if score @s rng6 matches 1044 as @n[tag=SEAedwina] at @s facing entity @n[tag=SEAmob,distance=0..5] eyes run tp @s ^ ^ ^0.7
+execute if score @s rng6 matches 1040..1070 as @n[tag=SEAedwina] at @s run tp @s ~ ~ ~ facing entity @n[tag=SEAmob]
+execute if score @s rng6 matches 1052 as @n[tag=SEAedwina] at @s facing entity @n[tag=SEAmob,distance=0..5] eyes run tp @s ^ ^ ^0.7
+execute if score @s rng6 matches 1055 as @n[tag=SEAedwina] at @s facing entity @n[tag=SEAmob,distance=0..5] eyes run tp @s ^ ^ ^0.7
+execute if score @s rng6 matches 1058 as @n[tag=SEAedwina] at @s facing entity @n[tag=SEAmob,distance=0..5] eyes run tp @s ^ ^ ^0.7
+execute if score @s rng6 matches 1064 as @n[tag=SEAedwina] at @s facing entity @n[tag=SEAmob,distance=0..5] eyes run tp @s ^ ^ ^0.7
 
-execute if score @s rng6 matches 1030..1047 as @n[tag=SEAedwina] at @s anchored eyes if entity @n[tag=SEAmob,distance=0..2] run item replace entity @s weapon.mainhand with iron_axe
-execute if score @s rng6 matches 1030..1047 as @n[tag=SEAedwina] at @s anchored eyes if entity @n[tag=SEAmob,distance=0..2] run particle sweep_attack ^ ^ ^0.5 0.1 0.1 0.1 0 2
-execute if score @s rng6 matches 1030..1047 as @n[tag=SEAedwina] at @s anchored eyes as @n[tag=SEAmob,distance=0..2] run damage @s 5 generic
+execute if score @s rng6 matches 1040..1067 as @n[tag=SEAedwina] at @s anchored eyes if entity @n[tag=SEAmob,distance=0.01..2] run item replace entity @s weapon.mainhand with iron_axe
+execute if score @s rng6 matches 1040..1067 as @n[tag=SEAedwina] at @s anchored eyes if entity @n[tag=SEAmob,distance=0.01..2] run particle sweep_attack ^ ^ ^0.5 0.1 0.1 0.1 0 2
+execute if score @s rng6 matches 1040..1067 as @n[tag=SEAedwina] at @s anchored eyes as @n[tag=SEAmob,distance=0.01..2] run damage @s 5 generic
 
 
 
