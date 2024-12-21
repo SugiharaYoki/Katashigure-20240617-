@@ -115,6 +115,19 @@ execute if score @s rng6 matches 1007..1008 positioned 90172 78 66 run playsound
 execute if score @s rng6 matches 1007..1008 positioned 90172 78 66 run particle explosion_emitter ~ ~ ~-10 4 2 4 0 15
 execute if score @s rng6 matches 1007..1008 positioned 90172 78 66 run particle bubble ~ ~ ~-10 6 4 6 0 100
 
+execute if score @s rng6 matches 1013 positioned 90172 78 66 run playsound entity.generic.explode block @a ~ ~ ~ 10 0.5
+execute if score @s rng6 matches 1013 positioned 90172 78 66 run particle explosion_emitter ~ ~ ~-5 4 2 4 0 5
+execute if score @s rng6 matches 1013 positioned 90172 78 66 run particle bubble ~ ~ ~ 6 4 6 0 100
+
+execute if score @s rng6 matches 1015..1016 positioned 90172 78 66 run playsound entity.generic.explode block @a ~ ~ ~ 10 0.7
+execute if score @s rng6 matches 1015..1016 positioned 90172 78 66 run playsound entity.firework_rocket.large_blast_far block @a ~ ~ ~ 10 0.8
+execute if score @s rng6 matches 1015..1016 positioned 90172 78 66 run particle explosion_emitter ~ ~ ~-10 4 2 4 0 15
+execute if score @s rng6 matches 1015..1016 positioned 90172 78 66 run particle bubble ~ ~ ~-10 6 4 6 0 100
+
+execute if score @s rng6 matches 1019 positioned 90172 78 66 run playsound entity.generic.explode block @a ~ ~ ~ 10 0.7
+execute if score @s rng6 matches 1019 positioned 90172 78 66 run particle explosion_emitter ~ ~ ~ 4 2 4 0 5
+execute if score @s rng6 matches 1019 positioned 90172 78 66 run particle bubble ~ ~ ~ 6 4 6 0 100
+
 execute if score @s rng6 matches 1006 positioned 90148 84 55 run playsound entity.generic.explode block @a ~ ~ ~ 2 0.9
 execute if score @s rng6 matches 1006 positioned 90148 84 55 run particle explosion_emitter ~ ~ ~ 2 2 2 0 3
 execute if score @s rng6 matches 1006 positioned 90148 84 55 run particle large_smoke ~ ~ ~ 0.5 0.5 0.5 0.02 8
@@ -125,6 +138,11 @@ execute if score @s rng6 matches 1009 positioned 90145 87 66 run particle large_
 execute if score @s rng6 matches 1011 positioned 90148 83 79 run playsound entity.generic.explode block @a ~ ~ ~ 2 0.9
 execute if score @s rng6 matches 1011 positioned 90148 83 79 run particle explosion_emitter ~ ~ ~ 2 2 2 0 3
 execute if score @s rng6 matches 1011 positioned 90148 83 79 run particle large_smoke ~ ~ ~ 0.5 0.5 0.5 0.02 8
+
+execute if score @s rng6 matches 1013 positioned 90147 83 74 run playsound entity.generic.explode block @a ~ ~ ~ 2 0.9
+execute if score @s rng6 matches 1013 positioned 90147 83 74 run particle explosion_emitter ~ ~ ~ 2 2 2 0 3
+execute if score @s rng6 matches 1013 positioned 90147 83 74 run particle large_smoke ~ ~ ~ 0.5 0.5 0.5 0.02 8
+
 
 execute if score @s rng6 matches 1003 at @n[tag=SEAedwina] run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 1.3
 execute if score @s rng6 matches 1003 at @n[tag=SEAedwina] run tellraw @a[distance=0..250] {"text":"艾德雯娜：“那么快？！不好，快点离开这里！！”","color":"green"}
