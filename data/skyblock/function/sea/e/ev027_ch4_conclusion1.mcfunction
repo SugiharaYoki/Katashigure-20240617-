@@ -253,5 +253,5 @@ execute if score @s rng6 matches 1023 run setblock 90146 88 62 air destroy
 execute if score @s rng6 matches 1028 run fill 90148 85 55 90148 86 55 air destroy
 execute if score @s rng6 matches 1031 run fill 90146 88 59 90145 88 60 air destroy
 execute if score @s rng6 matches 1017 run fill 90148 83 70 90147 83 69 air destroy
-
+execute if score @s rng6 matches 1046 run fill 90144 86 85 90144 85 84 air destroy
 

@@ -496,7 +496,7 @@ fill 90148 85 55 90148 86 55 minecraft:waxed_cut_copper_stairs[facing=east]
 fill 90146 88 59 90145 88 60 minecraft:waxed_copper_block
 
 fill 90148 83 70 90147 83 69 minecraft:waxed_copper_block
-
+fill 90144 86 85 90144 85 84 minecraft:waxed_copper_block
 
 
 
