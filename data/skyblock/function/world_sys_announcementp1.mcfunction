@@ -32,8 +32,7 @@ execute unless block -17 23 32 soul_lantern run tag @a remove PVPing
 execute if entity @a[tag=ServerManager,team=!TokumeiM,team=!TokumeiO,tag=!Gaming] as @a[tag=!Gaming] at @s run function skyblock:world_system_team_city
 #
 #CentralProtection#
-gamemode adventure @a[tag=!Gaming,tag=!ServerManager,tag=!ServerOperator]
-gamemode adventure @a[tag=!Gaming,gamemode=survival]
+gamemode adventure @a[tag=!Gaming,tag=!ServerManager,tag=!ServerOperator,tag=!PVP_see]
 effect give @a[tag=!Gaming] minecraft:saturation infinite 0 true
 execute unless block -17 23 32 minecraft:soul_lantern run spawnpoint @a[x=50000,y=0,z=50000,distance=0..1200] -43 55 0
 execute unless block -17 23 32 minecraft:soul_lantern as @a[tag=PVP_see,x=50000,y=50,z=50000,distance=1500..] at @s run function skyblock:skywar_system_removeallgaming
