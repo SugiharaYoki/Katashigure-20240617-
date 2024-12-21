@@ -153,6 +153,8 @@ execute if score @s rng6 matches 1019 positioned 90148 83 72 run particle explos
 execute if score @s rng6 matches 1019 positioned 90148 83 72 run particle large_smoke ~ ~ ~ 0.5 0.5 0.5 0.02 8
 execute if score @s rng6 matches 1019 positioned 90148 83 72 run fill 90147 83 73 90146 83 76 air destroy
 execute if score @s rng6 matches 1019 positioned 90148 83 72 as @n[tag=SEAyuehan] at @s run data modify entity @s NoAI set value 0b
+execute if score @s rng6 matches 1026 positioned 90148 83 72 as @n[tag=SEAyuehan] at @s run tp @s ~ ~-500 ~
+execute if score @s rng6 matches 1026 positioned 90148 83 72 as @n[tag=SEAyuehan] at @s run kill @s
 
 execute if score @s rng6 matches 1003 at @n[tag=SEAedwina] run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 1.3
 execute if score @s rng6 matches 1003 at @n[tag=SEAedwina] run tellraw @a[distance=0..250] {"text":"艾德雯娜：“那么快？！不好，快点离开这里！！”","color":"green"}
