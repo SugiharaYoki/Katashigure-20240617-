@@ -237,6 +237,7 @@ execute at @n[tag=SEAedwina] unless entity @n[tag=SEAmob,distance=0.1..10] run s
 
 scoreboard players add @s[scores={rng6=1200..1500}] rng6 1
 
+execute if score @s rng6 matches 1202..1238 as @n[tag=SEAedwina] at @s run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
 execute if score @s rng6 matches 1202 at @n[tag=SEAedwina] run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 1.3
 execute if score @s rng6 matches 1202 at @n[tag=SEAedwina] if entity @n[tag=sc,scores={sea_player=1}] run tellraw @a[distance=0..250] {"text":"艾德雯娜：“喂，……你一个人有问题吗？我要去救越涵。”","color":"green"}
 execute if score @s rng6 matches 1202 at @n[tag=SEAedwina] if entity @n[tag=sc,scores={sea_player=2..}] run tellraw @a[distance=0..250] {"text":"艾德雯娜：“喂，……你们没我陪同没问题吧？我要去救越涵。”","color":"green"}
@@ -252,6 +253,6 @@ execute if score @s rng6 matches 1238 if entity @p[tag=SEAPT,scores={SEAPT_membe
 execute if score @s rng6 matches 1023 run setblock 90146 88 62 air destroy
 execute if score @s rng6 matches 1028 run fill 90148 85 55 90148 86 55 air destroy
 execute if score @s rng6 matches 1031 run fill 90146 88 59 90145 88 60 air destroy
-execute if score @s rng6 matches 1017 run fill 90148 83 70 90147 83 69 air destroy
+execute if score @s rng6 matches 1067 run fill 90148 83 70 90147 83 69 air destroy
 execute if score @s rng6 matches 1046 run fill 90144 86 85 90144 85 84 air destroy
 
