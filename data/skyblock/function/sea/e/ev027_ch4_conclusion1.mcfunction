@@ -95,3 +95,31 @@ execute as @s[scores={rng5=245..,rng6=360}] at @n[tag=SEAyuehan] run tellraw @a[
 
 execute as @s[scores={rng5=245..,rng6=379}] at @n[tag=SEAedwina] run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 1.3
 execute as @s[scores={rng5=245..,rng6=379}] at @n[tag=SEAedwina] run tellraw @a[distance=0..250] {"text":"艾德雯娜：“沈先生，我听得见。”","color":"green"}
+
+execute positioned 90146 83 65 if entity @a[tag=SEAPT,tag=!SEAPF,distance=0..5.5] run scoreboard players set @s[scores={rng6=..999}] rng6 1000
+execute if score @s rng6 matches 1001 run scoreboard players set @s rng5 1000
+
+execute if score @s rng6 matches 1001 as @n[tag=SEAyuehan] at @s run tp @s 90146 84 87 facing entity @p[tag=SEAPT]
+execute if score @s rng6 matches 1001 as @n[tag=SEAedwina] at @s run tp @s 90147 84 87 facing entity @p[tag=SEAPT]
+
+execute if score @s rng6 matches 1002..1003 positioned 90172 78 66 run playsound entity.generic.explode block @a ~ ~ ~ 10 0.7
+execute if score @s rng6 matches 1002..1003 positioned 90172 78 66 run particle explosion_emitter ~ ~ ~ 4 2 4 0 5
+execute if score @s rng6 matches 1002..1003 positioned 90172 78 66 run particle bubble ~ ~ ~ 6 4 6 0 100
+
+execute if score @s rng6 matches 1005 positioned 90172 78 66 run playsound entity.generic.explode block @a ~ ~ ~ 10 0.5
+execute if score @s rng6 matches 1005 positioned 90172 78 66 run particle explosion_emitter ~ ~ ~-5 4 2 4 0 5
+execute if score @s rng6 matches 1005 positioned 90172 78 66 run particle bubble ~ ~ ~ 6 4 6 0 100
+
+execute if score @s rng6 matches 1007..1008 positioned 90172 78 66 run playsound entity.generic.explode block @a ~ ~ ~ 10 0.7
+execute if score @s rng6 matches 1007..1008 positioned 90172 78 66 run playsound entity.firework_rocket.large_blast_far block @a ~ ~ ~ 10 0.8
+execute if score @s rng6 matches 1007..1008 positioned 90172 78 66 run particle explosion_emitter ~ ~ ~-10 4 2 4 0 15
+execute if score @s rng6 matches 1007..1008 positioned 90172 78 66 run particle bubble ~ ~ ~-10 6 4 6 0 100
+
+execute if score @s rng6 matches 1003 at @n[tag=SEAedwina] run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 1.3
+execute if score @s rng6 matches 1003 at @n[tag=SEAedwina] run tellraw @a[distance=0..250] {"text":"艾德雯娜：“那么快？！不好，快点离开这里！！”","color":"green"}
+
+execute if score @s rng6 matches 1004..1014 as @n[tag=SEAedwina] at @s run tp @s ~ ~ ~-1.3 facing ~ ~ ~-2
+execute if score @s rng6 matches 1005..1009 as @n[tag=SEAyuehan] at @s run tp @s ~ ~ ~-1.3 facing ~ ~ ~-2
+
+execute if score @s rng6 matches 1006 at @n[tag=SEAyuehan] run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
+execute if score @s rng6 matches 1006 at @n[tag=SEAyuehan] run tellraw @a[distance=0..250] {"text":"越涵：“怎、怎么说？！那台生态装……”","color":"green"}
