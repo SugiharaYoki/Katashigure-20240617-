@@ -4,6 +4,13 @@ function skyblock:sea/p/w/flamethrower_cost
 function skyblock:sea/p/w/shield_cost
 
 tag @s add SEA_w_upg_SUCCESS
+
+#撬棍
+# 伤 速 伤 速 伤 速
+#    速    速    速
+#    伤 距 速 距 伤
+#          距    距
+
 execute if entity @s[scores={sea_crafter=50001}] unless entity @s[scores={rng1=1..}] run tag @s add SEA_w_upg_FAILED
 execute if entity @s[scores={sea_crafter=50002}] unless entity @s[scores={rng1=1..}] run tag @s add SEA_w_upg_FAILED
 execute if entity @s[scores={sea_crafter=50003}] unless entity @s[scores={rng1=1..}] run tag @s add SEA_w_upg_FAILED
@@ -36,10 +43,49 @@ execute if entity @s[scores={sea_crafter=50014}] if entity @s[tag=!SEA_w_crowbar
 execute if entity @s[scores={sea_crafter=50015}] if entity @s[tag=!SEA_w_crowbar_upg12] run tag @s add SEA_w_upg_FAILED_NC
 execute if entity @s[scores={sea_crafter=50016}] if entity @s[tag=!SEA_w_crowbar_upg14] run tag @s add SEA_w_upg_FAILED_NC
 
-# 伤 速 伤 速 伤 速
-#    速    速    速
-#    伤 距 速 距 伤
-#          距    距
+#斧头
+# 伤 速 伤 伤 伤
+# 速    退
+# 速 速 退 伤 技
+# 技    伤
+# 技    退
+# 1 1 2 1 2
+# 1   1
+# 2 2 4 2 3
+# 1   2
+# 3   2
+execute if entity @s[scores={sea_crafter=50101}] unless entity @s[scores={rng1=1..}] run tag @s add SEA_w_upg_FAILED
+execute if entity @s[scores={sea_crafter=50102}] unless entity @s[scores={rng1=1..}] run tag @s add SEA_w_upg_FAILED
+execute if entity @s[scores={sea_crafter=50103}] unless entity @s[scores={rng1=2..}] run tag @s add SEA_w_upg_FAILED
+execute if entity @s[scores={sea_crafter=50104}] unless entity @s[scores={rng1=1..}] run tag @s add SEA_w_upg_FAILED
+execute if entity @s[scores={sea_crafter=50105}] unless entity @s[scores={rng1=2..}] run tag @s add SEA_w_upg_FAILED
+execute if entity @s[scores={sea_crafter=50106}] unless entity @s[scores={rng1=1..}] run tag @s add SEA_w_upg_FAILED
+execute if entity @s[scores={sea_crafter=50107}] unless entity @s[scores={rng1=1..}] run tag @s add SEA_w_upg_FAILED
+execute if entity @s[scores={sea_crafter=50108}] unless entity @s[scores={rng1=2..}] run tag @s add SEA_w_upg_FAILED
+execute if entity @s[scores={sea_crafter=50109}] unless entity @s[scores={rng1=2..}] run tag @s add SEA_w_upg_FAILED
+execute if entity @s[scores={sea_crafter=50110}] unless entity @s[scores={rng1=4..}] run tag @s add SEA_w_upg_FAILED
+execute if entity @s[scores={sea_crafter=50111}] unless entity @s[scores={rng1=2..}] run tag @s add SEA_w_upg_FAILED
+execute if entity @s[scores={sea_crafter=50112}] unless entity @s[scores={rng1=3..}] run tag @s add SEA_w_upg_FAILED
+execute if entity @s[scores={sea_crafter=50113}] unless entity @s[scores={rng1=1..}] run tag @s add SEA_w_upg_FAILED
+execute if entity @s[scores={sea_crafter=50114}] unless entity @s[scores={rng1=2..}] run tag @s add SEA_w_upg_FAILED
+execute if entity @s[scores={sea_crafter=50115}] unless entity @s[scores={rng1=3..}] run tag @s add SEA_w_upg_FAILED
+execute if entity @s[scores={sea_crafter=50116}] unless entity @s[scores={rng1=2..}] run tag @s add SEA_w_upg_FAILED
+execute if entity @s[scores={sea_crafter=50102}] if entity @s[tag=!SEA_w_crowbar_upg1,tag=!SEA_w_crowbar_upg3] run tag @s add SEA_w_upg_FAILED_NC
+execute if entity @s[scores={sea_crafter=50103}] if entity @s[tag=!SEA_w_crowbar_upg2,tag=!SEA_w_crowbar_upg4,tag=!SEA_w_crowbar_upg7] run tag @s add SEA_w_upg_FAILED_NC
+execute if entity @s[scores={sea_crafter=50104}] if entity @s[tag=!SEA_w_crowbar_upg3,tag=!SEA_w_crowbar_upg5] run tag @s add SEA_w_upg_FAILED_NC
+execute if entity @s[scores={sea_crafter=50105}] if entity @s[tag=!SEA_w_crowbar_upg4] run tag @s add SEA_w_upg_FAILED_NC
+execute if entity @s[scores={sea_crafter=50106}] if entity @s[tag=!SEA_w_crowbar_upg1,tag=!SEA_w_crowbar_upg8] run tag @s add SEA_w_upg_FAILED_NC
+execute if entity @s[scores={sea_crafter=50107}] if entity @s[tag=!SEA_w_crowbar_upg3,tag=!SEA_w_crowbar_upg10] run tag @s add SEA_w_upg_FAILED_NC
+execute if entity @s[scores={sea_crafter=50108}] if entity @s[tag=!SEA_w_crowbar_upg6,tag=!SEA_w_crowbar_upg9] run tag @s add SEA_w_upg_FAILED_NC
+execute if entity @s[scores={sea_crafter=50109}] if entity @s[tag=!SEA_w_crowbar_upg8,tag=!SEA_w_crowbar_upg10] run tag @s add SEA_w_upg_FAILED_NC
+execute if entity @s[scores={sea_crafter=50110}] if entity @s[tag=!SEA_w_crowbar_upg7,tag=!SEA_w_crowbar_upg9] run tag @s add SEA_w_upg_FAILED_NC
+execute if entity @s[scores={sea_crafter=50111}] if entity @s[tag=!SEA_w_crowbar_upg10] run tag @s add SEA_w_upg_FAILED_NC
+execute if entity @s[scores={sea_crafter=50112}] if entity @s[tag=!SEA_w_crowbar_upg11] run tag @s add SEA_w_upg_FAILED_NC
+execute if entity @s[scores={sea_crafter=50113}] if entity @s[tag=!SEA_w_crowbar_upg8] run tag @s add SEA_w_upg_FAILED_NC
+execute if entity @s[scores={sea_crafter=50114}] if entity @s[tag=!SEA_w_crowbar_upg10] run tag @s add SEA_w_upg_FAILED_NC
+execute if entity @s[scores={sea_crafter=50115}] if entity @s[tag=!SEA_w_crowbar_upg13] run tag @s add SEA_w_upg_FAILED_NC
+execute if entity @s[scores={sea_crafter=50116}] if entity @s[tag=!SEA_w_crowbar_upg14] run tag @s add SEA_w_upg_FAILED_NC
+
 
 tag @s[tag=SEA_w_upg_FAILED] remove SEA_w_upg_SUCCESS
 tag @s[tag=SEA_w_upg_FAILED_NC] remove SEA_w_upg_SUCCESS

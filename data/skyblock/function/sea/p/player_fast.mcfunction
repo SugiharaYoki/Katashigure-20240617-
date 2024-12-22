@@ -43,8 +43,11 @@ execute unless items entity @s weapon.mainhand shield as @s[tag=sea_t_parry1] ru
 execute as @s[tag=sea_t_parry1,scores={sea_shielding_3=1..}] run scoreboard players remove @s sea_shielding_3 1
 execute if items entity @s weapon.mainhand shield as @s[tag=sea_t_parry1,scores={sea_shielding_3=..0}] run function skyblock:sea/p/parry
 
-
-execute as @s[tag=sea_t_axeparry1,predicate=skyblock:sneaking,scores={sea_axeparry_jump=1..}] if items entity @s weapon.mainhand netherite_axe run function skyblock:sea/p/axeparry
+scoreboard players set @s rng9 0
+scoreboard players add @s[tag=sea_w_axe_skill_a_1] rng9 1
+scoreboard players add @s[tag=sea_w_axe_skill_a_2] rng9 2
+scoreboard players add @s[tag=sea_w_axe_skill_a_3] rng9 3
+execute as @s[predicate=skyblock:sneaking,scores={sea_axeparry_jump=1..,rng9=1..}] if items entity @s weapon.mainhand iron_axe run function skyblock:sea/p/axeparry
 execute as @s[scores={sea_axeparry_jump=1..}] run scoreboard players set @s sea_axeparry_jump 0
 
 execute if items entity @s armor.chest *[custom_data={sea_chest_shadowchest:true}] if entity @s[predicate=skyblock:sneaking] run effect give @s invisibility 3 0 false

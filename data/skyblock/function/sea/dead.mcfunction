@@ -321,3 +321,7 @@ tag @s remove SEA_w_05_effected
 tag @s remove SEA_w_06_effected
 tag @s remove SEA_w_07_effected
 tag @s remove SEA_w_08_effected
+
+
+#不再用到的tag
+tag @s remove sea_t_axeparry1
