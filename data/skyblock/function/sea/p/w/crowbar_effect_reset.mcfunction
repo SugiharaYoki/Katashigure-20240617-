@@ -14,3 +14,7 @@ tag @s remove SEA_w_crowbar_upg13
 tag @s remove SEA_w_crowbar_upg14
 tag @s remove SEA_w_crowbar_upg15
 tag @s remove SEA_w_crowbar_upg16
+
+playsound block.grindstone.use player @a ~ ~ ~ 1 0.8
+
+function skyblock:sea/p/w/crowbar_page
