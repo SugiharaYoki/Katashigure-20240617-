@@ -1,19 +1,19 @@
-execute if entity @s[scores={sea_crafter=50001},tag=SEA_w_crowbar_upg1,tag=SEA_w_crowbar_upg_REMOVE] run tag @s remove SEA_w_crowbar_upg1
-execute if entity @s[scores={sea_crafter=50002},tag=SEA_w_crowbar_upg2,tag=SEA_w_crowbar_upg_REMOVE] run tag @s remove SEA_w_crowbar_upg2
-execute if entity @s[scores={sea_crafter=50003},tag=SEA_w_crowbar_upg3,tag=SEA_w_crowbar_upg_REMOVE] run tag @s remove SEA_w_crowbar_upg3
-execute if entity @s[scores={sea_crafter=50004},tag=SEA_w_crowbar_upg4,tag=SEA_w_crowbar_upg_REMOVE] run tag @s remove SEA_w_crowbar_upg4
-execute if entity @s[scores={sea_crafter=50005},tag=SEA_w_crowbar_upg5,tag=SEA_w_crowbar_upg_REMOVE] run tag @s remove SEA_w_crowbar_upg5
-execute if entity @s[scores={sea_crafter=50006},tag=SEA_w_crowbar_upg6,tag=SEA_w_crowbar_upg_REMOVE] run tag @s remove SEA_w_crowbar_upg6
-execute if entity @s[scores={sea_crafter=50007},tag=SEA_w_crowbar_upg7,tag=SEA_w_crowbar_upg_REMOVE] run tag @s remove SEA_w_crowbar_upg7
-execute if entity @s[scores={sea_crafter=50008},tag=SEA_w_crowbar_upg8,tag=SEA_w_crowbar_upg_REMOVE] run tag @s remove SEA_w_crowbar_upg8
-execute if entity @s[scores={sea_crafter=50009},tag=SEA_w_crowbar_upg9,tag=SEA_w_crowbar_upg_REMOVE] run tag @s remove SEA_w_crowbar_upg9
-execute if entity @s[scores={sea_crafter=50010},tag=SEA_w_crowbar_upg10,tag=SEA_w_crowbar_upg_REMOVE] run tag @s remove SEA_w_crowbar_upg10
-execute if entity @s[scores={sea_crafter=50011},tag=SEA_w_crowbar_upg11,tag=SEA_w_crowbar_upg_REMOVE] run tag @s remove SEA_w_crowbar_upg11
-execute if entity @s[scores={sea_crafter=50012},tag=SEA_w_crowbar_upg12,tag=SEA_w_crowbar_upg_REMOVE] run tag @s remove SEA_w_crowbar_upg12
-execute if entity @s[scores={sea_crafter=50013},tag=SEA_w_crowbar_upg13,tag=SEA_w_crowbar_upg_REMOVE] run tag @s remove SEA_w_crowbar_upg13
-execute if entity @s[scores={sea_crafter=50014},tag=SEA_w_crowbar_upg14,tag=SEA_w_crowbar_upg_REMOVE] run tag @s remove SEA_w_crowbar_upg14
-execute if entity @s[scores={sea_crafter=50015},tag=SEA_w_crowbar_upg15,tag=SEA_w_crowbar_upg_REMOVE] run tag @s remove SEA_w_crowbar_upg15
-execute if entity @s[scores={sea_crafter=50016},tag=SEA_w_crowbar_upg16,tag=SEA_w_crowbar_upg_REMOVE] run tag @s remove SEA_w_crowbar_upg16
+#execute if entity @s[scores={sea_crafter=50001},tag=SEA_w_crowbar_upg1,tag=SEA_w_crowbar_upg_REMOVE] run tag @s remove SEA_w_crowbar_upg1
+#execute if entity @s[scores={sea_crafter=50002},tag=SEA_w_crowbar_upg2,tag=SEA_w_crowbar_upg_REMOVE] run tag @s remove SEA_w_crowbar_upg2
+#execute if entity @s[scores={sea_crafter=50003},tag=SEA_w_crowbar_upg3,tag=SEA_w_crowbar_upg_REMOVE] run tag @s remove SEA_w_crowbar_upg3
+#execute if entity @s[scores={sea_crafter=50004},tag=SEA_w_crowbar_upg4,tag=SEA_w_crowbar_upg_REMOVE] run tag @s remove SEA_w_crowbar_upg4
+#execute if entity @s[scores={sea_crafter=50005},tag=SEA_w_crowbar_upg5,tag=SEA_w_crowbar_upg_REMOVE] run tag @s remove SEA_w_crowbar_upg5
+#execute if entity @s[scores={sea_crafter=50006},tag=SEA_w_crowbar_upg6,tag=SEA_w_crowbar_upg_REMOVE] run tag @s remove SEA_w_crowbar_upg6
+#execute if entity @s[scores={sea_crafter=50007},tag=SEA_w_crowbar_upg7,tag=SEA_w_crowbar_upg_REMOVE] run tag @s remove SEA_w_crowbar_upg7
+#execute if entity @s[scores={sea_crafter=50008},tag=SEA_w_crowbar_upg8,tag=SEA_w_crowbar_upg_REMOVE] run tag @s remove SEA_w_crowbar_upg8
+#execute if entity @s[scores={sea_crafter=50009},tag=SEA_w_crowbar_upg9,tag=SEA_w_crowbar_upg_REMOVE] run tag @s remove SEA_w_crowbar_upg9
+#execute if entity @s[scores={sea_crafter=50010},tag=SEA_w_crowbar_upg10,tag=SEA_w_crowbar_upg_REMOVE] run tag @s remove SEA_w_crowbar_upg10
+#execute if entity @s[scores={sea_crafter=50011},tag=SEA_w_crowbar_upg11,tag=SEA_w_crowbar_upg_REMOVE] run tag @s remove SEA_w_crowbar_upg11
+#execute if entity @s[scores={sea_crafter=50012},tag=SEA_w_crowbar_upg12,tag=SEA_w_crowbar_upg_REMOVE] run tag @s remove SEA_w_crowbar_upg12
+#execute if entity @s[scores={sea_crafter=50013},tag=SEA_w_crowbar_upg13,tag=SEA_w_crowbar_upg_REMOVE] run tag @s remove SEA_w_crowbar_upg13
+#execute if entity @s[scores={sea_crafter=50014},tag=SEA_w_crowbar_upg14,tag=SEA_w_crowbar_upg_REMOVE] run tag @s remove SEA_w_crowbar_upg14
+#execute if entity @s[scores={sea_crafter=50015},tag=SEA_w_crowbar_upg15,tag=SEA_w_crowbar_upg_REMOVE] run tag @s remove SEA_w_crowbar_upg15
+#execute if entity @s[scores={sea_crafter=50016},tag=SEA_w_crowbar_upg16,tag=SEA_w_crowbar_upg_REMOVE] run tag @s remove SEA_w_crowbar_upg16
 
 
 execute if entity @s[scores={sea_crafter=50001},tag=!SEA_w_crowbar_upg1,tag=!SEA_w_crowbar_upg_REMOVE] run tag @s add SEA_w_crowbar_upg1
@@ -33,4 +33,4 @@ execute if entity @s[scores={sea_crafter=50014},tag=!SEA_w_crowbar_upg14,tag=!SE
 execute if entity @s[scores={sea_crafter=50015},tag=!SEA_w_crowbar_upg15,tag=!SEA_w_crowbar_upg_REMOVE] run tag @s add SEA_w_crowbar_upg15
 execute if entity @s[scores={sea_crafter=50016},tag=!SEA_w_crowbar_upg16,tag=!SEA_w_crowbar_upg_REMOVE] run tag @s add SEA_w_crowbar_upg16
 
-function skyblock:sea/p/w/crowbar_calc
+function skyblock:sea/p/w/recalc
