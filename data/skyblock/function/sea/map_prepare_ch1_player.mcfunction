@@ -114,7 +114,7 @@ execute unless score @s sea_speedrun_ch5 matches 1.. run scoreboard players set 
 execute unless score @s sea_speedrun_ch6 matches 1.. run scoreboard players set @s sea_speedrun_ch6 9999
 execute unless score @s sea_speedrun_ch7 matches 1.. run scoreboard players set @s sea_speedrun_ch7 9999
 
-
+scoreboard players set @s SEA_w_upg_pts 0
 
 
 execute unless entity @a[scores={SEAPT_member=1}] unless entity @s[scores={SEAPT_member=1..}] run scoreboard players set @s SEAPT_member 1

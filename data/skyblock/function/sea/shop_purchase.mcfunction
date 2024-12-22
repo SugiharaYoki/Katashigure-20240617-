@@ -319,6 +319,13 @@ execute if entity @s[tag=sea_purchase_pass] run scoreboard players remove @s sea
 tag @s remove sea_purchase_pass
 
 #道具
+execute if score @s sea_crafter matches 10070 as @s[scores={sea_i_emerald=10..}] run tag @s add sea_purchase_pass
+execute if score @s sea_crafter matches 10070 if entity @s[tag=!sea_purchase_pass] run tellraw @s {"text":"失败！余额不足！","color":"red"}
+execute if entity @s[tag=sea_purchase_pass] run playsound block.amethyst_block.resonate neutral @s ~ ~ ~ 100 1.2
+execute if entity @s[tag=sea_purchase_pass] run give @s echo_shard
+execute if entity @s[tag=sea_purchase_pass] run scoreboard players remove @s sea_i_emerald 10
+tag @s remove sea_purchase_pass
+
 execute if score @s sea_crafter matches 10004 as @s[scores={sea_i_emerald=..1}] run tellraw @s {"text":"失败！余额不足！","color":"red"}
 execute if score @s sea_crafter matches 10004 as @s[scores={sea_i_emerald=2..}] run tag @s add sea_purchase_pass
 execute if entity @s[tag=sea_purchase_pass] run playsound minecraft:item.armor.equip_iron neutral @s ~ ~ ~ 100
