@@ -1,4 +1,4 @@
-scoreboard players operation @s rng1 = @s sea_i_echo_shard
+
 scoreboard players remove @s[tag=SEA_w_axe_upg1] rng1 1
 scoreboard players remove @s[tag=SEA_w_axe_upg2] rng1 1
 scoreboard players remove @s[tag=SEA_w_axe_upg3] rng1 2
