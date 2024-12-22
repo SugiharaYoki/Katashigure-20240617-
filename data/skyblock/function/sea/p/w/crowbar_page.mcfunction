@@ -23,12 +23,12 @@ execute if entity @s[tag=!SEA_w_crowbar_upg5] run data modify entity @n[tag=SEA_
 execute if entity @s[tag=!SEA_w_crowbar_upg6] run data modify entity @n[tag=SEA_w_crowbar_displaymarker6] CustomName set value '" □ "'
 tellraw @s [{"text":" ","color":"light_purple"},\
 {"selector":"@n[tag=SEA_w_crowbar_displaymarker0]","color":"red"},\
-{"selector":"@n[tag=SEA_w_crowbar_displaymarker1]","color":"dark_red","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 50001"}},\
-{"selector":"@n[tag=SEA_w_crowbar_displaymarker2]","color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 50002"}},\
-{"selector":"@n[tag=SEA_w_crowbar_displaymarker3]","color":"dark_red","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 50003"}},\
-{"selector":"@n[tag=SEA_w_crowbar_displaymarker4]","color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 50004"}},\
-{"selector":"@n[tag=SEA_w_crowbar_displaymarker5]","color":"dark_red","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 50005"}},\
-{"selector":"@n[tag=SEA_w_crowbar_displaymarker6]","color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 50006"}}]
+{"selector":"@n[tag=SEA_w_crowbar_displaymarker1]","color":"dark_red","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 50001"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：1\n攻击力增加0.5","color":"white"}}},\
+{"selector":"@n[tag=SEA_w_crowbar_displaymarker2]","color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 50002"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：1\n攻击速度增加0.2","color":"white"}}},\
+{"selector":"@n[tag=SEA_w_crowbar_displaymarker3]","color":"dark_red","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 50003"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：1\n攻击力增加0.5","color":"white"}}},\
+{"selector":"@n[tag=SEA_w_crowbar_displaymarker4]","color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 50004"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：1\n攻击速度增加0.2","color":"white"}}},\
+{"selector":"@n[tag=SEA_w_crowbar_displaymarker5]","color":"dark_red","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 50005"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：2\n攻击力增加0.5","color":"white"}}},\
+{"selector":"@n[tag=SEA_w_crowbar_displaymarker6]","color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 50006"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：2\n攻击速度增加0.2","color":"white"}}}]
 
 
 function skyblock:sea/p/w/crowbar_cost

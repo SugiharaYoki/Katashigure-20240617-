@@ -312,3 +312,12 @@ tag @s remove SEA_w_shield_upg17
 tag @s remove SEA_w_shield_upg18
 tag @s remove SEA_w_shield_upg19
 tag @s remove SEA_w_shield_upg20
+
+tag @s remove SEA_w_01_effected
+tag @s remove SEA_w_02_effected
+tag @s remove SEA_w_03_effected
+tag @s remove SEA_w_04_effected
+tag @s remove SEA_w_05_effected
+tag @s remove SEA_w_06_effected
+tag @s remove SEA_w_07_effected
+tag @s remove SEA_w_08_effected

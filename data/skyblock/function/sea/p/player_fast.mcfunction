@@ -57,3 +57,6 @@ scoreboard players reset @s[scores={sea_do_attack=1..}] sea_do_attack
 function skyblock:sea/experimental/backjump_loop
 
 execute as @s[scores={sea_dead=1..}] run function skyblock:sea/death_check
+
+execute if items entity @s[tag=!SEA_w_01_effected] weapon.mainhand iron_hoe run function skyblock:sea/p/w/crowbar_effect
+execute unless items entity @s[tag=SEA_w_01_effected] weapon.mainhand iron_hoe run function skyblock:sea/p/w/crowbar_effect_remove
