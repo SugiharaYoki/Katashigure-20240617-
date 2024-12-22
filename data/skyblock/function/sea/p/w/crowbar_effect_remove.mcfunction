@@ -12,6 +12,8 @@ attribute @s player.entity_interaction_range modifier remove sea_weapon:upg_crow
 attribute @s generic.attack_speed modifier remove sea_weapon:upg_crowbar12
 attribute @s player.entity_interaction_range modifier remove sea_weapon:upg_crowbar13
 attribute @s generic.attack_damage modifier remove sea_weapon:upg_crowbar14
+attribute @s player.entity_interaction_range modifier remove sea_weapon:upg_crowbar15
+attribute @s player.entity_interaction_range modifier remove sea_weapon:upg_crowbar16
 
 
 tag @s remove SEA_w_01_effected

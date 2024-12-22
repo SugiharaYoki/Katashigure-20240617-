@@ -13,5 +13,5 @@ scoreboard players remove @s[tag=SEA_w_crowbar_upg11] rng1 2
 scoreboard players remove @s[tag=SEA_w_crowbar_upg12] rng1 2
 scoreboard players remove @s[tag=SEA_w_crowbar_upg13] rng1 2
 scoreboard players remove @s[tag=SEA_w_crowbar_upg14] rng1 3
-scoreboard players remove @s[tag=SEA_w_crowbar_upg15] rng1 1
-scoreboard players remove @s[tag=SEA_w_crowbar_upg16] rng1 1
+scoreboard players remove @s[tag=SEA_w_crowbar_upg15] rng1 3
+scoreboard players remove @s[tag=SEA_w_crowbar_upg16] rng1 3
