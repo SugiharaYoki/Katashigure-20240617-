@@ -218,7 +218,7 @@ execute as @n[tag=sc,scores={sea_4temp2=5000..5300}] run scoreboard players add 
 execute as @n[tag=sc,scores={sea_4temp2=..805}] run playsound minecraft:entity.minecart.riding ambient @a 90104 133 100 0.7 0.7
 
 execute if entity @a[tag=SEAPT,x=90111,y=128,z=125,distance=0..3,tag=!SEAPF] as @n[tag=sc,scores={sea_4temp2=830..839}] run scoreboard players set @s sea_4temp2 840
-execute if entity @a[tag=SEAPT,x=90103,y=128,z=107,distance=0..8,tag=!SEAPF] as @n[tag=sc,scores={sea_4temp2=830..852}] run scoreboard players set @s sea_4temp2 860
+execute if entity @a[tag=SEAPT,x=90103,y=128,z=107,distance=0..8,tag=!SEAPF] as @n[tag=sc,scores={sea_4temp2=830..858}] run scoreboard players set @s sea_4temp2 860
 execute if entity @a[tag=SEAPT,x=90138,y=129,z=117,distance=0..4,tag=!SEAPF] as @n[tag=sc,scores={sea_4temp2=869..872}] run scoreboard players set @s sea_4temp2 900
 
 
