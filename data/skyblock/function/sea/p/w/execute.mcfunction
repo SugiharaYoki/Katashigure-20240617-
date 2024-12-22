@@ -101,3 +101,6 @@ tag @s remove SEA_w_upg_FAILED_NC
 tag @s remove SEA_w_crowbar_upg_REMOVE
 playsound minecraft:ui.button.click master @s ~ ~ ~ 0.3 1.5 0.4
 execute if entity @s[scores={sea_crafter=50001..50099}] run function skyblock:sea/p/w/crowbar_page
+execute if entity @s[scores={sea_crafter=50101..50199}] run function skyblock:sea/p/w/axe_page
+execute if entity @s[scores={sea_crafter=50201..50299}] run function skyblock:sea/p/w/flamethrower_page
+execute if entity @s[scores={sea_crafter=50301..50399}] run function skyblock:sea/p/w/shield_page
