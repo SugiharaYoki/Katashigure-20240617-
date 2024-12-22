@@ -28,7 +28,7 @@ execute if score sea_ch2_dwight_conversation rng3 matches 1..19 positioned 90111
 execute if score sea_ch2_dwight_conversation rng3 matches 22 positioned 90111 128 139 run playsound entity.bogged.ambient neutral @a ~ ~ ~ 1 0.8
 execute if score sea_ch2_dwight_conversation rng3 matches 22 positioned 90111 128 139 run tellraw @a[distance=0..150] {"text":"神秘的骸骨：我曾被抛尸于此。杀死我的凶手……却不是尸变体。","color":"dark_purple"}
 execute if score sea_ch2_dwight_conversation rng3 matches 33 positioned 90111 128 139 run playsound entity.bogged.ambient neutral @a ~ ~ ~ 1 0.8
-execute if score sea_ch2_dwight_conversation rng3 matches 33 positioned 90111 128 139 unless entity @n[tag=SEArivette,distance=0..8] run tellraw @a[distance=0..150] {"text":"神秘的骸骨：如果看到瑞弗特主厨，避开他……他已经不是会正常死亡的生物了。","color":"dark_purple"}
+execute if score sea_ch2_dwight_conversation rng3 matches 33 positioned 90111 128 139 unless entity @n[tag=SEArivette,distance=0..8] run tellraw @a[distance=0..150] {"text":"神秘的骸骨：如果看到瑞佛特主厨，避开他……他已经不是会正常死亡的生物了。","color":"dark_purple"}
 execute if score sea_ch2_dwight_conversation rng3 matches 33 positioned 90111 128 139 if entity @n[tag=SEArivette,distance=0..8] run tellraw @a[distance=0..150] {"text":"神秘的骸骨：他……他要来了，不要和他战斗，他已经不是会正常死亡的生物了。","color":"dark_purple"}
 execute if score sea_ch2_dwight_conversation rng3 matches 44 positioned 90111 128 139 as @n[tag=SEAboss2npc] run effect give @s invisibility infinite 0 true
 execute if score sea_ch2_dwight_conversation rng3 matches 44 positioned 90111 128 139 as @n[tag=SEAboss2npc] run tp @s ~ ~-500 ~
@@ -38,7 +38,7 @@ execute if score sea_ch2_dwight_conversation rng4 matches 1.. positioned 90074 1
 execute if score sea_ch2_dwight_conversation rng4 matches 5..10 run scoreboard players set sea_ch2_dwight_conversation rng4 5
 execute if score sea_ch2_dwight_conversation rng4 matches 1..19 positioned 90074 128 147 as @n[tag=SEAboss2npc] at @s if entity @p[tag=SEAPT,tag=!SEAPF,distance=0..3.3] run scoreboard players set sea_ch2_dwight_conversation rng4 20
 execute if score sea_ch2_dwight_conversation rng4 matches 22 positioned 90074 128 147 run playsound entity.bogged.ambient neutral @a ~ ~ ~ 1 0.8
-execute if score sea_ch2_dwight_conversation rng4 matches 22 positioned 90074 128 147 run tellraw @a[distance=0..150] {"text":"神秘的骸骨：我相信他是被圣水晶影响的。他……不是我认识的瑞弗特先生。","color":"dark_purple"}
+execute if score sea_ch2_dwight_conversation rng4 matches 22 positioned 90074 128 147 run tellraw @a[distance=0..150] {"text":"神秘的骸骨：我相信他是被圣水晶影响的。他……不是我认识的瑞佛特先生。","color":"dark_purple"}
 execute if score sea_ch2_dwight_conversation rng4 matches 33 positioned 90074 128 147 run playsound entity.bogged.ambient neutral @a ~ ~ ~ 1 0.8
 execute if score sea_ch2_dwight_conversation rng4 matches 33 positioned 90074 128 147 unless entity @n[tag=SEArivette,distance=0..8] run tellraw @a[distance=0..150] {"text":"神秘的骸骨：抱歉，我们这堆拖油瓶……给你带来麻烦了吧。","color":"dark_purple"}
 execute if score sea_ch2_dwight_conversation rng4 matches 33 positioned 90074 128 147 if entity @n[tag=SEArivette,distance=0..8] run tellraw @a[distance=0..150] {"text":"神秘的骸骨：他还追着你的话……尝试将他甩掉吧。","color":"dark_purple"}
