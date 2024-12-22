@@ -13,9 +13,9 @@ summon marker ~ ~ ~ {Tags:["SEA_w_crowbar_displaymarker","SEA_w_crowbar_displaym
 summon marker ~ ~ ~ {Tags:["SEA_w_crowbar_displaymarker","SEA_w_crowbar_displaymarker7"]}
 summon marker ~ ~ ~ {Tags:["SEA_w_crowbar_displaymarker","SEA_w_crowbar_displaymarker8"]}
 summon marker ~ ~ ~ {Tags:["SEA_w_crowbar_displaymarker","SEA_w_crowbar_displaymarker9"]}
-data modify entity @n[tag=SEA_w_crowbar_displaymarker0] CustomName set value '" ◆ "'
-data modify entity @n[tag=SEA_w_crowbar_displaymarker0b] CustomName set value '" ┗┗ "'
-data modify entity @n[tag=SEA_w_crowbar_displaymarkerE] CustomName set value '"    "'
+data modify entity @n[tag=SEA_w_crowbar_displaymarker0] CustomName set value '" ▼ "'
+data modify entity @n[tag=SEA_w_crowbar_displaymarker0b] CustomName set value '" ▽ "'
+data modify entity @n[tag=SEA_w_crowbar_displaymarkerE] CustomName set value '" ▽ "'
 execute if entity @s[tag=SEA_w_crowbar_upg1] run data modify entity @n[tag=SEA_w_crowbar_displaymarker1] CustomName set value '" ■ "'
 execute if entity @s[tag=SEA_w_crowbar_upg2] run data modify entity @n[tag=SEA_w_crowbar_displaymarker2] CustomName set value '" ■ "'
 execute if entity @s[tag=SEA_w_crowbar_upg3] run data modify entity @n[tag=SEA_w_crowbar_displaymarker3] CustomName set value '" ■ "'
@@ -47,22 +47,22 @@ tellraw @s [{"text":" ","color":"light_purple"},\
 {"selector":"@n[tag=SEA_w_crowbar_displaymarker6]","color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 50006"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：2\n攻击速度增加0.2","color":"white"}}}]
 
 tellraw @s [{"text":" ","color":"light_purple"},\
-{"selector":"@n[tag=SEA_w_crowbar_displaymarker0b]","color":"red"},\
-{"selector":"@n[tag=SEA_w_crowbar_displaymarkerE]"},\
+{"selector":"@n[tag=SEA_w_crowbar_displaymarker0b]","color":"dark_gray"},\
+{"selector":"@n[tag=SEA_w_crowbar_displaymarkerE]","color":"dark_gray"},\
 {"selector":"@n[tag=SEA_w_crowbar_displaymarker7]","color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 50007"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：1\n攻击速度增加0.2","color":"white"}}},\
-{"selector":"@n[tag=SEA_w_crowbar_displaymarkerE]"},\
+{"selector":"@n[tag=SEA_w_crowbar_displaymarkerE]","color":"dark_gray"},\
 {"selector":"@n[tag=SEA_w_crowbar_displaymarker8]","color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 50008"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：2\n攻击速度增加0.2","color":"white"}}},\
-{"selector":"@n[tag=SEA_w_crowbar_displaymarkerE]"},\
+{"selector":"@n[tag=SEA_w_crowbar_displaymarkerE]","color":"dark_gray"},\
 {"selector":"@n[tag=SEA_w_crowbar_displaymarker9]","color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 50009"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：2\n攻击速度增加0.2","color":"white"}}}]
 
 tellraw @s [{"text":" ","color":"light_purple"},\
 {"selector":"@n[tag=SEA_w_crowbar_displaymarker0b]","color":"red"},\
-{"selector":"@n[tag=SEA_w_crowbar_displaymarkerE]"},\
+{"selector":"@n[tag=SEA_w_crowbar_displaymarkerE]","color":"dark_gray"},\
 {"selector":"@n[tag=SEA_w_crowbar_displaymarker10]","color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 50007"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：2\n攻击力增加0.5","color":"white"}}},\
-{"selector":"@n[tag=SEA_w_crowbar_displaymarkerE]"},\
-{"selector":"@n[tag=SEA_w_crowbar_displaymarkerE]"},\
-{"selector":"@n[tag=SEA_w_crowbar_displaymarkerE]"},\
-{"selector":"@n[tag=SEA_w_crowbar_displaymarkerE]"}]
+{"selector":"@n[tag=SEA_w_crowbar_displaymarkerE]","color":"dark_gray"},\
+{"selector":"@n[tag=SEA_w_crowbar_displaymarkerE]","color":"dark_gray"},\
+{"selector":"@n[tag=SEA_w_crowbar_displaymarkerE]","color":"dark_gray"},\
+{"selector":"@n[tag=SEA_w_crowbar_displaymarkerE]","color":"dark_gray"}]
 
 function skyblock:sea/p/w/crowbar_cost
 tellraw @s[scores={rng1=1..}] [{"text":"剩余可分配点数：","bold":true,"color":"green"},{"bold":false,"score":{"name":"@s","objective":"rng1"},"color":"green"},{"text":"〈全部重置〉","bold":true,"color":"red","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 59901"}}]
