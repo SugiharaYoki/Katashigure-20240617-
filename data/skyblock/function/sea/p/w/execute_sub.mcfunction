@@ -34,3 +34,6 @@ execute if entity @s[scores={sea_crafter=50015},tag=!SEA_w_crowbar_upg15,tag=!SE
 execute if entity @s[scores={sea_crafter=50016},tag=!SEA_w_crowbar_upg16,tag=!SEA_w_crowbar_upg_REMOVE] run tag @s add SEA_w_crowbar_upg16
 
 function skyblock:sea/p/w/recalc
+
+playsound item.armor.equip_iron player @a ~ ~ ~ 1 1.1
+playsound block.amethyst_block.resonate player @a ~ ~ ~ 1 1.2
