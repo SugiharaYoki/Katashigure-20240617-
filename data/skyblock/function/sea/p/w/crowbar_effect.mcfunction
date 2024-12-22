@@ -11,7 +11,7 @@ execute if entity @s[tag=SEA_w_crowbar_upg10] run attribute @s generic.attack_da
 execute if entity @s[tag=SEA_w_crowbar_upg11] run attribute @s player.entity_interaction_range modifier add sea_weapon:upg_crowbar11 0.3 add_value
 execute if entity @s[tag=SEA_w_crowbar_upg12] run attribute @s generic.attack_speed modifier add sea_weapon:upg_crowbar12 0.2 add_value
 execute if entity @s[tag=SEA_w_crowbar_upg13] run attribute @s player.entity_interaction_range modifier add sea_weapon:upg_crowbar13 0.3 add_value
-execute if entity @s[tag=SEA_w_crowbar_upg14] run attribute @s generic.attack_damage modifier add sea_weapon:upg_crowbar14 0.5 add_value
+execute if entity @s[tag=SEA_w_crowbar_upg14] run attribute @s generic.attack_damage modifier add sea_weapon:upg_crowbar14 1.0 add_value
 execute if entity @s[tag=SEA_w_crowbar_upg15] run attribute @s player.entity_interaction_range modifier add sea_weapon:upg_crowbar15 0.3 add_value
 execute if entity @s[tag=SEA_w_crowbar_upg16] run attribute @s player.entity_interaction_range modifier add sea_weapon:upg_crowbar16 0.3 add_value
 
