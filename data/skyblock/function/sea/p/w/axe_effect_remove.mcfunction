@@ -16,7 +16,7 @@ tag @s remove sea_w_axe_skill_a_3
 attribute @s generic.attack_knockback modifier remove sea_weapon:upg_axe16
 
 
-tag @s remove SEA_w_01_effected
+tag @s remove SEA_w_02_effected
 
 
 #斧头

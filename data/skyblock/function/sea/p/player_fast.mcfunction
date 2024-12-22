@@ -64,5 +64,11 @@ execute as @s[scores={sea_dead=1..}] run function skyblock:sea/death_check
 execute if items entity @s[tag=!SEA_w_01_effected] weapon.mainhand iron_hoe run function skyblock:sea/p/w/crowbar_effect
 execute unless items entity @s[tag=SEA_w_01_effected] weapon.mainhand iron_hoe run function skyblock:sea/p/w/crowbar_effect_remove
 
-execute if items entity @s[tag=!SEA_w_01_effected] weapon.mainhand iron_axe run function skyblock:sea/p/w/axe_effect
-execute unless items entity @s[tag=SEA_w_01_effected] weapon.mainhand iron_axe run function skyblock:sea/p/w/axe_effect_remove
+execute if items entity @s[tag=!SEA_w_02_effected] weapon.mainhand iron_axe run function skyblock:sea/p/w/axe_effect
+execute unless items entity @s[tag=SEA_w_02_effected] weapon.mainhand iron_axe run function skyblock:sea/p/w/axe_effect_remove
+
+execute if items entity @s[tag=!SEA_w_03_effected] weapon.mainhand shears run function skyblock:sea/p/w/flamethrower_effect
+execute unless items entity @s[tag=SEA_w_03_effected] weapon.mainhand shears run function skyblock:sea/p/w/flamethrower_effect_remove
+
+execute if items entity @s[tag=!SEA_w_04_effected] weapon.* shield run function skyblock:sea/p/w/shield_effect
+execute unless items entity @s[tag=SEA_w_04_effected] weapon.* shield run function skyblock:sea/p/w/shield_effect_remove
