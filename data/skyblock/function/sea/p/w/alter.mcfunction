@@ -5,3 +5,4 @@ execute as @s[scores={sea_crafter=59003}] at @s if entity @n[tag=SEAcrafter,dist
 execute as @s[scores={sea_crafter=59004}] at @s if entity @n[tag=SEAcrafter,distance=0..5] run function skyblock:sea/p/w/shield_page
 
 
+execute as @s[scores={sea_crafter=59901}] at @s if entity @n[tag=SEAcrafter,distance=0..5] run function skyblock:sea/p/w/crowbar_effect_reset
