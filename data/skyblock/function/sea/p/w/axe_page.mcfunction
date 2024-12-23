@@ -108,12 +108,13 @@ tellraw @s [{"text":" ","color":"light_purple"},\
 {"selector":"@n[tag=SEA_w_axe_displaymarkerE]","color":"dark_gray"},\
 {"selector":"@n[tag=SEA_w_axe_displaymarkerE]","color":"dark_gray"}]
 
-function skyblock:sea/p/w/crowbar_cost
-function skyblock:sea/p/w/axe_cost
-function skyblock:sea/p/w/flamethrower_cost
-function skyblock:sea/p/w/shield_cost
-tellraw @s[scores={rng1=1..}] [{"text":"剩余可分配点数：","bold":true,"color":"green"},{"bold":false,"score":{"name":"@s","objective":"rng1"},"color":"green"},{"text":"〈全部重置〉","bold":true,"color":"red","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 59902"}}]
-tellraw @s[scores={rng1=..0}] [{"text":"剩余可分配点数：","bold":true,"color":"green"},{"bold":false,"score":{"name":"@s","objective":"rng1"},"color":"red"},{"text":"〈全部重置〉","bold":true,"color":"red","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 59902"}}]
+#function skyblock:sea/p/w/crowbar_cost
+#function skyblock:sea/p/w/axe_cost
+#function skyblock:sea/p/w/flamethrower_cost
+#function skyblock:sea/p/w/shield_cost
+function skyblock:sea/shop_calculation
+tellraw @s[scores={sea_i_echo_shard=1..}] [{"text":"剩余可分配回声碎片：","bold":true,"color":"green"},{"bold":false,"score":{"name":"@s","objective":"sea_i_echo_shard"},"color":"green"},{"text":"〈全部重置〉","bold":true,"color":"red","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 59902"}}]
+tellraw @s[scores={sea_i_echo_shard=..0}] [{"text":"剩余可分配回声碎片：","bold":true,"color":"green"},{"bold":false,"score":{"name":"@s","objective":"sea_i_echo_shard"},"color":"red"},{"text":"〈全部重置〉","bold":true,"color":"red","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 59902"}}]
 
 kill @e[tag=SEA_w_axe_displaymarker,type=marker]
 scoreboard players set @s sea_crafter 0

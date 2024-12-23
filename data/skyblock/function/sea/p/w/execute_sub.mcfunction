@@ -31,6 +31,44 @@ execute if entity @s[scores={sea_crafter=50113},tag=!SEA_w_axe_upg13,tag=!SEA_w_
 execute if entity @s[scores={sea_crafter=50114},tag=!SEA_w_axe_upg14,tag=!SEA_w_axe_upg_REMOVE] run tag @s add SEA_w_axe_upg14
 execute if entity @s[scores={sea_crafter=50115},tag=!SEA_w_axe_upg15,tag=!SEA_w_axe_upg_REMOVE] run tag @s add SEA_w_axe_upg15
 execute if entity @s[scores={sea_crafter=50116},tag=!SEA_w_axe_upg16,tag=!SEA_w_axe_upg_REMOVE] run tag @s add SEA_w_axe_upg16
+execute if entity @s[scores={sea_crafter=50117},tag=!SEA_w_axe_upg17,tag=!SEA_w_axe_upg_REMOVE] run tag @s add SEA_w_axe_upg17
+execute if entity @s[scores={sea_crafter=50118},tag=!SEA_w_axe_upg18,tag=!SEA_w_axe_upg_REMOVE] run tag @s add SEA_w_axe_upg18
+execute if entity @s[scores={sea_crafter=50119},tag=!SEA_w_axe_upg19,tag=!SEA_w_axe_upg_REMOVE] run tag @s add SEA_w_axe_upg19
+execute if entity @s[scores={sea_crafter=50120},tag=!SEA_w_axe_upg20,tag=!SEA_w_axe_upg_REMOVE] run tag @s add SEA_w_axe_upg20
+
+execute if entity @s[scores={sea_crafter=50201},tag=!SEA_w_flamethrower_upg1,tag=!SEA_w_flamethrower_upg_REMOVE] run tag @s add SEA_w_flamethrower_upg1
+execute if entity @s[scores={sea_crafter=50202},tag=!SEA_w_flamethrower_upg2,tag=!SEA_w_flamethrower_upg_REMOVE] run tag @s add SEA_w_flamethrower_upg2
+execute if entity @s[scores={sea_crafter=50203},tag=!SEA_w_flamethrower_upg3,tag=!SEA_w_flamethrower_upg_REMOVE] run tag @s add SEA_w_flamethrower_upg3
+execute if entity @s[scores={sea_crafter=50204},tag=!SEA_w_flamethrower_upg4,tag=!SEA_w_flamethrower_upg_REMOVE] run tag @s add SEA_w_flamethrower_upg4
+execute if entity @s[scores={sea_crafter=50205},tag=!SEA_w_flamethrower_upg5,tag=!SEA_w_flamethrower_upg_REMOVE] run tag @s add SEA_w_flamethrower_upg5
+execute if entity @s[scores={sea_crafter=50206},tag=!SEA_w_flamethrower_upg6,tag=!SEA_w_flamethrower_upg_REMOVE] run tag @s add SEA_w_flamethrower_upg6
+execute if entity @s[scores={sea_crafter=50207},tag=!SEA_w_flamethrower_upg7,tag=!SEA_w_flamethrower_upg_REMOVE] run tag @s add SEA_w_flamethrower_upg7
+execute if entity @s[scores={sea_crafter=50208},tag=!SEA_w_flamethrower_upg8,tag=!SEA_w_flamethrower_upg_REMOVE] run tag @s add SEA_w_flamethrower_upg8
+execute if entity @s[scores={sea_crafter=50209},tag=!SEA_w_flamethrower_upg9,tag=!SEA_w_flamethrower_upg_REMOVE] run tag @s add SEA_w_flamethrower_upg9
+execute if entity @s[scores={sea_crafter=50210},tag=!SEA_w_flamethrower_upg10,tag=!SEA_w_flamethrower_upg_REMOVE] run tag @s add SEA_w_flamethrower_upg10
+execute if entity @s[scores={sea_crafter=50211},tag=!SEA_w_flamethrower_upg11,tag=!SEA_w_flamethrower_upg_REMOVE] run tag @s add SEA_w_flamethrower_upg11
+execute if entity @s[scores={sea_crafter=50212},tag=!SEA_w_flamethrower_upg12,tag=!SEA_w_flamethrower_upg_REMOVE] run tag @s add SEA_w_flamethrower_upg12
+execute if entity @s[scores={sea_crafter=50213},tag=!SEA_w_flamethrower_upg13,tag=!SEA_w_flamethrower_upg_REMOVE] run tag @s add SEA_w_flamethrower_upg13
+execute if entity @s[scores={sea_crafter=50214},tag=!SEA_w_flamethrower_upg14,tag=!SEA_w_flamethrower_upg_REMOVE] run tag @s add SEA_w_flamethrower_upg14
+execute if entity @s[scores={sea_crafter=50215},tag=!SEA_w_flamethrower_upg15,tag=!SEA_w_flamethrower_upg_REMOVE] run tag @s add SEA_w_flamethrower_upg15
+execute if entity @s[scores={sea_crafter=50216},tag=!SEA_w_flamethrower_upg16,tag=!SEA_w_flamethrower_upg_REMOVE] run tag @s add SEA_w_flamethrower_upg16
+
+execute if entity @s[scores={sea_crafter=50301},tag=!SEA_w_shield_upg1,tag=!SEA_w_shield_upg_REMOVE] run tag @s add SEA_w_shield_upg1
+execute if entity @s[scores={sea_crafter=50302},tag=!SEA_w_shield_upg2,tag=!SEA_w_shield_upg_REMOVE] run tag @s add SEA_w_shield_upg2
+execute if entity @s[scores={sea_crafter=50303},tag=!SEA_w_shield_upg3,tag=!SEA_w_shield_upg_REMOVE] run tag @s add SEA_w_shield_upg3
+execute if entity @s[scores={sea_crafter=50304},tag=!SEA_w_shield_upg4,tag=!SEA_w_shield_upg_REMOVE] run tag @s add SEA_w_shield_upg4
+execute if entity @s[scores={sea_crafter=50305},tag=!SEA_w_shield_upg5,tag=!SEA_w_shield_upg_REMOVE] run tag @s add SEA_w_shield_upg5
+execute if entity @s[scores={sea_crafter=50306},tag=!SEA_w_shield_upg6,tag=!SEA_w_shield_upg_REMOVE] run tag @s add SEA_w_shield_upg6
+execute if entity @s[scores={sea_crafter=50307},tag=!SEA_w_shield_upg7,tag=!SEA_w_shield_upg_REMOVE] run tag @s add SEA_w_shield_upg7
+execute if entity @s[scores={sea_crafter=50308},tag=!SEA_w_shield_upg8,tag=!SEA_w_shield_upg_REMOVE] run tag @s add SEA_w_shield_upg8
+execute if entity @s[scores={sea_crafter=50309},tag=!SEA_w_shield_upg9,tag=!SEA_w_shield_upg_REMOVE] run tag @s add SEA_w_shield_upg9
+execute if entity @s[scores={sea_crafter=50310},tag=!SEA_w_shield_upg10,tag=!SEA_w_shield_upg_REMOVE] run tag @s add SEA_w_shield_upg10
+execute if entity @s[scores={sea_crafter=50311},tag=!SEA_w_shield_upg11,tag=!SEA_w_shield_upg_REMOVE] run tag @s add SEA_w_shield_upg11
+execute if entity @s[scores={sea_crafter=50312},tag=!SEA_w_shield_upg12,tag=!SEA_w_shield_upg_REMOVE] run tag @s add SEA_w_shield_upg12
+execute if entity @s[scores={sea_crafter=50313},tag=!SEA_w_shield_upg13,tag=!SEA_w_shield_upg_REMOVE] run tag @s add SEA_w_shield_upg13
+execute if entity @s[scores={sea_crafter=50314},tag=!SEA_w_shield_upg14,tag=!SEA_w_shield_upg_REMOVE] run tag @s add SEA_w_shield_upg14
+execute if entity @s[scores={sea_crafter=50315},tag=!SEA_w_shield_upg15,tag=!SEA_w_shield_upg_REMOVE] run tag @s add SEA_w_shield_upg15
+execute if entity @s[scores={sea_crafter=50316},tag=!SEA_w_shield_upg16,tag=!SEA_w_shield_upg_REMOVE] run tag @s add SEA_w_shield_upg16
 
 function skyblock:sea/p/w/recalc
 

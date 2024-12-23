@@ -1,3 +1,21 @@
+
+give @s[tag=SEA_w_axe_upg1] echo_shard 1
+give @s[tag=SEA_w_axe_upg2] echo_shard 1
+give @s[tag=SEA_w_axe_upg3] echo_shard 2
+give @s[tag=SEA_w_axe_upg4] echo_shard 1
+give @s[tag=SEA_w_axe_upg5] echo_shard 2
+give @s[tag=SEA_w_axe_upg6] echo_shard 1
+give @s[tag=SEA_w_axe_upg7] echo_shard 1
+give @s[tag=SEA_w_axe_upg8] echo_shard 2
+give @s[tag=SEA_w_axe_upg9] echo_shard 2
+give @s[tag=SEA_w_axe_upg10] echo_shard 4
+give @s[tag=SEA_w_axe_upg11] echo_shard 2
+give @s[tag=SEA_w_axe_upg12] echo_shard 3
+give @s[tag=SEA_w_axe_upg13] echo_shard 1
+give @s[tag=SEA_w_axe_upg14] echo_shard 2
+give @s[tag=SEA_w_axe_upg15] echo_shard 3
+give @s[tag=SEA_w_axe_upg16] echo_shard 2
+
 tag @s remove SEA_w_axe_upg1
 tag @s remove SEA_w_axe_upg2
 tag @s remove SEA_w_axe_upg3

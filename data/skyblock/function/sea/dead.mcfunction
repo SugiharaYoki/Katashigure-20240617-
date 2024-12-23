@@ -325,3 +325,4 @@ tag @s remove SEA_w_08_effected
 
 #不再用到的tag
 tag @s remove sea_t_axeparry1
+tag @s remove sea_t_parry1

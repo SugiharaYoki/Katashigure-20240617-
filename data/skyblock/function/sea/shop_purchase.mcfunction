@@ -1,13 +1,13 @@
 playsound minecraft:ui.button.click master @s ~ ~ ~ 0.3 1.5 0.4
 function skyblock:sea/shop_calculation
 
-execute if items entity @s container.* *[custom_data={sea_crowbar:true}] if score @s sea_crafter matches 10001 as @s[scores={sea_i_emerald=..3}] run tellraw @s {"text":"失败！余额不足！","color":"red"}
-execute if items entity @s container.* *[custom_data={sea_crowbar:true}] if score @s sea_crafter matches 10001 as @s[scores={sea_i_emerald=4..}] run tag @s add sea_purchase_pass
-execute if entity @s[tag=sea_purchase_pass] run playsound minecraft:item.armor.equip_iron neutral @s ~ ~ ~ 100
-execute if entity @s[tag=sea_purchase_pass] run clear @s iron_hoe[custom_data={sea_crowbar:true}] 1
-execute if entity @s[tag=sea_purchase_pass] run give @s iron_hoe[custom_name='{"text":"撬棍·改","italic":false,"color":"red"}',custom_data={sea_crowbar2:true},attribute_modifiers=[{type:"generic.attack_damage",slot:"mainhand",id:"sea_weapon:002_01",amount:2.5,operation:"add_value"},{type:"generic.attack_speed",slot:"mainhand",id:"sea_weapon:002_02",amount:-1.4,operation:"add_value"}],unbreakable={}]
-execute if entity @s[tag=sea_purchase_pass] run scoreboard players remove @s sea_i_emerald 4
-tag @s remove sea_purchase_pass
+#execute if items entity @s container.* *[custom_data={sea_crowbar:true}] if score @s sea_crafter matches 10001 as @s[scores={sea_i_emerald=..3}] run tellraw @s {"text":"失败！余额不足！","color":"red"}
+#execute if items entity @s container.* *[custom_data={sea_crowbar:true}] if score @s sea_crafter matches 10001 as @s[scores={sea_i_emerald=4..}] run tag @s add sea_purchase_pass
+#execute if entity @s[tag=sea_purchase_pass] run playsound minecraft:item.armor.equip_iron neutral @s ~ ~ ~ 100
+#execute if entity @s[tag=sea_purchase_pass] run clear @s iron_hoe[custom_data={sea_crowbar:true}] 1
+#execute if entity @s[tag=sea_purchase_pass] run give @s iron_hoe[custom_name='{"text":"撬棍·改","italic":false,"color":"red"}',custom_data={sea_crowbar2:true},attribute_modifiers=[{type:"generic.attack_damage",slot:"mainhand",id:"sea_weapon:002_01",amount:2.5,operation:"add_value"},{type:"generic.attack_speed",slot:"mainhand",id:"sea_weapon:002_02",amount:-1.4,operation:"add_value"}],unbreakable={}]
+#execute if entity @s[tag=sea_purchase_pass] run scoreboard players remove @s sea_i_emerald 4
+#tag @s remove sea_purchase_pass
 
 execute if items entity @s container.* *[custom_data={sea_crowbar2:true}] if score @s sea_crafter matches 10002 as @s[scores={sea_i_emerald=..19}] run tellraw @s {"text":"失败！余额不足！","color":"red"}
 execute if items entity @s container.* *[custom_data={sea_crowbar2:true}] if score @s sea_crafter matches 10002 as @s[scores={sea_i_emerald=20..}] run tag @s add sea_purchase_pass
@@ -47,13 +47,13 @@ execute if entity @s[tag=sea_purchase_pass] run scoreboard players remove @s sea
 tag @s remove sea_purchase_pass
 
 #消防斧
-execute if items entity @s container.* *[custom_data={sea_safeaxe:true}] if score @s sea_crafter matches 10008 as @s[scores={sea_i_emerald=..14}] run tellraw @s {"text":"失败！余额不足！","color":"red"}
-execute if items entity @s container.* *[custom_data={sea_safeaxe:true}] if score @s sea_crafter matches 10008 as @s[scores={sea_i_emerald=15..}] run tag @s add sea_purchase_pass
-execute if entity @s[tag=sea_purchase_pass] run playsound minecraft:item.armor.equip_iron neutral @s ~ ~ ~ 100
-execute if entity @s[tag=sea_purchase_pass] run clear @s iron_axe[custom_data={sea_safeaxe:true}] 1
-execute if entity @s[tag=sea_purchase_pass] run give @s iron_axe[custom_name='{"text":"消防斧·改","italic":false,"color":"red"}',custom_data={sea_safeaxe2:true},attribute_modifiers=[{type:"generic.attack_damage",slot:"mainhand",id:"sea_weapon:005_01",amount:8.0,operation:"add_value"},{type:"generic.attack_speed",slot:"mainhand",id:"sea_weapon:005_02",amount:-3.1,operation:"add_value"}],enchantments={knockback:1},unbreakable={}]
-execute if entity @s[tag=sea_purchase_pass] run scoreboard players remove @s sea_i_emerald 15
-tag @s remove sea_purchase_pass
+#execute if items entity @s container.* *[custom_data={sea_safeaxe:true}] if score @s sea_crafter matches 10008 as @s[scores={sea_i_emerald=..14}] run tellraw @s {"text":"失败！余额不足！","color":"red"}
+#execute if items entity @s container.* *[custom_data={sea_safeaxe:true}] if score @s sea_crafter matches 10008 as @s[scores={sea_i_emerald=15..}] run tag @s add sea_purchase_pass
+#execute if entity @s[tag=sea_purchase_pass] run playsound minecraft:item.armor.equip_iron neutral @s ~ ~ ~ 100
+#execute if entity @s[tag=sea_purchase_pass] run clear @s iron_axe[custom_data={sea_safeaxe:true}] 1
+#execute if entity @s[tag=sea_purchase_pass] run give @s iron_axe[custom_name='{"text":"消防斧·改","italic":false,"color":"red"}',custom_data={sea_safeaxe2:true},attribute_modifiers=[{type:"generic.attack_damage",slot:"mainhand",id:"sea_weapon:005_01",amount:8.0,operation:"add_value"},{type:"generic.attack_speed",slot:"mainhand",id:"sea_weapon:005_02",amount:-3.1,operation:"add_value"}],enchantments={knockback:1},unbreakable={}]
+#execute if entity @s[tag=sea_purchase_pass] run scoreboard players remove @s sea_i_emerald 15
+#tag @s remove sea_purchase_pass
 execute if items entity @s container.* *[custom_data={sea_safeaxe2:true}] if score @s sea_crafter matches 10023 as @s[scores={sea_i_emerald=..29}] run tellraw @s {"text":"失败！余额不足！","color":"red"}
 execute if items entity @s container.* *[custom_data={sea_safeaxe2:true}] if score @s sea_crafter matches 10023 as @s[scores={sea_i_emerald=30..}] run tag @s add sea_purchase_pass
 execute if entity @s[tag=sea_purchase_pass] run playsound minecraft:item.armor.equip_iron neutral @s ~ ~ ~ 100
@@ -83,13 +83,13 @@ execute if entity @s[tag=sea_purchase_pass] run give @s golden_axe[custom_name='
 execute if entity @s[tag=sea_purchase_pass] run scoreboard players remove @s sea_i_emerald 90
 tag @s remove sea_purchase_pass
 #战斧
-execute if items entity @s container.* *[custom_data={sea_safeaxe:true}] if score @s sea_crafter matches 10009 as @s[scores={sea_i_emerald=..14}] run tellraw @s {"text":"失败！余额不足！","color":"red"}
-execute if items entity @s container.* *[custom_data={sea_safeaxe:true}] if score @s sea_crafter matches 10009 as @s[scores={sea_i_emerald=15..}] run tag @s add sea_purchase_pass
-execute if entity @s[tag=sea_purchase_pass] run playsound minecraft:item.armor.equip_iron neutral @s ~ ~ ~ 100
-execute if entity @s[tag=sea_purchase_pass] run clear @s iron_axe[custom_data={sea_safeaxe:true}] 1
-execute if entity @s[tag=sea_purchase_pass] run give @s netherite_axe[custom_name='{"text":"战斧","italic":false,"color":"red"}',custom_data={sea_axe:true},attribute_modifiers=[{type:"generic.attack_damage",slot:"mainhand",id:"sea_weapon:006_01",amount:6.5,operation:"add_value"},{type:"generic.attack_speed",slot:"mainhand",id:"sea_weapon:006_02",amount:-2.8,operation:"add_value"},{type:"player.entity_interaction_range",slot:"mainhand",id:"sea_weapon:006_03",amount:0.25,operation:"add_value"}],unbreakable={},lore=['{"text":"主手手持 在下蹲时跳起可发动横扫攻击","color":"white","italic":false}','{"text":"正确时机发动可以斩断面前飞行的箭矢","color":"white","italic":false}']]
-execute if entity @s[tag=sea_purchase_pass] run scoreboard players remove @s sea_i_emerald 15
-tag @s remove sea_purchase_pass
+#execute if items entity @s container.* *[custom_data={sea_safeaxe:true}] if score @s sea_crafter matches 10009 as @s[scores={sea_i_emerald=..14}] run tellraw @s {"text":"失败！余额不足！","color":"red"}
+#execute if items entity @s container.* *[custom_data={sea_safeaxe:true}] if score @s sea_crafter matches 10009 as @s[scores={sea_i_emerald=15..}] run tag @s add sea_purchase_pass
+#execute if entity @s[tag=sea_purchase_pass] run playsound minecraft:item.armor.equip_iron neutral @s ~ ~ ~ 100
+#execute if entity @s[tag=sea_purchase_pass] run clear @s iron_axe[custom_data={sea_safeaxe:true}] 1
+#execute if entity @s[tag=sea_purchase_pass] run give @s netherite_axe[custom_name='{"text":"战斧","italic":false,"color":"red"}',custom_data={sea_axe:true},attribute_modifiers=[{type:"generic.attack_damage",slot:"mainhand",id:"sea_weapon:006_01",amount:6.5,operation:"add_value"},{type:"generic.attack_speed",slot:"mainhand",id:"sea_weapon:006_02",amount:-2.8,operation:"add_value"},{type:"player.entity_interaction_range",slot:"mainhand",id:"sea_weapon:006_03",amount:0.25,operation:"add_value"}],unbreakable={},lore=['{"text":"主手手持 在下蹲时跳起可发动横扫攻击","color":"white","italic":false}','{"text":"正确时机发动可以斩断面前飞行的箭矢","color":"white","italic":false}']]
+#execute if entity @s[tag=sea_purchase_pass] run scoreboard players remove @s sea_i_emerald 15
+#tag @s remove sea_purchase_pass
 execute if items entity @s container.* *[custom_data={sea_axe:true}] if score @s sea_crafter matches 10050 as @s[scores={sea_i_emerald=..34}] run tellraw @s {"text":"失败！余额不足！","color":"red"}
 execute if items entity @s container.* *[custom_data={sea_axe:true}] if score @s sea_crafter matches 10050 as @s[scores={sea_i_emerald=35..}] run tag @s add sea_purchase_pass
 execute if entity @s[tag=sea_purchase_pass] run playsound minecraft:item.armor.equip_iron neutral @s ~ ~ ~ 100
@@ -414,16 +414,16 @@ tag @s remove sea_purchase_pass
 
 #盾牌升级
 
-execute if items entity @s container.* *[custom_data={sea_shield:true}] if score @s sea_crafter matches 10014 as @s[scores={sea_i_iron_ingot=..1}] run tellraw @s {"text":"失败！素材不足！","color":"red"}
-execute if items entity @s container.* *[custom_data={sea_shield:true}] if score @s sea_crafter matches 10014 as @s[scores={sea_i_iron_ingot=2..,sea_i_flint=..1}] run tellraw @s {"text":"失败！素材不足！","color":"red"}
-execute if items entity @s container.* *[custom_data={sea_shield:true}] if score @s sea_crafter matches 10014 as @s[scores={sea_i_iron_ingot=2..,sea_i_flint=2..}] run tag @s add sea_purchase_pass
-execute if entity @s[tag=sea_purchase_pass] run playsound minecraft:item.armor.equip_iron neutral @s ~ ~ ~ 100
-execute if entity @s[tag=sea_purchase_pass] run clear @s shield[custom_data={sea_shield:true}] 1
-#execute if entity @s[tag=sea_purchase_pass] run give @s shield[custom_name='{"text":"坚刺盾","italic":false,"color":"red"}',custom_data={sea_shield2:true},attribute_modifiers=[{type:"generic.movement_speed",slot:"hand",id:"sea_armor:006_01",amount:-0.02,operation:"add_value"},{type:"generic.attack_damage",slot:"mainhand",id:"sea_armor:006_02",amount:2.0,operation:"add_value"},{type:"generic.attack_speed",slot:"mainhand",id:"sea_armor:006_02",amount:-2.0,operation:"add_value"},{type:"generic.armor",slot:"hand",id:"sea_armor:006_03",amount:0.5,operation:"add_value"}],lore=['{"text":"主手选至此道具的瞬间获得极短暂无敌（无需右键使用）","color":"white","italic":false}','{"text":"在这期间受到攻击并反击可以造成巨额伤害","color":"white","italic":false}']]
-execute if entity @s[tag=sea_purchase_pass] run give @s shield[custom_name='{"text":"坚刺盾","italic":false,"color":"red"}',custom_data={sea_shield2:true},attribute_modifiers=[{type:"generic.movement_speed",slot:"hand",id:"sea_armor:006_01",amount:-0.02,operation:"add_value"},{type:"generic.armor",slot:"hand",id:"sea_armor:006_03",amount:0.5,operation:"add_value"}],lore=['{"text":"主手选至此道具的瞬间获得极短暂无敌（无需右键使用）","color":"white","italic":false}','{"text":"在这期间受到攻击并反击可以造成巨额伤害","color":"white","italic":false}']]
-execute if entity @s[tag=sea_purchase_pass] run clear @s iron_ingot 2
-execute if entity @s[tag=sea_purchase_pass] run clear @s flint 2
-tag @s remove sea_purchase_pass
+#execute if items entity @s container.* *[custom_data={sea_shield:true}] if score @s sea_crafter matches 10014 as @s[scores={sea_i_iron_ingot=..1}] run tellraw @s {"text":"失败！素材不足！",#"color":"red"}
+#execute if items entity @s container.* *[custom_data={sea_shield:true}] if score @s sea_crafter matches 10014 as @s[scores={sea_i_iron_ingot=2..,sea_i_flint=..1}] run tellraw @s {"text":"失#败！素材不足！","color":"red"}
+#execute if items entity @s container.* *[custom_data={sea_shield:true}] if score @s sea_crafter matches 10014 as @s[scores={sea_i_iron_ingot=2..,sea_i_flint=2..}] run tag @s add #sea_purchase_pass
+#execute if entity @s[tag=sea_purchase_pass] run playsound minecraft:item.armor.equip_iron neutral @s ~ ~ ~ 100
+#execute if entity @s[tag=sea_purchase_pass] run clear @s shield[custom_data={sea_shield:true}] 1
+##execute if entity @s[tag=sea_purchase_pass] run give @s shield[custom_name='{"text":"坚刺盾","italic":false,"color":"red"}',custom_data={sea_shield2:true},attribute_modifiers=#[{type:"generic.movement_speed",slot:"hand",id:"sea_armor:006_01",amount:-0.02,operation:"add_value"},{type:"generic.attack_damage",slot:"mainhand",id:"sea_armor:006_02",amount:2.0,#operation:"add_value"},{type:"generic.attack_speed",slot:"mainhand",id:"sea_armor:006_02",amount:-2.0,operation:"add_value"},{type:"generic.armor",slot:"hand",id:"sea_armor:006_03",amount:0.#5,operation:"add_value"}],lore=['{"text":"主手选至此道具的瞬间获得极短暂无敌（无需右键使用）","color":"white","italic":false}','{"text":"在这期间受到攻击并反击可以造成巨额伤害","color":"white",#"italic":false}']]
+#execute if entity @s[tag=sea_purchase_pass] run give @s shield[custom_name='{"text":"坚刺盾","italic":false,"color":"red"}',custom_data={sea_shield2:true},attribute_modifiers=#[{type:"generic.movement_speed",slot:"hand",id:"sea_armor:006_01",amount:-0.02,operation:"add_value"},{type:"generic.armor",slot:"hand",id:"sea_armor:006_03",amount:0.5,#operation:"add_value"}],lore=['{"text":"主手选至此道具的瞬间获得极短暂无敌（无需右键使用）","color":"white","italic":false}','{"text":"在这期间受到攻击并反击可以造成巨额伤害","color":"white",#"italic":false}']]
+#execute if entity @s[tag=sea_purchase_pass] run clear @s iron_ingot 2
+#execute if entity @s[tag=sea_purchase_pass] run clear @s flint 2
+#tag @s remove sea_purchase_pass
 
 execute if items entity @s container.* *[custom_data={sea_shield2:true}] if score @s sea_crafter matches 10026 as @s[scores={sea_i_iron_ingot=..1}] run tellraw @s {"text":"失败！素材不足！","color":"red"}
 execute if items entity @s container.* *[custom_data={sea_shield2:true}] if score @s sea_crafter matches 10026 as @s[scores={sea_i_iron_ingot=2..,sea_i_flint=..1}] run tellraw @s {"text":"失败！素材不足！","color":"red"}
