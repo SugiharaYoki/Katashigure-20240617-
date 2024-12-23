@@ -95,16 +95,18 @@ execute unless entity @n[tag=SEAedwina] if score SEAboss4_killed rng1 matches 3 
 execute unless entity @n[tag=SEAedwina] run setblock 90227 58 91 minecraft:copper_block
 execute unless entity @n[tag=SEAedwina] at @p[tag=SEAPT] rotated ~ 0 positioned ^ ^ ^-1 run function skyblock:sea/m/boss4
 execute if block 90227 58 91 copper_block run scoreboard players set @n[tag=SEAboss4] rng2 9
+execute if block 90227 58 91 copper_block run data modify entity @n[tag=SEAboss4] NoAI set value 0b
+execute if block 90227 58 91 copper_block run data modify entity @n[tag=SEAboss4] Invulnerable set value 0b
 execute if block 90227 58 91 copper_block run setblock 90227 58 91 minecraft:waxed_copper_block
 
-execute as @n[tag=SEAboss4,scores={rng2=4..},tag=!SEAboss4_phase2] run tellraw @a[tag=SEAPT] {"text": "艾德雯娜：“真不赖，可惜偷偷告诉你，你手上的装备，我也全都有。”","color": "green"}
-execute as @n[tag=SEAboss4,scores={rng2=4..},tag=!SEAboss4_phase2] run tag @s add SEAboss4_phase2
+execute as @n[tag=SEAboss4,scores={rng2=4..5},tag=!SEAboss4_phase2] run tellraw @a[tag=SEAPT] {"text": "艾德雯娜：“真不赖，可惜偷偷告诉你，你手上的装备，我也全都有。”","color": "green"}
+execute as @n[tag=SEAboss4,scores={rng2=4..5},tag=!SEAboss4_phase2] run tag @s add SEAboss4_phase2
 
-execute as @n[tag=SEAboss4,scores={rng2=8..},tag=!SEAboss4_phase3] run tellraw @a[tag=SEAPT] {"text": "艾德雯娜：“没想到能让我陷入苦战呢……我该拿出全部实力了。”","color": "green"}
-execute as @n[tag=SEAboss4,scores={rng2=8..},tag=!SEAboss4_phase3] run scoreboard players set @s rng8 0
-execute as @n[tag=SEAboss4,scores={rng2=8..},tag=!SEAboss4_phase3] run playsound minecraft:item.trident.thunder hostile @a ~ ~ ~ 3 0.83
-execute as @n[tag=SEAboss4,scores={rng2=8..},tag=!SEAboss4_phase3] run particle flame ~ ~ ~ 3 0 3 0.05 40
-execute as @n[tag=SEAboss4,scores={rng2=8..},tag=!SEAboss4_phase3] run tag @s add SEAboss4_phase3
+execute as @n[tag=SEAboss4,scores={rng2=8},tag=!SEAboss4_phase3] run tellraw @a[tag=SEAPT] {"text": "艾德雯娜：“没想到能让我陷入苦战呢……我该拿出全部实力了。”","color": "green"}
+execute as @n[tag=SEAboss4,scores={rng2=8},tag=!SEAboss4_phase3] run scoreboard players set @s rng8 0
+execute as @n[tag=SEAboss4,scores={rng2=8},tag=!SEAboss4_phase3] run playsound minecraft:item.trident.thunder hostile @a ~ ~ ~ 3 0.83
+execute as @n[tag=SEAboss4,scores={rng2=8},tag=!SEAboss4_phase3] run particle flame ~ ~ ~ 3 0 3 0.05 40
+execute as @n[tag=SEAboss4,scores={rng2=8},tag=!SEAboss4_phase3] run tag @s add SEAboss4_phase3
 
 execute as @n[tag=SEAboss4,scores={rng8=1..}] at @s run scoreboard players add @s rng8 1
 
