@@ -114,7 +114,7 @@ execute as @n[tag=sc,scores={sea_4temp2=35}] positioned 90109 122 116 run functi
 execute as @n[tag=sc,scores={sea_4temp2=35}] positioned 90109 122 116 run function skyblock:sea/m/drowned_hat
 execute as @n[tag=sc,scores={sea_4temp2=35}] positioned 90114 122 116 run function skyblock:sea/m/drowned_maintenance
 execute as @n[tag=sc,scores={sea_4temp2=35}] positioned 90112 122 132 run function skyblock:sea/m/drowned_maintenance
-execute as @n[tag=sc,scores={sea_4temp2=35}] positioned 90114 122 116 run function skyblock:sea/m/spider
+execute as @n[tag=sc,scores={sea_4temp2=35}] positioned 90114 122 116 run function skyblock:sea/m/spider_weak
 execute as @n[tag=sc,scores={sea_4temp2=169}] run fill 90109 122 117 90110 123 117 air destroy
 execute as @n[tag=sc,scores={sea_4temp2=219}] run fill 90109 122 117 90110 123 117 air destroy
 
@@ -207,6 +207,7 @@ execute as @n[tag=sc,scores={sea_4temp2=1144}] positioned 90133 122 129 run func
 execute as @n[tag=sc,scores={sea_4temp2=1144}] positioned 90140 115 148 run function skyblock:sea/m/zombie_security2
 execute as @n[tag=sc,scores={sea_4temp2=1144}] positioned 90140 115 148 run function skyblock:sea/m/drowned_shield
 execute as @n[tag=sc,scores={sea_4temp2=1144}] positioned 90140 115 148 run function skyblock:sea/m/drowned_shield
+execute as @n[tag=sc,scores={sea_4temp2=1144}] positioned 90135 123 141 run function skyblock:sea/m/spider_weak
 
 
 
