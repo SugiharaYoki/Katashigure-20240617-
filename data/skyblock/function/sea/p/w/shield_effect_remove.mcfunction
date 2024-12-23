@@ -11,7 +11,7 @@ tag @s remove sea_w_shield_skill_a_2
 
 
 
-tag @s remove SEA_w_02_effected
+tag @s remove SEA_w_04_effected
 
 
 #盾

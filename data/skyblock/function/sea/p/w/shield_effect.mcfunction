@@ -10,7 +10,7 @@ execute if entity @s[tag=SEA_w_shield_upg9] run tag @s add sea_w_shield_skill_b_
 execute if entity @s[tag=SEA_w_shield_upg10] run tag @s add sea_w_shield_skill_a_2
 
 
-tag @s add SEA_w_02_effected
+tag @s add SEA_w_04_effected
 
 #盾
 # 防 速 防 时
