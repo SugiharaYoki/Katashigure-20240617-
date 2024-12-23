@@ -85,7 +85,7 @@ tellraw @s [{"text":" ","color":"light_purple"},\
 {"selector":"@n[tag=SEA_w_shield_displaymarker9]","color":"yellow","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 50309"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：3\n增加盾反的伤害","color":"white"}}}]
 
 tellraw @s [{"text":" ","color":"light_purple"},\
-{"selector":"@n[tag=SEA_w_shield_displaymarker0]","color":"red"},\
+{"selector":"@n[tag=SEA_w_shield_displaymarker0b]","color":"dark_gray"},\
 {"selector":"@n[tag=SEA_w_shield_displaymarker10]","color":"light_purple","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 50310"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：3\n略微增加盾反判定的有效时长","color":"white"}}},\
 {"selector":"@n[tag=SEA_w_shield_displaymarkerE]","color":"dark_gray"},\
 {"selector":"@n[tag=SEA_w_shield_displaymarkerE]","color":"dark_gray"},\
