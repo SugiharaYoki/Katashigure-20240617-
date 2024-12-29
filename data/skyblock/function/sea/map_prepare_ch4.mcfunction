@@ -116,6 +116,7 @@ setblock 90195 46 98 air
 setblock 90220 46 91 air
 setblock 90220 46 90 air
 setblock 90228 46 79 air
+setblock 90139 99 44 air
 setblock 90210 19 112 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:flint"}}
 setblock 90211 19 112 decorated_pot{sherds:["friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd"],item:{count: 3, id:"minecraft:emerald"}}
 setblock 90188 19 109 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 2, id:"minecraft:carrot"}}
@@ -137,6 +138,7 @@ setblock 90195 46 98 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_
 setblock 90220 46 91 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 1, id:"minecraft:golden_carrot"}}
 setblock 90220 46 90 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 2, id:"minecraft:potato"}}
 setblock 90228 46 79 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 2, id:"minecraft:carrot"}}
+setblock 90139 99 44 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 3, id:"minecraft:cooked_beef"}}
 setblock 90245 64 88 air
 setblock 90246 64 88 air
 setblock 90247 64 88 air
