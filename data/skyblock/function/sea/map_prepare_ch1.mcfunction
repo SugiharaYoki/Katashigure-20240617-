@@ -521,3 +521,7 @@ item replace block 90138 115 270 container.14 with echo_shard 2
 
 #红色小蘑菇
 setblock 90074 104 135 air
+
+#第五章通向主平台的通道
+fill 90114 92 96 90112 89 96 minecraft:iron_block
+
