@@ -207,29 +207,36 @@ execute if score @s[scores={rng2=12}] rng6 matches 1001..1090 run playsound ambi
 execute if score @s[scores={rng2=1}] rng6 matches 1040..1090 positioned 90147 83 74 run playsound entity.generic.explode block @a ~ ~ ~ 2 0.9
 execute if score @s[scores={rng2=1}] rng6 matches 1040..1090 positioned 90147 83 74 run particle explosion_emitter ~ ~ ~ 2 2 2 0 3
 execute if score @s[scores={rng2=1}] rng6 matches 1040..1090 positioned 90147 83 74 run particle large_smoke ~ ~ ~ 0.5 0.5 0.5 0.02 88
+execute if score @s rng6 matches 1090.. positioned 90147 83 74 run particle smoke ~ ~ ~ 0.5 0.5 0.5 0.02 8
 
 execute if score @s[scores={rng2=2}] rng6 matches 1040..1090 positioned 90172 78 66 run playsound entity.generic.explode block @a ~ ~ ~ 10 0.7
 execute if score @s[scores={rng2=2}] rng6 matches 1040..1090 positioned 90172 78 66 run particle explosion_emitter ~ ~ ~ 4 2 4 0 5
 execute if score @s[scores={rng2=2}] rng6 matches 1040..1090 positioned 90172 78 66 run particle bubble ~ ~ ~ 6 4 6 0 100
+execute if score @s rng6 matches 1090.. positioned 90147 83 74 run particle bubble ~ ~ ~ 6 4 6 0 20
 
 execute if score @s[scores={rng2=3}] rng6 matches 1040..1090 positioned 90172 78 66 run playsound entity.generic.explode block @a ~ ~ ~ 10 0.5
 execute if score @s[scores={rng2=3}] rng6 matches 1040..1090 positioned 90172 78 66 run particle explosion_emitter ~ ~ ~-5 4 2 4 0 5
 execute if score @s[scores={rng2=3}] rng6 matches 1040..1090 positioned 90172 78 66 run particle bubble ~ ~ ~ 6 4 6 0 100
+execute if score @s rng6 matches 1090.. positioned 90172 78 66 run particle bubble ~ ~ ~ 6 4 6 0 100
 
 execute if score @s[scores={rng2=4}] rng6 matches 1040..1090 positioned 90148 84 55 run playsound entity.generic.explode block @a ~ ~ ~ 2 0.9
 execute if score @s[scores={rng2=4}] rng6 matches 1040..1090 positioned 90148 84 55 run particle explosion_emitter ~ ~ ~ 2 2 2 0 3
 execute if score @s[scores={rng2=4}] rng6 matches 1040..1090 positioned 90148 84 55 run particle large_smoke ~ ~ ~ 0.5 0.5 0.5 0.02 8
+execute if score @s rng6 matches 1090.. positioned 90148 84 55 run particle smoke ~ ~ ~ 0.5 0.5 0.5 0.02 8
 
 execute if score @s[scores={rng2=5}] rng6 matches 1040..1090 positioned 90145 87 66 run playsound entity.generic.explode block @a ~ ~ ~ 2 0.
 execute if score @s[scores={rng2=5}] rng6 matches 1040..1090 positioned 90145 87 66 run particle explosion_emitter ~ ~ ~ 2 2 2 0 3
 execute if score @s[scores={rng2=5}] rng6 matches 1040..1090 positioned 90145 87 66 run particle large_smoke ~ ~ ~ 0.5 0.5 0.5 0.02 8
+execute if score @s rng6 matches 1090.. positioned 90145 87 66 run particle smoke ~ ~ ~ 0.5 0.5 0.5 0.02 8
 
 execute if score @s[scores={rng2=6}] rng6 matches 1040..1090 positioned 90148 87 48 run playsound entity.generic.explode block @a ~ ~ ~ 2 0.9
 execute if score @s[scores={rng2=6}] rng6 matches 1040..1090 positioned 90148 87 48 run particle explosion_emitter ~ ~ ~ 2 2 2 0 3
 execute if score @s[scores={rng2=6}] rng6 matches 1040..1090 positioned 90148 87 48 run particle large_smoke ~ ~ ~ 0.5 0.5 0.5 0.02 88
+execute if score @s rng6 matches 1090.. positioned 90148 87 48 run particle smoke ~ ~ ~ 0.5 0.5 0.5 0.02 8
 
 execute if score @s[scores={rng2=7}] rng6 matches 1040..1090 positioned 90138 84.3 58 run particle smoke ~ ~ ~ 20 0 20 0.05 500
 execute if score @s[scores={rng2=8}] rng6 matches 1040..1090 positioned 90138 84.3 58 run particle large_smoke ~ ~ ~ 20 0 20 0.01 50
+execute if score @s rng6 matches 1090.. positioned 90138 84.3 58 run particle smoke ~ ~ ~ 0.5 0.5 0.5 0.02 8
 
 scoreboard players add @s[scores={rng6=1000..1120}] rng6 1
 
