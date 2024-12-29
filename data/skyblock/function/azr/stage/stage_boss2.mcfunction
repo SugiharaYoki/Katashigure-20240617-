@@ -73,7 +73,7 @@ execute as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run function skyblo
     execute if score tickTimer Azr_system matches 81 run bossbar set azr:boss_hp_bar players @a[tag=azrPlayer]
 
 #AI
-    #每刻有1/8的肯面向最近玩家
+    #每刻有1/8的可能（期望：每8刻）面向最近玩家
     execute if score tickTimer Azr_system matches 152..5000 if score #rng8 Azr_system matches 1 as @e[tag=AzrielBossA,type=illusioner,limit=3,nbt={OnGround:1b}] at @s run tp @s ~ ~ ~ facing entity @p[tag=azrPlayer]
     execute if score tickTimer Azr_system matches 152..5000 run team join AzrBossA @e[tag=AzrielMob,x=-79903,y=37,z=-15,distance=..100]
     #状态效果控制
@@ -390,6 +390,10 @@ execute as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run function skyblo
     execute if score tickTimer Azr_system matches 6001 run kill @e[type=marker,tag=arroworb]
     execute if score tickTimer Azr_system matches 6001 run kill @e[tag=AzrielDecMob]
     execute if score tickTimer Azr_system matches 6001 run kill @e[tag=AzrielMob]
+    execute if score tickTimer Azr_system matches 6001 run tag @n[tag=AzrielBossA] remove AZR_boss2_skill_breakingout
+    execute if score tickTimer Azr_system matches 6001 run tag @n[tag=AzrielBossA] remove AZR_boss2_skill_arrowpince
+    execute if score tickTimer Azr_system matches 6001 run tag @n[tag=AzrielBossA] remove AZR_boss2_skill_stockpile
+
     execute if score tickTimer Azr_system matches 6001 run stopsound @a[tag=azrPlayer]
     execute if score tickTimer Azr_system matches 6001 run bossbar remove azr:boss_hp_bar
     execute if score tickTimer Azr_system matches 6080..6130 as @a[tag=azrPlayer] at @s unless block ~ ~-1 ~ air unless block ~ ~-1 ~ lava unless block ~ ~ ~ lava run spawnpoint @s ~ ~ ~
