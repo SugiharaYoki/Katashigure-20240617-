@@ -364,4 +364,10 @@ execute as @n[tag=SEAedwina] at @s as @e[tag=SEAmob,type=!villager,tag=!SEAedwin
 execute positioned 90140 114 210 if entity @a[tag=SEAPT,distance=..6.5,tag=!SEAPF] if block 90073 103 141 air unless entity @n[tag=SEAchg_spawn_timer_longbridge,distance=0..1] run summon marker ~ ~ ~ {Tags:["SEAchg_spawn_timer","SEAchg_spawn_timer_longbridge"]}
 execute if block 90073 103 141 air as @n[tag=SEAchg_spawn_timer_longbridge,x=90140,y=114,z=210,distance=0..1] run function skyblock:sea/e/ev011
 
-
+execute if block 90136 116 269 acacia_fence if block 90134 116 271 lever[powered=false] \
+if block 90134 116 271 lever[powered=false] \
+if block 90134 116 271 lever[powered=true] \
+if block 90134 116 271 lever[powered=true] \
+if block 90134 116 271 lever[powered=true] \
+if block 90134 116 271 lever[powered=false] \
+run fill 90136 116 269 90136 115 269 air destroy
