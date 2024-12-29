@@ -19,4 +19,4 @@ summon minecraft:interaction 90126 89.3 58 {CustomName:'[{"text":"多功能工�
 summon minecraft:marker 90126 89 59 {Tags:["SEAcrafter_tp","SEAcrafter_tp15"]}
 fill 90114 91 96 90112 89 96 minecraft:air
 
-
+#第五章出生点90146 84 42
