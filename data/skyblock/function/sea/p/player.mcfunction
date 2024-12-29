@@ -29,6 +29,7 @@ clear @s[gamemode=!creative] structure_void
 clear @s[gamemode=!creative] crimson_button
 clear @s[gamemode=!creative] warped_button
 clear @s[gamemode=!creative] stone_button
+clear @s[gamemode=!creative] acacia_fence
 
 tag @s remove PVP_see
 
