@@ -176,6 +176,7 @@ execute if score @s rng6 matches 1011 positioned 90145 84 47 run function skyblo
 execute if score @s rng6 matches 1006..1010 positioned 90148 84 47 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
 execute if score @s rng6 matches 1006..1010 positioned 90148 84 47 run particle sculk_soul ~ ~1 ~ 0.3 0.5 0.3 0.05 10
 execute if score @s rng6 matches 1011 positioned 90148 84 47 run function skyblock:sea/m/zombie_knight
+execute if score @s rng6 matches 1011 positioned 90148 84 47 run effect give @a[tag=SEAPT,distance=0..10] slowness 3 9 true
 
 execute if score @s rng6 matches 1012..1035 as @n[tag=SEAedwina] at @s anchored eyes if entity @n[tag=SEAmob,distance=0.01..2] run item replace entity @s weapon.mainhand with iron_axe
 execute if score @s rng6 matches 1012..1035 as @n[tag=SEAedwina] at @s anchored eyes if entity @n[tag=SEAmob,distance=0.01..2] run particle sweep_attack ^ ^ ^0.5 0.1 0.1 0.1 0 2
@@ -189,9 +190,13 @@ execute if score @s rng6 matches 1047 at @n[tag=SEAedwina] run tellraw @a[distan
 
 execute if score @s rng6 matches 1040..1070 as @n[tag=SEAedwina] at @s run tp @s ~ ~ ~ facing entity @n[tag=SEAmob]
 execute if score @s rng6 matches 1052 as @n[tag=SEAedwina] at @s facing entity @n[tag=SEAmob,distance=0.01..15] eyes run tp @s ^ ^ ^1.7
-execute if score @s rng6 matches 1055 as @n[tag=SEAedwina] at @s facing entity @n[tag=SEAmob,distance=0.01..15] eyes run tp @s ^ ^ ^1.5
-execute if score @s rng6 matches 1058 as @n[tag=SEAedwina] at @s facing entity @n[tag=SEAmob,distance=0.01..15] eyes run tp @s ^ ^ ^1.3
-execute if score @s rng6 matches 1064 as @n[tag=SEAedwina] at @s facing entity @n[tag=SEAmob,distance=0.01..15] eyes run tp @s ^ ^ ^1.3
+execute if score @s rng6 matches 1053 as @n[tag=SEAedwina] at @s facing entity @n[tag=SEAmob,distance=0.01..15] eyes run tp @s ^ ^ ^1.5
+execute if score @s rng6 matches 1054 as @n[tag=SEAedwina] at @s facing entity @n[tag=SEAmob,distance=0.01..15] eyes run tp @s ^ ^ ^1.3
+execute if score @s rng6 matches 1055 as @n[tag=SEAedwina] at @s facing entity @n[tag=SEAmob,distance=0.01..15] eyes run tp @s ^ ^ ^1.3
+execute if score @s rng6 matches 1082 as @n[tag=SEAedwina] at @s facing entity @n[tag=SEAmob,distance=0.01..15] eyes run tp @s ^ ^ ^1.7
+execute if score @s rng6 matches 1083 as @n[tag=SEAedwina] at @s facing entity @n[tag=SEAmob,distance=0.01..15] eyes run tp @s ^ ^ ^1.5
+execute if score @s rng6 matches 1084 as @n[tag=SEAedwina] at @s facing entity @n[tag=SEAmob,distance=0.01..15] eyes run tp @s ^ ^ ^1.3
+execute if score @s rng6 matches 1085 as @n[tag=SEAedwina] at @s facing entity @n[tag=SEAmob,distance=0.01..15] eyes run tp @s ^ ^ ^1.3
 
 execute if score @s rng6 matches 1040..1067 as @n[tag=SEAedwina] at @s anchored eyes if entity @n[tag=SEAmob,distance=0.01..2] run item replace entity @s weapon.mainhand with iron_axe
 execute if score @s rng6 matches 1040..1067 as @n[tag=SEAedwina] at @s anchored eyes if entity @n[tag=SEAmob,distance=0.01..2] run particle sweep_attack ^ ^ ^0.5 0.1 0.1 0.1 0 2
@@ -206,6 +211,7 @@ execute if score @s[scores={rng2=12}] rng6 matches 1001..1090 run playsound ambi
 execute if score @s[scores={rng2=1}] rng6 matches 1040..1090 positioned 90147 83 74 run playsound entity.generic.explode block @a ~ ~ ~ 2 0.9
 execute if score @s[scores={rng2=1}] rng6 matches 1040..1090 positioned 90147 83 74 run particle explosion_emitter ~ ~ ~ 2 2 2 0 3
 execute if score @s[scores={rng2=1}] rng6 matches 1040..1090 positioned 90147 83 74 run particle large_smoke ~ ~ ~ 0.5 0.5 0.5 0.02 88
+execute if score @s rng6 matches 1090.. positioned 90147 83 74 run particle smoke ~ ~ ~ 0.5 0.5 0.5 0.02 8
 
 execute if score @s[scores={rng2=2}] rng6 matches 1040..1090 positioned 90172 78 66 run playsound entity.generic.explode block @a ~ ~ ~ 10 0.7
 execute if score @s[scores={rng2=2}] rng6 matches 1040..1090 positioned 90172 78 66 run particle explosion_emitter ~ ~ ~ 4 2 4 0 5
@@ -218,17 +224,21 @@ execute if score @s[scores={rng2=3}] rng6 matches 1040..1090 positioned 90172 78
 execute if score @s[scores={rng2=4}] rng6 matches 1040..1090 positioned 90148 84 55 run playsound entity.generic.explode block @a ~ ~ ~ 2 0.9
 execute if score @s[scores={rng2=4}] rng6 matches 1040..1090 positioned 90148 84 55 run particle explosion_emitter ~ ~ ~ 2 2 2 0 3
 execute if score @s[scores={rng2=4}] rng6 matches 1040..1090 positioned 90148 84 55 run particle large_smoke ~ ~ ~ 0.5 0.5 0.5 0.02 8
+execute if score @s rng6 matches 1090.. positioned 90148 84 55 run particle smoke ~ ~ ~ 0.5 0.5 0.5 0.02 8
 
 execute if score @s[scores={rng2=5}] rng6 matches 1040..1090 positioned 90145 87 66 run playsound entity.generic.explode block @a ~ ~ ~ 2 0.
 execute if score @s[scores={rng2=5}] rng6 matches 1040..1090 positioned 90145 87 66 run particle explosion_emitter ~ ~ ~ 2 2 2 0 3
 execute if score @s[scores={rng2=5}] rng6 matches 1040..1090 positioned 90145 87 66 run particle large_smoke ~ ~ ~ 0.5 0.5 0.5 0.02 8
+execute if score @s rng6 matches 1090.. positioned 90145 87 66 run particle smoke ~ ~ ~ 0.5 0.5 0.5 0.02 8
 
 execute if score @s[scores={rng2=6}] rng6 matches 1040..1090 positioned 90148 87 48 run playsound entity.generic.explode block @a ~ ~ ~ 2 0.9
 execute if score @s[scores={rng2=6}] rng6 matches 1040..1090 positioned 90148 87 48 run particle explosion_emitter ~ ~ ~ 2 2 2 0 3
 execute if score @s[scores={rng2=6}] rng6 matches 1040..1090 positioned 90148 87 48 run particle large_smoke ~ ~ ~ 0.5 0.5 0.5 0.02 88
+execute if score @s rng6 matches 1090.. positioned 90148 87 48 run particle smoke ~ ~ ~ 0.5 0.5 0.5 0.02 8
 
 execute if score @s[scores={rng2=7}] rng6 matches 1040..1090 positioned 90138 84.3 58 run particle smoke ~ ~ ~ 20 0 20 0.05 500
 execute if score @s[scores={rng2=8}] rng6 matches 1040..1090 positioned 90138 84.3 58 run particle large_smoke ~ ~ ~ 20 0 20 0.01 50
+execute if score @s rng6 matches 1090.. positioned 90138 84.3 58 run particle smoke ~ ~ ~ 0.5 0.5 0.5 0.02 8
 
 scoreboard players add @s[scores={rng6=1000..1120}] rng6 1
 
