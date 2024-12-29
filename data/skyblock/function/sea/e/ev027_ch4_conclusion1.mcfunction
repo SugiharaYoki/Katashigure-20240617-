@@ -274,6 +274,7 @@ execute if score @s rng6 matches 1269 run scoreboard players set @a[tag=SEAPT,sc
 
 execute if score @s rng6 matches 1269 as @a[tag=SEAPT] at @s run tellraw @s {"text":"『厄珀娅的悲歌』第四章 完","color":"blue","bold": true}
 execute if score @s rng6 matches 1269 as @a[tag=SEAPT] at @s run playsound music_disc.creator_music_box music @a[tag=SEAPT] ~ ~ ~ 1000 0.7
+execute if score @s rng6 matches 1269 as @a[tag=SEAPT] if score @s sea_speedrun_ch4 > sc sea_speedrun_ch4 run scoreboard players operation @s sea_speedrun_ch4 = sc sea_speedrun_ch4
 execute if score @s rng6 matches 1269 run function skyblock:sea/map_prepare_ch5
 execute if score @s rng6 matches 1269..1279 run kill @s
 
@@ -284,3 +285,4 @@ execute if score @s rng6 matches 1031 run fill 90146 88 59 90145 88 60 air destr
 execute if score @s rng6 matches 1067 run fill 90148 83 70 90147 83 69 air destroy
 execute if score @s rng6 matches 1046 run fill 90144 86 85 90144 85 84 air destroy
 
+#/execute as @p at @s run particle minecraft:mycelium ~ ~ ~ 10 10 10 0 100
