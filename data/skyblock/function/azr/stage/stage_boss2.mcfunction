@@ -1,6 +1,6 @@
 execute as @n[tag=AzrielBossA,type=illusioner] at @s run function skyblock:azr/stage/boss2/breakingout
 execute as @n[tag=AzrielBossA,type=illusioner] at @s run function skyblock:azr/stage/boss2/arrowpince
-execute as @n[tag=AzrielBossA,type=illusioner] at @s run function skyblock:azr/stage/boss2/stockpile
+#execute as @n[tag=AzrielBossA,type=illusioner] at @s run function skyblock:azr/stage/boss2/stockpile
 
 execute as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run function skyblock:sea/experimental/zanei_flat_01
 execute as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run function skyblock:sea/experimental/zanei_flat_02
