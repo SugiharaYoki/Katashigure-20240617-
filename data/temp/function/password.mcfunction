@@ -2,7 +2,6 @@ tag @a[tag=SEAPF] add DEBUG119291
 tag @a[tag=DEBUG_password] add DEBUG119291
 tag @a[tag=!SEAPF,tag=!DEBUG_password] remove DEBUG119291
 
-
 particle dust{color:[1.0f, 0.0f, 0.0f],scale:1.0} 90104.5 138.5 125.5 0 0 0 0 1 force @a[tag=DEBUG119291,distance=..10]
 particle dust{color:[1.0f, 0.0f, 0.0f],scale:1.0} 90104.5 138.5 124.5 0 0 0 0 1 force @a[tag=DEBUG119291,distance=..10]
 particle dust{color:[0.0f, 1.0f, 0.0f],scale:1.0} 90104.5 138.5 123.5 0 0 0 0 1 force @a[tag=DEBUG119291,distance=..10]
@@ -34,7 +33,8 @@ particle dust{color:[0.0f, 1.0f, 0.0f],scale:1.0} 90187.5 28.5 116.5 0 0 0 0 1 f
 particle dust{color:[1.0f, 0.0f, 0.0f],scale:1.0} 90187.5 28.5 118.5 0 0 0 0 1 force @a[tag=DEBUG119291,distance=..10]
 
 particle dust{color:[1.0f, 0.0f, 0.0f],scale:1.0} 90134.5 116.5 271.5 0 0 0 0 1 force @a[tag=DEBUG119291,distance=..10]
-particle dust{color:[0.0f, 1.0f, 0.0f],scale:1.0} 90133.5 116.5 271.5 0 0 0 0 1 force @a[tag=DEBUG119291,distance=..10]
+particle dust{color:[1.0f, 0.0f, 0.0f],scale:1.0} 90133.5 116.5 271.5 0 0 0 0 1 force @a[tag=DEBUG119291,distance=..10]
 particle dust{color:[0.0f, 1.0f, 0.0f],scale:1.0} 90132.5 116.5 271.5 0 0 0 0 1 force @a[tag=DEBUG119291,distance=..10]
 particle dust{color:[0.0f, 1.0f, 0.0f],scale:1.0} 90131.5 116.5 271.5 0 0 0 0 1 force @a[tag=DEBUG119291,distance=..10]
-particle dust{color:[1.0f, 0.0f, 0.0f],scale:1.0} 90130.5 116.5 271.5 0 0 0 0 1 force @a[tag=DEBUG119291,distance=..10]
+particle dust{color:[0.0f, 1.0f, 0.0f],scale:1.0} 90130.5 116.5 271.5 0 0 0 0 1 force @a[tag=DEBUG119291,distance=..10]
+particle dust{color:[1.0f, 0.0f, 0.0f],scale:1.0} 90129.5 116.5 271.5 0 0 0 0 1 force @a[tag=DEBUG119291,distance=..10]
