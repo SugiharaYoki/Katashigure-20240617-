@@ -1,6 +1,6 @@
-execute as @n[tag=AzrielBossA,type=illusioner] at @s run function skyblock:azr/stage/boss2/breakingout
-execute as @n[tag=AzrielBossA,type=illusioner] at @s run function skyblock:azr/stage/boss2/arrowpince
-execute as @n[tag=AzrielBossA,type=illusioner] at @s run function skyblock:azr/stage/boss2/stockpile
+execute as @n[tag=AzrielBossA,type=illusioner,tag=AZR_boss2_skill_breakingout] at @s run function skyblock:azr/stage/boss2/breakingout
+execute as @n[tag=AzrielBossA,type=illusioner,tag=AZR_boss2_skill_arrowpince] at @s run function skyblock:azr/stage/boss2/arrowpince
+execute as @n[tag=AzrielBossA,type=illusioner,tag=AZR_boss2_skill_stockpile] at @s run function skyblock:azr/stage/boss2/stockpile
 
 execute as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run function skyblock:sea/experimental/zanei_flat_01
 execute as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run function skyblock:sea/experimental/zanei_flat_02
@@ -278,35 +278,25 @@ execute as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run function skyblo
     execute if score tickTimer Azr_system matches 3001 run particle minecraft:reverse_portal -79931 39 88 0 0 0 1.5 1800
     execute if score tickTimer Azr_system matches 3001 run particle minecraft:enchant -79931 39 88 3 3 3 1.5 800
     # Wave II 循环直到死亡 3110..4150
-    execute if score tickTimer Azr_system matches 3310 run data merge entity @n[tag=AzrielBossA,type=illusioner] {NoAI:1b}
     execute if score tickTimer Azr_system matches 3310 if score #rng3 Azr_system matches 1 run tag @n[tag=AzrielBossA,type=illusioner] add AZR_boss2_skill_breakingout
     execute if score tickTimer Azr_system matches 3310 if score #rng3 Azr_system matches 2 run tag @n[tag=AzrielBossA,type=illusioner] add AZR_boss2_skill_arrowpince
     execute if score tickTimer Azr_system matches 3310 if score #rng3 Azr_system matches 3 run tag @n[tag=AzrielBossA,type=illusioner] add AZR_boss2_skill_stockpile
-    execute if score tickTimer Azr_system matches 3330 run data merge entity @n[tag=AzrielBossA,type=illusioner] {NoAI:0b}
 
-    execute if score tickTimer Azr_system matches 3510 run data merge entity @n[tag=AzrielBossA,type=illusioner] {NoAI:1b}
     execute if score tickTimer Azr_system matches 3510 if score #rng3 Azr_system matches 1 run tag @n[tag=AzrielBossA,type=illusioner] add AZR_boss2_skill_breakingout
     execute if score tickTimer Azr_system matches 3510 if score #rng3 Azr_system matches 2 run tag @n[tag=AzrielBossA,type=illusioner] add AZR_boss2_skill_arrowpince
     execute if score tickTimer Azr_system matches 3510 if score #rng3 Azr_system matches 3 run tag @n[tag=AzrielBossA,type=illusioner] add AZR_boss2_skill_stockpile
-    execute if score tickTimer Azr_system matches 3530 run data merge entity @n[tag=AzrielBossA,type=illusioner] {NoAI:0b}
 
-    execute if score tickTimer Azr_system matches 3710 run data merge entity @n[tag=AzrielBossA,type=illusioner] {NoAI:1b}
     execute if score tickTimer Azr_system matches 3710 if score #rng3 Azr_system matches 1 run tag @n[tag=AzrielBossA,type=illusioner] add AZR_boss2_skill_breakingout
     execute if score tickTimer Azr_system matches 3710 if score #rng3 Azr_system matches 2 run tag @n[tag=AzrielBossA,type=illusioner] add AZR_boss2_skill_arrowpince
     execute if score tickTimer Azr_system matches 3710 if score #rng3 Azr_system matches 3 run tag @n[tag=AzrielBossA,type=illusioner] add AZR_boss2_skill_stockpile
-    execute if score tickTimer Azr_system matches 3730 run data merge entity @n[tag=AzrielBossA,type=illusioner] {NoAI:0b}
 
-    execute if score tickTimer Azr_system matches 3910 run data merge entity @n[tag=AzrielBossA,type=illusioner] {NoAI:1b}
     execute if score tickTimer Azr_system matches 3910 if score #rng3 Azr_system matches 1 run tag @n[tag=AzrielBossA,type=illusioner] add AZR_boss2_skill_breakingout
     execute if score tickTimer Azr_system matches 3910 if score #rng3 Azr_system matches 2 run tag @n[tag=AzrielBossA,type=illusioner] add AZR_boss2_skill_arrowpince
     execute if score tickTimer Azr_system matches 3910 if score #rng3 Azr_system matches 3 run tag @n[tag=AzrielBossA,type=illusioner] add AZR_boss2_skill_stockpile
-    execute if score tickTimer Azr_system matches 3930 run data merge entity @n[tag=AzrielBossA,type=illusioner] {NoAI:0b}
 
-    execute if score tickTimer Azr_system matches 4110 run data merge entity @n[tag=AzrielBossA,type=illusioner] {NoAI:1b}
     execute if score tickTimer Azr_system matches 4110 if score #rng3 Azr_system matches 1 run tag @n[tag=AzrielBossA,type=illusioner] add AZR_boss2_skill_breakingout
     execute if score tickTimer Azr_system matches 4110 if score #rng3 Azr_system matches 2 run tag @n[tag=AzrielBossA,type=illusioner] add AZR_boss2_skill_arrowpince
     execute if score tickTimer Azr_system matches 4110 if score #rng3 Azr_system matches 3 run tag @n[tag=AzrielBossA,type=illusioner] add AZR_boss2_skill_stockpile
-    execute if score tickTimer Azr_system matches 4130 run data merge entity @n[tag=AzrielBossA,type=illusioner] {NoAI:0b}
 
     execute if score tickTimer Azr_system matches 3110..3130 positioned -79903 38.4 -14.0 run function skyblock:azr/effects/zanei_appear_b
     execute if score tickTimer Azr_system matches 3110 run playsound ambient.soul_sand_valley.loop ambient @a[tag=azrPlayer] -79886 44 -14.0 100 1.5
