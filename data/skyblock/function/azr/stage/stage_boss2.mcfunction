@@ -1,6 +1,6 @@
 execute as @n[tag=AzrielBossA,type=illusioner] at @s run function skyblock:azr/stage/boss2/breakingout
 execute as @n[tag=AzrielBossA,type=illusioner] at @s run function skyblock:azr/stage/boss2/arrowpince
-#execute as @n[tag=AzrielBossA,type=illusioner] at @s run function skyblock:azr/stage/boss2/stockpile
+execute as @n[tag=AzrielBossA,type=illusioner] at @s run function skyblock:azr/stage/boss2/stockpile
 
 execute as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run function skyblock:sea/experimental/zanei_flat_01
 execute as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run function skyblock:sea/experimental/zanei_flat_02
@@ -282,7 +282,7 @@ execute as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run function skyblo
     execute if score tickTimer Azr_system matches 3310 if score #rng3 Azr_system matches 1 run tag @n[tag=AzrielBossA,type=illusioner] add AZR_boss2_skill_breakingout
     execute if score tickTimer Azr_system matches 3310 if score #rng3 Azr_system matches 2 run tag @n[tag=AzrielBossA,type=illusioner] add AZR_boss2_skill_arrowpince
     execute if score tickTimer Azr_system matches 3310 if score #rng3 Azr_system matches 3 run tag @n[tag=AzrielBossA,type=illusioner] add AZR_boss2_skill_stockpile
-    execute if score tickTimer Azr_system matches 3330 run data merge entity @n[tag=AzrielBossA,type=illusioner] {NoAI:1b}
+    execute if score tickTimer Azr_system matches 3330 run data merge entity @n[tag=AzrielBossA,type=illusioner] {NoAI:0b}
 
     execute if score tickTimer Azr_system matches 3510 run data merge entity @n[tag=AzrielBossA,type=illusioner] {NoAI:1b}
     execute if score tickTimer Azr_system matches 3510 if score #rng3 Azr_system matches 1 run tag @n[tag=AzrielBossA,type=illusioner] add AZR_boss2_skill_breakingout
