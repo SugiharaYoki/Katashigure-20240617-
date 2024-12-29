@@ -21,7 +21,7 @@ scoreboard players remove @s[tag=!sea_t_sprint_disabled,tag=sea_t_sprint1,scores
 scoreboard players set @s[tag=!sea_t_sprint_disabled,tag=sea_t_sprint1,scores={sea_is_running=30..}] sea_is_running 30
 
 
-execute as @s[tag=!sea_t_pounce_disabled,tag=sea_t_pounce1,predicate=skyblock:sneaking] run scoreboard players add @s SEA_pounce_charge 1
+execute if block 90074 103 137 minecraft:scaffolding as @s[tag=!sea_t_pounce_disabled,tag=sea_t_pounce1,predicate=skyblock:sneaking] run scoreboard players add @s SEA_pounce_charge 1
 execute as @s[tag=!sea_t_pounce_disabled,tag=sea_t_pounce1,predicate=!skyblock:sneaking] run scoreboard players set @s SEA_pounce_charge 0
 effect give @s[scores={SEA_pounce_charge=20..21}] strength 1 0 false
 effect give @s[scores={SEA_pounce_charge=20..21}] jump_boost 1 1 false
