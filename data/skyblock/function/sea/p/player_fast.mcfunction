@@ -25,10 +25,10 @@ execute as @s[tag=!sea_t_pounce_disabled,tag=sea_t_pounce1,predicate=skyblock:sn
 execute as @s[tag=!sea_t_pounce_disabled,tag=sea_t_pounce1,predicate=!skyblock:sneaking] run scoreboard players set @s SEA_pounce_charge 0
 effect give @s[scores={SEA_pounce_charge=20..21}] strength 1 0 false
 effect give @s[scores={SEA_pounce_charge=20..21}] jump_boost 1 1 false
-effect give @s[scores={SEA_pounce_charge=20..21}] speed 9 1 false
+execute if items entity @s[scores={SEA_pounce_charge=20..21}] weapon.mainhand air run item replace entity @s weapon.mainhand with mace
+execute if items entity @s[scores={SEA_pounce_charge=20..21}] weapon.mainhand mace run clear @s[nbt={OnGround:1b}] mace
 effect clear @s[scores={SEA_pounce_charge=20..41},predicate=!skyblock:sneaking] strength
 effect clear @s[scores={SEA_pounce_charge=20..41},predicate=!skyblock:sneaking] jump_boost
-effect clear @s[scores={SEA_pounce_charge=20..41},predicate=!skyblock:sneaking] speed
 
 execute as @s[tag=sea_exp_thunderrage] run function skyblock:sea/experimental/thunderrage
 execute as @s[tag=sea_exp_thunderblast] run function skyblock:sea/experimental/thunderblast
