@@ -65,6 +65,7 @@ scoreboard objectives add sea_speedrun_ch7 dummy
 scoreboard objectives add sea_count_played dummy
 scoreboard objectives add sea_count_dead dummy
 scoreboard objectives add sea_progress dummy
+scoreboard objectives add SEA_pounce_charge dummy
 scoreboard players set @n[tag=sc] sea_chapter 1
 scoreboard players set sc sea_speedrun_ch1 0
 scoreboard players set sc sea_speedrun_ch2 0
@@ -513,9 +514,10 @@ advancement grant @a[tag=SEAPT] only skyblock:sea/chapter1
 fill 90134 116 271 90129 116 271 lever
 fill 90136 116 269 90136 115 269 acacia_fence
 setblock 90138 115 270 chest[facing=west]
+item replace block 90138 115 270 container.12 with dune_armor_trim_smithing_template 4
+item replace block 90138 115 270 container.14 with echo_shard 2
+
 
 
 #红色小蘑菇
 setblock 90074 104 135 air
-item replace block 90074 104 135 container.12 with dune_armor_trim_smithing_template 4
-item replace block 90074 104 135 container.14 with echo_shard 2
