@@ -26,6 +26,7 @@ tag @s add NoMultiMenu
 tag @s add Temp_NoSkyWar
 scoreboard players set @s sea_oxygen 20
 scoreboard players set @s sea_shielding_3 0
+scoreboard players set @s SEA_pounce_charge 0
 
 function skyblock:skywar_system_removeallmd
 

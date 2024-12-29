@@ -21,6 +21,15 @@ scoreboard players remove @s[tag=!sea_t_sprint_disabled,tag=sea_t_sprint1,scores
 scoreboard players set @s[tag=!sea_t_sprint_disabled,tag=sea_t_sprint1,scores={sea_is_running=30..}] sea_is_running 30
 
 
+execute as @s[tag=!sea_t_pounce_disabled,tag=sea_t_pounce1,predicate=skyblock:sneaking] run scoreboard players add @s SEA_pounce_charge 1
+execute as @s[tag=!sea_t_pounce_disabled,tag=sea_t_pounce1,predicate=!skyblock:sneaking] run scoreboard players set @s SEA_pounce_charge 0
+effect give @s[scores={SEA_pounce_charge=20..21}] strength 1 0 false
+effect give @s[scores={SEA_pounce_charge=20..21}] jump_boost 1 1 false
+effect give @s[scores={SEA_pounce_charge=20..21}] speed 9 1 false
+effect clear @s[scores={SEA_pounce_charge=20..41},predicate=!skyblock:sneaking] strength
+effect clear @s[scores={SEA_pounce_charge=20..41},predicate=!skyblock:sneaking] jump_boost
+effect clear @s[scores={SEA_pounce_charge=20..41},predicate=!skyblock:sneaking] speed
+
 execute as @s[tag=sea_exp_thunderrage] run function skyblock:sea/experimental/thunderrage
 execute as @s[tag=sea_exp_thunderblast] run function skyblock:sea/experimental/thunderblast
 

@@ -86,7 +86,11 @@ item replace entity @s[tag=sea_t_spectral2] player.crafting.0 with flow_armor_tr
 item replace entity @s player.crafting.1 with barrier
 item replace entity @s[tag=sea_t_sprint1,tag=!sea_t_sprint_disabled] player.crafting.1 with flow_armor_trim_smithing_template[custom_name='{"text":"残影魔板","italic":true,"color":"light_purple","italic":false}',lore=['{"text":"绿色指示灯亮起时，起跑将被替换为冲刺","color":"white","italic":false}','{"text":"期间防御、移动速度、击退抗性巨幅提升","color":"white","italic":false}','{"text":"点击禁用","color":"green","italic":false,"bold": true}'],custom_data={sea_t_sprint1:true}]
 item replace entity @s[tag=sea_t_sprint1,tag=sea_t_sprint_disabled] player.crafting.1 with flow_armor_trim_smithing_template[custom_name='{"text":"残影魔板 - 禁用中","italic":true,"color":"light_purple","italic":false}',lore=['{"text":"绿色指示灯亮起时，起跑将被替换为冲刺","color":"white","italic":false}','{"text":"期间防御、移动速度、击退抗性巨幅提升","color":"white","italic":false}','{"text":"点击启用","color":"green","italic":false,"bold": true}'],custom_data={sea_t_sprint_disabled:true},enchantments={"vanishing_curse":1}]
+
 item replace entity @s player.crafting.2 with barrier
+item replace entity @s[tag=sea_t_pounce1,tag=!sea_t_pounce_disabled] player.crafting.2 with flow_armor_trim_smithing_template[custom_name='{"text":"趋蕴魔板","italic":true,"color":"light_purple","italic":false}',lore=['{"text":"蹲下正好1秒时","color":"white","italic":false}','{"text":"极短时间内跳跃高度、移动速度、攻击力提升","color":"white","italic":false}','{"text":"点击禁用","color":"green","italic":false,"bold": true}'],custom_data={sea_t_pounce1:true}]
+item replace entity @s[tag=sea_t_pounce1,tag=sea_t_pounce_disabled] player.crafting.2 with flow_armor_trim_smithing_template[custom_name='{"text":"趋蕴魔板 - 禁用中","italic":true,"color":"light_purple","italic":false}',lore=['{"text":"蹲下正好1秒时","color":"white","italic":false}','{"text":"极短时间内跳跃高度、移动速度、攻击力提升","color":"white","italic":false}','{"text":"点击启用","color":"green","italic":false,"bold": true}'],custom_data={sea_t_pounce_disabled:true},enchantments={"vanishing_curse":1}]
+
 item replace entity @s player.crafting.3 with barrier
 
 execute if items entity @s container.* raiser_armor_trim_smithing_template at @s run function skyblock:sea/shop_trim {trim:sea_i_trim_zombie, trim_name:"牧羊人",trim_type:raiser_armor_trim_smithing_template}

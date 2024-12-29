@@ -71,9 +71,15 @@ execute if items entity @s player.cursor flow_armor_trim_smithing_template[custo
 execute if items entity @s player.cursor flow_armor_trim_smithing_template[custom_data={sea_t_sprint1:true}] run tag @s add sea_t_sprint_disabled
 #execute if score @s sea_cursor2 matches 1.. run say hello
 
+execute store result score @s sea_cursor run clear @s flow_armor_trim_smithing_template[custom_data={sea_t_pounce_disabled:true}] 0
+execute store result score @s sea_cursor2 run clear @s flow_armor_trim_smithing_template[custom_data={sea_t_pounce1:true}] 0
+execute if items entity @s player.cursor flow_armor_trim_smithing_template[custom_data={sea_t_pounce_disabled:true}] run tag @s remove sea_t_pounce_disabled
+execute if items entity @s player.cursor flow_armor_trim_smithing_template[custom_data={sea_t_pounce1:true}] run tag @s add sea_t_pounce_disabled
+
 execute if items entity @s container.* *[custom_data={sea_t_spectral1:true}] run tag @s add sea_t_spectral1
 execute if items entity @s container.* *[custom_data={sea_t_spectral2:true}] run tag @s add sea_t_spectral2
 execute if items entity @s container.* *[custom_data={sea_t_sprint1:true}] run tag @s add sea_t_sprint1
+execute if items entity @s container.* *[custom_data={sea_t_pounce1:true}] run tag @s add sea_t_pounce1
 
 
 execute as @s[x=80000,dx=20000,z=-10000,dz=20000,y=102,dy=5] at @s if block ~ ~-1 ~ waxed_weathered_cut_copper_slab if block ~ ~-0.1 ~ air run tp @s ~ 127.0 ~
