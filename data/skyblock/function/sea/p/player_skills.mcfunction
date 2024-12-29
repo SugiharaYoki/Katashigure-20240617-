@@ -96,10 +96,10 @@ execute as @s[x=80000,dx=20000,z=-10000,dz=20000,y=44,dy=5] at @s if block ~ ~-1
 execute as @s[x=80000,dx=20000,z=-10000,dz=20000,y=33,dy=5] at @s if block ~ ~-1.5 ~ waxed_weathered_cut_copper_slab if block ~ ~-0.1 ~ air if block ~ 18 ~ waxed_weathered_cut_copper_slab run tp @s ~ 19.0 ~
 execute as @s[x=80000,dx=20000,z=-10000,dz=20000,y=33,dy=5] at @s if block ~ ~-1.5 ~ waxed_weathered_cut_copper_slab if block ~ ~-0.1 ~ air unless block ~ 18 ~ waxed_weathered_cut_copper_slab run tp @s ~ 44.0 ~
 
-execute as @s[x=80000,dx=20000,z=-10000,dz=20000,y=84,dy=5] at @s if block ~ ~-1 ~ waxed_weathered_cut_copper_slab if block ~ ~-2 ~ red_concrete if block ~ ~-0.1 ~ air run tp @s ~ 105.0 ~
-execute as @s[x=80000,dx=20000,z=-10000,dz=20000,y=84,dy=5] at @s if block ~ ~-1.5 ~ waxed_weathered_cut_copper_slab if block ~ ~-2.5 ~ red_concrete if block ~ ~-0.1 ~ air run tp @s ~ 105.0 ~
-execute as @s[x=80000,dx=20000,z=-10000,dz=20000,y=105,dy=5] at @s if block ~ ~-1 ~ waxed_weathered_cut_copper_slab if block ~ ~-2 ~ red_concrete if block ~ ~-0.1 ~ air run tp @s ~ 84.0 ~
-execute as @s[x=80000,dx=20000,z=-10000,dz=20000,y=105,dy=5] at @s if block ~ ~-1.5 ~ waxed_weathered_cut_copper_slab if block ~ ~-2.5 ~ red_concrete if block ~ ~-0.1 ~ air run tp @s ~ 84.0 ~
+execute as @s[x=80000,dx=20000,z=-10000,dz=20000,y=84,dy=5] at @s if block ~ ~-1 ~ waxed_weathered_cut_copper_slab if block ~ ~-2 ~ red_concrete unless entity @n[tag=SEAyuehan,distance=0..50] if block ~ ~-0.1 ~ air run tp @s ~ 105.0 ~
+execute as @s[x=80000,dx=20000,z=-10000,dz=20000,y=84,dy=5] at @s if block ~ ~-1.5 ~ waxed_weathered_cut_copper_slab if block ~ ~-2.5 ~ red_concrete unless entity @n[tag=SEAyuehan,distance=0..50] if block ~ ~-0.1 ~ air run tp @s ~ 105.0 ~
+execute as @s[x=80000,dx=20000,z=-10000,dz=20000,y=105,dy=5] at @s if block ~ ~-1 ~ waxed_weathered_cut_copper_slab if block ~ ~-2 ~ red_concrete unless entity @n[tag=SEAyuehan,distance=0..50] if block ~ ~-0.1 ~ air run tp @s ~ 84.0 ~
+execute as @s[x=80000,dx=20000,z=-10000,dz=20000,y=105,dy=5] at @s if block ~ ~-1.5 ~ waxed_weathered_cut_copper_slab if block ~ ~-2.5 ~ red_concrete unless entity @n[tag=SEAyuehan,distance=0..50] if block ~ ~-0.1 ~ air run tp @s ~ 84.0 ~
 
 #回响指南针
 execute if items entity @s weapon.* minecraft:recovery_compass run function skyblock:sea/p/echo_compass
