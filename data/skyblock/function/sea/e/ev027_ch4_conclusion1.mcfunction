@@ -261,6 +261,13 @@ execute if score @s rng6 matches 1238 if entity @p[tag=SEAPT,scores={SEAPT_membe
 
 #90146 84 74
 
+execute if score @s rng6 matches 1248 as @n[tag=SEAedwina] at @s run tp @s 90146 84 68
+execute if score @s rng6 matches 1252..1255 as @n[tag=SEAedwina] at @s run tp @s ~ ~ ~1 facing ~ ~ ~2
+execute if score @s rng6 matches 1257 as @n[tag=SEAedwina] at @s run tp @s ~ ~0.5 ~5 facing ~ ~ ~6
+execute if score @s rng6 matches 1259..1266 as @n[tag=SEAedwina] at @s run tp @s ~ ~ ~1 facing ~ ~ ~2
+execute if score @s rng6 matches 1267 as @n[tag=SEAedwina] at @s run tp @s ~ ~ ~100 facing ~ ~ ~200
+execute if score @s rng6 matches 1269 as @n[tag=SEAedwina] at @s run kill @s
+
 #方块破碎
 execute if score @s rng6 matches 1023 run setblock 90146 88 62 air destroy
 execute if score @s rng6 matches 1028 run fill 90148 85 55 90148 86 55 air destroy
