@@ -1,6 +1,6 @@
-    function skyblock:protector/entity_count_start
+#第五章
 
-setblock 90074 103 136 lectern
+setblock 90074 103 136 lectern[facing=east]
 
 scoreboard players set @n[tag=sc] sea_4temp2 0
 scoreboard players set @n[tag=sc] sea_4temp3 0
