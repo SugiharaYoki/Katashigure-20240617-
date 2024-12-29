@@ -268,6 +268,15 @@ execute if score @s rng6 matches 1259..1266 as @n[tag=SEAedwina] at @s run tp @s
 execute if score @s rng6 matches 1267 as @n[tag=SEAedwina] at @s run tp @s ~ ~ ~100 facing ~ ~ ~200
 execute if score @s rng6 matches 1269 as @n[tag=SEAedwina] at @s run kill @s
 
+
+execute if score @s rng6 matches 1269 run give @a[tag=SEAPT] nether_star
+execute if score @s rng6 matches 1269 run scoreboard players set @a[tag=SEAPT,scores={sea_progress=..8}] sea_progress 12
+
+execute if score @s rng6 matches 1269 as @a[tag=SEAPT] at @s run tellraw @s {"text":"『厄珀娅的悲歌』第四章 完","color":"blue","bold": true}
+execute if score @s rng6 matches 1269 as @a[tag=SEAPT] at @s run playsound music_disc.creator_music_box music @a[tag=SEAPT] ~ ~ ~ 1000 0.7
+execute if score @s rng6 matches 1269 run function skyblock:sea/map_prepare_ch5
+execute if score @s rng6 matches 1269..1279 run kill @s
+
 #方块破碎
 execute if score @s rng6 matches 1023 run setblock 90146 88 62 air destroy
 execute if score @s rng6 matches 1028 run fill 90148 85 55 90148 86 55 air destroy
