@@ -1,3 +1,9 @@
+execute unless entity @s[scores={ishtar_bless_1=-999..}] run tellraw @s {"text":"您还没有选择过礼装！系统已为您分配初始推荐礼装。\n高速堡垒核心可以快速建造小型围栏。\n刺客尊荣放在背包里就可以照亮附近的隐身玩家。\n诞生虚桥使得你丢出的鸡蛋会生成玻璃天桥。\n漆幕虚垒允许你制造烟幕。","color":"aqua"}
+execute unless entity @s[scores={ishtar_bless_1=-999..}] run scoreboard players set @s ishtar_bless_1 9
+execute unless entity @s[scores={ishtar_bless_2=-999..}] run scoreboard players set @s ishtar_bless_2 16
+execute unless entity @s[scores={ishtar_bless_3=-999..}] run scoreboard players set @s ishtar_bless_3 18
+execute unless entity @s[scores={ishtar_bless_4=-999..}] run scoreboard players set @s ishtar_bless_4 25
+
 execute if entity @s[scores={ishtar_bless_1=1}] run give @s end_crystal
 execute if entity @s[scores={ishtar_bless_2=1}] run give @s end_crystal
 execute if entity @s[scores={ishtar_bless_3=1}] run give @s end_crystal
@@ -6,10 +12,10 @@ execute if entity @s[scores={ishtar_bless_1=2}] run give @s totem_of_undying
 execute if entity @s[scores={ishtar_bless_2=2}] run give @s totem_of_undying
 execute if entity @s[scores={ishtar_bless_3=2}] run give @s totem_of_undying
 execute if entity @s[scores={ishtar_bless_4=2}] run give @s totem_of_undying
-execute if entity @s[scores={ishtar_bless_1=3}] run give @s netherite_chestplate
-execute if entity @s[scores={ishtar_bless_2=3}] run give @s netherite_chestplate
-execute if entity @s[scores={ishtar_bless_3=3}] run give @s netherite_chestplate
-execute if entity @s[scores={ishtar_bless_4=3}] run give @s netherite_chestplate
+execute if entity @s[scores={ishtar_bless_1=3}] run give @s diamond_chestplate[attribute_modifiers=[{type:"generic.knockback_resistance",id:"ishtar_bless:003real_01",amount:5.0,operation:"add_value"},{type:"generic.armor",id:"ishtar_bless:003real_02",amount:3.0,operation:"add_value"}]]
+execute if entity @s[scores={ishtar_bless_2=3}] run give @s diamond_chestplate[attribute_modifiers=[{type:"generic.knockback_resistance",id:"ishtar_bless:003real_01",amount:5.0,operation:"add_value"},{type:"generic.armor",id:"ishtar_bless:003real_02",amount:3.0,operation:"add_value"}]]
+execute if entity @s[scores={ishtar_bless_3=3}] run give @s diamond_chestplate[attribute_modifiers=[{type:"generic.knockback_resistance",id:"ishtar_bless:003real_01",amount:5.0,operation:"add_value"},{type:"generic.armor",id:"ishtar_bless:003real_02",amount:3.0,operation:"add_value"}]]
+execute if entity @s[scores={ishtar_bless_4=3}] run give @s diamond_chestplate[attribute_modifiers=[{type:"generic.knockback_resistance",id:"ishtar_bless:003real_01",amount:5.0,operation:"add_value"},{type:"generic.armor",id:"ishtar_bless:003real_02",amount:3.0,operation:"add_value"}]]
 execute if entity @s[scores={ishtar_bless_1=4}] run give @s trident[custom_name='{"text":"湖灯之戟","italic":false,"color":"red"}',enchantments={loyalty:10,impaling:2,channeling:1},attribute_modifiers=[{type:"generic.movement_speed",slot:"hand",id:"ishtar_bless:001_01",amount:0.04,operation:"add_value"}]]
 execute if entity @s[scores={ishtar_bless_2=4}] run give @s trident[custom_name='{"text":"湖灯之戟","italic":false,"color":"red"}',enchantments={loyalty:10,impaling:2,channeling:1},attribute_modifiers=[{type:"generic.movement_speed",slot:"hand",id:"ishtar_bless:001_01",amount:0.04,operation:"add_value"}]]
 execute if entity @s[scores={ishtar_bless_3=4}] run give @s trident[custom_name='{"text":"湖灯之戟","italic":false,"color":"red"}',enchantments={loyalty:10,impaling:2,channeling:1},attribute_modifiers=[{type:"generic.movement_speed",slot:"hand",id:"ishtar_bless:001_01",amount:0.04,operation:"add_value"}]]

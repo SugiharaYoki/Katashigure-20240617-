@@ -69,3 +69,6 @@ setblock 50512 24 50473 quartz_stairs[facing=north,half=top,shape=straight,water
 
 
 title @a actionbar {"text":"空岛战争： 亚兹列尔的钟台","bold":true,"color":"blue"}
+
+fill 50542 11 50495 50542 11 50480 air
+fill 50495 11 50542 50480 11 50542 air

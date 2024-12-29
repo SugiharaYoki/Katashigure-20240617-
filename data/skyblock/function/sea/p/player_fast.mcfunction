@@ -27,24 +27,18 @@ execute as @s[tag=sea_exp_thunderblast] run function skyblock:sea/experimental/t
 
 execute if score @s SEA_if_spying matches 1.. run function skyblock:sea/p/spyglass_pointout
 
-#execute as @s[tag=sea_t_parry1,nbt=!{SelectedItem:{id:"minecraft:shield"}}] run scoreboard players set @s sea_shield_switch 20
-#execute as @s[tag=sea_t_parry1,nbt=!{SelectedItem:{id:"minecraft:shield"}}] run scoreboard players set @s sea_shielding 0
-#execute as @s[tag=sea_t_parry1,nbt={SelectedItem:{id:"minecraft:shield"}}] run scoreboard players remove @s sea_shield_switch 1
-#execute as @s[tag=sea_t_parry1,nbt={SelectedItem:{id:"minecraft:shield"}},scores={sea_shielding=1..,sea_shield_switch=11..20}] run effect give @s resistance 1 5 false
-#execute as @s[tag=sea_t_parry1,nbt={SelectedItem:{id:"minecraft:shield"}},scores={sea_shielding=1..,sea_shield_switch=0..}] run effect give @s slowness 1 0 false
-#execute as @s[tag=sea_t_parry1,nbt={SelectedItem:{id:"minecraft:shield"}},scores={sea_shielding=1..3,sea_shield_switch=0..}] run effect give @s strength 1 1 false
-#execute as @s[tag=sea_t_parry1,nbt={SelectedItem:{id:"minecraft:shield"}},scores={sea_shielding=4..6,sea_shield_switch=0..}] run effect give @s strength 1 2 false
-#execute as @s[tag=sea_t_parry1,nbt={SelectedItem:{id:"minecraft:shield"}},scores={sea_shielding=7..9,sea_shield_switch=0..}] run effect give @s strength 1 3 false
-#execute as @s[tag=sea_t_parry1,nbt={SelectedItem:{id:"minecraft:shield"}},scores={sea_shielding=10..,sea_shield_switch=0..}] run effect give @s strength 1 4 false
 
 
-execute unless items entity @s weapon.mainhand shield as @s[tag=sea_t_parry1] run scoreboard players set @s sea_shield_switch 20
-execute unless items entity @s weapon.mainhand shield as @s[tag=sea_t_parry1] run scoreboard players set @s sea_shielding_2 0
-execute as @s[tag=sea_t_parry1,scores={sea_shielding_3=1..}] run scoreboard players remove @s sea_shielding_3 1
-execute if items entity @s weapon.mainhand shield as @s[tag=sea_t_parry1,scores={sea_shielding_3=..0}] run function skyblock:sea/p/parry
+execute unless items entity @s weapon.mainhand shield as @s run scoreboard players set @s sea_shield_switch 20
+execute unless items entity @s weapon.mainhand shield as @s run scoreboard players set @s sea_shielding_2 0
+execute as @s[scores={sea_shielding_3=1..}] run scoreboard players remove @s sea_shielding_3 1
+execute if items entity @s weapon.mainhand shield as @s[scores={sea_shielding_3=..0}] run function skyblock:sea/p/parry
 
-
-execute as @s[tag=sea_t_axeparry1,predicate=skyblock:sneaking,scores={sea_axeparry_jump=1..}] if items entity @s weapon.mainhand netherite_axe run function skyblock:sea/p/axeparry
+scoreboard players set @s rng9 0
+scoreboard players add @s[tag=sea_w_axe_skill_a_1] rng9 1
+scoreboard players add @s[tag=sea_w_axe_skill_a_2] rng9 2
+scoreboard players add @s[tag=sea_w_axe_skill_a_3] rng9 3
+execute as @s[predicate=skyblock:sneaking,scores={sea_axeparry_jump=1..,rng9=1..}] if items entity @s weapon.mainhand iron_axe run function skyblock:sea/p/axeparry
 execute as @s[scores={sea_axeparry_jump=1..}] run scoreboard players set @s sea_axeparry_jump 0
 
 execute if items entity @s armor.chest *[custom_data={sea_chest_shadowchest:true}] if entity @s[predicate=skyblock:sneaking] run effect give @s invisibility 3 0 false
@@ -57,3 +51,15 @@ scoreboard players reset @s[scores={sea_do_attack=1..}] sea_do_attack
 function skyblock:sea/experimental/backjump_loop
 
 execute as @s[scores={sea_dead=1..}] run function skyblock:sea/death_check
+
+execute if items entity @s[tag=!SEA_w_01_effected] weapon.mainhand iron_hoe run function skyblock:sea/p/w/crowbar_effect
+execute unless items entity @s[tag=SEA_w_01_effected] weapon.mainhand iron_hoe run function skyblock:sea/p/w/crowbar_effect_remove
+
+execute if items entity @s[tag=!SEA_w_02_effected] weapon.mainhand iron_axe run function skyblock:sea/p/w/axe_effect
+execute unless items entity @s[tag=SEA_w_02_effected] weapon.mainhand iron_axe run function skyblock:sea/p/w/axe_effect_remove
+
+execute if items entity @s[tag=!SEA_w_03_effected] weapon.mainhand shears run function skyblock:sea/p/w/flamethrower_effect
+execute unless items entity @s[tag=SEA_w_03_effected] weapon.mainhand shears run function skyblock:sea/p/w/flamethrower_effect_remove
+
+execute if items entity @s[tag=!SEA_w_04_effected] weapon.* shield run function skyblock:sea/p/w/shield_effect
+execute unless items entity @s[tag=SEA_w_04_effected] weapon.* shield run function skyblock:sea/p/w/shield_effect_remove

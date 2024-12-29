@@ -88,13 +88,29 @@ execute as @n[tag=SEAboss4,scores={health=..80,rng2=..10,rng1=1,rng8=..0}] run t
 execute as @n[tag=SEAboss4,scores={health=..80,rng2=..10,rng1=1,rng8=..0}] run scoreboard players add @s rng8 1
 execute as @n[tag=SEAboss4,scores={health=..80,rng2=11..}] run scoreboard players add @s rng7 1
 
+execute store result score SEAboss4_killed rng1 run random value 1..3
+execute unless entity @n[tag=SEAedwina] if score SEAboss4_killed rng1 matches 1 run tellraw @a[tag=SEAPT] {"text": "艾德雯娜：“你知道那下有多痛吗？你真的惹毛我了。”","color": "green"}
+execute unless entity @n[tag=SEAedwina] if score SEAboss4_killed rng1 matches 2 run tellraw @a[tag=SEAPT] {"text": "艾德雯娜：“我可不会就这么死了，你以为我是怎么活到现在的？”","color": "green"}
+execute unless entity @n[tag=SEAedwina] if score SEAboss4_killed rng1 matches 3 run tellraw @a[tag=SEAPT] {"text": "艾德雯娜：“……真狠啊，只可惜并没成功放倒我。”","color": "green"}
+execute unless entity @n[tag=SEAedwina] run setblock 90227 58 91 minecraft:copper_block
+execute unless entity @n[tag=SEAedwina] at @p[tag=SEAPT] rotated ~ 0 positioned ^ ^ ^-1 run function skyblock:sea/m/boss4
+execute if block 90227 58 91 copper_block run scoreboard players set @n[tag=SEAboss4] rng1 0
+execute if block 90227 58 91 copper_block run scoreboard players set @n[tag=SEAboss4] rng2 9
+execute if block 90227 58 91 copper_block run scoreboard players set @n[tag=SEAboss4] rng3 0
+execute if block 90227 58 91 copper_block run scoreboard players set @n[tag=SEAboss4] rng4 0
+execute if block 90227 58 91 copper_block run scoreboard players set @n[tag=SEAboss4] rng5 0
+execute if block 90227 58 91 copper_block run scoreboard players set @n[tag=SEAboss4] rng6 0
+execute if block 90227 58 91 copper_block run scoreboard players set @n[tag=SEAboss4] rng7 0
+execute if block 90227 58 91 copper_block run scoreboard players set @n[tag=SEAboss4] rng8 0
+execute if block 90227 58 91 copper_block run scoreboard players set @n[tag=SEAboss4] rng9 0
+execute if block 90227 58 91 copper_block run data modify entity @n[tag=SEAboss4] NoAI set value 0b
+execute if block 90227 58 91 copper_block run data modify entity @n[tag=SEAboss4] Invulnerable set value 0b
+execute if block 90227 58 91 copper_block run setblock 90227 58 91 minecraft:waxed_copper_block
 
-
-
-execute as @n[tag=SEAboss4,scores={rng2=4..},tag=!SEAboss4_phase2] run tellraw @a[tag=SEAPT] {"text": "艾德雯娜：“真不赖，可惜偷偷告诉你，你手上的装备，我也全都有。”","color": "green"}
+execute as @n[tag=SEAboss4,scores={rng2=4},tag=!SEAboss4_phase2] run tellraw @a[tag=SEAPT] {"text": "艾德雯娜：“真不赖，可惜偷偷告诉你，你手上的装备，我也全都有。”","color": "green"}
 execute as @n[tag=SEAboss4,scores={rng2=4..},tag=!SEAboss4_phase2] run tag @s add SEAboss4_phase2
 
-execute as @n[tag=SEAboss4,scores={rng2=8..},tag=!SEAboss4_phase3] run tellraw @a[tag=SEAPT] {"text": "艾德雯娜：“没想到能让我陷入苦战呢……我该拿出全部实力了。”","color": "green"}
+execute as @n[tag=SEAboss4,scores={rng2=8},tag=!SEAboss4_phase3] run tellraw @a[tag=SEAPT] {"text": "艾德雯娜：“没想到能让我陷入苦战呢……我该拿出全部实力了。”","color": "green"}
 execute as @n[tag=SEAboss4,scores={rng2=8..},tag=!SEAboss4_phase3] run scoreboard players set @s rng8 0
 execute as @n[tag=SEAboss4,scores={rng2=8..},tag=!SEAboss4_phase3] run playsound minecraft:item.trident.thunder hostile @a ~ ~ ~ 3 0.83
 execute as @n[tag=SEAboss4,scores={rng2=8..},tag=!SEAboss4_phase3] run particle flame ~ ~ ~ 3 0 3 0.05 40

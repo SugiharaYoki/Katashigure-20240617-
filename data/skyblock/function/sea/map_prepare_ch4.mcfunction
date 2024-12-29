@@ -50,6 +50,8 @@ setblock 90178 45 124 minecraft:potted_azalea_bush
 
 summon minecraft:interaction 90164 14.3 98 {CustomName:'[{"text":"器械式治疗仪"}]',Tags:["SEAaidbox"]}
 summon minecraft:interaction 90234 47.3 95 {CustomName:'[{"text":"器械式治疗仪"}]',Tags:["SEAaidbox"]}
+summon minecraft:interaction 90146 85.3 96 {CustomName:'[{"text":"器械式治疗仪"}]',Tags:["SEAaidbox"]}
+
 
 summon minecraft:interaction 90193 45.3 126 {CustomName:'[{"text":"绿宝石提取机"}]',Tags:["SEAemeraldextractor"]}
 
@@ -476,3 +478,30 @@ tp @e[tag=SEAyuehan,type=villager] 90000 -500 0
 kill @e[tag=SEAyuehan,type=villager]
 
     function skyblock:protector/entity_count_end {function:"skyblock:sea/map_prepare_ch4.mcfunction"}
+
+
+
+
+
+#第四章尾声
+setblock 90159 80 90 minecraft:waxed_copper_bulb[lit=false]
+setblock 90159 80 87 minecraft:waxed_copper_bulb[lit=false]
+setblock 90153 84 90 minecraft:waxed_copper_bulb[lit=false]
+setblock 90153 84 87 minecraft:waxed_copper_bulb[lit=false]
+
+fill 90147 83 73 90146 83 76 waxed_copper_block
+setblock 90146 88 62 minecraft:waxed_copper_bulb[lit=true]
+fill 90148 85 55 90148 86 55 minecraft:waxed_cut_copper_stairs[facing=east]
+
+fill 90146 88 59 90145 88 60 minecraft:waxed_copper_block
+
+fill 90148 83 70 90147 83 69 minecraft:waxed_copper_block
+fill 90144 86 85 90144 85 84 minecraft:waxed_copper_block
+
+
+
+
+
+
+
+

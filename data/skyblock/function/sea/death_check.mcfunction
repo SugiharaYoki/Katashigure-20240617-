@@ -6,7 +6,8 @@ execute if score @s sea_dead_check matches ..0 if entity @s[nbt={Inventory:[{id:
 execute if score @s sea_dead_check matches ..0 if entity @s[nbt={Inventory:[{id:"minecraft:nether_star"}]}] run playsound item.totem.use master @a ~ ~ ~ 2
 execute if score @s sea_dead_check matches ..0 if entity @s[nbt={Inventory:[{id:"minecraft:nether_star"}]}] run effect give @s fire_resistance 40 0
 execute if score @s sea_dead_check matches ..0 if entity @s[nbt={Inventory:[{id:"minecraft:nether_star"}]}] run effect give @s regeneration 45 1
-execute if score @s sea_dead_check matches ..0 if entity @s[nbt={Inventory:[{id:"minecraft:nether_star"}]}] run effect give @s absorption 5 1
+execute if score @s sea_dead_check matches ..0 if entity @s[nbt={Inventory:[{id:"minecraft:nether_star"}]}] run effect give @s absorption 5 4
+execute if score @s sea_dead_check matches ..0 if entity @s[nbt={Inventory:[{id:"minecraft:nether_star"}]}] run effect give @s resistance 10 3
 execute if score @s sea_dead_check matches ..0 if entity @s[nbt={Inventory:[{id:"minecraft:nether_star"}]}] run effect give @s blindness 1 0
 execute if score @s sea_dead_check matches ..0 if entity @s[nbt={Inventory:[{id:"minecraft:nether_star"}]}] if entity @n[tag=SEAboss2] run tp @s @r[tag=SEAPT,distance=0.1..]
 execute if score @s sea_dead_check matches ..0 if entity @s[nbt={Inventory:[{id:"minecraft:nether_star"}]}] if entity @s[scores={sea_oxygen=..-1}] run tp @s 90060 103 140

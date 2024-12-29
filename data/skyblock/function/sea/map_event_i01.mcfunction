@@ -8,7 +8,7 @@ execute as @a[tag=SEAPT,x=90086,y=122,z=143,distance=0..2.4,tag=!e_i_05,tag=!SEA
 execute as @a[tag=SEAPT,x=90086,y=122,z=143,distance=0..2.4,tag=!e_i_05,tag=!SEAPF] at @s run tellraw @s {"text": "等等，转角后面有……其他人？","color": "gray"}
 execute as @a[tag=SEAPT,x=90086,y=122,z=143,distance=0..2.4,tag=!e_i_05,tag=!SEAPF] at @s run tellraw @a[tag=SEAPT,distance=0.1..] [{"selector":"@s","color":"white"},{"text":"：转角后面有其他人，你们先别过去！","color":"white"}]
 execute as @a[tag=SEAPT,x=90086,y=122,z=143,distance=0..2.4,tag=!e_i_05,tag=!SEAPF] at @s run summon drowned 90090 122 144 {CustomName:'[{"text":"行走的腐尸"}]',DeathLootTable:"skyblock:sea_drowned1",Tags:["SEAmob"],attributes:[{id:"generic.attack_damage",base:2.0},{id:"generic.movement_speed",base:0.08}]}
-execute as @a[tag=SEAPT,x=90086,y=122,z=143,distance=0..2.4,tag=!e_i_05,tag=!SEAPF] positioned 90090 128 127 run function skyblock:sea/m/spider
+execute as @a[tag=SEAPT,x=90086,y=122,z=143,distance=0..2.4,tag=!e_i_05,tag=!SEAPF] positioned 90090 128 127 run function skyblock:sea/m/spider_weak
 execute as @a[tag=SEAPT,x=90086,y=122,z=143,distance=0..2.4,tag=!e_i_05,tag=!SEAPF] run tag @a[tag=SEAPT] add e_i_05
 
 

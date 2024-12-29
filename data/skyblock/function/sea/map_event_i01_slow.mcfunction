@@ -1,5 +1,9 @@
     function skyblock:protector/entity_count_start
 
+execute if score sea_ch1_wasting_time rng1 matches ..390 run function skyblock:sea/e/ev028_ch1_wasting_time_1
+
+execute if entity @a[tag=e_i_07,tag=SEAPT] if score sea_ch1_wasting_time rng2 matches ..590 if items block 90095 122 128 container.26 amethyst_shard run function skyblock:sea/e/ev028_ch1_wasting_time_2
+
 execute as @a[tag=SEAPT,x=90081,y=106,z=146,distance=0..1.3,tag=!e_i_01] at @s run tellraw @s {"text": "接待窗口内并没有工作人员。我观察了里面的痕迹，似乎工作人员离开得很匆忙。","color": "gray"}
 execute as @a[tag=SEAPT,x=90081,y=106,z=146,distance=0..1.3,tag=!e_i_01] at @s run tag @s add e_i_01
 
@@ -75,7 +79,7 @@ execute if block 90089 128 124 minecraft:waxed_copper_door[open=true] run setblo
 
 
 execute as @n[tag=sc] unless entity @s[scores={sea_4temp2=-9999..}] run scoreboard players set @s sea_4temp2 0
-execute unless block 90062 103 135 grindstone unless block 90095 122 128 chest{Items:[{Slot:26b,id:"minecraft:amethyst_shard",count:1}]} run scoreboard players add @n[tag=sc,scores={sea_4temp2=..0}] sea_4temp2 1
+execute unless block 90062 103 135 grindstone unless items block 90095 122 128 container.26 amethyst_shard run scoreboard players add @n[tag=sc,scores={sea_4temp2=..0}] sea_4temp2 1
 execute as @n[tag=sc,scores={sea_4temp2=1..169}] run scoreboard players add @s sea_4temp2 1
 execute as @n[tag=sc,scores={sea_4temp2=4}] run tellraw @a[tag=SEAPT] {"text":"为了最大程度地保证沉浸体验，请开启音乐游玩（推荐值：50%）。","color":"dark_gray"}
 execute as @n[tag=sc,scores={sea_4temp2=8}] run playsound minecraft:item.goat_horn.sound.6 master @a[tag=SEAPT] 90100 0 100 10000 0.8
@@ -110,7 +114,7 @@ execute as @n[tag=sc,scores={sea_4temp2=35}] positioned 90109 122 116 run functi
 execute as @n[tag=sc,scores={sea_4temp2=35}] positioned 90109 122 116 run function skyblock:sea/m/drowned_hat
 execute as @n[tag=sc,scores={sea_4temp2=35}] positioned 90114 122 116 run function skyblock:sea/m/drowned_maintenance
 execute as @n[tag=sc,scores={sea_4temp2=35}] positioned 90112 122 132 run function skyblock:sea/m/drowned_maintenance
-execute as @n[tag=sc,scores={sea_4temp2=35}] positioned 90114 122 116 run function skyblock:sea/m/spider
+execute as @n[tag=sc,scores={sea_4temp2=35}] positioned 90114 122 116 run function skyblock:sea/m/spider_weak
 execute as @n[tag=sc,scores={sea_4temp2=169}] run fill 90109 122 117 90110 123 117 air destroy
 execute as @n[tag=sc,scores={sea_4temp2=219}] run fill 90109 122 117 90110 123 117 air destroy
 
@@ -126,8 +130,10 @@ execute as @n[tag=sc,scores={sea_4temp2=272}] positioned 90120 123 123 if entity
 execute as @n[tag=sc,scores={sea_4temp2=272}] positioned 90120 123 123 if entity @n[tag=sc,scores={sea_player=2..}] run tellraw @a[distance=0..50] {"text":"联络机台：“我从监控看到你们附近的房间了！快从那里离开，立——”","color":"dark_purple"}
 execute as @n[tag=sc,scores={sea_4temp2=272}] positioned 90120 123 123 run playsound minecraft:entity.endermite.ambient ambient @a ~ ~ ~ 0.8 0.1
 execute as @n[tag=sc,scores={sea_4temp2=296}] positioned 90120 123 123 run tellraw @a[distance=0..50] {"text":"联络机台：“……”","color":"dark_purple"}
-execute as @n[tag=sc,scores={sea_4temp2=305}] positioned 90120 123 123 run tellraw @a[distance=0..50] {"text":"离开？把这些怪物放着不管吗？这不是我来这的目的。","color":"gray"}
-execute as @n[tag=sc,scores={sea_4temp2=335}] positioned 90120 123 123 run tellraw @a[distance=0..50] {"text":"我得守在这里，把这些怪东西全给解决掉。","color":"gray"}
+execute as @n[tag=sc,scores={sea_4temp2=305}] positioned 90120 123 123 if entity @n[tag=sc,scores={sea_player=1}] run tellraw @a[distance=0..50] {"text":"离开？把这些怪物放着不管吗？这不是我来这的目的。","color":"gray"}
+execute as @n[tag=sc,scores={sea_4temp2=335}] positioned 90120 123 123 if entity @n[tag=sc,scores={sea_player=1}] run tellraw @a[distance=0..50] {"text":"我得守在这里，把这些怪东西全给解决掉。","color":"gray"}
+execute as @n[tag=sc,scores={sea_4temp2=305}] positioned 90120 123 123 if entity @n[tag=sc,scores={sea_player=2..}] if entity @a[scores={SEAPT_member=2}] run tellraw @a[distance=0..50] [{"selector":"@p[tag=SEAPT,scores={SEAPT_member=2}]","color":"white"},{"text":"：该表演临阵脱逃了。","color":"white"}]
+execute as @n[tag=sc,scores={sea_4temp2=335}] positioned 90120 123 123 if entity @n[tag=sc,scores={sea_player=2..}] if entity @a[scores={SEAPT_member=1}] run tellraw @a[distance=0..50] [{"selector":"@p[tag=SEAPT,scores={SEAPT_member=1}]","color":"white"},{"text":"：放屁，守住我后背，咱们多少也得把这些怪物给干掉。","color":"white"}]
 
 execute as @n[tag=sc,scores={sea_4temp2=254..1100}] run particle large_smoke 90120 123 115 0.2 0.5 0.2 0.01 3
 execute as @n[tag=sc,scores={sea_4temp2=344..1100}] run particle large_smoke 90125 123 115 0.2 0.5 0.2 0.01 3
@@ -146,6 +152,10 @@ execute as @n[tag=sc,scores={sea_4temp2=280}] run fill 90122 125 114 90122 124 1
 execute as @n[tag=sc,scores={sea_4temp2=520}] run particle minecraft:explosion 90125 125.0 114 0.3 0.3 0.3 0.1 4
 execute as @n[tag=sc,scores={sea_4temp2=520}] run playsound minecraft:entity.generic.explode ambient @a 90125 125.0 114 10 0.7
 execute as @n[tag=sc,scores={sea_4temp2=520}] run fill 90125 125 114 90125 124 114 air
+
+execute as @n[tag=sc,scores={sea_4temp2=524}] positioned 90120 123 123 if entity @n[tag=sc,scores={sea_player=2..}] if entity @a[scores={SEAPT_member=2}] run tellraw @a[distance=0..50] [{"selector":"@p[tag=SEAPT,scores={SEAPT_member=2}]","color":"white"},{"text":"：到底有多少个？我说，我们为什么要做这种事情。","color":"white"}]
+execute as @n[tag=sc,scores={sea_4temp2=599}] positioned 90120 123 123 if entity @n[tag=sc,scores={sea_player=2..}] if entity @a[scores={SEAPT_member=2}] if entity @a[scores={SEAPT_member=1}] run tellraw @a[distance=0..50] [{"selector":"@p[tag=SEAPT,scores={SEAPT_member=1}]","color":"white"},{"text":"：你是傻子吗？钻井平台发生丧尸危机——我们这么给领导说了，鬼会信我们？","color":"white"}]
+execute as @n[tag=sc,scores={sea_4temp2=699}] positioned 90120 123 123 if entity @n[tag=sc,scores={sea_player=2..}] if entity @a[scores={SEAPT_member=2}] if entity @a[scores={SEAPT_member=3}] run tellraw @a[distance=0..50] [{"selector":"@p[tag=SEAPT,scores={SEAPT_member=3}]","color":"white"},{"text":"：而且最坏情况他们已经知道会发生这种事，那我们作为知情者可活不了。","color":"white"}]
 
 execute store result score @n[tag=sc,scores={sea_4temp2=200..1200,sea_player=1}] rng1 run random value 1..18
 execute store result score @n[tag=sc,scores={sea_4temp2=200..1200,sea_player=2}] rng1 run random value 1..17
@@ -197,6 +207,7 @@ execute as @n[tag=sc,scores={sea_4temp2=1144}] positioned 90133 122 129 run func
 execute as @n[tag=sc,scores={sea_4temp2=1144}] positioned 90140 115 148 run function skyblock:sea/m/zombie_security2
 execute as @n[tag=sc,scores={sea_4temp2=1144}] positioned 90140 115 148 run function skyblock:sea/m/drowned_shield
 execute as @n[tag=sc,scores={sea_4temp2=1144}] positioned 90140 115 148 run function skyblock:sea/m/drowned_shield
+execute as @n[tag=sc,scores={sea_4temp2=1144}] positioned 90135 123 141 run function skyblock:sea/m/spider_weak
 
 
 

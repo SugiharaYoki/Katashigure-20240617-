@@ -76,6 +76,11 @@ scoreboard players set sc sea_speedrun_ch7 0
 scoreboard players set sc sea_count_played 0
 scoreboard players set sc sea_count_dead 0
 
+scoreboard players operation @s rng1 = @s SEA_w_upg_pts
+
+scoreboard players set sea_ch1_wasting_time rng1 0
+scoreboard players set sea_ch1_wasting_time rng2 0
+scoreboard players set sea_ch1_wasting_time rng3 0
 
 setblock -25 23 32 soul_lantern
 fill 90065 104 139 90065 104 141 air
@@ -325,7 +330,7 @@ setblock 90086 101 142 air
 setblock 90087 128 123 air
 setblock 90075 110 115 decorated_pot{sherds:["friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd"],item:{count: 3, id:"minecraft:emerald"}}
 setblock 90073 110 115 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 1, id:"minecraft:beef"}}
-setblock 90086 101 142 decorated_pot{sherds:["mourner_pottery_sherd","mourner_pottery_sherd","mourner_pottery_sherd","mourner_pottery_sherd"],item:{count: 2, id:"minecraft:echo_shard"}}
+setblock 90086 101 142 decorated_pot{sherds:["mourner_pottery_sherd","mourner_pottery_sherd","mourner_pottery_sherd","mourner_pottery_sherd"],item:{count: 1, id:"minecraft:echo_shard"}}
 setblock 90087 128 123 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:raw_iron"}}
 
 setblock 90075 103 141 minecraft:air
@@ -351,7 +356,7 @@ setblock 90151 128 144 air
 setblock 90094 114 149 air
 setblock 90094 114 148 air
 setblock 90139 115 147 decorated_pot{sherds:["friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd"],item:{count: 4, id:"minecraft:emerald"}}
-setblock 90140 115 147 decorated_pot{sherds:["mourner_pottery_sherd","mourner_pottery_sherd","mourner_pottery_sherd","mourner_pottery_sherd"],item:{count: 2, id:"minecraft:echo_shard"}}
+setblock 90140 115 147 decorated_pot{sherds:["mourner_pottery_sherd","mourner_pottery_sherd","mourner_pottery_sherd","mourner_pottery_sherd"],item:{count: 1, id:"minecraft:echo_shard"}}
 setblock 90073 103 154 decorated_pot{sherds:["friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd"],item:{count: 3, id:"minecraft:emerald"}}
 setblock 90074 103 154 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 1, id:"minecraft:beef"}}
 setblock 90151 145 103 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 3, id:"minecraft:golden_carrot"}}

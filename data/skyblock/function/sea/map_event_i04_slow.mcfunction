@@ -1,4 +1,4 @@
-    function skyblock:protector/entity_count_start
+#    function skyblock:protector/entity_count_start
 
 execute unless score sea_ch4_switch_entrance sea_4temp2 matches -999.. run scoreboard players set sea_ch4_switch_entrance sea_4temp2 -9
 execute unless score sea_ch4_switch_entrance2 sea_4temp2 matches -999.. run scoreboard players set sea_ch4_switch_entrance2 sea_4temp2 -9
@@ -421,7 +421,15 @@ execute as @n[tag=SEAch4_spawn_timer_ecosystem] at @s run function skyblock:sea/
 particle minecraft:dripping_water 90204.61 50.00 90.51 1 0 1 0 20
 
 execute positioned 90184 56 48 if entity @a[tag=SEAPT,distance=..4.6] unless entity @n[tag=SEAch4_spawn_timer_boss4,distance=0..3] run summon marker ~ ~ ~ {Tags:["SEAch4_spawn_timer","SEAch4_spawn_timer_boss4"]}
-execute as @n[tag=SEAch4_spawn_timer_boss4] at @s run function skyblock:sea/e/ev023_boss4
+execute as @n[tag=SEAch4_spawn_timer_boss4,tag=!SEAch4_conclusion] at @s run function skyblock:sea/e/ev023_boss4
+execute as @n[tag=SEAch4_spawn_timer_boss4,tag=SEAch4_conclusion] at @s run function skyblock:sea/e/ev027_ch4_conclusion1
 
 
-    function skyblock:protector/entity_count_end {function:"skyblock:sea/map_event_i04_slow.mcfunction"}
+
+
+
+
+
+
+
+#    function skyblock:protector/entity_count_end {function:"skyblock:sea/map_event_i04_slow.mcfunction"}
