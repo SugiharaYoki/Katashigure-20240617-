@@ -190,9 +190,13 @@ execute if score @s rng6 matches 1047 at @n[tag=SEAedwina] run tellraw @a[distan
 
 execute if score @s rng6 matches 1040..1070 as @n[tag=SEAedwina] at @s run tp @s ~ ~ ~ facing entity @n[tag=SEAmob]
 execute if score @s rng6 matches 1052 as @n[tag=SEAedwina] at @s facing entity @n[tag=SEAmob,distance=0.01..15] eyes run tp @s ^ ^ ^1.7
-execute if score @s rng6 matches 1055 as @n[tag=SEAedwina] at @s facing entity @n[tag=SEAmob,distance=0.01..15] eyes run tp @s ^ ^ ^1.5
-execute if score @s rng6 matches 1058 as @n[tag=SEAedwina] at @s facing entity @n[tag=SEAmob,distance=0.01..15] eyes run tp @s ^ ^ ^1.3
-execute if score @s rng6 matches 1064 as @n[tag=SEAedwina] at @s facing entity @n[tag=SEAmob,distance=0.01..15] eyes run tp @s ^ ^ ^1.3
+execute if score @s rng6 matches 1053 as @n[tag=SEAedwina] at @s facing entity @n[tag=SEAmob,distance=0.01..15] eyes run tp @s ^ ^ ^1.5
+execute if score @s rng6 matches 1054 as @n[tag=SEAedwina] at @s facing entity @n[tag=SEAmob,distance=0.01..15] eyes run tp @s ^ ^ ^1.3
+execute if score @s rng6 matches 1055 as @n[tag=SEAedwina] at @s facing entity @n[tag=SEAmob,distance=0.01..15] eyes run tp @s ^ ^ ^1.3
+execute if score @s rng6 matches 1082 as @n[tag=SEAedwina] at @s facing entity @n[tag=SEAmob,distance=0.01..15] eyes run tp @s ^ ^ ^1.7
+execute if score @s rng6 matches 1083 as @n[tag=SEAedwina] at @s facing entity @n[tag=SEAmob,distance=0.01..15] eyes run tp @s ^ ^ ^1.5
+execute if score @s rng6 matches 1084 as @n[tag=SEAedwina] at @s facing entity @n[tag=SEAmob,distance=0.01..15] eyes run tp @s ^ ^ ^1.3
+execute if score @s rng6 matches 1085 as @n[tag=SEAedwina] at @s facing entity @n[tag=SEAmob,distance=0.01..15] eyes run tp @s ^ ^ ^1.3
 
 execute if score @s rng6 matches 1040..1067 as @n[tag=SEAedwina] at @s anchored eyes if entity @n[tag=SEAmob,distance=0.01..2] run item replace entity @s weapon.mainhand with iron_axe
 execute if score @s rng6 matches 1040..1067 as @n[tag=SEAedwina] at @s anchored eyes if entity @n[tag=SEAmob,distance=0.01..2] run particle sweep_attack ^ ^ ^0.5 0.1 0.1 0.1 0 2
