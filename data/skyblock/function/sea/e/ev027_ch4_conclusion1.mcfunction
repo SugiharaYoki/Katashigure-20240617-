@@ -176,6 +176,7 @@ execute if score @s rng6 matches 1011 positioned 90145 84 47 run function skyblo
 execute if score @s rng6 matches 1006..1010 positioned 90148 84 47 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
 execute if score @s rng6 matches 1006..1010 positioned 90148 84 47 run particle sculk_soul ~ ~1 ~ 0.3 0.5 0.3 0.05 10
 execute if score @s rng6 matches 1011 positioned 90148 84 47 run function skyblock:sea/m/zombie_knight
+execute if score @s rng6 matches 1011 positioned 90148 84 47 run effect give @a[tag=SEAPT,distance=0..10] slowness 3 9 true
 
 execute if score @s rng6 matches 1012..1035 as @n[tag=SEAedwina] at @s anchored eyes if entity @n[tag=SEAmob,distance=0.01..2] run item replace entity @s weapon.mainhand with iron_axe
 execute if score @s rng6 matches 1012..1035 as @n[tag=SEAedwina] at @s anchored eyes if entity @n[tag=SEAmob,distance=0.01..2] run particle sweep_attack ^ ^ ^0.5 0.1 0.1 0.1 0 2
