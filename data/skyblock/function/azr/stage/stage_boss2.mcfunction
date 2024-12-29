@@ -50,7 +50,7 @@ execute as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run function skyblo
     execute if score tickTimer Azr_system matches 80 run particle minecraft:smoke -79903 44 -14.0 1 1 1 0.02 200
     execute if score tickTimer Azr_system matches 80 if score playerCount Azr_system matches 1..3 run summon illusioner -79903 44 -14.0 {PersistenceRequired:1b,Tags:["AzrielMob","AzrielBossA"],DeathLootTable:"skyblock:azriel_shadow_tier1",Health:200.0f,CustomName:'"权之残影"',attributes:[{id:"generic.max_health",base:200.0d},{id:"generic.movement_speed",base:0.0d},{id:"generic.knockback_resistance",base:0.9d},{id:"generic.armor",base:1.0d}]}
     execute if score tickTimer Azr_system matches 80 if score playerCount Azr_system matches 4.. run summon illusioner -79903 44 -14.0 {PersistenceRequired:1b,Tags:["AzrielMob","AzrielBossA"],DeathLootTable:"skyblock:azriel_shadow_tier1",Health:300.0f,CustomName:'"权之残影"',attributes:[{id:"generic.max_health",base:300.0d},{id:"generic.movement_speed",base:0.0d},{id:"generic.knockback_resistance",base:0.9d},{id:"generic.armor",base:1.5d}]}
-    execute if score tickTimer Azr_system matches 81 run effect give @e[tag=AzrielBossA,type=illusioner,limit=1] slow_falling 5 30 true
+    #execute if score tickTimer Azr_system matches 81 run effect give @e[tag=AzrielBossA,type=illusioner,limit=1] slow_falling 5 30 true
 
 #verbal
     execute if score tickTimer Azr_system matches 2 run tellraw @a[tag=azrPlayer] {"text":"权之残影：","color":"red"}
