@@ -525,3 +525,30 @@ setblock 90074 104 135 air
 #第五章通向主平台的通道
 fill 90114 92 96 90112 89 96 minecraft:iron_block
 
+#第五章地形变化撤销
+fill 90154 167 121 90132 149 101 minecraft:structure_void replace minecraft:mangrove_roots
+fill 90138 148 117 90132 162 131 minecraft:structure_void replace minecraft:mangrove_roots
+fill 90134 145 90 90120 136 101 minecraft:structure_void replace minecraft:mangrove_roots
+
+setblock 90134 138 105 polished_tuff
+setblock 90134 137 105 minecraft:polished_andesite
+setblock 90135 138 105 polished_tuff
+setblock 90135 138 104 air
+setblock 90132 140 105 minecraft:polished_andesite
+fill 90121 142 101 90119 140 103 iron_block
+fill 90121 137 100 90119 139 98 air replace iron_block
+
+setblock 90132 140 119 minecraft:waxed_copper_block
+setblock 90132 139 119 minecraft:air
+setblock 90132 138 119 minecraft:air
+fill 90120 130 90 90118 129 90 iron_bars
+fill 90155 130 117 90163 124 110 minecraft:structure_void replace minecraft:mangrove_roots
+fill 90103 185 151 90112 160 137 minecraft:structure_void replace minecraft:mangrove_roots
+setblock 90133 156 139 glass
+setblock 90133 156 138 air
+fill 90134 155 140 90134 155 141 minecraft:air
+fill 90124 157 131 90132 150 125 minecraft:structure_void replace minecraft:mangrove_roots
+
+
+
+

@@ -21,3 +21,37 @@ summon minecraft:interaction 90126 90.3 58 {CustomName:'[{"text":"多功能工�
 summon minecraft:marker 90126 89 59 {Tags:["SEAcrafter_tp","SEAcrafter_tp15"]}
 fill 90114 91 96 90112 89 96 minecraft:air
 
+#花朵
+setblock 90146 117 98 minecraft:spore_blossom
+setblock 90146 149 103 minecraft:spore_blossom
+setblock 90145 157 105 minecraft:spore_blossom
+setblock 90137 156 104 minecraft:spore_blossom
+setblock 90136 154 114 minecraft:spore_blossom
+setblock 90134 157 124 minecraft:spore_blossom
+setblock 90135 146 120 minecraft:spore_blossom
+
+fill 90154 167 121 90132 149 101 minecraft:mangrove_roots replace minecraft:structure_void
+fill 90138 148 117 90132 162 131 minecraft:mangrove_roots replace minecraft:structure_void
+fill 90134 145 90 90120 136 101 minecraft:mangrove_roots replace minecraft:structure_void
+
+setblock 90134 138 105 air
+setblock 90134 137 105 air
+setblock 90135 138 105 mangrove_roots
+setblock 90135 138 104 mangrove_roots
+setblock 90132 140 105 mangrove_roots
+fill 90121 142 101 90119 140 103 air
+fill 90121 137 100 90119 139 98 iron_block replace air
+setblock 90132 140 119 mangrove_roots
+setblock 90132 139 119 mangrove_roots
+setblock 90132 138 119 mangrove_roots
+fill 90120 130 90 90118 129 90 air
+fill 90155 130 117 90163 124 110 minecraft:mangrove_roots replace minecraft:structure_void
+fill 90103 185 151 90112 160 137 minecraft:mangrove_roots replace minecraft:structure_void
+setblock 90133 156 139 mangrove_roots
+setblock 90133 156 138 mangrove_roots
+fill 90134 155 140 90134 155 141 minecraft:mangrove_roots
+fill 90124 157 131 90132 150 125 minecraft:mangrove_roots replace minecraft:structure_void
+
+
+
+
