@@ -89,5 +89,32 @@ setblock 90108 115 69 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery
 setblock 90144 112 64 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 2, id:"minecraft:gunpowder"}}
 setblock 90102 115 60 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 2, id:"minecraft:flint"}}
 setblock 90105 113 52 decorated_pot{sherds:["friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd"],item:{count: 10, id:"minecraft:emerald"}}
+setblock 90110 89 45 air
+setblock 90110 89 45 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:gunpowder"}}
+setblock 90111 89 45 air
+setblock 90111 89 45 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 2, id:"minecraft:golden_carrot"}}
+
+#mem_1
+fill 90109 91 51 90109 89 48 lever[facing=east]
+setblock 90109 90 51 air
+setblock 90109 90 48 air
+fill 90110 91 47 90111 89 47 waxed_copper_grate
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
