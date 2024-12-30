@@ -5,8 +5,8 @@ execute positioned ^ ^ ^0.2 positioned ~ ~1 ~ unless entity @n[type=interaction,
 
 
 
-execute as @n[type=interaction,tag=flamethrowerdetect] on target if entity @s[level=1..] anchored eyes run function skyblock:sea/p/flamethrower_detect
-execute as @n[type=interaction,tag=flamethrowerdetect] on attacker if entity @s[nbt={Inventory:[{id:"minecraft:firework_star"},{components:{"minecraft:custom_data":{sea_t_shotgun1:true}}}]}] anchored eyes run function skyblock:sea/p/flamethrower_shotgun
+execute as @n[type=interaction,tag=flamethrowerdetect] on attacker if entity @s[level=1..] anchored eyes run function skyblock:sea/p/flamethrower_detect
+execute as @n[type=interaction,tag=flamethrowerdetect] on target if entity @s[nbt={Inventory:[{id:"minecraft:firework_star"},{components:{"minecraft:custom_data":{sea_t_shotgun1:true}}}]}] anchored eyes run function skyblock:sea/p/flamethrower_shotgun
 execute as @n[type=interaction,tag=flamethrowerdetect] run data remove entity @s interaction
 execute as @n[type=interaction,tag=flamethrowerdetect] run data remove entity @s attack
 
