@@ -12,9 +12,9 @@ execute if block 90109 91 51 lever[powered=false] \
  if block 90109 90 50 lever[powered=false] \
  if block 90109 90 49 lever[powered=true] \
  if block 90109 89 51 lever[powered=false] \
- if block 90109 89 50 lever[powered=false] \
+ if block 90109 89 50 lever[powered=true] \
  if block 90109 89 49 lever[powered=false] \
- if block 90109 89 48 lever[powered=true] unless block 90111 89 47 air \
+ if block 90109 89 48 lever[powered=false] unless block 90111 89 47 air \
 run function skyblock:sea/e/ch5/mem_1
 
 
