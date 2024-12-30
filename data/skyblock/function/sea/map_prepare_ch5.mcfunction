@@ -80,6 +80,7 @@ execute positioned 90145 91 59 run function skyblock:sea/m/drowned_small
 execute positioned 90110 115 66 run function skyblock:sea/m/shadow
 execute positioned 90110 115 66 run function skyblock:sea/m/skeleton
 
+execute positioned 90151 91 60 run function skyblock:sea/m/zombie_cook
 
 setblock 90108 115 69 air
 setblock 90144 112 64 air
@@ -100,8 +101,11 @@ setblock 90109 90 51 air
 setblock 90109 90 48 air
 fill 90110 91 47 90111 89 47 waxed_copper_grate
 
-
-
+#mem_2
+fill 90117 111 56 90117 110 56 lever[facing=east]
+fill 90117 112 55 90117 109 55 lever[facing=east]
+fill 90117 111 54 90117 110 54 lever[facing=east]
+fill 90110 117 52 90109 115 52 waxed_copper_grate
 
 
 

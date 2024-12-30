@@ -17,8 +17,19 @@ execute if block 90109 91 51 lever[powered=false] \
  if block 90109 89 48 lever[powered=false] unless block 90111 89 47 air \
 run function skyblock:sea/e/ch5/mem_1
 
+fill 90117 111 56 90117 110 56 lever[facing=east]
+fill 90117 112 55 90117 109 55 lever[facing=east]
+fill 90117 111 54 90117 110 54 lever[facing=east]
 
-
+execute if block 90117 111 56 lever[powered=false] \
+ if block 90117 110 56 lever[powered=false] \
+ if block 90117 112 55 lever[powered=false] \
+ if block 90117 111 55 lever[powered=true] \
+ if block 90117 110 55 lever[powered=true] \
+ if block 90117 119 55 lever[powered=false] \
+ if block 90117 111 54 lever[powered=true] \
+ if block 90117 110 54 lever[powered=false] unless block 90109 115 52 air \
+run function skyblock:sea/e/ch5/mem_2
 
 
 
