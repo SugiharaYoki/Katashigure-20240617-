@@ -82,34 +82,19 @@ execute if items entity @s container.* *[custom_data={sea_t_sprint1:true}] run t
 execute if items entity @s container.* *[custom_data={sea_t_pounce1:true}] run tag @s add sea_t_pounce1
 
 
-execute as @s[x=80000,dx=20000,z=-10000,dz=20000,y=102,dy=5] at @s if block ~ ~-1 ~ waxed_weathered_cut_copper_slab unless block ~ 82 ~ red_concrete if block ~ ~-0.1 ~ air run tp @s ~ 127.0 ~
-execute as @s[x=80000,dx=20000,z=-10000,dz=20000,y=126,dy=5] at @s if block ~ ~-1 ~ waxed_weathered_cut_copper_slab if block ~ ~-0.1 ~ air run tp @s ~ 103.0 ~
-execute as @s[x=80000,dx=20000,z=-10000,dz=20000,y=18,dy=5] at @s if block ~ ~-1 ~ waxed_weathered_cut_copper_slab if block ~ ~-0.1 ~ air run tp @s ~ 34.0 ~
-execute as @s[x=80000,dx=20000,z=-10000,dz=20000,y=44,dy=5] at @s if block ~ ~-1 ~ waxed_weathered_cut_copper_slab if block ~ ~-0.1 ~ air run tp @s ~ 34.0 ~
-execute as @s[x=80000,dx=20000,z=-10000,dz=20000,y=33,dy=5] at @s if block ~ ~-1 ~ waxed_weathered_cut_copper_slab if block ~ ~-0.1 ~ air if block ~ 18 ~ waxed_weathered_cut_copper_slab run tp @s ~ 19.0 ~
-execute as @s[x=80000,dx=20000,z=-10000,dz=20000,y=33,dy=5] at @s if block ~ ~-1 ~ waxed_weathered_cut_copper_slab if block ~ ~-0.1 ~ air unless block ~ 18 ~ waxed_weathered_cut_copper_slab run tp @s ~ 44.0 ~
-
-execute as @s[x=80000,dx=20000,z=-10000,dz=20000,y=102,dy=5] at @s if block ~ ~-1.5 ~ waxed_weathered_cut_copper_slab unless block ~ 82 ~ red_concrete if block ~ ~-0.1 ~ air run tp @s ~ 127.0 ~
-execute as @s[x=80000,dx=20000,z=-10000,dz=20000,y=126,dy=5] at @s if block ~ ~-1.5 ~ waxed_weathered_cut_copper_slab if block ~ ~-0.1 ~ air run tp @s ~ 103.0 ~
-execute as @s[x=80000,dx=20000,z=-10000,dz=20000,y=18,dy=5] at @s if block ~ ~-1.5 ~ waxed_weathered_cut_copper_slab if block ~ ~-0.1 ~ air run tp @s ~ 34.0 ~
-execute as @s[x=80000,dx=20000,z=-10000,dz=20000,y=44,dy=5] at @s if block ~ ~-1.5 ~ waxed_weathered_cut_copper_slab if block ~ ~-0.1 ~ air run tp @s ~ 34.0 ~
-execute as @s[x=80000,dx=20000,z=-10000,dz=20000,y=33,dy=5] at @s if block ~ ~-1.5 ~ waxed_weathered_cut_copper_slab if block ~ ~-0.1 ~ air if block ~ 18 ~ waxed_weathered_cut_copper_slab run tp @s ~ 19.0 ~
-execute as @s[x=80000,dx=20000,z=-10000,dz=20000,y=33,dy=5] at @s if block ~ ~-1.5 ~ waxed_weathered_cut_copper_slab if block ~ ~-0.1 ~ air unless block ~ 18 ~ waxed_weathered_cut_copper_slab run tp @s ~ 44.0 ~
-
-execute as @s[x=80000,dx=20000,z=-10000,dz=20000,y=84,dy=5] at @s if block ~ ~-1 ~ waxed_weathered_cut_copper_slab if block ~ 82 ~ red_concrete unless entity @n[tag=SEAyuehan,distance=0..50] if block ~ ~-0.1 ~ air run tp @s ~ 105.0 ~
-execute as @s[x=80000,dx=20000,z=-10000,dz=20000,y=84,dy=5] at @s if block ~ ~-1.5 ~ waxed_weathered_cut_copper_slab if block ~ 82 ~ red_concrete unless entity @n[tag=SEAyuehan,distance=0..50] if block ~ ~-0.1 ~ air run tp @s ~ 105.0 ~
-execute as @s[x=80000,dx=20000,z=-10000,dz=20000,y=105,dy=5] at @s if block ~ ~-1 ~ waxed_weathered_cut_copper_slab if block ~ 82 ~ red_concrete unless entity @n[tag=SEAyuehan,distance=0..50] if block ~ ~-0.1 ~ air run tp @s ~ 84.0 ~
-execute as @s[x=80000,dx=20000,z=-10000,dz=20000,y=105,dy=5] at @s if block ~ ~-1.5 ~ waxed_weathered_cut_copper_slab if block ~ 82 ~ red_concrete unless entity @n[tag=SEAyuehan,distance=0..50] if block ~ ~-0.1 ~ air run tp @s ~ 84.0 ~
+execute as @s[x=80000,dx=20000,z=-10000,dz=20000,y=-200,dy=405] at @s if block ~ ~-1 ~ waxed_weathered_cut_copper_slab run function skyblock:sea/p/elevator
+execute as @s[x=80000,dx=20000,z=-10000,dz=20000,y=-200,dy=405] at @s if block ~ ~-1.5 ~ waxed_weathered_cut_copper_slab run function skyblock:sea/p/elevator
 
 #回响指南针
 execute if items entity @s weapon.* minecraft:recovery_compass run function skyblock:sea/p/echo_compass
 
 execute unless block ~ ~-1 ~ air unless block ~ ~-1 ~ water if block ~ ~ ~ air if block ~ ~1 ~ air run spawnpoint @s ~ ~ ~
 execute if entity @s[tag=!seaPerm000] run clone 90121 122 108 90121 122 108 90118 123 106
-execute unless entity @s[tag=!seaPerm000] run clone 90121 122 109 90121 122 109 90118 123 106
+execute positioned 90118 123 106 unless entity @s[tag=!seaPerm000,distance=0..12] run clone 90121 122 109 90121 122 109 90118 123 106
 
 
 #炽热球体
-execute as @n[tag=SEAmagma1,type=marker,distance=0..2.5] at @s run function skyblock:sea/p/magma
+execute as @n[tag=SEAmagma1,type=marker,distance=0..2.5,predicate=!skyblock:sneaking] at @s run function skyblock:sea/p/magma
+execute as @n[tag=SEAmagma1,type=marker,distance=0..2.0,predicate=skyblock:sneaking] at @s run function skyblock:sea/p/magma
 
 
