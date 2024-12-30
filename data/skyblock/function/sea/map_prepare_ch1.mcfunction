@@ -549,6 +549,6 @@ setblock 90133 156 138 air
 fill 90134 155 140 90134 155 141 minecraft:air
 fill 90124 157 131 90132 150 125 minecraft:structure_void replace minecraft:mangrove_roots
 setblock 90134 138 106 birch_button[facing=south]
-
+setblock 90113 89 82 air
 
 

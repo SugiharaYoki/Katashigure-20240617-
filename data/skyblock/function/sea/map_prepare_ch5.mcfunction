@@ -110,7 +110,7 @@ fill 90110 117 52 90109 115 52 waxed_copper_grate
 #回到主平台
 setblock 90112 90 80 air
 setblock 90112 90 80 lever[facing=north,powered=false]
-
+setblock 90113 89 82 minecraft:crimson_pressure_plate
 
 
 
