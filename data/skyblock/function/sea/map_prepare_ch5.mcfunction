@@ -114,9 +114,9 @@ setblock 90113 89 82 minecraft:crimson_pressure_plate
 
 
 
+kill @e[type=villager,tag=SEAmarshall]
 
-
-
+execute positioned 90124 161 147 run function skyblock:sea/m/special_marshall
 
 
 
