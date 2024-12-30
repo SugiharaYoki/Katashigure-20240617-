@@ -10,5 +10,6 @@ playsound ambient.basalt_deltas.additions master @s ~ ~ ~ 100 0.7
 playsound ambient.basalt_deltas.mood master @s ~ ~ ~ 100 0.9
 playsound ambient.basalt_deltas.mood master @s ~ ~ ~ 100 0.9
 playsound ambient.basalt_deltas.mood master @s ~ ~ ~ 100 0.7
-advancement grant @a[tag=SEAPT] only skyblock:sea/chapter5
+advancement grant @s only skyblock:sea/chapter5
+execute unless entity @a[tag=e_i_38,tag=SEAPT,tag=!SEAPF] positioned 90140 116 60 run function skyblock:sea/m/drowned_maintenance
 tag @s add e_i_38

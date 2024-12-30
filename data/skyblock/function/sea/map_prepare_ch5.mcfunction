@@ -34,6 +34,7 @@ fill 90154 167 121 90132 149 101 minecraft:mangrove_roots replace minecraft:stru
 fill 90138 148 117 90132 162 131 minecraft:mangrove_roots replace minecraft:structure_void
 fill 90134 145 90 90120 136 101 minecraft:mangrove_roots replace minecraft:structure_void
 
+#主平台地形变化
 setblock 90134 138 105 air
 setblock 90134 137 105 air
 setblock 90135 138 105 mangrove_roots
@@ -53,5 +54,40 @@ fill 90134 155 140 90134 155 141 minecraft:mangrove_roots
 fill 90124 157 131 90132 150 125 minecraft:mangrove_roots replace minecraft:structure_void
 
 
+
+setblock 90096 71 64 chest[facing=north]
+item replace block 90096 71 64 container.12 with glow_berries 4
+item replace block 90096 71 64 container.14 with bread 2
+
+execute positioned 90095 71 61 run function skyblock:sea/m/shadow
+execute positioned 90095 71 61 run function skyblock:sea/m/drowned_maintenance
+execute positioned 90105 83 63 run function skyblock:sea/m/skeleton
+execute positioned 90113 89 59 run function skyblock:sea/m/silverfish_big
+execute positioned 90113 89 59 run function skyblock:sea/m/silverfish_big
+execute positioned 90113 89 59 run function skyblock:sea/m/silverfish_big
+execute positioned 90118 90 74 run function skyblock:sea/m/zombie_bomb
+execute positioned 90118 90 74 run function skyblock:sea/m/zombie_security2
+execute positioned 90118 90 74 run function skyblock:sea/m/zombie_security2
+execute positioned 90118 90 74 run function skyblock:sea/m/zombie_security2
+execute positioned 90118 90 74 run function skyblock:sea/m/drowned_hat
+execute positioned 90136 115 58 run function skyblock:sea/m/drowned_hat
+execute positioned 90136 115 58 run function skyblock:sea/m/drowned_small
+execute positioned 90136 115 58 run function skyblock:sea/m/drowned_small
+
+execute positioned 90145 91 59 run function skyblock:sea/m/drowned_small
+execute positioned 90145 91 59 run function skyblock:sea/m/drowned_small
+
+execute positioned 90110 115 66 run function skyblock:sea/m/shadow
+execute positioned 90110 115 66 run function skyblock:sea/m/skeleton
+
+
+setblock 90108 115 69 air
+setblock 90144 112 64 air
+setblock 90102 115 60 air
+setblock 90105 113 52 air
+setblock 90108 115 69 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 2, id:"minecraft:gunpowder"}}
+setblock 90144 112 64 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 2, id:"minecraft:gunpowder"}}
+setblock 90102 115 60 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 2, id:"minecraft:flint"}}
+setblock 90105 113 52 decorated_pot{sherds:["friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd"],item:{count: 10, id:"minecraft:emerald"}}
 
 
