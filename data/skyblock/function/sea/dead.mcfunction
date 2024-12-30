@@ -322,6 +322,49 @@ tag @s remove SEA_w_06_effected
 tag @s remove SEA_w_07_effected
 tag @s remove SEA_w_08_effected
 
+attribute @s generic.attack_damage modifier remove sea_weapon:upg_crowbar01
+attribute @s generic.attack_speed modifier remove sea_weapon:upg_crowbar02
+attribute @s generic.attack_damage modifier remove sea_weapon:upg_crowbar03
+attribute @s generic.attack_speed modifier remove sea_weapon:upg_crowbar04
+attribute @s generic.attack_damage modifier remove sea_weapon:upg_crowbar05
+attribute @s generic.attack_speed modifier remove sea_weapon:upg_crowbar06
+attribute @s generic.attack_speed modifier remove sea_weapon:upg_crowbar07
+attribute @s generic.attack_speed modifier remove sea_weapon:upg_crowbar08
+attribute @s generic.attack_speed modifier remove sea_weapon:upg_crowbar09
+attribute @s generic.attack_damage modifier remove sea_weapon:upg_crowbar10
+attribute @s player.entity_interaction_range modifier remove sea_weapon:upg_crowbar11
+attribute @s generic.attack_speed modifier remove sea_weapon:upg_crowbar12
+attribute @s player.entity_interaction_range modifier remove sea_weapon:upg_crowbar13
+attribute @s generic.attack_damage modifier remove sea_weapon:upg_crowbar14
+attribute @s player.entity_interaction_range modifier remove sea_weapon:upg_crowbar15
+attribute @s player.entity_interaction_range modifier remove sea_weapon:upg_crowbar16
+attribute @s generic.attack_damage modifier remove sea_weapon:upg_axe01
+attribute @s generic.attack_speed modifier remove sea_weapon:upg_axe02
+attribute @s generic.attack_damage modifier remove sea_weapon:upg_axe03
+attribute @s generic.attack_damage modifier remove sea_weapon:upg_axe04
+attribute @s generic.attack_damage modifier remove sea_weapon:upg_axe05
+attribute @s generic.attack_speed modifier remove sea_weapon:upg_axe06
+attribute @s generic.attack_knockback modifier remove sea_weapon:upg_axe07
+attribute @s generic.attack_speed modifier remove sea_weapon:upg_axe08
+attribute @s generic.attack_speed modifier remove sea_weapon:upg_axe09
+attribute @s generic.attack_knockback modifier remove sea_weapon:upg_axe10
+attribute @s generic.attack_damage modifier remove sea_weapon:upg_axe11
+tag @s remove sea_w_axe_skill_a_1
+tag @s remove sea_w_axe_skill_a_2
+attribute @s generic.attack_damage modifier remove sea_weapon:upg_axe14
+tag @s remove sea_w_axe_skill_a_3
+attribute @s generic.attack_knockback modifier remove sea_weapon:upg_axe16
+attribute @s generic.armor modifier remove sea_weapon:upg_shield01
+attribute @s generic.movement_speed modifier remove sea_weapon:upg_shield02
+attribute @s generic.armor modifier remove sea_weapon:upg_shield03
+tag @s remove sea_w_shield_skill_a_1
+attribute @s generic.movement_speed modifier remove sea_weapon:upg_shield05
+tag @s remove sea_w_shield_skill_b_1
+attribute @s generic.armor modifier remove sea_weapon:upg_shield07
+attribute @s generic.armor modifier remove sea_weapon:upg_shield08
+tag @s remove sea_w_shield_skill_b_2
+tag @s remove sea_w_shield_skill_a_2
+
 
 #不再用到的tag
 tag @s remove sea_t_axeparry1
