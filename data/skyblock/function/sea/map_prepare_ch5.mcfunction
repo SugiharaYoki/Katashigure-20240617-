@@ -107,6 +107,9 @@ fill 90117 112 55 90117 109 55 lever[facing=east]
 fill 90117 111 54 90117 110 54 lever[facing=east]
 fill 90110 117 52 90109 115 52 waxed_copper_grate
 
+#回到主平台
+setblock 90112 90 80 air
+setblock 90112 90 80 lever[facing=north,powered=false]
 
 
 

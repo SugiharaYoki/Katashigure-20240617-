@@ -1,8 +1,5 @@
 execute positioned 90140 104 56 as @a[tag=SEAPT,distance=0..3.8,tag=!e_i_38] at @s run function skyblock:sea/e/ch5/title_1
 
-#回到主平台
-setblock 90112 90 80 air
-setblock 90112 90 80 lever[facing=north,powered=false]
 
 #记忆密码1
 execute if block 90109 91 51 lever[powered=false] \
