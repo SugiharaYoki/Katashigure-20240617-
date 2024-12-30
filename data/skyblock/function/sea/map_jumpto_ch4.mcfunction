@@ -46,3 +46,5 @@ tag @a[tag=SEAPT] add e_w_04
 give @a[tag=SEAPT] emerald 64
 give @a[tag=SEAPT] emerald 64
 give @a[tag=SEAPT] emerald 48
+
+tag @a[tag=SEAPT] add sea_teleport05

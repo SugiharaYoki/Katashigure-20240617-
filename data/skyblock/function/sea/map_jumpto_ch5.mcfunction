@@ -23,4 +23,4 @@ setblock 90159 80 87 minecraft:waxed_copper_bulb[lit=true]
 
 fill 90147 83 73 90146 83 76 air destroy
 
-
+tag @a[tag=SEAPT] add sea_teleport05

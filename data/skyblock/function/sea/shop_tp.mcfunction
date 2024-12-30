@@ -19,4 +19,6 @@ execute if entity @s[tag=SEAPT,tag=sea_teleport12] if entity @n[tag=SEAcrafter_f
 execute if entity @s[tag=SEAPT,tag=sea_teleport13] if entity @n[tag=SEAcrafter_foodless,distance=0..8] run tellraw @s [{"text":"   - "},{"text":"水下研究设施：办公区  ","color":"white"},{"text":"〈◆〉","bold":true,"color":"aqua","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 30013"}}]
 execute if entity @s[tag=SEAPT,tag=sea_teleport14] if entity @n[tag=SEAcrafter_foodless,distance=0..8] run tellraw @s [{"text":"   - "},{"text":"水下研究设施：生态主控装置  ","color":"white"},{"text":"〈◆〉","bold":true,"color":"aqua","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 30014"}}]
 
+execute if entity @s[tag=SEAPT,tag=sea_teleport15] unless entity @n[tag=SEAcrafter_foodless,distance=0..8] run tellraw @s [{"text":"   - "},{"text":"通讯中心：东南支柱  ","color":"white"},{"text":"〈◆〉","bold":true,"color":"aqua","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 30015"}}]
+
 scoreboard players set @s sea_crafter 0
