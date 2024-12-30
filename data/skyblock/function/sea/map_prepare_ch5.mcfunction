@@ -2,6 +2,8 @@
 
 setblock 90074 103 136 lectern[facing=east]
 
+#第五章出生点90146 84 42
+
 scoreboard players set @n[tag=sc] sea_4temp2 0
 scoreboard players set @n[tag=sc] sea_4temp3 0
 scoreboard players set @n[tag=sc] sea_4temp5 0
@@ -19,4 +21,3 @@ summon minecraft:interaction 90126 90.3 58 {CustomName:'[{"text":"多功能工�
 summon minecraft:marker 90126 89 59 {Tags:["SEAcrafter_tp","SEAcrafter_tp15"]}
 fill 90114 91 96 90112 89 96 minecraft:air
 
-#第五章出生点90146 84 42
