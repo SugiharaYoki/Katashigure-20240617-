@@ -470,11 +470,15 @@ item replace block 90116 104 104 container.12 with coal 1
 item replace block 90116 104 104 container.14 with gunpowder 2
 fill 90117 103 109 90117 99 109 air
 
-setblock 90108 99 107 chest[facing=south]
-item replace block 90108 99 107 container.11 with dune_armor_trim_smithing_template 1
-item replace block 90108 99 107 container.13 with wayfinder_armor_trim_smithing_template 3
+setblock 90109 99 108 chest[facing=west]
+item replace block 90109 99 108 container.11 with dune_armor_trim_smithing_template 1
+item replace block 90109 99 108 container.13 with wayfinder_armor_trim_smithing_template 3
 item replace block 90108 99 107 container.15 with dune_armor_trim_smithing_template 1
 execute positioned 90108 99 108 run function skyblock:sea/m/zombie_bomb
+
+setblock 90104 114 115 chest[facing=west]
+item replace block 90104 114 115 container.11 with dune_armor_trim_smithing_template 3
+item replace block 90104 114 115 container.13 with wayfinder_armor_trim_smithing_template 3
 
 setblock 90074 103 141 chest[facing=north]
 setblock 90072 104 137 chest[facing=west]
