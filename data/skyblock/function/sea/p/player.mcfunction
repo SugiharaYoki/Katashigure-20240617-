@@ -120,6 +120,9 @@ execute if entity @s[tag=!e_w_ahl2_e,advancements={skyblock:sea/doc/15=true,skyb
 
 
 execute unless block ~ ~-1 ~ air unless block ~ ~-1 ~ water if block ~ ~ ~ air if block ~ ~1 ~ air run spawnpoint @s ~ ~ ~
+    #debug:重生点异常排查
+    execute unless block ~ ~-1 ~ air unless block ~ ~-1 ~ water if block ~ ~ ~ air if block ~ ~1 ~ air run function skyblock:api_world_entity_getpos_int
+    execute unless block ~ ~-1 ~ air unless block ~ ~-1 ~ water if block ~ ~ ~ air if block ~ ~1 ~ air run tellraw @a[tag=DebugMode] ["executor:",{"selector": "@s"}," sea/p/player: 重生点已设置于"," x: ",{"score": {"name": "getpos_x","objective": "skyblock_system"}}," y: ",{"score": {"name": "getpos_y","objective": "skyblock_system"}}," z: ",{"score": {"name": "getpos_z","objective": "skyblock_system"}}]
 execute if entity @s[tag=!seaPerm000] run clone 90121 122 108 90121 122 108 90118 123 106
 execute unless entity @s[tag=!seaPerm000] run clone 90121 122 109 90121 122 109 90118 123 106
 

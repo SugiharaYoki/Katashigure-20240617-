@@ -53,6 +53,9 @@ execute if entity @a[tag=SEAPT,tag=e_i_26] run tag @s add e_i_26
 execute if entity @a[tag=SEAPT,tag=e_i_27] run tag @s add e_i_27
 execute if entity @a[tag=SEAPT,tag=e_i_28] run tag @s add e_i_28
 execute as @s at @s run spawnpoint @s ~ ~ ~
+    #debug:重生点异常排查
+    execute as @s at @s run function skyblock:api_world_entity_getpos_int
+    execute as @s at @s run tellraw @a[tag=DebugMode] ["executor:",{"selector": "@s"}," sea/map_prepare_ch1: 重生点已设置于"," x: ",{"score": {"name": "getpos_x","objective": "skyblock_system"}}," y: ",{"score": {"name": "getpos_y","objective": "skyblock_system"}}," z: ",{"score": {"name": "getpos_z","objective": "skyblock_system"}}]
 execute unless entity @s[scores={SEA_story=-999..}] run scoreboard players set @s SEA_story 0
 execute unless entity @s[scores={sea_progress=-999..}] run scoreboard players set @s sea_progress 0
 

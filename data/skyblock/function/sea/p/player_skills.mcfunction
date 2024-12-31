@@ -89,6 +89,10 @@ execute as @s[x=80000,dx=20000,z=-10000,dz=20000,y=-200,dy=405] at @s if block ~
 execute if items entity @s weapon.* minecraft:recovery_compass run function skyblock:sea/p/echo_compass
 
 execute unless block ~ ~-1 ~ air unless block ~ ~-1 ~ water if block ~ ~ ~ air if block ~ ~1 ~ air run spawnpoint @s ~ ~ ~
+    #debug:重生点异常排查
+    execute unless block ~ ~-1 ~ air unless block ~ ~-1 ~ water if block ~ ~ ~ air if block ~ ~1 ~ air run function skyblock:api_world_entity_getpos_int
+    execute unless block ~ ~-1 ~ air unless block ~ ~-1 ~ water if block ~ ~ ~ air if block ~ ~1 ~ air run tellraw @a[tag=DebugMode] ["executor:",{"selector": "@s"}," sea/p/player_skills: 重生点已设置于"," x: ",{"score": {"name": "getpos_x","objective": "skyblock_system"}}," y: ",{"score": {"name": "getpos_y","objective": "skyblock_system"}}," z: ",{"score": {"name": "getpos_z","objective": "skyblock_system"}}]
+
 execute if entity @s[tag=!seaPerm000] run clone 90121 122 108 90121 122 108 90118 123 106
 execute positioned 90118 123 106 unless entity @s[tag=!seaPerm000,distance=0..12] run clone 90121 122 109 90121 122 109 90118 123 106
 
