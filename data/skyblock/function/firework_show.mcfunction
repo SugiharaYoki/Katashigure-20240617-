@@ -107,4 +107,219 @@ execute if score firework_timer skyblock_system matches 960..1010 as @n[tag=cent
 execute if score firework_timer skyblock_system matches 1010 as @n[tag=centre1] at @s run particle end_rod ~ ~ ~ 1 1 1 1 20 force @a
 execute if score firework_timer skyblock_system matches 1010 as @n[tag=centre1] at @s run playsound entity.firework_rocket.blast master @a[distance=..1000] ~ ~ ~ 10000
 execute if score firework_timer skyblock_system matches 1010 as @n[tag=centre1] at @s run playsound entity.firework_rocket.large_blast master @a[distance=..1000] ~ ~ ~ 10000
-execute if score firework_timer skyblock_system matches 1010..1020 as @n[tag=centre1] at @s as @e[tag=!centre1,tag=!centre2,tag=2024_firework] at @s run tp @s ^ ^ ^0.5 facing entity @n[tag=centre1]
+execute if score firework_timer skyblock_system matches 1010..1020 as @e[tag=!centre1,tag=!centre2,tag=2024_firework] at @s run tp @s ^ ^ ^0.5 facing entity @n[tag=centre1]
+execute if score firework_timer skyblock_system matches 1020..1080 as @e[tag=!centre1,tag=!centre2,tag=2024_firework] at @s run tp @s ^ ^0.5 ^-0.1 facing entity @n[tag=centre1]
+#1140
+execute if score firework_timer skyblock_system matches 1080 as @e[tag=id1,tag=2024_firework] at @s run particle end_rod ~ ~ ~ 1 1 1 1 20 force @a
+execute if score firework_timer skyblock_system matches 1080 as @e[tag=id1,tag=2024_firework] at @s run playsound entity.firework_rocket.blast master @a[distance=..1000] ~ ~ ~ 10000
+execute if score firework_timer skyblock_system matches 1080 as @e[tag=id1,tag=2024_firework] at @s run playsound entity.firework_rocket.large_blast master @a[distance=..1000] ~ ~ ~ 10000
+
+execute if score firework_timer skyblock_system matches 1090 as @e[tag=id2,tag=2024_firework] at @s run particle end_rod ~ ~ ~ 1 1 1 1 20 force @a
+execute if score firework_timer skyblock_system matches 1090 as @e[tag=id2,tag=2024_firework] at @s run playsound entity.firework_rocket.blast master @a[distance=..1000] ~ ~ ~ 10000
+execute if score firework_timer skyblock_system matches 1090 as @e[tag=id2,tag=2024_firework] at @s run playsound entity.firework_rocket.large_blast master @a[distance=..1000] ~ ~ ~ 10000
+
+execute if score firework_timer skyblock_system matches 1110 as @e[tag=id3,tag=2024_firework] at @s run particle end_rod ~ ~ ~ 1 1 1 1 20 force @a
+execute if score firework_timer skyblock_system matches 1110 as @e[tag=id3,tag=2024_firework] at @s run playsound entity.firework_rocket.blast master @a[distance=..1000] ~ ~ ~ 10000
+execute if score firework_timer skyblock_system matches 1110 as @e[tag=id3,tag=2024_firework] at @s run playsound entity.firework_rocket.large_blast master @a[distance=..1000] ~ ~ ~ 10000
+
+execute if score firework_timer skyblock_system matches 1120 as @e[tag=id4,tag=2024_firework] at @s run particle end_rod ~ ~ ~ 1 1 1 1 20 force @a
+execute if score firework_timer skyblock_system matches 1120 as @e[tag=id4,tag=2024_firework] at @s run playsound entity.firework_rocket.blast master @a[distance=..1000] ~ ~ ~ 10000
+execute if score firework_timer skyblock_system matches 1120 as @e[tag=id4,tag=2024_firework] at @s run playsound entity.firework_rocket.large_blast master @a[distance=..1000] ~ ~ ~ 10000
+
+execute if score firework_timer skyblock_system matches 1130 as @e[tag=id5,tag=2024_firework] at @s run particle end_rod ~ ~ ~ 1 1 1 1 20 force @a
+execute if score firework_timer skyblock_system matches 1130 as @e[tag=id5,tag=2024_firework] at @s run playsound entity.firework_rocket.blast master @a[distance=..1000] ~ ~ ~ 10000
+execute if score firework_timer skyblock_system matches 1130 as @e[tag=id5,tag=2024_firework] at @s run playsound entity.firework_rocket.large_blast master @a[distance=..1000] ~ ~ ~ 10000
+
+execute if score firework_timer skyblock_system matches 1140 as @e[tag=!centre1,tag=!centre2,tag=2024_firework] at @s run particle end_rod ~ ~ ~ 1 1 1 1 20 force @a
+execute if score firework_timer skyblock_system matches 1140 as @e[tag=!centre1,tag=!centre2,tag=2024_firework] at @s run playsound entity.firework_rocket.blast master @a[distance=..1000] ~ ~ ~ 10000
+execute if score firework_timer skyblock_system matches 1140 as @e[tag=!centre1,tag=!centre2,tag=2024_firework] at @s run playsound entity.firework_rocket.large_blast master @a[distance=..1000] ~ ~ ~ 10000
+
+execute if score firework_timer skyblock_system matches 1080..1140 as @e[tag=id1,tag=2024_firework] at @s run particle dust{color:[1.0f,0.0f,0.0f],scale:1.0} ~ ~ ~ 1 1 1 1 20 force @a
+execute if score firework_timer skyblock_system matches 1080 as @e[tag=id1,tag=2024_firework] at @s run playsound entity.firework_rocket.launch master @a[distance=..1000] ~ ~ ~ 10000
+
+execute if score firework_timer skyblock_system matches 1090..1140 as @e[tag=id2,tag=2024_firework] at @s run particle dust{color:[1.0f,1.0f,0.0f],scale:1.0} ~ ~ ~ 1 1 1 1 20 force @a
+execute if score firework_timer skyblock_system matches 1090 as @e[tag=id2,tag=2024_firework] at @s run playsound entity.firework_rocket.launch master @a[distance=..1000] ~ ~ ~ 10000
+
+execute if score firework_timer skyblock_system matches 1110..1140 as @e[tag=id3,tag=2024_firework] at @s run particle dust{color:[0.0f,1.0f,0.0f],scale:1.0} ~ ~ ~ 1 1 1 1 20 force @a
+execute if score firework_timer skyblock_system matches 1110 as @e[tag=id3,tag=2024_firework] at @s run playsound entity.firework_rocket.launch master @a[distance=..1000] ~ ~ ~ 10000
+
+execute if score firework_timer skyblock_system matches 1120..1140 as @e[tag=id4,tag=2024_firework] at @s run particle dust{color:[1.0f,1.0f,1.0f],scale:1.0} ~ ~ ~ 1 1 1 1 20 force @a
+execute if score firework_timer skyblock_system matches 1120 as @e[tag=id4,tag=2024_firework] at @s run playsound entity.firework_rocket.launch master @a[distance=..1000] ~ ~ ~ 10000
+
+execute if score firework_timer skyblock_system matches 1130..1140 as @e[tag=id5,tag=2024_firework] at @s run particle dust{color:[0.0f,0.0f,1.0f],scale:1.0} ~ ~ ~ 1 1 1 1 20 force @a
+execute if score firework_timer skyblock_system matches 1130 as @e[tag=id5,tag=2024_firework] at @s run playsound entity.firework_rocket.launch master @a[distance=..1000] ~ ~ ~ 10000
+
+execute if score firework_timer skyblock_system matches 1140 store result score firework_rng1 skyblock_system run random value 1..3
+execute if score firework_timer skyblock_system matches 1140 store result score firework_rng2 skyblock_system run random value 1..5
+execute if score firework_timer skyblock_system matches 1140 store result score firework_rng3 skyblock_system run random value 1..4
+execute if score firework_timer skyblock_system matches 1140 store result score firework_rng4 skyblock_system run random value 1..6
+execute if score firework_timer skyblock_system matches 1140 store result score firework_rng5 skyblock_system run random value 1..6
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng1 skyblock_system matches 1 run data modify storage firework LifeTime set value 20
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng1 skyblock_system matches 2 run data modify storage firework LifeTime set value 25
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng1 skyblock_system matches 3 run data modify storage firework LifeTime set value 30
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng2 skyblock_system matches 1 run data modify storage firework shape set value "small_ball"
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng2 skyblock_system matches 2 run data modify storage firework shape set value "large_ball"
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng2 skyblock_system matches 3 run data modify storage firework shape set value "star"
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng2 skyblock_system matches 4 run data modify storage firework shape set value "creeper"
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng2 skyblock_system matches 5 run data modify storage firework shape set value "burst"
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng3 skyblock_system matches 1 run data modify storage firework has_trail set value 0b
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng3 skyblock_system matches 1 run data modify storage firework has_twinkle set value 0b
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng3 skyblock_system matches 2 run data modify storage firework has_trail set value 1b
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng3 skyblock_system matches 2 run data modify storage firework has_twinkle set value 0b
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng3 skyblock_system matches 3 run data modify storage firework has_trail set value 0b
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng3 skyblock_system matches 3 run data modify storage firework has_twinkle set value 1b
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng3 skyblock_system matches 4 run data modify storage firework has_trail set value 1b
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng3 skyblock_system matches 4 run data modify storage firework has_twinkle set value 1b
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng4 skyblock_system matches 1 run data modify storage firework color1 set value 16711680
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng4 skyblock_system matches 2 run data modify storage firework color1 set value 65280
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng4 skyblock_system matches 3 run data modify storage firework color1 set value 255
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng4 skyblock_system matches 4 run data modify storage firework color1 set value 16776960
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng4 skyblock_system matches 5 run data modify storage firework color1 set value 65535
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng4 skyblock_system matches 6 run data modify storage firework color1 set value 16711935
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng5 skyblock_system matches 1 run data modify storage firework color2 set value 16711680
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng5 skyblock_system matches 2 run data modify storage firework color2 set value 65280
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng5 skyblock_system matches 3 run data modify storage firework color2 set value 255
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng5 skyblock_system matches 4 run data modify storage firework color2 set value 16776960
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng5 skyblock_system matches 5 run data modify storage firework color2 set value 65535
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng5 skyblock_system matches 6 run data modify storage firework color2 set value 16711935
+execute if score firework_timer skyblock_system matches 1140 as @e[tag=id1,tag=2024_firework] at @s run function skyblock:summon_firework_macro with storage firework
+
+execute if score firework_timer skyblock_system matches 1140 store result score firework_rng1 skyblock_system run random value 1..3
+execute if score firework_timer skyblock_system matches 1140 store result score firework_rng2 skyblock_system run random value 1..5
+execute if score firework_timer skyblock_system matches 1140 store result score firework_rng3 skyblock_system run random value 1..4
+execute if score firework_timer skyblock_system matches 1140 store result score firework_rng4 skyblock_system run random value 1..6
+execute if score firework_timer skyblock_system matches 1140 store result score firework_rng5 skyblock_system run random value 1..6
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng1 skyblock_system matches 1 run data modify storage firework LifeTime set value 20
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng1 skyblock_system matches 2 run data modify storage firework LifeTime set value 25
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng1 skyblock_system matches 3 run data modify storage firework LifeTime set value 30
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng2 skyblock_system matches 1 run data modify storage firework shape set value "small_ball"
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng2 skyblock_system matches 2 run data modify storage firework shape set value "large_ball"
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng2 skyblock_system matches 3 run data modify storage firework shape set value "star"
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng2 skyblock_system matches 4 run data modify storage firework shape set value "creeper"
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng2 skyblock_system matches 5 run data modify storage firework shape set value "burst"
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng3 skyblock_system matches 1 run data modify storage firework has_trail set value 0b
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng3 skyblock_system matches 1 run data modify storage firework has_twinkle set value 0b
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng3 skyblock_system matches 2 run data modify storage firework has_trail set value 1b
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng3 skyblock_system matches 2 run data modify storage firework has_twinkle set value 0b
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng3 skyblock_system matches 3 run data modify storage firework has_trail set value 0b
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng3 skyblock_system matches 3 run data modify storage firework has_twinkle set value 1b
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng3 skyblock_system matches 4 run data modify storage firework has_trail set value 1b
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng3 skyblock_system matches 4 run data modify storage firework has_twinkle set value 1b
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng4 skyblock_system matches 1 run data modify storage firework color1 set value 16711680
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng4 skyblock_system matches 2 run data modify storage firework color1 set value 65280
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng4 skyblock_system matches 3 run data modify storage firework color1 set value 255
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng4 skyblock_system matches 4 run data modify storage firework color1 set value 16776960
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng4 skyblock_system matches 5 run data modify storage firework color1 set value 65535
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng4 skyblock_system matches 6 run data modify storage firework color1 set value 16711935
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng5 skyblock_system matches 1 run data modify storage firework color2 set value 16711680
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng5 skyblock_system matches 2 run data modify storage firework color2 set value 65280
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng5 skyblock_system matches 3 run data modify storage firework color2 set value 255
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng5 skyblock_system matches 4 run data modify storage firework color2 set value 16776960
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng5 skyblock_system matches 5 run data modify storage firework color2 set value 65535
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng5 skyblock_system matches 6 run data modify storage firework color2 set value 16711935
+execute if score firework_timer skyblock_system matches 1140 as @e[tag=id2,tag=2024_firework] at @s run function skyblock:summon_firework_macro with storage firework
+
+execute if score firework_timer skyblock_system matches 1140 store result score firework_rng1 skyblock_system run random value 1..3
+execute if score firework_timer skyblock_system matches 1140 store result score firework_rng2 skyblock_system run random value 1..5
+execute if score firework_timer skyblock_system matches 1140 store result score firework_rng3 skyblock_system run random value 1..4
+execute if score firework_timer skyblock_system matches 1140 store result score firework_rng4 skyblock_system run random value 1..6
+execute if score firework_timer skyblock_system matches 1140 store result score firework_rng5 skyblock_system run random value 1..6
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng1 skyblock_system matches 1 run data modify storage firework LifeTime set value 20
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng1 skyblock_system matches 2 run data modify storage firework LifeTime set value 25
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng1 skyblock_system matches 3 run data modify storage firework LifeTime set value 30
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng2 skyblock_system matches 1 run data modify storage firework shape set value "small_ball"
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng2 skyblock_system matches 2 run data modify storage firework shape set value "large_ball"
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng2 skyblock_system matches 3 run data modify storage firework shape set value "star"
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng2 skyblock_system matches 4 run data modify storage firework shape set value "creeper"
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng2 skyblock_system matches 5 run data modify storage firework shape set value "burst"
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng3 skyblock_system matches 1 run data modify storage firework has_trail set value 0b
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng3 skyblock_system matches 1 run data modify storage firework has_twinkle set value 0b
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng3 skyblock_system matches 2 run data modify storage firework has_trail set value 1b
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng3 skyblock_system matches 2 run data modify storage firework has_twinkle set value 0b
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng3 skyblock_system matches 3 run data modify storage firework has_trail set value 0b
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng3 skyblock_system matches 3 run data modify storage firework has_twinkle set value 1b
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng3 skyblock_system matches 4 run data modify storage firework has_trail set value 1b
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng3 skyblock_system matches 4 run data modify storage firework has_twinkle set value 1b
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng4 skyblock_system matches 1 run data modify storage firework color1 set value 16711680
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng4 skyblock_system matches 2 run data modify storage firework color1 set value 65280
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng4 skyblock_system matches 3 run data modify storage firework color1 set value 255
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng4 skyblock_system matches 4 run data modify storage firework color1 set value 16776960
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng4 skyblock_system matches 5 run data modify storage firework color1 set value 65535
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng4 skyblock_system matches 6 run data modify storage firework color1 set value 16711935
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng5 skyblock_system matches 1 run data modify storage firework color2 set value 16711680
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng5 skyblock_system matches 2 run data modify storage firework color2 set value 65280
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng5 skyblock_system matches 3 run data modify storage firework color2 set value 255
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng5 skyblock_system matches 4 run data modify storage firework color2 set value 16776960
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng5 skyblock_system matches 5 run data modify storage firework color2 set value 65535
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng5 skyblock_system matches 6 run data modify storage firework color2 set value 16711935
+execute if score firework_timer skyblock_system matches 1140 as @e[tag=id3,tag=2024_firework] at @s run function skyblock:summon_firework_macro with storage firework
+
+execute if score firework_timer skyblock_system matches 1140 store result score firework_rng1 skyblock_system run random value 1..3
+execute if score firework_timer skyblock_system matches 1140 store result score firework_rng2 skyblock_system run random value 1..5
+execute if score firework_timer skyblock_system matches 1140 store result score firework_rng3 skyblock_system run random value 1..4
+execute if score firework_timer skyblock_system matches 1140 store result score firework_rng4 skyblock_system run random value 1..6
+execute if score firework_timer skyblock_system matches 1140 store result score firework_rng5 skyblock_system run random value 1..6
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng1 skyblock_system matches 1 run data modify storage firework LifeTime set value 20
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng1 skyblock_system matches 2 run data modify storage firework LifeTime set value 25
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng1 skyblock_system matches 3 run data modify storage firework LifeTime set value 30
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng2 skyblock_system matches 1 run data modify storage firework shape set value "small_ball"
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng2 skyblock_system matches 2 run data modify storage firework shape set value "large_ball"
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng2 skyblock_system matches 3 run data modify storage firework shape set value "star"
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng2 skyblock_system matches 4 run data modify storage firework shape set value "creeper"
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng2 skyblock_system matches 5 run data modify storage firework shape set value "burst"
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng3 skyblock_system matches 1 run data modify storage firework has_trail set value 0b
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng3 skyblock_system matches 1 run data modify storage firework has_twinkle set value 0b
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng3 skyblock_system matches 2 run data modify storage firework has_trail set value 1b
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng3 skyblock_system matches 2 run data modify storage firework has_twinkle set value 0b
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng3 skyblock_system matches 3 run data modify storage firework has_trail set value 0b
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng3 skyblock_system matches 3 run data modify storage firework has_twinkle set value 1b
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng3 skyblock_system matches 4 run data modify storage firework has_trail set value 1b
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng3 skyblock_system matches 4 run data modify storage firework has_twinkle set value 1b
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng4 skyblock_system matches 1 run data modify storage firework color1 set value 16711680
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng4 skyblock_system matches 2 run data modify storage firework color1 set value 65280
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng4 skyblock_system matches 3 run data modify storage firework color1 set value 255
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng4 skyblock_system matches 4 run data modify storage firework color1 set value 16776960
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng4 skyblock_system matches 5 run data modify storage firework color1 set value 65535
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng4 skyblock_system matches 6 run data modify storage firework color1 set value 16711935
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng5 skyblock_system matches 1 run data modify storage firework color2 set value 16711680
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng5 skyblock_system matches 2 run data modify storage firework color2 set value 65280
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng5 skyblock_system matches 3 run data modify storage firework color2 set value 255
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng5 skyblock_system matches 4 run data modify storage firework color2 set value 16776960
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng5 skyblock_system matches 5 run data modify storage firework color2 set value 65535
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng5 skyblock_system matches 6 run data modify storage firework color2 set value 16711935
+execute if score firework_timer skyblock_system matches 1140 as @e[tag=id4,tag=2024_firework] at @s run function skyblock:summon_firework_macro with storage firework
+
+execute if score firework_timer skyblock_system matches 1140 store result score firework_rng1 skyblock_system run random value 1..3
+execute if score firework_timer skyblock_system matches 1140 store result score firework_rng2 skyblock_system run random value 1..5
+execute if score firework_timer skyblock_system matches 1140 store result score firework_rng3 skyblock_system run random value 1..4
+execute if score firework_timer skyblock_system matches 1140 store result score firework_rng4 skyblock_system run random value 1..6
+execute if score firework_timer skyblock_system matches 1140 store result score firework_rng5 skyblock_system run random value 1..6
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng1 skyblock_system matches 1 run data modify storage firework LifeTime set value 20
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng1 skyblock_system matches 2 run data modify storage firework LifeTime set value 25
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng1 skyblock_system matches 3 run data modify storage firework LifeTime set value 30
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng2 skyblock_system matches 1 run data modify storage firework shape set value "small_ball"
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng2 skyblock_system matches 2 run data modify storage firework shape set value "large_ball"
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng2 skyblock_system matches 3 run data modify storage firework shape set value "star"
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng2 skyblock_system matches 4 run data modify storage firework shape set value "creeper"
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng2 skyblock_system matches 5 run data modify storage firework shape set value "burst"
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng3 skyblock_system matches 1 run data modify storage firework has_trail set value 0b
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng3 skyblock_system matches 1 run data modify storage firework has_twinkle set value 0b
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng3 skyblock_system matches 2 run data modify storage firework has_trail set value 1b
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng3 skyblock_system matches 2 run data modify storage firework has_twinkle set value 0b
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng3 skyblock_system matches 3 run data modify storage firework has_trail set value 0b
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng3 skyblock_system matches 3 run data modify storage firework has_twinkle set value 1b
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng3 skyblock_system matches 4 run data modify storage firework has_trail set value 1b
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng3 skyblock_system matches 4 run data modify storage firework has_twinkle set value 1b
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng4 skyblock_system matches 1 run data modify storage firework color1 set value 16711680
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng4 skyblock_system matches 2 run data modify storage firework color1 set value 65280
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng4 skyblock_system matches 3 run data modify storage firework color1 set value 255
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng4 skyblock_system matches 4 run data modify storage firework color1 set value 16776960
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng4 skyblock_system matches 5 run data modify storage firework color1 set value 65535
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng4 skyblock_system matches 6 run data modify storage firework color1 set value 16711935
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng5 skyblock_system matches 1 run data modify storage firework color2 set value 16711680
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng5 skyblock_system matches 2 run data modify storage firework color2 set value 65280
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng5 skyblock_system matches 3 run data modify storage firework color2 set value 255
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng5 skyblock_system matches 4 run data modify storage firework color2 set value 16776960
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng5 skyblock_system matches 5 run data modify storage firework color2 set value 65535
+execute if score firework_timer skyblock_system matches 1140 if score firework_rng5 skyblock_system matches 6 run data modify storage firework color2 set value 16711935
+execute if score firework_timer skyblock_system matches 1140 as @e[tag=id5,tag=2024_firework] at @s run function skyblock:summon_firework_macro with storage firework
