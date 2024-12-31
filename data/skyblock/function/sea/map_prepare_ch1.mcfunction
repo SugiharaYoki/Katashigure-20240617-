@@ -486,6 +486,8 @@ setblock 90102 114 134 decorated_pot{sherds:["heart_pottery_sherd","heart_potter
 setblock 90071 112 103 chest[facing=south]
 item replace block 90071 112 103 container.12 with iron_ingot 1
 item replace block 90071 112 103 container.14 with apple 3
+setblock 90081 115 132 air
+setblock 90081 115 132 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 2, id:"minecraft:flint"}}
 
 setblock 90074 103 141 chest[facing=north]
 setblock 90072 104 137 chest[facing=west]
