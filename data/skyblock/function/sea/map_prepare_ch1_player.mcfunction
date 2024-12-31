@@ -157,4 +157,4 @@ advancement grant @s[scores={sea_progress=12..}] only skyblock:sea/doc/documenta
 
 tag @s[tag=e_w_ahl2_e] add SEA_w_armor_upg1
 tag @s[tag=e_w_ahl2_e] add SEA_w_armor_upg2
-
+function skyblock:sea/p/w/armor_effect
