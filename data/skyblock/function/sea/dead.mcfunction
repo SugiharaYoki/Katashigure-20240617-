@@ -422,6 +422,7 @@ attribute @s generic.armor_toughness modifier remove sea_weapon:upg_armor22
 attribute @s generic.armor modifier remove sea_weapon:upg_armor23
 attribute @s generic.armor modifier remove sea_weapon:upg_armor24
 attribute @s generic.armor_toughness modifier remove sea_weapon:upg_armor25
+attribute @s generic.armor modifier remove sea_weapon:upg_armor26
 
 
 #不再用到的tag
