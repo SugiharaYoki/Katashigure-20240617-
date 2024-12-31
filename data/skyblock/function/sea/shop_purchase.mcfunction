@@ -498,7 +498,7 @@ tag @s remove sea_purchase_pass
 execute if entity @a[advancements={skyblock:sea/chapter5=true}] if score @s sea_crafter matches 10068 as @s[scores={sea_i_emerald=..7}] run tellraw @s {"text":"失败！素材不足！","color":"red"}
 execute if entity @a[advancements={skyblock:sea/chapter5=true}] if score @s sea_crafter matches 10068 as @s[scores={sea_i_emerald=8..}] run tag @s add sea_purchase_pass
 execute if entity @s[tag=sea_purchase_pass] run playsound minecraft:block.note_block.hat player @a ~ ~ ~ 0.8 0.7
-execute if entity @s[tag=sea_purchase_pass] run give @s tnt[custom_name='{"text":"可控地雷触发装置","italic":true,"color":"blue","italic":false}',lore=['{"text":"它会在你丢出去3秒后爆炸！","color":"white","italic":false}','{"text":"放心，真的不会伤到友军！","color":"white","italic":false}','{"text":"请注意：丢出去之后可就没法拆卸了。","color":"white","italic":false}']] 1
+execute if entity @s[tag=sea_purchase_pass] run give @s tnt[custom_name='{"text":"可控地雷触发装置","italic":true,"color":"blue","italic":false}',lore=['{"text":"并不会在你丢出去后立刻爆炸。","color":"white","italic":false}','{"text":"放心，真的不会伤到友军！","color":"white","italic":false}','{"text":"请注意：丢出去之后可就没法拆卸了。","color":"white","italic":false}']] 1
 execute if entity @s[tag=sea_purchase_pass] run scoreboard players remove @s sea_i_emerald 8
 tag @s remove sea_purchase_pass
 

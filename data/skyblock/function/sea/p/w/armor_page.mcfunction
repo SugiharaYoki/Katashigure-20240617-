@@ -142,7 +142,15 @@ tellraw @s [{"text":" ","color":"light_purple"},\
 {"selector":"@n[tag=SEA_w_armor_displaymarkerE]","color":"dark_gray"},\
 {"selector":"@n[tag=SEA_w_armor_displaymarkerE]","color":"dark_gray"}]
 
-tellraw @s [{"text":" ","color":"light_purple"},\
+execute unless entity @s[tag=SEA_w_armor_upg19,tag=SEA_w_armor_upg22,tag=SEA_w_armor_upg25] run tellraw @s [{"text":" ","color":"light_purple"},\
+{"selector":"@n[tag=SEA_w_armor_displaymarker0b]","color":"dark_gray"},\
+{"selector":"@n[tag=SEA_w_armor_displaymarkerE]","color":"dark_gray"},\
+{"selector":"@n[tag=SEA_w_armor_displaymarkerE]","color":"dark_gray"},\
+{"selector":"@n[tag=SEA_w_armor_displaymarkerE]","color":"dark_gray"},\
+{"selector":"@n[tag=SEA_w_armor_displaymarker20]","color":"blue","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 50520"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：3\n增加0.5防御力","color":"white"}}},\
+{"selector":"@n[tag=SEA_w_armor_displaymarker21]","color":"blue","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 50521"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：3\n增加1.0防御力","color":"white"}}},\
+{"selector":"@n[tag=SEA_w_armor_displaymarker22]","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 50522"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：3\n增加0.5护甲韧性","color":"white"}}}]
+execute if entity @s[tag=SEA_w_armor_upg19,tag=SEA_w_armor_upg22,tag=SEA_w_armor_upg25] run tellraw @s [{"text":" ","color":"light_purple"},\
 {"selector":"@n[tag=SEA_w_armor_displaymarker0b]","color":"dark_gray"},\
 {"selector":"@n[tag=SEA_w_armor_displaymarkerE]","color":"dark_gray"},\
 {"selector":"@n[tag=SEA_w_armor_displaymarkerE]","color":"dark_gray"},\
@@ -150,7 +158,7 @@ tellraw @s [{"text":" ","color":"light_purple"},\
 {"selector":"@n[tag=SEA_w_armor_displaymarker20]","color":"blue","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 50520"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：3\n增加0.5防御力","color":"white"}}},\
 {"selector":"@n[tag=SEA_w_armor_displaymarker21]","color":"blue","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 50521"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：3\n增加1.0防御力","color":"white"}}},\
 {"selector":"@n[tag=SEA_w_armor_displaymarker22]","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 50522"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：3\n增加0.5护甲韧性","color":"white"}}},\
-{"selector":"@n[tag=SEA_w_armor_displaymarker26]","color":"blue","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 50526"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：8\n增加2.0防御力","color":"white"}}}]
+{"selector":"@n[tag=SEA_w_armor_displaymarker26]","color":"red","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 50526"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：8\n增加2.0防御力","color":"white"}}}]
 
 tellraw @s [{"text":" ","color":"light_purple"},\
 {"selector":"@n[tag=SEA_w_armor_displaymarker0]","color":"blue"},\
