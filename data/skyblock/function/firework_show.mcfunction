@@ -1,7 +1,7 @@
 execute if score firework_timer skyblock_system matches -2147483648..2147483647 run scoreboard players add firework_timer skyblock_system 1
 
 #init
-execute if score firework_timer skyblock_system matches 1 positioned 0. 0. 0. as @a[distance=..1000] at @s run playsound minecraft:app2.afterdark master @s ~ ~ ~ 1000 1.0
+execute if score firework_timer skyblock_system matches 1 positioned 0. 0. 0. as @a[distance=..1000] at @s run playsound minecraft:app2.afterdark music @s ~ ~ ~ 1000 1.0
 execute if score firework_timer skyblock_system matches 1 run time set midnight
 execute if score firework_timer skyblock_system matches 1 run weather clear
 execute if score firework_timer skyblock_system matches 1 run summon marker -42.5 55.0 0.5 {Tags:["centre1","2024_firework"]}
@@ -11,14 +11,14 @@ execute if score firework_timer skyblock_system matches 1 run summon marker -42.
 execute if score firework_timer skyblock_system matches 1 run summon marker -42.5 55.0 0.5 {Tags:["circ_2","p1","id3","2024_firework"]}
 execute if score firework_timer skyblock_system matches 1 run summon marker -42.5 55.0 0.5 {Tags:["circ_2","p2","id4","2024_firework"]}
 execute if score firework_timer skyblock_system matches 1 run summon marker -42.5 55.0 0.5 {Tags:["circ_2","p3","id5","2024_firework"]}
-execute if score firework_timer skyblock_system matches 1..4280 as @n[tag=centre1] at @s run tp @s ~ ~ ~ ~1 0
-execute if score firework_timer skyblock_system matches 1..4280 as @n[tag=centre1] at @s run tp @n[tag=circ_1,tag=p1] ^ ^ ^5 ~1.5 0
-execute if score firework_timer skyblock_system matches 1..4280 as @n[tag=centre1] at @s run tp @n[tag=circ_1,tag=p2] ^ ^ ^-5 ~2.5 0
-execute if score firework_timer skyblock_system matches 1..4280 as @n[tag=centre2] at @s run tp @s ~ ~ ~ ~-2 0
-execute if score firework_timer skyblock_system matches 1..4280 as @n[tag=centre2] at @s run tp @n[tag=circ_2,tag=p1] ^8 ^ ^ ~1.5 0
-execute if score firework_timer skyblock_system matches 1..4280 as @n[tag=centre2] at @s run tp @n[tag=circ_2,tag=p2] ^-4 ^ ^6.92 ~3.5 0
-execute if score firework_timer skyblock_system matches 1..4280 as @n[tag=centre2] at @s run tp @n[tag=circ_2,tag=p3] ^-4 ^ ^-6.92 ~5.5 0
-execute if score firework_timer skyblock_system matches 170..4280 at @e[tag=2024_firework] positioned ^ ^ ^1 run particle end_rod ~ ~ ~ 0 1 0 0.1 0 force @a
+execute if score firework_timer skyblock_system matches 1..960 as @n[tag=centre1] at @s run tp @s ~ ~ ~ ~1 0
+execute if score firework_timer skyblock_system matches 1..960 as @n[tag=centre1] at @s run tp @n[tag=circ_1,tag=p1] ^ ^ ^5 ~1.5 0
+execute if score firework_timer skyblock_system matches 1..960 as @n[tag=centre1] at @s run tp @n[tag=circ_1,tag=p2] ^ ^ ^-5 ~2.5 0
+execute if score firework_timer skyblock_system matches 1..960 as @n[tag=centre2] at @s run tp @s ~ ~ ~ ~-2 0
+execute if score firework_timer skyblock_system matches 1..960 as @n[tag=centre2] at @s run tp @n[tag=circ_2,tag=p1] ^8 ^ ^ ~1.5 0
+execute if score firework_timer skyblock_system matches 1..960 as @n[tag=centre2] at @s run tp @n[tag=circ_2,tag=p2] ^-4 ^ ^6.92 ~3.5 0
+execute if score firework_timer skyblock_system matches 1..960 as @n[tag=centre2] at @s run tp @n[tag=circ_2,tag=p3] ^-4 ^ ^-6.92 ~5.5 0
+execute if score firework_timer skyblock_system matches 170..960 at @e[tag=2024_firework] positioned ^ ^ ^1 run particle end_rod ~ ~ ~ 0 1 0 0.1 0 force @a
 
 execute if score firework_timer skyblock_system matches 160..960 run scoreboard players add firework_sub_timer skyblock_system 1
 #time
@@ -94,3 +94,17 @@ execute if score firework_timer skyblock_system matches 760..810 run setblock -4
 execute if score firework_timer skyblock_system matches 810..860 run setblock -43 55 0 cyan_stained_glass
 execute if score firework_timer skyblock_system matches 860..910 run setblock -43 55 0 blue_stained_glass
 execute if score firework_timer skyblock_system matches 910..960 run setblock -43 55 0 purple_stained_glass
+
+execute if score firework_timer skyblock_system matches 960..990 as @e[tag=!centre1,tag=!centre2,tag=2024_firework] at @s rotated ~ -45 run tp @s ^ ^ ^0.1
+execute if score firework_timer skyblock_system matches 960..990 at @e[tag=!centre1,tag=!centre2,tag=2024_firework] run particle end_rod ~ ~ ~ 0 0 0 0 1 force @a
+execute if score firework_timer skyblock_system matches 990..1010 as @e[tag=!centre1,tag=!centre2,tag=2024_firework] at @s rotated ~ -45 run tp @s ^ ^ ^-0.2
+execute if score firework_timer skyblock_system matches 990..1010 at @e[tag=!centre1,tag=!centre2,tag=2024_firework] run particle end_rod ~ ~ ~ 0 0 0 0 1 force @a
+execute if score firework_timer skyblock_system matches 1010..1020 as @e[tag=!centre1,tag=!centre2,tag=2024_firework] at @s rotated ~ -45 run tp @s ^ ^ ^0.3
+execute if score firework_timer skyblock_system matches 1010..1020 at @e[tag=!centre1,tag=!centre2,tag=2024_firework] run particle end_rod ~ ~ ~ 0 0 0 0 1 force @a
+execute if score firework_timer skyblock_system matches 960..1010 as @n[tag=centre1] at @s run tp @s ~ ~0.1 ~
+execute if score firework_timer skyblock_system matches 960..1010 as @n[tag=centre1] at @s run particle end_rod ~ ~ ~ 0.5 0.5 0.5 0 20 force @a
+execute if score firework_timer skyblock_system matches 960..1010 as @n[tag=centre1] at @s run particle end_rod ~ ~ ~ 0.125 0.125 0.125 0 20 force @a
+execute if score firework_timer skyblock_system matches 1010 as @n[tag=centre1] at @s run particle end_rod ~ ~ ~ 1 1 1 1 20 force @a
+execute if score firework_timer skyblock_system matches 1010 as @n[tag=centre1] at @s run playsound entity.firework_rocket.blast master @a[distance=..1000] ~ ~ ~ 10000
+execute if score firework_timer skyblock_system matches 1010 as @n[tag=centre1] at @s run playsound entity.firework_rocket.large_blast master @a[distance=..1000] ~ ~ ~ 10000
+execute if score firework_timer skyblock_system matches 1010..1020 as @n[tag=centre1] at @s as @e[tag=!centre1,tag=!centre2,tag=2024_firework] at @s run tp @s ^ ^ ^0.5 facing entity @n[tag=centre1]
