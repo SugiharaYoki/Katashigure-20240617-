@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "通讯中心 · 支柱",
+            "color": "blue",
+            "bold": true,
+            "italic": false
+        },
+        "description": {
+            "text": "不论对面是谁，他们显然不想让我轻易抵达通讯平台。\n但我知道，他们至少会为自己留一条后路。\n而这便会允许我踏进他们的地盘。",
+            "color": "white"
+        },
+        "icon": {
+            "id": "minecraft:waxed_copper_grate"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "sea": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:sea/chapter4b"
+}

@@ -42,6 +42,8 @@ execute if items entity @s container.* *[custom_data={sea_flamethrower:true}] ru
 execute if items entity @s container.* *[custom_data={sea_t_flamethrower1:true}] run tellraw @s [{"text":"     - "},{"text":"喷火器：燃料增液 II  ","color":"yellow"},{"score":{"name":"@s","objective":"sea_i_iron_ingot"},"color":"white"},{"text":"/6 铁锭 ","color":"gray"},{"score":{"name":"@s","objective":"sea_i_flint"},"color":"white"},{"text":"/6 燧石 ","color":"gray"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 10030"}}]
 execute if items entity @s container.* *[custom_data={sea_t_flamethrower2:true}] run tellraw @s [{"text":"     - "},{"text":"喷火器：燃料增液 III  ","color":"yellow"},{"score":{"name":"@s","objective":"sea_i_iron_ingot"},"color":"white"},{"text":"/9 铁锭 ","color":"gray"},{"score":{"name":"@s","objective":"sea_i_flint"},"color":"white"},{"text":"/9 燧石 ","color":"gray"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 10031"}}]
 
+tellraw @s {"text":"   - 卸下盔甲后可进行强化","bold":false,"color":"gray"}
+
 execute if items entity @s container.* *[custom_data={sea_safehat:true}] if entity @s[tag=SEAPT,tag=!e_w_ahl2_e] run \
 tellraw @s [{"text":"   - "},{"text":"电工安全帽：升级  ","color":"blue"},{"score":{"name":"@s","objective":"sea_i_iron_ingot"},"color":"white"},{"text":"/2 铁锭 ","color":"gray"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 10020"}}]
 execute if items entity @s container.* *[custom_data={sea_safehat:true}] if entity @s[tag=SEAPT,tag=e_w_ahl2_e] run \
