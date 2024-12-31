@@ -1,7 +1,7 @@
 execute if score firework_timer skyblock_system matches -2147483648..2147483647 run scoreboard players add firework_timer skyblock_system 1
 
 #init
-execute if score firework_timer skyblock_system matches 1 positioned 0. 0. 0. as @a[distance=..1000] at @s run playsound minecraft:app2.afterdark music @s ~ ~ ~ 1 1.0
+execute if score firework_timer skyblock_system matches 1 positioned 0. 0. 0. as @a[distance=..1000] at @s run playsound minecraft:app2.afterdark music @s ~ ~ ~ 100 1.0
 execute if score firework_timer skyblock_system matches 1 run time set midnight
 execute if score firework_timer skyblock_system matches 1 run weather clear
 execute if score firework_timer skyblock_system matches 1 run summon marker -42.5 55.0 0.5 {Tags:["centre1","2024_firework"]}
