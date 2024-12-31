@@ -88,7 +88,8 @@ execute as @s[x=80000,dx=20000,z=-10000,dz=20000,y=-200,dy=405] at @s if block ~
 #回响指南针
 execute if items entity @s weapon.* minecraft:recovery_compass run function skyblock:sea/p/echo_compass
 
-execute unless block ~ ~-1 ~ air unless block ~ ~-1 ~ water if block ~ ~ ~ air if block ~ ~1 ~ air run spawnpoint @s ~ ~ ~
+#重复设置了，这里我先注释掉——轩宇
+#execute unless block ~ ~-1 ~ air unless block ~ ~-1 ~ water if block ~ ~ ~ air if block ~ ~1 ~ air run spawnpoint @s ~ ~ ~
 execute if entity @s[tag=!seaPerm000] run clone 90121 122 108 90121 122 108 90118 123 106
 execute positioned 90118 123 106 unless entity @s[tag=!seaPerm000,distance=0..12] run clone 90121 122 109 90121 122 109 90118 123 106
 
