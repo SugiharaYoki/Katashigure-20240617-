@@ -128,6 +128,7 @@ tellraw @s [{"text":" ","color":"light_purple"},\
 {"selector":"@n[tag=SEA_w_armor_displaymarker0b]","color":"dark_gray"},\
 {"selector":"@n[tag=SEA_w_armor_displaymarkerE]","color":"dark_gray"},\
 {"selector":"@n[tag=SEA_w_armor_displaymarkerE]","color":"dark_gray"},\
+{"selector":"@n[tag=SEA_w_armor_displaymarkerE]","color":"dark_gray"},\
 {"selector":"@n[tag=SEA_w_armor_displaymarker17]","color":"blue","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 50517"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：3\n增加0.5防御力","color":"white"}}},\
 {"selector":"@n[tag=SEA_w_armor_displaymarker18]","color":"blue","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 50518"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：3\n增加1.0防御力","color":"white"}}},\
 {"selector":"@n[tag=SEA_w_armor_displaymarker19]","color":"yellow","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 50519"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：3\n减少30%燃烧DEBUFF持续时间","color":"white"}}}]
@@ -145,6 +146,7 @@ tellraw @s [{"text":" ","color":"light_purple"},\
 {"selector":"@n[tag=SEA_w_armor_displaymarker0b]","color":"dark_gray"},\
 {"selector":"@n[tag=SEA_w_armor_displaymarkerE]","color":"dark_gray"},\
 {"selector":"@n[tag=SEA_w_armor_displaymarkerE]","color":"dark_gray"},\
+{"selector":"@n[tag=SEA_w_armor_displaymarkerE]","color":"dark_gray"},\
 {"selector":"@n[tag=SEA_w_armor_displaymarker20]","color":"blue","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 50520"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：3\n增加0.5防御力","color":"white"}}},\
 {"selector":"@n[tag=SEA_w_armor_displaymarker21]","color":"blue","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 50521"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：3\n增加1.0防御力","color":"white"}}},\
 {"selector":"@n[tag=SEA_w_armor_displaymarker22]","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 50522"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：3\n增加0.5护甲韧性","color":"white"}}}]
@@ -160,6 +162,7 @@ tellraw @s [{"text":" ","color":"light_purple"},\
 
 tellraw @s [{"text":" ","color":"light_purple"},\
 {"selector":"@n[tag=SEA_w_armor_displaymarker0b]","color":"dark_gray"},\
+{"selector":"@n[tag=SEA_w_armor_displaymarkerE]","color":"dark_gray"},\
 {"selector":"@n[tag=SEA_w_armor_displaymarkerE]","color":"dark_gray"},\
 {"selector":"@n[tag=SEA_w_armor_displaymarkerE]","color":"dark_gray"},\
 {"selector":"@n[tag=SEA_w_armor_displaymarker23]","color":"blue","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 50523"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：3\n增加0.5防御力","color":"white"}}},\
