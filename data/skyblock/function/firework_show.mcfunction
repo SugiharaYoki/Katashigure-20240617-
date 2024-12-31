@@ -1,7 +1,7 @@
 execute if score firework_timer skyblock_system matches -2147483648..2147483647 run scoreboard players add firework_timer skyblock_system 1
 
 #init
-execute if score firework_timer skyblock_system matches 1 positioned 0. 0. 0. at @a[distance=..1000] run playsound minecraft:app2.afterdark master @s ~ ~ ~ 1000 1.0
+execute if score firework_timer skyblock_system matches 1 positioned 0. 0. 0. as @a[distance=..1000] at @s run playsound minecraft:app2.afterdark master @s ~ ~ ~ 1000 1.0
 execute if score firework_timer skyblock_system matches 1 run time set midnight
 execute if score firework_timer skyblock_system matches 1 run weather clear
 execute if score firework_timer skyblock_system matches 1 run summon marker -42.5 55.0 0.5 {Tags:["centre1","2024_firework"]}
@@ -69,11 +69,11 @@ execute if score firework_timer skyblock_system matches 160..960 if score firewo
 #
 execute if score firework_timer skyblock_system matches 160..960 if score firework_sub_timer skyblock_system matches 9.. store result score firework_rng6 skyblock_system run random value 1..5
 
-execute if score firework_timer skyblock_system matches 160..960 if score firework_sub_timer skyblock_system matches 9.. if score firework_rng6 skyblock_system matches 1 as @n[tag=id1,tag=2024_firework] run function skyblock:summon_firework_macro with storage firework
-execute if score firework_timer skyblock_system matches 160..960 if score firework_sub_timer skyblock_system matches 9.. if score firework_rng6 skyblock_system matches 2 as @n[tag=id2,tag=2024_firework] run function skyblock:summon_firework_macro with storage firework
-execute if score firework_timer skyblock_system matches 160..960 if score firework_sub_timer skyblock_system matches 9.. if score firework_rng6 skyblock_system matches 3 as @n[tag=id3,tag=2024_firework] run function skyblock:summon_firework_macro with storage firework
-execute if score firework_timer skyblock_system matches 160..960 if score firework_sub_timer skyblock_system matches 9.. if score firework_rng6 skyblock_system matches 4 as @n[tag=id4,tag=2024_firework] run function skyblock:summon_firework_macro with storage firework
-execute if score firework_timer skyblock_system matches 160..960 if score firework_sub_timer skyblock_system matches 9.. if score firework_rng6 skyblock_system matches 5 as @n[tag=id5,tag=2024_firework] run function skyblock:summon_firework_macro with storage firework
+execute if score firework_timer skyblock_system matches 160..960 if score firework_sub_timer skyblock_system matches 9.. if score firework_rng6 skyblock_system matches 1 as @n[tag=id1,tag=2024_firework] at @s run function skyblock:summon_firework_macro with storage firework
+execute if score firework_timer skyblock_system matches 160..960 if score firework_sub_timer skyblock_system matches 9.. if score firework_rng6 skyblock_system matches 2 as @n[tag=id2,tag=2024_firework] at @s run function skyblock:summon_firework_macro with storage firework
+execute if score firework_timer skyblock_system matches 160..960 if score firework_sub_timer skyblock_system matches 9.. if score firework_rng6 skyblock_system matches 3 as @n[tag=id3,tag=2024_firework] at @s run function skyblock:summon_firework_macro with storage firework
+execute if score firework_timer skyblock_system matches 160..960 if score firework_sub_timer skyblock_system matches 9.. if score firework_rng6 skyblock_system matches 4 as @n[tag=id4,tag=2024_firework] at @s run function skyblock:summon_firework_macro with storage firework
+execute if score firework_timer skyblock_system matches 160..960 if score firework_sub_timer skyblock_system matches 9.. if score firework_rng6 skyblock_system matches 5 as @n[tag=id5,tag=2024_firework] at @s run function skyblock:summon_firework_macro with storage firework
 
 execute if score firework_timer skyblock_system matches 160..960 if score firework_sub_timer skyblock_system matches 9.. run scoreboard players reset firework_sub_timer skyblock_system
 

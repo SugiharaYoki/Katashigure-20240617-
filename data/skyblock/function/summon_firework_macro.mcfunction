@@ -1,1 +1,1 @@
-$summon minecraft:firework_rocket ~ ~ ~ {LifeTime:$(LifeTime),FireworksItem:{id:"minecraft:firework_rocket",components:{fireworks:{flight_duration:2b,explosions:[{colors:[I;$(color1),$(color2)],shape:$(shape),has_trail:$(has_trail),has_twinkle:$(has_twinkle)}]}}}}
+$summon minecraft:firework_rocket ~ ~2 ~ {LifeTime:$(LifeTime),FireworksItem:{id:"minecraft:firework_rocket",components:{fireworks:{flight_duration:2b,explosions:[{colors:[I;$(color1),$(color2)],shape:$(shape),has_trail:$(has_trail),has_twinkle:$(has_twinkle)}]}}}}
