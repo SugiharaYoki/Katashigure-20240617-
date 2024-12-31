@@ -324,6 +324,6 @@ execute if score firework_timer skyblock_system matches 1140 if score firework_r
 execute if score firework_timer skyblock_system matches 1140 if score firework_rng5 skyblock_system matches 6 run data modify storage firework color2 set value 16711935
 execute if score firework_timer skyblock_system matches 1140 as @e[tag=id5,tag=2024_firework] at @s run function skyblock:summon_firework_macro with storage firework
 
-execute if score firework_timer skyblock_system matches 1160 positioned 0. 0. 0. run title @a[distance=..1000] actionbar {"text":"Stage 2024 - Wave 12","color":"red"}
-execute if score firework_timer skyblock_system matches 1200 positioned 0. 0. 0. run title @a[distance=..1000] actionbar {"text":"Stage Clear","color":"green"}
-execute if score firework_timer skyblock_system matches 1200 positioned 0. 0. 0. run playsound entity.player.levelup master @a[distance=..1000] ~ ~ ~ 1 1.1
+execute if score firework_timer skyblock_system matches 1200 positioned 0. 0. 0. run title @a[distance=..1000] actionbar {"text":"Stage 2024 - Wave 12","color":"red"}
+execute if score firework_timer skyblock_system matches 1260 positioned 0. 0. 0. run title @a[distance=..1000] actionbar {"text":"Stage Clear","color":"green"}
+execute if score firework_timer skyblock_system matches 1260 positioned 0. 0. 0. run playsound entity.player.levelup master @a[distance=..1000] ~ ~ ~ 1 1.1
