@@ -135,9 +135,9 @@ execute if entity @s[tag=sea_purchase_pass] run scoreboard players remove @s sea
 tag @s remove sea_purchase_pass
 
 #防护帽
-execute if entity @s[tag=!e_w_ahl2_e] if items entity @s container.* *[custom_data={sea_safehat:true}] if score @s sea_crafter matches 10020 as @s[scores={sea_i_iron_ingot=..1}] run tellraw @s {"text":"失败！素材不足！","color":"red"}
-execute if entity @s[tag=!e_w_ahl2_e] if items entity @s container.* *[custom_data={sea_safehat:true}] if score @s sea_crafter matches 10020 as @s[scores={sea_i_iron_ingot=2..}] run tag @s add sea_purchase_pass
-execute if entity @s[tag=e_w_ahl2_e] if items entity @s container.* *[custom_data={sea_safehat:true}] if score @s sea_crafter matches 10020 run tellraw @s {"text":"失败！素材不足！","color":"red"}
+#execute if entity @s[tag=!e_w_ahl2_e] if items entity @s container.* *[custom_data={sea_safehat:true}] if score @s sea_crafter matches 10020 as @s[scores={sea_i_iron_ingot=..1}] run tellraw @s {"text":"失败！素材不足！","color":"red"}
+#execute if entity @s[tag=!e_w_ahl2_e] if items entity @s container.* *[custom_data={sea_safehat:true}] if score @s sea_crafter matches 10020 as @s[scores={sea_i_iron_ingot=2..}] run tag @s add sea_purchase_pass
+#execute if entity @s[tag=e_w_ahl2_e] if items entity @s container.* *[custom_data={sea_safehat:true}] if score @s sea_crafter matches 10020 run tellraw @s {"text":"失败！素材不足！","color":"red"}
 execute if entity @s[tag=e_w_ahl2_e] if items entity @s container.* *[custom_data={sea_safehat:true}] if score @s sea_crafter matches 10020 run tag @s add sea_purchase_pass
 execute if entity @s[tag=sea_purchase_pass] run playsound minecraft:item.armor.equip_iron neutral @s ~ ~ ~ 100
 execute if entity @s[tag=sea_purchase_pass] run clear @s chainmail_helmet[custom_data={sea_safehat:true}] 1
@@ -156,8 +156,8 @@ tag @s remove sea_purchase_pass
 
 
 #防护服
-execute if items entity @s container.* *[custom_data={sea_chest:true}] if score @s sea_crafter matches 10003 as @s[scores={sea_i_emerald=..3}] run tellraw @s {"text":"失败！余额不足！","color":"red"}
-execute if items entity @s container.* *[custom_data={sea_chest:true}] if score @s sea_crafter matches 10003 as @s[scores={sea_i_emerald=4..}] run tag @s add sea_purchase_pass
+#execute if items entity @s container.* *[custom_data={sea_chest:true}] if score @s sea_crafter matches 10003 as @s[scores={sea_i_emerald=..3}] run tellraw @s {"text":"失败！余额不足！","color":"red"}
+#execute if items entity @s container.* *[custom_data={sea_chest:true}] if score @s sea_crafter matches 10003 as @s[scores={sea_i_emerald=4..}] run tag @s add sea_purchase_pass
 execute if entity @s[tag=sea_purchase_pass] run playsound minecraft:item.armor.equip_iron neutral @s ~ ~ ~ 100
 execute if entity @s[tag=sea_purchase_pass] run clear @s leather_chestplate[custom_data={sea_chest:true}] 1
 execute if entity @s[tag=sea_purchase_pass] run give @s leather_chestplate[custom_name='{"text":"基础防护服·二型","italic":false,"color":"red"}',custom_data={sea_chest2:true},attribute_modifiers=[{type:"generic.armor",id:"sea_armor:002_01",amount:1.5,operation:"add_value"},{type:"generic.armor_toughness",id:"sea_armor:002_02",amount:0.5,operation:"add_value"}],unbreakable={}]
@@ -210,8 +210,8 @@ execute if entity @s[tag=sea_purchase_pass] run scoreboard players remove @s sea
 tag @s remove sea_purchase_pass
 
 #防护裤
-execute if items entity @s container.* *[custom_data={sea_leg:true}] if score @s sea_crafter matches 10007 as @s[scores={sea_i_emerald=..5}] run tellraw @s {"text":"失败！余额不足！","color":"red"}
-execute if items entity @s container.* *[custom_data={sea_leg:true}] if score @s sea_crafter matches 10007 as @s[scores={sea_i_emerald=6..}] run tag @s add sea_purchase_pass
+#execute if items entity @s container.* *[custom_data={sea_leg:true}] if score @s sea_crafter matches 10007 as @s[scores={sea_i_emerald=..5}] run tellraw @s {"text":"失败！余额不足！","color":"red"}
+#execute if items entity @s container.* *[custom_data={sea_leg:true}] if score @s sea_crafter matches 10007 as @s[scores={sea_i_emerald=6..}] run tag @s add sea_purchase_pass
 execute if entity @s[tag=sea_purchase_pass] run playsound minecraft:item.armor.equip_iron neutral @s ~ ~ ~ 100
 execute if entity @s[tag=sea_purchase_pass] run clear @s leather_leggings[custom_data={sea_leg:true}] 1
 execute if entity @s[tag=sea_purchase_pass] run give @s leather_leggings[custom_name='{"text":"基础防护裤·二型","italic":false,"color":"red"}',custom_data={sea_leg2:true},attribute_modifiers=[{type:"generic.armor",id:"sea_armor:005_01",amount:1.5,operation:"add_value"},{type:"generic.armor_toughness",id:"sea_armor:005_02",amount:0.5,operation:"add_value"}],unbreakable={}]
@@ -265,8 +265,8 @@ execute if entity @s[tag=sea_purchase_pass] run scoreboard players remove @s sea
 tag @s remove sea_purchase_pass
 
 #防护靴
-execute if items entity @s container.* *[custom_data={sea_feet:true}] if score @s sea_crafter matches 10015 as @s[scores={sea_i_emerald=..11}] run tellraw @s {"text":"失败！余额不足！","color":"red"}
-execute if items entity @s container.* *[custom_data={sea_feet:true}] if score @s sea_crafter matches 10015 as @s[scores={sea_i_emerald=12..}] run tag @s add sea_purchase_pass
+#execute if items entity @s container.* *[custom_data={sea_feet:true}] if score @s sea_crafter matches 10015 as @s[scores={sea_i_emerald=..11}] run tellraw @s {"text":"失败！余额不足！","color":"red"}
+#execute if items entity @s container.* *[custom_data={sea_feet:true}] if score @s sea_crafter matches 10015 as @s[scores={sea_i_emerald=12..}] run tag @s add sea_purchase_pass
 execute if entity @s[tag=sea_purchase_pass] run playsound minecraft:item.armor.equip_iron neutral @s ~ ~ ~ 100
 execute if entity @s[tag=sea_purchase_pass] run clear @s leather_boots[custom_data={sea_feet:true}] 1
 execute if entity @s[tag=sea_purchase_pass] run give @s leather_boots[custom_name='{"text":"基础防护靴·二型","italic":false,"color":"red"}',custom_data={sea_feet2:true},attribute_modifiers=[{type:"generic.armor",id:"sea_armor:009_01",amount:1.5,operation:"add_value"},{type:"generic.armor_toughness",id:"sea_armor:009_02",amount:0.5,operation:"add_value"}],unbreakable={}]

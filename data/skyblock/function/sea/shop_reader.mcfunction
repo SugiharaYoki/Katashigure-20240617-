@@ -42,59 +42,59 @@ execute if items entity @s container.* *[custom_data={sea_flamethrower:true}] ru
 execute if items entity @s container.* *[custom_data={sea_t_flamethrower1:true}] run tellraw @s [{"text":"     - "},{"text":"喷火器：燃料增液 II  ","color":"yellow"},{"score":{"name":"@s","objective":"sea_i_iron_ingot"},"color":"white"},{"text":"/6 铁锭 ","color":"gray"},{"score":{"name":"@s","objective":"sea_i_flint"},"color":"white"},{"text":"/6 燧石 ","color":"gray"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 10030"}}]
 execute if items entity @s container.* *[custom_data={sea_t_flamethrower2:true}] run tellraw @s [{"text":"     - "},{"text":"喷火器：燃料增液 III  ","color":"yellow"},{"score":{"name":"@s","objective":"sea_i_iron_ingot"},"color":"white"},{"text":"/9 铁锭 ","color":"gray"},{"score":{"name":"@s","objective":"sea_i_flint"},"color":"white"},{"text":"/9 燧石 ","color":"gray"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 10031"}}]
 
-tellraw @s {"text":"   - 卸下盔甲后可进行强化","bold":false,"color":"gray"}
+execute if items entity @s armor.* *[custom_data={sea_chest:true}] run tellraw @s [{"text":"   - "},{"text":"护甲：升级  ","color":"blue"},{"text":"〈开启界面〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 59005"}}]
 
-execute if items entity @s container.* *[custom_data={sea_safehat:true}] if entity @s[tag=SEAPT,tag=!e_w_ahl2_e] run \
-tellraw @s [{"text":"   - "},{"text":"电工安全帽：升级  ","color":"blue"},{"score":{"name":"@s","objective":"sea_i_iron_ingot"},"color":"white"},{"text":"/2 铁锭 ","color":"gray"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 10020"}}]
-execute if items entity @s container.* *[custom_data={sea_safehat:true}] if entity @s[tag=SEAPT,tag=e_w_ahl2_e] run \
-tellraw @s [{"text":"   - "},{"text":"电工安全帽：升级  ","color":"blue"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 10020"}}]
-execute if items entity @s container.* *[custom_data={sea_safehat2a:true}] run \
-tellraw @s [{"text":"     - "},{"text":"2级电工安全帽：升级  ","color":"blue"},{"score":{"name":"@s","objective":"sea_i_iron_ingot"},"color":"white"},{"text":"/4 铁锭 ","color":"gray"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 10069"}}]
+#execute if items entity @s container.* *[custom_data={sea_safehat:true}] if entity @s[tag=SEAPT,tag=!e_w_ahl2_e] run \
+#tellraw @s [{"text":"   - "},{"text":"电工安全帽：升级  ","color":"blue"},{"score":{"name":"@s","objective":"sea_i_iron_ingot"},"color":"white"},{"text":"/2 铁锭 ","color":"gray"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 10020"}}]
+#execute if items entity @s container.* *[custom_data={sea_safehat:true}] if entity @s[tag=SEAPT,tag=e_w_ahl2_e] run \
+#tellraw @s [{"text":"   - "},{"text":"电工安全帽：升级  ","color":"blue"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 10020"}}]
+#execute if items entity @s container.* *[custom_data={sea_safehat2a:true}] run \
+#tellraw @s [{"text":"     - "},{"text":"2级电工安全帽：升级  ","color":"blue"},{"score":{"name":"@s","objective":"sea_i_iron_ingot"},"color":"white"},{"text":"/4 铁锭 ","color":"gray"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 10069"}}]
 
-execute if items entity @s container.* *[custom_data={sea_chest:true}] run \
-tellraw @s [{"text":"     - "},{"text":"基础防护服：升级  ","color":"blue"},{"score":{"name":"@s","objective":"sea_i_emerald"},"color":"white"},{"text":"/4 绿宝石 ","color":"gray"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 10003"}}]
-execute if items entity @s container.* *[custom_data={sea_chest2:true}] run \
-tellraw @s [{"text":"     - "},{"text":"2级基础防护服：施工改造  ","color":"blue"},{"score":{"name":"@s","objective":"sea_i_emerald"},"color":"white"},{"text":"/16 绿宝石 ","color":"gray"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 10016"}}]
-execute if items entity @s container.* *[custom_data={sea_chest2:true}] run \
-tellraw @s [{"text":"     - "},{"text":"2级基础防护服：轻装升级  ","color":"blue"},{"score":{"name":"@s","objective":"sea_i_emerald"},"color":"white"},{"text":"/12 绿宝石 ","color":"gray"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 10017"}}]
-execute if items entity @s container.* *[custom_data={sea_chest3a:true}] run \
-tellraw @s [{"text":"     - "},{"text":"电工安全服：升级  ","color":"blue"},{"score":{"name":"@s","objective":"sea_i_emerald"},"color":"white"},{"text":"/28 绿宝石 ","color":"gray"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 10036"}}]
-execute if items entity @s container.* *[custom_data={sea_chest3b:true}] run \
-tellraw @s [{"text":"     - "},{"text":"3级基础防护服：升级  ","color":"blue"},{"score":{"name":"@s","objective":"sea_i_emerald"},"color":"white"},{"text":"/28 绿宝石 ","color":"gray"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 10033"}}]
-execute if items entity @s container.* *[custom_data={sea_chest4a:true}] run \
-tellraw @s [{"text":"     - "},{"text":"2级电工安全服：升级  ","color":"blue"},{"score":{"name":"@s","objective":"sea_i_emerald"},"color":"white"},{"text":"/60 绿宝石 ","color":"gray"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 10062"}}]
-execute if items entity @s container.* *[custom_data={sea_chest4b:true}] run \
-tellraw @s [{"text":"     - "},{"text":"4级基础防护服：升级  ","color":"blue"},{"score":{"name":"@s","objective":"sea_i_emerald"},"color":"white"},{"text":"/60 绿宝石 ","color":"gray"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 10063"}}]
+#execute if items entity @s container.* *[custom_data={sea_chest:true}] run \
+#tellraw @s [{"text":"     - "},{"text":"基础防护服：升级  ","color":"blue"},{"score":{"name":"@s","objective":"sea_i_emerald"},"color":"white"},{"text":"/4 绿宝石 ","color":"gray"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 10003"}}]
+#execute if items entity @s container.* *[custom_data={sea_chest2:true}] run \
+#tellraw @s [{"text":"     - "},{"text":"2级基础防护服：施工改造  ","color":"blue"},{"score":{"name":"@s","objective":"sea_i_emerald"},"color":"white"},{"text":"/16 绿宝石 ","color":"gray"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 10016"}}]
+#execute if items entity @s container.* *[custom_data={sea_chest2:true}] run \
+#tellraw @s [{"text":"     - "},{"text":"2级基础防护服：轻装升级  ","color":"blue"},{"score":{"name":"@s","objective":"sea_i_emerald"},"color":"white"},{"text":"/12 绿宝石 ","color":"gray"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 10017"}}]
+#execute if items entity @s container.* *[custom_data={sea_chest3a:true}] run \
+#tellraw @s [{"text":"     - "},{"text":"电工安全服：升级  ","color":"blue"},{"score":{"name":"@s","objective":"sea_i_emerald"},"color":"white"},{"text":"/28 绿宝石 ","color":"gray"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 10036"}}]
+#execute if items entity @s container.* *[custom_data={sea_chest3b:true}] run \
+#tellraw @s [{"text":"     - "},{"text":"3级基础防护服：升级  ","color":"blue"},{"score":{"name":"@s","objective":"sea_i_emerald"},"color":"white"},{"text":"/28 绿宝石 ","color":"gray"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 10033"}}]
+#execute if items entity @s container.* *[custom_data={sea_chest4a:true}] run \
+#tellraw @s [{"text":"     - "},{"text":"2级电工安全服：升级  ","color":"blue"},{"score":{"name":"@s","objective":"sea_i_emerald"},"color":"white"},{"text":"/60 绿宝石 ","color":"gray"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 10062"}}]
+#execute if items entity @s container.* *[custom_data={sea_chest4b:true}] run \
+#tellraw @s [{"text":"     - "},{"text":"4级基础防护服：升级  ","color":"blue"},{"score":{"name":"@s","objective":"sea_i_emerald"},"color":"white"},{"text":"/60 绿宝石 ","color":"gray"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 10063"}}]
 
-execute if items entity @s container.* *[custom_data={sea_leg:true}] run \
-tellraw @s [{"text":"       - "},{"text":"基础防护裤：升级  ","color":"blue"},{"score":{"name":"@s","objective":"sea_i_emerald"},"color":"white"},{"text":"/6 绿宝石 ","color":"gray"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 10007"}}]
-execute if items entity @s container.* *[custom_data={sea_leg2:true}] run \
-tellraw @s [{"text":"       - "},{"text":"2级基础防护裤：施工改造  ","color":"blue"},{"score":{"name":"@s","objective":"sea_i_emerald"},"color":"white"},{"text":"/16 绿宝石 ","color":"gray"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 10018"}}]
-execute if items entity @s container.* *[custom_data={sea_leg2:true}] run \
-tellraw @s [{"text":"       - "},{"text":"2级基础防护裤：轻装升级  ","color":"blue"},{"score":{"name":"@s","objective":"sea_i_emerald"},"color":"white"},{"text":"/12 绿宝石 ","color":"gray"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 10019"}}]
-execute if items entity @s container.* *[custom_data={sea_leg3a:true}] run \
-tellraw @s [{"text":"       - "},{"text":"电工安全护腿：升级  ","color":"blue"},{"score":{"name":"@s","objective":"sea_i_emerald"},"color":"white"},{"text":"/28 绿宝石 ","color":"gray"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 10037"}}]
-execute if items entity @s container.* *[custom_data={sea_leg3b:true}] run \
-tellraw @s [{"text":"       - "},{"text":"3级基础防护裤：升级  ","color":"blue"},{"score":{"name":"@s","objective":"sea_i_emerald"},"color":"white"},{"text":"/28 绿宝石 ","color":"gray"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 10034"}}]
-execute if items entity @s container.* *[custom_data={sea_leg4a:true}] run \
-tellraw @s [{"text":"       - "},{"text":"2级电工安全护腿：升级  ","color":"blue"},{"score":{"name":"@s","objective":"sea_i_emerald"},"color":"white"},{"text":"/60 绿宝石 ","color":"gray"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 10064"}}]
-execute if items entity @s container.* *[custom_data={sea_leg4b:true}] run \
-tellraw @s [{"text":"       - "},{"text":"4级基础防护裤：升级  ","color":"blue"},{"score":{"name":"@s","objective":"sea_i_emerald"},"color":"white"},{"text":"/60 绿宝石 ","color":"gray"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 10065"}}]
+#execute if items entity @s container.* *[custom_data={sea_leg:true}] run \
+#tellraw @s [{"text":"       - "},{"text":"基础防护裤：升级  ","color":"blue"},{"score":{"name":"@s","objective":"sea_i_emerald"},"color":"white"},{"text":"/6 绿宝石 ","color":"gray"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 10007"}}]
+#execute if items entity @s container.* *[custom_data={sea_leg2:true}] run \
+#tellraw @s [{"text":"       - "},{"text":"2级基础防护裤：施工改造  ","color":"blue"},{"score":{"name":"@s","objective":"sea_i_emerald"},"color":"white"},{"text":"/16 绿宝石 ","color":"gray"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 10018"}}]
+#execute if items entity @s container.* *[custom_data={sea_leg2:true}] run \
+#tellraw @s [{"text":"       - "},{"text":"2级基础防护裤：轻装升级  ","color":"blue"},{"score":{"name":"@s","objective":"sea_i_emerald"},"color":"white"},{"text":"/12 绿宝石 ","color":"gray"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 10019"}}]
+#execute if items entity @s container.* *[custom_data={sea_leg3a:true}] run \
+#tellraw @s [{"text":"       - "},{"text":"电工安全护腿：升级  ","color":"blue"},{"score":{"name":"@s","objective":"sea_i_emerald"},"color":"white"},{"text":"/28 绿宝石 ","color":"gray"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 10037"}}]
+#execute if items entity @s container.* *[custom_data={sea_leg3b:true}] run \
+#tellraw @s [{"text":"       - "},{"text":"3级基础防护裤：升级  ","color":"blue"},{"score":{"name":"@s","objective":"sea_i_emerald"},"color":"white"},{"text":"/28 绿宝石 ","color":"gray"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 10034"}}]
+#execute if items entity @s container.* *[custom_data={sea_leg4a:true}] run \
+#tellraw @s [{"text":"       - "},{"text":"2级电工安全护腿：升级  ","color":"blue"},{"score":{"name":"@s","objective":"sea_i_emerald"},"color":"white"},{"text":"/60 绿宝石 ","color":"gray"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 10064"}}]
+#execute if items entity @s container.* *[custom_data={sea_leg4b:true}] run \
+#tellraw @s [{"text":"       - "},{"text":"4级基础防护裤：升级  ","color":"blue"},{"score":{"name":"@s","objective":"sea_i_emerald"},"color":"white"},{"text":"/60 绿宝石 ","color":"gray"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 10065"}}]
 
-execute if items entity @s container.* *[custom_data={sea_feet:true}] run \
-tellraw @s [{"text":"         - "},{"text":"基础防护靴：升级  ","color":"blue"},{"score":{"name":"@s","objective":"sea_i_emerald"},"color":"white"},{"text":"/12 绿宝石 ","color":"gray"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 10015"}}]
-execute if items entity @s container.* *[custom_data={sea_feet2:true}] run \
-tellraw @s [{"text":"         - "},{"text":"2级基础防护靴：施工改造  ","color":"blue"},{"score":{"name":"@s","objective":"sea_i_emerald"},"color":"white"},{"text":"/16 绿宝石 ","color":"gray"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 10024"}}]
-execute if items entity @s container.* *[custom_data={sea_feet2:true}] run \
-tellraw @s [{"text":"         - "},{"text":"2级基础防护靴：轻装升级  ","color":"blue"},{"score":{"name":"@s","objective":"sea_i_emerald"},"color":"white"},{"text":"/12 绿宝石 ","color":"gray"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 10025"}}]
-execute if items entity @s container.* *[custom_data={sea_feet3a:true}] run \
-tellraw @s [{"text":"         - "},{"text":"电工安全靴：升级  ","color":"blue"},{"score":{"name":"@s","objective":"sea_i_emerald"},"color":"white"},{"text":"/32 绿宝石 ","color":"gray"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 10038"}}]
-execute if items entity @s container.* *[custom_data={sea_feet3b:true}] run \
-tellraw @s [{"text":"         - "},{"text":"3级基础防护靴：升级  ","color":"blue"},{"score":{"name":"@s","objective":"sea_i_emerald"},"color":"white"},{"text":"/32 绿宝石 ","color":"gray"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 10035"}}]
-execute if items entity @s container.* *[custom_data={sea_feet4a:true}] run \
-tellraw @s [{"text":"         - "},{"text":"2级电工安全靴：升级  ","color":"blue"},{"score":{"name":"@s","objective":"sea_i_emerald"},"color":"white"},{"text":"/60 绿宝石 ","color":"gray"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 10066"}}]
-execute if items entity @s container.* *[custom_data={sea_feet4b:true}] run \
-tellraw @s [{"text":"         - "},{"text":"4级基础防护靴：升级  ","color":"blue"},{"score":{"name":"@s","objective":"sea_i_emerald"},"color":"white"},{"text":"/60 绿宝石 ","color":"gray"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 10067"}}]
+#execute if items entity @s container.* *[custom_data={sea_feet:true}] run \
+#tellraw @s [{"text":"         - "},{"text":"基础防护靴：升级  ","color":"blue"},{"score":{"name":"@s","objective":"sea_i_emerald"},"color":"white"},{"text":"/12 绿宝石 ","color":"gray"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 10015"}}]
+#execute if items entity @s container.* *[custom_data={sea_feet2:true}] run \
+#tellraw @s [{"text":"         - "},{"text":"2级基础防护靴：施工改造  ","color":"blue"},{"score":{"name":"@s","objective":"sea_i_emerald"},"color":"white"},{"text":"/16 绿宝石 ","color":"gray"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 10024"}}]
+#execute if items entity @s container.* *[custom_data={sea_feet2:true}] run \
+#tellraw @s [{"text":"         - "},{"text":"2级基础防护靴：轻装升级  ","color":"blue"},{"score":{"name":"@s","objective":"sea_i_emerald"},"color":"white"},{"text":"/12 绿宝石 ","color":"gray"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 10025"}}]
+#execute if items entity @s container.* *[custom_data={sea_feet3a:true}] run \
+#tellraw @s [{"text":"         - "},{"text":"电工安全靴：升级  ","color":"blue"},{"score":{"name":"@s","objective":"sea_i_emerald"},"color":"white"},{"text":"/32 绿宝石 ","color":"gray"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 10038"}}]
+#execute if items entity @s container.* *[custom_data={sea_feet3b:true}] run \
+#tellraw @s [{"text":"         - "},{"text":"3级基础防护靴：升级  ","color":"blue"},{"score":{"name":"@s","objective":"sea_i_emerald"},"color":"white"},{"text":"/32 绿宝石 ","color":"gray"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 10035"}}]
+#execute if items entity @s container.* *[custom_data={sea_feet4a:true}] run \
+#tellraw @s [{"text":"         - "},{"text":"2级电工安全靴：升级  ","color":"blue"},{"score":{"name":"@s","objective":"sea_i_emerald"},"color":"white"},{"text":"/60 绿宝石 ","color":"gray"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 10066"}}]
+#execute if items entity @s container.* *[custom_data={sea_feet4b:true}] run \
+#tellraw @s [{"text":"         - "},{"text":"4级基础防护靴：升级  ","color":"blue"},{"score":{"name":"@s","objective":"sea_i_emerald"},"color":"white"},{"text":"/60 绿宝石 ","color":"gray"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 10067"}}]
 
 execute unless items entity @s container.* shield run \
 tellraw @s [{"text":"   - "},{"text":"制作 防护盾  ","color":"dark_aqua"},{"score":{"name":"@s","objective":"sea_i_iron_ingot"},"color":"white"},{"text":"/2 铁锭 ","color":"gray"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 10006"}}]

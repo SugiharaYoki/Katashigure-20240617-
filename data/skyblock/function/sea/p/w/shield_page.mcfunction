@@ -67,7 +67,7 @@ execute if entity @s[tag=!SEA_w_shield_upg16] run data modify entity @n[tag=SEA_
 # 2
 
 tellraw @s [{"text":" ","color":"light_purple"},\
-{"selector":"@n[tag=SEA_w_shield_displaymarker0]","color":"red"},\
+{"selector":"@n[tag=SEA_w_shield_displaymarker0]","color":"blue"},\
 {"selector":"@n[tag=SEA_w_shield_displaymarker1]","color":"blue","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 50301"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：1\n手持时 额外增加1.0防御力","color":"white"}}},\
 {"selector":"@n[tag=SEA_w_shield_displaymarker2]","color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 50302"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：1\n略微降低手持时的移动减速负面效果","color":"white"}}},\
 {"selector":"@n[tag=SEA_w_shield_displaymarker3]","color":"blue","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 50303"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：2\n手持时 额外增加1.0防御力","color":"white"}}},\

@@ -125,6 +125,70 @@ execute if entity @s[scores={sea_crafter=50314},tag=!SEA_w_shield_upg14] run tag
 execute if entity @s[scores={sea_crafter=50315},tag=!SEA_w_shield_upg15] run tag @s add SEA_w_shield_upg15
 execute if entity @s[scores={sea_crafter=50316},tag=!SEA_w_shield_upg16] run tag @s add SEA_w_shield_upg16
 
+execute if entity @s[scores={sea_crafter=50501},tag=!SEA_w_armor_upg1] run clear @s echo_shard 1
+execute if entity @s[scores={sea_crafter=50502},tag=!SEA_w_armor_upg2] run clear @s echo_shard 1
+execute if entity @s[scores={sea_crafter=50503},tag=!SEA_w_armor_upg3] run clear @s echo_shard 2
+execute if entity @s[scores={sea_crafter=50504},tag=!SEA_w_armor_upg4] run clear @s echo_shard 2
+execute if entity @s[scores={sea_crafter=50505},tag=!SEA_w_armor_upg5] run clear @s echo_shard 1
+execute if entity @s[scores={sea_crafter=50506},tag=!SEA_w_armor_upg6] run clear @s echo_shard 1
+execute if entity @s[scores={sea_crafter=50507},tag=!SEA_w_armor_upg7] run clear @s echo_shard 2
+execute if entity @s[scores={sea_crafter=50508},tag=!SEA_w_armor_upg8] run clear @s echo_shard 2
+execute if entity @s[scores={sea_crafter=50509},tag=!SEA_w_armor_upg9] run clear @s echo_shard 1
+execute if entity @s[scores={sea_crafter=50510},tag=!SEA_w_armor_upg10] run clear @s echo_shard 1
+execute if entity @s[scores={sea_crafter=50511},tag=!SEA_w_armor_upg11] run clear @s echo_shard 2
+execute if entity @s[scores={sea_crafter=50512},tag=!SEA_w_armor_upg12] run clear @s echo_shard 2
+execute if entity @s[scores={sea_crafter=50513},tag=!SEA_w_armor_upg13] run clear @s echo_shard 1
+execute if entity @s[scores={sea_crafter=50514},tag=!SEA_w_armor_upg14] run clear @s echo_shard 1
+execute if entity @s[scores={sea_crafter=50515},tag=!SEA_w_armor_upg15] run clear @s echo_shard 2
+execute if entity @s[scores={sea_crafter=50516},tag=!SEA_w_armor_upg16] run clear @s echo_shard 2
+execute if entity @s[scores={sea_crafter=50517},tag=!SEA_w_armor_upg17] run clear @s echo_shard 3
+execute if entity @s[scores={sea_crafter=50518},tag=!SEA_w_armor_upg18] run clear @s echo_shard 3
+execute if entity @s[scores={sea_crafter=50519},tag=!SEA_w_armor_upg19] run clear @s echo_shard 3
+execute if entity @s[scores={sea_crafter=50520},tag=!SEA_w_armor_upg20] run clear @s echo_shard 3
+execute if entity @s[scores={sea_crafter=50521},tag=!SEA_w_armor_upg21] run clear @s echo_shard 3
+execute if entity @s[scores={sea_crafter=50522},tag=!SEA_w_armor_upg22] run clear @s echo_shard 3
+execute if entity @s[scores={sea_crafter=50523},tag=!SEA_w_armor_upg23] run clear @s echo_shard 3
+execute if entity @s[scores={sea_crafter=50524},tag=!SEA_w_armor_upg24] run clear @s echo_shard 3
+execute if entity @s[scores={sea_crafter=50525},tag=!SEA_w_armor_upg25] run clear @s echo_shard 3
+execute if entity @s[scores={sea_crafter=50526},tag=!SEA_w_armor_upg26] run clear @s echo_shard 4
+execute if entity @s[scores={sea_crafter=50527},tag=!SEA_w_armor_upg27] run clear @s echo_shard 4
+execute if entity @s[scores={sea_crafter=50528},tag=!SEA_w_armor_upg28] run clear @s echo_shard 4
+execute if entity @s[scores={sea_crafter=50529},tag=!SEA_w_armor_upg29] run clear @s echo_shard 4
+execute if entity @s[scores={sea_crafter=50530},tag=!SEA_w_armor_upg30] run clear @s echo_shard 4
+
+
+execute if entity @s[scores={sea_crafter=50501},tag=!SEA_w_armor_upg1] run tag @s add SEA_w_armor_upg1
+execute if entity @s[scores={sea_crafter=50502},tag=!SEA_w_armor_upg2] run tag @s add SEA_w_armor_upg2
+execute if entity @s[scores={sea_crafter=50503},tag=!SEA_w_armor_upg3] run tag @s add SEA_w_armor_upg3
+execute if entity @s[scores={sea_crafter=50504},tag=!SEA_w_armor_upg4] run tag @s add SEA_w_armor_upg4
+execute if entity @s[scores={sea_crafter=50505},tag=!SEA_w_armor_upg5] run tag @s add SEA_w_armor_upg5
+execute if entity @s[scores={sea_crafter=50506},tag=!SEA_w_armor_upg6] run tag @s add SEA_w_armor_upg6
+execute if entity @s[scores={sea_crafter=50507},tag=!SEA_w_armor_upg7] run tag @s add SEA_w_armor_upg7
+execute if entity @s[scores={sea_crafter=50508},tag=!SEA_w_armor_upg8] run tag @s add SEA_w_armor_upg8
+execute if entity @s[scores={sea_crafter=50509},tag=!SEA_w_armor_upg9] run tag @s add SEA_w_armor_upg9
+execute if entity @s[scores={sea_crafter=50510},tag=!SEA_w_armor_upg10] run tag @s add SEA_w_armor_upg10
+execute if entity @s[scores={sea_crafter=50511},tag=!SEA_w_armor_upg11] run tag @s add SEA_w_armor_upg11
+execute if entity @s[scores={sea_crafter=50512},tag=!SEA_w_armor_upg12] run tag @s add SEA_w_armor_upg12
+execute if entity @s[scores={sea_crafter=50513},tag=!SEA_w_armor_upg13] run tag @s add SEA_w_armor_upg13
+execute if entity @s[scores={sea_crafter=50514},tag=!SEA_w_armor_upg14] run tag @s add SEA_w_armor_upg14
+execute if entity @s[scores={sea_crafter=50515},tag=!SEA_w_armor_upg15] run tag @s add SEA_w_armor_upg15
+execute if entity @s[scores={sea_crafter=50516},tag=!SEA_w_armor_upg16] run tag @s add SEA_w_armor_upg16
+execute if entity @s[scores={sea_crafter=50517},tag=!SEA_w_armor_upg17] run tag @s add SEA_w_armor_upg17
+execute if entity @s[scores={sea_crafter=50518},tag=!SEA_w_armor_upg18] run tag @s add SEA_w_armor_upg18
+execute if entity @s[scores={sea_crafter=50519},tag=!SEA_w_armor_upg19] run tag @s add SEA_w_armor_upg19
+execute if entity @s[scores={sea_crafter=50520},tag=!SEA_w_armor_upg20] run tag @s add SEA_w_armor_upg20
+execute if entity @s[scores={sea_crafter=50521},tag=!SEA_w_armor_upg21] run tag @s add SEA_w_armor_upg21
+execute if entity @s[scores={sea_crafter=50522},tag=!SEA_w_armor_upg22] run tag @s add SEA_w_armor_upg22
+execute if entity @s[scores={sea_crafter=50523},tag=!SEA_w_armor_upg23] run tag @s add SEA_w_armor_upg23
+execute if entity @s[scores={sea_crafter=50524},tag=!SEA_w_armor_upg24] run tag @s add SEA_w_armor_upg24
+execute if entity @s[scores={sea_crafter=50525},tag=!SEA_w_armor_upg25] run tag @s add SEA_w_armor_upg25
+execute if entity @s[scores={sea_crafter=50526},tag=!SEA_w_armor_upg26] run tag @s add SEA_w_armor_upg26
+execute if entity @s[scores={sea_crafter=50527},tag=!SEA_w_armor_upg27] run tag @s add SEA_w_armor_upg27
+execute if entity @s[scores={sea_crafter=50528},tag=!SEA_w_armor_upg28] run tag @s add SEA_w_armor_upg28
+execute if entity @s[scores={sea_crafter=50529},tag=!SEA_w_armor_upg29] run tag @s add SEA_w_armor_upg29
+execute if entity @s[scores={sea_crafter=50530},tag=!SEA_w_armor_upg30] run tag @s add SEA_w_armor_upg30
+
+
 function skyblock:sea/p/w/recalc
 
 playsound item.armor.equip_iron player @a ~ ~ ~ 1 1.1
