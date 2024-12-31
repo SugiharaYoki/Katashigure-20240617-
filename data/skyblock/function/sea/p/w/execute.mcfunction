@@ -179,9 +179,9 @@ execute if entity @s[scores={sea_crafter=50529}] unless entity @s[scores={sea_i_
 execute if entity @s[scores={sea_crafter=50530}] unless entity @s[scores={sea_i_echo_shard=4..}] run tag @s add SEA_w_upg_FAILED
 
 execute if entity @s[scores={sea_crafter=50501}] unless items entity @s armor.head chainmail_helmet if entity @s[tag=!SEA_w_armor_upg2] run tag @s add SEA_w_upg_FAILED_NC_armor1
-execute if entity @s[scores={sea_crafter=50505}] unless items entity @s armor.head leather_chestplate if entity @s[tag=!SEA_w_armor_upg6] run tag @s add SEA_w_upg_FAILED_NC_armor2
-execute if entity @s[scores={sea_crafter=50509}] unless items entity @s armor.head leather_leggings if entity @s[tag=!SEA_w_armor_upg10] run tag @s add SEA_w_upg_FAILED_NC_armor3
-execute if entity @s[scores={sea_crafter=50513}] unless items entity @s armor.head leather_boots if entity @s[tag=!SEA_w_armor_upg14] run tag @s add SEA_w_upg_FAILED_NC_armor4
+execute if entity @s[scores={sea_crafter=50505}] unless items entity @s armor.chest leather_chestplate if entity @s[tag=!SEA_w_armor_upg6] run tag @s add SEA_w_upg_FAILED_NC_armor2
+execute if entity @s[scores={sea_crafter=50509}] unless items entity @s armor.legs leather_leggings if entity @s[tag=!SEA_w_armor_upg10] run tag @s add SEA_w_upg_FAILED_NC_armor3
+execute if entity @s[scores={sea_crafter=50513}] unless items entity @s armor.feet leather_boots if entity @s[tag=!SEA_w_armor_upg14] run tag @s add SEA_w_upg_FAILED_NC_armor4
 execute if entity @s[scores={sea_crafter=50502}] if entity @s[tag=!SEA_w_armor_upg1,tag=!SEA_w_armor_upg3] run tag @s add SEA_w_upg_FAILED
 execute if entity @s[scores={sea_crafter=50503}] if entity @s[tag=!SEA_w_armor_upg2,tag=!SEA_w_armor_upg4] run tag @s add SEA_w_upg_FAILED
 execute if entity @s[scores={sea_crafter=50504}] if entity @s[tag=!SEA_w_armor_upg3,tag=!SEA_w_armor_upg17] run tag @s add SEA_w_upg_FAILED
