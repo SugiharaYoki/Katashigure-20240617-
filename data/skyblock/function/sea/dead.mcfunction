@@ -313,6 +313,37 @@ tag @s remove SEA_w_shield_upg18
 tag @s remove SEA_w_shield_upg19
 tag @s remove SEA_w_shield_upg20
 
+tag @s remove SEA_w_armor_upg1
+tag @s remove SEA_w_armor_upg2
+tag @s remove SEA_w_armor_upg3
+tag @s remove SEA_w_armor_upg4
+tag @s remove SEA_w_armor_upg5
+tag @s remove SEA_w_armor_upg6
+tag @s remove SEA_w_armor_upg7
+tag @s remove SEA_w_armor_upg8
+tag @s remove SEA_w_armor_upg9
+tag @s remove SEA_w_armor_upg10
+tag @s remove SEA_w_armor_upg11
+tag @s remove SEA_w_armor_upg12
+tag @s remove SEA_w_armor_upg13
+tag @s remove SEA_w_armor_upg14
+tag @s remove SEA_w_armor_upg15
+tag @s remove SEA_w_armor_upg16
+tag @s remove SEA_w_armor_upg17
+tag @s remove SEA_w_armor_upg18
+tag @s remove SEA_w_armor_upg19
+tag @s remove SEA_w_armor_upg20
+tag @s remove SEA_w_armor_upg21
+tag @s remove SEA_w_armor_upg22
+tag @s remove SEA_w_armor_upg23
+tag @s remove SEA_w_armor_upg24
+tag @s remove SEA_w_armor_upg25
+tag @s remove SEA_w_armor_upg26
+tag @s remove SEA_w_armor_upg27
+tag @s remove SEA_w_armor_upg28
+tag @s remove SEA_w_armor_upg29
+tag @s remove SEA_w_armor_upg30
+
 tag @s remove SEA_w_01_effected
 tag @s remove SEA_w_02_effected
 tag @s remove SEA_w_03_effected
@@ -364,6 +395,33 @@ attribute @s generic.armor modifier remove sea_weapon:upg_shield07
 attribute @s generic.armor modifier remove sea_weapon:upg_shield08
 tag @s remove sea_w_shield_skill_b_2
 tag @s remove sea_w_shield_skill_a_2
+
+attribute @s generic.armor modifier remove sea_weapon:upg_armor01
+attribute @s generic.armor_toughness modifier remove sea_weapon:upg_armor02
+attribute @s generic.armor modifier remove sea_weapon:upg_armor03
+attribute @s generic.armor_toughness modifier remove sea_weapon:upg_armor04
+attribute @s generic.armor modifier remove sea_weapon:upg_armor05
+attribute @s generic.armor_toughness modifier remove sea_weapon:upg_armor06
+attribute @s generic.armor modifier remove sea_weapon:upg_armor07
+attribute @s generic.armor_toughness modifier remove sea_weapon:upg_armor08
+attribute @s generic.armor modifier remove sea_weapon:upg_armor09
+attribute @s generic.burning_time modifier remove sea_weapon:upg_armor10
+attribute @s generic.armor modifier remove sea_weapon:upg_armor11
+attribute @s generic.burning_time modifier remove sea_weapon:upg_armor12
+attribute @s generic.armor modifier remove sea_weapon:upg_armor13
+attribute @s generic.movement_speed modifier remove sea_weapon:upg_armor14
+attribute @s generic.armor modifier remove sea_weapon:upg_armor15
+attribute @s generic.movement_speed modifier remove sea_weapon:upg_armor16
+
+attribute @s generic.armor modifier remove sea_weapon:upg_armor17
+attribute @s generic.armor modifier remove sea_weapon:upg_armor18
+attribute @s generic.burning_time modifier remove sea_weapon:upg_armor19
+attribute @s generic.armor modifier remove sea_weapon:upg_armor20
+attribute @s generic.armor modifier remove sea_weapon:upg_armor21
+attribute @s generic.armor_toughness modifier remove sea_weapon:upg_armor22
+attribute @s generic.armor modifier remove sea_weapon:upg_armor23
+attribute @s generic.armor modifier remove sea_weapon:upg_armor24
+attribute @s generic.armor_toughness modifier remove sea_weapon:upg_armor25
 
 
 #不再用到的tag
