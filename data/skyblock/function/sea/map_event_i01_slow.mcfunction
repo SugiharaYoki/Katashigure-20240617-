@@ -412,11 +412,11 @@ execute as @n[tag=sc,scores={sea_4temp2=5001}] as @a[tag=SEAPT] at @s run playso
 execute as @n[tag=sc,scores={sea_4temp2=5003}] run give @a[tag=SEAPT] nether_star
 execute as @n[tag=sc,scores={sea_4temp2=5003}] as @a[tag=SEAPT] if score @s sea_speedrun_ch1 > sc sea_speedrun_ch1 run scoreboard players operation @s sea_speedrun_ch1 = sc sea_speedrun_ch1
 execute as @n[tag=sc,scores={sea_4temp2=5003}] run scoreboard players set @a[tag=SEAPT,scores={sea_progress=..2}] sea_progress 3
-execute as @n[tag=sc,scores={sea_4temp2=5012}] as @a[tag=SEAPT,advancements={skyblock:sea/doc/a13=true}] at @s run tellraw @s {"text":"……安息吧，法莫洛斯先生。","color":"gray"}
-execute as @n[tag=sc,scores={sea_4temp2=5030}] as @a[tag=SEAPT,advancements={skyblock:sea/doc/a13=true}] at @s run tellraw @s {"text":"你的医道是那般崇高，你的灵魂是那般神圣。","color":"gray"}
-execute as @n[tag=sc,scores={sea_4temp2=5046}] as @a[tag=SEAPT,advancements={skyblock:sea/doc/a13=true}] at @s run tellraw @s {"text":"我会将你铭记。","color":"gray"}
-execute as @n[tag=sc,scores={sea_4temp2=5012}] as @a[tag=SEAPT,advancements={skyblock:sea/doc/a13=false}] at @s run tellraw @s {"text":"抱歉，法莫洛斯先生。","color":"gray"}
-execute as @n[tag=sc,scores={sea_4temp2=5030}] as @a[tag=SEAPT,advancements={skyblock:sea/doc/a13=false}] at @s run tellraw @s {"text":"我没有任何能做的，杀了你才能开启前路。","color":"gray"}
+execute as @n[tag=sc,scores={sea_4temp2=5012}] as @a[tag=SEAPT,advancements={skyblock:sea/doc/13=true}] at @s run tellraw @s {"text":"……安息吧，法莫洛斯先生。","color":"gray"}
+execute as @n[tag=sc,scores={sea_4temp2=5030}] as @a[tag=SEAPT,advancements={skyblock:sea/doc/13=true}] at @s run tellraw @s {"text":"你的医道是那般崇高，你的灵魂是那般神圣。","color":"gray"}
+execute as @n[tag=sc,scores={sea_4temp2=5046}] as @a[tag=SEAPT,advancements={skyblock:sea/doc/13=true}] at @s run tellraw @s {"text":"我会将你铭记。","color":"gray"}
+execute as @n[tag=sc,scores={sea_4temp2=5012}] as @a[tag=SEAPT,advancements={skyblock:sea/doc/13=false}] at @s run tellraw @s {"text":"抱歉，法莫洛斯先生。","color":"gray"}
+execute as @n[tag=sc,scores={sea_4temp2=5030}] as @a[tag=SEAPT,advancements={skyblock:sea/doc/13=false}] at @s run tellraw @s {"text":"我没有任何能做的，杀了你才能开启前路。","color":"gray"}
 execute as @n[tag=sc,scores={sea_4temp2=5050}] run playsound minecraft:block.iron_door.open ambient @a 90076 125 121 4 0.3
 execute as @n[tag=sc,scores={sea_4temp2=5052}] run playsound minecraft:block.iron_door.open ambient @a 90076 125 121 4 0.3
 execute as @n[tag=sc,scores={sea_4temp2=5054}] run playsound minecraft:block.iron_door.open ambient @a 90076 125 121 4 0.3
