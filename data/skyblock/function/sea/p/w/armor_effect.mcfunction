@@ -24,6 +24,7 @@ execute if entity @s[tag=SEA_w_armor_upg22] run attribute @s generic.armor_tough
 execute if entity @s[tag=SEA_w_armor_upg23] run attribute @s generic.armor modifier add sea_weapon:upg_armor23 0.5 add_value
 execute if entity @s[tag=SEA_w_armor_upg24] run attribute @s generic.armor modifier add sea_weapon:upg_armor24 1 add_value
 execute if entity @s[tag=SEA_w_armor_upg25] run attribute @s generic.armor_toughness modifier add sea_weapon:upg_armor25 0.5 add_value
+execute if entity @s[tag=SEA_w_armor_upg26] run attribute @s generic.armor modifier add sea_weapon:upg_armor26 2 add_value
 
 
 tag @s add SEA_w_05_effected

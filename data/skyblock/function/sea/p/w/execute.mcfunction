@@ -172,7 +172,7 @@ execute if entity @s[scores={sea_crafter=50522}] unless entity @s[scores={sea_i_
 execute if entity @s[scores={sea_crafter=50523}] unless entity @s[scores={sea_i_echo_shard=3..}] run tag @s add SEA_w_upg_FAILED
 execute if entity @s[scores={sea_crafter=50524}] unless entity @s[scores={sea_i_echo_shard=3..}] run tag @s add SEA_w_upg_FAILED
 execute if entity @s[scores={sea_crafter=50525}] unless entity @s[scores={sea_i_echo_shard=3..}] run tag @s add SEA_w_upg_FAILED
-execute if entity @s[scores={sea_crafter=50526}] unless entity @s[scores={sea_i_echo_shard=4..}] run tag @s add SEA_w_upg_FAILED
+execute if entity @s[scores={sea_crafter=50526}] unless entity @s[scores={sea_i_echo_shard=8..}] run tag @s add SEA_w_upg_FAILED
 execute if entity @s[scores={sea_crafter=50527}] unless entity @s[scores={sea_i_echo_shard=4..}] run tag @s add SEA_w_upg_FAILED
 execute if entity @s[scores={sea_crafter=50528}] unless entity @s[scores={sea_i_echo_shard=4..}] run tag @s add SEA_w_upg_FAILED
 execute if entity @s[scores={sea_crafter=50529}] unless entity @s[scores={sea_i_echo_shard=4..}] run tag @s add SEA_w_upg_FAILED
@@ -203,6 +203,7 @@ execute if entity @s[scores={sea_crafter=50521}] if entity @s[tag=!SEA_w_armor_u
 execute if entity @s[scores={sea_crafter=50522}] if entity @s[tag=!SEA_w_armor_upg21] run tag @s add SEA_w_upg_FAILED
 execute if entity @s[scores={sea_crafter=50524}] if entity @s[tag=!SEA_w_armor_upg23] run tag @s add SEA_w_upg_FAILED
 execute if entity @s[scores={sea_crafter=50525}] if entity @s[tag=!SEA_w_armor_upg24] run tag @s add SEA_w_upg_FAILED
+execute if entity @s[scores={sea_crafter=50526}] if entity @s[tag=!SEA_w_armor_upg22] run tag @s add SEA_w_upg_FAILED
 
 tag @s[tag=SEA_w_upg_FAILED] remove SEA_w_upg_SUCCESS
 tag @s[tag=SEA_w_upg_FAILED_NC] remove SEA_w_upg_SUCCESS
