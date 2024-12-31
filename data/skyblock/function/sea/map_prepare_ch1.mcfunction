@@ -479,6 +479,8 @@ execute positioned 90108 99 108 run function skyblock:sea/m/zombie_bomb
 setblock 90104 114 115 chest[facing=west]
 item replace block 90104 114 115 container.11 with dune_armor_trim_smithing_template 3
 item replace block 90104 114 115 container.13 with wayfinder_armor_trim_smithing_template 3
+setblock 90102 114 134 air
+setblock 90102 114 134 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 3, id:"minecraft:golden_carrot"}}
 
 setblock 90074 103 141 chest[facing=north]
 setblock 90072 104 137 chest[facing=west]
