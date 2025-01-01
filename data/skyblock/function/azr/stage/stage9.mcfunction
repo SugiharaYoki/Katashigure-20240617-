@@ -81,7 +81,7 @@ execute if score stageSeconds Azr_system matches 85 if score #rng2 Azr_system ma
 execute if score stageSeconds Azr_system matches 85 if score #rng2 Azr_system matches 1 if score playerCount Azr_system matches 1.. run summon silverfish -79898 42 -50 {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_silverfish_tier1",Health:7.5f,CustomName:'"蚀砖虫"',attributes:[{id:"generic.max_health",base:7.5d},{id:"generic.attack_damage",base:4.0d},{id:"generic.movement_speed",base:0.25d}]}
 execute if score stageSeconds Azr_system matches 85 if score #rng2 Azr_system matches 1 if score playerCount Azr_system matches 1.. run summon silverfish -79898 41 -50 {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_silverfish_tier1",Health:7.5f,CustomName:'"蚀砖虫"',attributes:[{id:"generic.max_health",base:7.5d},{id:"generic.attack_damage",base:4.0d},{id:"generic.movement_speed",base:0.25d}]}
 
-execute if score stageSeconds Azr_system matches 86..87 if entity @e[tag=AzrielMob,tag=!AzrielDecMob] run scoreboard players set stageSeconds Azr_system 93
+execute if score stageSeconds Azr_system matches 86..87 if entity @e[tag=AzrielMob,tag=!AzrielDecMob] run scoreboard players set stageSeconds Azr_system 86
 execute if score stageSeconds Azr_system matches 88 run playsound ambient.crimson_forest.loop ambient @a[tag=azrPlayer] -78000 100 0 1000
 execute if score stageSeconds Azr_system matches 88 run playsound ambient.crimson_forest.mood ambient @a[tag=azrPlayer] -78000 100 0 1000
 execute if score stageSeconds Azr_system matches 88 run playsound ambient.crimson_forest.additions ambient @a[tag=azrPlayer] -78000 100 0 1000
