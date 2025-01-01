@@ -74,7 +74,8 @@ data merge storage festering:functions {}
 data merge storage festering:register {}
 
 #textloader
-execute unless entity 0-0-0-0-1 run summon minecraft:text_display ~ ~ ~ {UUID:[I;0,0,0,1]}
+#dhp抽风，alignment键不是必需的，但是报错，于是给上了一个默认值
+execute unless entity 0-0-0-0-1 run summon minecraft:text_display ~ ~ ~ {alignment:center,UUID:[I;0,0,0,1]}
 
 #gamerule
 #gamerule sendCommandFeedback true

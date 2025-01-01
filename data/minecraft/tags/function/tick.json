@@ -4,7 +4,6 @@
         "skyblock:azr/main",
         "skyblock:cmd/cmd_main",
         "24_point_da651c:tick",
-        "skyblock:color_war/main",
-        "skyblock:firework_show"
+        "skyblock:color_war/main"
     ]
 }

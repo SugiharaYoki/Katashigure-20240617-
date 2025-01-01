@@ -279,6 +279,7 @@ execute if score stageSeconds Azr_system matches 318 if score playerCount Azr_sy
 execute if score stageSeconds Azr_system matches 318 if score playerCount Azr_system matches 6.. run summon witch -79938 41 159 {PersistenceRequired:1b,Tags:["AzrielDecMob","AzrielMob"],DeathLootTable:"skyblock:azriel_witch_tier1",Health:6.0f,CustomName:'"见习女巫"',CanPickUpLoot:0b,attributes:[{id:"generic.max_health",base:6.0d},{id:"generic.movement_speed",base:0.23d}]}
 execute if score stageSeconds Azr_system matches 318 if score playerCount Azr_system matches 7.. run summon witch -79938 41 159 {PersistenceRequired:1b,Tags:["AzrielDecMob","AzrielMob"],DeathLootTable:"skyblock:azriel_witch_tier1",Health:6.0f,CustomName:'"见习女巫"',CanPickUpLoot:0b,attributes:[{id:"generic.max_health",base:6.0d},{id:"generic.movement_speed",base:0.23d}]}
 execute if score stageSeconds Azr_system matches 318 run scoreboard players set stage Azr_system 16
+tellraw @a[tag=azrPlayer,scores={AZR_chainKillUpg_pts=..2},tag=hasSkills] [{"text":"索命连击","color":"gold"},{"text":"可用点数已增加，目前为：3","color":"green"}]
 scoreboard players set @a[scores={AZR_chainKillUpg_pts=..2}] AZR_chainKillUpg_pts 3
 
 execute if score stageSeconds Azr_system matches 318 run clone -79931 38 117 -79931 38 117 -79900 38 142 replace move

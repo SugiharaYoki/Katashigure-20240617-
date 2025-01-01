@@ -1,9 +1,10 @@
 execute if score stageSeconds Azr_system matches 1 run tag @a[tag=azrPlayer] add azrUpdateSpawnPoint
-execute if score stageSeconds Azr_system matches 7 run bossbar add azr:progress_bar_normal "Stage 8"
-execute if score stageSeconds Azr_system matches 7 run bossbar set azr:progress_bar_normal color white
-execute if score stageSeconds Azr_system matches 7 run bossbar set azr:progress_bar_normal players @a[tag=azrPlayer]
-execute if score stageSeconds Azr_system matches 7 run bossbar set azr:progress_bar_normal max 370
-execute if score stageSeconds Azr_system matches 7..370 store result bossbar azr:progress_bar_normal value run scoreboard players get stageSeconds Azr_system
+execute if score stageSeconds Azr_system matches 1 run tellraw @a[tag=DebugMode,tag=azrPlayer] [{"text":"[DEBUG MODE MESSAGE] You are playing \"Stage 8\", with playerCount = "},{"score":{"objective":"Azr_system","name":"playerCount"}},{"text":" Maximum Seconds = 370"}]
+execute if score stageSeconds Azr_system matches 1 run bossbar add azr:progress_bar_normal "Stage 8"
+execute if score stageSeconds Azr_system matches 1 run bossbar set azr:progress_bar_normal color white
+execute if score stageSeconds Azr_system matches 1 run bossbar set azr:progress_bar_normal players @a[tag=azrPlayer]
+execute if score stageSeconds Azr_system matches 1 run bossbar set azr:progress_bar_normal max 370
+execute if score stageSeconds Azr_system matches 1..370 store result bossbar azr:progress_bar_normal value run scoreboard players get stageSeconds Azr_system
 execute if score stageSeconds Azr_system matches 370 run bossbar remove azr:progress_bar_normal
 execute if score stageSeconds Azr_system matches 1.. run function skyblock:azr/tool_rng
 #
@@ -402,7 +403,8 @@ execute if score stageSeconds Azr_system matches 370 run playsound ambient.crims
 execute if score stageSeconds Azr_system matches 370 run playsound ambient.crimson_forest.additions ambient @a[tag=azrPlayer] -78000 100 0 1000 1.0
 execute if score stageSeconds Azr_system matches 370 run advancement grant @a[tag=azrPlayer] only skyblock:azr_stage8
 execute if score stageSeconds Azr_system matches 370 run scoreboard players set stage Azr_system 21
-scoreboard players set @a[scores={AZR_chainKillUpg_pts=..4}] AZR_chainKillUpg_pts 4
+tellraw @a[tag=azrPlayer,scores={AZR_chainKillUpg_pts=..3},tag=hasSkills] [{"text":"索命连击","color":"gold"},{"text":"可用点数已增加，目前为：4","color":"green"}]
+scoreboard players set @a[scores={AZR_chainKillUpg_pts=..3}] AZR_chainKillUpg_pts 4
 
 execute if score stageSeconds Azr_system matches 370 run summon parrot -79900 43 34 {PersistenceRequired:1b,Invulnerable:1b,Tags:["AzrielDecMob","AzrielFriendly"],DeathLootTable:"skyblock:azriel_creeper_tier2",Health:47.0f,CustomName:'"小鸢"',Variant:2,attributes:[{id:"generic.max_health",base:50.0d},{id:"generic.flying_speed",base:0.0d},{id:"generic.movement_speed",base:0.0d}]}
 

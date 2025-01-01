@@ -46,7 +46,7 @@ execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system 
 execute if score stage Azr_system matches 301 run function skyblock:azr/stage/stage_diffident
 #BOSS1-第五关 11
 execute if score stage Azr_system matches 11 run scoreboard players set stageSeconds Azr_system 0
-#第五关-BOSS1 12..13
+#第五关 12..13
 execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 12..13 run function skyblock:azr/stage/stage5
 #第五关-第六关 14
 execute if score stage Azr_system matches 7 run scoreboard players set stageSeconds Azr_system 0
@@ -67,6 +67,10 @@ execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system 
 #第八关-BOSS2（EVENT3) 21-22
 execute if score stage Azr_system matches 21..22 run function skyblock:azr/stage/stage_event3
 #BOSS2 23-24
+#BOSS2-第九关 25
+execute if score stage Azr_system matches 25 run scoreboard players set stageSeconds Azr_system 0
+#第九关 26
+execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 26 run function skyblock:azr/stage/stage9
 
 #奖励关 Stage Cerement 30
 execute if block -79946 39 50 minecraft:birch_button[powered=true] run function skyblock:azr/stage/stage_cerement_prep
