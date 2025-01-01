@@ -9,7 +9,8 @@ execute as @a[tag=SEAPT,tag=SEAvisioned] at @s run tag @s remove SEAvisioned
 
 
 
-execute as @e[type=blaze,tag=SEAvisioner,predicate=skyblock:sea/m_visioner] at @s if entity @a[tag=SEAPT,distance=0..12] run function skyblock:sea/p/visioner_effect_beta
+execute as @e[type=blaze,tag=SEAvisioner] at @s if entity @a[tag=SEAPT,distance=0..12] run function skyblock:sea/p/visioner_effect_beta
+#execute as @e[type=blaze,tag=SEAvisioner,predicate=skyblock:sea/m_visioner] at @s if entity @a[tag=SEAPT,distance=0..12] run function skyblock:sea/p/visioner_effect_beta
 
 tag @a[tag=SEAPT,tag=!SEAvisioned] remove SEAvisioned_WARN
 
