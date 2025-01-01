@@ -72,11 +72,24 @@ execute if score stage Azr_system matches 25 run scoreboard players set stageSec
 #第九关 26
 execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 26 run function skyblock:azr/stage/stage9
 #event5 27
-execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 27 run function skyblock:azr/stage/stage_event5
+execute if score stage Azr_system matches 27 run function skyblock:azr/stage/stage_event5
 #event5-第十关 28
 execute if score stage Azr_system matches 28 run scoreboard players set stageSeconds Azr_system 0
 #第十关 35
-execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 35 run function skyblock:azr/stage/stage10
+execute if score stage Azr_system matches 35 run function skyblock:azr/stage/stage10
+#event8 35..36
+execute if score stage Azr_system matches 35..36 run function skyblock:azr/stage/stage_event8
+#event9 37..39
+execute if entity @n[tag=AzrielBossFA,type=illusioner] if score stage Azr_system matches 37..39 run function skyblock:azr/stage/stage_event9
+
+#execute if entity @s[tag=AzrielBossFA,type=illusioner] if entity @s[scores={Azr_Progress=37..39}] run function skyblock:azr/azrielsmidgarden_stage_event9
+#execute if entity @s[scores={Azr_Progress=37}] run function skyblock:azr/azrielsmidgarden_stage_11
+#execute if entity @s[tag=!Azr_Halt,scores={Azr_Progress=39}] run function skyblock:azr/azrielsmidgarden_stage_bonus_appetence
+#execute if entity @s[scores={Azr_Progress=38..40}] unless entity @s[scores={Azr_Progress=39}] run function skyblock:azr/azrielsmidgarden_stage_event10
+#execute if entity @s[tag=!Azr_Halt,scores={Azr_Progress=41}] run function skyblock:azr/azrielsmidgarden_stage_12
+#execute if entity @s[scores={Azr_Progress=42..43}] run function skyblock:azr/azrielsmidgarden_stage_event11
+
+#execute if entity @s[tag=!Azr_Halt,scores={Azr_Progress=45}] run function skyblock:azr/azrielsmidgarden_stage_bonus_breakout
 
 #奖励关 Stage Cerement 30
 execute if block -79946 39 50 minecraft:birch_button[powered=true] run function skyblock:azr/stage/stage_cerement_prep

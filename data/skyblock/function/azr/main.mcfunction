@@ -71,10 +71,8 @@ scoreboard players set DEBUG_maxStageLimit Azr_system 25
 execute as @a[tag=azrPlayer] run function skyblock:azr/player
 team join AzrPlayer @e[tag=AzrielFriendly]
 
-#在appetence的四倍速走秒
-execute if score isStarted Azr_system matches 1 if score stage Azr_system matches 34 if score gametick Azr_system matches 5.. run function skyblock:azr/core
-#在stage10的四倍速走秒
-execute if score isStarted Azr_system matches 1 if score stage Azr_system matches 35 if score gametick Azr_system matches 5.. run function skyblock:azr/core
+#在部分关卡的的四倍速走秒
+execute if score isStarted Azr_system matches 1 if score stage Azr_system matches 34..36 if score gametick Azr_system matches 5.. run function skyblock:azr/core
 execute if score isStarted Azr_system matches 1 if score gametick Azr_system matches 20.. run function skyblock:azr/core
 #使用了tickTimer的关卡在这里处理
 #timerTimer读秒，要停下只需reset记分板
