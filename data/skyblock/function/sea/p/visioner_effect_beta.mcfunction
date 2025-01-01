@@ -24,7 +24,8 @@ execute at @s anchored eyes positioned ^ ^ ^11.0 run tag @a[tag=SEAPT,distance=0
 execute at @s anchored eyes positioned ^ ^ ^11.5 run tag @a[tag=SEAPT,distance=0..2] add SEAvisioned
 execute at @s anchored eyes positioned ^ ^ ^12.0 run tag @a[tag=SEAPT,distance=0..2] add SEAvisioned
 
-execute at @s run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
+execute at @s run tp @s ~ ~-0.01 ~ facing entity @p[tag=SEAPT]
+#execute at @s at @p[tag=SEAPT,distance=0..12] run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
 
 #execute at @s anchored feet positioned ^ ^ ^0.5 run particle end_rod ~ ~ ~ 0 0 0 0 1
 #execute at @s anchored feet positioned ^ ^ ^1.0 run particle end_rod ~ ~ ~ 0 0 0 0 1
