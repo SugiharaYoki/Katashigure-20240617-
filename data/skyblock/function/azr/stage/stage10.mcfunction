@@ -4,7 +4,7 @@ execute if score stageSeconds Azr_system matches 52 run bossbar add azr:progress
 execute if score stageSeconds Azr_system matches 52 run bossbar set azr:progress_bar_normal color white
 execute if score stageSeconds Azr_system matches 52 run bossbar set azr:progress_bar_normal players @a[tag=azrPlayer]
 execute if score stageSeconds Azr_system matches 52 run bossbar set azr:progress_bar_normal max 478
-execute if score stageSeconds Azr_system matches 52..478 store result bossbar azr:progress_bar_normal value run scoreboard players get @e[tag=sc,limit=1] stageSeconds
+execute if score stageSeconds Azr_system matches 52..478 store result bossbar azr:progress_bar_normal value run scoreboard players get stageSeconds Azr_system
 execute if score stageSeconds Azr_system matches 478 run bossbar remove azr:progress_bar_normal
 #
 #mainside:-79894 40 -113
@@ -128,7 +128,7 @@ execute if score stageSeconds Azr_system matches 168..202 if score #rng4 Azr_sys
 
 execute if score stageSeconds Azr_system matches 214..217 run playsound ambient.cave ambient @a[tag=azrPlayer] -79880 41 -114 5 1.2
 execute if score stageSeconds Azr_system matches 214..217 run playsound ambient.cave ambient @a[tag=azrPlayer] -79880 41 -114 5 1.0
-execute if score stageSeconds Azr_system matches 204..209 if entity @e[tag=AzrielMob,tag=!AzrielDecMob] run scoreboard players set @e[tag=sc,limit=1] stageSeconds 204
+execute if score stageSeconds Azr_system matches 204..209 if entity @e[tag=AzrielMob,tag=!AzrielDecMob] run scoreboard players set stageSeconds Azr_system 204
 execute if score stageSeconds Azr_system matches 225 run title @a[tag=azrPlayer] actionbar {"text":"Wave Clear","color":"green"}
 execute if score stageSeconds Azr_system matches 225 run scoreboard players set @a[tag=azrPlayer] Azr_wave 26
 execute if score stageSeconds Azr_system matches 245 run title @a[tag=azrPlayer] actionbar {"text":"10","color":"yellow"}
@@ -259,7 +259,7 @@ execute if score stageSeconds Azr_system matches 424 run summon vindicator -7989
 execute if score stageSeconds Azr_system matches 424 run summon zombie -79890.3 40 -128 {PersistenceRequired:1b,Tags:["AzrielDecMob"],DeathLootTable:"skyblock:azriel_zombie_militia_tier2",Health:9.0f,CustomName:'"僵尸巡卫队"',CanPickUpLoot:0b,IsBaby:0b,HandItems:[{count:1,id:"iron_sword",components:{custom_name:'{"text":"铁剑","italic":false,"color":"white"}'}},{}],HandDropChances:[0.06f,0.06f],ArmorItems:[{count:1,id:"chainmail_boots",components:{custom_name:'{"text":"链靴","italic":false,"color":"white"}'}},{count:1,id:"chainmail_leggings",components:{custom_name:'{"text":"链裤","italic":false,"color":"white"}'}},{count:1,id:"chainmail_chestplate",components:{custom_name:'{"text":"链甲","italic":false,"color":"white"}'}},{count:1,id:"iron_helmet",components:{custom_name:'{"text":"铁盔","italic":false,"color":"white"}'}}],ArmorDropChances:[0.01f,0.01f,0.01f,0.01f],attributes:[{id:"generic.max_health",base:9.0d},{id:"generic.attack_damage",base:1.5d},{id:"generic.movement_speed",base:0.2d}]}
 execute if score stageSeconds Azr_system matches 424 run summon zombie -79889.2 40 -129 {PersistenceRequired:1b,Tags:["AzrielDecMob"],DeathLootTable:"skyblock:azriel_zombie_militia_tier2",Health:9.0f,CustomName:'"僵尸巡卫队"',CanPickUpLoot:0b,IsBaby:0b,HandItems:[{count:1,id:"iron_sword",components:{custom_name:'{"text":"铁剑","italic":false,"color":"white"}'}},{}],HandDropChances:[0.06f,0.06f],ArmorItems:[{count:1,id:"chainmail_boots",components:{custom_name:'{"text":"链靴","italic":false,"color":"white"}'}},{count:1,id:"chainmail_leggings",components:{custom_name:'{"text":"链裤","italic":false,"color":"white"}'}},{count:1,id:"chainmail_chestplate",components:{custom_name:'{"text":"链甲","italic":false,"color":"white"}'}},{count:1,id:"iron_helmet",components:{custom_name:'{"text":"铁盔","italic":false,"color":"white"}'}}],ArmorDropChances:[0.01f,0.01f,0.01f,0.01f],attributes:[{id:"generic.max_health",base:9.0d},{id:"generic.attack_damage",base:1.5d},{id:"generic.movement_speed",base:0.2d}]}
 
-execute if score stageSeconds Azr_system matches 468..472 if entity @e[tag=AzrielMob,tag=!AzrielDecMob] run scoreboard players set @e[tag=sc,limit=1] stageSeconds 468
+execute if score stageSeconds Azr_system matches 468..472 if entity @e[tag=AzrielMob,tag=!AzrielDecMob] run scoreboard players set stageSeconds Azr_system 468
 execute if score stageSeconds Azr_system matches 472..474 run playsound ambient.cave ambient @a[tag=azrPlayer] -79880 41 -114 160 1.2
 execute if score stageSeconds Azr_system matches 472..474 run playsound ambient.cave ambient @a[tag=azrPlayer] -79880 41 -114 160 1.0
 execute if score stageSeconds Azr_system matches 474 run title @a[tag=azrPlayer] actionbar {"text":"Gate Opened","color":"green"}
