@@ -119,9 +119,10 @@ execute positioned 90124 161 147 run function skyblock:sea/m/special_marshall
 
 
 scoreboard players set SEA_ch5_event_EnteringPillar2 rng1 0
+scoreboard players set SEA_ch5_event_EnteringPillar2 rng2 0
 fill 90105 93 57 90105 94 57 minecraft:magma_block
 fill 90109 102 54 90109 103 54 minecraft:magma_block
-
+fill 90109 114 41 90110 114 42 waxed_copper_grate
 
 
 

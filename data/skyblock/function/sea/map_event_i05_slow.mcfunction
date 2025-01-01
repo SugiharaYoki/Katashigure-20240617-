@@ -45,8 +45,10 @@ execute if score SEA_ch5_event_EnteringPillar2 rng1 matches 66 positioned 90137 
 
 
 
-
-
+execute positioned 90111 121 41 if entity @a[tag=SEAPT,tag=!SEAPF,distance=0..6] run scoreboard players set SEA_ch5_event_EnteringPillar2 rng2 1
+execute if score SEA_ch5_event_EnteringPillar2 rng2 matches 1..30 run scoreboard players add SEA_ch5_event_EnteringPillar2 rng2 1
+execute if score SEA_ch5_event_EnteringPillar2 rng2 matches 2 run fill 90109 121 41 90110 121 42 anvil
+execute if score SEA_ch5_event_EnteringPillar2 rng2 matches 4..10 if block 90109 114 41 #anvil run fill 90109 114 41 90110 114 42 air destroy
 
 
 
