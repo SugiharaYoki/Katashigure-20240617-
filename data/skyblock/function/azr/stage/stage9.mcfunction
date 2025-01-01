@@ -3,7 +3,7 @@ execute if score stageSeconds Azr_system matches 1 run tellraw @a[tag=DebugMode,
 execute if score stageSeconds Azr_system matches 1 run bossbar add azr:progress_bar_normal "Stage 9"
 execute if score stageSeconds Azr_system matches 1 run bossbar set azr:progress_bar_normal color white
 execute if score stageSeconds Azr_system matches 1 run bossbar set azr:progress_bar_normal players @a[tag=azrPlayer]
-execute if score stageSeconds Azr_system matches 1 run bossbar set azr:progress_bar_normal max 75
+execute if score stageSeconds Azr_system matches 1 run bossbar set azr:progress_bar_normal max 90
 execute if score stageSeconds Azr_system matches 1..90 store result bossbar azr:progress_bar_normal value run scoreboard players get stageSeconds Azr_system
 execute if score stageSeconds Azr_system matches 90 run bossbar remove azr:progress_bar_normal
 #
