@@ -1,6 +1,5 @@
-execute if score stageSeconds Azr_system matches 501..990 run scoreboard players set @e[tag=sc,limit=1] stageSeconds 501
-
-execute if score stageSeconds Azr_system matches 450..990 if block -79894 41 -123 lever[powered=true] run scoreboard players set @e[tag=sc,limit=1] stageSeconds 1001
+execute if score stageSeconds Azr_system matches 501..990 run scoreboard players set stageSeconds Azr_system 501
+execute if score stageSeconds Azr_system matches 450..990 if block -79894 41 -123 lever[powered=true] run scoreboard players set stageSeconds Azr_system 1001
 execute if score stageSeconds Azr_system matches 1002 run fill -79892 43 -119 -79889 43 -119 iron_bars
 execute if score stageSeconds Azr_system matches 1002 run playsound minecraft:block.iron_door.open ambient @a[tag=azrPlayer] -79891.0 46 -119 160 0.3
 execute if score stageSeconds Azr_system matches 1003 run fill -79892 42 -119 -79889 42 -119 iron_bars
@@ -11,25 +10,20 @@ execute if score stageSeconds Azr_system matches 1005 run fill -79892 40 -119 -7
 execute if score stageSeconds Azr_system matches 1005 run playsound minecraft:block.iron_door.open ambient @a[tag=azrPlayer] -79891.0 46 -119 180 0.3
 execute if score stageSeconds Azr_system matches 1005 run playsound minecraft:block.iron_door.close ambient @a[tag=azrPlayer] -79891.0 46 -119 180 0.3
 execute if score stageSeconds Azr_system matches 1005 run playsound minecraft:entity.generic.small_fall ambient @a[tag=azrPlayer] -79891.0 46 -119 8 0.6
-execute if score stageSeconds Azr_system matches 1005 run scoreboard players set tickTimer Azr_system 0
 execute if score stageSeconds Azr_system matches 1005 run tp @a[x=-79891,y=40,z=-126,distance=6..,tag=azrPlayer] -79891 40 -123
 execute if score stageSeconds Azr_system matches 1005 run spawnpoint @a[tag=azrPlayer] -79891 40 -123
-
 execute if score stageSeconds Azr_system matches 1002 run scoreboard players set stage Azr_system 36
 execute if score stageSeconds Azr_system matches 1002 run scoreboard players set @a[tag=azrPlayer] Azr_wave 27
 execute if score stageSeconds Azr_system matches 1002 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..11}] Azr_skillPoints 12
 
-execute if score stageSeconds Azr_system matches 1016..1220 run scoreboard players set @e[tag=sc,limit=1] stageSeconds 1016
-
+execute if score stageSeconds Azr_system matches 1016..1220 run scoreboard players set stageSeconds Azr_system 1016
 execute if score stageSeconds Azr_system matches 1016..1220 if entity @a[tag=azrPlayer,x=-79898,y=40,z=-139,distance=0..5] run particle minecraft:soul -79890 40 -119 10 8 10 0.00 1200
 execute if score stageSeconds Azr_system matches 1016..1220 if entity @a[tag=azrPlayer,x=-79898,y=40,z=-139,distance=0..5] as @e[tag=AzrielDecMob] at @s run tp @s ~ ~-80 ~
 execute if score stageSeconds Azr_system matches 1016..1220 if entity @a[tag=azrPlayer,x=-79898,y=40,z=-139,distance=0..5] as @e[tag=AzrielMob] at @s run tp @s ~ ~-80 ~
-execute if score stageSeconds Azr_system matches 1016..1220 if entity @a[tag=azrPlayer,x=-79898,y=40,z=-139,distance=0..5] run scoreboard players set @e[tag=sc,limit=1] stageSeconds 2000
+execute if score stageSeconds Azr_system matches 1016..1220 if entity @a[tag=azrPlayer,x=-79898,y=40,z=-139,distance=0..5] run scoreboard players set stageSeconds Azr_system 2000
 
-execute if score stageSeconds Azr_system matches 2001..2220 if entity @a[tag=azrPlayer,x=-79905,y=40,z=-137,distance=0..5] run scoreboard players set @e[tag=sc,limit=1] stageSeconds 3000
-execute if score stageSeconds Azr_system matches 2001..2220 run scoreboard players set @e[tag=sc,limit=1] stageSeconds 2001
-
-
+execute if score stageSeconds Azr_system matches 2001..2220 if entity @a[tag=azrPlayer,x=-79905,y=40,z=-137,distance=0..5] run scoreboard players set stageSeconds Azr_system 3000
+execute if score stageSeconds Azr_system matches 2001..2220 run scoreboard players set stageSeconds Azr_system 2001
 execute if score stageSeconds Azr_system matches 3001 run particle minecraft:witch -79903 40 -134 0.5 0.5 0.5 0.01 100
 execute if score stageSeconds Azr_system matches 3001 run particle minecraft:witch -79907 40 -134 0.5 0.5 0.5 0.01 100
 execute if score stageSeconds Azr_system matches 3001 run summon zombie -79907 40 -134 {PersistenceRequired:1b,Tags:["AzrielMobE8"],Silent:1b,DeathLootTable:"skyblock:azriel_zombie_knight_tier1",Health:45.0f,CustomName:'"重甲僵尸"',CanPickUpLoot:0b,IsBaby:0b,HandItems:[{count:1,id:"stone_axe",components:{custom_name:'{"text":"石斧","italic":false,"color":"white"}'}},{count:1,id:"shield",components:{custom_name:'{"text":"盾","italic":false,"color":"white"}'}}],HandDropChances:[0.001f,0.001f],ArmorItems:[{count:1,id:"iron_boots",components:{custom_name:'{"text":"铁靴","italic":false,"color":"white"}'}},{count:1,id:"iron_leggings",components:{custom_name:'{"text":"铁护腿","italic":false,"color":"white"}'}},{count:1,id:"iron_chestplate",components:{custom_name:'{"text":"铁胸甲","italic":false,"color":"white"}'}},{count:1,id:"iron_helmet",components:{custom_name:'{"text":"铁盔","italic":false,"color":"white"}'}}],ArmorDropChances:[0.001f,0.001f,0.001f,0.001f],attributes:[{id:"generic.max_health",base:45.0d},{id:"generic.attack_damage",base:0.5d},{id:"generic.knockback_resistance",base:0.5d},{id:"generic.movement_speed",base:0.14d}]}
@@ -55,14 +49,14 @@ execute if score stageSeconds Azr_system matches 3056..3059 as @e[tag=AzrielMobE
 execute if score stageSeconds Azr_system matches 3056..3059 as @e[tag=AzrielMobE8] at @s run particle minecraft:soul_fire_flame ~ ~3 ~ 0.2 0.2 0.2 0.15 10
 execute if score stageSeconds Azr_system matches 3056..3059 as @e[tag=AzrielMobE8] at @s run summon arrow ~ ~3 ~ {Motion:[0.0d,-1.0d,0.0d],pickup:0,damage:30.0d,life:1100}
 
-execute if score stageSeconds Azr_system matches 3056..3059 if entity @e[tag=AzrielMobE8] run scoreboard players set @e[tag=sc,limit=1] stageSeconds 3056
+execute if score stageSeconds Azr_system matches 3056..3059 if entity @e[tag=AzrielMobE8] run scoreboard players set stageSeconds Azr_system 3056
 execute if score stageSeconds Azr_system matches 3067 run effect give @e[tag=AzrielBossFA] slow_falling 3 2 false
 execute if score stageSeconds Azr_system matches 3068 as @e[tag=AzrielBossFA] at @s run tp @s -79906 40 -139 facing -79901 40 -139
 execute if score stageSeconds Azr_system matches 3068 run particle minecraft:reverse_portal -79906 40 -139 0.5 0.6 0.5 0.5 40
 execute if score stageSeconds Azr_system matches 3068 run playsound item.chorus_fruit.teleport master @a -79906 40 -139 1 0.9
 
 execute if score stageSeconds Azr_system matches 3070 unless entity @a[tag=azrPlayer,scores={Azr_skillPoints=..12}] run tellraw @a[tag=azrPlayer] {"text":"〈跳过剧情〉","bold":true,"color":"blue","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 6"}}
-execute if entity @a[tag=azrPlayer,scores={Azr_Shop=6..9}] if score stageSeconds Azr_system matches 3040..3212 run scoreboard players set @e[tag=sc,limit=1] stageSeconds 3345
+execute if entity @a[tag=azrPlayer,scores={Azr_Shop=6..9}] if score stageSeconds Azr_system matches 3040..3212 run scoreboard players set stageSeconds Azr_system 3345
 
 execute if score stageSeconds Azr_system matches 3070 as @e[tag=AzrielBossFA] at @s run tp @s ~ ~ ~ facing entity @r[tag=azrPlayer]
 execute if score stageSeconds Azr_system matches 3070 as @e[tag=AzrielBossFA] at @s run playsound minecraft:entity.illusioner.ambient master @a[tag=azrPlayer] ~ ~ ~ 2 0.6
