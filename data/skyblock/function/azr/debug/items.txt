@@ -65,14 +65,18 @@
     crossbow_power 弩·强化 100004
 盔甲
     铁
-    iron_helmet_normal 铁头盔 100001
+    iron_helmet_normal 铁盔 100001
     iron_chestplate_normal 铁胸甲 100002
     iron_leggings_normal 铁护腿 100003
     iron_boots_normal 铁靴 100004
-    iron_helmet_zombie 铁头盔·裹尸 100005
+    iron_helmet_zombie 铁盔·裹尸 100005
     iron_chestplate_zombie 铁胸甲·裹尸 100006
     iron_leggings_zombie 铁护腿·裹尸 100007
     iron_boots_zombie 铁靴·裹尸 100008
+    iron_helmet_seek 铁盔·暗窥 100009
+    iron_chestplate_seek 铁胸甲·暗窥 100010
+    iron_leggings_seek 铁护腿·暗窥 100011
+    iron_boots_seek 铁靴·暗窥 100012
     皮革
 
     leather_helmet_normal 皮革帽 100001
