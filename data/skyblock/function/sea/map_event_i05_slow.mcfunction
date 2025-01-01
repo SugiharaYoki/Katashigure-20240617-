@@ -41,6 +41,7 @@ execute if score SEA_ch5_event_EnteringPillar2 rng1 matches 66 positioned 90109 
 execute if score SEA_ch5_event_EnteringPillar2 rng1 matches 66 positioned 90109 102 54 run particle falling_lava ~ ~1 ~ 0.5 1 0.5 0 20
 execute if score SEA_ch5_event_EnteringPillar2 rng1 matches 66 positioned 90109 102 54 run function skyblock:sea/m/visioner
 
+execute if score SEA_ch5_event_EnteringPillar2 rng1 matches 66 positioned 90137 67 60 run function skyblock:sea/m/visioner
 
 
 
