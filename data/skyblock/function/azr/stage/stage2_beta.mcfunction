@@ -131,4 +131,5 @@ execute if score stageSeconds Azr_system matches 99 run tellraw @a[scores={Azr_s
 execute if score stageSeconds Azr_system matches 99 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..1}] Azr_skillPoints 2
 execute if score stageSeconds Azr_system matches 99.. run advancement grant @a[tag=azrPlayer] only skyblock:azr_stage2
 execute if score stageSeconds Azr_system matches 99 run title @a[tag=azrPlayer] actionbar {"text":"Stage Clear","color":"green"}
-scoreboard players set @a[scores={AZR_chainKillUpg_pts=..1}] AZR_chainKillUpg_pts 1
+tellraw @a[tag=azrPlayer,scores={AZR_chainKillUpg_pts=..0},tag=hasSkills] [{"text":"索命连击","color":"gold"},{"text":"可用点数已增加，目前为：1","color":"green"}]
+scoreboard players set @a[scores={AZR_chainKillUpg_pts=..0}] AZR_chainKillUpg_pts 1
