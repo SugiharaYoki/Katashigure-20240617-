@@ -424,6 +424,7 @@ attribute @s generic.armor modifier remove sea_weapon:upg_armor24
 attribute @s generic.armor_toughness modifier remove sea_weapon:upg_armor25
 attribute @s generic.armor modifier remove sea_weapon:upg_armor26
 
+attribute @s generic.jump_strength modifier remove sea:mob_debuff_visioned01
 
 #不再用到的tag
 tag @s remove sea_t_axeparry1
