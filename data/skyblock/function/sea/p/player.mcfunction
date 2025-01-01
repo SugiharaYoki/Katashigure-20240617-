@@ -30,6 +30,7 @@ clear @s[gamemode=!creative] crimson_button
 clear @s[gamemode=!creative] warped_button
 clear @s[gamemode=!creative] stone_button
 clear @s[gamemode=!creative] acacia_fence
+clear @s[gamemode=!creative] #minecraft:anvil
 
 tag @s remove PVP_see
 
