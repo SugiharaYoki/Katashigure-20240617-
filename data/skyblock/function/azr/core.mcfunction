@@ -71,6 +71,8 @@ execute if score stage Azr_system matches 21..22 run function skyblock:azr/stage
 execute if score stage Azr_system matches 25 run scoreboard players set stageSeconds Azr_system 0
 #第九关 26
 execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 26 run function skyblock:azr/stage/stage9
+#event5 27
+execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 27 run function skyblock:azr/stage/stage_event5
 
 #奖励关 Stage Cerement 30
 execute if block -79946 39 50 minecraft:birch_button[powered=true] run function skyblock:azr/stage/stage_cerement_prep
