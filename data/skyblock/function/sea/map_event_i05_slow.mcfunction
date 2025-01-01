@@ -25,12 +25,16 @@ execute if block 90117 111 56 lever[powered=false] \
  if block 90117 110 54 lever[powered=true] unless block 90109 115 52 air \
 run function skyblock:sea/e/ch5/mem_2
 
+execute positioned 90110 88 58 if entity @a[tag=SEAPT,tag=!SEAPF,distance=0..6] run scoreboard players set SEA_ch5_event_EnteringPillar2 rng1 1
 
+execute if score SEA_ch5_event_EnteringPillar2 rng1 matches 1..99 run scoreboard players add SEA_ch5_event_EnteringPillar2 rng1 1
+execute if score SEA_ch5_event_EnteringPillar2 rng1 matches 20..22 run playsound ambient.soul_sand_valley.mood ambient @a 90112 67 62 10 1.1
 
-
-
-
-
+execute if score SEA_ch5_event_EnteringPillar2 rng1 matches 60 run fill 90105 93 57 90105 94 57 minecraft:air
+execute if score SEA_ch5_event_EnteringPillar2 rng1 matches 60 positioned 90105 93 57 run playsound block.metal.break block @a ~ ~ ~ 2 0.9
+execute if score SEA_ch5_event_EnteringPillar2 rng1 matches 60 positioned 90105 93 57 run playsound block.fire.extinguish block @a ~ ~ ~ 2 1.1
+execute if score SEA_ch5_event_EnteringPillar2 rng1 matches 60 positioned 90105 93 57 run particle falling_lava ~ ~1 ~ 0.5 1 0.5 0 20
+execute if score SEA_ch5_event_EnteringPillar2 rng1 matches 60 positioned 90105 93 57 run function skyblock:sea/m/visioner
 
 
 
