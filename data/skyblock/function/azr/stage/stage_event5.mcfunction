@@ -1,4 +1,4 @@
-execute if score stageSeconds Azr_system matches ..100 run scoreboard players set stageSeconds Azr_system 100
+execute if score stageSeconds Azr_system matches ..100 run scoreboard players set stageSeconds Azr_system 99
 execute if score stageSeconds Azr_system matches 100 if entity @a[x=-79890,y=42,z=-60,distance=0..4,tag=azrPlayer] run scoreboard players set stageSeconds Azr_system 109
 
 execute if score stageSeconds Azr_system matches 110 run tag @a[tag=azrPlayer] add azrUpdateSpawnPoint
