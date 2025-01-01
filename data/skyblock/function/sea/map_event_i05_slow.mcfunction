@@ -49,6 +49,7 @@ execute if score SEA_ch5_event_EnteringPillar2 rng2 matches 0 positioned 90111 1
 execute if score SEA_ch5_event_EnteringPillar2 rng2 matches 1..30 run scoreboard players add SEA_ch5_event_EnteringPillar2 rng2 1
 execute if score SEA_ch5_event_EnteringPillar2 rng2 matches 2 run fill 90109 121 41 90110 121 42 anvil
 execute if score SEA_ch5_event_EnteringPillar2 rng2 matches 4..10 if block 90109 114 41 #anvil run fill 90109 114 41 90110 114 42 air destroy
+execute if score SEA_ch5_event_EnteringPillar2 rng2 matches 4..10 if block 90109 114 41 #anvil run fill 90109 115 41 90110 115 42 air destroy
 
 
 
