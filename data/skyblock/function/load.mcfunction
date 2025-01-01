@@ -148,7 +148,7 @@ scoreboard objectives add If_MD_Creator minecraft.dropped:minecraft.music_disc_c
 scoreboard objectives add If_MD_Otherside minecraft.dropped:minecraft.music_disc_otherside
 scoreboard objectives add If_TalkVill minecraft.custom:minecraft.talked_to_villager
 scoreboard objectives add If_DropBtrt minecraft.dropped:minecraft.beetroot
-scoreboard objectives add If_Lectern minecraft.used:minecraft.lectern
+scoreboard objectives add If_Lectern minecraft.custom:minecraft.interact_with_lectern
 scoreboard objectives add DeathCountTemp minecraft.custom:minecraft.deaths
 scoreboard objectives add DeathCount deathCount
 #AzrielsMidgarden
