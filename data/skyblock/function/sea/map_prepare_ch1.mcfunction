@@ -66,6 +66,7 @@ scoreboard objectives add sea_count_played dummy
 scoreboard objectives add sea_count_dead dummy
 scoreboard objectives add sea_progress dummy
 scoreboard objectives add SEA_pounce_charge dummy
+scoreboard objectives add sea_visioned dummy
 scoreboard players set @n[tag=sc] sea_chapter 1
 scoreboard players set sc sea_speedrun_ch1 0
 scoreboard players set sc sea_speedrun_ch2 0
