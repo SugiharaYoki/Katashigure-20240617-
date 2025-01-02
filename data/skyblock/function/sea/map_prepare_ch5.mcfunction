@@ -124,7 +124,9 @@ fill 90105 93 57 90105 94 57 minecraft:magma_block
 fill 90109 102 54 90109 103 54 minecraft:magma_block
 fill 90109 114 41 90110 114 42 waxed_copper_grate
 
-
+setblock 90141 84 49 chest[facing=south]
+item replace block 90141 84 49 container.12 with echo_shard 1
+item replace block 90141 84 49 container.14 with arrow 3
 
 
 
