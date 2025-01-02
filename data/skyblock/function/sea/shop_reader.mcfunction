@@ -98,7 +98,8 @@ execute if items entity @s armor.* *[custom_data={sea_chest:true}] run tellraw @
 
 execute unless items entity @s container.* shield unless items entity @s weapon.* shield run \
 tellraw @s [{"text":"   - "},{"text":"制作 防护盾  ","color":"dark_aqua"},{"score":{"name":"@s","objective":"sea_i_iron_ingot"},"color":"white"},{"text":"/2 铁锭 ","color":"gray"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 10006"}}]
-execute if items entity @s container.* *[custom_data={sea_shield:true}] run tellraw @s [{"text":"   - "},{"text":"防护盾：升级  ","color":"dark_aqua"},{"text":"〈开启界面〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 59004"}}]
+execute if items entity @s container.* shield run tellraw @s [{"text":"   - "},{"text":"防护盾：升级  ","color":"dark_aqua"},{"text":"〈开启界面〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 59004"}}]
+execute unless items entity @s container.* shield if items entity @s weapon.* shield run tellraw @s [{"text":"   - "},{"text":"防护盾：升级  ","color":"dark_aqua"},{"text":"〈开启界面〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 59004"}}]
 
 #tellraw @s [{"text":"   - "},{"text":"防护盾：升级  ","color":"dark_aqua"},{"score":{"name":"@s","objective":"sea_i_iron_ingot"},"color":"white"},{"text":"/2 铁锭 ","color":"gray"},{"score":{"name":"@s","objective":"sea_i_flint"},"color":"white"},{"text":"/2 燧石 ","color":"gray"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 10014"}}]
 #execute if items entity @s container.* *[custom_data={sea_shield2:true}] run \
