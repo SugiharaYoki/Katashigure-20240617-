@@ -360,6 +360,8 @@ execute as @n[tag=sc,scores={sea_4temp2=4000..5000}] as @n[tag=SEAboss1,scores={
 execute as @n[tag=sc,scores={sea_4temp2=4000..5000}] as @n[tag=SEAboss1,tag=!SEAboss1_002,scores={sea_boss1_hp=..140}] at @s run function skyblock:sea/m/silverfish
 execute as @n[tag=sc,scores={sea_4temp2=4000..5000}] as @n[tag=SEAboss1,tag=!SEAboss1_002,scores={sea_boss1_hp=..140}] at @s run function skyblock:sea/m/silverfish
 execute as @n[tag=sc,scores={sea_4temp2=4000..5000}] as @n[tag=SEAboss1,tag=!SEAboss1_002,scores={sea_boss1_hp=..140}] at @s run function skyblock:sea/m/silverfish
+execute as @n[tag=sc,scores={sea_4temp2=4000..5000}] as @n[tag=SEAboss1,tag=!SEAboss1_002,scores={sea_boss1_hp=..140}] at @s run particle warped_spore ~ ~1 ~ 3 3 3 0 120
+execute as @n[tag=sc,scores={sea_4temp2=4000..5000}] as @n[tag=SEAboss1,tag=!SEAboss1_002,scores={sea_boss1_hp=..140}] at @s run playsound entity.zombie_villager.cure hostile @a ~ ~ ~ 1 0.7
 execute as @n[tag=sc,scores={sea_4temp2=4000..5000,sea_player=3..}] as @n[tag=SEAboss1,tag=!SEAboss1_002,scores={sea_boss1_hp=..140}] at @s run function skyblock:sea/m/silverfish
 execute as @n[tag=sc,scores={sea_4temp2=4000..5000,sea_player=5..}] as @n[tag=SEAboss1,tag=!SEAboss1_002,scores={sea_boss1_hp=..140}] at @s run function skyblock:sea/m/silverfish
 execute as @n[tag=sc,scores={sea_4temp2=4000..5000}] as @n[tag=SEAboss1,tag=!SEAboss1_002,scores={sea_boss1_hp=..140}] at @s run tag @s add SEAboss1_002
