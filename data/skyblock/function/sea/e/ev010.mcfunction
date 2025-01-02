@@ -131,5 +131,5 @@ execute as @n[tag=SEAbossch3_core,tag=SEAbossch3_core_lighted,scores={sea_4temp7
 execute as @n[tag=SEAbossch3_core,tag=SEAbossch3_core_lighted,scores={sea_4temp7=40}] if entity @n[tag=sc,scores={sea_player=2..}] run tellraw @a[x=90100,y=100,z=100,distance=0..2000] {"text":"越涵：“你们等着，我想办法找其他路来和你们汇合。”","color":"green"}
 
 execute as @n[tag=SEAbossch3_core,tag=SEAbossch3_core_lighted,scores={sea_4temp7=80}] as @a[tag=SEAPT] at @s run tellraw @s {"text":"『厄珀娅的悲歌』第三章 完","color":"blue","bold": true}
-execute as @n[tag=SEAbossch3_core,tag=SEAbossch3_core_lighted,scores={sea_4temp7=80}] as @a[tag=SEAPT] at @s run playsound minecraft:app1.speirapyrgos music @a[tag=SEAPT] ~ ~ ~ 1000 1
+#execute as @n[tag=SEAbossch3_core,tag=SEAbossch3_core_lighted,scores={sea_4temp7=80}] as @a[tag=SEAPT] at @s run playsound minecraft:app1.speirapyrgos music @a[tag=SEAPT] ~ ~ ~ 1000 1
 execute as @n[tag=SEAbossch3_core,tag=SEAbossch3_core_lighted,scores={sea_4temp7=80}] run function skyblock:sea/map_prepare_ch4
