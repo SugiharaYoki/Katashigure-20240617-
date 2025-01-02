@@ -94,6 +94,8 @@ setblock 90110 89 45 air
 setblock 90110 89 45 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:gunpowder"}}
 setblock 90111 89 45 air
 setblock 90111 89 45 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 2, id:"minecraft:golden_carrot"}}
+setblock 90104 60 56 air
+setblock 90104 60 56 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:flint"}}
 
 #mem_1
 fill 90109 91 51 90109 89 48 lever[facing=east]
