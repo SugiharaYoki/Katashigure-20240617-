@@ -165,7 +165,9 @@ attribute @s minecraft:generic.attack_knockback modifier remove sea_t_knockback3
 attribute @s minecraft:generic.attack_knockback modifier remove sea_t_knockback4
 attribute @s minecraft:generic.attack_knockback modifier remove sea_t_knockback5
 
-
+attribute @s generic.movement_speed modifier remove sea_running_1a
+attribute @s generic.knockback_resistance modifier remove sea_running_1b
+attribute @s generic.armor modifier remove sea_running_1c
 
 tag @s remove sea_t_armor1
 execute store result score @s rng2 run random value 1..4
