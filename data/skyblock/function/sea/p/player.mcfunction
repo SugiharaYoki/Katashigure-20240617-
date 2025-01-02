@@ -31,6 +31,8 @@ clear @s[gamemode=!creative] warped_button
 clear @s[gamemode=!creative] stone_button
 clear @s[gamemode=!creative] acacia_fence
 clear @s[gamemode=!creative] #minecraft:anvil
+clear @s[gamemode=!creative] glow_item_frame
+clear @s[gamemode=!creative] painting
 
 tag @s remove PVP_see
 
