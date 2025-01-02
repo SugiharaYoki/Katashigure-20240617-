@@ -10,8 +10,8 @@ execute if score stageSeconds Azr_system matches 478 run bossbar remove azr:prog
 #mainside:-79894 40 -113
 #subside:-79894 40 -115
 execute if score stageSeconds Azr_system matches 12..24 as @a[tag=azrPlayer,x=-79891,y=41,z=-113,distance=28..] at @s run tp @s -79889 40 -114 facing -79888 40 -114
-execute if score stageSeconds Azr_system matches 70.. as @e[name="僵尸盔甲匠"] at @s run function skyblock:azr/azrielsmidgarden_effect_zombie_armorer
-execute if score stageSeconds Azr_system matches 70.. as @e[name="僵尸牧师"] at @s if score #rng8 Azr_system matches 1 run function skyblock:azr/azrielsmidgarden_effect_zombie_cleric
+execute if score stageSeconds Azr_system matches 70.. as @e[name="僵尸盔甲匠"] at @s run function skyblock:azr/effects/zombie_armorer
+execute if score stageSeconds Azr_system matches 70.. as @e[name="僵尸牧师"] at @s if score #rng8 Azr_system matches 1 run function skyblock:azr/effects/zombie_cleric
 
 
 execute if score stageSeconds Azr_system matches 1 run kill @e[tag=AzrielMob]
@@ -25,11 +25,10 @@ execute if score stageSeconds Azr_system matches 20 run playsound minecraft:bloc
 
 execute if score stageSeconds Azr_system matches 36 run tellraw @a[tag=azrPlayer] {"text":"大门似乎卡住了……","color":"gray"}
 
-
 execute if score stageSeconds Azr_system matches 4.. run function skyblock:azr/tool_rng
 execute if score stageSeconds Azr_system matches 52 run title @a[tag=azrPlayer] actionbar {"text":"Stage 10 - Wave 1","color":"red"}
-execute if score stageSeconds Azr_system matches 52 if score #rng2 Azr_system matches 1 if score playerCount Azr_system matches 1.. positioned -79894 40.05 -113 run function skyblock:azr/azrielsmidgarden_effect_basalt_open
-execute if score stageSeconds Azr_system matches 52 if score #rng2 Azr_system matches 1 if score playerCount Azr_system matches 1.. positioned -79894 40.05 -115 run function skyblock:azr/azrielsmidgarden_effect_basalt_open
+execute if score stageSeconds Azr_system matches 52 if score #rng2 Azr_system matches 1 if score playerCount Azr_system matches 1.. positioned -79894 40.05 -113 run function skyblock:azr/effects/basalt_open
+execute if score stageSeconds Azr_system matches 52 if score #rng2 Azr_system matches 1 if score playerCount Azr_system matches 1.. positioned -79894 40.05 -115 run function skyblock:azr/effects/basalt_open
 execute if score stageSeconds Azr_system matches 56 if score #rng2 Azr_system matches 1 if score playerCount Azr_system matches 1.. run summon zombie -79894 40 -113 {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_zombie_tier1",Health:6.5f,CustomName:'"僵尸"',CanPickUpLoot:0b,IsBaby:0b,ArmorItems:[{count:1,id:"leather_boots",components:{custom_name:'{"text":"皮革靴","italic":false,"color":"white"}'}},{count:1,id:"leather_leggings",components:{custom_name:'{"text":"皮革裤","italic":false,"color":"white"}'}},{count:1,id:"leather_chestplate",components:{enchantments:{protection:1}}},{count:1,id:"leather_helmet",components:{enchantments:{protection:1}}}],ArmorDropChances:[0.02f,0.02f,0.02f,0.02f],attributes:[{id:"generic.max_health",base:6.5d},{id:"generic.attack_damage",base:2.0d}]}
 execute if score stageSeconds Azr_system matches 58 if score #rng2 Azr_system matches 1 if score playerCount Azr_system matches 1.. run summon zombie -79894 40 -115 {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_zombie_tier1",Health:6.5f,CustomName:'"僵尸"',CanPickUpLoot:0b,IsBaby:0b,ArmorItems:[{count:1,id:"leather_boots",components:{custom_name:'{"text":"皮革靴","italic":false,"color":"white"}'}},{count:1,id:"leather_leggings",components:{custom_name:'{"text":"皮革裤","italic":false,"color":"white"}'}},{count:1,id:"leather_chestplate",components:{enchantments:{protection:1}}},{count:1,id:"leather_helmet",components:{enchantments:{protection:1}}}],ArmorDropChances:[0.02f,0.02f,0.02f,0.02f],attributes:[{id:"generic.max_health",base:6.5d},{id:"generic.attack_damage",base:2.0d}]}
 execute if score stageSeconds Azr_system matches 60 if score #rng2 Azr_system matches 1 if score playerCount Azr_system matches 1.. run summon zombie -79894 40 -113 {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_zombie_tier1",Health:6.5f,CustomName:'"僵尸"',CanPickUpLoot:0b,IsBaby:0b,ArmorItems:[{count:1,id:"leather_boots",components:{custom_name:'{"text":"皮革靴","italic":false,"color":"white"}'}},{count:1,id:"leather_leggings",components:{custom_name:'{"text":"皮革裤","italic":false,"color":"white"}'}},{count:1,id:"leather_chestplate",components:{enchantments:{protection:1}}},{count:1,id:"leather_helmet",components:{enchantments:{protection:1}}}],ArmorDropChances:[0.02f,0.02f,0.02f,0.02f],attributes:[{id:"generic.max_health",base:6.5d},{id:"generic.attack_damage",base:2.0d}]}
