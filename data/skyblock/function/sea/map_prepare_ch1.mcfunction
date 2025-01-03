@@ -570,3 +570,6 @@ setblock 90113 89 82 air
 #多人限定
 setblock 90081 113 112 minecraft:waxed_copper_bulb[lit=false]
 setblock 90082 111 111 air
+setblock 90123 131 102 minecraft:redstone_lamp[lit=false]
+fill 90127 131 101 90127 129 102 waxed_oxidized_copper_grate
+
