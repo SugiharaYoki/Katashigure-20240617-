@@ -492,7 +492,7 @@ item replace block 90071 112 103 container.14 with apple 3
 setblock 90081 115 132 air
 setblock 90081 115 132 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 2, id:"minecraft:flint"}}
 setblock 90140 112 45 air
-setblock 90081 115 132 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 3, id:"minecraft:beef"}}
+setblock 90140 112 45 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 3, id:"minecraft:beef"}}
 
 setblock 90074 103 141 chest[facing=north]
 setblock 90072 104 137 chest[facing=west]
@@ -574,4 +574,6 @@ setblock 90081 113 112 minecraft:waxed_copper_bulb[lit=false]
 setblock 90082 111 111 air
 setblock 90123 131 102 minecraft:redstone_lamp[lit=false]
 fill 90127 131 101 90127 129 102 waxed_oxidized_copper_grate
+fill 90140 115 133 90139 112 133 minecraft:waxed_copper_grate
+
 
