@@ -575,5 +575,9 @@ setblock 90082 111 111 air
 setblock 90123 131 102 minecraft:redstone_lamp[lit=false]
 fill 90127 131 101 90127 129 102 waxed_oxidized_copper_grate
 fill 90140 115 133 90139 112 133 minecraft:waxed_copper_grate
+setblock 90142 108 132 minecraft:waxed_copper_bulb[lit=false]
+
+setblock 90136 100 136 air
+setblock 90136 100 136 lever[facing=east]
 
 

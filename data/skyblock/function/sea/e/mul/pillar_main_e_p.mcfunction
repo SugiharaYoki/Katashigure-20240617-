@@ -1,7 +1,19 @@
-execute if entity @a[tag=SEAPT,distance=0..6] if block 90081 113 112 minecraft:waxed_copper_bulb[lit=false] run setblock 90081 113 112 minecraft:waxed_copper_bulb[lit=true]
-execute unless entity @a[tag=SEAPT,distance=0..6] if block 90081 113 112 minecraft:waxed_copper_bulb[lit=true] run setblock 90081 113 112 minecraft:waxed_copper_bulb[lit=false]
 
 
-execute if block 90081 110 112 minecraft:acacia_pressure_plate[powered=true] positioned 90082 111 111 if block ~ ~ ~ air run function skyblock:sea/e/mul/the_path_from_ch1_to_ch2_p
+tellraw @a[tag=SEAPT] {"text": "通过数人的努力，未知的机关被触发了……", "color": "blue"}
+playsound block.note_block.harp block @a ~ ~ ~ 3 2
+
+fill 90140 112 133 90139 114 133 air destroy
+
+execute positioned 90139 109 136 run function skyblock:sea/m/drowned_maintenance
+execute positioned 90139 109 136 run function skyblock:sea/m/drowned_maintenance
+execute positioned 90139 109 136 run function skyblock:sea/m/drowned_maintenance
+execute positioned 90139 109 136 run function skyblock:sea/m/zombie_cook
+
+execute positioned 90144 114 136 run function skyblock:sea/m/skeleton_melee
+execute positioned 90144 114 136 run function skyblock:sea/m/skeleton_melee
+execute positioned 90144 114 136 run function skyblock:sea/m/skeleton_melee
 
 
+setblock 90136 99 138 air
+setblock 90136 99 138 decorated_pot{sherds:["friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd"],item:{count: 3, id:"minecraft:emerald_block"}}
