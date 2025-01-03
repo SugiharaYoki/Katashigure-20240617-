@@ -25,9 +25,9 @@ execute if block 90117 111 56 lever[powered=false] \
  if block 90117 110 54 lever[powered=true] unless block 90109 115 52 air \
 run function skyblock:sea/e/ch5/mem_2
 
-execute positioned 90110 88 58 if entity @a[tag=SEAPT,tag=!SEAPF,distance=0..6] run scoreboard players set SEA_ch5_event_EnteringPillar2 rng1 1
+execute if score SEA_ch5_event_EnteringPillar2 rng1 matches 0 positioned 90110 88 58 if entity @a[tag=SEAPT,tag=!SEAPF,distance=0..6] run scoreboard players set SEA_ch5_event_EnteringPillar2 rng1 1
 
-execute if score SEA_ch5_event_EnteringPillar2 rng1 matches 0 if score SEA_ch5_event_EnteringPillar2 rng1 matches 1..99 run scoreboard players add SEA_ch5_event_EnteringPillar2 rng1 1
+execute if score SEA_ch5_event_EnteringPillar2 rng1 matches 1..99 run scoreboard players add SEA_ch5_event_EnteringPillar2 rng1 1
 execute if score SEA_ch5_event_EnteringPillar2 rng1 matches 20..22 run playsound ambient.soul_sand_valley.mood ambient @a 90112 67 62 10 1.1
 
 execute if score SEA_ch5_event_EnteringPillar2 rng1 matches 55 run fill 90105 93 57 90105 94 57 minecraft:air
@@ -45,7 +45,7 @@ execute if score SEA_ch5_event_EnteringPillar2 rng1 matches 66 positioned 90137 
 
 
 
-execute if score SEA_ch5_event_EnteringPillar2 rng2 matches 0 positioned 90106 92 61 if entity @a[tag=SEAPT,tag=!SEAPF,distance=0..6] run scoreboard players set SEA_ch5_event_EnteringPillar2 rng2 1
+execute if score SEA_ch5_event_EnteringPillar2 rng2 matches 0 positioned 90111 114 41 if entity @a[tag=SEAPT,tag=!SEAPF,distance=0..6] run scoreboard players set SEA_ch5_event_EnteringPillar2 rng2 1
 execute if score SEA_ch5_event_EnteringPillar2 rng2 matches 1 run fill 90109 121 41 90110 121 42 anvil
 execute if score SEA_ch5_event_EnteringPillar2 rng2 matches 1..30 run scoreboard players add SEA_ch5_event_EnteringPillar2 rng2 1
 execute if score SEA_ch5_event_EnteringPillar2 rng2 matches 4..10 if block 90109 115 41 #anvil run fill 90109 114 41 90110 114 42 air destroy
