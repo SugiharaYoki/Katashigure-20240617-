@@ -38,6 +38,9 @@ execute if score SEAchg_spawn_timer_longbridge sea_4temp2 matches 1 positioned 9
 execute if score SEAchg_spawn_timer_longbridge sea_4temp2 matches 1 positioned 90139 133 266 run function skyblock:sea/m/skeleton_melee
 execute if score SEAchg_spawn_timer_longbridge sea_4temp2 matches 1 positioned 90139 133 266 run function skyblock:sea/m/nightblind
 execute if score SEAchg_spawn_timer_longbridge sea_4temp2 matches 1 positioned 90139 133 266 run function skyblock:sea/m/nightblind
+execute if score SEAchg_spawn_timer_longbridge sea_4temp2 matches 1 positioned 90140 129 276 run function skyblock:sea/m/skeleton
+execute if score SEAchg_spawn_timer_longbridge sea_4temp2 matches 1 positioned 90140 129 276 run function skyblock:sea/m/skeleton
+execute if score SEAchg_spawn_timer_longbridge sea_4temp2 matches 1 positioned 90140 129 276 run function skyblock:sea/m/silverfish
 
 execute store result score SEAchg_spawn_timer_longbridge rng1 run random value 1..50
 
