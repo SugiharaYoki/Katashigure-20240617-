@@ -1,0 +1,1 @@
+execute positioned 90081 110 112 if entity @a[tag=SEAPT,distance=0..12] if entity @n[tag=sc,scores={sea_player=3..}] run function skyblock:sea/e/mul/the_path_from_ch1_to_ch2

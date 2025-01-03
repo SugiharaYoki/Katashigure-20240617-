@@ -567,4 +567,6 @@ fill 90124 157 131 90132 150 125 minecraft:structure_void replace minecraft:mang
 setblock 90134 138 106 birch_button[facing=south]
 setblock 90113 89 82 air
 
-
+#多人限定
+setblock 90081 113 112 minecraft:waxed_copper_bulb[lit=false]
+setblock 90082 111 111 air
