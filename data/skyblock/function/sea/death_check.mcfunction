@@ -1,14 +1,14 @@
 execute if score @s sea_dead_check matches ..0 unless items entity @s container.* minecraft:nether_star run scoreboard players set @s sea_dead_check 1
 execute if score @s sea_dead_check matches ..0 if items entity @s container.* minecraft:nether_star run execute as @s at @s run tellraw @a[tag=SEAPT] [{"selector":"@s","color":"blue"},{"text":" 已使用命星复活！","color":"gold"}]
-#execute if score @s sea_dead_check matches ..0 if items entity @s container.* minecraft:nether_star run effect clear @s
+execute if score @s sea_dead_check matches ..0 if items entity @s container.* minecraft:nether_star run effect clear @s
 execute if score @s sea_dead_check matches ..0 if items entity @s container.* minecraft:nether_star at @s run particle totem_of_undying ~ ~1 ~ 0.4 0.8 0.4 0.7 100
 execute if score @s sea_dead_check matches ..0 if items entity @s container.* minecraft:nether_star at @s run particle minecraft:flash ~ ~1 ~ 0.4 0.7 0.4 0.3 2
 execute if score @s sea_dead_check matches ..0 if items entity @s container.* minecraft:nether_star run playsound item.totem.use master @a ~ ~ ~ 2
-execute if score @s sea_dead_check matches ..0 if items entity @s container.* minecraft:nether_star run effect give @s fire_resistance 40 0
+#execute if score @s sea_dead_check matches ..0 if items entity @s container.* minecraft:nether_star run effect give @s fire_resistance 40 0
 execute if score @s sea_dead_check matches ..0 if items entity @s container.* minecraft:nether_star run effect give @s regeneration 45 1
-execute if score @s sea_dead_check matches ..0 if items entity @s container.* minecraft:nether_star run effect give @s absorption 5 4
+#execute if score @s sea_dead_check matches ..0 if items entity @s container.* minecraft:nether_star run effect give @s absorption 5 4
 execute if score @s sea_dead_check matches ..0 if items entity @s container.* minecraft:nether_star run effect give @s resistance 10 4
-execute if score @s sea_dead_check matches ..0 if items entity @s container.* minecraft:nether_star run effect give @s blindness 1 0
+#execute if score @s sea_dead_check matches ..0 if items entity @s container.* minecraft:nether_star run effect give @s blindness 1 0
 execute if score @s sea_dead_check matches ..0 if items entity @s container.* minecraft:nether_star if entity @n[tag=SEAboss2] run tp @s @r[tag=SEAPT,distance=0.1..]
 #execute if score @s sea_dead_check matches ..0 if items entity @s container.* minecraft:nether_star if entity @s[scores={sea_oxygen=..-1}] run tp @s 90060 103 140
 execute if score @s sea_dead_check matches ..0 if items entity @s container.* minecraft:nether_star run clear @s nether_star 1
