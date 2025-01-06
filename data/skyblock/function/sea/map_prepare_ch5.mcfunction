@@ -147,3 +147,12 @@ item replace block 90141 84 49 container.15 with gunpowder 1
 
 setblock 90112 102 64 chest[facing=north]
 item replace block 90112 102 64 container.12 with coal 1
+setblock 90126 79 57 minecraft:furnace[facing=west]
+
+
+
+
+
+
+
+
