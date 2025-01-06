@@ -95,8 +95,8 @@ execute as @n[tag=sc,scores={sea_4temp2=98}] run playsound minecraft:item.goat_h
 execute as @n[tag=sc,scores={sea_4temp2=98}] run playsound minecraft:item.goat_horn.sound.6 master @a[tag=SEAPT] 90100 0 100 10000 0.87
 execute as @n[tag=sc,scores={sea_4temp2=98}] run playsound minecraft:item.goat_horn.sound.6 master @a[tag=SEAPT] 90100 0 100 10000 0.84
 
-execute if entity @n[tag=sc,scores={sea_4temp2=62..66}] run playsound ambient.cave ambient @a 90100 150 100 160 1.2
-execute if entity @n[tag=sc,scores={sea_4temp2=62..66}] run playsound ambient.cave ambient @a 90100 150 100 160 1.0
+execute if entity @n[tag=sc,scores={sea_4temp2=62}] run playsound ambient.cave ambient @a 90100 150 100 160 1.2
+execute if entity @n[tag=sc,scores={sea_4temp2=62}] run playsound ambient.cave ambient @a 90100 150 100 160 1.0
 
 execute as @n[tag=sc,scores={sea_4temp2=40}] run fill 90102 122 125 90102 122 126 air
 execute as @n[tag=sc,scores={sea_4temp2=47}] run fill 90102 123 125 90102 123 126 air
