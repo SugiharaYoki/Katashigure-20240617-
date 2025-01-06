@@ -12,7 +12,7 @@ execute as @e[tag=sea_mine,x=90000,y=100,z=100,distance=..3000] at @s run functi
 
 execute as @e[type=husk,x=90000,y=100,z=100,distance=..3000] at @s run function skyblock:sea/p/husk_new
 execute as @e[type=zombie,tag=SEAshadow,x=90000,y=100,z=100,distance=..3000] at @s run function skyblock:sea/p/shadow
-execute as @e[type=blaze,tag=SEAvisioner,x=90000,y=100,z=100,distance=..3000] at @s run function skyblock:sea/p/visioner
+function skyblock:sea/p/visioner
 
 execute store result score @e[type=endermite,x=90000,y=100,z=100,distance=..3000] rng1 run random value 1..9
 execute as @e[type=endermite,scores={rng1=1..5},x=90000,y=100,z=100,distance=..3000] at @s run playsound minecraft:entity.endermite.ambient hostile @s ~ ~ ~ 0.5 1.3
