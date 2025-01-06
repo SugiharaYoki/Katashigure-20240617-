@@ -240,6 +240,9 @@ item replace block 90141 84 49 container.13 with flow_banner_pattern[custom_data
 '{"text":"通讯平台西南支柱的笔记 - 琼斯","italic":true,"color":"dark_purple","italic":false}',\
 lore=['{"text":"那群暴民居然还在胡扯，事情根本就不是我们这群人做的。","color":"white","italic":false}','{"text":"圣水晶又不是我们的人挖出来的。","color":"white","italic":false}','{"text":"现在因为圣水晶吸引了那些细菌，他们自食其果，居然还妄图怪罪到我们头上来。","color":"white","italic":false}','{"text":"我们信仰的是圣水晶，与圣水晶背后的天使。","color":"white","italic":false}','{"text":"权之执理的神力可不包括操控能让人变成活尸的细菌。","color":"white","italic":false}']]
 
+item replace block 90112 102 64 container.14 with flow_banner_pattern[custom_data={sea_doc24:true},custom_name=\
+'{"text":"菲尔娜的随笔","italic":true,"color":"dark_purple","italic":false}',\
+lore=['{"text":"他们为了阻断其余人上去的路，居然将这里毁成这样。","color":"white","italic":false}','{"text":"麦迪逊叔叔跟我说他会想出办法，并且把答案放在我一定能看见的地方。","color":"white","italic":false}','{"text":"在那之前，我在意到的是停靠在主平台西南驳口的那艘船只。","color":"white","italic":false}','{"text":"是援军？还是不知情的误闯者？","color":"white","italic":false}','{"text":"我多希望这平台已经没有幸存者了，这样的话我就能炸毁这一整座……","color":"white","italic":false}']]
 
 execute as @e[type=interaction,x=90000,y=100,z=100,distance=..5000] at @s run function skyblock:sea/p/interaction
 

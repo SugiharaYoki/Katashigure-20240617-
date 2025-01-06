@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "菲尔娜的随笔",
+            "color": "light_purple",
+            "bold": false,
+            "italic": false
+        },
+        "description": {
+            "text": "他们为了阻断其余人上去的路，居然将这里毁成这样。\n麦迪逊叔叔跟我说他会想出办法，并且把答案放在我一定能看见的地方。\n在那之前，我在意到的是停靠在主平台西南驳口的那艘船只。\n是援军？还是不知情的误闯者？\n我多希望这平台已经没有幸存者了，这样的话我就能炸毁这一整座……",
+            "color": "white"
+        },
+        "icon": {
+            "id": "minecraft:map"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "sea": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:sea/doc/documentary5"
+}
