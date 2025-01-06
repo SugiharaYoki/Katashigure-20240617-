@@ -141,5 +141,7 @@ setblock 90117 79 56 minecraft:flower_pot
 fill 90101 73 64 90101 71 66 lever[facing=west]
 setblock 90101 72 65 air
 
-
+setblock 90111 71 73 chest[facing=north]
+item replace block 90141 84 49 container.11 with coal 1
+item replace block 90141 84 49 container.15 with gunpowder 1
 
