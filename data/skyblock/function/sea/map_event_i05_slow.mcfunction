@@ -27,12 +27,12 @@ run function skyblock:sea/e/ch5/mem_2
 
 #记忆密码3
 execute if block 90101 73 64 lever[powered=true] \
- if block 90101 72 65 lever[powered=false] \
- if block 90101 71 66 lever[powered=false] \
- if block 90101 73 64 lever[powered=true] \
- if block 90101 71 66 lever[powered=true] \
- if block 90101 73 64 lever[powered=false] \
- if block 90101 72 65 lever[powered=true] \
+ if block 90101 72 64 lever[powered=false] \
+ if block 90101 71 64 lever[powered=false] \
+ if block 90101 73 65 lever[powered=true] \
+ if block 90101 71 65 lever[powered=true] \
+ if block 90101 73 66 lever[powered=false] \
+ if block 90101 72 66 lever[powered=true] \
  if block 90101 71 66 lever[powered=true] positioned 90100 73 67 unless block ~ ~ ~ air \
 run function skyblock:sea/e/ch5/mem_3
 
