@@ -1,6 +1,6 @@
 #    function skyblock:protector/entity_count_start
 
-execute as @a[tag=SEAPT,x=90067,y=137,z=125,distance=0..4.3,tag=!e_i_30] at @s run title @s times 0s 2s 1s
+execute as @a[tag=SEAPT,x=90067,y=137,z=125,distance=0..4.3,tag=!e_i_30] at @s run title @s times 0s 2s 2s
 execute as @a[tag=SEAPT,x=90067,y=137,z=125,distance=0..4.3,tag=!e_i_30] at @s run title @s title {"text": "忒尔克西 · 主平台甲板","color": "white"}
 #execute as @a[tag=SEAPT,x=90067,y=137,z=125,distance=0..3.8,tag=!e_i_30] at @s run title @s subtitle {"text": "厄珀娅的悲歌 第叁章","color": "gray"}
 execute as @a[tag=SEAPT,x=90067,y=137,z=125,distance=0..4.3,tag=!e_i_30] at @s run playsound ambient.crimson_forest.loop master @s ~ ~ ~ 100 0.8
