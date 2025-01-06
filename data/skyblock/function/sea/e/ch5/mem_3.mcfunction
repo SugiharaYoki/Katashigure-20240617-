@@ -10,7 +10,7 @@ execute positioned 90112 71 72 run function skyblock:sea/m/silverfish
 
 
 
-fill 90100 73 67 90099 71 67 iron_bars
+fill 90100 73 67 90099 71 67 air destroy
 
 
 
