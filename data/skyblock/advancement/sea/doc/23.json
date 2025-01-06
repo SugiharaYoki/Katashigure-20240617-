@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "通讯平台西南支柱的笔记 - 琼斯",
+            "color": "light_purple",
+            "bold": false,
+            "italic": false
+        },
+        "description": {
+            "text": "那群暴民居然还在胡扯，事情根本就不是我们这群人做的。\n圣水晶又不是我们的人挖出来的。\n现在因为圣水晶吸引了那些细菌，他们自食其果，居然还妄图怪罪到我们头上来。\n我们信仰的是圣水晶，与圣水晶背后的天使。\n权之执理大人的神力可不包括操控能让人变成活尸的细菌。",
+            "color": "white"
+        },
+        "icon": {
+            "id": "minecraft:map"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "sea": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:sea/doc/documentary5"
+}
