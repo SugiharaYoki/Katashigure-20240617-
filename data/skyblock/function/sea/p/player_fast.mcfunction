@@ -62,7 +62,7 @@ scoreboard players reset @s[scores={sea_do_attack=1..}] sea_do_attack
 function skyblock:sea/experimental/backjump_loop
 
 effect give @s[tag=SEA_dying] regeneration 45 1
-effect give @s[tag=SEA_dying] resistance 5 4
+effect give @s[tag=SEA_dying] resistance 5 3
 tag @s remove SEA_dying
 execute as @s[scores={sea_dead=1..}] run function skyblock:sea/death_check
 
