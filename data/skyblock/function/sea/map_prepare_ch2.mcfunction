@@ -93,8 +93,8 @@ setblock 90118 130 130 lantern[hanging=true]
 setblock 90103 131 129 lantern[hanging=true]
 setblock 90123 129 132 air
 setblock 90111 129 130 air
-setblock 90110 131 126 lantern[hanging=true]
-setblock 90112 131 126 lantern[hanging=true]
+setblock 90109 133 125 lantern[hanging=true]
+setblock 90113 133 125 lantern[hanging=true]
 fill 90131 130 129 90131 128 129 minecraft:dark_prismarine
 setblock 90077 129 152 lever[facing=west]
 
