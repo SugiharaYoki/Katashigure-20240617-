@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "物资层排水通道的笔记 - 玛瑞莲",
+            "color": "light_purple",
+            "bold": false,
+            "italic": false
+        },
+        "description": {
+            "text": "这座钻井平台的内部结构被改变了。\n写下这段话的我可不是在开玩笑，自然更非故弄玄虚。\n听上去莫名其妙？我也是这么认为的，背后的原理完全不明。\n我知晓七位天使长之中存在着能够扭曲“道路”的存在。\n但若真的如此，这座忒尔克西就至少牵涉到了四位天使长。\n这意味着忒尔克西上的灾难非同小可。圣水晶背后到底藏着何等的秘密？",
+            "color": "white"
+        },
+        "icon": {
+            "id": "minecraft:map"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "sea": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:sea/doc/documentary5"
+}

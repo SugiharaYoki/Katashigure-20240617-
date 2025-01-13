@@ -535,7 +535,9 @@ setblock 90138 115 270 chest[facing=west]
 item replace block 90138 115 270 container.12 with dune_armor_trim_smithing_template 4
 item replace block 90138 115 270 container.14 with echo_shard 2
 
-
+#第二章入口跳跃模板隐藏房间的宝箱
+setblock 90072 128 99 chest[facing=east]
+item replace block 90072 128 99 container.14 with echo_shard 2
 
 #红色小蘑菇
 setblock 90074 104 135 air
