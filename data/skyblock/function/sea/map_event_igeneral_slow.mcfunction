@@ -262,8 +262,8 @@ execute if block 90136 123 126 lever[powered=false] if block 90136 123 124 lever
 
 execute if entity @a[tag=SEAPT,x=90131,y=122,z=136,distance=0..2.4,tag=!e_i_11] run function skyblock:sea/e/ev003
 
-
-
+#建材资源附属平台 标题
+execute positioned 90139.99 115.00 243.93 as @a[tag=SEAPT,distance=0..4,tag=!e_i_39] at @s run function skyblock:sea/e/chg/title_auxiliary
 
 execute as sea run scoreboard players set @s[scores={sea_4temp_environment=..0}] sea_4temp_environment 10
 execute as sea run scoreboard players set @s[scores={sea_4temp_environment=100..}] sea_4temp_environment 10
@@ -299,9 +299,7 @@ execute if block 90080 129 135 minecraft:waxed_oxidized_copper_bulb[lit=true] if
 
 
 
-execute if block 90088 128 114 air unless block 90088 129 115 air positioned 90088 128 117 run function skyblock:sea/m/silverfish_big
-execute if block 90088 128 114 air unless block 90088 129 115 air positioned 90088 128 117 run function skyblock:sea/m/silverfish_big
-execute if block 90088 128 114 air unless block 90088 129 115 air run fill 90088 129 115 90088 128 115 minecraft:air destroy
+execute if block 90088 128 114 air unless block 90088 129 115 air positioned 90088 128 117 run function skyblock:sea/e/chg/ch2_entrance_silverfish_path
 
 
 execute if entity @n[tag=sc,scores={sea_player=2..}] run function skyblock:sea/map_event_igeneral_multiplay
@@ -357,7 +355,7 @@ execute as @e[x=90184.0,dx=3.8,y=20.65,dy=0,z=96.50,dz=0] run damage @s 3 sting
 execute as @e[x=90184.0,dx=3.8,y=18.55,dy=0,z=92.50,dz=0] run damage @s 3 sting
 
 #水晶祀堂
-particle enchant 90093 131 102 3 3 3 0.01 20
+particle enchant 90093 131 102 3 2 3 0.01 20
 particle portal 90093 131 102 0.5 0.5 0.5 0.01 10
 
 #    function skyblock:protector/entity_count_end {function:"slyblock:sea/map_event_igeneral_slow"}
