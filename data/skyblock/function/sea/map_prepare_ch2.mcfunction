@@ -89,7 +89,7 @@ setblock 90124 132 129 minecraft:white_stained_glass
 setblock 90150 131 129 minecraft:redstone_lamp[lit=false]
 setblock 90123 131 123 minecraft:white_stained_glass
 setblock 90128 132 129 minecraft:white_stained_glass
-setblock 90118 130 130 lantern[hanging=true]
+setblock 90118 131 130 lantern[hanging=true]
 setblock 90103 131 129 lantern[hanging=true]
 setblock 90123 129 132 air
 setblock 90111 129 130 air
@@ -280,8 +280,8 @@ setblock 90148 130 132 air
 fill 90133 129 126 90133 128 126 minecraft:powder_snow
 setblock 90101 132 110 minecraft:white_stained_glass
 setblock 90106 132 110 minecraft:white_stained_glass
-setblock 90110 131 116 lantern[hanging=true]
-setblock 90112 131 116 lantern[hanging=true]
+setblock 90109 133 117 lantern[hanging=true]
+setblock 90113 133 117 lantern[hanging=true]
 fill 90104 130 103 90103 128 103 dark_prismarine
 
 

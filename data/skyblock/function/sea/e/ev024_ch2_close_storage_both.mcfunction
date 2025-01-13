@@ -1,8 +1,8 @@
 execute as @n[tag=sc,scores={sea_4temp2=841}] run summon minecraft:piglin 90111 128 115 {Rotation:[0f,0f],NoAI:1b,Tags:["SEAeventfirstpig"]}
-execute as @n[tag=sc,scores={sea_4temp2=841}] run setblock 90110 131 116 air
-execute as @n[tag=sc,scores={sea_4temp2=841}] run setblock 90112 131 116 air
-execute as @n[tag=sc,scores={sea_4temp2=842}] run setblock 90110 131 116 lantern[hanging=true]
-execute as @n[tag=sc,scores={sea_4temp2=842}] run setblock 90112 131 116 lantern[hanging=true]
+execute as @n[tag=sc,scores={sea_4temp2=841}] run setblock 90109 133 117 air
+execute as @n[tag=sc,scores={sea_4temp2=841}] run setblock 90113 133 117 air
+execute as @n[tag=sc,scores={sea_4temp2=842}] run setblock 90109 133 117 lantern[hanging=true]
+execute as @n[tag=sc,scores={sea_4temp2=842}] run setblock 90113 133 117 lantern[hanging=true]
 execute as @n[tag=sc,scores={sea_4temp2=842}] as @n[tag=SEAeventfirstpig] at @s run tp @s ~ -500 ~
 
 execute as @n[tag=sc,scores={sea_4temp2=810}] run scoreboard players set @a[tag=SEAPT,scores={sea_progress=..3}] sea_progress 4

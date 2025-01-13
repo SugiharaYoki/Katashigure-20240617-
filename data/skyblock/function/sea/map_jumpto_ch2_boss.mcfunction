@@ -67,7 +67,7 @@ setblock 90100 128 142 iron_door[facing=west,half=lower,open=true]
 setblock 90100 129 142 iron_door[facing=west,half=upper,open=true]
 fill 90130 129 144 90130 128 144 air
 
-setblock 90118 130 130 air
+setblock 90118 131 130 air
 setblock 90103 131 129 air
 setblock 90109 133 125 air
 setblock 90113 133 125 air
