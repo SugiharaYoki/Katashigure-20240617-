@@ -9,7 +9,7 @@ execute unless score sea_ch4_switch_waterstorage sea_4temp2 matches -999.. run s
 
 
 execute as @a[tag=SEAPT,x=90175,y=19,z=89,distance=0..4.8,tag=!e_i_33] at @s run title @s times 0s 2s 2s
-execute as @a[tag=SEAPT,x=90175,y=19,z=89,distance=0..4.8,tag=!e_i_33] at @s run title @s title {"text": "冷 凝 系 统","color": "dark_blue"}
+execute as @a[tag=SEAPT,x=90175,y=19,z=89,distance=0..4.8,tag=!e_i_33] at @s run title @s title {"text": "冷 凝 系 统","color": "blue","bold": true}
 #execute as @a[tag=SEAPT,x=90175,y=19,z=89,distance=0..4.8,tag=!e_i_33] at @s run title @s subtitle {"text": "厄珀娅的悲歌 第肆章","color": "gray"}
 execute as @a[tag=SEAPT,x=90175,y=19,z=89,distance=0..4.8,tag=!e_i_33] at @s run playsound ambient.underwater.loop master @s ~ ~ ~ 100 0.8
 execute as @a[tag=SEAPT,x=90175,y=19,z=89,distance=0..4.8,tag=!e_i_33] at @s run playsound ambient.underwater.loop master @s ~ ~ ~ 100 0.8
@@ -29,7 +29,7 @@ execute as @a[tag=SEAPT,x=90175,y=19,z=89,distance=0..4.8,tag=!e_i_33] at @s run
 execute as @a[tag=SEAPT,x=90175,y=19,z=89,distance=0..4.8,tag=!e_i_33] at @s run tag @s add e_i_33
 
 execute as @a[tag=SEAPT,x=90170,y=44,z=130,distance=0..3.2,tag=!e_i_35] at @s run title @s times 0s 2s 2s
-execute as @a[tag=SEAPT,x=90170,y=44,z=130,distance=0..3.2,tag=!e_i_35] at @s run title @s title {"text": "实 验 区","color": "dark_blue"}
+execute as @a[tag=SEAPT,x=90170,y=44,z=130,distance=0..3.2,tag=!e_i_35] at @s run title @s title {"text": "实 验 区","color": "blue","bold": true}
 execute as @a[tag=SEAPT,x=90170,y=44,z=130,distance=0..3.2,tag=!e_i_35] at @s run playsound ambient.warped_forest.loop master @s ~ ~ ~ 100 0.8
 execute as @a[tag=SEAPT,x=90170,y=44,z=130,distance=0..3.2,tag=!e_i_35] at @s run playsound ambient.warped_forest.loop master @s ~ ~ ~ 100 1.2
 execute as @a[tag=SEAPT,x=90170,y=44,z=130,distance=0..3.2,tag=!e_i_35] at @s run playsound garden2.chapter_title master @s ~ ~ ~ 100 1.0
