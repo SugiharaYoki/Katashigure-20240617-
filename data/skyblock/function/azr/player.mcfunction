@@ -5,8 +5,8 @@ clear @s quartz_bricks
 clear @s quartz_slab
 clear @s smooth_quartz
 clear @s birch_button
-clear @s iron_bars
 clear @s item_frame
+clear @s lever
 
 execute unless entity @s[x=-79931,y=100,z=0,distance=..10000] run tp @s @p[tag=azrPlayer,x=-79931,y=100,z=0,distance=..10000]
 
