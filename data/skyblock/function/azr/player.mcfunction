@@ -1,3 +1,7 @@
+clear @s quartz_pillar
+clear @s quartz_block
+clear @s quartz_stairs
+
 #游戏运行时
 execute as @s[scores={Azr_forceDeath=1..}] at @s run function skyblock:azr/end_game/player_dead
 execute as @s[scores={Azr_isDead=1..}] at @s run function skyblock:azr/end_game/player_dead
