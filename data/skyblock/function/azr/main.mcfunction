@@ -75,8 +75,8 @@ team join AzrPlayer @e[tag=AzrielFriendly]
 execute if score isStarted Azr_system matches 1 if score stage Azr_system matches 34..36 if score gametick Azr_system matches 5.. run function skyblock:azr/core
 execute if score isStarted Azr_system matches 1 if score gametick Azr_system matches 20.. run function skyblock:azr/core
 #使用了tickTimer的关卡在这里处理
-function skyblock:azr/effects/wish_fountain_1
-function skyblock:azr/effects/wish_fountain_2
+execute if entity @e[x=-79908,y=37.5,z=123,distance=0..1.48,type=item,nbt={Item:{id:"minecraft:emerald_block"}},limit=1] run function skyblock:azr/effects/wish_fountain_1
+execute if entity @e[x=-79917,y=39.5,z=-79,distance=0..1.48,type=item,nbt={Item:{id:"minecraft:emerald_block"}},limit=1] run function skyblock:azr/effects/wish_fountain_2
 #timerTimer读秒，要停下只需reset记分板
 execute if entity @a[tag=azrPlayer] if score gametick Azr_system matches -2147483648..2147483647 run scoreboard players add gametick Azr_system 1
 execute if score tickTimer Azr_system matches -2147483648..2147483647 run scoreboard players add tickTimer Azr_system 1
