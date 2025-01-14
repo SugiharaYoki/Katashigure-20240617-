@@ -1,8 +1,8 @@
 execute as @n[tag=sc,scores={sea_4temp2=841}] run summon minecraft:piglin 90111 128 115 {Rotation:[0f,0f],NoAI:1b,Tags:["SEAeventfirstpig"]}
-execute as @n[tag=sc,scores={sea_4temp2=841}] run setblock 90110 131 116 air
-execute as @n[tag=sc,scores={sea_4temp2=841}] run setblock 90112 131 116 air
-execute as @n[tag=sc,scores={sea_4temp2=842}] run setblock 90110 131 116 lantern[hanging=true]
-execute as @n[tag=sc,scores={sea_4temp2=842}] run setblock 90112 131 116 lantern[hanging=true]
+execute as @n[tag=sc,scores={sea_4temp2=841}] run setblock 90109 133 117 air
+execute as @n[tag=sc,scores={sea_4temp2=841}] run setblock 90113 133 117 air
+execute as @n[tag=sc,scores={sea_4temp2=842}] run setblock 90109 133 117 lantern[hanging=true]
+execute as @n[tag=sc,scores={sea_4temp2=842}] run setblock 90113 133 117 lantern[hanging=true]
 execute as @n[tag=sc,scores={sea_4temp2=842}] as @n[tag=SEAeventfirstpig] at @s run tp @s ~ -500 ~
 
 execute as @n[tag=sc,scores={sea_4temp2=810}] run scoreboard players set @a[tag=SEAPT,scores={sea_progress=..3}] sea_progress 4
@@ -25,10 +25,10 @@ execute as @n[tag=sc,scores={sea_4temp2=821}] run time set 14500t
 #execute as @n[tag=sc,scores={sea_4temp2=855}] if entity @a[scores={SEAPT_member=2}] if entity @a[scores={SEAPT_member=1}] run tellraw @a[tag=SEAPT] [{"selector":"@p[tag=SEAPT,scores={SEAPT_member=1}]","color":"white"},{"text":"：我去……你闭嘴吧。","color":"white"}]
 
 execute as @n[tag=sc,scores={sea_4temp2=819}] run fill 90132 131 106 90132 129 107 iron_block
-execute as @n[tag=sc,scores={sea_4temp2=861}] run setblock 90101 132 110 minecraft:tinted_glass
-execute as @n[tag=sc,scores={sea_4temp2=861}] run setblock 90106 132 110 minecraft:tinted_glass
-execute as @n[tag=sc,scores={sea_4temp2=861}] run playsound block.stone_button.click_off block @a 90101 132 110 2 1.4
-execute as @n[tag=sc,scores={sea_4temp2=861}] run playsound block.stone_button.click_off block @a 90106 132 110 2 1.4
+execute as @n[tag=sc,scores={sea_4temp2=861}] run setblock 90101 134 110 minecraft:tinted_glass
+execute as @n[tag=sc,scores={sea_4temp2=861}] run setblock 90106 134 110 minecraft:tinted_glass
+execute as @n[tag=sc,scores={sea_4temp2=861}] run playsound block.stone_button.click_off block @a 90101 134 110 2 1.4
+execute as @n[tag=sc,scores={sea_4temp2=861}] run playsound block.stone_button.click_off block @a 90106 134 110 2 1.4
 execute as @n[tag=sc,scores={sea_4temp2=861}] positioned 90105 128 107 run function skyblock:sea/m/pillager
 execute as @n[tag=sc,scores={sea_4temp2=861}] positioned 90105 128 107 run function skyblock:sea/m/pillager
 execute as @n[tag=sc,scores={sea_4temp2=861}] positioned 90105 128 107 if entity @n[tag=sc,scores={sea_player=3..}] run function skyblock:sea/m/zombie_cook

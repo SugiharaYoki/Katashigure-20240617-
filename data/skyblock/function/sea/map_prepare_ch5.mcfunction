@@ -82,6 +82,8 @@ execute positioned 90110 115 66 run function skyblock:sea/m/skeleton
 
 execute positioned 90151 91 60 run function skyblock:sea/m/zombie_cook
 
+
+
 setblock 90108 115 69 air
 setblock 90144 112 64 air
 setblock 90102 115 60 air
@@ -94,6 +96,8 @@ setblock 90110 89 45 air
 setblock 90110 89 45 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:gunpowder"}}
 setblock 90111 89 45 air
 setblock 90111 89 45 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 2, id:"minecraft:golden_carrot"}}
+setblock 90104 60 56 air
+setblock 90104 60 56 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:flint"}}
 
 #mem_1
 fill 90109 91 51 90109 89 48 lever[facing=east]
@@ -128,7 +132,22 @@ setblock 90141 84 49 chest[facing=south]
 item replace block 90141 84 49 container.12 with echo_shard 1
 item replace block 90141 84 49 container.14 with arrow 3
 
+setblock 90121 78 65 chest[facing=east]
+item replace block 90141 84 49 container.12 with arrow 3
+item replace block 90141 84 49 container.14 with gunpowder 1
 
+setblock 90117 79 56 minecraft:flower_pot
+
+fill 90101 73 64 90101 71 66 lever[facing=west]
+setblock 90101 72 65 air
+
+setblock 90111 71 73 chest[facing=north]
+item replace block 90141 84 49 container.11 with coal 1
+item replace block 90141 84 49 container.15 with gunpowder 1
+
+setblock 90112 102 64 chest[facing=north]
+item replace block 90112 102 64 container.12 with coal 1
+setblock 90126 79 57 minecraft:furnace[facing=west]
 
 
 

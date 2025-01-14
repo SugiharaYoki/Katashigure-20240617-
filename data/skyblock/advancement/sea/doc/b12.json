@@ -11,7 +11,7 @@
             "color": "white"
         },
         "icon": {
-            "id": "minecraft:map"
+            "id": "minecraft:flow_banner_pattern"
         },
         "frame": "task",
         "show_toast": false,

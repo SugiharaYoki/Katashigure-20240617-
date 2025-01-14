@@ -334,6 +334,8 @@ setblock 90075 110 115 decorated_pot{sherds:["friend_pottery_sherd","friend_pott
 setblock 90073 110 115 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 1, id:"minecraft:beef"}}
 setblock 90086 101 142 decorated_pot{sherds:["mourner_pottery_sherd","mourner_pottery_sherd","mourner_pottery_sherd","mourner_pottery_sherd"],item:{count: 1, id:"minecraft:echo_shard"}}
 setblock 90087 128 123 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:raw_iron"}}
+setblock 90137 129 273 air
+setblock 90137 129 273 decorated_pot{sherds:["mourner_pottery_sherd","mourner_pottery_sherd","mourner_pottery_sherd","mourner_pottery_sherd"],item:{count: 1, id:"minecraft:echo_shard"}}
 
 setblock 90075 103 141 minecraft:air
 
@@ -490,7 +492,7 @@ item replace block 90071 112 103 container.14 with apple 3
 setblock 90081 115 132 air
 setblock 90081 115 132 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 2, id:"minecraft:flint"}}
 setblock 90140 112 45 air
-setblock 90081 115 132 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 3, id:"minecraft:beef"}}
+setblock 90140 112 45 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 3, id:"minecraft:beef"}}
 
 setblock 90074 103 141 chest[facing=north]
 setblock 90072 104 137 chest[facing=west]
@@ -533,7 +535,9 @@ setblock 90138 115 270 chest[facing=west]
 item replace block 90138 115 270 container.12 with dune_armor_trim_smithing_template 4
 item replace block 90138 115 270 container.14 with echo_shard 2
 
-
+#第二章入口跳跃模板隐藏房间的宝箱
+setblock 90072 128 99 chest[facing=east]
+item replace block 90072 128 99 container.14 with echo_shard 2
 
 #红色小蘑菇
 setblock 90074 104 135 air
@@ -566,5 +570,16 @@ fill 90134 155 140 90134 155 141 minecraft:air
 fill 90124 157 131 90132 150 125 minecraft:structure_void replace minecraft:mangrove_roots
 setblock 90134 138 106 birch_button[facing=south]
 setblock 90113 89 82 air
+
+#多人限定
+setblock 90081 113 112 minecraft:waxed_copper_bulb[lit=false]
+setblock 90082 111 111 air
+setblock 90123 131 102 minecraft:redstone_lamp[lit=false]
+fill 90127 131 101 90127 129 102 waxed_oxidized_copper_grate
+fill 90140 115 133 90139 112 133 minecraft:waxed_copper_grate
+setblock 90142 108 132 minecraft:waxed_copper_bulb[lit=false]
+
+setblock 90136 100 136 air
+setblock 90136 100 136 lever[facing=east]
 
 

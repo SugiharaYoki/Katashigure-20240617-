@@ -196,6 +196,9 @@ lore=['{"text":"圣晶能够吸引的不止拥有自主思维的生物的意志�
 item replace block 90067 150 154 container.13 with flow_banner_pattern[custom_data={sea_doc15b:true},custom_name=\
 '{"text":"支架悬崖顶端的笔记 - 麦迪逊","italic":true,"color":"dark_purple","italic":false}',\
 lore=['{"text":"这些尸变体为何会成为行尸与骸骨两种主要形式？","color":"white","italic":false}','{"text":"经过我在暗处的观察，这似乎与受害者的死亡方式有关。","color":"white","italic":false}','{"text":"被细菌感染后，一旦受到致命伤便会加快尸变的速度。","color":"white","italic":false}','{"text":"彻底病发后，便会成为再生能力极强的尸变体。","color":"white","italic":false}','{"text":"在病情演变到无法控制前，身体机能就已经支撑不住，","color":"white","italic":false}','{"text":"从而导致宿主死亡的话，尸体便会高速腐烂。","color":"white","italic":false}','{"text":"在成为一具白骨后，它会加入行尸的行列，成为特殊的尸变体。","color":"white","italic":false}','{"text":"就算自杀，也无法从细菌的感染解脱啊……","color":"white","italic":false}']]
+item replace block 90072 128 99 container.12 with flow_banner_pattern[custom_data={sea_doc21b:true},custom_name=\
+'{"text":"物资层排水通道的笔记 - 玛瑞莲","italic":true,"color":"dark_purple","italic":false}',\
+lore=['{"text":"这座钻井平台的内部结构被改变了。","color":"white","italic":false}','{"text":"写下这段话的我可不是在开玩笑，自然更非故弄玄虚。","color":"white","italic":false}','{"text":"听上去莫名其妙？我也是这么认为的，背后的原理完全不明。","color":"white","italic":false}','{"text":"我知晓七位天使长之中存在着能够扭曲“道路”的存在。","color":"white","italic":false}','{"text":"但若真的如此，这座忒尔克西就至少牵涉到了四位天使长。","color":"white","italic":false}','{"text":"这意味着忒尔克西上的灾难非同小可。圣水晶背后到底藏着何等的秘密？","color":"white","italic":false}']]
 
 item replace block 90135 115 249 container.14 with flow_banner_pattern[custom_data={sea_doc19b:true},custom_name=\
 '{"text":"建材资源平台的笔记 - 史丹尼舵长","italic":true,"color":"dark_purple","italic":false}',\
@@ -236,8 +239,13 @@ item replace block 90107 156 135 container.13 with flow_banner_pattern[custom_da
 #红白蓝紫红紫蓝
 #1001110
 
+item replace block 90141 84 49 container.13 with flow_banner_pattern[custom_data={sea_doc23:true},custom_name=\
+'{"text":"通讯平台西南支柱的笔记 - 琼斯","italic":true,"color":"dark_purple","italic":false}',\
+lore=['{"text":"那群暴民居然还在胡扯，事情根本就不是我们这群人做的。","color":"white","italic":false}','{"text":"圣水晶又不是我们的人挖出来的。","color":"white","italic":false}','{"text":"现在因为圣水晶吸引了那些细菌，他们自食其果，居然还妄图怪罪到我们头上来。","color":"white","italic":false}','{"text":"我们信仰的是圣水晶，与圣水晶背后的天使。","color":"white","italic":false}','{"text":"权之执理的神力可不包括操控能让人变成活尸的细菌。","color":"white","italic":false}']]
 
-
+item replace block 90112 102 64 container.14 with flow_banner_pattern[custom_data={sea_doc24:true},custom_name=\
+'{"text":"菲尔娜的随笔","italic":true,"color":"dark_purple","italic":false}',\
+lore=['{"text":"他们为了阻断其余人上去的路，居然将这里毁成这样。","color":"white","italic":false}','{"text":"麦迪逊叔叔跟我说他会想出办法，并且把答案放在我一定能看见的地方。","color":"white","italic":false}','{"text":"在那之前，我在意到的是停靠在主平台西南驳口的那艘船只。","color":"white","italic":false}','{"text":"是援军？还是不知情的误闯者？","color":"white","italic":false}','{"text":"我多希望这平台已经没有幸存者了，这样的话我就能炸毁这一整座……","color":"white","italic":false}']]
 
 execute as @e[type=interaction,x=90000,y=100,z=100,distance=..5000] at @s run function skyblock:sea/p/interaction
 
@@ -257,8 +265,8 @@ execute if block 90136 123 126 lever[powered=false] if block 90136 123 124 lever
 
 execute if entity @a[tag=SEAPT,x=90131,y=122,z=136,distance=0..2.4,tag=!e_i_11] run function skyblock:sea/e/ev003
 
-
-
+#建材资源附属平台 标题
+execute positioned 90139.99 115.00 243.93 as @a[tag=SEAPT,distance=0..4,tag=!e_i_39] at @s run function skyblock:sea/e/chg/title_auxiliary
 
 execute as sea run scoreboard players set @s[scores={sea_4temp_environment=..0}] sea_4temp_environment 10
 execute as sea run scoreboard players set @s[scores={sea_4temp_environment=100..}] sea_4temp_environment 10
@@ -294,12 +302,10 @@ execute if block 90080 129 135 minecraft:waxed_oxidized_copper_bulb[lit=true] if
 
 
 
-execute if block 90088 128 114 air unless block 90088 129 115 air positioned 90088 128 117 run function skyblock:sea/m/silverfish_big
-execute if block 90088 128 114 air unless block 90088 129 115 air positioned 90088 128 117 run function skyblock:sea/m/silverfish_big
-execute if block 90088 128 114 air unless block 90088 129 115 air run fill 90088 129 115 90088 128 115 minecraft:air destroy
+execute if block 90088 128 114 air unless block 90088 129 115 air positioned 90088 128 117 run function skyblock:sea/e/chg/ch2_entrance_silverfish_path
 
 
-
+execute if entity @n[tag=sc,scores={sea_player=2..}] run function skyblock:sea/map_event_igeneral_multiplay
 
 
 execute positioned 90092 145 135 if block 90093 145 137 air if entity @a[tag=SEAPT,distance=..4.6] unless entity @n[tag=SEAchg_spawn_timer_medical1,distance=0..3] run summon marker ~ ~ ~ {Tags:["SEAchg_spawn_timer","SEAchg_spawn_timer_medical1"]}
@@ -352,7 +358,7 @@ execute as @e[x=90184.0,dx=3.8,y=20.65,dy=0,z=96.50,dz=0] run damage @s 3 sting
 execute as @e[x=90184.0,dx=3.8,y=18.55,dy=0,z=92.50,dz=0] run damage @s 3 sting
 
 #水晶祀堂
-particle enchant 90093 131 102 3 3 3 0.01 20
+particle enchant 90093 131 102 3 2 3 0.01 20
 particle portal 90093 131 102 0.5 0.5 0.5 0.01 10
 
 #    function skyblock:protector/entity_count_end {function:"slyblock:sea/map_event_igeneral_slow"}
