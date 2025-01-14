@@ -396,7 +396,7 @@ execute as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run function skyblo
 
     execute if score tickTimer Azr_system matches 6001 run stopsound @a[tag=azrPlayer]
     execute if score tickTimer Azr_system matches 6001 run bossbar remove azr:boss_hp_bar
-    execute if score tickTimer Azr_system matches 6080..6130 as @a[tag=azrPlayer] at @s unless block ~ ~-1 ~ air unless block ~ ~-1 ~ lava unless block ~ ~ ~ lava run spawnpoint @s ~ ~ ~
+    execute if score tickTimer Azr_system matches 6080..6130 run tag @a[tag=azrPlayer] add azrUpdateSpawnPoint
     #effect & sound
     execute if score tickTimer Azr_system matches 6001 run playsound minecraft:item.trident.thunder master @a[tag=azrPlayer] -79903 38.8 -14.0 10 0.8
     execute if score tickTimer Azr_system matches 6001 run particle minecraft:reverse_portal -79931 39 88 0 0 0 1.5 1800

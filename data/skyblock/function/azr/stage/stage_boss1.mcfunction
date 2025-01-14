@@ -254,7 +254,7 @@ execute as @e[tag=arroworb2,type=marker] at @s run function skyblock:azr/stage/b
     #finalize
     execute if score tickTimer Azr_system matches 3001 run stopsound @a[tag=azrPlayer]
     execute if score tickTimer Azr_system matches 3001 run bossbar remove azr:boss_hp_bar
-    execute if score tickTimer Azr_system matches 3001..3050 as @a[tag=azrPlayer] at @s unless block ~ ~-1 ~ air unless block ~ ~-1 ~ lava unless block ~ ~ ~ lava run spawnpoint @s ~ ~ ~
+    execute if score tickTimer Azr_system matches 3001..3050 run tag @a[tag=azrPlayer] add azrUpdateSpawnPoint
     #effect & sound
     execute if score tickTimer Azr_system matches 3001 run playsound minecraft:item.trident.thunder master @a[tag=azrPlayer] -79931 38.8 88 10 0.8
     execute if score tickTimer Azr_system matches 3001 run particle minecraft:reverse_portal -79931 39 88 0 0 0 1.5 1800
