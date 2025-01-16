@@ -149,7 +149,7 @@ setblock 90112 102 64 chest[facing=north]
 item replace block 90112 102 64 container.12 with coal 1
 setblock 90126 79 57 minecraft:furnace[facing=west]
 
-
+fill 90105 103 34 90106 101 34 minecraft:waxed_copper_grate
 
 
 

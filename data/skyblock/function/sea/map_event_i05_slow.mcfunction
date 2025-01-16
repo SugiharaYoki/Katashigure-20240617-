@@ -37,7 +37,7 @@ execute if block 90101 73 64 lever[powered=true] \
 run function skyblock:sea/e/ch5/mem_3
 
 
-
+execute if block 90105 102 33 bamboo_button[powered=true] run fill 90105 103 34 90106 101 34 air
 
 
 execute if score SEA_ch5_event_EnteringPillar2 rng1 matches 0 positioned 90110 88 58 if entity @a[tag=SEAPT,tag=!SEAPF,distance=0..6] run scoreboard players set SEA_ch5_event_EnteringPillar2 rng1 1
