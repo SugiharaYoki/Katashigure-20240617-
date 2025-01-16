@@ -154,7 +154,9 @@ fill 90105 103 34 90106 101 34 minecraft:waxed_copper_grate
 setblock 90116 114 56 air
 setblock 90116 114 56 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:gunpowder"}}
 setblock 90137 112 21 air
-setblock 90116 114 56 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 3, id:"minecraft:flint"}}
+setblock 90137 112 21 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 3, id:"minecraft:flint"}}
+setblock 90136 112 21 air
+setblock 90136 112 21 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 4, id:"minecraft:glow_berries"}}
 
 fill 90116 99 73 90116 101 73 ladder[facing=east]
 
