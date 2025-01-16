@@ -135,7 +135,7 @@ execute as @n[tag=sc,scores={sea_4temp2=335}] positioned 90120 123 123 if entity
 execute as @n[tag=sc,scores={sea_4temp2=305}] positioned 90120 123 123 if entity @n[tag=sc,scores={sea_player=2..}] if entity @a[scores={SEAPT_member=2}] run tellraw @a[distance=0..50] [{"selector":"@p[tag=SEAPT,scores={SEAPT_member=2}]","color":"white"},{"text":"：该表演临阵脱逃了。","color":"white"}]
 execute as @n[tag=sc,scores={sea_4temp2=335}] positioned 90120 123 123 if entity @n[tag=sc,scores={sea_player=2..}] if entity @a[scores={SEAPT_member=1}] run tellraw @a[distance=0..50] [{"selector":"@p[tag=SEAPT,scores={SEAPT_member=1}]","color":"white"},{"text":"：放屁，守住我后背，咱们多少也得把这些怪物给干掉。","color":"white"}]
 
-execute as @n[tag=sc,scores={sea_4temp2=272}] positioned 90120 123 123 as @a[distance=0..300] at @s run playsound garden2.bgm.006 music @s ~ ~ ~ 5 1.0
+execute as @n[tag=sc,scores={sea_4temp2=272}] positioned 90120 123 123 as @a[distance=0..300] at @s run playsound garden2.bgm.006 music @s ~ ~ ~ 1 1.0
 
 execute as @n[tag=sc,scores={sea_4temp2=254..1100}] run particle large_smoke 90120 123 115 0.2 0.5 0.2 0.01 3
 execute as @n[tag=sc,scores={sea_4temp2=344..1100}] run particle large_smoke 90125 123 115 0.2 0.5 0.2 0.01 3
@@ -228,7 +228,7 @@ execute as @n[tag=sc,scores={sea_4temp2=2006}] run setblock 90143 123 107 minecr
 execute as @n[tag=sc,scores={sea_4temp2=2007}] run setblock 90143 123 109 minecraft:waxed_copper_bulb[lit=true]
 execute as @n[tag=sc,scores={sea_4temp2=2010}] run setblock 90143 123 111 minecraft:waxed_copper_bulb[lit=true]
 execute as @n[tag=sc,scores={sea_4temp2=2015}] run setblock 90143 123 113 minecraft:waxed_copper_bulb[lit=true]
-execute as @n[tag=sc,scores={sea_4temp2=2015}] positioned 90120 123 123 as @a[distance=0..300] at @s run playsound garden2.bgm.006 music @s ~ ~ ~ 5 1.0
+execute as @n[tag=sc,scores={sea_4temp2=2015}] positioned 90120 123 123 as @a[distance=0..300] at @s run playsound garden2.bgm.006 music @s ~ ~ ~ 1 1.0
 execute as @n[tag=sc,scores={sea_4temp2=2001}] run playsound block.copper_bulb.turn_on ambient @a 90143 123 103 10 0.8
 execute as @n[tag=sc,scores={sea_4temp2=2004}] run playsound block.copper_bulb.turn_on ambient @a 90143 123 105 10 0.8
 execute as @n[tag=sc,scores={sea_4temp2=2006}] run playsound block.copper_bulb.turn_on ambient @a 90143 123 107 10 0.8
