@@ -544,6 +544,7 @@ setblock 90074 104 135 air
 
 #第五章通向主平台的通道
 fill 90114 92 96 90112 89 96 minecraft:iron_block
+fill 90116 99 73 90116 101 73 air
 
 #第五章地形变化撤销
 fill 90154 167 121 90132 149 101 minecraft:structure_void replace minecraft:mangrove_roots

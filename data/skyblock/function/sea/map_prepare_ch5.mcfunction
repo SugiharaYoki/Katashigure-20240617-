@@ -154,5 +154,5 @@ fill 90105 103 34 90106 101 34 minecraft:waxed_copper_grate
 setblock 90116 114 56 air
 setblock 90116 114 56 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:gunpowder"}}
 
-
+fill 90116 99 73 90116 101 73 ladder[facing=east]
 
