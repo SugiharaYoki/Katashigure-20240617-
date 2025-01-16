@@ -96,7 +96,7 @@ tellraw @s [{"text":" ","color":"light_purple"},\
 {"selector":"@n[tag=SEA_w_axe_displaymarker0b]","color":"dark_gray"},\
 {"selector":"@n[tag=SEA_w_axe_displaymarker13]","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 50113"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：1\n技能：蹲下时跳起可施展横扫攻击\n多次升级可略微增加攻击力与范围","color":"white"}}},\
 {"selector":"@n[tag=SEA_w_axe_displaymarkerE]","color":"dark_gray"},\
-{"selector":"@n[tag=SEA_w_axe_displaymarker14]","color":"dark_red","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 50114"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：1\n攻击力增加1.0","color":"white"}}},\
+{"selector":"@n[tag=SEA_w_axe_displaymarker14]","color":"dark_red","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 50114"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：2\n攻击力增加1.0","color":"white"}}},\
 {"selector":"@n[tag=SEA_w_axe_displaymarkerE]","color":"dark_gray"},\
 {"selector":"@n[tag=SEA_w_axe_displaymarkerE]","color":"dark_gray"}]
 
@@ -104,7 +104,7 @@ tellraw @s [{"text":" ","color":"light_purple"},\
 {"selector":"@n[tag=SEA_w_axe_displaymarker0b]","color":"dark_gray"},\
 {"selector":"@n[tag=SEA_w_axe_displaymarker15]","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 50115"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：1\n技能：蹲下时跳起可施展横扫攻击\n多次升级可略微增加攻击力与范围","color":"white"}}},\
 {"selector":"@n[tag=SEA_w_axe_displaymarkerE]","color":"dark_gray"},\
-{"selector":"@n[tag=SEA_w_axe_displaymarker16]","color":"yellow","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 50116"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：1\n击退距离略微增加","color":"white"}}},\
+{"selector":"@n[tag=SEA_w_axe_displaymarker16]","color":"yellow","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 50116"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：2\n击退距离略微增加","color":"white"}}},\
 {"selector":"@n[tag=SEA_w_axe_displaymarkerE]","color":"dark_gray"},\
 {"selector":"@n[tag=SEA_w_axe_displaymarkerE]","color":"dark_gray"}]
 
