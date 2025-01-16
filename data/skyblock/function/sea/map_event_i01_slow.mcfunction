@@ -396,8 +396,8 @@ execute as @n[tag=sc,scores={sea_4temp2=4001}] run bossbar set minecraft:9066601
 execute as @n[tag=sc,scores={sea_4temp2=4001}] if entity @n[tag=sc,scores={sea_player=3..}] run bossbar set minecraft:9066601 max 700
 execute as @n[tag=sc,scores={sea_4temp2=4000..5000}] store result bossbar minecraft:9066601 value run data get entity @e[tag=SEAboss1,limit=1] Health
 execute as @n[tag=sc,scores={sea_4temp2=4000..5000}] run scoreboard players add SEAmusic rng1 1
-execute if score SEAmusic rng1 matches 478 as @a[tag=SEAPT] at @s run playsound minecraft:app2.heracles music @s ~ ~ ~ 1000 1.0
-execute if score SEAmusic rng1 matches 478 as @r[tag=SEAPT] at @s as @a[tag=!SEAPT,gamemode=spectator,distance=0..200] run playsound minecraft:app2.heracles music @s ~ ~ ~ 1000 1.0
+execute if score SEAmusic rng1 matches 478 as @a[tag=SEAPT] at @s run playsound minecraft:app2.heracles music @s ~ ~ ~ 1 1.0
+execute if score SEAmusic rng1 matches 478 as @r[tag=SEAPT] at @s as @a[tag=!SEAPT,gamemode=spectator,distance=0..200] run playsound minecraft:app2.heracles music @s ~ ~ ~ 1 1.0
 execute if score SEAmusic rng1 matches 478.. run scoreboard players set SEAmusic rng1 0
 execute as @n[tag=sc,scores={sea_4temp2=4001}] run scoreboard players set @n[tag=sc] sea_4temp5 1
 execute as @n[tag=sc,scores={sea_4temp2=4001}] run particle minecraft:large_smoke 90074.45 123.00 122.35 1 1 1 0.1 200
@@ -410,7 +410,7 @@ execute as @n[tag=sc,scores={sea_4temp2=4001},tag=sea_ch1_speedrun_butif] as @n[
 execute as @n[tag=sc,scores={sea_4temp2=4001},tag=!sea_ch1_speedrun_butif] positioned 90074 122 122 run function skyblock:sea/m/boss1
 execute as @n[tag=sc,scores={sea_4temp2=4001},tag=!sea_ch1_speedrun_butif] run tp @n[tag=SEAboss1] 90074 122 120.9 facing 90074 122 119
 execute as @n[tag=sc,scores={sea_4temp2=4001}] as @a[tag=SEAPT] at @s run playsound minecraft:app2.heracles music @s ~ ~ ~ 1000 1.0
-execute as @n[tag=sc,scores={sea_4temp2=4001}] as @r[tag=SEAPT] at @s as @a[tag=!SEAPT,gamemode=spectator,distance=0..200] run playsound minecraft:app2.heracles music @s ~ ~ ~ 1000 1.0
+execute as @n[tag=sc,scores={sea_4temp2=4001}] as @r[tag=SEAPT] at @s as @a[tag=!SEAPT,gamemode=spectator,distance=0..200] run playsound minecraft:app2.heracles music @s ~ ~ ~ 1 1.0
 
 execute as @n[tag=sc,scores={sea_4temp2=4100..5000}] unless entity @n[tag=SEAboss1] run scoreboard players set @n[tag=sc] sea_4temp2 5001
 execute as @n[tag=sc,scores={sea_4temp2=5001}] run kill @e[tag=SEAboss1mob]

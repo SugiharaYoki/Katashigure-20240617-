@@ -19,8 +19,8 @@ execute if entity @n[tag=sc,scores={sea_4temp2=4900..5000}] if entity @s run sco
 
 execute if entity @n[tag=sc,scores={sea_4temp2=2201..2203}] run summon minecraft:lightning_bolt 90123.53 128.00 93.50
 execute if entity @n[tag=sc,scores={sea_4temp2=2202}] run fill 90123 130 94 90123 128 92 air destroy
-execute if entity @n[tag=sc,scores={sea_4temp2=2124}] as @a[tag=SEAPT] at @s run playsound minecraft:app2.manifoldhypothesis music @s ~ ~ ~ 1000 1.0
-execute if entity @n[tag=sc,scores={sea_4temp2=2124}] as @r[tag=SEAPT] at @s as @a[tag=!SEAPT,gamemode=spectator,distance=0..200] run playsound minecraft:app2.manifoldhypothesis music @s ~ ~ ~ 1000 1.0
+execute if entity @n[tag=sc,scores={sea_4temp2=2124}] as @a[tag=SEAPT] at @s run playsound minecraft:app2.manifoldhypothesis music @s ~ ~ ~ 1 1.0
+execute if entity @n[tag=sc,scores={sea_4temp2=2124}] as @r[tag=SEAPT] at @s as @a[tag=!SEAPT,gamemode=spectator,distance=0..200] run playsound minecraft:app2.manifoldhypothesis music @s ~ ~ ~ 1 1.0
 execute if entity @n[tag=sc,scores={sea_4temp2=2211}] as @s at @s positioned ~1 ~0 0.5 run function skyblock:sea/m/skeleton_melee
 execute if entity @n[tag=sc,scores={sea_4temp2=2211}] as @s at @s positioned ~1 ~0 ~-0.5 run function skyblock:sea/m/skeleton_melee
 execute if entity @n[tag=sc,scores={sea_4temp2=2213}] as @s at @s positioned ~1 ~0 0.5 run function skyblock:sea/m/skeleton_melee
@@ -54,8 +54,8 @@ execute if entity @n[tag=sc,scores={sea_4temp2=2113..3999}] as @s[scores={sea_bo
 execute if entity @n[tag=sc,scores={sea_4temp2=2113..3999}] as @s[scores={sea_boss1_hp=..35},tag=SEAboss2bow] at @s run tag @s remove SEAboss2bow
 
 execute if entity @n[tag=sc,scores={sea_4temp2=2124..}] if entity @n[tag=SEAboss2] run scoreboard players add SEAmusic rng1 1
-execute if score SEAmusic rng1 matches 596 as @a[tag=SEAPT] at @s as @a[tag=SEAPT] at @s run playsound minecraft:app2.manifoldhypothesis music @s ~ ~ ~ 1000 1.0
-execute if score SEAmusic rng1 matches 596 as @r[tag=SEAPT] at @s as @r[tag=SEAPT] at @s as @a[tag=!SEAPT,gamemode=spectator,distance=0..200] run playsound minecraft:app2.manifoldhypothesis music @s ~ ~ ~ 1000 1.0
+execute if score SEAmusic rng1 matches 596 as @a[tag=SEAPT] at @s as @a[tag=SEAPT] at @s run playsound minecraft:app2.manifoldhypothesis music @s ~ ~ ~ 1 1.0
+execute if score SEAmusic rng1 matches 596 as @r[tag=SEAPT] at @s as @r[tag=SEAPT] at @s as @a[tag=!SEAPT,gamemode=spectator,distance=0..200] run playsound minecraft:app2.manifoldhypothesis music @s ~ ~ ~ 1 1.0
 execute if score SEAmusic rng1 matches 596.. run scoreboard players set SEAmusic rng1 0
 
 bossbar add 9066601 "荣获深邃祝福的骸骨 - 迈克斯 · 德怀特"
