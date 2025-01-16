@@ -55,6 +55,8 @@ execute if score SEA_ch5_event_EnteringPillar2 rng2 matches 8 positioned 90110 1
 execute if score SEA_ch5_event_EnteringPillar2 rng2 matches 8 positioned 90109 110 33 run function skyblock:sea/m/skeleton
 execute if score SEA_ch5_event_EnteringPillar2 rng2 matches 8 positioned 90108 110 33 run function skyblock:sea/m/skeleton
 execute if score SEA_ch5_event_EnteringPillar2 rng2 matches 5 positioned 90106 115 30 run function skyblock:sea/m/visioner
+execute if score SEA_ch5_event_EnteringPillar2 rng2 matches 5 positioned 90105 101 20 run function skyblock:sea/m/husk
+execute if score SEA_ch5_event_EnteringPillar2 rng2 matches 5 positioned 90105 101 20 run function skyblock:sea/m/zombie_bomb
 
 
 execute positioned 90114 79 61 if entity @a[tag=SEAPT,tag=!SEAPF,distance=0..6] if block 90117 79 56 flower_pot positioned 90123 78 65 run function skyblock:sea/m/drowned_shield
