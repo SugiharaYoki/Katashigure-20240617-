@@ -156,3 +156,14 @@ setblock 90116 114 56 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery
 
 fill 90116 99 73 90116 101 73 ladder[facing=east]
 
+#巨型防水门
+fill 90119 97 25 90119 96 29 minecraft:iron_block
+
+
+
+
+
+
+
+
+
