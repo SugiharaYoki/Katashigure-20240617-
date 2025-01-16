@@ -92,7 +92,7 @@ execute at @n[tag=SEArivetteboss2] as @a[tag=SEAPT,distance=0..3.3,tag=!e_i_19,t
 execute at @n[tag=SEArivetteboss2] as @a[tag=SEAPT,distance=0..3.3,tag=!e_i_23] at @s run tag @s add e_i_23
 
 
-execute as @a[tag=SEAPT,x=90111,y=128,z=125,distance=0..2.3,tag=!e_i_15,tag=!SEAPF] run function skyblock:sea/e/ev024_ch2_welcome_to_the_floor
+execute as @a[tag=SEAPT,x=90111,y=128,z=125,distance=0..4.3,tag=!e_i_15,tag=!SEAPF] run function skyblock:sea/e/ev024_ch2_welcome_to_the_floor
 
 execute as @a[tag=SEAPT,x=90110,y=128,z=150,distance=0..1.3,tag=!e_i_16,tag=!SEAPF] at @s run function skyblock:sea/e/ev024_ch2_balcony_edge_a
 
