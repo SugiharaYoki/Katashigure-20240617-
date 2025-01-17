@@ -39,6 +39,16 @@ tag @s remove e_i_36
 tag @s remove e_i_37
 tag @s remove e_i_38
 tag @s remove e_i_39
+tag @s remove e_i_40
+tag @s remove e_i_41
+tag @s remove e_i_42
+tag @s remove e_i_43
+tag @s remove e_i_44
+tag @s remove e_i_45
+tag @s remove e_i_46
+tag @s remove e_i_47
+tag @s remove e_i_48
+tag @s remove e_i_49
 tag @s remove e_w_01
 tag @s remove e_w_02
 tag @s remove e_w_03
