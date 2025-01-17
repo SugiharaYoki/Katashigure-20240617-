@@ -247,6 +247,10 @@ item replace block 90112 102 64 container.14 with flow_banner_pattern[custom_dat
 '{"text":"菲尔娜的随笔","italic":true,"color":"dark_purple","italic":false}',\
 lore=['{"text":"他们为了阻断其余人上去的路，居然将这里毁成这样。","color":"white","italic":false}','{"text":"麦迪逊叔叔跟我说他会想出办法，并且把答案放在我一定能看见的地方。","color":"white","italic":false}','{"text":"在那之前，我在意到的是停靠在主平台西南驳口的那艘船只。","color":"white","italic":false}','{"text":"是援军？还是不知情的误闯者？","color":"white","italic":false}','{"text":"我多希望这平台已经没有幸存者了，这样的话我就能炸毁这一整座……","color":"white","italic":false}']]
 
+item replace block 90133 101 25 container.12 with flow_banner_pattern[custom_data={sea_doc25:true},custom_name=\
+'{"text":"通讯平台东北支柱的笔记 - 艾德雯娜","italic":true,"color":"dark_purple","italic":false}',\
+lore=['{"text":"尝试通过大升降梯前往工程区。","color":"white","italic":false}','{"text":"失败。","color":"white","italic":false}','{"text":"唯一的方法是通过通讯平台下方正中心的通道进去。","color":"white","italic":false}','{"text":"但必经之路上拦着一个很糟糕的东西。","color":"white","italic":false}','{"text":"通过急冻装置应该可以制造一条冰道，","color":"white","italic":false}','{"text":"但我对那巨大的怪物束手无策。","color":"white","italic":false}','{"text":"越涵、法莫洛斯，我不知道你们谁会读到这则告示。","color":"white","italic":false}','{"text":"那家伙有点像炽烈球体，但绝非同等危险度。","color":"white","italic":false}','{"text":"不要贸然进攻。","color":"white","italic":false}']]
+
 execute as @e[type=interaction,x=90000,y=100,z=100,distance=..5000] at @s run function skyblock:sea/p/interaction
 
 #particle minecraft:trial_spawner_detection_ominous 90117.90 127.00 137.01 2 0 2 0.0 30

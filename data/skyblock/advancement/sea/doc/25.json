@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "东北支柱的笔记 - 艾德雯娜",
+            "color": "light_purple",
+            "bold": false,
+            "italic": false
+        },
+        "description": {
+            "text": "尝试通过大升降梯前往工程区。\n失败。\n唯一的方法是通过通讯平台下方正中心的通道进去。\n但必经之路上拦着一个很糟糕的东西。\n通过急冻装置应该可以制造一条冰道，\n但我对那巨大的怪物束手无策。\n越涵、法莫洛斯，我不知道你们谁会读到这则告示。\n那家伙有点像炽烈球体，但绝非同等危险度。\n不要贸然进攻。",
+            "color": "white"
+        },
+        "icon": {
+            "id": "minecraft:flow_banner_pattern"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "sea": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:sea/doc/documentary5"
+}
