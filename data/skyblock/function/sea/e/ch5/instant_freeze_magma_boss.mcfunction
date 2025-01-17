@@ -9,8 +9,8 @@ execute if score sea_ch5_instant_freeze sea_4temp4 matches 20.. if score sea_ch5
 
 scoreboard players add sea_ch5_instant_freeze sea_4temp4 1
 
-execute as @n[tag=SEA_magmaboss] at @s if block ~ ~-1 ~ water run tp @s ~ ~3 ~
 execute as @n[tag=SEA_magmaboss] at @s if block ~ ~-1 ~ water run tp @s ^ ^ ^3
+execute as @n[tag=SEA_magmaboss] at @s if block ~ ~-1 ~ water run tp @s ~ ~3 ~
 
 execute as @n[tag=SEA_magmaboss] at @s as @e[type=arrow,distance=0..15] at @s run particle flame ~ ~ ~ 0 0 0 0.2 10
 execute as @n[tag=SEA_magmaboss] at @s as @e[type=arrow,distance=0..15] at @s run kill @s
