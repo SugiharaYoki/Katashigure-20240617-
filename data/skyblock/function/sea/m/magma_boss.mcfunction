@@ -1,0 +1,1 @@
+summon magma_cube ~ ~ ~ {CustomName:'[{"text":"炽烈恒星"}]',DeathLootTable:"skyblock:sea_bug1",Tags:["SEAmob","SEA_magmaboss"],attributes:[{id:"generic.attack_damage",base:2.5},{id:"generic.movement_speed",base:0.05},{id:"generic.max_health",base:200}],Health:200,PersistenceRequired:1b,Size:5}
