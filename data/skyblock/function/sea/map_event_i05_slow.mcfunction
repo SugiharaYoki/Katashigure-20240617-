@@ -53,7 +53,7 @@ run function skyblock:sea/e/ch5/mem_4
 #scoreboard players set sea_ch5_instant_freeze sea_4temp3 1
 #execute if score sea_ch5_instant_freeze sea_4temp3 matches 1.. run function skyblock:sea/e/ch5/mem_4
 
-execute as @a[tag=SEAPT,tag=!e_i_40] at @s run function skyblock:sea/e/ch5/instant_freeze_on_thin_ice
+execute as @a[tag=SEAPT,tag=!e_i_40] at @s if block ~ ~-0.5 ~ packed_ice run function skyblock:sea/e/ch5/instant_freeze_on_thin_ice
 execute if score sea_ch5_instant_freeze sea_4temp4 matches 1.. run function skyblock:sea/m/magma_boss
 
 execute if block 90105 102 33 bamboo_button[powered=true] run fill 90105 103 34 90106 101 34 air
