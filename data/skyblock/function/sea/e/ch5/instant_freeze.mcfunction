@@ -54,5 +54,8 @@ execute if score sea_ch5_instant_freeze sea_4temp2 matches 97 positioned 90124 1
 execute if score sea_ch5_instant_freeze sea_4temp2 matches 97 positioned 90124 100 27 run function skyblock:sea/m/drowned_hat
 
 
-
+execute if score sea_ch5_instant_freeze sea_4temp2 matches 11..20 positioned 90113 95 31 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
+execute if score sea_ch5_instant_freeze sea_4temp2 matches 11..20 positioned 90113 95 31 run particle sculk_soul ~ ~1 ~ 0.3 0.5 0.3 0.05 10
+execute if score sea_ch5_instant_freeze sea_4temp2 matches 21 positioned 90113 95 31 run function skyblock:sea/m/cave_spider
+execute if score sea_ch5_instant_freeze sea_4temp2 matches 21 positioned 90113 95 31 run function skyblock:sea/m/cave_spider
 
