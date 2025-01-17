@@ -27,6 +27,12 @@ execute if score sea_ch5_instant_freeze sea_4temp2 matches 108 positioned 90121 
 execute if score sea_ch5_instant_freeze sea_4temp2 matches 107 positioned 90122 98 46 run fill ~ ~ ~ ~4 ~ ~4 packed_ice replace water
 
 
+execute if score sea_ch5_instant_freeze sea_4temp2 matches 109 positioned 90120 98 40 run fill ~ ~ ~ ~4 ~ ~4 packed_ice replace water
+execute if score sea_ch5_instant_freeze sea_4temp2 matches 111 positioned 90119 98 42 run fill ~ ~ ~ ~4 ~ ~4 packed_ice replace water
+execute if score sea_ch5_instant_freeze sea_4temp2 matches 113 positioned 90117 98 43 run fill ~ ~ ~ ~4 ~ ~4 packed_ice replace water
+execute if score sea_ch5_instant_freeze sea_4temp2 matches 115 positioned 90115 98 41 run fill ~ ~ ~ ~4 ~ ~4 packed_ice replace water
+
+
 
 
 
