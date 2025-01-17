@@ -7,3 +7,6 @@ execute store result score sea_ch5_instant_freeze sea_4temp9 run random value 0.
 execute if score sea_ch5_instant_freeze sea_4temp4 matches 20.. if score sea_ch5_instant_freeze sea_4temp9 matches 1..2 as @n[tag=SEA_magmaboss] at @s if entity @a[tag=SEAPT,distance=0..8.5] run function skyblock:sea/m/magma
 execute if score sea_ch5_instant_freeze sea_4temp4 matches 20.. if score sea_ch5_instant_freeze sea_4temp9 matches 3 as @n[tag=SEA_magmaboss] at @s if entity @a[tag=SEAPT,distance=0..8.5] run function skyblock:sea/m/visioner
 
+scoreboard players add sea_ch5_instant_freeze sea_4temp4 1
+
+
