@@ -1,5 +1,5 @@
 
-fill 90108 81 26 90111 108 29 air
+fill 90108 77 26 90111 108 29 air
 fill 90108 106 26 90111 106 29 waxed_copper_block
 fill 90110 106 27 90109 106 28 waxed_copper_grate
 fill 90108 100 26 90111 100 29 waxed_copper_block
