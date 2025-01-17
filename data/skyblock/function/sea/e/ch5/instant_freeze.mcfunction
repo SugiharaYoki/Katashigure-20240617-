@@ -37,24 +37,24 @@ execute if score sea_ch5_instant_freeze sea_4temp2 matches 114 positioned 90120 
 execute if score sea_ch5_instant_freeze sea_4temp2 matches 112 positioned 90130 98 43 run fill ~ ~ ~ ~4 ~ ~4 packed_ice replace water
 
 
-execute if score sea_ch5_instant_freeze sea_4temp2 matches 42 positioned 90122 100 27 run setblock ~ ~ ~ air destroy
-execute if score sea_ch5_instant_freeze sea_4temp2 matches 42 positioned 90122 100 27 run function skyblock:sea/m/husk
-execute if score sea_ch5_instant_freeze sea_4temp2 matches 49 positioned 90128 100 27 run setblock ~ ~ ~ air destroy
-execute if score sea_ch5_instant_freeze sea_4temp2 matches 49 positioned 90128 100 27 run function skyblock:sea/m/skeleton_shield
-execute if score sea_ch5_instant_freeze sea_4temp2 matches 51 positioned 90126 100 27 run setblock ~ ~ ~ air destroy
-execute if score sea_ch5_instant_freeze sea_4temp2 matches 51 positioned 90126 100 27 run function skyblock:sea/m/skeleton_shield
-execute if score sea_ch5_instant_freeze sea_4temp2 matches 68 positioned 90130 100 27 run setblock ~ ~ ~ air destroy
-execute if score sea_ch5_instant_freeze sea_4temp2 matches 68 positioned 90130 100 27 run function skyblock:sea/m/drowned_trident
-execute if score sea_ch5_instant_freeze sea_4temp2 matches 72 positioned 90131 100 27 run setblock ~ ~ ~ air destroy
-execute if score sea_ch5_instant_freeze sea_4temp2 matches 72 positioned 90131 100 27 run function skyblock:sea/m/drowned_maintenance
-execute if score sea_ch5_instant_freeze sea_4temp2 matches 89 positioned 90123 100 27 run setblock ~ ~ ~ air destroy
-execute if score sea_ch5_instant_freeze sea_4temp2 matches 89 positioned 90123 100 27 run function skyblock:sea/m/drowned_maintenance
-execute if score sea_ch5_instant_freeze sea_4temp2 matches 93 positioned 90125 100 27 run setblock ~ ~ ~ air destroy
-execute if score sea_ch5_instant_freeze sea_4temp2 matches 93 positioned 90125 100 27 run function skyblock:sea/m/drowned_hat
-execute if score sea_ch5_instant_freeze sea_4temp2 matches 94 positioned 90127 100 27 run setblock ~ ~ ~ air destroy
-execute if score sea_ch5_instant_freeze sea_4temp2 matches 94 positioned 90127 100 27 run function skyblock:sea/m/husk
-execute if score sea_ch5_instant_freeze sea_4temp2 matches 97 positioned 90124 100 27 run setblock ~ ~ ~ air destroy
-execute if score sea_ch5_instant_freeze sea_4temp2 matches 97 positioned 90124 100 27 run function skyblock:sea/m/drowned_hat
+execute if score sea_ch5_instant_freeze sea_4temp2 matches 12 positioned 90122 100 27 run setblock ~ ~ ~ air destroy
+execute if score sea_ch5_instant_freeze sea_4temp2 matches 12 positioned 90122 100 27 run function skyblock:sea/m/husk
+execute if score sea_ch5_instant_freeze sea_4temp2 matches 19 positioned 90128 100 27 run setblock ~ ~ ~ air destroy
+execute if score sea_ch5_instant_freeze sea_4temp2 matches 19 positioned 90128 100 27 run function skyblock:sea/m/skeleton_shield
+execute if score sea_ch5_instant_freeze sea_4temp2 matches 21 positioned 90126 100 27 run setblock ~ ~ ~ air destroy
+execute if score sea_ch5_instant_freeze sea_4temp2 matches 21 positioned 90126 100 27 run function skyblock:sea/m/skeleton_shield
+execute if score sea_ch5_instant_freeze sea_4temp2 matches 58 positioned 90130 100 27 run setblock ~ ~ ~ air destroy
+execute if score sea_ch5_instant_freeze sea_4temp2 matches 58 positioned 90130 100 27 run function skyblock:sea/m/drowned_trident
+execute if score sea_ch5_instant_freeze sea_4temp2 matches 62 positioned 90131 100 27 run setblock ~ ~ ~ air destroy
+execute if score sea_ch5_instant_freeze sea_4temp2 matches 62 positioned 90131 100 27 run function skyblock:sea/m/drowned_maintenance
+execute if score sea_ch5_instant_freeze sea_4temp2 matches 99 positioned 90123 100 27 run setblock ~ ~ ~ air destroy
+execute if score sea_ch5_instant_freeze sea_4temp2 matches 99 positioned 90123 100 27 run function skyblock:sea/m/drowned_maintenance
+execute if score sea_ch5_instant_freeze sea_4temp2 matches 103 positioned 90125 100 27 run setblock ~ ~ ~ air destroy
+execute if score sea_ch5_instant_freeze sea_4temp2 matches 103 positioned 90125 100 27 run function skyblock:sea/m/drowned_hat
+execute if score sea_ch5_instant_freeze sea_4temp2 matches 104 positioned 90127 100 27 run setblock ~ ~ ~ air destroy
+execute if score sea_ch5_instant_freeze sea_4temp2 matches 104 positioned 90127 100 27 run function skyblock:sea/m/husk
+execute if score sea_ch5_instant_freeze sea_4temp2 matches 127 positioned 90124 100 27 run setblock ~ ~ ~ air destroy
+execute if score sea_ch5_instant_freeze sea_4temp2 matches 127 positioned 90124 100 27 run function skyblock:sea/m/drowned_hat
 
 
 execute if score sea_ch5_instant_freeze sea_4temp2 matches 11..20 positioned 90113 95 31 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
