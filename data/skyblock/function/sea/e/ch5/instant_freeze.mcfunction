@@ -15,4 +15,20 @@ execute if score sea_ch5_instant_freeze sea_4temp2 matches 91 run playsound mine
 execute if score sea_ch5_instant_freeze sea_4temp2 matches 91 run playsound minecraft:item.goat_horn.sound.6 master @a[tag=SEAPT] 90100 0 100 10000 0.87
 execute if score sea_ch5_instant_freeze sea_4temp2 matches 91 run playsound minecraft:item.goat_horn.sound.6 master @a[tag=SEAPT] 90100 0 100 10000 0.84
 
+execute if score sea_ch5_instant_freeze sea_4temp2 matches 101 positioned 90127 98 35 run fill ~ ~ ~ ~4 ~ ~4 packed_ice replace water
+execute if score sea_ch5_instant_freeze sea_4temp2 matches 103 positioned 90128 98 39 run fill ~ ~ ~ ~4 ~ ~4 packed_ice replace water
+execute if score sea_ch5_instant_freeze sea_4temp2 matches 105 positioned 90128 98 43 run fill ~ ~ ~ ~4 ~ ~4 packed_ice replace water
+execute if score sea_ch5_instant_freeze sea_4temp2 matches 107 positioned 90127 98 47 run fill ~ ~ ~ ~4 ~ ~4 packed_ice replace water
+execute if score sea_ch5_instant_freeze sea_4temp2 matches 109 positioned 90125 98 39 run fill ~ ~ ~ ~4 ~ ~4 packed_ice replace water
+execute if score sea_ch5_instant_freeze sea_4temp2 matches 102 positioned 90124 98 43 run fill ~ ~ ~ ~4 ~ ~4 packed_ice replace water
+execute if score sea_ch5_instant_freeze sea_4temp2 matches 104 positioned 90124 98 47 run fill ~ ~ ~ ~4 ~ ~4 packed_ice replace water
+execute if score sea_ch5_instant_freeze sea_4temp2 matches 106 positioned 90126 98 51 run fill ~ ~ ~ ~4 ~ ~4 packed_ice replace water
+execute if score sea_ch5_instant_freeze sea_4temp2 matches 108 positioned 90121 98 43 run fill ~ ~ ~ ~4 ~ ~4 packed_ice replace water
+execute if score sea_ch5_instant_freeze sea_4temp2 matches 107 positioned 90122 98 46 run fill ~ ~ ~ ~4 ~ ~4 packed_ice replace water
+
+
+
+
+
+
 
