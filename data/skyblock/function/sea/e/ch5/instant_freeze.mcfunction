@@ -34,6 +34,7 @@ execute if score sea_ch5_instant_freeze sea_4temp2 matches 112 positioned 90118 
 execute if score sea_ch5_instant_freeze sea_4temp2 matches 115 positioned 90115 98 41 run fill ~ ~ ~ ~4 ~ ~4 packed_ice replace water
 execute if score sea_ch5_instant_freeze sea_4temp2 matches 116 positioned 90113 98 42 run fill ~ ~ ~ ~4 ~ ~4 packed_ice replace water
 execute if score sea_ch5_instant_freeze sea_4temp2 matches 114 positioned 90120 98 49 run fill ~ ~ ~ ~4 ~ ~4 packed_ice replace water
+execute if score sea_ch5_instant_freeze sea_4temp2 matches 112 positioned 90130 98 43 run fill ~ ~ ~ ~4 ~ ~4 packed_ice replace water
 
 
 execute if score sea_ch5_instant_freeze sea_4temp2 matches 42 positioned 90122 100 27 run setblock ~ ~ ~ air destroy
