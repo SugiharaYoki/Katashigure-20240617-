@@ -5,22 +5,10 @@ fill 90108 100 26 90111 100 29 air destroy
 fill 90108 102 26 90111 102 29 air destroy
 fill 90108 106 26 90111 106 29 air destroy
 fill 90108 108 26 90111 108 29 air destroy
-setblock 90108 100 26 chain
-setblock 90111 100 26 chain
-setblock 90108 100 29 chain
-setblock 90111 100 29 chain
-setblock 90108 102 26 chain
-setblock 90111 102 26 chain
-setblock 90108 102 29 chain
-setblock 90111 102 29 chain
-setblock 90108 106 26 chain
-setblock 90111 106 26 chain
-setblock 90108 106 29 chain
-setblock 90111 106 29 chain
-setblock 90108 108 26 chain
-setblock 90111 108 26 chain
-setblock 90108 108 29 chain
-setblock 90111 108 29 chain
+fill 90111 90 26 90111 101 26 chain
+fill 90108 90 26 90111 101 26 chain
+fill 90111 90 26 90111 101 29 chain
+fill 90108 90 26 90111 101 29 chain
 
 playsound ambient.cave ambient @a 90109.93 102.00 27.98 2 1.2
 playsound ambient.cave ambient @a 90109.93 102.00 27.98 2 1.2
