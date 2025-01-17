@@ -62,3 +62,4 @@ execute if score sea_ch5_instant_freeze sea_4temp2 matches 11..20 positioned 901
 execute if score sea_ch5_instant_freeze sea_4temp2 matches 21 positioned 90113 95 31 run function skyblock:sea/m/cave_spider
 execute if score sea_ch5_instant_freeze sea_4temp2 matches 21 positioned 90113 95 31 run function skyblock:sea/m/cave_spider
 
+scoreboard players add sea_ch5_instant_freeze sea_4temp2 1

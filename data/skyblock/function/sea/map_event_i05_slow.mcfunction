@@ -83,7 +83,7 @@ execute if block 90111 90 32 bamboo_button[powered=true] unless block 90111 99 2
 execute if block 90112 102 32 bamboo_button[powered=true] if block 90111 99 29 air run function skyblock:sea/e/ch5/lifter_move_2
 execute if block 90112 103 32 bamboo_button[powered=true] unless block 90111 99 29 air run function skyblock:sea/e/ch5/lifter_move_3
 
-execute if block 90130 96 31 lever[powered=true] if block 90128 96 31 lever[powered=true] run scoreboard players add sea_ch5_instant_freeze sea_4temp2 1
+execute if score sea_ch5_instant_freeze sea_4temp2 matches 0 if block 90130 96 31 lever[powered=true] if block 90128 96 31 lever[powered=true] run scoreboard players set sea_ch5_instant_freeze sea_4temp2 1
 execute if score sea_ch5_instant_freeze sea_4temp2 matches 1..140 run function skyblock:sea/e/ch5/instant_freeze
 
 
