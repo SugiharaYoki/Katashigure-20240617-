@@ -157,3 +157,11 @@ execute positioned 90251 44 126 if entity @s[distance=0..5] run advancement gran
 execute positioned 90255 44 119 if entity @s[distance=0..5] run advancement grant @s only skyblock:sea/doc/w14
 execute positioned 90235 57 85 if entity @s[distance=0..5] run advancement grant @s only skyblock:sea/doc/w15
 
+execute if score @s sea_glowberries matches 1.. run effect clear @s poison
+execute if score @s sea_glowberries matches 1.. run effect clear @s slowness
+execute if score @s sea_glowberries matches 1.. run effect clear @s wither
+execute if score @s sea_glowberries matches 1.. run effect clear @s weakness
+execute if score @s sea_glowberries matches 1.. run effect give @s fire_resistance 5
+execute if score @s sea_glowberries matches 1.. run effect give @s night_vision 5
+execute if score @s sea_glowberries matches 1.. run scoreboard players set @s sea_glowberries 0
+

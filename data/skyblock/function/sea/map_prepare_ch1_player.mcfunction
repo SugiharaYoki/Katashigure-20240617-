@@ -138,6 +138,7 @@ advancement grant @s only skyblock:sea/doc/1
 scoreboard players add @s sea_count_played 1
 function skyblock:sea/map_prepare_ch1_player_macro_doc with storage sea:doc
 
+scoreboard players set @s sea_glowberries 0
 
 advancement grant @s[scores={sea_progress=1..}] only skyblock:sea/chapter1
 advancement grant @s[scores={sea_progress=1..}] only skyblock:sea/doc/documentary0
@@ -159,3 +160,7 @@ tag @s remove SEAPT_storymode
 tag @s[tag=e_w_ahl2_e] add SEA_w_armor_upg1
 tag @s[tag=e_w_ahl2_e] add SEA_w_armor_upg2
 function skyblock:sea/p/w/armor_effect
+
+
+
+
