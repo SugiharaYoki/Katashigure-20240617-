@@ -22,3 +22,4 @@ execute if score sea_ch5_instant_freeze sea_4temp4 matches 20 run setblock 90120
 execute if score sea_ch5_instant_freeze sea_4temp4 matches 20 run setblock 90120 113 39 minecraft:redstone_lamp[lit=true]
 execute if score sea_ch5_instant_freeze sea_4temp4 matches 20 run setblock 90129 113 48 minecraft:redstone_lamp[lit=true]
 execute if score sea_ch5_instant_freeze sea_4temp4 matches 20 run setblock 90129 113 39 minecraft:redstone_lamp[lit=true]
+execute if score sea_ch5_instant_freeze sea_4temp4 matches 20 run setblock 90124 104 45 lantern

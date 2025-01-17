@@ -199,7 +199,7 @@ setblock 90120 113 48 minecraft:redstone_lamp[lit=false]
 setblock 90120 113 39 minecraft:redstone_lamp[lit=false]
 setblock 90129 113 48 minecraft:redstone_lamp[lit=false]
 setblock 90129 113 39 minecraft:redstone_lamp[lit=false]
-
+setblock 90124 104 45 air
 
 
 
