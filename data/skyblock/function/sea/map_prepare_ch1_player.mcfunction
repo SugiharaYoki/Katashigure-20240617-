@@ -154,6 +154,7 @@ advancement grant @s[scores={sea_progress=10..}] only skyblock:sea/doc/documenta
 advancement grant @s[scores={sea_progress=12..}] only skyblock:sea/chapter5
 advancement grant @s[scores={sea_progress=12..}] only skyblock:sea/doc/documentary5
 
+tag @s remove SEAPT_storymode
 
 tag @s[tag=e_w_ahl2_e] add SEA_w_armor_upg1
 tag @s[tag=e_w_ahl2_e] add SEA_w_armor_upg2

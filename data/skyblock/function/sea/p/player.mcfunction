@@ -37,6 +37,12 @@ clear @s[gamemode=!creative] stone_bricks
 
 tag @s remove PVP_see
 
+
+effect give @s[tag=SEAPT_storymode] strength 30 1 true
+effect give @s[tag=SEAPT_storymode] resistance 30 1 true
+
+
+
 execute as @s[scores={sea_crafter=1}] at @s run function skyblock:sea/shop_reader
 execute as @s[scores={sea_crafter=10000..19999}] at @s if entity @n[tag=SEAcrafter,distance=0..5] run function skyblock:sea/shop_purchase
 execute as @s[scores={sea_crafter=30000..39999}] at @s if entity @n[tag=SEAcrafter,distance=0..5] run function skyblock:sea/shop_purchase
