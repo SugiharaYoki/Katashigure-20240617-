@@ -1,4 +1,4 @@
-playsound block.note_block.bell block @a ~ ~ ~ 5 0.8
+playsound block.note_block.bell block @a ~ ~ ~ 3 0.8
 
 fill 90119 96 25 90119 96 29 air
 fill 90119 97 25 90119 97 29 air
