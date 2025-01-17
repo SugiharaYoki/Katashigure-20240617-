@@ -194,7 +194,10 @@ fill 90132 100 27 90122 100 27 minecraft:waxed_copper_grate
 fill 90113 98 35 90110 95 35 lever[facing=north]
 fill 90112 97 35 90111 96 35 air
 
-
+setblock 90120 113 48 minecraft:redstone_lamp[lit=false]
+setblock 90120 113 39 minecraft:redstone_lamp[lit=false]
+setblock 90129 113 48 minecraft:redstone_lamp[lit=false]
+setblock 90129 113 39 minecraft:redstone_lamp[lit=false]
 
 
 
