@@ -14,3 +14,5 @@ execute as @n[tag=SEA_magmaboss] at @s if block ~ ~-1 ~ water run tp @s ^ ^ ^1
 
 execute as @n[tag=SEA_magmaboss] at @s as @e[type=arrow,distance=0..15] at @s run particle flame ~ ~ ~ 0 0 0 0.2 10
 execute as @n[tag=SEA_magmaboss] at @s as @e[type=arrow,distance=0..15] at @s run kill @s
+execute as @n[tag=SEA_magmaboss] at @s as @e[type=spectral_arrow,distance=0..15] at @s run particle flame ~ ~ ~ 0 0 0 0.2 10
+execute as @n[tag=SEA_magmaboss] at @s as @e[type=spectral_arrow,distance=0..15] at @s run kill @s
