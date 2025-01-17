@@ -200,6 +200,7 @@ execute as @n[tag=sc,scores={sea_4temp2=1140}] run fill 90129 122 119 90129 122 
 execute as @n[tag=sc,scores={sea_4temp2=1144}] run fill 90129 123 119 90129 123 120 air
 execute as @n[tag=sc,scores={sea_4temp2=1140}] run playsound minecraft:block.iron_door.open ambient @a 90129 125 120 4 0.3
 execute as @n[tag=sc,scores={sea_4temp2=1144}] run playsound minecraft:block.iron_door.open ambient @a 90129 125 120 4 0.3
+execute as @n[tag=sc,scores={sea_4temp2=1144}] run positioned 90074.0 129 109.0 run stopsound @a[distance=0..500] music
 
 execute as @n[tag=sc,scores={sea_4temp2=1144}] positioned 90133 122 114 run function skyblock:sea/m/pillager
 execute as @n[tag=sc,scores={sea_4temp2=1144}] positioned 90138 122 115 run function skyblock:sea/m/drowned_shield
@@ -387,6 +388,7 @@ execute if score sc sea_speedrun_ch1 matches 1921.. as @n[tag=sc,scores={sea_4te
 execute if score sc sea_speedrun_ch1 matches ..1920 as @n[tag=sc,scores={sea_4temp2=3001..3950}] if entity @a[tag=SEAPT,x=90085,y=122,z=104,distance=0..4,tag=!SEAPF] run scoreboard players set @n[tag=sc] sea_4temp2 6000
 execute as @n[tag=sc,scores={sea_4temp2=4000..5000}] run scoreboard players add @n[tag=sc] sea_4temp2 1
 execute as @n[tag=sc,scores={sea_4temp2=4800..4810}] run scoreboard players set @n[tag=sc] sea_4temp2 4800
+execute as @n[tag=sc,scores={sea_4temp2=4001}] positioned 90074.0 129 109.0 run stopsound @a[distance=0..500] music
 execute as @n[tag=sc,scores={sea_4temp2=4001}] run bossbar add 9066601 "圣献的医者 - 法莫洛斯 · 狄奥斐卢斯"
 execute as @n[tag=sc,scores={sea_4temp2=4001}] run bossbar set minecraft:9066601 color red
 execute as @n[tag=sc,scores={sea_4temp2=4001}] run bossbar set minecraft:9066601 name "圣献的医者 - 法莫洛斯 · 狄奥斐卢斯"
