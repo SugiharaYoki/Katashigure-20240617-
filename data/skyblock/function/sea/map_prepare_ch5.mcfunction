@@ -157,6 +157,9 @@ setblock 90137 112 21 air
 setblock 90137 112 21 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 3, id:"minecraft:flint"}}
 setblock 90136 112 21 air
 setblock 90136 112 21 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 4, id:"minecraft:glow_berries"}}
+setblock 90108 40 37 air
+setblock 90108 40 37 decorated_pot{sherds:["friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd"],item:{count: 3, id:"minecraft:emerald"}}
+
 
 fill 90116 99 73 90116 101 73 ladder[facing=east]
 
@@ -164,7 +167,12 @@ fill 90116 99 73 90116 101 73 ladder[facing=east]
 fill 90119 97 25 90119 96 29 minecraft:iron_block
 
 
-
+#第三支柱升降梯
+fill 90108 81 26 90111 101 29 air
+fill 90108 108 26 90111 108 29 waxed_copper_block
+fill 90110 108 27 90109 108 28 waxed_copper_grate
+fill 90108 102 26 90111 102 29 waxed_copper_block
+fill 90110 102 27 90109 102 28 waxed_copper_grate
 
 
 
