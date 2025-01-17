@@ -59,8 +59,9 @@ execute positioned 90114 79 61 if entity @a[tag=SEAPT,tag=!SEAPF,distance=0..6] 
 
 execute positioned 90110.03 109.00 28.05 as @a[tag=SEAPT,tag=!SEAPF,distance=0..6] at @s unless block ~ ~-0.1 ~ air unless block ~ ~-0.1 ~ chain if block 90111 108 28 waxed_copper_block run function skyblock:sea/e/ch5/lifter_move_1
 
+execute if block 90111 89 32 bamboo_button[powered=true] if block 90111 99 29 air run function skyblock:sea/e/ch5/lifter_move_2
 
-
+execute if block 90111 90 32 bamboo_button[powered=true] unless block 90111 99 29 air run function skyblock:sea/e/ch5/lifter_move_3
 
 
 
