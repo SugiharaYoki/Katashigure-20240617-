@@ -200,7 +200,7 @@ execute as @n[tag=sc,scores={sea_4temp2=1140}] run fill 90129 122 119 90129 122 
 execute as @n[tag=sc,scores={sea_4temp2=1144}] run fill 90129 123 119 90129 123 120 air
 execute as @n[tag=sc,scores={sea_4temp2=1140}] run playsound minecraft:block.iron_door.open ambient @a 90129 125 120 4 0.3
 execute as @n[tag=sc,scores={sea_4temp2=1144}] run playsound minecraft:block.iron_door.open ambient @a 90129 125 120 4 0.3
-execute as @n[tag=sc,scores={sea_4temp2=1144}] run positioned 90074.0 129 109.0 run stopsound @a[distance=0..500] music
+execute as @n[tag=sc,scores={sea_4temp2=1144}] positioned 90074.0 129 109.0 run stopsound @a[distance=0..500] music
 
 execute as @n[tag=sc,scores={sea_4temp2=1144}] positioned 90133 122 114 run function skyblock:sea/m/pillager
 execute as @n[tag=sc,scores={sea_4temp2=1144}] positioned 90138 122 115 run function skyblock:sea/m/drowned_shield
@@ -417,7 +417,7 @@ execute as @n[tag=sc,scores={sea_4temp2=4001}] as @r[tag=SEAPT] at @s as @a[tag=
 execute as @n[tag=sc,scores={sea_4temp2=4100..5000}] unless entity @n[tag=SEAboss1] run scoreboard players set @n[tag=sc] sea_4temp2 5001
 execute as @n[tag=sc,scores={sea_4temp2=5001}] run kill @e[tag=SEAboss1mob]
 execute as @n[tag=sc,scores={sea_4temp2=5001}] run bossbar remove 9066601
-execute as @n[tag=sc,scores={sea_4temp2=5001}] run stopsound @a[tag=SEAPT] music
+execute as @n[tag=sc,scores={sea_4temp2=5001}] positioned 90074.0 129 109.0 run stopsound @a[distance=0..500] music
 execute as @n[tag=sc,scores={sea_4temp2=5001}] as @a[tag=SEAPT] at @s run playsound item.trident.thunder ambient @s ~ ~ ~ 100 0.5
 execute as @n[tag=sc,scores={sea_4temp2=5003}] run give @a[tag=SEAPT] nether_star
 execute as @n[tag=sc,scores={sea_4temp2=5003}] as @a[tag=SEAPT] if score @s sea_speedrun_ch1 > sc sea_speedrun_ch1 run scoreboard players operation @s sea_speedrun_ch1 = sc sea_speedrun_ch1

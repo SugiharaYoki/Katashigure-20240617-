@@ -118,7 +118,7 @@ execute if entity @n[tag=SEAbossch3_light_keep] at @n[tag=SEAbossch3_core,tag=!S
 execute if entity @n[tag=SEAbossch3_light_keep] at @n[tag=SEAbossch3_core,tag=!SEAbossch3_core_lighted] as @a run bossbar remove 9066602
 execute if entity @n[tag=SEAbossch3_light_keep] at @n[tag=SEAbossch3_core,tag=!SEAbossch3_core_lighted] as @a run bossbar set 9066602 visible false
 execute if entity @n[tag=SEAbossch3_light_keep] at @n[tag=SEAbossch3_core,tag=!SEAbossch3_core_lighted] run bossbar set minecraft:9066602 players @s
-execute if entity @n[tag=SEAbossch3_light_keep] at @n[tag=SEAbossch3_core,tag=!SEAbossch3_core_lighted] run stopsound @a[tag=SEAPT] music
+execute if entity @n[tag=SEAbossch3_light_keep] at @n[tag=SEAbossch3_core,tag=!SEAbossch3_core_lighted] positioned 90074.0 129 109.0 run stopsound @a[distance=0..500] music
 execute if entity @n[tag=SEAbossch3_light_keep] at @n[tag=SEAbossch3_core,tag=!SEAbossch3_core_lighted] as @a[tag=SEAPT] if score @s sea_speedrun_ch3 > sc sea_speedrun_ch3 run scoreboard players operation @s sea_speedrun_ch3 = sc sea_speedrun_ch3
 
 execute if entity @n[tag=SEAbossch3_light_keep] as @n[tag=SEAbossch3_core,tag=!SEAbossch3_core_lighted] run tag @s add SEAbossch3_core_lighted
