@@ -46,7 +46,7 @@ execute if score SEA_ch5_event_EnteringPillar2 rng1 matches 1..99 run function s
 
 
 #第三支柱
-execute if score SEA_ch5_event_EnteringPillar2 rng2 matches 0 positioned 90110 114 41 if entity @a[tag=SEAPT,tag=!SEAPF,distance=0..6] run scoreboard players set SEA_ch5_event_EnteringPillar2 rng2 1
+execute if score SEA_ch5_event_EnteringPillar2 rng2 matches 0 positioned 90110 114 41 if entity @a[tag=SEAPT,tag=!SEAPF,distance=0..7] run scoreboard players set SEA_ch5_event_EnteringPillar2 rng2 1
 execute if score SEA_ch5_event_EnteringPillar2 rng2 matches 1..30 run function skyblock:sea/e/ch5/event_pillar_3
 
 
