@@ -16,3 +16,9 @@ execute as @n[tag=SEA_magmaboss] at @s as @e[type=arrow,distance=0..15] at @s ru
 execute as @n[tag=SEA_magmaboss] at @s as @e[type=arrow,distance=0..15] at @s run kill @s
 execute as @n[tag=SEA_magmaboss] at @s as @e[type=spectral_arrow,distance=0..15] at @s run particle flame ~ ~ ~ 0 0 0 0.2 10
 execute as @n[tag=SEA_magmaboss] at @s as @e[type=spectral_arrow,distance=0..15] at @s run kill @s
+
+
+execute if score sea_ch5_instant_freeze sea_4temp4 matches 20 run setblock 90120 113 48 minecraft:redstone_lamp[lit=true]
+execute if score sea_ch5_instant_freeze sea_4temp4 matches 20 run setblock 90120 113 39 minecraft:redstone_lamp[lit=true]
+execute if score sea_ch5_instant_freeze sea_4temp4 matches 20 run setblock 90129 113 48 minecraft:redstone_lamp[lit=true]
+execute if score sea_ch5_instant_freeze sea_4temp4 matches 20 run setblock 90129 113 39 minecraft:redstone_lamp[lit=true]
