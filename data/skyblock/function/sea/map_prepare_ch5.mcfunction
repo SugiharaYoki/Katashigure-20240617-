@@ -188,9 +188,11 @@ setblock 90128 96 31 air
 setblock 90128 96 31 lever[facing=north,face=floor]
 fill 90131 98 35 90127 98 51 water
 scoreboard players set sea_ch5_instant_freeze sea_4temp2 0
+scoreboard players set sea_ch5_instant_freeze sea_4temp3 0
 fill 90132 100 27 90122 100 27 minecraft:waxed_copper_grate
 
-
+fill 90113 98 35 90110 95 35 lever[facing=north]
+fill 90112 97 35 90111 96 35 lever[facing=north]
 
 
 

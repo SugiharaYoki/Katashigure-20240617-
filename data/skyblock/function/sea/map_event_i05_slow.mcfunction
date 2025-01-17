@@ -36,6 +36,23 @@ execute if block 90101 73 64 lever[powered=true] \
  if block 90101 71 66 lever[powered=true] positioned 90100 73 67 unless block ~ ~ ~ air \
 run function skyblock:sea/e/ch5/mem_3
 
+#记忆密码4
+execute if block 90110 95 35 lever[powered=false] \
+ if block 90111 95 35 lever[powered=true] \
+ if block 90112 95 35 lever[powered=false] \
+ if block 90113 95 35 lever[powered=false] \
+ if block 90110 96 35 lever[powered=false] \
+ if block 90113 96 35 lever[powered=true] \
+ if block 90110 97 35 lever[powered=true] \
+ if block 90113 97 35 lever[powered=false] \
+ if block 90110 98 35 lever[powered=false] \
+ if block 90111 98 35 lever[powered=true] \
+ if block 90112 98 35 lever[powered=true] \
+ if block 90113 98 35 lever[powered=false] positioned 90119 96 27 unless block ~ ~ ~ air \
+run scoreboard players set sea_ch5_instant_freeze sea_4temp3 1
+
+execute if score sea_ch5_instant_freeze sea_4temp3 matches 1.. run function skyblock:sea/e/ch5/mem_4
+
 
 execute if block 90105 102 33 bamboo_button[powered=true] run fill 90105 103 34 90106 101 34 air
 
