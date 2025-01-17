@@ -9,4 +9,5 @@ execute if score sea_ch5_instant_freeze sea_4temp4 matches 20.. if score sea_ch5
 
 scoreboard players add sea_ch5_instant_freeze sea_4temp4 1
 
+execute as @n[tag=SEA_magmaboss] at @s if block ~ ~-1 ~ water run tp @s ~ ~ 5 ~
 
