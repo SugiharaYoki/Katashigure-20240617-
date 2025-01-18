@@ -1,6 +1,6 @@
-execute if score @s sea_ripper matches ..0 run clear @s disc_fragment_5
+execute if score @s sea_ripper matches ..0 run clear @s disc_fragment_5 1
 #持续时长
-execute if score @s sea_ripper matches ..0 run scoreboard players set @s sea_ripper 80
+
 
 scoreboard players remove @s[scores={sea_ripper=1..}] sea_ripper 1
 

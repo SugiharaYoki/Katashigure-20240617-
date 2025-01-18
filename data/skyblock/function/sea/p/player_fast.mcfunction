@@ -38,7 +38,7 @@ execute as @s[tag=sea_exp_thunderblast] run function skyblock:sea/experimental/t
 
 execute if score @s SEA_if_spying matches 1.. run function skyblock:sea/p/spyglass_pointout
 
-
+execute if items entity @s[scores={sea_ripper=1..}] container.* minecraft:disc_fragment_5 anchored eyes run function skyblock:sea/p/ripper
 
 execute unless items entity @s weapon.mainhand shield as @s run scoreboard players set @s sea_shield_switch 20
 execute unless items entity @s weapon.mainhand shield as @s run scoreboard players set @s sea_shielding_2 0
