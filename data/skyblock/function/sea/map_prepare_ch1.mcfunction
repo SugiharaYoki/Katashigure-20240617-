@@ -54,6 +54,7 @@ scoreboard objectives add sea_shielding_3 dummy
 scoreboard objectives add sea_shield_switch dummy
 scoreboard objectives add sea_axeparry_jump minecraft.custom:jump
 scoreboard objectives add sea_glowberries minecraft.used:minecraft.glow_berries
+scoreboard objectives add sea_ripper dummy
 scoreboard objectives add SEA_story dummy
 scoreboard objectives add sea_oxygen dummy
 scoreboard objectives add sea_speedrun_ch1 dummy
