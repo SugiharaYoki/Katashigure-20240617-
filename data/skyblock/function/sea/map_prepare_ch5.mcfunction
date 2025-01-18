@@ -186,7 +186,7 @@ setblock 90130 96 31 air
 setblock 90130 96 31 lever[facing=north,face=floor]
 setblock 90128 96 31 air
 setblock 90128 96 31 lever[facing=north,face=floor]
-fill 90131 98 35 90127 98 51 water
+fill 90131 98 35 90107 98 71 water replace packed_ice
 scoreboard players set sea_ch5_instant_freeze sea_4temp2 0
 scoreboard players set sea_ch5_instant_freeze sea_4temp3 0
 scoreboard players set sea_ch5_instant_freeze sea_4temp4 0
