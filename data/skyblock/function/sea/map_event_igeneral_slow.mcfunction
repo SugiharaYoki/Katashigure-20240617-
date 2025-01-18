@@ -18,6 +18,8 @@ execute positioned 90137 129 137 if entity @a[tag=SEAPT,distance=0..20] run summ
 execute positioned 90137 138 126 if entity @a[tag=SEAPT,distance=0..20] run summon minecraft:glow_item_frame ~ ~ ~ {Tags:[iframe_sea,iframe_sea_flamethrower],Invisible:0b,Fixed:0b,Invulnerable:0b,Facing:4b,Item:{id:"minecraft:shears",components:{custom_name:'{"text":"喷火器","italic":false,"color":"red"}',custom_data:{sea_flamethrower:true},unbreakable:{}}}}
 execute positioned 90120 156 143 if entity @a[tag=SEAPT,distance=0..20] run summon minecraft:glow_item_frame ~ ~ ~ {Tags:[iframe_sea,iframe_sea_crossbow],Invisible:0b,Fixed:0b,Invulnerable:0b,Facing:5b,Item:{id:"minecraft:crossbow",components:{custom_name:'{"text":"工程弩","italic":false,"color":"red"}',custom_data:{sea_crossbow:true},unbreakable:{}}}}
 
+execute positioned 90071 129 113 if entity @a[tag=SEAPT,distance=0..20] run summon minecraft:glow_item_frame ~ ~ ~ {Tags:[iframe_sea,iframe_sea_ripper],Invisible:0b,Fixed:0b,Invulnerable:0b,Facing:4b,Item:{id:"minecraft:music_disc_5",components:{custom_name:'{"text":"磁锯发射器","italic":false,"color":"red"}',custom_data:{sea_flamethrower:true},unbreakable:{}}}}
+
 item replace block 90134 121 253 container.13 with bow[custom_name='{"text":"复合弓","italic":false,"color":"red"}',custom_data={sea_bow1:true},enchantments={punch:1,power:1},unbreakable={}]
 
 execute positioned 90075 129 120 if entity @a[tag=SEAPT,distance=0..20] run summon minecraft:glow_item_frame ~ ~ ~ {Tags:[iframe_sea,iframe_sea_spectral],Invisible:1b,Fixed:0b,Invulnerable:0b,Facing:1b,Item:{id:"minecraft:flow_armor_trim_smithing_template",components:{custom_name:'{"text":"光棱魔板","italic":true,"color":"light_purple","italic":false}',custom_data:{sea_t_spectral1:true}}}}
