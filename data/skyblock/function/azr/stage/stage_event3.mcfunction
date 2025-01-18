@@ -17,6 +17,7 @@ execute if score stage Azr_system matches 21 if entity @a[tag=azrPlayer,x=-79890
 execute if score stage Azr_system matches 21 if entity @a[tag=azrPlayer,x=-79890,y=38,z=17,distance=0..4] run scoreboard players set stage Azr_system 22
 execute if score stage Azr_system matches 22 unless entity @e[tag=AzrielMob] run fill -79893 41 5 -79893 38 3 air destroy
 execute if score stage Azr_system matches 22 unless entity @e[tag=AzrielMob] run bossbar remove azr:progress_bar_normal
+execute if score stage Azr_system matches 22 unless entity @e[tag=AzrielMob] run scoreboard players reset tickTimer Azr_system
 execute if score stage Azr_system matches 22 unless entity @e[tag=AzrielMob] run scoreboard players set stage Azr_system 23
 
 kill @e[type=item,nbt={Item:{id:"minecraft:quartz_block"}}]

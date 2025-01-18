@@ -5,6 +5,7 @@ execute if score stageSeconds Azr_system matches 3..5 as @a[tag=azrPlayer,x=-799
 execute if score stageSeconds Azr_system matches 3..5 if entity @a[tag=azrPlayer,x=-79931,y=38,z=62,distance=..4.5] run setblock -79946 39 50 air
 execute if score stageSeconds Azr_system matches 3..5 if entity @a[tag=azrPlayer,x=-79931,y=38,z=62,distance=..4.5] run scoreboard players set stageSeconds Azr_system 300
 execute if score stageSeconds Azr_system matches 300 run fill -79938 39 49 -79938 38 49 minecraft:purple_stained_glass
+execute if score stageSeconds Azr_system matches 300 run fill -79930 38 53 -79932 41 53 minecraft:barrier
 execute if score stageSeconds Azr_system matches 300 run fill -79930 42 54 -79932 42 54 anvil
 execute if score stageSeconds Azr_system matches 301 run fill -79930 42 54 -79932 42 54 anvil
 execute if score stageSeconds Azr_system matches 302 run fill -79930 42 54 -79932 42 54 anvil

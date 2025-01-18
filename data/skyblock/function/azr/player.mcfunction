@@ -8,6 +8,10 @@ clear @s birch_button
 clear @s item_frame
 clear @s lever
 
+#故事模式
+effect give @s[tag=AZR_storymode] resistance infinite 1
+effect give @s[tag=AZR_storymode] strength infinite 1
+
 execute unless entity @s[x=-79931,y=100,z=0,distance=..10000] run tp @s @p[tag=azrPlayer,x=-79931,y=100,z=0,distance=..10000]
 
 #游戏运行时

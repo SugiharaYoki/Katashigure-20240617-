@@ -103,6 +103,7 @@ fill -79950 38 58 -79951 39 58 quartz_block
 
 #even1
 fill -79930 42 54 -79932 38 54 air{name: "clear anvil barrier"}
+fill -79930 38 53 -79932 41 53 air{name: "clear anvil barrier"}
 
 #______________________________________________________________#
 

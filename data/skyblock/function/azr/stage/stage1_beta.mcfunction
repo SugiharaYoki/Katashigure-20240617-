@@ -46,6 +46,7 @@ execute if score stageSeconds Azr_system matches 31.. run tellraw @a[tag=azrPlay
 execute if score stageSeconds Azr_system matches 31.. run tellraw @a[tag=azrPlayer,tag=!hasLifeVitae] {"text":"成功通过了第1关的挑战！"}
 execute if score stageSeconds Azr_system matches 31.. run tellraw @a[tag=azrPlayer,tag=!hasLifeVitae] {"text":"在此之后还会有数不尽的敌人与关卡，请随时做好死亡的准备。"}
 execute if score stageSeconds Azr_system matches 31.. run tellraw @a[tag=azrPlayer,tag=!hasLifeVitae] {"text":"你已永久解锁「生命手册」。记得收集绿宝石与素材，使用手册换取必要的武器与道具。"}
+execute if score stageSeconds Azr_system matches 31.. run tellraw @a[tag=azrPlayer,tag=!hasLifeVitae] {"text":"打开背包用鼠标选定其以开启商店。"}
 execute if score stageSeconds Azr_system matches 31.. run tag @a[tag=azrPlayer,tag=!hasLifeVitae] add hasLifeVitae
 execute if score stageSeconds Azr_system matches 31.. run tellraw @a[tag=azrPlayer,tag=!hasLifeVitae] {"text":""}
 execute if score stageSeconds Azr_system matches 31.. run scoreboard players set stage Azr_system 3
