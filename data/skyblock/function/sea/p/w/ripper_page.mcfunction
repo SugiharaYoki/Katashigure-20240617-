@@ -92,7 +92,7 @@ tellraw @s [{"text":" ","color":"light_purple"},\
 tellraw @s [{"text":" ","color":"light_purple"},\
 {"selector":"@n[tag=SEA_w_ripper_displaymarker0b]","color":"dark_gray"},\
 {"selector":"@n[tag=SEA_w_ripper_displaymarkerE]","color":"dark_gray"},\
-{"selector":"@n[tag=SEA_w_ripper_displaymarker10]","color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 50605"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：2\n持续时间增加0.8秒","color":"white"}}},\
+{"selector":"@n[tag=SEA_w_ripper_displaymarker10]","color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 50610"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：2\n持续时间增加0.8秒","color":"white"}}},\
 {"selector":"@n[tag=SEA_w_ripper_displaymarkerE]","color":"dark_gray"},\
 {"selector":"@n[tag=SEA_w_ripper_displaymarkerE]","color":"dark_gray"}]
 
