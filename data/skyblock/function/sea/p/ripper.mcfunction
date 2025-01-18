@@ -1,4 +1,4 @@
-execute if score @s sea_ripper matches ..0 run clear @s disc_fragment_5 1
+
 #持续时长
 
 
