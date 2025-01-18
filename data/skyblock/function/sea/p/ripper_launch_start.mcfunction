@@ -10,3 +10,4 @@ tp @n[tag=SEAripper_launched] ^ ^ ^2.8 facing ^ ^ ^3.8
 playsound item.trident.riptide_1 block @a ~ ~ ~ 1 1.2
 playsound block.anvil.place block @a ~ ~ ~ 1 0.7
 
+scoreboard players set @s sea_ripper 0
