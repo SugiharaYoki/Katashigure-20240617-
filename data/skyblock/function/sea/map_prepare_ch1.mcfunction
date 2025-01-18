@@ -338,6 +338,8 @@ setblock 90086 101 142 decorated_pot{sherds:["mourner_pottery_sherd","mourner_po
 setblock 90087 128 123 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:raw_iron"}}
 setblock 90137 129 273 air
 setblock 90137 129 273 decorated_pot{sherds:["mourner_pottery_sherd","mourner_pottery_sherd","mourner_pottery_sherd","mourner_pottery_sherd"],item:{count: 1, id:"minecraft:echo_shard"}}
+setblock 90070 129 116 air
+setblock 90070 129 116 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 2, id:"minecraft:disc_fragment_5"}}
 
 setblock 90075 103 141 minecraft:air
 
