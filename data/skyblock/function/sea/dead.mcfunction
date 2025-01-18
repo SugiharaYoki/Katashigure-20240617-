@@ -256,18 +256,18 @@ execute if entity @s[advancements={skyblock:sea/doc/w14=true}] run function skyb
 execute if entity @s[advancements={skyblock:sea/doc/w15=true}] run function skyblock:sea/p/document_macro {doc:w15}
 
 
-function skyblock:sea/p/w/crowbar_effect_reset
-function skyblock:sea/p/w/axe_effect_reset
-function skyblock:sea/p/w/flamethrower_effect_reset
-function skyblock:sea/p/w/shield_effect_reset
-function skyblock:sea/p/w/armor_effect_reset
-function skyblock:sea/p/w/ripper_effect_reset
 function skyblock:sea/p/w/crowbar_effect_remove
 function skyblock:sea/p/w/axe_effect_remove
 function skyblock:sea/p/w/flamethrower_effect_remove
 function skyblock:sea/p/w/shield_effect_remove
 function skyblock:sea/p/w/armor_effect_remove
 function skyblock:sea/p/w/ripper_effect_remove
+function skyblock:sea/p/w/crowbar_effect_reset
+function skyblock:sea/p/w/axe_effect_reset
+function skyblock:sea/p/w/flamethrower_effect_reset
+function skyblock:sea/p/w/shield_effect_reset
+function skyblock:sea/p/w/armor_effect_reset
+function skyblock:sea/p/w/ripper_effect_reset
 
 attribute @s generic.jump_strength modifier remove sea:mob_debuff_visioned01
 
