@@ -487,9 +487,9 @@ execute if score @s sea_crafter matches 10071 as @s[scores={sea_i_flint=..1}] ru
 execute if score @s sea_crafter matches 10071 as @s[scores={sea_i_flint=2..},nbt=!{Inventory:[{id:"minecraft:music_disc_5"}]}] run tellraw @s {"text":"就算制作了轮锯片也使用不了。","color":"gray"}
 execute if score @s sea_crafter matches 10071 as @s[scores={sea_i_flint=2..},nbt={Inventory:[{id:"minecraft:music_disc_5"}]}] run tag @s add sea_purchase_pass
 execute if entity @s[tag=sea_purchase_pass] run playsound minecraft:ui.stonecutter.take_result neutral @s ~ ~ ~ 100 1.2
-execute if entity @s[tag=sea_purchase_pass] store result score @s rng1 run random value 1..5
-execute if entity @s[tag=sea_purchase_pass] run give @s disc_fragment_5 2
-execute if entity @s[tag=sea_purchase_pass,scores={rng1=5}] if block 90074 104 135 minecraft:potted_red_mushroom run give @s disc_fragment_5 1
+execute if entity @s[tag=sea_purchase_pass] store result score @s rng1 run random value 1..4
+execute if entity @s[tag=sea_purchase_pass] run give @s disc_fragment_5 3
+execute if entity @s[tag=sea_purchase_pass,scores={rng1=4}] if block 90074 104 135 minecraft:potted_red_mushroom run give @s disc_fragment_5 1
 execute if entity @s[tag=sea_purchase_pass] run clear @s flint 2
 tag @s remove sea_purchase_pass
 
