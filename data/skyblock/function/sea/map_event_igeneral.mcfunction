@@ -24,7 +24,7 @@ execute as @a[tag=SEAPT] at @s if items entity @s weapon.mainhand *[custom_data=
 #execute as @a[tag=SEAPT] at @s if items entity @s weapon.mainhand shears[custom_data={sea_pistol:true}] run function skyblock:sea/p/pistol
 
 execute as @a[tag=SEAPT] at @s run function skyblock:sea/p/player_fast
-
+execute as @e[type=marker,x=90000,y=0,z=0,distance=..3000,tag=SEAripper_launched] at @s run function skyblock:sea/p/ripper_launch
 
 execute as @e[type=marker,x=90000,y=0,z=0,distance=..3000,tag=SEAedwina_smoke] at @s run scoreboard players add @s rng1 1
 execute as @e[type=marker,x=90000,y=0,z=0,distance=..3000,tag=SEAedwina_smoke,scores={rng1=1}] at @s run playsound item.flintandsteel.use hostile @a ~ ~ ~ 1 0.8
