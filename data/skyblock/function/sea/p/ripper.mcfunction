@@ -14,6 +14,7 @@ execute if score @s sea_ripper matches 1.. positioned ^ ^ ^2.8 run playsound ent
 execute if score @s sea_ripper matches 1.. positioned ^ ^ ^2.8 unless block ~ ~ ~ air run playsound block.anvil.land block @a ~ ~ ~ 0.08 2
 execute if score @s sea_ripper matches 1.. positioned ^ ^ ^2.8 unless block ~ ~ ~ air run particle electric_spark ~ ~ ~ 0 0 0 0.2 1
 execute if score @s sea_ripper matches 1.. positioned ^ ^ ^2.8 unless block ~ ~ ~ air run particle small_flame ~ ~ ~ 0 0 0 0.2 2
+execute if score @s sea_ripper matches 1.. positioned ^ ^ ^2.8 unless block ~ ~ ~ air run scoreboard players remove @s sea_ripper 1
 
 execute if score @s sea_ripper matches 1.. positioned ^ ^-1.5 ^2.8 as @e[tag=SEAmob] at @s run damage @s 3 minecraft:cactus
 
