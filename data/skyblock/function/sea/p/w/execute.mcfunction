@@ -281,3 +281,4 @@ execute if entity @s[scores={sea_crafter=50101..50199}] run function skyblock:se
 execute if entity @s[scores={sea_crafter=50201..50299}] run function skyblock:sea/p/w/flamethrower_page
 execute if entity @s[scores={sea_crafter=50301..50399}] run function skyblock:sea/p/w/shield_page
 execute if entity @s[scores={sea_crafter=50501..50599}] run function skyblock:sea/p/w/armor_page
+execute if entity @s[scores={sea_crafter=50601..50699}] run function skyblock:sea/p/w/ripper_page
