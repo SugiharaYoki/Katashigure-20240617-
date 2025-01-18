@@ -4,12 +4,12 @@ execute if score @s sea_ripper matches ..0 run clear @s disc_fragment_5 1
 
 scoreboard players remove @s[scores={sea_ripper=1..}] sea_ripper 1
 
-execute if score @s sea_ripper matches 1.. positioned ^ ^ ^2.8 run particle block{block_state:{Name:smooth_stone}} ~ ~ ~ 0 0 0 0.3 5
-execute if score @s sea_ripper matches 1.. positioned ^ ^ ^2.8 run particle block{block_state:{Name:smooth_stone}} ~ ~ ~ 0 0 0 0.7 1
+execute if score @s sea_ripper matches 1.. positioned ^ ^ ^2.8 run particle block{block_state:{Name:smooth_stone}} ~ ~ ~ 0.2 0 0.2 0.3 8
+execute if score @s sea_ripper matches 1.. positioned ^ ^ ^2.8 run particle block{block_state:{Name:smooth_stone}} ~ ~ ~ 0.2 0 0.2 0.7 3
 
 execute if score @s sea_ripper matches 1.. positioned ^ ^ ^2.8 run playsound ui.stonecutter.take_result block @a ~ ~ ~ 0.98 1.7
 execute if score @s sea_ripper matches 1.. positioned ^ ^ ^2.8 run playsound block.chain.step block @a ~ ~ ~ 0.6 2
-execute if score @s sea_ripper matches 1.. positioned ^ ^ ^2.8 run playsound entity.minecart.inside block @a ~ ~ ~ 0.08 2
+#execute if score @s sea_ripper matches 1.. positioned ^ ^ ^2.8 run playsound entity.minecart.inside block @a ~ ~ ~ 0.08 2
 
 execute if score @s sea_ripper matches 1.. positioned ^ ^ ^2.8 unless block ~ ~ ~ air run playsound block.anvil.land block @a ~ ~ ~ 0.08 2
 execute if score @s sea_ripper matches 1.. positioned ^ ^ ^2.8 unless block ~ ~ ~ air run particle electric_spark ~ ~ ~ 0 0 0 0.2 1
