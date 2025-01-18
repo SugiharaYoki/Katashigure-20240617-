@@ -5,8 +5,10 @@ execute positioned ^ ^ ^0.2 positioned ~ ~1 ~ unless entity @n[type=interaction,
 
 
 
-execute as @n[type=interaction,tag=flamethrowerdetect] on attacker if entity @s[level=1..] anchored eyes run function skyblock:sea/p/flamethrower_detect
-execute as @n[type=interaction,tag=flamethrowerdetect] on target if entity @s[nbt={Inventory:[{id:"minecraft:firework_star"},{components:{"minecraft:custom_data":{sea_t_shotgun1:true}}}]}] anchored eyes run function skyblock:sea/p/flamethrower_shotgun
+execute as @n[type=interaction,tag=flamethrowerdetect] on attacker if items entity @s weapon.mainhand shears if entity @s[level=1..] anchored eyes run function skyblock:sea/p/flamethrower_detect
+execute as @n[type=interaction,tag=flamethrowerdetect] on target if items entity @s weapon.mainhand shears if items entity @s container.* minecraft:firework_star anchored eyes run function skyblock:sea/p/flamethrower_shotgun
+execute as @n[type=interaction,tag=flamethrowerdetect] on target if items entity @s weapon.mainhand music_disc_5 if items entity @s[scores={sea_ripper=..0}] container.* minecraft:disc_fragment_5 anchored eyes run clear @s disc_fragment_5 1
+execute as @n[type=interaction,tag=flamethrowerdetect] on target if items entity @s weapon.mainhand music_disc_5 if items entity @s[scores={sea_ripper=..0}] container.* minecraft:disc_fragment_5 anchored eyes run scoreboard players set @s sea_ripper 80
 execute as @n[type=interaction,tag=flamethrowerdetect] run data remove entity @s interaction
 execute as @n[type=interaction,tag=flamethrowerdetect] run data remove entity @s attack
 

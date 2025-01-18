@@ -80,6 +80,11 @@ execute if entity @s[tag=!e_w_04] if items entity @s container.* shears[custom_d
 execute if entity @s[tag=!e_w_04] if items entity @s container.* shears[custom_data={sea_flamethrower:true}] run tag @s add e_w_04_eternal
 execute if entity @s[tag=!e_w_04] if items entity @s container.* shears[custom_data={sea_flamethrower:true}] run tag @s add e_w_04
 execute if items entity @s container.* snout_armor_trim_smithing_template[custom_data={sea_t_shotgun1:true}] run tag @s add e_w_04b_eternal
+execute if entity @s[tag=!e_w_06] if items entity @s container.* music_disc_5[custom_data={sea_flamethrower:true}] run playsound minecraft:ui.toast.challenge_complete player @s ~ ~ ~ 1 1
+execute if entity @s[tag=!e_w_06] if items entity @s container.* music_disc_5[custom_data={sea_flamethrower:true}] run tellraw @s {"text": "获得新武器：磁锯发射装置","color": "dark_red"}
+execute if entity @s[tag=!e_w_06] if items entity @s container.* music_disc_5[custom_data={sea_flamethrower:true}] run tellraw @s {"text": "短程武器，右键后消耗1枚锯片，在身前牵引持续对怪物造成伤害的磁锯。","color": "white"}
+execute if entity @s[tag=!e_w_06] if items entity @s container.* music_disc_5[custom_data={sea_flamethrower:true}] run tellraw @s {"text": "虽然能够造成巨额伤害，但是蹭到硬物的话可能会加速磨损。","color": "white"}
+execute if entity @s[tag=!e_w_06] if items entity @s container.* music_disc_5[custom_data={sea_flamethrower:true}] run tag @s add e_w_06
 
 
 

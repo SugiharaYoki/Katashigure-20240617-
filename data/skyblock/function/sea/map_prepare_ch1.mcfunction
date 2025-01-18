@@ -54,6 +54,7 @@ scoreboard objectives add sea_shielding_3 dummy
 scoreboard objectives add sea_shield_switch dummy
 scoreboard objectives add sea_axeparry_jump minecraft.custom:jump
 scoreboard objectives add sea_glowberries minecraft.used:minecraft.glow_berries
+scoreboard objectives add sea_ripper dummy
 scoreboard objectives add SEA_story dummy
 scoreboard objectives add sea_oxygen dummy
 scoreboard objectives add sea_speedrun_ch1 dummy
@@ -337,6 +338,8 @@ setblock 90086 101 142 decorated_pot{sherds:["mourner_pottery_sherd","mourner_po
 setblock 90087 128 123 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:raw_iron"}}
 setblock 90137 129 273 air
 setblock 90137 129 273 decorated_pot{sherds:["mourner_pottery_sherd","mourner_pottery_sherd","mourner_pottery_sherd","mourner_pottery_sherd"],item:{count: 1, id:"minecraft:echo_shard"}}
+setblock 90070 129 116 air
+setblock 90070 129 116 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 3, id:"minecraft:disc_fragment_5"}}
 
 setblock 90075 103 141 minecraft:air
 

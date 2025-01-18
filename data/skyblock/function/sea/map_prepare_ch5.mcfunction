@@ -130,7 +130,7 @@ fill 90109 114 41 90110 114 42 waxed_copper_grate
 
 setblock 90141 84 49 chest[facing=south]
 item replace block 90141 84 49 container.12 with echo_shard 1
-item replace block 90141 84 49 container.14 with arrow 3
+item replace block 90141 84 49 container.14 with disc_fragment_5 2
 
 setblock 90121 78 65 chest[facing=east]
 item replace block 90141 84 49 container.12 with arrow 3

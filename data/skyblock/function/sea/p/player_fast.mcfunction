@@ -38,7 +38,7 @@ execute as @s[tag=sea_exp_thunderblast] run function skyblock:sea/experimental/t
 
 execute if score @s SEA_if_spying matches 1.. run function skyblock:sea/p/spyglass_pointout
 
-
+execute if items entity @s[scores={sea_ripper=1..}] container.* minecraft:disc_fragment_5 anchored eyes run function skyblock:sea/p/ripper
 
 execute unless items entity @s weapon.mainhand shield as @s run scoreboard players set @s sea_shield_switch 20
 execute unless items entity @s weapon.mainhand shield as @s run scoreboard players set @s sea_shielding_2 0
@@ -80,3 +80,6 @@ execute unless items entity @s[tag=SEA_w_04_effected] weapon.* shield run functi
 
 execute if items entity @s[tag=!SEA_w_05_effected] armor.chest leather_chestplate run function skyblock:sea/p/w/armor_effect
 execute unless items entity @s[tag=SEA_w_05_effected] armor.chest leather_chestplate run function skyblock:sea/p/w/armor_effect_remove
+
+execute if items entity @s[tag=!SEA_w_06_effected] weapon.mainhand music_disc_5 run function skyblock:sea/p/w/ripper_effect
+execute unless items entity @s[tag=SEA_w_06_effected] weapon.mainhand music_disc_5 run function skyblock:sea/p/w/ripper_effect_remove
