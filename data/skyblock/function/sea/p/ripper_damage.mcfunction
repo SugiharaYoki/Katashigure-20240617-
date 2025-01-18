@@ -10,8 +10,8 @@ execute if score @s sea_ripper matches 1.. positioned ^ ^ ^ unless block ~ ~ ~ a
 execute if score @s sea_ripper matches 1.. positioned ^ ^ ^ unless block ~ ~ ~ air unless block ~ ~ ~ water run particle electric_spark ~ ~ ~ 0.2 0.02 0.2 0.2 3
 execute if score @s sea_ripper matches 1.. positioned ^ ^ ^ unless block ~ ~ ~ air unless block ~ ~ ~ water run particle small_flame ~ ~ ~ 0.2 0.02 0.2 0.2 5
 execute if score @s sea_ripper matches 1.. positioned ^ ^ ^ unless block ~ ~ ~ air unless block ~ ~ ~ water run scoreboard players remove @s sea_ripper 1
-execute if score @s sea_ripper matches 1.. positioned ^ ^ ^ if block ~ ~ ~ water run playsound entity.generic.splash block @a ~ ~ ~ 0.9 2
-execute if score @s sea_ripper matches 1.. positioned ^ ^ ^ if block ~ ~ ~ water run particle falling_water ~ ~ ~ 0.3 0.04 0.3 0.2 3
+execute if score @s sea_ripper matches 1.. positioned ^ ^ ^ if block ~ ~ ~ water run playsound entity.generic.splash block @a ~ ~ ~ 0.5 2
+execute if score @s sea_ripper matches 1.. positioned ^ ^ ^ if block ~ ~ ~ water run particle splash ~ ~ ~ 0.4 0.06 0.4 0.2 15
 execute if score @s sea_ripper matches 1.. positioned ^ ^ ^ if block ~ ~ ~ decorated_pot run setblock ~ ~ ~ air destroy
 execute if score @s sea_ripper matches 1.. positioned ^ ^ ^ if block ~ ~ ~ basalt as @e[tag=SEAmagma1,type=marker,distance=..1.5] at @s run function skyblock:sea/p/magma
 
