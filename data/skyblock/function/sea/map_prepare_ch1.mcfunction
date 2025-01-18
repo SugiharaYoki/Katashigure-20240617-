@@ -53,6 +53,7 @@ scoreboard objectives add sea_shielding_2 minecraft.custom:minecraft.damage_resi
 scoreboard objectives add sea_shielding_3 dummy
 scoreboard objectives add sea_shield_switch dummy
 scoreboard objectives add sea_axeparry_jump minecraft.custom:jump
+scoreboard objectives add sea_glowberries minecraft.used:minecraft.glow_berries
 scoreboard objectives add SEA_story dummy
 scoreboard objectives add sea_oxygen dummy
 scoreboard objectives add sea_speedrun_ch1 dummy
@@ -544,6 +545,7 @@ setblock 90074 104 135 air
 
 #第五章通向主平台的通道
 fill 90114 92 96 90112 89 96 minecraft:iron_block
+fill 90116 99 73 90116 101 73 air
 
 #第五章地形变化撤销
 fill 90154 167 121 90132 149 101 minecraft:structure_void replace minecraft:mangrove_roots

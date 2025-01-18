@@ -12,7 +12,7 @@ execute if score @s sea_dead_check matches ..0 if items entity @s container.* mi
 execute if score @s sea_dead_check matches ..0 if items entity @s container.* minecraft:nether_star if entity @n[tag=SEAboss2] run tp @s @r[tag=SEAPT,distance=0.1..]
 #execute if score @s sea_dead_check matches ..0 if items entity @s container.* minecraft:nether_star if entity @s[scores={sea_oxygen=..-1}] run tp @s 90060 103 140
 execute if score @s sea_dead_check matches ..0 if items entity @s container.* minecraft:nether_star run tag @s add SEA_dying
-execute if score @s sea_dead_check matches ..0 if items entity @s container.* minecraft:nether_star run clear @s nether_star 1
+execute if score @s sea_dead_check matches ..0 if items entity @s container.* minecraft:nether_star run clear @s[tag=!SEAPT_storymode] nether_star 1
 execute if score @s sea_dead_check matches ..0 unless items entity @s container.* minecraft:nether_star run execute as @s at @s run tellraw @a[tag=SEAPT] [{"text":"警告！","color":"red"},{"selector":"@s","color":"blue"},{"text":"已经没有更多命星了！","color":"red"}]
 
 

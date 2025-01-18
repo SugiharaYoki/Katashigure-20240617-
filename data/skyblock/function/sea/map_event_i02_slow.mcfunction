@@ -92,7 +92,7 @@ execute at @n[tag=SEArivetteboss2] as @a[tag=SEAPT,distance=0..3.3,tag=!e_i_19,t
 execute at @n[tag=SEArivetteboss2] as @a[tag=SEAPT,distance=0..3.3,tag=!e_i_23] at @s run tag @s add e_i_23
 
 
-execute as @a[tag=SEAPT,x=90111,y=128,z=125,distance=0..2.3,tag=!e_i_15,tag=!SEAPF] run function skyblock:sea/e/ev024_ch2_welcome_to_the_floor
+execute as @a[tag=SEAPT,x=90111,y=128,z=125,distance=0..4.3,tag=!e_i_15,tag=!SEAPF] run function skyblock:sea/e/ev024_ch2_welcome_to_the_floor
 
 execute as @a[tag=SEAPT,x=90110,y=128,z=150,distance=0..1.3,tag=!e_i_16,tag=!SEAPF] at @s run function skyblock:sea/e/ev024_ch2_balcony_edge_a
 
@@ -267,7 +267,7 @@ execute as @n[tag=sc,scores={sea_4temp2=5001..5005}] as @a run bossbar remove 90
 execute as @n[tag=sc,scores={sea_4temp2=5001..5005}] as @a run bossbar set 9066601 visible false
 execute as @n[tag=sc,scores={sea_4temp2=5001..5005}] run bossbar set minecraft:9066601 players @s
 execute as @n[tag=sc,scores={sea_4temp2=5001}] as @a[tag=SEAPT] if score @s sea_speedrun_ch2 > sc sea_speedrun_ch2 run scoreboard players operation @s sea_speedrun_ch2 = sc sea_speedrun_ch2
-execute as @n[tag=sc,scores={sea_4temp2=5001}] run stopsound @a[tag=SEAPT] music
+execute as @n[tag=sc,scores={sea_4temp2=5001}] positioned 90074.0 129 109.0 run stopsound @a[distance=0..500] music
 execute as @n[tag=sc,scores={sea_4temp2=5001}] as @a[tag=SEAPT] at @s run playsound item.trident.thunder ambient @s ~ ~ ~ 100 0.5
 execute as @n[tag=sc,scores={sea_4temp2=5002}] run give @a[tag=SEAPT] nether_star
 execute as @n[tag=sc,scores={sea_4temp2=5002}] run scoreboard players set @a[tag=SEAPT,scores={sea_progress=..5}] sea_progress 6

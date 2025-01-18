@@ -1,4 +1,11 @@
-    function skyblock:protector/entity_count_start
+function skyblock:protector/entity_count_start
+
+scoreboard players set sea_ch2_dwight_conversation rng1 0
+scoreboard players set sea_ch2_dwight_conversation rng2 0
+scoreboard players set sea_ch2_dwight_conversation rng3 0
+scoreboard players set sea_ch2_dwight_conversation rng4 0
+scoreboard players set sea_ch2_dwight_conversation rng5 0
+scoreboard players set sea_ch2_dwight_conversation rng6 0
 
 setblock 90062 103 135 minecraft:grindstone[facing=west,face=floor]
 

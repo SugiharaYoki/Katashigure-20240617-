@@ -39,8 +39,8 @@ execute as @n[tag=SEAboss4,nbt={OnGround:1b},tag=!SEAboss4_attack_dashheavy,tag=
 execute store result score @n[tag=SEAboss4] rng6 run random value 1..60
 
 execute unless entity @n[tag=SEAboss4_end] run scoreboard players add SEAmusic rng1 1
-execute if score SEAmusic rng1 matches 3500 as @a[tag=SEAPT] at @s as @a[tag=SEAPT] at @s run playsound minecraft:app2.astrum music @s ~ ~ ~ 10 1
-execute if score SEAmusic rng1 matches 3500 as @r[tag=SEAPT] at @s positioned 90185 56 61 as @a[gamemode=spectator,distance=0..250] run playsound minecraft:app2.astrum music @s ~ ~ ~ 10 1
+execute if score SEAmusic rng1 matches 3500 as @a[tag=SEAPT] at @s as @a[tag=SEAPT] at @s run playsound minecraft:app2.astrum music @s ~ ~ ~ 1 1
+execute if score SEAmusic rng1 matches 3500 as @r[tag=SEAPT] at @s positioned 90185 56 61 as @a[gamemode=spectator,distance=0..250] run playsound minecraft:app2.astrum music @s ~ ~ ~ 1 1
 execute if score SEAmusic rng1 matches 3500.. run scoreboard players set SEAmusic rng1 0
 
 execute as @n[tag=SEAboss4,scores={rng2=0..3,rng6=1..2,rng8=..0,rng9=..0}] at @s run tag @s add SEAboss4_attack
@@ -122,7 +122,7 @@ execute as @n[tag=SEAboss4,scores={rng8=1..}] at @s run scoreboard players add @
 execute as @n[tag=SEAboss4,scores={health=..25,rng2=10..}] run scoreboard players set @s rng7 179
 execute as @n[tag=SEAboss4,scores={rng7=180..}] run scoreboard players set @s rng8 0
 execute as @n[tag=SEAboss4,scores={rng7=180}] run data modify entity @s Invulnerable set value 1b
-execute as @n[tag=SEAboss4,scores={rng7=180}] run stopsound @a[tag=SEAPT]
+execute as @n[tag=SEAboss4,scores={rng7=180}] positioned 90074.0 129 109.0 run stopsound @a[distance=0..500] music
 execute as @n[tag=SEAboss4,scores={rng7=180}] as @a[tag=SEAPT] at @s run stopsound @a[gamemode=spectator,distance=0..300]
 execute as @n[tag=SEAboss4,scores={rng7=180}] run tellraw @a[tag=SEAPT] {"text": "越涵：“都、都别打了！！全都是自己人！！”","color": "green"}
 execute as @n[tag=SEAboss4,scores={rng7=180}] positioned 90185.01 69.00 72.02 run function skyblock:sea/m/npc_yuehan

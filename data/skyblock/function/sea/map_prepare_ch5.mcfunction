@@ -145,14 +145,61 @@ setblock 90111 71 73 chest[facing=north]
 item replace block 90141 84 49 container.11 with coal 1
 item replace block 90141 84 49 container.15 with gunpowder 1
 
+setblock 90133 101 25 chest[facing=west]
+item replace block 90133 101 25 container.14 with echo_shard 1
+
 setblock 90112 102 64 chest[facing=north]
 item replace block 90112 102 64 container.12 with coal 1
 setblock 90126 79 57 minecraft:furnace[facing=west]
 
+fill 90105 103 34 90106 101 34 minecraft:waxed_copper_grate
+
+setblock 90116 114 56 air
+setblock 90116 114 56 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:gunpowder"}}
+setblock 90137 112 21 air
+setblock 90137 112 21 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 3, id:"minecraft:flint"}}
+setblock 90136 112 21 air
+setblock 90136 112 21 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 4, id:"minecraft:glow_berries"}}
+setblock 90108 40 37 air
+setblock 90108 40 37 decorated_pot{sherds:["friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd"],item:{count: 3, id:"minecraft:emerald"}}
 
 
+fill 90116 99 73 90116 101 73 ladder[facing=east]
+
+#巨型防水门
+fill 90119 97 25 90119 96 29 minecraft:iron_block
 
 
+#第三支柱升降梯
+fill 90108 77 26 90111 108 29 air
+fill 90111 109 26 90111 103 26 chain
+fill 90108 109 26 90108 103 26 chain
+fill 90111 109 29 90111 103 29 chain
+fill 90108 109 29 90108 103 29 chain
+fill 90108 108 26 90111 108 29 waxed_copper_block
+fill 90110 108 27 90109 108 28 waxed_copper_grate
+fill 90108 102 26 90111 102 29 waxed_copper_block
+fill 90110 102 27 90109 102 28 waxed_copper_grate
+
+#急冻装置
+setblock 90130 96 31 air
+setblock 90130 96 31 lever[facing=north,face=floor]
+setblock 90128 96 31 air
+setblock 90128 96 31 lever[facing=north,face=floor]
+fill 90131 98 35 90127 98 51 water
+scoreboard players set sea_ch5_instant_freeze sea_4temp2 0
+scoreboard players set sea_ch5_instant_freeze sea_4temp3 0
+scoreboard players set sea_ch5_instant_freeze sea_4temp4 0
+fill 90132 100 27 90122 100 27 minecraft:waxed_copper_grate
+
+fill 90113 98 35 90110 95 35 lever[facing=north]
+fill 90112 97 35 90111 96 35 air
+
+setblock 90120 113 48 minecraft:redstone_lamp[lit=false]
+setblock 90120 113 39 minecraft:redstone_lamp[lit=false]
+setblock 90129 113 48 minecraft:redstone_lamp[lit=false]
+setblock 90129 113 39 minecraft:redstone_lamp[lit=false]
+setblock 90124 104 45 air
 
 
 

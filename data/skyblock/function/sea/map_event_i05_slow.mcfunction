@@ -36,8 +36,27 @@ execute if block 90101 73 64 lever[powered=true] \
  if block 90101 71 66 lever[powered=true] positioned 90100 73 67 unless block ~ ~ ~ air \
 run function skyblock:sea/e/ch5/mem_3
 
+#记忆密码4
+execute if block 90110 95 35 lever[powered=false] \
+ if block 90111 95 35 lever[powered=true] \
+ if block 90112 95 35 lever[powered=false] \
+ if block 90113 95 35 lever[powered=false] \
+ if block 90110 96 35 lever[powered=false] \
+ if block 90113 96 35 lever[powered=true] \
+ if block 90110 97 35 lever[powered=true] \
+ if block 90113 97 35 lever[powered=false] \
+ if block 90110 98 35 lever[powered=false] \
+ if block 90111 98 35 lever[powered=true] \
+ if block 90112 98 35 lever[powered=true] \
+ if block 90113 98 35 lever[powered=false] positioned 90119 96 27 unless block ~ ~ ~ air \
+run function skyblock:sea/e/ch5/mem_4
+#scoreboard players set sea_ch5_instant_freeze sea_4temp3 1
+#execute if score sea_ch5_instant_freeze sea_4temp3 matches 1.. run function skyblock:sea/e/ch5/mem_4
 
+execute as @a[tag=SEAPT,tag=!e_i_40] at @s if block ~ ~-0.5 ~ packed_ice run function skyblock:sea/e/ch5/instant_freeze_on_thin_ice
+execute if score sea_ch5_instant_freeze sea_4temp4 matches 1.. run function skyblock:sea/e/ch5/instant_freeze_magma_boss
 
+execute if block 90105 102 33 bamboo_button[powered=true] run fill 90105 103 34 90106 101 34 air
 
 
 execute if score SEA_ch5_event_EnteringPillar2 rng1 matches 0 positioned 90110 88 58 if entity @a[tag=SEAPT,tag=!SEAPF,distance=0..6] run scoreboard players set SEA_ch5_event_EnteringPillar2 rng1 1
@@ -45,12 +64,9 @@ execute if score SEA_ch5_event_EnteringPillar2 rng1 matches 0 positioned 90110 8
 execute if score SEA_ch5_event_EnteringPillar2 rng1 matches 1..99 run function skyblock:sea/e/ch5/event_the_first_visioner
 
 
-
-execute if score SEA_ch5_event_EnteringPillar2 rng2 matches 0 positioned 90110 114 41 if entity @a[tag=SEAPT,tag=!SEAPF,distance=0..6] run scoreboard players set SEA_ch5_event_EnteringPillar2 rng2 1
-execute if score SEA_ch5_event_EnteringPillar2 rng2 matches 1 run fill 90109 121 41 90110 121 42 anvil
-execute if score SEA_ch5_event_EnteringPillar2 rng2 matches 1..30 run scoreboard players add SEA_ch5_event_EnteringPillar2 rng2 1
-execute if score SEA_ch5_event_EnteringPillar2 rng2 matches 4..10 if block 90109 115 41 #anvil run fill 90109 114 41 90110 114 42 air destroy
-execute if score SEA_ch5_event_EnteringPillar2 rng2 matches 4..10 if block 90109 115 41 #anvil run fill 90109 115 41 90110 115 42 air destroy
+#第三支柱
+execute if score SEA_ch5_event_EnteringPillar2 rng2 matches 0 positioned 90110 114 41 if entity @a[tag=SEAPT,tag=!SEAPF,distance=0..7] run scoreboard players set SEA_ch5_event_EnteringPillar2 rng2 1
+execute if score SEA_ch5_event_EnteringPillar2 rng2 matches 1..30 run function skyblock:sea/e/ch5/event_pillar_3
 
 
 execute positioned 90114 79 61 if entity @a[tag=SEAPT,tag=!SEAPF,distance=0..6] if block 90117 79 56 flower_pot positioned 90123 78 65 run function skyblock:sea/m/drowned_shield
@@ -60,11 +76,15 @@ execute positioned 90114 79 61 if entity @a[tag=SEAPT,tag=!SEAPF,distance=0..6] 
 execute positioned 90114 79 61 if entity @a[tag=SEAPT,tag=!SEAPF,distance=0..6] if block 90117 79 56 flower_pot run setblock 90117 79 56 air
 
 
+execute positioned 90110.03 109.00 28.05 as @a[tag=SEAPT,tag=!SEAPF,distance=0..6] at @s unless block ~ ~-0.1 ~ air unless block ~ ~-0.1 ~ chain if block 90111 108 28 waxed_copper_block run function skyblock:sea/e/ch5/lifter_move_1
 
+execute if block 90111 89 32 bamboo_button[powered=true] if block 90111 99 29 air run function skyblock:sea/e/ch5/lifter_move_2
+execute if block 90111 90 32 bamboo_button[powered=true] unless block 90111 99 29 air run function skyblock:sea/e/ch5/lifter_move_3
+execute if block 90112 102 32 bamboo_button[powered=true] if block 90111 99 29 air run function skyblock:sea/e/ch5/lifter_move_2
+execute if block 90112 103 32 bamboo_button[powered=true] unless block 90111 99 29 air run function skyblock:sea/e/ch5/lifter_move_3
 
-
-
-
+execute if score sea_ch5_instant_freeze sea_4temp2 matches 0 if block 90130 96 31 lever[powered=true] if block 90128 96 31 lever[powered=true] run scoreboard players set sea_ch5_instant_freeze sea_4temp2 1
+execute if score sea_ch5_instant_freeze sea_4temp2 matches 1..140 run function skyblock:sea/e/ch5/instant_freeze
 
 
 

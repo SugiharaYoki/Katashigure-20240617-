@@ -37,6 +37,12 @@ clear @s[gamemode=!creative] stone_bricks
 
 tag @s remove PVP_see
 
+
+effect give @s[tag=SEAPT_storymode] strength 30 1 true
+effect give @s[tag=SEAPT_storymode] resistance 30 1 true
+
+
+
 execute as @s[scores={sea_crafter=1}] at @s run function skyblock:sea/shop_reader
 execute as @s[scores={sea_crafter=10000..19999}] at @s if entity @n[tag=SEAcrafter,distance=0..5] run function skyblock:sea/shop_purchase
 execute as @s[scores={sea_crafter=30000..39999}] at @s if entity @n[tag=SEAcrafter,distance=0..5] run function skyblock:sea/shop_purchase
@@ -150,4 +156,12 @@ execute positioned 90165 38 79 if entity @s[distance=0..5] run advancement grant
 execute positioned 90251 44 126 if entity @s[distance=0..5] run advancement grant @s only skyblock:sea/doc/w13
 execute positioned 90255 44 119 if entity @s[distance=0..5] run advancement grant @s only skyblock:sea/doc/w14
 execute positioned 90235 57 85 if entity @s[distance=0..5] run advancement grant @s only skyblock:sea/doc/w15
+
+execute if score @s sea_glowberries matches 1.. run effect clear @s poison
+execute if score @s sea_glowberries matches 1.. run effect clear @s slowness
+execute if score @s sea_glowberries matches 1.. run effect clear @s wither
+execute if score @s sea_glowberries matches 1.. run effect clear @s weakness
+execute if score @s sea_glowberries matches 1.. run effect give @s fire_resistance 5
+execute if score @s sea_glowberries matches 1.. run effect give @s night_vision 5
+execute if score @s sea_glowberries matches 1.. run scoreboard players set @s sea_glowberries 0
 
