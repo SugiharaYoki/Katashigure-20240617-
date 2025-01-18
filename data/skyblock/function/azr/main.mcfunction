@@ -7,6 +7,12 @@ execute as @a[scores={MultiMenu=114}] run function skyblock:azr/info/toggle_mone
 execute as @a[scores={MultiMenu=115}] run function skyblock:azr/info/menu
 scoreboard players enable @a MultiMenu
 
+#旁观者显示
+bossbar set azr:progress_bar_normal players @a[x=-79931,y=100,z=0,distance=..10000]
+bossbar set azr:progress_bar_special players @a[x=-79931,y=100,z=0,distance=..10000]
+bossbar set azr:boss_hp_bar players @a[x=-79931,y=100,z=0,distance=..10000]
+bossbar set minecraft:8432102 players @a[x=-79931,y=100,z=0,distance=..10000]
+
 #开始游戏
 #声明常驻记分板 可能包含系统参数、永久变量、指针等
 scoreboard objectives add Azr_system dummy
