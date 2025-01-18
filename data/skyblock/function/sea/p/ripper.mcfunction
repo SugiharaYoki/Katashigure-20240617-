@@ -16,6 +16,7 @@ execute if score @s sea_ripper matches 1.. positioned ^ ^ ^2.8 unless block ~ ~ 
 execute if score @s sea_ripper matches 1.. positioned ^ ^ ^2.8 unless block ~ ~ ~ air run particle small_flame ~ ~ ~ 0.2 0.02 0.2 0.2 5
 execute if score @s sea_ripper matches 1.. positioned ^ ^ ^2.8 unless block ~ ~ ~ air run scoreboard players remove @s sea_ripper 1
 execute if score @s sea_ripper matches 1.. positioned ^ ^ ^2.8 if block ~ ~ ~ decorated_pot run setblock ~ ~ ~ air destroy
+execute if score @s sea_ripper matches 1.. positioned ^ ^ ^2.8 if block ~ ~ ~ basalt run function skyblock:sea/p/magma
 
 execute if score @s sea_ripper matches 1.. positioned ^ ^-1.5 ^2.8 as @e[tag=SEAmob,distance=0..1.5] at @s run damage @s 4 minecraft:cactus
 execute if score @s sea_ripper matches 1.. positioned ^ ^-1.5 ^ as @e[tag=SEAmob,distance=0..1.5] at @s run damage @s 4 minecraft:cactus
