@@ -70,17 +70,17 @@ execute if entity @s[tag=!SEA_w_ripper_upg16] run data modify entity @n[tag=SEA_
 
 tellraw @s [{"text":" ","color":"light_purple"},\
 {"selector":"@n[tag=SEA_w_ripper_displaymarker0b]","color":"dark_gray"},\
-{"selector":"@n[tag=SEA_w_ripper_displaymarker1]","color":"blue","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 50608"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：1\n减速效果略微增加","color":"white"}}},\
-{"selector":"@n[tag=SEA_w_ripper_displaymarker1]","color":"yellow","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 50609"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：3\n切割范围增加0.3格","color":"white"}}},\
+{"selector":"@n[tag=SEA_w_ripper_displaymarker8]","color":"blue","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 50608"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：1\n减速效果略微增加","color":"white"}}},\
+{"selector":"@n[tag=SEA_w_ripper_displaymarker9]","color":"yellow","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 50609"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：3\n切割范围增加0.3格","color":"white"}}},\
 {"selector":"@n[tag=SEA_w_ripper_displaymarkerE]","color":"dark_gray"},\
 {"selector":"@n[tag=SEA_w_ripper_displaymarkerE]","color":"dark_gray"}]
 
 tellraw @s [{"text":" ","color":"light_purple"},\
 {"selector":"@n[tag=SEA_w_ripper_displaymarker0b]","color":"dark_gray"},\
-{"selector":"@n[tag=SEA_w_ripper_displaymarker1]","color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 50605"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：2\n持续时间增加0.8秒","color":"white"}}},\
+{"selector":"@n[tag=SEA_w_ripper_displaymarker5]","color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 50605"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：2\n持续时间增加0.8秒","color":"white"}}},\
 {"selector":"@n[tag=SEA_w_ripper_displaymarkerE]","color":"dark_gray"},\
-{"selector":"@n[tag=SEA_w_ripper_displaymarker3]","color":"yellow","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 50606"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：3\n切割范围增加0.3格","color":"white"}}},\
-{"selector":"@n[tag=SEA_w_ripper_displaymarker4]","color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 50607"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：2\n持续时间增加0.8秒","color":"white"}}}]
+{"selector":"@n[tag=SEA_w_ripper_displaymarker6]","color":"yellow","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 50606"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：3\n切割范围增加0.3格","color":"white"}}},\
+{"selector":"@n[tag=SEA_w_ripper_displaymarker7]","color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 50607"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：2\n持续时间增加0.8秒","color":"white"}}}]
 
 tellraw @s [{"text":" ","color":"light_purple"},\
 {"selector":"@n[tag=SEA_w_ripper_displaymarker0]","color":"red"},\
@@ -92,7 +92,7 @@ tellraw @s [{"text":" ","color":"light_purple"},\
 tellraw @s [{"text":" ","color":"light_purple"},\
 {"selector":"@n[tag=SEA_w_ripper_displaymarker0b]","color":"dark_gray"},\
 {"selector":"@n[tag=SEA_w_ripper_displaymarkerE]","color":"dark_gray"},\
-{"selector":"@n[tag=SEA_w_ripper_displaymarker1]","color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 50605"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：2\n持续时间增加0.8秒","color":"white"}}},\
+{"selector":"@n[tag=SEA_w_ripper_displaymarker10]","color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 50605"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：2\n持续时间增加0.8秒","color":"white"}}},\
 {"selector":"@n[tag=SEA_w_ripper_displaymarkerE]","color":"dark_gray"},\
 {"selector":"@n[tag=SEA_w_ripper_displaymarkerE]","color":"dark_gray"}]
 
