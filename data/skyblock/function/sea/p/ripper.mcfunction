@@ -12,8 +12,8 @@ execute if score @s sea_ripper matches 1.. positioned ^ ^ ^2.8 run playsound blo
 #execute if score @s sea_ripper matches 1.. positioned ^ ^ ^2.8 run playsound entity.minecart.inside block @a ~ ~ ~ 0.08 2
 
 execute if score @s sea_ripper matches 1.. positioned ^ ^ ^2.8 unless block ~ ~ ~ air run playsound block.anvil.land block @a ~ ~ ~ 0.08 2
-execute if score @s sea_ripper matches 1.. positioned ^ ^ ^2.8 unless block ~ ~ ~ air run particle electric_spark ~ ~ ~ 0 0 0 0.2 3
-execute if score @s sea_ripper matches 1.. positioned ^ ^ ^2.8 unless block ~ ~ ~ air run particle small_flame ~ ~ ~ 0 0 0 0.2 5
+execute if score @s sea_ripper matches 1.. positioned ^ ^ ^2.8 unless block ~ ~ ~ air run particle electric_spark ~ ~ ~ 0.2 0.02 0.2 0.2 3
+execute if score @s sea_ripper matches 1.. positioned ^ ^ ^2.8 unless block ~ ~ ~ air run particle small_flame ~ ~ ~ 0.2 0.02 0.2 0.2 5
 execute if score @s sea_ripper matches 1.. positioned ^ ^ ^2.8 unless block ~ ~ ~ air run scoreboard players remove @s sea_ripper 1
 execute if score @s sea_ripper matches 1.. positioned ^ ^ ^2.8 if block ~ ~ ~ decorated_pot run setblock ~ ~ ~ air destroy
 
