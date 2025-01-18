@@ -1,4 +1,5 @@
 execute if score stageSeconds Azr_system matches 501..990 run scoreboard players set stageSeconds Azr_system 501
+execute if score stageSeconds Azr_system matches 450..990 if block -79894 41 -123 lever[powered=true] run summon minecraft:interaction -79893.5 41.00 -122.5 {Tags:["temp"]}
 execute if score stageSeconds Azr_system matches 450..990 if block -79894 41 -123 lever[powered=true] run scoreboard players set stageSeconds Azr_system 1001
 execute if score stageSeconds Azr_system matches 1002 run fill -79892 43 -119 -79889 43 -119 iron_bars
 execute if score stageSeconds Azr_system matches 1002 run playsound minecraft:block.iron_door.open ambient @a[tag=azrPlayer] -79891.0 46 -119 160 0.3
