@@ -15,17 +15,17 @@ execute if score @s sea_ripper matches 1.. positioned ^ ^ ^ if block ~ ~ ~ water
 execute if score @s sea_ripper matches 1.. positioned ^ ^ ^ if block ~ ~ ~ decorated_pot run setblock ~ ~ ~ air destroy
 execute if score @s sea_ripper matches 1.. positioned ^ ^ ^ if block ~ ~ ~ basalt as @e[tag=SEAmagma1,type=marker,distance=..1.5] at @s run function skyblock:sea/p/magma
 
-execute if score @s[scores={rng3=1,rng4=1..}] sea_ripper matches 1.. positioned ^ ^-1.5 ^ as @e[tag=SEAmob,distance=0..1.8] at @s run damage @s 10 minecraft:cactus
-execute if score @s[scores={rng3=1,rng4=1..}] sea_ripper matches 1.. positioned ^ ^ ^ as @e[tag=SEAmob,    distance=0..1.8] at @s run damage @s 10 minecraft:cactus
-execute if score @s[scores={rng5=1,rng4=1..}] sea_ripper matches 1.. positioned ^ ^-1.5 ^ as @e[tag=SEAmob,distance=0..1.8] at @s run effect give @s slowness 1 1 true
-execute if score @s[scores={rng5=1,rng4=1..}] sea_ripper matches 1.. positioned ^ ^ ^ as @e[tag=SEAmob,    distance=0..1.8] at @s run effect give @s slowness 1 1 true
-execute if score @s[scores={rng3=2,rng4=1..}] sea_ripper matches 1.. positioned ^ ^-1.5 ^ as @e[tag=SEAmob,distance=0..1.8] at @s run damage @s 14 minecraft:cactus
-execute if score @s[scores={rng3=2,rng4=1..}] sea_ripper matches 1.. positioned ^ ^ ^ as @e[tag=SEAmob,    distance=0..1.8] at @s run damage @s 14 minecraft:cactus
-execute if score @s[scores={rng5=2,rng4=1..}] sea_ripper matches 1.. positioned ^ ^-1.5 ^ as @e[tag=SEAmob,distance=0..1.8] at @s run effect give @s slowness 1 5 true
-execute if score @s[scores={rng5=2,rng4=1..}] sea_ripper matches 1.. positioned ^ ^ ^ as @e[tag=SEAmob,    distance=0..1.8] at @s run effect give @s slowness 1 5 true
-execute if score @s[scores={rng3=3,rng4=1..}] sea_ripper matches 1.. positioned ^ ^-1.5 ^ as @e[tag=SEAmob,distance=0..1.8] at @s run damage @s 18 minecraft:cactus
-execute if score @s[scores={rng3=3,rng4=1..}] sea_ripper matches 1.. positioned ^ ^ ^ as @e[tag=SEAmob,    distance=0..1.8] at @s run damage @s 18 minecraft:cactus
-execute if score @s[scores={rng5=3,rng4=1..}] sea_ripper matches 1.. positioned ^ ^-1.5 ^ as @e[tag=SEAmob,distance=0..1.8] at @s run effect give @s slowness 1 9 true
-execute if score @s[scores={rng5=3,rng4=1..}] sea_ripper matches 1.. positioned ^ ^ ^ as @e[tag=SEAmob,    distance=0..1.8] at @s run effect give @s slowness 1 9 true
-execute if score @s[scores={rng3=4,rng4=1..}] sea_ripper matches 1.. positioned ^ ^-1.5 ^ as @e[tag=SEAmob,distance=0..1.8] at @s run damage @s 22 minecraft:cactus
-execute if score @s[scores={rng3=4,rng4=1..}] sea_ripper matches 1.. positioned ^ ^ ^ as @e[tag=SEAmob,    distance=0..1.8] at @s run damage @s 22 minecraft:cactus
+execute if score @s[scores={rng3=1,rng4=1..}] sea_ripper matches 1.. positioned ^ ^-1.5 ^ as @e[tag=SEAmob,distance=0..1.6] at @s run damage @s 10 minecraft:cactus
+execute if score @s[scores={rng3=1,rng4=1..}] sea_ripper matches 1.. positioned ^ ^ ^ as @e[tag=SEAmob,    distance=0..1.6] at @s run damage @s 10 minecraft:cactus
+execute if score @s[scores={rng5=1,rng4=1..}] sea_ripper matches 1.. positioned ^ ^-1.5 ^ as @e[tag=SEAmob,distance=0..1.6] at @s run effect give @s slowness 1 1 true
+execute if score @s[scores={rng5=1,rng4=1..}] sea_ripper matches 1.. positioned ^ ^ ^ as @e[tag=SEAmob,    distance=0..1.6] at @s run effect give @s slowness 1 1 true
+execute if score @s[scores={rng3=2,rng4=1..}] sea_ripper matches 1.. positioned ^ ^-1.5 ^ as @e[tag=SEAmob,distance=0..1.6] at @s run damage @s 14 minecraft:cactus
+execute if score @s[scores={rng3=2,rng4=1..}] sea_ripper matches 1.. positioned ^ ^ ^ as @e[tag=SEAmob,    distance=0..1.6] at @s run damage @s 14 minecraft:cactus
+execute if score @s[scores={rng5=2,rng4=1..}] sea_ripper matches 1.. positioned ^ ^-1.5 ^ as @e[tag=SEAmob,distance=0..1.6] at @s run effect give @s slowness 1 5 true
+execute if score @s[scores={rng5=2,rng4=1..}] sea_ripper matches 1.. positioned ^ ^ ^ as @e[tag=SEAmob,    distance=0..1.6] at @s run effect give @s slowness 1 5 true
+execute if score @s[scores={rng3=3,rng4=1..}] sea_ripper matches 1.. positioned ^ ^-1.5 ^ as @e[tag=SEAmob,distance=0..1.6] at @s run damage @s 18 minecraft:cactus
+execute if score @s[scores={rng3=3,rng4=1..}] sea_ripper matches 1.. positioned ^ ^ ^ as @e[tag=SEAmob,    distance=0..1.6] at @s run damage @s 18 minecraft:cactus
+execute if score @s[scores={rng5=3,rng4=1..}] sea_ripper matches 1.. positioned ^ ^-1.5 ^ as @e[tag=SEAmob,distance=0..1.6] at @s run effect give @s slowness 1 9 true
+execute if score @s[scores={rng5=3,rng4=1..}] sea_ripper matches 1.. positioned ^ ^ ^ as @e[tag=SEAmob,    distance=0..1.6] at @s run effect give @s slowness 1 9 true
+execute if score @s[scores={rng3=4,rng4=1..}] sea_ripper matches 1.. positioned ^ ^-1.5 ^ as @e[tag=SEAmob,distance=0..1.6] at @s run damage @s 22 minecraft:cactus
+execute if score @s[scores={rng3=4,rng4=1..}] sea_ripper matches 1.. positioned ^ ^ ^ as @e[tag=SEAmob,    distance=0..1.6] at @s run damage @s 22 minecraft:cactus
