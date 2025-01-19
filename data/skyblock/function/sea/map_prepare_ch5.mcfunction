@@ -181,6 +181,8 @@ fill 90110 108 27 90109 108 28 waxed_copper_grate
 fill 90108 102 26 90111 102 29 waxed_copper_block
 fill 90110 102 27 90109 102 28 waxed_copper_grate
 
+fill 90100 73 67 90099 71 67 iron_bars
+
 #急冻装置
 setblock 90130 96 31 air
 setblock 90130 96 31 lever[facing=north,face=floor]
