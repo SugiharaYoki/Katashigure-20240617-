@@ -1,6 +1,7 @@
 scoreboard players set version skyblock_system 275
 execute unless score last_version skyblock_system = version skyblock_system run tellraw @a[tag=DebugMode] [{"text":"【azr shop upp】Datapack has successfully updated. version: "},{"score":{"name":"version","objective":"skyblock_system"},"color":"green","bold":true}]
 scoreboard players operation last_version skyblock_system = version skyblock_system
+function skyblock:api_get_irl_time
 
 #轮播内容
 scoreboard objectives add Perm_PersonWins dummy {"text":"PVP战争 历史胜利场数排行榜","color":"gold","bold":true}
