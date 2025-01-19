@@ -3,4 +3,4 @@ data modify storage skyblock:cache IRLTime.minute_string set string block 0 54 0
 data modify storage skyblock:cache IRLTime.second_string set string block 0 54 0 LastOutput 16 18
 function skyblock:api_irltime_string_to_int with storage skyblock:cache IRLTime
 
-schedule function skyblock:api_get_irl_time 5t
+schedule function skyblock:api_get_irl_time 5t append
