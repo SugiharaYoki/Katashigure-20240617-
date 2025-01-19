@@ -142,8 +142,8 @@ fill 90101 73 64 90101 71 66 lever[facing=west]
 setblock 90101 72 65 air
 
 setblock 90111 71 73 chest[facing=north]
-item replace block 90111 71 73  container.11 with coal 1
-item replace block 90111 71 73  container.15 with gunpowder 1
+item replace block 90111 71 73 container.11 with coal 1
+item replace block 90111 71 73 container.15 with gunpowder 1
 
 setblock 90133 101 25 chest[facing=west]
 item replace block 90133 101 25 container.14 with echo_shard 1
