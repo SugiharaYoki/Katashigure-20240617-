@@ -142,8 +142,8 @@ fill 90101 73 64 90101 71 66 lever[facing=west]
 setblock 90101 72 65 air
 
 setblock 90111 71 73 chest[facing=north]
-item replace block 90141 84 49 container.11 with coal 1
-item replace block 90141 84 49 container.15 with gunpowder 1
+item replace block 90111 71 73 container.11 with coal 1
+item replace block 90111 71 73 container.15 with gunpowder 1
 
 setblock 90133 101 25 chest[facing=west]
 item replace block 90133 101 25 container.14 with echo_shard 1
@@ -181,12 +181,14 @@ fill 90110 108 27 90109 108 28 waxed_copper_grate
 fill 90108 102 26 90111 102 29 waxed_copper_block
 fill 90110 102 27 90109 102 28 waxed_copper_grate
 
+fill 90100 73 67 90099 71 67 iron_bars
+
 #急冻装置
 setblock 90130 96 31 air
 setblock 90130 96 31 lever[facing=north,face=floor]
 setblock 90128 96 31 air
 setblock 90128 96 31 lever[facing=north,face=floor]
-fill 90131 98 35 90127 98 51 water
+fill 90135 98 35 90107 98 71 water replace packed_ice
 scoreboard players set sea_ch5_instant_freeze sea_4temp2 0
 scoreboard players set sea_ch5_instant_freeze sea_4temp3 0
 scoreboard players set sea_ch5_instant_freeze sea_4temp4 0
@@ -201,5 +203,5 @@ setblock 90129 113 48 minecraft:redstone_lamp[lit=false]
 setblock 90129 113 39 minecraft:redstone_lamp[lit=false]
 setblock 90124 104 45 air
 
-
-
+setblock 90113 102 18 air
+setblock 90113 102 18 lever[facing=west]

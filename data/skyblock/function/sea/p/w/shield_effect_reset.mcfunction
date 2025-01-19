@@ -33,7 +33,7 @@ tag @s remove SEA_w_shield_upg14
 tag @s remove SEA_w_shield_upg15
 tag @s remove SEA_w_shield_upg16
 
-playsound block.grindstone.use player @a ~ ~ ~ 1 0.8
+execute if entity @s[tag=SEAPT] run playsound block.grindstone.use player @a ~ ~ ~ 1 0.8
 
-function skyblock:sea/p/w/shield_effect_remove
-function skyblock:sea/p/w/shield_page
+execute if entity @s[tag=SEAPT] run function skyblock:sea/p/w/shield_effect_remove
+execute if entity @s[tag=SEAPT] run function skyblock:sea/p/w/shield_page

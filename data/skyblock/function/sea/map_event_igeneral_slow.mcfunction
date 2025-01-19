@@ -241,7 +241,7 @@ item replace block 90107 156 135 container.13 with flow_banner_pattern[custom_da
 #红白蓝紫红紫蓝
 #1001110
 
-item replace block 90141 84 49 container.13 with flow_banner_pattern[custom_data={sea_doc23:true},custom_name=\
+item replace block 90111 71 73 container.13 with flow_banner_pattern[custom_data={sea_doc23:true},custom_name=\
 '{"text":"通讯平台西南支柱的笔记 - 琼斯","italic":true,"color":"dark_purple","italic":false}',\
 lore=['{"text":"那群暴民居然还在胡扯，事情根本就不是我们这群人做的。","color":"white","italic":false}','{"text":"圣水晶又不是我们的人挖出来的。","color":"white","italic":false}','{"text":"现在因为圣水晶吸引了那些细菌，他们自食其果，居然还妄图怪罪到我们头上来。","color":"white","italic":false}','{"text":"我们信仰的是圣水晶，与圣水晶背后的天使。","color":"white","italic":false}','{"text":"权之执理的神力可不包括操控能让人变成活尸的细菌。","color":"white","italic":false}']]
 

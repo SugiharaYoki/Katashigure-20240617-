@@ -38,3 +38,5 @@ execute as @s[scores={rng4=3}] at @s rotated ~ 0 positioned ^ ^ ^1.5 run tp @s ~
 execute as @s[scores={rng4=4}] at @s run data modify entity @s NoAI set value 1b
 execute as @s[scores={rng4=2}] at @s positioned ^ ^ ^-1.3 run tp @s ~ ~ ~
 execute as @s[scores={rng4=2}] at @s run data modify entity @s NoAI set value 0b
+
+

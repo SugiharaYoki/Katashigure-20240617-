@@ -188,6 +188,48 @@ execute if entity @s[scores={sea_crafter=50528},tag=!SEA_w_armor_upg28] run tag 
 execute if entity @s[scores={sea_crafter=50529},tag=!SEA_w_armor_upg29] run tag @s add SEA_w_armor_upg29
 execute if entity @s[scores={sea_crafter=50530},tag=!SEA_w_armor_upg30] run tag @s add SEA_w_armor_upg30
 
+#磁锯
+# 减 距
+# 时    距 时
+# 伤 伤 减 伤
+#    时
+# 1 3
+# 2   3 2
+# 1 2 2 3
+#   2
+
+execute if entity @s[scores={sea_crafter=50601},tag=!SEA_w_ripper_upg1] run clear @s echo_shard 1
+execute if entity @s[scores={sea_crafter=50602},tag=!SEA_w_ripper_upg2] run clear @s echo_shard 2
+execute if entity @s[scores={sea_crafter=50603},tag=!SEA_w_ripper_upg3] run clear @s echo_shard 2
+execute if entity @s[scores={sea_crafter=50604},tag=!SEA_w_ripper_upg4] run clear @s echo_shard 3
+execute if entity @s[scores={sea_crafter=50605},tag=!SEA_w_ripper_upg5] run clear @s echo_shard 2
+execute if entity @s[scores={sea_crafter=50606},tag=!SEA_w_ripper_upg6] run clear @s echo_shard 3
+execute if entity @s[scores={sea_crafter=50607},tag=!SEA_w_ripper_upg7] run clear @s echo_shard 2
+execute if entity @s[scores={sea_crafter=50608},tag=!SEA_w_ripper_upg8] run clear @s echo_shard 1
+execute if entity @s[scores={sea_crafter=50609},tag=!SEA_w_ripper_upg9] run clear @s echo_shard 3
+execute if entity @s[scores={sea_crafter=50610},tag=!SEA_w_ripper_upg10] run clear @s echo_shard 2
+execute if entity @s[scores={sea_crafter=50611},tag=!SEA_w_ripper_upg11] run clear @s echo_shard 5
+execute if entity @s[scores={sea_crafter=50612},tag=!SEA_w_ripper_upg12] run clear @s echo_shard 5
+execute if entity @s[scores={sea_crafter=50613},tag=!SEA_w_ripper_upg13] run clear @s echo_shard 5
+execute if entity @s[scores={sea_crafter=50614},tag=!SEA_w_ripper_upg14] run clear @s echo_shard 5
+execute if entity @s[scores={sea_crafter=50615},tag=!SEA_w_ripper_upg15] run clear @s echo_shard 5
+
+
+execute if entity @s[scores={sea_crafter=50601},tag=!SEA_w_ripper_upg1] run tag @s add SEA_w_ripper_upg1
+execute if entity @s[scores={sea_crafter=50602},tag=!SEA_w_ripper_upg2] run tag @s add SEA_w_ripper_upg2
+execute if entity @s[scores={sea_crafter=50603},tag=!SEA_w_ripper_upg3] run tag @s add SEA_w_ripper_upg3
+execute if entity @s[scores={sea_crafter=50604},tag=!SEA_w_ripper_upg4] run tag @s add SEA_w_ripper_upg4
+execute if entity @s[scores={sea_crafter=50605},tag=!SEA_w_ripper_upg5] run tag @s add SEA_w_ripper_upg5
+execute if entity @s[scores={sea_crafter=50606},tag=!SEA_w_ripper_upg6] run tag @s add SEA_w_ripper_upg6
+execute if entity @s[scores={sea_crafter=50607},tag=!SEA_w_ripper_upg7] run tag @s add SEA_w_ripper_upg7
+execute if entity @s[scores={sea_crafter=50608},tag=!SEA_w_ripper_upg8] run tag @s add SEA_w_ripper_upg8
+execute if entity @s[scores={sea_crafter=50609},tag=!SEA_w_ripper_upg9] run tag @s add SEA_w_ripper_upg9
+execute if entity @s[scores={sea_crafter=50610},tag=!SEA_w_ripper_upg10] run tag @s add SEA_w_ripper_upg10
+execute if entity @s[scores={sea_crafter=50611},tag=!SEA_w_ripper_upg11] run tag @s add SEA_w_ripper_upg11
+execute if entity @s[scores={sea_crafter=50612},tag=!SEA_w_ripper_upg12] run tag @s add SEA_w_ripper_upg12
+execute if entity @s[scores={sea_crafter=50613},tag=!SEA_w_ripper_upg13] run tag @s add SEA_w_ripper_upg13
+execute if entity @s[scores={sea_crafter=50614},tag=!SEA_w_ripper_upg14] run tag @s add SEA_w_ripper_upg14
+execute if entity @s[scores={sea_crafter=50615},tag=!SEA_w_ripper_upg15] run tag @s add SEA_w_ripper_upg15
 
 function skyblock:sea/p/w/recalc
 

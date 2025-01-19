@@ -61,7 +61,7 @@ tag @s remove SEA_w_armor_upg28
 tag @s remove SEA_w_armor_upg29
 tag @s remove SEA_w_armor_upg30
 
-playsound block.grindstone.use player @a ~ ~ ~ 1 0.8
+execute if entity @s[tag=SEAPT] run playsound block.grindstone.use player @a ~ ~ ~ 1 0.8
 
-function skyblock:sea/p/w/armor_effect_remove
-function skyblock:sea/p/w/armor_page
+execute if entity @s[tag=SEAPT] run function skyblock:sea/p/w/armor_effect_remove
+execute if entity @s[tag=SEAPT] run function skyblock:sea/p/w/armor_page
