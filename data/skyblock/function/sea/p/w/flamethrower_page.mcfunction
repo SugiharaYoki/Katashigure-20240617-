@@ -77,10 +77,10 @@ tellraw @s [{"text":" ","color":"light_purple"},\
 
 tellraw @s [{"text":" ","color":"light_purple"},\
 {"selector":"@n[tag=SEA_w_flamethrower_displaymarker0b]","color":"dark_gray"},\
-{"selector":"@n[tag=SEA_w_flamethrower_displaymarkerE]","color":"dark_gray"},\
+{"selector":"@n[tag=SEA_w_flamethrower_displaymarker11]","color":"gold","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 50211"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：2\n增加喷火的灼烧时长\n可以强制唤醒灰烬状态的炽烈球体","color":"white"}}},\
 {"selector":"@n[tag=SEA_w_flamethrower_displaymarker6]","color":"blue","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 50206"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：2\n减少喷火时的燃料消耗","color":"white"}}},\
 {"selector":"@n[tag=SEA_w_flamethrower_displaymarkerE]","color":"dark_gray"},\
-{"selector":"@n[tag=SEA_w_flamethrower_displaymarkerE]","color":"dark_gray"},\
+{"selector":"@n[tag=SEA_w_flamethrower_displaymarker12]","color":"gold","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 50212"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：10\n喷火枪的普通喷射可用于破坏粘液墙","color":"white"}}},\
 {"selector":"@n[tag=SEA_w_flamethrower_displaymarkerE]","color":"dark_gray"}]
 
 tellraw @s [{"text":" ","color":"light_purple"},\

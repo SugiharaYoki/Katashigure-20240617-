@@ -8,6 +8,8 @@ tag @s remove sea_w_flamethrower_skill_skill_1
 tag @s remove sea_w_flamethrower_skill_damage_1
 tag @s remove sea_w_flamethrower_skill_damage_2
 tag @s remove sea_w_flamethrower_skill_cost_2
+tag @s remove sea_w_flamethrower_skill_skill2_1
+tag @s remove sea_w_flamethrower_skill_skill3_1
 
 
 
