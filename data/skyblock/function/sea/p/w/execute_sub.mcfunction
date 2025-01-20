@@ -71,7 +71,33 @@ execute if entity @s[scores={sea_crafter=50118},tag=!SEA_w_axe_upg18] run tag @s
 execute if entity @s[scores={sea_crafter=50119},tag=!SEA_w_axe_upg19] run tag @s add SEA_w_axe_upg19
 execute if entity @s[scores={sea_crafter=50120},tag=!SEA_w_axe_upg20] run tag @s add SEA_w_axe_upg20
 
+#喷火枪
+# 距 充 充 充 距
+#    耗
+#    技 攻 攻
+#    耗
+# 
+# 1 1 4 3 1
+#   2
+#   3 5 8
+#   5
 
+execute if entity @s[scores={sea_crafter=50201},tag=!SEA_w_flamethrower_upg1] run clear @s iron_ingot 1
+execute if entity @s[scores={sea_crafter=50202},tag=!SEA_w_flamethrower_upg2] run clear @s iron_ingot 1
+execute if entity @s[scores={sea_crafter=50203},tag=!SEA_w_flamethrower_upg3] run clear @s iron_ingot 4
+execute if entity @s[scores={sea_crafter=50204},tag=!SEA_w_flamethrower_upg4] run clear @s iron_ingot 3
+execute if entity @s[scores={sea_crafter=50205},tag=!SEA_w_flamethrower_upg5] run clear @s iron_ingot 1
+execute if entity @s[scores={sea_crafter=50206},tag=!SEA_w_flamethrower_upg6] run clear @s iron_ingot 2
+execute if entity @s[scores={sea_crafter=50207},tag=!SEA_w_flamethrower_upg7] run clear @s iron_ingot 3
+execute if entity @s[scores={sea_crafter=50208},tag=!SEA_w_flamethrower_upg8] run clear @s iron_ingot 5
+execute if entity @s[scores={sea_crafter=50209},tag=!SEA_w_flamethrower_upg9] run clear @s iron_ingot 8
+execute if entity @s[scores={sea_crafter=50210},tag=!SEA_w_flamethrower_upg10] run clear @s iron_ingot 5
+execute if entity @s[scores={sea_crafter=50211},tag=!SEA_w_flamethrower_upg11] run clear @s iron_ingot 2
+execute if entity @s[scores={sea_crafter=50212},tag=!SEA_w_flamethrower_upg12] run clear @s iron_ingot 3
+execute if entity @s[scores={sea_crafter=50213},tag=!SEA_w_flamethrower_upg13] run clear @s iron_ingot 3
+execute if entity @s[scores={sea_crafter=50214},tag=!SEA_w_flamethrower_upg14] run clear @s iron_ingot 3
+execute if entity @s[scores={sea_crafter=50215},tag=!SEA_w_flamethrower_upg15] run clear @s iron_ingot 3
+execute if entity @s[scores={sea_crafter=50216},tag=!SEA_w_flamethrower_upg16] run clear @s iron_ingot 3
 execute if entity @s[scores={sea_crafter=50201},tag=!SEA_w_flamethrower_upg1] run tag @s add SEA_w_flamethrower_upg1
 execute if entity @s[scores={sea_crafter=50202},tag=!SEA_w_flamethrower_upg2] run tag @s add SEA_w_flamethrower_upg2
 execute if entity @s[scores={sea_crafter=50203},tag=!SEA_w_flamethrower_upg3] run tag @s add SEA_w_flamethrower_upg3
@@ -230,6 +256,8 @@ execute if entity @s[scores={sea_crafter=50612},tag=!SEA_w_ripper_upg12] run tag
 execute if entity @s[scores={sea_crafter=50613},tag=!SEA_w_ripper_upg13] run tag @s add SEA_w_ripper_upg13
 execute if entity @s[scores={sea_crafter=50614},tag=!SEA_w_ripper_upg14] run tag @s add SEA_w_ripper_upg14
 execute if entity @s[scores={sea_crafter=50615},tag=!SEA_w_ripper_upg15] run tag @s add SEA_w_ripper_upg15
+
+
 
 function skyblock:sea/p/w/recalc
 
