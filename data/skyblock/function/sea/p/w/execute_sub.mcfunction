@@ -71,7 +71,7 @@ execute if entity @s[scores={sea_crafter=50118},tag=!SEA_w_axe_upg18] run tag @s
 execute if entity @s[scores={sea_crafter=50119},tag=!SEA_w_axe_upg19] run tag @s add SEA_w_axe_upg19
 execute if entity @s[scores={sea_crafter=50120},tag=!SEA_w_axe_upg20] run tag @s add SEA_w_axe_upg20
 
-#喷火枪
+#喷火器
 # 距 充 充 充 距
 #    耗
 #    技 攻 攻

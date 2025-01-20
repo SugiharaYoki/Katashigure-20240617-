@@ -1,4 +1,4 @@
-tellraw @s {"text":"『武器升级页面 - 喷火枪』","bold":true,"color":"red"}
+tellraw @s {"text":"『武器升级页面 - 喷火器』","bold":true,"color":"red"}
 tellraw @s {"text":"   "}
 
 summon marker ~ ~ ~ {Tags:["SEA_w_flamethrower_displaymarker","SEA_w_flamethrower_displaymarker0"]}
@@ -56,7 +56,7 @@ execute if entity @s[tag=!SEA_w_flamethrower_upg14] run data modify entity @n[ta
 execute if entity @s[tag=!SEA_w_flamethrower_upg15] run data modify entity @n[tag=SEA_w_flamethrower_displaymarker15] CustomName set value '" □ "'
 execute if entity @s[tag=!SEA_w_flamethrower_upg16] run data modify entity @n[tag=SEA_w_flamethrower_displaymarker16] CustomName set value '" □ "'
 
-#喷火枪
+#喷火器
 # 距 充 充 充 距
 #    耗
 #    技 攻 攻

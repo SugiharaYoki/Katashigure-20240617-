@@ -14,7 +14,7 @@ tag @s remove sea_w_flamethrower_skill_cost_2
 tag @s remove SEA_w_03_effected
 
 
-#喷火枪
+#喷火器
 # 距 充 充 充 距
 #    耗
 #    技 攻 攻

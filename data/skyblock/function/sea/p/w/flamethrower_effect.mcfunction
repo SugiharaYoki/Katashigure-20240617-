@@ -12,7 +12,7 @@ execute if entity @s[tag=SEA_w_flamethrower_upg10] run tag @s add sea_w_flamethr
 
 tag @s add SEA_w_03_effected
 
-#喷火枪
+#喷火器
 # 距 充 充 充 距
 #    耗
 #    技 攻 攻

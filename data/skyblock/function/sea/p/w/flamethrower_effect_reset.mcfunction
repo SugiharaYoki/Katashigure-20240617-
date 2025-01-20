@@ -38,7 +38,7 @@ execute if entity @s[tag=SEAPT] run playsound block.grindstone.use player @a ~ ~
 execute if entity @s[tag=SEAPT] run function skyblock:sea/p/w/flamethrower_effect_remove
 execute if entity @s[tag=SEAPT] run function skyblock:sea/p/w/flamethrower_page
 
-#喷火枪
+#喷火器
 # 距 充 充 充 距
 #    耗
 #    技 攻 攻
