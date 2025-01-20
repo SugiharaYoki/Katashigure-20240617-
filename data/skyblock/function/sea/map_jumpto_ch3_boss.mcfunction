@@ -36,6 +36,7 @@ give @a[tag=SEAPT] gunpowder 5
 tag @a[tag=SEAPT] add e_w_01
 tag @a[tag=SEAPT] add e_w_02
 tag @a[tag=SEAPT] add e_w_03
+tag @a[tag=SEAPT] add e_w_06
 #scoreboard players set @a[tag=SEAPT] sea_i_trim_zombie 12
 #scoreboard players set @a[tag=SEAPT] sea_i_trim_spider 6
 #scoreboard players set @a[tag=SEAPT] sea_i_trim_human 6
