@@ -113,12 +113,12 @@ execute if entity @s[scores={sea_crafter=50211}] unless entity @s[scores={sea_i_
 execute if entity @s[scores={sea_crafter=50212}] unless entity @s[scores={sea_i_iron_ingot=10..}] run tag @s add SEA_w_upg_FAILED
 execute if entity @s[scores={sea_crafter=50202}] if entity @s[tag=!SEA_w_flamethrower_upg1] run tag @s add SEA_w_upg_FAILED_NC
 execute if entity @s[scores={sea_crafter=50203}] if entity @s[tag=!SEA_w_flamethrower_upg2] run tag @s add SEA_w_upg_FAILED_NC
-execute if entity @s[scores={sea_crafter=50204}] if entity @s[tag=!SEA_w_flamethrower_upg3] run tag @s add SEA_w_upg_FAILED_NC
+execute if entity @s[scores={sea_crafter=50204}] if entity @s[tag=!SEA_w_flamethrower_upg3,tag=!SEA_w_flamethrower_upg12] run tag @s add SEA_w_upg_FAILED_NC
 execute if entity @s[scores={sea_crafter=50205}] if entity @s[tag=!SEA_w_flamethrower_upg4] run tag @s add SEA_w_upg_FAILED_NC
 execute if entity @s[scores={sea_crafter=50206}] if entity @s[tag=!SEA_w_flamethrower_upg2] run tag @s add SEA_w_upg_FAILED_NC
 execute if entity @s[scores={sea_crafter=50207}] if entity @s[tag=!SEA_w_flamethrower_upg6] run tag @s add SEA_w_upg_FAILED_NC
 execute if entity @s[scores={sea_crafter=50208}] if entity @s[tag=!SEA_w_flamethrower_upg7] run tag @s add SEA_w_upg_FAILED_NC
-execute if entity @s[scores={sea_crafter=50209}] if entity @s[tag=!SEA_w_flamethrower_upg8] run tag @s add SEA_w_upg_FAILED_NC
+execute if entity @s[scores={sea_crafter=50209}] if entity @s[tag=!SEA_w_flamethrower_upg8,tag=!SEA_w_flamethrower_upg12] run tag @s add SEA_w_upg_FAILED_NC
 execute if entity @s[scores={sea_crafter=50210}] if entity @s[tag=!SEA_w_flamethrower_upg7] run tag @s add SEA_w_upg_FAILED_NC
 execute if entity @s[scores={sea_crafter=50211}] if entity @s[tag=!SEA_w_flamethrower_upg1] run tag @s add SEA_w_upg_FAILED_NC
 execute if entity @s[scores={sea_crafter=50212}] if entity @s[tag=!SEA_w_flamethrower_upg4,tag=!SEA_w_flamethrower_upg9] run tag @s add SEA_w_upg_FAILED_NC
