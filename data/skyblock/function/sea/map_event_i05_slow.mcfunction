@@ -91,6 +91,7 @@ execute if score sea_ch5_instant_freeze sea_4temp2 matches 1..140 run function s
 
 execute store result score sea_ch5_mood sea_4temp1 run random value 1..25
 execute positioned 90112 149 103 if score sea_ch5_mood sea_4temp1 matches 1 as @r[tag=SEAPT,distance=0..400] run function skyblock:sea/e/ch5/mood_1
+execute positioned 90112 149 103 if score sea_ch5_mood sea_4temp1 matches 3..20 as @r[tag=SEAPT,distance=0..400] at @s positioned over world_surface if entity @s[distance=0..1.5] run function skyblock:sea/e/ch5/mood_1_surface
 
 
 
