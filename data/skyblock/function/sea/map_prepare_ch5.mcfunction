@@ -120,6 +120,7 @@ fill 90091 149 106 90088 149 106 minecraft:waxed_copper_bulb[lit=false] replace 
 fill 90067 132 91 90079 132 91 minecraft:structure_void replace minecraft:lantern
 fill 90103 150 114 90103 146 117 minecraft:waxed_copper_bulb[lit=false] replace minecraft:waxed_copper_bulb[lit=true]
 fill 90078 124 116 90078 124 101 minecraft:waxed_copper_bulb[lit=false] replace minecraft:waxed_copper_bulb[lit=true]
+fill 90078 139 87 90086 139 87 minecraft:waxed_copper_bulb[lit=false] replace minecraft:waxed_copper_bulb[lit=true]
 
 execute positioned 90129 137 109 run function skyblock:sea/m/mine
 execute positioned 90128 137 113 run function skyblock:sea/m/mine
