@@ -580,15 +580,18 @@ setblock 90107 146 103 minecraft:waxed_copper_bulb[lit=true]
 setblock 90115 139 103 minecraft:waxed_copper_bulb[lit=true]
 setblock 90114 141 103 minecraft:waxed_cut_copper_slab[type=bottom]
 setblock 90113 141 103 minecraft:waxed_cut_copper_slab[type=double]
-fill 90111 141 105 90111 141 104 minecraft:waxed_cut_copper_slab[type=top]
-fill 90108 139 98 90108 138 98 minecraft:waxed_cut_copper
-fill 90108 140 94 90106 140 94 waxed_copper_block
-fill 90108 141 94 90105 141 94 minecraft:waxed_cut_copper_slab[type=bottom]
-fill 90124 139 93 90121 139 93 minecraft:polished_andesite_slab[type=bottom]
-fill 90125 138 93 90124 138 93 minecraft:polished_andesite_slab[type=bottom]
-fill 90119 140 121 90119 140 120 waxed_copper_block
+fill 90111 141 105 90111 141 104 minecraft:waxed_cut_copper_slab[type=top] replace air
+fill 90108 139 98 90108 138 98 minecraft:waxed_cut_copper replace air
+fill 90108 140 94 90106 140 94 waxed_copper_block replace air
+fill 90108 141 94 90105 141 94 minecraft:waxed_cut_copper_slab[type=bottom] replace air
+fill 90124 139 93 90121 139 93 minecraft:polished_andesite_slab[type=bottom] replace air
+fill 90125 138 93 90124 138 93 minecraft:polished_andesite_slab[type=bottom] replace air
+fill 90119 140 121 90119 140 120 waxed_copper_block replace air
 setblock 90118 140 120 waxed_copper_block
-
+fill 90107 143 106 90107 140 106 waxed_copper_block replace air
+fill 90101 140 103 90101 142 103 waxed_copper_block replace air
+fill 90125 155 127 90122 155 127 waxed_copper_block replace air
+fill 90127 156 127 90124 156 127 minecraft:waxed_cut_copper_slab[type=bottom] replace air
 
 fill 90154 167 121 90132 149 101 minecraft:structure_void replace minecraft:mangrove_roots
 fill 90138 148 117 90132 162 131 minecraft:structure_void replace minecraft:mangrove_roots
