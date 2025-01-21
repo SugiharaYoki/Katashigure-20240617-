@@ -32,9 +32,10 @@ setblock 90136 154 114 minecraft:spore_blossom
 setblock 90134 157 124 minecraft:spore_blossom
 setblock 90135 146 120 minecraft:spore_blossom
 
-fill 90154 167 121 90132 149 101 minecraft:mangrove_roots replace minecraft:structure_void
-fill 90138 148 117 90132 162 131 minecraft:mangrove_roots replace minecraft:structure_void
-fill 90134 145 90 90120 136 101 minecraft:mangrove_roots replace minecraft:structure_void
+
+
+
+
 
 execute positioned 90097 144 115 run kill @n[tag=sea_drone,distance=0..3]
 
@@ -109,6 +110,15 @@ setblock 90123 138 153 fire
 setblock 90125 137 152 fire
 fill 90124 138 154 90123 139 154 air
 fill 90100 144 116 90097 144 116 air
+fill 90154 167 121 90132 149 101 minecraft:mangrove_roots replace minecraft:structure_void
+fill 90138 148 117 90132 162 131 minecraft:mangrove_roots replace minecraft:structure_void
+fill 90134 145 90 90120 136 101 minecraft:mangrove_roots replace minecraft:structure_void
+fill 90155 132 91 90095 132 91 minecraft:structure_void replace minecraft:lantern
+setblock 90134 144 95 minecraft:redstone_lamp[lit=false]
+fill 90110 144 95 90094 140 90 minecraft:redstone_lamp[lit=false] replace minecraft:redstone_lamp[lit=true]
+fill 90091 149 106 90088 149 106 minecraft:waxed_copper_bulb[lit=false] replace minecraft:waxed_copper_bulb[lit=true]
+fill 90067 132 91 90079 132 91 minecraft:structure_void replace minecraft:lantern
+
 
 execute positioned 90129 137 109 run function skyblock:sea/m/mine
 execute positioned 90128 137 113 run function skyblock:sea/m/mine

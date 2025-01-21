@@ -628,6 +628,11 @@ fill 90134 155 140 90134 155 141 minecraft:air
 fill 90124 157 131 90132 150 125 minecraft:structure_void replace minecraft:mangrove_roots
 setblock 90134 138 106 birch_button[facing=south]
 setblock 90113 89 82 air
+fill 90155 132 91 90095 132 91 minecraft:lantern replace minecraft:structure_void
+setblock 90134 144 95 minecraft:redstone_lamp[lit=true]
+fill 90110 144 95 90094 140 90 minecraft:redstone_lamp[lit=true] replace minecraft:redstone_lamp[lit=false]
+fill 90091 149 106 90088 149 106 minecraft:waxed_copper_bulb[lit=true] replace minecraft:waxed_copper_bulb[lit=false]
+fill 90067 132 91 90079 132 91 minecraft:lantern replace minecraft:structure_void
 
 #多人限定
 setblock 90081 113 112 minecraft:waxed_copper_bulb[lit=false]
