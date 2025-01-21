@@ -2,6 +2,8 @@
 
 setblock 90074 103 136 lectern[facing=east]
 
+time set 20000
+
 #第五章出生点90146 84 42
 
 scoreboard players set @n[tag=sc] sea_4temp2 0
