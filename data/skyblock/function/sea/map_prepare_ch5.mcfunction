@@ -86,6 +86,8 @@ fill 90111 141 105 90111 141 104 air
 fill 90108 139 98 90108 138 98 air
 fill 90108 140 94 90106 140 94 air
 fill 90108 141 94 90105 141 94 air
+fill 90124 139 93 90121 139 93 air
+fill 90125 138 93 90124 138 93 air
 
 execute positioned 90129 137 109 run function skyblock:sea/m/mine
 execute positioned 90128 137 113 run function skyblock:sea/m/mine

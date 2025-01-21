@@ -584,6 +584,8 @@ fill 90111 141 105 90111 141 104 minecraft:waxed_cut_copper_slab[type=top]
 fill 90108 139 98 90108 138 98 minecraft:waxed_cut_copper
 fill 90108 140 94 90106 140 94 waxed_copper_block
 fill 90108 141 94 90105 141 94 minecraft:waxed_cut_copper_slab[type=bottom]
+fill 90124 139 93 90121 139 93 minecraft:polished_andesite_slab[type=bottom]
+fill 90125 138 93 90124 138 93 minecraft:polished_andesite_slab[type=bottom]
 
 fill 90154 167 121 90132 149 101 minecraft:structure_void replace minecraft:mangrove_roots
 fill 90138 148 117 90132 162 131 minecraft:structure_void replace minecraft:mangrove_roots
