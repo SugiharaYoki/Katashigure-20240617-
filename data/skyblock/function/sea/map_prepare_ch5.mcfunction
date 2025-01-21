@@ -36,6 +36,8 @@ fill 90154 167 121 90132 149 101 minecraft:mangrove_roots replace minecraft:stru
 fill 90138 148 117 90132 162 131 minecraft:mangrove_roots replace minecraft:structure_void
 fill 90134 145 90 90120 136 101 minecraft:mangrove_roots replace minecraft:structure_void
 
+execute positioned 90097 144 115 run kill @n[tag=sea_drone,distance=0..3]
+
 #主平台地形变化
 setblock 90134 138 105 air
 setblock 90134 137 105 air
