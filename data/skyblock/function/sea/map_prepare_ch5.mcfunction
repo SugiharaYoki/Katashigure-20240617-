@@ -133,8 +133,8 @@ item replace block 90141 84 49 container.12 with echo_shard 1
 item replace block 90141 84 49 container.14 with disc_fragment_5 2
 
 setblock 90121 78 65 chest[facing=east]
-item replace block 90141 84 49 container.12 with arrow 3
-item replace block 90141 84 49 container.14 with gunpowder 1
+item replace block 90121 78 65 container.12 with arrow 3
+item replace block 90121 78 65 container.14 with gunpowder 1
 
 setblock 90117 79 56 minecraft:flower_pot
 
