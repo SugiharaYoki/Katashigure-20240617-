@@ -592,6 +592,15 @@ fill 90107 143 106 90107 140 106 waxed_copper_block replace air
 fill 90101 140 103 90101 142 103 waxed_copper_block replace air
 fill 90125 155 127 90122 155 127 waxed_copper_block replace air
 fill 90127 156 127 90124 156 127 minecraft:waxed_cut_copper_slab[type=bottom] replace air
+setblock 90119 157 130 minecraft:redstone_lamp[lit=true]
+setblock 90120 148 114 minecraft:redstone_lamp[lit=true]
+setblock 90115 140 108 air
+setblock 90113 143 110 air
+setblock 90110 140 109 air
+setblock 90118 137 109 air
+setblock 90117 140 112 air
+setblock 90123 138 153 air
+fill 90124 138 154 90123 139 154 glass
 
 fill 90154 167 121 90132 149 101 minecraft:structure_void replace minecraft:mangrove_roots
 fill 90138 148 117 90132 162 131 minecraft:structure_void replace minecraft:mangrove_roots
