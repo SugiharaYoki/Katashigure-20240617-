@@ -16,14 +16,14 @@ execute if score sea_ch5_mood sea_4temp2 matches 13 positioned ~120 ~ ~120 posit
 execute if score sea_ch5_mood sea_4temp2 matches 14 positioned ~-120 ~ ~-120 positioned over world_surface run summon lightning_bolt
 execute if score sea_ch5_mood sea_4temp2 matches 15 positioned ~120 ~ ~-120 positioned over world_surface run summon lightning_bolt
 execute if score sea_ch5_mood sea_4temp2 matches 16 positioned ~-120 ~ ~120 positioned over world_surface run summon lightning_bolt
-execute if score sea_ch5_mood sea_4temp2 matches 21 as @s[y=90,dy=600,x=85000,dx=10000,z=-5000,dz=10000] positioned ~ ~ ~50 run playsound ambient.basalt_deltas.mood ambient @a ~ ~ ~ 35 1.9
-execute if score sea_ch5_mood sea_4temp2 matches 22 as @s[y=90,dy=600,x=85000,dx=10000,z=-5000,dz=10000] positioned ~ ~ ~-50 run playsound ambient.basalt_deltas.mood ambient @a ~ ~ ~ 35 1.9
-execute if score sea_ch5_mood sea_4temp2 matches 23 as @s[y=90,dy=600,x=85000,dx=10000,z=-5000,dz=10000] positioned ~50 ~ ~ run playsound ambient.basalt_deltas.mood ambient @a ~ ~ ~ 35 1.9
-execute if score sea_ch5_mood sea_4temp2 matches 24 as @s[y=90,dy=600,x=85000,dx=10000,z=-5000,dz=10000] positioned ~-50 ~ ~ run playsound ambient.basalt_deltas.mood ambient @a ~ ~ ~ 35 1.9
-execute if score sea_ch5_mood sea_4temp2 matches 25 as @s[y=90,dy=600,x=85000,dx=10000,z=-5000,dz=10000] positioned ~ ~ ~120 run playsound ambient.basalt_deltas.mood ambient @a ~ ~ ~ 35 1.9
-execute if score sea_ch5_mood sea_4temp2 matches 26 as @s[y=90,dy=600,x=85000,dx=10000,z=-5000,dz=10000] positioned ~ ~ ~-120 run playsound ambient.basalt_deltas.mood ambient @a ~ ~ ~ 35 1.9
-execute if score sea_ch5_mood sea_4temp2 matches 27 as @s[y=90,dy=600,x=85000,dx=10000,z=-5000,dz=10000] positioned ~120 ~ ~ run playsound ambient.basalt_deltas.mood ambient @a ~ ~ ~ 35 1.9
-execute if score sea_ch5_mood sea_4temp2 matches 28 as @s[y=90,dy=600,x=85000,dx=10000,z=-5000,dz=10000] positioned ~-120 ~ ~ run playsound ambient.basalt_deltas.mood ambient @a ~ ~ ~ 35 1.9
+execute if score sea_ch5_mood sea_4temp2 matches 21 as @s[y=90,dy=600,x=85000,dx=10000,z=-5000,dz=10000] positioned ~ ~ ~50 run playsound ambient.basalt_deltas.mood ambient @a ~ ~ ~ 15 1.9
+execute if score sea_ch5_mood sea_4temp2 matches 22 as @s[y=90,dy=600,x=85000,dx=10000,z=-5000,dz=10000] positioned ~ ~ ~-50 run playsound ambient.basalt_deltas.mood ambient @a ~ ~ ~ 15 1.9
+execute if score sea_ch5_mood sea_4temp2 matches 23 as @s[y=90,dy=600,x=85000,dx=10000,z=-5000,dz=10000] positioned ~50 ~ ~ run playsound ambient.basalt_deltas.mood ambient @a ~ ~ ~ 15 1.9
+execute if score sea_ch5_mood sea_4temp2 matches 24 as @s[y=90,dy=600,x=85000,dx=10000,z=-5000,dz=10000] positioned ~-50 ~ ~ run playsound ambient.basalt_deltas.mood ambient @a ~ ~ ~ 15 1.9
+execute if score sea_ch5_mood sea_4temp2 matches 25 as @s[y=90,dy=600,x=85000,dx=10000,z=-5000,dz=10000] positioned ~ ~ ~120 run playsound ambient.basalt_deltas.mood ambient @a ~ ~ ~ 15 1.9
+execute if score sea_ch5_mood sea_4temp2 matches 26 as @s[y=90,dy=600,x=85000,dx=10000,z=-5000,dz=10000] positioned ~ ~ ~-120 run playsound ambient.basalt_deltas.mood ambient @a ~ ~ ~ 15 1.9
+execute if score sea_ch5_mood sea_4temp2 matches 27 as @s[y=90,dy=600,x=85000,dx=10000,z=-5000,dz=10000] positioned ~120 ~ ~ run playsound ambient.basalt_deltas.mood ambient @a ~ ~ ~ 15 1.9
+execute if score sea_ch5_mood sea_4temp2 matches 28 as @s[y=90,dy=600,x=85000,dx=10000,z=-5000,dz=10000] positioned ~-120 ~ ~ run playsound ambient.basalt_deltas.mood ambient @a ~ ~ ~ 15 1.9
 execute if score sea_ch5_mood sea_4temp2 matches 29 as @s[y=90,dy=600,x=85000,dx=10000,z=-5000,dz=10000] positioned ~50 ~ ~50 run playsound ambient.basalt_deltas.mood ambient @a ~ ~ ~ 35 1.9
 execute if score sea_ch5_mood sea_4temp2 matches 30 as @s[y=90,dy=600,x=85000,dx=10000,z=-5000,dz=10000] positioned ~-50 ~ ~-50 run playsound ambient.basalt_deltas.mood ambient @a ~ ~ ~ 35 1.9
 execute if score sea_ch5_mood sea_4temp2 matches 31 as @s[y=90,dy=600,x=85000,dx=10000,z=-5000,dz=10000] positioned ~50 ~ ~-50 run playsound ambient.basalt_deltas.mood ambient @a ~ ~ ~ 35 1.9
@@ -31,7 +31,7 @@ execute if score sea_ch5_mood sea_4temp2 matches 32 as @s[y=90,dy=600,x=85000,dx
 execute if score sea_ch5_mood sea_4temp2 matches 33 as @s[y=90,dy=600,x=85000,dx=10000,z=-5000,dz=10000] positioned ~120 ~ ~120 run playsound ambient.basalt_deltas.mood ambient @a ~ ~ ~ 35 1.9
 execute if score sea_ch5_mood sea_4temp2 matches 34 as @s[y=90,dy=600,x=85000,dx=10000,z=-5000,dz=10000] positioned ~-120 ~ ~-120 run playsound ambient.basalt_deltas.mood ambient @a ~ ~ ~ 35 1.9
 execute if score sea_ch5_mood sea_4temp2 matches 35 as @s[y=90,dy=600,x=85000,dx=10000,z=-5000,dz=10000] positioned ~120 ~ ~-120 run playsound ambient.basalt_deltas.mood ambient @a ~ ~ ~ 35 1.9
-execute if score sea_ch5_mood sea_4temp2 matches 36 as @s[y=90,dy=600,x=85000,dx=10000,z=-5000,dz=10000] positioned ~-120 ~ ~120 run playsound ambient.basalt_deltas.mood ambient @a ~ ~ ~ 35 1.9
+execute if score sea_ch5_mood sea_4temp2 matches 36 as @s[y=90,dy=600,x=85000,dx=10000,z=-5000,dz=10000] positioned ~-120 ~ ~120 run playsound ambient.basalt_deltas.mood ambient @a ~ ~ ~ 5 1.9
 execute if score sea_ch5_mood sea_4temp2 matches 41 if score sea_ch5_mood sea_4temp3 matches 1 as @s[y=90,dy=600,x=85000,dx=10000,z=-5000,dz=10000] positioned ~ ~ ~50 run playsound ambient.soul_sand_valley.mood ambient @a ~ ~ ~ 35 0.5
 execute if score sea_ch5_mood sea_4temp2 matches 42 if score sea_ch5_mood sea_4temp3 matches 1 as @s[y=90,dy=600,x=85000,dx=10000,z=-5000,dz=10000] positioned ~ ~ ~-50 run playsound ambient.soul_sand_valley.mood ambient @a ~ ~ ~ 35 0.5
 execute if score sea_ch5_mood sea_4temp2 matches 43 if score sea_ch5_mood sea_4temp3 matches 1 as @s[y=90,dy=600,x=85000,dx=10000,z=-5000,dz=10000] positioned ~50 ~ ~ run playsound ambient.soul_sand_valley.mood ambient @a ~ ~ ~ 35 0.5
