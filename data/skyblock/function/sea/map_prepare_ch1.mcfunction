@@ -572,6 +572,18 @@ fill 90120 144 100 90120 144 97 waxed_copper_block
 fill 90120 143 100 90120 143 97 minecraft:waxed_cut_copper_slab[type=top]
 setblock 90121 145 98 minecraft:waxed_cut_copper_slab[type=bottom]
 setblock 90121 143 98 minecraft:waxed_cut_copper_slab[type=top]
+setblock 90118 144 95 minecraft:redstone_lamp[lit=true]
+setblock 90118 140 90 minecraft:redstone_lamp[lit=true]
+setblock 90110 140 90 minecraft:redstone_lamp[lit=true]
+setblock 90107 146 106 minecraft:waxed_copper_bulb[lit=true]
+setblock 90107 146 103 minecraft:waxed_copper_bulb[lit=true]
+setblock 90115 139 103 minecraft:waxed_copper_bulb[lit=true]
+setblock 90114 141 103 minecraft:waxed_cut_copper_slab[type=bottom]
+setblock 90113 141 103 minecraft:waxed_cut_copper_slab[type=double]
+fill 90111 141 105 90111 141 104 minecraft:waxed_cut_copper_slab[type=top]
+fill 90108 139 98 90108 138 98 minecraft:waxed_cut_copper
+fill 90108 140 94 90106 140 94 waxed_copper_block
+fill 90108 141 94 90106 141 94 minecraft:waxed_cut_copper_slab[type=bottom]
 
 fill 90154 167 121 90132 149 101 minecraft:structure_void replace minecraft:mangrove_roots
 fill 90138 148 117 90132 162 131 minecraft:structure_void replace minecraft:mangrove_roots

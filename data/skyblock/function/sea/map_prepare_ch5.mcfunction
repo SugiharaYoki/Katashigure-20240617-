@@ -74,6 +74,18 @@ fill 90120 144 100 90120 144 97 air
 fill 90120 143 100 90120 143 97 air
 setblock 90121 145 98 air
 setblock 90121 143 98 air
+setblock 90118 144 95 minecraft:redstone_lamp[lit=false]
+setblock 90118 140 90 minecraft:redstone_lamp[lit=false]
+setblock 90110 140 90 minecraft:redstone_lamp[lit=false]
+setblock 90107 146 106 minecraft:waxed_copper_bulb[lit=false]
+setblock 90107 146 103 minecraft:waxed_copper_bulb[lit=false]
+setblock 90115 139 103 air
+setblock 90114 141 103 air
+setblock 90113 141 103 air
+fill 90111 141 105 90111 141 104 air
+fill 90108 139 98 90108 138 98 air
+fill 90108 140 94 90106 140 94 air
+fill 90108 141 94 90106 141 94 air
 
 execute positioned 90129 137 109 run function skyblock:sea/m/mine
 execute positioned 90128 137 113 run function skyblock:sea/m/mine
