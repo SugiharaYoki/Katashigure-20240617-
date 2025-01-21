@@ -15,7 +15,7 @@ execute as @s[tag=sc,scores={sea_4temp2=1195}] positioned 90133 137 108 if entit
  run tellraw @a[distance=0..50] {"text":"玛瑞莲：“至于那下面有什么……呵呵，可能会超乎你的预料。”","color":"dark_purple"}
 execute as @s[tag=sc,scores={sea_4temp2=1195}] run scoreboard players add @n[tag=sc] sea_4temp2 5
 execute as @s[tag=sc,scores={sea_4temp2=1222}] positioned 90133 137 108 if entity @n[tag=sc,scores={sea_player=1..}] \
- run tellraw @a[distance=0..50] {"text":"玛瑞莲：“我的建议是，别想着收集下面的任何情报。但……你可要多探索一下那地方。我相信，只有这样你才会理解我今后的用意。”","color":"dark_purple"}
+ run tellraw @a[distance=0..50] {"text":"玛瑞莲：“我的建议是，别想着收集下面的任何情报。\n但……你可要多探索一下那地方。\n我相信，只有这样你才会理解我今后的用意。”","color":"dark_purple"}
 execute as @s[tag=sc,scores={sea_4temp2=1260}] positioned 90133 137 108 if entity @n[tag=sc,scores={sea_player=1}] \
  run tellraw @a[distance=0..50] {"text":"玛瑞莲：“先生，您会明白的。我们之后再聊。”","color":"dark_purple"}
 execute as @s[tag=sc,scores={sea_4temp2=1260}] positioned 90133 137 108 if entity @n[tag=sc,scores={sea_player=2..}] \
