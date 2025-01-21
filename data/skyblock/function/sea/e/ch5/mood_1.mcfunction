@@ -1,4 +1,4 @@
-execute store result score sea_ch5_mood sea_4temp2 run random value 1..60
+execute store result score sea_ch5_mood sea_4temp2 run random value 1..56
 execute store result score sea_ch5_mood sea_4temp3 run random value 1..2
 execute if score sea_ch5_mood sea_4temp2 matches 1 as @r[tag=SEAPT,distance=0..400] positioned ~ ~ ~50 positioned over world_surface run summon lightning_bolt
 execute if score sea_ch5_mood sea_4temp2 matches 2 as @r[tag=SEAPT,distance=0..400] positioned ~ ~ ~-50 positioned over world_surface run summon lightning_bolt
