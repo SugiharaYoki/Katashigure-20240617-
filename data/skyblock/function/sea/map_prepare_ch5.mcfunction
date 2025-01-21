@@ -102,7 +102,9 @@ setblock 90110 140 109 fire
 setblock 90118 137 109 fire
 setblock 90117 140 112 fire
 setblock 90123 138 153 fire
+setblock 90125 137 152 fire
 fill 90124 138 154 90123 139 154 air
+fill 90100 144 116 90097 144 116 air
 
 execute positioned 90129 137 109 run function skyblock:sea/m/mine
 execute positioned 90128 137 113 run function skyblock:sea/m/mine

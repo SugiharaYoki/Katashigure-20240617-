@@ -560,16 +560,16 @@ setblock 90128 136 107 polished_tuff
 fill 90127 136 113 90127 136 112 polished_tuff
 setblock 90128 136 110 polished_tuff
 fill 90126 138 112 90126 138 111 iron_bars
-fill 90127 144 109 90127 144 107 minecraft:waxed_copper_block
-fill 90128 144 107 90128 144 108 minecraft:waxed_copper_grate
-fill 90125 144 106 90123 144 106 waxed_copper_block
-fill 90122 145 106 90124 145 106 minecraft:waxed_cut_copper_slab[type=bottom]
-fill 90122 137 106 90120 137 106 air
-fill 90131 149 100 90131 149 98 minecraft:waxed_cut_copper_slab[type=bottom]
-fill 90129 149 95 90129 149 94 minecraft:waxed_cut_copper_slab[type=bottom]
-fill 90120 145 100 90120 145 97 minecraft:waxed_cut_copper_slab[type=bottom]
-fill 90120 144 100 90120 144 97 waxed_copper_block
-fill 90120 143 100 90120 143 97 minecraft:waxed_cut_copper_slab[type=top]
+fill 90127 144 109 90127 144 107 minecraft:waxed_copper_block replace air
+fill 90128 144 107 90128 144 108 minecraft:waxed_copper_grate replace air
+fill 90125 144 106 90123 144 106 waxed_copper_block replace air
+fill 90122 145 106 90124 145 106 minecraft:waxed_cut_copper_slab[type=bottom] replace air
+fill 90122 137 106 90120 137 106 air replace air
+fill 90131 149 100 90131 149 98 minecraft:waxed_cut_copper_slab[type=bottom] replace air
+fill 90129 149 95 90129 149 94 minecraft:waxed_cut_copper_slab[type=bottom] replace air
+fill 90120 145 100 90120 145 97 minecraft:waxed_cut_copper_slab[type=bottom] replace air
+fill 90120 144 100 90120 144 97 waxed_copper_block replace air
+fill 90120 143 100 90120 143 97 minecraft:waxed_cut_copper_slab[type=top] replace air
 setblock 90121 145 98 minecraft:waxed_cut_copper_slab[type=bottom]
 setblock 90121 143 98 minecraft:waxed_cut_copper_slab[type=top]
 setblock 90118 144 95 minecraft:redstone_lamp[lit=true]
@@ -600,7 +600,9 @@ setblock 90110 140 109 air
 setblock 90118 137 109 air
 setblock 90117 140 112 air
 setblock 90123 138 153 air
-fill 90124 138 154 90123 139 154 glass
+setblock 90125 137 152 air
+fill 90124 138 154 90123 139 154 glass replace air
+fill 90100 144 116 90097 144 116 minecraft:waxed_copper_grate replace air
 
 fill 90154 167 121 90132 149 101 minecraft:structure_void replace minecraft:mangrove_roots
 fill 90138 148 117 90132 162 131 minecraft:structure_void replace minecraft:mangrove_roots
