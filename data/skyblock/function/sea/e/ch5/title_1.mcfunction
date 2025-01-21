@@ -6,14 +6,14 @@ playsound ambient.basalt_deltas.additions master @s ~ ~ ~ 100 0.5
 playsound ambient.basalt_deltas.additions master @s ~ ~ ~ 100 0.5
 playsound ambient.basalt_deltas.additions master @s ~ ~ ~ 100 0.5
 playsound garden2.chapter_title master @s ~ ~ ~ 100 1.0
-playsound ambient.basalt_deltas.mood master @s ~ ~ ~ 100 0.5
-playsound ambient.basalt_deltas.mood master @s ~ ~ ~ 100 0.5
-playsound ambient.basalt_deltas.mood master @s ~ ~ ~ 100 0.5
-playsound ambient.basalt_deltas.mood master @s ~ ~ ~ 100 0.5
-playsound ambient.basalt_deltas.mood master @s ~ ~ ~ 100 0.5
-playsound ambient.basalt_deltas.mood master @s ~ ~ ~ 100 0.5
-playsound ambient.basalt_deltas.mood master @s ~ ~ ~ 100 0.5
-playsound ambient.basalt_deltas.mood master @s ~ ~ ~ 100 0.5
-playsound ambient.basalt_deltas.mood master @s ~ ~ ~ 100 0.5
+#playsound ambient.basalt_deltas.mood master @s ~ ~ ~ 100 0.5
+#playsound ambient.basalt_deltas.mood master @s ~ ~ ~ 100 0.5
+#playsound ambient.basalt_deltas.mood master @s ~ ~ ~ 100 0.5
+#playsound ambient.basalt_deltas.mood master @s ~ ~ ~ 100 0.5
+#playsound ambient.basalt_deltas.mood master @s ~ ~ ~ 100 0.5
+#playsound ambient.basalt_deltas.mood master @s ~ ~ ~ 100 0.5
+#playsound ambient.basalt_deltas.mood master @s ~ ~ ~ 100 0.5
+#playsound ambient.basalt_deltas.mood master @s ~ ~ ~ 100 0.5
+#playsound ambient.basalt_deltas.mood master @s ~ ~ ~ 100 0.5
 advancement grant @s only skyblock:sea/chapter5
 tag @s add e_i_38
