@@ -53,7 +53,30 @@ setblock 90133 156 138 mangrove_roots
 fill 90134 155 140 90134 155 141 minecraft:mangrove_roots
 fill 90124 157 131 90132 150 125 minecraft:mangrove_roots replace minecraft:structure_void
 
+fill 90120 136 95 90118 136 97 air
+fill 90120 127 95 90118 127 97 air
+fill 90119 136 95 90119 122 95 ladder[facing=south]
+setblock 90129 136 106 air
+setblock 90129 136 107 air
+setblock 90128 136 107 air
+fill 90127 136 113 90127 136 112 air
+setblock 90128 136 110 air
+fill 90126 138 112 90126 138 111 air
+fill 90127 144 109 90127 144 107 air
+fill 90128 144 107 90128 144 108 air
+fill 90125 144 106 90123 144 106 air
+fill 90122 145 106 90124 145 106 air
+fill 90122 137 106 90120 137 106 minecraft:waxed_copper_block
+fill 90131 149 100 90131 149 98 air
+fill 90129 149 95 90129 149 94 air
+fill 90120 145 100 90120 145 97 air
+fill 90120 144 100 90120 144 97 air
+fill 90120 143 100 90120 143 97 air
+setblock 90121 145 98 air
+setblock 90121 143 98 air
 
+execute positioned 90129 137 109 run function skyblock:sea/m/mine
+execute positioned 90128 137 113 run function skyblock:sea/m/mine
 
 setblock 90096 71 64 chest[facing=north]
 item replace block 90096 71 64 container.12 with glow_berries 4

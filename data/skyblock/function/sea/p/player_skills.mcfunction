@@ -1,5 +1,6 @@
 
 execute at @s \
+if block ~ ~0 ~ water \
 if block ~ ~-0.2 ~ water \
 if block ~ ~-1.1 ~ water \
 if block ~ ~-2.1 ~ water \

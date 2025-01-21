@@ -551,6 +551,28 @@ fill 90114 92 96 90112 89 96 minecraft:iron_block
 fill 90116 99 73 90116 101 73 air
 
 #第五章地形变化撤销
+fill 90119 136 95 90119 122 95 air
+fill 90120 136 95 90118 136 97 minecraft:iron_trapdoor[half=top]
+fill 90120 127 95 90118 127 97 minecraft:iron_trapdoor[half=top]
+setblock 90129 136 106 polished_tuff
+setblock 90129 136 107 polished_tuff
+setblock 90128 136 107 polished_tuff
+fill 90127 136 113 90127 136 112 polished_tuff
+setblock 90128 136 110 polished_tuff
+fill 90126 138 112 90126 138 111 iron_bars
+fill 90127 144 109 90127 144 107 minecraft:waxed_copper_block
+fill 90128 144 107 90128 144 108 minecraft:waxed_copper_grate
+fill 90125 144 106 90123 144 106 waxed_copper_block
+fill 90122 145 106 90124 145 106 minecraft:waxed_cut_copper_slab[type=bottom]
+fill 90122 137 106 90120 137 106 air
+fill 90131 149 100 90131 149 98 minecraft:waxed_cut_copper_slab[type=bottom]
+fill 90129 149 95 90129 149 94 minecraft:waxed_cut_copper_slab[type=bottom]
+fill 90120 145 100 90120 145 97 minecraft:waxed_cut_copper_slab[type=bottom]
+fill 90120 144 100 90120 144 97 waxed_copper_block
+fill 90120 143 100 90120 143 97 minecraft:waxed_cut_copper_slab[type=top]
+setblock 90121 145 98 minecraft:waxed_cut_copper_slab[type=bottom]
+setblock 90121 143 98 minecraft:waxed_cut_copper_slab[type=top]
+
 fill 90154 167 121 90132 149 101 minecraft:structure_void replace minecraft:mangrove_roots
 fill 90138 148 117 90132 162 131 minecraft:structure_void replace minecraft:mangrove_roots
 fill 90134 145 90 90120 136 101 minecraft:structure_void replace minecraft:mangrove_roots
