@@ -21,6 +21,11 @@ item replace block 90138 83 55 container.13 with glow_berries 8
 
 summon minecraft:interaction 90126 90.3 58 {CustomName:'[{"text":"多功能工作站"}]',Tags:["SEAcrafter","SEAcrafter15"]}
 summon minecraft:marker 90126 89 59 {Tags:["SEAcrafter_tp","SEAcrafter_tp15"]}
+summon minecraft:interaction 90121 123.3 52 {CustomName:'[{"text":"多功能工作站"}]',Tags:["SEAcrafter","SEAcrafter16"]}
+summon minecraft:marker 90121 122 51 {Tags:["SEAcrafter_tp","SEAcrafter_tp16"]}
+
+summon minecraft:interaction 90130 123.3 48 {CustomName:'[{"text":"器械式治疗仪"}]',Tags:["SEAaidbox"]}
+
 fill 90114 91 96 90112 89 96 minecraft:air
 
 #花朵
@@ -33,7 +38,8 @@ setblock 90134 157 124 minecraft:spore_blossom
 setblock 90135 146 120 minecraft:spore_blossom
 
 
-
+#工程区
+setblock 90119 122 52 chest[facing=north]
 
 
 
