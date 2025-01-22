@@ -613,6 +613,7 @@ fill 90154 125 100 90155 117 94 minecraft:structure_void replace minecraft:mangr
 setblock 90136 148 111 air
 setblock 90131 150 146 glass
 fill 90130 150 146 90130 149 146 air
+fill 90111 145 140 90111 143 142 iron_bars
 
 fill 90154 167 121 90132 149 101 minecraft:structure_void replace minecraft:mangrove_roots
 fill 90138 148 117 90132 162 131 minecraft:structure_void replace minecraft:mangrove_roots
