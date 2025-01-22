@@ -605,6 +605,7 @@ fill 90124 138 154 90123 139 154 glass replace air
 fill 90100 144 116 90097 144 116 minecraft:waxed_copper_grate replace air
 fill 90078 139 87 90086 139 87 minecraft:waxed_copper_bulb[lit=true] replace minecraft:waxed_copper_bulb[lit=false]
 fill 90148 121 104 90148 123 104 minecraft:air
+fill 90147 124 111 90147 122 111 minecraft:air
 
 fill 90154 167 121 90132 149 101 minecraft:structure_void replace minecraft:mangrove_roots
 fill 90138 148 117 90132 162 131 minecraft:structure_void replace minecraft:mangrove_roots
