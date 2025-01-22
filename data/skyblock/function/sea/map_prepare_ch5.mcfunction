@@ -40,7 +40,7 @@ setblock 90135 146 120 minecraft:spore_blossom
 
 #工程区
 setblock 90119 122 52 chest[facing=north]
-
+setblock 90130 122 46 minecraft:potted_azure_bluet
 
 
 execute positioned 90097 144 115 run kill @n[tag=sea_drone,distance=0..3]
