@@ -125,6 +125,7 @@ fill 90148 121 104 90148 123 104 minecraft:mangrove_roots
 fill 90147 124 111 90147 122 111 minecraft:mangrove_roots
 fill 90146 122 93 90146 119 93 mangrove_roots
 setblock 90145 122 93 mangrove_roots
+fill 90135 119 94 90135 117 94 mangrove_roots
 
 execute positioned 90129 137 109 run function skyblock:sea/m/mine
 execute positioned 90128 137 113 run function skyblock:sea/m/mine
