@@ -128,6 +128,8 @@ setblock 90145 122 93 mangrove_roots
 fill 90135 119 94 90135 117 94 mangrove_roots
 fill 90154 125 100 90155 117 94 minecraft:mangrove_roots replace minecraft:structure_void
 setblock 90136 148 111 minecraft:mangrove_roots
+setblock 90131 150 146 mangrove_roots
+fill 90130 150 146 90130 149 146 mangrove_roots
 
 execute positioned 90129 137 109 run function skyblock:sea/m/mine
 execute positioned 90128 137 113 run function skyblock:sea/m/mine
