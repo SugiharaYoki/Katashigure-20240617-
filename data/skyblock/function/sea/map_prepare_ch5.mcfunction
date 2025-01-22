@@ -43,9 +43,9 @@ setblock 90119 122 52 chest[facing=north]
 setblock 90130 122 46 minecraft:potted_azure_bluet
 
 
-execute positioned 90097 144 115 run kill @n[tag=sea_drone,distance=0..3]
 
 #主平台地形变化
+execute positioned 90097 144 115 run kill @n[tag=sea_drone,distance=0..3]
 setblock 90134 138 105 air
 setblock 90134 137 105 air
 setblock 90135 138 105 mangrove_roots
