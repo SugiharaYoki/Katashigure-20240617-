@@ -1,4 +1,5 @@
 execute if score stageSeconds Azr_system matches 1 run tag @a[tag=azrPlayer] add azrUpdateSpawnPoint
+execute if score stageSeconds Azr_system matches 1 run title @a[tag=azrPlayer] actionbar {"color":"red","text":"Stage 6 - Wave 1"}
 execute if score stageSeconds Azr_system matches 1 run bossbar add azr:progress_bar_normal "Stage 6"
 execute if score stageSeconds Azr_system matches 1 run bossbar set azr:progress_bar_normal color white
 execute if score stageSeconds Azr_system matches 1 run bossbar set azr:progress_bar_normal players @a[tag=azrPlayer]

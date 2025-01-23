@@ -42,8 +42,6 @@ execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system 
 #第四关-BOSS1 9
 execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 9 run function skyblock:azr/stage/stage_event1
 #BOSS1 10
-#BOSS1 Stage Diffident
-execute if score stage Azr_system matches 301 run function skyblock:azr/stage/stage_diffident
 #BOSS1-第五关 11
 execute if score stage Azr_system matches 11 run scoreboard players set stageSeconds Azr_system 0
 #第五关 12..13
@@ -91,16 +89,15 @@ execute if entity @n[tag=AzrielBossFA,type=illusioner] if score stage Azr_system
 
 #execute if entity @s[tag=!Azr_Halt,scores={Azr_Progress=45}] run function skyblock:azr/azrielsmidgarden_stage_bonus_breakout
 
+#奖励关 Stage Diffident 301
+execute if score stage Azr_system matches 301 run function skyblock:azr/stage/stage_diffident
 #奖励关 Stage Cerement 30
-execute if block -79946 39 50 minecraft:birch_button[powered=true] run function skyblock:azr/stage/stage_cerement_prep
 execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 30 run function skyblock:azr/stage/stage_cerement
 #奖励关 Stage Entertain 31
-execute if block -79887 44 164 minecraft:birch_button[powered=true] run function skyblock:azr/stage/stage_entertain_prep
 execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 31 run function skyblock:azr/stage/stage_entertain
 #奖励关 Stage Vestige 240
 execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 240 run function skyblock:azr/stage/stage_vestige
 #奖励关 Stage Suspension 34
-execute if block -79949 33 140 minecraft:birch_button[powered=true] run function skyblock:azr/stage/stage_suspension_prep
 execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 34 run function skyblock:azr/stage/stage_suspension
 #奖励关 Stage Appetence 39
 execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 39 run function skyblock:azr/stage/stage_appetence

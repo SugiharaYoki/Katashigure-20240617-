@@ -67,6 +67,9 @@ scoreboard objectives remove temp_timer10
 scoreboard players set stageSeconds Azr_system 0
 scoreboard players set stage Azr_system 0
 scoreboard players set isStarted Azr_system 0
+scoreboard players reset CerementPassword Azr_system
+scoreboard players reset internal_clock_001 Azr_system
+scoreboard players reset internal_clock_002 Azr_system
 scoreboard objectives setdisplay sidebar SeGa_StandLastBH
 
 #unused

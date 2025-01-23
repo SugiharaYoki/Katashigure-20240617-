@@ -24,7 +24,7 @@ forceload add -79400 200 -79200 400
 fill -79933 38 -15 -79933 40 -14 minecraft:purple_stained_glass
 #stage buttons
 setblock -79932 39 4 birch_button[facing=east,face=wall]{name: "Stage1 alpha & bata"}
-setblock -79935 39 22 birch_button[facing=north,face=wall]{name: "Stage2 alpha & bata"}
+setblock -79935 39 10 birch_button[facing=north,face=wall]{name: "Stage2 alpha & bata"}
 setblock -79934 39 34 birch_button[face=wall,facing=east]{name: "Stage3 alpha"}
 setblock -79924 39 25 birch_button[face=floor,facing=west]{name: "Stage3 alpha bonus"}
 setblock -79956 39 1 minecraft:birch_button[facing=south]{name: "Stage3 beta"}
@@ -33,6 +33,7 @@ setblock -79946 39 50 minecraft:birch_button[face=floor,facing=north]{name: "Sta
 setblock -79936 39 42 birch_button[facing=south,face=wall]{name: "Stage4 alpha bonus"}
 setblock -79959 39 20 minecraft:birch_button[face=floor,facing=west]{name: "Stage4 beta bonus"}
 setblock -79931 39 88 polished_blackstone_button[face=floor,facing=south]{name: "Stage Boss1"}
+setblock -79885 39 39 minecraft:birch_button[face=wall,facing=west]{name: "Before Boss2"}
 
 #Stage1
 setblock -79949 34 15 chest[facing=north]
