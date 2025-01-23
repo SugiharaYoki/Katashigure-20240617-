@@ -2,6 +2,8 @@
 
 setblock 90074 103 136 lectern[facing=east]
 
+time set 20000
+
 #第五章出生点90146 84 42
 
 scoreboard players set @n[tag=sc] sea_4temp2 0
@@ -19,6 +21,11 @@ item replace block 90138 83 55 container.13 with glow_berries 8
 
 summon minecraft:interaction 90126 90.3 58 {CustomName:'[{"text":"多功能工作站"}]',Tags:["SEAcrafter","SEAcrafter15"]}
 summon minecraft:marker 90126 89 59 {Tags:["SEAcrafter_tp","SEAcrafter_tp15"]}
+summon minecraft:interaction 90121 123.3 52 {CustomName:'[{"text":"多功能工作站"}]',Tags:["SEAcrafter","SEAcrafter16"]}
+summon minecraft:marker 90121 122 51 {Tags:["SEAcrafter_tp","SEAcrafter_tp16"]}
+
+summon minecraft:interaction 90130 123.3 48 {CustomName:'[{"text":"器械式治疗仪"}]',Tags:["SEAaidbox"]}
+
 fill 90114 91 96 90112 89 96 minecraft:air
 
 #花朵
@@ -30,11 +37,15 @@ setblock 90136 154 114 minecraft:spore_blossom
 setblock 90134 157 124 minecraft:spore_blossom
 setblock 90135 146 120 minecraft:spore_blossom
 
-fill 90154 167 121 90132 149 101 minecraft:mangrove_roots replace minecraft:structure_void
-fill 90138 148 117 90132 162 131 minecraft:mangrove_roots replace minecraft:structure_void
-fill 90134 145 90 90120 136 101 minecraft:mangrove_roots replace minecraft:structure_void
+
+#工程区
+setblock 90119 122 52 chest[facing=north]
+setblock 90130 122 46 minecraft:potted_azure_bluet
+
+
 
 #主平台地形变化
+execute positioned 90097 144 115 run kill @n[tag=sea_drone,distance=0..3]
 setblock 90134 138 105 air
 setblock 90134 137 105 air
 setblock 90135 138 105 mangrove_roots
@@ -53,7 +64,81 @@ setblock 90133 156 138 mangrove_roots
 fill 90134 155 140 90134 155 141 minecraft:mangrove_roots
 fill 90124 157 131 90132 150 125 minecraft:mangrove_roots replace minecraft:structure_void
 
+fill 90120 136 95 90118 136 97 air
+fill 90120 127 95 90118 127 97 air
+fill 90119 136 95 90119 122 95 ladder[facing=south]
+setblock 90129 136 106 air
+setblock 90129 136 107 air
+setblock 90128 136 107 air
+fill 90127 136 113 90127 136 112 air
+setblock 90128 136 110 air
+fill 90126 138 112 90126 138 111 air
+fill 90127 144 109 90127 144 107 air
+fill 90128 144 107 90128 144 108 air
+fill 90125 144 106 90123 144 106 air
+fill 90122 145 106 90124 145 106 air
+fill 90122 137 106 90120 137 106 minecraft:waxed_copper_block
+fill 90131 149 100 90131 149 98 air
+fill 90129 149 95 90129 149 94 air
+fill 90120 145 100 90120 145 97 air
+fill 90120 144 100 90120 144 97 air
+fill 90120 143 100 90120 143 97 air
+setblock 90121 145 98 air
+setblock 90121 143 98 air
+setblock 90118 144 95 minecraft:redstone_lamp[lit=false]
+setblock 90118 140 90 minecraft:redstone_lamp[lit=false]
+setblock 90110 140 90 minecraft:redstone_lamp[lit=false]
+setblock 90107 146 106 minecraft:waxed_copper_bulb[lit=false]
+setblock 90107 146 103 minecraft:waxed_copper_bulb[lit=false]
+setblock 90115 139 103 air
+setblock 90114 141 103 air
+setblock 90113 141 103 air
+fill 90111 141 105 90111 141 104 air
+fill 90108 139 98 90108 138 98 air
+fill 90108 140 94 90106 140 94 air
+fill 90108 141 94 90105 141 94 air
+fill 90124 139 93 90121 139 93 air
+fill 90125 138 93 90124 138 93 air
+fill 90119 140 121 90119 140 120 air
+setblock 90118 140 120 air
+fill 90107 143 106 90107 140 106 air
+fill 90101 140 103 90101 142 103 air
+fill 90125 155 127 90122 155 127 air
+fill 90127 156 127 90124 156 127 air
+setblock 90119 157 130 minecraft:redstone_lamp[lit=false]
+setblock 90120 148 114 minecraft:redstone_lamp[lit=false]
+setblock 90115 140 108 fire
+setblock 90113 143 110 fire
+setblock 90110 140 109 fire
+setblock 90118 137 109 fire
+setblock 90117 140 112 fire
+setblock 90123 138 153 fire
+setblock 90125 137 152 fire
+fill 90124 138 154 90123 139 154 air
+fill 90100 144 116 90097 144 116 air
+fill 90154 167 121 90132 149 101 minecraft:mangrove_roots replace minecraft:structure_void
+fill 90138 148 117 90132 162 131 minecraft:mangrove_roots replace minecraft:structure_void
+fill 90134 145 90 90120 136 101 minecraft:mangrove_roots replace minecraft:structure_void
+fill 90155 132 91 90095 132 91 minecraft:structure_void replace minecraft:lantern
+setblock 90134 144 95 minecraft:redstone_lamp[lit=false]
+fill 90110 144 95 90094 140 90 minecraft:redstone_lamp[lit=false] replace minecraft:redstone_lamp[lit=true]
+fill 90091 149 106 90088 149 106 minecraft:waxed_copper_bulb[lit=false] replace minecraft:waxed_copper_bulb[lit=true]
+fill 90067 132 91 90079 132 91 minecraft:structure_void replace minecraft:lantern
+fill 90103 150 114 90103 146 117 minecraft:waxed_copper_bulb[lit=false] replace minecraft:waxed_copper_bulb[lit=true]
+fill 90078 124 116 90078 124 101 minecraft:waxed_copper_bulb[lit=false] replace minecraft:waxed_copper_bulb[lit=true]
+fill 90078 139 87 90086 139 87 minecraft:waxed_copper_bulb[lit=false] replace minecraft:waxed_copper_bulb[lit=true]
+fill 90148 121 104 90148 123 104 minecraft:mangrove_roots
+fill 90147 124 111 90147 122 111 minecraft:mangrove_roots
+fill 90146 122 93 90146 119 93 mangrove_roots
+setblock 90145 122 93 mangrove_roots
+fill 90135 119 94 90135 117 94 mangrove_roots
+fill 90154 125 100 90155 117 94 minecraft:mangrove_roots replace minecraft:structure_void
+setblock 90136 148 111 minecraft:mangrove_roots
+setblock 90131 150 146 mangrove_roots
+fill 90130 150 146 90130 149 146 mangrove_roots
 
+execute positioned 90129 137 109 run function skyblock:sea/m/mine
+execute positioned 90128 137 113 run function skyblock:sea/m/mine
 
 setblock 90096 71 64 chest[facing=north]
 item replace block 90096 71 64 container.12 with glow_berries 4
@@ -133,8 +218,8 @@ item replace block 90141 84 49 container.12 with echo_shard 1
 item replace block 90141 84 49 container.14 with disc_fragment_5 2
 
 setblock 90121 78 65 chest[facing=east]
-item replace block 90141 84 49 container.12 with arrow 3
-item replace block 90141 84 49 container.14 with gunpowder 1
+item replace block 90121 78 65 container.12 with arrow 3
+item replace block 90121 78 65 container.14 with gunpowder 1
 
 setblock 90117 79 56 minecraft:flower_pot
 

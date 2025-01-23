@@ -551,6 +551,70 @@ fill 90114 92 96 90112 89 96 minecraft:iron_block
 fill 90116 99 73 90116 101 73 air
 
 #第五章地形变化撤销
+fill 90119 136 95 90119 122 95 air
+fill 90120 136 95 90118 136 97 minecraft:iron_trapdoor[half=top]
+fill 90120 127 95 90118 127 97 minecraft:iron_trapdoor[half=top]
+setblock 90129 136 106 polished_tuff
+setblock 90129 136 107 polished_tuff
+setblock 90128 136 107 polished_tuff
+fill 90127 136 113 90127 136 112 polished_tuff
+setblock 90128 136 110 polished_tuff
+fill 90126 138 112 90126 138 111 iron_bars
+fill 90127 144 109 90127 144 107 minecraft:waxed_copper_block replace air
+fill 90128 144 107 90128 144 108 minecraft:waxed_copper_grate replace air
+fill 90125 144 106 90123 144 106 waxed_copper_block replace air
+fill 90122 145 106 90124 145 106 minecraft:waxed_cut_copper_slab[type=bottom] replace air
+fill 90122 137 106 90120 137 106 air replace air
+fill 90131 149 100 90131 149 98 minecraft:waxed_cut_copper_slab[type=bottom] replace air
+fill 90129 149 95 90129 149 94 minecraft:waxed_cut_copper_slab[type=bottom] replace air
+fill 90120 145 100 90120 145 97 minecraft:waxed_cut_copper_slab[type=bottom] replace air
+fill 90120 144 100 90120 144 97 waxed_copper_block replace air
+fill 90120 143 100 90120 143 97 minecraft:waxed_cut_copper_slab[type=top] replace air
+setblock 90121 145 98 minecraft:waxed_cut_copper_slab[type=bottom]
+setblock 90121 143 98 minecraft:waxed_cut_copper_slab[type=top]
+setblock 90118 144 95 minecraft:redstone_lamp[lit=true]
+setblock 90118 140 90 minecraft:redstone_lamp[lit=true]
+setblock 90110 140 90 minecraft:redstone_lamp[lit=true]
+setblock 90107 146 106 minecraft:waxed_copper_bulb[lit=true]
+setblock 90107 146 103 minecraft:waxed_copper_bulb[lit=true]
+setblock 90115 139 103 minecraft:waxed_copper_bulb[lit=true]
+setblock 90114 141 103 minecraft:waxed_cut_copper_slab[type=bottom]
+setblock 90113 141 103 minecraft:waxed_cut_copper_slab[type=double]
+fill 90111 141 105 90111 141 104 minecraft:waxed_cut_copper_slab[type=top] replace air
+fill 90108 139 98 90108 138 98 minecraft:waxed_cut_copper replace air
+fill 90108 140 94 90106 140 94 waxed_copper_block replace air
+fill 90108 141 94 90105 141 94 minecraft:waxed_cut_copper_slab[type=bottom] replace air
+fill 90124 139 93 90121 139 93 minecraft:polished_andesite_slab[type=bottom] replace air
+fill 90125 138 93 90124 138 93 minecraft:polished_andesite_slab[type=bottom] replace air
+fill 90119 140 121 90119 140 120 waxed_copper_block replace air
+setblock 90118 140 120 waxed_copper_block
+fill 90107 143 106 90107 140 106 waxed_copper_block replace air
+fill 90101 140 103 90101 142 103 waxed_copper_block replace air
+fill 90125 155 127 90122 155 127 waxed_copper_block replace air
+fill 90127 156 127 90124 156 127 minecraft:waxed_cut_copper_slab[type=bottom] replace air
+setblock 90119 157 130 minecraft:redstone_lamp[lit=true]
+setblock 90120 148 114 minecraft:redstone_lamp[lit=true]
+setblock 90115 140 108 air
+setblock 90113 143 110 air
+setblock 90110 140 109 air
+setblock 90118 137 109 air
+setblock 90117 140 112 air
+setblock 90123 138 153 air
+setblock 90125 137 152 air
+fill 90124 138 154 90123 139 154 glass replace air
+fill 90100 144 116 90097 144 116 minecraft:waxed_copper_grate replace air
+fill 90078 139 87 90086 139 87 minecraft:waxed_copper_bulb[lit=true] replace minecraft:waxed_copper_bulb[lit=false]
+fill 90148 121 104 90148 123 104 minecraft:air
+fill 90147 124 111 90147 122 111 minecraft:air
+fill 90146 122 93 90146 119 93 air
+setblock 90145 122 93 air
+fill 90135 119 94 90135 117 94 air
+fill 90154 125 100 90155 117 94 minecraft:structure_void replace minecraft:mangrove_roots
+setblock 90136 148 111 air
+setblock 90131 150 146 glass
+fill 90130 150 146 90130 149 146 air
+fill 90111 145 140 90111 143 142 iron_bars
+
 fill 90154 167 121 90132 149 101 minecraft:structure_void replace minecraft:mangrove_roots
 fill 90138 148 117 90132 162 131 minecraft:structure_void replace minecraft:mangrove_roots
 fill 90134 145 90 90120 136 101 minecraft:structure_void replace minecraft:mangrove_roots
@@ -575,6 +639,12 @@ fill 90134 155 140 90134 155 141 minecraft:air
 fill 90124 157 131 90132 150 125 minecraft:structure_void replace minecraft:mangrove_roots
 setblock 90134 138 106 birch_button[facing=south]
 setblock 90113 89 82 air
+fill 90155 132 91 90095 132 91 minecraft:lantern replace minecraft:structure_void
+setblock 90134 144 95 minecraft:redstone_lamp[lit=true]
+fill 90110 144 95 90094 140 90 minecraft:redstone_lamp[lit=true] replace minecraft:redstone_lamp[lit=false]
+fill 90091 149 106 90088 149 106 minecraft:waxed_copper_bulb[lit=true] replace minecraft:waxed_copper_bulb[lit=false]
+fill 90067 132 91 90079 132 91 minecraft:lantern replace minecraft:structure_void
+fill 90103 150 114 90103 146 117 minecraft:waxed_copper_bulb[lit=true] replace minecraft:waxed_copper_bulb[lit=false]
 
 #多人限定
 setblock 90081 113 112 minecraft:waxed_copper_bulb[lit=false]

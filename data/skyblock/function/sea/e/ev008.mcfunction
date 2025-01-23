@@ -13,6 +13,7 @@ execute if entity @a[tag=SEAPT,distance=..6] as @s[scores={sea_4temp1=39}] at @s
 execute if entity @a[tag=SEAPT,distance=..6] as @s[scores={sea_4temp1=39}] at @s if entity @n[tag=sc,scores={sea_player=1..}] run tellraw @a[distance=0..250,tag=e_i_28,tag=e_i_27] {"text":"越涵：“原来如此。那就没有什么要多说的了。”","color":"green"}
 execute if entity @a[tag=SEAPT,distance=..6] as @s[scores={sea_4temp1=39}] at @s run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
 
+execute if entity @a[tag=SEAPT,distance=..6] as @s[scores={sea_4temp1=39}] at @s run scoreboard players add @s sea_4temp1 5
 execute if entity @a[tag=SEAPT,distance=..6] as @s[scores={sea_4temp1=67}] at @s run fill 90163 129 113 90163 127 114 air
 execute if entity @a[tag=SEAPT,distance=..6] as @s[scores={sea_4temp1=67}] at @s run playsound block.iron_trapdoor.open block @a 90163 129 114.0 1 0.8
 execute if entity @a[tag=SEAPT,distance=..6] as @s[x=90161,y=128,z=112,distance=..4,scores={sea_4temp1=69}] at @s if entity @n[tag=sc,scores={sea_player=1..}] run tellraw @a[distance=0..250,tag=!e_i_28,tag=!e_i_27] {"text":"越涵：“我是维修部门的越涵。这里太危险了，我们下去说吧。”","color":"green"}

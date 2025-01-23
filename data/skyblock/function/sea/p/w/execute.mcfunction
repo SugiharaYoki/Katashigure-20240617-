@@ -88,6 +88,40 @@ execute if entity @s[scores={sea_crafter=50114}] if entity @s[tag=!SEA_w_axe_upg
 execute if entity @s[scores={sea_crafter=50115}] if entity @s[tag=!SEA_w_axe_upg13] run tag @s add SEA_w_upg_FAILED_NC
 execute if entity @s[scores={sea_crafter=50116}] if entity @s[tag=!SEA_w_axe_upg14] run tag @s add SEA_w_upg_FAILED_NC
 
+#喷火器
+# 距 充 充 充 距
+#    耗
+#    技 攻 攻
+#    耗
+# 
+# 1 1 4 3 1
+#   2
+#   3 5 8
+#   5
+
+execute if entity @s[scores={sea_crafter=50201}] unless entity @s[scores={sea_i_iron_ingot=1..}] run tag @s add SEA_w_upg_FAILED
+execute if entity @s[scores={sea_crafter=50202}] unless entity @s[scores={sea_i_iron_ingot=1..}] run tag @s add SEA_w_upg_FAILED
+execute if entity @s[scores={sea_crafter=50203}] unless entity @s[scores={sea_i_iron_ingot=4..}] run tag @s add SEA_w_upg_FAILED
+execute if entity @s[scores={sea_crafter=50204}] unless entity @s[scores={sea_i_iron_ingot=3..}] run tag @s add SEA_w_upg_FAILED
+execute if entity @s[scores={sea_crafter=50205}] unless entity @s[scores={sea_i_iron_ingot=1..}] run tag @s add SEA_w_upg_FAILED
+execute if entity @s[scores={sea_crafter=50206}] unless entity @s[scores={sea_i_iron_ingot=2..}] run tag @s add SEA_w_upg_FAILED
+execute if entity @s[scores={sea_crafter=50207}] unless entity @s[scores={sea_i_iron_ingot=3..}] run tag @s add SEA_w_upg_FAILED
+execute if entity @s[scores={sea_crafter=50208}] unless entity @s[scores={sea_i_iron_ingot=5..}] run tag @s add SEA_w_upg_FAILED
+execute if entity @s[scores={sea_crafter=50209}] unless entity @s[scores={sea_i_iron_ingot=8..}] run tag @s add SEA_w_upg_FAILED
+execute if entity @s[scores={sea_crafter=50210}] unless entity @s[scores={sea_i_iron_ingot=5..}] run tag @s add SEA_w_upg_FAILED
+execute if entity @s[scores={sea_crafter=50211}] unless entity @s[scores={sea_i_iron_ingot=2..}] run tag @s add SEA_w_upg_FAILED
+execute if entity @s[scores={sea_crafter=50212}] unless entity @s[scores={sea_i_iron_ingot=10..}] run tag @s add SEA_w_upg_FAILED
+execute if entity @s[scores={sea_crafter=50202}] if entity @s[tag=!SEA_w_flamethrower_upg1] run tag @s add SEA_w_upg_FAILED_NC
+execute if entity @s[scores={sea_crafter=50203}] if entity @s[tag=!SEA_w_flamethrower_upg2] run tag @s add SEA_w_upg_FAILED_NC
+execute if entity @s[scores={sea_crafter=50204}] if entity @s[tag=!SEA_w_flamethrower_upg3,tag=!SEA_w_flamethrower_upg12] run tag @s add SEA_w_upg_FAILED_NC
+execute if entity @s[scores={sea_crafter=50205}] if entity @s[tag=!SEA_w_flamethrower_upg4] run tag @s add SEA_w_upg_FAILED_NC
+execute if entity @s[scores={sea_crafter=50206}] if entity @s[tag=!SEA_w_flamethrower_upg2] run tag @s add SEA_w_upg_FAILED_NC
+execute if entity @s[scores={sea_crafter=50207}] if entity @s[tag=!SEA_w_flamethrower_upg6] run tag @s add SEA_w_upg_FAILED_NC
+execute if entity @s[scores={sea_crafter=50208}] if entity @s[tag=!SEA_w_flamethrower_upg7] run tag @s add SEA_w_upg_FAILED_NC
+execute if entity @s[scores={sea_crafter=50209}] if entity @s[tag=!SEA_w_flamethrower_upg8,tag=!SEA_w_flamethrower_upg12] run tag @s add SEA_w_upg_FAILED_NC
+execute if entity @s[scores={sea_crafter=50210}] if entity @s[tag=!SEA_w_flamethrower_upg7] run tag @s add SEA_w_upg_FAILED_NC
+execute if entity @s[scores={sea_crafter=50211}] if entity @s[tag=!SEA_w_flamethrower_upg1] run tag @s add SEA_w_upg_FAILED_NC
+execute if entity @s[scores={sea_crafter=50212}] if entity @s[tag=!SEA_w_flamethrower_upg4,tag=!SEA_w_flamethrower_upg9] run tag @s add SEA_w_upg_FAILED_NC
 
 #盾
 # 防 速 防 时

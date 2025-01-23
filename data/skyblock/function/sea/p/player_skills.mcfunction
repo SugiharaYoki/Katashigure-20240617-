@@ -1,5 +1,6 @@
 
 execute at @s \
+if block ~ ~0 ~ water \
 if block ~ ~-0.2 ~ water \
 if block ~ ~-1.1 ~ water \
 if block ~ ~-2.1 ~ water \
@@ -47,9 +48,9 @@ execute as @s[tag=SEA_spectral_autocharge] at @s run clear @s spectral_arrow 1
 execute as @s[tag=SEA_spectral_autocharge] at @s run tag @s remove SEA_spectral_autocharge
 
 execute as @s[tag=e_w_04,level=..7,scores={sea_oxygen=20..}] run xp add @s 1 points
-execute as @s[tag=e_w_04,level=..7,scores={sea_oxygen=20..}] if items entity @s container.* *[custom_data={sea_flamethrower1:true}] run xp add @s 1 points
-execute as @s[tag=e_w_04,level=..7,scores={sea_oxygen=20..}] if items entity @s container.* *[custom_data={sea_flamethrower2:true}] run xp add @s 1 points
-execute as @s[tag=e_w_04,level=..7,scores={sea_oxygen=20..}] if items entity @s container.* *[custom_data={sea_flamethrower3:true}] run xp add @s 1 points
+execute as @s[tag=e_w_04,level=..7,scores={sea_oxygen=20..}] if entity @s[tag=sea_w_flamethrower_skill_refill_1] run xp add @s 1 points
+execute as @s[tag=e_w_04,level=..7,scores={sea_oxygen=20..}] if entity @s[tag=sea_w_flamethrower_skill_refill_2] run xp add @s 1 points
+execute as @s[tag=e_w_04,level=..7,scores={sea_oxygen=20..}] if entity @s[tag=sea_w_flamethrower_skill_refill_3] run xp add @s 1 points
 execute as @s[tag=e_w_04,level=8..,scores={sea_oxygen=20..}] run xp set @s 8 levels
 execute as @s[tag=e_w_04,level=8..,scores={sea_oxygen=20..}] run xp set @s 0 points
 

@@ -326,6 +326,13 @@ execute if entity @s[tag=sea_purchase_pass] run give @s echo_shard
 execute if entity @s[tag=sea_purchase_pass] run scoreboard players remove @s sea_i_emerald 10
 tag @s remove sea_purchase_pass
 
+execute if score @s sea_crafter matches 10072 as @s[scores={sea_i_emerald=50..}] run tag @s add sea_purchase_pass
+execute if score @s sea_crafter matches 10072 if entity @s[tag=!sea_purchase_pass] run tellraw @s {"text":"失败！余额不足！","color":"red"}
+execute if entity @s[tag=sea_purchase_pass] run playsound block.amethyst_block.resonate neutral @s ~ ~ ~ 100 1.2
+execute if entity @s[tag=sea_purchase_pass] run give @s echo_shard 5
+execute if entity @s[tag=sea_purchase_pass] run scoreboard players remove @s sea_i_emerald 50
+tag @s remove sea_purchase_pass
+
 execute if score @s sea_crafter matches 10004 as @s[scores={sea_i_emerald=..1}] run tellraw @s {"text":"失败！余额不足！","color":"red"}
 execute if score @s sea_crafter matches 10004 as @s[scores={sea_i_emerald=2..}] run tag @s add sea_purchase_pass
 execute if entity @s[tag=sea_purchase_pass] run playsound minecraft:item.armor.equip_iron neutral @s ~ ~ ~ 100
@@ -512,30 +519,30 @@ execute if entity @s[tag=sea_purchase_pass] run give @s tnt[custom_name='{"text"
 execute if entity @s[tag=sea_purchase_pass] run scoreboard players remove @s sea_i_emerald 8
 tag @s remove sea_purchase_pass
 
-execute if score @s sea_crafter matches 10029 as @s[scores={sea_i_iron_ingot=..2}] run tellraw @s {"text":"失败！素材不足！","color":"red"}
-execute if score @s sea_crafter matches 10029 as @s[scores={sea_i_iron_ingot=3..,sea_i_flint=..2}] run tellraw @s {"text":"失败！素材不足！","color":"red"}
-execute if score @s sea_crafter matches 10029 as @s[scores={sea_i_iron_ingot=3..,sea_i_flint=3..}] run tag @s add sea_purchase_pass
-execute if entity @s[tag=sea_purchase_pass] run playsound minecraft:item.armor.equip_iron neutral @s ~ ~ ~ 100
-execute if entity @s[tag=sea_purchase_pass] run give @s snout_armor_trim_smithing_template[custom_name='{"text":"燃料增液 I","italic":false,"color":"red"}',custom_data={sea_t_flamethrower1:true},lore=['{"text":"蓄燃 I 燃料恢复加快","color":"white","italic":false}']]
-execute if entity @s[tag=sea_purchase_pass] run clear @s iron_ingot 3
-execute if entity @s[tag=sea_purchase_pass] run clear @s flint 3
-tag @s remove sea_purchase_pass
-execute if score @s sea_crafter matches 10030 as @s[scores={sea_i_iron_ingot=..5}] run tellraw @s {"text":"失败！素材不足！","color":"red"}
-execute if score @s sea_crafter matches 10030 as @s[scores={sea_i_iron_ingot=6..,sea_i_flint=..5}] run tellraw @s {"text":"失败！素材不足！","color":"red"}
-execute if score @s sea_crafter matches 10030 as @s[scores={sea_i_iron_ingot=6..,sea_i_flint=6..}] run tag @s add sea_purchase_pass
-execute if entity @s[tag=sea_purchase_pass] run playsound minecraft:item.armor.equip_iron neutral @s ~ ~ ~ 100
-execute if entity @s[tag=sea_purchase_pass] run give @s snout_armor_trim_smithing_template[custom_name='{"text":"燃料增液 II","italic":false,"color":"red"}',custom_data={sea_t_flamethrower2:true},lore=['{"text":"蓄燃 II 燃料恢复加快","color":"white","italic":false}']]
-execute if entity @s[tag=sea_purchase_pass] run clear @s iron_ingot 6
-execute if entity @s[tag=sea_purchase_pass] run clear @s flint 6
-tag @s remove sea_purchase_pass
-execute if score @s sea_crafter matches 10031 as @s[scores={sea_i_iron_ingot=..8}] run tellraw @s {"text":"失败！素材不足！","color":"red"}
-execute if score @s sea_crafter matches 10031 as @s[scores={sea_i_iron_ingot=9..,sea_i_flint=..8}] run tellraw @s {"text":"失败！素材不足！","color":"red"}
-execute if score @s sea_crafter matches 10031 as @s[scores={sea_i_iron_ingot=9..,sea_i_flint=9..}] run tag @s add sea_purchase_pass
-execute if entity @s[tag=sea_purchase_pass] run playsound minecraft:item.armor.equip_iron neutral @s ~ ~ ~ 100
-execute if entity @s[tag=sea_purchase_pass] run give @s snout_armor_trim_smithing_template[custom_name='{"text":"燃料增液 III","italic":false,"color":"red"}',custom_data={sea_t_flamethrower3:true},lore=['{"text":"蓄燃 III 燃料恢复加快","color":"white","italic":false}']]
-execute if entity @s[tag=sea_purchase_pass] run clear @s iron_ingot 9
-execute if entity @s[tag=sea_purchase_pass] run clear @s flint 9
-tag @s remove sea_purchase_pass
+#execute if score @s sea_crafter matches 10029 as @s[scores={sea_i_iron_ingot=..2}] run tellraw @s {"text":"失败！素材不足！","color":"red"}
+#execute if score @s sea_crafter matches 10029 as @s[scores={sea_i_iron_ingot=3..,sea_i_flint=..2}] run tellraw @s {"text":"失败！素材不足！","color":"red"}
+#execute if score @s sea_crafter matches 10029 as @s[scores={sea_i_iron_ingot=3..,sea_i_flint=3..}] run tag @s add sea_purchase_pass
+#execute if entity @s[tag=sea_purchase_pass] run playsound minecraft:item.armor.equip_iron neutral @s ~ ~ ~ 100
+#execute if entity @s[tag=sea_purchase_pass] run give @s snout_armor_trim_smithing_template[custom_name='{"text":"燃料增液 I","italic":false,"color":"red"}',custom_data={sea_t_flamethrower1:true},lore=['{"text":"蓄燃 I 燃料恢复加快","color":"white","italic":false}']]
+#execute if entity @s[tag=sea_purchase_pass] run clear @s iron_ingot 3
+#execute if entity @s[tag=sea_purchase_pass] run clear @s flint 3
+#tag @s remove sea_purchase_pass
+#execute if score @s sea_crafter matches 10030 as @s[scores={sea_i_iron_ingot=..5}] run tellraw @s {"text":"失败！素材不足！","color":"red"}
+#execute if score @s sea_crafter matches 10030 as @s[scores={sea_i_iron_ingot=6..,sea_i_flint=..5}] run tellraw @s {"text":"失败！素材不足！","color":"red"}
+#execute if score @s sea_crafter matches 10030 as @s[scores={sea_i_iron_ingot=6..,sea_i_flint=6..}] run tag @s add sea_purchase_pass
+#execute if entity @s[tag=sea_purchase_pass] run playsound minecraft:item.armor.equip_iron neutral @s ~ ~ ~ 100
+#execute if entity @s[tag=sea_purchase_pass] run give @s snout_armor_trim_smithing_template[custom_name='{"text":"燃料增液 II","italic":false,"color":"red"}',custom_data={sea_t_flamethrower2:true},lore=['{"text":"蓄燃 II 燃料恢复加快","color":"white","italic":false}']]
+#execute if entity @s[tag=sea_purchase_pass] run clear @s iron_ingot 6
+#execute if entity @s[tag=sea_purchase_pass] run clear @s flint 6
+#tag @s remove sea_purchase_pass
+#execute if score @s sea_crafter matches 10031 as @s[scores={sea_i_iron_ingot=..8}] run tellraw @s {"text":"失败！素材不足！","color":"red"}
+#execute if score @s sea_crafter matches 10031 as @s[scores={sea_i_iron_ingot=9..,sea_i_flint=..8}] run tellraw @s {"text":"失败！素材不足！","color":"red"}
+#execute if score @s sea_crafter matches 10031 as @s[scores={sea_i_iron_ingot=9..,sea_i_flint=9..}] run tag @s add sea_purchase_pass
+#execute if entity @s[tag=sea_purchase_pass] run playsound minecraft:item.armor.equip_iron neutral @s ~ ~ ~ 100
+#execute if entity @s[tag=sea_purchase_pass] run give @s snout_armor_trim_smithing_template[custom_name='{"text":"燃料增液 III","italic":false,"color":"red"}',custom_data={sea_t_flamethrower3:true},lore=['{"text":"蓄燃 III 燃料恢复加快","color":"white","italic":false}']]
+#execute if entity @s[tag=sea_purchase_pass] run clear @s iron_ingot 9
+#execute if entity @s[tag=sea_purchase_pass] run clear @s flint 9
+#tag @s remove sea_purchase_pass
 
 #闪烁的瓜片
 execute if score @s sea_crafter matches 10039 as @s[scores={sea_i_glistering_melon=1..,sea_i_echo_shard=5..}] run tag @s add sea_purchase_pass
