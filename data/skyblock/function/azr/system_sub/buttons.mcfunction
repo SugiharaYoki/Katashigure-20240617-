@@ -41,14 +41,14 @@ execute if block -79934 39 125 minecraft:birch_button[powered=true] at @p[tag=az
 execute if block -79934 39 125 minecraft:birch_button[powered=true] run fill -79932 38 104 -79930 42 104 minecraft:red_stained_glass
 execute if block -79934 39 125 minecraft:birch_button[powered=true] run setblock -79928 39 125 air
 execute if block -79934 39 125 minecraft:birch_button[powered=true] run setblock -79934 39 125 air
-#stage5β uncommited
+#stage5β
 execute if block -79928 39 125 minecraft:birch_button[powered=true] run scoreboard players set stage Azr_system 13
 execute if block -79928 39 125 minecraft:birch_button[powered=true] run scoreboard players set stageSeconds Azr_system 0
 execute if block -79928 39 125 minecraft:birch_button[powered=true] at @p[tag=azrPlayer] run tp @a[tag=azrPlayer,distance=5..] @s
 execute if block -79928 39 125 minecraft:birch_button[powered=true] run fill -79932 38 104 -79930 42 104 minecraft:red_stained_glass
 execute if block -79928 39 125 minecraft:birch_button[powered=true] run setblock -79934 39 125 air
 execute if block -79928 39 125 minecraft:birch_button[powered=true] run setblock -79928 39 125 air
-#stage6 uncommited
+#stage6
 execute if block -79923 39 134 minecraft:birch_button[powered=true] run scoreboard players set stage Azr_system 15
 execute if block -79923 39 134 minecraft:birch_button[powered=true] run scoreboard players set stageSeconds Azr_system 0
 execute if block -79923 39 134 minecraft:birch_button[powered=true] run setblock -79942 39 150 air
@@ -86,16 +86,16 @@ execute if block -79886 41 -114 minecraft:lever[powered=true] run scoreboard pla
 execute if block -79886 41 -114 minecraft:lever[powered=true] run scoreboard players set stageSeconds Azr_system 0
 execute if block -79886 41 -114 minecraft:lever[powered=true] run summon minecraft:interaction -79885.5 41.00 -113.5 {Tags:["temp"]}
 
-#Stage Diffident uncommited
-execute if block -79941 39 86 minecraft:birch_button[powered=true] run function skyblock:azr/stage/stage_diffident_prep
-#Stage Cerement uncommited
+#Stage Cerement
 execute if block -79946 39 50 minecraft:birch_button[powered=true] run function skyblock:azr/stage/stage_cerement_prep
+#Stage Diffident
+execute if block -79941 39 86 minecraft:birch_button[powered=true] run function skyblock:azr/stage/stage_diffident_prep
+#Stage Suspension
+execute if block -79949 33 140 minecraft:birch_button[powered=true] run function skyblock:azr/stage/stage_suspension_prep
 #Stage Entertain uncommited
 execute if block -79887 44 164 minecraft:birch_button[powered=true] run function skyblock:azr/stage/stage_entertain_prep
 #Stage Vestige uncommited
 execute if block -79873 39 92 minecraft:birch_button[powered=true] run function skyblock:azr/stage/stage_vestige_prep
-#Stage Suspension uncommited
-execute if block -79949 33 140 minecraft:birch_button[powered=true] run function skyblock:azr/stage/stage_suspension_prep
 
 #extra bonus - stage3α
 execute if block -79924 39 25 minecraft:birch_button[powered=true] positioned -79931 38 25 run function skyblock:azr/m/zombie_t2_miner
@@ -141,7 +141,7 @@ execute if block -79924 39 -72 minecraft:birch_button[powered=true] run setblock
 
 #functional button - ladder uncommited
 execute if block -79950 35 -8 minecraft:birch_button[powered=true] run setblock -79946 37 -8 air destroy
-#functional button - password uncommited
+#functional button - password
 execute if block -79952 40 57 minecraft:birch_button[powered=true] run scoreboard players set CerementPassword Azr_system 1
 execute if block -79952 39 57 minecraft:birch_button[powered=true] if score CerementPassword Azr_system matches 1 run scoreboard players set CerementPassword Azr_system 2
 execute if block -79952 40 55 minecraft:birch_button[powered=true] if score CerementPassword Azr_system matches 2 run scoreboard players set CerementPassword Azr_system 3
