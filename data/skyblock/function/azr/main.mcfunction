@@ -7,6 +7,9 @@ execute as @a[scores={MultiMenu=114}] run function skyblock:azr/info/toggle_mone
 execute as @a[scores={MultiMenu=115}] run function skyblock:azr/info/menu
 scoreboard players enable @a MultiMenu
 
+#按钮处理
+function skyblock:azr/system_sub/buttons
+
 #旁观者显示
 bossbar set azr:progress_bar_normal players @a[x=-79931,y=100,z=0,distance=..10000]
 bossbar set azr:progress_bar_special players @a[x=-79931,y=100,z=0,distance=..10000]
