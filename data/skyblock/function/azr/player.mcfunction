@@ -50,8 +50,10 @@ execute as @s[tag=removeSpark] if items entity @s weapon.mainhand *[custom_data=
 execute as @s[tag=removeSpark] if items entity @s weapon.mainhand *[custom_data={instant_spark:1b}] run item replace entity @s weapon.mainhand with air
 tag @s[tag=removeSpark] remove removeSpark
 
-#索命连击w 
-execute at @s run function skyblock:azr/system_sub/chain_kill
+#索命连击
+execute at @s[tag=hasSkills] run function skyblock:azr/system_sub/chain_kill
+#残城箭影
+execute at @s[tag=hasSkills,tag=azr_skills_arrow] run function skyblock:azr/system_sub/arrow
 
 #DEBUG-错误信息
 execute as @a if items entity @s weapon.mainhand *[custom_data~{Error:1b}] run tellraw @a [{"text":"\n=============\n"},\
