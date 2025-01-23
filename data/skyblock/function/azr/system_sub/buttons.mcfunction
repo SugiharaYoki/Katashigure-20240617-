@@ -18,7 +18,7 @@ execute if block -79956 39 1 minecraft:birch_button[powered=true] run scoreboard
 execute if block -79956 39 1 minecraft:birch_button[powered=true] run scoreboard players set stageSeconds Azr_system 0
 execute if block -79956 39 1 minecraft:birch_button[powered=true] run setblock -79934 39 34 air
 execute if block -79956 39 1 minecraft:birch_button[powered=true] run setblock -79956 39 1 air
-#stage4α uncommited
+#stage4α
 execute if block -79932 39 42 minecraft:birch_button[powered=true] run scoreboard players set stage Azr_system 8
 execute if block -79932 39 42 minecraft:birch_button[powered=true] run scoreboard players set stageSeconds Azr_system 0
 execute if block -79932 39 42 minecraft:birch_button[powered=true] run setblock -79936 39 42 air
@@ -104,7 +104,7 @@ execute if block -79924 39 25 minecraft:birch_button[powered=true] run summon it
 execute if block -79924 39 25 minecraft:birch_button[powered=true] run setblock -79924 39 25 air
 #extra bonus - stage3α - spider cave
 execute if block -79919 39 24 minecraft:birch_button[powered=true] run function skyblock:azr/stage/dialog/southwest_cenic_path
-#extra bonus - stage4α uncommited
+#extra bonus - stage4α
 execute if block -79936 39 42 minecraft:birch_button[powered=true] run summon item -79931 45 46 {Item:{count:6,id:"minecraft:emerald"}}
 execute if block -79936 39 42 minecraft:birch_button[powered=true] run summon item -79931 45 46 {Item:{count:4,id:"minecraft:beef"}}
 execute if block -79936 39 42 minecraft:birch_button[powered=true] positioned -79931 44 46 run function skyblock:azr/m/zombie_militia_t1
@@ -143,10 +143,10 @@ execute if block -79924 39 -72 minecraft:birch_button[powered=true] run setblock
 execute if block -79950 35 -8 minecraft:birch_button[powered=true] run setblock -79946 37 -8 air destroy
 #functional button - password uncommited
 execute if block -79952 40 57 minecraft:birch_button[powered=true] run scoreboard players set CerementPassword Azr_system 1
-execute if block -79952 39 57 minecraft:birch_button[powered=true] if score CerementPassword Azr_system matches 1 run scoreboard players set CerementPassword Azr_system 2
 execute if block -79952 39 57 minecraft:birch_button[powered=true] unless score CerementPassword Azr_system matches 1 run scoreboard players reset CerementPassword Azr_system
-execute if block -79952 40 55 minecraft:birch_button[powered=true] if score CerementPassword Azr_system matches 2 run scoreboard players set CerementPassword Azr_system 3
+execute if block -79952 39 57 minecraft:birch_button[powered=true] if score CerementPassword Azr_system matches 1 run scoreboard players set CerementPassword Azr_system 2
 execute if block -79952 40 55 minecraft:birch_button[powered=true] unless score CerementPassword Azr_system matches 2 run scoreboard players reset CerementPassword Azr_system
+execute if block -79952 40 55 minecraft:birch_button[powered=true] if score CerementPassword Azr_system matches 2 run scoreboard players set CerementPassword Azr_system 3
 execute if block -79952 39 56 minecraft:birch_button[powered=true] if score CerementPassword Azr_system matches 3 run fill -79950 38 58 -79951 39 58 air destroy
 execute if block -79952 39 56 minecraft:birch_button[powered=true] run scoreboard players reset CerementPassword Azr_system
 execute if block -79952 40 56 minecraft:birch_button[powered=true] run scoreboard players reset CerementPassword Azr_system
