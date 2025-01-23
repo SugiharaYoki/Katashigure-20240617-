@@ -1,14 +1,14 @@
-#start button
+#start button temp
 execute if block -79937 39 -12 minecraft:birch_button[powered=true] run function skyblock:azr/start
-#stage1
+#stage1 temp
 execute if block -79932 39 4 minecraft:birch_button[powered=true] run scoreboard players set stage Azr_system 2
 execute if block -79932 39 4 minecraft:birch_button[powered=true] run scoreboard players set stageSeconds Azr_system 0
 execute if block -79932 39 4 minecraft:birch_button[powered=true] run setblock -79932 39 4 air
-#stage2
+#stage2 temp
 execute if block -79935 39 10 minecraft:birch_button[powered=true] run scoreboard players set stage Azr_system 4
 execute if block -79935 39 10 minecraft:birch_button[powered=true] run scoreboard players set stageSeconds Azr_system 0
 execute if block -79935 39 10 minecraft:birch_button[powered=true] run setblock -79935 39 10 air
-#stage3α
+#stage3α temp
 execute if block -79934 39 34 minecraft:birch_button[powered=true] run scoreboard players set stage Azr_system 6
 execute if block -79934 39 34 minecraft:birch_button[powered=true] run scoreboard players set stageSeconds Azr_system 0
 execute if block -79934 39 34 minecraft:birch_button[powered=true] run setblock -79956 39 1 air
@@ -97,7 +97,7 @@ execute if block -79873 39 92 minecraft:birch_button[powered=true] run function 
 #Stage Suspension
 execute if block -79949 33 140 minecraft:birch_button[powered=true] run function skyblock:azr/stage/stage_suspension_prep
 
-#extra bonus - stage3α
+#extra bonus - stage3α temp
 execute if block -79924 39 25 minecraft:birch_button[powered=true] positioned -79931 38 25 run function skyblock:azr/m/zombie_t2_miner
 execute if block -79924 39 25 minecraft:birch_button[powered=true] positioned -79931 38 25 run function skyblock:azr/m/zombie_t2_miner
 execute if block -79924 39 25 minecraft:birch_button[powered=true] run summon item -79931 38 25 {Item:{count:3,id:"minecraft:emerald"}}

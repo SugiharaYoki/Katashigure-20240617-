@@ -16,4 +16,4 @@ execute if score internal_clock_002 Azr_system matches 180 if score playerCount 
 execute if score internal_clock_002 Azr_system matches 180 positioned -79921 40 -61 run playsound minecraft:entity.pillager.ambient hostile @a[tag=azrPlayer] ~ ~ ~ 3 0.9
 execute if score internal_clock_002 Azr_system matches 180 as @e[type=pillager,x=-79923,y=38,z=-60,distance=..40] run item replace entity @s weapon.mainhand with minecraft:air
 execute if score internal_clock_002 Azr_system matches 180 run scoreboard players reset internal_clock_002 Azr_system
-schedule function skyblock:azr/stage/dialog/first_pass_west 1t
+execute if score internal_clock_002 Azr_system matches -2147483648..2147483647 run schedule function skyblock:azr/stage/dialog/first_pass_west 1t
