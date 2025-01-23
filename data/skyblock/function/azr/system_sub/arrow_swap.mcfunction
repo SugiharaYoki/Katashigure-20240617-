@@ -4,5 +4,4 @@ item replace entity @s weapon.offhand from entity @s weapon.mainhand
 item replace entity @s weapon.mainhand from entity 0-0-0-0-2 container.0
 item replace entity 0-0-0-0-2 container.0 with air
 item modify entity @s weapon.mainhand {function:"set_custom_data",tag:{skill_arrow:0b}}
-clear @s *[custom_data~{skill_arrow_temp:1b}]
 say hi
