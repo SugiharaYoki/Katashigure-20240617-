@@ -82,9 +82,8 @@ execute if block -79903 41 -60 minecraft:birch_button[powered=true] run scoreboa
 execute if block -79903 41 -60 minecraft:birch_button[powered=true] run scoreboard players set stageSeconds Azr_system 0
 execute if block -79903 41 -60 minecraft:birch_button[powered=true] run setblock -79903 41 -60 air
 #stage10 uncommited
-execute if block -79886 41 -114 minecraft:lever[powered=true] run scoreboard players set stage Azr_system 35
-execute if block -79886 41 -114 minecraft:lever[powered=true] run scoreboard players set stageSeconds Azr_system 0
-execute if block -79886 41 -114 minecraft:lever[powered=true] run summon minecraft:interaction -79885.5 41.00 -113.5 {Tags:["temp"]}
+execute if block -79886 41 -114 minecraft:lever[powered=true] unless entity @n[type=interaction,tag=temp,x=-79885.5,y=41.00,z=-113.5,distance=..1] run scoreboard players set stage Azr_system 35
+execute if block -79886 41 -114 minecraft:lever[powered=true] unless entity @n[type=interaction,tag=temp,x=-79885.5,y=41.00,z=-113.5,distance=..1] run summon minecraft:interaction -79885.5 41.00 -113.5 {Tags:["temp"]}
 
 #Stage Cerement
 execute if block -79946 39 50 minecraft:birch_button[powered=true] run function skyblock:azr/stage/stage_cerement_prep
