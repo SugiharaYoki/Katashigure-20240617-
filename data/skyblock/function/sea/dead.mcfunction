@@ -269,6 +269,8 @@ function skyblock:sea/p/w/shield_effect_reset
 function skyblock:sea/p/w/armor_effect_reset
 function skyblock:sea/p/w/ripper_effect_reset
 
+clear @s
+
 attribute @s generic.jump_strength modifier remove sea:mob_debuff_visioned01
 
 #不再用到的tag

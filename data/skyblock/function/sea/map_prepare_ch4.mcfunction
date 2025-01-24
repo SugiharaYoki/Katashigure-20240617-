@@ -42,7 +42,8 @@ summon minecraft:marker 90194 44 130 {Tags:["SEAcrafter_tp","SEAcrafter_tp13"]}
 summon minecraft:interaction 90243 58.3 95 {CustomName:'[{"text":"多功能工作站"}]',Tags:["SEAcrafter","SEAcrafter_foodless","SEAcrafter14"]}
 summon minecraft:marker 90242 57 95 {Tags:["SEAcrafter_tp","SEAcrafter_tp14"]}
 
-
+fill 90185 46 96 90181 46 96 minecraft:redstone_block
+fill 90185 46 96 90181 46 96 minecraft:air
 
 setblock 90178 45 112 minecraft:potted_azalea_bush
 setblock 90178 45 124 minecraft:potted_azalea_bush
@@ -391,8 +392,8 @@ item replace block 90222 46 76 container.11 with glow_berries 2
 item replace block 90222 46 76 container.13 with glow_berries 2
 item replace block 90222 46 76 container.15 with glow_berries 2
 
-setblock 90254 46 101 chest[facing=west]
-item replace block 90254 46 101 container.13 with raw_iron 1
+setblock 90257 46 101 chest[facing=west]
+item replace block 90257 46 101 container.13 with raw_iron 1
 
 setblock 90238 58 93 minecraft:waxed_copper_bulb[lit=false]
 setblock 90238 58 97 minecraft:waxed_copper_bulb[lit=false]
@@ -502,8 +503,22 @@ fill 90144 86 85 90144 85 84 minecraft:waxed_copper_block
 
 
 
+#额外植物研究区
+setblock 90216 47 82 minecraft:potted_fern
+setblock 90215 48 83 minecraft:potted_fern
+setblock 90215 47 82 minecraft:potted_fern
+setblock 90218 47 84 minecraft:brewing_stand
 
+setblock 90213 46 83 air
+setblock 90213 46 83 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 2, id:"minecraft:disc_fragment_5"}}
+fill 90212 48 74 90212 48 73 minecraft:flower_pot
+setblock 90215 48 71 minecraft:potted_dead_bush
 
+setblock 90212 46 71 chest[facing=east]
+item replace block 90212 46 71 container.12 with chicken 1
+item replace block 90212 46 71 container.14 with chicken 1
 
-
+#烟囱隐藏陶罐
+setblock 90188 52 134 minecraft:air
+setblock 90188 52 134 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 2, id:"minecraft:flint"}}
 

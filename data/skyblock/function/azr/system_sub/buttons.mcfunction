@@ -96,9 +96,9 @@ execute if block -79873 39 92 minecraft:birch_button[powered=true] run function 
 #Stage Appetence uncommited
 execute if block -79912 55 -101 minecraft:birch_button[powered=true] run function skyblock:azr/stage/stage_appetence_prep
 #Stage Breakout uncommited
-execute if block -79878 41 -131 minecraft:lever[powered=true] unless entity @n[type=interaction,tag=temp,x=-79878.5,y=41.00,z=-113.5,distance=..1] run scoreboard players set stage Azr_system 45
-execute if block -79878 41 -131 minecraft:lever[powered=true] unless entity @n[type=interaction,tag=temp,x=-79878.5,y=41.00,z=-113.5,distance=..1] run scoreboard players set stageSeconds Azr_system 0
-execute if block -79878 41 -131 minecraft:lever[powered=true] unless entity @n[type=interaction,tag=temp,x=-79878.5,y=41.00,z=-113.5,distance=..1] run summon minecraft:interaction -79878.5 41.00 -113.5 {Tags:["temp"]}
+execute if block -79878 41 -131 minecraft:lever[powered=true] unless entity @n[type=interaction,tag=temp,x=-79877.5,y=41.00,z=-130.5,distance=..1] run scoreboard players set stage Azr_system 45
+execute if block -79878 41 -131 minecraft:lever[powered=true] unless entity @n[type=interaction,tag=temp,x=-79877.5,y=41.00,z=-130.5,distance=..1] run scoreboard players set stageSeconds Azr_system 0
+execute if block -79878 41 -131 minecraft:lever[powered=true] unless entity @n[type=interaction,tag=temp,x=-79877.5,y=41.00,z=-130.5,distance=..1] run summon minecraft:interaction -79877.5 41.00 -130.5 {Tags:["temp"]}
 
 #extra bonus - stage3α
 execute if block -79924 39 25 minecraft:birch_button[powered=true] positioned -79931 38 25 run function skyblock:azr/m/zombie_t2_miner
@@ -168,8 +168,8 @@ execute if block -79952 39 55 minecraft:birch_button[powered=true] run scoreboar
 execute if block -79952 40 54 minecraft:birch_button[powered=true] run scoreboard players reset CerementPassword Azr_system
 execute if block -79952 39 54 minecraft:birch_button[powered=true] run scoreboard players reset CerementPassword Azr_system
 #functional level - ch3
-execute if block -79867 48 -109 minecraft:lever[powered=true] unless entity @n[type=interaction,tag=temp,x=-79867.5,y=48.0,z=-109.5,distance=..1] run function skyblock:azr/stage/dialog/ch3_untitled
-execute if block -79867 48 -109 minecraft:lever[powered=true] unless entity @n[type=interaction,tag=temp,x=-79867.5,y=48.0,z=-109.5,distance=..1] run summon minecraft:interaction -79867.5 48.0 -109.5 {Tags:["temp"]}
+execute if block -79867 48 -109 minecraft:lever[powered=true] unless entity @n[type=interaction,tag=temp,x=-79866.5,y=48.0,z=-108.5,distance=..1] run function skyblock:azr/stage/dialog/ch3_untitled
+execute if block -79867 48 -109 minecraft:lever[powered=true] unless entity @n[type=interaction,tag=temp,x=-79866.5,y=48.0,z=-108.5,distance=..1] run summon minecraft:interaction -79866.5 48.0 -108.5 {Tags:["temp"]}
 #functional button - ch3
 execute if block -79925 47 -113 minecraft:stone_button[powered=true] run setblock -79922 44 -112 ladder[facing=west]
 execute if block -79925 47 -113 minecraft:stone_button[powered=true] run setblock -79922 45 -112 ladder[facing=west]
