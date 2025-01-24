@@ -1,13 +1,13 @@
 execute if score stageSeconds Azr_system matches 20 as @a[tag=azrPlayer] at @s run spawnpoint @s -79905 40 -144
-execute if score stageSeconds Azr_system matches 20 run bossbar add azr:progress_bar_normal "Stage 11"
-execute if score stageSeconds Azr_system matches 20 run bossbar set azr:progress_bar_normal color blue
-execute if score stageSeconds Azr_system matches 20 run bossbar set azr:progress_bar_normal players @a[tag=azrPlayer]
-execute if score mobCount Azr_system matches 50 if score stageSeconds Azr_system matches 20..22 run bossbar set azr:progress_bar_normal max 50
-execute if score mobCount Azr_system matches 55 if score stageSeconds Azr_system matches 20..22 run bossbar set azr:progress_bar_normal max 55
-execute if score mobCount Azr_system matches 60 if score stageSeconds Azr_system matches 20..22 run bossbar set azr:progress_bar_normal max 60
-execute if score mobCount Azr_system matches 65 if score stageSeconds Azr_system matches 20..22 run bossbar set azr:progress_bar_normal max 65
-execute if score stageSeconds Azr_system matches 20.. store result bossbar azr:progress_bar_normal value run scoreboard players get @e[tag=sc,limit=1] mobCount
-execute if score stageSeconds Azr_system matches 521 run bossbar remove azr:progress_bar_normal
+execute if score stageSeconds Azr_system matches 20 run bossbar add azr:progress_bar_special "Stage 11"
+execute if score stageSeconds Azr_system matches 20 run bossbar set azr:progress_bar_special color blue
+execute if score stageSeconds Azr_system matches 20 run bossbar set azr:progress_bar_special players @a[tag=azrPlayer]
+execute if score mobCount Azr_system matches 50 if score stageSeconds Azr_system matches 20..22 run bossbar set azr:progress_bar_special max 50
+execute if score mobCount Azr_system matches 55 if score stageSeconds Azr_system matches 20..22 run bossbar set azr:progress_bar_special max 55
+execute if score mobCount Azr_system matches 60 if score stageSeconds Azr_system matches 20..22 run bossbar set azr:progress_bar_special max 60
+execute if score mobCount Azr_system matches 65 if score stageSeconds Azr_system matches 20..22 run bossbar set azr:progress_bar_special max 65
+execute if score stageSeconds Azr_system matches 20.. store result bossbar azr:progress_bar_special value run scoreboard players get mobCount Azr_system
+execute if score stageSeconds Azr_system matches 521 run bossbar remove azr:progress_bar_special
 #
 #mainside:none
 
