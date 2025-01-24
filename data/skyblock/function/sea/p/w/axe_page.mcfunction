@@ -1,4 +1,6 @@
-tellraw @s {"text":"『武器升级页面 - 消防斧』","bold":true,"color":"red"}
+execute as @s run function skyblock:sea/calc/axe
+# tellraw @s {"text":"『武器升级页面 - 消防斧』","bold":true,"color":"red"}
+tellraw @s {"text":"『武器升级页面 - 消防斧』","extra":[""],"color":"red","bold":true,"hoverEvent":{"action":"show_text","value":{"translate":"当前已激活的加成：\n攻击力：+%s\n攻击速度：+%s\n击退距离：+%s\n战斧横扫升级：%s/2","with":[{"storage":"sea:calc","nbt":"axe.attack_damage.val","color":"green"},{"nbt":"axe.attack_speed.val","storage":"sea:calc","color":"green"},{"nbt":"axe.attack_knockback.val","storage":"sea:calc","color":"green"},{"nbt":"axe.sweep.val","storage":"sea:calc","color":"yellow"}],"type":"translatable"}}}
 tellraw @s {"text":"   "}
 
 summon marker ~ ~ ~ {Tags:["SEA_w_axe_displaymarker","SEA_w_axe_displaymarker0"]}
