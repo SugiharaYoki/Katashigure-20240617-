@@ -254,6 +254,7 @@ execute if entity @n[tag=sc,scores={sea_4temp2=2112..2121}] positioned 90141 128
 execute if entity @n[tag=sc,scores={sea_4temp2=2112..2121}] positioned 90141 128 93 run playsound ambient.soul_sand_valley.mood hostile @a ~ ~ ~ 20 0.8
 execute if entity @n[tag=sc,scores={sea_4temp2=2112..2114}] positioned 90141 128 93 run playsound ambient.soul_sand_valley.additions hostile @a ~ ~ ~ 20 0.8
 execute if entity @n[tag=sc,scores={sea_4temp2=2112..2121}] positioned 90141 128 93 run particle minecraft:trial_omen ~ ~ ~ 1 1 1 0 20
+execute if entity @n[tag=sc,scores={sea_4temp2=2121}] positioned 90141 128 93 run kill @e[tag=SEAboss2,x=80000,dx=20000,y=-100,dy=300,z=-10000,dz=20000,type=bogged]
 execute if entity @n[tag=sc,scores={sea_4temp2=2122}] positioned 90141 128 93 run particle minecraft:sculk_soul ~ ~ ~ 1 1 1 0 20
 execute if entity @n[tag=sc,scores={sea_4temp2=2122}] positioned 90141 128 93 run function skyblock:sea/m/boss2
 execute if entity @n[tag=sc,scores={sea_4temp2=2279}] positioned 90128 128 97 run function skyblock:sea/m/silverfish
