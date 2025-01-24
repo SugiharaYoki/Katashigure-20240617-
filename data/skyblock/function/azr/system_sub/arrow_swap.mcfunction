@@ -9,3 +9,4 @@ execute at @s positioned 0. 0. 0. as 0-0-0-0-0 run function skyblock:azr/system_
 execute store result entity @n[tag=skill_arrow_temp] Motion[0] double 0.001 run scoreboard players get motion_x Azr_system
 execute store result entity @n[tag=skill_arrow_temp] Motion[1] double 0.001 run scoreboard players get motion_y Azr_system
 execute store result entity @n[tag=skill_arrow_temp] Motion[2] double 0.001 run scoreboard players get motion_z Azr_system
+tag @n[tag=skill_arrow_temp] remove skill_arrow_temp
