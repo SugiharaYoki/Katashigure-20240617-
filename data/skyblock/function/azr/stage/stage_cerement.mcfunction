@@ -36,7 +36,7 @@ execute if score stageSeconds Azr_system matches 41..50 if score random Azr_syst
 execute if score stageSeconds Azr_system matches 41..50 if score random Azr_system matches 1 if score playerCount Azr_system matches 3.. positioned -79946 38 50 run function skyblock:azr/m/zombie_t1_5hp_full_armor
 execute if score stageSeconds Azr_system matches 41..50 if score random Azr_system matches 2 if score playerCount Azr_system matches 4.. positioned -79946 38 50 run function skyblock:azr/m/zombie_militia_t1
 execute if score stageSeconds Azr_system matches 41..50 if score random Azr_system matches 3 if score playerCount Azr_system matches 5.. positioned -79946 38 50 run function skyblock:azr/m/zombie_t1_5hp_full_armor
-execute if score stageSeconds Azr_system matches 51..80 unless entity @n[tag=AzrielMob] run scoreboard players set stageSeconds Azr_system 60
+#execute if score stageSeconds Azr_system matches 51..80 unless entity @n[tag=AzrielMob] run scoreboard players set stageSeconds Azr_system 60
 execute if score stageSeconds Azr_system matches 30 run scoreboard players set stageSeconds Azr_system 40
 execute if score stageSeconds Azr_system matches 11..154 store result score random Azr_system run random value 1..4
 execute if score stageSeconds Azr_system matches 11..30 if score random Azr_system matches 1 if score playerCount Azr_system matches 1.. positioned -79946 38 50 run function skyblock:azr/m/silverfish_t1_corridor
