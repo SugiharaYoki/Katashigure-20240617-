@@ -1,5 +1,3 @@
-#start button
-execute if block -79937 39 -12 minecraft:birch_button[powered=true] run function skyblock:azr/start
 #stage1
 execute if block -79932 39 4 minecraft:birch_button[powered=true] run scoreboard players set stage Azr_system 2
 execute if block -79932 39 4 minecraft:birch_button[powered=true] run scoreboard players set stageSeconds Azr_system 0

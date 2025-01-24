@@ -8,6 +8,8 @@ execute as @a[scores={MultiMenu=115}] run function skyblock:azr/info/menu
 scoreboard players enable @a MultiMenu
 
 #按钮处理
+#start button
+execute if block -79937 39 -12 minecraft:birch_button[powered=true] run function skyblock:azr/start
 execute if score isStarted Azr_system matches 1 run function skyblock:azr/system_sub/buttons
 
 #旁观者显示
