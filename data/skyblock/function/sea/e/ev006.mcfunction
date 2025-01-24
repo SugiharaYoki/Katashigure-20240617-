@@ -1,17 +1,17 @@
 
 
 execute if entity @a[tag=SEAPT,distance=..6] run scoreboard players add @s[scores={sea_4temp1=..538}] sea_4temp1 1
-execute as @s[scores={sea_4temp1=5}] at @s if entity @n[tag=sc,scores={sea_player=1}] run tellraw @a[distance=0..250] {"text":"？？？：“你是第一个成功上来的幸存者。”","color":"white","bold": false}]
-execute as @s[scores={sea_4temp1=5}] at @s if entity @n[tag=sc,scores={sea_player=2}] run tellraw @a[distance=0..250] {"text":"？？？：“你们是唯二成功上来的幸存者。”","color":"white","bold": false}]
-execute as @s[scores={sea_4temp1=5}] at @s if entity @n[tag=sc,scores={sea_player=3..}] run tellraw @a[distance=0..250] {"text":"？？？：“你们是第一批成功上来的幸存者。”","color":"white","bold": false}]
+execute as @s[scores={sea_4temp1=5}] at @s if entity @n[tag=sc,scores={sea_player=1}] run tellraw @a[distance=0..250] [{"text":"？？？","color":"yellow","bold": true},{"text":"\n“你是第一个成功上来的幸存者。”","color":"white","bold": false}]
+execute as @s[scores={sea_4temp1=5}] at @s if entity @n[tag=sc,scores={sea_player=2}] run tellraw @a[distance=0..250] [{"text":"？？？","color":"yellow","bold": true},{"text":"\n“你们是唯二成功上来的幸存者。”","color":"white","bold": false}]
+execute as @s[scores={sea_4temp1=5}] at @s if entity @n[tag=sc,scores={sea_player=3..}] run tellraw @a[distance=0..250] [{"text":"？？？","color":"yellow","bold": true},{"text":"\n“你们是第一批成功上来的幸存者。”","color":"white","bold": false}]
 execute as @s[scores={sea_4temp1=5}] at @s run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
 
 execute as @s[scores={sea_4temp1=5..536}] as @p[tag=SEAPT,nbt={SelectedItem:{id:"minecraft:spyglass"}},scores={SEA_story=5..}] unless entity @a[tag=SEAPT,scores={SEA_story=..4}] at @s run tellraw @a[tag=SEAPT] [{"selector":"@s","color":"white"},{"text":"：「跳过了剧情」","color":"white"}]
 execute as @s[scores={sea_4temp1=5..536}] if entity @p[tag=SEAPT,nbt={SelectedItem:{id:"minecraft:spyglass"}},scores={SEA_story=5..}] unless entity @a[tag=SEAPT,scores={SEA_story=..4}] run scoreboard players set @s sea_4temp1 537
 
 execute as @s[scores={sea_4temp1=32..241}] at @s run tp @s ~ ~ ~ facing entity @p
-execute as @s[scores={sea_4temp1=32}] at @s if entity @n[tag=sc,scores={sea_player=1}] run tellraw @a[distance=0..250] {"text":"？？？：“怎么样？……你的忒尔克西之旅还顺利吗？”","color":"white","bold": false}]
-execute as @s[scores={sea_4temp1=32}] at @s if entity @n[tag=sc,scores={sea_player=2..}] run tellraw @a[distance=0..250] {"text":"？？？：“怎么样？……你们的忒尔克西之旅还顺利吗？”","color":"white","bold": false}]
+execute as @s[scores={sea_4temp1=32}] at @s if entity @n[tag=sc,scores={sea_player=1}] run tellraw @a[distance=0..250] [{"text":"？？？","color":"yellow","bold": true},{"text":"\n“怎么样？……你的忒尔克西之旅还顺利吗？”","color":"white","bold": false}]
+execute as @s[scores={sea_4temp1=32}] at @s if entity @n[tag=sc,scores={sea_player=2..}] run tellraw @a[distance=0..250] [{"text":"？？？","color":"yellow","bold": true},{"text":"\n“怎么样？……你们的忒尔克西之旅还顺利吗？”","color":"white","bold": false}]
 execute as @s[scores={sea_4temp1=32}] at @s run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
 execute as @s[scores={sea_4temp1=32}] at @s run scoreboard players add @s sea_4temp1 6
 

@@ -42,7 +42,8 @@ summon minecraft:marker 90194 44 130 {Tags:["SEAcrafter_tp","SEAcrafter_tp13"]}
 summon minecraft:interaction 90243 58.3 95 {CustomName:'[{"text":"多功能工作站"}]',Tags:["SEAcrafter","SEAcrafter_foodless","SEAcrafter14"]}
 summon minecraft:marker 90242 57 95 {Tags:["SEAcrafter_tp","SEAcrafter_tp14"]}
 
-
+fill 90185 46 96 90181 46 96 minecraft:redstone_block
+fill 90185 46 96 90181 46 96 minecraft:air
 
 setblock 90178 45 112 minecraft:potted_azalea_bush
 setblock 90178 45 124 minecraft:potted_azalea_bush
