@@ -376,6 +376,9 @@ execute positioned 90215 46 98 if entity @a[tag=SEAPT,distance=..15] unless enti
 execute positioned 90215 46 98 if entity @a[tag=SEAPT,distance=..15] unless entity @n[tag=SEAch4_spawn,distance=0..1] positioned 90234 57 89 run function skyblock:sea/m/drowned_maintenance
 execute positioned 90215 46 98 if entity @a[tag=SEAPT,distance=..15] unless entity @n[tag=SEAch4_spawn,distance=0..1] positioned 90234 57 89 run function skyblock:sea/m/drowned_maintenance
 
+execute positioned 90215 46 98 if entity @a[tag=SEAPT,distance=..15] unless entity @n[tag=SEAch4_spawn,distance=0..1] positioned 90214 46 71 run function skyblock:sea/m/skeleton_shield
+execute positioned 90215 46 98 if entity @a[tag=SEAPT,distance=..15] unless entity @n[tag=SEAch4_spawn,distance=0..1] positioned 90214 46 71 run function skyblock:sea/m/skeleton
+
 execute positioned 90215 46 98 if entity @a[tag=SEAPT,distance=..15] unless entity @n[tag=SEAch4_spawn,distance=0..1] positioned 90238 57 95 run function skyblock:sea/m/mine
 execute positioned 90215 46 98 if entity @a[tag=SEAPT,distance=..15] unless entity @n[tag=SEAch4_spawn,distance=0..1] positioned 90222 57 87 run function skyblock:sea/m/drone
 execute positioned 90215 46 98 if entity @a[tag=SEAPT,distance=..15] unless entity @n[tag=SEAch4_spawn,distance=0..1] positioned 90208 57 93 run function skyblock:sea/m/drone
@@ -429,7 +432,7 @@ execute as @n[tag=SEAch4_spawn_timer_boss4,tag=SEAch4_conclusion] at @s run func
 
 
 
-
+particle minecraft:snowflake 90214.00 49.20 72.13 1 0 1.2 0 2
 
 
 
