@@ -8,7 +8,7 @@ execute as @a[scores={MultiMenu=115}] run function skyblock:azr/info/menu
 scoreboard players enable @a MultiMenu
 
 #按钮处理
-function skyblock:azr/system_sub/buttons
+execute if score isStarted Azr_system matches 1 run function skyblock:azr/system_sub/buttons
 
 #旁观者显示
 bossbar set azr:progress_bar_normal players @a[x=-79931,y=100,z=0,distance=..10000]
