@@ -74,7 +74,7 @@ scoreboard objectives add Azr_SK15 dummy
 #skill 16 unused
 scoreboard objectives add Azr_SK16 dummy
 #设置系统参数
-scoreboard players set DEBUG_maxStageLimit Azr_system 25
+scoreboard players set DEBUG_maxStageLimit Azr_system 43
 #scoreboard players set DEBUG_fakePlayer Azr_system 10
 
 execute as @a[tag=azrPlayer] run function skyblock:azr/player
@@ -99,6 +99,6 @@ execute if score isStarted Azr_system matches 1 if score stage Azr_system matche
 #重置判定 - 游戏已开始但没有玩家
 execute if score isStarted Azr_system matches 1 if entity @a[x=-79931,y=100,z=0,distance=..10000,gamemode=!spectator] unless entity @a[tag=azrPlayer] run function skyblock:azr/endgame
 #DEBUG-关卡上限提示
-return 0
+#return 0
 execute as @r[tag=azrPlayer] if score stage Azr_system = DEBUG_maxStageLimit Azr_system run tellraw @a[tag=azrPlayer] [{"text":"You have passed maximum stage(limited in debug mode) ","color": "red"},{"score":{"objective": "Azr_system","name": "stage"},"color":"light_purple"},{"text":"/","color":"light_purple"},{"score":{"objective": "Azr_system","name": "DEBUG_maxStageLimit"},"color":"light_purple"}]
 execute as @r[tag=azrPlayer] if score stage Azr_system = DEBUG_maxStageLimit Azr_system run function skyblock:azr/endgame

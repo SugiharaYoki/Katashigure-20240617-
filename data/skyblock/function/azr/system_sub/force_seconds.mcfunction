@@ -4,7 +4,7 @@ execute if score stage Azr_system matches 16 run scoreboard players add stageSec
 execute if score stage Azr_system matches 18..19 run scoreboard players add stageSeconds Azr_system 1
 execute if score stage Azr_system matches 25 run scoreboard players add stageSeconds Azr_system 1
 execute if score stage Azr_system matches 28 run scoreboard players add stageSeconds Azr_system 1
-execute if score stage Azr_system matches 35..38 run scoreboard players add stageSeconds Azr_system 1
+execute if score stage Azr_system matches 35..39 run scoreboard players add stageSeconds Azr_system 1
 execute if score stage Azr_system matches 42..43 run scoreboard players add stageSeconds Azr_system 1
 execute if score stage Azr_system matches 44 run scoreboard players add stageSeconds Azr_system 1
 execute if score stage Azr_system matches 51..54 run scoreboard players add stageSeconds Azr_system 1

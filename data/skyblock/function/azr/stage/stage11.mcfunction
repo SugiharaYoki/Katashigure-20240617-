@@ -210,6 +210,13 @@ execute if score stageSeconds Azr_system matches 520 if score playerCount Azr_sy
 execute if score stageSeconds Azr_system matches 520 if score playerCount Azr_system matches 1.. if entity @a[tag=azrPlayer,scores={Azr_SK10=1..}] run summon endermite -79938 48 -159 {PersistenceRequired:1b,Tags:["AzrielMob","AzrielDecMob","Immune"],DeathLootTable:"skyblock:azriel_endermite_tier1",Health:13.0f,CustomName:'"夜盲虫"',CanPickUpLoot:0b,attributes:[{id:"generic.max_health",base:13.0d},{id:"generic.movement_speed",base:0.28d},{id:"generic.knockback_resistance",base:0.9d},{id:"generic.follow_range",base:2.5d},{id:"generic.attack_damage",base:8.0d}]}
 execute if score stageSeconds Azr_system matches 520 if score playerCount Azr_system matches 4.. if entity @a[tag=azrPlayer,scores={Azr_SK10=1..}] run summon endermite -79938 48 -159 {PersistenceRequired:1b,Tags:["AzrielMob","AzrielDecMob","Immune"],DeathLootTable:"skyblock:azriel_endermite_tier1",Health:13.0f,CustomName:'"夜盲虫"',CanPickUpLoot:0b,attributes:[{id:"generic.max_health",base:13.0d},{id:"generic.movement_speed",base:0.28d},{id:"generic.knockback_resistance",base:0.9d},{id:"generic.follow_range",base:2.5d},{id:"generic.attack_damage",base:8.0d}]}
 
+execute if score stageSeconds Azr_system matches 520 run summon minecraft:item_frame -79898.50 40.03 -116.50 {ItemRotation: 2b, Invulnerable: 1b, Item: {count: 1, id: "minecraft:map"}, Invisible: 1b}
+execute if score stageSeconds Azr_system matches 520 run summon minecraft:item_frame -79897.50 40.03 -115.50 {ItemRotation: 0b, Invulnerable: 1b, Item: {count: 1, id: "minecraft:paper"}, Invisible: 1b}
+execute if score stageSeconds Azr_system matches 520 run summon minecraft:item_frame -79897.50 40.03 -114.50 {ItemRotation: 3b, Invulnerable: 1b, Item: {count: 1, id: "minecraft:paper"}, Invisible: 1b}
+execute if score stageSeconds Azr_system matches 520 run summon minecraft:item_frame -79896.50 40.03 -116.50 {ItemRotation: 1b, Invulnerable: 1b, Item: {count: 1, id: "minecraft:paper"}, Invisible: 1b}
+execute if score stageSeconds Azr_system matches 520 run summon minecraft:item_frame -79896.50 40.03 -115.50 {ItemRotation: 1b, Invulnerable: 1b, Item: {count: 1, id: "minecraft:book"}, Invisible: 1b}
+
+
 
 #function skyblock:tool_rng
 #execute if entity @e[tag=sc,limit=1,scores={stageSeconds=143}] rng3 matches 1 run

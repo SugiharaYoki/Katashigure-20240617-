@@ -87,6 +87,29 @@ execute if score stage Azr_system matches 38..40 unless score stage Azr_system m
 execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 41 run function skyblock:azr/stage/stage12
 #event11 42..43
 execute if score stage Azr_system matches 42..43 run function skyblock:azr/stage/stage_event11
+#boss3 43
+execute if score stage Azr_system matches 43 run function skyblock:azr/stage/stage_boss3_sub
+execute if score stage Azr_system matches 43 as @e[tag=!AzrielExtreme,tag=AzrielBossB,limit=1,x=-79900,y=130,z=0,distance=0..1300] at @s run function skyblock:azr/stage/stage_boss3
+execute if score stage Azr_system matches 43 as @e[tag=AzrielExtreme,tag=AzrielBossB,limit=1,x=-79900,y=130,z=0,distance=0..1300] at @s run function skyblock:azr/stage/stage_boss3_ex
+
+#execute if entity @s[scores={Azr_Progress=44}] run function skyblock:azr/azrielsmidgarden_stage_event12
+#execute if entity @s[scores={Azr_Progress=51}] run function skyblock:azr/azrielsmidgarden_stage_13
+#execute if entity @s[scores={Azr_Progress=52..54}] run function skyblock:azr/azrielsmidgarden_stage_event13
+#execute if entity @s[scores={Azr_Progress=56..58}] run function skyblock:azr/azrielsmidgarden_stage_event13
+#execute if entity @s[scores={Azr_Progress=53..55}] run function skyblock:azr/azrielsmidgarden_stage_event14
+#execute if entity @s[scores={Azr_Progress=56..58}] run function skyblock:azr/azrielsmidgarden_stage_event15
+#execute if entity @s[tag=!Azr_Halt,scores={Azr_Progress=55}] run function skyblock:azr/azrielsmidgarden_stage_14
+#execute if entity @s[tag=!Azr_Halt,scores={Azr_Progress=53}] run function skyblock:azr/azrielsmidgarden_stage_bonus_object
+#execute if entity @s[tag=!Azr_Halt,scores={Azr_Progress=57}] run function skyblock:azr/azrielsmidgarden_stage_15
+#execute if entity @s[scores={Azr_Progress=59}] run function skyblock:azr/azrielsmidgarden_stage_event16
+#execute if entity @s[scores={Azr_Progress=60}] run function skyblock:azr/azrielsmidgarden_stage_16
+#execute if entity @s[scores={Azr_Progress=60..62}] run function skyblock:azr/azrielsmidgarden_stage_event17
+#execute if entity @s[scores={Azr_Progress=61}] run function skyblock:azr/azrielsmidgarden_stage_event18
+#execute if entity @s[scores={Azr_Progress=63..64}] run function skyblock:azr/azrielsmidgarden_stage_event19
+#execute if entity @s[scores={Azr_Progress=64}] run function skyblock:azr/azrielsmidgarden_stage_event20
+#56 - Trans
+#execute if entity @s[tag=!Azr_Halt,scores={Azr_Progress=52..70}] run function skyblock:azr/ingame_azrielsmidgarden_corex4_stage_ch4
+#execute if entity @s[tag=!Azr_Halt,scores={Azr_Progress=73..99}] run function skyblock:azr/ingame_azrielsmidgarden_corex4_stage_ch4
 
 #奖励关 Stage Diffident 301
 execute if score stage Azr_system matches 301 run function skyblock:azr/stage/stage_diffident
@@ -103,25 +126,12 @@ execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system 
 #奖励关 Stage Breakout 45
 execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 45 run function skyblock:azr/stage/stage_breakout
 
-
 #章节设置
 execute if entity @a[scores={Azr_wave=0..9}] run scoreboard players set chapter Azr_system 1
 execute if entity @a[scores={Azr_wave=10..24}] run scoreboard players set chapter Azr_system 2
 execute if entity @a[scores={Azr_wave=25..35}] run scoreboard players set chapter Azr_system 3
 execute if entity @a[scores={Azr_wave=36..}] run scoreboard players set chapter Azr_system 4
 
-#function skyblock:azr/ingame_azrielsmidgarden_core_sub1
-#execute if entity @e[tag=sc,limit=1,scores={SeGa_StandLastP=11}] run scoreboard players set @e[tag=sc,limit=1] SeGa_StandLast 0
-#execute if entity @e[tag=!Azr_Halt,tag=sc,limit=1,scores={SeGa_StandLastP=12..13}] run function skyblock:azr/azrielsmidgarden_stage_5
-#execute if entity @e[tag=sc,limit=1,scores={SeGa_StandLastP=14}] run function skyblock:azr/azrielsmidgarden_stage_event7
-#execute if entity @e[tag=!Azr_Halt,tag=sc,limit=1,scores={SeGa_StandLastP=15}] run function skyblock:azr/azrielsmidgarden_stage_6
-#execute if entity @e[tag=sc,limit=1,scores={SeGa_StandLastP=16}] run scoreboard players set @e[tag=sc,limit=1] SeGa_StandLast 0
-#execute if entity @e[tag=sc,limit=1,scores={SeGa_StandLastP=16..}] run function skyblock:azr/azrielsmidgarden_stage_event2
-#execute if entity @e[tag=!Azr_Halt,tag=sc,limit=1,scores={SeGa_StandLastP=17},tag=!azrstage7b] run function skyblock:azr/azrielsmidgarden_stage_7
-#execute if entity @e[tag=!Azr_Halt,tag=sc,limit=1,scores={SeGa_StandLastP=17},tag=azrstage7b] run function skyblock:azr/azrielsmidgarden_stage_7_m
-#execute if entity @e[tag=!Azr_Halt,tag=sc,limit=1,scores={SeGa_StandLastP=19}] run function skyblock:azr/azrielsmidgarden_stage_8
-#execute if entity @e[tag=!Azr_Halt,tag=sc,limit=1,scores={SeGa_StandLastP=24..34}] run function skyblock:azr/ingame_azrielsmidgarden_core_sub2
-#execute if entity @e[tag=sc,limit=1,scores={SeGa_StandLastP=301..399}] run function skyblock:azr/ingame_azrielsmidgarden_core_sub4
 #消除蜘蛛占位
 #execute as @e[tag=AzrielMob,tag=!AzrielDecMob,tag=!AzrielBossA,tag=!AzrielBossB] at @s run scoreboard players add @s SeGa_BecomeWild 1
 #execute as @e[tag=AzrielMob,tag=!AzrielDecMob,tag=!AzrielBossA,tag=!AzrielBossB,type=spider] at @s run scoreboard players add @s SeGa_BecomeWild 9
@@ -136,19 +146,10 @@ execute if entity @a[scores={Azr_wave=36..}] run scoreboard players set chapter 
 scoreboard players set gametick Azr_system 0
 
 #第一章-第二章 TODO：
-#许愿池stage6-7 见sub_core4x_stagerocess
 #灵能
 #button2（stage7二楼）
 #button3（stage7三楼）
 #button4（图书馆）
-#event6 见sub_core4x_stagerocess
-
-#牢房区域 TODO 纸张图案的钥匙-提示
-#summon minecraft:item_frame -79898.50 40.03 -116.50 {ItemRotation: 2b, Invulnerable: 1b, Item: {count: 1, id: "minecraft:map"}, Invisible: 1b}
-#summon minecraft:item_frame -79897.50 40.03 -115.50 {ItemRotation: 0b, Invulnerable: 1b, Item: {count: 1, id: "minecraft:paper"}, Invisible: 1b}
-#summon minecraft:item_frame -79897.50 40.03 -114.50 {ItemRotation: 3b, Invulnerable: 1b, Item: {count: 1, id: "minecraft:paper"}, Invisible: 1b}
-#summon minecraft:item_frame -79896.50 40.03 -116.50 {ItemRotation: 1b, Invulnerable: 1b, Item: {count: 1, id: "minecraft:paper"}, Invisible: 1b}
-#summon minecraft:item_frame -79896.50 40.03 -115.50 {ItemRotation: 1b, Invulnerable: 1b, Item: {count: 1, id: "minecraft:book"}, Invisible: 1b}
 
 #第四章 TODO 金镐图案的钥匙-提示
 #summon minecraft:item_frame -79571.50 12.03 -410.50 {ItemRotation: 0b, Invulnerable: 1b, Item: {count: 1, id: "minecraft:golden_pickaxe"}, Invisible: 1b}
