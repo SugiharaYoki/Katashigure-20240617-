@@ -52,8 +52,8 @@ scoreboard players set @s sea_calc 0
 execute if entity @s[tag=SEA_w_axe_upg7] run scoreboard players add @s sea_calc 1
 execute if entity @s[tag=SEA_w_axe_upg10] run scoreboard players add @s sea_calc 1
 execute if entity @s[tag=SEA_w_axe_upg16] run scoreboard players add @s sea_calc 1
-execute store result storage sea:calc axe.attack_knowback.cnt int 1 run scoreboard players get @s sea_calc
-execute store result storage sea:calc axe.attack_knowback.val double 0.5 run scoreboard players get @s sea_calc
+execute store result storage sea:calc axe.attack_knockback.cnt int 1 run scoreboard players get @s sea_calc
+execute store result storage sea:calc axe.attack_knockback.val double 0.5 run scoreboard players get @s sea_calc
 scoreboard players set @s sea_calc 0
 
 #sweep_cnt_val
