@@ -118,16 +118,16 @@ execute as @n[tag=sc,scores={sea_4temp2=219}] run fill 90109 122 117 90110 123 1
 
 
 
-execute as @n[tag=sc,scores={sea_4temp2=216}] positioned 90120 123 123 run tellraw @a[distance=0..50] {"text":"联络机台：“……有人在维修层？维修层居然还有活人？你等一下！我这就调去监控……”","color":"dark_purple"}
+execute as @n[tag=sc,scores={sea_4temp2=216}] positioned 90120 123 123 run tellraw @a[distance=0..50] [{"text":"联络机台","color":"dark_purple","bold": true},{"text":"\n“……有人在维修层？维修层居然还有活人？你等一下！我这就调去监控……”","color":"white","bold": false}]
 execute as @n[tag=sc,scores={sea_4temp2=216}] positioned 90120 123 123 as @p[tag=SEAPT] at @s if entity @n[tag=sc,scores={sea_player=2}] run tellraw @a[tag=SEAPT,distance=3..] [{"selector":"@s","color":"white"},{"text":"：我接通联络总站了！你快来我这里。","color":"white"}]
 execute as @n[tag=sc,scores={sea_4temp2=216}] positioned 90120 123 123 as @p[tag=SEAPT] at @s if entity @n[tag=sc,scores={sea_player=3..}] run tellraw @a[tag=SEAPT,distance=3..] [{"selector":"@s","color":"white"},{"text":"：我接通联络总站了！你们快来我这里。","color":"white"}]
 execute as @n[tag=sc,scores={sea_4temp2=216}] positioned 90120 123 123 run playsound minecraft:entity.endermite.ambient ambient @a ~ ~ ~ 0.8 0.1
-execute as @n[tag=sc,scores={sea_4temp2=242}] positioned 90120 123 123 run tellraw @a[distance=0..50] {"text":"联络机台：“……我听不清你在说什么，如果你能听到我说话的话，千万不要来办公区域！这里已经彻底沦陷……等、等下……”","color":"dark_purple"}
+execute as @n[tag=sc,scores={sea_4temp2=242}] positioned 90120 123 123 run tellraw @a[distance=0..50] [{"text":"联络机台","color":"dark_purple","bold": true},{"text":"\n“……我听不清你在说什么，如果你能听到我说话的话，千万不要来办公区域！\n这里已经彻底沦陷……等、等下……”","color":"white","bold": false}]
 execute as @n[tag=sc,scores={sea_4temp2=242}] positioned 90120 123 123 run playsound minecraft:entity.endermite.ambient ambient @a ~ ~ ~ 0.8 0.1
-execute as @n[tag=sc,scores={sea_4temp2=272}] positioned 90120 123 123 if entity @n[tag=sc,scores={sea_player=1}] run tellraw @a[distance=0..50] {"text":"联络机台：“我从监控看到你附近的房间了！快从那里离开，立——”","color":"dark_purple"}
-execute as @n[tag=sc,scores={sea_4temp2=272}] positioned 90120 123 123 if entity @n[tag=sc,scores={sea_player=2..}] run tellraw @a[distance=0..50] {"text":"联络机台：“我从监控看到你们附近的房间了！快从那里离开，立——”","color":"dark_purple"}
+execute as @n[tag=sc,scores={sea_4temp2=272}] positioned 90120 123 123 if entity @n[tag=sc,scores={sea_player=1}] run tellraw @a[distance=0..50] [{"text":"联络机台","color":"dark_purple","bold": true},{"text":"\n“我从监控看到你附近的房间了！快从那里离开，立——\n”","color":"white","bold": false}]
+execute as @n[tag=sc,scores={sea_4temp2=272}] positioned 90120 123 123 if entity @n[tag=sc,scores={sea_player=2..}] run tellraw @a[distance=0..50] [{"text":"联络机台","color":"dark_purple","bold": true},{"text":"\n“我从监控看到你们附近的房间了！快从那里离开，立——\n”","color":"white","bold": false}]
 execute as @n[tag=sc,scores={sea_4temp2=272}] positioned 90120 123 123 run playsound minecraft:entity.endermite.ambient ambient @a ~ ~ ~ 0.8 0.1
-execute as @n[tag=sc,scores={sea_4temp2=296}] positioned 90120 123 123 run tellraw @a[distance=0..50] {"text":"联络机台：“……”","color":"dark_purple"}
+execute as @n[tag=sc,scores={sea_4temp2=296}] positioned 90120 123 123 run tellraw @a[distance=0..50] [{"text":"联络机台","color":"dark_purple","bold": true},{"text":"\n“……”","color":"white","bold": false}]
 execute as @n[tag=sc,scores={sea_4temp2=305}] positioned 90120 123 123 if entity @n[tag=sc,scores={sea_player=1}] run tellraw @a[distance=0..50] {"text":"离开？把这些怪物放着不管吗？这不是我来这的目的。","color":"gray"}
 execute as @n[tag=sc,scores={sea_4temp2=335}] positioned 90120 123 123 if entity @n[tag=sc,scores={sea_player=1}] run tellraw @a[distance=0..50] {"text":"我得守在这里，把这些怪东西全给解决掉。","color":"gray"}
 execute as @n[tag=sc,scores={sea_4temp2=305}] positioned 90120 123 123 if entity @n[tag=sc,scores={sea_player=2..}] if entity @a[scores={SEAPT_member=2}] run tellraw @a[distance=0..50] [{"selector":"@p[tag=SEAPT,scores={SEAPT_member=2}]","color":"white"},{"text":"：该表演临阵脱逃了。","color":"white"}]
@@ -188,11 +188,11 @@ execute if entity @a[tag=SEAPT,x=90125,y=123,z=118,distance=0..9.2] as @n[tag=sc
 execute if entity @a[tag=SEAPT,x=90125,y=123,z=118,distance=0..9.2] as @n[tag=sc,scores={sea_4temp2=935}] run playsound minecraft:block.iron_trapdoor.open ambient @a 90127.44 125.00 122.83 4
 execute if entity @a[tag=SEAPT,x=90125,y=123,z=118,distance=0..9.2] as @n[tag=sc,scores={sea_4temp2=935}] run setblock 90127 125 122 minecraft:iron_trapdoor[half=bottom,open=true]
 execute as @n[tag=sc,scores={sea_4temp2=1068}] positioned 90120 123 123 run time set 12500t
-execute as @n[tag=sc,scores={sea_4temp2=1068}] positioned 90120 123 123 run tellraw @a[distance=0..55] {"text":"联络机台：“……听得到吗？！我强行关闭了那一片区域的连锁反应机械，通风口应该自动关闭了！”","color":"dark_purple"}
+execute as @n[tag=sc,scores={sea_4temp2=1068}] positioned 90120 123 123 run tellraw @a[distance=0..80] [{"text":"联络机台","color":"dark_purple","bold": true},{"text":"\n“……听得到吗？！\n我强行关闭了那一片区域的连锁反应机械，通风口应该自动关闭了！”","color":"white","bold": false}]
 execute as @n[tag=sc,scores={sea_4temp2=1068}] positioned 90120 123 123 run playsound minecraft:entity.endermite.ambient ambient @a ~ ~ ~ 0.8 0.1
-execute as @n[tag=sc,scores={sea_4temp2=1095}] positioned 90120 123 123 run tellraw @a[distance=0..55] {"text":"联络机台：“我这里已经不安全了，去物资层找台联络机台联系我，那里至少还没断电——”","color":"dark_purple"}
+execute as @n[tag=sc,scores={sea_4temp2=1095}] positioned 90120 123 123 run tellraw @a[distance=0..80] [{"text":"联络机台","color":"dark_purple","bold": true},{"text":"\n“我这里暂且安全，听着，你现在得去物资层找台联络机台联系我，那里至少还没断电。从你这里继续往前走，你可能要绕个大圈，恐怕、——”","color":"white","bold": false}]
 execute as @n[tag=sc,scores={sea_4temp2=1095}] positioned 90120 123 123 run playsound minecraft:entity.endermite.ambient ambient @a ~ ~ ~ 0.8 0.1
-execute as @n[tag=sc,scores={sea_4temp2=1260}] positioned 90120 123 123 run tellraw @a[distance=0..55] {"text":"联络机台：“……”","color":"dark_purple"}
+execute as @n[tag=sc,scores={sea_4temp2=1260}] positioned 90120 123 123 run tellraw @a[distance=0..80] [{"text":"联络机台","color":"dark_purple","bold": true},{"text":"\n“……”","color":"white","bold": false}]
 execute as @n[tag=sc,scores={sea_4temp2=1140}] run scoreboard players set @a[tag=SEAPT,scores={sea_progress=..0}] sea_progress 1
 execute as @n[tag=sc,scores={sea_4temp2=1140}] run fill 90129 122 119 90129 122 120 air
 execute as @n[tag=sc,scores={sea_4temp2=1144}] run fill 90129 123 119 90129 123 120 air
@@ -345,15 +345,15 @@ execute store result score @n[tag=SEAboss1] sea_boss1_hp run data get entity @n[
 execute store result score @n[tag=SEAboss1] rng1 run random value 1..20
 execute store result score @n[tag=SEAboss1] rng2 run random value 1..350
 execute as @n[tag=sc,scores={sea_4temp2=4000..5000}] as @n[tag=SEAboss1,scores={rng2=1..6}] at @s run playsound minecraft:entity.zombie_villager.ambient master @a ~ ~ ~ 3 0.8
-execute as @n[tag=sc,scores={sea_4temp2=4000..5000}] as @n[tag=SEAboss1,scores={rng2=1}] at @s if entity @a[tag=SEAPT,distance=0..15] run tellraw @a[tag=SEAPT,distance=0.1..15] {"text":"法莫洛斯：治疗……全部的病患，这是……必要措施……！","color":"white"}
-execute as @n[tag=sc,scores={sea_4temp2=4000..5000}] as @n[tag=SEAboss1,scores={rng2=2}] at @s if entity @a[tag=SEAPT,distance=0..15] run tellraw @a[tag=SEAPT,distance=0.1..15] {"text":"法莫洛斯：我……一定要……","color":"white"}
-execute as @n[tag=sc,scores={sea_4temp2=4000..5000}] as @n[tag=SEAboss1,scores={rng2=3}] at @s if entity @a[tag=SEAPT,distance=0..15] run tellraw @a[tag=SEAPT,distance=0.1..15] {"text":"法莫洛斯：你是健全者……健全者，抗体！——你的身上……！","color":"white"}
-execute as @n[tag=sc,scores={sea_4temp2=4000..5000}] as @n[tag=SEAboss1,scores={rng2=4}] at @s if entity @a[tag=SEAPT,distance=0..15] run tellraw @a[tag=SEAPT,distance=0.1..15] {"text":"法莫洛斯：停下，……我是医生！我让你……停下！！","color":"white"}
-execute as @n[tag=sc,scores={sea_4temp2=4000..5000}] as @n[tag=SEAboss1,scores={rng2=5}] at @s if entity @a[tag=SEAPT,distance=0..15] run tellraw @a[tag=SEAPT,distance=0.1..15] {"text":"法莫洛斯：呃呃啊……啊啊啊……！！","color":"white"}
-execute as @n[tag=sc,scores={sea_4temp2=4000..5000}] as @n[tag=SEAboss1,scores={rng2=6}] at @s if entity @a[tag=SEAPT,distance=0..15] run tellraw @a[tag=SEAPT,distance=0.1..15] {"text":"法莫洛斯：不能……呃啊啊啊啊！！不能退缩……一定要……！！","color":"white"}
+execute as @n[tag=sc,scores={sea_4temp2=4000..5000}] as @n[tag=SEAboss1,scores={rng2=1}] at @s if entity @a[tag=SEAPT,distance=0..15] run tellraw @a[tag=SEAPT,distance=0.1..15] [{"text":"法莫洛斯","color":"red","bold": true},{"text":"\n“治疗……全部的病患，这是……必要措施……！”","color":"white","bold": false}]
+execute as @n[tag=sc,scores={sea_4temp2=4000..5000}] as @n[tag=SEAboss1,scores={rng2=2}] at @s if entity @a[tag=SEAPT,distance=0..15] run tellraw @a[tag=SEAPT,distance=0.1..15] [{"text":"法莫洛斯","color":"red","bold": true},{"text":"\n“我……一定要……”","color":"white","bold": false}]
+execute as @n[tag=sc,scores={sea_4temp2=4000..5000}] as @n[tag=SEAboss1,scores={rng2=3}] at @s if entity @a[tag=SEAPT,distance=0..15] run tellraw @a[tag=SEAPT,distance=0.1..15] [{"text":"法莫洛斯","color":"red","bold": true},{"text":"\n“你是健全者……健全者，抗体！\n——你的身上……！”","color":"white","bold": false}]
+execute as @n[tag=sc,scores={sea_4temp2=4000..5000}] as @n[tag=SEAboss1,scores={rng2=4}] at @s if entity @a[tag=SEAPT,distance=0..15] run tellraw @a[tag=SEAPT,distance=0.1..15] [{"text":"法莫洛斯","color":"red","bold": true},{"text":"\n“停下，……我是医生！我让你……停下！！”","color":"white","bold": false}]
+execute as @n[tag=sc,scores={sea_4temp2=4000..5000}] as @n[tag=SEAboss1,scores={rng2=5}] at @s if entity @a[tag=SEAPT,distance=0..15] run tellraw @a[tag=SEAPT,distance=0.1..15] [{"text":"法莫洛斯","color":"red","bold": true},{"text":"\n“呃呃啊……啊啊啊……！！”","color":"white","bold": false}]
+execute as @n[tag=sc,scores={sea_4temp2=4000..5000}] as @n[tag=SEAboss1,scores={rng2=6}] at @s if entity @a[tag=SEAPT,distance=0..15] run tellraw @a[tag=SEAPT,distance=0.1..15] [{"text":"法莫洛斯","color":"red","bold": true},{"text":"\n“不能……呃啊啊啊啊！！\n不能退缩……一定要……！！”","color":"white","bold": false}]
 execute as @n[tag=sc,scores={sea_4temp2=4000..5000}] as @n[tag=SEAboss1,scores={rng2=7..8}] at @s if entity @a[tag=SEAPT,distance=0..15] positioned 90074.0 129 109.0 run function skyblock:sea/m/drowned_boss1
 
-execute as @n[tag=sc,scores={sea_4temp2=4000..5000}] as @n[tag=SEAboss1,tag=!SEAboss1_001,scores={sea_boss1_hp=..150}] at @s run tellraw @a[tag=SEAPT,distance=0.1..15] {"text":"法莫洛斯：绝对……绝对、要……阻止他们！！忒尔克西的高层……这是预谋！！一切都是他们的预谋！！！","color":"white"}
+execute as @n[tag=sc,scores={sea_4temp2=4000..5000}] as @n[tag=SEAboss1,tag=!SEAboss1_001,scores={sea_boss1_hp=..150}] at @s run tellraw @a[tag=SEAPT,distance=0.1..15] [{"text":"法莫洛斯","color":"red","bold": true},{"text":"\n“绝对……绝对、要……阻止他们！！\n忒尔克西的高层……这是预谋！！一切都是他们的预谋！！！”","color":"white","bold": false}]
 execute as @n[tag=sc,scores={sea_4temp2=4000..5000}] as @n[tag=SEAboss1,tag=!SEAboss1_001,scores={sea_boss1_hp=..150}] at @s run effect give @s resistance 20 1 false
 execute as @n[tag=sc,scores={sea_4temp2=4000..5000}] as @n[tag=SEAboss1,tag=!SEAboss1_001,scores={sea_boss1_hp=..150}] at @s run effect give @s slowness 20 59 false
 execute as @n[tag=sc,scores={sea_4temp2=4000..5000}] as @n[tag=SEAboss1,tag=!SEAboss1_001,scores={sea_boss1_hp=..150}] at @s run tag @s add SEAboss1_001
@@ -467,45 +467,45 @@ execute as @n[tag=sc,scores={sea_4temp2=6002}] run fill 90087 122 105 90087 124 
 execute as @n[tag=sc,scores={sea_4temp2=6001}] positioned 90073 122 122 run function skyblock:sea/m/npc_framauros
 execute as @n[tag=sc,scores={sea_4temp2=6003..}] as @n[tag=SEAframauros] at @s run tp @s ~ ~ ~ facing entity @p
 execute as @n[tag=sc,scores={sea_4temp2=6003}] at @n[tag=SEAframauros] run playsound entity.villager.ambient neutral @a ~ ~ ~ 0.8 0.7
-execute as @n[tag=sc,scores={sea_4temp2=6003}] at @n[tag=SEAframauros] run tellraw @a[tag=SEAPT,distance=0.1..35] {"text":"法莫洛斯：……活着的人。","color":"green"}
+execute as @n[tag=sc,scores={sea_4temp2=6003}] at @n[tag=SEAframauros] run tellraw @a[tag=SEAPT,distance=0.1..35] {"text":"法莫洛斯：……活着的人。”","color":"white","bold": false}]
 
 execute as @n[tag=sc,scores={sea_4temp2=6003..6332}] positioned 90122 128 131 as @p[tag=SEAPT,nbt={SelectedItem:{id:"minecraft:spyglass"}},scores={sea_progress=3..}] unless entity @a[tag=SEAPT,scores={sea_progress=..2}] at @s run tellraw @a[tag=SEAPT] [{"selector":"@s","color":"white"},{"text":"：「跳过了剧情」","color":"white"}]
 execute as @n[tag=sc,scores={sea_4temp2=6003..6332}] positioned 90122 128 131 if entity @p[tag=SEAPT,nbt={SelectedItem:{id:"minecraft:spyglass"}},scores={sea_progress=3..}] unless entity @a[tag=SEAPT,scores={sea_progress=..2}] run scoreboard players set @n[tag=sc] sea_4temp2 6333
 
 execute as @n[tag=sc,scores={sea_4temp2=6037}] at @n[tag=SEAframauros] run playsound entity.villager.ambient neutral @a ~ ~ ~ 0.8 0.7
-execute as @n[tag=sc,scores={sea_4temp2=6037}] at @n[tag=SEAframauros] run tellraw @a[tag=SEAPT,distance=0.1..35] {"text":"法莫洛斯：太好了……终于有人来，代替我救他们了……","color":"green"}
+execute as @n[tag=sc,scores={sea_4temp2=6037}] at @n[tag=SEAframauros] run tellraw @a[tag=SEAPT,distance=0.1..35] [{"text":"法莫洛斯","color":"red","bold": true},{"text":"\n“太好了……终于有人来，代替我救他们了……”","color":"white","bold": false}]
 execute as @n[tag=sc,scores={sea_4temp2=6071}] at @n[tag=SEAframauros] as @p[tag=SEAPT] run tellraw @a[tag=SEAPT] [{"selector":"@s","color":"white"},{"text":"：你就是……法莫洛斯医生？其他人呢、你……还好吗？","color":"white"}]
 execute as @n[tag=sc,scores={sea_4temp2=6098}] at @n[tag=SEAframauros] run playsound entity.villager.ambient neutral @a ~ ~ ~ 0.8 0.7
-execute as @n[tag=sc,scores={sea_4temp2=6098}] at @n[tag=SEAframauros] run tellraw @a[tag=SEAPT,distance=0.1..35] {"text":"法莫洛斯：太晚了，我的朋友……","color":"green"}
+execute as @n[tag=sc,scores={sea_4temp2=6098}] at @n[tag=SEAframauros] run tellraw @a[tag=SEAPT,distance=0.1..35] [{"text":"法莫洛斯","color":"red","bold": true},{"text":"\n“太晚了，我的朋友……”","color":"white","bold": false}]
 execute as @n[tag=sc,scores={sea_4temp2=6119}] at @n[tag=SEAframauros] run playsound entity.villager.ambient neutral @a ~ ~ ~ 0.8 0.7
-execute as @n[tag=sc,scores={sea_4temp2=6119}] at @n[tag=SEAframauros] run tellraw @a[tag=SEAPT,distance=0.1..35] {"text":"法莫洛斯：我……活不了多久了。感染……开始，就无法停下。","color":"green"}
+execute as @n[tag=sc,scores={sea_4temp2=6119}] at @n[tag=SEAframauros] run tellraw @a[tag=SEAPT,distance=0.1..35] [{"text":"法莫洛斯","color":"red","bold": true},{"text":"\n“我……活不了多久了。感染……开始，就无法停下。”","color":"white","bold": false}]
 execute as @n[tag=sc,scores={sea_4temp2=6141}] at @n[tag=SEAframauros] as @p[tag=SEAPT] run tellraw @a[tag=SEAPT] [{"selector":"@s","color":"white"},{"text":"：法莫洛斯医生……","color":"white"}]
 execute as @n[tag=sc,scores={sea_4temp2=6168}] at @n[tag=SEAframauros] as @p[tag=SEAPT] run tellraw @a[tag=SEAPT] [{"selector":"@s","color":"white"},{"text":"：其他人呢，还有多少人活着？","color":"white"}]
 execute as @n[tag=sc,scores={sea_4temp2=6190}] at @n[tag=SEAframauros] run playsound entity.villager.ambient neutral @a ~ ~ ~ 0.8 0.7
-execute as @n[tag=sc,scores={sea_4temp2=6190}] at @n[tag=SEAframauros] run tellraw @a[tag=SEAPT,distance=0.1..35] {"text":"法莫洛斯：是啊……还有多少人活着呢。他们才是……不幸运的那批人吧。","color":"green"}
+execute as @n[tag=sc,scores={sea_4temp2=6190}] at @n[tag=SEAframauros] run tellraw @a[tag=SEAPT,distance=0.1..35] [{"text":"法莫洛斯","color":"red","bold": true},{"text":"\n“是啊……还有多少人活着呢。他们才是……不幸运的那批人吧。”","color":"white","bold": false}]
 execute as @n[tag=sc,scores={sea_4temp2=6230}] at @n[tag=SEAframauros] run playsound entity.villager.ambient neutral @a ~ ~ ~ 0.8 0.7
-execute as @n[tag=sc,scores={sea_4temp2=6230}] at @n[tag=SEAframauros] if entity @n[tag=sc,scores={sea_player=1}] run tellraw @a[tag=SEAPT,distance=0.1..35] {"text":"法莫洛斯：最后再……求你帮我两个忙吧，陌生人。","color":"green"}
-execute as @n[tag=sc,scores={sea_4temp2=6230}] at @n[tag=SEAframauros] if entity @n[tag=sc,scores={sea_player=2..}] run tellraw @a[tag=SEAPT,distance=0.1..35] {"text":"法莫洛斯：最后再……求你们帮我两个忙吧，陌生人。","color":"green"}
+execute as @n[tag=sc,scores={sea_4temp2=6230}] at @n[tag=SEAframauros] if entity @n[tag=sc,scores={sea_player=1}] run tellraw @a[tag=SEAPT,distance=0.1..35] [{"text":"法莫洛斯","color":"red","bold": true},{"text":"\n“最后再……求你帮我两个忙吧，陌生人。”","color":"white","bold": false}]
+execute as @n[tag=sc,scores={sea_4temp2=6230}] at @n[tag=SEAframauros] if entity @n[tag=sc,scores={sea_player=2..}] run tellraw @a[tag=SEAPT,distance=0.1..35] [{"text":"法莫洛斯","color":"red","bold": true},{"text":"\n“最后再……求你们帮我两个忙吧，陌生人。”","color":"white","bold": false}]
 execute as @n[tag=sc,scores={sea_4temp2=6264}] at @n[tag=SEAframauros] run playsound entity.villager.ambient neutral @a ~ ~ ~ 0.8 0.7
-execute as @n[tag=sc,scores={sea_4temp2=6264}] at @n[tag=SEAframauros] run tellraw @a[tag=SEAPT,distance=0.1..35] {"text":"法莫洛斯：上面一定还有活人……请代替我救他们。我已经没有……时间了。","color":"green"}
+execute as @n[tag=sc,scores={sea_4temp2=6264}] at @n[tag=SEAframauros] run tellraw @a[tag=SEAPT,distance=0.1..35] [{"text":"法莫洛斯","color":"red","bold": true},{"text":"\n“上面一定还有活人……请代替我救他们。我已经没有……时间了。”","color":"white","bold": false}]
 execute as @n[tag=sc,scores={sea_4temp2=6304}] at @n[tag=SEAframauros] run playsound entity.villager.ambient neutral @a ~ ~ ~ 0.8 0.7
-execute as @n[tag=sc,scores={sea_4temp2=6304}] at @n[tag=SEAframauros] run tellraw @a[tag=SEAPT,distance=0.1..35] {"text":"法莫洛斯：以及……","color":"green"}
+execute as @n[tag=sc,scores={sea_4temp2=6304}] at @n[tag=SEAframauros] run tellraw @a[tag=SEAPT,distance=0.1..35] [{"text":"法莫洛斯","color":"red","bold": true},{"text":"\n“以及……”","color":"white","bold": false}]
 execute as @n[tag=sc,scores={sea_4temp2=6334}] at @n[tag=SEAframauros] run playsound entity.villager.ambient neutral @a ~ ~ ~ 0.8 0.7
-execute as @n[tag=sc,scores={sea_4temp2=6334}] at @n[tag=SEAframauros] run tellraw @a[tag=SEAPT,distance=0.1..35] {"text":"法莫洛斯：能杀了我吗……？","color":"green"}
+execute as @n[tag=sc,scores={sea_4temp2=6334}] at @n[tag=SEAframauros] run tellraw @a[tag=SEAPT,distance=0.1..35] [{"text":"法莫洛斯","color":"red","bold": true},{"text":"\n“能杀了我吗……？”","color":"white","bold": false}]
 execute as @n[tag=sc,scores={sea_4temp2=6334}] as @n[tag=SEAframauros] run data modify entity @s Invulnerable set value 0b
 
 
 execute as @n[tag=sc,scores={sea_4temp2=6434}] at @n[tag=SEAframauros] run playsound entity.villager.ambient neutral @a ~ ~ ~ 0.8 0.7
-execute as @n[tag=sc,scores={sea_4temp2=6434}] at @n[tag=SEAframauros] if entity @n[tag=sc,scores={sea_player=1}] run tellraw @a[tag=SEAPT,distance=0.1..35] {"text":"法莫洛斯：我知道这听上去很困难……但、只有你能做到了。拜托你……","color":"green"}
-execute as @n[tag=sc,scores={sea_4temp2=6434}] at @n[tag=SEAframauros] if entity @n[tag=sc,scores={sea_player=2..}] run tellraw @a[tag=SEAPT,distance=0.1..35] {"text":"法莫洛斯：我知道这听上去很困难……但、只有你们能做到了。拜托你们……","color":"green"}
+execute as @n[tag=sc,scores={sea_4temp2=6434}] at @n[tag=SEAframauros] if entity @n[tag=sc,scores={sea_player=1}] run tellraw @a[tag=SEAPT,distance=0.1..35] [{"text":"法莫洛斯","color":"red","bold": true},{"text":"\n“我知道这听上去很困难……但、只有你能做到了。拜托你……”","color":"white","bold": false}]
+execute as @n[tag=sc,scores={sea_4temp2=6434}] at @n[tag=SEAframauros] if entity @n[tag=sc,scores={sea_player=2..}] run tellraw @a[tag=SEAPT,distance=0.1..35] [{"text":"法莫洛斯","color":"red","bold": true},{"text":"\n“我知道这听上去很困难……但、只有你们能做到了。拜托你们……”","color":"white","bold": false}]
 execute as @n[tag=sc,scores={sea_4temp2=6534}] at @n[tag=SEAframauros] run playsound entity.villager.ambient neutral @a ~ ~ ~ 0.8 0.7
-execute as @n[tag=sc,scores={sea_4temp2=6534}] at @n[tag=SEAframauros] run tellraw @a[tag=SEAPT,distance=0.1..35] {"text":"法莫洛斯：求求你……我没有多少时间了……","color":"green"}
+execute as @n[tag=sc,scores={sea_4temp2=6534}] at @n[tag=SEAframauros] run tellraw @a[tag=SEAPT,distance=0.1..35] [{"text":"法莫洛斯","color":"red","bold": true},{"text":"\n“求求你……我没有多少时间了……”","color":"white","bold": false}]
 execute as @n[tag=sc,scores={sea_4temp2=6634}] at @n[tag=SEAframauros] run playsound entity.villager.ambient neutral @a ~ ~ ~ 0.8 0.7
-execute as @n[tag=sc,scores={sea_4temp2=6634}] at @n[tag=SEAframauros] run tellraw @a[tag=SEAPT,distance=0.1..35] {"text":"法莫洛斯：我需要……保持、……我该自杀，对吗？……","color":"green"}
+execute as @n[tag=sc,scores={sea_4temp2=6634}] at @n[tag=SEAframauros] run tellraw @a[tag=SEAPT,distance=0.1..35] [{"text":"法莫洛斯","color":"red","bold": true},{"text":"\n“我需要……保持、……我该自杀，对吗？……”","color":"white","bold": false}]
 execute as @n[tag=sc,scores={sea_4temp2=6734}] at @n[tag=SEAframauros] run playsound entity.villager.ambient neutral @a ~ ~ ~ 0.8 0.7
-execute as @n[tag=sc,scores={sea_4temp2=6734}] at @n[tag=SEAframauros] run tellraw @a[tag=SEAPT,distance=0.1..35] {"text":"法莫洛斯：快要……来不及……了……","color":"green"}
+execute as @n[tag=sc,scores={sea_4temp2=6734}] at @n[tag=SEAframauros] run tellraw @a[tag=SEAPT,distance=0.1..35] [{"text":"法莫洛斯","color":"red","bold": true},{"text":"\n“快要……来不及……了……”","color":"white","bold": false}]
 execute as @n[tag=sc,scores={sea_4temp2=6834}] at @n[tag=SEAframauros] run playsound entity.villager.ambient neutral @a ~ ~ ~ 0.8 0.7
-execute as @n[tag=sc,scores={sea_4temp2=6834}] at @n[tag=SEAframauros] run tellraw @a[tag=SEAPT,distance=0.1..35] {"text":"法莫洛斯：我本该……有时间……自杀的……","color":"green"}
+execute as @n[tag=sc,scores={sea_4temp2=6834}] at @n[tag=SEAframauros] run tellraw @a[tag=SEAPT,distance=0.1..35] [{"text":"法莫洛斯","color":"red","bold": true},{"text":"\n“我本该……有时间……自杀的……”","color":"white","bold": false}]
 execute as @n[tag=sc,scores={sea_4temp2=6934}] at @n[tag=SEAframauros] run tag @n[tag=sc] add sea_ch1_speedrun_butif
 execute as @n[tag=sc,scores={sea_4temp2=6934}] at @n[tag=SEAframauros] run scoreboard players set @n[tag=sc] sea_4temp2 4000
 
