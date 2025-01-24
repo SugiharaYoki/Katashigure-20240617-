@@ -154,4 +154,5 @@ execute if score stageSeconds Azr_system matches 3394 as @e[tag=AzrielBossFA] at
 execute if score stageSeconds Azr_system matches 3394 run particle minecraft:reverse_portal -79906 41 -144 0.5 0.6 0.5 0.5 40
 execute if score stageSeconds Azr_system matches 3395 run scoreboard players set @a[tag=azrPlayer] Azr_wave 28
 execute if score stageSeconds Azr_system matches 3395 run scoreboard players set stage Azr_system 37
+execute if score stageSeconds Azr_system matches 3395 run scoreboard players set stageSeconds Azr_system 0
 execute if score stageSeconds Azr_system matches 3395 run setblock -79906 42 -146 minecraft:soul_lantern[hanging=true]
