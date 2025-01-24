@@ -17,6 +17,7 @@
 # sweep:
 #   SEA_w_axe_upg12:1
 #   SEA_w_axe_upg13:1
+#   SEA_w_axe_upg15:1
 
 #damage_cnt
 execute as @s run function skyblock:sea/calc/init
@@ -59,6 +60,7 @@ scoreboard players set @s sea_calc 0
 #sweep_cnt_val
 execute if entity @s[tag=SEA_w_axe_upg12] run scoreboard players add @s sea_calc 1
 execute if entity @s[tag=SEA_w_axe_upg13] run scoreboard players add @s sea_calc 1
+execute if entity @s[tag=SEA_w_axe_upg15] run scoreboard players add @s sea_calc 1
 execute store result storage sea:calc axe.sweep.cnt int 1 run scoreboard players get @s sea_calc
 execute store result storage sea:calc axe.sweep.val int 1 run scoreboard players get @s sea_calc
 scoreboard players set @s sea_calc 0
