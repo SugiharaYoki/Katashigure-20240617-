@@ -81,7 +81,7 @@ execute as @a[tag=azrPlayer] run function skyblock:azr/player
 team join AzrPlayer @e[tag=AzrielFriendly]
 
 #在部分关卡的的四倍速走秒
-execute if score isStarted Azr_system matches 1 if score stage Azr_system matches 34..37 if score gametick Azr_system matches 5.. run function skyblock:azr/core
+execute if score isStarted Azr_system matches 1 if score stage Azr_system matches 34..45 if score gametick Azr_system matches 5.. run function skyblock:azr/core
 execute if score isStarted Azr_system matches 1 if score gametick Azr_system matches 20.. run function skyblock:azr/core
 #使用了tickTimer的关卡在这里处理
 execute if entity @e[x=-79908,y=37.5,z=123,distance=0..1.48,type=item,nbt={Item:{id:"minecraft:emerald_block"}},limit=1] run function skyblock:azr/effects/wish_fountain_1
