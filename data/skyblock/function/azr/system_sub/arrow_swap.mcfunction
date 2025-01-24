@@ -11,4 +11,4 @@ execute store result entity @n[tag=skill_arrow_temp] Motion[1] double 0.001 run 
 execute store result entity @n[tag=skill_arrow_temp] Motion[2] double 0.001 run scoreboard players get motion_z Azr_system
 tag @n[tag=skill_arrow_temp] remove skill_arrow_temp
 execute at @s positioned ~ ~0.1 ~ rotated ~ 0 run function skyblock:azr/effects/player_magic_release
-playsound entity.firework_rocket.blast player @a ~ ~ ~ 1 0.9
+execute at @s run playsound entity.firework_rocket.blast player @a ~ ~ ~ 1 0.9
