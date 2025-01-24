@@ -34,6 +34,14 @@ execute as @n[tag=SEAboss4,scores={rng9=9..11}] at @s run tp @s ~ ~ ~ facing ent
 execute as @n[tag=SEAboss4] at @s run data modify entity @s HurtTime set value 0s
 execute as @n[tag=SEAboss4,scores={rng9=12}] at @s run scoreboard players set @s rng9 0
 
+execute as @n[tag=SEAboss4] at @s if entity @n[tag=SEA_mine,distance=0..2.8] run tag @s add SEAboss4_dodgemine
+execute as @n[tag=SEAboss4,tag=SEAboss4_dodgemine,scores={rng3=1}] at @s positioned 0.0 0 0.0 run summon marker ^ ^0.12 ^-0.3 {Tags:["SEA_boss4_marker"]}
+execute as @n[tag=SEAboss4,tag=SEAboss4_dodgemine,scores={rng3=2}] at @s positioned 0.0 0 0.0 run summon marker ^-0.4 ^0.12 ^-0.3 {Tags:["SEA_boss4_marker"]}
+execute as @n[tag=SEAboss4,tag=SEAboss4_dodgemine,scores={rng3=3}] at @s positioned 0.0 0 0.0 run summon marker ^0.4 ^0.12 ^-0.3 {Tags:["SEA_boss4_marker"]}
+execute as @n[tag=SEAboss4,tag=SEAboss4_dodgemine,scores={rng3=1..3}] at @s run data modify entity @n[tag=SEAboss4_dodgemine] Motion set from entity @n[type=marker,tag=SEA_boss4_marker] Pos
+execute as @n[tag=SEAboss4,tag=SEAboss4_dodgemine,scores={rng3=1..3}] at @s run kill @e[type=marker,tag=SEA_boss4_marker]
+execute as @n[tag=SEAboss4] run tag @s remove SEAboss4_dodgemine
+
 execute as @n[tag=SEAboss4,nbt={OnGround:1b},tag=!SEAboss4_attack_dashheavy,tag=!SEAboss4_eat,tag=!SEAboss4_spectral_arrow1] at @s run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
 
 execute store result score @n[tag=SEAboss4] rng6 run random value 1..60
