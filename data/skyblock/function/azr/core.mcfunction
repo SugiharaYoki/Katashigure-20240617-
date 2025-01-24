@@ -80,11 +80,11 @@ execute if score stage Azr_system matches 35..36 run function skyblock:azr/stage
 #event9 37..39
 execute if entity @n[tag=AzrielBossFA,type=illusioner] if score stage Azr_system matches 37..39 run function skyblock:azr/stage/stage_event9
 #第11关 37
-execute if score stage Azr_system matches 37 run function skyblock:azr/stage/stage_stage11
+execute if score stage Azr_system matches 37 run function skyblock:azr/stage/stage11
 #event10 38 and 40
 execute if score stage Azr_system matches 38..40 unless score stage Azr_system matches 39 run function skyblock:azr/stage/stage_event10
 #第12关 41
-execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 41 run function skyblock:azr/stage/stage_stage_12
+execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 41 run function skyblock:azr/stage/stage12
 #event11 42..43
 execute if score stage Azr_system matches 42..43 run function skyblock:azr/stage/stage_event11
 
