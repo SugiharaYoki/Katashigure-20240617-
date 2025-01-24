@@ -564,7 +564,7 @@ fill 90127 144 109 90127 144 107 minecraft:waxed_copper_block replace air
 fill 90128 144 107 90128 144 108 minecraft:waxed_copper_grate replace air
 fill 90125 144 106 90123 144 106 waxed_copper_block replace air
 fill 90122 145 106 90124 145 106 minecraft:waxed_cut_copper_slab[type=bottom] replace air
-fill 90122 137 106 90120 137 106 air replace air
+fill 90122 137 106 90120 137 106 air
 fill 90131 149 100 90131 149 98 minecraft:waxed_cut_copper_slab[type=bottom] replace air
 fill 90129 149 95 90129 149 94 minecraft:waxed_cut_copper_slab[type=bottom] replace air
 fill 90120 145 100 90120 145 97 minecraft:waxed_cut_copper_slab[type=bottom] replace air
