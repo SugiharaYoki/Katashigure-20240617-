@@ -1,0 +1,1 @@
+give @s netherite_leggings[custom_name='{"text":"合金护腿","color":"white","italic":false}',custom_model_data=100003,custom_data={netherite_leggings_normal:1b}] 1

@@ -12,4 +12,5 @@ execute if score internal_clock_003 Azr_system matches 12 positioned -79866 48 -
 execute if score internal_clock_003 Azr_system matches 16 run fill -79867 51 -127 -79867 51 -130 air
 execute if score internal_clock_003 Azr_system matches 16 run playsound minecraft:block.iron_door.open ambient @a -79837 52 -128.0 60 0.3
 execute if score internal_clock_003 Azr_system matches 16 positioned -79866 48 -117 run function skyblock:azr/m/silverfish_t2_brick
+execute if score internal_clock_003 Azr_system matches 16 run scoreboard players reset internal_clock_003
 execute if score internal_clock_003 Azr_system matches -2147483648..2147483647 run schedule function skyblock:azr/stage/dialog/ch3_untitled 1t
