@@ -79,15 +79,14 @@ execute if score stage Azr_system matches 35 run function skyblock:azr/stage/sta
 execute if score stage Azr_system matches 35..36 run function skyblock:azr/stage/stage_event8
 #event9 37..39
 execute if entity @n[tag=AzrielBossFA,type=illusioner] if score stage Azr_system matches 37..39 run function skyblock:azr/stage/stage_event9
-
-#execute if entity @s[tag=AzrielBossFA,type=illusioner] if entity @s[scores={Azr_Progress=37..39}] run function skyblock:azr/azrielsmidgarden_stage_event9
-#execute if entity @s[scores={Azr_Progress=37}] run function skyblock:azr/azrielsmidgarden_stage_11
-#execute if entity @s[tag=!Azr_Halt,scores={Azr_Progress=39}] run function skyblock:azr/azrielsmidgarden_stage_bonus_appetence
-#execute if entity @s[scores={Azr_Progress=38..40}] unless entity @s[scores={Azr_Progress=39}] run function skyblock:azr/azrielsmidgarden_stage_event10
-#execute if entity @s[tag=!Azr_Halt,scores={Azr_Progress=41}] run function skyblock:azr/azrielsmidgarden_stage_12
-#execute if entity @s[scores={Azr_Progress=42..43}] run function skyblock:azr/azrielsmidgarden_stage_event11
-
-#execute if entity @s[tag=!Azr_Halt,scores={Azr_Progress=45}] run function skyblock:azr/azrielsmidgarden_stage_bonus_breakout
+#第11关 37
+execute if score stage Azr_system matches 37 run function skyblock:azr/stage/stage_stage11
+#event10 38 and 40
+execute if score stage Azr_system matches 38..40 unless score stage Azr_system matches 39 run function skyblock:azr/stage/stage_event10
+#第12关 41
+execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 41 run function skyblock:azr/stage/stage_stage_12
+#event11 42..43
+execute if score stage Azr_system matches 42..43 run function skyblock:azr/stage/stage_event11
 
 #奖励关 Stage Diffident 301
 execute if score stage Azr_system matches 301 run function skyblock:azr/stage/stage_diffident
@@ -101,6 +100,9 @@ execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system 
 execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 34 run function skyblock:azr/stage/stage_suspension
 #奖励关 Stage Appetence 39
 execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 39 run function skyblock:azr/stage/stage_appetence
+#奖励关 Stage Breakout 45
+execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 45 run function skyblock:azr/stage/stage_breakout
+
 
 #章节设置
 execute if entity @a[scores={Azr_wave=0..9}] run scoreboard players set chapter Azr_system 1
