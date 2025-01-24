@@ -34,7 +34,7 @@ execute as @n[tag=SEAboss4,scores={rng9=9..11}] at @s run tp @s ~ ~ ~ facing ent
 execute as @n[tag=SEAboss4] at @s run data modify entity @s HurtTime set value 0s
 execute as @n[tag=SEAboss4,scores={rng9=12}] at @s run scoreboard players set @s rng9 0
 
-execute as @n[tag=SEAboss4] at @s if entity @n[tag=SEA_mine,distance=0..2.9] run tag @s add SEAboss4_dodgemine
+execute as @n[tag=SEAboss4] at @s if entity @n[tag=SEA_mine,distance=0..3.1] run tag @s add SEAboss4_dodgemine
 execute as @n[tag=SEAboss4,tag=SEAboss4_dodgemine,scores={rng3=1}] at @s positioned 0.0 0 0.0 run summon marker ^ ^0.12 ^-0.9 {Tags:["SEA_boss4_marker"]}
 execute as @n[tag=SEAboss4,tag=SEAboss4_dodgemine,scores={rng3=2}] at @s positioned 0.0 0 0.0 run summon marker ^-0.7 ^0.12 ^-0.9 {Tags:["SEA_boss4_marker"]}
 execute as @n[tag=SEAboss4,tag=SEAboss4_dodgemine,scores={rng3=3}] at @s positioned 0.0 0 0.0 run summon marker ^0.7 ^0.12 ^-0.9 {Tags:["SEA_boss4_marker"]}
