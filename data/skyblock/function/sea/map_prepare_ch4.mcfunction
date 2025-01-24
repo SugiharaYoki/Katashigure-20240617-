@@ -514,7 +514,9 @@ setblock 90213 46 83 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_
 fill 90212 48 74 90212 48 73 minecraft:flower_pot
 setblock 90215 48 71 minecraft:potted_dead_bush
 
-
+setblock 90212 46 71 chest[facing=east]
+item replace block 90212 46 71 container.12 with chicken 1
+item replace block 90212 46 71 container.14 with chicken 1
 
 
 
