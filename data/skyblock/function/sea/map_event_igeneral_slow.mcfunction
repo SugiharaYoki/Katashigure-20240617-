@@ -1,4 +1,4 @@
-#    function skyblock:protector/entity_count_start
+#
 
 
 execute store result score @n[tag=sc] rng2 run random value 1..10
@@ -367,7 +367,7 @@ execute as @e[x=90184.0,dx=3.8,y=18.55,dy=0,z=92.50,dz=0] run damage @s 3 sting
 particle enchant 90093 131 102 3 2 3 0.01 20
 particle portal 90093 131 102 0.5 0.5 0.5 0.01 10
 
-#    function skyblock:protector/entity_count_end {function:"slyblock:sea/map_event_igeneral_slow"}
+#
 
 execute if block 90089 147 109 air if block 90091 150 110 lever[powered=true] run setblock 90089 147 109 redstone_torch
 

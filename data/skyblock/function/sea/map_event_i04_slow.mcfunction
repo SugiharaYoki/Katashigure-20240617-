@@ -1,4 +1,4 @@
-#    function skyblock:protector/entity_count_start
+#
 
 execute unless score sea_ch4_switch_entrance sea_4temp2 matches -999.. run scoreboard players set sea_ch4_switch_entrance sea_4temp2 -9
 execute unless score sea_ch4_switch_entrance2 sea_4temp2 matches -999.. run scoreboard players set sea_ch4_switch_entrance2 sea_4temp2 -9
@@ -433,4 +433,4 @@ execute as @n[tag=SEAch4_spawn_timer_boss4,tag=SEAch4_conclusion] at @s run func
 
 
 
-#    function skyblock:protector/entity_count_end {function:"skyblock:sea/map_event_i04_slow.mcfunction"}
+#

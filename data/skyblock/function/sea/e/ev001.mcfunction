@@ -1,4 +1,4 @@
-    function skyblock:protector/entity_count_start
+
 
 effect give @a[distance=0..5] slowness 3 3 false
 playsound entity.lightning_bolt.thunder ambient @a ~ ~ ~ 100 0.6
@@ -15,4 +15,3 @@ execute if entity @n[tag=sc,scores={sea_player=3..}] positioned 90146 122 112 ru
 execute if entity @n[tag=sc,scores={sea_player=2..}] positioned 90146 122 112 run function skyblock:sea/m/drowned
 execute if entity @n[tag=sc,scores={sea_player=4..}] positioned 90146 122 112 run function skyblock:sea/m/drowned
 
-    function skyblock:protector/entity_count_end {function:"slyblock:sea/ev001"}

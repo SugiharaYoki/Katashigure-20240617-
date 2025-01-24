@@ -1,4 +1,4 @@
-    function skyblock:protector/entity_count_start
+
 
 execute unless entity @n[tag=SEAbossch3_core] run tag @a[tag=SEAPT] add e_i_31
 execute unless entity @n[tag=SEAbossch3_core] run fill 90139 36 99 90137 36 101 air destroy
@@ -98,7 +98,7 @@ execute if score SEA_CH3_BOSS sea_4temp2 matches 4 if score SEA_CH3_BOSS sea_4te
 
 execute if score SEA_CH3_BOSS sea_4temp2 matches 4 if score SEA_CH3_BOSS sea_4temp1 matches 1..11 if entity @n[tag=sc,scores={sea_player=8..}] if score SEA_CH3_BOSS sea_4temp4 matches ..35 at @e[tag=SEAbossch3_light,sort=random,limit=2] if block ~ ~ ~ waxed_exposed_copper_bulb[lit=false] if score SEA_CH3_BOSS sea_4temp5 matches ..160 run function skyblock:sea/e/ev010_2
 
-#    function skyblock:protector/entity_count_end {function:"slyblock:sea/e/ev010"}
+#
 
 execute if block 90138 16 100 waxed_exposed_copper_bulb[lit=true] \
 if block 90138 16 93 waxed_exposed_copper_bulb[lit=true] \

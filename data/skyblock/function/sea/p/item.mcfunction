@@ -1,4 +1,4 @@
-#    function skyblock:protector/entity_count_start
+#
 
 execute as @s[nbt={Item:{id:"minecraft:fire_charge"}}] if entity @a[tag=SEAPT,distance=0..80] at @s run function skyblock:sea/p/fire_charge
 execute as @s[nbt={Item:{id:"minecraft:barrier"}}] at @s run kill @s
@@ -15,4 +15,4 @@ execute as @s[nbt={Item:{id:"minecraft:tnt"},OnGround:1b}] if entity @a[tag=SEAP
 execute as @s[nbt={Item:{id:"minecraft:flow_armor_trim_smithing_template"}}] unless entity @n[tag=iframe_sea_spectral,distance=0..3] at @s run kill @s
 
 
-#    function skyblock:protector/entity_count_end {function:"slyblock:sea/p/item"}
+#

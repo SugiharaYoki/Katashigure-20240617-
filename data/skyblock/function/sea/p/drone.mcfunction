@@ -1,4 +1,4 @@
-    function skyblock:protector/entity_count_start
+
 
 execute if entity @a[tag=SEAPT,distance=0..4] unless entity @s[scores={sea_4temp1=-16..}] run scoreboard players set @s sea_4temp1 -15
 execute if score @s sea_4temp1 matches -14 run playsound minecraft:block.note_block.bell block @a ~ ~ ~ 0.8 1.3
@@ -55,4 +55,3 @@ execute if score @s sea_4temp1 matches 48.. run kill @s[type=block_display]
 execute if score @s sea_4temp1 matches 2.. store result storage sea_drone:rotation Rot float 1 run scoreboard players get @s sea_4temp2
 execute if score @s sea_4temp1 matches 2.. run data modify entity @s Rotation[0] set from storage sea_drone:rotation Rot
 
-    function skyblock:protector/entity_count_end {function:"slyblock:sea/p/drone"}

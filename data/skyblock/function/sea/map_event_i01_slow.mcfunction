@@ -1,5 +1,3 @@
-    function skyblock:protector/entity_count_start
-
 execute if score sea_ch1_wasting_time rng1 matches ..390 run function skyblock:sea/e/ev028_ch1_wasting_time_1
 
 execute if entity @a[tag=e_i_07,tag=SEAPT] if score sea_ch1_wasting_time rng2 matches ..590 if items block 90095 122 128 container.26 amethyst_shard run function skyblock:sea/e/ev028_ch1_wasting_time_2
@@ -513,4 +511,3 @@ execute as @n[tag=sc,scores={sea_4temp2=6934}] at @n[tag=SEAframauros] run score
 
 execute as @n[tag=sc,scores={sea_4temp2=6300..7000}] unless entity @n[tag=SEAframauros] run scoreboard players set @n[tag=sc] sea_4temp2 5002
 
-    function skyblock:protector/entity_count_end {function:"skyblock:sea/map_event_i01_slow.mcfunction"}

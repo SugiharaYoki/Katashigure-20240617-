@@ -1,4 +1,4 @@
-    function skyblock:protector/entity_count_start
+
 
 execute positioned 90145 135 119 run function skyblock:sea/m/drone
 execute positioned 90147 135 119 run function skyblock:sea/m/drone
@@ -10,4 +10,3 @@ particle minecraft:white_smoke 90146.55 135.00 116.41 1 1 5 0 500
 
 execute positioned 90146 135 117 run summon marker ~ ~ ~ {Tags:["SEAch3_spawn"]}
 
-    function skyblock:protector/entity_count_end {function:"skyblock:sea/e/ev004.mcfunction"}

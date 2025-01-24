@@ -1,4 +1,4 @@
-    function skyblock:protector/entity_count_start
+
 
 execute at @s anchored eyes positioned ^ ^ ^1.5 run particle minecraft:sweep_attack ~ ~ ~ 0.2 0.1 0.2 0 1
 execute at @s anchored eyes positioned ^ ^ ^1.5 run playsound entity.player.attack.sweep player @a ~ ~ ~ 0.8 1.1
@@ -23,4 +23,3 @@ execute at @s[scores={rng9=3..}] anchored eyes positioned ^ ^ ^1.3 as @e[type=ar
 
 
 
-    function skyblock:protector/entity_count_end {function:"slyblock:sea/p/axeparry"}

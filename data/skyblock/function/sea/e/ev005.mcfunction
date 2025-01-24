@@ -1,4 +1,4 @@
-    function skyblock:protector/entity_count_start
+
 
 execute if entity @a[tag=SEAPT,distance=..6] run scoreboard players add @s[scores={sea_4temp1=..295}] sea_4temp1 1
 execute as @s[scores={sea_4temp1=19}] at @s run tellraw @a[distance=0..250] {"text":"？？？：“你、你没被感染吧？”","color":"green"}
@@ -77,4 +77,3 @@ execute as @s[scores={sea_4temp1=1435}] at @s run tag @a[tag=SEAPT] add e_i_27
 execute as @s[scores={sea_4temp1=1540..1800}] at @s unless entity @a[tag=SEAPT,distance=..11] run tp @s ~ ~-500 ~
 execute as @s[scores={sea_4temp1=1540..1800}] at @s unless entity @a[tag=SEAPT,distance=..11] run kill @s
 
-    function skyblock:protector/entity_count_end {function:"slyblock:sea/ev005"}

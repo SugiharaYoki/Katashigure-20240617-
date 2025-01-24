@@ -95,6 +95,8 @@ execute if block -79949 33 140 minecraft:birch_button[powered=true] run function
 execute if block -79887 44 164 minecraft:birch_button[powered=true] run function skyblock:azr/stage/stage_entertain_prep
 #Stage Vestige uncommited
 execute if block -79873 39 92 minecraft:birch_button[powered=true] run function skyblock:azr/stage/stage_vestige_prep
+#Stage Appetence uncommited
+execute if block -79912 55 -101 minecraft:birch_button[powered=true] run function skyblock:azr/stage/stage_appetence_prep
 
 #extra bonus - stage3α
 execute if block -79924 39 25 minecraft:birch_button[powered=true] positioned -79931 38 25 run function skyblock:azr/m/zombie_t2_miner
@@ -137,6 +139,15 @@ execute if block -79924 39 -72 minecraft:birch_button[powered=true] positioned -
 execute if block -79924 39 -72 minecraft:birch_button[powered=true] positioned -79931 38 -72 run function skyblock:azr/m/zombie_t2_miner
 execute if block -79924 39 -72 minecraft:birch_button[powered=true] positioned -79931 38 -72 run function skyblock:azr/m/zombie_t2_miner
 execute if block -79924 39 -72 minecraft:birch_button[powered=true] run setblock -79924 39 -72 air
+#extra bonus - event10
+execute if block -79938 41 -125 minecraft:birch_button[powered=true] run give @a[tag=azrPlayer] minecraft:glistering_melon_slice 1
+execute if block -79938 41 -125 minecraft:birch_button[powered=true] run give @a[tag=azrPlayer] minecraft:emerald 5
+execute if block -79938 41 -125 minecraft:birch_button[powered=true] positioned -79933 40 -122 run function skyblock:azr/m/husk_t2
+execute if block -79938 41 -125 minecraft:birch_button[powered=true] positioned -79933 40 -122 run function skyblock:azr/m/husk_t2
+execute if block -79938 41 -125 minecraft:birch_button[powered=true] positioned -79933 40 -122 run function skyblock:azr/m/husk_t2
+execute if block -79938 41 -125 minecraft:birch_button[powered=true] positioned -79933 40 -122 run function skyblock:azr/m/husk_t2
+execute if block -79938 41 -125 minecraft:birch_button[powered=true] run setblock -79934 40 -124 air destroy
+execute if block -79938 41 -125 minecraft:birch_button[powered=true] run setblock -79938 41 -125 air
 
 #functional button - ladder uncommited
 execute if block -79950 35 -8 minecraft:birch_button[powered=true] run setblock -79946 37 -8 air destroy
@@ -150,3 +161,6 @@ execute if block -79952 40 56 minecraft:birch_button[powered=true] run scoreboar
 execute if block -79952 39 55 minecraft:birch_button[powered=true] run scoreboard players reset CerementPassword Azr_system
 execute if block -79952 40 54 minecraft:birch_button[powered=true] run scoreboard players reset CerementPassword Azr_system
 execute if block -79952 39 54 minecraft:birch_button[powered=true] run scoreboard players reset CerementPassword Azr_system
+#functional level
+execute if block -79867 48 -109 minecraft:lever[powered=true] unless entity @n[type=interaction,tag=temp,x=-79867.5,y=48.0,z=-109.5,distance=..1] run function skyblock:azr/stage/dialog/ch3_untitled
+execute if block -79867 48 -109 minecraft:lever[powered=true] unless entity @n[type=interaction,tag=temp,x=-79867.5,y=48.0,z=-109.5,distance=..1] run summon minecraft:interaction -79867.5 48.0 -109.5 {Tags:["temp"]}

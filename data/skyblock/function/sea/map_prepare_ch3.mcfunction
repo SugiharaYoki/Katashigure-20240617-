@@ -1,4 +1,4 @@
-    function skyblock:protector/entity_count_start
+
 
 setblock 90075 103 141 minecraft:cauldron
 
@@ -417,7 +417,7 @@ item replace block 90081 137 144 container.12 with gunpowder 2
 item replace block 90081 137 144 container.14 with emerald 5
 fill 90154 21 88 90154 19 89 minecraft:waxed_copper_grate
 
-    function skyblock:protector/entity_count_end {function:"skyblock:sea/map_prepare_ch3.mcfunction"}
+
 
 fill 90137 129 97 90136 129 97 air
 fill 90137 128 97 90136 128 97 air

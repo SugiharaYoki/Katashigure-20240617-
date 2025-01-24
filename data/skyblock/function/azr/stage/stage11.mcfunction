@@ -99,7 +99,7 @@ execute if score stageSeconds Azr_system matches 20 if score playerCount Azr_sys
 execute if score stageSeconds Azr_system matches 20 if score playerCount Azr_system matches 4.. run summon zombie -79926 40 -100 {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_zombie_tier2_jail",Health:9.5f,CustomName:'"僵尸"',CanPickUpLoot:0b,IsBaby:0b,ArmorItems:[{count:1,id:"leather_boots",components:{enchantments:{protection:1}}},{count:1,id:"leather_leggings",components:{enchantments:{protection:1}}},{count:1,id:"leather_chestplate",components:{enchantments:{protection:1}}},{count:1,id:"leather_helmet",components:{enchantments:{protection:1}}}],ArmorDropChances:[0.02f,0.02f,0.02f,0.02f],attributes:[{id:"generic.max_health",base:9.5d},{id:"generic.attack_damage",base:2.0d}]}
 #65↑
 
-execute unless entity @a[tag=azrPlayer,x=-79905,y=40,z=-109,distance=0..5.8] if score stageSeconds Azr_system matches 21..23 run scoreboard players set @e[tag=sc,limit=1] stageSeconds 24
+execute unless entity @a[tag=azrPlayer,x=-79905,y=40,z=-109,distance=0..5.8] if score stageSeconds Azr_system matches 21..23 run scoreboard players set stageSeconds Azr_system 24
 
 
 execute if score mobCount Azr_system matches ..45 if block -79910 40 -105 iron_bars run fill -79910 40 -105 -79910 41 -105 air destroy
@@ -130,7 +130,7 @@ execute if score stageSeconds Azr_system matches 503 run fill -79942 42 -111 -79
 execute if score stageSeconds Azr_system matches 503 run playsound minecraft:block.iron_door.open ambient @a[tag=azrPlayer] -79943 45 -111 6 0.3
 
 
-execute if score stageSeconds Azr_system matches 510..529 if score mobCount Azr_system matches 1.. run scoreboard players set @e[tag=sc,limit=1] stageSeconds 510
+execute if score stageSeconds Azr_system matches 510..529 if score mobCount Azr_system matches 1.. run scoreboard players set stageSeconds Azr_system 510
 execute if score stageSeconds Azr_system matches 520 run title @a[tag=azrPlayer] actionbar {"text":"Stage Annihilated","color":"green"}
 execute if score stageSeconds Azr_system matches 520 run advancement grant @a[tag=azrPlayer] only skyblock:azr_stage11
 execute if score stageSeconds Azr_system matches 520 run playsound ambient.crimson_forest.loop ambient @a[tag=azrPlayer] -78000 100 0 1000
@@ -179,7 +179,7 @@ execute if score stageSeconds Azr_system matches 520 if score playerCount Azr_sy
 execute if score stageSeconds Azr_system matches 520 if score playerCount Azr_system matches 1.. run fill -79876 47 -111 -79877 52 -107 air
 execute if score stageSeconds Azr_system matches 520 if score playerCount Azr_system matches 1.. run setblock -79922 54 -110 barrel[facing=east]
 execute if score stageSeconds Azr_system matches 520 if score playerCount Azr_system matches 1.. run setblock -79924 54 -109 minecraft:chipped_anvil[facing=west]
-execute if score stageSeconds Azr_system matches 520 if score playerCount Azr_system matches 1.. run setblock -79915 52 -101 minecraft:birch_button[facing=south]
+execute if score stageSeconds Azr_system matches 520 if score playerCount Azr_system matches 1.. run setblock -79912 55 -101 minecraft:birch_button[face=wall,facing=west]
 execute if score stageSeconds Azr_system matches 520 if score playerCount Azr_system matches 1.. run fill -79936 55 -120 -79935 54 -120 air
 execute if score stageSeconds Azr_system matches 520 if score playerCount Azr_system matches 1.. run setblock -79907 46 -111 minecraft:air
 execute if score stageSeconds Azr_system matches 520 if score playerCount Azr_system matches 1.. run fill -79871 48 -106 -79872 47 -106 minecraft:blast_furnace[facing=north]

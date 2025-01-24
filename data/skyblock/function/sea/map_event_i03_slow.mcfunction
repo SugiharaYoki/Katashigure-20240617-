@@ -1,4 +1,4 @@
-#    function skyblock:protector/entity_count_start
+#
 
 execute as @a[tag=SEAPT,x=90067,y=137,z=125,distance=0..4.3,tag=!e_i_30] at @s run title @s times 0s 2s 2s
 execute as @a[tag=SEAPT,x=90067,y=137,z=125,distance=0..4.3,tag=!e_i_30] at @s run title @s title {"text": "甲 板","color": "white","bold": true}
@@ -231,7 +231,7 @@ execute as @a[tag=SEAPT,x=90138,y=103,z=100,distance=0..2.7,tag=!e_i_29] at @s r
 execute as @a[tag=SEAPT,x=90138,y=36,z=100,distance=0..2.7,tag=!e_i_31] at @s run function skyblock:sea/e/ev010
 execute as @n[tag=SEAbossch3_core] at @s run function skyblock:sea/e/ev010
 
-#    function skyblock:protector/entity_count_end {function:"skyblock:sea/map_event_i03_slow.mcfunction"}
+#
 
 
 #德怀特彩蛋
