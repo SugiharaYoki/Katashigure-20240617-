@@ -1,0 +1,1 @@
+give @s netherite_boots[custom_name='{"text":"合金战靴","color":"white","italic":false}',custom_model_data=100004,custom_data={netherite_boots_normal:1b}] 1

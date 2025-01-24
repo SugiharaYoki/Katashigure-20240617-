@@ -100,9 +100,25 @@
     chainmail_chestplate_protect 锁链胸甲·反透 100010
     chainmail_leggings_protect 锁链护腿·反透 100011
     chainmail_boots_protect 锁链靴·反透 100012
+    spider_chesplate 蜘蛛狼铠甲 100013
+    spider_leggings 蜘蛛狼护腿 100014
+    spider_boots 蜘蛛狼短靴 100015
     金
     bee_helmet 蜂棘帽 100001
     bee_chestplate 黄蜂服 100002
+    下界合金
+    netherite_helmet_normal 合金头盔 100001
+    netherite_chesplate_normal 合金胸甲 100002
+    netherite_leggings_normal 合金护腿 100003
+    netherite_boots_normal 合金战靴 100004
+    netherite_helmet_t1 unused 100005
+    netherite_chesplate_t1 试造防弹甲 100006
+    netherite_leggings_t1 试造防弹护腿 100007
+    netherite_boots_t1 unused 100008
+    netherite_helmet_t2 unused 100009
+    netherite_chesplate_t2 试造防弹甲·改 100010
+    netherite_leggings_t2 unused 100011
+    netherite_boots_t2 unused 100012
 铲
     铁
     iron_shovel_chain 锁链重锹 100001
