@@ -7,7 +7,7 @@ function skyblock:sea/generate/preload/map_prepare_ch5
 tp @a[tag=SEAPT] 90146 84 42 facing 90145 84 42
 
 
-give @a[tag=SEAPT] emerald 24
+scoreboard players add @a[tag=SEAPT] sea_i_emerald 50
 
 setblock 90146 88 62 air
 fill 90148 85 55 90148 86 55 air

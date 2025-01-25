@@ -20,6 +20,7 @@ give @a[tag=SEAPT] shield[custom_name='{"text":"防护盾","italic":false,"color
 
 give @a[tag=SEAPT] globe_banner_pattern[custom_name='{"text":"调查记录 6月29日 17:42","italic":true,"color":"dark_purple","italic":false}',lore=['{"text":"记录者为忒尔克西钻井平台调查小组成员，也是我本人。","color":"white","italic":false}','{"text":"钻井平台距离失联已经超过36小时，我们在黄昏之时赶到了平台的西南驳口。","color":"white","italic":false}','{"text":"整座海上设施此时一片死寂，至少上百名的工作人员皆数不见踪影。","color":"white","italic":false}']]
 give @a[tag=SEAPT,scores={SEAPT_mode=1}] nether_star 2
+give @a[tag=SEAPT,scores={SEAPT_mode=2}] nether_star 1
 
 give @a[tag=SEAPT] spyglass[lore=['{"text":"我随身携带的望远镜。","color":"white","italic":false}','{"text":"在前途未知的时刻，紧握住它可以让我不再迷惘。","color":"white","italic":false}','{"text":"手持时：显示任务目标 & 跳过已阅读的剧情对话","color":"green","italic":false}']]
 give @a[tag=SEAPT] compass
@@ -44,9 +45,7 @@ tag @a[tag=SEAPT] add e_w_06
 #scoreboard players set @a[tag=SEAPT] sea_i_trim_skeleton 6
 #scoreboard players set @a[tag=SEAPT] sea_i_trim_sea 0 
 #scoreboard players set @a[tag=SEAPT] sea_i_trim_ghost 0
-give @a[tag=SEAPT] emerald 64
-give @a[tag=SEAPT] emerald 64
-give @a[tag=SEAPT] emerald 24
+scoreboard players add @a[tag=SEAPT] sea_i_emerald 150
 
 
 tag @a add e_i_30

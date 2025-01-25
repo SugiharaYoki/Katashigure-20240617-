@@ -59,12 +59,14 @@ execute unless entity @s[scores={sea_progress=-999..}] run scoreboard players se
 execute if entity @a[tag=SEAPT,tag=e_w_01] run tag @s add e_w_01
 execute if entity @a[tag=SEAPT,tag=e_w_02] run tag @s add e_w_02
 execute if entity @a[tag=SEAPT,tag=e_w_03] run tag @s add e_w_03
-execute if entity @a[tag=SEAPT,tag=e_w_04] run tag @s add e_w_04
-execute if entity @a[tag=SEAPT,tag=e_w_05] run tag @s add e_w_05
+#execute if entity @a[tag=SEAPT,tag=e_w_04] run tag @s add e_w_04
+#execute if entity @a[tag=SEAPT,tag=e_w_05] run tag @s add e_w_05
+execute if entity @a[tag=SEAPT,tag=e_w_06] run tag @s add e_w_06
 execute if entity @a[tag=SEAPT,tag=e_w_01] run give @s iron_hoe[custom_name='{"text":"撬棍","italic":false,"color":"red"}',custom_data={sea_crowbar:true},attribute_modifiers=[{type:"generic.attack_damage",slot:"mainhand",id:"sea_weapon:001_01",amount:1.5,operation:"add_value"},{type:"generic.attack_speed",slot:"mainhand",id:"sea_weapon:001_02",amount:-1.5,operation:"add_value"}],unbreakable={}]
 execute if entity @a[tag=SEAPT,tag=e_w_02] run give @s iron_axe[custom_name='{"text":"消防斧","italic":false,"color":"red"}',custom_data={sea_safeaxe:true},attribute_modifiers=[{type:"generic.attack_damage",slot:"mainhand",id:"sea_weapon:004_01",amount:6.5,operation:"add_value"},{type:"generic.attack_speed",slot:"mainhand",id:"sea_weapon:004_02",amount:-3.0,operation:"add_value"}],unbreakable={}]
 execute if entity @a[tag=SEAPT,tag=e_w_03] run give @s crossbow[custom_name='{"text":"工程弩","italic":false,"color":"red"}',custom_data={sea_crossbow:true},unbreakable={}]
-execute if entity @a[tag=SEAPT,tag=e_w_04] run give @s shears[custom_name='{"text":"喷火器","italic":false,"color":"red"}',custom_data={sea_flamethrower:true},unbreakable={}]
+#execute if entity @a[tag=SEAPT,tag=e_w_04] run give @s shears[custom_name='{"text":"喷火器","italic":false,"color":"red"}',custom_data={sea_flamethrower:true},unbreakable={}]
+execute if entity @a[tag=SEAPT,tag=e_w_06] run give @s[tag=SEAPT] music_disc_5[custom_name='{"text":"磁锯发射装置","italic":false,"color":"red"}',custom_data={sea_flamethrower:true},unbreakable={}]
 
 execute if items entity @a[tag=SEAPT] container.* shield run give @s shield[custom_name='{"text":"防护盾","italic":false,"color":"red"}',custom_data={sea_shield:true},attribute_modifiers=[{type:"generic.movement_speed",slot:"hand",id:"sea_armor:004_01",amount:-0.03,operation:"add_value"}],lore=['{"text":"主手选至此道具的瞬间获得极短暂无敌（无需右键使用）","color":"white","italic":false}','{"text":"在这期间受到攻击并反击可以造成巨额伤害","color":"white","italic":false}']]
 
@@ -84,12 +86,13 @@ execute if block 90074 103 137 scaffolding run give @s iron_ingot 1
 execute if block 90062 103 135 grindstone run give @s baked_potato 3
 execute if block 90075 103 141 minecraft:cauldron run give @s baked_potato 3
 execute if block 90074 103 137 scaffolding run give @s baked_potato 3
-execute if block 90062 103 135 grindstone run give @s emerald 24
-execute if block 90075 103 141 minecraft:cauldron run give @s emerald 36
-execute if block 90074 103 137 scaffolding run give @s emerald 48
+execute if block 90062 103 135 grindstone run scoreboard players add @s sea_i_emerald 20
+execute if block 90075 103 141 minecraft:cauldron run scoreboard players add @s sea_i_emerald 40
+execute if block 90074 103 137 scaffolding run scoreboard players add @s sea_i_emerald 60
 execute if block 90062 103 135 grindstone run give @s arrow 12
 execute if block 90075 103 141 minecraft:cauldron run give @s arrow 24
 execute if block 90074 103 137 scaffolding run give @s arrow 24
+execute if block 90074 103 137 scaffolding run give @s disc_fragment_5 3
 execute if block 90062 103 135 grindstone run scoreboard players add @s sea_i_trim_zombie 8
 execute if block 90075 103 141 minecraft:cauldron run scoreboard players add @s sea_i_trim_zombie 8
 execute if block 90074 103 137 scaffolding run scoreboard players add @s sea_i_trim_zombie 16
@@ -132,30 +135,12 @@ execute unless entity @s[scores={SEAPT_member_eternal=1..}] run scoreboard playe
 execute unless entity @s[scores={SEAPT_member_eternal=1..}] run scoreboard players operation @s SEAPT_member_eternal = SEAPT_member_eternal SEAPT_member_eternal
 
 #成就
-advancement grant @s only skyblock:thelxiepeia
-advancement grant @s only skyblock:sea/doc/documentary1
-advancement grant @s only skyblock:sea/doc/1
-scoreboard players add @s sea_count_played 1
-function skyblock:sea/generate/preload/map_prepare_ch1_player_macro_doc with storage sea:doc
+function skyblock:sea/generate/preload/map_prepare_ch1_player_advancement
 
 scoreboard players set @s sea_glowberries 0
+scoreboard players add @s sea_count_played 1
 
-advancement grant @s[scores={sea_progress=1..}] only skyblock:sea/chapter1
-advancement grant @s[scores={sea_progress=1..}] only skyblock:sea/doc/documentary0
-advancement grant @s[scores={sea_progress=1..}] only skyblock:sea/doc/documentary1
-advancement grant @s[scores={sea_progress=3..}] only skyblock:sea/chapter2
-advancement grant @s[scores={sea_progress=3..}] only skyblock:sea/doc/documentary2
-advancement grant @s[scores={sea_progress=6..}] only skyblock:sea/chapter3
-advancement grant @s[scores={sea_progress=6..}] only skyblock:sea/doc/documentary3
-advancement grant @s[scores={sea_progress=7..}] only skyblock:sea/chapter3b
-advancement grant @s[scores={sea_progress=9..}] only skyblock:sea/chapter4
-advancement grant @s[scores={sea_progress=9..}] only skyblock:sea/doc/documentary4
-advancement grant @s[scores={sea_progress=10..}] only skyblock:sea/chapter4b
-advancement grant @s[scores={sea_progress=10..}] only skyblock:sea/doc/documentary4b
-advancement grant @s[scores={sea_progress=12..}] only skyblock:sea/chapter5
-advancement grant @s[scores={sea_progress=12..}] only skyblock:sea/doc/documentary5
-
-tag @s remove SEAPT_storymode
+#tag @s remove SEAPT_storymode
 
 tag @s[tag=e_w_ahl2_e] add SEA_w_armor_upg1
 tag @s[tag=e_w_ahl2_e] add SEA_w_armor_upg2

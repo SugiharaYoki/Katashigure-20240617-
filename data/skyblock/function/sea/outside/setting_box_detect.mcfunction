@@ -1,4 +1,4 @@
-execute unless entity @s[scores={SEAPT_mode=0..}] run scoreboard players set @s SEAPT_mode 1
+
 
 execute positioned 90078 91 134 as @a[distance=0..23,tag=!SEAPT,gamemode=adventure] at @s run function skyblock:sea/outside/setting_box_items
 
