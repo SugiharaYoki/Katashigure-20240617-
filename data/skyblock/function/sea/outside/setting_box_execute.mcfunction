@@ -1,6 +1,8 @@
-execute if items entity @s player.cursor name_tag run tag @s[tag=SEAPT_storymode] add sea_setting_box_temp
-execute if items entity @s player.cursor name_tag run tag @s[tag=!SEAPT_storymode] add SEAPT_storymode
-execute if items entity @s player.cursor name_tag run tag @s[tag=sea_setting_box_temp] remove SEAPT_storymode
+
+execute if items entity @s player.cursor name_tag run scoreboard players set @s[scores={SEAPT_mode=3}] SEAPT_mode 4
+execute if items entity @s player.cursor name_tag run scoreboard players set @s[scores={SEAPT_mode=2}] SEAPT_mode 3
+execute if items entity @s player.cursor name_tag run scoreboard players set @s[scores={SEAPT_mode=1}] SEAPT_mode 2
+execute if items entity @s player.cursor name_tag run scoreboard players set @s[scores={SEAPT_mode=4}] SEAPT_mode 1
 
 playsound minecraft:ui.button.click player @s ~ ~ ~ 1 1.2
 

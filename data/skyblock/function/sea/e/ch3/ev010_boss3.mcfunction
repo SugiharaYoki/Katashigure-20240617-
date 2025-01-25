@@ -124,7 +124,7 @@ execute if entity @n[tag=SEAbossch3_light_keep] at @n[tag=SEAbossch3_core,tag=!S
 execute if entity @n[tag=SEAbossch3_light_keep] as @n[tag=SEAbossch3_core,tag=!SEAbossch3_core_lighted] run tag @s add SEAbossch3_core_lighted
 execute as @n[tag=SEAbossch3_core,tag=SEAbossch3_core_lighted] run scoreboard players add @s sea_4temp7 1
 
-execute as @n[tag=SEAbossch3_core,tag=SEAbossch3_core_lighted,scores={sea_4temp7=10}] run give @a[tag=SEAPT] nether_star
+execute as @n[tag=SEAbossch3_core,tag=SEAbossch3_core_lighted,scores={sea_4temp7=10}] run give @a[tag=SEAPT,scores={SEAPT_mode=1}] nether_star
 execute as @n[tag=SEAbossch3_core,tag=SEAbossch3_core_lighted,scores={sea_4temp7=10}] run scoreboard players set @a[tag=SEAPT,scores={sea_progress=..8}] sea_progress 9
 execute as @n[tag=SEAbossch3_core,tag=SEAbossch3_core_lighted,scores={sea_4temp7=10}] run tellraw @a[x=90100,y=100,z=100,distance=0..2000] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“老哥，下面的问题是不是解决了？”","color":"white","bold": false}]
 execute as @n[tag=SEAbossch3_core,tag=SEAbossch3_core_lighted,scores={sea_4temp7=40}] if entity @n[tag=sc,scores={sea_player=1}] run tellraw @a[x=90100,y=100,z=100,distance=0..2000] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“你等着，我想办法找其他路来和你汇合。”","color":"white","bold": false}]

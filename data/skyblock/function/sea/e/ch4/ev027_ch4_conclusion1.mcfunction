@@ -269,7 +269,7 @@ execute if score @s rng6 matches 1267 as @n[tag=SEAedwina] at @s run tp @s ~ ~ ~
 execute if score @s rng6 matches 1269 as @n[tag=SEAedwina] at @s run kill @s
 
 
-execute if score @s rng6 matches 1269 run give @a[tag=SEAPT] nether_star
+execute if score @s rng6 matches 1269 run give @a[tag=SEAPT,scores={SEAPT_mode=1}] nether_star
 execute if score @s rng6 matches 1269 run scoreboard players set @a[tag=SEAPT,scores={sea_progress=..11}] sea_progress 12
 
 execute if score @s rng6 matches 1269 as @a[tag=SEAPT] at @s run tellraw @s {"text":"『厄珀娅的悲歌』第四章 完","color":"blue","bold": true}

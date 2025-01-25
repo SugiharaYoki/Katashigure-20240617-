@@ -259,7 +259,7 @@ item replace block 90070 122 145 container.14 with beef 1
 item replace block 90073 122 143 container.11 with arrow 1
 item replace block 90073 122 143 container.13 with arrow 2
 item replace block 90073 122 143 container.15 with arrow 1
-item replace block 90075 122 143 container.12 with nether_star
+item replace block 90075 122 143 container.12 with glistering_melon_slice
 setblock 90075 122 148 furnace[facing=north]
 setblock 90075 131 127 chest[facing=north]
 item replace block 90075 131 127 container.13 with golden_carrot 3

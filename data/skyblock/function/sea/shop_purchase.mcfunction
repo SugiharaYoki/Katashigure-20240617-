@@ -545,7 +545,7 @@ tag @s remove sea_purchase_pass
 #tag @s remove sea_purchase_pass
 
 #闪烁的瓜片
-execute if score @s sea_crafter matches 10039 as @s[scores={sea_i_glistering_melon=1..,sea_i_echo_shard=5..}] run tag @s add sea_purchase_pass
+execute if score @s sea_crafter matches 10039 as @s[scores={sea_i_glistering_melon=1..,sea_i_echo_shard=5..,SEAPT_mode=1}] run tag @s add sea_purchase_pass
 execute if score @s sea_crafter matches 10039 as @s[tag=!sea_purchase_pass] run tellraw @s {"text":"失败！素材不足！","color":"red"}
 execute if entity @s[tag=sea_purchase_pass] run playsound minecraft:item.armor.equip_iron neutral @s ~ ~ ~ 100
 execute if entity @s[tag=sea_purchase_pass] run give @s nether_star
@@ -585,7 +585,7 @@ tag @s remove sea_purchase_pass
 execute store result score @s rng1 run random value 1..33
 
 execute if score @s sea_crafter matches 20001 as @s[tag=seaPerm000,scores={sea_i_trim_zombie=..1}] run tellraw @s {"text":"你的吟唱并未得到海妖的回应……","color":"red"}
-execute if score @s sea_crafter matches 20001 as @s[scores={sea_i_trim_zombie=2..}] run tag @s add sea_purchase_pass
+execute if score @s sea_crafter matches 20001 as @s[scores={sea_i_trim_zombie=2..,SEAPT_mode=1..2}] run tag @s add sea_purchase_pass
 execute if entity @s[tag=sea_purchase_pass] run playsound minecraft:item.lodestone_compass.lock neutral @s ~ ~ ~ 100 0.8
 execute if entity @s[tag=sea_purchase_pass] run playsound minecraft:block.enchantment_table.use neutral @s ~ ~ ~ 100 0.9
 execute if entity @s[tag=sea_purchase_pass,scores={rng1=1..10}] run give @s bolt_armor_trim_smithing_template[custom_name='{"text":"机关铜板","italic":true,"color":"light_purple","italic":false}',lore=['{"text":"守护 I 强化护甲","color":"white","italic":false}'],custom_data={sea_t_armor1:true}]
@@ -597,7 +597,7 @@ execute if entity @s[tag=sea_purchase_pass,scores={rng1=31..33}] run give @s eme
 execute if entity @s[tag=sea_purchase_pass] run scoreboard players remove @s sea_i_trim_zombie 2
 tag @s remove sea_purchase_pass
 
-execute if score @s sea_crafter matches 20002 as @s[tag=seaPerm000,tag=seaPerm001,scores={sea_i_trim_zombie=1..,sea_i_trim_spider=1..}] run tag @s add sea_purchase_pass
+execute if score @s sea_crafter matches 20002 as @s[tag=seaPerm000,tag=seaPerm001,scores={sea_i_trim_zombie=1..,sea_i_trim_spider=1..,SEAPT_mode=1..2}] run tag @s add sea_purchase_pass
 execute if score @s sea_crafter matches 20002 as @s[tag=!sea_purchase_pass] run tellraw @s {"text":"你的吟唱并未得到海妖的回应……","color":"red"}
 execute if entity @s[tag=sea_purchase_pass] run playsound minecraft:item.lodestone_compass.lock neutral @s ~ ~ ~ 100 0.8
 execute if entity @s[tag=sea_purchase_pass] run playsound minecraft:block.enchantment_table.use neutral @s ~ ~ ~ 100 0.9
@@ -611,7 +611,7 @@ execute if entity @s[tag=sea_purchase_pass] run scoreboard players remove @s sea
 execute if entity @s[tag=sea_purchase_pass] run scoreboard players remove @s sea_i_trim_zombie 1
 tag @s remove sea_purchase_pass
 
-execute if score @s sea_crafter matches 20003 as @s[tag=seaPerm000,tag=seaPerm002,scores={sea_i_trim_bug=1..,sea_i_trim_human=1..}] run tag @s add sea_purchase_pass
+execute if score @s sea_crafter matches 20003 as @s[tag=seaPerm000,tag=seaPerm002,scores={sea_i_trim_bug=1..,sea_i_trim_human=1..,SEAPT_mode=1..2}] run tag @s add sea_purchase_pass
 execute if score @s sea_crafter matches 20003 as @s[tag=!sea_purchase_pass] run tellraw @s {"text":"你的吟唱并未得到海妖的回应……","color":"red"}
 execute if entity @s[tag=sea_purchase_pass] run playsound minecraft:item.lodestone_compass.lock neutral @s ~ ~ ~ 100 0.8
 execute if entity @s[tag=sea_purchase_pass] run playsound minecraft:block.enchantment_table.use neutral @s ~ ~ ~ 100 0.9
@@ -627,7 +627,7 @@ tag @s remove sea_purchase_pass
 
 execute store result score @s rng1 run random value 1..45
 
-execute if score @s sea_crafter matches 20004 as @s[tag=seaPerm000,tag=seaPerm003,scores={sea_i_trim_bug=2..,sea_i_trim_skeleton=1..}] run tag @s add sea_purchase_pass
+execute if score @s sea_crafter matches 20004 as @s[tag=seaPerm000,tag=seaPerm003,scores={sea_i_trim_bug=2..,sea_i_trim_skeleton=1..,SEAPT_mode=1..2}] run tag @s add sea_purchase_pass
 execute if score @s sea_crafter matches 20004 as @s[tag=!sea_purchase_pass] run tellraw @s {"text":"你的吟唱并未得到海妖的回应……","color":"red"}
 execute if entity @s[tag=sea_purchase_pass] run playsound minecraft:item.lodestone_compass.lock neutral @s ~ ~ ~ 100 0.8
 execute if entity @s[tag=sea_purchase_pass] run playsound minecraft:block.enchantment_table.use neutral @s ~ ~ ~ 100 0.9
@@ -644,7 +644,7 @@ execute if entity @s[tag=sea_purchase_pass] run scoreboard players remove @s sea
 tag @s remove sea_purchase_pass
 
 
-execute if score @s sea_crafter matches 20005 as @s[tag=seaPerm000,tag=seaPerm004,scores={sea_i_trim_zombie=3..,sea_i_trim_skeleton=1..}] run tag @s add sea_purchase_pass
+execute if score @s sea_crafter matches 20005 as @s[tag=seaPerm000,tag=seaPerm004,scores={sea_i_trim_zombie=3..,sea_i_trim_skeleton=1..,SEAPT_mode=1..2}] run tag @s add sea_purchase_pass
 execute if score @s sea_crafter matches 20005 as @s[tag=!sea_purchase_pass] run tellraw @s {"text":"你的吟唱并未得到海妖的回应……","color":"red"}
 execute if entity @s[tag=sea_purchase_pass] run playsound minecraft:item.lodestone_compass.lock neutral @s ~ ~ ~ 100 0.8
 execute if entity @s[tag=sea_purchase_pass] run playsound minecraft:block.enchantment_table.use neutral @s ~ ~ ~ 100 0.9
@@ -660,7 +660,7 @@ execute if entity @s[tag=sea_purchase_pass] run scoreboard players remove @s sea
 execute if entity @s[tag=sea_purchase_pass] run scoreboard players remove @s sea_i_trim_skeleton 1
 tag @s remove sea_purchase_pass
 
-execute if score @s sea_crafter matches 20006 as @s[tag=seaPerm000,tag=seaPerm005,scores={sea_i_trim_human=3..,sea_i_trim_spider=2..}] run tag @s add sea_purchase_pass
+execute if score @s sea_crafter matches 20006 as @s[tag=seaPerm000,tag=seaPerm005,scores={sea_i_trim_human=3..,sea_i_trim_spider=2..,SEAPT_mode=1..2}] run tag @s add sea_purchase_pass
 execute if score @s sea_crafter matches 20006 as @s[tag=!sea_purchase_pass] run tellraw @s {"text":"你的吟唱并未得到海妖的回应……","color":"red"}
 execute if entity @s[tag=sea_purchase_pass] run playsound minecraft:item.lodestone_compass.lock neutral @s ~ ~ ~ 100 0.8
 execute if entity @s[tag=sea_purchase_pass] run playsound minecraft:block.enchantment_table.use neutral @s ~ ~ ~ 100 0.9
@@ -676,7 +676,7 @@ execute if entity @s[tag=sea_purchase_pass] run scoreboard players remove @s sea
 execute if entity @s[tag=sea_purchase_pass] run scoreboard players remove @s sea_i_trim_spider 2
 tag @s remove sea_purchase_pass
 
-execute if score @s sea_crafter matches 20021 as @s[tag=seaPerm000,tag=seaPerm006,scores={sea_i_trim_skeleton=2..,sea_i_trim_spider=2..}] run tag @s add sea_purchase_pass
+execute if score @s sea_crafter matches 20021 as @s[tag=seaPerm000,tag=seaPerm006,scores={sea_i_trim_skeleton=2..,sea_i_trim_spider=2..,SEAPT_mode=1..2}] run tag @s add sea_purchase_pass
 execute if score @s sea_crafter matches 20021 as @s[tag=!sea_purchase_pass] run tellraw @s {"text":"你的吟唱并未得到海妖的回应……","color":"red"}
 execute if entity @s[tag=sea_purchase_pass] run playsound minecraft:item.lodestone_compass.lock neutral @s ~ ~ ~ 100 0.8
 execute if entity @s[tag=sea_purchase_pass] run playsound minecraft:block.enchantment_table.use neutral @s ~ ~ ~ 100 0.9
@@ -692,7 +692,7 @@ execute if entity @s[tag=sea_purchase_pass] run scoreboard players remove @s sea
 execute if entity @s[tag=sea_purchase_pass] run scoreboard players remove @s sea_i_trim_spider 2
 tag @s remove sea_purchase_pass
 
-execute if score @s sea_crafter matches 20022 as @s[tag=seaPerm007,scores={sea_i_trim_zombie=10..}] run tag @s add sea_purchase_pass
+execute if score @s sea_crafter matches 20022 as @s[tag=seaPerm007,scores={sea_i_trim_zombie=10..,SEAPT_mode=1..2}] run tag @s add sea_purchase_pass
 execute if score @s sea_crafter matches 20022 as @s[tag=!sea_purchase_pass] run tellraw @s {"text":"你的吟唱并未得到海妖的回应……","color":"red"}
 execute if entity @s[tag=sea_purchase_pass] run playsound minecraft:item.lodestone_compass.lock neutral @s ~ ~ ~ 100 0.8
 execute if entity @s[tag=sea_purchase_pass] run playsound minecraft:block.enchantment_table.use neutral @s ~ ~ ~ 100 0.9
