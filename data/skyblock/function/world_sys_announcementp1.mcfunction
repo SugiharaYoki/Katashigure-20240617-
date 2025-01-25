@@ -68,5 +68,3 @@ execute as @n[x=102,y=5,z=-242,dx=58,dy=300,dz=58,type=item,scores={rng2=3}] at 
 execute as @n[x=102,y=5,z=-242,dx=58,dy=300,dz=58,type=item,scores={rng2=3..}] at @s run kill @s
 execute as @e[x=102,y=5,z=-242,dx=58,dy=300,dz=58,type=marker,tag=MazeTower_Glowstick,limit=120] at @s if entity @a[distance=..25] run function skyblock:city_maze_marker
 
-#花园2开局大厅
-execute positioned 90078 91 134 if entity @a[distance=0..23,tag=!SEAPT,gamemode=!spectator] run function skyblock:sea/outside/setting_box_detect

@@ -5,3 +5,4 @@ execute if items entity @s player.cursor name_tag run tag @s[tag=sea_setting_box
 playsound minecraft:ui.button.click player @s ~ ~ ~ 1 1.2
 
 item replace entity @s player.cursor with air
+clear @s
