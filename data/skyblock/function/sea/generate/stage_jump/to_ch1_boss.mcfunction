@@ -22,7 +22,6 @@ tag @a[tag=SEAPT] add e_w_01
 tag @a[tag=SEAPT] add e_w_02
 give @a[tag=SEAPT] arrow 8
 scoreboard players add @a[tag=SEAPT] sea_i_emerald 40
-scoreboard players set @a[tag=SEAPT] sea_speedrun_ch1 9999
 scoreboard players set sc sea_speedrun_ch1 9999
 
 
