@@ -22,3 +22,4 @@ execute at @s run particle minecraft:reverse_portal ~ ~1 ~ 0.5 0.6 0.5 0.2 60
 scoreboard players set @s MultiMenu 0
 execute if entity @a[tag=SEAPT] run function skyblock:sea/generate/preload/map_prepare_ch1_player
 
+gamemode adventure
