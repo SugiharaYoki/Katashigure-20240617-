@@ -1,0 +1,17 @@
+execute if entity @n[tag=SEA_choose_chapter_1,type=armor_stand] run function skyblock:sea/generate/preload/map_prepare_ch1
+execute if entity @n[tag=SEA_choose_chapter_2,type=armor_stand] run function skyblock:sea/generate/stage_jump/to_ch2
+execute if entity @n[tag=SEA_choose_chapter_2,type=armor_stand] run function skyblock:sea/generate/stage_jump/to_ch2_exclusive
+execute if entity @n[tag=SEA_choose_chapter_2b,type=armor_stand] run function skyblock:sea/generate/stage_jump/to_ch2_boss
+execute if entity @n[tag=SEA_choose_chapter_3,type=armor_stand] run function skyblock:sea/generate/stage_jump/to_ch3
+execute if entity @n[tag=SEA_choose_chapter_3b,type=armor_stand] run function skyblock:sea/generate/stage_jump/to_ch3_boss
+execute if entity @n[tag=SEA_choose_chapter_3b,type=armor_stand] run function skyblock:sea/generate/stage_jump/to_ch3_boss_exclusive
+execute if entity @n[tag=SEA_choose_chapter_4,type=armor_stand] run function skyblock:sea/generate/stage_jump/to_ch4
+execute if entity @n[tag=SEA_choose_chapter_4,type=armor_stand] run function skyblock:sea/generate/stage_jump/to_ch4_exclusive
+execute if entity @n[tag=SEA_choose_chapter_4b,type=armor_stand] run function skyblock:sea/generate/stage_jump/to_ch4_boss
+execute if entity @n[tag=SEA_choose_chapter_4b,type=armor_stand] run function skyblock:sea/generate/stage_jump/to_ch4_boss_exclusive
+execute if entity @n[tag=SEA_choose_chapter_5,type=armor_stand] run function skyblock:sea/generate/stage_jump/to_ch5
+execute if entity @n[tag=SEA_choose_chapter_5b,type=armor_stand] run function skyblock:sea/generate/stage_jump/to_ch5_boss
+execute if entity @n[tag=SEA_choose_chapter_6,type=armor_stand] run function skyblock:sea/generate/stage_jump/to_ch6
+execute if entity @n[tag=SEA_choose_chapter_6b,type=armor_stand] run function skyblock:sea/generate/stage_jump/to_ch6_boss
+execute if entity @n[tag=SEA_choose_chapter_7,type=armor_stand] run function skyblock:sea/generate/stage_jump/to_ch7
+execute if entity @n[tag=SEA_choose_chapter_7b,type=armor_stand] run function skyblock:sea/generate/stage_jump/to_ch7_boss

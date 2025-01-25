@@ -1,4 +1,6 @@
-tellraw @s {"text":"『防具升级页面 - 护甲』","bold":true,"color":"red"}
+execute as @s run function skyblock:sea/calc/armor
+# tellraw @s {"text":"『防具升级页面 - 护甲』","bold":true,"color":"red"}
+tellraw @s {"text":"『防具升级页面 - 护甲』","extra":[""],"color":"red","bold":true,"hoverEvent":{"action":"show_text","value":{"translate":"当前已激活的加成：\n护甲值：+%s\n护甲韧性：+%s\n燃烧时间：-%s%%\n移动速度：+%s%%","with":[{"storage":"sea:calc","nbt":"armor.armor.val","color":"green"},{"nbt":"armor.armor_toughness.val","storage":"sea:calc","color":"green"},{"nbt":"armor.burning_time.val","storage":"sea:calc","color":"red"},{"nbt":"armor.movement_speed.val","storage":"sea:calc","color":"green"}],"type":"translatable"}}}
 tellraw @s {"text":"   "}
 
 summon marker ~ ~ ~ {Tags:["SEA_w_armor_displaymarker","SEA_w_armor_displaymarker0"]}

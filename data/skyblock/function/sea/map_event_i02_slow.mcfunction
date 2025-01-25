@@ -56,7 +56,7 @@ execute as @a[tag=SEAPT,x=90111,y=128,z=117,distance=0..2.3,tag=!e_i_14] at @s r
 
 
 
-execute as @a[tag=SEAPT,x=90081,y=128,z=141,distance=0..1.3,tag=!e_i_21] run function skyblock:sea/e/ev024_ch2_largest_storage
+execute as @a[tag=SEAPT,x=90081,y=128,z=141,distance=0..1.3,tag=!e_i_21] run function skyblock:sea/e/ch2/ev024_ch2_largest_storage
 
 execute if block 90077 131 141 air unless block 90077 129 145 air unless entity @e[tag=SEAmob,x=90075,y=127,z=130,distance=0..6] run fill 90077 129 145 90077 128 145 air destroy
 execute if block 90077 131 141 air unless block 90075 128 126 air unless entity @e[tag=SEAmob,x=90075,y=127,z=130,distance=0..6] run fill 90075 128 126 90075 128 126 air destroy
@@ -92,9 +92,9 @@ execute at @n[tag=SEArivetteboss2] as @a[tag=SEAPT,distance=0..3.3,tag=!e_i_19,t
 execute at @n[tag=SEArivetteboss2] as @a[tag=SEAPT,distance=0..3.3,tag=!e_i_23] at @s run tag @s add e_i_23
 
 
-execute as @a[tag=SEAPT,x=90111,y=128,z=125,distance=0..4.3,tag=!e_i_15,tag=!SEAPF] run function skyblock:sea/e/ev024_ch2_welcome_to_the_floor
+execute as @a[tag=SEAPT,x=90111,y=128,z=125,distance=0..4.3,tag=!e_i_15,tag=!SEAPF] run function skyblock:sea/e/ch2/ev024_ch2_welcome_to_the_floor
 
-execute as @a[tag=SEAPT,x=90110,y=128,z=150,distance=0..1.3,tag=!e_i_16,tag=!SEAPF] at @s run function skyblock:sea/e/ev024_ch2_balcony_edge_a
+execute as @a[tag=SEAPT,x=90110,y=128,z=150,distance=0..1.3,tag=!e_i_16,tag=!SEAPF] at @s run function skyblock:sea/e/ch2/ev024_ch2_balcony_edge_a
 
 
 
@@ -126,7 +126,7 @@ execute as @n[tag=sc,scores={sea_4temp2=80..395}] run scoreboard players add @s 
 execute as @n[tag=sc,scores={sea_4temp2=89}] positioned 90122 128 131 run tellraw @a[distance=0..50] {"text":"正在呼叫联络总站。","color":"dark_purple"}
 execute as @n[tag=sc,scores={sea_4temp2=89}] positioned 90122 128 131 run playsound minecraft:entity.endermite.ambient ambient @a ~ ~ ~ 0.8 0.1
 
-execute as @n[tag=sc,scores={sea_4temp2=103..395}] run function skyblock:sea/e/ev024_ch2_the_first_conversation_exchange
+execute as @n[tag=sc,scores={sea_4temp2=103..395}] run function skyblock:sea/e/ch2/ev024_ch2_the_first_conversation_exchange
 
 
 
@@ -137,7 +137,7 @@ execute as @n[tag=sc,scores={sea_4temp2=103..395}] run function skyblock:sea/e/e
 execute as @n[tag=sc] if block 90149 130 129 stone_button[powered=true] unless score sea_ch2_close_storage sea_4temp2 matches 400.. run scoreboard players set sea_ch2_close_storage sea_4temp2 400
 execute if score sea_ch2_close_storage sea_4temp2 matches 400..460 run scoreboard players add sea_ch2_close_storage sea_4temp2 1
 
-execute if score sea_ch2_close_storage sea_4temp2 matches 405.. run function skyblock:sea/e/ev024_ch2_close_storage_east
+execute if score sea_ch2_close_storage sea_4temp2 matches 405.. run function skyblock:sea/e/ch2/ev024_ch2_close_storage_east
 
 
 particle minecraft:snowflake 90139.33 132.00 136.33 7 0 5 0.0 2
@@ -165,7 +165,7 @@ execute as @n[tag=sc,scores={sea_4temp4=419}] positioned 90130 128 144 if entity
 execute as @n[tag=sc,scores={sea_4temp4=419}] positioned 90130 128 144 if entity @n[tag=sc,scores={sea_player=4..}] run function skyblock:sea/m/skeleton
 execute as @n[tag=sc,scores={sea_4temp4=423}] run fill 90130 129 144 90130 128 144 air destroy
 execute as @n[tag=sc,scores={sea_4temp4=405..,sea_4temp2=..901}] run playsound minecraft:entity.minecart.riding ambient @a 90130 132 141 0.9 0.7
-execute as @n[tag=sc,scores={sea_4temp4=403}] positioned 90100 128 142 run function skyblock:sea/m/special_rivette
+execute as @n[tag=sc,scores={sea_4temp4=403}] positioned 90100 128 142 run function skyblock:sea/m/unique/special_rivette
 execute as @n[tag=sc,scores={sea_4temp4=405}] run setblock 90100 128 142 air
 execute as @n[tag=sc,scores={sea_4temp4=405}] run setblock 90100 129 142 air
 execute as @n[tag=sc,scores={sea_4temp4=405}] run setblock 90100 128 142 iron_door[facing=west,half=lower,open=true]
@@ -223,16 +223,16 @@ execute if entity @a[tag=SEAPT,x=90138,y=129,z=117,distance=0..4,tag=!SEAPF] as 
 
 
 
-execute as @n[tag=sc,scores={sea_4temp2=800..891}] run function skyblock:sea/e/ev024_ch2_close_storage_both
+execute as @n[tag=sc,scores={sea_4temp2=800..891}] run function skyblock:sea/e/ch2/ev024_ch2_close_storage_both
 
 
 
-execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 900..1340 run function skyblock:sea/e/ev024_ch2_bless_from_the_angel
+execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 900..1340 run function skyblock:sea/e/ch2/ev024_ch2_bless_from_the_angel
 
 
 
 execute if entity @a[tag=SEAPT,x=90132,y=120,z=91,dx=23,dy=15,dz=5,tag=!SEAPF] as @n[tag=sc,scores={sea_4temp2=..1999}] run scoreboard players set @s sea_4temp2 2000
-execute if entity @n[tag=sc,scores={sea_4temp2=2001}] positioned 90151.66 128.00 96.00 run function skyblock:sea/m/special_rivette
+execute if entity @n[tag=sc,scores={sea_4temp2=2001}] positioned 90151.66 128.00 96.00 run function skyblock:sea/m/unique/special_rivette
 execute if entity @n[tag=sc,scores={sea_4temp2=2001}] at @a[tag=SEAPT,x=90132,y=120,z=90.5,dx=23,dy=15,dz=5,limit=1] run tp @a[tag=SEAPT] ~ ~ ~
 execute if entity @n[tag=sc,scores={sea_4temp2=2001..2099}] if entity @n[tag=SEArivette,x=90138,y=128,z=93,distance=0..3.2] run fill 90132 129 94 90131 128 92 air
 execute unless block 90132 128 94 air as @n[tag=sc,scores={sea_4temp2=2085..2099}] run scoreboard players set @s sea_4temp2 2085
@@ -256,7 +256,7 @@ execute if entity @n[tag=sc,scores={sea_4temp2=2112..2114}] positioned 90141 128
 execute if entity @n[tag=sc,scores={sea_4temp2=2112..2121}] positioned 90141 128 93 run particle minecraft:trial_omen ~ ~ ~ 1 1 1 0 20
 execute if entity @n[tag=sc,scores={sea_4temp2=2121}] positioned 90141 128 93 run kill @e[tag=SEAboss2,x=80000,dx=20000,y=-100,dy=300,z=-10000,dz=20000,type=bogged]
 execute if entity @n[tag=sc,scores={sea_4temp2=2122}] positioned 90141 128 93 run particle minecraft:sculk_soul ~ ~ ~ 1 1 1 0 20
-execute if entity @n[tag=sc,scores={sea_4temp2=2122}] positioned 90141 128 93 run function skyblock:sea/m/boss2
+execute if entity @n[tag=sc,scores={sea_4temp2=2122}] positioned 90141 128 93 run function skyblock:sea/m/unique/boss2
 execute if entity @n[tag=sc,scores={sea_4temp2=2279}] positioned 90128 128 97 run function skyblock:sea/m/silverfish
 execute if entity @n[tag=sc,scores={sea_4temp2=2279}] positioned 90128 128 97 run function skyblock:sea/m/silverfish
 execute if entity @n[tag=sc,scores={sea_4temp2=2279}] positioned 90128 128 97 run function skyblock:sea/m/silverfish
@@ -270,7 +270,7 @@ execute as @n[tag=sc,scores={sea_4temp2=5001..5005}] run bossbar set minecraft:9
 execute as @n[tag=sc,scores={sea_4temp2=5001}] as @a[tag=SEAPT] if score @s sea_speedrun_ch2 > sc sea_speedrun_ch2 run scoreboard players operation @s sea_speedrun_ch2 = sc sea_speedrun_ch2
 execute as @n[tag=sc,scores={sea_4temp2=5001}] positioned 90074.0 129 109.0 run stopsound @a[distance=0..500] music
 execute as @n[tag=sc,scores={sea_4temp2=5001}] as @a[tag=SEAPT] at @s run playsound item.trident.thunder ambient @s ~ ~ ~ 100 0.5
-execute as @n[tag=sc,scores={sea_4temp2=5002}] run give @a[tag=SEAPT] nether_star
+execute as @n[tag=sc,scores={sea_4temp2=5002}] run give @a[tag=SEAPT,scores={SEAPT_mode=1}] nether_star
 execute as @n[tag=sc,scores={sea_4temp2=5002}] run scoreboard players set @a[tag=SEAPT,scores={sea_progress=..5}] sea_progress 6
 execute as @n[tag=sc,scores={sea_4temp2=5012}] as @a[tag=SEAPT] at @s unless entity @s[advancements={skyblock:sea/doc/15=true,skyblock:sea/doc/16=true,skyblock:sea/doc/17=true,skyblock:sea/doc/17=true}] run tellraw @s {"text":"一番苦战，但终于解决了这几个家伙。","color":"gray"}
 execute as @n[tag=sc,scores={sea_4temp2=5030}] as @a[tag=SEAPT] at @s unless entity @s[advancements={skyblock:sea/doc/15=true,skyblock:sea/doc/16=true,skyblock:sea/doc/17=true,skyblock:sea/doc/17=true}] run tellraw @s {"text":"是时候往更上层去了。","color":"gray"}
@@ -280,7 +280,7 @@ execute as @n[tag=sc,scores={sea_4temp2=5030}] as @a[tag=SEAPT] at @s if entity 
 execute as @n[tag=sc,scores={sea_4temp2=5057}] as @a[tag=SEAPT] at @s if entity @s[advancements={skyblock:sea/doc/15=true,skyblock:sea/doc/16=true,skyblock:sea/doc/17=true,skyblock:sea/doc/17=true}] run tellraw @s {"text":"我对发生的一切感到很抱歉。虽然改变不了任何悲剧，但我会将此铭记。","color":"gray"}
 execute as @n[tag=sc,scores={sea_4temp2=5089}] as @a[tag=SEAPT] at @s run tellraw @s {"text":"『厄珀娅的悲歌』第二章 完","color":"blue","bold": true}
 execute as @n[tag=sc,scores={sea_4temp2=5089}] as @a[tag=SEAPT] at @s run playsound music_disc.creator_music_box music @a[tag=SEAPT] ~ ~ ~ 1000 0.8
-execute as @n[tag=sc,scores={sea_4temp2=5089}] run function skyblock:sea/map_prepare_ch3
+execute as @n[tag=sc,scores={sea_4temp2=5089}] run function skyblock:sea/generate/preload/map_prepare_ch3
 execute as @n[tag=sc,scores={sea_4temp2=5030}] run setblock 90071 137 151 minecraft:iron_trapdoor[facing=north,open=true]
 execute as @n[tag=sc,scores={sea_4temp2=5030}] run setblock 90066 129 112 minecraft:stone_button[facing=north]
 execute as @n[tag=sc,scores={sea_4temp2=5030}] run kill @e[tag=SEAboss2npc,distance=0..3000,x=90000,y=128,z=0]
@@ -295,4 +295,4 @@ execute if block 90129 129 139 air run scoreboard players add sea_ch2_dwight_con
 execute if block 90077 129 145 air run scoreboard players add sea_ch2_dwight_conversation rng4 1
 scoreboard players add sea_ch2_dwight_conversation rng5 1
 
-execute if entity @n[tag=sc,scores={sea_4temp2=..2030}] run function skyblock:sea/e/ev024_ch2_dwight_1
+execute if entity @n[tag=sc,scores={sea_4temp2=..2030}] run function skyblock:sea/e/ch2/ev024_ch2_dwight_1

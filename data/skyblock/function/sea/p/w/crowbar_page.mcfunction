@@ -1,4 +1,6 @@
-tellraw @s {"text":"『武器升级页面 - 撬棍』","bold":true,"color":"red"}
+execute as @s run function skyblock:sea/calc/crowbar
+# tellraw @s {"text":"『武器升级页面 - 撬棍』","bold":true,"color":"red"}
+tellraw @s {"text":"『武器升级页面 - 撬棍』","extra":[""],"color":"red","bold":true,"hoverEvent":{"action":"show_text","value":{"translate":"当前已激活的加成：\n攻击力：+%s\n攻击速度：+%s\n攻击距离：+%s","with":[{"storage":"sea:calc","nbt":"crowbar.attack_damage.val","color":"green"},{"nbt":"crowbar.attack_speed.val","storage":"sea:calc","color":"green"},{"nbt":"crowbar.attack_range.val","storage":"sea:calc","color":"green"}],"type":"translatable"}}}
 tellraw @s {"text":"   "}
 
 summon marker ~ ~ ~ {Tags:["SEA_w_crowbar_displaymarker","SEA_w_crowbar_displaymarker0"]}

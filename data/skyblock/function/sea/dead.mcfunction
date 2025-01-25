@@ -78,7 +78,7 @@ tag @s remove sea_teleport17
 tag @s remove sea_teleport18
 tag @s remove sea_teleport19
 tag @s remove sea_teleport20
-tag @s remove SEAPT_storymode
+#tag @s remove SEAPT_storymode
 scoreboard players reset @s sea_dead
 scoreboard players reset @s sea_dead_check
 team leave @s
@@ -268,6 +268,8 @@ function skyblock:sea/p/w/flamethrower_effect_reset
 function skyblock:sea/p/w/shield_effect_reset
 function skyblock:sea/p/w/armor_effect_reset
 function skyblock:sea/p/w/ripper_effect_reset
+
+clear @s
 
 attribute @s generic.jump_strength modifier remove sea:mob_debuff_visioned01
 
