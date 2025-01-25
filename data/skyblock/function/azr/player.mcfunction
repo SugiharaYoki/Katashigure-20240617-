@@ -1,12 +1,18 @@
-clear @s quartz_pillar
-clear @s quartz_block
-clear @s quartz_stairs
-clear @s quartz_bricks
-clear @s quartz_slab
-clear @s smooth_quartz
-clear @s birch_button
-clear @s item_frame
-clear @s lever
+clear @s[gamemode=adventure] quartz_pillar
+clear @s[gamemode=adventure] quartz_block
+clear @s[gamemode=adventure] quartz_stairs
+clear @s[gamemode=adventure] quartz_bricks
+clear @s[gamemode=adventure] quartz_slab
+clear @s[gamemode=adventure] smooth_quartz
+clear @s[gamemode=adventure] birch_button
+clear @s[gamemode=adventure] stone_button
+clear @s[gamemode=adventure] polished_blackstone_button
+clear @s[gamemode=adventure] item_frame
+clear @s[gamemode=adventure] lever
+clear @s[gamemode=adventure] stone_bricks
+clear @s[gamemode=adventure] stone_brick_slab
+clear @s[gamemode=adventure] stone_brick_stair
+clear @s[gamemode=adventure] smooth_stone
 
 #故事模式
 effect give @s[tag=AZR_storymode] resistance infinite 1

@@ -133,6 +133,14 @@ execute if block -79903 44 131 minecraft:birch_button[powered=true] run setblock
 execute if block -79901 49 131 minecraft:birch_button[powered=true] at @p[tag=azrPlayer] run summon item ~ ~1 ~ {Item:{count:8,id:"minecraft:experience_bottle"}}
 execute if block -79901 49 131 minecraft:birch_button[powered=true] run setblock -79901 49 131 air
 #extra bonus - stage8 uncommited
+execute if block -79901 39 67 minecraft:birch_button[powered=true] run summon item -79894 40 80 {Item:{count:2,id:"minecraft:golden_carrot"}}
+execute if block -79901 39 67 minecraft:birch_button[powered=true] if score playerCount Azr_system matches 4.. run summon item -79894 40 80 {Item:{count:2,id:"minecraft:golden_carrot"}}
+execute if block -79901 39 67 minecraft:birch_button[powered=true] positioned -79880 38 88 run function skyblock:azr/m/spider_t2_swift
+execute if block -79901 39 67 minecraft:birch_button[powered=true] positioned -79884 38 72 run function skyblock:azr/m/spider_t2_swift
+execute if block -79901 39 67 minecraft:birch_button[powered=true] positioned -79892 38 88 run function skyblock:azr/m/spider_t2_swift
+execute if block -79901 39 67 minecraft:birch_button[powered=true] run setblock -79901 39 67 air
+
+
 execute if block -79883 39 67 minecraft:stone_button[powered=true] as @a[tag=azrPlayer] run function skyblock:azr/items/revival_star
 execute if block -79883 39 67 minecraft:stone_button[powered=true] run setblock -79883 39 67 air
 #extra bonus - stage9 uncommited
