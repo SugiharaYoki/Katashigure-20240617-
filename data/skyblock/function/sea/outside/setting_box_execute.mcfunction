@@ -10,15 +10,15 @@ execute if items entity @s player.cursor sculk_shrieker run scoreboard players s
 execute if items entity @s player.cursor polished_deepslate[custom_data={"sea_setting_box":true}] run function skyblock:sea/generate/preload/map_prepare_ch1
 execute if items entity @s player.cursor polished_diorite[custom_data={"sea_setting_box":true}] run function skyblock:sea/generate/stage_jump/to_ch2_exclusive
 execute if items entity @s player.cursor polished_andesite[custom_data={"sea_setting_box":true}] run function skyblock:sea/generate/stage_jump/to_ch3
-execute if items entity @s player.cursor quartz_block[custom_data={"sea_setting_box":true}] run function skyblock:sea/generate/stage_jump/to_ch4_exclusive
+execute if items entity @s player.cursor waxed_copper_block[custom_data={"sea_setting_box":true}] run function skyblock:sea/generate/stage_jump/to_ch4_exclusive
 execute if items entity @s player.cursor chiseled_tuff_bricks[custom_data={"sea_setting_box":true}] run function skyblock:sea/generate/stage_jump/to_ch5
 
 execute if items entity @s player.cursor splash_potion[custom_data={"sea_setting_box":true}] run function skyblock:sea/generate/stage_jump/to_ch1_boss
 execute if items entity @s player.cursor bow[custom_data={"sea_setting_box":true}] run function skyblock:sea/generate/stage_jump/to_ch2_boss
 execute if items entity @s player.cursor fire_charge[custom_data={"sea_setting_box":true}] run function skyblock:sea/generate/stage_jump/to_ch3_boss
 execute if items entity @s player.cursor fire_charge[custom_data={"sea_setting_box":true}] run function skyblock:sea/generate/stage_jump/to_ch3_boss_exclusive
-execute if items entity @s player.cursor heart_of_the_sea[custom_data={"sea_setting_box":true}] run function skyblock:sea/generate/stage_jump/to_ch4_boss
-execute if items entity @s player.cursor heart_of_the_sea[custom_data={"sea_setting_box":true}] run function skyblock:sea/generate/stage_jump/to_ch4_boss_exclusive
+execute if items entity @s player.cursor iron_axe[custom_data={"sea_setting_box":true}] run function skyblock:sea/generate/stage_jump/to_ch4_boss
+execute if items entity @s player.cursor iron_axe[custom_data={"sea_setting_box":true}] run function skyblock:sea/generate/stage_jump/to_ch4_boss_exclusive
 
 execute if items entity @s player.cursor lectern run function skyblock:sea/generate/preload/map_prepare_ch1_player_advancement
 
