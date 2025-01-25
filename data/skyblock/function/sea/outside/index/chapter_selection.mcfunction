@@ -1,0 +1,25 @@
+
+
+item replace entity @s[scores={sea_progress=0..}] container.9 with polished_deepslate[custom_data={"sea_setting_box":true},custom_name='{"text":"『第一章：维修层』","italic":false,"color":"aqua"}',lore=['{"text":"“有人在维修层？维修层居然还有活人？”","color":"white","italic":true}']]
+item replace entity @s[scores={sea_progress=3..}] container.10 with polished_diorite[custom_data={"sea_setting_box":true},custom_name='{"text":"『第二章：物资层』","italic":false,"color":"aqua"}',lore=['{"text":"“必须先把北区的冷冻系统给关停。”","color":"white","italic":true}']]
+item replace entity @s[scores={sea_progress=6..}] container.11 with polished_andesite[custom_data={"sea_setting_box":true},custom_name='{"text":"『第三章：甲板』","italic":false,"color":"aqua"}',lore=['{"text":"“先生，您看我像还能活着能离开的样子吗？”","color":"white","italic":true}']]
+item replace entity @s[scores={sea_progress=9..}] container.12 with quartz_block[custom_data={"sea_setting_box":true},custom_name='{"text":"『第四章：水下研究机构』","italic":false,"color":"aqua"}',lore=['{"text":"“不听劝阻的人可不是好孩子。”","color":"white","italic":true}']]
+item replace entity @s[scores={sea_progress=12..}] container.13 with chiseled_tuff_bricks[custom_data={"sea_setting_box":true},custom_name='{"text":"『第五章：通讯平台』","italic":false,"color":"aqua"}',lore=['{"text":"“友好谈判？我在他们眼皮底下杀了人。”","color":"white","italic":true}']]
+
+
+
+
+
+
+
+
+
+
+
+item replace entity @s container.27 with structure_void[custom_data={"sea_setting_box":true},custom_name='{"text":"回到主页","italic":false,"color":"gray"}']
+
+
+
+
+
+

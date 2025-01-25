@@ -148,4 +148,5 @@ function skyblock:sea/p/w/armor_effect
 
 scoreboard players set @s sea_ripper 0
 
+scoreboard players set @s sea_setting_box_index 1
 
