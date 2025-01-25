@@ -1,3 +1,4 @@
+execute if score stageSeconds Azr_system matches 20 run tellraw @a[tag=DebugMode,tag=azrPlayer] [{"text":"[DEBUG MODE MESSAGE] You are playing \"Stage11\", with playerCount = "},{"score":{"objective":"Azr_system","name":"playerCount"}},{"text":" Maximum Seconds = 520"}]
 execute if score stageSeconds Azr_system matches 20 as @a[tag=azrPlayer] at @s run spawnpoint @s -79905 40 -144
 execute if score stageSeconds Azr_system matches 20 run bossbar add azr:progress_bar_special "Stage 11"
 execute if score stageSeconds Azr_system matches 20 run bossbar set azr:progress_bar_special color blue

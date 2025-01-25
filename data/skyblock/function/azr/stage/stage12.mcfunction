@@ -1,4 +1,5 @@
 #fake bossbar
+execute if score stageSeconds Azr_system matches 1 run tellraw @a[tag=DebugMode,tag=azrPlayer] [{"text":"[DEBUG MODE MESSAGE] You are playing \"Stage12(part1)\", with playerCount = "},{"score":{"objective":"Azr_system","name":"playerCount"}},{"text":" Maximum Seconds = 60"}]
 execute if score stageSeconds Azr_system matches 2..14 run tag @a[tag=azrPlayer] add azrUpdateSpawnPoint
 execute if score stageSeconds Azr_system matches 1 run bossbar add azr:progress_bar_normal "Stage 12"
 execute if score stageSeconds Azr_system matches 1 run bossbar set azr:progress_bar_normal color white
@@ -106,7 +107,7 @@ execute if score stageSeconds Azr_system matches 61 run scoreboard players set @
 execute if score stageSeconds Azr_system matches 61 run fill -79873 47 -110 -79873 48 -108 iron_bars
 execute if score stageSeconds Azr_system matches 61 run tellraw @a[tag=azrPlayer,scores={AZR_chainKillUpg_pts=..5},tag=hasSkills] [{"text":"索命连击","color":"gold"},{"text":"可用点数已增加，目前为：6","color":"green"}]
 execute if score stageSeconds Azr_system matches 61 run scoreboard players set @a[scores={AZR_chainKillUpg_pts=..5}] AZR_chainKillUpg_pts 6
-
+execute if score stageSeconds Azr_system matches 61 run tellraw @a[tag=DebugMode,tag=azrPlayer] [{"text":"[DEBUG MODE MESSAGE] You are playing \"Stage12(part2)\", with playerCount = "},{"score":{"objective":"Azr_system","name":"playerCount"}},{"text":" Maximum Seconds = 100"}]
 
 execute if score stageSeconds Azr_system matches 91 as @a[tag=azrPlayer] at @s run summon evoker ~ ~ ~ {PersistenceRequired:1b,Tags:["AzrielMob","AzrielDecMob"],DeathLootTable:"skyblock:azriel_witch_tier1",Health:1.0f,CustomName:'"斗篷术士"',attributes:[{id:"generic.max_health",base:1.0d},{id:"generic.attack_damage",base:1.5d},{id:"generic.movement_speed",base:0.21d}]}
 execute if score stageSeconds Azr_system matches 92..93 if entity @e[tag=AzrielMob,tag=!AzrielDecMob] run scoreboard players set stageSeconds Azr_system 92
@@ -159,8 +160,8 @@ execute if score stageSeconds Azr_system matches 100 run clone -79907 46 -111 -7
 execute if score stageSeconds Azr_system matches 100 run particle minecraft:end_rod -79907 47 -111 0.6 0.6 0.6 0.0 13
 execute if score stageSeconds Azr_system matches 100 run particle minecraft:end_rod -79844 49 -127 0.6 0.6 0.6 0.0 13
 
-#part 2
-
+#part 3
+execute if score stageSeconds Azr_system matches 8005 run tellraw @a[tag=DebugMode,tag=azrPlayer] [{"text":"[DEBUG MODE MESSAGE] You are playing \"Stage12(part3)\", with playerCount = "},{"score":{"objective":"Azr_system","name":"playerCount"}},{"text":" Maximum Seconds = 8073"}]
 execute if score stageSeconds Azr_system matches 8005 as @p[tag=azrPlayer,x=-79846,y=48,z=-129,distance=0..9] at @s run tp @a[tag=azrPlayer,distance=15..] ~ ~ ~
 execute if score stageSeconds Azr_system matches 8006..8012 run tag @a[tag=azrPlayer] add azrUpdateSpawnPoint
 

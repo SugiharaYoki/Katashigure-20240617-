@@ -1,4 +1,6 @@
 execute if score stageSeconds Azr_system matches 8..20 as @a[tag=azrPlayer] at @s unless block ~ ~-1 ~ air unless block ~ ~-1 ~ lava unless block ~ ~ ~ lava run spawnpoint @s ~ ~ ~
+
+execute if score stageSeconds Azr_system matches 7 run tellraw @a[tag=DebugMode,tag=azrPlayer] [{"text":"[DEBUG MODE MESSAGE] You are playing \"Stage Breakout\", with playerCount = "},{"score":{"objective":"Azr_system","name":"playerCount"}},{"text":" Maximum Seconds = 282"}]
 execute if score stageSeconds Azr_system matches 7 run bossbar add azr:progress_bar_normal "Stage Breakout"
 execute if score stageSeconds Azr_system matches 7 run bossbar set azr:progress_bar_normal color yellow
 execute if score stageSeconds Azr_system matches 7 run bossbar set azr:progress_bar_normal players @a[tag=azrPlayer]

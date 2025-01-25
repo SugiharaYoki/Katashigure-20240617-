@@ -5,6 +5,7 @@ execute if score stageSeconds Azr_system matches 0..890 run scoreboard players s
 
 execute if score stageSeconds Azr_system matches 0..890 if entity @a[x=-79884,y=46,z=-109,distance=0..4.3,tag=azrPlayer,gamemode=!spectator] run scoreboard players set stageSeconds Azr_system 1093
 
+execute if score stageSeconds Azr_system matches 1094 run tellraw @a[tag=DebugMode,tag=azrPlayer] [{"text":"[DEBUG MODE MESSAGE] You are playing \"Stage Event8\", with playerCount = "},{"score":{"objective":"Azr_system","name":"playerCount"}},{"text":" Maximum Seconds = 1900"}]
 execute if score stageSeconds Azr_system matches 1094 as @p[x=-79883,y=46,z=-109,tag=azrPlayer] at @s run tp @a[distance=20..,tag=azrPlayer] ~ ~ ~ facing -79876 47 -109
 execute if score stageSeconds Azr_system matches 1097 run effect give @a[tag=azrPlayer] slowness 3 4 true
 execute if score stageSeconds Azr_system matches 1097 run summon evoker -79876 47 -109 {PersistenceRequired:1b,Silent:1b,Invulnerable:1b,Rotation:[90.0f,0.0f],CustomName:'"斗篷术士"'}
@@ -208,6 +209,7 @@ execute if score stageSeconds Azr_system matches 1199 run summon vindicator -799
 execute if score stageSeconds Azr_system matches 1199 run summon vindicator -79919.3 48 -154 {Johnny:1b,PersistenceRequired:1b,Tags:["AzrielFriendly"],DeathLootTable:"skyblock:azriel_vindicator_tier1",Health:2.5f,CustomName:'"受伤的圣殿巡逻兵"',Invulnerable:1b,attributes:[{id:"generic.max_health",base:12.5d},{id:"generic.attack_damage",base:4.0d},{id:"generic.movement_speed",base:0.13d},{id:"generic.follow_range",base:5.5d}]}
 execute if score stageSeconds Azr_system matches 1199 run summon vindicator -79920 48 -142 {Johnny:1b,PersistenceRequired:1b,Tags:["AzrielFriendly"],DeathLootTable:"skyblock:azriel_vindicator_tier1",Health:2.5f,CustomName:'"受伤的圣殿巡逻兵"',Invulnerable:1b,NoAI:1b,attributes:[{id:"generic.max_health",base:12.5d},{id:"generic.attack_damage",base:4.0d},{id:"generic.movement_speed",base:0.03d},{id:"generic.follow_range",base:5.5d}]}
 
+execute if score stageSeconds Azr_system matches 1200 run setblock -79907 46 -111 white_shulker_box
 execute if score stageSeconds Azr_system matches 1200 run clone -79885 40 -139 -79885 40 -139 -79907 46 -111 replace move
 execute if score stageSeconds Azr_system matches 1200 run particle minecraft:end_rod -79885 41 -139 0.6 0.6 0.6 0.0 13
 execute if score stageSeconds Azr_system matches 1200 run particle minecraft:end_rod -79907 47 -111 0.6 0.6 0.6 0.0 13
