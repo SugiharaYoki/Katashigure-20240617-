@@ -136,7 +136,7 @@ advancement grant @s only skyblock:thelxiepeia
 advancement grant @s only skyblock:sea/doc/documentary1
 advancement grant @s only skyblock:sea/doc/1
 scoreboard players add @s sea_count_played 1
-function skyblock:sea/map_prepare_ch1_player_macro_doc with storage sea:doc
+function skyblock:sea/generate/preload/map_prepare_ch1_player_macro_doc with storage sea:doc
 
 scoreboard players set @s sea_glowberries 0
 

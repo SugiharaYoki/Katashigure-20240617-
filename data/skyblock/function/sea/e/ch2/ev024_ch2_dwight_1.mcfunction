@@ -1,4 +1,4 @@
-execute if score sea_ch2_dwight_conversation rng1 matches 1 positioned 90113 128 114 run function skyblock:sea/m/boss2_npc
+execute if score sea_ch2_dwight_conversation rng1 matches 1 positioned 90113 128 114 run function skyblock:sea/m/unique/boss2_npc
 execute if score sea_ch2_dwight_conversation rng1 matches 1.. positioned 90113 128 114 as @n[tag=SEAboss2npc] at @s run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
 execute if score sea_ch2_dwight_conversation rng1 matches 5..10 run scoreboard players set sea_ch2_dwight_conversation rng1 5
 execute if score sea_ch2_dwight_conversation rng1 matches 1..19 positioned 90113 128 114 as @n[tag=SEAboss2npc] at @s if entity @p[tag=SEAPT,tag=!SEAPF,distance=0..5] run scoreboard players set sea_ch2_dwight_conversation rng1 20
@@ -10,7 +10,7 @@ execute if score sea_ch2_dwight_conversation rng1 matches 48 positioned 90113 12
 execute if score sea_ch2_dwight_conversation rng1 matches 48 positioned 90113 128 114 as @n[tag=SEAboss2npc] run tp @s ~ ~-500 ~
 
 
-execute if score sea_ch2_dwight_conversation rng2 matches 1 positioned 90134 128 126 run function skyblock:sea/m/boss2_npc
+execute if score sea_ch2_dwight_conversation rng2 matches 1 positioned 90134 128 126 run function skyblock:sea/m/unique/boss2_npc
 execute if score sea_ch2_dwight_conversation rng2 matches 1.. positioned 90134 128 126 as @n[tag=SEAboss2npc] at @s run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
 execute if score sea_ch2_dwight_conversation rng2 matches 5..10 run scoreboard players set sea_ch2_dwight_conversation rng2 5
 execute if score sea_ch2_dwight_conversation rng2 matches 1..19 positioned 90134 128 126 as @n[tag=SEAboss2npc] at @s if entity @p[tag=SEAPT,tag=!SEAPF,distance=0..3.3] run scoreboard players set sea_ch2_dwight_conversation rng2 20
@@ -21,7 +21,7 @@ execute if score sea_ch2_dwight_conversation rng2 matches 32 positioned 90134 12
 execute if score sea_ch2_dwight_conversation rng2 matches 48 positioned 90134 128 126 as @n[tag=SEAboss2npc] run effect give @s invisibility infinite 0 true
 execute if score sea_ch2_dwight_conversation rng2 matches 48 positioned 90134 128 126 as @n[tag=SEAboss2npc] run tp @s ~ ~-500 ~
 
-execute if score sea_ch2_dwight_conversation rng3 matches 1 positioned 90111 128 139 run function skyblock:sea/m/boss2_npc
+execute if score sea_ch2_dwight_conversation rng3 matches 1 positioned 90111 128 139 run function skyblock:sea/m/unique/boss2_npc
 execute if score sea_ch2_dwight_conversation rng3 matches 1.. positioned 90111 128 139 as @n[tag=SEAboss2npc] at @s run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
 execute if score sea_ch2_dwight_conversation rng3 matches 5..10 run scoreboard players set sea_ch2_dwight_conversation rng3 5
 execute if score sea_ch2_dwight_conversation rng3 matches 1..19 positioned 90111 128 139 as @n[tag=SEAboss2npc] at @s if entity @p[tag=SEAPT,tag=!SEAPF,distance=0..4] run scoreboard players set sea_ch2_dwight_conversation rng3 20
@@ -33,7 +33,7 @@ execute if score sea_ch2_dwight_conversation rng3 matches 33 positioned 90111 12
 execute if score sea_ch2_dwight_conversation rng3 matches 48 positioned 90111 128 139 as @n[tag=SEAboss2npc] run effect give @s invisibility infinite 0 true
 execute if score sea_ch2_dwight_conversation rng3 matches 48 positioned 90111 128 139 as @n[tag=SEAboss2npc] run tp @s ~ ~-500 ~
 
-execute if score sea_ch2_dwight_conversation rng4 matches 1 positioned 90074 128 147 run function skyblock:sea/m/boss2_npc
+execute if score sea_ch2_dwight_conversation rng4 matches 1 positioned 90074 128 147 run function skyblock:sea/m/unique/boss2_npc
 execute if score sea_ch2_dwight_conversation rng4 matches 1.. positioned 90074 128 147 as @n[tag=SEAboss2npc] at @s run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
 execute if score sea_ch2_dwight_conversation rng4 matches 5..10 run scoreboard players set sea_ch2_dwight_conversation rng4 5
 execute if score sea_ch2_dwight_conversation rng4 matches 1..19 positioned 90074 128 147 as @n[tag=SEAboss2npc] at @s if entity @p[tag=SEAPT,tag=!SEAPF,distance=0..3.3] run scoreboard players set sea_ch2_dwight_conversation rng4 20
@@ -46,7 +46,7 @@ execute if score sea_ch2_dwight_conversation rng4 matches 49 positioned 90074 12
 execute if score sea_ch2_dwight_conversation rng4 matches 49 positioned 90074 128 147 as @n[tag=SEAboss2npc] run tp @s ~ ~-500 ~
 
 
-execute if score sea_ch2_dwight_conversation rng5 matches 1 positioned 90128 129 106 run function skyblock:sea/m/boss2_npc
+execute if score sea_ch2_dwight_conversation rng5 matches 1 positioned 90128 129 106 run function skyblock:sea/m/unique/boss2_npc
 execute if score sea_ch2_dwight_conversation rng5 matches 1.. positioned 90128 129 106 as @n[tag=SEAboss2npc] at @s run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
 execute if score sea_ch2_dwight_conversation rng5 matches 5..10 run scoreboard players set sea_ch2_dwight_conversation rng5 5
 execute if score sea_ch2_dwight_conversation rng5 matches 1..19 positioned 90128 129 106 as @n[tag=SEAboss2npc] at @s if entity @p[tag=SEAPT,tag=!SEAPF,distance=0..5] run scoreboard players set sea_ch2_dwight_conversation rng5 20

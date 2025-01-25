@@ -404,10 +404,10 @@ execute as @n[tag=sc,scores={sea_4temp2=4001}] run particle minecraft:large_smok
 execute as @n[tag=sc,scores={sea_4temp2=4001}] run particle minecraft:crimson_spore 90074.45 123.00 122.35 1 1 1 0.0 100
 execute as @n[tag=sc,scores={sea_4temp2=4001}] run playsound minecraft:item.trident.thunder hostile @a 90074.45 122.00 122.35 10 1.3
 execute as @n[tag=sc,scores={sea_4temp2=4001}] run playsound minecraft:item.trident.thunder hostile @a 90074.45 122.00 122.35 10 0.7
-execute as @n[tag=sc,scores={sea_4temp2=4001},tag=sea_ch1_speedrun_butif] at @n[tag=SEAframauros] run function skyblock:sea/m/boss1
+execute as @n[tag=sc,scores={sea_4temp2=4001},tag=sea_ch1_speedrun_butif] at @n[tag=SEAframauros] run function skyblock:sea/m/unique/boss1
 execute as @n[tag=sc,scores={sea_4temp2=4001},tag=sea_ch1_speedrun_butif] as @n[tag=SEAframauros] at @s run tp @s ~ ~-500 ~
 execute as @n[tag=sc,scores={sea_4temp2=4001},tag=sea_ch1_speedrun_butif] as @n[tag=SEAframauros] run kill @s
-execute as @n[tag=sc,scores={sea_4temp2=4001},tag=!sea_ch1_speedrun_butif] positioned 90074 122 122 run function skyblock:sea/m/boss1
+execute as @n[tag=sc,scores={sea_4temp2=4001},tag=!sea_ch1_speedrun_butif] positioned 90074 122 122 run function skyblock:sea/m/unique/boss1
 execute as @n[tag=sc,scores={sea_4temp2=4001},tag=!sea_ch1_speedrun_butif] run tp @n[tag=SEAboss1] 90074 122 120.9 facing 90074 122 119
 execute as @n[tag=sc,scores={sea_4temp2=4001}] as @a[tag=SEAPT] at @s run playsound minecraft:app2.heracles music @s ~ ~ ~ 1000 1.0
 execute as @n[tag=sc,scores={sea_4temp2=4001}] as @r[tag=SEAPT] at @s as @a[tag=!SEAPT,gamemode=spectator,distance=0..200] run playsound minecraft:app2.heracles music @s ~ ~ ~ 1 1.0
@@ -433,7 +433,7 @@ execute as @n[tag=sc,scores={sea_4temp2=5052}] run fill 90076 123 121 90076 123 
 execute as @n[tag=sc,scores={sea_4temp2=5054}] run fill 90076 124 121 90076 124 123 air
 execute as @n[tag=sc,scores={sea_4temp2=5065}] as @a[tag=SEAPT] at @s run tellraw @s {"text":"『厄珀娅的悲歌』第一章 完","color":"blue","bold": true}
 execute as @n[tag=sc,scores={sea_4temp2=5065}] as @a[tag=SEAPT] at @s run playsound music_disc.creator_music_box music @a[tag=SEAPT] ~ ~ ~ 1000 0.9
-execute as @n[tag=sc,scores={sea_4temp2=5065}] run function skyblock:sea/map_prepare_ch2
+execute as @n[tag=sc,scores={sea_4temp2=5065}] run function skyblock:sea/generate/preload/map_prepare_ch2
 
 execute as @n[tag=sc,scores={sea_4temp2=5054}] run setblock 90108 118 136 minecraft:waxed_copper_bulb[lit=false]
 execute as @n[tag=sc,scores={sea_4temp2=5054}] run setblock 90112 118 140 minecraft:waxed_copper_bulb[lit=false]
@@ -464,7 +464,7 @@ execute as @n[tag=sc,scores={sea_4temp2=6002}] run fill 90094 124 102 90094 122 
 execute as @n[tag=sc,scores={sea_4temp2=6002}] run fill 90093 124 102 90093 122 102 air destroy
 execute as @n[tag=sc,scores={sea_4temp2=6002}] run fill 90092 124 102 90092 122 102 air destroy
 execute as @n[tag=sc,scores={sea_4temp2=6002}] run fill 90087 122 105 90087 124 104 air destroy
-execute as @n[tag=sc,scores={sea_4temp2=6001}] positioned 90073 122 122 run function skyblock:sea/m/npc_framauros
+execute as @n[tag=sc,scores={sea_4temp2=6001}] positioned 90073 122 122 run function skyblock:sea/m/unique/npc_framauros
 execute as @n[tag=sc,scores={sea_4temp2=6003..}] as @n[tag=SEAframauros] at @s run tp @s ~ ~ ~ facing entity @p
 execute as @n[tag=sc,scores={sea_4temp2=6003}] at @n[tag=SEAframauros] run playsound entity.villager.ambient neutral @a ~ ~ ~ 0.8 0.7
 execute as @n[tag=sc,scores={sea_4temp2=6003}] at @n[tag=SEAframauros] run tellraw @a[tag=SEAPT,distance=0.1..35] [{"text":"法莫洛斯：","color":"green","bold": true},{"text":"\n“……活着的人。”","color":"white","bold": false}]

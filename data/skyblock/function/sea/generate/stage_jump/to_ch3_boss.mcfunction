@@ -1,7 +1,7 @@
 execute as @a unless entity @s[scores={sea_progress=-999..}] run scoreboard players set @s sea_progress 0
 tp @a[x=90000,y=100,z=100,distance=..5000,scores={sea_progress=..7},gamemode=!spectator] -43 55 0
 
-function skyblock:sea/map_jumpto_ch3
+function skyblock:sea/generate/stage_jump/to_ch3
 
 tp @a[tag=SEAPT] 90148 103 113 facing 90147 103 113
 
@@ -91,14 +91,14 @@ fill 90117 143 134 90119 143 134 minecraft:iron_trapdoor[facing=north,open=true]
 execute positioned 90119 144 149 run summon marker ~ ~ ~ {Tags:["SEAch3_spawn"]}
 execute positioned 90120 149 144 run summon marker ~ ~ ~ {Tags:["SEAch3_spawn"]}
 
-execute positioned 90113 149 147 positioned 90102 149 131 run function skyblock:sea/m/special_ston
+execute positioned 90113 149 147 positioned 90102 149 131 run function skyblock:sea/m/unique/special_ston
 execute positioned 90113 149 147 run summon marker ~ ~ ~ {Tags:["SEAch3_spawn"]}
 
 execute positioned 90107 155 147 run summon marker ~ ~ ~ {Tags:["SEAch3_spawn"]}
 
 fill 90121 155 139 90120 155 139 jungle_pressure_plate
 
-execute positioned 90126 161 148 run function skyblock:sea/m/npc_marshall
+execute positioned 90126 161 148 run function skyblock:sea/m/unique/npc_marshall
 scoreboard players set @n[tag=SEAmarshall] sea_4temp1 99999
 
 setblock 90131 161 144 flower_pot

@@ -1,8 +1,8 @@
 execute as @a unless entity @s[scores={sea_progress=-999..}] run scoreboard players set @s sea_progress 0
 tp @a[x=90000,y=100,z=100,distance=..5000,scores={sea_progress=..2},gamemode=!spectator] -43 55 0
 
-function skyblock:sea/map_prepare_ch1
-function skyblock:sea/map_prepare_ch2
+function skyblock:sea/generate/preload/map_prepare_ch1
+function skyblock:sea/generate/preload/map_prepare_ch2
 
 tp @a[distance=0..300] 90060 103 141 facing 90061 103 141
 

@@ -76,7 +76,7 @@ execute positioned 90183 19 112 run function skyblock:sea/m/skeleton
 execute positioned 90206 19 117 run function skyblock:sea/m/skeleton_melee
 execute positioned 90206 19 117 run function skyblock:sea/m/spider
 
-execute positioned 90192 19 120 run function skyblock:sea/m/npc_edwina
+execute positioned 90192 19 120 run function skyblock:sea/m/unique/npc_edwina
 
 execute positioned 90173 19 130 run function skyblock:sea/m/shadow
 
@@ -88,7 +88,7 @@ execute positioned 90158 13 155 run function skyblock:sea/m/spider
 execute positioned 90179 19 119 run function skyblock:sea/m/zombie_cook
 execute positioned 90179 19 119 run function skyblock:sea/m/zombie_cook
 
-execute positioned 90194 20 95 run function skyblock:sea/m/npc_herb
+execute positioned 90194 20 95 run function skyblock:sea/m/unique/npc_herb
 scoreboard players set @n[tag=SEAherb] sea_4temp1 1
 
 execute positioned 90159 11 115 run function skyblock:sea/m/drone

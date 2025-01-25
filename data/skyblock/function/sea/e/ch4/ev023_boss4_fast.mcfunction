@@ -101,7 +101,7 @@ execute unless entity @n[tag=SEAedwina] if score SEAboss4_killed rng1 matches 1 
 execute unless entity @n[tag=SEAedwina] if score SEAboss4_killed rng1 matches 2 run tellraw @a[tag=SEAPT] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“我可不会就这么死了，你以为我是怎么活到现在的？”","color":"white","bold": false}]
 execute unless entity @n[tag=SEAedwina] if score SEAboss4_killed rng1 matches 3 run tellraw @a[tag=SEAPT] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“……真狠啊，只可惜并没成功放倒我。”","color":"white","bold": false}]
 execute unless entity @n[tag=SEAedwina] run setblock 90227 58 91 minecraft:copper_block
-execute unless entity @n[tag=SEAedwina] at @p[tag=SEAPT] rotated ~ 0 positioned ^ ^ ^-1 run function skyblock:sea/m/boss4
+execute unless entity @n[tag=SEAedwina] at @p[tag=SEAPT] rotated ~ 0 positioned ^ ^ ^-1 run function skyblock:sea/m/unique/boss4
 execute if block 90227 58 91 copper_block run scoreboard players set @n[tag=SEAboss4] rng1 0
 execute if block 90227 58 91 copper_block run scoreboard players set @n[tag=SEAboss4] rng2 9
 execute if block 90227 58 91 copper_block run scoreboard players set @n[tag=SEAboss4] rng3 0
@@ -133,7 +133,7 @@ execute as @n[tag=SEAboss4,scores={rng7=180}] run data modify entity @s Invulner
 execute as @n[tag=SEAboss4,scores={rng7=180}] positioned 90074.0 129 109.0 run stopsound @a[distance=0..500] music
 execute as @n[tag=SEAboss4,scores={rng7=180}] as @a[tag=SEAPT] at @s run stopsound @a[gamemode=spectator,distance=0..300]
 execute as @n[tag=SEAboss4,scores={rng7=180}] run tellraw @a[tag=SEAPT] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“都、都别打了！！全都是自己人！！”","color":"white","bold": false}]
-execute as @n[tag=SEAboss4,scores={rng7=180}] positioned 90185.01 69.00 72.02 run function skyblock:sea/m/npc_yuehan
+execute as @n[tag=SEAboss4,scores={rng7=180}] positioned 90185.01 69.00 72.02 run function skyblock:sea/m/unique/npc_yuehan
 execute as @n[tag=SEAboss4,scores={rng7=180..}] as @e[tag=SEAyuehan] at @s run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
 
 execute as @n[tag=SEAboss4,scores={rng7=190}] at @s run tp @n[tag=SEAboss4] 90184 57 56

@@ -204,7 +204,7 @@ setblock 90113 89 82 minecraft:crimson_pressure_plate
 
 
 execute positioned 90124 160 146 run kill @e[type=villager,tag=SEAmarshall,distance=0..5]
-execute positioned 90124 161 147 run function skyblock:sea/m/special_marshall
+execute positioned 90124 161 147 run function skyblock:sea/m/unique/special_marshall
 
 
 scoreboard players set SEA_ch5_event_EnteringPillar2 rng1 0

@@ -11,5 +11,5 @@ execute positioned 90110 155 136 run function skyblock:sea/m/drowned
 execute positioned 90110 155 136 run function skyblock:sea/m/drowned
 execute positioned 90110 155 136 run function skyblock:sea/m/drowned
 execute positioned 90110 155 136 run function skyblock:sea/m/drowned
-execute positioned 90102 149 131 run function skyblock:sea/m/special_ston
+execute positioned 90102 149 131 run function skyblock:sea/m/unique/special_ston
 execute run summon marker ~ ~ ~ {Tags:["SEAch3_spawn"]}

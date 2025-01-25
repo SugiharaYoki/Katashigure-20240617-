@@ -105,7 +105,7 @@ setblock 90074 103 137 air
 setblock 90075 103 141 air
 setblock 90074 103 137 air
 setblock 90062 103 135 air
-execute as @a[tag=SEAPT] at @s run function skyblock:sea/map_prepare_ch1_player
+execute as @a[tag=SEAPT] at @s run function skyblock:sea/generate/preload/map_prepare_ch1_player
 
 
 setblock 90061 103 132 chest[facing=west]
@@ -529,7 +529,7 @@ setblock 90074 103 136 minecraft:air
 
 fill 90092 144 154 90092 137 154 air
 
-function skyblock:protector/entity_count_end {function:"slyblock:sea/map_prepare_ch1"}
+function skyblock:protector/entity_count_end {function:"slyblock:sea/generate/preload/map_prepare_ch1"}
 
 advancement grant @a[tag=SEAPT] only skyblock:sea/chapter1
 

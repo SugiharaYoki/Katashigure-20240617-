@@ -4,7 +4,7 @@ execute as @s[scores={sea_4temp1=1}] run setblock 90194 59 95 minecraft:waxed_co
 execute as @s[scores={sea_4temp1=1}] run setblock 90194 59 90 minecraft:waxed_copper_bulb[lit=false]
 execute as @s[scores={sea_4temp1=1}] run playsound block.copper_bulb.turn_off block @a 90194 59 95 1 0.8
 execute as @s[scores={sea_4temp1=1}] run playsound block.copper_bulb.turn_off block @a 90194 59 90 1 0.8
-execute as @s[scores={sea_4temp1=1}] positioned 90184 62 91 run function skyblock:sea/m/npc_edwina
+execute as @s[scores={sea_4temp1=1}] positioned 90184 62 91 run function skyblock:sea/m/unique/npc_edwina
 execute as @s[scores={sea_4temp1=1}] run scoreboard players set @a[tag=SEAPT,scores={sea_progress=..10}] sea_progress 11
 execute as @s[scores={sea_4temp1=1}] run time set 18000
 execute as @s[scores={sea_4temp1=1..90}] positioned 90184 62 91 as @n[tag=SEAedwina] at @s run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]

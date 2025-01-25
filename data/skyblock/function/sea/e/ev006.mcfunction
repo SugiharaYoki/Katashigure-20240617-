@@ -109,7 +109,7 @@ execute as @s[scores={sea_4temp1=540}] positioned 90107 144 149 run function sky
 #bug排查：这条tp没有意义
 execute as @s[scores={sea_4temp1=739}] at @s run tp @n[tag=SEAyuehan] 90100 -500 100
 execute as @s[scores={sea_4temp1=739}] at @s run kill @n[tag=SEAyuehan]
-execute as @s[scores={sea_4temp1=740}] at @s positioned 90162 127 113 run function skyblock:sea/m/npc_yuehan
+execute as @s[scores={sea_4temp1=740}] at @s positioned 90162 127 113 run function skyblock:sea/m/unique/npc_yuehan
 execute as @s[scores={sea_4temp1=740}] run scoreboard players set @n[tag=SEAyuehan] sea_4temp1 0
 
 execute as @s[scores={sea_4temp1=591..}] if entity @a[tag=SEAPT,x=90147,y=137,z=155,distance=0..3] if block 90149 138 152 stone_bricks positioned 90149 137 151 run function skyblock:sea/m/skeleton_melee

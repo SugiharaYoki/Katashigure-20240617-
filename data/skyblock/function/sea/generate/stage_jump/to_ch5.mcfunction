@@ -1,8 +1,8 @@
 execute as @a unless entity @s[scores={sea_progress=-999..}] run scoreboard players set @s sea_progress 0
 tp @a[x=90000,y=100,z=100,distance=..5000,scores={sea_progress=..11},gamemode=!spectator] -43 55 0
 
-function skyblock:sea/map_jumpto_ch4_boss
-function skyblock:sea/map_prepare_ch5
+function skyblock:sea/generate/stage_jump/to_ch4_boss
+function skyblock:sea/generate/preload/map_prepare_ch5
 
 tp @a[tag=SEAPT] 90146 84 42 facing 90145 84 42
 

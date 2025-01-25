@@ -16,4 +16,4 @@ execute positioned 90116 122 107 run playsound minecraft:ambient.underwater.loop
 execute positioned 90116 122 107 run playsound minecraft:ambient.underwater.loop.additions.ultra_rare master @a[tag=SEAPT,distance=0..10,tag=!seaPerm000] 90116 122 107 0.9 1
 execute positioned 90116 122 107 run effect give @a[tag=SEAPT,distance=0..10,tag=!seaPerm000] darkness 10 0 true
 
-schedule function skyblock:sea/e/pu000_03 5s
+schedule function skyblock:sea/e/music_sheet/pu000_03 5s

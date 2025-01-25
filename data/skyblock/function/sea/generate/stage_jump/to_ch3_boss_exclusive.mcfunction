@@ -1,4 +1,4 @@
-execute positioned 90149 108 103 run function skyblock:sea/m/npc_yuehan
+execute positioned 90149 108 103 run function skyblock:sea/m/unique/npc_yuehan
 scoreboard players set @n[tag=SEAyuehan] sea_4temp1 260
 
 scoreboard players set sc sea_speedrun_ch3 9999

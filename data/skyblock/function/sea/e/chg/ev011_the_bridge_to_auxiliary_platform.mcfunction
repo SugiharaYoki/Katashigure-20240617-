@@ -30,7 +30,7 @@ execute if score SEAchg_spawn_timer_longbridge sea_4temp2 matches 31..40 positio
 execute if score SEAchg_spawn_timer_longbridge sea_4temp2 matches 41 positioned 90139 115 238 run function skyblock:sea/m/drowned_maintenance
 execute if score SEAchg_spawn_timer_longbridge sea_4temp2 matches 45 positioned 90139 115 238 run function skyblock:sea/m/vindicator
 
-execute if score SEAchg_spawn_timer_longbridge sea_4temp2 matches 1 positioned 90130 121 270 run function skyblock:sea/m/special_stanley
+execute if score SEAchg_spawn_timer_longbridge sea_4temp2 matches 1 positioned 90130 121 270 run function skyblock:sea/m/unique/special_stanley
 
 execute if score SEAchg_spawn_timer_longbridge sea_4temp2 matches 1 positioned 90139 133 266 run function skyblock:sea/m/skeleton_melee
 execute if score SEAchg_spawn_timer_longbridge sea_4temp2 matches 1 positioned 90139 133 266 run function skyblock:sea/m/skeleton_melee

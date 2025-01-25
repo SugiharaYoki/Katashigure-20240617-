@@ -17,10 +17,10 @@ execute as @a[tag=SEAPT,x=90067,y=137,z=125,distance=0..4.3,tag=!e_i_30] at @s r
 execute as @a[tag=SEAPT,x=90067,y=137,z=125,distance=0..4.3,tag=!e_i_30] at @s run advancement grant @s only skyblock:sea/doc/documentary3
 execute as @a[tag=SEAPT,x=90067,y=137,z=125,distance=0..4.3,tag=!e_i_30] at @s run tag @s add e_i_30
 
-execute if block 90128 138 137 air as @a[tag=SEAPT,x=90127,y=136,z=139,distance=0..3.8,tag=!e_i_37] at @s run function skyblock:sea/e/ev026_ch3_dorm_title
+execute if block 90128 138 137 air as @a[tag=SEAPT,x=90127,y=136,z=139,distance=0..3.8,tag=!e_i_37] at @s run function skyblock:sea/e/ch3/ev026_ch3_dorm_title
 
-execute positioned 90084 137 115 if entity @a[tag=SEAPT,distance=..13,tag=!SEAPF] unless entity @n[tag=SEAch3_spawn,distance=0..3] run function skyblock:sea/e/ev026_ch3_main_platform_resource_building_1f
-execute positioned 90087 143 121 if entity @a[tag=SEAPT,distance=..13,tag=!SEAPF] unless entity @n[tag=SEAch3_spawn,distance=0..3] run function skyblock:sea/e/ev026_ch3_main_platform_resource_building_2f
+execute positioned 90084 137 115 if entity @a[tag=SEAPT,distance=..13,tag=!SEAPF] unless entity @n[tag=SEAch3_spawn,distance=0..3] run function skyblock:sea/e/ch3/ev026_ch3_main_platform_resource_building_1f
+execute positioned 90087 143 121 if entity @a[tag=SEAPT,distance=..13,tag=!SEAPF] unless entity @n[tag=SEAch3_spawn,distance=0..3] run function skyblock:sea/e/ch3/ev026_ch3_main_platform_resource_building_2f
 
 execute positioned 90091 137 118 if entity @a[tag=SEAPT,distance=..13] unless entity @n[tag=SEAch3_spawn,distance=0..3] run function skyblock:sea/m/drowned_hat
 execute positioned 90091 137 118 if entity @a[tag=SEAPT,distance=..13] unless entity @n[tag=SEAch3_spawn,distance=0..3] run function skyblock:sea/m/drowned_hat
@@ -31,7 +31,7 @@ execute positioned 90072 139 110 if entity @a[tag=SEAPT,distance=..13] unless en
 execute positioned 90072 139 110 if entity @a[tag=SEAPT,distance=..13] unless entity @n[tag=SEAch3_spawn,distance=0..3] run function skyblock:sea/m/drowned_hat
 execute positioned 90072 139 110 if entity @a[tag=SEAPT,distance=..13] unless entity @n[tag=SEAch3_spawn,distance=0..3] run function skyblock:sea/m/silverfish_big
 execute positioned 90072 139 110 if entity @a[tag=SEAPT,distance=..13] unless entity @n[tag=SEAch3_spawn,distance=0..3] run summon marker ~ ~ ~ {Tags:["SEAch3_spawn"]}
-execute positioned 90072 139 110 if entity @a[tag=SEAPT,distance=..43] unless entity @n[tag=SEAch3_spawn_initial,distance=0..3] run function skyblock:sea/e/ev026_ch3_main_platform
+execute positioned 90072 139 110 if entity @a[tag=SEAPT,distance=..43] unless entity @n[tag=SEAch3_spawn_initial,distance=0..3] run function skyblock:sea/e/ch3/ev026_ch3_main_platform
 
 #give @p written_book[written_book_content={pages:['["",{"text":"\\u526f\\u5bbf\\u820d\\u697c\\u7684\\u56db\\u95f4\\u6807\\u51c6\\u623f\\u91cc\\u90fd\\u6709\\u82b1\\u5bf9\\u5427\\uff0c\\u90a3\\u4fbf\\u662f\\u5bc6\\u7801\\u3002\\n\\n\\n"},{"text":"\\u7ea2\\u8272","color":"red"},{"text":"\\u4ee3\\u88681\\n\\n","color":"black"},{"text":"\\u84dd\\u8272","color":"blue"},{"text":"\\u4ee3\\u88680\\n\\n","color":"black"},{"text":"\\u767d\\u8272","color":"gray"},{"text":"\\u4e0d\\u4ee3\\u8868","color":"black"},{"text":"\\u7ea2\\u8272","color":"red"},{"text":"\\n\\n","color":"black"},{"text":"1","color":"red"},{"text":"+","color":"black"},{"text":"1","color":"blue"},{"text":"=1","color":"black"}]'],title:"副宿舍楼2F的展示书",author:"斯顿"}]
 
@@ -49,38 +49,38 @@ execute positioned 90089 137 94 if entity @a[tag=SEAPT,distance=..13,tag=!SEAPF]
 
 scoreboard players add @e[tag=SEAch3_spawn_timer] sea_4temp1 1
 execute positioned 90106 138 104 if entity @a[tag=SEAPT,distance=..2.5,tag=!SEAPF] unless entity @n[tag=SEAch3_spawn_timer1,distance=0..3] run summon marker ~ ~ ~ {Tags:["SEAch3_spawn_timer","SEAch3_spawn_timer1"]}
-execute as @n[tag=SEAch3_spawn_timer1,scores={sea_4temp1=1..11}] run function skyblock:sea/e/ev026_ch3_main_platform_crossroad
+execute as @n[tag=SEAch3_spawn_timer1,scores={sea_4temp1=1..11}] run function skyblock:sea/e/ch3/ev026_ch3_main_platform_crossroad
 
 execute positioned 90099 137 120 if entity @a[tag=SEAPT,distance=..2.5,tag=!SEAPF] unless entity @n[tag=SEAch3_spawn_timer2,distance=0..3] run summon marker ~ ~ ~ {Tags:["SEAch3_spawn_timer","SEAch3_spawn_timer2"]}
-execute as @n[tag=SEAch3_spawn_timer2,scores={sea_4temp1=1..26}] run function skyblock:sea/e/ev026_ch3_main_platform_the_guard_to_basement
+execute as @n[tag=SEAch3_spawn_timer2,scores={sea_4temp1=1..26}] run function skyblock:sea/e/ch3/ev026_ch3_main_platform_the_guard_to_basement
 
 execute positioned 90149 137 138 if entity @a[tag=SEAPT,distance=..2.5,tag=!SEAPF] unless entity @n[tag=SEAch3_spawn_timer,distance=0..1] run summon marker ~ ~ ~ {Tags:["SEAch3_spawn_timer","SEAch3_spawn_timer20241004204001"]}
-execute as @n[tag=SEAch3_spawn_timer20241004204001,scores={sea_4temp1=11..20}] run function skyblock:sea/e/ev026_ch3_main_platform_sewer_trap
+execute as @n[tag=SEAch3_spawn_timer20241004204001,scores={sea_4temp1=11..20}] run function skyblock:sea/e/ch3/ev026_ch3_main_platform_sewer_trap
 
 
 execute positioned 90085 137 140 if entity @a[tag=SEAPT,distance=..2.5,tag=!SEAPF] unless entity @n[tag=SEAch3_spawn_timer3,distance=0..3] run summon marker ~ ~ ~ {Tags:["SEAch3_spawn_timer","SEAch3_spawn_timer3"]}
-execute as @n[tag=SEAch3_spawn_timer3,scores={sea_4temp1=1..11}] run function skyblock:sea/e/ev026_ch3_main_platform_the_guard_in_basement
+execute as @n[tag=SEAch3_spawn_timer3,scores={sea_4temp1=1..11}] run function skyblock:sea/e/ch3/ev026_ch3_main_platform_the_guard_in_basement
 
 execute positioned 90106 137 152 if entity @a[tag=SEAPT,distance=..2.5,tag=!SEAPF] unless entity @n[tag=SEAch3_spawn_timer4,distance=0..3] run summon marker ~ ~ ~ {Tags:["SEAch3_spawn_timer","SEAch3_spawn_timer4"]}
-execute as @n[tag=SEAch3_spawn_timer4,scores={sea_4temp1=1..11}] run function skyblock:sea/e/ev026_ch3_main_platform_before_the_dorm
+execute as @n[tag=SEAch3_spawn_timer4,scores={sea_4temp1=1..11}] run function skyblock:sea/e/ch3/ev026_ch3_main_platform_before_the_dorm
 
 execute positioned 90141 137 154 if entity @a[tag=SEAPT,distance=..2.5,tag=!SEAPF] unless entity @n[tag=SEAch3_spawn_timer5,distance=0..3] run summon marker ~ ~ ~ {Tags:["SEAch3_spawn_timer","SEAch3_spawn_timer5"]}
-execute as @n[tag=SEAch3_spawn_timer5,scores={sea_4temp1=1..11}] run function skyblock:sea/e/ev026_ch3_main_platform_southeast
+execute as @n[tag=SEAch3_spawn_timer5,scores={sea_4temp1=1..11}] run function skyblock:sea/e/ch3/ev026_ch3_main_platform_southeast
 
 execute positioned 90127 137 137 if entity @a[tag=SEAPT,distance=..4,tag=!SEAPF] unless entity @n[tag=SEAch3_spawn_timer6,distance=0..3] as @n[tag=sc,scores={sea_4temp2=390..}] run summon marker ~ ~ ~ {Tags:["SEAch3_spawn_timer","SEAch3_spawn_timer6"]}
-execute as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=1..92}] run function skyblock:sea/e/ev026_ch3_dorm
+execute as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=1..92}] run function skyblock:sea/e/ch3/ev026_ch3_dorm
 
 
 execute if entity @a[tag=SEAPT,x=90120,y=155,z=138,distance=0..4.5,tag=!e_i_26] run tag @a[tag=SEAPT] add e_i_26
 
 execute as @n[tag=sc] if block 90133 137 108 minecraft:warped_button[powered=true] unless entity @s[scores={sea_4temp2=80..}] run scoreboard players set @s sea_4temp2 80
 execute as @n[tag=sc,scores={sea_4temp2=80..395}] run scoreboard players add @s sea_4temp2 1
-execute as @n[tag=sc,scores={sea_4temp2=80..395}] run function skyblock:sea/e/ev026_ch3_communication_1
+execute as @n[tag=sc,scores={sea_4temp2=80..395}] run function skyblock:sea/e/ch3/ev026_ch3_communication_1
 
 
 execute as @n[tag=sc] if block 90133 137 108 minecraft:warped_button[powered=true] unless block 90131 161 144 air run scoreboard players set @s sea_4temp2 1080
 execute as @n[tag=sc,scores={sea_4temp2=1080..1395}] run scoreboard players add @s sea_4temp2 1
-execute as @n[tag=sc,scores={sea_4temp2=1080..1395}] run function skyblock:sea/e/ev026_ch3_communication_2
+execute as @n[tag=sc,scores={sea_4temp2=1080..1395}] run function skyblock:sea/e/ch3/ev026_ch3_communication_2
 
 execute if block 90107 138 117 iron_bars \
  if block 90104 138 125 lever[powered=false] \
@@ -130,7 +130,7 @@ execute as @n[tag=SEAch3_spawn_timer8,scores={sea_4temp1=20}] run fill 90094 131
 execute as @n[tag=SEAch3_spawn_timer8,scores={sea_4temp1=22}] run fill 90095 131 98 90091 128 98 air
 execute as @n[tag=SEAch3_spawn_timer8,scores={sea_4temp1=16..22}] run particle minecraft:sculk_soul 90093.53 129.99 98.50 2.5 1.5 0.5 0 300
 execute as @n[tag=SEAch3_spawn_timer8,scores={sea_4temp1=16..22}] run particle minecraft:soul_fire_flame 90093.53 129.99 98.50 2.5 1.5 0.5 0 300
-execute as @n[tag=SEAch3_spawn_timer8,scores={sea_4temp1=16}] positioned 90090 128 99 run function skyblock:sea/m/npc_yuehan
+execute as @n[tag=SEAch3_spawn_timer8,scores={sea_4temp1=16}] positioned 90090 128 99 run function skyblock:sea/m/unique/npc_yuehan
 execute as @n[tag=SEAch3_spawn_timer8,scores={sea_4temp1=23}] at @n[tag=SEAyuehan] run tellraw @a[distance=0..250] {"text":"？？？：“电……电台里的就是你？”","color":"green"}
 execute as @n[tag=SEAch3_spawn_timer8,scores={sea_4temp1=23}] at @n[tag=SEAyuehan] run scoreboard players set @n[tag=SEAyuehan] sea_4temp1 0
 execute as @n[tag=SEAch3_spawn_timer8,scores={sea_4temp1=23}] at @n[tag=SEAyuehan] run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
@@ -185,9 +185,9 @@ execute positioned 90120 149 144 if entity @a[tag=SEAPT,distance=..1.7] unless e
 
 
 
-execute positioned 90113 149 147 if entity @a[tag=SEAPT,distance=..2.5,tag=!SEAPF] unless entity @n[tag=SEAch3_spawn,distance=0..3] run function skyblock:sea/e/ev026_ch3_dorm_sidedorm
+execute positioned 90113 149 147 if entity @a[tag=SEAPT,distance=..2.5,tag=!SEAPF] unless entity @n[tag=SEAch3_spawn,distance=0..3] run function skyblock:sea/e/ch3/ev026_ch3_dorm_sidedorm
 
-execute positioned 90102 149 131 if entity @a[tag=SEAPT,distance=..3.5,tag=!SEAPF] unless block 90102 150 130 air run function skyblock:sea/e/ev026_ch3_dorm_ston
+execute positioned 90102 149 131 if entity @a[tag=SEAPT,distance=..3.5,tag=!SEAPF] unless block 90102 150 130 air run function skyblock:sea/e/ch3/ev026_ch3_dorm_ston
 
 execute positioned 90107 155 147 if entity @a[tag=SEAPT,distance=..2.3] unless entity @n[tag=SEAch3_spawn,distance=0..3] positioned 90102 155 149 run function skyblock:sea/m/nightblind
 execute positioned 90107 155 147 if entity @a[tag=SEAPT,distance=..2.3] unless entity @n[tag=SEAch3_spawn,distance=0..3] positioned 90101 155 150 run function skyblock:sea/m/skeleton_melee
@@ -228,8 +228,8 @@ execute as @n[tag=SEAyuehan] at @s unless entity @a[tag=e_i_25] unless block 901
 execute as @a[tag=SEAPT,x=90138,y=103,z=100,distance=0..2.7,tag=!e_i_29] at @s run tellraw @s {"text": "我有预感……去了更下层后就很难再回来了。做好万全的准备再前进吧。","color": "gray"}
 execute as @a[tag=SEAPT,x=90138,y=103,z=100,distance=0..2.7,tag=!e_i_29] at @s run tag @s add e_i_29
 
-execute as @a[tag=SEAPT,x=90138,y=36,z=100,distance=0..2.7,tag=!e_i_31] at @s run function skyblock:sea/e/ev010
-execute as @n[tag=SEAbossch3_core] at @s run function skyblock:sea/e/ev010
+execute as @a[tag=SEAPT,x=90138,y=36,z=100,distance=0..2.7,tag=!e_i_31] at @s run function skyblock:sea/e/ch3/ev010_boss3
+execute as @n[tag=SEAbossch3_core] at @s run function skyblock:sea/e/ch3/ev010_boss3
 
 #
 
@@ -237,4 +237,4 @@ execute as @n[tag=SEAbossch3_core] at @s run function skyblock:sea/e/ev010
 #德怀特彩蛋
 execute if block 90122 128 131 minecraft:warped_button[powered=true] run scoreboard players set sea_ch2_dwight_conversation rng6 1
 execute if score sea_ch2_dwight_conversation rng6 matches 1.. run scoreboard players add sea_ch2_dwight_conversation rng6 1
-execute if score sea_ch2_dwight_conversation rng6 matches 1.. run function skyblock:sea/e/ev024_ch2_dwight_6
+execute if score sea_ch2_dwight_conversation rng6 matches 1.. run function skyblock:sea/e/ch2/ev024_ch2_dwight_6
