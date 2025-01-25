@@ -134,6 +134,30 @@ setblock 90074 103 137 air
 
 tag @s remove sea_ch1_speedrun_butif
 
+scoreboard objectives add sea_speedrun_ch1_score dummy
+scoreboard objectives add sea_speedrun_ch2_score dummy
+scoreboard objectives add sea_speedrun_ch3_score dummy
+scoreboard objectives add sea_speedrun_ch4_score dummy
+scoreboard objectives add sea_speedrun_ch5_score dummy
+scoreboard objectives add sea_speedrun_ch6_score dummy
+scoreboard objectives add sea_speedrun_ch7_score dummy
+
+scoreboard players set @s sea_speedrun_ch1_score 9999
+scoreboard players set @s sea_speedrun_ch2_score 9999
+scoreboard players set @s sea_speedrun_ch3_score 9999
+scoreboard players set @s sea_speedrun_ch4_score 9999
+scoreboard players set @s sea_speedrun_ch5_score 9999
+scoreboard players set @s sea_speedrun_ch6_score 9999
+scoreboard players set @s sea_speedrun_ch7_score 9999
+
+scoreboard players operation @s sea_speedrun_ch1_score -= @s sea_speedrun_ch1
+scoreboard players operation @s sea_speedrun_ch2_score -= @s sea_speedrun_ch2
+scoreboard players operation @s sea_speedrun_ch3_score -= @s sea_speedrun_ch3
+scoreboard players operation @s sea_speedrun_ch4_score -= @s sea_speedrun_ch4
+scoreboard players operation @s sea_speedrun_ch5_score -= @s sea_speedrun_ch5
+scoreboard players operation @s sea_speedrun_ch6_score -= @s sea_speedrun_ch6
+scoreboard players operation @s sea_speedrun_ch7_score -= @s sea_speedrun_ch7
+
 forceload remove 90000 0 90200 200
 #setblock 90060 104 144 stone_button[facing=south,face=floor]
 summon minecraft:armor_stand 90074 93.5 139 {CustomName:'{"text": "『厄珀娅的悲歌』","color": "blue","bold": true}',DisabledSlots:65793,CustomNameVisible:1b,Invisible:1b,Marker:1b,NoGravity:1b}
