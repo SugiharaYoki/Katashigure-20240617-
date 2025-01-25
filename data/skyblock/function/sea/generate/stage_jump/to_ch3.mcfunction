@@ -6,7 +6,6 @@ function skyblock:sea/generate/preload/map_prepare_ch3
 
 tp @a[distance=0..300] 90060 103 141 facing 90061 103 141
 
-#clear @a[tag=SEAPT]
 
 tag @a[tag=SEAPT] add e_w_01
 tag @a[tag=SEAPT] add e_w_02

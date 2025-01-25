@@ -24,4 +24,4 @@ execute if items entity @s player.cursor lectern run function skyblock:sea/gener
 playsound minecraft:ui.button.click player @s ~ ~ ~ 1 1.2
 
 item replace entity @s player.cursor with air
-clear @s
+clear @s[tag=!SEAPT]
