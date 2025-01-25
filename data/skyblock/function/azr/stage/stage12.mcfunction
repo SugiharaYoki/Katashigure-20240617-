@@ -104,8 +104,8 @@ execute if score stageSeconds Azr_system matches 57..60 if entity @e[tag=AzrielM
 execute if score stageSeconds Azr_system matches 61 run title @a[tag=azrPlayer] actionbar {"text":"Stage Clear","color":"green"}
 execute if score stageSeconds Azr_system matches 61 run scoreboard players set @a[tag=azrPlayer] Azr_wave 33
 execute if score stageSeconds Azr_system matches 61 run fill -79873 47 -110 -79873 48 -108 iron_bars
-execute if score stageSeconds Azr_system matches 61 run tellraw @a[tag=azrPlayer,scores={AZR_chainKillUpg_pts=..4},tag=hasSkills] [{"text":"索命连击","color":"gold"},{"text":"可用点数已增加，目前为：4","color":"green"}]
-execute if score stageSeconds Azr_system matches 61 run scoreboard players set @a[scores={AZR_chainKillUpg_pts=..4}] AZR_chainKillUpg_pts 5
+execute if score stageSeconds Azr_system matches 61 run tellraw @a[tag=azrPlayer,scores={AZR_chainKillUpg_pts=..5},tag=hasSkills] [{"text":"索命连击","color":"gold"},{"text":"可用点数已增加，目前为：6","color":"green"}]
+execute if score stageSeconds Azr_system matches 61 run scoreboard players set @a[scores={AZR_chainKillUpg_pts=..5}] AZR_chainKillUpg_pts 6
 
 
 execute if score stageSeconds Azr_system matches 91 as @a[tag=azrPlayer] at @s run summon evoker ~ ~ ~ {PersistenceRequired:1b,Tags:["AzrielMob","AzrielDecMob"],DeathLootTable:"skyblock:azriel_witch_tier1",Health:1.0f,CustomName:'"斗篷术士"',attributes:[{id:"generic.max_health",base:1.0d},{id:"generic.attack_damage",base:1.5d},{id:"generic.movement_speed",base:0.21d}]}
