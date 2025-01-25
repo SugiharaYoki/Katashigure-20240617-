@@ -11,7 +11,7 @@ clear @s[gamemode=adventure] item_frame
 clear @s[gamemode=adventure] lever
 clear @s[gamemode=adventure] stone_bricks
 clear @s[gamemode=adventure] stone_brick_slab
-clear @s[gamemode=adventure] stone_brick_stair
+clear @s[gamemode=adventure] stone_brick_stairs
 clear @s[gamemode=adventure] smooth_stone
 
 #故事模式
