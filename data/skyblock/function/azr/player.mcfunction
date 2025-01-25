@@ -13,6 +13,8 @@ clear @s[gamemode=adventure] stone_bricks
 clear @s[gamemode=adventure] stone_brick_slab
 clear @s[gamemode=adventure] stone_brick_stairs
 clear @s[gamemode=adventure] smooth_stone
+clear @s[gamemode=adventure] flowering_azalea
+clear @s[gamemode=adventure] grass_block
 
 #故事模式
 effect give @s[tag=AZR_storymode] resistance infinite 1
