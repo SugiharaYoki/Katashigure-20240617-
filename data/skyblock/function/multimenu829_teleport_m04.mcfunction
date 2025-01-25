@@ -1,5 +1,7 @@
 scoreboard objectives add SEAPT_mode dummy
 execute unless entity @s[scores={SEAPT_mode=0..}] run scoreboard players set @s SEAPT_mode 1
+scoreboard objectives add sea_setting_box_index dummy
+execute unless entity @s[scores={sea_setting_box_index=0..}] run scoreboard players set @s sea_setting_box_index 1
 
 playsound minecraft:ui.button.click master @s ~ ~ ~ 0.3 1.4 0.4
 playsound minecraft:item.chorus_fruit.teleport master @s ~ ~ ~ 1.2 0.7 0.1
@@ -20,3 +22,4 @@ execute at @s run particle minecraft:reverse_portal ~ ~1 ~ 0.5 0.6 0.5 0.2 60
 scoreboard players set @s MultiMenu 0
 execute if entity @a[tag=SEAPT] run function skyblock:sea/generate/preload/map_prepare_ch1_player
 
+gamemode adventure
