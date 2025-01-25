@@ -142,21 +142,21 @@ scoreboard objectives add sea_speedrun_ch5_score dummy
 scoreboard objectives add sea_speedrun_ch6_score dummy
 scoreboard objectives add sea_speedrun_ch7_score dummy
 
-scoreboard players set @s sea_speedrun_ch1_score 9999
-scoreboard players set @s sea_speedrun_ch2_score 9999
-scoreboard players set @s sea_speedrun_ch3_score 9999
-scoreboard players set @s sea_speedrun_ch4_score 9999
-scoreboard players set @s sea_speedrun_ch5_score 9999
-scoreboard players set @s sea_speedrun_ch6_score 9999
-scoreboard players set @s sea_speedrun_ch7_score 9999
+scoreboard players set @a sea_speedrun_ch1_score 9999
+scoreboard players set @a sea_speedrun_ch2_score 9999
+scoreboard players set @a sea_speedrun_ch3_score 9999
+scoreboard players set @a sea_speedrun_ch4_score 9999
+scoreboard players set @a sea_speedrun_ch5_score 9999
+scoreboard players set @a sea_speedrun_ch6_score 9999
+scoreboard players set @a sea_speedrun_ch7_score 9999
 
-scoreboard players operation @s sea_speedrun_ch1_score -= @s sea_speedrun_ch1
-scoreboard players operation @s sea_speedrun_ch2_score -= @s sea_speedrun_ch2
-scoreboard players operation @s sea_speedrun_ch3_score -= @s sea_speedrun_ch3
-scoreboard players operation @s sea_speedrun_ch4_score -= @s sea_speedrun_ch4
-scoreboard players operation @s sea_speedrun_ch5_score -= @s sea_speedrun_ch5
-scoreboard players operation @s sea_speedrun_ch6_score -= @s sea_speedrun_ch6
-scoreboard players operation @s sea_speedrun_ch7_score -= @s sea_speedrun_ch7
+scoreboard players operation @a sea_speedrun_ch1_score -= @a sea_speedrun_ch1
+scoreboard players operation @a sea_speedrun_ch2_score -= @a sea_speedrun_ch2
+scoreboard players operation @a sea_speedrun_ch3_score -= @a sea_speedrun_ch3
+scoreboard players operation @a sea_speedrun_ch4_score -= @a sea_speedrun_ch4
+scoreboard players operation @a sea_speedrun_ch5_score -= @a sea_speedrun_ch5
+scoreboard players operation @a sea_speedrun_ch6_score -= @a sea_speedrun_ch6
+scoreboard players operation @a sea_speedrun_ch7_score -= @a sea_speedrun_ch7
 
 forceload remove 90000 0 90200 200
 #setblock 90060 104 144 stone_button[facing=south,face=floor]
