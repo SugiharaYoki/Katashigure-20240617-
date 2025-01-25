@@ -6,7 +6,7 @@ function skyblock:sea/generate/stage_jump/to_ch4
 tp @a[tag=SEAPT] 90236.00 63.00 107.99 facing 90236.00 63.00 106.99
 
 
-give @a[tag=SEAPT] emerald 24
+scoreboard players add @a[tag=SEAPT] sea_i_emerald 40
 
 
 ####

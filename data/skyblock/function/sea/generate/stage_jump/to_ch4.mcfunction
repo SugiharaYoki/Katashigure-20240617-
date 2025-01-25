@@ -46,8 +46,6 @@ tag @a[tag=SEAPT] add e_w_04
 #scoreboard players set @a[tag=SEAPT] sea_i_trim_skeleton 8
 #scoreboard players set @a[tag=SEAPT] sea_i_trim_sea 0 
 #scoreboard players set @a[tag=SEAPT] sea_i_trim_ghost 0
-give @a[tag=SEAPT] emerald 64
-give @a[tag=SEAPT] emerald 64
-give @a[tag=SEAPT] emerald 48
+scoreboard players add @a[tag=SEAPT] sea_i_emerald 200
 
 tag @a[tag=SEAPT] add sea_teleport05

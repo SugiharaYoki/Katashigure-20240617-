@@ -30,7 +30,7 @@ tag @a[tag=SEAPT] add e_w_02
 #scoreboard players set @a[tag=SEAPT] sea_i_trim_ghost 0
 #scoreboard players set @a[tag=SEAPT] sea_i_trim_skeleton 0
 give @a[tag=SEAPT] arrow 8
-give @a[tag=SEAPT] emerald 48
+scoreboard players add @a[tag=SEAPT] sea_i_emerald 50
 
 fill 90129 122 119 90129 122 120 air
 fill 90129 123 119 90129 123 120 air
