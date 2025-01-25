@@ -752,7 +752,7 @@ execute if score @s sea_crafter matches 30001..39999 run execute at @s run plays
 execute if score @s sea_crafter matches 30001..39999 run execute at @s run playsound ambient.crimson_forest.additions master @s ~ ~ ~ 1.2 0.7 0.1
 execute if score @s sea_crafter matches 30001..39999 run execute at @s run particle minecraft:reverse_portal ~ ~1 ~ 0.5 0.6 0.5 0.2 60
 
-execute if score @s sea_crafter matches 20000..29999 run function skyblock:sea/p/trim
+execute if score @s[scores={SEAPT_mode=1..2}] sea_crafter matches 20000..29999 run function skyblock:sea/p/trim
 
 execute if score @s sea_crafter matches 30000..39999 run scoreboard players set @s sea_crafter 30000
 execute if score @s sea_crafter matches 20000..29999 run scoreboard players set @s sea_crafter 20000
