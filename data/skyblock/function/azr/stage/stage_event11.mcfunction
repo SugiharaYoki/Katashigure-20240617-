@@ -658,6 +658,9 @@ execute if score stageSeconds Azr_system matches 3045 if score playerCount Azr_s
 execute if score stageSeconds Azr_system matches 3045 if score playerCount Azr_system matches 2.. as @a[tag=azrPlayer] at @s run tellraw @s {"text":"“那是……什么声音？汝等是否仍旧安好？……见鬼了，升降梯怎么、？！”","color":"white"}
 execute if score stageSeconds Azr_system matches 3045 as @a[tag=azrPlayer] at @s run playsound minecraft:entity.illusioner.ambient master @s ~ ~ ~ 1 0.6
 
+execute if score stageSeconds Azr_system matches 3045 run tag @a[tag=azrPlayer] add AZR_fakeDeath
+execute if score stageSeconds Azr_system matches 3045 as @a[tag=azrPlayer] run spawnpoint @s -79753 59 -210
+
 execute if score stageSeconds Azr_system matches 3037..3042 as @a[tag=azrPlayer] at @s run playsound minecraft:ambient.crimson_forest.mood ambient @s ~ ~ ~ 0.7 1.1
 execute if score stageSeconds Azr_system matches 3039..3044 as @a[tag=azrPlayer] at @s run playsound minecraft:ambient.crimson_forest.mood ambient @s ~ ~ ~ 0.8 1.1
 execute if score stageSeconds Azr_system matches 3041..3046 as @a[tag=azrPlayer] at @s run playsound minecraft:ambient.crimson_forest.mood ambient @s ~ ~ ~ 1.0 1.2
@@ -671,13 +674,7 @@ execute if score stageSeconds Azr_system matches 3041..3046 as @a[tag=azrPlayer]
 execute if score stageSeconds Azr_system matches 3043..3048 as @a[tag=azrPlayer] at @s run playsound minecraft:ambient.nether_wastes.mood ambient @s ~ ~ ~ 1.9 1.3
 execute if score stageSeconds Azr_system matches 3045..3049 as @a[tag=azrPlayer] at @s run playsound minecraft:ambient.nether_wastes.mood ambient @s ~ ~ ~ 20 1.4
 execute if score stageSeconds Azr_system matches 3047..3050 as @a[tag=azrPlayer] at @s run playsound minecraft:ambient.nether_wastes.mood ambient @s ~ ~ ~ 30 1.5
-
-execute if score stageSeconds Azr_system matches 3038..3092 as @a[tag=azrPlayer] at @s unless block ~ ~-10 ~ air run effect give @s slow_falling 3 0 true
-execute if score stageSeconds Azr_system matches 3038..3092 as @a[tag=azrPlayer] at @s unless block ~ ~-10 ~ air run tp @s -79754 59 -212
-execute if score stageSeconds Azr_system matches 3038..3092 as @a[tag=azrPlayer] at @s unless block ~ ~-9 ~ air run effect give @s slow_falling 3 0 true
-execute if score stageSeconds Azr_system matches 3038..3092 as @a[tag=azrPlayer] at @s unless block ~ ~-9 ~ air run tp @s -79754 59 -212
-execute if score stageSeconds Azr_system matches 3038..3092 as @a[tag=azrPlayer] at @s unless block ~ ~-20 ~ air run effect give @s slow_falling 3 0 true
-execute if score stageSeconds Azr_system matches 3038..3092 as @a[tag=azrPlayer] at @s unless block ~ ~-20 ~ air run tp @s -79754 59 -212
+execute if score stageSeconds Azr_system matches 3051..3053 run scoreboard players set stageSeconds Azr_system 3051
 
 #TODO: 这里是和跳关相关的一些代码
 
@@ -687,21 +684,23 @@ execute if score stageSeconds Azr_system matches 3038..3092 as @a[tag=azrPlayer]
 #execute if score stageSeconds Azr_system matches 3104 if entity @e[tag=sc,limit=1,tag=AZS_JumpToCh4,scores={playerCount=6..}] positioned -79844 48 -127 run function skyblock:azr/ingame_azrielsmidgarden_startgame_ch4_chest6_7
 #execute if score stageSeconds Azr_system matches 3104 as @e[tag=sc,limit=1] at @s run tag @s remove AZS_JumpToCh4
 
-execute if score stageSeconds Azr_system matches 3045..3146 run scoreboard players set @a[tag=azrPlayer] Azr_wave 36
-execute if score stageSeconds Azr_system matches 3122 run title @a[tag=azrPlayer] actionbar {"text":"Chapter Clear","color":"gold"}
-execute if score stageSeconds Azr_system matches 3122 run clone -79844 48 -127 -79844 48 -127 -79758 44 -187 replace move
-execute if score stageSeconds Azr_system matches 3122 unless block -79758 44 -187 white_shulker_box run setblock -79758 44 -187 white_shulker_box
-execute if score stageSeconds Azr_system matches 3122 as @a[tag=azrPlayer] at @s run scoreboard players add @s Temp_PersonAZS 60
+execute positioned -79753 59 -210 unless entity @a[tag=azrPlayer,distance=5..] run scoreboard players set stageSeconds Azr_system 4142
 
-execute if score stageSeconds Azr_system matches 3145 if score playerCount Azr_system matches 1 run tp @a[tag=azrPlayer] -79759 47 -190 1 2
-execute if score stageSeconds Azr_system matches 3145 if score playerCount Azr_system matches 2.. run spreadplayers -79759 -190 1 2 under 47 false @a[tag=azrPlayer]
-execute if score stageSeconds Azr_system matches 3138 run spawnpoint @a[tag=azrPlayer] -79759 44 -190
-execute if score stageSeconds Azr_system matches 3146 run tellraw @a[scores={Azr_skillPoints=..14}] {"text":"永久升级 - 中途加入时 若至少位于第四章 背包将转变为“第四章初始物资”","color":"light_purple"}
-execute if score stageSeconds Azr_system matches 3045..3146 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..14}] Azr_skillPoints 15
-execute if score stageSeconds Azr_system matches 3146 run scoreboard players set stage Azr_system 44
-execute if score stageSeconds Azr_system matches 3146 run scoreboard players set stageSeconds Azr_system 0
-execute if score stageSeconds Azr_system matches 3146 run scoreboard players set stageSeconds Azr_system 0
-execute if score stageSeconds Azr_system matches 3144 run summon parrot -79761 79 -190 {PersistenceRequired:1b,Invulnerable:1b,Tags:["AzrielDecMob","AzrielFriendly"],DeathLootTable:"skyblock:azriel_creeper_tier2",Health:37.0f,CustomName:'"小鸢"',Variant:2,attributes:[{id:"generic.max_health",base:50.0d},{id:"generic.flying_speed",base:0.0d},{id:"generic.movement_speed",base:0.0d}]}
+execute if score stageSeconds Azr_system matches 4142 run scoreboard players set @a[tag=azrPlayer] Azr_wave 36
+execute if score stageSeconds Azr_system matches 4142 run title @a[tag=azrPlayer] actionbar {"text":"Chapter Clear","color":"gold"}
+execute if score stageSeconds Azr_system matches 4142 run clone -79844 48 -127 -79844 48 -127 -79758 44 -187 replace move
+execute if score stageSeconds Azr_system matches 4142 unless block -79758 44 -187 white_shulker_box run setblock -79758 44 -187 white_shulker_box
+execute if score stageSeconds Azr_system matches 4142 as @a[tag=azrPlayer] at @s run scoreboard players add @s Temp_PersonAZS 60
+
+execute if score stageSeconds Azr_system matches 4144 if score playerCount Azr_system matches 1 run tp @a[tag=azrPlayer] -79759 47 -190 1 2
+execute if score stageSeconds Azr_system matches 4144 if score playerCount Azr_system matches 2.. run spreadplayers -79759 -190 1 2 under 47 false @a[tag=azrPlayer]
+execute if score stageSeconds Azr_system matches 4146 run spawnpoint @a[tag=azrPlayer] -79759 44 -190
+execute if score stageSeconds Azr_system matches 4146 run tellraw @a[scores={Azr_skillPoints=..14}] {"text":"永久升级 - 中途加入时 若至少位于第四章 背包将转变为“第四章初始物资”","color":"light_purple"}
+execute if score stageSeconds Azr_system matches 4146 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..14}] Azr_skillPoints 15
+execute if score stageSeconds Azr_system matches 4146 run scoreboard players set stage Azr_system 44
+execute if score stageSeconds Azr_system matches 4146 run scoreboard players set stageSeconds Azr_system 0
+execute if score stageSeconds Azr_system matches 4146 run scoreboard players set stageSeconds Azr_system 0
+execute if score stageSeconds Azr_system matches 4146 run summon parrot -79761 79 -190 {PersistenceRequired:1b,Invulnerable:1b,Tags:["AzrielDecMob","AzrielFriendly"],DeathLootTable:"skyblock:azriel_creeper_tier2",Health:37.0f,CustomName:'"小鸢"',Variant:2,attributes:[{id:"generic.max_health",base:50.0d},{id:"generic.flying_speed",base:0.0d},{id:"generic.movement_speed",base:0.0d}]}
 
 execute if score stageSeconds Azr_system matches 3122 run advancement grant @a[tag=azrPlayer] only skyblock:azr_stage12_boss3
 
