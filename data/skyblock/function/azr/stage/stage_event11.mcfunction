@@ -1,3 +1,4 @@
+function skyblock:azr/tool_rng
 
 execute if score stageSeconds Azr_system matches 0.. as @e[name="僵尸盔甲匠"] at @s run function skyblock:azr/azrielsmidgarden_effect_zombie_armorer
 execute if score stageSeconds Azr_system matches 0.. as @e[name="僵尸牧师"] at @s run function skyblock:azr/azrielsmidgarden_effect_zombie_cleric

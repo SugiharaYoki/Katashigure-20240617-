@@ -296,6 +296,7 @@ setblock -79793 27 -287 anvil[facing=north]
 setblock -79799 28 -284 minecraft:birch_button[facing=west,face=floor]
 setblock -79742 75 -440 minecraft:birch_button[facing=east,face=floor]
 setblock -79912 55 -101 minecraft:birch_button[facing=west,face=wall]
+setblock -79925 47 -113 minecraft:stone_button[facing=north,face=floor]
 #______________________________________________________________#
 fill -79519 42 -321 -79553 42 -355 air replace fire
 fill -79948 38 -13 -79948 42 -16 air
