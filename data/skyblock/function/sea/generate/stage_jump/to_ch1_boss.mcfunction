@@ -3,6 +3,8 @@ tp @a[x=90000,y=100,z=100,distance=..5000,scores={sea_progress=..1},gamemode=!sp
 
 function skyblock:sea/generate/preload/map_prepare_ch1
 
+time set 13000t
+
 tp @a[distance=0..300] 90091.92 122.00 104.97 facing 90081.92 122.00 104.97
 
 #clear @a[tag=SEAPT]
@@ -21,6 +23,8 @@ tag @a[tag=SEAPT] add e_w_02
 give @a[tag=SEAPT] arrow 8
 scoreboard players add @a[tag=SEAPT] sea_i_emerald 40
 scoreboard players set @a[tag=SEAPT] sea_speedrun_ch1 9999
+scoreboard players set sc sea_speedrun_ch1 9999
+
 
 fill 90129 122 119 90129 122 120 air
 fill 90129 123 119 90129 123 120 air
