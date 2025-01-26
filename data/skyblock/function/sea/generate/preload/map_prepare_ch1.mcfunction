@@ -648,10 +648,20 @@ fill 90103 150 114 90103 146 117 minecraft:waxed_copper_bulb[lit=true] replace m
 
 fill 90105 104 52 90106 101 52 minecraft:waxed_copper_grate
 
+#第四章封锁解除
 fill 90217 46 125 90217 44 125 air
 fill 90190 47 129 90190 44 129 minecraft:air
 fill 90190 47 128 90191 47 128 minecraft:air
 fill 90189 48 128 90189 48 129 air
+setblock 90185 50 137 minecraft:white_stained_glass
+setblock 90180 50 137 minecraft:white_stained_glass
+setblock 90185 50 130 minecraft:white_stained_glass
+setblock 90180 50 130 minecraft:white_stained_glass
+setblock 90172 49 133 minecraft:white_stained_glass
+setblock 90172 49 127 minecraft:white_stained_glass
+setblock 90166 49 133 minecraft:white_stained_glass
+setblock 90172 49 127 minecraft:white_stained_glass
+
 
 #多人限定
 setblock 90081 113 112 minecraft:waxed_copper_bulb[lit=false]
