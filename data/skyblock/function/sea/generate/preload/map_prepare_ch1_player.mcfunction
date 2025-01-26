@@ -30,6 +30,8 @@ scoreboard players set @s SEA_pounce_charge 0
 
 function skyblock:skywar_system_removeallmd
 
+tag @s remove sea_ch3_badend
+
 tag @s remove sea_dead
 scoreboard players set @s sea_dead 0
 scoreboard players set @s sea_dead_check 0
