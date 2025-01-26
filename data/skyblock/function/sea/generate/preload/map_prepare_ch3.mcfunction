@@ -501,3 +501,17 @@ execute positioned 90083 150 160 run function skyblock:sea/m/skeleton
 fill 90151 39 101 90151 37 99 iron_bars
 
 scoreboard players set SEAchg_spawn_timer_medical1 sea_4temp2 0
+
+
+
+setblock 90140 138 98 air
+setblock 90140 138 98 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 2, id:"minecraft:disc_fragment_5"}}
+
+
+
+
+
+
+
+
+
