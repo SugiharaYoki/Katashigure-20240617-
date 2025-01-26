@@ -91,3 +91,5 @@ setblock 90147 132 117 minecraft:white_stained_glass
 setblock 90147 132 121 minecraft:white_stained_glass
 setblock 90125 130 115 minecraft:stone_button[facing=west]
 
+
+scoreboard players set sc sea_speedrun_ch2 9999
