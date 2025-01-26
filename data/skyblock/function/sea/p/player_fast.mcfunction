@@ -78,7 +78,7 @@ execute unless items entity @s[tag=SEA_w_03_effected] weapon.mainhand shears run
 execute if items entity @s[tag=!SEA_w_04_effected] weapon.* shield run function skyblock:sea/p/w/shield_effect
 execute unless items entity @s[tag=SEA_w_04_effected] weapon.* shield run function skyblock:sea/p/w/shield_effect_remove
 
-execute if items entity @s[tag=!SEA_w_05_effected] armor.chest leather_chestplate run function skyblock:sea/p/w/armor_effect
+##execute if items entity @s[tag=!SEA_w_05_effected] armor.chest leather_chestplate run function skyblock:sea/p/w/armor_effect
 execute unless items entity @s[tag=SEA_w_05_effected] armor.chest leather_chestplate run function skyblock:sea/p/w/armor_effect_remove
 
 execute if items entity @s[tag=!SEA_w_06_effected] weapon.mainhand music_disc_5 run function skyblock:sea/p/w/ripper_effect
