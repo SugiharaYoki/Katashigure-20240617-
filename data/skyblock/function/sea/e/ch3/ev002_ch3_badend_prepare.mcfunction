@@ -5,5 +5,5 @@ execute as @s[tag=SEAch3_spawn_timer7_pre,scores={sea_4temp1=1..}] if entity @a[
 
 execute as @s[tag=SEAch3_spawn_timer7_pre,scores={sea_4temp1=1..}] if entity @a[tag=SEAPT,x=90116,y=128,z=66,dx=6,dy=10,dz=4,tag=!SEAPF] run scoreboard players add @s sea_4temp4 40
 
-execute if score @s sea_4temp4 matches 40 run summon marker ~ ~ ~ {Tags:["SEAch3_spawn_timer","SEAch3_spawn_timer7_pre"]}
+execute if score @s sea_4temp4 matches 40.. unless entity @e[tag=SEAch3_spawn_timer7] run summon marker ~ ~ ~ {Tags:["SEAch3_spawn_timer","SEAch3_spawn_timer7"]}
 
