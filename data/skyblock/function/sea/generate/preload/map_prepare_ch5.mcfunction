@@ -40,6 +40,7 @@ setblock 90135 146 120 minecraft:spore_blossom
 fill 90105 104 52 90106 101 52 minecraft:air
 
 #工程区
+fill 90127 121 42 90122 121 41 minecraft:iron_trapdoor[half=top]
 setblock 90119 122 52 chest[facing=north]
 setblock 90130 122 46 minecraft:potted_azure_bluet
 
