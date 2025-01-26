@@ -142,13 +142,20 @@ scoreboard objectives add sea_speedrun_ch5_score dummy
 scoreboard objectives add sea_speedrun_ch6_score dummy
 scoreboard objectives add sea_speedrun_ch7_score dummy
 
-scoreboard players set @a sea_speedrun_ch1_score 9999
-scoreboard players set @a sea_speedrun_ch2_score 9999
-scoreboard players set @a sea_speedrun_ch3_score 9999
-scoreboard players set @a sea_speedrun_ch4_score 9999
-scoreboard players set @a sea_speedrun_ch5_score 9999
-scoreboard players set @a sea_speedrun_ch6_score 9999
-scoreboard players set @a sea_speedrun_ch7_score 9999
+scoreboard players set @a sea_speedrun_ch1_score 0
+scoreboard players set @a sea_speedrun_ch2_score 0
+scoreboard players set @a sea_speedrun_ch3_score 0
+scoreboard players set @a sea_speedrun_ch4_score 0
+scoreboard players set @a sea_speedrun_ch5_score 0
+scoreboard players set @a sea_speedrun_ch6_score 0
+scoreboard players set @a sea_speedrun_ch7_score 0
+scoreboard players set @a[scores={sea_speedrun_ch1=..9999}] sea_speedrun_ch1_score 9999
+scoreboard players set @a[scores={sea_speedrun_ch2=..9999}] sea_speedrun_ch2_score 9999
+scoreboard players set @a[scores={sea_speedrun_ch3=..9999}] sea_speedrun_ch3_score 9999
+scoreboard players set @a[scores={sea_speedrun_ch4=..9999}] sea_speedrun_ch4_score 9999
+scoreboard players set @a[scores={sea_speedrun_ch5=..9999}] sea_speedrun_ch5_score 9999
+scoreboard players set @a[scores={sea_speedrun_ch6=..9999}] sea_speedrun_ch6_score 9999
+scoreboard players set @a[scores={sea_speedrun_ch7=..9999}] sea_speedrun_ch7_score 9999
 
 execute as @a at @s run scoreboard players operation @s sea_speedrun_ch1_score -= @s sea_speedrun_ch1
 execute as @a at @s run scoreboard players operation @s sea_speedrun_ch2_score -= @s sea_speedrun_ch2
