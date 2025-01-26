@@ -198,7 +198,7 @@ execute positioned 90107 155 147 if entity @a[tag=SEAPT,distance=..2.3] unless e
 execute positioned 90146 135 117 if entity @a[tag=SEAPT,distance=..1.5,tag=!SEAPF] unless entity @n[tag=SEAch3_spawn,distance=0..1.5] run function skyblock:sea/e/ev004
 
 #BADEND
-execute positioned 90119 129 84 if entity @a[tag=SEAPT,x=90116,y=128,z=76,dx=6,dy=10,dz=13,tag=!SEAPF] unless entity @n[tag=SEAch3_spawn_timer7,distance=0..3] run summon marker ~ ~ ~ {Tags:["SEAch3_spawn_timer","SEAch3_spawn_timer7_pre"]}
+execute positioned 90119 129 84 if entity @a[tag=SEAPT,x=90116,y=128,z=76,dx=6,dy=10,dz=13,tag=!SEAPF] unless entity @n[tag=SEAch3_spawn_timer7_pre,distance=0..3] run summon marker ~ ~ ~ {Tags:["SEAch3_spawn_timer","SEAch3_spawn_timer7_pre"]}
 execute as @n[tag=SEAch3_spawn_timer7_pre] run function skyblock:sea/e/ch3/ev002_ch3_badend_prepare
 execute as @n[tag=SEAch3_spawn_timer7] run function skyblock:sea/e/ch3/ev002_ch3_badend_event
 
