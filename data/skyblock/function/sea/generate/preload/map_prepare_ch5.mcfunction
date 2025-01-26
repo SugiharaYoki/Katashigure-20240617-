@@ -43,7 +43,8 @@ fill 90105 104 52 90106 101 52 minecraft:air
 setblock 90119 122 52 chest[facing=north]
 setblock 90130 122 46 minecraft:potted_azure_bluet
 
-
+#不能回到第四章
+fill 90182 60 80 90182 57 81 iron_block
 
 #主平台地形变化
 execute positioned 90097 144 115 run kill @n[tag=sea_drone,distance=0..3]
