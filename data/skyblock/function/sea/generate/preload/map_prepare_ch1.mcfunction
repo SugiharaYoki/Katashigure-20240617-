@@ -646,6 +646,13 @@ fill 90091 149 106 90088 149 106 minecraft:waxed_copper_bulb[lit=true] replace m
 fill 90067 132 91 90079 132 91 minecraft:lantern replace minecraft:structure_void
 fill 90103 150 114 90103 146 117 minecraft:waxed_copper_bulb[lit=true] replace minecraft:waxed_copper_bulb[lit=false]
 
+fill 90105 104 52 90106 101 52 minecraft:waxed_copper_grate
+
+
+
+
+
+
 #多人限定
 setblock 90081 113 112 minecraft:waxed_copper_bulb[lit=false]
 setblock 90082 111 111 air
