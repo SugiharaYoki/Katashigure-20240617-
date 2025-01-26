@@ -297,6 +297,12 @@ setblock -79799 28 -284 minecraft:birch_button[facing=west,face=floor]
 setblock -79742 75 -440 minecraft:birch_button[facing=east,face=floor]
 setblock -79912 55 -101 minecraft:birch_button[facing=west,face=wall]
 setblock -79925 47 -113 minecraft:stone_button[facing=north,face=floor]
+setblock -79897 38 61 minecraft:potted_flowering_azalea_bush
+setblock -79897 38 59 minecraft:potted_flowering_azalea_bush
+setblock -79897 38 57 minecraft:potted_flowering_azalea_bush
+setblock -79897 38 55 minecraft:potted_flowering_azalea_bush
+setblock -79897 38 53 minecraft:potted_flowering_azalea_bush
+setblock -79897 38 51 minecraft:potted_flowering_azalea_bush
 #______________________________________________________________#
 fill -79519 42 -321 -79553 42 -355 air replace fire
 fill -79948 38 -13 -79948 42 -16 air

@@ -9,6 +9,7 @@ execute if score stageSeconds Azr_system matches 0.. as @e[tag=!AzrielMob,type=v
 execute if score stageSeconds Azr_system matches 0..500 run scoreboard players set stageSeconds Azr_system 20
 execute if score stageSeconds Azr_system matches 0..500 if entity @a[x=-79815,y=48,z=-128,distance=0..7,tag=azrPlayer,gamemode=!spectator] run scoreboard players set stageSeconds Azr_system 600
 
+execute if score stageSeconds Azr_system matches 601 run tag @a[tag=azrPlayer] add azrUpdateSpawnPoint
 execute if score stageSeconds Azr_system matches 601 run tellraw @a[tag=DebugMode,tag=azrPlayer] [{"text":"[DEBUG MODE MESSAGE] You are playing \"Stage Event11\", with playerCount = "},{"score":{"objective":"Azr_system","name":"playerCount"}},{"text":" Maximum Seconds = 3146"}]
 execute if score stageSeconds Azr_system matches 601 as @a[tag=azrPlayer] at @s run playsound minecraft:entity.illusioner.ambient master @s ~ ~ ~ 0.3 0.6
 execute if score stageSeconds Azr_system matches 601 as @a[tag=azrPlayer] at @s run tellraw @s {"text":"权之残影（传音）：","color":"red"}
@@ -659,6 +660,7 @@ execute if score stageSeconds Azr_system matches 3045 if score playerCount Azr_s
 execute if score stageSeconds Azr_system matches 3045 as @a[tag=azrPlayer] at @s run playsound minecraft:entity.illusioner.ambient master @s ~ ~ ~ 1 0.6
 
 execute if score stageSeconds Azr_system matches 3045 run tag @a[tag=azrPlayer] add AZR_fakeDeath
+execute if score stageSeconds Azr_system matches 3045 run effect clear @a[tag=azrPlayer] minecraft:slow_falling
 execute if score stageSeconds Azr_system matches 3045 as @a[tag=azrPlayer] run spawnpoint @s -79753 59 -210
 
 execute if score stageSeconds Azr_system matches 3037..3042 as @a[tag=azrPlayer] at @s run playsound minecraft:ambient.crimson_forest.mood ambient @s ~ ~ ~ 0.7 1.1

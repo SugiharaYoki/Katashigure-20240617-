@@ -40,7 +40,7 @@ execute if data entity @s Inventory[{id:"minecraft:skull_banner_pattern"}].compo
 execute if items entity @s container.* skull_banner_pattern run clear @s minecraft:skull_banner_pattern
 
 #DEBUG-错误信息
-execute as @a if items entity @s weapon.mainhand *[custom_data~{Error:1b}] run tellraw @a [{"text":"\n=============\n"},\
+execute if items entity @s weapon.mainhand *[custom_data~{Error:1b}] run tellraw @a [{"text":"\n=============\n"},\
 {"text":"游戏发生错误，请将此信息截图并发送给管理员以协助解决此错误\n"},\
 {"text":"\nstage"},{"score":{"name":"stage","objective":"Azr_system"}},\
 {"text":"\nstageSeconds"},{"score":{"name":"stageSeconds","objective":"Azr_system"}},\

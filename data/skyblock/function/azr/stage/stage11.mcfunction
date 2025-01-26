@@ -115,12 +115,14 @@ execute if score mobCount Azr_system matches ..45 if block -79910 40 -105 iron_b
 execute if score stageSeconds Azr_system matches 21..255 unless entity @e[tag=AzrielMob_temp1] run scoreboard players set stageSeconds Azr_system 260
 execute if score stageSeconds Azr_system matches 260 if score playerCount Azr_system matches 1.. run tellraw @a[tag=azrPlayer] {"text":"权之残影（传音）：","color":"red"}
 execute if score stageSeconds Azr_system matches 260 if score playerCount Azr_system matches 1.. run tellraw @a[tag=azrPlayer] {"text":"“结界最多还能撑5秒，准备迎接下一波敌人！”","color":"white"}
+execute if score stageSeconds Azr_system matches 280 run tag @a[tag=azrPlayer] add azrUpdateSpawnPoint
 execute if score stageSeconds Azr_system matches 280 if score playerCount Azr_system matches 1.. run fill -79917 44 -106 -79917 40 -110 minecraft:air destroy
 
 
 execute if score stageSeconds Azr_system matches 261..389 unless entity @e[tag=AzrielMob_temp2] run scoreboard players set stageSeconds Azr_system 390
 execute if score stageSeconds Azr_system matches 390 if score playerCount Azr_system matches 1.. run tellraw @a[tag=azrPlayer] {"text":"权之残影（传音）：","color":"red"}
 execute if score stageSeconds Azr_system matches 390 if score playerCount Azr_system matches 1.. run tellraw @a[tag=azrPlayer] {"text":"“下一道结界坚持不住了，5秒内那边的敌人就会过来！”","color":"white"}
+execute if score stageSeconds Azr_system matches 410 run tag @a[tag=azrPlayer] add azrUpdateSpawnPoint
 execute if score stageSeconds Azr_system matches 410 if score playerCount Azr_system matches 1.. run fill -79932 44 -106 -79932 40 -110 minecraft:air destroy
 
 execute if score stageSeconds Azr_system matches 302 if score playerCount Azr_system matches 1..3 run fill -79926 40 -111 -79924 42 -111 air destroy
@@ -150,6 +152,7 @@ execute if score stageSeconds Azr_system matches 520 run playsound ambient.crims
 execute if score stageSeconds Azr_system matches 520 run scoreboard players set @a[tag=azrPlayer] Azr_wave 29
 execute if score stageSeconds Azr_system matches 521 run scoreboard players set stage Azr_system 38
 execute if score stageSeconds Azr_system matches 521 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..12}] Azr_skillPoints 13
+execute if score stageSeconds Azr_system matches 520 run tag @a[tag=azrPlayer] add azrUpdateSpawnPoint
 execute if score stageSeconds Azr_system matches 520 run fill -79935 44 -93 -79936 42 -93 minecraft:air destroy
 
 execute if score stageSeconds Azr_system matches 520 run summon husk -79929 46 -98 {PersistenceRequired:1b,Tags:["AzrielMob","AzrielDecMob"],DeathLootTable:"skyblock:azriel_zombie_tier2_jail",Health:8.5f,CustomName:'"尸壳工兵"',CanPickUpLoot:0b,IsBaby:0b,HandItems:[{count:1,id:"iron_shovel",components:{custom_name:'{"text":"工兵铁铲","italic":false,"color":"white"}'}},{}],HandDropChances:[0.001f,0.001f],ArmorItems:[{count:1,id:"chainmail_boots",components:{enchantments:{protection:2}}},{count:1,id:"chainmail_leggings",components:{enchantments:{protection:2}}},{count:1,id:"chainmail_chestplate",components:{enchantments:{projectile_protection:2}}},{count:1,id:"chainmail_helmet",components:{enchantments:{projectile_protection:2}}}],ArmorDropChances:[0.02f,0.01f,0.01f,0.02f],attributes:[{id:"generic.max_health",base:8.5d},{id:"generic.attack_damage",base:1.5d},{id:"generic.movement_speed",base:0.246d},{id:"generic.attack_knockback",base:0.156d}]}
