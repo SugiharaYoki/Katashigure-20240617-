@@ -15,7 +15,7 @@ execute if score SEAchg_spawn_timer_medical1 sea_4temp2 matches 1 positioned 900
 execute if score SEAchg_spawn_timer_medical1 sea_4temp2 matches 1 positioned 90082 145 139 run function skyblock:sea/m/pillager_npc
 
 
-execute if score SEAchg_spawn_timer_medical1 sea_4temp2 matches 1.. as @n[tag=SEApillager_npc1] at @s if entity @a[tag=SEAPT,tag=!SEAPF,distance=0..5] run scoreboard players set @s sea_4temp2 11
+execute if score SEAchg_spawn_timer_medical1 sea_4temp2 matches 1..9 as @n[tag=SEApillager_npc1] at @s if entity @a[tag=SEAPT,tag=!SEAPF,distance=0..5] run scoreboard players set SEAchg_spawn_timer_medical1 sea_4temp2 11
 
 
 execute if score SEAchg_spawn_timer_medical1 sea_4temp2 matches 5..9 run scoreboard players set SEAchg_spawn_timer_medical1 sea_4temp2 5
