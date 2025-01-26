@@ -45,6 +45,10 @@ setblock 90130 122 46 minecraft:potted_azure_bluet
 
 #不能回到第四章
 fill 90182 60 80 90182 57 81 iron_block
+fill 90217 46 125 90217 44 125 minecraft:cyan_stained_glass_pane
+fill 90190 47 129 90190 44 129 minecraft:mangrove_root
+fill 90190 47 128 90191 47 128 minecraft:mangrove_root
+fill 90189 48 128 90189 48 129 mangrove_root
 
 #主平台地形变化
 execute positioned 90097 144 115 run kill @n[tag=sea_drone,distance=0..3]
