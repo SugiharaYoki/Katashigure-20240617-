@@ -1,31 +1,3 @@
-clear @s[gamemode=adventure] quartz_pillar
-clear @s[gamemode=adventure] quartz_block
-clear @s[gamemode=adventure] quartz_stairs
-clear @s[gamemode=adventure] quartz_bricks
-clear @s[gamemode=adventure] quartz_slab
-clear @s[gamemode=adventure] smooth_quartz
-clear @s[gamemode=adventure] birch_button
-clear @s[gamemode=adventure] stone_button
-clear @s[gamemode=adventure] polished_blackstone_button
-clear @s[gamemode=adventure] item_frame
-clear @s[gamemode=adventure] lever
-clear @s[gamemode=adventure] stone_bricks
-clear @s[gamemode=adventure] stone_brick_slab
-clear @s[gamemode=adventure] stone_brick_stairs
-clear @s[gamemode=adventure] smooth_stone
-
-#故事模式
-effect give @s[tag=AZR_storymode] resistance infinite 1
-effect give @s[tag=AZR_storymode] strength infinite 1
-execute if items entity @s[tag=AZR_storymode] weapon.mainhand *[minecraft:max_damage] run item modify entity @s weapon.mainhand {function:"set_components",components:{unbreakable:{}}}
-execute if items entity @s[tag=AZR_storymode] weapon.offhand *[minecraft:max_damage] run item modify entity @s weapon.offhand {function:"set_components",components:{unbreakable:{}}}
-execute if items entity @s[tag=AZR_storymode] armor.head *[minecraft:max_damage] run item modify entity @s armor.head {function:"set_components",components:{unbreakable:{}}}
-execute if items entity @s[tag=AZR_storymode] armor.chest *[minecraft:max_damage] run item modify entity @s armor.chest {function:"set_components",components:{unbreakable:{}}}
-execute if items entity @s[tag=AZR_storymode] armor.legs *[minecraft:max_damage] run item modify entity @s armor.legs {function:"set_components",components:{unbreakable:{}}}
-execute if items entity @s[tag=AZR_storymode] armor.feet *[minecraft:max_damage] run item modify entity @s armor.feet {function:"set_components",components:{unbreakable:{}}}
-
-execute unless entity @s[x=-79931,y=100,z=0,distance=..10000] run tp @s @p[tag=azrPlayer,x=-79931,y=100,z=0,distance=..10000]
-
 #游戏运行时
 execute as @s[scores={Azr_forceDeath=1..}] at @s run function skyblock:azr/end_game/player_dead
 execute as @s[scores={Azr_isDead=1..}] at @s run function skyblock:azr/end_game/player_dead
@@ -33,17 +5,6 @@ execute as @s[scores={Azr_isDead=1..}] at @s run function skyblock:azr/end_game/
 #update spawnpoint
 execute as @s[tag=azrUpdateSpawnPoint] at @s unless block ~ ~-1 ~ air unless block ~ ~-1 ~ lava unless block ~ ~ ~ lava run spawnpoint @s ~ ~ ~
 execute as @s[tag=azrUpdateSpawnPoint] at @s unless block ~ ~-1 ~ air unless block ~ ~-1 ~ lava unless block ~ ~ ~ lava run tag @s remove azrUpdateSpawnPoint
-
-#打印剧情
-execute if items entity @s container.* skull_banner_pattern run tellraw @a [{"selector":"@s"},{"text":"解锁了剧情"}]
-execute if data entity @s Inventory[{id:"minecraft:skull_banner_pattern"}].components."minecraft:custom_name" run tellraw @a [{"nbt":"Inventory[{id:\"minecraft:skull_banner_pattern\"}].components.\"minecraft:custom_name\"","entity":"@s","interpret":true}]
-execute if data entity @s Inventory[{id:"minecraft:skull_banner_pattern"}].components."minecraft:lore"[0] run tellraw @a [{"nbt":"Inventory[{id:\"minecraft:skull_banner_pattern\"}].components.\"minecraft:lore\"[0]","entity":"@s","interpret":true}]
-execute if data entity @s Inventory[{id:"minecraft:skull_banner_pattern"}].components."minecraft:lore"[1] run tellraw @a [{"nbt":"Inventory[{id:\"minecraft:skull_banner_pattern\"}].components.\"minecraft:lore\"[1]","entity":"@s","interpret":true}]
-execute if data entity @s Inventory[{id:"minecraft:skull_banner_pattern"}].components."minecraft:lore"[2] run tellraw @a [{"nbt":"Inventory[{id:\"minecraft:skull_banner_pattern\"}].components.\"minecraft:lore\"[2]","entity":"@s","interpret":true}]
-execute if data entity @s Inventory[{id:"minecraft:skull_banner_pattern"}].components."minecraft:lore"[3] run tellraw @a [{"nbt":"Inventory[{id:\"minecraft:skull_banner_pattern\"}].components.\"minecraft:lore\"[3]","entity":"@s","interpret":true}]
-execute if data entity @s Inventory[{id:"minecraft:skull_banner_pattern"}].components."minecraft:lore"[4] run tellraw @a [{"nbt":"Inventory[{id:\"minecraft:skull_banner_pattern\"}].components.\"minecraft:lore\"[4]","entity":"@s","interpret":true}]
-execute if data entity @s Inventory[{id:"minecraft:skull_banner_pattern"}].components."minecraft:lore"[5] run tellraw @a [{"nbt":"Inventory[{id:\"minecraft:skull_banner_pattern\"}].components.\"minecraft:lore\"[5]","entity":"@s","interpret":true}]
-execute if items entity @s container.* skull_banner_pattern run clear @s minecraft:skull_banner_pattern
 
 #商店系统
 execute as @s[tag=hasLifeVitae] run function skyblock:azr/shop/core
@@ -60,16 +21,6 @@ tag @s[tag=removeSpark] remove removeSpark
 execute at @s[tag=hasSkills] run function skyblock:azr/system_sub/chain_kill
 #残城箭影
 execute at @s[tag=hasSkills,tag=azr_skills_arrow] run function skyblock:azr/system_sub/arrow
-
-#DEBUG-错误信息
-execute as @a if items entity @s weapon.mainhand *[custom_data~{Error:1b}] run tellraw @a [{"text":"\n=============\n"},\
-{"text":"游戏发生错误，请将此信息截图并发送给管理员以协助解决此错误\n"},\
-{"text":"\nstage"},{"score":{"name":"stage","objective":"Azr_system"}},\
-{"text":"\nstageSeconds"},{"score":{"name":"stageSeconds","objective":"Azr_system"}},\
-{"text":"\nstopSeconds"},{"score":{"name":"stopSeconds","objective":"Azr_system"}},\
-{"text":"\nplayerCount"},{"score":{"name":"playerCount","objective":"Azr_system"}},\
-{"text":"\nmobCount"},{"score":{"name":"mobCount","objective":"Azr_system"}},\
-{"text":"\n=============\n"}]
 
 #结束游戏
 #游戏未开始或对局不匹配时强制杀死玩家

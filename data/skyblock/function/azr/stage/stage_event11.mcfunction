@@ -684,7 +684,7 @@ execute if score stageSeconds Azr_system matches 3051..3053 run scoreboard playe
 #execute if score stageSeconds Azr_system matches 3104 if entity @e[tag=sc,limit=1,tag=AZS_JumpToCh4,scores={playerCount=6..}] positioned -79844 48 -127 run function skyblock:azr/ingame_azrielsmidgarden_startgame_ch4_chest6_7
 #execute if score stageSeconds Azr_system matches 3104 as @e[tag=sc,limit=1] at @s run tag @s remove AZS_JumpToCh4
 
-execute positioned -79753 59 -210 unless entity @a[tag=azrPlayer,distance=5..] run scoreboard players set stageSeconds Azr_system 4142
+execute if score stageSeconds Azr_system matches 3051..3053 positioned -79753 59 -210 unless entity @a[tag=azrPlayer,distance=5..] run scoreboard players set stageSeconds Azr_system 4142
 
 execute if score stageSeconds Azr_system matches 4142 run scoreboard players set @a[tag=azrPlayer] Azr_wave 36
 execute if score stageSeconds Azr_system matches 4142 run title @a[tag=azrPlayer] actionbar {"text":"Chapter Clear","color":"gold"}

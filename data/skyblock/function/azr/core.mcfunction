@@ -1,3 +1,4 @@
+execute as @a[tag=azrPlayer] run function skyblock:azr/player_slow
 #该函数是花园的时序函数，每秒运行一次
 execute as @a[tag=azrPlayer,tag=DebugMode] run scoreboard objectives setdisplay sidebar Azr_system
 #统计信息，怪物统计limit=70是因为停秒统计最多出现65，这样写是为了优化选择器
