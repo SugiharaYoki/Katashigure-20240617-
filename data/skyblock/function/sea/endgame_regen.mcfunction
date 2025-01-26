@@ -158,6 +158,17 @@ execute as @a at @s run scoreboard players operation @s sea_speedrun_ch5_score -
 execute as @a at @s run scoreboard players operation @s sea_speedrun_ch6_score -= @s sea_speedrun_ch6
 execute as @a at @s run scoreboard players operation @s sea_speedrun_ch7_score -= @s sea_speedrun_ch7
 
+tag @a remove sea_ch3_badend
+
+
+
+
+
+
+
+
+
+
 forceload remove 90000 0 90200 200
 #setblock 90060 104 144 stone_button[facing=south,face=floor]
 summon minecraft:armor_stand 90074 93.5 139 {CustomName:'{"text": "『厄珀娅的悲歌』","color": "blue","bold": true}',DisabledSlots:65793,CustomNameVisible:1b,Invisible:1b,Marker:1b,NoGravity:1b}

@@ -37,6 +37,7 @@ setblock 90136 154 114 minecraft:spore_blossom
 setblock 90134 157 124 minecraft:spore_blossom
 setblock 90135 146 120 minecraft:spore_blossom
 
+fill 90105 104 52 90106 101 52 minecraft:air
 
 #工程区
 setblock 90119 122 52 chest[facing=north]
