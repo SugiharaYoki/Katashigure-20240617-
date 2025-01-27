@@ -408,7 +408,7 @@ $execute as @s[scores={Azr_Shop_rng$(rng)=35,Azr_Shop=$(trigger)}] \
     if items entity @s container.* flint[count={min:2}] \
     run function skyblock:azr/shop/purchase/categorie2/\
     rng35
-    #35 @s  刺剑  （迅风）   1 刺剑·传统 5 粘液球 2 燧石 
+    #35 @s  刺剑  （逆雷）   1 刺剑·传统 5 粘液球 2 燧石 
 
 $execute as @s[scores={Azr_Shop_rng$(rng)=36,Azr_Shop=$(trigger)}] \
     if items entity @s container.* iron_sword[count={min:1},custom_data~{rapier_normal:1b}] \

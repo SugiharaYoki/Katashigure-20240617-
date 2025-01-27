@@ -170,7 +170,7 @@
     weapon_black_iron_sword 铁剑·黑钢 100008
     rapier_normal 刺剑·传统 100009
     rapier_rain 刺剑·疾雨 100010
-    rapier_wind 刺剑·迅风 100011
+    rapier_wind 刺剑·逆雷 100011
 
     石
     stone_sword_normal 石剑 100001
