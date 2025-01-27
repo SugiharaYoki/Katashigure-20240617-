@@ -10,3 +10,5 @@ execute unless entity @s[tag=AZR_fakeDeath] unless score @s Azr_forceDeath match
 #死亡后退出游戏
 execute if score @s Azr_forceDeath matches 1 run function skyblock:azr/end_game/quit_game
 tag @s remove AZR_fakeDeath
+#当局一次性提示
+tag @s remove azr_system_sub_weapons_shovel_notice
