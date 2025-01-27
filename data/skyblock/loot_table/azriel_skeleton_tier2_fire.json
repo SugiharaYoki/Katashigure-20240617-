@@ -77,7 +77,7 @@
                   {
                     "type": "generic.attack_damage",
                     "id": "azr:bone_shovel_pro.attack_damage",
-                    "amount": 12,
+                    "amount": 7,
                     "operation": "add_value",
                     "slot": "mainhand"
                   },
@@ -114,7 +114,7 @@
                   {
                     "type": "generic.attack_damage",
                     "id": "azr:bone_shovel_flame.attack_damage",
-                    "amount": 11.5,
+                    "amount": 6,
                     "operation": "add_value",
                     "slot": "mainhand"
                   },

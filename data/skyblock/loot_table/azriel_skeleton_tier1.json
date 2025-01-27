@@ -55,7 +55,7 @@
                   {
                     "type": "generic.attack_damage",
                     "id": "azr:bone_shovel.attack_damage",
-                    "amount": 12,
+                    "amount": 6,
                     "operation": "add_value",
                     "slot": "mainhand"
                   },
