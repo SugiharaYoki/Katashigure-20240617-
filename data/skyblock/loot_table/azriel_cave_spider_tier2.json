@@ -16,7 +16,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:spider_eye",
+          "name": "minecraft:string",
           "weight": 10
         },
         {

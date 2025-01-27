@@ -224,11 +224,11 @@ $execute as @s[scores={Azr_Shop_rng$(rng)=18,Azr_Shop=$(trigger)}] \
 
 $execute as @s[scores={Azr_Shop_rng$(rng)=19,Azr_Shop=$(trigger)}] \
     if items entity @s container.* iron_ingot[count={min:1},custom_data~{coal_iron:1b}] \
-    if items entity @s container.* spider_eye[count={min:3}] \
+    if items entity @s container.* string[count={min:8}] \
     run function skyblock:azr/shop/purchase/categorie2/\
     rng19
-    #19 @s[tag=!Azr_SExUp05]  刺剑  （传统）   3 蜘蛛眼 1 碳钢 
-    #19 @s[tag=Azr_SExUp05]  刺剑  （传统）   3 蜘蛛眼 1 碳钢 
+    #19 @s[tag=!Azr_SExUp05]  刺剑  （传统）   8 丝线 1 碳钢 
+    #19 @s[tag=Azr_SExUp05]  刺剑  （传统）   8 丝线 1 碳钢 
 
 $execute as @s[scores={Azr_Shop_rng$(rng)=20,Azr_Shop=$(trigger)}] \
     if score @s Azr_emerald matches 12.. \

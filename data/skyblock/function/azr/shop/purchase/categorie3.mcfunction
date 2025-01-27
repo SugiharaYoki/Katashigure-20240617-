@@ -372,35 +372,35 @@ $execute as @s[scores={Azr_Shop_rng$(rng)=34,Azr_Shop=$(trigger)}] \
 $execute as @s[scores={Azr_Shop_rng$(rng)=35,Azr_Shop=$(trigger)}] \
     if items entity @s container.* iron_helmet[count~{min:1},custom_data~{iron_helmet_normal:1b}] \
     if score @s Azr_emerald matches 9.. \
-    if items entity @s container.* spider_eye[count~{min:1}] \
+    if items entity @s container.* string[count~{min:4}] \
     if items entity @s container.* bone[count~{min:2},custom_data~{frozen_bone:1b}] \
     run function skyblock:azr/shop/purchase/categorie3/\
     rng35
-    # 35 铁盔（暗窥） 1 铁盔 9 绿宝石 1 蜘蛛眼 2 冻骨
+    # 35 铁盔（暗窥） 1 铁盔 9 绿宝石 4 丝线 2 冻骨
 
 $execute as @s[scores={Azr_Shop_rng$(rng)=36,Azr_Shop=$(trigger)}] \
     if items entity @s container.* iron_chestplate[count~{min:1},custom_data~{iron_chestplate_normal:1b}] \
     if score @s Azr_emerald matches 12.. \
-    if items entity @s container.* spider_eye[count~{min:3}] \
+    if items entity @s container.* string[count~{min:8}] \
     if items entity @s container.* bone[count~{min:1},custom_data~{frozen_bone:1b}] \
     run function skyblock:azr/shop/purchase/categorie3/\
     rng36
-    # 36 铁胸甲（暗窥） 1 铁胸甲 12 绿宝石 3 蜘蛛眼 1 冻骨
+    # 36 铁胸甲（暗窥） 1 铁胸甲 12 绿宝石 8 丝线 1 冻骨
     
 $execute as @s[scores={Azr_Shop_rng$(rng)=37,Azr_Shop=$(trigger)}] \
     if items entity @s container.* iron_leggings[count~{min:1},custom_data~{iron_leggings_normal:1b}] \
     if score @s Azr_emerald matches 12.. \
-    if items entity @s container.* spider_eye[count~{min:1}] \
+    if items entity @s container.* string[count~{min:4}] \
     if items entity @s container.* bone[count~{min:2},custom_data~{frozen_bone:1b}] \
     run function skyblock:azr/shop/purchase/categorie3/\
     rng37
-    # 37 铁护腿（暗窥） 1 铁护腿 12 绿宝石 1 蜘蛛眼 2 冻骨
+    # 37 铁护腿（暗窥） 1 铁护腿 12 绿宝石 4 丝线 2 冻骨
 
 $execute as @s[scores={Azr_Shop_rng$(rng)=38,Azr_Shop=$(trigger)}] \
     if items entity @s container.* iron_boots[count~{min:1},custom_data~{iron_boots_normal:1b}] \
     if score @s Azr_emerald matches 12.. \
-    if items entity @s container.* spider_eye[count~{min:3}] \
+    if items entity @s container.* string[count~{min:8}] \
     if items entity @s container.* bone[count~{min:1},custom_data~{frozen_bone:1b}] \
     run function skyblock:azr/shop/purchase/categorie3/\
     rng38
-    # 38 铁靴（暗窥） 1 铁靴 9 绿宝石 3 蜘蛛眼 1 冻骨
+    # 38 铁靴（暗窥） 1 铁靴 9 绿宝石 8 丝线 1 冻骨
