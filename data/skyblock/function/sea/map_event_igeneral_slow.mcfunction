@@ -343,7 +343,7 @@ execute if block 90145 123 100 crimson_button[powered=true] run kill @n[tag=sea_
 execute if block 90145 123 100 crimson_button[powered=true] run setblock 90145 123 100 warped_button[facing=south,face=wall]
 
 execute if block 90117 123 117 lever[powered=true] run kill @n[tag=sea_laser_close_6]
-execute if block 90117 123 117 lever[powered=false] unless entity @n[tag=sea_laser_close_6] run summon block_display 90118.5 123.5 116.00 {transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[2.2f,0.03f,0.03f],translation:[0f,0f,0f]},block_state:{Name:redstone_block},Rotation:[90f,0f],Tags:["sea_blockdisplay","sea_laser_close_6"]}
+execute if block 90117 123 117 lever[powered=false] unless entity @n[tag=sea_laser_close_6] run summon block_display 90118.5 123.5 116.00 {transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[2.2f,0.03f,0.03f],translation:[0f,0f,0f]},block_state:{Name:redstone_block},brightness:{block:15,sky:15},Rotation:[90f,0f],Tags:["sea_blockdisplay","sea_laser_close_6"]}
 
 
 execute if block 90074 123 138 crimson_button[powered=true] run setblock 90071 125 140 minecraft:redstone_lamp[lit=true]
