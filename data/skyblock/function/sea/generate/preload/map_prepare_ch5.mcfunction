@@ -152,6 +152,20 @@ setblock 90136 148 111 minecraft:mangrove_roots
 setblock 90131 150 146 mangrove_roots
 fill 90130 150 146 90130 149 146 mangrove_roots
 
+fill 90119 144 124 90116 144 124 minecraft:redstone_lamp[lit=false] replace minecraft:redstone_lamp[lit=true]
+setblock 90086 144 95 minecraft:redstone_lamp[lit=false]
+fill 90104 139 111 90107 139 111 minecraft:redstone_lamp[lit=false] replace minecraft:redstone_lamp[lit=true]
+setblock 90104 138 125 air
+setblock 90088 146 112 air
+setblock 90049 155 167 fire
+setblock 90053 153 167 fire
+setblock 90045 156 172 fire
+
+
+
+
+
+
 execute positioned 90129 137 109 run function skyblock:sea/m/mine
 execute positioned 90128 137 113 run function skyblock:sea/m/mine
 

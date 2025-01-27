@@ -645,8 +645,14 @@ fill 90110 144 95 90094 140 90 minecraft:redstone_lamp[lit=true] replace minecra
 fill 90091 149 106 90088 149 106 minecraft:waxed_copper_bulb[lit=true] replace minecraft:waxed_copper_bulb[lit=false]
 fill 90067 132 91 90079 132 91 minecraft:lantern replace minecraft:structure_void
 fill 90103 150 114 90103 146 117 minecraft:waxed_copper_bulb[lit=true] replace minecraft:waxed_copper_bulb[lit=false]
-
+fill 90119 144 124 90116 144 124 minecraft:redstone_lamp[lit=true] replace minecraft:redstone_lamp[lit=false]
+setblock 90086 144 95 minecraft:redstone_lamp[lit=true]
+fill 90104 139 111 90107 139 111 minecraft:redstone_lamp[lit=true] replace minecraft:redstone_lamp[lit=false]
 fill 90105 104 52 90106 101 52 minecraft:waxed_copper_grate
+setblock 90088 146 112 lantern[hanging=true]
+setblock 90049 155 167 air
+setblock 90053 153 167 air
+setblock 90045 156 172 air
 
 #第四章封锁解除
 fill 90217 46 125 90217 44 125 air
