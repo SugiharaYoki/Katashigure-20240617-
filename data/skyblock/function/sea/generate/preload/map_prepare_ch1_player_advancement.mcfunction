@@ -1,6 +1,7 @@
 advancement grant @s only skyblock:thelxiepeia
 advancement grant @s only skyblock:sea/doc/documentary1
 advancement grant @s only skyblock:sea/doc/1
+execute store result storage sea:doc eid int 1.0 run scoreboard players get @s SEAPT_member_eternal
 function skyblock:sea/generate/preload/map_prepare_ch1_player_macro_doc with storage sea:doc
 
 
