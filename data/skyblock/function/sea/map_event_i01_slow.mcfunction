@@ -113,7 +113,7 @@ execute if score sc sea_speedrun_ch1 matches 1921.. as @n[tag=sc,scores={sea_4te
 execute if score sc sea_speedrun_ch1 matches ..1920 as @n[tag=sc,scores={sea_4temp2=3001..3950}] if entity @a[tag=SEAPT,x=90085,y=122,z=104,distance=0..4,tag=!SEAPF] run scoreboard players set @n[tag=sc] sea_4temp2 6000
 
 
-execute as @n[tag=sc,scores={sea_4temp2=4100..5000}] unless entity @n[tag=SEAboss1] run scoreboard players set @n[tag=sc] sea_4temp2 5001
+execute as @n[tag=sc,scores={sea_4temp2=4020..5000}] unless entity @n[tag=SEAboss1] run scoreboard players set @n[tag=sc] sea_4temp2 5001
 execute as @n[tag=sc,scores={sea_4temp2=5001}] run kill @e[tag=SEAboss1mob]
 execute as @n[tag=sc,scores={sea_4temp2=5001}] run bossbar remove 9066601
 execute as @n[tag=sc,scores={sea_4temp2=5001}] positioned 90074.0 129 109.0 run stopsound @a[distance=0..500] music
