@@ -683,6 +683,7 @@ setblock 90136 100 136 lever[facing=east]
 
 
 #开头之船
+forceload add 90050 -180 90100 -130
 execute positioned 90056 95 -177 positioned ~ ~-120 ~ run clone ~ ~ ~ ~8 ~18 ~31 ~ ~120 ~
 
 setblock 90061 103 -168 chest[facing=west]
