@@ -21,12 +21,12 @@ execute if score SEAchg_spawn_timer_medical1 sea_4temp2 matches 1..9 as @n[tag=S
 execute if score SEAchg_spawn_timer_medical1 sea_4temp2 matches 5..9 run scoreboard players set SEAchg_spawn_timer_medical1 sea_4temp2 5
 
 execute if score SEAchg_spawn_timer_medical1 sea_4temp2 matches 12 run tellraw @a[tag=SEAPT] {"text": "邪教徒：“别……别打我！”","color": "dark_purple"}
-execute if score SEAchg_spawn_timer_medical1 sea_4temp2 matches 28 run tellraw @a[tag=SEAPT] {"text": "邪教徒：“我只是来这里找药的，我没带武器！”","color": "dark_purple"}
-execute if score SEAchg_spawn_timer_medical1 sea_4temp2 matches 52 run tellraw @a[tag=SEAPT] {"text": "邪教徒：“你、你看……我们也没什么纠葛，就、算了吧？”","color": "dark_purple"}
+execute if score SEAchg_spawn_timer_medical1 sea_4temp2 matches 28 if entity @n[tag=SEApillager_npc1] run tellraw @a[tag=SEAPT] {"text": "邪教徒：“我只是来这里找药的，我没带武器！”","color": "dark_purple"}
+execute if score SEAchg_spawn_timer_medical1 sea_4temp2 matches 52 if entity @n[tag=SEApillager_npc1] run tellraw @a[tag=SEAPT] {"text": "邪教徒：“你、你看……我们也没什么纠葛，就、算了吧？”","color": "dark_purple"}
 
-execute if score SEAchg_spawn_timer_medical1 sea_4temp2 matches 14 run fill 90111 143 140 90111 143 142 air
-execute if score SEAchg_spawn_timer_medical1 sea_4temp2 matches 16 run fill 90111 144 140 90111 144 142 air
-execute if score SEAchg_spawn_timer_medical1 sea_4temp2 matches 18 run fill 90111 145 140 90111 145 142 air
+execute if score SEAchg_spawn_timer_medical1 sea_4temp2 matches 14 if entity @n[tag=SEApillager_npc1] run fill 90111 143 140 90111 143 142 air
+execute if score SEAchg_spawn_timer_medical1 sea_4temp2 matches 16 if entity @n[tag=SEApillager_npc1] run fill 90111 144 140 90111 144 142 air
+execute if score SEAchg_spawn_timer_medical1 sea_4temp2 matches 18 if entity @n[tag=SEApillager_npc1] run fill 90111 145 140 90111 145 142 air
 
 execute as @n[tag=SEApillager_npc1] at @s if entity @a[tag=SEAPT,tag=!SEAPF,distance=0..5] run scoreboard players add @s rng1 1
 
