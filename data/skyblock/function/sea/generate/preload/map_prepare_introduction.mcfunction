@@ -1,6 +1,8 @@
 
 execute as @e[x=90100,y=100,z=100,distance=0..500,type=!player] at @s run tp ~ ~-500 ~
 
+
+
 scoreboard players set @a SEAPT_member 0
 scoreboard players set SEAmusic rng1 0
 scoreboard objectives add sea_dead minecraft.custom:minecraft.deaths
@@ -108,11 +110,7 @@ setblock 90062 103 135 air
 execute as @a[tag=SEAPT] at @s run function skyblock:sea/generate/preload/map_prepare_ch1_player
 
 
-setblock 90061 103 132 chest[facing=west]
 
-item replace block 90061 103 132 container.11 with cookie 3
-item replace block 90061 103 132 container.13 with bread 3
-item replace block 90061 103 132 container.15 with cookie 3
 gamemode adventure @a[tag=SEAPT]
 setblock 90077 103 146 barrel[facing=up]
 item replace block 90077 103 146 container.11 with potion 1
@@ -343,7 +341,8 @@ setblock 90070 129 116 decorated_pot{sherds:["prize_pottery_sherd","prize_potter
 
 setblock 90075 103 141 minecraft:air
 
-tp @a[distance=0..300] 90060 103 141 facing 90061 103 141
+#tp @a[distance=0..300] 90060 103 141 facing 90061 103 141
+tp @a[distance=0..300] 90060 103 -159 facing 90060 103 -153
 
 fill 90070 123 126 90070 122 126 minecraft:slime_block
 setblock 90070 122 131 chest[facing=north]
@@ -684,7 +683,11 @@ setblock 90136 100 136 lever[facing=east]
 #开头之船
 execute positioned 90056 95 -177 positioned ~ ~-120 ~ run clone ~ ~ ~ ~8 ~18 ~31 ~ ~120 ~
 
+setblock 90061 103 -168 chest[facing=west]
+execute if entity @n[tag=sc,scores={sea_player=2..}] run item replace block 90061 103 -168 container.11 with cooked_potato 3
+item replace block 90061 103 -168 container.13 with cooked_potato 3
+execute if entity @n[tag=sc,scores={sea_player=4..}] run item replace block 90061 103 -168 container.15 with cooked_potato 3
 
 execute positioned 90056 95 -177 positioned ~ ~ ~300 run fill ~ ~ ~ ~8 ~18 ~31 air
 execute positioned 90056 95 -177 positioned ~ ~ ~300 run fill ~ ~ ~ ~8 ~3 ~31 water
-
+setblock 90062 106 -166 minecraft:iron_trapdoor[half=bottom]
