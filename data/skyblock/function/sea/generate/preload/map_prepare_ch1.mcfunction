@@ -9,3 +9,5 @@ execute positioned 90056 95 -177 run fill ~ ~ ~ ~8 ~18 ~31 air
 execute positioned 90056 95 -177 run fill ~ ~ ~ ~8 ~3 ~31 water
 
 
+weather rain 1000000s
+time set 12000t

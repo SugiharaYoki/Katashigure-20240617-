@@ -90,8 +90,8 @@ scoreboard players set sea_ch1_wasting_time rng3 0
 
 setblock -25 23 32 soul_lantern
 fill 90065 104 139 90065 104 141 air
-weather thunder 1000000s
-time set 12000t
+weather clear 1000000s
+time set 11000t
 gamerule doDaylightCycle false
 gamerule keepInventory true
 

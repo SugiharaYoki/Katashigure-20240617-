@@ -1,5 +1,7 @@
 function skyblock:protector/entity_count_start
 
+weather thunder 1000000s
+
 scoreboard players set sea_ch2_dwight_conversation rng1 0
 scoreboard players set sea_ch2_dwight_conversation rng2 0
 scoreboard players set sea_ch2_dwight_conversation rng3 0
