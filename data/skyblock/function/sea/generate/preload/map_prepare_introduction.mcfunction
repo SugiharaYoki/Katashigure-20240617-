@@ -81,6 +81,7 @@ scoreboard players set sc sea_speedrun_ch6 0
 scoreboard players set sc sea_speedrun_ch7 0
 scoreboard players set sc sea_count_played 0
 scoreboard players set sc sea_count_dead 0
+scoreboard players set sea_chapter_introduction sea_4temp1 0
 
 scoreboard players operation @s rng1 = @s SEA_w_upg_pts
 
