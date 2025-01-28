@@ -1,7 +1,7 @@
 
 execute as @e[x=90100,y=100,z=100,distance=0..500,type=!player] at @s run tp ~ ~-500 ~
 
-function skyblock:sea/generate/preload/map_prepare_introduction
+
 
 execute positioned 90056 95 -177 positioned ~ ~ ~ run clone ~ ~ ~ ~8 ~18 ~31 ~ ~ ~300
 

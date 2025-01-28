@@ -15,9 +15,9 @@ execute if score sea_chapter_introduction sea_4temp1 matches 180 unless entity @
 execute if score sea_chapter_introduction sea_4temp1 matches 200 run weather rain 100000s
 execute if score sea_chapter_introduction sea_4temp1 matches 215 if entity @a[scores={SEAPT_member=2}] run tellraw @a[distance=0..250] [{"selector":"@r[tag=SEAPT]","color":"white"},{"text":"：……下雨了。","color":"white"}]
 execute if score sea_chapter_introduction sea_4temp1 matches 235 if entity @a[scores={SEAPT_member=2}] run tellraw @a[distance=0..250] [{"selector":"@r[tag=SEAPT]","color":"white"},{"text":"：总之也快到了，做好准备吧。","color":"white"}]
-execute if score sea_chapter_introduction sea_4temp1 matches 270 run effect give @a[distance=0..400,tag=SEAPT] darkness 5 0 true
+execute if score sea_chapter_introduction sea_4temp1 matches 278 run effect give @a[distance=0..400,tag=SEAPT] darkness 6 0 true
 execute if score sea_chapter_introduction sea_4temp1 matches 290 run function skyblock:sea/generate/preload/map_prepare_ch1
-execute if score sea_chapter_introduction sea_4temp1 matches 290 as @a[distance=0..400] at @s rotated as @s run tp ~ ~ ~300
+execute if score sea_chapter_introduction sea_4temp1 matches 290 as @a[distance=0..400] at @s rotated as @s run tp @s ~ ~ ~300
 
 
 
