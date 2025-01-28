@@ -58,5 +58,6 @@ execute if score sea_ch2_dwight_conversation rng5 matches 47 positioned 90128 12
 execute if score sea_ch2_dwight_conversation rng5 matches 47 positioned 90128 129 106 run tellraw @a[distance=0..150] [{"text":"神秘的骸骨：","color":"yellow","bold": true},{"text":"\n“从来都不是圣水晶导致的。\n我的灵魂……已经、坚持不了太久了……”","color":"white","bold": false}]
 execute if score sea_ch2_dwight_conversation rng5 matches 51 positioned 90128 129 106 as @n[tag=SEAboss2npc] run effect give @s invisibility infinite 0 true
 execute if score sea_ch2_dwight_conversation rng5 matches 51 positioned 90128 129 106 as @n[tag=SEAboss2npc] run tp @s ~ ~-500 ~
+execute if score sea_ch2_dwight_conversation rng5 matches 51 run weather thunder 1000000s
 
 
