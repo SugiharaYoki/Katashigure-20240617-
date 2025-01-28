@@ -21,6 +21,7 @@ execute if score sea_chapter_introduction sea_4temp1 matches 290 as @a[distance=
 
 execute if score sea_chapter_introduction sea_4temp1 matches 20 unless entity @a[scores={SEAPT_member=2}] run tellraw @a[distance=0..250] {"text": "可以看到钻井平台了。","color": "gray"}
 execute if score sea_chapter_introduction sea_4temp1 matches 45 unless entity @a[scores={SEAPT_member=2}] run tellraw @a[distance=0..250] {"text": "忒尔克西啊……上一次来这里还是两个月前。","color": "gray"}
+execute if score sea_chapter_introduction sea_4temp1 matches 45 unless entity @a[scores={SEAPT_member=2}] run scoreboard players add sea_chapter_introduction sea_4temp1 35
 execute if score sea_chapter_introduction sea_4temp1 matches 100 unless entity @a[scores={SEAPT_member=2}] run tellraw @a[distance=0..250] {"text": "忒尔克西有搭配极为先进的通讯阵列。","color": "gray"}
 execute if score sea_chapter_introduction sea_4temp1 matches 130 unless entity @a[scores={SEAPT_member=2}] run tellraw @a[distance=0..250] {"text": "这样的钻井平台，居然也会失联24小时……","color": "gray"}
 
