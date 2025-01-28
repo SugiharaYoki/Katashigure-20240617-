@@ -19,8 +19,14 @@ execute if score sea_chapter_introduction sea_4temp1 matches 278 run effect give
 execute if score sea_chapter_introduction sea_4temp1 matches 290 run function skyblock:sea/generate/preload/map_prepare_ch1
 execute if score sea_chapter_introduction sea_4temp1 matches 290 as @a[distance=0..400] at @s rotated as @s run tp @s ~ ~ ~300
 
+execute if score sea_chapter_introduction sea_4temp1 matches 20 unless entity @a[scores={SEAPT_member=2}] run tellraw @a[distance=0..250] {"text": "可以看到钻井平台了。","color": "gray"}
+execute if score sea_chapter_introduction sea_4temp1 matches 45 unless entity @a[scores={SEAPT_member=2}] run tellraw @a[distance=0..250] {"text": "忒尔克西啊……上一次来这里还是两个月前。","color": "gray"}
+execute if score sea_chapter_introduction sea_4temp1 matches 100 unless entity @a[scores={SEAPT_member=2}] run tellraw @a[distance=0..250] {"text": "忒尔克西有搭配极为先进的通讯阵列。","color": "gray"}
+execute if score sea_chapter_introduction sea_4temp1 matches 130 unless entity @a[scores={SEAPT_member=2}] run tellraw @a[distance=0..250] {"text": "这样的钻井平台，居然也会失联24小时……","color": "gray"}
 
-
-
+execute if score sea_chapter_introduction sea_4temp1 matches 155 unless entity @a[scores={SEAPT_member=2}] run tellraw @a[distance=0..250] {"text": "说到底，他们居然真的只派了我一个维修工来呢。","color": "gray"}
+execute if score sea_chapter_introduction sea_4temp1 matches 185 unless entity @a[scores={SEAPT_member=2}] run tellraw @a[distance=0..250] {"text": "虽说我以前是海警队的，如果平台上真的出了什么事，我又能做什么呢。","color": "gray"}
+execute if score sea_chapter_introduction sea_4temp1 matches 215 unless entity @a[scores={SEAPT_member=2}] run tellraw @a[distance=0..250] {"text": "……下雨了啊。","color": "gray"}
+execute if score sea_chapter_introduction sea_4temp1 matches 235 unless entity @a[scores={SEAPT_member=2}] run tellraw @a[distance=0..250] {"text": "已经快到目的地了。但愿工作能快点结束吧。","color": "gray"}
 
 
