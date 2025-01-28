@@ -343,7 +343,8 @@ setblock 90070 129 116 decorated_pot{sherds:["prize_pottery_sherd","prize_potter
 setblock 90075 103 141 minecraft:air
 
 #tp @a[distance=0..300] 90060 103 141 facing 90061 103 141
-tp @a[distance=0..300] 90060 103 -159 facing 90060 103 -153
+spawnpoint @a[distance=0..500] 90060 103 -159
+tp @a[distance=0..500] 90060 103 -159 facing 90060 103 -153
 
 fill 90070 123 126 90070 122 126 minecraft:slime_block
 setblock 90070 122 131 chest[facing=north]
