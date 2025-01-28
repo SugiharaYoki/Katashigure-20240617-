@@ -1,4 +1,4 @@
-execute if entity @n[tag=SEA_choose_chapter_1,type=armor_stand] run function skyblock:sea/generate/preload/map_prepare_ch1
+execute if entity @n[tag=SEA_choose_chapter_1,type=armor_stand] run function skyblock:sea/generate/preload/map_prepare_introduction
 execute if entity @n[tag=SEA_choose_chapter_2,type=armor_stand] run function skyblock:sea/generate/stage_jump/to_ch2
 execute if entity @n[tag=SEA_choose_chapter_2,type=armor_stand] run function skyblock:sea/generate/stage_jump/to_ch2_exclusive
 execute if entity @n[tag=SEA_choose_chapter_2b,type=armor_stand] run function skyblock:sea/generate/stage_jump/to_ch2_boss
