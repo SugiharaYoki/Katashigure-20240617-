@@ -3,8 +3,12 @@ execute as @s[scores={sea_4temp2=216}] positioned 90120 123 123 run tellraw @a[d
 execute as @s[scores={sea_4temp2=216}] positioned 90120 123 123 as @p[tag=SEAPT] at @s if entity @n[tag=sc,scores={sea_player=2}] run tellraw @a[tag=SEAPT,distance=3..] [{"selector":"@s","color":"white"},{"text":"：我接通联络总站了！你快来我这里。","color":"white"}]
 execute as @s[scores={sea_4temp2=216}] positioned 90120 123 123 as @p[tag=SEAPT] at @s if entity @n[tag=sc,scores={sea_player=3..}] run tellraw @a[tag=SEAPT,distance=3..] [{"selector":"@s","color":"white"},{"text":"：我接通联络总站了！你们快来我这里。","color":"white"}]
 execute as @s[scores={sea_4temp2=216}] positioned 90120 123 123 run playsound minecraft:entity.endermite.ambient ambient @a ~ ~ ~ 0.8 0.1
-execute as @s[scores={sea_4temp2=242}] positioned 90120 123 123 run tellraw @a[distance=0..50] [{"text":"联络机台：","color":"dark_purple","bold": true},{"text":"\n“……我听不清你在说什么，如果你能听到我说话的话，千万不要来办公区域！\n这里已经彻底沦陷……等、等下……”","color":"white","bold": false}]
+execute as @s[scores={sea_4temp2=242}] positioned 90120 123 123 run tellraw @a[distance=0..50] [{"text":"联络机台：","color":"dark_purple","bold": true},{"text":"\n“……我听不清你在说什么，如果你能听到我说话的话，千万不要来办公区域！\n这里已经彻底沦陷……”","color":"white","bold": false}]
 execute as @s[scores={sea_4temp2=242}] positioned 90120 123 123 run playsound minecraft:entity.endermite.ambient ambient @a ~ ~ ~ 0.8 0.1
+
+execute as @s[scores={sea_4temp2=262}] positioned 90120 123 123 run tellraw @a[distance=0..50] [{"text":"联络机台：","color":"dark_purple","bold": true},{"text":"\n“等、等下……”","color":"white","bold": false}]
+execute as @s[scores={sea_4temp2=262}] positioned 90120 123 123 run playsound minecraft:entity.endermite.ambient ambient @a ~ ~ ~ 0.8 0.1
+
 execute as @s[scores={sea_4temp2=272}] positioned 90120 123 123 if entity @n[tag=sc,scores={sea_player=1}] run tellraw @a[distance=0..50] [{"text":"联络机台：","color":"dark_purple","bold": true},{"text":"\n“我从监控看到你附近的房间了！快从那里离开，立——\n”","color":"white","bold": false}]
 execute as @s[scores={sea_4temp2=272}] positioned 90120 123 123 if entity @n[tag=sc,scores={sea_player=2..}] run tellraw @a[distance=0..50] [{"text":"联络机台：","color":"dark_purple","bold": true},{"text":"\n“我从监控看到你们附近的房间了！快从那里离开，立——\n”","color":"white","bold": false}]
 execute as @s[scores={sea_4temp2=272}] positioned 90120 123 123 run playsound minecraft:entity.endermite.ambient ambient @a ~ ~ ~ 0.8 0.1
