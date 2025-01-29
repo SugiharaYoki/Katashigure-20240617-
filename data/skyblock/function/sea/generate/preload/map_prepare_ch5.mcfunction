@@ -47,9 +47,9 @@ setblock 90130 122 46 minecraft:potted_azure_bluet
 #不能回到第四章
 fill 90182 60 80 90182 57 81 iron_block
 fill 90217 46 125 90217 44 125 minecraft:cyan_stained_glass_pane
-fill 90190 47 129 90190 44 129 minecraft:mangrove_root
-fill 90190 47 128 90191 47 128 minecraft:mangrove_root
-fill 90189 48 128 90189 48 129 mangrove_root
+fill 90190 47 129 90190 44 129 minecraft:mangrove_roots
+fill 90190 47 128 90191 47 128 minecraft:mangrove_roots
+fill 90189 48 128 90189 48 129 mangrove_roots
 setblock 90185 50 137 minecraft:tinted_glass
 setblock 90180 50 137 minecraft:tinted_glass
 setblock 90185 50 130 minecraft:tinted_glass
