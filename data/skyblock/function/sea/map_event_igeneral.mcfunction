@@ -45,4 +45,4 @@ execute if block 90074 103 136 air as @n[tag=SEAch4_spawn_timer_boss4_fast] at @
 #function skyblock:protector/entity_count_end {function:"slyblock:sea/map_event_igeneral"}
 
 #拉斐尔之剑
-execute if entity @n[tag=sea_raphael_sword,type=marker] run function skyblock:sea/p/weapon/raphael_sword_timer
+execute if entity @n[tag=sea_raphael_sword,type=armor_stand] run function skyblock:sea/p/weapon/raphael_sword_timer
