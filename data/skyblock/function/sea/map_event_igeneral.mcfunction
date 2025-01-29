@@ -43,3 +43,6 @@ execute if entity @a[tag=SEAPT,x=90123,y=0,z=98,dx=7,dy=103,dz=7] run function s
 execute if block 90074 103 136 air as @n[tag=SEAch4_spawn_timer_boss4_fast] at @s unless entity @n[tag=SEAboss4_end] run function skyblock:sea/e/ch4/ev023_boss4_fast
 
 #function skyblock:protector/entity_count_end {function:"slyblock:sea/map_event_igeneral"}
+
+#拉斐尔之剑
+execute if entity @n[tag=sea_raphael_sword,type=marker] run function skyblock:sea/p/weapon/raphael_sword_timer
