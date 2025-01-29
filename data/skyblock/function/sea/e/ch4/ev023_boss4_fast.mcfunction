@@ -115,7 +115,8 @@ execute if block 90227 58 91 copper_block run data modify entity @n[tag=SEAboss4
 execute if block 90227 58 91 copper_block run data modify entity @n[tag=SEAboss4] Invulnerable set value 0b
 execute if block 90227 58 91 copper_block run setblock 90227 58 91 minecraft:waxed_copper_block
 
-execute as @n[tag=SEAboss4,scores={rng2=4},tag=!SEAboss4_phase2] run tellraw @a[tag=SEAPT] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“真不赖，可惜偷偷告诉你，你手上的装备，我也全都有。”","color":"white","bold": false}]
+execute as @n[tag=SEAboss4,scores={rng2=4},tag=!SEAboss4_phase2] as @a[tag=SEAPT] unless entity @s[tag=!e_w_02,tag=!e_w_03,tag=!e_w_04,tag=!e_w_05,tag=!e_w_06] run tellraw @s [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“真不赖，可惜偷偷告诉你，你手上的装备，我也全都有。”","color":"white","bold": false}]
+execute as @n[tag=SEAboss4,scores={rng2=4},tag=!SEAboss4_phase2] as @a[tag=SEAPT] if entity @s[tag=!e_w_02,tag=!e_w_03,tag=!e_w_04,tag=!e_w_05,tag=!e_w_06] run tellraw @s [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“真不赖，可惜你还太嫩了，甚至连一把趁手的武器都没有。”","color":"white","bold": false}]
 execute as @n[tag=SEAboss4,scores={rng2=4..},tag=!SEAboss4_phase2] run tag @s add SEAboss4_phase2
 
 execute as @n[tag=SEAboss4,scores={rng2=8},tag=!SEAboss4_phase3] run tellraw @a[tag=SEAPT] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“没想到能让我陷入苦战呢……我该拿出全部实力了。”","color":"white","bold": false}]
