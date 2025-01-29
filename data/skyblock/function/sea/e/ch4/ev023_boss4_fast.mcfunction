@@ -14,25 +14,7 @@ execute as @n[tag=SEAboss4,scores={rng9=0}] at @s if block ~ ~-1 ~ water run sco
 execute as @n[tag=SEAboss4,scores={rng9=3}] at @s if block ~ ~-1 ~ water run summon marker ~ ~ ~ {Tags:["SEAedwina_smoke"]}
 
 execute as @n[tag=SEAboss4,nbt=!{HurtTime:0s},scores={rng9=0,rng4=1},tag=!SEAboss4_attack] at @s run scoreboard players add @s rng9 1
-execute as @n[tag=SEAboss4,scores={rng9=1..}] at @s run scoreboard players add @s rng9 1
-execute as @n[tag=SEAboss4,scores={rng9=3,rng6=1..3}] at @s run summon marker ~ ~ ~ {Tags:["SEAedwina_smoke"]}
-execute as @n[tag=SEAboss4,scores={rng9=3,rng1=1,rng6=4..10}] at @s run function skyblock:sea/m/mine
-execute as @n[tag=SEAboss4,scores={rng9=9,rng3=1}] at @s if entity @n[tag=SEAedwina_smoke,distance=0..2.8] run tp @s @n[tag=SEAboss4_tp,distance=8..]
-execute as @n[tag=SEAboss4,scores={rng9=9,rng3=2}] at @s if entity @n[tag=SEAedwina_smoke,distance=0..2.8] run tp @s @n[tag=SEAboss4_tp,distance=3..]
-execute as @n[tag=SEAboss4,scores={rng9=9,rng3=3}] at @s if entity @n[tag=SEAedwina_smoke,distance=0..2.8] run tp @s @n[tag=SEAboss4_tp,distance=1..]
-execute as @n[tag=SEAboss4,scores={rng9=9,rng3=1,rng6=4..10}] at @s positioned 0.0 0 0.0 run summon marker ^ ^0.12 ^-0.5 {Tags:["SEA_boss4_marker"]}
-execute as @n[tag=SEAboss4,scores={rng9=9,rng3=2,rng6=4..10}] at @s positioned 0.0 0 0.0 run summon marker ^-0.4 ^0.12 ^-0.5 {Tags:["SEA_boss4_marker"]}
-execute as @n[tag=SEAboss4,scores={rng9=9,rng3=3,rng6=4..10}] at @s positioned 0.0 0 0.0 run summon marker ^0.4 ^0.12 ^-0.5 {Tags:["SEA_boss4_marker"]}
-execute as @n[tag=SEAboss4,scores={rng9=9,rng3=1..3,rng6=4..10}] at @s run data modify entity @n[tag=SEAboss4_attack_dash] Motion set from entity @n[type=marker,tag=SEA_boss4_marker] Pos
-execute as @n[tag=SEAboss4,scores={rng9=9,rng3=1..3,rng6=4..10}] at @s run kill @e[type=marker,tag=SEA_boss4_marker]
-execute as @n[tag=SEAboss4,scores={rng9=10,rng3=1,rng6=4..10}] at @s if entity @n[tag=SEA_mine,distance=0..2.8] positioned 0.0 0 0.0 run summon marker ^ ^0.12 ^-0.5 {Tags:["SEA_boss4_marker"]}
-execute as @n[tag=SEAboss4,scores={rng9=10,rng3=2,rng6=4..10}] at @s if entity @n[tag=SEA_mine,distance=0..2.8] positioned 0.0 0 0.0 run summon marker ^-0.4 ^0.12 ^-0.5 {Tags:["SEA_boss4_marker"]}
-execute as @n[tag=SEAboss4,scores={rng9=10,rng3=3,rng6=4..10}] at @s if entity @n[tag=SEA_mine,distance=0..2.8] positioned 0.0 0 0.0 run summon marker ^0.4 ^0.12 ^-0.5 {Tags:["SEA_boss4_marker"]}
-execute as @n[tag=SEAboss4,scores={rng9=10,rng3=1..3,rng6=4..10}] at @s if entity @n[tag=SEA_mine,distance=0..2.8] run data modify entity @n[tag=SEAboss4_attack_dash] Motion set from entity @n[type=marker,tag=SEA_boss4_marker] Pos
-execute as @n[tag=SEAboss4,scores={rng9=10,rng3=1..3,rng6=4..10}] at @s if entity @n[tag=SEA_mine,distance=0..2.8] run kill @e[type=marker,tag=SEA_boss4_marker]
-execute as @n[tag=SEAboss4,scores={rng9=9..11}] at @s run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
-execute as @n[tag=SEAboss4] at @s run data modify entity @s HurtTime set value 0s
-execute as @n[tag=SEAboss4,scores={rng9=12}] at @s run scoreboard players set @s rng9 0
+execute as @n[tag=SEAboss4,scores={rng9=1..}] at @s run function skyblock:sea/e/ch4/boss/fast_move
 
 execute as @n[tag=SEAboss4] at @s if entity @n[tag=SEA_mine,distance=0..3.1] run tag @s add SEAboss4_dodgemine
 execute as @n[tag=SEAboss4,tag=SEAboss4_dodgemine,scores={rng3=1}] at @s positioned 0.0 0 0.0 run summon marker ^ ^0.12 ^-0.9 {Tags:["SEA_boss4_marker"]}
@@ -64,8 +46,8 @@ execute as @s[scores={sea_4temp1=1..}] run execute store result score @n[tag=SEA
 
 execute store result score @n[tag=SEAboss4] rng1 run random value 1..3
 
-execute if entity @n[tag=SEAboss4,scores={health=..70,rng2=..10}] run effect give @s resistance 3 0 true
-execute if entity @n[tag=SEAboss4,scores={health=..40,rng2=..10}] run effect give @s resistance 3 3 true
+execute as @n[tag=SEAboss4,scores={health=..50,rng2=..10}] run effect give @s resistance 3 0 true
+execute as @n[tag=SEAboss4,scores={health=..20,rng2=..10}] run effect give @s resistance 3 3 true
 
 execute as @n[tag=SEAboss4,scores={rng8=..0}] at @s run function skyblock:sea/e/ch4/boss/system_rule_attack_round_ends
 execute as @n[tag=SEAboss4,scores={health=..80,rng2=11..}] run scoreboard players add @s rng7 1
