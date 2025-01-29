@@ -1,4 +1,4 @@
-execute if score sea_ch1_wasting_time rng1 matches ..390 run function skyblock:sea/e/ev028_ch1_wasting_time_1
+execute if score sea_ch1_wasting_time rng1 matches ..590 run function skyblock:sea/e/ev028_ch1_wasting_time_1
 
 execute if entity @a[tag=e_i_07,tag=SEAPT] if score sea_ch1_wasting_time rng2 matches ..590 if items block 90095 122 128 container.26 amethyst_shard run function skyblock:sea/e/ev028_ch1_wasting_time_2
 
