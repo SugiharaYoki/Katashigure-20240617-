@@ -1,5 +1,5 @@
 
-execute as @e[x=90100,y=100,z=100,distance=0..500,type=!player] at @s run tp ~ ~-500 ~
+
 
 
 
