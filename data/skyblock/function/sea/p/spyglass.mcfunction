@@ -29,9 +29,29 @@ execute if block 90075 103 141 cauldron if block 90126 140 137 air if block 9012
 execute if block 90075 103 141 cauldron unless block 90121 155 139 air run title @s[tag=SEAPT] actionbar {"text":"目标：前往宿舍楼的更高楼层","color":"green"}
 execute if block 90075 103 141 cauldron unless block 90131 161 144 air run title @s[tag=SEAPT] actionbar {"text":"目标：前往物资层东面的电梯","color":"green"}
 execute if block 90075 103 141 cauldron if block 90163 129 113 air run title @s[tag=SEAPT] actionbar {"text":"目标：乘座物资层东面的电梯 继续向下方前进","color":"green"}
+execute if block 90075 103 141 cauldron if block 90139 36 99 air run title @s[tag=SEAPT] actionbar {"text":"目标：寻找方法抵御敌群","color":"green"}
+execute if block 90075 103 141 cauldron if block 90139 36 99 air if entity @n[tag=SEAbossch3_core,scores={sea_4temp4=270..}] run title @s[tag=SEAPT] actionbar {"text":"目标：同时点亮七盏命熄之灯","color":"green"}
 execute if block 90075 103 141 cauldron if block 90125 102 101 air run title @s[tag=SEAPT] actionbar {"text":"目标：前往水下研究设施","color":"green"}
 
-execute if block 90074 103 137 scaffolding run title @s[tag=SEAPT] actionbar {"text":"目标：寻找回到水下研究设施实验区的方法","color":"green"}
+execute if block 90074 103 137 scaffolding run title @s[tag=SEAPT] actionbar {"text":"目标：深入冷凝系统 寻找前往实验区的道路","color":"green"}
+
+execute if block 90074 103 137 scaffolding positioned 90185 19 130 if entity @n[tag=SEAch4_spawn,distance=0..3] \
+if block 90159 38 131 minecraft:waxed_exposed_copper_bulb[lit=true] if block 90159 38 130 minecraft:waxed_exposed_copper_bulb[lit=true] if block 90159 38 129 minecraft:waxed_exposed_copper_bulb[lit=true] run title @s[tag=SEAPT] actionbar {"text":"目标：关闭北/东/南的3处灾害应对区域警报","color":"green"}
+execute if block 90074 103 137 scaffolding positioned 90185 19 130 if entity @n[tag=SEAch4_spawn,distance=0..3] \
+if block 90159 38 131 minecraft:waxed_exposed_copper_bulb[lit=false] if block 90159 38 130 minecraft:waxed_exposed_copper_bulb[lit=true] if block 90159 38 129 minecraft:waxed_exposed_copper_bulb[lit=true] run title @s[tag=SEAPT] actionbar {"text":"目标：关闭北/南的2处灾害应对区域警报","color":"green"}
+execute if block 90074 103 137 scaffolding positioned 90185 19 130 if entity @n[tag=SEAch4_spawn,distance=0..3] \
+if block 90159 38 131 minecraft:waxed_exposed_copper_bulb[lit=true] if block 90159 38 130 minecraft:waxed_exposed_copper_bulb[lit=false] if block 90159 38 129 minecraft:waxed_exposed_copper_bulb[lit=true] run title @s[tag=SEAPT] actionbar {"text":"目标：关闭北/东的2处灾害应对区域警报","color":"green"}
+execute if block 90074 103 137 scaffolding positioned 90185 19 130 if entity @n[tag=SEAch4_spawn,distance=0..3] \
+if block 90159 38 131 minecraft:waxed_exposed_copper_bulb[lit=true] if block 90159 38 130 minecraft:waxed_exposed_copper_bulb[lit=true] if block 90159 38 129 minecraft:waxed_exposed_copper_bulb[lit=false] run title @s[tag=SEAPT] actionbar {"text":"目标：关闭东/南的2处灾害应对区域警报","color":"green"}
+execute if block 90074 103 137 scaffolding positioned 90185 19 130 if entity @n[tag=SEAch4_spawn,distance=0..3] \
+if block 90159 38 131 minecraft:waxed_exposed_copper_bulb[lit=false] if block 90159 38 130 minecraft:waxed_exposed_copper_bulb[lit=false] if block 90159 38 129 minecraft:waxed_exposed_copper_bulb[lit=true] run title @s[tag=SEAPT] actionbar {"text":"目标：关闭北部的灾害应对区域警报","color":"green"}
+execute if block 90074 103 137 scaffolding positioned 90185 19 130 if entity @n[tag=SEAch4_spawn,distance=0..3] \
+if block 90159 38 131 minecraft:waxed_exposed_copper_bulb[lit=true] if block 90159 38 130 minecraft:waxed_exposed_copper_bulb[lit=false] if block 90159 38 129 minecraft:waxed_exposed_copper_bulb[lit=false] run title @s[tag=SEAPT] actionbar {"text":"目标：关闭东部的灾害应对区域警报","color":"green"}
+execute if block 90074 103 137 scaffolding positioned 90185 19 130 if entity @n[tag=SEAch4_spawn,distance=0..3] \
+if block 90159 38 131 minecraft:waxed_exposed_copper_bulb[lit=false] if block 90159 38 130 minecraft:waxed_exposed_copper_bulb[lit=true] if block 90159 38 129 minecraft:waxed_exposed_copper_bulb[lit=false] run title @s[tag=SEAPT] actionbar {"text":"目标：关闭南部的灾害应对区域警报","color":"green"}
+execute if block 90074 103 137 scaffolding positioned 90185 19 130 if entity @n[tag=SEAch4_spawn,distance=0..3] \
+if block 90159 38 131 minecraft:waxed_exposed_copper_bulb[lit=false] if block 90159 38 130 minecraft:waxed_exposed_copper_bulb[lit=false] if block 90159 38 129 minecraft:waxed_exposed_copper_bulb[lit=false] run title @s[tag=SEAPT] actionbar {"text":"目标：乘坐中央电梯 前往水下研究设施的实验区","color":"green"}
+
 execute if block 90074 103 137 scaffolding run title @s[tag=SEAPT,tag=e_i_35] actionbar {"text":"目标：寻找越涵的行踪","color":"green"}
 execute if block 90074 103 137 scaffolding if block 90163 36 86 green_concrete run title @s[tag=SEAPT,tag=e_i_35] actionbar {"text":"目标：探索水下研究设施的北侧并找到前进的路线","color":"green"}
 
