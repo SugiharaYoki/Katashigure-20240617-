@@ -40,7 +40,7 @@ execute as @e[type=marker,x=90000,y=0,z=0,distance=..3000,tag=SEAedwina_smoke,sc
 execute if entity @a[tag=SEAPT,x=90123,y=0,z=98,dx=7,dy=103,dz=7] run function skyblock:sea/e/ch3/ev009_ch3_liftergoesdown
 
 
-execute if block 90074 103 136 air as @n[tag=SEAch4_spawn_timer_boss4_fast] at @s unless entity @n[tag=SEAboss4_end] run function skyblock:sea/e/ch4/ev023_boss4_fast
+execute if block 90074 103 136 air as @n[tag=SEAch4_spawn_timer_boss4_fast] at @s unless entity @n[tag=SEAboss4_end] unless block 90146 83 74 air run function skyblock:sea/e/ch4/ev023_boss4_fast
 
 #function skyblock:protector/entity_count_end {function:"slyblock:sea/map_event_igeneral"}
 
