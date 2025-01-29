@@ -2,6 +2,8 @@
 execute as @e[x=90100,y=100,z=100,distance=0..500,type=!player] at @s run tp ~ ~-500 ~
 
 
+forceload add 90040 -20 90170 170
+forceload add 90000 0 90200 200
 
 scoreboard players set @a SEAPT_member 0
 scoreboard players set SEAmusic rng1 0
@@ -212,7 +214,6 @@ item replace block 90095 122 128 container.26 with amethyst_shard[custom_name='{
 setblock 90058 103 137 smoker[facing=east]
 
 setblock 90106 122 145 minecraft:chiseled_bookshelf[facing=east]
-forceload add 90000 0 90200 200
 setblock 90060 104 144 air
 kill @e[type=armor_stand,x=90060,y=104,z=144,distance=0..5]
 setblock 90105 123 125 air
@@ -696,3 +697,5 @@ execute if entity @n[tag=sc,scores={sea_player=4..}] run item replace block 9006
 execute positioned 90056 95 -177 positioned ~ ~ ~300 run fill ~ ~ ~ ~8 ~18 ~31 air
 execute positioned 90056 95 -177 positioned ~ ~ ~300 run fill ~ ~ ~ ~8 ~3 ~31 water
 setblock 90062 106 -166 minecraft:iron_trapdoor[half=bottom]
+
+#forceload remove 90040 -20 90170 170
