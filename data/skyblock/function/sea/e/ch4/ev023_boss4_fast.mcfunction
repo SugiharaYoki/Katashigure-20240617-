@@ -92,8 +92,7 @@ execute as @n[tag=SEAboss4,tag=SEAboss4_attack_dashheavy] at @s run function sky
 
 
 execute as @n[tag=SEAboss4,scores={rng8=2,rng5=4},tag=SEAboss4_attack] at @s run tag @s add SEAboss4_defense
-execute as @n[tag=SEAboss4,tag=SEAboss4_defense] at @s run tellraw @a[tag=SEAPT] [{"text": "艾德雯娜","color": "red"},{"text": "防守中。","color": "yellow"}]
-execute as @n[tag=SEAboss4,scores={rng8=2..60},tag=SEAboss4_defense] at @s run function skyblock:sea/e/ch4/boss/defense
+execute as @n[tag=SEAboss4,tag=SEAboss4_defense] at @s run function skyblock:sea/e/ch4/boss/defense
 
 execute as @n[tag=SEAboss4,scores={rng8=2,rng5=5},tag=SEAboss4_attack] at @s run tag @s add SEAboss4_spectral
 execute as @n[tag=SEAboss4,tag=SEAboss4_spectral] at @s run function skyblock:sea/e/ch4/boss/spectral
