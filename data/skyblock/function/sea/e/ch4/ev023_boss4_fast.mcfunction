@@ -64,11 +64,7 @@ execute as @n[tag=SEAboss4,scores={rng2=4},tag=!SEAboss4_phase2] as @a[tag=SEAPT
 execute as @n[tag=SEAboss4,scores={rng2=4},tag=!SEAboss4_phase2] as @a[tag=SEAPT] if entity @s[tag=!e_w_02,tag=!e_w_03,tag=!e_w_04,tag=!e_w_05,tag=!e_w_06] run tellraw @s [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“真不赖，可惜你还太嫩了，甚至连一把趁手的武器都没有。”","color":"white","bold": false}]
 execute as @n[tag=SEAboss4,scores={rng2=4..},tag=!SEAboss4_phase2] run tag @s add SEAboss4_phase2
 
-execute as @n[tag=SEAboss4,scores={rng2=8},tag=!SEAboss4_phase3] run tellraw @a[tag=SEAPT] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“没想到能让我陷入苦战呢……我该拿出全部实力了。”","color":"white","bold": false}]
-execute as @n[tag=SEAboss4,scores={rng2=8..},tag=!SEAboss4_phase3] run scoreboard players set @s rng8 0
-execute as @n[tag=SEAboss4,scores={rng2=8..},tag=!SEAboss4_phase3] run playsound minecraft:item.trident.thunder hostile @a ~ ~ ~ 3 0.83
-execute as @n[tag=SEAboss4,scores={rng2=8..},tag=!SEAboss4_phase3] run particle flame ~ ~ ~ 3 0 3 0.05 40
-execute as @n[tag=SEAboss4,scores={rng2=8..},tag=!SEAboss4_phase3] run tag @s add SEAboss4_phase3
+execute as @n[tag=SEAboss4,scores={rng2=8},tag=!SEAboss4_phase3] run function skyblock:sea/e/ch4/boss/system_phase3_warning
 
 execute as @n[tag=SEAboss4,scores={rng8=1..}] at @s run scoreboard players add @s rng8 1
 
@@ -89,8 +85,7 @@ execute store result score @n[tag=SEAboss4] rng4 run random value 1..3
 execute as @n[tag=SEAboss4,scores={rng8=2,rng5=2},tag=SEAboss4_attack] at @s run tag @s add SEAboss4_attack_drone
 execute as @n[tag=SEAboss4,tag=SEAboss4_attack_drone] at @s run function skyblock:sea/e/ch4/boss/attack_drone
 
-execute as @a[tag=SEAPT,nbt={active_effects:[{id:"minecraft:glowing"}]}] run effect give @s slowness 3 99 false
-execute as @a[tag=SEAPT,nbt={active_effects:[{id:"minecraft:glowing"}]}] run effect clear @s glowing
+execute as @a[tag=SEAPT,nbt={active_effects:[{id:"minecraft:glowing"}]}] run function skyblock:sea/e/ch4/boss/player_glowing
 
 execute as @n[tag=SEAboss4,scores={rng8=2,rng5=3},tag=SEAboss4_attack] at @s run tag @s add SEAboss4_attack_dashheavy
 execute as @n[tag=SEAboss4,tag=SEAboss4_attack_dashheavy] at @s run function skyblock:sea/e/ch4/boss/attack_dashheavy
@@ -106,20 +101,7 @@ execute as @n[tag=SEAboss4,tag=SEAboss4_spectral] at @s run function skyblock:se
 execute as @e[type=spectral_arrow,tag=SEAboss4_spectral_arrow1,x=90000,y=100,z=0,distance=..1000,nbt={inGround:false}] at @s run function skyblock:sea/e/ch4/boss/spectral_arrow
 
 execute as @n[tag=SEAboss4,scores={rng8=2,rng5=6},tag=SEAboss4_attack] at @s run tag @s add SEAboss4_shadow
-execute as @n[tag=SEAboss4,scores={rng8=2},tag=SEAboss4_shadow] at @s run tellraw @a[tag=SEAPT] [{"text": "艾德雯娜","color": "red"},{"text": "启动残影模板。","color": "light_purple"}]
-execute as @n[tag=SEAboss4,scores={rng8=2},tag=SEAboss4_shadow] at @s run particle portal ~ ~1 ~ 0.8 1.0 0.8 0 50
-execute as @n[tag=SEAboss4,scores={rng8=2},tag=SEAboss4_shadow,nbt={OnGround:true}] at @s run function skyblock:sea/m/mine
-execute as @n[tag=SEAboss4,scores={rng8=2},tag=SEAboss4_shadow,nbt={OnGround:true}] at @s positioned ^ ^ ^2 if block ~ ~-0 ~ air unless block ~ ~-1 ~ air run function skyblock:sea/m/mine
-execute as @n[tag=SEAboss4,scores={rng8=2},tag=SEAboss4_shadow,nbt={OnGround:true}] at @s positioned ^ ^ ^4 if block ~ ~-0 ~ air unless block ~ ~-1 ~ air run function skyblock:sea/m/mine
-execute as @n[tag=SEAboss4,scores={rng8=2},tag=SEAboss4_shadow,nbt={OnGround:true}] at @s positioned ^ ^ ^2 if block ~ ~-1 ~ air unless block ~ ~-2 ~ air run function skyblock:sea/m/mine
-execute as @n[tag=SEAboss4,scores={rng8=2},tag=SEAboss4_shadow,nbt={OnGround:true}] at @s positioned ^ ^ ^4 if block ~ ~-1 ~ air unless block ~ ~-2 ~ air run function skyblock:sea/m/mine
-execute as @n[tag=SEAboss4,scores={rng8=2},tag=SEAboss4_shadow] at @s run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
-execute as @n[tag=SEAboss4,scores={rng8=2},tag=SEAboss4_shadow] at @s positioned 0.0 0 0.0 run summon marker ^ ^0.32 ^5.4 {Tags:["SEA_boss4_marker"]}
-execute as @n[tag=SEAboss4,scores={rng8=2},tag=SEAboss4_shadow] at @s run data modify entity @n[tag=SEAboss4_shadow] Motion set from entity @n[type=marker,tag=SEA_boss4_marker] Pos
-execute as @n[tag=SEAboss4,scores={rng8=3},tag=SEAboss4_shadow] at @s run data modify entity @n[tag=SEAboss4_shadow] Motion set from entity @n[type=marker,tag=SEA_boss4_marker] Pos
-execute as @n[tag=SEAboss4,scores={rng8=3},tag=SEAboss4_shadow] at @s run kill @e[type=marker,tag=SEA_boss4_marker]
-
-execute as @n[tag=SEAboss4,scores={rng8=40},tag=SEAboss4_shadow] at @s run scoreboard players set @s rng8 0
+execute as @n[tag=SEAboss4,tag=SEAboss4_shadow] at @s run function skyblock:sea/e/ch4/boss/fast_move_shadow
 
 
 execute as @n[tag=SEAboss4,scores={rng8=2,rng5=7},tag=SEAboss4_attack] at @s run tag @s add SEAboss4_cannon
