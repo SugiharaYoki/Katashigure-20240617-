@@ -70,6 +70,8 @@ scoreboard players set isStarted Azr_system 0
 scoreboard players reset CerementPassword Azr_system
 scoreboard players reset internal_clock_001 Azr_system
 scoreboard players reset internal_clock_002 Azr_system
+scoreboard players reset gametick Azr_system
+scoreboard players reset gametick_static_5s Azr_system
 scoreboard objectives setdisplay sidebar SeGa_StandLastBH
 
 #unused

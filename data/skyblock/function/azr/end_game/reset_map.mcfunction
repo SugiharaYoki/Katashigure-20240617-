@@ -108,6 +108,11 @@ fill -79930 38 53 -79932 41 53 air{name: "clear anvil barrier"}
 
 #______________________________________________________________#
 
+setblock -79922 54 -110 barrel[facing=east]
+setblock -79924 54 -109 minecraft:chipped_anvil[facing=west]
+setblock -79912 55 -101 minecraft:birch_button[face=wall,facing=west]
+setblock -79907 46 -111 minecraft:air
+setblock -79867 48 -109 lever[facing=east,face=floor,powered=false]
 setblock -79956 39 -29 air
 setblock -28 143 -58 minecraft:air
 setblock -23 143 -53 air
@@ -372,6 +377,16 @@ fill -79647 23 -422 -79647 22 -421 minecraft:nether_brick_fence
 fill -79533 27 -406 -79533 26 -405 minecraft:nether_brick_fence
 fill -79789 27 -312 -79789 27 -302 air
 fill -79777 44 -300 -79777 43 -300 minecraft:cracked_nether_bricks
+fill -79876 47 -111 -79877 52 -107 air
+fill -79936 55 -120 -79935 54 -120 air
+fill -79871 48 -106 -79872 47 -106 minecraft:blast_furnace[facing=north]
+fill -79871 48 -112 -79872 47 -112 minecraft:blast_furnace[facing=south]
+fill -79863 48 -106 -79862 47 -106 minecraft:blast_furnace[facing=north]
+fill -79863 48 -112 -79862 47 -112 minecraft:blast_furnace[facing=south]
+fill -79873 47 -110 -79873 48 -108 air
+fill -79820 48 -130 -79820 53 -127 black_concrete
+fill -79922 45 -113 -79922 45 -111 minecraft:air
+fill -79867 51 -130 -79867 48 -127 iron_bars
 #______________________________________________________________#
 clone -79908 36 -41 -79904 43 -32 -79933 37 -27
 clone -79919 24 -134 -79913 30 -123 -79908 39 -134
@@ -388,14 +403,14 @@ item replace block -79903 40 -104 container.11 with minecraft:carrot 2
 item replace block -79903 40 -104 container.13 with minecraft:beef 2
 item replace block -79903 40 -104 container.15 with minecraft:bread 2
 item replace block -79929 47 -110 container.13 with tripwire_hook[custom_name='{"text":"纸张图案的钥匙","color":"blue","italic":false}'] 1
-item replace block -79897 40 -115 container.12 with minecraft:paper[custom_name='{"text":"被污染的信条","color":"dark_purple","italic":false}'] 1
-item replace block -79897 40 -115 container.14 with minecraft:paper[custom_name='{"text":"被污染的信条","color":"dark_purple","italic":false}'] 1
+item replace block -79897 40 -115 container.12 with minecraft:paper[custom_name='{"text":"被污染的信条","color":"dark_purple","italic":false}',custom_data={dirty_credo:1b},custom_model_data=100002] 1
+item replace block -79897 40 -115 container.14 with minecraft:paper[custom_name='{"text":"被污染的信条","color":"dark_purple","italic":false}',custom_data={dirty_credo:1b},custom_model_data=100002] 1
 item replace block -79919 40 -112 container.12 with string
 item replace block -79919 40 -112 container.14 with string
-item replace block -79939 35 -76 container.11 with minecraft:paper[custom_name='{"text":"被污染的信条","color":"dark_purple","italic":false}'] 1
+item replace block -79939 35 -76 container.11 with minecraft:paper[custom_name='{"text":"被污染的信条","color":"dark_purple","italic":false}',custom_data={dirty_credo:1b},custom_model_data=100002] 1
 item replace block -79939 35 -76 container.13 with minecraft:dried_kelp 8
 item replace block -79939 35 -76 container.15 with tripwire_hook[custom_name='{"text":"蓝宝石钥匙","color":"blue","italic":false}'] 1
-item replace block -79917 40 -62 container.11 with minecraft:paper[custom_name='{"text":"被污染的信条","color":"dark_purple","italic":false}'] 2
+item replace block -79917 40 -62 container.11 with minecraft:paper[custom_name='{"text":"被污染的信条","color":"dark_purple","italic":false}',custom_data={dirty_credo:1b},custom_model_data=100002] 2
 item replace block -79917 40 -62 container.13 with minecraft:chain 5
 item replace block -79917 40 -62 container.15 with skull_banner_pattern[custom_name='{"text":"“拉斐尔大人与能天使大人吵了一架”","color":"dark_purple","italic":false}',lore=['{"text":"希望神庭近些日子不要遭遇困难。","color":"white","italic":false}','{"text":"这两天拉斐尔大人的脾气特别不稳定，","color":"white","italic":false}','{"text":"还时不时地跟我们说，","color":"white","italic":false}','{"text":"“百千年的重头戏终于要到来了”。","color":"white","italic":false}']] 1
 item replace block -79875 38 64 container.13 with tripwire_hook[custom_name='{"text":"粗石英钥匙","color":"blue","italic":false}'] 1

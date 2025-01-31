@@ -59,6 +59,8 @@ scoreboard players set stage Azr_system 1
 scoreboard players set isStarted Azr_system 1
 scoreboard players set stopSeconds Azr_system 0
 scoreboard players set chapter Azr_system 1
+scoreboard players set gametick Azr_system 0
+scoreboard players set gametick_static_5s Azr_system 0
 #创建小队
 team add AzrBossA
 team modify AzrBossA friendlyFire false

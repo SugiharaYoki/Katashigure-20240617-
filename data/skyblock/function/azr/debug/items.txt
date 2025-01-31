@@ -18,7 +18,8 @@
 甜菜根
     blast_root 爆裂菜根 100001
 纸
-    sanct_credo 神殿信条 100001
+    sanct_credo 圣殿信条 100001
+    dirty_credo 被污染的信条 100002
 生铁
     raw_iron 钝铁 100001
 生金

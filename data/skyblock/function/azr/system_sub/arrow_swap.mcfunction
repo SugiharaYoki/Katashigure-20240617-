@@ -5,6 +5,10 @@ item replace entity @s weapon.mainhand from entity 0-0-0-0-2 container.0
 item replace entity 0-0-0-0-2 container.0 with air
 item modify entity @s weapon.mainhand {function:"set_custom_data",tag:{skill_arrow:0b}}
 item modify entity @s weapon.offhand {function:"set_custom_data",tag:{skill_arrow:0b}}
+
+execute unless score @s[tag=!DEBUG_infinityEnergy] AZR_arrow_energy matches 1.. run return fail
+scoreboard players remove @s[scores={AZR_arrow_energy=1..}] AZR_arrow_energy 1
+
 execute at @s anchored eyes run summon arrow ^ ^ ^ {Tags:["skill_arrow_temp"]}
 execute at @s positioned 0. 0. 0. as 0-0-0-0-0 run function skyblock:azr/system_sub/world_entity_get_motion_3
 execute store result entity @n[tag=skill_arrow_temp] Motion[0] double 0.001 run scoreboard players get motion_x Azr_system

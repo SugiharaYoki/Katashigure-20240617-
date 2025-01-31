@@ -135,7 +135,8 @@ execute as @s[scores={MultiMenu=93}] at @s run function skyblock:multimenu093_cc
 #execute as @s[scores={MultiMenu=95007}] at @s run function skyblock:multimenu095_ckwr_spst7
 #execute as @s[scores={MultiMenu=95008}] at @s run function skyblock:multimenu095_ckwr_spst8
 #execute as @s[scores={MultiMenu=95001..95999}] at @s run scoreboard players set @s MultiMenu 95
-execute as @s[scores={MultiMenu=810}] at @s run function skyblock:multimenu810_teleport_m02
+execute as @s[scores={MultiMenu=810}] if score isStarted Azr_system matches 1 at @s run function skyblock:azr/midway_join
+execute as @s[scores={MultiMenu=810}] unless score isStarted Azr_system matches 1 at @s run function skyblock:multimenu810_teleport_m02
 #execute as @s[scores={MultiMenu=813}] at @s run function skyblock:multimenu813_teleport_crew1
 #execute as @s[scores={MultiMenu=814}] at @s run function skyblock:multimenu814_teleport_crew2
 execute as @s[scores={MultiMenu=815}] at @s run function skyblock:multimenu815_teleport_maze_p1
