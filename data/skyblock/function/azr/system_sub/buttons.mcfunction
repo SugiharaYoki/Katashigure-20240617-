@@ -32,17 +32,17 @@ execute if block -79949 38 31 minecraft:birch_button[powered=true] run setblock 
 execute if block -79949 38 31 minecraft:birch_button[powered=true] run setblock -79949 38 31 air
 #boss1 uncommited
 execute if block -79931 39 88 minecraft:polished_blackstone_button[powered=true] run function skyblock:azr/stage/stage_boss1_prep
-#stage5α uncommited
+#stage5α
 execute if block -79934 39 125 minecraft:birch_button[powered=true] run scoreboard players set stage Azr_system 12
 execute if block -79934 39 125 minecraft:birch_button[powered=true] run scoreboard players set stageSeconds Azr_system 0
-execute if block -79934 39 125 minecraft:birch_button[powered=true] at @p[tag=azrPlayer] run tp @a[tag=azrPlayer,distance=5..] @s
+execute if block -79934 39 125 minecraft:birch_button[powered=true] at @p[tag=azrPlayer,x=-79934,y=39,z=125] run tp @a[tag=azrPlayer,distance=5..] @s
 execute if block -79934 39 125 minecraft:birch_button[powered=true] run fill -79932 38 104 -79930 42 104 minecraft:red_stained_glass
 execute if block -79934 39 125 minecraft:birch_button[powered=true] run setblock -79928 39 125 air
 execute if block -79934 39 125 minecraft:birch_button[powered=true] run setblock -79934 39 125 air
 #stage5β
 execute if block -79928 39 125 minecraft:birch_button[powered=true] run scoreboard players set stage Azr_system 13
 execute if block -79928 39 125 minecraft:birch_button[powered=true] run scoreboard players set stageSeconds Azr_system 0
-execute if block -79928 39 125 minecraft:birch_button[powered=true] at @p[tag=azrPlayer] run tp @a[tag=azrPlayer,distance=5..] @s
+execute if block -79928 39 125 minecraft:birch_button[powered=true] at @p[tag=azrPlayer,x=-79928,y=39,z=125] run tp @a[tag=azrPlayer,distance=5..] @s
 execute if block -79928 39 125 minecraft:birch_button[powered=true] run fill -79932 38 104 -79930 42 104 minecraft:red_stained_glass
 execute if block -79928 39 125 minecraft:birch_button[powered=true] run setblock -79934 39 125 air
 execute if block -79928 39 125 minecraft:birch_button[powered=true] run setblock -79928 39 125 air
