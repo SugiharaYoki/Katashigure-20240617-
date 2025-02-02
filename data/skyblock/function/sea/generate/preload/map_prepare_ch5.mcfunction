@@ -120,8 +120,8 @@ fill 90107 143 106 90107 140 106 air
 fill 90101 140 103 90101 142 103 air
 fill 90125 155 127 90122 155 127 air
 fill 90127 156 127 90124 156 127 air
-setblock 90119 157 130 minecraft:redstone_lamp[lit=false]
-setblock 90120 148 114 minecraft:redstone_lamp[lit=false]
+setblock 90119 157 130 minecraft:waxed_copper_bulb[lit=false]
+setblock 90120 148 114 minecraft:waxed_copper_bulb[lit=false]
 setblock 90115 140 108 fire
 setblock 90113 143 110 fire
 setblock 90110 140 109 fire
