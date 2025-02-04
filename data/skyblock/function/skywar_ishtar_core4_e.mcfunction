@@ -7,4 +7,6 @@ execute if score @s rng1 matches 27 run summon lightning_bolt
 execute if score @s rng1 matches 32 run summon lightning_bolt
 execute if score @s rng1 matches 37 run summon lightning_bolt
 execute if score @s rng1 matches 42 run summon lightning_bolt
-execute if score @s rng1 matches 42 run kill @s
+execute if score @s rng1 matches 47 run summon lightning_bolt
+execute if score @s rng1 matches 52 run summon lightning_bolt
+execute if score @s rng1 matches 52 run kill @s
