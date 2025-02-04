@@ -17,7 +17,7 @@ execute if score sea_chapter_introduction sea_4temp1 matches 215 if entity @a[sc
 execute if score sea_chapter_introduction sea_4temp1 matches 235 if entity @a[scores={SEAPT_member=2}] run tellraw @a[distance=0..250] [{"selector":"@r[tag=SEAPT]","color":"white"},{"text":"：总之也快到了，做好准备吧。","color":"white"}]
 execute if score sea_chapter_introduction sea_4temp1 matches 278 run effect give @a[distance=0..400,tag=SEAPT] darkness 6 0 true
 execute if score sea_chapter_introduction sea_4temp1 matches 290 run function skyblock:sea/generate/preload/map_prepare_ch1
-execute if score sea_chapter_introduction sea_4temp1 matches 290 as @a[distance=0..400] at @s rotated as @s run tp @s ~ ~ ~300
+execute if score sea_chapter_introduction sea_4temp1 matches 290 as @p[tag=SEAPT] at @s as @a[distance=0..50] at @s rotated as @s run tp @s ~ ~ ~300
 
 execute if score sea_chapter_introduction sea_4temp1 matches 20 unless entity @a[scores={SEAPT_member=2}] run tellraw @a[distance=0..250] {"text": "可以看到钻井平台了。","color": "gray"}
 execute if score sea_chapter_introduction sea_4temp1 matches 45 unless entity @a[scores={SEAPT_member=2}] run tellraw @a[distance=0..250] {"text": "忒尔克西啊……上一次来这里还是两个月前。","color": "gray"}
