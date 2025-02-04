@@ -1,1 +1,1 @@
-execute as @n[type=trident,nbt={inGround:true}] at @s run tag @s add Bless4_Trident
+execute as @n[type=trident,nbt={inGround:true},distance=0..1000] at @s run tag @s add Bless4_Trident
