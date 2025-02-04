@@ -1,0 +1,1 @@
+execute as @n[type=trident,nbt={inGround:true}] at @s run tag @s add Bless4_Trident

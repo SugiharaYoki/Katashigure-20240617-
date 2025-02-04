@@ -63,6 +63,8 @@ execute if entity @s[scores={If_MD_Otherside=1..}] run playsound item.mace.smash
 execute if entity @s[scores={If_MD_Otherside=1..}] run give @s mace[enchantments={wind_burst:2}]
 execute if entity @s[scores={If_MD_Otherside=1..}] run scoreboard players set @s If_MD_Otherside 0
 
+execute if items entity @s weapon.offhand *[custom_data={skywar_ishtar_4:1}] run function skyblock:skywar_ishtar_core4
+execute if items entity @s container.* *[custom_data={skywar_ishtar_4:1}] as @e[type=trident,tag=Bless4_Trident] at @s if entity @a[tag=PVPing,distance=0..1000] run function skyblock:skywar_ishtar_core4_e
 
 execute if items entity @s[scores={Skywar_ishtar_usehorn=1..}] container.* *[custom_data={skywar_ishtar_21:1}] run function skyblock:skywar_ishtar_core21
 
