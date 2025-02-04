@@ -29,6 +29,10 @@ execute if entity @s[scores={ishtar_bless_1=30}] run give @s coast_armor_trim_sm
 execute if entity @s[scores={ishtar_bless_2=30}] run give @s coast_armor_trim_smithing_template[custom_name='{"text":"天愠引庸","italic":false,"color":"red"}',custom_data={skywar_ishtar_30:1}] 1
 execute if entity @s[scores={ishtar_bless_3=30}] run give @s coast_armor_trim_smithing_template[custom_name='{"text":"天愠引庸","italic":false,"color":"red"}',custom_data={skywar_ishtar_30:1}] 1
 execute if entity @s[scores={ishtar_bless_4=30}] run give @s coast_armor_trim_smithing_template[custom_name='{"text":"天愠引庸","italic":false,"color":"red"}',custom_data={skywar_ishtar_30:1}] 1
+execute if entity @s[scores={ishtar_bless_1=30}] run give @s shield[damage=333] 3
+execute if entity @s[scores={ishtar_bless_2=30}] run give @s shield[damage=333] 3
+execute if entity @s[scores={ishtar_bless_3=30}] run give @s shield[damage=333] 3
+execute if entity @s[scores={ishtar_bless_4=30}] run give @s shield[damage=333] 3
 
 execute if entity @s[scores={ishtar_bless_1=5}] run give @s leather_boots[custom_name='{"text":"彻锋戮影","italic":false,"color":"red"}',dyed_color={rgb:3081303},attribute_modifiers=[{type:"generic.movement_speed",slot:"feet",id:"ishtar_bless:002_01",amount:0.07,operation:"add_value"},{type:"player.sneaking_speed",slot:"feet",id:"ishtar_bless:002_02",amount:0.55,operation:"add_value"},{type:"generic.max_health",slot:"feet",id:"ishtar_bless:002_03",amount:-4,operation:"add_value"}]]
 execute if entity @s[scores={ishtar_bless_2=5}] run give @s leather_boots[custom_name='{"text":"彻锋戮影","italic":false,"color":"red"}',dyed_color={rgb:3081303},attribute_modifiers=[{type:"generic.movement_speed",slot:"feet",id:"ishtar_bless:002_01",amount:0.07,operation:"add_value"},{type:"player.sneaking_speed",slot:"feet",id:"ishtar_bless:002_02",amount:0.55,operation:"add_value"},{type:"generic.max_health",slot:"feet",id:"ishtar_bless:002_03",amount:-4,operation:"add_value"}]]
