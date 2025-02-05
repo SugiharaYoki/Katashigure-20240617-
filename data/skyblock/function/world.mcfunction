@@ -7,9 +7,11 @@ execute as @a at @s if block ~ ~ ~ stonecutter run damage @s 3 minecraft:sting b
 
 
 scoreboard players add world_loop rng1 1
+scoreboard players add world_loop rng2 1
 execute if score world_loop rng1 matches 5 run function skyblock:world_sys_announcementp1
-execute if score world_loop rng1 matches 4 if score skywar_start rng1 matches 1.. run function skyblock:pvp/skywar/system/gamestartprep
+execute if score world_loop rng1 matches 19 if score skywar_start rng1 matches 1.. run function skyblock:pvp/skywar/system/gamestartprep
 execute if score world_loop rng1 matches 5 run scoreboard players set world_loop rng1 0
+execute if score world_loop rng2 matches 20 run scoreboard players set world_loop rng1 0
 
 #execute if entity @a[tag=SeGa_StandLastA] run function skyblock:azr/ingame_azrielsmidgarden_core disable
 
