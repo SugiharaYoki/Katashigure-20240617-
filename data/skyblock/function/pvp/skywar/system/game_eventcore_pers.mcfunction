@@ -41,5 +41,5 @@ execute if block -131 58 -133 diamond_block as @e[type=wind_charge,tag=Bless26,x
 execute if block -131 58 -133 diamond_block if items entity @a[gamemode=survival] container.* *[custom_data={skywar_ishtar_24:1}] run function skyblock:pvp/skywar/bless/skywar_ishtar_core24e
 
 scoreboard players add skywar_loop rng1 1
-execute if score skywar_loop rng1 matches 5 run function skyblock:pvp/skywar/system/game_eventcore_loop
-execute if score skywar_loop rng1 matches 5 run scoreboard players set skywar_loop rng1 0
+execute if score skywar_loop rng1 matches 15 run function skyblock:pvp/skywar/system/game_eventcore_loop
+execute if score skywar_loop rng1 matches 20.. run scoreboard players set skywar_loop rng1 0
