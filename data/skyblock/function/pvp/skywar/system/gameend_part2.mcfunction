@@ -1,6 +1,7 @@
 tag @a[tag=Temp_NoSkyWar] remove NoSkyWar
 tag @a[tag=Temp_NoSkyWar] remove Temp_NoSkyWar
 tag @n[tag=sc] remove MapLoaAlr
+tell @p[tag=ENKIDU] game_end_part2
 #成就系统
 #advancement grant @a[level=100..] only skyblock:levelbonus_level100
 #advancement grant @a[level=1000..] only skyblock:levelbonus_level1000

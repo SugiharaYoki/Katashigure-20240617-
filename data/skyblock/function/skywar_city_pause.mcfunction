@@ -3,7 +3,7 @@ execute unless block -17 23 32 soul_lantern if score skywar_start rng1 matches .
 #-#-#setblock 10 66 -12 minecraft:redstone_wire
 #-#-#setblock 11 60 -10 minecraft:redstone_wire
 #-#-#scoreboard players set @n[tag=sc] TempPaus 0
-
+tell @p[tag=ENKIDU] skywar_city_pause
 
 #《初始化队伍》
 team leave @a[tag=!Gaming]

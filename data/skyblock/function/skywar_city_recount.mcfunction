@@ -4,6 +4,7 @@ execute unless block -17 23 32 soul_lantern if score skywar_start rng1 matches .
 #-#-#setblock 11 60 -10 minecraft:redstone_wire
 #-#-#scoreboard players set @n[tag=sc] TempPaus 0
 
+tell @p[tag=ENKIDU] skywar_city_recount
 
 team leave @a[tag=!Gaming]
 team remove Team1_1
