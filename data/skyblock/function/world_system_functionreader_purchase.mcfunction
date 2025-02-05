@@ -1,19 +1,19 @@
-execute as @a[scores={MultiMenu=16210001}] at @s run function skyblock:purchase_particleb
-execute as @a[scores={MultiMenu=16210002}] at @s run function skyblock:purchase_setting_citysuperspeed
-execute as @a[scores={MultiMenu=16210003}] at @s run function skyblock:purchase_entert_toyblockstudy_drink_a
-execute as @a[scores={MultiMenu=16210004}] at @s run function skyblock:purchase_entert_toyblockstudy_drink_b
-execute as @a[scores={MultiMenu=16210005},tag=!SkMu_Copp] at @s run function skyblock:purchase_entert_skullmuseum_copper
-execute as @a[scores={MultiMenu=16210006},tag=!SkMu_Silv] at @s run function skyblock:purchase_entert_skullmuseum_silver
-execute as @a[scores={MultiMenu=16210007},tag=!SkMu_Gold] at @s run function skyblock:purchase_entert_skullmuseum_gold
+execute as @a[scores={MultiMenu=16210001}] at @s run function skyblock:verbal/city/purchase/particleb
+execute as @a[scores={MultiMenu=16210002}] at @s run function skyblock:verbal/city/purchase/setting_citysuperspeed
+execute as @a[scores={MultiMenu=16210003}] at @s run function skyblock:verbal/city/purchase/entert_toyblockstudy_drink_a
+execute as @a[scores={MultiMenu=16210004}] at @s run function skyblock:verbal/city/purchase/entert_toyblockstudy_drink_b
+execute as @a[scores={MultiMenu=16210005},tag=!SkMu_Copp] at @s run function skyblock:verbal/city/purchase/entert_skullmuseum_copper
+execute as @a[scores={MultiMenu=16210006},tag=!SkMu_Silv] at @s run function skyblock:verbal/city/purchase/entert_skullmuseum_silver
+execute as @a[scores={MultiMenu=16210007},tag=!SkMu_Gold] at @s run function skyblock:verbal/city/purchase/entert_skullmuseum_gold
 execute as @a[scores={MultiMenu=16210005},tag=SkMu_Copp] at @s run scoreboard players set @s MultiMenu 0
 execute as @a[scores={MultiMenu=16210006},tag=SkMu_Silv] at @s run scoreboard players set @s MultiMenu 0
 execute as @a[scores={MultiMenu=16210007},tag=SkMu_Gold] at @s run scoreboard players set @s MultiMenu 0
-execute as @a[scores={MultiMenu=16210008}] at @s run function skyblock:purchase_pigrental_pccr
-execute as @a[scores={MultiMenu=16210009}] at @s run function skyblock:purchase_casino_transfer1
-execute as @a[scores={MultiMenu=16210010}] at @s run function skyblock:purchase_casino_transfer2
-execute as @a[scores={MultiMenu=16210011}] at @s run function skyblock:purchase_casino_transfer3
-execute as @a[scores={MultiMenu=16210012}] at @s run function skyblock:purchase_casino_zero
-execute as @a[scores={MultiMenu=16210013},tag=!Stal] at @s run function skyblock:purchase_casino_music_stal
+execute as @a[scores={MultiMenu=16210008}] at @s run function skyblock:verbal/city/purchase/pigrental_pccr
+execute as @a[scores={MultiMenu=16210009}] at @s run function skyblock:verbal/city/purchase/casino_transfer1
+execute as @a[scores={MultiMenu=16210010}] at @s run function skyblock:verbal/city/purchase/casino_transfer2
+execute as @a[scores={MultiMenu=16210011}] at @s run function skyblock:verbal/city/purchase/casino_transfer3
+execute as @a[scores={MultiMenu=16210012}] at @s run function skyblock:verbal/city/purchase/casino_zero
+execute as @a[scores={MultiMenu=16210013},tag=!Stal] at @s run function skyblock:verbal/city/purchase/casino_music_stal
 #execute as @a[scores={Common=16310011,Azr_SK1=0}] at @s run function skyblock:azr/purchase_sega_azriel_sk01_lv1
 #execute as @a[scores={Common=16310012,Azr_SK1=1}] at @s run function skyblock:azr/purchase_sega_azriel_sk01_lv2
 #execute as @a[scores={Common=16310013,Azr_SK1=2}] at @s run function skyblock:azr/purchase_sega_azriel_sk01_lv3

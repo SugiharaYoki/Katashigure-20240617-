@@ -49,11 +49,7 @@ execute as @s[scores={MultiMenu=48}] at @s run function skyblock:multimenu048_ma
 execute as @s[scores={MultiMenu=49}] at @s run function skyblock:multimenu049_setting_toggleannouncementa
 execute as @s[scores={MultiMenu=50}] at @s run function skyblock:multimenu050_setting_toggleannouncementb
 execute as @s[scores={MultiMenu=51}] at @s run function skyblock:multimenu051_setting_selectcitybgm
-execute as @s[scores={MultiMenu=52}] at @s run function skyblock:multimenu052_changecitybgm1
-execute as @s[scores={MultiMenu=53}] at @s run function skyblock:multimenu053_changecitybgm2
-execute as @s[scores={MultiMenu=54}] at @s run function skyblock:multimenu054_changecitybgm3
-execute as @s[scores={MultiMenu=55}] at @s run function skyblock:multimenu055_changecitybgm4
-execute as @s[scores={MultiMenu=56}] at @s run function skyblock:multimenu056_changecitybgm5
+execute as @s[scores={MultiMenu=52..56}] at @s run function skyblock:multimenu052_changecitybgm1
 execute as @s[scores={MultiMenu=57}] at @s run function skyblock:multimenu057_mainpage_button_towiki
 execute as @s[scores={MultiMenu=58001}] at @s run function skyblock:multimenu058_001_wiki_game
 execute as @s[scores={MultiMenu=58002}] at @s run function skyblock:multimenu058_002_wiki_game_blackjack1
@@ -70,8 +66,7 @@ execute as @s[scores={MultiMenu=58012}] at @s run function skyblock:multimenu058
 execute as @s[scores={MultiMenu=58013}] at @s run function skyblock:multimenu058_013_wiki_pvpjob_9
 execute as @s[scores={MultiMenu=58014}] at @s run function skyblock:multimenu058_014_wiki_pvpjob_10
 execute as @s[scores={MultiMenu=58015}] at @s run function skyblock:multimenu058_015_wiki_pvpjob_11
-execute as @s[scores={MultiMenu=59}] at @s run function skyblock:multimenu059_changecitybgm6
-execute as @s[scores={MultiMenu=60}] at @s run function skyblock:multimenu060_changecitybgm7
+execute as @s[scores={MultiMenu=59..60}] at @s run function skyblock:multimenu059_changecitybgm1
 execute as @s[scores={MultiMenu=61}] at @s run function skyblock:multimenu061_setting_togglemultimenupos1
 execute as @s[scores={MultiMenu=63}] at @s run function skyblock:multimenu063_social_particleart
 execute as @s[scores={MultiMenu=631}] at @s run function skyblock:multimenu0631_particleart_maineffect
