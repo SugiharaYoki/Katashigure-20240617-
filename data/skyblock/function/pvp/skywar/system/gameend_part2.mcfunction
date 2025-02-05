@@ -18,7 +18,7 @@ tag @n[tag=sc] remove MapLoaAlr
 #execute as @a[scores={Perm_PersonDeath=10000..}] at @s run advancement grant @s only skyblock:skyblock_lost10000
 #初始化玩家变量与状态
 xp set @a[tag=PVPing] 0
-execute as @a[tag=PVPing] at @s run function skyblock:skywar_system_levelbonus
+execute as @a[tag=PVPing] at @s run function skyblock:pvp/skywar/system/levelbonus
 scoreboard players set @a Temp4 0
 gamemode adventure @a[gamemode=!creative]
 #scoreboard objectives remove PersonTimeRemain
@@ -57,7 +57,7 @@ spawnpoint @a[tag=PVP_see] -43 55 0
 tp @a[tag=PVP_see] -126 57.2 -153 facing -127 57.2 -153
 #tp @a[tag=PVPing,scores={CityBackPos=8011}] -8 88 82 facing -8 88 83
 #tp @a[tag=PVPing,scores={CityBackPos=8021}] 27 87 27 facing 28 87 27
-execute as @a[tag=PVP_see] run function skyblock:skywar_system_removeallgaming
+execute as @a[tag=PVP_see] run function skyblock:pvp/skywar/system/removeallgaming
 #停止职业计时器
 #停止附属计时器
 scoreboard objectives remove Temp5
@@ -70,7 +70,7 @@ gamerule keepInventory true
 scoreboard players set @a[tag=PVPing] AnnouncementTime 0
 ##
 tellraw @a[tag=DebugMode] [{"text":"System_Debug","color":"dark_blue"},{"text":" : PVP 闭局程序 运行结束","color":"dark_gray"}]
-scoreboard players set @n[tag=sc] SSgspT 0
+scoreboard players set skywar_start rng1 0
 #移除主控插座
 setblock -17 23 32 air
 #移除各项计时器
@@ -78,7 +78,7 @@ setblock -17 23 32 air
 #setblock -55 143 -58 air
 setblock -27 143 -58 air
 #《PVP计时器关闭》
-setblock -54 143 -53 air
+setblock -55 143 -58 air
 #删除地图
 execute if entity @n[tag=sc,scores={Map_Theme=1}] run function skyblock:pvp/skywar/system/init/map/common_partdeletemap_1
 execute if entity @n[tag=sc,scores={Map_Theme=2}] run function skyblock:pvp/skywar/system/init/map/common_partdeletemap_2

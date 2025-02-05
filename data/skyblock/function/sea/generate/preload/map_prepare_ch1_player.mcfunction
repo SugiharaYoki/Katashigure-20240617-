@@ -28,7 +28,7 @@ scoreboard players set @s sea_oxygen 20
 scoreboard players set @s sea_shielding_3 0
 scoreboard players set @s SEA_pounce_charge 0
 
-function skyblock:skywar_system_removeallmd
+function skyblock:pvp/skywar/system/removeallmd
 
 tag @s remove sea_ch3_badend
 

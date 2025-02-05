@@ -31,8 +31,8 @@ execute if score @s SeGa_StandLastBH < @s Azr_wave run scoreboard players operat
 execute if entity @s[x=-79900,y=40,z=0,distance=0..800] run spawnpoint @s -79953 38 -14 -90
 execute if entity @s[x=-79900,y=40,z=0,distance=0..800] run tp @s -79953.0 38.5 -14.0 facing -79952.0 38.5 -14.0
 #对接主城系统
-function skyblock:skywar_system_removeallmd
-function skyblock:skywar_system_removeallgaming
+function skyblock:pvp/skywar/system/removeallmd
+function skyblock:pvp/skywar/system/removeallgaming
 
 #wtf execute unless entity @s[scores={SeGa_StandLastBH=-1..}] run scoreboard players set @s SeGa_StandLastBH 0
 

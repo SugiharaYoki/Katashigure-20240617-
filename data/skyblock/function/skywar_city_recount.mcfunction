@@ -1,4 +1,4 @@
-execute unless block -17 23 32 soul_lantern run scoreboard players set @n[tag=sc,scores={SSgspT=..10}] SSgspT 1
+execute unless block -17 23 32 soul_lantern if score skywar_start rng1 matches ..10 run scoreboard players set skywar_start rng1 1
 #《计时器初始化》
 #-#-#setblock 10 66 -12 minecraft:redstone_wire
 #-#-#setblock 11 60 -10 minecraft:redstone_wire
@@ -21,28 +21,21 @@ team join HajimetanoMachi @a[tag=PVP_see,tag=!Gaming]
 tag @a[tag=Temp_NoSkyWar,tag=!Gaming] remove NoSkyWar
 tag @a[tag=!Gaming] remove Temp_NoSkyWar
 #《地图预加载初始化》
-#-#-#setblock 12 60 -7 green_wool
-#-#-#setblock 19 60 -7 green_wool
-#-#-#fill 56 87 75 90 87 75 air
-execute if entity @n[tag=sc,scores={SSgspT=1}] run kill @e[x=50000,y=50,z=50000,distance=..1500,type=!player]
 #《禁止提前预加载》
 #-#-#setblock 12 88 86 air
 #《禁止再次开局》
 #《计入历史启动》
 scoreboard players remove @n[tag=sc] HistoryPVP 1
 #无意义变量 scoreboard players set @s Random1 0
-#《变量初始化》
-execute if entity @n[tag=sc,scores={SSgspT=2}] run kill @e[x=50000,y=50,z=50000,distance=..1500,type=item]
 #无意义变量 scoreboard players reset @s RemainPlayer
 scoreboard players reset @s DeathCount
 #-#-#scoreboard players set @s Temp4 1
-function skyblock:skywar_system_removeallgaming
+function skyblock:pvp/skywar/system/removeallgaming
 #无意义变量 scoreboard players reset @s PersonTimeRemain
 scoreboard players reset @s TimeRemainUnsee
 scoreboard players set @s LeftGame 0
 scoreboard players set @s DeathCountTemp 0
 tag @s remove LeftGame
-#-#-#execute if score @n[tag=sc] SSgspT matches 2 run execute as @s[tag=!NoSkyWar] at @s run function skyblock:fallensquare_subreset
 #《职业变量初始化》
 scoreboard players set @s If_Squat 0
 scoreboard players set @s If_Carrot 0
@@ -50,7 +43,7 @@ scoreboard players set @s If_BakedPotato 0
 scoreboard players set @s If_Beetrtsoup 0
 scoreboard players set @s If_Bread 0
 scoreboard players set @s If_EscDeath 0
-function skyblock:skywar_system_removeallmd
+function skyblock:pvp/skywar/system/removeallmd
 scoreboard players set @s If_DamageTaken 0
 #??scoreboard players set @s If_EnchantArrow 0
 scoreboard players set @s If_GoldApple 0

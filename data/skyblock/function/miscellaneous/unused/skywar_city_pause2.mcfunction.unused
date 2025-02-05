@@ -35,13 +35,13 @@ scoreboard players remove @n[tag=sc] HistoryPVP 1
 #无意义变量 scoreboard players reset @s RemainPlayer
 scoreboard players reset @s DeathCount
 #-#-#scoreboard players set @s Temp4 1
-function skyblock:skywar_system_removeallgaming
+function skyblock:pvp/skywar/system/removeallgaming
 #无意义变量 scoreboard players reset @s PersonTimeRemain
 
 tag @s remove LeftGame
 #-#-#execute if score @n[tag=sc] SSgspT matches 2 run execute as @s[tag=!NoSkyWar] at @s run function skyblock:fallensquare_subreset
 #《职业变量初始化》
-function skyblock:skywar_system_removeallmd
+function skyblock:pvp/skywar/system/removeallmd
 scoreboard objectives remove TempIf_Job6A
 scoreboard objectives remove TempIf_Job6B
 scoreboard objectives remove TempIf_Job6C

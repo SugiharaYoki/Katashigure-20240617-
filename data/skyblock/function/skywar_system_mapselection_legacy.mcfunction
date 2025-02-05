@@ -63,4 +63,4 @@ execute if entity @n[tag=sc,scores={Map_Type=4}] run summon minecraft:armor_stan
 execute if entity @n[tag=sc,scores={Map_Type=4}] run clone 47 100 66 55 103 67 41 87 77
 #二阶段初始化
 setblock 12 88 86 polished_blackstone_button[facing=north,face=wall]
-function skyblock:skywar_system_maphaltload
+function skyblock:pvp/skywar/system/maphaltload

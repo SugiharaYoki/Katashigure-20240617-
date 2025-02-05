@@ -92,7 +92,8 @@ scoreboard objectives add SocialOath dummy
 scoreboard objectives add SocialStatus dummy
 scoreboard objectives add SocialRank dummy
 scoreboard objectives add StoryMode dummy
-scoreboard objectives add SSgspT dummy
+#scoreboard objectives add SSgspT dummy
+scoreboard objectives remove SSgspT
 scoreboard objectives add Team1Rem dummy
 scoreboard objectives add Team2Rem dummy
 scoreboard objectives add Team3Rem dummy

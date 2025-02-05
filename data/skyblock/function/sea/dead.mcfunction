@@ -84,7 +84,7 @@ scoreboard players reset @s sea_dead_check
 team leave @s
 tag @s remove Gaming
 tag @s remove NoMultiMenu
-function skyblock:skywar_system_removeallmd
+function skyblock:pvp/skywar/system/removeallmd
 function skyblock:sea/shop_calculation
 scoreboard objectives add Perm_PersonSHD dummy
 scoreboard objectives add sea_remiel_shadow dummy

@@ -13,7 +13,7 @@ fill -90001 102 109 -90001 102 86 grass_block
 fill -90001 101 25 -90001 101 5 grass_block
 clear @a[tag=SeGa_DVA]
 execute as @a[tag=SeGa_DVA] at @s run spawnpoint @s -43 55 0 -90
-execute as @a[tag=SeGa_DVA] at @s run function skyblock:skywar_system_removeallgaming
+execute as @a[tag=SeGa_DVA] at @s run function skyblock:pvp/skywar/system/removeallgaming
 
 execute as @a[x=-90001,y=105,z=56,distance=8..500] at @s run tp @s -90001 105 54 facing -90001 105 53
 fill -90003 106 47 -89999 106 47 barrier

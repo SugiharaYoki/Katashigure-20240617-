@@ -6,7 +6,7 @@ execute if score sc Temp5_LoopE matches 0 if entity @a[team=Team1_5,tag=!ENKIDU]
 execute if score sc Temp5_LoopE matches 0 if entity @a[team=Team1_6,tag=!ENKIDU] unless entity @a[team=!Team1_6,tag=!PVP_observer,tag=PVPing] run scoreboard players add sc Temp5_LoopE 1
 execute if score sc Temp5_LoopE matches 0 if entity @a[team=Team1_7,tag=!ENKIDU] unless entity @a[team=!Team1_7,tag=!PVP_observer,tag=PVPing] run scoreboard players add sc Temp5_LoopE 1
 execute if score sc Temp5_LoopE matches 0 if entity @a[team=Team1_8,tag=!ENKIDU] unless entity @a[team=!Team1_8,tag=!PVP_observer,tag=PVPing] run scoreboard players add sc Temp5_LoopE 1
-execute as @a[tag=PVPing,scores={DeathCount=1..}] at @s run function skyblock:skywar_system_deaddropitem
+execute as @a[tag=PVPing,scores={DeathCount=1..}] at @s run function skyblock:pvp/skywar/system/deaddropitem
 #execute if score @n[tag=sc] Map_Code matches 2 as @a[tag=PVPing] at @s if entity @s[y=70,dy=15] run tp ~ ~-1 ~
 execute if score @n[tag=sc] Map_Code matches 2 as @a[tag=PVPing] at @s if entity @s[y=70,dy=15] run tp ~ ~-1 ~
 execute if score @n[tag=sc] Map_Code matches 3 as @a[tag=PVPing] at @s if entity @s[y=80,dy=15] run tp ~ ~-1 ~
@@ -39,3 +39,7 @@ execute if block -131 58 -133 diamond_block as @a[tag=PVPing] at @s run function
 execute if block -131 58 -133 diamond_block as @e[type=egg,tag=Bless25,x=50000,dx=1000,y=-32,dy=300,z=50000,dz=1000] at @s if entity @a[gamemode=survival,distance=0..25] run function skyblock:pvp/skywar/bless/skywar_ishtar_core25e
 execute if block -131 58 -133 diamond_block as @e[type=wind_charge,tag=Bless26,x=50062,y=226,z=50052,distance=..3000] at @s as @a[gamemode=survival,distance=0..64] unless items entity @s container.* *[custom_data={skywar_ishtar_26:1}] run function skyblock:pvp/skywar/bless/skywar_ishtar_core26e
 execute if block -131 58 -133 diamond_block if items entity @a[gamemode=survival] container.* *[custom_data={skywar_ishtar_24:1}] run function skyblock:pvp/skywar/bless/skywar_ishtar_core24e
+
+scoreboard players add skywar_loop rng1 1
+execute if score skywar_loop rng1 matches 5 run function skyblock:pvp/skywar/system/game_eventcore_loop
+execute if score skywar_loop rng1 matches 5 run scoreboard players set skywar_loop rng1 0

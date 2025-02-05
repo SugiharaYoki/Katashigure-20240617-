@@ -21,7 +21,7 @@ execute if score @s sea_dead_check matches 1.. run tellraw @a[tag=SEAPT] [{"sele
 execute if score @s sea_dead_check matches 1.. run tellraw @s [{"text":"你已经死亡！","color":"red"}]
 execute if score @s sea_dead_check matches 1.. run tellraw @s [{"text":"现在持有的影之石： ","color":"white"},{"score":{"name":"@s","objective":"Perm_PersonSHD"}}]
 execute if score @s sea_dead_check matches 1.. run function skyblock:sea/dead
-execute if score @s sea_dead_check matches 1.. run function skyblock:skywar_system_removeallgaming
+execute if score @s sea_dead_check matches 1.. run function skyblock:pvp/skywar/system/removeallgaming
 
 
 scoreboard players set @s sea_dead 0

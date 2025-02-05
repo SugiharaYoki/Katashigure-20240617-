@@ -22,8 +22,8 @@ execute if block -41 156 -57 purple_stained_glass if score sc AnnouncementRoB ma
 execute if block -41 156 -57 blue_stained_glass if score sc AnnouncementRoB matches 1 as @a at @s unless score @s dailydiv_n2 >= @e[limit=1,tag=sc] dailydivc2 run function skyblock:city_utility_dayshift_notice
 ###execute as @n[tag=sc,type=witch,scores={AnnouncementRoB=1}] at @s run effect give @a[distance=0..1000] minecraft:regeneration 3 10 true
 #PVP战争留在场外的玩家 传送至中枢之城
-execute unless block -17 23 32 soul_lantern if score sc AnnouncementRoB matches 1 as @a[x=50000,y=0,z=50000,distance=0..500,tag=!PVPing,tag=!ServerManager] at @s run function skyblock:skywar_system_backtocity
-execute unless block -21 23 32 soul_lantern if score sc AnnouncementRoB matches 1 as @a[tag=SeGa_StandLastA] at @s run function skyblock:skywar_system_backtocity
+execute unless block -17 23 32 soul_lantern if score sc AnnouncementRoB matches 1 as @a[x=50000,y=0,z=50000,distance=0..500,tag=!PVPing,tag=!ServerManager] at @s run function skyblock:pvp/skywar/system/backtocity
+execute unless block -21 23 32 soul_lantern if score sc AnnouncementRoB matches 1 as @a[tag=SeGa_StandLastA] at @s run function skyblock:pvp/skywar/system/backtocity
 #[{"text":"您如今正处于观察者模式！ ","underlined":false,"color":"yellow"},{"text":"返回中枢之城","underlined":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set -2"},"hoverEvent":{"action":"show_text","contents":{"text":"返回中枢之城","color":"white"}}}]
 ###execute as @n[tag=sc,type=witch,scores={AnnouncementRoB=1}] at @s run effect give @a[distance=0..1000] minecraft:saturation 8 10 true
 execute if score sc AnnouncementRoB matches 3.. at @s run scoreboard players set sc AnnouncementRoB 0
@@ -35,7 +35,7 @@ execute if entity @a[tag=ServerManager,team=!TokumeiM,team=!TokumeiO,tag=!Gaming
 gamemode adventure @a[tag=!Gaming,tag=!ServerManager,tag=!ServerOperator,tag=!PVP_see]
 effect give @a[tag=!Gaming] minecraft:saturation infinite 0 true
 execute unless block -17 23 32 minecraft:soul_lantern run spawnpoint @a[x=50000,y=0,z=50000,distance=0..1200] -43 55 0
-execute unless block -17 23 32 minecraft:soul_lantern as @a[tag=PVP_see,x=50000,y=50,z=50000,distance=1500..] at @s run function skyblock:skywar_system_removeallgaming
+execute unless block -17 23 32 minecraft:soul_lantern as @a[tag=PVP_see,x=50000,y=50,z=50000,distance=1500..] at @s run function skyblock:pvp/skywar/system/removeallgaming
 stopsound @a music minecraft:music.game
 stopsound @a music minecraft:music.creative
 execute as @a at @s if block ~ ~-1 ~ minecraft:structure_block[mode=corner] run spawnpoint @s ~ ~ ~

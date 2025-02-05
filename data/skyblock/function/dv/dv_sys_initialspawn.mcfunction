@@ -1,6 +1,6 @@
 scoreboard players set @s MultiMenu 0
-execute as @s at @s run function skyblock:skywar_system_removeallgaming
-execute as @s at @s run function skyblock:skywar_system_removeallmd
+execute as @s at @s run function skyblock:pvp/skywar/system/removeallgaming
+execute as @s at @s run function skyblock:pvp/skywar/system/removeallmd
 
 clear @s
 effect clear @s

@@ -1,4 +1,4 @@
-execute unless block -17 23 32 soul_lantern run scoreboard players set @n[tag=sc,scores={SSgspT=..10}] SSgspT -1
+execute unless block -17 23 32 soul_lantern if score skywar_start rng1 matches ..10 run scoreboard players set skywar_start rng1 -1
 #《计时器初始化》
 #-#-#setblock 10 66 -12 minecraft:redstone_wire
 #-#-#setblock 11 60 -10 minecraft:redstone_wire
@@ -39,15 +39,14 @@ scoreboard players remove @n[tag=sc] HistoryPVP 1
 #无意义变量 scoreboard players reset @s RemainPlayer
 scoreboard players reset @s DeathCount
 #-#-#scoreboard players set @s Temp4 1
-function skyblock:skywar_system_removeallgaming
+function skyblock:pvp/skywar/system/removeallgaming
 #无意义变量 scoreboard players reset @s PersonTimeRemain
 scoreboard players reset @s TimeRemainUnsee
 scoreboard players set @s LeftGame 0
 scoreboard players set @s DeathCountTemp 0
 tag @s remove LeftGame
-#-#-#execute if score @n[tag=sc] SSgspT matches 2 run execute as @s[tag=!NoSkyWar] at @s run function skyblock:fallensquare_subreset
 #《职业变量初始化》
-function skyblock:skywar_system_removeallmd
+function skyblock:pvp/skywar/system/removeallmd
 #??scoreboard players set @s If_EnchantArrow 0
 
 scoreboard objectives remove TempIf_Job6A
