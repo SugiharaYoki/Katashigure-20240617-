@@ -1,6 +1,6 @@
 execute unless block -17 23 32 soul_lantern if score skywar_start rng1 matches ..10 run scoreboard players add skywar_start rng1 1
 execute if block -17 23 32 soul_lantern if score skywar_start rng1 matches 11.. run scoreboard players add skywar_start rng1 1
-execute unless score skywar_start rng1 matches ..-9999 run scoreboard players add skywar_start rng1 1
+execute unless score skywar_start rng1 matches -9999.. run scoreboard players add skywar_start rng1 1
 #《计时器初始化》
 #-#-#setblock 10 66 -12 minecraft:redstone_wire
 #-#-#setblock 11 60 -10 minecraft:redstone_wire
