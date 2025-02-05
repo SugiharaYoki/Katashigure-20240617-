@@ -13,4 +13,4 @@ execute if score world_loop rng1 matches 5 run scoreboard players set world_loop
 
 #execute if entity @a[tag=SeGa_StandLastA] run function skyblock:azr/ingame_azrielsmidgarden_core disable
 
-execute unless block -17 23 32 soul_lantern run scoreboard players set skywar_start rng1 1
+#execute unless block -17 23 32 soul_lantern run scoreboard players set skywar_start rng1 1
