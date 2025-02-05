@@ -70,9 +70,9 @@ execute if block -38047 76 -38053 minecraft:black_shulker_box{Items:[{Slot:15b,i
 setblock ~ ~ ~1 redstone_block
 setblock ~ ~ ~ air
 setblock ~ ~ ~1 air
-execute if block -38047 76 -38053 minecraft:black_shulker_box{Items:[{Slot:15b,id:"minecraft:white_concrete"}]} run function skyblock:preload_map_pvp_checkwar_partgeneratetreasure_001
-execute if block -38047 76 -38053 minecraft:black_shulker_box{Items:[{Slot:15b,id:"minecraft:orange_concrete"}]} run function skyblock:preload_map_pvp_checkwar_partgeneratetreasure_002
-execute if block -38047 76 -38053 minecraft:black_shulker_box{Items:[{Slot:15b,id:"minecraft:magenta_concrete"}]} run function skyblock:preload_map_pvp_checkwar_partgeneratetreasure_003
-execute if block -38047 76 -38053 minecraft:black_shulker_box{Items:[{Slot:15b,id:"minecraft:light_blue_concrete"}]} run function skyblock:preload_map_pvp_checkwar_partgeneratetreasure_004
-execute if block -38047 76 -38053 minecraft:black_shulker_box{Items:[{Slot:15b,id:"minecraft:yellow_concrete"}]} run function skyblock:preload_map_pvp_checkwar_partgeneratetreasure_005
-#execute if block -38047 76 -38053 minecraft:black_shulker_box{Items:[{Slot:15b,id:"minecraft:lime_concrete"}]} run function skyblock:preload_map_pvp_checkwar_partgeneratetreasure_001
+execute if block -38047 76 -38053 minecraft:black_shulker_box{Items:[{Slot:15b,id:"minecraft:white_concrete"}]} run function skyblock:pvp/skywar/system/init/map/checkwar_partgeneratetreasure_001
+execute if block -38047 76 -38053 minecraft:black_shulker_box{Items:[{Slot:15b,id:"minecraft:orange_concrete"}]} run function skyblock:pvp/skywar/system/init/map/checkwar_partgeneratetreasure_002
+execute if block -38047 76 -38053 minecraft:black_shulker_box{Items:[{Slot:15b,id:"minecraft:magenta_concrete"}]} run function skyblock:pvp/skywar/system/init/map/checkwar_partgeneratetreasure_003
+execute if block -38047 76 -38053 minecraft:black_shulker_box{Items:[{Slot:15b,id:"minecraft:light_blue_concrete"}]} run function skyblock:pvp/skywar/system/init/map/checkwar_partgeneratetreasure_004
+execute if block -38047 76 -38053 minecraft:black_shulker_box{Items:[{Slot:15b,id:"minecraft:yellow_concrete"}]} run function skyblock:pvp/skywar/system/init/map/checkwar_partgeneratetreasure_005
+#execute if block -38047 76 -38053 minecraft:black_shulker_box{Items:[{Slot:15b,id:"minecraft:lime_concrete"}]} run function skyblock:pvp/skywar/system/init/map/checkwar_partgeneratetreasure_001

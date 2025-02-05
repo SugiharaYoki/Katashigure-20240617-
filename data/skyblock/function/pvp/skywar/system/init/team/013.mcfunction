@@ -62,30 +62,30 @@ tag @a[team=Team1_3] add PVPTeamed
 team join Team1_4 @r[tag=PVPing,tag=!PVPTeamed]
 tag @a[team=Team1_4] add PVPTeamed
 #
-execute if block 27 56 -105 stripped_birch_wood run function skyblock:skywar_system_gamestartprep_team_013_tp_xs
-execute if block 27 56 -105 stripped_birch_wood run function skyblock:skywar_system_gamestartprep_team_013_tp_xs
-execute if block 27 56 -105 stripped_birch_wood run function skyblock:skywar_system_gamestartprep_team_013_tp_xs
-execute if block 27 56 -105 stripped_birch_wood run function skyblock:skywar_system_gamestartprep_team_013_tp_xs
-execute if block 27 56 -105 stripped_birch_wood run function skyblock:skywar_system_gamestartprep_team_013_tp_xs
-execute if block 27 56 -105 stripped_birch_wood run function skyblock:skywar_system_gamestartprep_team_013_tp_xs
-execute if block 27 56 -105 oak_planks run function skyblock:skywar_system_gamestartprep_team_013_tp_s
-execute if block 27 56 -105 jungle_log run function skyblock:skywar_system_gamestartprep_team_013_tp_m
-execute if block 27 56 -105 crimson_hyphae run function skyblock:skywar_system_gamestartprep_team_013_tp_l
-execute if block 27 56 -105 oak_planks run function skyblock:skywar_system_gamestartprep_team_013_tp_s
-execute if block 27 56 -105 jungle_log run function skyblock:skywar_system_gamestartprep_team_013_tp_m
-execute if block 27 56 -105 crimson_hyphae run function skyblock:skywar_system_gamestartprep_team_013_tp_l
-execute if block 27 56 -105 oak_planks run function skyblock:skywar_system_gamestartprep_team_013_tp_s
-execute if block 27 56 -105 jungle_log run function skyblock:skywar_system_gamestartprep_team_013_tp_m
-execute if block 27 56 -105 crimson_hyphae run function skyblock:skywar_system_gamestartprep_team_013_tp_l
-execute if block 27 56 -105 oak_planks run function skyblock:skywar_system_gamestartprep_team_013_tp_s
-execute if block 27 56 -105 jungle_log run function skyblock:skywar_system_gamestartprep_team_013_tp_m
-execute if block 27 56 -105 crimson_hyphae run function skyblock:skywar_system_gamestartprep_team_013_tp_l
-execute if block 27 56 -105 oak_planks run function skyblock:skywar_system_gamestartprep_team_013_tp_s
-execute if block 27 56 -105 jungle_log run function skyblock:skywar_system_gamestartprep_team_013_tp_m
-execute if block 27 56 -105 crimson_hyphae run function skyblock:skywar_system_gamestartprep_team_013_tp_l
-execute if block 27 56 -105 oak_planks run function skyblock:skywar_system_gamestartprep_team_013_tp_s
-execute if block 27 56 -105 jungle_log run function skyblock:skywar_system_gamestartprep_team_013_tp_m
-execute if block 27 56 -105 crimson_hyphae run function skyblock:skywar_system_gamestartprep_team_013_tp_l
+execute if block 27 56 -105 stripped_birch_wood run function skyblock:pvp/skywar/system/init/team/013_tp_xs
+execute if block 27 56 -105 stripped_birch_wood run function skyblock:pvp/skywar/system/init/team/013_tp_xs
+execute if block 27 56 -105 stripped_birch_wood run function skyblock:pvp/skywar/system/init/team/013_tp_xs
+execute if block 27 56 -105 stripped_birch_wood run function skyblock:pvp/skywar/system/init/team/013_tp_xs
+execute if block 27 56 -105 stripped_birch_wood run function skyblock:pvp/skywar/system/init/team/013_tp_xs
+execute if block 27 56 -105 stripped_birch_wood run function skyblock:pvp/skywar/system/init/team/013_tp_xs
+execute if block 27 56 -105 oak_planks run function skyblock:pvp/skywar/system/init/team/013_tp_s
+execute if block 27 56 -105 jungle_log run function skyblock:pvp/skywar/system/init/team/013_tp_m
+execute if block 27 56 -105 crimson_hyphae run function skyblock:pvp/skywar/system/init/team/013_tp_l
+execute if block 27 56 -105 oak_planks run function skyblock:pvp/skywar/system/init/team/013_tp_s
+execute if block 27 56 -105 jungle_log run function skyblock:pvp/skywar/system/init/team/013_tp_m
+execute if block 27 56 -105 crimson_hyphae run function skyblock:pvp/skywar/system/init/team/013_tp_l
+execute if block 27 56 -105 oak_planks run function skyblock:pvp/skywar/system/init/team/013_tp_s
+execute if block 27 56 -105 jungle_log run function skyblock:pvp/skywar/system/init/team/013_tp_m
+execute if block 27 56 -105 crimson_hyphae run function skyblock:pvp/skywar/system/init/team/013_tp_l
+execute if block 27 56 -105 oak_planks run function skyblock:pvp/skywar/system/init/team/013_tp_s
+execute if block 27 56 -105 jungle_log run function skyblock:pvp/skywar/system/init/team/013_tp_m
+execute if block 27 56 -105 crimson_hyphae run function skyblock:pvp/skywar/system/init/team/013_tp_l
+execute if block 27 56 -105 oak_planks run function skyblock:pvp/skywar/system/init/team/013_tp_s
+execute if block 27 56 -105 jungle_log run function skyblock:pvp/skywar/system/init/team/013_tp_m
+execute if block 27 56 -105 crimson_hyphae run function skyblock:pvp/skywar/system/init/team/013_tp_l
+execute if block 27 56 -105 oak_planks run function skyblock:pvp/skywar/system/init/team/013_tp_s
+execute if block 27 56 -105 jungle_log run function skyblock:pvp/skywar/system/init/team/013_tp_m
+execute if block 27 56 -105 crimson_hyphae run function skyblock:pvp/skywar/system/init/team/013_tp_l
 
 execute if block 27 56 -105 stripped_birch_wood run tp @a[tag=!PVPTped,tag=!NoSkyWar] 50434 25 50434
 execute if block 27 56 -105 oak_planks run tp @a[tag=!PVPTped,tag=!NoSkyWar] 50434 30 50434

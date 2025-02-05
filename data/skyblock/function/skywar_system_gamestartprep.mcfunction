@@ -8,7 +8,7 @@ execute unless entity @n[tag=sc,scores={SSgspT=-9999..}] run scoreboard players 
 execute if score @n[tag=sc] SSgspT matches 2 run fill -130 59 -117 -130 59 -128 air
 
 #《初始化队伍》
-execute if score @n[tag=sc] SSgspT matches 2 run function skyblock:skywar_system_gamestartprep_team_create
+execute if score @n[tag=sc] SSgspT matches 2 run function skyblock:pvp/skywar/system/init/team/create
 #《停止公告系统》
 execute if score @n[tag=sc] SSgspT matches 2 run scoreboard players set @s AnnouncementTime 0
 #《游戏规则初始化》
@@ -54,21 +54,21 @@ execute if entity @n[tag=sc,scores={SSgspT=2,Map_Theme=4}] run forceload add 506
 execute if entity @n[tag=sc,scores={SSgspT=2}] as @e[tag=!NoSkyWar,tag=!Gaming] run kill @e[type=wolf,distance=0..10,tag=!Wolfer]
 execute if entity @n[tag=sc,scores={SSgspT=2}] run kill @e[x=50000,y=50,z=50000,distance=..1500,type=!player]
 execute if entity @n[tag=!MapLoaAlr,tag=sc,scores={SSgspT=2,Map_Code=14}] run forceload add -9838 -10164 -9709 -10035
-execute if entity @n[tag=!MapLoaAlr,tag=sc,scores={SSgspT=2,Map_Code=2}] run function skyblock:preload_map_pvp_map002_part1
-execute if entity @n[tag=!MapLoaAlr,tag=sc,scores={SSgspT=2,Map_Code=3}] run function skyblock:preload_map_pvp_map003_part1
-execute if entity @n[tag=!MapLoaAlr,tag=sc,scores={SSgspT=2,Map_Code=4}] run function skyblock:preload_map_pvp_map004_part1_hard
-execute if entity @n[tag=!MapLoaAlr,tag=sc,scores={SSgspT=2,Map_Code=5}] run function skyblock:preload_map_pvp_map005_part1
-execute if entity @n[tag=!MapLoaAlr,tag=sc,scores={SSgspT=2,Map_Code=7}] run function skyblock:preload_map_pvp_map007_part1
-execute if entity @n[tag=!MapLoaAlr,tag=sc,scores={SSgspT=2,Map_Code=8}] run function skyblock:preload_map_pvp_map008_part1
-execute if entity @n[tag=!MapLoaAlr,tag=sc,scores={SSgspT=2,Map_Code=10}] run function skyblock:preload_map_pvp_map010_part1_hard
-execute if entity @n[tag=!MapLoaAlr,tag=sc,scores={SSgspT=2,Map_Code=11}] run function skyblock:preload_map_pvp_map011_size1
-execute if entity @n[tag=!MapLoaAlr,tag=sc,scores={SSgspT=2,Map_Code=13}] run function skyblock:preload_map_pvp_map013_part1
-execute if entity @n[tag=!MapLoaAlr,tag=sc,scores={SSgspT=2,Map_Code=14}] unless block -156 59 -114 diamond_block run function skyblock:preload_map_pvp_map014_part1_hard
-execute if entity @n[tag=!MapLoaAlr,tag=sc,scores={SSgspT=2,Map_Code=14}] if block -156 59 -114 diamond_block run function skyblock:preload_map_pvp_map014alt_part1_hard
-execute if entity @n[tag=!MapLoaAlr,tag=sc,scores={SSgspT=2,Map_Code=15}] run function skyblock:preload_map_pvp_map015_part1_hard
-execute if entity @n[tag=!MapLoaAlr,tag=sc,scores={SSgspT=2,Map_Code=16}] run function skyblock:preload_map_pvp_map016_part1_hard
-execute if entity @n[tag=!MapLoaAlr,tag=sc,scores={SSgspT=2,Map_Code=17}] run function skyblock:preload_map_pvp_map017_part1_hard
-execute if entity @n[tag=!MapLoaAlr,tag=sc,scores={SSgspT=2,Map_Code=18}] run function skyblock:preload_map_pvp_map018_part1_hard
+execute if entity @n[tag=!MapLoaAlr,tag=sc,scores={SSgspT=2,Map_Code=2}] run function skyblock:pvp/skywar/system/init/map/map002_part1
+execute if entity @n[tag=!MapLoaAlr,tag=sc,scores={SSgspT=2,Map_Code=3}] run function skyblock:pvp/skywar/system/init/map/map003_part1
+execute if entity @n[tag=!MapLoaAlr,tag=sc,scores={SSgspT=2,Map_Code=4}] run function skyblock:pvp/skywar/system/init/map/map004_part1_hard
+execute if entity @n[tag=!MapLoaAlr,tag=sc,scores={SSgspT=2,Map_Code=5}] run function skyblock:pvp/skywar/system/init/map/map005_part1
+execute if entity @n[tag=!MapLoaAlr,tag=sc,scores={SSgspT=2,Map_Code=7}] run function skyblock:pvp/skywar/system/init/map/map007_part1
+execute if entity @n[tag=!MapLoaAlr,tag=sc,scores={SSgspT=2,Map_Code=8}] run function skyblock:pvp/skywar/system/init/map/map008_part1
+execute if entity @n[tag=!MapLoaAlr,tag=sc,scores={SSgspT=2,Map_Code=10}] run function skyblock:pvp/skywar/system/init/map/map010_part1_hard
+execute if entity @n[tag=!MapLoaAlr,tag=sc,scores={SSgspT=2,Map_Code=11}] run function skyblock:pvp/skywar/system/init/map/map011_size1
+execute if entity @n[tag=!MapLoaAlr,tag=sc,scores={SSgspT=2,Map_Code=13}] run function skyblock:pvp/skywar/system/init/map/map013_part1
+execute if entity @n[tag=!MapLoaAlr,tag=sc,scores={SSgspT=2,Map_Code=14}] unless block -156 59 -114 diamond_block run function skyblock:pvp/skywar/system/init/map/map014_part1_hard
+execute if entity @n[tag=!MapLoaAlr,tag=sc,scores={SSgspT=2,Map_Code=14}] if block -156 59 -114 diamond_block run function skyblock:pvp/skywar/system/init/map/map014alt_part1_hard
+execute if entity @n[tag=!MapLoaAlr,tag=sc,scores={SSgspT=2,Map_Code=15}] run function skyblock:pvp/skywar/system/init/map/map015_part1_hard
+execute if entity @n[tag=!MapLoaAlr,tag=sc,scores={SSgspT=2,Map_Code=16}] run function skyblock:pvp/skywar/system/init/map/map016_part1_hard
+execute if entity @n[tag=!MapLoaAlr,tag=sc,scores={SSgspT=2,Map_Code=17}] run function skyblock:pvp/skywar/system/init/map/map017_part1_hard
+execute if entity @n[tag=!MapLoaAlr,tag=sc,scores={SSgspT=2,Map_Code=18}] run function skyblock:pvp/skywar/system/init/map/map018_part1_hard
 #[futuredevskywar]
 execute if entity @n[tag=!MapLoaAlr,tag=sc,scores={SSgspT=3,Map_Code=14}] run forceload remove -9838 -10164 -9709 -10035
 execute if entity @n[tag=!MapLoaAlr,tag=sc,scores={SSgspT=3}] run tag @n[tag=sc] add MapLoaAlr
@@ -199,7 +199,7 @@ execute if score @n[tag=sc] SSgspT matches 11 run effect give @a[tag=PVPing] min
 execute if score @n[tag=sc] SSgspT matches 11 run effect give @a[tag=PVPing] minecraft:saturation 8 0 true
 
 execute if score @n[tag=sc] SSgspT matches 12..14 run clear @a[tag=!NoSkyWar]
-execute if score @n[tag=sc] SSgspT matches 13 run function skyblock:skywar_system_gamestartprep_team_index
+execute if score @n[tag=sc] SSgspT matches 13 run function skyblock:pvp/skywar/system/init/team/index
 execute if score @n[tag=sc] SSgspT matches 13 run gamemode spectator @a[tag=PVPing,tag=!PVPTeamed]
 execute if score @n[tag=sc] SSgspT matches 13 run tag @a[tag=PVPing] add PVP_see
 execute if score @n[tag=sc] SSgspT matches 13 run tag @a[tag=PVPing,tag=!PVPTeamed] remove PVPing
@@ -275,7 +275,7 @@ execute if block -131 59 -117 green_concrete if score @n[tag=sc] SSgspT matches 
 
 execute if score @n[tag=sc] SSgspT matches 17 run execute as @a[tag=PVPing] at @s run effect clear @s saturation
 
-execute if block -131 58 -133 diamond_block if score @n[tag=sc] SSgspT matches 15 run execute as @a[tag=PVPing] at @s run function skyblock:skywar_ishtar_bless
+execute if block -131 58 -133 diamond_block if score @n[tag=sc] SSgspT matches 15 run execute as @a[tag=PVPing] at @s run function skyblock:pvp/skywar/bless/skywar_ishtar_bless
 #execute if score @n[tag=sc] SSgspT matches 18 run tellraw @a[tag=PVPing] {"text":"看板狐： 所有参与者已合并为 A C 两组","color":"dark_green"}
 #execute if score @n[tag=sc] SSgspT matches 18 run team join Team1_1 @a[team=Team1_3]
 #execute if score @n[tag=sc] SSgspT matches 18 run team join Team1_2 @a[team=Team1_4]

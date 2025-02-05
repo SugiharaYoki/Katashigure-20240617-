@@ -7,7 +7,7 @@ scoreboard objectives add ishtar_core_5 dummy
 scoreboard objectives add Skywar_ishtar_usehorn minecraft.used:minecraft.goat_horn
 
 kill @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{skywar:1}}}}]
-execute if entity @s[scores={If_MD_13=1..},gamemode=survival] run function skyblock:skywar_ishtar_core9
+execute if entity @s[scores={If_MD_13=1..},gamemode=survival] run function skyblock:pvp/skywar/bless/skywar_ishtar_core9
 
 execute if entity @s[scores={If_MD_Strad=1..}] run playsound minecraft:block.beacon.power_select ambient @a ~ ~2 ~ 4 0.5
 execute if entity @s[scores={If_MD_Strad=1..}] run summon area_effect_cloud ~ ~ ~ {Particle:{type:"end_rod"},Radius:5,Duration:200,potion_contents:{custom_color:16383998,custom_effects:[{id:levitation,duration:120,amplifier:3,show_particles:1b,show_icon:1b},{id:glowing,duration:120,amplifier:0,show_particles:1b,show_icon:1b}]}}
@@ -20,14 +20,12 @@ execute if entity @s[scores={If_MD_Wait=1..}] run effect give @a[tag=PVPing,dist
 execute if entity @s[scores={If_MD_Wait=1..}] run effect give @a[tag=PVPing,distance=0.1..5.3] resistance 5 19
 execute if entity @s[scores={If_MD_Wait=1..}] run effect give @a[tag=PVPing,distance=0.1..5.3] wither 5 0
 execute if entity @s[scores={If_MD_Wait=1..}] run scoreboard players set @a[tag=PVPing,distance=0.1..5.3] If_Bless11 60
-execute as @a[tag=PVPing,gamemode=survival,scores={If_Bless11=1..}] at @s run function skyblock:skywar_ishtar_core11
+execute as @a[tag=PVPing,gamemode=survival,scores={If_Bless11=1..}] at @s run function skyblock:pvp/skywar/bless/skywar_ishtar_core11
 execute if entity @s[scores={If_MD_Wait=1..}] run scoreboard players set @s If_MD_Wait 0
 
-execute if entity @s[scores={If_MD_Chirp=1..}] rotated ~ 0 run function skyblock:skywar_ishtar_core17
+execute if entity @s[scores={If_MD_Chirp=1..}] rotated ~ 0 run function skyblock:pvp/skywar/bless/skywar_ishtar_core17
 
-execute if items entity @s[predicate=!skyblock:sneaking] container.* *[custom_data={skywar_antiinvis:1}] at @a[distance=0.1..5,nbt={active_effects:[{id:"minecraft:invisibility"}]}] run playsound minecraft:block.note_block.chime ambient @a ~ ~1 ~ 4 1.5
-execute if items entity @s[predicate=!skyblock:sneaking] container.* *[custom_data={skywar_antiinvis:1}] as @a[distance=0.1..5,nbt={active_effects:[{id:"minecraft:invisibility"}]}] at @s run effect give @s glowing 5 0 true
-execute if items entity @s[predicate=!skyblock:sneaking] container.* *[custom_data={skywar_antiinvis:1}] as @a[distance=0.1..5,nbt={active_effects:[{id:"minecraft:invisibility"}]}] at @s run effect clear @s invisibility
+execute if items entity @s container.* *[custom_data={skywar_antiinvis:1}] as @a[distance=0.1..5,nbt={active_effects:[{id:"minecraft:invisibility"}]}] at @s run function skyblock:pvp/skywar/bless/skywar_ishtar_core16
 
 
 execute if entity @s[scores={If_MD_Stal=1..}] run playsound entity.squid.squirt ambient @a ~ ~1 ~ 4 0.5
@@ -63,27 +61,27 @@ execute if entity @s[scores={If_MD_Otherside=1..}] run playsound item.mace.smash
 execute if entity @s[scores={If_MD_Otherside=1..}] run give @s mace[enchantments={wind_burst:2}]
 execute if entity @s[scores={If_MD_Otherside=1..}] run scoreboard players set @s If_MD_Otherside 0
 
-execute if items entity @s weapon.offhand *[custom_data={skywar_ishtar_4:1}] run function skyblock:skywar_ishtar_core4
-execute if items entity @s weapon.offhand *[custom_data={skywar_ishtar_4:1}] as @e[type=trident,tag=Bless4_Trident] at @s if entity @a[tag=PVPing,distance=0..1000] run function skyblock:skywar_ishtar_core4_e
+execute if items entity @s weapon.offhand *[custom_data={skywar_ishtar_4:1}] run function skyblock:pvp/skywar/bless/skywar_ishtar_core4
+execute if items entity @s weapon.offhand *[custom_data={skywar_ishtar_4:1}] as @e[type=trident,tag=Bless4_Trident] at @s if entity @a[tag=PVPing,distance=0..1000] run function skyblock:pvp/skywar/bless/skywar_ishtar_core4_e
 
-execute if items entity @s[scores={Skywar_ishtar_usehorn=1..}] container.* *[custom_data={skywar_ishtar_21:1}] run function skyblock:skywar_ishtar_core21
+execute if items entity @s[scores={Skywar_ishtar_usehorn=1..}] container.* *[custom_data={skywar_ishtar_21:1}] run function skyblock:pvp/skywar/bless/skywar_ishtar_core21
 
-execute if items entity @s[scores={Skywar_ishtar_usehorn=1..}] container.* *[custom_data={skywar_ishtar_22:1}] run function skyblock:skywar_ishtar_core22
+execute if items entity @s[scores={Skywar_ishtar_usehorn=1..}] container.* *[custom_data={skywar_ishtar_22:1}] run function skyblock:pvp/skywar/bless/skywar_ishtar_core22
 
-execute if items entity @s container.* *[custom_data={skywar_ishtar_23:1}] run function skyblock:skywar_ishtar_core23
+execute if items entity @s container.* *[custom_data={skywar_ishtar_23:1}] run function skyblock:pvp/skywar/bless/skywar_ishtar_core23
 
-execute if items entity @s[scores={Skywar_ishtar_usehorn=1..}] container.* *[custom_data={skywar_ishtar_24:1}] run function skyblock:skywar_ishtar_core24
+execute if items entity @s[scores={Skywar_ishtar_usehorn=1..}] container.* *[custom_data={skywar_ishtar_24:1}] run function skyblock:pvp/skywar/bless/skywar_ishtar_core24
 
 execute if items entity @s container.* *[custom_data={skywar_ishtar_25:1}] run tag @e[type=egg,distance=2..5] add Bless25
 
 execute if items entity @s container.* *[custom_data={skywar_ishtar_26:1}] run tag @e[type=wind_charge,distance=2..5] add Bless26
 
-execute if items entity @s[scores={If_Bless27=1..}] container.* *[custom_data={skywar_ishtar_27:1}] run function skyblock:skywar_ishtar_core27
+execute if items entity @s[scores={If_Bless27=1..}] container.* *[custom_data={skywar_ishtar_27:1}] run function skyblock:pvp/skywar/bless/skywar_ishtar_core27
 
-execute if items entity @s[predicate=skyblock:sneaking] container.* *[custom_data={skywar_ishtar_28:1}] at @s unless block ~ ~ ~ air run function skyblock:skywar_ishtar_core28
+execute if items entity @s[predicate=skyblock:sneaking] container.* *[custom_data={skywar_ishtar_28:1}] at @s unless block ~ ~ ~ air run function skyblock:pvp/skywar/bless/skywar_ishtar_core28
 
-execute if items entity @s[scores={If_Bless29=1..}] container.* *[custom_data={skywar_ishtar_29:1}] at @s run function skyblock:skywar_ishtar_core29
+execute if items entity @s[scores={If_Bless29=1..}] container.* *[custom_data={skywar_ishtar_29:1}] at @s run function skyblock:pvp/skywar/bless/skywar_ishtar_core29
 
-execute if items entity @s[scores={If_Bless30=1..}] container.* *[custom_data={skywar_ishtar_30:1}] run function skyblock:skywar_ishtar_core30
+execute if items entity @s[scores={If_Bless30=1..}] container.* *[custom_data={skywar_ishtar_30:1}] run function skyblock:pvp/skywar/bless/skywar_ishtar_core30
 
 scoreboard players set @s Skywar_ishtar_usehorn 0
