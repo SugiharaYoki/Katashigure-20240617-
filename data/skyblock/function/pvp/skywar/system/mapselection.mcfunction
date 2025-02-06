@@ -76,4 +76,4 @@ execute if entity @n[tag=sc,scores={Map_Type=4}] run summon minecraft:armor_stan
 execute if entity @n[tag=sc,scores={Map_Type=4}] run summon minecraft:armor_stand -121 60.35 -108 {CustomName:"{\"text\":\"匿名之都 星罗棋盘\",\"color\":\"red\"}",DisabledSlots:65793,CustomNameVisible:1b,Invisible:1b,Marker:1b,NoGravity:1b}
 
 
-execute if score skywar_start rng1 matches 1.. run function skyblock:skywar_city_pause
+execute if score skywar_start rng1 matches 1.. run function skyblock:skywar/city/pause

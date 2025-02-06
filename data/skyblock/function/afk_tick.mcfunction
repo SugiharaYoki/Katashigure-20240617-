@@ -22,7 +22,7 @@ scoreboard players operation @s Afk_totalDistance += @s Afk_distUnderWater
 scoreboard players add @s[scores={Afk_totalDistance=0..0},tag=!Gaming] Afk_tick 1
 execute if entity @s[tag=!AFKING,scores={Afk_tick=2400..}] run tellraw @a [{"selector":"@s","color":"gold","bold":true},{"text":"摸了！","color":"gray"}]
 execute if entity @s[tag=!AFKING,scores={Afk_tick=2400..}] run scoreboard players set @s Afk_totalFSB 0
-execute if entity @s[tag=!AFKING,scores={Afk_tick=2400..},tag=!NoAutoNoA] run tag @s add NoAnnouncement
+execute if entity @s[tag=!AFKING,scores={Afk_tick=2400..},tag=!NoAutoNoA] run tag @s add city_broadcast_off
 execute if entity @s[tag=!AFKING,scores={Afk_tick=2400..},tag=!NoAutoNoA] run tellraw @s [{"text":"因为你在AFK，所以自动开启了关闭公告，如要关闭请在游戏设置里修改。","color":"aqua"}]
 execute if entity @s[tag=!AFKING,scores={Afk_tick=2400..},tag=!NoAutoNoA] run function skyblock:world_system_team_city
 tag @s[scores={Afk_tick=2400..}] add AFKING
@@ -47,7 +47,7 @@ scoreboard players set @s[tag=!AFKING,scores={Afk_totalDistance=1..}] Afk_tick 0
 scoreboard players set @s[tag=AFKING,scores={Afk_totalDistance=1..}] Afk_tick 0
 execute if entity @s[tag=AFKING,scores={Afk_totalDistance=1..}] run tellraw @a [{"selector":"@a[tag=AFKING,scores={Afk_totalDistance=1..}]","color":"gold","bold":true},{"text":"终于醒了！他已经睡了","color":"aqua"},{"score":{"name":"@a[tag=AFKING,scores={Afk_totalDistance=1..},limit=1]","objective":"Afk_sec"},"color":"gold","bold":true},{"text":"秒了！","color":"aqua"}]
 execute if entity @s[tag=AFKING,scores={Afk_totalDistance=1..}] run tellraw @s [{"text":"在你AFK期间一共获得了","color":"aqua"},{"score":{"name":"@s","objective":"Afk_totalFSB"},"color":"gold","bold":true},{"text":"浮世币。","color":"aqua"}]
-execute if entity @s[tag=AFKING,scores={Afk_totalDistance=1..},tag=!NoAutoNoA] run tag @s remove NoAnnouncement
+execute if entity @s[tag=AFKING,scores={Afk_totalDistance=1..},tag=!NoAutoNoA] run tag @s remove city_broadcast_off
 execute if entity @s[tag=AFKING,scores={Afk_totalDistance=1..},tag=!NoAutoNoA] run tellraw @s [{"text":"已重新开启显示公告。","color":"aqua"}]
 tag @s[tag=AFKING,scores={Afk_totalDistance=1..}] remove AFKING
 execute if entity @s[scores={Afk_totalDistance=1..}] run function skyblock:world_system_team_city
