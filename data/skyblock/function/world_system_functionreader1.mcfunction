@@ -69,7 +69,7 @@ execute if entity @s[scores={MultiMenu=828}] run function skyblock:multimenu828_
 execute as @s[scores={MultiMenu=815001..815999}] at @s run function skyblock:world_system_functionreader_maze
 execute as @s[scores={MultiMenu=832001..832999}] at @s run function skyblock:world_system_functionreader_maze
 execute as @s[scores={MultiMenu=103}] at @s run function skyblock:multimenu103_setting_selectcitybgm_extend1a
-execute as @s[scores={MultiMenu=106}] at @s run function skyblock:multimenu106_changecitybgm1
+execute as @s[scores={MultiMenu=106}] at @s run function skyblock:multimenu052_changecitybgm1
 execute as @s[scores={MultiMenu=108}] at @s run function skyblock:multimenu108_setting_selectcitybgm_extend2a
 execute as @s[scores={MultiMenu=109}] at @s run function skyblock:multimenu109_tocreativeworld
 execute as @s[scores={MultiMenu=110}] at @s run function skyblock:multimenu110_creativeworld_creativemode
