@@ -1,9 +1,9 @@
 playsound minecraft:ui.button.click master @s ~ ~ ~ 0.3 1.4 0.4
 
-function skyblock:multimenu131_pvp_bless_macro {bless:ishtar_bless_1,bless_name:"- 统之礼"}
-function skyblock:multimenu131_pvp_bless_macro {bless:ishtar_bless_2,bless_name:"- 纵之礼"}
-function skyblock:multimenu131_pvp_bless_macro {bless:ishtar_bless_3,bless_name:"- 纺之礼"}
-function skyblock:multimenu131_pvp_bless_macro {bless:ishtar_bless_4,bless_name:"- 解之礼"}
+function skyblock:pvp/skywar/bless/setting/bless_macro {bless:ishtar_bless_1,bless_name:"- 统之礼"}
+function skyblock:pvp/skywar/bless/setting/bless_macro {bless:ishtar_bless_2,bless_name:"- 纵之礼"}
+function skyblock:pvp/skywar/bless/setting/bless_macro {bless:ishtar_bless_3,bless_name:"- 纺之礼"}
+function skyblock:pvp/skywar/bless/setting/bless_macro {bless:ishtar_bless_4,bless_name:"- 解之礼"}
 
 tellraw @s [{"text":"    旅行家 启礼「黄金圣果」","color":"gold","hoverEvent":{"action":"show_text","contents":{"text":"附魔金苹果×1","color":"white"}}},{"text":" 统 ","color":"green","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 131008"}},{"text":" 纵 ","color":"green","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 132008"}},{"text":" 纺 ","color":"green","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 133008"}},{"text":" 解 ","color":"green","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 134008"}}]
 

@@ -1,9 +1,9 @@
 scoreboard players add sc Temp5_Loop 1
-execute if entity @n[tag=sc,scores={Temp5_Loop=10..20}] run scoreboard objectives setdisplay sidebar Temp5
-execute if entity @n[tag=sc,scores={Temp5_Loop=10..20}] run scoreboard objectives setdisplay sidebar Temp5
-execute if entity @n[tag=sc,scores={Temp5_Loop=10..20}] run scoreboard objectives setdisplay sidebar Temp5
-execute if entity @n[tag=sc,scores={Temp5_Loop=10..20}] run scoreboard objectives setdisplay sidebar Temp5
-execute if entity @n[tag=sc,scores={Temp5_Loop=10..20}] run scoreboard objectives setdisplay sidebar Temp5
+execute if score sc Temp5_Loop matches 10..20 run scoreboard objectives setdisplay sidebar Temp5
+execute if score sc Temp5_Loop matches 10..20 run scoreboard objectives setdisplay sidebar Temp5
+execute if score sc Temp5_Loop matches 10..20 run scoreboard objectives setdisplay sidebar Temp5
+execute if score sc Temp5_Loop matches 10..20 run scoreboard objectives setdisplay sidebar Temp5
+execute if score sc Temp5_Loop matches 10..20 run scoreboard objectives setdisplay sidebar Temp5
 scoreboard players add sc Temp5_LoopF 1
 execute if score sc Temp5_Loop matches 20 run scoreboard players set sc Temp5_Loop 0
 scoreboard players operation <A组>剩余人数 Temp5 = sc Team1Rem
@@ -26,7 +26,7 @@ scoreboard players set 「服务器情报」 Temp5 -97
 scoreboard players set 「队伍信息」 Temp5 99
 scoreboard players set 『匿名·方时雨城』Katashigure Temp5 -98
 scoreboard players set IP地址＜mc.tokumei.studio Temp5 -99
-scoreboard players set  Temp5 -96
+scoreboard players set ________ Temp5 -96
 
 #execute unless entity @n[tag=sc,scores={Map_Code=4}] run fill 50000 -1 50000 50100 -2 50100 air
 #execute unless entity @n[tag=sc,scores={Map_Code=4}] run fill 50000 -1 50100 50100 -2 50200 air
@@ -78,7 +78,7 @@ execute if score sc Temp5_LoopF matches 19.. run scoreboard players set sc Temp5
 execute if score sc Temp5_LoopE matches 1.. run scoreboard players add sc Temp5_LoopE 1
 execute if score sc Temp5_LoopE matches 2 run title @a[tag=PVP_see] times 0 120 60
 execute if score sc Temp5_LoopE matches 2 run tag @a[tag=PVPing,tag=!PVP_observer] add PVP_win
-execute if score sc Temp5_LoopE matches 2 run title @a[tag=PVP_see] actionbar {"text":"本局游戏结束","color":"green"}
+execute if score sc Temp5_LoopE matches 2 run title @a[tag=PVP_see] actionbar {"text":"游戏结束！","color":"green"}
 execute if score sc Temp5_LoopE matches 2..6 as @a[tag=PVPing,tag=!PVP_observer] at @s run summon firework_rocket ~ ~1 ~ {LifeTime:30,FireworksItem:{id:firework_rocket,count:1,components:{fireworks:{flight_duration:1,explosions:[{shape:"small_ball",has_twinkle:true,has_trail:true,colors:[I;11743532,3887386,2437522,8073150,14602026,6719955,15435844],fade_colors:[I;14602026]}]}}}}
 execute if score sc Temp5_LoopE matches 2 run function skyblock:pvp/skywar/system/gameend_part0
 execute if score sc Temp5_LoopE matches 9 run function skyblock:pvp/skywar/system/gameend_part1

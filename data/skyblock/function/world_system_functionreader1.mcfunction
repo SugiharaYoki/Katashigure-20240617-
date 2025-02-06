@@ -85,15 +85,12 @@ execute as @s[scores={MultiMenu=119}] at @s run function skyblock:multimenu119_p
 execute as @s[scores={MultiMenu=120}] at @s run function skyblock:multimenu120_setting_selectcitybgm_extend2b
 execute as @s[scores={MultiMenu=121}] at @s run function skyblock:multimenu121_setting_selectcitybgm_extend2c
 
-execute as @s[scores={MultiMenu=131}] at @s run function skyblock:multimenu131_pvp_bless
-execute as @s[scores={MultiMenu=131001..134999}] at @s run function skyblock:multimenu131_pvp_bless_execute
+execute as @s[scores={MultiMenu=131}] at @s run function skyblock:pvp/skywar/bless/setting/bless
+execute as @s[scores={MultiMenu=131001..134999}] at @s run function skyblock:pvp/skywar/bless/setting/bless_execute
 
 execute as @s[scores={MultiMenu=119001..119099}] at @s run function skyblock:world_system_functionreader_pvpjob
 execute as @s[scores={MultiMenu=101700..102000}] at @s run function skyblock:world_system_functionreader_musicbox
 execute as @s[scores={MultiMenu=16210001..16329999}] at @s run function skyblock:world_system_functionreader_purchase
-#execute as @s[scores={MultiMenu=16220001}] at @s run function skyblock:azr/ingame_azrielsmidgarden_tellraw_rule_2_sub1
-#execute as @s[scores={MultiMenu=16220002}] at @s run function skyblock:azr/ingame_azrielsmidgarden_tellraw_rule_2_sub2
-#execute as @s[scores={MultiMenu=16220003}] at @s run function skyblock:azr/ingame_azrielsmidgarden_tellraw_rule_2_sub3
 
 execute as @s[scores={MultiMenu=991}] at @s run function skyblock:multimenu991_anypage_button_tomainmenu
 execute as @s[scores={MultiMenu=992}] at @s run function skyblock:multimenu992_anypage_enableskywar
