@@ -12,5 +12,6 @@ $execute unless entity @s[scores={ishtar_bless_4=$(id)}] run data modify storage
 $data modify storage skywar:bless_equip job set value $(job)
 $data modify storage skywar:bless_equip title set value $(title)
 $data modify storage skywar:bless_equip description set value $(description)
+$data modify storage skywar:bless_equip id set value $(id)
 
 function skyblock:pvp/skywar/bless/setting/bless_macro_result with storage skywar:bless_equip
