@@ -9,6 +9,7 @@ $execute unless entity @s[scores={ishtar_bless_2=$(id)}] run data modify storage
 $execute unless entity @s[scores={ishtar_bless_3=$(id)}] run data modify storage skywar:bless_equip temp_3 set value gray
 $execute unless entity @s[scores={ishtar_bless_4=$(id)}] run data modify storage skywar:bless_equip temp_4 set value gray
 
+$data modify storage skywar:bless_equip job set value $(job)
 $data modify storage skywar:bless_equip title set value $(title)
 $data modify storage skywar:bless_equip description set value $(description)
 
