@@ -44,6 +44,16 @@ fill 90127 121 42 90122 121 41 minecraft:iron_trapdoor[half=top]
 setblock 90119 122 52 chest[facing=north]
 setblock 90130 122 46 minecraft:potted_azure_bluet
 fill 90106 124 49 90104 122 49 iron_block
+fill 90099 122 53 90101 122 53 minecraft:redstone_block
+fill 90099 122 53 90101 122 53 minecraft:air
+setblock 90103 122 52 chest[facing=east]
+item replace block 90103 122 52 container.12 with flint
+item replace block 90103 122 52 container.14 with flint
+
+
+
+
+
 
 #不能回到第四章
 fill 90182 60 80 90182 57 81 iron_block
