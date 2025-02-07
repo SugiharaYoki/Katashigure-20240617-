@@ -8,7 +8,8 @@ execute if entity @s[scores={AZR_chainKillUpg_chargeboost=2..}] run scoreboard p
 execute if entity @s[scores={AZR_chainKillUpg_chargeboost=3..}] run scoreboard players add random Azr_system 1
 execute if entity @s[scores={AZR_chainKillUpg_chargeboost=4..}] run scoreboard players add random Azr_system 1
 
-execute if entity @s[tag=!AZR_chainKill_activated,scores={AZR_chainKill=1..,AZR_chainKill_chargeup=..50}] unless items entity @s weapon.mainhand #shovels run scoreboard players operation @s AZR_chainKill_chargeup += random Azr_system
+execute if entity @s[tag=!AZR_chainKill_activated,scores={AZR_chainKill=1..,AZR_chainKill_chargeup=50..}] unless items entity @s weapon.mainhand #shovels run scoreboard players operation @s AZR_chainKill_chargeup += random Azr_system
+execute if entity @s[tag=!AZR_chainKill_activated,scores={AZR_chainKill=1..,AZR_chainKill_chargeup=..49}] run scoreboard players operation @s AZR_chainKill_chargeup += random Azr_system
 
 execute if entity @s[scores={AZR_chainKillUpg_defensecharge=1,AZR_chainKill_damageblocked=1..}] store result score random Azr_system run random value 0..2
 execute if entity @s[scores={AZR_chainKillUpg_defensecharge=2,AZR_chainKill_damageblocked=1..}] store result score random Azr_system run random value 0..3

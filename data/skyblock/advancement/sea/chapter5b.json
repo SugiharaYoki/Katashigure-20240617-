@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "通讯平台：工程区",
+            "color": "blue",
+            "bold": true,
+            "italic": false
+        },
+        "description": {
+            "text": "机械的轰鸣早已停止。\n在这里的所有人都注定会死去。\n此刻的我们，仅能聆听大海那悲凉的咆哮。",
+            "color": "white"
+        },
+        "icon": {
+            "id": "minecraft:polished_blackstone"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "sea": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:sea/chapter5"
+}
