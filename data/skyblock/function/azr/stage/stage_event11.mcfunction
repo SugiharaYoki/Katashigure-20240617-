@@ -704,7 +704,7 @@ execute if score stageSeconds Azr_system matches 4146 run scoreboard players set
 execute if score stageSeconds Azr_system matches 4146 run scoreboard players set stageSeconds Azr_system 0
 execute if score stageSeconds Azr_system matches 4146 run summon parrot -79761 79 -190 {PersistenceRequired:1b,Invulnerable:1b,Tags:["AzrielDecMob","AzrielFriendly"],DeathLootTable:"skyblock:azriel_creeper_tier2",Health:37.0f,CustomName:'"小鸢"',Variant:2,attributes:[{id:"generic.max_health",base:50.0d},{id:"generic.flying_speed",base:0.0d},{id:"generic.movement_speed",base:0.0d}]}
 
-execute if score stageSeconds Azr_system matches 3122 run advancement grant @a[tag=azrPlayer] only skyblock:azr_stage12_boss3
+execute if score stageSeconds Azr_system matches 2941 run advancement grant @a[tag=azrPlayer] only skyblock:azr_stage12_boss3
 
 
 execute if score stageSeconds Azr_system matches 2941 run bossbar remove azr:boss_hp_bar
