@@ -699,3 +699,32 @@ execute positioned 90056 95 -177 positioned ~ ~ ~300 run fill ~ ~ ~ ~8 ~3 ~31 wa
 setblock 90062 106 -166 minecraft:iron_trapdoor[half=bottom]
 
 #forceload remove 90040 -20 90170 170
+
+#急冻装置
+setblock 90130 96 31 air
+setblock 90130 96 31 lever[facing=north,face=floor]
+setblock 90128 96 31 air
+setblock 90128 96 31 lever[facing=north,face=floor]
+fill 90122 100 41 90122 99 41 air
+fill 90135 98 35 90107 98 71 water replace packed_ice
+scoreboard players set sea_ch5_instant_freeze sea_4temp2 0
+scoreboard players set sea_ch5_instant_freeze sea_4temp3 0
+scoreboard players set sea_ch5_instant_freeze sea_4temp4 0
+fill 90132 100 27 90122 100 27 minecraft:waxed_copper_grate
+
+fill 90113 98 35 90110 95 35 lever[facing=north]
+fill 90112 97 35 90111 96 35 air
+
+setblock 90120 113 48 minecraft:redstone_lamp[lit=false]
+setblock 90120 113 39 minecraft:redstone_lamp[lit=false]
+setblock 90129 113 48 minecraft:redstone_lamp[lit=false]
+setblock 90129 113 39 minecraft:redstone_lamp[lit=false]
+setblock 90124 104 45 air
+
+setblock 90113 102 18 air
+setblock 90113 102 18 lever[facing=west]
+
+
+
+
+
