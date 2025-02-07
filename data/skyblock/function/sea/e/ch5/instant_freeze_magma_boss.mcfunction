@@ -27,7 +27,8 @@ execute if score sea_ch5_instant_freeze sea_4temp4 matches 20 run setblock 90124
 
 execute if score sea_ch5_instant_freeze sea_4temp4 matches 30.. if entity @n[tag=SEA_magmaboss] at @s run scoreboard players set sea_ch5_instant_freeze sea_4temp4 40
 execute if score sea_ch5_instant_freeze sea_4temp4 matches 45 unless entity @n[tag=SEA_magmaboss] at @s run fill 90122 121 42 90127 121 41 air
-execute if score sea_ch5_instant_freeze sea_4temp4 matches 45 unless entity @n[tag=SEA_magmaboss] at @s run fill 90122 120 41 90122 119 41 anvil
+execute if score sea_ch5_instant_freeze sea_4temp4 matches 45 unless entity @n[tag=SEA_magmaboss] at @s run fill 90122 120 41 90122 119 41 gravel
+execute if score sea_ch5_instant_freeze sea_4temp4 matches 45 unless entity @n[tag=SEA_magmaboss] at @s positioned 90122 120 41 run stopsound @a[distance=0..400] music
 
 
 

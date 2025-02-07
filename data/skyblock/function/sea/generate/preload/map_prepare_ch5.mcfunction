@@ -43,6 +43,7 @@ fill 90105 104 52 90106 101 52 minecraft:air
 fill 90127 121 42 90122 121 41 minecraft:iron_trapdoor[half=top]
 setblock 90119 122 52 chest[facing=north]
 setblock 90130 122 46 minecraft:potted_azure_bluet
+fill 90106 124 49 90104 122 49 iron_block
 
 #不能回到第四章
 fill 90182 60 80 90182 57 81 iron_block
@@ -296,5 +297,15 @@ fill 90108 102 26 90111 102 29 waxed_copper_block
 fill 90110 102 27 90109 102 28 waxed_copper_grate
 
 fill 90100 73 67 90099 71 67 iron_bars
+
+
+
+
+
+
+
+
+
+
 
 
