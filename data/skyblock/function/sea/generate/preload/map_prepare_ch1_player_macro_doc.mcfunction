@@ -70,3 +70,32 @@ $execute if data storage sea:doc doc.$(eid).w12 run advancement grant @s only sk
 $execute if data storage sea:doc doc.$(eid).w13 run advancement grant @s only skyblock:sea/doc/w13
 $execute if data storage sea:doc doc.$(eid).w14 run advancement grant @s only skyblock:sea/doc/w14
 $execute if data storage sea:doc doc.$(eid).w15 run advancement grant @s only skyblock:sea/doc/w15
+
+
+$execute if data storage sea:doc doc.$(eid).g1 run advancement grant @s only skyblock:sea/doc/g1
+$execute if data storage sea:doc doc.$(eid).g2 run advancement grant @s only skyblock:sea/doc/g2
+$execute if data storage sea:doc doc.$(eid).g3 run advancement grant @s only skyblock:sea/doc/g3
+$execute if data storage sea:doc doc.$(eid).g4 run advancement grant @s only skyblock:sea/doc/g4
+$execute if data storage sea:doc doc.$(eid).g5 run advancement grant @s only skyblock:sea/doc/g5
+$execute if data storage sea:doc doc.$(eid).g6 run advancement grant @s only skyblock:sea/doc/g6
+$execute if data storage sea:doc doc.$(eid).g7 run advancement grant @s only skyblock:sea/doc/g7
+$execute if data storage sea:doc doc.$(eid).g8 run advancement grant @s only skyblock:sea/doc/g8
+$execute if data storage sea:doc doc.$(eid).g9 run advancement grant @s only skyblock:sea/doc/g9
+$execute if data storage sea:doc doc.$(eid).g10 run advancement grant @s only skyblock:sea/doc/g10
+$execute if data storage sea:doc doc.$(eid).g11 run advancement grant @s only skyblock:sea/doc/g11
+$execute if data storage sea:doc doc.$(eid).g12 run advancement grant @s only skyblock:sea/doc/g12
+$execute if data storage sea:doc doc.$(eid).g13 run advancement grant @s only skyblock:sea/doc/g13
+$execute if data storage sea:doc doc.$(eid).g14 run advancement grant @s only skyblock:sea/doc/g14
+$execute if data storage sea:doc doc.$(eid).g15 run advancement grant @s only skyblock:sea/doc/g15
+$execute if data storage sea:doc doc.$(eid).g16 run advancement grant @s only skyblock:sea/doc/g16
+$execute if data storage sea:doc doc.$(eid).g17 run advancement grant @s only skyblock:sea/doc/g17
+$execute if data storage sea:doc doc.$(eid).g18 run advancement grant @s only skyblock:sea/doc/g18
+$execute if data storage sea:doc doc.$(eid).g19 run advancement grant @s only skyblock:sea/doc/g19
+$execute if data storage sea:doc doc.$(eid).g20 run advancement grant @s only skyblock:sea/doc/g20
+$execute if data storage sea:doc doc.$(eid).g21 run advancement grant @s only skyblock:sea/doc/g21
+$execute if data storage sea:doc doc.$(eid).g22 run advancement grant @s only skyblock:sea/doc/g22
+$execute if data storage sea:doc doc.$(eid).g23 run advancement grant @s only skyblock:sea/doc/g23
+$execute if data storage sea:doc doc.$(eid).g24 run advancement grant @s only skyblock:sea/doc/g24
+$execute if data storage sea:doc doc.$(eid).g25 run advancement grant @s only skyblock:sea/doc/g25
+$execute if data storage sea:doc doc.$(eid).g26 run advancement grant @s only skyblock:sea/doc/g26
+$execute if data storage sea:doc doc.$(eid).g27 run advancement grant @s only skyblock:sea/doc/g27
