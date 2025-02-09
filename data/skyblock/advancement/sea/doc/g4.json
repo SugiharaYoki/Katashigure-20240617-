@@ -14,7 +14,7 @@
             "id": "minecraft:golden_hoe"
         },
         "frame": "task",
-        "show_toast": false,
+        "show_toast": true,
         "announce_to_chat": true,
         "hidden": true
     },
