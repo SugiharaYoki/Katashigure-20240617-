@@ -6,5 +6,5 @@ execute unless score sea_chapter_introduction sea_4temp2 matches 10..76 if score
 execute unless score sea_chapter_introduction sea_4temp2 matches 10..76 if score sea_ch1_wasting_time rng1 matches 785 unless entity @a[tag=SEAPT,tag=e_i_04] if entity @a[scores={SEAPT_member=3}] run tellraw @a[tag=SEAPT] [{"selector":"@p[tag=SEAPT,scores={SEAPT_member=3}]","color":"white"},{"text":"：箱子里那些水就别带了，光占背包位置。","color":"white"}]
 execute unless score sea_chapter_introduction sea_4temp2 matches 10..76 if score sea_ch1_wasting_time rng1 matches 700 unless entity @a[tag=SEAPT,tag=e_i_04] unless entity @a[scores={SEAPT_member=2}] run tellraw @a[tag=SEAPT] [{"selector":"@p[tag=SEAPT,scores={SEAPT_member=1}]","color":"white"},{"text":"：下面的门走不了，我还是从维修通道绕上去吧。","color":"white"}]
 
-execute if score sea_ch1_wasting_time rng1 matches 989 run give @a[tag=SEAPT] flow_banner_pattern[custom_data={sea_docg01:true}]
+execute if score sea_ch1_wasting_time rng1 matches 989 run give @a[tag=SEAPT] mojang_banner_pattern[custom_data={sea_docg01:true}]
 

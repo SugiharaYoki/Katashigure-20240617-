@@ -142,6 +142,7 @@ execute unless entity @s[tag=!seaPerm000] run clone 90121 122 109 90121 122 109 
 
 
 execute if items entity @s container.* flow_banner_pattern run function skyblock:sea/p/document
+execute if items entity @s container.* mojang_banner_pattern run function skyblock:sea/p/document
 
 execute if items entity @s player.cursor *[custom_data={"SEAcrafterbox":true}] as @n[tag=SEAcrafter,type=interaction,distance=..9] at @s positioned ~ ~-1 ~ run function skyblock:sea/shop_reader_box
 execute as @n[tag=SEAcrafter,type=interaction,distance=..9] at @s positioned ~ ~-1 ~ run function skyblock:sea/shop_reader_box

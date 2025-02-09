@@ -21,4 +21,4 @@ execute as @s[tag=sc,scores={sea_4temp2=1260}] positioned 90133 137 108 if entit
 execute as @s[tag=sc,scores={sea_4temp2=1260}] positioned 90133 137 108 if entity @n[tag=sc,scores={sea_player=2..}] \
  run tellraw @a[distance=0..50] [{"text":"玛瑞莲：","color":"dark_purple","bold": true},{"text":"\n“先生，你们会明白的。我们之后再聊。”","color":"white","bold": false}]
 execute as @s[tag=sc,scores={sea_4temp2=1260}] run setblock 90168 34 93 blue_concrete
-execute as @s[tag=sc,scores={sea_4temp2=1260}] run give @a[tag=SEAPT] flow_banner_pattern[custom_data={sea_docg09:true}]
+execute as @s[tag=sc,scores={sea_4temp2=1260}] run give @a[tag=SEAPT] mojang_banner_pattern[custom_data={sea_docg09:true}]

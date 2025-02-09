@@ -82,7 +82,7 @@ execute as @s[scores={sea_4temp1=889}] at @s if entity @a[tag=!e_i_27] run plays
 execute as @s[scores={sea_4temp1=1039}] at @s if entity @n[tag=sc,scores={sea_player=1..}] run tellraw @a[distance=0..250] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“吃个苹果？”","color":"white","bold": false}]
 execute as @s[scores={sea_4temp1=1039}] at @s if entity @n[tag=sc,scores={sea_player=1..}] run give @p[distance=0..6] apple 1
 execute as @s[scores={sea_4temp1=1039}] at @s if entity @a[tag=!e_i_27] run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
-execute as @s[scores={sea_4temp1=1039}] at @s run give @a[tag=SEAPT] flow_banner_pattern[custom_data={sea_docg05:true}]
+execute as @s[scores={sea_4temp1=1039}] at @s run give @a[tag=SEAPT] mojang_banner_pattern[custom_data={sea_docg05:true}]
 
 execute as @s[scores={sea_4temp1=1239}] at @s if entity @n[tag=sc,scores={sea_player=1..}] run tellraw @a[distance=0..250] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“还是快点出发吧。我们没多少时间。”","color":"white","bold": false}]
 execute as @s[scores={sea_4temp1=1239}] at @s if entity @a[tag=!e_i_27] run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85

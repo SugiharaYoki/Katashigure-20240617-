@@ -570,7 +570,7 @@ execute if score @s sea_crafter matches 10060 as @s[scores={sea_i_prismarine=5..
 execute if score @s sea_crafter matches 10060 as @s[tag=!sea_purchase_pass] run tellraw @s {"text":"失败！素材不足！","color":"red"}
 execute if entity @s[tag=sea_purchase_pass] run playsound minecraft:item.armor.equip_iron neutral @s ~ ~ ~ 100
 execute if entity @s[tag=sea_purchase_pass] run give @s heart_of_the_sea[custom_name='{"text":"深海宝石","italic":true,"color":"gold","italic":false}',lore=['{"text":"曾是艾德雯娜的护身符","color":"white","italic":false}','{"text":"用途与来源皆不明，只知能用于驱赶某种魔物","color":"white","italic":false}'],custom_data={sea_seaheart:true}]
-execute if entity @s[tag=sea_purchase_pass] run give @a[tag=SEAPT] flow_banner_pattern[custom_data={sea_docg11:true}]
+execute if entity @s[tag=sea_purchase_pass] run give @a[tag=SEAPT,advancements={skyblock:sea/doc/g11=false}] mojang_banner_pattern[custom_data={sea_docg11:true}]
 execute if entity @s[tag=sea_purchase_pass] run clear @s prismarine_crystals 5
 execute if entity @s[tag=sea_purchase_pass] run clear @s echo_shard 3
 tag @s remove sea_purchase_pass
