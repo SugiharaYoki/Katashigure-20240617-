@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "宿舍楼的闪电",
+            "color": "gold",
+            "bold": true,
+            "italic": false
+        },
+        "description": {
+            "text": "在4分钟之内完成第三章。\n“无论自己跑得多快，都救不回来那些人。”",
+            "color": "gray"
+        },
+        "icon": {
+            "id": "minecraft:diamond_hoe"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "sea": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:sea/doc/gfolder2"
+}

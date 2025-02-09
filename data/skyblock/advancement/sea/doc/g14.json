@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "物理学是不可动摇的绝对根基",
+            "color": "gold",
+            "bold": true,
+            "italic": false
+        },
+        "description": {
+            "text": "直至战胜艾德雯娜为止，没有使用过撬棍以外的武器。\n“远程武器？重型武器？我是不是错过了什么？”",
+            "color": "gray"
+        },
+        "icon": {
+            "id": "minecraft:diamond_hoe"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "sea": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:sea/doc/gfolder2"
+}

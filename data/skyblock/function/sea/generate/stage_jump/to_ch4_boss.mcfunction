@@ -123,4 +123,6 @@ fill 90158 36 129 90158 34 131 air
 
 scoreboard players add @e[tag=SEAch4_spawn_timer] sea_4temp1 99999
 
+scoreboard players set sc sea_speedrun_ch4 9999
+
 tag @a[tag=SEAPT] add sea_teleport05

@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "厄珀娅的悲歌：噩梦",
+            "color": "white",
+            "bold": true,
+            "italic": false
+        },
+        "description": {
+            "text": "这里……真的应该存在任何东西吗？",
+            "color": "gray"
+        },
+        "icon": {
+            "id": "minecraft:ender_chest"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "sea": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:thelxiepeia"
+}

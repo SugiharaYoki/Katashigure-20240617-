@@ -1,3 +1,5 @@
+function skyblock:sea/generate/stage_jump/to_ch3_boss
+
 execute positioned 90149 108 103 run function skyblock:sea/m/unique/npc_yuehan
 scoreboard players set @n[tag=SEAyuehan] sea_4temp1 260
 
