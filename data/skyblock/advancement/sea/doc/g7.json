@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "跳过剧情",
+            "color": "aqua",
+            "bold": true,
+            "italic": false
+        },
+        "description": {
+            "text": "迟迟解不开文件柜A的谜题。\n“你就不能读一读提示吗？”",
+            "color": "gray"
+        },
+        "icon": {
+            "id": "minecraft:stone_hoe"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "sea": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:sea/doc/gfolder1"
+}

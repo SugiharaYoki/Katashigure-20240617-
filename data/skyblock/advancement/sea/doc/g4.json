@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "消逝于宿舍楼的光芒",
+            "color": "gold",
+            "bold": true,
+            "italic": false
+        },
+        "description": {
+            "text": "完成越涵委托的支线任务。\n很抱歉，宿舍楼的小队已经全灭了。",
+            "color": "gray"
+        },
+        "icon": {
+            "id": "minecraft:golden_hoe"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "sea": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:sea/doc/gfolder1"
+}

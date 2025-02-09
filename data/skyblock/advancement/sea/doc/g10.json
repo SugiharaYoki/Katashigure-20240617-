@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "就算变异了也很可爱",
+            "color": "aqua",
+            "bold": true,
+            "italic": false
+        },
+        "description": {
+            "text": "解开水生生物研究区域的戒严管控。\n“毕竟它们七秒之后就会忘记自己已经变异了”。",
+            "color": "gray"
+        },
+        "icon": {
+            "id": "minecraft:iron_hoe"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "sea": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:sea/doc/gfolder1"
+}

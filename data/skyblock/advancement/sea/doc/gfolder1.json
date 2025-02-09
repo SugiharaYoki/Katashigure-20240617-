@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "厄珀娅的悲歌：成就",
+            "color": "white",
+            "bold": true,
+            "italic": false
+        },
+        "description": {
+            "text": "这些场景好似在过去的某一刻发生过……\n若真是如此，那我现在又在何处做着什么？",
+            "color": "gray"
+        },
+        "icon": {
+            "id": "minecraft:ender_chest"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "sea": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:sea/thelxiepeia"
+}

@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "路加福音",
+            "color": "gold",
+            "bold": true,
+            "italic": false
+        },
+        "description": {
+            "text": "与活着的法莫洛斯医生相遇。\n“此刻，我将荣耀传承予你”。",
+            "color": "gray"
+        },
+        "icon": {
+            "id": "minecraft:golden_hoe"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "sea": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:sea/doc/gfolder1"
+}

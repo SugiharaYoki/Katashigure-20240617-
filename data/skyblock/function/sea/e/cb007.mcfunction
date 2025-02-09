@@ -13,3 +13,4 @@ execute positioned 90112 122.5 125 run function skyblock:sea/m/silverfish
 execute if entity @n[tag=sc,scores={sea_player=3..}] positioned 90145 122 132 run function skyblock:sea/m/silverfish
 execute if entity @n[tag=sc,scores={sea_player=5..}] positioned 90145 122 132 run function skyblock:sea/m/silverfish
 tellraw @a[tag=SEAPT] {"text": "似乎有什么隐藏的通道被开启了……等等，这沙沙的声音是？","color": "gray"}
+give @a[tag=SEAPT] flow_banner_pattern[custom_data={sea_docg06:true}]

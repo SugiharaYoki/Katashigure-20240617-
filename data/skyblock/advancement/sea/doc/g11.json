@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "马可福音",
+            "color": "gold",
+            "bold": true,
+            "italic": false
+        },
+        "description": {
+            "text": "重新拼好艾德雯娜的护身符。\n“正因如此，钻井平台上才没有出现不死骑士”。",
+            "color": "gray"
+        },
+        "icon": {
+            "id": "minecraft:golden_hoe"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "sea": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:sea/doc/gfolder1"
+}

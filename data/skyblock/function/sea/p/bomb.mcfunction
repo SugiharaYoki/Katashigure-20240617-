@@ -119,6 +119,7 @@ execute positioned ~-2 ~2 ~2 if block ~ ~ ~ slime_block run setblock ~ ~ ~ air d
 
 
 
+execute if entity @e[tag=SEAmagma1,type=marker,distance=0..2.5] run give @a[tag=SEAPT,advancements={skyblock:sea/doc/g12=false}] flow_banner_pattern[custom_data={sea_docg12:true}]
 execute as @e[tag=SEAmagma1,type=marker,distance=0..2.5] at @s run setblock ~ ~ ~ air destroy
 execute as @e[tag=SEAmagma1,type=marker,distance=0..2.5] at @s run kill @s
 

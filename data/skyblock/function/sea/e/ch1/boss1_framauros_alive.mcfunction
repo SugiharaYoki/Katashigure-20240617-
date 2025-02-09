@@ -12,6 +12,7 @@ execute as @s[scores={sea_4temp2=6001}] positioned 90073 122 122 run function sk
 execute as @s[scores={sea_4temp2=6003..}] as @n[tag=SEAframauros] at @s run tp @s ~ ~ ~ facing entity @p
 execute as @s[scores={sea_4temp2=6003}] at @n[tag=SEAframauros] run playsound entity.villager.ambient neutral @a ~ ~ ~ 0.8 0.7
 execute as @s[scores={sea_4temp2=6003}] at @n[tag=SEAframauros] run tellraw @a[tag=SEAPT,distance=0.1..35] [{"text":"法莫洛斯：","color":"green","bold": true},{"text":"\n“……活着的人。”","color":"white","bold": false}]
+execute as @s[scores={sea_4temp2=6003}] at @n[tag=SEAframauros] run give @a[tag=SEAPT] flow_banner_pattern[custom_data={sea_docg08:true}]
 
 execute as @s[scores={sea_4temp2=6003..6332}] positioned 90122 128 131 as @p[tag=SEAPT,nbt={SelectedItem:{id:"minecraft:spyglass"}},scores={sea_progress=3..}] unless entity @a[tag=SEAPT,scores={sea_progress=..2}] at @s run tellraw @a[tag=SEAPT] [{"selector":"@s","color":"white"},{"text":"：「跳过了剧情」","color":"white"}]
 execute as @s[scores={sea_4temp2=6003..6332}] positioned 90122 128 131 if entity @p[tag=SEAPT,nbt={SelectedItem:{id:"minecraft:spyglass"}},scores={sea_progress=3..}] unless entity @a[tag=SEAPT,scores={sea_progress=..2}] run scoreboard players set @n[tag=sc] sea_4temp2 6333

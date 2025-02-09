@@ -4,5 +4,5 @@ $data modify storage sea:doc doc_id set value $(doc)
 
 function skyblock:sea/p/document_macro_execute with storage sea:doc
 
-$tag @n[tag=sc] add sea_doc$(doc)
+$tag @n[tag=sc] remove sea_doc$(doc)
 $advancement grant @s only skyblock:sea/doc/$(doc)

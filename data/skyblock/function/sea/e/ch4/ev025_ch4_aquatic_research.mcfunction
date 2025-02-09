@@ -21,3 +21,5 @@ summon tropical_fish 90263 49 131
 summon tropical_fish 90263 49 131
 summon squid 90255 45 130
 summon squid 90255 45 130
+
+give @a[tag=SEAPT] flow_banner_pattern[custom_data={sea_docg10:true}]

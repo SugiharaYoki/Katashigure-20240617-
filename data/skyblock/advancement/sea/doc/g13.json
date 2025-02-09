@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "烤火有害健康",
+            "color": "aqua",
+            "bold": true,
+            "italic": false
+        },
+        "description": {
+            "text": "使用火焰焚烧亡灵之驹。\n“可惜吃不到马肉刺身了”。",
+            "color": "gray"
+        },
+        "icon": {
+            "id": "minecraft:stone_hoe"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "sea": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:sea/doc/gfolder1"
+}
