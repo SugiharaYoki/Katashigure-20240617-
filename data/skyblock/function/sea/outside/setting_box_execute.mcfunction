@@ -7,7 +7,7 @@ execute if items entity @s player.cursor name_tag run scoreboard players set @s[
 execute if items entity @s player.cursor structure_void run scoreboard players set @s sea_setting_box_index 1
 execute if items entity @s player.cursor sculk_shrieker run scoreboard players set @s sea_setting_box_index 2
 
-execute if items entity @s player.cursor polished_deepslate[custom_data={"sea_setting_box":true}] run function skyblock:sea/generate/preload/map_prepare_ch1
+execute if items entity @s player.cursor polished_deepslate[custom_data={"sea_setting_box":true}] run function skyblock:sea/generate/preload/map_prepare_introduction
 execute if items entity @s player.cursor polished_diorite[custom_data={"sea_setting_box":true}] run function skyblock:sea/generate/stage_jump/to_ch2_exclusive
 execute if items entity @s player.cursor polished_andesite[custom_data={"sea_setting_box":true}] run function skyblock:sea/generate/stage_jump/to_ch3
 execute if items entity @s player.cursor waxed_copper_block[custom_data={"sea_setting_box":true}] run function skyblock:sea/generate/stage_jump/to_ch4_exclusive
