@@ -18,6 +18,7 @@ execute if entity @s[scores={sea_shield_switch=13..20,sea_shielding_3=..0}] run 
 execute if entity @s[scores={sea_shield_switch=12}] run effect clear @s resistance
 execute if entity @s[scores={sea_shield_switch=19,sea_shielding_3=..0}] run scoreboard players add @s sea_shielding_3 5
 execute if score @s[scores={sea_shielding_2=1..}] sea_shield_switch >= @s rng3 run effect give @s slowness 1 9 false
+execute if score @s[scores={sea_shielding_2=1..}] sea_shield_switch >= @s rng3 anchored eyes run function skyblock:sea/p/parry_particle
 execute if score @s[scores={sea_shielding_2=1..}] sea_shield_switch >= @s rng3 run scoreboard players set @s sea_shielding_3 0
 execute if score @s[scores={rng4=1,sea_shielding_2=1..5}] sea_shield_switch >= @s rng3 run effect give @s strength 1 1 false
 execute if score @s[scores={rng4=1,sea_shielding_2=6..15}] sea_shield_switch >= @s rng3 run effect give @s strength 1 2 false
