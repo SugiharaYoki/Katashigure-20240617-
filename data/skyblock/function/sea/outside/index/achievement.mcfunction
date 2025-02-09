@@ -1,5 +1,14 @@
 function skyblock:sea/generate/preload/map_prepare_ch1_player_advancement
 
+scoreboard players set @s rng1 0
+scoreboard players set @s rng2 0
+scoreboard players set @s rng3 0
+scoreboard players set @s rng4 0
+scoreboard players set @s rng5 0
+scoreboard players set @s rng6 0
+scoreboard players set @s rng7 0
+scoreboard players set @s rng8 0
+
 scoreboard players add @s[advancements={skyblock:sea/doc/1=true}] rng1 1
 scoreboard players add @s[advancements={skyblock:sea/doc/2=true}] rng1 1
 scoreboard players add @s[advancements={skyblock:sea/doc/3=true}] rng1 1
@@ -93,7 +102,14 @@ scoreboard players add @s[advancements={skyblock:sea/doc/w27=true}] rng4 1
  tellraw @s [{"text":"第五章 档案 ","color":"light_purple","bold": true},{"score":{"name":"@s","objective":"rng5"},"color":"white","bold": false},{"text":"/??","color":"white","bold": false}]
  tellraw @s [{"text":"法莫洛斯的医疗报告 ","color":"light_purple","bold": true},{"score":{"name":"@s","objective":"rng6"},"color":"white","bold": false},{"text":"/8","color":"white","bold": false}]
 
-
+scoreboard players set @s rng1 0
+scoreboard players set @s rng2 0
+scoreboard players set @s rng3 0
+scoreboard players set @s rng4 0
+scoreboard players set @s rng5 0
+scoreboard players set @s rng6 0
+scoreboard players set @s rng7 0
+scoreboard players set @s rng8 0
 
 scoreboard players add @s[advancements={skyblock:sea/doc/g1=true}] rng1 1
 scoreboard players add @s[advancements={skyblock:sea/doc/g2=true}] rng1 1
