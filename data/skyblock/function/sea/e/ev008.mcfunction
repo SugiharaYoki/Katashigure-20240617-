@@ -26,6 +26,7 @@ execute if entity @a[tag=SEAPT,distance=..6] as @s[scores={sea_4temp1=69}] at @s
 
 execute as @s[scores={sea_4temp1=73}] at @s run tp @s ~ 103 ~
 execute as @s[scores={sea_4temp1=73}] at @s run fill 90117 103 109 90117 99 109 ladder[facing=south]
+execute as @s[scores={sea_4temp1=73}] at @s run fill 90125 102 101 90127 102 99 barrier
 
 execute if entity @s[x=90161,y=128,z=112,distance=..4,scores={sea_4temp1=..67}] if entity @a[tag=SEAPT,x=90136,dx=30,y=104,dy=10,z=88,dz=30] run tellraw @a[distance=0..250,tag=!e_i_28] [{"text":"？？？：","color":"yellow","bold": true},{"text":"\n“啊等、你怎么直接往下跳了？你先过来啊……”","color":"white","bold": false}]
 execute if entity @s[x=90161,y=128,z=112,distance=..4,scores={sea_4temp1=..67}] if entity @a[tag=SEAPT,x=90136,dx=30,y=104,dy=10,z=88,dz=30] run tellraw @a[distance=0..250,tag=e_i_28] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“我靠你干什么，你不要命了？老老实实坐电梯都不会的吗？”","color":"white","bold": false}]

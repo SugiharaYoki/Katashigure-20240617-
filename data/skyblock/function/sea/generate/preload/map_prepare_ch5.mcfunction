@@ -18,6 +18,7 @@ scoreboard players set SEAmusic rng1 0
 setblock 90138 83 55 chest[facing=south]
 item replace block 90138 83 55 container.13 with glow_berries 8
 
+fill 90125 102 101 90127 102 99 iron_block
 
 summon minecraft:interaction 90126 90.3 58 {CustomName:'[{"text":"多功能工作站"}]',Tags:["SEAcrafter","SEAcrafter15"]}
 summon minecraft:marker 90126 89 59 {Tags:["SEAcrafter_tp","SEAcrafter_tp15"]}
