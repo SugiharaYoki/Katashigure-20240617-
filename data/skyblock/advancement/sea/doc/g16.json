@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "爆弹狂魔",
+            "color": "gold",
+            "bold": true,
+            "italic": false
+        },
+        "description": {
+            "text": "使用爆炸攻击攻击德怀特4次。\n“那一晚，整个物资层都在摇晃。”",
+            "color": "gray"
+        },
+        "icon": {
+            "id": "minecraft:diamond_hoe"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "sea": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:sea/doc/gfolder2"
+}
