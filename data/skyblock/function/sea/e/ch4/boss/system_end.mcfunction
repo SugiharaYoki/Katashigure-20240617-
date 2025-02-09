@@ -3,7 +3,7 @@ execute as @s[scores={rng7=180}] positioned 90074.0 129 109.0 run stopsound @a[d
 execute as @s[scores={rng7=180}] as @a[tag=SEAPT] at @s run stopsound @a[gamemode=spectator,distance=0..300]
 execute as @s[scores={rng7=180}] run tellraw @a[tag=SEAPT] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“都、都别打了！！全都是自己人！！”","color":"white","bold": false}]
 execute as @s[scores={rng7=180}] positioned 90185.01 69.00 72.02 run function skyblock:sea/m/unique/npc_yuehan
-execute as @s[scores={rng7=180}] run give @a[tag=SEAPT,tag=!e_w_02,tag=!e_w_03,tag=!e_w_04,tag=!e_w_05,tag=!e_w_06] mojang_banner_pattern[custom_data={sea_docg14:true}]
+execute as @s[scores={rng7=180}] run give @a[tag=SEAPT,tag=!e_w_02,tag=!e_w_03,tag=!e_w_04,tag=!e_w_03b,tag=!e_w_06] mojang_banner_pattern[custom_data={sea_docg14:true}]
 
 execute as @s[scores={rng7=180..}] as @e[tag=SEAyuehan] at @s run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
 
