@@ -4,7 +4,7 @@ item replace entity @s[scores={SEAPT_mode=3}] container.20 with name_tag[custom_
 
 item replace entity @s container.22 with sculk_shrieker[custom_data={"sea_setting_box":true},custom_name='{"text":"选择章节","italic":false,"color":"aqua"}',lore=['{"text":"选择跳关至《厄珀娅的悲歌》中的某一章节。","color":"white","italic":false}']]
 
-item replace entity @s container.24 with lectern[custom_data={"sea_setting_box":true},custom_name='{"text":"刷新成就","italic":false,"color":"aqua"}',lore=['{"text":"刷新你在《厄珀娅的悲歌》中所获得的全部进度成就。","color":"white","italic":false}']]
+item replace entity @s container.24 with lectern[custom_data={"sea_setting_box":true},custom_name='{"text":"成就总览","italic":false,"color":"aqua"}',lore=['{"text":"查看你在《厄珀娅的悲歌》中所获得的全部进度成就。","color":"white","italic":false}','{"text":"成就的获取数量会打印在聊天区域。","color":"white","italic":false}']]
 
 
 
