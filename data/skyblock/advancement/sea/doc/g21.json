@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "毁灭一切！爆炸！",
+            "color": "aqua",
+            "bold": true,
+            "italic": false
+        },
+        "description": {
+            "text": "目睹一次定时炸弹的爆炸。\n“麦迪逊就那么坚信我会做出定时炸弹吗？”\n“等等、你说他只是在自娱自乐？”",
+            "color": "gray"
+        },
+        "icon": {
+            "id": "minecraft:stone_hoe"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "sea": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:sea/doc/gfolder1"
+}

@@ -15,4 +15,5 @@ execute if score @s sea_4temp1 matches 59 run playsound minecraft:block.note_blo
 execute if score @s sea_4temp1 matches 20..59 run particle smoke ~ ~ ~ 0.12 0.12 0.12 0.02 2
 execute if score @s sea_4temp1 matches 40..59 run particle smoke ~ ~ ~ 0.2 0.2 0.2 0.05 4
 execute if score @s sea_4temp1 matches 60 run particle flame ~ ~ ~ 0.2 0.2 0.2 0.3 35
+execute if score @s sea_4temp1 matches 60 run give @s mojang_banner_pattern[custom_data={sea_docg21:true}]
 execute if score @s sea_4temp1 matches 60.. run function skyblock:sea/p/bomb
