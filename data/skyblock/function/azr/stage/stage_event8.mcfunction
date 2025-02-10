@@ -143,7 +143,7 @@ execute if score stageSeconds Azr_system matches 3364 if score playerCount Azr_s
 
 execute if score stageSeconds Azr_system matches 3367 as @a[tag=azrPlayer] run function skyblock:azr/items/soul_expel_torch
 execute if score stageSeconds Azr_system matches 3367 run tellraw @a[tag=azrPlayer] {"text":"获得了 驱灵的火烛","color":"gray"}
-execute if score stageSeconds Azr_system matches 3367 run advancement grant @a[tag=azrPlayer] only skyblock:azr_stage10_event1
+execute if score stageSeconds Azr_system matches 3367 run advancement grant @a[tag=azrPlayer] only skyblock:azr/azr_stage10_event1
 
 
 execute if score stageSeconds Azr_system matches 3364 run clone -79893 47 -48 -79893 47 -48 -79885 40 -139 replace move

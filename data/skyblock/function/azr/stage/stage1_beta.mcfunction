@@ -53,5 +53,5 @@ execute if score stageSeconds Azr_system matches 31.. run tellraw @a[tag=azrPlay
 execute if score stageSeconds Azr_system matches 31.. run scoreboard players set stage Azr_system 3
 execute if score stageSeconds Azr_system matches 31.. run scoreboard players set @a[tag=azrPlayer] Azr_wave 1
 execute if score stageSeconds Azr_system matches 31.. run scoreboard players reset tickTimer Azr_system
-execute if score stageSeconds Azr_system matches 31.. run advancement grant @a[tag=azrPlayer] only skyblock:azr_stage1
+execute if score stageSeconds Azr_system matches 31.. run advancement grant @a[tag=azrPlayer] only skyblock:azr/azr_stage1
 execute if score stageSeconds Azr_system matches 31.. run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..0}] Azr_skillPoints 1

@@ -228,7 +228,7 @@ execute if score stageSeconds Azr_system matches 178 if score #rng2 Azr_system m
 
 execute if score stageSeconds Azr_system matches 183..185 if entity @e[tag=AzrielMob,tag=!AzrielDecMob] run scoreboard players set stageSeconds Azr_system 183
 execute if score stageSeconds Azr_system matches 186 run title @a[tag=azrPlayer] actionbar {"text":"Extra Stage Clear","color":"green"}
-execute if score stageSeconds Azr_system matches 186 run advancement grant @a[tag=azrPlayer] only skyblock:azr_stage_bonus_suspension
+execute if score stageSeconds Azr_system matches 186 run advancement grant @a[tag=azrPlayer] only skyblock:azr/azr_stage_bonus_suspension
 execute if score stageSeconds Azr_system matches 186 as @a[tag=azrPlayer] at @s run tag @s add AZS_BoS04
 execute if score stageSeconds Azr_system matches 186 as @a[tag=azrPlayer] at @s run give @s ghast_tear[custom_name='{"text":"光明精华","italic":false,"color":"blue"}',custom_data={light_essence:1b},custom_model_data=100001] 3
 execute if score stageSeconds Azr_system matches 186 as @a[tag=azrPlayer] at @s run give @s golden_carrot 5

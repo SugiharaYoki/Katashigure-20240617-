@@ -265,7 +265,7 @@ execute if score stageSeconds Azr_system matches 301..304 run fill -79893 44 128
 execute if score stageSeconds Azr_system matches 301..304 run fill -79886 46 148 -79888 43 148 air
 execute if score stageSeconds Azr_system matches 301..304 run fill -79895 50 126 -79895 48 127 minecraft:air destroy
 execute if score stageSeconds Azr_system matches 301 run title @a[tag=azrPlayer] actionbar {"text":"Stage Clear","color":"green"}
-execute if score stageSeconds Azr_system matches 304 run advancement grant @a[tag=azrPlayer] only skyblock:azr_stage7_alt
+execute if score stageSeconds Azr_system matches 304 run advancement grant @a[tag=azrPlayer] only skyblock:azr/azr_stage7_alt
 execute if score stageSeconds Azr_system matches 304 run scoreboard players set @a[tag=azrPlayer] Azr_wave 19
 execute if score stageSeconds Azr_system matches 304 run scoreboard players set stage Azr_system 19
 execute if score stageSeconds Azr_system matches 304 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..7}] Azr_skillPoints 8

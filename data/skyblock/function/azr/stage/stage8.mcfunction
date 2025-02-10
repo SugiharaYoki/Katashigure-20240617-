@@ -401,7 +401,7 @@ execute if score stageSeconds Azr_system matches 370 run fill -79889 40 45 -7989
 execute if score stageSeconds Azr_system matches 370 run playsound ambient.crimson_forest.loop ambient @a[tag=azrPlayer] -78000 100 0 1000 1.0
 execute if score stageSeconds Azr_system matches 370 run playsound ambient.crimson_forest.mood ambient @a[tag=azrPlayer] -78000 100 0 1000 1.0
 execute if score stageSeconds Azr_system matches 370 run playsound ambient.crimson_forest.additions ambient @a[tag=azrPlayer] -78000 100 0 1000 1.0
-execute if score stageSeconds Azr_system matches 370 run advancement grant @a[tag=azrPlayer] only skyblock:azr_stage8
+execute if score stageSeconds Azr_system matches 370 run advancement grant @a[tag=azrPlayer] only skyblock:azr/azr_stage8
 execute if score stageSeconds Azr_system matches 370 run scoreboard players set stage Azr_system 21
 execute if score stageSeconds Azr_system matches 370 run tellraw @a[tag=azrPlayer,scores={AZR_chainKillUpg_pts=..3},tag=hasSkills] [{"text":"索命连击","color":"gold"},{"text":"可用点数已增加，目前为：4","color":"green"}]
 execute if score stageSeconds Azr_system matches 370 run scoreboard players set @a[scores={AZR_chainKillUpg_pts=..3}] AZR_chainKillUpg_pts 4

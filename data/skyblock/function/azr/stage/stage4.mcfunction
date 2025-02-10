@@ -330,7 +330,7 @@ execute if score stageSeconds Azr_system matches 293 run scoreboard players set 
 execute if score stageSeconds Azr_system matches 293 run scoreboard players set stageSeconds Azr_system 0
 #execute if score stageSeconds Azr_system matches 293 run scoreboard players set @a[tag=azrPlayer,scores={Azr_PlyPtsH=..3}] Azr_PlyPtsH 4
 execute if score stageSeconds Azr_system matches 293 run title @a[tag=azrPlayer] actionbar {"text":"Stage Clear..?","color":"green"}
-execute if score stageSeconds Azr_system matches 293 run advancement grant @a[tag=azrPlayer] only skyblock:azr_stage4
+execute if score stageSeconds Azr_system matches 293 run advancement grant @a[tag=azrPlayer] only skyblock:azr/azr_stage4
 execute if score stageSeconds Azr_system matches 293 run tellraw @a[tag=azrPlayer,scores={AZR_chainKillUpg_pts=..1},tag=hasSkills] [{"text":"索命连击","color":"gold"},{"text":"可用点数已增加，目前为：2","color":"green"}]
 execute if score stageSeconds Azr_system matches 293 run scoreboard players set @a[scores={AZR_chainKillUpg_pts=..1}] AZR_chainKillUpg_pts 2
 

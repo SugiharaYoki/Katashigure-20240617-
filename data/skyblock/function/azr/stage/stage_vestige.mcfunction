@@ -131,7 +131,7 @@ execute if score stageSeconds Azr_system matches 216 if score #rng2 Azr_system m
 execute if score stageSeconds Azr_system matches 219..221 if entity @e[tag=AzrielMob,tag=!AzrielDecMob] run scoreboard players set stageSeconds Azr_system 219
 
 execute if score stageSeconds Azr_system matches 223 run title @a[tag=azrPlayer] actionbar {"text":"Extra Stage Clear","color":"green"}
-execute if score stageSeconds Azr_system matches 223 run advancement grant @a[tag=azrPlayer] only skyblock:azr_stage_bonus_vestige
+execute if score stageSeconds Azr_system matches 223 run advancement grant @a[tag=azrPlayer] only skyblock:azr/azr_stage_bonus_vestige
 execute if score stageSeconds Azr_system matches 223 as @a[tag=azrPlayer] at @s run tag @s add AZS_BoS01
 execute if score stageSeconds Azr_system matches 223 as @a[tag=azrPlayer] at @s run setblock -79888 39 67 birch_button[facing=west]
 execute if score stageSeconds Azr_system matches 223 as @a[tag=azrPlayer] at @s run give @s emerald 5

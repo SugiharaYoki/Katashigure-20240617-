@@ -145,7 +145,7 @@ execute if score stageSeconds Azr_system matches 503 run playsound minecraft:blo
 
 execute if score stageSeconds Azr_system matches 510..529 if score mobCount Azr_system matches 1.. run scoreboard players set stageSeconds Azr_system 510
 execute if score stageSeconds Azr_system matches 520 run title @a[tag=azrPlayer] actionbar {"text":"Stage Annihilated","color":"green"}
-execute if score stageSeconds Azr_system matches 520 run advancement grant @a[tag=azrPlayer] only skyblock:azr_stage11
+execute if score stageSeconds Azr_system matches 520 run advancement grant @a[tag=azrPlayer] only skyblock:azr/azr_stage11
 execute if score stageSeconds Azr_system matches 520 run playsound ambient.crimson_forest.loop ambient @a[tag=azrPlayer] -78000 100 0 1000
 execute if score stageSeconds Azr_system matches 520 run playsound minecraft:ambient.nether_wastes.mood ambient @a[tag=azrPlayer] -78000 100 0 1000 0.3
 execute if score stageSeconds Azr_system matches 520 run playsound ambient.crimson_forest.additions ambient @a[tag=azrPlayer] -78000 100 0 1000
