@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "伯乐看了都要说好马",
+            "color": "aqua",
+            "bold": true,
+            "italic": false
+        },
+        "description": {
+            "text": "忽略了消防斧。\n“你不会真打算用撬棍杀穿整个钻井平台吧？”",
+            "color": "gray"
+        },
+        "icon": {
+            "id": "minecraft:stone_hoe"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "sea": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:sea/doc/gfolder1"
+}
