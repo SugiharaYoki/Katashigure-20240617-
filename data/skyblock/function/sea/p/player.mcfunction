@@ -78,6 +78,7 @@ execute if entity @s[tag=!e_w_04] if items entity @s container.* shears[custom_d
 execute if entity @s[tag=!e_w_04] if items entity @s container.* shears[custom_data={sea_flamethrower:true}] run tellraw @s {"text": "中程武器，左键时向前方射出火舌。虽然燃料会随时间自然恢复，但作为武器的威力欠佳。","color": "white"}
 execute if entity @s[tag=!e_w_04] if items entity @s container.* shears[custom_data={sea_flamethrower:true}] run tellraw @s {"text": "射程内无限穿透，适合用于攻击成群的低血量怪物。","color": "white"}
 execute if entity @s[tag=!e_w_04] if items entity @s container.* shears[custom_data={sea_flamethrower:true}] run tag @s add e_w_04_eternal
+execute if entity @s[tag=!e_w_04] if items entity @s[tag=SEAPT,advancements={skyblock:sea/doc/g20=false}] container.* shears[custom_data={sea_flamethrower:true}] run give @s mojang_banner_pattern[custom_data={sea_docg20:true}]
 execute if entity @s[tag=!e_w_04] if items entity @s container.* shears[custom_data={sea_flamethrower:true}] run tag @s add e_w_04
 execute if items entity @s container.* snout_armor_trim_smithing_template[custom_data={sea_t_shotgun1:true}] run tag @s add e_w_04b_eternal
 execute if entity @s[tag=!e_w_06] if items entity @s container.* music_disc_5[custom_data={sea_flamethrower:true}] run playsound minecraft:ui.toast.challenge_complete player @s ~ ~ ~ 1 1

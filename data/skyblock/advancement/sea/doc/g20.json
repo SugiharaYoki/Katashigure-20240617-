@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "炽烈球体创造者",
+            "color": "aqua",
+            "bold": true,
+            "italic": false
+        },
+        "description": {
+            "text": "获得喷火枪。\n“虽然用它不能真的将腐尸烧成炽烈球体……”\n“什么？你说那反而是好事？”",
+            "color": "gray"
+        },
+        "icon": {
+            "id": "minecraft:iron_hoe"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "sea": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:sea/doc/gfolder1"
+}
