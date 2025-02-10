@@ -30,4 +30,7 @@ execute if score sea_chapter_introduction sea_4temp1 matches 185 unless entity @
 execute if score sea_chapter_introduction sea_4temp1 matches 215 unless entity @a[scores={SEAPT_member=2}] run tellraw @a[distance=0..250] {"text": "……下雨了啊。","color": "gray"}
 execute if score sea_chapter_introduction sea_4temp1 matches 235 unless entity @a[scores={SEAPT_member=2}] run tellraw @a[distance=0..250] {"text": "已经快到目的地了。但愿工作能快点结束吧。","color": "gray"}
 
+execute if score sea_chapter_introduction sea_4temp1 matches ..275 positioned 90122 128 131 if items entity @p[scores={SEA_story=1..}] weapon.mainhand spyglass unless entity @a[tag=SEAPT,scores={SEA_story=..0}] as @p[nbt={SelectedItem:{id:"minecraft:spyglass"}}] at @s run tellraw @a[tag=SEAPT] [{"selector":"@s","color":"white"},{"text":"：「跳过了剧情」","color":"white"}]
+execute if score sea_chapter_introduction sea_4temp1 matches ..275 positioned 90122 128 131 if items entity @p[scores={SEA_story=1..}] weapon.mainhand spyglass unless entity @a[tag=SEAPT,scores={SEA_story=..0}] run give @a[tag=SEAPT,advancements={skyblock:sea/doc/g17=false}] mojang_banner_pattern[custom_data={sea_docg17:true}]
+execute if score sea_chapter_introduction sea_4temp1 matches ..275 positioned 90122 128 131 if items entity @p[scores={SEA_story=1..}] weapon.mainhand spyglass unless entity @a[tag=SEAPT,scores={SEA_story=..0}] run scoreboard players set sea_chapter_introduction sea_4temp1 277
 

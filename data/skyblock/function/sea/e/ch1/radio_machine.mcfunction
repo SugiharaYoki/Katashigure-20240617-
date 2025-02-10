@@ -20,6 +20,8 @@ execute as @s[scores={sea_4temp2=335}] positioned 90120 123 123 if entity @n[tag
 
 execute as @s[scores={sea_4temp2=272}] positioned 90120 123 123 as @a[distance=0..300] at @s run playsound garden2.bgm.006 music @s ~ ~ ~ 1 1.0
 
+execute as @s[scores={sea_4temp2=305..500}] positioned 90120 123 123 run give @a[tag=SEAPT,advancements={skyblock:sea/doc/g18=false},distance=18..] mojang_banner_pattern[custom_data={sea_docg18:true}]
+
 execute as @s[scores={sea_4temp2=254..1100}] run particle large_smoke 90120 123 115 0.2 0.5 0.2 0.01 3
 execute as @s[scores={sea_4temp2=344..1100}] run particle large_smoke 90125 123 115 0.2 0.5 0.2 0.01 3
 execute as @s[scores={sea_4temp2=284..1100}] run particle large_smoke 90123 121 115 0.2 0.5 0.2 0.01 3
