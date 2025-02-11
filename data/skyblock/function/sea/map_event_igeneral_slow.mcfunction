@@ -318,7 +318,7 @@ execute if entity @n[tag=sc,scores={sea_player=2..}] run function skyblock:sea/m
 
 
 execute positioned 90092 145 135 if block 90093 145 137 air if entity @a[tag=SEAPT,distance=..4.6] unless entity @n[tag=SEAchg_spawn_timer_medical1,distance=0..3] run summon marker ~ ~ ~ {Tags:["SEAchg_spawn_timer","SEAchg_spawn_timer_medical1"]}
-execute as @n[tag=SEAchg_spawn_timer_medical1] at @s run function skyblock:sea/e/ev020_medical1
+execute as @n[tag=SEAchg_spawn_timer_medical1] at @s run function skyblock:sea/e/chg/ev020_medical1
 
 #激光
 execute as @e[x=90130.0,dx=2.2,y=124.5,dy=0,z=125.5,dz=0] run damage @s 3 sting

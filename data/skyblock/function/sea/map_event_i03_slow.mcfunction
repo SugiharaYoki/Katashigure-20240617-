@@ -135,7 +135,7 @@ execute as @n[tag=SEAch3_spawn_timer8,scores={sea_4temp1=23}] at @n[tag=SEAyueha
 execute as @n[tag=SEAch3_spawn_timer8,scores={sea_4temp1=23}] at @n[tag=SEAyuehan] run scoreboard players set @n[tag=SEAyuehan] sea_4temp1 0
 execute as @n[tag=SEAch3_spawn_timer8,scores={sea_4temp1=23}] at @n[tag=SEAyuehan] run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
 
-execute as @n[tag=SEAyuehan] at @s if block 90131 161 144 air if entity @a[tag=SEAPT,distance=..6] run function skyblock:sea/e/ev005
+execute as @n[tag=SEAyuehan] at @s if block 90131 161 144 air if entity @a[tag=SEAPT,distance=..6] run function skyblock:sea/e/ch3/ev005_crystal_shrine
 
 execute if block 90137 136 144 minecraft:polished_tuff \
 if block 90137 139 141 lever[powered=true] \
@@ -215,15 +215,15 @@ if block 90127 153 129 lever[powered=true] \
 if block 90126 153 129 lever[powered=true] \
 if block 90125 153 129 lever[powered=true] \
 if block 90124 153 129 lever[powered=false] \
-if block 90120 155 139 air run function skyblock:sea/e/ev007
+if block 90120 155 139 air run function skyblock:sea/e/ch3/ev007_dorm_password_is_correct
 
-execute as @n[tag=SEAmarshall,scores={sea_4temp1=..538}] at @s if entity @a[tag=SEAPT,distance=..6] run function skyblock:sea/e/ev006
-execute as @n[tag=SEAmarshall,scores={sea_4temp1=539..}] at @s if entity @a[tag=SEAPT,distance=..600] run function skyblock:sea/e/ev006
+execute as @n[tag=SEAmarshall,scores={sea_4temp1=..538}] at @s if entity @a[tag=SEAPT,distance=..6] run function skyblock:sea/e/ch3/ev006_the_last_survivor
+execute as @n[tag=SEAmarshall,scores={sea_4temp1=539..}] at @s if entity @a[tag=SEAPT,distance=..600] run function skyblock:sea/e/ch3/ev006_the_last_survivor
 
-#execute unless block 90131 161 144 air as @a[tag=SEAPT,tag=!e_i_27] if block ~ ~-1 ~ polished_tuff run function skyblock:sea/e/ev007
+#execute unless block 90131 161 144 air as @a[tag=SEAPT,tag=!e_i_27] if block ~ ~-1 ~ polished_tuff run function skyblock:sea/e/ch3/ev007_dorm_password_is_correct
 
-execute as @n[tag=SEAyuehan] at @s unless block 90131 161 144 air run function skyblock:sea/e/ev008
-execute as @n[tag=SEAyuehan] at @s unless entity @a[tag=e_i_25] unless block 90131 161 144 air run function skyblock:sea/e/ev008_b
+execute as @n[tag=SEAyuehan] at @s unless block 90131 161 144 air run function skyblock:sea/e/ch3/ev008_elevator_to_northeast
+execute as @n[tag=SEAyuehan] at @s unless entity @a[tag=e_i_25] unless block 90131 161 144 air run function skyblock:sea/e/ch3/ev008_elevator_to_northeast_b
 
 
 execute as @a[tag=SEAPT,x=90138,y=103,z=100,distance=0..2.7,tag=!e_i_29] at @s run tellraw @s {"text": "我有预感……去了更下层后就很难再回来了。做好万全的准备再前进吧。","color": "gray"}
