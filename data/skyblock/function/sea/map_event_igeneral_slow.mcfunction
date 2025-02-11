@@ -272,7 +272,7 @@ execute if block 90111 122 143 lever[powered=false] if block 90110 122 143 lever
 
 execute if block 90136 123 126 lever[powered=false] if block 90136 123 124 lever[powered=true] if block 90136 123 122 lever[powered=false] if block 90136 123 120 lever[powered=true] if block 90136 123 118 lever[powered=true] run setblock 90141 122 139 minecraft:redstone_block
 
-execute if entity @a[tag=SEAPT,x=90131,y=122,z=136,distance=0..2.4,tag=!e_i_11] run function skyblock:sea/e/ev003
+execute if entity @a[tag=SEAPT,x=90131,y=122,z=136,distance=0..2.4,tag=!e_i_11] run function skyblock:sea/e/ch1/ev003_pillager_trap
 
 #建材资源附属平台 标题
 execute positioned 90139.99 115.00 243.93 as @a[tag=SEAPT,distance=0..4,tag=!e_i_39] at @s run function skyblock:sea/e/chg/title_auxiliary
