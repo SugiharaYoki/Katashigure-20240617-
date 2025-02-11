@@ -1,13 +1,13 @@
 {
     "display": {
         "title": {
-            "text": "临阵脱逃",
+            "text": "毁灭一切！爆炸！",
             "color": "aqua",
             "bold": true,
             "italic": false
         },
         "description": {
-            "text": "听到联络机台的警告并立刻离去。\n“这说不定才是真正的HE！”",
+            "text": "目睹一次定时炸弹的爆炸。\n“麦迪逊就那么坚信我会做出定时炸弹吗？”\n“等等、你说他只是在自娱自乐？”",
             "color": "gray"
         },
         "icon": {
@@ -23,5 +23,5 @@
             "trigger": "minecraft:impossible"
         }
     },
-    "parent": "skyblock:sea/doc/g17"
+    "parent": "skyblock:sea/doc/g19"
 }
