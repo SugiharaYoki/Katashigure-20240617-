@@ -23,5 +23,5 @@
             "trigger": "minecraft:impossible"
         }
     },
-    "parent": "skyblock:azr_stage3_alt"
+    "parent": "skyblock:azr/azr_stage3_alt"
 }
