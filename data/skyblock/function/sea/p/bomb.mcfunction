@@ -67,6 +67,7 @@ execute positioned ~-2 ~ ~-1 if block ~ ~ ~ slime_block run setblock ~ ~ ~ air d
 execute positioned ~-2 ~ ~0 if block ~ ~ ~ slime_block run setblock ~ ~ ~ air destroy
 execute positioned ~-2 ~ ~1 if block ~ ~ ~ slime_block run setblock ~ ~ ~ air destroy
 execute positioned ~-2 ~ ~2 if block ~ ~ ~ slime_block run setblock ~ ~ ~ air destroy
+execute positioned ~ ~-1 ~ if block ~ ~ ~ slime_block run setblock ~ ~ ~ air destroy
 
 execute positioned ~2 ~1 ~-2 if block ~ ~ ~ slime_block run setblock ~ ~ ~ air destroy
 execute positioned ~2 ~1 ~-1 if block ~ ~ ~ slime_block run setblock ~ ~ ~ air destroy
