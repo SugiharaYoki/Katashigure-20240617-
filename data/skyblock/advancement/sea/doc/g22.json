@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "你知道那下有多痛吗？",
+            "color": "aqua",
+            "bold": true,
+            "italic": false
+        },
+        "description": {
+            "text": "使用可控式地雷轰炸艾德雯娜。\n“真不赖，我手上的装备，你也全都有。”",
+            "color": "gray"
+        },
+        "icon": {
+            "id": "minecraft:iron_hoe"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "sea": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:sea/doc/g20"
+}
