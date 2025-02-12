@@ -658,6 +658,11 @@ setblock 90049 155 167 air
 setblock 90053 153 167 air
 setblock 90045 156 172 air
 
+setblock 90148 130 148 chest[facing=east]
+item replace block 90148 130 148 container.12 with echo_shard 1
+item replace block 90148 130 148 container.14 with raw_iron 1
+
+
 #第四章封锁解除
 fill 90217 46 125 90217 44 125 air
 fill 90190 47 129 90190 44 129 minecraft:air
@@ -727,4 +732,11 @@ setblock 90113 102 18 lever[facing=west]
 
 
 fill 90125 102 101 90127 102 99 iron_block
+
+
+
+
+
+
+
 
