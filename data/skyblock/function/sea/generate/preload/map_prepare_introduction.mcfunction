@@ -661,6 +661,8 @@ setblock 90045 156 172 air
 setblock 90148 130 148 chest[facing=east]
 item replace block 90148 130 148 container.12 with echo_shard 1
 item replace block 90148 130 148 container.14 with raw_iron 1
+setblock 90159 128 158 air
+setblock 90159 128 158 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 2, id:"minecraft:coal"}}
 
 
 #第四章封锁解除
