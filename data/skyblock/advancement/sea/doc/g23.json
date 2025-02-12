@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "为了有备无患",
+            "color": "aqua",
+            "bold": true,
+            "italic": false
+        },
+        "description": {
+            "text": "目睹法莫洛斯被地线的电流攻击。\n“只差一点……他就自杀成功了。”",
+            "color": "gray"
+        },
+        "icon": {
+            "id": "minecraft:iron_hoe"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "sea": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:sea/doc/g22"
+}
