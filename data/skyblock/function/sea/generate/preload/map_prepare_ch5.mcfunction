@@ -309,8 +309,8 @@ fill 90110 102 27 90109 102 28 waxed_copper_grate
 
 fill 90100 73 67 90099 71 67 iron_bars
 
-
-
+#防卡关
+fill 90127 130 102 90127 129 102 air
 
 
 

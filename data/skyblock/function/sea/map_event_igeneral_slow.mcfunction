@@ -272,7 +272,7 @@ execute if block 90111 122 143 lever[powered=false] if block 90110 122 143 lever
 
 execute if block 90136 123 126 lever[powered=false] if block 90136 123 124 lever[powered=true] if block 90136 123 122 lever[powered=false] if block 90136 123 120 lever[powered=true] if block 90136 123 118 lever[powered=true] run setblock 90141 122 139 minecraft:redstone_block
 
-execute if entity @a[tag=SEAPT,x=90131,y=122,z=136,distance=0..2.4,tag=!e_i_11] run function skyblock:sea/e/ev003
+execute if entity @a[tag=SEAPT,x=90131,y=122,z=136,distance=0..2.4,tag=!e_i_11] run function skyblock:sea/e/ch1/ev003_pillager_trap
 
 #建材资源附属平台 标题
 execute positioned 90139.99 115.00 243.93 as @a[tag=SEAPT,distance=0..4,tag=!e_i_39] at @s run function skyblock:sea/e/chg/title_auxiliary
@@ -318,7 +318,7 @@ execute if entity @n[tag=sc,scores={sea_player=2..}] run function skyblock:sea/m
 
 
 execute positioned 90092 145 135 if block 90093 145 137 air if entity @a[tag=SEAPT,distance=..4.6] unless entity @n[tag=SEAchg_spawn_timer_medical1,distance=0..3] run summon marker ~ ~ ~ {Tags:["SEAchg_spawn_timer","SEAchg_spawn_timer_medical1"]}
-execute as @n[tag=SEAchg_spawn_timer_medical1] at @s run function skyblock:sea/e/ev020_medical1
+execute as @n[tag=SEAchg_spawn_timer_medical1] at @s run function skyblock:sea/e/chg/ev020_medical1
 
 #激光
 execute as @e[x=90130.0,dx=2.2,y=124.5,dy=0,z=125.5,dz=0] run damage @s 3 sting

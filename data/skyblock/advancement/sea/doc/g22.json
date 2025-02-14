@@ -1,27 +1,27 @@
 {
     "display": {
         "title": {
-            "text": "第一关口区域 - 4B",
+            "text": "你知道那下有多痛吗？",
             "color": "aqua",
             "bold": true,
             "italic": false
         },
         "description": {
-            "text": "虫潮…… 以及在霎时间的一片漆黑后 满地的虫尸。",
-            "color": "white"
+            "text": "使用可控式地雷轰炸艾德雯娜。\n“真不赖，我手上的装备，你也全都有。”",
+            "color": "gray"
         },
         "icon": {
-            "id": "minecraft:quartz_block"
+            "id": "minecraft:iron_hoe"
         },
-        "frame": "goal",
+        "frame": "task",
         "show_toast": false,
         "announce_to_chat": true,
         "hidden": true
     },
     "criteria": {
-        "azrielsmidgarden": {
+        "sea": {
             "trigger": "minecraft:impossible"
         }
     },
-    "parent": "skyblock:azr/azr_stage3_alt"
+    "parent": "skyblock:sea/doc/g20"
 }

@@ -28,4 +28,4 @@ execute as @s[scores={sea_4temp2=3001}] positioned 90092 122 119 run function sk
 execute as @s[scores={sea_4temp2=3001}] positioned 90092 122 119 run function skyblock:sea/m/pillager
 execute as @s[scores={sea_4temp2=3001}] positioned 90120 123 123 run time set 13000t
 
-execute as @s[scores={sea_4temp2=3001}] positioned 90120 123 123 as @a[tag=SEAPT,advancements={skyblock:sea/doc/g19=false},distance=..16] at @s unless items entity @s container.* iron_axe run give @s mojang_banner_pattern[custom_data={sea_docg19:true}]
+execute as @s[scores={sea_4temp2=3002}] positioned 90093 122 101 as @a[tag=SEAPT,advancements={skyblock:sea/doc/g19=false},distance=..16] at @s unless items entity @s container.* iron_axe run give @s mojang_banner_pattern[custom_data={sea_docg19:true}]

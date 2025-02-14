@@ -1,27 +1,27 @@
 {
     "display": {
         "title": {
-            "text": "外庭花园 - 万花祭坛",
-            "color": "green",
+            "text": "为了有备无患",
+            "color": "aqua",
             "bold": true,
             "italic": false
         },
         "description": {
-            "text": "STAGE DIFFIDENT",
-            "color": "light_purple"
+            "text": "目睹法莫洛斯被地线的电流攻击。\n“只差一点……他就自杀成功了。”",
+            "color": "gray"
         },
         "icon": {
-            "id": "minecraft:lime_glazed_terracotta"
+            "id": "minecraft:iron_hoe"
         },
         "frame": "task",
         "show_toast": false,
         "announce_to_chat": true,
-        "hidden": false
+        "hidden": true
     },
     "criteria": {
-        "azrielsmidgarden": {
+        "sea": {
             "trigger": "minecraft:impossible"
         }
     },
-    "parent": "skyblock:azr/azr_stage4"
+    "parent": "skyblock:sea/doc/g22"
 }
