@@ -16,6 +16,7 @@ execute if entity @n[tag=SEAyuehan,tag=SEA_ch4elevator_start,scores={sea_4temp5=
 execute if entity @n[tag=SEAyuehan,tag=SEA_ch4elevator_start,scores={sea_4temp5=36..}] as @a[tag=SEAPT] at @s if entity @n[tag=sea_ch4elevator1,distance=0..4.1] run effect give @s slow_falling 5 149 true
 execute if entity @n[tag=SEAyuehan,tag=SEA_ch4elevator_start,scores={sea_4temp5=36..}] as @a[tag=SEAPT] at @s if entity @n[tag=sea_ch4elevator1,distance=0..4.1] run attribute @s generic.gravity base set 0.01
 execute if entity @n[tag=SEAyuehan,tag=SEA_ch4elevator_start,scores={sea_4temp5=36..}] as @n[tag=sea_ch4elevator1] at @s at @p[tag=SEAPT,x=90100,y=-1000,z=100] run tp @s 90125.0 ~-1.1 99.0
+execute if entity @n[tag=SEAyuehan,tag=SEA_ch4elevator_start,scores={sea_4temp5=36..}] as @n[tag=sea_ch4elevator1] run data merge entity @s {teleport_duration:1}
 execute if entity @n[tag=SEAyuehan,tag=SEA_ch4elevator_start,scores={sea_4temp5=36..}] as @n[tag=sea_ch4elevator1] at @s run playsound block.chain.step ambient @a ~ ~ ~ 0.6 1.1
 execute if entity @n[tag=SEAyuehan,tag=SEA_ch4elevator_start,scores={sea_4temp5=36..}] as @n[tag=sea_ch4elevator1] at @s run playsound block.chain.step ambient @a ~ ~ ~ 0.5 1.05
 execute as @n[tag=SEAyuehan,tag=SEA_ch4elevator_start,scores={sea_4temp5=36..}] at @n[tag=sea_ch4elevator1] unless block ~ ~-.5 ~ barrier run tp @s 90125 ~0.5 100
