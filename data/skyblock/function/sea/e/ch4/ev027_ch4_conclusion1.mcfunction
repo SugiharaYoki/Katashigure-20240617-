@@ -163,7 +163,7 @@ execute if score @s rng6 matches 1004 at @n[tag=SEAedwina] run playsound entity.
 execute if score @s rng6 matches 1004 at @n[tag=SEAedwina] run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“那么快？！不好，快点离开这里！！”","color":"white","bold": false}]
 
 execute if score @s rng6 matches 1005..1019 as @n[tag=SEAedwina] at @s run tp @s ~ ~ ~-1.3 facing ~ ~ ~-2
-execute if score @s rng6 matches 1006..1014 as @n[tag=SEAyuehan] at @s run tp @s ~ ~ ~-1.2 facing entity @n[tag=SEAedwina]
+execute if score @s rng6 matches 1006..1015 as @n[tag=SEAyuehan] at @s run tp @s ~ ~ ~-1.2 facing entity @n[tag=SEAedwina]
 
 execute if score @s rng6 matches 1013 at @n[tag=SEAyuehan] run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
 execute if score @s rng6 matches 1013 at @n[tag=SEAyuehan] run tellraw @a[distance=0..250] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“怎、怎么说？！那台生态装……”","color":"white","bold": false}]
@@ -252,8 +252,8 @@ execute if score @s rng6 matches 1202 at @n[tag=SEAedwina] run playsound entity.
 execute if score @s rng6 matches 1202 at @n[tag=SEAedwina] if entity @n[tag=sc,scores={sea_player=1}] run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“喂，……你一个人有问题吗？我要去救越涵。”","color":"white","bold": false}]
 execute if score @s rng6 matches 1202 at @n[tag=SEAedwina] if entity @n[tag=sc,scores={sea_player=2..}] run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“喂，……你们没我陪同没问题吧？我要去救越涵。”","color":"white","bold": false}]
 
-execute if score @s rng6 matches 1222 unless entity @p[tag=SEAPT,scores={SEAPT_member=2..}] at @s run tellraw @a[distance=0..50] [{"selector":"@p[tag=SEAPT,scores={SEAPT_member=1}]","color":"white"},{"text":"：没什么问题。越涵的话……","color":"white"}]
-execute if score @s rng6 matches 1222 if entity @p[tag=SEAPT,scores={SEAPT_member=2..}] at @s run tellraw @a[distance=0..50] [{"selector":"@p[tag=SEAPT,scores={SEAPT_member=1}]","color":"white"},{"text":"：还是我去吧、……","color":"white"}]
+execute if score @s rng6 matches 1222 unless entity @p[tag=SEAPT,scores={SEAPT_member=2..}] at @s run tellraw @a[distance=0..250] [{"selector":"@p[tag=SEAPT,scores={SEAPT_member=1}]","color":"white"},{"text":"：没什么问题。越涵的话……","color":"white"}]
+execute if score @s rng6 matches 1222 if entity @p[tag=SEAPT,scores={SEAPT_member=2..}] at @s run tellraw @a[distance=0..250] [{"selector":"@p[tag=SEAPT,scores={SEAPT_member=1}]","color":"white"},{"text":"：还是我去吧、……","color":"white"}]
 
 execute if score @s rng6 matches 1238 at @n[tag=SEAedwina] run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 1.3
 execute if score @s rng6 matches 1238 unless entity @p[tag=SEAPT,scores={SEAPT_member=2..}] at @n[tag=SEAedwina] run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“希望你能理解，我不想再有人牺牲了。\n回头见。”","color":"white","bold": false}]

@@ -240,7 +240,7 @@ tag @s remove sea_t_knockback5
 
 execute unless entity @a[tag=SEAPT] unless entity @a[x=90074,y=92,z=139,distance=0..50,gamemode=!spectator] run function skyblock:sea/endgame_regen
 
-execute if entity @s[advancements={skyblock:sea/doc/w1=true}] run function skyblock:sea/p/document_macro {doc:w2}
+execute if entity @s[advancements={skyblock:sea/doc/w1=true}] run function skyblock:sea/p/document_macro {doc:w1}
 execute if entity @s[advancements={skyblock:sea/doc/w2=true}] run function skyblock:sea/p/document_macro {doc:w2}
 execute if entity @s[advancements={skyblock:sea/doc/w3=true}] run function skyblock:sea/p/document_macro {doc:w3}
 execute if entity @s[advancements={skyblock:sea/doc/w4=true}] run function skyblock:sea/p/document_macro {doc:w4}
