@@ -515,23 +515,15 @@ execute if score stageSeconds Azr_system matches 1630 run summon zombie -79767 4
 execute if score stageSeconds Azr_system matches 1630.. as @e[tag=AzrielTempSpec2] at @s run particle minecraft:dripping_lava ~ ~0.8 ~ 0.3 0.8 0.3 1 10
 
 execute if score stageSeconds Azr_system matches 1652 as @e[tag=AzrielBossB] at @s run kill @s
-execute if score stageSeconds Azr_system matches 1653 if score playerCount Azr_system matches 1 run summon evoker -79719.0 52 -162.0 {PersistenceRequired:1b,Tags:["AzrielMob","AzrielBossB"],DeathLootTable:"skyblock:azriel_shadow_tier1",Health:300.0f,CustomName:'"权之殊能"',attributes:[{id:"generic.armor",base:1.0d},{id:"generic.max_health",base:300.0d},{id:"generic.attack_damage",base:1.5d},{id:"generic.movement_speed",base:0.0d}]}
-execute if score stageSeconds Azr_system matches 1653 if score playerCount Azr_system matches 2 run summon evoker -79719.0 52 -162.0 {PersistenceRequired:1b,Tags:["AzrielMob","AzrielBossB"],DeathLootTable:"skyblock:azriel_shadow_tier1",Health:320.0f,CustomName:'"权之殊能"',attributes:[{id:"generic.armor",base:1.0d},{id:"generic.max_health",base:320.0d},{id:"generic.attack_damage",base:1.5d},{id:"generic.movement_speed",base:0.0d}]}
-execute if score stageSeconds Azr_system matches 1653 if score playerCount Azr_system matches 3 run summon evoker -79719.0 52 -162.0 {PersistenceRequired:1b,Tags:["AzrielMob","AzrielBossB"],DeathLootTable:"skyblock:azriel_shadow_tier1",Health:340.0f,CustomName:'"权之殊能"',attributes:[{id:"generic.armor",base:1.0d},{id:"generic.max_health",base:340.0d},{id:"generic.attack_damage",base:1.5d},{id:"generic.movement_speed",base:0.0d}]}
-execute if score stageSeconds Azr_system matches 1653 if score playerCount Azr_system matches 4 run summon evoker -79719.0 52 -162.0 {PersistenceRequired:1b,Tags:["AzrielMob","AzrielBossB"],DeathLootTable:"skyblock:azriel_shadow_tier1",Health:340.0f,CustomName:'"权之殊能"',attributes:[{id:"generic.armor",base:1.5d},{id:"generic.max_health",base:340.0d},{id:"generic.attack_damage",base:1.5d},{id:"generic.movement_speed",base:0.0d}]}
-execute if score stageSeconds Azr_system matches 1653 if score playerCount Azr_system matches 5..6 run summon evoker -79719.0 52 -162.0 {PersistenceRequired:1b,Tags:["AzrielMob","AzrielBossB"],DeathLootTable:"skyblock:azriel_shadow_tier1",Health:360.0f,CustomName:'"权之殊能"',attributes:[{id:"generic.armor",base:1.5d},{id:"generic.max_health",base:360.0d},{id:"generic.attack_damage",base:1.5d},{id:"generic.movement_speed",base:0.0d}]}
-execute if score stageSeconds Azr_system matches 1653 if score playerCount Azr_system matches 7.. run summon evoker -79719.0 52 -162.0 {PersistenceRequired:1b,Tags:["AzrielMob","AzrielBossB"],DeathLootTable:"skyblock:azriel_shadow_tier1",Health:380.0f,CustomName:'"权之殊能"',attributes:[{id:"generic.armor",base:1.5d},{id:"generic.max_health",base:380.0d},{id:"generic.attack_damage",base:1.5d},{id:"generic.movement_speed",base:0.0d}]}
+execute if score stageSeconds Azr_system matches 1653 if score playerCount Azr_system matches 1..4 run summon evoker -79719.0 52 -162.0 {PersistenceRequired:1b,Tags:["AzrielMob","AzrielBossB"],DeathLootTable:"skyblock:azriel_shadow_tier1",Health:260.0f,CustomName:'"权之殊能"',attributes:[{id:"generic.armor",base:1.0d},{id:"generic.max_health",base:260.0d},{id:"generic.attack_damage",base:1.5d},{id:"generic.movement_speed",base:0.0d}]}
+execute if score stageSeconds Azr_system matches 1653 if score playerCount Azr_system matches 5.. run summon evoker -79719.0 52 -162.0 {PersistenceRequired:1b,Tags:["AzrielMob","AzrielBossB"],DeathLootTable:"skyblock:azriel_shadow_tier1",Health:260.0f,CustomName:'"权之殊能"',attributes:[{id:"generic.armor",base:1.5d},{id:"generic.max_health",base:260.0d},{id:"generic.attack_damage",base:1.5d},{id:"generic.movement_speed",base:0.0d}]}
 execute if score stageSeconds Azr_system matches 1653 run particle large_smoke -79719.0 51 -162.0 1 1 1 0.08 500
 
 execute if score stageSeconds Azr_system matches 1652..6999 store result bossbar azr:boss_hp_bar value run data get entity @e[tag=AzrielBossB,limit=1] Health
 
 execute if score stageSeconds Azr_system matches 1652 run bossbar add azr:boss_hp_bar "邪魔引路者 权之殊能"
 execute if score stageSeconds Azr_system matches 1652 run bossbar set azr:boss_hp_bar color purple
-execute if score stageSeconds Azr_system matches 1652 if score playerCount Azr_system matches 1 run bossbar set azr:boss_hp_bar max 300
-execute if score stageSeconds Azr_system matches 1652 if score playerCount Azr_system matches 2 run bossbar set azr:boss_hp_bar max 320
-execute if score stageSeconds Azr_system matches 1652 if score playerCount Azr_system matches 3..4 run bossbar set azr:boss_hp_bar max 340
-execute if score stageSeconds Azr_system matches 1652 if score playerCount Azr_system matches 5..6 run bossbar set azr:boss_hp_bar max 360
-execute if score stageSeconds Azr_system matches 1652 if score playerCount Azr_system matches 7.. run bossbar set azr:boss_hp_bar max 380
+execute if score stageSeconds Azr_system matches 1652 if score playerCount Azr_system matches 1.. run bossbar set azr:boss_hp_bar max 260
 execute if score stageSeconds Azr_system matches 1652 run bossbar set azr:boss_hp_bar players @a[tag=azrPlayer]
 
 #地图初始化保险
