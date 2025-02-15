@@ -226,8 +226,8 @@ setblock 90117 139 155 lever[facing=east]
 setblock 90117 137 142 chest[facing=north]
 item replace block 90117 137 142 container.13 with arrow 2
 
-summon painting 90122 138 146 {facing:2b,variant:"minecraft:humble"}
-summon painting 90123 138 145 {facing:1,variant:"minecraft:prairie_ride"}
+summon painting 90122 138 146 {Facing:2b,variant:"minecraft:humble"}
+summon painting 90123 138 145 {Facing:1,variant:"minecraft:prairie_ride"}
 setblock 90123 138 146 minecraft:potted_azure_bluet
 setblock 90130 138 140 minecraft:potted_cherry_sapling
 
@@ -383,7 +383,7 @@ setblock 90120 161 144 air
 setblock 90125 161 143 redstone_block
 setblock 90125 161 143 air
 
-summon painting 90121 162 148 {facing:1b,variant:"minecraft:backyard"}
+summon painting 90121 162 148 {Facing:1b,variant:"minecraft:backyard"}
 setblock 90120 162 140 minecraft:potted_red_tulip
 setblock 90129 162 143 minecraft:potted_cherry_sapling
 
@@ -397,8 +397,16 @@ fill 90149 137 152 90149 138 152 minecraft:stone_bricks
 
 #fill 90163 129 113 90163 127 114 iron_bars
 
-
-summon block_display 90125.0 102 99.0 {transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[3f,0.9f,3f],translation:[0f,0f,0f]},block_state:{Name:iron_block},Tags:["sea_blockdisplay","sea_ch4elevator1"],Rotation:[0f,0f]}
+summon minecraft:block_display 90126.5 102.5 100.5 {Tags:["sea_ch3elevator1","display"],block_state:{Name:"iron_block"},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[3f,0.9f,3f],translation:[-1.5f,0.1f,-1.5f]}}
+summon block_display 90125.5 101.5 99.5 {Tags:["sea_ch3elevator1","control"],Passengers:[{id:"shulker",active_effects:[{id:"invisibility",show_particles:0b,amplifier:1,duration:100000}],Tags:["sea_ch3elevator1","block_box"],NoAI:1b,Silent:1b,Invulnerable:1b}]}
+summon block_display 90126.5 101.5 99.5 {Tags:["sea_ch3elevator1","control"],Passengers:[{id:"shulker",active_effects:[{id:"invisibility",show_particles:0b,amplifier:1,duration:100000}],NoAI:1b,Silent:1b,Invulnerable:1b}]}
+summon block_display 90127.5 101.5 99.5 {Tags:["sea_ch3elevator1","control"],Passengers:[{id:"shulker",active_effects:[{id:"invisibility",show_particles:0b,amplifier:1,duration:100000}],NoAI:1b,Silent:1b,Invulnerable:1b}]}
+summon block_display 90125.5 101.5 100.5 {Tags:["sea_ch3elevator1","control"],Passengers:[{id:"shulker",active_effects:[{id:"invisibility",show_particles:0b,amplifier:1,duration:100000}],NoAI:1b,Silent:1b,Invulnerable:1b}]}
+summon block_display 90126.5 101.5 100.5 {Tags:["sea_ch3elevator1","control"],Passengers:[{id:"shulker",active_effects:[{id:"invisibility",show_particles:0b,amplifier:1,duration:100000}],NoAI:1b,Silent:1b,Invulnerable:1b}]}
+summon block_display 90127.5 101.5 100.5 {Tags:["sea_ch3elevator1","control"],Passengers:[{id:"shulker",active_effects:[{id:"invisibility",show_particles:0b,amplifier:1,duration:100000}],NoAI:1b,Silent:1b,Invulnerable:1b}]}
+summon block_display 90125.5 101.5 101.5 {Tags:["sea_ch3elevator1","control"],Passengers:[{id:"shulker",active_effects:[{id:"invisibility",show_particles:0b,amplifier:1,duration:100000}],NoAI:1b,Silent:1b,Invulnerable:1b}]}
+summon block_display 90126.5 101.5 101.5 {Tags:["sea_ch3elevator1","control"],Passengers:[{id:"shulker",active_effects:[{id:"invisibility",show_particles:0b,amplifier:1,duration:100000}],NoAI:1b,Silent:1b,Invulnerable:1b}]}
+summon block_display 90127.5 101.5 101.5 {Tags:["sea_ch3elevator1","control"],Passengers:[{id:"shulker",active_effects:[{id:"invisibility",show_particles:0b,amplifier:1,duration:100000}],NoAI:1b,Silent:1b,Invulnerable:1b}]}
 
 fill 90139 36 99 90137 36 101 waxed_copper_block
 setblock 90138 16 100 waxed_exposed_copper_bulb[lit=true]
