@@ -19,13 +19,14 @@ execute as @a[tag=SEAPT] at @s if block ~ ~-1 ~ barrier unless entity @a[tag=SEA
     execute if entity @n[tag=SEAyuehan,tag=SEA_ch4elevator_start,scores={sea_4temp5=36..}] if block 90125 102 101 barrier run fill 90125 102 101 90127 102 99 air
     execute if entity @n[tag=SEAyuehan,tag=SEA_ch4elevator_start,scores={sea_4temp5=36..}] as @a[tag=SEAPT] at @s if entity @n[tag=sea_ch3elevator1,distance=0..4.1] run attribute @s generic.gravity base set 1.0
     execute if entity @n[tag=SEAyuehan,tag=SEA_ch4elevator_start,scores={sea_4temp5=36..}] as @n[tag=SEAyuehan] run attribute @s generic.gravity base set 1.0
+    execute if entity @n[tag=SEAyuehan,tag=SEA_ch4elevator_start,scores={sea_4temp5=36..}] as @n[tag=SEAyuehan] run attribute @s generic.fall_damage_multiplier base set 0.0
     #移动
     execute if entity @n[tag=SEAyuehan,tag=SEA_ch4elevator_start,scores={sea_4temp5=36..}] as @e[tag=sea_ch3elevator1,tag=control] at @s run tp @s ~ ~-0.2705 ~
     #音效
     execute if entity @n[tag=SEAyuehan,tag=SEA_ch4elevator_start,scores={sea_4temp5=36..}] as @n[tag=sea_ch3elevator1] at @s run playsound block.chain.step ambient @a ~ ~ ~ 0.6 1.1
     execute if entity @n[tag=SEAyuehan,tag=SEA_ch4elevator_start,scores={sea_4temp5=36..}] as @n[tag=sea_ch3elevator1] at @s run playsound block.chain.step ambient @a ~ ~ ~ 0.5 1.05
 #结束，清除除动画以外的实体
-execute as @n[tag=SEAyuehan,tag=SEA_ch4elevator_start,scores={sea_4temp5=36..}] at @n[tag=sea_ch3elevator1,tag=!display] if block ~ ~1 ~ barrier run kill @s
+execute as @n[tag=SEAyuehan,tag=SEA_ch4elevator_start,scores={sea_4temp5=36..}] at @n[tag=sea_ch3elevator1,tag=!display] if block ~ ~ ~ barrier run kill @s
 
 execute as @n[tag=SEAyuehan,tag=SEA_ch4elevator_start,scores={sea_4temp5=36..}] at @s as @p[tag=SEAPT] at @s if block ~ ~-0.03 ~ barrier run playsound item.mace.smash_ground block @a 90126 36 100 1 0.5
 execute as @n[tag=SEAyuehan,tag=SEA_ch4elevator_start,scores={sea_4temp5=36..}] at @s as @p[tag=SEAPT] at @s if block ~ ~-0.03 ~ barrier run tag @n[tag=SEAyuehan] add SEA_ch4elevator_end
