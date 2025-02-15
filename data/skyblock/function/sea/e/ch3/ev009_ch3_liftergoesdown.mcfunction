@@ -7,7 +7,7 @@ execute as @a[tag=SEAPT] at @s if block ~ ~-1 ~ barrier if entity @a[tag=SEAPT,d
 execute as @a[tag=SEAPT] at @s if block ~ ~-1 ~ barrier if entity @a[tag=SEAPT,distance=2..] if entity @n[tag=SEAyuehan,scores={sea_4temp5=..35}] unless entity @n[tag=SEAyuehan,tag=SEA_ch4elevator_end] unless entity @n[tag=SEA_ch4elevator_warn1] run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
 execute as @a[tag=SEAPT] at @s if block ~ ~-1 ~ barrier if entity @a[tag=SEAPT,distance=2..] if entity @n[tag=SEAyuehan,scores={sea_4temp5=..35}] unless entity @n[tag=SEAyuehan,tag=SEA_ch4elevator_end] unless entity @n[tag=SEA_ch4elevator_warn1] run tag @n[tag=SEAyuehan] add SEA_ch4elevator_warn1
 
-execute as @a[tag=SEAPT,x=90125,y=103,z=100,distance=0..8] at @s unless entity @n[tag=SEAyuehan,x=90125,y=103,z=100,distance=0..5] run tp @n[tag=SEAyuehan,tag=!SEA_ch4elevator_end,scores={sea_4temp5=..35}] 90125 103 100
+execute as @a[tag=SEAPT,x=90125,y=103,z=100,distance=0..8] at @s unless entity @n[tag=SEAyuehan,x=90125,y=103,z=100,distance=0..5,scores={sea_4temp5=..35}] run tp @n[tag=SEAyuehan,tag=!SEA_ch4elevator_start,tag=!SEA_ch4elevator_end] 90125 103 100
 
 execute as @n[tag=SEAyuehan] at @s if block ~ ~ ~ barrier run tp @s ~ ~1 ~
 
