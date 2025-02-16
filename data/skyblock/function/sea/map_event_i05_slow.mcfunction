@@ -110,7 +110,7 @@ execute if score SEA_ch5_event_engineering_fiona rng1 matches 1..299 run functio
 #菲尔娜技能组
 execute as @n[tag=SEAfiona_laser_attacking,x=90000,y=100,z=0,distance=0..1200] at @s run function skyblock:sea/e/ch5/fiona_attack_laser
 execute as @n[tag=SEAfiona_laser_attacking_hostile,x=90000,y=100,z=0,distance=0..1200] at @s run function skyblock:sea/e/ch5/fiona_attack_laser_hostile
-
+execute as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] run effect give @s regeneration 5 5 true
 
 
 
