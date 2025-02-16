@@ -51,6 +51,18 @@ setblock 90103 122 52 chest[facing=east]
 item replace block 90103 122 52 container.12 with flint
 item replace block 90103 122 52 container.14 with flint
 
+setblock 90137 123 53 lever[facing=west,face=floor]
+setblock 90137 122 58 chest[facing=west]
+item replace block 90137 122 58 container.12 with gunpowder
+item replace block 90137 122 58 container.14 with gunpowder
+
+setblock 90132 125 51 chest[facing=south]
+item replace block 90132 125 51 container.13 with emerald 5
+
+
+
+
+
 
 
 
