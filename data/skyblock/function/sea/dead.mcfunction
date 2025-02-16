@@ -99,15 +99,15 @@ scoreboard players set 10 constant 10
 #scoreboard players operation @s sea_i_trim_sea *= 2 constant
 #scoreboard players operation @s sea_i_trim_ghost *= 2 constant
 #scoreboard players operation @s sea_i_trim_skeleton *= 2 constant
-scoreboard players operation @s Perm_PersonSHD += @s sea_i_trim_zombie
-scoreboard players operation @s Perm_PersonSHD += @s sea_i_trim_spider
-scoreboard players operation @s Perm_PersonSHD += @s sea_i_trim_human 
-scoreboard players operation @s Perm_PersonSHD += @s sea_i_trim_bug
-scoreboard players operation @s Perm_PersonSHD += @s sea_i_trim_sea
-scoreboard players operation @s Perm_PersonSHD += @s sea_i_trim_ghost
-scoreboard players operation @s Perm_PersonSHD += @s sea_i_trim_skeleton
+#scoreboard players operation @s Perm_PersonSHD += @s sea_i_trim_spider
+#scoreboard players operation @s Perm_PersonSHD += @s sea_i_trim_human 
+#scoreboard players operation @s Perm_PersonSHD += @s sea_i_trim_bug
+#scoreboard players operation @s Perm_PersonSHD += @s sea_i_trim_sea
+#scoreboard players operation @s Perm_PersonSHD += @s sea_i_trim_ghost
+#scoreboard players operation @s Perm_PersonSHD += @s sea_i_trim_skeleton
 execute as @s store result score @s sea_i_emerald run clear @s emerald 0
 scoreboard players operation @s sea_i_emerald /= 10 constant
+scoreboard players operation @s Perm_PersonSHD += @s sea_i_emerald
 scoreboard players operation @s sea_remiel_shadow = @s sea_i_emerald
 #scoreboard players set @s sea_i_trim_zombie 0
 #scoreboard players set @s sea_i_trim_spider 0
