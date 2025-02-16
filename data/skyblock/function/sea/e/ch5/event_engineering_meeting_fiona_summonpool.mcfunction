@@ -1,12 +1,12 @@
 scoreboard players add SEA_ch5_event_engineering_fiona rng10 1
 
-execute if score SEA_ch5_event_engineering_fiona rng10 matches 1..20 store result score SEA_ch5_event_engineering_fiona rng9 run random value 1..11
-execute if score SEA_ch5_event_engineering_fiona rng10 matches 21..120 store result score SEA_ch5_event_engineering_fiona rng9 run random value 1..19
-execute if score SEA_ch5_event_engineering_fiona rng10 matches 121..250 store result score SEA_ch5_event_engineering_fiona rng9 run random value 1..35
-execute if score SEA_ch5_event_engineering_fiona rng10 matches 121..250 store result score SEA_ch5_event_engineering_fiona rng8 if entity @e[tag=SEAmob,tag=!SEAnpc]
+execute if score SEA_ch5_event_engineering_fiona rng10 matches 1..20 store result score SEA_ch5_event_engineering_fiona rng9 run random value 1..14
+execute if score SEA_ch5_event_engineering_fiona rng10 matches 21..320 store result score SEA_ch5_event_engineering_fiona rng9 run random value 1..22
+execute if score SEA_ch5_event_engineering_fiona rng10 matches 321..650 store result score SEA_ch5_event_engineering_fiona rng9 run random value 1..45
+execute if score SEA_ch5_event_engineering_fiona rng10 matches 321..650 store result score SEA_ch5_event_engineering_fiona rng8 if entity @e[tag=SEAmob,tag=!SEAnpc]
 execute if score SEA_ch5_event_engineering_fiona rng10 matches 1..20 if score SEA_ch5_event_engineering_fiona rng8 matches 20.. store result score SEA_ch5_event_engineering_fiona rng9 run random value 10..11
-execute if score SEA_ch5_event_engineering_fiona rng10 matches 21..120 if score SEA_ch5_event_engineering_fiona rng8 matches 15.. store result score SEA_ch5_event_engineering_fiona rng9 run random value 12..19
-execute if score SEA_ch5_event_engineering_fiona rng10 matches 121..250 if score SEA_ch5_event_engineering_fiona rng8 matches 10.. store result score SEA_ch5_event_engineering_fiona rng9 run random value 13..35
+execute if score SEA_ch5_event_engineering_fiona rng10 matches 21..320 if score SEA_ch5_event_engineering_fiona rng8 matches 15.. store result score SEA_ch5_event_engineering_fiona rng9 run random value 12..19
+execute if score SEA_ch5_event_engineering_fiona rng10 matches 321..750 if score SEA_ch5_event_engineering_fiona rng8 matches 10.. store result score SEA_ch5_event_engineering_fiona rng9 run random value 13..35
 
 execute if score SEA_ch5_event_engineering_fiona rng9 matches 1..2 positioned 90131 122 54 run particle large_smoke ~ ~1 ~ 0.5 1 0.5 0.01 20
 execute if score SEA_ch5_event_engineering_fiona rng9 matches 1 positioned 90131 122 54 run function skyblock:sea/m/vindicator
