@@ -59,7 +59,16 @@ execute if score SEA_ch5_event_engineering_fiona rng1 matches 55.. as @n[tag=SEA
 execute if score SEA_ch5_event_engineering_fiona rng1 matches 55.. as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200,scores={rng2=4..5}] at @s unless entity @n[tag=SEAPT,distance=0..6] at @n[tag=SEAPT] rotated ~ 0 positioned ^1 ^ ^-2 if block ~ ~ ~ air if block ~ ~1 ~ air if block ~ ~1 ~0.3 air if block ~ ~1 ~-0.3 air if block ~0.3 ~1 ~ air if block ~-0.3 ~1 ~ air unless block ~ ~-0.7 ~ air run tp @s ~ ~ ~ facing entity @n[tag=SEAPT]
 execute if score SEA_ch5_event_engineering_fiona rng1 matches 55.. as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200,scores={rng2=4..5}] at @s unless entity @n[tag=SEAPT,distance=0..6] at @n[tag=SEAPT] rotated ~ 0 positioned ^-1 ^ ^-2 if block ~ ~ ~ air if block ~ ~1 ~ air if block ~ ~1 ~0.3 air if block ~ ~1 ~-0.3 air if block ~0.3 ~1 ~ air if block ~-0.3 ~1 ~ air unless block ~ ~-0.7 ~ air run tp @s ~ ~ ~ facing entity @n[tag=SEAPT]
 
-execute if score SEA_ch5_event_engineering_fiona rng1 matches 67 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s as @a[distance=0..300] at @s run playsound garden2.bgm.002 music @s ~ ~ ~ 1 1.0
-execute if score SEA_ch5_event_engineering_fiona rng1 matches 67 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s as @p[tag=SEAPT] run title @a[distance=0..250] title [{"text":"带着菲尔娜逃跑","color":"dark_red"}]
-execute if score SEA_ch5_event_engineering_fiona rng1 matches 67 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s as @p[tag=SEAPT] run title @a[distance=0..250] subtitle [{"text":"那些邪教徒也是人类 尽可能规避战斗吧","color":"gray"}]
+execute if score SEA_ch5_event_engineering_fiona rng1 matches 68 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s as @a[distance=0..300] at @s run playsound garden2.bgm.002 music @s ~ ~ ~ 1 1.0
+execute if score SEA_ch5_event_engineering_fiona rng1 matches 68 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s as @a[distance=0..300] at @s run playsound garden2.title music @s ~ ~ ~ 1 0.8
+execute if score SEA_ch5_event_engineering_fiona rng1 matches 68 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s as @p[tag=SEAPT] run title @a[distance=0..250] title [{"text":"带着菲尔娜逃跑","color":"dark_red"}]
+execute if score SEA_ch5_event_engineering_fiona rng1 matches 68 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s as @p[tag=SEAPT] run title @a[distance=0..250] subtitle [{"text":"那些邪教徒也是人类 尽可能规避战斗吧","color":"gray"}]
+
+
+execute if score SEA_ch5_event_engineering_fiona rng1 matches 152 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s as @p[tag=SEAPT] run tellraw @a[distance=0..250] [{"selector":"@s","color":"white"},{"text":"：你他妈捅了贼窝吗？他们倾巢出动杀你？！","color":"white"}]
+execute if score SEA_ch5_event_engineering_fiona rng1 matches 164 positioned 90141.8 122 61 run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“我把他们的一组通讯阵列给炸了，他们恐怕是有仇必报。”","color":"white","bold": false}]
+execute if score SEA_ch5_event_engineering_fiona rng1 matches 170 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s as @p[tag=SEAPT] run tellraw @a[distance=0..250] [{"selector":"@s","color":"white"},{"text":"：想想办法啊，往下逃？！","color":"white"}]
+execute if score SEA_ch5_event_engineering_fiona rng1 matches 184 positioned 90141.8 122 61 run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“别吵吵，带我去房间中间。”","color":"white","bold": false}]
+
+
 
