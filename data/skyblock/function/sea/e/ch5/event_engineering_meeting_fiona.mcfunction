@@ -19,13 +19,29 @@ execute if score SEA_ch5_event_engineering_fiona rng1 matches 23 as @n[tag=SEAfi
 
 execute if score SEA_ch5_event_engineering_fiona rng1 matches 23 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tag @s add SEAfiona_laser_attacking_hostile
 
-execute if score SEA_ch5_event_engineering_fiona rng1 matches 28 positioned 90147 122 63 run particle large_smoke ~ ~1 ~ 0.5 1 0.5 0.01 20
+execute if score SEA_ch5_event_engineering_fiona rng1 matches 27..28 positioned 90147 122 63 run particle large_smoke ~ ~1 ~ 0.5 1 0.5 0.01 20
 execute if score SEA_ch5_event_engineering_fiona rng1 matches 29 positioned 90147 122 63 run function skyblock:sea/m/pillager2
 execute if score SEA_ch5_event_engineering_fiona rng1 matches 29 positioned 90147 122 64 run function skyblock:sea/m/pillager2
 execute if score SEA_ch5_event_engineering_fiona rng1 matches 29 positioned 90148 122 63 run function skyblock:sea/m/pillager2
 execute if score SEA_ch5_event_engineering_fiona rng1 matches 29 positioned 90148 122 64 run function skyblock:sea/m/vindicator
 execute if score SEA_ch5_event_engineering_fiona rng1 matches 29 positioned 90147 122 65 run function skyblock:sea/m/vindicator
+
+execute if score SEA_ch5_event_engineering_fiona rng1 matches 31..32 positioned 90146 122 55 run particle large_smoke ~ ~1 ~ 0.5 1 0.5 0.01 20
+execute if score SEA_ch5_event_engineering_fiona rng1 matches 33 positioned 90146 122 55 run function skyblock:sea/m/vindicator
+execute if score SEA_ch5_event_engineering_fiona rng1 matches 33 positioned 90146 122 55 run function skyblock:sea/m/vindicator
+execute if score SEA_ch5_event_engineering_fiona rng1 matches 33 positioned 90146 122 55 run function skyblock:sea/m/vindicator
+execute if score SEA_ch5_event_engineering_fiona rng1 matches 33 positioned 90146 122 55 run function skyblock:sea/m/pillager2
+execute if score SEA_ch5_event_engineering_fiona rng1 matches 33 positioned 90146 122 55 run function skyblock:sea/m/pillager2
+
+execute if score SEA_ch5_event_engineering_fiona rng1 matches 67..68 positioned 90146 122 55 run particle large_smoke ~ ~1 ~ 0.5 1 0.5 0.01 20
+execute if score SEA_ch5_event_engineering_fiona rng1 matches 69 positioned 90146 122 55 run function skyblock:sea/m/vindicator
+execute if score SEA_ch5_event_engineering_fiona rng1 matches 69 positioned 90146 122 55 run function skyblock:sea/m/vindicator
+execute if score SEA_ch5_event_engineering_fiona rng1 matches 69 positioned 90146 122 55 run function skyblock:sea/m/vindicator
+execute if score SEA_ch5_event_engineering_fiona rng1 matches 69 positioned 90146 122 55 run function skyblock:sea/m/pillager2
+execute if score SEA_ch5_event_engineering_fiona rng1 matches 69 positioned 90146 122 55 run function skyblock:sea/m/pillager2
+
 execute if score SEA_ch5_event_engineering_fiona rng1 matches 29 positioned 90147 122 63 as @e[tag=SEAmob,distance=0..4,tag=!SEAfiona] at @s run damage @s 0 generic by @n[tag=SEAfiona]
+execute if score SEA_ch5_event_engineering_fiona rng1 matches 69 positioned 90146 122 55 as @e[tag=SEAmob,distance=0..4,tag=!SEAfiona] at @s run damage @s 0 generic by @n[tag=SEAfiona]
 
 execute if score SEA_ch5_event_engineering_fiona rng1 matches 30 positioned 90141.8 122 61 run tp @s ~ ~ ~ facing entity @n[tag=SEAmob,tag=!SEAnpc]
 execute if score SEA_ch5_event_engineering_fiona rng1 matches 31 positioned 90141.8 122 61 run tellraw @a[distance=0..200] [{"text":"稚嫩的女声：","color":"yellow","bold": true},{"text":"\n“该死，夹击吗……”","color":"white","bold": false}]
