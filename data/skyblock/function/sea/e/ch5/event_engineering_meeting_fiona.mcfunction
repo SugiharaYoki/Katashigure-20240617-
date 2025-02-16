@@ -51,6 +51,6 @@ execute if score SEA_ch5_event_engineering_fiona rng1 matches 55.. store result 
 execute if score SEA_ch5_event_engineering_fiona rng1 matches 55.. as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200,scores={rng2=1}] run function skyblock:sea/e/ch5/fiona_attack_1
 execute if score SEA_ch5_event_engineering_fiona rng1 matches 55.. as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200,scores={rng2=2}] run tag @s add SEAfiona_laser_attacking
 
-execute if score SEA_ch5_event_engineering_fiona rng1 matches 55.. as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200,scores={rng2=4..5}] unless entity @n[tag=SEAPT,distance=0..6] at @n[tag=SEAPT] rotated ~ 90 positioned ^ ^ ^-2 if block ~ ~ ~ air if block ~ ~1 ~ air run tp @s ~ ~ ~ facing entity @n[tag=SEAPT]
+execute if score SEA_ch5_event_engineering_fiona rng1 matches 55.. as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200,scores={rng2=4..5}] unless entity @n[tag=SEAPT,distance=0..6] at @n[tag=SEAPT] rotated ~ 90 positioned ^ ^ ^-2 if block ~ ~ ~ air if block ~ ~1 ~ air unless block ~ ~-1 ~ air run tp @s ~ ~ ~ facing entity @n[tag=SEAPT]
 
 
