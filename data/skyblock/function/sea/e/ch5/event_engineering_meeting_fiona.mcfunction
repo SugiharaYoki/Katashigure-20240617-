@@ -71,8 +71,8 @@ execute if score SEA_ch5_event_engineering_fiona rng1 matches 178 as @n[tag=SEAf
 execute if score SEA_ch5_event_engineering_fiona rng1 matches 188 positioned 90141.8 122 61 run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“别吵吵，带我去房间中间。”","color":"white","bold": false}]
 execute if score SEA_ch5_event_engineering_fiona rng1 matches 185.. positioned 90120 123 66 if entity @p[tag=SEAPT,distance=0..5] run tp @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] ~ ~ ~
 execute if score SEA_ch5_event_engineering_fiona rng1 matches 185.. positioned 90120 123 66 if entity @n[tag=SEAfiona,distance=0..5] run scoreboard players add SEA_ch5_event_engineering_fiona rng7 1
-execute if score SEA_ch5_event_engineering_fiona rng7 matches 2..200 run effect give @a[tag=SEAPT] resistance 3 3 true
-execute if score SEA_ch5_event_engineering_fiona rng7 matches 2..200 run effect give @a[tag=SEAPT] strength 3 2 true
+execute if score SEA_ch5_event_engineering_fiona rng1 matches 55..390 run effect give @a[tag=SEAPT] resistance 3 3 true
+execute if score SEA_ch5_event_engineering_fiona rng1 matches 55..390 run effect give @a[tag=SEAPT] strength 3 2 true
 execute if score SEA_ch5_event_engineering_fiona rng7 matches 3 run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“就是这里，给我点时间，保护好我！”","color":"white","bold": false}]
 execute if score SEA_ch5_event_engineering_fiona rng7 matches 92 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s as @p[tag=SEAPT] run tellraw @a[distance=0..250] [{"selector":"@s","color":"white"},{"text":"：还没好吗？！我的大小姐？？","color":"white"}]
 execute if score SEA_ch5_event_engineering_fiona rng7 matches 104 run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“我都说了我把通讯阵列炸掉一组，现在这本地网络慢得像一坨屎，再等等我！”","color":"white","bold": false}]
