@@ -168,7 +168,7 @@ execute if score @s rng6 matches 1006..1015 as @n[tag=SEAyuehan] at @s run tp @s
 execute if score @s rng6 matches 1013 at @n[tag=SEAyuehan] run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
 execute if score @s rng6 matches 1013 at @n[tag=SEAyuehan] run tellraw @a[distance=0..250] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“怎、怎么说？！那台生态装……”","color":"white","bold": false}]
 
-execute if score @s rng6 matches 1014..1029 as @n[tag=SEAedwina] at @s run tp @s ~ ~ ~ facing entity @n[tag=SEAmob]
+execute if score @s rng6 matches 1014..1029 as @n[tag=SEAedwina] at @s run tp @s ~ ~ ~ facing entity @n[tag=SEAmob,tag=!SEAnpc]
 
 execute if score @s rng6 matches 1006..1010 positioned 90145 84 47 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
 execute if score @s rng6 matches 1006..1010 positioned 90145 84 47 run particle sculk_soul ~ ~1 ~ 0.3 0.5 0.3 0.05 10

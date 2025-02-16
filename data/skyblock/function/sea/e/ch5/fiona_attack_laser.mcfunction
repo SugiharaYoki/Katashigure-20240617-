@@ -5,7 +5,7 @@ execute as @s[scores={rng8=3}] at @s run playsound item.crossbow.loading_start h
 execute as @s[scores={rng8=4}] at @s run playsound item.crossbow.loading_middle hostile @a ~ ~ ~ 1 1.1
 execute as @s[scores={rng8=5}] at @s run playsound item.crossbow.loading_end hostile @a ~ ~ ~ 1 1.1
 
-execute as @s[scores={rng8=3..8}] at @s run tp @s ~ ~ ~ facing entity @n[tag=SEAmob]
+execute as @s[scores={rng8=3..8}] at @s run tp @s ~ ~ ~ facing entity @n[tag=SEAmob,tag=!SEAnpc]
 
 execute as @s[scores={rng8=3..8}] at @s anchored eyes positioned ^ ^ ^1.5 run particle electric_spark ~ ~ ~ 0 0 0 0 1
 execute as @s[scores={rng8=3..8}] at @s anchored eyes positioned ^ ^ ^1.8 run particle electric_spark ~ ~ ~ 0 0 0 0 1
@@ -26,3 +26,5 @@ execute as @s[scores={rng8=8}] at @s run kill @e[tag=SEAfiona_arrow_marker,type=
 
 execute as @s[scores={rng8=8..}] at @s run tag @s remove SEAfiona_laser_attacking
 execute as @s[scores={rng8=8..}] at @s run scoreboard players set @s rng8 0
+
+scoreboard players set @s rng2 0
