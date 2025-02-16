@@ -40,13 +40,13 @@ execute if score SEA_ch5_event_engineering_fiona rng1 matches 69 positioned 9014
 execute if score SEA_ch5_event_engineering_fiona rng1 matches 69 positioned 90146 122 55 run function skyblock:sea/m/pillager2
 execute if score SEA_ch5_event_engineering_fiona rng1 matches 69 positioned 90146 122 55 run function skyblock:sea/m/pillager2
 
-execute if score SEA_ch5_event_engineering_fiona rng1 matches 29 positioned 90147 122 63 as @e[tag=SEAmob,distance=0..4,tag=!SEAfiona] at @s run damage @s 0 generic by @n[tag=SEAfiona]
+execute if score SEA_ch5_event_engineering_fiona rng1 matches 32 positioned 90147 122 63 as @e[tag=SEAmob,distance=0..4,tag=!SEAfiona] at @s run damage @s 0 generic by @n[tag=SEAfiona]
 execute if score SEA_ch5_event_engineering_fiona rng1 matches 69 positioned 90146 122 55 as @e[tag=SEAmob,distance=0..4,tag=!SEAfiona] at @s run damage @s 0 generic by @n[tag=SEAfiona]
 
-execute if score SEA_ch5_event_engineering_fiona rng1 matches 30 positioned 90141.8 122 61 run tp @s ~ ~ ~ facing entity @n[tag=SEAmob,tag=!SEAnpc]
-execute if score SEA_ch5_event_engineering_fiona rng1 matches 33 positioned 90141.8 122 61 run tellraw @a[distance=0..200] [{"text":"稚嫩的女声：","color":"yellow","bold": true},{"text":"\n“该死，夹击吗……”","color":"white","bold": false}]
-execute if score SEA_ch5_event_engineering_fiona rng1 matches 39 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s as @p[tag=SEAPT] run tellraw @a[distance=0..250] [{"selector":"@s","color":"white"},{"text":"：不管怎样，快跟我来！！","color":"white"}]
+execute if score SEA_ch5_event_engineering_fiona rng1 matches 40 positioned 90141.8 122 61 run tp @s ~ ~ ~ facing entity @n[tag=SEAmob,tag=!SEAnpc]
+execute if score SEA_ch5_event_engineering_fiona rng1 matches 43 positioned 90141.8 122 61 run tellraw @a[distance=0..200] [{"text":"稚嫩的女声：","color":"yellow","bold": true},{"text":"\n“该死，夹击吗……”","color":"white","bold": false}]
+execute if score SEA_ch5_event_engineering_fiona rng1 matches 52 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s as @p[tag=SEAPT] run tellraw @a[distance=0..250] [{"selector":"@s","color":"white"},{"text":"：不管怎样，快跟我来！！","color":"white"}]
 
-execute if score SEA_ch5_event_engineering_fiona rng1 matches 38.. store result score @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200,tag=!SEAfiona_laser_attacking] rng2 run random value 1..5
-execute if score SEA_ch5_event_engineering_fiona rng1 matches 38.. as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200,scores={rng2=1}] run function skyblock:sea/e/ch5/fiona_attack_1
-execute if score SEA_ch5_event_engineering_fiona rng1 matches 38.. as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200,scores={rng2=2}] run tag @s add SEAfiona_laser_attacking
+execute if score SEA_ch5_event_engineering_fiona rng1 matches 55.. store result score @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200,tag=!SEAfiona_laser_attacking] rng2 run random value 1..5
+execute if score SEA_ch5_event_engineering_fiona rng1 matches 55.. as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200,scores={rng2=1}] run function skyblock:sea/e/ch5/fiona_attack_1
+execute if score SEA_ch5_event_engineering_fiona rng1 matches 55.. as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200,scores={rng2=2}] run tag @s add SEAfiona_laser_attacking
