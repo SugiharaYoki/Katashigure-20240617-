@@ -265,6 +265,7 @@ scoreboard players set SEA_ch5_event_EnteringPillar2 rng2 0
 scoreboard players set SEA_ch5_event_engineering_fiona rng1 0
 scoreboard players set SEA_ch5_event_engineering_fiona rng2 0
 scoreboard players set SEA_ch5_event_engineering_fiona rng3 0
+scoreboard players set SEA_ch5_event_engineering_fiona rng7 0
 scoreboard players set SEA_ch5_event_engineering_fiona rng8 0
 scoreboard players set SEA_ch5_event_engineering_fiona rng9 0
 scoreboard players set SEA_ch5_event_engineering_fiona rng10 0
