@@ -1,9 +1,10 @@
 
 scoreboard players add @s rng8 1
 execute as @s[scores={rng8=2..42}] at @s run item replace entity @s weapon.mainhand with bow
-execute as @s[scores={rng8=10}] at @s run playsound item.crossbow.loading_start hostile @a ~ ~ ~ 1 1.1
-execute as @s[scores={rng8=16}] at @s run playsound item.crossbow.loading_middle hostile @a ~ ~ ~ 1 1.1
-execute as @s[scores={rng8=22}] at @s run playsound item.crossbow.loading_end hostile @a ~ ~ ~ 1 1.1
+execute as @s[scores={rng8=2}] at @s run scoreboard players set @s rng8 12
+execute as @s[scores={rng8=13}] at @s run playsound item.crossbow.loading_start hostile @a ~ ~ ~ 1 1.1
+execute as @s[scores={rng8=18}] at @s run playsound item.crossbow.loading_middle hostile @a ~ ~ ~ 1 1.1
+execute as @s[scores={rng8=23}] at @s run playsound item.crossbow.loading_end hostile @a ~ ~ ~ 1 1.1
 
 execute as @s[scores={rng8=22..42}] at @s run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
 
@@ -24,5 +25,5 @@ execute as @s[scores={rng8=43}] at @s positioned ^ ^ ^0.5 run summon arrow ~ ~1.
 execute as @s[scores={rng8=43}] at @s run data modify entity @n[type=arrow,tag=SEAfiona_arrow1] Motion set from entity @n[tag=SEAfiona_arrow_marker,type=marker] Pos
 execute as @s[scores={rng8=43}] at @s run kill @e[tag=SEAfiona_arrow_marker,type=marker]
 
-execute as @s[scores={rng8=43..}] at @s run tag @s remove SEAfiona_laser_attacking
+execute as @s[scores={rng8=43..}] at @s run tag @s remove SEAfiona_laser_attacking_hostile
 execute as @s[scores={rng8=43..}] at @s run scoreboard players set @s rng8 0
