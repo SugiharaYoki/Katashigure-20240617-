@@ -49,7 +49,7 @@ execute if score SEA_ch5_event_engineering_fiona rng1 matches 52 as @n[tag=SEAfi
 
 execute if score SEA_ch5_event_engineering_fiona rng1 matches 55.. store result score @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200,tag=!SEAfiona_laser_attacking] rng2 run random value 1..5
 execute if score SEA_ch5_event_engineering_fiona rng1 matches 55.. as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200,scores={rng2=1}] run function skyblock:sea/e/ch5/fiona_attack_1
-execute if score SEA_ch5_event_engineering_fiona rng1 matches 55.. as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200,scores={rng2=2}] run tag @s add SEAfiona_laser_attacking
+execute if score SEA_ch5_event_engineering_fiona rng1 matches 55.. as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200,scores={rng2=2}] at @s if entity @n[tag=SEAmob,tag=!SEAnpc,distance=..5.6] run tag @s add SEAfiona_laser_attacking
 
 execute if score SEA_ch5_event_engineering_fiona rng1 matches 55.. as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200,scores={rng2=4..5}] unless entity @n[tag=SEAPT,distance=0..6] at @n[tag=SEAPT] rotated ~ 90 positioned ^ ^ ^-2 if block ~ ~ ~ air if block ~ ~1 ~ air unless block ~ ~-0.7 ~ air run tp @s ~ ~ ~ facing entity @n[tag=SEAPT]
 
