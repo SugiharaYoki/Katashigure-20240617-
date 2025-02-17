@@ -58,7 +58,7 @@ item replace block 90137 122 58 container.14 with gunpowder
 
 setblock 90132 125 51 chest[facing=south]
 item replace block 90132 125 51 container.13 with emerald 5
-
+fill 90108 124 34 90108 122 36 iron_block
 
 
 
