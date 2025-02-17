@@ -137,7 +137,7 @@ execute if score SEA_ch5_event_engineering_fiona rng1 matches 801 as @n[tag=SEAf
 
 execute if score SEA_ch5_event_engineering_fiona rng1 matches 802 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tp @s 90103 121 43 facing 90102 122 38
 execute if score SEA_ch5_event_engineering_fiona rng1 matches 803 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tp @s 90102 122 38 facing 90101.00 123.00 37.57
-execute if score SEA_ch5_event_engineering_fiona rng1 matches 805.. as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tp @s ~ ~ ~ facing 90101.00 123.00 37.57
+execute if score SEA_ch5_event_engineering_fiona rng1 matches 805..830 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tp @s ~ ~ ~ facing 90101.00 123.00 37.57
 
 execute if score SEA_ch5_event_engineering_fiona rng1 matches 825 run fill 90104 124 49 90106 124 49 iron_block
 execute if score SEA_ch5_event_engineering_fiona rng1 matches 826 run fill 90104 123 49 90106 123 49 iron_block
