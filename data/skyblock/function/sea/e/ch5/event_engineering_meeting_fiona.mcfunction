@@ -40,7 +40,7 @@ execute if score SEA_ch5_event_engineering_fiona rng1 matches 69 positioned 9014
 execute if score SEA_ch5_event_engineering_fiona rng1 matches 69 positioned 90146 122 55 run function skyblock:sea/m/pillager2
 execute if score SEA_ch5_event_engineering_fiona rng1 matches 69 positioned 90146 122 55 run function skyblock:sea/m/pillager2
 
-execute if score SEA_ch5_event_engineering_fiona rng1 matches 65.. run function skyblock:sea/e/ch5/event_engineering_meeting_fiona_summonpool
+execute if score SEA_ch5_event_engineering_fiona rng1 matches 65..827 run function skyblock:sea/e/ch5/event_engineering_meeting_fiona_summonpool
 
 execute if score SEA_ch5_event_engineering_fiona rng1 matches 24 positioned 90147 122 63 as @e[tag=SEAmob,distance=0..4,tag=!SEAfiona] at @s run damage @s 0 generic by @n[tag=SEAfiona]
 execute if score SEA_ch5_event_engineering_fiona rng1 matches 69 positioned 90146 122 55 as @e[tag=SEAmob,distance=0..4,tag=!SEAfiona] at @s run damage @s 0 generic by @n[tag=SEAfiona]
