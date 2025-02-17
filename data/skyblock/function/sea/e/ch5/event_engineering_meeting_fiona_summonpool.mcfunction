@@ -1,6 +1,7 @@
 scoreboard players add SEA_ch5_event_engineering_fiona rng10 1
 
 execute if score SEA_ch5_event_engineering_fiona rng10 matches 1..20 store result score SEA_ch5_event_engineering_fiona rng9 run random value 1..14
+execute if score SEA_ch5_event_engineering_fiona rng10 matches 60..500 store result score SEA_ch5_event_engineering_fiona rng6 run random value 1..100
 execute if score SEA_ch5_event_engineering_fiona rng10 matches 21..320 store result score SEA_ch5_event_engineering_fiona rng9 run random value 1..22
 execute if score SEA_ch5_event_engineering_fiona rng10 matches 321..750 store result score SEA_ch5_event_engineering_fiona rng9 run random value 1..45
 execute if score SEA_ch5_event_engineering_fiona rng10 matches 1.. store result score SEA_ch5_event_engineering_fiona rng8 at @n[tag=SEAfiona] if entity @e[tag=SEAmob,tag=!SEAnpc,distance=0..17]
@@ -25,4 +26,10 @@ execute if score SEA_ch5_event_engineering_fiona rng7 matches 30.. if score SEA_
 execute if score SEA_ch5_event_engineering_fiona rng7 matches 30.. if score SEA_ch5_event_engineering_fiona rng9 matches 8 positioned 90130 122 65 run function skyblock:sea/m/pillager2
 
 
+
+execute if score SEA_ch5_event_engineering_fiona rng6 matches 1 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"邪教徒：","color":"yellow","bold": true},{"text":"\n“小姑娘居然有援军！小心行动！”","color":"white","bold": false}]
+execute if score SEA_ch5_event_engineering_fiona rng6 matches 2 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"邪教徒：","color":"yellow","bold": true},{"text":"\n“别让他们俩跑了！”","color":"white","bold": false}]
+execute if score SEA_ch5_event_engineering_fiona rng6 matches 3 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"邪教徒：","color":"yellow","bold": true},{"text":"\n“可恶，对方比我们厉害不是一点，后方部队呢？！”","color":"white","bold": false}]
+execute if score SEA_ch5_event_engineering_fiona rng6 matches 4 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"邪教徒：","color":"yellow","bold": true},{"text":"\n“这小姑娘挺有本事、伤员别逞强，失去战斗能力的都撤退！”","color":"white","bold": false}]
+execute if score SEA_ch5_event_engineering_fiona rng6 matches 5 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"邪教徒：","color":"yellow","bold": true},{"text":"\n“躲开，敌人有远距离杀伤性武器！！”","color":"white","bold": false}]
 
