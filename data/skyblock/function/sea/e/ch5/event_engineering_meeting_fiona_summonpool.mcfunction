@@ -1,7 +1,8 @@
 scoreboard players add SEA_ch5_event_engineering_fiona rng10 1
 
+execute if score SEA_ch5_event_engineering_fiona rng10 matches 60..500 store result score SEA_ch5_event_engineering_fiona rng6 run random value 1..220
+
 execute if score SEA_ch5_event_engineering_fiona rng10 matches 1..20 store result score SEA_ch5_event_engineering_fiona rng9 run random value 1..14
-execute if score SEA_ch5_event_engineering_fiona rng10 matches 60..500 store result score SEA_ch5_event_engineering_fiona rng6 run random value 1..100
 execute if score SEA_ch5_event_engineering_fiona rng10 matches 21..320 store result score SEA_ch5_event_engineering_fiona rng9 run random value 1..22
 execute if score SEA_ch5_event_engineering_fiona rng10 matches 321..750 store result score SEA_ch5_event_engineering_fiona rng9 run random value 1..45
 execute if score SEA_ch5_event_engineering_fiona rng10 matches 1.. store result score SEA_ch5_event_engineering_fiona rng8 at @n[tag=SEAfiona] if entity @e[tag=SEAmob,tag=!SEAnpc,distance=0..17]
