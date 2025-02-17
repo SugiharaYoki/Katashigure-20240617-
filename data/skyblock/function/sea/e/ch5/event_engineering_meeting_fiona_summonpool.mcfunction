@@ -20,9 +20,9 @@ execute if score SEA_ch5_event_engineering_fiona rng9 matches 5..6 positioned 90
 execute if score SEA_ch5_event_engineering_fiona rng9 matches 5 positioned 90105 122 58 run function skyblock:sea/m/vindicator
 execute if score SEA_ch5_event_engineering_fiona rng9 matches 6 positioned 90105 122 58 run function skyblock:sea/m/pillager2
 
-execute if score SEA_ch5_event_engineering_fiona rng9 matches 7..8 positioned 90130 122 65 run particle large_smoke ~ ~1 ~ 0.5 1 0.5 0.01 20
-execute if score SEA_ch5_event_engineering_fiona rng9 matches 7 positioned 90130 122 65 run function skyblock:sea/m/vindicator
-execute if score SEA_ch5_event_engineering_fiona rng9 matches 8 positioned 90130 122 65 run function skyblock:sea/m/pillager2
+execute if score SEA_ch5_event_engineering_fiona rng7 matches 30.. if score SEA_ch5_event_engineering_fiona rng9 matches 7..8 positioned 90130 122 65 run particle large_smoke ~ ~1 ~ 0.5 1 0.5 0.01 20
+execute if score SEA_ch5_event_engineering_fiona rng7 matches 30.. if score SEA_ch5_event_engineering_fiona rng9 matches 7 positioned 90130 122 65 run function skyblock:sea/m/vindicator
+execute if score SEA_ch5_event_engineering_fiona rng7 matches 30.. if score SEA_ch5_event_engineering_fiona rng9 matches 8 positioned 90130 122 65 run function skyblock:sea/m/pillager2
 
 
 
