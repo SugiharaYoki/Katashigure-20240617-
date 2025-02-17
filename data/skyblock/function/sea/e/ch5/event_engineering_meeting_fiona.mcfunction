@@ -83,8 +83,8 @@ execute if score SEA_ch5_event_engineering_fiona rng1 matches 188 as @n[tag=SEAf
 execute if score SEA_ch5_event_engineering_fiona rng1 matches 185.. positioned 90120 123 66 if entity @p[tag=SEAPT,distance=0..5] run tp @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] ~ ~ ~
 execute if score SEA_ch5_event_engineering_fiona rng1 matches 185.. positioned 90120 123 66 if entity @n[tag=SEAfiona,distance=0..5] run scoreboard players add SEA_ch5_event_engineering_fiona rng7 1
 
-execute if score SEA_ch5_event_engineering_fiona rng1 matches 55 run effect give @a[tag=SEAPT] resistance 180 3 false
-execute if score SEA_ch5_event_engineering_fiona rng1 matches 55 run effect give @a[tag=SEAPT] strength 180 2 false
+execute if score SEA_ch5_event_engineering_fiona rng1 matches 55..700 run effect give @a[tag=SEAPT] resistance 3 3 false
+execute if score SEA_ch5_event_engineering_fiona rng1 matches 55..700 run effect give @a[tag=SEAPT] strength 3 2 false
 
 execute if score SEA_ch5_event_engineering_fiona rng7 matches 3 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
 execute if score SEA_ch5_event_engineering_fiona rng7 matches 3 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if entity @n[tag=sc,scores={sea_player=1}] run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“就是这里，给我点时间，保护好我！”","color":"white","bold": false}]
