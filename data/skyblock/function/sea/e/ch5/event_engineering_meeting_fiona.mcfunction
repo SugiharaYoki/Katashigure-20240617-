@@ -103,6 +103,9 @@ execute if score SEA_ch5_event_engineering_fiona rng7 matches 194 as @n[tag=SEAf
 execute if score SEA_ch5_event_engineering_fiona rng7 matches 184 run fill 90104 122 49 90106 122 49 air
 execute if score SEA_ch5_event_engineering_fiona rng7 matches 186 run fill 90104 123 49 90106 123 49 air
 execute if score SEA_ch5_event_engineering_fiona rng7 matches 188 run fill 90104 124 49 90106 124 49 air
+execute if score SEA_ch5_event_engineering_fiona rng7 matches 184 run playsound minecraft:block.iron_door.open ambient @a 90105 124 49 4 0.3
+execute if score SEA_ch5_event_engineering_fiona rng7 matches 186 run playsound minecraft:block.iron_door.open ambient @a 90105 124 49 4 0.3
+execute if score SEA_ch5_event_engineering_fiona rng7 matches 188 run playsound minecraft:block.iron_door.open ambient @a 90105 124 49 4 0.3
 
 execute if score SEA_ch5_event_engineering_fiona rng7 matches 2..187 if score SEA_ch5_event_engineering_fiona rng1 matches 185.. run scoreboard players set SEA_ch5_event_engineering_fiona rng1 186
 
@@ -114,6 +117,7 @@ execute if score SEA_ch5_event_engineering_fiona rng1 matches 314 as @n[tag=SEAf
 execute if score SEA_ch5_event_engineering_fiona rng1 matches 314 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if entity @n[tag=sc,scores={sea_player=2..}] run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“我摊上你们也真是倒大霉了……”","color":"white","bold": false}]
 
 execute if score SEA_ch5_event_engineering_fiona rng1 matches 330 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s as @p[tag=SEAPT] run tellraw @a[distance=0..250] [{"selector":"@s","color":"white"},{"text":"：怎么了？","color":"white"}]
+
 execute if score SEA_ch5_event_engineering_fiona rng1 matches 347 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
 execute if score SEA_ch5_event_engineering_fiona rng1 matches 347 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if score SEA_ch5_event_engineering_fiona rng8 matches ..4 run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“你是来玩打怪游戏的吗？！快去控制室啊！西边！！”","color":"white","bold": false}]
 execute if score SEA_ch5_event_engineering_fiona rng1 matches 347 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if score SEA_ch5_event_engineering_fiona rng8 matches 5.. run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“快去控制室啊！西边！！”","color":"white","bold": false}]
@@ -123,5 +127,23 @@ execute if score SEA_ch5_event_engineering_fiona rng1 matches 60..700 positioned
 execute if score SEA_ch5_event_engineering_fiona rng1 matches 60..700 positioned 90126 121 47 if entity @a[tag=SEAPT,distance=0..4,tag=!SEAPF,tag=!e_i_43] run tag @a[tag=SEAPT,distance=0..4,tag=!SEAPF,tag=!e_i_43] add e_i_43
 
 
+execute if score SEA_ch5_event_engineering_fiona rng1 matches 780..790 run scoreboard players set SEA_ch5_event_engineering_fiona rng1 780
+execute if score SEA_ch5_event_engineering_fiona rng1 matches ..790 positioned 90101 122 41 if entity @a[tag=SEAPT,tag=!SEAPF,gamemode=!spectator,dx=6,dy=5,dz=6] run scoreboard players set SEA_ch5_event_engineering_fiona rng1 800
 
+execute if score SEA_ch5_event_engineering_fiona rng1 matches 801 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
+execute if score SEA_ch5_event_engineering_fiona rng1 matches 801 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“我把门关上，你给守好！！”","color":"white","bold": false}]
+
+
+execute if score SEA_ch5_event_engineering_fiona rng1 matches 802 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tp @s 90103 121 43 facing 90102 122 38
+execute if score SEA_ch5_event_engineering_fiona rng1 matches 803 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tp @s 90102 122 38 facing 90101.00 123.00 37.57
+execute if score SEA_ch5_event_engineering_fiona rng1 matches 805.. as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tp @s ~ ~ ~ facing 90101.00 123.00 37.57
+
+execute if score SEA_ch5_event_engineering_fiona rng1 matches 825 run fill 90104 124 49 90106 124 49 iron_block
+execute if score SEA_ch5_event_engineering_fiona rng1 matches 826 run fill 90104 123 49 90106 123 49 iron_block
+execute if score SEA_ch5_event_engineering_fiona rng1 matches 827 run fill 90104 122 49 90106 122 49 iron_block
+execute if score SEA_ch5_event_engineering_fiona rng1 matches 825 run playsound minecraft:block.iron_door.open ambient @a 90105 124 49 4 0.3
+execute if score SEA_ch5_event_engineering_fiona rng1 matches 826 run playsound minecraft:block.iron_door.open ambient @a 90105 124 49 4 0.3
+execute if score SEA_ch5_event_engineering_fiona rng1 matches 827 run playsound minecraft:block.iron_door.open ambient @a 90105 124 49 4 0.3
+execute if score SEA_ch5_event_engineering_fiona rng1 matches 827 run playsound minecraft:block.anvil.place ambient @a 90105 124 49 4 0.3
+execute if score SEA_ch5_event_engineering_fiona rng1 matches 827 run kill @e[tag=SEAmob,x=90104.0,y=124.0,z=49.0,dx=3,dy=1,dz=1,tag=!SEAnpc]
 
