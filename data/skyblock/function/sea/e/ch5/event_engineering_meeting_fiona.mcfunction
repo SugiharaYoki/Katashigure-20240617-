@@ -146,5 +146,5 @@ execute if score SEA_ch5_event_engineering_fiona rng1 matches 825 run playsound 
 execute if score SEA_ch5_event_engineering_fiona rng1 matches 826 run playsound minecraft:block.iron_door.open ambient @a 90105 124 49 4 0.3
 execute if score SEA_ch5_event_engineering_fiona rng1 matches 827 run playsound minecraft:block.iron_door.open ambient @a 90105 124 49 4 0.3
 execute if score SEA_ch5_event_engineering_fiona rng1 matches 827 run playsound minecraft:block.anvil.place ambient @a 90105 124 49 4 0.3
-execute if score SEA_ch5_event_engineering_fiona rng1 matches 827 run kill @e[tag=SEAmob,x=90104.0,y=124.0,z=49.0,dx=3,dy=1,dz=1,tag=!SEAnpc]
+execute if score SEA_ch5_event_engineering_fiona rng1 matches 827 run kill @e[tag=SEAmob,x=90105,y=124,z=49,distance=0..2tag=!SEAnpc]
 
