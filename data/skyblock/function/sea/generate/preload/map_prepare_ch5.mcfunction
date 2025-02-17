@@ -26,6 +26,7 @@ summon minecraft:interaction 90121 123.3 52 {CustomName:'[{"text":"多功能工�
 summon minecraft:marker 90121 122 51 {Tags:["SEAcrafter_tp","SEAcrafter_tp16"]}
 
 summon minecraft:interaction 90130 123.3 48 {CustomName:'[{"text":"器械式治疗仪"}]',Tags:["SEAaidbox"]}
+summon minecraft:interaction 90107 123.3 38 {CustomName:'[{"text":"器械式治疗仪"}]',Tags:["SEAaidbox"]}
 
 fill 90114 91 96 90112 89 96 minecraft:air
 
