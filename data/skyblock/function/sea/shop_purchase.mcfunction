@@ -765,6 +765,7 @@ execute if score @s sea_crafter matches 90001 if score SEA_ch5_event_engineering
 execute if score @s sea_crafter matches 90002 if block 90075 103 141 minecraft:cauldron unless block 90074 103 137 scaffolding if entity @n[tag=sc,scores={sea_4temp2=227..247}] run scoreboard players set @n[tag=sc] sea_4temp2 248
 execute if score @s sea_crafter matches 90003 if block 90062 103 135 grindstone unless block 90075 103 141 minecraft:cauldron if entity @n[tag=sc,scores={sea_4temp2=104..120}] run scoreboard players set @n[tag=sc] sea_4temp2 121
 execute if score @s sea_crafter matches 90004 if block 90075 103 141 minecraft:cauldron unless block 90074 103 137 scaffolding if entity @n[tag=SEAmarshall,scores={sea_4temp1=372..464}] run scoreboard players set @n[tag=SEAmarshall] sea_4temp1 465
+execute if score @s sea_crafter matches 90005 if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 67..85 run scoreboard players set SEA_ch5_event_engineering_fiona sea_4temp2 86
 
 execute if score @s sea_crafter matches 90000..99999 run scoreboard players set @s sea_crafter 0
 

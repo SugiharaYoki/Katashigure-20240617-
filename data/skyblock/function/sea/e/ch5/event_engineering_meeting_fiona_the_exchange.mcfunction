@@ -9,6 +9,9 @@ execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 47 as @n[tag
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 66 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 66 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“这样。那想必你也知道我就是舵长史丹尼的亲女儿。”","color":"white","bold": false}]
 
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 67 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200,tag=SEAPT] [{"text":" - "},{"text":"坦白：这件事我并不知道  ","color":"yellow"},{"text":"〈◆〉","bold":true,"color":"gold","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 90005"}}]
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 85 run scoreboard players set SEA_ch5_event_engineering_fiona sea_4temp2 167
+
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 87 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s as @p[tag=SEAPT] run tellraw @a[distance=0..250] [{"selector":"@p[tag=SEAPT,scores={SEAPT_member=1}]","color":"white"},{"text":"：这……这我倒是不清楚。","color":"white"}]
 
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 106 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if entity @a[tag=SEAPT,scores={SEAPT_member=2}] run tellraw @a[distance=0..250] [{"selector":"@p[tag=SEAPT,scores={SEAPT_member=2}]","color":"white"},{"text":"：不对啊、你说你是舵长的女儿？！那你一定比我们知道更多吧，忒尔克西到底发生什么了？","color":"white"}]
