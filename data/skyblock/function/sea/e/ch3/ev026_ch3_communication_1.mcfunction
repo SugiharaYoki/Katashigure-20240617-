@@ -34,9 +34,9 @@ execute as @s[tag=sc,scores={sea_4temp2=226}] positioned 90133 137 108 as @p[tag
  run tellraw @a[distance=0..50] [{"text":"玛瑞莲：","color":"dark_purple","bold": true},{"text":"\n“宿舍楼有一支幸存的小队，我与他们失联已经超过两小时，但他们有地下通道的钥匙。\n相信我，您不会想走大路，人再多也只会白白送命。”","color":"white","bold": false}]
 
 
-execute as @s[tag=sc,scores={sea_4temp2=227}] positioned 90133 137 108 run tellraw @a[distance=0..50,tag=SEAPT] [{"text":"   - "},{"text":"询问：找到幸存者的希望有多大？  ","color":"white"},{"text":"〈◆〉","bold":true,"color":"yellow","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 90002"}}]
+execute as @s[tag=sc,scores={sea_4temp2=227}] positioned 90133 137 108 run tellraw @a[distance=0..50,tag=SEAPT] [{"text":" - "},{"text":"询问：找到幸存者的希望有多大？  ","color":"yellow"},{"text":"〈◆〉","bold":true,"color":"gold","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 90002"}}]
 
-execute as @s[tag=sc,scores={sea_4temp2=247}] run scoreboard players set SEA_ch5_event_engineering_fiona sea_4temp2 341
+execute as @s[tag=sc,scores={sea_4temp2=247}] run scoreboard players set @n[tag=sc] sea_4temp2 341
 
 execute as @s[tag=sc,scores={sea_4temp2=249}] positioned 90133 137 108 as @p[tag=SEAPT] if entity @n[tag=sc,scores={sea_player=1..}] \
  run tellraw @a[distance=0..50] [{"selector":"@s","color":"white"},{"text":"：真的……会有幸存者吗？","color":"white"}]

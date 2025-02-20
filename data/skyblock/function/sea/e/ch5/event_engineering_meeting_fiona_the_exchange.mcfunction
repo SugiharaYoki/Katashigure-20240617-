@@ -34,7 +34,7 @@ execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 224 as @n[ta
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 245 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 245 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“但可能和艾德雯娜他们告诉你的不一样，邪教徒是这里最好说话的人。\n尽管如此，我和他们的谈判也吹了。”","color":"white","bold": false}]
 
-execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 245 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200,tag=SEAPT] [{"text":"   - "},{"text":"询问：诺玛是谁？谈判又是什么？  ","color":"white"},{"text":"〈◆〉","bold":true,"color":"yellow","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 90001"}}]
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 245 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200,tag=SEAPT] [{"text":" - "},{"text":"询问：诺玛是谁？谈判又是什么？  ","color":"yellow"},{"text":"〈◆〉","bold":true,"color":"gold","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 90001"}}]
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 281 run scoreboard players set SEA_ch5_event_engineering_fiona sea_4temp2 357
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 283 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..250] [{"selector":"@r[tag=SEAPT]","color":"white"},{"text":"：谈判？你一直在提到的谈判到底是指什么？以及……诺玛？你提到的诺玛是谁？","color":"white"}]
 
