@@ -58,11 +58,9 @@ execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 358 as @n[ta
 
 
 
-execute if score SEA_ch5_event_engineering_fiona rng7 matches 184 run fill 90104 122 49 90106 122 49 air
-execute if score SEA_ch5_event_engineering_fiona rng7 matches 186 run fill 90104 123 49 90106 123 49 air
-execute if score SEA_ch5_event_engineering_fiona rng7 matches 188 run fill 90104 124 49 90106 124 49 air
-execute if score SEA_ch5_event_engineering_fiona rng7 matches 184 run playsound minecraft:block.iron_door.open ambient @a 90105 124 49 4 0.3
-execute if score SEA_ch5_event_engineering_fiona rng7 matches 186 run playsound minecraft:block.iron_door.open ambient @a 90105 124 49 4 0.3
-execute if score SEA_ch5_event_engineering_fiona rng7 matches 188 run playsound minecraft:block.iron_door.open ambient @a 90105 124 49 4 0.3
-
-execute if score SEA_ch5_event_engineering_fiona rng7 matches 2..187 if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 185.. run scoreboard players set SEA_ch5_event_engineering_fiona sea_4temp2 186
+#execute if score SEA_ch5_event_engineering_fiona rng7 matches 184 run fill 90104 122 49 90106 122 49 air
+#execute if score SEA_ch5_event_engineering_fiona rng7 matches 186 run fill 90104 123 49 90106 123 49 air
+#execute if score SEA_ch5_event_engineering_fiona rng7 matches 188 run fill 90104 124 49 90106 124 49 air
+#execute if score SEA_ch5_event_engineering_fiona rng7 matches 184 run playsound minecraft:block.iron_door.open ambient @a 90105 124 49 4 0.3
+#execute if score SEA_ch5_event_engineering_fiona rng7 matches 186 run playsound minecraft:block.iron_door.open ambient @a 90105 124 49 4 0.3
+#execute if score SEA_ch5_event_engineering_fiona rng7 matches 188 run playsound minecraft:block.iron_door.open ambient @a 90105 124 49 4 0.3
