@@ -270,6 +270,10 @@ scoreboard players set SEA_ch5_event_engineering_fiona rng7 0
 scoreboard players set SEA_ch5_event_engineering_fiona rng8 0
 scoreboard players set SEA_ch5_event_engineering_fiona rng9 0
 scoreboard players set SEA_ch5_event_engineering_fiona rng10 0
+scoreboard players set SEA_ch5_event_engineering_fiona sea_4temp2 0
+scoreboard players set SEA_ch5_event_engineering_fiona sea_4temp3 0
+scoreboard players set SEA_ch5_event_engineering_fiona sea_4temp4 0
+scoreboard players set SEA_ch5_event_engineering_fiona sea_4temp5 0
 
 fill 90105 93 57 90105 94 57 minecraft:magma_block
 fill 90109 102 54 90109 103 54 minecraft:magma_block
