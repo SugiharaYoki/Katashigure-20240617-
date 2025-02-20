@@ -3,6 +3,11 @@ execute as @n[tag=sc,scores={sea_4temp2=103}] positioned 90122 128 131 if entity
 execute as @n[tag=sc,scores={sea_4temp2=103}] positioned 90122 128 131 as @p[tag=SEAPT] at @s run tellraw @a[tag=SEAPT,distance=3..] [{"selector":"@s","color":"white"},{"text":"：我再次接通联络总站了！快来我这里。","color":"white"}]
 execute as @n[tag=sc,scores={sea_4temp2=103..386}] positioned 90122 128 131 if items entity @p[scores={SEA_story=1..}] weapon.mainhand spyglass as @p[nbt={SelectedItem:{id:"minecraft:spyglass"}}] unless entity @a[tag=SEAPT,scores={SEA_story=..0}] at @s run tellraw @a[tag=SEAPT] [{"selector":"@s","color":"white"},{"text":"：「跳过了剧情」","color":"white"}]
 execute as @n[tag=sc,scores={sea_4temp2=103..386}] positioned 90122 128 131 if items entity @p[scores={SEA_story=1..}] weapon.mainhand spyglass unless entity @a[tag=SEAPT,scores={SEA_story=..0}] run scoreboard players set @n[tag=sc] sea_4temp2 387
+
+execute as @s[tag=sc,scores={sea_4temp2=104}] positioned 90133 137 108 run tellraw @a[distance=0..50,tag=SEAPT] [{"text":" - "},{"text":"询问：你是谁？你现在在哪里？  ","color":"yellow"},{"text":"〈◆〉","bold":true,"color":"gold","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 90003"}}]
+
+execute as @s[tag=sc,scores={sea_4temp2=120}] run scoreboard players set @n[tag=sc] sea_4temp2 155
+
 execute as @n[tag=sc,scores={sea_4temp2=122}] positioned 90122 128 131 as @p[tag=SEAPT] run tellraw @a[distance=0..50] [{"selector":"@s","color":"white"},{"text":"：你现在在哪里？这地方到底发生了什么？","color":"white"}]
 execute as @n[tag=sc,scores={sea_4temp2=140}] positioned 90122 128 131 as @p[tag=SEAPT] run tellraw @a[distance=0..50] [{"text":"联络机台：","color":"dark_purple","bold": true},{"text":"\n“我知道你现在有一肚子的问题，遗憾的是我们没有时间做问答环节了。”","color":"white","bold": false}]
 execute as @n[tag=sc,scores={sea_4temp2=156}] positioned 90122 128 131 as @p[tag=SEAPT] run tellraw @a[distance=0..50] [{"text":"联络机台：","color":"dark_purple","bold": true},{"text":"\n“我是玛瑞莲，忒尔克西钻井平台机械研发贝塔小组的组长。”","color":"white","bold": false}]
