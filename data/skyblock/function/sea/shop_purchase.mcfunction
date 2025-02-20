@@ -1,6 +1,8 @@
 playsound minecraft:ui.button.click master @s ~ ~ ~ 0.3 1.5 0.4
 function skyblock:sea/shop_calculation
 
+execute if score @s sea_crafter matches 1..89999 unless entity @n[tag=SEAcrafter,distance=0..5] run scoreboard players set @s sea_crafter 0
+
 #execute if items entity @s container.* *[custom_data={sea_crowbar:true}] if score @s sea_crafter matches 10001 as @s[scores={sea_i_emerald=..3}] run tellraw @s {"text":"失败！余额不足！","color":"red"}
 #execute if items entity @s container.* *[custom_data={sea_crowbar:true}] if score @s sea_crafter matches 10001 as @s[scores={sea_i_emerald=4..}] run tag @s add sea_purchase_pass
 #execute if entity @s[tag=sea_purchase_pass] run playsound minecraft:item.armor.equip_iron neutral @s ~ ~ ~ 100
