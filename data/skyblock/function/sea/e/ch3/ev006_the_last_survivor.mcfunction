@@ -67,7 +67,7 @@ execute as @s[scores={sea_4temp1=436}] at @s if entity @n[tag=sc,scores={sea_pla
 execute as @s[scores={sea_4temp1=436}] at @s run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
 
 execute as @s[scores={sea_4temp1=466}] at @s as @p[tag=SEAPT] if entity @n[tag=sc,scores={sea_player=1..}] \
- run tellraw @a[distance=0..50] [{"selector":"@s","color":"white"},{"text":"：请你理解我……我到现在为止见到了多少死去的人、变成怪物的人。\n我不想再眼睁睁地看着其他人死在自己面前了。\n我不会允许悲剧就这样延续下去。","color":"white"}]
+ run tellraw @a[distance=0..50] [{"selector":"@s","color":"white"},{"text":"：请你理解我……我到现在为止见到了多少死去的人、变成怪物的人。我不想再眼睁睁地看着其他人死在自己面前了。\n我不会允许悲剧就这样延续下去。","color":"white"}]
 
 execute as @s[scores={sea_4temp1=487}] at @s if entity @n[tag=sc,scores={sea_player=1..}] run tellraw @a[distance=0..250] [{"text":"马绍尔：","color":"green","bold": true},{"text":"\n“也是啊，能一路杀到这里还活着的人……\n又怎可能因这种情况就放弃呢。”","color":"white","bold": false}]
 execute as @s[scores={sea_4temp1=487}] at @s run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
