@@ -50,7 +50,7 @@ execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 337 as @n[ta
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 337 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“不、我要亲手杀了他。原本我们有机会阻止细菌爆发，是他拖累了所有人。\n但是你猜琼斯怎么说，他说诺曼博士早就自杀了。我怎么可能信？\n现在也只有他的女儿，你也猜对了，诺玛还不知道藏在哪里。\n灾难发生后，是诺玛将平台彻底推至了毁灭。”","color":"white","bold": false}]
 
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 358 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
-execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 358 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“最后如你已知的一般，我将通讯阵列炸掉了一组。\n设置在另一组的炸药被提前发现了，遗憾。”","color":"white","bold": false}]
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 358 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“最后如你所知的那般，我将通讯阵列炸掉了一组。\n设置在另一组的炸药被提前发现了，遗憾。”","color":"white","bold": false}]
 
 
 
