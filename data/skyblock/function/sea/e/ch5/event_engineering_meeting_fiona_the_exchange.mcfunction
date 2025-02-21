@@ -66,6 +66,8 @@ execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 445 run play
 
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 449..499 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tp @s ~ ~ ~ facing 90100 125 37
 
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 650..690 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tp @s ~ ~ ~ facing 90100 125 37
+
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 464 positioned 90100 125 37 run playsound entity.evoker.ambient neutral @a ~ ~ ~ 1 1
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 464 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"通讯机台：","color":"yellow","bold": true},{"text":"\n“是‘天使’。”","color":"white","bold": false}]
 
@@ -96,6 +98,18 @@ execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 612 as @n[ta
 
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 642 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 642 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“上帝根本不会在乎人类的诉求。你们擅自将镇压古代细菌的圣水晶带至地表，只会亲手招致天使的怒火与雷霆。\n我不知道结果会是什么，但我绝对不会允许你们就这样将平台上其他的幸存者一并卷入。\n你们的死活我并不在乎，但我不想死，很多人不想死。你们在逼着我们跟你们一同承受后果。”","color":"white","bold": false}]
+
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 668 positioned 90100 125 37 run playsound entity.evoker.ambient neutral @a ~ ~ ~ 1 1
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 668 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"琼斯：","color":"yellow","bold": true},{"text":"\n“大小姐，不如再考虑一番吧。\n我不愿与你为敌，而我也需要借助你的力量才能修好通讯阵列。”","color":"white","bold": false}]
+
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 671 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 671 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“我有我自己的选择。我会炸了第二组通讯阵列，等着瞧。”","color":"white","bold": false}]
+
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 690 positioned 90100 125 37 run playsound entity.evoker.ambient neutral @a ~ ~ ~ 1 1
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 690 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"琼斯：","color":"yellow","bold": true},{"text":"\n“唉，你明知道天使已……”","color":"white","bold": false}]
+
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 693 run setblock 90100 125 37 minecraft:waxed_exposed_copper_bulb[lit=false]
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 693 run playsound block.copper_bulb.turn_off block @a 90100 125 37 1 1.1
 
 #execute if score SEA_ch5_event_engineering_fiona rng7 matches 184 run fill 90104 122 49 90106 122 49 air
 #execute if score SEA_ch5_event_engineering_fiona rng7 matches 186 run fill 90104 123 49 90106 123 49 air
