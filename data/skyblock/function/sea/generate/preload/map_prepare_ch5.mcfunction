@@ -41,30 +41,6 @@ setblock 90135 146 120 minecraft:spore_blossom
 
 fill 90105 104 52 90106 101 52 minecraft:air
 
-#工程区
-fill 90127 121 42 90122 121 41 minecraft:iron_trapdoor[half=top]
-setblock 90119 122 52 chest[facing=north]
-setblock 90130 122 46 minecraft:potted_azure_bluet
-fill 90106 124 49 90104 122 49 iron_block
-fill 90099 122 53 90101 122 53 minecraft:redstone_block
-fill 90099 122 53 90101 122 53 minecraft:air
-setblock 90103 122 52 chest[facing=east]
-item replace block 90103 122 52 container.12 with flint
-item replace block 90103 122 52 container.14 with flint
-
-setblock 90137 123 53 lever[facing=west,face=floor]
-setblock 90137 122 58 chest[facing=west]
-item replace block 90137 122 58 container.12 with gunpowder
-item replace block 90137 122 58 container.14 with gunpowder
-
-setblock 90132 125 51 chest[facing=south]
-item replace block 90132 125 51 container.13 with emerald 5
-fill 90108 124 34 90108 122 36 iron_block
-
-
-
-
-
 
 
 
@@ -263,6 +239,9 @@ execute positioned 90124 161 147 run function skyblock:sea/m/unique/special_mars
 
 scoreboard players set SEA_ch5_event_EnteringPillar2 rng1 0
 scoreboard players set SEA_ch5_event_EnteringPillar2 rng2 0
+scoreboard players set SEA_ch5_event_engineering_roadways rng1 0
+scoreboard players set SEA_ch5_event_engineering_roadways rng2 0
+scoreboard players set SEA_ch5_event_engineering_roadways rng3 0
 scoreboard players set SEA_ch5_event_engineering_fiona rng1 0
 scoreboard players set SEA_ch5_event_engineering_fiona rng2 0
 scoreboard players set SEA_ch5_event_engineering_fiona rng3 0
@@ -341,6 +320,31 @@ fill 90127 130 102 90127 129 102 air
 
 
 
+#工程区
+fill 90127 121 42 90122 121 41 minecraft:iron_trapdoor[half=top]
+setblock 90119 122 52 chest[facing=north]
+setblock 90130 122 46 minecraft:potted_azure_bluet
+fill 90106 124 49 90104 122 49 iron_block
+fill 90099 122 53 90101 122 53 minecraft:redstone_block
+fill 90099 122 53 90101 122 53 minecraft:air
+setblock 90103 122 52 chest[facing=east]
+item replace block 90103 122 52 container.12 with flint
+item replace block 90103 122 52 container.14 with flint
+
+setblock 90137 123 53 lever[facing=west,face=floor]
+setblock 90137 122 58 chest[facing=west]
+item replace block 90137 122 58 container.12 with gunpowder
+item replace block 90137 122 58 container.14 with gunpowder
+
+setblock 90132 125 51 chest[facing=south]
+item replace block 90132 125 51 container.13 with emerald 5
+fill 90108 124 34 90108 122 36 iron_block
+
+fill 90125 122 37 90127 123 37 minecraft:iron_bars
+setblock 90129 123 36 minecraft:crimson_button[face=floor,facing=south]
+
+fill 90131 123 45 90131 122 42 iron_bars
+setblock 90133 123 49 minecraft:crimson_button[face=floor,facing=south]
 
 
 

@@ -115,3 +115,19 @@ execute as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] run effect give @
 
 
 
+#工程区中心环路
+execute if block 90129 123 36 minecraft:crimson_button[powered=true] run scoreboard players add SEA_ch5_event_engineering_roadways rng7 1
+execute if score SEA_ch5_event_engineering_roadways rng7 matches 1 run fill 90127 122 37 90125 122 37 air
+execute if score SEA_ch5_event_engineering_roadways rng7 matches 2 run fill 90127 123 37 90125 123 37 air
+execute if score SEA_ch5_event_engineering_roadways rng7 matches 1..2 run playsound minecraft:block.iron_door.open ambient @a 90126 124 37 4 0.3
+execute if block 90133 123 49 minecraft:crimson_button[powered=true] run scoreboard players add SEA_ch5_event_engineering_roadways rng8 1
+execute if score SEA_ch5_event_engineering_roadways rng8 matches 1 run fill 90131 122 45 90131 122 42 air
+execute if score SEA_ch5_event_engineering_roadways rng8 matches 2 run fill 90131 123 45 90131 123 42 air
+execute if score SEA_ch5_event_engineering_roadways rng8 matches 1..2 run playsound minecraft:block.iron_door.open ambient @a 90131.56 124.99 44.06 4 0.3
+
+
+
+
+
+
+
