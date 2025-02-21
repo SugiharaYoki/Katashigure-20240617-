@@ -61,24 +61,24 @@ execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 415 as @n[ta
 
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 435 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..250] [{"selector":"@r[tag=SEAPT]","color":"white"},{"text":"：‘麻烦’……难道说我们不该呼救吗，还是说外界只会将我们全部灭口？","color":"white"}]
 
-execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 445 run setblock 90100 125 37 minecraft:waxed_exposed_copper_bulb[lit=true]
-execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 445 run playsound block.copper_bulb.turn_on block @a 90100 125 37 1 1.1
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 455 run setblock 90100 125 37 minecraft:waxed_exposed_copper_bulb[lit=true]
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 455 run playsound block.copper_bulb.turn_on block @a 90100 125 37 1 1.1
 
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 449..499 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tp @s ~ ~ ~ facing 90100 125 37
 
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 650..690 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tp @s ~ ~ ~ facing 90100 125 37
 
-execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 464 positioned 90100 125 37 run playsound entity.evoker.ambient neutral @a ~ ~ ~ 1 1
-execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 464 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"通讯机台：","color":"yellow","bold": true},{"text":"\n“是‘天使’。”","color":"white","bold": false}]
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 462 positioned 90100 125 37 run playsound entity.evoker.ambient neutral @a ~ ~ ~ 1 1
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 462 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"通讯机台：","color":"yellow","bold": true},{"text":"\n“是‘天使’。”","color":"white","bold": false}]
 
-execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 476 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
-execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 476 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“琼斯……！！你居然能精准定位到我这里呢。”","color":"white","bold": false}]
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 473 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 473 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“琼斯……！！你居然能精准定位到我这里呢。”","color":"white","bold": false}]
 
-execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 495 positioned 90100 125 37 run playsound entity.evoker.ambient neutral @a ~ ~ ~ 1 1
-execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 495 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"琼斯：","color":"yellow","bold": true},{"text":"\n“大小姐，您至今也不打算告诉他们全部的真相吗？”","color":"white","bold": false}]
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 493 positioned 90100 125 37 run playsound entity.evoker.ambient neutral @a ~ ~ ~ 1 1
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 493 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"琼斯：","color":"yellow","bold": true},{"text":"\n“大小姐，您至今也不打算告诉他们全部的真相吗？”","color":"white","bold": false}]
 
-execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 514 positioned 90100 125 37 run playsound entity.evoker.ambient neutral @a ~ ~ ~ 1 1
-execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 514 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"琼斯：","color":"yellow","bold": true},{"text":"\n“圣水晶的力量来源于天使长雷米尔大人。\n而这圣水晶的本质，则是吸收电磁能量并以自己的频率向外放大。\n细菌也是因此才会受圣水晶的吸引，同圣水晶一齐从地底峡谷被带了上来。”","color":"white","bold": false}]
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 512 positioned 90100 125 37 run playsound entity.evoker.ambient neutral @a ~ ~ ~ 1 1
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 512 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"琼斯：","color":"yellow","bold": true},{"text":"\n“圣水晶的力量来源于天使长雷米尔大人。\n而这圣水晶的本质，则是吸收电磁能量并以自己的频率向外放大。\n细菌也是因此才会受圣水晶的吸引，同圣水晶一齐从地底峡谷被带了上来。”","color":"white","bold": false}]
 
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 536 positioned 90100 125 37 run playsound entity.evoker.ambient neutral @a ~ ~ ~ 1 1
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 536 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"琼斯：","color":"yellow","bold": true},{"text":"\n“你身边的菲尔娜，也就是我们的大小姐，认为神明不会允许我们的僭越。只是，吸引神明的使者前来忒尔克西，原本便是我等的夙愿。”","color":"white","bold": false}]
@@ -102,14 +102,14 @@ execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 642 as @n[ta
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 668 positioned 90100 125 37 run playsound entity.evoker.ambient neutral @a ~ ~ ~ 1 1
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 668 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"琼斯：","color":"yellow","bold": true},{"text":"\n“大小姐，不如再考虑一番吧。\n我不愿与你为敌，而我也需要借助你的力量才能修好通讯阵列。”","color":"white","bold": false}]
 
-execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 671 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
-execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 671 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“我有我自己的选择。我会炸了第二组通讯阵列，等着瞧。”","color":"white","bold": false}]
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 680 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 680 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“我有我自己的选择。我会炸了第二组通讯阵列，等着瞧。”","color":"white","bold": false}]
 
-execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 690 positioned 90100 125 37 run playsound entity.evoker.ambient neutral @a ~ ~ ~ 1 1
-execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 690 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"琼斯：","color":"yellow","bold": true},{"text":"\n“唉，你明知道天使已……”","color":"white","bold": false}]
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 693 positioned 90100 125 37 run playsound entity.evoker.ambient neutral @a ~ ~ ~ 1 1
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 693 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"琼斯：","color":"yellow","bold": true},{"text":"\n“唉，你明知道天使已……”","color":"white","bold": false}]
 
-execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 693 run setblock 90100 125 37 minecraft:waxed_exposed_copper_bulb[lit=false]
-execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 693 run playsound block.copper_bulb.turn_off block @a 90100 125 37 1 1.1
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 696 run setblock 90100 125 37 minecraft:waxed_exposed_copper_bulb[lit=false]
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 696 run playsound block.copper_bulb.turn_off block @a 90100 125 37 1 1.1
 
 #execute if score SEA_ch5_event_engineering_fiona rng7 matches 184 run fill 90104 122 49 90106 122 49 air
 #execute if score SEA_ch5_event_engineering_fiona rng7 matches 186 run fill 90104 123 49 90106 123 49 air
