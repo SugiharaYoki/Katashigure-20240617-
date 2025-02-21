@@ -41,12 +41,12 @@ execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 245 as @n[ta
 
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 245 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200,tag=SEAPT] [{"text":" - "},{"text":"询问：诺玛是谁？谈判又是什么？  ","color":"yellow"},{"text":"〈◆〉","bold":true,"color":"gold","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 90001"}}]
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 281 run scoreboard players set SEA_ch5_event_engineering_fiona sea_4temp2 357
-execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 283 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..250] [{"selector":"@r[tag=SEAPT]","color":"white"},{"text":"：谈判？你一直在提到的谈判到底是指什么？以及……诺玛？你提到的诺玛是谁？","color":"white"}]
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 283 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..250] [{"selector":"@r[tag=SEAPT]","color":"white"},{"text":"：谈判？你一直在提到的谈判到底是指什么？\n以及……诺玛？你提到的诺玛是谁？","color":"white"}]
 
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 300 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 300 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“哦？我还以为你在主平台探索了那么久，一定已经遇到过了诺玛。\n也是，我也与麦迪逊叔叔失联很久了。\n邪教徒领头的是个叫琼斯的家伙。他曾经是诺曼博士的得力助手，我想让他将诺曼博士交给我，其次是摧毁通讯阵列，以防吸引‘外界’的势力。”","color":"white","bold": false}]
 
-execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 324 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..250] [{"selector":"@r[tag=SEAPT]","color":"white"},{"text":"：虽然只是推测……你提到的诺玛，是诺曼博士的女儿吗？\n以及，你是要保护诺曼博士？","color":"white"}]
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 324 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..250] [{"selector":"@r[tag=SEAPT]","color":"white"},{"text":"：虽然只是推测……你提到的诺玛，是诺曼博士的女儿吗？\n还有，你是打算保护诺曼博士？","color":"white"}]
 
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 343 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 343 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“不、我要亲手杀了他。原本我们有机会阻止细菌爆发，是他拖累了所有人。\n但是你猜琼斯怎么说，他说诺曼博士早就自杀了。我怎么可能信？\n现在也只有他的女儿，你也猜对了，诺玛还不知道藏在哪里。\n灾难发生后，是诺玛将平台彻底推至了毁灭。”","color":"white","bold": false}]
