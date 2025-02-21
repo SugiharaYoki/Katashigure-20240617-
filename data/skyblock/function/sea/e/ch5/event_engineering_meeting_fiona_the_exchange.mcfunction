@@ -111,9 +111,24 @@ execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 693 as @n[ta
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 696 run setblock 90100 125 37 minecraft:waxed_exposed_copper_bulb[lit=false]
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 696 run playsound block.copper_bulb.turn_off block @a 90100 125 37 1 1.1
 
-#execute if score SEA_ch5_event_engineering_fiona rng7 matches 184 run fill 90104 122 49 90106 122 49 air
-#execute if score SEA_ch5_event_engineering_fiona rng7 matches 186 run fill 90104 123 49 90106 123 49 air
-#execute if score SEA_ch5_event_engineering_fiona rng7 matches 188 run fill 90104 124 49 90106 124 49 air
-#execute if score SEA_ch5_event_engineering_fiona rng7 matches 184 run playsound minecraft:block.iron_door.open ambient @a 90105 124 49 4 0.3
-#execute if score SEA_ch5_event_engineering_fiona rng7 matches 186 run playsound minecraft:block.iron_door.open ambient @a 90105 124 49 4 0.3
-#execute if score SEA_ch5_event_engineering_fiona rng7 matches 188 run playsound minecraft:block.iron_door.open ambient @a 90105 124 49 4 0.3
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 715 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 715 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if entity @a[tag=SEAPT,scores={SEAPT_member=2}] run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“我会继续尝试摧毁整个通讯阵列。怎么样，”","color":"white","bold": false},{"selector":"@p[tag=SEAPT,scores={SEAPT_member=1}]","color":"white"},{"text":"，你们要跟我来吗？","color":"white"}]
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 715 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s unless entity @a[tag=SEAPT,scores={SEAPT_member=2}] run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“我会继续尝试摧毁整个通讯阵列。怎么样，”","color":"white","bold": false},{"selector":"@p[tag=SEAPT,scores={SEAPT_member=1}]","color":"white"},{"text":"，要跟我来吗？","color":"white"}]
+
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 734 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..250] [{"selector":"@p[tag=SEAPT,scores={SEAPT_member=1}]","color":"white"},{"text":"：也没有别的选择了吧。\n话说，你也知道我的名字？","color":"white"}]
+
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 752 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 752 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“你胸牌上写着呢。”","color":"white","bold": false}]
+
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 769 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 769 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if entity @a[tag=SEAPT,scores={SEAPT_member=2}] run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“我会开启上去的铁门。至于跟不跟我过来，你们做决定。”","color":"white","bold": false}]
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 769 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s unless entity @a[tag=SEAPT,scores={SEAPT_member=2}] run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“我会开启上去的铁门。至于跟不跟我过来，你自己做决定。”","color":"white","bold": false}]
+
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 775 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tp @s 90102 122 38 facing 90101.00 123.00 37.57
+
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 789 run fill 90108 122 34 90108 122 36 air
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 791 run fill 90108 123 34 90108 123 36 air
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 793 run fill 90108 124 34 90108 124 36 air
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 789 run playsound minecraft:block.iron_door.open ambient @a 90108 124 35 4 0.3
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 791 run playsound minecraft:block.iron_door.open ambient @a 90108 124 35 4 0.3
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 793 run playsound minecraft:block.iron_door.open ambient @a 90108 124 35 4 0.3
