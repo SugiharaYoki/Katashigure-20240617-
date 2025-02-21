@@ -346,6 +346,6 @@ setblock 90129 123 36 minecraft:crimson_button[face=floor,facing=south]
 fill 90131 123 45 90131 122 42 iron_bars
 setblock 90133 123 49 minecraft:crimson_button[face=floor,facing=south]
 
-
+setblock 90100 125 37 minecraft:waxed_exposed_copper_bulb[lit=false]
 
 

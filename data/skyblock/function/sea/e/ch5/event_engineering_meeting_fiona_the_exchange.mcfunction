@@ -54,11 +54,48 @@ execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 343 as @n[ta
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 366 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 366 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“最后如你所知的那般，我将通讯阵列炸掉了一组。\n设置在另一组的炸药被提前发现了，遗憾。”","color":"white","bold": false}]
 
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 390 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..250] [{"selector":"@r[tag=SEAPT]","color":"white"},{"text":"：所以……我们现在该怎么办？","color":"white"}]
+
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 415 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 415 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“炸掉剩下那一组通讯阵列，不然引来了麻烦我们都得死在这里。”","color":"white","bold": false}]
+
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 435 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..250] [{"selector":"@r[tag=SEAPT]","color":"white"},{"text":"：‘麻烦’……难道说我们不该呼救吗，还是说外界只会将我们全部灭口？","color":"white"}]
+
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 445 run setblock 90100 125 37 minecraft:waxed_exposed_copper_bulb[lit=true]
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 445 run playsound block.copper_bulb.turn_on block @a 90100 125 37 1 1.1
+
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 449..499 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tp @s ~ ~ ~ facing 90100 125 37
+
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 464 positioned 90100 125 37 run playsound entity.evoker.ambient neutral @a ~ ~ ~ 1 1
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 464 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"通讯机台：","color":"yellow","bold": true},{"text":"\n“是‘天使’。”","color":"white","bold": false}]
+
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 476 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 476 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“琼斯……！！你居然能精准定位到我这里呢。”","color":"white","bold": false}]
+
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 495 positioned 90100 125 37 run playsound entity.evoker.ambient neutral @a ~ ~ ~ 1 1
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 495 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"琼斯：","color":"yellow","bold": true},{"text":"\n“大小姐，您至今也不打算告诉他们全部的真相吗？”","color":"white","bold": false}]
+
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 514 positioned 90100 125 37 run playsound entity.evoker.ambient neutral @a ~ ~ ~ 1 1
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 514 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"琼斯：","color":"yellow","bold": true},{"text":"\n“圣水晶的力量来源于天使长雷米尔大人。\n而这圣水晶的本质，则是吸收电磁能量并以自己的频率向外放大。\n细菌也是因此才会受圣水晶的吸引，同圣水晶一齐从地底峡谷被带了上来。”","color":"white","bold": false}]
+
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 536 positioned 90100 125 37 run playsound entity.evoker.ambient neutral @a ~ ~ ~ 1 1
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 536 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"琼斯：","color":"yellow","bold": true},{"text":"\n“你身边的菲尔娜，也就是我们的大小姐，认为神明不会允许我们的僭越。只是，吸引神明的使者前来忒尔克西，原本便是我等的夙愿。”","color":"white","bold": false}]
 
 
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 538 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200,tag=SEAPT] [{"text":" - "},{"text":"插嘴：我是在听什么童话故事吗？  ","color":"yellow"},{"text":"〈◆〉","bold":true,"color":"gold","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 90006"}}]
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 559 run scoreboard players set SEA_ch5_event_engineering_fiona sea_4temp2 167
 
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 561 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if entity @a[tag=SEAPT,scores={SEAPT_member=2}] run tellraw @a[distance=0..250] [{"selector":"@p[tag=SEAPT,scores={SEAPT_member=2}]","color":"white"},{"text":"：开什么玩笑？你们在给我们讲童话故事吗？","color":"white"}]
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 561 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s unless entity @a[tag=SEAPT,scores={SEAPT_member=1}] run tellraw @a[distance=0..250] [{"selector":"@p[tag=SEAPT,scores={SEAPT_member=1}]","color":"white"},{"text":"：所以……我在听什么？邪教的洗脑演讲吗？","color":"white"}]
 
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 580 positioned 90100 125 37 run playsound entity.evoker.ambient neutral @a ~ ~ ~ 1 1
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 580 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"琼斯：","color":"yellow","bold": true},{"text":"\n“先生，神与天使都是真实存在的。\n可能在你听来这些都是骇人听闻的诳语，可这世界的根基切实地建立于生命能源‘以太’之上。\n地球由风、地、水、火四大基础元素所构成，但生命之所以诞生还是归功于‘以太’元素：日、月、星。\n没有这些元素，任何生命都不会诞生，任何灵魂都不会被创造。”","color":"white","bold": false}]
 
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 612 positioned 90100 125 37 run playsound entity.evoker.ambient neutral @a ~ ~ ~ 1 1
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 612 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"琼斯：","color":"yellow","bold": true},{"text":"\n“可是……神已经有太久没有回应任何人了啊。就连他的使者也不再光临人世。\n太平洋上空的飘浮城市中枢之城虽然被各国合作成功建立起来，可我们最终迎来了什么？更接近上帝了吗？并没有。\n我们迫切地想要寻求背后的原因啊，我们想要找到神的使者，进行一场对话。”","color":"white","bold": false}]
+
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 642 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 642 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“上帝根本不会在乎人类的诉求。你们擅自将镇压古代细菌的圣水晶带至地表，只会亲手招致天使的怒火与雷霆。\n我不知道结果会是什么，但我绝对不会允许你们就这样将平台上其他的幸存者一并卷入。\n你们的死活我并不在乎，但我不想死，很多人不想死。你们在逼着我们跟你们一同承受后果。”","color":"white","bold": false}]
 
 #execute if score SEA_ch5_event_engineering_fiona rng7 matches 184 run fill 90104 122 49 90106 122 49 air
 #execute if score SEA_ch5_event_engineering_fiona rng7 matches 186 run fill 90104 123 49 90106 123 49 air
