@@ -85,7 +85,7 @@ execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 536 as @n[ta
 
 
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 538 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200,tag=SEAPT] [{"text":" - "},{"text":"插嘴：我是在听什么童话故事吗？  ","color":"yellow"},{"text":"〈◆〉","bold":true,"color":"gold","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 90006"}}]
-execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 559 run scoreboard players set SEA_ch5_event_engineering_fiona sea_4temp2 167
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 559 run scoreboard players set SEA_ch5_event_engineering_fiona sea_4temp2 667
 
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 561 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if entity @a[tag=SEAPT,scores={SEAPT_member=2}] run tellraw @a[distance=0..250] [{"selector":"@p[tag=SEAPT,scores={SEAPT_member=2}]","color":"white"},{"text":"：开什么玩笑？你们在给我们讲童话故事吗？","color":"white"}]
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 561 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s unless entity @a[tag=SEAPT,scores={SEAPT_member=1}] run tellraw @a[distance=0..250] [{"selector":"@p[tag=SEAPT,scores={SEAPT_member=1}]","color":"white"},{"text":"：所以……我在听什么？邪教的洗脑演讲吗？","color":"white"}]
