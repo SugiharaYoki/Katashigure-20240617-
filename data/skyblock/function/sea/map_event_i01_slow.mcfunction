@@ -126,12 +126,12 @@ execute as @n[tag=sc,scores={sea_4temp2=5030}] as @a[tag=SEAPT,advancements={sky
 execute as @n[tag=sc,scores={sea_4temp2=5046}] as @a[tag=SEAPT,advancements={skyblock:sea/doc/13=true}] at @s run tellraw @s {"text":"我会将你铭记。","color":"gray"}
 execute as @n[tag=sc,scores={sea_4temp2=5012}] as @a[tag=SEAPT,advancements={skyblock:sea/doc/13=false}] at @s run tellraw @s {"text":"抱歉，法莫洛斯先生。","color":"gray"}
 execute as @n[tag=sc,scores={sea_4temp2=5030}] as @a[tag=SEAPT,advancements={skyblock:sea/doc/13=false}] at @s run tellraw @s {"text":"我没有任何能做的，杀了你才能开启前路。","color":"gray"}
-execute as @n[tag=sc,scores={sea_4temp2=5050}] run playsound minecraft:block.iron_door.open ambient @a 90076 125 121 4 0.3
-execute as @n[tag=sc,scores={sea_4temp2=5052}] run playsound minecraft:block.iron_door.open ambient @a 90076 125 121 4 0.3
 execute as @n[tag=sc,scores={sea_4temp2=5054}] run playsound minecraft:block.iron_door.open ambient @a 90076 125 121 4 0.3
-execute as @n[tag=sc,scores={sea_4temp2=5050}] run fill 90076 122 121 90076 122 123 air
-execute as @n[tag=sc,scores={sea_4temp2=5052}] run fill 90076 123 121 90076 123 123 air
-execute as @n[tag=sc,scores={sea_4temp2=5054}] run fill 90076 124 121 90076 124 123 air
+execute as @n[tag=sc,scores={sea_4temp2=5056}] run playsound minecraft:block.iron_door.open ambient @a 90076 125 121 4 0.3
+execute as @n[tag=sc,scores={sea_4temp2=5058}] run playsound minecraft:block.iron_door.open ambient @a 90076 125 121 4 0.3
+execute as @n[tag=sc,scores={sea_4temp2=5054}] run fill 90076 122 121 90076 122 123 air
+execute as @n[tag=sc,scores={sea_4temp2=5056}] run fill 90076 123 121 90076 123 123 air
+execute as @n[tag=sc,scores={sea_4temp2=5058}] run fill 90076 124 121 90076 124 123 air
 execute as @n[tag=sc,scores={sea_4temp2=5065}] as @a[tag=SEAPT] at @s run tellraw @s {"text":"『厄珀娅的悲歌』第一章 完","color":"blue","bold": true}
 execute as @n[tag=sc,scores={sea_4temp2=5065}] as @a[tag=SEAPT] at @s run playsound music_disc.creator_music_box music @a[tag=SEAPT] ~ ~ ~ 1000 0.9
 execute as @n[tag=sc,scores={sea_4temp2=5065}] run function skyblock:sea/generate/preload/map_prepare_ch2
