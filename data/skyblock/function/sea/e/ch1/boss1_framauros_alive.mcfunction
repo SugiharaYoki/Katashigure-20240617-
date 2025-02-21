@@ -1,5 +1,5 @@
 execute as @s[scores={sea_4temp2=6002..6950}] run scoreboard players add @n[tag=sc] sea_4temp2 1
-execute as @s[scores={sea_4temp2=6000..6001}] run scoreboard players add @n[tag=sc] sea_4temp2 1
+
 
 execute as @s[scores={sea_4temp2=6002}] run fill 90094 124 107 90094 122 107 air destroy
 execute as @s[scores={sea_4temp2=6002}] run fill 90093 124 107 90093 122 107 air destroy
