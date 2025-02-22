@@ -396,7 +396,7 @@ setblock 90131 161 144 air
 fill 90149 137 152 90149 138 152 minecraft:stone_bricks
 
 #fill 90163 129 113 90163 127 114 iron_bars
-
+fill 90125 102 101 90127 102 99 barrier
 summon minecraft:block_display 90126.5 102.0 100.5 {Tags:["sea_ch3elevator1","display"],block_state:{Name:"iron_block"},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[3f,0.9f,3f],translation:[-1.5f,0.1f,-1.5f]}}
 summon block_display 90125.5 102.0 99.5 {Tags:["sea_ch3elevator1","control"],Passengers:[{id:"shulker",active_effects:[{id:"invisibility",show_particles:0b,amplifier:1,duration:100000}],Tags:["sea_ch3elevator1","block_box"],DeathLootTable:"skyblock:null",NoAI:1b,Silent:1b,Invulnerable:1b}]}
 summon block_display 90126.5 102.0 99.5 {Tags:["sea_ch3elevator1","control"],Passengers:[{id:"shulker",active_effects:[{id:"invisibility",show_particles:0b,amplifier:1,duration:100000}],Tags:["sea_ch3elevator1","block_box"],DeathLootTable:"skyblock:null",NoAI:1b,Silent:1b,Invulnerable:1b}]}
