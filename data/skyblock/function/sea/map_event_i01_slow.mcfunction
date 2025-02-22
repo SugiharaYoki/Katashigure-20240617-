@@ -156,5 +156,5 @@ execute as @n[tag=sc,scores={sea_4temp2=3000..5000,sea_4temp5=40}] as @n[tag=SEA
 
 execute as @n[tag=sc,scores={sea_4temp2=6000..6001}] run scoreboard players add @n[tag=sc] sea_4temp2 1
 execute as @n[tag=sc,scores={sea_4temp2=6000..6002}] run function skyblock:sea/e/ch1/boss1_framauros_alive
-execute as @n[tag=sc,scores={sea_4temp2=6003..7000}] at @n[tag=SEAframauros] if entity @a[tag=SEAPT,distance=0.1..5] run function skyblock:sea/e/ch1/boss1_framauros_alive
+execute as @n[tag=sc,scores={sea_4temp2=6002..7000}] at @n[tag=SEAframauros] if entity @a[tag=SEAPT,distance=0.1..5] run function skyblock:sea/e/ch1/boss1_framauros_alive
 
