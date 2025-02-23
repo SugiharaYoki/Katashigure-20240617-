@@ -139,6 +139,16 @@ execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 793 run play
 
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 797 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tp @s 90105 122 35 facing 90109 123 34
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 799 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tp @s 90104.02 122 36.69 facing 90109 123 34
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 801 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tp @s 90109 122 35 facing 90110 122 35
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 803..810 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tp @s ~1 ~ ~ facing ~2 ~ ~
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 811..813 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tp @s ~ ~ ~-1 facing ~ ~ ~-2
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 814 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tp @s 90117 122.5 31 facing ~ ~ ~-2
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 816 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tp @s 90117 123 30 facing ~ ~ ~-2
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 818..820 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tp @s ~ ~ ~-1 facing ~ ~ ~-2
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 821..822 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tp @s ~1 ~ ~ facing ~2 ~ ~
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 824 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tp @s ~1 ~ ~ facing ~2 ~ ~
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 826..830 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tp @s ~1 ~ ~ facing ~2 ~ ~
+
 
 
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 789 positioned 90124 122 36 run function skyblock:sea/m/drone
