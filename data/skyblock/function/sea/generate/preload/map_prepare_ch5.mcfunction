@@ -351,3 +351,10 @@ setblock 90133 123 49 minecraft:crimson_button[face=floor,facing=south]
 setblock 90100 125 37 minecraft:waxed_exposed_copper_bulb[lit=false]
 
 
+fill 90107 124 27 90104 123 27 lever[facing=north]
+
+fill 90105 122 25 90106 122 25 air
+
+
+
+

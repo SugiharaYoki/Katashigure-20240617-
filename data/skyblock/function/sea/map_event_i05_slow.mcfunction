@@ -126,8 +126,16 @@ execute if score SEA_ch5_event_engineering_roadways rng8 matches 2 run fill 9013
 execute if score SEA_ch5_event_engineering_roadways rng8 matches 1..2 run playsound minecraft:block.iron_door.open ambient @a 90131.56 124.99 44.06 4 0.3
 
 
-
-
+#工程区密码1
+execute if block 90107 124 27 lever[powered=false] \
+ if block 90106 124 27 lever[powered=false] \
+  if block 90105 124 27 lever[powered=true] \
+   if block 90104 124 27 lever[powered=false] \
+    if block 90107 123 27 lever[powered=true] \
+     if block 90106 123 27 lever[powered=false] \
+      if block 90105 123 27 lever[powered=true] \
+       if block 90104 123 27 lever[powered=false] if block 90105 122 25 air \
+positioned 90105 122 25 run function skyblock:sea/e/ch5/compare_1
 
 
 
