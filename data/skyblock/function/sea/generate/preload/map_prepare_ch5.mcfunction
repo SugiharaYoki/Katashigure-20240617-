@@ -367,6 +367,15 @@ setblock 90139 114 32 air
 setblock 90139 114 32 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 2, id:"minecraft:gunpowder"}}
 setblock 90142 95 24 air
 setblock 90142 95 24 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 2, id:"minecraft:golden_carrot"}}
+setblock 90139 122 56 air
+setblock 90139 122 56 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:flint"}}
+setblock 90149 122 43 air
+setblock 90149 122 43 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:flint"}}
+
+fill 90145 123 54 90145 123 55 iron_bars
+
+
+
 
 #compare
 fill 90107 124 27 90104 123 27 lever[facing=north]
@@ -401,3 +410,12 @@ item replace block 90140 104 23 container.4 with amethyst_shard 1
 item replace block 90140 104 23 container.12 with amethyst_shard 1
 item replace block 90140 104 23 container.14 with amethyst_shard 1
 item replace block 90140 104 23 container.22 with amethyst_shard 1
+
+
+
+
+
+
+
+
+

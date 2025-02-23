@@ -159,6 +159,10 @@ execute if score SEA_ch5_event_engineering_roadways rng2 matches 2 run fill 9013
 execute if score SEA_ch5_event_engineering_roadways rng2 matches 1..2 run playsound minecraft:block.iron_door.open ambient @a 90135 116 33 4 0.3
 
 
+execute if block 90144 123 52 minecraft:crimson_button[powered=true] run scoreboard players add SEA_ch5_event_engineering_roadways rng3 1
+execute if score SEA_ch5_event_engineering_roadways rng3 matches 1 run fill 90145 123 54 90145 123 55 air
+execute if score SEA_ch5_event_engineering_roadways rng3 matches 1 run playsound minecraft:block.iron_door.open ambient @a 90145 123 55.0 4 0.3
+
 #记忆密码5
 execute if block 90138 107 21 lever[powered=false] \
  if block 90137 107 21 lever[powered=true] \
