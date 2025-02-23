@@ -349,6 +349,9 @@ fill 90131 123 45 90131 122 42 iron_bars
 setblock 90133 123 49 minecraft:crimson_button[face=floor,facing=south]
 
 setblock 90100 125 37 minecraft:waxed_exposed_copper_bulb[lit=false]
+execute positioned 90117 122 42 run function skyblock:sea/m/drone
+setblock 90137 122 39 minecraft:furnace[facing=west]
+setblock 90117 77 34 minecraft:furnace[facing=north]
 
 #compare
 fill 90107 124 27 90104 123 27 lever[facing=north]

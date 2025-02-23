@@ -139,3 +139,12 @@ execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 793 run play
 
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 797 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tp @s 90105 122 35 facing 90109 123 34
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 799 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tp @s 90104.02 122 36.69 facing 90109 123 34
+
+
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 789 positioned 90124 122 36 run function skyblock:sea/m/drone
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 789 positioned 90113 122 28 run function skyblock:sea/m/drone
+
+
+
+
+
