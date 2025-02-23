@@ -136,6 +136,12 @@ execute if block 90107 124 27 lever[powered=false] \
       if block 90105 123 27 lever[powered=true] \
        if block 90104 123 27 lever[powered=false] if block 90105 122 25 air \
 positioned 90105 122 25 run function skyblock:sea/e/ch5/compare_1
+#工程区密码2
+execute if block 90130 124 32 lever[powered=true] \
+ if block 90129 124 32 lever[powered=false] \
+  if block 90130 123 32 lever[powered=false] \
+       if block 90129 123 32 lever[powered=true] if block 90130 122 34 air \
+positioned 90130 122 34 run function skyblock:sea/e/ch5/compare_2
 
 
 
