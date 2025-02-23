@@ -126,6 +126,7 @@ execute if score SEA_ch5_event_engineering_roadways rng8 matches 2 run fill 9013
 execute if score SEA_ch5_event_engineering_roadways rng8 matches 1..2 run playsound minecraft:block.iron_door.open ambient @a 90131.56 124.99 44.06 4 0.3
 
 
+
 #工程区密码1
 execute if block 90107 124 27 lever[powered=false] \
  if block 90106 124 27 lever[powered=false] \
@@ -148,4 +149,14 @@ execute if block 90136 96 29 lever[powered=true] run scoreboard players add SEA_
 execute if score SEA_ch5_event_engineering_roadways rng1 matches 1 run fill 90135 96 29 90135 96 25 air
 execute if score SEA_ch5_event_engineering_roadways rng1 matches 2 run fill 90135 97 29 90135 97 25 air
 execute if score SEA_ch5_event_engineering_roadways rng1 matches 1..2 run playsound minecraft:block.iron_door.open ambient @a 90135 98 27 4 0.3
+
+#东北支柱小铁门
+execute if block 90139 115 31 minecraft:crimson_button[powered=true] run scoreboard players add SEA_ch5_event_engineering_roadways rng2 1
+execute if score SEA_ch5_event_engineering_roadways rng2 matches 1 run fill 90138 114 33 90135 114 33 air
+execute if score SEA_ch5_event_engineering_roadways rng2 matches 2 run fill 90138 115 33 90135 115 33 air
+execute if score SEA_ch5_event_engineering_roadways rng2 matches 1 run fill 90135 114 30 90135 114 32 air
+execute if score SEA_ch5_event_engineering_roadways rng2 matches 2 run fill 90135 115 30 90135 115 32 air
+execute if score SEA_ch5_event_engineering_roadways rng2 matches 1..2 run playsound minecraft:block.iron_door.open ambient @a 90135 116 33 4 0.3
+
+
 
