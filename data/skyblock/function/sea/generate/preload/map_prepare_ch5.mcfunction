@@ -382,7 +382,8 @@ item replace block 90111 122 19 container.12 with beef 2
 item replace block 90111 122 19 container.14 with bread 3
 item replace block 90112 124 23 container.13 with bread 2
 
-
+setblock 90137 122 40 chest[facing=west]
+item replace block 90137 122 40 container.13 with coal 1
 
 
 
