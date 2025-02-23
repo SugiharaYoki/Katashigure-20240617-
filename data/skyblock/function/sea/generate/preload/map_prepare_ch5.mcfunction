@@ -386,9 +386,13 @@ setblock 90137 122 40 chest[facing=west]
 item replace block 90137 122 40 container.13 with coal 1
 
 
+summon painting 90105 124 19 {Facing:2b,variant:"minecraft:skull_and_roses"}
 
+fill 90138 107 21 90136 106 21 lever[facing=north]
+fill 90137 105 21 90137 104 21 lever[facing=north]
+fill 90140 106 22 90140 104 22 minecraft:waxed_copper_grate
 
-
-
-
+setblock 90140 104 23 chest[facing=north]
+item replace block 90140 104 23 container.11 with echo_shard 2
+item replace block 90140 104 23 container.15 with iron_ingot 2
 

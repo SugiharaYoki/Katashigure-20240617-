@@ -109,6 +109,7 @@ lore=['{"text":"010?1","color":"white","italic":false}']]
 item replace block 90104 155 151 container.13 with trial_key[custom_name='{"text":"副宿舍楼2F - 个人储藏柜2B的钥匙","italic":true,"color":"yellow","italic":false}',\
 lore=['{"text":"没错，就是最中间那个，别多想了！","color":"white","italic":false}']]
 item replace block 90173 6 104 container.13 with trial_key[custom_name='{"text":"冷凝系统 - 休息区2F钥匙","italic":true,"color":"yellow","italic":false}']
+item replace block 90140 104 23 container.13 with ominous_trial_key[custom_name='{"text":"厄珀娅之钥","italic":true,"color":"dark_red","italic":false}']
 
 #法莫洛斯：医务部门 总管 - 死亡：被感染成为腐尸，第一章结尾被主角杀死 - 路加福音
 #玛瑞莲：机械研发部门 贝塔小组 组长 - 伪福音犹大福音

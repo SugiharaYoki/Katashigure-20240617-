@@ -159,4 +159,14 @@ execute if score SEA_ch5_event_engineering_roadways rng2 matches 2 run fill 9013
 execute if score SEA_ch5_event_engineering_roadways rng2 matches 1..2 run playsound minecraft:block.iron_door.open ambient @a 90135 116 33 4 0.3
 
 
+#记忆密码5
+execute if block 90138 107 21 lever[powered=false] \
+ if block 90137 107 21 lever[powered=true] \
+ if block 90136 107 21 lever[powered=false] \
+ if block 90138 106 21 lever[powered=true] \
+ if block 90137 106 21 lever[powered=true] \
+ if block 90136 106 21 lever[powered=true] \
+ if block 90137 105 21 lever[powered=true] \
+ if block 90137 104 21 lever[powered=true] positioned 90140 105 22 unless block ~ ~ ~ air \
+run function skyblock:sea/e/ch5/mem_5
 
