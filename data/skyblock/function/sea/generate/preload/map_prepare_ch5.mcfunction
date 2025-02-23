@@ -363,6 +363,11 @@ fill 90135 114 30 90135 114 32 iron_block
 fill 90135 115 30 90135 115 32 iron_block
 
 
+setblock 90139 114 32 air
+setblock 90139 114 32 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 2, id:"minecraft:gunpowder"}}
+setblock 90142 95 24 air
+setblock 90142 95 24 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 2, id:"minecraft:golden_carrot"}}
+
 #compare
 fill 90107 124 27 90104 123 27 lever[facing=north]
 fill 90105 122 25 90106 122 25 air
