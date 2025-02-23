@@ -83,7 +83,7 @@ execute if score SEA_ch5_event_engineering_fiona rng1 matches 184 as @n[tag=SEAf
 execute if score SEA_ch5_event_engineering_fiona rng1 matches 185.. positioned 90120 123 66 if entity @p[tag=SEAPT,distance=0..5] run tp @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] ~ ~ ~
 execute if score SEA_ch5_event_engineering_fiona rng1 matches 185.. positioned 90120 123 66 if entity @n[tag=SEAfiona,distance=0..5] run scoreboard players add SEA_ch5_event_engineering_fiona rng7 1
 
-execute if score SEA_ch5_event_engineering_fiona rng1 matches 55..700 run effect give @a[tag=SEAPT] resistance 3 3 false
+execute if score SEA_ch5_event_engineering_fiona rng1 matches 55..700 run effect give @a[tag=SEAPT] resistance 3 2 false
 execute if score SEA_ch5_event_engineering_fiona rng1 matches 55..700 run effect give @a[tag=SEAPT] strength 3 2 false
 
 execute if score SEA_ch5_event_engineering_fiona rng7 matches 3 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
