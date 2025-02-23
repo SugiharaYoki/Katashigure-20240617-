@@ -397,3 +397,7 @@ item replace block 90140 104 23 container.11 with echo_shard 2
 item replace block 90140 104 23 container.15 with iron_ingot 2
 
 setblock 90097 132 99 chest[facing=south]{Lock:"厄珀娅之钥"}
+item replace block 90140 104 23 container.4 with amethyst_shard 1
+item replace block 90140 104 23 container.12 with amethyst_shard 1
+item replace block 90140 104 23 container.14 with amethyst_shard 1
+item replace block 90140 104 23 container.22 with amethyst_shard 1
