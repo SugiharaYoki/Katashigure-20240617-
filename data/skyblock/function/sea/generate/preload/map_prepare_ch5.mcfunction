@@ -356,4 +356,15 @@ fill 90105 122 25 90106 122 25 air
 fill 90129 124 32 90130 123 32 lever[facing=south]
 setblock 90130 122 34 air
 
+setblock 90100 123 23 minecraft:potted_azalea_bush
+setblock 90109 123 23 minecraft:potted_azalea_bush
+fill 90113 124 23 90111 124 23 barrel[facing=north]
+setblock 90111 122 19 chest[facing=south]
+item replace block 90111 122 19 container.12 with beef 2
+item replace block 90111 122 19 container.14 with bread 3
+item replace block 90112 124 23 container.13 with bread 2
+
+
+
+
 

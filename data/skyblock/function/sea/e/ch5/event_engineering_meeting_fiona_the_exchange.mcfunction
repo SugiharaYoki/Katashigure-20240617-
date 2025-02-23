@@ -136,3 +136,6 @@ execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 793 run fill
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 789 run playsound minecraft:block.iron_door.open ambient @a 90108 124 35 4 0.3
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 791 run playsound minecraft:block.iron_door.open ambient @a 90108 124 35 4 0.3
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 793 run playsound minecraft:block.iron_door.open ambient @a 90108 124 35 4 0.3
+
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 797 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tp @s 90105 122 35 facing 90109 123 34
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 799 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tp @s 90104.02 122 36.69 facing 90109 123 34
