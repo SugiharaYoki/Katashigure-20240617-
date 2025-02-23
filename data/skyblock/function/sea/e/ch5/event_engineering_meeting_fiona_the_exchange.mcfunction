@@ -148,6 +148,8 @@ execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 818..820 as 
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 821..822 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tp @s ~1 ~ ~ facing ~2 ~ ~
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 824 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tp @s ~1 ~ ~ facing ~2 ~ ~
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 826..830 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tp @s ~1 ~ ~ facing ~2 ~ ~
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 831..835 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tp @s ~ ~ ~-1 facing ~ ~ ~-2
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 837 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tp @s ~ ~ ~ facing 90129 123 29
 
 
 
