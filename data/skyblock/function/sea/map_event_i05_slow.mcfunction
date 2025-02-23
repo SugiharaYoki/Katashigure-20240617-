@@ -143,5 +143,9 @@ execute if block 90130 124 32 lever[powered=true] \
        if block 90129 123 32 lever[powered=true] if block 90130 122 34 air \
 positioned 90130 122 34 run function skyblock:sea/e/ch5/compare_2
 
-
+#东北支柱大铁门
+execute if block 90136 96 29 lever[powered=true] run scoreboard players add SEA_ch5_event_engineering_roadways rng1 1
+execute if score SEA_ch5_event_engineering_roadways rng1 matches 1 run fill 90135 96 29 90135 96 25 air
+execute if score SEA_ch5_event_engineering_roadways rng1 matches 2 run fill 90135 97 29 90135 97 25 air
+execute if score SEA_ch5_event_engineering_roadways rng1 matches 1..2 run playsound minecraft:block.iron_door.open ambient @a 90135 98 27 4 0.3
 

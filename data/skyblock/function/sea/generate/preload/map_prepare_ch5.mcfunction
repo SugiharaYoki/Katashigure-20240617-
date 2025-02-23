@@ -353,6 +353,8 @@ execute positioned 90117 122 42 run function skyblock:sea/m/drone
 setblock 90137 122 39 minecraft:furnace[facing=west]
 setblock 90117 77 34 minecraft:furnace[facing=north]
 
+setblock 90136 96 29 lever[facing=north]
+
 #compare
 fill 90107 124 27 90104 123 27 lever[facing=north]
 fill 90105 122 25 90106 122 25 air
@@ -367,7 +369,7 @@ item replace block 90111 122 19 container.12 with beef 2
 item replace block 90111 122 19 container.14 with bread 3
 item replace block 90112 124 23 container.13 with bread 2
 
-
+fill 90135 96 29 90135 97 25 iron_block
 
 
 
