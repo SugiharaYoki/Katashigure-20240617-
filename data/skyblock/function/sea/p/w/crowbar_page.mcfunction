@@ -92,9 +92,9 @@ tellraw @s [{"text":" ","color":"light_purple"},\
 {"selector":"@n[tag=SEA_w_crowbar_displaymarkerE]","color":"dark_gray"},\
 {"selector":"@n[tag=SEA_w_crowbar_displaymarkerE]","color":"dark_gray"},\
 {"selector":"@n[tag=SEA_w_crowbar_displaymarkerE]","color":"dark_gray"},\
-{"selector":"@n[tag=SEA_w_crowbar_displaymarker15]","color":"light_purple","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 50015"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：2\n攻击距离增加0.3","color":"white"}}},\
+{"selector":"@n[tag=SEA_w_crowbar_displaymarker15]","color":"light_purple","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 50015"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：3\n攻击距离增加0.3","color":"white"}}},\
 {"selector":"@n[tag=SEA_w_crowbar_displaymarkerE]","color":"dark_gray"},\
-{"selector":"@n[tag=SEA_w_crowbar_displaymarker16]","color":"light_purple","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 50016"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：2\n攻击距离增加0.3","color":"white"}}}]
+{"selector":"@n[tag=SEA_w_crowbar_displaymarker16]","color":"light_purple","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 50016"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：3\n攻击距离增加0.3","color":"white"}}}]
 
 #function skyblock:sea/p/w/crowbar_cost
 #function skyblock:sea/p/w/axe_cost
