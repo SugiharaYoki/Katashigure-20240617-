@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "似乎是什么好吃的",
+            "color": "aqua",
+            "bold": true,
+            "italic": false
+        },
+        "description": {
+            "text": "在第一章获得定时炸弹。\n“你一定是见过史丹尼舵长了。”",
+            "color": "gray"
+        },
+        "icon": {
+            "id": "minecraft:iron_hoe"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "sea": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:sea/doc/g23"
+}
