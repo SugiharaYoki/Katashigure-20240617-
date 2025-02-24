@@ -8,6 +8,11 @@ execute if entity @n[tag=SEAedwina] run tellraw @s [{"text":" 检测到NPC“艾
 execute store result score sc rng1 if entity @e[tag=SEAfiona]
 execute if entity @n[tag=SEAfiona] run tellraw @s [{"text":" 检测到NPC“菲尔娜” 数量 = ","color":"white","italic": false},{"score":{"name":"sc","objective":"rng1"},"color": "green","italic": true}]
 
+execute store result score sc rng1 if entity @e[tag=SEAmob]
+execute as @e[tag=SEAmob] at @s run particle end_rod ~ ~ ~ 0 50 0 0 100 force @s
+tellraw @s [{"text":" SEAmob Count = ","color":"white","italic": false},{"score":{"name":"sc","objective":"rng1"},"color": "green","italic": true}]
+
+
 scoreboard players set sc rng1 0
 execute unless block 90062 103 135 grindstone if entity @a[tag=SEAPT] run tellraw @s [{"text":" 第1章总控事件前置条件满足","color":"white","italic": false}]
 execute unless block 90062 103 135 grindstone if entity @a[tag=SEAPT] run scoreboard players add sc rng1 1
@@ -45,3 +50,7 @@ tag @a remove SEAprint_temp
 execute if block 90075 103 141 minecraft:cauldron as @a[tag=SEAPT] at @s unless items entity @s container.* shears unless items entity @s weapon.* shears run tag @s add SEAprint_temp
 tellraw @s [{"text":"◇ 玩家道具检测：","color":"white","bold": true},{"selector":"@a[tag=SEAPT,tag=SEAprint_temp]","color":"white"},{"text":"没有武器“喷火器”","color":"white"}]
 tag @a remove SEAprint_temp
+
+
+
+
