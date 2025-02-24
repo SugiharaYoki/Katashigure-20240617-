@@ -56,7 +56,7 @@ run function skyblock:sea/e/ch5/mem_4
 #execute if score sea_ch5_instant_freeze sea_4temp3 matches 1.. run function skyblock:sea/e/ch5/mem_4
 
 execute as @a[tag=SEAPT,tag=!e_i_40] at @s if block ~ ~-0.5 ~ packed_ice run function skyblock:sea/e/ch5/instant_freeze_on_thin_ice
-execute if score sea_ch5_instant_freeze sea_4temp4 matches 1..50 run function skyblock:sea/e/ch5/instant_freeze_magma_boss
+execute if score sea_ch5_instant_freeze sea_4temp4 matches 1..55 run function skyblock:sea/e/ch5/instant_freeze_magma_boss
 
 execute if block 90105 102 33 bamboo_button[powered=true] run fill 90105 103 34 90106 101 34 air
 
@@ -103,10 +103,74 @@ execute positioned 90112 149 103 if score sea_ch5_mood sea_4temp1 matches 1..20 
 
 
 
+execute if score SEA_ch5_event_engineering_fiona rng1 matches 0 positioned 90138 122 68 if entity @a[tag=SEAPT,tag=!SEAPF,distance=0..5] run scoreboard players set SEA_ch5_event_engineering_fiona rng1 1
+
+execute if score SEA_ch5_event_engineering_fiona rng1 matches 1..832 run function skyblock:sea/e/ch5/event_engineering_meeting_fiona
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 1.. run function skyblock:sea/e/ch5/event_engineering_meeting_fiona_the_exchange
+
+#菲尔娜技能组
+execute as @n[tag=SEAfiona_laser_attacking,x=90000,y=100,z=0,distance=0..1200] at @s run function skyblock:sea/e/ch5/fiona_attack_laser
+execute as @n[tag=SEAfiona_laser_attacking_hostile,x=90000,y=100,z=0,distance=0..1200] at @s run function skyblock:sea/e/ch5/fiona_attack_laser_hostile
+execute as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] run effect give @s regeneration 5 5 true
 
 
 
+#工程区中心环路
+execute if block 90129 123 36 minecraft:crimson_button[powered=true] run scoreboard players add SEA_ch5_event_engineering_roadways rng7 1
+execute if score SEA_ch5_event_engineering_roadways rng7 matches 1 run fill 90127 122 37 90125 122 37 air
+execute if score SEA_ch5_event_engineering_roadways rng7 matches 2 run fill 90127 123 37 90125 123 37 air
+execute if score SEA_ch5_event_engineering_roadways rng7 matches 1..2 run playsound minecraft:block.iron_door.open ambient @a 90126 124 37 4 0.3
+execute if block 90133 123 49 minecraft:crimson_button[powered=true] run scoreboard players add SEA_ch5_event_engineering_roadways rng8 1
+execute if score SEA_ch5_event_engineering_roadways rng8 matches 1 run fill 90131 122 45 90131 122 42 air
+execute if score SEA_ch5_event_engineering_roadways rng8 matches 2 run fill 90131 123 45 90131 123 42 air
+execute if score SEA_ch5_event_engineering_roadways rng8 matches 1..2 run playsound minecraft:block.iron_door.open ambient @a 90131.56 124.99 44.06 4 0.3
 
 
 
+#工程区密码1
+execute if block 90107 124 27 lever[powered=false] \
+ if block 90106 124 27 lever[powered=false] \
+  if block 90105 124 27 lever[powered=true] \
+   if block 90104 124 27 lever[powered=false] \
+    if block 90107 123 27 lever[powered=true] \
+     if block 90106 123 27 lever[powered=false] \
+      if block 90105 123 27 lever[powered=true] \
+       if block 90104 123 27 lever[powered=false] if block 90105 122 25 air \
+positioned 90105 122 25 run function skyblock:sea/e/ch5/compare_1
+#工程区密码2
+execute if block 90130 124 32 lever[powered=true] \
+ if block 90129 124 32 lever[powered=false] \
+  if block 90130 123 32 lever[powered=false] \
+       if block 90129 123 32 lever[powered=true] if block 90130 122 34 air \
+positioned 90130 122 34 run function skyblock:sea/e/ch5/compare_2
+
+#东北支柱大铁门
+execute if block 90136 96 29 lever[powered=true] run scoreboard players add SEA_ch5_event_engineering_roadways rng1 1
+execute if score SEA_ch5_event_engineering_roadways rng1 matches 1 run fill 90135 96 29 90135 96 25 air
+execute if score SEA_ch5_event_engineering_roadways rng1 matches 2 run fill 90135 97 29 90135 97 25 air
+execute if score SEA_ch5_event_engineering_roadways rng1 matches 1..2 run playsound minecraft:block.iron_door.open ambient @a 90135 98 27 4 0.3
+
+#东北支柱小铁门
+execute if block 90139 115 31 minecraft:crimson_button[powered=true] run scoreboard players add SEA_ch5_event_engineering_roadways rng2 1
+execute if score SEA_ch5_event_engineering_roadways rng2 matches 1 run fill 90138 114 33 90135 114 33 air
+execute if score SEA_ch5_event_engineering_roadways rng2 matches 2 run fill 90138 115 33 90135 115 33 air
+execute if score SEA_ch5_event_engineering_roadways rng2 matches 1 run fill 90135 114 30 90135 114 32 air
+execute if score SEA_ch5_event_engineering_roadways rng2 matches 2 run fill 90135 115 30 90135 115 32 air
+execute if score SEA_ch5_event_engineering_roadways rng2 matches 1..2 run playsound minecraft:block.iron_door.open ambient @a 90135 116 33 4 0.3
+
+
+execute if block 90144 123 52 minecraft:crimson_button[powered=true] run scoreboard players add SEA_ch5_event_engineering_roadways rng3 1
+execute if score SEA_ch5_event_engineering_roadways rng3 matches 1 run fill 90145 123 54 90145 123 55 air
+execute if score SEA_ch5_event_engineering_roadways rng3 matches 1 run playsound minecraft:block.iron_door.open ambient @a 90145 123 55.0 4 0.3
+
+#记忆密码5
+execute if block 90138 107 21 lever[powered=false] \
+ if block 90137 107 21 lever[powered=true] \
+ if block 90136 107 21 lever[powered=false] \
+ if block 90138 106 21 lever[powered=true] \
+ if block 90137 106 21 lever[powered=true] \
+ if block 90136 106 21 lever[powered=true] \
+ if block 90137 105 21 lever[powered=true] \
+ if block 90137 104 21 lever[powered=true] positioned 90140 105 22 unless block ~ ~ ~ air \
+run function skyblock:sea/e/ch5/mem_5
 

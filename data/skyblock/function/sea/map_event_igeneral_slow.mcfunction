@@ -109,6 +109,7 @@ lore=['{"text":"010?1","color":"white","italic":false}']]
 item replace block 90104 155 151 container.13 with trial_key[custom_name='{"text":"副宿舍楼2F - 个人储藏柜2B的钥匙","italic":true,"color":"yellow","italic":false}',\
 lore=['{"text":"没错，就是最中间那个，别多想了！","color":"white","italic":false}']]
 item replace block 90173 6 104 container.13 with trial_key[custom_name='{"text":"冷凝系统 - 休息区2F钥匙","italic":true,"color":"yellow","italic":false}']
+item replace block 90140 104 23 container.13 with ominous_trial_key[custom_name='{"text":"厄珀娅之钥","italic":true,"color":"dark_red","italic":false}']
 
 #法莫洛斯：医务部门 总管 - 死亡：被感染成为腐尸，第一章结尾被主角杀死 - 路加福音
 #玛瑞莲：机械研发部门 贝塔小组 组长 - 伪福音犹大福音
@@ -207,7 +208,7 @@ lore=['{"text":"这座钻井平台的内部结构被改变了。","color":"white
 
 item replace block 90135 115 249 container.14 with flow_banner_pattern[custom_data={sea_doc19b:true},custom_name=\
 '{"text":"建材资源平台的笔记 - 史丹尼舵长","italic":true,"color":"dark_purple","italic":false}',\
-lore=['{"text":"本以为远离那群暴民我就能活下来……没想到还是被算计了呢。","color":"white","italic":false}','{"text":"不愧是我的女儿，我终究甘拜下风。","color":"white","italic":false}','{"text":"这座附属平台早已不是最佳避难场所。","color":"white","italic":false}','{"text":"那群尸变体根本不是威胁的根源，从地底渗透上来的细菌才是。","color":"white","italic":false}','{"text":"诺曼说的没错，我们所有人打从一开始就被感染了。","color":"white","italic":false}','{"text":"受伤也只是加速了尸变的速度……","color":"white","italic":false}','{"text":"这下，我算是受了致命伤吧。会先死去，还是会成为怪物？","color":"white","italic":false}','{"text":"唉，我的菲尔娜……我这也能算作是赎罪吗？","color":"white","italic":false}']]
+lore=['{"text":"本以为远离那群暴民我就能活下来……没想到还是被算计了呢。","color":"white","italic":false}','{"text":"不愧是我的女儿，我终究甘拜下风。","color":"white","italic":false}','{"text":"这座附属平台早已不是最佳避难场所。","color":"white","italic":false}','{"text":"那群尸变体根本不是威胁的根源，从地底渗透上来的细菌才是。","color":"white","italic":false}','{"text":"诺曼说的没错，我们所有人打从一开始就被感染了。","color":"white","italic":false}','{"text":"受伤也只是加速了尸变的过程……","color":"white","italic":false}','{"text":"这下，我算是受了致命伤吧。会先死去，还是会成为怪物？","color":"white","italic":false}','{"text":"唉，我的菲尔娜……我这也能算作是赎罪吗？","color":"white","italic":false}']]
 
 item replace block 90080 153 147 container.14 with flow_banner_pattern[custom_data={sea_doc20b:true},custom_name=\
 '{"text":"医务中心的笔记 - 丹尼尔","italic":true,"color":"dark_purple","italic":false}',\

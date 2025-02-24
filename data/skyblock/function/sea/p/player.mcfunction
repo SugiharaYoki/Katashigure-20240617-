@@ -41,11 +41,12 @@ tag @s remove PVP_see
 effect give @s[tag=SEAPT_storymode] strength 30 1 true
 effect give @s[tag=SEAPT_storymode] resistance 30 1 true
 
-
+scoreboard players enable @s sea_crafter
 
 execute as @s[scores={sea_crafter=1}] at @s run function skyblock:sea/shop_reader
 execute as @s[scores={sea_crafter=10000..19999}] at @s if entity @n[tag=SEAcrafter,distance=0..5] run function skyblock:sea/shop_purchase
 execute as @s[scores={sea_crafter=30000..39999}] at @s if entity @n[tag=SEAcrafter,distance=0..5] run function skyblock:sea/shop_purchase
+execute as @s[scores={sea_crafter=90000..99999}] at @s run function skyblock:sea/shop_purchase
 execute as @s[tag=seaPerm000,scores={sea_crafter=20000,SEAPT_mode=1..2}] at @s if entity @n[tag=SEAcrafter,distance=0..5] run function skyblock:sea/shop_enchant
 execute as @s[scores={sea_crafter=30000}] at @s if entity @n[tag=SEAcrafter,distance=0..5] run function skyblock:sea/shop_tp
 execute as @s[tag=seaPerm000,scores={sea_crafter=20001..29999}] at @s if entity @n[tag=SEAcrafter,distance=0..5] run function skyblock:sea/shop_purchase

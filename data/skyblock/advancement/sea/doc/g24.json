@@ -1,13 +1,13 @@
 {
     "display": {
         "title": {
-            "text": "炽烈球体创造者",
+            "text": "边缘行者",
             "color": "aqua",
             "bold": true,
             "italic": false
         },
         "description": {
-            "text": "获得喷火器。\n“虽然用它不能真的将腐尸烧成炽烈球体……”\n“什么？你说那反而是好事？”",
+            "text": "在第一章获得定时炸弹。\n“你一定是见过史丹尼舵长了。”",
             "color": "gray"
         },
         "icon": {
@@ -23,5 +23,5 @@
             "trigger": "minecraft:impossible"
         }
     },
-    "parent": "skyblock:sea/doc/g12"
+    "parent": "skyblock:sea/doc/g23"
 }

@@ -26,6 +26,7 @@ summon minecraft:interaction 90121 123.3 52 {CustomName:'[{"text":"多功能工�
 summon minecraft:marker 90121 122 51 {Tags:["SEAcrafter_tp","SEAcrafter_tp16"]}
 
 summon minecraft:interaction 90130 123.3 48 {CustomName:'[{"text":"器械式治疗仪"}]',Tags:["SEAaidbox"]}
+summon minecraft:interaction 90107 123.3 38 {CustomName:'[{"text":"器械式治疗仪"}]',Tags:["SEAaidbox"]}
 
 fill 90114 91 96 90112 89 96 minecraft:air
 
@@ -39,18 +40,6 @@ setblock 90134 157 124 minecraft:spore_blossom
 setblock 90135 146 120 minecraft:spore_blossom
 
 fill 90105 104 52 90106 101 52 minecraft:air
-
-#工程区
-fill 90127 121 42 90122 121 41 minecraft:iron_trapdoor[half=top]
-setblock 90119 122 52 chest[facing=north]
-setblock 90130 122 46 minecraft:potted_azure_bluet
-fill 90106 124 49 90104 122 49 iron_block
-fill 90099 122 53 90101 122 53 minecraft:redstone_block
-fill 90099 122 53 90101 122 53 minecraft:air
-setblock 90103 122 52 chest[facing=east]
-item replace block 90103 122 52 container.12 with flint
-item replace block 90103 122 52 container.14 with flint
-
 
 
 
@@ -250,6 +239,23 @@ execute positioned 90124 161 147 run function skyblock:sea/m/unique/special_mars
 
 scoreboard players set SEA_ch5_event_EnteringPillar2 rng1 0
 scoreboard players set SEA_ch5_event_EnteringPillar2 rng2 0
+scoreboard players set SEA_ch5_event_engineering_roadways rng1 0
+scoreboard players set SEA_ch5_event_engineering_roadways rng2 0
+scoreboard players set SEA_ch5_event_engineering_roadways rng3 0
+scoreboard players set SEA_ch5_event_engineering_roadways rng7 0
+scoreboard players set SEA_ch5_event_engineering_roadways rng8 0
+scoreboard players set SEA_ch5_event_engineering_fiona rng1 0
+scoreboard players set SEA_ch5_event_engineering_fiona rng2 0
+scoreboard players set SEA_ch5_event_engineering_fiona rng3 0
+scoreboard players set SEA_ch5_event_engineering_fiona rng7 0
+scoreboard players set SEA_ch5_event_engineering_fiona rng8 0
+scoreboard players set SEA_ch5_event_engineering_fiona rng9 0
+scoreboard players set SEA_ch5_event_engineering_fiona rng10 0
+scoreboard players set SEA_ch5_event_engineering_fiona sea_4temp2 0
+scoreboard players set SEA_ch5_event_engineering_fiona sea_4temp3 0
+scoreboard players set SEA_ch5_event_engineering_fiona sea_4temp4 0
+scoreboard players set SEA_ch5_event_engineering_fiona sea_4temp5 0
+
 fill 90105 93 57 90105 94 57 minecraft:magma_block
 fill 90109 102 54 90109 103 54 minecraft:magma_block
 fill 90109 114 41 90110 114 42 waxed_copper_grate
@@ -311,6 +317,99 @@ fill 90100 73 67 90099 71 67 iron_bars
 
 #防卡关
 fill 90127 130 102 90127 129 102 air
+
+
+
+
+
+#工程区
+fill 90127 121 42 90122 121 41 minecraft:iron_trapdoor[half=top]
+setblock 90119 122 52 chest[facing=north]
+setblock 90130 122 46 minecraft:potted_azure_bluet
+fill 90106 124 49 90104 122 49 iron_block
+fill 90099 122 53 90101 122 53 minecraft:redstone_block
+fill 90099 122 53 90101 122 53 minecraft:air
+setblock 90103 122 52 chest[facing=east]
+item replace block 90103 122 52 container.12 with flint
+item replace block 90103 122 52 container.14 with flint
+
+setblock 90137 123 53 lever[facing=west,face=floor]
+setblock 90137 122 58 chest[facing=west]
+item replace block 90137 122 58 container.12 with gunpowder
+item replace block 90137 122 58 container.14 with gunpowder
+
+setblock 90132 125 51 chest[facing=south]
+item replace block 90132 125 51 container.13 with emerald 5
+fill 90108 124 34 90108 122 36 iron_block
+
+fill 90125 122 37 90127 123 37 minecraft:iron_bars
+setblock 90129 123 36 minecraft:crimson_button[face=floor,facing=south]
+
+fill 90131 123 45 90131 122 42 iron_bars
+setblock 90133 123 49 minecraft:crimson_button[face=floor,facing=south]
+
+setblock 90100 125 37 minecraft:waxed_exposed_copper_bulb[lit=false]
+execute positioned 90117 122 42 run function skyblock:sea/m/drone
+setblock 90137 122 39 minecraft:furnace[facing=west]
+setblock 90117 77 34 minecraft:furnace[facing=north]
+
+setblock 90136 96 29 lever[facing=north]
+
+fill 90135 96 29 90135 97 25 iron_block
+
+fill 90138 114 33 90135 114 33 iron_block
+fill 90138 115 33 90135 115 33 iron_block
+fill 90135 114 30 90135 114 32 iron_block
+fill 90135 115 30 90135 115 32 iron_block
+
+
+setblock 90139 114 32 air
+setblock 90139 114 32 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 2, id:"minecraft:gunpowder"}}
+setblock 90142 95 24 air
+setblock 90142 95 24 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 2, id:"minecraft:golden_carrot"}}
+setblock 90139 122 56 air
+setblock 90139 122 56 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:flint"}}
+setblock 90149 122 43 air
+setblock 90149 122 43 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:flint"}}
+
+fill 90145 123 54 90145 123 55 iron_bars
+
+
+
+
+#compare
+fill 90107 124 27 90104 123 27 lever[facing=north]
+fill 90105 122 25 90106 122 25 air
+fill 90129 124 32 90130 123 32 lever[facing=south]
+setblock 90130 122 34 air
+
+setblock 90100 123 23 minecraft:potted_azalea_bush
+setblock 90109 123 23 minecraft:potted_azalea_bush
+fill 90113 124 23 90111 124 23 barrel[facing=north]
+setblock 90111 122 19 chest[facing=south]
+item replace block 90111 122 19 container.12 with beef 2
+item replace block 90111 122 19 container.14 with bread 3
+item replace block 90112 124 23 container.13 with bread 2
+
+setblock 90137 122 40 chest[facing=west]
+item replace block 90137 122 40 container.13 with coal 1
+
+
+summon painting 90105 124 19 {Facing:2b,variant:"minecraft:skull_and_roses"}
+
+fill 90138 107 21 90136 106 21 lever[facing=north]
+fill 90137 105 21 90137 104 21 lever[facing=north]
+fill 90140 106 22 90140 104 22 minecraft:waxed_copper_grate
+
+setblock 90140 104 23 chest[facing=north]
+item replace block 90140 104 23 container.11 with echo_shard 2
+item replace block 90140 104 23 container.15 with iron_ingot 2
+
+setblock 90097 132 99 chest[facing=south]{Lock:"厄珀娅之钥"}
+item replace block 90140 104 23 container.4 with amethyst_shard 1
+item replace block 90140 104 23 container.12 with amethyst_shard 1
+item replace block 90140 104 23 container.14 with amethyst_shard 1
+item replace block 90140 104 23 container.22 with amethyst_shard 1
 
 
 

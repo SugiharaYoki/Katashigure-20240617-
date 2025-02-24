@@ -1,5 +1,5 @@
-execute as @s[scores={sea_4temp2=6002..6950}] at @n[tag=SEAframauros] if entity @a[tag=SEAPT,distance=0.1..5] run scoreboard players add @n[tag=sc] sea_4temp2 1
-execute as @s[scores={sea_4temp2=6000..6001}] run scoreboard players add @n[tag=sc] sea_4temp2 1
+execute as @s[scores={sea_4temp2=6002..6950}] run scoreboard players add @n[tag=sc] sea_4temp2 1
+
 
 execute as @s[scores={sea_4temp2=6002}] run fill 90094 124 107 90094 122 107 air destroy
 execute as @s[scores={sea_4temp2=6002}] run fill 90093 124 107 90093 122 107 air destroy
@@ -9,14 +9,14 @@ execute as @s[scores={sea_4temp2=6002}] run fill 90093 124 102 90093 122 102 air
 execute as @s[scores={sea_4temp2=6002}] run fill 90092 124 102 90092 122 102 air destroy
 execute as @s[scores={sea_4temp2=6002}] run fill 90087 122 105 90087 124 104 air destroy
 execute as @s[scores={sea_4temp2=6001}] positioned 90073 122 122 run function skyblock:sea/m/unique/npc_framauros
-execute as @s[scores={sea_4temp2=6003..}] as @n[tag=SEAframauros] at @s run tp @s ~ ~ ~ facing entity @p
-execute as @s[scores={sea_4temp2=6003}] positioned 90074.0 129 109.0 run stopsound @a[distance=0..500] music
-execute as @s[scores={sea_4temp2=6003}] at @n[tag=SEAframauros] run playsound entity.villager.ambient neutral @a ~ ~ ~ 0.8 0.7
-execute as @s[scores={sea_4temp2=6003}] at @n[tag=SEAframauros] run tellraw @a[tag=SEAPT,distance=0.1..35] [{"text":"法莫洛斯：","color":"green","bold": true},{"text":"\n“……活着的人。”","color":"white","bold": false}]
-execute as @s[scores={sea_4temp2=6003}] at @n[tag=SEAframauros] run give @a[tag=SEAPT] mojang_banner_pattern[custom_data={sea_docg08:true}]
+execute as @s[scores={sea_4temp2=6004..}] as @n[tag=SEAframauros] at @s run tp @s ~ ~ ~ facing entity @p
+execute as @s[scores={sea_4temp2=6004}] positioned 90074.0 129 109.0 run stopsound @a[distance=0..500] music
+execute as @s[scores={sea_4temp2=6004}] at @n[tag=SEAframauros] run playsound entity.villager.ambient neutral @a ~ ~ ~ 0.8 0.7
+execute as @s[scores={sea_4temp2=6004}] at @n[tag=SEAframauros] run tellraw @a[tag=SEAPT,distance=0.1..35] [{"text":"法莫洛斯：","color":"green","bold": true},{"text":"\n“……活着的人。”","color":"white","bold": false}]
+execute as @s[scores={sea_4temp2=6004}] at @n[tag=SEAframauros] run give @a[tag=SEAPT] mojang_banner_pattern[custom_data={sea_docg08:true}]
 
-execute as @s[scores={sea_4temp2=6003..6332}] positioned 90122 128 131 as @p[tag=SEAPT,nbt={SelectedItem:{id:"minecraft:spyglass"}},scores={sea_progress=3..}] unless entity @a[tag=SEAPT,scores={sea_progress=..2}] at @s run tellraw @a[tag=SEAPT] [{"selector":"@s","color":"white"},{"text":"：「跳过了剧情」","color":"white"}]
-execute as @s[scores={sea_4temp2=6003..6332}] positioned 90122 128 131 if entity @p[tag=SEAPT,nbt={SelectedItem:{id:"minecraft:spyglass"}},scores={sea_progress=3..}] unless entity @a[tag=SEAPT,scores={sea_progress=..2}] run scoreboard players set @n[tag=sc] sea_4temp2 6333
+execute as @s[scores={sea_4temp2=6004..6332}] positioned 90122 128 131 as @p[tag=SEAPT,nbt={SelectedItem:{id:"minecraft:spyglass"}},scores={sea_progress=3..}] unless entity @a[tag=SEAPT,scores={sea_progress=..2}] at @s run tellraw @a[tag=SEAPT] [{"selector":"@s","color":"white"},{"text":"：「跳过了剧情」","color":"white"}]
+execute as @s[scores={sea_4temp2=6004..6332}] positioned 90122 128 131 if entity @p[tag=SEAPT,nbt={SelectedItem:{id:"minecraft:spyglass"}},scores={sea_progress=3..}] unless entity @a[tag=SEAPT,scores={sea_progress=..2}] run scoreboard players set @n[tag=sc] sea_4temp2 6333
 
 execute as @s[scores={sea_4temp2=6037}] at @n[tag=SEAframauros] run playsound entity.villager.ambient neutral @a ~ ~ ~ 0.8 0.7
 execute as @s[scores={sea_4temp2=6037}] at @n[tag=SEAframauros] run tellraw @a[tag=SEAPT,distance=0.1..35] [{"text":"法莫洛斯：","color":"green","bold": true},{"text":"\n“太好了……终于有人来，代替我救他们了……”","color":"white","bold": false}]
