@@ -264,7 +264,7 @@ execute if score stageSeconds Azr_system matches 116 if score playerCount Azr_sy
 execute if score stageSeconds Azr_system matches 119 if score playerCount Azr_system matches 4.. run summon skeleton -79895 38 48 {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_skeleton_tier1",Health:6.0f,CustomName:'"骷髅射手"',CanPickUpLoot:0b,HandItems:[{count:1,id:"bow",components:{custom_name:'{"text":"弓·传统","italic":false,"color":"white"}'}},{}],HandDropChances:[0.003f,0.003f],ArmorItems:[{},{},{},{}],attributes:[{id:"generic.max_health",base:18.0d},{id:"generic.attack_damage",base:1.0d}]}
 execute if score stageSeconds Azr_system matches 122 if score playerCount Azr_system matches 3.. run summon skeleton -79887 38 61 {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_skeleton_tier1",Health:6.0f,CustomName:'"骷髅射手"',CanPickUpLoot:0b,HandItems:[{count:1,id:"bow",components:{custom_name:'{"text":"弓·传统","italic":false,"color":"white"}'}},{}],HandDropChances:[0.003f,0.003f],ArmorItems:[{},{},{},{}],attributes:[{id:"generic.max_health",base:18.0d},{id:"generic.attack_damage",base:1.0d}]}
 
-execute if score stageSeconds Azr_system matches 160 if entity @a[tag=azrPlayer,scores={Azr_skillPoints=..12}] run scoreboard players set stageSeconds Azr_system 323
+execute if score stageSeconds Azr_system matches 160 if entity @a[tag=azrPlayer,scores={Azr_skillPoints=..12}] run scoreboard players set stageSeconds Azr_system 333
 
 execute if score stageSeconds Azr_system matches 161 run setblock -79898 41 54 air destroy
 execute if score stageSeconds Azr_system matches 161 run title @a[tag=azrPlayer] actionbar {"text":"3","color":"red"}
