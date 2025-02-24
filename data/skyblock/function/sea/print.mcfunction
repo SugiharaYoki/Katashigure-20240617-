@@ -9,7 +9,7 @@ execute store result score sc rng1 if entity @e[tag=SEAfiona]
 execute if entity @n[tag=SEAfiona] run tellraw @s [{"text":" 检测到NPC“菲尔娜” 数量 = ","color":"white","italic": false},{"score":{"name":"sc","objective":"rng1"},"color": "green","italic": true}]
 
 execute store result score sc rng1 if entity @e[tag=SEAmob]
-execute as @e[tag=SEAmob] at @s run particle end_rod ~ ~ ~ 0 50 0 0 100 force @s
+execute at @e[tag=SEAmob] run particle end_rod ~ ~ ~ 0 50 0 0 100 force @s
 tellraw @s [{"text":" SEAmob Count = ","color":"white","italic": false},{"score":{"name":"sc","objective":"rng1"},"color": "green","italic": true}]
 
 
