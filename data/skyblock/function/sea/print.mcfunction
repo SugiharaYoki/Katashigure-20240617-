@@ -33,22 +33,22 @@ tellraw @s [{"text":" 临时值.07 = ","color":"white","italic": false},{"score"
 tellraw @s [{"text":" 临时值.10 = ","color":"white","italic": false},{"score":{"name":"@n[tag=sc]","objective":"sea_4temp10"},"color": "green","italic": true},{"text":" | 临时值.11 = ","color":"white","italic": false},{"score":{"name":"@n[tag=sc]","objective":"sea_4temp11"},"color": "green","italic": true},{"text":" | 临时值.12 = ","color":"white","italic": false},{"score":{"name":"@n[tag=sc]","objective":"sea_4temp12"},"color": "green","italic": true}]
 
 execute as @a[tag=SEAPT] at @s unless items entity @s container.* spyglass unless items entity @s weapon.* spyglass run tag @s add SEAprint_temp
-tellraw @s [{"text":"◇ 玩家道具检测：","color":"white","bold": true},{"selector":"@a[tag=SEAPT,tag=SEAprint_temp]","color":"white"},{"text":"没有望远镜","color":"white"}]
+execute if entity @a[tag=SEAprint_temp] run tellraw @s [{"text":"◇ 玩家道具检测：","color":"white","bold": true},{"selector":"@a[tag=SEAPT,tag=SEAprint_temp]","color":"white"},{"text":"没有望远镜","color":"white"}]
 tag @a remove SEAprint_temp
 execute as @a[tag=SEAPT] at @s unless items entity @s container.* iron_hoe unless items entity @s weapon.* iron_hoe run tag @s add SEAprint_temp
-tellraw @s [{"text":"◇ 玩家道具检测：","color":"white","bold": true},{"selector":"@a[tag=SEAPT,tag=SEAprint_temp]","color":"white"},{"text":"没有武器“撬棍”","color":"white"}]
+execute if entity @a[tag=SEAprint_temp] run tellraw @s [{"text":"◇ 玩家道具检测：","color":"white","bold": true},{"selector":"@a[tag=SEAPT,tag=SEAprint_temp]","color":"white"},{"text":"没有武器“撬棍”","color":"white"}]
 tag @a remove SEAprint_temp
 execute as @a[tag=SEAPT] at @s unless items entity @s container.* iron_axe unless items entity @s weapon.* iron_axe run tag @s add SEAprint_temp
-tellraw @s [{"text":"◇ 玩家道具检测：","color":"white","bold": true},{"selector":"@a[tag=SEAPT,tag=SEAprint_temp]","color":"white"},{"text":"没有武器“消防斧”","color":"white"}]
+execute if entity @a[tag=SEAprint_temp] run tellraw @s [{"text":"◇ 玩家道具检测：","color":"white","bold": true},{"selector":"@a[tag=SEAPT,tag=SEAprint_temp]","color":"white"},{"text":"没有武器“消防斧”","color":"white"}]
 tag @a remove SEAprint_temp
 execute if block 90062 103 135 grindstone as @a[tag=SEAPT] at @s unless items entity @s container.* crossbow unless items entity @s weapon.* crossbow unless items entity @s container.* bow unless items entity @s weapon.* bow run tag @s add SEAprint_temp
-tellraw @s [{"text":"◇ 玩家道具检测：","color":"white","bold": true},{"selector":"@a[tag=SEAPT,tag=SEAprint_temp]","color":"white"},{"text":"没有弓类武器","color":"white"}]
+execute if entity @a[tag=SEAprint_temp] run tellraw @s [{"text":"◇ 玩家道具检测：","color":"white","bold": true},{"selector":"@a[tag=SEAPT,tag=SEAprint_temp]","color":"white"},{"text":"没有弓类武器","color":"white"}]
 tag @a remove SEAprint_temp
 execute if block 90075 103 141 minecraft:cauldron as @a[tag=SEAPT] at @s unless items entity @s container.* music_disc_5 unless items entity @s weapon.* music_disc_5 run tag @s add SEAprint_temp
-tellraw @s [{"text":"◇ 玩家道具检测：","color":"white","bold": true},{"selector":"@a[tag=SEAPT,tag=SEAprint_temp]","color":"white"},{"text":"没有武器“磁锯发射装置”","color":"white"}]
+execute if entity @a[tag=SEAprint_temp] run tellraw @s [{"text":"◇ 玩家道具检测：","color":"white","bold": true},{"selector":"@a[tag=SEAPT,tag=SEAprint_temp]","color":"white"},{"text":"没有武器“磁锯发射装置”","color":"white"}]
 tag @a remove SEAprint_temp
 execute if block 90075 103 141 minecraft:cauldron as @a[tag=SEAPT] at @s unless items entity @s container.* shears unless items entity @s weapon.* shears run tag @s add SEAprint_temp
-tellraw @s [{"text":"◇ 玩家道具检测：","color":"white","bold": true},{"selector":"@a[tag=SEAPT,tag=SEAprint_temp]","color":"white"},{"text":"没有武器“喷火器”","color":"white"}]
+execute if entity @a[tag=SEAprint_temp] run tellraw @s [{"text":"◇ 玩家道具检测：","color":"white","bold": true},{"selector":"@a[tag=SEAPT,tag=SEAprint_temp]","color":"white"},{"text":"没有武器“喷火器”","color":"white"}]
 tag @a remove SEAprint_temp
 
 
