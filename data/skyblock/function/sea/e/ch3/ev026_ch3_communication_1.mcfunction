@@ -47,7 +47,7 @@ execute as @s[tag=sc,scores={sea_4temp2=266}] positioned 90133 137 108 as @p[tag
  run tellraw @a[distance=0..50] [{"text":"玛瑞莲：","color":"dark_purple","bold": true},{"text":"\n“不瞒你们讲，希望确实很渺茫。\n但再怎么说，虽然钻井平台上绝大多数火器都失效了，他们也还是临时制造了一些强力武器。”","color":"white","bold": false}]
 
 execute as @s[tag=sc,scores={sea_4temp2=288}] positioned 90133 137 108 as @p[tag=SEAPT] if entity @n[tag=sc,scores={sea_player=1..}] \
- run tellraw @a[distance=0..50] [{"text":"玛瑞莲：","color":"dark_purple","bold": true},{"text":"\n“似乎就连磁锯切割装置都被他们进行了改装。听说也有喷火枪被藏在了这附近的小仓库。\n有空的话，不妨去物色一下新武器？”","color":"white","bold": false}]
+ run tellraw @a[distance=0..50] [{"text":"玛瑞莲：","color":"dark_purple","bold": true},{"text":"\n“似乎就连磁锯切割装置都被他们进行了改装。听说也有喷火器被藏在了这附近的小仓库。\n有空的话，不妨去物色一下新武器？”","color":"white","bold": false}]
 
  execute as @s[tag=sc,scores={sea_4temp2=304}] positioned 90133 137 108 as @p[tag=SEAPT] if entity @n[tag=sc,scores={sea_player=1}] \
  run tellraw @a[distance=0..50] [{"selector":"@s","color":"white"},{"text":"：我明白了，我会多加留意的。","color":"white"}]
