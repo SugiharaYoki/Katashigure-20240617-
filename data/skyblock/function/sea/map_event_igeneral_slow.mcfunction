@@ -208,7 +208,7 @@ lore=['{"text":"这座钻井平台的内部结构被改变了。","color":"white
 
 item replace block 90135 115 249 container.14 with flow_banner_pattern[custom_data={sea_doc19b:true},custom_name=\
 '{"text":"建材资源平台的笔记 - 史丹尼舵长","italic":true,"color":"dark_purple","italic":false}',\
-lore=['{"text":"本以为远离那群暴民我就能活下来……没想到还是被算计了呢。","color":"white","italic":false}','{"text":"不愧是我的女儿，我终究甘拜下风。","color":"white","italic":false}','{"text":"这座附属平台早已不是最佳避难场所。","color":"white","italic":false}','{"text":"那群尸变体根本不是威胁的根源，从地底渗透上来的细菌才是。","color":"white","italic":false}','{"text":"诺曼说的没错，我们所有人打从一开始就被感染了。","color":"white","italic":false}','{"text":"受伤也只是加速了尸变的速度……","color":"white","italic":false}','{"text":"这下，我算是受了致命伤吧。会先死去，还是会成为怪物？","color":"white","italic":false}','{"text":"唉，我的菲尔娜……我这也能算作是赎罪吗？","color":"white","italic":false}']]
+lore=['{"text":"本以为远离那群暴民我就能活下来……没想到还是被算计了呢。","color":"white","italic":false}','{"text":"不愧是我的女儿，我终究甘拜下风。","color":"white","italic":false}','{"text":"这座附属平台早已不是最佳避难场所。","color":"white","italic":false}','{"text":"那群尸变体根本不是威胁的根源，从地底渗透上来的细菌才是。","color":"white","italic":false}','{"text":"诺曼说的没错，我们所有人打从一开始就被感染了。","color":"white","italic":false}','{"text":"受伤也只是加速了尸变的过程……","color":"white","italic":false}','{"text":"这下，我算是受了致命伤吧。会先死去，还是会成为怪物？","color":"white","italic":false}','{"text":"唉，我的菲尔娜……我这也能算作是赎罪吗？","color":"white","italic":false}']]
 
 item replace block 90080 153 147 container.14 with flow_banner_pattern[custom_data={sea_doc20b:true},custom_name=\
 '{"text":"医务中心的笔记 - 丹尼尔","italic":true,"color":"dark_purple","italic":false}',\
