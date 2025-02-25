@@ -11,7 +11,7 @@ function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"旅行家"', title
 function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"旅行家"', title:'"纺礼「陨铁甲胄」"', description:'"钻石铠×1 100%击退抗性 但是防御力较低"', id: 003}
 function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"湖灯使者"', title:'"湖灯「雷厄渡水」"', description:'"三叉戟×3、特殊模板\\\\n副手手持模板时，距离自己最近的落地三叉戟\\\\n将被转换为“雷祸”三叉戟，并自毁"', id: 004}
 function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"湖灯使者"', title:'"雷祸「天愠引庸」"', description:'"盾牌×3、特殊模板\\\\n放置于背包时，使用盾牌防御成功将在身旁降下天雷\\\\n且自身获得2秒无敌\\\\n将会失去一个盾牌"', id: 030}
-function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"湖灯使者"', title:'"判钉「畏光迫罪」"', description:'"特殊模板\\\\n放置于背包时，成功对敌人造成伤害后，在5格内的敌人头顶召唤石笋\\\\n此效果2秒最多触发一次，且要求对象头顶至少5格都是空气\\\\n如果对象露天，则15%概率在高空生成雷罚之戟"', id: 031}
+function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"湖灯使者"', title:'"判钉「畏光迫罪」"', description:'"特殊模板\\\\n放置于背包时，成功对敌人造成伤害后，在5格内的敌人头顶召唤石笋\\\\n此效果3秒最多触发一次，且要求对象头顶至少5格都是空气\\\\n如果对象露天，则15%概率在高空生成雷罚之戟"', id: 031}
 function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"影猎手"', title:'"猎夜「彻锋戮影」"', description:'"高速移动靴×1 略微减少生命值"', id: 005}
 function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"影猎手"', title:'"袖剑「初绽轮月」"', description:'"慢充能高攻击剑×1"', id: 006}
 function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"影猎手"', title:'"夜城「刺客尊荣」"', description:'"特殊模板 放置于背包时5格内隐身玩家显形"', id: 016}
