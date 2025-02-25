@@ -1,5 +1,5 @@
 execute if block ~ ~1 ~ air if block ~ ~2 ~ air if block ~ ~3 ~ air if block ~ ~4 ~ air if block ~ ~5 ~ air \
- run fill ~ ~4 ~ ~ ~5 ~ pointed_dripstone[vertical_direction=down]
+ run setblock ~ ~4 ~ pointed_dripstone[vertical_direction=down]
 
 execute store result score @s rng1 run random value 1..8
 
