@@ -1,4 +1,4 @@
-execute unless score @s rng1 matches 4.. run particle electric_spark ~ ~5 ~ 0.2 20 0.2 0 80
+execute unless score @s rng1 matches 4.. run particle electric_spark ~ ~ ~ 0.2 10 0.2 0 40
 
 execute unless block ~ ~-0.2 ~ air unless score @s rng1 matches 1.. run scoreboard players set @s rng1 1
 execute if score @s rng1 matches 1.. run scoreboard players add @s rng1 1
