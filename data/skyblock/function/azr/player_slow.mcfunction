@@ -16,7 +16,7 @@ clear @s[gamemode=adventure] smooth_stone
 clear @s[gamemode=adventure] flowering_azalea
 clear @s[gamemode=adventure] grass_block
 
-execute at @s if block ~ ~-0.2 ~ black_concrete run damage @s 9999 fall
+execute if score chapter Azr_system matches 1 at @s if block ~ ~-0.2 ~ black_concrete run damage @s 9999 fall
 
 #故事模式
 effect give @s[tag=AZR_storymode] resistance infinite 1
