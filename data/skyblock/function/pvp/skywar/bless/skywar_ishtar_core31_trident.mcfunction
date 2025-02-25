@@ -1,6 +1,6 @@
 execute unless score @s rng1 matches 4.. run particle electric_spark ~ ~5 ~ 0.2 20 0.2 0 80
 
-execute unless block ~ ~-0.2 ~ air unless score @s rng1 matches 1.. run scoreboard players set @s rng1 1
+execute if entity @s[nbt={OnGround:1b}] unless score @s rng1 matches 1.. run scoreboard players set @s rng1 1
 execute if score @s rng1 matches 1.. run scoreboard players set @s rng1 1
 execute if score @s rng1 matches 4 run summon lightning_bolt ~ ~ ~
 execute if score @s rng1 matches 4..13 run particle electric_spark ~ ~1 ~ 0.2 0.2 0.2 0.01 20
