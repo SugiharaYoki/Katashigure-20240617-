@@ -60,7 +60,7 @@ execute if items entity @s container.* music_disc_strad[custom_data={skywar:1,sk
 
 execute if entity @s[scores={If_MD_Otherside=1..}] run playsound block.anvil.place ambient @a ~ ~1 ~ 1 1.3
 execute if entity @s[scores={If_MD_Otherside=1..}] run playsound item.mace.smash_ground_heavy ambient @a ~ ~1 ~ 1 1.3
-execute if entity @s[scores={If_MD_Otherside=1..}] run give @s mace[enchantments={wind_burst:2}]
+execute if entity @s[scores={If_MD_Otherside=1..}] run give @s mace
 execute if entity @s[scores={If_MD_Otherside=1..}] run scoreboard players set @s If_MD_Otherside 0
 
 execute if items entity @s weapon.offhand *[custom_data={skywar_ishtar_4:1}] run function skyblock:pvp/skywar/bless/skywar_ishtar_core4
