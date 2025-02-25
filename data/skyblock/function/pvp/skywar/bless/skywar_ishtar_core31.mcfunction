@@ -4,7 +4,7 @@ execute if entity @s[team=Team1_2] at @s as @e[gamemode=!spectator,team=!Team1_2
  run function skyblock:pvp/skywar/bless/skywar_ishtar_core31e
 execute if entity @s[team=Team1_3] at @s as @e[gamemode=!spectator,team=!Team1_3,distance=0..5] at @s \
  run function skyblock:pvp/skywar/bless/skywar_ishtar_core31e
-execute if entity @a[team=Team1_4] as @e[gamemode=!spectator,team=!Team1_4,distance=0..5] at @s \
+execute if entity @s[team=Team1_4] at @s as @e[gamemode=!spectator,team=!Team1_4,distance=0..5] at @s \
  run function skyblock:pvp/skywar/bless/skywar_ishtar_core31e
 execute if entity @s[team=Team1_5] at @s as @e[gamemode=!spectator,team=!Team1_5,distance=0..5] at @s \
  run function skyblock:pvp/skywar/bless/skywar_ishtar_core31e
