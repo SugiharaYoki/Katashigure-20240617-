@@ -7,7 +7,7 @@ execute if score stageSeconds Azr_system matches 0..890 if entity @a[x=-79884,y=
 
 execute if score stageSeconds Azr_system matches 1094 run tellraw @a[tag=DebugMode,tag=azrPlayer] [{"text":"[DEBUG MODE MESSAGE] You are playing \"Stage Event10\", with playerCount = "},{"score":{"objective":"Azr_system","name":"playerCount"}},{"text":" Maximum Seconds = 1900"}]
 execute if score stageSeconds Azr_system matches 1094 as @p[x=-79883,y=46,z=-109,tag=azrPlayer] at @s run tp @a[distance=20..,tag=azrPlayer] ~ ~ ~ facing -79876 47 -109
-execute if score stageSeconds Azr_system matches 1097 run effect give @a[tag=azrPlayer] slowness 3 4 true
+execute if score stageSeconds Azr_system matches 1097 run effect give @a[tag=azrPlayer] slowness 3 24 true
 execute if score stageSeconds Azr_system matches 1097 run summon evoker -79876 47 -109 {PersistenceRequired:1b,Silent:1b,Invulnerable:1b,Rotation:[90.0f,0.0f],CustomName:'"斗篷术士"'}
 execute if score stageSeconds Azr_system matches 1097 run playsound minecraft:entity.elder_guardian.curse master @a[tag=azrPlayer] -79876 49 -109 500 0.8
 execute if score stageSeconds Azr_system matches 1098 run particle large_smoke -79876 47 -109 1 1 1 0.08 500
