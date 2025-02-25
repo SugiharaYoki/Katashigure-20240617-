@@ -18,5 +18,5 @@ execute if entity @s[team=Team1_8] at @s as @e[gamemode=!spectator,team=!Team1_8
 playsound minecraft:block.note_block.basedrum master @a ~ ~ ~ 2 1.3
 playsound minecraft:block.note_block.xylophone master @a ~ ~ ~ 2 1.7
 
-scoreboard players set @s If_Bless31 20
+scoreboard players set @s If_Bless31 40
 scoreboard players set @s If_Bless31c 0
