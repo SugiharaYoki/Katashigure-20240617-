@@ -1,3 +1,5 @@
+forceload add 50550 50550 50400 50470
+
 function skyblock:tool_rng
 execute if entity @n[tag=sc,scores={rng2=1}] run tp @r[team=Team1_1,tag=!PVPTped] 50412 35 50412
 execute if entity @n[tag=sc,scores={rng2=2}] run tp @r[team=Team1_1,tag=!PVPTped] 50412 75 50412

@@ -94,3 +94,6 @@ scoreboard players set sc Temp5_Loop 0
 
 #临时关闭职业系统·逆向解除
 execute if block -19 23 32 torch run setblock -19 23 32 soul_lantern
+
+#混沌魔方用
+forceload remove 50550 50550 50400 50470
