@@ -56,6 +56,7 @@ execute if items entity @s[predicate=!skyblock:sneaking] container.* *[custom_da
 
 execute if items entity @s container.* *[custom_data={skywar:1,skywar_ishtar_9:1}] run effect give @s haste 3 1 true
 execute if items entity @s container.* music_disc_wait[custom_data={skywar:1,skywar_ishtar_10:1}] run effect clear @s poison
+execute if items entity @s inventory.* music_disc_wait[custom_data={skywar:1,skywar_ishtar_10:1}] run effect clear @s poison
 
 execute if entity @s[scores={If_MD_Otherside=1..}] run playsound block.anvil.place ambient @a ~ ~1 ~ 1 1.3
 execute if entity @s[scores={If_MD_Otherside=1..}] run playsound item.mace.smash_ground_heavy ambient @a ~ ~1 ~ 1 1.3
