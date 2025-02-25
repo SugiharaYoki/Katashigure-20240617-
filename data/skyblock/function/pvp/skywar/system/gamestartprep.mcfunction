@@ -93,7 +93,7 @@ execute if score skywar_start rng1 matches 2 as @a[scores={If_Bless11=1..}] run 
 #无意义变量 scoreboard players reset @s RemainPlayer
 execute if score skywar_start rng1 matches 2 as @a[tag=!NoSkyWar] at @s run scoreboard players reset @s DeathCount
 #-#-#scoreboard players set @s Temp4 1
-execute if score skywar_start rng1 matches 2 as @a[tag=!NoSkyWar] at @s run function skyblock:pvp/skywar/system/removeallgaming
+execute if score skywar_start rng1 matches 2 as @a[tag=!NoSkyWar] at @s run function skyblock:pvp/skywar/system/removeallgaming_teamed
 #无意义变量 scoreboard players reset @s PersonTimeRemain
 execute if score skywar_start rng1 matches 2 as @a[tag=!NoSkyWar] at @s run scoreboard players reset @s TimeRemainUnsee
 execute if score skywar_start rng1 matches 2 as @a[tag=!NoSkyWar] at @s run scoreboard players reset sc TimeRemainUnsee
@@ -108,7 +108,6 @@ execute if score skywar_start rng1 matches 3 as @a[tag=!NoSkyWar] at @s run scor
 execute if score skywar_start rng1 matches 3 as @a[tag=!NoSkyWar] at @s run scoreboard players set @s If_Beetrtsoup 0
 execute if score skywar_start rng1 matches 3 as @a[tag=!NoSkyWar] at @s run scoreboard players set @s If_Bread 0
 execute if score skywar_start rng1 matches 3 as @a[tag=!NoSkyWar] at @s run scoreboard players set @s If_EscDeath 0
-execute if score skywar_start rng1 matches 3 as @a[tag=!NoSkyWar] at @s run function skyblock:pvp/skywar/system/removeallmd
 execute if score skywar_start rng1 matches 3 as @a[tag=!NoSkyWar] at @s run scoreboard players set @s If_DamageTaken 0
 #??scoreboard players set @s If_EnchantArrow 0
 execute if score skywar_start rng1 matches 3 as @a[tag=!NoSkyWar] at @s run scoreboard players set @s If_GoldApple 0
