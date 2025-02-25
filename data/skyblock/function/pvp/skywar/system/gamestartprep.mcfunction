@@ -127,7 +127,7 @@ execute if score skywar_start rng1 matches 3 as @a[tag=!NoSkyWar] at @s run scor
 execute if score skywar_start rng1 matches 3 as @a[tag=!NoSkyWar] at @s run scoreboard players set @s If_Bless29 0
 execute if score skywar_start rng1 matches 3 as @a[tag=!NoSkyWar] at @s run scoreboard players set @s If_Bless30 0
 execute if score skywar_start rng1 matches 3 as @a[tag=!NoSkyWar] at @s run scoreboard players set @s If_Bless31 0
-execute if score skywar_start rng1 matches 3 as @a[tag=!NoSkyWar] at @s run scoreboard players set @s If_Bless31c 0
+#execute if score skywar_start rng1 matches 3 as @a[tag=!NoSkyWar] at @s run scoreboard players set @s If_Bless31c 0
 execute if score skywar_start rng1 matches 3 run scoreboard objectives add TempIf_Job6A dummy
 execute if score skywar_start rng1 matches 3 run scoreboard objectives add TempIf_Job6B dummy
 execute if score skywar_start rng1 matches 3 run scoreboard objectives add TempIf_Job6C dummy
