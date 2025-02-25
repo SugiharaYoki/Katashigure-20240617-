@@ -180,7 +180,7 @@ execute if score skywar_start rng1 matches 11 run tag @a[tag=!NoSkyWar,tag=!Gami
 execute if score skywar_start rng1 matches 11 run tag @a[tag=!NoSkyWar,tag=!Gaming] add PVPing
 execute if score skywar_start rng1 matches 11 run tag @a[tag=Gaming] remove PVPing
 execute if score skywar_start rng1 matches 11 run tag @a[tag=PVPing] add Gaming
-execute if score skywar_start rng1 matches 11 run team leave @a[tag=PVPing]
+execute if score skywar_start rng1 matches 11 run team leave @a[tag=PVPing,tag=!PVPTeamed]
 execute if score skywar_start rng1 matches 11 run title @a[tag=PVPing] times 10 80 10
 execute if score skywar_start rng1 matches 11 run stopsound @a[tag=PVPing]
 execute if score skywar_start rng1 matches 11 run execute if score @n[tag=sc] Map_Type matches 1 unless score sc Map_Code matches 13 run title @a[tag=PVPing] title {"text":"欢迎来到 空岛战争","color":"white"}
