@@ -18,4 +18,9 @@ team modify TokumeiO prefix "[权限]"
 team join Tokumei @s[tag=!Gaming,tag=!PVPTeamed]
 team join TokumeiM @s[tag=!Gaming,tag=ServerManager,tag=!ServerOperator,tag=!PVPTeamed]
 team join TokumeiO @s[tag=!Gaming,tag=ServerManager,tag=ServerOperator,tag=!PVPTeamed]
+
+execute if block -133 58 -99 air if block -143 58 -99 air run team join Tokumei @s[tag=!Gaming]
+execute if block -133 58 -99 air if block -143 58 -99 air run team join TokumeiM @s[tag=!Gaming,tag=ServerManager,tag=!ServerOperator]
+execute if block -133 58 -99 air if block -143 58 -99 air run team join TokumeiO @s[tag=!Gaming,tag=ServerManager,tag=ServerOperator]
+
 #team join AFK @s[tag=!Gaming,tag=AFKING]
