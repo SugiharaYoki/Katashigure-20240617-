@@ -37,6 +37,7 @@ tag @a[tag=PVPing] remove NoMultiMenu
 #无意义变量 scoreboard players set @a Random1 0
 #无意义变量 scoreboard players set @a Temp4 0
 #无意义变量 scoreboard players reset @a RemainPlayer
+scoreboard players set sc If_Map_Changed 0
 #组队结束
 team leave @a
 team remove Team1_1
@@ -93,3 +94,6 @@ scoreboard players set sc Temp5_Loop 0
 
 #临时关闭职业系统·逆向解除
 execute if block -19 23 32 torch run setblock -19 23 32 soul_lantern
+
+#混沌魔方用
+forceload remove 50550 50550 50400 50470

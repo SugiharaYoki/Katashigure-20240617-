@@ -11,6 +11,7 @@ function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"旅行家"', title
 function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"旅行家"', title:'"纺礼「陨铁甲胄」"', description:'"钻石铠×1 100%击退抗性 但是防御力较低"', id: 003}
 function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"湖灯使者"', title:'"湖灯「雷厄渡水」"', description:'"三叉戟×3、特殊模板\\\\n副手手持模板时，距离自己最近的落地三叉戟\\\\n将被转换为“雷祸”三叉戟，并自毁"', id: 004}
 function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"湖灯使者"', title:'"雷祸「天愠引庸」"', description:'"盾牌×3、特殊模板\\\\n放置于背包时，使用盾牌防御成功将在身旁降下天雷\\\\n且自身获得2秒无敌\\\\n将会失去一个盾牌"', id: 030}
+function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"湖灯使者"', title:'"判钉「畏光迫罪」"', description:'"特殊模板\\\\n放置于背包时，成功对敌人造成伤害后，在5格内的敌人头顶召唤石笋\\\\n此效果3秒最多触发一次，且要求对象头顶至少5格都是空气\\\\n如果对象露天，则15%概率在高空生成雷罚之戟"', id: 031}
 function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"影猎手"', title:'"猎夜「彻锋戮影」"', description:'"高速移动靴×1 略微减少生命值"', id: 005}
 function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"影猎手"', title:'"袖剑「初绽轮月」"', description:'"慢充能高攻击剑×1"', id: 006}
 function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"影猎手"', title:'"夜城「刺客尊荣」"', description:'"特殊模板 放置于背包时5格内隐身玩家显形"', id: 016}
@@ -24,7 +25,7 @@ function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"建筑师"', title
 function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"圣女"', title:'"救赎「顷刻天国」"', description:'"顷刻天国核心×2 范围内敌我飘升并发光6秒\\\\n留在背包内时不会陷入中毒状态"', id: 010}
 function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"圣女"', title:'"洗礼「顷刻人间」"', description:'"号角与特殊模板 放置于背包时吹响号角\\\\n即可将4格内全部玩家的主手武器与所装备防具附魔效果清除，且耐久回满\\\\n\\\\n注意：对自己也有效"', id: 022}
 function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"圣骑士"', title:'"神威「陨落压制」"', description:'"陨落压制核心×3 范围内其他玩家（包括友军）速度完全压制但接近无敌\\\\n\\\\n注意：虽然能够预防跳跃，但是这一效果的持续时长要远远低于减速的时长"', id: 011}
-function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"圣骑士"', title:'"天威「跃空战技」"', description:'"粘液块×3、跃空战技核心×2 给予自己一把重锤\\\\n留在背包内时可以在粘液块/蛋糕上一跃而起\\\\n\\\\n小提示：最好自己寻找重锤，使用模板后便无法再在粘液块上跳跃"', id: 020}
+function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"圣骑士"', title:'"天威「跃空战技」"', description:'"粘液块×3、跃空战技核心×2 给予自己一把重锤\\\\n留在背包内时可以在粘液块/蛋糕上一跃而起\\\\n留在背包内时，蹲下后跳跃能力短暂增强\\\\n\\\\n小提示：推荐自己寻找重锤"', id: 020}
 function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"弓箭手"', title:'"华弓「花散绯芒」"', description:'"超多重射击弓、箭矢×5\\\\n只不过给这把弓附魔几乎是不可能做到的"', id: 013}
 function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"弓箭手"', title:'"祭弓「折剑以箭」"', description:'"号角与特殊模板 放置于背包时吹响号角，即可将所持有的全部近战武器转换为箭矢"', id: 021}
 function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"弓箭手"', title:'"剪缘「误月驱华」"', description:'"特殊模板 放置于背包时，若10秒内没受到任何伤害则无效化下一次攻击\\\\n该无效化结束后会取消自身的全部抗性BUFF\\\\n若发动效果时3格内存在其他队伍的玩家，则自己立刻获得一枚末影之眼\\\\n模板存在时，最多持有2颗末影之眼"', id: 023}

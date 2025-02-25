@@ -89,11 +89,13 @@ execute if score skywar_start rng1 matches 2 run scoreboard objectives add If_Bl
 execute if score skywar_start rng1 matches 2 run scoreboard objectives add If_Bless27 minecraft.used:minecraft.activator_rail
 execute if score skywar_start rng1 matches 2 run scoreboard objectives add If_Bless29 minecraft.used:minecraft.snowball
 execute if score skywar_start rng1 matches 2 run scoreboard objectives add If_Bless30 custom:damage_blocked_by_shield
+execute if score skywar_start rng1 matches 2 run scoreboard objectives add If_Bless31 dummy
+execute if score skywar_start rng1 matches 2 run scoreboard objectives add If_Bless31c minecraft.custom:damage_dealt
 execute if score skywar_start rng1 matches 2 as @a[scores={If_Bless11=1..}] run attribute @s generic.jump_strength modifier remove skywar_ishtar_bless11_01
 #无意义变量 scoreboard players reset @s RemainPlayer
 execute if score skywar_start rng1 matches 2 as @a[tag=!NoSkyWar] at @s run scoreboard players reset @s DeathCount
 #-#-#scoreboard players set @s Temp4 1
-execute if score skywar_start rng1 matches 2 as @a[tag=!NoSkyWar] at @s run function skyblock:pvp/skywar/system/removeallgaming
+execute if score skywar_start rng1 matches 2 as @a[tag=!NoSkyWar] at @s run function skyblock:pvp/skywar/system/removeallgaming_teamed
 #无意义变量 scoreboard players reset @s PersonTimeRemain
 execute if score skywar_start rng1 matches 2 as @a[tag=!NoSkyWar] at @s run scoreboard players reset @s TimeRemainUnsee
 execute if score skywar_start rng1 matches 2 as @a[tag=!NoSkyWar] at @s run scoreboard players reset sc TimeRemainUnsee
@@ -108,7 +110,6 @@ execute if score skywar_start rng1 matches 3 as @a[tag=!NoSkyWar] at @s run scor
 execute if score skywar_start rng1 matches 3 as @a[tag=!NoSkyWar] at @s run scoreboard players set @s If_Beetrtsoup 0
 execute if score skywar_start rng1 matches 3 as @a[tag=!NoSkyWar] at @s run scoreboard players set @s If_Bread 0
 execute if score skywar_start rng1 matches 3 as @a[tag=!NoSkyWar] at @s run scoreboard players set @s If_EscDeath 0
-execute if score skywar_start rng1 matches 3 as @a[tag=!NoSkyWar] at @s run function skyblock:pvp/skywar/system/removeallmd
 execute if score skywar_start rng1 matches 3 as @a[tag=!NoSkyWar] at @s run scoreboard players set @s If_DamageTaken 0
 #??scoreboard players set @s If_EnchantArrow 0
 execute if score skywar_start rng1 matches 3 as @a[tag=!NoSkyWar] at @s run scoreboard players set @s If_GoldApple 0
@@ -125,6 +126,8 @@ execute if score skywar_start rng1 matches 3 as @a[tag=!NoSkyWar] at @s run scor
 execute if score skywar_start rng1 matches 3 as @a[tag=!NoSkyWar] at @s run scoreboard players set @s If_Bless27 0
 execute if score skywar_start rng1 matches 3 as @a[tag=!NoSkyWar] at @s run scoreboard players set @s If_Bless29 0
 execute if score skywar_start rng1 matches 3 as @a[tag=!NoSkyWar] at @s run scoreboard players set @s If_Bless30 0
+execute if score skywar_start rng1 matches 3 as @a[tag=!NoSkyWar] at @s run scoreboard players set @s If_Bless31 0
+#execute if score skywar_start rng1 matches 3 as @a[tag=!NoSkyWar] at @s run scoreboard players set @s If_Bless31c 0
 execute if score skywar_start rng1 matches 3 run scoreboard objectives add TempIf_Job6A dummy
 execute if score skywar_start rng1 matches 3 run scoreboard objectives add TempIf_Job6B dummy
 execute if score skywar_start rng1 matches 3 run scoreboard objectives add TempIf_Job6C dummy
@@ -180,7 +183,7 @@ execute if score skywar_start rng1 matches 11 run tag @a[tag=!NoSkyWar,tag=!Gami
 execute if score skywar_start rng1 matches 11 run tag @a[tag=!NoSkyWar,tag=!Gaming] add PVPing
 execute if score skywar_start rng1 matches 11 run tag @a[tag=Gaming] remove PVPing
 execute if score skywar_start rng1 matches 11 run tag @a[tag=PVPing] add Gaming
-execute if score skywar_start rng1 matches 11 run team leave @a[tag=PVPing]
+execute if score skywar_start rng1 matches 11 run team leave @a[tag=PVPing,tag=!PVPTeamed]
 execute if score skywar_start rng1 matches 11 run title @a[tag=PVPing] times 10 80 10
 execute if score skywar_start rng1 matches 11 run stopsound @a[tag=PVPing]
 execute if score skywar_start rng1 matches 11 run execute if score @n[tag=sc] Map_Type matches 1 unless score sc Map_Code matches 13 run title @a[tag=PVPing] title {"text":"欢迎来到 空岛战争","color":"white"}
@@ -196,6 +199,7 @@ execute if score skywar_start rng1 matches 11 run effect give @a[tag=PVPing] min
 execute if score skywar_start rng1 matches 11 run effect give @a[tag=PVPing] minecraft:saturation 8 0 true
 
 execute if score skywar_start rng1 matches 12..14 run clear @a[tag=!NoSkyWar]
+execute if score skywar_start rng1 matches 13 if score sc If_Map_Changed matches 1.. run tag @a remove PVPTeamed
 execute if score skywar_start rng1 matches 13 run function skyblock:pvp/skywar/system/init/team/index
 execute if score skywar_start rng1 matches 13 run gamemode spectator @a[tag=PVPing,tag=!PVPTeamed]
 execute if score skywar_start rng1 matches 13 run tag @a[tag=PVPing] add PVP_see

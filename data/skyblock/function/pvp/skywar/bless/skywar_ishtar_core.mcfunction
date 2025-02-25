@@ -11,6 +11,7 @@ execute if entity @s[scores={If_MD_13=1..},gamemode=survival] run function skybl
 
 execute if entity @s[scores={If_MD_Strad=1..}] run playsound minecraft:block.beacon.power_select ambient @a ~ ~2 ~ 4 0.5
 execute if entity @s[scores={If_MD_Strad=1..}] run summon area_effect_cloud ~ ~ ~ {Particle:{type:"end_rod"},Radius:5,Duration:200,potion_contents:{custom_color:16383998,custom_effects:[{id:levitation,duration:120,amplifier:3,show_particles:1b,show_icon:1b},{id:glowing,duration:120,amplifier:0,show_particles:1b,show_icon:1b}]}}
+execute if entity @s[scores={If_MD_Strad=1..}] run summon area_effect_cloud ~ ~-1.5 ~ {Particle:{type:"end_rod"},Radius:5,Duration:200,potion_contents:{custom_color:16383998,custom_effects:[{id:levitation,duration:20,amplifier:3,show_particles:1b,show_icon:1b},{id:glowing,duration:120,amplifier:0,show_particles:1b,show_icon:1b}]}}
 execute if entity @s[scores={If_MD_Strad=1..}] run scoreboard players set @s If_MD_Strad 0
 
 execute if entity @s[scores={If_MD_Wait=1..}] run playsound minecraft:block.beacon.deactivate ambient @a ~ ~1 ~ 4 0.8
@@ -51,14 +52,15 @@ execute if entity @s[scores={If_MD_Ward=1..}] run scoreboard players set @s If_M
 
 execute if items entity @s[predicate=!skyblock:sneaking] container.* *[custom_data={skywar:1,skywar_ishtar_20:1}] positioned ~ ~-0.2 ~ if block ~ ~ ~ slime_block run effect give @s jump_boost 1 7 false
 execute if items entity @s[predicate=!skyblock:sneaking] container.* *[custom_data={skywar:1,skywar_ishtar_20:1}] positioned ~ ~-0.05 ~ if block ~ ~ ~ cake run effect give @s jump_boost 1 7 false
+execute if items entity @s[predicate=skyblock:sneaking] container.* *[custom_data={skywar:1,skywar_ishtar_20:1}] positioned ~ ~-0.2 ~ if block ~ ~ ~ slime_block run effect give @s jump_boost 1 3 false
 
 
 execute if items entity @s container.* *[custom_data={skywar:1,skywar_ishtar_9:1}] run effect give @s haste 3 1 true
-execute if items entity @s container.* music_disc_wait[custom_data={skywar:1,skywar_ishtar_10:1}] run effect clear @s poison
+execute if items entity @s container.* music_disc_strad[custom_data={skywar:1,skywar_ishtar_10:1}] run effect clear @s poison
 
 execute if entity @s[scores={If_MD_Otherside=1..}] run playsound block.anvil.place ambient @a ~ ~1 ~ 1 1.3
 execute if entity @s[scores={If_MD_Otherside=1..}] run playsound item.mace.smash_ground_heavy ambient @a ~ ~1 ~ 1 1.3
-execute if entity @s[scores={If_MD_Otherside=1..}] run give @s mace[enchantments={wind_burst:2}]
+execute if entity @s[scores={If_MD_Otherside=1..}] run give @s mace
 execute if entity @s[scores={If_MD_Otherside=1..}] run scoreboard players set @s If_MD_Otherside 0
 
 execute if items entity @s weapon.offhand *[custom_data={skywar_ishtar_4:1}] run function skyblock:pvp/skywar/bless/skywar_ishtar_core4
@@ -83,5 +85,11 @@ execute if items entity @s[predicate=skyblock:sneaking] container.* *[custom_dat
 execute if items entity @s[scores={If_Bless29=1..}] container.* *[custom_data={skywar_ishtar_29:1}] at @s run function skyblock:pvp/skywar/bless/skywar_ishtar_core29
 
 execute if items entity @s[scores={If_Bless30=1..}] container.* *[custom_data={skywar_ishtar_30:1}] run function skyblock:pvp/skywar/bless/skywar_ishtar_core30
+
+execute if entity @s[scores={If_Bless31=1..}] run scoreboard players remove @s If_Bless31 1
+execute if items entity @s[scores={If_Bless31c=1..}] container.* *[custom_data={skywar_ishtar_31:1}] run function skyblock:pvp/skywar/bless/skywar_ishtar_core31
+
+
+
 
 scoreboard players set @s Skywar_ishtar_usehorn 0

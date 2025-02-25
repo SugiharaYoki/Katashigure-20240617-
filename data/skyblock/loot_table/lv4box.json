@@ -42,8 +42,7 @@
                   "options": [
                     "minecraft:unbreaking",
                     "minecraft:sharpness",
-                    "minecraft:fire_aspect",
-                    "minecraft:knockback"
+                    "minecraft:fire_aspect"
                   ]
                 },
                 {
@@ -244,7 +243,7 @@
                   "conditions": [
                     {
                       "condition": "minecraft:random_chance",
-                      "chance": 0.3
+                      "chance": 0.4
                     }
                   ]
                 },
@@ -256,7 +255,7 @@
                   "conditions": [
                     {
                       "condition": "minecraft:random_chance",
-                      "chance": 0.2
+                      "chance": 0.12
                     }
                   ]
                 },
@@ -268,7 +267,7 @@
                   "conditions": [
                     {
                       "condition": "minecraft:random_chance",
-                      "chance": 0.1
+                      "chance": 0.06
                     }
                   ]
                 }
@@ -283,7 +282,6 @@
                   "function": "minecraft:enchant_randomly",
                   "options": [
                     "minecraft:unbreaking",
-                    "minecraft:knockback",
                     "minecraft:sharpness"
                   ]
                 }
@@ -428,8 +426,7 @@
                   "function": "minecraft:enchant_randomly",
                   "options": [
                     "minecraft:sharpness",
-                    "minecraft:binding_curse",
-                    "minecraft:knockback"
+                    "minecraft:binding_curse"
                   ],
                   "conditions": [
                     {
