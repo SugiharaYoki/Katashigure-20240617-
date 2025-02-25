@@ -196,6 +196,7 @@ execute if score skywar_start rng1 matches 11 run effect give @a[tag=PVPing] min
 execute if score skywar_start rng1 matches 11 run effect give @a[tag=PVPing] minecraft:saturation 8 0 true
 
 execute if score skywar_start rng1 matches 12..14 run clear @a[tag=!NoSkyWar]
+execute if score skywar_start rng1 matches 13 if score sc If_Map_Changed matches 1.. run tag @a remove PVPTeamed
 execute if score skywar_start rng1 matches 13 run function skyblock:pvp/skywar/system/init/team/index
 execute if score skywar_start rng1 matches 13 run gamemode spectator @a[tag=PVPing,tag=!PVPTeamed]
 execute if score skywar_start rng1 matches 13 run tag @a[tag=PVPing] add PVP_see

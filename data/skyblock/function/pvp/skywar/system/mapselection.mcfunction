@@ -8,6 +8,9 @@
 #地图选择初始化
 #setblock -4 12 6 minecraft:redstone_block
 
+execute if entity @a[tag=PVPTeamed] run tellraw @a[tag=!Gaming,tag=!NoSkyWar] [{"text": "注意", "bold": true, "color": "yellow"},{"text": " 检测到PVP地图改变 组队预选已失效", "bold": false, "color": "white"}]
+scoreboard players set sc If_Map_Changed 1
+
 $scoreboard players set sc Map_Code $(Map_Code)
 $scoreboard players set sc Map_Type $(Map_Type)
 $scoreboard players set sc Map_Theme $(Map_Space)
