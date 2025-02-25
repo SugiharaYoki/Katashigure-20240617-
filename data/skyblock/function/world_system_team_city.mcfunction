@@ -10,12 +10,12 @@ team modify Tokumei color white
 team modify TokumeiM color green
 team modify TokumeiO color dark_purple
 #team modify AFK color gray
-team modify Tokumei prefix "[CP]"
-team modify TokumeiM prefix "[CM]"
-team modify TokumeiO prefix "[CO]"
+team modify Tokumei prefix "[主城]"
+team modify TokumeiM prefix "[管理]"
+team modify TokumeiO prefix "[权限]"
 #team modify AFK prefix "[AFK]"
 
-team join Tokumei @s[tag=!Gaming]
-team join TokumeiM @s[tag=!Gaming,tag=ServerManager,tag=!ServerOperator]
-team join TokumeiO @s[tag=!Gaming,tag=ServerManager,tag=ServerOperator]
+team join Tokumei @s[tag=!Gaming,tag=!PVPTeamed]
+team join TokumeiM @s[tag=!Gaming,tag=ServerManager,tag=!ServerOperator,tag=!PVPTeamed]
+team join TokumeiO @s[tag=!Gaming,tag=ServerManager,tag=ServerOperator,tag=!PVPTeamed]
 #team join AFK @s[tag=!Gaming,tag=AFKING]
