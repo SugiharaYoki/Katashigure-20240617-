@@ -1,7 +1,7 @@
 forceload add -9800 -9800 -9600 -9780
 forceload add 50000 50000 50200 50200
 
-function skyblock:pvp/skywar/system/init/map/common_partdeletemap_1
+#function skyblock:pvp/skywar/system/init/map/common_partdeletemap_1
 
 summon marker 50010 100 50010 {Tags:["SkyChess_Generator"]}
 execute at @n[type=marker,tag=SkyChess_Generator] run function skyblock:pvp/skywar/system/init/map/map011_selection_a

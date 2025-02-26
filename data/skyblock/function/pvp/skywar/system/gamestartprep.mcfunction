@@ -50,22 +50,23 @@ execute if score skywar_start rng1 matches 2 if score sc Map_Theme matches 4 run
 execute if score skywar_start rng1 matches 2 if score sc Map_Theme matches 4 run forceload add 50600 50600 50800 50800
 execute if score skywar_start rng1 matches 2 as @e[tag=!NoSkyWar,tag=!Gaming] run kill @e[type=wolf,distance=0..10,tag=!Wolfer]
 execute if score skywar_start rng1 matches 2 run kill @e[x=50000,y=50,z=50000,distance=..1500,type=!player]
-execute if score skywar_start rng1 matches 2 if entity @n[tag=!MapLoaAlr,tag=sc] if score sc Map_Code matches 14 run forceload add -9838 -10164 -9709 -10035
-execute if score skywar_start rng1 matches 2 if entity @n[tag=!MapLoaAlr,tag=sc] if score sc Map_Code matches 2 run function skyblock:pvp/skywar/system/init/map/map002_part1
-execute if score skywar_start rng1 matches 2 if entity @n[tag=!MapLoaAlr,tag=sc] if score sc Map_Code matches 3 run function skyblock:pvp/skywar/system/init/map/map003_part1
-execute if score skywar_start rng1 matches 2 if entity @n[tag=!MapLoaAlr,tag=sc] if score sc Map_Code matches 4 run function skyblock:pvp/skywar/system/init/map/map004_part1_hard
-execute if score skywar_start rng1 matches 2 if entity @n[tag=!MapLoaAlr,tag=sc] if score sc Map_Code matches 5 run function skyblock:pvp/skywar/system/init/map/map005_part1
-execute if score skywar_start rng1 matches 2 if entity @n[tag=!MapLoaAlr,tag=sc] if score sc Map_Code matches 7 run function skyblock:pvp/skywar/system/init/map/map007_part1
-execute if score skywar_start rng1 matches 2 if entity @n[tag=!MapLoaAlr,tag=sc] if score sc Map_Code matches 8 run function skyblock:pvp/skywar/system/init/map/map008_part1
-execute if score skywar_start rng1 matches 2 if entity @n[tag=!MapLoaAlr,tag=sc] if score sc Map_Code matches 10 run function skyblock:pvp/skywar/system/init/map/map010_part1_hard
-execute if score skywar_start rng1 matches 2 if entity @n[tag=!MapLoaAlr,tag=sc] if score sc Map_Code matches 11 run function skyblock:pvp/skywar/system/init/map/map011_size1
-execute if score skywar_start rng1 matches 2 if entity @n[tag=!MapLoaAlr,tag=sc] if score sc Map_Code matches 13 run function skyblock:pvp/skywar/system/init/map/map013_part1
-execute if score skywar_start rng1 matches 2 if entity @n[tag=!MapLoaAlr,tag=sc] if score sc Map_Code matches 14 unless block -156 59 -114 diamond_block run function skyblock:pvp/skywar/system/init/map/map014_part1_hard
-execute if score skywar_start rng1 matches 2 if entity @n[tag=!MapLoaAlr,tag=sc] if score sc Map_Code matches 14 if block -156 59 -114 diamond_block run function skyblock:pvp/skywar/system/init/map/map014alt_part1_hard
-execute if score skywar_start rng1 matches 2 if entity @n[tag=!MapLoaAlr,tag=sc] if score sc Map_Code matches 15 run function skyblock:pvp/skywar/system/init/map/map015_part1_hard
-execute if score skywar_start rng1 matches 2 if entity @n[tag=!MapLoaAlr,tag=sc] if score sc Map_Code matches 16 run function skyblock:pvp/skywar/system/init/map/map016_part1_hard
-execute if score skywar_start rng1 matches 2 if entity @n[tag=!MapLoaAlr,tag=sc] if score sc Map_Code matches 17 run function skyblock:pvp/skywar/system/init/map/map017_part1_hard
-execute if score skywar_start rng1 matches 2 if entity @n[tag=!MapLoaAlr,tag=sc] if score sc Map_Code matches 18 run function skyblock:pvp/skywar/system/init/map/map018_part1_hard
+execute if score skywar_start rng1 matches 2 run function skyblock:pvp/skywar/system/init/map/common_partdeletemap_1
+execute if score skywar_start rng1 matches 3 if entity @n[tag=!MapLoaAlr,tag=sc] if score sc Map_Code matches 14 run forceload add -9838 -10164 -9709 -10035
+execute if score skywar_start rng1 matches 3 if entity @n[tag=!MapLoaAlr,tag=sc] if score sc Map_Code matches 2 run function skyblock:pvp/skywar/system/init/map/map002_part1
+execute if score skywar_start rng1 matches 3 if entity @n[tag=!MapLoaAlr,tag=sc] if score sc Map_Code matches 3 run function skyblock:pvp/skywar/system/init/map/map003_part1
+execute if score skywar_start rng1 matches 3 if entity @n[tag=!MapLoaAlr,tag=sc] if score sc Map_Code matches 4 run function skyblock:pvp/skywar/system/init/map/map004_part1_hard
+execute if score skywar_start rng1 matches 3 if entity @n[tag=!MapLoaAlr,tag=sc] if score sc Map_Code matches 5 run function skyblock:pvp/skywar/system/init/map/map005_part1
+execute if score skywar_start rng1 matches 3 if entity @n[tag=!MapLoaAlr,tag=sc] if score sc Map_Code matches 7 run function skyblock:pvp/skywar/system/init/map/map007_part1
+execute if score skywar_start rng1 matches 3 if entity @n[tag=!MapLoaAlr,tag=sc] if score sc Map_Code matches 8 run function skyblock:pvp/skywar/system/init/map/map008_part1
+execute if score skywar_start rng1 matches 3 if entity @n[tag=!MapLoaAlr,tag=sc] if score sc Map_Code matches 10 run function skyblock:pvp/skywar/system/init/map/map010_part1_hard
+execute if score skywar_start rng1 matches 3 if entity @n[tag=!MapLoaAlr,tag=sc] if score sc Map_Code matches 11 run function skyblock:pvp/skywar/system/init/map/map011_size1
+execute if score skywar_start rng1 matches 3 if entity @n[tag=!MapLoaAlr,tag=sc] if score sc Map_Code matches 13 run function skyblock:pvp/skywar/system/init/map/map013_part1
+execute if score skywar_start rng1 matches 3 if entity @n[tag=!MapLoaAlr,tag=sc] if score sc Map_Code matches 14 unless block -156 59 -114 diamond_block run function skyblock:pvp/skywar/system/init/map/map014_part1_hard
+execute if score skywar_start rng1 matches 3 if entity @n[tag=!MapLoaAlr,tag=sc] if score sc Map_Code matches 14 if block -156 59 -114 diamond_block run function skyblock:pvp/skywar/system/init/map/map014alt_part1_hard
+execute if score skywar_start rng1 matches 3 if entity @n[tag=!MapLoaAlr,tag=sc] if score sc Map_Code matches 15 run function skyblock:pvp/skywar/system/init/map/map015_part1_hard
+execute if score skywar_start rng1 matches 3 if entity @n[tag=!MapLoaAlr,tag=sc] if score sc Map_Code matches 16 run function skyblock:pvp/skywar/system/init/map/map016_part1_hard
+execute if score skywar_start rng1 matches 3 if entity @n[tag=!MapLoaAlr,tag=sc] if score sc Map_Code matches 17 run function skyblock:pvp/skywar/system/init/map/map017_part1_hard
+execute if score skywar_start rng1 matches 3 if entity @n[tag=!MapLoaAlr,tag=sc] if score sc Map_Code matches 18 run function skyblock:pvp/skywar/system/init/map/map018_part1_hard
 #[futuredevskywar]
 execute if score skywar_start rng1 matches 3 if entity @n[tag=!MapLoaAlr,tag=sc] if score sc Map_Code matches 14 run forceload remove -9838 -10164 -9709 -10035
 execute if score skywar_start rng1 matches 3 if entity @n[tag=!MapLoaAlr,tag=sc] run tag @n[tag=sc] add MapLoaAlr
