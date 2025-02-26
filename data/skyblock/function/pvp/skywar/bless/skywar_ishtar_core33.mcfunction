@@ -98,6 +98,22 @@ execute if entity @s[tag=Bless33Success] run clear @s warped_wart_block 1
 execute if entity @s[tag=Bless33Success] run give @s nether_wart_block 1
 execute if entity @s[tag=Bless33Success] run tag @s remove Bless33Success
 
+execute if items entity @s container.* small_amethyst_bud run tag @s add Bless33Success
+execute if entity @s[tag=Bless33Success] run playsound minecraft:block.note_block.cow_bell block @s ~ ~ ~ 0.6 1.7
+execute if entity @s[tag=Bless33Success] run clear @s small_amethyst_bud 1
+execute if entity @s[tag=Bless33Success] run give @s amethyst_cluster 1
+execute if entity @s[tag=Bless33Success] run tag @s remove Bless33Success
+execute if items entity @s container.* medium_amethyst_bud run tag @s add Bless33Success
+execute if entity @s[tag=Bless33Success] run playsound minecraft:block.note_block.cow_bell block @s ~ ~ ~ 0.6 1.7
+execute if entity @s[tag=Bless33Success] run clear @s medium_amethyst_bud 1
+execute if entity @s[tag=Bless33Success] run give @s amethyst_cluster 1
+execute if entity @s[tag=Bless33Success] run tag @s remove Bless33Success
+execute if items entity @s container.* large_amethyst_bud run tag @s add Bless33Success
+execute if entity @s[tag=Bless33Success] run playsound minecraft:block.note_block.cow_bell block @s ~ ~ ~ 0.6 1.7
+execute if entity @s[tag=Bless33Success] run clear @s large_amethyst_bud 1
+execute if entity @s[tag=Bless33Success] run give @s amethyst_cluster 1
+execute if entity @s[tag=Bless33Success] run tag @s remove Bless33Success
+
 
 
 
