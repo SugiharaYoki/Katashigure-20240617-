@@ -22,6 +22,7 @@ function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"建筑师"', title
 function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"建筑师"', title:'"困笼「殆命角斗」"', description:'"高速堡垒核心×2 搭建落脚堡垒\\\\n使用后还会获得5秒的跳跃提升\\\\n留在背包内时增加挖掘速度（无法叠加）\\\\n\\\\n注意：如果错过了跳跃提升，这个困笼无法在通常状态下跳出"', id: 009}
 function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"建筑师"', title:'"搬运「输载归初」"', description:'"输载归初核心×2 将周围3格内的宝箱全部刷新成蛋糕盒\\\\n留在背包内时下蹲可以直接破坏脚下的潜影盒\\\\n\\\\n小提示：可用于快速抢夺箱子"', id: 019}
 function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"建筑师"', title:'"筑道「高速隧梯」"', description:'"激活铁轨×1、特殊模板 放置激活铁轨时朝距离你最近的横向正十字坐标打开一道通路\\\\n跳起时则改为向上建造天梯\\\\n\\\\n注意：建造起始点是你，而不是铁轨\\\\n路径上的方块会以破坏形式被清除\\\\n铁轨本身能够复用"', id: 027}
+function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"建筑师"', title:'"錾艺「资源集成」"', description:'"特殊模板 放置激活铁轨时朝距离你最近的横向正十字坐标打开一道通路\\\\n跳起时则改为向上建造天梯\\\\n\\\\n注意：建造起始点是你，而不是铁轨\\\\n路径上的方块会以破坏形式被清除\\\\n铁轨本身能够复用"', id: 027}
 function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"圣女"', title:'"救赎「顷刻天国」"', description:'"顷刻天国核心×2 范围内敌我飘升并发光6秒\\\\n留在背包内时不会陷入中毒状态"', id: 010}
 function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"圣女"', title:'"洗礼「顷刻人间」"', description:'"号角与特殊模板 放置于背包时吹响号角\\\\n即可将4格内全部玩家的主手武器与所装备防具附魔效果清除，且耐久回满\\\\n\\\\n注意：对自己也有效"', id: 022}
 function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"圣女"', title:'"焚玉「渡火红莲」"', description:'"特殊模板 放置于背包时，若自身行走于烈火，则几乎不会受到火焰以外的伤害\\\\n但是，火焰伤害本身将是致命的"', id: 032}
