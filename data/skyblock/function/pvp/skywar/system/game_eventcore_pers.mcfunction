@@ -31,6 +31,8 @@ execute if block -131 58 -133 diamond_block as @e[type=egg,tag=Bless25,x=50000,d
 execute if block -131 58 -133 diamond_block as @e[type=wind_charge,tag=Bless26,x=50062,y=226,z=50052,distance=..3000] at @s as @a[gamemode=survival,distance=0..64] unless items entity @s container.* *[custom_data={skywar_ishtar_26:1}] run function skyblock:pvp/skywar/bless/skywar_ishtar_core26e
 execute if block -131 58 -133 diamond_block if items entity @a[gamemode=survival] container.* *[custom_data={skywar_ishtar_24:1}] run function skyblock:pvp/skywar/bless/skywar_ishtar_core24e
 execute if block -131 58 -133 diamond_block if items entity @a container.* *[custom_data={skywar_ishtar_31:1}] as @n[type=trident,tag=Bless31] at @s run function skyblock:pvp/skywar/bless/skywar_ishtar_core31_trident
+execute if block -131 58 -133 diamond_block if items entity @a container.* *[custom_data={skywar_ishtar_34:1}] as @e[type=endermite,tag=Skywar_Bless34] at @s if entity @a[gamemode=!spectator,distance=0..1.5] run function skyblock:pvp/skywar/bless/skywar_ishtar_core34e
+
 
 scoreboard players add skywar_loop rng1 1
 execute if score skywar_loop rng1 matches 15 run function skyblock:pvp/skywar/system/game_eventcore_loop
