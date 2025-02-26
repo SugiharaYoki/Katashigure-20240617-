@@ -255,12 +255,12 @@ execute if block -131 59 -128 minecraft:green_concrete if score skywar_start rng
 execute if block -131 59 -127 green_concrete if score skywar_start rng1 matches 17 run execute as @a[tag=PVPing] at @s run effect give @s regeneration 300 1 true
 execute if block 44 61 54 minecraft:soul_lantern if score skywar_start rng1 matches 17 run execute as @a[tag=PVPing] at @s run item replace entity @s armor.head with melon[minecraft:enchantments={binding_curse:1,blast_protection:4}]
 
-execute if score skywar_start rng1 matches 1 if block -131 58 -133 diamond_block run tellraw @a[tag=!Gaming] {"text":"◇ 伊什塔尔的赐福 已开启","color":"aqua","bold": true}
-execute if score skywar_start rng1 matches 1 if block -131 59 -119 green_concrete run tellraw @a[tag=!Gaming] {"text":"◇ 请注意：全局虚弱III已开启","color":"red"}
-execute if score skywar_start rng1 matches 1 if block -131 59 -122 green_concrete run tellraw @a[tag=!Gaming] {"text":"◇ 请注意：全局挖掘疲劳已开启","color":"red"}
-execute if score skywar_start rng1 matches 1 if block -131 59 -123 green_concrete run tellraw @a[tag=!Gaming] {"text":"◇ 请注意：全局隐身已开启","color":"red"}
-execute if score skywar_start rng1 matches 1 if block -131 59 -124 green_concrete run tellraw @a[tag=!Gaming] {"text":"◇ 请注意：全局隐身已开启","color":"red"}
-execute if score skywar_start rng1 matches 1 if block -131 59 -125 green_concrete run tellraw @a[tag=!Gaming] {"text":"◇ 玩家将在开局获得20个TNT","color":"red"}
+execute if score skywar_start rng1 matches 2 if block -131 58 -133 diamond_block run tellraw @a[tag=!Gaming] {"text":"◇ 伊什塔尔的赐福 已开启","color":"aqua","bold": true}
+execute if score skywar_start rng1 matches 2 if block -131 59 -119 green_concrete run tellraw @a[tag=!Gaming] {"text":"◇ 请注意：全局虚弱III已开启","color":"red"}
+execute if score skywar_start rng1 matches 2 if block -131 59 -122 green_concrete run tellraw @a[tag=!Gaming] {"text":"◇ 请注意：全局挖掘疲劳已开启","color":"red"}
+execute if score skywar_start rng1 matches 2 if block -131 59 -123 green_concrete run tellraw @a[tag=!Gaming] {"text":"◇ 请注意：全局隐身已开启","color":"red"}
+execute if score skywar_start rng1 matches 2 if block -131 59 -124 green_concrete run tellraw @a[tag=!Gaming] {"text":"◇ 请注意：全局隐身已开启","color":"red"}
+execute if score skywar_start rng1 matches 2 if block -131 59 -125 green_concrete run tellraw @a[tag=!Gaming] {"text":"◇ 玩家将在开局获得20个TNT","color":"red"}
 
 execute if block -131 59 -118 green_concrete if score skywar_start rng1 matches 17 run execute as @a[tag=PVPing] at @s run give @s ender_pearl 3
 execute if block -131 59 -118 green_concrete if score skywar_start rng1 matches 17 run execute as @a[tag=PVPing] at @s run give @s firework_rocket 8
