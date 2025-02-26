@@ -95,4 +95,10 @@ execute if block ~ ~ ~ lava if items entity @s container.* *[custom_data={skywar
 scoreboard players remove @s[scores={If_Bless32=1..}] If_Bless32 1
 execute if entity @s[scores={If_Bless32=1}] run attribute @s generic.armor modifier remove skywar:ishtar_bless_32
 
+execute if items entity @s container.* *[custom_data={skywar_ishtar_33:1}] unless items entity @s weapon.offhand *[custom_data={skywar_ishtar_33:1}] at @s run function skyblock:pvp/skywar/bless/skywar_ishtar_core33
+
+
+
+
+
 scoreboard players set @s Skywar_ishtar_usehorn 0
