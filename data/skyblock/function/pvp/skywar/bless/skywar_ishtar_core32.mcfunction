@@ -1,0 +1,3 @@
+effect give @s wither 3 3
+attribute @s[scores={If_Bless32=..0}] generic.armor modifier add skywar:ishtar_bless_32 30 add_value
+scoreboard players set @s If_Bless32 21

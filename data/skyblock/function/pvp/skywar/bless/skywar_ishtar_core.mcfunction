@@ -89,7 +89,10 @@ execute if items entity @s[scores={If_Bless30=1..}] container.* *[custom_data={s
 execute if entity @s[scores={If_Bless31=1..}] run scoreboard players remove @s If_Bless31 1
 execute if items entity @s[scores={If_Bless31c=1..}] container.* *[custom_data={skywar_ishtar_31:1}] run function skyblock:pvp/skywar/bless/skywar_ishtar_core31
 
-
-
+execute if block ~ ~ ~ #fire if items entity @s container.* *[custom_data={skywar_ishtar_32:1}] run function skyblock:pvp/skywar/bless/skywar_ishtar_core32
+execute if block ~ ~ ~ #campfires if items entity @s container.* *[custom_data={skywar_ishtar_32:1}] run function skyblock:pvp/skywar/bless/skywar_ishtar_core32
+execute if block ~ ~ ~ lava if items entity @s container.* *[custom_data={skywar_ishtar_32:1}] run function skyblock:pvp/skywar/bless/skywar_ishtar_core32
+scoreboard players remove @s[scores={If_Bless32=1..}] If_Bless32 1
+execute if entity @s[scores={If_Bless32=1}] run attribute @s generic.armor modifier remove skywar:ishtar_bless_32
 
 scoreboard players set @s Skywar_ishtar_usehorn 0

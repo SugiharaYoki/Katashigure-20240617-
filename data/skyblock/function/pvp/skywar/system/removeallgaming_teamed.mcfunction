@@ -112,6 +112,9 @@ attribute @s generic.attack_speed modifier remove 8603fc7b-b1fa-47c6-91f5-84321a
 attribute @s generic.attack_speed modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd411
 attribute @s generic.attack_speed modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd412
 
+
+attribute @s generic.armor modifier remove skywar:ishtar_bless_32
+
 effect give @s strength 1 0 true
 effect give @s weakness 1 0 true
 effect give @s speed 1 0 true
