@@ -174,7 +174,7 @@ $execute as @s[scores={Azr_Shop_rng$(rng)=18,Azr_Shop=$(trigger)}] \
     rng18
     # 18 铁盔 12 绿宝石
 
-$execute as @s[scores={Azr_Shop_rng$(rng)=17,Azr_Shop=$(trigger)33}] \
+$execute as @s[scores={Azr_Shop_rng$(rng)=18,Azr_Shop=$(trigger)33}] \
     if score @s Azr_emerald matches 16.. \
     run function skyblock:azr/shop/purchase/category3/\
     rng18_alt
