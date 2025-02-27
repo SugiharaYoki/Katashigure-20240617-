@@ -9,6 +9,7 @@ scoreboard players set MG_AZR0_Timer rng3 0
 scoreboard players set MG_AZR0_Timer rng4 0
 scoreboard players set MG_AZR0_Timer rng5 0
 scoreboard players set MG_AZR0_Timer rng6 0
+scoreboard players set MG_AZR0_Timer rng7 0
 scoreboard players set MG_AZR0_Timer rng9 0
 
 scoreboard players set MG_AZR0_rng rng1 0
@@ -27,6 +28,7 @@ scoreboard players set MG_AZR0_rng rng8 0
 #4：敌人生成 - 间隔计时器
 #5：corex5
 #6：corex1
+#7：僵尸生成计数器 - 影响怪物生成难度
 #9：全局计时器
 
 scoreboard objectives add Azr_emerald dummy
