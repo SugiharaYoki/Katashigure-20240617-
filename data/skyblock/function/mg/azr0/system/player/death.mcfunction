@@ -7,9 +7,10 @@ function skyblock:pvp/skywar/system/removeallgaming
 
 effect clear @s
 
+tag @s remove MG_AZR0PT
+
 clear @s
 
-tag @s remove MG_AZR0PT
 
 bossbar set mg:azr0_bar players @a[tag=MG_AZR0PT]
 
