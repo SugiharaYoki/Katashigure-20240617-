@@ -33,7 +33,7 @@ execute if score MG_AZR0_Timer rng3 matches 1..20 store result bossbar mg:azr0_b
 execute if score MG_AZR0_Timer rng3 matches 0 store result score MG_AZR0_rng rng4 run random value 1..11
 
 execute if score MG_AZR0_Timer rng3 matches 20.. as @e[tag=mg_azr0_MobPortals_horizontal,limit=2] at @s run function skyblock:mg/azr0/particle/mob_portal_horizontal
-execute if score MG_AZR0_Timer rng3 matches 20.. as @e[tag=mg_azr0_MobPortals_vertical,limit=2] at @s run function skyblock:mg/azr0/particle/mob_portal_vertical
+execute if score MG_AZR0_Timer rng3 matches 20.. as @e[tag=mg_azr0_MobPortals_vertical,limit=2] at @s run function skyblock:mg/azr0/particle/mob_portal_horizontal
 
 
 

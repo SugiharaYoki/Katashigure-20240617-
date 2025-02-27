@@ -1,44 +1,5 @@
-execute as @a[tag=MG_AZR0PT] at @s run attribute @s generic.scale modifier remove mg_azr0:init_scale
-execute as @a[tag=MG_AZR0PT] at @s run attribute @s generic.max_health modifier remove mg_azr0:init_maxhp
+execute as @s at @s run tp @s ~ ~ ~ ~ ~-10
+execute as @s at @s[x_rotation=90] run tp @s ~ ~ ~ ~ 180
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-setblock 125078 0 -242 minecraft:air
-
-
-kill @n[tag=mg_azr0,type=marker]
-
-tag @a remove MG_AZR0PT
+particle portal ^ ^ ^1 0.1 0.1 0.1 0.06 4
+particle portal ^ ^ ^-1 0.1 0.1 0.1 0.06 4
