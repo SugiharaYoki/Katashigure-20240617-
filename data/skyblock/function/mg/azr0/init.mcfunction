@@ -48,6 +48,8 @@ clear @a[tag=MG_AZR0PT]
 effect clear @a[tag=MG_AZR0PT]
 execute at @n[tag=mg_azr0,type=marker] positioned ~ ~1 ~ run tp @a[tag=MG_AZR0PT] ~ ~ ~
 
+execute at @n[tag=mg_azr0,type=marker] run kill @e[type=item,distance=..110]
+
 #execute as @a[tag=MG_AZR0PT] at @s run attribute @s generic.scale modifier add mg_azr0:init_scale 0.5 add_value
 execute as @a[tag=MG_AZR0PT] at @s run attribute @s generic.max_health modifier add mg_azr0:init_maxhp -16 add_value
 #execute as @a[tag=MG_AZR0PT] at @s run attribute @s minecraft:player.entity_interaction_range modifier add mg_azr0:init_reach 2 add_value
