@@ -1,9 +1,9 @@
-execute if score MG_AZR0_Timer rng7 matches ..12 store result score MG_AZR0_rng rng1 run random value 1..10
-execute if score MG_AZR0_Timer rng7 matches ..20 store result score MG_AZR0_rng rng1 run random value 1..15
-execute if score MG_AZR0_Timer rng7 matches ..30 store result score MG_AZR0_rng rng1 run random value 1..20
-execute if score MG_AZR0_Timer rng7 matches ..38 store result score MG_AZR0_rng rng1 run random value 1..29
-execute if score MG_AZR0_Timer rng7 matches ..60 store result score MG_AZR0_rng rng1 run random value 1..35
-execute if score MG_AZR0_Timer rng7 matches 61.. store result score MG_AZR0_rng rng1 run random value 1..36
+execute if score MG_AZR0_Timer rng7 matches 1.. store result score MG_AZR0_rng rng1 run random value 1..10
+execute if score MG_AZR0_Timer rng7 matches 13.. store result score MG_AZR0_rng rng1 run random value 1..15
+execute if score MG_AZR0_Timer rng7 matches 25.. store result score MG_AZR0_rng rng1 run random value 1..20
+execute if score MG_AZR0_Timer rng7 matches 36.. store result score MG_AZR0_rng rng1 run random value 1..29
+execute if score MG_AZR0_Timer rng7 matches 51.. store result score MG_AZR0_rng rng1 run random value 1..35
+execute if score MG_AZR0_Timer rng7 matches 71.. store result score MG_AZR0_rng rng1 run random value 1..36
 
 execute if score MG_AZR0_rng rng1 matches 1..10 run function skyblock:mg/azr0/particle/m_mob_tier1
 execute if score MG_AZR0_rng rng1 matches 1..10 run summon zombie ~ ~ ~ {CustomName:'[{"text":"僵尸"}]',DeathLootTable:"skyblock:mg/azr0/tier1",Tags:["MG_AZR0MOB"],attributes:[{id:"generic.attack_damage",base:1.0},{id:"generic.movement_speed",base:0.27},{id:"generic.max_health",base:6},{id:"generic.scale",base:1.5}],HandItems:[{},{}],HandDropChances:[0f,0f],ArmorItems:[{},{},{},{}],ArmorDropChances:[0f,0f,0f,0f],Health:6,PersistenceRequired:1b}
