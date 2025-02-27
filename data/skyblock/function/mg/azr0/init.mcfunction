@@ -25,6 +25,9 @@ scoreboard players set MG_AZR0_rng rng8 0
 #6：corex1
 #9：全局计时器
 
+scoreboard objectives add Azr_emerald dummy
+scoreboard objectives add Azr_diamond dummy
+
 execute as @a[distance=0..80] at @s run function skyblock:pvp/skywar/system/removeallgaming
 tag @a[distance=0..80] add MG_AZR0PT
 tag @a[tag=MG_AZR0PT] add Gaming
@@ -33,6 +36,8 @@ execute as @a[tag=MG_AZR0PT] at @s run attribute @s generic.max_health modifier 
 gamemode adventure @a[tag=MG_AZR0PT]
 effect give @a[tag=MG_AZR0PT] regeneration 3 19 true
 effect give @a[tag=MG_AZR0PT] saturation 3 19 true
+scoreboard players set @a[tag=MG_AZR0PT] Azr_emerald 0
+scoreboard players set @a[tag=MG_AZR0PT] Azr_diamond 0
 
 #启动core
 setblock 125078 0 -242 minecraft:redstone_block
