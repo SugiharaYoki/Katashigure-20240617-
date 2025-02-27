@@ -11,6 +11,7 @@ execute if score MG_AZR0_Timer rng9 matches 20 run bossbar add mg:azr0_bar "Ê±ùÊ
 execute if score MG_AZR0_Timer rng9 matches 40 run bossbar add mg:azr0_bar "..."
 
 
+execute if score MG_AZR0_Timer rng9 matches 59 run scoreboard players set MG_AZR0_Timer rng3 30
 execute if score MG_AZR0_Timer rng9 matches 60 run function skyblock:mg/azr0/event/general_start_round_announce
 
 
