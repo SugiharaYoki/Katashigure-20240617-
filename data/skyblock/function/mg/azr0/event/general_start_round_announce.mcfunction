@@ -1,3 +1,7 @@
+#阶段开始初始化
+kill @n[tag=mg_azr0_MobPortals,type=marker]
+scoreboard players set MG_AZR0_Timer rng1 0
+
 
 #1左 2右 3前 4后 5左右 6左前 7右前 8前后 9左右前 10左右后 11四方
 execute if score MG_AZR0_rng rng4 matches 1 run tellraw @a[tag=MG_AZR0PT] [{"text": "灵能感知：","color": "yellow","bold": true},{"text": " 怪物将从左翼来袭","color": "white","bold": false}]
