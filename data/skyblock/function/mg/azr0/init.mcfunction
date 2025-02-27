@@ -43,6 +43,7 @@ tp @a[tag=MG_AZR0PT] @n[tag=mg_azr0,type=marker]
 
 execute as @a[tag=MG_AZR0PT] at @s run attribute @s generic.scale modifier add mg_azr0:init_scale 0.5 add_value
 execute as @a[tag=MG_AZR0PT] at @s run attribute @s generic.max_health modifier add mg_azr0:init_maxhp -10 add_value
+execute as @a[tag=MG_AZR0PT] at @s run attribute @s minecraft:player.entity_interaction_range modifier add mg_azr0:init_reach 2 add_value
 gamemode adventure @a[tag=MG_AZR0PT]
 effect give @a[tag=MG_AZR0PT] regeneration 3 19 true
 effect give @a[tag=MG_AZR0PT] saturation 3 19 true
