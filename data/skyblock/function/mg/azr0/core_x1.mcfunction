@@ -16,7 +16,6 @@ execute if score MG_AZR0_Timer rng3 matches 1..20 store result bossbar mg:azr0_b
 
 #rng4
 #1左 2右 3前 4后 5左右 6左前 7右前 8前后 9左右前 10左右后 11四方
-execute if score MG_AZR0_Timer rng3 matches 0 store result score MG_AZR0_rng rng4 run random value 1..11
 execute if score MG_AZR0_Timer rng3 matches 0 run function skyblock:mg/azr0/event/general_start_round_announce
 
 
