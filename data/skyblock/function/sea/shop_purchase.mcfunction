@@ -33,20 +33,20 @@ execute if score @s sea_crafter matches 10005 as @s[scores={sea_i_emerald=..0}] 
 execute if score @s sea_crafter matches 10005 if entity @n[type=interaction,tag=SEAcrafter_foodless,distance=0..3] run tellraw @s {"text":"这台多功能工作站不售卖食物。虽然我也不清楚自己是怎么找到的购买食物选项。","color":"red"}
 execute if score @s sea_crafter matches 10005 as @s[scores={sea_i_emerald=1..}] unless entity @n[type=interaction,tag=SEAcrafter_foodless,distance=0..3] run tag @s add sea_purchase_pass
 execute if entity @s[tag=sea_purchase_pass] run playsound minecraft:item.armor.equip_iron neutral @s ~ ~ ~ 100
-execute if entity @s[tag=sea_purchase_pass] run function skyblock:sea/shop_purchase_food
 execute if entity @s[tag=sea_purchase_pass] run tellraw @a[gamemode=spectator,distance=0..20] [{"text":"◆ 玩家操作：","bold":true,"color":"yellow"},{"text":"购买食物","bold":true,"color":"white"}]
+execute if entity @s[tag=sea_purchase_pass] run function skyblock:sea/shop_purchase_food
 execute if entity @s[tag=sea_purchase_pass] run scoreboard players remove @s sea_i_emerald 1
 tag @s remove sea_purchase_pass
 execute if score @s sea_crafter matches 10027 as @s[scores={sea_i_emerald=..4}] unless entity @n[type=interaction,tag=SEAcrafter_foodless,distance=0..3] run tellraw @s {"text":"失败！余额不足！","color":"red"}
 execute if score @s sea_crafter matches 10027 if entity @n[type=interaction,tag=SEAcrafter_foodless,distance=0..3] run tellraw @s {"text":"这台多功能工作站不售卖食物。虽然我也不清楚自己是怎么找到的购买食物选项。","color":"red"}
 execute if score @s sea_crafter matches 10027 as @s[scores={sea_i_emerald=5..}] unless entity @n[type=interaction,tag=SEAcrafter_foodless,distance=0..3] run tag @s add sea_purchase_pass
 execute if entity @s[tag=sea_purchase_pass] run playsound minecraft:item.armor.equip_iron neutral @s ~ ~ ~ 100
-execute if entity @s[tag=sea_purchase_pass] run function skyblock:sea/shop_purchase_food
-execute if entity @s[tag=sea_purchase_pass] run function skyblock:sea/shop_purchase_food
-execute if entity @s[tag=sea_purchase_pass] run function skyblock:sea/shop_purchase_food
-execute if entity @s[tag=sea_purchase_pass] run function skyblock:sea/shop_purchase_food
-execute if entity @s[tag=sea_purchase_pass] run function skyblock:sea/shop_purchase_food
 execute if entity @s[tag=sea_purchase_pass] run tellraw @a[gamemode=spectator,distance=0..20] [{"text":"◆ 玩家操作：","bold":true,"color":"yellow"},{"text":"购买5份食物","bold":true,"color":"white"}]
+execute if entity @s[tag=sea_purchase_pass] run function skyblock:sea/shop_purchase_food
+execute if entity @s[tag=sea_purchase_pass] run function skyblock:sea/shop_purchase_food
+execute if entity @s[tag=sea_purchase_pass] run function skyblock:sea/shop_purchase_food
+execute if entity @s[tag=sea_purchase_pass] run function skyblock:sea/shop_purchase_food
+execute if entity @s[tag=sea_purchase_pass] run function skyblock:sea/shop_purchase_food
 execute if entity @s[tag=sea_purchase_pass] run scoreboard players remove @s sea_i_emerald 5
 tag @s remove sea_purchase_pass
 
