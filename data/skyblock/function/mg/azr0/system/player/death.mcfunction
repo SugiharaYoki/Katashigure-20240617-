@@ -7,6 +7,7 @@ function skyblock:pvp/skywar/system/removeallgaming
 
 effect clear @s
 
+clear @s
 
 tag @s remove MG_AZR0PT
 
