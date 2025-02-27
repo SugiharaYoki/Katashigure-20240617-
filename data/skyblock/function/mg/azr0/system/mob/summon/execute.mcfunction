@@ -1,12 +1,12 @@
 
-execute if score MG_AZR0_Timer rng9 matches 1..3 store result score MG_AZR0_rng rng1 run random value -20..10
-execute if score MG_AZR0_Timer rng9 matches 4..7 store result score MG_AZR0_rng rng1 run random value -20..13
-execute if score MG_AZR0_Timer rng9 matches 8..10 store result score MG_AZR0_rng rng1 run random value -15..26
-execute if score MG_AZR0_Timer rng9 matches 11..14 store result score MG_AZR0_rng rng1 run random value -15..39
-execute if score MG_AZR0_Timer rng9 matches 15..19 store result score MG_AZR0_rng rng1 run random value -15..44
-execute if score MG_AZR0_Timer rng9 matches 20..39 store result score MG_AZR0_rng rng1 run random value -10..65
-execute if score MG_AZR0_Timer rng9 matches 40..59 store result score MG_AZR0_rng rng1 run random value -10..75
-execute if score MG_AZR0_Timer rng9 matches 60.. store result score MG_AZR0_rng rng1 run random value -10..83
+execute if score MG_AZR0_Timer rng2 matches 1..3 store result score MG_AZR0_rng rng1 run random value -20..10
+execute if score MG_AZR0_Timer rng2 matches 4..7 store result score MG_AZR0_rng rng1 run random value -20..13
+execute if score MG_AZR0_Timer rng2 matches 8..10 store result score MG_AZR0_rng rng1 run random value -15..26
+execute if score MG_AZR0_Timer rng2 matches 11..14 store result score MG_AZR0_rng rng1 run random value -15..39
+execute if score MG_AZR0_Timer rng2 matches 15..19 store result score MG_AZR0_rng rng1 run random value -15..44
+execute if score MG_AZR0_Timer rng2 matches 20..39 store result score MG_AZR0_rng rng1 run random value -10..65
+execute if score MG_AZR0_Timer rng2 matches 40..59 store result score MG_AZR0_rng rng1 run random value -10..75
+execute if score MG_AZR0_Timer rng2 matches 60.. store result score MG_AZR0_rng rng1 run random value -10..83
 
 
 execute if score MG_AZR0_rng rng1 matches -20..10 at @e[tag=mg_azr0_MobPortals,type=market,limit=1,sort=random] run function skyblock:mg/azr0/m/zombie
