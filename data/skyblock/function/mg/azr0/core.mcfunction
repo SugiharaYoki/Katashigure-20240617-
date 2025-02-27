@@ -11,6 +11,7 @@ execute if score MG_AZR0_Timer rng3 matches 10.. if score MG_AZR0_Timer rng4 mat
 execute if score MG_AZR0_Timer rng3 matches 10.. if score MG_AZR0_Timer rng4 matches ..0 run function skyblock:mg/azr0/system/mob/interval
 
 
+execute as @a[tag=MG_AZR0PT] at @s run function skyblock:mg/azr0/system/player/ui
 
 
 

@@ -27,7 +27,6 @@ execute if score MG_AZR0_Timer rng3 matches 10.. as @e[tag=mg_azr0_MobPortals_ve
 
 
 
-execute as @a[tag=MG_AZR0PT] at @s run function skyblock:mg/azr0/system/player/ui
 
 
 
