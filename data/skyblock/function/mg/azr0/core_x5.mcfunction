@@ -1,5 +1,5 @@
 #计时器0
-scoreboard players add MG_AZR0_Timer rng1 1
+execute if score MG_AZR0_Timer rng9 matches 60.. run scoreboard players add MG_AZR0_Timer rng1 1
 scoreboard players add MG_AZR0_Timer rng9 1
 
 #难度增长
