@@ -10,7 +10,7 @@ scoreboard players set MG_AZR0_Timer rng4 0
 scoreboard players set MG_AZR0_Timer rng5 0
 scoreboard players set MG_AZR0_Timer rng6 0
 scoreboard players set MG_AZR0_Timer rng7 0
-scoreboard players set MG_AZR0_Timer rng9 0
+scoreboard players set MG_AZR0_Timer rng9 1
 
 scoreboard players set MG_AZR0_rng rng1 0
 scoreboard players set MG_AZR0_rng rng2 0
