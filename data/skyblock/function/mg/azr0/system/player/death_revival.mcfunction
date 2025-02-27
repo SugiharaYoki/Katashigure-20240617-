@@ -3,7 +3,7 @@ function skyblock:clear_attribute_modifiers
 particle totem_of_undying ~ ~1 ~ 0.4 0.8 0.4 0.7 100
 particle minecraft:flash ~ ~1 ~ 0.4 0.7 0.4 0.3 2
 playsound item.totem.use master @a ~ ~ ~ 2
-tellraw @a[tag=MG_AZR0PT] [{"selector":"@s","color":"blue"},{"text":" 已使用下界命星复活！","color":"gold"}]
+tellraw @a[tag=MG_AZR0PT] [{"selector":"@s","color":"blue"},{"text":" 已使用命星复活！","color":"green"}]
 clear @s nether_star 1
 tag @s add MG_AZR0PT_revivaling
 
