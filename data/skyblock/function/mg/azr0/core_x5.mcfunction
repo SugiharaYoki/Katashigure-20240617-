@@ -19,7 +19,7 @@ execute if score MG_AZR0_Timer rng9 matches 3..5 run playsound ambient.soul_sand
 execute if score MG_AZR0_Timer rng9 matches 12..50 run function skyblock:mg/azr0/event/0_intro
 
 
-execute if score MG_AZR0_Timer rng9 matches 60 run scoreboard players set MG_AZR0_Timer rng3 0
+execute if score MG_AZR0_Timer rng9 matches 60 run scoreboard players set MG_AZR0_Timer rng3 30
 
 
 execute if score MG_AZR0_Timer rng3 matches 10.. as @e[tag=mg_azr0_MobPortals_horizontal,limit=2] at @s run function skyblock:mg/azr0/particle/mob_portal_horizontal
