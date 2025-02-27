@@ -20,6 +20,7 @@ execute if score MG_AZR0_Timer rng3 matches 0 run bossbar set mg:azr0_bar color 
 execute if score MG_AZR0_Timer rng3 matches 0 run bossbar set mg:azr0_bar style progress
 execute if score MG_AZR0_Timer rng3 matches 0 run bossbar set mg:azr0_bar value 1
 execute if score MG_AZR0_Timer rng3 matches 0 run bossbar set mg:azr0_bar max 1
+execute if score MG_AZR0_Timer rng3 matches 20 run kill @e[type=marker,tag=mg_azr0_MobPortals]
 execute if score MG_AZR0_Timer rng3 matches 1..20 run bossbar add mg:azr0_bar "下一波敌人即将到来..."
 execute if score MG_AZR0_Timer rng3 matches 1..20 run bossbar set mg:azr0_bar color yellow
 execute if score MG_AZR0_Timer rng3 matches 1..20 run bossbar set mg:azr0_bar style notched_20
