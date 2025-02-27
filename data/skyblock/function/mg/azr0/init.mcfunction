@@ -6,6 +6,7 @@ execute positioned 125078 3 -241 run summon marker ~ ~ ~ {Tags:["mg_azr0"]}
 scoreboard players set MG_AZR0_Timer rng1 0
 scoreboard players set MG_AZR0_Timer rng2 0
 scoreboard players set MG_AZR0_Timer rng3 0
+scoreboard players set MG_AZR0_Timer rng4 0
 scoreboard players set MG_AZR0_Timer rng5 0
 scoreboard players set MG_AZR0_Timer rng6 0
 scoreboard players set MG_AZR0_Timer rng9 0
@@ -22,7 +23,8 @@ scoreboard players set MG_AZR0_rng rng8 0
 
 #1：基础计时器
 #2：难度系数
-#3：过渡等待间隔计时器
+#3：波数过渡等待 - 间隔计时器
+#4：敌人生成 - 间隔计时器
 #5：corex5
 #6：corex1
 #9：全局计时器
