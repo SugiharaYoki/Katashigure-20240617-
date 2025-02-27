@@ -6,6 +6,6 @@ title @s actionbar [{"text":"绿宝石 ","color":"green","bold": true},{"score":
 
 
 
-execute if items entity @s container.* nether_star run function skyblock:mg/azr0/system/player/death_revival
-execute unless items entity @s container.* nether_star run function skyblock:mg/azr0/system/player/death
+execute if items entity @s[scores={Azr_isDead=1..}] container.* nether_star run function skyblock:mg/azr0/system/player/death_revival
+execute unless items entity @s[scores={Azr_isDead=1..}] container.* nether_star run function skyblock:mg/azr0/system/player/death
 
