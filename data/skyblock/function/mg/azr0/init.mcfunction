@@ -14,7 +14,7 @@ scoreboard players set MG_AZR0_Timer rng9 1
 
 scoreboard players set MG_AZR0_rng rng1 0
 scoreboard players set MG_AZR0_rng rng2 0
-scoreboard players set MG_AZR0_rng rng3 0
+scoreboard players set MG_AZR0_rng rng3 -999
 scoreboard players set MG_AZR0_rng rng4 0
 scoreboard players set MG_AZR0_rng rng5 0
 scoreboard players set MG_AZR0_rng rng6 0
