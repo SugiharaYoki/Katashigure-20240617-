@@ -9,11 +9,61 @@ execute if score MG_AZR0_Timer rng9 matches 3..5 run playsound ambient.soul_sand
 execute if score MG_AZR0_Timer rng9 matches 3..5 run playsound ambient.soul_sand_valley.mood ambient @a ~ ~20 ~ 10 0.8
 
 
-execute if score MG_AZR0_Timer rng9 matches 12 run bossbar add mg:azr0_bar "..."
-execute if score MG_AZR0_Timer rng9 matches 12 run bossbar set mg:azr0_bar color purple
-execute if score MG_AZR0_Timer rng9 matches 12 run bossbar set mg:azr0_bar style notched_20
-execute if score MG_AZR0_Timer rng9 matches 12 run bossbar set mg:azr0_bar value 20
-execute if score MG_AZR0_Timer rng9 matches 12 run bossbar set mg:azr0_bar players @a[tag=MG_AZR0PT]
+execute if score MG_AZR0_Timer rng9 matches 12..50 run function skyblock:mg/azr0/event/0_intro
+
+
+execute if score MG_AZR0_Timer rng9 matches 60 run scoreboard players set MG_AZR0_Timer rng3 0
+
+
+execute if score MG_AZR0_Timer rng3 matches 0 run bossbar add mg:azr0_bar "迎战敌人"
+execute if score MG_AZR0_Timer rng3 matches 0 run bossbar set mg:azr0_bar color green
+execute if score MG_AZR0_Timer rng3 matches 0 run bossbar set mg:azr0_bar style progress
+execute if score MG_AZR0_Timer rng3 matches 0 run bossbar set mg:azr0_bar value 1
+execute if score MG_AZR0_Timer rng3 matches 0 run bossbar set mg:azr0_bar max 1
+execute if score MG_AZR0_Timer rng3 matches 0 run bossbar set mg:azr0_bar players @a[tag=MG_AZR0PT]
+
+
+execute if score MG_AZR0_Timer rng3 matches 1..20 run bossbar add mg:azr0_bar "下一波敌人即将到来..."
+execute if score MG_AZR0_Timer rng3 matches 1..20 run bossbar set mg:azr0_bar color yellow
+execute if score MG_AZR0_Timer rng3 matches 1..20 run bossbar set mg:azr0_bar style notched_20
+execute if score MG_AZR0_Timer rng3 matches 1..20 run bossbar set mg:azr0_bar max 20
+execute if score MG_AZR0_Timer rng3 matches 1..20 run bossbar set mg:azr0_bar players @a[tag=MG_AZR0PT]
+
+execute if score MG_AZR0_Timer rng3 matches 1..20 store result bossbar mg:azr0_bar value run scoreboard players get MG_AZR0_Timer rng3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
