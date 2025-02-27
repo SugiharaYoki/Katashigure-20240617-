@@ -9,7 +9,8 @@ execute if score MG_AZR0_Timer rng1 matches 1 if score MG_AZR0_Timer rng9 matche
 execute if score MG_AZR0_Timer rng1 matches 1 if score MG_AZR0_Timer rng9 matches 16..30 store result score MG_AZR0_Timer rng3 run random value 25..45
 execute if score MG_AZR0_Timer rng1 matches 1 if score MG_AZR0_Timer rng9 matches 31..45 store result score MG_AZR0_Timer rng3 run random value 25..50
 execute if score MG_AZR0_Timer rng1 matches 1 if score MG_AZR0_Timer rng9 matches 46..70 store result score MG_AZR0_Timer rng3 run random value 30..55
-execute if score MG_AZR0_Timer rng1 matches 1 if score MG_AZR0_Timer rng9 matches 71.. store result score MG_AZR0_Timer rng3 run random value 30..60
+execute if score MG_AZR0_Timer rng1 matches 1 if score MG_AZR0_Timer rng9 matches 71..100 store result score MG_AZR0_Timer rng3 run random value 30..60
+execute if score MG_AZR0_Timer rng1 matches 1 if score MG_AZR0_Timer rng9 matches 101.. store result score MG_AZR0_Timer rng3 run random value 35..60
 
 execute if score MG_AZR0_Timer rng9 matches 3..5 run playsound ambient.soul_sand_valley.additions ambient @a ~ ~20 ~ 10 0.8
 execute if score MG_AZR0_Timer rng9 matches 3..5 run playsound ambient.soul_sand_valley.mood ambient @a ~ ~20 ~ 10 0.8
