@@ -10,6 +10,13 @@ execute if items entity @s[scores={Azr_isDead=1..}] container.* nether_star run 
 execute unless items entity @s[scores={Azr_isDead=1..}] container.* nether_star run function skyblock:mg/azr0/system/player/death
 
 item replace entity @s hotbar.0 with wooden_sword[unbreakable={}]
+item replace entity @s hotbar.1 with barrier
+item replace entity @s hotbar.2 with barrier
+item replace entity @s hotbar.3 with barrier
+item replace entity @s hotbar.4 with barrier
+item replace entity @s hotbar.5 with barrier
+item replace entity @s hotbar.6 with barrier
+item replace entity @s hotbar.7 with barrier
 
 execute if entity @s[scores={Azr0_UPG_breadstorage=0,Azr_bread_recharge_level=1..,Azr_bread_recharge=1..}] run scoreboard players set @s Azr_bread_recharge 0
 execute if entity @s[scores={Azr0_UPG_breadstorage=1,Azr_bread_recharge_level=2..,Azr_bread_recharge=1..}] run scoreboard players set @s Azr_bread_recharge 0
