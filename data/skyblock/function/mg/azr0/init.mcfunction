@@ -5,7 +5,7 @@ execute positioned 125078 3 -241 run summon marker ~ ~ ~ {Tags:["mg_azr0"]}
 
 scoreboard players set MG_AZR0_Timer rng1 0
 scoreboard players set MG_AZR0_Timer rng2 0
-scoreboard players set MG_AZR0_Timer rng3 0
+scoreboard players set MG_AZR0_Timer rng3 -1
 scoreboard players set MG_AZR0_Timer rng4 0
 scoreboard players set MG_AZR0_Timer rng5 0
 scoreboard players set MG_AZR0_Timer rng6 0
