@@ -1,6 +1,5 @@
-#CENTER
-execute positioned 125078 3 -241 run summon marker ~ ~ ~ {Tags:["mg_azr0"]}
-
+#计时器0
+scoreboard players add MG_AZR0_Timer rng1 0
 
 
 
