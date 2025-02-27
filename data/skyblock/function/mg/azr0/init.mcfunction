@@ -53,8 +53,6 @@ scoreboard players set @a[tag=MG_AZR0PT] Azr_isDead 0
 #启动core
 setblock 125078 0 -242 minecraft:redstone_block
 
-forceload remove 125078 -241 125078 -241
-
 
 
 
