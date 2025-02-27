@@ -130,3 +130,6 @@ effect give @s wither 1 0 true
 tag @s remove ukiyo_nrb
 tag @s remove UNRBPT
 tag @s remove got_hit
+tag @s remove MG_AZR0PT
+
+
