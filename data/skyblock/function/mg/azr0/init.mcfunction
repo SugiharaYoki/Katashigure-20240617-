@@ -35,11 +35,12 @@ scoreboard objectives add Azr_emerald dummy
 scoreboard objectives add Azr_diamond dummy
 scoreboard objectives add Azr_isDead deathCount
 
+execute as @a[distance=0..80] at @s run function skyblock:pvp/skywar/system/removeallgaming
+
 tag @a[distance=0..80] add MG_AZR0PT
 tag @a[tag=MG_AZR0PT] add Gaming
 tp @a[tag=MG_AZR0PT] @n[tag=mg_azr0,type=marker]
 
-execute as @a[distance=0..80] at @s run function skyblock:pvp/skywar/system/removeallgaming
 execute as @a[tag=MG_AZR0PT] at @s run attribute @s generic.scale modifier add mg_azr0:init_scale 0.5 add_value
 execute as @a[tag=MG_AZR0PT] at @s run attribute @s generic.max_health modifier add mg_azr0:init_maxhp -10 add_value
 gamemode adventure @a[tag=MG_AZR0PT]
