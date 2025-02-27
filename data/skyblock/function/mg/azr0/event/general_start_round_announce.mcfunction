@@ -13,29 +13,30 @@ execute if score MG_AZR0_rng rng4 matches 10 run tellraw @a[tag=MG_AZR0PT] [{"te
 execute if score MG_AZR0_rng rng4 matches 11 run tellraw @a[tag=MG_AZR0PT] [{"text": "灵能感知：","color": "yellow","bold": true},{"text": " 怪物将从全部方向来袭！！","color": "red","bold": false}]
 
 
-execute if score MG_AZR0_rng rng4 matches 1 at @n[tag=mg_azr0,type=marker] positioned ~-34 ~ ~ run summon marker ~ ~ ~ {Tags:["mg_azr0_MobPortals","mg_azr0_MobPortals_horizontal"]}
-execute if score MG_AZR0_rng rng4 matches 5 at @n[tag=mg_azr0,type=marker] positioned ~-34 ~ ~ run summon marker ~ ~ ~ {Tags:["mg_azr0_MobPortals","mg_azr0_MobPortals_horizontal"]}
-execute if score MG_AZR0_rng rng4 matches 6 at @n[tag=mg_azr0,type=marker] positioned ~-34 ~ ~ run summon marker ~ ~ ~ {Tags:["mg_azr0_MobPortals","mg_azr0_MobPortals_horizontal"]}
-execute if score MG_AZR0_rng rng4 matches 9 at @n[tag=mg_azr0,type=marker] positioned ~-34 ~ ~ run summon marker ~ ~ ~ {Tags:["mg_azr0_MobPortals","mg_azr0_MobPortals_horizontal"]}
-execute if score MG_AZR0_rng rng4 matches 10 at @n[tag=mg_azr0,type=marker] positioned ~-34 ~ ~ run summon marker ~ ~ ~ {Tags:["mg_azr0_MobPortals","mg_azr0_MobPortals_horizontal"]}
-execute if score MG_AZR0_rng rng4 matches 11 at @n[tag=mg_azr0,type=marker] positioned ~-34 ~ ~ run summon marker ~ ~ ~ {Tags:["mg_azr0_MobPortals","mg_azr0_MobPortals_horizontal"]}
+execute if score MG_AZR0_rng rng4 matches 1 at @n[tag=mg_azr0,type=marker] positioned ~-34 ~1 ~ run summon marker ~ ~ ~ {Tags:["mg_azr0_MobPortals","mg_azr0_MobPortals_horizontal"]}
+execute if score MG_AZR0_rng rng4 matches 5 at @n[tag=mg_azr0,type=marker] positioned ~-34 ~1 ~ run summon marker ~ ~ ~ {Tags:["mg_azr0_MobPortals","mg_azr0_MobPortals_horizontal"]}
+execute if score MG_AZR0_rng rng4 matches 6 at @n[tag=mg_azr0,type=marker] positioned ~-34 ~1 ~ run summon marker ~ ~ ~ {Tags:["mg_azr0_MobPortals","mg_azr0_MobPortals_horizontal"]}
+execute if score MG_AZR0_rng rng4 matches 9 at @n[tag=mg_azr0,type=marker] positioned ~-34 ~1 ~ run summon marker ~ ~ ~ {Tags:["mg_azr0_MobPortals","mg_azr0_MobPortals_horizontal"]}
+execute if score MG_AZR0_rng rng4 matches 10 at @n[tag=mg_azr0,type=marker] positioned ~-34 ~1 ~ run summon marker ~ ~ ~ {Tags:["mg_azr0_MobPortals","mg_azr0_MobPortals_horizontal"]}
+execute if score MG_AZR0_rng rng4 matches 11 at @n[tag=mg_azr0,type=marker] positioned ~-34 ~1 ~ run summon marker ~ ~ ~ {Tags:["mg_azr0_MobPortals","mg_azr0_MobPortals_horizontal"]}
 
-execute if score MG_AZR0_rng rng4 matches 2 at @n[tag=mg_azr0,type=marker] positioned ~34 ~ ~ run summon marker ~ ~ ~ {Tags:["mg_azr0_MobPortals","mg_azr0_MobPortals_horizontal"]}
-execute if score MG_AZR0_rng rng4 matches 5 at @n[tag=mg_azr0,type=marker] positioned ~34 ~ ~ run summon marker ~ ~ ~ {Tags:["mg_azr0_MobPortals","mg_azr0_MobPortals_horizontal"]}
-execute if score MG_AZR0_rng rng4 matches 7 at @n[tag=mg_azr0,type=marker] positioned ~34 ~ ~ run summon marker ~ ~ ~ {Tags:["mg_azr0_MobPortals","mg_azr0_MobPortals_horizontal"]}
-execute if score MG_AZR0_rng rng4 matches 9 at @n[tag=mg_azr0,type=marker] positioned ~34 ~ ~ run summon marker ~ ~ ~ {Tags:["mg_azr0_MobPortals","mg_azr0_MobPortals_horizontal"]}
-execute if score MG_AZR0_rng rng4 matches 10 at @n[tag=mg_azr0,type=marker] positioned ~34 ~ ~ run summon marker ~ ~ ~ {Tags:["mg_azr0_MobPortals","mg_azr0_MobPortals_horizontal"]}
-execute if score MG_AZR0_rng rng4 matches 11 at @n[tag=mg_azr0,type=marker] positioned ~34 ~ ~ run summon marker ~ ~ ~ {Tags:["mg_azr0_MobPortals","mg_azr0_MobPortals_horizontal"]}
+execute if score MG_AZR0_rng rng4 matches 2 at @n[tag=mg_azr0,type=marker] positioned ~34 ~1 ~ run summon marker ~ ~ ~ {Tags:["mg_azr0_MobPortals","mg_azr0_MobPortals_horizontal"]}
+execute if score MG_AZR0_rng rng4 matches 5 at @n[tag=mg_azr0,type=marker] positioned ~34 ~1 ~ run summon marker ~ ~ ~ {Tags:["mg_azr0_MobPortals","mg_azr0_MobPortals_horizontal"]}
+execute if score MG_AZR0_rng rng4 matches 7 at @n[tag=mg_azr0,type=marker] positioned ~34 ~1 ~ run summon marker ~ ~ ~ {Tags:["mg_azr0_MobPortals","mg_azr0_MobPortals_horizontal"]}
+execute if score MG_AZR0_rng rng4 matches 9 at @n[tag=mg_azr0,type=marker] positioned ~34 ~1 ~ run summon marker ~ ~ ~ {Tags:["mg_azr0_MobPortals","mg_azr0_MobPortals_horizontal"]}
+execute if score MG_AZR0_rng rng4 matches 10 at @n[tag=mg_azr0,type=marker] positioned ~34 ~1 ~ run summon marker ~ ~ ~ {Tags:["mg_azr0_MobPortals","mg_azr0_MobPortals_horizontal"]}
+execute if score MG_AZR0_rng rng4 matches 11 at @n[tag=mg_azr0,type=marker] positioned ~34 ~1 ~ run summon marker ~ ~ ~ {Tags:["mg_azr0_MobPortals","mg_azr0_MobPortals_horizontal"]}
 
 
-execute if score MG_AZR0_rng rng4 matches 3 at @n[tag=mg_azr0,type=marker] positioned ~ ~ ~-19 run summon marker ~ ~ ~ {Tags:["mg_azr0_MobPortals","mg_azr0_MobPortals_vertical"]}
-execute if score MG_AZR0_rng rng4 matches 6 at @n[tag=mg_azr0,type=marker] positioned ~ ~ ~-19 run summon marker ~ ~ ~ {Tags:["mg_azr0_MobPortals","mg_azr0_MobPortals_vertical"]}
-execute if score MG_AZR0_rng rng4 matches 7 at @n[tag=mg_azr0,type=marker] positioned ~ ~ ~-19 run summon marker ~ ~ ~ {Tags:["mg_azr0_MobPortals","mg_azr0_MobPortals_vertical"]}
-execute if score MG_AZR0_rng rng4 matches 8 at @n[tag=mg_azr0,type=marker] positioned ~ ~ ~-19 run summon marker ~ ~ ~ {Tags:["mg_azr0_MobPortals","mg_azr0_MobPortals_vertical"]}
-execute if score MG_AZR0_rng rng4 matches 9 at @n[tag=mg_azr0,type=marker] positioned ~ ~ ~-19 run summon marker ~ ~ ~ {Tags:["mg_azr0_MobPortals","mg_azr0_MobPortals_vertical"]}
-execute if score MG_AZR0_rng rng4 matches 11 at @n[tag=mg_azr0,type=marker] positioned ~ ~ ~-19 run summon marker ~ ~ ~ {Tags:["mg_azr0_MobPortals","mg_azr0_MobPortals_vertical"]}
+execute if score MG_AZR0_rng rng4 matches 3 at @n[tag=mg_azr0,type=marker] positioned ~ ~1 ~-19 run summon marker ~ ~ ~ {Tags:["mg_azr0_MobPortals","mg_azr0_MobPortals_vertical"]}
+execute if score MG_AZR0_rng rng4 matches 6 at @n[tag=mg_azr0,type=marker] positioned ~ ~1 ~-19 run summon marker ~ ~ ~ {Tags:["mg_azr0_MobPortals","mg_azr0_MobPortals_vertical"]}
+execute if score MG_AZR0_rng rng4 matches 7 at @n[tag=mg_azr0,type=marker] positioned ~ ~1 ~-19 run summon marker ~ ~ ~ {Tags:["mg_azr0_MobPortals","mg_azr0_MobPortals_vertical"]}
+execute if score MG_AZR0_rng rng4 matches 8 at @n[tag=mg_azr0,type=marker] positioned ~ ~1 ~-19 run summon marker ~ ~ ~ {Tags:["mg_azr0_MobPortals","mg_azr0_MobPortals_vertical"]}
+execute if score MG_AZR0_rng rng4 matches 9 at @n[tag=mg_azr0,type=marker] positioned ~ ~1 ~-19 run summon marker ~ ~ ~ {Tags:["mg_azr0_MobPortals","mg_azr0_MobPortals_vertical"]}
+execute if score MG_AZR0_rng rng4 matches 11 at @n[tag=mg_azr0,type=marker] positioned ~ ~1 ~-19 run summon marker ~ ~ ~ {Tags:["mg_azr0_MobPortals","mg_azr0_MobPortals_vertical"]}
 
-execute if score MG_AZR0_rng rng4 matches 4 at @n[tag=mg_azr0,type=marker] positioned ~ ~ ~15 run summon marker ~ ~ ~ {Tags:["mg_azr0_MobPortals","mg_azr0_MobPortals_vertical"]}
-execute if score MG_AZR0_rng rng4 matches 8 at @n[tag=mg_azr0,type=marker] positioned ~ ~ ~15 run summon marker ~ ~ ~ {Tags:["mg_azr0_MobPortals","mg_azr0_MobPortals_vertical"]}
-execute if score MG_AZR0_rng rng4 matches 10 at @n[tag=mg_azr0,type=marker] positioned ~ ~ ~15 run summon marker ~ ~ ~ {Tags:["mg_azr0_MobPortals","mg_azr0_MobPortals_vertical"]}
-execute if score MG_AZR0_rng rng4 matches 11 at @n[tag=mg_azr0,type=marker] positioned ~ ~ ~15 run summon marker ~ ~ ~ {Tags:["mg_azr0_MobPortals","mg_azr0_MobPortals_vertical"]}
+execute if score MG_AZR0_rng rng4 matches 4 at @n[tag=mg_azr0,type=marker] positioned ~ ~1 ~15 run summon marker ~ ~ ~ {Tags:["mg_azr0_MobPortals","mg_azr0_MobPortals_vertical"]}
+execute if score MG_AZR0_rng rng4 matches 8 at @n[tag=mg_azr0,type=marker] positioned ~ ~1 ~15 run summon marker ~ ~ ~ {Tags:["mg_azr0_MobPortals","mg_azr0_MobPortals_vertical"]}
+execute if score MG_AZR0_rng rng4 matches 10 at @n[tag=mg_azr0,type=marker] positioned ~ ~1 ~15 run summon marker ~ ~ ~ {Tags:["mg_azr0_MobPortals","mg_azr0_MobPortals_vertical"]}
+execute if score MG_AZR0_rng rng4 matches 11 at @n[tag=mg_azr0,type=marker] positioned ~ ~1 ~15 run summon marker ~ ~ ~ {Tags:["mg_azr0_MobPortals","mg_azr0_MobPortals_vertical"]}
+
