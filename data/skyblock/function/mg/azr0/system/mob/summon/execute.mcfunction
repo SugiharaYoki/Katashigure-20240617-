@@ -9,13 +9,13 @@ execute if score MG_AZR0_Timer rng2 matches 40..59 store result score MG_AZR0_rn
 execute if score MG_AZR0_Timer rng2 matches 60.. store result score MG_AZR0_rng rng1 run random value -10..83
 
 
-execute if score MG_AZR0_rng rng1 matches -20..10 at @e[tag=mg_azr0_MobPortals,type=market,limit=1,sort=random] run function skyblock:mg/azr0/m/zombie
-execute if score MG_AZR0_rng rng1 matches 11..16 at @e[tag=mg_azr0_MobPortals,type=market,limit=1,sort=random] run function skyblock:mg/azr0/m/pillager
-execute if score MG_AZR0_rng rng1 matches 17..26 at @e[tag=mg_azr0_MobPortals,type=market,limit=1,sort=random] run function skyblock:mg/azr0/m/vindicator
-execute if score MG_AZR0_rng rng1 matches 27..36 at @e[tag=mg_azr0_MobPortals,type=market,limit=1,sort=random] run function skyblock:mg/azr0/m/silverfish
-execute if score MG_AZR0_rng rng1 matches 37..44 at @e[tag=mg_azr0_MobPortals,type=market,limit=1,sort=random] run function skyblock:mg/azr0/m/skeleton
-execute if score MG_AZR0_rng rng1 matches 45..60 at @e[tag=mg_azr0_MobPortals,type=market,limit=1,sort=random] run function skyblock:mg/azr0/m/husk
-execute if score MG_AZR0_rng rng1 matches 61..67 at @e[tag=mg_azr0_MobPortals,type=market,limit=1,sort=random] run function skyblock:mg/azr0/m/stray
-execute if score MG_AZR0_rng rng1 matches 68..73 at @e[tag=mg_azr0_MobPortals,type=market,limit=1,sort=random] run function skyblock:mg/azr0/m/bogged
-execute if score MG_AZR0_rng rng1 matches 74..79 at @e[tag=mg_azr0_MobPortals,type=market,limit=1,sort=random] run function skyblock:mg/azr0/m/creeper
-execute if score MG_AZR0_rng rng1 matches 80..83 at @e[tag=mg_azr0_MobPortals,type=market,limit=1,sort=random] run function skyblock:mg/azr0/m/zombie_villager
+execute if score MG_AZR0_rng rng1 matches -20..10 at @e[tag=mg_azr0_MobPortals,type=marker,limit=1,sort=random] run function skyblock:mg/azr0/m/zombie
+execute if score MG_AZR0_rng rng1 matches 11..16 at @e[tag=mg_azr0_MobPortals,type=marker,limit=1,sort=random] run function skyblock:mg/azr0/m/pillager
+execute if score MG_AZR0_rng rng1 matches 17..26 at @e[tag=mg_azr0_MobPortals,type=marker,limit=1,sort=random] run function skyblock:mg/azr0/m/vindicator
+execute if score MG_AZR0_rng rng1 matches 27..36 at @e[tag=mg_azr0_MobPortals,type=marker,limit=1,sort=random] run function skyblock:mg/azr0/m/silverfish
+execute if score MG_AZR0_rng rng1 matches 37..44 at @e[tag=mg_azr0_MobPortals,type=marker,limit=1,sort=random] run function skyblock:mg/azr0/m/skeleton
+execute if score MG_AZR0_rng rng1 matches 45..60 at @e[tag=mg_azr0_MobPortals,type=marker,limit=1,sort=random] run function skyblock:mg/azr0/m/husk
+execute if score MG_AZR0_rng rng1 matches 61..67 at @e[tag=mg_azr0_MobPortals,type=marker,limit=1,sort=random] run function skyblock:mg/azr0/m/stray
+execute if score MG_AZR0_rng rng1 matches 68..73 at @e[tag=mg_azr0_MobPortals,type=marker,limit=1,sort=random] run function skyblock:mg/azr0/m/bogged
+execute if score MG_AZR0_rng rng1 matches 74..79 at @e[tag=mg_azr0_MobPortals,type=marker,limit=1,sort=random] run function skyblock:mg/azr0/m/creeper
+execute if score MG_AZR0_rng rng1 matches 80..83 at @e[tag=mg_azr0_MobPortals,type=marker,limit=1,sort=random] run function skyblock:mg/azr0/m/zombie_villager
