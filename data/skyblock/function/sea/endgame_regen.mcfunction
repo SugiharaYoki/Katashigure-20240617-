@@ -90,7 +90,7 @@ gamerule doDaylightCycle true
 tellraw @a[tag=!Gaming] {"text": "2135年6月29日","color": "green"}
 tellraw @a[tag=!Gaming] {"text": "忒尔克西海上钻井平台已经失联24小时整，","color": "green"}
 tellraw @a[tag=!Gaming] {"text": "太平洋石油管理局的高层决定派你前去调查情况。","color": "green"}
-tellraw @a[tag=!Gaming] [{"text": "『厄珀娅的悲歌』","color": "light_purple","bold": true},{"text": " 以雷米尔之名，见证他们的生命……","color": "green","bold": false}]
+tellraw @a[tag=!Gaming] [{"text": "『厄珀娅的悲歌』","color": "light_purple","bold": true},{"text": " 以雷米尔之名，见证他们的结局……","color": "green","bold": false}]
 tag @a remove sea_dead
 scoreboard players reset @n[tag=sc] sea_4temp1
 scoreboard players set @n[tag=sc] sea_4temp2 0
