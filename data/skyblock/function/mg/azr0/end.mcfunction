@@ -48,4 +48,4 @@ execute as @a[tag=MG_AZR0PT] at @s run function skyblock:mg/azr0/system/player/d
 
 tag @a remove MG_AZR0PT
 
-
+bossbar remove mg:azr0_bar
