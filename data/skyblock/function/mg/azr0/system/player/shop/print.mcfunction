@@ -9,3 +9,39 @@ item replace entity @s[scores={Azr0_UPG_sword_damage=7}] inventory.0 with iron_s
 item replace entity @s[scores={Azr0_UPG_sword_damage=8}] inventory.0 with iron_sword[custom_data={"azr0shop":true},custom_name='{"text":"升级武器：剑","italic":false,"color":"green"}',lore=['{"text":"攻击力+0.5","color":"white","italic":true}','{"text":"消耗：600绿宝石","color":"red","italic":true}']]
 item replace entity @s[scores={Azr0_UPG_sword_damage=9}] inventory.0 with iron_sword[custom_data={"azr0shop":true},custom_name='{"text":"升级武器：剑","italic":false,"color":"green"}',lore=['{"text":"攻击力+0.5","color":"white","italic":true}','{"text":"消耗：800绿宝石","color":"red","italic":true}']]
 item replace entity @s[scores={Azr0_UPG_sword_damage=10}] inventory.0 with end_crystal[custom_data={"azr0shop":true},custom_name='{"text":"武器：剑 已升至最高级","italic":false,"color":"gold"}']
+
+item replace entity @s[scores={Azr0_UPG_sword_damage=2..,Azr0_UPG_sword_knockback=0,Azr0_UPG_sword_sweeping=0}] inventory.9 with brick[custom_data={"azr0shop":true},custom_name='{"text":"改造分支：击退","italic":false,"color":"light_purple"}',lore=['{"text":"增加0.2击退","color":"white","italic":true}','{"text":"消耗：30绿宝石","color":"red","italic":true}','{"text":"将无法选择横扫分支","color":"red","italic":true}']]
+
+item replace entity @s[scores={Azr0_UPG_sword_damage=2..,Azr0_UPG_sword_knockback=0,Azr0_UPG_sword_sweeping=0}] inventory.18 with brush[custom_data={"azr0shop":true},custom_name='{"text":"改造分支：横扫","italic":false,"color":"light_purple"}',lore=['{"text":"获得20%横扫攻击加成","color":"white","italic":true}','{"text":"消耗：30绿宝石","color":"red","italic":true}','{"text":"将无法选择击退分支","color":"red","italic":true}']]
+
+item replace entity @s[scores={Azr0_UPG_sword_knockback=1}] inventory.9 with brick[custom_data={"azr0shop":true},custom_name='{"text":"分支升级：击退","italic":false,"color":"green"}',lore=['{"text":"增加0.2击退","color":"white","italic":true}','{"text":"消耗：50绿宝石","color":"red","italic":true}']]
+item replace entity @s[scores={Azr0_UPG_sword_knockback=2}] inventory.9 with brick[custom_data={"azr0shop":true},custom_name='{"text":"分支升级：击退","italic":false,"color":"green"}',lore=['{"text":"增加0.2击退","color":"white","italic":true}','{"text":"消耗：70绿宝石","color":"red","italic":true}']]
+item replace entity @s[scores={Azr0_UPG_sword_knockback=3}] inventory.9 with brick[custom_data={"azr0shop":true},custom_name='{"text":"分支升级：击退","italic":false,"color":"green"}',lore=['{"text":"增加0.2击退","color":"white","italic":true}','{"text":"消耗：100绿宝石","color":"red","italic":true}']]
+item replace entity @s[scores={Azr0_UPG_sword_knockback=4}] inventory.9 with brick[custom_data={"azr0shop":true},custom_name='{"text":"分支升级：击退","italic":false,"color":"green"}',lore=['{"text":"增加0.2击退","color":"white","italic":true}','{"text":"消耗：150绿宝石","color":"red","italic":true}']]
+item replace entity @s[scores={Azr0_UPG_sword_knockback=5}] inventory.9 with brick[custom_data={"azr0shop":true},custom_name='{"text":"分支升级：击退","italic":false,"color":"green"}',lore=['{"text":"增加0.2击退","color":"white","italic":true}','{"text":"消耗：200绿宝石","color":"red","italic":true}']]
+item replace entity @s[scores={Azr0_UPG_sword_knockback=6}] inventory.9 with brick[custom_data={"azr0shop":true},custom_name='{"text":"分支升级：击退","italic":false,"color":"green"}',lore=['{"text":"增加0.2击退","color":"white","italic":true}','{"text":"消耗：250绿宝石","color":"red","italic":true}']]
+item replace entity @s[scores={Azr0_UPG_sword_knockback=7}] inventory.9 with brick[custom_data={"azr0shop":true},custom_name='{"text":"分支升级：击退","italic":false,"color":"green"}',lore=['{"text":"增加0.2击退","color":"white","italic":true}','{"text":"消耗：300绿宝石","color":"red","italic":true}']]
+item replace entity @s[scores={Azr0_UPG_sword_knockback=8}] inventory.9 with brick[custom_data={"azr0shop":true},custom_name='{"text":"分支升级：击退","italic":false,"color":"green"}',lore=['{"text":"增加0.2击退","color":"white","italic":true}','{"text":"消耗：400绿宝石","color":"red","italic":true}']]
+item replace entity @s[scores={Azr0_UPG_sword_knockback=9}] inventory.9 with brick[custom_data={"azr0shop":true},custom_name='{"text":"分支升级：击退","italic":false,"color":"green"}',lore=['{"text":"增加0.2击退","color":"white","italic":true}','{"text":"消耗：500绿宝石","color":"red","italic":true}']]
+item replace entity @s[scores={Azr0_UPG_sword_knockback=10}] inventory.9 with end_crystal[custom_data={"azr0shop":true},custom_name='{"text":"分支升级：击退 已升至最高级","italic":false,"color":"gold"}']
+
+
+item replace entity @s[scores={Azr0_UPG_sword_sweeping=1}] inventory.9 with brush[custom_data={"azr0shop":true},custom_name='{"text":"分支升级：横扫","italic":false,"color":"green"}',lore=['{"text":"获得20%横扫攻击加成","color":"white","italic":true}','{"text":"消耗：70绿宝石","color":"red","italic":true}']]
+item replace entity @s[scores={Azr0_UPG_sword_sweeping=2}] inventory.9 with brush[custom_data={"azr0shop":true},custom_name='{"text":"分支升级：横扫","italic":false,"color":"green"}',lore=['{"text":"获得20%横扫攻击加成","color":"white","italic":true}','{"text":"消耗：150绿宝石","color":"red","italic":true}']]
+item replace entity @s[scores={Azr0_UPG_sword_sweeping=3}] inventory.9 with brush[custom_data={"azr0shop":true},custom_name='{"text":"分支升级：横扫","italic":false,"color":"green"}',lore=['{"text":"获得20%横扫攻击加成","color":"white","italic":true}','{"text":"消耗：350绿宝石","color":"red","italic":true}']]
+item replace entity @s[scores={Azr0_UPG_sword_sweeping=4}] inventory.9 with brush[custom_data={"azr0shop":true},custom_name='{"text":"分支升级：横扫","italic":false,"color":"green"}',lore=['{"text":"获得20%横扫攻击加成","color":"white","italic":true}','{"text":"消耗：500绿宝石","color":"red","italic":true}']]
+item replace entity @s[scores={Azr0_UPG_sword_sweeping=5}] inventory.9 with end_crystal[custom_data={"azr0shop":true},custom_name='{"text":"分支升级：横扫 已升至最高级","italic":false,"color":"gold"}']
+
+
+
+
+
+
+
+
+
+
+
+
+
+
