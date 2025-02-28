@@ -3,6 +3,8 @@ execute if score MG_AZR0_Timer rng7 matches 120.. store result score MG_AZR0_rng
 execute if score MG_AZR0_Timer rng7 matches 200.. store result score MG_AZR0_rng rng1 run random value 10..35
 execute if score MG_AZR0_Timer rng7 matches 420.. store result score MG_AZR0_rng rng1 run random value 15..40
 
+execute if score MG_AZR0_Timer rng7 matches 20.. run function skyblock:mg/azr0/particle/m_mob_human
+
 execute if score MG_AZR0_rng rng1 matches 1..19 run function skyblock:mg/azr0/particle/m_mob_tier1
 execute if score MG_AZR0_rng rng1 matches 1..19 run summon pillager ~ ~ ~ {CustomName:'[{"text":"弩手"}]',DeathLootTable:"skyblock:mg/azr0/tier1",Tags:["MG_AZR0MOB"],attributes:[{id:"generic.movement_speed",base:0.26},{id:"generic.max_health",base:6},{id:"generic.follow_range",base:186},{id:"generic.armor",base:2}],HandItems:[{id:crossbow,count:1},{}],HandDropChances:[0f,0f],ArmorItems:[{},{},{},{}],ArmorDropChances:[0f,0f,0f,0f],Health:6,PersistenceRequired:1b}
 

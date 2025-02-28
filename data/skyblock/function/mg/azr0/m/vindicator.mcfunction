@@ -3,6 +3,8 @@ execute if score MG_AZR0_Timer rng7 matches 170.. store result score MG_AZR0_rng
 execute if score MG_AZR0_Timer rng7 matches 290.. store result score MG_AZR0_rng rng1 run random value 10..35
 execute if score MG_AZR0_Timer rng7 matches 500.. store result score MG_AZR0_rng rng1 run random value 15..40
 
+execute if score MG_AZR0_Timer rng7 matches 50.. run function skyblock:mg/azr0/particle/m_mob_human
+
 execute if score MG_AZR0_rng rng1 matches 1..20 run function skyblock:mg/azr0/particle/m_mob_tier1
 execute if score MG_AZR0_rng rng1 matches 1..20 run summon vindicator ~ ~ ~ {CustomName:'[{"text":"警备剑士"}]',DeathLootTable:"skyblock:mg/azr0/tier1",Tags:["MG_AZR0MOB"],attributes:[{id:"generic.movement_speed",base:0.18},{id:"generic.max_health",base:12},{id:"generic.follow_range",base:186},{id:"generic.armor",base:0}],HandItems:[{id:stone_sword,count:1},{}],HandDropChances:[0f,0f],ArmorItems:[{},{},{id:iron_chestplate,count:1,components:{enchantments:{projectile_protection:3b}}},{}],ArmorDropChances:[0f,0f,0f,0f],Health:12,PersistenceRequired:1b}
 
