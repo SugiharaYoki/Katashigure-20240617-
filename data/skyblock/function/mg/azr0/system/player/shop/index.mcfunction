@@ -17,7 +17,7 @@ function skyblock:mg/azr0/system/player/shop/print
 
 scoreboard players add @s Azr0_axe_recharge 10
 execute if entity @s[scores={Azr0_dealt_damage=1..}] run function skyblock:mg/azr0/system/player/attacked
-execute if entity @s[scores={Azr0_axe_recharge=200..209}] run playsound block.amethyst_block.resonate player @a ~ ~ ~ 0.9 1.3
+execute if entity @s[scores={Azr0_axe_recharge=1000..1009}] run playsound block.amethyst_block.resonate player @a ~ ~ ~ 0.9 1.3
 
 
 
