@@ -16,6 +16,7 @@ item replace entity @s[scores={Azr0_UPG_sword_damage=2..,Azr0_UPG_sword_knockbac
 
 item replace entity @s[scores={Azr0_UPG_sword_damage=..1}] inventory.9 with barrier
 item replace entity @s[scores={Azr0_UPG_sword_damage=..1}] inventory.18 with barrier
+item replace entity @s inventory.19 with barrier
 
 
 execute unless entity @s[scores={Azr0_UPG_sword_knockback=0,Azr0_UPG_sword_sweeping=0}] run item replace entity @s[scores={Azr0_UPG_sword_speed=0}] inventory.18 with feather[custom_data={"azr0shop":true},custom_name='{"text":"升级：剑 斩速","italic":false,"color":"green"}',lore=['{"text":"增加0.1攻击速度","color":"white","italic":true}','{"text":"消耗：30绿宝石","color":"red","italic":true}']]
