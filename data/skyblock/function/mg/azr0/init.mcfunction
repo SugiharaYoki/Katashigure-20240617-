@@ -45,7 +45,8 @@ scoreboard objectives add Azr0_UPG_sword_sweeping dummy
 scoreboard objectives add Azr0_UPG_axe_damage dummy
 scoreboard objectives add Azr0_UPG_axe_recharge dummy
 scoreboard objectives add Azr0_axe_recharge dummy
-scoreboard objectives add Azr0_UPG_breadstorage dummy
+scoreboard objectives add Azr0_UPG_bread_storage dummy
+scoreboard objectives add Azr0_UPG_bread_recharge dummy
 scoreboard objectives add Azr0_dealt_damage custom:damage_dealt
 
 execute as @a[distance=0..80] at @s run function skyblock:pvp/skywar/system/removeallgaming
@@ -78,7 +79,8 @@ scoreboard players set @a[tag=MG_AZR0PT] Azr0_UPG_sword_sweeping 0
 scoreboard players set @a[tag=MG_AZR0PT] Azr0_UPG_axe_damage -1
 scoreboard players set @a[tag=MG_AZR0PT] Azr0_UPG_axe_recharge 0
 scoreboard players set @a[tag=MG_AZR0PT] Azr0_axe_recharge 0
-scoreboard players set @a[tag=MG_AZR0PT] Azr0_UPG_breadstorage 0
+scoreboard players set @a[tag=MG_AZR0PT] Azr0_UPG_bread_storage 0
+scoreboard players set @a[tag=MG_AZR0PT] Azr0_UPG_bread_recharge 0
 scoreboard players set @a[tag=MG_AZR0PT] Azr0_dealt_damage 0
 
 

@@ -36,11 +36,12 @@ tellraw @a[tag=!Gaming] [{"text": "『亚兹列尔的中庭花园·零』","colo
 scoreboard objectives remove Azr0_UPG_sword_damage
 scoreboard objectives remove Azr0_UPG_sword_knockback
 scoreboard objectives remove Azr0_UPG_sword_speed
-scoreboard objectives remove Azr0_UPG_breadstorage
+scoreboard objectives remove Azr0_UPG_bread_storage
 scoreboard objectives remove Azr0_UPG_sword_sweeping
 scoreboard objectives remove Azr0_UPG_axe_damage
 scoreboard objectives remove Azr0_UPG_axe_recharge
 scoreboard objectives remove Azr0_axe_recharge
+scoreboard objectives remove Azr0_UPG_bread_recharge
 
 scoreboard objectives remove Azr0_dealt_damage
 

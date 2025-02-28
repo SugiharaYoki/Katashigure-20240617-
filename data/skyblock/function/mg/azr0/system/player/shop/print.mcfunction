@@ -81,4 +81,20 @@ item replace entity @s[scores={Azr0_UPG_axe_recharge=10}] inventory.18 with end_
 
 
 
+item replace entity @s[scores={Azr0_UPG_bread_storage=0}] inventory.8 with rabbit_stew[custom_data={"azr0shop":true},custom_name='{"text":"升级：食物 储量","italic":false,"color":"green"}',lore=['{"text":"最高食物储备数量+1","color":"white","italic":true}','{"text":"消耗：50绿宝石","color":"red","italic":true}']]
+item replace entity @s[scores={Azr0_UPG_bread_storage=1}] inventory.8 with rabbit_stew[custom_data={"azr0shop":true},custom_name='{"text":"升级：食物 储量","italic":false,"color":"green"}',lore=['{"text":"最高食物储备数量+1","color":"white","italic":true}','{"text":"消耗：150绿宝石","color":"red","italic":true}']]
+item replace entity @s[scores={Azr0_UPG_bread_storage=2}] inventory.8 with rabbit_stew[custom_data={"azr0shop":true},custom_name='{"text":"升级：食物 储量","italic":false,"color":"green"}',lore=['{"text":"最高食物储备数量+1","color":"white","italic":true}','{"text":"消耗：250绿宝石","color":"red","italic":true}']]
+item replace entity @s[scores={Azr0_UPG_bread_storage=3}] inventory.8 with rabbit_stew[custom_data={"azr0shop":true},custom_name='{"text":"升级：食物 储量","italic":false,"color":"green"}',lore=['{"text":"最高食物储备数量+1","color":"white","italic":true}','{"text":"消耗：350绿宝石","color":"red","italic":true}']]
+item replace entity @s[scores={Azr0_UPG_bread_storage=4}] inventory.8 with rabbit_stew[custom_data={"azr0shop":true},custom_name='{"text":"升级：食物 储量","italic":false,"color":"green"}',lore=['{"text":"最高食物储备数量+1","color":"white","italic":true}','{"text":"消耗：450绿宝石","color":"red","italic":true}']]
+item replace entity @s[scores={Azr0_UPG_bread_storage=5}] inventory.8 with rabbit_stew[custom_data={"azr0shop":true},custom_name='{"text":"升级：食物 储量","italic":false,"color":"green"}',lore=['{"text":"最高食物储备数量+1","color":"white","italic":true}','{"text":"消耗：600绿宝石","color":"red","italic":true}']]
+item replace entity @s[scores={Azr0_UPG_bread_storage=6}] inventory.8 with end_crystal[custom_data={"azr0shop":true},custom_name='{"text":"升级：食物 储量 已升至最高级","italic":false,"color":"gold"}']
+
+
+item replace entity @s[scores={Azr0_UPG_bread_recharge=0}] inventory.17 with pumpkin_pie[custom_data={"azr0shop":true},custom_name='{"text":"升级：食物 恢复速度","italic":false,"color":"green"}',lore=['{"text":"食物储备恢复速度+100%","color":"white","italic":true}','{"text":"消耗：80绿宝石","color":"red","italic":true}']]
+item replace entity @s[scores={Azr0_UPG_bread_recharge=1}] inventory.17 with pumpkin_pie[custom_data={"azr0shop":true},custom_name='{"text":"升级：食物 恢复速度","italic":false,"color":"green"}',lore=['{"text":"食物储备恢复速度+100%","color":"white","italic":true}','{"text":"消耗：300绿宝石","color":"red","italic":true}']]
+item replace entity @s[scores={Azr0_UPG_bread_recharge=2}] inventory.17 with pumpkin_pie[custom_data={"azr0shop":true},custom_name='{"text":"升级：食物 恢复速度","italic":false,"color":"green"}',lore=['{"text":"食物储备恢复速度+100%","color":"white","italic":true}','{"text":"消耗：800绿宝石","color":"red","italic":true}']]
+item replace entity @s[scores={Azr0_UPG_bread_recharge=3}] inventory.17 with end_crystal[custom_data={"azr0shop":true},custom_name='{"text":"升级：食物 恢复速度 已升至最高级","italic":false,"color":"gold"}']
+
+
+
 
