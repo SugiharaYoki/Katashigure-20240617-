@@ -20,3 +20,5 @@ execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_sword_damage=8}] run 
 execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_sword_damage=9}] run clear @s emerald 800
 execute if entity @s[tag=AZR0SHOP_SUCCESS] run scoreboard players add @s Azr0_UPG_sword_damage 1
 tag @s remove AZR0SHOP_SUCCESS
+
+item replace entity @s player.cursor with air
