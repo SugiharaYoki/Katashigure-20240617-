@@ -21,4 +21,4 @@ execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_sword_damage=9}] run 
 execute if entity @s[tag=AZR0SHOP_SUCCESS] run scoreboard players add @s Azr0_UPG_sword_damage 1
 tag @s remove AZR0SHOP_SUCCESS
 
-summon salmon -137 50.2 -121 {Invulnerable:true,Silent:true,PersistenceRequired:true,CustomName:'"咸鱼"',NoAI:true}
+clear @s *[custom_data={"azr0weapon_sword":true}]
