@@ -41,8 +41,8 @@ execute if entity @s[scores={Azr_bread_recharge_level=5}] run item replace entit
 execute if entity @s[scores={Azr_bread_recharge_level=6}] run item replace entity @s hotbar.8 with bread 6
 execute if entity @s[scores={Azr_bread_recharge_level=7}] run item replace entity @s hotbar.8 with bread 7
 
-execute if entity @s[scores={Azr_bread_recharge=20..}] run scoreboard players add @s Azr_bread_recharge_level 1
-execute if entity @s[scores={Azr_bread_recharge=20..}] run scoreboard players set @s Azr_bread_recharge 0
+execute if entity @s[scores={Azr_bread_recharge=400..}] run scoreboard players add @s Azr_bread_recharge_level 1
+execute if entity @s[scores={Azr_bread_recharge=400..}] run scoreboard players set @s Azr_bread_recharge 0
 
 execute if entity @s[scores={Azr_usebread=1..}] run scoreboard players remove @s Azr_bread_recharge_level 1
 execute if entity @s[scores={Azr_usebread=1..}] run scoreboard players set @s Azr_usebread 0
