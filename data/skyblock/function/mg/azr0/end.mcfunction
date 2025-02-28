@@ -42,6 +42,7 @@ scoreboard objectives remove Azr0_UPG_axe_damage
 scoreboard objectives remove Azr0_UPG_axe_recharge
 scoreboard objectives remove Azr0_axe_recharge
 scoreboard objectives remove Azr0_UPG_bread_recharge
+scoreboard objectives remove Azr0_UPG_hp
 
 scoreboard objectives remove Azr0_dealt_damage
 
