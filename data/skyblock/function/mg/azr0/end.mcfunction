@@ -40,12 +40,12 @@ tellraw @a[tag=!Gaming] [{"text": "『亚兹列尔的中庭花园·零』","colo
 
 setblock 125078 0 -242 minecraft:air
 
-
-kill @n[tag=mg_azr0,type=marker]
 kill @e[tag=mg_azr0_MobPortals,type=marker]
 kill @e[tag=MG_AZR0MOB]
+execute at @n[tag=mg_azr0,type=marker] run kill @e[type=item,distance=..120]
 execute as @a[tag=MG_AZR0PT] at @s run function skyblock:mg/azr0/system/player/death
 
+kill @n[tag=mg_azr0,type=marker]
 tag @a remove MG_AZR0PT
 
 bossbar remove mg:azr0_bar
