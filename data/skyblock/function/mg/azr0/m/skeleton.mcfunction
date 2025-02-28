@@ -1,7 +1,7 @@
 execute if score MG_AZR0_Timer rng7 matches 1.. store result score MG_AZR0_rng rng1 run random value 1..10
-execute if score MG_AZR0_Timer rng7 matches 40.. store result score MG_AZR0_rng rng1 run random value 1..15
-execute if score MG_AZR0_Timer rng7 matches 60.. store result score MG_AZR0_rng rng1 run random value 5..20
-execute if score MG_AZR0_Timer rng7 matches 100.. store result score MG_AZR0_rng rng1 run random value 5..24
+execute if score MG_AZR0_Timer rng7 matches 50.. store result score MG_AZR0_rng rng1 run random value 1..15
+execute if score MG_AZR0_Timer rng7 matches 80.. store result score MG_AZR0_rng rng1 run random value 5..20
+execute if score MG_AZR0_Timer rng7 matches 120.. store result score MG_AZR0_rng rng1 run random value 5..24
 execute if score MG_AZR0_Timer rng7 matches 160.. store result score MG_AZR0_rng rng1 run random value 8..27
 execute if score MG_AZR0_Timer rng7 matches 220.. store result score MG_AZR0_rng rng1 run random value 13..30
 
