@@ -15,7 +15,7 @@ execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_axe_damage=4}] run cl
 execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_axe_damage=5}] run clear @s emerald 350
 execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_axe_damage=6}] run clear @s emerald 450
 execute if entity @s[tag=AZR0SHOP_SUCCESS] run scoreboard players add @s Azr0_UPG_axe_damage 1
-execute if entity @s[tag=AZR0SHOP_SUCCESS] run scoreboard players set @s Azr0_axe_recharge 250
+execute if entity @s[tag=AZR0SHOP_SUCCESS] run scoreboard players set @s Azr0_axe_recharge 201
 tag @s remove AZR0SHOP_SUCCESS
 
 clear @s *[custom_data={"azr0weapon_axe":true}]
