@@ -9,5 +9,3 @@ execute if entity @s[scores={Azr0_UPG_sword_knockback=7}] run function skyblock:
 execute if entity @s[scores={Azr0_UPG_sword_knockback=8}] run function skyblock:mg/azr0/system/player/hotbar/sword2 {"knockback":1.6}
 execute if entity @s[scores={Azr0_UPG_sword_knockback=9}] run function skyblock:mg/azr0/system/player/hotbar/sword2 {"knockback":1.8}
 execute if entity @s[scores={Azr0_UPG_sword_knockback=10}] run function skyblock:mg/azr0/system/player/hotbar/sword2 {"knockback":2.0}
-
-say hi1
