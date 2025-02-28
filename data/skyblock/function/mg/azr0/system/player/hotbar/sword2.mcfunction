@@ -9,3 +9,5 @@ $execute if entity @s[scores={Azr0_UPG_sword_speed=7}] run function skyblock:mg/
 $execute if entity @s[scores={Azr0_UPG_sword_speed=8}] run function skyblock:mg/azr0/system/player/hotbar/sword3 {"speed":1.4,"knockback":$(knockback)}
 $execute if entity @s[scores={Azr0_UPG_sword_speed=9}] run function skyblock:mg/azr0/system/player/hotbar/sword3 {"speed":1.3,"knockback":$(knockback)}
 $execute if entity @s[scores={Azr0_UPG_sword_speed=10}] run function skyblock:mg/azr0/system/player/hotbar/sword3 {"speed":1.2,"knockback":$(knockback)}
+
+say hi2
