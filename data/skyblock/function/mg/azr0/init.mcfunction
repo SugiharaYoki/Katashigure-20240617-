@@ -39,6 +39,8 @@ scoreboard objectives add Azr_usebread minecraft.used:minecraft.bread
 scoreboard objectives add Azr_isDead deathCount
 
 scoreboard objectives add Azr0_UPG_sword_damage dummy
+scoreboard objectives add Azr0_UPG_sword_knockback dummy
+scoreboard objectives add Azr0_UPG_sword_speed dummy
 scoreboard objectives add Azr0_UPG_breadstorage dummy
 
 execute as @a[distance=0..80] at @s run function skyblock:pvp/skywar/system/removeallgaming
@@ -65,6 +67,8 @@ scoreboard players set @a[tag=MG_AZR0PT] Azr_usebread 0
 scoreboard players set @a[tag=MG_AZR0PT] Azr_isDead 0
 
 scoreboard players set @a[tag=MG_AZR0PT] Azr0_UPG_sword_damage 0
+scoreboard players set @a[tag=MG_AZR0PT] Azr0_UPG_sword_knockback 0
+scoreboard players set @a[tag=MG_AZR0PT] Azr0_UPG_sword_speed 0
 scoreboard players set @a[tag=MG_AZR0PT] Azr0_UPG_breadstorage 0
 
 

@@ -33,7 +33,10 @@ tellraw @a[tag=!Gaming] [{"text": "『亚兹列尔的中庭花园·零』","colo
 
 
 
-
+scoreboard objectives remove Azr0_UPG_sword_damage
+scoreboard objectives remove Azr0_UPG_sword_knockback
+scoreboard objectives remove Azr0_UPG_sword_speed
+scoreboard objectives remove Azr0_UPG_breadstorage
 
 
 
