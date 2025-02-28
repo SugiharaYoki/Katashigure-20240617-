@@ -1,3 +1,4 @@
 execute if items entity @s player.cursor iron_sword[custom_data={"azr0shop":true}] run function skyblock:mg/azr0/system/player/shop/upg/sword_damage
 
 
+function skyblock:mg/azr0/system/player/shop/print
