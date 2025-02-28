@@ -12,4 +12,3 @@ execute if entity @s[tag=AZR0SHOP_SUCCESS] run scoreboard players add @s Azr0_UP
 tag @s remove AZR0SHOP_SUCCESS
 
 clear @s *[custom_data={"azr0weapon_sword":true}]
-item replace entity @s player.cursor with air
