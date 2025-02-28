@@ -59,4 +59,3 @@ execute as @a[tag=MG_AZR0PT] at @s run function skyblock:mg/azr0/system/player/s
 
 
 
-
