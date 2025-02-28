@@ -9,7 +9,7 @@ title @s actionbar [{"text":"绿宝石 ","color":"green","bold": true},{"score":
 execute if items entity @s[scores={Azr_isDead=1..}] container.* nether_star run function skyblock:mg/azr0/system/player/death_revival
 execute unless items entity @s[scores={Azr_isDead=1..}] container.* nether_star run function skyblock:mg/azr0/system/player/death
 
-item replace entity @s hotbar.0 with wooden_sword[custom_name='{"text":"木剑","italic":false,"color":"red"}',attribute_modifiers=[{type:"generic.attack_damage",slot:"mainhand",id:"mg_azr0_weapon:wooden_sword_0_1",amount:3.0,operation:"add_value"},{type:"generic.attack_speed",slot:"mainhand",id:"mg_azr0_weapon:wooden_sword_0_2",amount:-2.2,operation:"add_value"}],unbreakable={}]
+item replace entity @s hotbar.0 with wooden_sword[unbreakable={}]
 item replace entity @s hotbar.1 with barrier
 item replace entity @s hotbar.2 with barrier
 item replace entity @s hotbar.3 with barrier
