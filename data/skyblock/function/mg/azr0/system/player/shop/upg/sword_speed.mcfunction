@@ -8,16 +8,16 @@ execute if entity @s[scores={Azr0_UPG_sword_speed=6,Azr_emerald=300..}] run tag 
 execute if entity @s[scores={Azr0_UPG_sword_speed=7,Azr_emerald=400..}] run tag @s add AZR0SHOP_SUCCESS
 execute if entity @s[scores={Azr0_UPG_sword_speed=8,Azr_emerald=500..}] run tag @s add AZR0SHOP_SUCCESS
 execute if entity @s[scores={Azr0_UPG_sword_speed=9,Azr_emerald=600..}] run tag @s add AZR0SHOP_SUCCESS
-execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_sword_speed=0}] run clear @s emerald 30
-execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_sword_speed=1}] run clear @s emerald 60
-execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_sword_speed=2}] run clear @s emerald 90
-execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_sword_speed=3}] run clear @s emerald 120
-execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_sword_speed=4}] run clear @s emerald 150
-execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_sword_speed=5}] run clear @s emerald 200
-execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_sword_speed=6}] run clear @s emerald 300
-execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_sword_speed=7}] run clear @s emerald 400
-execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_sword_speed=8}] run clear @s emerald 500
-execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_sword_speed=9}] run clear @s emerald 600
+execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_sword_speed=0}] run scoreboard players remove @s Azr_emerald 30
+execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_sword_speed=1}] run scoreboard players remove @s Azr_emerald 60
+execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_sword_speed=2}] run scoreboard players remove @s Azr_emerald 90
+execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_sword_speed=3}] run scoreboard players remove @s Azr_emerald 120
+execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_sword_speed=4}] run scoreboard players remove @s Azr_emerald 150
+execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_sword_speed=5}] run scoreboard players remove @s Azr_emerald 200
+execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_sword_speed=6}] run scoreboard players remove @s Azr_emerald 300
+execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_sword_speed=7}] run scoreboard players remove @s Azr_emerald 400
+execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_sword_speed=8}] run scoreboard players remove @s Azr_emerald 500
+execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_sword_speed=9}] run scoreboard players remove @s Azr_emerald 600
 execute if entity @s[tag=AZR0SHOP_SUCCESS] run scoreboard players add @s Azr0_UPG_sword_speed 1
 tag @s remove AZR0SHOP_SUCCESS
 
