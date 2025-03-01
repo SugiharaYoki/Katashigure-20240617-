@@ -43,11 +43,17 @@ scoreboard objectives remove Azr0_axe_recharge
 scoreboard objectives remove Azr0_UPG_bread_storage
 scoreboard objectives remove Azr0_UPG_bread_recharge
 scoreboard objectives remove Azr0_UPG_bread_quality
+scoreboard objectives remove Azr0_UPG_bow_punch
+scoreboard objectives remove Azr0_UPG_bow_pierce
+scoreboard objectives remove Azr0_UPG_crossbow_multishot
+scoreboard objectives remove Azr0_UPG_crossbow_load
 scoreboard objectives remove Azr0_UPG_hp
 scoreboard objectives remove Azr0_MAX_star
 scoreboard objectives remove Azr0_UPG_star
 scoreboard objectives remove Azr0_USED_star
 scoreboard objectives remove Azr0_dealt_damage
+scoreboard objectives remove Azr0_UPG_bow
+scoreboard objectives remove Azr0_UPG_crossbow
 
 
 

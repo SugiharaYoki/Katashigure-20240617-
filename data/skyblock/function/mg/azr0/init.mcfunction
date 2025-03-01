@@ -45,6 +45,12 @@ scoreboard objectives add Azr0_UPG_sword_sweeping dummy
 scoreboard objectives add Azr0_UPG_axe_damage dummy
 scoreboard objectives add Azr0_UPG_axe_recharge dummy
 scoreboard objectives add Azr0_axe_recharge dummy
+scoreboard objectives add Azr0_UPG_bow dummy
+scoreboard objectives add Azr0_UPG_crossbow dummy
+scoreboard objectives add Azr0_UPG_bow_punch dummy
+scoreboard objectives add Azr0_UPG_bow_pierce dummy
+scoreboard objectives add Azr0_UPG_crossbow_multishot dummy
+scoreboard objectives add Azr0_UPG_crossbow_load dummy
 scoreboard objectives add Azr0_UPG_bread_storage dummy
 scoreboard objectives add Azr0_UPG_bread_recharge dummy
 scoreboard objectives add Azr0_UPG_bread_quality dummy
@@ -84,6 +90,12 @@ scoreboard players set @a[tag=MG_AZR0PT] Azr0_UPG_sword_speed 0
 scoreboard players set @a[tag=MG_AZR0PT] Azr0_UPG_sword_sweeping 0
 scoreboard players set @a[tag=MG_AZR0PT] Azr0_UPG_axe_damage -1
 scoreboard players set @a[tag=MG_AZR0PT] Azr0_UPG_axe_recharge 0
+scoreboard players set @a[tag=MG_AZR0PT] Azr0_UPG_bow -1
+scoreboard players set @a[tag=MG_AZR0PT] Azr0_UPG_crossbow -1
+scoreboard players set @a[tag=MG_AZR0PT] Azr0_UPG_bow_punch 0
+scoreboard players set @a[tag=MG_AZR0PT] Azr0_UPG_bow_pierce 0
+scoreboard players set @a[tag=MG_AZR0PT] Azr0_UPG_crossbow_multishot 0
+scoreboard players set @a[tag=MG_AZR0PT] Azr0_UPG_crossbow_load 0
 scoreboard players set @a[tag=MG_AZR0PT] Azr0_axe_recharge 0
 scoreboard players set @a[tag=MG_AZR0PT] Azr0_UPG_bread_storage 0
 scoreboard players set @a[tag=MG_AZR0PT] Azr0_UPG_bread_recharge 0

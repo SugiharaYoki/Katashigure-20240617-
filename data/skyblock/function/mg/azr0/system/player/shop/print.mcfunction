@@ -78,6 +78,10 @@ item replace entity @s[scores={Azr0_UPG_axe_recharge=9}] inventory.18 with iron_
 item replace entity @s[scores={Azr0_UPG_axe_recharge=10}] inventory.18 with end_crystal[custom_data={"azr0shop":true},custom_name='{"text":"升级：斧 充能速度 已升至最高级","italic":false,"color":"gold"}']
 
 
+item replace entity @s[scores={Azr0_UPG_bow=-1,Azr0_UPG_crossbow=-1,Azr0_UPG_sword_damage=..2}] inventory.2 with barrier
+item replace entity @s[scores={Azr0_UPG_bow=-1,Azr0_UPG_crossbow=-1,Azr0_UPG_sword_damage=..2}] inventory.11 with barrier
+item replace entity @s[scores={Azr0_UPG_bow=-1,Azr0_UPG_crossbow=-1,Azr0_UPG_sword_damage=3..}] inventory.2 with bow[custom_data={"azr0shop":true},custom_name='{"text":"解锁武器：弓","italic":false,"color":"light_purple"}',lore=['{"text":"拉弓射箭 后期可升级攻击力、击退、穿透属性","color":"white","italic":false}','{"text":"消耗：50绿宝石","color":"red","italic":true}','{"text":"将无法解锁武器：弩","color":"red","italic":true}']]
+item replace entity @s[scores={Azr0_UPG_bow=-1,Azr0_UPG_crossbow=-1,Azr0_UPG_sword_damage=3..}] inventory.11 with crossbow[custom_data={"azr0shop":true},custom_name='{"text":"解锁武器：弩","italic":false,"color":"light_purple"}',lore=['{"text":"提前装箭 后期可升级攻击力、多重射击、填充速度","color":"white","italic":false}','{"text":"消耗：50绿宝石","color":"red","italic":true}','{"text":"将无法解锁武器：弓","color":"red","italic":true}']]
 
 
 
