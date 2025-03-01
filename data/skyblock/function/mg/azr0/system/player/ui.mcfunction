@@ -85,3 +85,6 @@ execute if entity @s[scores={Azr_bread_recharge=400..}] run scoreboard players s
 execute if entity @s[scores={Azr_usebread=1..}] run scoreboard players remove @s Azr_bread_recharge_level 1
 execute if entity @s[scores={Azr_usebread=1..}] run scoreboard players set @s Azr_usebread 0
 
+
+execute at @s[tag=hasSkills] run function skyblock:azr/system_sub/chain_kill
+
