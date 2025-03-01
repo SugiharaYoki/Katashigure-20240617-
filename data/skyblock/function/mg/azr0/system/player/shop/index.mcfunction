@@ -11,6 +11,7 @@ execute if items entity @s player.cursor torchflower[custom_data={"azr0shop":tru
 
 execute if items entity @s player.cursor rabbit_stew[custom_data={"azr0shop":true}] run function skyblock:mg/azr0/system/player/shop/upg/bread_storage
 execute if items entity @s player.cursor pumpkin_pie[custom_data={"azr0shop":true}] run function skyblock:mg/azr0/system/player/shop/upg/bread_recharge
+execute if items entity @s player.cursor beef[custom_data={"azr0shop":true}] run function skyblock:mg/azr0/system/player/shop/upg/bread_quality
 
 execute if items entity @s player.cursor *[custom_data={"azr0shop":true}] run playsound ui.button.click player @s ~ ~ ~ 0.9 1.3
 clear @s *[custom_data={"azr0shop":true}]

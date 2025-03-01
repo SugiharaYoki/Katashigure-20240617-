@@ -47,6 +47,7 @@ scoreboard objectives add Azr0_UPG_axe_recharge dummy
 scoreboard objectives add Azr0_axe_recharge dummy
 scoreboard objectives add Azr0_UPG_bread_storage dummy
 scoreboard objectives add Azr0_UPG_bread_recharge dummy
+scoreboard objectives add Azr0_UPG_bread_quality dummy
 scoreboard objectives add Azr0_UPG_hp dummy
 scoreboard objectives add Azr0_MAX_star dummy
 scoreboard objectives add Azr0_UPG_star dummy
@@ -86,6 +87,7 @@ scoreboard players set @a[tag=MG_AZR0PT] Azr0_UPG_axe_recharge 0
 scoreboard players set @a[tag=MG_AZR0PT] Azr0_axe_recharge 0
 scoreboard players set @a[tag=MG_AZR0PT] Azr0_UPG_bread_storage 0
 scoreboard players set @a[tag=MG_AZR0PT] Azr0_UPG_bread_recharge 0
+scoreboard players set @a[tag=MG_AZR0PT] Azr0_UPG_bread_quality 0
 scoreboard players set @a[tag=MG_AZR0PT] Azr0_dealt_damage 0
 scoreboard players set @a[tag=MG_AZR0PT] Azr0_UPG_hp 0
 scoreboard players set @a[tag=MG_AZR0PT] Azr0_MAX_star 3
