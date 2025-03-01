@@ -43,7 +43,9 @@ scoreboard objectives remove Azr0_UPG_axe_recharge
 scoreboard objectives remove Azr0_axe_recharge
 scoreboard objectives remove Azr0_UPG_bread_recharge
 scoreboard objectives remove Azr0_UPG_hp
-
+scoreboard objectives remove Azr0_MAX_star
+scoreboard objectives remove Azr0_UPG_star
+scoreboard objectives remove Azr0_USED_star
 scoreboard objectives remove Azr0_dealt_damage
 
 

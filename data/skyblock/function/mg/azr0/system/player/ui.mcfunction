@@ -19,6 +19,16 @@ item replace entity @s hotbar.4 with barrier
 item replace entity @s hotbar.5 with barrier
 item replace entity @s hotbar.6 with barrier
 item replace entity @s hotbar.7 with barrier
+execute store result score @s rng1 run scoreboard players get @s Azr0_UPG_star
+execute store result score @s rng1 run scoreboard players operation @s rng1 -= @s Azr0_USED_star
+execute if score @s rng1 matches 0 run item replace entity @s hotbar.7 with barrier
+execute if score @s rng1 matches 1 run item replace entity @s hotbar.7 with nether_star 1
+execute if score @s rng1 matches 2 run item replace entity @s hotbar.7 with nether_star 2
+execute if score @s rng1 matches 3 run item replace entity @s hotbar.7 with nether_star 3
+execute if score @s rng1 matches 4 run item replace entity @s hotbar.7 with nether_star 4
+execute if score @s rng1 matches 5 run item replace entity @s hotbar.7 with nether_star 5
+execute if score @s rng1 matches 6 run item replace entity @s hotbar.7 with nether_star 6
+execute if score @s rng1 matches 7.. run item replace entity @s hotbar.7 with nether_star 7
 
 execute if entity @s[scores={Azr0_UPG_bread_storage=0,Azr_bread_recharge_level=1..,Azr_bread_recharge=1..}] run scoreboard players set @s Azr_bread_recharge 0
 execute if entity @s[scores={Azr0_UPG_bread_storage=1,Azr_bread_recharge_level=2..,Azr_bread_recharge=1..}] run scoreboard players set @s Azr_bread_recharge 0
