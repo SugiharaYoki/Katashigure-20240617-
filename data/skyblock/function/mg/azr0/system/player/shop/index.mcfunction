@@ -9,6 +9,13 @@ execute if items entity @s player.cursor iron_axe[custom_data={"azr0shop":true}]
 execute if items entity @s player.cursor golden_apple[custom_data={"azr0shop":true}] run function skyblock:mg/azr0/system/player/shop/upg/hp
 execute if items entity @s player.cursor torchflower[custom_data={"azr0shop":true}] run function skyblock:mg/azr0/system/player/shop/upg/star
 
+execute if items entity @s player.cursor bow[custom_data={"azr0shop":true}] run function skyblock:mg/azr0/system/player/shop/upg/bow
+execute if items entity @s[scores={Azr0_UPG_bow=0..}] player.cursor weeping_vines[custom_data={"azr0shop":true}] run function skyblock:mg/azr0/system/player/shop/upg/bow_pierce
+execute if items entity @s[scores={Azr0_UPG_bow=0..}] player.cursor twisting_vines[custom_data={"azr0shop":true}] run function skyblock:mg/azr0/system/player/shop/upg/bow_punch
+execute if items entity @s player.cursor crossbow[custom_data={"azr0shop":true}] run function skyblock:mg/azr0/system/player/shop/upg/crossbow
+execute if items entity @s[scores={Azr0_UPG_crossbow=0..}] player.cursor weeping_vines[custom_data={"azr0shop":true}] run function skyblock:mg/azr0/system/player/shop/upg/crossbow_multishot
+execute if items entity @s[scores={Azr0_UPG_crossbow=0..}] player.cursor twisting_vines[custom_data={"azr0shop":true}] run function skyblock:mg/azr0/system/player/shop/upg/crossbow_load
+
 execute if items entity @s player.cursor rabbit_stew[custom_data={"azr0shop":true}] run function skyblock:mg/azr0/system/player/shop/upg/bread_storage
 execute if items entity @s player.cursor pumpkin_pie[custom_data={"azr0shop":true}] run function skyblock:mg/azr0/system/player/shop/upg/bread_recharge
 execute if items entity @s player.cursor beef[custom_data={"azr0shop":true}] run function skyblock:mg/azr0/system/player/shop/upg/bread_quality
