@@ -30,7 +30,7 @@ scoreboard players set MG_AZR0_rng rng8 0
 #6：corex1
 #7：僵尸生成计数器 - 影响怪物生成难度
 #9：全局计时器
-
+scoreboard objectives add Azr_Shop trigger
 scoreboard objectives add Azr_emerald dummy
 scoreboard objectives add Azr_diamond dummy
 scoreboard objectives add Azr_bread_recharge dummy

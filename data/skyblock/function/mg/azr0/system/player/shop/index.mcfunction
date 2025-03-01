@@ -14,6 +14,12 @@ execute if items entity @s player.cursor pumpkin_pie[custom_data={"azr0shop":tru
 execute if items entity @s player.cursor beef[custom_data={"azr0shop":true}] run function skyblock:mg/azr0/system/player/shop/upg/bread_quality
 
 execute if items entity @s player.cursor *[custom_data={"azr0shop":true}] run playsound ui.button.click player @s ~ ~ ~ 0.9 1.3
+
+
+
+execute if items entity @s player.cursor *[custom_data~{PsychicVitae:1b}] run function skyblock:azr/chainkill/build
+
+
 clear @s *[custom_data={"azr0shop":true}]
 clear @s *[custom_data={"PsychicVitae":true}]
 
@@ -41,6 +47,5 @@ execute if entity @s[scores={Azr0_axe_recharge=1000..1009}] run playsound block.
 
 execute as @s[scores={Azr_Shop=8900101..8900199}] run function skyblock:azr/chainkill/assign
 
-execute if items entity @s player.cursor *[custom_data~{PsychicVitae:1b}] run function skyblock:azr/chainkill/build
 
 
