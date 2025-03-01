@@ -1,7 +1,24 @@
 #attribute @s generic.scale modifier remove mg_azr0:init_scale
 attribute @s generic.max_health modifier remove mg_azr0:init_maxhp
 #attribute @s minecraft:player.entity_interaction_range modifier remove mg_azr0:init_reach
-
+attribute @s generic.max_health modifier remove mg_azr0:upg_maxhp01
+attribute @s generic.max_health modifier remove mg_azr0:upg_maxhp02
+attribute @s generic.max_health modifier remove mg_azr0:upg_maxhp03
+attribute @s generic.max_health modifier remove mg_azr0:upg_maxhp04
+attribute @s generic.max_health modifier remove mg_azr0:upg_maxhp05
+attribute @s generic.max_health modifier remove mg_azr0:upg_maxhp06
+attribute @s generic.max_health modifier remove mg_azr0:upg_maxhp07
+attribute @s generic.max_health modifier remove mg_azr0:upg_maxhp08
+attribute @s generic.max_health modifier remove mg_azr0:upg_maxhp09
+attribute @s generic.max_health modifier remove mg_azr0:upg_maxhp10
+attribute @s generic.max_health modifier remove mg_azr0:upg_maxhp11
+attribute @s generic.max_health modifier remove mg_azr0:upg_maxhp12
+attribute @s generic.max_health modifier remove mg_azr0:upg_maxhp13
+attribute @s generic.max_health modifier remove mg_azr0:upg_maxhp14
+attribute @s generic.max_health modifier remove mg_azr0:upg_maxhp15
+attribute @s generic.max_health modifier remove mg_azr0:upg_maxhp16
+attribute @s generic.max_health modifier remove mg_azr0:upg_maxhp17
+attribute @s generic.max_health modifier remove mg_azr0:upg_maxhp18
 
 function skyblock:pvp/skywar/system/removeallgaming
 
