@@ -71,6 +71,13 @@ execute if entity @s[scores={Azr_bread_recharge_level=4,Azr0_UPG_bread_quality=3
 execute if entity @s[scores={Azr_bread_recharge_level=5,Azr0_UPG_bread_quality=3}] run item replace entity @s hotbar.8 with cooked_beef 5
 execute if entity @s[scores={Azr_bread_recharge_level=6,Azr0_UPG_bread_quality=3}] run item replace entity @s hotbar.8 with cooked_beef 6
 execute if entity @s[scores={Azr_bread_recharge_level=7,Azr0_UPG_bread_quality=3}] run item replace entity @s hotbar.8 with cooked_beef 7
+execute if entity @s[scores={Azr_bread_recharge_level=1,Azr0_UPG_bread_quality=4}] run item replace entity @s hotbar.8 with golden_carrot 1
+execute if entity @s[scores={Azr_bread_recharge_level=2,Azr0_UPG_bread_quality=4}] run item replace entity @s hotbar.8 with golden_carrot 2
+execute if entity @s[scores={Azr_bread_recharge_level=3,Azr0_UPG_bread_quality=4}] run item replace entity @s hotbar.8 with golden_carrot 3
+execute if entity @s[scores={Azr_bread_recharge_level=4,Azr0_UPG_bread_quality=4}] run item replace entity @s hotbar.8 with golden_carrot 4
+execute if entity @s[scores={Azr_bread_recharge_level=5,Azr0_UPG_bread_quality=4}] run item replace entity @s hotbar.8 with golden_carrot 5
+execute if entity @s[scores={Azr_bread_recharge_level=6,Azr0_UPG_bread_quality=4}] run item replace entity @s hotbar.8 with golden_carrot 6
+execute if entity @s[scores={Azr_bread_recharge_level=7,Azr0_UPG_bread_quality=4}] run item replace entity @s hotbar.8 with golden_carrot 7
 
 execute if entity @s[scores={Azr_bread_recharge=400..}] run scoreboard players add @s Azr_bread_recharge_level 1
 execute if entity @s[scores={Azr_bread_recharge=400..}] run scoreboard players set @s Azr_bread_recharge 0

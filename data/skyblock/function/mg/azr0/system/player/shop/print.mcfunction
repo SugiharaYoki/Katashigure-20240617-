@@ -101,7 +101,8 @@ item replace entity @s[scores={Azr0_UPG_bread_recharge=3}] inventory.17 with end
 item replace entity @s[scores={Azr0_UPG_bread_recharge=0,Azr0_UPG_hp=4..}] inventory.26 with beef[custom_data={"azr0shop":true},custom_name='{"text":"升级：食物 质量","italic":false,"color":"green"}',lore=['{"text":"食物质量增加1阶","color":"white","italic":true}','{"text":"消耗：3钻石","color":"red","italic":true}']]
 item replace entity @s[scores={Azr0_UPG_bread_recharge=1}] inventory.26 with beef[custom_data={"azr0shop":true},custom_name='{"text":"升级：食物 质量","italic":false,"color":"green"}',lore=['{"text":"食物质量增加1阶","color":"white","italic":true}','{"text":"消耗：10钻石","color":"red","italic":true}']]
 item replace entity @s[scores={Azr0_UPG_bread_recharge=2}] inventory.26 with beef[custom_data={"azr0shop":true},custom_name='{"text":"升级：食物 质量","italic":false,"color":"green"}',lore=['{"text":"食物质量增加1阶","color":"white","italic":true}','{"text":"消耗：20钻石","color":"red","italic":true}']]
-item replace entity @s[scores={Azr0_UPG_bread_recharge=3}] inventory.26 with end_crystal[custom_data={"azr0shop":true},custom_name='{"text":"升级：食物 质量 已升至最高级","italic":false,"color":"gold"}']
+item replace entity @s[scores={Azr0_UPG_bread_recharge=3}] inventory.26 with beef[custom_data={"azr0shop":true},custom_name='{"text":"升级：食物 质量","italic":false,"color":"green"}',lore=['{"text":"食物质量增加1阶","color":"white","italic":true}','{"text":"消耗：40钻石","color":"red","italic":true}']]
+item replace entity @s[scores={Azr0_UPG_bread_recharge=4}] inventory.26 with end_crystal[custom_data={"azr0shop":true},custom_name='{"text":"升级：食物 质量 已升至最高级","italic":false,"color":"gold"}']
 
 
 item replace entity @s[scores={Azr0_UPG_hp=0}] inventory.7 with golden_apple[custom_data={"azr0shop":true},custom_name='{"text":"提升血量上限","italic":false,"color":"green"}',lore=['{"text":"增加2最高生命值","color":"white","italic":true}','{"text":"消耗：20绿宝石","color":"red","italic":true}']]
