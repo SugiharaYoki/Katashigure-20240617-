@@ -94,6 +94,18 @@ scoreboard players set @a[tag=MG_AZR0PT] Azr0_MAX_star 3
 scoreboard players set @a[tag=MG_AZR0PT] Azr0_UPG_star 0
 scoreboard players set @a[tag=MG_AZR0PT] Azr0_USED_star 0
 
+execute as @a[tag=MG_AZR0PT] unless entity @s[scores={AZR_chainKillUpg_pts=-999..}] run scoreboard players set @s AZR_chainKillUpg_pts 0
+execute as @a[tag=MG_AZR0PT] unless entity @s[scores={AZR_chainKillUpg_chargespeed=-999..}] run scoreboard players set @s AZR_chainKillUpg_chargespeed 0
+execute as @a[tag=MG_AZR0PT] unless entity @s[scores={AZR_chainKillUpg_chargeboost=-999..}] run scoreboard players set @s AZR_chainKillUpg_chargeboost 0
+execute as @a[tag=MG_AZR0PT] unless entity @s[scores={AZR_chainKillUpg_attackcount=-999..}] run scoreboard players set @s AZR_chainKillUpg_attackcount 0
+execute as @a[tag=MG_AZR0PT] unless entity @s[scores={AZR_chainKillUpg_attackcountmin=-999..}] run scoreboard players set @s AZR_chainKillUpg_attackcountmin 0
+execute as @a[tag=MG_AZR0PT] unless entity @s[scores={AZR_chainKillUpg_attackdamage=-999..}] run scoreboard players set @s AZR_chainKillUpg_attackdamage 0
+execute as @a[tag=MG_AZR0PT] unless entity @s[scores={AZR_chainKillUpg_attackrange=-999..}] run scoreboard players set @s AZR_chainKillUpg_attackrange 0
+execute as @a[tag=MG_AZR0PT] unless entity @s[scores={AZR_chainKillUpg_defense=-999..}] run scoreboard players set @s AZR_chainKillUpg_defense 0
+execute as @a[tag=MG_AZR0PT] unless entity @s[scores={AZR_chainKillUpg_attackheal=-999..}] run scoreboard players set @s AZR_chainKillUpg_attackheal 0
+execute as @a[tag=MG_AZR0PT] unless entity @s[scores={AZR_chainKillUpg_defensecharge=-999..}] run scoreboard players set @s AZR_chainKillUpg_defensecharge 0
+execute as @a[tag=MG_AZR0PT] unless entity @s[scores={AZR_chainKillUpg_antichargedecrease=-999..}] run scoreboard players set @s AZR_chainKillUpg_antichargedecrease 0
+execute as @a[tag=MG_AZR0PT] unless entity @s[scores={AZR_chainKillUpg_attackspeed=-999..}] run scoreboard players set @s AZR_chainKillUpg_attackspeed 0
 
 #启动core
 setblock 125078 0 -242 minecraft:redstone_block
@@ -108,7 +120,26 @@ setblock 125078 0 -242 minecraft:redstone_block
 
 
 
-
+#索命连击
+scoreboard objectives add AZR_chainKill minecraft.custom:minecraft.mob_kills
+scoreboard objectives add AZR_chainKill_damage minecraft.custom:minecraft.damage_dealt
+scoreboard objectives add AZR_chainKill_damageblocked minecraft.custom:minecraft.damage_blocked_by_shield
+scoreboard objectives add AZR_chainKill_damagetaken minecraft.custom:minecraft.damage_taken
+scoreboard objectives add AZR_chainKill_count dummy
+scoreboard objectives add AZR_chainKill_chargeup dummy
+scoreboard objectives add AZR_chainKillUpg_pts dummy
+scoreboard objectives add AZR_chainKillUpg_pts_add dummy
+scoreboard objectives add AZR_chainKillUpg_chargespeed dummy
+scoreboard objectives add AZR_chainKillUpg_chargeboost dummy
+scoreboard objectives add AZR_chainKillUpg_attackcount dummy
+scoreboard objectives add AZR_chainKillUpg_attackcountmin dummy
+scoreboard objectives add AZR_chainKillUpg_attackdamage dummy
+scoreboard objectives add AZR_chainKillUpg_attackrange dummy
+scoreboard objectives add AZR_chainKillUpg_defense dummy
+scoreboard objectives add AZR_chainKillUpg_attackheal dummy
+scoreboard objectives add AZR_chainKillUpg_defensecharge dummy
+scoreboard objectives add AZR_chainKillUpg_antichargedecrease dummy
+scoreboard objectives add AZR_chainKillUpg_attackspeed dummy
 
 
 

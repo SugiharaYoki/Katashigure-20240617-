@@ -32,3 +32,4 @@ clear @s
 bossbar set mg:azr0_bar players @a[tag=MG_AZR0PT]
 
 scoreboard players set @s Azr_isDead 0
+
