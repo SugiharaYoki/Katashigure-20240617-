@@ -60,6 +60,7 @@ tag @a[tag=MG_AZR0PT] add Gaming
 clear @a[tag=MG_AZR0PT]
 effect clear @a[tag=MG_AZR0PT]
 execute at @n[tag=mg_azr0,type=marker] positioned ~ ~1 ~ run tp @a[tag=MG_AZR0PT] ~ ~ ~
+execute at @n[tag=mg_azr0,type=marker] positioned ~ ~1 ~ run spawnpoint @a[tag=MG_AZR0PT] ~ ~ ~
 
 execute at @n[tag=mg_azr0,type=marker] run kill @e[type=item,distance=..120]
 
