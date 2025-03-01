@@ -17,6 +17,21 @@
       ]
     },
     {
+      "rolls": 5,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:air",
+          "weight": 45
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:arrow",
+          "weight": 10
+        }
+      ]
+    },
+    {
       "rolls": 4,
       "entries": [
         {
