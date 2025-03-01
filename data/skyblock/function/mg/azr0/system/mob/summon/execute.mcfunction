@@ -20,3 +20,5 @@ execute if score MG_AZR0_rng rng3 matches 61..67 at @e[tag=mg_azr0_MobPortals,ty
 execute unless entity @a[tag=MG_AZR0PT,scores={Azr0_UPG_hp=..3}] if score MG_AZR0_rng rng3 matches 68..73 at @e[tag=mg_azr0_MobPortals,type=marker,limit=1,sort=random] run function skyblock:mg/azr0/m/bogged
 execute if score MG_AZR0_rng rng3 matches 74..79 at @e[tag=mg_azr0_MobPortals,type=marker,limit=1,sort=random] run function skyblock:mg/azr0/m/creeper
 execute if score MG_AZR0_rng rng3 matches 80..83 at @e[tag=mg_azr0_MobPortals,type=marker,limit=1,sort=random] run function skyblock:mg/azr0/m/zombie_villager
+
+

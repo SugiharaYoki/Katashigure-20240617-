@@ -58,3 +58,17 @@ execute if score MG_AZR0_rng rng4 matches 11 at @n[tag=mg_azr0,type=marker] posi
 execute as @e[tag=mg_azr0_MobPortals_horizontal,limit=2] at @s run tp @s ~ ~ ~ facing ~ ~ ~-1
 execute as @e[tag=mg_azr0_MobPortals_vertical,limit=2] at @s run tp @s ~ ~ ~ facing ~-1 ~ ~
 
+
+execute if score MG_AZR0_Timer rng2 matches 15..25 store result score MG_AZR0_rng rng4 run random value 1..20
+execute if score MG_AZR0_Timer rng2 matches 26..35 store result score MG_AZR0_rng rng4 run random value 2..20
+execute if score MG_AZR0_Timer rng2 matches 36..55 store result score MG_AZR0_rng rng4 run random value 4..20
+execute if score MG_AZR0_Timer rng2 matches 56.. store result score MG_AZR0_rng rng4 run random value 6..20
+execute store result score MG_AZR0_rng rng8 run random value 1..9
+
+execute if score MG_AZR0_rng rng4 matches 18.. at @r[tag=MG_AZR0PT,limit=2] run function skyblock:mg/azr0/m/magma_code
+execute if score MG_AZR0_rng rng4 matches 19.. at @r[tag=MG_AZR0PT,limit=1] run function skyblock:mg/azr0/m/magma_code
+execute if score MG_AZR0_rng rng4 matches 20 at @r[tag=MG_AZR0PT,limit=1] run function skyblock:mg/azr0/m/magma_code
+
+
+
+
