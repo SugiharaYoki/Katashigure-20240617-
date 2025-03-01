@@ -11,7 +11,7 @@ execute if entity @s[scores={If_MD_13=1..},gamemode=survival] run function skybl
 
 execute if entity @s[scores={If_MD_Strad=1..}] run playsound minecraft:block.beacon.power_select ambient @a ~ ~2 ~ 4 0.5
 execute if entity @s[scores={If_MD_Strad=1..}] run summon area_effect_cloud ~ ~ ~ {Particle:{type:"end_rod"},Radius:5,Duration:200,potion_contents:{custom_color:16383998,custom_effects:[{id:levitation,duration:120,amplifier:3,show_particles:1b,show_icon:1b},{id:glowing,duration:120,amplifier:0,show_particles:1b,show_icon:1b}]}}
-execute if entity @s[scores={If_MD_Strad=1..}] run summon area_effect_cloud ~ ~-1.5 ~ {Particle:{type:"end_rod"},Radius:5,Duration:200,potion_contents:{custom_color:16383998,custom_effects:[{id:levitation,duration:20,amplifier:3,show_particles:1b,show_icon:1b},{id:glowing,duration:120,amplifier:0,show_particles:1b,show_icon:1b}]}}
+execute if entity @s[scores={If_MD_Strad=1..}] run effect give @s levitation 6 3
 execute if entity @s[scores={If_MD_Strad=1..}] run scoreboard players set @s If_MD_Strad 0
 
 execute if entity @s[scores={If_MD_Wait=1..}] run playsound minecraft:block.beacon.deactivate ambient @a ~ ~1 ~ 4 0.8
@@ -52,7 +52,7 @@ execute if entity @s[scores={If_MD_Ward=1..}] run scoreboard players set @s If_M
 
 execute if items entity @s[predicate=!skyblock:sneaking] container.* *[custom_data={skywar:1,skywar_ishtar_20:1}] positioned ~ ~-0.2 ~ if block ~ ~ ~ slime_block run effect give @s jump_boost 1 7 false
 execute if items entity @s[predicate=!skyblock:sneaking] container.* *[custom_data={skywar:1,skywar_ishtar_20:1}] positioned ~ ~-0.05 ~ if block ~ ~ ~ cake run effect give @s jump_boost 1 7 false
-execute if items entity @s[predicate=skyblock:sneaking] container.* *[custom_data={skywar:1,skywar_ishtar_20:1}] positioned ~ ~-0.2 ~ if block ~ ~ ~ slime_block run effect give @s jump_boost 1 3 false
+execute if items entity @s[predicate=skyblock:sneaking] container.* *[custom_data={skywar:1,skywar_ishtar_20:1}] run effect give @s jump_boost 1 3 false
 
 
 execute if items entity @s container.* *[custom_data={skywar:1,skywar_ishtar_9:1}] run effect give @s haste 3 1 true
@@ -88,6 +88,29 @@ execute if items entity @s[scores={If_Bless30=1..}] container.* *[custom_data={s
 
 execute if entity @s[scores={If_Bless31=1..}] run scoreboard players remove @s If_Bless31 1
 execute if items entity @s[scores={If_Bless31c=1..}] container.* *[custom_data={skywar_ishtar_31:1}] run function skyblock:pvp/skywar/bless/skywar_ishtar_core31
+
+tag @s remove Bless32Execute
+execute if block ~0.2 ~ ~-0.2 #fire if items entity @s container.* *[custom_data={skywar_ishtar_32:1}] run tag @s add Bless32Execute
+execute if block ~0.2 ~ ~-0.2 #campfires if items entity @s container.* *[custom_data={skywar_ishtar_32:1}] run tag @s add Bless32Execute
+execute if block ~0.2 ~ ~-0.2 lava if items entity @s container.* *[custom_data={skywar_ishtar_32:1}] run tag @s add Bless32Execute
+execute if block ~0.2 ~ ~0.2 #fire if items entity @s container.* *[custom_data={skywar_ishtar_32:1}] run tag @s add Bless32Execute
+execute if block ~0.2 ~ ~0.2 #campfires if items entity @s container.* *[custom_data={skywar_ishtar_32:1}] run tag @s add Bless32Execute
+execute if block ~0.2 ~ ~0.2 lava if items entity @s container.* *[custom_data={skywar_ishtar_32:1}] run tag @s add Bless32Execute
+execute if block ~-0.2 ~ ~-0.2 #fire if items entity @s container.* *[custom_data={skywar_ishtar_32:1}] run tag @s add Bless32Execute
+execute if block ~-0.2 ~ ~-0.2 #campfires if items entity @s container.* *[custom_data={skywar_ishtar_32:1}] run tag @s add Bless32Execute
+execute if block ~-0.2 ~ ~-0.2 lava if items entity @s container.* *[custom_data={skywar_ishtar_32:1}] run tag @s add Bless32Execute
+execute if block ~-0.2 ~ ~0.2 #fire if items entity @s container.* *[custom_data={skywar_ishtar_32:1}] run tag @s add Bless32Execute
+execute if block ~-0.2 ~ ~0.2 #campfires if items entity @s container.* *[custom_data={skywar_ishtar_32:1}] run tag @s add Bless32Execute
+execute if block ~-0.2 ~ ~0.2 lava if items entity @s container.* *[custom_data={skywar_ishtar_32:1}] run tag @s add Bless32Execute
+execute if entity @s[tag=Bless32Execute] run function skyblock:pvp/skywar/bless/skywar_ishtar_core32
+scoreboard players remove @s[scores={If_Bless32=1..}] If_Bless32 1
+execute if entity @s[scores={If_Bless32=1}] run attribute @s generic.armor modifier remove skywar:ishtar_bless_32
+tag @s remove Bless32Execute
+
+execute if items entity @s container.* *[custom_data={skywar_ishtar_33:1}] unless items entity @s weapon.offhand *[custom_data={skywar_ishtar_33:1}] at @s run function skyblock:pvp/skywar/bless/skywar_ishtar_core33
+
+execute if items entity @s weapon.* *[custom_data={skywar_ishtar_34:1}] at @s run function skyblock:pvp/skywar/bless/skywar_ishtar_core34
+
 
 
 

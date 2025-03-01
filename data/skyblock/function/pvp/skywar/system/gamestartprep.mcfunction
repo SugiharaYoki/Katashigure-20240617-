@@ -14,15 +14,15 @@ execute if score skywar_start rng1 matches 2 run scoreboard players set @s Annou
 execute if score skywar_start rng1 matches 2 run tag @a[tag=!Gaming] remove Temp_NoSkyWar
 execute if score skywar_start rng1 matches 2 run tag @a[tag=Gaming] add Temp_NoSkyWar
 execute if score skywar_start rng1 matches 2 run tag @a[tag=Temp_NoSkyWar] add NoSkyWar
-execute if score skywar_start rng1 matches 1 run title @a[tag=!Gaming,tag=!NoSkyWar] times 4 50 5
-execute if score skywar_start rng1 matches 1 run title @a[tag=!Gaming,tag=!NoSkyWar] title {"text":"开启PVP竞技场","bold":true,"color":"gold"}
-execute if score skywar_start rng1 matches 1 run tellraw @a[tag=!Gaming] {"text":"   『个人面板』","color":"yellow"}
-execute if score skywar_start rng1 matches 1 run tellraw @a[tag=!Gaming,tag=NoSkyWar] {"text":"您设置了“禁用PVP战争”！请选择是否加入PVP","bold":false,"color":"light_purple"}
-execute if score skywar_start rng1 matches 1 run tellraw @a[tag=!Gaming,tag=NoSkyWar] {"text":"   —— [参加游戏] ——","color":"green","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 992"},"hoverEvent":{"action":"show_text","contents":{"text":"暂时关闭“自动参加PVP战争”","color":"green"}}}
-execute if score skywar_start rng1 matches 1 run tellraw @a[tag=!Gaming,tag=!NoSkyWar] {"text":"   —— [不参加游戏： 仅本局] ——","color":"green","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 993"},"hoverEvent":{"action":"show_text","contents":{"text":"关闭“自动参加PVP战争”","color":"green"}}}
-execute if score skywar_start rng1 matches 1 run tellraw @a[tag=!Gaming,tag=!NoSkyWar] {"text":"   —— [不参加游戏： 直到自己重新打开] ——","color":"green","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 995"},"hoverEvent":{"action":"show_text","contents":{"text":"开启“自动参加PVP战争”","color":"green"}}}
-execute if score skywar_start rng1 matches 1 run tellraw @a[tag=!Gaming,tag=!NoSkyWar] {"text":"   —— [暂停开局] ——","color":"yellow","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 994"},"hoverEvent":{"action":"show_text","contents":{"text":"暂停PVP战场的开局","color":"green"}}}
-execute if score skywar_start rng1 matches 1 run tellraw @a[tag=!Gaming,tag=!NoSkyWar] {"text":"   —— [重置倒计时] ——","color":"yellow","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 996"},"hoverEvent":{"action":"show_text","contents":{"text":"重置PVP战场的开局倒计时","color":"green"}}}
+execute if score skywar_start rng1 matches 2 run title @a[tag=!Gaming,tag=!NoSkyWar] times 4 50 5
+execute if score skywar_start rng1 matches 2 run title @a[tag=!Gaming,tag=!NoSkyWar] title {"text":"开启PVP竞技场","bold":true,"color":"gold"}
+execute if score skywar_start rng1 matches 2 run tellraw @a[tag=!Gaming] {"text":"   『个人面板』","color":"yellow"}
+execute if score skywar_start rng1 matches 2 run tellraw @a[tag=!Gaming,tag=NoSkyWar] {"text":"您设置了“禁用PVP战争”！请选择是否加入PVP","bold":false,"color":"light_purple"}
+execute if score skywar_start rng1 matches 2 run tellraw @a[tag=!Gaming,tag=NoSkyWar] {"text":"   —— [参加游戏] ——","color":"green","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 992"},"hoverEvent":{"action":"show_text","contents":{"text":"暂时关闭“自动参加PVP战争”","color":"green"}}}
+execute if score skywar_start rng1 matches 2 run tellraw @a[tag=!Gaming,tag=!NoSkyWar] {"text":"   —— [不参加游戏： 仅本局] ——","color":"green","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 993"},"hoverEvent":{"action":"show_text","contents":{"text":"关闭“自动参加PVP战争”","color":"green"}}}
+execute if score skywar_start rng1 matches 2 run tellraw @a[tag=!Gaming,tag=!NoSkyWar] {"text":"   —— [不参加游戏： 直到自己重新打开] ——","color":"green","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 995"},"hoverEvent":{"action":"show_text","contents":{"text":"开启“自动参加PVP战争”","color":"green"}}}
+execute if score skywar_start rng1 matches 2 run tellraw @a[tag=!Gaming,tag=!NoSkyWar] {"text":"   —— [暂停开局] ——","color":"yellow","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 994"},"hoverEvent":{"action":"show_text","contents":{"text":"暂停PVP战场的开局","color":"green"}}}
+execute if score skywar_start rng1 matches 2 run tellraw @a[tag=!Gaming,tag=!NoSkyWar] {"text":"   —— [重置倒计时] ——","color":"yellow","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 996"},"hoverEvent":{"action":"show_text","contents":{"text":"重置PVP战场的开局倒计时","color":"green"}}}
 #execute if score skywar_start rng1 matches 1 as @a[tag=!NoSkyWar] at @s unless entity @s[scores={Job=0..}] run tellraw @s {"text":"您的职业为空！系统已经自动将您的职业初始化至「旅行家」","color":"light_purple"}
 #execute if score skywar_start rng1 matches 1 as @a[tag=!NoSkyWar] at @s unless entity @s[scores={Job=0..}] run scoreboard players set @s Job 3
 #execute if score skywar_start rng1 matches 1 as @a[tag=!NoSkyWar] at @s unless entity @s[scores={Job_SpiritProp=0..}] run tellraw @s {"text":"您还没有设定精神力属性！系统已经自动将您的属性设置为「日」","color":"light_purple" }
@@ -50,22 +50,23 @@ execute if score skywar_start rng1 matches 2 if score sc Map_Theme matches 4 run
 execute if score skywar_start rng1 matches 2 if score sc Map_Theme matches 4 run forceload add 50600 50600 50800 50800
 execute if score skywar_start rng1 matches 2 as @e[tag=!NoSkyWar,tag=!Gaming] run kill @e[type=wolf,distance=0..10,tag=!Wolfer]
 execute if score skywar_start rng1 matches 2 run kill @e[x=50000,y=50,z=50000,distance=..1500,type=!player]
-execute if score skywar_start rng1 matches 2 if entity @n[tag=!MapLoaAlr,tag=sc] if score sc Map_Code matches 14 run forceload add -9838 -10164 -9709 -10035
-execute if score skywar_start rng1 matches 2 if entity @n[tag=!MapLoaAlr,tag=sc] if score sc Map_Code matches 2 run function skyblock:pvp/skywar/system/init/map/map002_part1
-execute if score skywar_start rng1 matches 2 if entity @n[tag=!MapLoaAlr,tag=sc] if score sc Map_Code matches 3 run function skyblock:pvp/skywar/system/init/map/map003_part1
-execute if score skywar_start rng1 matches 2 if entity @n[tag=!MapLoaAlr,tag=sc] if score sc Map_Code matches 4 run function skyblock:pvp/skywar/system/init/map/map004_part1_hard
-execute if score skywar_start rng1 matches 2 if entity @n[tag=!MapLoaAlr,tag=sc] if score sc Map_Code matches 5 run function skyblock:pvp/skywar/system/init/map/map005_part1
-execute if score skywar_start rng1 matches 2 if entity @n[tag=!MapLoaAlr,tag=sc] if score sc Map_Code matches 7 run function skyblock:pvp/skywar/system/init/map/map007_part1
-execute if score skywar_start rng1 matches 2 if entity @n[tag=!MapLoaAlr,tag=sc] if score sc Map_Code matches 8 run function skyblock:pvp/skywar/system/init/map/map008_part1
-execute if score skywar_start rng1 matches 2 if entity @n[tag=!MapLoaAlr,tag=sc] if score sc Map_Code matches 10 run function skyblock:pvp/skywar/system/init/map/map010_part1_hard
-execute if score skywar_start rng1 matches 2 if entity @n[tag=!MapLoaAlr,tag=sc] if score sc Map_Code matches 11 run function skyblock:pvp/skywar/system/init/map/map011_size1
-execute if score skywar_start rng1 matches 2 if entity @n[tag=!MapLoaAlr,tag=sc] if score sc Map_Code matches 13 run function skyblock:pvp/skywar/system/init/map/map013_part1
-execute if score skywar_start rng1 matches 2 if entity @n[tag=!MapLoaAlr,tag=sc] if score sc Map_Code matches 14 unless block -156 59 -114 diamond_block run function skyblock:pvp/skywar/system/init/map/map014_part1_hard
-execute if score skywar_start rng1 matches 2 if entity @n[tag=!MapLoaAlr,tag=sc] if score sc Map_Code matches 14 if block -156 59 -114 diamond_block run function skyblock:pvp/skywar/system/init/map/map014alt_part1_hard
-execute if score skywar_start rng1 matches 2 if entity @n[tag=!MapLoaAlr,tag=sc] if score sc Map_Code matches 15 run function skyblock:pvp/skywar/system/init/map/map015_part1_hard
-execute if score skywar_start rng1 matches 2 if entity @n[tag=!MapLoaAlr,tag=sc] if score sc Map_Code matches 16 run function skyblock:pvp/skywar/system/init/map/map016_part1_hard
-execute if score skywar_start rng1 matches 2 if entity @n[tag=!MapLoaAlr,tag=sc] if score sc Map_Code matches 17 run function skyblock:pvp/skywar/system/init/map/map017_part1_hard
-execute if score skywar_start rng1 matches 2 if entity @n[tag=!MapLoaAlr,tag=sc] if score sc Map_Code matches 18 run function skyblock:pvp/skywar/system/init/map/map018_part1_hard
+execute if score skywar_start rng1 matches 2 run function skyblock:pvp/skywar/system/init/map/common_partdeletemap_1
+execute if score skywar_start rng1 matches 3 if entity @n[tag=!MapLoaAlr,tag=sc] if score sc Map_Code matches 14 run forceload add -9838 -10164 -9709 -10035
+execute if score skywar_start rng1 matches 3 if entity @n[tag=!MapLoaAlr,tag=sc] if score sc Map_Code matches 2 run function skyblock:pvp/skywar/system/init/map/map002_part1
+execute if score skywar_start rng1 matches 3 if entity @n[tag=!MapLoaAlr,tag=sc] if score sc Map_Code matches 3 run function skyblock:pvp/skywar/system/init/map/map003_part1
+execute if score skywar_start rng1 matches 3 if entity @n[tag=!MapLoaAlr,tag=sc] if score sc Map_Code matches 4 run function skyblock:pvp/skywar/system/init/map/map004_part1_hard
+execute if score skywar_start rng1 matches 3 if entity @n[tag=!MapLoaAlr,tag=sc] if score sc Map_Code matches 5 run function skyblock:pvp/skywar/system/init/map/map005_part1
+execute if score skywar_start rng1 matches 3 if entity @n[tag=!MapLoaAlr,tag=sc] if score sc Map_Code matches 7 run function skyblock:pvp/skywar/system/init/map/map007_part1
+execute if score skywar_start rng1 matches 3 if entity @n[tag=!MapLoaAlr,tag=sc] if score sc Map_Code matches 8 run function skyblock:pvp/skywar/system/init/map/map008_part1
+execute if score skywar_start rng1 matches 3 if entity @n[tag=!MapLoaAlr,tag=sc] if score sc Map_Code matches 10 run function skyblock:pvp/skywar/system/init/map/map010_part1_hard
+execute if score skywar_start rng1 matches 3 if entity @n[tag=!MapLoaAlr,tag=sc] if score sc Map_Code matches 11 run function skyblock:pvp/skywar/system/init/map/map011_size1
+execute if score skywar_start rng1 matches 3 if entity @n[tag=!MapLoaAlr,tag=sc] if score sc Map_Code matches 13 run function skyblock:pvp/skywar/system/init/map/map013_part1
+execute if score skywar_start rng1 matches 3 if entity @n[tag=!MapLoaAlr,tag=sc] if score sc Map_Code matches 14 unless block -156 59 -114 diamond_block run function skyblock:pvp/skywar/system/init/map/map014_part1_hard
+execute if score skywar_start rng1 matches 3 if entity @n[tag=!MapLoaAlr,tag=sc] if score sc Map_Code matches 14 if block -156 59 -114 diamond_block run function skyblock:pvp/skywar/system/init/map/map014alt_part1_hard
+execute if score skywar_start rng1 matches 3 if entity @n[tag=!MapLoaAlr,tag=sc] if score sc Map_Code matches 15 run function skyblock:pvp/skywar/system/init/map/map015_part1_hard
+execute if score skywar_start rng1 matches 3 if entity @n[tag=!MapLoaAlr,tag=sc] if score sc Map_Code matches 16 run function skyblock:pvp/skywar/system/init/map/map016_part1_hard
+execute if score skywar_start rng1 matches 3 if entity @n[tag=!MapLoaAlr,tag=sc] if score sc Map_Code matches 17 run function skyblock:pvp/skywar/system/init/map/map017_part1_hard
+execute if score skywar_start rng1 matches 3 if entity @n[tag=!MapLoaAlr,tag=sc] if score sc Map_Code matches 18 run function skyblock:pvp/skywar/system/init/map/map018_part1_hard
 #[futuredevskywar]
 execute if score skywar_start rng1 matches 3 if entity @n[tag=!MapLoaAlr,tag=sc] if score sc Map_Code matches 14 run forceload remove -9838 -10164 -9709 -10035
 execute if score skywar_start rng1 matches 3 if entity @n[tag=!MapLoaAlr,tag=sc] run tag @n[tag=sc] add MapLoaAlr
@@ -91,6 +92,7 @@ execute if score skywar_start rng1 matches 2 run scoreboard objectives add If_Bl
 execute if score skywar_start rng1 matches 2 run scoreboard objectives add If_Bless30 custom:damage_blocked_by_shield
 execute if score skywar_start rng1 matches 2 run scoreboard objectives add If_Bless31 dummy
 execute if score skywar_start rng1 matches 2 run scoreboard objectives add If_Bless31c minecraft.custom:damage_dealt
+execute if score skywar_start rng1 matches 2 run scoreboard objectives add If_Bless32 dummy
 execute if score skywar_start rng1 matches 2 as @a[scores={If_Bless11=1..}] run attribute @s generic.jump_strength modifier remove skywar_ishtar_bless11_01
 #无意义变量 scoreboard players reset @s RemainPlayer
 execute if score skywar_start rng1 matches 2 as @a[tag=!NoSkyWar] at @s run scoreboard players reset @s DeathCount
@@ -127,6 +129,7 @@ execute if score skywar_start rng1 matches 3 as @a[tag=!NoSkyWar] at @s run scor
 execute if score skywar_start rng1 matches 3 as @a[tag=!NoSkyWar] at @s run scoreboard players set @s If_Bless29 0
 execute if score skywar_start rng1 matches 3 as @a[tag=!NoSkyWar] at @s run scoreboard players set @s If_Bless30 0
 execute if score skywar_start rng1 matches 3 as @a[tag=!NoSkyWar] at @s run scoreboard players set @s If_Bless31 0
+execute if score skywar_start rng1 matches 3 as @a[tag=!NoSkyWar] at @s run scoreboard players set @s If_Bless32 0
 #execute if score skywar_start rng1 matches 3 as @a[tag=!NoSkyWar] at @s run scoreboard players set @s If_Bless31c 0
 execute if score skywar_start rng1 matches 3 run scoreboard objectives add TempIf_Job6A dummy
 execute if score skywar_start rng1 matches 3 run scoreboard objectives add TempIf_Job6B dummy
@@ -253,12 +256,12 @@ execute if block -131 59 -128 minecraft:green_concrete if score skywar_start rng
 execute if block -131 59 -127 green_concrete if score skywar_start rng1 matches 17 run execute as @a[tag=PVPing] at @s run effect give @s regeneration 300 1 true
 execute if block 44 61 54 minecraft:soul_lantern if score skywar_start rng1 matches 17 run execute as @a[tag=PVPing] at @s run item replace entity @s armor.head with melon[minecraft:enchantments={binding_curse:1,blast_protection:4}]
 
-execute if score skywar_start rng1 matches 1 if block -131 58 -133 diamond_block run tellraw @a[tag=!Gaming] {"text":"◇ 伊什塔尔的赐福 已开启","color":"aqua","bold": true}
-execute if score skywar_start rng1 matches 1 if block -131 59 -119 green_concrete run tellraw @a[tag=!Gaming] {"text":"◇ 请注意：全局虚弱III已开启","color":"red"}
-execute if score skywar_start rng1 matches 1 if block -131 59 -122 green_concrete run tellraw @a[tag=!Gaming] {"text":"◇ 请注意：全局挖掘疲劳已开启","color":"red"}
-execute if score skywar_start rng1 matches 1 if block -131 59 -123 green_concrete run tellraw @a[tag=!Gaming] {"text":"◇ 请注意：全局隐身已开启","color":"red"}
-execute if score skywar_start rng1 matches 1 if block -131 59 -124 green_concrete run tellraw @a[tag=!Gaming] {"text":"◇ 请注意：全局隐身已开启","color":"red"}
-execute if score skywar_start rng1 matches 1 if block -131 59 -125 green_concrete run tellraw @a[tag=!Gaming] {"text":"◇ 玩家将在开局获得20个TNT","color":"red"}
+execute if score skywar_start rng1 matches 2 if block -131 58 -133 diamond_block run tellraw @a[tag=!Gaming] {"text":"◇ 伊什塔尔的赐福 已开启","color":"aqua","bold": true}
+execute if score skywar_start rng1 matches 2 if block -131 59 -119 green_concrete run tellraw @a[tag=!Gaming] {"text":"◇ 请注意：全局虚弱III已开启","color":"red"}
+execute if score skywar_start rng1 matches 2 if block -131 59 -122 green_concrete run tellraw @a[tag=!Gaming] {"text":"◇ 请注意：全局挖掘疲劳已开启","color":"red"}
+execute if score skywar_start rng1 matches 2 if block -131 59 -123 green_concrete run tellraw @a[tag=!Gaming] {"text":"◇ 请注意：全局隐身已开启","color":"red"}
+execute if score skywar_start rng1 matches 2 if block -131 59 -124 green_concrete run tellraw @a[tag=!Gaming] {"text":"◇ 请注意：全局隐身已开启","color":"red"}
+execute if score skywar_start rng1 matches 2 if block -131 59 -125 green_concrete run tellraw @a[tag=!Gaming] {"text":"◇ 玩家将在开局获得20个TNT","color":"red"}
 
 execute if block -131 59 -118 green_concrete if score skywar_start rng1 matches 17 run execute as @a[tag=PVPing] at @s run give @s ender_pearl 3
 execute if block -131 59 -118 green_concrete if score skywar_start rng1 matches 17 run execute as @a[tag=PVPing] at @s run give @s firework_rocket 8

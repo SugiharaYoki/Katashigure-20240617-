@@ -1,0 +1,11 @@
+$execute if entity @s[scores={Azr0_UPG_sword_speed=0}] run function skyblock:mg/azr0/system/player/hotbar/sword3 {"speed":2.2,"knockback":$(knockback)}
+$execute if entity @s[scores={Azr0_UPG_sword_speed=1}] run function skyblock:mg/azr0/system/player/hotbar/sword3 {"speed":2.1,"knockback":$(knockback)}
+$execute if entity @s[scores={Azr0_UPG_sword_speed=2}] run function skyblock:mg/azr0/system/player/hotbar/sword3 {"speed":2.0,"knockback":$(knockback)}
+$execute if entity @s[scores={Azr0_UPG_sword_speed=3}] run function skyblock:mg/azr0/system/player/hotbar/sword3 {"speed":1.9,"knockback":$(knockback)}
+$execute if entity @s[scores={Azr0_UPG_sword_speed=4}] run function skyblock:mg/azr0/system/player/hotbar/sword3 {"speed":1.8,"knockback":$(knockback)}
+$execute if entity @s[scores={Azr0_UPG_sword_speed=5}] run function skyblock:mg/azr0/system/player/hotbar/sword3 {"speed":1.7,"knockback":$(knockback)}
+$execute if entity @s[scores={Azr0_UPG_sword_speed=6}] run function skyblock:mg/azr0/system/player/hotbar/sword3 {"speed":1.6,"knockback":$(knockback)}
+$execute if entity @s[scores={Azr0_UPG_sword_speed=7}] run function skyblock:mg/azr0/system/player/hotbar/sword3 {"speed":1.5,"knockback":$(knockback)}
+$execute if entity @s[scores={Azr0_UPG_sword_speed=8}] run function skyblock:mg/azr0/system/player/hotbar/sword3 {"speed":1.4,"knockback":$(knockback)}
+$execute if entity @s[scores={Azr0_UPG_sword_speed=9}] run function skyblock:mg/azr0/system/player/hotbar/sword3 {"speed":1.3,"knockback":$(knockback)}
+$execute if entity @s[scores={Azr0_UPG_sword_speed=10}] run function skyblock:mg/azr0/system/player/hotbar/sword3 {"speed":1.2,"knockback":$(knockback)}

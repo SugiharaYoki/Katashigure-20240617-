@@ -18,12 +18,15 @@ function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"影猎手"', title
 function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"影猎手"', title:'"泯没「丛禾蓦至」"', description:'"特殊模板 放置于背包时，可以通过下蹲恢复生命\\\\n在草丛中蹲下可以隐身"', id: 028}
 function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"驯兽师"', title:'"逃亡「刹踪烟消」"', description:'"高速逃跑增强跳跃用药剂×2\\\\n效果瞬间就会结束，所以要尽快利用"', id: 012}
 function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"驯兽师"', title:'"命唤「尸亡重兽」"', description:'"僵尸疣猪兽蛋×2、岩浆怪蛋×2\\\\n\\\\n小提示：最好放置点距离自己远一点"', id: 007}
+function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"驯兽师"', title:'"割荒「暗行豸螨」"', description:'"龙息×2 特殊模板 手持时将周围5格的龙息掉落物转换为炸弹螨\\\\n炸弹螨在有玩家接近时会剧烈爆炸"', id: 034}
 function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"建筑师"', title:'"筑稳「雕刻罗盘」"', description:'"罗盘 持有时增加方块操作距离2格\\\\n除此之外也会增加移动速度与防御力\\\\n但是会降低攻击速度"', id: 015}
 function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"建筑师"', title:'"困笼「殆命角斗」"', description:'"高速堡垒核心×2 搭建落脚堡垒\\\\n使用后还会获得5秒的跳跃提升\\\\n留在背包内时增加挖掘速度（无法叠加）\\\\n\\\\n注意：如果错过了跳跃提升，这个困笼无法在通常状态下跳出"', id: 009}
 function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"建筑师"', title:'"搬运「输载归初」"', description:'"输载归初核心×2 将周围3格内的宝箱全部刷新成蛋糕盒\\\\n留在背包内时下蹲可以直接破坏脚下的潜影盒\\\\n\\\\n小提示：可用于快速抢夺箱子"', id: 019}
 function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"建筑师"', title:'"筑道「高速隧梯」"', description:'"激活铁轨×1、特殊模板 放置激活铁轨时朝距离你最近的横向正十字坐标打开一道通路\\\\n跳起时则改为向上建造天梯\\\\n\\\\n注意：建造起始点是你，而不是铁轨\\\\n路径上的方块会以破坏形式被清除\\\\n铁轨本身能够复用"', id: 027}
+function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"建筑师"', title:'"錾艺「资源集成」"', description:'"特殊模板 不置于副手时，获得某些方块后将自动转换为另一种方块\\\\n土壤类将会成为普通的土、石类将会成为普通的石头\\\\n受影响方块：完整的花岗岩、安山岩、闪长岩、圆石、苔圆石、黑石、深板岩、凝灰岩、方解石、草方块、灰化土、砂土、缠根土、菌丝、绯红岩、诡异岩、红沙等"', id: 033}
 function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"圣女"', title:'"救赎「顷刻天国」"', description:'"顷刻天国核心×2 范围内敌我飘升并发光6秒\\\\n留在背包内时不会陷入中毒状态"', id: 010}
 function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"圣女"', title:'"洗礼「顷刻人间」"', description:'"号角与特殊模板 放置于背包时吹响号角\\\\n即可将4格内全部玩家的主手武器与所装备防具附魔效果清除，且耐久回满\\\\n\\\\n注意：对自己也有效"', id: 022}
+function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"圣女"', title:'"焚玉「渡火红莲」"', description:'"特殊模板 放置于背包时，若自身行走于烈火，则几乎不会受到火焰以外的伤害\\\\n但是，火焰伤害本身将是致命的"', id: 032}
 function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"圣骑士"', title:'"神威「陨落压制」"', description:'"陨落压制核心×3 范围内其他玩家（包括友军）速度完全压制但接近无敌\\\\n\\\\n注意：虽然能够预防跳跃，但是这一效果的持续时长要远远低于减速的时长"', id: 011}
 function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"圣骑士"', title:'"天威「跃空战技」"', description:'"粘液块×3、跃空战技核心×2 给予自己一把重锤\\\\n留在背包内时可以在粘液块/蛋糕上一跃而起\\\\n留在背包内时，蹲下后跳跃能力短暂增强\\\\n\\\\n小提示：推荐自己寻找重锤"', id: 020}
 function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"弓箭手"', title:'"华弓「花散绯芒」"', description:'"超多重射击弓、箭矢×5\\\\n只不过给这把弓附魔几乎是不可能做到的"', id: 013}

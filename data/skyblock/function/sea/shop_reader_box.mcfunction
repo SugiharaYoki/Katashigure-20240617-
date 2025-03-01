@@ -17,7 +17,7 @@ execute if items entity @a[tag=SEAPT] container.* gunpowder run item replace blo
 
 
 item replace block ~ ~ ~ container.6 with barrier[custom_data={"SEAcrafterbox":true}]
-execute if entity @a[advancements={skyblock:sea/chapter5=true}] run item replace block ~ ~ ~ container.6 with tnt[custom_data={"SEAcrafterbox":true},custom_name='{"text":"购买 可控地雷触发装置","italic":false,"color":"green"}',lore=['{"text":"不会伤害到友军的可靠小核弹。","color":"white","italic":false}','{"text":"消耗：8 绿宝石","color":"red","italic":true}']]
+execute if entity @a[advancements={skyblock:sea/chapter5=true},tag=SEAPT] run item replace block ~ ~ ~ container.6 with tnt[custom_data={"SEAcrafterbox":true},custom_name='{"text":"购买 可控地雷触发装置","italic":false,"color":"green"}',lore=['{"text":"不会伤害到友军的可靠小核弹。","color":"white","italic":false}','{"text":"消耗：8 绿宝石","color":"red","italic":true}']]
 item replace block ~ ~ ~ container.7 with barrier[custom_data={"SEAcrafterbox":true}]
 execute if items entity @a[tag=SEAPT] container.* music_disc_5 run item replace block ~ ~ ~ container.7 with disc_fragment_5[custom_data={"SEAcrafterbox":true},custom_name='{"text":"制作 轮锯片×3","italic":false,"color":"green"}',lore=['{"text":"获得3枚轮锯片。","color":"white","italic":false}','{"text":"消耗：2 燧石","color":"red","italic":true}']]
 item replace block ~ ~ ~ container.8 with barrier[custom_data={"SEAcrafterbox":true}]

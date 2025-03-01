@@ -181,6 +181,9 @@ attribute @s generic.movement_speed modifier remove sea_running_1a
 attribute @s generic.knockback_resistance modifier remove sea_running_1b
 attribute @s generic.armor modifier remove sea_running_1c
 
+attribute @s generic.armor modifier remove sea_weapon:upg_armor01
+attribute @s generic.armor_toughness modifier remove sea_weapon:upg_armor02
+
 tag @s remove sea_t_armor1
 execute store result score @s rng2 run random value 1..4
 execute as @s[scores={rng2=1..3}] run tag @s remove sea_t_armor2
