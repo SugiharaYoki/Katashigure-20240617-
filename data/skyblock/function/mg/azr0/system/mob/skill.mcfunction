@@ -1,0 +1,2 @@
+execute store result score MG_AZR5_rng rng1 run random value 1..6
+execute if score MG_AZR5_rng rng1 matches 1 as @e[type=silverfish,tag=MG_AZR0MOB_silverfishking] at @s run effect give @e[tag=MG_AZR0MOB,type=!silverfish,distance=0..5,limit=1,sort=random] infested infinite 0

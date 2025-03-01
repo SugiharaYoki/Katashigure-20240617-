@@ -21,7 +21,7 @@ execute if score MG_AZR0_Timer rng3 matches 0 run function skyblock:mg/azr0/even
 execute unless entity @a[tag=MG_AZR0PT] run function skyblock:mg/azr0/end
 
 
-
+function skyblock:mg/azr0/system/mob/skill
 
 
 
