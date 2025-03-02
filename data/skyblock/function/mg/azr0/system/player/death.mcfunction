@@ -27,7 +27,7 @@ effect clear @s
 tag @s remove MG_AZR0PT
 
 clear @s
-tellraw @a[tag=MG_AZR0PT,distance=..10000] [{"selector":"@s","color":"white"},{"text":" 阵亡了！","color":"dark_red"}]
+tellraw @a[distance=..230] [{"selector":"@s","color":"white"},{"text":" 阵亡了！","color":"dark_red"}]
 
 bossbar set mg:azr0_bar players @a[tag=MG_AZR0PT]
 
