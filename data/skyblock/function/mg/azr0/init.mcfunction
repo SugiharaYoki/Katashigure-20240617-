@@ -63,61 +63,13 @@ scoreboard objectives add Azr0_dealt_damage custom:damage_dealt
 execute as @a[distance=0..80] at @s run function skyblock:pvp/skywar/system/removeallgaming
 
 tag @a[distance=0..80] add MG_AZR0PT
-tag @a[tag=MG_AZR0PT] add Gaming
-clear @a[tag=MG_AZR0PT]
-effect clear @a[tag=MG_AZR0PT]
+execute as @a[tag=MG_AZR0PT] at @s run function skyblock:mg/azr0/system/player/init
 execute at @n[tag=mg_azr0,type=marker] positioned ~ ~1 ~ run tp @a[tag=MG_AZR0PT] ~ ~ ~
 execute at @n[tag=mg_azr0,type=marker] positioned ~ ~1 ~ run spawnpoint @a[tag=MG_AZR0PT] ~ ~ ~
 
 execute at @n[tag=mg_azr0,type=marker] run kill @e[type=item,distance=..120]
 
-#execute as @a[tag=MG_AZR0PT] at @s run attribute @s generic.scale modifier add mg_azr0:init_scale 0.5 add_value
-execute as @a[tag=MG_AZR0PT] at @s run attribute @s generic.max_health modifier add mg_azr0:init_maxhp -14 add_value
-#execute as @a[tag=MG_AZR0PT] at @s run attribute @s minecraft:player.entity_interaction_range modifier add mg_azr0:init_reach 2 add_value
-gamemode adventure @a[tag=MG_AZR0PT]
-effect give @a[tag=MG_AZR0PT] regeneration 3 19 true
-effect give @a[tag=MG_AZR0PT] saturation 3 19 true
-scoreboard players set @a[tag=MG_AZR0PT] Azr_emerald 0
-scoreboard players set @a[tag=MG_AZR0PT] Azr_diamond 0
-scoreboard players set @a[tag=MG_AZR0PT] Azr_bread_recharge 0
-scoreboard players set @a[tag=MG_AZR0PT] Azr_bread_recharge_level 0
-scoreboard players set @a[tag=MG_AZR0PT] Azr_usebread 0
-scoreboard players set @a[tag=MG_AZR0PT] Azr_isDead 0
 
-scoreboard players set @a[tag=MG_AZR0PT] Azr0_UPG_sword_damage 0
-scoreboard players set @a[tag=MG_AZR0PT] Azr0_UPG_sword_knockback 0
-scoreboard players set @a[tag=MG_AZR0PT] Azr0_UPG_sword_speed 0
-scoreboard players set @a[tag=MG_AZR0PT] Azr0_UPG_sword_sweeping 0
-scoreboard players set @a[tag=MG_AZR0PT] Azr0_UPG_axe_damage -1
-scoreboard players set @a[tag=MG_AZR0PT] Azr0_UPG_axe_recharge 0
-scoreboard players set @a[tag=MG_AZR0PT] Azr0_UPG_bow -1
-scoreboard players set @a[tag=MG_AZR0PT] Azr0_UPG_crossbow -1
-scoreboard players set @a[tag=MG_AZR0PT] Azr0_UPG_bow_punch 0
-scoreboard players set @a[tag=MG_AZR0PT] Azr0_UPG_bow_pierce 0
-scoreboard players set @a[tag=MG_AZR0PT] Azr0_UPG_crossbow_multishot 0
-scoreboard players set @a[tag=MG_AZR0PT] Azr0_UPG_crossbow_load 0
-scoreboard players set @a[tag=MG_AZR0PT] Azr0_axe_recharge 0
-scoreboard players set @a[tag=MG_AZR0PT] Azr0_UPG_bread_storage 0
-scoreboard players set @a[tag=MG_AZR0PT] Azr0_UPG_bread_recharge 0
-scoreboard players set @a[tag=MG_AZR0PT] Azr0_UPG_bread_quality 0
-scoreboard players set @a[tag=MG_AZR0PT] Azr0_dealt_damage 0
-scoreboard players set @a[tag=MG_AZR0PT] Azr0_UPG_hp 0
-scoreboard players set @a[tag=MG_AZR0PT] Azr0_MAX_star 3
-scoreboard players set @a[tag=MG_AZR0PT] Azr0_UPG_star 0
-scoreboard players set @a[tag=MG_AZR0PT] Azr0_USED_star 0
-
-execute as @a[tag=MG_AZR0PT] unless entity @s[scores={AZR_chainKillUpg_pts=-999..}] run scoreboard players set @s AZR_chainKillUpg_pts 0
-execute as @a[tag=MG_AZR0PT] unless entity @s[scores={AZR_chainKillUpg_chargespeed=-999..}] run scoreboard players set @s AZR_chainKillUpg_chargespeed 0
-execute as @a[tag=MG_AZR0PT] unless entity @s[scores={AZR_chainKillUpg_chargeboost=-999..}] run scoreboard players set @s AZR_chainKillUpg_chargeboost 0
-execute as @a[tag=MG_AZR0PT] unless entity @s[scores={AZR_chainKillUpg_attackcount=-999..}] run scoreboard players set @s AZR_chainKillUpg_attackcount 0
-execute as @a[tag=MG_AZR0PT] unless entity @s[scores={AZR_chainKillUpg_attackcountmin=-999..}] run scoreboard players set @s AZR_chainKillUpg_attackcountmin 0
-execute as @a[tag=MG_AZR0PT] unless entity @s[scores={AZR_chainKillUpg_attackdamage=-999..}] run scoreboard players set @s AZR_chainKillUpg_attackdamage 0
-execute as @a[tag=MG_AZR0PT] unless entity @s[scores={AZR_chainKillUpg_attackrange=-999..}] run scoreboard players set @s AZR_chainKillUpg_attackrange 0
-execute as @a[tag=MG_AZR0PT] unless entity @s[scores={AZR_chainKillUpg_defense=-999..}] run scoreboard players set @s AZR_chainKillUpg_defense 0
-execute as @a[tag=MG_AZR0PT] unless entity @s[scores={AZR_chainKillUpg_attackheal=-999..}] run scoreboard players set @s AZR_chainKillUpg_attackheal 0
-execute as @a[tag=MG_AZR0PT] unless entity @s[scores={AZR_chainKillUpg_defensecharge=-999..}] run scoreboard players set @s AZR_chainKillUpg_defensecharge 0
-execute as @a[tag=MG_AZR0PT] unless entity @s[scores={AZR_chainKillUpg_antichargedecrease=-999..}] run scoreboard players set @s AZR_chainKillUpg_antichargedecrease 0
-execute as @a[tag=MG_AZR0PT] unless entity @s[scores={AZR_chainKillUpg_attackspeed=-999..}] run scoreboard players set @s AZR_chainKillUpg_attackspeed 0
 
 #启动core
 setblock 125078 0 -242 minecraft:redstone_block
