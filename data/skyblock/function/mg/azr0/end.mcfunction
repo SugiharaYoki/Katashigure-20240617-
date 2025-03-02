@@ -66,11 +66,11 @@ execute at @n[tag=mg_azr0,type=marker] run gamemode adventure @a[distance=0..200
 execute at @n[tag=mg_azr0,type=marker] run gamemode creative @a[distance=0..200,gamemode=spectator,tag=ServerManager]
 execute as @a[tag=MG_AZR0PT] at @s run function skyblock:mg/azr0/system/player/death
 
-kill @n[tag=mg_azr0,type=marker]
 clear @a[tag=MG_AZR0PT]
 tag @a remove MG_AZR0PT
 
 bossbar remove mg:azr0_bar
+kill @n[tag=mg_azr0,type=marker]
 
 forceload remove 125078 -241 125078 -241
 
