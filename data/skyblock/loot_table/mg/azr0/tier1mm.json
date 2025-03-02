@@ -2,7 +2,7 @@
   "type": "minecraft:generic",
   "pools": [
     {
-      "rolls": 1,
+      "rolls": 3,
       "entries": [
         {
           "type": "minecraft:item",
@@ -17,7 +17,7 @@
       ]
     },
     {
-      "rolls": 1,
+      "rolls": 2,
       "entries": [
         {
           "type": "minecraft:item",
@@ -27,7 +27,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:arrow",
-          "weight": 5
+          "weight": 10
         }
       ]
     },
@@ -47,7 +47,7 @@
       ]
     },
     {
-      "rolls": 3,
+      "rolls": 5,
       "entries": [
         {
           "type": "minecraft:item",
@@ -72,7 +72,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:diamond",
-          "weight": 5
+          "weight": 15
         }
       ]
     }
