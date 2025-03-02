@@ -29,7 +29,7 @@ tellraw @a[tag=!Gaming] [{"text": "『亚兹列尔的中庭花园·零』","colo
 
 
 
-
+team remove MGAZR0
 
 
 

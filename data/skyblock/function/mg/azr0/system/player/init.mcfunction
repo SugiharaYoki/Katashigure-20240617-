@@ -47,6 +47,8 @@ execute as @s unless entity @s[scores={AZR_chainKillUpg_defensecharge=-999..}] r
 execute as @s unless entity @s[scores={AZR_chainKillUpg_antichargedecrease=-999..}] run scoreboard players set @s AZR_chainKillUpg_antichargedecrease 0
 execute as @s unless entity @s[scores={AZR_chainKillUpg_attackspeed=-999..}] run scoreboard players set @s AZR_chainKillUpg_attackspeed 0
 
+team join MGAZR0
+
 
 tag @s add Gaming
 clear @s

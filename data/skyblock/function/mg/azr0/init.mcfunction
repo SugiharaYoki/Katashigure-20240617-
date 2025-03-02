@@ -21,6 +21,11 @@ scoreboard players set MG_AZR0_rng rng6 0
 scoreboard players set MG_AZR0_rng rng7 0
 scoreboard players set MG_AZR0_rng rng8 0
 
+team add MGAZR0
+team modify MGAZR0 color green
+team modify MGAZR0 collisionRule never
+team modify MGAZR0 friendlyFire false
+team modify MGAZR0 seeFriendlyInvisibles true
 
 #1：基础计时器
 #2：难度系数
@@ -74,7 +79,6 @@ execute at @n[tag=mg_azr0,type=marker] run kill @e[type=item,distance=..120]
 
 #启动core
 setblock 125078 0 -242 minecraft:redstone_block
-
 
 
 
