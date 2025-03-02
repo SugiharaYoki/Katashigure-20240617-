@@ -35,6 +35,7 @@ team modify MGAZR0 seeFriendlyInvisibles true
 #6：corex1
 #7：僵尸生成计数器 - 影响怪物生成难度
 #9：全局计时器
+#10：外部计时器
 scoreboard objectives add Azr_Shop trigger
 scoreboard objectives add Azr_emerald dummy
 scoreboard objectives add Azr_diamond dummy
