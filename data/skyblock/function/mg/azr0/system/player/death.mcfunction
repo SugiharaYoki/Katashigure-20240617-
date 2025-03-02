@@ -27,9 +27,9 @@ effect clear @s
 tag @s remove MG_AZR0PT
 
 clear @s
-
+tellraw @a[tag=MG_AZR0PT,distance=..10000] [{"selector":"@s","color":"white"},{"text":" 阵亡了！","color":"dark_red"}]
 
 bossbar set mg:azr0_bar players @a[tag=MG_AZR0PT]
 
 scoreboard players set @s Azr_isDead 0
-
+tp @s 0 200 0
