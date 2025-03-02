@@ -31,6 +31,7 @@ scoreboard players set @s Azr0_dealt_damage 0
 scoreboard players set @s Azr0_UPG_hp 0
 scoreboard players set @s Azr0_MAX_star 3
 scoreboard players set @s Azr0_UPG_star 0
+scoreboard players set @s Azr0_UPG_armor 0
 scoreboard players set @s Azr0_USED_star 0
 
 execute as @s unless entity @s[scores={AZR_chainKillUpg_pts=-999..}] run scoreboard players set @s AZR_chainKillUpg_pts 0

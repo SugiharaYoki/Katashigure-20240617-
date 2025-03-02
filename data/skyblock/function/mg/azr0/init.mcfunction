@@ -57,6 +57,7 @@ scoreboard objectives add Azr0_UPG_bread_quality dummy
 scoreboard objectives add Azr0_UPG_hp dummy
 scoreboard objectives add Azr0_MAX_star dummy
 scoreboard objectives add Azr0_UPG_star dummy
+scoreboard objectives add Azr0_UPG_armor dummy
 scoreboard objectives add Azr0_USED_star dummy
 scoreboard objectives add Azr0_dealt_damage custom:damage_dealt
 
