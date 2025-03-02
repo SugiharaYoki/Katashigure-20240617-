@@ -62,6 +62,8 @@ setblock 125078 0 -242 minecraft:air
 kill @e[tag=mg_azr0_MobPortals,type=marker]
 kill @e[tag=MG_AZR0MOB]
 execute at @n[tag=mg_azr0,type=marker] run kill @e[type=item,distance=..120]
+execute at @n[tag=mg_azr0,type=marker] run gamemode adventure @a[distance=0..200,gamemode=spectator,tag=!ServerManager]
+execute at @n[tag=mg_azr0,type=marker] run gamemode creative @a[distance=0..200,gamemode=spectator,tag=ServerManager]
 execute as @a[tag=MG_AZR0PT] at @s run function skyblock:mg/azr0/system/player/death
 
 kill @n[tag=mg_azr0,type=marker]
@@ -71,3 +73,4 @@ tag @a remove MG_AZR0PT
 bossbar remove mg:azr0_bar
 
 forceload remove 125078 -241 125078 -241
+
