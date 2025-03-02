@@ -179,7 +179,17 @@ execute if score @s rng1 matches 1.. run item replace entity @s[scores={Azr0_UPG
 execute unless items entity @s player.crafting.1 *[!custom_data~{PsychicVitae:1b}] if entity @s[tag=hasSkills] run item replace entity @s player.crafting.1 with minecraft:enchanted_book[custom_name='{"bold":true,"italic":false,"color":"gold","text":"灵能手册"}',lore=['{"italic":false,"text":"在物品栏选定以展开索命连击升级页面"}'],custom_data={PsychicVitae:1b},custom_model_data=100001]
 
 
-
+item replace entity @s[scores={Azr0_UPG_armor=0,Azr0_UPG_hp=..2}] inventory.25 with barrier
+item replace entity @s[scores={Azr0_UPG_armor=0,Azr0_UPG_hp=3..}] inventory.25 with chainmail_chestplate[custom_data={"azr0shop":true},custom_name='{"text":"提升护甲","italic":false,"color":"green"}',lore=['{"text":"增加2护甲","color":"white","italic":true}','{"text":"消耗：10绿宝石","color":"red","italic":true}']]
+item replace entity @s[scores={Azr0_UPG_armor=1}] inventory.25 with chainmail_chestplate[custom_data={"azr0shop":true},custom_name='{"text":"提升护甲","italic":false,"color":"green"}',lore=['{"text":"增加2护甲","color":"white","italic":true}','{"text":"消耗：30绿宝石","color":"red","italic":true}']]
+item replace entity @s[scores={Azr0_UPG_armor=2}] inventory.25 with chainmail_chestplate[custom_data={"azr0shop":true},custom_name='{"text":"提升护甲","italic":false,"color":"green"}',lore=['{"text":"增加2护甲","color":"white","italic":true}','{"text":"消耗：50绿宝石","color":"red","italic":true}']]
+item replace entity @s[scores={Azr0_UPG_armor=3}] inventory.25 with chainmail_chestplate[custom_data={"azr0shop":true},custom_name='{"text":"提升护甲","italic":false,"color":"green"}',lore=['{"text":"增加2护甲","color":"white","italic":true}','{"text":"消耗：3钻石","color":"red","italic":true}']]
+item replace entity @s[scores={Azr0_UPG_armor=4}] inventory.25 with chainmail_chestplate[custom_data={"azr0shop":true},custom_name='{"text":"提升护甲","italic":false,"color":"green"}',lore=['{"text":"增加2护甲","color":"white","italic":true}','{"text":"消耗：8钻石","color":"red","italic":true}']]
+item replace entity @s[scores={Azr0_UPG_armor=5}] inventory.25 with chainmail_chestplate[custom_data={"azr0shop":true},custom_name='{"text":"提升护甲","italic":false,"color":"green"}',lore=['{"text":"增加2护甲","color":"white","italic":true}','{"text":"消耗：20钻石","color":"red","italic":true}']]
+item replace entity @s[scores={Azr0_UPG_armor=6}] inventory.25 with chainmail_chestplate[custom_data={"azr0shop":true},custom_name='{"text":"提升护甲","italic":false,"color":"green"}',lore=['{"text":"增加2护甲","color":"white","italic":true}','{"text":"消耗：20钻石","color":"red","italic":true}']]
+item replace entity @s[scores={Azr0_UPG_armor=7}] inventory.25 with chainmail_chestplate[custom_data={"azr0shop":true},custom_name='{"text":"提升护甲","italic":false,"color":"green"}',lore=['{"text":"增加2护甲","color":"white","italic":true}','{"text":"消耗：20钻石","color":"red","italic":true}']]
+item replace entity @s[scores={Azr0_UPG_armor=8}] inventory.25 with chainmail_chestplate[custom_data={"azr0shop":true},custom_name='{"text":"提升护甲","italic":false,"color":"green"}',lore=['{"text":"增加2护甲","color":"white","italic":true}','{"text":"消耗：20钻石","color":"red","italic":true}']]
+item replace entity @s[scores={Azr0_UPG_armor=9}] inventory.25 with end_crystal[custom_data={"azr0shop":true},custom_name='{"text":"护甲 已升至最高级","italic":false,"color":"gold"}']
 
 
 
