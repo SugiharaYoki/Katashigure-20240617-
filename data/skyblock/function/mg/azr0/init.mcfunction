@@ -76,9 +76,8 @@ execute at @n[tag=mg_azr0,type=marker] positioned ~ ~1 ~ run spawnpoint @a[tag=M
 execute at @n[tag=mg_azr0,type=marker] run kill @e[type=item,distance=..120]
 
 
-
 #启动core
-setblock 125078 0 -242 minecraft:redstone_block
+execute at @n[tag=mg_azr0,type=marker] positioned ~ ~-3 ~-1 run setblock 125078 0 -242 minecraft:redstone_block
 
 
 
