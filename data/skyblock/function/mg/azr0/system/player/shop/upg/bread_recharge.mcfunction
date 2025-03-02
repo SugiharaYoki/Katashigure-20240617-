@@ -8,5 +8,3 @@ execute if entity @s[tag=AZR0SHOP_SUCCESS] run scoreboard players add @s Azr0_UP
 execute if entity @s[tag=AZR0SHOP_SUCCESS] run tellraw @s {"text": "升级成功！","color": "green"}
 execute if entity @s[tag=AZR0SHOP_SUCCESS] run playsound entity.player.levelup player @s ~ ~ ~ 1 1
 tag @s remove AZR0SHOP_SUCCESS
-
-clear @s *[custom_data={"azr0weapon_sword":true}]

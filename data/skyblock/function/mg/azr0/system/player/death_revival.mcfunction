@@ -10,3 +10,4 @@ tag @s add MG_AZR0PT_revivaling
 execute as @s at @s run schedule function skyblock:mg/azr0/system/player/death_revival_delay 2t
 
 scoreboard players set @s Azr_isDead 0
+scoreboard players add @s Azr0_USED_star 1

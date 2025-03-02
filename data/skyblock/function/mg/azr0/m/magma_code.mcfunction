@@ -1,0 +1,9 @@
+execute if score MG_AZR0_rng rng8 matches 1 positioned ~4 ~ ~0 if block ~ ~ ~ air if block ~ ~5 ~ air if block ~ ~9 ~ air run summon marker ~ ~8 ~ {Tags:["mg_azr0_MobSummoner_magma"]}
+execute if score MG_AZR0_rng rng8 matches 2 positioned ~4 ~ ~4 if block ~ ~ ~ air if block ~ ~5 ~ air if block ~ ~9 ~ air run summon marker ~ ~8 ~ {Tags:["mg_azr0_MobSummoner_magma"]}
+execute if score MG_AZR0_rng rng8 matches 3 positioned ~4 ~ ~-4 if block ~ ~ ~ air if block ~ ~5 ~ air if block ~ ~9 ~ air run summon marker ~ ~8 ~ {Tags:["mg_azr0_MobSummoner_magma"]}
+execute if score MG_AZR0_rng rng8 matches 4 positioned ~-4 ~ ~0 if block ~ ~ ~ air if block ~ ~5 ~ air if block ~ ~9 ~ air run summon marker ~ ~8 ~ {Tags:["mg_azr0_MobSummoner_magma"]}
+execute if score MG_AZR0_rng rng8 matches 5 positioned ~-4 ~ ~4 if block ~ ~ ~ air if block ~ ~5 ~ air if block ~ ~9 ~ air run summon marker ~ ~8 ~ {Tags:["mg_azr0_MobSummoner_magma"]}
+execute if score MG_AZR0_rng rng8 matches 6 positioned ~-4 ~ ~-4 if block ~ ~ ~ air if block ~ ~5 ~ air if block ~ ~9 ~ air run summon marker ~ ~8 ~ {Tags:["mg_azr0_MobSummoner_magma"]}
+execute if score MG_AZR0_rng rng8 matches 7 positioned ~0 ~ ~0 if block ~ ~ ~ air if block ~ ~5 ~ air if block ~ ~9 ~ air run summon marker ~ ~8 ~ {Tags:["mg_azr0_MobSummoner_magma"]}
+execute if score MG_AZR0_rng rng8 matches 8 positioned ~0 ~ ~4 if block ~ ~ ~ air if block ~ ~5 ~ air if block ~ ~9 ~ air run summon marker ~ ~8 ~ {Tags:["mg_azr0_MobSummoner_magma"]}
+execute if score MG_AZR0_rng rng8 matches 9 positioned ~0 ~ ~-4 if block ~ ~ ~ air if block ~ ~5 ~ air if block ~ ~9 ~ air run summon marker ~ ~8 ~ {Tags:["mg_azr0_MobSummoner_magma"]}

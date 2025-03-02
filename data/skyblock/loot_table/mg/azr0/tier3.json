@@ -2,17 +2,32 @@
   "type": "minecraft:generic",
   "pools": [
     {
-      "rolls": 2,
+      "rolls": 4,
       "entries": [
         {
           "type": "minecraft:item",
           "name": "minecraft:air",
-          "weight": 30
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:emerald",
           "weight": 30
+        }
+      ]
+    },
+    {
+      "rolls": 5,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:air",
+          "weight": 45
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:arrow",
+          "weight": 10
         }
       ]
     },

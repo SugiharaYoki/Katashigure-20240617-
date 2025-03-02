@@ -133,3 +133,14 @@ tag @s remove got_hit
 tag @s remove MG_AZR0PT
 
 
+
+tag @s remove AZR_chainKill_activated
+scoreboard players set @s AZR_chainKill_count 0
+scoreboard players set @s AZR_chainKill_damage 0
+scoreboard players set @s AZR_chainKill_chargeup 0
+scoreboard players set @s AZR_chainKill_damageblocked 0
+scoreboard players set @s AZR_chainKill_damagetaken 0
+attribute @s minecraft:player.entity_interaction_range modifier remove azr_chainkill_01
+attribute @s minecraft:generic.attack_damage modifier remove azr_chainkill_02
+attribute @s minecraft:generic.armor modifier remove azr_chainkill_03
+attribute @s minecraft:generic.attack_speed modifier remove azr_chainkill_04

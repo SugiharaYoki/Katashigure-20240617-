@@ -7,12 +7,27 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:air",
-          "weight": 30
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:emerald",
           "weight": 30
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:air",
+          "weight": 50
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:arrow",
+          "weight": 5
         }
       ]
     },

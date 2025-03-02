@@ -2,7 +2,7 @@
   "type": "minecraft:generic",
   "pools": [
     {
-      "rolls": 6,
+      "rolls": 3,
       "entries": [
         {
           "type": "minecraft:item",
@@ -17,12 +17,12 @@
       ]
     },
     {
-      "rolls": 7,
+      "rolls": 2,
       "entries": [
         {
           "type": "minecraft:item",
           "name": "minecraft:air",
-          "weight": 45
+          "weight": 50
         },
         {
           "type": "minecraft:item",
@@ -32,12 +32,12 @@
       ]
     },
     {
-      "rolls": 5,
+      "rolls": 2,
       "entries": [
         {
           "type": "minecraft:item",
           "name": "minecraft:air",
-          "weight": 20
+          "weight": 30
         },
         {
           "type": "minecraft:item",
@@ -52,7 +52,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:air",
-          "weight": 20
+          "weight": 30
         },
         {
           "type": "minecraft:item",
@@ -62,7 +62,7 @@
       ]
     },
     {
-      "rolls": 3,
+      "rolls": 1,
       "entries": [
         {
           "type": "minecraft:item",
@@ -72,7 +72,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:diamond",
-          "weight": 45
+          "weight": 15
         }
       ]
     }
