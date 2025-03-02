@@ -1,13 +1,13 @@
 #计时器0
 execute if score MG_AZR0_Timer rng3 matches 0.. run scoreboard players remove MG_AZR0_Timer rng3 1
 
-execute if score MG_AZR0_Timer rng3 matches 0 run bossbar set mg:azr0_bar name "迎战敌人"
+execute if score MG_AZR0_Timer rng3 matches 0 run bossbar set mg:azr0_bar name [{"text": "迎战敌人  第","color":"green","bold": true},{"score":{"name":"MG_AZR0_Timer","objective":"rng2"},"color":"green","bold": true},{"text": "波","color":"green","bold": true}]
 execute if score MG_AZR0_Timer rng3 matches 0 run bossbar set mg:azr0_bar color green
 execute if score MG_AZR0_Timer rng3 matches 0 run bossbar set mg:azr0_bar style progress
 execute if score MG_AZR0_Timer rng3 matches 0 run bossbar set mg:azr0_bar value 1
 execute if score MG_AZR0_Timer rng3 matches 0 run bossbar set mg:azr0_bar max 1
 execute if score MG_AZR0_Timer rng3 matches 20 run kill @e[type=marker,tag=mg_azr0_MobPortals]
-execute if score MG_AZR0_Timer rng3 matches 1..20 run bossbar set mg:azr0_bar name "下一波敌人即将到来..."
+execute if score MG_AZR0_Timer rng3 matches 1..20 run bossbar set mg:azr0_bar name [{"text": "下一波敌人即将到来...","color":"light_purple","bold": true}]
 execute if score MG_AZR0_Timer rng3 matches 1..20 run bossbar set mg:azr0_bar color yellow
 execute if score MG_AZR0_Timer rng3 matches 1..20 run bossbar set mg:azr0_bar style notched_20
 execute if score MG_AZR0_Timer rng3 matches 1..20 run bossbar set mg:azr0_bar max 20
