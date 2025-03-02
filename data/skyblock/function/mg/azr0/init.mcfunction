@@ -66,9 +66,9 @@ scoreboard objectives add Azr0_UPG_armor dummy
 scoreboard objectives add Azr0_USED_star dummy
 scoreboard objectives add Azr0_dealt_damage custom:damage_dealt
 
-execute as @a[distance=0..80] at @s run function skyblock:pvp/skywar/system/removeallgaming
+execute as @a[distance=0..80,gamemode=!spectator] at @s run function skyblock:pvp/skywar/system/removeallgaming
 
-tag @a[distance=0..80] add MG_AZR0PT
+tag @a[distance=0..80,gamemode=!spectator] add MG_AZR0PT
 execute as @a[tag=MG_AZR0PT] at @s run function skyblock:mg/azr0/system/player/init
 execute at @n[tag=mg_azr0,type=marker] positioned ~ ~1 ~ run tp @a[tag=MG_AZR0PT] ~ ~ ~
 execute at @n[tag=mg_azr0,type=marker] positioned ~ ~1 ~ run spawnpoint @a[tag=MG_AZR0PT] ~ ~ ~
