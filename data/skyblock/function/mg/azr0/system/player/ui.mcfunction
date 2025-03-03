@@ -31,7 +31,12 @@ item replace entity @s[scores={Azr0_arrow=6}] hotbar.6 with arrow 6
 item replace entity @s[scores={Azr0_arrow=7}] hotbar.6 with arrow 7
 item replace entity @s[scores={Azr0_arrow=8}] hotbar.6 with arrow 8
 item replace entity @s[scores={Azr0_arrow=9}] hotbar.6 with arrow 9
-item replace entity @s[scores={Azr0_arrow=10..}] hotbar.6 with arrow 10
+item replace entity @s[scores={Azr0_arrow=10..19}] hotbar.6 with arrow 10
+item replace entity @s[scores={Azr0_arrow=20..29}] hotbar.6 with arrow 20
+item replace entity @s[scores={Azr0_arrow=30..39}] hotbar.6 with arrow 30
+item replace entity @s[scores={Azr0_arrow=40..49}] hotbar.6 with arrow 40
+item replace entity @s[scores={Azr0_arrow=50..59}] hotbar.6 with arrow 50
+item replace entity @s[scores={Azr0_arrow=60..}] hotbar.6 with arrow 60
 execute store result score @s rng1 run scoreboard players get @s Azr0_UPG_star
 execute store result score @s rng1 run scoreboard players operation @s rng1 -= @s Azr0_USED_star
 execute if score @s rng1 matches 0 run item replace entity @s hotbar.7 with barrier
