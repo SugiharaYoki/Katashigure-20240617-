@@ -1,5 +1,5 @@
 
-
+execute as @a[tag=MG_AZR0PT] at @s run function skyblock:mg/azr0/system/player/death
 
 item replace entity @s[tag=!MG_AZR0PT] inventory.13 with nether_star[custom_data={"azr0outside":true},custom_name='{"text":"「开始游戏」","italic":false,"bold":true,"color":"green"}']
 item replace entity @s[tag=!MG_AZR0PT,scores={Azr0_UPG_OTSD_emerald_wave=0}] inventory.0 with iron_ingot[custom_data={"azr0outside":true},custom_name='{"text":"升级：积少成多","italic":false,"bold":false,"color":"green"}',lore=['{"text":"当前：lv 0","color":"gray","italic":true}','{"text":"下一级：每局结束后获得等同于波数数量的绿宝石","color":"white","italic":true}','{"text":"一次最多获得80绿宝石","color":"white","italic":true}','{"text":"消耗：100影之石","color":"red","italic":true}']]
