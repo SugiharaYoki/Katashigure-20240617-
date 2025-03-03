@@ -21,8 +21,10 @@ scoreboard players set @s MultiMenu 0
 
 scoreboard objectives add Azr0_UPG_OTSD_emerald_wave dummy
 scoreboard objectives add Azr0_UPG_OTSD_emerald_critical dummy
+scoreboard objectives add Azr0_UPG_OTSD_armor_helmet dummy
 execute unless score @s Azr0_UPG_OTSD_emerald_wave matches -999.. run scoreboard players set @s Azr0_UPG_OTSD_emerald_wave 0
 execute unless score @s Azr0_UPG_OTSD_emerald_critical matches -999.. run scoreboard players set @s Azr0_UPG_OTSD_emerald_critical 0
+execute unless score @s Azr0_UPG_OTSD_armor_helmet matches -999.. run scoreboard players set @s Azr0_UPG_OTSD_armor_helmet 0
 
 
 
