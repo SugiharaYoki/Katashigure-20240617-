@@ -9,9 +9,9 @@ execute if score MG_AZR0_Timer rng3 matches 0 run bossbar set mg:azr0_bar max 1
 execute if score MG_AZR0_Timer rng3 matches 0 run effect give @a[tag=MG_AZR0PT] speed 5 2 true
 execute if score MG_AZR0_Timer rng3 matches 0 run effect give @a[tag=MG_AZR0PT] resistance 5 1 true
 execute if score MG_AZR0_Timer rng3 matches 10 as @a[tag=MG_AZR0PT] at @s run function skyblock:mg/azr0/system/player/skill/emerald_wave
-execute if score MG_AZR0_Timer rng3 matches 10 if score MG_AZR0_Timer rng2 matches 1..9 run kill @e[type=marker,tag=mg_azr0_MobPortals]
-execute if score MG_AZR0_Timer rng3 matches 12 if score MG_AZR0_Timer rng2 matches 10..49 run kill @e[type=marker,tag=mg_azr0_MobPortals]
-execute if score MG_AZR0_Timer rng3 matches 15 if score MG_AZR0_Timer rng2 matches 50..99 run kill @e[type=marker,tag=mg_azr0_MobPortals]
+execute if score MG_AZR0_Timer rng3 matches 10 if score MG_AZR0_Timer rng2 matches 1..29 run kill @e[type=marker,tag=mg_azr0_MobPortals]
+execute if score MG_AZR0_Timer rng3 matches 12 if score MG_AZR0_Timer rng2 matches 30..69 run kill @e[type=marker,tag=mg_azr0_MobPortals]
+execute if score MG_AZR0_Timer rng3 matches 15 if score MG_AZR0_Timer rng2 matches 70..99 run kill @e[type=marker,tag=mg_azr0_MobPortals]
 execute if score MG_AZR0_Timer rng3 matches 12 if score MG_AZR0_Timer rng2 matches 100.. run kill @e[type=marker,tag=mg_azr0_MobPortals]
 execute if score MG_AZR0_Timer rng3 matches 1..20 run bossbar set mg:azr0_bar name [{"text": "下一波敌人即将到来...","color":"yellow","bold": true}]
 execute if score MG_AZR0_Timer rng3 matches 1..20 run bossbar set mg:azr0_bar color yellow
