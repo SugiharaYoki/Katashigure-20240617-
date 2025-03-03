@@ -24,7 +24,7 @@ execute if score MG_AZR0_Timer rng3 matches 1..20 store result bossbar mg:azr0_b
 #1左 2右 3前 4后 5左右 6左前 7右前 8前后 9左右前 10左右后 11四方
 execute if score MG_AZR0_Timer rng3 matches 0 run function skyblock:mg/azr0/event/general_start_round_announce
 
-execute unless entity @a[tag=MG_AZR0PT] run function skyblock:mg/azr0/end
+execute unless entity @a[tag=MG_AZR0PT] if entity @a[gamemode=!spectator,distance=0..200] run function skyblock:mg/azr0/end
 
 
 function skyblock:mg/azr0/system/mob/skill
