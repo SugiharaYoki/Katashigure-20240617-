@@ -11,6 +11,7 @@ scoreboard players set @s Azr_bread_recharge_level 0
 scoreboard players set @s Azr_usebread 0
 scoreboard players set @s Azr_isDead 0
 
+scoreboard players set @s Azr0_kills 0
 scoreboard players set @s Azr0_UPG_sword_damage 0
 scoreboard players set @s Azr0_UPG_sword_knockback 0
 scoreboard players set @s Azr0_UPG_sword_speed 0
