@@ -32,4 +32,3 @@ tellraw @a[distance=..230] [{"selector":"@s","color":"white"},{"text":" 阵亡�
 bossbar set mg:azr0_bar players @a[tag=MG_AZR0PT]
 
 scoreboard players set @s Azr_isDead 0
-tp @s 0 200 0
