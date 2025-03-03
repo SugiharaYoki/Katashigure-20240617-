@@ -29,5 +29,13 @@ execute if entity @s[tag=MG_AZR0_MoneyPicked] run clear @s diamond 1
 tag @s remove MG_AZR0_MoneyPicked
 
 
+execute if items entity @s container.* flint run tag @s add MG_AZR0_MoneyPicked
+
+execute if entity @s[tag=MG_AZR0_MoneyPicked] run scoreboard players add @a[tag=MG_AZR0PT] Azr0_arrow 1
+execute if entity @s[tag=MG_AZR0_MoneyPicked] run clear @s flint 1
+
+tag @s remove MG_AZR0_MoneyPicked
+
+
 
 

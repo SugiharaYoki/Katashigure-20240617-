@@ -20,7 +20,7 @@ execute as @a[tag=MG_AZR0PT] at @s run function skyblock:mg/azr0/system/player/u
 
 
 
-
+execute unless entity @s[scores={Azr0_shoot1=0,Azr0_shoot2=0}] run function skyblock:mg/azr0/system/player/attacked
 
 
 

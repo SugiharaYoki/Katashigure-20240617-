@@ -44,8 +44,11 @@ scoreboard objectives add Azr_bread_recharge_level dummy
 scoreboard objectives add Azr_usebread minecraft.used:minecraft.bread
 scoreboard objectives add Azr_isDead deathCount
 
+scoreboard objectives add Azr0_arrow dummy
 scoreboard objectives add Azr0_kills totalKillCount
 scoreboard objectives add Azr0_kills_PERM dummy
+scoreboard objectives add Azr0_shoot1 minecraft.used:minecraft.bow
+scoreboard objectives add Azr0_shoot2 minecraft.used:minecraft.crossbow
 scoreboard objectives add Azr0_UPG_sword_damage dummy
 scoreboard objectives add Azr0_UPG_sword_knockback dummy
 scoreboard objectives add Azr0_UPG_sword_speed dummy
