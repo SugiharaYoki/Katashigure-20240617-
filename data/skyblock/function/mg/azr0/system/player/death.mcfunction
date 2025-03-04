@@ -43,7 +43,7 @@ bossbar set mg:azr0_bar players @a[tag=MG_AZR0PT]
 scoreboard players set @s Azr_isDead 0
 
 scoreboard players operation @s Azr0_kills_PERM += @s Azr0_kills
-scoreboard players operation @s Azr0_kills /= 10 constant
+scoreboard players operation @s Azr0_kills /= 5 constant
 
 scoreboard players operation @s Perm_PersonSHD += @s Azr0_kills
 
