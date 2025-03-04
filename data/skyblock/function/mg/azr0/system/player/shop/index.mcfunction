@@ -28,7 +28,7 @@ execute if items entity @s player.cursor beef[custom_data={"azr0shop":true}] run
 execute if items entity @s player.cursor *[custom_data={"azr0shop":true}] run playsound ui.button.click player @s ~ ~ ~ 0.9 1.3
 
 
-execute if items entity @s player.cursor *[custom_data={"azr0skill":true}] run function skyblock:mg/azr0/system/player/shop/skill_print/upg {"skill":1}
+execute if items entity @s player.cursor *[custom_data={"azr0skill":true}] run function skyblock:mg/azr0/system/player/shop/skill_print/upg
 
 
 
