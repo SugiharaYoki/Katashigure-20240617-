@@ -199,4 +199,5 @@ item replace entity @s[scores={Azr0_UPG_armor=8}] inventory.25 with chainmail_ch
 item replace entity @s[scores={Azr0_UPG_armor=9}] inventory.25 with end_crystal[custom_data={"azr0shop":true},custom_name='{"text":"护甲 已升至最高级","italic":false,"color":"gold"}']
 
 
-
+execute if entity @s[scores={Azr0_SkillPoint=1..,Azr0_SkillEquip_1rng=0}] run function skyblock:mg/azr0/system/player/skill/refresh_skill
+execute if entity @s[tag=MGAZR0_SkillPrintable] run function skyblock:mg/azr0/system/player/shop/skill_print

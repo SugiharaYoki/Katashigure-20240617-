@@ -42,6 +42,9 @@ scoreboard players set @s Azr0_SkillPoint 0
 scoreboard players set @s Azr0_SkillEquip_1 0
 scoreboard players set @s Azr0_SkillEquip_2 0
 scoreboard players set @s Azr0_SkillEquip_3 0
+scoreboard players set @s Azr0_SkillEquip_1rng 0
+scoreboard players set @s Azr0_SkillEquip_2rng 0
+scoreboard players set @s Azr0_SkillEquip_3rng 0
 
 scoreboard players set @s Azr0_SKILL_1 0
 scoreboard players set @s Azr0_SKILL_2 0
@@ -64,6 +67,7 @@ scoreboard players set @s Azr0_SKILL_18 0
 scoreboard players set @s Azr0_SKILL_19 0
 scoreboard players set @s Azr0_SKILL_20 0
 
+tag @s remove MGAZR0_SkillPrintable
 
 execute as @s unless entity @s[scores={AZR_chainKillUpg_pts=-999..}] run scoreboard players set @s AZR_chainKillUpg_pts 0
 execute as @s unless entity @s[scores={AZR_chainKillUpg_chargespeed=-999..}] run scoreboard players set @s AZR_chainKillUpg_chargespeed 0

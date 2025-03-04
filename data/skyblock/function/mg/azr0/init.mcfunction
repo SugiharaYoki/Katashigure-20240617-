@@ -93,6 +93,9 @@ scoreboard objectives add Azr0_SkillPoint dummy
 scoreboard objectives add Azr0_SkillEquip_1 dummy
 scoreboard objectives add Azr0_SkillEquip_2 dummy
 scoreboard objectives add Azr0_SkillEquip_3 dummy
+scoreboard objectives add Azr0_SkillEquip_1rng dummy
+scoreboard objectives add Azr0_SkillEquip_2rng dummy
+scoreboard objectives add Azr0_SkillEquip_3rng dummy
 
 scoreboard objectives add Azr0_SKILL_1 dummy
 scoreboard objectives add Azr0_SKILL_2 dummy

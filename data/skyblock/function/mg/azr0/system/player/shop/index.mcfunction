@@ -28,6 +28,10 @@ execute if items entity @s player.cursor beef[custom_data={"azr0shop":true}] run
 execute if items entity @s player.cursor *[custom_data={"azr0shop":true}] run playsound ui.button.click player @s ~ ~ ~ 0.9 1.3
 
 
+execute if items entity @s player.cursor phantom_spawn_egg[custom_data={"azr0shop":true}] run function skyblock:mg/azr0/system/player/shop/skill_print/upg {"skill":1}
+
+
+
 scoreboard players enable @s Azr_Shop
 execute if items entity @s player.cursor *[custom_data~{PsychicVitae:1b}] run function skyblock:azr/chainkill/build
 

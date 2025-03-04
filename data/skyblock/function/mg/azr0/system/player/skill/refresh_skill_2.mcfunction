@@ -1,0 +1,1 @@
+tag @s add MGAZR0_SkillPrintable

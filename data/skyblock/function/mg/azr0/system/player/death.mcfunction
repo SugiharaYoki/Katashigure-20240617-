@@ -24,6 +24,8 @@ function skyblock:pvp/skywar/system/removeallgaming
 
 effect clear @s
 
+tag @s remove MGAZR0_SkillPrintable
+
 tag @s remove MG_AZR0PT
 
 clear @s
