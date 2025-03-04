@@ -16,3 +16,5 @@ scoreboard players set @s Azr0_SkillEquip_1rng 0
 scoreboard players set @s Azr0_SkillEquip_2rng 0
 scoreboard players set @s Azr0_SkillEquip_3rng 0
 scoreboard players remove @s Azr0_SkillPoint 1
+
+clear @s *[custom_data={"azr0skill":true}]
