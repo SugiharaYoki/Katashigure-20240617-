@@ -1,4 +1,7 @@
 #execute as @s at @s run attribute @s generic.scale modifier add mg_azr0:init_scale 0.5 add_value
+
+tag @s add MG_AZR0PT
+
 execute as @s at @s run attribute @s generic.max_health modifier add mg_azr0:init_maxhp -14 add_value
 #execute as @s at @s run attribute @s minecraft:player.entity_interaction_range modifier add mg_azr0:init_reach 2 add_value
 gamemode adventure @s
