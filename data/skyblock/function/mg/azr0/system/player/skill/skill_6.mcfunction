@@ -1,8 +1,8 @@
 
 execute if entity @e[distance=0..8,tag=MG_AZR0MOB] run scoreboard players add @s Azr0_SKILL_6_timer 1
 execute if entity @s[scores={Azr0_SKILL_6=1,Azr0_SKILL_6_timer=18}] run tag @s add Azr0_SKILL_6a
-execute if entity @s[scores={Azr0_SKILL_6=2,Azr0_SKILL_6_timer=16}] run tag @s add Azr0_SKILL_6a
-execute if entity @s[scores={Azr0_SKILL_6=3,Azr0_SKILL_6_timer=14}] run tag @s add Azr0_SKILL_6a
+execute if entity @s[scores={Azr0_SKILL_6=2,Azr0_SKILL_6_timer=18}] run tag @s add Azr0_SKILL_6a
+execute if entity @s[scores={Azr0_SKILL_6=3,Azr0_SKILL_6_timer=18}] run tag @s add Azr0_SKILL_6a
 
 
 execute if entity @s[tag=Azr0_SKILL_6a] run playsound entity.blaze.shoot player @a ~ ~ ~ 0.9 0.9
