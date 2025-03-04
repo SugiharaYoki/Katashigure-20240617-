@@ -6,9 +6,9 @@ execute if items entity @s player.cursor phantom_spawn_egg if entity @s[tag=AZR0
 execute if items entity @s player.cursor phantom_spawn_egg if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_SKILL_1=2}] run attribute @s player.entity_interaction_range modifier add mg_azr0:skill_attack_range2 0.3 add_value
 execute if items entity @s player.cursor phantom_spawn_egg if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_SKILL_1=3}] run attribute @s player.entity_interaction_range modifier add mg_azr0:skill_attack_range3 0.3 add_value
 execute if items entity @s player.cursor axolotl_spawn_egg run scoreboard players add @s Azr0_SKILL_2 1
-execute if items entity @s player.cursor axolotl_spawn_egg if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_SKILL_2=1}] run attribute @s entity.max_health modifier add mg_azr0:skill_max_health1 2 add_value
-execute if items entity @s player.cursor axolotl_spawn_egg if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_SKILL_2=2}] run attribute @s entity.max_health modifier add mg_azr0:skill_max_health2 2 add_value
-execute if items entity @s player.cursor axolotl_spawn_egg if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_SKILL_2=3}] run attribute @s entity.max_health modifier add mg_azr0:skill_max_health3 2 add_value
+execute if items entity @s player.cursor axolotl_spawn_egg if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_SKILL_2=1}] run attribute @s generic.max_health modifier add mg_azr0:skill_max_health1 2 add_value
+execute if items entity @s player.cursor axolotl_spawn_egg if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_SKILL_2=2}] run attribute @s generic.max_health modifier add mg_azr0:skill_max_health2 2 add_value
+execute if items entity @s player.cursor axolotl_spawn_egg if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_SKILL_2=3}] run attribute @s generic.max_health modifier add mg_azr0:skill_max_health3 2 add_value
 execute if items entity @s player.cursor bogged_spawn_egg run scoreboard players add @s Azr0_SKILL_3 1
 execute if items entity @s player.cursor guardian_spawn_egg run scoreboard players add @s Azr0_SKILL_4 1
 tag @s remove AZR0SHOP_SUCCESS
