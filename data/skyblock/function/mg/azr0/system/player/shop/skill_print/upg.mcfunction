@@ -15,6 +15,7 @@ execute if items entity @s player.cursor guardian_spawn_egg run scoreboard playe
 execute if items entity @s player.cursor blaze_spawn_egg run scoreboard players add @s Azr0_SKILL_6 1
 execute if items entity @s player.cursor stray_spawn_egg run scoreboard players add @s Azr0_SKILL_7 1
 execute if items entity @s player.cursor spider_spawn_egg run scoreboard players add @s Azr0_SKILL_8 1
+execute if items entity @s player.cursor skeleton_spawn_egg run scoreboard players add @s Azr0_SKILL_9 1
 tag @s remove AZR0SHOP_SUCCESS
 scoreboard players set @s Azr0_SkillEquip_1rng 0
 scoreboard players set @s Azr0_SkillEquip_2rng 0

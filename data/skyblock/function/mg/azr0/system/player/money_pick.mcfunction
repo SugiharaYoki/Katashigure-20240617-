@@ -32,6 +32,10 @@ tag @s remove MG_AZR0_MoneyPicked
 execute if items entity @s container.* flint run tag @s add MG_AZR0_MoneyPicked
 
 execute if entity @s[tag=MG_AZR0_MoneyPicked] run scoreboard players add @a[tag=MG_AZR0PT] Azr0_arrow 1
+execute if entity @s[scores={Azr0_SKILL_9=1..}] store result score @s rng1 run random value 1..10
+execute if entity @s[scores={Azr0_SKILL_9=1,rng1=1..3}] run scoreboard players add @a[tag=MG_AZR0PT] Azr0_arrow 1
+execute if entity @s[scores={Azr0_SKILL_9=2,rng1=1..6}] run scoreboard players add @a[tag=MG_AZR0PT] Azr0_arrow 1
+execute if entity @s[scores={Azr0_SKILL_9=3,rng1=1..6}] run scoreboard players add @a[tag=MG_AZR0PT] Azr0_arrow 2
 execute if entity @s[tag=MG_AZR0_MoneyPicked] run clear @s flint 1
 
 tag @s remove MG_AZR0_MoneyPicked
