@@ -38,7 +38,7 @@ scoreboard players set @s Azr0_UPG_star 0
 scoreboard players set @s Azr0_UPG_armor 0
 scoreboard players set @s Azr0_USED_star 0
 
-
+scoreboard players set @s Azr0_SkillPoint 0
 scoreboard players set @s Azr0_SkillEquip_1 0
 scoreboard players set @s Azr0_SkillEquip_2 0
 scoreboard players set @s Azr0_SkillEquip_3 0

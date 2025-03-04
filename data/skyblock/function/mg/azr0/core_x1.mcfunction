@@ -8,7 +8,7 @@ execute if score MG_AZR0_Timer rng3 matches 0 run bossbar set mg:azr0_bar value 
 execute if score MG_AZR0_Timer rng3 matches 0 run bossbar set mg:azr0_bar max 1
 execute if score MG_AZR0_Timer rng3 matches 0 run effect give @a[tag=MG_AZR0PT] speed 5 2 true
 execute if score MG_AZR0_Timer rng3 matches 0 run effect give @a[tag=MG_AZR0PT] resistance 5 1 true
-execute if score MG_AZR0_Timer rng3 matches 10 as @a[tag=MG_AZR0PT] at @s run function skyblock:mg/azr0/system/player/skill/emerald_wave
+execute if score MG_AZR0_Timer rng3 matches 10 run function skyblock:mg/azr0/event/general_end_round
 execute if score MG_AZR0_Timer rng3 matches 10 if score MG_AZR0_Timer rng2 matches 1..29 run kill @e[type=marker,tag=mg_azr0_MobPortals]
 execute if score MG_AZR0_Timer rng3 matches 12 if score MG_AZR0_Timer rng2 matches 30..69 run kill @e[type=marker,tag=mg_azr0_MobPortals]
 execute if score MG_AZR0_Timer rng3 matches 15 if score MG_AZR0_Timer rng2 matches 70..99 run kill @e[type=marker,tag=mg_azr0_MobPortals]

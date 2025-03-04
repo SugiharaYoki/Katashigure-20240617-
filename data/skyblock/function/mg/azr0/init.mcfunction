@@ -89,6 +89,7 @@ execute at @n[tag=mg_azr0,type=marker] positioned ~ ~-3 ~-1 run setblock 125078 
 
 
 
+scoreboard objectives add Azr0_SkillPoint dummy
 scoreboard objectives add Azr0_SkillEquip_1 dummy
 scoreboard objectives add Azr0_SkillEquip_2 dummy
 scoreboard objectives add Azr0_SkillEquip_3 dummy
