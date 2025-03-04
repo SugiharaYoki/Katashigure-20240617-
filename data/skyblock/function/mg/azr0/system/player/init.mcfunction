@@ -13,6 +13,7 @@ scoreboard players set @s Azr_bread_recharge 0
 scoreboard players set @s Azr_bread_recharge_level 0
 scoreboard players set @s Azr_usebread 0
 scoreboard players set @s Azr_isDead 0
+scoreboard players set @s Azr_hurt 0
 
 scoreboard players set @s Azr0_arrow 0
 scoreboard players set @s Azr0_shoot1 0

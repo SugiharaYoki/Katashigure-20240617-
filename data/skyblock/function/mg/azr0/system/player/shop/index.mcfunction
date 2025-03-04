@@ -59,7 +59,6 @@ scoreboard players add @s[scores={Azr0_UPG_axe_recharge=7..}] Azr0_axe_recharge 
 scoreboard players add @s[scores={Azr0_UPG_axe_recharge=8..}] Azr0_axe_recharge 1
 scoreboard players add @s[scores={Azr0_UPG_axe_recharge=9..}] Azr0_axe_recharge 1
 scoreboard players add @s[scores={Azr0_UPG_axe_recharge=10..}] Azr0_axe_recharge 1
-execute if entity @s[scores={Azr0_dealt_damage=1..}] run function skyblock:mg/azr0/system/player/attacked
 execute if entity @s[scores={Azr0_axe_recharge=1000..1009}] run playsound block.amethyst_block.resonate player @a ~ ~ ~ 0.9 1.3
 
 execute as @s[scores={Azr_Shop=8900101..8900199}] run function skyblock:azr/chainkill/assign
