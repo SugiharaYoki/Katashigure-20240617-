@@ -89,7 +89,30 @@ execute at @n[tag=mg_azr0,type=marker] positioned ~ ~-3 ~-1 run setblock 125078 
 
 
 
+scoreboard objectives add Azr0_SkillEquip_1 dummy
+scoreboard objectives add Azr0_SkillEquip_2 dummy
+scoreboard objectives add Azr0_SkillEquip_3 dummy
 
+scoreboard objectives add Azr0_SKILL_1 dummy
+scoreboard objectives add Azr0_SKILL_2 dummy
+scoreboard objectives add Azr0_SKILL_3 dummy
+scoreboard objectives add Azr0_SKILL_4 dummy
+scoreboard objectives add Azr0_SKILL_5 dummy
+scoreboard objectives add Azr0_SKILL_6 dummy
+scoreboard objectives add Azr0_SKILL_7 dummy
+scoreboard objectives add Azr0_SKILL_8 dummy
+scoreboard objectives add Azr0_SKILL_9 dummy
+scoreboard objectives add Azr0_SKILL_10 dummy
+scoreboard objectives add Azr0_SKILL_11 dummy
+scoreboard objectives add Azr0_SKILL_12 dummy
+scoreboard objectives add Azr0_SKILL_13 dummy
+scoreboard objectives add Azr0_SKILL_14 dummy
+scoreboard objectives add Azr0_SKILL_15 dummy
+scoreboard objectives add Azr0_SKILL_16 dummy
+scoreboard objectives add Azr0_SKILL_17 dummy
+scoreboard objectives add Azr0_SKILL_18 dummy
+scoreboard objectives add Azr0_SKILL_19 dummy
+scoreboard objectives add Azr0_SKILL_20 dummy
 
 
 

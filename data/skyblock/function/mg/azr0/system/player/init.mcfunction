@@ -38,6 +38,33 @@ scoreboard players set @s Azr0_UPG_star 0
 scoreboard players set @s Azr0_UPG_armor 0
 scoreboard players set @s Azr0_USED_star 0
 
+
+scoreboard players set @s Azr0_SkillEquip_1 0
+scoreboard players set @s Azr0_SkillEquip_2 0
+scoreboard players set @s Azr0_SkillEquip_3 0
+
+scoreboard players set @s Azr0_SKILL_1 0
+scoreboard players set @s Azr0_SKILL_2 0
+scoreboard players set @s Azr0_SKILL_3 0
+scoreboard players set @s Azr0_SKILL_4 0
+scoreboard players set @s Azr0_SKILL_5 0
+scoreboard players set @s Azr0_SKILL_6 0
+scoreboard players set @s Azr0_SKILL_7 0
+scoreboard players set @s Azr0_SKILL_8 0
+scoreboard players set @s Azr0_SKILL_9 0
+scoreboard players set @s Azr0_SKILL_10 0
+scoreboard players set @s Azr0_SKILL_11 0
+scoreboard players set @s Azr0_SKILL_12 0
+scoreboard players set @s Azr0_SKILL_13 0
+scoreboard players set @s Azr0_SKILL_14 0
+scoreboard players set @s Azr0_SKILL_15 0
+scoreboard players set @s Azr0_SKILL_16 0
+scoreboard players set @s Azr0_SKILL_17 0
+scoreboard players set @s Azr0_SKILL_18 0
+scoreboard players set @s Azr0_SKILL_19 0
+scoreboard players set @s Azr0_SKILL_20 0
+
+
 execute as @s unless entity @s[scores={AZR_chainKillUpg_pts=-999..}] run scoreboard players set @s AZR_chainKillUpg_pts 0
 execute as @s unless entity @s[scores={AZR_chainKillUpg_chargespeed=-999..}] run scoreboard players set @s AZR_chainKillUpg_chargespeed 0
 execute as @s unless entity @s[scores={AZR_chainKillUpg_chargeboost=-999..}] run scoreboard players set @s AZR_chainKillUpg_chargeboost 0
