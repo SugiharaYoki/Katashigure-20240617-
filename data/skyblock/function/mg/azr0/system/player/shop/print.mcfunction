@@ -117,8 +117,8 @@ item replace entity @s[scores={Azr0_UPG_crossbow_multishot=4}] inventory.11 with
 
 item replace entity @s[scores={Azr0_UPG_crossbow=0..,Azr0_UPG_crossbow_load=0}] inventory.20 with twisting_vines[custom_data={"azr0shop":true},custom_name='{"text":"升级：弩 填充速度","italic":false,"color":"green"}',lore=['{"text":"弩的装箭速度提升","color":"white","italic":true}','{"text":"消耗：100绿宝石","color":"red","italic":true}']]
 item replace entity @s[scores={Azr0_UPG_crossbow_load=1}] inventory.20 with twisting_vines[custom_data={"azr0shop":true},custom_name='{"text":"升级：弩 填充速度","italic":false,"color":"green"}',lore=['{"text":"弩的装箭速度提升","color":"white","italic":true}','{"text":"消耗：250绿宝石","color":"red","italic":true}']]
-item replace entity @s[scores={Azr0_UPG_crossbow_load=2}] inventory.20 with twisting_vines[custom_data={"azr0shop":true},custom_name='{"text":"升级：弩 填充速度","italic":false,"color":"green"}',lore=['{"text":"弩的装箭速度提升","color":"white","italic":true}','{"text":"消耗：400绿宝石","color":"red","italic":true}']]
-item replace entity @s[scores={Azr0_UPG_crossbow_load=3}] inventory.20 with twisting_vines[custom_data={"azr0shop":true},custom_name='{"text":"升级：弩 填充速度","italic":false,"color":"green"}',lore=['{"text":"弩的装箭速度提升","color":"white","italic":true}','{"text":"消耗：600绿宝石","color":"red","italic":true}']]
+item replace entity @s[scores={Azr0_UPG_crossbow_load=2}] inventory.20 with twisting_vines[custom_data={"azr0shop":true},custom_name='{"text":"升级：弩 填充速度","italic":false,"color":"green"}',lore=['{"text":"弩的装箭速度提升","color":"white","italic":true}','{"text":"消耗：600绿宝石","color":"red","italic":true}']]
+item replace entity @s[scores={Azr0_UPG_crossbow_load=3}] inventory.20 with twisting_vines[custom_data={"azr0shop":true},custom_name='{"text":"升级：弩 填充速度","italic":false,"color":"green"}',lore=['{"text":"弩的装箭速度提升","color":"white","italic":true}','{"text":"消耗：1000绿宝石","color":"red","italic":true}']]
 item replace entity @s[scores={Azr0_UPG_crossbow_load=4}] inventory.20 with end_crystal[custom_data={"azr0shop":true},custom_name='{"text":"升级：弩 填充速度 已升至最高级","italic":false,"color":"gold"}']
 
 
