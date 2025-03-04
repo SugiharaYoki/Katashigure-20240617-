@@ -10,8 +10,8 @@ execute if score MG_AZR5_rng rng1 matches 1..3 as @e[tag=MG_AZR0MOB,tag=MG_AZR0M
 execute as @e[tag=MG_AZR0MOB,tag=MG_AZR0MOB_smoke_grenade,scores={health=..4},tag=!MG_AZR0MOB_smoke_grenade_done] at @s run tag @s add MG_AZR0MOB_smoke_grenade_done
 
 
-execute store result score MG_AZR5_rng rng1 run random value 1..8
-execute as @e[tag=MG_AZR0MOB,tag=MG_AZR0MOB_fire_trail,scores={rng1=1}] at @s if block ~ ~ ~ air unless entity @n[type=marker,tag=MG_AZR0_FIRE,distance=0..1.5] run summon marker ~ ~ ~ {Tags:["MG_AZR0_FIRE"]}
+execute store result score MG_AZR5_rng rng1 run random value 1..10
+execute if score MG_AZR5_rng rng1 matches 1 as @e[tag=MG_AZR0MOB,tag=MG_AZR0MOB_fire_trail] at @s if block ~ ~ ~ air unless entity @n[type=marker,tag=MG_AZR0_FIRE,distance=0..1.5] run summon marker ~ ~ ~ {Tags:["MG_AZR0_FIRE"]}
 
 execute as @e[type=marker,tag=MG_AZR0_FIRE] at @s unless entity @n[tag=MG_AZR0MOB_fire_trail,distance=0..1.5] run scoreboard players add @s rng1 1
 execute as @e[type=marker,tag=MG_AZR0_FIRE,scores={rng1=1..5}] at @s run particle smoke ~ ~0.1 ~ 0 0.1 0 0.03 5
