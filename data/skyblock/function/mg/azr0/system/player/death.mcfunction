@@ -20,11 +20,21 @@ attribute @s generic.max_health modifier remove mg_azr0:upg_maxhp16
 attribute @s generic.max_health modifier remove mg_azr0:upg_maxhp17
 attribute @s generic.max_health modifier remove mg_azr0:upg_maxhp18
 
+attribute @s player.entity_interaction_range modifier remove mg_azr0:skill_attack_range3
+attribute @s player.entity_interaction_range modifier remove mg_azr0:skill_attack_range3
+attribute @s player.entity_interaction_range modifier remove mg_azr0:skill_attack_range3
+attribute @s generic.max_health modifier remove mg_azr0:skill_max_health1
+attribute @s generic.max_health modifier remove mg_azr0:skill_max_health2
+attribute @s generic.max_health modifier remove mg_azr0:skill_max_health3
+
 function skyblock:pvp/skywar/system/removeallgaming
 
 effect clear @s
 
+tag @s remove MGAZR0_SkillPrintable
+
 tag @s remove MG_AZR0PT
+tag @s add MG_AZR0PT_dead
 
 clear @s
 tellraw @a[distance=..230] [{"selector":"@s","color":"white"},{"text":" 阵亡了！","color":"dark_red"}]
@@ -32,4 +42,14 @@ tellraw @a[distance=..230] [{"selector":"@s","color":"white"},{"text":" 阵亡�
 bossbar set mg:azr0_bar players @a[tag=MG_AZR0PT]
 
 scoreboard players set @s Azr_isDead 0
-tp @s 0 200 0
+
+scoreboard players operation @s Azr0_kills_PERM += @s Azr0_kills
+scoreboard players operation @s Azr0_kills /= 5 constant
+
+scoreboard players operation @s Perm_PersonSHD += @s Azr0_kills
+
+tellraw @s [{"text": "获得了","color": "light_purple","bold": false,"italic": true},{"score":{"name":"@s","objective":"Azr0_kills"},"color":"light_purple"},{"text": "影之石","color": "light_purple"}]
+
+scoreboard players set @s Azr0_kills 0
+
+

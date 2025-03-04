@@ -16,7 +16,6 @@ item replace entity @s[scores={Azr0_UPG_sword_damage=2..,Azr0_UPG_sword_knockbac
 
 item replace entity @s[scores={Azr0_UPG_sword_damage=..1}] inventory.9 with barrier
 item replace entity @s[scores={Azr0_UPG_sword_damage=..1}] inventory.18 with barrier
-item replace entity @s inventory.19 with barrier
 
 
 execute unless entity @s[scores={Azr0_UPG_sword_knockback=0,Azr0_UPG_sword_sweeping=0}] run item replace entity @s[scores={Azr0_UPG_sword_speed=0}] inventory.18 with feather[custom_data={"azr0shop":true},custom_name='{"text":"升级：剑 斩速","italic":false,"color":"green"}',lore=['{"text":"增加0.1攻击速度","color":"white","italic":true}','{"text":"消耗：30绿宝石","color":"red","italic":true}']]
@@ -66,18 +65,26 @@ item replace entity @s[scores={Azr0_UPG_axe_damage=6}] inventory.1 with iron_axe
 item replace entity @s[scores={Azr0_UPG_axe_damage=7}] inventory.1 with end_crystal[custom_data={"azr0shop":true},custom_name='{"text":"武器：斧 已升至最高级","italic":false,"color":"green"}']
 
 item replace entity @s[scores={Azr0_UPG_axe_damage=..1}] inventory.10 with barrier
-execute unless entity @s[scores={Azr0_UPG_axe_damage=..1}] run item replace entity @s[scores={Azr0_UPG_axe_recharge=0}] inventory.18 with iron_ingot[custom_data={"azr0shop":true},custom_name='{"text":"升级：斧 充能速度","italic":false,"color":"green"}',lore=['{"text":"增加10%充能速度","color":"white","italic":true}','{"text":"消耗：30绿宝石","color":"red","italic":true}']]
-item replace entity @s[scores={Azr0_UPG_axe_recharge=1}] inventory.18 with iron_ingot[custom_data={"azr0shop":true},custom_name='{"text":"升级：斧 充能速度","italic":false,"color":"green"}',lore=['{"text":"增加10%充能速度","color":"white","italic":true}','{"text":"消耗：60绿宝石","color":"red","italic":true}']]
-item replace entity @s[scores={Azr0_UPG_axe_recharge=2}] inventory.18 with iron_ingot[custom_data={"azr0shop":true},custom_name='{"text":"升级：斧 充能速度","italic":false,"color":"green"}',lore=['{"text":"增加10%充能速度","color":"white","italic":true}','{"text":"消耗：90绿宝石","color":"red","italic":true}']]
-item replace entity @s[scores={Azr0_UPG_axe_recharge=3}] inventory.18 with iron_ingot[custom_data={"azr0shop":true},custom_name='{"text":"升级：斧 充能速度","italic":false,"color":"green"}',lore=['{"text":"增加10%充能速度","color":"white","italic":true}','{"text":"消耗：120绿宝石","color":"red","italic":true}']]
-item replace entity @s[scores={Azr0_UPG_axe_recharge=4}] inventory.18 with iron_ingot[custom_data={"azr0shop":true},custom_name='{"text":"升级：斧 充能速度","italic":false,"color":"green"}',lore=['{"text":"增加10%充能速度","color":"white","italic":true}','{"text":"消耗：150绿宝石","color":"red","italic":true}']]
-item replace entity @s[scores={Azr0_UPG_axe_recharge=5}] inventory.18 with iron_ingot[custom_data={"azr0shop":true},custom_name='{"text":"升级：斧 充能速度","italic":false,"color":"green"}',lore=['{"text":"增加10%充能速度","color":"white","italic":true}','{"text":"消耗：200绿宝石","color":"red","italic":true}']]
-item replace entity @s[scores={Azr0_UPG_axe_recharge=6}] inventory.18 with iron_ingot[custom_data={"azr0shop":true},custom_name='{"text":"升级：斧 充能速度","italic":false,"color":"green"}',lore=['{"text":"增加10%充能速度","color":"white","italic":true}','{"text":"消耗：300绿宝石","color":"red","italic":true}']]
-item replace entity @s[scores={Azr0_UPG_axe_recharge=7}] inventory.18 with iron_ingot[custom_data={"azr0shop":true},custom_name='{"text":"升级：斧 充能速度","italic":false,"color":"green"}',lore=['{"text":"增加10%充能速度","color":"white","italic":true}','{"text":"消耗：400绿宝石","color":"red","italic":true}']]
-item replace entity @s[scores={Azr0_UPG_axe_recharge=8}] inventory.18 with iron_ingot[custom_data={"azr0shop":true},custom_name='{"text":"升级：斧 充能速度","italic":false,"color":"green"}',lore=['{"text":"增加10%充能速度","color":"white","italic":true}','{"text":"消耗：500绿宝石","color":"red","italic":true}']]
-item replace entity @s[scores={Azr0_UPG_axe_recharge=9}] inventory.18 with iron_ingot[custom_data={"azr0shop":true},custom_name='{"text":"升级：斧 充能速度","italic":false,"color":"green"}',lore=['{"text":"增加10%充能速度","color":"white","italic":true}','{"text":"消耗：600绿宝石","color":"red","italic":true}']]
-item replace entity @s[scores={Azr0_UPG_axe_recharge=10}] inventory.18 with end_crystal[custom_data={"azr0shop":true},custom_name='{"text":"升级：斧 充能速度 已升至最高级","italic":false,"color":"gold"}']
+execute unless entity @s[scores={Azr0_UPG_axe_damage=..1}] run item replace entity @s[scores={Azr0_UPG_axe_recharge=0}] inventory.10 with iron_ingot[custom_data={"azr0shop":true},custom_name='{"text":"升级：斧 充能速度","italic":false,"color":"green"}',lore=['{"text":"增加10%充能速度","color":"white","italic":true}','{"text":"消耗：30绿宝石","color":"red","italic":true}']]
+item replace entity @s[scores={Azr0_UPG_axe_recharge=1}] inventory.10 with iron_ingot[custom_data={"azr0shop":true},custom_name='{"text":"升级：斧 充能速度","italic":false,"color":"green"}',lore=['{"text":"增加10%充能速度","color":"white","italic":true}','{"text":"消耗：60绿宝石","color":"red","italic":true}']]
+item replace entity @s[scores={Azr0_UPG_axe_recharge=2}] inventory.10 with iron_ingot[custom_data={"azr0shop":true},custom_name='{"text":"升级：斧 充能速度","italic":false,"color":"green"}',lore=['{"text":"增加10%充能速度","color":"white","italic":true}','{"text":"消耗：90绿宝石","color":"red","italic":true}']]
+item replace entity @s[scores={Azr0_UPG_axe_recharge=3}] inventory.10 with iron_ingot[custom_data={"azr0shop":true},custom_name='{"text":"升级：斧 充能速度","italic":false,"color":"green"}',lore=['{"text":"增加10%充能速度","color":"white","italic":true}','{"text":"消耗：120绿宝石","color":"red","italic":true}']]
+item replace entity @s[scores={Azr0_UPG_axe_recharge=4}] inventory.10 with iron_ingot[custom_data={"azr0shop":true},custom_name='{"text":"升级：斧 充能速度","italic":false,"color":"green"}',lore=['{"text":"增加10%充能速度","color":"white","italic":true}','{"text":"消耗：150绿宝石","color":"red","italic":true}']]
+item replace entity @s[scores={Azr0_UPG_axe_recharge=5}] inventory.10 with iron_ingot[custom_data={"azr0shop":true},custom_name='{"text":"升级：斧 充能速度","italic":false,"color":"green"}',lore=['{"text":"增加10%充能速度","color":"white","italic":true}','{"text":"消耗：200绿宝石","color":"red","italic":true}']]
+item replace entity @s[scores={Azr0_UPG_axe_recharge=6}] inventory.10 with iron_ingot[custom_data={"azr0shop":true},custom_name='{"text":"升级：斧 充能速度","italic":false,"color":"green"}',lore=['{"text":"增加10%充能速度","color":"white","italic":true}','{"text":"消耗：300绿宝石","color":"red","italic":true}']]
+item replace entity @s[scores={Azr0_UPG_axe_recharge=7}] inventory.10 with iron_ingot[custom_data={"azr0shop":true},custom_name='{"text":"升级：斧 充能速度","italic":false,"color":"green"}',lore=['{"text":"增加10%充能速度","color":"white","italic":true}','{"text":"消耗：400绿宝石","color":"red","italic":true}']]
+item replace entity @s[scores={Azr0_UPG_axe_recharge=8}] inventory.10 with iron_ingot[custom_data={"azr0shop":true},custom_name='{"text":"升级：斧 充能速度","italic":false,"color":"green"}',lore=['{"text":"增加10%充能速度","color":"white","italic":true}','{"text":"消耗：500绿宝石","color":"red","italic":true}']]
+item replace entity @s[scores={Azr0_UPG_axe_recharge=9}] inventory.10 with iron_ingot[custom_data={"azr0shop":true},custom_name='{"text":"升级：斧 充能速度","italic":false,"color":"green"}',lore=['{"text":"增加10%充能速度","color":"white","italic":true}','{"text":"消耗：600绿宝石","color":"red","italic":true}']]
+item replace entity @s[scores={Azr0_UPG_axe_recharge=10}] inventory.10 with end_crystal[custom_data={"azr0shop":true},custom_name='{"text":"升级：斧 充能速度 已升至最高级","italic":false,"color":"gold"}']
 
+
+item replace entity @s[scores={Azr0_UPG_axe_damage=..3}] inventory.19 with barrier
+execute unless entity @s[scores={Azr0_UPG_axe_damage=..3}] run item replace entity @s[scores={Azr0_UPG_axe_range=0}] inventory.19 with heavy_core[custom_data={"azr0shop":true},custom_name='{"text":"升级：斧 范围攻击","italic":false,"color":"green"}',lore=['{"text":"距离自己2.3格以内的目标将受到6点伤害 最大捕捉：6","color":"white","italic":true}','{"text":"消耗：100绿宝石","color":"red","italic":true}']]
+item replace entity @s[scores={Azr0_UPG_axe_range=1}] inventory.19 with heavy_core[custom_data={"azr0shop":true},custom_name='{"text":"升级：斧 范围攻击","italic":false,"color":"green"}',lore=['{"text":"增加2点伤害 0.5距离","color":"white","italic":true}','{"text":"消耗：200绿宝石","color":"red","italic":true}']]
+item replace entity @s[scores={Azr0_UPG_axe_range=2}] inventory.19 with heavy_core[custom_data={"azr0shop":true},custom_name='{"text":"升级：斧 范围攻击","italic":false,"color":"green"}',lore=['{"text":"增加2点伤害 1最大捕捉","color":"white","italic":true}','{"text":"消耗：300绿宝石","color":"red","italic":true}']]
+item replace entity @s[scores={Azr0_UPG_axe_range=3}] inventory.19 with heavy_core[custom_data={"azr0shop":true},custom_name='{"text":"升级：斧 范围攻击","italic":false,"color":"green"}',lore=['{"text":"增加2点伤害 0.5距离","color":"white","italic":true}','{"text":"消耗：500绿宝石","color":"red","italic":true}']]
+item replace entity @s[scores={Azr0_UPG_axe_range=4}] inventory.19 with heavy_core[custom_data={"azr0shop":true},custom_name='{"text":"升级：斧 范围攻击","italic":false,"color":"green"}',lore=['{"text":"增加2点伤害 1最大捕捉","color":"white","italic":true}','{"text":"消耗：800绿宝石","color":"red","italic":true}']]
+item replace entity @s[scores={Azr0_UPG_axe_range=5}] inventory.19 with end_crystal[custom_data={"azr0shop":true},custom_name='{"text":"升级：斧 范围攻击 已升至最高级","italic":false,"color":"gold"}']
 
 item replace entity @s[scores={Azr0_UPG_bow=-1,Azr0_UPG_crossbow=-1,Azr0_UPG_sword_damage=..2}] inventory.2 with barrier
 item replace entity @s[scores={Azr0_UPG_bow=-1,Azr0_UPG_crossbow=-1,Azr0_UPG_sword_damage=..2}] inventory.11 with barrier
@@ -117,14 +124,21 @@ item replace entity @s[scores={Azr0_UPG_crossbow_multishot=4}] inventory.11 with
 
 item replace entity @s[scores={Azr0_UPG_crossbow=0..,Azr0_UPG_crossbow_load=0}] inventory.20 with twisting_vines[custom_data={"azr0shop":true},custom_name='{"text":"升级：弩 填充速度","italic":false,"color":"green"}',lore=['{"text":"弩的装箭速度提升","color":"white","italic":true}','{"text":"消耗：100绿宝石","color":"red","italic":true}']]
 item replace entity @s[scores={Azr0_UPG_crossbow_load=1}] inventory.20 with twisting_vines[custom_data={"azr0shop":true},custom_name='{"text":"升级：弩 填充速度","italic":false,"color":"green"}',lore=['{"text":"弩的装箭速度提升","color":"white","italic":true}','{"text":"消耗：250绿宝石","color":"red","italic":true}']]
-item replace entity @s[scores={Azr0_UPG_crossbow_load=2}] inventory.20 with twisting_vines[custom_data={"azr0shop":true},custom_name='{"text":"升级：弩 填充速度","italic":false,"color":"green"}',lore=['{"text":"弩的装箭速度提升","color":"white","italic":true}','{"text":"消耗：400绿宝石","color":"red","italic":true}']]
-item replace entity @s[scores={Azr0_UPG_crossbow_load=3}] inventory.20 with twisting_vines[custom_data={"azr0shop":true},custom_name='{"text":"升级：弩 填充速度","italic":false,"color":"green"}',lore=['{"text":"弩的装箭速度提升","color":"white","italic":true}','{"text":"消耗：600绿宝石","color":"red","italic":true}']]
+item replace entity @s[scores={Azr0_UPG_crossbow_load=2}] inventory.20 with twisting_vines[custom_data={"azr0shop":true},custom_name='{"text":"升级：弩 填充速度","italic":false,"color":"green"}',lore=['{"text":"弩的装箭速度提升","color":"white","italic":true}','{"text":"消耗：600绿宝石","color":"red","italic":true}']]
+item replace entity @s[scores={Azr0_UPG_crossbow_load=3}] inventory.20 with twisting_vines[custom_data={"azr0shop":true},custom_name='{"text":"升级：弩 填充速度","italic":false,"color":"green"}',lore=['{"text":"弩的装箭速度提升","color":"white","italic":true}','{"text":"消耗：1000绿宝石","color":"red","italic":true}']]
 item replace entity @s[scores={Azr0_UPG_crossbow_load=4}] inventory.20 with end_crystal[custom_data={"azr0shop":true},custom_name='{"text":"升级：弩 填充速度 已升至最高级","italic":false,"color":"gold"}']
 
 
 item replace entity @s[scores={Azr0_UPG_bread_storage=0,Azr0_UPG_hp=..1}] inventory.8 with barrier
 item replace entity @s[scores={Azr0_UPG_bread_recharge=0,Azr0_UPG_hp=..1}] inventory.17 with barrier
 item replace entity @s[scores={Azr0_UPG_bread_quality=0,Azr0_UPG_hp=..3}] inventory.26 with barrier
+
+item replace entity @s inventory.3 with chain[custom_data={"azr0shop":true}]
+item replace entity @s inventory.6 with chain[custom_data={"azr0shop":true}]
+item replace entity @s inventory.12 with chain[custom_data={"azr0shop":true}]
+item replace entity @s inventory.15 with chain[custom_data={"azr0shop":true}]
+item replace entity @s inventory.21 with chain[custom_data={"azr0shop":true}]
+item replace entity @s inventory.24 with chain[custom_data={"azr0shop":true}]
 
 item replace entity @s[scores={Azr0_UPG_bread_storage=0,Azr0_UPG_hp=2..}] inventory.8 with rabbit_stew[custom_data={"azr0shop":true},custom_name='{"text":"升级：食物 储量","italic":false,"color":"green"}',lore=['{"text":"最高食物储备数量+1","color":"white","italic":true}','{"text":"消耗：50绿宝石","color":"red","italic":true}']]
 item replace entity @s[scores={Azr0_UPG_bread_storage=1}] inventory.8 with rabbit_stew[custom_data={"azr0shop":true},custom_name='{"text":"升级：食物 储量","italic":false,"color":"green"}',lore=['{"text":"最高食物储备数量+1","color":"white","italic":true}','{"text":"消耗：150绿宝石","color":"red","italic":true}']]
@@ -182,7 +196,7 @@ execute unless items entity @s player.crafting.1 *[!custom_data~{PsychicVitae:1b
 item replace entity @s[scores={Azr0_UPG_armor=0,Azr0_UPG_hp=..2}] inventory.25 with barrier
 item replace entity @s[scores={Azr0_UPG_armor=0,Azr0_UPG_hp=3..}] inventory.25 with chainmail_chestplate[custom_data={"azr0shop":true},custom_name='{"text":"提升护甲","italic":false,"color":"green"}',lore=['{"text":"增加2护甲","color":"white","italic":true}','{"text":"消耗：10绿宝石","color":"red","italic":true}']]
 item replace entity @s[scores={Azr0_UPG_armor=1}] inventory.25 with chainmail_chestplate[custom_data={"azr0shop":true},custom_name='{"text":"提升护甲","italic":false,"color":"green"}',lore=['{"text":"增加2护甲","color":"white","italic":true}','{"text":"消耗：30绿宝石","color":"red","italic":true}']]
-item replace entity @s[scores={Azr0_UPG_armor=2}] inventory.25 with chainmail_chestplate[custom_data={"azr0shop":true},custom_name='{"text":"提升护甲","italic":false,"color":"green"}',lore=['{"text":"增加2护甲","color":"white","italic":true}','{"text":"消耗：50绿宝石","color":"red","italic":true}']]
+item replace entity @s[scores={Azr0_UPG_armor=2}] inventory.25 with chainmail_chestplate[custom_data={"azr0shop":true},custom_name='{"text":"提升护甲","italic":false,"color":"green"}',lore=['{"text":"增加2护甲","color":"white","italic":true}','{"text":"消耗：70绿宝石","color":"red","italic":true}']]
 item replace entity @s[scores={Azr0_UPG_armor=3}] inventory.25 with chainmail_chestplate[custom_data={"azr0shop":true},custom_name='{"text":"提升护甲","italic":false,"color":"green"}',lore=['{"text":"增加2护甲","color":"white","italic":true}','{"text":"消耗：3钻石","color":"red","italic":true}']]
 item replace entity @s[scores={Azr0_UPG_armor=4}] inventory.25 with chainmail_chestplate[custom_data={"azr0shop":true},custom_name='{"text":"提升护甲","italic":false,"color":"green"}',lore=['{"text":"增加2护甲","color":"white","italic":true}','{"text":"消耗：8钻石","color":"red","italic":true}']]
 item replace entity @s[scores={Azr0_UPG_armor=5}] inventory.25 with chainmail_chestplate[custom_data={"azr0shop":true},custom_name='{"text":"提升护甲","italic":false,"color":"green"}',lore=['{"text":"增加2护甲","color":"white","italic":true}','{"text":"消耗：20钻石","color":"red","italic":true}']]
@@ -192,4 +206,5 @@ item replace entity @s[scores={Azr0_UPG_armor=8}] inventory.25 with chainmail_ch
 item replace entity @s[scores={Azr0_UPG_armor=9}] inventory.25 with end_crystal[custom_data={"azr0shop":true},custom_name='{"text":"护甲 已升至最高级","italic":false,"color":"gold"}']
 
 
-
+execute if entity @s[scores={Azr0_SkillPoint=1..,Azr0_SkillEquip_1rng=0}] run function skyblock:mg/azr0/system/player/skill/refresh_skill
+execute if entity @s[tag=MGAZR0_SkillPrintable] run function skyblock:mg/azr0/system/player/shop/skill_print

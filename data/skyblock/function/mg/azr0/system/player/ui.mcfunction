@@ -1,7 +1,9 @@
 execute if items entity @s container.* emerald run function skyblock:mg/azr0/system/player/money_pick
 execute if items entity @s container.* diamond run function skyblock:mg/azr0/system/player/money_pick
+execute if items entity @s container.* flint run function skyblock:mg/azr0/system/player/money_pick
 
-title @s actionbar [{"text":"绿宝石 ","color":"green","bold": true},{"score":{"name":"@s","objective":"Azr_emerald"},"color":"green","bold": false},{"text":"   钻石 ","color":"aqua","bold": true},{"score":{"name":"@s","objective":"Azr_diamond"},"color":"aqua","bold": false}]
+title @s[scores={Azr0_SkillPoint=0}] actionbar [{"text":"绿宝石 ","color":"green","bold": true},{"score":{"name":"@s","objective":"Azr_emerald"},"color":"green","bold": false},{"text":"   钻石 ","color":"aqua","bold": true},{"score":{"name":"@s","objective":"Azr_diamond"},"color":"aqua","bold": false}]
+title @s[scores={Azr0_SkillPoint=1..}] actionbar [{"text":"绿宝石 ","color":"green","bold": true},{"score":{"name":"@s","objective":"Azr_emerald"},"color":"green","bold": false},{"text":"   [赐福点数可用] ","color":"light_purple","bold": true},{"text":"   钻石 ","color":"aqua","bold": true},{"score":{"name":"@s","objective":"Azr_diamond"},"color":"aqua","bold": false}]
 
 
 
@@ -19,8 +21,23 @@ execute unless items entity @s[scores={Azr0_UPG_crossbow=0..}] hotbar.2 *[custom
 item replace entity @s hotbar.3 with barrier
 item replace entity @s hotbar.4 with barrier
 item replace entity @s hotbar.5 with barrier
-item replace entity @s hotbar.6 with barrier
-item replace entity @s hotbar.7 with barrier
+clear @s[scores={Azr0_arrow=..0}] arrow
+item replace entity @s[scores={Azr0_arrow=0}] hotbar.6 with barrier
+item replace entity @s[scores={Azr0_arrow=1}] hotbar.6 with arrow 1
+item replace entity @s[scores={Azr0_arrow=2}] hotbar.6 with arrow 2
+item replace entity @s[scores={Azr0_arrow=3}] hotbar.6 with arrow 3
+item replace entity @s[scores={Azr0_arrow=4}] hotbar.6 with arrow 4
+item replace entity @s[scores={Azr0_arrow=5}] hotbar.6 with arrow 5
+item replace entity @s[scores={Azr0_arrow=6}] hotbar.6 with arrow 6
+item replace entity @s[scores={Azr0_arrow=7}] hotbar.6 with arrow 7
+item replace entity @s[scores={Azr0_arrow=8}] hotbar.6 with arrow 8
+item replace entity @s[scores={Azr0_arrow=9}] hotbar.6 with arrow 9
+item replace entity @s[scores={Azr0_arrow=10..19}] hotbar.6 with arrow 10
+item replace entity @s[scores={Azr0_arrow=20..29}] hotbar.6 with arrow 20
+item replace entity @s[scores={Azr0_arrow=30..39}] hotbar.6 with arrow 30
+item replace entity @s[scores={Azr0_arrow=40..49}] hotbar.6 with arrow 40
+item replace entity @s[scores={Azr0_arrow=50..59}] hotbar.6 with arrow 50
+item replace entity @s[scores={Azr0_arrow=60..}] hotbar.6 with arrow 60
 execute store result score @s rng1 run scoreboard players get @s Azr0_UPG_star
 execute store result score @s rng1 run scoreboard players operation @s rng1 -= @s Azr0_USED_star
 execute if score @s rng1 matches 0 run item replace entity @s hotbar.7 with barrier

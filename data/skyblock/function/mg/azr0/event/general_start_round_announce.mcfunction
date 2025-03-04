@@ -7,10 +7,10 @@ execute if score MG_AZR0_Timer rng2 matches 1..3 store result score MG_AZR0_rng 
 execute if score MG_AZR0_Timer rng2 matches 4..6 store result score MG_AZR0_rng rng4 run random value 1..3
 execute if score MG_AZR0_Timer rng2 matches 7..10 store result score MG_AZR0_rng rng4 run random value 1..4
 execute if score MG_AZR0_Timer rng2 matches 11..18 store result score MG_AZR0_rng rng4 run random value 1..8
-execute if score MG_AZR0_Timer rng2 matches 19..25 store result score MG_AZR0_rng rng4 run random value 5..9
-execute if score MG_AZR0_Timer rng2 matches 26..35 store result score MG_AZR0_rng rng4 run random value 5..10
-execute if score MG_AZR0_Timer rng2 matches 36..50 store result score MG_AZR0_rng rng4 run random value 5..11
-execute if score MG_AZR0_Timer rng2 matches 51.. store result score MG_AZR0_rng rng4 run random value 9..11
+execute if score MG_AZR0_Timer rng2 matches 19..35 store result score MG_AZR0_rng rng4 run random value 5..9
+execute if score MG_AZR0_Timer rng2 matches 36..55 store result score MG_AZR0_rng rng4 run random value 5..10
+execute if score MG_AZR0_Timer rng2 matches 56..80 store result score MG_AZR0_rng rng4 run random value 5..11
+execute if score MG_AZR0_Timer rng2 matches 81.. store result score MG_AZR0_rng rng4 run random value 9..11
 
 
 #1左 2右 3前 4后 5左右 6左前 7右前 8前后 9左右前 10左右后 11四方

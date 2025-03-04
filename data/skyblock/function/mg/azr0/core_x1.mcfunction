@@ -8,9 +8,10 @@ execute if score MG_AZR0_Timer rng3 matches 0 run bossbar set mg:azr0_bar value 
 execute if score MG_AZR0_Timer rng3 matches 0 run bossbar set mg:azr0_bar max 1
 execute if score MG_AZR0_Timer rng3 matches 0 run effect give @a[tag=MG_AZR0PT] speed 5 2 true
 execute if score MG_AZR0_Timer rng3 matches 0 run effect give @a[tag=MG_AZR0PT] resistance 5 1 true
-execute if score MG_AZR0_Timer rng3 matches 10 if score MG_AZR0_Timer rng2 matches 1..9 run kill @e[type=marker,tag=mg_azr0_MobPortals]
-execute if score MG_AZR0_Timer rng3 matches 12 if score MG_AZR0_Timer rng2 matches 10..49 run kill @e[type=marker,tag=mg_azr0_MobPortals]
-execute if score MG_AZR0_Timer rng3 matches 15 if score MG_AZR0_Timer rng2 matches 50..99 run kill @e[type=marker,tag=mg_azr0_MobPortals]
+execute if score MG_AZR0_Timer rng3 matches 10 run function skyblock:mg/azr0/event/general_end_round
+execute if score MG_AZR0_Timer rng3 matches 10 if score MG_AZR0_Timer rng2 matches 1..29 run kill @e[type=marker,tag=mg_azr0_MobPortals]
+execute if score MG_AZR0_Timer rng3 matches 12 if score MG_AZR0_Timer rng2 matches 30..69 run kill @e[type=marker,tag=mg_azr0_MobPortals]
+execute if score MG_AZR0_Timer rng3 matches 15 if score MG_AZR0_Timer rng2 matches 70..99 run kill @e[type=marker,tag=mg_azr0_MobPortals]
 execute if score MG_AZR0_Timer rng3 matches 12 if score MG_AZR0_Timer rng2 matches 100.. run kill @e[type=marker,tag=mg_azr0_MobPortals]
 execute if score MG_AZR0_Timer rng3 matches 1..20 run bossbar set mg:azr0_bar name [{"text": "下一波敌人即将到来...","color":"yellow","bold": true}]
 execute if score MG_AZR0_Timer rng3 matches 1..20 run bossbar set mg:azr0_bar color yellow
@@ -23,7 +24,7 @@ execute if score MG_AZR0_Timer rng3 matches 1..20 store result bossbar mg:azr0_b
 #1左 2右 3前 4后 5左右 6左前 7右前 8前后 9左右前 10左右后 11四方
 execute if score MG_AZR0_Timer rng3 matches 0 run function skyblock:mg/azr0/event/general_start_round_announce
 
-execute unless entity @a[tag=MG_AZR0PT] run function skyblock:mg/azr0/end
+execute unless entity @a[tag=MG_AZR0PT] if entity @a[gamemode=!spectator,distance=0..200] run function skyblock:mg/azr0/end
 
 
 function skyblock:mg/azr0/system/mob/skill

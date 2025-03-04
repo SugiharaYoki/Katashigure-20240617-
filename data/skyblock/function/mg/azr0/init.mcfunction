@@ -35,6 +35,7 @@ team modify MGAZR0 seeFriendlyInvisibles true
 #6：corex1
 #7：僵尸生成计数器 - 影响怪物生成难度
 #9：全局计时器
+#10：外部计时器
 scoreboard objectives add Azr_Shop trigger
 scoreboard objectives add Azr_emerald dummy
 scoreboard objectives add Azr_diamond dummy
@@ -43,13 +44,20 @@ scoreboard objectives add Azr_bread_recharge_level dummy
 scoreboard objectives add Azr_usebread minecraft.used:minecraft.bread
 scoreboard objectives add Azr_isDead deathCount
 
+scoreboard objectives add Azr0_arrow dummy
+scoreboard objectives add Azr0_kills totalKillCount
+scoreboard objectives add Azr0_kills_PERM dummy
+scoreboard objectives add Azr0_shoot1 minecraft.used:minecraft.bow
+scoreboard objectives add Azr0_shoot2 minecraft.used:minecraft.crossbow
 scoreboard objectives add Azr0_UPG_sword_damage dummy
 scoreboard objectives add Azr0_UPG_sword_knockback dummy
 scoreboard objectives add Azr0_UPG_sword_speed dummy
 scoreboard objectives add Azr0_UPG_sword_sweeping dummy
 scoreboard objectives add Azr0_UPG_axe_damage dummy
 scoreboard objectives add Azr0_UPG_axe_recharge dummy
+scoreboard objectives add Azr0_UPG_axe_range dummy
 scoreboard objectives add Azr0_axe_recharge dummy
+scoreboard objectives add Azr0_axe_range dummy
 scoreboard objectives add Azr0_UPG_bow dummy
 scoreboard objectives add Azr0_UPG_crossbow dummy
 scoreboard objectives add Azr0_UPG_bow_punch dummy
@@ -65,26 +73,40 @@ scoreboard objectives add Azr0_UPG_star dummy
 scoreboard objectives add Azr0_UPG_armor dummy
 scoreboard objectives add Azr0_USED_star dummy
 scoreboard objectives add Azr0_dealt_damage custom:damage_dealt
-
-execute as @a[distance=0..80,gamemode=!spectator] at @s run function skyblock:pvp/skywar/system/removeallgaming
-
-tag @a[distance=0..80,gamemode=!spectator] add MG_AZR0PT
-execute as @a[tag=MG_AZR0PT] at @s run function skyblock:mg/azr0/system/player/init
-execute at @n[tag=mg_azr0,type=marker] positioned ~ ~1 ~ run tp @a[tag=MG_AZR0PT] ~ ~ ~
-execute at @n[tag=mg_azr0,type=marker] positioned ~ ~1 ~ run spawnpoint @a[tag=MG_AZR0PT] ~ ~ ~
-
-execute at @n[tag=mg_azr0,type=marker] run kill @e[type=item,distance=..120]
+scoreboard objectives add Azr0_hurt custom:damage_taken
 
 
 
-#启动core
-setblock 125078 0 -242 minecraft:redstone_block
+scoreboard objectives add Azr0_SkillPoint dummy
+scoreboard objectives add Azr0_SkillEquip_1 dummy
+scoreboard objectives add Azr0_SkillEquip_2 dummy
+scoreboard objectives add Azr0_SkillEquip_3 dummy
+scoreboard objectives add Azr0_SkillEquip_1rng dummy
+scoreboard objectives add Azr0_SkillEquip_2rng dummy
+scoreboard objectives add Azr0_SkillEquip_3rng dummy
 
-
-
-
-
-
+scoreboard objectives add Azr0_SKILL_1 dummy
+scoreboard objectives add Azr0_SKILL_2 dummy
+scoreboard objectives add Azr0_SKILL_3 dummy
+scoreboard objectives add Azr0_SKILL_4 dummy
+scoreboard objectives add Azr0_SKILL_5 dummy
+scoreboard objectives add Azr0_SKILL_6 dummy
+scoreboard objectives add Azr0_SKILL_6_timer dummy
+scoreboard objectives add Azr0_SKILL_7 dummy
+scoreboard objectives add Azr0_SKILL_7_timer dummy
+scoreboard objectives add Azr0_SKILL_8 dummy
+scoreboard objectives add Azr0_SKILL_9 dummy
+scoreboard objectives add Azr0_SKILL_10 dummy
+scoreboard objectives add Azr0_SKILL_11 dummy
+scoreboard objectives add Azr0_SKILL_12 dummy
+scoreboard objectives add Azr0_SKILL_13 dummy
+scoreboard objectives add Azr0_SKILL_14 dummy
+scoreboard objectives add Azr0_SKILL_15 dummy
+scoreboard objectives add Azr0_SKILL_16 dummy
+scoreboard objectives add Azr0_SKILL_17 dummy
+scoreboard objectives add Azr0_SKILL_18 dummy
+scoreboard objectives add Azr0_SKILL_19 dummy
+scoreboard objectives add Azr0_SKILL_20 dummy
 
 
 
@@ -109,6 +131,23 @@ scoreboard objectives add AZR_chainKillUpg_attackheal dummy
 scoreboard objectives add AZR_chainKillUpg_defensecharge dummy
 scoreboard objectives add AZR_chainKillUpg_antichargedecrease dummy
 scoreboard objectives add AZR_chainKillUpg_attackspeed dummy
+
+execute as @a[distance=0..80,gamemode=!spectator] at @s run function skyblock:pvp/skywar/system/removeallgaming
+
+tag @a[distance=0..80,gamemode=!spectator] add MG_AZR0PT
+execute as @a[tag=MG_AZR0PT] at @s run function skyblock:mg/azr0/system/player/init
+execute at @n[tag=mg_azr0,type=marker] positioned ~ ~1 ~ run tp @a[tag=MG_AZR0PT] ~ ~ ~
+execute at @n[tag=mg_azr0,type=marker] positioned ~ ~1 ~ run spawnpoint @a[tag=MG_AZR0PT] ~ ~ ~
+
+execute at @n[tag=mg_azr0,type=marker] run kill @e[type=item,distance=..120]
+
+
+#启动core
+execute at @n[tag=mg_azr0,type=marker] positioned ~ ~-3 ~-1 run setblock 125078 0 -242 minecraft:redstone_block
+
+tag @a remove MG_AZR0PT_dead
+
+
 
 
 

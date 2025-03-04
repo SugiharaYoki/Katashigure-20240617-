@@ -12,7 +12,7 @@ execute if score MG_AZR0_Timer rng9 matches 40 run bossbar set mg:azr0_bar name 
 execute if score MG_AZR0_Timer rng9 matches 60 run bossbar set mg:azr0_bar name "希望你能坚持得比他们更久……"
 
 
-execute if score MG_AZR0_Timer rng9 matches 39 run scoreboard players set MG_AZR0_Timer rng3 30
+execute if score MG_AZR0_Timer rng9 matches 39 run scoreboard players set MG_AZR0_Timer rng3 20
 execute if score MG_AZR0_Timer rng9 matches 39 at @n[tag=mg_azr0,type=marker] positioned ~ ~2 ~-19 run summon marker ~ ~ ~ {Tags:["mg_azr0_MobPortals","mg_azr0_MobPortals_vertical"]}
 
 

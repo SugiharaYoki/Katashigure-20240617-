@@ -23,6 +23,36 @@ tellraw @a[tag=!Gaming] [{"text": "『亚兹列尔的中庭花园·零』","colo
 
 
 
+scoreboard objectives remove Azr0_SkillPoint
+scoreboard objectives remove Azr0_SkillEquip_1
+scoreboard objectives remove Azr0_SkillEquip_2
+scoreboard objectives remove Azr0_SkillEquip_3
+scoreboard objectives remove Azr0_SkillEquip_1rng
+scoreboard objectives remove Azr0_SkillEquip_2rng
+scoreboard objectives remove Azr0_SkillEquip_3rng
+
+scoreboard objectives remove Azr0_SKILL_1
+scoreboard objectives remove Azr0_SKILL_2
+scoreboard objectives remove Azr0_SKILL_3
+scoreboard objectives remove Azr0_SKILL_4
+scoreboard objectives remove Azr0_SKILL_5
+scoreboard objectives remove Azr0_SKILL_6
+scoreboard objectives remove Azr0_SKILL_6_timer
+scoreboard objectives remove Azr0_SKILL_7
+scoreboard objectives remove Azr0_SKILL_7_timer
+scoreboard objectives remove Azr0_SKILL_8
+scoreboard objectives remove Azr0_SKILL_9
+scoreboard objectives remove Azr0_SKILL_10
+scoreboard objectives remove Azr0_SKILL_11
+scoreboard objectives remove Azr0_SKILL_12
+scoreboard objectives remove Azr0_SKILL_13
+scoreboard objectives remove Azr0_SKILL_14
+scoreboard objectives remove Azr0_SKILL_15
+scoreboard objectives remove Azr0_SKILL_16
+scoreboard objectives remove Azr0_SKILL_17
+scoreboard objectives remove Azr0_SKILL_18
+scoreboard objectives remove Azr0_SKILL_19
+scoreboard objectives remove Azr0_SKILL_20
 
 
 
@@ -33,12 +63,15 @@ team remove MGAZR0
 
 
 
+scoreboard objectives remove Azr0_arrow
+
 scoreboard objectives remove Azr0_UPG_sword_damage
 scoreboard objectives remove Azr0_UPG_sword_knockback
 scoreboard objectives remove Azr0_UPG_sword_speed
 scoreboard objectives remove Azr0_UPG_sword_sweeping
 scoreboard objectives remove Azr0_UPG_axe_damage
 scoreboard objectives remove Azr0_UPG_axe_recharge
+scoreboard objectives remove Azr0_UPG_axe_range
 scoreboard objectives remove Azr0_axe_recharge
 scoreboard objectives remove Azr0_UPG_bread_storage
 scoreboard objectives remove Azr0_UPG_bread_recharge
@@ -62,8 +95,8 @@ setblock 125078 0 -242 minecraft:air
 kill @e[tag=mg_azr0_MobPortals,type=marker]
 kill @e[tag=MG_AZR0MOB]
 execute at @n[tag=mg_azr0,type=marker] run kill @e[type=item,distance=..120]
-execute at @n[tag=mg_azr0,type=marker] run gamemode adventure @a[distance=0..200,gamemode=spectator,tag=!ServerManager]
-execute at @n[tag=mg_azr0,type=marker] run gamemode creative @a[distance=0..200,gamemode=spectator,tag=ServerManager]
+execute at @n[tag=mg_azr0,type=marker] run gamemode adventure @a[distance=0..200,gamemode=spectator,tag=!ServerManager,tag=MG_AZR0PT_dead]
+execute at @n[tag=mg_azr0,type=marker] run gamemode creative @a[distance=0..200,gamemode=spectator,tag=ServerManager,tag=MG_AZR0PT_dead]
 execute as @a[tag=MG_AZR0PT] at @s run function skyblock:mg/azr0/system/player/death
 
 clear @a[tag=MG_AZR0PT]
@@ -74,3 +107,4 @@ kill @n[tag=mg_azr0,type=marker]
 
 forceload remove 125078 -241 125078 -241
 
+tag @a remove MG_AZR0PT_dead

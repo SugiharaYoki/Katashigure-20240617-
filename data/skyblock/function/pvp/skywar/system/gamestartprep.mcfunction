@@ -50,7 +50,7 @@ execute if score skywar_start rng1 matches 2 if score sc Map_Theme matches 4 run
 execute if score skywar_start rng1 matches 2 if score sc Map_Theme matches 4 run forceload add 50600 50600 50800 50800
 execute if score skywar_start rng1 matches 2 as @e[tag=!NoSkyWar,tag=!Gaming] run kill @e[type=wolf,distance=0..10,tag=!Wolfer]
 execute if score skywar_start rng1 matches 2 run kill @e[x=50000,y=50,z=50000,distance=..1500,type=!player]
-execute if score skywar_start rng1 matches 2 run function skyblock:pvp/skywar/system/init/map/common_partdeletemap_1
+#execute if score skywar_start rng1 matches 2 run function skyblock:pvp/skywar/system/init/map/common_partdeletemap_1
 execute if score skywar_start rng1 matches 3 if entity @n[tag=!MapLoaAlr,tag=sc] if score sc Map_Code matches 14 run forceload add -9838 -10164 -9709 -10035
 execute if score skywar_start rng1 matches 3 if entity @n[tag=!MapLoaAlr,tag=sc] if score sc Map_Code matches 2 run function skyblock:pvp/skywar/system/init/map/map002_part1
 execute if score skywar_start rng1 matches 3 if entity @n[tag=!MapLoaAlr,tag=sc] if score sc Map_Code matches 3 run function skyblock:pvp/skywar/system/init/map/map003_part1
