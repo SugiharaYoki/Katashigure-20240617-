@@ -3,5 +3,3 @@ $item replace entity @s[scores={Azr0_UPG_crossbow=1}] hotbar.2 with crossbow[cus
 $item replace entity @s[scores={Azr0_UPG_crossbow=2}] hotbar.2 with crossbow[custom_data={"azr0weapon_bow":true},custom_name='{"text":"弩++","italic":false,"color":"red"}',unbreakable={},enchantments={"power":0,"multishot":$(multishot),"quick_charge":$(load)}]
 $item replace entity @s[scores={Azr0_UPG_crossbow=3}] hotbar.2 with crossbow[custom_data={"azr0weapon_bow":true},custom_name='{"text":"十字弩","italic":false,"color":"red"}',unbreakable={},enchantments={"power":0,"multishot":$(multishot),"quick_charge":$(load)}]
 $item replace entity @s[scores={Azr0_UPG_crossbow=4}] hotbar.2 with crossbow[custom_data={"azr0weapon_bow":true},custom_name='{"text":"十字弩+","italic":false,"color":"red"}',unbreakable={},enchantments={"power":0,"multishot":$(multishot),"quick_charge":$(load)}]
-
-give @s crossbow[enchantments={"quick_charge":0}]
