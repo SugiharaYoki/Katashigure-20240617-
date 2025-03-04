@@ -32,6 +32,7 @@ scoreboard players set @s Azr0_UPG_bow_pierce 0
 scoreboard players set @s Azr0_UPG_crossbow_multishot 0
 scoreboard players set @s Azr0_UPG_crossbow_load 0
 scoreboard players set @s Azr0_axe_recharge 0
+scoreboard players set @s Azr0_axe_range 0
 scoreboard players set @s Azr0_UPG_bread_storage 0
 scoreboard players set @s Azr0_UPG_bread_recharge 0
 scoreboard players set @s Azr0_UPG_bread_quality 0

@@ -16,7 +16,6 @@ item replace entity @s[scores={Azr0_UPG_sword_damage=2..,Azr0_UPG_sword_knockbac
 
 item replace entity @s[scores={Azr0_UPG_sword_damage=..1}] inventory.9 with barrier
 item replace entity @s[scores={Azr0_UPG_sword_damage=..1}] inventory.18 with barrier
-item replace entity @s inventory.19 with barrier
 
 
 execute unless entity @s[scores={Azr0_UPG_sword_knockback=0,Azr0_UPG_sword_sweeping=0}] run item replace entity @s[scores={Azr0_UPG_sword_speed=0}] inventory.18 with feather[custom_data={"azr0shop":true},custom_name='{"text":"升级：剑 斩速","italic":false,"color":"green"}',lore=['{"text":"增加0.1攻击速度","color":"white","italic":true}','{"text":"消耗：30绿宝石","color":"red","italic":true}']]
@@ -78,6 +77,14 @@ item replace entity @s[scores={Azr0_UPG_axe_recharge=8}] inventory.10 with iron_
 item replace entity @s[scores={Azr0_UPG_axe_recharge=9}] inventory.10 with iron_ingot[custom_data={"azr0shop":true},custom_name='{"text":"升级：斧 充能速度","italic":false,"color":"green"}',lore=['{"text":"增加10%充能速度","color":"white","italic":true}','{"text":"消耗：600绿宝石","color":"red","italic":true}']]
 item replace entity @s[scores={Azr0_UPG_axe_recharge=10}] inventory.10 with end_crystal[custom_data={"azr0shop":true},custom_name='{"text":"升级：斧 充能速度 已升至最高级","italic":false,"color":"gold"}']
 
+
+item replace entity @s[scores={Azr0_UPG_axe_damage=..3}] inventory.19 with barrier
+execute unless entity @s[scores={Azr0_UPG_axe_damage=..3}] run item replace entity @s[scores={Azr0_UPG_axe_range=0}] inventory.19 with heavy_core[custom_data={"azr0shop":true},custom_name='{"text":"升级：斧 范围攻击","italic":false,"color":"green"}',lore=['{"text":"距离自己2.5格以内的目标将受到6点伤害 最大捕捉：6","color":"white","italic":true}','{"text":"消耗：100绿宝石","color":"red","italic":true}']]
+item replace entity @s[scores={Azr0_UPG_axe_range=1}] inventory.19 with heavy_core[custom_data={"azr0shop":true},custom_name='{"text":"升级：斧 范围攻击","italic":false,"color":"green"}',lore=['{"text":"增加2点伤害","color":"white","italic":true}','{"text":"消耗：200绿宝石","color":"red","italic":true}']]
+item replace entity @s[scores={Azr0_UPG_axe_range=2}] inventory.19 with heavy_core[custom_data={"azr0shop":true},custom_name='{"text":"升级：斧 范围攻击","italic":false,"color":"green"}',lore=['{"text":"增加2点伤害 1最大捕捉","color":"white","italic":true}','{"text":"消耗：300绿宝石","color":"red","italic":true}']]
+item replace entity @s[scores={Azr0_UPG_axe_range=3}] inventory.19 with heavy_core[custom_data={"azr0shop":true},custom_name='{"text":"升级：斧 范围攻击","italic":false,"color":"green"}',lore=['{"text":"增加2点伤害 0.5距离","color":"white","italic":true}','{"text":"消耗：500绿宝石","color":"red","italic":true}']]
+item replace entity @s[scores={Azr0_UPG_axe_range=4}] inventory.19 with heavy_core[custom_data={"azr0shop":true},custom_name='{"text":"升级：斧 范围攻击","italic":false,"color":"green"}',lore=['{"text":"增加2点伤害 1最大捕捉","color":"white","italic":true}','{"text":"消耗：800绿宝石","color":"red","italic":true}']]
+item replace entity @s[scores={Azr0_UPG_axe_range=5}] inventory.19 with end_crystal[custom_data={"azr0shop":true},custom_name='{"text":"升级：斧 范围攻击 已升至最高级","italic":false,"color":"gold"}']
 
 item replace entity @s[scores={Azr0_UPG_bow=-1,Azr0_UPG_crossbow=-1,Azr0_UPG_sword_damage=..2}] inventory.2 with barrier
 item replace entity @s[scores={Azr0_UPG_bow=-1,Azr0_UPG_crossbow=-1,Azr0_UPG_sword_damage=..2}] inventory.11 with barrier

@@ -69,6 +69,7 @@ scoreboard objectives remove Azr0_UPG_sword_speed
 scoreboard objectives remove Azr0_UPG_sword_sweeping
 scoreboard objectives remove Azr0_UPG_axe_damage
 scoreboard objectives remove Azr0_UPG_axe_recharge
+scoreboard objectives remove Azr0_UPG_axe_range
 scoreboard objectives remove Azr0_axe_recharge
 scoreboard objectives remove Azr0_UPG_bread_storage
 scoreboard objectives remove Azr0_UPG_bread_recharge
