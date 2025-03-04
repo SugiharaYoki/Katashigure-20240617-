@@ -1,7 +1,7 @@
 execute if score MG_AZR0_Timer rng7 matches 20.. store result score MG_AZR0_rng rng1 run random value 1..20
 execute if score MG_AZR0_Timer rng7 matches 160.. store result score MG_AZR0_rng rng1 run random value 3..30
-execute if score MG_AZR0_Timer rng7 matches 260.. store result score MG_AZR0_rng rng1 run random value 10..38
-execute if score MG_AZR0_Timer rng7 matches 460.. store result score MG_AZR0_rng rng1 run random value 15..40
+execute if score MG_AZR0_Timer rng7 matches 360.. store result score MG_AZR0_rng rng1 run random value 10..38
+execute if score MG_AZR0_Timer rng7 matches 660.. store result score MG_AZR0_rng rng1 run random value 15..40
 
 
 execute if score MG_AZR0_rng rng1 matches 1..19 run function skyblock:mg/azr0/particle/m_mob_tier1

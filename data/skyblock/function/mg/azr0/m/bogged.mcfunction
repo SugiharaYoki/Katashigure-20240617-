@@ -1,8 +1,8 @@
 execute if score MG_AZR0_Timer rng7 matches 70.. store result score MG_AZR0_rng rng1 run random value 1..10
-execute if score MG_AZR0_Timer rng7 matches 110.. store result score MG_AZR0_rng rng1 run random value 1..15
-execute if score MG_AZR0_Timer rng7 matches 190.. store result score MG_AZR0_rng rng1 run random value 5..20
-execute if score MG_AZR0_Timer rng7 matches 250.. store result score MG_AZR0_rng rng1 run random value 5..24
-execute if score MG_AZR0_Timer rng7 matches 330.. store result score MG_AZR0_rng rng1 run random value 8..27
+execute if score MG_AZR0_Timer rng7 matches 150.. store result score MG_AZR0_rng rng1 run random value 1..15
+execute if score MG_AZR0_Timer rng7 matches 300.. store result score MG_AZR0_rng rng1 run random value 5..20
+execute if score MG_AZR0_Timer rng7 matches 420.. store result score MG_AZR0_rng rng1 run random value 5..24
+execute if score MG_AZR0_Timer rng7 matches 520.. store result score MG_AZR0_rng rng1 run random value 8..27
 
 execute if score MG_AZR0_rng rng1 matches 1..10 run function skyblock:mg/azr0/particle/m_mob_tier1
 execute if score MG_AZR0_rng rng1 matches 1..10 run summon bogged ~ ~ ~ {CustomName:'[{"text":"沼泽骷髅"}]',DeathLootTable:"skyblock:mg/azr0/tier1",Tags:["MG_AZR0MOB"],attributes:[{id:"generic.movement_speed",base:0.19},{id:"generic.max_health",base:1},{id:"generic.follow_range",base:186}],HandItems:[{id:bow,count:1},{}],HandDropChances:[0f,0f],ArmorItems:[{},{},{},{}],ArmorDropChances:[0f,0f,0f,0f],Health:1,PersistenceRequired:1b}
