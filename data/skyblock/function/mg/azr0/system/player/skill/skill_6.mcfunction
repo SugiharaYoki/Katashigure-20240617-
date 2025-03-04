@@ -1,0 +1,24 @@
+
+execute if entity @e[distance=0..8,tag=MG_AZR0MOB] run scoreboard players add @s Azr0_SKILL_6_timer 1
+execute if entity @s[scores={Azr0_SKILL_6=1,Azr0_SKILL_6_timer=18}] run tag @s add Azr0_SKILL_6a
+execute if entity @s[scores={Azr0_SKILL_6=2,Azr0_SKILL_6_timer=16}] run tag @s add Azr0_SKILL_6a
+execute if entity @s[scores={Azr0_SKILL_6=3,Azr0_SKILL_6_timer=14}] run tag @s add Azr0_SKILL_6a
+
+
+execute if entity @s[tag=Azr0_SKILL_6a] run playsound entity.blaze.shoot player @a ~ ~ ~ 0.9 0.9
+execute if entity @s[tag=Azr0_SKILL_6a] run summon marker ~ ~1 ~ {Tags:["Azr0_SKILL_6"]} 
+execute if entity @s[tag=Azr0_SKILL_6a] as @n[tag=Azr0_SKILL_6] at @s run function skyblock:mg/azr0/system/player/skill/skill_6_particle
+execute if entity @s[tag=Azr0_SKILL_6a,scores={Azr0_SKILL_6=1}] at @s as @e[distance=2..3,tag=MG_AZR0MOB] run damage @s 3 fire by @p[tag=Azr0_SKILL_6a]
+execute if entity @s[tag=Azr0_SKILL_6a,scores={Azr0_SKILL_6=1}] at @s as @e[distance=2..3,tag=MG_AZR0MOB] run data modify entity @s Fire set value 40s
+execute if entity @s[tag=Azr0_SKILL_6a,scores={Azr0_SKILL_6=2}] at @s as @e[distance=1.8..3,tag=MG_AZR0MOB] run damage @s 4 fire by @p[tag=Azr0_SKILL_6a]
+execute if entity @s[tag=Azr0_SKILL_6a,scores={Azr0_SKILL_6=2}] at @s as @e[distance=1.8..3,tag=MG_AZR0MOB] run data modify entity @s Fire set value 45s
+execute if entity @s[tag=Azr0_SKILL_6a,scores={Azr0_SKILL_6=3}] at @s as @e[distance=1.6..3,tag=MG_AZR0MOB] run damage @s 5 fire by @p[tag=Azr0_SKILL_6a]
+execute if entity @s[tag=Azr0_SKILL_6a,scores={Azr0_SKILL_6=3}] at @s as @e[distance=1.6..3,tag=MG_AZR0MOB] run data modify entity @s Fire set value 50s
+
+
+execute if entity @s[scores={Azr0_SKILL_6=1,Azr0_SKILL_6_timer=20..}] run scoreboard players set @s Azr0_SKILL_6_timer 0
+execute if entity @s[scores={Azr0_SKILL_6=2,Azr0_SKILL_6_timer=18..}] run scoreboard players set @s Azr0_SKILL_6_timer 0
+execute if entity @s[scores={Azr0_SKILL_6=3,Azr0_SKILL_6_timer=16..}] run scoreboard players set @s Azr0_SKILL_6_timer 0
+
+tag @s remove Azr0_SKILL_6a
+tag @s remove Azr0_SKILL_6b

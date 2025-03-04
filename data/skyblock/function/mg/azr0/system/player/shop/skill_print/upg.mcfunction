@@ -12,6 +12,7 @@ execute if items entity @s player.cursor axolotl_spawn_egg if entity @s[tag=AZR0
 execute if items entity @s player.cursor bogged_spawn_egg run scoreboard players add @s Azr0_SKILL_3 1
 execute if items entity @s player.cursor iron_golem_spawn_egg run scoreboard players add @s Azr0_SKILL_4 1
 execute if items entity @s player.cursor guardian_spawn_egg run scoreboard players add @s Azr0_SKILL_5 1
+execute if items entity @s player.cursor blaze_spawn_egg run scoreboard players add @s Azr0_SKILL_6 1
 tag @s remove AZR0SHOP_SUCCESS
 scoreboard players set @s Azr0_SkillEquip_1rng 0
 scoreboard players set @s Azr0_SkillEquip_2rng 0

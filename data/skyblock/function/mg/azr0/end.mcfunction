@@ -37,6 +37,7 @@ scoreboard objectives remove Azr0_SKILL_3
 scoreboard objectives remove Azr0_SKILL_4
 scoreboard objectives remove Azr0_SKILL_5
 scoreboard objectives remove Azr0_SKILL_6
+scoreboard objectives remove Azr0_SKILL_6_timer
 scoreboard objectives remove Azr0_SKILL_7
 scoreboard objectives remove Azr0_SKILL_8
 scoreboard objectives remove Azr0_SKILL_9

@@ -90,6 +90,7 @@ scoreboard objectives add Azr0_SKILL_3 dummy
 scoreboard objectives add Azr0_SKILL_4 dummy
 scoreboard objectives add Azr0_SKILL_5 dummy
 scoreboard objectives add Azr0_SKILL_6 dummy
+scoreboard objectives add Azr0_SKILL_6_timer dummy
 scoreboard objectives add Azr0_SKILL_7 dummy
 scoreboard objectives add Azr0_SKILL_8 dummy
 scoreboard objectives add Azr0_SKILL_9 dummy
