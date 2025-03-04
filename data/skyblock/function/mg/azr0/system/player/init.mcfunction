@@ -83,6 +83,7 @@ execute as @s unless entity @s[scores={AZR_chainKillUpg_antichargedecrease=-999.
 execute as @s unless entity @s[scores={AZR_chainKillUpg_attackspeed=-999..}] run scoreboard players set @s AZR_chainKillUpg_attackspeed 0
 
 team join MGAZR0
+clear @s
 
 execute if entity @s[scores={Azr0_UPG_OTSD_armor_helmet=1}] run item replace entity @s armor.head with leather_helmet[custom_data={azr0armor_head:true},attribute_modifiers=[{type:"generic.armor",id:"mg_azr0_armor:head_0_1",amount:2,operation:"add_value"}],unbreakable={},enchantments={binding_curse:1b,vanishing_curse:1b},enchantment_glint_override=false]
 execute if entity @s[scores={Azr0_UPG_OTSD_armor_helmet=2}] run item replace entity @s armor.head with leather_helmet[custom_data={azr0armor_head:true},attribute_modifiers=[{type:"generic.armor",id:"mg_azr0_armor:head_0_1",amount:4,operation:"add_value"}],unbreakable={},enchantments={binding_curse:1b,vanishing_curse:1b},enchantment_glint_override=false]
@@ -90,5 +91,4 @@ execute if entity @s[scores={Azr0_UPG_OTSD_armor_helmet=3}] run item replace ent
 execute if entity @s[scores={Azr0_UPG_OTSD_armor_helmet=4}] run item replace entity @s armor.head with iron_helmet[custom_data={azr0armor_head:true},attribute_modifiers=[{type:"generic.armor",id:"mg_azr0_armor:head_0_1",amount:8,operation:"add_value"}],unbreakable={},enchantments={binding_curse:1b,vanishing_curse:1b},enchantment_glint_override=false]
 
 tag @s add Gaming
-clear @s
 effect clear @s
