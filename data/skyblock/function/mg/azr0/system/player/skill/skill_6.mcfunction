@@ -16,9 +16,9 @@ execute if entity @s[tag=Azr0_SKILL_6a,scores={Azr0_SKILL_6=3}] at @s as @e[dist
 execute if entity @s[tag=Azr0_SKILL_6a,scores={Azr0_SKILL_6=3}] at @s as @e[distance=1.6..3,tag=MG_AZR0MOB] run data modify entity @s Fire set value 50s
 
 
-execute if entity @s[scores={Azr0_SKILL_6=1,Azr0_SKILL_6_timer=20..}] run scoreboard players set @s Azr0_SKILL_6_timer 0
-execute if entity @s[scores={Azr0_SKILL_6=2,Azr0_SKILL_6_timer=18..}] run scoreboard players set @s Azr0_SKILL_6_timer 0
-execute if entity @s[scores={Azr0_SKILL_6=3,Azr0_SKILL_6_timer=16..}] run scoreboard players set @s Azr0_SKILL_6_timer 0
+execute if entity @s[scores={Azr0_SKILL_6=1,Azr0_SKILL_6_timer=40..}] run scoreboard players set @s Azr0_SKILL_6_timer 0
+execute if entity @s[scores={Azr0_SKILL_6=2,Azr0_SKILL_6_timer=36..}] run scoreboard players set @s Azr0_SKILL_6_timer 0
+execute if entity @s[scores={Azr0_SKILL_6=3,Azr0_SKILL_6_timer=32..}] run scoreboard players set @s Azr0_SKILL_6_timer 0
 
 tag @s remove Azr0_SKILL_6a
 tag @s remove Azr0_SKILL_6b
