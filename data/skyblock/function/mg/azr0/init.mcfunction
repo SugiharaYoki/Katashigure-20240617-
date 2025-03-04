@@ -72,21 +72,6 @@ scoreboard objectives add Azr0_UPG_armor dummy
 scoreboard objectives add Azr0_USED_star dummy
 scoreboard objectives add Azr0_dealt_damage custom:damage_dealt
 
-execute as @a[distance=0..80,gamemode=!spectator] at @s run function skyblock:pvp/skywar/system/removeallgaming
-
-tag @a[distance=0..80,gamemode=!spectator] add MG_AZR0PT
-execute as @a[tag=MG_AZR0PT] at @s run function skyblock:mg/azr0/system/player/init
-execute at @n[tag=mg_azr0,type=marker] positioned ~ ~1 ~ run tp @a[tag=MG_AZR0PT] ~ ~ ~
-execute at @n[tag=mg_azr0,type=marker] positioned ~ ~1 ~ run spawnpoint @a[tag=MG_AZR0PT] ~ ~ ~
-
-execute at @n[tag=mg_azr0,type=marker] run kill @e[type=item,distance=..120]
-
-
-#启动core
-execute at @n[tag=mg_azr0,type=marker] positioned ~ ~-3 ~-1 run setblock 125078 0 -242 minecraft:redstone_block
-
-
-
 
 
 scoreboard objectives add Azr0_SkillPoint dummy
@@ -141,6 +126,23 @@ scoreboard objectives add AZR_chainKillUpg_attackheal dummy
 scoreboard objectives add AZR_chainKillUpg_defensecharge dummy
 scoreboard objectives add AZR_chainKillUpg_antichargedecrease dummy
 scoreboard objectives add AZR_chainKillUpg_attackspeed dummy
+
+execute as @a[distance=0..80,gamemode=!spectator] at @s run function skyblock:pvp/skywar/system/removeallgaming
+
+tag @a[distance=0..80,gamemode=!spectator] add MG_AZR0PT
+execute as @a[tag=MG_AZR0PT] at @s run function skyblock:mg/azr0/system/player/init
+execute at @n[tag=mg_azr0,type=marker] positioned ~ ~1 ~ run tp @a[tag=MG_AZR0PT] ~ ~ ~
+execute at @n[tag=mg_azr0,type=marker] positioned ~ ~1 ~ run spawnpoint @a[tag=MG_AZR0PT] ~ ~ ~
+
+execute at @n[tag=mg_azr0,type=marker] run kill @e[type=item,distance=..120]
+
+
+#启动core
+execute at @n[tag=mg_azr0,type=marker] positioned ~ ~-3 ~-1 run setblock 125078 0 -242 minecraft:redstone_block
+
+
+
+
 
 
 
