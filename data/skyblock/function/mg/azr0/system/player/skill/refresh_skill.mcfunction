@@ -1,6 +1,6 @@
-execute store result score @s Azr0_SkillEquip_1rng run random value 1..20
-execute store result score @s Azr0_SkillEquip_2rng run random value 1..20
-execute store result score @s Azr0_SkillEquip_3rng run random value 1..20
+execute store result score @s Azr0_SkillEquip_1rng run random value 1..10
+execute store result score @s Azr0_SkillEquip_2rng run random value 1..10
+execute store result score @s Azr0_SkillEquip_3rng run random value 1..10
 
 tag @s remove mgazr0_SkillPrintLoop
 
