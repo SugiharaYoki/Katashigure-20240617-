@@ -5,6 +5,7 @@ execute if items entity @s player.cursor brush[custom_data={"azr0shop":true}] ru
 execute if items entity @s player.cursor feather[custom_data={"azr0shop":true}] run function skyblock:mg/azr0/system/player/shop/upg/sword_speed
 
 execute if items entity @s player.cursor iron_axe[custom_data={"azr0shop":true}] run function skyblock:mg/azr0/system/player/shop/upg/axe_damage
+execute if items entity @s player.cursor iron_ingot[custom_data={"azr0shop":true}] run function skyblock:mg/azr0/system/player/shop/upg/axe_recharge
 
 execute if items entity @s player.cursor golden_apple[custom_data={"azr0shop":true}] run function skyblock:mg/azr0/system/player/shop/upg/hp
 execute if items entity @s player.cursor torchflower[custom_data={"azr0shop":true}] run function skyblock:mg/azr0/system/player/shop/upg/star
