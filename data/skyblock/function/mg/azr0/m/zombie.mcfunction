@@ -4,8 +4,8 @@ execute if score MG_AZR0_Timer rng7 matches 25.. store result score MG_AZR0_rng 
 execute if score MG_AZR0_Timer rng7 matches 36.. store result score MG_AZR0_rng rng1 run random value 4..30
 execute if score MG_AZR0_Timer rng7 matches 60.. store result score MG_AZR0_rng rng1 run random value 6..33
 execute if score MG_AZR0_Timer rng7 matches 90.. store result score MG_AZR0_rng rng1 run random value 7..36
-execute if score MG_AZR0_Timer rng7 matches 130.. store result score MG_AZR0_rng rng1 run random value 7..39
-execute if score MG_AZR0_Timer rng7 matches 160.. store result score MG_AZR0_rng rng1 run random value 7..42
+execute if score MG_AZR0_Timer rng7 matches 140.. store result score MG_AZR0_rng rng1 run random value 7..39
+execute if score MG_AZR0_Timer rng7 matches 180.. store result score MG_AZR0_rng rng1 run random value 7..42
 
 execute if score MG_AZR0_rng rng1 matches 1..10 run function skyblock:mg/azr0/particle/m_mob_tier1
 execute if score MG_AZR0_rng rng1 matches 1..10 run summon zombie ~ ~ ~ {CustomName:'[{"text":"僵尸"}]',DeathLootTable:"skyblock:mg/azr0/tier1",Tags:["MG_AZR0MOB"],attributes:[{id:"generic.attack_damage",base:1.0},{id:"generic.movement_speed",base:0.215},{id:"generic.max_health",base:6},{id:"generic.follow_range",base:186}],HandItems:[{},{}],HandDropChances:[0f,0f],ArmorItems:[{},{},{},{}],ArmorDropChances:[0f,0f,0f,0f],Health:6,PersistenceRequired:1b}
