@@ -36,6 +36,8 @@ scoreboard players set @s Azr_isDead 0
 scoreboard players operation @s Azr0_kills_PERM += @s Azr0_kills
 scoreboard players operation @s Azr0_kills /= 10 constant
 
+scoreboard players operation @s Perm_PersonSHD += @s Azr0_kills
+
 tellraw @s [{"text": "获得了","color": "light_purple","bold": false,"italic": true},{"score":{"name":"@s","objective":"Azr0_kills"},"color":"light_purple"},{"text": "影之石","color": "light_purple"}]
 
 scoreboard players set @s Azr0_kills 0
