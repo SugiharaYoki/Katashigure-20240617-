@@ -64,6 +64,7 @@ team remove MGAZR0
 
 
 scoreboard objectives remove Azr0_arrow
+scoreboard objectives remove Azr0_ifkill
 
 scoreboard objectives remove Azr0_UPG_sword_damage
 scoreboard objectives remove Azr0_UPG_sword_knockback

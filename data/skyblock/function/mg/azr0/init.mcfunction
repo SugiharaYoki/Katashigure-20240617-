@@ -45,7 +45,8 @@ scoreboard objectives add Azr_usebread minecraft.used:minecraft.bread
 scoreboard objectives add Azr_isDead deathCount
 
 scoreboard objectives add Azr0_arrow dummy
-scoreboard objectives add Azr0_kills totalKillCount
+scoreboard objectives add Azr0_ifkill minecraft.custom:minecraft.mob_kills
+scoreboard objectives add Azr0_kills minecraft.custom:minecraft.mob_kills
 scoreboard objectives add Azr0_kills_PERM dummy
 scoreboard objectives add Azr0_shoot1 minecraft.used:minecraft.bow
 scoreboard objectives add Azr0_shoot2 minecraft.used:minecraft.crossbow
