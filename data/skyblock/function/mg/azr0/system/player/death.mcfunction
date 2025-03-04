@@ -23,6 +23,9 @@ attribute @s generic.max_health modifier remove mg_azr0:upg_maxhp18
 attribute @s player.entity_interaction_range modifier remove mg_azr0:skill_attack_range3
 attribute @s player.entity_interaction_range modifier remove mg_azr0:skill_attack_range3
 attribute @s player.entity_interaction_range modifier remove mg_azr0:skill_attack_range3
+attribute @s entity.max_health modifier remove mg_azr0:skill_max_health1
+attribute @s entity.max_health modifier remove mg_azr0:skill_max_health2
+attribute @s entity.max_health modifier remove mg_azr0:skill_max_health3
 
 function skyblock:pvp/skywar/system/removeallgaming
 

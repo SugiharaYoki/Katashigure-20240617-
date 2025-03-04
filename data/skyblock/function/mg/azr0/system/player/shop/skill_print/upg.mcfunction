@@ -1,10 +1,14 @@
 tag @s add AZR0SHOP_SUCCESS
-$execute if entity @s[tag=AZR0SHOP_SUCCESS] run scoreboard players add @s Azr0_SKILL_$(skill) 1
 execute if entity @s[tag=AZR0SHOP_SUCCESS] run tellraw @s {"text": "赐福选择成功！","color": "green"}
 execute if entity @s[tag=AZR0SHOP_SUCCESS] run playsound entity.player.levelup player @s ~ ~ ~ 1 1
-$execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_SKILL_$(skill)=1}] run attribute @s player.entity_interaction_range modifier add mg_azr0:skill_attack_range1 0.3 add_value
-$execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_SKILL_$(skill)=2}] run attribute @s player.entity_interaction_range modifier add mg_azr0:skill_attack_range2 0.3 add_value
-$execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_SKILL_$(skill)=3}] run attribute @s player.entity_interaction_range modifier add mg_azr0:skill_attack_range3 0.3 add_value
+execute if items entity @s player.cursor phantom_spawn_egg run scoreboard players add @s Azr0_SKILL_1 1
+execute if items entity @s player.cursor phantom_spawn_egg if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_SKILL_1=1}] run attribute @s player.entity_interaction_range modifier add mg_azr0:skill_attack_range1 0.3 add_value
+execute if items entity @s player.cursor phantom_spawn_egg if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_SKILL_1=2}] run attribute @s player.entity_interaction_range modifier add mg_azr0:skill_attack_range2 0.3 add_value
+execute if items entity @s player.cursor phantom_spawn_egg if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_SKILL_1=3}] run attribute @s player.entity_interaction_range modifier add mg_azr0:skill_attack_range3 0.3 add_value
+execute if items entity @s player.cursor axolotl_spawn_egg run scoreboard players add @s Azr0_SKILL_2 1
+execute if items entity @s player.cursor axolotl_spawn_egg if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_SKILL_2=1}] run attribute @s entity.max_health modifier add mg_azr0:skill_max_health1 2 add_value
+execute if items entity @s player.cursor axolotl_spawn_egg if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_SKILL_2=2}] run attribute @s entity.max_health modifier add mg_azr0:skill_max_health2 2 add_value
+execute if items entity @s player.cursor axolotl_spawn_egg if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_SKILL_2=3}] run attribute @s entity.max_health modifier add mg_azr0:skill_max_health3 2 add_value
 tag @s remove AZR0SHOP_SUCCESS
 scoreboard players set @s Azr0_SkillEquip_1rng 0
 scoreboard players set @s Azr0_SkillEquip_2rng 0
