@@ -55,6 +55,7 @@ scoreboard objectives add Azr0_UPG_sword_speed dummy
 scoreboard objectives add Azr0_UPG_sword_sweeping dummy
 scoreboard objectives add Azr0_UPG_axe_damage dummy
 scoreboard objectives add Azr0_UPG_axe_recharge dummy
+scoreboard objectives add Azr0_UPG_axe_range dummy
 scoreboard objectives add Azr0_axe_recharge dummy
 scoreboard objectives add Azr0_axe_range dummy
 scoreboard objectives add Azr0_UPG_bow dummy
