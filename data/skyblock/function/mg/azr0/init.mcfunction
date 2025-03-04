@@ -145,7 +145,7 @@ execute at @n[tag=mg_azr0,type=marker] run kill @e[type=item,distance=..120]
 #启动core
 execute at @n[tag=mg_azr0,type=marker] positioned ~ ~-3 ~-1 run setblock 125078 0 -242 minecraft:redstone_block
 
-
+tag @a remove MG_AZR0PT_dead
 
 
 

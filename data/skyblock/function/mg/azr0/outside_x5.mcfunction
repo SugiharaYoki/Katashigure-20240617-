@@ -22,7 +22,7 @@ item replace entity @s[tag=!MG_AZR0PT,scores={Azr0_UPG_OTSD_armor_helmet=1}] inv
 item replace entity @s[tag=!MG_AZR0PT,scores={Azr0_UPG_OTSD_armor_helmet=2}] inventory.1 with iron_helmet[custom_data={"azr0outside":true},custom_name='{"text":"升级：安全第一","italic":false,"bold":false,"color":"green"}',lore=['{"text":"当前：lv 2","color":"gray","italic":true}','{"text":"开局立即获得一个头盔 防御力+4","color":"white","italic":true}','{"text":"下一级：防御力+2","color":"white","italic":false}','{"text":"消耗：800影之石","color":"red","italic":true}']]
 item replace entity @s[tag=!MG_AZR0PT,scores={Azr0_UPG_OTSD_armor_helmet=3}] inventory.1 with end_crystal[custom_data={"azr0outside":true},custom_name='{"text":"升级：安全第一 [已达版本上限]","italic":false,"bold":false,"color":"gray"}',lore=['{"text":"当前：lv 3","color":"gray","italic":true}','{"text":"开局立即获得一个头盔 防御力+6","color":"white","italic":true}','{"text":"下一级：防御力+2","color":"white","italic":false}','{"text":"消耗：1200影之石","color":"red","italic":true}']]
 
-
+tag @a[tag=MG_AZR0PT_dead,distance=0..250] remove MG_AZR0PT_dead
 
 
 execute if items entity @s[tag=!MG_AZR0PT] player.cursor *[custom_data={"azr0outside":true}] run function skyblock:mg/azr0/system/outside/index

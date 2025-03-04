@@ -34,6 +34,7 @@ effect clear @s
 tag @s remove MGAZR0_SkillPrintable
 
 tag @s remove MG_AZR0PT
+tag @s add MG_AZR0PT_dead
 
 clear @s
 tellraw @a[distance=..230] [{"selector":"@s","color":"white"},{"text":" 阵亡了！","color":"dark_red"}]

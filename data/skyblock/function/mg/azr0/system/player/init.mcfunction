@@ -74,6 +74,8 @@ scoreboard players set @s Azr0_SKILL_20 0
 
 tag @s remove MGAZR0_SkillPrintable
 
+tag @s remove MG_AZR0PT_dead
+
 execute as @s unless entity @s[scores={AZR_chainKillUpg_pts=-999..}] run scoreboard players set @s AZR_chainKillUpg_pts 0
 execute as @s unless entity @s[scores={AZR_chainKillUpg_chargespeed=-999..}] run scoreboard players set @s AZR_chainKillUpg_chargespeed 0
 execute as @s unless entity @s[scores={AZR_chainKillUpg_chargeboost=-999..}] run scoreboard players set @s AZR_chainKillUpg_chargeboost 0
