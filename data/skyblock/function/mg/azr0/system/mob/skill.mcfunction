@@ -15,6 +15,7 @@ execute if score MG_AZR5_rng rng1 matches 1 as @e[tag=MG_AZR0MOB,tag=MG_AZR0MOB_
 
 execute as @e[type=marker,tag=MG_AZR0_FIRE] at @s unless entity @n[tag=MG_AZR0MOB_fire_trail,distance=0..1.5] run scoreboard players add @s rng1 1
 execute as @e[type=marker,tag=MG_AZR0_FIRE,scores={rng1=1..5}] at @s run particle smoke ~ ~0.1 ~ 0 0.1 0 0.03 5
+execute as @e[type=marker,tag=MG_AZR0_FIRE,scores={rng1=6}] at @s if block ~ ~ ~ air run playsound item.firecharge.use block @a ~ ~ ~ 0.9 0.8
 execute as @e[type=marker,tag=MG_AZR0_FIRE,scores={rng1=6}] at @s if block ~ ~ ~ air run setblock ~ ~ ~ fire
 execute as @e[type=marker,tag=MG_AZR0_FIRE,scores={rng1=20}] at @s if block ~ ~ ~ fire run setblock ~ ~ ~ air
 execute as @e[type=marker,tag=MG_AZR0_FIRE,scores={rng1=20..}] at @s run kill @s
