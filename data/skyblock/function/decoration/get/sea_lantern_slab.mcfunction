@@ -1,0 +1,1 @@
+give @s allay_spawn_egg[minecraft:entity_data={id:"minecraft:marker",Tags:["sea_lantern_slab"]}]
