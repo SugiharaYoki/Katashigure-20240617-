@@ -2,6 +2,7 @@ execute if score MG_AZR0_Timer rng7 matches 20.. store result score MG_AZR0_rng 
 execute if score MG_AZR0_Timer rng7 matches 130.. store result score MG_AZR0_rng rng1 run random value 3..30
 execute if score MG_AZR0_Timer rng7 matches 300.. store result score MG_AZR0_rng rng1 run random value 10..35
 execute if score MG_AZR0_Timer rng7 matches 520.. store result score MG_AZR0_rng rng1 run random value 15..40
+execute if score MG_AZR0_Timer rng7 matches 720.. store result score MG_AZR0_rng rng1 run random value 15..42
 
 execute if score MG_AZR0_Timer rng7 matches 20.. run function skyblock:mg/azr0/particle/m_mob_human
 
@@ -20,3 +21,6 @@ execute if score MG_AZR0_rng rng1 matches 36..39 run summon pillager ~ ~ ~ {Cust
 execute if score MG_AZR0_rng rng1 matches 40 run function skyblock:mg/azr0/particle/m_mob_tier3
 execute if score MG_AZR0_rng rng1 matches 40 run summon pillager ~ ~ ~ {CustomName:'[{"text":"精锐神庭先锋军·弩"}]',DeathLootTable:"skyblock:mg/azr0/tier3",Tags:["MG_AZR0MOB"],attributes:[{id:"generic.movement_speed",base:0.31},{id:"generic.max_health",base:20},{id:"generic.follow_range",base:186},{id:"generic.armor",base:8}],HandItems:[{id:crossbow,count:1,components:{enchantments:{pierce:3b,quick_charge:3b,multishot:1b}}},{}],HandDropChances:[0f,0f],ArmorItems:[{},{},{},{}],ArmorDropChances:[0f,0f,0f,0f],Health:20,PersistenceRequired:1b}
 
+
+execute if score MG_AZR0_rng rng1 matches 41..42 run function skyblock:mg/azr0/particle/m_mob_tier3
+execute if score MG_AZR0_rng rng1 matches 41..42 run summon pillager ~ ~ ~ {CustomName:'[{"text":"神庭刺客·弩"}]',DeathLootTable:"skyblock:mg/azr0/tier3",Tags:["MG_AZR0MOB"],attributes:[{id:"generic.movement_speed",base:0.42},{id:"generic.max_health",base:18},{id:"generic.follow_range",base:186},{id:"generic.armor",base:8}],HandItems:[{id:crossbow,count:1,components:{enchantments:{pierce:3b,quick_charge:4b}}},{}],HandDropChances:[0f,0f],ArmorItems:[{},{},{},{}],ArmorDropChances:[0f,0f,0f,0f],Health:18,PersistenceRequired:1b}
