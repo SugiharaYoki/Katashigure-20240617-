@@ -2,6 +2,7 @@ execute if score MG_AZR0_Timer rng7 matches 20.. store result score MG_AZR0_rng 
 execute if score MG_AZR0_Timer rng7 matches 160.. store result score MG_AZR0_rng rng1 run random value 3..30
 execute if score MG_AZR0_Timer rng7 matches 360.. store result score MG_AZR0_rng rng1 run random value 10..38
 execute if score MG_AZR0_Timer rng7 matches 660.. store result score MG_AZR0_rng rng1 run random value 15..40
+execute if score MG_AZR0_Timer rng7 matches 850.. store result score MG_AZR0_rng rng1 run random value 15..42
 
 
 execute if score MG_AZR0_rng rng1 matches 1..19 run function skyblock:mg/azr0/particle/m_mob_tier1
@@ -19,3 +20,10 @@ execute if score MG_AZR0_rng rng1 matches 36..39 run summon silverfish ~ ~ ~ {Cu
 execute if score MG_AZR0_rng rng1 matches 40 run function skyblock:mg/azr0/particle/m_mob_tier4
 execute if score MG_AZR0_rng rng1 matches 40 run summon silverfish ~ ~ ~ {CustomName:'[{"text":"噬砖虫王"}]',DeathLootTable:"skyblock:mg/azr0/tier4",Tags:["MG_AZR0MOB","MG_AZR0MOB_silverfishking"],attributes:[{id:"generic.attack_damage",base:9},{id:"generic.movement_speed",base:0.18},{id:"generic.max_health",base:60},{id:"generic.follow_range",base:186},{id:"generic.armor",base:6},{id:"generic.scale",base:3.5}],Health:60,PersistenceRequired:1b}
 
+
+execute if score MG_AZR0_rng rng1 matches 41..42 run function skyblock:mg/azr0/particle/m_mob_tier1
+execute if score MG_AZR0_rng rng1 matches 41..42 run summon silverfish ~ ~ ~ {CustomName:'[{"text":"惰螨虫"}]',DeathLootTable:"skyblock:mg/azr0/tier1",Tags:["MG_AZR0MOB"],attributes:[{id:"generic.attack_damage",base:2},{id:"generic.movement_speed",base:0.18},{id:"generic.max_health",base:1},{id:"generic.follow_range",base:186},{id:"generic.armor",base:2},{id:"generic.scale",base:0.8}],Health:1,PersistenceRequired:1b}
+execute if score MG_AZR0_rng rng1 matches 41..42 run summon silverfish ~ ~ ~ {CustomName:'[{"text":"惰螨虫"}]',DeathLootTable:"skyblock:mg/azr0/tier1",Tags:["MG_AZR0MOB"],attributes:[{id:"generic.attack_damage",base:2},{id:"generic.movement_speed",base:0.18},{id:"generic.max_health",base:1},{id:"generic.follow_range",base:186},{id:"generic.armor",base:2},{id:"generic.scale",base:0.8}],Health:1,PersistenceRequired:1b}
+execute if score MG_AZR0_rng rng1 matches 41..42 run summon silverfish ~ ~ ~ {CustomName:'[{"text":"惰螨虫"}]',DeathLootTable:"skyblock:mg/azr0/tier1",Tags:["MG_AZR0MOB"],attributes:[{id:"generic.attack_damage",base:2},{id:"generic.movement_speed",base:0.18},{id:"generic.max_health",base:1},{id:"generic.follow_range",base:186},{id:"generic.armor",base:2},{id:"generic.scale",base:0.8}],Health:1,PersistenceRequired:1b}
+execute if score MG_AZR0_rng rng1 matches 41..42 run summon silverfish ~ ~ ~ {CustomName:'[{"text":"惰螨虫"}]',DeathLootTable:"skyblock:mg/azr0/tier1",Tags:["MG_AZR0MOB"],attributes:[{id:"generic.attack_damage",base:2},{id:"generic.movement_speed",base:0.18},{id:"generic.max_health",base:1},{id:"generic.follow_range",base:186},{id:"generic.armor",base:2},{id:"generic.scale",base:0.8}],Health:1,PersistenceRequired:1b}
+execute if score MG_AZR0_rng rng1 matches 41..42 run summon silverfish ~ ~ ~ {CustomName:'[{"text":"惰螨虫"}]',DeathLootTable:"skyblock:mg/azr0/tier1",Tags:["MG_AZR0MOB"],attributes:[{id:"generic.attack_damage",base:2},{id:"generic.movement_speed",base:0.18},{id:"generic.max_health",base:1},{id:"generic.follow_range",base:186},{id:"generic.armor",base:2},{id:"generic.scale",base:0.8}],Health:1,PersistenceRequired:1b}
