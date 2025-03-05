@@ -1,4 +1,4 @@
-tag @s add AZR0SHOP_SUCCESS
+execute unless items entity @s player.cursor end_crystal[custom_data={"azr0skill":true}] run tag @s add AZR0SHOP_SUCCESS
 execute if entity @s[tag=AZR0SHOP_SUCCESS] run tellraw @s {"text": "赐福选择成功！","color": "green"}
 execute if entity @s[tag=AZR0SHOP_SUCCESS] run playsound entity.player.levelup player @s ~ ~ ~ 1 1
 execute if items entity @s player.cursor phantom_spawn_egg run scoreboard players add @s Azr0_SKILL_1 1

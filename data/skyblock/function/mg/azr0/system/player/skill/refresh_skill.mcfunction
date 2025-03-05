@@ -11,8 +11,8 @@ tag @s remove mgazr0_SkillPrintLoop
 execute if score @s Azr0_SkillEquip_1rng = @s Azr0_SkillEquip_2rng run tag @s add mgazr0_SkillPrintLoop
 execute if score @s Azr0_SkillEquip_1rng = @s Azr0_SkillEquip_3rng run tag @s add mgazr0_SkillPrintLoop
 execute if score @s Azr0_SkillEquip_2rng = @s Azr0_SkillEquip_3rng run tag @s add mgazr0_SkillPrintLoop
-function skyblock:mg/azr0/system/player/shop/skill_print
-execute if items entity @s container.* end_crystal[custom_data={"azr0skill":true}] run tag @s add mgazr0_SkillPrintLoop
+#function skyblock:mg/azr0/system/player/shop/skill_print
+#execute if items entity @s container.* end_crystal[custom_data={"azr0skill":true}] run tag @s add mgazr0_SkillPrintLoop
 execute if entity @s[tag=mgazr0_SkillPrintLoop] run function skyblock:mg/azr0/system/player/skill/refresh_skill
 
 tag @s remove mgazr0_SkillPrintLoop
