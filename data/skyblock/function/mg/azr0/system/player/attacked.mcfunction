@@ -33,3 +33,7 @@ execute if entity @s[scores={Azr0_SKILL_3=1,rng1=1..3}] run function skyblock:mg
 execute if entity @s[scores={Azr0_SKILL_3=2,rng1=1..6}] run function skyblock:mg/azr0/system/player/skill/skill_3
 execute if entity @s[scores={Azr0_SKILL_3=3,rng1=1..9}] run function skyblock:mg/azr0/system/player/skill/skill_3
 
+execute if entity @s[scores={Azr0_SKILL_13=1..}] store result score @s rng1 run random value 1..10
+execute if entity @s[scores={Azr0_SKILL_13=1,rng1=1..3}] run function skyblock:mg/azr0/system/player/skill/skill_13
+execute if entity @s[scores={Azr0_SKILL_13=2,rng1=1..5}] run function skyblock:mg/azr0/system/player/skill/skill_13
+execute if entity @s[scores={Azr0_SKILL_13=3,rng1=1..7}] run function skyblock:mg/azr0/system/player/skill/skill_13
