@@ -70,5 +70,3 @@ execute if entity @s[scores={Azr0_SkillEquip_2rng=20}] run function skyblock:mg/
 execute if entity @s[scores={Azr0_SkillEquip_3rng=20}] run function skyblock:mg/azr0/system/player/shop/skill_print/20 {"skill":20, "slot":22}
 
 
-
-
