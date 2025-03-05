@@ -48,7 +48,9 @@ scoreboard players remove @s Azr0_SkillEquip_3_timer 1
 execute if items entity @s weapon.offhand *[custom_data={"azr0skill_core1":true}] at @s run function skyblock:mg/azr0/system/player/skill/skill_11
 execute if items entity @s weapon.offhand *[custom_data={"azr0skill_core2":true}] at @s run function skyblock:mg/azr0/system/player/skill/skill_12
 execute if items entity @s weapon.offhand *[custom_data={"azr0skill_core3":true}] at @s run function skyblock:mg/azr0/system/player/skill/skill_14
+execute if items entity @s weapon.offhand *[custom_data={"azr0skill_core4":true}] at @s run function skyblock:mg/azr0/system/player/skill/skill_15
 execute as @e[type=marker,tag=Azr0_SKILL_14] at @s run function skyblock:mg/azr0/system/player/skill/skill_14_e
+execute as @e[type=marker,tag=Azr0_SKILL_15] at @s run function skyblock:mg/azr0/system/player/skill/skill_15_e
 item replace entity @s weapon.offhand with air
 
 function skyblock:mg/azr0/system/player/shop/print
