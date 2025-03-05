@@ -3,7 +3,7 @@ execute if block -17 23 28 soul_lantern run function skyblock:mg/mg_oneshot_loop
 execute if entity @a[tag=SeGa_DVA] run function skyblock:dv/dv_corex20
 #execute if entity @a[tag=SeGa_StandLastA] run function skyblock:azr/ingame_azrielsmidgarden_shop_giver disable
 
-execute as @a at @s if block ~ ~ ~ stonecutter run damage @s 3 minecraft:sting by @s
+execute as @a at @s if block ~ ~ ~ stonecutter run damage @s 3 minecraft:sting
 
 
 scoreboard players add world_loop rng1 1
