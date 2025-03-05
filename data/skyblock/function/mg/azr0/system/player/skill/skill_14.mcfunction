@@ -21,4 +21,4 @@ summon marker ~ ~ ~ {Tags:["Azr0_SKILL_14"]}
 execute if entity @s[scores={Azr0_SKILL_14=1}] run scoreboard players set @n[type=marker,tag=Azr0_SKILL_14] rng2 1
 execute if entity @s[scores={Azr0_SKILL_14=2}] run scoreboard players set @n[type=marker,tag=Azr0_SKILL_14] rng2 2
 execute if entity @s[scores={Azr0_SKILL_14=3}] run scoreboard players set @n[type=marker,tag=Azr0_SKILL_14] rng2 3
-execute at @s rotated ~ 0 run tp @n[type=marker,tag=Azr0_SKILL_14] ^ ^ ^1 facing ^ ^ ^2
+execute at @s rotated ~ 0 run tp @n[type=marker,tag=Azr0_SKILL_14] ^ ^ ^2.5 facing ^ ^ ^3
