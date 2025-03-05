@@ -1,7 +1,7 @@
 
 execute if entity @s[scores={Azr0_SKILL_11=1}] run scoreboard players set @s Azr0_SkillEquip_2_timer 100
 execute if entity @s[scores={Azr0_SKILL_11=2}] run scoreboard players set @s Azr0_SkillEquip_2_timer 80
-execute if entity @s[scores={Azr0_SKILL_11=3}] run scoreboard players set @s Azr0_SkillEquip_2_timer 54
+execute if entity @s[scores={Azr0_SKILL_11=3}] run scoreboard players set @s Azr0_SkillEquip_2_timer 50
 
 
 playsound block.beacon.activate player @a ~ ~ ~ 2 0.8
