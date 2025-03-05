@@ -29,6 +29,11 @@ attribute @s generic.max_health modifier remove mg_azr0:skill_max_health3
 attribute @s generic.movement_speed modifier remove mg_azr0:skill_movement_speed1
 attribute @s generic.movement_speed modifier remove mg_azr0:skill_movement_speed2
 attribute @s generic.movement_speed modifier remove mg_azr0:skill_movement_speed3
+attribute @s generic.knockback_resistance modifier remove mg_azr0:skill_knockback_resistance1
+attribute @s generic.knockback_resistance modifier remove mg_azr0:skill_knockback_resistance2
+attribute @s generic.knockback_resistance modifier remove mg_azr0:skill_knockback_resistance3
+attribute @s generic.armor_toughness modifier remove mg_azr0:skill_armor_toughness1
+attribute @s generic.armor_toughness modifier remove mg_azr0:skill_armor_toughness2
 
 function skyblock:pvp/skywar/system/removeallgaming
 
