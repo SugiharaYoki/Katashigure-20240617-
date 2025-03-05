@@ -26,6 +26,10 @@ execute if items entity @s player.cursor drowned_spawn_egg run scoreboard player
 execute if items entity @s player.cursor drowned_spawn_egg run scoreboard players set @s Azr0_SkillEquip_1 3
 execute if items entity @s player.cursor strider_spawn_egg run scoreboard players add @s Azr0_SKILL_15 1
 execute if items entity @s player.cursor strider_spawn_egg run scoreboard players set @s Azr0_SkillEquip_2 4
+execute if items entity @s player.cursor rabbit_spawn_egg run scoreboard players add @s Azr0_SKILL_16 1
+execute if items entity @s player.cursor rabbit_spawn_egg if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_SKILL_16=1}] run attribute @s generic.movement_speed modifier add mg_azr0:skill_movement_speed1 0.1 add_value
+execute if items entity @s player.cursor rabbit_spawn_egg if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_SKILL_16=2}] run attribute @s generic.movement_speed modifier add mg_azr0:skill_movement_speed2 0.1 add_value
+execute if items entity @s player.cursor rabbit_spawn_egg if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_SKILL_16=3}] run attribute @s generic.movement_speed modifier add mg_azr0:skill_movement_speed3 0.1 add_value
 tag @s remove AZR0SHOP_SUCCESS
 scoreboard players set @s Azr0_SkillEquip_1rng 0
 scoreboard players set @s Azr0_SkillEquip_2rng 0

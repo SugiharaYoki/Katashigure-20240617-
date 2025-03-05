@@ -26,6 +26,9 @@ attribute @s player.entity_interaction_range modifier remove mg_azr0:skill_attac
 attribute @s generic.max_health modifier remove mg_azr0:skill_max_health1
 attribute @s generic.max_health modifier remove mg_azr0:skill_max_health2
 attribute @s generic.max_health modifier remove mg_azr0:skill_max_health3
+attribute @s generic.movement_speed modifier remove mg_azr0:skill_movement_speed1
+attribute @s generic.movement_speed modifier remove mg_azr0:skill_movement_speed2
+attribute @s generic.movement_speed modifier remove mg_azr0:skill_movement_speed3
 
 function skyblock:pvp/skywar/system/removeallgaming
 
