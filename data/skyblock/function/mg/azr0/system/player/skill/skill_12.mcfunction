@@ -1,7 +1,7 @@
 
-execute if entity @s[scores={Azr0_SKILL_12=1}] run scoreboard players set @s Azr0_SkillEquip_2_timer 48
-execute if entity @s[scores={Azr0_SKILL_12=2}] run scoreboard players set @s Azr0_SkillEquip_2_timer 40
-execute if entity @s[scores={Azr0_SKILL_12=3}] run scoreboard players set @s Azr0_SkillEquip_2_timer 32
+execute if entity @s[scores={Azr0_SKILL_12=1}] run scoreboard players set @s Azr0_SkillEquip_1_timer 48
+execute if entity @s[scores={Azr0_SKILL_12=2}] run scoreboard players set @s Azr0_SkillEquip_1_timer 40
+execute if entity @s[scores={Azr0_SKILL_12=3}] run scoreboard players set @s Azr0_SkillEquip_1_timer 32
 
 
 playsound entity.player.attack.sweep player @a ~ ~ ~ 2 0.8
