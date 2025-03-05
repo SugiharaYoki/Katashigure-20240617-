@@ -15,6 +15,18 @@ execute if entity @s[scores={Azr0_SKILL_12=3}] run particle sweep_attack ~ ~1.3 
 execute if entity @s[scores={Azr0_SKILL_12=1}] run effect give @e[tag=MG_AZR0MOB,distance=..5] weakness 3 1 false
 execute if entity @s[scores={Azr0_SKILL_12=2}] run effect give @e[tag=MG_AZR0MOB,distance=..5] weakness 5 1 false
 execute if entity @s[scores={Azr0_SKILL_12=3}] run effect give @e[tag=MG_AZR0MOB,distance=..5] weakness 7 1 false
+execute if entity @s[scores={Azr0_SKILL_12=1}] as @e[tag=MG_AZR0MOB,distance=..5.5] at @s rotated as @s if block ^ ^ ^-0.2 air run tp @s ^ ^ ^-0.2
+execute if entity @s[scores={Azr0_SKILL_12=2}] as @e[tag=MG_AZR0MOB,distance=..5.5] at @s rotated as @s if block ^ ^ ^-0.2 air run tp @s ^ ^ ^-0.2
+execute if entity @s[scores={Azr0_SKILL_12=3}] as @e[tag=MG_AZR0MOB,distance=..5.5] at @s rotated as @s if block ^ ^ ^-0.2 air run tp @s ^ ^ ^-0.2
+execute if entity @s[scores={Azr0_SKILL_12=1}] as @e[tag=MG_AZR0MOB,distance=..5.5] at @s rotated as @s if block ^ ^ ^-0.2 air run tp @s ^ ^ ^-0.2
+execute if entity @s[scores={Azr0_SKILL_12=2}] as @e[tag=MG_AZR0MOB,distance=..5.5] at @s rotated as @s if block ^ ^ ^-0.2 air run tp @s ^ ^ ^-0.2
+execute if entity @s[scores={Azr0_SKILL_12=3}] as @e[tag=MG_AZR0MOB,distance=..5.5] at @s rotated as @s if block ^ ^ ^-0.2 air run tp @s ^ ^ ^-0.2
+execute if entity @s[scores={Azr0_SKILL_12=1}] as @e[tag=MG_AZR0MOB,distance=..5.5] at @s rotated as @s if block ^ ^ ^-0.2 air run tp @s ^ ^ ^-0.2
+execute if entity @s[scores={Azr0_SKILL_12=2}] as @e[tag=MG_AZR0MOB,distance=..5.5] at @s rotated as @s if block ^ ^ ^-0.2 air run tp @s ^ ^ ^-0.2
+execute if entity @s[scores={Azr0_SKILL_12=3}] as @e[tag=MG_AZR0MOB,distance=..5.5] at @s rotated as @s if block ^ ^ ^-0.2 air run tp @s ^ ^ ^-0.2
+execute if entity @s[scores={Azr0_SKILL_12=1}] as @e[tag=MG_AZR0MOB,distance=..5.5] at @s rotated as @s if block ^ ^ ^-0.2 air run tp @s ^ ^ ^-0.2
+execute if entity @s[scores={Azr0_SKILL_12=2}] as @e[tag=MG_AZR0MOB,distance=..5.5] at @s rotated as @s if block ^ ^ ^-0.2 air run tp @s ^ ^ ^-0.2
+execute if entity @s[scores={Azr0_SKILL_12=3}] as @e[tag=MG_AZR0MOB,distance=..5.5] at @s rotated as @s if block ^ ^ ^-0.2 air run tp @s ^ ^ ^-0.2
 
 
 
