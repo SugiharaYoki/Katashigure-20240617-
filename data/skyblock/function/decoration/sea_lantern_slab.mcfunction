@@ -9,7 +9,7 @@ tag @s[tag=sea_lantern_slab] remove sea_lantern_slab
 
 #display
 summon block_display ~ ~ ~ {Tags:["sea_lantern_slab","temp"],block_state:{Name:"sea_lantern"},transformation:[1.0, 0.0, 0.0, 0.0,  0.0, 0.5, 0.0, 0.0,  0.0, 0.0, 1.0, 0.0,  0.0, 0.0, 0.0, 1.0]}
-summon block_display ~ ~ ~ {Tags:["sea_lantern_slab","temp"],block_state:{Name:"light_gray_stained_glass"},transformation:[1.0, 0.0, 0.0, 0.0,  0.0, 0.5, 0.0, 0.5,  0.0, 0.0, 1.0, 0.0,  0.0, 0.0, 0.0, 1.0]}
+summon block_display ~ ~0.5 ~ {Tags:["sea_lantern_slab","temp"],block_state:{Name:"light_gray_stained_glass"},transformation:[1.0, 0.0, 0.0, 0.0,  0.0, 0.5, 0.0, 0.0,  0.0, 0.0, 1.0, 0.0,  0.0, 0.0, 0.0, 1.0]}
 function skyblock:decoration/tool/get_id
 
 #other
