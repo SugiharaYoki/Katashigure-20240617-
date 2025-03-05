@@ -12,8 +12,8 @@ execute if entity @s[tag=Azr0_SKILL_6a,scores={Azr0_SKILL_6=1}] at @s as @e[dist
 execute if entity @s[tag=Azr0_SKILL_6a,scores={Azr0_SKILL_6=1}] at @s as @e[distance=2.5..3.5,tag=MG_AZR0MOB] run data modify entity @s Fire set value 40s
 execute if entity @s[tag=Azr0_SKILL_6a,scores={Azr0_SKILL_6=2}] at @s as @e[distance=2.3..3.5,tag=MG_AZR0MOB] run damage @s 4 campfire by @p[tag=Azr0_SKILL_6a]
 execute if entity @s[tag=Azr0_SKILL_6a,scores={Azr0_SKILL_6=2}] at @s as @e[distance=2.3..3.5,tag=MG_AZR0MOB] run data modify entity @s Fire set value 45s
-execute if entity @s[tag=Azr0_SKILL_6a,scores={Azr0_SKILL_6=3}] at @s as @e[distance=2.1..3.5,tag=MG_AZR0MOB] run damage @s 5 campfire by @p[tag=Azr0_SKILL_6a]
-execute if entity @s[tag=Azr0_SKILL_6a,scores={Azr0_SKILL_6=3}] at @s as @e[distance=2.1..3.5,tag=MG_AZR0MOB] run data modify entity @s Fire set value 50s
+execute if entity @s[tag=Azr0_SKILL_6a,scores={Azr0_SKILL_6=3}] at @s as @e[distance=2.0..3.5,tag=MG_AZR0MOB] run damage @s 5 campfire by @p[tag=Azr0_SKILL_6a]
+execute if entity @s[tag=Azr0_SKILL_6a,scores={Azr0_SKILL_6=3}] at @s as @e[distance=2.0..3.5,tag=MG_AZR0MOB] run data modify entity @s Fire set value 50s
 
 
 execute if entity @s[scores={Azr0_SKILL_6=1,Azr0_SKILL_6_timer=40..}] run scoreboard players set @s Azr0_SKILL_6_timer 0

@@ -55,7 +55,8 @@ scoreboard objectives remove Azr0_SKILL_19
 scoreboard objectives remove Azr0_SKILL_20
 
 
-
+execute as @e[type=marker,tag=MG_AZR0_FIRE] at @s if block ~ ~ ~ fire run setblock ~ ~ ~ air
+execute as @e[type=marker,tag=MG_AZR0_FIRE] at @s run kill @s
 
 
 
@@ -64,6 +65,7 @@ team remove MGAZR0
 
 
 scoreboard objectives remove Azr0_arrow
+scoreboard objectives remove Azr0_ifkill
 
 scoreboard objectives remove Azr0_UPG_sword_damage
 scoreboard objectives remove Azr0_UPG_sword_knockback
