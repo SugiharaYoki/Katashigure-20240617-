@@ -1,9 +1,9 @@
 execute if score MG_AZR0_Timer rng7 matches 1.. store result score MG_AZR0_rng rng1 run random value 1..10
 execute if score MG_AZR0_Timer rng7 matches 120.. store result score MG_AZR0_rng rng1 run random value 1..15
-execute if score MG_AZR0_Timer rng7 matches 240.. store result score MG_AZR0_rng rng1 run random value 5..20
-execute if score MG_AZR0_Timer rng7 matches 380.. store result score MG_AZR0_rng rng1 run random value 5..24
-execute if score MG_AZR0_Timer rng7 matches 480.. store result score MG_AZR0_rng rng1 run random value 8..27
-execute if score MG_AZR0_Timer rng7 matches 580.. store result score MG_AZR0_rng rng1 run random value 13..30
+execute if score MG_AZR0_Timer rng7 matches 340.. store result score MG_AZR0_rng rng1 run random value 5..20
+execute if score MG_AZR0_Timer rng7 matches 580.. store result score MG_AZR0_rng rng1 run random value 5..24
+execute if score MG_AZR0_Timer rng7 matches 680.. store result score MG_AZR0_rng rng1 run random value 8..27
+execute if score MG_AZR0_Timer rng7 matches 780.. store result score MG_AZR0_rng rng1 run random value 13..30
 
 execute if score MG_AZR0_rng rng1 matches 1..10 run function skyblock:mg/azr0/particle/m_mob_tier1
 execute if score MG_AZR0_rng rng1 matches 1..10 run summon skeleton ~ ~ ~ {CustomName:'[{"text":"骷髅"}]',DeathLootTable:"skyblock:mg/azr0/tier1",Tags:["MG_AZR0MOB"],attributes:[{id:"generic.movement_speed",base:0.19},{id:"generic.max_health",base:4},{id:"generic.follow_range",base:186}],HandItems:[{id:bow,count:1},{}],HandDropChances:[0f,0f],ArmorItems:[{},{},{},{}],ArmorDropChances:[0f,0f,0f,0f],Health:4,PersistenceRequired:1b}
