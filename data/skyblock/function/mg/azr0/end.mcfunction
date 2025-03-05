@@ -27,6 +27,9 @@ scoreboard objectives remove Azr0_SkillPoint
 scoreboard objectives remove Azr0_SkillEquip_1
 scoreboard objectives remove Azr0_SkillEquip_2
 scoreboard objectives remove Azr0_SkillEquip_3
+scoreboard objectives remove Azr0_SkillEquip_1_timer
+scoreboard objectives remove Azr0_SkillEquip_2_timer
+scoreboard objectives remove Azr0_SkillEquip_3_timer
 scoreboard objectives remove Azr0_SkillEquip_1rng
 scoreboard objectives remove Azr0_SkillEquip_2rng
 scoreboard objectives remove Azr0_SkillEquip_3rng
@@ -43,6 +46,7 @@ scoreboard objectives remove Azr0_SKILL_7_timer
 scoreboard objectives remove Azr0_SKILL_8
 scoreboard objectives remove Azr0_SKILL_9
 scoreboard objectives remove Azr0_SKILL_10
+scoreboard objectives remove Azr0_SKILL_11_timer
 scoreboard objectives remove Azr0_SKILL_11
 scoreboard objectives remove Azr0_SKILL_12
 scoreboard objectives remove Azr0_SKILL_13

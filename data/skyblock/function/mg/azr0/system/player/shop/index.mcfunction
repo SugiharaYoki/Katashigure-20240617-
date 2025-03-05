@@ -42,6 +42,10 @@ clear @s *[custom_data={"azr0shop":true}]
 clear @s *[custom_data={"azr0skill":true}]
 clear @s *[custom_data={"PsychicVitae":true}]
 
+scoreboard players remove @s Azr0_SkillEquip_1_timer 1
+scoreboard players remove @s Azr0_SkillEquip_2_timer 1
+scoreboard players remove @s Azr0_SkillEquip_3_timer 1
+execute if items entity @s weapon.offhand *[custom_data={"azr0skill_core1":true}] at @s run function skyblock:mg/azr0/system/player/skill/skill_11
 item replace entity @s weapon.offhand with air
 
 function skyblock:mg/azr0/system/player/shop/print

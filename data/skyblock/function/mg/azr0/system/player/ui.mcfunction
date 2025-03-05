@@ -18,9 +18,11 @@ execute if entity @s[scores={Azr0_UPG_axe_damage=..-1}] run item replace entity 
 execute if entity @s[scores={Azr0_UPG_bow=-1,Azr0_UPG_crossbow=-1}] run item replace entity @s hotbar.2 with barrier
 execute unless items entity @s[scores={Azr0_UPG_bow=0..}] hotbar.2 *[custom_data={"azr0weapon_bow":true}] run function skyblock:mg/azr0/system/player/hotbar/bow1
 execute unless items entity @s[scores={Azr0_UPG_crossbow=0..}] hotbar.2 *[custom_data={"azr0weapon_bow":true}] run function skyblock:mg/azr0/system/player/hotbar/crossbow1
-item replace entity @s hotbar.3 with barrier
-item replace entity @s hotbar.4 with barrier
-item replace entity @s hotbar.5 with barrier
+item replace entity @s[scores={Azr0_SkillEquip_1=0}] hotbar.3 with barrier
+item replace entity @s[scores={Azr0_SkillEquip_2=0}] hotbar.4 with barrier
+item replace entity @s[scores={Azr0_SkillEquip_2=1..,Azr0_SkillEquip_2_timer=1..}] hotbar.4 with music_disc_stal[custom_data={"azr0skill_core0":true},custom_name='{"text":"充能中…","italic":false,"color":"dark_gray"}']
+item replace entity @s[scores={Azr0_SkillEquip_2=1,Azr0_SkillEquip_2_timer=..0}] hotbar.4 with music_disc_far[custom_data={"azr0skill_core1":true},custom_name='{"text":"花卉领域","italic":false,"color":"aqua"}']
+item replace entity @s[scores={Azr0_SkillEquip_3=0}] hotbar.5 with barrier
 clear @s[scores={Azr0_arrow=..0}] arrow
 item replace entity @s[scores={Azr0_arrow=0}] hotbar.6 with barrier
 item replace entity @s[scores={Azr0_arrow=1}] hotbar.6 with arrow 1
