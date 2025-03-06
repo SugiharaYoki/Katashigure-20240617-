@@ -46,6 +46,8 @@ execute if items entity @s player.cursor cow_spawn_egg if entity @s[tag=AZR0SHOP
 execute if items entity @s player.cursor cow_spawn_egg if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_SKILL_17=3}] run attribute @s generic.armor_toughness modifier add mg_azr0:skill_armor_toughness2 1 add_value
 execute if items entity @s player.cursor ravager_spawn_egg run scoreboard players add @s Azr0_SKILL_18 1
 execute if items entity @s player.cursor ravager_spawn_egg run scoreboard players set @s Azr0_SkillEquip_1 5
+execute if items entity @s player.cursor shulker_spawn_egg run scoreboard players add @s Azr0_SKILL_19 1
+execute if items entity @s player.cursor shulker_spawn_egg run scoreboard players set @s Azr0_SkillEquip_2 6
 
 tag @s remove AZR0SHOP_SUCCESS
 scoreboard players set @s Azr0_SkillEquip_1rng 0
