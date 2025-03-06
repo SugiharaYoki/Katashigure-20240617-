@@ -16,6 +16,6 @@ execute if entity @s[scores={Azr0_SKILL_18=3}] run effect give @s speed 6 0 true
 execute if entity @s[scores={Azr0_SKILL_18=1}] run effect give @s weakness 5 3 true
 execute if entity @s[scores={Azr0_SKILL_18=2}] run effect give @s weakness 5 3 true
 execute if entity @s[scores={Azr0_SKILL_18=3}] run effect give @s weakness 6 3 true
-execute if entity @s[scores={Azr0_SKILL_18=1}] run effect give @s resistance 5 3 true
-execute if entity @s[scores={Azr0_SKILL_18=2}] run effect give @s resistance 5 3 true
-execute if entity @s[scores={Azr0_SKILL_18=3}] run effect give @s resistance 6 3 true
+execute if entity @s[scores={Azr0_SKILL_18=1}] run effect give @s resistance 6 3 true
+execute if entity @s[scores={Azr0_SKILL_18=2}] run effect give @s resistance 6 3 true
+execute if entity @s[scores={Azr0_SKILL_18=3}] run effect give @s resistance 7 3 true
