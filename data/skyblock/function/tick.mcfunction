@@ -8,4 +8,4 @@ execute as @e[type=marker] run function skyblock:decoration/main
 
 #toy
 execute as @e[tag=AzrielBossA_outgame] at @s run function skyblock:azr/outgame/boss1
-execute unless entity @e[tag=AzrielBossA_outgame] run bossbar remove azr:boss_hp_bar_outgame
+execute unless entity @e[tag=AzrielBossA_outgame] run function skyblock:azr/outgame/boss1_terminate

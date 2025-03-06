@@ -23,7 +23,6 @@ execute as @e[tag=arroworb2,type=marker] at @s run function skyblock:azr/outgame
     #状态效果控制
     effect clear @a[gamemode=!creative,gamemode=!spectator] blindness
     effect clear @e[tag=AzrielBossA_outgame] invisibility
-    effect give @e[tag=AzrielBossA_outgame] slow_falling 10 0 true
     #防止卡在墙内 传送到最近玩家
     execute as @e[tag=AzrielBossA_outgame,limit=1] at @s unless block ~ ~1 ~ air run tp @s @r[gamemode=!creative,gamemode=!spectator,sort=nearest]
     execute as @e[tag=AzrielBossA_outgame,limit=1] at @s unless block ~ ~1 ~ air run tp @s @r[gamemode=!creative,gamemode=!spectator,sort=nearest]
