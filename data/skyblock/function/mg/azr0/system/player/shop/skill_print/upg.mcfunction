@@ -35,9 +35,9 @@ execute if items entity @s player.cursor drowned_spawn_egg run scoreboard player
 execute if items entity @s player.cursor strider_spawn_egg run scoreboard players add @s Azr0_SKILL_15 1
 execute if items entity @s player.cursor strider_spawn_egg run scoreboard players set @s Azr0_SkillEquip_2 4
 execute if items entity @s player.cursor rabbit_spawn_egg run scoreboard players add @s Azr0_SKILL_16 1
-execute if items entity @s player.cursor rabbit_spawn_egg if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_SKILL_16=1}] run attribute @s generic.movement_speed modifier add mg_azr0:skill_movement_speed1 0.02 add_value
+execute if items entity @s player.cursor rabbit_spawn_egg if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_SKILL_16=1}] run attribute @s generic.movement_speed modifier add mg_azr0:skill_movement_speed1 0.01 add_value
 execute if items entity @s player.cursor rabbit_spawn_egg if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_SKILL_16=2}] run attribute @s generic.movement_speed modifier add mg_azr0:skill_movement_speed2 0.02 add_value
-execute if items entity @s player.cursor rabbit_spawn_egg if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_SKILL_16=3}] run attribute @s generic.movement_speed modifier add mg_azr0:skill_movement_speed3 0.03 add_value
+execute if items entity @s player.cursor rabbit_spawn_egg if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_SKILL_16=3}] run attribute @s generic.movement_speed modifier add mg_azr0:skill_movement_speed3 0.02 add_value
 execute if items entity @s player.cursor cow_spawn_egg run scoreboard players add @s Azr0_SKILL_17 1
 execute if items entity @s player.cursor cow_spawn_egg if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_SKILL_17=1}] run attribute @s generic.knockback_resistance modifier add mg_azr0:skill_knockback_resistance1 0.3 add_value
 execute if items entity @s player.cursor cow_spawn_egg if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_SKILL_17=2}] run attribute @s generic.knockback_resistance modifier add mg_azr0:skill_knockback_resistance2 0.3 add_value
