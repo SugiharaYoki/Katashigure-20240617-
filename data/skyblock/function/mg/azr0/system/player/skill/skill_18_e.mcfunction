@@ -19,5 +19,9 @@ execute if entity @s[scores={Azr0_SKILL_18_condition=1..}] anchored eyes positio
 execute if entity @s[scores={Azr0_SKILL_18_condition=1..}] anchored eyes positioned ^ ^-0.4 ^1.3 run particle enchanted_hit ~ ~ ~ 0 0 0 0.05 3
 execute if entity @s[scores={Azr0_SKILL_18_condition=1..}] anchored eyes positioned ^ ^ ^1.7 run particle enchanted_hit ~ ~ ~ 0 0 0 0.05 3
 
+execute if entity @s[scores={Azr0_SKILL_18_timer=12}] run playsound block.note_block.chime player @s ~ ~ ~ 10 0.5
+execute if entity @s[scores={Azr0_SKILL_18_timer=8}] run playsound block.note_block.chime player @s ~ ~ ~ 10 0.5
+execute if entity @s[scores={Azr0_SKILL_18_timer=4}] run playsound block.note_block.chime player @s ~ ~ ~ 10 1
+
 scoreboard players set @s Azr0_SKILL_18_condition 0
 scoreboard players remove @s Azr0_SKILL_18_timer 1
