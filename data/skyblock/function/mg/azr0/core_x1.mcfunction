@@ -33,8 +33,6 @@ execute unless entity @a[tag=MG_AZR0PT] if entity @a[gamemode=!spectator,distanc
 function skyblock:mg/azr0/system/mob/skill
 
 
-execute as @n[distance=..200,type=silverfish,tag=!MG_AZR0MOB] at @s if entity @n[tag=]
-execute as @n[distance=..200,type=silverfish,tag=!MG_AZR0MOB] at @s if entity @n[tag=,distance=0..12] run tag @s add MG_AZR0MOB
 
 
 
