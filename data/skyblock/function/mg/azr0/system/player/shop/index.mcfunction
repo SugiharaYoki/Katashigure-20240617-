@@ -49,6 +49,8 @@ execute if items entity @s weapon.offhand *[custom_data={"azr0skill_core1":true}
 execute if items entity @s weapon.offhand *[custom_data={"azr0skill_core2":true}] at @s run function skyblock:mg/azr0/system/player/skill/skill_12
 execute if items entity @s weapon.offhand *[custom_data={"azr0skill_core3":true}] at @s run function skyblock:mg/azr0/system/player/skill/skill_14
 execute if items entity @s weapon.offhand *[custom_data={"azr0skill_core4":true}] at @s run function skyblock:mg/azr0/system/player/skill/skill_15
+execute if items entity @s weapon.offhand *[custom_data={"azr0skill_core5":true}] at @s run function skyblock:mg/azr0/system/player/skill/skill_18
+execute if entity @s[scores={Azr0_SKILL_18_timer=1..}] at @s run function skyblock:mg/azr0/system/player/skill/skill_18_e
 item replace entity @s weapon.offhand with air
 
 function skyblock:mg/azr0/system/player/shop/print

@@ -22,6 +22,7 @@ item replace entity @s[scores={Azr0_SkillEquip_1=0}] hotbar.3 with barrier
 item replace entity @s[scores={Azr0_SkillEquip_1=1..,Azr0_SkillEquip_1_timer=1..}] hotbar.3 with music_disc_stal[custom_data={"azr0skill_core0":true},custom_name='{"text":"充能中…","italic":false,"color":"dark_gray"}']
 item replace entity @s[scores={Azr0_SkillEquip_1=2,Azr0_SkillEquip_1_timer=..0}] hotbar.3 with music_disc_blocks[custom_data={"azr0skill_core2":true},custom_name='{"text":"按下F使用 - 灵能风压","italic":false,"color":"aqua"}']
 item replace entity @s[scores={Azr0_SkillEquip_1=3,Azr0_SkillEquip_1_timer=..0}] hotbar.3 with music_disc_chirp[custom_data={"azr0skill_core3":true},custom_name='{"text":"按下F使用 - 湍流天雷","italic":false,"color":"aqua"}']
+item replace entity @s[scores={Azr0_SkillEquip_1=5,Azr0_SkillEquip_1_timer=..0}] hotbar.3 with music_disc_chirp[custom_data={"azr0skill_core5":true},custom_name='{"text":"按下F使用 - 钢冲猛撞","italic":false,"color":"aqua"}']
 item replace entity @s[scores={Azr0_SkillEquip_2=0}] hotbar.4 with barrier
 item replace entity @s[scores={Azr0_SkillEquip_2=1..,Azr0_SkillEquip_2_timer=1..}] hotbar.4 with music_disc_stal[custom_data={"azr0skill_core0":true},custom_name='{"text":"充能中…","italic":false,"color":"dark_gray"}']
 item replace entity @s[scores={Azr0_SkillEquip_2=1,Azr0_SkillEquip_2_timer=..0}] hotbar.4 with music_disc_far[custom_data={"azr0skill_core1":true},custom_name='{"text":"按下F使用 - 花卉领域","italic":false,"color":"aqua"}']

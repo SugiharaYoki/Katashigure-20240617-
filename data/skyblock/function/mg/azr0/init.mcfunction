@@ -110,6 +110,8 @@ scoreboard objectives add Azr0_SKILL_15 dummy
 scoreboard objectives add Azr0_SKILL_16 dummy
 scoreboard objectives add Azr0_SKILL_17 dummy
 scoreboard objectives add Azr0_SKILL_18 dummy
+scoreboard objectives add Azr0_SKILL_18_timer dummy
+scoreboard objectives add Azr0_SKILL_18_condition custom:sprint_one_cm
 scoreboard objectives add Azr0_SKILL_19 dummy
 scoreboard objectives add Azr0_SKILL_20 dummy
 
