@@ -30,6 +30,9 @@ execute as @a[tag=MG_AZR0PT,scores={Azr0_SKILL_7=1..}] at @s if entity @e[distan
 
 
 
+execute as @a[tag=MG_AZR0PT,scores={Azr0_SKILL_19=1..}] at @s if items entity @s weapon.offhand *[custom_data={"azr0skill_core6":true}] at @s run function skyblock:mg/azr0/system/player/skill/skill_19
+execute as @a[tag=MG_AZR0PT,scores={Azr0_SKILL_19=1..2}] at @s if items entity @s[predicate=skyblock:sneaking] weapon.mainhand *[custom_data={"azr0skill_core6":true}] at @s run function skyblock:mg/azr0/system/player/skill/skill_19
+execute as @a[tag=MG_AZR0PT,scores={Azr0_SKILL_19=3}] at @s if items entity @s[predicate=skyblock:sneaking] hotbar.* *[custom_data={"azr0skill_core6":true}] at @s run function skyblock:mg/azr0/system/player/skill/skill_19
 
 
 
