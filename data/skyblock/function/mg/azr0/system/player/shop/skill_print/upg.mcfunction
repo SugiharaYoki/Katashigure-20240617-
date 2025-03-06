@@ -49,10 +49,11 @@ execute if items entity @s player.cursor ravager_spawn_egg run scoreboard player
 execute if items entity @s player.cursor shulker_spawn_egg run scoreboard players add @s Azr0_SKILL_19 1
 execute if items entity @s player.cursor shulker_spawn_egg run scoreboard players set @s Azr0_SkillEquip_2 6
 
+execute unless items entity @s player.cursor ender_eye run scoreboard players set @s Azr0_SkillEquip_1rng 0
+execute unless items entity @s player.cursor ender_eye run scoreboard players set @s Azr0_SkillEquip_2rng 0
+execute unless items entity @s player.cursor ender_eye run scoreboard players set @s Azr0_SkillEquip_3rng 0
+execute unless items entity @s player.cursor ender_eye run scoreboard players remove @s Azr0_SkillPoint 1
+
 tag @s remove AZR0SHOP_SUCCESS
-scoreboard players set @s Azr0_SkillEquip_1rng 0
-scoreboard players set @s Azr0_SkillEquip_2rng 0
-scoreboard players set @s Azr0_SkillEquip_3rng 0
-scoreboard players remove @s Azr0_SkillPoint 1
 
 clear @s *[custom_data={"azr0skill":true}]
