@@ -4,11 +4,11 @@ execute if entity @s[scores={Azr0_SKILL_10=0..,Azr0_axe_recharge=..19999}] store
 execute if entity @s[scores={Azr0_SKILL_10=0..,Azr0_axe_recharge=20000..}] store result score @s rng1 run random value 1..4
 execute if entity @s[scores={Azr0_SKILL_10=0,rng1=1..10}] if items entity @s weapon.mainhand *[custom_data={"azr0weapon_axe":true}] run scoreboard players set @s Azr0_axe_recharge 0
 execute if entity @s[scores={Azr0_SKILL_10=1,rng1=1..8}] if items entity @s weapon.mainhand *[custom_data={"azr0weapon_axe":true}] run scoreboard players set @s Azr0_axe_recharge 0
-execute if entity @s[scores={Azr0_SKILL_10=1,rng1=1..6}] if items entity @s weapon.mainhand *[custom_data={"azr0weapon_axe":true}] run scoreboard players set @s Azr0_axe_recharge 0
-execute if entity @s[scores={Azr0_SKILL_10=1,rng1=1..3}] if items entity @s weapon.mainhand *[custom_data={"azr0weapon_axe":true}] run scoreboard players set @s Azr0_axe_recharge 0
+execute if entity @s[scores={Azr0_SKILL_10=2,rng1=1..6}] if items entity @s weapon.mainhand *[custom_data={"azr0weapon_axe":true}] run scoreboard players set @s Azr0_axe_recharge 0
+execute if entity @s[scores={Azr0_SKILL_10=3,rng1=1..3}] if items entity @s weapon.mainhand *[custom_data={"azr0weapon_axe":true}] run scoreboard players set @s Azr0_axe_recharge 0
 execute if entity @s[scores={Azr0_SKILL_10=1,rng1=9..10}] if items entity @s weapon.mainhand *[custom_data={"azr0weapon_axe":true}] run scoreboard players set @s Azr0_axe_recharge 20000
-execute if entity @s[scores={Azr0_SKILL_10=1,rng1=7..10}] if items entity @s weapon.mainhand *[custom_data={"azr0weapon_axe":true}] run scoreboard players set @s Azr0_axe_recharge 20000
-execute if entity @s[scores={Azr0_SKILL_10=1,rng1=4..10}] if items entity @s weapon.mainhand *[custom_data={"azr0weapon_axe":true}] run scoreboard players set @s Azr0_axe_recharge 20000
+execute if entity @s[scores={Azr0_SKILL_10=2,rng1=7..10}] if items entity @s weapon.mainhand *[custom_data={"azr0weapon_axe":true}] run scoreboard players set @s Azr0_axe_recharge 20000
+execute if entity @s[scores={Azr0_SKILL_10=3,rng1=4..10}] if items entity @s weapon.mainhand *[custom_data={"azr0weapon_axe":true}] run scoreboard players set @s Azr0_axe_recharge 20000
 execute if items entity @s[scores={Azr0_UPG_axe_range=1..}] weapon.mainhand *[custom_data={"azr0weapon_axe":true}] at @s run particle sweep_attack ~ ~1.2 ~ 1 0.2 1 0 5
 execute if items entity @s[scores={Azr0_UPG_axe_range=1}] weapon.mainhand *[custom_data={"azr0weapon_axe":true}] at @s as @e[distance=0..2.3,tag=MG_AZR0MOB,limit=6,sort=nearest] run damage @s 6 falling_anvil by @p[tag=MG_AZR0PT]
 execute if items entity @s[scores={Azr0_UPG_axe_range=2}] weapon.mainhand *[custom_data={"azr0weapon_axe":true}] at @s as @e[distance=0..2.8,tag=MG_AZR0MOB,limit=6,sort=nearest] run damage @s 8 falling_anvil by @p[tag=MG_AZR0PT]

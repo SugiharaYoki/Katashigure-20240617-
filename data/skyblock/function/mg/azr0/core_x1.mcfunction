@@ -1,12 +1,15 @@
 #计时器0
+execute store result score MG_AZR0_rng rng7 if entity @e[tag=MG_AZR0MOB]
 execute if score MG_AZR0_Timer rng3 matches 0.. run scoreboard players remove MG_AZR0_Timer rng3 1
+execute if score MG_AZR0_Timer rng3 matches 0..5 if score MG_AZR0_rng rng7 matches 50.. run scoreboard players add MG_AZR0_Timer rng3 1
 
 execute if score MG_AZR0_Timer rng3 matches 0 run bossbar set mg:azr0_bar name [{"text": "迎战敌人  第","color":"green","bold": true},{"score":{"name":"MG_AZR0_Timer","objective":"rng2"},"color":"green","bold": true},{"text": "波","color":"green","bold": true}]
 execute if score MG_AZR0_Timer rng3 matches 0 run bossbar set mg:azr0_bar color green
 execute if score MG_AZR0_Timer rng3 matches 0 run bossbar set mg:azr0_bar style progress
 execute if score MG_AZR0_Timer rng3 matches 0 run bossbar set mg:azr0_bar value 1
 execute if score MG_AZR0_Timer rng3 matches 0 run bossbar set mg:azr0_bar max 1
-execute if score MG_AZR0_Timer rng3 matches 0 run effect give @a[tag=MG_AZR0PT] speed 5 2 true
+execute if score MG_AZR0_Timer rng3 matches 0 run effect give @a[tag=MG_AZR0PT,scores={Azr0_SKILL_16=0..2}] speed 5 2 true
+execute if score MG_AZR0_Timer rng3 matches 0 run effect give @a[tag=MG_AZR0PT,scores={Azr0_SKILL_16=3}] speed 6 3 true
 execute if score MG_AZR0_Timer rng3 matches 0 run effect give @a[tag=MG_AZR0PT] resistance 5 1 true
 execute if score MG_AZR0_Timer rng3 matches 10 run function skyblock:mg/azr0/event/general_end_round
 execute if score MG_AZR0_Timer rng3 matches 10 if score MG_AZR0_Timer rng2 matches 1..29 run kill @e[type=marker,tag=mg_azr0_MobPortals]

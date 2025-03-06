@@ -15,10 +15,11 @@ execute at @s rotated ~ 0 if entity @s[scores={Azr0_SKILL_14=3..}] run particle 
 
 execute if entity @s[scores={Azr0_SKILL_14=1}] run scoreboard players set @s Azr0_SkillEquip_1_timer 120
 execute if entity @s[scores={Azr0_SKILL_14=2}] run scoreboard players set @s Azr0_SkillEquip_1_timer 112
-execute if entity @s[scores={Azr0_SKILL_14=3}] run scoreboard players set @s Azr0_SkillEquip_1_timer 80
+execute if entity @s[scores={Azr0_SKILL_14=3..}] run scoreboard players set @s Azr0_SkillEquip_1_timer 80
 
 summon marker ~ ~ ~ {Tags:["Azr0_SKILL_14"]}
 execute if entity @s[scores={Azr0_SKILL_14=1}] run scoreboard players set @n[type=marker,tag=Azr0_SKILL_14] rng2 1
 execute if entity @s[scores={Azr0_SKILL_14=2}] run scoreboard players set @n[type=marker,tag=Azr0_SKILL_14] rng2 2
 execute if entity @s[scores={Azr0_SKILL_14=3}] run scoreboard players set @n[type=marker,tag=Azr0_SKILL_14] rng2 3
+execute if entity @s[scores={Azr0_SKILL_14=4}] run scoreboard players set @n[type=marker,tag=Azr0_SKILL_14] rng2 4
 execute at @s rotated ~ 0 run tp @n[type=marker,tag=Azr0_SKILL_14] ^ ^ ^2.5 facing ^ ^ ^3

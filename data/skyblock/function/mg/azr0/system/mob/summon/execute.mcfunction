@@ -16,10 +16,16 @@ execute if score MG_AZR0_rng rng3 matches -30..10 at @e[tag=mg_azr0_MobPortals,t
 execute unless entity @a[tag=MG_AZR0PT,scores={Azr0_UPG_hp=..2}] if score MG_AZR0_rng rng3 matches 11..16 at @e[tag=mg_azr0_MobPortals,type=marker,limit=1,sort=random] run function skyblock:mg/azr0/m/pillager
 execute if score MG_AZR0_rng rng3 matches 17..26 at @e[tag=mg_azr0_MobPortals,type=marker,limit=1,sort=random] run function skyblock:mg/azr0/m/vindicator
 execute if score MG_AZR0_rng rng3 matches 27..36 at @e[tag=mg_azr0_MobPortals,type=marker,limit=1,sort=random] run function skyblock:mg/azr0/m/silverfish
-execute unless entity @a[tag=MG_AZR0PT,scores={Azr0_UPG_hp=..3}] if score MG_AZR0_rng rng3 matches 37..44 at @e[tag=mg_azr0_MobPortals,type=marker,limit=1,sort=random] run function skyblock:mg/azr0/m/skeleton
-execute if score MG_AZR0_rng rng3 matches 45..60 at @e[tag=mg_azr0_MobPortals,type=marker,limit=1,sort=random] run function skyblock:mg/azr0/m/husk
-execute if score MG_AZR0_rng rng3 matches 61..67 at @e[tag=mg_azr0_MobPortals,type=marker,limit=1,sort=random] run function skyblock:mg/azr0/m/stray
-execute unless entity @a[tag=MG_AZR0PT,scores={Azr0_UPG_hp=..5}] if score MG_AZR0_rng rng3 matches 68..73 at @e[tag=mg_azr0_MobPortals,type=marker,limit=1,sort=random] run function skyblock:mg/azr0/m/bogged
+execute unless entity @a[tag=MG_AZR0PT,scores={Azr0_UPG_hp=..3}] if score MG_AZR0_rng rng3 matches 37..40 at @e[tag=mg_azr0_MobPortals,type=marker,limit=1,sort=random] run function skyblock:mg/azr0/m/skeleton
+
+execute if score MG_AZR0_rng rng3 matches 41..43 at @e[tag=mg_azr0_MobPortals,type=marker,limit=1,sort=random] run function skyblock:mg/azr0/m/zombie
+execute if score MG_AZR0_rng rng3 matches 44..60 at @e[tag=mg_azr0_MobPortals,type=marker,limit=1,sort=random] run function skyblock:mg/azr0/m/husk
+execute if score MG_AZR0_rng rng3 matches 61..62 at @e[tag=mg_azr0_MobPortals,type=marker,limit=1,sort=random] run function skyblock:mg/azr0/m/stray
+execute if score MG_AZR0_rng rng3 matches 63..66 at @e[tag=mg_azr0_MobPortals,type=marker,limit=1,sort=random] run function skyblock:mg/azr0/m/pillager
+execute unless entity @a[tag=MG_AZR0PT,scores={Azr0_UPG_hp=..5}] if score MG_AZR0_rng rng3 matches 67..68 at @e[tag=mg_azr0_MobPortals,type=marker,limit=1,sort=random] run function skyblock:mg/azr0/m/bogged
+execute if score MG_AZR0_rng rng3 matches 69..70 at @e[tag=mg_azr0_MobPortals,type=marker,limit=1,sort=random] run function skyblock:mg/azr0/m/zombie
+execute if score MG_AZR0_rng rng3 matches 71 at @e[tag=mg_azr0_MobPortals,type=marker,limit=1,sort=random] run function skyblock:mg/azr0/m/vindicator
+execute if score MG_AZR0_rng rng3 matches 72..73 at @e[tag=mg_azr0_MobPortals,type=marker,limit=1,sort=random] run function skyblock:mg/azr0/m/silverfish
 execute if score MG_AZR0_rng rng3 matches 74..79 at @e[tag=mg_azr0_MobPortals,type=marker,limit=1,sort=random] run function skyblock:mg/azr0/m/creeper
 execute if score MG_AZR0_rng rng3 matches 80..83 at @e[tag=mg_azr0_MobPortals,type=marker,limit=1,sort=random] run function skyblock:mg/azr0/m/zombie_villager
 

@@ -25,6 +25,7 @@ scoreboard players set @s Azr0_UPG_sword_speed 0
 scoreboard players set @s Azr0_UPG_sword_sweeping 0
 scoreboard players set @s Azr0_UPG_axe_damage -1
 scoreboard players set @s Azr0_UPG_axe_recharge 0
+scoreboard players set @s Azr0_UPG_axe_range 0
 scoreboard players set @s Azr0_UPG_bow -1
 scoreboard players set @s Azr0_UPG_crossbow -1
 scoreboard players set @s Azr0_UPG_bow_punch 0

@@ -11,7 +11,11 @@ execute if score MG_AZR0_Timer rng2 matches 38..57 store result score MG_AZR0_Ti
 execute if score MG_AZR0_Timer rng2 matches 58..77 store result score MG_AZR0_Timer rng4 run random value 15..29
 execute if score MG_AZR0_Timer rng2 matches 78..97 store result score MG_AZR0_Timer rng4 run random value 14..27
 execute if score MG_AZR0_Timer rng2 matches 98..127 store result score MG_AZR0_Timer rng4 run random value 13..25
-execute if score MG_AZR0_Timer rng2 matches 128..160 store result score MG_AZR0_Timer rng4 run random value 12..24
-execute if score MG_AZR0_Timer rng2 matches 161..200 store result score MG_AZR0_Timer rng4 run random value 11..23
-execute if score MG_AZR0_Timer rng2 matches 201..230 store result score MG_AZR0_Timer rng4 run random value 10..22
-execute if score MG_AZR0_Timer rng2 matches 231.. store result score MG_AZR0_Timer rng4 run random value 9..21
+execute if score MG_AZR0_Timer rng2 matches 128..160 store result score MG_AZR0_Timer rng4 run random value 12..23
+execute if score MG_AZR0_Timer rng2 matches 161..200 store result score MG_AZR0_Timer rng4 run random value 11..21
+execute if score MG_AZR0_Timer rng2 matches 201..230 store result score MG_AZR0_Timer rng4 run random value 10..19
+execute if score MG_AZR0_Timer rng2 matches 231..270 store result score MG_AZR0_Timer rng4 run random value 9..18
+execute if score MG_AZR0_Timer rng2 matches 271..320 store result score MG_AZR0_Timer rng4 run random value 8..16
+execute if score MG_AZR0_Timer rng2 matches 321..360 store result score MG_AZR0_Timer rng4 run random value 7..14
+execute if score MG_AZR0_Timer rng2 matches 361..399 store result score MG_AZR0_Timer rng4 run random value 6..13
+execute if score MG_AZR0_Timer rng2 matches 400.. store result score MG_AZR0_Timer rng4 run random value 5..11

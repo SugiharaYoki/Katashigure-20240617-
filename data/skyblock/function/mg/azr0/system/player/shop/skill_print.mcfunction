@@ -69,4 +69,4 @@ execute if entity @s[scores={Azr0_SkillEquip_1rng=20}] run function skyblock:mg/
 execute if entity @s[scores={Azr0_SkillEquip_2rng=20}] run function skyblock:mg/azr0/system/player/shop/skill_print/20 {"skill":20, "slot":13}
 execute if entity @s[scores={Azr0_SkillEquip_3rng=20}] run function skyblock:mg/azr0/system/player/shop/skill_print/20 {"skill":20, "slot":22}
 
-
+item replace entity @s inventory.14 with ender_eye[custom_data={"azr0skill":true},custom_name='{"text":"「刷新赐福」","italic":false,"color":"green"}',lore=['{"text":"换一批赐福技能试试！","color":"white","italic":true}','{"text":"消耗：50绿宝石","color":"red","italic":true}']]

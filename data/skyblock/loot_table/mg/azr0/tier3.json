@@ -72,7 +72,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:diamond",
-          "weight": 45
+          "weight": 120
         }
       ]
     }
