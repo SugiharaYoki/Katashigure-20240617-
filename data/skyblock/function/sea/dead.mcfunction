@@ -106,7 +106,7 @@ scoreboard players set 10 constant 10
 #scoreboard players operation @s Perm_PersonSHD += @s sea_i_trim_ghost
 #scoreboard players operation @s Perm_PersonSHD += @s sea_i_trim_skeleton
 execute as @s store result score @s sea_i_emerald run clear @s emerald 0
-scoreboard players operation @s sea_killmob /= 3 constant
+scoreboard players operation @s sea_killmob /= 5 constant
 scoreboard players operation @s Perm_PersonSHD += @s sea_killmob
 scoreboard players operation @s sea_remiel_shadow = @s sea_i_emerald
 #scoreboard players set @s sea_i_trim_zombie 0
