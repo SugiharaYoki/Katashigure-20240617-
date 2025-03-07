@@ -52,6 +52,8 @@ execute if items entity @s player.cursor shulker_spawn_egg run scoreboard player
 execute if items entity @s player.cursor zombie_villager_spawn_egg run scoreboard players add @s Azr0_SKILL_20 1
 execute if items entity @s player.cursor wolf_spawn_egg run scoreboard players add @s Azr0_SKILL_21 1
 execute if items entity @s player.cursor wolf_spawn_egg run scoreboard players set @s Azr0_SkillEquip_3 7
+execute if items entity @s player.cursor dolphin_spawn_egg run scoreboard players add @s Azr0_SKILL_22 1
+execute if items entity @s player.cursor dolphin_spawn_egg run scoreboard players set @s Azr0_SkillEquip_3 8
 
 scoreboard players set @s[tag=AZR0SHOP_SUCCESS] Azr0_SkillEquip_1rng 0
 scoreboard players set @s[tag=AZR0SHOP_SUCCESS] Azr0_SkillEquip_2rng 0
