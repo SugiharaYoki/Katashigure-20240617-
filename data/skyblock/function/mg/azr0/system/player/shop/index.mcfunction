@@ -53,6 +53,7 @@ execute if items entity @s weapon.offhand *[custom_data={"azr0skill_core5":true}
 execute if entity @s[scores={Azr0_SKILL_18_timer=1..}] at @s run function skyblock:mg/azr0/system/player/skill/skill_18_e
 execute if items entity @s weapon.offhand *[custom_data={"azr0skill_core6":true}] at @s run function skyblock:mg/azr0/system/player/skill/skill_19
 execute if items entity @s weapon.offhand *[custom_data={"azr0skill_core7":true}] at @s run function skyblock:mg/azr0/system/player/skill/skill_21
+execute if items entity @s weapon.offhand *[custom_data={"azr0skill_core8":true}] at @s run function skyblock:mg/azr0/system/player/skill/skill_22
 item replace entity @s weapon.offhand with air
 execute as @a[tag=MG_AZR0PT,scores={Azr0_SKILL_20=1..}] at @s if entity @e[distance=0..8,tag=MG_AZR0MOB] run function skyblock:mg/azr0/system/player/skill/skill_20
 

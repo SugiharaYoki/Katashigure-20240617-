@@ -9,7 +9,7 @@ execute if entity @s[scores={Azr0_SKILL_21=3}] run summon wolf ~ ~ ~ {CollarColo
 data modify entity @n[tag=MG_AZR0FRIENDLY,tag=!MG_AZR0WOLF_NOUUID,type=wolf] Owner set from entity @p[tag=MG_AZR0PT] UUID
 tag @n[tag=MG_AZR0FRIENDLY,tag=!MG_AZR0WOLF_NOUUID,type=wolf] add MG_AZR0WOLF_NOUUID
 
-execute if entity @s[scores={Azr0_SKILL_21=1}] run scoreboard players set @s Azr0_SkillEquip_3_timer 300
+execute if entity @s[scores={Azr0_SKILL_21=1}] run scoreboard players set @s Azr0_SkillEquip_3_timer 200
 execute if entity @s[scores={Azr0_SKILL_21=2}] run scoreboard players set @s Azr0_SkillEquip_3_timer 120
 execute if entity @s[scores={Azr0_SKILL_21=3}] run scoreboard players set @s Azr0_SkillEquip_3_timer 40
 
