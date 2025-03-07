@@ -10,10 +10,10 @@ execute if score MG_AZR5_rng rng1 matches 1..3 as @e[tag=MG_AZR0MOB,tag=MG_AZR0M
 execute as @e[tag=MG_AZR0MOB,tag=MG_AZR0MOB_smoke_grenade,scores={health=..4},tag=!MG_AZR0MOB_smoke_grenade_done] at @s run tag @s add MG_AZR0MOB_smoke_grenade_done
 
 execute as @e[tag=MG_AZR0MOB,tag=MG_AZR0MOB_grenade,tag=!MG_AZR0MOB_grenade_done] at @s store result score @s health run data get entity @s Health
-execute if score MG_AZR5_rng rng1 matches 1..3 as @e[tag=MG_AZR0MOB,tag=MG_AZR0MOB_grenade,scores={health=..10},tag=!MG_AZR0MOB_grenade_done] at @s run playsound item.firecharge.use hostile @a ~ ~ ~ 1 1.3
-execute if score MG_AZR5_rng rng1 matches 1..3 as @e[tag=MG_AZR0MOB,tag=MG_AZR0MOB_grenade,scores={health=..10},tag=!MG_AZR0MOB_grenade_done] at @s run summon marker ~ ~0.3 ~ {Tags:["MG_AZR0MOB_grenade_marker"]}
-execute if score MG_AZR5_rng rng1 matches 1..3 as @e[tag=MG_AZR0MOB,tag=MG_AZR0MOB_grenade,scores={health=..10},tag=!MG_AZR0MOB_grenade_done] at @s run playsound block.note_block.snare hostile @a ~ ~ ~ 0.7 1.3
-execute if score MG_AZR5_rng rng1 matches 1..3 as @e[tag=MG_AZR0MOB,tag=MG_AZR0MOB_grenade,scores={health=..10},tag=!MG_AZR0MOB_grenade_done] at @s run item replace entity @s weapon.mainhand with air
+execute if score MG_AZR5_rng rng1 matches 2..4 as @e[tag=MG_AZR0MOB,tag=MG_AZR0MOB_grenade,scores={health=..10},tag=!MG_AZR0MOB_grenade_done] at @s run playsound item.firecharge.use hostile @a ~ ~ ~ 1 1.3
+execute if score MG_AZR5_rng rng1 matches 2..4 as @e[tag=MG_AZR0MOB,tag=MG_AZR0MOB_grenade,scores={health=..10},tag=!MG_AZR0MOB_grenade_done] at @s run summon marker ~ ~0.3 ~ {Tags:["MG_AZR0MOB_grenade_marker"]}
+execute if score MG_AZR5_rng rng1 matches 2..4 as @e[tag=MG_AZR0MOB,tag=MG_AZR0MOB_grenade,scores={health=..10},tag=!MG_AZR0MOB_grenade_done] at @s run playsound block.note_block.snare hostile @a ~ ~ ~ 0.7 1.3
+execute if score MG_AZR5_rng rng1 matches 2..4 as @e[tag=MG_AZR0MOB,tag=MG_AZR0MOB_grenade,scores={health=..10},tag=!MG_AZR0MOB_grenade_done] at @s run item replace entity @s weapon.mainhand with air
 execute as @e[tag=MG_AZR0MOB,tag=MG_AZR0MOB_grenade,scores={health=..10},tag=!MG_AZR0MOB_grenade_done] at @s run tag @s add MG_AZR0MOB_grenade_done
 
 
@@ -26,3 +26,13 @@ execute as @e[type=marker,tag=MG_AZR0_FIRE,scores={rng1=6}] at @s if block ~ ~ ~
 execute as @e[type=marker,tag=MG_AZR0_FIRE,scores={rng1=6}] at @s if block ~ ~ ~ air run setblock ~ ~ ~ fire
 execute as @e[type=marker,tag=MG_AZR0_FIRE,scores={rng1=20}] at @s if block ~ ~ ~ fire run setblock ~ ~ ~ air
 execute as @e[type=marker,tag=MG_AZR0_FIRE,scores={rng1=20..}] at @s run kill @s
+
+execute as @n[tag=MG_AZR0MOB_ravager,tag=!MG_AZR0_ravager_ridden] at @s if entity @n[type=vindicator,distance=..3.1] run tag @s add MG_AZR0_ravager_ridden_temp
+execute as @n[tag=MG_AZR0MOB_ravager,tag=!MG_AZR0_ravager_ridden] at @s run ride @n[type=vindicator,distance=..3.1] mount @s
+execute as @n[tag=MG_AZR0MOB_ravager,tag=!MG_AZR0_ravager_ridden,tag=MG_AZR0_ravager_ridden_temp] at @s run tag @s add MG_AZR0_ravager_ridden
+execute as @n[tag=MG_AZR0MOB_ravager,tag=!MG_AZR0_ravager_ridden] at @s if entity @n[type=pillager,distance=..3.3] run tag @s add MG_AZR0_ravager_ridden_temp
+execute as @n[tag=MG_AZR0MOB_ravager,tag=!MG_AZR0_ravager_ridden] at @s run ride @n[type=pillager,distance=..3.3] mount @s
+execute as @n[tag=MG_AZR0MOB_ravager,tag=!MG_AZR0_ravager_ridden,tag=MG_AZR0_ravager_ridden_temp] at @s run tag @s add MG_AZR0_ravager_ridden
+
+
+

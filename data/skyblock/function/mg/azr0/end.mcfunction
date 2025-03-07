@@ -58,7 +58,7 @@ scoreboard objectives remove Azr0_SKILL_18
 scoreboard objectives remove Azr0_SKILL_18_timer
 scoreboard objectives remove Azr0_SKILL_19
 scoreboard objectives remove Azr0_SKILL_20
-
+scoreboard objectives remove Azr0_SKILL_20_timer
 
 execute as @e[type=marker,tag=MG_AZR0_FIRE] at @s if block ~ ~ ~ fire run setblock ~ ~ ~ air
 execute as @e[type=marker,tag=MG_AZR0_FIRE] at @s run kill @s
@@ -102,6 +102,7 @@ scoreboard players set isStarted azr0_system 0
 
 kill @e[tag=mg_azr0_MobPortals,type=marker]
 kill @e[tag=MG_AZR0MOB]
+kill @e[tag=MG_AZR0FRIENDLY]
 execute at @n[tag=mg_azr0,type=marker] run kill @e[type=item,distance=..120]
 execute at @n[tag=mg_azr0,type=marker] run gamemode adventure @a[distance=0..200,gamemode=spectator,tag=!ServerManager,tag=MG_AZR0PT_dead]
 execute at @n[tag=mg_azr0,type=marker] run gamemode creative @a[distance=0..200,gamemode=spectator,tag=ServerManager,tag=MG_AZR0PT_dead]
