@@ -68,6 +68,34 @@ execute if entity @s[scores={Azr0_SkillEquip_3rng=19}] run function skyblock:mg/
 execute if entity @s[scores={Azr0_SkillEquip_1rng=20}] run function skyblock:mg/azr0/system/player/shop/skill_print/20 {"skill":20, "slot":4}
 execute if entity @s[scores={Azr0_SkillEquip_2rng=20}] run function skyblock:mg/azr0/system/player/shop/skill_print/20 {"skill":20, "slot":13}
 execute if entity @s[scores={Azr0_SkillEquip_3rng=20}] run function skyblock:mg/azr0/system/player/shop/skill_print/20 {"skill":20, "slot":22}
+execute if entity @s[scores={Azr0_SkillEquip_1rng=21}] run function skyblock:mg/azr0/system/player/shop/skill_print/11 {"skill":21, "slot":4}
+execute if entity @s[scores={Azr0_SkillEquip_2rng=21}] run function skyblock:mg/azr0/system/player/shop/skill_print/11 {"skill":21, "slot":13}
+execute if entity @s[scores={Azr0_SkillEquip_3rng=21}] run function skyblock:mg/azr0/system/player/shop/skill_print/11 {"skill":21, "slot":22}
+execute if entity @s[scores={Azr0_SkillEquip_1rng=22}] run function skyblock:mg/azr0/system/player/shop/skill_print/12 {"skill":22, "slot":4}
+execute if entity @s[scores={Azr0_SkillEquip_2rng=22}] run function skyblock:mg/azr0/system/player/shop/skill_print/12 {"skill":22, "slot":13}
+execute if entity @s[scores={Azr0_SkillEquip_3rng=22}] run function skyblock:mg/azr0/system/player/shop/skill_print/12 {"skill":22, "slot":22}
+execute if entity @s[scores={Azr0_SkillEquip_1rng=23}] run function skyblock:mg/azr0/system/player/shop/skill_print/13 {"skill":23, "slot":4}
+execute if entity @s[scores={Azr0_SkillEquip_2rng=23}] run function skyblock:mg/azr0/system/player/shop/skill_print/13 {"skill":23, "slot":13}
+execute if entity @s[scores={Azr0_SkillEquip_3rng=23}] run function skyblock:mg/azr0/system/player/shop/skill_print/13 {"skill":23, "slot":22}
+execute if entity @s[scores={Azr0_SkillEquip_1rng=24}] run function skyblock:mg/azr0/system/player/shop/skill_print/14 {"skill":24, "slot":4}
+execute if entity @s[scores={Azr0_SkillEquip_2rng=24}] run function skyblock:mg/azr0/system/player/shop/skill_print/14 {"skill":24, "slot":13}
+execute if entity @s[scores={Azr0_SkillEquip_3rng=24}] run function skyblock:mg/azr0/system/player/shop/skill_print/14 {"skill":24, "slot":22}
+execute if entity @s[scores={Azr0_SkillEquip_1rng=25}] run function skyblock:mg/azr0/system/player/shop/skill_print/15 {"skill":25, "slot":4}
+execute if entity @s[scores={Azr0_SkillEquip_2rng=25}] run function skyblock:mg/azr0/system/player/shop/skill_print/15 {"skill":25, "slot":13}
+execute if entity @s[scores={Azr0_SkillEquip_3rng=25}] run function skyblock:mg/azr0/system/player/shop/skill_print/15 {"skill":25, "slot":22}
+execute if entity @s[scores={Azr0_SkillEquip_1rng=26}] run function skyblock:mg/azr0/system/player/shop/skill_print/16 {"skill":26, "slot":4}
+execute if entity @s[scores={Azr0_SkillEquip_2rng=26}] run function skyblock:mg/azr0/system/player/shop/skill_print/16 {"skill":26, "slot":13}
+execute if entity @s[scores={Azr0_SkillEquip_3rng=26}] run function skyblock:mg/azr0/system/player/shop/skill_print/16 {"skill":26, "slot":22}
+execute if entity @s[scores={Azr0_SkillEquip_1rng=27}] run function skyblock:mg/azr0/system/player/shop/skill_print/17 {"skill":27, "slot":4}
+execute if entity @s[scores={Azr0_SkillEquip_2rng=27}] run function skyblock:mg/azr0/system/player/shop/skill_print/17 {"skill":27, "slot":13}
+execute if entity @s[scores={Azr0_SkillEquip_3rng=27}] run function skyblock:mg/azr0/system/player/shop/skill_print/17 {"skill":27, "slot":22}
+execute if entity @s[scores={Azr0_SkillEquip_1rng=28}] run function skyblock:mg/azr0/system/player/shop/skill_print/18 {"skill":28, "slot":4}
+execute if entity @s[scores={Azr0_SkillEquip_2rng=28}] run function skyblock:mg/azr0/system/player/shop/skill_print/18 {"skill":28, "slot":13}
+execute if entity @s[scores={Azr0_SkillEquip_3rng=28}] run function skyblock:mg/azr0/system/player/shop/skill_print/18 {"skill":28, "slot":22}
+execute if entity @s[scores={Azr0_SkillEquip_1rng=29}] run function skyblock:mg/azr0/system/player/shop/skill_print/19 {"skill":29, "slot":4}
+execute if entity @s[scores={Azr0_SkillEquip_2rng=29}] run function skyblock:mg/azr0/system/player/shop/skill_print/19 {"skill":29, "slot":13}
+execute if entity @s[scores={Azr0_SkillEquip_3rng=29}] run function skyblock:mg/azr0/system/player/shop/skill_print/19 {"skill":29, "slot":22}
+
 
 item replace entity @s[scores={Azr0_SkillPoint=1..}] inventory.14 with ender_eye[custom_data={"azr0skill":true},custom_name='{"text":"「刷新赐福」","italic":false,"color":"green"}',lore=['{"text":"换一批赐福技能试试！","color":"white","italic":true}','{"text":"消耗：50绿宝石","color":"red","italic":true}']]
 

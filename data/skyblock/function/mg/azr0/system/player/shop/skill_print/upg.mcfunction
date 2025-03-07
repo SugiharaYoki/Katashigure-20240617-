@@ -56,9 +56,9 @@ execute if items entity @s player.cursor wolf_spawn_egg run scoreboard players s
 scoreboard players set @s[tag=AZR0SHOP_SUCCESS] Azr0_SkillEquip_1rng 0
 scoreboard players set @s[tag=AZR0SHOP_SUCCESS] Azr0_SkillEquip_2rng 0
 scoreboard players set @s[tag=AZR0SHOP_SUCCESS] Azr0_SkillEquip_3rng 0
-execute if entity @s[tag=!AZR0SHOP_SUCCESS_REFRESH,tag=AZR0SHOP_SUCCESS] run say hi1
-execute if entity @s[tag=!AZR0SHOP_SUCCESS_REFRESH] run say hi2
-execute if entity @s[tag=AZR0SHOP_SUCCESS] run say hi3
+#execute if entity @s[tag=!AZR0SHOP_SUCCESS_REFRESH,tag=AZR0SHOP_SUCCESS] run say hi1
+#execute if entity @s[tag=!AZR0SHOP_SUCCESS_REFRESH] run say hi2
+#execute if entity @s[tag=AZR0SHOP_SUCCESS] run say hi3
 scoreboard players remove @s[tag=!AZR0SHOP_SUCCESS_REFRESH,tag=AZR0SHOP_SUCCESS] Azr0_SkillPoint 1
 
 tag @s remove AZR0SHOP_SUCCESS
