@@ -8,7 +8,7 @@ execute if score MG_AZR0_Timer rng7 matches 140.. store result score MG_AZR0_rng
 execute if score MG_AZR0_Timer rng7 matches 180.. store result score MG_AZR0_rng rng1 run random value 7..43
 execute if score MG_AZR0_Timer rng7 matches 250.. store result score MG_AZR0_rng rng1 run random value 7..46
 execute if score MG_AZR0_Timer rng7 matches 320.. store result score MG_AZR0_rng rng1 run random value 7..49
-execute if score MG_AZR0_Timer rng7 matches 350.. store result score MG_AZR0_rng rng1 run random value 7..51
+execute if score MG_AZR0_Timer rng7 matches 350.. store result score MG_AZR0_rng rng1 run random value 7..53
 
 execute if score MG_AZR0_rng rng1 matches 1..10 run function skyblock:mg/azr0/particle/m_mob_tier1
 execute if score MG_AZR0_rng rng1 matches 1..10 run summon zombie ~ ~ ~ {CustomName:'[{"text":"僵尸"}]',DeathLootTable:"skyblock:mg/azr0/tier1",Tags:["MG_AZR0MOB"],attributes:[{id:"generic.attack_damage",base:1.0},{id:"generic.movement_speed",base:0.215},{id:"generic.max_health",base:6},{id:"generic.follow_range",base:186}],HandItems:[{},{}],HandDropChances:[0f,0f],ArmorItems:[{},{},{},{}],ArmorDropChances:[0f,0f,0f,0f],Health:6,PersistenceRequired:1b}
@@ -51,5 +51,8 @@ execute if score MG_AZR0_rng rng1 matches 49 run summon zombie ~ ~ ~ {CustomName
 
 execute if score MG_AZR0_rng rng1 matches 50..51 run function skyblock:mg/azr0/particle/m_mob_tier2
 execute if score MG_AZR0_rng rng1 matches 50..51 run summon zombie ~ ~ ~ {CustomName:'[{"text":"爆弹僵尸"}]',DeathLootTable:"skyblock:mg/azr0/tier2m",Tags:["MG_AZR0MOB","MG_AZR0MOB_grenade"],attributes:[{id:"generic.attack_damage",base:2.5},{id:"generic.movement_speed",base:0.265},{id:"generic.max_health",base:18},{id:"generic.follow_range",base:186}],HandItems:[{id:fire_charge,count:1},{}],HandDropChances:[0f,0f],ArmorItems:[{id:leather_boots,count:1,components:{dyed_color:{rgb:3550977},trim:{material:"redstone",pattern:dune}}},{id:leather_leggings,count:1,components:{dyed_color:{rgb:3550977},trim:{material:"redstone",pattern:dune}}},{id:leather_chestplate,count:1,components:{dyed_color:{rgb:3550977},trim:{material:"redstone",pattern:dune}}},{}],ArmorDropChances:[0f,0f,0f,0f],Health:18,PersistenceRequired:1b}
+
+execute if score MG_AZR0_rng rng1 matches 52..53 run function skyblock:mg/azr0/particle/m_mob_tier2
+execute if score MG_AZR0_rng rng1 matches 52..53 run summon zombie ~ ~ ~ {CustomName:'[{"text":"僵尸斥候"}]',DeathLootTable:"skyblock:mg/azr0/tier2",Tags:["MG_AZR0MOB","MG_AZR0MOB_SlownessImmune","MG_AZR0MOB_smoke_grenade"],attributes:[{id:"generic.attack_damage",base:3.5},{id:"generic.movement_speed",base:0.29},{id:"generic.max_health",base:12},{id:"generic.follow_range",base:186}],HandItems:[{id:spyglass,count:1},{id:iron_sword,count:1}],HandDropChances:[0f,0f],ArmorItems:[{id:leather_boots,count:1,components:{dyed_color:{rgb:10288966},trim:{material:"quartz",pattern:wayfinder}}},{id:leather_leggings,count:1,components:{dyed_color:{rgb:10288966},trim:{material:"quartz",pattern:wayfinder}}},{id:leather_chestplate,count:1,components:{dyed_color:{rgb:10288966},trim:{material:"quartz",pattern:wayfinder}}},{}],ArmorDropChances:[0f,0f,0f,0f],Health:12,PersistenceRequired:1b}
 
 scoreboard players add MG_AZR0_Timer rng7 1

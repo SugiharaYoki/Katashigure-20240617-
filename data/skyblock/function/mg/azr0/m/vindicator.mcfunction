@@ -1,7 +1,8 @@
 execute if score MG_AZR0_Timer rng7 matches 50.. store result score MG_AZR0_rng rng1 run random value 1..20
 execute if score MG_AZR0_Timer rng7 matches 200.. store result score MG_AZR0_rng rng1 run random value 3..30
 execute if score MG_AZR0_Timer rng7 matches 390.. store result score MG_AZR0_rng rng1 run random value 10..35
-execute if score MG_AZR0_Timer rng7 matches 560.. store result score MG_AZR0_rng rng1 run random value 15..40
+execute if score MG_AZR0_Timer rng7 matches 560.. store result score MG_AZR0_rng rng1 run random value 15..39
+execute if score MG_AZR0_Timer rng7 matches 660.. store result score MG_AZR0_rng rng1 run random value 15..40
 
 execute if score MG_AZR0_Timer rng7 matches 50.. run function skyblock:mg/azr0/particle/m_mob_human
 
@@ -22,4 +23,7 @@ execute if score MG_AZR0_rng rng1 matches 36..39 run function skyblock:mg/azr0/p
 execute if score MG_AZR0_rng rng1 matches 36..39 run summon vindicator ~ ~ ~ {CustomName:'[{"text":"神庭先锋军·剑"}]',DeathLootTable:"skyblock:mg/azr0/tier3",Tags:["MG_AZR0MOB"],attributes:[{id:"generic.attack_damage",base:1.0},{id:"generic.movement_speed",base:0.23},{id:"generic.max_health",base:34},{id:"generic.follow_range",base:186},{id:"generic.armor",base:4}],HandItems:[{id:diamond_sword,count:1},{}],HandDropChances:[0f,0f],ArmorItems:[{},{},{id:iron_chestplate,count:1,components:{enchantments:{projectile_protection:6b}}},{}],ArmorDropChances:[0f,0f,0f,0f],Health:34,PersistenceRequired:1b}
 execute if score MG_AZR0_rng rng1 matches 36..39 run function skyblock:mg/azr0/particle/m_mob_tier3
 execute if score MG_AZR0_rng rng1 matches 36..39 run summon vindicator ~ ~ ~ {CustomName:'[{"text":"神庭先锋军·斧"}]',DeathLootTable:"skyblock:mg/azr0/tier3",Tags:["MG_AZR0MOB"],attributes:[{id:"generic.attack_damage",base:1.0},{id:"generic.movement_speed",base:0.225},{id:"generic.max_health",base:34},{id:"generic.follow_range",base:186},{id:"generic.armor",base:4}],HandItems:[{id:diamond_axe,count:1},{}],HandDropChances:[0f,0f],ArmorItems:[{},{},{id:iron_chestplate,count:1,components:{enchantments:{projectile_protection:2b}}},{}],ArmorDropChances:[0f,0f,0f,0f],Health:34,PersistenceRequired:1b}
+
+execute if score MG_AZR0_rng rng1 matches 40 run function skyblock:mg/azr0/particle/m_mob_tier4
+execute if score MG_AZR0_rng rng1 matches 40 run summon ravager ~ ~ ~ {CustomName:'[{"text":"神庭先锋兽"}]',DeathLootTable:"skyblock:mg/azr0/tier4",Tags:["MG_AZR0MOB","MG_AZR0MOB_SlownessImmune","MG_AZR0MOB_ravager"],attributes:[{id:"generic.attack_damage",base:5.0},{id:"generic.movement_speed",base:0.20},{id:"generic.max_health",base:50},{id:"generic.follow_range",base:186},{id:"generic.armor",base:4},{id:"generic.knockback_resistance",base:1}],Health:50,PersistenceRequired:1b}
 

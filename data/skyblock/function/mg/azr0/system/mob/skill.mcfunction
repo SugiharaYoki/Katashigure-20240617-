@@ -26,3 +26,13 @@ execute as @e[type=marker,tag=MG_AZR0_FIRE,scores={rng1=6}] at @s if block ~ ~ ~
 execute as @e[type=marker,tag=MG_AZR0_FIRE,scores={rng1=6}] at @s if block ~ ~ ~ air run setblock ~ ~ ~ fire
 execute as @e[type=marker,tag=MG_AZR0_FIRE,scores={rng1=20}] at @s if block ~ ~ ~ fire run setblock ~ ~ ~ air
 execute as @e[type=marker,tag=MG_AZR0_FIRE,scores={rng1=20..}] at @s run kill @s
+
+execute as @n[tag=MG_AZR0MOB_ravager,tag=!MG_AZR0_ravager_ridden] at @s if entity @n[type=vindicator,distance=..3.1] run tag @s add MG_AZR0_ravager_ridden_temp
+execute as @n[tag=MG_AZR0MOB_ravager,tag=!MG_AZR0_ravager_ridden] at @s run ride @n[type=vindicator,distance=..3.1] mount @s
+execute as @n[tag=MG_AZR0MOB_ravager,tag=!MG_AZR0_ravager_ridden,tag=MG_AZR0_ravager_ridden_temp] at @s run tag @s add MG_AZR0_ravager_ridden
+execute as @n[tag=MG_AZR0MOB_ravager,tag=!MG_AZR0_ravager_ridden] at @s if entity @n[type=pillager,distance=..3.3] run tag @s add MG_AZR0_ravager_ridden_temp
+execute as @n[tag=MG_AZR0MOB_ravager,tag=!MG_AZR0_ravager_ridden] at @s run ride @n[type=pillager,distance=..3.3] mount @s
+execute as @n[tag=MG_AZR0MOB_ravager,tag=!MG_AZR0_ravager_ridden,tag=MG_AZR0_ravager_ridden_temp] at @s run tag @s add MG_AZR0_ravager_ridden
+
+
+
