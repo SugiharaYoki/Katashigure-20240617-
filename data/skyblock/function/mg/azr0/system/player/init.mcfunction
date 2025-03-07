@@ -98,5 +98,9 @@ execute if entity @s[scores={Azr0_UPG_OTSD_armor_helmet=2}] run item replace ent
 execute if entity @s[scores={Azr0_UPG_OTSD_armor_helmet=3}] run item replace entity @s armor.head with iron_helmet[custom_data={azr0armor_head:true},attribute_modifiers=[{type:"generic.armor",id:"mg_azr0_armor:head_0_1",amount:6,operation:"add_value"}],unbreakable={},enchantments={binding_curse:1b,vanishing_curse:1b},enchantment_glint_override=false]
 execute if entity @s[scores={Azr0_UPG_OTSD_armor_helmet=4}] run item replace entity @s armor.head with iron_helmet[custom_data={azr0armor_head:true},attribute_modifiers=[{type:"generic.armor",id:"mg_azr0_armor:head_0_1",amount:8,operation:"add_value"}],unbreakable={},enchantments={binding_curse:1b,vanishing_curse:1b},enchantment_glint_override=false]
 
+execute if entity @s[scores={Azr0_UPG_OTSD_skill_point=1..}] run scoreboard players add @s Azr0_SkillPoint 1
+execute if entity @s[scores={Azr0_UPG_OTSD_skill_point=2..}] run scoreboard players add @s Azr0_SkillPoint 1
+execute if entity @s[scores={Azr0_UPG_OTSD_skill_point=3..}] run scoreboard players add @s Azr0_SkillPoint 1
+
 tag @s add Gaming
 effect clear @s
