@@ -10,10 +10,10 @@ execute if score MG_AZR5_rng rng1 matches 1..3 as @e[tag=MG_AZR0MOB,tag=MG_AZR0M
 execute as @e[tag=MG_AZR0MOB,tag=MG_AZR0MOB_smoke_grenade,scores={health=..4},tag=!MG_AZR0MOB_smoke_grenade_done] at @s run tag @s add MG_AZR0MOB_smoke_grenade_done
 
 execute as @e[tag=MG_AZR0MOB,tag=MG_AZR0MOB_grenade,tag=!MG_AZR0MOB_grenade_done] at @s store result score @s health run data get entity @s Health
-execute if score MG_AZR5_rng rng1 matches 1..3 as @e[tag=MG_AZR0MOB,tag=MG_AZR0MOB_grenade,scores={health=..10},tag=!MG_AZR0MOB_grenade_done] at @s run playsound item.firecharge.use hostile @a ~ ~ ~ 1 1.3
-execute if score MG_AZR5_rng rng1 matches 1..3 as @e[tag=MG_AZR0MOB,tag=MG_AZR0MOB_grenade,scores={health=..10},tag=!MG_AZR0MOB_grenade_done] at @s run summon marker ~ ~0.3 ~ {Tags:["MG_AZR0MOB_grenade_marker"]}
-execute if score MG_AZR5_rng rng1 matches 1..3 as @e[tag=MG_AZR0MOB,tag=MG_AZR0MOB_grenade,scores={health=..10},tag=!MG_AZR0MOB_grenade_done] at @s run playsound block.note_block.snare hostile @a ~ ~ ~ 0.7 1.3
-execute if score MG_AZR5_rng rng1 matches 1..3 as @e[tag=MG_AZR0MOB,tag=MG_AZR0MOB_grenade,scores={health=..10},tag=!MG_AZR0MOB_grenade_done] at @s run item replace entity @s weapon.mainhand with air
+execute if score MG_AZR5_rng rng1 matches 2..4 as @e[tag=MG_AZR0MOB,tag=MG_AZR0MOB_grenade,scores={health=..10},tag=!MG_AZR0MOB_grenade_done] at @s run playsound item.firecharge.use hostile @a ~ ~ ~ 1 1.3
+execute if score MG_AZR5_rng rng1 matches 2..4 as @e[tag=MG_AZR0MOB,tag=MG_AZR0MOB_grenade,scores={health=..10},tag=!MG_AZR0MOB_grenade_done] at @s run summon marker ~ ~0.3 ~ {Tags:["MG_AZR0MOB_grenade_marker"]}
+execute if score MG_AZR5_rng rng1 matches 2..4 as @e[tag=MG_AZR0MOB,tag=MG_AZR0MOB_grenade,scores={health=..10},tag=!MG_AZR0MOB_grenade_done] at @s run playsound block.note_block.snare hostile @a ~ ~ ~ 0.7 1.3
+execute if score MG_AZR5_rng rng1 matches 2..4 as @e[tag=MG_AZR0MOB,tag=MG_AZR0MOB_grenade,scores={health=..10},tag=!MG_AZR0MOB_grenade_done] at @s run item replace entity @s weapon.mainhand with air
 execute as @e[tag=MG_AZR0MOB,tag=MG_AZR0MOB_grenade,scores={health=..10},tag=!MG_AZR0MOB_grenade_done] at @s run tag @s add MG_AZR0MOB_grenade_done
 
 
