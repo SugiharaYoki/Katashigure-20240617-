@@ -1,6 +1,6 @@
-forceload add 125078 -241 125078 -241
+$forceload add $(x) $(z)
 #CENTER
-execute positioned 125078 3 -241 run summon marker ~ ~ ~ {Tags:["mg_azr0"]}
+$execute positioned $(x) $(y) $(z) run summon marker ~ ~ ~ {Tags:["mg_azr0"]}
 
 
 scoreboard players set MG_AZR0_Timer rng1 0
@@ -151,7 +151,8 @@ execute at @n[tag=mg_azr0,type=marker] run kill @e[type=item,distance=..120]
 
 
 #启动core
-execute at @n[tag=mg_azr0,type=marker] positioned ~ ~-3 ~-1 run setblock 125078 0 -242 minecraft:redstone_block
+#execute at @n[tag=mg_azr0,type=marker] positioned ~ ~-3 ~-1 run setblock 125078 0 -242 minecraft:redstone_block
+execute at @n[tag=mg_azr0,type=marker] positioned ~ ~-3 ~-1 run scoreboard players set isStarted azr0_system 1
 
 tag @a remove MG_AZR0PT_dead
 

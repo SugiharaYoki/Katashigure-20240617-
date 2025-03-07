@@ -6,7 +6,7 @@ execute if items entity @s[tag=!MG_AZR0PT] player.cursor diamond_pickaxe[custom_
 
 
 execute if items entity @s[tag=!MG_AZR0PT] player.cursor nether_star[custom_data={"azr0outside":true}] run tellraw @a[distance=0..200] [{"selector":"@s","color":"yellow"},{"text":"开启了游戏","color":"yellow"}]
-execute if items entity @s[tag=!MG_AZR0PT] player.cursor nether_star[custom_data={"azr0outside":true}] run function skyblock:mg/azr0/init
+execute if items entity @s[tag=!MG_AZR0PT] player.cursor nether_star[custom_data={"azr0outside":true}] run function skyblock:mg/azr0/init with storage skyblock:cache azr0.BaseCoordinate
 
 
 

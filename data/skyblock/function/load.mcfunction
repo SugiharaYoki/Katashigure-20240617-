@@ -154,6 +154,8 @@ scoreboard objectives add If_DropBtrt minecraft.dropped:minecraft.beetroot
 scoreboard objectives add If_Lectern minecraft.custom:minecraft.interact_with_lectern
 scoreboard objectives add DeathCountTemp minecraft.custom:minecraft.deaths
 scoreboard objectives add DeathCount deathCount
+#Azr0
+scoreboard objectives add azr0_system dummy
 #AzrielsMidgarden
 scoreboard objectives add Azr_system dummy
 scoreboard objectives add Azr_startCount dummy
