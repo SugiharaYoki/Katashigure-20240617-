@@ -15,5 +15,12 @@ execute if score @s[scores={rng2=4..}] rng5 matches 8 positioned ^ ^ ^7 run effe
 execute if score @s[scores={rng2=4..}] rng5 matches 9 positioned ^ ^ ^9 run effect give @a[distance=0..4,tag=MG_AZR0PT] resistance 3 19 false
 execute if score @s[scores={rng2=4..}] rng5 matches 10 positioned ^ ^ ^11 run effect give @a[distance=0..4,tag=MG_AZR0PT] resistance 3 19 false
 execute if score @s[scores={rng2=4..}] rng5 matches 11 positioned ^ ^ ^13 run effect give @a[distance=0..4,tag=MG_AZR0PT] resistance 3 19 false
+execute if score @s[scores={rng2=4..}] rng5 matches 5 positioned ^ ^ ^1 run effect give @e[distance=0..4,tag=MG_AZR0FRIENDLY] resistance 3 19 false
+execute if score @s[scores={rng2=4..}] rng5 matches 6 positioned ^ ^ ^3 run effect give @e[distance=0..4,tag=MG_AZR0FRIENDLY] resistance 3 19 false
+execute if score @s[scores={rng2=4..}] rng5 matches 7 positioned ^ ^ ^5 run effect give @e[distance=0..4,tag=MG_AZR0FRIENDLY] resistance 3 19 false
+execute if score @s[scores={rng2=4..}] rng5 matches 8 positioned ^ ^ ^7 run effect give @e[distance=0..4,tag=MG_AZR0FRIENDLY] resistance 3 19 false
+execute if score @s[scores={rng2=4..}] rng5 matches 9 positioned ^ ^ ^9 run effect give @e[distance=0..4,tag=MG_AZR0FRIENDLY] resistance 3 19 false
+execute if score @s[scores={rng2=4..}] rng5 matches 10 positioned ^ ^ ^11 run effect give @e[distance=0..4,tag=MG_AZR0FRIENDLY] resistance 3 19 false
+execute if score @s[scores={rng2=4..}] rng5 matches 11 positioned ^ ^ ^13 run effect give @e[distance=0..4,tag=MG_AZR0FRIENDLY] resistance 3 19 false
 execute if score @s rng5 matches 13.. run kill @s
 
