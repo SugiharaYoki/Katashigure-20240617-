@@ -68,6 +68,16 @@ scoreboard objectives remove Azr0_SKILL_26
 scoreboard objectives remove Azr0_SKILL_27
 scoreboard objectives remove Azr0_SKILL_28
 scoreboard objectives remove Azr0_SKILL_29
+scoreboard objectives remove Azr0_SKILL_30
+scoreboard objectives remove Azr0_SKILL_31
+scoreboard objectives remove Azr0_SKILL_32
+scoreboard objectives remove Azr0_SKILL_33
+scoreboard objectives remove Azr0_SKILL_34
+scoreboard objectives remove Azr0_SKILL_35
+scoreboard objectives remove Azr0_SKILL_36
+scoreboard objectives remove Azr0_SKILL_37
+scoreboard objectives remove Azr0_SKILL_38
+scoreboard objectives remove Azr0_SKILL_39
 
 execute as @e[type=marker,tag=MG_AZR0_FIRE] at @s if block ~ ~ ~ fire run setblock ~ ~ ~ air
 execute as @e[type=marker,tag=MG_AZR0_FIRE] at @s run kill @s
