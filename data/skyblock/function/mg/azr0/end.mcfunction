@@ -97,7 +97,8 @@ scoreboard objectives remove Azr0_UPG_crossbow
 scoreboard objectives remove Azr0_UPG_armor
 
 
-setblock 125078 0 -242 minecraft:air
+#setblock 125078 0 -242 minecraft:air
+scoreboard players set isStarted azr0_system 0
 
 kill @e[tag=mg_azr0_MobPortals,type=marker]
 kill @e[tag=MG_AZR0MOB]
@@ -112,6 +113,6 @@ tag @a remove MG_AZR0PT
 bossbar remove mg:azr0_bar
 kill @n[tag=mg_azr0,type=marker]
 
-forceload remove 125078 -241 125078 -241
+$forceload remove $(x) $(z)
 
 tag @a remove MG_AZR0PT_dead
