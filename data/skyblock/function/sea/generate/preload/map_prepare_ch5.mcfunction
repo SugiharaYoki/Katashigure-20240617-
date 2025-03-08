@@ -411,10 +411,11 @@ item replace block 90140 104 23 container.12 with amethyst_shard 1
 item replace block 90140 104 23 container.14 with amethyst_shard 1
 item replace block 90140 104 23 container.22 with amethyst_shard 1
 
+fill 90132 124 19 90134 123 19 lever[facing=south]
+fill 90135 122 21 90135 122 22 air
 
-
-
-
+setblock 90140 122 21 chest[facing=west]
+item replace block 90140 122 21 container.12 with golden_carrot 2
 
 
 

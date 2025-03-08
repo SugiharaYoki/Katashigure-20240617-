@@ -176,3 +176,12 @@ execute if block 90138 107 21 lever[powered=false] \
  if block 90137 104 21 lever[powered=true] positioned 90140 105 22 unless block ~ ~ ~ air \
 run function skyblock:sea/e/ch5/mem_5
 
+#工程区密码3
+execute if block 90132 124 19 lever[powered=false] \
+ if block 90133 124 19 lever[powered=true] \
+  if block 90134 124 19 lever[powered=true] \
+if block 90132 123 19 lever[powered=true] \
+ if block 90133 123 19 lever[powered=false] \
+  if block 90134 123 19 lever[powered=true] \
+       if block 90129 123 32 lever[powered=true] if block 90135 122 21 air \
+positioned 90135 122 21 run function skyblock:sea/e/ch5/compare_3

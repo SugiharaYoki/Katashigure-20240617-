@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "工程区液压机室的笔记 - 麦迪逊",
+            "color": "light_purple",
+            "bold": false,
+            "italic": false
+        },
+        "description": {
+            "text": "若炽烈球体曾经是被烧死的感染者，那这些飞舞在空中的人形烈焰又是什么？\n我注意到雨水中含有某种怪异的成分。\n虽说轻微感染者接触雨水并无大碍，\n但对于受到致命伤害的感染者而言，这些雨水似乎有治愈作用。\n只是……在被雨水加速了肉体的自愈速度时，“某些东西”被一同放大了。\n被那些人形烈焰凝视着时会感到脚上像灌了铅一样跳不起来。\n它们……“他们”，难道是在阻止我靠近天空吗？",
+            "color": "white"
+        },
+        "icon": {
+            "id": "minecraft:flow_banner_pattern"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "sea": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:sea/doc/b10"
+}
