@@ -417,6 +417,6 @@ fill 90135 122 21 90135 122 22 air
 setblock 90140 122 21 chest[facing=west]
 item replace block 90140 122 21 container.12 with golden_carrot 2
 
-
-
+fill 90148 124 27 90145 123 27 lever[facing=north]
+fill 90145 122 25 90146 122 25 air
 
