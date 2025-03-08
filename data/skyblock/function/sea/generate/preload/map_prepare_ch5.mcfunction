@@ -357,10 +357,10 @@ setblock 90136 96 29 lever[facing=north]
 
 fill 90135 96 29 90135 97 25 iron_block
 
-fill 90138 114 33 90135 114 33 iron_block
-fill 90138 115 33 90135 115 33 iron_block
-fill 90135 114 30 90135 114 32 iron_block
-fill 90135 115 30 90135 115 32 iron_block
+fill 90138 114 33 90135 114 33 iron_bars
+fill 90138 115 33 90135 115 33 iron_bars
+fill 90135 114 30 90135 114 32 iron_bars
+fill 90135 115 30 90135 115 32 iron_bars
 
 
 setblock 90139 114 32 air
