@@ -11,4 +11,7 @@ execute positioned 90147 122 43 run function skyblock:sea/m/pillager2
 execute positioned 90147 122 43 run function skyblock:sea/m/pillager2
 
 
+execute positioned 90138 122 21 run function skyblock:sea/m/pillager2
+execute positioned 90138 122 21 run function skyblock:sea/m/vindicator
+execute positioned 90138 122 21 run function skyblock:sea/m/vindicator
 
