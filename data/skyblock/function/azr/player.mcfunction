@@ -1,3 +1,5 @@
+execute as @s[tag=MG_AZR0PT] at @s run tag @e[distance=..5,tag=AzrielMob] add MG_AZR0PT
+
 #游戏运行时
 execute as @s[scores={Azr_forceDeath=1..}] at @s run function skyblock:azr/end_game/player_dead
 execute as @s[scores={Azr_isDead=1..}] at @s run function skyblock:azr/end_game/player_dead
