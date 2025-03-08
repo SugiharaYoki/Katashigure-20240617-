@@ -151,10 +151,17 @@ execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 826..830 as 
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 831..835 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tp @s ~ ~ ~-1 facing ~ ~ ~-2
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 837 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tp @s ~ ~ ~ facing 90129 123 29
 
-
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 837.. store result score @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200,tag=!SEAfiona_laser_attacking] rng2 run random value 1..5
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 837.. as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200,scores={rng2=1}] at @s if entity @e[tag=SEAmob,distance=0..4.5] run function skyblock:sea/e/ch5/fiona_attack_1
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 837.. as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200,scores={rng2=2}] at @s if entity @n[tag=SEAmob,tag=!SEAnpc,distance=..4.5] run tag @s add SEAfiona_laser_attacking
 
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 789 positioned 90124 122 36 run function skyblock:sea/m/drone
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 789 positioned 90113 122 28 run function skyblock:sea/m/drone
+
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 789 positioned 90115 122 14 run function skyblock:sea/m/spider
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 789 positioned 90115 122 14 run function skyblock:sea/m/zombie_security2
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 789 positioned 90115 122 14 run function skyblock:sea/m/zombie_security2
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 789 positioned 90115 122 14 run function skyblock:sea/m/drowned_maintenance
 
 
 

@@ -424,7 +424,10 @@ item replace block 90148 123 21 container.12 with echo_shard 1
 item replace block 90148 123 21 container.14 with echo_shard 1
 
 
-
+setblock 90112 122 14 air
+setblock 90112 122 14 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 2, id:"minecraft:gunpowder"}}
+setblock 90111 122 14 air
+setblock 90111 122 14 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 2, id:"minecraft:disc_fragment_5"}}
 
 
 
