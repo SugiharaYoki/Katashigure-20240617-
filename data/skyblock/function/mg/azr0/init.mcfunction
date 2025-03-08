@@ -116,6 +116,25 @@ scoreboard objectives add Azr0_SKILL_19 dummy
 scoreboard objectives add Azr0_SKILL_20 dummy
 scoreboard objectives add Azr0_SKILL_20_timer dummy
 
+scoreboard objectives add Azr0_SKILL_21 dummy
+scoreboard objectives add Azr0_SKILL_22 dummy
+scoreboard objectives add Azr0_SKILL_23 dummy
+scoreboard objectives add Azr0_SKILL_24 dummy
+scoreboard objectives add Azr0_SKILL_25 dummy
+scoreboard objectives add Azr0_SKILL_26 dummy
+scoreboard objectives add Azr0_SKILL_27 dummy
+scoreboard objectives add Azr0_SKILL_28 dummy
+scoreboard objectives add Azr0_SKILL_29 dummy
+scoreboard objectives add Azr0_SKILL_30 dummy
+scoreboard objectives add Azr0_SKILL_31 dummy
+scoreboard objectives add Azr0_SKILL_32 dummy
+scoreboard objectives add Azr0_SKILL_33 dummy
+scoreboard objectives add Azr0_SKILL_34 dummy
+scoreboard objectives add Azr0_SKILL_35 dummy
+scoreboard objectives add Azr0_SKILL_36 dummy
+scoreboard objectives add Azr0_SKILL_37 dummy
+scoreboard objectives add Azr0_SKILL_38 dummy
+scoreboard objectives add Azr0_SKILL_39 dummy
 
 
 

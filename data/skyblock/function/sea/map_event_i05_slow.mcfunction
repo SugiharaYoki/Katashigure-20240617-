@@ -125,6 +125,8 @@ execute if score SEA_ch5_event_engineering_roadways rng8 matches 1 run fill 9013
 execute if score SEA_ch5_event_engineering_roadways rng8 matches 2 run fill 90131 123 45 90131 123 42 air
 execute if score SEA_ch5_event_engineering_roadways rng8 matches 1..2 run playsound minecraft:block.iron_door.open ambient @a 90131.56 124.99 44.06 4 0.3
 
+execute as @e[tag=SEAmob,type=evoker] at @s run effect give @e[type=vex,distance=0..10] weakness infinite 5 true
+execute as @e[tag=SEAmob,type=evoker] at @s as @e[type=vex,distance=0..10] run item replace entity @s weapon.mainhand with iron_hoe
 
 
 #工程区密码1
@@ -132,10 +134,10 @@ execute if block 90107 124 27 lever[powered=false] \
  if block 90106 124 27 lever[powered=false] \
   if block 90105 124 27 lever[powered=true] \
    if block 90104 124 27 lever[powered=false] \
-    if block 90107 123 27 lever[powered=true] \
-     if block 90106 123 27 lever[powered=false] \
-      if block 90105 123 27 lever[powered=true] \
-       if block 90104 123 27 lever[powered=false] if block 90105 122 25 air \
+    if block 90107 123 27 lever[powered=false] \
+     if block 90106 123 27 lever[powered=true] \
+      if block 90105 123 27 lever[powered=false] \
+       if block 90104 123 27 lever[powered=true] if block 90105 122 25 air \
 positioned 90105 122 25 run function skyblock:sea/e/ch5/compare_1
 #工程区密码2
 execute if block 90130 124 32 lever[powered=true] \
@@ -173,4 +175,30 @@ execute if block 90138 107 21 lever[powered=false] \
  if block 90137 105 21 lever[powered=true] \
  if block 90137 104 21 lever[powered=true] positioned 90140 105 22 unless block ~ ~ ~ air \
 run function skyblock:sea/e/ch5/mem_5
+
+#工程区密码3
+execute if block 90132 124 19 lever[powered=false] \
+ if block 90133 124 19 lever[powered=true] \
+  if block 90134 124 19 lever[powered=true] \
+if block 90132 123 19 lever[powered=true] \
+ if block 90133 123 19 lever[powered=false] \
+  if block 90134 123 19 lever[powered=true] if block 90135 122 21 air \
+positioned 90135 122 21 run function skyblock:sea/e/ch5/compare_3
+
+#工程区密码4
+execute if block 90148 124 27 lever[powered=true] \
+ if block 90147 124 27 lever[powered=false] \
+  if block 90146 124 27 lever[powered=true] \
+   if block 90145 124 27 lever[powered=false] \
+if block 90148 123 27 lever[powered=true] \
+ if block 90147 123 27 lever[powered=false] \
+  if block 90146 123 27 lever[powered=false] \
+   if block 90145 123 27 lever[powered=true] if block 90145 122 25 air \
+positioned 90145 122 25 run function skyblock:sea/e/ch5/compare_4
+
+
+
+
+
+
 

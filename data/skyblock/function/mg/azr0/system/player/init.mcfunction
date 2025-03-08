@@ -72,6 +72,25 @@ scoreboard players set @s Azr0_SKILL_17 0
 scoreboard players set @s Azr0_SKILL_18 0
 scoreboard players set @s Azr0_SKILL_19 0
 scoreboard players set @s Azr0_SKILL_20 0
+scoreboard players set @s Azr0_SKILL_21 0
+scoreboard players set @s Azr0_SKILL_22 0
+scoreboard players set @s Azr0_SKILL_23 0
+scoreboard players set @s Azr0_SKILL_24 0
+scoreboard players set @s Azr0_SKILL_25 0
+scoreboard players set @s Azr0_SKILL_26 0
+scoreboard players set @s Azr0_SKILL_27 0
+scoreboard players set @s Azr0_SKILL_28 0
+scoreboard players set @s Azr0_SKILL_29 0
+scoreboard players set @s Azr0_SKILL_30 0
+scoreboard players set @s Azr0_SKILL_31 0
+scoreboard players set @s Azr0_SKILL_32 0
+scoreboard players set @s Azr0_SKILL_33 0
+scoreboard players set @s Azr0_SKILL_34 0
+scoreboard players set @s Azr0_SKILL_35 0
+scoreboard players set @s Azr0_SKILL_36 0
+scoreboard players set @s Azr0_SKILL_37 0
+scoreboard players set @s Azr0_SKILL_38 0
+scoreboard players set @s Azr0_SKILL_39 0
 
 tag @s remove MGAZR0_SkillPrintable
 

@@ -357,10 +357,10 @@ setblock 90136 96 29 lever[facing=north]
 
 fill 90135 96 29 90135 97 25 iron_block
 
-fill 90138 114 33 90135 114 33 iron_block
-fill 90138 115 33 90135 115 33 iron_block
-fill 90135 114 30 90135 114 32 iron_block
-fill 90135 115 30 90135 115 32 iron_block
+fill 90138 114 33 90135 114 33 iron_bars
+fill 90138 115 33 90135 115 33 iron_bars
+fill 90135 114 30 90135 114 32 iron_bars
+fill 90135 115 30 90135 115 32 iron_bars
 
 
 setblock 90139 114 32 air
@@ -410,6 +410,19 @@ item replace block 90140 104 23 container.4 with amethyst_shard 1
 item replace block 90140 104 23 container.12 with amethyst_shard 1
 item replace block 90140 104 23 container.14 with amethyst_shard 1
 item replace block 90140 104 23 container.22 with amethyst_shard 1
+
+fill 90132 124 19 90134 123 19 lever[facing=south]
+fill 90135 122 21 90135 122 22 air
+
+setblock 90140 122 21 chest[facing=west]
+item replace block 90140 122 21 container.12 with golden_carrot 2
+
+fill 90148 124 27 90145 123 27 lever[facing=north]
+fill 90145 122 25 90146 122 25 air
+setblock 90148 123 21 chest[facing=west]
+item replace block 90148 123 21 container.12 with echo_shard 1
+item replace block 90148 123 21 container.14 with echo_shard 1
+
 
 
 

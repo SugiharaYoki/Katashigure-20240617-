@@ -53,6 +53,7 @@ scoreboard players add @s[advancements={skyblock:sea/doc/b13=true}] rng3 1
 scoreboard players add @s[advancements={skyblock:sea/doc/b14=true}] rng3 1
 scoreboard players add @s[advancements={skyblock:sea/doc/b15=true}] rng3 1
 scoreboard players add @s[advancements={skyblock:sea/doc/b16=true}] rng5 1
+scoreboard players add @s[advancements={skyblock:sea/doc/b16=true}] rng5 1
 scoreboard players add @s[advancements={skyblock:sea/doc/b17=true}] rng5 1
 scoreboard players add @s[advancements={skyblock:sea/doc/b18=true}] rng5 1
 scoreboard players add @s[advancements={skyblock:sea/doc/b19=true}] rng3 1

@@ -17,6 +17,12 @@ execute if entity @s[scores={Azr0_SKILL_11=3}] run effect give @a[tag=MG_AZR0PT,
 execute if entity @s[scores={Azr0_SKILL_11=1}] run effect give @a[tag=MG_AZR0PT,distance=..5] fire_resistance 5 0 false
 execute if entity @s[scores={Azr0_SKILL_11=2}] run effect give @a[tag=MG_AZR0PT,distance=..5.5] fire_resistance 5 0 false
 execute if entity @s[scores={Azr0_SKILL_11=3}] run effect give @a[tag=MG_AZR0PT,distance=..6] fire_resistance 8 0 false
+execute if entity @s[scores={Azr0_SKILL_11=1}] run effect give @e[tag=MG_AZR0FRIENDLY,distance=..5] instant_health 1 1 true
+execute if entity @s[scores={Azr0_SKILL_11=2}] run effect give @e[tag=MG_AZR0FRIENDLY,distance=..5.5] instant_health 1 1 true
+execute if entity @s[scores={Azr0_SKILL_11=3}] run effect give @e[tag=MG_AZR0FRIENDLY,distance=..6] instant_health 1 1 true
+execute if entity @s[scores={Azr0_SKILL_11=1}] run effect give @e[tag=MG_AZR0FRIENDLY,distance=..5] fire_resistance 5 0 false
+execute if entity @s[scores={Azr0_SKILL_11=2}] run effect give @e[tag=MG_AZR0FRIENDLY,distance=..5.5] fire_resistance 5 0 false
+execute if entity @s[scores={Azr0_SKILL_11=3}] run effect give @e[tag=MG_AZR0FRIENDLY,distance=..6] fire_resistance 8 0 false
 
 
 
