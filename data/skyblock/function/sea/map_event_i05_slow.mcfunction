@@ -125,7 +125,8 @@ execute if score SEA_ch5_event_engineering_roadways rng8 matches 1 run fill 9013
 execute if score SEA_ch5_event_engineering_roadways rng8 matches 2 run fill 90131 123 45 90131 123 42 air
 execute if score SEA_ch5_event_engineering_roadways rng8 matches 1..2 run playsound minecraft:block.iron_door.open ambient @a 90131.56 124.99 44.06 4 0.3
 
-execute as @e[tag=SEAMOB,type=evoker] at @s run effect give @e[type=vex,distance=0..10] weakness infinite 1 true
+execute as @e[tag=SEAMOB,type=evoker] at @s run effect give @e[type=vex,distance=0..10] weakness infinite 4 true
+execute as @e[tag=SEAMOB,type=evoker] at @s as @e[type=vex,distance=0..10] run item replace entity @s weapon.mainhand with iron_hoe
 
 
 #工程区密码1
