@@ -55,7 +55,8 @@ execute as @a[tag=SEAPT,tag=!e_i_36] at @s if entity @n[tag=SEAherb,tag=SEAherb2
 execute as @a[tag=SEAPT,tag=!e_i_34] at @s if entity @n[tag=SEAherb,distance=0..3.5,scores={sea_4temp1=..1}] run tellraw @s {"text": "嗯？小猫？你是怎么从怪物手里活下来的？","color": "gray"}
 execute as @a[tag=SEAPT,tag=!e_i_34] at @s if entity @n[tag=SEAherb,distance=0..3.5,scores={sea_4temp1=..1}] run tag @s add e_i_34
 
-
+#防止回船
+execute positioned 90060 102 142 as @a[tag=SEAPT,distance=..40] at @s run tp @s 90141.56 19.00 88.99 facing 90142.56 19.00 88.99
 
 execute if block 90169 20 79 redstone_lamp[lit=true] if score sea_ch4_switch_entrance sea_4temp2 matches 21.. run scoreboard players set sea_ch4_switch_entrance sea_4temp2 20
 execute if block 90169 20 79 redstone_lamp[lit=false] if score sea_ch4_switch_entrance sea_4temp2 matches ..19 run scoreboard players set sea_ch4_switch_entrance sea_4temp2 20
