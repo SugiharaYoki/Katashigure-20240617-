@@ -198,6 +198,14 @@ if block 90148 123 27 lever[powered=true] \
 positioned 90145 122 25 run function skyblock:sea/e/ch5/compare_4
 
 
+#通讯平台密码1
+execute if block 90097 131 27 lever[powered=false] \
+ if block 90097 131 26 lever[powered=true] \
+  if block 90097 131 25 lever[powered=true] \
+if block 90097 130 27 lever[powered=true] \
+ if block 90097 130 26 lever[powered=false] \
+  if block 90097 130 25 lever[powered=true] if block 90096 129 28 air \
+positioned 90096 129 28 run function skyblock:sea/e/ch5/compare_5
 
 
 

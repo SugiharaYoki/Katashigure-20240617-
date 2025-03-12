@@ -440,5 +440,15 @@ setblock 90101 129 73 chest[facing=north]
 item replace block 90101 129 73 container.12 with emerald 5
 item replace block 90101 129 73 container.14 with emerald 5
 
+setblock 90096 129 28 air
+fill 90097 131 27 90097 130 25 lever[facing=east]
+
+setblock 90094 130 25 chest[facing=south]
+item replace block 90101 129 73 container.12 with glow_berries 3
+item replace block 90101 129 73 container.14 with beef 2
+
+
+
+
 
 
