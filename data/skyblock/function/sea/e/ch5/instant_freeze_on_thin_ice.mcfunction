@@ -1,3 +1,4 @@
+stopsound @s music
 playsound garden2.bgm.001 music @s ~ ~ ~ 1 1.0
 effect give @s darkness 5 0 true
 
