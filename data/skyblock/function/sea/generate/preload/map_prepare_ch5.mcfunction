@@ -432,7 +432,13 @@ setblock 90111 122 14 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery
 
 
 
+#通讯平台
+setblock 90095 129 16 air
+setblock 90095 129 16 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 2, id:"minecraft:flint"}}
 
+setblock 90101 129 73 chest[facing=north]
+item replace block 90101 129 73 container.12 with emerald 5
+item replace block 90101 129 73 container.14 with emerald 5
 
 
 
