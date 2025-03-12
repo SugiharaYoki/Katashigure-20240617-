@@ -1,6 +1,6 @@
 execute positioned 90140 104 56 as @a[tag=SEAPT,distance=0..3.8,tag=!e_i_38] at @s run function skyblock:sea/e/ch5/title_1
 execute as @a[tag=SEAPT,tag=!e_i_42,x=90121,y=122,z=40,dx=25,dy=4,dz=25] at @s run function skyblock:sea/e/ch5/title_2
-execute as @a[tag=SEAPT,tag=!e_i_44,x=114,y=128,z=14,dx=8,dy=4,dz=8] at @s run function skyblock:sea/e/ch5/title_3
+execute as @a[tag=SEAPT,tag=!e_i_44,x=90114,y=128,z=14,dx=8,dy=4,dz=8] at @s run function skyblock:sea/e/ch5/title_3
 
 
 
