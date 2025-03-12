@@ -124,8 +124,8 @@ execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 752 as @n[ta
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 752 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“你胸牌上写着呢。”","color":"white","bold": false}]
 
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 769 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
-execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 769 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if entity @a[tag=SEAPT,scores={SEAPT_member=2}] run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“我会开启上去的铁门。至于跟不跟我过来，你们做决定。”","color":"white","bold": false}]
-execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 769 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s unless entity @a[tag=SEAPT,scores={SEAPT_member=2}] run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“我会开启上去的铁门。至于跟不跟我过来，你自己做决定。”","color":"white","bold": false}]
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 769 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if entity @a[tag=SEAPT,scores={SEAPT_member=2}] run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“我会开启上去的路的铁门。至于跟不跟我过来，你们做决定。”","color":"white","bold": false}]
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 769 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s unless entity @a[tag=SEAPT,scores={SEAPT_member=2}] run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“我会开启上去的路的铁门。至于跟不跟我过来，你自己做决定。”","color":"white","bold": false}]
 
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 775 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tp @s 90102 122 38 facing 90101.00 123.00 37.57
 
