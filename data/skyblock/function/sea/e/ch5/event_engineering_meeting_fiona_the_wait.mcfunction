@@ -1,6 +1,6 @@
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 1.. run scoreboard players add SEA_ch5_event_engineering_fiona sea_4temp2 1
 
-execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 1.. as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if entity @a[tag=SEAPT,distance=0..6] run scoreboard players add SEA_ch5_event_engineering_fiona sea_4temp6 1
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 1.. if score SEA_ch5_event_engineering_fiona sea_4temp6 matches ..1450 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if entity @a[tag=SEAPT,distance=0..6] run scoreboard players add SEA_ch5_event_engineering_fiona sea_4temp6 1
 
 
 execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 30 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if entity @a[tag=SEAPT,distance=0..6] run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
