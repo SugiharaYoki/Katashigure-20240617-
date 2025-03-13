@@ -463,7 +463,7 @@ summon tnt 90141 113 184
 summon tnt 90138 113 190
 summon tnt 90137 120 184
 
-
+execute positioned 90139 114 187 run kill @e[type=item,distance=0..20]
 
 
 
