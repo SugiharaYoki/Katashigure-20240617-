@@ -169,7 +169,7 @@ execute as @a at @s run scoreboard players operation @s sea_speedrun_ch7_score -
 
 tag @a remove sea_ch3_badend
 
-
+bossbar remove sea:ch5_lurkbar
 
 
 
