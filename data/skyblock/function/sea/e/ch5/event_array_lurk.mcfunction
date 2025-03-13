@@ -13,6 +13,29 @@ execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 1503 run bos
 execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 1503 run bossbar set sea:ch5_lurkbar players @a[tag=SEAPT]
 execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 1503.. store result bossbar sea:ch5_lurkbar value run scoreboard players get SEA_ch5_event_engineering_fiona sea_4temp7
 
+execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 1503 positioned 90104 129 38 run function skyblock:sea/m/pillager_sentry
+execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 1503 positioned 90100 129 40 run function skyblock:sea/m/pillager_sentry
+execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 1503 positioned 90094 130 35 run function skyblock:sea/m/pillager_sentry
+execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 1503 positioned 90110 129 59 run function skyblock:sea/m/pillager_sentry
+execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 1503 positioned 90100 129 55 run function skyblock:sea/m/pillager_sentry
+execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 1503 positioned 90096 130 57 run function skyblock:sea/m/pillager_sentry
+execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 1503 positioned 90093 130 41 run function skyblock:sea/m/pillager_sentry
+execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 1503 positioned 90094 130 42 run function skyblock:sea/m/pillager_sentry
+execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 1503 positioned 90100 129 47 run function skyblock:sea/m/pillager_sentry
+
+execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 1503 positioned 90118 131 45 run function skyblock:sea/m/pillager_sentry_still
+execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 1503 positioned 90124 134 36 run function skyblock:sea/m/pillager_sentry_still
+execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 1503 positioned 90125 129 31 run function skyblock:sea/m/pillager_sentry_still
+execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 1503 positioned 90121 135 27 run function skyblock:sea/m/pillager_sentry_still
+execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 1503 positioned 90118 131 34 run function skyblock:sea/m/pillager_sentry_still
+execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 1503 positioned 90106 129 60 run function skyblock:sea/m/pillager_sentry_still
+execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 1503 positioned 90123 135 26 run function skyblock:sea/m/pillager_sentry
+execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 1503 positioned 90125 135 27 run function skyblock:sea/m/pillager_sentry
+execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 1503 positioned 90136 129 41 run function skyblock:sea/m/pillager_sentry
+execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 1503 positioned 90136 129 42 run function skyblock:sea/m/pillager_sentry
+execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 1503 positioned 90136 129 43 run function skyblock:sea/m/pillager_sentry
+
+
 execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches ..5000 as @e[type=pillager,tag=SEApillager_sentry] at @s if entity @a[tag=SEAPT,distance=0..1] run scoreboard players add SEA_ch5_event_engineering_fiona sea_4temp7 25
 execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches ..5000 as @e[type=pillager,tag=SEApillager_sentry] at @s if entity @a[tag=SEAPT,distance=0..2.5] run scoreboard players add SEA_ch5_event_engineering_fiona sea_4temp7 10
 execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches ..5000 as @e[type=pillager,tag=SEApillager_sentry] at @s if entity @a[tag=SEAPT,distance=0..3.75] run scoreboard players add SEA_ch5_event_engineering_fiona sea_4temp7 5
