@@ -459,4 +459,12 @@ summon tnt 90139 115 190
 summon tnt 90138 115 185
 summon tnt 90141 115 183
 summon tnt 90138 119 184
+summon tnt 90141 113 184
+summon tnt 90138 113 190
+
+
+
+
+
+
 
