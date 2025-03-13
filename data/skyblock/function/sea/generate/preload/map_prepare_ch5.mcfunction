@@ -447,8 +447,13 @@ setblock 90094 130 25 chest[facing=south]
 item replace block 90101 129 73 container.12 with glow_berries 3
 item replace block 90101 129 73 container.14 with beef 2
 
-#禁用列表
-#clone 90093 -25 -188 90108 -2 -161 90103 152 88
+#更多地形变化
+forceload add 90093 -188 90168 -161
+clone 90093 -25 -188 90108 -2 -161 90103 152 88
+forceload remove 90093 -188 90168 -161
+fill 90121 152 114 90114 152 114 air
+fill 90142 130 91 90140 130 91 air
+fill 90141 129 91 90140 129 91 iron_bars
 
 
 

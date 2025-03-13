@@ -739,6 +739,15 @@ fill 90125 102 101 90127 102 99 iron_block
 
 
 
+#更多地形变化
+
+forceload add 90093 -188 90168 -161
+clone 90110 -25 -188 90125 -2 -161 90103 152 88
+clone 90093 -25 -188 90108 -2 -161 90103 152 88
+fill 90121 152 114 90114 152 114 minecraft:waxed_cut_copper_slab[type=bottom]
+forceload remove 90093 -188 90168 -161
+fill 90142 130 91 90140 130 91 minecraft:polished_andesite_slab[type=bottom]
+fill 90141 129 91 90140 129 91 air
 
 
 

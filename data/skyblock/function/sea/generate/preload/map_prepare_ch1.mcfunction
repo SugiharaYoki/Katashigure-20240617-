@@ -16,6 +16,3 @@ forceload remove 90050 -180 90100 -130
 
 fill 90062 106 134 90062 104 134 ladder[facing=north]
 
-
-
-
