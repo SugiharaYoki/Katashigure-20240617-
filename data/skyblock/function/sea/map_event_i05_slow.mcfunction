@@ -109,6 +109,7 @@ execute if score SEA_ch5_event_engineering_fiona rng1 matches 0 positioned 90138
 execute if score SEA_ch5_event_engineering_fiona rng1 matches 1..832 run function skyblock:sea/e/ch5/event_engineering_meeting_fiona
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 1..840 run function skyblock:sea/e/ch5/event_engineering_meeting_fiona_the_exchange
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 837.. run function skyblock:sea/e/ch5/event_engineering_meeting_fiona_the_wait
+execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 1500.. run function skyblock:sea/e/ch5/event_array_lurk
 
 #菲尔娜技能组
 execute as @n[tag=SEAfiona_laser_attacking,x=90000,y=100,z=0,distance=0..1200] at @s run function skyblock:sea/e/ch5/fiona_attack_laser

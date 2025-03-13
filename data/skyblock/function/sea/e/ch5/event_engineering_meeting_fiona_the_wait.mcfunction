@@ -87,3 +87,6 @@ execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 837.. as @n[
 
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 837.. as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] positioned 90125 122 22 if entity @s[distance=20..] run tp @s 90125 122 22
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 837.. as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s unless block ~ ~1 ~ air run tp @s 90125 122 22
+
+execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 1400..1450 run scoreboard players set SEA_ch5_event_engineering_fiona sea_4temp6 1400
+
