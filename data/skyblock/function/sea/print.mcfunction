@@ -24,8 +24,8 @@ execute if block 90074 103 137 scaffolding unless block 90074 103 136 lectern if
 execute if block 90074 103 137 scaffolding unless block 90074 103 136 lectern if entity @a[tag=SEAPT] run scoreboard players add sc rng1 1
 execute if block 90074 103 136 lectern if entity @a[tag=SEAPT] run tellraw @s [{"text":" 第5章总控事件前置条件满足","color":"white","italic": false}]
 execute if block 90074 103 136 lectern if entity @a[tag=SEAPT] run scoreboard players add sc rng1 1
-execute if score sc rn1 matches 2.. run tellraw @s [{"text":" 警告：复数不同章节的事件前置条件同时满足中！","color":"dark_red","italic": false}]
-execute if score sc rn1 matches 0 run tellraw @s [{"text":" 警告：目前没有满足任何章节的事件前置条件！","color":"dark_red","italic": false}]
+execute if score sc rng1 matches 2.. run tellraw @s [{"text":" 警告：复数不同章节的事件前置条件同时满足中！","color":"dark_red","italic": false}]
+execute if score sc rng1 matches 0 run tellraw @s [{"text":" 警告：目前没有满足任何章节的事件前置条件！","color":"dark_red","italic": false}]
 
 tellraw @s [{"text":" 临时值.01 = ","color":"white","italic": false},{"score":{"name":"@n[tag=sc]","objective":"sea_4temp1"},"color": "green","italic": true},{"text":" | 临时值.02 = ","color":"white","italic": false},{"score":{"name":"@n[tag=sc]","objective":"sea_4temp2"},"color": "green","italic": true},{"text":" | 临时值.03 = ","color":"white","italic": false},{"score":{"name":"@n[tag=sc]","objective":"sea_4temp3"},"color": "green","italic": true}]
 tellraw @s [{"text":" 临时值.04 = ","color":"white","italic": false},{"score":{"name":"@n[tag=sc]","objective":"sea_4temp4"},"color": "green","italic": true},{"text":" | 临时值.05 = ","color":"white","italic": false},{"score":{"name":"@n[tag=sc]","objective":"sea_4temp5"},"color": "green","italic": true},{"text":" | 临时值.06 = ","color":"white","italic": false},{"score":{"name":"@n[tag=sc]","objective":"sea_4temp6"},"color": "green","italic": true}]
