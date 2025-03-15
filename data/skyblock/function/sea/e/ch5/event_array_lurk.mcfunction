@@ -71,7 +71,7 @@ execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 1503..4950 i
 execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 1503..4950 if score SEA_ch5_event_engineering_fiona sea_4temp7 matches 100.. as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if entity @e[tag=SEAmob,distance=0..30,type=pillager] unless score SEA_ch5_event_engineering_fiona sea_4temp8 matches 1.. run scoreboard players set SEA_ch5_event_engineering_fiona sea_4temp8 1
 
 execute if score SEA_ch5_event_engineering_fiona sea_4temp8 matches 1.. run scoreboard players add SEA_ch5_event_engineering_fiona sea_4temp8 1
-execute if score SEA_ch5_event_engineering_fiona sea_4temp8 matches 1..600 run function skyblock:sea/e/ch5/event_array_lurk_summonpool
+execute if score SEA_ch5_event_engineering_fiona sea_4temp8 matches 1..500 run function skyblock:sea/e/ch5/event_array_lurk_summonpool
 execute if score SEA_ch5_event_engineering_fiona sea_4temp8 matches 2 run playsound minecraft:block.bell.use block @a 90123.66 148.37 22.56 20 0.5
 execute if score SEA_ch5_event_engineering_fiona sea_4temp8 matches 18 run playsound minecraft:block.bell.use block @a 90123.66 148.37 22.56 20 0.5
 execute if score SEA_ch5_event_engineering_fiona sea_4temp8 matches 34 run playsound minecraft:block.bell.use block @a 90123.66 148.37 22.56 20 0.5
@@ -87,6 +87,8 @@ execute if score SEA_ch5_event_engineering_fiona sea_4temp8 matches 10 positione
 execute if score SEA_ch5_event_engineering_fiona sea_4temp8 matches 14 positioned 90131 130 59 run function skyblock:sea/m/vindicator
 execute if score SEA_ch5_event_engineering_fiona sea_4temp8 matches 14 positioned 90131 130 58 run function skyblock:sea/m/vindicator
 
+execute if score SEA_ch5_event_engineering_fiona sea_4temp8 matches 500 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"邪教徒：","color":"yellow","bold": true},{"text":"\n“撤退，撤退！我们不是对手！！”","color":"white","bold": false}]
+execute if score SEA_ch5_event_engineering_fiona sea_4temp8 matches 540 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"邪教徒：","color":"yellow","bold": true},{"text":"\n“快去通知琼斯主教，咱们惹不起他们！”","color":"white","bold": false}]
 
 execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 1550 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if entity @a[tag=SEAPT,distance=0..6] run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 0.7 1.3
 execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 1550 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if entity @a[tag=SEAPT,distance=0..6] run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“我们的目标是这座平台斜对角的那幢白色建筑，也就是通讯中心。\n不是对面的主平台那幢。当然，我也相信你不会笨到那种地步。”","color":"white","bold": false}]
