@@ -76,6 +76,15 @@ execute if score SEA_ch5_event_engineering_fiona sea_4temp8 matches 18 run plays
 execute if score SEA_ch5_event_engineering_fiona sea_4temp8 matches 34 run playsound minecraft:block.bell.use block @a 90123.66 148.37 22.56 20 0.5
 execute if score SEA_ch5_event_engineering_fiona sea_4temp8 matches 2 run playsound garden2.bgm.002 music @s ~ ~ ~ 1 1.0
 
+execute if score SEA_ch5_event_engineering_fiona sea_4temp8 matches 2 positioned 90131 130 59 run function skyblock:sea/m/evoker
+execute if score SEA_ch5_event_engineering_fiona sea_4temp8 matches 2 positioned 90131 130 58 run function skyblock:sea/m/evoker
+execute if score SEA_ch5_event_engineering_fiona sea_4temp8 matches 6 positioned 90131 130 59 run function skyblock:sea/m/vindicator
+execute if score SEA_ch5_event_engineering_fiona sea_4temp8 matches 6 positioned 90131 130 58 run function skyblock:sea/m/vindicator
+execute if score SEA_ch5_event_engineering_fiona sea_4temp8 matches 10 positioned 90131 130 59 run function skyblock:sea/m/vindicator
+execute if score SEA_ch5_event_engineering_fiona sea_4temp8 matches 10 positioned 90131 130 58 run function skyblock:sea/m/vindicator
+execute if score SEA_ch5_event_engineering_fiona sea_4temp8 matches 14 positioned 90131 130 59 run function skyblock:sea/m/vindicator
+execute if score SEA_ch5_event_engineering_fiona sea_4temp8 matches 14 positioned 90131 130 58 run function skyblock:sea/m/vindicator
+
 
 execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 1550 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if entity @a[tag=SEAPT,distance=0..6] run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 0.7 1.3
 execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 1550 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if entity @a[tag=SEAPT,distance=0..6] run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“我们的目标是这座平台斜对角的那幢白色建筑，也就是通讯中心。\n不是对面的主平台那幢。当然，我也相信你不会笨到那种地步。”","color":"white","bold": false}]
