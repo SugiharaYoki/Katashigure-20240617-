@@ -74,7 +74,7 @@ execute if score SEA_ch5_event_engineering_fiona sea_4temp8 matches 1.. run scor
 execute if score SEA_ch5_event_engineering_fiona sea_4temp8 matches 2 run playsound minecraft:block.bell.use block @a 90123.66 148.37 22.56 20 0.5
 execute if score SEA_ch5_event_engineering_fiona sea_4temp8 matches 18 run playsound minecraft:block.bell.use block @a 90123.66 148.37 22.56 20 0.5
 execute if score SEA_ch5_event_engineering_fiona sea_4temp8 matches 34 run playsound minecraft:block.bell.use block @a 90123.66 148.37 22.56 20 0.5
-execute if score SEA_ch5_event_engineering_fiona sea_4temp8 matches 2 run playsound garden2.bgm.002 music @s ~ ~ ~ 1 1.0
+execute if score SEA_ch5_event_engineering_fiona sea_4temp8 matches 2 run playsound minecraft:app2.fft music @s ~ ~ ~ 1 1.0
 
 execute if score SEA_ch5_event_engineering_fiona sea_4temp8 matches 2 positioned 90131 130 59 run function skyblock:sea/m/evoker
 execute if score SEA_ch5_event_engineering_fiona sea_4temp8 matches 2 positioned 90131 130 58 run function skyblock:sea/m/evoker
