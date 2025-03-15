@@ -5,6 +5,6 @@ playsound garden2.chapter_title master @s ~ ~ ~ 100 1.0
 advancement grant @s only skyblock:sea/chapter5c
 tag @s add e_i_44
 
-
+stopsound @s music
 
 execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches ..1450 run scoreboard players set SEA_ch5_event_engineering_fiona sea_4temp6 1500
