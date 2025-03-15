@@ -65,5 +65,30 @@ execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 1503..4950 i
 execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 1503..4950 if score SEA_ch5_event_engineering_fiona sea_4temp7 matches 90.. as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200,tag=!e_i_47] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“你可真要害惨我了、你这个混蛋……”","color":"white","bold": false}]
 execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 1503..4950 if score SEA_ch5_event_engineering_fiona sea_4temp7 matches 90.. as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tag @a[tag=SEAPT] add e_i_47
 
+execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches ..5000 at @n[tag=SEAfiona,type=villager] if entity @a[tag=SEAPT,x=90096,y=135,z=16,dx=80,dy=80,dz=80] run scoreboard players add SEA_ch5_event_engineering_fiona sea_4temp7 5
+
+
+
+
+
+execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 1550 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if entity @a[tag=SEAPT,distance=0..6] run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 0.7 1.3
+execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 1550 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if entity @a[tag=SEAPT,distance=0..6] run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“我们的目标是这座平台斜对角的那幢白色建筑，也就是通讯中心。\n不是对面的主平台那幢。当然，我也相信你不会笨到那种地步。”","color":"white","bold": false}]
+
+execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 1572 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if entity @a[tag=SEAPT,distance=0..6] run tellraw @a[distance=0..250] [{"selector":"@r[tag=SEAPT]","color":"white"},{"text":"：那里面肯定只会有更多邪教徒吧。真的不会被发现吗？","color":"white"}]
+
+execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 1590 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if entity @a[tag=SEAPT,distance=0..6] run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 0.7 1.3
+execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 1590 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if entity @a[tag=SEAPT,distance=0..6] run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“进去之后战斗也会方便很多。相信我，我对里面的结构了如指掌。”","color":"white","bold": false}]
+
+
+execute positioned 90112 128 24 if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 1630 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if entity @a[tag=SEAPT,distance=0..10] run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 0.7 1.3
+execute positioned 90112 128 24 if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 1630 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if entity @a[tag=SEAPT,distance=0..10] run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"“看到卸货台那边那个大集装箱了吗？从中间穿过去应该会安全很多。”","color":"white","bold": false}]
+
+
+
+
+
+
+
+
 
 
