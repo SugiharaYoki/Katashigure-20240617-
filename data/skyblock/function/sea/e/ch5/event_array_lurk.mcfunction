@@ -71,7 +71,7 @@ execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 1503..4950 i
 execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 1503..4950 if score SEA_ch5_event_engineering_fiona sea_4temp7 matches 100.. as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if entity @e[tag=SEAmob,distance=0..30,type=pillager] unless score SEA_ch5_event_engineering_fiona sea_4temp8 matches 1.. run scoreboard players set SEA_ch5_event_engineering_fiona sea_4temp8 1
 
 execute if score SEA_ch5_event_engineering_fiona sea_4temp8 matches 1.. run scoreboard players add SEA_ch5_event_engineering_fiona sea_4temp8 1
-execute if score SEA_ch5_event_engineering_fiona sea_4temp8 matches 1..999 run function skyblock:sea/e/ch5/event_array_lurk_summonpool
+execute if score SEA_ch5_event_engineering_fiona sea_4temp8 matches 1..600 run function skyblock:sea/e/ch5/event_array_lurk_summonpool
 execute if score SEA_ch5_event_engineering_fiona sea_4temp8 matches 2 run playsound minecraft:block.bell.use block @a 90123.66 148.37 22.56 20 0.5
 execute if score SEA_ch5_event_engineering_fiona sea_4temp8 matches 18 run playsound minecraft:block.bell.use block @a 90123.66 148.37 22.56 20 0.5
 execute if score SEA_ch5_event_engineering_fiona sea_4temp8 matches 34 run playsound minecraft:block.bell.use block @a 90123.66 148.37 22.56 20 0.5
