@@ -90,13 +90,13 @@ execute if score SEA_ch5_event_engineering_fiona sea_4temp8 matches 14 positione
 execute if score SEA_ch5_event_engineering_fiona sea_4temp8 matches 500 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"邪教徒：","color":"yellow","bold": true},{"text":"\n“撤退，撤退！我们不是对手！！”","color":"white","bold": false}]
 execute if score SEA_ch5_event_engineering_fiona sea_4temp8 matches 540 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"邪教徒：","color":"yellow","bold": true},{"text":"\n“快去通知琼斯主教，咱们惹不起他们！”","color":"white","bold": false}]
 execute if score SEA_ch5_event_engineering_fiona sea_4temp8 matches 580 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"邪教徒：","color":"yellow","bold": true},{"text":"\n“不要再打了、别再打了！我们投降！！”","color":"white","bold": false}]
-execute if score SEA_ch5_event_engineering_fiona sea_4temp8 matches 580 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s as @e[tag=SEAmob,type=pillager] at @s run item replace entity @s weapon.mainhand with air
-execute if score SEA_ch5_event_engineering_fiona sea_4temp8 matches 580 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s as @e[tag=SEAmob,type=vindicator] at @s run item replace entity @s weapon.mainhand with air
-execute if score SEA_ch5_event_engineering_fiona sea_4temp8 matches 580 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s as @e[tag=SEAmob,type=pillager] at @s run data modify entity @s Invulnerable set value 1b
-execute if score SEA_ch5_event_engineering_fiona sea_4temp8 matches 580 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s as @e[tag=SEAmob,type=vindicator] at @s run data modify entity @s Invulnerable set value 1b
-execute if score SEA_ch5_event_engineering_fiona sea_4temp8 matches 580 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s as @e[tag=SEAmob,type=vindicator] at @s run data modify entity @s attributes[{id:"minecraft:generic.movement_speed"}].base set value 0
-execute if score SEA_ch5_event_engineering_fiona sea_4temp8 matches 580 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s as @e[tag=SEAmob,type=evoker] at @s run particle portal ~ ~1 ~ 0.4 0.4 0.4 0.3 40
-execute if score SEA_ch5_event_engineering_fiona sea_4temp8 matches 580 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s as @e[tag=SEAmob,type=evoker] at @s run tp @s -90100 100 100
+execute if score SEA_ch5_event_engineering_fiona sea_4temp8 matches 583 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s as @e[tag=SEAmob,type=pillager] at @s run item replace entity @s weapon.mainhand with air
+execute if score SEA_ch5_event_engineering_fiona sea_4temp8 matches 583 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s as @e[tag=SEAmob,type=vindicator] at @s run item replace entity @s weapon.mainhand with air
+execute if score SEA_ch5_event_engineering_fiona sea_4temp8 matches 583 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s as @e[tag=SEAmob,type=pillager] at @s run data modify entity @s Invulnerable set value 1b
+execute if score SEA_ch5_event_engineering_fiona sea_4temp8 matches 583 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s as @e[tag=SEAmob,type=vindicator] at @s run data modify entity @s Invulnerable set value 1b
+execute if score SEA_ch5_event_engineering_fiona sea_4temp8 matches 583 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s as @e[tag=SEAmob,type=vindicator] at @s run data modify entity @s attributes[{id:"minecraft:generic.movement_speed"}].base set value 0
+execute if score SEA_ch5_event_engineering_fiona sea_4temp8 matches 583 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s as @e[tag=SEAmob,type=evoker] at @s run particle portal ~ ~1 ~ 0.4 0.4 0.4 0.3 40
+execute if score SEA_ch5_event_engineering_fiona sea_4temp8 matches 583 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s as @e[tag=SEAmob,type=evoker] at @s run tp @s -90100 100 100
 
 execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 1550 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if entity @a[tag=SEAPT,distance=0..6] run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 0.7 1.3
 execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 1550 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if entity @a[tag=SEAPT,distance=0..6] run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“我们的目标是这座平台斜对角的那幢白色建筑，也就是通讯中心。\n不是对面的主平台那幢。当然，我也相信你不会笨到那种地步。”","color":"white","bold": false}]
@@ -119,7 +119,9 @@ execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 1503..4950 i
 execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 1503..4950 if score SEA_ch5_event_engineering_fiona sea_4temp7 matches 0..89 as @n[tag=SEAfiona,x=90096,y=125,z=16,dx=80,dy=80,dz=80,tag=!SEAspeciallurk2] at @s unless entity @n[tag=SEApillager_sentry] run tag @s add SEAspeciallurk2
 
 
-
+execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 1503..4950 if score SEA_ch5_event_engineering_fiona sea_4temp7 matches ..99 positioned 90131 129 58 if entity @a[tag=SEAPT,distance=0..3] run scoreboard players set SEA_ch5_event_engineering_fiona sea_4temp8 581
+execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 1503..4950 if score SEA_ch5_event_engineering_fiona sea_4temp7 matches ..99 positioned 90131 129 58 if entity @a[tag=SEAPT,distance=0..3] run bossbar remove sea:ch5_lurkbar
+execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 1503..4950 if score SEA_ch5_event_engineering_fiona sea_4temp7 matches ..99 positioned 90131 129 58 if entity @a[tag=SEAPT,distance=0..3] run scoreboard players set SEA_ch5_event_engineering_fiona sea_4temp6 5001
 
 
 
