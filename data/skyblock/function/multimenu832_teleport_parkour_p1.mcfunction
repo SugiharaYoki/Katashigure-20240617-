@@ -25,10 +25,10 @@ tellraw @s[scores={parkour_stage=23..}] [{"text":"     嵯峨竹道 23","bold":f
 tellraw @s[scores={parkour_stage=24..}] [{"text":"     嵯峨竹道 24","bold":false,"color":"gold","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 832024"}}]
 tellraw @s[scores={parkour_stage=25..}] [{"text":"     嵯峨竹道 25","bold":false,"color":"gold","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 832025"}}]
 tellraw @s[scores={parkour_stage=26..}] [{"text":"     嵯峨竹道 26","bold":false,"color":"gold","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 832026"}}]
-tellraw @s[scores={parkour_stage=27..}] [{"text":"      月光遗迹 27","bold":false,"color":"dark_purple","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 832027"}}]
-tellraw @s[scores={parkour_stage=28..}] [{"text":"      月光遗迹 28","bold":false,"color":"dark_purple","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 832028"}}]
-tellraw @s[scores={parkour_stage=29..}] [{"text":"      月光遗迹 29","bold":false,"color":"dark_purple","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 832029"}}]
-tellraw @s[scores={parkour_stage=30..}] [{"text":"      月光遗迹 30","bold":false,"color":"dark_purple","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 832030"}}]
+tellraw @s[scores={parkour_stage=27..}] [{"text":"  月光遗迹 27","bold":false,"color":"dark_purple","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 832027"}}]
+tellraw @s[scores={parkour_stage=28..}] [{"text":"  月光遗迹 28","bold":false,"color":"dark_purple","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 832028"}}]
+tellraw @s[scores={parkour_stage=29..}] [{"text":"  月光遗迹 29","bold":false,"color":"dark_purple","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 832029"}}]
+tellraw @s[scores={parkour_stage=30..}] [{"text":"  月光遗迹 30","bold":false,"color":"dark_purple","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 832030"}}]
 #tellraw @s[scores={MazeLS=??..}] {"text":"","bold":false}
 #tellraw @s[scores={MazeLS=??..}] {"text":"  [下一页]","bold":false,"color":"green","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 811"}}
 tellraw @s {"text":"","bold":false}
