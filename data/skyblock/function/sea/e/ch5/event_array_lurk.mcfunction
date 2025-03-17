@@ -160,5 +160,6 @@ execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 5144 as @n[t
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 5144 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if entity @a[tag=SEAPT,scores={SEAPT_member=2}] run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“……是啊！把你们一网打尽！小心我是邪教徒的奸细，我说不定在养你们猪呢。”","color":"white","bold": false}]
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 5144 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s unless entity @a[tag=SEAPT,scores={SEAPT_member=2}] run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“你嘴真欠啊，别再说了。”","color":"white","bold": false}]
 
-
+execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 5050 run fill 90134 130 58 90134 130 59 minecraft:heavy_weighted_pressure_plate
+execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 5050 positioned 90134 130 59.0 run playsound block.note_block.bell block @a ~ ~ ~ 1 0.8
 
