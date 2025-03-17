@@ -24,7 +24,8 @@ execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 1503 positio
 execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 1503 positioned 90094 130 42 run function skyblock:sea/m/pillager_sentry
 execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 1503 positioned 90100 129 47 run function skyblock:sea/m/pillager_sentry
 
-execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 1503 positioned 90118 131 45 run function skyblock:sea/m/pillager_sentry_still
+execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 1503 positioned 90118 130 47 run function skyblock:sea/m/pillager_sentry_still
+execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 1503 positioned 90119 132 49 run function skyblock:sea/m/pillager_sentry_still
 execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 1503 positioned 90124 134 36 run function skyblock:sea/m/pillager_sentry_still
 execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 1503 positioned 90125 129 31 run function skyblock:sea/m/pillager_sentry_still
 execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 1503 positioned 90121 135 27 run function skyblock:sea/m/pillager_sentry_still
@@ -35,6 +36,10 @@ execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 1503 positio
 execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 1503 positioned 90136 129 41 run function skyblock:sea/m/pillager_sentry
 execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 1503 positioned 90136 129 42 run function skyblock:sea/m/pillager_sentry
 execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 1503 positioned 90136 129 43 run function skyblock:sea/m/pillager_sentry
+#门口附近
+execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 1503 positioned 90119 130 58 run function skyblock:sea/m/pillager_sentry
+execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 1503 positioned 90119 130 62 run function skyblock:sea/m/pillager_sentry
+execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 1503 positioned 90119 130 63 run function skyblock:sea/m/pillager_sentry_still
 
 
 execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 1500..5000 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200,scores={rng2=4..5}] at @s unless entity @n[tag=SEAPT,distance=0..6] at @n[tag=SEAPT] rotated ~ 0 positioned ^ ^ ^-2 if block ~ ~ ~ air if block ~ ~1 ~ air if block ~ ~1 ~0.3 air if block ~ ~1 ~-0.3 air if block ~0.3 ~1 ~ air if block ~-0.3 ~1 ~ air unless block ~ ~-0.7 ~ air run tp @s ~ ~ ~ facing entity @n[tag=SEAPT]
