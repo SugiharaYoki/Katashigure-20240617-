@@ -471,4 +471,11 @@ execute positioned 90139 114 187 run kill @e[type=item,distance=0..20]
 #if线
 setblock 90121 135 16 air
 
+setblock 90146 129 67 chest[facing=east]
+item replace block 90146 129 67 container.12 with golden_carrot 2
+item replace block 90146 129 67 container.14 with beef 2
+
+
+
+
 
