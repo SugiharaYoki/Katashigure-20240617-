@@ -107,6 +107,12 @@ execute as @a[scores={MultiMenu=832023,parkour_stage=23..}] at @s run tp @p -768
 execute as @a[scores={MultiMenu=832023,parkour_stage=23..}] at @s run tellraw @s [{"text":"已抵达","color":"white"},{"text":" 梦蝶的长廊 - 第23廊间","color":"green"}]
 execute as @a[scores={MultiMenu=832024,parkour_stage=24..}] at @s run tp @p -805 55 -118 facing -806 55 -118
 execute as @a[scores={MultiMenu=832024,parkour_stage=24..}] at @s run tellraw @s [{"text":"已抵达","color":"white"},{"text":" 梦蝶的长廊 - 第24廊间","color":"green"}]
+execute as @a[scores={MultiMenu=832025,parkour_stage=25..}] at @s run tp @p -850 55 -118 facing -851 55 -118
+execute as @a[scores={MultiMenu=832025,parkour_stage=25..}] at @s run tellraw @s [{"text":"已抵达","color":"white"},{"text":" 梦蝶的长廊 - 第25廊间","color":"green"}]
+execute as @a[scores={MultiMenu=832026,parkour_stage=26..}] at @s run tp @p -892 51 -118 facing -893 51 -118
+execute as @a[scores={MultiMenu=832026,parkour_stage=26..}] at @s run tellraw @s [{"text":"已抵达","color":"white"},{"text":" 梦蝶的长廊 - 第26廊间","color":"green"}]
+execute as @a[scores={MultiMenu=832027,parkour_stage=27..}] at @s run tp @p -892 51 -118 facing -893 51 -118
+execute as @a[scores={MultiMenu=832027,parkour_stage=27..}] at @s run tellraw @s [{"text":"已抵达","color":"white"},{"text":" 梦蝶的长廊 - 第26廊间","color":"green"}]
 
 
 
