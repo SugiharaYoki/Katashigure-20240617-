@@ -474,8 +474,8 @@ setblock 90121 135 16 air
 setblock 90146 129 67 chest[facing=east]
 item replace block 90146 129 67 container.12 with golden_carrot 2
 item replace block 90146 129 67 container.14 with beef 2
-
-
+setblock 90095 130 65 minecraft:furnace[facing=north]
+setblock 90095 130 34 minecraft:furnace[facing=south]
 
 
 
