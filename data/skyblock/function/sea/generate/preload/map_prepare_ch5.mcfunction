@@ -468,6 +468,7 @@ summon tnt 90137 120 184
 execute positioned 90139 114 187 run kill @e[type=item,distance=0..20]
 
 
-
+#if线
+setblock 90121 135 16 air
 
 
