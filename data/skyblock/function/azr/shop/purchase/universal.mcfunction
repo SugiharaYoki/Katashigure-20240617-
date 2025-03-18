@@ -1,3 +1,4 @@
+scoreboard players set tempPlayerShopSuccess Azr_system 1
 execute at @s unless entity @n[tag=AzrielBossFA,distance=..30] run return fail
 
 execute if score @s Azr_Shop matches 8431511 \
