@@ -1,6 +1,5 @@
 scoreboard players set tempPlayerShopSuccess Azr_system 0
 
-tellraw @s [{"score": {"name": "tempPlayerShopSuccess","objective": "Azr_system"}}]
 #-----------------1
 function skyblock:azr/shop/purchase/category1 {rng:1,trigger:84301}
 #-----------------2
