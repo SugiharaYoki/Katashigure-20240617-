@@ -134,13 +134,13 @@ execute as @e[tag=SEAmob,type=evoker] at @s as @e[type=vex,distance=0..10] run i
 
 #工程区密码1
 execute if block 90107 124 27 lever[powered=false] \
- if block 90106 124 27 lever[powered=false] \
-  if block 90105 124 27 lever[powered=true] \
-   if block 90104 124 27 lever[powered=false] \
+ if block 90106 124 27 lever[powered=true] \
+  if block 90105 124 27 lever[powered=false] \
+   if block 90104 124 27 lever[powered=true] \
     if block 90107 123 27 lever[powered=false] \
-     if block 90106 123 27 lever[powered=true] \
-      if block 90105 123 27 lever[powered=false] \
-       if block 90104 123 27 lever[powered=true] if block 90105 122 25 air \
+     if block 90106 123 27 lever[powered=false] \
+      if block 90105 123 27 lever[powered=true] \
+       if block 90104 123 27 lever[powered=false] if block 90105 122 25 air \
 positioned 90105 122 25 run function skyblock:sea/e/ch5/compare_1
 #工程区密码2
 execute if block 90130 124 32 lever[powered=true] \
