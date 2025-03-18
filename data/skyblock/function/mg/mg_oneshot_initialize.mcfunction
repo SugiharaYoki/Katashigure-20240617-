@@ -26,8 +26,8 @@ execute if entity @n[tag=sc,tag=OneShotMap003] run tp @a[tag=OneShotInvite] -75 
 execute if entity @n[tag=sc,tag=OneShotMap003] run tp @a[tag=OneShotAccept] -56 41 -121 facing -75 41 -145
 execute if entity @n[tag=sc,tag=OneShotMap004] run tp @a[tag=OneShotInvite] -61 41 -123 facing -61 41 -124
 execute if entity @n[tag=sc,tag=OneShotMap004] run tp @a[tag=OneShotAccept] -70 41 -143 facing -70 41 -142
-execute if entity @n[tag=sc,tag=OneShotMap005] run tp @a[tag=OneShotInvite] -56 41 -122 facing -56 41 -144
-execute if entity @n[tag=sc,tag=OneShotMap005] run tp @a[tag=OneShotAccept] -56 41 -144 facing -56 41 -122
+execute if entity @n[tag=sc,tag=OneShotMap005] run tp @a[tag=OneShotInvite] -56 42 -122 facing -56 42 -144
+execute if entity @n[tag=sc,tag=OneShotMap005] run tp @a[tag=OneShotAccept] -56 42 -144 facing -56 42 -122
 
 tag @a[tag=OneShotInvite] add Gaming
 tag @a[tag=OneShotAccept] add Gaming
