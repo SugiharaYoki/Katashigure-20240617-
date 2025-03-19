@@ -406,8 +406,8 @@ fill 90137 105 21 90137 104 21 lever[facing=north]
 fill 90140 106 22 90140 104 22 minecraft:waxed_copper_grate
 
 setblock 90140 104 23 chest[facing=north]
-item replace block 90140 104 23 container.11 with echo_shard 2
-item replace block 90140 104 23 container.15 with iron_ingot 2
+#item replace block 90140 104 23 container.11 with echo_shard 2
+#item replace block 90140 104 23 container.15 with iron_ingot 2
 
 setblock 90097 132 99 chest[facing=south]{Lock:"厄珀娅之钥"}
 item replace block 90097 132 99 container.4 with amethyst_shard 1
