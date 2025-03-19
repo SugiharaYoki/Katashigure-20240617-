@@ -30,7 +30,7 @@ execute if score SEA_chg_true_end sea_4temp1 matches 40..90 run clear @a[tag=SEA
 execute if score SEA_chg_true_end sea_4temp1 matches 40..90 run clear @a[tag=SEAPT] amethyst_block
 execute if score SEA_chg_true_end sea_4temp1 matches 40..90 positioned 90093.5 131.5 102 run kill @e[type=item,distance=0..50,nbt={Item:{id:"minecraft:amethyst_block"}}]
 execute if score SEA_chg_true_end sea_4temp1 matches 40..90 positioned 90093.5 131.5 102 run kill @e[type=item,distance=0..50,nbt={Item:{id:"minecraft:amethyst_shard"}}]
-
+execute if score SEA_chg_true_end sea_4temp1 matches 40 positioned 90093.5 131.5 102 run give @r[tag=SEAPT,tag=!SEAPF] end_crystal
 
 execute if score SEA_chg_true_end sea_4temp1 matches 41..45 run playsound minecraft:ambient.crimson_forest.additions ambient @a ~ ~ ~ 100 0.8
 
