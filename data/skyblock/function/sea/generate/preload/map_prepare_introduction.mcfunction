@@ -759,7 +759,14 @@ setblock 90092 131 102 minecraft:amethyst_cluster[facing=west]
 setblock 90093 132 102 minecraft:amethyst_cluster[facing=up]
 setblock 90093 130 102 minecraft:amethyst_cluster[facing=down]
 
-
-
-
+setblock 90089 134 103 minecraft:white_stained_glass
+setblock 90098 134 100 minecraft:white_stained_glass
+fill 90096 128 106 90092 128 106 minecraft:campfire[lit=true]
+setblock 90095 127 101 minecraft:smooth_stone_slab[type=double]
+setblock 90094 127 103 minecraft:smooth_stone_slab[type=double]
+setblock 90093 127 103 minecraft:smooth_stone_slab[type=double]
+setblock 90092 127 103 minecraft:smooth_stone_slab[type=double]
+setblock 90093 127 104 minecraft:smooth_stone_slab[type=double]
+setblock 90092 127 100 minecraft:smooth_stone_slab[type=double]
+setblock 90093 127 100 minecraft:smooth_stone_slab[type=double]
 

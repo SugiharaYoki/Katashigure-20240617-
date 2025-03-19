@@ -396,4 +396,4 @@ run fill 90136 116 269 90136 115 269 air destroy
 
 execute if items block 90097 132 99 container.4 amethyst_shard if items block 90097 132 99 container.12 amethyst_shard if items block 90097 132 99 container.13 amethyst_shard if items block 90097 132 99 container.14 amethyst_shard if items block 90097 132 99 container.22 amethyst_shard run scoreboard players set SEA_chg_true_end sea_4temp1 1
 
-execute if score SEA_chg_true_end sea_4temp1 matches 1..100 run function skyblock:sea/e/chg/true_end_the_crystal
+execute if score SEA_chg_true_end sea_4temp1 matches 1..100 positioned 90093 131 102 run function skyblock:sea/e/chg/true_end_the_crystal
