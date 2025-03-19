@@ -752,3 +752,14 @@ clone 90135 110 172 90143 120 177 90135 110 178
 clone 90135 110 172 90143 120 177 90135 110 184
 clone 90135 110 172 90143 120 177 90135 110 190
 clone 90135 110 172 90143 120 177 90135 110 196
+
+setblock 90093 131 102 minecraft:amethyst_block
+setblock 90094 131 102 minecraft:amethyst_cluster[facing=east]
+setblock 90092 131 102 minecraft:amethyst_cluster[facing=west]
+setblock 90093 132 102 minecraft:amethyst_cluster[facing=up]
+setblock 90093 130 102 minecraft:amethyst_cluster[facing=down]
+
+
+
+
+
