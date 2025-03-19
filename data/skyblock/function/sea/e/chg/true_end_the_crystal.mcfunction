@@ -46,15 +46,20 @@ execute if score SEA_chg_true_end sea_4temp1 matches 57 positioned 90115 145 96 
 execute if score SEA_chg_true_end sea_4temp1 matches 58 positioned 90126 128 93 run function skyblock:sea/m/zombie_knight
 execute if score SEA_chg_true_end sea_4temp1 matches 60 positioned 90072 145 105 run function skyblock:sea/m/zombie_knight
 
+execute if score SEA_chg_true_end sea_4temp1 matches 62 positioned 90119 128 86 run function skyblock:sea/m/zombie_knight
+execute if score SEA_chg_true_end sea_4temp1 matches 64 positioned 90121 137 129 run function skyblock:sea/m/zombie_knight
+execute if score SEA_chg_true_end sea_4temp1 matches 65 positioned 90104 143 121 run function skyblock:sea/m/zombie_knight
+
+
 execute if score SEA_chg_true_end sea_4temp1 matches 64 positioned 90080 137 955 run function skyblock:sea/m/zombie_horse
 execute if score SEA_chg_true_end sea_4temp1 matches 66 positioned 90119 137 108 run function skyblock:sea/m/zombie_horse
 
-execute if score SEA_chg_true_end sea_4temp1 matches 67 positioned 90119 137 108 as @e[type=zombie,tag=SEAknight,distance=0..100] run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
-execute if score SEA_chg_true_end sea_4temp1 matches 67 positioned 90119 137 108 as @e[type=zombie,tag=SEAknight,distance=0..100] run particle sculk_soul ~ ~1 ~ 0.3 0.5 0.3 0.05 10
-execute if score SEA_chg_true_end sea_4temp1 matches 67 positioned 90119 137 108 as @e[type=zombie,tag=SEAknight,distance=0..100] run function skyblock:sea/m/drowned
-execute if score SEA_chg_true_end sea_4temp1 matches 67 positioned 90119 137 108 as @e[type=zombie,tag=SEAknight,distance=0..100] run function skyblock:sea/m/drowned
-execute if score SEA_chg_true_end sea_4temp1 matches 67 positioned 90119 137 108 as @e[type=zombie,tag=SEAknight,distance=0..100] run function skyblock:sea/m/skeleton
-execute if score SEA_chg_true_end sea_4temp1 matches 67 positioned 90119 137 108 as @e[type=zombie,tag=SEAknight,distance=0..100] run function skyblock:sea/m/silverfish
+execute if score SEA_chg_true_end sea_4temp1 matches 67 positioned 90119 137 108 as @e[type=zombie,tag=SEAknight,distance=15..100] run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
+execute if score SEA_chg_true_end sea_4temp1 matches 67 positioned 90119 137 108 as @e[type=zombie,tag=SEAknight,distance=15..100] run particle sculk_soul ~ ~1 ~ 0.3 0.5 0.3 0.05 10
+execute if score SEA_chg_true_end sea_4temp1 matches 67 positioned 90119 137 108 as @e[type=zombie,tag=SEAknight,distance=15..100] run function skyblock:sea/m/drowned
+execute if score SEA_chg_true_end sea_4temp1 matches 67 positioned 90119 137 108 as @e[type=zombie,tag=SEAknight,distance=15..100] run function skyblock:sea/m/drowned
+execute if score SEA_chg_true_end sea_4temp1 matches 67 positioned 90119 137 108 as @e[type=zombie,tag=SEAknight,distance=15..100] run function skyblock:sea/m/skeleton
+execute if score SEA_chg_true_end sea_4temp1 matches 67 positioned 90119 137 108 as @e[type=zombie,tag=SEAknight,distance=15..100] run function skyblock:sea/m/silverfish
 
 
 execute if score SEA_chg_true_end sea_4temp1 matches 41 run setblock 90095 127 101 sculk destroy
