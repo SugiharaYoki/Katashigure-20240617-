@@ -165,7 +165,7 @@ execute if score @s dailydiv2S matches 2 run tellraw @s {"text":"   ◇ 等待�
 execute if score @s dailydiv2S matches 3 run tellraw @s {"text":"   ◇ 等待的人：近期或许会出现","color":"white"}
 execute if score @s dailydiv2S matches 4 run tellraw @s {"text":"   ◇ 等待的人：近期或许不会出现","color":"white"}
 execute if score @s dailydiv2S matches 5 run tellraw @s {"text":"   ◇ 等待的人：你与对方似乎暂无缘分的交集","color":"white"}
-execute if score @s dailydiv1S matches 6 run tellraw @s {"text":"   ◇ 等待的人：似乎与你擦肩而过了数次","color":"white"}
+execute if score @s dailydiv2S matches 6 run tellraw @s {"text":"   ◇ 等待的人：似乎与你擦肩而过了数次","color":"white"}
 execute if score @s dailydiv3S matches 2 run tellraw @s {"text":"   ◇ 下一场旅行：可能要做好遇到突发情况的准备","color":"white"}
 execute if score @s dailydiv3S matches 3 run tellraw @s {"text":"   ◇ 下一场旅行：可能要带上以往不需要的事物","color":"white"}
 execute if score @s dailydiv3S matches 4 run tellraw @s {"text":"   ◇ 下一场旅行：可能可以舍弃一些以往经常携带的事物","color":"white"}
