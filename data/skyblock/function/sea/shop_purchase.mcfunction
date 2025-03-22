@@ -81,6 +81,21 @@ execute if entity @s[tag=sea_purchase_pass] run tellraw @a[gamemode=spectator,di
 execute if entity @s[tag=sea_purchase_pass] run scoreboard players remove @s sea_i_emerald 20
 tag @s remove sea_purchase_pass
 
+execute if items entity @s container.* *[custom_data={sea_crossbow:true}] if score @s sea_crafter matches 10012 as @s[scores={sea_i_emerald=..29}] run tellraw @s {"text":"失败！余额不足！","color":"red"}
+execute if items entity @s container.* *[custom_data={sea_crossbow:true}] if score @s sea_crafter matches 10012 as @s[scores={sea_i_emerald=30..}] run tag @s add sea_purchase_pass
+execute if entity @s[tag=sea_purchase_pass] run playsound minecraft:item.armor.equip_iron neutral @s ~ ~ ~ 100
+execute if entity @s[tag=sea_purchase_pass] run clear @s crossbow[custom_data={sea_crossbow:true}] 1
+execute if entity @s[tag=sea_purchase_pass] run give @s crossbow[custom_name='{"text":"工程弩·二版","italic":false,"color":"red"}',custom_data={sea_crossbow2:true},enchantments={quick_charge:1,piercing:1},unbreakable={}]
+execute if entity @s[tag=sea_purchase_pass] run scoreboard players remove @s sea_i_emerald 30
+tag @s remove sea_purchase_pass
+execute if items entity @s container.* *[custom_data={sea_crossbow2:true}] if score @s sea_crafter matches 10032 as @s[scores={sea_i_emerald=..29}] run tellraw @s {"text":"失败！余额不足！","color":"red"}
+execute if items entity @s container.* *[custom_data={sea_crossbow2:true}] if score @s sea_crafter matches 10032 as @s[scores={sea_i_emerald=30..}] run tag @s add sea_purchase_pass
+execute if entity @s[tag=sea_purchase_pass] run playsound minecraft:item.armor.equip_iron neutral @s ~ ~ ~ 100
+execute if entity @s[tag=sea_purchase_pass] run clear @s crossbow[custom_data={sea_crossbow2:true}] 1
+execute if entity @s[tag=sea_purchase_pass] run give @s crossbow[custom_name='{"text":"工程弩·三版","italic":false,"color":"red"}',custom_data={sea_crossbow3:true},enchantments={quick_charge:2,piercing:2},unbreakable={}]
+execute if entity @s[tag=sea_purchase_pass] run scoreboard players remove @s sea_i_emerald 30
+tag @s remove sea_purchase_pass
+
 #复合弓制作
 execute if score @s[tag=e_w_03b_eternal] sea_crafter matches 10054 as @s[scores={sea_i_flint=..1}] run tellraw @s {"text":"失败！素材不足！","color":"red"}
 execute if score @s[tag=e_w_03b_eternal] sea_crafter matches 10054 as @s[scores={sea_i_flint=2..}] run tag @s add sea_purchase_pass
