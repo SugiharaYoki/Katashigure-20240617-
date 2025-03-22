@@ -96,6 +96,7 @@ execute if score SEA_ch5_event_engineering_fiona sea_4temp8 matches 14 positione
 execute if score SEA_ch5_event_engineering_fiona sea_4temp8 matches 500 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"邪教徒：","color":"yellow","bold": true},{"text":"\n“撤退，撤退！我们不是对手！！”","color":"white","bold": false}]
 execute if score SEA_ch5_event_engineering_fiona sea_4temp8 matches 540 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"邪教徒：","color":"yellow","bold": true},{"text":"\n“快去通知琼斯主教，咱们惹不起他们！”","color":"white","bold": false}]
 execute if score SEA_ch5_event_engineering_fiona sea_4temp8 matches 580 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"邪教徒：","color":"yellow","bold": true},{"text":"\n“不要再打了、别再打了！我们投降！！”","color":"white","bold": false}]
+execute if score SEA_ch5_event_engineering_fiona sea_4temp8 matches 580 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s positioned 90133 129 58 run kill @e[distance=0..3,tag=SEAmob]
 execute if score SEA_ch5_event_engineering_fiona sea_4temp8 matches 583 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s as @e[tag=SEAmob,type=pillager] at @s run item replace entity @s weapon.mainhand with air
 execute if score SEA_ch5_event_engineering_fiona sea_4temp8 matches 583 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s as @e[tag=SEAmob,type=vindicator] at @s run item replace entity @s weapon.mainhand with air
 execute if score SEA_ch5_event_engineering_fiona sea_4temp8 matches 583 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s as @e[tag=SEAmob,type=pillager] at @s run data modify entity @s Invulnerable set value 1b
@@ -128,6 +129,7 @@ execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 1503..4950 i
 execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 1503..4950 if score SEA_ch5_event_engineering_fiona sea_4temp7 matches ..99 positioned 90131 129 58 if entity @a[tag=SEAPT,distance=0..3] run scoreboard players set SEA_ch5_event_engineering_fiona sea_4temp8 581
 execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 1503..4950 if score SEA_ch5_event_engineering_fiona sea_4temp7 matches ..99 positioned 90131 129 58 if entity @a[tag=SEAPT,distance=0..3] run bossbar remove sea:ch5_lurkbar
 execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 1503..4950 if score SEA_ch5_event_engineering_fiona sea_4temp7 matches ..99 positioned 90131 129 58 if entity @a[tag=SEAPT,distance=0..3] run scoreboard players set SEA_ch5_event_engineering_fiona sea_4temp6 5001
+execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 1503..4950 if score SEA_ch5_event_engineering_fiona sea_4temp7 matches 100.. if score SEA_ch5_event_engineering_fiona sea_4temp8 matches 580.. positioned 90131 129 58 if entity @a[tag=SEAPT,distance=0..3] run scoreboard players set SEA_ch5_event_engineering_fiona sea_4temp6 5001
 
 
 
