@@ -372,8 +372,8 @@ execute as @e[x=90184.0,dx=3.8,y=20.65,dy=0,z=96.50,dz=0] run damage @s 3 sting
 execute as @e[x=90184.0,dx=3.8,y=18.55,dy=0,z=92.50,dz=0] run damage @s 3 sting
 
 #水晶祀堂
-particle enchant 90093 131 102 3 2 3 0.01 20
-particle portal 90093 131 102 0.5 0.5 0.5 0.01 10
+execute positioned 90093 131 102 if entity @a[distance=0..12] run particle enchant 90093 131 102 3 2 3 0.01 20
+execute positioned 90093 131 102 if entity @a[distance=0..15] run particle portal 90093 131 102 0.5 0.5 0.5 0.01 10
 
 #
 
