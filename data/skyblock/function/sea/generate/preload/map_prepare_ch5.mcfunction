@@ -480,3 +480,24 @@ setblock 90095 130 34 minecraft:furnace[facing=south]
 fill 90134 130 58 90134 130 59 minecraft:air
 
 fill 90117 131 68 90121 131 68 iron_bars
+
+
+
+
+#通讯中心
+setblock 90136 131 47 minecraft:potted_blue_orchid
+setblock 90138 131 47 minecraft:potted_blue_orchid
+
+setblock 90136 130 65 minecraft:redstone_block
+setblock 90138 130 65 minecraft:redstone_block
+setblock 90136 130 65 minecraft:air
+setblock 90138 130 65 minecraft:air
+
+setblock 90142 130 59 minecraft:redstone_block
+setblock 90142 130 59 minecraft:air
+
+
+
+
+
+
