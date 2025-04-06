@@ -504,7 +504,7 @@ item replace block 90132 130 51 container.12 with shulker_shell 2
 item replace block 90132 130 51 container.14 with beef 2
 setblock 90150 130 54 furnace[facing=west]
 
-setblock 90150 131 48 minecraft:potted_blue_orchid
+#setblock 90150 131 48 minecraft:potted_blue_orchid
 setblock 90150 130 51 air
 setblock 90150 130 51 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:coal"}}
 setblock 90144 130 65 air
@@ -513,6 +513,10 @@ setblock 90137 130 67 air
 setblock 90137 130 67 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:flint"}}
 setblock 90144 130 47 air
 setblock 90144 130 47 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:gunpowder"}}
+setblock 90137 137 60 air
+setblock 90144 130 47 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 3, id:"minecraft:golden_carrot"}}
+
+
 
 execute if entity @n[type=interaction,tag=SEAcrafter20,distance=0..5.4] run tag @s add sea_teleport20
 
