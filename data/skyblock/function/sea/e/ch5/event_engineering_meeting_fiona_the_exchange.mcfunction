@@ -22,6 +22,7 @@ execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 62 as @n[tag
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 85 run scoreboard players set SEA_ch5_event_engineering_fiona sea_4temp2 167
 
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 87 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s as @p[tag=SEAPT] run tellraw @a[distance=0..250] [{"selector":"@p[tag=SEAPT,scores={SEAPT_member=1}]","color":"white"},{"text":"：这……这我倒是不清楚。","color":"white"}]
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 87 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s as @p[tag=SEAPT] run scoreboard players add SEA_ch5_event_fiona_favor rng1 1
 
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 100 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if entity @a[tag=SEAPT,scores={SEAPT_member=2}] run tellraw @a[distance=0..250] [{"selector":"@p[tag=SEAPT,scores={SEAPT_member=2}]","color":"white"},{"text":"：不对啊、你说你是舵长的女儿？！那你一定比我们知道更多吧，忒尔克西到底发生什么了？","color":"white"}]
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 100 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s unless entity @a[tag=SEAPT,scores={SEAPT_member=2}] run tellraw @a[distance=0..250] [{"selector":"@p[tag=SEAPT,scores={SEAPT_member=1}]","color":"white"},{"text":"：等等、你说什么？这代表你知道的比我更多，是吗？","color":"white"}]
@@ -49,6 +50,7 @@ execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 245 as @n[ta
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 245 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200,tag=SEAPT] [{"text":" - "},{"text":"询问：诺玛是谁？谈判又是什么？  ","color":"yellow"},{"text":"〈◆〉","bold":true,"color":"gold","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 90001"}}]
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 281 run scoreboard players set SEA_ch5_event_engineering_fiona sea_4temp2 357
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 283 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..250] [{"selector":"@r[tag=SEAPT]","color":"white"},{"text":"：谈判？你一直在提到的谈判到底是指什么？\n以及……诺玛？你提到的诺玛是谁？","color":"white"}]
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 283 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run scoreboard players add SEA_ch5_event_fiona_favor rng1 2
 
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 300 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 300 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“哦？我还以为你在主平台探索了那么久，一定已经遇到过了诺玛。\n也是，我也与麦迪逊叔叔失联很久了。\n邪教徒领头的是个叫琼斯的家伙。他曾经是诺曼博士的得力助手，我想让他将诺曼博士交给我，其次是摧毁通讯阵列，以防吸引‘外界’的势力。”","color":"white","bold": false}]
@@ -130,6 +132,7 @@ execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 752 as @n[ta
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 769 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 769 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if entity @a[tag=SEAPT,scores={SEAPT_member=2}] run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“我会开启上去的路的铁门。至于跟不跟我过来，你们做决定。”","color":"white","bold": false}]
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 769 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s unless entity @a[tag=SEAPT,scores={SEAPT_member=2}] run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“我会开启上去的路的铁门。至于跟不跟我过来，你自己做决定。”","color":"white","bold": false}]
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 769 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run scoreboard players add SEA_ch5_event_fiona_favor rng1 10
 
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 775 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tp @s 90102 122 38 facing 90101.00 123.00 37.57
 

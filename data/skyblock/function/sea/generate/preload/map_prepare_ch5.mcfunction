@@ -261,6 +261,12 @@ scoreboard players set SEA_ch5_event_engineering_fiona sea_4temp5 0
 scoreboard players set SEA_ch5_event_engineering_fiona sea_4temp6 0
 scoreboard players set SEA_ch5_event_engineering_fiona sea_4temp7 0
 scoreboard players set SEA_ch5_event_engineering_fiona sea_4temp8 0
+scoreboard players set SEA_ch5_event_building_fiona sea_4temp1 0
+scoreboard players set SEA_ch5_event_building_fiona sea_4temp2 0
+scoreboard players set SEA_ch5_event_building_fiona sea_4temp3 0
+scoreboard players set SEA_ch5_event_building_fiona sea_4temp4 0
+scoreboard players set SEA_ch5_event_building_fiona sea_4temp5 0
+scoreboard players set SEA_ch5_event_fiona_favor rng1 0
 scoreboard players set SEA_chg_true_end sea_4temp1 0
 
 fill 90105 93 57 90105 94 57 minecraft:magma_block
@@ -324,7 +330,6 @@ fill 90100 73 67 90099 71 67 iron_bars
 
 #防卡关
 fill 90127 130 102 90127 129 102 air
-
 
 
 
