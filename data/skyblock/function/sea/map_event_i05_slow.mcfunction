@@ -210,6 +210,12 @@ if block 90097 130 27 lever[powered=false] \
 positioned 90096 129 28 run function skyblock:sea/e/ch5/compare_5
 
 
+#通讯总站 2F 第一波敌人
+execute if entity @a[tag=SEAPT,tag=!SEAPF,x=90136,y=136,z=49,dx=10,dy=10,dz=10] unless entity @a[tag=e_i_45] run function skyblock:sea/e/ch5/event_building_2f_enemy_1
+
+
+
+
 
 
 
