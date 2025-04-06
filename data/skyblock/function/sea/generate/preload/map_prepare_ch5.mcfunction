@@ -496,7 +496,12 @@ setblock 90138 130 65 minecraft:air
 setblock 90142 130 59 minecraft:redstone_block
 setblock 90142 130 59 minecraft:air
 
+setblock 90132 130 51 minecraft:light_gray_shulker_box
+item replace block 90132 130 51 container.12 with shulker_shell 2
+item replace block 90132 130 51 container.14 with beef 2
+setblock 90150 130 54 furnace[facing=west]
 
+setblock 90150 131 48 minecraft:potted_blue_orchid
 
 
 
