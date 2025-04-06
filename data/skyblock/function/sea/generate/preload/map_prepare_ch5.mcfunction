@@ -514,6 +514,6 @@ setblock 90137 130 67 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery
 setblock 90144 130 47 air
 setblock 90144 130 47 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:gunpowder"}}
 
-
+execute if entity @n[type=interaction,tag=SEAcrafter20,distance=0..5.4] run tag @s add sea_teleport20
 
 
