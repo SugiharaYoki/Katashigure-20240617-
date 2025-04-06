@@ -502,7 +502,8 @@ item replace block 90132 130 51 container.14 with beef 2
 setblock 90150 130 54 furnace[facing=west]
 
 setblock 90150 131 48 minecraft:potted_blue_orchid
-
+setblock 90150 130 51 air
+setblock 90150 130 51 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:coal"}}
 
 
 
