@@ -24,6 +24,9 @@ summon minecraft:interaction 90126 90.3 58 {CustomName:'[{"text":"多功能工�
 summon minecraft:marker 90126 89 59 {Tags:["SEAcrafter_tp","SEAcrafter_tp15"]}
 summon minecraft:interaction 90121 123.3 52 {CustomName:'[{"text":"多功能工作站"}]',Tags:["SEAcrafter","SEAcrafter16"]}
 summon minecraft:marker 90121 122 51 {Tags:["SEAcrafter_tp","SEAcrafter_tp16"]}
+summon minecraft:interaction 90146 131.3 50 {CustomName:'[{"text":"多功能工作站"}]',Tags:["SEAcrafter","SEAcrafter17"]}
+summon minecraft:marker 90147 130 50 {Tags:["SEAcrafter_tp","SEAcrafter_tp17"]}
+
 
 summon minecraft:interaction 90130 123.3 48 {CustomName:'[{"text":"器械式治疗仪"}]',Tags:["SEAaidbox"]}
 summon minecraft:interaction 90107 123.3 38 {CustomName:'[{"text":"器械式治疗仪"}]',Tags:["SEAaidbox"]}
@@ -504,6 +507,13 @@ setblock 90150 130 54 furnace[facing=west]
 setblock 90150 131 48 minecraft:potted_blue_orchid
 setblock 90150 130 51 air
 setblock 90150 130 51 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:coal"}}
+setblock 90144 130 65 air
+setblock 90144 130 65 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:coal"}}
+setblock 90137 130 67 air
+setblock 90137 130 67 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:flint"}}
+setblock 90144 130 47 air
+setblock 90144 130 47 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:gunpowder"}}
+
 
 
 
