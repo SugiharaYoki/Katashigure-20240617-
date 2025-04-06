@@ -153,3 +153,6 @@ execute if entity @n[type=interaction,tag=SEAcrafter17,distance=0..5.4] run tag 
 execute if entity @n[type=interaction,tag=SEAcrafter18,distance=0..5.4] run tag @s add sea_teleport18
 execute if entity @n[type=interaction,tag=SEAcrafter19,distance=0..5.4] run tag @s add sea_teleport19
 execute if entity @n[type=interaction,tag=SEAcrafter20,distance=0..5.4] run tag @s add sea_teleport20
+execute if entity @n[type=interaction,tag=SEAcrafter21,distance=0..5.4] run tag @s add sea_teleport21
+execute if entity @n[type=interaction,tag=SEAcrafter22,distance=0..5.4] run tag @s add sea_teleport22
+execute if entity @n[type=interaction,tag=SEAcrafter23,distance=0..5.4] run tag @s add sea_teleport23

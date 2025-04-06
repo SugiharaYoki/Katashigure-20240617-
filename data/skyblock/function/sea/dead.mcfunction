@@ -78,6 +78,9 @@ tag @s remove sea_teleport17
 tag @s remove sea_teleport18
 tag @s remove sea_teleport19
 tag @s remove sea_teleport20
+tag @s remove sea_teleport21
+tag @s remove sea_teleport22
+tag @s remove sea_teleport23
 #tag @s remove SEAPT_storymode
 scoreboard players reset @s sea_dead
 scoreboard players reset @s sea_dead_check
