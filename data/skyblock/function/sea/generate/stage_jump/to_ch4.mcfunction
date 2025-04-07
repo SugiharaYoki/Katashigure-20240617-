@@ -31,3 +31,4 @@ give @a[tag=SEAPT] gunpowder 2
 scoreboard players add @a[tag=SEAPT] sea_i_emerald 10
 
 tag @a[tag=SEAPT] add sea_teleport05
+

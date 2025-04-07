@@ -187,7 +187,7 @@ execute positioned 90120 149 144 if entity @a[tag=SEAPT,distance=..1.7] unless e
 
 execute positioned 90113 149 147 if entity @a[tag=SEAPT,distance=..2.5,tag=!SEAPF] unless entity @n[tag=SEAch3_spawn,distance=0..3] run function skyblock:sea/e/ch3/ev026_ch3_dorm_sidedorm
 
-execute positioned 90102 149 131 if entity @a[tag=SEAPT,distance=..3.5,tag=!SEAPF] unless block 90102 150 130 air run function skyblock:sea/e/ch3/ev026_ch3_dorm_ston
+
 
 execute positioned 90107 155 147 if entity @a[tag=SEAPT,distance=..2.3] unless entity @n[tag=SEAch3_spawn,distance=0..3] positioned 90102 155 149 run function skyblock:sea/m/nightblind
 execute positioned 90107 155 147 if entity @a[tag=SEAPT,distance=..2.3] unless entity @n[tag=SEAch3_spawn,distance=0..3] positioned 90101 155 150 run function skyblock:sea/m/skeleton_melee
