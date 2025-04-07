@@ -21,7 +21,7 @@ execute as @s[scores={rng8=4},tag=!SEAfiona_targetfound] at @s positioned ^ ^ ^5
 execute as @s[scores={rng8=4}] at @s positioned ^ ^ ^5.6 if entity @n[tag=SEAmob,tag=!SEAnpc,distance=0..0.8] run tag @s add SEAfiona_targetfound
 execute as @s[scores={rng8=4},tag=!SEAfiona_targetfound] at @s run scoreboard players set @s rng8 9
 
-execute as @s[scores={rng8=4..8}] at @s run tp @s ~ ~ ~ facing entity @n[tag=SEAmob,tag=!SEAnpc,distance=..5.6]
+execute as @s[scores={rng8=4..8}] at @s run tp @s ~ ~ ~ facing entity @n[tag=SEAmob,tag=!SEAnpc,distance=..5.6,tag=!SEAmob_surrended]
 
 execute as @s[scores={rng8=3..8}] at @s anchored eyes positioned ^ ^ ^1.5 run particle electric_spark ~ ~ ~ 0 0 0 0 1
 execute as @s[scores={rng8=3..8}] at @s anchored eyes positioned ^ ^ ^1.8 run particle electric_spark ~ ~ ~ 0 0 0 0 1
