@@ -521,6 +521,9 @@ setblock 90144 130 47 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery
 setblock 90137 137 60 air
 setblock 90144 130 47 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 3, id:"minecraft:golden_carrot"}}
 
+setblock 90136 130 70 minecraft:light_gray_shulker_box
+item replace block 90136 130 70 container.12 with shulker_shell 2
+item replace block 90136 130 70 container.14 with disc_fragment_5 1
 
 
 execute if entity @n[type=interaction,tag=SEAcrafter20,distance=0..5.4] run tag @s add sea_teleport20
