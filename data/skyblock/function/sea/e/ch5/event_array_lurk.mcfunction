@@ -42,7 +42,13 @@ execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 1503 positio
 execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 1503 positioned 90119 130 62 run function skyblock:sea/m/pillager_sentry
 execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 1503 positioned 90119 130 63 run function skyblock:sea/m/pillager_sentry_still
 
-execute store result score @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200,tag=!SEAfiona_laser_attacking] rng2 run random value 1..5
+execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 5000.. if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 837.. store result score @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200,tag=!SEAfiona_laser_attacking] rng2 run random value 1..5
+execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 5000.. if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 837.. as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200,scores={rng2=1}] at @s if entity @e[tag=SEAmob,distance=0..5] run function skyblock:sea/e/ch5/fiona_attack_1
+execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 5000.. if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 837.. as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200,scores={rng2=2}] at @s if entity @n[tag=SEAmob,tag=!SEAnpc,distance=..5,type=!magma_cube] run tag @s add SEAfiona_laser_attacking
+
+execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches ..4999 if score SEA_ch5_event_engineering_fiona sea_4temp7 matches 100.. if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 837.. store result score @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200,tag=!SEAfiona_laser_attacking] rng2 run random value 1..5
+execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches ..4999 if score SEA_ch5_event_engineering_fiona sea_4temp7 matches 100.. if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 837.. as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200,scores={rng2=1}] at @s if entity @e[tag=SEAmob,distance=0..5] run function skyblock:sea/e/ch5/fiona_attack_1
+execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches ..4999 if score SEA_ch5_event_engineering_fiona sea_4temp7 matches 100.. if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 837.. as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200,scores={rng2=2}] at @s if entity @n[tag=SEAmob,tag=!SEAnpc,distance=..5,type=!magma_cube] run tag @s add SEAfiona_laser_attacking
 
 execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 1500..5000 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200,scores={rng2=4..5}] at @s unless entity @n[tag=SEAPT,distance=0..6] at @n[tag=SEAPT] rotated ~ 0 positioned ^ ^ ^-2 if block ~ ~ ~ air if block ~ ~1 ~ air if block ~ ~1 ~0.3 air if block ~ ~1 ~-0.3 air if block ~0.3 ~1 ~ air if block ~-0.3 ~1 ~ air unless block ~ ~-0.7 ~ air run tp @s ~ ~ ~ facing entity @n[tag=SEAPT]
 execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 1500..5000 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200,scores={rng2=4..5}] at @s unless entity @n[tag=SEAPT,distance=0..6] at @n[tag=SEAPT] rotated ~ 0 positioned ^1 ^ ^-2 if block ~ ~ ~ air if block ~ ~1 ~ air if block ~ ~1 ~0.3 air if block ~ ~1 ~-0.3 air if block ~0.3 ~1 ~ air if block ~-0.3 ~1 ~ air unless block ~ ~-0.7 ~ air run tp @s ~ ~ ~ facing entity @n[tag=SEAPT]
@@ -178,4 +184,5 @@ execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 5050 run fil
 execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 5050 positioned 90134 130 59.0 run playsound block.note_block.bell block @a ~ ~ ~ 1 0.8
 
 execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 5050 run fill 90117 131 68 90121 131 68 air
+
 
