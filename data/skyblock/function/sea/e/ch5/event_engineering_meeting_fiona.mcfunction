@@ -69,6 +69,7 @@ execute if score SEA_ch5_event_engineering_fiona rng1 matches 68 as @n[tag=SEAfi
 execute if score SEA_ch5_event_engineering_fiona rng1 matches 68 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s as @p[tag=SEAPT] run title @a[distance=0..250] title [{"text":"带菲尔娜逃跑","color":"dark_red"}]
 execute if score SEA_ch5_event_engineering_fiona rng1 matches 68 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s as @p[tag=SEAPT] run title @a[distance=0..250] subtitle [{"text":"那些邪教徒也是人类 尽可能规避战斗吧","color":"gray"}]
 
+execute if score SEA_ch5_event_engineering_fiona rng1 matches 68 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run scoreboard players add SEA_ch5_event_fiona_favor rng1 4
 
 execute if score SEA_ch5_event_engineering_fiona rng1 matches 152 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s as @p[tag=SEAPT] run tellraw @a[distance=0..250] [{"selector":"@s","color":"white"},{"text":"：你他妈捅了贼窝吗？他们倾巢出动杀你？！","color":"white"}]
 
