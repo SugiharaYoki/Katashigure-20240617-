@@ -528,4 +528,5 @@ item replace block 90136 130 70 container.14 with disc_fragment_5 1
 
 execute if entity @n[type=interaction,tag=SEAcrafter20,distance=0..5.4] run tag @s add sea_teleport20
 
-
+fill 90112 122 46 90112 122 47 iron_bars
+fill 90112 123 46 90112 123 47 iron_bars
