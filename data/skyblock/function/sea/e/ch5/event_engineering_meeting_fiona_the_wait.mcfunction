@@ -89,8 +89,8 @@ execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches ..1490 if sc
 execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches ..1490 if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 837.. as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200,tag=!SEAfiona_special_sentence_3] at @s if entity @n[tag=SEAmob,tag=!SEAnpc,distance=..5,type=vindicator] run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“我靠这群人有完没完？”","color":"white","bold": false}]
 execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches ..1490 if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 837.. as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200,tag=!SEAfiona_special_sentence_3] at @s if entity @n[tag=SEAmob,tag=!SEAnpc,distance=..5,type=vindicator] run tag @s add SEAfiona_special_sentence_3
 
-execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 837.. as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] positioned 90125 122 22 if entity @s[distance=20..] run tp @s 90125 122 22
-execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 837.. as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s unless block ~ ~1 ~ air run tp @s 90125 122 22
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 837.. if score SEA_ch5_event_engineering_fiona sea_4temp6 matches ..1499 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] positioned 90125 122 22 if entity @s[distance=20..] run tp @s 90125 122 22
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 837.. if score SEA_ch5_event_engineering_fiona sea_4temp6 matches ..1499 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s unless block ~ ~1 ~ air run tp @s 90125 122 22
 
 execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 1400..1450 run scoreboard players set SEA_ch5_event_engineering_fiona sea_4temp6 1400
 
