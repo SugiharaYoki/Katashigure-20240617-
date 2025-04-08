@@ -519,7 +519,7 @@ setblock 90137 130 67 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery
 setblock 90144 130 47 air
 setblock 90144 130 47 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:gunpowder"}}
 setblock 90137 137 60 air
-setblock 90144 130 47 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 3, id:"minecraft:golden_carrot"}}
+setblock 90137 137 60 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 3, id:"minecraft:golden_carrot"}}
 
 setblock 90136 130 70 minecraft:light_gray_shulker_box
 item replace block 90136 130 70 container.12 with shulker_shell 2
