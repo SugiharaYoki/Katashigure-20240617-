@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "下界合金装备",
+            "color": "aqua",
+            "bold": true,
+            "italic": false
+        },
+        "description": {
+            "text": "到达通讯大楼时，邪教徒的警戒度低于20。\n“希望你并没杀光那些哨兵。”",
+            "color": "gray"
+        },
+        "icon": {
+            "id": "minecraft:iron_hoe"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "sea": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:sea/doc/g24"
+}

@@ -155,6 +155,7 @@ execute if score SEA_ch5_event_engineering_fiona sea_4temp8 matches 499 run setb
 execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 5008 positioned 90134 133 57 run playsound entity.evoker.ambient neutral @a ~ ~ ~ 1 1
 execute if block 90121 135 16 grindstone if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 5008 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"琼斯：","color":"yellow","bold": true},{"text":"\n“闹够了没有，大小姐？”","color":"white","bold": false}]
 execute unless block 90121 135 16 grindstone if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 5008 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"琼斯：","color":"yellow","bold": true},{"text":"\n“我就知道我拦不住你。我已经了解了，让我们好好谈谈吧。”","color":"white","bold": false}]
+execute unless block 90121 135 16 grindstone if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 5008 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if score SEA_ch5_event_engineering_fiona sea_4temp7 matches ..19 run advancement grant @a[tag=SEAPT] only skyblock:sea/doc/g25
 
 execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 5008 run bossbar remove sea:ch5_lurkbar
 execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 5026 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3

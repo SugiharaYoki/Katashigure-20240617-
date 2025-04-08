@@ -21,6 +21,7 @@ execute as @a[tag=SEAPT,scores={sea_remiel_shadow=1..}] at @s run function skybl
 
 
 
+execute as @n[type=zombie,tag=SEAmob,x=80000,dx=20000,z=-10000,dz=20000,y=-1000,dy=2000,tag=SEAknight] at @s if block ~ ~1.3 ~ water run advancement grant @a[tag=SEAPT] only skyblock:sea/doc/g26
 execute as @n[type=zombie,tag=SEAmob,x=80000,dx=20000,z=-10000,dz=20000,y=-1000,dy=2000] at @s if block ~ ~1.3 ~ water run kill @s
 execute as @n[type=husk,tag=SEAmob,x=80000,dx=20000,z=-10000,dz=20000,y=-1000,dy=2000] at @s if block ~ ~1.3 ~ water run kill @s
 

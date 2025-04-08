@@ -81,6 +81,9 @@ execute if items entity @s container.* *[custom_data={sea_docg24:true}] run func
 execute if items entity @s container.* *[custom_data={sea_docg25:true}] run function skyblock:sea/p/document_macro {doc:"g25"}
 execute if items entity @s container.* *[custom_data={sea_docg26:true}] run function skyblock:sea/p/document_macro {doc:"g26"}
 execute if items entity @s container.* *[custom_data={sea_docg27:true}] run function skyblock:sea/p/document_macro {doc:"g27"}
+execute if items entity @s container.* *[custom_data={sea_docg28:true}] run function skyblock:sea/p/document_macro {doc:"g28"}
+execute if items entity @s container.* *[custom_data={sea_docg29:true}] run function skyblock:sea/p/document_macro {doc:"g29"}
+execute if items entity @s container.* *[custom_data={sea_docg30:true}] run function skyblock:sea/p/document_macro {doc:"g30"}
 
 
 
