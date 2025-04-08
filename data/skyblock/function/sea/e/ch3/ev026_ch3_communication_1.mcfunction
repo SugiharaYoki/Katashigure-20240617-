@@ -17,7 +17,7 @@ execute as @s[tag=sc,scores={sea_4temp2=118}] positioned 90133 137 108 as @p[tag
 execute as @s[tag=sc,scores={sea_4temp2=135}] positioned 90133 137 108 as @p[tag=SEAPT] \
  run tellraw @a[distance=0..50] [{"text":"玛瑞莲：","color":"dark_purple","bold": true},{"text":"\n“您不必清除那些路障，那些植物在上层肆意生长，我们之中的许多人都被藤蔓给活生生吞噬。”","color":"white","bold": false}]
 execute as @s[tag=sc,scores={sea_4temp2=153}] positioned 90133 137 108 as @p[tag=SEAPT] \
- run tellraw @a[distance=0..50] [{"text":"玛瑞莲：","color":"dark_purple","bold": true},{"text":"\n“这植物唯一的弱点是高频声波。\n邪教徒显然意识到了这一点，他们占领了整座通讯中心，关停了通讯阵列。”","color":"white","bold": false}]
+ run tellraw @a[distance=0..50] [{"text":"玛瑞莲：","color":"dark_purple","bold": true},{"text":"\n“这植物唯一的弱点是高频声波。\n邪教徒显然意识到了这一点，他们占领了整座通讯中心，关停了通讯服务器。”","color":"white","bold": false}]
 execute as @s[tag=sc,scores={sea_4temp2=171}] positioned 90133 137 108 as @p[tag=SEAPT] if entity @n[tag=sc,scores={sea_player=1..}] run tellraw @a[distance=0..50] [{"selector":"@s","color":"white"},{"text":"：通讯中心？是指在桥对面的附属平台吗？","color":"white"}]
 execute as @s[tag=sc,scores={sea_4temp2=187}] positioned 90133 137 108 as @p[tag=SEAPT] \
  run tellraw @a[distance=0..50] [{"text":"玛瑞莲：","color":"dark_purple","bold": true},{"text":"\n“没错……您得想办法到那里操控卫星天线。\n办公区域的天线只能用来即时通话，无法进行广播，因此我这里无能为力。”","color":"white","bold": false}]

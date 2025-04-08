@@ -53,7 +53,7 @@ execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 283 as @n[ta
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 283 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run scoreboard players add SEA_ch5_event_fiona_favor rng1 2
 
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 300 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
-execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 300 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“哦？我还以为你在主平台探索了那么久，一定已经遇到过了诺玛。\n也是，我也与麦迪逊叔叔失联很久了。\n邪教徒领头的是个叫琼斯的家伙。他曾经是诺曼博士的得力助手，我想让他将诺曼博士交给我，其次是摧毁通讯阵列，以防吸引‘外界’的势力。”","color":"white","bold": false}]
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 300 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“哦？我还以为你在主平台探索了那么久，一定已经遇到过了诺玛。\n也是，我也与麦迪逊叔叔失联很久了。\n邪教徒领头的是个叫琼斯的家伙。他曾经是诺曼博士的得力助手，我想让他将诺曼博士交给我，其次是摧毁通讯基站，以防吸引‘外界’的势力。”","color":"white","bold": false}]
 
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 324 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..250] [{"selector":"@r[tag=SEAPT]","color":"white"},{"text":"：虽然只是推测……你提到的诺玛，是诺曼博士的女儿吗？\n还有，你是打算保护诺曼博士？","color":"white"}]
 
@@ -61,12 +61,12 @@ execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 343 as @n[ta
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 343 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“不、我要亲手杀了他。原本我们有机会阻止细菌爆发，是他拖累了所有人。\n但是你猜琼斯怎么说，他说诺曼博士早就自杀了。我怎么可能信？\n现在也只有他的女儿，你也猜对了，诺玛还不知道藏在哪里。\n灾难发生后，是诺玛将平台彻底推至了毁灭。”","color":"white","bold": false}]
 
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 366 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
-execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 366 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“最后如你所知的那般，我将通讯阵列炸掉了一组。\n设置在另一组的炸药被提前发现了，遗憾。”","color":"white","bold": false}]
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 366 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“最后如你所知的那般，我将通讯服务器炸掉了一组。\n设置在另一组的炸药被提前发现了，遗憾。”","color":"white","bold": false}]
 
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 390 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..250] [{"selector":"@r[tag=SEAPT]","color":"white"},{"text":"：所以……我们现在该怎么办？","color":"white"}]
 
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 415 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
-execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 415 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“炸掉剩下那一组通讯阵列，不然引来了麻烦我们都得死在这里。”","color":"white","bold": false}]
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 415 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“炸掉剩下那一组通讯服务器，不然引来了麻烦我们都得死在这里。”","color":"white","bold": false}]
 
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 435 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..250] [{"selector":"@r[tag=SEAPT]","color":"white"},{"text":"：‘麻烦’……难道说我们不该呼救吗，还是说外界只会将我们全部灭口？","color":"white"}]
 
@@ -109,10 +109,10 @@ execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 642 as @n[ta
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 642 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“上帝根本不会在乎人类的诉求。你们擅自将镇压古代细菌的圣水晶带至地表，只会亲手招致天使的怒火与雷霆。\n我不知道结果会是什么，但我绝对不会允许你们就这样将平台上其他的幸存者一并卷入。\n你们的死活我并不在乎，但我不想死，很多人不想死。你们在逼着我们跟你们一同承受后果。”","color":"white","bold": false}]
 
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 668 positioned 90100 125 37 run playsound entity.evoker.ambient neutral @a ~ ~ ~ 1 1
-execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 668 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"琼斯：","color":"yellow","bold": true},{"text":"\n“大小姐，不如再考虑一番吧。\n我不愿与你为敌，而我也需要借助你的力量才能修好通讯阵列。”","color":"white","bold": false}]
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 668 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"琼斯：","color":"yellow","bold": true},{"text":"\n“大小姐，不如再考虑一番吧。\n我不愿与你为敌，而我也需要借助你的力量才能修好通讯基站。”","color":"white","bold": false}]
 
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 680 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
-execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 680 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“我有我自己的选择。我会炸了第二组通讯阵列，等着瞧。”","color":"white","bold": false}]
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 680 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“我有我自己的选择。我会炸了第二组通讯服务器，等着瞧。”","color":"white","bold": false}]
 
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 693 positioned 90100 125 37 run playsound entity.evoker.ambient neutral @a ~ ~ ~ 1 1
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 693 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"琼斯：","color":"yellow","bold": true},{"text":"\n“唉，你明知道天使已……”","color":"white","bold": false}]
@@ -121,8 +121,8 @@ execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 696 run setb
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 696 run playsound block.copper_bulb.turn_off block @a 90100 125 37 1 1.1
 
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 715 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
-execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 715 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if entity @a[tag=SEAPT,scores={SEAPT_member=2}] run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“我会继续尝试摧毁整个通讯阵列。怎么样，","color":"white","bold": false},{"selector":"@p[tag=SEAPT,scores={SEAPT_member=1}]","color":"white"},{"text":"，你们要跟我来吗？”","color":"white"}]
-execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 715 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s unless entity @a[tag=SEAPT,scores={SEAPT_member=2}] run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“我会继续尝试摧毁整个通讯阵列。怎么样，","color":"white","bold": false},{"selector":"@p[tag=SEAPT,scores={SEAPT_member=1}]","color":"white"},{"text":"，要跟我来吗？”","color":"white"}]
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 715 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if entity @a[tag=SEAPT,scores={SEAPT_member=2}] run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“我会继续尝试摧毁整个通讯基站。怎么样，","color":"white","bold": false},{"selector":"@p[tag=SEAPT,scores={SEAPT_member=1}]","color":"white"},{"text":"，你们要跟我来吗？”","color":"white"}]
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 715 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s unless entity @a[tag=SEAPT,scores={SEAPT_member=2}] run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“我会继续尝试摧毁整个通讯基站。怎么样，","color":"white","bold": false},{"selector":"@p[tag=SEAPT,scores={SEAPT_member=1}]","color":"white"},{"text":"，要跟我来吗？”","color":"white"}]
 
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 734 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..250] [{"selector":"@p[tag=SEAPT,scores={SEAPT_member=1}]","color":"white"},{"text":"：也没有别的选择了吧。\n话说，你也知道我的名字？","color":"white"}]
 
