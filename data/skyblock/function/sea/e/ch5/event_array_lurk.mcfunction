@@ -183,7 +183,7 @@ execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 5144 as @n[t
 
 execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 5050 run fill 90134 130 58 90134 130 59 minecraft:heavy_weighted_pressure_plate
 execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 5050 positioned 90134 130 59.0 run playsound block.note_block.bell block @a ~ ~ ~ 1 0.8
-execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 5050 positioned 90150 130 51 run function skyblock:sea/m/unique/npc_iscariot
+execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 5050 positioned 90150 130 50 run function skyblock:sea/m/unique/npc_iscariot
 
 execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 5050 run fill 90117 131 68 90121 131 68 air
 
