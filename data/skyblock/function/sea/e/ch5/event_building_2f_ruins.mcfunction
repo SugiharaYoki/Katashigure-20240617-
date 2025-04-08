@@ -1,4 +1,4 @@
-scoreboard players add SEA_ch5_event_building_fiona sea_4temp1 1
+execute if entity @a[tag=SEAPT,tag=!SEAPF,x=90138,y=137,z=60,dx=6,dy=10,dz=9] run scoreboard players add SEA_ch5_event_building_fiona sea_4temp1 1
 
 execute if entity @a[tag=SEAPT,tag=!SEAPF,x=90138,y=137,z=60,dx=6,dy=10,dz=9] if score SEA_ch5_event_building_fiona sea_4temp1 matches 2 run tellraw @a[distance=0..250] [{"selector":"@p[tag=SEAPT,scores={SEAPT_member=1}]","color":"white"},{"text":"：你还真是大干了一场啊。","color":"white"}]
 
