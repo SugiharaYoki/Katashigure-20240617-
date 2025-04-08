@@ -530,6 +530,11 @@ setblock 90147 137 59 minecraft:light_gray_shulker_box
 item replace block 90147 137 59 container.12 with shulker_shell 1
 item replace block 90147 137 59 container.14 with disc_fragment_5 1
 
+setblock 90132 137 49 minecraft:light_gray_shulker_box
+item replace block 90132 137 49 container.12 with shulker_shell 1
+item replace block 90132 137 49 container.14 with gunpowder 1
+
+
 execute if entity @n[type=interaction,tag=SEAcrafter20,distance=0..5.4] run tag @s add sea_teleport20
 
 fill 90112 122 46 90112 122 47 iron_bars
