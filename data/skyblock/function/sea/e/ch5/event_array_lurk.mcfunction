@@ -186,5 +186,4 @@ execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 5050 positio
 
 execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 5050 run fill 90117 131 68 90121 131 68 air
 
-execute as @e[tag=SEAmob_surrended,x=90100,y=100,z=100,distance=0..200,type=#illager] at @s as @n[tag=SEAmob,tag=!SEAnpc,type=!#illager,distance=0..2.9] at @s run particle sweep_attack ~ ~1 ~ 0.1 0.1 0.1 1 1
-execute as @e[tag=SEAmob_surrended,x=90100,y=100,z=100,distance=0..200,type=#illager] at @s as @n[tag=SEAmob,tag=!SEAnpc,type=!#illager,distance=0..2.9] run damage @s 5 generic
+execute as @e[tag=SEAmob_surrended,x=90100,y=100,z=100,distance=0..200,type=#illager] at @s as @n[tag=SEAmob,tag=!SEAnpc,type=!#illager,distance=0..2.9] at @s run function skyblock:sea/e/ch5/event_array_lurk_surrendedattack
