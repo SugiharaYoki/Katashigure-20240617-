@@ -191,11 +191,13 @@ execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 5050 positio
 execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 5050 positioned 90148 144 51 run function skyblock:sea/m/unique/vindicator_guardian
 execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 5050 positioned 90136 144 53 run function skyblock:sea/m/unique/vindicator_guardian
 
+execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 5050 if block 90060 101 142 red_candle positioned 90140 130 64 run function skyblock:sea/m/pillager_npc
 
 execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 5050 run fill 90117 131 68 90121 131 68 air
 
 execute as @e[tag=SEAmob_surrended,x=90100,y=100,z=100,distance=0..200,type=#illager,limit=3,sort=random] at @s as @n[tag=SEAmob,tag=!SEAnpc,type=!#illager,distance=0..2.9] at @s run function skyblock:sea/e/ch5/event_array_lurk_surrendedattack
 
-execute as @n[type=villager,tag=SEAiscariot,x=90100,y=100,z=100,distance=..250] at @s if entity @a[tag=SEAPT,distance=0..5] run function skyblock:sea/e/ch5/event_array_building_iscariot
+execute as @n[type=villager,tag=SEAiscariot,x=90100,y=100,z=100,distance=..250] at @s if entity @a[tag=SEAPT,distance=0..4.2] run function skyblock:sea/e/ch5/event_array_building_iscariot
+execute as @n[type=pillager,tag=SEApillager_npc1,x=90100,y=100,z=100,distance=..250] at @s if entity @a[tag=SEAPT,distance=0..3.4] run function skyblock:sea/e/ch5/event_array_building_pillagernpc
 
 
