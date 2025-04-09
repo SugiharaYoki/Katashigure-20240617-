@@ -24,6 +24,9 @@ summon minecraft:interaction 90126 90.3 58 {CustomName:'[{"text":"多功能工�
 summon minecraft:marker 90126 89 59 {Tags:["SEAcrafter_tp","SEAcrafter_tp15"]}
 summon minecraft:interaction 90121 123.3 52 {CustomName:'[{"text":"多功能工作站"}]',Tags:["SEAcrafter","SEAcrafter16"]}
 summon minecraft:marker 90121 122 51 {Tags:["SEAcrafter_tp","SEAcrafter_tp16"]}
+summon minecraft:interaction 90146 131.3 50 {CustomName:'[{"text":"多功能工作站"}]',Tags:["SEAcrafter","SEAcrafter17"]}
+summon minecraft:marker 90147 130 50 {Tags:["SEAcrafter_tp","SEAcrafter_tp17"]}
+
 
 summon minecraft:interaction 90130 123.3 48 {CustomName:'[{"text":"器械式治疗仪"}]',Tags:["SEAaidbox"]}
 summon minecraft:interaction 90107 123.3 38 {CustomName:'[{"text":"器械式治疗仪"}]',Tags:["SEAaidbox"]}
@@ -258,6 +261,13 @@ scoreboard players set SEA_ch5_event_engineering_fiona sea_4temp5 0
 scoreboard players set SEA_ch5_event_engineering_fiona sea_4temp6 0
 scoreboard players set SEA_ch5_event_engineering_fiona sea_4temp7 0
 scoreboard players set SEA_ch5_event_engineering_fiona sea_4temp8 0
+scoreboard players set SEA_ch5_event_building_fiona sea_4temp1 0
+scoreboard players set SEA_ch5_event_building_fiona sea_4temp2 0
+scoreboard players set SEA_ch5_event_building_fiona sea_4temp3 0
+scoreboard players set SEA_ch5_event_building_fiona sea_4temp4 0
+scoreboard players set SEA_ch5_event_building_fiona sea_4temp5 0
+scoreboard players set SEA_ch5_event_fiona_favor rng1 0
+scoreboard players set SEA_chg_true_end sea_4temp1 0
 
 fill 90105 93 57 90105 94 57 minecraft:magma_block
 fill 90109 102 54 90109 103 54 minecraft:magma_block
@@ -320,7 +330,6 @@ fill 90100 73 67 90099 71 67 iron_bars
 
 #防卡关
 fill 90127 130 102 90127 129 102 air
-
 
 
 
@@ -405,14 +414,14 @@ fill 90137 105 21 90137 104 21 lever[facing=north]
 fill 90140 106 22 90140 104 22 minecraft:waxed_copper_grate
 
 setblock 90140 104 23 chest[facing=north]
-item replace block 90140 104 23 container.11 with echo_shard 2
-item replace block 90140 104 23 container.15 with iron_ingot 2
+#item replace block 90140 104 23 container.11 with echo_shard 2
+#item replace block 90140 104 23 container.15 with iron_ingot 2
 
 setblock 90097 132 99 chest[facing=south]{Lock:"厄珀娅之钥"}
-item replace block 90140 104 23 container.4 with amethyst_shard 1
-item replace block 90140 104 23 container.12 with amethyst_shard 1
-item replace block 90140 104 23 container.14 with amethyst_shard 1
-item replace block 90140 104 23 container.22 with amethyst_shard 1
+item replace block 90097 132 99 container.4 with amethyst_shard 1
+item replace block 90097 132 99 container.12 with amethyst_shard 1
+item replace block 90097 132 99 container.14 with amethyst_shard 1
+item replace block 90097 132 99 container.22 with amethyst_shard 1
 
 fill 90132 124 19 90134 123 19 lever[facing=south]
 fill 90135 122 21 90135 122 22 air
@@ -446,8 +455,8 @@ setblock 90096 129 28 air
 fill 90097 131 27 90097 130 25 lever[facing=east]
 
 setblock 90094 130 25 chest[facing=south]
-item replace block 90101 129 73 container.12 with glow_berries 3
-item replace block 90101 129 73 container.14 with beef 2
+item replace block 90094 130 25 container.12 with glow_berries 3
+item replace block 90094 130 25 container.14 with beef 2
 
 #更多地形变化
 forceload add 90093 -188 90168 -161
@@ -478,4 +487,55 @@ setblock 90095 130 65 minecraft:furnace[facing=north]
 setblock 90095 130 34 minecraft:furnace[facing=south]
 fill 90134 130 58 90134 130 59 minecraft:air
 
+fill 90117 131 68 90121 131 68 iron_bars
 
+
+
+
+#通讯中心
+setblock 90136 131 47 minecraft:potted_blue_orchid
+setblock 90138 131 47 minecraft:potted_blue_orchid
+
+setblock 90136 130 65 minecraft:redstone_block
+setblock 90138 130 65 minecraft:redstone_block
+setblock 90136 130 65 minecraft:air
+setblock 90138 130 65 minecraft:air
+
+setblock 90142 130 59 minecraft:redstone_block
+setblock 90142 130 59 minecraft:air
+
+setblock 90132 130 51 minecraft:light_gray_shulker_box
+item replace block 90132 130 51 container.12 with shulker_shell 2
+item replace block 90132 130 51 container.14 with beef 2
+setblock 90150 130 54 furnace[facing=west]
+
+#setblock 90150 131 48 minecraft:potted_blue_orchid
+setblock 90150 130 51 air
+setblock 90150 130 51 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:coal"}}
+setblock 90144 130 65 air
+setblock 90144 130 65 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:coal"}}
+setblock 90137 130 67 air
+setblock 90137 130 67 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:flint"}}
+setblock 90144 130 47 air
+setblock 90144 130 47 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:gunpowder"}}
+setblock 90137 137 60 air
+setblock 90137 137 60 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 3, id:"minecraft:golden_carrot"}}
+
+setblock 90136 130 70 minecraft:light_gray_shulker_box
+item replace block 90136 130 70 container.12 with shulker_shell 2
+item replace block 90136 130 70 container.14 with disc_fragment_5 1
+
+
+setblock 90147 137 59 minecraft:light_gray_shulker_box
+item replace block 90147 137 59 container.12 with shulker_shell 1
+item replace block 90147 137 59 container.14 with disc_fragment_5 1
+
+setblock 90132 137 49 minecraft:light_gray_shulker_box
+item replace block 90132 137 49 container.12 with shulker_shell 1
+item replace block 90132 137 49 container.14 with fire_charge[custom_name='{"text":"定时炸弹","italic":true,"color":"blue","italic":false}',lore=['{"text":"它会在你丢出去3秒后爆炸！","color":"white","italic":false}','{"text":"炸到自己的话，职业生涯就会结束了吧。","color":"white","italic":false}','{"text":"可用于破坏凝胶壁障与瓦罐。","color":"white","italic":false}']] 1
+
+
+execute if entity @n[type=interaction,tag=SEAcrafter20,distance=0..5.4] run tag @s add sea_teleport20
+
+fill 90112 122 46 90112 122 47 iron_bars
+fill 90112 123 46 90112 123 47 iron_bars

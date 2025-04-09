@@ -134,13 +134,13 @@ execute as @e[tag=SEAmob,type=evoker] at @s as @e[type=vex,distance=0..10] run i
 
 #工程区密码1
 execute if block 90107 124 27 lever[powered=false] \
- if block 90106 124 27 lever[powered=false] \
-  if block 90105 124 27 lever[powered=true] \
-   if block 90104 124 27 lever[powered=false] \
+ if block 90106 124 27 lever[powered=true] \
+  if block 90105 124 27 lever[powered=false] \
+   if block 90104 124 27 lever[powered=true] \
     if block 90107 123 27 lever[powered=false] \
-     if block 90106 123 27 lever[powered=true] \
-      if block 90105 123 27 lever[powered=false] \
-       if block 90104 123 27 lever[powered=true] if block 90105 122 25 air \
+     if block 90106 123 27 lever[powered=false] \
+      if block 90105 123 27 lever[powered=true] \
+       if block 90104 123 27 lever[powered=false] if block 90105 122 25 air \
 positioned 90105 122 25 run function skyblock:sea/e/ch5/compare_1
 #工程区密码2
 execute if block 90130 124 32 lever[powered=true] \
@@ -208,6 +208,12 @@ if block 90097 130 27 lever[powered=false] \
  if block 90097 130 26 lever[powered=true] \
   if block 90097 130 25 lever[powered=true] if block 90096 129 28 air \
 positioned 90096 129 28 run function skyblock:sea/e/ch5/compare_5
+
+
+#通讯总站 2F 第一波敌人
+execute if entity @a[tag=SEAPT,tag=!SEAPF,x=90136,y=136,z=49,dx=10,dy=10,dz=10] unless entity @a[tag=e_i_45] run function skyblock:sea/e/ch5/event_building_2f_enemy_1
+
+execute if entity @a[tag=SEAPT,tag=!SEAPF,x=90138,y=137,z=60,dx=6,dy=10,dz=9] positioned 90134 130 58 run function skyblock:sea/e/ch5/event_building_2f_ruins
 
 
 

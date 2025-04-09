@@ -736,7 +736,8 @@ setblock 90113 102 18 lever[facing=west]
 
 fill 90125 102 101 90127 102 99 iron_block
 
-
+forceload add 90096 -400 90112 -380
+clone 90096 -50 -400 90112 0 -380 90096 178 136
 
 
 #更多地形变化
@@ -744,7 +745,6 @@ fill 90125 102 101 90127 102 99 iron_block
 forceload add 90093 -188 90168 -161
 clone 90093 -25 -188 90108 -2 -161 90103 152 88
 fill 90121 152 114 90114 152 114 minecraft:waxed_cut_copper_slab[type=bottom]
-forceload remove 90093 -188 90168 -161
 fill 90142 130 91 90140 130 91 minecraft:polished_andesite_slab[type=bottom]
 fill 90141 129 91 90140 129 91 iron_bars
 
@@ -752,3 +752,23 @@ clone 90135 110 172 90143 120 177 90135 110 178
 clone 90135 110 172 90143 120 177 90135 110 184
 clone 90135 110 172 90143 120 177 90135 110 190
 clone 90135 110 172 90143 120 177 90135 110 196
+
+setblock 90093 131 102 minecraft:amethyst_block
+setblock 90094 131 102 minecraft:amethyst_cluster[facing=east]
+setblock 90092 131 102 minecraft:amethyst_cluster[facing=west]
+setblock 90093 132 102 minecraft:amethyst_cluster[facing=up]
+setblock 90093 130 102 minecraft:amethyst_cluster[facing=down]
+
+setblock 90089 134 103 minecraft:white_stained_glass
+setblock 90098 134 100 minecraft:white_stained_glass
+fill 90096 128 106 90092 128 106 minecraft:campfire[lit=true]
+setblock 90095 127 101 minecraft:smooth_stone_slab[type=double]
+setblock 90094 127 103 minecraft:smooth_stone_slab[type=double]
+setblock 90093 127 103 minecraft:smooth_stone_slab[type=double]
+setblock 90092 127 103 minecraft:smooth_stone_slab[type=double]
+setblock 90093 127 104 minecraft:smooth_stone_slab[type=double]
+setblock 90092 127 100 minecraft:smooth_stone_slab[type=double]
+setblock 90093 127 100 minecraft:smooth_stone_slab[type=double]
+
+forceload remove 90096 -400 90112 -380
+forceload remove 90093 -188 90168 -161

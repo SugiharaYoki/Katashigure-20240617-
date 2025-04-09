@@ -67,7 +67,7 @@ execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system 
 execute if score stage Azr_system matches 21..22 run function skyblock:azr/stage/stage_event3
 #BOSS2 23-24
 #BOSS2-第九关 25
-execute if score stage Azr_system matches 25 run scoreboard players set stageSeconds Azr_system 0
+execute if score stage Azr_system matches 25 run function skyblock:azr/stage/stage_event4
 #第九关 26
 execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 26 run function skyblock:azr/stage/stage9
 #event5 27

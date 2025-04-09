@@ -12,10 +12,10 @@ execute if entity @n[tag=sc,tag=OneShotMap001] run tellraw @a[tag=!Gaming] {"tex
 execute if entity @n[tag=sc,tag=OneShotMap002] run tellraw @a[tag=!Gaming] {"text":"地图：熔岩洞 B","bold":false,"color":"white"}
 execute if entity @n[tag=sc,tag=OneShotMap003] run tellraw @a[tag=!Gaming] {"text":"地图：熔岩洞 C","bold":false,"color":"white"}
 execute if entity @n[tag=sc,tag=OneShotMap004] run tellraw @a[tag=!Gaming] {"text":"地图：熔岩洞 D","bold":false,"color":"white"}
-execute if entity @n[tag=sc,tag=OneShotMap005] run tellraw @a[tag=!Gaming] {"text":"地图：藤蔓林 A","bold":false,"color":"white"}
-execute if entity @n[tag=sc,tag=OneShotMap006] run tellraw @a[tag=!Gaming] {"text":"地图：藤蔓林 B","bold":false,"color":"white"}
-execute if entity @n[tag=sc,tag=OneShotMap007] run tellraw @a[tag=!Gaming] {"text":"地图：藤蔓林 C","bold":false,"color":"white"}
-execute if entity @n[tag=sc,tag=OneShotMap008] run tellraw @a[tag=!Gaming] {"text":"地图：藤蔓林 D","bold":false,"color":"white"}
+execute if entity @n[tag=sc,tag=OneShotMap005] run tellraw @a[tag=!Gaming] {"text":"地图：水晶洞 A","bold":false,"color":"white"}
+execute if entity @n[tag=sc,tag=OneShotMap006] run tellraw @a[tag=!Gaming] {"text":"地图：水晶洞 B","bold":false,"color":"white"}
+execute if entity @n[tag=sc,tag=OneShotMap007] run tellraw @a[tag=!Gaming] {"text":"地图：水晶洞 C","bold":false,"color":"white"}
+execute if entity @n[tag=sc,tag=OneShotMap008] run tellraw @a[tag=!Gaming] {"text":"地图：水晶洞 D","bold":false,"color":"white"}
 tellraw @a[tag=!Gaming,tag=!OneShotInvite] {"text":"—— [参加游戏] ——","color":"green","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 7450101"},"hoverEvent":{"action":"show_text","contents":{"text":"接受这条邀请","color":"green"}}}
 tellraw @a[tag=!Gaming,tag=OneShotInvite] {"text":"—— [取消邀请] ——","color":"green","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 7450102"},"hoverEvent":{"action":"show_text","contents":{"text":"将这条邀请作废","color":"green"}}}
 setblock -17 23 28 minecraft:soul_lantern

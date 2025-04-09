@@ -74,7 +74,7 @@ execute if score skywar_start rng1 matches 3 if entity @n[tag=!MapLoaAlr,tag=sc]
 #-#-#setblock 12 88 86 air
 #《禁止再次开局》
 #《计入历史启动》
-execute if score skywar_start rng1 matches 1 run execute unless entity @n[tag=sc,scores={HistoryPVP=-1..}] run scoreboard objectives add HistoryPVP dummy
+execute if score skywar_start rng1 matches 1 unless entity @n[tag=sc,scores={HistoryPVP=-1..}] run scoreboard objectives add HistoryPVP dummy
 execute if score skywar_start rng1 matches 1 run scoreboard players add @n[tag=sc] HistoryPVP 1
 #无意义变量 scoreboard players set @s Random1 0
 #《变量初始化》
@@ -104,7 +104,7 @@ execute if score skywar_start rng1 matches 2 as @a[tag=!NoSkyWar] at @s run scor
 execute if score skywar_start rng1 matches 2 as @a[tag=!NoSkyWar] at @s run scoreboard players set @s LeftGame 0
 execute if score skywar_start rng1 matches 2 as @a[tag=!NoSkyWar] at @s run scoreboard players set @s DeathCountTemp 0
 execute if score skywar_start rng1 matches 2 as @a[tag=!NoSkyWar] at @s run tag @s remove LeftGame
-#-#-#execute if score skywar_start rng1 matches 2 run execute as @s[tag=!NoSkyWar] at @s run function skyblock:fallensquare_subreset
+#-#-#execute if score skywar_start rng1 matches 2 as @s[tag=!NoSkyWar] at @s run function skyblock:fallensquare_subreset
 #《职业变量初始化》
 execute if score skywar_start rng1 matches 3 as @a[tag=!NoSkyWar] at @s run scoreboard players set @s If_Squat 0
 execute if score skywar_start rng1 matches 3 as @a[tag=!NoSkyWar] at @s run scoreboard players set @s If_Carrot 0
@@ -189,10 +189,10 @@ execute if score skywar_start rng1 matches 11 run tag @a[tag=PVPing] add Gaming
 execute if score skywar_start rng1 matches 11 run team leave @a[tag=PVPing,tag=!PVPTeamed]
 execute if score skywar_start rng1 matches 11 run title @a[tag=PVPing] times 10 80 10
 execute if score skywar_start rng1 matches 11 run stopsound @a[tag=PVPing]
-execute if score skywar_start rng1 matches 11 run execute if score @n[tag=sc] Map_Type matches 1 unless score sc Map_Code matches 13 run title @a[tag=PVPing] title {"text":"欢迎来到 空岛战争","color":"white"}
-execute if score skywar_start rng1 matches 11 run execute if score @n[tag=sc] Map_Type matches 1 if score sc Map_Code matches 13 run title @a[tag=PVPing] title {"text":"欢迎来到 混沌魔方","color":"white"}
-execute if score skywar_start rng1 matches 11 run execute if score @n[tag=sc] Map_Type matches 2 run title @a[tag=PVPing] title {"text":"欢迎来到 起床战争","color":"white"}
-execute if score skywar_start rng1 matches 11 run execute if score @n[tag=sc] Map_Type matches 5 run title @a[tag=PVPing] title {"text":"欢迎来到 PVP战场","color":"white"}
+execute if score skywar_start rng1 matches 11 if score @n[tag=sc] Map_Type matches 1 unless score sc Map_Code matches 13 run title @a[tag=PVPing] title {"text":"欢迎来到 空岛战争","color":"white"}
+execute if score skywar_start rng1 matches 11 if score @n[tag=sc] Map_Type matches 1 if score sc Map_Code matches 13 run title @a[tag=PVPing] title {"text":"欢迎来到 混沌魔方","color":"white"}
+execute if score skywar_start rng1 matches 11 if score @n[tag=sc] Map_Type matches 2 run title @a[tag=PVPing] title {"text":"欢迎来到 起床战争","color":"white"}
+execute if score skywar_start rng1 matches 11 if score @n[tag=sc] Map_Type matches 5 run title @a[tag=PVPing] title {"text":"欢迎来到 PVP战场","color":"white"}
 execute if score skywar_start rng1 matches 11 run title @a[tag=PVPing] actionbar {"text":"分配成员中……","color":"white"}
 
 execute if score skywar_start rng1 matches 11 run gamerule keepInventory true
@@ -247,39 +247,43 @@ execute if score skywar_start rng1 matches 13 if score sc Map_Code matches 18 ru
 execute if score skywar_start rng1 matches 13 if score sc Map_Code matches 18 run title @a[tag=PVP_see] subtitle {"text":"昔日水元素最为充沛之所 终也会被滔泊而湮覆","color":"white"}
 #[futuredevskywar]
 execute if block -19 23 32 minecraft:soul_lantern if score skywar_start rng1 matches 17 run effect clear @a[tag=PVPing]
-execute if block -19 23 32 minecraft:soul_lantern if score skywar_start rng1 matches 17 run execute as @a[tag=PVPing] at @s run function skyblock:pvp/skywar/system/jobbonus
-#execute if score skywar_start rng1 matches 17 run execute as @a[tag=PVPing] at @s run function skyblock:pvp/skywar/system/levelbonus
-#execute if block -19 23 32 minecraft:soul_lantern if score skywar_start rng1 matches 17 run execute as @a[tag=PVPing] at @s run function skyblock:pvp/skywar/system/levelbonus2
-execute if block 43 58 55 minecraft:soul_lantern if score skywar_start rng1 matches 17 run execute as @a[tag=PVPing] at @s run give @s tnt 20
-execute if block -131 59 -126 minecraft:green_concrete if score skywar_start rng1 matches 17 run execute as @a[tag=PVPing] at @s run give @s golden_carrot 3
-execute if block -131 59 -128 minecraft:green_concrete if score skywar_start rng1 matches 17 run execute as @a[tag=PVPing] at @s run effect give @s absorption 300 3 true
-execute if block -131 59 -127 green_concrete if score skywar_start rng1 matches 17 run execute as @a[tag=PVPing] at @s run effect give @s regeneration 300 1 true
-execute if block 44 61 54 minecraft:soul_lantern if score skywar_start rng1 matches 17 run execute as @a[tag=PVPing] at @s run item replace entity @s armor.head with melon[minecraft:enchantments={binding_curse:1,blast_protection:4}]
+execute if block -19 23 32 minecraft:soul_lantern if score skywar_start rng1 matches 17 as @a[tag=PVPing] at @s run function skyblock:pvp/skywar/system/jobbonus
+#execute if score skywar_start rng1 matches 17 as @a[tag=PVPing] at @s run function skyblock:pvp/skywar/system/levelbonus
+#execute if block -19 23 32 minecraft:soul_lantern if score skywar_start rng1 matches 17 as @a[tag=PVPing] at @s run function skyblock:pvp/skywar/system/levelbonus2
+execute if block 43 58 55 minecraft:soul_lantern if score skywar_start rng1 matches 17 as @a[tag=PVPing] at @s run give @s tnt 20
+execute if block -131 59 -126 minecraft:green_concrete if score skywar_start rng1 matches 17 as @a[tag=PVPing] at @s run give @s golden_carrot 3
+execute if block -131 59 -128 minecraft:green_concrete if score skywar_start rng1 matches 17 as @a[tag=PVPing] at @s run effect give @s absorption 300 3 true
+execute if block -131 59 -127 green_concrete if score skywar_start rng1 matches 17 as @a[tag=PVPing] at @s run effect give @s regeneration 300 1 true
+execute if block 44 61 54 minecraft:soul_lantern if score skywar_start rng1 matches 17 as @a[tag=PVPing] at @s run item replace entity @s armor.head with melon[minecraft:enchantments={binding_curse:1,blast_protection:4}]
 
 execute if score skywar_start rng1 matches 2 if block -131 58 -133 diamond_block run tellraw @a[tag=!Gaming] {"text":"◇ 伊什塔尔的赐福 已开启","color":"aqua","bold": true}
+execute if score skywar_start rng1 matches 2 if block -131 59 -116 green_concrete run tellraw @a[tag=!Gaming] {"text":"◇ 请注意：危命独箭组件已开启","color":"aqua","bold": true}
 execute if score skywar_start rng1 matches 2 if block -131 59 -119 green_concrete run tellraw @a[tag=!Gaming] {"text":"◇ 请注意：全局虚弱III已开启","color":"red"}
 execute if score skywar_start rng1 matches 2 if block -131 59 -122 green_concrete run tellraw @a[tag=!Gaming] {"text":"◇ 请注意：全局挖掘疲劳已开启","color":"red"}
 execute if score skywar_start rng1 matches 2 if block -131 59 -123 green_concrete run tellraw @a[tag=!Gaming] {"text":"◇ 请注意：全局隐身已开启","color":"red"}
 execute if score skywar_start rng1 matches 2 if block -131 59 -124 green_concrete run tellraw @a[tag=!Gaming] {"text":"◇ 请注意：全局隐身已开启","color":"red"}
 execute if score skywar_start rng1 matches 2 if block -131 59 -125 green_concrete run tellraw @a[tag=!Gaming] {"text":"◇ 玩家将在开局获得20个TNT","color":"red"}
 
-execute if block -131 59 -118 green_concrete if score skywar_start rng1 matches 17 run execute as @a[tag=PVPing] at @s run give @s ender_pearl 3
-execute if block -131 59 -118 green_concrete if score skywar_start rng1 matches 17 run execute as @a[tag=PVPing] at @s run give @s firework_rocket 8
-execute if block -131 59 -118 green_concrete if score skywar_start rng1 matches 17 run execute as @a[tag=PVPing] at @s run give @s elytra 1
-execute if block -131 59 -118 green_concrete if score skywar_start rng1 matches 17 run execute as @a[tag=PVPing] at @s run give @s obsidian 3
-execute if block -131 59 -118 green_concrete if score skywar_start rng1 matches 17 run execute as @a[tag=PVPing] at @s run give @s end_crystal 1
+execute if block -131 59 -118 green_concrete if score skywar_start rng1 matches 17 as @a[tag=PVPing] at @s run give @s ender_pearl 3
+execute if block -131 59 -118 green_concrete if score skywar_start rng1 matches 17 as @a[tag=PVPing] at @s run give @s firework_rocket 8
+execute if block -131 59 -118 green_concrete if score skywar_start rng1 matches 17 as @a[tag=PVPing] at @s run give @s elytra 1
+execute if block -131 59 -118 green_concrete if score skywar_start rng1 matches 17 as @a[tag=PVPing] at @s run give @s obsidian 3
+execute if block -131 59 -118 green_concrete if score skywar_start rng1 matches 17 as @a[tag=PVPing] at @s run give @s end_crystal 1
 
-execute if block -131 59 -117 green_concrete if score skywar_start rng1 matches 17 run execute as @a[tag=PVPing] at @s run give @s wolf_spawn_egg 4
-execute if block -131 59 -117 green_concrete if score skywar_start rng1 matches 17 run execute as @a[tag=PVPing] at @s run give @s bone 32
-execute if block -131 59 -117 green_concrete if score skywar_start rng1 matches 17 run execute as @a[tag=PVPing] at @s run give @s beef 8
-execute if block -131 59 -117 green_concrete if score skywar_start rng1 matches 17 run execute as @a[tag=PVPing] at @s run give @s red_dye 8
-execute if block -131 59 -117 green_concrete if score skywar_start rng1 matches 17 run execute as @a[tag=PVPing] at @s run give @s blue_dye 8
-execute if block -131 59 -117 green_concrete if score skywar_start rng1 matches 17 run execute as @a[tag=PVPing] at @s run give @s green_dye 8
-execute if block -131 59 -117 green_concrete if score skywar_start rng1 matches 17 run execute as @a[tag=PVPing] at @s run give @s yellow_dye 8
+execute if block -131 59 -117 green_concrete if score skywar_start rng1 matches 17 as @a[tag=PVPing] at @s run give @s wolf_spawn_egg 4
+execute if block -131 59 -117 green_concrete if score skywar_start rng1 matches 17 as @a[tag=PVPing] at @s run give @s bone 32
+execute if block -131 59 -117 green_concrete if score skywar_start rng1 matches 17 as @a[tag=PVPing] at @s run give @s beef 8
+execute if block -131 59 -117 green_concrete if score skywar_start rng1 matches 17 as @a[tag=PVPing] at @s run give @s red_dye 8
+execute if block -131 59 -117 green_concrete if score skywar_start rng1 matches 17 as @a[tag=PVPing] at @s run give @s blue_dye 8
+execute if block -131 59 -117 green_concrete if score skywar_start rng1 matches 17 as @a[tag=PVPing] at @s run give @s green_dye 8
+execute if block -131 59 -117 green_concrete if score skywar_start rng1 matches 17 as @a[tag=PVPing] at @s run give @s yellow_dye 8
 
-execute if score skywar_start rng1 matches 17 run execute as @a[tag=PVPing] at @s run effect clear @s saturation
+execute if block -131 59 -116 green_concrete if score skywar_start rng1 matches 17 run give @a[tag=PVPing] bow[unbreakable={},enchantments={power:150,infinity:1},custom_name='{"text":"猎击弓","italic":false,"color":"white"}']
+execute if block -131 59 -116 green_concrete if score skywar_start rng1 matches 17 run give @a[tag=PVPing] arrow 32
 
-execute if block -131 58 -133 diamond_block if score skywar_start rng1 matches 15 run execute as @a[tag=PVPing] at @s run function skyblock:pvp/skywar/bless/skywar_ishtar_bless
+execute if score skywar_start rng1 matches 17 as @a[tag=PVPing] at @s run effect clear @s saturation
+
+execute if block -131 58 -133 diamond_block if score skywar_start rng1 matches 15 as @a[tag=PVPing] at @s run function skyblock:pvp/skywar/bless/skywar_ishtar_bless
 #execute if score skywar_start rng1 matches 18 run tellraw @a[tag=PVPing] {"text":"看板狐： 所有参与者已合并为 A C 两组","color":"dark_green"}
 #execute if score skywar_start rng1 matches 18 run team join Team1_1 @a[team=Team1_3]
 #execute if score skywar_start rng1 matches 18 run team join Team1_2 @a[team=Team1_4]

@@ -81,6 +81,21 @@ execute if entity @s[tag=sea_purchase_pass] run tellraw @a[gamemode=spectator,di
 execute if entity @s[tag=sea_purchase_pass] run scoreboard players remove @s sea_i_emerald 20
 tag @s remove sea_purchase_pass
 
+execute if items entity @s container.* *[custom_data={sea_crossbow:true}] if score @s sea_crafter matches 10012 as @s[scores={sea_i_emerald=..29}] run tellraw @s {"text":"失败！余额不足！","color":"red"}
+execute if items entity @s container.* *[custom_data={sea_crossbow:true}] if score @s sea_crafter matches 10012 as @s[scores={sea_i_emerald=30..}] run tag @s add sea_purchase_pass
+execute if entity @s[tag=sea_purchase_pass] run playsound minecraft:item.armor.equip_iron neutral @s ~ ~ ~ 100
+execute if entity @s[tag=sea_purchase_pass] run clear @s crossbow[custom_data={sea_crossbow:true}] 1
+execute if entity @s[tag=sea_purchase_pass] run give @s crossbow[custom_name='{"text":"工程弩·二版","italic":false,"color":"red"}',custom_data={sea_crossbow2:true},enchantments={quick_charge:1,piercing:1},unbreakable={}]
+execute if entity @s[tag=sea_purchase_pass] run scoreboard players remove @s sea_i_emerald 30
+tag @s remove sea_purchase_pass
+execute if items entity @s container.* *[custom_data={sea_crossbow2:true}] if score @s sea_crafter matches 10032 as @s[scores={sea_i_emerald=..29}] run tellraw @s {"text":"失败！余额不足！","color":"red"}
+execute if items entity @s container.* *[custom_data={sea_crossbow2:true}] if score @s sea_crafter matches 10032 as @s[scores={sea_i_emerald=30..}] run tag @s add sea_purchase_pass
+execute if entity @s[tag=sea_purchase_pass] run playsound minecraft:item.armor.equip_iron neutral @s ~ ~ ~ 100
+execute if entity @s[tag=sea_purchase_pass] run clear @s crossbow[custom_data={sea_crossbow2:true}] 1
+execute if entity @s[tag=sea_purchase_pass] run give @s crossbow[custom_name='{"text":"工程弩·三版","italic":false,"color":"red"}',custom_data={sea_crossbow3:true},enchantments={quick_charge:2,piercing:2},unbreakable={}]
+execute if entity @s[tag=sea_purchase_pass] run scoreboard players remove @s sea_i_emerald 30
+tag @s remove sea_purchase_pass
+
 #复合弓制作
 execute if score @s[tag=e_w_03b_eternal] sea_crafter matches 10054 as @s[scores={sea_i_flint=..1}] run tellraw @s {"text":"失败！素材不足！","color":"red"}
 execute if score @s[tag=e_w_03b_eternal] sea_crafter matches 10054 as @s[scores={sea_i_flint=2..}] run tag @s add sea_purchase_pass
@@ -386,6 +401,9 @@ execute if score @s[tag=sea_teleport17] sea_crafter matches 30017 at @n[tag=SEAc
 execute if score @s[tag=sea_teleport18] sea_crafter matches 30018 at @n[tag=SEAcrafter_tp18,type=marker] unless entity @n[tag=SEAcrafter_foodless,distance=0..3] run tp @s ~ ~ ~ facing entity @n[tag=SEAcrafter]
 execute if score @s[tag=sea_teleport19] sea_crafter matches 30019 at @n[tag=SEAcrafter_tp19,type=marker] unless entity @n[tag=SEAcrafter_foodless,distance=0..3] run tp @s ~ ~ ~ facing entity @n[tag=SEAcrafter]
 execute if score @s[tag=sea_teleport20] sea_crafter matches 30020 at @n[tag=SEAcrafter_tp20,type=marker] unless entity @n[tag=SEAcrafter_foodless,distance=0..3] run tp @s ~ ~ ~ facing entity @n[tag=SEAcrafter]
+execute if score @s[tag=sea_teleport21] sea_crafter matches 30021 at @n[tag=SEAcrafter_tp21,type=marker] unless entity @n[tag=SEAcrafter_foodless,distance=0..3] run tp @s ~ ~ ~ facing entity @n[tag=SEAcrafter]
+execute if score @s[tag=sea_teleport22] sea_crafter matches 30022 at @n[tag=SEAcrafter_tp22,type=marker] unless entity @n[tag=SEAcrafter_foodless,distance=0..3] run tp @s ~ ~ ~ facing entity @n[tag=SEAcrafter]
+execute if score @s[tag=sea_teleport23] sea_crafter matches 30023 at @n[tag=SEAcrafter_tp23,type=marker] unless entity @n[tag=SEAcrafter_foodless,distance=0..3] run tp @s ~ ~ ~ facing entity @n[tag=SEAcrafter]
 execute if score @s sea_crafter matches 30001..39999 run execute at @s run playsound minecraft:item.chorus_fruit.teleport master @s ~ ~ ~ 1.2 0.7 0.1
 execute if score @s sea_crafter matches 30001..39999 run execute at @s run playsound ambient.soul_sand_valley.mood master @s ~ ~ ~ 1.2 0.7 0.1
 execute if score @s sea_crafter matches 30001..39999 run execute at @s run playsound ambient.crimson_forest.additions master @s ~ ~ ~ 1.2 0.7 0.1

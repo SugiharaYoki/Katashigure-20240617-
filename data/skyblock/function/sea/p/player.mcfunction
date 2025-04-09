@@ -34,6 +34,8 @@ clear @s[gamemode=!creative] #minecraft:anvil
 clear @s[gamemode=!creative] glow_item_frame
 clear @s[gamemode=!creative] painting
 clear @s[gamemode=!creative] stone_bricks
+clear @s[gamemode=!creative] smooth_stone_slab
+clear @s[gamemode=!creative] chest
 
 tag @s remove PVP_see
 

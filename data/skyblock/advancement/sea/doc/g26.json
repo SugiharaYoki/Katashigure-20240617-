@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "暴死骑士",
+            "color": "aqua",
+            "bold": true,
+            "italic": false
+        },
+        "description": {
+            "text": "将不死骑士淹死。\n“这是游戏机制，孩子。”",
+            "color": "gray"
+        },
+        "icon": {
+            "id": "minecraft:iron_hoe"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "sea": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:sea/doc/g25"
+}

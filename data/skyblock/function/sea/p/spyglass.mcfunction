@@ -39,18 +39,18 @@ execute if block 90074 103 137 scaffolding positioned 90185 19 130 if entity @n[
 if block 90159 38 131 minecraft:waxed_exposed_copper_bulb[lit=true] if block 90159 38 130 minecraft:waxed_exposed_copper_bulb[lit=true] if block 90159 38 129 minecraft:waxed_exposed_copper_bulb[lit=true] run title @s[tag=SEAPT] actionbar {"text":"目标：关闭北/东/南的3处灾害应对区域警报","color":"green"}
 
 execute if block 90074 103 137 scaffolding positioned 90185 19 130 if entity @n[tag=SEAch4_spawn,distance=0..3] \
-if block 90159 38 131 minecraft:waxed_exposed_copper_bulb[lit=false] if block 90159 38 130 minecraft:waxed_exposed_copper_bulb[lit=true] if block 90159 38 129 minecraft:waxed_exposed_copper_bulb[lit=true] run title @s[tag=SEAPT] actionbar {"text":"目标：关闭北/南的2处灾害应对区域警报","color":"green"}
+if block 90159 38 131 minecraft:waxed_exposed_copper_bulb[lit=false] if block 90159 38 130 minecraft:waxed_exposed_copper_bulb[lit=true] if block 90159 38 129 minecraft:waxed_exposed_copper_bulb[lit=true] run title @s[tag=SEAPT] actionbar {"text":"目标：关闭北/东的2处灾害应对区域警报","color":"green"}
 execute if block 90074 103 137 scaffolding positioned 90185 19 130 if entity @n[tag=SEAch4_spawn,distance=0..3] \
-if block 90159 38 131 minecraft:waxed_exposed_copper_bulb[lit=true] if block 90159 38 130 minecraft:waxed_exposed_copper_bulb[lit=false] if block 90159 38 129 minecraft:waxed_exposed_copper_bulb[lit=true] run title @s[tag=SEAPT] actionbar {"text":"目标：关闭北/东的2处灾害应对区域警报","color":"green"}
+if block 90159 38 131 minecraft:waxed_exposed_copper_bulb[lit=true] if block 90159 38 130 minecraft:waxed_exposed_copper_bulb[lit=false] if block 90159 38 129 minecraft:waxed_exposed_copper_bulb[lit=true] run title @s[tag=SEAPT] actionbar {"text":"目标：关闭北/南的2处灾害应对区域警报","color":"green"}
 execute if block 90074 103 137 scaffolding positioned 90185 19 130 if entity @n[tag=SEAch4_spawn,distance=0..3] \
 if block 90159 38 131 minecraft:waxed_exposed_copper_bulb[lit=true] if block 90159 38 130 minecraft:waxed_exposed_copper_bulb[lit=true] if block 90159 38 129 minecraft:waxed_exposed_copper_bulb[lit=false] run title @s[tag=SEAPT] actionbar {"text":"目标：关闭东/南的2处灾害应对区域警报","color":"green"}
 
 execute if block 90074 103 137 scaffolding positioned 90185 19 130 if entity @n[tag=SEAch4_spawn,distance=0..3] \
 if block 90159 38 131 minecraft:waxed_exposed_copper_bulb[lit=false] if block 90159 38 130 minecraft:waxed_exposed_copper_bulb[lit=false] if block 90159 38 129 minecraft:waxed_exposed_copper_bulb[lit=true] run title @s[tag=SEAPT] actionbar {"text":"目标：关闭北部的灾害应对区域警报","color":"green"}
 execute if block 90074 103 137 scaffolding positioned 90185 19 130 if entity @n[tag=SEAch4_spawn,distance=0..3] \
-if block 90159 38 131 minecraft:waxed_exposed_copper_bulb[lit=true] if block 90159 38 130 minecraft:waxed_exposed_copper_bulb[lit=false] if block 90159 38 129 minecraft:waxed_exposed_copper_bulb[lit=false] run title @s[tag=SEAPT] actionbar {"text":"目标：关闭东部的灾害应对区域警报","color":"green"}
+if block 90159 38 131 minecraft:waxed_exposed_copper_bulb[lit=true] if block 90159 38 130 minecraft:waxed_exposed_copper_bulb[lit=false] if block 90159 38 129 minecraft:waxed_exposed_copper_bulb[lit=false] run title @s[tag=SEAPT] actionbar {"text":"目标：关闭南部的灾害应对区域警报","color":"green"}
 execute if block 90074 103 137 scaffolding positioned 90185 19 130 if entity @n[tag=SEAch4_spawn,distance=0..3] \
-if block 90159 38 131 minecraft:waxed_exposed_copper_bulb[lit=false] if block 90159 38 130 minecraft:waxed_exposed_copper_bulb[lit=true] if block 90159 38 129 minecraft:waxed_exposed_copper_bulb[lit=false] run title @s[tag=SEAPT] actionbar {"text":"目标：关闭南部的灾害应对区域警报","color":"green"}
+if block 90159 38 131 minecraft:waxed_exposed_copper_bulb[lit=false] if block 90159 38 130 minecraft:waxed_exposed_copper_bulb[lit=true] if block 90159 38 129 minecraft:waxed_exposed_copper_bulb[lit=false] run title @s[tag=SEAPT] actionbar {"text":"目标：关闭东部的灾害应对区域警报","color":"green"}
 
 execute if block 90074 103 137 scaffolding positioned 90185 19 130 if entity @n[tag=SEAch4_spawn,distance=0..3] \
 if block 90159 38 131 minecraft:waxed_exposed_copper_bulb[lit=false] if block 90159 38 130 minecraft:waxed_exposed_copper_bulb[lit=false] if block 90159 38 129 minecraft:waxed_exposed_copper_bulb[lit=false] run title @s[tag=SEAPT] actionbar {"text":"目标：乘坐中央电梯 前往水下研究设施的实验区","color":"green"}
@@ -58,10 +58,27 @@ if block 90159 38 131 minecraft:waxed_exposed_copper_bulb[lit=false] if block 90
 execute if block 90074 103 137 scaffolding run title @s[tag=SEAPT,tag=e_i_35] actionbar {"text":"目标：寻找越涵的行踪","color":"green"}
 execute if block 90074 103 137 scaffolding if block 90163 36 86 green_concrete run title @s[tag=SEAPT,tag=e_i_35] actionbar {"text":"目标：探索水下研究设施的北侧并找到前进的路线","color":"green"}
 
+execute if block 90074 103 137 scaffolding if entity @n[tag=SEAedwina,tag=SEAboss4] run title @s[tag=SEAPT] actionbar {"text":"目标：使艾德雯娜失去战斗能力","color":"green"}
+execute if block 90074 103 137 scaffolding if entity @n[tag=SEAedwina] if entity @n[tag=SEAyuehan] run title @s[tag=SEAPT] actionbar {"text":"目标：顺着越涵来时的路上行 离开水下研究设施","color":"green"}
 
+execute if block 90074 103 137 scaffolding if block 90148 85 55 air run title @s[tag=SEAPT] actionbar {"text":"目标：乘坐电梯 离开水下研究设施","color":"green"}
 
+execute if block 90074 103 136 lectern run title @s[tag=SEAPT,tag=!e_i_38] actionbar {"text":"目标：进入通讯平台的东南支柱","color":"green"}
+execute if block 90074 103 136 lectern run title @s[tag=SEAPT,tag=e_i_38,advancements={skyblock:sea/doc/25=false}] actionbar {"text":"目标：探索东南支柱 寻找前往更上面的方法","color":"green"}
+execute if block 90074 103 136 lectern run title @s[tag=SEAPT,advancements={skyblock:sea/doc/25=true}] actionbar {"text":"目标：寻找并打开急冻装置","color":"green"}
+execute if block 90074 103 136 lectern if block 90127 98 35 packed_ice run title @s[tag=SEAPT] actionbar {"text":"目标：踏上冻结的海面 通过油井钻机上至工程区","color":"green"}
+execute if block 90074 103 136 lectern if block 90127 98 35 packed_ice if entity @n[tag=SEA_magmaboss] run title @s[tag=SEAPT] actionbar {"text":"目标：杀死占领了冻结海面的炽烈恒星","color":"green"}
+execute if block 90074 103 136 lectern run title @s[tag=SEAPT,tag=e_i_42] actionbar {"text":"目标：探索工程区","color":"green"}
+execute if block 90074 103 136 lectern if score SEA_ch5_event_engineering_fiona rng1 matches 68..183 run title @s[tag=SEAPT,tag=e_i_42] actionbar {"text":"目标：带着菲尔娜逃跑","color":"green"}
+execute if block 90074 103 136 lectern if score SEA_ch5_event_engineering_fiona rng1 matches 184..190 run title @s[tag=SEAPT,tag=e_i_42] actionbar {"text":"目标：带菲尔娜前往工程区车间的高台 等待她操作装置","color":"green"}
+execute if block 90074 103 136 lectern if score SEA_ch5_event_engineering_fiona rng1 matches 191.. run title @s[tag=SEAPT,tag=e_i_42] actionbar {"text":"目标：菲尔娜在工程区车间的西北侧打开了一扇铁门 前往那里吧","color":"green"}
+execute if block 90074 103 136 lectern if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 10.. run title @s[tag=SEAPT,tag=e_i_42] actionbar {"text":"目标：同菲尔娜交谈","color":"green"}
 
+execute if block 90074 103 136 lectern if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 769.. run title @s[tag=SEAPT,tag=e_i_42] actionbar {"text":"目标：探索工程区剩余部分 或直接同菲尔娜一齐前往通讯平台甲板","color":"green"}
 
+execute if block 90074 103 136 lectern if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 1500..5000 if score SEA_ch5_event_engineering_fiona sea_4temp7 matches ..99 run title @s[tag=SEAPT,tag=e_i_42] actionbar {"text":"目标：不引起邪教徒的警戒 前往通讯大楼","color":"green"}
+execute if block 90074 103 136 lectern if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 1500..5000 if score SEA_ch5_event_engineering_fiona sea_4temp7 matches 100.. run title @s[tag=SEAPT,tag=e_i_42] actionbar {"text":"目标：在邪教徒的攻势下存活","color":"green"}
+execute if block 90074 103 136 lectern if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 5001.. run title @s[tag=SEAPT,tag=e_i_42] actionbar {"text":"目标：在通讯大楼内找到琼斯","color":"green"}
 
 
 

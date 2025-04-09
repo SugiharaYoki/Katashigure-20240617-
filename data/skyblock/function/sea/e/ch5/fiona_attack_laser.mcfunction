@@ -21,7 +21,7 @@ execute as @s[scores={rng8=4},tag=!SEAfiona_targetfound] at @s positioned ^ ^ ^5
 execute as @s[scores={rng8=4}] at @s positioned ^ ^ ^5.6 if entity @n[tag=SEAmob,tag=!SEAnpc,distance=0..0.8] run tag @s add SEAfiona_targetfound
 execute as @s[scores={rng8=4},tag=!SEAfiona_targetfound] at @s run scoreboard players set @s rng8 9
 
-execute as @s[scores={rng8=4..8}] at @s run tp @s ~ ~ ~ facing entity @n[tag=SEAmob,tag=!SEAnpc,distance=..5.6]
+execute as @s[scores={rng8=4..8}] at @s run tp @s ~ ~ ~ facing entity @n[tag=SEAmob,tag=!SEAnpc,distance=..5.6,tag=!SEAmob_surrended]
 
 execute as @s[scores={rng8=3..8}] at @s anchored eyes positioned ^ ^ ^1.5 run particle electric_spark ~ ~ ~ 0 0 0 0 1
 execute as @s[scores={rng8=3..8}] at @s anchored eyes positioned ^ ^ ^1.8 run particle electric_spark ~ ~ ~ 0 0 0 0 1
@@ -36,7 +36,9 @@ execute as @s[scores={rng8=3..8}] at @s anchored eyes positioned ^ ^ ^4.2 run pa
 execute as @s[scores={rng8=8}] at @s run execute positioned 0.0 0 0.0 run summon marker ^ ^0.15 ^2 {Tags:["SEAfiona_arrow_marker"]}
 execute as @s[scores={rng8=8}] at @s run execute as @e[tag=SEAfiona_arrow_marker,type=marker] at @s run tp @s ~ 0.05 ~
 execute as @s[scores={rng8=8}] at @s run playsound entity.arrow.shoot hostile @a ~ ~1.5 ~ 1 1.1
-execute as @s[scores={rng8=8}] at @s positioned ^ ^ ^0.5 run summon arrow ~ ~1.5 ~ {Tags:["SEAfiona_arrow1"],life:1100,damage:4.0,HasVisualFire:true,Fire:true,PierceLevel:3}
+execute as @s[scores={rng8=8}] at @s positioned ^ ^ ^0.5 if score SEA_ch5_event_fiona_favor rng1 matches ..3 run summon arrow ~ ~1.5 ~ {Tags:["SEAfiona_arrow1"],life:1100,damage:3.0,HasVisualFire:true,Fire:true,PierceLevel:3}
+execute as @s[scores={rng8=8}] at @s positioned ^ ^ ^0.5 if score SEA_ch5_event_fiona_favor rng1 matches 4..12 run summon arrow ~ ~1.5 ~ {Tags:["SEAfiona_arrow1"],life:1100,damage:4.0,HasVisualFire:true,Fire:true,PierceLevel:3}
+execute as @s[scores={rng8=8}] at @s positioned ^ ^ ^0.5 if score SEA_ch5_event_fiona_favor rng1 matches 13.. run summon arrow ~ ~1.5 ~ {Tags:["SEAfiona_arrow1"],life:1100,damage:5.0,HasVisualFire:true,Fire:true,PierceLevel:4}
 execute as @s[scores={rng8=8}] at @s run data modify entity @n[type=arrow,tag=SEAfiona_arrow1] Motion set from entity @n[tag=SEAfiona_arrow_marker,type=marker] Pos
 execute as @s[scores={rng8=8}] at @s run kill @e[tag=SEAfiona_arrow_marker,type=marker]
 

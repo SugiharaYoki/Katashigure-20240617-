@@ -69,11 +69,12 @@ execute if score SEA_ch5_event_engineering_fiona rng1 matches 68 as @n[tag=SEAfi
 execute if score SEA_ch5_event_engineering_fiona rng1 matches 68 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s as @p[tag=SEAPT] run title @a[distance=0..250] title [{"text":"带菲尔娜逃跑","color":"dark_red"}]
 execute if score SEA_ch5_event_engineering_fiona rng1 matches 68 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s as @p[tag=SEAPT] run title @a[distance=0..250] subtitle [{"text":"那些邪教徒也是人类 尽可能规避战斗吧","color":"gray"}]
 
+execute if score SEA_ch5_event_engineering_fiona rng1 matches 68 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run scoreboard players add SEA_ch5_event_fiona_favor rng1 4
 
 execute if score SEA_ch5_event_engineering_fiona rng1 matches 152 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s as @p[tag=SEAPT] run tellraw @a[distance=0..250] [{"selector":"@s","color":"white"},{"text":"：你他妈捅了贼窝吗？他们倾巢出动杀你？！","color":"white"}]
 
 execute if score SEA_ch5_event_engineering_fiona rng1 matches 164 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
-execute if score SEA_ch5_event_engineering_fiona rng1 matches 164 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“我把他们的一组通讯阵列给炸了，他们恐怕是有仇必报。”","color":"white","bold": false}]
+execute if score SEA_ch5_event_engineering_fiona rng1 matches 164 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“我把他们的一组通讯服务器给炸了，他们恐怕是有仇必报。”","color":"white","bold": false}]
 
 execute if score SEA_ch5_event_engineering_fiona rng1 matches 178 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s as @p[tag=SEAPT] run tellraw @a[distance=0..250] [{"selector":"@s","color":"white"},{"text":"：想想办法啊，往下逃？！","color":"white"}]
 
@@ -94,7 +95,10 @@ execute if score SEA_ch5_event_engineering_fiona rng7 matches 3 as @n[tag=SEAfio
 execute if score SEA_ch5_event_engineering_fiona rng7 matches 92 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s as @p[tag=SEAPT] run tellraw @a[distance=0..250] [{"selector":"@s","color":"white"},{"text":"：还没好吗？！我的大小姐？？","color":"white"}]
 
 execute if score SEA_ch5_event_engineering_fiona rng7 matches 104 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
-execute if score SEA_ch5_event_engineering_fiona rng7 matches 104 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“我都说了我把通讯阵列炸掉一组，现在这本地网络慢得像一坨屎，再等等我！”","color":"white","bold": false}]
+execute if score SEA_ch5_event_engineering_fiona rng7 matches 104 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“我都说了我炸掉了半个通讯基站，现在这本地网络慢得像一坨屎，再等等我！”","color":"white","bold": false}]
+
+execute if score SEA_ch5_event_engineering_fiona rng7 matches 164 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
+execute if score SEA_ch5_event_engineering_fiona rng7 matches 164 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“快好了快好了，加载中！72%！”","color":"white","bold": false}]
 
 execute if score SEA_ch5_event_engineering_fiona rng7 matches 184 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
 execute if score SEA_ch5_event_engineering_fiona rng7 matches 184 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“那儿的铁门被我打开了，快去那里！！”","color":"white","bold": false}]
@@ -116,12 +120,14 @@ execute if score SEA_ch5_event_engineering_fiona rng1 matches 254 as @n[tag=SEAf
 execute if score SEA_ch5_event_engineering_fiona rng1 matches 314 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
 execute if score SEA_ch5_event_engineering_fiona rng1 matches 314 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if entity @n[tag=sc,scores={sea_player=1}] run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“我摊上你也真是倒大霉了……”","color":"white","bold": false}]
 execute if score SEA_ch5_event_engineering_fiona rng1 matches 314 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if entity @n[tag=sc,scores={sea_player=2..}] run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“我摊上你们也真是倒大霉了……”","color":"white","bold": false}]
+execute if score SEA_ch5_event_engineering_fiona rng1 matches 314 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run scoreboard players remove SEA_ch5_event_fiona_favor rng1 2
 
 execute if score SEA_ch5_event_engineering_fiona rng1 matches 330 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s as @p[tag=SEAPT] run tellraw @a[distance=0..250] [{"selector":"@s","color":"white"},{"text":"：怎么了？","color":"white"}]
 
 execute if score SEA_ch5_event_engineering_fiona rng1 matches 347 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
 execute if score SEA_ch5_event_engineering_fiona rng1 matches 347 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if score SEA_ch5_event_engineering_fiona rng8 matches ..4 run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“你是来玩打怪游戏的吗？！快去控制室啊！西边！！”","color":"white","bold": false}]
 execute if score SEA_ch5_event_engineering_fiona rng1 matches 347 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if score SEA_ch5_event_engineering_fiona rng8 matches 5.. run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“快去控制室啊！西边！！”","color":"white","bold": false}]
+execute if score SEA_ch5_event_engineering_fiona rng1 matches 347 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run scoreboard players remove SEA_ch5_event_fiona_favor rng1 2
 
 execute if score SEA_ch5_event_engineering_fiona rng1 matches 60..700 positioned 90126 121 47 if entity @a[tag=SEAPT,distance=0..4,tag=!SEAPF,tag=!e_i_43] run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
 execute if score SEA_ch5_event_engineering_fiona rng1 matches 60..700 positioned 90126 121 47 if entity @a[tag=SEAPT,distance=0..4,tag=!SEAPF,tag=!e_i_43] run tellraw @a[tag=SEAPT,distance=0..4,tag=!SEAPF,tag=!e_i_43] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“你这是要去哪？！我们要去的可不是下面！”","color":"white","bold": false}]
