@@ -14,4 +14,5 @@ execute if score SEA_ch5_event_building rng1 matches 203 run tellraw @a[distance
 execute if score SEA_ch5_event_building rng1 matches 223 run playsound minecraft:entity.villager.yes neutral @a ~ ~ ~ 1 0.8
 execute if score SEA_ch5_event_building rng1 matches 223 run tellraw @a[distance=0..200] [{"text":"邪教徒的对话声A：","color":"green","bold": true},{"text":"\n“你问我是飞机还是鸟？你觉得会有飞机一样大的鸟吗？你要不要听听你在说什么？”","color":"white","bold": false}]
 
+execute if score SEA_ch5_event_building rng1 matches 157 run summon lightning_bolt 90119 137 59
 
