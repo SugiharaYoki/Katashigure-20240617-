@@ -1,7 +1,8 @@
 scoreboard players add @s rng1 1
 
 execute if score @s rng1 matches 3 at @s run playsound entity.pillager.ambient neutral @a ~ ~ ~ 1 1.15
-execute if score @s rng1 matches 3 at @s run tellraw @a[tag=SEAPT] [{"text":"邪教徒弩手：","color":"green","bold": true},{"text":"\n“嘿，兄弟！我见过你！”","color":"green","bold": false}]
+execute if score @s rng1 matches 3 at @s unless block ~ ~-1 ~ bamboo_planks run tellraw @a[tag=SEAPT] [{"text":"邪教徒弩手：","color":"green","bold": true},{"text":"\n“嘿，兄弟！我见过你！”","color":"green","bold": false}]
+execute if score @s rng1 matches 3 at @s if block ~ ~-1 ~ bamboo_planks run tellraw @a[tag=SEAPT] [{"text":"邪教徒弩手：","color":"green","bold": true},{"text":"\n“嘿，兄弟！我见过你！不好意思，我刚上完厕所，让你见笑了。”","color":"green","bold": false}]
 
 execute if score @s rng1 matches 23 at @s run playsound entity.pillager.ambient neutral @a ~ ~ ~ 1 1.15
 execute if score @s rng1 matches 23 at @s run tellraw @a[tag=SEAPT] [{"text":"邪教徒弩手：","color":"green","bold": true},{"text":"\n“之前的药品真的十分感谢。你救了我们不少信徒的命。”","color":"green","bold": false}]
