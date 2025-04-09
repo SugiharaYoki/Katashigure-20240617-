@@ -1,0 +1,9 @@
+{
+    "values":[
+        "minecraft:item_display",
+        "minecraft:block_display",
+        "minecraft:text_display",
+        "minecraft:marker",
+        "minecraft:interaction"
+    ]
+}

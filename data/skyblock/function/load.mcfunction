@@ -216,6 +216,8 @@ scoreboard objectives add rng18 dummy
 scoreboard objectives add rng19 dummy
 scoreboard objectives add rng20 dummy
 
+scoreboard objectives add dev_tools_rightclick minecraft.used:carrot_on_a_stick
+
 team add TokumeiA
 team add TokumeiB
 team add TokumeiC
