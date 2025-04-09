@@ -4,10 +4,11 @@ execute if score sea_ch5_instant_freeze sea_4temp4 matches 11..20 run particle f
 execute if score sea_ch5_instant_freeze sea_4temp4 matches 20 positioned 90128 100 49 run function skyblock:sea/m/magma_boss
 execute if score sea_ch5_instant_freeze sea_4temp4 matches 21 as @n[tag=SEA_magmaboss] run scoreboard players set @s rng5 0
 execute if score sea_ch5_instant_freeze sea_4temp4 matches 21 as @n[tag=SEA_magmaboss] run scoreboard players set @s rng6 0
+execute if score sea_ch5_instant_freeze sea_4temp4 matches 21..43 as @n[tag=SEA_magmaboss] store result score @s rng7 if entity @e[tag=SEAmob,type=magma_cube,distance=0..200]
 
 execute store result score sea_ch5_instant_freeze sea_4temp9 run random value 0..220
-execute if score sea_ch5_instant_freeze sea_4temp4 matches 20.. if score sea_ch5_instant_freeze sea_4temp9 matches 1..2 as @n[tag=SEA_magmaboss,scores={rng5=..0}] at @s if entity @a[tag=SEAPT,distance=0..10.5] run scoreboard players add @s rng5 1
-execute if score sea_ch5_instant_freeze sea_4temp4 matches 20.. if score sea_ch5_instant_freeze sea_4temp9 matches 3..4 as @n[tag=SEA_magmaboss,scores={rng6=..0}] at @s if entity @a[tag=SEAPT,distance=0..10.5] run scoreboard players add @s rng6 1
+execute if score sea_ch5_instant_freeze sea_4temp4 matches 20.. if score sea_ch5_instant_freeze sea_4temp9 matches 1..2 as @n[tag=SEA_magmaboss,scores={rng5=..0,rng7=..30}] at @s if entity @a[tag=SEAPT,distance=0..10.5] run scoreboard players add @s rng5 1
+execute if score sea_ch5_instant_freeze sea_4temp4 matches 20.. if score sea_ch5_instant_freeze sea_4temp9 matches 3..4 as @n[tag=SEA_magmaboss,scores={rng6=..0,rng7=..30}] at @s if entity @a[tag=SEAPT,distance=0..10.5] run scoreboard players add @s rng6 1
 
 execute as @n[tag=SEA_magmaboss] at @s if entity @s[scores={rng5=1..}] run function skyblock:sea/e/ch5/instant_freeze_magma_boss_skill2
 execute as @n[tag=SEA_magmaboss] at @s if entity @s[scores={rng6=1..}] run function skyblock:sea/e/ch5/instant_freeze_magma_boss_skill1
