@@ -3,14 +3,15 @@ execute if score sea_ch5_instant_freeze sea_4temp4 matches 11..20 run particle t
 execute if score sea_ch5_instant_freeze sea_4temp4 matches 11..20 run particle flame 90128 100 49 1.5 2 1.5 0.0 40
 execute if score sea_ch5_instant_freeze sea_4temp4 matches 20 positioned 90128 100 49 run function skyblock:sea/m/magma_boss
 
-execute store result score sea_ch5_instant_freeze sea_4temp9 run random value 0..90
-execute if score sea_ch5_instant_freeze sea_4temp4 matches 20.. if score sea_ch5_instant_freeze sea_4temp9 matches 1..2 as @n[tag=SEA_magmaboss] at @s if entity @a[tag=SEAPT,distance=0..10.5] run function skyblock:sea/m/magma
-execute if score sea_ch5_instant_freeze sea_4temp4 matches 20.. if score sea_ch5_instant_freeze sea_4temp9 matches 1..2 as @n[tag=SEA_magmaboss] at @s if entity @a[tag=SEAPT,distance=0..10.5] run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
-execute if score sea_ch5_instant_freeze sea_4temp4 matches 20.. if score sea_ch5_instant_freeze sea_4temp9 matches 1..2 as @n[tag=SEA_magmaboss] at @s if entity @a[tag=SEAPT,distance=0..10.5] positioned 0.0 0 0.0 run summon marker ^ ^0.12 ^1.8 {Tags:["SEA_magmaboss_marker"]}
-execute if score sea_ch5_instant_freeze sea_4temp4 matches 20.. if score sea_ch5_instant_freeze sea_4temp9 matches 1..2 as @n[tag=SEA_magmaboss] at @s if entity @a[tag=SEAPT,distance=0..10.5] run data modify entity @n[tag=SEAmob,type=magma_cube,tag=!SEA_magmaboss,distance=0..4.4] Motion set from entity @n[type=marker,tag=SEA_magmaboss_marker] Pos
-execute if score sea_ch5_instant_freeze sea_4temp4 matches 20.. if score sea_ch5_instant_freeze sea_4temp9 matches 1..2 as @n[tag=SEA_magmaboss] at @s if entity @a[tag=SEAPT,distance=0..10.5] run kill @e[type=marker,tag=SEA_magmaboss_marker]
+execute store result score sea_ch5_instant_freeze sea_4temp9 run random value 0..200
+execute if score sea_ch5_instant_freeze sea_4temp4 matches 20.. if score sea_ch5_instant_freeze sea_4temp9 matches 1..4 as @n[tag=SEA_magmaboss] at @s if entity @a[tag=SEAPT,distance=0..10.5] run function skyblock:sea/m/magma
+execute if score sea_ch5_instant_freeze sea_4temp4 matches 20.. if score sea_ch5_instant_freeze sea_4temp9 matches 1..4 as @n[tag=SEA_magmaboss] at @s if entity @a[tag=SEAPT,distance=0..10.5] run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
+execute if score sea_ch5_instant_freeze sea_4temp4 matches 20.. if score sea_ch5_instant_freeze sea_4temp9 matches 1..4 as @n[tag=SEA_magmaboss] at @s if entity @a[tag=SEAPT,distance=0..10.5] positioned 0.0 0 0.0 run summon marker ^ ^0.2 ^1.8 {Tags:["SEA_magmaboss_marker"]}
+execute if score sea_ch5_instant_freeze sea_4temp4 matches 20.. if score sea_ch5_instant_freeze sea_4temp9 matches 1..4 as @n[tag=SEA_magmaboss] at @s if entity @a[tag=SEAPT,distance=0..10.5] run data modify entity @n[tag=SEAmob,type=magma_cube,tag=!SEA_magmaboss,distance=0..4.4] Motion set from entity @n[type=marker,tag=SEA_magmaboss_marker] Pos
+execute if score sea_ch5_instant_freeze sea_4temp4 matches 20.. if score sea_ch5_instant_freeze sea_4temp9 matches 1..4 as @n[tag=SEA_magmaboss] at @s if entity @a[tag=SEAPT,distance=0..10.5] run kill @e[type=marker,tag=SEA_magmaboss_marker]
+execute if score sea_ch5_instant_freeze sea_4temp4 matches 20.. if score sea_ch5_instant_freeze sea_4temp9 matches 8 as @n[tag=SEA_magmaboss] at @s if entity @a[tag=SEAPT,distance=0..10.5] run function skyblock:sea/e/ch5/instant_freeze_magma_boss_skill1
 
-execute if score sea_ch5_instant_freeze sea_4temp4 matches 20.. if score sea_ch5_instant_freeze sea_4temp9 matches 3 as @n[tag=SEA_magmaboss] at @s if entity @a[tag=SEAPT,distance=0..8.5] unless entity @n[type=blaze,distance=0..30] run function skyblock:sea/m/visioner
+execute if score sea_ch5_instant_freeze sea_4temp4 matches 20.. if score sea_ch5_instant_freeze sea_4temp9 matches 5..7 as @n[tag=SEA_magmaboss] at @s if entity @a[tag=SEAPT,distance=0..8.5] unless entity @n[type=blaze,distance=0..30] run function skyblock:sea/m/visioner
 
 scoreboard players add sea_ch5_instant_freeze sea_4temp4 1
 
