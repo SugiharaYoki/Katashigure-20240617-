@@ -553,7 +553,8 @@ setblock 90147 144 51 minecraft:air
 
 setblock 90148 145 56 minecraft:potted_blue_orchid
 
-
+setblock 90145 144 57 air
+setblock 90145 144 57 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 2, id:"minecraft:carrot"}}
 
 
 
