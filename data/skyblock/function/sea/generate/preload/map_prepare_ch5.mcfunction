@@ -542,3 +542,14 @@ execute if entity @n[type=interaction,tag=SEAcrafter20,distance=0..5.4] run tag 
 
 fill 90112 122 46 90112 122 47 iron_bars
 fill 90112 123 46 90112 123 47 iron_bars
+
+
+setblock 90132 145 52 minecraft:redstone_block
+setblock 90132 145 52 minecraft:air
+
+
+
+
+
+
+
