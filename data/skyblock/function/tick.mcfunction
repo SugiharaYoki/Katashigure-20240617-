@@ -1,3 +1,4 @@
+execute as @a[tag=ServerOperator] run function skyblock:dev_tool/main
 execute unless score $StopAzr0 skyblock_system matches 1 run function skyblock:mg/azr0/main
 execute unless score $StopAzr skyblock_system matches 1 run function skyblock:azr/main
 execute unless score $StopSea skyblock_system matches 1 if block -25 23 32 soul_lantern run function skyblock:sea/core20
