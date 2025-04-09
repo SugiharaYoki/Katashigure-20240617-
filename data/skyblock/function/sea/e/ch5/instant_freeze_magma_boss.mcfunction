@@ -10,6 +10,7 @@ execute if score sea_ch5_instant_freeze sea_4temp4 matches 20.. if score sea_ch5
 execute if score sea_ch5_instant_freeze sea_4temp4 matches 20.. if score sea_ch5_instant_freeze sea_4temp9 matches 8 as @n[tag=SEA_magmaboss] at @s if entity @a[tag=SEAPT,distance=0..10.5] run scoreboard players add @s rng6 1
 
 execute as @n[tag=SEA_magmaboss] at @s if entity @s[scores={rng5=1..}] run function skyblock:sea/e/ch5/instant_freeze_magma_boss_skill2
+execute as @n[tag=SEA_magmaboss] at @s if entity @s[scores={rng6=1..}] run function skyblock:sea/e/ch5/instant_freeze_magma_boss_skill1
 
 execute if score sea_ch5_instant_freeze sea_4temp4 matches 20.. if score sea_ch5_instant_freeze sea_4temp9 matches 5..7 as @n[tag=SEA_magmaboss] at @s if entity @a[tag=SEAPT,distance=0..8.5] unless entity @n[type=blaze,distance=0..30] run function skyblock:sea/m/visioner
 
