@@ -1,6 +1,7 @@
 #spyglasses
 execute if items entity @s armor.head *[custom_data~{"dev_tool:spyglasses":1b}] at @s at @e[type=#invisible,distance=..40,tag=!dev_selected] run particle dust{color:[1.0f,0.0f,0.0f],scale:0.5} ~ ~ ~ 0 0 0 0 1 force @s
 execute if items entity @s armor.head *[custom_data~{"dev_tool:spyglasses":1b}] at @s at @e[type=!#invisible,distance=..40,tag=!dev_selected,nbt={active_effects:[{id:"minecraft:invisibility"}]}] run particle dust{color:[1.0f,0.0f,0.0f],scale:0.5} ~ ~ ~ 0 0 0 0 1 force @s
+execute if items entity @s armor.head *[custom_data~{"dev_tool:spyglasses":1b}] at @s at @e[type=armor_stand,distance=..40,tag=!dev_selected,nbt={Invisible:1b}] run particle dust{color:[1.0f,0.0f,0.0f],scale:0.5} ~ ~ ~ 0 0 0 0 1 force @s
 execute at @s at @e[distance=..40,tag=dev_selected] run particle dust{color:[0.0f,1.0f,0.0f],scale:0.5} ~ ~ ~ 0 0 0 0 1 force @s
 
 #entity_selector
