@@ -6,7 +6,7 @@ execute if score sea_ch5_instant_freeze sea_4temp4 matches 21 as @n[tag=SEA_magm
 execute if score sea_ch5_instant_freeze sea_4temp4 matches 21 as @n[tag=SEA_magmaboss] run scoreboard players set @s rng6 0
 execute if score sea_ch5_instant_freeze sea_4temp4 matches 21..43 as @n[tag=SEA_magmaboss] store result score @s rng7 if entity @e[tag=SEAmob,type=magma_cube,distance=0..200]
 
-execute store result score sea_ch5_instant_freeze sea_4temp9 run random value 0..220
+execute store result score sea_ch5_instant_freeze sea_4temp9 run random value 0..180
 execute if score sea_ch5_instant_freeze sea_4temp4 matches 20.. if score sea_ch5_instant_freeze sea_4temp9 matches 1..2 as @n[tag=SEA_magmaboss,scores={rng5=..0,rng7=..30}] at @s if entity @a[tag=SEAPT,distance=0..10.5] run scoreboard players add @s rng5 1
 execute if score sea_ch5_instant_freeze sea_4temp4 matches 20.. if score sea_ch5_instant_freeze sea_4temp9 matches 3..4 as @n[tag=SEA_magmaboss,scores={rng6=..0,rng7=..30}] at @s if entity @a[tag=SEAPT,distance=0..10.5] run scoreboard players add @s rng6 1
 
