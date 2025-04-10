@@ -47,6 +47,12 @@ execute if score @s rng1 matches 255 at @s run tellraw @a[distance=0..200] [{"te
 execute if score @s rng1 matches 275 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
 execute if score @s rng1 matches 275 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“细菌的事情传出来的时候，大家本就神经过敏了。诺玛的煽动可谓恰到好处。”","color":"white","bold": false}]
 
+execute if score @s rng1 matches 277 run summon lightning_bolt 90152 139 16
+
+execute if score @s rng1 matches 274 positioned 90142 135 26 as @n[tag=SEAmob,distance=0..15] at @s run summon lightning_bolt
+execute if score @s rng1 matches 280 positioned 90142 135 26 as @n[tag=SEAmob,distance=0..15] at @s run summon lightning_bolt
+execute if score @s rng1 matches 283 positioned 90142 135 26 as @n[tag=SEAmob,distance=0..15] at @s run summon lightning_bolt
+
 execute if score @s rng1 matches 295 at @s run playsound entity.evoker.ambient neutral @a ~ ~ ~ 1 1
 execute if score @s rng1 matches 295 at @s run tellraw @a[distance=0..200] [{"text":"琼斯：","color":"yellow","bold": true},{"text":"\n“在那期间的争斗令我们的、你们的许多同胞都死了。菲尔娜大小姐，我想我们还是需要统一战线。”","color":"white","bold": false}]
 
