@@ -732,7 +732,8 @@ setblock 90124 104 45 air
 setblock 90113 102 18 air
 setblock 90113 102 18 lever[facing=west]
 
-
+setblock 90140 140 38 redstone_lamp[lit=true]
+setblock 90144 140 38 redstone_lamp[lit=true]
 
 fill 90125 102 101 90127 102 99 iron_block
 
@@ -772,3 +773,9 @@ setblock 90093 127 100 minecraft:smooth_stone_slab[type=double]
 
 forceload remove 90096 -400 90112 -380
 forceload remove 90093 -188 90168 -161
+
+
+
+
+
+

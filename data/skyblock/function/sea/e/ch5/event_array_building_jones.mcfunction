@@ -102,3 +102,7 @@ execute if score @s rng1 matches 425..430 positioned 90136 136 53 if entity @a[t
 execute if score @s rng1 matches 501 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
 execute if score @s rng1 matches 501 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“往停机坪。动静是从那里传来的。”","color":"white","bold": false}]
 
+execute if score @s rng1 matches 512 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run setblock 90140 140 38 redstone_lamp[lit=false] destroy
+execute if score @s rng1 matches 512 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run setblock 90144 140 38 redstone_lamp[lit=false] destroy
+
+
