@@ -159,7 +159,7 @@ execute unless block 90121 135 16 grindstone if score SEA_ch5_event_engineering_
 
 execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 5008 run bossbar remove sea:ch5_lurkbar
 execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 5026 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
-execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 5026 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“琼斯先生，你一直观察着我们的一举一动，是吗？”","color":"white","bold": false}]
+execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 5026 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“琼斯，你一直观察着我们的一举一动，是吗？”","color":"white","bold": false}]
 
 execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 5045 positioned 90134 133 57 run playsound entity.evoker.ambient neutral @a ~ ~ ~ 1 1
 execute if block 90121 135 16 grindstone if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 5045 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"琼斯：","color":"yellow","bold": true},{"text":"\n“我们把话留到之后吧。你可以进来了。”","color":"white","bold": false}]
