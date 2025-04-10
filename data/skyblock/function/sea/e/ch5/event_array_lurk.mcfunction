@@ -189,7 +189,10 @@ execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 5050 positio
 execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 5050 positioned 90147 144 58 run function skyblock:sea/m/unique/vindicator_guardian
 execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 5050 positioned 90146 144 57 run function skyblock:sea/m/unique/vindicator_guardian
 execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 5050 positioned 90148 144 51 run function skyblock:sea/m/unique/vindicator_guardian
+execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 5050 positioned 90148 144 51 run tag @n[type=vindicator,distance=0..5] add SEApillager_npc2
+
 execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 5050 positioned 90136 144 53 run function skyblock:sea/m/unique/vindicator_guardian
+
 
 execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 5050 if block 90060 101 142 red_candle positioned 90140 130 64 run function skyblock:sea/m/pillager_npc
 

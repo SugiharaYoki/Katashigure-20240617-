@@ -52,11 +52,40 @@ execute if score @s rng1 matches 277 run summon lightning_bolt 90152 139 16
 execute if score @s rng1 matches 274 positioned 90142 135 26 as @n[tag=SEAmob,distance=0..15] at @s run summon lightning_bolt
 execute if score @s rng1 matches 280 positioned 90142 135 26 as @n[tag=SEAmob,distance=0..15] at @s run summon lightning_bolt
 execute if score @s rng1 matches 283 positioned 90142 135 26 as @n[tag=SEAmob,distance=0..15] at @s run summon lightning_bolt
+execute if score @s rng1 matches 322 positioned 90142 135 26 as @n[tag=SEAmob,distance=0..50,type=pillager,tag=!SEApillager_npc1] at @s run summon lightning_bolt
 
 execute if score @s rng1 matches 295 at @s run playsound entity.evoker.ambient neutral @a ~ ~ ~ 1 1
 execute if score @s rng1 matches 295 at @s run tellraw @a[distance=0..200] [{"text":"琼斯：","color":"yellow","bold": true},{"text":"\n“在那期间的争斗令我们的、你们的许多同胞都死了。菲尔娜大小姐，我想我们还是需要统一战线。”","color":"white","bold": false}]
 
 execute if score @s rng1 matches 315 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
 execute if score @s rng1 matches 315 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“你先告诉我，诺曼博士到底去哪了？没有这条信息，我们谈不了任何合作。”","color":"white","bold": false}]
+
+execute if score SEA_ch5_event_building rng1 matches 317 run playsound minecraft:entity.villager.yes neutral @a ~ ~ ~ 1 0.8
+execute if score SEA_ch5_event_building rng1 matches 317 run tellraw @a[distance=0..200] [{"text":"邪教徒的对话声A：","color":"green","bold": true},{"text":"\n“不明飞行物体高速接近中、啊、……！！”","color":"white","bold": false}]
+execute if score SEA_ch5_event_building rng1 matches 338 run playsound minecraft:entity.villager.yes neutral @a ~ ~ ~ 1 0.8
+execute if score SEA_ch5_event_building rng1 matches 338 run tellraw @a[distance=0..200] [{"text":"邪教徒的对话声A：","color":"green","bold": true},{"text":"\n“格瑞克先生、？！所有人快点躲好，这雷暴是有目的性地朝我们劈过来的！！”","color":"white","bold": false}]
+
+execute if score @s rng1 matches 315 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
+execute if score @s rng1 matches 315 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“你先告诉我，诺曼博士到底去哪了？没有这条信息，我们谈不了任何合作。”","color":"white","bold": false}]
+
+execute if score @s rng1 matches 320..335 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..200] at @s run tp @s ~ ~ ~ facing 90147 145 46
+execute if score @s rng1 matches 323..352 as @n[tag=SEAjones,x=90000,y=100,z=0,distance=0..200] at @s run tp @s ~ ~ ~ facing 90147 145 46
+
+execute if score @s rng1 matches 334 at @s run playsound entity.evoker.ambient neutral @a ~ ~ ~ 1 1
+execute if score @s rng1 matches 334 at @s run tellraw @a[distance=0..200] [{"text":"琼斯：","color":"yellow","bold": true},{"text":"\n“外面什么动静？你们去查查。”","color":"white","bold": false}]
+
+
+execute if score @s rng1 matches 347 at @n[tag=SEApillager_npc2] run playsound entity.vindicator.ambient neutral @a ~ ~ ~ 1 1
+execute if score @s rng1 matches 347 at @n[tag=SEApillager_npc2] run tellraw @a[distance=0..200] [{"text":"邪教徒：","color":"yellow","bold": true},{"text":"\n“好，我这就去看看。”","color":"white","bold": false}]
+
+execute if score @s rng1 matches 348..352 as @n[tag=SEApillager_npc2] at @s run tp @s ~-1 ~ ~ facing ~2 ~ ~
+execute if score @s rng1 matches 353 as @n[tag=SEApillager_npc2] at @s run tp @s 90142 144 52 facing 90141 144 52
+execute if score @s rng1 matches 354..362 as @n[tag=SEApillager_npc2] at @s run tp @s ~-1 ~ ~ facing ~2 ~ ~
+execute if score @s rng1 matches 363 as @n[tag=SEApillager_npc2] at @s run effect give @s invisibility infinite 0 true
+execute if score @s rng1 matches 364 as @n[tag=SEApillager_npc2] at @s run tp @s 90100 -200 100
+execute if score @s rng1 matches 365 as @n[tag=SEApillager_npc2] at @s run kill @s
+
+
+
 
 
