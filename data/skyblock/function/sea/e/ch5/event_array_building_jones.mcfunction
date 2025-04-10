@@ -74,6 +74,7 @@ execute if score @s rng1 matches 323..352 as @n[tag=SEAjones,x=90000,y=100,z=0,d
 execute if score @s rng1 matches 334 at @s run playsound entity.evoker.ambient neutral @a ~ ~ ~ 1 1
 execute if score @s rng1 matches 334 at @s run tellraw @a[distance=0..200] [{"text":"琼斯：","color":"yellow","bold": true},{"text":"\n“外面什么动静？你们去查查。”","color":"white","bold": false}]
 
+execute if score @s rng1 matches 347 at @n[tag=SEAjones] as @a[distance=0..200] at @s run playsound garden2.bgm.horrorsings music @s ~ ~ ~ 1 1.0
 
 execute if score @s rng1 matches 347 at @n[tag=SEApillager_npc2] run playsound entity.vindicator.ambient neutral @a ~ ~ ~ 1 1
 execute if score @s rng1 matches 347 at @n[tag=SEApillager_npc2] run tellraw @a[distance=0..200] [{"text":"邪教徒：","color":"yellow","bold": true},{"text":"\n“好，我这就去看看。”","color":"white","bold": false}]
@@ -84,6 +85,10 @@ execute if score @s rng1 matches 354..362 as @n[tag=SEApillager_npc2] at @s run 
 execute if score @s rng1 matches 363 as @n[tag=SEApillager_npc2] at @s run effect give @s invisibility infinite 0 true
 execute if score @s rng1 matches 364 as @n[tag=SEApillager_npc2] at @s run tp @s 90100 -200 100
 execute if score @s rng1 matches 365 as @n[tag=SEApillager_npc2] at @s run kill @s
+
+execute if score @s rng1 matches 348..390 run effect give @e[tag=SEAmob_surrended_invis] invisibility infinite 0 true
+execute if score @s rng1 matches 348..390 run kill @e[tag=SEAmob_surrended_invis]
+execute if score @s rng1 matches 348..390 run tag @e[tag=SEAmob,tag=SEAmob_surrended,limit=3,sort=random] add SEAmob_surrended_invis
 
 execute if score @s rng1 matches 362 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
 execute if score @s rng1 matches 362 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if score SEA_ch5_event_fiona_favor rng1 matches ..12 run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“还愣着干什么啊？你打算永远就看戏吗？”","color":"white","bold": false}]
