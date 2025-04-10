@@ -85,6 +85,10 @@ execute if score @s rng1 matches 363 as @n[tag=SEApillager_npc2] at @s run effec
 execute if score @s rng1 matches 364 as @n[tag=SEApillager_npc2] at @s run tp @s 90100 -200 100
 execute if score @s rng1 matches 365 as @n[tag=SEApillager_npc2] at @s run kill @s
 
+execute if score @s rng1 matches 362 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
+execute if score @s rng1 matches 362 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if score SEA_ch5_event_fiona_favor rng1 matches ..12 run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“还愣着干什么啊？你打算永远就看戏吗？”","color":"white","bold": false}]
+execute if score @s rng1 matches 362 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if score SEA_ch5_event_fiona_favor rng1 matches 13..22 run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“我就知道。我们也去看看。”","color":"white","bold": false}]
+execute if score @s rng1 matches 362 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if score SEA_ch5_event_fiona_favor rng1 matches 23.. run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“我们也去吧。我不信他们能够处理这些事情。”","color":"white","bold": false}]
 
 
 
