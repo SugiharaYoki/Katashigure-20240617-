@@ -97,5 +97,5 @@ execute if score @s rng1 matches 385..400 run scoreboard players set @s rng1 385
 execute if score @s rng1 matches 385..400 positioned 90136 136 53 if entity @a[tag=SEAPT,tag=!SEAPF,distance=0..4] run scoreboard players set @s rng1 500
 
 execute if score @s rng1 matches 501 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
-execute if score @s rng1 matches 501 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“不需要再废话了。琼斯，我们根本不知道天使会不会帮助我们。它们带来的麻烦可能会远比细菌要严重。”","color":"white","bold": false}]
+execute if score @s rng1 matches 501 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“往停机坪。动静是从那里传来的。”","color":"white","bold": false}]
 
