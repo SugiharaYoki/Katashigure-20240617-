@@ -1,1 +1,56 @@
 scoreboard players add @s rng1 1
+
+execute if score @s rng1 matches 3 at @s run playsound entity.evoker.ambient neutral @a ~ ~ ~ 1 1
+execute if score @s rng1 matches 3 at @s run tellraw @a[distance=0..200] [{"text":"琼斯：","color":"yellow","bold": true},{"text":"\n“菲尔娜小姐，很高兴再次见到您。”","color":"white","bold": false}]
+
+execute if score @s rng1 matches 20 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
+execute if score @s rng1 matches 20 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“不需要再废话了。琼斯，我们根本不知道天使会不会帮助我们。它们带来的麻烦可能会远比细菌要严重。”","color":"white","bold": false}]
+
+execute if score @s rng1 matches 40 at @s run playsound entity.evoker.ambient neutral @a ~ ~ ~ 1 1
+execute if score @s rng1 matches 40 at @s run tellraw @a[distance=0..200] [{"text":"琼斯：","color":"yellow","bold": true},{"text":"\n“我知道，我知道，菲尔娜小姐。\n事实上，你我都知晓，若不借助外界力量，我们所有人都会死在这里。”","color":"white","bold": false}]
+
+execute if score @s rng1 matches 60 at @s run playsound entity.evoker.ambient neutral @a ~ ~ ~ 1 1
+execute if score @s rng1 matches 60 at @s run tellraw @a[distance=0..200] [{"text":"琼斯：","color":"yellow","bold": true},{"text":"\n“我们所有人都被感染了。就算是为了地球上的其余人着想，我们都绝不能将细菌带出这平台。”","color":"white","bold": false}]
+
+execute if score @s rng1 matches 81 at @s run tellraw @a[distance=0..250] [{"selector":"@r[tag=SEAPT]","color":"white"},{"text":"：我算是都听明白了。你们这群教徒信仰的东西跟这些细菌无关。","color":"white"}]
+
+execute if score @s rng1 matches 100 at @s run playsound entity.evoker.ambient neutral @a ~ ~ ~ 1 1
+execute if score @s rng1 matches 100 at @s run tellraw @a[distance=0..200] [{"text":"琼斯：","color":"yellow","bold": true},{"text":"\n“是的，先生。\n我们已经有足够的证据证明圣水晶封存着已经陨落的大天使‘雷米尔’的至高神力。就现在看来，他将水晶留在地底峡谷，正是为了镇压远古细菌。”","color":"white","bold": false}]
+
+
+execute if score @s rng1 matches 103 at @s as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200,tag=SEAPT] [{"text":" - "},{"text":"追问：镇压？怎么做到的？  ","color":"yellow"},{"text":"〈◆〉","bold":true,"color":"gold","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 90007"}}]
+execute if score @s rng1 matches 129 at @s run scoreboard players set @s rng1 254
+
+execute if score @s rng1 matches 131 at @s as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s as @p[tag=SEAPT] run tellraw @a[distance=0..250] [{"selector":"@p[tag=SEAPT,scores={SEAPT_member=1}]","color":"white"},{"text":"：你说水晶镇压了那些细菌，靠的是什么？是你之前说过的大天使的神力吗？","color":"white"}]
+execute if score @s rng1 matches 131 at @s as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s as @p[tag=SEAPT] run scoreboard players add SEA_ch5_event_fiona_favor rng1 1
+
+execute if score @s rng1 matches 150 at @s run playsound entity.evoker.ambient neutral @a ~ ~ ~ 1 1
+execute if score @s rng1 matches 150 at @s run tellraw @a[distance=0..200] [{"text":"琼斯：","color":"yellow","bold": true},{"text":"\n“圣水晶吸收的不仅是低频电波。它拥有吸引一切含有‘智能’，或携带着‘智能’之产物的力量。简而言之，包含着人类言语的无线电、拥有目的性且可操控尸体的超强细菌，以及……人类本身。”","color":"white","bold": false}]
+
+execute if score @s rng1 matches 172 at @s run playsound entity.evoker.ambient neutral @a ~ ~ ~ 1 1
+execute if score @s rng1 matches 172 at @s run tellraw @a[distance=0..200] [{"text":"琼斯：","color":"yellow","bold": true},{"text":"\n“你也许会觉得我们都是被圣水晶所蛊惑——不，只有当你真正地接触了圣水晶，你才会明白：啊，这是多么纯粹的、圣洁的力量。这才是天使为我们留下的祝福，我已经无法背对这股神力了。”","color":"white","bold": false}]
+
+execute if score @s rng1 matches 194 at @s run playsound entity.evoker.ambient neutral @a ~ ~ ~ 1 1
+execute if score @s rng1 matches 194 at @s unless items entity @a[tag=SEAPT] container.* nether_star run tellraw @a[distance=0..200] [{"text":"琼斯：","color":"yellow","bold": true},{"text":"\n“很可惜，你应该加入我们。”","color":"white","bold": false}]
+execute if score @s rng1 matches 194 at @s if items entity @a[tag=SEAPT] container.* nether_star run tellraw @a[distance=0..200] [{"text":"琼斯：","color":"yellow","bold": true},{"text":"\n“不过……你的身上，也存在着这股力量。真有意思，难不成你拥有天使的神力？”","color":"white","bold": false}]
+
+execute if score @s rng1 matches 214 at @s unless items entity @a[tag=SEAPT] container.* nether_star run tellraw @a[distance=0..250] [{"selector":"@p[tag=SEAPT,scores={SEAPT_member=1}]","color":"white"},{"text":"：恕我谢绝，琼斯先生。","color":"white"}]
+execute if score @s rng1 matches 214 at @s if items entity @a[tag=SEAPT] container.* nether_star run tellraw @a[distance=0..250] [{"selector":"@p[tag=SEAPT,scores={SEAPT_member=1}]","color":"white"},{"text":"：我不懂你在说什么。我们都是凡人，而且若是凡人能拥有神力，显然你也不可能如此崇拜天使。","color":"white"}]
+
+execute if score @s rng1 matches 234 at @s run playsound entity.evoker.ambient neutral @a ~ ~ ~ 1 1
+execute if score @s rng1 matches 234 at @s unless items entity @a[tag=SEAPT] container.* nether_star run tellraw @a[distance=0..200] [{"text":"琼斯：","color":"yellow","bold": true},{"text":"\n“真是遗憾……我们走的是不同的道路。先生，我会尊敬你的选择。”","color":"white","bold": false}]
+execute if score @s rng1 matches 234 at @s if items entity @a[tag=SEAPT] container.* nether_star run tellraw @a[distance=0..200] [{"text":"琼斯：","color":"yellow","bold": true},{"text":"\n“呵呵，你真的是我遇到的人里说话最有意思的一批。我很欣赏你。你选择不加入我们，确实会是我们圣晶教的损失。”","color":"white","bold": false}]
+
+execute if score @s rng1 matches 255 at @s run playsound entity.evoker.ambient neutral @a ~ ~ ~ 1 1
+execute if score @s rng1 matches 255 at @s run tellraw @a[distance=0..200] [{"text":"琼斯：","color":"yellow","bold": true},{"text":"\n“大小姐，很遗憾。原本能有足够的人逃离钻井平台——尽管那并不是正确的选择。”","color":"white","bold": false}]
+
+execute if score @s rng1 matches 275 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
+execute if score @s rng1 matches 275 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“细菌的事情传出来的时候，大家本就神经过敏了。诺玛的煽动可谓恰到好处。”","color":"white","bold": false}]
+
+execute if score @s rng1 matches 295 at @s run playsound entity.evoker.ambient neutral @a ~ ~ ~ 1 1
+execute if score @s rng1 matches 295 at @s run tellraw @a[distance=0..200] [{"text":"琼斯：","color":"yellow","bold": true},{"text":"\n“在那期间的争斗令我们的、你们的许多同胞都死了。菲尔娜大小姐，我想我们还是需要统一战线。”","color":"white","bold": false}]
+
+execute if score @s rng1 matches 315 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
+execute if score @s rng1 matches 315 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“你先告诉我，诺曼博士到底去哪了？没有这条信息，我们谈不了任何合作。”","color":"white","bold": false}]
+
+
