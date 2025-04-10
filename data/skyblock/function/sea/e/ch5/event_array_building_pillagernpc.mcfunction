@@ -12,3 +12,13 @@ execute if score @s rng1 matches 43 at @s run tellraw @a[tag=SEAPT] [{"text":"�
 
 execute if score @s rng1 matches 73 at @s run playsound entity.pillager.ambient neutral @a ~ ~ ~ 1 1.15
 execute if score @s rng1 matches 73 at @s run tellraw @a[tag=SEAPT] [{"text":"邪教徒弩手：","color":"green","bold": true},{"text":"\n“你的恩情我终生不会忘记，无论你最后想要做什么，都祝你成功！”","color":"green","bold": false}]
+
+
+execute if score @s rng1 matches 173 at @s run playsound entity.pillager.ambient neutral @a ~ ~ ~ 1 1.15
+execute if score @s rng1 matches 173 at @s run tellraw @a[tag=SEAPT] [{"text":"邪教徒弩手：","color":"green","bold": true},{"text":"\n“都是那个叫诺玛的女人坏了事，原本钻井平台的工人和咱们教徒都相安无事。”","color":"green","bold": false}]
+execute if score @s rng1 matches 193 at @s run playsound entity.pillager.ambient neutral @a ~ ~ ~ 1 1.15
+execute if score @s rng1 matches 193 at @s run tellraw @a[tag=SEAPT] [{"text":"邪教徒弩手：","color":"green","bold": true},{"text":"\n“结果细菌爆发了，诺玛趁机指责是我们带来了细菌。我们可是也因此死了不少人啊。”","color":"green","bold": false}]
+execute if score @s rng1 matches 273 at @s run playsound entity.pillager.ambient neutral @a ~ ~ ~ 1 1.15
+execute if score @s rng1 matches 273 at @s run tellraw @a[tag=SEAPT] [{"text":"邪教徒弩手：","color":"green","bold": true},{"text":"\n“不过，这医务中心里的药物怎么少了那么多？我合理怀疑是有人将它们故意藏了起来，甚至说是销毁了。”","color":"green","bold": false}]
+execute if score @s rng1 matches 373 at @s run playsound entity.pillager.ambient neutral @a ~ ~ ~ 1 1.15
+execute if score @s rng1 matches 373 at @s run tellraw @a[tag=SEAPT] [{"text":"邪教徒弩手：","color":"green","bold": true},{"text":"\n“我听说琼斯手下的教徒有一批人打着自己的小算盘。琼斯本人肯定完全知道这一点。”","color":"green","bold": false}]
