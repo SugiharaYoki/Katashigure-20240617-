@@ -1,5 +1,5 @@
 playsound minecraft:ui.button.click master @s ~ ~ ~ 0.3 1.4 0.4
-tellraw @s {"text":"「薄雨散华的匿名界」","color":"blue"}
+tellraw @s {"text":"「漆海命墓的妖歌」- 厄珀娅的悲歌","color":"blue"}
 tellraw @s {"text":" "}
 tellraw @s [{"text":"  Heracles by. Yooh - 维修层决战：法莫洛斯","color":"aqua","hoverEvent":{"action":"show_text","contents":{"text":"『厄珀娅的悲歌』 BGM","color":"gray"}}},{"text":"  点唱","color":"green","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 101791"},"hoverEvent":{"action":"show_text","contents":{"text":"立即播放该曲","color":"white"}}}]
 tellraw @s [{"text":"  Manifold Hypotheis by. cybermiso + tigerlily - 物资层决战：德怀特","color":"aqua","hoverEvent":{"action":"show_text","contents":{"text":"『厄珀娅的悲歌』 BGM","color":"gray"}}},{"text":"  点唱","color":"green","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 101788"},"hoverEvent":{"action":"show_text","contents":{"text":"立即播放该曲","color":"white"}}}]
