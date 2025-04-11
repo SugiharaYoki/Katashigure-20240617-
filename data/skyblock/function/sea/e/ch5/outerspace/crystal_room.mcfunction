@@ -1,6 +1,7 @@
 scoreboard players add SEA_ch5_event_outerspace_fiona sea_4temp1 1
 
 execute if score SEA_ch5_event_outerspace_fiona sea_4temp1 matches 1..200 if block 90097 132 99 air run scoreboard players set SEA_ch5_event_outerspace_fiona sea_4temp1 205
+execute if score SEA_ch5_event_outerspace_fiona sea_4temp1 matches 180..190 unless block 90097 132 99 air run scoreboard players set SEA_ch5_event_outerspace_fiona sea_4temp1 180
 
 execute if score SEA_ch5_event_outerspace_fiona sea_4temp1 matches 2 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
 execute if score SEA_ch5_event_outerspace_fiona sea_4temp1 matches 2 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if score SEA_ch5_event_fiona_favor rng1 matches 10.. if entity @a[tag=SEAPT,scores={SEAPT_member=2}] run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“真亏你们能找到这个地方。你知道这里对邪教徒说有多重要吗？”","color":"white","bold": false}]
