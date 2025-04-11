@@ -18,7 +18,7 @@ execute if score seact rng2 matches 20 run scoreboard players set seact rng2 0
 
 execute as @a[tag=SEAPT,scores={sea_remiel_shadow=1..}] at @s run function skyblock:sea/p/remiel_shadow
 
-execute if block 90074 103 136 lectern if entity @a[tag=SEAPT] positioned 90142 134 26 as @n[tag=SEAnorman,type=villager,distance=0..250,scores={rng1=1..}] at @s run function skyblock:sea/e/ch5/boss5_1
+execute if block 90074 103 136 lectern if entity @a[tag=SEAPT] positioned 90142 134 26 as @n[tag=SEAnorman,type=zombie_villager,distance=0..250,scores={rng1=1..}] at @s run function skyblock:sea/e/ch5/boss5_1
 
 
 execute as @n[type=zombie,tag=SEAmob,x=80000,dx=20000,z=-10000,dz=20000,y=-1000,dy=2000,tag=SEAknight] at @s if block ~ ~1.3 ~ water run advancement grant @a[tag=SEAPT] only skyblock:sea/doc/g26
