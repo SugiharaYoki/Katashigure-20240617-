@@ -63,7 +63,7 @@ execute if score @s rng1 matches 325 as @n[tag=SEAfiona,x=90000,y=100,z=0,distan
 execute if score @s rng1 matches 327 run playsound minecraft:entity.villager.yes neutral @a ~ ~ ~ 1 0.8
 execute if score @s rng1 matches 327 run tellraw @a[distance=0..200] [{"text":"邪教徒的对话声A：","color":"green","bold": true},{"text":"\n“不明飞行物体高速接近中、啊、……！！”","color":"white","bold": false}]
 execute if score @s rng1 matches 348 run playsound minecraft:entity.villager.yes neutral @a ~ ~ ~ 1 0.8
-execute if score @s rng1 matches 348 run tellraw @a[distance=0..200] [{"text":"邪教徒的对话声A：","color":"green","bold": true},{"text":"\n“格瑞克先生、？！所有人快点躲好，这雷暴是有目的性地朝我们劈过来的！！”","color":"white","bold": false}]
+execute if score @s rng1 matches 348 run tellraw @a[distance=0..200] [{"text":"邪教徒的对话声B：","color":"green","bold": true},{"text":"\n“格瑞克先生、？！所有人快点躲好，这雷暴是有目的性地朝我们劈过来的！！”","color":"white","bold": false}]
 
 execute if score @s rng1 matches 330..345 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..200] at @s run tp @s ~ ~ ~ facing 90147 145 46
 execute if score @s rng1 matches 333..362 as @n[tag=SEAjones,x=90000,y=100,z=0,distance=0..200] at @s run tp @s ~ ~ ~ facing 90147 145 46
@@ -97,7 +97,7 @@ execute if score @s rng1 matches 382 as @n[tag=SEAfiona,x=90000,y=100,z=0,distan
 execute if score @s rng1 matches 382 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if score SEA_ch5_event_fiona_favor rng1 matches 23.. run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“我们也去吧。我不信他们能够处理这些事情。”","color":"white","bold": false}]
 
 execute if score @s rng1 matches 425..430 run scoreboard players set @s rng1 425
-execute if score @s rng1 matches 425..430 positioned 90136 136 53 if entity @a[tag=SEAPT,tag=!SEAPF,distance=0..4] run scoreboard players set @s rng1 500
+execute if score @s rng1 matches 382..430 positioned 90136 136 53 if entity @a[tag=SEAPT,tag=!SEAPF,distance=0..4] run scoreboard players set @s rng1 500
 
 execute if score @s rng1 matches 501 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
 execute if score @s rng1 matches 501 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“往停机坪。动静是从那里传来的。”","color":"white","bold": false}]
