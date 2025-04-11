@@ -108,7 +108,7 @@ execute if score @s rng1 matches 400 run tp @e[tag=SEAmob_surrended_invis] 90100
 execute if score @s rng1 matches 402 positioned 90100 -300 100 run kill @e[tag=SEAmob_surrended_invis,distance=0..200]
 execute if score @s rng1 matches 358..400 run tag @e[tag=SEAmob,tag=SEAmob_surrended,limit=3,sort=random,tag=!SEAmob_surrended_invis] add SEAmob_surrended_invis
 
-execute if score @s rng1 matches 400 positioned 90142 134 26 run kill @e[tag=SEAmob,tag=!SEAnpc,distance=0..18]
+execute if score @s rng1 matches 400 positioned 90142 134 26 run kill @e[tag=SEAmob,tag=!SEAnpc,tag=!SEAnorman,distance=0..18]
 
 
 execute if score @s rng1 matches 382 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
