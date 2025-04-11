@@ -31,3 +31,4 @@ execute if score @s rng1 matches 50 run scoreboard players set @n[tag=SEAnorman]
 execute if score @s rng1 matches 50 run scoreboard players set @n[tag=SEAnorman] rng8 0
 execute if score @s rng1 matches 50 run scoreboard players set @n[tag=SEAnorman] rng9 0
 
+execute positioned 90142 134 26 if entity @s[distance=20..] at @s run tp @s 90142 144 26
