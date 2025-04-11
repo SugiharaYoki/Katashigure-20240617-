@@ -1,6 +1,7 @@
 scoreboard players add @s rng1 1
 scoreboard players add @s[scores={rng2=..-0}] rng2 1
-
+execute store result bossbar minecraft:9066601 value run data get entity @n[tag=SEAboss5] Health
+execute store result score @n[tag=SEAboss5] health run data get entity @n[tag=SEAboss5] Health
 
 execute if score @s rng1 matches 2 run stopsound @a[tag=SEAPT] music
 execute if score @s rng1 matches 2 run summon lightning_bolt
@@ -24,7 +25,7 @@ execute if score @s rng1 matches 250 run bossbar set minecraft:9066601 color red
 execute if score @s rng1 matches 250 run bossbar set minecraft:9066601 name "圣洁崇高的昏星 - 诺曼 · 萨罗莫"
 execute if score @s rng1 matches 250 run bossbar set minecraft:9066601 players @a[tag=SEAPT]
 execute if score @s rng1 matches 250 run bossbar set minecraft:9066601 style progress
-execute if score @s rng1 matches 250 run bossbar set minecraft:9066601 max 150
+execute if score @s rng1 matches 250 run bossbar set minecraft:9066601 max 200
 execute if score @s rng1 matches 250 run scoreboard players set @n[tag=SEAnorman] rng2 0
 execute if score @s rng1 matches 250 run scoreboard players set @n[tag=SEAnorman] rng3 0
 execute if score @s rng1 matches 250 run scoreboard players set @n[tag=SEAnorman] rng4 0
