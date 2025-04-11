@@ -1,4 +1,6 @@
 scoreboard players add @s rng1 1
+scoreboard players add @s rng2 1
+
 
 execute if score @s rng1 matches 2 run stopsound @a[tag=SEAPT] music
 execute if score @s rng1 matches 2 run summon lightning_bolt
