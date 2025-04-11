@@ -6,8 +6,8 @@ execute positioned 90122 153 130 run tellraw @a[tag=SEAPT,distance=..15] {"text"
 
 fill 90121 155 139 90120 155 139 jungle_pressure_plate
 
-summon item 90117 165 128 {Item:{id:"fire_charge",count:1b}}
-summon item 90118 165 130 {Item:{id:"fire_charge",count:1b}}
+#summon item 90117 165 128 {Item:{id:"fire_charge",count:1b,components:{custom_name:'{"text":"定时炸弹","italic":true,"color":"blue","italic":false}',lore:['{"text":"它会在你丢出去3秒后爆炸！","color":"white","italic":false}','{"text":"炸到自己的话，职业生涯就会结束了吧。","color":"white","italic":false}','{"text":"可用于破坏凝胶壁障与瓦罐。","color":"white","italic":false}']}}
+#summon item 90118 165 130 {Item:{id:"fire_charge",count:1b,components:{custom_name='{"text":"定时炸弹","italic":true,"color":"blue","italic":false}',lore=['{"text":"它会在你丢出去3秒后爆炸！","color":"white","italic":false}','{"text":"炸到自己的话，职业生涯就会结束了吧。","color":"white","italic":false}','{"text":"可用于破坏凝胶壁障与瓦罐。","color":"white","italic":false}']}}
 
 
 execute positioned 90126 161 148 run function skyblock:sea/m/unique/npc_marshall
