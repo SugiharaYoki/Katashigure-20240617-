@@ -279,7 +279,7 @@ execute as @n[tag=sc,scores={sea_4temp2=5012}] as @a[tag=SEAPT] at @s if entity 
 execute as @n[tag=sc,scores={sea_4temp2=5030}] as @a[tag=SEAPT] at @s if entity @s[advancements={skyblock:sea/doc/15=true,skyblock:sea/doc/16=true,skyblock:sea/doc/17=true,skyblock:sea/doc/17=true}] run tellraw @s {"text":"但是，我已经见证了你们的结局。","color":"gray"}
 execute as @n[tag=sc,scores={sea_4temp2=5057}] as @a[tag=SEAPT] at @s if entity @s[advancements={skyblock:sea/doc/15=true,skyblock:sea/doc/16=true,skyblock:sea/doc/17=true,skyblock:sea/doc/17=true}] run tellraw @s {"text":"我对发生的一切感到很抱歉。虽然改变不了任何悲剧，但我会将此铭记。","color":"gray"}
 execute as @n[tag=sc,scores={sea_4temp2=5089}] as @a[tag=SEAPT] at @s run tellraw @s {"text":"『厄珀娅的悲歌』第二章 完","color":"blue","bold": true}
-execute as @n[tag=sc,scores={sea_4temp2=5089}] as @a[tag=SEAPT] at @s run playsound music_disc.creator_music_box music @a[tag=SEAPT] ~ ~ ~ 1000 0.8
+#execute as @n[tag=sc,scores={sea_4temp2=5089}] as @a[tag=SEAPT] at @s run playsound music_disc.creator_music_box music @a[tag=SEAPT] ~ ~ ~ 1000 0.8
 execute as @n[tag=sc,scores={sea_4temp2=5089}] run function skyblock:sea/generate/preload/map_prepare_ch3
 execute as @n[tag=sc,scores={sea_4temp2=5030}] run setblock 90071 137 151 minecraft:iron_trapdoor[facing=north,open=true]
 execute as @n[tag=sc,scores={sea_4temp2=5030}] run setblock 90066 129 112 minecraft:stone_button[facing=north]
