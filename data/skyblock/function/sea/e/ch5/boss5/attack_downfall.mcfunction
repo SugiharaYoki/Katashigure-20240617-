@@ -1,4 +1,4 @@
-
+scoreboard players add @s[scores={rng2=1..}] rng2 1
 
 execute if score @s rng2 matches 2 run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
 execute if score @s rng2 matches 2 at @s positioned 0.0 0 0.0 run summon marker ^ ^2 ^1.4 {Tags:["SEA_boss5_marker"]}
