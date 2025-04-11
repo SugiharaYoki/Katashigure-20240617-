@@ -225,7 +225,7 @@ execute as @n[type=villager,tag=SEAjones,x=90144,y=144,z=51,distance=..15] at @s
 execute if score SEA_ch5_event_outerspace_fiona sea_4temp1 matches ..0 if entity @n[tag=SEAfiona,x=90088,y=127,z=99,dx=9,dy=4,dz=6] run scoreboard players set SEA_ch5_event_outerspace_fiona sea_4temp1 1
 execute if score SEA_ch5_event_outerspace_fiona sea_4temp1 matches 1..500 run function skyblock:sea/e/ch5/outerspace/crystal_room
 
+execute if score SEA_ch5_event_outerspace_fiona sea_4temp2 matches ..0 if entity @n[tag=SEAfiona,x=90092,y=145,z=139,distance=0..20] run scoreboard players set SEA_ch5_event_outerspace_fiona sea_4temp2 1
+execute if score SEA_ch5_event_outerspace_fiona sea_4temp2 matches 1..500 run function skyblock:sea/e/ch5/outerspace/medical
 
-
-
-
+ 
