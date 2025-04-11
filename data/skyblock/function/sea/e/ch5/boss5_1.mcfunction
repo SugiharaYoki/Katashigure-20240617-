@@ -33,7 +33,9 @@ execute if score @s rng1 matches 250 run scoreboard players set @n[tag=SEAnorman
 
 execute positioned 90142 134 26 if entity @s[distance=20..] at @s run tp @s 90142 144 26
 
-execute if score @s rng1 matches 250.. if score @s rng2 matches -5..0 store result score @s rng3 run random value 1..5
+execute if score @s rng1 matches 250.. if score @s rng2 matches -5..-3 store result score @s rng3 run random value 1..24
+execute if score @s rng1 matches 250.. if score @s[scores={rng3=1..8}] rng2 matches 0.. run function skyblock:sea/e/ch5/boss5/move_jump
+execute if score @s rng1 matches 250.. if score @s rng2 matches -2..0 store result score @s rng3 run random value 1..5
 execute if score @s rng1 matches 250.. if score @s[scores={rng3=1..5}] rng2 matches 0.. run function skyblock:sea/e/ch5/boss5/attack_downfall
 
 
