@@ -7,7 +7,7 @@ execute if score @s rng1 matches 2 run data modify entity @s Invulnerable set va
 
 execute if score @s rng1 matches 30 at @n[tag=SEAboss4] as @a[tag=SEAPT] at @s run playsound minecraft:app1.caradbolg music @s ~ ~ ~ 1 1
 execute if score @s rng1 matches 30 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
-execute if score @s rng1 matches 30 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if score SEA_ch5_event_fiona_favor rng1 matches ..12 run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“操，是诺曼博士。”","color":"white","bold": false}]
+execute if score @s rng1 matches 30 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if score SEA_ch5_event_fiona_favor rng1 matches ..12 run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“操他妈的，居然是诺曼博士。”","color":"white","bold": false}]
 execute if score @s rng1 matches 30 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if score SEA_ch5_event_fiona_favor rng1 matches 13..22 run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“诺曼博士，我就知道他还……等等、？！”","color":"white","bold": false}]
 execute if score @s rng1 matches 30 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if score SEA_ch5_event_fiona_favor rng1 matches 23.. run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“这个人是诺曼博士！而且邪教徒有一件事情说对了……”","color":"white","bold": false}]
 
