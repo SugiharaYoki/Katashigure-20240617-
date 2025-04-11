@@ -68,6 +68,8 @@ execute if score @s rng1 matches 348 run tellraw @a[distance=0..200] [{"text":"�
 execute if score @s rng1 matches 330..345 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..200] at @s run tp @s ~ ~ ~ facing 90147 145 46
 execute if score @s rng1 matches 333..362 as @n[tag=SEAjones,x=90000,y=100,z=0,distance=0..200] at @s run tp @s ~ ~ ~ facing 90147 145 46
 
+execute if score @s rng1 matches 354 at @s positioned 90142 134 26 run function skyblock:sea/m/unique/boss5_norman
+
 execute if score @s rng1 matches 354 at @s run playsound entity.evoker.ambient neutral @a ~ ~ ~ 1 1
 execute if score @s rng1 matches 354 at @s run tellraw @a[distance=0..200] [{"text":"琼斯：","color":"yellow","bold": true},{"text":"\n“外面什么动静？你们去查查。”","color":"white","bold": false}]
 
@@ -104,5 +106,4 @@ execute if score @s rng1 matches 501 as @n[tag=SEAfiona,x=90000,y=100,z=0,distan
 
 execute if score @s rng1 matches 512 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run setblock 90140 140 38 redstone_lamp[lit=false] destroy
 execute if score @s rng1 matches 512 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run setblock 90144 140 38 redstone_lamp[lit=false] destroy
-
 
