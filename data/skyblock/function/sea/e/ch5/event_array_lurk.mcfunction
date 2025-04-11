@@ -159,7 +159,7 @@ execute unless block 90121 135 16 grindstone if score SEA_ch5_event_engineering_
 
 execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 5008 run bossbar remove sea:ch5_lurkbar
 execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 5026 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
-execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 5026 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“琼斯先生，你一直观察着我们的一举一动，是吗？”","color":"white","bold": false}]
+execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 5026 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“琼斯，你一直观察着我们的一举一动，是吗？”","color":"white","bold": false}]
 
 execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 5045 positioned 90134 133 57 run playsound entity.evoker.ambient neutral @a ~ ~ ~ 1 1
 execute if block 90121 135 16 grindstone if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 5045 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"琼斯：","color":"yellow","bold": true},{"text":"\n“我们把话留到之后吧。你可以进来了。”","color":"white","bold": false}]
@@ -185,11 +185,22 @@ execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 5144 as @n[t
 execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 5050 run fill 90134 130 58 90134 130 59 minecraft:heavy_weighted_pressure_plate
 execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 5050 positioned 90134 130 59.0 run playsound block.note_block.bell block @a ~ ~ ~ 1 0.8
 execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 5050 positioned 90150 130 50 run function skyblock:sea/m/unique/npc_iscariot
+execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 5050 positioned 90149 144 56 run function skyblock:sea/m/unique/npc_jones
+execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 5050 positioned 90147 144 58 run function skyblock:sea/m/unique/vindicator_guardian
+execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 5050 positioned 90146 144 57 run function skyblock:sea/m/unique/vindicator_guardian
+execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 5050 positioned 90148 144 51 run function skyblock:sea/m/unique/vindicator_guardian
+execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 5050 positioned 90148 144 51 run tag @n[type=vindicator,distance=0..5] add SEApillager_npc2
+
+execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 5050 positioned 90136 144 53 run function skyblock:sea/m/unique/vindicator_guardian
+
+
+execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 5050 if block 90060 101 142 red_candle positioned 90140 130 64 run function skyblock:sea/m/pillager_npc
 
 execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 5050 run fill 90117 131 68 90121 131 68 air
 
 execute as @e[tag=SEAmob_surrended,x=90100,y=100,z=100,distance=0..200,type=#illager,limit=3,sort=random] at @s as @n[tag=SEAmob,tag=!SEAnpc,type=!#illager,distance=0..2.9] at @s run function skyblock:sea/e/ch5/event_array_lurk_surrendedattack
 
-execute as @n[type=villager,tag=SEAiscariot,x=90100,y=100,z=100,distance=..250] at @s if entity @a[tag=SEAPT,distance=0..5] run function skyblock:sea/e/ch5/event_array_building_iscariot
+execute as @n[type=villager,tag=SEAiscariot,x=90100,y=100,z=100,distance=..250] at @s if entity @a[tag=SEAPT,distance=0..4.2] run function skyblock:sea/e/ch5/event_array_building_iscariot
+execute as @n[type=pillager,tag=SEApillager_npc1,x=90100,y=100,z=100,distance=..250] at @s if entity @a[tag=SEAPT,distance=0..3.4] run function skyblock:sea/e/ch5/event_array_building_pillagernpc
 
 

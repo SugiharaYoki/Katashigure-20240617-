@@ -16,3 +16,11 @@ execute if entity @a[tag=SEAPT,tag=!SEAPF,x=90138,y=137,z=60,dx=6,dy=10,dz=9] if
 execute if entity @a[tag=SEAPT,tag=!SEAPF,x=90138,y=137,z=60,dx=6,dy=10,dz=9] if score SEA_ch5_event_building_fiona sea_4temp1 matches 222 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] if score SEA_ch5_event_fiona_favor rng1 matches 16.. run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“你还真是在这里待得够久。是觉得外头太冷了吗？我再给你点把火吧。”","color":"white","bold": false}]
 
 execute if entity @a[tag=SEAPT,tag=!SEAPF,x=90138,y=137,z=60,dx=6,dy=10,dz=9] if score SEA_ch5_event_building_fiona sea_4temp1 matches 242 if score SEA_ch5_event_fiona_favor rng1 matches 16.. run tellraw @a[distance=0..250] [{"selector":"@p[tag=SEAPT,scores={SEAPT_member=1}]","color":"white"},{"text":"：呃……那还是免了吧。","color":"white"}]
+
+
+
+
+
+
+
+
