@@ -220,7 +220,7 @@ execute positioned 90142 135 47 if entity @a[tag=SEAPT,tag=!SEAPF,distance=0..10
 execute if score SEA_ch5_event_building rng1 matches 1.. positioned 90142 137 42 run function skyblock:sea/e/ch5/event_array_building_general
 
 execute unless score @n[tag=SEAjones] rng1 matches 355.. as @n[type=villager,tag=SEAjones,x=90144,y=144,z=51,distance=..15] at @s if entity @a[tag=SEAPT,x=90144,y=144,z=51,dx=7,dy=5,dz=7] run function skyblock:sea/e/ch5/event_array_building_jones
-execute if score @n[tag=SEAjones] rng1 matches 355.. run function skyblock:sea/e/ch5/event_array_building_jones
+execute if score @n[tag=SEAjones] rng1 matches 355.. as @n[type=villager,tag=SEAjones,x=90144,y=144,z=51,distance=..15] run function skyblock:sea/e/ch5/event_array_building_jones
 
 
 execute if score SEA_ch5_event_outerspace_fiona sea_4temp1 matches ..0 if entity @n[tag=SEAfiona,x=90088,y=127,z=99,dx=9,dy=4,dz=6] run scoreboard players set SEA_ch5_event_outerspace_fiona sea_4temp1 1
