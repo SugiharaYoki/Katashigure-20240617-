@@ -1,7 +1,8 @@
 scoreboard players add @s[scores={rng2=1..}] rng2 1
 
+execute if score @s rng2 matches 2 run playsound entity.breeze.jump hostile @a ~ ~ ~ 1 1.1
 execute if score @s rng2 matches 2 run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
-execute if score @s rng2 matches 2 at @s positioned 0.0 0 0.0 run summon marker ^ ^2 ^1.4 {Tags:["SEA_boss5_marker"]}
+execute if score @s rng2 matches 2 at @s positioned 0.0 0 0.0 run summon marker ^ ^1 ^0.8 {Tags:["SEA_boss5_marker"]}
 execute if score @s rng2 matches 2 at @s run data modify entity @s Motion set from entity @n[type=marker,tag=SEA_boss5_marker] Pos
 
 execute if score @s rng2 matches 16.. at @s if block ~ ~-0.7 ~ air run tp @s ~ ~-0.7 ~
