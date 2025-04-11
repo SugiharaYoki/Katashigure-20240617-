@@ -39,3 +39,6 @@ execute if score @s rng1 matches 250.. if score @s rng2 matches -2..0 store resu
 execute if score @s rng1 matches 250.. if score @s[scores={rng3=1..5}] rng2 matches 0.. run function skyblock:sea/e/ch5/boss5/attack_downfall
 
 
+execute as @n[type=marker,tag=SEA_boss5_marker] at @s run function skyblock:sea/e/ch5/boss5/lightning_anchor
+
+
