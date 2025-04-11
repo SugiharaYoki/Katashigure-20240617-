@@ -269,6 +269,11 @@ scoreboard players set SEA_ch5_event_building_fiona sea_4temp2 0
 scoreboard players set SEA_ch5_event_building_fiona sea_4temp3 0
 scoreboard players set SEA_ch5_event_building_fiona sea_4temp4 0
 scoreboard players set SEA_ch5_event_building_fiona sea_4temp5 0
+scoreboard players set SEA_ch5_event_outerspace_fiona sea_4temp1 0
+scoreboard players set SEA_ch5_event_outerspace_fiona sea_4temp2 0
+scoreboard players set SEA_ch5_event_outerspace_fiona sea_4temp3 0
+scoreboard players set SEA_ch5_event_outerspace_fiona sea_4temp4 0
+scoreboard players set SEA_ch5_event_outerspace_fiona sea_4temp5 0
 scoreboard players set SEA_ch5_event_fiona_favor rng1 0
 scoreboard players set SEA_ch5_event_building rng1 0
 scoreboard players set SEA_ch5_event_building rng2 0
