@@ -274,9 +274,9 @@ execute if entity @a[tag=SEAPT,x=90183,y=10,z=152,distance=0..15] run function s
 execute if entity @a[tag=SEAPT,x=90216,y=56,z=90,distance=0..25] run function skyblock:sea/e/ch4/ev021_hotvaportrap
 
 #水下门
-execute if block 90174 10 113 minecraft:crimson_button[powered=true] unless block 90179 8 101 air run setblock 90172 10 113 minecraft:magenta_glazed_terracotta[facing=west]
-execute if block 90172 10 113 minecraft:magenta_glazed_terracotta[facing=west] unless block 90179 8 101 air run setblock 90174 10 113 minecraft:warped_button[facing=west,face=floor]
-execute if block 90172 10 113 minecraft:magenta_glazed_terracotta[facing=west] unless block 90179 8 101 air run fill 90179 8 101 90179 6 102 minecraft:air destroy
+execute if block 90174 10 113 minecraft:crimson_button[powered=true] unless block 90179 8 101 water run setblock 90172 10 113 minecraft:magenta_glazed_terracotta[facing=west]
+execute if block 90172 10 113 minecraft:magenta_glazed_terracotta[facing=west] unless block 90179 8 101 water run setblock 90174 10 113 minecraft:warped_button[facing=west,face=floor]
+execute if block 90172 10 113 minecraft:magenta_glazed_terracotta[facing=west] unless block 90179 8 101 water run fill 90179 8 101 90179 6 102 minecraft:water destroy
 
 
 execute positioned 90164 13 99 if entity @a[tag=SEAPT,distance=..6.7] unless entity @n[tag=SEAch4_spawn,distance=0..1] positioned 90164 13 99 run function skyblock:sea/m/zombie_security
