@@ -36,6 +36,7 @@ execute if score @s rng1 matches 160 run scoreboard players set @n[tag=SEAnorman
 execute if score @s rng1 matches 160 run scoreboard players set @n[tag=SEAnorman] rng9 0
 
 execute positioned 90142 134 26 if entity @s[distance=20..] at @s run tp @s 90142 144 26
+execute at @s unless block ~ ~0.5 ~ air unless block ~ ~1.5 ~ air run tp @s 90142 135 26
 
 execute if score @s rng1 matches 160.. if score @s rng2 matches -5..-3 store result score @s rng5 run random value 1..24
 execute if score @s rng1 matches 160.. if score @s rng5 matches 1..8 run function skyblock:sea/e/ch5/boss5/move_jump
