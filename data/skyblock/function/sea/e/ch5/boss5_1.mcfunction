@@ -16,9 +16,9 @@ execute if score @s rng1 matches 50 as @n[tag=SEAfiona,x=90000,y=100,z=0,distanc
 execute if score @s rng1 matches 50 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if score SEA_ch5_event_fiona_favor rng1 matches 13..22 run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“这是他的……尸体？！你小心一点，这下我们必须得把他干掉了，你掩护我！”","color":"white","bold": false}]
 execute if score @s rng1 matches 50 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if score SEA_ch5_event_fiona_favor rng1 matches 23.. run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“那就是诺曼博士已经死了！所以我们现在面对的是尸变体，一定要小心！！”","color":"white","bold": false}]
 
-execute if score @s rng1 matches 50 run bossbar add 9066601 "神圣的昏星 - 诺曼 · 萨罗莫"
+execute if score @s rng1 matches 50 run bossbar add 9066601 "圣洁崇高的昏星 - 诺曼 · 萨罗莫"
 execute if score @s rng1 matches 50 run bossbar set minecraft:9066601 color red
-execute if score @s rng1 matches 50 run bossbar set minecraft:9066601 name "神圣的昏星 - 诺曼 · 萨罗莫"
+execute if score @s rng1 matches 50 run bossbar set minecraft:9066601 name "圣洁崇高的昏星 - 诺曼 · 萨罗莫"
 execute if score @s rng1 matches 50 run bossbar set minecraft:9066601 players @a[tag=SEAPT]
 execute if score @s rng1 matches 50 run bossbar set minecraft:9066601 style progress
 execute if score @s rng1 matches 50 run bossbar set minecraft:9066601 max 150
