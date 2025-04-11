@@ -15,4 +15,4 @@ execute if score @s[scores={rng3=1..8}] rng4 matches 2 at @s run data modify ent
 
 execute if score @s rng4 matches 3 at @s positioned 90142 134 26 as @n[type=marker,tag=SEA_boss5_marker,distance=45..] at @s run kill @s
 
-execute if score @s rng4 matches 20 run scoreboard players set @s rng4 0
+execute if score @s rng4 matches 20.. run scoreboard players set @s rng4 0
