@@ -202,8 +202,8 @@ lore=['{"text":"那个婊子养的，居然把德怀特的遗骨这样随意丢�
 item replace block 90148 129 113 container.3 with flow_banner_pattern[custom_data={sea_doc18:true},custom_name=\
 '{"text":"北部通风管道的笔记 - 瑞佛特","italic":true,"color":"dark_purple","italic":false}',\
 lore=['{"text":"我为什么 我想不起来自己为什么要来这里","color":"white","italic":false}','{"text":"是为了逃避邪教徒，根本不是为了进货","color":"white","italic":false}','{"text":"食物 不是为了食物 我为什么会变成这样","color":"white","italic":false}','{"text":"修理了但通风管道好吵","color":"white","italic":false}','{"text":"找不到原因 一直好吵","color":"white","italic":false}','{"text":"耳朵里好吵 脑袋里好吵 眼睛快要看不清了","color":"white","italic":false}']]
-item replace block 90081 122 145 container.13 with flow_banner_pattern[custom_data={sea_doc19:true},custom_name=\
-'{"text":"维修层空气循环系统控制室的笔记 - 越涵","italic":true,"color":"dark_purple","italic":false}',\
+item replace block 90075 128 144 container.14 with flow_banner_pattern[custom_data={sea_doc19:true},custom_name=\
+'{"text":"物资层大仓库维修室的笔记 - 越涵","italic":true,"color":"dark_purple","italic":false}',\
 lore=['{"text":"那些棕藤长得到处都是，有些还顺着通风系统爬进冷冻库了。","color":"white","italic":false}','{"text":"我看它们已经包裹了德怀特的遗骨。","color":"white","italic":false}','{"text":"不能放任这些东西乱长，诺曼已经警告过它们会制造毒气。","color":"white","italic":false}','{"text":"我想去关了通风系统，但麦迪逊老哥阻止了我。","color":"white","italic":false}']]
 
 item replace block 90117 137 142 container.16 with flow_banner_pattern[custom_data={sea_doc20:true},custom_name=\
