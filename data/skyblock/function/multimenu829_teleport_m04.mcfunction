@@ -3,6 +3,8 @@ execute unless entity @s[scores={SEAPT_mode=0..}] run scoreboard players set @s 
 scoreboard objectives add sea_setting_box_index dummy
 execute unless entity @s[scores={sea_setting_box_index=0..}] run scoreboard players set @s sea_setting_box_index 1
 
+tag @s remove NoMultiMenu
+tag @s remove SEAPT
 playsound minecraft:ui.button.click master @s ~ ~ ~ 0.3 1.4 0.4
 playsound minecraft:item.chorus_fruit.teleport master @s ~ ~ ~ 1.2 0.7 0.1
 particle minecraft:portal ~ ~1 ~ 0.5 0.6 0.5 0.2 60
@@ -25,5 +27,3 @@ execute if entity @a[tag=SEAPT] run function skyblock:sea/generate/preload/map_p
 gamemode adventure
 
 execute unless entity @a[x=89829,y=12,z=-165,dx=30,dy=20,dz=30] run kill @e[x=89829,y=12,z=-165,dx=30,dy=20,dz=30,tag=SEAmob]
-tag @s remove NoMultiMenu
-tag @s remove SEAPT
