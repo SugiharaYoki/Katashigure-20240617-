@@ -26,6 +26,7 @@ execute if items entity @s player.cursor redstone[custom_data={"sea_setting_box"
 execute if items entity @s player.cursor crossbow[custom_data={"sea_setting_box":true}] positioned 89843 16 -151 run function skyblock:sea/m/pillager2
 execute if items entity @s player.cursor iron_sword[custom_data={"sea_setting_box":true}] positioned 89843 16 -151 run function skyblock:sea/m/vindicator
 execute if items entity @s player.cursor leather_chestplate[custom_data={"sea_setting_box":true}] positioned 89843 16 -151 run function skyblock:sea/m/skeleton_shield
+execute if items entity @s player.cursor book[custom_data={"sea_setting_box":true}] positioned 89843 16 -151 run function skyblock:sea/m/evoker
 
 
 execute if items entity @s player.cursor breeze_rod[custom_data={"sea_setting_box":true}] run scoreboard players set @s sea_setting_box_index 131
