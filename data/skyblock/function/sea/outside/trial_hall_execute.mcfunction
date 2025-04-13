@@ -8,7 +8,7 @@ execute if items entity @s player.cursor string[custom_data={"sea_setting_box":t
 execute if items entity @s player.cursor stone_axe[custom_data={"sea_setting_box":true}] positioned 89843 16 -151 run function skyblock:sea/m/zombie_security
 
 
-
+clear @s *[custom_data={"sea_setting_box":true}]
 
 
 

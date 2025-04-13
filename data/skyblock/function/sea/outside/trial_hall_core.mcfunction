@@ -12,7 +12,6 @@ item replace block 89843 13 -163 container.20 with spectral_arrow 3
 item replace block 89843 13 -163 container.13 with disc_fragment_5 5
 
 
-function skyblock:sea/core20
 
 tag @a[x=89829,y=12,z=-165,dx=30,dy=20,dz=30,tag=!SEAPT] add Gaming
 tag @a[x=89829,y=12,z=-165,dx=30,dy=20,dz=30,tag=!SEAPT] add SEAPT
@@ -25,3 +24,4 @@ execute as @a[x=89829,y=12,z=-165,dx=30,dy=20,dz=30] at @s run function skyblock
 execute as @a[x=89829,y=12,z=-165,dx=30,dy=20,dz=30] at @s if items entity @s player.cursor *[custom_data={"sea_setting_box":true}] run function skyblock:sea/outside/trial_hall_execute
 
 
+function skyblock:sea/core20
