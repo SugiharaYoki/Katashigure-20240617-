@@ -16,3 +16,4 @@ execute at @s run particle minecraft:reverse_portal ~ ~1 ~ 0.5 0.6 0.5 0.2 60
 
 gamemode adventure
 
+scoreboard players set @s sea_setting_box_index 131

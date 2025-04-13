@@ -22,6 +22,8 @@ execute if items entity @s player.cursor green_dye[custom_data={"sea_setting_box
 execute if items entity @s player.cursor honeycomb[custom_data={"sea_setting_box":true}] positioned 89843 16 -151 run function skyblock:sea/m/bee
 
 
+execute if items entity @s player.cursor breeze_rod[custom_data={"sea_setting_box":true}] run scoreboard players set @s sea_setting_box_index 131
+execute if items entity @s player.cursor blaze_rod[custom_data={"sea_setting_box":true}] run scoreboard players set @s sea_setting_box_index 132
 
 
 
