@@ -26,4 +26,4 @@ gamemode adventure
 
 execute unless entity @a[x=89829,y=12,z=-165,dx=30,dy=20,dz=30] run kill @e[x=89829,y=12,z=-165,dx=30,dy=20,dz=30,tag=SEAmob]
 tag @s remove NoMultiMenu
-tag @s remove Gaming
+tag @s remove SEAPT
