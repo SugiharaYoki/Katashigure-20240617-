@@ -7,6 +7,6 @@ item replace entity @s container.22 with sculk_shrieker[custom_data={"sea_settin
 item replace entity @s container.24 with lectern[custom_data={"sea_setting_box":true},custom_name='{"text":"成就总览","italic":false,"color":"aqua"}',lore=['{"text":"查看你在《厄珀娅的悲歌》中所获得的全部进度成就。","color":"white","italic":false}','{"text":"成就的获取数量会打印在聊天区域。","color":"white","italic":false}']]
 
 
-execute unless entity @s[x=89829,y=12,z=-165,dx=30,dy=20,dz=30] run item replace entity @s[scores={sea_progress=3..}] container.18 with trial_spawner[custom_data={"sea_setting_box":true},custom_name='{"text":"试炼殿堂","italic":false,"color":"aqua"}',lore=['{"text":"查看你已经解锁的怪物图鉴。","color":"white","italic":false}','{"text":"","color":"white","italic":false}']]
+execute unless entity @s[x=89829,y=12,z=-165,dx=30,dy=20,dz=30] run item replace entity @s[scores={sea_progress=3..}] container.18 with trial_spawner[custom_data={"sea_setting_box":true},custom_name='{"text":"试炼殿堂","italic":false,"color":"aqua"}',lore=['{"text":"查看你已经解锁的怪物图鉴。","color":"white","italic":false}','{"text":"你可以在殿堂中与它们进行模拟战斗。","color":"white","italic":false}']]
 execute if entity @s[x=89829,y=12,z=-165,dx=30,dy=20,dz=30] run item replace entity @s[scores={sea_progress=3..}] container.18 with netherite_upgrade_smithing_template[custom_data={"sea_setting_box":true},custom_name='{"text":"退出试炼殿堂","italic":false,"color":"aqua"}',lore=['{"text":"回到初始待机间。","color":"white","italic":false}']]
 
