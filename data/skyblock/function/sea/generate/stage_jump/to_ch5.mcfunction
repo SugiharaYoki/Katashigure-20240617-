@@ -4,7 +4,6 @@ tp @a[x=90000,y=100,z=100,distance=..5000,scores={sea_progress=..11},gamemode=!s
 function skyblock:sea/generate/stage_jump/to_ch4_boss
 function skyblock:sea/generate/preload/map_prepare_ch5
 
-tp @a[tag=SEAPT] 90146 84 42 facing 90145 84 42
 
 
 scoreboard players add @a[tag=SEAPT] sea_i_emerald 50
