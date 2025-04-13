@@ -9,7 +9,7 @@ clear @s[gamemode=!creative] waxed_copper_block
 clear @s[gamemode=!creative] waxed_copper_bulb
 clear @s[gamemode=!creative] waxed_cut_copper_stairs
 clear @s[gamemode=!creative] slime_block
-clear @s[gamemode=!creative] string
+execute unless entity @s[x=89829,y=12,z=-165,dx=30,dy=20,dz=30] run clear @s[gamemode=!creative] string
 execute if items entity @s container.* blaze_powder at @s run function skyblock:sea/p/bomb
 clear @s[gamemode=!creative] blaze_powder
 clear @s[gamemode=!creative] heart_pottery_sherd
