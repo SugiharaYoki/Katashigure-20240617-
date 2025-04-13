@@ -36,6 +36,7 @@ execute if score @s rng1 matches 80 run scoreboard players set @n[tag=SEAnorman]
 execute if score @s rng1 matches 80 run scoreboard players set @n[tag=SEAnorman] rng7 0
 execute if score @s rng1 matches 80 run scoreboard players set @n[tag=SEAnorman] rng8 0
 execute if score @s rng1 matches 80 run scoreboard players set @n[tag=SEAnorman] rng9 0
+execute if score @s rng2 matches -5 run effect give @s instant_health 1 1 true
 
 execute positioned 90142 134 26 if entity @s[distance=20..] at @s run tp @s 90142 144 26
 execute at @s unless block ~ ~0.5 ~ air unless block ~ ~1.5 ~ air run tp @s 90142 135 26
