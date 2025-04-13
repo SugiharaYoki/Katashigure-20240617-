@@ -47,6 +47,7 @@ scoreboard players add SEA_ch5_event_EnteringPillar2 rng1 99999
 scoreboard players add SEA_ch5_event_EnteringPillar2 rng1 99999
 scoreboard players add SEA_ch5_event_EnteringPillar2 rng1 99999
 
+scoreboard players add SEA_ch5_event_building rng1 99999
 
 fill 90110 117 52 90109 115 52 air destroy
 
