@@ -235,3 +235,7 @@ execute positioned 90142 134 26 as @n[tag=SEAnorman,type=zombie_villager,distanc
 execute positioned 90142 134 26 as @n[type=breeze_wind_charge,distance=13..50] at @s run kill @s
 
 
+execute if score SEA_ch5_event_fiona_favor rng1 matches 26.. as @a[tag=SEAPT,advancements={skyblock:sea/doc/g28=false}] at @s run advancement grant @s only skyblock:sea/doc/g28
+
+
+

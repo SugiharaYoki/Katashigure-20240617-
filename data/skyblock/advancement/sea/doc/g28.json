@@ -1,0 +1,28 @@
+{
+    "display": {
+        "title": {
+            "text": "幼鹿",
+            "color": "gold",
+            "bold": true,
+            "italic": false
+        },
+        "description": {
+            "text": "使菲尔娜对你拥有极高的好感度。\n“她早就做好了必死的准备。她只想你能够代替她活下去。”",
+            "color": "gray",
+            "bold": false
+        },
+        "icon": {
+            "id": "minecraft:golden_hoe"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "sea": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:sea/doc/g27"
+}
