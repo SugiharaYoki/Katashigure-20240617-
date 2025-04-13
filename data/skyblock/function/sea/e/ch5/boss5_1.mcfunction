@@ -47,6 +47,7 @@ execute if score @s rng1 matches 160.. if score @s[scores={rng3=0}] rng2 matches
 execute if score @s rng1 matches 160.. if score @s rng2 matches -2..0 store result score @s rng3 run random value 1..5
 execute if score @s rng1 matches 160.. if score @s[scores={rng3=1..5}] rng2 matches 0.. run function skyblock:sea/e/ch5/boss5/attack_downfall
 
+execute if score @s rng1 matches 160.. if block ~ ~-0.5 ~ air at @s run function skyblock:sea/e/ch5/boss5/particle_insky
 
 execute positioned 90142 134 26 as @e[type=marker,tag=SEA_boss5_marker,distance=0..50] at @s run function skyblock:sea/e/ch5/boss5/lightning_anchor
 
