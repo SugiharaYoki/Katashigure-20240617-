@@ -11,3 +11,6 @@ execute as @e[type=marker] run function skyblock:decoration/main
 #toy
 execute as @e[tag=AzrielBossA_outgame] at @s run function skyblock:azr/outgame/boss1
 execute unless entity @e[tag=AzrielBossA_outgame] run function skyblock:azr/outgame/boss1_terminate
+
+#厄珀娅的悲歌 试炼殿堂
+execute if entity @a[x=89829,y=12,z=-165,dx=30,dy=20,dz=30] run function skyblock:sea/outside/trial_hall_core

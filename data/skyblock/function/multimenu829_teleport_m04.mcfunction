@@ -23,3 +23,5 @@ scoreboard players set @s MultiMenu 0
 execute if entity @a[tag=SEAPT] run function skyblock:sea/generate/preload/map_prepare_ch1_player
 
 gamemode adventure
+
+execute unless entity @a[x=89829,y=12,z=-165,dx=30,dy=20,dz=30] run kill @e[x=89829,y=12,z=-165,dx=30,dy=20,dz=30,tag=SEAmob]
