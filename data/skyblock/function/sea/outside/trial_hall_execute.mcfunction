@@ -18,6 +18,8 @@ execute if items entity @s player.cursor iron_axe[custom_data={"sea_setting_box"
 execute if items entity @s player.cursor leather[custom_data={"sea_setting_box":true}] positioned 89843 16 -151 run function skyblock:sea/m/husk
 execute if items entity @s player.cursor ender_pearl[custom_data={"sea_setting_box":true}] positioned 89843 16 -151 run function skyblock:sea/m/nightblind
 execute if items entity @s player.cursor echo_shard[custom_data={"sea_setting_box":true}] positioned 89843 16 -151 run function skyblock:sea/m/shadow
+execute if items entity @s player.cursor green_dye[custom_data={"sea_setting_box":true}] positioned 89843 16 -151 run function skyblock:sea/m/cave_spider
+execute if items entity @s player.cursor honeycomb[custom_data={"sea_setting_box":true}] positioned 89843 16 -151 run function skyblock:sea/m/bee
 
 
 
