@@ -84,6 +84,7 @@ execute if score @s rng1 matches 354..373 at @s positioned 90142 134 26 run scor
 
 
 
+execute if score @s rng1 matches 384 at @s unless entity @n[tag=SEAnorman] positioned 90142 134 26 run function skyblock:sea/m/unique/boss5_norman
 
 
 
