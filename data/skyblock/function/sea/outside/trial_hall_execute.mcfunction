@@ -12,6 +12,7 @@ execute if items entity @s player.cursor wooden_shovel[custom_data={"sea_setting
 execute if items entity @s player.cursor copper_ingot[custom_data={"sea_setting_box":true}] positioned 89843 16 -151 run function skyblock:sea/m/silverfish_big
 execute if items entity @s player.cursor bone[custom_data={"sea_setting_box":true}] positioned 89843 16 -151 run function skyblock:sea/m/skeleton
 execute if items entity @s player.cursor quartz[custom_data={"sea_setting_box":true}] positioned 89843 16 -151 run function skyblock:sea/m/skeleton_melee
+execute if items entity @s player.cursor feather[custom_data={"sea_setting_box":true}] positioned 89843 16 -151 run function skyblock:sea/m/drowned_small
 
 
 clear @s *[custom_data={"sea_setting_box":true}]
