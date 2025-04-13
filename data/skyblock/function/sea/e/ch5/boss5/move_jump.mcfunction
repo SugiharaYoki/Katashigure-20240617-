@@ -1,6 +1,6 @@
 scoreboard players add @s rng4 1
 
-execute if score @s[scores={rng5=4..8}] rng4 matches 2 unless block ~ ~-0.25 ~ air run summon marker ~ ~ ~ {Tags:["SEA_boss5_lightning_anchor"]}
+execute if score @s[scores={rng5=4..8}] rng4 matches 2 run summon marker ~ 135.0 ~ {Tags:["SEA_boss5_lightning_anchor"]}
 
 execute if score @s[scores={rng5=1..8}] rng4 matches 2 run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
 execute if score @s[scores={rng5=1}] rng4 matches 2 at @s positioned 0.0 0 0.0 run summon marker ^ ^0.2 ^-1.4 {Tags:["SEA_boss5_marker"]}
