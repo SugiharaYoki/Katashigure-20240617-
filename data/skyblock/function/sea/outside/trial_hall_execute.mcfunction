@@ -17,6 +17,7 @@ execute if items entity @s player.cursor fire_charge[custom_data={"sea_setting_b
 execute if items entity @s player.cursor iron_axe[custom_data={"sea_setting_box":true}] positioned 89843 16 -151 run function skyblock:sea/m/zombie_security2
 execute if items entity @s player.cursor leather[custom_data={"sea_setting_box":true}] positioned 89843 16 -151 run function skyblock:sea/m/husk
 execute if items entity @s player.cursor ender_pearl[custom_data={"sea_setting_box":true}] positioned 89843 16 -151 run function skyblock:sea/m/nightblind
+execute if items entity @s player.cursor echo_shard[custom_data={"sea_setting_box":true}] positioned 89843 16 -151 run function skyblock:sea/m/shadow
 
 
 
