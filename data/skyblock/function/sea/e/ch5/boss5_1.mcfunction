@@ -1,7 +1,7 @@
 scoreboard players add @s rng1 1
-scoreboard players add @s[scores={rng2=-20..-0}] rng2 1
+scoreboard players add @s[scores={rng2=-20..0}] rng2 1
 execute unless block ~ ~-0.5 ~ air run scoreboard players add @s[scores={rng2=..-21}] rng2 1
-execute unless score @s rng2 matches ..-99 run scoreboard players set @s rng2 -1
+execute unless score @s rng2 matches -99.. run scoreboard players set @s rng2 -1
 execute store result bossbar minecraft:9066601 value run data get entity @n[tag=SEAboss5] Health
 execute store result score @n[tag=SEAboss5] health run data get entity @n[tag=SEAboss5] Health
 
