@@ -13,7 +13,7 @@ item replace block 89843 13 -163 container.20 with spectral_arrow 3
 item replace block 89843 13 -163 container.13 with disc_fragment_5 5
 
 item replace block 89843 13 -163 container.18 with fire_charge[custom_name='{"text":"定时炸弹","italic":true,"color":"blue","italic":false}',lore=['{"text":"它会在你丢出去3秒后爆炸！","color":"white","italic":false}','{"text":"炸到自己的话，职业生涯就会结束了吧。","color":"white","italic":false}','{"text":"可用于破坏凝胶壁障与瓦罐。","color":"white","italic":false}']] 8
-item replace block 89843 13 -163 container.19 with tnt[custom_name='{"text":"可控地雷触发装置","italic":true,"color":"blue","italic":false}',lore=['{"text":"并不会在你丢出去后立刻爆炸。","color":"white","italic":false}','{"text":"放心，真的不会伤到友军！","color":"white","italic":false}','{"text":"请注意：丢出去之后可就没法拆卸了。","color":"white","italic":false}']] 1
+item replace block 89843 13 -163 container.19 with tnt[custom_name='{"text":"可控地雷触发装置","italic":true,"color":"blue","italic":false}',lore=['{"text":"并不会在你丢出去后立刻爆炸。","color":"white","italic":false}','{"text":"放心，真的不会伤到友军！","color":"white","italic":false}','{"text":"请注意：丢出去之后可就没法拆卸了。","color":"white","italic":false}']] 8
 
 
 tag @a[x=89829,y=12,z=-165,dx=30,dy=20,dz=30,tag=!SEAPT] add Gaming
