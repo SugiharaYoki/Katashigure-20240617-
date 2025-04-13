@@ -7,7 +7,7 @@ function skyblock:sea/generate/preload/map_prepare_ch1
 
 time set 13000t
 
-tp @a[distance=0..300] 90091.92 122.00 104.97 facing 90081.92 122.00 104.97
+tp @a[x=90000,y=100,z=100,distance=0..300] 90091.92 122.00 104.97 facing 90081.92 122.00 104.97
 
 #clear @a[tag=SEAPT]
 item replace entity @a[tag=SEAPT] armor.head with chainmail_helmet[custom_name='{"text":"电工安全帽","italic":false,"color":"red"}',custom_data={sea_safehat:true},attribute_modifiers=[{type:"generic.armor",slot:"head",id:"sea_armor:003_01",amount:1.0,operation:"add_value"},{type:"generic.knockback_resistance",slot:"head",id:"sea_armor:003_02",amount:0.1,operation:"add_value"}],unbreakable={}]
