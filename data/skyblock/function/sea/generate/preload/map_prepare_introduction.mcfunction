@@ -103,6 +103,7 @@ gamerule keepInventory true
 
 
 setblock 90060 103 129 minecraft:jukebox[has_record=true]{RecordItem:{id:"minecraft:music_disc_creator_music_box"}}
+tag @a remove SEAPT
 execute as @a[x=90060,y=102,z=140,distance=0..500,gamemode=!spectator] at @s run tag @s add SEAPT
 team add SEA
 team modify SEA collisionRule never

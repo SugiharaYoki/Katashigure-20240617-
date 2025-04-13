@@ -14,3 +14,4 @@ execute unless entity @e[tag=AzrielBossA_outgame] run function skyblock:azr/outg
 
 #厄珀娅的悲歌 试炼殿堂
 execute if entity @a[x=89829,y=12,z=-165,dx=30,dy=20,dz=30] run function skyblock:sea/outside/trial_hall_core
+
