@@ -36,6 +36,7 @@ scoreboard players add SEA_ch5_event_building_fiona sea_4temp1 99999
 scoreboard players add SEA_ch5_event_building_fiona rng1 99999
 scoreboard players add SEA_ch5_event_building_fiona sea_4temp2 99999
 scoreboard players add SEA_ch5_event_building_fiona sea_4temp6 99999
+scoreboard players add SEA_ch5_event_engineering_fiona rng1 99999
 scoreboard players add SEA_ch5_event_engineering_fiona sea_4temp2 99999
 scoreboard players add SEA_ch5_event_engineering_fiona sea_4temp6 99999
 
