@@ -14,7 +14,7 @@ item replace block 89843 13 -163 container.13 with disc_fragment_5 5
 
 function skyblock:sea/core20
 
-tag @a[x=89829,y=12,z=-165,dx=30,dy=20,dz=30,tag=!SEAPT] add SEAPT
 tag @a[x=89829,y=12,z=-165,dx=30,dy=20,dz=30,tag=!SEAPT] add NoMultiMenu
-execute as @a at @s unless entity @s[x=89829,y=12,z=-165,dx=30,dy=20,dz=30,tag=SEAPT] run tag @s remove SEAPT
+tag @a[x=89829,y=12,z=-165,dx=30,dy=20,dz=30,tag=!SEAPT] add SEAPT
 execute as @a at @s unless entity @s[x=89829,y=12,z=-165,dx=30,dy=20,dz=30,tag=SEAPT] run tag @s remove NoMultiMenu
+execute as @a at @s unless entity @s[x=89829,y=12,z=-165,dx=30,dy=20,dz=30,tag=SEAPT] run tag @s remove SEAPT
