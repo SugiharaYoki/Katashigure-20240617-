@@ -6,6 +6,12 @@ execute if items entity @s player.cursor shield[custom_data={"sea_setting_box":t
 execute if items entity @s player.cursor arrow[custom_data={"sea_setting_box":true}] positioned 89843 16 -151 run function skyblock:sea/m/pillager
 execute if items entity @s player.cursor string[custom_data={"sea_setting_box":true}] positioned 89843 16 -151 run function skyblock:sea/m/spider
 execute if items entity @s player.cursor stone_axe[custom_data={"sea_setting_box":true}] positioned 89843 16 -151 run function skyblock:sea/m/zombie_security
+execute if items entity @s player.cursor gray_dye[custom_data={"sea_setting_box":true}] positioned 89843 16 -151 run function skyblock:sea/m/silverfish
+execute if items entity @s player.cursor magma_cream[custom_data={"sea_setting_box":true}] positioned 89843 16 -151 run function skyblock:sea/m/magma
+execute if items entity @s player.cursor wooden_shovel[custom_data={"sea_setting_box":true}] positioned 89843 16 -151 run function skyblock:sea/m/zombie_cook
+execute if items entity @s player.cursor copper_ingot[custom_data={"sea_setting_box":true}] positioned 89843 16 -151 run function skyblock:sea/m/silverfish_big
+execute if items entity @s player.cursor bone[custom_data={"sea_setting_box":true}] positioned 89843 16 -151 run function skyblock:sea/m/skeleton
+execute if items entity @s player.cursor quartz[custom_data={"sea_setting_box":true}] positioned 89843 16 -151 run function skyblock:sea/m/skeleton_melee
 
 
 clear @s *[custom_data={"sea_setting_box":true}]
