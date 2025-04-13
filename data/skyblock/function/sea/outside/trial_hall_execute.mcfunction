@@ -20,6 +20,8 @@ execute if items entity @s player.cursor ender_pearl[custom_data={"sea_setting_b
 execute if items entity @s player.cursor echo_shard[custom_data={"sea_setting_box":true}] positioned 89843 16 -151 run function skyblock:sea/m/shadow
 execute if items entity @s player.cursor green_dye[custom_data={"sea_setting_box":true}] positioned 89843 16 -151 run function skyblock:sea/m/cave_spider
 execute if items entity @s player.cursor honeycomb[custom_data={"sea_setting_box":true}] positioned 89843 16 -151 run function skyblock:sea/m/bee
+execute if items entity @s player.cursor diamond_chestplate[custom_data={"sea_setting_box":true}] positioned 89843 16 -151 run function skyblock:sea/m/zombie_knight
+execute if items entity @s player.cursor diamond_horse_armor[custom_data={"sea_setting_box":true}] positioned 89843 16 -151 run function skyblock:sea/m/zombie_horse
 
 
 execute if items entity @s player.cursor breeze_rod[custom_data={"sea_setting_box":true}] run scoreboard players set @s sea_setting_box_index 131
