@@ -12,7 +12,7 @@ execute if score @s rng1 matches 43 at @s run tellraw @a[tag=SEAPT] [{"text":"�
 
 execute if score @s rng1 matches 73 at @s run playsound entity.pillager.ambient neutral @a ~ ~ ~ 1 1.15
 execute if score @s rng1 matches 73 at @s run tellraw @a[tag=SEAPT] [{"text":"邪教徒弩手：","color":"green","bold": true},{"text":"\n“你的恩情我终生不会忘记，无论你最后想要做什么，都祝你成功！”","color":"white","bold": false}]
-execute if score @s rng1 matches 80 at @s run advancement grant @a[tag=SEAPT] only skyblock:sea/doc/g27
+execute if score @s rng1 matches 80 at @s run give @a[tag=SEAPT] mojang_banner_pattern[custom_data={sea_docg27:true}]
 
 execute if score @s rng1 matches 173 at @s run playsound entity.pillager.ambient neutral @a ~ ~ ~ 1 1.15
 execute if score @s rng1 matches 173 at @s run tellraw @a[tag=SEAPT] [{"text":"邪教徒弩手：","color":"green","bold": true},{"text":"\n“都是那个叫诺玛的女人坏了事，原本钻井平台的工人和咱们教徒都相安无事。”","color":"white","bold": false}]
