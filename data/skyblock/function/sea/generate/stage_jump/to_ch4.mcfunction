@@ -4,7 +4,6 @@ tp @a[x=90000,y=100,z=100,distance=..5000,scores={sea_progress=..8},gamemode=!sp
 function skyblock:sea/generate/stage_jump/to_ch3_boss
 function skyblock:sea/generate/preload/map_prepare_ch4
 
-tp @a[tag=SEAPT] 90141.56 19.00 88.99 facing 90142.56 19.00 88.99
 
 scoreboard players set @n[tag=sc] sea_4temp2 0
 
