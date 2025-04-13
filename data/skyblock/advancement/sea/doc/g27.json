@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "死神",
+            "color": "gold",
+            "bold": true,
+            "italic": false
+        },
+        "description": {
+            "text": "获得邪教徒弩手的感谢。\n“你对他人的每一次饶恕，都将化作命运对你的宽恕。”",
+            "color": "gray"
+        },
+        "icon": {
+            "id": "minecraft:golden_hoe"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "sea": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:sea/doc/g11"
+}
