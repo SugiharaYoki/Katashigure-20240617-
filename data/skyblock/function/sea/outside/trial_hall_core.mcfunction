@@ -21,6 +21,7 @@ execute as @a at @s unless entity @s[x=89829,y=12,z=-165,dx=30,dy=20,dz=30,tag=S
 
 execute as @a[x=89829,y=12,z=-165,dx=30,dy=20,dz=30] run effect give @s regeneration 13 4 true
 
-execute as @a[x=89829,y=12,z=-165,dx=30,dy=20,dz=30] at @s if items entity @s player.cursor netherite_upgrade_smithing_template[custom_data={"sea_setting_box":true}] run function skyblock:multimenu829_teleport_m04
+execute as @a[x=89829,y=12,z=-165,dx=30,dy=20,dz=30] at @s run function skyblock:sea/outside/trial_hall_index
+execute as @a[x=89829,y=12,z=-165,dx=30,dy=20,dz=30] at @s if items entity @s player.cursor *[custom_data={"sea_setting_box":true}] run function skyblock:sea/outside/trial_hall_execute
 
 
