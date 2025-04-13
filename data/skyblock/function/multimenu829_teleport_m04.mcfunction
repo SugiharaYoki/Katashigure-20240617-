@@ -3,7 +3,7 @@ execute unless entity @s[scores={SEAPT_mode=0..}] run scoreboard players set @s 
 scoreboard objectives add sea_setting_box_index dummy
 execute unless entity @s[scores={sea_setting_box_index=0..}] run scoreboard players set @s sea_setting_box_index 1
 
-tag @s remove NoMultiMenu
+tag @s remove Gaming
 tag @s remove SEAPT
 playsound minecraft:ui.button.click master @s ~ ~ ~ 0.3 1.4 0.4
 playsound minecraft:item.chorus_fruit.teleport master @s ~ ~ ~ 1.2 0.7 0.1
