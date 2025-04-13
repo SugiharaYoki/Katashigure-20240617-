@@ -12,7 +12,14 @@ execute if score @s rng1 matches 2 run summon breeze_wind_charge ~ ~0.5 ~ {Motio
 execute if score @s rng1 matches 5 run data modify entity @s NoAI set value 0b
 execute if score @s rng1 matches 5 run data modify entity @s Invulnerable set value 0b
 
-execute if score @s rng1 matches 75 as @a[tag=SEAPT] at @s run playsound minecraft:app1.caradbolg music @s ~ ~ ~ 1 1
+execute if score @s rng1 matches 73 run scoreboard players set SEAmusic rng1 1
+execute if score @s rng1 matches 75.. run scoreboard players add SEAmusic rng1 1
+execute if score SEAmusic rng1 matches 400 as @a[tag=SEAPT] at @s run playsound minecraft:app1.caradbolg music @s ~ ~ ~ 1 1.0
+execute if score SEAmusic rng1 matches 400 as @r[tag=SEAPT] at @s as @a[tag=!SEAPT,gamemode=spectator,distance=0..200] run playsound minecraft:app1.caradbolg music @s ~ ~ ~ 1 1.0
+execute if score SEAmusic rng1 matches 400.. run scoreboard players set SEAmusic rng1 0
+
+
+
 execute if score @s rng1 matches 80 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
 execute if score @s rng1 matches 80 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if score SEA_ch5_event_fiona_favor rng1 matches ..12 run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“操他妈的，居然是诺曼博士。”","color":"white","bold": false}]
 execute if score @s rng1 matches 80 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if score SEA_ch5_event_fiona_favor rng1 matches 13..22 run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“诺曼博士，我就知道他还……等等、？！”","color":"white","bold": false}]
