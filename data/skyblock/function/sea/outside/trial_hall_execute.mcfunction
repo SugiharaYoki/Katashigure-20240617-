@@ -13,6 +13,7 @@ execute if items entity @s player.cursor copper_ingot[custom_data={"sea_setting_
 execute if items entity @s player.cursor bone[custom_data={"sea_setting_box":true}] positioned 89843 16 -151 run function skyblock:sea/m/skeleton
 execute if items entity @s player.cursor quartz[custom_data={"sea_setting_box":true}] positioned 89843 16 -151 run function skyblock:sea/m/skeleton_melee
 execute if items entity @s player.cursor feather[custom_data={"sea_setting_box":true}] positioned 89843 16 -151 run function skyblock:sea/m/drowned_small
+execute if items entity @s player.cursor *[custom_data={"sea_setting_box":true}] positioned 89843 16 -151 run particle minecraft:trial_omen ~ ~1 ~ 1 1 1 0.05 13
 execute if items entity @s player.cursor *[custom_data={"sea_setting_box":true}] positioned 89843 16 -151 run particle minecraft:ominous_spawning ~ ~1 ~ 0.3 5 0.3 0 13
 
 clear @s *[custom_data={"sea_setting_box":true}]
