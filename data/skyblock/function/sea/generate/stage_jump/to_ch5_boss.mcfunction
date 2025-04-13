@@ -36,6 +36,8 @@ scoreboard players add SEA_ch5_event_building_fiona sea_4temp1 99999
 scoreboard players add SEA_ch5_event_building_fiona rng1 99999
 scoreboard players add SEA_ch5_event_building_fiona sea_4temp2 99999
 scoreboard players add SEA_ch5_event_building_fiona sea_4temp6 99999
+scoreboard players add SEA_ch5_event_engineering_fiona sea_4temp2 99999
+scoreboard players add SEA_ch5_event_engineering_fiona sea_4temp6 99999
 
 scoreboard players add SEA_ch5_event_EnteringPillar2 rng1 99999
 scoreboard players add SEA_ch5_event_EnteringPillar2 rng2 99999
@@ -43,6 +45,7 @@ scoreboard players add SEA_ch5_event_EnteringPillar2 rng1 99999
 scoreboard players add SEA_ch5_event_EnteringPillar2 rng1 99999
 scoreboard players add SEA_ch5_event_EnteringPillar2 rng1 99999
 scoreboard players add SEA_ch5_event_EnteringPillar2 rng1 99999
+
 
 fill 90110 117 52 90109 115 52 air destroy
 
