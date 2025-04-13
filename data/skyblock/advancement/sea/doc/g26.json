@@ -8,7 +8,8 @@
         },
         "description": {
             "text": "将不死骑士淹死。\n“这是游戏机制，孩子。”",
-            "color": "gray"
+            "color": "gray",
+            "bold": false
         },
         "icon": {
             "id": "minecraft:iron_hoe"

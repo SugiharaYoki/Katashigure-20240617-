@@ -8,7 +8,8 @@
         },
         "description": {
             "text": "与活着的法莫洛斯医生相遇。\n“此刻，我将荣耀传承予你”。",
-            "color": "gray"
+            "color": "gray",
+            "bold": false
         },
         "icon": {
             "id": "minecraft:golden_hoe"

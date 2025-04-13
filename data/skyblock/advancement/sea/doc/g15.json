@@ -8,7 +8,8 @@
         },
         "description": {
             "text": "在4分钟之内完成第三章。\n“无论自己跑得多快，都救不回来那些人。”",
-            "color": "gray"
+            "color": "gray",
+            "bold": false
         },
         "icon": {
             "id": "minecraft:diamond_hoe"

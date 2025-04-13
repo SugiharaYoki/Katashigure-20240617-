@@ -8,7 +8,8 @@
         },
         "description": {
             "text": "完成越涵委托的支线任务。\n“很抱歉，宿舍楼的小队已经全灭了。”",
-            "color": "gray"
+            "color": "gray",
+            "bold": false
         },
         "icon": {
             "id": "minecraft:golden_hoe"

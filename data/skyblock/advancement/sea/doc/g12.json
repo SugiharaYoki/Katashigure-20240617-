@@ -8,7 +8,8 @@
         },
         "description": {
             "text": "用炸弹将炽烈球体炸至灰飞烟灭。\n“以暴制暴”。",
-            "color": "gray"
+            "color": "gray",
+            "bold": false
         },
         "icon": {
             "id": "minecraft:iron_hoe"

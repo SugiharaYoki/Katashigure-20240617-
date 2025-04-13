@@ -8,7 +8,8 @@
         },
         "description": {
             "text": "解开维修层饮用水房的密码。\n“二进制机器正在制造Bug”。",
-            "color": "gray"
+            "color": "gray",
+            "bold": false
         },
         "icon": {
             "id": "minecraft:iron_hoe"

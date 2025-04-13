@@ -8,7 +8,8 @@
         },
         "description": {
             "text": "目睹法莫洛斯被地线的电流攻击。\n“只差一点……他就自杀成功了。”",
-            "color": "gray"
+            "color": "gray",
+            "bold": false
         },
         "icon": {
             "id": "minecraft:iron_hoe"

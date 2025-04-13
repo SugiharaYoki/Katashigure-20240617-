@@ -8,7 +8,8 @@
         },
         "description": {
             "text": "在第一章获得定时炸弹。\n“你一定是见过史丹尼舵长了。”",
-            "color": "gray"
+            "color": "gray",
+            "bold": false
         },
         "icon": {
             "id": "minecraft:iron_hoe"

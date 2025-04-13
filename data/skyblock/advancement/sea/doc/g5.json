@@ -8,7 +8,8 @@
         },
         "description": {
             "text": "从越涵手中获得免费的苹果。\n“除非天塌了”。",
-            "color": "gray"
+            "color": "gray",
+            "bold": false
         },
         "icon": {
             "id": "minecraft:iron_hoe"

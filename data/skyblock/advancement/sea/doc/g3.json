@@ -8,7 +8,8 @@
         },
         "description": {
             "text": "我并非通过命星的力量起死回生。\n尝试从记忆中找寻答案的话，\n我会发现自己回到了过去。\n“本不该存在的，无从抵达的过去”。",
-            "color": "gray"
+            "color": "gray",
+            "bold": false
         },
         "icon": {
             "id": "minecraft:stone_hoe"

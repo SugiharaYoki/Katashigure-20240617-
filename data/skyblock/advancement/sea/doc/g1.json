@@ -8,7 +8,8 @@
         },
         "description": {
             "text": "在第一章的开头拒绝进入维修层。",
-            "color": "gray"
+            "color": "gray",
+            "bold": false
         },
         "icon": {
             "id": "minecraft:stone_hoe"

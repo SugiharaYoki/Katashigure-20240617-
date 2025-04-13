@@ -8,7 +8,8 @@
         },
         "description": {
             "text": "获得邪教徒弩手的感谢。\n“你对他人的每一次饶恕，都将化作命运对你的宽恕。”",
-            "color": "gray"
+            "color": "gray",
+            "bold": false
         },
         "icon": {
             "id": "minecraft:golden_hoe"

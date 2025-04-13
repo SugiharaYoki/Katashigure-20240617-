@@ -8,7 +8,8 @@
         },
         "description": {
             "text": "从宿舍楼归来后，不忘记联系玛瑞莲。\n“我差点以为你死在宿舍楼里了”。",
-            "color": "gray"
+            "color": "gray",
+            "bold": false
         },
         "icon": {
             "id": "minecraft:iron_hoe"
