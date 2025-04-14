@@ -14,8 +14,8 @@ execute if score @s rng1 matches 70.. as @s at @s run tp @s ~ 135.0 ~
 
 execute if score @s rng1 matches 72.. run particle small_flame ~ ~ ~ 0.3 0.05 0.3 0.02 9
 
-execute if score @s rng1 matches 102 run particle explosion ~ ~ ~ 0 0 0 0 1
-execute if score @s rng1 matches 102 run playsound entity.generic.explode hostile @a ~ ~ ~ 0.8 1.3
+execute if score @s rng1 matches 102 run particle explosion ~ ~0.3 ~ 0.3 0.3 0.3 0 3
+execute if score @s rng1 matches 102 run playsound entity.generic.explode hostile @a ~ ~0.3 ~ 0.8 1.3
 execute if score @s rng1 matches 102 as @a[tag=SEAPT,distance=..1] at @s run damage @s 4 explosion
 execute if score @s rng1 matches 102 as @a[tag=SEAPT,distance=..1.4] at @s run damage @s 3 explosion
 execute if score @s rng1 matches 102 as @a[tag=SEAPT,distance=..1.8] at @s run damage @s 1 explosion
