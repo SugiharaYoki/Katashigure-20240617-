@@ -69,7 +69,7 @@ execute positioned 90142 134 26 as @n[type=#illager,distance=0..50,type=pillager
 execute positioned 90142 134 26 as @n[type=#illager,distance=0..50,type=vindicator] at @s unless entity @n[tag=SEAboss5,distance=..8] run function skyblock:sea/e/ch5/boss5/npc_help_quit
 execute if score @s rng1 matches 160.. if score @s rng9 matches 1 positioned 90142 134 26 as @e[type=#illager,distance=0..50,limit=3,sort=random] at @s run function skyblock:sea/e/ch5/boss5/npc_help_keep
 
-execute positioned 90142 134 26 as @n[type=#illager,distance=..200,type=vindicator] at @s if entity @n[tag=SEAboss5,distance=9..] run effect give @a[distance=0..2] resistance 1 5 true
+execute positioned 90142 134 26 as @n[distance=..200,type=vindicator] at @s if entity @n[tag=SEAboss5,distance=9..] run effect give @a[distance=0..2] resistance 1 4 true
 
 execute if score @s rng1 matches 560 positioned 90125 135 23 run function skyblock:sea/e/ch5/boss5/npc_help_summon_1
 #execute if score @s rng1 matches 560.. positioned 90125 135 23 unless entity @n[tag=SEAboss5] run function skyblock:sea/e/ch5/boss5/npc_help_quit
