@@ -16,3 +16,4 @@ execute if score @s rng2 matches -140 run playsound entity.zombie_villager.cure 
 execute if score @s rng2 matches -140 run summon lightning_bolt
 
 execute if score @s rng2 matches -140 run data modify entity @s Invulnerable set value 0b
+execute if score @s rng2 matches -139 run scoreboard players set @s rng2 -10
