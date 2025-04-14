@@ -1,1 +1,1 @@
-damage @s 1 arrow by @n[tag=SEAboss5]
+damage @s 3 arrow by @n[tag=SEAboss5]
