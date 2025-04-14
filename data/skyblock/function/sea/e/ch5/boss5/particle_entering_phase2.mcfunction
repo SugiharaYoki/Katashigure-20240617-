@@ -1,9 +1,12 @@
+execute if score @s rng2 matches -240 run kill @e[tag=SEA_boss5_marker,distance=..200]
+execute if score @s rng2 matches -240 run scoreboard players set @s rng4 0
+execute if score @s rng2 matches -240 run scoreboard players set @s rng5 0
 execute if score @s rng2 matches -240 run data modify entity @s Invulnerable set value 1b
 
-execute if score @s rng2 matches -220..-110 run particle crimson_spore ~ ~1 ~ 2 2 2 0.05 30
-execute if score @s rng2 matches -180..-110 run particle crimson_spore ~ ~1 ~ 5 5 5 0.05 50
-execute if score @s rng2 matches -220..-110 run particle crimson_spore ~ ~1 ~ 7 7 7 0.05 30
-execute if score @s rng2 matches -220..-110 run particle small_flame ~ ~1 ~ 2 2 2 0.05 30
+execute if score @s rng2 matches -220..-110 run particle crimson_spore ~ ~0.2 ~ 1 0.3 1 0.05 20
+execute if score @s rng2 matches -180..-110 run particle crimson_spore ~ ~0.2 ~ 3 0.3 3 0.05 10
+execute if score @s rng2 matches -220..-110 run particle crimson_spore ~ ~0.2 ~ 7 0.3 7 0.05 50
+execute if score @s rng2 matches -220..-110 run particle small_flame ~ ~0.2 ~ 2 0.3 2 0.05 30
 execute if score @s rng2 matches -110 run particle flame ~ ~1 ~ 0 0 0 0.08 200
 execute if score @s rng2 matches -110 run particle flame ~ ~1 ~ 0 0 0 0.16 200
 execute if score @s rng2 matches -110 run particle flame ~ ~1 ~ 0 0 0 0.32 200
