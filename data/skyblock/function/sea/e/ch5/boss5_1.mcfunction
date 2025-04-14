@@ -64,7 +64,7 @@ execute positioned 90142 134 26 as @e[type=marker,tag=SEA_boss5_attack_rail,dist
 
 execute if score @s rng1 matches 160.. store result score @s rng9 run random value 1..40
 execute positioned 90142 134 26 as @n[type=#illager,distance=0..50,tag=!SEAboss5_npc_helper] at @s run function skyblock:sea/e/ch5/boss5/npc_help
-execute if score @s rng1 matches 160.. if score @s rng9 matches 1 positioned 90142 134 26 as @e[type=#illager,distance=0..50] at @s run function skyblock:sea/e/ch5/boss5/npc_help_keep
+execute if score @s rng1 matches 160.. if score @s rng9 matches 1 positioned 90142 134 26 as @e[type=#illager,distance=0..50,limit=3,sort=random] at @s run function skyblock:sea/e/ch5/boss5/npc_help_keep
 
 
 execute if score @s rng1 matches 560 positioned 90125 135 23 run function skyblock:sea/e/ch5/boss5/npc_help_summon_1
