@@ -5,3 +5,4 @@ tag @s add SEAboss5_npc_helper
 tag @s add SEAmob_surrended
 tag @s add SEAnpc
 data modify entity @s Invulnerable set value 0b
+attribute @s[type=vindicator] generic.attack_damage base set 2
