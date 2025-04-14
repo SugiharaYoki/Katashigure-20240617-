@@ -1,7 +1,7 @@
 scoreboard players add @s rng1 1
 scoreboard players add @s[scores={rng2=-20..0}] rng2 1
 execute unless block ~ ~-0.5 ~ air run scoreboard players add @s[scores={rng2=..-21}] rng2 1
-execute unless score @s rng2 matches -99.. run scoreboard players set @s rng2 -6
+execute unless score @s rng2 matches -9999.. run scoreboard players set @s rng2 -6
 execute store result bossbar minecraft:9066601 value run data get entity @n[tag=SEAboss5] Health
 execute store result score @n[tag=SEAboss5] health run data get entity @n[tag=SEAboss5] Health
 
@@ -75,7 +75,7 @@ execute if score @s rng1 matches 560 positioned 90125 135 23 run function skyblo
 #execute if score @s rng1 matches 560.. positioned 90125 135 23 unless entity @n[tag=SEAboss5] run function skyblock:sea/e/ch5/boss5/npc_help_quit
 
 
-
+execute if score @s rng2 matches -240..-100 run function skyblock:sea/e/ch5/boss5/particle_entering_phase2
 
 
 

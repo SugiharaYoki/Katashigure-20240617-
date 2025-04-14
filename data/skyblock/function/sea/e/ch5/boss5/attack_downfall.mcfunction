@@ -15,3 +15,4 @@ execute if score @s rng2 matches 16.. at @s[tag=!Phase2] unless block ~ ~-0.7 ~ 
 execute if score @s rng2 matches 16.. at @s[tag=Phase2] unless block ~ ~-0.7 ~ air run scoreboard players set @s rng2 -40
 
 
+execute if score @s rng2 matches 16.. at @s[tag=!Phase2,scores={health=..320}] unless block ~ ~-0.7 ~ air run scoreboard players set @s rng2 -240
