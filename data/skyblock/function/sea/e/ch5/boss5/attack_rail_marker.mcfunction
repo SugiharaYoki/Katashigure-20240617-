@@ -8,7 +8,8 @@ execute if score @s rng1 matches 3..70 as @s at @s[scores={rng2=3}] run tp @s ^ 
 execute if score @s rng1 matches 3..70 as @s at @s[scores={rng2=4}] run tp @s ^-0.26 ^ ^0.26 facing ^-0.5 ^ ^0.5
 execute if score @s rng1 matches 3..70 as @s at @s[scores={rng2=5}] run tp @s ^-0.52 ^ ^0.26 facing ^-0.8 ^ ^0.5
 
-execute if score @s rng1 matches 90.. as @s at @s run tp @s ^ ^ ^0.26 facing entity @p[tag=SEAPT]
+
+execute if score @s rng1 matches 90.. as @s at @s positioned over world_surface run tp @s ^ ^ ^0.26 facing entity @p[tag=SEAPT]
 
 execute if score @s rng1 matches 142.. run particle small_flame ~ ~ ~ 0.3 0.05 0.3 0.02 9
 
