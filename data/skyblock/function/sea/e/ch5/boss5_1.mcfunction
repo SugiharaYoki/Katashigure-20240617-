@@ -66,6 +66,7 @@ execute positioned 90142 134 26 as @n[type=#illager,distance=0..50,tag=!SEAboss5
 
 
 execute if score @s rng1 matches 560 positioned 90125 135 23 run function skyblock:sea/e/ch5/boss5/npc_help_summon_1
+execute if score @s rng1 matches 560.. positioned 90125 135 23 unless entity @n[tag=SEAboss5] run function skyblock:sea/e/ch5/boss5/npc_help_quit
 
 
 
