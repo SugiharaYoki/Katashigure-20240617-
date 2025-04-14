@@ -63,3 +63,14 @@ execute positioned 90142 134 26 as @e[type=marker,tag=SEA_boss5_lightning_anchor
 execute positioned 90142 134 26 as @e[type=marker,tag=SEA_boss5_attack_rail,distance=0..50] at @s run function skyblock:sea/e/ch5/boss5/attack_rail_marker
 
 execute positioned 90142 134 26 as @n[type=#illager,distance=0..50,tag=!SEAboss5_npc_helper] at @s run function skyblock:sea/e/ch5/boss5/npc_help
+
+
+execute if score @s rng1 matches 560 positioned 90125 135 23 run function skyblock:sea/e/ch5/boss5/npc_help_summon_1
+
+
+
+
+
+
+
+

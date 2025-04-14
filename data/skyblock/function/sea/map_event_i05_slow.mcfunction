@@ -237,5 +237,8 @@ execute positioned 90142 134 26 as @n[type=breeze_wind_charge,distance=13..50] a
 
 execute if score SEA_ch5_event_fiona_favor rng1 matches 26.. as @a[tag=SEAPT,advancements={skyblock:sea/doc/g28=false}] at @s run give @s mojang_banner_pattern[custom_data={sea_docg28:true}]
 
+execute if entity @a[tag=SEAPT,scores={SEA_ch5_event_illager_killed=1..}] run scoreboard players remove SEA_ch5_event_illager_count rng1 1
+execute if entity @a[tag=SEAPT,scores={SEA_ch5_event_illager_killed=1..}] run scoreboard players reset @a SEA_ch5_event_illager_killed
+
 
 

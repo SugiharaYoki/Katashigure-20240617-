@@ -278,6 +278,9 @@ scoreboard players set SEA_ch5_event_fiona_favor rng1 0
 scoreboard players set SEA_ch5_event_building rng1 0
 scoreboard players set SEA_ch5_event_building rng2 0
 scoreboard players set SEA_ch5_event_building rng3 0
+scoreboard objectives add SEA_ch5_event_illager_killed minecraft.killed:minecraft.pillager
+scoreboard players set @a SEA_ch5_event_illager_killed 0
+scoreboard players set SEA_ch5_event_illager_count rng1 100
 scoreboard players set SEA_chg_true_end sea_4temp1 0
 
 fill 90105 93 57 90105 94 57 minecraft:magma_block

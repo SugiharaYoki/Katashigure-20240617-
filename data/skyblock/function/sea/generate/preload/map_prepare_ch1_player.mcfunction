@@ -32,6 +32,8 @@ scoreboard players set @s sea_shielding_3 0
 scoreboard players set @s SEA_pounce_charge 0
 scoreboard players set @s sea_killmob 0
 
+scoreboard players set @s SEA_ch5_event_illager_killed 0
+
 function skyblock:pvp/skywar/system/removeallmd
 
 tag @s remove sea_ch3_badend
