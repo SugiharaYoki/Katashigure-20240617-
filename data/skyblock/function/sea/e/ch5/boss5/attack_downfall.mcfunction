@@ -11,8 +11,8 @@ execute if score @s rng2 matches 16.. at @s if block ~ ~-0.7 ~ air run tp @s ~ ~
 execute if score @s rng2 matches 16.. at @s unless block ~ ~-0.7 ~ air run particle explosion_emitter ~ ~0.5 ~ 0.5 0.2 0.5 0.3 3
 execute if score @s rng2 matches 16.. at @s unless block ~ ~-0.7 ~ air run playsound entity.generic.explode hostile @a ~ ~ ~ 1 1.12
 execute if score @s rng2 matches 16.. at @s unless block ~ ~-0.7 ~ air run summon breeze_wind_charge ~ ~0.5 ~ {Motion:[0.0,-1.0,0.0]}
+execute if score @s rng2 matches 16.. at @s[tag=!Phase2,scores={health=..320}] unless block ~ ~-0.7 ~ air run scoreboard players set @s rng2 -240
 execute if score @s rng2 matches 16.. at @s[tag=!Phase2] unless block ~ ~-0.7 ~ air run scoreboard players set @s rng2 -48
 execute if score @s rng2 matches 16.. at @s[tag=Phase2] unless block ~ ~-0.7 ~ air run scoreboard players set @s rng2 -40
 
 
-execute if score @s rng2 matches 16.. at @s[tag=!Phase2,scores={health=..320}] unless block ~ ~-0.7 ~ air run scoreboard players set @s rng2 -240
