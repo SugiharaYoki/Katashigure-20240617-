@@ -6,3 +6,4 @@ tag @s add SEAmob_surrended
 tag @s add SEAnpc
 data modify entity @s Invulnerable set value 0b
 attribute @s[type=vindicator] generic.attack_damage base set 2
+attribute @s[type=vindicator] generic.movement_speed base set 0.4
