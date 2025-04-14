@@ -1,0 +1,1 @@
+damage @s[tag=SEAboss5_npc_helper] 1 arrow by @n[tag=SEAboss5]
