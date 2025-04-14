@@ -3,4 +3,5 @@ execute if entity @s[tag=!SEAboss5_npc_helper,type=pillager] run item replace en
 execute if entity @s[tag=!SEAboss5_npc_helper,type=vindicator] run item replace entity @s weapon.mainhand with iron_sword
 tag @s add SEAboss5_npc_helper
 tag @s add SEAmob_surrended
+tag @s add SEAnpc
 data modify entity @s Invulnerable set value 0b
