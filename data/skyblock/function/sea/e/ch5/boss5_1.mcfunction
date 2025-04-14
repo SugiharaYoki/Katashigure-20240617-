@@ -77,7 +77,7 @@ execute if score @s rng1 matches 560 positioned 90125 135 23 run function skyblo
 
 execute if score @s rng2 matches -240..-100 run function skyblock:sea/e/ch5/boss5/particle_entering_phase2
 
-
+effect give @s slow_falling 5 0 true
 
 
 
