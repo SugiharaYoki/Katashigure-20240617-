@@ -36,7 +36,7 @@ execute if score @s rng1 matches 80 run bossbar set minecraft:9066601 color red
 execute if score @s rng1 matches 80 run bossbar set minecraft:9066601 name "圣洁崇高的昏星 - 诺曼 · 萨罗莫"
 execute if score @s rng1 matches 80 run bossbar set minecraft:9066601 players @a[tag=SEAPT]
 execute if score @s rng1 matches 80 run bossbar set minecraft:9066601 style progress
-execute if score @s rng1 matches 80 run bossbar set minecraft:9066601 max 200
+execute if score @s rng1 matches 80 run bossbar set minecraft:9066601 max 400
 execute if score @s rng1 matches 80 run scoreboard players set @n[tag=SEAnorman] rng2 0
 execute if score @s rng1 matches 80 run scoreboard players set @n[tag=SEAnorman] rng3 0
 execute if score @s rng1 matches 80 run scoreboard players set @n[tag=SEAnorman] rng4 0
