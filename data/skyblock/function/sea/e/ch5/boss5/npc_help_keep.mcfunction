@@ -1,1 +1,1 @@
-damage @s 3 arrow by @n[tag=SEAboss5]
+damage @s 0 generic by @n[tag=SEAboss5]
