@@ -1,5 +1,7 @@
 tp @s ~ 135.0 ~ facing entity @n[tag=SEAboss5]
 
+execute if block ~ ~-0.5 ~ air run kill @s
+
 scoreboard players add @s rng1 1
 execute store result score @s rng2 run random value 1..5
 
