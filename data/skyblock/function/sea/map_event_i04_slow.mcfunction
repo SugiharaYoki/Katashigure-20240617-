@@ -317,7 +317,7 @@ unless entity @n[tag=SEAch4_spawn_timer_largegate] run summon marker 90160 34 13
 execute as @n[tag=SEAch4_spawn_timer_leverway] at @s run function skyblock:sea/e/ch4/ev016_roadopener
 execute as @n[tag=SEAch4_spawn_timer_largegate] at @s run function skyblock:sea/e/ch4/ev017_largegate
 
-execute if block 90168 35 88 warped_button[powered=true] unless entity @n[tag=SEAch4_spawn_timer_marilyn] run summon marker 90160 34 130 {Tags:["SEAch4_spawn_timer","SEAch4_spawn_timer_marilyn"]}
+execute if block 90168 35 88 warped_button[powered=true] unless entity @n[tag=SEAch4_spawn_timer_marilyn] if block 90182 57 81 minecraft:iron_block run summon marker 90160 34 130 {Tags:["SEAch4_spawn_timer","SEAch4_spawn_timer_marilyn"]}
 execute as @n[tag=SEAch4_spawn_timer_marilyn] at @s run function skyblock:sea/e/ch4/ev018_communication
 
 execute positioned 90163 44 130 if entity @a[tag=SEAPT,distance=..2.7] unless entity @n[tag=SEAch4_spawn,distance=0..1] positioned 90171 44 128 run function skyblock:sea/m/skeleton_shield
