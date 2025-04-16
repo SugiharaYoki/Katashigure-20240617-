@@ -46,7 +46,7 @@ execute if score SEA_ch5_event_marilyn rng1 matches 243 positioned 90118 90 73 a
 execute if score SEA_ch5_event_marilyn rng1 matches 1000..1100 run scoreboard players set SEA_ch5_event_marilyn rng1 1000
 
 
-execute if score SEA_ch5_event_marilyn rng1 matches 5..15 positioned 90118 90 73 if entity @n[tag=SEAfiona,distance=0..30] run scoreboard players set SEA_ch5_event_marilyn rng1 2000
+execute if score SEA_ch5_event_marilyn rng1 matches 5..15 positioned 90118 90 73 if entity @n[tag=SEAfiona,distance=0..12] run scoreboard players set SEA_ch5_event_marilyn rng1 2000
 
 execute if score SEA_ch5_event_marilyn rng1 matches 2028 positioned 90118 90 73 as @p[tag=SEAPT] if entity @n[tag=sc,scores={sea_player=1..}] run tellraw @a[distance=0..50] [{"selector":"@s","color":"white"},{"text":"：奇怪……没有接通？","color":"white"}]
 
@@ -60,7 +60,7 @@ execute if score SEA_ch5_event_marilyn rng1 matches 2068 if score SEA_ch5_event_
 execute if score SEA_ch5_event_marilyn rng1 matches 3000..3100 run scoreboard players set SEA_ch5_event_marilyn rng1 3000
 
 
-execute if score SEA_ch5_event_marilyn rng1 matches 16..250 positioned 90118 90 73 if entity @n[tag=SEAfiona,distance=0..30] run scoreboard players set SEA_ch5_event_marilyn rng1 4000
+execute if score SEA_ch5_event_marilyn rng1 matches 16..250 positioned 90118 90 73 if entity @n[tag=SEAfiona,distance=0..12] run scoreboard players set SEA_ch5_event_marilyn rng1 4000
 
 execute if score SEA_ch5_event_marilyn rng1 matches 4003 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
 execute if score SEA_ch5_event_marilyn rng1 matches 4003 if score SEA_ch5_event_fiona_favor rng1 matches ..14 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if entity @a[tag=SEAPT,scores={SEAPT_member=1}] run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“你在和谁通话呢？幸存者？”","color":"white","bold": false}]
