@@ -3,6 +3,7 @@ execute unless entity @s[scores={SEAPT_mode=0..}] run scoreboard players set @s 
 scoreboard objectives add sea_setting_box_index dummy
 execute unless entity @s[scores={sea_setting_box_index=0..}] run scoreboard players set @s sea_setting_box_index 1
 
+execute as @s[tag=SEAPT,x=89829,y=12,z=-165,dx=30,dy=20,dz=30] at @s run function skyblock:sea/dead
 tag @a[tag=SEAPT,x=89829,y=12,z=-165,dx=30,dy=20,dz=30] add SEAPT_trial_hall
 tag @a[tag=SEAPT,x=89829,y=12,z=-165,dx=30,dy=20,dz=30] remove SEAPT
 
