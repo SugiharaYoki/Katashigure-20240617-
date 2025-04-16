@@ -26,11 +26,10 @@ execute as @a[tag=SEAPT] at @s if block ~ ~-1 ~ barrier unless entity @a[tag=SEA
     execute if entity @n[tag=SEAyuehan,tag=SEA_ch4elevator_start,scores={sea_4temp5=36..}] as @n[tag=sea_ch3elevator1] at @s run playsound block.chain.step ambient @a ~ ~ ~ 0.5 1.05
 #结束，清除除动画以外的实体
 execute if entity @n[tag=SEAyuehan,tag=SEA_ch4elevator_start,scores={sea_4temp5=36..}] as @e[tag=sea_ch3elevator1,tag=!display] at @s if block ~ ~ ~ barrier run kill @s
-
+execute if entity @n[tag=SEAyuehan,tag=SEA_ch4elevator_start,scores={sea_4temp5=36..}] unless entity @n[tag=sea_ch3elevator1,tag=!display] as @a[tag=SEAPT] run attribute @s generic.gravity base set 0.08
 execute if entity @n[tag=SEAyuehan,tag=SEA_ch4elevator_start,scores={sea_4temp5=36..}] as @p[tag=SEAPT] at @s if block ~ ~-0.03 ~ barrier run playsound item.mace.smash_ground block @a 90126 36 100 1 0.5
 execute if entity @n[tag=SEAyuehan,tag=SEA_ch4elevator_start,scores={sea_4temp5=36..}] as @p[tag=SEAPT] at @s if block ~ ~-0.03 ~ barrier run tag @n[tag=SEAyuehan] add SEA_ch4elevator_end
 execute if entity @n[tag=SEAyuehan,tag=SEA_ch4elevator_start,scores={sea_4temp5=36..}] as @p[tag=SEAPT] at @s if block ~ ~-0.03 ~ barrier run tp @a[tag=SEAPT,distance=8..] @s
-execute if entity @n[tag=SEAyuehan,tag=SEA_ch4elevator_start,scores={sea_4temp5=36..}] as @p[tag=SEAPT] at @s if block ~ ~-0.03 ~ barrier as @a[tag=SEAPT] run attribute @s generic.gravity base set 0.08
 execute if entity @n[tag=SEAyuehan,tag=SEA_ch4elevator_start,scores={sea_4temp5=36..}] as @p[tag=SEAPT] at @s if block ~ ~-0.03 ~ barrier run tag @n[tag=SEAyuehan] remove SEA_ch4elevator_start
 
 execute as @a[tag=SEAPT] at @s if block ~ ~-1 ~ barrier unless entity @n[tag=SEAyuehan,scores={sea_4temp5=..1}] run scoreboard players add @n[tag=SEAyuehan] sea_4temp5 1
