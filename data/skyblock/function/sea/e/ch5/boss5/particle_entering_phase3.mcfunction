@@ -57,7 +57,7 @@ execute if score @s rng7 matches 251 run scoreboard players set @n[tag=SEAboss5b
 execute if score @s rng7 matches 251 run scoreboard players set @n[tag=SEAboss5b] rng7 0
 execute if score @s rng7 matches 251 run scoreboard players set @n[tag=SEAboss5b] rng8 0
 execute if score @s rng7 matches 251 run scoreboard players set @n[tag=SEAboss5b] rng9 0
-
+execute if score @s rng7 matches 251 run tp @n[tag=SEAboss2] @n[tag=SEAnorman]
 
 
 
