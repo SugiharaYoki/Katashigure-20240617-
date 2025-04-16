@@ -4,6 +4,8 @@ execute unless block ~ ~-0.5 ~ air run scoreboard players add @s[scores={rng2=..
 execute unless score @s rng2 matches -9999.. run scoreboard players set @s rng2 -6
 execute store result bossbar minecraft:9066601 value run data get entity @n[tag=SEAboss5] Health
 execute store result score @n[tag=SEAboss5] health run data get entity @n[tag=SEAboss5] Health
+execute store result bossbar minecraft:9066602 value run data get entity @n[tag=SEAboss5b] Health
+execute store result score @n[tag=SEAboss5b] health run data get entity @n[tag=SEAboss5b] Health
 
 execute if score @s rng1 matches 2 run stopsound @a[tag=SEAPT] music
 execute if score @s rng1 matches 2 run summon lightning_bolt
