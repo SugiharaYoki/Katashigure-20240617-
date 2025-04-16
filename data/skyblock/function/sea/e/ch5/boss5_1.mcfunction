@@ -9,6 +9,7 @@ execute if score @s rng1 matches 2 run stopsound @a[tag=SEAPT] music
 execute if score @s rng1 matches 2 run summon lightning_bolt
 execute if score @s rng1 matches 2 run kill @e[tag=SEA_boss5_lightning_anchor,type=marker]
 execute if score @s rng1 matches 2 run kill @e[tag=SEA_boss5_attack_rail,type=marker]
+execute if score @s rng1 matches 2 run kill @e[tag=SEA_boss5_attack_still_strike,type=marker]
 execute if score @s rng1 matches 2 run summon breeze_wind_charge ~ ~0.5 ~ {Motion:[0.0,-1.0,0.0]}
 execute if score @s rng1 matches 5 run data modify entity @s NoAI set value 0b
 execute if score @s rng1 matches 5 run data modify entity @s Invulnerable set value 0b
@@ -53,14 +54,17 @@ execute at @s unless block ~ ~0.5 ~ air unless block ~ ~1.5 ~ air run tp @s 9014
 execute if score @s rng1 matches 160.. if score @s rng2 matches -5..-3 store result score @s rng5 run random value 1..9
 execute if score @s rng1 matches 160.. if score @s rng5 matches 1..9 run function skyblock:sea/e/ch5/boss5/move_jump
 execute if score @s rng1 matches 160.. if score @s[scores={rng3=0}] rng2 matches 1.. store result score @s rng3 run random value 1..5
-execute if score @s rng1 matches 160.. if score @s rng2 matches -2..0 store result score @s rng3 run random value 1..5
+execute if score @s rng1 matches 160.. if score @s rng2 matches -2..0 store result score @s[tag=!Phase2] rng3 run random value 1..4
+execute if score @s rng1 matches 160.. if score @s rng2 matches -2..0 store result score @s[tag=Phase2] rng3 run random value 1..6
 execute if score @s rng1 matches 160.. if score @s[scores={rng3=1..2}] rng2 matches 0.. run function skyblock:sea/e/ch5/boss5/attack_downfall
-execute if score @s rng1 matches 160.. if score @s[scores={rng3=3..5}] rng2 matches 0.. run function skyblock:sea/e/ch5/boss5/attack_rail
+execute if score @s rng1 matches 160.. if score @s[scores={rng3=3..4}] rng2 matches 0.. run function skyblock:sea/e/ch5/boss5/attack_rail
+execute if score @s rng1 matches 160.. if score @s[scores={rng3=5..6}] rng2 matches 0.. run function skyblock:sea/e/ch5/boss5/attack_still_strike
 
 execute if score @s rng1 matches 160.. if block ~ ~-0.5 ~ air at @s run function skyblock:sea/e/ch5/boss5/particle_insky
 
 execute positioned 90142 134 26 as @e[type=marker,tag=SEA_boss5_lightning_anchor,distance=0..50] at @s run function skyblock:sea/e/ch5/boss5/lightning_anchor
 execute positioned 90142 134 26 as @e[type=marker,tag=SEA_boss5_attack_rail,distance=0..50] at @s run function skyblock:sea/e/ch5/boss5/attack_rail_marker
+execute positioned 90142 134 26 as @e[type=marker,tag=SEA_boss5_attack_still_strike,distance=0..50] at @s run function skyblock:sea/e/ch5/boss5/attack_still_strike_marker
 
 execute if score @s rng1 matches 160.. store result score @s rng9 run random value 1..40
 execute positioned 90142 134 26 as @n[type=#illager,distance=0..50,tag=!SEAboss5_npc_helper,type=pillager] at @s if entity @n[tag=SEAboss5,distance=..12] run function skyblock:sea/e/ch5/boss5/npc_help
