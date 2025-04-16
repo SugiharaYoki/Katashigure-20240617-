@@ -57,9 +57,24 @@ execute if score @s rng7 matches 251 run scoreboard players set @n[tag=SEAboss5b
 execute if score @s rng7 matches 251 run scoreboard players set @n[tag=SEAboss5b] rng7 0
 execute if score @s rng7 matches 251 run scoreboard players set @n[tag=SEAboss5b] rng8 0
 execute if score @s rng7 matches 251 run scoreboard players set @n[tag=SEAboss5b] rng9 0
-execute if score @s rng7 matches 251 run tp @n[tag=SEAboss2] @n[tag=SEAnorman]
+execute if score @s rng7 matches 251 as @n[tag=SEAboss2] at @s run tp @s @n[tag=SEAnorman]
+execute if score @s rng7 matches 251 as @n[tag=SEAboss2] at @s run tp @s ~ ~ ~ facing entity @n[tag=SEAnorman]
 
-
+execute if score @s rng7 matches 252..256 as @n[tag=SEAboss2] at @s run playsound entity.generic.explode hostile @a ^ ^ ^1 1 1.2
+execute if score @s rng7 matches 252..256 as @n[tag=SEAboss2] at @s run playsound entity.generic.explode hostile @a ^ ^ ^1 2 0.8
+execute if score @s rng7 matches 252 as @n[tag=SEAboss2] at @s run particle explosion_emitter ^ ^ ^1 0.5 0.5 0.5 0 1
+execute if score @s rng7 matches 253 as @n[tag=SEAboss2] at @s run particle explosion_emitter ^ ^ ^2 0.5 0.5 0.5 0 1
+execute if score @s rng7 matches 254 as @n[tag=SEAboss2] at @s run particle explosion_emitter ^1 ^ ^3 0.5 0.5 0.5 0 1
+execute if score @s rng7 matches 255 as @n[tag=SEAboss2] at @s run particle explosion_emitter ^2 ^ ^4 0.5 0.5 0.5 0 1
+execute if score @s rng7 matches 256 as @n[tag=SEAboss2] at @s run particle explosion_emitter ^3 ^ ^5 0.5 0.5 0.5 0 1
+execute if score @s rng7 matches 254 as @n[tag=SEAboss2] at @s run particle explosion_emitter ^-1 ^ ^3 0.5 0.5 0.5 0 1
+execute if score @s rng7 matches 255 as @n[tag=SEAboss2] at @s run particle explosion_emitter ^-2 ^ ^4 0.5 0.5 0.5 0 1
+execute if score @s rng7 matches 256 as @n[tag=SEAboss2] at @s run particle explosion_emitter ^-3 ^ ^5 0.5 0.5 0.5 0 1
+execute if score @s rng7 matches 259 as @n[tag=SEAboss2] at @s positioned ^ ^ ^1.5 positioned over world_surface run summon lightning_bolt ~ ~ ~
+execute if score @s rng7 matches 260 as @n[tag=SEAboss2] at @s positioned ^ ^ ^2 positioned over world_surface run summon lightning_bolt ~ ~ ~
+execute if score @s rng7 matches 261 as @n[tag=SEAboss2] at @s positioned ^ ^ ^2.5 positioned over world_surface run summon lightning_bolt ~ ~ ~
+execute if score @s rng7 matches 262 as @n[tag=SEAboss2] at @s positioned ^ ^ ^3 positioned over world_surface run summon lightning_bolt ~ ~ ~
+execute if score @s rng7 matches 262 as @n[tag=SEAboss2] at @s run kill @n[tag=SEAboss5,type=zombie_villager]
 
 
 
