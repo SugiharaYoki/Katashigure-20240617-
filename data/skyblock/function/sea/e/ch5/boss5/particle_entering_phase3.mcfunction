@@ -36,7 +36,7 @@ execute if score @s sea_4temp3 matches 16 positioned 90202 130 -30 positioned ~-
 execute if score @s sea_4temp3 matches 17 positioned 90202 130 -30 positioned ~25 ~ ~32 positioned over world_surface run summon lightning_bolt ~ ~ ~
 
 
-execute if score @s rng7 matches 231 positioned 90167 139 24 run stopsound @a[distance=0..250] music
+execute if score @s rng7 matches 221 positioned 90167 139 24 run stopsound @a[distance=0..250] music
 execute if score @s rng7 matches 231 positioned 90167 139 24 run setblock 90153 124 18 chain
 execute if score @s rng7 matches 231 positioned 90167 139 24 run summon marker ~ ~ ~ {Tags:["SEAboss5_heaven_portal"]}
 execute if score @s rng7 matches 231.. positioned 90167 139 24 as @e[tag=SEAboss5_heaven_portal,limit=1] at @s run function skyblock:sea/e/ch5/boss5/particle_heaven_portal
