@@ -1,4 +1,4 @@
-execute if score @s rng7 matches 0 run effect give @s resistance infinite 2 true
+execute if score @s rng7 matches 0.. run effect give @s resistance infinite 2 true
 
 execute if score @s rng7 matches 3..240 run particle crimson_spore ~ ~0.2 ~ 1 0.3 1 0.05 10
 execute if score @s rng7 matches 180..240 run particle crimson_spore ~ ~0.2 ~ 5 0.3 5 0.05 20

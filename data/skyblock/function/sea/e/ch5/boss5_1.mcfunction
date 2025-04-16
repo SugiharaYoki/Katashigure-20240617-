@@ -94,5 +94,7 @@ execute if score @s rng2 matches -240..-100 run function skyblock:sea/e/ch5/boss
 
 effect give @s slow_falling 5 0 true
 
-
+execute at @s[tag=!Phase3,scores={health=..90}] run scoreboard players set @s rng7 1
+execute at @s[tag=!Phase3,scores={health=..90}] run tag @s add Phase3
+execute if score @s rng7 matches 1.. run function skyblock:sea/e/ch5/boss5/particle_entering_phase3
 
