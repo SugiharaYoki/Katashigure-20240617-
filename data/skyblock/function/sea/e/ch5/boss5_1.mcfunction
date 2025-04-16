@@ -9,6 +9,7 @@ execute if score @s rng1 matches 2 run stopsound @a[tag=SEAPT] music
 execute if score @s rng1 matches 2 run summon lightning_bolt
 execute if score @s rng1 matches 2 run kill @e[tag=SEA_boss5_lightning_anchor,type=marker]
 execute if score @s rng1 matches 2 run kill @e[tag=SEA_boss5_attack_rail,type=marker]
+execute if score @s rng1 matches 2 run kill @e[tag=SEA_boss5_tp_anchor,type=marker]
 execute if score @s rng1 matches 2 run kill @e[tag=SEA_boss5_attack_still_strike,type=marker]
 execute if score @s rng1 matches 2 run summon breeze_wind_charge ~ ~0.5 ~ {Motion:[0.0,-1.0,0.0]}
 execute if score @s rng1 matches 5 run data modify entity @s NoAI set value 0b
@@ -32,6 +33,15 @@ execute if score @s rng1 matches 160 as @n[tag=SEAfiona,x=90000,y=100,z=0,distan
 execute if score @s rng1 matches 160 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if score SEA_ch5_event_fiona_favor rng1 matches 13..22 run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“这是他的……尸体？！你小心一点，我们必须得把他干掉，你掩护我！”","color":"white","bold": false}]
 execute if score @s rng1 matches 160 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if score SEA_ch5_event_fiona_favor rng1 matches 23.. run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“那就是诺曼博士已经死了！所以我们现在面对的是尸变体，一定要小心！！”","color":"white","bold": false}]
 
+execute if score @s rng1 matches 80 positioned 90142 135 26 run summon marker ~ ~ ~ {Tags:["SEA_boss5_tp_anchor"]}
+execute if score @s rng1 matches 80 positioned 90142 135 26 run summon marker ~10 ~ ~ {Tags:["SEA_boss5_tp_anchor"]}
+execute if score @s rng1 matches 80 positioned 90142 135 26 run summon marker ~ ~ ~-10 {Tags:["SEA_boss5_tp_anchor"]}
+execute if score @s rng1 matches 80 positioned 90142 135 26 run summon marker ~ ~ ~10 {Tags:["SEA_boss5_tp_anchor"]}
+execute if score @s rng1 matches 80 positioned 90142 135 26 run summon marker ~-10 ~ ~ {Tags:["SEA_boss5_tp_anchor"]}
+execute if score @s rng1 matches 80 positioned 90142 135 26 run summon marker ~8 ~ ~8 {Tags:["SEA_boss5_tp_anchor"]}
+execute if score @s rng1 matches 80 positioned 90142 135 26 run summon marker ~8 ~ ~-8 {Tags:["SEA_boss5_tp_anchor"]}
+execute if score @s rng1 matches 80 positioned 90142 135 26 run summon marker ~-8 ~ ~8 {Tags:["SEA_boss5_tp_anchor"]}
+execute if score @s rng1 matches 80 positioned 90142 135 26 run summon marker ~-8 ~ ~-8 {Tags:["SEA_boss5_tp_anchor"]}
 execute if score @s rng1 matches 80 run bossbar add 9066601 "圣洁崇高的昏星 - 诺曼 · 萨罗莫"
 execute if score @s rng1 matches 80 run bossbar set minecraft:9066601 color red
 execute if score @s rng1 matches 80 run bossbar set minecraft:9066601 name "圣洁崇高的昏星 - 诺曼 · 萨罗莫"
@@ -48,8 +58,9 @@ execute if score @s rng1 matches 80 run scoreboard players set @n[tag=SEAnorman]
 execute if score @s rng1 matches 80 run scoreboard players set @n[tag=SEAnorman] rng9 0
 execute if score @s rng2 matches -25 run effect give @s instant_damage 1 0 true
 
-execute positioned 90142 134 26 if entity @s[distance=20..] at @s run tp @s 90142 144 26
-execute at @s unless block ~ ~0.5 ~ air unless block ~ ~1.5 ~ air run tp @s 90142 135 26
+execute positioned 90142 134 26 if entity @s[distance=20..] at @s at @n[tag=SEA_boss5_tp_anchor,type=marker] run tp @s ~ ~5 ~
+execute at @s unless block ~ ~0.5 ~ air unless block ~ ~1.5 ~ air run tp @s @n[tag=SEA_boss5_tp_anchor,type=marker]
+execute at @s if entity @s[x=89000,dx=2000,z=-1000,dz=2000,y=100,dy=33] run tp @s @n[tag=SEA_boss5_tp_anchor,type=marker]
 
 execute if score @s rng1 matches 160.. if score @s rng2 matches -5..-3 store result score @s rng5 run random value 1..9
 execute if score @s rng1 matches 160.. if score @s rng5 matches 1..9 run function skyblock:sea/e/ch5/boss5/move_jump
