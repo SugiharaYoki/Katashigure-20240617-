@@ -1,3 +1,4 @@
+scoreboard players add SEA_ch5_event_marilyn rng1 1
 
 execute if score SEA_ch5_event_marilyn rng1 matches 4 positioned 90118 90 73 run tellraw @a[distance=0..50] {"text":"正在呼叫联络总站。","color":"dark_purple"}
 execute if score SEA_ch5_event_marilyn rng1 matches 4 positioned 90118 90 73 run playsound minecraft:entity.endermite.ambient ambient @a ~ ~ ~ 0.8 0.1
