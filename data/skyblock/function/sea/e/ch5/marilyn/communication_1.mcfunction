@@ -47,6 +47,7 @@ execute if score SEA_ch5_event_marilyn rng1 matches 1000..1100 run scoreboard pl
 
 
 execute if score SEA_ch5_event_marilyn rng1 matches 5..15 positioned 90118 90 73 if entity @n[tag=SEAfiona,distance=0..30] run scoreboard players set SEA_ch5_event_marilyn rng1 2000
+execute if score SEA_ch5_event_marilyn rng1 matches 204..245 positioned 90118 90 73 if entity @n[tag=SEAfiona,distance=0..30] run scoreboard players set SEA_ch5_event_marilyn rng1 2000
 
 execute if score SEA_ch5_event_marilyn rng1 matches 2028 positioned 90118 90 73 as @p[tag=SEAPT] if entity @n[tag=sc,scores={sea_player=1..}] run tellraw @a[distance=0..50] [{"selector":"@s","color":"white"},{"text":"：奇怪……没有接通？","color":"white"}]
 
