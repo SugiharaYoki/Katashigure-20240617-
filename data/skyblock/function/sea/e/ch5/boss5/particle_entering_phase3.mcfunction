@@ -13,6 +13,7 @@ execute if score @s rng7 matches 80 as @n[tag=SEAfiona,x=90000,y=100,z=0,distanc
 execute if score @s rng7 matches 20..120 store result score @s sea_4temp1 run random value 1..400
 execute if score @s rng7 matches 121..180 store result score @s sea_4temp1 run random value 1..300
 execute if score @s rng7 matches 181..200 store result score @s sea_4temp1 run random value 1..200
+execute if score @s rng7 matches 201..210 store result score @s sea_4temp1 run random value 1..80
 
 execute if score @s sea_4temp1 matches 1 positioned 90202 130 -30 positioned ~ ~ ~ positioned over world_surface run summon lightning_bolt ~ ~ ~
 execute if score @s sea_4temp1 matches 2 positioned 90202 130 -30 positioned ~ ~ ~18 positioned over world_surface run summon lightning_bolt ~ ~ ~
@@ -32,5 +33,8 @@ execute if score @s sea_4temp1 matches 15 positioned 90202 130 -30 positioned ~2
 execute if score @s sea_4temp1 matches 16 positioned 90202 130 -30 positioned ~-32 ~ ~-25 positioned over world_surface run summon lightning_bolt ~ ~ ~
 execute if score @s sea_4temp1 matches 17 positioned 90202 130 -30 positioned ~25 ~ ~32 positioned over world_surface run summon lightning_bolt ~ ~ ~
 
+
+execute if score @s rng7 matches 201 positioned 90177 159 24 run summon marker ~ ~ ~ {Tags:["SEAboss5_heaven_portal"]}
+execute if score @s rng7 matches 201.. positioned 90177 159 24 as @e[tag=SEAboss5_heaven_portal,limit=1] at @s run function skyblock:sea/e/ch5/boss5/particle_heaven_portal
 
 
