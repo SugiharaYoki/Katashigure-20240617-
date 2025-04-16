@@ -38,3 +38,5 @@ execute if score @s rng7 matches 201 positioned 90177 159 24 run summon marker ~
 execute if score @s rng7 matches 201.. positioned 90177 159 24 as @e[tag=SEAboss5_heaven_portal,limit=1] at @s run function skyblock:sea/e/ch5/boss5/particle_heaven_portal
 
 
+execute if score @s rng7 matches 500 run kill @e[tag=SEAboss5_heaven_portal,type=marker]
+
