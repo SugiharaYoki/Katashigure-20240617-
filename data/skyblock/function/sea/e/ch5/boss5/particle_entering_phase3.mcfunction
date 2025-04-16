@@ -40,6 +40,7 @@ execute if score @s rng7 matches 231 positioned 90167 159 24 run setblock 90153 
 execute if score @s rng7 matches 231 positioned 90167 159 24 run summon marker ~ ~ ~ {Tags:["SEAboss5_heaven_portal"]}
 execute if score @s rng7 matches 231.. positioned 90167 159 24 as @e[tag=SEAboss5_heaven_portal,limit=1] at @s run function skyblock:sea/e/ch5/boss5/particle_heaven_portal
 
+execute if score @s rng7 matches 251 positioned 90167 159 24 run scoreboard players set SEAmusic rng1 4500
 
 execute if score @s rng7 matches 1000 run kill @e[tag=SEAboss5_heaven_portal,type=marker]
 
