@@ -1,5 +1,6 @@
 execute if score @s rng7 matches 0.. run effect give @s resistance infinite 5 true
 
+execute if score @s rng7 matches 1..3 run tag @s add Phase2
 execute if score @s rng7 matches 3..240 run particle crimson_spore ~ ~0.2 ~ 1 0.3 1 0.05 10
 execute if score @s rng7 matches 180..240 run particle crimson_spore ~ ~0.2 ~ 5 0.3 5 0.05 20
 execute if score @s rng7 matches 0..20 run playsound ambient.soul_sand_valley.additions ambient @a ~ ~ ~ 5 1.3

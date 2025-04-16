@@ -242,4 +242,7 @@ execute if entity @a[tag=SEAPT,scores={SEA_ch5_event_illager_killed=1..}] run sc
 execute if entity @a[tag=SEAPT,scores={SEA_ch5_event_illager_killed=1..}] run scoreboard players reset @a SEA_ch5_event_illager_killed
 
 
+execute if block 90118 90 73 warped_button[powered=true] if score SEA_ch5_event_marilyn rng1 matches ..0 run scoreboard players set SEA_ch5_event_marilyn rng1 1
+
+
 

@@ -278,6 +278,9 @@ scoreboard players set SEA_ch5_event_fiona_favor rng1 0
 scoreboard players set SEA_ch5_event_building rng1 0
 scoreboard players set SEA_ch5_event_building rng2 0
 scoreboard players set SEA_ch5_event_building rng3 0
+scoreboard players set SEA_ch5_event_marilyn rng1 0
+scoreboard players set SEA_ch5_event_marilyn rng2 0
+scoreboard players set SEA_ch5_event_marilyn rng3 0
 scoreboard objectives add SEA_ch5_event_illager_killed minecraft.killed:minecraft.pillager
 scoreboard players set @a SEA_ch5_event_illager_killed 0
 scoreboard players set SEA_ch5_event_illager_count rng1 100
