@@ -42,5 +42,27 @@ execute if score @s rng7 matches 231.. positioned 90167 159 24 as @e[tag=SEAboss
 
 execute if score @s rng7 matches 251 positioned 90167 159 24 run scoreboard players set SEAmusic rng1 4500
 
+execute if score @s rng7 matches 251 run bossbar add 9066602 "风暴的主天使"
+execute if score @s rng7 matches 251 run bossbar set minecraft:9066602 color purple
+execute if score @s rng7 matches 251 run bossbar set minecraft:9066602 name "风暴的主天使"
+execute if score @s rng7 matches 251 run bossbar set minecraft:9066602 players @a[tag=SEAPT]
+execute if score @s rng7 matches 251 run bossbar set minecraft:9066602 style progress
+execute if score @s rng7 matches 251 run bossbar set minecraft:9066602 max 400
+execute if score @s rng7 matches 251 run scoreboard players set @n[tag=SEAboss5b] rng2 0
+execute if score @s rng7 matches 251 run scoreboard players set @n[tag=SEAboss5b] rng3 0
+execute if score @s rng7 matches 251 run scoreboard players set @n[tag=SEAboss5b] rng4 0
+execute if score @s rng7 matches 251 run scoreboard players set @n[tag=SEAboss5b] rng5 0
+execute if score @s rng7 matches 251 run scoreboard players set @n[tag=SEAboss5b] rng6 0
+execute if score @s rng7 matches 251 run scoreboard players set @n[tag=SEAboss5b] rng7 0
+execute if score @s rng7 matches 251 run scoreboard players set @n[tag=SEAboss5b] rng8 0
+execute if score @s rng7 matches 251 run scoreboard players set @n[tag=SEAboss5b] rng9 0
+
+
+
+
+
+
+
+
 execute if score @s rng7 matches 1000 run kill @e[tag=SEAboss5_heaven_portal,type=marker]
 
