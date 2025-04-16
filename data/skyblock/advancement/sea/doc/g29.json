@@ -1,0 +1,28 @@
+{
+    "display": {
+        "title": {
+            "text": "尤利西斯",
+            "color": "aqua",
+            "bold": true,
+            "italic": false
+        },
+        "description": {
+            "text": "获得复合弓。\n“罪行累累的他，死在了自己最信任的人手中。”",
+            "color": "gray",
+            "bold": false
+        },
+        "icon": {
+            "id": "minecraft:iron_hoe"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "sea": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:sea/doc/g26"
+}

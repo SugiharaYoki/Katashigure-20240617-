@@ -9,3 +9,5 @@ playsound ambient.crimson_forest.additions master @s ~ ~ ~ 100 0.7
 playsound garden2.chapter_title master @s ~ ~ ~ 100 1.0
 advancement grant @s only skyblock:sea/chapter5b
 tag @s add e_i_42
+
+scoreboard players set @s[tag=SEAPT,scores={sea_progress=..12}] sea_progress 13

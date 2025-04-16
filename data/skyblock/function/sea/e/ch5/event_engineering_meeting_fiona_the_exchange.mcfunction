@@ -1,6 +1,6 @@
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 1.. run scoreboard players add SEA_ch5_event_engineering_fiona sea_4temp2 1
 
-execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 10..750 if items entity @p[scores={SEA_story=11..},tag=SEAPT] weapon.mainhand spyglass as @p[nbt={SelectedItem:{id:"minecraft:spyglass"}}] unless entity @a[tag=SEAPT,scores={SEA_story=..0}] at @s run tellraw @a[tag=SEAPT] [{"selector":"@s","color":"white"},{"text":"：「跳过了剧情」","color":"white"}]
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 10..750 if items entity @p[scores={SEA_story=11..},tag=SEAPT] weapon.mainhand spyglass as @p[nbt={SelectedItem:{id:"minecraft:spyglass"}}] unless entity @a[tag=SEAPT,scores={SEA_story=..10}] at @s run tellraw @a[tag=SEAPT] [{"selector":"@s","color":"white"},{"text":"：「跳过了剧情」","color":"white"}]
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 10..750 if items entity @p[scores={SEA_story=11..},tag=SEAPT] weapon.mainhand spyglass unless entity @a[tag=SEAPT,scores={SEA_story=..10}] run scoreboard players set SEA_ch5_event_engineering_fiona sea_4temp2 768
 
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 789 run forceload add 90056 -400 90072 -380

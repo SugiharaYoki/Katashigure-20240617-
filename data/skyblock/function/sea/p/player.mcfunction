@@ -9,7 +9,7 @@ clear @s[gamemode=!creative] waxed_copper_block
 clear @s[gamemode=!creative] waxed_copper_bulb
 clear @s[gamemode=!creative] waxed_cut_copper_stairs
 clear @s[gamemode=!creative] slime_block
-clear @s[gamemode=!creative] string
+execute unless entity @s[x=89829,y=12,z=-165,dx=30,dy=20,dz=30] run clear @s[gamemode=!creative] string
 execute if items entity @s container.* blaze_powder at @s run function skyblock:sea/p/bomb
 clear @s[gamemode=!creative] blaze_powder
 clear @s[gamemode=!creative] heart_pottery_sherd
@@ -75,6 +75,7 @@ execute if entity @s[tag=!e_w_03b] if items entity @s container.* bow run playso
 execute if entity @s[tag=!e_w_03b] if items entity @s container.* bow run tellraw @s {"text": "获得新武器：复合弓","color": "dark_red"}
 execute if entity @s[tag=!e_w_03b] if items entity @s container.* bow run tellraw @s {"text": "远程武器，似乎是史丹尼舵长用于防身的武器。","color": "white"}
 execute if entity @s[tag=!e_w_03b] if items entity @s container.* bow run tellraw @s {"text": "绝大多数枪械都被邪教徒销毁。现如今，这种简单的武器也会发挥出意想不到的效果吧。","color": "white"}
+execute if entity @s[tag=!e_w_03b] if items entity @s[tag=SEAPT,advancements={skyblock:sea/doc/g29=false}] container.* bow run give @s mojang_banner_pattern[custom_data={sea_docg29:true}]
 execute if entity @s[tag=!e_w_03b] if items entity @s container.* bow run tag @s add e_w_03b_eternal
 execute if entity @s[tag=!e_w_03b] if items entity @s container.* bow run tag @s add e_w_03b
 execute if entity @s[tag=!e_w_04] if items entity @s container.* shears[custom_data={sea_flamethrower:true}] run playsound minecraft:ui.toast.challenge_complete player @s ~ ~ ~ 1 1

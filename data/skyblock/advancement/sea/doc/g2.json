@@ -8,7 +8,8 @@
         },
         "description": {
             "text": "漆黑所污染的深海曾将我吞没。\n如果脚下仅剩海水，我就会超高速地溺亡！",
-            "color": "gray"
+            "color": "gray",
+            "bold": false
         },
         "icon": {
             "id": "minecraft:stone_hoe"

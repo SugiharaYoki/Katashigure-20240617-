@@ -8,7 +8,8 @@
         },
         "description": {
             "text": "忽略了消防斧。\n“你不会真打算用撬棍杀穿整个钻井平台吧？”",
-            "color": "gray"
+            "color": "gray",
+            "bold": false
         },
         "icon": {
             "id": "minecraft:stone_hoe"

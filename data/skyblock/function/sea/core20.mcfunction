@@ -18,12 +18,13 @@ execute if score seact rng2 matches 20 run scoreboard players set seact rng2 0
 
 execute as @a[tag=SEAPT,scores={sea_remiel_shadow=1..}] at @s run function skyblock:sea/p/remiel_shadow
 
+execute if block 90074 103 136 lectern if entity @a[tag=SEAPT] positioned 90142 134 26 as @n[tag=SEAnorman,type=zombie_villager,distance=0..250,scores={rng1=1..}] at @s run function skyblock:sea/e/ch5/boss5_1
+execute if block 90074 103 136 lectern if entity @a[tag=SEAPT] positioned 90142 134 26 as @n[tag=SEAboss5b,type=zombie_villager,distance=0..250,scores={rng1=1..}] unless entity @n[tag=SEAnorman,type=zombie_villager] at @s run function skyblock:sea/e/ch5/boss5_1
 
 
-
-execute as @n[type=zombie,tag=SEAmob,x=80000,dx=20000,z=-10000,dz=20000,y=-1000,dy=2000,tag=SEAknight] at @s if block ~ ~1.3 ~ water run advancement grant @a[tag=SEAPT] only skyblock:sea/doc/g26
-execute as @n[type=zombie,tag=SEAmob,x=80000,dx=20000,z=-10000,dz=20000,y=-1000,dy=2000] at @s if block ~ ~1.3 ~ water run kill @s
-execute as @n[type=husk,tag=SEAmob,x=80000,dx=20000,z=-10000,dz=20000,y=-1000,dy=2000] at @s if block ~ ~1.3 ~ water run kill @s
+execute as @n[type=zombie,tag=SEAmob,x=80000,dx=20000,z=-10000,dz=20000,y=-1000,dy=2000,tag=SEAknight] at @s if block ~ ~-1.4 ~ water if block ~ ~ ~ water run give @a[tag=SEAPT,advancements={skyblock:sea/doc/g26=false}] mojang_banner_pattern[custom_data={sea_docg26:true}]
+execute as @n[type=zombie,tag=SEAmob,x=80000,dx=20000,z=-10000,dz=20000,y=-1000,dy=2000] at @s if block ~ ~-1.4 ~ water if block ~ ~ ~ water run kill @s
+execute as @n[type=husk,tag=SEAmob,x=80000,dx=20000,z=-10000,dz=20000,y=-1000,dy=2000] at @s if block ~ ~-1.4 ~ water if block ~ ~ ~ water run kill @s
 
 
 #execute if items entity @a[tag=SEAPT] player.cursor *[custom_data={"SEAcrafterbox":true}] as @e[tag=SEAcrafter,type=interaction,x=90000,y=0,z=0,distance=..1000] at @s positioned ~ ~-1 ~ run function skyblock:sea/shop_reader_box

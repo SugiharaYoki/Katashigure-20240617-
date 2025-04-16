@@ -155,7 +155,7 @@ execute if score SEA_ch5_event_engineering_fiona sea_4temp8 matches 499 run setb
 execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 5008 positioned 90134 133 57 run playsound entity.evoker.ambient neutral @a ~ ~ ~ 1 1
 execute if block 90121 135 16 grindstone if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 5008 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"琼斯：","color":"yellow","bold": true},{"text":"\n“闹够了没有，大小姐？”","color":"white","bold": false}]
 execute unless block 90121 135 16 grindstone if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 5008 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"琼斯：","color":"yellow","bold": true},{"text":"\n“我就知道我拦不住你。我已经了解了，让我们好好谈谈吧。”","color":"white","bold": false}]
-execute unless block 90121 135 16 grindstone if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 5008 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if score SEA_ch5_event_engineering_fiona sea_4temp7 matches ..19 run advancement grant @a[tag=SEAPT] only skyblock:sea/doc/g25
+execute unless block 90121 135 16 grindstone if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 5008 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if score SEA_ch5_event_engineering_fiona sea_4temp7 matches ..19 run give @a[tag=SEAPT] mojang_banner_pattern[custom_data={sea_docg25:true}]
 
 execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 5008 run bossbar remove sea:ch5_lurkbar
 execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 5026 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
@@ -202,5 +202,8 @@ execute as @e[tag=SEAmob_surrended,x=90100,y=100,z=100,distance=0..200,type=#ill
 
 execute as @n[type=villager,tag=SEAiscariot,x=90100,y=100,z=100,distance=..250] at @s if entity @a[tag=SEAPT,distance=0..4.2] run function skyblock:sea/e/ch5/event_array_building_iscariot
 execute as @n[type=pillager,tag=SEApillager_npc1,x=90100,y=100,z=100,distance=..250] at @s if entity @a[tag=SEAPT,distance=0..3.4] run function skyblock:sea/e/ch5/event_array_building_pillagernpc
+
+execute unless entity @n[tag=SEAfiona] positioned 90126 122 23 run function skyblock:sea/m/unique/npc_fiona
+execute positioned 90126 122 23 run kill @e[type=witch,distance=0..200]
 
 

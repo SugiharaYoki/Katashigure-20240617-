@@ -3,6 +3,9 @@ scoreboard players add @s rng1 1
 execute if score @s rng1 matches 3 at @s run playsound entity.evoker.ambient neutral @a ~ ~ ~ 1 1
 execute if score @s rng1 matches 3 at @s run tellraw @a[distance=0..200] [{"text":"琼斯：","color":"yellow","bold": true},{"text":"\n“菲尔娜小姐，很高兴再次见到您。”","color":"white","bold": false}]
 
+execute if score @s rng1 matches 3..368 if items entity @p[scores={sea_progress=14..},tag=SEAPT] weapon.mainhand spyglass as @p[nbt={SelectedItem:{id:"minecraft:spyglass"}}] unless entity @a[tag=SEAPT,scores={sea_progress=..13}] at @s run tellraw @a[tag=SEAPT] [{"selector":"@s","color":"white"},{"text":"：「跳过了剧情」","color":"white"}]
+execute if score @s rng1 matches 3..368 if items entity @p[scores={sea_progress=14..},tag=SEAPT] weapon.mainhand spyglass unless entity @a[tag=SEAPT,scores={sea_progress=..13}] run scoreboard players set @s rng1 369
+
 execute if score @s rng1 matches 20 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
 execute if score @s rng1 matches 20 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“不需要再废话了。琼斯，我们根本不知道天使会不会帮助我们。它们带来的麻烦可能会远比细菌要严重。”","color":"white","bold": false}]
 
@@ -68,6 +71,24 @@ execute if score @s rng1 matches 348 run tellraw @a[distance=0..200] [{"text":"�
 execute if score @s rng1 matches 330..345 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..200] at @s run tp @s ~ ~ ~ facing 90147 145 46
 execute if score @s rng1 matches 333..362 as @n[tag=SEAjones,x=90000,y=100,z=0,distance=0..200] at @s run tp @s ~ ~ ~ facing 90147 145 46
 
+
+
+
+
+
+
+execute if score @s rng1 matches 354 at @s positioned 90142 134 26 run function skyblock:sea/m/unique/boss5_norman
+execute if score @s rng1 matches 354..373 at @s positioned 90142 134 26 run scoreboard players set @a[tag=SEAPT,scores={sea_progress=..13}] sea_progress 14
+execute if score @s rng1 matches 354..373 at @s positioned 90142 134 26 run scoreboard players set @a[tag=SEAPT,scores={SEA_story=..20}] SEA_story 21
+
+
+
+
+execute if score @s rng1 matches 384 at @s unless entity @n[tag=SEAnorman] positioned 90142 134 26 run function skyblock:sea/m/unique/boss5_norman
+
+
+
+
 execute if score @s rng1 matches 354 at @s run playsound entity.evoker.ambient neutral @a ~ ~ ~ 1 1
 execute if score @s rng1 matches 354 at @s run tellraw @a[distance=0..200] [{"text":"琼斯：","color":"yellow","bold": true},{"text":"\n“外面什么动静？你们去查查。”","color":"white","bold": false}]
 
@@ -88,7 +109,7 @@ execute if score @s rng1 matches 400 run tp @e[tag=SEAmob_surrended_invis] 90100
 execute if score @s rng1 matches 402 positioned 90100 -300 100 run kill @e[tag=SEAmob_surrended_invis,distance=0..200]
 execute if score @s rng1 matches 358..400 run tag @e[tag=SEAmob,tag=SEAmob_surrended,limit=3,sort=random,tag=!SEAmob_surrended_invis] add SEAmob_surrended_invis
 
-execute if score @s rng1 matches 400 positioned 90142 134 26 run kill @e[tag=SEAmob,tag=!SEAnpc,distance=0..18]
+execute if score @s rng1 matches 400 positioned 90142 134 26 run kill @e[tag=SEAmob,tag=!SEAnpc,tag=!SEAnorman,distance=0..18]
 
 
 execute if score @s rng1 matches 382 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
@@ -104,5 +125,4 @@ execute if score @s rng1 matches 501 as @n[tag=SEAfiona,x=90000,y=100,z=0,distan
 
 execute if score @s rng1 matches 512 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run setblock 90140 140 38 redstone_lamp[lit=false] destroy
 execute if score @s rng1 matches 512 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run setblock 90144 140 38 redstone_lamp[lit=false] destroy
-
 

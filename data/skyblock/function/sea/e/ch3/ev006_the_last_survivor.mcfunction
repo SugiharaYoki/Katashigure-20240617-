@@ -46,7 +46,7 @@ execute as @s[scores={sea_4temp1=276}] at @s as @p[tag=SEAPT] if entity @n[tag=s
 execute as @s[scores={sea_4temp1=276}] at @s as @p[tag=SEAPT] if entity @n[tag=sc,scores={sea_player=2..}] \
  run tellraw @a[distance=0..50] [{"selector":"@s","color":"white"},{"text":"：不管如何，马绍尔先生，你跟着我们来吧。至少我们能暂时保证你的安全。","color":"white"}]
 
-execute as @s[scores={sea_4temp1=302}] at @s run tellraw @a[distance=0..250] [{"text":"马绍尔：","color":"green","bold": true},{"text":"\n“先生，您看我像还能活着能离开的样子吗？”","color":"white","bold": false}]
+execute as @s[scores={sea_4temp1=302}] at @s run tellraw @a[distance=0..250] [{"text":"马绍尔：","color":"green","bold": true},{"text":"\n“先生，您看我像还能活着离开的样子吗？”","color":"white","bold": false}]
 execute as @s[scores={sea_4temp1=302}] at @s run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
 
 execute as @s[scores={sea_4temp1=324}] at @s run tellraw @a[distance=0..250] [{"text":"马绍尔：","color":"green","bold": true},{"text":"\n“我早就被感染了，要不了多久我就会变成尸变体。没错，和他们一样。……和斯顿一样。”","color":"white","bold": false}]

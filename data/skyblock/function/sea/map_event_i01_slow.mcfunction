@@ -153,7 +153,7 @@ execute as @n[tag=sc,scores={sea_4temp2=3000..5000,sea_4temp5=11..28}] as @n[tag
 execute as @n[tag=sc,scores={sea_4temp2=3000..5000,sea_4temp5=29..34}] as @n[tag=SEAelectric] at @s run tp @s ~1 ~ ~
 execute as @n[tag=sc,scores={sea_4temp2=3000..5000,sea_4temp5=40}] as @n[tag=SEAelectric] at @s run kill @s
 
-execute if items entity @a container.* fire_charge as @a[tag=SEAPT,advancements={skyblock:sea/doc/g24=false}] at @s if items entity @s container.* fire_charge run advancement grant @s only skyblock:sea/doc/g24
+execute if items entity @a container.* fire_charge as @a[tag=SEAPT,advancements={skyblock:sea/doc/g24=false}] at @s if items entity @s container.* fire_charge run give @s mojang_banner_pattern[custom_data={sea_docg24:true}]
 
 execute as @n[tag=sc,scores={sea_4temp2=6000..6001}] run scoreboard players add @n[tag=sc] sea_4temp2 1
 execute as @n[tag=sc,scores={sea_4temp2=6000..6002}] run function skyblock:sea/e/ch1/boss1_framauros_alive

@@ -12,3 +12,4 @@ execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches ..500 run sc
 
 execute unless entity @n[tag=SEAfiona] positioned 90126 122 23 run function skyblock:sea/m/unique/npc_fiona
 
+

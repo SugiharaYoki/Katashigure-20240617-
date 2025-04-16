@@ -8,7 +8,8 @@
         },
         "description": {
             "text": "解开水生生物研究区域的戒严管控。\n“毕竟它们七秒之后就会忘记自己已经变异了”。",
-            "color": "gray"
+            "color": "gray",
+            "bold": false
         },
         "icon": {
             "id": "minecraft:iron_hoe"

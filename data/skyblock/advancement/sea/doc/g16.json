@@ -8,7 +8,8 @@
         },
         "description": {
             "text": "使用爆炸攻击攻击德怀特4次。\n“那一晚，整个物资层都在摇晃。”",
-            "color": "gray"
+            "color": "gray",
+            "bold": false
         },
         "icon": {
             "id": "minecraft:diamond_hoe"

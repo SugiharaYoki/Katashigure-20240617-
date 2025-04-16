@@ -8,7 +8,8 @@
         },
         "description": {
             "text": "到达通讯大楼时，邪教徒的警戒度低于20。\n“希望你并没杀光那些哨兵。”",
-            "color": "gray"
+            "color": "gray",
+            "bold": false
         },
         "icon": {
             "id": "minecraft:iron_hoe"

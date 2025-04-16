@@ -11,7 +11,7 @@ execute at @s unless block ~ ~-1 ~ water unless block ~ ~ ~ water run scoreboard
 
 effect clear @s[scores={sea_oxygen=..-1}] resistance
 damage @s[scores={sea_oxygen=..-1}] 10 drown
-give @s[scores={sea_oxygen=..-1}] mojang_banner_pattern[custom_data={sea_docg02:true}]
+give @s[scores={sea_oxygen=..-1},advancements={skyblock:sea/doc/g2=false}] mojang_banner_pattern[custom_data={sea_docg02:true}]
 
 #任务目标列表
 execute if items entity @s weapon.mainhand spyglass at @s run function skyblock:sea/p/spyglass
@@ -42,10 +42,12 @@ run title @s actionbar [{"text": "目前装填：","color": "gray"},{"text": "�
 execute if items entity @s weapon.mainhand crossbow[charged_projectiles=[{id:"minecraft:spectral_arrow"}]] \
 run title @s actionbar [{"text": "目前装填：","color": "gray"},{"text": "静滞光棱","color": "gold"}]
 
+execute as @s[tag=SEA_spectral_autocharge] at @s run forceload add 90205 112
 execute as @s[tag=SEA_spectral_autocharge] at @s run item replace block 90205 13 112 container.0 from entity @s weapon.mainhand
 execute as @s[tag=SEA_spectral_autocharge] at @s run data modify block 90205 13 112 Items[0] merge value {components:{"minecraft:charged_projectiles":[{id:"minecraft:spectral_arrow"}]}}
 execute as @s[tag=SEA_spectral_autocharge] at @s run item replace entity @s weapon.mainhand from block 90205 13 112 container.0
 execute as @s[tag=SEA_spectral_autocharge] at @s run clear @s spectral_arrow 1
+execute as @s[tag=SEA_spectral_autocharge] at @s run forceload remove 90205 112
 execute as @s[tag=SEA_spectral_autocharge] at @s run tag @s remove SEA_spectral_autocharge
 
 execute as @s[tag=e_w_04,level=..7,scores={sea_oxygen=20..}] run xp add @s 1 points

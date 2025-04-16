@@ -8,7 +8,8 @@
         },
         "description": {
             "text": "目睹一次定时炸弹的爆炸。\n“麦迪逊就那么坚信我会做出定时炸弹吗？”\n“等等、你说他只是在自娱自乐？”",
-            "color": "gray"
+            "color": "gray",
+            "bold": false
         },
         "icon": {
             "id": "minecraft:stone_hoe"

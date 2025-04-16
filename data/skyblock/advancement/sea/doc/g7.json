@@ -8,7 +8,8 @@
         },
         "description": {
             "text": "迟迟解不开文件柜A的谜题。\n“你就不能读一读提示吗？”",
-            "color": "gray"
+            "color": "gray",
+            "bold": false
         },
         "icon": {
             "id": "minecraft:stone_hoe"

@@ -8,7 +8,8 @@
         },
         "description": {
             "text": "使用火焰焚烧亡灵之驹。\n“可惜吃不到马肉刺身了”。",
-            "color": "gray"
+            "color": "gray",
+            "bold": false
         },
         "icon": {
             "id": "minecraft:stone_hoe"

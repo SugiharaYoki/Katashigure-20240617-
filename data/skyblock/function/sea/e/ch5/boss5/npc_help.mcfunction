@@ -1,0 +1,9 @@
+damage @s[tag=!SEAboss5_npc_helper] 0 generic by @n[tag=SEAboss5]
+execute if entity @s[tag=!SEAboss5_npc_helper,type=pillager] run item replace entity @s weapon.mainhand with crossbow
+execute if entity @s[tag=!SEAboss5_npc_helper,type=vindicator] run item replace entity @s weapon.mainhand with iron_sword
+tag @s add SEAboss5_npc_helper
+tag @s add SEAmob_surrended
+tag @s add SEAnpc
+data modify entity @s Invulnerable set value 0b
+attribute @s[type=vindicator] generic.attack_damage base set 2
+attribute @s[type=vindicator] generic.movement_speed base set 0.4

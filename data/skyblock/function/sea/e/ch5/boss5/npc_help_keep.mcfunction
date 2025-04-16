@@ -1,0 +1,1 @@
+damage @s 0 generic by @n[tag=SEAboss5]

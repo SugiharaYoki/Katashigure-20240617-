@@ -94,9 +94,10 @@ execute if score sea_ch5_instant_freeze sea_4temp2 matches 1..140 run function s
 
 execute store result score sea_ch5_mood sea_4temp1 run random value 1..25
 execute positioned 90112 149 103 if score sea_ch5_mood sea_4temp1 matches 1 as @r[tag=SEAPT,distance=0..400] run function skyblock:sea/e/ch5/mood_1
-execute positioned 90112 149 103 if score sea_ch5_mood sea_4temp1 matches 3..14 as @r[tag=SEAPT,distance=0..400] at @s positioned over world_surface if entity @s[distance=0..1.5] run function skyblock:sea/e/ch5/mood_1_surface
+execute positioned 90112 149 103 if score sea_ch5_mood sea_4temp1 matches 3..14 as @r[tag=SEAPT,distance=0..400] at @s positioned over world_surface if entity @s[distance=0..1.5] unless entity @n[tag=SEAboss5] unless entity @n[tag=SEAboss5b] run function skyblock:sea/e/ch5/mood_1_surface
 execute positioned 90112 149 103 if score sea_ch5_mood sea_4temp1 matches 1..20 as @r[tag=SEAPT,distance=0..400] at @s positioned over world_surface if entity @s[distance=0..1.5] run particle minecraft:ash ~ ~8 ~ 6 5 6 0 20
-execute positioned 90112 149 103 if score sea_ch5_mood sea_4temp1 matches 1..20 as @r[tag=SEAPT,distance=0..400] at @s positioned over world_surface if entity @s[distance=0..1.5] run particle minecraft:white_ash ~ ~8 ~ 6 5 6 0 20
+execute positioned 90112 149 103 if score sea_ch5_mood sea_4temp1 matches 1..20 as @r[tag=SEAPT,distance=0..400] at @s positioned over world_surface if entity @s[distance=0..1.5] unless block 90150 124 15 chain run particle minecraft:white_ash ~ ~8 ~ 6 5 6 0 20
+execute positioned 90112 149 103 if score sea_ch5_mood sea_4temp1 matches 1..20 as @r[tag=SEAPT,distance=0..400] at @s positioned over world_surface if entity @s[distance=0..1.5] if block 90150 124 15 chain run particle minecraft:crimson_spore ~ ~8 ~ 6 5 6 0 20
 
 
 
@@ -219,8 +220,8 @@ execute if entity @a[tag=SEAPT,tag=!SEAPF,x=90138,y=137,z=60,dx=6,dy=10,dz=9] po
 execute positioned 90142 135 47 if entity @a[tag=SEAPT,tag=!SEAPF,distance=0..10] if score SEA_ch5_event_building rng1 matches ..0 if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 5050.. run scoreboard players set SEA_ch5_event_building rng1 1
 execute if score SEA_ch5_event_building rng1 matches 1.. positioned 90142 137 42 run function skyblock:sea/e/ch5/event_array_building_general
 
-execute if score @n[tag=SEAjones] rng1 matches ..354 as @n[type=villager,tag=SEAjones,x=90144,y=144,z=51,distance=..15] at @s if entity @a[tag=SEAPT,x=90144,y=144,z=51,dx=7,dy=5,dz=7] run function skyblock:sea/e/ch5/event_array_building_jones
-execute if score @n[tag=SEAjones] rng1 matches 355.. run function skyblock:sea/e/ch5/event_array_building_jones
+execute unless score @n[tag=SEAjones] rng1 matches 355.. as @n[type=villager,tag=SEAjones,x=90144,y=144,z=51,distance=..15] at @s if entity @a[tag=SEAPT,x=90144,y=144,z=51,dx=7,dy=5,dz=7] run function skyblock:sea/e/ch5/event_array_building_jones
+execute if score @n[tag=SEAjones] rng1 matches 355.. as @n[type=villager,tag=SEAjones,x=90144,y=144,z=51,distance=..15] run function skyblock:sea/e/ch5/event_array_building_jones
 
 
 execute if score SEA_ch5_event_outerspace_fiona sea_4temp1 matches ..0 if entity @n[tag=SEAfiona,x=90088,y=127,z=99,dx=9,dy=4,dz=6] run scoreboard players set SEA_ch5_event_outerspace_fiona sea_4temp1 1
@@ -229,4 +230,16 @@ execute if score SEA_ch5_event_outerspace_fiona sea_4temp1 matches 1..500 run fu
 execute if score SEA_ch5_event_outerspace_fiona sea_4temp2 matches ..0 if entity @n[tag=SEAfiona,x=90092,y=145,z=139,distance=0..20] run scoreboard players set SEA_ch5_event_outerspace_fiona sea_4temp2 1
 execute if score SEA_ch5_event_outerspace_fiona sea_4temp2 matches 1..500 run function skyblock:sea/e/ch5/outerspace/medical
 
- 
+execute positioned 90142 134 26 as @n[tag=SEAnorman,type=zombie_villager,distance=0..250] at @s unless score @s rng1 matches 1.. if entity @a[tag=SEAPT,tag=!SEAPF,distance=0..6.3] run scoreboard players set @s rng1 1
+
+
+execute positioned 90142 134 26 as @n[type=breeze_wind_charge,distance=13..50] at @s run kill @s
+
+
+execute if score SEA_ch5_event_fiona_favor rng1 matches 26.. as @a[tag=SEAPT,advancements={skyblock:sea/doc/g28=false}] at @s run give @s mojang_banner_pattern[custom_data={sea_docg28:true}]
+
+execute if entity @a[tag=SEAPT,scores={SEA_ch5_event_illager_killed=1..}] run scoreboard players remove SEA_ch5_event_illager_count rng1 1
+execute if entity @a[tag=SEAPT,scores={SEA_ch5_event_illager_killed=1..}] run scoreboard players reset @a SEA_ch5_event_illager_killed
+
+
+

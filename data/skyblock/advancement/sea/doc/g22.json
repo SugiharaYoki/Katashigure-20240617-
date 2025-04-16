@@ -8,7 +8,8 @@
         },
         "description": {
             "text": "使用可控式地雷轰炸艾德雯娜。\n“真不赖，我手上的装备，你也全都有。”",
-            "color": "gray"
+            "color": "gray",
+            "bold": false
         },
         "icon": {
             "id": "minecraft:iron_hoe"

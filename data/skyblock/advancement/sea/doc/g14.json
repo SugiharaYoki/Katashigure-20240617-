@@ -7,8 +7,9 @@
             "italic": false
         },
         "description": {
-            "text": "直至战胜艾德雯娜为止，没有使用过撬棍以外的武器。\n“远程武器？重型武器？我是不是错过了什么？”",
-            "color": "gray"
+            "text": "直至战胜艾德雯娜为止，没有获得过撬棍以外的武器。\n“远程武器？重型武器？我是不是错过了什么？”",
+            "color": "gray",
+            "bold": false
         },
         "icon": {
             "id": "minecraft:diamond_hoe"

@@ -8,7 +8,8 @@
         },
         "description": {
             "text": "获得喷火器。\n“虽然用它不能真的将腐尸烧成炽烈球体……”\n“什么？你说那反而是好事？”",
-            "color": "gray"
+            "color": "gray",
+            "bold": false
         },
         "icon": {
             "id": "minecraft:iron_hoe"

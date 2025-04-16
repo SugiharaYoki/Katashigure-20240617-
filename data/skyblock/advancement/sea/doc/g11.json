@@ -8,7 +8,8 @@
         },
         "description": {
             "text": "重新拼好艾德雯娜的护身符。\n“正因如此，钻井平台上才没有出现不死骑士”。",
-            "color": "gray"
+            "color": "gray",
+            "bold": false
         },
         "icon": {
             "id": "minecraft:golden_hoe"

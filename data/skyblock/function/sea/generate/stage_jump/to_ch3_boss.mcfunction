@@ -3,7 +3,6 @@ tp @a[x=90000,y=100,z=100,distance=..5000,scores={sea_progress=..7},gamemode=!sp
 
 function skyblock:sea/generate/stage_jump/to_ch3
 
-tp @a[tag=SEAPT] 90148 103 113 facing 90147 103 113
 
 scoreboard players set @n[tag=sc] sea_4temp2 400
 

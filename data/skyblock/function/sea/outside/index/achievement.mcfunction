@@ -143,9 +143,12 @@ scoreboard players add @s[advancements={skyblock:sea/doc/g23=true}] rng2 1
 scoreboard players add @s[advancements={skyblock:sea/doc/g24=true}] rng2 1
 scoreboard players add @s[advancements={skyblock:sea/doc/g25=true}] rng2 1
 scoreboard players add @s[advancements={skyblock:sea/doc/g26=true}] rng2 1
+scoreboard players add @s[advancements={skyblock:sea/doc/g27=true}] rng3 1
+scoreboard players add @s[advancements={skyblock:sea/doc/g28=true}] rng3 1
+scoreboard players add @s[advancements={skyblock:sea/doc/g29=true}] rng2 1
 
  tellraw @s [{"text":"游戏成就 探索 ","color":"aqua","bold": true},{"score":{"name":"@s","objective":"rng1"},"color":"white","bold": false},{"text":"/9","color":"white","bold": false}]
- tellraw @s [{"text":"游戏成就 巧思 ","color":"aqua","bold": true},{"score":{"name":"@s","objective":"rng2"},"color":"white","bold": false},{"text":"/11","color":"white","bold": false}]
- tellraw @s [{"text":"游戏成就 礼赞 ","color":"gold","bold": true},{"score":{"name":"@s","objective":"rng3"},"color":"white","bold": false},{"text":"/3","color":"white","bold": false}]
+ tellraw @s [{"text":"游戏成就 巧思 ","color":"aqua","bold": true},{"score":{"name":"@s","objective":"rng2"},"color":"white","bold": false},{"text":"/12","color":"white","bold": false}]
+ tellraw @s [{"text":"游戏成就 礼赞 ","color":"gold","bold": true},{"score":{"name":"@s","objective":"rng3"},"color":"white","bold": false},{"text":"/5","color":"white","bold": false}]
  tellraw @s [{"text":"游戏成就 蚀厄 ","color":"gold","bold": true},{"score":{"name":"@s","objective":"rng4"},"color":"white","bold": false},{"text":"/3","color":"white","bold": false}]
 

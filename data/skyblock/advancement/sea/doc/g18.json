@@ -8,7 +8,8 @@
         },
         "description": {
             "text": "听到联络机台的警告并立刻离去。\n“这说不定才是真正的HE！”",
-            "color": "gray"
+            "color": "gray",
+            "bold": false
         },
         "icon": {
             "id": "minecraft:stone_hoe"

@@ -8,7 +8,8 @@
         },
         "description": {
             "text": "跳过游戏的开头。\n“想象一下这才是旧版的游戏流程。”",
-            "color": "gray"
+            "color": "gray",
+            "bold": false
         },
         "icon": {
             "id": "minecraft:stone_hoe"

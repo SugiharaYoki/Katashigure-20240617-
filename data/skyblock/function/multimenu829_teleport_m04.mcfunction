@@ -3,6 +3,12 @@ execute unless entity @s[scores={SEAPT_mode=0..}] run scoreboard players set @s 
 scoreboard objectives add sea_setting_box_index dummy
 execute unless entity @s[scores={sea_setting_box_index=0..}] run scoreboard players set @s sea_setting_box_index 1
 
+execute as @s[tag=SEAPT,x=89829,y=12,z=-165,dx=30,dy=20,dz=30] at @s run function skyblock:sea/dead
+tag @a[tag=SEAPT,x=89829,y=12,z=-165,dx=30,dy=20,dz=30] add SEAPT_trial_hall
+tag @a[tag=SEAPT,x=89829,y=12,z=-165,dx=30,dy=20,dz=30] remove SEAPT
+
+tag @s remove Gaming
+tag @s remove SEAPT
 playsound minecraft:ui.button.click master @s ~ ~ ~ 0.3 1.4 0.4
 playsound minecraft:item.chorus_fruit.teleport master @s ~ ~ ~ 1.2 0.7 0.1
 particle minecraft:portal ~ ~1 ~ 0.5 0.6 0.5 0.2 60
@@ -23,3 +29,7 @@ scoreboard players set @s MultiMenu 0
 execute if entity @a[tag=SEAPT] run function skyblock:sea/generate/preload/map_prepare_ch1_player
 
 gamemode adventure
+tag @a[tag=SEAPT_trial_hall,x=89829,y=12,z=-165,dx=30,dy=20,dz=30] add SEAPT
+tag @a[tag=SEAPT_trial_hall,x=89829,y=12,z=-165,dx=30,dy=20,dz=30] remove SEAPT_trial_hall
+
+execute unless entity @a[x=89829,y=12,z=-165,dx=30,dy=20,dz=30] run kill @e[x=89829,y=12,z=-165,dx=30,dy=20,dz=30,tag=SEAmob]
