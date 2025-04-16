@@ -81,6 +81,9 @@ execute if score SEA_ch5_event_marilyn rng1 matches 4119 if score SEA_ch5_event_
 execute if score SEA_ch5_event_marilyn rng1 matches 4119 if score SEA_ch5_event_fiona_favor rng1 matches 15..16 positioned 90118 90 73 as @p[tag=SEAPT] if entity @n[tag=sc,scores={sea_player=1..}] run tellraw @a[distance=0..50] [{"selector":"@s","color":"white"},{"text":"：怎么可能，你别瞎说了。","color":"white"}]
 execute if score SEA_ch5_event_marilyn rng1 matches 4119 if score SEA_ch5_event_fiona_favor rng1 matches 17.. positioned 90118 90 73 as @p[tag=SEAPT] if entity @n[tag=sc,scores={sea_player=1..}] run tellraw @a[distance=0..50] [{"selector":"@s","color":"white"},{"text":"：所以都说了不是啦……","color":"white"}]
 
+execute if score SEA_ch5_event_marilyn rng1 matches 4139 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
+execute if score SEA_ch5_event_marilyn rng1 matches 4139 if score SEA_ch5_event_fiona_favor rng1 matches ..14 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if entity @a[tag=SEAPT,scores={SEAPT_member=1}] run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“……耐人寻味。不过我也不关心。”","color":"white","bold": false}]
+
 execute if score SEA_ch5_event_marilyn rng1 matches 5000..5100 run scoreboard players set SEA_ch5_event_marilyn rng1 5000
 
 
