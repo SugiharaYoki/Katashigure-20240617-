@@ -10,7 +10,7 @@ execute if score @s rng1 matches 20..40 run tp @s[scores={rng2=2}] ^-0.3 ^ ^
 #execute if score @s rng1 matches 20..40 run tp @s[scores={rng2=2}] ~ 135.0 ~
 
 execute if score @s[scores={rng2=3..4}] rng1 matches 5..80 run particle gust_emitter_small ~ ~ ~ 0 0 0 0.00 1
-execute if score @s rng1 matches 5..80 run particle gust_emitter_small ~ ~ ~ 0 0 0 0.00 1
+execute if score @s rng1 matches 70..80 run particle gust_emitter_small ~ ~ ~ 0 0 0 0.00 1
 execute if score @s rng1 matches 5..80 run particle end_rod ~ ~1 ~ 0 0 0 0.00 1
 execute if score @s rng1 matches 5..80 run particle end_rod ~ ~2 ~ 0 0 0 0.00 1
 execute if score @s rng1 matches 5..80 run particle end_rod ~ ~3 ~ 0 0 0 0.00 1
