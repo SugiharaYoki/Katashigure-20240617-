@@ -11,28 +11,28 @@ execute if score @s rng7 matches 80 as @n[tag=SEAfiona,x=90000,y=100,z=0,distanc
 execute if score @s rng7 matches 80 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if score SEA_ch5_event_fiona_favor rng1 matches 16.. run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“我有不太好的预感，这家伙的样子不对劲。”","color":"white","bold": false}]
 
 
-execute if score @s rng7 matches 20..120 store result score @s sea_4temp1 run random value 1..400
-execute if score @s rng7 matches 121..180 store result score @s sea_4temp1 run random value 1..280
-execute if score @s rng7 matches 181..230 store result score @s sea_4temp1 run random value 1..180
-execute if score @s rng7 matches 231..260 store result score @s sea_4temp1 run random value 1..60
+execute if score @s rng7 matches 20..120 store result score @s sea_4temp3 run random value 1..400
+execute if score @s rng7 matches 121..180 store result score @s sea_4temp3 run random value 1..280
+execute if score @s rng7 matches 181..230 store result score @s sea_4temp3 run random value 1..180
+execute if score @s rng7 matches 231..260 store result score @s sea_4temp3 run random value 1..60
 
-execute if score @s sea_4temp1 matches 1 positioned 90202 130 -30 positioned ~ ~ ~ positioned over world_surface run summon lightning_bolt ~ ~ ~
-execute if score @s sea_4temp1 matches 2 positioned 90202 130 -30 positioned ~ ~ ~18 positioned over world_surface run summon lightning_bolt ~ ~ ~
-execute if score @s sea_4temp1 matches 3 positioned 90202 130 -30 positioned ~18 ~ ~ positioned over world_surface run summon lightning_bolt ~ ~ ~
-execute if score @s sea_4temp1 matches 4 positioned 90202 130 -30 positioned ~ ~ ~-18 positioned over world_surface run summon lightning_bolt ~ ~ ~
-execute if score @s sea_4temp1 matches 5 positioned 90202 130 -30 positioned ~-18 ~ ~ positioned over world_surface run summon lightning_bolt ~ ~ ~
-execute if score @s sea_4temp1 matches 6 positioned 90202 130 -30 positioned ~-25 ~ ~25 positioned over world_surface run summon lightning_bolt ~ ~ ~
-execute if score @s sea_4temp1 matches 7 positioned 90202 130 -30 positioned ~25 ~ ~-25 positioned over world_surface run summon lightning_bolt ~ ~ ~
-execute if score @s sea_4temp1 matches 8 positioned 90202 130 -30 positioned ~-25 ~ ~-25 positioned over world_surface run summon lightning_bolt ~ ~ ~
-execute if score @s sea_4temp1 matches 9 positioned 90202 130 -30 positioned ~25 ~ ~25 positioned over world_surface run summon lightning_bolt ~ ~ ~
-execute if score @s sea_4temp1 matches 10 positioned 90202 130 -30 positioned ~ ~ ~9 positioned over world_surface run summon lightning_bolt ~ ~ ~
-execute if score @s sea_4temp1 matches 11 positioned 90202 130 -30 positioned ~9 ~ ~ positioned over world_surface run summon lightning_bolt ~ ~ ~
-execute if score @s sea_4temp1 matches 12 positioned 90202 130 -30 positioned ~ ~ ~-9 positioned over world_surface run summon lightning_bolt ~ ~ ~
-execute if score @s sea_4temp1 matches 13 positioned 90202 130 -30 positioned ~-9 ~ ~ positioned over world_surface run summon lightning_bolt ~ ~ ~
-execute if score @s sea_4temp1 matches 14 positioned 90202 130 -30 positioned ~-32 ~ ~25 positioned over world_surface run summon lightning_bolt ~ ~ ~
-execute if score @s sea_4temp1 matches 15 positioned 90202 130 -30 positioned ~25 ~ ~-32 positioned over world_surface run summon lightning_bolt ~ ~ ~
-execute if score @s sea_4temp1 matches 16 positioned 90202 130 -30 positioned ~-32 ~ ~-25 positioned over world_surface run summon lightning_bolt ~ ~ ~
-execute if score @s sea_4temp1 matches 17 positioned 90202 130 -30 positioned ~25 ~ ~32 positioned over world_surface run summon lightning_bolt ~ ~ ~
+execute if score @s sea_4temp3 matches 1 positioned 90202 130 -30 positioned ~ ~ ~ positioned over world_surface run summon lightning_bolt ~ ~ ~
+execute if score @s sea_4temp3 matches 2 positioned 90202 130 -30 positioned ~ ~ ~18 positioned over world_surface run summon lightning_bolt ~ ~ ~
+execute if score @s sea_4temp3 matches 3 positioned 90202 130 -30 positioned ~18 ~ ~ positioned over world_surface run summon lightning_bolt ~ ~ ~
+execute if score @s sea_4temp3 matches 4 positioned 90202 130 -30 positioned ~ ~ ~-18 positioned over world_surface run summon lightning_bolt ~ ~ ~
+execute if score @s sea_4temp3 matches 5 positioned 90202 130 -30 positioned ~-18 ~ ~ positioned over world_surface run summon lightning_bolt ~ ~ ~
+execute if score @s sea_4temp3 matches 6 positioned 90202 130 -30 positioned ~-25 ~ ~25 positioned over world_surface run summon lightning_bolt ~ ~ ~
+execute if score @s sea_4temp3 matches 7 positioned 90202 130 -30 positioned ~25 ~ ~-25 positioned over world_surface run summon lightning_bolt ~ ~ ~
+execute if score @s sea_4temp3 matches 8 positioned 90202 130 -30 positioned ~-25 ~ ~-25 positioned over world_surface run summon lightning_bolt ~ ~ ~
+execute if score @s sea_4temp3 matches 9 positioned 90202 130 -30 positioned ~25 ~ ~25 positioned over world_surface run summon lightning_bolt ~ ~ ~
+execute if score @s sea_4temp3 matches 10 positioned 90202 130 -30 positioned ~ ~ ~9 positioned over world_surface run summon lightning_bolt ~ ~ ~
+execute if score @s sea_4temp3 matches 11 positioned 90202 130 -30 positioned ~9 ~ ~ positioned over world_surface run summon lightning_bolt ~ ~ ~
+execute if score @s sea_4temp3 matches 12 positioned 90202 130 -30 positioned ~ ~ ~-9 positioned over world_surface run summon lightning_bolt ~ ~ ~
+execute if score @s sea_4temp3 matches 13 positioned 90202 130 -30 positioned ~-9 ~ ~ positioned over world_surface run summon lightning_bolt ~ ~ ~
+execute if score @s sea_4temp3 matches 14 positioned 90202 130 -30 positioned ~-32 ~ ~25 positioned over world_surface run summon lightning_bolt ~ ~ ~
+execute if score @s sea_4temp3 matches 15 positioned 90202 130 -30 positioned ~25 ~ ~-32 positioned over world_surface run summon lightning_bolt ~ ~ ~
+execute if score @s sea_4temp3 matches 16 positioned 90202 130 -30 positioned ~-32 ~ ~-25 positioned over world_surface run summon lightning_bolt ~ ~ ~
+execute if score @s sea_4temp3 matches 17 positioned 90202 130 -30 positioned ~25 ~ ~32 positioned over world_surface run summon lightning_bolt ~ ~ ~
 
 
 execute if score @s rng7 matches 231 positioned 90167 139 24 run stopsound @a[distance=0..250] music
