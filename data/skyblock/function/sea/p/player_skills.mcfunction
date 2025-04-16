@@ -11,7 +11,7 @@ execute at @s unless block ~ ~-1 ~ water unless block ~ ~ ~ water run scoreboard
 
 effect clear @s[scores={sea_oxygen=..-1}] resistance
 damage @s[scores={sea_oxygen=..-1}] 10 drown
-give @s[scores={sea_oxygen=..-1}] mojang_banner_pattern[custom_data={sea_docg02:true}]
+give @s[scores={sea_oxygen=..-1},advancements={skyblock:sea/doc/g2=false}] mojang_banner_pattern[custom_data={sea_docg02:true}]
 
 #任务目标列表
 execute if items entity @s weapon.mainhand spyglass at @s run function skyblock:sea/p/spyglass
