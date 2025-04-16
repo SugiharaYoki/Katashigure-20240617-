@@ -42,6 +42,7 @@ execute if score @s rng7 matches 231.. positioned 90167 159 24 as @e[tag=SEAboss
 
 execute if score @s rng7 matches 251 positioned 90167 159 24 run scoreboard players set SEAmusic rng1 4500
 
+execute if score @s rng7 matches 251 positioned 90167 159 24 run function skyblock:sea/m/unique/boss5_angel
 execute if score @s rng7 matches 251 run bossbar add 9066602 "风暴的主天使"
 execute if score @s rng7 matches 251 run bossbar set minecraft:9066602 color purple
 execute if score @s rng7 matches 251 run bossbar set minecraft:9066602 name "风暴的主天使"
