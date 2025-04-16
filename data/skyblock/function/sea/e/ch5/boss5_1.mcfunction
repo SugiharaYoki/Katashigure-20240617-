@@ -13,6 +13,8 @@ execute if score @s rng1 matches 2 run kill @e[tag=SEA_boss5_lightning_anchor,ty
 execute if score @s rng1 matches 2 run kill @e[tag=SEA_boss5_attack_rail,type=marker]
 execute if score @s rng1 matches 2 run kill @e[tag=SEA_boss5_tp_anchor,type=marker]
 execute if score @s rng1 matches 2 run kill @e[tag=SEA_boss5_attack_still_strike,type=marker]
+execute if score @s rng1 matches 2 run kill @e[tag=SEAboss5_heaven_portal,type=marker]
+
 execute if score @s rng1 matches 2 run summon breeze_wind_charge ~ ~0.5 ~ {Motion:[0.0,-1.0,0.0]}
 execute if score @s rng1 matches 5 run data modify entity @s NoAI set value 0b
 execute if score @s rng1 matches 5 run data modify entity @s Invulnerable set value 0b
