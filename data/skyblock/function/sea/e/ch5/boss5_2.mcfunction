@@ -17,12 +17,16 @@ execute at @s if entity @s[x=89000,dx=2000,z=-1000,dz=2000,y=100,dy=33] run tp @
 
 execute if score @s rng1 matches 60.. if score @s rng2 matches -5..-3 store result score @s rng5 run random value 1..9
 execute if score @s rng1 matches 60.. if score @s rng5 matches 1..9 run function skyblock:sea/e/ch5/boss5/move_jump
-execute if score @s rng1 matches 60.. if score @s[scores={rng3=0}] rng2 matches 1.. store result score @s rng3 run random value 1..5
-execute if score @s rng1 matches 60.. if score @s rng2 matches -2..0 store result score @s[tag=!Phase2] rng3 run random value 1..4
-execute if score @s rng1 matches 60.. if score @s rng2 matches -2..0 store result score @s[tag=Phase2] rng3 run random value 1..6
+execute if score @s rng1 matches 60.. if score @s[scores={rng3=0}] rng2 matches 1.. store result score @s rng3 run random value 1..6
+execute if score @s rng1 matches 60.. if score @s rng2 matches -2..0 store result score @s rng3 run random value 1..8
 execute if score @s rng1 matches 60.. if score @s[scores={rng3=1..2}] rng2 matches 0.. run function skyblock:sea/e/ch5/boss5/attack_downfall
 execute if score @s rng1 matches 60.. if score @s[scores={rng3=3..4}] rng2 matches 0.. run function skyblock:sea/e/ch5/boss5/attack_rail
 execute if score @s rng1 matches 60.. if score @s[scores={rng3=5..6}] rng2 matches 0.. run function skyblock:sea/e/ch5/boss5/attack_still_strike
+execute if score @s rng1 matches 60.. if score @s[scores={rng3=7}] rng2 matches 0.. run tag @s add sea_exp_thunderrage
+execute if score @s rng1 matches 60.. if score @s[scores={rng3=8}] rng2 matches 0.. run tag @s add sea_exp_thunderblast
+
+execute as @n[tag=sea_exp_thunderrage,tag=SEAboss5b] run function skyblock:sea/experimental/thunderrage
+execute as @n[tag=sea_exp_thunderblast,tag=SEAboss5b] run function skyblock:sea/experimental/thunderblast
 
 execute if score @s rng1 matches 60.. if block ~ ~-0.5 ~ air at @s run function skyblock:sea/e/ch5/boss5/particle_insky_angel
 
