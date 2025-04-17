@@ -1,7 +1,7 @@
 execute if score SEA_ch5_event_boss5 rng1 matches 0.. run effect give @s resistance infinite 5 true
 
 execute if score SEA_ch5_event_boss5 rng1 matches 1..3 run tag @s add Phase2
-execute if score SEA_ch5_event_boss5 rng1 matches 3..240 run tp @s 90142 135 26
+execute if score SEA_ch5_event_boss5 rng1 matches 3..30 run tp @s 90142 135 26
 execute if score SEA_ch5_event_boss5 rng1 matches 3..240 run particle crimson_spore ~ ~0.2 ~ 1 0.3 1 0.05 10
 execute if score SEA_ch5_event_boss5 rng1 matches 180..240 run particle crimson_spore ~ ~0.2 ~ 5 0.3 5 0.05 20
 execute if score SEA_ch5_event_boss5 rng1 matches 0..20 run playsound ambient.soul_sand_valley.additions ambient @a ~ ~ ~ 5 1.3
@@ -37,7 +37,8 @@ execute if score @s sea_4temp3 matches 16 positioned 90202 130 -30 positioned ~-
 execute if score @s sea_4temp3 matches 17 positioned 90202 130 -30 positioned ~25 ~ ~32 positioned over world_surface run summon lightning_bolt ~ ~ ~
 
 
-execute if score SEA_ch5_event_boss5 rng1 matches 221 positioned 90167 139 24 run stopsound @a[distance=0..250] music
+execute if score SEA_ch5_event_boss5 rng1 matches 180 positioned 90167 139 24 run stopsound @a[distance=0..250] music
+execute if score SEA_ch5_event_boss5 rng1 matches 180 positioned 90167 139 24 run scoreboard players set SEAmusic rng1 99999
 execute if score SEA_ch5_event_boss5 rng1 matches 231 positioned 90167 139 24 run setblock 90153 124 18 chain
 execute if score SEA_ch5_event_boss5 rng1 matches 231 positioned 90167 139 24 run summon marker ~ ~ ~ {Tags:["SEAboss5_heaven_portal"]}
 
