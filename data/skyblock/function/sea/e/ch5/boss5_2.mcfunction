@@ -49,3 +49,5 @@ execute if score SEA_ch5_event_boss5 rng1 matches 1000.. run kill @e[tag=SEAboss
 
 execute if score SEA_ch5_event_boss5 rng2 matches 1..300 positioned 90167 139 24 if entity @n[type=!illager,distance=0..40] at @s run function skyblock:sea/e/ch5/boss5/npc_help_phase3
 
+effect clear @s resistance
+
