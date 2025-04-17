@@ -15,27 +15,27 @@ execute positioned 90142 134 26 if entity @s[distance=20..] at @s at @n[tag=SEA_
 execute at @s unless block ~ ~0.5 ~ air unless block ~ ~1.5 ~ air run tp @s @n[tag=SEA_boss5_tp_anchor,type=marker]
 execute at @s if entity @s[x=89000,dx=2000,z=-1000,dz=2000,y=100,dy=33] run tp @s @n[tag=SEA_boss5_tp_anchor,type=marker]
 
-execute if score @s rng1 matches 160.. if score @s rng2 matches -5..-3 store result score @s rng5 run random value 1..9
-execute if score @s rng1 matches 160.. if score @s rng5 matches 1..9 run function skyblock:sea/e/ch5/boss5/move_jump
-execute if score @s rng1 matches 160.. if score @s[scores={rng3=0}] rng2 matches 1.. store result score @s rng3 run random value 1..5
-execute if score @s rng1 matches 160.. if score @s rng2 matches -2..0 store result score @s[tag=!Phase2] rng3 run random value 1..4
-execute if score @s rng1 matches 160.. if score @s rng2 matches -2..0 store result score @s[tag=Phase2] rng3 run random value 1..6
-execute if score @s rng1 matches 160.. if score @s[scores={rng3=1..2}] rng2 matches 0.. run function skyblock:sea/e/ch5/boss5/attack_downfall
-execute if score @s rng1 matches 160.. if score @s[scores={rng3=3..4}] rng2 matches 0.. run function skyblock:sea/e/ch5/boss5/attack_rail
-execute if score @s rng1 matches 160.. if score @s[scores={rng3=5..6}] rng2 matches 0.. run function skyblock:sea/e/ch5/boss5/attack_still_strike
+execute if score @s rng1 matches 60.. if score @s rng2 matches -5..-3 store result score @s rng5 run random value 1..9
+execute if score @s rng1 matches 60.. if score @s rng5 matches 1..9 run function skyblock:sea/e/ch5/boss5/move_jump
+execute if score @s rng1 matches 60.. if score @s[scores={rng3=0}] rng2 matches 1.. store result score @s rng3 run random value 1..5
+execute if score @s rng1 matches 60.. if score @s rng2 matches -2..0 store result score @s[tag=!Phase2] rng3 run random value 1..4
+execute if score @s rng1 matches 60.. if score @s rng2 matches -2..0 store result score @s[tag=Phase2] rng3 run random value 1..6
+execute if score @s rng1 matches 60.. if score @s[scores={rng3=1..2}] rng2 matches 0.. run function skyblock:sea/e/ch5/boss5/attack_downfall
+execute if score @s rng1 matches 60.. if score @s[scores={rng3=3..4}] rng2 matches 0.. run function skyblock:sea/e/ch5/boss5/attack_rail
+execute if score @s rng1 matches 60.. if score @s[scores={rng3=5..6}] rng2 matches 0.. run function skyblock:sea/e/ch5/boss5/attack_still_strike
 
-execute if score @s rng1 matches 160.. if block ~ ~-0.5 ~ air at @s run function skyblock:sea/e/ch5/boss5/particle_insky
+execute if score @s rng1 matches 60.. if block ~ ~-0.5 ~ air at @s run function skyblock:sea/e/ch5/boss5/particle_insky_angel
 
 execute positioned 90142 134 26 as @e[type=marker,tag=SEA_boss5_lightning_anchor,distance=0..50] at @s run function skyblock:sea/e/ch5/boss5/lightning_anchor
 execute positioned 90142 134 26 as @e[type=marker,tag=SEA_boss5_attack_rail,distance=0..50] at @s run function skyblock:sea/e/ch5/boss5/attack_rail_marker
 execute positioned 90142 134 26 as @e[type=marker,tag=SEA_boss5_attack_still_strike,distance=0..50] at @s run function skyblock:sea/e/ch5/boss5/attack_still_strike_marker
 
-execute if score SEA_ch5_event_boss5 rng2 matches 87.. if score @s rng1 matches 160.. store result score @s rng9 run random value 1..40
+execute if score SEA_ch5_event_boss5 rng2 matches 87.. if score @s rng1 matches 60.. store result score @s rng9 run random value 1..40
 execute if score SEA_ch5_event_boss5 rng2 matches 87.. positioned 90142 134 26 as @n[type=#illager,distance=0..50,tag=!SEAboss5_npc_helper,type=pillager] at @s if entity @n[tag=SEAboss5b,distance=..12] run function skyblock:sea/e/ch5/boss5/npc_help
 execute if score SEA_ch5_event_boss5 rng2 matches 87.. positioned 90142 134 26 as @n[type=#illager,distance=0..50,tag=!SEAboss5_npc_helper,type=vindicator] at @s if entity @n[tag=SEAboss5b,distance=..8] run function skyblock:sea/e/ch5/boss5/npc_help
 execute positioned 90142 134 26 as @n[type=#illager,distance=0..50,type=pillager] at @s unless entity @n[tag=SEAboss5b,distance=..12] run function skyblock:sea/e/ch5/boss5/npc_help_quit
 execute positioned 90142 134 26 as @n[type=#illager,distance=0..50,type=vindicator] at @s unless entity @n[tag=SEAboss5b,distance=..8] run function skyblock:sea/e/ch5/boss5/npc_help_quit
-execute if score SEA_ch5_event_boss5 rng2 matches 87.. if score @s rng1 matches 160.. if score @s rng9 matches 1 positioned 90142 134 26 as @e[type=#illager,distance=0..50,limit=3,sort=random] at @s run function skyblock:sea/e/ch5/boss5/npc_help_keep
+execute if score SEA_ch5_event_boss5 rng2 matches 87.. if score @s rng1 matches 60.. if score @s rng9 matches 1 positioned 90142 134 26 as @e[type=#illager,distance=0..50,limit=3,sort=random] at @s run function skyblock:sea/e/ch5/boss5/npc_help_keep
 
 execute positioned 90142 134 26 as @n[distance=..200,type=vindicator] at @s if entity @n[tag=SEAboss5,distance=8..] run effect give @a[distance=0..2] resistance 1 4 true
 

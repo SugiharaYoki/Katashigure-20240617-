@@ -50,7 +50,7 @@ execute if score SEA_ch5_event_boss5 rng1 matches 251 run bossbar set minecraft:
 execute if score SEA_ch5_event_boss5 rng1 matches 251 run bossbar set minecraft:9066602 name "风暴的主天使"
 execute if score SEA_ch5_event_boss5 rng1 matches 251 run bossbar set minecraft:9066602 players @a[tag=SEAPT]
 execute if score SEA_ch5_event_boss5 rng1 matches 251 run bossbar set minecraft:9066602 style progress
-execute if score SEA_ch5_event_boss5 rng1 matches 251 run bossbar set minecraft:9066602 max 300
+execute if score SEA_ch5_event_boss5 rng1 matches 251 run bossbar set minecraft:9066602 max 800
 execute if score SEA_ch5_event_boss5 rng1 matches 251 run scoreboard players set @n[tag=SEAboss5b] rng1 1
 execute if score SEA_ch5_event_boss5 rng1 matches 251 run scoreboard players set @n[tag=SEAboss5b] rng2 0
 execute if score SEA_ch5_event_boss5 rng1 matches 251 run scoreboard players set @n[tag=SEAboss5b] rng3 0
