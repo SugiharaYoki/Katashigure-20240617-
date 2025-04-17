@@ -1,6 +1,7 @@
 execute if score SEA_ch5_event_boss5 rng1 matches 0.. run effect give @s resistance infinite 5 true
 
 execute if score SEA_ch5_event_boss5 rng1 matches 1..3 run tag @s add Phase2
+execute if score SEA_ch5_event_boss5 rng1 matches 3..240 run tp @s 90142 135 26
 execute if score SEA_ch5_event_boss5 rng1 matches 3..240 run particle crimson_spore ~ ~0.2 ~ 1 0.3 1 0.05 10
 execute if score SEA_ch5_event_boss5 rng1 matches 180..240 run particle crimson_spore ~ ~0.2 ~ 5 0.3 5 0.05 20
 execute if score SEA_ch5_event_boss5 rng1 matches 0..20 run playsound ambient.soul_sand_valley.additions ambient @a ~ ~ ~ 5 1.3
@@ -49,7 +50,7 @@ execute if score SEA_ch5_event_boss5 rng1 matches 251 run bossbar set minecraft:
 execute if score SEA_ch5_event_boss5 rng1 matches 251 run bossbar set minecraft:9066602 name "风暴的主天使"
 execute if score SEA_ch5_event_boss5 rng1 matches 251 run bossbar set minecraft:9066602 players @a[tag=SEAPT]
 execute if score SEA_ch5_event_boss5 rng1 matches 251 run bossbar set minecraft:9066602 style progress
-execute if score SEA_ch5_event_boss5 rng1 matches 251 run bossbar set minecraft:9066602 max 400
+execute if score SEA_ch5_event_boss5 rng1 matches 251 run bossbar set minecraft:9066602 max 300
 execute if score SEA_ch5_event_boss5 rng1 matches 251 run scoreboard players set @n[tag=SEAboss5b] rng1 1
 execute if score SEA_ch5_event_boss5 rng1 matches 251 run scoreboard players set @n[tag=SEAboss5b] rng2 0
 execute if score SEA_ch5_event_boss5 rng1 matches 251 run scoreboard players set @n[tag=SEAboss5b] rng3 0
