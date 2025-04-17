@@ -17,3 +17,6 @@ execute if score SEA_ch5_event_illager_count rng1 matches 40.. positioned 90142 
 execute if score SEA_ch5_event_illager_count rng1 matches 70.. positioned 90142 135 44 run function skyblock:sea/m/vindicator
 execute if score SEA_ch5_event_illager_count rng1 matches 90.. positioned 90142 135 44 run function skyblock:sea/m/pillager2
 execute if score SEA_ch5_event_illager_count rng1 matches 90.. positioned 90142 135 44 run function skyblock:sea/m/pillager2
+
+execute if score SEA_ch5_event_illager_count rng1 matches 30.. run item replace entity @e[type=#illager,distance=0..5] weapon.mainhand with air
+execute if score SEA_ch5_event_illager_count rng1 matches 30.. positioned 90142 135 44 run item replace entity @e[type=#illager,distance=0..5] weapon.mainhand with air
