@@ -103,5 +103,6 @@ effect give @s slow_falling 5 0 true
 
 execute at @s[tag=!Phase3,scores={health=..110}] run scoreboard players set SEA_ch5_event_boss5 rng1 1
 execute at @s[tag=!Phase3,scores={health=..110}] run tag @s add Phase3
-execute if score SEA_ch5_event_boss5 rng1 matches 1.. run function skyblock:sea/e/ch5/boss5/particle_entering_phase3
+execute if score SEA_ch5_event_boss5 rng1 matches 1.. unless entity @n[tag=SEAboss5b] as @n[tag=SEAnorman] run function skyblock:sea/e/ch5/boss5/particle_entering_phase3
+execute if score SEA_ch5_event_boss5 rng1 matches 1.. if entity @n[tag=SEAboss5b] as @n[tag=SEAangel] run function skyblock:sea/e/ch5/boss5/particle_entering_phase3
 
