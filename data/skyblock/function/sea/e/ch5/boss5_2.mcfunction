@@ -25,8 +25,9 @@ execute if score @s rng1 matches 60.. if score @s[scores={rng3=5..6}] rng2 match
 execute if score @s rng1 matches 60.. if score @s[scores={rng3=7}] rng2 matches 0.. run tag @s add sea_exp_thunderrage
 execute if score @s rng1 matches 60.. if score @s[scores={rng3=8}] rng2 matches 0.. run tag @s add sea_exp_thunderblast
 
-execute as @n[tag=sea_exp_thunderrage,tag=SEAboss5b] run function skyblock:sea/experimental/thunderrage
-execute as @n[tag=sea_exp_thunderblast,tag=SEAboss5b] run function skyblock:sea/experimental/thunderblast
+execute as @n[tag=sea_exp_thunderrage,tag=SEAboss5b] at @s run function skyblock:sea/experimental/thunderrage
+execute as @n[tag=sea_exp_thunderblast,tag=SEAboss5b] at @s run function skyblock:sea/experimental/thunderblast
+execute if score @s rng1 matches 60.. if score @s[scores={rng3=7..8}] rng2 matches 1.. run scoreboard players add @s rng2 1
 execute if score @s rng1 matches 60.. if score @s[scores={rng3=7..8}] rng2 matches 50.. run scoreboard players set @s rng2 -20
 
 execute if score @s rng1 matches 60.. if block ~ ~-0.5 ~ air at @s run function skyblock:sea/e/ch5/boss5/particle_insky_angel
