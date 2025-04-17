@@ -66,19 +66,20 @@ execute if score SEA_ch5_event_boss5 rng1 matches 251 as @n[tag=SEAboss5b] at @s
 execute if score SEA_ch5_event_boss5 rng1 matches 252..256 as @n[tag=SEAboss5b] at @s run playsound entity.generic.explode hostile @a ^ ^ ^1 1 1.2
 execute if score SEA_ch5_event_boss5 rng1 matches 252..256 as @n[tag=SEAboss5b] at @s run playsound entity.generic.explode hostile @a ^ ^ ^1 2 0.8
 execute if score SEA_ch5_event_boss5 rng1 matches 253 as @n[tag=SEAboss5b] at @s run particle explosion_emitter ^ ^ ^1 0.5 0.5 0.5 0 1
-execute if score SEA_ch5_event_boss5 rng1 matches 255 as @n[tag=SEAboss5b] at @s run particle explosion_emitter ^ ^ ^2 0.5 0.5 0.5 0 1
-execute if score SEA_ch5_event_boss5 rng1 matches 257 as @n[tag=SEAboss5b] at @s run particle explosion_emitter ^1 ^ ^3 0.5 0.5 0.5 0 1
-execute if score SEA_ch5_event_boss5 rng1 matches 259 as @n[tag=SEAboss5b] at @s run particle explosion_emitter ^2 ^ ^4 0.5 0.5 0.5 0 1
-execute if score SEA_ch5_event_boss5 rng1 matches 261 as @n[tag=SEAboss5b] at @s run particle explosion_emitter ^3 ^ ^5 0.5 0.5 0.5 0 1
-execute if score SEA_ch5_event_boss5 rng1 matches 257 as @n[tag=SEAboss5b] at @s run particle explosion_emitter ^-1 ^ ^3 0.5 0.5 0.5 0 1
-execute if score SEA_ch5_event_boss5 rng1 matches 259 as @n[tag=SEAboss5b] at @s run particle explosion_emitter ^-2 ^ ^4 0.5 0.5 0.5 0 1
-execute if score SEA_ch5_event_boss5 rng1 matches 261 as @n[tag=SEAboss5b] at @s run particle explosion_emitter ^-3 ^ ^5 0.5 0.5 0.5 0 1
-execute if score SEA_ch5_event_boss5 rng1 matches 264 as @n[tag=SEAboss5b] at @s positioned ^ ^ ^1.5 positioned over world_surface run summon lightning_bolt ~ ~ ~
-execute if score SEA_ch5_event_boss5 rng1 matches 265 as @n[tag=SEAboss5b] at @s positioned ^ ^ ^2 positioned over world_surface run summon lightning_bolt ~ ~ ~
-execute if score SEA_ch5_event_boss5 rng1 matches 266 as @n[tag=SEAboss5b] at @s positioned ^ ^ ^2.5 positioned over world_surface run summon lightning_bolt ~ ~ ~
-execute if score SEA_ch5_event_boss5 rng1 matches 267 as @n[tag=SEAboss5b] at @s positioned ^ ^ ^3 positioned over world_surface run summon lightning_bolt ~ ~ ~
-execute if score SEA_ch5_event_boss5 rng1 matches 267 as @n[tag=SEAboss5b] at @s run kill @n[tag=SEAboss5,type=zombie_villager]
-execute if score SEA_ch5_event_boss5 rng1 matches 267 as @n[tag=SEAboss5b] at @s run bossbar set minecraft:9066601 value 0
+execute if score SEA_ch5_event_boss5 rng1 matches 256 as @n[tag=SEAboss5b] at @s run particle explosion_emitter ^ ^ ^2 0.5 0.5 0.5 0 1
+execute if score SEA_ch5_event_boss5 rng1 matches 259 as @n[tag=SEAboss5b] at @s run particle explosion_emitter ^1 ^ ^3 0.5 0.5 0.5 0 1
+execute if score SEA_ch5_event_boss5 rng1 matches 262 as @n[tag=SEAboss5b] at @s run particle explosion_emitter ^2 ^ ^4 0.5 0.5 0.5 0 1
+execute if score SEA_ch5_event_boss5 rng1 matches 265 as @n[tag=SEAboss5b] at @s run particle explosion_emitter ^3 ^ ^5 0.5 0.5 0.5 0 1
+execute if score SEA_ch5_event_boss5 rng1 matches 259 as @n[tag=SEAboss5b] at @s run particle explosion_emitter ^-1 ^ ^3 0.5 0.5 0.5 0 1
+execute if score SEA_ch5_event_boss5 rng1 matches 262 as @n[tag=SEAboss5b] at @s run particle explosion_emitter ^-2 ^ ^4 0.5 0.5 0.5 0 1
+execute if score SEA_ch5_event_boss5 rng1 matches 265 as @n[tag=SEAboss5b] at @s run particle explosion_emitter ^-3 ^ ^5 0.5 0.5 0.5 0 1
+execute if score SEA_ch5_event_boss5 rng1 matches 269 as @n[tag=SEAboss5b] at @s positioned ^ ^ ^1.5 positioned over world_surface run summon lightning_bolt ~ ~ ~
+execute if score SEA_ch5_event_boss5 rng1 matches 272 as @n[tag=SEAboss5b] at @s positioned ^ ^ ^2 positioned over world_surface run summon lightning_bolt ~ ~ ~
+execute if score SEA_ch5_event_boss5 rng1 matches 275 as @n[tag=SEAboss5b] at @s positioned ^ ^ ^2.5 positioned over world_surface run summon lightning_bolt ~ ~ ~
+execute if score SEA_ch5_event_boss5 rng1 matches 278 as @n[tag=SEAboss5b] at @s positioned ^ ^ ^3 positioned over world_surface run summon lightning_bolt ~ ~ ~
+execute if score SEA_ch5_event_boss5 rng1 matches 278 as @n[tag=SEAboss5] at @s run particle damage_indicator ~ ~1 ~ 0 0 0 0.8 200
+execute if score SEA_ch5_event_boss5 rng1 matches 278 as @n[tag=SEAboss5b] at @s run kill @n[tag=SEAboss5,type=zombie_villager]
+execute if score SEA_ch5_event_boss5 rng1 matches 278 as @n[tag=SEAboss5b] at @s run bossbar set minecraft:9066601 value 0
 
 execute if score SEA_ch5_event_boss5 rng1 matches 244 as @n[tag=SEAboss5] at @s run title @a[distance=0..200] times 0 40 10
 execute if score SEA_ch5_event_boss5 rng1 matches 244 as @n[tag=SEAboss5] at @s run title @a[distance=0..200] title {"text": "愚妄的凡人 胆敢拟吾神力","bold": false, "color": "white"}
