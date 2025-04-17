@@ -40,7 +40,6 @@ execute if score @s sea_4temp3 matches 17 positioned 90202 130 -30 positioned ~2
 execute if score SEA_ch5_event_boss5 rng1 matches 221 positioned 90167 139 24 run stopsound @a[distance=0..250] music
 execute if score SEA_ch5_event_boss5 rng1 matches 231 positioned 90167 139 24 run setblock 90153 124 18 chain
 execute if score SEA_ch5_event_boss5 rng1 matches 231 positioned 90167 139 24 run summon marker ~ ~ ~ {Tags:["SEAboss5_heaven_portal"]}
-execute if score SEA_ch5_event_boss5 rng1 matches 231.. positioned 90167 139 24 as @e[tag=SEAboss5_heaven_portal,limit=1] at @s run function skyblock:sea/e/ch5/boss5/particle_heaven_portal
 
 execute if score SEA_ch5_event_boss5 rng1 matches 251 positioned 90167 139 24 run scoreboard players set SEAmusic rng1 4500
 
@@ -84,6 +83,4 @@ execute if score SEA_ch5_event_boss5 rng1 matches 248 as @n[tag=SEAboss5] at @s 
 execute if score SEA_ch5_event_boss5 rng1 matches 248 as @n[tag=SEAboss5] at @s run title @a[distance=0..200] title {"text": "愚妄的凡人 胆敢拟吾神力","bold": false, "color": "white"}
 
 
-
-execute if score SEA_ch5_event_boss5 rng1 matches 1000 run kill @e[tag=SEAboss5_heaven_portal,type=marker]
 
