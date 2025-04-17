@@ -8,7 +8,7 @@ execute if score SEA_ch5_event_illager_count rng1 matches 50.. run function skyb
 execute if score SEA_ch5_event_illager_count rng1 matches 50.. run function skyblock:sea/m/vindicator
 execute if score SEA_ch5_event_illager_count rng1 matches 80.. run function skyblock:sea/m/vindicator
 
-execute if score SEA_ch5_event_illager_count rng1 matches 30.. run playsound minecraft:entity.villager.yes neutral @a ~ ~ ~ 1 0.8
+execute if score SEA_ch5_event_illager_count rng1 matches 30.. run playsound minecraft:entity.pillager.ambient neutral @a ~ ~ ~ 1 0.8
 execute if score SEA_ch5_event_illager_count rng1 matches 30.. run tellraw @a[distance=0..200] [{"text":"汉姆：","color":"green","bold": true},{"text":"\n“兄弟们，快上，帮他们解决那个尸变体！”","color":"white","bold": false}]
 
 

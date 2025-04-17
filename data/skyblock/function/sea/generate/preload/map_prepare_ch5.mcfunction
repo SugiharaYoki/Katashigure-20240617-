@@ -282,6 +282,7 @@ scoreboard players set SEA_ch5_event_marilyn rng1 0
 scoreboard players set SEA_ch5_event_marilyn rng2 0
 scoreboard players set SEA_ch5_event_marilyn rng3 0
 scoreboard players set SEA_ch5_event_boss5 rng1 0
+scoreboard players set SEA_ch5_event_boss5 rng2 0
 scoreboard objectives add SEA_ch5_event_illager_killed minecraft.killed:minecraft.pillager
 scoreboard players set @a SEA_ch5_event_illager_killed 0
 scoreboard players set SEA_ch5_event_illager_count rng1 100
