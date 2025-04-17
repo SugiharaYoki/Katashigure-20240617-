@@ -80,8 +80,8 @@ execute if score SEA_ch5_event_boss5 rng1 matches 267 as @n[tag=SEAboss5b] at @s
 execute if score SEA_ch5_event_boss5 rng1 matches 267 as @n[tag=SEAboss5b] at @s run kill @n[tag=SEAboss5,type=zombie_villager]
 execute if score SEA_ch5_event_boss5 rng1 matches 267 as @n[tag=SEAboss5b] at @s run bossbar set minecraft:9066601 value 0
 
-execute if score SEA_ch5_event_boss5 rng1 matches 248 as @n[tag=SEAboss5b] at @s run title @a[distance=0..200] times 0 5 3
-execute if score SEA_ch5_event_boss5 rng1 matches 248 as @n[tag=SEAboss5b] at @s run title @a[distance=0..200] title {"text": "愚妄的凡人 胆敢拟吾神力","bold": false, "color": "white"}
+execute if score SEA_ch5_event_boss5 rng1 matches 248 as @n[tag=SEAboss5] at @s run title @a[distance=0..200] times 0 5 3
+execute if score SEA_ch5_event_boss5 rng1 matches 248 as @n[tag=SEAboss5] at @s run title @a[distance=0..200] title {"text": "愚妄的凡人 胆敢拟吾神力","bold": false, "color": "white"}
 
 
 
