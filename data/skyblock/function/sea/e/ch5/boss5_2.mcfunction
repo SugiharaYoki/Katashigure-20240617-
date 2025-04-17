@@ -17,7 +17,7 @@ execute at @s if entity @s[x=89000,dx=2000,z=-1000,dz=2000,y=100,dy=33] run tp @
 
 execute if score @s rng1 matches 60.. if score @s rng2 matches -5..-3 store result score @s rng5 run random value 1..9
 execute if score @s rng1 matches 60.. if score @s rng5 matches 1..9 run function skyblock:sea/e/ch5/boss5/move_jump
-execute if score @s rng1 matches 60.. if score @s[scores={rng3=0}] rng2 matches 1.. store result score @s rng3 run random value 1..6
+execute if score @s rng1 matches 60.. if score @s[scores={rng3=0}] rng2 matches 1.. store result score @s rng3 run random value 1..8
 execute if score @s rng1 matches 60.. if score @s rng2 matches -2..0 store result score @s rng3 run random value 1..8
 execute if score @s rng1 matches 60.. if score @s[scores={rng3=1..2}] rng2 matches 0.. run function skyblock:sea/e/ch5/boss5/attack_downfall
 execute if score @s rng1 matches 60.. if score @s[scores={rng3=3..4}] rng2 matches 0.. run function skyblock:sea/e/ch5/boss5/attack_rail
