@@ -57,3 +57,8 @@ execute if score SEA_ch5_event_boss5 rng2 matches 1..300 positioned 90167 139 24
 
 effect clear @s resistance
 
+#communication
+execute if entity @s[scores={health=..720,sea_4temp2=..0}] run scoreboard players set @s sea_4temp2 1
+execute if entity @s[scores={sea_4temp2=1..220}] run function skyblock:sea/e/ch5/boss5/phase3_communication_1
+
+
