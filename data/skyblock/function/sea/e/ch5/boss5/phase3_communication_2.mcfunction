@@ -10,6 +10,8 @@ execute if score @s sea_4temp3 matches 32.. run particle small_gust ^1.1 ^2.65 ^
 execute if score @s sea_4temp3 matches 32.. run particle small_gust ^-1.1 ^2.65 ^-1.1 0.13 0.13 0.13 0 3
 execute if score @s sea_4temp3 matches 42.. run particle small_gust ^1.4 ^2.9 ^-1.3 0.18 0.18 0.18 0 3
 execute if score @s sea_4temp3 matches 42.. run particle small_gust ^-1.4 ^2.9 ^-1.3 0.18 0.18 0.18 0 3
+execute if score @s sea_4temp3 matches 52 run playsound entity.breeze.shoot hostile @a ~ ~ ~ 3 1.2
+execute if score @s sea_4temp3 matches 52 run playsound entity.breeze.shoot hostile @a ~ ~ ~ 3 0.9
 execute if score @s sea_4temp3 matches 52 run particle gust_emitter_large ^1.8 ^3.25 ^-0.5 0.23 0.23 0.23 3 5
 execute if score @s sea_4temp3 matches 52 run particle gust_emitter_large ^-1.8 ^3.25 ^-0.5 0.23 0.23 0.23 3 5
 execute if score @s sea_4temp3 matches 52.. run particle small_gust ^1.8 ^3.25 ^-1.5 0.23 0.23 0.23 0 3
