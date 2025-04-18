@@ -10,6 +10,8 @@ execute if score SEA_ch5_event_boss5 sea_4temp3 matches 32.. run particle small_
 execute if score SEA_ch5_event_boss5 sea_4temp3 matches 32.. run particle small_gust ^-1.1 ^1.65 ^-1.1 0.13 0.13 0.13 0 3
 execute if score SEA_ch5_event_boss5 sea_4temp3 matches 42.. run particle small_gust ^1.4 ^1.9 ^-1.3 0.18 0.18 0.18 0 3
 execute if score SEA_ch5_event_boss5 sea_4temp3 matches 42.. run particle small_gust ^-1.4 ^1.9 ^-1.3 0.18 0.18 0.18 0 3
+execute if score SEA_ch5_event_boss5 sea_4temp3 matches 52 run particle gust_emitter_large ^1.8 ^2.25 ^-0.5 0.23 0.23 0.23 3 5
+execute if score SEA_ch5_event_boss5 sea_4temp3 matches 52 run particle gust_emitter_large ^-1.8 ^2.25 ^-0.5 0.23 0.23 0.23 3 5
 execute if score SEA_ch5_event_boss5 sea_4temp3 matches 52.. run particle small_gust ^1.8 ^2.25 ^-1.5 0.23 0.23 0.23 0 3
 execute if score SEA_ch5_event_boss5 sea_4temp3 matches 52.. run particle small_gust ^-1.8 ^2.25 ^-1.5 0.23 0.23 0.23 0 3
 
