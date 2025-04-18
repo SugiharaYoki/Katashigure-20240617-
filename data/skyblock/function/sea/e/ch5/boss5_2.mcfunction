@@ -8,7 +8,7 @@ execute store result score @n[tag=SEAboss5b] health run data get entity @n[tag=S
 
 execute if score SEAmusic rng1 matches 4502 as @a[tag=SEAPT] at @s run playsound minecraft:vol5.apocalypse music @s ~ ~ ~ 1 1.0
 execute if score SEAmusic rng1 matches 4502 as @r[tag=SEAPT] at @s as @a[tag=!SEAPT,gamemode=spectator,distance=0..200] run playsound minecraft:vol5.apocalypse music @s ~ ~ ~ 1 1.0
-execute if score SEAmusic rng1 matches 8400..8450 run scoreboard players set SEAmusic rng1 4500
+execute if score SEAmusic rng1 matches 8300..8450 run scoreboard players set SEAmusic rng1 4500
 
 
 execute positioned 90142 134 26 if entity @s[distance=20..] at @s at @n[tag=SEA_boss5_tp_anchor,type=marker] run tp @s ~ ~5 ~
