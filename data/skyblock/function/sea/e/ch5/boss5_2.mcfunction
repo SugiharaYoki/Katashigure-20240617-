@@ -59,8 +59,8 @@ effect clear @s resistance
 
 #communication
 execute if entity @s[scores={health=..720,sea_4temp2=..0}] run scoreboard players set @s sea_4temp2 1
-execute if entity @s[scores={sea_4temp2=1..220}] run function skyblock:sea/e/ch5/boss5/phase3_communication_1
+execute if entity @s[scores={sea_4temp2=1..220}] at @s run function skyblock:sea/e/ch5/boss5/phase3_communication_1
 
 execute if entity @s[scores={health=..600,sea_4temp3=..0}] run scoreboard players set @s sea_4temp3 1
-execute if entity @s[scores={sea_4temp3=1..}] run function skyblock:sea/e/ch5/boss5/phase3_communication_2
+execute if entity @s[scores={sea_4temp3=1..}] at @s run function skyblock:sea/e/ch5/boss5/phase3_communication_2
 
