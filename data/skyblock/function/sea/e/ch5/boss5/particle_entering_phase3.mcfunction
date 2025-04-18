@@ -64,6 +64,7 @@ execute if score SEA_ch5_event_boss5 rng1 matches 251 run scoreboard players set
 execute if score SEA_ch5_event_boss5 rng1 matches 251 run scoreboard players set @n[tag=SEAboss5b] sea_4temp3 0
 execute if score SEA_ch5_event_boss5 rng1 matches 251 run scoreboard players set @n[tag=SEAboss5b] sea_4temp4 0
 execute if score SEA_ch5_event_boss5 rng1 matches 251 run scoreboard players set @n[tag=SEAboss5b] sea_4temp5 0
+execute if score SEA_ch5_event_boss5 rng1 matches 251 run scoreboard players set @n[tag=SEAboss5b] health 800
 execute if score SEA_ch5_event_boss5 rng1 matches 251 as @n[tag=SEAboss5b] at @s run tp @s @n[tag=SEAnorman]
 execute if score SEA_ch5_event_boss5 rng1 matches 251 as @n[tag=SEAboss5b] at @s run tp @s ~ ~ ~ facing entity @n[tag=SEAnorman]
 
