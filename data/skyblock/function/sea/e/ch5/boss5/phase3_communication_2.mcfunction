@@ -48,6 +48,16 @@ execute if score @s sea_4temp3 matches 332..349 positioned ^ ^ ^-10 positioned o
 execute if score @s sea_4temp3 matches 332..349 as @s at @s rotated as @s run tp @s ~ ~ ~ ~20 0
 
 
+execute if score @s sea_4temp3 matches 462..479 positioned ^ ^ ^6 positioned over world_surface run summon marker ~ 135.0 ~ {Tags:["SEA_boss5_lightning_anchor"]}
+execute if score @s sea_4temp3 matches 462..479 as @s at @s rotated as @s run tp @s ~ ~ ~ ~-20 0
+
+execute if score @s sea_4temp3 matches 492..509 positioned ^ ^ ^8 positioned over world_surface run summon marker ~ 135.0 ~ {Tags:["SEA_boss5_lightning_anchor"]}
+execute if score @s sea_4temp3 matches 492..509 as @s at @s rotated as @s run tp @s ~ ~ ~ ~20 0
+
+execute if score @s sea_4temp3 matches 432..549 positioned ^ ^ ^13 positioned over world_surface run summon marker ~ 135.0 ~ {Tags:["SEA_boss5_lightning_anchor"]}
+execute if score @s sea_4temp3 matches 432..549 positioned ^ ^ ^-10 positioned over world_surface run summon marker ~ 135.0 ~ {Tags:["SEA_boss5_lightning_anchor"]}
+execute if score @s sea_4temp3 matches 432..549 as @s at @s rotated as @s run tp @s ~ ~ ~ ~-20 0
+
 
 
 
