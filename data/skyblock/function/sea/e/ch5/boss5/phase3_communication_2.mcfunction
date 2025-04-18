@@ -1,5 +1,7 @@
 scoreboard players add @s sea_4temp3 1
 
+execute if score @s sea_4temp3 matches 2 run bossbar remove 9066601
+
 execute if score @s sea_4temp3 matches 2.. run particle small_gust ^0.4 ^2.2 ^-0.5 0.1 0.1 0.1 0 2
 execute if score @s sea_4temp3 matches 2.. run particle small_gust ^-0.4 ^2.2 ^-0.5 0.1 0.1 0.1 0 2
 execute if score @s sea_4temp3 matches 12.. run particle small_gust ^0.6 ^2.3 ^-0.7 0.1 0.1 0.1 0 2
