@@ -3,7 +3,8 @@ execute unless block 90062 103 135 grindstone if entity @a[tag=SEAPT] run functi
 execute if block 90062 103 135 grindstone unless block 90075 103 141 minecraft:cauldron if entity @a[tag=SEAPT] run function skyblock:sea/map_event_i02_slow
 execute if block 90075 103 141 minecraft:cauldron unless block 90074 103 137 scaffolding if entity @a[tag=SEAPT] run function skyblock:sea/map_event_i03_slow
 execute if block 90074 103 137 scaffolding unless block 90074 103 136 lectern if entity @a[tag=SEAPT] run function skyblock:sea/map_event_i04_slow
-execute if block 90074 103 136 lectern if entity @a[tag=SEAPT] run function skyblock:sea/map_event_i05_slow
+execute if block 90074 103 136 lectern unless block 90077 105 141 minecraft:dark_oak_hanging_sign if entity @a[tag=SEAPT] run function skyblock:sea/map_event_i05_slow
+execute if block 90077 105 141 minecraft:dark_oak_hanging_sign if entity @a[tag=SEAPT] run function skyblock:sea/map_event_i06_slow
 
 #execute if entity @a[tag=SEAPT] if entity @n[tag=sc,tag=SeGa_sea_ch1] run function skyblock:sea/map_event_igeneral_slow
 #execute unless block 90062 103 135 grindstone if entity @a[tag=SEAPT] if entity @n[tag=sc,tag=SeGa_sea_ch1] run function skyblock:sea/map_event_i01_slow
@@ -15,7 +16,8 @@ execute unless block 90062 103 135 grindstone run scoreboard players add sc sea_
 execute if block 90062 103 135 grindstone unless block 90075 103 141 minecraft:cauldron run scoreboard players add sc sea_speedrun_ch2 1
 execute if block 90075 103 141 minecraft:cauldron unless block 90074 103 137 scaffolding run scoreboard players add sc sea_speedrun_ch3 1
 execute if block 90074 103 137 scaffolding unless block 90074 103 136 lectern run scoreboard players add sc sea_speedrun_ch4 1
-execute if block 90074 103 137 lectern run scoreboard players add sc sea_speedrun_ch5 1
+execute if block 90074 103 137 lectern unless block 90077 105 141 minecraft:dark_oak_hanging_sign run scoreboard players add sc sea_speedrun_ch5 1
+execute if block 90074 103 137 dark_oak_hanging_sign run scoreboard players add sc sea_speedrun_ch6 1
 
 execute store result score @n[tag=sc] sea_player run execute if entity @a[tag=SEAPT]
 
