@@ -39,7 +39,7 @@ execute as @a[tag=SEAPT,x=90075,y=121,z=132,distance=0..3,tag=!e_i_04] at @s run
 execute as @a[tag=SEAPT,x=90075,y=121,z=132,distance=0..3,tag=!e_i_04] at @s run tag @s add e_i_04
 
 #初始之船
-execute positioned 90062 104 -165 if entity @a[tag=SEAPT,distance=0..20] run summon minecraft:item_frame ~ ~ ~ {Tags:[iframe_sea,iframe_sea_safehat],Invisible:0b,Fixed:0b,Invulnerable:0b,Facing:4b,Item:{id:"minecraft:spyglass",components:{lore:['{"text":"我随身携带的望远镜。","color":"white","italic":false}','{"text":"在前途未知的时刻，紧握住它可以让我不再迷惘。","color":"white","italic":false}','{"text":"手持时：显示任务目标 & 跳过已阅读的剧情对话","color":"green","italic":false}']}}}
+
 execute positioned 90058 104 -166 if score sea_chapter_introduction sea_4temp1 matches ..400 run function skyblock:sea/e/ch1/introduction
 #踏上平台
 execute if score sea_chapter_introduction sea_4temp2 matches ..0 positioned 90071 102 140 if entity @a[tag=SEAPT,distance=0..6,tag=!SEAPF] run scoreboard players set sea_chapter_introduction sea_4temp2 1
