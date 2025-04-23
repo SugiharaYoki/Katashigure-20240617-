@@ -2,7 +2,7 @@
 
 setblock 90074 103 136 lectern[facing=east]
 
-time set 20000
+time set 19000
 
 #第五章出生点90146 84 42
 
