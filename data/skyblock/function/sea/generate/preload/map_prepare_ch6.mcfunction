@@ -17,7 +17,7 @@ scoreboard players set SEAmusic rng1 0
 
 clone 90012 -50 -405 90039 0 -375 90092 178 131
 
-
+setblock 90077 105 141 minecraft:dark_oak_hanging_sign
 
 
 
