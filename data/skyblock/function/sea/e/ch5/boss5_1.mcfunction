@@ -95,7 +95,7 @@ execute positioned 90142 134 26 as @n[distance=..200,type=vindicator] at @s if e
 
 execute if score @s rng1 matches 560 positioned 90125 135 23 run function skyblock:sea/e/ch5/boss5/npc_help_summon_1
 #execute if score @s rng1 matches 560.. positioned 90125 135 23 unless entity @n[tag=SEAboss5] run function skyblock:sea/e/ch5/boss5/npc_help_quit
-execute if score SEA_ch5_event_boss5 rng1 matches 2..278 positioned 90167 139 24 as @e[tag=SEAboss5_heaven_portal,limit=1] at @s run function skyblock:sea/e/ch5/boss5/particle_heaven_portal
+execute if score SEA_ch5_event_boss5 rng1 matches 2..278 positioned 90167 139 24 as @e[tag=SEAboss5_heaven_portal,limit=3,distance=0..50] at @s run function skyblock:sea/e/ch5/boss5/particle_heaven_portal
 
 execute if score @s rng2 matches -240..-100 run function skyblock:sea/e/ch5/boss5/particle_entering_phase2
 
