@@ -15,11 +15,12 @@ scoreboard players set @n[tag=sc] sea_4temp8 0
 tag @n[tag=sc] add SeGa_sea_ch6
 scoreboard players set SEAmusic rng1 0
 
+forceload add 90093 -188 90168 -161
 clone 90012 -50 -405 90039 0 -375 90092 178 131
 
 setblock 90077 105 141 minecraft:dark_oak_hanging_sign
 
-
+forceload remove 90092 -405 90116 -375
 
 
 

@@ -739,7 +739,7 @@ setblock 90144 140 38 redstone_lamp[lit=true]
 
 fill 90125 102 101 90127 102 99 iron_block
 
-forceload add 90096 -400 90112 -380
+forceload add 90092 -405 90116 -375
 clone 90092 -50 -405 90116 0 -375 90092 178 131
 
 
@@ -773,7 +773,7 @@ setblock 90093 127 104 minecraft:smooth_stone_slab[type=double]
 setblock 90092 127 100 minecraft:smooth_stone_slab[type=double]
 setblock 90093 127 100 minecraft:smooth_stone_slab[type=double]
 
-forceload remove 90096 -400 90112 -380
+forceload remove 90092 -405 90116 -375
 forceload remove 90093 -188 90168 -161
 
 
