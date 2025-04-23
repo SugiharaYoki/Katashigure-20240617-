@@ -28,3 +28,6 @@ execute as @n[type=husk,tag=SEAmob,x=80000,dx=20000,z=-10000,dz=20000,y=-1000,dy
 
 
 #execute if items entity @a[tag=SEAPT] player.cursor *[custom_data={"SEAcrafterbox":true}] as @e[tag=SEAcrafter,type=interaction,x=90000,y=0,z=0,distance=..1000] at @s positioned ~ ~-1 ~ run function skyblock:sea/shop_reader_box
+
+execute if score SEA_ch5_event_boss5 rng1 matches 2..278 positioned 90167 139 24 as @e[tag=SEAboss5_heaven_portal,limit=3,distance=0..50] at @s run function skyblock:sea/e/ch5/boss5/particle_heaven_portal
+
