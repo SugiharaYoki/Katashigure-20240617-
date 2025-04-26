@@ -89,8 +89,6 @@ execute as @s[scores={MultiMenu=16210027,Perm_PersonFSBS=1000000..}] at @s run s
 execute as @s[scores={MultiMenu=16210027,Perm_PersonFSBS=1000000..}] at @s run scoreboard players remove @s Perm_PersonFSBS 1000000
 
 
-tellraw @s [{"text":"如今持有FSB： ","color":"gold"},{"score":{"name":"@s","objective":"Perm_PersonFSB"}}]
-tellraw @s [{"text":"如今账户存款： ","color":"gold"},{"score":{"name":"@s","objective":"Perm_PersonFSBS"}}]
 
 
 
