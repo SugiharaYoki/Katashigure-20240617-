@@ -16,6 +16,7 @@ execute as @a[scores={MultiMenu=16210012}] at @s run function skyblock:verbal/ci
 execute as @a[scores={MultiMenu=16210013},tag=!Stal] at @s run function skyblock:verbal/city/purchase/casino_music_stal
 execute as @a[scores={MultiMenu=16210014..16210020}] at @s run function skyblock:verbal/city/purchase/bank_save
 execute as @a[scores={MultiMenu=16210021..16210027}] at @s run function skyblock:verbal/city/purchase/bank_save
+execute as @a[scores={MultiMenu=16210028}] at @s run function skyblock:verbal/city/purchase/bank_zero
 #execute as @a[scores={Common=16310011,Azr_SK1=0}] at @s run function skyblock:azr/purchase_sega_azriel_sk01_lv1
 #execute as @a[scores={Common=16310012,Azr_SK1=1}] at @s run function skyblock:azr/purchase_sega_azriel_sk01_lv2
 #execute as @a[scores={Common=16310013,Azr_SK1=2}] at @s run function skyblock:azr/purchase_sega_azriel_sk01_lv3
