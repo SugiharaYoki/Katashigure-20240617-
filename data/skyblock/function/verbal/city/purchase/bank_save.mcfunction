@@ -96,3 +96,4 @@ tellraw @s [{"text":"如今账户存款： ","color":"gold"},{"score":{"name":"@
 
 tag @s remove purchasesuccess
 scoreboard players set @s MultiMenu 0
+function skyblock:verbal/city/bank_deposit
