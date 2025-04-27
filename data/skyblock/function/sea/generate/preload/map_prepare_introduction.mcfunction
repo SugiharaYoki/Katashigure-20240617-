@@ -802,7 +802,8 @@ setblock 90151 148 127 air
 setblock 90145 146 115 chest[facing=east]
 item replace block 90145 146 115 container.12 with emerald 3
 #item replace block 90145 146 115 container.14 with possible_documentary
-
+setblock 90151 146 112 chest[facing=north]
+item replace block 90151 146 112 container.13 with emerald 3
 
 
 
