@@ -15,7 +15,7 @@ execute as @s[scores={sea_4temp1=55}] if block 90236 63 85 grindstone run scoreb
 execute as @s[scores={sea_4temp1=73}] if block 90236 63 85 air run scoreboard players set @s sea_4temp1 1009
 
 execute as @s[scores={sea_4temp1=1001..1107}] if items entity @p[scores={sea_progress=12..},tag=SEAPT] weapon.mainhand spyglass as @p[nbt={SelectedItem:{id:"minecraft:spyglass"}}] unless entity @a[tag=SEAPT,scores={sea_progress=..11}] at @s run tellraw @a[tag=SEAPT] [{"selector":"@s","color":"white"},{"text":"：「跳过了剧情」","color":"white"}]
-execute as @s[scores={sea_4temp1=1001..1107}] if items entity @p[scores={sea_progress=12..},tag=SEAPT] weapon.mainhand spyglass unless entity @a[tag=SEAPT,scores={sea_progress=..11}] run scoreboard players set @s sea_4temp1 1200
+execute as @s[scores={sea_4temp1=1001..1107}] if items entity @p[scores={sea_progress=12..},tag=SEAPT] weapon.mainhand spyglass unless entity @a[tag=SEAPT,scores={sea_progress=..11}] run scoreboard players set @s sea_4temp1 1209
 
 execute as @s[scores={sea_4temp1=1011}] if block 90236 63 85 air if entity @a[tag=SEAPT,scores={SEAPT_member=2}] run tellraw @a[distance=0..250] [{"selector":"@p[tag=SEAPT,scores={SEAPT_member=1}]","color":"white"},{"text":"：你先冷静，我们无意与你为敌。我们也根本不是邪教徒。","color":"white"}]
 execute as @s[scores={sea_4temp1=1011}] if block 90236 63 85 air unless entity @a[tag=SEAPT,scores={SEAPT_member=2}] run tellraw @a[distance=0..250] [{"selector":"@p[tag=SEAPT,scores={SEAPT_member=1}]","color":"white"},{"text":"：你先冷静，我无意与你为敌。我也根本不是邪教徒。","color":"white"}]
