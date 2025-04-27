@@ -799,6 +799,9 @@ setblock 90150 146 124 decorated_pot{sherds:["friend_pottery_sherd","friend_pott
 setblock 90150 146 124 air
 setblock 90151 148 127 decorated_pot{sherds:["friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd"],item:{count: 3, id:"minecraft:emerald"}}
 setblock 90151 148 127 air
+setblock 90139 146 114 decorated_pot{sherds:["friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd"],item:{count: 3, id:"minecraft:emerald"}}
+setblock 90139 146 114 air
+
 setblock 90145 146 115 chest[facing=east]
 item replace block 90145 146 115 container.12 with emerald 3
 #item replace block 90145 146 115 container.14 with possible_documentary
