@@ -50,7 +50,8 @@ execute as @s[scores={sea_4temp1=52}] run setblock 90182 71 74 minecraft:waxed_c
 execute as @s[scores={sea_4temp1=52}] run setblock 90187 71 74 minecraft:waxed_copper_bulb[lit=true]
 
 execute as @s[scores={sea_4temp1=76}] as @n[tag=SEAboss4] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
-execute as @s[scores={sea_4temp1=76}] run tellraw @a[tag=SEAPT] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“真是愚笨啊……明明再过三小时，这里的一切就会灰飞烟灭。我不会让你将你的所见所闻带出去。”","color":"white","bold": false}]
+execute as @s[scores={sea_4temp1=76}] if entity @a[tag=SEAPT,scores={SEAPT_member=2}] run tellraw @a[tag=SEAPT] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“真是愚笨啊……明明再过三小时，这里的一切就会灰飞烟灭。我不会让你们将在这里的所见所闻带出去。”","color":"white","bold": false}]
+execute as @s[scores={sea_4temp1=76}] unless entity @a[tag=SEAPT,scores={SEAPT_member=2}] run tellraw @a[tag=SEAPT] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“真是愚笨啊……明明再过三小时，这里的一切就会灰飞烟灭。我不会让你将你的所见所闻带出去。”","color":"white","bold": false}]
 
 execute as @s[scores={sea_4temp1=76}] run tag @a[tag=SEAPT] add e_e_01
 execute as @s[scores={sea_4temp1=76}] run data modify entity @n[tag=SEAboss4] NoAI set value 0b
