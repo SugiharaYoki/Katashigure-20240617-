@@ -787,6 +787,11 @@ setblock 90150 146 112 air
 setblock 90147 146 110 air
 setblock 90146 146 120 air
 
+setblock 90139 147 132 air
+setblock 90139 147 129 air
+setblock 90139 147 132 lever[facing=east]
+setblock 90139 147 129 lever[facing=east]
+
 summon minecraft:interaction 90139 147.3 117 {CustomName:'[{"text":"多功能工作站"}]',Tags:["SEAcrafter","SEAcrafter18"]}
 summon minecraft:marker 90140 146 117 {Tags:["SEAcrafter_tp","SEAcrafter_tp18"]}
 
