@@ -795,4 +795,17 @@ setblock 90139 147 129 lever[facing=east]
 summon minecraft:interaction 90139 147.3 117 {CustomName:'[{"text":"多功能工作站"}]',Tags:["SEAcrafter","SEAcrafter18"]}
 summon minecraft:marker 90140 146 117 {Tags:["SEAcrafter_tp","SEAcrafter_tp18"]}
 
+setblock 90150 146 124 decorated_pot{sherds:["friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd"],item:{count: 3, id:"minecraft:emerald"}}
+setblock 90150 146 124 air
+setblock 90151 148 127 decorated_pot{sherds:["friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd"],item:{count: 3, id:"minecraft:emerald"}}
+setblock 90151 148 127 air
+setblock 90145 146 115 chest[facing=east]
+item replace block 90145 146 115 container.12 with emerald 3
+#item replace block 90145 146 115 container.14 with possible_documentary
+
+
+
+
+
+
 
