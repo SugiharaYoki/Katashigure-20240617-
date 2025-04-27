@@ -42,10 +42,13 @@ execute if score @s sea_4temp8 matches 182 positioned ^8 ^ ^-8 positioned over w
 execute if score @s sea_4temp8 matches 262..279 positioned ^ ^ ^6 positioned over world_surface run summon marker ~ 135.0 ~ {Tags:["SEA_boss5_lightning_anchor"]}
 execute if score @s sea_4temp8 matches 262..279 as @s at @s rotated as @s run tp @s ~ ~ ~ ~20 0
 
-execute if score @s sea_4temp8 matches 270 run setblock 90152 139 16 air destroy
-execute if score @s sea_4temp8 matches 270 run setblock 90152 139 36 air destroy
-execute if score @s sea_4temp8 matches 270 run setblock 90132 139 36 air destroy
-execute if score @s sea_4temp8 matches 270 run setblock 90132 139 16 air destroy
+execute if score @s sea_4temp8 matches 330 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if score SEA_ch5_event_fiona_favor rng1 matches 16.. run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
+execute if score @s sea_4temp8 matches 330 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if score SEA_ch5_event_fiona_favor rng1 matches 16.. run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“快闪开，退后！！！”","color":"white","bold": false}]
+
+execute if score @s sea_4temp8 matches 295 run setblock 90152 139 16 air destroy
+execute if score @s sea_4temp8 matches 295 run setblock 90152 139 36 air destroy
+execute if score @s sea_4temp8 matches 295 run setblock 90132 139 36 air destroy
+execute if score @s sea_4temp8 matches 295 run setblock 90132 139 16 air destroy
 
 execute if score @s sea_4temp8 matches 292..309 positioned ^ ^ ^8 positioned over world_surface run summon marker ~ 135.0 ~ {Tags:["SEA_boss5_lightning_anchor"]}
 execute if score @s sea_4temp8 matches 292..309 as @s at @s rotated as @s run tp @s ~ ~ ~ ~-20 0
@@ -65,7 +68,8 @@ execute if score @s sea_4temp8 matches 632..749 positioned ^ ^ ^13 positioned ov
 execute if score @s sea_4temp8 matches 632..749 positioned ^ ^ ^-10 positioned over world_surface run summon marker ~ 135.0 ~ {Tags:["SEA_boss5_lightning_anchor"]}
 execute if score @s sea_4temp8 matches 632..749 as @s at @s rotated as @s run tp @s ~ ~ ~ ~-20 0
 
-
+execute if score @s sea_4temp8 matches 630 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if score SEA_ch5_event_fiona_favor rng1 matches 16.. run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
+execute if score @s sea_4temp8 matches 630 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if score SEA_ch5_event_fiona_favor rng1 matches 16.. run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“又要来一波雷暴，小心！！！”","color":"white","bold": false}]
 
 
 
