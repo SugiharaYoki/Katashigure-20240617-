@@ -37,7 +37,7 @@ execute as @s[scores={sea_4temp1=1105}] if block 90236 63 85 air unless entity @
 
 scoreboard players set @s[scores={sea_4temp1=900..909}] sea_4temp1 900
 scoreboard players set @s[scores={sea_4temp1=1108..1180}] sea_4temp1 75
-scoreboard players set @s[scores={sea_4temp1=1210..1220}] sea_4temp1 75
+scoreboard players set @s[scores={sea_4temp1=1218..1220}] sea_4temp1 75
 execute as @s[scores={sea_4temp1=1211}] if block 90236 63 85 air as @n[tag=SEAboss4] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
 execute as @s[scores={sea_4temp1=1211}] if block 90236 63 85 air run tellraw @a[tag=SEAPT] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“操，你知道吗？我在这里执行任务那么久，还没碰见谁嫌我艾德雯娜说话啰嗦。”","color":"white","bold": false}]
 
