@@ -37,6 +37,7 @@ clear @s[gamemode=!creative] stone_bricks
 clear @s[gamemode=!creative] smooth_stone_slab
 clear @s[gamemode=!creative] chest
 clear @s[gamemode=!creative] redstone_lamp
+clear @s[gamemode=!creative] beacon
 
 tag @s remove PVP_see
 

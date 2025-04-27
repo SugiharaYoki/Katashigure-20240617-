@@ -834,7 +834,10 @@ setblock 90128 155 151 minecraft:mangrove_leaves[persistent=true]
 fill 90127 156 150 90127 155 150 minecraft:mangrove_leaves[persistent=true]
 fill 90127 156 151 90127 158 151 minecraft:mangrove_leaves[persistent=true]
 
-
+setblock 90152 139 16 beacon
+setblock 90152 139 36 beacon
+setblock 90132 139 36 beacon
+setblock 90132 139 16 beacon
 
 
 

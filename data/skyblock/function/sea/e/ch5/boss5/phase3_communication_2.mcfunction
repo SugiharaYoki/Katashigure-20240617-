@@ -42,6 +42,11 @@ execute if score @s sea_4temp8 matches 182 positioned ^8 ^ ^-8 positioned over w
 execute if score @s sea_4temp8 matches 262..279 positioned ^ ^ ^6 positioned over world_surface run summon marker ~ 135.0 ~ {Tags:["SEA_boss5_lightning_anchor"]}
 execute if score @s sea_4temp8 matches 262..279 as @s at @s rotated as @s run tp @s ~ ~ ~ ~20 0
 
+execute if score @s sea_4temp8 matches 270 run setblock 90152 139 16 air destroy
+execute if score @s sea_4temp8 matches 270 run setblock 90152 139 36 air destroy
+execute if score @s sea_4temp8 matches 270 run setblock 90132 139 36 air destroy
+execute if score @s sea_4temp8 matches 270 run setblock 90132 139 16 air destroy
+
 execute if score @s sea_4temp8 matches 292..309 positioned ^ ^ ^8 positioned over world_surface run summon marker ~ 135.0 ~ {Tags:["SEA_boss5_lightning_anchor"]}
 execute if score @s sea_4temp8 matches 292..309 as @s at @s rotated as @s run tp @s ~ ~ ~ ~-20 0
 
