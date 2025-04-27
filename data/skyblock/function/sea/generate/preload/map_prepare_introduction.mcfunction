@@ -807,6 +807,11 @@ item replace block 90145 146 115 container.12 with emerald 3
 #item replace block 90145 146 115 container.14 with possible_documentary
 setblock 90151 146 112 chest[facing=north]
 item replace block 90151 146 112 container.13 with emerald 3
+setblock 90127 155 151 chest[facing=north]
+item replace block 90127 155 151 container.14 with emerald 10
+#item replace block 90127 155 151 container.12 with possible_documentary
+
+
 fill 90145 148 107 90145 147 107 minecraft:mangrove_leaves[persistent=true]
 fill 90145 147 108 90145 146 108 minecraft:mangrove_leaves[persistent=true]
 setblock 90146 147 108 minecraft:mangrove_leaves[persistent=true]
@@ -825,6 +830,9 @@ setblock 90145 139 103 minecraft:mangrove_leaves[persistent=true]
 fill 90146 139 105 90146 138 105 minecraft:mangrove_leaves[persistent=true]
 fill 90138 157 143 90138 156 143 minecraft:mangrove_leaves[persistent=true]
 fill 90139 155 143 90139 153 143 minecraft:mangrove_leaves[persistent=true]
+setblock 90128 155 151 minecraft:mangrove_leaves[persistent=true]
+fill 90127 156 150 90127 155 150 minecraft:mangrove_leaves[persistent=true]
+fill 90127 156 151 90127 158 151 minecraft:mangrove_leaves[persistent=true]
 
 
 
