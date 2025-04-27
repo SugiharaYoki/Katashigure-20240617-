@@ -779,6 +779,15 @@ forceload remove 90093 -188 90168 -161
 
 
 
+#第六章
+setblock 90150 146 112 redstone_block
+setblock 90147 146 110 redstone_block
+setblock 90146 146 120 redstone_block
+setblock 90150 146 112 air
+setblock 90147 146 110 air
+setblock 90146 146 120 air
 
+summon minecraft:interaction 90139 147.3 117 {CustomName:'[{"text":"多功能工作站"}]',Tags:["SEAcrafter","SEAcrafter18"]}
+summon minecraft:marker 90140 146 117 {Tags:["SEAcrafter_tp","SEAcrafter_tp18"]}
 
 
