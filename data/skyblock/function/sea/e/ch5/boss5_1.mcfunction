@@ -25,7 +25,7 @@ execute unless block 90153 124 18 chain if score SEAmusic rng1 matches 2400 as @
 execute unless block 90153 124 18 chain if score SEAmusic rng1 matches 2400 as @r[tag=SEAPT] at @s as @a[tag=!SEAPT,gamemode=spectator,distance=0..200] run playsound minecraft:app1.caradbolg music @s ~ ~ ~ 1 1.0
 execute unless block 90153 124 18 chain if score SEAmusic rng1 matches 2400..2450 run scoreboard players set SEAmusic rng1 0
 execute if score SEAmusic rng1 matches 4502 as @a[tag=SEAPT] at @s run playsound minecraft:vol5.apocalypse music @s ~ ~ ~ 1 1.0
-execute if score SEAmusic rng1 matches 4502 as @r[tag=SEAPT] at @s as @a[tag=!SEAPT,gamemode=spectator,distance=0..200] run playsound minecraft:vol5.apocalypse music @s ~ ~ ~ 1 1.0
+execute if score SEAmusic rng1 matches 4502 as @r[tag=SEAPT] at @s as @a[tag=!SEAPT,gamemode=spectator,distance=0..200] at @s run playsound minecraft:vol5.apocalypse music @s ~ ~ ~ 1 1.0
 execute if score SEAmusic rng1 matches 8400..8450 run scoreboard players set SEAmusic rng1 4500
 
 
