@@ -1,3 +1,6 @@
+tp @s ~ ~ ~ facing entity @n[tag=SEAboss5b]
+
+
 particle minecraft:happy_villager ^01 ^00 ^10 0 0 0 0 1
 particle minecraft:happy_villager ^1 ^001 ^10 0 0 0 0 1
 particle minecraft:happy_villager ^0 ^001 ^10 0 0 0 0 1
