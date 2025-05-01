@@ -110,7 +110,7 @@ execute if score SEA_ch5_event_boss5 rng9 matches 450 as @n[tag=SEAfiona,x=90000
 
 
 execute if score SEA_ch5_event_boss5 rng9 matches 480 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
-execute if score SEA_ch5_event_boss5 rng9 matches 480 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“对了……谢谢。琼斯。”","color":"white","bold": false}]
+execute if score SEA_ch5_event_boss5 rng9 matches 480 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“……谢谢。琼斯。”","color":"white","bold": false}]
 
 
 execute if score @s rng6 matches 460 run give @a[tag=SEAPT,scores={SEAPT_mode=1}] nether_star
