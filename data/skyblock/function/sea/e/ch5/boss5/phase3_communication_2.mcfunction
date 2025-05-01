@@ -74,3 +74,9 @@ execute if score @s sea_4temp8 matches 730 as @n[tag=SEAfiona,x=90000,y=100,z=0,
 
 execute if score @s sea_4temp8 matches 1100..1500 run scoreboard players set @s sea_4temp8 1100
 
+
+
+
+
+
+
