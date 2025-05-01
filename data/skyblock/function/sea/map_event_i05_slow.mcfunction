@@ -248,6 +248,6 @@ execute if score SEA_ch5_event_marilyn rng1 matches 1.. run function skyblock:se
 execute if score SEA_ch5_event_boss5 rng9 matches 100.. run function skyblock:sea/e/ch5/boss5/conclusion
 
 
-execute if entity @a[tag=e_i_46,tag=SEAPT] unless entity @n[tag=SEAboss5] unless entity @n[tag=SEAboss5b] positioned 90142 134 26 run function skyblock:sea/e/ch5/boss5/rebirth_norman
+execute if entity @a[tag=e_i_46,tag=SEAPT,tag=!e_i_47] unless entity @n[tag=SEAboss5] unless entity @n[tag=SEAboss5b] positioned 90142 134 26 run function skyblock:sea/e/ch5/boss5/rebirth_norman
 
 
