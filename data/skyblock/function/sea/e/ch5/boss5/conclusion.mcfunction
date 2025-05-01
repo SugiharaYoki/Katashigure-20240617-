@@ -22,6 +22,8 @@ execute if score SEA_ch5_event_boss5 rng9 matches 19 as @n[tag=SEAjones] at @s p
 
 
 execute if score SEA_ch5_event_boss5 rng9 matches 15..20 as @n[tag=SEAboss5b] at @s run particle gust_emitter_large ~ ~1 ~ 1.3 1.3 1.3 0 2
+execute if score SEA_ch5_event_boss5 rng9 matches 15 as @n[tag=SEAboss5b] at @s run particle electric_spark ~ ~1 ~ 0.8 0.8 0.8 0.2 50
+execute if score SEA_ch5_event_boss5 rng9 matches 15 as @n[tag=SEAboss5b] at @s run playsound item.trident.thunder ambient @a ~ ~ ~ 1 1.5
 
 execute if score SEA_ch5_event_boss5 rng9 matches 2 at @n[tag=SEAjones] positioned ^ ^ ^2 run playsound minecraft:entity.warden.sonic_boom neutral @a ~ ~ ~ 10 1.2
 execute if score SEA_ch5_event_boss5 rng9 matches 5 at @n[tag=SEAjones] positioned ^ ^ ^5 run playsound minecraft:entity.warden.sonic_boom neutral @a ~ ~ ~ 10 1.2
