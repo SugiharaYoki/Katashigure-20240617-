@@ -13,7 +13,7 @@ execute if score @s rng2 matches -140 run particle flame ~ ~1 ~ 0 0 0 0.8 200
 execute if score @s rng2 matches -139 run tag @s add Phase2
 execute if score @s rng2 matches -220..180 run playsound ambient.soul_sand_valley.additions ambient @a ~ ~ ~ 5 1.3
 execute if score @s rng2 matches -140 run playsound entity.zombie_villager.cure hostile @a ~ ~ ~ 5 1.3
-execute if score @s rng2 matches -140 run summon lightning_bolt
+execute if score @s rng2 matches -140 unless entity @n[tag=SEAjones,distance=0..3.5] run summon lightning_bolt
 
 execute if score @s rng2 matches -140 run data modify entity @s Invulnerable set value 0b
 execute if score @s rng2 matches -139 run scoreboard players set @s rng2 -10
