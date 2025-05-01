@@ -1,0 +1,9 @@
+execute as @a unless entity @s[scores={sea_progress=-999..}] run scoreboard players set @s sea_progress 0
+tp @a[x=90000,y=100,z=100,distance=..5000,scores={sea_progress=..14},gamemode=!spectator] -43 55 0
+
+
+function skyblock:sea/generate/stage_jump/to_ch5_boss
+
+
+give @a[tag=SEAPT] silence_armor_trim_smithing_template[custom_name='{"text":"超频声荡 I","italic":false,"color":"red"}',custom_data={sea_t_ripper1:true},lore=['{"text":"音爆 I 发射磁锯会制造超音波","color":"white","italic":false}','{"text":"可用于破坏绿色藤蔓","color":"white","italic":false}']]
+
