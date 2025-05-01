@@ -1,5 +1,7 @@
 tp @s ~ ~ ~ facing entity @n[tag=SEAboss5b]
 
+execute positioned ^ ^ ^1 if entity @n[tag=SEAboss5b,distance=..1.3] run scoreboard players set @s sea_4temp8 2100
+execute positioned ^ ^ ^ if entity @n[tag=SEAboss5b,distance=..1.5] run scoreboard players set @s sea_4temp8 2100
 
 particle minecraft:happy_villager ^01 ^00 ^10 0 0 0 0 1
 particle minecraft:happy_villager ^0 ^001 ^10 0 0 0 0 1
