@@ -120,6 +120,7 @@ execute if score @s rng1 matches 382 as @n[tag=SEAfiona,x=90000,y=100,z=0,distan
 execute if score @s rng1 matches 425..430 run scoreboard players set @s rng1 425
 execute if score @s rng1 matches 382..430 positioned 90136 136 53 if entity @a[tag=SEAPT,tag=!SEAPF,distance=0..4] run scoreboard players set @s rng1 500
 
+execute if score @s rng1 matches 501 run tag @a[tag=SEAPT] add e_i_46
 execute if score @s rng1 matches 501 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
 execute if score @s rng1 matches 501 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“往停机坪。动静是从那里传来的。”","color":"white","bold": false}]
 

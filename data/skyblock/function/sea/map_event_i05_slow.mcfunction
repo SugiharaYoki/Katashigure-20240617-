@@ -246,3 +246,7 @@ execute if block 90118 90 73 warped_button[powered=true] if score SEA_ch5_event_
 execute if score SEA_ch5_event_marilyn rng1 matches 1.. run function skyblock:sea/e/ch5/marilyn/communication_1
 
 
+
+execute if entity @a[tag=e_i_46,tag=SEAPT] unless entity @n[tag=SEAboss5] unless entity @n[tag=SEAboss5b] positioned 90142 134 26 run function skyblock:sea/e/ch5/boss5/rebirth_norman
+
+

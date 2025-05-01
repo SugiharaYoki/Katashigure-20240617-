@@ -67,3 +67,9 @@ execute if entity @s[scores={sea_4temp8=1..1888}] at @s run function skyblock:se
 
 execute if entity @s[scores={health=..420,sea_4temp8=1050..1999}] run scoreboard players set @s sea_4temp8 2000
 execute if entity @s[scores={sea_4temp8=2000..}] at @s positioned 90142 136 45 run function skyblock:sea/e/ch5/boss5/phase3_communication_3
+execute if score @s sea_4temp8 matches 2001..2200 unless entity @n[tag=SEAjones] run function skyblock:sea/m/unique/npc_jones
+
+
+
+
+

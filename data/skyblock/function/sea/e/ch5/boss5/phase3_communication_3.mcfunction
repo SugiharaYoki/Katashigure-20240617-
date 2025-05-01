@@ -13,7 +13,7 @@ execute if score @s sea_4temp8 matches 2052 at @n[tag=SEAjones] run tellraw @a[d
 
 
 execute if score @s sea_4temp8 matches 2082..2099 at @n[tag=SEAjones] anchored eyes run function skyblock:sea/e/ch5/boss5/particle_jones
-execute if score @s sea_4temp8 matches 2001..2200 unless entity @n[tag=SEAjones] run function skyblock:sea/m/unique/npc_jones
+
 
 
 execute if score @s sea_4temp8 matches 2092..2099 run scoreboard players set @s sea_4temp8 2092
