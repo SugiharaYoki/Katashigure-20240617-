@@ -49,12 +49,37 @@ execute if score SEA_ch5_event_boss5 rng9 matches 34 as @n[tag=SEAboss5b] at @s 
 execute if score SEA_ch5_event_boss5 rng9 matches 34..40 as @n[tag=SEAboss5b] at @s run kill @s
 
 
+execute if score SEA_ch5_event_boss5 rng9 matches 100 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
+execute if score SEA_ch5_event_boss5 rng9 matches 100 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“……琼斯，最后你来帮我们了？”","color":"white","bold": false}]
 
+execute if score SEA_ch5_event_boss5 rng9 matches 120 at @s run playsound entity.evoker.ambient neutral @a ~ ~ ~ 1 1
+execute if score SEA_ch5_event_boss5 rng9 matches 120 at @s run tellraw @a[distance=0..200] [{"text":"琼斯：","color":"yellow","bold": true},{"text":"\n“若是只有我一人，我会选择尊重天使的选择。可是我的信徒，他们并不想就这么送死。”","color":"white","bold": false}]
+execute if score SEA_ch5_event_boss5 rng9 matches 139 at @s run playsound entity.evoker.ambient neutral @a ~ ~ ~ 1 1
+execute if score SEA_ch5_event_boss5 rng9 matches 139 at @s run tellraw @a[distance=0..200] [{"text":"琼斯：","color":"yellow","bold": true},{"text":"\n“而且……我们的人已经死了太多了。”","color":"white","bold": false}]
 
+execute if score SEA_ch5_event_boss5 rng9 matches 160 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
+execute if score SEA_ch5_event_boss5 rng9 matches 160 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“诺曼博士已经死了。天使也被我们击退。我们之后还能做什么？……等死吗？”","color":"white","bold": false}]
 
+execute if score SEA_ch5_event_boss5 rng9 matches 180 at @s run playsound entity.evoker.ambient neutral @a ~ ~ ~ 1 1
+execute if score SEA_ch5_event_boss5 rng9 matches 180 at @s run tellraw @a[distance=0..200] [{"text":"琼斯：","color":"yellow","bold": true},{"text":"\n“天使还会归来。我们无法与真正的神力抗衡。”","color":"white","bold": false}]
 
+execute if score SEA_ch5_event_boss5 rng9 matches 200 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
+execute if score SEA_ch5_event_boss5 rng9 matches 200 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“诺曼博士已经死了。天使也被我们击退。我们之后还能做什么？……等死吗？”","color":"white","bold": false}]
 
+execute if score SEA_ch5_event_boss5 rng9 matches 220 at @s as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s as @p[tag=SEAPT] run tellraw @a[distance=0..250] [{"selector":"@p[tag=SEAPT,scores={SEAPT_member=1}]","color":"white"},{"text":"：等等，我这里还有需要做的……我在刚来这里的时候接通了联络机台，现在主平台的办公区还有幸存者。","color":"white"}]
 
+execute if score SEA_ch5_event_boss5 rng9 matches 240 at @s as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s as @p[tag=SEAPT] run tellraw @a[distance=0..250] [{"selector":"@p[tag=SEAPT,scores={SEAPT_member=1}]","color":"white"},{"text":"：她说需要使用高频电波才能轰掉那些藤蔓，不然进不去办公区。","color":"white"}]
+
+execute if score SEA_ch5_event_boss5 rng9 matches 260 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
+execute if score SEA_ch5_event_boss5 rng9 matches 260 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if score SEA_ch5_event_fiona_favor rng1 matches ..15 run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“说实话，我都不觉得那是值得我们浪费时间的事情。我们都会死。对面到底是谁？”","color":"white","bold": false}]
+execute if score SEA_ch5_event_boss5 rng9 matches 260 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if score SEA_ch5_event_fiona_favor rng1 matches 16.. run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“居然还会有活人……她有告诉你她是谁吗？”","color":"white","bold": false}]
+
+execute if score SEA_ch5_event_boss5 rng9 matches 280 at @s as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s as @p[tag=SEAPT] run tellraw @a[distance=0..250] [{"selector":"@p[tag=SEAPT,scores={SEAPT_member=1}]","color":"white"},{"text":"：她说是机械研发贝塔小组的组长，叫玛瑞莲。","color":"white"}]
+
+execute if score SEA_ch5_event_boss5 rng9 matches 298 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
+execute if score SEA_ch5_event_boss5 rng9 matches 298 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if score SEA_ch5_event_fiona_favor rng1 matches ..5 run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“不认识。你问琼斯吧。”","color":"white","bold": false}]
+execute if score SEA_ch5_event_boss5 rng9 matches 298 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if score SEA_ch5_event_fiona_favor rng1 matches 6..15 run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“那是谁？听都没听说过。琼斯，你有印象吗？”","color":"white","bold": false}]
+execute if score SEA_ch5_event_boss5 rng9 matches 298 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if score SEA_ch5_event_fiona_favor rng1 matches 16.. run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“我还真的不认识任何玛瑞莲。琼斯，你这里有印象吗？”","color":"white","bold": false}]
 
 
 
