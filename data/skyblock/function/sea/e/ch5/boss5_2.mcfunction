@@ -63,5 +63,7 @@ execute if entity @s[scores={health=50..720,sea_4temp2=..0}] run scoreboard play
 execute if entity @s[scores={sea_4temp2=1..220}] at @s run function skyblock:sea/e/ch5/boss5/phase3_communication_1
 
 execute if entity @s[scores={health=20..600,sea_4temp8=..0}] run scoreboard players set @s sea_4temp8 1
-execute if entity @s[scores={sea_4temp8=1..}] at @s run function skyblock:sea/e/ch5/boss5/phase3_communication_2
+execute if entity @s[scores={sea_4temp8=1..1888}] at @s run function skyblock:sea/e/ch5/boss5/phase3_communication_2
 
+execute if entity @s[scores={health=20..420,sea_4temp8=1050..}] run scoreboard players set @s sea_4temp8 2000
+execute if entity @s[scores={sea_4temp8=2000..}] at @s positioned 90142 136 45 run function skyblock:sea/e/ch5/boss5/phase3_communication_3
