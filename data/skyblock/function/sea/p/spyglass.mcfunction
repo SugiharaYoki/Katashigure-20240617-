@@ -79,6 +79,10 @@ execute if block 90074 103 136 lectern if score SEA_ch5_event_engineering_fiona 
 execute if block 90074 103 136 lectern if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 1500..5000 if score SEA_ch5_event_engineering_fiona sea_4temp7 matches ..99 run title @s[tag=SEAPT,tag=e_i_42] actionbar {"text":"目标：不引起邪教徒的警戒 前往通讯大楼","color":"green"}
 execute if block 90074 103 136 lectern if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 1500..5000 if score SEA_ch5_event_engineering_fiona sea_4temp7 matches 100.. run title @s[tag=SEAPT,tag=e_i_42] actionbar {"text":"目标：在邪教徒的攻势下存活","color":"green"}
 execute if block 90074 103 136 lectern if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 5001.. run title @s[tag=SEAPT,tag=e_i_42] actionbar {"text":"目标：在通讯大楼内找到琼斯","color":"green"}
+execute if block 90074 103 136 lectern if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 5001.. run title @s[tag=SEAPT,tag=e_i_46] actionbar {"text":"目标：前往停机坪调查骚乱的来源","color":"green"}
+execute if block 90074 103 136 lectern if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 5001.. if score @n[tag=SEAboss5] rng1 matches 2.. run title @s[tag=SEAPT] actionbar {"text":"目标：尝试击败诺曼博士","color":"green"}
+execute if block 90074 103 136 lectern if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 5001.. if entity @n[tag=SEAboss5b] run title @s[tag=SEAPT] actionbar {"text":"目标：与天使战斗。","color":"green"}
+execute if block 90074 103 136 lectern if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 5001.. run title @s[tag=SEAPT,tag=e_i_47] actionbar {"text":"目标：重返主平台 找到进入办公区的方法","color":"green"}
 
 
 
