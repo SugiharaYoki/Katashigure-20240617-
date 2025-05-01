@@ -34,6 +34,18 @@ execute if score SEA_ch5_event_boss5 rng9 matches 5 at @n[tag=SEAjones] position
 execute if score SEA_ch5_event_boss5 rng9 matches 8 at @n[tag=SEAjones] positioned ^ ^ ^8 run playsound minecraft:entity.warden.sonic_boom neutral @a ~ ~ ~ 10 1.2
 execute if score SEA_ch5_event_boss5 rng9 matches 11 at @n[tag=SEAjones] positioned ^ ^ ^11 run playsound minecraft:entity.warden.sonic_boom neutral @a ~ ~ ~ 10 1.2
 
+execute if score SEA_ch5_event_boss5 rng9 matches 26 as @n[tag=SEAboss5b] at @s positioned ^ ^ ^ positioned over world_surface run summon lightning_bolt
+execute if score SEA_ch5_event_boss5 rng9 matches 30 as @n[tag=SEAboss5b] at @s positioned ^ ^ ^2 positioned over world_surface run summon lightning_bolt
+execute if score SEA_ch5_event_boss5 rng9 matches 30 as @n[tag=SEAboss5b] at @s positioned ^ ^ ^-2 positioned over world_surface run summon lightning_bolt
+execute if score SEA_ch5_event_boss5 rng9 matches 30 as @n[tag=SEAboss5b] at @s positioned ^2 ^ ^ positioned over world_surface run summon lightning_bolt
+execute if score SEA_ch5_event_boss5 rng9 matches 30 as @n[tag=SEAboss5b] at @s positioned ^-2 ^ ^ positioned over world_surface run summon lightning_bolt
+execute if score SEA_ch5_event_boss5 rng9 matches 34 as @n[tag=SEAboss5b] at @s positioned ^ ^ ^4 positioned over world_surface run summon lightning_bolt
+execute if score SEA_ch5_event_boss5 rng9 matches 34 as @n[tag=SEAboss5b] at @s positioned ^ ^ ^-4 positioned over world_surface run summon lightning_bolt
+execute if score SEA_ch5_event_boss5 rng9 matches 34 as @n[tag=SEAboss5b] at @s positioned ^4 ^ ^ positioned over world_surface run summon lightning_bolt
+execute if score SEA_ch5_event_boss5 rng9 matches 34 as @n[tag=SEAboss5b] at @s positioned ^-4 ^ ^ positioned over world_surface run summon lightning_bolt
+
+execute if score SEA_ch5_event_boss5 rng9 matches 34 as @n[tag=SEAboss5b] at @s run particle large_smoke ~ ~1 ~ 5 5 5 0.02 50
+execute if score SEA_ch5_event_boss5 rng9 matches 34..40 as @n[tag=SEAboss5b] at @s run kill @s
 
 
 
