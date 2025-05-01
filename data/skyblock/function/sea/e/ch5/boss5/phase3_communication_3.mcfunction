@@ -19,7 +19,7 @@ execute if score @s sea_4temp8 matches 2082..2099 at @n[tag=SEAjones] anchored f
 execute if score @s sea_4temp8 matches 2092..2099 run scoreboard players set @s sea_4temp8 2092
 
 
-
+#execute if score @s sea_4temp8 matches 2092..2099 unless entity @n[tag=SEAboss5b] run scoreboard players set 
 
 
 

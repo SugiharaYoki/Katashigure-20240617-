@@ -286,6 +286,7 @@ scoreboard players set SEA_ch5_event_boss5 rng2 0
 scoreboard objectives add SEA_ch5_event_illager_killed minecraft.killed:minecraft.pillager
 scoreboard players set @a SEA_ch5_event_illager_killed 0
 scoreboard players set SEA_ch5_event_illager_count rng1 100
+scoreboard players set SEA_ch5_event_boss5 rng9 0
 scoreboard players set SEA_chg_true_end sea_4temp1 0
 
 fill 90105 93 57 90105 94 57 minecraft:magma_block

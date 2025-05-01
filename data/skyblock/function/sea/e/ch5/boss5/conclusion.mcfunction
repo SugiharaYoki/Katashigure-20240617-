@@ -1,0 +1,20 @@
+scoreboard players add SEA_ch5_event_boss5 rng9 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
