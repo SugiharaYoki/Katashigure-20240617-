@@ -64,13 +64,13 @@ execute if score @s sea_4temp8 matches 662..679 as @s at @s rotated as @s run tp
 execute if score @s sea_4temp8 matches 692..709 positioned ^ ^ ^8 positioned over world_surface run summon marker ~ 135.0 ~ {Tags:["SEA_boss5_lightning_anchor"]}
 execute if score @s sea_4temp8 matches 692..709 as @s at @s rotated as @s run tp @s ~ ~ ~ ~20 0
 
-execute if score @s sea_4temp8 matches 632..749 positioned ^ ^ ^13 positioned over world_surface run summon marker ~ 135.0 ~ {Tags:["SEA_boss5_lightning_anchor"]}
-execute if score @s sea_4temp8 matches 632..749 positioned ^ ^ ^-10 positioned over world_surface run summon marker ~ 135.0 ~ {Tags:["SEA_boss5_lightning_anchor"]}
-execute if score @s sea_4temp8 matches 632..749 as @s at @s rotated as @s run tp @s ~ ~ ~ ~-20 0
+execute if score @s sea_4temp8 matches 732..849 positioned ^ ^ ^13 positioned over world_surface run summon marker ~ 135.0 ~ {Tags:["SEA_boss5_lightning_anchor"]}
+execute if score @s sea_4temp8 matches 732..849 positioned ^ ^ ^-10 positioned over world_surface run summon marker ~ 135.0 ~ {Tags:["SEA_boss5_lightning_anchor"]}
+execute if score @s sea_4temp8 matches 732..849 as @s at @s rotated as @s run tp @s ~ ~ ~ ~-20 0
 
-execute if score @s sea_4temp8 matches 630 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if score SEA_ch5_event_fiona_favor rng1 matches 16.. run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
-execute if score @s sea_4temp8 matches 630 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if score SEA_ch5_event_fiona_favor rng1 matches 16.. run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“又要来一波雷暴，小心！！！”","color":"white","bold": false}]
+execute if score @s sea_4temp8 matches 730 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if score SEA_ch5_event_fiona_favor rng1 matches 16.. run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
+execute if score @s sea_4temp8 matches 730 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if score SEA_ch5_event_fiona_favor rng1 matches 16.. run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“又要来一波雷暴，小心！！！”","color":"white","bold": false}]
 
 
-
+execute if score @s sea_4temp8 matches 1100..1500 run scoreboard players set @s sea_4temp8 1100
 
