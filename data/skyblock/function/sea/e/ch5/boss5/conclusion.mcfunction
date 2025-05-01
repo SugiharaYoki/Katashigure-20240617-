@@ -102,4 +102,21 @@ execute if score SEA_ch5_event_boss5 rng9 matches 412 at @s run tellraw @a[dista
 
 execute if score SEA_ch5_event_boss5 rng9 matches 416 at @s run give @a[tag=SEAPT] silence_armor_trim_smithing_template[custom_name='{"text":"超频声荡 I","italic":false,"color":"red"}',custom_data={sea_t_ripper1:true},lore=['{"text":"音爆 I 发射磁锯会制造超音波","color":"white","italic":false}','{"text":"可用于破坏绿色藤蔓","color":"white","italic":false}']]
 
+execute if score SEA_ch5_event_boss5 rng9 matches 430 at @s run playsound entity.evoker.ambient neutral @a ~ ~ ~ 1 1
+execute if score SEA_ch5_event_boss5 rng9 matches 430 at @s run tellraw @a[distance=0..200] [{"text":"琼斯：","color":"yellow","bold": true},{"text":"\n“切记：一定要小心。天使说不定很快就会回来。在那之前，我会帮你们想办法拦住祂。”","color":"white","bold": false}]
 
+execute if score SEA_ch5_event_boss5 rng9 matches 450 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
+execute if score SEA_ch5_event_boss5 rng9 matches 450 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“我们走吧。”","color":"white","bold": false}]
+
+
+execute if score SEA_ch5_event_boss5 rng9 matches 480 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
+execute if score SEA_ch5_event_boss5 rng9 matches 480 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“对了……谢谢。琼斯。”","color":"white","bold": false}]
+
+
+execute if score @s rng6 matches 460 run give @a[tag=SEAPT,scores={SEAPT_mode=1}] nether_star
+execute if score @s rng6 matches 460 run scoreboard players set @a[tag=SEAPT,scores={sea_progress=..14}] sea_progress 15
+
+execute if score @s rng6 matches 500 as @a[tag=SEAPT] at @s run tellraw @s {"text":"『厄珀娅的悲歌』第五章 完","color":"blue","bold": true}
+execute if score @s rng6 matches 500 as @a[tag=SEAPT] at @s run playsound music_disc.creator music @a[tag=SEAPT] ~ ~ ~ 1000 0.7
+execute if score @s rng6 matches 500 as @a[tag=SEAPT] if score @s sea_speedrun_ch5 > sc sea_speedrun_ch5 run scoreboard players operation @s sea_speedrun_ch5 = sc sea_speedrun_ch5
+execute if score @s rng6 matches 500 run function skyblock:sea/generate/preload/map_prepare_ch6
