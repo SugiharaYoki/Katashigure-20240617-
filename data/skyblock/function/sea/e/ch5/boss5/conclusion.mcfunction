@@ -60,8 +60,8 @@ execute if score SEA_ch5_event_boss5 rng9 matches 139 as @n[tag=SEAjones,x=90000
 execute if score SEA_ch5_event_boss5 rng9 matches 160 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
 execute if score SEA_ch5_event_boss5 rng9 matches 160 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“诺曼博士已经死了。天使也被我们击退。我们之后还能做什么？……等死吗？”","color":"white","bold": false}]
 
-execute if score SEA_ch5_event_boss5 rng9 matches 180 at @s run playsound entity.evoker.ambient neutral @a ~ ~ ~ 1 1
-execute if score SEA_ch5_event_boss5 rng9 matches 180 at @s run tellraw @a[distance=0..200] [{"text":"琼斯：","color":"yellow","bold": true},{"text":"\n“天使还会归来。我们无法与真正的神力抗衡。”","color":"white","bold": false}]
+execute if score SEA_ch5_event_boss5 rng9 matches 180 as @n[tag=SEAjones,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.evoker.ambient neutral @a ~ ~ ~ 1 1
+execute if score SEA_ch5_event_boss5 rng9 matches 180 as @n[tag=SEAjones,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"琼斯：","color":"yellow","bold": true},{"text":"\n“天使还会归来。我们无法与真正的神力抗衡。”","color":"white","bold": false}]
 
 execute if score SEA_ch5_event_boss5 rng9 matches 200 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
 execute if score SEA_ch5_event_boss5 rng9 matches 200 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“诺曼博士已经死了。天使也被我们击退。我们之后还能做什么？……等死吗？”","color":"white","bold": false}]
