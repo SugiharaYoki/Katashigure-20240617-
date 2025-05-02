@@ -19,12 +19,15 @@ give @a[tag=SEAPT] spyglass[lore=['{"text":"我随身携带的望远镜。","col
 
 scoreboard players set @n[tag=sc] sea_4temp2 3001
 
-give @a[tag=SEAPT] baked_potato 3
+give @a[tag=SEAPT] baked_potato 5
 
 tag @a[tag=SEAPT] add e_w_01
 tag @a[tag=SEAPT] add e_w_02
-give @a[tag=SEAPT] arrow 8
-scoreboard players add @a[tag=SEAPT] sea_i_emerald 40
+give @a[tag=SEAPT] arrow 12
+give @a[tag=SEAPT] flint 1
+give @a[tag=SEAPT] raw_iron 4
+give @a[tag=SEAPT] coal 1
+scoreboard players add @a[tag=SEAPT] sea_i_emerald 60
 scoreboard players set sc sea_speedrun_ch1 9999
 
 
