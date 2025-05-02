@@ -1,4 +1,4 @@
-execute as @a unless entity @s[scores={sea_progress=-999..}] run scoreboard players set @s sea_progress 0
+
 tp @a[x=90000,y=100,z=100,distance=..5000,scores={sea_progress=..4},gamemode=!spectator] -43 55 0
 
 function skyblock:sea/generate/stage_jump/to_ch2
