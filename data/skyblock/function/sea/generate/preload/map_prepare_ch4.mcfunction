@@ -437,7 +437,7 @@ item replace block 90160 6 138 container.14 with emerald 3
 #是否联系玛瑞莲
 setblock 90163 36 86 air
 
-#第二乐谱
+#第二曲谱
 setblock 90244 51 132 chest[facing=south]
 item replace block 90244 51 132 container.12 with flint 1
 item replace block 90244 51 132 container.14 with coal 1

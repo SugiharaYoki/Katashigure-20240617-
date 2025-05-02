@@ -12,7 +12,7 @@ execute as @s[scores={sea_4temp1=11}] positioned 90158 36 110 run function skybl
 
 execute as @s[scores={sea_4temp1=11}] positioned 90153 36 110 run function skyblock:sea/m/skeleton
 
-#第二乐谱
+#第二曲谱
 execute as @s[scores={sea_4temp1=11}] positioned 90225 51 134 run function skyblock:sea/m/husk
 execute as @s[scores={sea_4temp1=11}] positioned 90225 51 134 run function skyblock:sea/m/zombie_bomb
 execute as @s[scores={sea_4temp1=11}] positioned 90239 44 134 run function skyblock:sea/m/spider
