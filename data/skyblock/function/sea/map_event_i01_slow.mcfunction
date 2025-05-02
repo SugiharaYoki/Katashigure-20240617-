@@ -79,16 +79,16 @@ execute if block 90089 128 124 minecraft:waxed_copper_door[open=true] run setblo
 execute if block 90089 128 124 minecraft:waxed_copper_door[open=true] run setblock 90091 128 127 minecraft:red_candle[candles=1,lit=true]
 
 
-execute as @p[distance=0..600,tag=SEAPT,scores={sea_progress=..1},tag=!e_i_48] at @s if items entity @s container.* lever run tellraw @s [{"text": " - 游戏指引 -","color": "green","bold": true},{"text": " 开关可以通过鼠标右键放置在某些特殊的方块上。","color": "white","bold": false},{"text": " 在这间房间的铁门旁存在着一块特殊的墙面，试着将开关放置上去吧。","color": "white","bold": false}]
-execute as @p[distance=0..600,tag=SEAPT,scores={sea_progress=..1},tag=!e_i_48] at @s if items entity @s container.* lever run tag @s add e_i_48
-execute as @p[distance=0..600,tag=SEAPT,scores={sea_progress=..1},tag=!e_i_49] at @s if block 90084 124 139 air run tellraw @s [{"text": " - 游戏指引 -","color": "green","bold": true},{"text": " 你成功打开了通往下一间房间的防护门。","color": "white","bold": false},{"text": " 在继续前进之前，你需要得到一把称手的武器。","color": "white","bold": false},{"text": " 试着使用鼠标左键敲下墙上的撬棍，使用撬棍来保护自己。","color": "white","bold": false}]
-execute as @p[distance=0..600,tag=SEAPT,scores={sea_progress=..1},tag=!e_i_49] at @s if block 90084 124 139 air run tag @s add e_i_49
+execute positioned 90094 122 135 as @a[distance=0..600,tag=SEAPT,scores={sea_progress=..1},tag=!e_i_48] at @s if items entity @s container.* lever run tellraw @s [{"text": " - 游戏指引 -","color": "green","bold": true},{"text": " 开关可以通过鼠标右键放置在某些特殊的方块上。","color": "white","bold": false},{"text": " 在这间房间的铁门旁存在着一块特殊的墙面，试着将开关放置上去吧。","color": "white","bold": false}]
+execute positioned 90094 122 135 as @a[distance=0..600,tag=SEAPT,scores={sea_progress=..1},tag=!e_i_48] at @s if items entity @s container.* lever run tag @s add e_i_48
+execute positioned 90094 122 135 as @a[distance=0..600,tag=SEAPT,scores={sea_progress=..1},tag=!e_i_49] at @s if block 90084 124 139 air run tellraw @s [{"text": " - 游戏指引 -","color": "green","bold": true},{"text": " 你成功打开了通往下一间房间的防护门。","color": "white","bold": false},{"text": " 在继续前进之前，你需要得到一把称手的武器。","color": "white","bold": false},{"text": " 试着使用鼠标左键敲下墙上的撬棍，使用撬棍来保护自己。","color": "white","bold": false}]
+execute positioned 90094 122 135 as @a[distance=0..600,tag=SEAPT,scores={sea_progress=..1},tag=!e_i_49] at @s if block 90084 124 139 air run tag @s add e_i_49
 
 execute positioned 90094 122 135 as @p[distance=0..3.5,tag=SEAPT,scores={sea_progress=..1},tag=!e_i_50] run tellraw @s [{"text": " - 游戏指引 -","color": "green","bold": true},{"text": " 你可以在多功能工作站购买物品或升级装备。","color": "white","bold": false},{"text": " 多功能工作站分为操作台与储存箱上下两层，皆可通过右键开启。","color": "white","bold": false},{"text": " 右键上层会在左下角的聊天框弹出装备操作界面，右键下层则会出现购买消耗品的弹窗。","color": "white","bold": false}]
 execute positioned 90094 122 135 as @p[distance=0..3.5,tag=SEAPT,scores={sea_progress=..1},tag=!e_i_50] run tag @s add e_i_50
 
-execute as @p[distance=0..600,tag=SEAPT,scores={sea_progress=..1},tag=!e_i_51] at @s if items entity @s container.* trial_key run tellraw @s [{"text": " - 游戏指引 -","color": "green","bold": true},{"text": " 手握部分道具时右键某些容器，可以打开它们的锁。","color": "white","bold": false},{"text": " 并不是每一把钥匙都必定有用，这点需要切记。","color": "white","bold": false}]
-execute as @p[distance=0..600,tag=SEAPT,scores={sea_progress=..1},tag=!e_i_51] at @s if items entity @s container.* trial_key run tag @s add e_i_51
+execute positioned 90094 122 135 as @a[distance=0..600,tag=SEAPT,scores={sea_progress=..1},tag=!e_i_51] at @s if items entity @s container.* trial_key run tellraw @s [{"text": " - 游戏指引 -","color": "green","bold": true},{"text": " 手握部分道具时右键某些容器，可以打开它们的锁。","color": "white","bold": false},{"text": " 并不是每一把钥匙都必定有用，这点需要切记。","color": "white","bold": false}]
+execute positioned 90094 122 135 as @a[distance=0..600,tag=SEAPT,scores={sea_progress=..1},tag=!e_i_51] at @s if items entity @s container.* trial_key run tag @s add e_i_51
 
 execute as @n[tag=sc] unless entity @s[scores={sea_4temp2=-9999..}] run scoreboard players set @s sea_4temp2 0
 execute unless block 90062 103 135 grindstone unless items block 90095 122 128 container.26 amethyst_shard run scoreboard players add @n[tag=sc,scores={sea_4temp2=..0}] sea_4temp2 1
