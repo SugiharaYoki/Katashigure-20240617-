@@ -105,7 +105,7 @@ execute as @s[scores={sea_4temp2=1144}] positioned 90140 115 148 run function sk
 execute as @s[scores={sea_4temp2=1144}] positioned 90135 123 141 run function skyblock:sea/m/spider_weak
 
 
-
-
+execute as @s[scores={sea_4temp2=1144}] positioned 90109 115 69 run function skyblock:sea/m/unique/npc_fiona
+execute as @s[scores={sea_4temp2=1144}] positioned 90109 115 69 as @n[tag=SEAfiona] at @s run tp @s 90109 115 69 facing 90109 114.8 70
 
 execute as @s[scores={sea_4temp2=1144}] run summon evoker 90142.0 122 119 {DeathLootTable:"skyblock:sea_pillager1",Tags:["SEAmob","SEAtestfor1"],attributes:[{id:"generic.armor",base:1.0},{id:"generic.movement_speed",base:0.0},{id:"generic.max_health",base:100}],Health:100,ArmorItems:[{id:leather_boots,count:1},{id:leather_leggings,count:1},{id:leather_chestplate,count:1},{id:leather_helmet,count:1}],ArmorDropChances:[0f,0f,0f,0f],Silent:true,NoAI:true,Rotation:[180,0],PersistenceRequired:true}
