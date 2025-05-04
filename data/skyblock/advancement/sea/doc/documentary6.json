@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "档案箱：第六章",
+            "color": "white",
+            "bold": true,
+            "italic": false
+        },
+        "description": {
+            "text": "我把自己在钻井平台获得的文件与线索集中整理在了这里。",
+            "color": "gray"
+        },
+        "icon": {
+            "id": "minecraft:chest"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "sea": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:sea/chapter6"
+}

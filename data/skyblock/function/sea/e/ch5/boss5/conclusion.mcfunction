@@ -66,9 +66,9 @@ execute if score SEA_ch5_event_boss5 rng9 matches 180 as @n[tag=SEAjones,x=90000
 execute if score SEA_ch5_event_boss5 rng9 matches 200 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
 execute if score SEA_ch5_event_boss5 rng9 matches 200 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“诺曼博士已经死了。天使也被我们击退。我们之后还能做什么？……等死吗？”","color":"white","bold": false}]
 
-execute if score SEA_ch5_event_boss5 rng9 matches 220 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s as @p[tag=SEAPT] run tellraw @a[distance=0..250] [{"selector":"@p[tag=SEAPT,scores={SEAPT_member=1}]","color":"white"},{"text":"：等等，我这里还有需要做的……我在刚来这里的时候接通了联络机台，现在主平台的办公区还有幸存者。","color":"white"}]
+execute if score SEA_ch5_event_boss5 rng9 matches 220 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s as @p[tag=SEAPT] run tellraw @a[distance=0..250] [{"selector":"@p[tag=SEAPT,scores={SEAPT_member=1}]","color":"white"},{"text":"：等等，我这里还有需要做的……我在刚来这里的时候接通了联络机台，现在主平台的行政区还有幸存者。","color":"white"}]
 
-execute if score SEA_ch5_event_boss5 rng9 matches 240 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s as @p[tag=SEAPT] run tellraw @a[distance=0..250] [{"selector":"@p[tag=SEAPT,scores={SEAPT_member=1}]","color":"white"},{"text":"：她说需要使用高频电波才能轰掉那些藤蔓，不然进不去办公区。","color":"white"}]
+execute if score SEA_ch5_event_boss5 rng9 matches 240 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s as @p[tag=SEAPT] run tellraw @a[distance=0..250] [{"selector":"@p[tag=SEAPT,scores={SEAPT_member=1}]","color":"white"},{"text":"：她说需要使用高频电波才能轰掉那些藤蔓，不然进不去行政区。","color":"white"}]
 
 execute if score SEA_ch5_event_boss5 rng9 matches 260 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
 execute if score SEA_ch5_event_boss5 rng9 matches 260 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if score SEA_ch5_event_fiona_favor rng1 matches ..15 run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“说实话，我都不觉得那是值得我们浪费时间的事情。我们都会死。对面到底是谁？”","color":"white","bold": false}]
@@ -95,7 +95,7 @@ execute if score SEA_ch5_event_boss5 rng9 matches 373 as @n[tag=SEAfiona,x=90000
 execute if score SEA_ch5_event_boss5 rng9 matches 373 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if score SEA_ch5_event_fiona_favor rng1 matches 20.. run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“我们两人一起去吧，我不会让你孤身冒险。”","color":"white","bold": false}]
 
 execute if score SEA_ch5_event_boss5 rng9 matches 392 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s as @p[tag=SEAPT] if score SEA_ch5_event_fiona_favor rng1 matches ..19 run tellraw @a[distance=0..250] [{"selector":"@p[tag=SEAPT,scores={SEAPT_member=1}]","color":"white"},{"text":"：真的很感谢，菲尔娜。","color":"white"}]
-execute if score SEA_ch5_event_boss5 rng9 matches 392 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s as @p[tag=SEAPT] if score SEA_ch5_event_fiona_favor rng1 matches 20.. run tellraw @a[distance=0..250] [{"selector":"@p[tag=SEAPT,scores={SEAPT_member=1}]","color":"white"},{"text":"：谢谢你，菲尔娜。我们一起去办公区吧。","color":"white"}]
+execute if score SEA_ch5_event_boss5 rng9 matches 392 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s as @p[tag=SEAPT] if score SEA_ch5_event_fiona_favor rng1 matches 20.. run tellraw @a[distance=0..250] [{"selector":"@p[tag=SEAPT,scores={SEAPT_member=1}]","color":"white"},{"text":"：谢谢你，菲尔娜。我们一起去行政区吧。","color":"white"}]
 
 execute if score SEA_ch5_event_boss5 rng9 matches 412 as @n[tag=SEAjones,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.evoker.ambient neutral @a ~ ~ ~ 1 1
 execute if score SEA_ch5_event_boss5 rng9 matches 412 as @n[tag=SEAjones,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"琼斯：","color":"yellow","bold": true},{"text":"\n“你们上路前拿好这个，虽然杀伤力并非特别理想，但它也足够轰碎那些藤蔓了。”","color":"white","bold": false}]

@@ -22,7 +22,7 @@ execute if block 90062 103 135 minecraft:grindstone if block 90075 103 141 air i
 execute if block 90062 103 135 minecraft:grindstone if block 90075 103 141 air if block 90131 128 129 air if entity @n[tag=sc,scores={sea_4temp2=2120..}] run title @s[tag=SEAPT] actionbar {"text":"目标：后撤，寻找方法击败德怀特","color":"dark_green"}
 execute if block 90062 103 135 minecraft:grindstone if block 90075 103 141 air if block 90131 128 129 air if entity @n[tag=sc,scores={sea_4temp2=5001..}] run title @s[tag=SEAPT] actionbar {"text":"目标：寻找通往主平台甲板的上行楼梯","color":"dark_green"}
 execute if block 90075 103 141 cauldron run title @s[tag=SEAPT,tag=!e_i_30] actionbar {"text":"目标：寻找通往主平台甲板的上行楼梯","color":"green"}
-execute if block 90075 103 141 cauldron unless entity @n[tag=sc,scores={sea_4temp2=88..}] run title @s[tag=SEAPT,tag=e_i_30] actionbar {"text":"目标：寻找可用的联络装置 & 前往办公区域","color":"green"}
+execute if block 90075 103 141 cauldron unless entity @n[tag=sc,scores={sea_4temp2=88..}] run title @s[tag=SEAPT,tag=e_i_30] actionbar {"text":"目标：寻找可用的联络装置 & 前往行政区","color":"green"}
 execute if block 90075 103 141 cauldron if entity @n[tag=sc,scores={sea_4temp2=366..}] run title @s[tag=SEAPT] actionbar {"text":"目标：前往宿舍楼","color":"green"}
 execute if block 90075 103 141 cauldron if block 90126 140 137 air run title @s[tag=SEAPT] actionbar {"text":"目标：营救宿舍楼的幸存者","color":"green"}
 execute if block 90075 103 141 cauldron if block 90126 140 137 air if block 90121 155 139 air run title @s[tag=SEAPT,tag=e_i_26] actionbar {"text":"目标：解开副宿舍楼的谜题","color":"green"}
@@ -82,7 +82,7 @@ execute if block 90074 103 136 lectern if score SEA_ch5_event_engineering_fiona 
 execute if block 90074 103 136 lectern if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 5001.. run title @s[tag=SEAPT,tag=e_i_46] actionbar {"text":"目标：前往停机坪调查骚乱的来源","color":"green"}
 execute if block 90074 103 136 lectern if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 5001.. if score @n[tag=SEAboss5] rng1 matches 2.. run title @s[tag=SEAPT] actionbar {"text":"目标：尝试击败诺曼博士","color":"green"}
 execute if block 90074 103 136 lectern if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 5001.. if entity @n[tag=SEAboss5b] run title @s[tag=SEAPT] actionbar {"text":"目标：与天使战斗。","color":"green"}
-execute if block 90074 103 136 lectern if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 5001.. run title @s[tag=SEAPT,tag=e_i_47] actionbar {"text":"目标：重返主平台 找到进入办公区的方法","color":"green"}
+execute if block 90074 103 136 lectern if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 5001.. run title @s[tag=SEAPT,tag=e_i_47] actionbar {"text":"目标：重返主平台 找到进入行政区的方法","color":"green"}
 
 
 

@@ -26,8 +26,8 @@ execute unless block 90163 36 86 green_concrete if score SEA_ch5_event_marilyn r
 execute if block 90163 36 86 green_concrete if score SEA_ch5_event_marilyn rng1 matches 105 positioned 90118 90 73 as @p[tag=SEAPT] if entity @n[tag=sc,scores={sea_player=1..}] run tellraw @a[distance=0..50] [{"selector":"@s","color":"white"},{"text":"：嗯……抱歉，我总觉得现在已经不能在这些事情上多花时间了。\n那个，方便的话能帮我讲解一下我之后的目标吗？","color":"white"}]
 
 execute if score SEA_ch5_event_marilyn rng1 matches 124 positioned 90118 90 73 as @p[tag=SEAPT] if entity @n[tag=sc,scores={sea_player=1..}] run tellraw @a[distance=0..50] [{"text":"玛瑞莲：","color":"dark_purple","bold": true},{"text":"\n“你所在的通讯机台位于连通主平台与通讯平台的水下通道。目前来看你应该不太需要回到主平台。”","color":"white","bold": false}]
-execute if score SEA_ch5_event_marilyn rng1 matches 143 positioned 90118 90 73 as @p[tag=SEAPT] if entity @n[tag=sc,scores={sea_player=1}] run tellraw @a[distance=0..50] [{"text":"玛瑞莲：","color":"dark_purple","bold": true},{"text":"\n“现在我可能会需要你帮我去通讯总站打开卫星天线，只有这样你才可能到得了办公区。”","color":"white","bold": false}]
-execute if score SEA_ch5_event_marilyn rng1 matches 143 positioned 90118 90 73 as @p[tag=SEAPT] if entity @n[tag=sc,scores={sea_player=2..}] run tellraw @a[distance=0..50] [{"text":"玛瑞莲：","color":"dark_purple","bold": true},{"text":"\n“现在我可能会需要你们帮我去通讯总站打开卫星天线，只有这样你们才可能到得了办公区。”","color":"white","bold": false}]
+execute if score SEA_ch5_event_marilyn rng1 matches 143 positioned 90118 90 73 as @p[tag=SEAPT] if entity @n[tag=sc,scores={sea_player=1}] run tellraw @a[distance=0..50] [{"text":"玛瑞莲：","color":"dark_purple","bold": true},{"text":"\n“现在我可能会需要你帮我去通讯总站打开卫星天线，只有这样你才可能到得了行政区。”","color":"white","bold": false}]
+execute if score SEA_ch5_event_marilyn rng1 matches 143 positioned 90118 90 73 as @p[tag=SEAPT] if entity @n[tag=sc,scores={sea_player=2..}] run tellraw @a[distance=0..50] [{"text":"玛瑞莲：","color":"dark_purple","bold": true},{"text":"\n“现在我可能会需要你们帮我去通讯总站打开卫星天线，只有这样你们才可能到得了行政区。”","color":"white","bold": false}]
 execute if score SEA_ch5_event_marilyn rng1 matches 163 positioned 90118 90 73 as @p[tag=SEAPT] if entity @n[tag=sc,scores={sea_player=1..}] run tellraw @a[distance=0..50] [{"text":"玛瑞莲：","color":"dark_purple","bold": true},{"text":"\n“很遗憾的是，我没有通讯平台支柱门禁的开关权限。你需要寻找一些特殊的机关进行操作才能打开通路。”","color":"white","bold": false}]
 execute if score SEA_ch5_event_marilyn rng1 matches 183 positioned 90118 90 73 as @p[tag=SEAPT] if entity @n[tag=sc,scores={sea_player=1..}] run tellraw @a[distance=0..50] [{"text":"玛瑞莲：","color":"dark_purple","bold": true},{"text":"\n“首先试着前往工程区，也就是这座通讯平台的内部结构。你可能能从东北侧的支柱上工程区，但我不敢肯定。那里和之前的变化太大了。”","color":"white","bold": false}]
 
@@ -37,8 +37,8 @@ execute if score SEA_ch5_event_marilyn rng1 matches 223 positioned 90118 90 73 i
 
 execute if score SEA_ch5_event_marilyn rng1 matches 243 positioned 90118 90 73 as @p[tag=SEAPT] if entity @n[tag=sc,scores={sea_player=1..}] unless block 90168 34 93 blue_concrete run tellraw @a[distance=0..50] [{"selector":"@s","color":"white"},{"text":"：就是这样对吧，我会尽力的。","color":"white"}]
 execute if score SEA_ch5_event_marilyn rng1 matches 243 positioned 90118 90 73 as @p[tag=SEAPT] if entity @n[tag=sc,scores={sea_player=1..}] if block 90168 34 93 blue_concrete run tellraw @a[distance=0..50] [{"selector":"@s","color":"white"},{"text":"：我明白了，我会尽力的。","color":"white"}]
-execute if score SEA_ch5_event_marilyn rng1 matches 263 positioned 90118 90 73 as @p[tag=SEAPT] if entity @n[tag=sc,scores={sea_player=1}] run tellraw @a[distance=0..50] [{"selector":"@s","color":"white"},{"text":"：……在我赶到办公区域前一定要活着啊。拜托了。","color":"white"}]
-execute if score SEA_ch5_event_marilyn rng1 matches 263 positioned 90118 90 73 as @p[tag=SEAPT] if entity @n[tag=sc,scores={sea_player=2..}] run tellraw @a[distance=0..50] [{"selector":"@s","color":"white"},{"text":"：……一定要活着等我们赶到办公区域。拜托了。","color":"white"}]
+execute if score SEA_ch5_event_marilyn rng1 matches 263 positioned 90118 90 73 as @p[tag=SEAPT] if entity @n[tag=sc,scores={sea_player=1}] run tellraw @a[distance=0..50] [{"selector":"@s","color":"white"},{"text":"：……在我赶到行政区前一定要活着啊。拜托了。","color":"white"}]
+execute if score SEA_ch5_event_marilyn rng1 matches 263 positioned 90118 90 73 as @p[tag=SEAPT] if entity @n[tag=sc,scores={sea_player=2..}] run tellraw @a[distance=0..50] [{"selector":"@s","color":"white"},{"text":"：……一定要活着等我们赶到行政区。拜托了。","color":"white"}]
 
 #低好感度：unless block 90168 34 93 blue_concrete 
 #高好感度：if block 90168 34 93 blue_concrete 
@@ -67,8 +67,8 @@ execute if score SEA_ch5_event_marilyn rng1 matches 4003 if score SEA_ch5_event_
 execute if score SEA_ch5_event_marilyn rng1 matches 4003 if score SEA_ch5_event_fiona_favor rng1 matches 15.. as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if entity @a[tag=SEAPT,scores={SEAPT_member=1}] run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“你在和谁通话呢？幸存者？秘密情人？”","color":"white","bold": false}]
 
 
-execute if score SEA_ch5_event_marilyn rng1 matches 4025 if score SEA_ch5_event_fiona_favor rng1 matches ..16 positioned 90118 90 73 as @p[tag=SEAPT] if entity @n[tag=sc,scores={sea_player=1..}] run tellraw @a[distance=0..50] [{"selector":"@s","color":"white"},{"text":"：啊、是一个说是贝塔小组员工的人，她现在在办公区域。","color":"white"}]
-execute if score SEA_ch5_event_marilyn rng1 matches 4025 if score SEA_ch5_event_fiona_favor rng1 matches 17.. positioned 90118 90 73 as @p[tag=SEAPT] if entity @n[tag=sc,scores={sea_player=1..}] run tellraw @a[distance=0..50] [{"selector":"@s","color":"white"},{"text":"：怎么可能会是秘密情人呢……是一个说是贝塔小组员工的人，她现在在办公区域。","color":"white"}]
+execute if score SEA_ch5_event_marilyn rng1 matches 4025 if score SEA_ch5_event_fiona_favor rng1 matches ..16 positioned 90118 90 73 as @p[tag=SEAPT] if entity @n[tag=sc,scores={sea_player=1..}] run tellraw @a[distance=0..50] [{"selector":"@s","color":"white"},{"text":"：啊、是一个说是贝塔小组员工的人，她现在在行政区。","color":"white"}]
+execute if score SEA_ch5_event_marilyn rng1 matches 4025 if score SEA_ch5_event_fiona_favor rng1 matches 17.. positioned 90118 90 73 as @p[tag=SEAPT] if entity @n[tag=sc,scores={sea_player=1..}] run tellraw @a[distance=0..50] [{"selector":"@s","color":"white"},{"text":"：怎么可能会是秘密情人呢……是一个说是贝塔小组员工的人，她现在在行政区。","color":"white"}]
 
 execute if score SEA_ch5_event_marilyn rng1 matches 4080 positioned 90118 90 73 as @p[tag=SEAPT] if entity @n[tag=sc,scores={sea_player=1..}] run tellraw @a[distance=0..50] [{"selector":"@s","color":"white"},{"text":"：……咦？没有动静了。","color":"white"}]
 

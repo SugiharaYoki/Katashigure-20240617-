@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "主平台：行政区",
+            "color": "blue",
+            "bold": true,
+            "italic": false
+        },
+        "description": {
+            "text": "我最终前往了最初就该前往的场所。\n但这次，我不会再是孤身一人，也不会再迷惘。",
+            "color": "white"
+        },
+        "icon": {
+            "id": "minecraft:bamboo_block"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "sea": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:sea/chapter5c"
+}

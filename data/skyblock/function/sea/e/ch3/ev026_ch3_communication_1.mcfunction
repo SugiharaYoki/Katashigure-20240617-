@@ -11,16 +11,16 @@ execute as @s[tag=sc,scores={sea_4temp2=103}] positioned 90133 137 108 as @p[tag
 execute as @s[tag=sc,scores={sea_4temp2=103..364}] positioned 90133 137 108 as @p[tag=SEAPT,nbt={SelectedItem:{id:"minecraft:spyglass"}},scores={SEA_story=2..}] unless entity @a[tag=SEAPT,scores={SEA_story=..1}] at @s run tellraw @a[tag=SEAPT] [{"selector":"@s","color":"white"},{"text":"：「跳过了剧情」","color":"white"}]
 execute as @s[tag=sc,scores={sea_4temp2=103..364}] positioned 90133 137 108 if entity @p[tag=SEAPT,nbt={SelectedItem:{id:"minecraft:spyglass"}},scores={SEA_story=2..}] unless entity @a[tag=SEAPT,scores={SEA_story=..1}] run scoreboard players set @n[tag=sc] sea_4temp2 365
 execute as @s[tag=sc,scores={sea_4temp2=118}] positioned 90133 137 108 as @p[tag=SEAPT] if entity @n[tag=sc,scores={sea_player=1}] \
- run tellraw @a[distance=0..50] [{"selector":"@s","color":"white"},{"text":"：玛瑞莲小姐，这里通往办公区域的所有通道都被堵住了，我该怎么上去？","color":"white"}]
+ run tellraw @a[distance=0..50] [{"selector":"@s","color":"white"},{"text":"：玛瑞莲小姐，这里通往行政区的所有通道都被堵住了，我该怎么上去？","color":"white"}]
 execute as @s[tag=sc,scores={sea_4temp2=118}] positioned 90133 137 108 as @p[tag=SEAPT] if entity @n[tag=sc,scores={sea_player=2..}] \
- run tellraw @a[distance=0..50] [{"selector":"@s","color":"white"},{"text":"：玛瑞莲小姐，这里通往办公区域的所有通道都被堵住了，我们该怎么上去？","color":"white"}]
+ run tellraw @a[distance=0..50] [{"selector":"@s","color":"white"},{"text":"：玛瑞莲小姐，这里通往行政区的所有通道都被堵住了，我们该怎么上去？","color":"white"}]
 execute as @s[tag=sc,scores={sea_4temp2=135}] positioned 90133 137 108 as @p[tag=SEAPT] \
  run tellraw @a[distance=0..50] [{"text":"玛瑞莲：","color":"dark_purple","bold": true},{"text":"\n“您不必清除那些路障，那些植物在上层肆意生长，我们之中的许多人都被藤蔓给活生生吞噬。”","color":"white","bold": false}]
 execute as @s[tag=sc,scores={sea_4temp2=153}] positioned 90133 137 108 as @p[tag=SEAPT] \
  run tellraw @a[distance=0..50] [{"text":"玛瑞莲：","color":"dark_purple","bold": true},{"text":"\n“这植物唯一的弱点是高频声波。\n邪教徒显然意识到了这一点，他们占领了整座通讯中心，关停了通讯服务器。”","color":"white","bold": false}]
 execute as @s[tag=sc,scores={sea_4temp2=171}] positioned 90133 137 108 as @p[tag=SEAPT] if entity @n[tag=sc,scores={sea_player=1..}] run tellraw @a[distance=0..50] [{"selector":"@s","color":"white"},{"text":"：通讯中心？是指在桥对面的附属平台吗？","color":"white"}]
 execute as @s[tag=sc,scores={sea_4temp2=187}] positioned 90133 137 108 as @p[tag=SEAPT] \
- run tellraw @a[distance=0..50] [{"text":"玛瑞莲：","color":"dark_purple","bold": true},{"text":"\n“没错……您得想办法到那里操控卫星天线。\n办公区域的天线只能用来即时通话，无法进行广播，因此我这里无能为力。”","color":"white","bold": false}]
+ run tellraw @a[distance=0..50] [{"text":"玛瑞莲：","color":"dark_purple","bold": true},{"text":"\n“没错……您得想办法到那里操控卫星天线。\n行政区的天线只能用来即时通话，无法进行广播，因此我这里无能为力。”","color":"white","bold": false}]
 execute as @s[tag=sc,scores={sea_4temp2=206}] positioned 90133 137 108 as @p[tag=SEAPT] if entity @n[tag=sc,scores={sea_player=1}] \
  run tellraw @a[distance=0..50] [{"selector":"@s","color":"white"},{"text":"：底下的门是锁的，我该如何到达对面？\n我一个人去强行突破的话，胜算是多少？","color":"white"}]
 execute as @s[tag=sc,scores={sea_4temp2=206}] positioned 90133 137 108 as @p[tag=SEAPT] if entity @n[tag=sc,scores={sea_player=2..3}] \
@@ -55,7 +55,7 @@ execute as @s[tag=sc,scores={sea_4temp2=288}] positioned 90133 137 108 as @p[tag
  run tellraw @a[distance=0..50] [{"selector":"@s","color":"white"},{"text":"：我明白了，我们会多加留意的。","color":"white"}]
 
  execute as @s[tag=sc,scores={sea_4temp2=325}] positioned 90133 137 108 as @p[tag=SEAPT] if entity @n[tag=sc,scores={sea_player=1..}] \
- run tellraw @a[distance=0..50] [{"text":"玛瑞莲：","color":"dark_purple","bold": true},{"text":"\n“我这里可就没有那么好的运气了。办公区域似乎只有我还活着呢。”","color":"white","bold": false}]
+ run tellraw @a[distance=0..50] [{"text":"玛瑞莲：","color":"dark_purple","bold": true},{"text":"\n“我这里可就没有那么好的运气了。行政区似乎只有我还活着呢。”","color":"white","bold": false}]
 
 execute as @s[tag=sc,scores={sea_4temp2=342}] positioned 90133 137 108 as @p[tag=SEAPT] \
  run tellraw @a[distance=0..50] [{"text":"玛瑞莲：","color":"dark_purple","bold": true},{"text":"\n“我这里能够打开宿舍楼的门。\n记住，里面有相当恐怖的尸潮，不要贸然闯入。\n做好充足的准备后，找南面那栋红棕色外墙的楼。”","color":"white","bold": false}]
