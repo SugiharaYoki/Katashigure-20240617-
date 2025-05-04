@@ -414,4 +414,4 @@ setblock 90067 150 154 chest[facing=south]
 
 setblock 90074 128 150 chest[facing=south]
 item replace block 90074 128 150 container.12 with arrow 1
-
+setblock 90116 128 107 chest[facing=east]

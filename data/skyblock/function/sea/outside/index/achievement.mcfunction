@@ -37,6 +37,7 @@ scoreboard players add @s[advancements={skyblock:sea/doc/25=true}] rng5 1
 scoreboard players add @s[advancements={skyblock:sea/doc/26=true}] rng5 1
 scoreboard players add @s[advancements={skyblock:sea/doc/27=true}] rng5 1
 scoreboard players add @s[advancements={skyblock:sea/doc/28=true}] rng2 1
+scoreboard players add @s[advancements={skyblock:sea/doc/29=true}] rng2 1
 
 scoreboard players add @s[advancements={skyblock:sea/doc/b1=true}] rng3 1
 scoreboard players add @s[advancements={skyblock:sea/doc/b2=true}] rng3 1
@@ -99,8 +100,8 @@ scoreboard players add @s[advancements={skyblock:sea/doc/w27=true}] rng4 1
 
  tellraw @s[scores={rng1=..4}] [{"text":"第一章 档案 ","color":"light_purple","bold": true},{"score":{"name":"@s","objective":"rng1"},"color":"white","bold": false},{"text":"/5","color":"white","bold": false}]
  tellraw @s[scores={rng1=5..}] [{"text":"第一章 档案 ","color":"light_purple","bold": true},{"score":{"name":"@s","objective":"rng1"},"color":"green","bold": false},{"text":"/5","color":"green","bold": false}]
- tellraw @s[scores={rng2=..5}] [{"text":"第二章 档案 ","color":"light_purple","bold": true},{"score":{"name":"@s","objective":"rng2"},"color":"white","bold": false},{"text":"/9","color":"white","bold": false}]
- tellraw @s[scores={rng2=6..}] [{"text":"第二章 档案 ","color":"light_purple","bold": true},{"score":{"name":"@s","objective":"rng2"},"color":"green","bold": false},{"text":"/9","color":"green","bold": false}]
+ tellraw @s[scores={rng2=..5}] [{"text":"第二章 档案 ","color":"light_purple","bold": true},{"score":{"name":"@s","objective":"rng2"},"color":"white","bold": false},{"text":"/10","color":"white","bold": false}]
+ tellraw @s[scores={rng2=6..}] [{"text":"第二章 档案 ","color":"light_purple","bold": true},{"score":{"name":"@s","objective":"rng2"},"color":"green","bold": false},{"text":"/10","color":"green","bold": false}]
  tellraw @s[scores={rng3=..12}] [{"text":"第三章 档案 ","color":"light_purple","bold": true},{"score":{"name":"@s","objective":"rng3"},"color":"white","bold": false},{"text":"/14","color":"white","bold": false}]
  tellraw @s[scores={rng3=13..}] [{"text":"第三章 档案 ","color":"light_purple","bold": true},{"score":{"name":"@s","objective":"rng3"},"color":"green","bold": false},{"text":"/14","color":"green","bold": false}]
  tellraw @s[scores={rng4=..14}] [{"text":"第四章 档案 ","color":"light_purple","bold": true},{"score":{"name":"@s","objective":"rng4"},"color":"white","bold": false},{"text":"/15","color":"white","bold": false}]
