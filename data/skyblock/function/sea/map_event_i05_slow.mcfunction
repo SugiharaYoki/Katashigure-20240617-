@@ -105,7 +105,7 @@ execute positioned 90112 149 103 if score sea_ch5_mood sea_4temp1 matches 1..20 
 
 
 
-execute if score SEA_ch5_event_engineering_fiona rng1 matches 0 positioned 90138 122 68 if entity @a[tag=SEAPT,tag=!SEAPF,distance=0..5] run scoreboard players set SEA_ch5_event_engineering_fiona rng1 1
+execute if score SEA_ch5_event_engineering_fiona rng1 matches 0 positioned 90138 122 68 if entity @a[tag=SEAPT,tag=!SEAPF,x=90139,y=121,z=64,dx=6,dy=4,dz=6] run scoreboard players set SEA_ch5_event_engineering_fiona rng1 1
 
 execute if score SEA_ch5_event_engineering_fiona rng1 matches 1..832 run function skyblock:sea/e/ch5/event_engineering_meeting_fiona
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 1..840 run function skyblock:sea/e/ch5/event_engineering_meeting_fiona_the_exchange
