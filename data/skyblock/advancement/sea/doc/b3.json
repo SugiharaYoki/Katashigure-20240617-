@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "支撑结构底部的便签纸",
+            "color": "light_purple",
+            "bold": false,
+            "italic": false
+        },
+        "description": {
+            "text": "喷火器能够迅速除掉变异的虫子，但我得确保后来者能顺利找到它们。\n站在主平台甲板的多功能工作站与通讯室门口之间，往正西方的上面看，会有一盏蓝色的灯笼。\n储藏喷火器的仓库的钥匙就在灯笼旁边。",
+            "color": "white"
+        },
+        "icon": {
+            "id": "minecraft:flow_banner_pattern"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "sea": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:sea/doc/documentary3"
+}
