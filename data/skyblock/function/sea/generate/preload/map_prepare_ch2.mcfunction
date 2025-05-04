@@ -412,5 +412,6 @@ fill 90137 128 98 90136 128 98 spruce_stairs[facing=north]
 
 setblock 90067 150 154 chest[facing=south]
 
-
+setblock 90074 128 150 chest[facing=south]
+item replace block 90074 128 150 container.12 with arrow 1
 

@@ -166,7 +166,7 @@ item replace block 90107 156 135 container.13 with flow_banner_pattern[custom_da
 #1001110
 item replace block 90101 137 147 container.13 with flow_banner_pattern[custom_data={sea_doc03b:true},custom_name='{"text":"支撑结构底部的便签纸","italic":true,"color":"dark_purple","italic":false}',lore=['{"text":"喷火器能够迅速除掉变异的虫子，我得确保后来者能顺利找到它们。","color":"white","italic":false}','{"text":"站在主平台甲板的多功能工作站与通讯室门口之间，往正西方的上面看，会有一盏蓝色的灯笼。","color":"white","italic":false}','{"text":"储藏喷火器的仓库的钥匙就在灯笼旁边。","color":"white","italic":false}']]
 
-
+item replace block 90074 128 150 container.14 with flow_banner_pattern[custom_data={sea_doc04b:true},custom_name='{"text":"主平台西南升降梯旁的便签纸","italic":true,"color":"dark_purple","italic":false}',lore=['{"text":"我发现这些陶罐里面被藏了很多好东西，可是我手太短够不着。","color":"white","italic":false}','{"text":"以这些陶罐的材质而言，蹲下来冲它们射一箭估计就能破开罐壁。","color":"white","italic":false}']]
 
 
 

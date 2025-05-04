@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "主平台西南升降梯旁的便签纸",
+            "color": "light_purple",
+            "bold": false,
+            "italic": false
+        },
+        "description": {
+            "text": "我发现这些陶罐里面被藏了很多好东西，可是我手太短够不着。\n以这些陶罐的材质而言，蹲下来冲它们射一箭估计就能破开罐壁。",
+            "color": "white"
+        },
+        "icon": {
+            "id": "minecraft:flow_banner_pattern"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "sea": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:sea/doc/documentary2"
+}
