@@ -46,7 +46,7 @@ execute as @s[scores={sea_4temp2=520}] run playsound minecraft:entity.generic.ex
 execute as @s[scores={sea_4temp2=520}] run fill 90125 125 114 90125 124 114 air
 
 execute as @s[scores={sea_4temp2=524}] positioned 90120 123 123 if entity @n[tag=sc,scores={sea_player=2..}] if entity @a[scores={SEAPT_member=2}] run tellraw @a[distance=0..50] [{"selector":"@p[tag=SEAPT,scores={SEAPT_member=2}]","color":"white"},{"text":"：到底有多少个？我说，我们为什么要做这种事情。","color":"white"}]
-execute as @s[scores={sea_4temp2=599}] positioned 90120 123 123 if entity @n[tag=sc,scores={sea_player=2..}] if entity @a[scores={SEAPT_member=2}] if entity @a[scores={SEAPT_member=1}] run tellraw @a[distance=0..50] [{"selector":"@p[tag=SEAPT,scores={SEAPT_member=1}]","color":"white"},{"text":"：你是傻子吗？钻井平台发生丧尸危机——我们这么给领导说了，鬼会信我们？","color":"white"}]
+execute as @s[scores={sea_4temp2=599}] positioned 90120 123 123 if entity @n[tag=sc,scores={sea_player=2..}] if entity @a[scores={SEAPT_member=2}] if entity @a[scores={SEAPT_member=1}] run tellraw @a[distance=0..50] [{"selector":"@p[tag=SEAPT,scores={SEAPT_member=1}]","color":"white"},{"text":"：你是傻子吗？钻井平台发生丧尸危机——我们这么给领导汇报过去，鬼会信我们？","color":"white"}]
 execute as @s[scores={sea_4temp2=699}] positioned 90120 123 123 if entity @n[tag=sc,scores={sea_player=2..}] if entity @a[scores={SEAPT_member=2}] if entity @a[scores={SEAPT_member=3}] run tellraw @a[distance=0..50] [{"selector":"@p[tag=SEAPT,scores={SEAPT_member=3}]","color":"white"},{"text":"：而且最坏情况他们已经知道会发生这种事，那我们作为知情者可活不了。","color":"white"}]
 
 execute store result score @n[tag=sc,scores={sea_4temp2=200..1200,sea_player=1}] rng1 run random value 1..18
