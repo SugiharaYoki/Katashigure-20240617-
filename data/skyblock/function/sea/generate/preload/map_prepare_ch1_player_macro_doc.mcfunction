@@ -114,3 +114,13 @@ $execute if data storage sea:doc doc.$(eid).g36 run advancement grant @s only sk
 $execute if data storage sea:doc doc.$(eid).g37 run advancement grant @s only skyblock:sea/doc/g37
 $execute if data storage sea:doc doc.$(eid).g38 run advancement grant @s only skyblock:sea/doc/g38
 $execute if data storage sea:doc doc.$(eid).g39 run advancement grant @s only skyblock:sea/doc/g39
+$execute if data storage sea:doc doc.$(eid).g40 run advancement grant @s only skyblock:sea/doc/g40
+$execute if data storage sea:doc doc.$(eid).g41 run advancement grant @s only skyblock:sea/doc/g41
+$execute if data storage sea:doc doc.$(eid).g42 run advancement grant @s only skyblock:sea/doc/g42
+$execute if data storage sea:doc doc.$(eid).g43 run advancement grant @s only skyblock:sea/doc/g43
+$execute if data storage sea:doc doc.$(eid).g44 run advancement grant @s only skyblock:sea/doc/g44
+$execute if data storage sea:doc doc.$(eid).g45 run advancement grant @s only skyblock:sea/doc/g45
+$execute if data storage sea:doc doc.$(eid).g46 run advancement grant @s only skyblock:sea/doc/g46
+$execute if data storage sea:doc doc.$(eid).g47 run advancement grant @s only skyblock:sea/doc/g47
+$execute if data storage sea:doc doc.$(eid).g48 run advancement grant @s only skyblock:sea/doc/g48
+$execute if data storage sea:doc doc.$(eid).g49 run advancement grant @s only skyblock:sea/doc/g49
