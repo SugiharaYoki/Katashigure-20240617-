@@ -25,6 +25,9 @@ $execute if data storage sea:doc doc.$(eid).24 run advancement grant @s only sky
 $execute if data storage sea:doc doc.$(eid).25 run advancement grant @s only skyblock:sea/doc/25
 $execute if data storage sea:doc doc.$(eid).26 run advancement grant @s only skyblock:sea/doc/26
 $execute if data storage sea:doc doc.$(eid).27 run advancement grant @s only skyblock:sea/doc/27
+$execute if data storage sea:doc doc.$(eid).28 run advancement grant @s only skyblock:sea/doc/28
+$execute if data storage sea:doc doc.$(eid).29 run advancement grant @s only skyblock:sea/doc/29
+$execute if data storage sea:doc doc.$(eid).30 run advancement grant @s only skyblock:sea/doc/30
 
 $execute if data storage sea:doc doc.$(eid).b1 run advancement grant @s only skyblock:sea/doc/b1
 $execute if data storage sea:doc doc.$(eid).b2 run advancement grant @s only skyblock:sea/doc/b2
