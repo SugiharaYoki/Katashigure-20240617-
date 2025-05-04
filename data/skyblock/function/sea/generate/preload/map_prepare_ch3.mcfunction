@@ -517,7 +517,7 @@ setblock 90140 138 98 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery
 
 
 
-
+setblock 90101 137 147 chest[facing=west]
 
 
 

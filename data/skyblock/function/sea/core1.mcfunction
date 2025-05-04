@@ -155,7 +155,21 @@ item replace block 90075 122 143 container.15 with flow_banner_pattern[custom_da
 '{"text":"不明来历的纸条","italic":true,"color":"dark_purple","italic":false}',\
 lore=['{"text":"法莫洛斯医生也变成了怪物。","color":"white","italic":false}','{"text":"我顺着痕迹找到这里，但是幸存者均已离去。","color":"white","italic":false}','{"text":"他们之中定是有人掌握了新情报。","color":"white","italic":false}','{"text":"我觉得我有必要再回一次水下。","color":"white","italic":false}']]
 
+
+
+
+
 item replace block 90086 143 116 container.13 with flow_banner_pattern[custom_data={sea_doc01b:true},custom_name='{"text":"燃料架B内的便签纸","italic":true,"color":"dark_purple","italic":false}',lore=['{"text":"上面写着歪歪扭扭的字：","color":"white","italic":false}','{"text":"“从右到左仔细观察北水箱西面的蜡烛”","color":"white","italic":false}']]
+
+item replace block 90107 156 135 container.13 with flow_banner_pattern[custom_data={sea_doc02b:true},custom_name='{"text":"副宿舍楼个人储藏柜内的便签纸","italic":true,"color":"dark_purple","italic":false}',lore=['{"text":"上面写着歪歪扭扭的字：","color":"white","italic":false}','{"text":"“正方形左上”","color":"white","italic":false}','{"text":"“左上的斜对角”","color":"white","italic":false}','{"text":"“右上”","color":"white","italic":false}','{"text":"“剩下的那个角”","color":"white","italic":false}','{"text":"“第一个角”","color":"white","italic":false}','{"text":"“左下”","color":"white","italic":false}','{"text":"“第四个角的斜对面”","color":"white","italic":false}']]
+#红白蓝紫红紫蓝
+#1001110
+item replace block 90101 137 147 container.13 with flow_banner_pattern[custom_data={sea_doc03b:true},custom_name='{"text":"支撑结构底部的便签纸","italic":true,"color":"dark_purple","italic":false}',lore=['{"text":"喷火器能够迅速除掉变异的虫子，我得确保后来者能顺利找到它们。","color":"white","italic":false}','{"text":"站在主平台甲板的多功能工作站与通讯室门口之间，往正西方的上面看，会有一盏蓝色的灯笼。","color":"white","italic":false}','{"text":"储藏喷火器的仓库的钥匙就在灯笼旁边。","color":"white","italic":false}']]
+
+
+
+
+
 
 
 item replace block 90114 123 125 container.12 with flow_banner_pattern[custom_data={sea_doc10b:true},custom_name=\
@@ -219,9 +233,6 @@ item replace block 90100 155 139 container.14 with flow_banner_pattern[custom_da
 '{"text":"副宿舍楼二楼的笔记 - 肯","italic":true,"color":"dark_purple","italic":false}',\
 lore=['{"text":"19号 28万桶 - 石油开采量未满足需求。","color":"white","italic":false}','{"text":"20号 31万桶 - 石油开采量满足需求。","color":"white","italic":false}','{"text":"接下来的两个月内将尝试增加20%产量。","color":"white","italic":false}','{"text":"预计明天产量30万桶——理所当然。","color":"white","italic":false}','{"text":"实验体人数（后面的字都被狠狠划掉了）","color":"white","italic":false}']]
 
-item replace block 90107 156 135 container.13 with flow_banner_pattern[custom_data={sea_doc02b:true},custom_name='{"text":"副宿舍楼个人储藏柜内的便签纸","italic":true,"color":"dark_purple","italic":false}',lore=['{"text":"上面写着歪歪扭扭的字：","color":"white","italic":false}','{"text":"“正方形左上”","color":"white","italic":false}','{"text":"“左上的斜对角”","color":"white","italic":false}','{"text":"“右上”","color":"white","italic":false}','{"text":"“剩下的那个角”","color":"white","italic":false}','{"text":"“第一个角”","color":"white","italic":false}','{"text":"“左下”","color":"white","italic":false}','{"text":"“第四个角的斜对面”","color":"white","italic":false}']]
-#红白蓝紫红紫蓝
-#1001110
 
 item replace block 90111 71 73 container.13 with flow_banner_pattern[custom_data={sea_doc23:true},custom_name=\
 '{"text":"通讯平台西南支柱的笔记 - 琼斯","italic":true,"color":"dark_purple","italic":false}',\
