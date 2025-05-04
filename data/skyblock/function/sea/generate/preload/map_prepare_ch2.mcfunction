@@ -48,8 +48,8 @@ setblock 90096 132 112 minecraft:tinted_glass
 
 
 setblock 90089 128 114 chest[facing=north]
-item replace block 90089 128 114 container.12 with bread 2
-item replace block 90089 128 114 container.14 with bread 2
+item replace block 90089 128 114 container.11 with bread 2
+item replace block 90089 128 114 container.15 with bread 2
 
 
 fill 90076 105 141 90076 103 139 minecraft:air

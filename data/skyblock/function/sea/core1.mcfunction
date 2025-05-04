@@ -158,6 +158,11 @@ lore=['{"text":"法莫洛斯医生也变成了怪物。","color":"white","italic
 
 
 
+item replace block 90089 128 114 container.13 with flow_banner_pattern[custom_data={sea_doc28:true},custom_name='{"text":"物资层入口的笔记 - 戴德里克","italic":true,"color":"dark_purple","italic":false}',lore=['{"text":"我选择加入诺玛的反抗队伍。","color":"white","italic":false}','{"text":"自从邪教徒宣布地底的古代遗物是圣水晶，感染者就接二连三地出现。","color":"white","italic":false}','{"text":"虽然邪教徒他们自己也搞不清楚究竟发生了什么，可但凡有个脑子都能知道背后的原因。","color":"white","italic":false}','{"text":"不能再让邪教徒胡作非为下去了，诺玛会带我们夺回忒尔克西的控制权。","color":"white","italic":false}']]
+
+
+
+
 
 item replace block 90086 143 116 container.13 with flow_banner_pattern[custom_data={sea_doc01b:true},custom_name='{"text":"燃料架B内的便签纸","italic":true,"color":"dark_purple","italic":false}',lore=['{"text":"上面写着歪歪扭扭的字：","color":"white","italic":false}','{"text":"“从右到左仔细观察北水箱西面的蜡烛”","color":"white","italic":false}']]
 

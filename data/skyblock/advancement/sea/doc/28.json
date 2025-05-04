@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "物资层入口的笔记 - 戴德里克",
+            "color": "light_purple",
+            "bold": false,
+            "italic": false
+        },
+        "description": {
+            "text": "我选择加入诺玛的反抗队伍。\n自从邪教徒宣布地底的古代遗物是圣水晶，感染者就接二连三地出现。\n虽然邪教徒他们自己也搞不清楚究竟发生了什么，可但凡有个脑子都能知道背后的原因。\n不能再让邪教徒胡作非为下去了，诺玛会带我们夺回忒尔克西的控制权。",
+            "color": "white"
+        },
+        "icon": {
+            "id": "minecraft:flow_banner_pattern"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "sea": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:sea/doc/documentary2"
+}
