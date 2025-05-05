@@ -41,5 +41,8 @@ setblock 90077 105 141 minecraft:dark_oak_hanging_sign
 
 forceload remove 90012 -375 90039 -405
 
+setblock 90149 136 102 chest[facing=west]
+item replace block 90149 136 102 container.12 with flint 1
+item replace block 90149 136 102 container.14 with flint 1
 
 

@@ -586,3 +586,9 @@ setblock 90128 131 18 chest[facing=west]
 item replace block 90128 131 18 container.12 with carrot 3
 item replace block 90128 131 18 container.14 with carrot 3
 
+setblock 90106 137 31 minecraft:barrel[facing=east]
+item replace block 90106 137 31 container.13 with music_disc_stal 1
+setblock 90150 144 57 minecraft:jukebox
+
+
+
