@@ -1,4 +1,5 @@
-summon marker ~ ~ ~ {Tags:["SEAripper_launched"]}
+execute unless items entity @s container.* *[custom_data={sea_t_ripper1:true}] run summon marker ~ ~ ~ {Tags:["SEAripper_launched"]}
+execute if items entity @s container.* *[custom_data={sea_t_ripper1:true}] run summon marker ~ ~ ~ {Tags:["SEAripper_launched","SEAripper_launched_sound"]}
 scoreboard players operation @n[tag=SEAripper_launched] rng3 = @s rng3
 scoreboard players operation @n[tag=SEAripper_launched] rng4 = @s rng4
 scoreboard players operation @n[tag=SEAripper_launched] rng5 = @s rng5
