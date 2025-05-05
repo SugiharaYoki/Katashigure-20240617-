@@ -328,6 +328,10 @@ setblock 90136 112 21 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery
 setblock 90108 40 37 air
 setblock 90108 40 37 decorated_pot{sherds:["friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd"],item:{count: 3, id:"minecraft:emerald"}}
 
+setblock 90106 136 28 air
+setblock 90106 136 28 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 4, id:"minecraft:glow_berries"}}
+setblock 90110 136 30 air
+setblock 90110 136 30 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 2, id:"minecraft:flint"}}
 
 fill 90116 99 73 90116 101 73 ladder[facing=east]
 
