@@ -15,6 +15,18 @@ scoreboard players set @n[tag=sc] sea_4temp8 0
 tag @n[tag=sc] add SeGa_sea_ch6
 scoreboard players set SEAmusic rng1 0
 
+scoreboard players set SEA_ch6_event rng1 0
+scoreboard players set SEA_ch6_event rng2 0
+scoreboard players set SEA_ch6_event rng3 0
+scoreboard players set SEA_ch6_event rng4 0
+scoreboard players set SEA_ch6_event rng5 0
+scoreboard players set SEA_ch6_event rng6 0
+scoreboard players set SEA_ch6_event rng7 0
+scoreboard players set SEA_ch6_event rng8 0
+scoreboard players set SEA_ch6_event rng9 0
+
+
+
 forceload add 90012 -375 90039 -405
 clone 90012 -50 -405 90039 -20 -375 90092 178 131
 clone 90012 -20 -405 90039 10 -375 90092 208 131
