@@ -245,6 +245,8 @@ execute if entity @a[tag=SEAPT,scores={SEA_ch5_event_illager_killed=1..}] run sc
 execute if block 90118 90 73 warped_button[powered=true] if score SEA_ch5_event_marilyn rng1 matches ..0 run scoreboard players set SEA_ch5_event_marilyn rng1 1
 execute if score SEA_ch5_event_marilyn rng1 matches 1.. run function skyblock:sea/e/ch5/marilyn/communication_1
 
+execute if block 90074 103 136 lectern if entity @a[tag=SEAPT,tag=e_i_46] positioned 90142 134 26 if block 90153 124 18 chain unless entity @n[tag=SEAboss5b] if score SEA_ch5_event_boss5 rng9 matches ..0 run scoreboard players set SEA_ch5_event_boss5 rng9 1
+
 execute if score SEA_ch5_event_boss5 rng9 matches 100.. run function skyblock:sea/e/ch5/boss5/conclusion
 
 
