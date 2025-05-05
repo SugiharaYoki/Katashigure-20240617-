@@ -1,4 +1,4 @@
-#第五章
+#第六章
 
 setblock 90074 103 136 lectern[facing=east]
 
