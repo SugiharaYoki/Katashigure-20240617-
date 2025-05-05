@@ -31,7 +31,7 @@ fill 90117 131 68 90121 131 68 air
 
 setblock 90150 124 15 chain
 setblock 90153 122 18 chain
-
+setblock 90125 129 29 minecraft:heavy_weighted_pressure_plate
 
 forceload add 90012 -375 90039 -405
 clone 90012 -50 -405 90039 -20 -375 90092 178 131

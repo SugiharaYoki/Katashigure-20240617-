@@ -197,6 +197,7 @@ execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 5050 positio
 execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 5050 if block 90060 101 142 red_candle positioned 90140 130 64 run function skyblock:sea/m/pillager_npc
 execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 5050 run fill 90142 132 46 90142 130 46 air
 execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 5050 run fill 90117 131 68 90121 131 68 air
+execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 5050 run setblock 90125 129 29 minecraft:heavy_weighted_pressure_plate
 
 execute as @e[tag=SEAmob_surrended,x=90100,y=100,z=100,distance=0..200,type=#illager,limit=3,sort=random] at @s as @n[tag=SEAmob,tag=!SEAnpc,type=!#illager,distance=0..2.9] at @s run function skyblock:sea/e/ch5/event_array_lurk_surrendedattack
 

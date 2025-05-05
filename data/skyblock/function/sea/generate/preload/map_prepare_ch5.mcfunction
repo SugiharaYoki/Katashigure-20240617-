@@ -579,3 +579,10 @@ setblock 90145 144 57 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery
 
 fill 90142 132 46 90142 130 46 iron_bars
 
+setblock 90125 129 29 minecraft:air
+
+
+setblock 90128 131 18 chest[facing=west]
+item replace block 90128 131 18 container.12 with carrot 3
+item replace block 90128 131 18 container.14 with carrot 3
+
