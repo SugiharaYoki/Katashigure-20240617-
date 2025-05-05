@@ -38,7 +38,3 @@ execute as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s as @e[tag=S
 execute as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s as @e[tag=SEAmob,type=vindicator] at @s run tag @s add SEAmob_surrended
 
 
-execute store result score @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200,tag=!SEAfiona_laser_attacking] rng2 run random value 1..5
-execute as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200,scores={rng2=1}] at @s if entity @e[tag=SEAmob,distance=0..5,tag=!SEAmob_surrended] run function skyblock:sea/e/ch5/fiona_attack_1
-execute as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200,scores={rng2=2}] at @s if entity @n[tag=SEAmob,tag=!SEAnpc,distance=..8,type=!magma_cube,tag=!SEAmob_surrended] run tag @s add SEAfiona_laser_attacking
-
