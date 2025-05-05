@@ -8,7 +8,6 @@ execute positioned 90126 122 23 run kill @e[type=witch,distance=0..200]
 
 #菲尔娜技能组
 execute as @n[tag=SEAfiona_laser_attacking,x=90000,y=100,z=0,distance=0..1200] at @s run function skyblock:sea/e/ch5/fiona_attack_laser
-execute as @n[tag=SEAfiona_laser_attacking_hostile,x=90000,y=100,z=0,distance=0..1200] at @s run function skyblock:sea/e/ch5/fiona_attack_laser_hostile
 execute as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] run effect give @s regeneration 5 5 true
 execute store result score @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200,tag=!SEAfiona_laser_attacking] rng2 run random value 1..5
 execute as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200,scores={rng2=1}] at @s if entity @e[tag=SEAmob,distance=0..5,tag=!SEAmob_surrended] run function skyblock:sea/e/ch5/fiona_attack_1
