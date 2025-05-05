@@ -45,7 +45,7 @@ execute if score SEA_ch5_event_boss5 rng9 matches 34 as @n[tag=SEAboss5b] at @s 
 execute if score SEA_ch5_event_boss5 rng9 matches 34 as @n[tag=SEAboss5b] at @s positioned ^-4 ^ ^ positioned over world_surface run summon lightning_bolt
 
 execute if score SEA_ch5_event_boss5 rng9 matches 34 as @n[tag=SEAboss5b] at @s run particle large_smoke ~ ~1 ~ 5 5 5 0.02 50
-execute if score SEA_ch5_event_boss5 rng9 matches 34 as @n[tag=SEAboss5b] at @s run bossbar remove 9066602
+execute if score SEA_ch5_event_boss5 rng9 matches 34..41 as @n[tag=SEAboss5b] at @s run bossbar remove 9066602
 execute if score SEA_ch5_event_boss5 rng9 matches 34..40 as @n[tag=SEAboss5b] at @s run kill @s
 
 
