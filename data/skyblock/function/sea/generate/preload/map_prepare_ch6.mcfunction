@@ -25,7 +25,9 @@ scoreboard players set SEA_ch6_event rng7 0
 scoreboard players set SEA_ch6_event rng8 0
 scoreboard players set SEA_ch6_event rng9 0
 
-
+fill 90134 130 58 90134 130 59 minecraft:heavy_weighted_pressure_plate
+fill 90142 132 46 90142 130 46 air
+fill 90117 131 68 90121 131 68 air
 
 forceload add 90012 -375 90039 -405
 clone 90012 -50 -405 90039 -20 -375 90092 178 131

@@ -82,7 +82,9 @@
 
 
 
+function skyblock:sea/e/ch6/friendly_pillager
 
+execute if score SEA_ch6_event rng1 matches ..200 run function skyblock:sea/e/ch6/part1/event_start_mob
 
 
 
