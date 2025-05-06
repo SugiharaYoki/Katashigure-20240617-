@@ -1,4 +1,4 @@
-scoreboard players set MG_AZR0_Timer rng3 1
+
 
 
 
@@ -16,6 +16,8 @@ execute if score MG_AZR0_Timer rng3 matches 17.. if score MG_AZR0_Timer rng2 mat
 execute if score MG_AZR0_Timer rng3 matches 18.. if score MG_AZR0_Timer rng2 matches 1.. run function skyblock:mg/azr0/system/mob/summon/execute
 execute if score MG_AZR0_Timer rng3 matches 19.. if score MG_AZR0_Timer rng2 matches 1.. run function skyblock:mg/azr0/system/mob/summon/execute
 execute if score MG_AZR0_Timer rng3 matches 20.. if score MG_AZR0_Timer rng2 matches 1.. run function skyblock:mg/azr0/system/mob/summon/execute
+
+scoreboard players set MG_AZR0_Timer rng3 1
 
 kill @e[type=marker,tag=mg_azr0_MobPortals]
 
