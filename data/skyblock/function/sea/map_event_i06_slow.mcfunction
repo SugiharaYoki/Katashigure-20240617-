@@ -7,6 +7,8 @@ execute positioned 90112 149 103 if score sea_ch5_mood sea_4temp1 matches 1..20 
 
 
 execute as @a[x=90143,y=146,z=108,dx=4,dy=4,dz=4,tag=!e_i_52] at @s run function skyblock:sea/e/ch6/title_1
+execute as @a[x=90139,y=153,z=141,dx=4,dy=4,dz=6,tag=!e_i_52] at @s run function skyblock:sea/e/ch6/title_1
+
 
 function skyblock:sea/e/ch6/friendly_pillager
 
