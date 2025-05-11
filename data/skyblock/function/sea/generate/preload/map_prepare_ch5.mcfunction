@@ -591,4 +591,4 @@ item replace block 90106 137 31 container.13 with music_disc_stal 1
 setblock 90150 144 57 minecraft:jukebox
 
 
-
+setblock 90154 153 267 minecraft:waxed_copper_bulb[lit=false]

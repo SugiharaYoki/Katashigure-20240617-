@@ -855,6 +855,6 @@ setblock 90134 144 70 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery
 setblock 90144 144 70 chest[facing=north]
 item replace block 90144 144 70 container.14 with disc_fragment_5 2
 
-
+setblock 90154 153 267 minecraft:waxed_copper_bulb[lit=true]
 
 
