@@ -34,8 +34,8 @@ scoreboard players add @s[advancements={skyblock:sea/doc/22=true}] rng3 1
 scoreboard players add @s[advancements={skyblock:sea/doc/23=true}] rng5 1
 scoreboard players add @s[advancements={skyblock:sea/doc/24=true}] rng5 1
 scoreboard players add @s[advancements={skyblock:sea/doc/25=true}] rng5 1
-scoreboard players add @s[advancements={skyblock:sea/doc/26=true}] rng5 1
-scoreboard players add @s[advancements={skyblock:sea/doc/27=true}] rng5 1
+scoreboard players add @s[advancements={skyblock:sea/doc/26=true}] rng7 1
+scoreboard players add @s[advancements={skyblock:sea/doc/27=true}] rng7 1
 scoreboard players add @s[advancements={skyblock:sea/doc/28=true}] rng2 1
 scoreboard players add @s[advancements={skyblock:sea/doc/29=true}] rng2 1
 scoreboard players add @s[advancements={skyblock:sea/doc/30=true}] rng2 1
@@ -110,8 +110,8 @@ scoreboard players add @s[advancements={skyblock:sea/doc/w27=true}] rng4 1
  tellraw @s[scores={rng5=..3}] [{"text":"第五章 档案 ","color":"light_purple","bold": true},{"score":{"name":"@s","objective":"rng5"},"color":"white","bold": false},{"text":"/4","color":"white","bold": false}]
  tellraw @s[scores={rng5=4..}] [{"text":"第五章 档案 ","color":"light_purple","bold": true},{"score":{"name":"@s","objective":"rng5"},"color":"green","bold": false},{"text":"/4","color":"green","bold": false}]
  
- tellraw @s[scores={rng7=..3}] [{"text":"第六章 档案 ","color":"light_purple","bold": true},{"score":{"name":"@s","objective":"rng7"},"color":"white","bold": false},{"text":"/4","color":"white","bold": false}]
- tellraw @s[scores={rng7=4..}] [{"text":"第六章 档案 ","color":"light_purple","bold": true},{"score":{"name":"@s","objective":"rng7"},"color":"green","bold": false},{"text":"/4","color":"green","bold": false}]
+ tellraw @s[scores={rng7=..4}] [{"text":"第六章 档案 ","color":"light_purple","bold": true},{"score":{"name":"@s","objective":"rng7"},"color":"white","bold": false},{"text":"/?","color":"white","bold": false}]
+ tellraw @s[scores={rng7=5..}] [{"text":"第六章 档案 ","color":"light_purple","bold": true},{"score":{"name":"@s","objective":"rng7"},"color":"green","bold": false},{"text":"/?","color":"green","bold": false}]
 
  tellraw @s[scores={rng6=..7}] [{"text":"法莫洛斯的医疗报告 ","color":"light_purple","bold": true},{"score":{"name":"@s","objective":"rng6"},"color":"white","bold": false},{"text":"/8","color":"white","bold": false}]
  tellraw @s[scores={rng6=8..}] [{"text":"法莫洛斯的医疗报告 ","color":"light_purple","bold": true},{"score":{"name":"@s","objective":"rng6"},"color":"green","bold": false},{"text":"/8","color":"green","bold": false}]

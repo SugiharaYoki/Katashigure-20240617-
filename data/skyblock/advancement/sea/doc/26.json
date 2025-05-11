@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "通讯中心三楼的笔记 - 琼斯",
+            "color": "light_purple",
+            "bold": false,
+            "italic": false
+        },
+        "description": {
+            "text": "诺曼博士的女儿，也就是诺玛……她向我们发动的攻势极为突然。\n我们很多人根本没做好武装冲突的打算。\n若不是圣水晶将绝大多数的热兵器都无效化了，我们的下场会十分凄惨。\n诺玛根本不清楚她在做什么，流血冲突只会使感染速度加快。\n她将短时间内对我们近乎无害的细菌感染转换为了钻井平台上所有人类的噩梦。",
+            "color": "white"
+        },
+        "icon": {
+            "id": "minecraft:flow_banner_pattern"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "sea": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:sea/doc/documentary6"
+}
