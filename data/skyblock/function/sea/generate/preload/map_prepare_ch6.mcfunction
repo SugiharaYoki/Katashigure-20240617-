@@ -41,15 +41,6 @@ setblock 90077 105 141 minecraft:dark_oak_hanging_sign
 
 forceload remove 90012 -375 90039 -405
 
-setblock 90149 136 102 chest[facing=west]
-item replace block 90149 136 102 container.12 with flint 1
-item replace block 90149 136 102 container.14 with flint 1
-
-setblock 90134 144 70 air
-setblock 90134 144 70 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 8, id:"minecraft:cookie"}}
-
-setblock 90144 144 70 chest[facing=north]
-item replace block 90144 144 70 container.14 with disc_fragment_5 2
 
 
 
