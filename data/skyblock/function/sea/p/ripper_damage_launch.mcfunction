@@ -18,6 +18,10 @@ execute if score @s sea_ripper matches 1.. positioned ^ ^ ^ if block ~ ~ ~ water
 execute if score @s sea_ripper matches 1.. positioned ^ ^ ^ if block ~ ~ ~ water run particle splash ~ ~ ~ 0.4 0.06 0.4 0.2 15
 execute if score @s sea_ripper matches 1.. positioned ^ ^ ^ if block ~ ~ ~ decorated_pot run setblock ~ ~ ~ air destroy
 execute if score @s[tag=SEAripper_launched_sound] sea_ripper matches 1.. positioned ^ ^ ^ if block ~ ~ ~ mangrove_leaves run setblock ~ ~ ~ air destroy
+execute if score @s[tag=SEAripper_launched_sound] sea_ripper matches 1.. positioned ^0.8 ^ ^ if block ~ ~ ~ mangrove_leaves run setblock ~ ~ ~ air destroy
+execute if score @s[tag=SEAripper_launched_sound] sea_ripper matches 1.. positioned ^-0.8 ^ ^ if block ~ ~ ~ mangrove_leaves run setblock ~ ~ ~ air destroy
+execute if score @s[tag=SEAripper_launched_sound] sea_ripper matches 1.. positioned ^ ^0.8 ^ if block ~ ~ ~ mangrove_leaves run setblock ~ ~ ~ air destroy
+execute if score @s[tag=SEAripper_launched_sound] sea_ripper matches 1.. positioned ^ ^-0.8 ^ if block ~ ~ ~ mangrove_leaves run setblock ~ ~ ~ air destroy
 execute if score @s sea_ripper matches 1.. positioned ^ ^ ^ if block ~ ~ ~ basalt as @e[tag=SEAmagma1,type=marker,distance=..1.5] at @s run function skyblock:sea/p/magma
 
 execute if score @s[scores={rng3=1,rng4=1..}] sea_ripper matches 1.. positioned ^ ^-1.5 ^ as @e[tag=SEAmob,distance=0..1.6] at @s run damage @s 10 minecraft:cactus
