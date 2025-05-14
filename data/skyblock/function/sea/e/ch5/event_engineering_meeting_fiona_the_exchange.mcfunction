@@ -7,6 +7,7 @@ execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 789 run forc
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 789 run clone 90056 -50 -400 90072 0 -380 90096 178 136
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 789 run forceload remove 90056 -400 90072 -380
 
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 9 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run kill @e[type=#illager,tag=SEAmob,distance=0..10]
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 10 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s as @p[tag=SEAPT] run tellraw @a[distance=0..250] [{"selector":"@p[tag=SEAPT,scores={SEAPT_member=1}]","color":"white"},{"text":"：差不多该解释一下了吧，我们这算是怎么一种情况，菲尔娜小姐？","color":"white"}]
 
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 20 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
