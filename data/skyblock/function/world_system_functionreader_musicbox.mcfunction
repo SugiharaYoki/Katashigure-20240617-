@@ -11,7 +11,7 @@ execute as @a[tag=!gaming,scores={MultiMenu=101759}] at @s run playsound minecra
 execute as @a[tag=!gaming,scores={MultiMenu=101760}] at @s run playsound minecraft:music_disc.stal music @s ~ ~ ~ 5000 2
 execute as @a[tag=!gaming,scores={MultiMenu=101761}] at @s run playsound minecraft:vol2.replica music @s ~ ~ ~ 5000
 execute as @a[tag=!gaming,scores={MultiMenu=101762}] at @s run playsound minecraft:vol2.caligula music @s ~ ~ ~ 5000
-execute as @a[tag=!gaming,scores={MultiMenu=101763}] at @s run playsound minecraft:vol2.lethaldose music @s ~ ~ ~ 5000
+execute as @a[tag=!gaming,scores={MultiMenu=101763}] at @s run playsound minecraft:vol2.lethaldosenew music @s ~ ~ ~ 5000
 execute as @a[tag=!gaming,scores={MultiMenu=101764}] at @s run playsound minecraft:vol3.grenade music @s ~ ~ ~ 5000
 execute as @a[tag=!gaming,scores={MultiMenu=101765}] at @s run playsound minecraft:vol2.nalca music @s ~ ~ ~ 5000
 execute as @a[tag=!gaming,scores={MultiMenu=101766}] at @s run playsound minecraft:app1.blossombutterflyoflamp music @s ~ ~ ~ 5000

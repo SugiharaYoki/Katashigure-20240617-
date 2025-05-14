@@ -24,7 +24,7 @@ execute as @e[tag=arroworb2,type=marker] at @s run function skyblock:azr/stage/b
     execute if score tickTimer Azr_system matches 60 run playsound ambient.soul_sand_valley.additions ambient @a[tag=azrPlayer] -79931 47 88 100 1.5
     execute if score tickTimer Azr_system matches 60 run particle minecraft:portal -79931 47 88 3 3 3 1.5 1600
     execute if score tickTimer Azr_system matches 60 run particle minecraft:enchant -79931 47 88 1 1 1 0.5 200
-    execute if score tickTimer Azr_system matches 152 as @a[tag=azrPlayer] at @s run playsound minecraft:vol2.lethaldose master @s ~ ~ ~ 0.65
+    execute if score tickTimer Azr_system matches 152 as @a[tag=azrPlayer] at @s run playsound minecraft:vol2.lethaldosenew master @s ~ ~ ~ 0.65
     #summon boss
     execute if score tickTimer Azr_system matches 80 run particle minecraft:smoke -79931 47 88 1 1 1 0.02 200
     execute if score tickTimer Azr_system matches 80 if score playerCount Azr_system matches 1..2 positioned -79931 47 88 run function skyblock:azr/m/shadow_t1_easy

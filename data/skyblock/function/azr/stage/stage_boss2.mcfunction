@@ -45,7 +45,7 @@ execute as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run function skyblo
     execute if score tickTimer Azr_system matches 60 run playsound ambient.soul_sand_valley.additions ambient @a[tag=azrPlayer] -79903 44 -14.0 100 1.5
     execute if score tickTimer Azr_system matches 60 run particle minecraft:portal -79903 44 -14.0 3 3 3 1.5 1600
     execute if score tickTimer Azr_system matches 60 run particle minecraft:enchant -79903 44 -14.0 1 1 1 0.5 200
-    execute if score tickTimer Azr_system matches 134 as @a[tag=azrPlayer] at @s run playsound minecraft:vol2.lethaldose master @s ~ ~ ~ 0.65
+    execute if score tickTimer Azr_system matches 134 as @a[tag=azrPlayer] at @s run playsound minecraft:vol2.lethaldosenew master @s ~ ~ ~ 0.65
     #summon boss
     execute if score tickTimer Azr_system matches 80 run particle minecraft:smoke -79903 44 -14.0 1 1 1 0.02 200
     execute if score tickTimer Azr_system matches 80 if score playerCount Azr_system matches 1..3 run summon illusioner -79903 44 -14.0 {PersistenceRequired:1b,Tags:["AzrielMob","AzrielBossA"],DeathLootTable:"skyblock:azriel_shadow_tier1",Health:200.0f,CustomName:'"权之残影"',attributes:[{id:"generic.max_health",base:200.0d},{id:"generic.movement_speed",base:0.0d},{id:"generic.knockback_resistance",base:0.9d},{id:"generic.armor",base:1.0d}]}

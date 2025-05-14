@@ -8,7 +8,7 @@ execute as @e[tag=arroworb2,type=marker] at @s run function skyblock:azr/outgame
 
 #health check
     scoreboard objectives add Azr_mobHealth dummy
-    execute if score @s Azr_system matches 81 as @a[distance=..100] at @s run playsound minecraft:vol2.lethaldose master @s ~ ~ ~ 0.65
+    execute if score @s Azr_system matches 81 as @a[distance=..100] at @s run playsound minecraft:vol2.lethaldosenew master @s ~ ~ ~ 0.65
     execute if score @s Azr_system matches 81.. as @n[tag=AzrielBossA_outgame] store result score @s Azr_mobHealth run data get entity @s Health
     execute if score @s Azr_system matches 81 run bossbar add azr:boss_hp_bar_outgame "沙利叶神使 权之残影"
     execute if score @s Azr_system matches 81 run bossbar set azr:boss_hp_bar_outgame color purple
