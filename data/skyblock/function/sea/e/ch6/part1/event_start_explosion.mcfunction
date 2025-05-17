@@ -20,11 +20,12 @@ execute if score SEA_ch6_event rng1 matches 283..284 as @n[type=marker,tag=SEA_c
 execute if score SEA_ch6_event rng1 matches 285..286 as @n[type=marker,tag=SEA_ch6_explosion_poison] at @s run particle large_smoke ~ ~ ~ 5 1 5 0.01 80
 execute if score SEA_ch6_event rng1 matches 287..288 as @n[type=marker,tag=SEA_ch6_explosion_poison] at @s run particle large_smoke ~ ~ ~ 8 1 8 0.01 80
 execute if score SEA_ch6_event rng1 matches 289..330 as @n[type=marker,tag=SEA_ch6_explosion_poison] at @s run particle large_smoke ~ ~ ~ 11 1 11 0.01 80
+execute if score SEA_ch6_event rng1 matches 320..380 as @n[type=marker,tag=SEA_ch6_explosion_poison] at @s run particle large_smoke ~ ~ ~ 14 1 14 0.01 80
 
-execute if score SEA_ch6_event rng1 matches 283..330 as @n[type=marker,tag=SEA_ch6_explosion_poison] at @s run tp @s ~ ~-0.3 ~
+execute if score SEA_ch6_event rng1 matches 283..380 as @n[type=marker,tag=SEA_ch6_explosion_poison] at @s run tp @s ~ ~-0.35 ~
 
-execute if score SEA_ch6_event rng1 matches 283..330 as @n[type=marker,tag=SEA_ch6_explosion_poison] at @s positioned ~-11 ~ ~-11 as @a[tag=SEAPT,dx=22,dy=3,dz=22] at @s run effect give @s poison 60 0 false
-execute if score SEA_ch6_event rng1 matches 330..333 as @n[type=marker,tag=SEA_ch6_explosion_poison] at @s run kill @s
+execute if score SEA_ch6_event rng1 matches 283..380 as @n[type=marker,tag=SEA_ch6_explosion_poison] at @s positioned ~-14 ~ ~-14 as @a[tag=SEAPT,dx=28,dy=3,dz=28] at @s run effect give @s poison 60 0 false
+execute if score SEA_ch6_event rng1 matches 380..383 as @n[type=marker,tag=SEA_ch6_explosion_poison] at @s run kill @s
 
 
 
