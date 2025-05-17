@@ -24,3 +24,4 @@ execute if score SEA_ch6_event rng1 matches 289..330 as @n[type=marker,tag=SEA_c
 execute if score SEA_ch6_event rng1 matches 283..330 as @n[type=marker,tag=SEA_ch6_explosion_poison] at @s run tp @s ~ ~-0.3 ~
 
 execute if score SEA_ch6_event rng1 matches 283..330 as @n[type=marker,tag=SEA_ch6_explosion_poison] at @s positioned ~-11 ~ ~-11 as @a[tag=SEAPT,dx=22,dy=3,dz=22] at @s run effect give @s poison 60 0 false
+execute if score SEA_ch6_event rng1 matches 330..333 as @n[type=marker,tag=SEA_ch6_explosion_poison] at @s run kill @s
