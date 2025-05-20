@@ -860,6 +860,12 @@ setblock 90154 153 267 minecraft:waxed_copper_bulb[lit=true]
 setblock 90146 146 123 redstone_block
 setblock 90146 146 123 air
 
+fill 90143 148 124 90142 148 124 minecraft:mangrove_leaves[persistent=true]
+fill 90142 147 125 90142 146 125 minecraft:mangrove_leaves[persistent=true]
+
+setblock 90147 146 133 redstone_block
+setblock 90147 146 133 air
+
 clone 90079 -31 107 90095 -21 116 90079 153 107
 
 
