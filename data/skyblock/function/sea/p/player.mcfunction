@@ -38,6 +38,7 @@ clear @s[gamemode=!creative] smooth_stone_slab
 clear @s[gamemode=!creative] chest
 clear @s[gamemode=!creative] redstone_lamp
 clear @s[gamemode=!creative] beacon
+clear @s[gamemode=!creative] chain
 
 tag @s remove PVP_see
 
