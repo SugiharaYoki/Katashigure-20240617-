@@ -857,14 +857,18 @@ item replace block 90144 144 70 container.14 with disc_fragment_5 2
 
 setblock 90154 153 267 minecraft:waxed_copper_bulb[lit=true]
 
-setblock 90146 146 123 redstone_block
-setblock 90146 146 123 air
 
 fill 90143 148 124 90142 148 124 minecraft:mangrove_leaves[persistent=true]
 fill 90142 147 125 90142 146 125 minecraft:mangrove_leaves[persistent=true]
 
+setblock 90146 146 123 redstone_block
+setblock 90146 146 123 air
 setblock 90147 146 133 redstone_block
 setblock 90147 146 133 air
+setblock 90143 146 141 redstone_block
+setblock 90143 146 141 air
+setblock 90147 146 144 redstone_block
+setblock 90147 146 144 air
 
 clone 90079 -31 107 90095 -21 116 90079 153 107
 
