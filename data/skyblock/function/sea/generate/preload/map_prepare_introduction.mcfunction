@@ -857,6 +857,8 @@ item replace block 90144 144 70 container.14 with disc_fragment_5 2
 
 setblock 90154 153 267 minecraft:waxed_copper_bulb[lit=true]
 
+setblock 90146 146 123 redstone_block
+setblock 90146 146 123 air
 
 clone 90079 -31 107 90095 -21 116 90079 153 107
 
