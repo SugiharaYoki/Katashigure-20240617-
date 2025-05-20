@@ -7,6 +7,7 @@ function skyblock:sea/generate/preload/map_prepare_ch5
 
 
 scoreboard players add @a[tag=SEAPT] sea_i_emerald 50
+give @a[tag=SEAPT] echo_shard 5
 
 setblock 90146 88 62 air
 fill 90148 85 55 90148 86 55 air

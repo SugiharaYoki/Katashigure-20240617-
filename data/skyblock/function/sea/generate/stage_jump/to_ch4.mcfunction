@@ -19,6 +19,7 @@ give @a[tag=SEAPT] flint 3
 give @a[tag=SEAPT] iron_ingot 3
 give @a[tag=SEAPT] coal 1
 give @a[tag=SEAPT] gunpowder 2
+give @a[tag=SEAPT] echo_shard 10
 
 #scoreboard players set @a[tag=SEAPT] sea_i_trim_zombie 16
 #scoreboard players set @a[tag=SEAPT] sea_i_trim_spider 6
