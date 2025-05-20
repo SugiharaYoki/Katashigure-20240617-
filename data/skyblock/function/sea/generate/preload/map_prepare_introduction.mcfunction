@@ -853,6 +853,8 @@ setblock 90134 144 70 air
 setblock 90134 144 70 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 8, id:"minecraft:cookie"}}
 setblock 90146 146 144 air
 setblock 90146 146 144 decorated_pot{sherds:["friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd"],item:{count: 3, id:"minecraft:emerald"}}
+setblock 90139 147 137 air
+setblock 90139 147 137 decorated_pot{sherds:["friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd"],item:{count: 3, id:"minecraft:emerald"}}
 
 setblock 90144 144 70 chest[facing=north]
 item replace block 90144 144 70 container.14 with disc_fragment_5 2
