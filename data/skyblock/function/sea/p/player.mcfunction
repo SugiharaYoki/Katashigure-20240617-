@@ -39,6 +39,8 @@ clear @s[gamemode=!creative] chest
 clear @s[gamemode=!creative] redstone_lamp
 clear @s[gamemode=!creative] beacon
 clear @s[gamemode=!creative] chain
+clear @s[tag=SEAPT,scores={SEAPT_mode=3}] nether_star
+
 
 tag @s remove PVP_see
 
