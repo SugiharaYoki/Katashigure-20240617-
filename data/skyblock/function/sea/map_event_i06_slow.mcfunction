@@ -15,11 +15,13 @@ function skyblock:sea/e/ch6/friendly_pillager
 execute if score SEA_ch6_event rng1 matches ..200 run function skyblock:sea/e/ch6/part1/event_start_mob
 execute if score SEA_ch6_event rng1 matches 201.. run function skyblock:sea/e/ch6/part1/event_start_explosion
 
+#行政区一楼遭遇战
+execute unless items block 90148 145 152 container.0 green_wool as @a[x=90139,y=145,z=139,dx=5,dy=4,dz=6] run scoreboard players set SEA_ch6_event rng2 1
+execute if score SEA_ch6_event rng2 matches 1..80 run function skyblock:sea/e/ch6/part1/event_f1_empty_corridor
 
-
-
-
-
+#行政区一楼楼梯怪物
+execute unless items block 90148 145 152 container.1 green_wool as @a[x=90146,y=145,z=134,dx=5,dy=4,dz=3] run scoreboard players set SEA_ch6_event rng3 1
+execute if score SEA_ch6_event rng2 matches 3..80 run function skyblock:sea/e/ch6/part1/event_f1_staircase
 
 
 

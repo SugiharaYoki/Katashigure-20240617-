@@ -877,5 +877,6 @@ setblock 90147 146 144 air
 clone 90079 -31 107 90095 -21 116 90079 153 107
 
 
-
-
+setblock 90148 145 152 air
+setblock 90148 145 152 barrel
+setblock 90152 148 136 minecraft:gray_stained_glass
