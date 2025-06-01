@@ -19,6 +19,8 @@ give @a[tag=SEAPT] spyglass[lore=['{"text":"我随身携带的望远镜。","col
 
 scoreboard players set @n[tag=sc] sea_4temp2 3001
 
+scoreboard players set sea_chapter_introduction sea_4temp1 99999
+
 give @a[tag=SEAPT] baked_potato 5
 
 tag @a[tag=SEAPT] add e_w_01
