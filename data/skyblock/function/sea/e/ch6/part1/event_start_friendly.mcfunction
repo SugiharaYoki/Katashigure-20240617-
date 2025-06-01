@@ -1,4 +1,4 @@
-execute positioned 90139 135 25 run function skyblock:sea/m/unique/npc_fiona
+execute unless entity @n[tag=SEAfiona] positioned 90139 135 25 run function skyblock:sea/m/unique/npc_fiona
 
 execute positioned 90150 130 50 run function skyblock:sea/m/unique/npc_iscariot
 execute positioned 90144 135 25 run function skyblock:sea/m/unique/npc_jones
