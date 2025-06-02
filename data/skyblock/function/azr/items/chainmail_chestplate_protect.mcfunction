@@ -1,1 +1,1 @@
-give @s chainmail_chestplate[custom_data={chainmail_chestplate_protect:1b},custom_name='{"text":"链甲·反透","italic":false}',enchantments={protection:1,projectile_protection:1},custom_model_data=100010,trim={material:"amethyst",pattern:"wild",show_in_tooltip:false}]
+give @s chainmail_chestplate[custom_data={chainmail_chestplate_protect:1b},custom_name='{"text":"链甲·反透","italic":false}',enchantments={protection:1,projectile_protection:1},custom_model_data={float:100010.0},trim={material:"amethyst",pattern:"wild",show_in_tooltip:false}]

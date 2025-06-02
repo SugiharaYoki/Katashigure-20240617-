@@ -1,1 +1,1 @@
-item replace entity @s armor.feet with iron_boots[custom_name='{"text":"铁靴","italic":false}',custom_data={iron_boots_normal:1b},custom_model_data=100004]
+item replace entity @s armor.feet with iron_boots[custom_name='{"text":"铁靴","italic":false}',custom_data={iron_boots_normal:1b},custom_model_data={float:100004.0}]

@@ -1,1 +1,1 @@
-give @s shield[custom_data={shield_normal:1b},custom_model_data=100001]
+give @s shield[custom_data={shield_normal:1b},custom_model_data={float:100001.0}]

@@ -1,1 +1,1 @@
-give @s chainmail_leggings[custom_data={chainmail_leggings_protect:1b},custom_name='{"text":"链裤·反透","italic":false}',enchantments={protection:1,projectile_protection:1},custom_model_data=100011,trim={material:"amethyst",pattern:"wild",show_in_tooltip:false}]
+give @s chainmail_leggings[custom_data={chainmail_leggings_protect:1b},custom_name='{"text":"链裤·反透","italic":false}',enchantments={protection:1,projectile_protection:1},custom_model_data={float:100011.0},trim={material:"amethyst",pattern:"wild",show_in_tooltip:false}]

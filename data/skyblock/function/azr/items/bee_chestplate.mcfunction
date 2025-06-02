@@ -1,1 +1,1 @@
-give @s golden_chestplate[custom_data={bee_chestplate:1b},custom_name='{"text":"黄蜂服","italic":false}',enchantments={thorns:2,unbreaking:2},custom_model_data=100002,trim={material:"netherite",pattern:"rib",show_in_tooltip:false}]
+give @s golden_chestplate[custom_data={bee_chestplate:1b},custom_name='{"text":"黄蜂服","italic":false}',enchantments={thorns:2,unbreaking:2},custom_model_data={float:100002.0},trim={material:"netherite",pattern:"rib",show_in_tooltip:false}]

@@ -1,1 +1,1 @@
-give @s iron_leggings[custom_name='{"text":"铁护腿","italic":false}',custom_data={iron_leggings_normal:1b},custom_model_data=100003]
+give @s iron_leggings[custom_name='{"text":"铁护腿","italic":false}',custom_data={iron_leggings_normal:1b},custom_model_data={float:100003.0}]

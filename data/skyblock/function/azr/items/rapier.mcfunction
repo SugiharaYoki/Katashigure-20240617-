@@ -1,1 +1,1 @@
-give @s iron_sword[custom_name='{"text":"刺剑·传统","color":"white","italic":false}',custom_data={rapier_normal:1b},custom_model_data=100009]
+give @s iron_sword[custom_name='{"text":"刺剑·传统","color":"white","italic":false}',custom_data={rapier_normal:1b},custom_model_data={float:100009.0}]

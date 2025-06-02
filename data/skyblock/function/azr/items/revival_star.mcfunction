@@ -1,1 +1,1 @@
-give @s nether_star[custom_name='{"text":"下界命星","color":"yellow","italic":false}',custom_data={revival_star:1b},custom_model_data=100001]
+give @s nether_star[custom_name='{"text":"下界命星","color":"yellow","italic":false}',custom_data={revival_star:1b},custom_model_data={float:100001.0}]
