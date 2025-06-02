@@ -603,3 +603,11 @@ item replace block 90132 129 28 container.13 with disc_fragment_5 3
 item replace block 90132 129 28 container.15 with arrow 8
 
 setblock 90154 153 267 minecraft:waxed_copper_bulb[lit=false]
+
+execute positioned 90130 129 26 run function skyblock:sea/m/silverfish_big
+execute positioned 90130 129 26 run function skyblock:sea/m/silverfish
+execute positioned 90130 129 26 run function skyblock:sea/m/silverfish
+
+
+
+
