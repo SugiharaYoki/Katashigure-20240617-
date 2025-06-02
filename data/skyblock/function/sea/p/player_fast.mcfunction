@@ -73,7 +73,7 @@ execute if items entity @s[tag=!SEA_w_06_effected] weapon.mainhand music_disc_5 
 execute unless items entity @s[tag=SEA_w_06_effected] weapon.mainhand music_disc_5 run function skyblock:sea/p/w/ripper_effect_remove
 
 #禁止飞跃平台
-kill @s[x=90068,y=138,z=79,dx=100,dy=20,dz=1,type=player,tag=SEAPT,gamemode=adventure]
+execute unless block 90074 103 136 lectern run kill @s[x=90068,y=138,z=79,dx=100,dy=20,dz=1,type=player,tag=SEAPT,gamemode=adventure]
 
 execute if entity @s[tag=SEA_w_shield_upg11,tag=!sea_w_shield_skill_c_1] run tag @s add sea_w_shield_skill_c_1
 execute if items entity @s container.* shield if entity @s[predicate=skyblock:left,predicate=skyblock:right,predicate=skyblock:backward,tag=!SEA_swap_defending,tag=sea_w_shield_skill_c_1] run function skyblock:sea/p/swap_defend
