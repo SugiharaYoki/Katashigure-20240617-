@@ -70,8 +70,8 @@ scoreboard players set @s rng9 0
 scoreboard players add @s[tag=sea_w_axe_skill_a_1] rng9 1
 scoreboard players add @s[tag=sea_w_axe_skill_a_2] rng9 2
 scoreboard players add @s[tag=sea_w_axe_skill_a_3] rng9 3
-execute as @s[predicate=skyblock:left,scores={rng9=1..}] if items entity @s weapon.mainhand iron_axe run function skyblock:sea/p/axeparry
-execute as @s[predicate=skyblock:right,scores={rng9=1..}] if items entity @s weapon.mainhand iron_axe run function skyblock:sea/p/axeparry
+execute as @s[predicate=skyblock:left,scores={rng9=1..,sea_do_attack=1..}] if items entity @s weapon.mainhand iron_axe run function skyblock:sea/p/axeparry
+execute as @s[predicate=skyblock:right,scores={rng9=1..,sea_do_attack=1..}] if items entity @s weapon.mainhand iron_axe run function skyblock:sea/p/axeparry
 
 execute if items entity @s armor.chest *[custom_data={sea_chest_shadowchest:true}] if entity @s[predicate=skyblock:sneaking] run effect give @s invisibility 3 0 false
 

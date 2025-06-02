@@ -22,4 +22,4 @@ execute at @s[scores={rng9=3..}] anchored eyes positioned ^ ^ ^1.3 as @e[type=ar
 execute at @s[scores={rng9=3..}] anchored eyes positioned ^ ^ ^1.3 as @e[type=arrow,distance=..1.6] at @s run kill @s
 
 
-
+scoreboard players set @s sea_do_attack 0
