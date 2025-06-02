@@ -19,7 +19,7 @@ execute as @e[tag=arroworb2,type=marker] at @s run function skyblock:azr/outgame
 #AI 
     #每刻有1/8的肯面向最近玩家
     execute store result score temp_rng Azr_system run random value 1..8
-    execute if score @s Azr_system matches 152..2800 if score temp_rng Azr_system matches 1 as @e[tag=AzrielBossA_outgame] at @s run tp @s ~ ~ ~ facing entity @p[gamemode=!creative,gamemode=!spectator]
+    execute if score @s Azr_system matches 152..2800 if score temp_rng Azr_system matches 1 as @e[tag=AzrielBossA_outgame] at @s run rotate @s facing entity @p[gamemode=!creative,gamemode=!spectator]
     #状态效果控制
     effect clear @a[gamemode=!creative,gamemode=!spectator] blindness
     effect clear @e[tag=AzrielBossA_outgame] invisibility

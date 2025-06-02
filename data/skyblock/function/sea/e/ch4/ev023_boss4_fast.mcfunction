@@ -24,7 +24,7 @@ execute as @n[tag=SEAboss4,tag=SEAboss4_dodgemine,scores={rng3=1..3}] at @s run 
 execute as @n[tag=SEAboss4,tag=SEAboss4_dodgemine,scores={rng3=1..3}] at @s run kill @e[type=marker,tag=SEA_boss4_marker]
 execute as @n[tag=SEAboss4] run tag @s remove SEAboss4_dodgemine
 
-execute as @n[tag=SEAboss4,nbt={OnGround:1b},tag=!SEAboss4_attack_dashheavy,tag=!SEAboss4_eat,tag=!SEAboss4_spectral_arrow1] at @s run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
+execute as @n[tag=SEAboss4,nbt={OnGround:1b},tag=!SEAboss4_attack_dashheavy,tag=!SEAboss4_eat,tag=!SEAboss4_spectral_arrow1] at @s run rotate @s facing entity @p[tag=SEAPT]
 
 execute store result score @n[tag=SEAboss4] rng6 run random value 1..60
 

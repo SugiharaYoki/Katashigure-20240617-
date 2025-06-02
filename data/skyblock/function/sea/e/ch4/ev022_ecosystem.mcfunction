@@ -7,7 +7,7 @@ execute as @s[scores={sea_4temp1=1}] run playsound block.copper_bulb.turn_off bl
 execute as @s[scores={sea_4temp1=1}] positioned 90184 62 91 run function skyblock:sea/m/unique/npc_edwina
 execute as @s[scores={sea_4temp1=1}] run scoreboard players set @a[tag=SEAPT,scores={sea_progress=..10}] sea_progress 11
 execute as @s[scores={sea_4temp1=1}] run time set 18000
-execute as @s[scores={sea_4temp1=1..90}] positioned 90184 62 91 as @n[tag=SEAedwina] at @s run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
+execute as @s[scores={sea_4temp1=1..90}] positioned 90184 62 91 as @n[tag=SEAedwina] at @s run rotate @s facing entity @p[tag=SEAPT]
 
 execute as @s[scores={sea_4temp1=1}] run scoreboard players add @s sea_4temp1 8
 

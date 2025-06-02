@@ -4,7 +4,7 @@ execute as @s[scores={rng8=10},tag=SEAboss4_spectral] at @s run playsound item.c
 execute as @s[scores={rng8=20},tag=SEAboss4_spectral] at @s run playsound item.crossbow.loading_middle hostile @a ~ ~ ~ 1 1.1
 execute as @s[scores={rng8=30},tag=SEAboss4_spectral] at @s run playsound item.crossbow.loading_end hostile @a ~ ~ ~ 1 1.1
 
-execute as @s[scores={rng8=30..52},tag=SEAboss4_spectral] at @s run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
+execute as @s[scores={rng8=30..52},tag=SEAboss4_spectral] at @s run rotate @s facing entity @p[tag=SEAPT]
 
 execute as @s[scores={rng8=30..59},tag=SEAboss4_spectral] at @s anchored eyes positioned ^ ^ ^1.5 run particle end_rod ~ ~ ~ 0 0 0 0 1
 execute as @s[scores={rng8=30..59},tag=SEAboss4_spectral] at @s anchored eyes positioned ^ ^ ^1.8 run particle end_rod ~ ~ ~ 0 0 0 0 1

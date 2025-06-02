@@ -45,7 +45,7 @@ execute as @s[scores={sea_4temp1=1211}] if block 90236 63 85 air run tellraw @a[
 
 
 execute as @s[scores={sea_4temp1=51}] positioned 90185.00 69.00 73.03 run function skyblock:sea/m/unique/boss4
-execute as @s[scores={sea_4temp1=51..200}] as @n[tag=SEAboss4] at @s run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
+execute as @s[scores={sea_4temp1=51..200}] as @n[tag=SEAboss4] at @s run rotate @s facing entity @p[tag=SEAPT]
 
 execute as @s[scores={sea_4temp1=49..55}] positioned 90185.00 69.00 73.03 run playsound ambient.cave ambient @a ~ ~ ~ 3 0.6
 
@@ -89,8 +89,8 @@ execute as @s[scores={rng1=5}] run kill @e[tag=sea_mine,distance=0..300]
 execute as @s[scores={rng1=5}] if entity @n[tag=sc,scores={sea_player=1}] at @n[tag=SEAedwina] run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“沈越涵……？我的天，所以你是他们信得过的人。”","color":"white","bold": false}]
 execute as @s[scores={rng1=5}] if entity @n[tag=sc,scores={sea_player=2}] at @n[tag=SEAedwina] run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“沈越涵……？我的天，所以你俩是他们信得过的人。”","color":"white","bold": false}]
 execute as @s[scores={rng1=5}] if entity @n[tag=sc,scores={sea_player=3..}] at @n[tag=SEAedwina] run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“沈越涵……？我的天，所以你们几个是他们信得过的人。我还以为是暴民派下来的小队。”","color":"white","bold": false}]
-execute as @s[scores={rng1=5}] as @n[tag=SEAboss_end] at @s run tp @s ~ ~ ~ facing entity @n[tag=SEAyuehan]
-execute as @s[scores={rng1=7}] as @n[tag=SEAboss_end] at @s run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
+execute as @s[scores={rng1=5}] as @n[tag=SEAboss_end] at @s run rotate @s facing entity @n[tag=SEAyuehan]
+execute as @s[scores={rng1=7}] as @n[tag=SEAboss_end] at @s run rotate @s facing entity @p[tag=SEAPT]
 
 
 execute as @s[scores={rng1=25}] at @n[tag=SEAedwina] run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
@@ -104,7 +104,7 @@ execute as @s[scores={rng1=42}] as @n[tag=SEAyuehan] at @s run data modify entit
 execute as @s[scores={rng1=42}] as @n[tag=SEAyuehan] at @s run data modify entity @s Motion set value [0.0,0.0,1.0]
 
 execute as @s[scores={rng1=42}] as @n[tag=SEAyuehan] at @s run tp @s 90180 57 81
-execute as @s[scores={rng1=44..}] as @n[tag=SEAyuehan] at @s run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
+execute as @s[scores={rng1=44..}] as @n[tag=SEAyuehan] at @s run rotate @s facing entity @p[tag=SEAPT]
 
 
 execute as @s[scores={rng1=63}] run fill 90182 57 81 90182 57 80 air
@@ -132,6 +132,6 @@ execute as @s[scores={rng1=100}] at @n[tag=SEAedwina] if entity @n[tag=sc,scores
 execute as @s[scores={rng1=100}] at @n[tag=SEAedwina] if entity @n[tag=sc,scores={sea_player=1}] if items entity @a[tag=SEAPT] container.* bread run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“待会……分我一块吧，不过先过一会儿。来吧，我们去跟越涵解释一下。”","color":"white","bold": false}]
 execute as @s[scores={rng1=100}] at @n[tag=SEAedwina] if entity @n[tag=sc,scores={sea_player=2..}] if items entity @a[tag=SEAPT] container.* bread run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“也是，你没有义务给我。都来吧，我们去跟越涵解释一下。”","color":"white","bold": false}]
 
-execute as @s[scores={rng1=104}] as @n[tag=SEAboss4_end] at @s rotated ~ 0 run tp @s ~ ~ ~ facing 90185.00 57.14 80.87
+execute as @s[scores={rng1=104}] as @n[tag=SEAboss4_end] at @s rotated ~ 0 run rotate @s facing 90185.00 57.14 80.87
 execute as @s[scores={rng1=105..150}] as @n[tag=SEAboss4_end,x=90185.00,y=57.14,z=80.87,distance=1.5..] at @s facing 90185.00 57.14 80.87 run tp @s ~ ~ ~1 ~ 0
 execute as @s[scores={rng1=120..150}] run tag @s add SEAch4_conclusion

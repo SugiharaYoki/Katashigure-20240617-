@@ -10,7 +10,7 @@ execute if score AZR_boss2_breakingout rng1 matches 1 run kill @e[tag=AZR_boss2_
 execute if score AZR_boss2_stockpile rng1 matches 1..10 run effect give @s slowness 3 150 true
 execute if score AZR_boss2_stockpile rng1 matches 1 run playsound entity.illusioner.cast_spell hostile @a ~ ~ ~ 1 0.5
 execute if score AZR_boss2_stockpile rng1 matches 1 run playsound entity.illusioner.cast_spell hostile @a ~ ~ ~ 1 0.6
-execute if score AZR_boss2_stockpile rng1 matches 1..60 at @s run tp @s ~ ~ ~ facing entity @p[tag=azrPlayer]
+execute if score AZR_boss2_stockpile rng1 matches 1..60 at @s run rotate @s facing entity @p[tag=azrPlayer]
 
 execute if score AZR_boss2_stockpile rng1 matches 61..64 at @s positioned ~ ~1.5 ~ rotated ~ 0 run particle white_smoke ^ ^ ^0.2 0.1 0.1 0.1 0.01 3
 execute if score AZR_boss2_stockpile rng1 matches 65..67 at @s positioned ~ ~1.5 ~ rotated ~ 0 run particle white_smoke ^ ^ ^0.2 0.08 0.08 0.08 0.02 3

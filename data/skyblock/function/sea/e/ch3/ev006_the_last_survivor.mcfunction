@@ -9,7 +9,7 @@ execute as @s[scores={sea_4temp1=5}] at @s run playsound entity.villager.ambient
 execute as @s[scores={sea_4temp1=5..536}] as @p[tag=SEAPT,nbt={SelectedItem:{id:"minecraft:spyglass"}},scores={SEA_story=5..}] unless entity @a[tag=SEAPT,scores={SEA_story=..4}] at @s run tellraw @a[tag=SEAPT] [{"selector":"@s","color":"white"},{"text":"：「跳过了剧情」","color":"white"}]
 execute as @s[scores={sea_4temp1=5..536}] if entity @p[tag=SEAPT,nbt={SelectedItem:{id:"minecraft:spyglass"}},scores={SEA_story=5..}] unless entity @a[tag=SEAPT,scores={SEA_story=..4}] run scoreboard players set @s sea_4temp1 537
 
-execute as @s[scores={sea_4temp1=32..241}] at @s run tp @s ~ ~ ~ facing entity @p
+execute as @s[scores={sea_4temp1=32..241}] at @s run rotate @s facing entity @p
 execute as @s[scores={sea_4temp1=32}] at @s if entity @n[tag=sc,scores={sea_player=1}] run tellraw @a[distance=0..250] [{"text":"？？？：","color":"yellow","bold": true},{"text":"\n“怎么样？……你的忒尔克西之旅还顺利吗？”","color":"white","bold": false}]
 execute as @s[scores={sea_4temp1=32}] at @s if entity @n[tag=sc,scores={sea_player=2..}] run tellraw @a[distance=0..250] [{"text":"？？？：","color":"yellow","bold": true},{"text":"\n“怎么样？……你们的忒尔克西之旅还顺利吗？”","color":"white","bold": false}]
 execute as @s[scores={sea_4temp1=32}] at @s run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
@@ -38,8 +38,8 @@ execute as @s[scores={sea_4temp1=208}] at @s run playsound entity.villager.ambie
 
 execute as @s[scores={sea_4temp1=242}] at @s run tellraw @a[distance=0..250] [{"text":"马绍尔：","color":"green","bold": true},{"text":"\n“接受现实吧，我们被困了，而我们的敌人是超自然事物。从一开始我们就没有胜算。”","color":"white","bold": false}]
 execute as @s[scores={sea_4temp1=242}] at @s run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
-execute as @s[scores={sea_4temp1=242}] at @s run tp @s ~ ~ ~ facing 90126 163.0 150
-execute as @s[scores={sea_4temp1=306..}] at @s run tp @s ~ ~ ~ facing entity @p
+execute as @s[scores={sea_4temp1=242}] at @s run rotate @s facing 90126 163.0 150
+execute as @s[scores={sea_4temp1=306..}] at @s run rotate @s facing entity @p
 
 execute as @s[scores={sea_4temp1=276}] at @s as @p[tag=SEAPT] if entity @n[tag=sc,scores={sea_player=1}] \
  run tellraw @a[distance=0..50] [{"selector":"@s","color":"white"},{"text":"：不管如何，马绍尔先生，你跟着我来吧。至少我能暂时保证你的安全。我也需要有个人照应我。","color":"white"}]
@@ -87,7 +87,7 @@ execute as @s[scores={sea_4temp1=568}] at @s run playsound entity.villager.ambie
 execute as @s[scores={sea_4temp1=592}] at @s if entity @n[tag=sc,scores={sea_player=1..}] run tellraw @a[distance=0..250] [{"text":"马绍尔：","color":"green","bold": true},{"text":"\n“那家伙没有什么战斗能力，请替我……保护好他。”","color":"white","bold": false}]
 execute as @s[scores={sea_4temp1=592}] at @s run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
 
-execute as @s[scores={sea_4temp1=600}] at @s run tp @s ~ ~ ~ facing 90126 163.0 150
+execute as @s[scores={sea_4temp1=600}] at @s run rotate @s facing 90126 163.0 150
 execute as @s[scores={sea_4temp1=600}] at @s run setblock 90131 161 144 flower_pot
 execute as @s[scores={sea_4temp1=600}] at @s run scoreboard players set @a[tag=SEAPT,scores={sea_progress=..7}] sea_progress 8
 

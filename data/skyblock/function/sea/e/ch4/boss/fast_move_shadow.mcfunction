@@ -5,7 +5,7 @@ execute as @s[scores={rng8=2},tag=SEAboss4_shadow,nbt={OnGround:true}] at @s pos
 execute as @s[scores={rng8=2},tag=SEAboss4_shadow,nbt={OnGround:true}] at @s positioned ^ ^ ^4 if block ~ ~-0 ~ air unless block ~ ~-1 ~ air run function skyblock:sea/m/mine
 execute as @s[scores={rng8=2},tag=SEAboss4_shadow,nbt={OnGround:true}] at @s positioned ^ ^ ^2 if block ~ ~-1 ~ air unless block ~ ~-2 ~ air run function skyblock:sea/m/mine
 execute as @s[scores={rng8=2},tag=SEAboss4_shadow,nbt={OnGround:true}] at @s positioned ^ ^ ^4 if block ~ ~-1 ~ air unless block ~ ~-2 ~ air run function skyblock:sea/m/mine
-execute as @s[scores={rng8=2},tag=SEAboss4_shadow] at @s run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
+execute as @s[scores={rng8=2},tag=SEAboss4_shadow] at @s run rotate @s facing entity @p[tag=SEAPT]
 execute as @s[scores={rng8=2},tag=SEAboss4_shadow] at @s positioned 0.0 0 0.0 run summon marker ^ ^0.32 ^5.4 {Tags:["SEA_boss4_marker"]}
 execute as @s[scores={rng8=2},tag=SEAboss4_shadow] at @s run data modify entity @n[tag=SEAboss4_shadow] Motion set from entity @n[type=marker,tag=SEA_boss4_marker] Pos
 execute as @s[scores={rng8=3},tag=SEAboss4_shadow] at @s run data modify entity @n[tag=SEAboss4_shadow] Motion set from entity @n[type=marker,tag=SEA_boss4_marker] Pos

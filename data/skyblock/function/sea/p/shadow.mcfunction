@@ -11,7 +11,7 @@ execute unless entity @a[tag=SEAPT,distance=0..14] run effect give @s invisibili
 execute if entity @a[tag=SEAPT,distance=0..14] run effect clear @s[scores={rng1=1}] invisibility
 execute if entity @a[tag=SEAPT,distance=0..14] run effect clear @s[scores={rng1=1}] slowness
 execute if entity @a[tag=SEAPT,distance=0..14] run effect clear @s[scores={rng1=1}] resistance
-execute unless entity @a[tag=SEAPT,distance=0..10] at @s run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
+execute unless entity @a[tag=SEAPT,distance=0..10] at @s run rotate @s facing entity @p[tag=SEAPT]
 execute unless entity @a[tag=SEAPT,distance=0..10] at @s run tp @s ~ ~ ~ 180 0
 execute if entity @a[tag=SEAPT,distance=0..14] if entity @s[scores={rng1=14}] run effect give @s invisibility infinite 0 true
 execute if entity @a[tag=SEAPT,distance=0..14] if entity @s[scores={rng1=14}] run effect give @s slowness infinite 29 true

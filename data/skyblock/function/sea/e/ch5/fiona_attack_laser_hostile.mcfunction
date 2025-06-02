@@ -6,7 +6,7 @@ execute as @s[scores={rng8=13}] at @s run playsound item.crossbow.loading_start 
 execute as @s[scores={rng8=14}] at @s run playsound item.crossbow.loading_middle hostile @a ~ ~ ~ 1 1.1
 execute as @s[scores={rng8=15}] at @s run playsound item.crossbow.loading_end hostile @a ~ ~ ~ 1 1.1
 
-execute as @s[scores={rng8=16..20}] at @s run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
+execute as @s[scores={rng8=16..20}] at @s run rotate @s facing entity @p[tag=SEAPT]
 
 execute as @s[scores={rng8=16..20}] at @s anchored eyes positioned ^ ^ ^1.5 run particle electric_spark ~ ~ ~ 0 0 0 0 1
 execute as @s[scores={rng8=16..20}] at @s anchored eyes positioned ^ ^ ^1.8 run particle electric_spark ~ ~ ~ 0 0 0 0 1

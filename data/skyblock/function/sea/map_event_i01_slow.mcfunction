@@ -99,7 +99,7 @@ execute as @n[tag=sc,scores={sea_4temp2=200..1144}] run function skyblock:sea/e/
 
 
 execute store result score @n[tag=SEAtestfor1] sea_boss1_hp run data get entity @n[tag=SEAtestfor1] Health
-execute as @n[tag=SEAtestfor1] at @s run tp @s ~ ~ ~ facing 90142 123.0 117
+execute as @n[tag=SEAtestfor1] at @s run rotate @s facing 90142 123.0 117
 execute as @n[tag=SEAtestfor1,scores={sea_boss1_hp=50..99}] at @s run function skyblock:sea/e/ch1/ev001_mysterious_person
 
 execute as @a[tag=SEAPT,x=90146,y=122,z=106,distance=0..3] run scoreboard players set @n[tag=sc,scores={sea_4temp2=..1990}] sea_4temp2 1991

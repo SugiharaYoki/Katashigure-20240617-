@@ -68,7 +68,7 @@ execute if score SEA_ch5_event_boss5 rng1 matches 251 run scoreboard players set
 execute if score SEA_ch5_event_boss5 rng1 matches 251 run scoreboard players set @n[tag=SEAboss5b] health 800
 execute if score SEA_ch5_event_boss5 rng1 matches 251 run scoreboard players set SEA_ch5_event_boss5 rng9 0
 execute if score SEA_ch5_event_boss5 rng1 matches 251 as @n[tag=SEAboss5b] at @s run tp @s @n[tag=SEAnorman]
-execute if score SEA_ch5_event_boss5 rng1 matches 251 as @n[tag=SEAboss5b] at @s run tp @s ~ ~ ~ facing entity @n[tag=SEAnorman]
+execute if score SEA_ch5_event_boss5 rng1 matches 251 as @n[tag=SEAboss5b] at @s run rotate @s facing entity @n[tag=SEAnorman]
 
 execute if score SEA_ch5_event_boss5 rng1 matches 252..269 as @n[tag=SEAboss5b] at @s run playsound entity.generic.explode hostile @a ^ ^ ^1 1 1.2
 execute if score SEA_ch5_event_boss5 rng1 matches 252..269 as @n[tag=SEAboss5b] at @s run playsound entity.generic.explode hostile @a ^ ^ ^1 2 0.8

@@ -68,8 +68,8 @@ execute if score @s rng1 matches 327 run tellraw @a[distance=0..200] [{"text":"�
 execute if score @s rng1 matches 348 run playsound minecraft:entity.villager.yes neutral @a ~ ~ ~ 1 0.8
 execute if score @s rng1 matches 348 run tellraw @a[distance=0..200] [{"text":"邪教徒的对话声B：","color":"green","bold": true},{"text":"\n“格瑞克先生、？！所有人快点躲好，这雷暴是有目的性地朝我们劈过来的！！”","color":"white","bold": false}]
 
-execute if score @s rng1 matches 330..345 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..200] at @s run tp @s ~ ~ ~ facing 90147 145 46
-execute if score @s rng1 matches 333..362 as @n[tag=SEAjones,x=90000,y=100,z=0,distance=0..200] at @s run tp @s ~ ~ ~ facing 90147 145 46
+execute if score @s rng1 matches 330..345 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..200] at @s run rotate @s facing 90147 145 46
+execute if score @s rng1 matches 333..362 as @n[tag=SEAjones,x=90000,y=100,z=0,distance=0..200] at @s run rotate @s facing 90147 145 46
 
 
 

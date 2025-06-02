@@ -1,4 +1,4 @@
-execute as @a[x=-79906,y=40,z=-144,distance=0..2,tag=azrPlayer,tag=!ZaneiTalkA] as @e[tag=AzrielBossFA] at @s run tp @s ~ ~ ~ facing entity @r[tag=azrPlayer]
+execute as @a[x=-79906,y=40,z=-144,distance=0..2,tag=azrPlayer,tag=!ZaneiTalkA] as @e[tag=AzrielBossFA] at @s run rotate @s facing entity @r[tag=azrPlayer]
 execute as @a[x=-79906,y=40,z=-144,distance=0..2,tag=azrPlayer,tag=!ZaneiTalkA] as @e[tag=AzrielBossFA] at @s run playsound minecraft:entity.illusioner.ambient master @a[tag=azrPlayer] ~ ~ ~ 2 0.6
 execute if entity @a[x=-79906,y=40,z=-144,distance=0..2,tag=azrPlayer,tag=!ZaneiTalkA] run function skyblock:azr/tool_rng
 execute as @a[x=-79906,y=40,z=-144,distance=0..2,tag=azrPlayer,tag=!ZaneiTalkA] at @s run tellraw @s {"text":"权之残影：","color":"red"}

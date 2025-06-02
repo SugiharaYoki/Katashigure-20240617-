@@ -66,7 +66,7 @@ execute as @e[tag=arroworb2,type=marker] at @s run function skyblock:azr/stage/b
 #AI 
     #每刻有1/8的肯面向最近玩家
     execute store result score temp_rng Azr_system run random value 1..8
-    execute if score tickTimer Azr_system matches 152..2800 if score temp_rng Azr_system matches 1 as @e[tag=AzrielBossA,limit=3] at @s run tp @s ~ ~ ~ facing entity @p[tag=azrPlayer]
+    execute if score tickTimer Azr_system matches 152..2800 if score temp_rng Azr_system matches 1 as @e[tag=AzrielBossA,limit=3] at @s run rotate @s facing entity @p[tag=azrPlayer]
     execute if score tickTimer Azr_system matches 152..2800 run team join AzrBossA @e[tag=AzrielMob,x=-79931,y=38,z=88,distance=..20]
     #状态效果控制
     effect clear @a[tag=azrPlayer] blindness

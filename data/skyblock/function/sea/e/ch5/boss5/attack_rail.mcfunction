@@ -1,7 +1,7 @@
 scoreboard players add @s[scores={rng2=1..}] rng2 1
 
 execute if score @s rng2 matches 2 run playsound entity.breeze.charge hostile @a ~ ~ ~ 1 0.9
-execute if score @s rng2 matches 2 run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
+execute if score @s rng2 matches 2 run rotate @s facing entity @p[tag=SEAPT]
 execute if score @s rng2 matches 2 run particle electric_spark ~ ~10 ~ 0.3 0.3 0.3 0.2 8
 execute if score @s rng2 matches 3 run particle electric_spark ~ ~9 ~ 0.3 0.3 0.3 0.2 8
 execute if score @s rng2 matches 4 run particle electric_spark ~ ~8 ~ 0.3 0.3 0.3 0.2 8

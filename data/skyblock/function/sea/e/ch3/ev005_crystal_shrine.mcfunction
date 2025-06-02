@@ -3,7 +3,7 @@
 execute if entity @a[tag=SEAPT,distance=..6] run scoreboard players add @s[scores={sea_4temp1=..295}] sea_4temp1 1
 execute as @s[scores={sea_4temp1=19}] at @s run tellraw @a[distance=0..250] [{"text":"？？？：","color":"yellow","bold": true},{"text":"\n“你、你没被感染吧？”","color":"white","bold": false}]
 execute as @s[scores={sea_4temp1=19}] at @s run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
-execute as @s[scores={sea_4temp1=19..270}] at @s run tp @s ~ ~ ~ facing entity @p
+execute as @s[scores={sea_4temp1=19..270}] at @s run rotate @s facing entity @p
 execute as @s[scores={sea_4temp1=39}] at @s if entity @n[tag=sc,scores={sea_player=1}] run tellraw @a[distance=0..250] [{"text":"？？？：","color":"yellow","bold": true},{"text":"\n“调查员……？他们那群傻逼居然还真的知道该派人来，但我操，就派一个人？我去他妈的，纯他妈傻逼。”","color":"white","bold": false}]
 execute as @s[scores={sea_4temp1=39}] at @s if entity @n[tag=sc,scores={sea_player=2..}] run tellraw @a[distance=0..250] [{"text":"？？？：","color":"yellow","bold": true},{"text":"\n“调查小组……？他们那群傻逼居然还真的知道该派人来，但不派海警派维修工？我日，脑子里进屎了吗？”","color":"white","bold": false}]
 execute as @s[scores={sea_4temp1=39}] at @s run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85

@@ -1,4 +1,4 @@
-execute as @s at @s run tp @s ~ ~ ~ facing entity @n[tag=SEAboss5b]
+execute as @s at @s run rotate @s facing entity @n[tag=SEAboss5b]
 
 execute positioned ^ ^ ^1 if entity @n[tag=SEAboss5b,distance=..1.3] if score SEA_ch5_event_boss5 rng9 matches ..0 run scoreboard players set SEA_ch5_event_boss5 rng9 1
 execute positioned ^ ^ ^1 if entity @n[tag=SEAboss5b,distance=..8] if score SEA_ch5_event_boss5 rng9 matches ..0 run scoreboard players set SEA_ch5_event_boss5 rng9 1

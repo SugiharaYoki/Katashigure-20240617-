@@ -24,7 +24,7 @@ execute if score SEA_ch5_event_boss5 rng9 matches 19 as @n[tag=SEAjones] at @s p
 execute if score SEA_ch5_event_boss5 rng9 matches 15..20 as @n[tag=SEAboss5b] at @s run particle gust_emitter_large ~ ~1 ~ 1.3 1.3 1.3 0 2
 execute if score SEA_ch5_event_boss5 rng9 matches 15 as @n[tag=SEAboss5b] at @s run particle electric_spark ~ ~1 ~ 0.8 0.8 0.8 0.2 50
 execute if score SEA_ch5_event_boss5 rng9 matches 15 as @n[tag=SEAboss5b] at @s run playsound item.trident.thunder ambient @a ~ ~ ~ 1 1.5
-execute if score SEA_ch5_event_boss5 rng9 matches 14 as @n[tag=SEAboss5b] at @s run tp @s ~ ~ ~ facing entity @n[tag=SEAjones]
+execute if score SEA_ch5_event_boss5 rng9 matches 14 as @n[tag=SEAboss5b] at @s run rotate @s facing entity @n[tag=SEAjones]
 execute if score SEA_ch5_event_boss5 rng9 matches 15 as @n[tag=SEAboss5b] at @s run data modify entity @n[tag=SEAboss5b] Motion set value [0.0d,10.0d,-50.0d]
 execute if score SEA_ch5_event_boss5 rng9 matches 15 run stopsound @a[tag=SEAPT] music
 execute if score SEA_ch5_event_boss5 rng9 matches 16..26 as @n[tag=SEAboss5b] at @s run tp @s ^ ^ ^-1.5 facing entity @n[tag=SEAjones]

@@ -74,9 +74,9 @@ execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 435 as @n[ta
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 455 run setblock 90100 125 37 minecraft:waxed_exposed_copper_bulb[lit=true]
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 455 run playsound block.copper_bulb.turn_on block @a 90100 125 37 1 1.1
 
-execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 449..499 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tp @s ~ ~ ~ facing 90100 125 37
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 449..499 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run rotate @s facing 90100 125 37
 
-execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 650..690 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tp @s ~ ~ ~ facing 90100 125 37
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 650..690 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run rotate @s facing 90100 125 37
 
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 462 positioned 90100 125 37 run playsound entity.evoker.ambient neutral @a ~ ~ ~ 1 1
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 462 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"通讯机台：","color":"yellow","bold": true},{"text":"\n“是‘天使’。”","color":"white","bold": false}]
@@ -163,7 +163,7 @@ execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 821..822 as 
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 824 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tp @s ~1 ~ ~ facing ~2 ~ ~
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 826..830 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tp @s ~1 ~ ~ facing ~2 ~ ~
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 831..835 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tp @s ~ ~ ~-1 facing ~ ~ ~-2
-execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 837 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tp @s ~ ~ ~ facing 90129 123 29
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 837 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run rotate @s facing 90129 123 29
 
 
 

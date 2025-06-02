@@ -4,7 +4,7 @@ execute if score SEA_ch5_event_engineering_fiona rng1 matches 2 positioned 90141
 execute if score SEA_ch5_event_engineering_fiona rng1 matches 2 positioned 90141.4 122 61 run function skyblock:sea/m/unique/npc_fiona
 execute if score SEA_ch5_event_engineering_fiona rng1 matches 2 positioned 90143.2 122 61 run function skyblock:sea/m/vindicator
 execute if score SEA_ch5_event_engineering_fiona rng1 matches 4 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tp @s ~0.8 ~ ~ facing ~2 ~ ~
-execute if score SEA_ch5_event_engineering_fiona rng1 matches 4 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s as @n[type=vindicator,tag=SEAmob] at @s run tp @s ~ ~ ~ facing ~-2 ~ ~
+execute if score SEA_ch5_event_engineering_fiona rng1 matches 4 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s as @n[type=vindicator,tag=SEAmob] at @s run rotate @s facing ~-2 ~ ~
 execute if score SEA_ch5_event_engineering_fiona rng1 matches 7 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s as @n[type=vindicator,tag=SEAmob] at @s run kill @s
 execute if score SEA_ch5_event_engineering_fiona rng1 matches 7 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run function skyblock:sea/e/ch5/fiona_attack_1
 
@@ -15,7 +15,7 @@ execute if score SEA_ch5_event_engineering_fiona rng1 matches 15 as @n[tag=SEAfi
 
 
 execute if score SEA_ch5_event_engineering_fiona rng1 matches 17 positioned 90141.8 122 61 run tellraw @a[distance=0..200] [{"text":"稚嫩的女声：","color":"yellow","bold": true},{"text":"\n“还有更多吗、！”","color":"white","bold": false}]
-execute if score SEA_ch5_event_engineering_fiona rng1 matches 17 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
+execute if score SEA_ch5_event_engineering_fiona rng1 matches 17 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run rotate @s facing entity @p[tag=SEAPT]
 
 execute if score SEA_ch5_event_engineering_fiona rng1 matches 18 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tag @s add SEAfiona_laser_attacking_hostile
 
@@ -45,7 +45,7 @@ execute if score SEA_ch5_event_engineering_fiona rng1 matches 65..827 run functi
 execute if score SEA_ch5_event_engineering_fiona rng1 matches 24 positioned 90147 122 63 as @e[tag=SEAmob,distance=0..4,tag=!SEAfiona] at @s run damage @s 0 generic by @n[tag=SEAfiona]
 execute if score SEA_ch5_event_engineering_fiona rng1 matches 69 positioned 90146 122 55 as @e[tag=SEAmob,distance=0..4,tag=!SEAfiona] at @s run damage @s 0 generic by @n[tag=SEAfiona]
 
-execute if score SEA_ch5_event_engineering_fiona rng1 matches 37 positioned 90141.8 122 61 run tp @s ~ ~ ~ facing entity @n[tag=SEAmob,tag=!SEAnpc]
+execute if score SEA_ch5_event_engineering_fiona rng1 matches 37 positioned 90141.8 122 61 run rotate @s facing entity @n[tag=SEAmob,tag=!SEAnpc]
 execute if score SEA_ch5_event_engineering_fiona rng1 matches 38 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
 execute if score SEA_ch5_event_engineering_fiona rng1 matches 38 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"稚嫩的女声：","color":"yellow","bold": true},{"text":"\n“该死，夹击吗……”","color":"white","bold": false}]
 
@@ -60,9 +60,9 @@ execute if score SEA_ch5_event_engineering_fiona rng1 matches 55.. store result 
 execute if score SEA_ch5_event_engineering_fiona rng1 matches 55.. as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200,scores={rng2=1}] at @s run function skyblock:sea/e/ch5/fiona_attack_1
 execute if score SEA_ch5_event_engineering_fiona rng1 matches 55.. as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200,scores={rng2=2}] at @s if entity @n[tag=SEAmob,tag=!SEAnpc,distance=..5.6] run tag @s add SEAfiona_laser_attacking
 
-execute if score SEA_ch5_event_engineering_fiona rng1 matches 55..804 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200,scores={rng2=4..5}] at @s unless entity @n[tag=SEAPT,distance=0..6] at @n[tag=SEAPT] rotated ~ 0 positioned ^ ^ ^-2 if block ~ ~ ~ air if block ~ ~1 ~ air if block ~ ~1 ~0.3 air if block ~ ~1 ~-0.3 air if block ~0.3 ~1 ~ air if block ~-0.3 ~1 ~ air unless block ~ ~-0.7 ~ air run tp @s ~ ~ ~ facing entity @n[tag=SEAPT]
-execute if score SEA_ch5_event_engineering_fiona rng1 matches 55..804 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200,scores={rng2=4..5}] at @s unless entity @n[tag=SEAPT,distance=0..6] at @n[tag=SEAPT] rotated ~ 0 positioned ^1 ^ ^-2 if block ~ ~ ~ air if block ~ ~1 ~ air if block ~ ~1 ~0.3 air if block ~ ~1 ~-0.3 air if block ~0.3 ~1 ~ air if block ~-0.3 ~1 ~ air unless block ~ ~-0.7 ~ air run tp @s ~ ~ ~ facing entity @n[tag=SEAPT]
-execute if score SEA_ch5_event_engineering_fiona rng1 matches 55..804 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200,scores={rng2=4..5}] at @s unless entity @n[tag=SEAPT,distance=0..6] at @n[tag=SEAPT] rotated ~ 0 positioned ^-1 ^ ^-2 if block ~ ~ ~ air if block ~ ~1 ~ air if block ~ ~1 ~0.3 air if block ~ ~1 ~-0.3 air if block ~0.3 ~1 ~ air if block ~-0.3 ~1 ~ air unless block ~ ~-0.7 ~ air run tp @s ~ ~ ~ facing entity @n[tag=SEAPT]
+execute if score SEA_ch5_event_engineering_fiona rng1 matches 55..804 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200,scores={rng2=4..5}] at @s unless entity @n[tag=SEAPT,distance=0..6] at @n[tag=SEAPT] rotated ~ 0 positioned ^ ^ ^-2 if block ~ ~ ~ air if block ~ ~1 ~ air if block ~ ~1 ~0.3 air if block ~ ~1 ~-0.3 air if block ~0.3 ~1 ~ air if block ~-0.3 ~1 ~ air unless block ~ ~-0.7 ~ air run rotate @s facing entity @n[tag=SEAPT]
+execute if score SEA_ch5_event_engineering_fiona rng1 matches 55..804 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200,scores={rng2=4..5}] at @s unless entity @n[tag=SEAPT,distance=0..6] at @n[tag=SEAPT] rotated ~ 0 positioned ^1 ^ ^-2 if block ~ ~ ~ air if block ~ ~1 ~ air if block ~ ~1 ~0.3 air if block ~ ~1 ~-0.3 air if block ~0.3 ~1 ~ air if block ~-0.3 ~1 ~ air unless block ~ ~-0.7 ~ air run rotate @s facing entity @n[tag=SEAPT]
+execute if score SEA_ch5_event_engineering_fiona rng1 matches 55..804 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200,scores={rng2=4..5}] at @s unless entity @n[tag=SEAPT,distance=0..6] at @n[tag=SEAPT] rotated ~ 0 positioned ^-1 ^ ^-2 if block ~ ~ ~ air if block ~ ~1 ~ air if block ~ ~1 ~0.3 air if block ~ ~1 ~-0.3 air if block ~0.3 ~1 ~ air if block ~-0.3 ~1 ~ air unless block ~ ~-0.7 ~ air run rotate @s facing entity @n[tag=SEAPT]
 
 execute if score SEA_ch5_event_engineering_fiona rng1 matches 68 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s as @a[distance=0..300] at @s run playsound garden2.bgm.002 music @s ~ ~ ~ 1 1.0
 execute if score SEA_ch5_event_engineering_fiona rng1 matches 68 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s as @a[distance=0..300] at @s run playsound minecraft:garden2.chapter_title music @s ~ ~ ~ 1 0.8
@@ -144,7 +144,7 @@ execute if score SEA_ch5_event_engineering_fiona rng1 matches 801 as @n[tag=SEAf
 
 execute if score SEA_ch5_event_engineering_fiona rng1 matches 802 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tp @s 90103 121 43 facing 90102 122 38
 execute if score SEA_ch5_event_engineering_fiona rng1 matches 804 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tp @s 90102 122 38 facing 90101.00 123.00 37.57
-execute if score SEA_ch5_event_engineering_fiona rng1 matches 805..830 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tp @s ~ ~ ~ facing 90101.00 123.00 37.57
+execute if score SEA_ch5_event_engineering_fiona rng1 matches 805..830 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run rotate @s facing 90101.00 123.00 37.57
 
 execute if score SEA_ch5_event_engineering_fiona rng1 matches 825 run fill 90104 124 49 90106 124 49 iron_block
 execute if score SEA_ch5_event_engineering_fiona rng1 matches 826 run fill 90104 123 49 90106 123 49 iron_block
