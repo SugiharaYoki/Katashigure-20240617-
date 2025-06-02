@@ -101,3 +101,5 @@ execute unless items entity @s[tag=SEA_w_06_effected] weapon.mainhand music_disc
 #禁止飞跃平台
 kill @s[x=90068,y=138,z=79,dx=100,dy=20,dz=1,type=player,tag=SEAPT,gamemode=adventure]
 
+
+execute if entity @s[predicate=skyblock:left,predicate=skyblock:right] if items entity @s inventory.* shield run function skyblock:sea/p/swap_defend
