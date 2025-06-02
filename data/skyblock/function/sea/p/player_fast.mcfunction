@@ -21,7 +21,7 @@ tp @s[x=90100,y=100,z=0,distance=10000..] 90060 103 141 facing 90061 103 141
 #scoreboard players set @s[tag=!sea_t_sprint_disabled,tag=sea_t_sprint,scores={sea_is_running=30..}] sea_is_running 30
 
 execute as @s[tag=!sea_t_sprint_disabled,tag=sea_t_sprint,scores={sea_runs=0}] run effect give @s luck
-execute as @s[tag=!sea_t_sprint_disabled,tag=sea_t_sprint,scores={sea_runs=..0}] run tag @s remove sea_t_sprint_ended
+execute as @s[tag=!sea_t_sprint_disabled,tag=sea_t_sprint,scores={sea_runs=..-1}] run tag @s remove sea_t_sprint_ended
 execute as @s[tag=!sea_t_sprint_disabled,tag=sea_t_sprint,scores={sea_runs=0},predicate=skyblock:forward,predicate=skyblock:sprint] run scoreboard players set @s sea_runs 1
 execute as @s[tag=sea_t_sprint,scores={sea_runs=1..}] run effect clear @s luck
 execute as @s[tag=sea_t_sprint,scores={sea_runs=1}] run attribute @s movement_speed modifier add sea_running_1a 0.2 add_value
@@ -70,8 +70,8 @@ scoreboard players set @s rng9 0
 scoreboard players add @s[tag=sea_w_axe_skill_a_1] rng9 1
 scoreboard players add @s[tag=sea_w_axe_skill_a_2] rng9 2
 scoreboard players add @s[tag=sea_w_axe_skill_a_3] rng9 3
-execute as @s[predicate=skyblock:left,scores={rng9=1..,sea_do_attack=1..}] if items entity @s weapon.mainhand iron_axe run function skyblock:sea/p/axeparry
-execute as @s[predicate=skyblock:right,scores={rng9=1..,sea_do_attack=1..}] if items entity @s weapon.mainhand iron_axe run function skyblock:sea/p/axeparry
+execute if items entity @s weapon.mainhand iron_axe as @s[predicate=skyblock:left,scores={rng9=1..,sea_do_attack=1..}] run function skyblock:sea/p/axeparry
+execute if items entity @s weapon.mainhand iron_axe as @s[predicate=skyblock:right,scores={rng9=1..,sea_do_attack=1..}] run function skyblock:sea/p/axeparry
 
 execute if items entity @s armor.chest *[custom_data={sea_chest_shadowchest:true}] if entity @s[predicate=skyblock:sneaking] run effect give @s invisibility 3 0 false
 
