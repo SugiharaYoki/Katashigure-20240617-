@@ -138,6 +138,12 @@ execute as @s[tag=!sea_t_sprint3] if items entity @s container.* *[custom_data={
 execute as @s[tag=!sea_t_sprint4] if items entity @s container.* *[custom_data={sea_t_sprint4:true}] run scoreboard players add @s sea_t_sprint_charge 1
 execute as @s[tag=!sea_t_sprint5] if items entity @s container.* *[custom_data={sea_t_sprint5:true}] run scoreboard players add @s sea_t_sprint_charge 1
 execute as @s[tag=!sea_t_sprint6] if items entity @s container.* *[custom_data={sea_t_sprint6:true}] run scoreboard players add @s sea_t_sprint_charge 1
+execute as @s[tag=!sea_t_sprint1] if items entity @s container.* *[custom_data={sea_t_sprint1:true}] run tag @s add sea_t_sprint1
+execute as @s[tag=!sea_t_sprint2] if items entity @s container.* *[custom_data={sea_t_sprint2:true}] run tag @s add sea_t_sprint2
+execute as @s[tag=!sea_t_sprint3] if items entity @s container.* *[custom_data={sea_t_sprint3:true}] run tag @s add sea_t_sprint3
+execute as @s[tag=!sea_t_sprint4] if items entity @s container.* *[custom_data={sea_t_sprint4:true}] run tag @s add sea_t_sprint4
+execute as @s[tag=!sea_t_sprint5] if items entity @s container.* *[custom_data={sea_t_sprint5:true}] run tag @s add sea_t_sprint5
+execute as @s[tag=!sea_t_sprint6] if items entity @s container.* *[custom_data={sea_t_sprint6:true}] run tag @s add sea_t_sprint6
 execute as @s[tag=!sea_t_sprint1] if items entity @s container.* *[custom_data={sea_t_sprint1:true}] run tellraw @s [{"text": "残影魔板获得了祝福：","color": "light_purple"},{"text": "持续时长","color": "light_purple","bold": true}]
 execute as @s[tag=!sea_t_sprint2] if items entity @s container.* *[custom_data={sea_t_sprint2:true}] run tellraw @s [{"text": "残影魔板获得了祝福：","color": "light_purple"},{"text": "持续时长","color": "light_purple","bold": true}]
 execute as @s[tag=!sea_t_sprint3] if items entity @s container.* *[custom_data={sea_t_sprint3:true}] run tellraw @s [{"text": "残影魔板获得了祝福：","color": "light_purple"},{"text": "持续时长","color": "light_purple","bold": true}]
