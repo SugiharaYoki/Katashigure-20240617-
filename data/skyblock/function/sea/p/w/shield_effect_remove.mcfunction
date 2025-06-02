@@ -8,6 +8,7 @@ attribute @s armor modifier remove sea_weapon:upg_shield07
 attribute @s armor modifier remove sea_weapon:upg_shield08
 tag @s remove sea_w_shield_skill_b_2
 tag @s remove sea_w_shield_skill_a_2
+tag @s remove sea_w_shield_skill_c_1
 
 
 

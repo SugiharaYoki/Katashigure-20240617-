@@ -158,7 +158,7 @@ execute if entity @s[scores={sea_crafter=50307}] if entity @s[tag=!SEA_w_shield_
 execute if entity @s[scores={sea_crafter=50308}] if entity @s[tag=!SEA_w_shield_upg7] run tag @s add SEA_w_upg_FAILED_NC
 execute if entity @s[scores={sea_crafter=50309}] if entity @s[tag=!SEA_w_shield_upg8] run tag @s add SEA_w_upg_FAILED_NC
 execute if entity @s[scores={sea_crafter=50310}] if entity @s[tag=!SEA_w_shield_upg5] run tag @s add SEA_w_upg_FAILED_NC
-#execute if entity @s[scores={sea_crafter=50311}] if entity @s[tag=!SEA_w_shield_upg10] run tag @s add SEA_w_upg_FAILED_NC
+execute if entity @s[scores={sea_crafter=50311}] if entity @s[tag=!SEA_w_shield_upg2] run tag @s add SEA_w_upg_FAILED_NC
 #execute if entity @s[scores={sea_crafter=50312}] if entity @s[tag=!SEA_w_shield_upg11] run tag @s add SEA_w_upg_FAILED_NC
 #execute if entity @s[scores={sea_crafter=50313}] if entity @s[tag=!SEA_w_shield_upg8] run tag @s add SEA_w_upg_FAILED_NC
 #execute if entity @s[scores={sea_crafter=50314}] if entity @s[tag=!SEA_w_shield_upg10] run tag @s add SEA_w_upg_FAILED_NC
