@@ -29,9 +29,9 @@ execute as @s[tag=sea_t_sprint,scores={sea_runs=1}] run attribute @s knockback_r
 execute as @s[tag=sea_t_sprint,scores={sea_runs=1}] run attribute @s armor modifier add sea_running_1c 50 add_value
 execute as @s[tag=sea_t_sprint,scores={sea_runs=1..10}] run scoreboard players add @s sea_runs 1
 execute as @s[tag=sea_t_sprint,scores={sea_t_sprint_length=0,sea_runs=5..}] run tag @s add sea_t_sprint_ended
-execute as @s[tag=sea_t_sprint,scores={sea_t_sprint_length=1,sea_runs=6..}] run tag @s add sea_t_sprint_ended
-execute as @s[tag=sea_t_sprint,scores={sea_t_sprint_length=2,sea_runs=7..}] run tag @s add sea_t_sprint_ended
-execute as @s[tag=sea_t_sprint,scores={sea_t_sprint_length=3,sea_runs=8..}] run tag @s add sea_t_sprint_ended
+execute as @s[tag=sea_t_sprint,scores={sea_t_sprint_length=1,sea_runs=7..}] run tag @s add sea_t_sprint_ended
+execute as @s[tag=sea_t_sprint,scores={sea_t_sprint_length=2,sea_runs=9..}] run tag @s add sea_t_sprint_ended
+execute as @s[tag=sea_t_sprint,scores={sea_t_sprint_length=3,sea_runs=11..}] run tag @s add sea_t_sprint_ended
 execute as @s[tag=sea_t_sprint,tag=sea_t_sprint_ended] run attribute @s movement_speed modifier remove sea_running_1a
 execute as @s[tag=sea_t_sprint,tag=sea_t_sprint_ended] run attribute @s knockback_resistance modifier remove sea_running_1b
 execute as @s[tag=sea_t_sprint,tag=sea_t_sprint_ended] run attribute @s armor modifier remove sea_running_1c
