@@ -1,25 +1,6 @@
 tp @s[x=90100,y=100,z=0,distance=10000..] 90060 103 141 facing 90061 103 141
 
 
-#execute as @s[tag=!sea_t_sprint_disabled,tag=sea_t_sprint,scores={sea_runs=..0}] run tag @s remove sea_run_stops
-#execute as @s[tag=!sea_t_sprint_disabled,tag=sea_t_sprint] unless entity @s[scores={sea_runs=-9999..}] run scoreboard players set @s sea_runs 0
-#execute as @s[tag=!sea_t_sprint_disabled,tag=sea_t_sprint,scores={sea_is_running=0,sea_runs=10..}] run scoreboard players set @s sea_runs 0
-#execute as @s[tag=!sea_t_sprint_disabled,tag=sea_t_sprint,scores={sea_runs=..0}] run effect give @s luck
-#execute as @s[tag=!sea_t_sprint_disabled,tag=sea_t_sprint,scores={sea_runs=1..}] run effect clear @s luck
-#execute as @s[tag=sea_t_sprint_disabled] run effect clear @s luck
-#execute as @s[tag=!sea_t_sprint_disabled,tag=sea_t_sprint,scores={sea_is_running=1..,sea_runs=..0}] run scoreboard players set @s sea_runs 1
-#execute as @s[tag=!sea_t_sprint_disabled,tag=sea_t_sprint,scores={sea_runs=1..10}] run scoreboard players add @s sea_runs 1
-##execute as @s[scores={sea_runs=50..},tag=!sea_run_stops] run tag @s add sea_run_stops
-##scoreboard players remove @a[tag=sea_run_stops] sea_runs 1
-#execute as @s[tag=!sea_t_sprint_disabled,tag=sea_t_sprint,scores={sea_runs=2}] run attribute @s movement_speed modifier add sea_running_1a 0.2 add_value
-#execute as @s[tag=!sea_t_sprint_disabled,tag=sea_t_sprint,scores={sea_runs=2}] run attribute @s knockback_resistance modifier add sea_running_1b 1 add_value
-#execute as @s[tag=!sea_t_sprint_disabled,tag=sea_t_sprint,scores={sea_runs=2}] run attribute @s armor modifier add sea_running_1c 50 add_value
-#execute as @s[tag=!sea_t_sprint_disabled,tag=sea_t_sprint,scores={sea_runs=6..}] run attribute @s movement_speed modifier remove sea_running_1a
-#execute as @s[tag=!sea_t_sprint_disabled,tag=sea_t_sprint,scores={sea_runs=7..}] run attribute @s knockback_resistance modifier remove sea_running_1b
-#execute as @s[tag=!sea_t_sprint_disabled,tag=sea_t_sprint,scores={sea_runs=7..}] run attribute @s armor modifier remove sea_running_1c
-#scoreboard players remove @s[tag=!sea_t_sprint_disabled,tag=sea_t_sprint,scores={sea_is_running=1..}] sea_is_running 1
-#scoreboard players set @s[tag=!sea_t_sprint_disabled,tag=sea_t_sprint,scores={sea_is_running=30..}] sea_is_running 30
-
 execute as @s[tag=!sea_t_sprint_disabled,tag=sea_t_sprint,scores={sea_runs=0}] run effect give @s luck
 execute as @s[tag=!sea_t_sprint_disabled,tag=sea_t_sprint,scores={sea_runs=..-1}] run tag @s remove sea_t_sprint_ended
 execute as @s[tag=!sea_t_sprint_disabled,tag=sea_t_sprint,scores={sea_runs=0},predicate=skyblock:forward,predicate=skyblock:sprint] run scoreboard players set @s sea_runs 1
@@ -53,8 +34,8 @@ execute if items entity @s container.* mace run clear @s[nbt={OnGround:1b}] mace
 effect clear @s[scores={SEA_pounce_charge=20..41},predicate=!skyblock:sneaking] strength
 effect clear @s[scores={SEA_pounce_charge=20..41},predicate=!skyblock:sneaking] jump_boost
 
-execute as @s[tag=sea_exp_thunderrage] run function skyblock:sea/experimental/thunderrage
-execute as @s[tag=sea_exp_thunderblast] run function skyblock:sea/experimental/thunderblast
+#execute as @s[tag=sea_exp_thunderrage] run function skyblock:sea/experimental/thunderrage
+#execute as @s[tag=sea_exp_thunderblast] run function skyblock:sea/experimental/thunderblast
 
 
 execute if score @s SEA_if_spying matches 1.. run function skyblock:sea/p/spyglass_pointout
@@ -81,7 +62,7 @@ execute as @s[scores={sea_do_attack=1..}] if items entity @s weapon.mainhand fli
 execute as @s[scores={sea_do_attack=1..}] if items entity @s weapon.mainhand golden_sword[custom_data={sea_goldensword_1:true}] run function skyblock:sea/p/weapon/raphael_sword
 scoreboard players reset @s[scores={sea_do_attack=1..}] sea_do_attack
 
-function skyblock:sea/experimental/backjump_loop
+#function skyblock:sea/experimental/backjump_loop
 
 effect give @s[tag=SEA_dying] regeneration 45 1
 effect give @s[tag=SEA_dying] resistance 5 3
@@ -110,5 +91,5 @@ execute unless items entity @s[tag=SEA_w_06_effected] weapon.mainhand music_disc
 kill @s[x=90068,y=138,z=79,dx=100,dy=20,dz=1,type=player,tag=SEAPT,gamemode=adventure]
 
 execute if entity @s[tag=SEA_w_shield_upg11,tag=!sea_w_shield_skill_c_1] run tag @s add sea_w_shield_skill_c_1
-execute if entity @s[predicate=skyblock:left,predicate=skyblock:right,predicate=skyblock:backward,tag=!SEA_swap_defending,tag=sea_w_shield_skill_c_1] if items entity @s container.* shield run function skyblock:sea/p/swap_defend
-execute unless entity @s[predicate=skyblock:left,predicate=skyblock:right] run tag @s remove SEA_swap_defending
+execute if items entity @s container.* shield if entity @s[predicate=skyblock:left,predicate=skyblock:right,predicate=skyblock:backward,tag=!SEA_swap_defending,tag=sea_w_shield_skill_c_1] run function skyblock:sea/p/swap_defend
+execute if entity @s[tag=SEA_swap_defending] unless entity @s[predicate=skyblock:left,predicate=skyblock:right] run tag @s remove SEA_swap_defending
