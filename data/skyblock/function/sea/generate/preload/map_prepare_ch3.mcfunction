@@ -153,8 +153,9 @@ item replace block 90086 143 114 container.13 with emerald 5
 item replace block 90086 143 114 container.15 with gunpowder 2
 
 setblock 90130 151 142 chest[facing=east]{lock:{components:{custom_name:'"宿舍楼3楼某处的钥匙"'}}}
-item replace block 90130 151 142 container.12 with flint 1
-item replace block 90130 151 142 container.14 with coal 1
+item replace block 90130 151 142 container.11 with flint 1
+item replace block 90130 151 142 container.13 with coal 1
+item replace block 90130 151 142 container.15 with vex_armor_trim_smithing_template 1
 
 setblock 90154 129 98 air
 setblock 90154 129 98 lever[facing=east]
@@ -342,7 +343,7 @@ item replace block 90100 155 139 container.12 with arrow 3
 
 setblock 90107 156 135 barrel[facing=south]{lock:{components:{custom_name:'"副宿舍楼2F - 个人储藏柜2B的钥匙"'}}}
 item replace block 90107 156 135 container.11 with gunpowder 1
-item replace block 90107 156 135 container.15 with emerald 2
+item replace block 90107 156 135 container.15 with vex_armor_trim_smithing_template 1
 
 setblock 90104 155 151 chest[facing=north]
 
@@ -364,7 +365,7 @@ item replace block 90151 137 116 container.12 with flint 1
 item replace block 90151 137 116 container.14 with gunpowder 1
 
 setblock 90137 134 124 chest[facing=south]
-item replace block 90137 134 124 container.12 with arrow 2
+item replace block 90137 134 124 container.12 with vex_armor_trim_smithing_template 1
 item replace block 90137 134 124 container.14 with coal 1
 
 setblock 90145 136 127 air
@@ -448,7 +449,8 @@ setblock 90091 150 110 air
 setblock 90091 150 110 lever[facing=south]
 
 setblock 90119 161 142 chest[facing=east]
-item replace block 90119 161 142 container.13 with flint 1
+item replace block 90119 161 142 container.11 with flint 2
+item replace block 90119 161 142 container.15 with dune_armor_trim_smithing_template 1
 
 setblock 90087 145 144 minecraft:redstone_block
 setblock 90087 145 144 minecraft:air

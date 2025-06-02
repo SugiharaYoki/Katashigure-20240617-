@@ -199,6 +199,7 @@ setblock 90171 19 139 furnace[facing=north]
 setblock 90170 19 139 chest[facing=north]
 item replace block 90170 19 139 container.13 with coal 1
 
+
 setblock 90184 36 121 minecraft:magenta_glazed_terracotta[facing=south]
 fill 90187 36 123 90187 34 124 iron_bars
 
@@ -280,7 +281,7 @@ fill 90191 36 134 90190 34 134 iron_bars
 
 #水下通道
 setblock 90158 6 124 chest[facing=east,waterlogged=true]
-item replace block 90158 6 124 container.12 with honey_bottle 1
+item replace block 90158 6 124 container.12 with vex_armor_trim_smithing_template 1
 item replace block 90158 6 124 container.14 with gunpowder 1
 
 setblock 90158 6 120 chest[facing=west,waterlogged=true]
@@ -303,7 +304,7 @@ item replace block 90178 27 103 container.14 with coal 2
 setblock 90154 38 94 minecraft:potted_flowering_azalea_bush
 
 setblock 90155 36 120 chest[facing=west]
-item replace block 90155 36 120 container.12 with cookie 1
+item replace block 90155 36 120 container.12 with cookie 2
 item replace block 90155 36 120 container.14 with cookie 2
 setblock 90151 37 121 minecraft:potted_blue_orchid
 
@@ -428,8 +429,9 @@ summon minecraft:item_frame 90167 39 77 {Invisible:1b,Fixed:0b,Invulnerable:0b,F
 summon minecraft:item_frame 90213 45 141 {Invisible:1b,Fixed:0b,Invulnerable:0b,Facing:1b,Item:{id:"minecraft:flint"}}
 
 setblock 90213 49 145 chest[facing=north]
-item replace block 90213 49 145 container.13 with coal 1
-
+item replace block 90213 49 145 container.12 with coal 1
+item replace block 90213 49 145 container.14 with vex_armor_trim_smithing_template 1
+#vex_armor_trim_smithing_template 1
 setblock 90160 6 138 chest[facing=east,waterlogged=true]
 item replace block 90160 6 138 container.12 with emerald 3
 item replace block 90160 6 138 container.14 with emerald 3

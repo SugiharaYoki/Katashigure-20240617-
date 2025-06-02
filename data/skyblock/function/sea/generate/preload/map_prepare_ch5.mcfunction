@@ -299,7 +299,7 @@ item replace block 90141 84 49 container.14 with disc_fragment_5 2
 
 setblock 90121 78 65 chest[facing=east]
 item replace block 90121 78 65 container.12 with arrow 3
-item replace block 90121 78 65 container.14 with gunpowder 1
+item replace block 90121 78 65 container.14 with gunpowder 2
 
 setblock 90117 79 56 minecraft:flower_pot
 
@@ -307,14 +307,14 @@ fill 90101 73 64 90101 71 66 lever[facing=west]
 setblock 90101 72 65 air
 
 setblock 90111 71 73 chest[facing=north]
-item replace block 90111 71 73 container.11 with coal 1
+item replace block 90111 71 73 container.11 with vex_armor_trim_smithing_template 1
 item replace block 90111 71 73 container.15 with gunpowder 1
 
 setblock 90133 101 25 chest[facing=west]
 item replace block 90133 101 25 container.14 with echo_shard 1
 
 setblock 90112 102 64 chest[facing=north]
-item replace block 90112 102 64 container.12 with coal 1
+item replace block 90112 102 64 container.12 with coal 2
 setblock 90126 79 57 minecraft:furnace[facing=west]
 
 fill 90105 103 34 90106 101 34 minecraft:waxed_copper_grate
@@ -585,6 +585,10 @@ setblock 90125 129 29 minecraft:air
 setblock 90128 131 18 chest[facing=west]
 item replace block 90128 131 18 container.12 with carrot 3
 item replace block 90128 131 18 container.14 with carrot 3
+
+setblock 90144 115 24 chest[facing=north]
+item replace block 90144 115 24 container.12 with coal 2
+item replace block 90144 115 24 container.14 with vex_armor_trim_smithing_template 1
 
 setblock 90106 137 31 minecraft:barrel[facing=east]
 item replace block 90106 137 31 container.13 with music_disc_stal 1
