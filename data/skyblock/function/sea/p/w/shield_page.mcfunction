@@ -57,6 +57,7 @@ execute if entity @s[tag=!SEA_w_shield_upg15] run data modify entity @n[tag=SEA_
 execute if entity @s[tag=!SEA_w_shield_upg16] run data modify entity @n[tag=SEA_w_shield_displaymarker16] CustomName set value '" □ "'
 
 #盾
+#    瞬
 # 防 速 防 时
 # 速    反 防 防 反 
 # 时
@@ -65,6 +66,14 @@ execute if entity @s[tag=!SEA_w_shield_upg16] run data modify entity @n[tag=SEA_
 # 1 1 2 3
 # 2   3 2 3 3
 # 2
+tellraw @s [{"text":" ","color":"light_purple"},\
+{"selector":"@n[tag=SEA_w_shield_displaymarker0b]","color":"dark_gray"},\
+{"selector":"@n[tag=SEA_w_shield_displaymarkerE]","color":"dark_gray"},\
+{"selector":"@n[tag=SEA_w_shield_displaymarker11]","color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 50311"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：2\n同时按下左右移动键，瞬间将盾牌切换至左手\n持有盾牌时则切换为副手中的物品","color":"white"}}},\
+{"selector":"@n[tag=SEA_w_shield_displaymarkerE]","color":"dark_gray"},\
+{"selector":"@n[tag=SEA_w_shield_displaymarkerE]","color":"dark_gray"},\
+{"selector":"@n[tag=SEA_w_shield_displaymarkerE]","color":"dark_gray"},\
+{"selector":"@n[tag=SEA_w_shield_displaymarkerE]","color":"dark_gray"}]
 
 tellraw @s [{"text":" ","color":"light_purple"},\
 {"selector":"@n[tag=SEA_w_shield_displaymarker0]","color":"blue"},\
