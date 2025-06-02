@@ -8,7 +8,7 @@ execute if entity @s[tag=SEA_w_shield_upg7] run attribute @s armor modifier add 
 execute if entity @s[tag=SEA_w_shield_upg8] run attribute @s armor modifier add sea_weapon:upg_shield08 1.0 add_value
 execute if entity @s[tag=SEA_w_shield_upg9] run tag @s add sea_w_shield_skill_b_2
 execute if entity @s[tag=SEA_w_shield_upg10] run tag @s add sea_w_shield_skill_a_2
-execute if entity @s[tag=SEA_w_shield_upg11] run tag @s add sea_w_shield_skill_c_1
+
 
 
 tag @s add SEA_w_04_effected
