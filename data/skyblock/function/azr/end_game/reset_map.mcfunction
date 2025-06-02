@@ -62,7 +62,7 @@ fill -79931 38 40 -79931 40 40 purple_stained_glass{name: "to Stage4 alpha"}
 fill -79957 42 13 -79955 38 13 minecraft:purple_stained_glass{name: "to Stage4 beta"}
 
 #Spider Room
-setblock -79922 38 35 chest[facing=east]{Lock:"粗石英钥匙"}
+setblock -79922 38 35 chest[facing=east]{lock:{components:{custom_name:'"粗石英钥匙"'}}}
 item replace block -79922 38 35 container.11 with minecraft:experience_bottle 5
 item replace block -79922 38 35 container.15 with skull_banner_pattern[custom_name='{"text":"“招待厅事务记录6”","color":"dark_purple","italic":false}',lore=['{"text":"权之残影大人曾言","color":"white","italic":false}','{"text":"下一回便会有真正的强者光临神庭。","color":"white","italic":false}','{"text":"并非由魔界之污秽魔力所造就，","color":"white","italic":false}','{"text":"而是命定将拯救三界之人。","color":"white","italic":false}']] 1
 setblock -79912 38 34 chest[facing=west]
@@ -84,7 +84,7 @@ setblock -79938 38 49 minecraft:quartz_block{name: "to Stage Cerement"}
 setblock -79938 39 49 minecraft:quartz_bricks{name: "to Stage Cerement"}
 
 #Stage4 beta
-setblock -79939 38 20 chest[facing=west]{Lock:"木船图案的钥匙"}
+setblock -79939 38 20 chest[facing=west]{lock:{components:{custom_name:'"木船图案的钥匙"'}}}
 item replace block -79939 38 20 container.11 with minecraft:paper[custom_name='{"text":"圣殿信条","color":"blue","italic":false}',custom_data={sanct_credo:1b},custom_model_data=100001] 3
 item replace block -79939 38 20 container.13 with skull_banner_pattern[custom_name='{"text":"“仍旧在调查魔物失控的真相”","color":"dark_purple","italic":false}',lore=['{"text":"拉斐尔大人告知我丢失钥匙并无大碍，","color":"white","italic":false}','{"text":"地下水路东区不存在任何有用的事物。","color":"white","italic":false}','{"text":"可那里明明封印着源自各处的亡灵……","color":"white","italic":false}']]
 item replace block -79939 38 20 container.15 with iron_ingot[custom_name='{"text":"碳钢","italic":false}',custom_data={coal_iron:1b},custom_model_data=100001] 1
@@ -160,7 +160,7 @@ setblock -79898 38 50 air
 setblock -79888 39 67 birch_button[facing=west]
 setblock -79924 39 -72 birch_button[face=floor,facing=west]
 setblock -79891 49 136 minecraft:birch_button[face=floor,facing=east]
-setblock -79925 24 136 chest[facing=south]{Lock:"白方岩钥匙"}
+setblock -79925 24 136 chest[facing=south]{lock:{components:{custom_name:'"白方岩钥匙"'}}}
 setblock -79903 41 -60 birch_button[face=wall,facing=west]
 setblock -79907 40 -62 coarse_dirt
 setblock -79907 40 -56 minecraft:quartz_bricks
@@ -201,7 +201,7 @@ setblock -79894 41 -123 lever[facing=east,face=floor,powered=false]
 setblock -79898 40 -109 chest[facing=west]
 setblock -79903 40 -104 chest[facing=west]
 setblock -79929 47 -110 chest[facing=south]
-setblock -79897 40 -115 chest[facing=west]{Lock:"纸张图案的钥匙"}
+setblock -79897 40 -115 chest[facing=west]{lock:{components:{custom_name:'"纸张图案的钥匙"'}}}
 setblock -79919 40 -112 chest[facing=north]
 setblock -79917 41 -104 minecraft:spruce_trapdoor[open=false,facing=west]
 setblock -79917 41 -102 minecraft:spruce_trapdoor[open=false,facing=west]
@@ -228,9 +228,9 @@ setblock -79904 41 97 birch_button[face=wall,facing=north]
 setblock -79917 41 -66 minecraft:birch_button[face=floor,facing=west]
 setblock -79939 35 -76 chest[facing=north,waterlogged=true]
 setblock -79904 44 118 birch_button[facing=west,face=floor]
-setblock -79917 40 -62 chest[facing=north]{Lock:"蓝宝石钥匙"}
+setblock -79917 40 -62 chest[facing=north]{lock:{components:{custom_name:'"蓝宝石钥匙"'}}}
 setblock -79875 38 64 chest[facing=north]
-setblock -79895 48 136 chest[facing=east]{Lock:"椅子形状的钥匙"}
+setblock -79895 48 136 chest[facing=east]{lock:{components:{custom_name:'"椅子形状的钥匙"'}}}
 setblock -79902 43 109 chest[facing=east]
 setblock -79764 30 218 chest[facing=north,waterlogged=true]
 setblock -79850 48 205 chest[facing=south]
@@ -244,7 +244,7 @@ setblock -79941 39 86 birch_button[facing=south]
 setblock -79941 39 85 minecraft:diamond_block
 setblock -79938 48 -144 chest[facing=east]
 setblock -79935 48 -164 barrel[facing=up]
-setblock -79936 49 -158 chest[facing=north]{Lock:"木炭石钥匙"}
+setblock -79936 49 -158 chest[facing=north]{lock:{components:{custom_name:'"木炭石钥匙"'}}}
 setblock -79867 44 -52 barrel[facing=north]
 setblock -79866 43 -52 barrel[facing=north]
 setblock -79865 42 -52 barrel[facing=north]
@@ -253,7 +253,7 @@ setblock -79866 43 -57 barrel[facing=south]
 setblock -79865 42 -57 barrel[facing=south]
 setblock -79870 40 -49 minecraft:air
 setblock -79867 40 -103 chest[facing=west]
-setblock -79863 40 -76 chest[facing=west]{Lock:"杜鹃花钥匙"}
+setblock -79863 40 -76 chest[facing=west]{lock:{components:{custom_name:'"杜鹃花钥匙"'}}}
 setblock -79929 49 -123 chest[facing=south]
 setblock -79864 37 -84 air
 setblock -79864 42 -75 minecraft:pointed_dripstone[vertical_direction=down]
@@ -292,7 +292,7 @@ setblock -79761 42 -358 minecraft:cracked_polished_blackstone_bricks
 setblock -79713 47 -380 minecraft:birch_button[face=floor,facing=east]
 setblock -79723 47 -380 crimson_hyphae[axis=z]
 setblock -79588 8 -427 chest[facing=west]
-setblock -79571 11 -412 chest[facing=north]{Lock:"金镐图案的钥匙"}
+setblock -79571 11 -412 chest[facing=north]{lock:{components:{custom_name:'"金镐图案的钥匙"'}}}
 setblock -79790 27 -288 nether_brick_fence
 setblock -79790 28 -288 nether_brick_fence
 setblock -79791 28 -294 chest[facing=south]

@@ -1,1 +1,1 @@
-summon pillager ~ ~ ~ {CanPickUpLoot:0b,CustomName:'"弩手"',HandItems:[{count:1,id:"minecraft:crossbow"},{}],Health:3.0f,Invulnerable:1b,PersistenceRequired:1b,Rotation:[-28.6f,0.0f],Tags:["AzrielFriendly"],attributes:[{base:3.0d,id:"generic.max_health"},{base:0.1d,id:"generic.movement_speed"}]}
+summon pillager ~ ~ ~ {CanPickUpLoot:0b,CustomName:'"弩手"',HandItems:[{count:1,id:"minecraft:crossbow"},{}],Health:3.0f,Invulnerable:1b,PersistenceRequired:1b,Rotation:[-28.6f,0.0f],Tags:["AzrielFriendly"],attributes:[{base:3.0d,id:"generic.max_health"},{base:0.1d,id:"movement_speed"}]}

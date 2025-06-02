@@ -1,2 +1,2 @@
-summon silverfish ~ ~ ~ {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_silverfish_tier1",attributes:[{id:"generic.max_health",base:8},{id:"generic.attack_damage",base:2.0},{id:"generic.movement_speed",base:0.25},{id:"generic.scale",base:1.1}],Health:8f,CustomName:'"廊虫"'}
+summon silverfish ~ ~ ~ {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_silverfish_tier1",attributes:[{id:"generic.max_health",base:8},{id:"generic.attack_damage",base:2.0},{id:"generic.movement_speed",base:0.25},{id:"scale",base:1.1}],Health:8f,CustomName:'"廊虫"'}
 particle infested ~ ~0.1 ~ 0.2 0.1 0.2 0 10

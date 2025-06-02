@@ -144,7 +144,7 @@ execute as @e[tag=SEAmob,type=vindicator] at @s run item replace entity @s weapo
 execute as @e[tag=SEAmob,type=pillager] at @s run data modify entity @s Invulnerable set value 1b
 execute as @e[tag=SEAmob,type=vindicator] at @s run data modify entity @s Invulnerable set value 1b
 execute as @e[tag=SEAmob,type=vindicator] at @s run tag @s add SEAmob_surrended
-execute as @e[tag=SEAmob,type=vindicator] at @s run data modify entity @s attributes[{id:"minecraft:generic.movement_speed"}].base set value 0
+execute as @e[tag=SEAmob,type=vindicator] at @s run data modify entity @s attributes[{id:"minecraft:movement_speed"}].base set value 0
 execute as @e[tag=SEAmob,type=evoker] at @s run particle portal ~ ~1 ~ 0.4 0.4 0.4 0.3 40
 execute as @e[tag=SEAmob,type=evoker] at @s run tp @s -90100 100 100
 

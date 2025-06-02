@@ -21,6 +21,6 @@ execute if entity @n[tag=sc,scores={PigCarCount=..40}] as @s at @s[tag=purchases
 execute if entity @n[tag=sc,scores={PigCarCount=..40}] as @s at @s[tag=purchasesuccess] run tellraw @s {"text":"“您的豪车已经在外面准备就绪了。记得使用萝卜钓竿控制移动。祝您出行愉快！”","bold":false,"color":"white"}
 execute if entity @n[tag=sc,scores={PigCarCount=..40}] as @s at @s[tag=purchasesuccess] run playsound entity.villager.yes ambient @s ~ ~ ~ 10
 execute if entity @n[tag=sc,scores={PigCarCount=..40}] run tellraw @s [{"text":"如今持有FSB： ","color":"gold"},{"score":{"name":"@s","objective":"Perm_PersonFSB"}}]
-execute if entity @n[tag=sc,scores={PigCarCount=..40}] as @s at @s[tag=purchasesuccess] run summon pig -9 54 -28 {Tags:[PigCar],Saddle:1b,Rotation:[-90f,0f],attributes:[{id:"generic.max_health",base:80.0},{id:"generic.movement_speed",base:0.5}],Health:80.0f,CustomName:'"豪车"'}
+execute if entity @n[tag=sc,scores={PigCarCount=..40}] as @s at @s[tag=purchasesuccess] run summon pig -9 54 -28 {Tags:[PigCar],Saddle:1b,Rotation:[-90f,0f],attributes:[{id:"generic.max_health",base:80.0},{id:"movement_speed",base:0.5}],Health:80.0f,CustomName:'"豪车"'}
 tag @s remove purchasesuccess
 scoreboard players set @s MultiMenu 0

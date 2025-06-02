@@ -294,7 +294,7 @@ setblock 90173 6 104 chest[facing=east,waterlogged=true]
 item replace block 90173 6 104 container.11 with gunpowder 1
 item replace block 90173 6 104 container.15 with emerald 3
 
-setblock 90178 27 103 chest[facing=north]{Lock:"冷凝系统 - 休息区2F钥匙"}
+setblock 90178 27 103 chest[facing=north]{lock:{components:{custom_name:'"冷凝系统 - 休息区2F钥匙"'}}}
 item replace block 90178 27 103 container.12 with raw_iron 1
 item replace block 90178 27 103 container.14 with coal 2
 

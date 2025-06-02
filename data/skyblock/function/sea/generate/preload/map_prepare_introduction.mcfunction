@@ -139,7 +139,7 @@ summon minecraft:armor_stand 90072 122 127
 summon minecraft:armor_stand 90073 122 127
 summon minecraft:armor_stand 90074 122 127
 
-#{Lock:"SystemCardinal"}
+#{lock:{components:{custom_name:'"SystemCardinal"'}}}
 
 setblock 90085 111 142 minecraft:waxed_copper_bulb[lit=true]
 setblock 90085 111 144 minecraft:waxed_copper_bulb[lit=true]
@@ -160,7 +160,7 @@ fill 90097 123 148 90097 122 148 deepslate_tiles
 setblock 90091 128 121 potted_azalea_bush
 setblock 90136 123 115 potted_cactus
 setblock 90133 123 115 potted_cactus
-setblock 90095 122 128 chest[facing=south]{Lock:"工具维护室钥匙"}
+setblock 90095 122 128 chest[facing=south]{lock:{components:{custom_name:'"工具维护室钥匙"'}}}
 
 item replace block 90095 122 128 container.7 with apple 2
 item replace block 90095 122 128 container.18 with apple 1
@@ -295,7 +295,7 @@ item replace block 90091 122 130 container.13 with coal 1
 fill 90086 122 105 90086 122 104 minecraft:redstone_block
 fill 90086 122 105 90086 122 104 minecraft:air
 setblock 90096 122 117 air
-setblock 90096 122 117 chest[facing=north]{Lock:"扫除用具间钥匙"}
+setblock 90096 122 117 chest[facing=north]{lock:{components:{custom_name:'"扫除用具间钥匙"'}}}
 item replace block 90096 122 117 container.11 with arrow 3
 item replace block 90096 122 117 container.13 with wayfinder_armor_trim_smithing_template[custom_name='{"text":"醒殉徒石板","color":"light_purple","italic":false}']
 item replace block 90096 122 117 container.15 with wild_armor_trim_smithing_template[custom_name='{"text":"狂荒石板","color":"light_purple","italic":false}']

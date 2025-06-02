@@ -174,7 +174,7 @@ setblock 90100 129 142 air
 setblock 90100 128 142 iron_door[facing=west,half=lower,open=false]
 setblock 90100 129 142 iron_door[facing=west,half=upper,open=false]
 setblock 90118 129 141 lever[facing=south,powered=false]
-setblock 90123 128 141 chest[facing=south]{Lock:"空气循环控制室钥匙"}
+setblock 90123 128 141 chest[facing=south]{lock:{components:{custom_name:'"空气循环控制室钥匙"'}}}
 item replace block 90123 128 141 container.12 with coal 1
 item replace block 90123 128 141 container.14 with flint 1
 
@@ -332,11 +332,11 @@ setblock 90097 129 132 barrel[facing=east]
 item replace block 90097 129 132 container.13 with emerald 2
 
 #boss-ch2
-setblock 90132 128 94 barrel[facing=east]{Lock:"SystemCardinal"}
-setblock 90132 129 94 barrel[facing=up]{Lock:"SystemCardinal"}
-setblock 90131 128 93 barrel[facing=up]{Lock:"SystemCardinal"}
+setblock 90132 128 94 barrel[facing=east]{lock:{components:{custom_name:'"SystemCardinal"'}}}
+setblock 90132 129 94 barrel[facing=up]{lock:{components:{custom_name:'"SystemCardinal"'}}}
+setblock 90131 128 93 barrel[facing=up]{lock:{components:{custom_name:'"SystemCardinal"'}}}
 setblock 90132 128 93 minecraft:grindstone[face=floor]
-setblock 90132 128 92 chest[facing=north]{Lock:"SystemCardinal"}
+setblock 90132 128 92 chest[facing=north]{lock:{components:{custom_name:'"SystemCardinal"'}}}
 setblock 90131 128 92 minecraft:composter
 setblock 90132 129 93 barrier
 setblock 90132 129 92 barrier

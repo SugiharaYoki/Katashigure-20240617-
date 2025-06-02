@@ -1,1 +1,1 @@
-summon drowned ~ ~ ~ {CustomName:'[{"text":"腐尸"}]',DeathLootTable:"skyblock:sea_drowned1",Tags:["SEAmob"],attributes:[{id:"generic.attack_damage",base:3.0},{id:"generic.movement_speed",base:0.19},{id:"generic.max_health",base:12}],Health:12,PersistenceRequired:1b}
+summon drowned ~ ~ ~ {CustomName:'[{"text":"腐尸"}]',DeathLootTable:"skyblock:sea_drowned1",Tags:["SEAmob"],attributes:[{id:"generic.attack_damage",base:3.0},{id:"generic.movement_speed",base:0.19},{id:"max_health",base:12}],Health:12,PersistenceRequired:1b}

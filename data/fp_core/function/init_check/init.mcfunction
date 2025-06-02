@@ -40,7 +40,7 @@ execute on passengers run tag @s[tag=temp_init] add entityData
 data remove entity @s[tag=temp_init] data.scores
 execute on passengers run tag @s[tag=temp_init] remove temp_init
 #setup entity
-data modify entity @s attributes[{id:"minecraft:generic.max_health"}].base set value 1024
+data modify entity @s attributes[{id:"minecraft:max_health"}].base set value 1024
 data modify entity @s Health set value 1024
 data merge entity @s {CustomNameVisible:1b}
 tag @s[tag=!IGNORE_displayListener] add displayListener

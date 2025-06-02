@@ -1,2 +1,2 @@
-summon slime ~ ~ ~ {PersistenceRequired:1b,Tags:["AzrielDecMob","Immune"],DeathLootTable:"skyblock:azriel_slime_tier1",Health:18.0f,CustomName:'"巨大史莱姆"',CanPickUpLoot:0b,Size:2,ArmorItems:[{},{},{},{}],attributes:[{id:"generic.max_health",base:18.0d},{id:"generic.attack_damage",base:6.0d},{id:"generic.scale",base:2.0d}]}
+summon slime ~ ~ ~ {PersistenceRequired:1b,Tags:["AzrielDecMob","Immune"],DeathLootTable:"skyblock:azriel_slime_tier1",Health:18.0f,CustomName:'"巨大史莱姆"',CanPickUpLoot:0b,Size:2,ArmorItems:[{},{},{},{}],attributes:[{id:"generic.max_health",base:18.0d},{id:"generic.attack_damage",base:6.0d},{id:"scale",base:2.0d}]}
 particle trial_spawner_detection ~ ~0.4 ~ 0.25 0.4 0.25 0 10
