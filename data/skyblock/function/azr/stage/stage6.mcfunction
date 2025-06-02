@@ -299,7 +299,7 @@ execute if score stageSeconds Azr_system matches 316 run setblock -79883 39 67 s
 execute if score stageSeconds Azr_system matches 316 run setblock -79873 39 92 birch_button[face=floor,facing=east]
 execute if score stageSeconds Azr_system matches 315 run setblock -79935 8 149 chest
 execute if score stageSeconds Azr_system matches 315 run summon parrot -79906 44 117 {PersistenceRequired:1b,Invulnerable:1b,Tags:["AzrielDecMob","AzrielFriendly"],DeathLootTable:"skyblock:azriel_creeper_tier2",Health:50.0f,CustomName:'"小鸢"',Variant:2,attributes:[{id:"generic.max_health",base:50.0d},{id:"generic.flying_speed",base:0.0d},{id:"movement_speed",base:0.0d}]}
-execute if score stageSeconds Azr_system matches 316 run item replace block -79935 8 149 container.13 with stone_axe[custom_name='{"text":"磐石阔斧","italic":false,"color":"white"}',attribute_modifiers=[{type:"generic.attack_damage",amount:7.0d,operation:"add_value",id:"i_84300_1_1_50",slot:"mainhand"},{type:"generic.attack_speed",amount:-3.05d,operation:"add_value",id:"i_84300_1_1_49",slot:"mainhand"}]]
+execute if score stageSeconds Azr_system matches 316 run item replace block -79935 8 149 container.13 with stone_axe[custom_name='{"text":"磐石阔斧","italic":false,"color":"white"}',attribute_modifiers=[{type:"attack_damage",amount:7.0d,operation:"add_value",id:"i_84300_1_1_50",slot:"mainhand"},{type:"attack_speed",amount:-3.05d,operation:"add_value",id:"i_84300_1_1_49",slot:"mainhand"}]]
 
 execute if score stageSeconds Azr_system matches 316 if score #rng10 Azr_system matches 1..5 positioned -79897 38 108 run function skyblock:azr/m/slime_t1_size1
 execute if score stageSeconds Azr_system matches 316 if score #rng10 Azr_system matches 6..9 positioned -79897 38 108 run function skyblock:azr/m/slime_t1_size2
