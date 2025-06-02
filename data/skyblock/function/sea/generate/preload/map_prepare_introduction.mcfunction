@@ -47,6 +47,9 @@ scoreboard objectives add sea_i_gunpowder dummy
 scoreboard objectives add sea_i_glistering_melon dummy
 scoreboard objectives add sea_i_gold_ingot dummy
 scoreboard objectives add sea_i_prismarine dummy
+scoreboard objectives add sea_t_sprint_length dummy
+scoreboard objectives add sea_t_sprint_armor dummy
+scoreboard objectives add sea_t_sprint_charge dummy
 scoreboard objectives add sea_chapter dummy
 scoreboard objectives add sea_boss1_hp dummy
 scoreboard objectives add sea_cursor dummy

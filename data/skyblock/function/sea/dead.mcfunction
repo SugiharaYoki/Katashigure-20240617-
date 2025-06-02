@@ -131,6 +131,7 @@ scoreboard players operation @s sea_remiel_shadow = @s sea_i_emerald
 #scoreboard players set @s sea_i_trim_ghost 0
 #scoreboard players set @s sea_i_trim_skeleton 0
 
+
 attribute @s gravity base set 0.08
 
 execute if entity @a[scores={SEAPT_member=1}] if entity @a[scores={SEAPT_member=3}] unless entity @a[scores={SEAPT_member=2}] run scoreboard players set @a[scores={SEAPT_member=3}] SEAPT_member 2
@@ -254,6 +255,22 @@ execute as @s[scores={rng2=1..2}] run tag @s remove sea_t_knockback3
 execute store result score @s rng2 run random value 1..6
 execute as @s[scores={rng2=1..1}] run tag @s remove sea_t_knockback4
 tag @s remove sea_t_knockback5
+scoreboard players reset @s sea_t_sprint_length
+scoreboard players reset @s sea_t_sprint_armor
+scoreboard players reset @s sea_t_sprint_charge
+
+execute store result score @s rng2 run random value 1..4
+execute as @s[scores={rng2=1..2}] run tag @s remove sea_t_sprint1
+execute store result score @s rng2 run random value 1..7
+execute as @s[scores={rng2=1..2}] run tag @s remove sea_t_sprint2
+execute store result score @s rng2 run random value 1..11
+execute as @s[scores={rng2=1..2}] run tag @s remove sea_t_sprint3
+execute store result score @s rng2 run random value 1..4
+execute as @s[scores={rng2=1..2}] run tag @s remove sea_t_sprint4
+execute store result score @s rng2 run random value 1..7
+execute as @s[scores={rng2=1..2}] run tag @s remove sea_t_sprint5
+execute store result score @s rng2 run random value 1..11
+execute as @s[scores={rng2=1..2}] run tag @s remove sea_t_sprint6
 
 execute unless entity @a[tag=SEAPT] unless entity @a[x=90074,y=92,z=139,distance=0..50,gamemode=!spectator] run function skyblock:sea/endgame_regen
 

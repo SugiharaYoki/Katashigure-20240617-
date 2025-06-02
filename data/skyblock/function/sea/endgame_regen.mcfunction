@@ -167,6 +167,10 @@ execute as @a at @s run scoreboard players operation @s sea_speedrun_ch5_score -
 execute as @a at @s run scoreboard players operation @s sea_speedrun_ch6_score -= @s sea_speedrun_ch6
 execute as @a at @s run scoreboard players operation @s sea_speedrun_ch7_score -= @s sea_speedrun_ch7
 
+scoreboard objectives remove sea_t_sprint_length
+scoreboard objectives remove sea_t_sprint_armor
+scoreboard objectives remove sea_t_sprint_charge
+
 tag @a remove sea_ch3_badend
 
 bossbar remove sea:ch5_lurkbar

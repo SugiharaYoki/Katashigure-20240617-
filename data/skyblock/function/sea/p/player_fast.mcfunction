@@ -30,7 +30,10 @@ execute as @s[tag=sea_t_sprint1,scores={sea_runs=6..}] run attribute @s movement
 execute as @s[tag=sea_t_sprint1,scores={sea_runs=7..}] run attribute @s knockback_resistance modifier remove sea_running_1b
 execute as @s[tag=sea_t_sprint1,scores={sea_runs=7..}] run attribute @s armor modifier remove sea_running_1c
 execute as @s[tag=sea_t_sprint1,scores={sea_runs=1..10}] run scoreboard players add @s sea_runs 1
-execute as @s[tag=sea_t_sprint1,scores={sea_runs=7..}] unless entity @s[predicate=skyblock:forward,predicate=skyblock:sprint] run scoreboard players set @s sea_runs -20
+execute as @s[tag=sea_t_sprint1,scores={sea_runs=7..,sea_t_sprint_charge=0}] unless entity @s[predicate=skyblock:forward,predicate=skyblock:sprint] run scoreboard players set @s sea_runs -40
+execute as @s[tag=sea_t_sprint1,scores={sea_runs=7..,sea_t_sprint_charge=1}] unless entity @s[predicate=skyblock:forward,predicate=skyblock:sprint] run scoreboard players set @s sea_runs -32
+execute as @s[tag=sea_t_sprint1,scores={sea_runs=7..,sea_t_sprint_charge=2}] unless entity @s[predicate=skyblock:forward,predicate=skyblock:sprint] run scoreboard players set @s sea_runs -24
+execute as @s[tag=sea_t_sprint1,scores={sea_runs=7..,sea_t_sprint_charge=3}] unless entity @s[predicate=skyblock:forward,predicate=skyblock:sprint] run scoreboard players set @s sea_runs -16
 execute as @s[tag=sea_t_sprint1,scores={sea_runs=..-1}] run scoreboard players add @s sea_runs 1
 
 

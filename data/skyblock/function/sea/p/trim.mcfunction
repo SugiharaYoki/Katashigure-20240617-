@@ -89,6 +89,12 @@ execute as @s[tag=sea_t_knockback1] if items entity @s container.* *[custom_data
 execute as @s[tag=sea_t_knockback2] if items entity @s container.* *[custom_data={sea_t_knockback2:true}] run tellraw @s [{"text": "指引重叠：无效之歌","color": "dark_purple"}]
 execute as @s[tag=sea_t_knockback3] if items entity @s container.* *[custom_data={sea_t_knockback3:true}] run tellraw @s [{"text": "指引重叠：无效之歌","color": "dark_purple"}]
 execute as @s[tag=sea_t_knockback4] if items entity @s container.* *[custom_data={sea_t_knockback4:true}] run tellraw @s [{"text": "指引重叠：无效之歌","color": "dark_purple"}]
+execute as @s[tag=sea_t_sprint1] if items entity @s container.* *[custom_data={sea_t_sprint1:true}] run tellraw @s [{"text": "指引重叠：无效之祝","color": "dark_purple"}]
+execute as @s[tag=sea_t_sprint2] if items entity @s container.* *[custom_data={sea_t_sprint2:true}] run tellraw @s [{"text": "指引重叠：无效之祝","color": "dark_purple"}]
+execute as @s[tag=sea_t_sprint3] if items entity @s container.* *[custom_data={sea_t_sprint3:true}] run tellraw @s [{"text": "指引重叠：无效之祝","color": "dark_purple"}]
+execute as @s[tag=sea_t_sprint4] if items entity @s container.* *[custom_data={sea_t_sprint4:true}] run tellraw @s [{"text": "指引重叠：无效之祝","color": "dark_purple"}]
+execute as @s[tag=sea_t_sprint5] if items entity @s container.* *[custom_data={sea_t_sprint5:true}] run tellraw @s [{"text": "指引重叠：无效之祝","color": "dark_purple"}]
+execute as @s[tag=sea_t_sprint6] if items entity @s container.* *[custom_data={sea_t_sprint6:true}] run tellraw @s [{"text": "指引重叠：无效之祝","color": "dark_purple"}]
 
 
 execute as @s[tag=!sea_t_armor1] if items entity @s container.* *[custom_data={sea_t_armor1:true}] run tellraw @s [{"text": "已点亮新的指引：","color": "light_purple"},{"text": "守护 I","color": "light_purple","bold": true}]
@@ -125,6 +131,19 @@ execute as @s[tag=!sea_t_knockback1] if items entity @s container.* *[custom_dat
 execute as @s[tag=!sea_t_knockback2] if items entity @s container.* *[custom_data={sea_t_knockback2:true}] run tellraw @s [{"text": "已点亮新的指引：","color": "light_purple"},{"text": "冲斥 II","color": "light_purple","bold": true}]
 execute as @s[tag=!sea_t_knockback3] if items entity @s container.* *[custom_data={sea_t_knockback3:true}] run tellraw @s [{"text": "已点亮新的指引：","color": "light_purple"},{"text": "冲斥 III","color": "light_purple","bold": true}]
 execute as @s[tag=!sea_t_knockback4] if items entity @s container.* *[custom_data={sea_t_knockback4:true}] run tellraw @s [{"text": "已点亮新的指引：","color": "light_purple"},{"text": "冲斥 IV","color": "light_purple","bold": true}]
+
+execute as @s[tag=!sea_t_sprint1] if items entity @s container.* *[custom_data={sea_t_sprint1:true}] run scoreboard players add @s sea_t_sprint_length 1
+execute as @s[tag=!sea_t_sprint2] if items entity @s container.* *[custom_data={sea_t_sprint2:true}] run scoreboard players add @s sea_t_sprint_length 1
+execute as @s[tag=!sea_t_sprint3] if items entity @s container.* *[custom_data={sea_t_sprint3:true}] run scoreboard players add @s sea_t_sprint_length 1
+execute as @s[tag=!sea_t_sprint4] if items entity @s container.* *[custom_data={sea_t_sprint4:true}] run scoreboard players add @s sea_t_sprint_charge 1
+execute as @s[tag=!sea_t_sprint5] if items entity @s container.* *[custom_data={sea_t_sprint5:true}] run scoreboard players add @s sea_t_sprint_charge 1
+execute as @s[tag=!sea_t_sprint6] if items entity @s container.* *[custom_data={sea_t_sprint6:true}] run scoreboard players add @s sea_t_sprint_charge 1
+execute as @s[tag=!sea_t_sprint1] if items entity @s container.* *[custom_data={sea_t_sprint1:true}] run tellraw @s [{"text": "残影魔板获得了祝福：","color": "light_purple"},{"text": "持续时长","color": "light_purple","bold": true}]
+execute as @s[tag=!sea_t_sprint2] if items entity @s container.* *[custom_data={sea_t_sprint2:true}] run tellraw @s [{"text": "残影魔板获得了祝福：","color": "light_purple"},{"text": "持续时长","color": "light_purple","bold": true}]
+execute as @s[tag=!sea_t_sprint3] if items entity @s container.* *[custom_data={sea_t_sprint3:true}] run tellraw @s [{"text": "残影魔板获得了祝福：","color": "light_purple"},{"text": "持续时长","color": "light_purple","bold": true}]
+execute as @s[tag=!sea_t_sprint4] if items entity @s container.* *[custom_data={sea_t_sprint4:true}] run tellraw @s [{"text": "残影魔板获得了祝福：","color": "light_purple"},{"text": "充能速度","color": "light_purple","bold": true}]
+execute as @s[tag=!sea_t_sprint5] if items entity @s container.* *[custom_data={sea_t_sprint5:true}] run tellraw @s [{"text": "残影魔板获得了祝福：","color": "light_purple"},{"text": "充能速度","color": "light_purple","bold": true}]
+execute as @s[tag=!sea_t_sprint6] if items entity @s container.* *[custom_data={sea_t_sprint6:true}] run tellraw @s [{"text": "残影魔板获得了祝福：","color": "light_purple"},{"text": "充能速度","color": "light_purple","bold": true}]
 
 
 execute as @s[tag=!sea_t_armor1] if items entity @s container.* *[custom_data={sea_t_armor1:true}] run tag @s add sea_t_armor1
