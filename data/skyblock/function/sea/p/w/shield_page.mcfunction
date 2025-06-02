@@ -69,7 +69,7 @@ execute if entity @s[tag=!SEA_w_shield_upg16] run data modify entity @n[tag=SEA_
 tellraw @s [{"text":" ","color":"light_purple"},\
 {"selector":"@n[tag=SEA_w_shield_displaymarker0b]","color":"dark_gray"},\
 {"selector":"@n[tag=SEA_w_shield_displaymarkerE]","color":"dark_gray"},\
-{"selector":"@n[tag=SEA_w_shield_displaymarker11]","color":"gold","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 50311"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：2\n同时按下 左+右+下 移动键，瞬间将盾牌切换至主手\n持有盾牌时则切换为副手中的物品","color":"white"}}},\
+{"selector":"@n[tag=SEA_w_shield_displaymarker11]","color":"gold","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 50311"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：2\n同时按下 左+右+后 移动键，瞬间将盾牌切换至主手\n持有盾牌时则切换为副手中的物品","color":"white"}}},\
 {"selector":"@n[tag=SEA_w_shield_displaymarkerE]","color":"dark_gray"},\
 {"selector":"@n[tag=SEA_w_shield_displaymarkerE]","color":"dark_gray"},\
 {"selector":"@n[tag=SEA_w_shield_displaymarkerE]","color":"dark_gray"},\
