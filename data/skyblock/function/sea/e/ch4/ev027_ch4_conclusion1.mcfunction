@@ -273,7 +273,7 @@ execute if score @s rng6 matches 1269 run give @a[tag=SEAPT,scores={SEAPT_mode=1
 execute if score @s rng6 matches 1269 run scoreboard players set @a[tag=SEAPT,scores={sea_progress=..11}] sea_progress 12
 
 execute if score @s rng6 matches 1269 as @a[tag=SEAPT] at @s run tellraw @s {"text":"『厄珀娅的悲歌』第四章 完","color":"blue","bold": true}
-execute if score @s rng6 matches 1269 as @a[tag=SEAPT] at @s run playsound music_disc.creator_music_box music @a[tag=SEAPT] ~ ~ ~ 1000 0.7
+#execute if score @s rng6 matches 1269 as @a[tag=SEAPT] at @s run playsound music_disc.creator_music_box music @a[tag=SEAPT] ~ ~ ~ 1000 0.7
 execute if score @s rng6 matches 1269 as @a[tag=SEAPT] if score @s sea_speedrun_ch4 > sc sea_speedrun_ch4 run scoreboard players operation @s sea_speedrun_ch4 = sc sea_speedrun_ch4
 execute if score @s rng6 matches 1269 run function skyblock:sea/generate/preload/map_prepare_ch5
 execute if score @s rng6 matches 1269..1279 run kill @s
