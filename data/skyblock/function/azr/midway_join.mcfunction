@@ -26,8 +26,8 @@ execute if entity @s[scores={Azr_wave=10..}] run item replace entity @s inventor
 #23波后
 execute if entity @s[scores={Azr_wave=23..}] run function skyblock:azr/items/bow_normal
 execute if entity @s[scores={Azr_wave=23..}] run item replace entity @s inventory.0 with rotten_flesh 6
-execute if entity @s[scores={Azr_wave=23..}] run item replace entity @s inventory.3 with bone[custom_name='{"text":"硬骨","italic":false}',custom_data={hard_bone:1b},custom_model_data=100001] 3
-execute if entity @s[scores={Azr_wave=23..}] run item replace entity @s inventory.4 with iron_nugget[custom_name='{"text":"盾牌碎片","italic":false,"color":"white"}',custom_data={shield_shard:1b},custom_model_data=100001] 3
+execute if entity @s[scores={Azr_wave=23..}] run item replace entity @s inventory.3 with bone[custom_name='{"text":"硬骨","italic":false}',custom_data={hard_bone:1b},custom_model_data={float:100001.0}] 3
+execute if entity @s[scores={Azr_wave=23..}] run item replace entity @s inventory.4 with iron_nugget[custom_name='{"text":"盾牌碎片","italic":false,"color":"white"}',custom_data={shield_shard:1b},custom_model_data={float:100001.0}] 3
 #36波（第四章）后
 execute if entity @s[scores={Azr_wave=36..}] run clear @s
 execute if entity @s[scores={Azr_wave=36..}] run function skyblock:azr/items/iron_sword_prison
@@ -44,5 +44,5 @@ execute if entity @s[scores={Azr_wave=36..}] run give @s golden_carrot 2
 execute if entity @s[scores={Azr_wave=36..}] run function skyblock:azr/items/revival_star
 execute if entity @s[scores={Azr_wave=36..}] run function skyblock:azr/items/revival_star
 execute if entity @s[scores={Azr_wave=36..}] run item replace entity @s inventory.2 with flint_and_steel[enchantments={fire_aspect:2}]
-execute if entity @s[scores={Azr_wave=36..}] run item replace entity @s inventory.3 with beetroot[custom_name='{"text":"爆裂菜根","italic":false}',lore=['{"text":"投掷 - 轰炸（射程较低）","color":"yellow"}'],enchantments={punch:1},custom_data={blast_root:1b},custom_model_data=100001] 5
+execute if entity @s[scores={Azr_wave=36..}] run item replace entity @s inventory.3 with beetroot[custom_name='{"text":"爆裂菜根","italic":false}',lore=['{"text":"投掷 - 轰炸（射程较低）","color":"yellow"}'],enchantments={punch:1},custom_data={blast_root:1b},custom_model_data={float:100001.0}] 5
 execute if entity @s[scores={Azr_wave=36..}] run item replace entity @s inventory.4 with arrow 38

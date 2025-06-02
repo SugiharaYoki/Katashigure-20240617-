@@ -1,1 +1,1 @@
-give @s flint_and_steel[custom_name='{"text":"一次性打火石","italic":false,"color":"white"}',lore=['{"text":"敲击 - 火焰附加II（近身）","color":"yellow","italic":false}'],enchantments={"minecraft:fire_aspect":2},damage=999,custom_data={instant_spark:1b},custom_model_data=100001]
+give @s flint_and_steel[custom_name='{"text":"一次性打火石","italic":false,"color":"white"}',lore=['{"text":"敲击 - 火焰附加II（近身）","color":"yellow","italic":false}'],enchantments={"minecraft:fire_aspect":2},damage=999,custom_data={instant_spark:1b},custom_model_data={float:100001.0}]

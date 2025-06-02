@@ -117,8 +117,8 @@ execute if score stageSeconds Azr_system matches 97 run advancement grant @a[tag
 execute if score stageSeconds Azr_system matches 97 as @a[tag=azrPlayer] at @s run tag @s add AZS_BoS03
 execute if score stageSeconds Azr_system matches 97 as @a[tag=azrPlayer] at @s run give @s emerald 20
 execute if score stageSeconds Azr_system matches 97 as @a[tag=azrPlayer] at @s run give @s golden_carrot 5
-#execute if score stageSeconds Azr_system matches 97 as @a[tag=azrPlayer] at @s run give @s end_crystal[custom_name='{"text":"蛮之核心","italic":false,"color":"yellow"}',lore=['{"text":"置于背包栏第2格时","color":"gray","italic":false}','{"text":"攻击力+15%","color":"dark_green","italic":false}'],custom_data={core_force:1b},custom_model_data=100001]
-#execute if score stageSeconds Azr_system matches 97 as @a[tag=azrPlayer] at @s run give @s end_crystal[custom_name='{"text":"歌之核心","italic":false,"color":"yellow"}',lore=['{"text":"置于背包栏第3格时","color":"gray","italic":false}','{"text":"血量+10%","color":"dark_green","italic":false}'],custom_data={core_melody:1b},custom_model_data=100002]
+#execute if score stageSeconds Azr_system matches 97 as @a[tag=azrPlayer] at @s run give @s end_crystal[custom_name='{"text":"蛮之核心","italic":false,"color":"yellow"}',lore=['{"text":"置于背包栏第2格时","color":"gray","italic":false}','{"text":"攻击力+15%","color":"dark_green","italic":false}'],custom_data={core_force:1b},custom_model_data={float:100001.0}]
+#execute if score stageSeconds Azr_system matches 97 as @a[tag=azrPlayer] at @s run give @s end_crystal[custom_name='{"text":"歌之核心","italic":false,"color":"yellow"}',lore=['{"text":"置于背包栏第3格时","color":"gray","italic":false}','{"text":"血量+10%","color":"dark_green","italic":false}'],custom_data={core_melody:1b},custom_model_data={float:100002.0}]
 execute if score stageSeconds Azr_system matches 97 run fill -79886 46 148 -79888 43 148 minecraft:air destroy
 execute if score stageSeconds Azr_system matches 97..100 run playsound ambient.soul_sand_valley.additions ambient @a[tag=azrPlayer] -78000 100 0 1000
 execute if score stageSeconds Azr_system matches 97..100 run playsound ambient.soul_sand_valley.loop ambient @a[tag=azrPlayer] -78000 100 0 1000

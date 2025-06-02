@@ -1,1 +1,1 @@
-give @s iron_helmet[custom_name='{"text":"铁盔","italic":false}',custom_data={iron_helmet_normal:1b},custom_model_data=100001]
+give @s iron_helmet[custom_name='{"text":"铁盔","italic":false}',custom_data={iron_helmet_normal:1b},custom_model_data={float:100001.0}]
