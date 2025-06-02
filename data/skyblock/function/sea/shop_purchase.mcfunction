@@ -360,7 +360,7 @@ execute if entity @s[tag=sea_purchase_pass] run scoreboard players remove @s sea
 tag @s remove sea_purchase_pass
 
 
-execute if score @s sea_crafter matches 20024 as @s[tag=sea_t_sprint1,scores={sea_i_trim_human=10..,SEAPT_mode=1..2}] run tag @s add sea_purchase_pass
+execute if score @s sea_crafter matches 20024 as @s[tag=sea_t_sprint,scores={sea_i_trim_human=10..,SEAPT_mode=1..2}] run tag @s add sea_purchase_pass
 execute if score @s sea_crafter matches 20024 as @s[tag=!sea_purchase_pass] run tellraw @s {"text":"天使并未向你降下祝福……","color":"red"}
 execute if entity @s[tag=sea_purchase_pass] run playsound minecraft:item.lodestone_compass.lock neutral @s ~ ~ ~ 100 0.8
 execute if entity @s[tag=sea_purchase_pass] run playsound minecraft:block.enchantment_table.use neutral @s ~ ~ ~ 100 0.9
@@ -371,7 +371,7 @@ execute if entity @s[tag=sea_purchase_pass,scores={rng1=41..45}] run give @s net
 execute if entity @s[tag=sea_purchase_pass,scores={rng1=41..45}] run give @s emerald 30
 execute if entity @s[tag=sea_purchase_pass] run scoreboard players remove @s sea_i_trim_human 10
 tag @s remove sea_purchase_pass
-execute if score @s sea_crafter matches 20025 as @s[tag=sea_t_sprint1,scores={sea_i_trim_vex=2..,SEAPT_mode=1..2}] run tag @s add sea_purchase_pass
+execute if score @s sea_crafter matches 20025 as @s[tag=sea_t_sprint,scores={sea_i_trim_vex=2..,SEAPT_mode=1..2}] run tag @s add sea_purchase_pass
 execute if score @s sea_crafter matches 20025 as @s[tag=!sea_purchase_pass] run tellraw @s {"text":"天使并未向你降下祝福……","color":"red"}
 execute if entity @s[tag=sea_purchase_pass] run playsound minecraft:item.lodestone_compass.lock neutral @s ~ ~ ~ 100 0.8
 execute if entity @s[tag=sea_purchase_pass] run playsound minecraft:block.enchantment_table.use neutral @s ~ ~ ~ 100 0.9

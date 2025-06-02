@@ -1,40 +1,40 @@
 tp @s[x=90100,y=100,z=0,distance=10000..] 90060 103 141 facing 90061 103 141
 
 
-#execute as @s[tag=!sea_t_sprint_disabled,tag=sea_t_sprint1,scores={sea_runs=..0}] run tag @s remove sea_run_stops
-#execute as @s[tag=!sea_t_sprint_disabled,tag=sea_t_sprint1] unless entity @s[scores={sea_runs=-9999..}] run scoreboard players set @s sea_runs 0
-#execute as @s[tag=!sea_t_sprint_disabled,tag=sea_t_sprint1,scores={sea_is_running=0,sea_runs=10..}] run scoreboard players set @s sea_runs 0
-#execute as @s[tag=!sea_t_sprint_disabled,tag=sea_t_sprint1,scores={sea_runs=..0}] run effect give @s luck
-#execute as @s[tag=!sea_t_sprint_disabled,tag=sea_t_sprint1,scores={sea_runs=1..}] run effect clear @s luck
+#execute as @s[tag=!sea_t_sprint_disabled,tag=sea_t_sprint,scores={sea_runs=..0}] run tag @s remove sea_run_stops
+#execute as @s[tag=!sea_t_sprint_disabled,tag=sea_t_sprint] unless entity @s[scores={sea_runs=-9999..}] run scoreboard players set @s sea_runs 0
+#execute as @s[tag=!sea_t_sprint_disabled,tag=sea_t_sprint,scores={sea_is_running=0,sea_runs=10..}] run scoreboard players set @s sea_runs 0
+#execute as @s[tag=!sea_t_sprint_disabled,tag=sea_t_sprint,scores={sea_runs=..0}] run effect give @s luck
+#execute as @s[tag=!sea_t_sprint_disabled,tag=sea_t_sprint,scores={sea_runs=1..}] run effect clear @s luck
 #execute as @s[tag=sea_t_sprint_disabled] run effect clear @s luck
-#execute as @s[tag=!sea_t_sprint_disabled,tag=sea_t_sprint1,scores={sea_is_running=1..,sea_runs=..0}] run scoreboard players set @s sea_runs 1
-#execute as @s[tag=!sea_t_sprint_disabled,tag=sea_t_sprint1,scores={sea_runs=1..10}] run scoreboard players add @s sea_runs 1
+#execute as @s[tag=!sea_t_sprint_disabled,tag=sea_t_sprint,scores={sea_is_running=1..,sea_runs=..0}] run scoreboard players set @s sea_runs 1
+#execute as @s[tag=!sea_t_sprint_disabled,tag=sea_t_sprint,scores={sea_runs=1..10}] run scoreboard players add @s sea_runs 1
 ##execute as @s[scores={sea_runs=50..},tag=!sea_run_stops] run tag @s add sea_run_stops
 ##scoreboard players remove @a[tag=sea_run_stops] sea_runs 1
-#execute as @s[tag=!sea_t_sprint_disabled,tag=sea_t_sprint1,scores={sea_runs=2}] run attribute @s movement_speed modifier add sea_running_1a 0.2 add_value
-#execute as @s[tag=!sea_t_sprint_disabled,tag=sea_t_sprint1,scores={sea_runs=2}] run attribute @s knockback_resistance modifier add sea_running_1b 1 add_value
-#execute as @s[tag=!sea_t_sprint_disabled,tag=sea_t_sprint1,scores={sea_runs=2}] run attribute @s armor modifier add sea_running_1c 50 add_value
-#execute as @s[tag=!sea_t_sprint_disabled,tag=sea_t_sprint1,scores={sea_runs=6..}] run attribute @s movement_speed modifier remove sea_running_1a
-#execute as @s[tag=!sea_t_sprint_disabled,tag=sea_t_sprint1,scores={sea_runs=7..}] run attribute @s knockback_resistance modifier remove sea_running_1b
-#execute as @s[tag=!sea_t_sprint_disabled,tag=sea_t_sprint1,scores={sea_runs=7..}] run attribute @s armor modifier remove sea_running_1c
-#scoreboard players remove @s[tag=!sea_t_sprint_disabled,tag=sea_t_sprint1,scores={sea_is_running=1..}] sea_is_running 1
-#scoreboard players set @s[tag=!sea_t_sprint_disabled,tag=sea_t_sprint1,scores={sea_is_running=30..}] sea_is_running 30
+#execute as @s[tag=!sea_t_sprint_disabled,tag=sea_t_sprint,scores={sea_runs=2}] run attribute @s movement_speed modifier add sea_running_1a 0.2 add_value
+#execute as @s[tag=!sea_t_sprint_disabled,tag=sea_t_sprint,scores={sea_runs=2}] run attribute @s knockback_resistance modifier add sea_running_1b 1 add_value
+#execute as @s[tag=!sea_t_sprint_disabled,tag=sea_t_sprint,scores={sea_runs=2}] run attribute @s armor modifier add sea_running_1c 50 add_value
+#execute as @s[tag=!sea_t_sprint_disabled,tag=sea_t_sprint,scores={sea_runs=6..}] run attribute @s movement_speed modifier remove sea_running_1a
+#execute as @s[tag=!sea_t_sprint_disabled,tag=sea_t_sprint,scores={sea_runs=7..}] run attribute @s knockback_resistance modifier remove sea_running_1b
+#execute as @s[tag=!sea_t_sprint_disabled,tag=sea_t_sprint,scores={sea_runs=7..}] run attribute @s armor modifier remove sea_running_1c
+#scoreboard players remove @s[tag=!sea_t_sprint_disabled,tag=sea_t_sprint,scores={sea_is_running=1..}] sea_is_running 1
+#scoreboard players set @s[tag=!sea_t_sprint_disabled,tag=sea_t_sprint,scores={sea_is_running=30..}] sea_is_running 30
 
-execute as @s[tag=!sea_t_sprint_disabled,tag=sea_t_sprint1,scores={sea_runs=0}] run effect give @s luck
-execute as @s[tag=!sea_t_sprint_disabled,tag=sea_t_sprint1,scores={sea_runs=0},predicate=skyblock:forward,predicate=skyblock:sprint] run scoreboard players set @s sea_runs 1
-execute as @s[tag=sea_t_sprint1,scores={sea_runs=1..}] run effect clear @s luck
-execute as @s[tag=sea_t_sprint1,scores={sea_runs=1}] run attribute @s movement_speed modifier add sea_running_1a 0.2 add_value
-execute as @s[tag=sea_t_sprint1,scores={sea_runs=1}] run attribute @s knockback_resistance modifier add sea_running_1b 1 add_value
-execute as @s[tag=sea_t_sprint1,scores={sea_runs=1}] run attribute @s armor modifier add sea_running_1c 50 add_value
-execute as @s[tag=sea_t_sprint1,scores={sea_runs=6..}] run attribute @s movement_speed modifier remove sea_running_1a
-execute as @s[tag=sea_t_sprint1,scores={sea_runs=7..}] run attribute @s knockback_resistance modifier remove sea_running_1b
-execute as @s[tag=sea_t_sprint1,scores={sea_runs=7..}] run attribute @s armor modifier remove sea_running_1c
-execute as @s[tag=sea_t_sprint1,scores={sea_runs=1..10}] run scoreboard players add @s sea_runs 1
-execute as @s[tag=sea_t_sprint1,scores={sea_runs=7..,sea_t_sprint_charge=0}] unless entity @s[predicate=skyblock:forward,predicate=skyblock:sprint] run scoreboard players set @s sea_runs -40
-execute as @s[tag=sea_t_sprint1,scores={sea_runs=7..,sea_t_sprint_charge=1}] unless entity @s[predicate=skyblock:forward,predicate=skyblock:sprint] run scoreboard players set @s sea_runs -32
-execute as @s[tag=sea_t_sprint1,scores={sea_runs=7..,sea_t_sprint_charge=2}] unless entity @s[predicate=skyblock:forward,predicate=skyblock:sprint] run scoreboard players set @s sea_runs -24
-execute as @s[tag=sea_t_sprint1,scores={sea_runs=7..,sea_t_sprint_charge=3}] unless entity @s[predicate=skyblock:forward,predicate=skyblock:sprint] run scoreboard players set @s sea_runs -16
-execute as @s[tag=sea_t_sprint1,scores={sea_runs=..-1}] run scoreboard players add @s sea_runs 1
+execute as @s[tag=!sea_t_sprint_disabled,tag=sea_t_sprint,scores={sea_runs=0}] run effect give @s luck
+execute as @s[tag=!sea_t_sprint_disabled,tag=sea_t_sprint,scores={sea_runs=0},predicate=skyblock:forward,predicate=skyblock:sprint] run scoreboard players set @s sea_runs 1
+execute as @s[tag=sea_t_sprint,scores={sea_runs=1..}] run effect clear @s luck
+execute as @s[tag=sea_t_sprint,scores={sea_runs=1}] run attribute @s movement_speed modifier add sea_running_1a 0.2 add_value
+execute as @s[tag=sea_t_sprint,scores={sea_runs=1}] run attribute @s knockback_resistance modifier add sea_running_1b 1 add_value
+execute as @s[tag=sea_t_sprint,scores={sea_runs=1}] run attribute @s armor modifier add sea_running_1c 50 add_value
+execute as @s[tag=sea_t_sprint,scores={sea_runs=6..}] run attribute @s movement_speed modifier remove sea_running_1a
+execute as @s[tag=sea_t_sprint,scores={sea_runs=7..}] run attribute @s knockback_resistance modifier remove sea_running_1b
+execute as @s[tag=sea_t_sprint,scores={sea_runs=7..}] run attribute @s armor modifier remove sea_running_1c
+execute as @s[tag=sea_t_sprint,scores={sea_runs=1..10}] run scoreboard players add @s sea_runs 1
+execute as @s[tag=sea_t_sprint,scores={sea_runs=7..,sea_t_sprint_charge=0}] unless entity @s[predicate=skyblock:forward,predicate=skyblock:sprint] run scoreboard players set @s sea_runs -40
+execute as @s[tag=sea_t_sprint,scores={sea_runs=7..,sea_t_sprint_charge=1}] unless entity @s[predicate=skyblock:forward,predicate=skyblock:sprint] run scoreboard players set @s sea_runs -32
+execute as @s[tag=sea_t_sprint,scores={sea_runs=7..,sea_t_sprint_charge=2}] unless entity @s[predicate=skyblock:forward,predicate=skyblock:sprint] run scoreboard players set @s sea_runs -24
+execute as @s[tag=sea_t_sprint,scores={sea_runs=7..,sea_t_sprint_charge=3}] unless entity @s[predicate=skyblock:forward,predicate=skyblock:sprint] run scoreboard players set @s sea_runs -16
+execute as @s[tag=sea_t_sprint,scores={sea_runs=..-1}] run scoreboard players add @s sea_runs 1
 
 
 execute if block 90074 103 137 minecraft:scaffolding as @s[tag=!sea_t_pounce_disabled,tag=sea_t_pounce1,predicate=skyblock:sneaking] run scoreboard players add @s SEA_pounce_charge 1

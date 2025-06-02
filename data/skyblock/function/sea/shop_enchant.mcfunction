@@ -79,18 +79,18 @@ execute if entity @s[tag=!sea_t_knockback3] run data modify entity @n[tag=SEAenc
 execute if entity @s[tag=!sea_t_knockback4] run data modify entity @n[tag=SEAenchant_illum4] CustomName set value '"  "'
 tellraw @s [{"text":" 冲斥之魂 ","color":"light_purple"},{"selector":"@n[tag=SEAenchant_illum1]","color":"dark_purple"},{"selector":"@n[tag=SEAenchant_illum2]","color":"dark_purple"},{"selector":"@n[tag=SEAenchant_illum3]","color":"dark_purple"},{"selector":"@n[tag=SEAenchant_illum4]","color":"dark_red"}]
 
-execute if entity @s[tag=sea_t_sprint1,tag=sea_t_sprint1] run data modify entity @n[tag=SEAenchant_illum1] CustomName set value '" P "'
-execute if entity @s[tag=sea_t_sprint1,tag=sea_t_sprint2] run data modify entity @n[tag=SEAenchant_illum2] CustomName set value '" P "'
-execute if entity @s[tag=sea_t_sprint1,tag=sea_t_sprint3] run data modify entity @n[tag=SEAenchant_illum3] CustomName set value '" P "'
-execute if entity @s[tag=sea_t_sprint1,tag=sea_t_sprint4] run data modify entity @n[tag=SEAenchant_illum4] CustomName set value '" C "'
-execute if entity @s[tag=sea_t_sprint1,tag=sea_t_sprint5] run data modify entity @n[tag=SEAenchant_illum5] CustomName set value '" C "'
-execute if entity @s[tag=sea_t_sprint1,tag=sea_t_sprint6] run data modify entity @n[tag=SEAenchant_illum6] CustomName set value '" C "'
-execute if entity @s[tag=sea_t_sprint1,tag=!sea_t_sprint1] run data modify entity @n[tag=SEAenchant_illum1] CustomName set value '" x "'
-execute if entity @s[tag=sea_t_sprint1,tag=!sea_t_sprint2] run data modify entity @n[tag=SEAenchant_illum2] CustomName set value '" x "'
-execute if entity @s[tag=sea_t_sprint1,tag=!sea_t_sprint3] run data modify entity @n[tag=SEAenchant_illum3] CustomName set value '" x "'
-execute if entity @s[tag=sea_t_sprint1,tag=!sea_t_sprint4] run data modify entity @n[tag=SEAenchant_illum4] CustomName set value '" x "'
-execute if entity @s[tag=sea_t_sprint1,tag=!sea_t_sprint5] run data modify entity @n[tag=SEAenchant_illum5] CustomName set value '" x "'
-execute if entity @s[tag=sea_t_sprint1,tag=!sea_t_sprint6] run data modify entity @n[tag=SEAenchant_illum6] CustomName set value '" x "'
+execute if entity @s[tag=sea_t_sprint,tag=sea_t_sprint1] run data modify entity @n[tag=SEAenchant_illum1] CustomName set value '" P "'
+execute if entity @s[tag=sea_t_sprint,tag=sea_t_sprint2] run data modify entity @n[tag=SEAenchant_illum2] CustomName set value '" P "'
+execute if entity @s[tag=sea_t_sprint,tag=sea_t_sprint3] run data modify entity @n[tag=SEAenchant_illum3] CustomName set value '" P "'
+execute if entity @s[tag=sea_t_sprint,tag=sea_t_sprint4] run data modify entity @n[tag=SEAenchant_illum4] CustomName set value '" C "'
+execute if entity @s[tag=sea_t_sprint,tag=sea_t_sprint5] run data modify entity @n[tag=SEAenchant_illum5] CustomName set value '" C "'
+execute if entity @s[tag=sea_t_sprint,tag=sea_t_sprint6] run data modify entity @n[tag=SEAenchant_illum6] CustomName set value '" C "'
+execute if entity @s[tag=sea_t_sprint,tag=!sea_t_sprint1] run data modify entity @n[tag=SEAenchant_illum1] CustomName set value '" x "'
+execute if entity @s[tag=sea_t_sprint,tag=!sea_t_sprint2] run data modify entity @n[tag=SEAenchant_illum2] CustomName set value '" x "'
+execute if entity @s[tag=sea_t_sprint,tag=!sea_t_sprint3] run data modify entity @n[tag=SEAenchant_illum3] CustomName set value '" x "'
+execute if entity @s[tag=sea_t_sprint,tag=!sea_t_sprint4] run data modify entity @n[tag=SEAenchant_illum4] CustomName set value '" x "'
+execute if entity @s[tag=sea_t_sprint,tag=!sea_t_sprint5] run data modify entity @n[tag=SEAenchant_illum5] CustomName set value '" x "'
+execute if entity @s[tag=sea_t_sprint,tag=!sea_t_sprint6] run data modify entity @n[tag=SEAenchant_illum6] CustomName set value '" x "'
 tellraw @s [{"text":" 残影之祝 ","color":"light_purple"},{"selector":"@n[tag=SEAenchant_illum1]","color":"dark_purple"},{"selector":"@n[tag=SEAenchant_illum2]","color":"dark_purple"},{"selector":"@n[tag=SEAenchant_illum3]","color":"dark_red"},{"selector":"@n[tag=SEAenchant_illum4]","color":"dark_purple"},{"selector":"@n[tag=SEAenchant_illum5]","color":"dark_purple"},{"selector":"@n[tag=SEAenchant_illum6]","color":"dark_red"}]
 
 kill @e[tag=SEAenchant_illum,type=marker]
@@ -111,6 +111,6 @@ execute if entity @s[nbt={Inventory:[{id:"minecraft:gold_ingot"}]},tag=SEAPT,sco
 execute if entity @s[nbt={Inventory:[{id:"minecraft:gold_ingot"}]},tag=SEAPT,scores={sea_progress=4..6}] run tellraw @s [{"text":" "},{"text":"音符篡改  ","color":"white"},{"score":{"name":"@s","objective":"sea_i_gold_ingot"},"color":"light_purple"},{"text":"/1 金锭 ","color":"light_purple"},{"text":"〈牧羊人〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 20007"}},{"text":"〈狂荒〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 20008"}},{"text":"〈醒殉徒〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 20009"}},{"text":"〈辽哨〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 20010"}}]
 execute if entity @s[nbt={Inventory:[{id:"minecraft:gold_ingot"}]},tag=SEAPT,scores={sea_progress=7..}] run tellraw @s [{"text":" "},{"text":"音符篡改  ","color":"white"},{"score":{"name":"@s","objective":"sea_i_gold_ingot"},"color":"light_purple"},{"text":"/1 金锭 ","color":"light_purple"},{"text":"〈牧羊人〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 20007"}},{"text":"〈狂荒〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 20008"}},{"text":"〈醒殉徒〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 20009"}},{"text":"〈辽哨〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 20010"}},{"text":"〈金砂〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 20011"}}]
 
-execute if entity @s[tag=sea_t_sprint1,tag=SEAPT] run tellraw @s [{"text":" MAGIC "},{"text":"残影的祝祭：","color":"white"},{"score":{"name":"@s","objective":"sea_i_trim_human"},"color":"light_purple"},{"text":"/10 醒殉徒 ","color":"light_purple"},{"text":"〈持续〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 20024"}},{"score":{"name":"@s","objective":"sea_i_trim_vex"},"color":"light_purple"},{"text":"/2 恶鬼 ","color":"light_purple"},{"text":"〈充能〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 20025"}}]
+execute if entity @s[tag=sea_t_sprint,tag=SEAPT] run tellraw @s [{"text":" MAGIC "},{"text":"残影的祝祭：","color":"white"},{"score":{"name":"@s","objective":"sea_i_trim_human"},"color":"light_purple"},{"text":"/10 醒殉徒 ","color":"light_purple"},{"text":"〈持续〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 20024"}},{"score":{"name":"@s","objective":"sea_i_trim_vex"},"color":"light_purple"},{"text":"/2 恶鬼 ","color":"light_purple"},{"text":"〈充能〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 20025"}}]
 
 scoreboard players set @s sea_crafter 0

@@ -152,7 +152,7 @@ tag @s add sea_dead
 scoreboard players reset @s sea_dead_check
 gamemode creative @s[tag=ServerManager]
 #tag @s remove sea_t_spectral1
-#tag @s remove sea_t_sprint1
+#tag @s remove sea_t_sprint
 scoreboard players set @s sea_is_running 0
 scoreboard players set @s sea_setting_box_index 1
 
