@@ -2,6 +2,8 @@
 
 scoreboard players add SEA_ch6_event rng1 1
 
+execute unless entity @a[tag=SEAPT,tag=!SEAPF,x=90064,y=134,z=93,dx=60,dy=60,dz=60] if score SEA_ch6_event rng1 matches 250..260 run scoreboard players set SEA_ch6_event rng1 257
+
 execute if score SEA_ch6_event rng1 matches 282 positioned 90090 162 110 run particle explosion_emitter ~ ~ ~ 3 3 3 0 5 force
 execute if score SEA_ch6_event rng1 matches 282 positioned 90090 162 110 run particle flame ~ ~-1 ~ 3 3 3 0.18 80 force
 execute if score SEA_ch6_event rng1 matches 282 positioned 90090 162 110 run playsound entity.generic.explode block @a ~ ~ ~ 100 0.6

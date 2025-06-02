@@ -11,5 +11,5 @@ execute if score SEA_ch6_event rng2 matches 60..70 positioned 90140 146 148 run 
 execute if score SEA_ch6_event rng2 matches 60..70 positioned 90140 146 148 run particle sculk_soul ~ ~1 ~ 0.3 0.5 0.3 0.05 10
 execute if score SEA_ch6_event rng2 matches 71 positioned 90140 146 148 run function skyblock:sea/m/husk
 
-
+execute if score SEA_ch6_event rng2 matches 1..3 run item replace block 90148 145 152 container.0 with green_wool
 
