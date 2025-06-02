@@ -59,7 +59,7 @@ scoreboard objectives add sea_shielding minecraft.custom:minecraft.damage_blocke
 scoreboard objectives add sea_shielding_2 minecraft.custom:minecraft.damage_resisted
 scoreboard objectives add sea_shielding_3 dummy
 scoreboard objectives add sea_shield_switch dummy
-scoreboard objectives remove sea_axeparry_jump minecraft.custom:jump
+scoreboard objectives remove sea_axeparry_jump
 scoreboard objectives add sea_glowberries minecraft.used:minecraft.glow_berries
 scoreboard objectives add sea_ripper dummy
 scoreboard objectives add SEA_story dummy
