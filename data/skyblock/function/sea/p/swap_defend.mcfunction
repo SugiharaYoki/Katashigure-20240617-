@@ -6,7 +6,7 @@ execute if entity @s[tag=swapdefend_case_1] run item replace entity @s weapon.ma
 execute if entity @s[tag=swapdefend_case_1] run playsound minecraft:item.shield.block player @a ~ ~ ~ 1 1.5
 execute if entity @s[tag=swapdefend_case_1] run playsound minecraft:entity.zombie.attack_iron_door player @a ~ ~ ~1 0.8
 
-execute if items entity @s weapon.mainhand shield unless items entity @s weapon.mainhand * run tag @s add swapdefend_case_2
+execute if items entity @s weapon.mainhand shield unless items entity @s weapon.offhand * run tag @s add swapdefend_case_2
 
 execute if entity @s[tag=swapdefend_case_2] run item replace entity @s weapon.mainhand from entity @s weapon.offhand
 execute if entity @s[tag=swapdefend_case_2] run item replace entity @s weapon.offhand with air
