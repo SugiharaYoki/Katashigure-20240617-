@@ -1,7 +1,7 @@
 execute if items entity @s container.* #minecraft:garden2_clear run function skyblock:sea/p/player_clear
 execute unless entity @s[x=89829,y=12,z=-165,dx=30,dy=20,dz=30] run clear @s[gamemode=!creative] string
 execute if items entity @s container.* blaze_powder at @s run function skyblock:sea/p/bomb
-clear @s[tag=SEAPT,scores={SEAPT_mode=3}] nether_star
+execute if entity @s[tag=SEAPT,scores={SEAPT_mode=3}] run clear @s nether_star
 
 
 tag @s remove PVP_see

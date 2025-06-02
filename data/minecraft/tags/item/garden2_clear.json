@@ -30,7 +30,7 @@
     "minecraft:warped_button",
     "minecraft:stone_button",
     "minecraft:acacia_fence",
-    "minecraft:#minecraft:anvil",
+    "#minecraft:anvil",
     "minecraft:glow_item_frame",
     "minecraft:painting",
     "minecraft:stone_bricks",
