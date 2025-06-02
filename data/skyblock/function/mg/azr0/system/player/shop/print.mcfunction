@@ -193,7 +193,7 @@ execute if score @s rng1 matches 1.. run item replace entity @s[scores={Azr0_UPG
 execute if score @s rng1 matches 1.. run item replace entity @s[scores={Azr0_UPG_star=5}] inventory.16 with torchflower[custom_data={"azr0shop":true},custom_name='{"text":"购买命星×1","italic":false,"color":"green"}',lore=['{"text":"命星可以用于复活 死亡时自动消耗1颗命星","color":"white","italic":true}','{"text":"消耗：1000绿宝石","color":"red","italic":true}']]
 execute if score @s rng1 matches 1.. run item replace entity @s[scores={Azr0_UPG_star=6}] inventory.16 with end_crystal[custom_data={"azr0shop":true},custom_name='{"text":"已购买全部命星！","italic":false,"color":"gold"}']
 
-execute unless items entity @s player.crafting.1 *[!custom_data~{PsychicVitae:1b}] if entity @s[tag=hasSkills] run item replace entity @s player.crafting.1 with minecraft:enchanted_book[custom_name='{"bold":true,"italic":false,"color":"gold","text":"灵能手册"}',lore=['{"italic":false,"text":"在物品栏选定以展开索命连击升级页面"}'],custom_data={PsychicVitae:1b},custom_model_data=100001]
+execute unless items entity @s player.crafting.1 *[!custom_data~{PsychicVitae:1b}] if entity @s[tag=hasSkills] run item replace entity @s player.crafting.1 with minecraft:enchanted_book[custom_name='{"bold":true,"italic":false,"color":"gold","text":"灵能手册"}',lore=['{"italic":false,"text":"在物品栏选定以展开索命连击升级页面"}'],custom_data={PsychicVitae:1b}]
 
 
 item replace entity @s[scores={Azr0_UPG_armor=0,Azr0_UPG_hp=..2}] inventory.25 with barrier
