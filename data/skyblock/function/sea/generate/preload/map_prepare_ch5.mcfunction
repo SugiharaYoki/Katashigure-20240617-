@@ -590,9 +590,16 @@ setblock 90144 115 24 chest[facing=north]
 item replace block 90144 115 24 container.12 with coal 2
 item replace block 90144 115 24 container.14 with vex_armor_trim_smithing_template 1
 
+setblock 90104 140 29 chest[facing=west]
+item replace block 90104 140 29 container.14 with vex_armor_trim_smithing_template 1
+
 setblock 90106 137 31 minecraft:barrel[facing=east]
 item replace block 90106 137 31 container.13 with music_disc_stal 1
 setblock 90150 144 57 minecraft:jukebox
 
+setblock 90132 129 28 chest[facing=north]{lock:{components:{custom_name:'"停机坪仓库的钥匙"'}}}
+item replace block 90132 129 28 container.11 with arrow 8
+item replace block 90132 129 28 container.13 with disc_fragment_5 3
+item replace block 90132 129 28 container.15 with arrow 8
 
 setblock 90154 153 267 minecraft:waxed_copper_bulb[lit=false]
