@@ -5,8 +5,10 @@ execute if block 90062 103 135 grindstone unless block 90075 103 141 minecraft:c
 
 scoreboard players add seact rng1 1
 execute if score seact rng1 matches 5 run function skyblock:sea/core4
-execute if score seact rng1 matches 3 as @a[tag=SEAPT] at @s run function skyblock:sea/p/player_skills
-execute if score seact rng1 matches 4 as @a[tag=SEAPT] at @s run function skyblock:sea/p/player
+execute if score seact rng1 matches 1 as @a[tag=SEAPT,tag=!SEAPT_EVEN] at @s run function skyblock:sea/p/player_skills
+execute if score seact rng1 matches 2 as @a[tag=SEAPT,tag=!SEAPT_EVEN] at @s run function skyblock:sea/p/player
+execute if score seact rng1 matches 3 as @a[tag=SEAPT,tag=SEAPT_EVEN] at @s run function skyblock:sea/p/player_skills
+execute if score seact rng1 matches 4 as @a[tag=SEAPT,tag=SEAPT_EVEN] at @s run function skyblock:sea/p/player
 execute if score seact rng1 matches 5 run scoreboard players set seact rng1 0
 
 

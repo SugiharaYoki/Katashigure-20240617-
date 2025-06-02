@@ -130,7 +130,7 @@ scoreboard players operation @s sea_remiel_shadow = @s sea_i_emerald
 #scoreboard players set @s sea_i_trim_sea 0 
 #scoreboard players set @s sea_i_trim_ghost 0
 #scoreboard players set @s sea_i_trim_skeleton 0
-
+tag @s remove SEAPT_EVEN
 
 attribute @s gravity base set 0.08
 
