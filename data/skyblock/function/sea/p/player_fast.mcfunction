@@ -11,12 +11,12 @@ execute as @s[tag=!sea_t_sprint_disabled,tag=sea_t_sprint1,scores={sea_is_runnin
 execute as @s[tag=!sea_t_sprint_disabled,tag=sea_t_sprint1,scores={sea_runs=1..10}] run scoreboard players add @s sea_runs 1
 #execute as @s[scores={sea_runs=50..},tag=!sea_run_stops] run tag @s add sea_run_stops
 #scoreboard players remove @a[tag=sea_run_stops] sea_runs 1
-execute as @s[tag=!sea_t_sprint_disabled,tag=sea_t_sprint1,scores={sea_runs=2}] run attribute @s generic.movement_speed modifier add sea_running_1a 0.2 add_value
-execute as @s[tag=!sea_t_sprint_disabled,tag=sea_t_sprint1,scores={sea_runs=2}] run attribute @s generic.knockback_resistance modifier add sea_running_1b 1 add_value
-execute as @s[tag=!sea_t_sprint_disabled,tag=sea_t_sprint1,scores={sea_runs=2}] run attribute @s generic.armor modifier add sea_running_1c 50 add_value
-execute as @s[tag=!sea_t_sprint_disabled,tag=sea_t_sprint1,scores={sea_runs=6..}] run attribute @s generic.movement_speed modifier remove sea_running_1a
-execute as @s[tag=!sea_t_sprint_disabled,tag=sea_t_sprint1,scores={sea_runs=7..}] run attribute @s generic.knockback_resistance modifier remove sea_running_1b
-execute as @s[tag=!sea_t_sprint_disabled,tag=sea_t_sprint1,scores={sea_runs=7..}] run attribute @s generic.armor modifier remove sea_running_1c
+execute as @s[tag=!sea_t_sprint_disabled,tag=sea_t_sprint1,scores={sea_runs=2}] run attribute @s movement_speed modifier add sea_running_1a 0.2 add_value
+execute as @s[tag=!sea_t_sprint_disabled,tag=sea_t_sprint1,scores={sea_runs=2}] run attribute @s knockback_resistance modifier add sea_running_1b 1 add_value
+execute as @s[tag=!sea_t_sprint_disabled,tag=sea_t_sprint1,scores={sea_runs=2}] run attribute @s armor modifier add sea_running_1c 50 add_value
+execute as @s[tag=!sea_t_sprint_disabled,tag=sea_t_sprint1,scores={sea_runs=6..}] run attribute @s movement_speed modifier remove sea_running_1a
+execute as @s[tag=!sea_t_sprint_disabled,tag=sea_t_sprint1,scores={sea_runs=7..}] run attribute @s knockback_resistance modifier remove sea_running_1b
+execute as @s[tag=!sea_t_sprint_disabled,tag=sea_t_sprint1,scores={sea_runs=7..}] run attribute @s armor modifier remove sea_running_1c
 scoreboard players remove @s[tag=!sea_t_sprint_disabled,tag=sea_t_sprint1,scores={sea_is_running=1..}] sea_is_running 1
 scoreboard players set @s[tag=!sea_t_sprint_disabled,tag=sea_t_sprint1,scores={sea_is_running=30..}] sea_is_running 30
 

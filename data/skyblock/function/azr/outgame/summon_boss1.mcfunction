@@ -1,1 +1,1 @@
-summon illusioner ~ ~ ~ {PersistenceRequired:1b,Tags:["AzrielMob_outgame","AzrielBossA_outgame"],DeathLootTable:"skyblock:azriel_shadow_tier1",attributes:[{id:"generic.max_health",base:250.0},{id:"generic.knockback_resistance",base:0.9},{id:"armor",base:8.5}],Health:250.0f,CustomName:'"权之残影"'}
+summon illusioner ~ ~ ~ {PersistenceRequired:1b,Tags:["AzrielMob_outgame","AzrielBossA_outgame"],DeathLootTable:"skyblock:azriel_shadow_tier1",attributes:[{id:"max_health",base:250.0},{id:"knockback_resistance",base:0.9},{id:"armor",base:8.5}],Health:250.0f,CustomName:'"权之残影"'}

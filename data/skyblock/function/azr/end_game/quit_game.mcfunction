@@ -15,10 +15,10 @@ scoreboard players set @s AZR_chainKill_damage 0
 scoreboard players set @s AZR_chainKill_chargeup 0
 scoreboard players set @s AZR_chainKill_damageblocked 0
 scoreboard players set @s AZR_chainKill_damagetaken 0
-attribute @s minecraft:player.entity_interaction_range modifier remove azr_chainkill_01
-attribute @s minecraft:generic.attack_damage modifier remove azr_chainkill_02
-attribute @s minecraft:generic.armor modifier remove azr_chainkill_03
-attribute @s minecraft:generic.attack_speed modifier remove azr_chainkill_04
+attribute @s minecraft:entity_interaction_range modifier remove azr_chainkill_01
+attribute @s minecraft:attack_damage modifier remove azr_chainkill_02
+attribute @s minecraft:armor modifier remove azr_chainkill_03
+attribute @s minecraft:attack_speed modifier remove azr_chainkill_04
 function skyblock:azr/update_bossbar
 #输出
 tellraw @a[tag=azrPlayer,distance=..10000] [{"selector":"@s","color":"blue"},{"text":" 阵亡了！","color":"dark_red"}]

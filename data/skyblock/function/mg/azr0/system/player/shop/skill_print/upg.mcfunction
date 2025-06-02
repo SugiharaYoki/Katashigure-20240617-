@@ -11,13 +11,13 @@ execute if items entity @s player.cursor ender_eye if entity @s[tag=AZR0SHOP_SUC
 execute if items entity @s player.cursor ender_eye if entity @s[tag=AZR0SHOP_SUCCESS] run function skyblock:mg/azr0/system/player/skill/refresh_skill
 
 execute if items entity @s player.cursor phantom_spawn_egg run scoreboard players add @s Azr0_SKILL_1 1
-execute if items entity @s player.cursor phantom_spawn_egg if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_SKILL_1=1}] run attribute @s player.entity_interaction_range modifier add mg_azr0:skill_attack_range1 0.3 add_value
-execute if items entity @s player.cursor phantom_spawn_egg if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_SKILL_1=2}] run attribute @s player.entity_interaction_range modifier add mg_azr0:skill_attack_range2 0.3 add_value
-execute if items entity @s player.cursor phantom_spawn_egg if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_SKILL_1=3}] run attribute @s player.entity_interaction_range modifier add mg_azr0:skill_attack_range3 0.3 add_value
+execute if items entity @s player.cursor phantom_spawn_egg if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_SKILL_1=1}] run attribute @s entity_interaction_range modifier add mg_azr0:skill_attack_range1 0.3 add_value
+execute if items entity @s player.cursor phantom_spawn_egg if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_SKILL_1=2}] run attribute @s entity_interaction_range modifier add mg_azr0:skill_attack_range2 0.3 add_value
+execute if items entity @s player.cursor phantom_spawn_egg if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_SKILL_1=3}] run attribute @s entity_interaction_range modifier add mg_azr0:skill_attack_range3 0.3 add_value
 execute if items entity @s player.cursor axolotl_spawn_egg run scoreboard players add @s Azr0_SKILL_2 1
-execute if items entity @s player.cursor axolotl_spawn_egg if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_SKILL_2=1}] run attribute @s generic.max_health modifier add mg_azr0:skill_max_health1 2 add_value
-execute if items entity @s player.cursor axolotl_spawn_egg if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_SKILL_2=2}] run attribute @s generic.max_health modifier add mg_azr0:skill_max_health2 2 add_value
-execute if items entity @s player.cursor axolotl_spawn_egg if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_SKILL_2=3}] run attribute @s generic.max_health modifier add mg_azr0:skill_max_health3 2 add_value
+execute if items entity @s player.cursor axolotl_spawn_egg if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_SKILL_2=1}] run attribute @s max_health modifier add mg_azr0:skill_max_health1 2 add_value
+execute if items entity @s player.cursor axolotl_spawn_egg if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_SKILL_2=2}] run attribute @s max_health modifier add mg_azr0:skill_max_health2 2 add_value
+execute if items entity @s player.cursor axolotl_spawn_egg if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_SKILL_2=3}] run attribute @s max_health modifier add mg_azr0:skill_max_health3 2 add_value
 execute if items entity @s player.cursor bogged_spawn_egg run scoreboard players add @s Azr0_SKILL_3 1
 execute if items entity @s player.cursor iron_golem_spawn_egg run scoreboard players add @s Azr0_SKILL_4 1
 execute if items entity @s player.cursor guardian_spawn_egg run scoreboard players add @s Azr0_SKILL_5 1
@@ -36,15 +36,15 @@ execute if items entity @s player.cursor drowned_spawn_egg run scoreboard player
 execute if items entity @s player.cursor strider_spawn_egg run scoreboard players add @s Azr0_SKILL_15 1
 execute if items entity @s player.cursor strider_spawn_egg run scoreboard players set @s Azr0_SkillEquip_2 4
 execute if items entity @s player.cursor rabbit_spawn_egg run scoreboard players add @s Azr0_SKILL_16 1
-execute if items entity @s player.cursor rabbit_spawn_egg if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_SKILL_16=1}] run attribute @s generic.movement_speed modifier add mg_azr0:skill_movement_speed1 0.01 add_value
-execute if items entity @s player.cursor rabbit_spawn_egg if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_SKILL_16=2}] run attribute @s generic.movement_speed modifier add mg_azr0:skill_movement_speed2 0.02 add_value
-execute if items entity @s player.cursor rabbit_spawn_egg if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_SKILL_16=3}] run attribute @s generic.movement_speed modifier add mg_azr0:skill_movement_speed3 0.02 add_value
+execute if items entity @s player.cursor rabbit_spawn_egg if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_SKILL_16=1}] run attribute @s movement_speed modifier add mg_azr0:skill_movement_speed1 0.01 add_value
+execute if items entity @s player.cursor rabbit_spawn_egg if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_SKILL_16=2}] run attribute @s movement_speed modifier add mg_azr0:skill_movement_speed2 0.02 add_value
+execute if items entity @s player.cursor rabbit_spawn_egg if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_SKILL_16=3}] run attribute @s movement_speed modifier add mg_azr0:skill_movement_speed3 0.02 add_value
 execute if items entity @s player.cursor cow_spawn_egg run scoreboard players add @s Azr0_SKILL_17 1
-execute if items entity @s player.cursor cow_spawn_egg if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_SKILL_17=1}] run attribute @s generic.knockback_resistance modifier add mg_azr0:skill_knockback_resistance1 0.3 add_value
-execute if items entity @s player.cursor cow_spawn_egg if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_SKILL_17=2}] run attribute @s generic.knockback_resistance modifier add mg_azr0:skill_knockback_resistance2 0.3 add_value
-execute if items entity @s player.cursor cow_spawn_egg if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_SKILL_17=3}] run attribute @s generic.knockback_resistance modifier add mg_azr0:skill_knockback_resistance3 0.4 add_value
-execute if items entity @s player.cursor cow_spawn_egg if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_SKILL_17=2}] run attribute @s generic.armor_toughness modifier add mg_azr0:skill_armor_toughness1 1 add_value
-execute if items entity @s player.cursor cow_spawn_egg if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_SKILL_17=3}] run attribute @s generic.armor_toughness modifier add mg_azr0:skill_armor_toughness2 1 add_value
+execute if items entity @s player.cursor cow_spawn_egg if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_SKILL_17=1}] run attribute @s knockback_resistance modifier add mg_azr0:skill_knockback_resistance1 0.3 add_value
+execute if items entity @s player.cursor cow_spawn_egg if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_SKILL_17=2}] run attribute @s knockback_resistance modifier add mg_azr0:skill_knockback_resistance2 0.3 add_value
+execute if items entity @s player.cursor cow_spawn_egg if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_SKILL_17=3}] run attribute @s knockback_resistance modifier add mg_azr0:skill_knockback_resistance3 0.4 add_value
+execute if items entity @s player.cursor cow_spawn_egg if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_SKILL_17=2}] run attribute @s armor_toughness modifier add mg_azr0:skill_armor_toughness1 1 add_value
+execute if items entity @s player.cursor cow_spawn_egg if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_SKILL_17=3}] run attribute @s armor_toughness modifier add mg_azr0:skill_armor_toughness2 1 add_value
 execute if items entity @s player.cursor ravager_spawn_egg run scoreboard players add @s Azr0_SKILL_18 1
 execute if items entity @s player.cursor ravager_spawn_egg run scoreboard players set @s Azr0_SkillEquip_1 5
 execute if items entity @s player.cursor shulker_spawn_egg run scoreboard players add @s Azr0_SKILL_19 1

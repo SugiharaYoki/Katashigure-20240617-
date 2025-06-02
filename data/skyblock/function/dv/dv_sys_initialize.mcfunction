@@ -6,7 +6,7 @@ scoreboard players operation @a[tag=SeGa_DVA] SeGa_DVStageBH > @n[tag=sc] SeGa_D
 setblock -25 143 -58 minecraft:air
 execute as @e[x=-90000,y=50,z=0,distance=..1000,type=!player] at @s run tp ~ ~-400 ~
 kill @e[x=-90000,y=50,z=0,distance=..1000,type=!player]
-summon villager -90001 105 56 {VillagerData:{profession:"cleric",level:99,type:savanna},Invulnerable:1b,PersistenceRequired:1b,Silent:0b,NoAI:1b,Rotation:[180f,0f],CustomName:"\"云亭攻防战 · 接待员\"",attributes:[{id:"generic.max_health",base:400.0},{id:"generic.armor",base:40.0},{id:"armor_toughness",base:40.0}],Health:400.0f}
+summon villager -90001 105 56 {VillagerData:{profession:"cleric",level:99,type:savanna},Invulnerable:1b,PersistenceRequired:1b,Silent:0b,NoAI:1b,Rotation:[180f,0f],CustomName:"\"云亭攻防战 · 接待员\"",attributes:[{id:"max_health",base:400.0},{id:"armor",base:40.0},{id:"armor_toughness",base:40.0}],Health:400.0f}
 #clone -90002 99 1 -90000 99 24 -90002 101 1
 #fill -90002 101 25 -90002 101 25 grass_block
 fill -90001 102 109 -90001 102 86 grass_block

@@ -1,3 +1,3 @@
-summon vindicator ~ ~ ~ {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_vindicator_tier1",attributes:[{id:"generic.max_health",base:10.0},{id:"generic.attack_damage",base:0.0},{id:"movement_speed",base:0.14}],Health:10.0f,CustomName:'"第一关口巡逻兵"',CanPickUpLoot:0b,HandItems:[{count:1,id:"stone_sword",components:{"custom_name":'{"text":"石剑","italic":false}'}},{}],HandDropChances:[0.003f, 0.003f]}
+summon vindicator ~ ~ ~ {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_vindicator_tier1",attributes:[{id:"max_health",base:10.0},{id:"attack_damage",base:0.0},{id:"movement_speed",base:0.14}],Health:10.0f,CustomName:'"第一关口巡逻兵"',CanPickUpLoot:0b,HandItems:[{count:1,id:"stone_sword",components:{"custom_name":'{"text":"石剑","italic":false}'}},{}],HandDropChances:[0.003f, 0.003f]}
 particle minecraft:reverse_portal ~ ~0.8 ~ 0.3 0.7 0.3 0.1 18
 playsound entity.enderman.teleport hostile @a ~ ~ ~ 0.8 1.2

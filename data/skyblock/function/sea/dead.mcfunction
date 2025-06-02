@@ -130,7 +130,7 @@ scoreboard players operation @s sea_remiel_shadow = @s sea_i_emerald
 #scoreboard players set @s sea_i_trim_ghost 0
 #scoreboard players set @s sea_i_trim_skeleton 0
 
-attribute @s generic.gravity base set 0.08
+attribute @s gravity base set 0.08
 
 execute if entity @a[scores={SEAPT_member=1}] if entity @a[scores={SEAPT_member=3}] unless entity @a[scores={SEAPT_member=2}] run scoreboard players set @a[scores={SEAPT_member=3}] SEAPT_member 2
 execute if entity @a[scores={SEAPT_member=2}] if entity @a[scores={SEAPT_member=4}] unless entity @a[scores={SEAPT_member=3}] run scoreboard players set @a[scores={SEAPT_member=4}] SEAPT_member 3
@@ -154,48 +154,48 @@ gamemode creative @s[tag=ServerManager]
 scoreboard players set @s sea_is_running 0
 scoreboard players set @s sea_setting_box_index 1
 
-attribute @s minecraft:generic.armor modifier remove sea_t_armor1
-attribute @s minecraft:generic.armor modifier remove sea_t_armor2
-attribute @s minecraft:generic.armor modifier remove sea_t_armor3
-attribute @s minecraft:generic.armor modifier remove sea_t_armor4
-attribute @s minecraft:generic.armor modifier remove sea_t_armor5
-attribute @s minecraft:generic.armor_toughness modifier remove sea_t_tough1
-attribute @s minecraft:generic.armor_toughness modifier remove sea_t_tough2
-attribute @s minecraft:generic.armor_toughness modifier remove sea_t_tough3
-attribute @s minecraft:generic.armor_toughness modifier remove sea_t_tough4
-attribute @s minecraft:generic.armor_toughness modifier remove sea_t_tough5
-attribute @s minecraft:generic.attack_damage modifier remove sea_t_damage1
-attribute @s minecraft:generic.attack_damage modifier remove sea_t_damage2
-attribute @s minecraft:generic.attack_damage modifier remove sea_t_damage3
-attribute @s minecraft:generic.attack_damage modifier remove sea_t_damage4
-attribute @s minecraft:generic.attack_damage modifier remove sea_t_damage5
-attribute @s minecraft:generic.movement_speed modifier remove sea_t_speed1
-attribute @s minecraft:generic.movement_speed modifier remove sea_t_speed2
-attribute @s minecraft:generic.movement_speed modifier remove sea_t_speed3
-attribute @s minecraft:generic.movement_speed modifier remove sea_t_speed4
-attribute @s minecraft:generic.movement_speed modifier remove sea_t_speed5
-attribute @s minecraft:generic.attack_speed modifier remove sea_t_attackspeed1
-attribute @s minecraft:generic.attack_speed modifier remove sea_t_attackspeed2
-attribute @s minecraft:generic.attack_speed modifier remove sea_t_attackspeed3
-attribute @s minecraft:generic.attack_speed modifier remove sea_t_attackspeed4
-attribute @s minecraft:generic.attack_speed modifier remove sea_t_attackspeed5
-attribute @s minecraft:generic.max_health modifier remove sea_t_health1
-attribute @s minecraft:generic.max_health modifier remove sea_t_health2
-attribute @s minecraft:generic.max_health modifier remove sea_t_health3
-attribute @s minecraft:generic.max_health modifier remove sea_t_health4
-attribute @s minecraft:generic.max_health modifier remove sea_t_health5
-attribute @s minecraft:generic.attack_knockback modifier remove sea_t_knockback1
-attribute @s minecraft:generic.attack_knockback modifier remove sea_t_knockback2
-attribute @s minecraft:generic.attack_knockback modifier remove sea_t_knockback3
-attribute @s minecraft:generic.attack_knockback modifier remove sea_t_knockback4
-attribute @s minecraft:generic.attack_knockback modifier remove sea_t_knockback5
+attribute @s minecraft:armor modifier remove sea_t_armor1
+attribute @s minecraft:armor modifier remove sea_t_armor2
+attribute @s minecraft:armor modifier remove sea_t_armor3
+attribute @s minecraft:armor modifier remove sea_t_armor4
+attribute @s minecraft:armor modifier remove sea_t_armor5
+attribute @s minecraft:armor_toughness modifier remove sea_t_tough1
+attribute @s minecraft:armor_toughness modifier remove sea_t_tough2
+attribute @s minecraft:armor_toughness modifier remove sea_t_tough3
+attribute @s minecraft:armor_toughness modifier remove sea_t_tough4
+attribute @s minecraft:armor_toughness modifier remove sea_t_tough5
+attribute @s minecraft:attack_damage modifier remove sea_t_damage1
+attribute @s minecraft:attack_damage modifier remove sea_t_damage2
+attribute @s minecraft:attack_damage modifier remove sea_t_damage3
+attribute @s minecraft:attack_damage modifier remove sea_t_damage4
+attribute @s minecraft:attack_damage modifier remove sea_t_damage5
+attribute @s minecraft:movement_speed modifier remove sea_t_speed1
+attribute @s minecraft:movement_speed modifier remove sea_t_speed2
+attribute @s minecraft:movement_speed modifier remove sea_t_speed3
+attribute @s minecraft:movement_speed modifier remove sea_t_speed4
+attribute @s minecraft:movement_speed modifier remove sea_t_speed5
+attribute @s minecraft:attack_speed modifier remove sea_t_attackspeed1
+attribute @s minecraft:attack_speed modifier remove sea_t_attackspeed2
+attribute @s minecraft:attack_speed modifier remove sea_t_attackspeed3
+attribute @s minecraft:attack_speed modifier remove sea_t_attackspeed4
+attribute @s minecraft:attack_speed modifier remove sea_t_attackspeed5
+attribute @s minecraft:max_health modifier remove sea_t_health1
+attribute @s minecraft:max_health modifier remove sea_t_health2
+attribute @s minecraft:max_health modifier remove sea_t_health3
+attribute @s minecraft:max_health modifier remove sea_t_health4
+attribute @s minecraft:max_health modifier remove sea_t_health5
+attribute @s minecraft:attack_knockback modifier remove sea_t_knockback1
+attribute @s minecraft:attack_knockback modifier remove sea_t_knockback2
+attribute @s minecraft:attack_knockback modifier remove sea_t_knockback3
+attribute @s minecraft:attack_knockback modifier remove sea_t_knockback4
+attribute @s minecraft:attack_knockback modifier remove sea_t_knockback5
 
-attribute @s generic.movement_speed modifier remove sea_running_1a
-attribute @s generic.knockback_resistance modifier remove sea_running_1b
-attribute @s generic.armor modifier remove sea_running_1c
+attribute @s movement_speed modifier remove sea_running_1a
+attribute @s knockback_resistance modifier remove sea_running_1b
+attribute @s armor modifier remove sea_running_1c
 
-attribute @s generic.armor modifier remove sea_weapon:upg_armor01
-attribute @s generic.armor_toughness modifier remove sea_weapon:upg_armor02
+attribute @s armor modifier remove sea_weapon:upg_armor01
+attribute @s armor_toughness modifier remove sea_weapon:upg_armor02
 
 tag @s remove sea_t_armor1
 execute store result score @s rng2 run random value 1..4
@@ -288,7 +288,7 @@ function skyblock:sea/p/w/ripper_effect_reset
 
 clear @s
 
-attribute @s generic.jump_strength modifier remove sea:mob_debuff_visioned01
+attribute @s jump_strength modifier remove sea:mob_debuff_visioned01
 
 #不再用到的tag
 tag @s remove sea_t_axeparry1

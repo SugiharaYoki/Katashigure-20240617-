@@ -34,14 +34,14 @@ scoreboard players set @s If_Beetrtsoup 0
 scoreboard players set @s If_Bread 0
 scoreboard players set @s If_EscDeath 0
 
-attribute @s generic.attack_damage modifier remove 8603fc7b-b1fa-47c6-91f5-67d9b35e53d1
-attribute @s generic.max_health modifier remove 8603fc7b-b1fa-47c6-91f5-67d9b35e53e1
-attribute @s generic.movement_speed modifier remove 8603fc7b-b1fa-47c6-91f5-67d9b35e53f2
-attribute @s generic.armor_toughness modifier remove 8603fc7b-b1fa-47c6-91f5-67d9b35e54a1
-attribute @s generic.attack_knockback modifier remove 8603fc7b-b1fa-47c6-91f5-67d9b35e55b1
-attribute @s generic.attack_knockback modifier remove 8603fc7b-b1fa-47c6-91f5-67d9b35e55b2
+attribute @s attack_damage modifier remove 8603fc7b-b1fa-47c6-91f5-67d9b35e53d1
+attribute @s max_health modifier remove 8603fc7b-b1fa-47c6-91f5-67d9b35e53e1
+attribute @s movement_speed modifier remove 8603fc7b-b1fa-47c6-91f5-67d9b35e53f2
+attribute @s armor_toughness modifier remove 8603fc7b-b1fa-47c6-91f5-67d9b35e54a1
+attribute @s attack_knockback modifier remove 8603fc7b-b1fa-47c6-91f5-67d9b35e55b1
+attribute @s attack_knockback modifier remove 8603fc7b-b1fa-47c6-91f5-67d9b35e55b2
 
-attribute @s generic.jump_strength modifier remove skywar_ishtar_bless11_01
+attribute @s jump_strength modifier remove skywar_ishtar_bless11_01
 
 tag @s remove AzrielEvent3761S
 tag @s remove AzrielEvent3762S
@@ -51,69 +51,69 @@ tag @s remove AzrielEvent3765S
 tag @s remove AzrielEvent3766S
 tag @a remove ProcessMachineBow
 
-attribute @s generic.attack_damage modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd001
-attribute @s generic.attack_damage modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd002
-attribute @s generic.attack_damage modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd003
-attribute @s generic.attack_damage modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd004
-attribute @s generic.attack_damage modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd005
-attribute @s generic.attack_damage modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd006
-attribute @s generic.attack_damage modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd007
-attribute @s generic.attack_damage modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd008
-attribute @s generic.attack_damage modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd009
-attribute @s generic.attack_damage modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd010
-attribute @s generic.attack_damage modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd011
-attribute @s generic.attack_damage modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd012
-attribute @s generic.armor_toughness modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd101
-attribute @s generic.armor_toughness modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd102
-attribute @s generic.armor_toughness modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd103
-attribute @s generic.armor_toughness modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd104
-attribute @s generic.armor_toughness modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd105
-attribute @s generic.armor_toughness modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd106
-attribute @s generic.armor_toughness modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd107
-attribute @s generic.armor_toughness modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd108
-attribute @s generic.armor_toughness modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd109
-attribute @s generic.armor_toughness modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd110
-attribute @s generic.armor_toughness modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd111
-attribute @s generic.armor_toughness modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd112
-attribute @s generic.movement_speed modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd201
-attribute @s generic.movement_speed modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd202
-attribute @s generic.movement_speed modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd203
-attribute @s generic.movement_speed modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd204
-attribute @s generic.movement_speed modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd205
-attribute @s generic.movement_speed modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd206
-attribute @s generic.movement_speed modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd207
-attribute @s generic.movement_speed modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd208
-attribute @s generic.movement_speed modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd209
-attribute @s generic.movement_speed modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd210
-attribute @s generic.movement_speed modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd211
-attribute @s generic.movement_speed modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd212
-attribute @s generic.max_health modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd301
-attribute @s generic.max_health modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd302
-attribute @s generic.max_health modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd303
-attribute @s generic.max_health modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd304
-attribute @s generic.max_health modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd305
-attribute @s generic.max_health modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd306
-attribute @s generic.max_health modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd307
-attribute @s generic.max_health modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd308
-attribute @s generic.max_health modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd309
-attribute @s generic.max_health modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd310
-attribute @s generic.max_health modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd311
-attribute @s generic.max_health modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd312
-attribute @s generic.attack_speed modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd401
-attribute @s generic.attack_speed modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd402
-attribute @s generic.attack_speed modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd403
-attribute @s generic.attack_speed modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd404
-attribute @s generic.attack_speed modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd405
-attribute @s generic.attack_speed modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd406
-attribute @s generic.attack_speed modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd407
-attribute @s generic.attack_speed modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd408
-attribute @s generic.attack_speed modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd409
-attribute @s generic.attack_speed modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd410
-attribute @s generic.attack_speed modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd411
-attribute @s generic.attack_speed modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd412
+attribute @s attack_damage modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd001
+attribute @s attack_damage modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd002
+attribute @s attack_damage modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd003
+attribute @s attack_damage modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd004
+attribute @s attack_damage modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd005
+attribute @s attack_damage modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd006
+attribute @s attack_damage modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd007
+attribute @s attack_damage modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd008
+attribute @s attack_damage modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd009
+attribute @s attack_damage modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd010
+attribute @s attack_damage modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd011
+attribute @s attack_damage modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd012
+attribute @s armor_toughness modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd101
+attribute @s armor_toughness modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd102
+attribute @s armor_toughness modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd103
+attribute @s armor_toughness modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd104
+attribute @s armor_toughness modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd105
+attribute @s armor_toughness modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd106
+attribute @s armor_toughness modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd107
+attribute @s armor_toughness modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd108
+attribute @s armor_toughness modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd109
+attribute @s armor_toughness modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd110
+attribute @s armor_toughness modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd111
+attribute @s armor_toughness modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd112
+attribute @s movement_speed modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd201
+attribute @s movement_speed modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd202
+attribute @s movement_speed modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd203
+attribute @s movement_speed modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd204
+attribute @s movement_speed modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd205
+attribute @s movement_speed modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd206
+attribute @s movement_speed modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd207
+attribute @s movement_speed modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd208
+attribute @s movement_speed modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd209
+attribute @s movement_speed modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd210
+attribute @s movement_speed modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd211
+attribute @s movement_speed modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd212
+attribute @s max_health modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd301
+attribute @s max_health modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd302
+attribute @s max_health modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd303
+attribute @s max_health modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd304
+attribute @s max_health modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd305
+attribute @s max_health modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd306
+attribute @s max_health modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd307
+attribute @s max_health modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd308
+attribute @s max_health modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd309
+attribute @s max_health modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd310
+attribute @s max_health modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd311
+attribute @s max_health modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd312
+attribute @s attack_speed modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd401
+attribute @s attack_speed modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd402
+attribute @s attack_speed modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd403
+attribute @s attack_speed modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd404
+attribute @s attack_speed modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd405
+attribute @s attack_speed modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd406
+attribute @s attack_speed modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd407
+attribute @s attack_speed modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd408
+attribute @s attack_speed modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd409
+attribute @s attack_speed modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd410
+attribute @s attack_speed modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd411
+attribute @s attack_speed modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd412
 
 
-attribute @s generic.armor modifier remove skywar:ishtar_bless_32
+attribute @s armor modifier remove skywar:ishtar_bless_32
 
 effect give @s strength 1 0 true
 effect give @s weakness 1 0 true
@@ -140,7 +140,7 @@ scoreboard players set @s AZR_chainKill_damage 0
 scoreboard players set @s AZR_chainKill_chargeup 0
 scoreboard players set @s AZR_chainKill_damageblocked 0
 scoreboard players set @s AZR_chainKill_damagetaken 0
-attribute @s minecraft:player.entity_interaction_range modifier remove azr_chainkill_01
-attribute @s minecraft:generic.attack_damage modifier remove azr_chainkill_02
-attribute @s minecraft:generic.armor modifier remove azr_chainkill_03
-attribute @s minecraft:generic.attack_speed modifier remove azr_chainkill_04
+attribute @s minecraft:entity_interaction_range modifier remove azr_chainkill_01
+attribute @s minecraft:attack_damage modifier remove azr_chainkill_02
+attribute @s minecraft:armor modifier remove azr_chainkill_03
+attribute @s minecraft:attack_speed modifier remove azr_chainkill_04

@@ -93,7 +93,7 @@ execute if score skywar_start rng1 matches 2 run scoreboard objectives add If_Bl
 execute if score skywar_start rng1 matches 2 run scoreboard objectives add If_Bless31 dummy
 execute if score skywar_start rng1 matches 2 run scoreboard objectives add If_Bless31c minecraft.custom:damage_dealt
 execute if score skywar_start rng1 matches 2 run scoreboard objectives add If_Bless32 dummy
-execute if score skywar_start rng1 matches 2 as @a[scores={If_Bless11=1..}] run attribute @s generic.jump_strength modifier remove skywar_ishtar_bless11_01
+execute if score skywar_start rng1 matches 2 as @a[scores={If_Bless11=1..}] run attribute @s jump_strength modifier remove skywar_ishtar_bless11_01
 #无意义变量 scoreboard players reset @s RemainPlayer
 execute if score skywar_start rng1 matches 2 as @a[tag=!NoSkyWar] at @s run scoreboard players reset @s DeathCount
 #-#-#scoreboard players set @s Temp4 1

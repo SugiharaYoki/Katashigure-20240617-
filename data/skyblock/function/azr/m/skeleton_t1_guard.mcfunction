@@ -1,2 +1,2 @@
-summon skeleton ~ ~ ~ {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_skeleton_tier1",attributes:[{id:"generic.max_health",base:45.0},{id:"attack_damage",base:1.0}],Health:15.0f,CustomName:'"骷髅护卫"',CanPickUpLoot:0b,HandItems:[{count:1,id:wooden_sword},{}],HandDropChances:[0.00f,0.00f],ArmorItems:[{},{},{},{}]}
+summon skeleton ~ ~ ~ {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_skeleton_tier1",attributes:[{id:"max_health",base:45.0},{id:"attack_damage",base:1.0}],Health:15.0f,CustomName:'"骷髅护卫"',CanPickUpLoot:0b,HandItems:[{count:1,id:wooden_sword},{}],HandDropChances:[0.00f,0.00f],ArmorItems:[{},{},{},{}]}
 particle trial_spawner_detection ~ ~0.4 ~ 0.25 0.4 0.25 0 10

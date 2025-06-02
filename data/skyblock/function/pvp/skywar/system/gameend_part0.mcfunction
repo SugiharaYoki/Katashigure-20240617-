@@ -12,4 +12,4 @@ tag @n[tag=sc] remove Skyblock_map004_event
 kill @e[type=marker,tag=Bless24_Marker,x=50062,y=26,z=50052,distance=..5000]
 
 kill @e[type=marker,tag=skywar_map014_lava,x=50062,y=26,z=50052,distance=..5000]
-execute as @a[scores={If_Bless11=1..}] run attribute @s generic.jump_strength modifier remove skywar_ishtar_bless11_01
+execute as @a[scores={If_Bless11=1..}] run attribute @s jump_strength modifier remove skywar_ishtar_bless11_01

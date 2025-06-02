@@ -1,11 +1,11 @@
-attribute @s generic.armor modifier remove sea_weapon:upg_shield01
-attribute @s generic.movement_speed modifier remove sea_weapon:upg_shield02
-attribute @s generic.armor modifier remove sea_weapon:upg_shield03
+attribute @s armor modifier remove sea_weapon:upg_shield01
+attribute @s movement_speed modifier remove sea_weapon:upg_shield02
+attribute @s armor modifier remove sea_weapon:upg_shield03
 tag @s remove sea_w_shield_skill_a_1
-attribute @s generic.movement_speed modifier remove sea_weapon:upg_shield05
+attribute @s movement_speed modifier remove sea_weapon:upg_shield05
 tag @s remove sea_w_shield_skill_b_1
-attribute @s generic.armor modifier remove sea_weapon:upg_shield07
-attribute @s generic.armor modifier remove sea_weapon:upg_shield08
+attribute @s armor modifier remove sea_weapon:upg_shield07
+attribute @s armor modifier remove sea_weapon:upg_shield08
 tag @s remove sea_w_shield_skill_b_2
 tag @s remove sea_w_shield_skill_a_2
 

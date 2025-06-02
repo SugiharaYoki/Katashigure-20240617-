@@ -18,23 +18,23 @@ execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_hp=6}] run scoreboard
 execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_hp=7..8}] run scoreboard players remove @s Azr_diamond 5
 execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_hp=9..11}] run scoreboard players remove @s Azr_diamond 10
 execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_hp=12..16}] run scoreboard players remove @s Azr_diamond 20
-execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_hp=0}] run attribute @s generic.max_health modifier add mg_azr0:upg_maxhp01 2 add_value
-execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_hp=1}] run attribute @s generic.max_health modifier add mg_azr0:upg_maxhp02 2 add_value
-execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_hp=2}] run attribute @s generic.max_health modifier add mg_azr0:upg_maxhp03 2 add_value
-execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_hp=3}] run attribute @s generic.max_health modifier add mg_azr0:upg_maxhp04 2 add_value
-execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_hp=4}] run attribute @s generic.max_health modifier add mg_azr0:upg_maxhp05 2 add_value
-execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_hp=5}] run attribute @s generic.max_health modifier add mg_azr0:upg_maxhp06 2 add_value
-execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_hp=6}] run attribute @s generic.max_health modifier add mg_azr0:upg_maxhp07 2 add_value
-execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_hp=7}] run attribute @s generic.max_health modifier add mg_azr0:upg_maxhp08 2 add_value
-execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_hp=8}] run attribute @s generic.max_health modifier add mg_azr0:upg_maxhp09 2 add_value
-execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_hp=9}] run attribute @s generic.max_health modifier add mg_azr0:upg_maxhp10 2 add_value
-execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_hp=10}] run attribute @s generic.max_health modifier add mg_azr0:upg_maxhp11 2 add_value
-execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_hp=11}] run attribute @s generic.max_health modifier add mg_azr0:upg_maxhp12 2 add_value
-execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_hp=12}] run attribute @s generic.max_health modifier add mg_azr0:upg_maxhp13 2 add_value
-execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_hp=13}] run attribute @s generic.max_health modifier add mg_azr0:upg_maxhp14 2 add_value
-execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_hp=14}] run attribute @s generic.max_health modifier add mg_azr0:upg_maxhp15 2 add_value
-execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_hp=15}] run attribute @s generic.max_health modifier add mg_azr0:upg_maxhp16 2 add_value
-execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_hp=16}] run attribute @s generic.max_health modifier add mg_azr0:upg_maxhp17 2 add_value
+execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_hp=0}] run attribute @s max_health modifier add mg_azr0:upg_maxhp01 2 add_value
+execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_hp=1}] run attribute @s max_health modifier add mg_azr0:upg_maxhp02 2 add_value
+execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_hp=2}] run attribute @s max_health modifier add mg_azr0:upg_maxhp03 2 add_value
+execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_hp=3}] run attribute @s max_health modifier add mg_azr0:upg_maxhp04 2 add_value
+execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_hp=4}] run attribute @s max_health modifier add mg_azr0:upg_maxhp05 2 add_value
+execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_hp=5}] run attribute @s max_health modifier add mg_azr0:upg_maxhp06 2 add_value
+execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_hp=6}] run attribute @s max_health modifier add mg_azr0:upg_maxhp07 2 add_value
+execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_hp=7}] run attribute @s max_health modifier add mg_azr0:upg_maxhp08 2 add_value
+execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_hp=8}] run attribute @s max_health modifier add mg_azr0:upg_maxhp09 2 add_value
+execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_hp=9}] run attribute @s max_health modifier add mg_azr0:upg_maxhp10 2 add_value
+execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_hp=10}] run attribute @s max_health modifier add mg_azr0:upg_maxhp11 2 add_value
+execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_hp=11}] run attribute @s max_health modifier add mg_azr0:upg_maxhp12 2 add_value
+execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_hp=12}] run attribute @s max_health modifier add mg_azr0:upg_maxhp13 2 add_value
+execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_hp=13}] run attribute @s max_health modifier add mg_azr0:upg_maxhp14 2 add_value
+execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_hp=14}] run attribute @s max_health modifier add mg_azr0:upg_maxhp15 2 add_value
+execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_hp=15}] run attribute @s max_health modifier add mg_azr0:upg_maxhp16 2 add_value
+execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_hp=16}] run attribute @s max_health modifier add mg_azr0:upg_maxhp17 2 add_value
 execute if entity @s[tag=AZR0SHOP_SUCCESS] run scoreboard players add @s Azr0_UPG_hp 1
 execute if entity @s[tag=AZR0SHOP_SUCCESS] run tellraw @s {"text": "血量上限已提升！","color": "green"}
 execute if entity @s[tag=AZR0SHOP_SUCCESS] run playsound entity.player.levelup player @s ~ ~ ~ 1 1

@@ -1,3 +1,3 @@
-summon pillager ~ ~ ~ {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_pillager_tier1",attributes:[{id:"generic.max_health",base:3.0},{id:"attack_damage",base:0.5}],Health:1.0f,CustomName:'"弩手"',HandItems:[{count:1,id:"crossbow",components:{"custom_name":'{"text":"弩·传统","italic":false}'}},{}],HandDropChances:[0.1f,0.1f],ArmorItems:[{},{},{},{}]}
+summon pillager ~ ~ ~ {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_pillager_tier1",attributes:[{id:"max_health",base:3.0},{id:"attack_damage",base:0.5}],Health:1.0f,CustomName:'"弩手"',HandItems:[{count:1,id:"crossbow",components:{"custom_name":'{"text":"弩·传统","italic":false}'}},{}],HandDropChances:[0.1f,0.1f],ArmorItems:[{},{},{},{}]}
 particle minecraft:reverse_portal ~ ~0.8 ~ 0.3 0.7 0.3 0.1 18
 playsound entity.enderman.teleport hostile @a ~ ~ ~ 0.8 1.2
