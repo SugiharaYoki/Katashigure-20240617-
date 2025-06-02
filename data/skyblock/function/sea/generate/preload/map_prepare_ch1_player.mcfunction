@@ -5,12 +5,12 @@ tag @s[gamemode=!spectator] add SEAPT
 stopsound @s
 #give @s globe_banner_pattern[custom_name='{"text":"调查记录 6月29日 17:42","italic":true,"color":"dark_purple","italic":false}',lore=['{"text":"记录者为忒尔克西钻井平台调查小组成员，也是我本人。","color":"white","italic":false}','{"text":"钻井平台距离失联已经超过36小时，我们在黄昏之时赶到了平台的西南驳口。","color":"white","italic":false}','{"text":"整座海上设施此时一片死寂，至少上百名的工作人员皆数不见踪影。","color":"white","italic":false}']]
 #give @s[tag=seaPerm000,scores={SEAPT_mode=1..2}] nether_star[custom_name='{"text":"神秘的星光宝石","italic":true,"color":"gold","italic":false}',lore=['{"text":"说实话吧，我并不知道这东西是怎么跑到我口袋里来的。","color":"white","italic":false}','{"text":"在我准备下船的时候，碰巧从衣服里摸出了它。","color":"white","italic":false}','{"text":"这上面闪烁的光泽，似乎在尝试向我述说某种既视感强烈的，并不存在的过去。","color":"white","italic":false}']]
-give @s[tag=seaPerm000,scores={SEAPT_mode=1..2}] nether_star
+item replace entity @s[tag=seaPerm000,scores={SEAPT_mode=1..2}] inventory.26 with nether_star
 
 scoreboard players set @s sea_i_emerald 0
 
 #give @s spyglass[lore=['{"text":"我随身携带的望远镜。","color":"white","italic":false}','{"text":"在前途未知的时刻，紧握住它可以让我不再迷惘。","color":"white","italic":false}','{"text":"手持时：显示任务目标 & 跳过已阅读的剧情对话","color":"green","italic":false}']]
-give @s compass
+item replace entity @s inventory.24 with compass
 #give @s baked_potato 3
 effect give @s regeneration 1 39 false
 effect give @s saturation 1 3 false
@@ -70,13 +70,14 @@ execute if entity @a[tag=SEAPT,tag=e_w_03] run tag @s add e_w_03
 #execute if entity @a[tag=SEAPT,tag=e_w_04] run tag @s add e_w_04
 #execute if entity @a[tag=SEAPT,tag=e_w_05] run tag @s add e_w_05
 execute if entity @a[tag=SEAPT,tag=e_w_06] run tag @s add e_w_06
-execute if entity @a[tag=SEAPT,tag=e_w_01] run give @s iron_hoe[custom_name='{"text":"撬棍","italic":false,"color":"red"}',custom_data={sea_crowbar:true},attribute_modifiers=[{type:"attack_damage",slot:"mainhand",id:"sea_weapon:001_01",amount:1.5,operation:"add_value"},{type:"attack_speed",slot:"mainhand",id:"sea_weapon:001_02",amount:-1.5,operation:"add_value"}],unbreakable={}]
-execute if entity @a[tag=SEAPT,tag=e_w_02] run give @s iron_axe[custom_name='{"text":"消防斧","italic":false,"color":"red"}',custom_data={sea_safeaxe:true},attribute_modifiers=[{type:"attack_damage",slot:"mainhand",id:"sea_weapon:004_01",amount:6.5,operation:"add_value"},{type:"attack_speed",slot:"mainhand",id:"sea_weapon:004_02",amount:-3.0,operation:"add_value"}],unbreakable={}]
-execute if entity @a[tag=SEAPT,tag=e_w_03] run give @s crossbow[custom_name='{"text":"工程弩","italic":false,"color":"red"}',custom_data={sea_crossbow:true},unbreakable={}]
+#item replace entity @s inventory.18 with
+execute if entity @a[tag=SEAPT,tag=e_w_01] run item replace entity @s hotbar.0 with iron_hoe[custom_name='{"text":"撬棍","italic":false,"color":"red"}',custom_data={sea_crowbar:true},attribute_modifiers=[{type:"attack_damage",slot:"mainhand",id:"sea_weapon:001_01",amount:1.5,operation:"add_value"},{type:"attack_speed",slot:"mainhand",id:"sea_weapon:001_02",amount:-1.5,operation:"add_value"}],unbreakable={}]
+execute if entity @a[tag=SEAPT,tag=e_w_02] run item replace entity @s hotbar.1 with iron_axe[custom_name='{"text":"消防斧","italic":false,"color":"red"}',custom_data={sea_safeaxe:true},attribute_modifiers=[{type:"attack_damage",slot:"mainhand",id:"sea_weapon:004_01",amount:6.5,operation:"add_value"},{type:"attack_speed",slot:"mainhand",id:"sea_weapon:004_02",amount:-3.0,operation:"add_value"}],unbreakable={}]
+execute if entity @a[tag=SEAPT,tag=e_w_03] run item replace entity @s hotbar.2 with crossbow[custom_name='{"text":"工程弩","italic":false,"color":"red"}',custom_data={sea_crossbow:true},unbreakable={}]
 #execute if entity @a[tag=SEAPT,tag=e_w_04] run give @s shears[custom_name='{"text":"喷火器","italic":false,"color":"red"}',custom_data={sea_flamethrower:true},unbreakable={}]
-execute if entity @a[tag=SEAPT,tag=e_w_06] run give @s[tag=SEAPT] music_disc_5[custom_name='{"text":"磁锯发射装置","italic":false,"color":"red"}',custom_data={sea_flamethrower:true},unbreakable={}]
+execute if entity @a[tag=SEAPT,tag=e_w_06] run item replace entity @s inventory.19 with music_disc_5[custom_name='{"text":"磁锯发射装置","italic":false,"color":"red"}',custom_data={sea_flamethrower:true},unbreakable={}]
 
-execute if items entity @a[tag=SEAPT] container.* shield run give @s shield[custom_name='{"text":"防护盾","italic":false,"color":"red"}',custom_data={sea_shield:true},attribute_modifiers=[{type:"movement_speed",slot:"hand",id:"sea_armor:004_01",amount:-0.03,operation:"add_value"}],lore=['{"text":"主手选至此道具的瞬间获得极短暂无敌（无需右键使用）","color":"white","italic":false}','{"text":"在这期间受到攻击并反击可以造成巨额伤害","color":"white","italic":false}']]
+execute if items entity @a[tag=SEAPT] container.* shield run item replace entity @s inventory.18 with shield[custom_name='{"text":"防护盾","italic":false,"color":"red"}',custom_data={sea_shield:true},attribute_modifiers=[{type:"movement_speed",slot:"hand",id:"sea_armor:004_01",amount:-0.03,operation:"add_value"}],lore=['{"text":"主手选至此道具的瞬间获得极短暂无敌（无需右键使用）","color":"white","italic":false}','{"text":"在这期间受到攻击并反击可以造成巨额伤害","color":"white","italic":false}']]
 
 execute if items entity @a[tag=SEAPT] container.* *[custom_data={sea_t_ripper1:true}] run give @s silence_armor_trim_smithing_template[custom_name='{"text":"超频声荡 I","italic":false,"color":"red"}',custom_data={sea_t_ripper1:true},lore=['{"text":"音爆 I 发射磁锯会制造超音波","color":"white","italic":false}','{"text":"可用于破坏绿色藤蔓","color":"white","italic":false}']]
 
@@ -92,9 +93,6 @@ execute if block 90074 103 137 scaffolding run give @s flint 3
 execute if block 90062 103 135 grindstone run give @s iron_ingot 1
 execute if block 90075 103 141 minecraft:cauldron run give @s iron_ingot 1
 execute if block 90074 103 137 scaffolding run give @s iron_ingot 1
-execute if block 90062 103 135 grindstone run give @s baked_potato 3
-execute if block 90075 103 141 minecraft:cauldron run give @s baked_potato 3
-execute if block 90074 103 137 scaffolding run give @s baked_potato 3
 execute if block 90062 103 135 grindstone run scoreboard players add @s sea_i_emerald 20
 execute if block 90075 103 141 minecraft:cauldron run scoreboard players add @s sea_i_emerald 40
 execute if block 90074 103 137 scaffolding run scoreboard players add @s sea_i_emerald 60
@@ -116,6 +114,9 @@ execute if block 90075 103 141 minecraft:cauldron run scoreboard players add @s 
 execute if block 90074 103 137 scaffolding run scoreboard players add @s sea_i_trim_bug 4
 execute if block 90075 103 141 minecraft:cauldron run scoreboard players add @s sea_i_trim_skeleton 4
 execute if block 90074 103 137 scaffolding run scoreboard players add @s sea_i_trim_skeleton 4
+execute if block 90062 103 135 grindstone run give @s baked_potato 3
+execute if block 90075 103 141 minecraft:cauldron run give @s baked_potato 3
+execute if block 90074 103 137 scaffolding run give @s baked_potato 3
 
 
 

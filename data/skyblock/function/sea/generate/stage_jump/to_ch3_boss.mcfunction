@@ -6,15 +6,16 @@ function skyblock:sea/generate/stage_jump/to_ch3
 
 scoreboard players set @n[tag=sc] sea_4temp2 400
 
-give @a[tag=SEAPT] music_disc_5[custom_name='{"text":"磁锯发射装置","italic":false,"color":"red"}',custom_data={sea_flamethrower:true},unbreakable={}]
+item replace entity @a[tag=SEAPT] inventory.19 with music_disc_5[custom_name='{"text":"磁锯发射装置","italic":false,"color":"red"}',custom_data={sea_flamethrower:true},unbreakable={}]
 
-give @a[tag=SEAPT] bread 3
 give @a[tag=SEAPT] arrow 10
 give @a[tag=SEAPT] disc_fragment_5 3
 give @a[tag=SEAPT] flint 4
 give @a[tag=SEAPT] iron_ingot 3
 give @a[tag=SEAPT] coal 2
 give @a[tag=SEAPT] gunpowder 5
+give @a[tag=SEAPT] cooked_beef 3
+give @a[tag=SEAPT] potato 3
 
 tag @a[tag=SEAPT] add e_w_01
 tag @a[tag=SEAPT] add e_w_02
