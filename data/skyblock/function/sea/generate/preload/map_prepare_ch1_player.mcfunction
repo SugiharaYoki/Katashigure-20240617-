@@ -141,6 +141,8 @@ execute unless entity @a[scores={SEAPT_member=7}] unless entity @s[scores={SEAPT
 execute unless entity @a[scores={SEAPT_member=8}] unless entity @s[scores={SEAPT_member=1..}] run scoreboard players set @s SEAPT_member 8
 execute unless entity @a[scores={SEAPT_member=9}] unless entity @s[scores={SEAPT_member=1..}] run scoreboard players set @s SEAPT_member 9
 
+execute if entity @a[tag=SEAPT,tag=sea_teleport05] run tag @a[tag=SEAPT] add sea_teleport05
+
 execute if entity @s[scores={SEAPT_member=2}] run tag @s add SEAPT_EVEN
 execute if entity @s[scores={SEAPT_member=4}] run tag @s add SEAPT_EVEN
 execute if entity @s[scores={SEAPT_member=6}] run tag @s add SEAPT_EVEN
