@@ -5,7 +5,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:air",
+          "name": "minecraft:empty",
           "weight": 10
         }
       ]
@@ -59,7 +59,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:air",
+          "name": "minecraft:empty",
           "weight": 8
         }
       ]
@@ -69,7 +69,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:air",
+          "name": "minecraft:empty",
           "weight": 5
         },
         {
@@ -126,7 +126,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:air",
+          "name": "minecraft:empty",
           "weight": 18
         }
       ]
@@ -136,7 +136,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:air",
+          "name": "minecraft:empty",
           "weight": 7
         },
         {
@@ -242,7 +242,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:air",
+          "name": "minecraft:empty",
           "weight": 7
         }
       ]
@@ -252,7 +252,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:air",
+          "name": "minecraft:empty",
           "weight": 1
         }
       ]
@@ -262,7 +262,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:air",
+          "name": "minecraft:empty",
           "weight": 1
         }
       ]
@@ -309,7 +309,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:air",
+          "name": "minecraft:empty",
           "weight": 10
         },
         {
@@ -636,7 +636,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:air",
+          "name": "minecraft:empty",
           "weight": 11
         },
         {

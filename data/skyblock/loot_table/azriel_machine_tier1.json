@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:air",
+          "name": "minecraft:empty",
           "weight": 80
         },
         {
@@ -50,7 +50,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:air",
+          "name": "minecraft:empty",
           "weight": 50
         },
         {
@@ -94,7 +94,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:air",
+          "name": "minecraft:empty",
           "weight": 995
         },
         {
