@@ -46,8 +46,7 @@
           ]
         },
         {
-          "type": "minecraft:item",
-          "name": "minecraft:empty",
+          "type": "minecraft:empty",
           "weight": 510
         },
         {

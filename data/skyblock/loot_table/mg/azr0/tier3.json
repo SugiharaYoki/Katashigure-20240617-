@@ -5,8 +5,7 @@
       "rolls": 4,
       "entries": [
         {
-          "type": "minecraft:item",
-          "name": "minecraft:empty",
+          "type": "minecraft:empty",
           "weight": 10
         },
         {
@@ -20,8 +19,7 @@
       "rolls": 5,
       "entries": [
         {
-          "type": "minecraft:item",
-          "name": "minecraft:empty",
+          "type": "minecraft:empty",
           "weight": 45
         },
         {
@@ -35,8 +33,7 @@
       "rolls": 4,
       "entries": [
         {
-          "type": "minecraft:item",
-          "name": "minecraft:empty",
+          "type": "minecraft:empty",
           "weight": 30
         },
         {
@@ -50,8 +47,7 @@
       "rolls": 4,
       "entries": [
         {
-          "type": "minecraft:item",
-          "name": "minecraft:empty",
+          "type": "minecraft:empty",
           "weight": 20
         },
         {
@@ -65,8 +61,7 @@
       "rolls": 1,
       "entries": [
         {
-          "type": "minecraft:item",
-          "name": "minecraft:empty",
+          "type": "minecraft:empty",
           "weight": 3995
         },
         {

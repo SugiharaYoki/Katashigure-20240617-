@@ -54,8 +54,7 @@
           "type": "minecraft:group",
           "children": [
             {
-              "type": "minecraft:item",
-              "name": "minecraft:empty",
+              "type": "minecraft:empty",
               "weight": 50
             },
             {
