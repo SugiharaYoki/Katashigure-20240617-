@@ -5,7 +5,7 @@ execute as @s[scores={rng8=3}] at @s run playsound item.crossbow.loading_start h
 execute as @s[scores={rng8=4}] at @s run playsound item.crossbow.loading_middle hostile @a ~ ~ ~ 1 1.1
 execute as @s[scores={rng8=5}] at @s run playsound item.crossbow.loading_end hostile @a ~ ~ ~ 1 1.1
 
-execute as @s[scores={rng8=2..4}] at @s run rotate @s facing entity @e[sort=random,limit=1,tag=SEAmob,tag=!SEAnpc,distance=..7.6,tag=!SEAmob_surrended]
+execute as @s[scores={rng8=2..4}] at @s run tp @s ~ ~ ~ facing entity @e[sort=random,limit=1,tag=SEAmob,tag=!SEAnpc,distance=..7.6,tag=!SEAmob_surrended]
 execute as @s[scores={rng8=2..4}] at @s run rotate @s ~ 0
 execute as @s[scores={rng8=4}] at @s positioned ^ ^ ^0.8 if entity @n[tag=SEAmob,tag=!SEAnpc,distance=0..0.8,tag=!SEAmob_surrended] run tag @s add SEAfiona_targetfound
 execute as @s[scores={rng8=4},tag=!SEAfiona_targetfound] at @s positioned ^ ^ ^1.6 unless block ~ ~ ~ air run scoreboard players set @s rng8 9
@@ -22,7 +22,7 @@ execute as @s[scores={rng8=4},tag=!SEAfiona_targetfound] at @s positioned ^ ^ ^5
 execute as @s[scores={rng8=4}] at @s positioned ^ ^ ^5.6 if entity @n[tag=SEAmob,tag=!SEAnpc,distance=0..0.8,tag=!SEAmob_surrended] run tag @s add SEAfiona_targetfound
 execute as @s[scores={rng8=4},tag=!SEAfiona_targetfound] at @s run scoreboard players set @s rng8 9
 
-execute as @s[scores={rng8=4..8}] at @s run rotate @s facing entity @n[tag=SEAmob,tag=!SEAnpc,distance=..5.6,tag=!SEAmob_surrended]
+execute as @s[scores={rng8=4..8}] at @s run tp @s ~ ~ ~ facing entity @n[tag=SEAmob,tag=!SEAnpc,distance=..5.6,tag=!SEAmob_surrended]
 
 execute as @s[scores={rng8=3..8}] at @s anchored eyes positioned ^ ^ ^1.5 run particle electric_spark ~ ~ ~ 0 0 0 0 1
 execute as @s[scores={rng8=3..8}] at @s anchored eyes positioned ^ ^ ^1.8 run particle electric_spark ~ ~ ~ 0 0 0 0 1

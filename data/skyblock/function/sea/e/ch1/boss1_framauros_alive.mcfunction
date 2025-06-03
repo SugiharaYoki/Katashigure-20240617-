@@ -9,7 +9,7 @@ execute as @s[scores={sea_4temp2=6002}] run fill 90093 124 102 90093 122 102 air
 execute as @s[scores={sea_4temp2=6002}] run fill 90092 124 102 90092 122 102 air destroy
 execute as @s[scores={sea_4temp2=6002}] run fill 90087 122 105 90087 124 104 air destroy
 execute as @s[scores={sea_4temp2=6001}] positioned 90073 122 122 run function skyblock:sea/m/unique/npc_framauros
-execute as @s[scores={sea_4temp2=6004..}] as @n[tag=SEAframauros] at @s run rotate @s facing entity @p
+execute as @s[scores={sea_4temp2=6004..}] as @n[tag=SEAframauros] at @s run tp @s ~ ~ ~ facing entity @p
 execute as @s[scores={sea_4temp2=6004}] positioned 90074.0 129 109.0 run stopsound @a[distance=0..500] music
 execute as @s[scores={sea_4temp2=6004}] at @n[tag=SEAframauros] run playsound entity.villager.ambient neutral @a ~ ~ ~ 0.8 0.7
 execute as @s[scores={sea_4temp2=6004}] at @n[tag=SEAframauros] run tellraw @a[tag=SEAPT,distance=0.1..35] [{"text":"法莫洛斯：","color":"green","bold": true},{"text":"\n“……活着的人。”","color":"white","bold": false}]

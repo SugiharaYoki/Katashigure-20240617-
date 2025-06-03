@@ -55,8 +55,8 @@ execute if score MG_AZR0_rng rng4 matches 8 at @n[tag=mg_azr0,type=marker] posit
 execute if score MG_AZR0_rng rng4 matches 10 at @n[tag=mg_azr0,type=marker] positioned ~ ~2 ~15 run summon marker ~ ~ ~ {Tags:["mg_azr0_MobPortals","mg_azr0_MobPortals_vertical"]}
 execute if score MG_AZR0_rng rng4 matches 11 at @n[tag=mg_azr0,type=marker] positioned ~ ~2 ~15 run summon marker ~ ~ ~ {Tags:["mg_azr0_MobPortals","mg_azr0_MobPortals_vertical"]}
 
-execute as @e[tag=mg_azr0_MobPortals_horizontal,limit=2] at @s run rotate @s facing ~ ~ ~-1
-execute as @e[tag=mg_azr0_MobPortals_vertical,limit=2] at @s run rotate @s facing ~-1 ~ ~
+execute as @e[tag=mg_azr0_MobPortals_horizontal,limit=2] at @s run tp @s ~ ~ ~ facing ~ ~ ~-1
+execute as @e[tag=mg_azr0_MobPortals_vertical,limit=2] at @s run tp @s ~ ~ ~ facing ~-1 ~ ~
 
 
 execute if score MG_AZR0_Timer rng2 matches 15..25 store result score MG_AZR0_rng rng4 run random value 1..20

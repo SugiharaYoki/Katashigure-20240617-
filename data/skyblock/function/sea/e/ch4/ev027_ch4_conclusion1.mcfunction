@@ -168,7 +168,7 @@ execute if score @s rng6 matches 1006..1015 as @n[tag=SEAyuehan] at @s run tp @s
 execute if score @s rng6 matches 1013 at @n[tag=SEAyuehan] run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
 execute if score @s rng6 matches 1013 at @n[tag=SEAyuehan] run tellraw @a[distance=0..250] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“怎、怎么说？！那台生态装……”","color":"white","bold": false}]
 
-execute if score @s rng6 matches 1014..1029 as @n[tag=SEAedwina] at @s run rotate @s facing entity @n[tag=SEAmob,tag=!SEAnpc]
+execute if score @s rng6 matches 1014..1029 as @n[tag=SEAedwina] at @s run tp @s ~ ~ ~ facing entity @n[tag=SEAmob,tag=!SEAnpc]
 
 execute if score @s rng6 matches 1006..1010 positioned 90145 84 47 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
 execute if score @s rng6 matches 1006..1010 positioned 90145 84 47 run particle sculk_soul ~ ~1 ~ 0.3 0.5 0.3 0.05 10
@@ -182,13 +182,13 @@ execute if score @s rng6 matches 1012..1035 as @n[tag=SEAedwina] at @s anchored 
 execute if score @s rng6 matches 1012..1035 as @n[tag=SEAedwina] at @s anchored eyes if entity @n[tag=SEAmob,distance=0.01..2] run particle sweep_attack ^ ^ ^0.5 0.1 0.1 0.1 0 2
 execute if score @s rng6 matches 1012..1035 as @n[tag=SEAedwina] at @s anchored eyes as @n[tag=SEAmob,distance=0.01..2] run damage @s 5 generic
 
-execute if score @s rng6 matches 1044 as @n[tag=SEAedwina] at @s run rotate @s facing 90147 84 73
+execute if score @s rng6 matches 1044 as @n[tag=SEAedwina] at @s run tp @s ~ ~ ~ facing 90147 84 73
 
 
 execute if score @s rng6 matches 1047 at @n[tag=SEAedwina] run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 1.3
 execute if score @s rng6 matches 1047 at @n[tag=SEAedwina] run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“越涵？！”","color":"white","bold": false}]
 
-execute if score @s rng6 matches 1040..1070 as @n[tag=SEAedwina] at @s run rotate @s facing entity @n[tag=SEAmob]
+execute if score @s rng6 matches 1040..1070 as @n[tag=SEAedwina] at @s run tp @s ~ ~ ~ facing entity @n[tag=SEAmob]
 execute if score @s rng6 matches 1052 as @n[tag=SEAedwina] at @s facing entity @n[tag=SEAmob,distance=0.01..15] eyes run tp @s ^ ^ ^1.7
 execute if score @s rng6 matches 1053 as @n[tag=SEAedwina] at @s facing entity @n[tag=SEAmob,distance=0.01..15] eyes run tp @s ^ ^ ^1.5
 execute if score @s rng6 matches 1054 as @n[tag=SEAedwina] at @s facing entity @n[tag=SEAmob,distance=0.01..15] eyes run tp @s ^ ^ ^1.3
@@ -247,7 +247,7 @@ execute at @n[tag=SEAedwina] unless entity @n[tag=SEAmob,distance=0.1..10] run s
 
 scoreboard players add @s[scores={rng6=1200..1500}] rng6 1
 
-execute if score @s rng6 matches 1202..1238 as @n[tag=SEAedwina] at @s run rotate @s facing entity @p[tag=SEAPT]
+execute if score @s rng6 matches 1202..1238 as @n[tag=SEAedwina] at @s run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
 execute if score @s rng6 matches 1202 at @n[tag=SEAedwina] run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 1.3
 execute if score @s rng6 matches 1202 at @n[tag=SEAedwina] if entity @n[tag=sc,scores={sea_player=1}] run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“喂，……你一个人有问题吗？我要去救越涵。”","color":"white","bold": false}]
 execute if score @s rng6 matches 1202 at @n[tag=SEAedwina] if entity @n[tag=sc,scores={sea_player=2..}] run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“喂，……你们没我陪同没问题吧？我要去救越涵。”","color":"white","bold": false}]
