@@ -170,4 +170,9 @@ scoreboard players set @s sea_t_sprint_length 0
 scoreboard players set @s sea_t_sprint_armor 0
 scoreboard players set @s sea_t_sprint_charge 0
 
-
+execute if entity @s[tag=sea_t_sprint1] run tag @s add sea_t_sprint1
+execute if entity @s[tag=sea_t_sprint2] run tag @s add sea_t_sprint2
+execute if entity @s[tag=sea_t_sprint3] run tag @s add sea_t_sprint3
+execute if entity @s[tag=sea_t_sprint4] run tag @s add sea_t_sprint4
+execute if entity @s[tag=sea_t_sprint5] run tag @s add sea_t_sprint5
+execute if entity @s[tag=sea_t_sprint6] run tag @s add sea_t_sprint6
