@@ -884,3 +884,13 @@ setblock 90148 145 152 air
 setblock 90148 145 152 barrel
 setblock 90152 148 136 minecraft:gray_stained_glass
 setblock 90152 149 136 minecraft:gray_stained_glass
+
+setblock 90132 100 27 waxed_copper_grate
+
+
+
+
+
+
+
+

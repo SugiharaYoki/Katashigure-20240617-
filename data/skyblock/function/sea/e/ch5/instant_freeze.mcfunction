@@ -41,8 +41,9 @@ execute if score sea_ch5_instant_freeze sea_4temp2 matches 114 positioned 90120 
 execute if score sea_ch5_instant_freeze sea_4temp2 matches 112 positioned 90130 98 43 run fill ~ ~ ~ ~4 ~ ~4 packed_ice replace water
 
 
-execute if score sea_ch5_instant_freeze sea_4temp2 matches 12 positioned 90122 100 27 run setblock ~ ~ ~ air destroy
-execute if score sea_ch5_instant_freeze sea_4temp2 matches 12 positioned 90122 100 27 run function skyblock:sea/m/husk
+execute if score sea_ch5_instant_freeze sea_4temp2 matches 10 positioned 90132 100 27 run setblock ~ ~ ~ air destroy
+execute if score sea_ch5_instant_freeze sea_4temp2 matches 11 positioned 90122 100 27 run setblock ~ ~ ~ air destroy
+execute if score sea_ch5_instant_freeze sea_4temp2 matches 11 positioned 90122 100 27 run function skyblock:sea/m/husk
 execute if score sea_ch5_instant_freeze sea_4temp2 matches 19 positioned 90128 100 27 run setblock ~ ~ ~ air destroy
 execute if score sea_ch5_instant_freeze sea_4temp2 matches 19 positioned 90128 100 27 run function skyblock:sea/m/skeleton_shield
 execute if score sea_ch5_instant_freeze sea_4temp2 matches 21 positioned 90126 100 27 run setblock ~ ~ ~ air destroy

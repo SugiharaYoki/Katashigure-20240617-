@@ -51,7 +51,7 @@ execute if block 90110 95 35 lever[powered=false] \
  if block 90110 98 35 lever[powered=false] \
  if block 90111 98 35 lever[powered=true] \
  if block 90112 98 35 lever[powered=true] \
- if block 90113 98 35 lever[powered=false] positioned 90119 96 27 unless block ~ ~ ~ air \
+ if block 90113 98 35 lever[powered=false] positioned 90119 96 27 unless block ~ ~ ~ air unless block 90132 100 27 air \
 run function skyblock:sea/e/ch5/mem_4
 #scoreboard players set sea_ch5_instant_freeze sea_4temp3 1
 #execute if score sea_ch5_instant_freeze sea_4temp3 matches 1.. run function skyblock:sea/e/ch5/mem_4
