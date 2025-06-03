@@ -74,6 +74,9 @@ execute if score sc Map_Code matches 17 run clone 12 -27 28 16 -23 32 -118 56 -1
 #map018
 execute if score sc Map_Code matches 18 run title @a[tag=!Gaming] actionbar {"text":"空岛战争T5 穷泽叢烬的水灵脉","bold":true,"color":"light_purple"}
 execute if score sc Map_Code matches 18 run clone 12 -43 28 16 -47 32 -118 56 -110
+#map019
+execute if score sc Map_Code matches 19 run title @a[tag=!Gaming] actionbar {"text":"空岛战争T4 失色园","bold":true,"color":"light_purple"}
+execute if score sc Map_Code matches 19 run clone 12 -48 28 16 -52 32 -118 56 -110
 #空岛战争 初始化
 execute if score sc Map_Type matches 1 run kill @e[type=minecraft:armor_stand,x=-121,y=60.5,z=-108,distance=0..2]
 execute if score sc Map_Type matches 1 run summon minecraft:armor_stand -121 60.7 -108 {CustomName:"{\"text\":\"开启\",\"color\":\"aqua\"}",DisabledSlots:65793,CustomNameVisible:1b,Invisible:1b,Marker:1b,NoGravity:1b}
