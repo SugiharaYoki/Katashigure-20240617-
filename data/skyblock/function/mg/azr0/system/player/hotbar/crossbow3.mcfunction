@@ -1,4 +1,4 @@
-$item replace entity @s[scores={Azr0_UPG_crossbow=0}] hotbar.2 with crossbow[custom_data={"azr0weapon_bow":true},custom_name='{"text":"弩","italic":false,"color":"red"}',unbreakable={}]
+item replace entity @s[scores={Azr0_UPG_crossbow=0}] hotbar.2 with crossbow[custom_data={"azr0weapon_bow":true},custom_name='{"text":"弩","italic":false,"color":"red"}',unbreakable={}]
 $item replace entity @s[scores={Azr0_UPG_crossbow=1}] hotbar.2 with crossbow[custom_data={"azr0weapon_bow":true},custom_name='{"text":"弩+","italic":false,"color":"red"}',unbreakable={},enchantments={"power":1,"multishot":$(multishot),"quick_charge":$(load)}]
 $item replace entity @s[scores={Azr0_UPG_crossbow=2}] hotbar.2 with crossbow[custom_data={"azr0weapon_bow":true},custom_name='{"text":"弩++","italic":false,"color":"red"}',unbreakable={},enchantments={"power":2,"multishot":$(multishot),"quick_charge":$(load)}]
 $item replace entity @s[scores={Azr0_UPG_crossbow=3}] hotbar.2 with crossbow[custom_data={"azr0weapon_bow":true},custom_name='{"text":"十字弩","italic":false,"color":"red"}',unbreakable={},enchantments={"power":3,"multishot":$(multishot),"quick_charge":$(load)}]
