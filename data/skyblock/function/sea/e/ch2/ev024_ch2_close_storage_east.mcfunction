@@ -13,6 +13,9 @@ execute if score sea_ch2_close_storage sea_4temp2 matches 409 positioned 90142 1
 execute if score sea_ch2_close_storage sea_4temp2 matches 409 positioned 90139 128 135 run function skyblock:sea/m/skeleton
 execute if score sea_ch2_close_storage sea_4temp2 matches 409 positioned 90139 128 135 run function skyblock:sea/m/skeleton_melee
 execute if score sea_ch2_close_storage sea_4temp2 matches 409 positioned 90139 128 135 if entity @n[tag=sc,scores={sea_player=3..}] run function skyblock:sea/m/skeleton
+
+execute if score sea_ch2_close_storage sea_4temp2 matches 405 positioned 90149 129 129 run kill @e[distance=0..5,type=shulker,tag=SEA_SEEK_DESTINATION]
+
 execute if score sea_ch2_close_storage sea_4temp2 matches 405 run tellraw @a[tag=SEAPT] {"text": "播报：东冷冻库冷凝机功率已切换至“最高”。","color": "green"}
 execute if score sea_ch2_close_storage sea_4temp2 matches 414 run tellraw @a[tag=SEAPT] {"text": "播报：系统警告，东区保险丝熔断，请检查东区电路箱。","color": "red"}
 scoreboard players add sea_ch2_close_storage rng8 1

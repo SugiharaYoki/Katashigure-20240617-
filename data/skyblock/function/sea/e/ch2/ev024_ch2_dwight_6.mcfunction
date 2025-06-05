@@ -12,3 +12,5 @@ execute if score sea_ch2_dwight_conversation rng6 matches 90 positioned 90122 12
 execute if score sea_ch2_dwight_conversation rng6 matches 90 positioned 90122 129 132 run tellraw @a[distance=0..150] [{"text":"熟悉又陌生的声音：","color":"green","bold": true},{"text":"\n“愿天使眷顾你。愿我们不会再遇。”","color":"white","bold": false}]
 
 execute if score sea_ch2_dwight_conversation rng6 matches 90 positioned 90122 129 132 run setblock 90074 104 135 minecraft:potted_red_mushroom
+
+

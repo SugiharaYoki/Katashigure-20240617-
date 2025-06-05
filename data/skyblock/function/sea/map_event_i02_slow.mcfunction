@@ -158,6 +158,7 @@ execute as @n[tag=sc,scores={sea_4temp4=405..415}] run playsound minecraft:ambie
 execute as @n[tag=sc,scores={sea_4temp4=401..410}] run playsound minecraft:block.chain.fall ambient @a 90139.60 132.00 129.32 10 0.5
 execute as @n[tag=sc,scores={sea_4temp4=405}] run setblock 90132 130 136 minecraft:redstone_lamp[lit=true]
 execute as @n[tag=sc,scores={sea_4temp4=405}] run tellraw @a[tag=SEAPT] {"text": "播报：南冷冻库冷凝机功率已切换至“最高”。","color": "green"}
+execute as @n[tag=sc,scores={sea_4temp4=405}] positioned 90132 128 137 run kill @e[distance=0..5,type=shulker,tag=SEA_SEEK_DESTINATION]
 execute as @n[tag=sc,scores={sea_4temp4=419}] positioned 90130 128 144 run function skyblock:sea/m/skeleton
 execute as @n[tag=sc,scores={sea_4temp4=419}] positioned 90130 128 144 run function skyblock:sea/m/skeleton
 execute as @n[tag=sc,scores={sea_4temp4=419}] positioned 90130 128 144 run function skyblock:sea/m/skeleton_melee
@@ -233,6 +234,9 @@ execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 900..1340 run func
 
 execute if entity @a[tag=SEAPT,x=90132,y=120,z=91,dx=23,dy=15,dz=5,tag=!SEAPF] as @n[tag=sc,scores={sea_4temp2=..1999}] run scoreboard players set @s sea_4temp2 2000
 execute if entity @n[tag=sc,scores={sea_4temp2=2001}] positioned 90151.66 128.00 96.00 run function skyblock:sea/m/unique/special_rivette
+execute if entity @n[tag=sc,scores={sea_4temp2=2001}] positioned 90147 129 95 run kill @e[distance=0..5,type=shulker,tag=SEA_SEEK_DESTINATION]
+
+
 execute if entity @n[tag=sc,scores={sea_4temp2=2001}] at @a[tag=SEAPT,x=90132,y=120,z=90.5,dx=23,dy=15,dz=5,limit=1] run tp @a[tag=SEAPT] ~ ~ ~
 execute if entity @n[tag=sc,scores={sea_4temp2=2001..2099}] if entity @n[tag=SEArivette,x=90138,y=128,z=93,distance=0..3.2] run fill 90132 129 94 90131 128 92 air
 execute unless block 90132 128 94 air as @n[tag=sc,scores={sea_4temp2=2085..2099}] run scoreboard players set @s sea_4temp2 2085
@@ -257,11 +261,12 @@ execute if entity @n[tag=sc,scores={sea_4temp2=2112..2121}] positioned 90141 128
 execute if entity @n[tag=sc,scores={sea_4temp2=2121}] positioned 90141 128 93 run kill @e[tag=SEAboss2,x=80000,dx=20000,y=-100,dy=300,z=-10000,dz=20000,type=bogged]
 execute if entity @n[tag=sc,scores={sea_4temp2=2122}] positioned 90141 128 93 run particle minecraft:sculk_soul ~ ~ ~ 1 1 1 0 20
 execute if entity @n[tag=sc,scores={sea_4temp2=2122}] positioned 90141 128 93 run function skyblock:sea/m/unique/boss2
+execute if entity @n[tag=sc,scores={sea_4temp2=2122}] positioned 90066 129 95 run function skyblock:sea/m/destination
 execute if entity @n[tag=sc,scores={sea_4temp2=2279}] positioned 90128 128 97 run function skyblock:sea/m/silverfish
 execute if entity @n[tag=sc,scores={sea_4temp2=2279}] positioned 90128 128 97 run function skyblock:sea/m/silverfish
 execute if entity @n[tag=sc,scores={sea_4temp2=2279}] positioned 90128 128 97 run function skyblock:sea/m/silverfish
 
-execute as @n[tag=sc,scores={sea_4temp2=2120..4999}] as @n[tag=SEAboss2,x=80000,dx=20000,y=-100,dy=300,z=-10000,dz=20000] at @s run function skyblock:sea/p/boss2
+execute as @n[tag=sc,scores={sea_4temp2=2120..4999}] as @n[tag=SEAboss2,x=80000,dx=20000,y=-100,dy=300,z=-10000,dz=20000] at @s run function skyblock:sea/e/ch2/boss2
 
 execute as @n[tag=sc,scores={sea_4temp2=2400..5000}] unless entity @n[tag=SEAboss2] run scoreboard players set @n[tag=sc] sea_4temp2 5001
 execute as @n[tag=sc,scores={sea_4temp2=5001..5005}] as @a run bossbar remove 9066601
@@ -279,6 +284,8 @@ execute as @n[tag=sc,scores={sea_4temp2=5012}] as @a[tag=SEAPT] at @s if entity 
 execute as @n[tag=sc,scores={sea_4temp2=5030}] as @a[tag=SEAPT] at @s if entity @s[advancements={skyblock:sea/doc/15=true,skyblock:sea/doc/16=true,skyblock:sea/doc/17=true,skyblock:sea/doc/17=true}] run tellraw @s {"text":"但是，我已经见证了你们的结局。","color":"gray"}
 execute as @n[tag=sc,scores={sea_4temp2=5057}] as @a[tag=SEAPT] at @s if entity @s[advancements={skyblock:sea/doc/15=true,skyblock:sea/doc/16=true,skyblock:sea/doc/17=true,skyblock:sea/doc/17=true}] run tellraw @s {"text":"我对发生的一切感到很抱歉。虽然改变不了任何悲剧，但我会将此铭记。","color":"gray"}
 execute as @n[tag=sc,scores={sea_4temp2=5089}] as @a[tag=SEAPT] at @s run tellraw @s {"text":"『厄珀娅的悲歌』第二章 完","color":"blue","bold": true}
+execute as @n[tag=sc,scores={sea_4temp2=5089}] positioned 90066 129 95 run kill @e[distance=0..5,type=shulker,tag=SEA_SEEK_DESTINATION]
+
 #execute as @n[tag=sc,scores={sea_4temp2=5089}] as @a[tag=SEAPT] at @s run playsound music_disc.creator_music_box music @a[tag=SEAPT] ~ ~ ~ 1000 0.8
 execute as @n[tag=sc,scores={sea_4temp2=5089}] run function skyblock:sea/generate/preload/map_prepare_ch3
 execute as @n[tag=sc,scores={sea_4temp2=5030}] run setblock 90071 137 151 minecraft:iron_trapdoor[facing=north,open=true]

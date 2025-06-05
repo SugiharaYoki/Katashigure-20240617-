@@ -2,6 +2,8 @@ execute if score sea_ch2_dwight_conversation rng1 matches 1 positioned 90113 128
 execute if score sea_ch2_dwight_conversation rng1 matches 1.. positioned 90113 128 114 as @n[tag=SEAboss2npc] at @s run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
 execute if score sea_ch2_dwight_conversation rng1 matches 5..10 run scoreboard players set sea_ch2_dwight_conversation rng1 5
 execute if score sea_ch2_dwight_conversation rng1 matches 1..19 positioned 90113 128 114 as @n[tag=SEAboss2npc] at @s if entity @p[tag=SEAPT,tag=!SEAPF,distance=0..5] run scoreboard players set sea_ch2_dwight_conversation rng1 20
+execute if score sea_ch2_dwight_conversation rng1 matches 22 positioned 90113 128 113 run kill @e[distance=0..5,type=shulker,tag=SEA_SEEK_DESTINATION]
+execute if score sea_ch2_dwight_conversation rng1 matches 22 positioned 90122 128 132 run function skyblock:sea/m/destination
 execute if score sea_ch2_dwight_conversation rng1 matches 22 positioned 90113 128 114 run playsound entity.bogged.ambient neutral @a ~ ~ ~ 1 0.8
 execute if score sea_ch2_dwight_conversation rng1 matches 22 positioned 90113 128 114 run tellraw @a[distance=0..150] [{"text":"骷髅型态的尸变体：","color":"yellow","bold": true},{"text":"\n“……”","color":"white","bold": false}]
 execute if score sea_ch2_dwight_conversation rng1 matches 32 positioned 90113 128 114 run playsound entity.bogged.ambient neutral @a ~ ~ ~ 1 0.8
@@ -59,5 +61,9 @@ execute if score sea_ch2_dwight_conversation rng5 matches 47 positioned 90128 12
 execute if score sea_ch2_dwight_conversation rng5 matches 51 positioned 90128 129 106 as @n[tag=SEAboss2npc] run effect give @s invisibility infinite 0 true
 execute if score sea_ch2_dwight_conversation rng5 matches 51 positioned 90128 129 106 as @n[tag=SEAboss2npc] run tp @s ~ ~-500 ~
 execute if score sea_ch2_dwight_conversation rng5 matches 51 run weather thunder 1000000s
+
+execute if score sea_ch2_dwight_conversation rng5 matches 51 positioned 90130 129 107 run kill @e[distance=0..5,type=shulker,tag=SEA_SEEK_DESTINATION]
+execute if score sea_ch2_dwight_conversation rng5 matches 51 positioned 90147 129 124 run function skyblock:sea/m/destination
+
 
 

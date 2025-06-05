@@ -118,3 +118,6 @@ execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 1301 positioned 90
 execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 1301 run setblock 90125 130 115 minecraft:stone_button[facing=west]
 execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 1301 run fill 90132 131 106 90132 129 107 slime_block
 execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 1301 positioned 90074.0 129 109.0 run stopsound @a[distance=0..500] music
+
+execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 1301 positioned 90147 129 124 run kill @e[distance=0..5,type=shulker,tag=SEA_SEEK_DESTINATION]
+execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 1301 positioned 90147 129 95 run function skyblock:sea/m/destination

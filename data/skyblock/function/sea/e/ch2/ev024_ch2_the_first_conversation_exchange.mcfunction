@@ -40,4 +40,7 @@ execute as @n[tag=sc,scores={sea_4temp2=392}] run fill 90131 130 129 90131 128 1
 execute as @n[tag=sc,scores={sea_4temp2=392}] run fill 90124 130 137 90124 128 136 minecraft:air
 execute as @n[tag=sc,scores={sea_4temp2=392}] run playsound minecraft:entity.zombie.attack_iron_door ambient @a 90131.00 129.44 129.35 2 0.5
 execute as @n[tag=sc,scores={sea_4temp2=392}] run playsound minecraft:entity.zombie.attack_iron_door ambient @a 90124 128 136 2 0.5
+execute as @n[tag=sc,scores={sea_4temp2=392}] positioned 90122 128 132 run kill @e[distance=0..5,type=shulker,tag=SEA_SEEK_DESTINATION]
+execute as @n[tag=sc,scores={sea_4temp2=392}] positioned 90149 129 129 run function skyblock:sea/m/destination
+execute as @n[tag=sc,scores={sea_4temp2=392}] positioned 90132 128 137 run function skyblock:sea/m/destination
 execute as @n[tag=sc,scores={sea_4temp2=390..395}] run playsound minecraft:ambient.soul_sand_valley.mood ambient @a 90139.60 132.00 129.32 10 1.5

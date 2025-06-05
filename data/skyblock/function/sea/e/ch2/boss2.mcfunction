@@ -1,4 +1,7 @@
 
+execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 1301 positioned 90147 129 124 run kill @e[distance=0..5,type=shulker,tag=SEA_SEEK_DESTINATION]
+execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 1301 positioned 90147 129 95 run function skyblock:sea/m/destination
+
 
 execute as @s at @s run particle minecraft:trial_spawner_detection_ominous ~ ~0.5 ~ 0.5 0.2 0.5 0 5
 execute as @s[tag=boss2hplock3] at @s run particle minecraft:trial_spawner_detection_ominous ~ ~0.5 ~ 0.5 0.2 0.5 0 5

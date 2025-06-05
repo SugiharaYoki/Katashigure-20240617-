@@ -20,6 +20,7 @@ execute as @n[tag=sc,scores={sea_4temp2=813}] run time set 13750t
 execute as @n[tag=sc,scores={sea_4temp2=816}] run time set 14000t
 execute as @n[tag=sc,scores={sea_4temp2=819}] run time set 14250t
 execute as @n[tag=sc,scores={sea_4temp2=821}] run time set 14500t
+execute as @n[tag=sc,scores={sea_4temp2=821}] positioned 90105 130 105 run function skyblock:sea/m/destination
 
 #execute as @n[tag=sc,scores={sea_4temp2=843}] if entity @a[scores={SEAPT_member=2}] run tellraw @a[tag=SEAPT] [{"selector":"@p[tag=SEAPT,scores={SEAPT_member=2}]","color":"white"},{"text":"：某人又闯大祸咯","color":"white"}]
 #execute as @n[tag=sc,scores={sea_4temp2=855}] if entity @a[scores={SEAPT_member=2}] if entity @a[scores={SEAPT_member=1}] run tellraw @a[tag=SEAPT] [{"selector":"@p[tag=SEAPT,scores={SEAPT_member=1}]","color":"white"},{"text":"：我去……你闭嘴吧。","color":"white"}]
@@ -45,3 +46,5 @@ execute as @n[tag=sc,scores={sea_4temp2=868..869}] positioned 90116 129 118 if e
 execute as @n[tag=sc,scores={sea_4temp2=861..862}] positioned 90104 128 103 run function skyblock:sea/m/drowned_small
 execute as @n[tag=sc,scores={sea_4temp2=861..862}] positioned 90104 128 103 run function skyblock:sea/m/drowned_small
 execute as @n[tag=sc,scores={sea_4temp2=861..862}] positioned 90104 128 103 if entity @n[tag=sc,scores={sea_player=4..}] run function skyblock:sea/m/drowned_small
+execute as @n[tag=sc,scores={sea_4temp2=862}] positioned 90105 130 105 run kill @e[distance=0..5,type=shulker,tag=SEA_SEEK_DESTINATION]
+execute as @n[tag=sc,scores={sea_4temp2=862}] positioned 90130 129 107 run function skyblock:sea/m/destination
