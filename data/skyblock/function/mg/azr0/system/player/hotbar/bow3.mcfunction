@@ -1,4 +1,4 @@
-$item replace entity @s[scores={Azr0_UPG_bow=0}] hotbar.2 with bow[custom_data={"azr0weapon_bow":true},custom_name='{"text":"弓","italic":false,"color":"red"}',unbreakable={},enchantments={"piercing":$(pierce),"punch":$(punch)}]
+$item replace entity @s[scores={Azr0_UPG_bow=0}] hotbar.2 with bow[custom_data={"azr0weapon_bow":true},custom_name='{"text":"弓","italic":false,"color":"red"}',unbreakable={}]
 $item replace entity @s[scores={Azr0_UPG_bow=1}] hotbar.2 with bow[custom_data={"azr0weapon_bow":true},custom_name='{"text":"弓+","italic":false,"color":"red"}',unbreakable={},enchantments={"power":1,"piercing":$(pierce),"punch":$(punch)}]
 $item replace entity @s[scores={Azr0_UPG_bow=2}] hotbar.2 with bow[custom_data={"azr0weapon_bow":true},custom_name='{"text":"弓++","italic":false,"color":"red"}',unbreakable={},enchantments={"power":2,"piercing":$(pierce),"punch":$(punch)}]
 $item replace entity @s[scores={Azr0_UPG_bow=3}] hotbar.2 with bow[custom_data={"azr0weapon_bow":true},custom_name='{"text":"战弓","italic":false,"color":"red"}',unbreakable={},enchantments={"power":3,"piercing":$(pierce),"punch":$(punch)}]
