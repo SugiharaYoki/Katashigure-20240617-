@@ -105,7 +105,7 @@ execute as @s[scores={sea_4temp2=1144}] positioned 90140 115 148 run function sk
 execute as @s[scores={sea_4temp2=1144}] positioned 90135 123 141 run function skyblock:sea/m/spider_weak
 
 execute as @s[scores={sea_4temp2=1140}] positioned 90120 122 123 run kill @e[distance=0..5,type=shulker,tag=SEA_SEEK_DESTINATION]
-execute as @s[scores={sea_4temp2=1140}] positioned 90141 122 118 run function skyblock:sea/m/destination
+execute as @s[scores={sea_4temp2=1140}] positioned 90141 123 117 run function skyblock:sea/m/destination
 
 execute as @s[scores={sea_4temp2=1144}] positioned 90109 115 69 run function skyblock:sea/m/unique/npc_fiona
 execute as @s[scores={sea_4temp2=1144}] positioned 90109 115 69 as @n[tag=SEAfiona] at @s run tp @s 90109 115 69 facing 90109 114.8 70

@@ -85,6 +85,6 @@ execute as @s[scores={sea_4temp2=2355}] positioned 90104 122 100 if entity @n[ta
 execute as @s[scores={sea_4temp2=2355}] positioned 90104 122 100 if entity @n[tag=sc,scores={sea_player=5..}] run function skyblock:sea/m/silverfish
 
 execute as @s[scores={sea_4temp2=2353}] positioned 90141 122 100 run kill @e[distance=0..5,type=shulker,tag=SEA_SEEK_DESTINATION]
-execute as @s[scores={sea_4temp2=2353}] positioned 90073 122 122 run function skyblock:sea/m/destination
+execute as @s[scores={sea_4temp2=2353}] positioned 90076 123 122 run function skyblock:sea/m/destination
 
 
