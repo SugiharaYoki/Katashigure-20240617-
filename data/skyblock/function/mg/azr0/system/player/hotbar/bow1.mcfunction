@@ -6,3 +6,4 @@ execute if entity @s[scores={Azr0_UPG_bow_pierce=4}] run function skyblock:mg/az
 execute if entity @s[scores={Azr0_UPG_bow_pierce=5}] run function skyblock:mg/azr0/system/player/hotbar/bow2 {"pierce":6}
 execute if entity @s[scores={Azr0_UPG_bow_pierce=6}] run function skyblock:mg/azr0/system/player/hotbar/bow2 {"pierce":7}
 execute if entity @s[scores={Azr0_UPG_bow_pierce=7}] run function skyblock:mg/azr0/system/player/hotbar/bow2 {"pierce":8}
+say hi
