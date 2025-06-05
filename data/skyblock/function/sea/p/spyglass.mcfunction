@@ -85,6 +85,6 @@ execute if block 90074 103 136 lectern if score SEA_ch5_event_engineering_fiona 
 execute if block 90074 103 136 lectern if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 5001.. run title @s[tag=SEAPT,tag=e_i_47] actionbar {"text":"目标：重返主平台 找到进入行政区的方法","color":"green"}
 
 
-
+execute as @n[distance=0..300,type=shulker,tag=SEA_SEEK_DESTINATION] at @s run function skyblock:sea/p/mob/destination
 
 

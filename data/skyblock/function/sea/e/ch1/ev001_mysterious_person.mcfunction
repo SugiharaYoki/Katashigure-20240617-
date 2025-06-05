@@ -15,3 +15,8 @@ execute if entity @n[tag=sc,scores={sea_player=3..}] positioned 90146 122 112 ru
 execute if entity @n[tag=sc,scores={sea_player=2..}] positioned 90146 122 112 run function skyblock:sea/m/drowned
 execute if entity @n[tag=sc,scores={sea_player=4..}] positioned 90146 122 112 run function skyblock:sea/m/drowned
 
+
+
+execute positioned 90141 122 118 run kill @e[distance=0..5,type=shulker,tag=SEA_SEEK_DESTINATION]
+execute positioned 90141 122 100 run function skyblock:sea/m/destination
+

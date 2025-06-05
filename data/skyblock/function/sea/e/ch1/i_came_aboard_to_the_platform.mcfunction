@@ -1,5 +1,8 @@
 
 
+execute if score sea_chapter_introduction sea_4temp2 matches 10 run kill @e[distance=0..300,type=shulker,tag=SEA_SEEK_DESTINATION]
+execute if score sea_chapter_introduction sea_4temp2 matches 10 positioned 90069 123 136 run function skyblock:sea/m/destination
+
 execute if score sea_chapter_introduction sea_4temp2 matches 10 run tellraw @a[distance=0..250] [{"selector":"@p[tag=SEAPT,scores={SEAPT_member=1}]","color":"white"},{"text":"：有人吗？！","color":"white"}]
 execute if score sea_chapter_introduction sea_4temp2 matches 30 run tellraw @a[distance=0..250] [{"selector":"@p[tag=SEAPT,scores={SEAPT_member=1}]","color":"white"},{"text":"：有人请吱一声，我是太平洋石油管理局维修员！","color":"white"}]
 
