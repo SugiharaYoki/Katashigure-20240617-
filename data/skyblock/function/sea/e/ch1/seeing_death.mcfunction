@@ -12,7 +12,7 @@ execute as @s[scores={sea_4temp2=98}] run playsound minecraft:item.goat_horn.sou
 execute as @s[scores={sea_4temp2=98}] run playsound minecraft:item.goat_horn.sound.6 master @a[tag=SEAPT] 90100 0 100 10000 0.87
 execute as @s[scores={sea_4temp2=98}] run playsound minecraft:item.goat_horn.sound.6 master @a[tag=SEAPT] 90100 0 100 10000 0.84
 
-execute as @s[scores={sea_4temp2=40}] run kill @e[distance=0..300,type=shulker,tag=SEA_SEEK_DESTINATION]
+execute as @s[scores={sea_4temp2=40}] positioned 90120 122 123 run kill @e[distance=0..300,type=shulker,tag=SEA_SEEK_DESTINATION]
 execute as @s[scores={sea_4temp2=40}] positioned 90120 122 123 run function skyblock:sea/m/destination
 execute as @s[scores={sea_4temp2=40}] if entity @a[tag=SEAPT,tag=!seaPerm000] positioned 90116 122 107 run function skyblock:sea/m/destination
 
