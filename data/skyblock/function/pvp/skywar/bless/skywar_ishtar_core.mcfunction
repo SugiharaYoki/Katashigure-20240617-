@@ -78,7 +78,7 @@ execute if items entity @s container.* *[custom_data={skywar_ishtar_25:1}] run t
 
 execute if items entity @s container.* *[custom_data={skywar_ishtar_26:1}] run tag @e[type=wind_charge,distance=2..5] add Bless26
 
-execute if items entity @s[predicate=skyblock:left,predicate=skyblock:right,tag=!skywar_ishtar_27] container.* *[custom_data={skywar_ishtar_27:1}] if items entity @s container.* rail run function skyblock:pvp/skywar/bless/skywar_ishtar_core27
+execute if items entity @s[predicate=skyblock:left,predicate=skyblock:right,predicate=!skyblock:sneak,predicate=!skyblock:jump,tag=!skywar_ishtar_27] container.* *[custom_data={skywar_ishtar_27:1}] if items entity @s container.* rail run function skyblock:pvp/skywar/bless/skywar_ishtar_core27
 execute if items entity @s[predicate=skyblock:left,predicate=skyblock:right,predicate=skyblock:sneak,tag=!skywar_ishtar_27] container.* *[custom_data={skywar_ishtar_27:1}] if items entity @s container.* activator_rail run function skyblock:pvp/skywar/bless/skywar_ishtar_core27_large
 execute if items entity @s[predicate=skyblock:left,predicate=skyblock:right,predicate=skyblock:jump,tag=!skywar_ishtar_27] container.* *[custom_data={skywar_ishtar_27:1}] if items entity @s container.* rail run function skyblock:pvp/skywar/bless/skywar_ishtar_core27_up
 execute if entity @s[tag=skywar_ishtar_27] unless entity @s[predicate=skyblock:left,predicate=skyblock:right] run tag @s remove skywar_ishtar_27
