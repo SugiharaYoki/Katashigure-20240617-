@@ -410,7 +410,7 @@ execute as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run function skyblo
     execute if score tickTimer Azr_system matches 6110 run particle minecraft:portal -79886 44 -14.0 3 3 3 1.5 1600
     execute if score tickTimer Azr_system matches 6110 run particle minecraft:enchant -79886 44 -14.0 1 1 1 0.5 200
     execute if score tickTimer Azr_system matches 6110 run summon illusioner -79903 44 -14.0 {Silent:1b,PersistenceRequired:1b,Tags:["AzrielMob","AzrielBossA"],DeathLootTable:"skyblock:azriel_shadow_tier1",Health:150.0f,CustomName:'"权之残影"',Invulnerable:1b,attributes:[{id:"max_health",base:150.0d},{id:"movement_speed",base:0.15d},{id:"knockback_resistance",base:1.0d}]}
-    execute if score tickTimer Azr_system matches 6115 as @e[tag=AzrielBossA,type=illusioner,limit=3,nbt={OnGround:1b}] at @s run rotate @s entity @r[tag=azrPlayer]
+    execute if score tickTimer Azr_system matches 6115 as @e[tag=AzrielBossA,type=illusioner,limit=3,nbt={OnGround:1b}] at @s run rotate @s facing entity @r[tag=azrPlayer]
     execute if score tickTimer Azr_system matches 6120 as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run playsound minecraft:entity.illusioner.ambient hostile @a[tag=azrPlayer] ~ ~ ~ 100 0.6
     #verbal
     execute if score tickTimer Azr_system matches 6100 unless entity @a[tag=azrPlayer,scores={Azr_skillPoints=..9}] run tellraw @a[tag=azrPlayer] {"text":"〈跳过剧情〉","bold":true,"color":"blue","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 6"}}
@@ -420,11 +420,11 @@ execute as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run function skyblo
     execute if score tickTimer Azr_system matches 6120 if score playerCount Azr_system matches 2 run tellraw @a[tag=azrPlayer] {"text":"“了不起的凡人，这是属于你们二人的胜利。”","color":"white"}
     execute if score tickTimer Azr_system matches 6120 if score playerCount Azr_system matches 3..4 run tellraw @a[tag=azrPlayer] {"text":"“了不起的众位凡人，吾辈甘拜下风。这是属于汝等的胜利。”","color":"white"}
     execute if score tickTimer Azr_system matches 6120 if score playerCount Azr_system matches 5.. run tellraw @a[tag=azrPlayer] {"text":"“了不起的众位凡人，吾辈纵使施展全力，也败下阵来。这是属于汝等的胜利。”","color":"white"}
-    execute if score tickTimer Azr_system matches 6175 as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run rotate @s entity @r[tag=azrPlayer]
+    execute if score tickTimer Azr_system matches 6175 as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run rotate @s facing entity @r[tag=azrPlayer]
     execute if score tickTimer Azr_system matches 6220 as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run playsound minecraft:entity.illusioner.ambient hostile @a[tag=azrPlayer] ~ ~ ~ 100 0.6
     execute if score tickTimer Azr_system matches 6220 run tellraw @a[tag=azrPlayer] {"text":"权之残影：","color":"red"}
     execute if score tickTimer Azr_system matches 6220 run tellraw @a[tag=azrPlayer] {"text":"“只是吾辈仍不明白，为何要将恶魔的大军引导至这生命树来。”","color":"white"}
-    execute if score tickTimer Azr_system matches 6285 as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run rotate @s entity @r[tag=azrPlayer]
+    execute if score tickTimer Azr_system matches 6285 as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run rotate @s facing entity @r[tag=azrPlayer]
     execute if score tickTimer Azr_system matches 6300 as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run playsound minecraft:entity.illusioner.ambient hostile @a[tag=azrPlayer] ~ ~ ~ 100 0.9
     execute if score tickTimer Azr_system matches 6300 run tellraw @a[tag=azrPlayer] {"text":"权之残影：","color":"red"}
     execute if score tickTimer Azr_system matches 6300 if score playerCount Azr_system matches 1 run tellraw @a[tag=azrPlayer] {"text":"“……什、你说……你什么都不知情？”","color":"white"}
