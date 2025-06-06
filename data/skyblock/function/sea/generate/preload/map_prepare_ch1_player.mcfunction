@@ -9,7 +9,7 @@ item replace entity @s[tag=seaPerm000,scores={SEAPT_mode=1..2}] inventory.26 wit
 
 scoreboard players set @s sea_i_emerald 0
 
-#give @s spyglass[lore=['{"text":"我随身携带的望远镜。","color":"white","italic":false}','{"text":"在前途未知的时刻，紧握住它可以让我不再迷惘。","color":"white","italic":false}','{"text":"手持时：显示任务目标 & 跳过已阅读的剧情对话","color":"green","italic":false}']]
+
 item replace entity @s inventory.24 with compass
 #give @s baked_potato 3
 effect give @s regeneration 1 39 false
@@ -86,6 +86,8 @@ execute if block 90062 103 135 grindstone run item replace entity @s armor.head 
 execute run item replace entity @s armor.chest with leather_chestplate[custom_name='{"text":"基础防护服","italic":false,"color":"red"}',custom_data={sea_chest:true},attribute_modifiers=[{type:"armor",slot:"chest",id:"sea_armor:002_01",amount:1.0,operation:"add_value"},{type:"armor_toughness",slot:"chest",id:"sea_armor:002_02",amount:0.5,operation:"add_value"}],unbreakable={}]
 execute if block 90062 103 135 grindstone run item replace entity @s armor.legs with leather_leggings[custom_name='{"text":"基础防护裤","italic":false,"color":"red"}',custom_data={sea_leg:true},attribute_modifiers=[{type:"armor",slot:"legs",id:"sea_armor:001_01",amount:1.0,operation:"add_value"},{type:"armor_toughness",slot:"legs",id:"sea_armor:001_02",amount:0.5,operation:"add_value"}],unbreakable={}]
 execute if block 90075 103 141 minecraft:cauldron run item replace entity @s armor.feet with leather_boots[custom_name='{"text":"基础防护靴","italic":false,"color":"red"}',custom_data={sea_feet:true},attribute_modifiers=[{type:"armor",slot:"feet",id:"sea_armor:008_01",amount:1.0,operation:"add_value"},{type:"armor_toughness",slot:"feet",id:"sea_armor:008_02",amount:0.5,operation:"add_value"}],unbreakable={}]
+
+execute if items entity @a[tag=SEAPT] container.* spyglass run give @s spyglass[lore=['{"text":"我随身携带的望远镜。","color":"white","italic":false}','{"text":"在前途未知的时刻，紧握住它可以让我不再迷惘。","color":"white","italic":false}','{"text":"手持时：显示任务目标 & 跳过已阅读的剧情对话","color":"green","italic":false}']]
 
 execute if block 90062 103 135 grindstone run give @s flint 3
 execute if block 90075 103 141 minecraft:cauldron run give @s flint 3
