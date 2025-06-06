@@ -16,7 +16,7 @@ function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"影猎手"', title
 function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"影猎手"', title:'"袖剑「初绽轮月」"', description:'"慢充能高攻击剑×1"', id: 006}
 function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"影猎手"', title:'"夜城「刺客尊荣」"', description:'"特殊模板 放置于背包时5格内隐身玩家显形"', id: 016}
 function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"影猎手"', title:'"泯没「丛禾蓦至」"', description:'"特殊模板 放置于背包时，可以通过下蹲恢复生命\\\\n在草丛中蹲下可以隐身"', id: 028}
-function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"驯兽师"', title:'"逃亡「刹踪烟消」"', description:'"高速逃跑增强跳跃用药剂×2\\\\n效果瞬间就会结束，所以要尽快利用"', id: 012}
+function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"驯兽师"', title:'"逃亡「刹踪烟消」"', description:'"可食用兔腿×4\\\\n食用后移动速度大幅增加2秒 且可隐身3秒\\\\n有30%的概率使自己受到瞬间伤害！"', id: 012}
 function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"驯兽师"', title:'"命唤「尸亡重兽」"', description:'"僵尸疣猪兽蛋×2、岩浆怪蛋×2\\\\n\\\\n小提示：最好放置点距离自己远一点"', id: 007}
 function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"驯兽师"', title:'"割荒「暗行豸螨」"', description:'"龙息×2 特殊模板 手持时将周围5格的龙息掉落物转换为炸弹螨\\\\n炸弹螨在有玩家接近时会剧烈爆炸"', id: 034}
 function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"建筑师"', title:'"筑稳「雕刻罗盘」"', description:'"罗盘 持有时增加方块操作距离2格\\\\n除此之外也会增加移动速度与防御力\\\\n但是会降低攻击速度"', id: 015}
