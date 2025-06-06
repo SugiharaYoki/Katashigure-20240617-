@@ -18,7 +18,7 @@ execute if entity @s[scores={If_Bless21b=2}] run tp @s ~ ~0.3 ~
 execute if entity @s[scores={If_Bless21b=8}] run tp @s ~ ~0.3 ~
 execute if entity @s[scores={If_Bless21b=14}] run tp @s ~ ~0.3 ~
 execute if entity @s[scores={If_Bless21b=20}] run tp @s ~ ~0.3 ~
-execute if entity @s[scores={If_Bless21b=21..}] run rotate @s ~10 0
+execute if entity @s[scores={If_Bless21b=22..}] run rotate @s ~10 0
 
 execute if entity @s[scores={If_Bless21b=21..}] run execute positioned 0.0 0 0.0 run summon marker ^ ^0.05 ^3 {Tags:["bless21b_arrow_spot_1"]}
 execute if entity @s[scores={If_Bless21b=21..}] run execute as @e[tag=bless21b_arrow_spot_1,type=marker] at @s run tp @s ~ 0.05 ~
@@ -38,5 +38,5 @@ execute if entity @s[scores={If_Bless21b=21..}] positioned ^ ^ ^0.5 run summon a
 execute if entity @s[scores={If_Bless21b=21..}] run data modify entity @n[type=arrow,tag=bless21b_arrow_4,distance=0..1] Motion set from entity @n[type=marker,tag=bless21b_arrow_spot_4] Pos
 
 
-
+execute if entity @s[scores={If_Bless21b=56..}] run kill @s
 
