@@ -5,7 +5,7 @@ execute as @s[scores={sea_4temp2=2006}] run setblock 90143 123 107 minecraft:wax
 execute as @s[scores={sea_4temp2=2007}] run setblock 90143 123 109 minecraft:waxed_copper_bulb[lit=true]
 execute as @s[scores={sea_4temp2=2010}] run setblock 90143 123 111 minecraft:waxed_copper_bulb[lit=true]
 execute as @s[scores={sea_4temp2=2015}] run setblock 90143 123 113 minecraft:waxed_copper_bulb[lit=true]
-execute as @s[scores={sea_4temp2=2015}] positioned 90120 123 123 as @a[distance=0..300] at @s run playsound garden2.bgm.006 music @s ~ ~ ~ 1 1.0
+execute as @s[scores={sea_4temp2=2015}] positioned 90120 123 123 as @a[distance=0..300] at @s run playsound garden2.bgm.006 music @s ~ ~ ~ 0.7 1.0
 execute as @s[scores={sea_4temp2=2001}] run playsound block.copper_bulb.turn_on ambient @a 90143 123 103 10 0.8
 execute as @s[scores={sea_4temp2=2004}] run playsound block.copper_bulb.turn_on ambient @a 90143 123 105 10 0.8
 execute as @s[scores={sea_4temp2=2006}] run playsound block.copper_bulb.turn_on ambient @a 90143 123 107 10 0.8

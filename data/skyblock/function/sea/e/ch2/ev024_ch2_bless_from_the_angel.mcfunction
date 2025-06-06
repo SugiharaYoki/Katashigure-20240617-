@@ -6,7 +6,7 @@ execute as @a[tag=SEAPT,x=90138,y=129,z=117,distance=0..3,tag=!e_i_22] if entity
 execute as @a[tag=SEAPT,x=90138,y=129,z=117,distance=0..3] if entity @a[tag=SEAPT,x=90142,y=129,z=117,distance=8..] if score sea_ch2_angel_bless_trial sea_4temp2 matches 955..962 run tag @s add e_i_22
 
 
-execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 1023 positioned 90120 123 123 as @a[distance=0..300] at @s run playsound garden2.bgm.001 music @s ~ ~ ~ 1 1.0
+execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 1023 positioned 90120 123 123 as @a[distance=0..300] at @s run playsound garden2.bgm.001 music @s ~ ~ ~ 0.7 1.0
 
 
 execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 901 positioned 90133 129 114 run summon stray ~ ~ ~ {NoAI:true,Invulnerable:true,Rotation:[0.0f,0.0f],DeathLootTable:"skyblock:sea_skeleton1",Tags:["SEAmob","SEAeventi02slow2a"],attributes:[{id:"attack_damage",base:2.0},{id:"movement_speed",base:0.17},{id:"max_health",base:16}],Health:16,PersistenceRequired:1b,Silent:1b}

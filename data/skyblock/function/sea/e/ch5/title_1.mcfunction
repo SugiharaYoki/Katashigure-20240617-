@@ -17,4 +17,4 @@ playsound garden2.chapter_title master @s ~ ~ ~ 100 1.0
 #playsound ambient.basalt_deltas.mood master @s ~ ~ ~ 100 0.5
 advancement grant @s only skyblock:sea/chapter5
 tag @s add e_i_38
-execute as @s at @s run playsound garden2.bgm.waterdeath music @s ~ ~ ~ 1 1.0
+execute as @s at @s run playsound garden2.bgm.waterdeath music @s ~ ~ ~ 0.7 1.0

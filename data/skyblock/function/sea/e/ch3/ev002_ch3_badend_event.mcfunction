@@ -7,7 +7,7 @@ execute as @s[tag=SEAch3_spawn_timer7,scores={sea_4temp1=1}] positioned 90133 13
  execute as @s[tag=SEAch3_spawn_timer7,scores={sea_4temp1=30}] positioned 90133 137 108 as @p[tag=SEAPT] \
  run tellraw @a[distance=0..250] [{"text":"邪教徒：","color":"red","bold": true},{"text":"\n“主战兵力出动，不能再让他们抢到更多设施！”","color":"white","bold": false}]
 
-execute as @s[tag=SEAch3_spawn_timer7,scores={sea_4temp1=1}] positioned 90133 137 108 as @a[distance=0..300] at @s run playsound garden2.bgm.002 music @s ~ ~ ~ 1 1.0
+execute as @s[tag=SEAch3_spawn_timer7,scores={sea_4temp1=1}] positioned 90133 137 108 as @a[distance=0..300] at @s run playsound garden2.bgm.002 music @s ~ ~ ~ 0.7 1.0
 
 execute as @s[tag=SEAch3_spawn_timer7,scores={sea_4temp1=1..}] positioned 90116 129 73 as @a[tag=SEAPT,x=90116,y=128,z=66,dx=6,dy=10,dz=18] at @s run clear @s nether_star
 execute as @s[tag=SEAch3_spawn_timer7,scores={sea_4temp1=1..}] positioned 90116 129 73 as @a[tag=SEAPT,x=90116,y=128,z=66,dx=6,dy=10,dz=18] at @s run tag @s add sea_ch3_badend

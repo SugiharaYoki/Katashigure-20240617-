@@ -46,16 +46,16 @@ gamemode survival @a[tag=PVPing,tag=PVPTeamed]
 execute if score sc Map_Code matches 7 run gamemode adventure @a[tag=PVPing,tag=PVPTeamed]
 #[futuredevskywar]
 
-execute if score sc Map_Code matches 2 as @a[tag=PVP_see] at @s run playsound music.end music @s ~ ~ ~ 10
-execute if score sc Map_Code matches 3 as @a[tag=PVP_see] at @s run playsound music.under_water music @s ~ ~ ~ 10
-execute if score sc Map_Code matches 4 as @a[tag=PVP_see] at @s run playsound minecraft:music.nether.crimson_forest music @s ~ ~ ~ 10
-execute if score sc Map_Code matches 7 as @a[tag=PVP_see] at @s run playsound music_disc.13 music @s ~ ~ ~ 10
-execute if score sc Map_Code matches 10 as @a[tag=PVP_see] at @s run playsound music.end music @s ~ ~ ~ 10
-execute if score sc Map_Code matches 11 as @a[tag=PVP_see] at @s run playsound music.game music @s ~ ~ ~ 10
-execute if score sc Map_Code matches 13 as @a[tag=PVP_see] at @s run playsound music.end music @s ~ ~ ~ 10
-execute if score sc Map_Code matches 15 as @a[tag=PVP_see] at @s run playsound music.nether.nether_wastes music @s ~ ~ ~ 10
-execute if score sc Map_Code matches 16 as @a[tag=PVP_see] at @s run playsound music.overworld.cherry_grove music @s ~ ~ ~ 10
-execute if score sc Map_Code matches 17 as @a[tag=PVP_see] at @s run playsound music.nether.basalt_deltas music @s ~ ~ ~ 10
+execute if score sc Map_Code matches 2 as @a[tag=PVP_see] at @s run playsound music.end music @s ~ ~ ~ 0.7
+execute if score sc Map_Code matches 3 as @a[tag=PVP_see] at @s run playsound music.under_water music @s ~ ~ ~ 0.7
+execute if score sc Map_Code matches 4 as @a[tag=PVP_see] at @s run playsound minecraft:music.nether.crimson_forest music @s ~ ~ ~ 0.7
+execute if score sc Map_Code matches 7 as @a[tag=PVP_see] at @s run playsound music_disc.13 music @s ~ ~ ~ 0.7
+execute if score sc Map_Code matches 10 as @a[tag=PVP_see] at @s run playsound music.end music @s ~ ~ ~ 0.7
+execute if score sc Map_Code matches 11 as @a[tag=PVP_see] at @s run playsound music.game music @s ~ ~ ~ 0.7
+execute if score sc Map_Code matches 13 as @a[tag=PVP_see] at @s run playsound music.end music @s ~ ~ ~ 0.7
+execute if score sc Map_Code matches 15 as @a[tag=PVP_see] at @s run playsound music.nether.nether_wastes music @s ~ ~ ~ 0.7
+execute if score sc Map_Code matches 16 as @a[tag=PVP_see] at @s run playsound music.overworld.cherry_grove music @s ~ ~ ~ 0.7
+execute if score sc Map_Code matches 17 as @a[tag=PVP_see] at @s run playsound music.nether.basalt_deltas music @s ~ ~ ~ 0.7
 #[futuredevskywar]
 
 execute if entity @a[tag=NoSkyWar] run tag @n[tag=sc] add Skyblock_NoWorldborder

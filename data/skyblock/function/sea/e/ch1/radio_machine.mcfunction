@@ -23,7 +23,7 @@ execute as @s[scores={sea_4temp2=335}] positioned 90120 123 123 if entity @n[tag
 execute as @s[scores={sea_4temp2=305}] positioned 90120 123 123 if entity @n[tag=sc,scores={sea_player=2..}] if entity @a[scores={SEAPT_member=2}] run tellraw @a[distance=0..50] [{"selector":"@p[tag=SEAPT,scores={SEAPT_member=2}]","color":"white"},{"text":"：该表演临阵脱逃了。","color":"white"}]
 execute as @s[scores={sea_4temp2=335}] positioned 90120 123 123 if entity @n[tag=sc,scores={sea_player=2..}] if entity @a[scores={SEAPT_member=1}] run tellraw @a[distance=0..50] [{"selector":"@p[tag=SEAPT,scores={SEAPT_member=1}]","color":"white"},{"text":"：放屁，守住我后背，咱们多少也得把这些怪物给干掉。","color":"white"}]
 
-execute as @s[scores={sea_4temp2=272}] positioned 90120 123 123 as @a[distance=0..300] at @s run playsound garden2.bgm.006 music @s ~ ~ ~ 1 1.0
+execute as @s[scores={sea_4temp2=272}] positioned 90120 123 123 as @a[distance=0..300] at @s run playsound garden2.bgm.006 music @s ~ ~ ~ 0.7 1.0
 
 execute as @s[scores={sea_4temp2=296..500}] positioned 90120 123 123 run give @a[tag=SEAPT,advancements={skyblock:sea/doc/g18=false},distance=18..] mojang_banner_pattern[custom_data={sea_docg18:true}]
 

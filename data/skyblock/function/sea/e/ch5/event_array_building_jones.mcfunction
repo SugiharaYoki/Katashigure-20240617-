@@ -92,7 +92,7 @@ execute if score @s rng1 matches 384 at @s unless entity @n[tag=SEAnorman] posit
 execute if score @s rng1 matches 354 at @s run playsound entity.evoker.ambient neutral @a ~ ~ ~ 1 1
 execute if score @s rng1 matches 354 at @s run tellraw @a[distance=0..200] [{"text":"琼斯：","color":"yellow","bold": true},{"text":"\n“外面什么动静？你们去查查。”","color":"white","bold": false}]
 
-execute if score @s rng1 matches 367 at @n[tag=SEAjones] as @a[distance=0..200] at @s run playsound garden2.bgm.horrorsings music @s ~ ~ ~ 1 1.0
+execute if score @s rng1 matches 367 at @n[tag=SEAjones] as @a[distance=0..200] at @s run playsound garden2.bgm.horrorsings music @s ~ ~ ~ 0.7 1.0
 
 execute if score @s rng1 matches 367 at @n[tag=SEApillager_npc2] run playsound entity.vindicator.ambient neutral @a ~ ~ ~ 1 1
 execute if score @s rng1 matches 367 at @n[tag=SEApillager_npc2] run tellraw @a[distance=0..200] [{"text":"邪教徒：","color":"yellow","bold": true},{"text":"\n“好，我这就去看看。”","color":"white","bold": false}]

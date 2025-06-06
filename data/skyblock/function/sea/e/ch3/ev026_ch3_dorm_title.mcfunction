@@ -11,5 +11,5 @@ playsound ambient.crimson_forest.mood master @s ~ ~ ~ 100 0.9
 playsound ambient.crimson_forest.additions master @s ~ ~ ~ 100 0.9
 playsound ambient.crimson_forest.additions master @s ~ ~ ~ 100 0.7
 advancement grant @a[tag=SEAPT] only skyblock:sea/chapter3b
-execute at @s run playsound garden2.bgm.005 music @s ~ ~ ~ 1 1.0
+execute at @s run playsound garden2.bgm.005 music @s ~ ~ ~ 0.7 1.0
 tag @s add e_i_37
