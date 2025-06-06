@@ -13,3 +13,4 @@ playsound block.polished_deepslate.place block @a ~ ~ ~ 2 0.8
 
 scoreboard players set @s If_Bless27 0
 clear @s rail 1
+tag @s add skywar_ishtar_27
