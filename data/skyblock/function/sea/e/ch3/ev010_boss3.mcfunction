@@ -56,6 +56,7 @@ execute if entity @n[tag=SEAbossch3_core,scores={sea_4temp4=450..}] unless entit
 
 execute if entity @n[tag=SEAbossch3_core,scores={sea_4temp4=540}] unless entity @n[tag=SEAbossch3_light_keep] if entity @n[tag=sc,scores={sea_player=1}] if entity @a[tag=e_i_27] run tellraw @a[x=90100,y=100,z=100,distance=0..1000] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“第二……盏！！但我快坚持不住了，一定要做到，是你的话就绝对没问题！！”","color":"white","bold": false}]
 execute if entity @n[tag=SEAbossch3_core,scores={sea_4temp4=540}] unless entity @n[tag=SEAbossch3_light_keep] if entity @n[tag=sc,scores={sea_player=2..}] if entity @a[tag=e_i_27] run tellraw @a[x=90100,y=100,z=100,distance=0..1000] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“第二……盏！！但我快坚持不住了，一定要做到，是你们的话就绝对没问题！！”","color":"white","bold": false}]
+execute if entity @n[tag=SEAbossch3_core,scores={sea_4temp4=540}] unless entity @n[tag=SEAbossch3_light_keep] if entity @a[tag=e_i_27] run setblock 90141 18 77 air
 execute if entity @n[tag=SEAbossch3_core,scores={sea_4temp4=540..}] unless entity @n[tag=SEAbossch3_light_keep] if entity @a[tag=e_i_27] run setblock 90141 18 77 waxed_exposed_copper_bulb[lit=true]
 execute if entity @n[tag=SEAbossch3_core,scores={sea_4temp4=540..}] unless entity @n[tag=SEAbossch3_light_keep] if entity @a[tag=e_i_27] run scoreboard players add @n[tag=SEAbossch3_light,x=90138,y=16,z=100,distance=0..3] sea_4temp2 6
 
