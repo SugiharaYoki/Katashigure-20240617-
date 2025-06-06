@@ -30,7 +30,7 @@ function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"圣女"', title:'"
 function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"圣骑士"', title:'"神威「陨落压制」"', description:'"陨落压制核心×3 范围内其他玩家（包括友军）速度完全压制但接近无敌\\\\n\\\\n注意：虽然能够预防跳跃，但是这一效果的持续时长要远远低于减速的时长"', id: 011}
 function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"圣骑士"', title:'"天威「跃空战技」"', description:'"粘液块×3、跃空战技核心×2 给予自己一把重锤\\\\n留在背包内时可以在粘液块/蛋糕上一跃而起\\\\n留在背包内时，蹲下后跳跃能力短暂增强\\\\n\\\\n小提示：推荐自己寻找重锤"', id: 020}
 function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"弓箭手"', title:'"华弓「花散绯芒」"', description:'"超多重射击弓、箭矢×5\\\\n只不过给这把弓附魔几乎是不可能做到的"', id: 013}
-function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"弓箭手"', title:'"祭弓「折剑以箭」"', description:'"号角与特殊模板 放置于背包时吹响号角，即可将所持有的全部近战武器转换为箭矢"', id: 021}
+function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"弓箭手"', title:'"祭弓「折剑以箭」"', description:'"号角与特殊模板 放置于背包时吹响号角，即可将所持有的全部近战武器转换为箭矢\\\\n副手持有模板时 可以释放无差别螺旋箭浪"', id: 021}
 function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"弓箭手"', title:'"剪缘「误月驱华」"', description:'"特殊模板 放置于背包时，若10秒内没受到任何伤害则无效化下一次攻击\\\\n该无效化结束后会取消自身的全部抗性BUFF\\\\n若发动效果时3格内存在其他队伍的玩家，则自己立刻获得一枚末影之眼\\\\n模板存在时，最多持有2颗末影之眼"', id: 023}
 function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"尘埃法师"', title:'"暴劣「湮体崩裂」"', description:'"药剂×2 自残并增加攻击力5秒"', id: 014}
 

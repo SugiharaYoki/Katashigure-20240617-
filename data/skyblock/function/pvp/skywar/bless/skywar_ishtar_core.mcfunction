@@ -66,7 +66,8 @@ execute if entity @s[scores={If_MD_Otherside=1..}] run scoreboard players set @s
 execute if items entity @s weapon.offhand *[custom_data={skywar_ishtar_4:1}] run function skyblock:pvp/skywar/bless/skywar_ishtar_core4
 execute if items entity @s weapon.offhand *[custom_data={skywar_ishtar_4:1}] as @e[type=trident,tag=Bless4_Trident] at @s if entity @a[tag=PVPing,distance=0..1000] run function skyblock:pvp/skywar/bless/skywar_ishtar_core4_e
 
-execute if items entity @s[scores={Skywar_ishtar_usehorn=1..}] container.* *[custom_data={skywar_ishtar_21:1}] run function skyblock:pvp/skywar/bless/skywar_ishtar_core21
+execute if items entity @s[scores={Skywar_ishtar_usehorn=1..}] container.* *[custom_data={skywar_ishtar_21:1}] unless items entity @s weapon.offhand *[custom_data={skywar_ishtar_21:1}] run function skyblock:pvp/skywar/bless/skywar_ishtar_core21
+execute if items entity @s[scores={Skywar_ishtar_usehorn=1..}] container.* *[custom_data={skywar_ishtar_21:1}] if items entity @s weapon.offhand *[custom_data={skywar_ishtar_21:1}] at @s run summon marker ~ ~ ~ {Tags:["If_Bless21b"]}
 
 execute if items entity @s[scores={Skywar_ishtar_usehorn=1..}] container.* *[custom_data={skywar_ishtar_22:1}] run function skyblock:pvp/skywar/bless/skywar_ishtar_core22
 
