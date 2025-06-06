@@ -7,8 +7,8 @@ execute as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run function skyblo
 
 #start
     #boss2 prepare
-    execute unless score tickTimer Azr_system matches -2147483648..2147483647 as @a[x=-79884,y=38,z=-15,distance=..3,tag=azrPlayer] run tp @a[tag=azrPlayer,distance=0.1..] @s
-    execute unless score tickTimer Azr_system matches -2147483648..2147483647 as @a[x=-79884,y=38,z=-15,distance=..3,tag=azrPlayer] run scoreboard players set tickTimer Azr_system 0
+    execute unless score tickTimer Azr_system matches -2147483648..2147483647 as @a[x=-79884,y=38,z=-15,distance=..4,tag=azrPlayer] run tp @a[tag=azrPlayer,distance=0.1..] @s
+    execute unless score tickTimer Azr_system matches -2147483648..2147483647 as @a[x=-79884,y=38,z=-15,distance=..4,tag=azrPlayer] run scoreboard players set tickTimer Azr_system 0
     execute if score tickTimer Azr_system matches 1..10 run scoreboard players set stage Azr_system 24
     #set spawnpoint
     execute if score tickTimer Azr_system matches 1 run tag @a[tag=azrPlayer] add azrUpdateSpawnPoint
