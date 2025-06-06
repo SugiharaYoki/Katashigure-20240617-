@@ -87,7 +87,7 @@ execute if score skywar_start rng1 matches 2 run scoreboard objectives add If_Bl
 execute if score skywar_start rng1 matches 2 run scoreboard objectives add If_Bless23 dummy
 execute if score skywar_start rng1 matches 2 run scoreboard objectives add If_Bless23c custom:damage_resisted
 execute if score skywar_start rng1 matches 2 run scoreboard objectives add If_Bless23c2 custom:damage_taken
-execute if score skywar_start rng1 matches 2 run scoreboard objectives add If_Bless27 minecraft.used:minecraft.activator_rail
+#execute if score skywar_start rng1 matches 2 run scoreboard objectives add If_Bless27 minecraft.used:minecraft.activator_rail
 execute if score skywar_start rng1 matches 2 run scoreboard objectives add If_Bless29 minecraft.used:minecraft.snowball
 execute if score skywar_start rng1 matches 2 run scoreboard objectives add If_Bless30 custom:damage_blocked_by_shield
 execute if score skywar_start rng1 matches 2 run scoreboard objectives add If_Bless31 dummy
@@ -125,7 +125,7 @@ execute if score skywar_start rng1 matches 3 as @a[tag=!NoSkyWar] at @s run scor
 execute if score skywar_start rng1 matches 3 as @a[tag=!NoSkyWar] at @s run scoreboard players set @s If_Bless23 0
 execute if score skywar_start rng1 matches 3 as @a[tag=!NoSkyWar] at @s run scoreboard players set @s If_Bless23c 0
 execute if score skywar_start rng1 matches 3 as @a[tag=!NoSkyWar] at @s run scoreboard players set @s If_Bless23c2 0
-execute if score skywar_start rng1 matches 3 as @a[tag=!NoSkyWar] at @s run scoreboard players set @s If_Bless27 0
+#execute if score skywar_start rng1 matches 3 as @a[tag=!NoSkyWar] at @s run scoreboard players set @s If_Bless27 0
 execute if score skywar_start rng1 matches 3 as @a[tag=!NoSkyWar] at @s run scoreboard players set @s If_Bless29 0
 execute if score skywar_start rng1 matches 3 as @a[tag=!NoSkyWar] at @s run scoreboard players set @s If_Bless30 0
 execute if score skywar_start rng1 matches 3 as @a[tag=!NoSkyWar] at @s run scoreboard players set @s If_Bless31 0

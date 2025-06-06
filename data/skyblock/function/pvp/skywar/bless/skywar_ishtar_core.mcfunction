@@ -78,7 +78,9 @@ execute if items entity @s container.* *[custom_data={skywar_ishtar_25:1}] run t
 
 execute if items entity @s container.* *[custom_data={skywar_ishtar_26:1}] run tag @e[type=wind_charge,distance=2..5] add Bless26
 
-execute if items entity @s[scores={If_Bless27=1..}] container.* *[custom_data={skywar_ishtar_27:1}] run function skyblock:pvp/skywar/bless/skywar_ishtar_core27
+execute if items entity @s[predicate=skyblock:left,predicate=skyblock:right] container.* *[custom_data={skywar_ishtar_27:1}] if items entity @s container.* rail run function skyblock:pvp/skywar/bless/skywar_ishtar_core27
+execute if items entity @s[predicate=skyblock:left,predicate=skyblock:right,predicate=skyblock:sneak] container.* *[custom_data={skywar_ishtar_27:1}] if items entity @s container.* activator_rail run function skyblock:pvp/skywar/bless/skywar_ishtar_core27_large
+execute if items entity @s[predicate=skyblock:left,predicate=skyblock:right,predicate=skyblock:jump] container.* *[custom_data={skywar_ishtar_27:1}] if items entity @s container.* rail run function skyblock:pvp/skywar/bless/skywar_ishtar_core27_up
 
 execute if items entity @s[predicate=skyblock:sneaking] container.* *[custom_data={skywar_ishtar_28:1}] at @s unless block ~ ~ ~ air run function skyblock:pvp/skywar/bless/skywar_ishtar_core28
 
