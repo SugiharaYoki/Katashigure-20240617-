@@ -39,5 +39,5 @@ execute if entity @s[scores={If_Bless21b=21..}] run data modify entity @n[type=a
 
 
 execute if entity @s[scores={If_Bless21b=56..}] run kill @s
-execute if entity @s[scores={If_Bless21b=56..}] run kill @e[tag=bless21b_arrow_spot,type=marker]
+execute if entity @s[scores={If_Bless21b=21..}] run kill @e[tag=bless21b_arrow_spot,type=marker]
 
