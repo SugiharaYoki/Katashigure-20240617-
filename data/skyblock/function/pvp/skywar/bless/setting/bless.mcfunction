@@ -1,5 +1,5 @@
 playsound minecraft:ui.button.click master @s ~ ~ ~ 0.3 1.4 0.4
-
+tellraw @s [{"text":"选择你想使用的礼装","color":"yellow","bold": true},{"text":" 共可分配四个槽位","color":"white"}]
 #function skyblock:pvp/skywar/bless/setting/bless_macro {bless:ishtar_bless_1,bless_name:"- 统之礼"}
 #function skyblock:pvp/skywar/bless/setting/bless_macro {bless:ishtar_bless_2,bless_name:"- 纵之礼"}
 #function skyblock:pvp/skywar/bless/setting/bless_macro {bless:ishtar_bless_3,bless_name:"- 纺之礼"}
@@ -22,7 +22,7 @@ function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"驯兽师"', title
 function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"建筑师"', title:'"筑稳「雕刻罗盘」"', description:'"罗盘 持有时增加方块操作距离2格\\\\n除此之外也会增加移动速度与防御力\\\\n但是会降低攻击速度"', id: 015}
 function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"建筑师"', title:'"困笼「殆命角斗」"', description:'"高速堡垒核心×2 搭建落脚堡垒\\\\n使用后还会获得5秒的跳跃提升\\\\n留在背包内时增加挖掘速度（无法叠加）\\\\n\\\\n注意：如果错过了跳跃提升，这个困笼无法在通常状态下跳出"', id: 009}
 function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"建筑师"', title:'"搬运「输载归初」"', description:'"输载归初核心×2 将周围3格内的宝箱全部刷新成蛋糕盒\\\\n留在背包内时下蹲可以直接破坏脚下的潜影盒\\\\n\\\\n小提示：可用于快速抢夺箱子"', id: 019}
-function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"建筑师"', title:'"筑道「高速隧梯」"', description:'"激活铁轨×1、特殊模板 放置激活铁轨时朝距离你最近的横向正十字坐标打开一道通路\\\\n跳起时则改为向上建造天梯\\\\n\\\\n注意：建造起始点是你，而不是铁轨\\\\n路径上的方块会以破坏形式被清除\\\\n铁轨本身能够复用"', id: 027}
+function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"建筑师"', title:'"筑道「高速隧梯」"', description:'"铁轨×20、激活铁轨×3、特殊模板 拥有普通/激活铁轨时\\\\n同时按左+右键 朝距离最近的横向正十字坐标打开一道通路\\\\n按SHIFT 则消耗激活铁轨 打开更长的通路\\\\n按空格键 则改为向上建造天梯\\\\n路径上的方块会成为掉落物"', id: 027}
 function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"建筑师"', title:'"錾艺「资源集成」"', description:'"特殊模板 不置于副手时，获得某些方块后将自动转换为另一种方块\\\\n土壤类将会成为普通的土、石类将会成为普通的石头\\\\n受影响方块：完整的花岗岩、安山岩、闪长岩、圆石、苔圆石、黑石、深板岩、凝灰岩、方解石、草方块、灰化土、砂土、缠根土、菌丝、绯红岩、诡异岩、红沙等"', id: 033}
 function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"圣女"', title:'"救赎「顷刻天国」"', description:'"顷刻天国核心×2 范围内敌我飘升并发光6秒\\\\n留在背包内时不会陷入中毒状态"', id: 010}
 function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"圣女"', title:'"洗礼「顷刻人间」"', description:'"号角与特殊模板 放置于背包时吹响号角\\\\n即可将4格内全部玩家的主手武器与所装备防具附魔效果清除，且耐久回满\\\\n\\\\n注意：对自己也有效"', id: 022}

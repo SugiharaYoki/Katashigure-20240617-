@@ -1,4 +1,4 @@
-execute if entity @s[scores={Azr0_UPG_crossbow_multishot=0}] run function skyblock:mg/azr0/system/player/hotbar/crossbow2 {"multishot":0}
+execute if entity @s[scores={Azr0_UPG_crossbow_multishot=0}] run function skyblock:mg/azr0/system/player/hotbar/crossbow2 {"multishot":1}
 execute if entity @s[scores={Azr0_UPG_crossbow_multishot=1}] run function skyblock:mg/azr0/system/player/hotbar/crossbow2 {"multishot":1}
 execute if entity @s[scores={Azr0_UPG_crossbow_multishot=2}] run function skyblock:mg/azr0/system/player/hotbar/crossbow2 {"multishot":2}
 execute if entity @s[scores={Azr0_UPG_crossbow_multishot=3}] run function skyblock:mg/azr0/system/player/hotbar/crossbow2 {"multishot":3}
