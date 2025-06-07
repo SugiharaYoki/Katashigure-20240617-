@@ -42,3 +42,5 @@ execute if score #rng2 Azr_system matches 1 run summon marker ~ ~ ~ {Tags:["arro
 execute at @e[tag=AzrielBossAM1,limit=1] if score #rng3 Azr_system matches 1 if score #rng2 Azr_system matches 1 run summon marker ~ ~ ~ {Tags:["arroworb"]}
 execute at @e[tag=AzrielBossAM2,limit=1] if score #rng3 Azr_system matches 2 if score #rng2 Azr_system matches 1 run summon marker ~ ~ ~ {Tags:["arroworb"]}
 execute at @e[tag=AzrielBossAM3,limit=1] if score #rng3 Azr_system matches 3 if score #rng2 Azr_system matches 1 run summon marker ~ ~ ~ {Tags:["arroworb"]}
+
+function skyblock:azr/stage/boss1/move1
