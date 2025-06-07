@@ -16,11 +16,11 @@ execute if score SEA_ch6_event rng1 matches ..200 run function skyblock:sea/e/ch
 execute if score SEA_ch6_event rng1 matches 201.. run function skyblock:sea/e/ch6/part1/event_start_explosion
 
 #行政区一楼遭遇战
-execute unless items block 90148 145 152 container.0 green_wool if entity @a[tag=SEAPT,tag=!SEAPF,x=90139,y=145,z=139,dx=5,dy=4,dz=6] if score SEA_ch6_event rng2 matches 0 run scoreboard players set SEA_ch6_event rng2 1
+execute if block 90149 155 145 iron_bars unless items block 90148 145 152 container.0 green_wool if entity @a[tag=SEAPT,tag=!SEAPF,x=90139,y=145,z=139,dx=5,dy=4,dz=6] if score SEA_ch6_event rng2 matches 0 run scoreboard players set SEA_ch6_event rng2 1
 execute if score SEA_ch6_event rng2 matches 1..80 run function skyblock:sea/e/ch6/part1/event_f1_empty_corridor
 
 #行政区一楼楼梯怪物
-execute if block 90149 155 145 iron_bars unless items block 90148 145 152 container.1 green_wool if entity @a[tag=SEAPT,tag=!SEAPF,x=90146,y=145,z=134,dx=5,dy=4,dz=3] if score SEA_ch6_event rng3 matches 0 run scoreboard players set SEA_ch6_event rng3 1
+execute unless items block 90148 145 152 container.1 green_wool if entity @a[tag=SEAPT,tag=!SEAPF,x=90146,y=145,z=134,dx=5,dy=4,dz=3] if score SEA_ch6_event rng3 matches 0 run scoreboard players set SEA_ch6_event rng3 1
 execute if score SEA_ch6_event rng3 matches 1..80 run function skyblock:sea/e/ch6/part1/event_f1_staircase
 
 
