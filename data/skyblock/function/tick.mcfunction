@@ -17,7 +17,7 @@ execute if entity @a[x=89829,y=12,z=-165,dx=30,dy=20,dz=30] run function skybloc
 
 #二段跳
 execute as @a[tag=!Gaming,gamemode=adventure,x=-200,y=-200,z=-200,dx=400,dy=330,dz=400] at @s unless score @s City_DoubleJump matches 1.. if block ~ ~-0.1 ~ air unless entity @s[predicate=skyblock:jump] run tag @s add City_DoubleJumpPass
-execute as @a[tag=City_DoubleJumpPass] at @s if block ~ ~-0.1 ~ air if entity @s[predicate=skyblock:jump] run scoreboard players set @s City_DoubleJump 1
+execute as @a[tag=City_DoubleJumpPass] at @s if block ~ ~-0.1 ~ air if entity @s[predicate=skyblock:jump,predicate=!skyblock:sprint] run scoreboard players set @s City_DoubleJump 1
 execute as @a[scores={City_DoubleJump=1..},gamemode=adventure] at @s run function skyblock:city/double_jump
 execute as @a[tag=City_DoubleJumpPass] at @s unless block ~ ~-0.1 ~ air run tag @s remove City_DoubleJumpPass
 
