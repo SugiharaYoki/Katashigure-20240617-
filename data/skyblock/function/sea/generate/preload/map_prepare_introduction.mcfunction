@@ -901,12 +901,26 @@ setblock 90147 153 142 air
 fill 90149 156 145 90149 155 146 minecraft:iron_bars
 
 fill 90146 155 149 90150 154 149 minecraft:lever[facing=south]
-
-
-
+setblock 90142 157 118 glass
+setblock 90142 157 122 glass
+setblock 90145 157 129 glass
+setblock 90145 157 135 glass
+setblock 90150 157 129 glass
+setblock 90150 157 135 glass
+setblock 90142 157 139 glass
+setblock 90142 157 143 glass
 
 
 summon minecraft:interaction 90145 154.3 136 {CustomName:'[{"text":"器械式治疗仪"}]',Tags:["SEAaidbox"]}
+
+
+
+
+
+
+
+
+
 
 
 
