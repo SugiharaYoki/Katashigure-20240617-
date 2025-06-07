@@ -4,7 +4,6 @@
 #execute as @s[scores={City_DoubleJump=1..3}] run tp @s ~ ~0.3 ~
 #execute as @s[scores={City_DoubleJump=1..2}] run tp @s ~ ~0.4 ~
 #execute as @s[scores={City_DoubleJump=1}] run tp @s ~ ~0.5 ~
-execute as @s[scores={City_DoubleJump=1}] run tp @s ~ ~ ~
 execute as @s[scores={City_DoubleJump=1}] run effect give @s levitation 5 12 true
 execute as @s[scores={City_DoubleJump=1}] run effect give @s slow_falling 5 50 true
 execute as @s[scores={City_DoubleJump=5}] run effect clear @s levitation
