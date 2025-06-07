@@ -16,7 +16,7 @@ execute as @e[tag=AzrielBossA_outgame] at @s run function skyblock:azr/outgame/b
 execute if entity @a[x=89829,y=12,z=-165,dx=30,dy=20,dz=30] run function skyblock:sea/outside/trial_hall_core
 
 #二段跳
-execute as @a[tag=!Gaming,scores={City_DoubleJump=..0}] at @s if block ~ ~-0.1 ~ air unless entity @s[predicate=skyblock:jump] run tag @s add City_DoubleJumpPass
+execute as @a[tag=!Gaming] at @s unless score @s City_DoubleJump matches 1.. if block ~ ~-0.1 ~ air unless entity @s[predicate=skyblock:jump] run tag @s add City_DoubleJumpPass
 execute as @a[tag=City_DoubleJumpPass] at @s if block ~ ~-0.1 ~ air if entity @s[predicate=skyblock:jump] run scoreboard players set @s City_DoubleJump 1
 execute as @a[scores={City_DoubleJump=1..}] at @s run function skyblock:city/double_jump
 execute as @a[tag=City_DoubleJumpPass] at @s unless block ~ ~-0.1 ~ air run tag @s remove City_DoubleJumpPass
