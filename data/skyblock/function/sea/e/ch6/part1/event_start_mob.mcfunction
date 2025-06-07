@@ -18,6 +18,7 @@ execute if score SEA_ch6_event rng1 matches 50..60 positioned 90118 129 84 run p
 execute if score SEA_ch6_event rng1 matches 50..60 positioned 90118 129 84 run particle sculk_soul ~ ~1 ~ 0.3 0.5 0.3 0.05 10
 execute if score SEA_ch6_event rng1 matches 61 positioned 90118 129 84 run function skyblock:sea/m/zombie_cook
 
+execute if score SEA_ch6_event rng1 matches 1 positioned 90148 146 123 run function skyblock:sea/m/creaking
 
 
 
