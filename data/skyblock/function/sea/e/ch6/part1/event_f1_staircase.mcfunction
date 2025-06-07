@@ -7,7 +7,7 @@ execute if score SEA_ch6_event rng3 matches 1 positioned 90150 152 131 run funct
 execute if score SEA_ch6_event rng3 matches 1 positioned 90150 152 131 run function skyblock:sea/m/drowned_small
 
 execute if score SEA_ch6_event rng3 matches 1 positioned 90150 153 142 run function skyblock:sea/m/creaking
-execute if score SEA_ch6_event rng3 matches 2 positioned 90150 153 142 run function skyblock:sea/m/creaking_done
+#execute if score SEA_ch6_event rng3 matches 2 positioned 90150 153 142 run function skyblock:sea/m/creaking_done
 
 
 scoreboard players add SEA_ch6_event rng3 1
