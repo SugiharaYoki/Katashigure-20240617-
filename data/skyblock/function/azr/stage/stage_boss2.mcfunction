@@ -93,6 +93,7 @@ execute as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run function skyblo
     execute as @e[tag=AzrielBossA,type=illusioner,limit=1] at @s if block ~ ~1 ~ quartz_block run tp @s @r[tag=azrPlayer]
     execute as @e[tag=AzrielBossA,type=illusioner,limit=1] at @s if block ~ ~1 ~ quartz_bricks run tp @s @r[tag=azrPlayer]
     execute as @e[tag=AzrielBossA,type=illusioner,limit=1] at @s if block ~ ~1 ~ quartz_pillar run tp @s @r[tag=azrPlayer]
+    execute as @e[tag=AzrielBossA,type=illusioner,limit=1] at @s if block ~ ~1 ~ quartz_stairs run tp @s @r[tag=azrPlayer]
 #AI - 一阶段
     #进入第一阶段
     execute if score tickTimer Azr_system matches 172 run scoreboard players set tickTimer Azr_system 1000
