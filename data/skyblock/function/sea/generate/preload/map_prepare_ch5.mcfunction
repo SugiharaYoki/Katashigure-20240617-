@@ -441,7 +441,8 @@ setblock 90140 104 23 chest[facing=north]
 #item replace block 90140 104 23 container.11 with echo_shard 2
 #item replace block 90140 104 23 container.15 with iron_ingot 2
 
-setblock 90097 132 99 chest[facing=south]{lock:{components:{custom_name:'"厄珀娅之钥"'}}}
+setblock 90097 132 99 air
+setblock 90097 132 99 chest[facing=south]{lock:{components:{custom_data:{"sea_key04":true}}}}
 item replace block 90097 132 99 container.4 with amethyst_shard 1
 item replace block 90097 132 99 container.12 with amethyst_shard 1
 item replace block 90097 132 99 container.14 with amethyst_shard 1
@@ -597,7 +598,8 @@ setblock 90106 137 31 minecraft:barrel[facing=east]
 item replace block 90106 137 31 container.13 with music_disc_stal 1
 setblock 90150 144 57 minecraft:jukebox
 
-setblock 90132 129 28 chest[facing=north]{lock:{components:{custom_name:'"停机坪仓库的钥匙"'}}}
+setblock 90132 129 28 air
+setblock 90132 129 28 chest[facing=north]{lock:{components:{custom_data:{"sea_key05":true}}}}
 item replace block 90132 129 28 container.11 with arrow 8
 item replace block 90132 129 28 container.13 with disc_fragment_5 3
 item replace block 90132 129 28 container.15 with arrow 8

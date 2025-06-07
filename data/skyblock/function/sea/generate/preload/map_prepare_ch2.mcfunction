@@ -174,7 +174,7 @@ setblock 90100 129 142 air
 setblock 90100 128 142 iron_door[facing=west,half=lower,open=false]
 setblock 90100 129 142 iron_door[facing=west,half=upper,open=false]
 setblock 90118 129 141 lever[facing=south,powered=false]
-setblock 90123 128 141 chest[facing=south]{lock:{components:{custom_name:'"空气循环控制室钥匙"'}}}
+setblock 90123 128 141 chest[facing=south]{lock:{components:{custom_data:{"sea_key10":true}}}}
 item replace block 90123 128 141 container.12 with coal 1
 item replace block 90123 128 141 container.14 with flint 1
 

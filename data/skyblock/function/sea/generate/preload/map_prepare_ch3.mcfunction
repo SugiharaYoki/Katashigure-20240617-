@@ -139,20 +139,25 @@ item replace block 90113 140 109 container.13 with emerald 3
 
 
 setblock 90122 137 120 chest[facing=east]
-setblock 90086 145 116 chest[facing=north]{lock:{components:{custom_name:'"器械资源室2F 燃料架 - B"'}}}
+setblock 90086 145 116 air
+setblock 90086 145 116 chest[facing=north]{lock:{components:{custom_data:{"sea_key09":true}}}}
 item replace block 90086 145 116 container.12 with flint 1
 item replace block 90086 145 116 container.14 with coal 2
-setblock 90086 143 116 chest[facing=north]{lock:{components:{custom_name:'"器械资源室2F 燃料架 - B"'}}}
+setblock 90086 143 116 air
+setblock 90086 143 116 chest[facing=north]{lock:{components:{custom_data:{"sea_key09":true}}}}
 
-setblock 90086 145 114 chest[facing=north]{lock:{components:{custom_name:'"器械资源室2F 燃料架 - A 内有慰问品"'}}}
+setblock 90086 145 114 air
+setblock 90086 145 114 chest[facing=north]{lock:{components:{custom_data:{"sea_key08":true}}}}
 item replace block 90086 145 114 container.12 with gunpowder 2
 item replace block 90086 145 114 container.14 with gunpowder 2
-setblock 90086 143 114 chest[facing=north]{lock:{components:{custom_name:'"器械资源室2F 燃料架 - A 内有慰问品"'}}}
+setblock 90086 143 114 air
+setblock 90086 143 114 chest[facing=north]{lock:{components:{custom_data:{"sea_key08":true}}}}
 item replace block 90086 143 114 container.11 with gunpowder 2
 item replace block 90086 143 114 container.13 with emerald 5
 item replace block 90086 143 114 container.15 with gunpowder 2
 
-setblock 90130 151 142 chest[facing=east]{lock:{components:{custom_name:'"宿舍楼3楼某处的钥匙"'}}}
+setblock 90130 151 142 air
+setblock 90130 151 142 chest[facing=east]{lock:{components:{custom_data:{"sea_key07":true}}}}
 item replace block 90130 151 142 container.11 with flint 1
 item replace block 90130 151 142 container.13 with coal 1
 item replace block 90130 151 142 container.15 with vex_armor_trim_smithing_template 1
@@ -341,7 +346,8 @@ setblock 90100 155 139 chest[facing=north]
 item replace block 90100 155 139 container.12 with arrow 3
 
 
-setblock 90107 156 135 barrel[facing=south]{lock:{components:{custom_name:'"副宿舍楼2F - 个人储藏柜2B的钥匙"'}}}
+setblock 90107 156 135 air
+setblock 90107 156 135 barrel[facing=south]{lock:{components:{custom_data:{"sea_key06":true}}}}
 item replace block 90107 156 135 container.11 with gunpowder 1
 item replace block 90107 156 135 container.15 with vex_armor_trim_smithing_template 1
 
