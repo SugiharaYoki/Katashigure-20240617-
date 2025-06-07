@@ -34,19 +34,19 @@ execute as @s[scores={rng8=3..8}] at @s anchored eyes positioned ^ ^ ^3.3 run pa
 execute as @s[scores={rng8=3..8}] at @s anchored eyes positioned ^ ^ ^3.6 run particle electric_spark ~ ~ ~ 0 0 0 0 1
 execute as @s[scores={rng8=3..8}] at @s anchored eyes positioned ^ ^ ^3.9 run particle electric_spark ~ ~ ~ 0 0 0 0 1
 execute as @s[scores={rng8=3..8}] at @s anchored eyes positioned ^ ^ ^4.2 run particle electric_spark ~ ~ ~ 0 0 0 0 1
-execute as @s[scores={rng8=8}] at @s positioned ^ ^0 ^1 if entity @a[distance=0..1] run scoreboard players set @s rng8 9
-execute as @s[scores={rng8=8}] at @s positioned ^ ^0 ^2 if entity @a[distance=0..1] run scoreboard players set @s rng8 9
-execute as @s[scores={rng8=8}] at @s positioned ^ ^0 ^3 if entity @a[distance=0..1] run scoreboard players set @s rng8 9
-execute as @s[scores={rng8=8}] at @s positioned ^ ^0 ^4 if entity @a[distance=0..1] run scoreboard players set @s rng8 9
-execute as @s[scores={rng8=8}] at @s positioned ^ ^0 ^5 if entity @a[distance=0..1] run scoreboard players set @s rng8 9
-execute as @s[scores={rng8=8}] at @s positioned ^ ^0 ^6 if entity @a[distance=0..1] run scoreboard players set @s rng8 9
-execute as @s[scores={rng8=8}] at @s positioned ^ ^0 ^0.5 if entity @a[distance=0..1] run scoreboard players set @s rng8 9
-execute as @s[scores={rng8=8}] at @s positioned ^ ^0 ^1.5 if entity @a[distance=0..1] run scoreboard players set @s rng8 9
-execute as @s[scores={rng8=8}] at @s positioned ^ ^0 ^2.5 if entity @a[distance=0..1] run scoreboard players set @s rng8 9
-execute as @s[scores={rng8=8}] at @s positioned ^ ^0 ^3.5 if entity @a[distance=0..1] run scoreboard players set @s rng8 9
-execute as @s[scores={rng8=8}] at @s positioned ^ ^0 ^4.5 if entity @a[distance=0..1] run scoreboard players set @s rng8 9
-execute as @s[scores={rng8=8}] at @s positioned ^ ^0 ^5.5 if entity @a[distance=0..1] run scoreboard players set @s rng8 9
-execute as @s[scores={rng8=8}] at @s positioned ^ ^0 ^6.5 if entity @a[distance=0..1] run scoreboard players set @s rng8 9
+execute if score SEA_ch5_event_fiona_favor rng1 matches 10.. as @s[scores={rng8=8}] at @s positioned ^ ^0 ^1 if entity @a[distance=0..1] run scoreboard players set @s rng8 9
+execute if score SEA_ch5_event_fiona_favor rng1 matches 10.. as @s[scores={rng8=8}] at @s positioned ^ ^0 ^2 if entity @a[distance=0..1] run scoreboard players set @s rng8 9
+execute if score SEA_ch5_event_fiona_favor rng1 matches 10.. as @s[scores={rng8=8}] at @s positioned ^ ^0 ^3 if entity @a[distance=0..1] run scoreboard players set @s rng8 9
+execute if score SEA_ch5_event_fiona_favor rng1 matches 10.. as @s[scores={rng8=8}] at @s positioned ^ ^0 ^4 if entity @a[distance=0..1] run scoreboard players set @s rng8 9
+execute if score SEA_ch5_event_fiona_favor rng1 matches 10.. as @s[scores={rng8=8}] at @s positioned ^ ^0 ^5 if entity @a[distance=0..1] run scoreboard players set @s rng8 9
+execute if score SEA_ch5_event_fiona_favor rng1 matches 10.. as @s[scores={rng8=8}] at @s positioned ^ ^0 ^6 if entity @a[distance=0..1] run scoreboard players set @s rng8 9
+execute if score SEA_ch5_event_fiona_favor rng1 matches 10.. as @s[scores={rng8=8}] at @s positioned ^ ^0 ^0.5 if entity @a[distance=0..1] run scoreboard players set @s rng8 9
+execute if score SEA_ch5_event_fiona_favor rng1 matches 10.. as @s[scores={rng8=8}] at @s positioned ^ ^0 ^1.5 if entity @a[distance=0..1] run scoreboard players set @s rng8 9
+execute if score SEA_ch5_event_fiona_favor rng1 matches 10.. as @s[scores={rng8=8}] at @s positioned ^ ^0 ^2.5 if entity @a[distance=0..1] run scoreboard players set @s rng8 9
+execute if score SEA_ch5_event_fiona_favor rng1 matches 10.. as @s[scores={rng8=8}] at @s positioned ^ ^0 ^3.5 if entity @a[distance=0..1] run scoreboard players set @s rng8 9
+execute if score SEA_ch5_event_fiona_favor rng1 matches 10.. as @s[scores={rng8=8}] at @s positioned ^ ^0 ^4.5 if entity @a[distance=0..1] run scoreboard players set @s rng8 9
+execute if score SEA_ch5_event_fiona_favor rng1 matches 10.. as @s[scores={rng8=8}] at @s positioned ^ ^0 ^5.5 if entity @a[distance=0..1] run scoreboard players set @s rng8 9
+execute if score SEA_ch5_event_fiona_favor rng1 matches 10.. as @s[scores={rng8=8}] at @s positioned ^ ^0 ^6.5 if entity @a[distance=0..1] run scoreboard players set @s rng8 9
 execute as @s[scores={rng8=8}] at @s run execute positioned 0.0 0 0.0 run summon marker ^ ^0.15 ^2 {Tags:["SEAfiona_arrow_marker"]}
 execute as @s[scores={rng8=8}] at @s run execute as @e[tag=SEAfiona_arrow_marker,type=marker] at @s run tp @s ~ 0.05 ~
 execute as @s[scores={rng8=8}] at @s run playsound entity.arrow.shoot hostile @a ~ ~1.5 ~ 1 1.1
