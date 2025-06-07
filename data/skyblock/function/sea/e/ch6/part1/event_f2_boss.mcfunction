@@ -28,7 +28,7 @@ execute if score SEA_ch6_f2 rng2 matches 11 run setblock 90150 157 135 glass
 execute if score SEA_ch6_f2 rng2 matches 11 run setblock 90142 157 139 glass
 execute if score SEA_ch6_f2 rng2 matches 12 run setblock 90142 157 143 glass
 
-execute if score SEA_ch6_f2 rng2 matches 16.. positioned 90150 157 129 if entity @n[tag=SEAmob,type=warden,distance=0..25] run scoreboard players set SEA_ch6_f2 rng2 1
+execute if score SEA_ch6_f2 rng2 matches 16.. positioned 90150 157 129 if entity @n[tag=SEAmob,type=warden,distance=0..50] run scoreboard players set SEA_ch6_f2 rng2 1
 
 
 
