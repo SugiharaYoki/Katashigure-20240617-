@@ -888,7 +888,8 @@ setblock 90152 149 136 minecraft:gray_stained_glass
 setblock 90132 100 27 waxed_copper_grate
 
 
-
+clone 90071 -60 153 90097 -36 166 90071 134 153
+clone 90136 -60 153 90159 -52 158 90136 133 153
 
 
 

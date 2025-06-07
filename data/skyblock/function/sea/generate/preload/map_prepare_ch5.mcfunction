@@ -609,5 +609,5 @@ execute positioned 90130 129 26 run function skyblock:sea/m/silverfish
 execute positioned 90130 129 26 run function skyblock:sea/m/silverfish
 
 
-
-
+clone 90101 -60 153 90127 -36 166 90071 134 153
+clone 90136 -60 163 90159 -52 168 90136 133 153
