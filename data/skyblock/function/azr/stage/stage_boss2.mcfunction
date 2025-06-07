@@ -313,11 +313,11 @@ execute as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run function skyblo
     execute if score tickTimer Azr_system matches 3111 run bossbar set azr:boss_hp_bar players @a[tag=azrPlayer]
     execute if score tickTimer Azr_system matches 3111 as @a[tag=azrPlayer] at @s run playsound minecraft:vol3.grenade master @s ~ ~ ~ 0.65
     execute if score tickTimer Azr_system matches 3310..4110 store result score #azr_boss2_rng rng9 run random value 1..40
-    execute if score tickTimer Azr_system matches 3150..4150 if score #azr_boss2_rng rng9 matches 1 as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s if entity @a[tag=azrPlayer,distance=0..2.5] run function skyblock:azr/stage/boss1/tp2
-    execute if score tickTimer Azr_system matches 3150..4150 if score #azr_boss2_rng rng9 matches 2 as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s if entity @a[tag=azrPlayer,distance=0..4.5] run function skyblock:azr/stage/boss1/tp1
-    execute if score tickTimer Azr_system matches 3150..4150 if score #azr_boss2_rng rng9 matches 3 as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s if entity @a[tag=azrPlayer,distance=0..6.5] run function skyblock:azr/stage/boss1/move1
+    execute if score tickTimer Azr_system matches 3150..4150 if score #azr_boss2_rng rng9 matches 1 as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s if entity @a[tag=azrPlayer,distance=0..4.5] run function skyblock:azr/stage/boss1/tp2
+    execute if score tickTimer Azr_system matches 3150..4150 if score #azr_boss2_rng rng9 matches 2 as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s if entity @a[tag=azrPlayer,distance=0..7.5] run function skyblock:azr/stage/boss1/tp1
+    execute if score tickTimer Azr_system matches 3150..4150 if score #azr_boss2_rng rng9 matches 3 as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s if entity @a[tag=azrPlayer,distance=0..9.5] run function skyblock:azr/stage/boss1/move1
     execute if score tickTimer Azr_system matches 3200..3850 if score #azr_boss2_rng rng9 matches 4 as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run function skyblock:azr/stage/boss2/move3
-    execute if score tickTimer Azr_system matches 3500..3760 if score #azr_boss2_rng rng9 matches 6 as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run function skyblock:azr/stage/boss2/move3
+    execute if score tickTimer Azr_system matches 3500..3760 if score #azr_boss2_rng rng9 matches 13..18 as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run function skyblock:azr/stage/boss2/move3
     execute if score tickTimer Azr_system matches 3250..4050 if score #azr_boss2_rng rng9 matches 7 run kill @e[sort=random,limit=1,type=illusioner,tag=!AzrielBossA]
     execute if score tickTimer Azr_system matches 3150..4150 if score #azr_boss2_rng rng9 matches 8 as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run function skyblock:azr/stage/boss1/largeflat1_w
     execute if score tickTimer Azr_system matches 3150..4150 if score #azr_boss2_rng rng9 matches 8 as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run function skyblock:azr/stage/boss1/largeflat1
