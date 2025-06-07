@@ -2,9 +2,4 @@ summon creaking ~ ~ ~ {CustomName:'[{"text":"伪树之枝"}]',DeathLootTable:"sk
 
 effect give @n[type=minecraft:creaking,tag=SEAmob,tag=!SEAcreaking] minecraft:invisibility infinite 0 true
 execute as @p[tag=SEAPT] at @s positioned ^ ^1 ^0.8 run tp @n[type=minecraft:creaking,tag=SEAmob,tag=!SEAcreaking] ~ ~ ~
-tp @n[type=minecraft:creaking,tag=SEAmob,tag=!SEAcreaking] ~ ~ ~
-effect clear @n[type=minecraft:creaking,tag=SEAmob,tag=!SEAcreaking] invisibility
-data modify entity @n[type=minecraft:creaking,tag=SEAmob,tag=!SEAcreaking] Invulnerable set value 0b
-data modify entity @n[type=minecraft:creaking,tag=SEAmob,tag=!SEAcreaking] Silent set value 0b
-tag @n[type=minecraft:creaking,tag=SEAmob,tag=!SEAcreaking] add SEAcreaking
 
