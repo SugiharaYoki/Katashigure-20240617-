@@ -1,6 +1,6 @@
 
 
-execute if score SEA_ch6_f2 rng1 matches 1 run effect give @a[tag=SEAPT] darkness 1 10 true
+execute if score SEA_ch6_f2 rng1 matches 2 run effect give @a[tag=SEAPT] darkness 1 10 true
 #execute if score SEA_ch6_f2 rng1 matches 1..3 positioned 90142 153 130 run particle minecraft:dripping_obsidian_tear ~ ~1 ~ 0.5 1 0.5 0 80
 execute if score SEA_ch6_f2 rng1 matches 3 positioned 90142 153 130 run function skyblock:sea/m/warden
 
