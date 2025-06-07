@@ -13,6 +13,7 @@ scoreboard objectives add mg_cdc_kill_best dummy {"text":"『水晶防御弩台�
 scoreboard objectives add 4ASCEND_wins dummy [{"text":"『4ASCEND ","color":"#4467d3","bold":true},{"text":"胜利总次数』","color":"#f58390","bold":true}]
 #主城&未分类
 scoreboard objectives add MultiMenu trigger
+scoreboard objectives add City_DoubleJump dummy
 scoreboard objectives add skyblock_system dummy
 scoreboard objectives add Achive_Bell100 dummy
 scoreboard objectives add AnnouncementTime dummy
