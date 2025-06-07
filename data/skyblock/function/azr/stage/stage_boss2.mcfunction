@@ -77,7 +77,7 @@ execute as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run function skyblo
 
 #AI
     #每刻有1/8的可能（期望：每8刻）面向最近玩家
-    execute if score tickTimer Azr_system matches 152..5000 if score #rng8 Azr_system matches 1 as @e[tag=AzrielBossA,type=illusioner,limit=3,nbt={OnGround:1b}] at @s run tp @s ~ ~ ~ facing entity @p[tag=azrPlayer]
+    execute if score tickTimer Azr_system matches 152..5000 if score #rng8 Azr_system matches 1 as @e[tag=AzrielBossA,type=illusioner,limit=3,nbt={OnGround:1b}] at @s run rotate @s facing entity @p[tag=azrPlayer]
     execute if score tickTimer Azr_system matches 152..5000 run team join AzrBossA @e[tag=AzrielMob,x=-79903,y=37,z=-15,distance=..100]
     #状态效果控制
     execute if score tickTimer Azr_system matches 152..5000 store result bossbar azr:boss_hp_bar value run data get entity @e[tag=AzrielBossA,type=illusioner,limit=1] Health
@@ -313,10 +313,10 @@ execute as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run function skyblo
     execute if score tickTimer Azr_system matches 3111 as @a[tag=azrPlayer] at @s run playsound minecraft:vol3.grenade master @s ~ ~ ~ 0.65
     execute if score tickTimer Azr_system matches 3310..4110 store result score #azr_boss2_rng rng9 run random value 1..40
     execute if score tickTimer Azr_system matches 3150..4150 if score #azr_boss2_rng rng9 matches 1 as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s if entity @a[tag=azrPlayer,distance=0..2.5] run function skyblock:azr/stage/boss1/tp2
-    execute if score tickTimer Azr_system matches 3150..4150 if score #azr_boss2_rng rng9 matches 2 as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s if entity @a[tag=azrPlayer,distance=0..2.5] run function skyblock:azr/stage/boss1/tp1
-    execute if score tickTimer Azr_system matches 3150..4150 if score #azr_boss2_rng rng9 matches 3 as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s if entity @a[tag=azrPlayer,distance=0..4.5] run function skyblock:azr/stage/boss1/move1
-    execute if score tickTimer Azr_system matches 3250..3850 if score #azr_boss2_rng rng9 matches 4 as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run function skyblock:azr/stage/boss2/move1
-    execute if score tickTimer Azr_system matches 3750..3760 if score #azr_boss2_rng rng9 matches 6 as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run function skyblock:azr/stage/boss2/move2
+    execute if score tickTimer Azr_system matches 3150..4150 if score #azr_boss2_rng rng9 matches 2 as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s if entity @a[tag=azrPlayer,distance=0..4.5] run function skyblock:azr/stage/boss1/tp1
+    execute if score tickTimer Azr_system matches 3150..4150 if score #azr_boss2_rng rng9 matches 3 as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s if entity @a[tag=azrPlayer,distance=0..6.5] run function skyblock:azr/stage/boss1/move1
+    execute if score tickTimer Azr_system matches 3200..3850 if score #azr_boss2_rng rng9 matches 4 as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run function skyblock:azr/stage/boss2/move3
+    execute if score tickTimer Azr_system matches 3500..3760 if score #azr_boss2_rng rng9 matches 6 as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run function skyblock:azr/stage/boss2/move4
     execute if score tickTimer Azr_system matches 3250..4050 if score #azr_boss2_rng rng9 matches 7 run kill @e[sort=random,limit=1,type=illusioner,tag=!AzrielBossA]
     execute if score tickTimer Azr_system matches 3150..4150 if score #azr_boss2_rng rng9 matches 8 as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run function skyblock:azr/stage/boss1/largeflat1_w
     execute if score tickTimer Azr_system matches 3150..4150 if score #azr_boss2_rng rng9 matches 8 as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run function skyblock:azr/stage/boss1/largeflat1
@@ -343,7 +343,7 @@ execute as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run function skyblo
     execute if score tickTimer Azr_system matches 3120..4200 unless entity @e[tag=AzrielBossA,type=illusioner,limit=3] run scoreboard players set tickTimer Azr_system 6000
 
     #finalize
-    execute if score tickTimer Azr_system matches 152..5000 if score #rng8 Azr_system matches 1 as @e[tag=AzrielBossA,type=illusioner,limit=3,nbt={OnGround:1b}] at @s run tp @s ~ ~ ~ facing entity @p[tag=azrPlayer]
+    execute if score tickTimer Azr_system matches 152..5000 if score #rng8 Azr_system matches 1 as @e[tag=AzrielBossA,type=illusioner,limit=3,nbt={OnGround:1b}] at @s run rotate @s facing entity @p[tag=azrPlayer]
     execute if score tickTimer Azr_system matches 6001 run kill @e[type=marker,tag=ZaneiSpotCage]
     execute if score tickTimer Azr_system matches 6001 run kill @e[type=marker,tag=arroworb]
     execute if score tickTimer Azr_system matches 6001 run kill @e[tag=AzrielDecMob]
