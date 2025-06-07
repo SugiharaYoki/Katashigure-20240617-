@@ -60,9 +60,9 @@ execute as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run function skyblo
     execute if score tickTimer Azr_system matches 80 run tellraw @a[tag=azrPlayer] {"text":"权之残影：","color":"red"}
     execute if score tickTimer Azr_system matches 80 if score playerCount Azr_system matches 1 run tellraw @a[tag=azrPlayer] {"text":"“岂有此理……我、我要将你千刀万剐，亲自送你下地狱！！”","color":"white"}
     execute if score tickTimer Azr_system matches 80 if score playerCount Azr_system matches 2.. run tellraw @a[tag=azrPlayer] {"text":"“岂有此理……我、我要将你们千刀万剐，亲自送你们下地狱！！”","color":"white"}
-    execute if score tickTimer Azr_system matches 3020 run tellraw @a[tag=azrPlayer] {"text":"权之残影：","color":"red"}
-    execute if score tickTimer Azr_system matches 3020 if score playerCount Azr_system matches 1 run tellraw @a[tag=azrPlayer] {"text":"“难道你以为这就结束了吗？”","color":"white"}
-    execute if score tickTimer Azr_system matches 3020 if score playerCount Azr_system matches 2.. run tellraw @a[tag=azrPlayer] {"text":"“难道你们以为这就结束了吗？”","color":"white"}
+    execute if score tickTimer Azr_system matches 3070 run tellraw @a[tag=azrPlayer] {"text":"权之残影：","color":"red"}
+    execute if score tickTimer Azr_system matches 3070 if score playerCount Azr_system matches 1 run tellraw @a[tag=azrPlayer] {"text":"“难道你以为这就结束了吗？”","color":"white"}
+    execute if score tickTimer Azr_system matches 3070 if score playerCount Azr_system matches 2.. run tellraw @a[tag=azrPlayer] {"text":"“难道你们以为这就结束了吗？”","color":"white"}
     execute if score tickTimer Azr_system matches 3120 run tellraw @a[tag=azrPlayer] {"text":"权之残影：","color":"red"}
     execute if score tickTimer Azr_system matches 3120 if score playerCount Azr_system matches 1..5 run tellraw @a[tag=azrPlayer] {"text":"“真正的战斗……由此刻开始。”","color":"white"}
     execute if score tickTimer Azr_system matches 3120 if score playerCount Azr_system matches 6.. run tellraw @a[tag=azrPlayer] {"text":"“做好十二分准备吧！于吾的神力之下，你们必将全数葬身此地！”","color":"white"}
