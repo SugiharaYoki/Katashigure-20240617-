@@ -278,7 +278,7 @@ execute as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run function skyblo
     execute if score tickTimer Azr_system matches 3001 run particle minecraft:reverse_portal -79931 39 88 0 0 0 1.5 1800
     execute if score tickTimer Azr_system matches 3001 run particle minecraft:enchant -79931 39 88 3 3 3 1.5 800
     # Wave II 循环直到死亡 3110..4150
-    execute if score tickTimer Azr_system matches 3310..4110 store result score #azr_boss2_rng3 rng3 run random value set 1..3
+    execute if score tickTimer Azr_system matches 3310..4110 store result score #azr_boss2_rng3 rng3 run random value 1..3
     execute if score tickTimer Azr_system matches 3310 as @n[tag=AzrielBossA,type=illusioner] at @s run function skyblock:azr/stage/boss2/skill_select
     execute if score tickTimer Azr_system matches 3510 as @n[tag=AzrielBossA,type=illusioner] at @s run function skyblock:azr/stage/boss2/skill_select
     execute if score tickTimer Azr_system matches 3710 as @n[tag=AzrielBossA,type=illusioner] at @s run function skyblock:azr/stage/boss2/skill_select
