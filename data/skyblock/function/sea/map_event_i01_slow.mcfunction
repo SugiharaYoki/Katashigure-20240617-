@@ -124,7 +124,7 @@ execute as @n[tag=sc,scores={sea_4temp2=4020..5000}] unless entity @n[tag=SEAbos
 execute as @n[tag=sc,scores={sea_4temp2=5001}] run kill @e[tag=SEAboss1mob]
 execute as @n[tag=sc,scores={sea_4temp2=5001}] run bossbar remove 9066601
 execute as @n[tag=sc,scores={sea_4temp2=5001}] positioned 90074.0 129 109.0 run stopsound @a[distance=0..500] music
-execute as @n[tag=sc,scores={sea_4temp2=5001}] as @a[tag=SEAPT] at @s run playsound item.trident.thunder ambient @s ~ ~ ~ 100 0.5
+execute as @n[tag=sc,scores={sea_4temp2=5001}] as @a[tag=SEAPT] at @s run playsound item.trident.thunder ambient @s ~ ~ ~ 2 0.5
 execute as @n[tag=sc,scores={sea_4temp2=5003}] run give @a[tag=SEAPT,scores={SEAPT_mode=1}] nether_star
 execute as @n[tag=sc,scores={sea_4temp2=5003}] as @a[tag=SEAPT] if score @s sea_speedrun_ch1 > sc sea_speedrun_ch1 run scoreboard players operation @s sea_speedrun_ch1 = sc sea_speedrun_ch1
 execute as @n[tag=sc,scores={sea_4temp2=5003}] run scoreboard players set @a[tag=SEAPT,scores={sea_progress=..2}] sea_progress 3
@@ -140,7 +140,7 @@ execute as @n[tag=sc,scores={sea_4temp2=5054}] run fill 90076 122 121 90076 122 
 execute as @n[tag=sc,scores={sea_4temp2=5056}] run fill 90076 123 121 90076 123 123 air
 execute as @n[tag=sc,scores={sea_4temp2=5058}] run fill 90076 124 121 90076 124 123 air
 execute as @n[tag=sc,scores={sea_4temp2=5065}] as @a[tag=SEAPT] at @s run tellraw @s {"text":"『厄珀娅的悲歌』第一章 完","color":"blue","bold": true}
-execute as @n[tag=sc,scores={sea_4temp2=5065}] as @a[tag=SEAPT] at @s run playsound music_disc.creator_music_box music @a[tag=SEAPT] ~ ~ ~ 1000 0.9
+execute as @n[tag=sc,scores={sea_4temp2=5065}] as @a[tag=SEAPT] at @s run playsound music_disc.creator_music_box music @a[tag=SEAPT] ~ ~ ~ 1 0.9
 execute as @n[tag=sc,scores={sea_4temp2=5065}] positioned 90076 123 122 run kill @e[distance=0..5,type=shulker,tag=SEA_SEEK_DESTINATION]
 execute as @n[tag=sc,scores={sea_4temp2=5065}] positioned 90113 128 113 run function skyblock:sea/m/destination
 execute as @n[tag=sc,scores={sea_4temp2=5065}] run function skyblock:sea/generate/preload/map_prepare_ch2

@@ -133,5 +133,5 @@ execute as @n[tag=SEAbossch3_core,tag=SEAbossch3_core_lighted,scores={sea_4temp7
 
 execute as @n[tag=SEAbossch3_core,tag=SEAbossch3_core_lighted,scores={sea_4temp7=80}] as @a[tag=SEAPT] at @s run tellraw @s {"text":"『厄珀娅的悲歌』第三章 完","color":"blue","bold": true}
 execute as @n[tag=SEAbossch3_core,tag=SEAbossch3_core_lighted,scores={sea_4temp7=80}] if score sc sea_speedrun_ch3 matches ..960 run give @a[tag=SEAPT] mojang_banner_pattern[custom_data={sea_docg15:true}]
-#execute as @n[tag=SEAbossch3_core,tag=SEAbossch3_core_lighted,scores={sea_4temp7=80}] as @a[tag=SEAPT] at @s run playsound minecraft:app1.speirapyrgos music @a[tag=SEAPT] ~ ~ ~ 1000 1
+#execute as @n[tag=SEAbossch3_core,tag=SEAbossch3_core_lighted,scores={sea_4temp7=80}] as @a[tag=SEAPT] at @s run playsound minecraft:app1.speirapyrgos music @a[tag=SEAPT] ~ ~ ~ 1 1
 execute as @n[tag=SEAbossch3_core,tag=SEAbossch3_core_lighted,scores={sea_4temp7=80}] run function skyblock:sea/generate/preload/map_prepare_ch4

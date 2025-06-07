@@ -24,7 +24,19 @@ execute unless items block 90148 145 152 container.1 green_wool if entity @a[tag
 execute if score SEA_ch6_event rng3 matches 1..80 run function skyblock:sea/e/ch6/part1/event_f1_staircase
 
 
-
+#记忆密码1
+execute if block 90146 155 149 lever[powered=false] \
+ if block 90147 155 149 lever[powered=true] \
+ if block 90148 155 149 lever[powered=false] \
+ if block 90149 155 149 lever[powered=true] \
+ if block 90150 155 149 lever[powered=true] \
+ if block 90146 154 149 lever[powered=true] \
+ if block 90147 154 149 lever[powered=false] \
+ if block 90148 154 149 lever[powered=false] \
+ if block 90149 154 149 lever[powered=false] \
+ if block 90150 154 149 lever[powered=false] \
+ positioned 90149 155 145 unless block ~ ~ ~ air \
+run function skyblock:sea/e/ch6/mem_1
 
 
 

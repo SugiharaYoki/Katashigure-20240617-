@@ -894,6 +894,19 @@ clone 90136 -60 153 90159 -52 158 90136 133 153
 
 clone 90082 -60 172 90093 -51 187 90082 124 152
 
+setblock 90147 153 136 redstone_block
+setblock 90147 153 136 air
+setblock 90147 153 142 redstone_block
+setblock 90147 153 142 air
+fill 90149 156 145 90149 155 146 minecraft:iron_bars
+
+fill 90146 155 149 90150 154 149 minecraft:lever[facing=south]
+
+
+
+
+
+summon minecraft:interaction 90145 154.3 136 {CustomName:'[{"text":"器械式治疗仪"}]',Tags:["SEAaidbox"]}
 
 
 

@@ -117,6 +117,6 @@ execute if score SEA_ch5_event_boss5 rng9 matches 460 run give @a[tag=SEAPT,scor
 execute if score SEA_ch5_event_boss5 rng9 matches 460 run scoreboard players set @a[tag=SEAPT,scores={sea_progress=..14}] sea_progress 15
 
 execute if score SEA_ch5_event_boss5 rng9 matches 500 as @a[tag=SEAPT] at @s run tellraw @s {"text":"『厄珀娅的悲歌』第五章 完","color":"blue","bold": true}
-execute if score SEA_ch5_event_boss5 rng9 matches 500 as @a[tag=SEAPT] at @s run playsound music_disc.creator music @a[tag=SEAPT] ~ ~ ~ 1000 1
+execute if score SEA_ch5_event_boss5 rng9 matches 500 as @a[tag=SEAPT] at @s run playsound music_disc.creator music @a[tag=SEAPT] ~ ~ ~ 1 1
 execute if score SEA_ch5_event_boss5 rng9 matches 500 as @a[tag=SEAPT] if score @s sea_speedrun_ch5 > sc sea_speedrun_ch5 run scoreboard players operation @s sea_speedrun_ch5 = sc sea_speedrun_ch5
 execute if score SEA_ch5_event_boss5 rng9 matches 500 run function skyblock:sea/generate/preload/map_prepare_ch6
