@@ -10,3 +10,4 @@ execute as @s[scores={City_DoubleJump=1}] run tp @s ~ ~0.1 ~
 execute as @s[scores={City_DoubleJump=9..}] run tag @s remove City_DoubleJumpPass
 execute as @s[scores={City_DoubleJump=9..}] run scoreboard players set @s City_DoubleJump 0
 
+scoreboard players add @s City_DoubleJump 1
