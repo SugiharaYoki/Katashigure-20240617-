@@ -917,7 +917,9 @@ clone 90170 -60 120 90190 -48 132 90113 136 128
 clone 90099 -60 108 90107 -49 117 90099 128 108
 
 fill 90144 154 121 90144 153 121 minecraft:slime_block
-
+setblock 90151 153 124 chest[facing=north]
+item replace block 90151 153 124 container.11 with emerald 3
+item replace block 90151 153 124 container.15 with emerald 3
 
 
 

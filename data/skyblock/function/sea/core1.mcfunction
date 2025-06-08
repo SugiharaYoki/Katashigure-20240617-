@@ -211,6 +211,13 @@ item replace block 90080 153 147 container.14 with flow_banner_pattern[custom_da
 '{"text":"医务中心的笔记 - 丹尼尔","italic":true,"color":"dark_purple","italic":false}',\
 lore=['{"text":"原本医务中心由于细菌感染的原因就已经人满为患了，再加上暴乱……","color":"white","italic":false}','{"text":"这下子不论是医疗设施还是药品都已经严重不足了。","color":"white","italic":false}','{"text":"我为了自己人藏了几瓶药剂，隔天就发现药全都被暴民偷了。","color":"white","italic":false}','{"text":"他们根本不是要邪教徒跟他们讲道理，他们自己就不讲任何道理。","color":"white","italic":false}','{"text":"相反，那群邪教徒才是积极配合我们治疗病患的一方。","color":"white","italic":false}','{"text":"暴乱是从我们与外部失联，且通讯平台与主平台也失联后开始的。","color":"white","italic":false}','{"text":"但那显然不可能是邪教徒的手笔。他们巴不得圣水晶信仰传播到外界。","color":"white","italic":false}','{"text":"有一股神秘的力量吸收了电磁波。暴民们知道这一点，却装作不知道。","color":"white","italic":false}']]
 
+
+
+item replace block 90151 153 124 container.13 with flow_banner_pattern[custom_data={sea_doc22b:true},custom_name=\
+'{"text":"行政区二楼仓库的笔记 - 诺玛","italic":true,"color":"dark_purple","italic":false}',\
+lore=['{"text":"不够，还要更多。","color":"white","italic":false}','{"text":"还要更多。","color":"white","italic":false}','{"text":"还要更多还要更多还要更多还要更多","color":"white","italic":false}','{"text":"还要更多还要更多还要更多还要更多","color":"white","italic":false}','{"text":"还要更多还要更多还要更多还要更多","color":"white","italic":false}','{"text":"还要更多还要更多还要更多还要更多","color":"white","italic":false}']]
+
+
 item replace block 90126 128 124 container.2 with flow_banner_pattern[custom_data={sea_doc15:true},custom_name=\
 '{"text":"工程处后厨的笔记 - 瑞佛特","italic":true,"color":"dark_purple","italic":false}',\
 lore=['{"text":"23号 处理掉了剩下还没有腐烂的猪肉","color":"white","italic":false}','{"text":"24号 没有粮食了 只能吃干面包 通风管道里好吵","color":"white","italic":false}','{"text":"25号 干面包很难吃 德怀特还没有从通风系统维护处回来","color":"white","italic":false}','{"text":"26号 德怀特带来了新鲜的猪肉 配着面包吃 通风管道好吵","color":"white","italic":false}','{"text":"27号 通风管道好吵","color":"white","italic":false}','{"text":"28号 已经没有新鲜的猪肉了 现在该派潘去修通风系统了","color":"white","italic":false}','{"text":"29号 没有猪肉 只有干面包","color":"white","italic":false}','{"text":"30号 我终于醒悟了 我的身上也有猪肉","color":"white","italic":false}']]

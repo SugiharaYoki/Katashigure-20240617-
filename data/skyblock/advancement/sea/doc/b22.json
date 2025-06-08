@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "行政区二楼仓库的笔记 - 诺玛",
+            "color": "light_purple",
+            "bold": false,
+            "italic": false
+        },
+        "description": {
+            "text": "不够，还要更多。\n还要更多。\n还要更多还要更多还要更多还要更多\n还要更多还要更多还要更多还要更多\n还要更多还要更多还要更多还要更多\n还要更多还要更多还要更多还要更多",
+            "color": "white"
+        },
+        "icon": {
+            "id": "minecraft:flow_banner_pattern"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "sea": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:sea/doc/documentary6"
+}

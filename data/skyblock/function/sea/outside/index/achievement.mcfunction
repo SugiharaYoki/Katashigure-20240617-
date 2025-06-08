@@ -62,12 +62,12 @@ scoreboard players add @s[advancements={skyblock:sea/doc/b18=true}] rng5 1
 scoreboard players add @s[advancements={skyblock:sea/doc/b19=true}] rng3 1
 scoreboard players add @s[advancements={skyblock:sea/doc/b20=true}] rng3 1
 scoreboard players add @s[advancements={skyblock:sea/doc/b21=true}] rng5 1
-#scoreboard players add @s[advancements={skyblock:sea/doc/b22=true}] rng1 1
-#scoreboard players add @s[advancements={skyblock:sea/doc/b23=true}] rng1 1
-#scoreboard players add @s[advancements={skyblock:sea/doc/b24=true}] rng1 1
-#scoreboard players add @s[advancements={skyblock:sea/doc/b25=true}] rng1 1
-#scoreboard players add @s[advancements={skyblock:sea/doc/b26=true}] rng1 1
-#scoreboard players add @s[advancements={skyblock:sea/doc/b27=true}] rng1 1
+scoreboard players add @s[advancements={skyblock:sea/doc/b22=true}] rng7 1
+scoreboard players add @s[advancements={skyblock:sea/doc/b23=true}] rng7 1
+scoreboard players add @s[advancements={skyblock:sea/doc/b24=true}] rng7 1
+scoreboard players add @s[advancements={skyblock:sea/doc/b25=true}] rng7 1
+scoreboard players add @s[advancements={skyblock:sea/doc/b26=true}] rng7 1
+scoreboard players add @s[advancements={skyblock:sea/doc/b27=true}] rng7 1
 
 scoreboard players add @s[advancements={skyblock:sea/doc/w1=true}] rng4 1
 scoreboard players add @s[advancements={skyblock:sea/doc/w2=true}] rng4 1
