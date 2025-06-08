@@ -20,9 +20,9 @@ execute as @s[scores={sea_4temp1=70}] at @s run playsound entity.villager.ambien
 execute as @s[scores={sea_4temp1=70}] at @s run scoreboard players add @s sea_4temp1 14
 
 execute as @s[scores={sea_4temp1=102}] at @s as @p[tag=SEAPT] if entity @n[tag=sc,scores={sea_player=1}] \
- run tellraw @a[distance=0..50] [{"selector":"@s","color":"white"},{"text":"：……抱歉，我来晚了。","color":"white"}]
+ run tellraw @a[distance=0..50] [{"selector":"@s","color":"white"},{"text":"：\n“……抱歉，我来晚了。”","color":"white"}]
 execute as @s[scores={sea_4temp1=102}] at @s as @p[tag=SEAPT] if entity @n[tag=sc,scores={sea_player=2..}] \
- run tellraw @a[distance=0..50] [{"selector":"@s","color":"white"},{"text":"：……抱歉，我们来晚了。","color":"white"}]
+ run tellraw @a[distance=0..50] [{"selector":"@s","color":"white"},{"text":"：\n“……抱歉，我们来晚了。”","color":"white"}]
 execute as @s[scores={sea_4temp1=103}] at @s run scoreboard players add @s sea_4temp1 22
 
 execute as @s[scores={sea_4temp1=140}] at @s run tellraw @a[distance=0..250] [{"text":"马绍尔：","color":"green","bold": true},{"text":"\n“哈哈，没什么晚不晚的。我们不可能活着逃出这座钻井平台。”","color":"white","bold": false}]
@@ -42,9 +42,9 @@ execute as @s[scores={sea_4temp1=242}] at @s run tp @s ~ ~ ~ facing 90126 163.0 
 execute as @s[scores={sea_4temp1=306..}] at @s run tp @s ~ ~ ~ facing entity @p
 
 execute as @s[scores={sea_4temp1=276}] at @s as @p[tag=SEAPT] if entity @n[tag=sc,scores={sea_player=1}] \
- run tellraw @a[distance=0..50] [{"selector":"@s","color":"white"},{"text":"：不管如何，马绍尔先生，你跟着我来吧。至少我能暂时保证你的安全。我也需要有个人照应我。","color":"white"}]
+ run tellraw @a[distance=0..50] [{"selector":"@s","color":"white"},{"text":"：\n“不管如何，马绍尔先生，你跟着我来吧。至少我能暂时保证你的安全。我也需要有个人照应我。”","color":"white"}]
 execute as @s[scores={sea_4temp1=276}] at @s as @p[tag=SEAPT] if entity @n[tag=sc,scores={sea_player=2..}] \
- run tellraw @a[distance=0..50] [{"selector":"@s","color":"white"},{"text":"：不管如何，马绍尔先生，你跟着我们来吧。至少我们能暂时保证你的安全。","color":"white"}]
+ run tellraw @a[distance=0..50] [{"selector":"@s","color":"white"},{"text":"：\n“不管如何，马绍尔先生，你跟着我们来吧。至少我们能暂时保证你的安全。”","color":"white"}]
 
 execute as @s[scores={sea_4temp1=302}] at @s run tellraw @a[distance=0..250] [{"text":"马绍尔：","color":"green","bold": true},{"text":"\n“先生，您看我像还能活着离开的样子吗？”","color":"white","bold": false}]
 execute as @s[scores={sea_4temp1=302}] at @s run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
@@ -67,7 +67,7 @@ execute as @s[scores={sea_4temp1=436}] at @s if entity @n[tag=sc,scores={sea_pla
 execute as @s[scores={sea_4temp1=436}] at @s run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
 
 execute as @s[scores={sea_4temp1=466}] at @s as @p[tag=SEAPT] if entity @n[tag=sc,scores={sea_player=1..}] \
- run tellraw @a[distance=0..50] [{"selector":"@s","color":"white"},{"text":"：请你理解我……我到现在为止见到了多少死去的人、变成怪物的人。我不想再眼睁睁地看着其他人死在自己面前了。\n我不会允许悲剧就这样延续下去。","color":"white"}]
+ run tellraw @a[distance=0..50] [{"selector":"@s","color":"white"},{"text":"：\n“请你理解我……我到现在为止见到了多少死去的人、变成怪物的人。我不想再眼睁睁地看着其他人死在自己面前了。\n我不会允许悲剧就这样延续下去。”","color":"white"}]
 
 execute as @s[scores={sea_4temp1=487}] at @s if entity @n[tag=sc,scores={sea_player=1..}] run tellraw @a[distance=0..250] [{"text":"马绍尔：","color":"green","bold": true},{"text":"\n“也是啊，能一路杀到这里还活着的人……\n又怎可能因这种情况就放弃呢。”","color":"white","bold": false}]
 execute as @s[scores={sea_4temp1=487}] at @s run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85

@@ -20,13 +20,13 @@ execute as @s[scores={sea_4temp2=6004..6332}] positioned 90122 128 131 if entity
 
 execute as @s[scores={sea_4temp2=6037}] at @n[tag=SEAframauros] run playsound entity.villager.ambient neutral @a ~ ~ ~ 0.8 0.7
 execute as @s[scores={sea_4temp2=6037}] at @n[tag=SEAframauros] run tellraw @a[tag=SEAPT,distance=0.1..35] [{"text":"法莫洛斯：","color":"green","bold": true},{"text":"\n“太好了……终于有人来，代替我救他们了……”","color":"white","bold": false}]
-execute as @s[scores={sea_4temp2=6071}] at @n[tag=SEAframauros] as @p[tag=SEAPT] run tellraw @a[tag=SEAPT] [{"selector":"@s","color":"white"},{"text":"：你就是……法莫洛斯医生？其他人呢、你……还好吗？","color":"white"}]
+execute as @s[scores={sea_4temp2=6071}] at @n[tag=SEAframauros] as @p[tag=SEAPT] run tellraw @a[tag=SEAPT] [{"selector":"@s","color":"white"},{"text":"：\n“你就是……法莫洛斯医生？其他人呢、你……还好吗？”","color":"white"}]
 execute as @s[scores={sea_4temp2=6098}] at @n[tag=SEAframauros] run playsound entity.villager.ambient neutral @a ~ ~ ~ 0.8 0.7
 execute as @s[scores={sea_4temp2=6098}] at @n[tag=SEAframauros] run tellraw @a[tag=SEAPT,distance=0.1..35] [{"text":"法莫洛斯：","color":"green","bold": true},{"text":"\n“太晚了，我的朋友……”","color":"white","bold": false}]
 execute as @s[scores={sea_4temp2=6119}] at @n[tag=SEAframauros] run playsound entity.villager.ambient neutral @a ~ ~ ~ 0.8 0.7
 execute as @s[scores={sea_4temp2=6119}] at @n[tag=SEAframauros] run tellraw @a[tag=SEAPT,distance=0.1..35] [{"text":"法莫洛斯：","color":"green","bold": true},{"text":"\n“我……活不了多久了。感染……开始，就无法停下。”","color":"white","bold": false}]
-execute as @s[scores={sea_4temp2=6141}] at @n[tag=SEAframauros] as @p[tag=SEAPT] run tellraw @a[tag=SEAPT] [{"selector":"@s","color":"white"},{"text":"：法莫洛斯医生……","color":"white"}]
-execute as @s[scores={sea_4temp2=6168}] at @n[tag=SEAframauros] as @p[tag=SEAPT] run tellraw @a[tag=SEAPT] [{"selector":"@s","color":"white"},{"text":"：其他人呢，还有多少人活着？","color":"white"}]
+execute as @s[scores={sea_4temp2=6141}] at @n[tag=SEAframauros] as @p[tag=SEAPT] run tellraw @a[tag=SEAPT] [{"selector":"@s","color":"white"},{"text":"：\n“法莫洛斯医生……”","color":"white"}]
+execute as @s[scores={sea_4temp2=6168}] at @n[tag=SEAframauros] as @p[tag=SEAPT] run tellraw @a[tag=SEAPT] [{"selector":"@s","color":"white"},{"text":"：\n“其他人呢，还有多少人活着？”","color":"white"}]
 execute as @s[scores={sea_4temp2=6190}] at @n[tag=SEAframauros] run playsound entity.villager.ambient neutral @a ~ ~ ~ 0.8 0.7
 execute as @s[scores={sea_4temp2=6190}] at @n[tag=SEAframauros] run tellraw @a[tag=SEAPT,distance=0.1..35] [{"text":"法莫洛斯：","color":"green","bold": true},{"text":"\n“是啊……还有多少人活着呢。\n他们才是……不幸运的那批人吧。”","color":"white","bold": false}]
 execute as @s[scores={sea_4temp2=6230}] at @n[tag=SEAframauros] run playsound entity.villager.ambient neutral @a ~ ~ ~ 0.8 0.7
