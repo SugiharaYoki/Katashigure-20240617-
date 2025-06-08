@@ -914,7 +914,7 @@ setblock 90142 157 143 glass
 summon minecraft:interaction 90145 154.3 136 {CustomName:'[{"text":"器械式治疗仪"}]',Tags:["SEAaidbox"]}
 
 clone 90170 -60 120 90190 -48 132 90113 136 128
-
+clone 90099 -60 108 90107 -49 117 90099 128 108
 
 
 
