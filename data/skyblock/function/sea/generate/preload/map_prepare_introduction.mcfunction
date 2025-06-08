@@ -921,9 +921,12 @@ setblock 90151 153 124 chest[facing=north]
 item replace block 90151 153 124 container.11 with emerald 3
 item replace block 90151 153 124 container.15 with emerald 3
 
-
-
-
+setblock 90147 153 119 air
+setblock 90147 153 119 decorated_pot{sherds:["friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd"],item:{count: 3, id:"minecraft:emerald"}}
+setblock 90145 153 126 air
+setblock 90145 153 126 decorated_pot{sherds:["friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd"],item:{count: 3, id:"minecraft:emerald"}}
+setblock 90149 154 119 air
+setblock 90149 154 119 lever[facing=south]
 
 
 
