@@ -21,6 +21,7 @@ execute if score SEA_ch6_event rng2 matches 1..80 run function skyblock:sea/e/ch
 
 #行政区一楼楼梯怪物
 execute unless items block 90148 145 152 container.1 green_wool if entity @a[tag=SEAPT,tag=!SEAPF,x=90146,y=145,z=134,dx=5,dy=4,dz=3] if score SEA_ch6_event rng3 matches 0 run scoreboard players set SEA_ch6_event rng3 1
+execute unless items block 90148 145 152 container.1 green_wool if entity @a[tag=SEAPT,tag=!SEAPF,x=90137,y=154,z=142,dx=3,dy=4,dz=3] if score SEA_ch6_event rng3 matches 0 run scoreboard players set SEA_ch6_event rng3 1
 execute if score SEA_ch6_event rng3 matches 1..80 run function skyblock:sea/e/ch6/part1/event_f1_staircase
 
 #行政区二楼BOSS

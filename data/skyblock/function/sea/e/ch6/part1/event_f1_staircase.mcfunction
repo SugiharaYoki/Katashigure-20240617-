@@ -1,10 +1,10 @@
 
-
-execute if score SEA_ch6_event rng3 matches 1 positioned 90150 152 131 run function skyblock:sea/m/nightblind
-execute if score SEA_ch6_event rng3 matches 1 positioned 90150 152 131 run function skyblock:sea/m/nightblind
-execute if score SEA_ch6_event rng3 matches 1 positioned 90150 152 131 run function skyblock:sea/m/drowned_small
-execute if score SEA_ch6_event rng3 matches 1 positioned 90150 152 131 run function skyblock:sea/m/drowned_small
-execute if score SEA_ch6_event rng3 matches 1 positioned 90150 152 131 run function skyblock:sea/m/drowned_small
+execute if score SEA_ch6_event rng3 matches 1 run setblock 90150 153 128 air
+execute if score SEA_ch6_event rng3 matches 1 positioned 90150 153 128 run function skyblock:sea/m/nightblind
+execute if score SEA_ch6_event rng3 matches 1 positioned 90150 153 128 run function skyblock:sea/m/nightblind
+execute if score SEA_ch6_event rng3 matches 1 positioned 90150 153 128 run function skyblock:sea/m/drowned_small
+execute if score SEA_ch6_event rng3 matches 1 positioned 90150 153 128 run function skyblock:sea/m/drowned_small
+execute if score SEA_ch6_event rng3 matches 1 positioned 90150 153 128 run function skyblock:sea/m/drowned_small
 
 execute if score SEA_ch6_event rng3 matches 1 positioned 90150 153 142 run function skyblock:sea/m/creaking
 #execute if score SEA_ch6_event rng3 matches 2 positioned 90150 153 142 run function skyblock:sea/m/creaking_done
