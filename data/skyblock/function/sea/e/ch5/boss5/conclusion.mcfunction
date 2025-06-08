@@ -53,7 +53,7 @@ execute if score SEA_ch5_event_boss5 rng9 matches 100 as @n[tag=SEAfiona,x=90000
 execute if score SEA_ch5_event_boss5 rng9 matches 100 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“……琼斯，最后你来帮我们了？”","color":"white","bold": false}]
 
 execute if score SEA_ch5_event_boss5 rng9 matches 120 as @n[tag=SEAjones,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.evoker.ambient neutral @a ~ ~ ~ 1 1
-execute if score SEA_ch5_event_boss5 rng9 matches 120 as @n[tag=SEAjones,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"琼斯：","color":"yellow","bold": true},{"text":"\n“若是只有我一人，我会选择尊重天使的选择。可是我的信徒，他们并不想就这么送死。”","color":"white","bold": false}]
+execute if score SEA_ch5_event_boss5 rng9 matches 120 as @n[tag=SEAjones,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"琼斯：","color":"yellow","bold": true},{"text":"\n“若是只有我一人，我定会尊重天使的选择。可是我的信徒，他们并不想就这么送死。”","color":"white","bold": false}]
 execute if score SEA_ch5_event_boss5 rng9 matches 139 as @n[tag=SEAjones,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.evoker.ambient neutral @a ~ ~ ~ 1 1
 execute if score SEA_ch5_event_boss5 rng9 matches 139 as @n[tag=SEAjones,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"琼斯：","color":"yellow","bold": true},{"text":"\n“而且……我们的人已经死了太多了。”","color":"white","bold": false}]
 
