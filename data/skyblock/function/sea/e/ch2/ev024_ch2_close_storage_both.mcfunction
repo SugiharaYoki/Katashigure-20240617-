@@ -22,8 +22,8 @@ execute as @n[tag=sc,scores={sea_4temp2=819}] run time set 14250t
 execute as @n[tag=sc,scores={sea_4temp2=821}] run time set 14500t
 execute as @n[tag=sc,scores={sea_4temp2=821}] positioned 90105 130 105 run function skyblock:sea/m/destination
 
-#execute as @n[tag=sc,scores={sea_4temp2=843}] if entity @a[scores={SEAPT_member=2}] run tellraw @a[tag=SEAPT] [{"selector":"@p[tag=SEAPT,scores={SEAPT_member=2}]","color":"aqua"},{"text":"：\n“某人又闯大祸咯”","color":"white"}]
-#execute as @n[tag=sc,scores={sea_4temp2=855}] if entity @a[scores={SEAPT_member=2}] if entity @a[scores={SEAPT_member=1}] run tellraw @a[tag=SEAPT] [{"selector":"@p[tag=SEAPT,scores={SEAPT_member=1}]","color":"aqua"},{"text":"：\n“我去……你闭嘴吧。”","color":"white"}]
+#execute as @n[tag=sc,scores={sea_4temp2=843}] if entity @a[scores={SEAPT_member=2}] run tellraw @a[tag=SEAPT] [{"selector":"@p[tag=SEAPT,scores={SEAPT_member=2}]","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“某人又闯大祸咯”","color":"white"}]
+#execute as @n[tag=sc,scores={sea_4temp2=855}] if entity @a[scores={SEAPT_member=2}] if entity @a[scores={SEAPT_member=1}] run tellraw @a[tag=SEAPT] [{"selector":"@p[tag=SEAPT,scores={SEAPT_member=1}]","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“我去……你闭嘴吧。”","color":"white"}]
 
 execute as @n[tag=sc,scores={sea_4temp2=819}] run fill 90132 131 106 90132 129 107 iron_block
 execute as @n[tag=sc,scores={sea_4temp2=861}] run setblock 90101 134 110 minecraft:tinted_glass
