@@ -927,6 +927,6 @@ setblock 90145 153 126 air
 setblock 90145 153 126 decorated_pot{sherds:["friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd"],item:{count: 3, id:"minecraft:emerald"}}
 setblock 90149 154 119 air
 setblock 90149 154 119 lever[facing=south]
-
+item replace block 90148 145 152 container.1 with minecraft:white_wool
 
 

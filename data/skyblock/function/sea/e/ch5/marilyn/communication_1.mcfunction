@@ -31,6 +31,9 @@ execute if score SEA_ch5_event_marilyn rng1 matches 143 positioned 90118 90 73 a
 execute if score SEA_ch5_event_marilyn rng1 matches 163 positioned 90118 90 73 as @p[tag=SEAPT] if entity @n[tag=sc,scores={sea_player=1..}] run tellraw @a[distance=0..50] [{"text":"玛瑞莲：","color":"dark_purple","bold": true},{"text":"\n“很遗憾的是，我没有通讯平台支柱门禁的开关权限。你需要寻找一些特殊的机关进行操作才能打开通路。”","color":"white","bold": false}]
 execute if score SEA_ch5_event_marilyn rng1 matches 183 positioned 90118 90 73 as @p[tag=SEAPT] if entity @n[tag=sc,scores={sea_player=1..}] run tellraw @a[distance=0..50] [{"text":"玛瑞莲：","color":"dark_purple","bold": true},{"text":"\n“首先试着前往工程区，也就是这座通讯平台的内部结构。你可能能从东北侧的支柱上工程区，但我不敢肯定。那里和之前的变化太大了。”","color":"white","bold": false}]
 
+execute if score SEA_ch5_event_marilyn rng1 matches 183 run item replace block 90148 145 152 container.1 with minecraft:green_wool
+execute if score SEA_ch5_event_marilyn rng1 matches 223 run item replace block 90148 145 152 container.1 with minecraft:blue_wool
+
 execute if score SEA_ch5_event_marilyn rng1 matches 203 positioned 90118 90 73 unless block 90168 34 93 blue_concrete as @p[tag=SEAPT] if entity @n[tag=sc,scores={sea_player=1..}] run scoreboard players set SEA_ch5_event_marilyn rng1 222
 execute if score SEA_ch5_event_marilyn rng1 matches 203 positioned 90118 90 73 if block 90168 34 93 blue_concrete as @p[tag=SEAPT] if entity @n[tag=sc,scores={sea_player=1..}] run tellraw @a[distance=0..50] [{"text":"玛瑞莲：","color":"dark_purple","bold": true},{"text":"\n“如果那里被合乎情理地堵住了，那你可能需要借助平台中间的钻机上去。那会需要你想办法安全去海上。”","color":"white","bold": false}]
 execute if score SEA_ch5_event_marilyn rng1 matches 223 positioned 90118 90 73 if block 90168 34 93 blue_concrete as @p[tag=SEAPT] if entity @n[tag=sc,scores={sea_player=1..}] run tellraw @a[distance=0..50] [{"text":"玛瑞莲：","color":"dark_purple","bold": true},{"text":"\n“希望你路上能畅通无阻。要小心，那里存在着大量的邪教徒，他们可能会不由分说地向你发起攻击。”","color":"white","bold": false}]

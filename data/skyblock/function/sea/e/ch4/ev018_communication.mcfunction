@@ -63,3 +63,4 @@ execute as @s[scores={sea_4temp1=326}] positioned 90168 36 87 as @p[tag=SEAPT] u
 execute as @s[scores={sea_4temp1=326}] positioned 90168 36 87 as @p[tag=SEAPT] if block 90168 34 93 blue_concrete if entity @n[tag=sc,scores={sea_player=1..}] run tellraw @a[distance=0..50] [{"text":"玛瑞莲：","color":"dark_purple","bold": true},{"text":"\n“好，随时找我就可以。”","color":"white","bold": false}]
 
 execute as @s[scores={sea_4temp1=326}] run setblock 90163 36 86 green_concrete
+execute as @s[scores={sea_4temp1=326}] run item replace block 90148 145 152 container.1 with minecraft:yellow_wool
