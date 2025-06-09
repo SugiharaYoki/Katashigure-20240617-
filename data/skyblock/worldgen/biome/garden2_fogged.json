@@ -1,0 +1,26 @@
+{
+  "spawners": {},
+  "spawn_costs": {},
+  "carvers": [
+    ""
+  ],
+  "downfall": 0.5,
+  "effects": {
+    "fog_color": 15069183,
+    "grass_color_modifier": "none",
+    "mood_sound": {
+      "block_search_extent": 8,
+      "offset": 2,
+      "sound": "minecraft:ambient.crimson_forest.mood",
+      "tick_delay": 6000
+    },
+    "sky_color": 14148606,
+    "water_color": 3165141,
+    "water_fog_color": 131643
+  },
+  "has_precipitation": true,
+  "temperature": 0.5,
+  "features": [
+    []
+  ]
+}
