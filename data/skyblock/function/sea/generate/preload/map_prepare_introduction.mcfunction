@@ -941,7 +941,7 @@ item replace block 90144 122 121 container.14 with vex_armor_trim_smithing_templ
 setblock 90149 122 123 air
 setblock 90149 122 123 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 2, id:"minecraft:flint"}}
 setblock 90095 122 149 air
-setblock 90095 122 149 decorated_pot{sherds:["friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd"],item:{count: 3, id:"minecraft:emerald_block"}}
+setblock 90095 122 149 decorated_pot{sherds:["friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd"],item:{count: 5, id:"minecraft:emerald_block"}}
 
 
 
