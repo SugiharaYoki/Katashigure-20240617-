@@ -24,3 +24,6 @@ execute if score SEA_ch6_event rng4 matches 118 if score SEA_ch5_event_fiona_fav
 execute if score SEA_ch6_event rng4 matches 138 if score SEA_ch5_event_fiona_favor rng1 matches 13.. as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if entity @a[tag=SEAPT,scores={SEAPT_member=1}] run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“我怎么都想不起我在哪里听过这声音，但我对这个女的绝对有印象。我有一种不太妙的预感。”","color":"white","bold": false}]
 
 execute if score SEA_ch6_event rng4 matches 138 if score SEA_ch5_event_fiona_favor rng1 matches 18.. as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if entity @a[tag=SEAPT,scores={SEAPT_member=2}] run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“……唉，变得更加严重了吗。”","color":"white","bold": false}]
+
+
+scoreboard players add SEA_ch6_event rng4 1
