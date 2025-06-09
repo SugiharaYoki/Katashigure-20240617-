@@ -845,6 +845,9 @@ setblock 90132 139 16 beacon
 fill 90140 145 58 90140 144 58 minecraft:mangrove_leaves[persistent=true]
 fill 90141 145 58 90141 146 58 minecraft:mangrove_leaves[persistent=true]
 fill 90140 146 57 90140 147 57 minecraft:mangrove_leaves[persistent=true]
+fill 90147 122 121 90147 123 121 inecraft:mangrove_leaves[persistent=true]
+fill 90148 123 121 90148 124 121 inecraft:mangrove_leaves[persistent=true]
+
 
 #伪生命树树叶清除
 fill 90119 217 149 90117 211 141 air
@@ -929,4 +932,10 @@ setblock 90149 154 119 air
 setblock 90149 154 119 lever[facing=south]
 item replace block 90148 145 152 container.1 with minecraft:white_wool
 
+setblock 90144 122 121 chest[facing=east]
+item replace block 90144 122 121 container.12 with gunpowder 3
+item replace block 90144 122 121 container.14 with vex_armor_trim_smithing_template 2
+
+setblock 90149 122 123 air
+setblock 90149 122 123 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 2, id:"minecraft:flint"}}
 
