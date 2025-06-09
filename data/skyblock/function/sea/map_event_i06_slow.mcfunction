@@ -27,6 +27,8 @@ execute if score SEA_ch6_event rng3 matches 1..80 run function skyblock:sea/e/ch
 #行政区二楼BOSS
 execute if score SEA_ch6_f2 rng1 matches 1.. if score SEA_ch6_f2 rng2 matches ..50 run function skyblock:sea/e/ch6/part1/event_f2_boss
 
+execute if score SEA_ch6_event rng4 matches 1..240 run function skyblock:sea/e/ch6/part1/event_f1_broadcast
+
 #记忆密码1
 execute if block 90146 155 149 lever[powered=false] \
  if block 90147 155 149 lever[powered=true] \
