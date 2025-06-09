@@ -11,7 +11,9 @@ execute if entity @s[tag=sea_w_flamethrower_skill_skill3_1] if block ~ ~ ~ slime
 
 execute if entity @s[tag=sea_w_flamethrower_skill_skill_1] as @e[tag=SEAmob,tag=!SEA_burned_armor,distance=0..1.5,type=drowned] run attribute @s armor modifier add sea:flamethrower_skill1 -1.5 add_value
 execute if entity @s[tag=sea_w_flamethrower_skill_skill_1] as @e[tag=SEAmob,tag=!SEA_burned_armor,distance=0..1.5,type=zombie] run attribute @s armor modifier add sea:flamethrower_skill1 -1.5 add_value
+execute if entity @s[tag=sea_w_flamethrower_skill_skill_1] as @e[tag=SEAmob,tag=!SEA_burned_armor,distance=0..1.5,type=zombie_villager] run attribute @s armor modifier add sea:flamethrower_skill1 -1.5 add_value
 execute if entity @s[tag=sea_w_flamethrower_skill_skill_1] as @e[tag=SEAmob,tag=!SEA_burned_armor,distance=0..1.5,type=drowned] run tag @s add SEA_burned_armor
 execute if entity @s[tag=sea_w_flamethrower_skill_skill_1] as @e[tag=SEAmob,tag=!SEA_burned_armor,distance=0..1.5,type=zombie] run tag @s add SEA_burned_armor
+execute if entity @s[tag=sea_w_flamethrower_skill_skill_1] as @e[tag=SEAmob,tag=!SEA_burned_armor,distance=0..1.5,type=zombie_villager] run tag @s add SEA_burned_armor
 
 execute as @e[tag=sea_mine,distance=0..1.0] run scoreboard players set @s sea_4temp1 -15
