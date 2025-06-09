@@ -871,6 +871,8 @@ setblock 90154 153 267 minecraft:waxed_copper_bulb[lit=true]
 
 fill 90143 148 124 90142 148 124 minecraft:mangrove_leaves[persistent=true]
 fill 90142 147 125 90142 146 125 minecraft:mangrove_leaves[persistent=true]
+fill 90082 124 149 90082 122 149 minecraft:mangrove_leaves[persistent=true]
+
 
 setblock 90146 146 123 redstone_block
 setblock 90146 146 123 air
@@ -938,4 +940,13 @@ item replace block 90144 122 121 container.14 with vex_armor_trim_smithing_templ
 
 setblock 90149 122 123 air
 setblock 90149 122 123 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 2, id:"minecraft:flint"}}
+setblock 90095 122 149 air
+setblock 90095 122 149 decorated_pot{sherds:["friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd"],item:{count: 3, id:"minecraft:emerald_block"}}
+
+
+
+
+
+
+
 
