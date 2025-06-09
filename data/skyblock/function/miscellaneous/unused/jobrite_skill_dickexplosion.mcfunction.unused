@@ -1,2 +1,0 @@
-tellraw @a[distance=0..500] ["",{"selector":"@s","color":"blue"},{"text":" 露出了牛子！","color":"gold"}]
-summon cow ~ ~ ~ {Passengers:[{id:creeper,Fuse:50}],CustomName:"\"牛炸了\"",CustomNameVisible:1b,CanPickUpLoot:1b,Health:2,attributes:[{id:"max_health",base:2},{id:"knockback_resistance",base:1f},{id:"movement_speed",base:0.5f}]}

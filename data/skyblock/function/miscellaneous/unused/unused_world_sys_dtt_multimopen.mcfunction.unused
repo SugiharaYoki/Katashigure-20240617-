@@ -1,7 +1,0 @@
-item replace entity @a[tag=MultM_to_Bpck,tag=!NoMultiMenu] container.26 with minecraft:knowledge_book{display:{Name:"{\"bold\":true,\"italic\":false,\"color\":\"gold\",\"text\":\"多功能菜单\"}",Lore:["{\"italic\":false,\"text\":\"在物品栏选定以展开个人菜单\"}"]}}
-item replace entity @a[tag=!MultM_to_Bpck,tag=!NoMultiMenu] container.8 with minecraft:knowledge_book{display:{Name:"{\"bold\":true,\"italic\":false,\"color\":\"gold\",\"text\":\"多功能菜单\"}",Lore:["{\"italic\":false,\"text\":\"在物品栏选定以展开个人菜单\"}"]}}
-#execute if entity @a[tag=!NoMultiMenu,scores={MultiMenu=1..}] run setblock -23 65 -19 redstone_block
-execute as @a[tag=!NoMultiMenu,tag=!MultiMenuAlready,nbt={SelectedItem:{id:"minecraft:knowledge_book",tag:{display:{Name:"{\"bold\":true,\"italic\":false,\"color\":\"gold\",\"text\":\"多功能菜单\"}",Lore:["{\"italic\":false,\"text\":\"在物品栏选定以展开个人菜单\"}"]}}}}] at @s run scoreboard players set @s MultiMenu 1
-execute as @a[tag=!MultiMenuAlready,nbt={SelectedItem:{id:"minecraft:knowledge_book",tag:{display:{Name:"{\"bold\":true,\"italic\":false,\"color\":\"gold\",\"text\":\"多功能菜单\"}",Lore:["{\"italic\":false,\"text\":\"在物品栏选定以展开个人菜单\"}"]}}}}] at @s run tag @s add MultiMenuAlready
-execute as @a[nbt=!{SelectedItem:{id:"minecraft:knowledge_book",tag:{display:{Name:"{\"bold\":true,\"italic\":false,\"color\":\"gold\",\"text\":\"多功能菜单\"}",Lore:["{\"italic\":false,\"text\":\"在物品栏选定以展开个人菜单\"}"]}}}}] at @s run tag @s remove MultiMenuAlready
-scoreboard players enable @a[tag=!NoMultiMenu] MultiMenu
