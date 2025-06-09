@@ -158,8 +158,7 @@ scoreboard players set SEA_ch5_event_engineering_fiona sea_4temp6 5900
 
 fill 90134 130 58 90134 130 59 minecraft:heavy_weighted_pressure_plate
 execute positioned 90134 130 59.0 run playsound block.note_block.bell block @a ~ ~ ~ 1 0.8
-execute positioned 90150 130 50 run function skyblock:sea/m/unique/npc_iscariot
-execute positioned 90149 144 56 run function skyblock:sea/m/unique/npc_jones
+
 execute positioned 90147 144 58 run function skyblock:sea/m/unique/vindicator_guardian
 execute positioned 90146 144 57 run function skyblock:sea/m/unique/vindicator_guardian
 execute positioned 90148 144 51 run function skyblock:sea/m/unique/vindicator_guardian
