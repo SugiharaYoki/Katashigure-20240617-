@@ -9,9 +9,9 @@ tp 0-0-0-0-0 ~ ~ ~
 #clear @s *[custom_data~{Example:1}]
 
 #main
-data modify storage temp Inventory set from entity @s Inventory
-execute store result score length temp run data get storage skyblock:cache Inventory
-execute if score length temp matches 1.. run function skyblock:pvp/skywar/system/drop/summon_chest
+data modify storage skyblock:cache Inventory set from entity @s Inventory
+execute store result score length skyblock_system run data get storage skyblock:cache Inventory
+execute if score length skyblock_system matches 1.. run function skyblock:pvp/skywar/system/drop/summon_chest
 kill @e[type=chest_minecart,tag=temp_drop]
 clear @s
 
