@@ -798,6 +798,8 @@ setblock 90139 147 129 lever[facing=east]
 
 summon minecraft:interaction 90139 147.3 117 {CustomName:'[{"text":"多功能工作站"}]',Tags:["SEAcrafter","SEAcrafter18"]}
 summon minecraft:marker 90140 146 117 {Tags:["SEAcrafter_tp","SEAcrafter_tp18"]}
+summon minecraft:interaction 90139 161.3 138 {CustomName:'[{"text":"多功能工作站"}]',Tags:["SEAcrafter","SEAcrafter19"]}
+summon minecraft:marker 90140 160 138 {Tags:["SEAcrafter_tp","SEAcrafter_tp19"]}
 
 setblock 90150 146 124 decorated_pot{sherds:["friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd"],item:{count: 3, id:"minecraft:emerald"}}
 setblock 90150 146 124 air
@@ -872,7 +874,10 @@ setblock 90154 153 267 minecraft:waxed_copper_bulb[lit=true]
 fill 90143 148 124 90142 148 124 minecraft:mangrove_leaves[persistent=true]
 fill 90142 147 125 90142 146 125 minecraft:mangrove_leaves[persistent=true]
 fill 90082 124 149 90082 122 149 minecraft:mangrove_leaves[persistent=true]
-
+fill 90139 161 142 90139 163 142 minecraft:mangrove_leaves[persistent=true]
+fill 90139 161 143 90139 160 143 minecraft:mangrove_leaves[persistent=true]
+fill 90138 161 143 90138 161 144 minecraft:mangrove_leaves[persistent=true]
+setblock 90138 162 144 minecraft:mangrove_leaves[persistent=true]
 
 setblock 90146 146 123 redstone_block
 setblock 90146 146 123 air
@@ -946,6 +951,26 @@ setblock 90095 122 149 decorated_pot{sherds:["friend_pottery_sherd","friend_pott
 fill 90141 155 147 90143 153 147 minecraft:mangrove_roots
 setblock 90143 153 147 air
 setblock 90142 155 147 air
+
+setblock 90142 140 146 minecraft:iron_trapdoor[half=top]
+
+
+setblock 90147 153 108 chest[facing=south]
+fill 90151 160 149 90151 160 150 furnace[facing=west]
+setblock 90139 160 147 minecraft:potted_azalea_bush
+setblock 90148 160 146 minecraft:potted_azalea_bush
+
+setblock 90146 160 147 air
+setblock 90146 160 147 decorated_pot{sherds:["friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd"],item:{count: 3, id:"minecraft:emerald"}}
+
+
+summon minecraft:item_frame 90151 161 149 {Invisible:1b,Fixed:0b,Invulnerable:0b,Facing:1b,Item:{id:"minecraft:pumpkin_pie"}}
+summon minecraft:item_frame 90139 162 146 {Invisible:1b,Fixed:0b,Invulnerable:0b,Facing:1b,Item:{id:"minecraft:pumpkin_pie"}}
+summon minecraft:item_frame 90144 162 146 {Invisible:1b,Fixed:0b,Invulnerable:0b,Facing:1b,Item:{id:"minecraft:pumpkin_pie"}}
+
+setblock 90146 160 127 redstone_block
+setblock 90146 160 127 air
+
 
 
 

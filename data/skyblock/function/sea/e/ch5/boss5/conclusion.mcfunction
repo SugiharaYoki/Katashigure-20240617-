@@ -27,6 +27,7 @@ execute if score SEA_ch5_event_boss5 rng9 matches 15 as @n[tag=SEAboss5b] at @s 
 execute if score SEA_ch5_event_boss5 rng9 matches 14 as @n[tag=SEAboss5b] at @s run tp @s ~ ~ ~ facing entity @n[tag=SEAjones]
 execute if score SEA_ch5_event_boss5 rng9 matches 15 as @n[tag=SEAboss5b] at @s run data modify entity @n[tag=SEAboss5b] Motion set value [0.0d,10.0d,-50.0d]
 execute if score SEA_ch5_event_boss5 rng9 matches 15 run stopsound @a[tag=SEAPT] music
+execute if score SEA_ch5_event_boss5 rng9 matches 15 run give @a[tag=SEAPT] echo_shard 10
 execute if score SEA_ch5_event_boss5 rng9 matches 16..26 as @n[tag=SEAboss5b] at @s run tp @s ^ ^ ^-1.5 facing entity @n[tag=SEAjones]
 
 execute if score SEA_ch5_event_boss5 rng9 matches 2 at @n[tag=SEAjones] positioned ^ ^ ^2 run playsound minecraft:entity.warden.sonic_boom neutral @a ~ ~ ~ 10 1.2

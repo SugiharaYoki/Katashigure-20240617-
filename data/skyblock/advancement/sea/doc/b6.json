@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "船舶控制室的便签纸",
+            "color": "light_purple",
+            "bold": false,
+            "italic": false
+        },
+        "description": {
+            "text": "我重接了这套控制系统的排线。\n必须不惜一切代价保护通风系统和消防系统，谁会要船舶停靠到我们这里来？",
+            "color": "white"
+        },
+        "icon": {
+            "id": "minecraft:flow_banner_pattern"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "sea": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:sea/doc/documentary6"
+}
