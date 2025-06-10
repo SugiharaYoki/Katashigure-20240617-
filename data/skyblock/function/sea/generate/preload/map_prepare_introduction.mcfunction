@@ -950,4 +950,11 @@ setblock 90142 155 147 air
 setblock 90142 140 146 minecraft:iron_trapdoor[half=top]
 
 
+setblock 90147 153 108 chest[facing=south]
+
+
+
+
+
+
 

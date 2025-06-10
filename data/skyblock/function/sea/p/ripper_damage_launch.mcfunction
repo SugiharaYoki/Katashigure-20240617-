@@ -47,6 +47,12 @@ execute if score @s[tag=SEAripper_launched_sound,scores={rng3=1,rng4=1..}] sea_r
 execute if score @s[tag=SEAripper_launched_sound,scores={rng3=2,rng4=1..}] sea_ripper matches 1.. positioned ^ ^-1.5 ^ as @e[tag=SEAmob,type=husk,distance=0..3.25] at @s run kill @s
 execute if score @s[tag=SEAripper_launched_sound,scores={rng3=3,rng4=1..}] sea_ripper matches 1.. positioned ^ ^-1.5 ^ as @e[tag=SEAmob,type=husk,distance=0..3.4] at @s run kill @s
 execute if score @s[tag=SEAripper_launched_sound,scores={rng3=4,rng4=1..}] sea_ripper matches 1.. positioned ^ ^-1.5 ^ as @e[tag=SEAmob,type=husk,distance=0..3.55] at @s run kill @s
+
+execute if score @s[tag=SEAripper_launched_sound,scores={rng3=1,rng4=1..}] sea_ripper matches 1.. positioned ^ ^-1.5 ^ as @e[tag=SEAmob,type=creaking,distance=0..3.1] at @s run give @a[tag=SEAPT,distance=0..40] mojang_banner_pattern[custom_data={sea_docg30:true}]
+execute if score @s[tag=SEAripper_launched_sound,scores={rng3=2,rng4=1..}] sea_ripper matches 1.. positioned ^ ^-1.5 ^ as @e[tag=SEAmob,type=creaking,distance=0..3.25] at @s run give @a[tag=SEAPT,distance=0..40] mojang_banner_pattern[custom_data={sea_docg30:true}]
+execute if score @s[tag=SEAripper_launched_sound,scores={rng3=3,rng4=1..}] sea_ripper matches 1.. positioned ^ ^-1.5 ^ as @e[tag=SEAmob,type=creaking,distance=0..3.4] at @s run give @a[tag=SEAPT,distance=0..40] mojang_banner_pattern[custom_data={sea_docg30:true}]
+execute if score @s[tag=SEAripper_launched_sound,scores={rng3=4,rng4=1..}] sea_ripper matches 1.. positioned ^ ^-1.5 ^ as @e[tag=SEAmob,type=creaking,distance=0..3.55] at @s run give @a[tag=SEAPT,distance=0..40] mojang_banner_pattern[custom_data={sea_docg30:true}]
+
 execute if score @s[tag=SEAripper_launched_sound,scores={rng3=1,rng4=1..}] sea_ripper matches 1.. positioned ^ ^-1.5 ^ as @e[tag=SEAmob,type=creaking,distance=0..3.1] at @s run kill @s
 execute if score @s[tag=SEAripper_launched_sound,scores={rng3=2,rng4=1..}] sea_ripper matches 1.. positioned ^ ^-1.5 ^ as @e[tag=SEAmob,type=creaking,distance=0..3.25] at @s run kill @s
 execute if score @s[tag=SEAripper_launched_sound,scores={rng3=3,rng4=1..}] sea_ripper matches 1.. positioned ^ ^-1.5 ^ as @e[tag=SEAmob,type=creaking,distance=0..3.4] at @s run kill @s

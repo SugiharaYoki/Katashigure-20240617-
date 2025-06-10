@@ -175,6 +175,7 @@ item replace block 90101 137 147 container.13 with flow_banner_pattern[custom_da
 
 item replace block 90074 128 150 container.14 with flow_banner_pattern[custom_data={sea_doc04b:true},custom_name='{"text":"主平台西南升降梯旁的便签纸","italic":true,"color":"dark_purple","italic":false}',lore=['{"text":"我发现这些陶罐里面被藏了很多好东西，可是我手太短够不着。","color":"white","italic":false}','{"text":"以这些陶罐的材质而言，蹲下来冲它们射一箭估计就能破开罐壁。","color":"white","italic":false}']]
 
+item replace block 90147 153 108 container.13 with flow_banner_pattern[custom_data={sea_doc06b:true},custom_name='{"text":"船舶控制室的便签纸","italic":true,"color":"dark_purple","italic":false}',lore=['{"text":"我重接了这套控制系统的排线。","color":"white","italic":false}','{"text":"必须不惜一切代价保护通风系统和消防系统，谁会要船舶停靠到我们这里来？","color":"white","italic":false}']]
 
 
 

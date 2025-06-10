@@ -1,0 +1,28 @@
+{
+    "display": {
+        "title": {
+            "text": "树木之友",
+            "color": "aqua",
+            "bold": true,
+            "italic": false
+        },
+        "description": {
+            "text": "杀死一束伪树之枝。\n“为什么植物丧尸总是出现在恐怖游戏的后半部分？”",
+            "color": "gray",
+            "bold": false
+        },
+        "icon": {
+            "id": "minecraft:stone_hoe"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "sea": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:sea/doc/g21"
+}
