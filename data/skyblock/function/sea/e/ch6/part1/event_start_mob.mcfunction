@@ -2,6 +2,12 @@ scoreboard players add SEA_ch6_event rng1 1
 
 execute if score SEA_ch6_event rng1 matches 1 run give @a[tag=SEAPT] nether_star
 
+execute if score SEA_ch6_event rng1 matches 2 positioned 90127 137 142 run function skyblock:sea/m/visioner
+execute if score SEA_ch6_event rng1 matches 2 positioned 90127 137 142 run function skyblock:sea/m/visioner
+execute if score SEA_ch6_event rng1 matches 2 positioned 90127 137 142 run function skyblock:sea/m/drowned_shield
+execute if score SEA_ch6_event rng1 matches 2 positioned 90127 137 142 run function skyblock:sea/m/drowned_shield
+execute if score SEA_ch6_event rng1 matches 2 positioned 90127 137 142 run function skyblock:sea/m/drowned_shield
+
 execute if score SEA_ch6_event rng1 matches 30..40 positioned 90120 129 84 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
 execute if score SEA_ch6_event rng1 matches 30..40 positioned 90120 129 84 run particle sculk_soul ~ ~1 ~ 0.3 0.5 0.3 0.05 10
 execute if score SEA_ch6_event rng1 matches 41..43 positioned 90120 129 84 run function skyblock:sea/m/drowned
