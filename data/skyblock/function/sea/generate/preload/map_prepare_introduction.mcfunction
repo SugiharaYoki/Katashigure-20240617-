@@ -953,10 +953,11 @@ setblock 90142 140 146 minecraft:iron_trapdoor[half=top]
 
 
 setblock 90147 153 108 chest[facing=south]
+fill 90151 160 149 90151 160 150 furnace[facing=west]
+setblock 90139 160 147 minecraft:potted_azalea_bush
 
-
-
-
+setblock 90146 160 147 air
+setblock 90146 160 147 decorated_pot{sherds:["friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd"],item:{count: 3, id:"minecraft:emerald"}}
 
 
 
