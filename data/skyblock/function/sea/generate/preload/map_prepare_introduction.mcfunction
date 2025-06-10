@@ -971,8 +971,8 @@ summon minecraft:item_frame 90144 162 146 {Invisible:1b,Fixed:0b,Invulnerable:0b
 setblock 90146 160 127 redstone_block
 setblock 90146 160 127 air
 
-
-
+setblock 90150 160 124 chest[facing=south]{lock:{components:{custom_data:{"sea_key11":true}}}}
+item replace block 90150 160 124 container.12 with golden_carrot 3
 
 
 
