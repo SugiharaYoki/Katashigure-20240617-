@@ -34,9 +34,9 @@ execute as @e[tag=arroworb2,type=marker] at @s run function skyblock:azr/stage/b
 
 #verbal
     execute if score tickTimer Azr_system matches 1 run tellraw @a[tag=azrPlayer] {"text":"？？？：","color":"red"}
-    execute if score tickTimer Azr_system matches 1 if score playerCount Azr_system matches 1 run tellraw @a[tag=azrPlayer] {"text":"“是你吗？胆敢挑战大天使沙利叶的愚昧之徒？”","color":"white"}
-    execute if score tickTimer Azr_system matches 1 if score playerCount Azr_system matches 2 run tellraw @a[tag=azrPlayer] {"text":"“是你们两人吗？胆敢挑战大天使沙利叶的愚昧之徒？”","color":"white"}
-    execute if score tickTimer Azr_system matches 1 if score playerCount Azr_system matches 3.. run tellraw @a[tag=azrPlayer] {"text":"“是你们吗？胆敢挑战大天使沙利叶的愚昧之徒？”","color":"white"}
+    execute if score tickTimer Azr_system matches 1 if score playerCount Azr_system matches 1 run tellraw @a[tag=azrPlayer] {"text":"“是你吗？胆敢挑战天使长沙利叶的愚昧之徒？”","color":"white"}
+    execute if score tickTimer Azr_system matches 1 if score playerCount Azr_system matches 2 run tellraw @a[tag=azrPlayer] {"text":"“是你们两人吗？胆敢挑战天使长沙利叶的愚昧之徒？”","color":"white"}
+    execute if score tickTimer Azr_system matches 1 if score playerCount Azr_system matches 3.. run tellraw @a[tag=azrPlayer] {"text":"“是你们吗？胆敢挑战天使长沙利叶的愚昧之徒？”","color":"white"}
     execute if score tickTimer Azr_system matches 80 run tellraw @a[tag=azrPlayer] {"text":"？？？：","color":"red"}
     execute if score tickTimer Azr_system matches 80 if score playerCount Azr_system matches 1 run tellraw @a[tag=azrPlayer] {"text":"“吾乃沙利叶之护法「权之残影」。吾将让你领会私闯生命树花园的后果。”","color":"white"}
     execute if score tickTimer Azr_system matches 80 if score playerCount Azr_system matches 2.. run tellraw @a[tag=azrPlayer] {"text":"“吾乃沙利叶之护法「权之残影」。吾将让你们领会私闯生命树花园的后果。”","color":"white"}
