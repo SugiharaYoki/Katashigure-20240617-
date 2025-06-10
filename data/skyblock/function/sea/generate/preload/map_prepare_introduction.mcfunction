@@ -943,8 +943,9 @@ setblock 90149 122 123 decorated_pot{sherds:["prize_pottery_sherd","prize_potter
 setblock 90095 122 149 air
 setblock 90095 122 149 decorated_pot{sherds:["friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd"],item:{count: 5, id:"minecraft:emerald_block"}}
 
-
-
+fill 90141 155 147 90143 153 147 minecraft:mangrove_roots
+setblock 90143 153 147 air
+setblock 90142 155 147 air
 
 
 
