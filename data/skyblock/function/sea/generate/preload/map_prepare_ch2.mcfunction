@@ -142,6 +142,7 @@ summon marker 90130 77 31 {Tags:["SEAmagma1"]}
 summon marker 90154 129 62 {Tags:["SEAmagma1"]}
 summon marker 90156 129 64 {Tags:["SEAmagma1"]}
 summon marker 90155 129 72 {Tags:["SEAmagma1"]}
+summon marker 90147 129 65 {Tags:["SEAmagma1"]}
 #ch6
 summon marker 90146 153 115 {Tags:["SEAmagma1"]}
 summon marker 90148 153 113 {Tags:["SEAmagma1"]}
