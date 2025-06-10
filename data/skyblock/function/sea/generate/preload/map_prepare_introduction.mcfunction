@@ -874,6 +874,7 @@ setblock 90154 153 267 minecraft:waxed_copper_bulb[lit=true]
 fill 90143 148 124 90142 148 124 minecraft:mangrove_leaves[persistent=true]
 fill 90142 147 125 90142 146 125 minecraft:mangrove_leaves[persistent=true]
 fill 90082 124 149 90082 122 149 minecraft:mangrove_leaves[persistent=true]
+fill 90145 141 120 90145 143 120 minecraft:mangrove_leaves[persistent=true]
 
 fill 90139 161 142 90139 163 142 minecraft:mangrove_roots
 fill 90139 161 143 90139 160 143 minecraft:mangrove_roots
@@ -976,5 +977,5 @@ setblock 90150 160 124 chest[facing=south]{lock:{components:{custom_data:{"sea_k
 item replace block 90150 160 124 container.12 with golden_carrot 3
 
 setblock 90144 161 124 air
-
+setblock 90145 140 120 chest[facing=west]
 

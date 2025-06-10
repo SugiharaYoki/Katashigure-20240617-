@@ -84,7 +84,7 @@ execute positioned 90122 122 128 if entity @a[distance=..6.2,limit=1] run item r
 execute positioned 90104 155 151 if entity @a[distance=..6.2,limit=1] run item replace block ~ ~ ~ container.13 with trial_key[custom_name='{"text":"副宿舍楼2F - 个人储藏柜2B的钥匙","italic":true,"color":"yellow","italic":false}',lore=['{"text":"没错，就是最中间那个，别多想了！","color":"white","italic":false}'],custom_data={"sea_key06":true}]
 execute positioned 90104 140 029 if entity @a[distance=..6.2,limit=1] run item replace block ~ ~ ~ container.12 with trial_key[custom_name='{"text":"停机坪仓库的钥匙","italic":true,"color":"yellow","italic":false}',lore=['{"text":"他们绝对想不到我在里头藏了多少弹药","color":"white","italic":false}'],custom_data={"sea_key05":true}]
 execute positioned 90173 006 104 if entity @a[distance=..6.2,limit=1] run item replace block ~ ~ ~ container.13 with trial_key[custom_name='{"text":"冷凝系统 - 休息区2F钥匙","italic":true,"color":"yellow","italic":false}',custom_data={"sea_key03":true}]
-execute positioned 90150 160 124 if entity @a[distance=..6.2,limit=1] run item replace block ~ ~ ~ container.13 with trial_key[custom_name='{"text":"行政区3F - 吊车控制室钥匙","italic":true,"color":"yellow","italic":false}',custom_data={"sea_key11":true}]
+execute positioned 90145 140 120 if entity @a[distance=..6.2,limit=1] run item replace block ~ ~ ~ container.13 with trial_key[custom_name='{"text":"行政区3F - 吊车控制室钥匙","italic":true,"color":"yellow","italic":false}',custom_data={"sea_key11":true}]
 
 execute positioned 90140 104 023 if entity @a[distance=..6.2,limit=1] run item replace block ~ ~ ~ container.13 with ominous_trial_key[custom_name='{"text":"厄珀娅之钥","italic":true,"color":"dark_red","italic":false}',custom_data={"sea_key04":true}]
 
