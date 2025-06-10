@@ -976,5 +976,5 @@ setblock 90150 160 124 chest[facing=south]{lock:{components:{custom_data:{"sea_k
 item replace block 90150 160 124 container.12 with golden_carrot 3
 
 setblock 90144 161 124 air
-setblock 90144 161 124 minecraft:lever[facing=south]
+
 
