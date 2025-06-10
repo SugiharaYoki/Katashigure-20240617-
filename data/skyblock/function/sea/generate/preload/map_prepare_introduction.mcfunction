@@ -874,7 +874,10 @@ setblock 90154 153 267 minecraft:waxed_copper_bulb[lit=true]
 fill 90143 148 124 90142 148 124 minecraft:mangrove_leaves[persistent=true]
 fill 90142 147 125 90142 146 125 minecraft:mangrove_leaves[persistent=true]
 fill 90082 124 149 90082 122 149 minecraft:mangrove_leaves[persistent=true]
-
+fill 90139 161 142 90139 163 142 minecraft:mangrove_leaves[persistent=true]
+fill 90139 161 143 90139 160 143 minecraft:mangrove_leaves[persistent=true]
+fill 90138 161 143 90138 161 144 minecraft:mangrove_leaves[persistent=true]
+setblock 90138 162 144 minecraft:mangrove_leaves[persistent=true]
 
 setblock 90146 146 123 redstone_block
 setblock 90146 146 123 air
@@ -963,4 +966,11 @@ setblock 90146 160 147 decorated_pot{sherds:["friend_pottery_sherd","friend_pott
 summon minecraft:item_frame 90151 161 149 {Invisible:1b,Fixed:0b,Invulnerable:0b,Facing:1b,Item:{id:"minecraft:pumpkin_pie"}}
 summon minecraft:item_frame 90139 162 146 {Invisible:1b,Fixed:0b,Invulnerable:0b,Facing:1b,Item:{id:"minecraft:pumpkin_pie"}}
 summon minecraft:item_frame 90144 162 146 {Invisible:1b,Fixed:0b,Invulnerable:0b,Facing:1b,Item:{id:"minecraft:pumpkin_pie"}}
+
+
+
+
+
+
+
 
