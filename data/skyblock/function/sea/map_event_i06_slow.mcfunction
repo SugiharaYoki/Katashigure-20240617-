@@ -33,6 +33,9 @@ execute if score SEA_ch6_f2 rng1 matches 1.. if score SEA_ch6_f2 rng2 matches ..
 
 execute if score SEA_ch6_event rng4 matches 1..240 run function skyblock:sea/e/ch6/part1/event_f1_broadcast
 
+execute unless items block 90148 145 152 container.3 green_wool if entity @a[tag=SEAPT,x=90140,y=159,z=120,dx=9,dy=4,dz=9] run function skyblock:sea/e/ch6/part1/event_f3_pointofnoreturn
+
+
 #记忆密码1
 execute if block 90146 155 149 lever[powered=false] \
  if block 90147 155 149 lever[powered=true] \
