@@ -6,7 +6,8 @@ execute if score sea rng1 matches 1..4 run particle minecraft:electric_spark 901
 
 execute as @e[type=spectral_arrow,x=90000,y=100,z=0,distance=..5000,nbt={inGround:false}] at @s run function skyblock:sea/p/spectral
 
-execute as @e[type=item,x=90000,y=100,z=100,distance=..3000] at @s run function skyblock:sea/p/item
+execute as @e[type=item,x=90000,y=100,z=100,distance=..3000,tag=!SEAitemchecked] at @s run function skyblock:sea/p/item
+execute as @e[type=item,x=90000,y=100,z=100,distance=..3000,tag=SEAitemchecked,tag=SEAitemchecked_pers] at @s run function skyblock:sea/p/item_pers
 execute as @e[tag=sea_drone,x=90000,y=100,z=100,distance=..3000] at @s run function skyblock:sea/p/drone
 execute as @e[tag=sea_mine,x=90000,y=100,z=100,distance=..3000] at @s run function skyblock:sea/p/mine
 

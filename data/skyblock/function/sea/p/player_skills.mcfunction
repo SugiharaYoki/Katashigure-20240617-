@@ -7,7 +7,9 @@ if block ~ ~-2.1 ~ water \
 if block ~ ~-3.9 ~ water \
 run scoreboard players remove @s[scores={sea_oxygen=-10..}] sea_oxygen 2
 
-execute at @s unless block ~ ~-1 ~ water unless block ~ ~ ~ water run scoreboard players add @s[scores={sea_oxygen=..20}] sea_oxygen 10
+scoreboard players remove @s[scores={sea_oxygen=31..35}] sea_oxygen 10
+
+execute at @s unless block ~ ~-1 ~ water unless block ~ ~ ~ water run scoreboard players add @s[scores={sea_oxygen=..30}] sea_oxygen 10
 
 effect clear @s[scores={sea_oxygen=..-1}] resistance
 damage @s[scores={sea_oxygen=..-1}] 10 drown
@@ -57,14 +59,14 @@ execute as @s[tag=e_w_04,level=..7,scores={sea_oxygen=20..}] if entity @s[tag=se
 execute as @s[tag=e_w_04,level=8..,scores={sea_oxygen=20..}] run xp set @s 8 levels
 execute as @s[tag=e_w_04,level=8..,scores={sea_oxygen=20..}] run xp set @s 0 points
 
-execute as @s[scores={sea_oxygen=..19}] run xp set @s 0 levels
+execute as @s[scores={sea_oxygen=..29}] run xp set @s 0 levels
 execute as @s[scores={sea_oxygen=..0}] run xp set @s 0 points
-execute as @s[scores={sea_oxygen=1..3}] run xp set @s 1 points
-execute as @s[scores={sea_oxygen=4..6}] run xp set @s 2 points
-execute as @s[scores={sea_oxygen=7..9}] run xp set @s 3 points
-execute as @s[scores={sea_oxygen=10..12}] run xp set @s 4 points
-execute as @s[scores={sea_oxygen=13..15}] run xp set @s 5 points
-execute as @s[scores={sea_oxygen=16..19}] run xp set @s 6 points
+execute as @s[scores={sea_oxygen=1..4}] run xp set @s 1 points
+execute as @s[scores={sea_oxygen=5..8}] run xp set @s 2 points
+execute as @s[scores={sea_oxygen=9..13}] run xp set @s 3 points
+execute as @s[scores={sea_oxygen=14..18}] run xp set @s 4 points
+execute as @s[scores={sea_oxygen=19..23}] run xp set @s 5 points
+execute as @s[scores={sea_oxygen=24..28}] run xp set @s 6 points
 
 
 
@@ -85,6 +87,8 @@ execute if items entity @s container.* *[custom_data={sea_t_spectral2:true}] run
 execute if items entity @s container.* *[custom_data={sea_t_sprint:true}] run tag @s add sea_t_sprint
 execute if items entity @s container.* *[custom_data={sea_t_pounce1:true}] run tag @s add sea_t_pounce1
 
+execute store result score @s rng1 run clear @s pitcher_pod 0
+clear @s[scores={rng1=2..}] pitcher_pod 1
 
 execute as @s[x=80000,dx=20000,z=-10000,dz=20000,y=-200,dy=405] at @s if block ~ ~-1 ~ waxed_weathered_cut_copper_slab run function skyblock:sea/p/elevator
 execute as @s[x=80000,dx=20000,z=-10000,dz=20000,y=-200,dy=405] at @s if block ~ ~-1.5 ~ waxed_weathered_cut_copper_slab run function skyblock:sea/p/elevator
