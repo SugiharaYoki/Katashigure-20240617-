@@ -139,6 +139,16 @@ summon marker 90120 122 49 {Tags:["SEAmagma1"]}
 summon marker 90116 123 26 {Tags:["SEAmagma1"]}
 summon marker 90128 77 32 {Tags:["SEAmagma1"]}
 summon marker 90130 77 31 {Tags:["SEAmagma1"]}
+#ch6
+summon marker 90146 153 115 {Tags:["SEAmagma1"]}
+summon marker 90148 153 113 {Tags:["SEAmagma1"]}
+summon marker 90147 153 112 {Tags:["SEAmagma1"]}
+summon marker 90149 153 110 {Tags:["SEAmagma1"]}
+summon marker 90146 153 109 {Tags:["SEAmagma1"]}
+summon marker 90140 153 116 {Tags:["SEAmagma1"]}
+summon marker 90151 160 138 {Tags:["SEAmagma1"]}
+summon marker 90148 146 139 {Tags:["SEAmagma1"]}
+summon marker 90147 146 116 {Tags:["SEAmagma1"]}
 
 
 execute as @e[tag=SEAmagma1,type=marker] at @s if block ~ ~ ~ air run setblock ~ ~ ~ basalt

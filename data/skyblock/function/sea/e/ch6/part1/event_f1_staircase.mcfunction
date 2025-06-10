@@ -16,6 +16,9 @@ execute if score SEA_ch6_event rng3 matches 1 positioned 90143 153 124 run funct
 execute if score SEA_ch6_event rng3 matches 1 positioned 90143 153 124 run function skyblock:sea/m/zombie_security2
 execute if score SEA_ch6_event rng3 matches 1 positioned 90143 153 124 run function skyblock:sea/m/drowned_shield
 
+execute if score SEA_ch6_event rng3 matches 1 positioned 90141 153 113 run function skyblock:sea/m/spider
+execute if score SEA_ch6_event rng3 matches 1 positioned 90141 153 113 run function skyblock:sea/m/cave_spider
+execute if score SEA_ch6_event rng3 matches 1 positioned 90141 153 113 run function skyblock:sea/m/cave_spider
 
 scoreboard players add SEA_ch6_event rng3 1
 

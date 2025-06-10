@@ -24,6 +24,9 @@ execute unless items block 90148 145 152 container.1 green_wool if entity @a[tag
 execute unless items block 90148 145 152 container.1 green_wool if entity @a[tag=SEAPT,tag=!SEAPF,x=90137,y=154,z=142,dx=3,dy=4,dz=3] if score SEA_ch6_event rng3 matches 0 run scoreboard players set SEA_ch6_event rng3 1
 execute if score SEA_ch6_event rng3 matches 1..80 run function skyblock:sea/e/ch6/part1/event_f1_staircase
 
+#行政区二楼 提醒消防系统
+execute positioned 90142 153 147 if entity @a[tag=SEAPT,tag=!SEAPF,distance=0..4] if score SEA_ch6_f2 rng3 matches -5..0 run scoreboard players set SEA_ch6_f2 rng3 1
+
 #行政区二楼BOSS
 execute if score SEA_ch6_f2 rng3 matches 1.. run function skyblock:sea/e/ch6/part1/event_f2_mangrove
 execute if score SEA_ch6_f2 rng1 matches 1.. if score SEA_ch6_f2 rng2 matches ..50 run function skyblock:sea/e/ch6/part1/event_f2_boss

@@ -1,4 +1,8 @@
 
+scoreboard players add SEA_ch6_f2 rng3 1
+
+execute if score SEA_ch6_f2 rng3 matches 2 run as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if entity @a[tag=SEAPT,scores={SEAPT_member=1}] run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“通往三楼的铁门控制室入口被藤蔓完全堵住了。仔细看看，它们好像还遮盖了消防系统。”","color":"white","bold": false}]
+execute if score SEA_ch6_f2 rng3 matches 23 run as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if entity @a[tag=SEAPT,scores={SEAPT_member=1}] run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“想个办法打开消防系统，说不定能把藤蔓冲开。概率不大，但值得一试。”","color":"white","bold": false}]
 
 execute if score SEA_ch6_f2 rng3 matches 90..99 run scoreboard players set SEA_ch6_f2 rng3 90
 
