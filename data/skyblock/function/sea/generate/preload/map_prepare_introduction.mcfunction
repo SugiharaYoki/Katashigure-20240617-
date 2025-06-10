@@ -947,7 +947,7 @@ fill 90141 155 147 90143 153 147 minecraft:mangrove_roots
 setblock 90143 153 147 air
 setblock 90142 155 147 air
 
-
+setblock 90142 140 146 minecraft:iron_trapdoor[half=top]
 
 
 
