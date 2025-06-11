@@ -150,26 +150,26 @@ execute if score SEA_ch6_event rng5 matches 419 as @n[tag=SEAedwina] at @s run t
 execute if score SEA_ch6_event rng5 matches 425 as @a[tag=SEAPT] at @s run attribute @s minecraft:movement_speed modifier remove sea:marilyn_01
 execute if score SEA_ch6_event rng5 matches 425 as @a[tag=SEAPT] at @s run attribute @s minecraft:jump_strength modifier remove sea:marilyn_01
 execute if score SEA_ch6_event rng5 matches 425 as @a[tag=SEAPT] at @s run effect clear @s glowing
-execute if score SEA_ch6_event rng5 matches 425 as @a[distance=0..200] at @s run tellraw @s [{"text":"身体可以动了！！","color":"gray"}]
+execute if score SEA_ch6_event rng5 matches 425 as @a[distance=0..200] at @s run tellraw @s [{"text":"身体可以动了！！","color":"green"}]
 
 execute if score SEA_ch6_event rng5 matches 432 positioned 90152 161 114 run rotate @n[tag=SEAedwina] facing entity @p[tag=SEAPT]
 execute if score SEA_ch6_event rng5 matches 432 as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
 execute if score SEA_ch6_event rng5 matches 432 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"red","bold": true},{"text":"\n“快逃，她也是感染者，我的攻击只会加速她的尸变！！她能撑到现在，尸变后的危险度不容小觑！！”","color":"white","bold": false}]
-execute if score SEA_ch6_event rng5 matches 440 as @n[tag=SEAnorma,x=90000,y=100,z=0,distance=0..1200] at @s run playsound minecraft:entity.evoker.ambient neutral @a ~ ~ ~ 1 1.5
-execute if score SEA_ch6_event rng5 matches 440 run tellraw @a[distance=0..150] [{"text":"诺玛：","color":"red","bold": true},{"text":"\n“呵呵呵，原来如此啊，我提前炸掉水下研究机构，居然没能困住你。”","color":"white","bold": false}]
-execute if score SEA_ch6_event rng5 matches 460 as @n[tag=SEAnorma,x=90000,y=100,z=0,distance=0..1200] at @s run playsound minecraft:entity.evoker.ambient neutral @a ~ ~ ~ 1 1.5
-execute if score SEA_ch6_event rng5 matches 460 run tellraw @a[distance=0..150] [{"text":"诺玛：","color":"red","bold": true},{"text":"\n“很遗憾……我可不止有嘴皮功夫。我不会让你们就这么离开。”","color":"white","bold": false}]
-execute if score SEA_ch6_event rng5 matches 455..520 as @n[tag=SEAnorma,x=90000,y=100,z=0,distance=0..1200] run particle crimson_spore ~ ~0.2 ~ 1 0.3 1 0.05 10
-execute if score SEA_ch6_event rng5 matches 475..520 as @n[tag=SEAnorma,x=90000,y=100,z=0,distance=0..1200] run particle crimson_spore ~ ~0.2 ~ 5 0.3 5 0.05 20
-execute if score SEA_ch6_event rng5 matches 495..520 as @n[tag=SEAnorma,x=90000,y=100,z=0,distance=0..1200] run particle crimson_spore ~ ~0.2 ~ 12 0.3 12 0.05 50
-execute if score SEA_ch6_event rng5 matches 515..520 as @n[tag=SEAnorma,x=90000,y=100,z=0,distance=0..1200] run particle small_flame ~ ~0.2 ~ 2 0.3 2 0.05 30
-execute if score SEA_ch6_event rng5 matches 520 run kill @n[tag=SEAnorma]
-execute if score SEA_ch6_event rng5 matches 520 positioned 90144 160.8 109 run function skyblock:sea/m/unique/npc_marilyn_mob
-execute if score SEA_ch6_event rng5 matches 520 as @n[tag=SEAnorma,x=90000,y=100,z=0,distance=0..1200] run particle flame ~ ~1 ~ 0 0 0 0.08 200
-execute if score SEA_ch6_event rng5 matches 520 as @n[tag=SEAnorma,x=90000,y=100,z=0,distance=0..1200] run particle flame ~ ~1 ~ 0 0 0 0.32 200
-execute if score SEA_ch6_event rng5 matches 520 as @n[tag=SEAnorma,x=90000,y=100,z=0,distance=0..1200] run particle flame ~ ~1 ~ 0 0 0 0.8 200
-execute if score SEA_ch6_event rng5 matches 455..500 as @n[tag=SEAnorma,x=90000,y=100,z=0,distance=0..1200] run playsound ambient.soul_sand_valley.additions ambient @a ~ ~ ~ 5 1.3
-execute if score SEA_ch6_event rng5 matches 520 as @n[tag=SEAnorma,x=90000,y=100,z=0,distance=0..1200] run playsound entity.zombie_villager.cure hostile @a ~ ~ ~ 5 1.3
+execute if score SEA_ch6_event rng5 matches 438 as @n[tag=SEAnorma,x=90000,y=100,z=0,distance=0..1200] at @s run playsound minecraft:entity.evoker.ambient neutral @a ~ ~ ~ 1 1.5
+execute if score SEA_ch6_event rng5 matches 438 run tellraw @a[distance=0..150] [{"text":"诺玛：","color":"red","bold": true},{"text":"\n“呵呵呵，原来如此啊，我提前炸掉水下研究机构，居然没能困住你。”","color":"white","bold": false}]
+execute if score SEA_ch6_event rng5 matches 452 as @n[tag=SEAnorma,x=90000,y=100,z=0,distance=0..1200] at @s run playsound minecraft:entity.evoker.ambient neutral @a ~ ~ ~ 1 1.5
+execute if score SEA_ch6_event rng5 matches 452 run tellraw @a[distance=0..150] [{"text":"诺玛：","color":"red","bold": true},{"text":"\n“很遗憾……我可不止有嘴皮功夫。我不会让你们就这么离开。”","color":"white","bold": false}]
+execute if score SEA_ch6_event rng5 matches 455..500 as @n[tag=SEAnorma,x=90000,y=100,z=0,distance=0..1200] run particle crimson_spore ~ ~0.2 ~ 1 0.3 1 0.05 10
+execute if score SEA_ch6_event rng5 matches 465..500 as @n[tag=SEAnorma,x=90000,y=100,z=0,distance=0..1200] run particle crimson_spore ~ ~0.2 ~ 5 0.3 5 0.05 20
+execute if score SEA_ch6_event rng5 matches 475..500 as @n[tag=SEAnorma,x=90000,y=100,z=0,distance=0..1200] run particle crimson_spore ~ ~0.2 ~ 12 0.3 12 0.05 50
+execute if score SEA_ch6_event rng5 matches 485..500 as @n[tag=SEAnorma,x=90000,y=100,z=0,distance=0..1200] run particle small_flame ~ ~0.2 ~ 2 0.3 2 0.05 30
+execute if score SEA_ch6_event rng5 matches 500 run kill @n[tag=SEAnorma]
+execute if score SEA_ch6_event rng5 matches 500 positioned 90144 160.8 109 run function skyblock:sea/m/unique/npc_marilyn_mob
+execute if score SEA_ch6_event rng5 matches 500 as @n[tag=SEAnorma,x=90000,y=100,z=0,distance=0..1200] run particle flame ~ ~1 ~ 0 0 0 0.08 200
+execute if score SEA_ch6_event rng5 matches 500 as @n[tag=SEAnorma,x=90000,y=100,z=0,distance=0..1200] run particle flame ~ ~1 ~ 0 0 0 0.32 200
+execute if score SEA_ch6_event rng5 matches 500 as @n[tag=SEAnorma,x=90000,y=100,z=0,distance=0..1200] run particle flame ~ ~1 ~ 0 0 0 0.8 200
+execute if score SEA_ch6_event rng5 matches 455..480 as @n[tag=SEAnorma,x=90000,y=100,z=0,distance=0..1200] run playsound ambient.soul_sand_valley.additions ambient @a ~ ~ ~ 5 1.3
+execute if score SEA_ch6_event rng5 matches 500 as @n[tag=SEAnorma,x=90000,y=100,z=0,distance=0..1200] run playsound entity.zombie_villager.cure hostile @a ~ ~ ~ 5 1.3
 
 #execute as @p[tag=SEAPT,score={SEAPT_member=1}] at @s
 
