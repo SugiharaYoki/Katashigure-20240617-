@@ -17,7 +17,8 @@ execute if score SEA_ch6_event rng5 matches 11 positioned 90149 160 116 run func
 execute if score SEA_ch6_event rng5 matches 11 as @a[tag=SEAPT] at @s run attribute @s minecraft:movement_speed modifier add sea:marilyn_01 -5 add_value
 execute if score SEA_ch6_event rng5 matches 11 as @a[tag=SEAPT] at @s run attribute @s minecraft:jump_strength modifier add sea:marilyn_01 -5 add_value
 
-execute if score SEA_ch6_event rng5 matches 17 run tellraw @a[distance=0..150] [{"text":"玛瑞莲：","color":"dark_purple","bold": true},{"text":"\n“我感觉爱上你了，先生。你知道我最喜欢你哪一点吗？”","color":"white","bold": false}]
+execute unless items block 90148 145 152 container.1 blue_wool if score SEA_ch6_event rng5 matches 17 run tellraw @a[distance=0..150] [{"text":"玛瑞莲：","color":"dark_purple","bold": true},{"text":"\n“你真是个很不错的家伙。你知道我最喜欢你哪一点吗？”","color":"white","bold": false}]
+execute if items block 90148 145 152 container.1 blue_wool if score SEA_ch6_event rng5 matches 17 run tellraw @a[distance=0..150] [{"text":"玛瑞莲：","color":"dark_purple","bold": true},{"text":"\n“我感觉自己已经喜欢上你了，先生。你知道我最喜欢你哪一点吗？”","color":"white","bold": false}]
 execute if score SEA_ch6_event rng5 matches 34 run tellraw @a[distance=0..150] [{"text":"玛瑞莲：","color":"dark_purple","bold": true},{"text":"\n“那就是无论一件事会有多么危险，令你意外死亡的可能性多么高……你都一定能将它办好。”","color":"white","bold": false}]
 
 execute if score SEA_ch6_event rng5 matches 50 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
@@ -56,6 +57,17 @@ execute if score SEA_ch6_event rng5 matches 223 run tellraw @a[distance=0..150] 
 execute if score SEA_ch6_event rng5 matches 243 as @n[tag=SEAnoma,x=90000,y=100,z=0,distance=0..1200] at @s run playsound minecraft:entity.evoker.ambient neutral @a ~ ~ ~ 1 1.5
 execute if score SEA_ch6_event rng5 matches 243 run tellraw @a[distance=0..150] [{"text":"诺玛：","color":"red","bold": true},{"text":"\n“生怕你到死都没想明白。是诺玛·简·莫泰森。”","color":"white","bold": false}]
 
+execute if score SEA_ch6_event rng5 matches 262 if score SEA_ch5_event_fiona_favor rng1 matches ..8 as @a[tag=SEAPT] tellraw @a[distance=0..50] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“诺玛……你居然就是我一直都在听他们提起的……那个煽动暴乱的诺玛！！”","color":"white"}]
+execute if score SEA_ch6_event rng5 matches 262 if score SEA_ch5_event_fiona_favor rng1 matches 9..14 as @a[tag=SEAPT] tellraw @a[distance=0..50] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“他妈的，玛瑞莲……诺玛！为什么要对我们做这些事情？！为什么？！！”","color":"white"}]
+execute if score SEA_ch6_event rng5 matches 262 if score SEA_ch5_event_fiona_favor rng1 matches 15.. as @a[tag=SEAPT] tellraw @a[distance=0..50] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“妈的、就你他妈是诺玛！你杀了菲尔娜，我要你血债血偿！！！”","color":"white"}]
+
+execute if score SEA_ch6_event rng5 matches 281 as @n[tag=SEAnoma,x=90000,y=100,z=0,distance=0..1200] at @s run playsound minecraft:entity.evoker.ambient neutral @a ~ ~ ~ 1 1.5
+execute if score SEA_ch6_event rng5 matches 281 unless items block 90148 145 152 container.1 blue_wool run tellraw @a[distance=0..150] [{"text":"诺玛：","color":"red","bold": true},{"text":"\n“你已经帮我清理掉了前往水晶祀堂的路上全部的尸变体，我还没来得及感谢你呢。”","color":"white","bold": false}]
+execute if score SEA_ch6_event rng5 matches 281 if items block 90148 145 152 container.1 blue_wool run tellraw @a[distance=0..150] [{"text":"诺玛：","color":"red","bold": true},{"text":"\n“你已经帮我清理掉了前往水晶祀堂的路上全部的尸变体，我还没来得及感谢你呢。而且，我也真的很不想你再次体验受伤的感觉。”","color":"white","bold": false}]
+
+execute if score SEA_ch6_event rng5 matches 300 as @n[tag=SEAnoma,x=90000,y=100,z=0,distance=0..1200] at @s run playsound minecraft:entity.evoker.ambient neutral @a ~ ~ ~ 1 1.5
+execute if score SEA_ch6_event rng5 matches 300 run tellraw @a[distance=0..150] [{"text":"诺玛：","color":"red","bold": true},{"text":"\n“所以，我会让你死得很痛快的。真的，就像我杀死菲尔娜大小姐那样。”","color":"white","bold": false}]
+
 execute if score SEA_ch6_event rng5 matches 13 as @n[tag=SEAnoma] at @s run tp @s ~-0.15 ~ ~-0.5 facing ~-0.6 ~ ~-2
 execute if score SEA_ch6_event rng5 matches 17 as @n[tag=SEAnoma] at @s run tp @s ~-0.15 ~ ~-0.5 facing ~-0.6 ~ ~-2
 execute if score SEA_ch6_event rng5 matches 21 as @n[tag=SEAnoma] at @s run tp @s ~-0.15 ~ ~-0.5 facing ~-0.6 ~ ~-2
@@ -65,6 +77,8 @@ execute if score SEA_ch6_event rng5 matches 35 as @n[tag=SEAnoma] at @s run rota
 execute if score SEA_ch6_event rng5 matches 68 as @n[tag=SEAnoma] at @s run rotate @s facing entity @p[tag=SEAPT]
 execute if score SEA_ch6_event rng5 matches 94 as @n[tag=SEAnoma] at @s run rotate @s facing entity @p[tag=SEAPT]
 execute if score SEA_ch6_event rng5 matches 140 if score SEA_ch5_event_fiona_favor rng1 matches 15.. as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run rotate @s facing entity @p[tag=SEAPT]
+
+execute if score SEA_ch6_event rng5 matches 300..301 run scoreboard players set SEA_ch6_event rng5 400
 
 
 
