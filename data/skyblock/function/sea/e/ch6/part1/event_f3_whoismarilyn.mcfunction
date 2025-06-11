@@ -4,7 +4,7 @@ execute if score SEA_ch6_event rng5 matches 2 run kill @n[tag=SEAedwina]
 execute if score SEA_ch6_event rng5 matches 2 run kill @n[tag=SEAnorma]
 execute if score SEA_ch6_event rng5 matches 2 run setblock 90144 161 124 minecraft:air
 execute if score SEA_ch6_event rng5 matches 2 run fill 90152 161 114 90152 162 114 glass_pane
-execute if score SEA_ch6_event rng5 matches 2 run execute as @a[tag=SEAPT] at @s unless entity @s[x=90143,y=159,z=116,dx=9,dy=4,dz=5] run tp @s 90145 160 120 facing 90145 160 118
+execute if score SEA_ch6_event rng5 matches 2 as @a[tag=SEAPT] at @s unless entity @s[x=90143,y=159,z=116,dx=9,dy=4,dz=5] run tp @s 90145 160 120 facing 90145 160 118
 execute if score SEA_ch6_event rng5 matches 2 run effect give @a[tag=SEAPT] resistance infinite 9 true
 
 execute if score SEA_ch6_event rng5 matches 9..10 run scoreboard players set SEA_ch6_event rng5 8
