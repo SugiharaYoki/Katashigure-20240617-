@@ -138,8 +138,10 @@ execute if score SEA_ch6_event rng5 matches 422 positioned 90152 161 114 as @n[t
 execute if score SEA_ch6_event rng5 matches 422 positioned 90152 161 114 as @n[tag=SEAedwina] at @s run particle sweep_attack ^ ^1.2 ^0 2.3 0 2.3 0 14
 execute if score SEA_ch6_event rng5 matches 422 positioned 90152 161 114 as @n[tag=SEAedwina] at @s run particle damage_indicator ^ ^0 ^0 2.3 0 2.3 0 45
 
+execute if score SEA_ch6_event rng5 matches 423 run tp @n[tag=SEAedwina] 90145 160 112 facing entity @n[tag=SEAnorma]
+
 execute if score SEA_ch6_event rng5 matches 422 run tp @n[tag=SEAnorma] 90144 160 111 facing 90144 160 112
-execute if score SEA_ch6_event rng5 matches 422 run data modify entity @s Motion set value [0.0,1.1,-2.2]
+execute if score SEA_ch6_event rng5 matches 423 run data modify entity @s Motion set value [0.0,1.1,-2.2]
 
 execute if score SEA_ch6_event rng5 matches 419 as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
 execute if score SEA_ch6_event rng5 matches 419 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"red","bold": true},{"text":"\n“我想杀你很久了，你这孽畜真能活！！”","color":"white","bold": false}]
