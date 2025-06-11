@@ -980,6 +980,9 @@ item replace block 90150 160 124 container.12 with golden_carrot 3
 setblock 90144 161 124 air
 setblock 90145 140 120 chest[facing=west]
 setblock 90145 160 123 minecraft:iron_door[facing=north]
+fill 90152 161 114 90152 162 114 glass_pane
+
+
 
 
 
