@@ -142,7 +142,7 @@ execute if score SEA_ch6_event rng5 matches 422 run tp @n[tag=SEAnorma] 90144 16
 execute if score SEA_ch6_event rng5 matches 422 run data modify entity @s Motion set value [0.0,1.1,-2.2]
 
 execute if score SEA_ch6_event rng5 matches 419 as @n[tag=SEAboss4] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
-execute if score SEA_ch6_event rng5 matches 419 as @n[tag=SEAboss4] at @s run [{"text":"艾德雯娜：","color":"red","bold": true},{"text":"\n“我想杀你很久了，你这孽畜真能活！”","color":"white","bold": false}]
+execute if score SEA_ch6_event rng5 matches 419 as @n[tag=SEAboss4] at @s run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"red","bold": true},{"text":"\n“我想杀你很久了，你这孽畜真能活！”","color":"white","bold": false}]
 
 
 execute if score SEA_ch6_event rng5 matches 425 as @a[tag=SEAPT] at @s run attribute @s minecraft:movement_speed modifier remove sea:marilyn_01
