@@ -109,6 +109,7 @@ execute if score SEA_ch6_event rng5 matches 409 positioned 90152 161 115 run fil
 execute if score SEA_ch6_event rng5 matches 409 positioned 90152 161 114 run function skyblock:sea/m/unique/npc_edwina
 execute if score SEA_ch6_event rng5 matches 409 positioned 90152 161.01 114 as @n[tag=SEAedwina] at @s run data modify entity @s NoAI set value 0b
 execute if score SEA_ch6_event rng5 matches 409 positioned 90152 161.01 114 as @n[tag=SEAedwina] at @s run data modify entity @s Motion set value [-3.0,0.0,0.0]
+execute if score SEA_ch6_event rng5 matches 412 positioned 90152 161.01 114 as @n[tag=SEAedwina] at @s run data modify entity @s Motion set value [-0.5,0.0,0.0]
 execute if score SEA_ch6_event rng5 matches 411..420 positioned 90152 161 114 run rotate @n[tag=SEAnorma] facing entity @n[tag=SEAedwina]
 execute if score SEA_ch6_event rng5 matches 409..420 positioned 90152 161 114 run rotate @n[tag=SEAedwina] facing entity @n[tag=SEAnorma]
 execute if score SEA_ch6_event rng5 matches 412 as @n[tag=SEAnorma,x=90000,y=100,z=0,distance=0..1200] at @s run playsound minecraft:entity.evoker.ambient neutral @a ~ ~ ~ 1 1.5
