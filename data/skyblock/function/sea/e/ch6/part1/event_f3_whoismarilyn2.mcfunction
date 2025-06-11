@@ -9,7 +9,7 @@ execute if score SEA_ch6_event rng5 matches 262 as @n[tag=SEAnorma] at @s run tp
 execute if score SEA_ch6_event rng5 matches 266 as @n[tag=SEAnorma] at @s run tp @s ~0.005 ~ ~0.2 facing ~0.01 ~ ~0.4
 execute if score SEA_ch6_event rng5 matches 260 as @n[tag=SEAnorma] at @s run tp @s ~0.005 ~ ~0.2 facing ~0.01 ~ ~0.4
 
-execute if score SEA_ch6_event rng5 matches 403..407 as @n[tag=SEAnorma] at @s run tp @s ~-0.2 ~ ~0.15 facing @p[tag=SEAPT]
+execute if score SEA_ch6_event rng5 matches 403..407 as @n[tag=SEAnorma] at @s run tp @s ~-0.2 ~ ~0.15 facing entity @p[tag=SEAPT]
 
 execute if score SEA_ch6_event rng5 matches 402 positioned 90152 161 115 run summon marker ~ ~ ~ {Tags:["SEAedwina_smoke"]}
 execute if score SEA_ch6_event rng5 matches 402 positioned 90152 161 115 run tag @n[tag=SEAnorma] add SEAmob
