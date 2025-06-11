@@ -47,6 +47,8 @@ execute if score SEA_ch6_event rng5 matches 175 as @n[tag=SEAfiona,x=90000,y=100
 execute if score SEA_ch6_event rng5 matches 175 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run playsound minecraft:entity.player.attack.sweep hostile @a ~ ~ ~ 1 0.8
 execute if score SEA_ch6_event rng5 matches 175 run kill @n[tag=SEAfiona]
 execute if score SEA_ch6_event rng5 matches 179 run summon minecraft:lightning_bolt 90135.47 174.97 50.63
+execute if score SEA_ch6_event rng5 matches 12 as @a[tag=SEAPT] at @s run playsound garden2.bgm.waterdeath music @s ~ ~ ~ 0.7 1.0
+execute if score SEA_ch6_event rng5 matches 179 as @a[tag=SEAPT] at @s run stopsound @s music
 execute if score SEA_ch6_event rng5 matches 179 as @a[tag=SEAPT] at @s run playsound garden2.bgm.drowning1 music @s ~ ~ ~ 0.9 1.0
 
 execute if score SEA_ch6_event rng5 matches 185 if score SEA_ch5_event_fiona_favor rng1 matches ..8 as @a[tag=SEAPT] run tellraw @a[distance=0..50] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“操，你居然真的敢下死手！！”","color":"white"}]
@@ -128,13 +130,25 @@ execute if score SEA_ch6_event rng5 matches 415 positioned 90152 161 114 as @n[t
 execute if score SEA_ch6_event rng5 matches 416 positioned 90152 161 114 as @n[tag=SEAnorma] at @s run damage @s 3 generic
 execute if score SEA_ch6_event rng5 matches 416 positioned 90152 161 114 as @n[tag=SEAedwina] at @s run playsound minecraft:entity.player.attack.strong neutral @a ~ ~ ~ 1 0.8
 execute if score SEA_ch6_event rng5 matches 416 positioned 90152 161 114 as @n[tag=SEAedwina] at @s run particle sweep_attack ^ ^1.2 ^1.1 0.35 0.2 0.35 0 4
-execute if score SEA_ch6_event rng5 matches 418 positioned 90152 161 114 as @n[tag=SEAedwina] at @s run data modify entity @s Motion set value [-1.0,1.0,-0.5]
+execute if score SEA_ch6_event rng5 matches 419 positioned 90152 161 114 as @n[tag=SEAedwina] at @s run data modify entity @s Motion set value [-1.0,1.0,-0.5]
 
-execute if score SEA_ch6_event rng5 matches 420 positioned 90152 161 114 as @n[tag=SEAedwina] at @s run playsound item.mace.smash_ground_heavy hostile @a ~ ~ ~ 1.7 1.2
-execute if score SEA_ch6_event rng5 matches 420 positioned 90152 161 114 as @n[tag=SEAedwina] at @s run playsound item.mace.smash_ground_heavy hostile @a ~ ~ ~ 1.7 0.8
-execute if score SEA_ch6_event rng5 matches 420 positioned 90152 161 114 as @n[tag=SEAedwina] at @s run playsound entity.player.attack.sweep hostile @a ~ ~ ~ 1.7 0.9
-execute if score SEA_ch6_event rng5 matches 420 positioned 90152 161 114 as @n[tag=SEAedwina] at @s run particle sweep_attack ^ ^1.2 ^0 2.3 0 2.3 0 14
-execute if score SEA_ch6_event rng5 matches 420 positioned 90152 161 114 as @n[tag=SEAedwina] at @s run particle damage_indicator ^ ^0 ^0 2.3 0 2.3 0 45
+execute if score SEA_ch6_event rng5 matches 422 positioned 90152 161 114 as @n[tag=SEAedwina] at @s run playsound item.mace.smash_ground_heavy hostile @a ~ ~ ~ 1.7 1.2
+execute if score SEA_ch6_event rng5 matches 422 positioned 90152 161 114 as @n[tag=SEAedwina] at @s run playsound item.mace.smash_ground_heavy hostile @a ~ ~ ~ 1.7 0.8
+execute if score SEA_ch6_event rng5 matches 422 positioned 90152 161 114 as @n[tag=SEAedwina] at @s run playsound entity.player.attack.sweep hostile @a ~ ~ ~ 1.7 0.9
+execute if score SEA_ch6_event rng5 matches 422 positioned 90152 161 114 as @n[tag=SEAedwina] at @s run particle sweep_attack ^ ^1.2 ^0 2.3 0 2.3 0 14
+execute if score SEA_ch6_event rng5 matches 422 positioned 90152 161 114 as @n[tag=SEAedwina] at @s run particle damage_indicator ^ ^0 ^0 2.3 0 2.3 0 45
+
+execute if score SEA_ch6_event rng5 matches 422 run tp @n[tag=SEAnorma] 90144 160 111 facing 90144 160 112
+execute if score SEA_ch6_event rng5 matches 422 run data modify entity @s Motion set value [0.0,1.1,-2.2]
+
+execute if score SEA_ch6_event rng5 matches 419 as @n[tag=SEAboss4] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
+execute if score SEA_ch6_event rng5 matches 419 as @n[tag=SEAboss4] at @s run [{"text":"艾德雯娜：","color":"red","bold": true},{"text":"\n“我想杀你很久了，你这孽畜真能活！”","color":"white","bold": false}]
+
+
+execute if score SEA_ch6_event rng5 matches 425 as @a[tag=SEAPT] at @s run attribute @s minecraft:movement_speed modifier remove sea:marilyn_01
+execute if score SEA_ch6_event rng5 matches 425 as @a[tag=SEAPT] at @s run attribute @s minecraft:jump_strength modifier remove sea:marilyn_01
+execute if score SEA_ch6_event rng5 matches 425 as @a[tag=SEAPT] at @s run effect clear @s glowing
+
 
 
 #execute as @p[tag=SEAPT,score={SEAPT_member=1}] at @s
