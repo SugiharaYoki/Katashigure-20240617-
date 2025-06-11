@@ -150,6 +150,7 @@ execute if score SEA_ch6_event rng5 matches 419 as @n[tag=SEAedwina] at @s run t
 execute if score SEA_ch6_event rng5 matches 425 as @a[tag=SEAPT] at @s run attribute @s minecraft:movement_speed modifier remove sea:marilyn_01
 execute if score SEA_ch6_event rng5 matches 425 as @a[tag=SEAPT] at @s run attribute @s minecraft:jump_strength modifier remove sea:marilyn_01
 execute if score SEA_ch6_event rng5 matches 425 as @a[tag=SEAPT] at @s run effect clear @s glowing
+execute if score SEA_ch6_event rng5 matches 425 as @a[distance=0..200] at @s run tellraw @s [{"text":"身体可以动了！！","color":"gray"}]
 
 execute if score SEA_ch6_event rng5 matches 432 positioned 90152 161 114 run rotate @n[tag=SEAedwina] facing entity @p[tag=SEAPT]
 execute if score SEA_ch6_event rng5 matches 432 as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
