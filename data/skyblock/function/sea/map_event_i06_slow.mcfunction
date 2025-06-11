@@ -37,14 +37,6 @@ execute unless items block 90148 145 152 container.3 green_wool if block 90144 1
 execute if score SEA_ch6_event rng5 matches ..0 unless block 90144 161 124 air if entity @a[tag=SEAPT,x=90143,y=159,z=116,dx=9,dy=4,dz=5] run scoreboard players set SEA_ch6_event rng5 1
 execute if score SEA_ch6_event rng5 matches 1.. positioned 90144 161 124 run function skyblock:sea/e/ch6/part1/event_f3_whoismarilyn
 
-#艾德雯娜技能组
-execute as @n[tag=SEAedwina] at @s store result score @s rng1 if entity @e[tag=SEAmob,distance=0..5]
-execute as @n[tag=SEAedwina,tag=SEAedwina_attackable,scores={rng1=1..5,rng2=..0}] at @s store result score @s rng2 run random value 1..4
-execute as @n[tag=SEAedwina,tag=SEAedwina_attackable,scores={rng1=3..,rng2=..0}] at @s store result score @s rng2 run random value 1..6
-execute as @n[tag=SEAedwina,tag=SEAedwina_attackable,scores={rng2=1..3}] run tag @s add SEAboss4_attack_dash
-execute as @n[tag=SEAedwina,tag=SEAedwina_attackable,scores={rng2=4..6}] run tag @s add SEAboss4_attack_dashheavy
-execute as @n[tag=SEAedwina,tag=SEAedwina_attackable,tag=SEAboss4_attack_dash] at @s run function skyblock:sea/e/ch6/edwina/attack_dash
-execute as @n[tag=SEAedwina,tag=SEAedwina_attackable,tag=SEAboss4_attack_dashheavy] at @s run function skyblock:sea/e/ch6/edwina/attack_dashheavy
 
 
 #记忆密码1

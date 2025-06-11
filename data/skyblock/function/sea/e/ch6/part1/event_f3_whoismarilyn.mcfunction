@@ -96,6 +96,15 @@ execute if score SEA_ch6_event rng5 matches 403..407 as @n[tag=SEAnorma] at @s r
 
 execute if score SEA_ch6_event rng5 matches 402 positioned 90152 161 115 run summon marker ~ ~ ~ {Tags:["SEAedwina_smoke"]}
 execute if score SEA_ch6_event rng5 matches 402 positioned 90152 161 115 run tag @n[tag=SEAnorma] add SEAmob
+execute if score SEA_ch6_event rng5 matches 410..411 positioned 90152 161 115 run tag @n[tag=SEAedwina] add SEAedwina_ch6
+execute if score SEA_ch6_event rng5 matches 410..411 positioned 90152 161 115 run scoreboard players set @n[tag=SEAedwina] rng1 0
+execute if score SEA_ch6_event rng5 matches 410..411 positioned 90152 161 115 run scoreboard players set @n[tag=SEAedwina] rng2 0
+execute if score SEA_ch6_event rng5 matches 410..411 positioned 90152 161 115 run scoreboard players set @n[tag=SEAedwina] rng3 0
+execute if score SEA_ch6_event rng5 matches 410..411 positioned 90152 161 115 run scoreboard players set @n[tag=SEAedwina] rng4 0
+execute if score SEA_ch6_event rng5 matches 410..411 positioned 90152 161 115 run scoreboard players set @n[tag=SEAedwina] rng5 0
+execute if score SEA_ch6_event rng5 matches 410..411 positioned 90152 161 115 run scoreboard players set @n[tag=SEAedwina] rng6 0
+execute if score SEA_ch6_event rng5 matches 410..411 positioned 90152 161 115 run scoreboard players set @n[tag=SEAedwina] rng7 0
+execute if score SEA_ch6_event rng5 matches 410..411 positioned 90152 161 115 run scoreboard players set @n[tag=SEAedwina] rng8 0
 execute if score SEA_ch6_event rng5 matches 409 positioned 90152 161 115 run fill 90152 161 114 90152 162 114 air destroy
 execute if score SEA_ch6_event rng5 matches 409 positioned 90152 161 114 run function skyblock:sea/m/unique/npc_edwina
 execute if score SEA_ch6_event rng5 matches 409 positioned 90152 161.01 114 as @n[tag=SEAedwina] at @s run data modify entity @s NoAI set value 0b
