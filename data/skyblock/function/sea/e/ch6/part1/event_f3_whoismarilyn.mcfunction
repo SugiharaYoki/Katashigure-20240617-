@@ -83,12 +83,20 @@ execute if score SEA_ch6_event rng5 matches 140 if score SEA_ch5_event_fiona_fav
 
 execute if score SEA_ch6_event rng5 matches 300..301 run scoreboard players set SEA_ch6_event rng5 400
 
-execute if score SEA_ch6_event rng5 matches 403 as @n[tag=SEAnorma] at @s run tp @s ~-0.4 ~ ~ facing ~-1 ~ ~
-execute if score SEA_ch6_event rng5 matches 406 as @n[tag=SEAnorma] at @s run tp @s ~-0.4 ~ ~ facing ~-1 ~ ~
+execute if score SEA_ch6_event rng5 matches 222 as @n[tag=SEAnorma] at @s run tp @s ~-0.01 ~ ~-0.2 facing ~-0.02 ~ ~-0.4
+execute if score SEA_ch6_event rng5 matches 226 as @n[tag=SEAnorma] at @s run tp @s ~-0.01 ~ ~-0.2 facing ~-0.02 ~ ~-0.4
+execute if score SEA_ch6_event rng5 matches 230 as @n[tag=SEAnorma] at @s run tp @s ~-0.01 ~ ~-0.2 facing ~-0.02 ~ ~-0.4
+
+execute if score SEA_ch6_event rng5 matches 262 as @n[tag=SEAnorma] at @s run tp @s ~0.005 ~ ~0.2 facing ~0.01 ~ ~0.4
+execute if score SEA_ch6_event rng5 matches 266 as @n[tag=SEAnorma] at @s run tp @s ~0.005 ~ ~0.2 facing ~0.01 ~ ~0.4
+execute if score SEA_ch6_event rng5 matches 260 as @n[tag=SEAnorma] at @s run tp @s ~0.005 ~ ~0.2 facing ~0.01 ~ ~0.4
+
+execute if score SEA_ch6_event rng5 matches 403..407 as @n[tag=SEAnorma] at @s run tp @s ~-0.2 ~ ~0.15 facing @p[tag=SEAPT]
 
 execute if score SEA_ch6_event rng5 matches 402 positioned 90152 161 115 run summon marker ~ ~ ~ {Tags:["SEAedwina_smoke"]}
 execute if score SEA_ch6_event rng5 matches 409 positioned 90152 161 115 run fill 90152 161 114 90152 162 114 air destroy
 execute if score SEA_ch6_event rng5 matches 409 positioned 90152 161 114 run function skyblock:sea/m/unique/npc_edwina
+execute if score SEA_ch6_event rng5 matches 409 positioned 90152 161.01 114 as @n[tag=SEAedwina] at @s run data modify entity @s NoAI set value 0b
 execute if score SEA_ch6_event rng5 matches 409 positioned 90152 161.01 114 as @n[tag=SEAedwina] at @s run data modify entity @s Motion set value [-3.0,0.0,0.0]
 execute if score SEA_ch6_event rng5 matches 411..420 positioned 90152 161 114 run rotate @n[tag=SEAnorma] facing entity @n[tag=SEAedwina]
 execute if score SEA_ch6_event rng5 matches 409..420 positioned 90152 161 114 run rotate @n[tag=SEAedwina] facing entity @n[tag=SEAnorma]
@@ -98,11 +106,13 @@ execute if score SEA_ch6_event rng5 matches 412 run tellraw @a[distance=0..150] 
 execute if score SEA_ch6_event rng5 matches 413 positioned 90152 161 114 as @n[tag=SEAnorma] at @s run damage @s 3 generic
 execute if score SEA_ch6_event rng5 matches 413 positioned 90152 161 114 as @n[tag=SEAnorma] at @s run tp @s ~-0.5 ~ ~-0.8 facing ~1 ~ ~1.6
 execute if score SEA_ch6_event rng5 matches 409 positioned 90152 161 114 as @n[tag=SEAedwina] at @s run item replace entity @s weapon.mainhand with iron_axe
+execute if score SEA_ch6_event rng5 matches 413 positioned 90152 161 114 as @n[tag=SEAedwina] at @s run playsound minecraft:entity.player.attack.knockback neutral @a ~ ~ ~ 1 0.8
 execute if score SEA_ch6_event rng5 matches 413 positioned 90152 161 114 as @n[tag=SEAedwina] at @s run particle sweep_attack ^ ^1.2 ^1.1 0.35 0.2 0.35 0 4
 
 execute if score SEA_ch6_event rng5 matches 415 positioned 90152 161 114 as @n[tag=SEAedwina] at @s run tp @s ~-1.1 ~ ~-1.2 facing ~-2.2 ~ ~-2.4
 execute if score SEA_ch6_event rng5 matches 415 positioned 90152 161 114 as @n[tag=SEAnorma] at @s run tp @s ~-0.6 ~0.1 ~-1.3 facing ~1.2 ~-0.1 ~2.6
 execute if score SEA_ch6_event rng5 matches 416 positioned 90152 161 114 as @n[tag=SEAnorma] at @s run damage @s 3 generic
+execute if score SEA_ch6_event rng5 matches 416 positioned 90152 161 114 as @n[tag=SEAedwina] at @s run playsound minecraft:entity.player.attack.strong neutral @a ~ ~ ~ 1 0.8
 execute if score SEA_ch6_event rng5 matches 416 positioned 90152 161 114 as @n[tag=SEAedwina] at @s run particle sweep_attack ^ ^1.2 ^1.1 0.35 0.2 0.35 0 4
 
 #execute as @p[tag=SEAPT,score={SEAPT_member=1}] at @s
