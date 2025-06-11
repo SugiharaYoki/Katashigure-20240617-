@@ -40,10 +40,21 @@ execute if score SEA_ch6_event rng5 matches 155 as @n[tag=SEAfiona,x=90000,y=100
 execute if score SEA_ch6_event rng5 matches 155 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run playsound minecraft:entity.player.attack.strong hostile @a ~ ~ ~ 1 0.8
 execute if score SEA_ch6_event rng5 matches 155 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run playsound minecraft:entity.player.attack.sweep hostile @a ~ ~ ~ 1 0.8
 execute if score SEA_ch6_event rng5 matches 155 run kill @n[tag=SEAfiona]
+execute if score SEA_ch6_event rng5 matches 159 run summon minecraft:lightning_bolt 90135.47 174.97 50.63
+execute if score SEA_ch6_event rng5 matches 159 as @a[tag=SEAPT] at @s run playsound garden2.bgm.drowning1 music @s ~ ~ ~ 0.7 1.0
 
-execute if score SEA_ch6_event rng5 matches 180 as @n[tag=SEAnoma,x=90000,y=100,z=0,distance=0..1200] at @s run playsound minecraft:entity.evoker.ambient neutral @a ~ ~ ~ 1 1.5
-execute if score SEA_ch6_event rng5 matches 180 if score SEA_ch5_event_fiona_favor rng1 matches ..14 run tellraw @a[distance=0..150] [{"text":"玛瑞莲：","color":"dark_purple","bold": true},{"text":"\n“可惜呀，菲尔娜大小姐。当初，我原本还想和你成为好朋友。如果圣水晶从来没出现过……”","color":"white","bold": false}]
-execute if score SEA_ch6_event rng5 matches 180 if score SEA_ch5_event_fiona_favor rng1 matches 15.. run tellraw @a[distance=0..150] [{"text":"玛瑞莲：","color":"dark_purple","bold": true},{"text":"\n“小两口真是浪漫啊，在生命的最后关头还不忘记唧唧我我。现在，我来帮你们一同上路。”","color":"white","bold": false}]
+execute if score SEA_ch6_event rng5 matches 165 if score SEA_ch5_event_fiona_favor rng1 matches ..8 as @a[tag=SEAPT] tellraw @a[distance=0..50] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“操，你居然真的敢下死手！！”","color":"white"}]
+execute if score SEA_ch6_event rng5 matches 165 if score SEA_ch5_event_fiona_favor rng1 matches 9..14 as @a[tag=SEAPT] tellraw @a[distance=0..50] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“菲尔娜！！”","color":"white"}]
+execute if score SEA_ch6_event rng5 matches 165 if score SEA_ch5_event_fiona_favor rng1 matches 15.. as @a[tag=SEAPT] tellraw @a[distance=0..50] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“菲……菲尔娜！！不要、不要！！！”","color":"white"}]
+
+execute if score SEA_ch6_event rng5 matches 200 as @n[tag=SEAnoma,x=90000,y=100,z=0,distance=0..1200] at @s run playsound minecraft:entity.evoker.ambient neutral @a ~ ~ ~ 1 1.5
+execute if score SEA_ch6_event rng5 matches 200 if score SEA_ch5_event_fiona_favor rng1 matches ..14 run tellraw @a[distance=0..150] [{"text":"玛瑞莲：","color":"dark_purple","bold": true},{"text":"\n“可惜呀，菲尔娜大小姐。当初，我原本还想和你成为好朋友。如果圣水晶从来没出现过……”","color":"white","bold": false}]
+execute if score SEA_ch6_event rng5 matches 200 if score SEA_ch5_event_fiona_favor rng1 matches 15.. run tellraw @a[distance=0..150] [{"text":"玛瑞莲：","color":"dark_purple","bold": true},{"text":"\n“小两口真是浪漫啊，在生命的最后关头还不忘记唧唧我我。现在，我来帮你们一同上路。”","color":"white","bold": false}]
+
+execute if score SEA_ch6_event rng5 matches 223 as @n[tag=SEAnoma,x=90000,y=100,z=0,distance=0..1200] at @s run playsound minecraft:entity.evoker.ambient neutral @a ~ ~ ~ 1 1.5
+execute if score SEA_ch6_event rng5 matches 223 run tellraw @a[distance=0..150] [{"text":"玛瑞莲？：","color":"dark_purple","bold": true},{"text":"\n“先生，我问你：知道玛丽莲·梦露的原名是什么吗？”","color":"white","bold": false}]
+execute if score SEA_ch6_event rng5 matches 243 as @n[tag=SEAnoma,x=90000,y=100,z=0,distance=0..1200] at @s run playsound minecraft:entity.evoker.ambient neutral @a ~ ~ ~ 1 1.5
+execute if score SEA_ch6_event rng5 matches 243 run tellraw @a[distance=0..150] [{"text":"诺玛：","color":"red","bold": true},{"text":"\n“生怕你到死都没想明白。是诺玛·简·莫泰森。”","color":"white","bold": false}]
 
 execute if score SEA_ch6_event rng5 matches 13 as @n[tag=SEAnoma] at @s run tp @s ~-0.15 ~ ~-0.5 facing ~-0.6 ~ ~-2
 execute if score SEA_ch6_event rng5 matches 17 as @n[tag=SEAnoma] at @s run tp @s ~-0.15 ~ ~-0.5 facing ~-0.6 ~ ~-2
