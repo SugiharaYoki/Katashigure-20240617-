@@ -95,6 +95,7 @@ execute if score SEA_ch6_event rng5 matches 260 as @n[tag=SEAnorma] at @s run tp
 execute if score SEA_ch6_event rng5 matches 403..407 as @n[tag=SEAnorma] at @s run tp @s ~-0.2 ~ ~0.15 facing @p[tag=SEAPT]
 
 execute if score SEA_ch6_event rng5 matches 402 positioned 90152 161 115 run summon marker ~ ~ ~ {Tags:["SEAedwina_smoke"]}
+execute if score SEA_ch6_event rng5 matches 402 positioned 90152 161 115 run tag @n[tag=SEAnorma] add SEAmob
 execute if score SEA_ch6_event rng5 matches 409 positioned 90152 161 115 run fill 90152 161 114 90152 162 114 air destroy
 execute if score SEA_ch6_event rng5 matches 409 positioned 90152 161 114 run function skyblock:sea/m/unique/npc_edwina
 execute if score SEA_ch6_event rng5 matches 409 positioned 90152 161.01 114 as @n[tag=SEAedwina] at @s run data modify entity @s NoAI set value 0b
