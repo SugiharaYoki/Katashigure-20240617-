@@ -982,6 +982,11 @@ setblock 90145 140 120 chest[facing=west]
 setblock 90145 160 123 minecraft:iron_door[facing=north]
 fill 90152 161 114 90152 162 114 glass_pane
 
+setblock 90145 160 117 minecraft:iron_door[open=true,half=lower]
+setblock 90145 161 117 minecraft:iron_door[open=true,half=upper]
+setblock 90145 160 122 air
+
+
 
 
 

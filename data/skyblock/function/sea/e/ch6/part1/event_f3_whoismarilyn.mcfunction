@@ -174,12 +174,7 @@ execute if score SEA_ch6_event rng5 matches 500 as @n[tag=SEAnorma,x=90000,y=100
 
 #execute as @p[tag=SEAPT,score={SEAPT_member=1}] at @s
 
-
-
-
-
-
-
+execute if score SEA_ch6_event rng5 matches 501..600 run scoreboard players set SEA_ch6_event rng5 1000
 
 
 
