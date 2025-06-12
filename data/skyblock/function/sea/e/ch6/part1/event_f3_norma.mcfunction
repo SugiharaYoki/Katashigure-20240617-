@@ -26,4 +26,20 @@ execute if score SEA_ch6_event rng5 matches 1119 run particle minecraft:smoke 90
 execute if score SEA_ch6_event rng5 matches 1119 run playsound minecraft:entity.zombie.attack_iron_door block @a 90145.17 161.00 118.00 0.9 0.8
 execute if score SEA_ch6_event rng5 matches 1111 run playsound minecraft:entity.zombie.break_wooden_door block @a 90145.17 161.00 118.00 1 0.8
 
-execute if score SEA_ch6_event rng5 matches 1007 run setblock 90145 160 122 minecraft:redstone_torch
+execute if score SEA_ch6_event rng5 matches 1107 run setblock 90145 160 122 minecraft:redstone_torch
+
+
+execute if score SEA_ch6_event rng5 matches 1112 run particle minecraft:explosion_emitter 90140 162 143 1 1 1 1 1
+execute if score SEA_ch6_event rng5 matches 1112 run playsound minecraft:entity.generic.explode ambient @s 90140 162 143 2 0.8
+
+execute if score SEA_ch6_event rng5 matches 1112 run clone 90148 -60 130 90153 -55 136 90138 159 140
+execute if score SEA_ch6_event rng5 matches 1112 run setblock 90140 163 143 gravel
+execute if score SEA_ch6_event rng5 matches 1112 run setblock 90141 163 142 gravel
+execute if score SEA_ch6_event rng5 matches 1112 run setblock 90141 163 143 gravel
+
+
+
+
+
+
+
