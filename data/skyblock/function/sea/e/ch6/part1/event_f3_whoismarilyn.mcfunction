@@ -161,21 +161,21 @@ execute if score SEA_ch6_event rng5 matches 438 as @n[tag=SEAnorma,x=90000,y=100
 execute if score SEA_ch6_event rng5 matches 438 run tellraw @a[distance=0..150] [{"text":"诺玛：","color":"red","bold": true},{"text":"\n“呵呵呵，原来如此啊，我提前炸掉水下研究机构，居然没能困住你。”","color":"white","bold": false}]
 execute if score SEA_ch6_event rng5 matches 452 as @n[tag=SEAnorma,x=90000,y=100,z=0,distance=0..1200] at @s run playsound minecraft:entity.evoker.ambient neutral @a ~ ~ ~ 1 1.5
 execute if score SEA_ch6_event rng5 matches 452 run tellraw @a[distance=0..150] [{"text":"诺玛：","color":"red","bold": true},{"text":"\n“很遗憾……我可不止有嘴皮功夫。我不会让你们就这么离开。”","color":"white","bold": false}]
-execute if score SEA_ch6_event rng5 matches 455..500 as @n[tag=SEAnorma,x=90000,y=100,z=0,distance=0..1200] run particle crimson_spore ~ ~0.2 ~ 1 0.3 1 0.05 10
-execute if score SEA_ch6_event rng5 matches 465..500 as @n[tag=SEAnorma,x=90000,y=100,z=0,distance=0..1200] run particle crimson_spore ~ ~0.2 ~ 5 0.3 5 0.05 20
-execute if score SEA_ch6_event rng5 matches 475..500 as @n[tag=SEAnorma,x=90000,y=100,z=0,distance=0..1200] run particle crimson_spore ~ ~0.2 ~ 12 0.3 12 0.05 50
-execute if score SEA_ch6_event rng5 matches 485..500 as @n[tag=SEAnorma,x=90000,y=100,z=0,distance=0..1200] run particle small_flame ~ ~0.2 ~ 2 0.3 2 0.05 30
-execute if score SEA_ch6_event rng5 matches 500 run kill @n[tag=SEAnorma]
-execute if score SEA_ch6_event rng5 matches 500 positioned 90144 160.8 109 run function skyblock:sea/m/unique/npc_marilyn_mob
-execute if score SEA_ch6_event rng5 matches 500 as @n[tag=SEAnorma,x=90000,y=100,z=0,distance=0..1200] run particle flame ~ ~1 ~ 0 0 0 0.08 200
-execute if score SEA_ch6_event rng5 matches 500 as @n[tag=SEAnorma,x=90000,y=100,z=0,distance=0..1200] run particle flame ~ ~1 ~ 0 0 0 0.32 200
-execute if score SEA_ch6_event rng5 matches 500 as @n[tag=SEAnorma,x=90000,y=100,z=0,distance=0..1200] run particle flame ~ ~1 ~ 0 0 0 0.8 200
-execute if score SEA_ch6_event rng5 matches 455..480 as @n[tag=SEAnorma,x=90000,y=100,z=0,distance=0..1200] run playsound ambient.soul_sand_valley.additions ambient @a ~ ~ ~ 5 1.3
-execute if score SEA_ch6_event rng5 matches 500 as @n[tag=SEAnorma,x=90000,y=100,z=0,distance=0..1200] run playsound entity.zombie_villager.cure hostile @a ~ ~ ~ 5 1.3
+execute if score SEA_ch6_event rng5 matches 425..455 as @n[tag=SEAnorma,x=90000,y=100,z=0,distance=0..1200] run particle crimson_spore ~ ~0.2 ~ 1 0.3 1 0.05 10
+execute if score SEA_ch6_event rng5 matches 430..455 as @n[tag=SEAnorma,x=90000,y=100,z=0,distance=0..1200] run particle crimson_spore ~ ~0.2 ~ 5 0.3 5 0.05 20
+execute if score SEA_ch6_event rng5 matches 445..455 as @n[tag=SEAnorma,x=90000,y=100,z=0,distance=0..1200] run particle crimson_spore ~ ~0.2 ~ 12 0.3 12 0.05 50
+execute if score SEA_ch6_event rng5 matches 450..455 as @n[tag=SEAnorma,x=90000,y=100,z=0,distance=0..1200] run particle small_flame ~ ~0.2 ~ 2 0.3 2 0.05 30
+execute if score SEA_ch6_event rng5 matches 455 run kill @n[tag=SEAnorma]
+execute if score SEA_ch6_event rng5 matches 455 positioned 90144 160.8 109 run function skyblock:sea/m/unique/npc_marilyn_mob
+execute if score SEA_ch6_event rng5 matches 455 as @n[tag=SEAnorma,x=90000,y=100,z=0,distance=0..1200] run particle flame ~ ~1 ~ 0 0 0 0.08 200
+execute if score SEA_ch6_event rng5 matches 455 as @n[tag=SEAnorma,x=90000,y=100,z=0,distance=0..1200] run particle flame ~ ~1 ~ 0 0 0 0.32 200
+execute if score SEA_ch6_event rng5 matches 455 as @n[tag=SEAnorma,x=90000,y=100,z=0,distance=0..1200] run particle flame ~ ~1 ~ 0 0 0 0.8 200
+execute if score SEA_ch6_event rng5 matches 425..440 as @n[tag=SEAnorma,x=90000,y=100,z=0,distance=0..1200] run playsound ambient.soul_sand_valley.additions ambient @a ~ ~ ~ 5 1.3
+execute if score SEA_ch6_event rng5 matches 455 as @n[tag=SEAnorma,x=90000,y=100,z=0,distance=0..1200] run playsound entity.zombie_villager.cure hostile @a ~ ~ ~ 5 1.3
 
 #execute as @p[tag=SEAPT,score={SEAPT_member=1}] at @s
 
-execute if score SEA_ch6_event rng5 matches 501..600 run scoreboard players set SEA_ch6_event rng5 1000
+execute if score SEA_ch6_event rng5 matches 460..600 run scoreboard players set SEA_ch6_event rng5 1000
 
 
 
