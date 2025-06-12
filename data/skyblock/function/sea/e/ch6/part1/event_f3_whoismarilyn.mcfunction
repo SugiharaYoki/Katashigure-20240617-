@@ -154,6 +154,11 @@ execute if score SEA_ch6_event rng5 matches 426 as @a[tag=SEAPT] at @s run attri
 execute if score SEA_ch6_event rng5 matches 426 as @a[tag=SEAPT] at @s run effect clear @s glowing
 execute if score SEA_ch6_event rng5 matches 426 as @a[distance=0..200] at @s run tellraw @s [{"text":"身体可以动了！！","color":"green"}]
 
+execute if score SEA_ch6_event rng5 matches 426 positioned 90144 160 118 run function skyblock:sea/m/drowned_shield
+execute if score SEA_ch6_event rng5 matches 426 positioned 90146 160 118 run function skyblock:sea/m/drowned_shield
+execute if score SEA_ch6_event rng5 matches 426 positioned 90142 160 125 run function skyblock:sea/m/drowned_shield
+
+
 execute if score SEA_ch6_event rng5 matches 432 positioned 90152 161 114 run rotate @n[tag=SEAedwina] facing entity @p[tag=SEAPT]
 execute if score SEA_ch6_event rng5 matches 432 as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
 execute if score SEA_ch6_event rng5 matches 432 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"red","bold": true},{"text":"\n“快逃，她也是感染者，我的攻击只会加速她的尸变！！她能撑到现在，尸变后的危险度不容小觑！！”","color":"white","bold": false}]
