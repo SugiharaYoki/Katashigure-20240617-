@@ -29,6 +29,7 @@ execute if score SEA_ch6_event rng5 matches 50 run tellraw @a[distance=0..150] [
 execute if score SEA_ch6_event rng5 matches 70 as @n[tag=SEAnorma,x=90000,y=100,z=0,distance=0..1200] at @s run playsound minecraft:entity.evoker.ambient neutral @a ~ ~ ~ 1 1.5
 execute if score SEA_ch6_event rng5 matches 70 run tellraw @a[distance=0..150] [{"text":"玛瑞莲：","color":"dark_purple","bold": true},{"text":"\n“讶异吗？你忘记我也参与开发了静滞光棱？菲尔娜大小姐，你明知道有危险，为何还会义无反顾地往这里闯？”","color":"white","bold": false}]
 execute if score SEA_ch6_event rng5 matches 88 as @a[tag=SEAPT] run tellraw @a[distance=0..50] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“玛瑞莲？……难道说，我被你骗了？！”","color":"white"}]
+execute if score SEA_ch6_event rng5 matches 50 run scoreboard players set SEA_ch6_event rng5 55
 execute if score SEA_ch6_event rng5 matches 90 run scoreboard players set SEA_ch6_event rng5 95
 execute if score SEA_ch6_event rng5 matches 108 as @n[tag=SEAnorma,x=90000,y=100,z=0,distance=0..1200] at @s run playsound minecraft:entity.evoker.ambient neutral @a ~ ~ ~ 1 1.5
 execute unless items block 90148 145 152 container.1 blue_wool if score SEA_ch6_event rng5 matches 108 run tellraw @a[distance=0..150] [{"text":"玛瑞莲：","color":"dark_purple","bold": true},{"text":"\n“被骗？那怎么能算被骗呢。","color":"white","bold": false},{"selector":"@p[tag=SEAPT,scores={SEAPT_member=1}]","color":"white","bold": false},{"text":"，你们原本就都要死在这里。我不一样，我会成为更加高等的生命。”","color":"white","bold": false}]
@@ -183,9 +184,19 @@ execute if score SEA_ch6_event rng5 matches 455 as @n[tag=SEAnorma,x=90000,y=100
 execute if score SEA_ch6_event rng5 matches 460..600 run scoreboard players set SEA_ch6_event rng5 1000
 
 
+execute if score SEA_ch6_event rng5 matches 159 run scoreboard players set SEA_ch6_event rng5 700
+execute if score SEA_ch6_event rng5 matches 755..910 run scoreboard players set SEA_ch6_event rng5 160
 
-
-
+execute if score SEA_ch6_event rng5 matches 718 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
+execute if score SEA_ch6_event rng5 matches 718 if score SEA_ch5_event_fiona_favor rng1 matches ..14 run tellraw @a[distance=0..150] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“我没有任何能和你谈的，诺玛。我知道我本就会死。”","color":"white","bold": false}]
+execute if score SEA_ch6_event rng5 matches 718 if score SEA_ch5_event_fiona_favor rng1 matches 15..17 run tellraw @a[distance=0..150] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“","color":"white","bold": false},{"selector":"@p[tag=SEAPT,scores={SEAPT_member=1}]","color":"white","bold": false},{"text":"不论如何，诺玛！在杀了他之前，你得从我的尸体上踩过去。”","color":"white","bold": false}]
+execute if score SEA_ch6_event rng5 matches 718 if score SEA_ch5_event_fiona_favor rng1 matches 18.. run tellraw @a[distance=0..150] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“","color":"white","bold": false},{"selector":"@p[tag=SEAPT,scores={SEAPT_member=1}]","color":"white","bold": false},{"text":"我不会让你伤害他，无论如何……！！”","color":"white","bold": false}]
+execute if score SEA_ch6_event rng5 matches 735 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
+execute if score SEA_ch6_event rng5 matches 735 if score SEA_ch5_event_fiona_favor rng1 matches ..14 run tellraw @a[distance=0..150] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“但诺玛，你也一样。你的计谋永远不会成功，这就是你悲惨的命运。”","color":"white","bold": false}]
+execute if score SEA_ch6_event rng5 matches 735 if score SEA_ch5_event_fiona_favor rng1 matches 15..17 run tellraw @a[distance=0..150] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“","color":"white","bold": false},{"selector":"@p[tag=SEAPT,scores={SEAPT_member=1}]","color":"white","bold": false},{"text":"动手啊，你冲着我来！！”","color":"white","bold": false}]
+execute if score SEA_ch6_event rng5 matches 735 if score SEA_ch5_event_fiona_favor rng1 matches 18.. run tellraw @a[distance=0..150] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“","color":"white","bold": false},{"selector":"@p[tag=SEAPT,scores={SEAPT_member=1}]","color":"white","bold": false},{"text":"他的灵魂远比你的要高洁，你永远都无法胜过他，他是比你更加完美的人选！！”","color":"white","bold": false}]
+execute if score SEA_ch6_event rng5 matches 754 as @n[tag=SEAnorma,x=90000,y=100,z=0,distance=0..1200] at @s run playsound minecraft:entity.evoker.ambient neutral @a ~ ~ ~ 1 1.5
+execute if score SEA_ch6_event rng5 matches 754 run tellraw @a[distance=0..150] [{"text":"诺玛：","color":"red","bold": true},{"text":"\n“……废话真的太多了。大小姐，我其实一直都觉得你不该这么啰嗦。”","color":"white","bold": false}]
 
 
 
