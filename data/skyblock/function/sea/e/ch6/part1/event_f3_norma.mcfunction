@@ -18,9 +18,12 @@ execute if score SEA_ch6_event rng5 matches 1103 run playsound minecraft:block.i
 execute if score SEA_ch6_event rng5 matches 1104 run tp @n[tag=SEAnorma] 90145 160 115 facing 90145 160 116
 execute if score SEA_ch6_event rng5 matches 1107 run data modify entity @n[tag=SEAnorma] Motion set value [0.0,0.3,-0.5]
 execute if score SEA_ch6_event rng5 matches 1110 run data modify entity @n[tag=SEAnorma] Motion set value [0.0,0.1,2.0]
-execute if score SEA_ch6_event rng5 matches 1111 run fill 90145 160 117 90145 161 117 air
-execute if score SEA_ch6_event rng5 matches 1111 run particle minecraft:white_smoke 90145.17 161.00 118.00 0.5 1 0.1 0.05 50
-execute if score SEA_ch6_event rng5 matches 1111 run particle minecraft:smoke 90145.17 161.00 118.00 0.5 1 0.1 0.05 50
+execute if score SEA_ch6_event rng5 matches 1115 run data modify entity @n[tag=SEAnorma] Motion set value [0.0,0.3,-0.7]
+execute if score SEA_ch6_event rng5 matches 1118 run data modify entity @n[tag=SEAnorma] Motion set value [0.0,0.1,2.0]
+execute if score SEA_ch6_event rng5 matches 1119 run fill 90145 160 117 90145 161 117 air
+execute if score SEA_ch6_event rng5 matches 1119 run particle minecraft:white_smoke 90145.17 161.00 118.00 0.5 1 0.1 0.05 50
+execute if score SEA_ch6_event rng5 matches 1119 run particle minecraft:smoke 90145.17 161.00 118.00 0.5 1 0.1 0.05 50
+execute if score SEA_ch6_event rng5 matches 1119 run playsound minecraft:entity.zombie.attack_iron_door block @a 90145.17 161.00 118.00 0.9 0.8
 execute if score SEA_ch6_event rng5 matches 1111 run playsound minecraft:entity.zombie.break_wooden_door block @a 90145.17 161.00 118.00 1 0.8
 
 execute if score SEA_ch6_event rng5 matches 1007 run setblock 90145 160 122 minecraft:redstone_torch
