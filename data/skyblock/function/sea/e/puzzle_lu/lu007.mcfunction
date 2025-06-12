@@ -27,9 +27,6 @@ execute if score @n[tag=sc] rng5 matches 3 positioned 90151 155 109 if block ~ ~
 execute if score @n[tag=sc] rng5 matches 4 positioned 90151 155 111 if block ~ ~ ~ redstone_lamp[lit=true] run setblock ~ ~ ~ white_concrete
 execute if score @n[tag=sc] rng5 matches 4 positioned 90151 155 111 if block ~ ~ ~ redstone_lamp[lit=false] run setblock ~ ~ ~ redstone_lamp[lit=true]
 execute if score @n[tag=sc] rng5 matches 4 positioned 90151 155 111 if block ~ ~ ~ white_concrete run setblock ~ ~ ~ redstone_lamp[lit=false]
-execute if score @n[tag=sc] rng5 matches 4 positioned 90151 155 110 if block ~ ~ ~ redstone_lamp[lit=true] run setblock ~ ~ ~ white_concrete
-execute if score @n[tag=sc] rng5 matches 4 positioned 90151 155 110 if block ~ ~ ~ redstone_lamp[lit=false] run setblock ~ ~ ~ redstone_lamp[lit=true]
-execute if score @n[tag=sc] rng5 matches 4 positioned 90151 155 110 if block ~ ~ ~ white_concrete run setblock ~ ~ ~ redstone_lamp[lit=false]
 
 execute \
 if block 90151 155 108 redstone_lamp[lit=true] \

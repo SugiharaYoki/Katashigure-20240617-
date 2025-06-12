@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "行政区吊车控制室的笔记 - 麦迪逊",
+            "color": "light_purple",
+            "bold": false,
+            "italic": false
+        },
+        "description": {
+            "text": "我突然意识到，这些藤蔓归根究底是在模仿神庭的生命之树啊。\n但它们却只是粗糙而卑劣的伪造产物。\n我现在需要弄明白的，是为何受到细菌感染的植物会显现出一部分本该属于天使长的权能。\n这些古代细菌真的是被神镇压在地底峡谷之中的邪恶之物吗？\n说到底，它们也早就超脱了“细菌”的范畴。它们的扩散本身就存在着目的性。\n“道路的天使”，您究竟在尝试给我传达什么消息？\n……等等，等等！我全部明白了，我终于知道这一切背后的联系了！！\n圣水晶与细菌并非象征神明与某种不明势力的敌对。\n它们本身就是二位一体、互辅相城的存在！\n细菌为的就是带来死亡，而圣水晶则吸引了尽可能多的生命，这一切都是为了……\n原来如此，天使长雷米尔大人，我终于明白您的旨意了！！",
+            "color": "white"
+        },
+        "icon": {
+            "id": "minecraft:flow_banner_pattern"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "sea": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:sea/doc/b10"
+}

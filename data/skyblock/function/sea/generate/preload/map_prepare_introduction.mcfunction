@@ -874,10 +874,14 @@ setblock 90154 153 267 minecraft:waxed_copper_bulb[lit=true]
 fill 90143 148 124 90142 148 124 minecraft:mangrove_leaves[persistent=true]
 fill 90142 147 125 90142 146 125 minecraft:mangrove_leaves[persistent=true]
 fill 90082 124 149 90082 122 149 minecraft:mangrove_leaves[persistent=true]
-fill 90139 161 142 90139 163 142 minecraft:mangrove_leaves[persistent=true]
-fill 90139 161 143 90139 160 143 minecraft:mangrove_leaves[persistent=true]
-fill 90138 161 143 90138 161 144 minecraft:mangrove_leaves[persistent=true]
-setblock 90138 162 144 minecraft:mangrove_leaves[persistent=true]
+#行政区3楼宝箱钥匙
+fill 90145 141 120 90145 143 120 minecraft:mangrove_leaves[persistent=true]
+fill 90144 140 120 90144 141 120 minecraft:mangrove_leaves[persistent=true]
+
+fill 90139 161 142 90139 163 142 minecraft:mangrove_roots
+fill 90139 161 143 90139 160 143 minecraft:mangrove_roots
+fill 90138 161 143 90138 161 144 minecraft:mangrove_roots
+setblock 90138 162 144 minecraft:mangrove_roots
 
 setblock 90146 146 123 redstone_block
 setblock 90146 146 123 air
@@ -970,6 +974,23 @@ summon minecraft:item_frame 90144 162 146 {Invisible:1b,Fixed:0b,Invulnerable:0b
 
 setblock 90146 160 127 redstone_block
 setblock 90146 160 127 air
+
+setblock 90150 160 124 chest[facing=south]{lock:{components:{custom_data:{"sea_key11":true}}}}
+item replace block 90150 160 124 container.12 with golden_carrot 3
+
+setblock 90144 161 124 air
+setblock 90145 140 120 chest[facing=west]
+setblock 90145 160 123 minecraft:iron_door[facing=north]
+fill 90152 161 114 90152 162 114 glass_pane
+
+setblock 90145 160 117 minecraft:iron_door[open=true,half=lower]
+setblock 90145 161 117 minecraft:iron_door[open=true,half=upper]
+setblock 90145 160 122 air
+
+clone 90138 -60 130 90143 -55 136 90138 159 140
+fill 90151 148 136 90151 150 136 air
+
+
 
 
 

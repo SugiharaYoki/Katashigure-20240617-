@@ -36,4 +36,8 @@ execute if score SEA_ch6_f2 rng1 matches 12 if score SEA_ch5_event_fiona_favor r
 
 
 
+execute if score SEA_ch6_f2 rng1 matches 2 run fill 90139 161 142 90139 163 142 minecraft:mangrove_leaves[persistent=true]
+execute if score SEA_ch6_f2 rng1 matches 2 run fill 90139 161 143 90139 160 143 minecraft:mangrove_leaves[persistent=true]
+execute if score SEA_ch6_f2 rng1 matches 2 run fill 90138 161 143 90138 161 144 minecraft:mangrove_leaves[persistent=true]
+execute if score SEA_ch6_f2 rng1 matches 2 run setblock 90138 162 144 minecraft:mangrove_leaves[persistent=true]
 

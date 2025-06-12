@@ -7,7 +7,7 @@ execute if score sea rng1 matches 1..4 run particle minecraft:electric_spark 901
 execute as @e[type=spectral_arrow,x=90000,y=100,z=0,distance=..5000,nbt={inGround:false}] at @s run function skyblock:sea/p/spectral
 
 execute as @e[type=item,x=90000,y=100,z=100,distance=..3000,tag=!SEAitemchecked] at @s run function skyblock:sea/p/item
-execute as @e[type=item,x=90000,y=100,z=100,distance=..3000,tag=SEAitemchecked,tag=SEAitemchecked_pers] at @s run function skyblock:sea/p/item_pers
+execute as @e[type=item,x=90000,y=100,z=100,distance=..3000,tag=SEAitemchecked_pers] at @s run function skyblock:sea/p/item_pers
 execute as @e[tag=sea_drone,x=90000,y=100,z=100,distance=..3000] at @s run function skyblock:sea/p/drone
 execute as @e[tag=sea_mine,x=90000,y=100,z=100,distance=..3000] at @s run function skyblock:sea/p/mine
 
@@ -28,14 +28,7 @@ execute as @a[tag=SEAPT] at @s if items entity @s weapon.mainhand *[custom_data=
 execute as @a[tag=SEAPT] at @s run function skyblock:sea/p/player_fast
 execute as @e[type=marker,x=90000,y=0,z=0,distance=..3000,tag=SEAripper_launched] at @s run function skyblock:sea/p/ripper_launch
 
-execute as @e[type=marker,x=90000,y=0,z=0,distance=..3000,tag=SEAedwina_smoke] at @s run scoreboard players add @s rng1 1
-execute as @e[type=marker,x=90000,y=0,z=0,distance=..3000,tag=SEAedwina_smoke,scores={rng1=1}] at @s run playsound item.flintandsteel.use hostile @a ~ ~ ~ 1 0.8
-execute as @e[type=marker,x=90000,y=0,z=0,distance=..3000,tag=SEAedwina_smoke,scores={rng1=10..}] at @s if entity @a[tag=SEAPT,distance=0..2.5] run scoreboard players add @s rng1 1
-execute as @e[type=marker,x=90000,y=0,z=0,distance=..3000,tag=SEAedwina_smoke,scores={rng1=10..}] at @s as @a[tag=SEAPT,distance=0..1.5] run effect give @s blindness 3 0 false
-execute as @e[type=marker,x=90000,y=0,z=0,distance=..3000,tag=SEAedwina_smoke,scores={rng1=10..}] at @s if entity @a[tag=SEAPT,distance=0..1.85] run scoreboard players add @s rng1 1
-execute as @e[type=marker,x=90000,y=0,z=0,distance=..3000,tag=SEAedwina_smoke,scores={rng1=10..}] at @s run particle squid_ink ~ ~1.1 ~ 1.0 1.1 1.0 0.03 30
-execute as @e[type=marker,x=90000,y=0,z=0,distance=..3000,tag=SEAedwina_smoke,scores={rng1=10..}] at @s run particle large_smoke ~ ~1.1 ~ 1.0 1.1 1.0 0.03 40
-execute as @e[type=marker,x=90000,y=0,z=0,distance=..3000,tag=SEAedwina_smoke,scores={rng1=100..}] at @s run kill @s
+execute as @e[type=marker,x=90000,y=0,z=0,distance=..3000,tag=SEAedwina_smoke] at @s run function skyblock:sea/e/ch4/boss/edwinasmoke
 
 
 execute if entity @a[tag=SEAPT,x=90123,y=0,z=98,dx=7,dy=103,dz=7] run function skyblock:sea/e/ch3/ev009_ch3_liftergoesdown
@@ -47,3 +40,8 @@ execute if block 90074 103 136 air as @n[tag=SEAch4_spawn_timer_boss4_fast] at @
 
 #拉斐尔之剑
 execute if entity @n[tag=sea_raphael_sword,type=armor_stand] run function skyblock:sea/p/weapon/raphael_sword_timer
+
+#艾德雯娜技能组
+execute as @n[tag=SEAedwina_ch6] at @s run function skyblock:sea/e/ch6/edwina/core
+
+

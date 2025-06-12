@@ -444,6 +444,7 @@ execute if score @s sea_crafter matches 90004 if block 90075 103 141 minecraft:c
 execute if score @s sea_crafter matches 90005 if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 67..85 run scoreboard players set SEA_ch5_event_engineering_fiona sea_4temp2 86
 execute if score @s sea_crafter matches 90006 if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 536..559 run scoreboard players set SEA_ch5_event_engineering_fiona sea_4temp2 560
 execute if score @s sea_crafter matches 90007 if score @n[tag=SEAjones] rng1 matches 101..128 run scoreboard players set @n[tag=SEAjones] rng1 130
+execute if score @s sea_crafter matches 90008 if entity @a[tag=SEAPT,tag=!SEAPF,tag=e_i_53] run function skyblock:sea/e/ch6/part1/event_f3_enterthelastpart
 
 execute if score @s sea_crafter matches 90000..99999 run scoreboard players set @s sea_crafter 0
 
