@@ -37,9 +37,11 @@ execute if score SEA_ch6_event rng5 matches 1112 run setblock 90140 163 143 grav
 execute if score SEA_ch6_event rng5 matches 1112 run setblock 90141 163 142 gravel
 execute if score SEA_ch6_event rng5 matches 1112 run setblock 90141 163 143 gravel
 
+execute if score SEA_ch6_event rng5 matches 1112 run fill 90151 151 136 90151 152 136 gravel
 
 
-
-
+execute if score SEA_ch6_event rng5 matches 1122 run tellraw @a[distance=0..200] [{"text":"全平台广播：","color":"green","bold": true},{"text":"\n“所有教徒与幸存者注意，忒尔克西的输油管道已经接近临界值。”","color":"white","bold": false}]
+execute if score SEA_ch6_event rng5 matches 1152 run tellraw @a[distance=0..200] [{"text":"全平台广播：","color":"green","bold": true},{"text":"\n“再次通知，忒尔克西的输油管道已经接近临界值。”","color":"white","bold": false}]
+execute if score SEA_ch6_event rng5 matches 1182 run tellraw @a[distance=0..200] [{"text":"全平台广播：","color":"green","bold": true},{"text":"\n“我们的驻足之地随时都可能爆炸崩塌，请所有人做好临终准备。”","color":"white","bold": false}]
 
 
