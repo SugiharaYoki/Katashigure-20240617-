@@ -146,6 +146,7 @@ execute if score SEA_ch6_event rng5 matches 422 run data modify entity @n[tag=SE
 execute if score SEA_ch6_event rng5 matches 419 as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
 execute if score SEA_ch6_event rng5 matches 419 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"red","bold": true},{"text":"\n“我想杀你很久了，你这孽畜真能活！！”","color":"white","bold": false}]
 
+execute if score SEA_ch6_event rng5 matches 419 run setblock 90152 161 114 barrier
 
 execute if score SEA_ch6_event rng5 matches 425 as @a[tag=SEAPT] at @s run attribute @s minecraft:movement_speed modifier remove sea:marilyn_01
 execute if score SEA_ch6_event rng5 matches 425 as @a[tag=SEAPT] at @s run attribute @s minecraft:jump_strength modifier remove sea:marilyn_01
