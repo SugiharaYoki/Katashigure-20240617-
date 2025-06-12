@@ -109,6 +109,7 @@ execute if score SEA_ch6_event rng5 matches 410..411 positioned 90152 161 115 ru
 execute if score SEA_ch6_event rng5 matches 410..411 positioned 90152 161 115 run scoreboard players set @n[tag=SEAedwina] rng6 0
 execute if score SEA_ch6_event rng5 matches 410..411 positioned 90152 161 115 run scoreboard players set @n[tag=SEAedwina] rng7 0
 execute if score SEA_ch6_event rng5 matches 410..411 positioned 90152 161 115 run scoreboard players set @n[tag=SEAedwina] rng8 0
+execute if score SEA_ch6_event rng5 matches 410..411 positioned 90152 161 115 run tag @n[tag=SEAedwina] remove SEAmob
 execute if score SEA_ch6_event rng5 matches 409 positioned 90152 161 115 run fill 90152 161 114 90152 162 114 air destroy
 execute if score SEA_ch6_event rng5 matches 409 positioned 90152 161 114 run function skyblock:sea/m/unique/npc_edwina
 execute if score SEA_ch6_event rng5 matches 409 positioned 90152 161.01 114 as @n[tag=SEAedwina] at @s run data modify entity @s NoAI set value 0b
@@ -148,10 +149,10 @@ execute if score SEA_ch6_event rng5 matches 419 as @n[tag=SEAedwina] at @s run t
 
 execute if score SEA_ch6_event rng5 matches 419 run setblock 90152 161 114 barrier
 
-execute if score SEA_ch6_event rng5 matches 425 as @a[tag=SEAPT] at @s run attribute @s minecraft:movement_speed modifier remove sea:marilyn_01
-execute if score SEA_ch6_event rng5 matches 425 as @a[tag=SEAPT] at @s run attribute @s minecraft:jump_strength modifier remove sea:marilyn_01
-execute if score SEA_ch6_event rng5 matches 425 as @a[tag=SEAPT] at @s run effect clear @s glowing
-execute if score SEA_ch6_event rng5 matches 425 as @a[distance=0..200] at @s run tellraw @s [{"text":"身体可以动了！！","color":"green"}]
+execute if score SEA_ch6_event rng5 matches 426 as @a[tag=SEAPT] at @s run attribute @s minecraft:movement_speed modifier remove sea:marilyn_01
+execute if score SEA_ch6_event rng5 matches 426 as @a[tag=SEAPT] at @s run attribute @s minecraft:jump_strength modifier remove sea:marilyn_01
+execute if score SEA_ch6_event rng5 matches 426 as @a[tag=SEAPT] at @s run effect clear @s glowing
+execute if score SEA_ch6_event rng5 matches 426 as @a[distance=0..200] at @s run tellraw @s [{"text":"身体可以动了！！","color":"green"}]
 
 execute if score SEA_ch6_event rng5 matches 432 positioned 90152 161 114 run rotate @n[tag=SEAedwina] facing entity @p[tag=SEAPT]
 execute if score SEA_ch6_event rng5 matches 432 as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
