@@ -990,7 +990,7 @@ setblock 90145 160 122 air
 clone 90138 -60 130 90143 -55 136 90138 159 140
 fill 90151 148 136 90151 150 136 air
 
-
+setblock 90098 129 113 minecraft:bamboo_button[facing=west]
 
 
 
