@@ -995,8 +995,8 @@ setblock 90139 161 142 minecraft:mangrove_roots
 setblock 90139 155 144 minecraft:air
 setblock 90138 154 143 air
 setblock 90139 153 142 air
-
-
+fill 90142 154 123 90140 154 123 air
+fill 90141 155 122 90143 155 122 air
 
 fill 90117 131 68 90121 131 68 iron_bars
 
