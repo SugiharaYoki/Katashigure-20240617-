@@ -39,3 +39,8 @@ summon guardian 50073 30 50472
 summon guardian 50073 30 50472
 setblock 50048 51 50440 air
 setblock 50048 51 50488 air
+setblock 50000 51 50488 air
+setblock 50000 51 50440 air
+setblock 50096 51 50440 air
+setblock 50096 51 50488 air
+
