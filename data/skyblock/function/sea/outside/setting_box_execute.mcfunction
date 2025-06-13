@@ -7,6 +7,13 @@ execute if items entity @s player.cursor name_tag run scoreboard players set @s[
 execute if items entity @s player.cursor structure_void run scoreboard players set @s sea_setting_box_index 1
 execute if items entity @s player.cursor sculk_shrieker run scoreboard players set @s sea_setting_box_index 2
 
+execute if items entity @s player.cursor tropical_fish run scoreboard players set @s[scores={SEAPT_setting_fiona=4}] SEAPT_setting_fiona 5
+execute if items entity @s player.cursor tropical_fish run scoreboard players set @s[scores={SEAPT_setting_fiona=3,advancements={skyblock:sea/doc/g28=true}}] SEAPT_setting_fiona 4
+execute if items entity @s player.cursor tropical_fish run scoreboard players set @s[scores={SEAPT_setting_fiona=3,advancements={skyblock:sea/doc/g28=false}}] SEAPT_setting_fiona 5
+execute if items entity @s player.cursor tropical_fish run scoreboard players set @s[scores={SEAPT_setting_fiona=2}] SEAPT_setting_fiona 3
+execute if items entity @s player.cursor tropical_fish run scoreboard players set @s[scores={SEAPT_setting_fiona=1}] SEAPT_setting_fiona 2
+execute if items entity @s player.cursor tropical_fish run scoreboard players set @s[scores={SEAPT_setting_fiona=5}] SEAPT_setting_fiona 1
+
 #tp @a[x=89829,y=12,z=-165,dx=30,dy=20,dz=30] 
 
 execute if items entity @s player.cursor polished_deepslate[custom_data={"sea_setting_box":true}] run function skyblock:sea/outside/setting_box_execute_chapter_selection

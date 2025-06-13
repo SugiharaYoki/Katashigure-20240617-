@@ -10,7 +10,11 @@ fill 90105 93 57 90105 94 57 minecraft:air
 execute positioned 90105 93 57 run function skyblock:sea/m/visioner
 fill 90109 102 54 90109 103 54 minecraft:air
 
-scoreboard players add SEA_ch5_event_fiona_favor rng1 14
+execute unless entity @s[scores={SEAPT_setting_fiona=1..}] scoreboard players add SEA_ch5_event_fiona_favor rng1 8
+execute if entity @s[scores={SEAPT_setting_fiona=1}] scoreboard players add SEA_ch5_event_fiona_favor rng1 0
+execute if entity @s[scores={SEAPT_setting_fiona=2}] scoreboard players add SEA_ch5_event_fiona_favor rng1 8
+execute if entity @s[scores={SEAPT_setting_fiona=3}] scoreboard players add SEA_ch5_event_fiona_favor rng1 16
+execute if entity @s[scores={SEAPT_setting_fiona=4}] scoreboard players add SEA_ch5_event_fiona_favor rng1 24
 
 fill 90109 114 41 90110 114 42 air
 fill 90109 115 41 90110 115 42 air
