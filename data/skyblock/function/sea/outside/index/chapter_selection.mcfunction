@@ -1,4 +1,4 @@
-
+execute unless entity @s[scores={SEAPT_setting_fiona=1..}] run scoreboard players set @s SEAPT_setting_fiona 2
 
 item replace entity @s[scores={sea_progress=0..}] container.9 with polished_deepslate[custom_data={"sea_setting_box":true},custom_name='{"text":"『第一章：维修层』","italic":false,"color":"aqua"}',lore=['{"text":"“有人在维修层？维修层居然还有活人？”","color":"white","italic":true}']]
 item replace entity @s[scores={sea_progress=3..}] container.10 with polished_diorite[custom_data={"sea_setting_box":true},custom_name='{"text":"『第二章：物资层』","italic":false,"color":"aqua"}',lore=['{"text":"“必须先把北区的冷冻系统给关停。”","color":"white","italic":true}']]
