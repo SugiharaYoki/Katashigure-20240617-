@@ -12,7 +12,6 @@ execute if block 90074 103 137 minecraft:scaffolding as @s[tag=!sea_t_pounce_dis
 execute as @s[tag=!sea_t_pounce_disabled,tag=sea_t_pounce1,predicate=!skyblock:sneaking] run scoreboard players set @s SEA_pounce_charge 0
 effect give @s[scores={SEA_pounce_charge=20..21}] strength 1 0 false
 effect give @s[scores={SEA_pounce_charge=20..21}] jump_boost 1 1 false
-execute if items entity @s[scores={SEA_pounce_charge=20..40}] weapon.mainhand iron_hoe run effect give @s haste 1 49 true
 execute if items entity @s[scores={SEA_pounce_charge=20..40}] weapon.mainhand iron_hoe run item replace entity @s weapon.mainhand with mace
 execute if items entity @s weapon.mainhand mace run item replace entity @s[nbt={OnGround:1b}] weapon.mainhand with iron_hoe[custom_name='{"text":"撬棍","italic":false,"color":"red"}',custom_data={sea_crowbar:true},attribute_modifiers=[{type:"attack_damage",slot:"mainhand",id:"sea_weapon:001_01",amount:1.5,operation:"add_value"},{type:"attack_speed",slot:"mainhand",id:"sea_weapon:001_02",amount:-1.5,operation:"add_value"}],unbreakable={}]
 execute if items entity @s container.* mace unless items entity @s container.* iron_hoe run give @s[nbt={OnGround:1b}] iron_hoe[custom_name='{"text":"撬棍","italic":false,"color":"red"}',custom_data={sea_crowbar:true},attribute_modifiers=[{type:"attack_damage",slot:"mainhand",id:"sea_weapon:001_01",amount:1.5,operation:"add_value"},{type:"attack_speed",slot:"mainhand",id:"sea_weapon:001_02",amount:-1.5,operation:"add_value"}],unbreakable={}]
@@ -45,6 +44,7 @@ execute if items entity @s armor.chest *[custom_data={sea_chest_shadowchest:true
 execute store result score sc rng1 run random value 1..3
 
 execute as @s[scores={sea_do_attack=1..}] if items entity @s weapon.mainhand flint_and_steel[custom_data={sea_1time_flint:true}] if score sc rng1 matches 1..2 run clear @s flint_and_steel[custom_data={sea_1time_flint:true}] 1
+execute as @s[scores={sea_do_attack=1..}] if items entity @s weapon.mainhand mace run function skyblock:sea/p/skill/mace
 execute as @s[scores={sea_do_attack=1..}] if items entity @s weapon.mainhand golden_sword[custom_data={sea_goldensword_1:true}] run function skyblock:sea/p/weapon/raphael_sword
 scoreboard players reset @s[scores={sea_do_attack=1..}] sea_do_attack
 
