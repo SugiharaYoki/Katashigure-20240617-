@@ -97,7 +97,7 @@ execute as @s[scores={rng5=245..,rng6=379}] at @n[tag=SEAedwina] run playsound e
 execute as @s[scores={rng5=245..,rng6=379}] at @n[tag=SEAedwina] run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“沈先生，我听得见。”","color":"white","bold": false}]
 
 execute positioned 90146 83 65 if entity @a[tag=SEAPT,tag=!SEAPF,distance=0..5.5] run scoreboard players set @s[scores={rng6=..999}] rng6 1000
-execute positioned 90146 83 65 as @a[tag=SEAPT,tag=!SEAPF,distance=0..5.5] run effect give @s slowness 10 4 true
+execute if score @s rng6 matches 1001 positioned 90146 83 65 as @a[tag=SEAPT,tag=!SEAPF,distance=0..5.5] run effect give @s slowness 10 4 true
 execute if score @s rng6 matches 1001 run scoreboard players set @s rng5 1000
 
 execute if score @s rng6 matches 1001 as @n[tag=SEAyuehan] at @s run tp @s 90146 84 87 facing entity @p[tag=SEAPT]
