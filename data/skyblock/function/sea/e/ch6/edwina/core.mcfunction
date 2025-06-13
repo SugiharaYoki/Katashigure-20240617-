@@ -1,6 +1,6 @@
 execute as @s at @s store result score @s rng1 if entity @e[tag=SEAmob,distance=0..7]
 
-execute as @s[tag=SEAedwina_attackable,scores={rng8=0}] unless entity @n[tag=SEAPT,distance=0..6] store result score @s rng3 run random value 1..4
+execute as @s[tag=SEAedwina_attackable,scores={rng8=0}] unless entity @n[tag=SEAPT,distance=0..8] store result score @s rng3 run random value 1..4
 
 
 execute unless score @s rng3 matches 1 as @s[tag=SEAedwina_attackable,scores={rng1=1..5,rng2=..0}] at @s store result score @s rng2 run random value 1..4
