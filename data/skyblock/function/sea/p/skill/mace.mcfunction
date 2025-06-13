@@ -10,9 +10,9 @@ execute if entity @s[tag=SEA_w_crowbar_upg3] run scoreboard players add @s rng1 
 execute if entity @s[tag=SEA_w_crowbar_upg5] run scoreboard players add @s rng1 1
 execute if entity @s[tag=SEA_w_crowbar_upg10] run scoreboard players add @s rng1 1
 execute if entity @s[tag=SEA_w_crowbar_upg14] run scoreboard players add @s rng1 1
-execute at @s[scores={rng1=0}] as @e[tag=SEAmob,distance=0..4.3] at @s run damage @s 8 generic
-execute at @s[scores={rng1=1}] as @e[tag=SEAmob,distance=0..4.3] at @s run damage @s 9.5 generic
-execute at @s[scores={rng1=2}] as @e[tag=SEAmob,distance=0..4.3] at @s run damage @s 11 generic
-execute at @s[scores={rng1=3}] as @e[tag=SEAmob,distance=0..4.3] at @s run damage @s 12.5 generic
-execute at @s[scores={rng1=4}] as @e[tag=SEAmob,distance=0..4.3] at @s run damage @s 14 generic
-execute at @s[scores={rng1=5}] as @e[tag=SEAmob,distance=0..4.3] at @s run damage @s 15.5 generic
+execute at @s[scores={rng1=0}] as @e[tag=SEAmob,distance=0..4.1] at @s run damage @s 8 generic
+execute at @s[scores={rng1=1}] as @e[tag=SEAmob,distance=0..4.1] at @s run damage @s 9.5 generic
+execute at @s[scores={rng1=2}] as @e[tag=SEAmob,distance=0..4.1] at @s run damage @s 11 generic
+execute at @s[scores={rng1=3}] as @e[tag=SEAmob,distance=0..4.1] at @s run damage @s 12.5 generic
+execute at @s[scores={rng1=4}] as @e[tag=SEAmob,distance=0..4.1] at @s run damage @s 14 generic
+execute at @s[scores={rng1=5}] as @e[tag=SEAmob,distance=0..4.1] at @s run damage @s 15.5 generic
