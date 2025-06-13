@@ -14,9 +14,9 @@ execute if items entity @s player.cursor tropical_fish run scoreboard players se
 execute if items entity @s player.cursor tropical_fish run scoreboard players set @s[scores={SEAPT_setting_fiona=1}] SEAPT_setting_fiona 2
 execute if items entity @s player.cursor tropical_fish run scoreboard players set @s[scores={SEAPT_setting_fiona=5}] SEAPT_setting_fiona 1
 
-execute if items entity @s player.cursor amethyst_cluster run scoreboard players set @s[scores={SEAPT_setting_yuehan=2}] SEAPT_setting_fiona 3
-execute if items entity @s player.cursor amethyst_cluster run scoreboard players set @s[scores={SEAPT_setting_yuehan=1}] SEAPT_setting_fiona 2
-execute if items entity @s player.cursor amethyst_cluster run scoreboard players set @s[scores={SEAPT_setting_yuehan=3}] SEAPT_setting_fiona 1
+execute if items entity @s player.cursor amethyst_cluster run scoreboard players set @s[scores={SEAPT_setting_yuehan=2}] SEAPT_setting_yuehan 3
+execute if items entity @s player.cursor amethyst_cluster run scoreboard players set @s[scores={SEAPT_setting_yuehan=1}] SEAPT_setting_yuehan 2
+execute if items entity @s player.cursor amethyst_cluster run scoreboard players set @s[scores={SEAPT_setting_yuehan=3}] SEAPT_setting_yuehan 1
 
 #tp @a[x=89829,y=12,z=-165,dx=30,dy=20,dz=30] 
 
