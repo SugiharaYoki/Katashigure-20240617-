@@ -512,7 +512,7 @@ setblock 90095 130 65 minecraft:furnace[facing=north]
 setblock 90095 130 34 minecraft:furnace[facing=south]
 fill 90134 130 58 90134 130 59 minecraft:air
 
-fill 90117 131 68 90121 131 68 iron_bars
+
 
 
 
