@@ -8,14 +8,17 @@ execute as @s[tag=sea_t_sprint,scores={sea_runs=1..}] run function skyblock:sea/
 execute as @s[tag=sea_t_sprint,scores={sea_runs=..-1}] run scoreboard players add @s sea_runs 1
 
 
-execute if block 90074 103 137 minecraft:scaffolding as @s[tag=!sea_t_pounce_disabled,tag=sea_t_pounce1,predicate=skyblock:sneak] run scoreboard players add @s SEA_pounce_charge 1
-execute as @s[tag=!sea_t_pounce_disabled,tag=sea_t_pounce1,predicate=!skyblock:sneak] run scoreboard players set @s SEA_pounce_charge 0
+execute if block 90074 103 137 minecraft:scaffolding as @s[tag=!sea_t_pounce_disabled,tag=sea_t_pounce1,predicate=skyblock:sneak] run scoreboard players set @s[scores={SEA_pounce_charge=..0}] SEA_pounce_charge 1
+execute if block 90074 103 137 minecraft:scaffolding as @s[scores={SEA_pounce_charge=1..}] run scoreboard players add @s SEA_pounce_charge 1
+execute as @s[tag=!sea_t_pounce_disabled,tag=sea_t_pounce1] run scoreboard players set @s SEA_pounce_charge 0
+execute as @s[scores={SEA_pounce_charge=1..9},predicate=!skyblock:sneak] run scoreboard players set @s SEA_pounce_charge 0
+execute as @s[scores={SEA_pounce_charge=41..}] run scoreboard players set @s SEA_pounce_charge 0
 effect give @s[scores={SEA_pounce_charge=10..11}] strength 2 0 false
 effect give @s[scores={SEA_pounce_charge=10..11}] jump_boost 2 1 false
 execute if items entity @s[scores={SEA_pounce_charge=20..40},predicate=skyblock:jump] weapon.mainhand iron_hoe run item replace entity @s weapon.mainhand with mace
-execute if items entity @s weapon.mainhand mace run item replace entity @s[nbt={OnGround:1b}] weapon.mainhand with iron_hoe[custom_name='{"text":"撬棍","italic":false,"color":"red"}',custom_data={sea_crowbar:true},attribute_modifiers=[{type:"attack_damage",slot:"mainhand",id:"sea_weapon:001_01",amount:1.5,operation:"add_value"},{type:"attack_speed",slot:"mainhand",id:"sea_weapon:001_02",amount:-1.5,operation:"add_value"}],unbreakable={}]
-execute if items entity @s container.* mace unless items entity @s container.* iron_hoe run give @s[nbt={OnGround:1b}] iron_hoe[custom_name='{"text":"撬棍","italic":false,"color":"red"}',custom_data={sea_crowbar:true},attribute_modifiers=[{type:"attack_damage",slot:"mainhand",id:"sea_weapon:001_01",amount:1.5,operation:"add_value"},{type:"attack_speed",slot:"mainhand",id:"sea_weapon:001_02",amount:-1.5,operation:"add_value"}],unbreakable={}]
-execute if items entity @s container.* mace run clear @s[nbt={OnGround:1b}] mace
+execute if items entity @s[scores={SEA_pounce_charge=41..}] weapon.mainhand mace run item replace entity @s weapon.mainhand with iron_hoe[custom_name='{"text":"撬棍","italic":false,"color":"red"}',custom_data={sea_crowbar:true},attribute_modifiers=[{type:"attack_damage",slot:"mainhand",id:"sea_weapon:001_01",amount:1.5,operation:"add_value"},{type:"attack_speed",slot:"mainhand",id:"sea_weapon:001_02",amount:-1.5,operation:"add_value"}],unbreakable={}]
+execute if items entity @s[scores={SEA_pounce_charge=41..}] container.* mace unless items entity @s container.* iron_hoe run give @s iron_hoe[custom_name='{"text":"撬棍","italic":false,"color":"red"}',custom_data={sea_crowbar:true},attribute_modifiers=[{type:"attack_damage",slot:"mainhand",id:"sea_weapon:001_01",amount:1.5,operation:"add_value"},{type:"attack_speed",slot:"mainhand",id:"sea_weapon:001_02",amount:-1.5,operation:"add_value"}],unbreakable={}]
+execute if items entity @s[scores={SEA_pounce_charge=41..}] container.* mace run clear @s mace
 effect clear @s[scores={SEA_pounce_charge=20..41},predicate=!skyblock:sneak] strength
 effect clear @s[scores={SEA_pounce_charge=20..41},predicate=!skyblock:sneak] jump_boost
 
