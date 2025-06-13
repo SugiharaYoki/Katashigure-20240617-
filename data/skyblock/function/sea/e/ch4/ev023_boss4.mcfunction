@@ -84,7 +84,7 @@ execute as @s[scores={sea_4temp1=90}] positioned 90191.99 57.00 59.01 run summon
 execute if entity @n[tag=SEAboss4_end] run scoreboard players add @s rng1 1
 
 execute as @s[scores={rng1=5}] at @n[tag=SEAedwina] run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
-execute as @s[scores={rng1=5}] run kill @e[tag=sea_drone,distance=0..300]
+execute as @s[scores={rng1=5}] run kill @e[tag=SEAdrone,distance=0..300]
 execute as @s[scores={rng1=5}] run kill @e[tag=sea_mine,distance=0..300]
 execute as @s[scores={rng1=5}] if entity @n[tag=sc,scores={sea_player=1}] at @n[tag=SEAedwina] run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“沈越涵……？我的天，所以你是他们信得过的人。”","color":"white","bold": false}]
 execute as @s[scores={rng1=5}] if entity @n[tag=sc,scores={sea_player=2}] at @n[tag=SEAedwina] run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“沈越涵……？我的天，所以你俩是他们信得过的人。”","color":"white","bold": false}]

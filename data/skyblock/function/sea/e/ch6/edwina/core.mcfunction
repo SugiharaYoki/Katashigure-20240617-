@@ -8,7 +8,7 @@ execute unless score @s rng3 matches 1 as @s[tag=SEAedwina_attackable,scores={rn
 execute as @s[tag=SEAedwina_attackable,scores={rng2=1..3}] run tag @s add SEAboss4_attack_dash
 execute as @s[tag=SEAedwina_attackable,scores={rng2=4..6}] run tag @s add SEAboss4_attack_dashheavy
 execute as @s[tag=SEAedwina_attackable,scores={rng2=7}] at @s unless entity @a[tag=SEAPT,distance=..4.5] run function skyblock:sea/m/drone
-execute as @s[tag=SEAedwina_attackable,scores={rng2=7}] at @s unless entity @a[tag=SEAPT,distance=..4.5] as @n[tag=SEAdrone] at @s unless entity @s[scores={sea_4temp1=-16..}] run scoreboard players set @s sea_4temp1 -15
+execute as @s[tag=SEAedwina_attackable,scores={rng2=7}] at @s as @e[tag=SEAdrone,distance=0..5] at @s unless entity @s[scores={sea_4temp1=-16..}] run scoreboard players set @s sea_4temp1 -15
 execute as @s[tag=SEAedwina_attackable,scores={rng2=7}] at @s run scoreboard players set @s rng2 0
 execute as @s[tag=SEAboss4_attack_dash] at @s run function skyblock:sea/e/ch6/edwina/attack_dash
 execute as @s[tag=SEAboss4_attack_dashheavy] at @s run function skyblock:sea/e/ch6/edwina/attack_dashheavy

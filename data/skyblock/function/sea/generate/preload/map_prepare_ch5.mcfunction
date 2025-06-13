@@ -67,7 +67,7 @@ setblock 90166 49 133 minecraft:tinted_glass
 setblock 90172 49 127 minecraft:tinted_glass
 
 #主平台地形变化
-execute positioned 90097 144 115 run kill @n[tag=sea_drone,distance=0..3]
+execute positioned 90097 144 115 run kill @n[tag=SEAdrone,distance=0..3]
 setblock 90134 138 105 air
 setblock 90134 137 105 air
 setblock 90135 138 105 mangrove_roots
