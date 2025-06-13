@@ -43,7 +43,8 @@ execute if score SEA_ch6_event rng5 matches 1112 run setblock 90138 156 143 mine
 execute if score SEA_ch6_event rng5 matches 1112 run fill 90142 154 123 90140 154 123 minecraft:mangrove_roots
 execute if score SEA_ch6_event rng5 matches 1112 run fill 90141 155 122 90143 155 122 minecraft:mangrove_roots
 
-
+execute if score SEA_ch6_event rng5 matches 1112 run clone 90139 -40 121 90149 -34 129 90139 144 121 
+execute if score SEA_ch6_event rng5 matches 1112 run clone 90139 -40 142 90143 -33 150 90139 139 142 
 
 execute if score SEA_ch6_event rng5 matches 1112 run fill 90151 151 136 90151 152 136 gravel
 
