@@ -21,9 +21,3 @@ setblock 90103 122 98 minecraft:jukebox
 setblock 90125 124 143 minecraft:barrel[facing=north]
 item replace block 90125 124 143 container.13 with music_disc_stal 1
 
-
-execute unless entity @s[scores={SEAPT_setting_fiona=1..}] run scoreboard players add SEA_ch5_event_fiona_favor rng1 8
-execute if entity @s[scores={SEAPT_setting_fiona=1}] run scoreboard players add SEA_ch5_event_fiona_favor rng1 0
-execute if entity @s[scores={SEAPT_setting_fiona=2}] run scoreboard players add SEA_ch5_event_fiona_favor rng1 8
-execute if entity @s[scores={SEAPT_setting_fiona=3}] run scoreboard players add SEA_ch5_event_fiona_favor rng1 16
-execute if entity @s[scores={SEAPT_setting_fiona=4}] run scoreboard players add SEA_ch5_event_fiona_favor rng1 24
