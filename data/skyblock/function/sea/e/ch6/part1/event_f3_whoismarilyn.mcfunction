@@ -114,8 +114,11 @@ execute if score SEA_ch6_event rng5 matches 410..411 positioned 90152 161 115 ru
 execute if score SEA_ch6_event rng5 matches 409 positioned 90152 161 115 run fill 90152 161 114 90152 162 114 air destroy
 execute if score SEA_ch6_event rng5 matches 409 positioned 90152 161 114 run function skyblock:sea/m/unique/npc_edwina
 execute if score SEA_ch6_event rng5 matches 409 positioned 90152 161.01 114 as @n[tag=SEAedwina] at @s run data modify entity @s NoAI set value 0b
+
 execute if score SEA_ch6_event rng5 matches 409 positioned 90152 161.01 114 as @n[tag=SEAedwina] at @s run data modify entity @s Motion set value [-3.0,0.0,0.0]
 execute if score SEA_ch6_event rng5 matches 412 positioned 90152 161.01 114 as @n[tag=SEAedwina] at @s run data modify entity @s Motion set value [-0.5,0.0,0.0]
+execute if score SEA_ch6_event rng5 matches 411 positioned 90152 161.01 114 as @n[tag=SEAedwina] at @s run tp @s ~ ~ ~-0.8 facing ~ ~ ~-2
+
 execute if score SEA_ch6_event rng5 matches 411..420 positioned 90152 161 114 run rotate @n[tag=SEAnorma] facing entity @n[tag=SEAedwina]
 execute if score SEA_ch6_event rng5 matches 409..431 positioned 90152 161 114 run rotate @n[tag=SEAedwina] facing entity @n[tag=SEAnorma]
 execute if score SEA_ch6_event rng5 matches 412 as @n[tag=SEAnorma,x=90000,y=100,z=0,distance=0..1200] at @s run playsound minecraft:entity.evoker.ambient neutral @a ~ ~ ~ 1 1.5
@@ -178,6 +181,7 @@ execute if score SEA_ch6_event rng5 matches 455 as @n[tag=SEAnorma,x=90000,y=100
 execute if score SEA_ch6_event rng5 matches 455 as @n[tag=SEAnorma,x=90000,y=100,z=0,distance=0..1200] at @s run particle flame ~ ~1 ~ 0 0 0 0.8 200
 execute if score SEA_ch6_event rng5 matches 425..440 as @n[tag=SEAnorma,x=90000,y=100,z=0,distance=0..1200] at @s run playsound ambient.soul_sand_valley.additions ambient @a ~ ~ ~ 5 1.3
 execute if score SEA_ch6_event rng5 matches 455 as @n[tag=SEAnorma,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.zombie_villager.cure hostile @a ~ ~ ~ 5 1.3
+execute if score SEA_ch6_event rng5 matches 459 run effect give @n[tag=SEAnorma] speed infinite 0 true
 
 #execute as @p[tag=SEAPT,score={SEAPT_member=1}] at @s
 
