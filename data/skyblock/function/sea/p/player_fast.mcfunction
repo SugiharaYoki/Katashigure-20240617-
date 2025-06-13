@@ -11,7 +11,6 @@ execute as @s[tag=sea_t_sprint,scores={sea_runs=..-1}] run scoreboard players ad
 execute if block 90074 103 137 minecraft:scaffolding as @s[tag=!sea_t_pounce_disabled,tag=sea_t_pounce1,predicate=skyblock:sneak] run scoreboard players set @s[scores={SEA_pounce_charge=..0}] SEA_pounce_charge 1
 execute if block 90074 103 137 minecraft:scaffolding as @s[scores={SEA_pounce_charge=1..}] run scoreboard players add @s SEA_pounce_charge 1
 execute as @s[tag=!sea_t_pounce_disabled,tag=sea_t_pounce1,scores={SEA_pounce_charge=1..9},predicate=!skyblock:sneak] run scoreboard players set @s SEA_pounce_charge 0
-execute as @s[scores={SEA_pounce_charge=41..}] run scoreboard players set @s SEA_pounce_charge 0
 effect give @s[scores={SEA_pounce_charge=10..11}] strength 2 0 false
 effect give @s[scores={SEA_pounce_charge=10..11}] jump_boost 2 1 false
 execute if items entity @s[scores={SEA_pounce_charge=20..40},predicate=skyblock:jump] weapon.mainhand iron_hoe run item replace entity @s weapon.mainhand with mace
@@ -20,6 +19,7 @@ execute if items entity @s[scores={SEA_pounce_charge=41..}] container.* mace unl
 execute if items entity @s[scores={SEA_pounce_charge=41..}] container.* mace run clear @s mace
 effect clear @s[scores={SEA_pounce_charge=20..41},predicate=!skyblock:sneak] strength
 effect clear @s[scores={SEA_pounce_charge=20..41},predicate=!skyblock:sneak] jump_boost
+execute as @s[scores={SEA_pounce_charge=41..}] run scoreboard players set @s SEA_pounce_charge 0
 
 #execute as @s[tag=sea_exp_thunderrage] run function skyblock:sea/experimental/thunderrage
 #execute as @s[tag=sea_exp_thunderblast] run function skyblock:sea/experimental/thunderblast
