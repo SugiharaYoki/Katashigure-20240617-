@@ -992,7 +992,15 @@ fill 90151 148 136 90151 150 136 air
 
 setblock 90098 129 113 minecraft:bamboo_button[facing=west]
 setblock 90139 161 142 minecraft:mangrove_roots
+setblock 90139 155 144 minecraft:air
+setblock 90138 154 143 air
+setblock 90139 153 142 air
+
 
 
 fill 90117 131 68 90121 131 68 iron_bars
+
+
+
+
 
