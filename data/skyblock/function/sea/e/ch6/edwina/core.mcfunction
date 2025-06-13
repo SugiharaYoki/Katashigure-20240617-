@@ -4,7 +4,7 @@ execute as @s[tag=SEAedwina_attackable,scores={rng8=0}] unless entity @n[tag=SEA
 
 
 execute unless score @s rng3 matches 1 as @s[tag=SEAedwina_attackable,scores={rng1=1..5,rng2=..0}] at @s store result score @s rng2 run random value 1..4
-execute unless score @s rng3 matches 1 as @s[tag=SEAedwina_attackable,scores={rng1=3..,rng2=..0}] at @s store result score @s rng2 run random value 1..7
+execute unless score @s rng3 matches 1 as @s[tag=SEAedwina_attackable,scores={rng1=3..,rng2=1..4}] at @s store result score @s rng2 run random value 1..7
 execute as @s[tag=SEAedwina_attackable,scores={rng2=1..3}] run tag @s add SEAboss4_attack_dash
 execute as @s[tag=SEAedwina_attackable,scores={rng2=4..6}] run tag @s add SEAboss4_attack_dashheavy
 execute as @s[tag=SEAedwina_attackable,scores={rng2=7}] at @s unless entity @a[tag=SEAPT,distance=..4.5] run function skyblock:sea/m/drone
