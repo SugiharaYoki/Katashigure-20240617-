@@ -8,8 +8,8 @@ execute if items entity @s player.cursor structure_void run scoreboard players s
 execute if items entity @s player.cursor sculk_shrieker run scoreboard players set @s sea_setting_box_index 2
 
 execute if items entity @s player.cursor tropical_fish run scoreboard players set @s[scores={SEAPT_setting_fiona=4}] SEAPT_setting_fiona 5
-execute if items entity @s player.cursor tropical_fish run scoreboard players set @s[scores={SEAPT_setting_fiona=3,advancements={skyblock:sea/doc/g28=true}}] SEAPT_setting_fiona 4
-execute if items entity @s player.cursor tropical_fish run scoreboard players set @s[scores={SEAPT_setting_fiona=3,advancements={skyblock:sea/doc/g28=false}}] SEAPT_setting_fiona 5
+execute if items entity @s player.cursor tropical_fish run scoreboard players set @s[scores={SEAPT_setting_fiona=3},advancements={skyblock:sea/doc/g28=true}] SEAPT_setting_fiona 4
+execute if items entity @s player.cursor tropical_fish run scoreboard players set @s[scores={SEAPT_setting_fiona=3},advancements={skyblock:sea/doc/g28=false}] SEAPT_setting_fiona 5
 execute if items entity @s player.cursor tropical_fish run scoreboard players set @s[scores={SEAPT_setting_fiona=2}] SEAPT_setting_fiona 3
 execute if items entity @s player.cursor tropical_fish run scoreboard players set @s[scores={SEAPT_setting_fiona=1}] SEAPT_setting_fiona 2
 execute if items entity @s player.cursor tropical_fish run scoreboard players set @s[scores={SEAPT_setting_fiona=5}] SEAPT_setting_fiona 1
