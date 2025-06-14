@@ -48,8 +48,16 @@ execute if score SEA_ch6_event rng5 matches 1112 run clone 90139 -40 142 90143 -
 execute if score SEA_ch6_event rng5 matches 1112 run setblock 90138 134 144 gravel
 execute if score SEA_ch6_event rng5 matches 1112 run setblock 90134 134 143 fire
 execute if score SEA_ch6_event rng5 matches 1112 run setblock 90135 134 145 fire
-
 execute if score SEA_ch6_event rng5 matches 1112 run fill 90151 151 136 90151 152 136 gravel
+#禁止右转
+execute if score SEA_ch6_event rng5 matches 1112 run fill 90156 138 136 90155 137 136 gravel
+execute if score SEA_ch6_event rng5 matches 1112 run setblock 90155 137 135 gravel
+execute if score SEA_ch6_event rng5 matches 1112 run setblock 90155 140 136 air
+execute if score SEA_ch6_event rng5 matches 1112 run setblock 90156 140 136 air
+execute if score SEA_ch6_event rng5 matches 1112 run setblock 90156 138 136 air
+execute if score SEA_ch6_event rng5 matches 1112 run setblock 90156 139 136 minecraft:polished_andesite_stairs[facing=west,half=top]
+
+
 
 effect give @n[tag=SEAnorma,type=zombie_villager] instant_damage 1 1 true
 
