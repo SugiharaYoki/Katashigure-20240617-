@@ -43,8 +43,9 @@ execute if score SEA_ch6_event rng5 matches 1112 run setblock 90138 156 143 mine
 execute if score SEA_ch6_event rng5 matches 1112 run fill 90142 154 123 90140 154 123 minecraft:mangrove_roots
 execute if score SEA_ch6_event rng5 matches 1112 run fill 90141 155 122 90143 155 122 minecraft:mangrove_roots
 
-execute if score SEA_ch6_event rng5 matches 1112 run clone 90139 -40 121 90149 -34 129 90139 144 121 
-execute if score SEA_ch6_event rng5 matches 1112 run clone 90139 -40 142 90143 -33 150 90139 139 142 
+execute if score SEA_ch6_event rng5 matches 1112 run clone 90139 -40 121 90149 -34 129 90139 144 121
+execute if score SEA_ch6_event rng5 matches 1112 run clone 90139 -40 142 90143 -33 150 90139 139 142
+execute if score SEA_ch6_event rng5 matches 1112 run setblock 90138 134 144 gravel
 
 execute if score SEA_ch6_event rng5 matches 1112 run fill 90151 151 136 90151 152 136 gravel
 
@@ -65,3 +66,16 @@ execute if score SEA_ch6_event rng5 matches 1190 as @n[tag=SEAedwina] at @s run 
 
 execute if score SEA_ch6_event rng5 matches 1112 run tag @n[tag=SEAedwina] add SEAedwina_attackable
 
+
+execute if score SEA_ch6_event rng5 matches 1200..1300 run scoreboard players set SEA_ch6_event rng5 1200
+execute if score SEA_ch6_event rng5 matches 1200..1300 as @a[x=90144,y=136,z=134,dx=8,dy=4,dz=5,tag=SEAPT] at @s run scoreboard players set SEA_ch6_event rng5 1301
+
+execute if score SEA_ch6_event rng5 matches 1303 run particle minecraft:explosion_emitter 90150 140 135 1 1 1 1 1
+execute if score SEA_ch6_event rng5 matches 1303 run playsound minecraft:entity.generic.explode ambient @s 90150 140 135 2 0.8
+execute if score SEA_ch6_event rng5 matches 1307 run particle minecraft:explosion_emitter 90153 139 138 1 1 1 1 1
+execute if score SEA_ch6_event rng5 matches 1307 run particle minecraft:large_smoke 90153 137 137 0 0 0 0.23 80
+execute if score SEA_ch6_event rng5 matches 1307 run playsound minecraft:entity.generic.explode ambient @s 90153 139 138 2 0.8
+execute if score SEA_ch6_event rng5 matches 1303 run clone 90144 -40 134 90153 -35 140 90144 136 134 
+execute if score SEA_ch6_event rng5 matches 1303 run setblock 90151 140 137 gravel
+execute if score SEA_ch6_event rng5 matches 1303 run setblock 90149 140 135 gravel
+execute if score SEA_ch6_event rng5 matches 1303 run setblock 90151 140 135 gravel
