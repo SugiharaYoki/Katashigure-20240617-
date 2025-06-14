@@ -194,7 +194,7 @@ attribute @s minecraft:attack_knockback modifier remove sea_t_knockback4
 attribute @s minecraft:attack_knockback modifier remove sea_t_knockback5
 
 attribute @s minecraft:movement_speed modifier remove sea:marilyn_01
-attribute @s minecraft:jump_strength modifier remove sea:marilyn_02
+attribute @s minecraft:jump_strength modifier remove sea:marilyn_01
 
 attribute @s movement_speed modifier remove sea_running_1a
 attribute @s knockback_resistance modifier remove sea_running_1b
