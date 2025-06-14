@@ -46,6 +46,8 @@ execute if score SEA_ch6_event rng5 matches 1112 run fill 90141 155 122 90143 15
 execute if score SEA_ch6_event rng5 matches 1112 run clone 90139 -40 121 90149 -34 129 90139 144 121
 execute if score SEA_ch6_event rng5 matches 1112 run clone 90139 -40 142 90143 -33 150 90139 139 142
 execute if score SEA_ch6_event rng5 matches 1112 run setblock 90138 134 144 gravel
+execute if score SEA_ch6_event rng5 matches 1112 run setblock 90134 134 143 fire
+execute if score SEA_ch6_event rng5 matches 1112 run setblock 90135 134 145 fire
 
 execute if score SEA_ch6_event rng5 matches 1112 run fill 90151 151 136 90151 152 136 gravel
 

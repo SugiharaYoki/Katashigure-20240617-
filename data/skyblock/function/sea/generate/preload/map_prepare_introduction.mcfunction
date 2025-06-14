@@ -1007,3 +1007,11 @@ setblock 90138 134 144 air
 
 clone 90144 -50 134 90153 -45 140 90144 136 134 
 #setblock 90151 137 137 air
+setblock 90134 134 143 air
+setblock 90135 134 145 air
+
+
+
+
+
+
