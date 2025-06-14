@@ -16,4 +16,3 @@ execute as @s[x=80000,dx=20000,z=-10000,dz=20000,y=84,dy=5] at @s if block ~ 82 
 execute as @s[x=80000,dx=20000,z=-10000,dz=20000,y=84,dy=5] at @s if block ~ 82 ~ red_concrete unless entity @n[tag=SEAedwina,distance=0..50] if entity @s[predicate=skyblock:jump,tag=!SEAelevatoring] run tag @s add SEAelevatoring
 execute as @s[x=80000,dx=20000,z=-10000,dz=20000,y=105,dy=5] at @s if block ~ 82 ~ red_concrete unless entity @n[tag=SEAedwina,distance=0..50] if entity @s[predicate=skyblock:jump,tag=!SEAelevatoring] run tp @s ~ 84.0 ~
 execute as @s[x=80000,dx=20000,z=-10000,dz=20000,y=105,dy=5] at @s if block ~ 82 ~ red_concrete unless entity @n[tag=SEAedwina,distance=0..50] if entity @s[predicate=skyblock:jump,tag=!SEAelevatoring] run tag @s add SEAelevatoring
-tag @s remove SEAelevatoring

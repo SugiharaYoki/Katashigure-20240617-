@@ -22,7 +22,7 @@ execute as @s[tag=seaPerm000,scores={sea_crafter=20001..29999}] at @s if entity 
 execute as @s[scores={sea_crafter=50000..59999}] at @s if entity @n[tag=SEAcrafter,distance=0..5] run function skyblock:sea/p/w/alter
 execute at @s if entity @n[tag=SEAcrafter,distance=0..5] run scoreboard players enable @s sea_crafter
 
-
+execute if entity @s[tag=SEAelevatoring] run tag @s[predicate=!skyblock:jump] remove SEAelevatoring
 
 execute if entity @s[tag=!e_w_01] if items entity @s container.* iron_hoe run tellraw @s {"text": "获得武器：撬棍","color": "dark_red"}
 execute if entity @s[tag=!e_w_01] if items entity @s container.* iron_hoe run tellraw @s {"text": "防身武器，较快的攻击速度与略微优于赤手空拳的伤害。","color": "white"}

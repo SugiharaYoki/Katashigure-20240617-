@@ -106,6 +106,7 @@ scoreboard objectives add constant dummy
 scoreboard players set 2 constant 2
 scoreboard players set 5 constant 5
 scoreboard players set 10 constant 10
+tag @s remove SEAelevatoring
 #scoreboard players operation @s sea_i_trim_zombie *= 2 constant
 #scoreboard players operation @s sea_i_trim_spider *= 2 constant
 #scoreboard players operation @s sea_i_trim_human *= 2 constant

@@ -186,6 +186,6 @@ execute if score SEA_ch6_event rng5 matches 11..500 run attribute @s minecraft:j
 
 
 
-
+tag @s remove SEAelevatoring
 
 
