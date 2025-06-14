@@ -56,8 +56,8 @@ execute if score SEA_ch6_event rng5 matches 1112 run setblock 90155 140 136 air
 execute if score SEA_ch6_event rng5 matches 1112 run setblock 90156 140 136 air
 execute if score SEA_ch6_event rng5 matches 1112 run setblock 90156 138 136 air
 execute if score SEA_ch6_event rng5 matches 1112 run setblock 90156 139 136 minecraft:polished_andesite_stairs[facing=west,half=top]
-
-
+execute if score SEA_ch6_event rng5 matches 1112 run setblock 90155 138 121 air
+execute if score SEA_ch6_event rng5 matches 1112 run setblock 90154 129 98 air
 
 effect give @n[tag=SEAnorma,type=zombie_villager] instant_damage 1 1 true
 
@@ -100,3 +100,13 @@ execute if score SEA_ch6_event rng5 matches 1403 run clone 90144 -40 134 90153 -
 execute if score SEA_ch6_event rng5 matches 1403 run setblock 90151 140 137 gravel
 execute if score SEA_ch6_event rng5 matches 1403 run setblock 90149 140 135 gravel
 execute if score SEA_ch6_event rng5 matches 1403 run setblock 90151 140 135 gravel
+
+execute if score SEA_ch6_event rng5 matches 1410..1500 run scoreboard players set SEA_ch6_event rng5 1410
+execute if score SEA_ch6_event rng5 matches 1410..1500 as @a[x=90152,y=127,z=111,dx=10,dy=10,dz=10,tag=SEAPT] at @s run scoreboard players set SEA_ch6_event rng5 1501
+execute if score SEA_ch6_event rng5 matches 1403 run clone 90152 -50 101 90155 -44 108 90152 123 101 
+execute if score SEA_ch6_event rng5 matches 1403 run particle minecraft:explosion_emitter 90154 129 104 1 1 1 1 1
+execute if score SEA_ch6_event rng5 matches 1403 run playsound minecraft:entity.generic.explode ambient @s 90154 129 104 2 0.8
+execute if score SEA_ch6_event rng5 matches 1200..1800 as @a[x=90138,y=133,z=143,dx=30,dy=4,dz=30,tag=SEAPT,tag=!e_i_54] at @s run attribute @s minecraft:jump_strength modifier add sea:marilyn_01 -5 add_value
+execute if score SEA_ch6_event rng5 matches 1200..1800 as @a[x=90138,y=133,z=143,dx=30,dy=4,dz=30,tag=SEAPT,tag=!e_i_54] at @s run tag @s add e_i_54
+
+

@@ -1014,4 +1014,4 @@ setblock 90155 137 135 air
 setblock 90155 140 136 iron_block
 setblock 90156 140 136 minecraft:polished_andesite_stairs[facing=west,half=top]
 fill 90156 138 136 90156 139 136 air
-
+clone 90152 -60 101 90155 -54 108 90152 123 101 
