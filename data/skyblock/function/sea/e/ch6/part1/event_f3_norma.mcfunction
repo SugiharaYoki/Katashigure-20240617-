@@ -55,7 +55,7 @@ execute if score SEA_ch6_event rng5 matches 1112 run setblock 90155 137 135 grav
 execute if score SEA_ch6_event rng5 matches 1112 run setblock 90155 140 136 air
 execute if score SEA_ch6_event rng5 matches 1112 run setblock 90156 140 136 air
 execute if score SEA_ch6_event rng5 matches 1112 run setblock 90156 138 136 air
-execute if score SEA_ch6_event rng5 matches 1112 run setblock 90156 139 136 minecraft:polished_andesite_stairs[facing=west,half=top]
+#execute if score SEA_ch6_event rng5 matches 1112 run setblock 90156 139 136 minecraft:polished_andesite_stairs[facing=west,half=top]
 execute if score SEA_ch6_event rng5 matches 1112 run setblock 90155 138 121 air
 execute if score SEA_ch6_event rng5 matches 1112 run setblock 90154 129 98 air
 
