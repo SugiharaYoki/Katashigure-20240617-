@@ -30,12 +30,13 @@ execute positioned 90119 130 62 run function skyblock:sea/m/pillager_sentry
 execute positioned 90119 130 63 run function skyblock:sea/m/pillager_sentry_still
 
 
-execute as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s as @e[tag=SEAmob,type=pillager] at @s run item replace entity @s weapon.mainhand with air
-execute as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s as @e[tag=SEAmob,type=vindicator] at @s run item replace entity @s weapon.mainhand with air
-execute as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s as @e[tag=SEAmob,type=pillager] at @s run data modify entity @s Invulnerable set value 1b
-execute as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s as @e[tag=SEAmob,type=vindicator] at @s run data modify entity @s Invulnerable set value 1b
-execute as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s as @e[tag=SEAmob,type=pillager] at @s run tag @s add SEAmob_surrended
-execute as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s as @e[tag=SEAmob,type=vindicator] at @s run tag @s add SEAmob_surrended
+execute as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s as @e[distance=..3000,tag=SEAmob,type=pillager] at @s run item replace entity @s weapon.mainhand with air
+execute as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s as @e[distance=..3000,tag=SEAmob,type=vindicator] at @s run item replace entity @s weapon.mainhand with air
+execute as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s as @e[distance=..3000,tag=SEAmob,type=pillager] at @s run data modify entity @s Invulnerable set value 1b
+execute as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s as @e[distance=..3000,tag=SEAmob,type=vindicator] at @s run data modify entity @s Invulnerable set value 1b
+execute as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s as @e[distance=..3000,tag=SEAmob,type=pillager] at @s run tag @s add SEAmob_surrended
+execute as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s as @e[distance=..3000,tag=SEAmob,type=vindicator] at @s run tag @s add SEAmob_surrended
+execute as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s as @e[distance=..3000,tag=SEAmob,type=vindicator] at @s run effect give @s weakness infinite 9 true
 
 execute as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s as @p[tag=SEAPT] at @s run tp @a[tag=SEAPT,tag=!SEAPF,distance=20..] @s
 
