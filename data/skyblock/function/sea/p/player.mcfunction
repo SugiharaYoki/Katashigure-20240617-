@@ -17,7 +17,7 @@ execute as @s[scores={sea_crafter=10000..19999}] at @s if entity @n[tag=SEAcraft
 execute as @s[scores={sea_crafter=30000..39999}] at @s if entity @n[tag=SEAcrafter,distance=0..5] run function skyblock:sea/shop_purchase
 execute as @s[scores={sea_crafter=90000..99999}] at @s run function skyblock:sea/shop_purchase
 execute as @s[tag=seaPerm000,scores={sea_crafter=20000,SEAPT_mode=1..2}] at @s if entity @n[tag=SEAcrafter,distance=0..5] run function skyblock:sea/shop_enchant
-execute as @s[scores={sea_crafter=30000}] at @s if entity @n[tag=SEAcrafter,distance=0..5] unless score SEA_ch6_event rng5 matches 1112.. run function skyblock:sea/shop_tp
+execute as @s[scores={sea_crafter=30000}] at @s if entity @n[tag=SEAcrafter,distance=0..5] run function skyblock:sea/shop_tp
 execute as @s[tag=seaPerm000,scores={sea_crafter=20001..29999}] at @s if entity @n[tag=SEAcrafter,distance=0..5] run function skyblock:sea/shop_purchase
 execute as @s[scores={sea_crafter=50000..59999}] at @s if entity @n[tag=SEAcrafter,distance=0..5] run function skyblock:sea/p/w/alter
 execute at @s if entity @n[tag=SEAcrafter,distance=0..5] run scoreboard players enable @s sea_crafter
