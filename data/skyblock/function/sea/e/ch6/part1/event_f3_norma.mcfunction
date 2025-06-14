@@ -61,7 +61,11 @@ execute if score SEA_ch6_event rng5 matches 1112 run setblock 90154 129 98 air
 #禁止去往支架
 execute if score SEA_ch6_event rng5 matches 1112 run fill 90143 103 115 90143 105 115 air
 execute if score SEA_ch6_event rng5 matches 1112 run fill 90145 103 106 90145 105 104 air
-
+execute if score SEA_ch6_event rng5 matches 1112 positioned 90153 128 111 run function skyblock:sea/m/skeleton_melee
+execute if score SEA_ch6_event rng5 matches 1112 positioned 90153 128 111 run function skyblock:sea/m/skeleton_melee
+execute if score SEA_ch6_event rng5 matches 1112 positioned 90153 128 111 run function skyblock:sea/m/skeleton_shield
+execute if score SEA_ch6_event rng5 matches 1112 positioned 90153 128 111 run function skyblock:sea/m/skeleton_shield
+execute if score SEA_ch6_event rng5 matches 1112 positioned 90153 128 111 run function skyblock:sea/m/skeleton_shield
 
 effect give @n[tag=SEAnorma,type=zombie_villager] instant_damage 1 1 true
 
