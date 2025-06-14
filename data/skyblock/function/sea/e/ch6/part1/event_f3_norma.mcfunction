@@ -65,17 +65,28 @@ execute if score SEA_ch6_event rng5 matches 1190 as @n[tag=SEAedwina] at @s run 
 execute if score SEA_ch6_event rng5 matches 1190 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"red","bold": true},{"text":"\n“最危险的地方就是最安全的地方。跟我一起回水下研究机构。”","color":"white","bold": false}]
 
 execute if score SEA_ch6_event rng5 matches 1112 run tag @n[tag=SEAedwina] add SEAedwina_attackable
-
+#90138 133 143
 
 execute if score SEA_ch6_event rng5 matches 1200..1300 run scoreboard players set SEA_ch6_event rng5 1200
-execute if score SEA_ch6_event rng5 matches 1200..1300 as @a[x=90144,y=136,z=134,dx=8,dy=4,dz=5,tag=SEAPT] at @s run scoreboard players set SEA_ch6_event rng5 1301
+execute if score SEA_ch6_event rng5 matches 1200..1300 as @a[x=90138,y=133,z=143,dx=8,dy=4,dz=5,tag=SEAPT] at @s run scoreboard players set SEA_ch6_event rng5 1301
 
-execute if score SEA_ch6_event rng5 matches 1303 run particle minecraft:explosion_emitter 90150 140 135 1 1 1 1 1
-execute if score SEA_ch6_event rng5 matches 1303 run playsound minecraft:entity.generic.explode ambient @s 90150 140 135 2 0.8
-execute if score SEA_ch6_event rng5 matches 1307 run particle minecraft:explosion_emitter 90153 139 138 1 1 1 1 1
-execute if score SEA_ch6_event rng5 matches 1307 run particle minecraft:large_smoke 90153 137 137 0 0 0 0.23 80
-execute if score SEA_ch6_event rng5 matches 1307 run playsound minecraft:entity.generic.explode ambient @s 90153 139 138 2 0.8
-execute if score SEA_ch6_event rng5 matches 1303 run clone 90144 -40 134 90153 -35 140 90144 136 134 
-execute if score SEA_ch6_event rng5 matches 1303 run setblock 90151 140 137 gravel
-execute if score SEA_ch6_event rng5 matches 1303 run setblock 90149 140 135 gravel
-execute if score SEA_ch6_event rng5 matches 1303 run setblock 90151 140 135 gravel
+execute if score SEA_ch6_event rng5 matches 1302 as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
+execute if score SEA_ch6_event rng5 matches 1302 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"red","bold": true},{"text":"\n“物资层东面那座电梯应该还能用，我祈祷还能用。去那里！”","color":"white","bold": false}]
+execute if score SEA_ch6_event rng5 matches 1302 positioned 90149 137 136 run function skyblock:sea/m/zombie_cook
+execute if score SEA_ch6_event rng5 matches 1302 positioned 90150 137 137 run function skyblock:sea/m/zombie_security
+execute if score SEA_ch6_event rng5 matches 1302 positioned 90151 137 137.0 run function skyblock:sea/m/drowned_small
+execute if score SEA_ch6_event rng5 matches 1302 positioned 90151 137 137.4 run function skyblock:sea/m/drowned_small
+
+
+execute if score SEA_ch6_event rng5 matches 1310..1400 run scoreboard players set SEA_ch6_event rng5 1310
+execute if score SEA_ch6_event rng5 matches 1310..1400 as @a[x=90144,y=136,z=134,dx=8,dy=4,dz=5,tag=SEAPT] at @s run scoreboard players set SEA_ch6_event rng5 1401
+
+execute if score SEA_ch6_event rng5 matches 1403 run particle minecraft:explosion_emitter 90150 140 135 1 1 1 1 1
+execute if score SEA_ch6_event rng5 matches 1403 run playsound minecraft:entity.generic.explode ambient @s 90150 140 135 2 0.8
+execute if score SEA_ch6_event rng5 matches 1407 run particle minecraft:explosion_emitter 90153 139 138 1 1 1 1 1
+execute if score SEA_ch6_event rng5 matches 1407 run particle minecraft:large_smoke 90153 137 137 0 0 0 0.23 80
+execute if score SEA_ch6_event rng5 matches 1407 run playsound minecraft:entity.generic.explode ambient @s 90153 139 138 2 0.8
+execute if score SEA_ch6_event rng5 matches 1403 run clone 90144 -40 134 90153 -35 140 90144 136 134 
+execute if score SEA_ch6_event rng5 matches 1403 run setblock 90151 140 137 gravel
+execute if score SEA_ch6_event rng5 matches 1403 run setblock 90149 140 135 gravel
+execute if score SEA_ch6_event rng5 matches 1403 run setblock 90151 140 135 gravel
