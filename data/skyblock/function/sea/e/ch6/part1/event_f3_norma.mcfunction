@@ -151,6 +151,14 @@ execute if score SEA_ch6_event rng6 matches 20..800 if score SEA_ch6_event rng7 
 execute if score SEA_ch6_event rng6 matches 20..800 if score SEA_ch6_event rng7 matches 2 positioned 90111 138 115 run playsound minecraft:entity.generic.explode ambient @a ~ ~ ~ 20 1
 execute if score SEA_ch6_event rng6 matches 20..800 if score SEA_ch6_event rng7 matches 3 positioned 90111 138 115 run playsound minecraft:entity.firework_rocket.large_blast ambient @a ~ ~ ~ 10 0.6
 
+execute if score SEA_ch6_event rng6 matches -220 as @p[tag=SEAPT] as @a[distance=..250] at @s run playsound minecraft:ambient.warped_forest.mood ambient @s ~ ~-50 ~ 1000 0.8
+execute if score SEA_ch6_event rng6 matches -220 as @p[tag=SEAPT] as @a[distance=..250] run title @s times 0 30 10
+execute if score SEA_ch6_event rng6 matches -220 as @p[tag=SEAPT] as @a[distance=..250] run title @s title [{"text":"剩余 180 秒","color":"white","bold": true}]
+execute if score SEA_ch6_event rng6 matches -220 as @p[tag=SEAPT] as @a[distance=..250] run title @s subtitle [{"text":"距离 忒尔克西钻井平台 坍塌","color":"white","bold": false}]
+execute if score SEA_ch6_event rng6 matches -216 as @p[tag=SEAPT] as @a[distance=..250] run title @s title [{"text":"剩余 179 秒","color":"white","bold": true}]
+execute if score SEA_ch6_event rng6 matches -212 as @p[tag=SEAPT] as @a[distance=..250] run title @s times 0 10 10
+execute if score SEA_ch6_event rng6 matches -212 as @p[tag=SEAPT] as @a[distance=..250] run title @s title [{"text":"剩余 178 秒","color":"white","bold": true}]
+
 execute if score SEA_ch6_event rng6 matches 20 as @p[tag=SEAPT] as @a[distance=..250] at @s run playsound minecraft:ambient.warped_forest.mood ambient @s ~ ~-50 ~ 1000 0.8
 execute if score SEA_ch6_event rng6 matches 20 as @p[tag=SEAPT] as @a[distance=..250] run title @s times 0 30 10
 execute if score SEA_ch6_event rng6 matches 20 as @p[tag=SEAPT] as @a[distance=..250] run title @s title [{"text":"剩余 120 秒","color":"white","bold": true}]
