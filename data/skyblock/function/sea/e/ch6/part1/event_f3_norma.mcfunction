@@ -146,7 +146,8 @@ execute if score SEA_ch6_event rng6 matches 100..800 store result score SEA_ch6_
 execute if score SEA_ch6_event rng6 matches 150..800 store result score SEA_ch6_event rng7 run random value 1..80
 execute if score SEA_ch6_event rng6 matches 250..800 store result score SEA_ch6_event rng7 run random value 1..60
 execute if score SEA_ch6_event rng6 matches 350..800 store result score SEA_ch6_event rng7 run random value 1..40
-execute if score SEA_ch6_event rng6 matches 440..800 store result score SEA_ch6_event rng7 run random value 1..20
+execute if score SEA_ch6_event rng6 matches 440..800 store result score SEA_ch6_event rng7 run random value 1..15
+execute if score SEA_ch6_event rng6 matches 460..800 store result score SEA_ch6_event rng7 run random value 1..5
 execute if score SEA_ch6_event rng6 matches 20..800 if score SEA_ch6_event rng7 matches 1 run particle minecraft:explosion_emitter 90111 138 115 30 30 30 1 2
 execute if score SEA_ch6_event rng6 matches 20..800 if score SEA_ch6_event rng7 matches 1 positioned 90111 138 115 run playsound minecraft:entity.generic.explode ambient @a ~ ~ ~ 20 0.8
 execute if score SEA_ch6_event rng6 matches 20..800 if score SEA_ch6_event rng7 matches 2 positioned 90111 138 115 run playsound minecraft:entity.generic.explode ambient @a ~ ~ ~ 20 1
@@ -209,5 +210,17 @@ execute if score SEA_ch6_event rng6 matches 468 as @p[tag=SEAPT] as @a[distance=
 execute if score SEA_ch6_event rng6 matches 472 as @p[tag=SEAPT] as @a[distance=..250] at @s run playsound minecraft:entity.warden.heartbeat ambient @s ~ ~-20 ~ 10 1.3
 execute if score SEA_ch6_event rng6 matches 478 as @p[tag=SEAPT] as @a[distance=..250] at @s run playsound minecraft:entity.warden.heartbeat ambient @s ~ ~-20 ~ 10 1.3
 
+execute if score SEA_ch6_event rng6 matches 200 as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
+execute if score SEA_ch6_event rng6 matches 200 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“快要来不及了，尽快逃离！！”","color":"white","bold": false}]
 
+execute if score SEA_ch6_event rng6 matches 390 as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
+execute if score SEA_ch6_event rng6 matches 390 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“我们已经做了所有我们能做的。”","color":"white","bold": false}]
+execute if score SEA_ch6_event rng6 matches 410 as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
+execute if score SEA_ch6_event rng6 matches 410 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“再见了……我的战友。我早就知道你拥有倒转时空的能力。”","color":"white","bold": false}]
+execute if score SEA_ch6_event rng6 matches 440 as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
+execute if score SEA_ch6_event rng6 matches 440 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“下次见面的时候……我会再次尽一切所能与你并肩作战。”","color":"white","bold": false}]
+execute if score SEA_ch6_event rng6 matches 470 as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
+execute if score SEA_ch6_event rng6 matches 470 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“……愿我们来世再遇。”","color":"white","bold": false}]
+
+execute if score SEA_ch6_event rng6 matches 482 run scoreboard players set SEA_ch6_event rng8 1
 
