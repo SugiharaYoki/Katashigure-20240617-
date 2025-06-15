@@ -49,6 +49,7 @@ execute if score SEA_ch6_event rng5 matches 1112 run setblock 90138 134 144 grav
 execute if score SEA_ch6_event rng5 matches 1112 run setblock 90134 134 143 fire
 execute if score SEA_ch6_event rng5 matches 1112 run setblock 90135 134 145 fire
 execute if score SEA_ch6_event rng5 matches 1112 run fill 90151 151 136 90151 152 136 gravel
+execute if score SEA_ch6_event rng5 matches 1112 positioned 90139 161 138 run kill @n[tag=SEAcrafter,distance=..5]
 #禁止右转
 execute if score SEA_ch6_event rng5 matches 1112 run fill 90156 138 136 90155 137 136 gravel
 execute if score SEA_ch6_event rng5 matches 1112 run setblock 90155 137 135 gravel
