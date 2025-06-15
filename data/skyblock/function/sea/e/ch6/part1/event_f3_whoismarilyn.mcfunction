@@ -156,6 +156,7 @@ execute if score SEA_ch6_event rng5 matches 419 run setblock 90152 161 114 barri
 execute if score SEA_ch6_event rng5 matches 426 as @a[tag=SEAPT] at @s run attribute @s minecraft:movement_speed modifier remove sea:marilyn_01
 execute if score SEA_ch6_event rng5 matches 426 as @a[tag=SEAPT] at @s run attribute @s minecraft:jump_strength modifier remove sea:marilyn_01
 execute if score SEA_ch6_event rng5 matches 426 as @a[tag=SEAPT] at @s run effect clear @s glowing
+execute if score SEA_ch6_event rng5 matches 426 as @a[tag=SEAPT] at @s run effect clear @s resistance
 execute if score SEA_ch6_event rng5 matches 426 as @a[distance=0..200] at @s run tellraw @s [{"text":"身体可以动了！！","color":"green"}]
 
 execute if score SEA_ch6_event rng5 matches 426 positioned 90144 160 118 run function skyblock:sea/m/drowned_shield
