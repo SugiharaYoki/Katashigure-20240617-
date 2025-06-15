@@ -68,9 +68,9 @@ execute if score SEA_ch6_event rng5 matches 1112 positioned 90153 128 111 run fu
 execute if score SEA_ch6_event rng5 matches 1112 positioned 90153 128 111 run function skyblock:sea/m/skeleton_shield
 execute if score SEA_ch6_event rng5 matches 1112 positioned 90153 128 111 run function skyblock:sea/m/skeleton_shield
 #二楼蹲守的怪物们
-vexecute if score SEA_ch6_event rng5 matches 1112 positioned 90149 153 127 run function skyblock:sea/m/silverfish
-vexecute if score SEA_ch6_event rng5 matches 1112 positioned 90149 153 127 run function skyblock:sea/m/silverfish
-vexecute if score SEA_ch6_event rng5 matches 1112 positioned 90149 153 127 run function skyblock:sea/m/silverfish
+execute if score SEA_ch6_event rng5 matches 1112 positioned 90149 153 127 run function skyblock:sea/m/silverfish
+execute if score SEA_ch6_event rng5 matches 1112 positioned 90149 153 127 run function skyblock:sea/m/silverfish
+execute if score SEA_ch6_event rng5 matches 1112 positioned 90149 153 127 run function skyblock:sea/m/silverfish
 
 effect give @n[tag=SEAnorma,type=zombie_villager] instant_damage 1 1 true
 
