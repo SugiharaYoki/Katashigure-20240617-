@@ -47,7 +47,7 @@ execute if score SEA_ch6_event rng5 matches 175 as @n[tag=SEAfiona,x=90000,y=100
 execute if score SEA_ch6_event rng5 matches 175 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run playsound minecraft:entity.player.attack.strong hostile @a ~ ~ ~ 1 0.8
 execute if score SEA_ch6_event rng5 matches 175 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run playsound minecraft:entity.player.attack.sweep hostile @a ~ ~ ~ 1 0.8
 execute if score SEA_ch6_event rng5 matches 175 run kill @n[tag=SEAfiona]
-execute if score SEA_ch6_event rng5 matches 179 run summon minecraft:lightning_bolt 90135.47 174.97 50.63
+#execute if score SEA_ch6_event rng5 matches 179 run summon minecraft:lightning_bolt 90135.47 174.97 50.63
 execute if score SEA_ch6_event rng5 matches 12 as @a[tag=SEAPT] at @s run playsound garden2.bgm.waterdeath music @s ~ ~ ~ 0.7 1.0
 execute if score SEA_ch6_event rng5 matches 175 as @a[tag=SEAPT] at @s run stopsound @s music
 execute if score SEA_ch6_event rng5 matches 179 as @a[tag=SEAPT] at @s run playsound garden2.bgm.drowning1 music @s ~ ~ ~ 0.9 1.0
