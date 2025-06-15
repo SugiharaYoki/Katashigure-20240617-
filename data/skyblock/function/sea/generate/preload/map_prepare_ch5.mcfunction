@@ -67,7 +67,7 @@ setblock 90166 49 133 minecraft:tinted_glass
 setblock 90172 49 127 minecraft:tinted_glass
 
 #主平台地形变化
-execute positioned 90097 144 115 run kill @n[tag=sea_drone,distance=0..3]
+execute positioned 90097 144 115 run kill @n[tag=SEAdrone,distance=0..3]
 setblock 90134 138 105 air
 setblock 90134 137 105 air
 setblock 90135 138 105 mangrove_roots
@@ -512,7 +512,7 @@ setblock 90095 130 65 minecraft:furnace[facing=north]
 setblock 90095 130 34 minecraft:furnace[facing=south]
 fill 90134 130 58 90134 130 59 minecraft:air
 
-fill 90117 131 68 90121 131 68 iron_bars
+
 
 
 
@@ -616,5 +616,5 @@ clone 90136 -60 163 90159 -52 168 90136 133 153
 clone 90102 -60 172 90113 -51 187 90082 124 152
 fill 90145 120 182 90134 110 192 air
 
-
+clone 90134 -50 98 90142 -42 102 90134 100 98
 

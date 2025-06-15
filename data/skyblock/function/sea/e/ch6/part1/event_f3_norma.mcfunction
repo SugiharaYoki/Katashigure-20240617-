@@ -1,5 +1,6 @@
 scoreboard players add SEA_ch6_event rng5 1
-
+execute if score SEA_ch6_event rng5 matches 1180 run scoreboard players set SEA_ch6_event rng6 -230
+execute if score SEA_ch6_event rng5 matches 1198.. run scoreboard players add SEA_ch6_event rng6 1
 
 execute if score SEA_ch6_event rng5 matches 1002..1100 as @a[x=90144,y=160,z=119,dx=4,dy=4,dz=5,tag=SEAPT] at @s run scoreboard players set SEA_ch6_event rng5 1101
 
@@ -36,8 +37,41 @@ execute if score SEA_ch6_event rng5 matches 1112 run clone 90148 -60 130 90153 -
 execute if score SEA_ch6_event rng5 matches 1112 run setblock 90140 163 143 gravel
 execute if score SEA_ch6_event rng5 matches 1112 run setblock 90141 163 142 gravel
 execute if score SEA_ch6_event rng5 matches 1112 run setblock 90141 163 143 gravel
+execute if score SEA_ch6_event rng5 matches 1112 run setblock 90139 155 144 minecraft:mangrove_roots
+execute if score SEA_ch6_event rng5 matches 1112 run setblock 90138 154 143 gravel
+execute if score SEA_ch6_event rng5 matches 1112 run setblock 90139 153 142 gravel
+execute if score SEA_ch6_event rng5 matches 1112 run setblock 90138 156 143 minecraft:mangrove_roots
+execute if score SEA_ch6_event rng5 matches 1112 run fill 90142 154 123 90140 154 123 minecraft:mangrove_roots
+execute if score SEA_ch6_event rng5 matches 1112 run fill 90141 155 122 90143 155 122 minecraft:mangrove_roots
 
+execute if score SEA_ch6_event rng5 matches 1112 run clone 90139 -40 121 90149 -34 129 90139 144 121
+execute if score SEA_ch6_event rng5 matches 1112 run clone 90139 -40 142 90143 -33 150 90139 139 142
+execute if score SEA_ch6_event rng5 matches 1112 run setblock 90138 134 144 gravel
+execute if score SEA_ch6_event rng5 matches 1112 run setblock 90134 134 143 fire
+execute if score SEA_ch6_event rng5 matches 1112 run setblock 90135 134 145 fire
 execute if score SEA_ch6_event rng5 matches 1112 run fill 90151 151 136 90151 152 136 gravel
+execute if score SEA_ch6_event rng5 matches 1112 positioned 90139 161 138 run kill @n[tag=SEAcrafter,distance=..5]
+#禁止右转
+execute if score SEA_ch6_event rng5 matches 1112 run fill 90156 138 136 90155 137 136 gravel
+execute if score SEA_ch6_event rng5 matches 1112 run setblock 90155 137 135 gravel
+execute if score SEA_ch6_event rng5 matches 1112 run setblock 90155 140 136 air
+execute if score SEA_ch6_event rng5 matches 1112 run setblock 90156 140 136 air
+execute if score SEA_ch6_event rng5 matches 1112 run setblock 90156 138 136 air
+execute if score SEA_ch6_event rng5 matches 1112 run fill 90157 128 113 90157 127 113 air
+execute if score SEA_ch6_event rng5 matches 1112 run setblock 90155 138 121 air
+execute if score SEA_ch6_event rng5 matches 1112 run setblock 90154 129 98 air
+#禁止去往支架
+execute if score SEA_ch6_event rng5 matches 1112 run fill 90143 103 115 90143 105 115 air
+execute if score SEA_ch6_event rng5 matches 1112 run fill 90145 103 106 90145 105 104 air
+execute if score SEA_ch6_event rng5 matches 1112 positioned 90153 128 111 run function skyblock:sea/m/skeleton_melee
+execute if score SEA_ch6_event rng5 matches 1112 positioned 90153 128 111 run function skyblock:sea/m/skeleton_melee
+execute if score SEA_ch6_event rng5 matches 1112 positioned 90153 128 111 run function skyblock:sea/m/skeleton_shield
+execute if score SEA_ch6_event rng5 matches 1112 positioned 90153 128 111 run function skyblock:sea/m/skeleton_shield
+execute if score SEA_ch6_event rng5 matches 1112 positioned 90153 128 111 run function skyblock:sea/m/skeleton_shield
+#二楼蹲守的怪物们
+execute if score SEA_ch6_event rng5 matches 1112 positioned 90149 153 127 run function skyblock:sea/m/silverfish
+execute if score SEA_ch6_event rng5 matches 1112 positioned 90149 153 127 run function skyblock:sea/m/silverfish
+execute if score SEA_ch6_event rng5 matches 1112 positioned 90149 153 127 run function skyblock:sea/m/silverfish
 
 effect give @n[tag=SEAnorma,type=zombie_villager] instant_damage 1 1 true
 
@@ -46,13 +80,150 @@ execute if score SEA_ch6_event rng5 matches 1152 run tellraw @a[distance=0..200]
 execute if score SEA_ch6_event rng5 matches 1182 run tellraw @a[distance=0..200] [{"text":"全平台广播：","color":"green","bold": true},{"text":"\n“我们的驻足之地随时都可能爆炸崩塌，请所有人做好临终准备。”","color":"white","bold": false}]
 
 execute if score SEA_ch6_event rng5 matches 1138 as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
-execute if score SEA_ch6_event rng5 matches 1138 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"red","bold": true},{"text":"\n“这平台终于要炸了，跟着我走。就算平台不炸，美国政府也会往这里丢燃烧弹。”","color":"white","bold": false}]
+execute if score SEA_ch6_event rng5 matches 1138 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“这平台终于要炸了，跟着我走。就算平台不炸，美国政府也会往这里丢燃烧弹。”","color":"white","bold": false}]
 
 execute if score SEA_ch6_event rng5 matches 1156 as @a[tag=SEAPT] run tellraw @a[distance=0..150] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“啊？！等等、所以政府已经知道了？！那我们该怎么办？”","color":"white"}]
 execute if score SEA_ch6_event rng5 matches 1173 as @a[tag=SEAPT] run tellraw @a[distance=0..150] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“那我们该怎么办？”","color":"white"}]
 
 execute if score SEA_ch6_event rng5 matches 1190 as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
-execute if score SEA_ch6_event rng5 matches 1190 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"red","bold": true},{"text":"\n“最危险的地方就是最安全的地方。跟我一起回水下研究机构。”","color":"white","bold": false}]
+execute if score SEA_ch6_event rng5 matches 1190 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“最危险的地方就是最安全的地方。跟我一起回水下研究机构。”","color":"white","bold": false}]
 
 execute if score SEA_ch6_event rng5 matches 1112 run tag @n[tag=SEAedwina] add SEAedwina_attackable
+#90138 133 143
+
+execute if score SEA_ch6_event rng5 matches 1200..1300 run scoreboard players set SEA_ch6_event rng5 1200
+execute if score SEA_ch6_event rng5 matches 1200..1300 as @a[x=90138,y=133,z=143,dx=8,dy=4,dz=5,tag=SEAPT] at @s run scoreboard players set SEA_ch6_event rng5 1301
+
+execute if score SEA_ch6_event rng5 matches 1302 as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
+execute if score SEA_ch6_event rng5 matches 1302 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“物资层东面那座电梯应该还能用，我祈祷还能用。去那里！”","color":"white","bold": false}]
+execute if score SEA_ch6_event rng5 matches 1302 positioned 90149 137 136 run function skyblock:sea/m/zombie_cook
+execute if score SEA_ch6_event rng5 matches 1302 positioned 90150 137 137 run function skyblock:sea/m/zombie_security
+execute if score SEA_ch6_event rng5 matches 1302 positioned 90151 137 137.0 run function skyblock:sea/m/drowned_small
+execute if score SEA_ch6_event rng5 matches 1302 positioned 90151 137 137.4 run function skyblock:sea/m/drowned_small
+
+
+execute if score SEA_ch6_event rng5 matches 1310..1400 run scoreboard players set SEA_ch6_event rng5 1310
+execute if score SEA_ch6_event rng5 matches 1310..1400 as @a[x=90144,y=136,z=134,dx=8,dy=4,dz=5,tag=SEAPT] at @s run scoreboard players set SEA_ch6_event rng5 1401
+
+execute if score SEA_ch6_event rng5 matches 1403 run particle minecraft:explosion_emitter 90150 140 135 1 1 1 1 1
+execute if score SEA_ch6_event rng5 matches 1403 run playsound minecraft:entity.generic.explode ambient @s 90150 140 135 2 0.8
+execute if score SEA_ch6_event rng5 matches 1407 run particle minecraft:explosion_emitter 90153 139 138 1 1 1 1 1
+execute if score SEA_ch6_event rng5 matches 1407 run particle minecraft:large_smoke 90153 137 137 0 0 0 0.23 80
+execute if score SEA_ch6_event rng5 matches 1407 run playsound minecraft:entity.generic.explode ambient @s 90153 139 138 2 0.8
+execute if score SEA_ch6_event rng5 matches 1403 run clone 90144 -40 134 90153 -35 140 90144 136 134 
+execute if score SEA_ch6_event rng5 matches 1403 run setblock 90151 140 137 gravel
+execute if score SEA_ch6_event rng5 matches 1403 run setblock 90149 140 135 gravel
+execute if score SEA_ch6_event rng5 matches 1403 run setblock 90151 140 135 gravel
+
+execute if score SEA_ch6_event rng5 matches 1309 run tellraw @a[distance=0..200] [{"text":"全平台广播：","color":"green","bold": true},{"text":"\n“所有幸存者注意，忒尔克西的输油管道已经接近临界值。”","color":"white","bold": false}]
+execute if score SEA_ch6_event rng5 matches 1409 run tellraw @a[distance=0..200] [{"text":"全平台广播：","color":"green","bold": true},{"text":"\n“警告，通讯平台濒临崩塌，请所有的幸存者前往……”","color":"white","bold": false}]
+
+execute if score SEA_ch6_event rng5 matches 1410..1500 run scoreboard players set SEA_ch6_event rng5 1410
+execute if score SEA_ch6_event rng5 matches 1410..1500 as @a[x=90152,y=127,z=111,dx=10,dy=10,dz=10,tag=SEAPT] at @s run scoreboard players set SEA_ch6_event rng5 1501
+execute if score SEA_ch6_event rng5 matches 1503 run clone 90152 -50 101 90155 -44 108 90152 123 101 
+execute if score SEA_ch6_event rng5 matches 1503 run particle minecraft:explosion_emitter 90154 129 104 1 1 1 1 1
+execute if score SEA_ch6_event rng5 matches 1503 run playsound minecraft:entity.generic.explode ambient @s 90154 129 104 2 0.8
+
+execute if score SEA_ch6_event rng5 matches 1507 positioned 90150 140 61 run particle minecraft:explosion_emitter 90154 129 104 8 8 8 1 5
+execute if score SEA_ch6_event rng5 matches 1507 positioned 90150 140 61 run playsound minecraft:entity.generic.explode ambient @s ~ ~ ~ 10 0.8
+execute if score SEA_ch6_event rng5 matches 1509 positioned 90150 140 61 run playsound minecraft:entity.firework_rocket.large_blast ambient @s ~ ~ ~ 10 0.6
+execute if score SEA_ch6_event rng5 matches 1305 positioned 90150 140 61 run playsound minecraft:entity.firework_rocket.large_blast ambient @s ~ ~ ~ 10 0.6
+execute if score SEA_ch6_event rng5 matches 1408 positioned 90150 140 61 run playsound minecraft:entity.generic.explode ambient @s ~ ~ ~ 10 0.8
+execute if score SEA_ch6_event rng5 matches 1516 positioned 90130 140 61 run particle minecraft:explosion_emitter 90154 129 104 8 8 8 1 5
+execute if score SEA_ch6_event rng5 matches 1516 positioned 90130 140 61 run playsound minecraft:entity.generic.explode ambient @s ~ ~ ~ 10 0.8
+execute if score SEA_ch6_event rng5 matches 1547 positioned 90150 120 61 run particle minecraft:explosion_emitter 90154 129 104 8 8 8 1 5
+execute if score SEA_ch6_event rng5 matches 1547 positioned 90150 120 61 run playsound minecraft:entity.generic.explode ambient @s ~ ~ ~ 10 0.8
+execute if score SEA_ch6_event rng5 matches 1549 positioned 90150 120 61 run playsound minecraft:entity.firework_rocket.large_blast ambient @s ~ ~ ~ 10 0.6
+
+execute if score SEA_ch6_event rng5 matches 1200..1800 as @a[x=90138,y=133,z=143,dx=30,dy=4,dz=30,tag=SEAPT,tag=!e_i_54] at @s run attribute @s minecraft:jump_strength modifier add sea:marilyn_01 -5 add_value
+execute if score SEA_ch6_event rng5 matches 1200..1800 as @a[x=90138,y=133,z=143,dx=30,dy=4,dz=30,tag=SEAPT,tag=!e_i_54] at @s run tag @s add e_i_54
+execute if score SEA_ch6_event rng5 matches 1200..1800 as @a[tag=SEAPT,gamemode=adventure] at @s if block ~ ~ ~ water if block ~ ~-1 ~ water run kill @s
+
+execute if score SEA_ch6_event rng5 matches 1550..1600 run scoreboard players set SEA_ch6_event rng5 1410
+
+execute if score SEA_ch6_event rng6 matches 20..800 store result score SEA_ch6_event rng7 run random value 1..110
+execute if score SEA_ch6_event rng6 matches 100..800 store result score SEA_ch6_event rng7 run random value 1..90
+execute if score SEA_ch6_event rng6 matches 150..800 store result score SEA_ch6_event rng7 run random value 1..80
+execute if score SEA_ch6_event rng6 matches 250..800 store result score SEA_ch6_event rng7 run random value 1..60
+execute if score SEA_ch6_event rng6 matches 350..800 store result score SEA_ch6_event rng7 run random value 1..40
+execute if score SEA_ch6_event rng6 matches 440..800 store result score SEA_ch6_event rng7 run random value 1..15
+execute if score SEA_ch6_event rng6 matches 460..800 store result score SEA_ch6_event rng7 run random value 1..5
+execute if score SEA_ch6_event rng6 matches 20..800 if score SEA_ch6_event rng7 matches 1 run particle minecraft:explosion_emitter 90111 138 115 30 30 30 1 2
+execute if score SEA_ch6_event rng6 matches 20..800 if score SEA_ch6_event rng7 matches 1 positioned 90111 138 115 run playsound minecraft:entity.generic.explode ambient @a ~ ~ ~ 20 0.8
+execute if score SEA_ch6_event rng6 matches 20..800 if score SEA_ch6_event rng7 matches 2 positioned 90111 138 115 run playsound minecraft:entity.generic.explode ambient @a ~ ~ ~ 20 1
+execute if score SEA_ch6_event rng6 matches 20..800 if score SEA_ch6_event rng7 matches 3 positioned 90111 138 115 run playsound minecraft:entity.firework_rocket.large_blast ambient @a ~ ~ ~ 10 0.6
+
+execute if score SEA_ch6_event rng6 matches -220 as @p[tag=SEAPT] as @a[distance=..250] at @s run playsound minecraft:ambient.warped_forest.mood ambient @s ~ ~-50 ~ 1000 0.8
+execute if score SEA_ch6_event rng6 matches -220 as @p[tag=SEAPT] as @a[distance=..250] run title @s times 0 30 10
+execute if score SEA_ch6_event rng6 matches -220 as @p[tag=SEAPT] as @a[distance=..250] run title @s title [{"text":"剩余 180 秒","color":"white","bold": true}]
+execute if score SEA_ch6_event rng6 matches -220 as @p[tag=SEAPT] as @a[distance=..250] run title @s subtitle [{"text":"距离 忒尔克西钻井平台 坍塌","color":"white","bold": false}]
+execute if score SEA_ch6_event rng6 matches -216 as @p[tag=SEAPT] as @a[distance=..250] run title @s title [{"text":"剩余 179 秒","color":"white","bold": true}]
+execute if score SEA_ch6_event rng6 matches -212 as @p[tag=SEAPT] as @a[distance=..250] run title @s times 0 10 10
+execute if score SEA_ch6_event rng6 matches -212 as @p[tag=SEAPT] as @a[distance=..250] run title @s title [{"text":"剩余 178 秒","color":"white","bold": true}]
+
+execute if score SEA_ch6_event rng6 matches 20 as @p[tag=SEAPT] as @a[distance=..250] at @s run playsound minecraft:ambient.warped_forest.mood ambient @s ~ ~-50 ~ 1000 0.8
+execute if score SEA_ch6_event rng6 matches 20 as @p[tag=SEAPT] as @a[distance=..250] run title @s times 0 30 10
+execute if score SEA_ch6_event rng6 matches 20 as @p[tag=SEAPT] as @a[distance=..250] run title @s title [{"text":"剩余 120 秒","color":"white","bold": true}]
+execute if score SEA_ch6_event rng6 matches 20 as @p[tag=SEAPT] as @a[distance=..250] run title @s subtitle [{"text":"距离 忒尔克西钻井平台 坍塌","color":"white","bold": false}]
+execute if score SEA_ch6_event rng6 matches 24 as @p[tag=SEAPT] as @a[distance=..250] run title @s title [{"text":"剩余 119 秒","color":"white","bold": true}]
+execute if score SEA_ch6_event rng6 matches 28 as @p[tag=SEAPT] as @a[distance=..250] run title @s times 0 10 10
+execute if score SEA_ch6_event rng6 matches 28 as @p[tag=SEAPT] as @a[distance=..250] run title @s title [{"text":"剩余 118 秒","color":"white","bold": true}]
+
+
+execute if score SEA_ch6_event rng6 matches 280 as @p[tag=SEAPT] as @a[distance=..250] at @s run playsound minecraft:ambient.warped_forest.mood ambient @s ~ ~-50 ~ 1000 0.8
+execute if score SEA_ch6_event rng6 matches 280 as @p[tag=SEAPT] as @a[distance=..250] run title @s times 0 30 10
+execute if score SEA_ch6_event rng6 matches 280 as @p[tag=SEAPT] as @a[distance=..250] run title @s title [{"text":"剩余 60 秒","color":"white","bold": true}]
+execute if score SEA_ch6_event rng6 matches 280 as @p[tag=SEAPT] as @a[distance=..250] run title @s subtitle [{"text":"距离 忒尔克西钻井平台 坍塌","color":"white","bold": false}]
+execute if score SEA_ch6_event rng6 matches 284 as @p[tag=SEAPT] as @a[distance=..250] run title @s title [{"text":"剩余 59 秒","color":"white","bold": true}]
+execute if score SEA_ch6_event rng6 matches 288 as @p[tag=SEAPT] as @a[distance=..250] run title @s times 0 10 10
+execute if score SEA_ch6_event rng6 matches 288 as @p[tag=SEAPT] as @a[distance=..250] run title @s title [{"text":"剩余 58 秒","color":"white","bold": true}]
+
+
+execute if score SEA_ch6_event rng6 matches 360 as @p[tag=SEAPT] as @a[distance=..250] at @s run playsound minecraft:ambient.warped_forest.mood ambient @s ~ ~-50 ~ 1000 0.8
+execute if score SEA_ch6_event rng6 matches 360 as @p[tag=SEAPT] as @a[distance=..250] run title @s times 0 30 10
+execute if score SEA_ch6_event rng6 matches 360 as @p[tag=SEAPT] as @a[distance=..250] run title @s title [{"text":"剩余 30 秒","color":"white","bold": true}]
+execute if score SEA_ch6_event rng6 matches 360 as @p[tag=SEAPT] as @a[distance=..250] run title @s subtitle [{"text":"距离 忒尔克西钻井平台 坍塌","color":"white","bold": false}]
+execute if score SEA_ch6_event rng6 matches 364 as @p[tag=SEAPT] as @a[distance=..250] run title @s title [{"text":"剩余 29 秒","color":"white","bold": true}]
+execute if score SEA_ch6_event rng6 matches 368 as @p[tag=SEAPT] as @a[distance=..250] run title @s times 0 10 10
+execute if score SEA_ch6_event rng6 matches 368 as @p[tag=SEAPT] as @a[distance=..250] run title @s title [{"text":"剩余 28 秒","color":"white","bold": true}]
+
+execute if score SEA_ch6_event rng6 matches 440 as @p[tag=SEAPT] as @a[distance=..250] run tellraw @s[distance=0..200] [{"text":"距离忒尔克西钻井平台坍塌：","color":"red","bold": true},{"text":"\n剩余 10 秒","color":"red","bold": false}]
+execute if score SEA_ch6_event rng6 matches 444 as @p[tag=SEAPT] as @a[distance=..250] run tellraw @s[distance=0..200] [{"text":"剩余 9 秒","color":"red","bold": false}]
+execute if score SEA_ch6_event rng6 matches 448 as @p[tag=SEAPT] as @a[distance=..250] run tellraw @s[distance=0..200] [{"text":"剩余 8 秒","color":"red","bold": false}]
+execute if score SEA_ch6_event rng6 matches 452 as @p[tag=SEAPT] as @a[distance=..250] run tellraw @s[distance=0..200] [{"text":"剩余 7 秒","color":"red","bold": false}]
+execute if score SEA_ch6_event rng6 matches 456 as @p[tag=SEAPT] as @a[distance=..250] run tellraw @s[distance=0..200] [{"text":"剩余 6 秒","color":"dark_red","bold": false}]
+execute if score SEA_ch6_event rng6 matches 460 as @p[tag=SEAPT] as @a[distance=..250] run tellraw @s[distance=0..200] [{"text":"剩余 5 秒","color":"dark_red","bold": false}]
+execute if score SEA_ch6_event rng6 matches 464 as @p[tag=SEAPT] as @a[distance=..250] run tellraw @s[distance=0..200] [{"text":"剩余 4 秒","color":"dark_red","bold": false}]
+execute if score SEA_ch6_event rng6 matches 468 as @p[tag=SEAPT] as @a[distance=..250] run tellraw @s[distance=0..200] [{"text":"剩余 3 秒","color":"dark_red","bold": false}]
+execute if score SEA_ch6_event rng6 matches 472 as @p[tag=SEAPT] as @a[distance=..250] run tellraw @s[distance=0..200] [{"text":"剩余 2 秒","color":"dark_red","bold": false}]
+execute if score SEA_ch6_event rng6 matches 478 as @p[tag=SEAPT] as @a[distance=..250] run tellraw @s[distance=0..200] [{"text":"剩余 1 秒","color":"dark_red","bold": false}]
+execute if score SEA_ch6_event rng6 matches 481 as @a[tag=SEAPT] at @s run particle minecraft:explosion_emitter 90154 129 104 2 2 2 1 5
+execute if score SEA_ch6_event rng6 matches 481 as @a[tag=SEAPT] at @s run particle minecraft:flame 90154 129 104 2 2 2 1 180
+execute if score SEA_ch6_event rng6 matches 481 as @a[tag=SEAPT] at @s positioned ~ ~1 ~ run playsound minecraft:entity.generic.explode ambient @a ~ ~1 ~ 10 0.8
+
+execute if score SEA_ch6_event rng6 matches 440.. as @p[tag=SEAPT] as @a[distance=..250] at @s run playsound minecraft:ambient.underwater.loop.additions.ultra_rare ambient @a ~ ~-20 ~ 100 0.8
+execute if score SEA_ch6_event rng6 matches 440 as @p[tag=SEAPT] as @a[distance=..250] at @s run playsound minecraft:entity.warden.heartbeat ambient @s ~ ~-20 ~ 10 1.3
+execute if score SEA_ch6_event rng6 matches 444 as @p[tag=SEAPT] as @a[distance=..250] at @s run playsound minecraft:entity.warden.heartbeat ambient @s ~ ~-20 ~ 10 1.3
+execute if score SEA_ch6_event rng6 matches 448 as @p[tag=SEAPT] as @a[distance=..250] at @s run playsound minecraft:entity.warden.heartbeat ambient @s ~ ~-20 ~ 10 1.3
+execute if score SEA_ch6_event rng6 matches 452 as @p[tag=SEAPT] as @a[distance=..250] at @s run playsound minecraft:entity.warden.heartbeat ambient @s ~ ~-20 ~ 10 1.3
+execute if score SEA_ch6_event rng6 matches 456 as @p[tag=SEAPT] as @a[distance=..250] at @s run playsound minecraft:entity.warden.heartbeat ambient @s ~ ~-20 ~ 10 1.3
+execute if score SEA_ch6_event rng6 matches 460 as @p[tag=SEAPT] as @a[distance=..250] at @s run playsound minecraft:entity.warden.heartbeat ambient @s ~ ~-20 ~ 10 1.3
+execute if score SEA_ch6_event rng6 matches 464 as @p[tag=SEAPT] as @a[distance=..250] at @s run playsound minecraft:entity.warden.heartbeat ambient @s ~ ~-20 ~ 10 1.3
+execute if score SEA_ch6_event rng6 matches 468 as @p[tag=SEAPT] as @a[distance=..250] at @s run playsound minecraft:entity.warden.heartbeat ambient @s ~ ~-20 ~ 10 1.3
+execute if score SEA_ch6_event rng6 matches 472 as @p[tag=SEAPT] as @a[distance=..250] at @s run playsound minecraft:entity.warden.heartbeat ambient @s ~ ~-20 ~ 10 1.3
+execute if score SEA_ch6_event rng6 matches 478 as @p[tag=SEAPT] as @a[distance=..250] at @s run playsound minecraft:entity.warden.heartbeat ambient @s ~ ~-20 ~ 10 1.3
+
+execute if score SEA_ch6_event rng6 matches 200 as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
+execute if score SEA_ch6_event rng6 matches 200 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“快要来不及了，尽快逃离！！”","color":"white","bold": false}]
+
+execute if score SEA_ch6_event rng6 matches 390 as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
+execute if score SEA_ch6_event rng6 matches 390 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“我们已经做了所有我们能做的。”","color":"white","bold": false}]
+execute if score SEA_ch6_event rng6 matches 410 as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
+execute if score SEA_ch6_event rng6 matches 410 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“再见了……我的战友。我早就知道你拥有倒转时空的能力。”","color":"white","bold": false}]
+execute if score SEA_ch6_event rng6 matches 440 as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
+execute if score SEA_ch6_event rng6 matches 440 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“下次见面的时候……我会再次尽我所能与你并肩作战。”","color":"white","bold": false}]
+execute if score SEA_ch6_event rng6 matches 470 as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
+execute if score SEA_ch6_event rng6 matches 470 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“……愿我们来世再遇。”","color":"white","bold": false}]
+
+execute if score SEA_ch6_event rng6 matches 482 run scoreboard players set SEA_ch6_event rng8 1
 

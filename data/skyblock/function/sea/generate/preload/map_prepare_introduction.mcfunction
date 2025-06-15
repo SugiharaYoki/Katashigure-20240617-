@@ -990,8 +990,35 @@ setblock 90145 160 122 air
 clone 90138 -60 130 90143 -55 136 90138 159 140
 fill 90151 148 136 90151 150 136 air
 
+setblock 90098 129 113 minecraft:bamboo_button[facing=west]
+setblock 90139 161 142 minecraft:mangrove_roots
+setblock 90139 155 144 minecraft:air
+setblock 90138 154 143 air
+setblock 90139 153 142 air
+fill 90142 154 123 90140 154 123 air
+fill 90141 155 122 90143 155 122 air
 
+fill 90117 131 68 90121 131 68 iron_bars
 
+clone 90139 -50 121 90149 -44 129 90139 144 121 
+clone 90139 -30 142 90143 -23 150 90139 139 142 
+
+setblock 90138 134 144 air
+
+clone 90144 -50 134 90153 -45 140 90144 136 134 
+#setblock 90151 137 137 air
+setblock 90134 134 143 air
+setblock 90135 134 145 air
+fill 90156 138 136 90155 137 136 air
+setblock 90155 137 135 air
+setblock 90155 140 136 iron_block
+setblock 90156 140 136 minecraft:polished_andesite_stairs[facing=west,half=top]
+fill 90156 138 136 90156 139 136 air
+clone 90152 -60 101 90155 -54 108 90152 123 101 
+fill 90143 103 115 90143 105 115 ladder[facing=east]
+
+clone 90134 -60 98 90142 -52 102 90134 100 98
+fill 90145 103 106 90145 105 104 iron_block
 
 
 

@@ -50,7 +50,8 @@ execute as @n[tag=SEAboss4,scores={health=..50,rng2=..10}] run effect give @s re
 execute as @n[tag=SEAboss4,scores={health=..20,rng2=..10}] run effect give @s resistance 3 3 true
 
 execute as @n[tag=SEAboss4,scores={rng8=..0}] at @s run function skyblock:sea/e/ch4/boss/system_rule_attack_round_ends
-execute as @n[tag=SEAboss4,scores={health=..80,rng2=11..}] run scoreboard players add @s rng7 1
+execute as @n[tag=SEAboss4,scores={health=..80,rng2=11..,rng7=..180}] run scoreboard players add @s rng7 1
+execute as @n[tag=SEAboss4,scores={rng7=181..}] run scoreboard players add @s rng7 1
 
 execute store result score SEAboss4_killed rng1 run random value 1..3
 execute unless entity @n[tag=SEAedwina] if score SEAboss4_killed rng1 matches 1 run tellraw @a[tag=SEAPT] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“你知道那下有多痛吗？你真的惹毛我了。”","color":"white","bold": false}]

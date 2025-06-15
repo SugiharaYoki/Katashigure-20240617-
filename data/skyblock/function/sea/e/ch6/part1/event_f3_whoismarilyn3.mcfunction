@@ -1,35 +1,69 @@
+scoreboard players add SEA_ch6_event rng5 1
+execute if score SEA_ch6_event rng5 matches 1112.. run scoreboard players add SEA_ch6_event rng6 1
 
-execute if score SEA_ch6_event rng5 matches 165 if score SEA_ch5_event_fiona_favor rng1 matches ..8 as @a[tag=SEAPT] run tellraw @a[distance=0..50] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“操，你居然真的敢下死手！！”","color":"white"}]
-execute if score SEA_ch6_event rng5 matches 165 if score SEA_ch5_event_fiona_favor rng1 matches 9..14 as @a[tag=SEAPT] run tellraw @a[distance=0..50] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“菲尔娜！！”","color":"white"}]
-execute if score SEA_ch6_event rng5 matches 165 if score SEA_ch5_event_fiona_favor rng1 matches 15.. as @a[tag=SEAPT] run tellraw @a[distance=0..50] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“菲……菲尔娜！！不要、不要！！！”","color":"white"}]
+execute if score SEA_ch6_event rng5 matches 1002..1100 as @a[x=90144,y=160,z=119,dx=4,dy=4,dz=5,tag=SEAPT] at @s run scoreboard players set SEA_ch6_event rng5 1101
 
-execute if score SEA_ch6_event rng5 matches 200 as @n[tag=SEAnorma,x=90000,y=100,z=0,distance=0..1200] at @s run playsound minecraft:entity.evoker.ambient neutral @a ~ ~ ~ 1 1.5
-execute if score SEA_ch6_event rng5 matches 200 if score SEA_ch5_event_fiona_favor rng1 matches ..14 run tellraw @a[distance=0..150] [{"text":"玛瑞莲：","color":"dark_purple","bold": true},{"text":"\n“可惜呀，菲尔娜大小姐。当初，我原本还想和你成为好朋友。如果圣水晶从来没出现过……”","color":"white","bold": false}]
-execute if score SEA_ch6_event rng5 matches 200 if score SEA_ch5_event_fiona_favor rng1 matches 15.. run tellraw @a[distance=0..150] [{"text":"玛瑞莲：","color":"dark_purple","bold": true},{"text":"\n“小两口真是浪漫啊，在生命的最后关头还不忘记唧唧我我。现在，我来帮你们一同上路。”","color":"white","bold": false}]
+execute if score SEA_ch6_event rng5 matches 1090..1100 run scoreboard players set SEA_ch6_event rng5 1090
 
-execute if score SEA_ch6_event rng5 matches 223 as @n[tag=SEAnorma,x=90000,y=100,z=0,distance=0..1200] at @s run playsound minecraft:entity.evoker.ambient neutral @a ~ ~ ~ 1 1.5
-execute if score SEA_ch6_event rng5 matches 223 run tellraw @a[distance=0..150] [{"text":"玛瑞莲？：","color":"dark_purple","bold": true},{"text":"\n“先生，我问你：知道玛丽莲·梦露的原名是什么吗？”","color":"white","bold": false}]
-execute if score SEA_ch6_event rng5 matches 243 as @n[tag=SEAnorma,x=90000,y=100,z=0,distance=0..1200] at @s run playsound minecraft:entity.evoker.ambient neutral @a ~ ~ ~ 1 1.5
-execute if score SEA_ch6_event rng5 matches 243 run tellraw @a[distance=0..150] [{"text":"诺玛：","color":"red","bold": true},{"text":"\n“生怕你到死都没想明白。是诺玛·简·莫泰森。”","color":"white","bold": false}]
+execute if score SEA_ch6_event rng5 matches 1101 run tp @a[tag=SEAPT,distance=2..] @s
+execute if score SEA_ch6_event rng5 matches 1101 run tp @n[tag=SEAedwina] 90145 160 118 facing 90145 160 117
 
-execute if score SEA_ch6_event rng5 matches 262 if score SEA_ch5_event_fiona_favor rng1 matches ..8 as @a[tag=SEAPT] run tellraw @a[distance=0..50] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“诺玛……你居然就是我一直都在听他们提起的……那个煽动暴乱的诺玛！！”","color":"white"}]
-execute if score SEA_ch6_event rng5 matches 262 if score SEA_ch5_event_fiona_favor rng1 matches 9..14 as @a[tag=SEAPT] run tellraw @a[distance=0..50] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“他妈的，玛瑞莲……诺玛！为什么要对我们做这些事情？！为什么？！！”","color":"white"}]
-execute if score SEA_ch6_event rng5 matches 262 if score SEA_ch5_event_fiona_favor rng1 matches 15.. as @a[tag=SEAPT] run tellraw @a[distance=0..50] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“妈的、就你他妈是诺玛！你杀了菲尔娜，我要你血债血偿！！！”","color":"white"}]
+execute if score SEA_ch6_event rng5 matches 1104..1106 run tp @n[tag=SEAedwina] ~ ~ ~1 facing ~ ~ ~2
+execute if score SEA_ch6_event rng5 matches 1109..1111 run tp @n[tag=SEAedwina] ~ ~ ~1 facing ~ ~ ~2
 
-execute if score SEA_ch6_event rng5 matches 281 as @n[tag=SEAnorma,x=90000,y=100,z=0,distance=0..1200] at @s run playsound minecraft:entity.evoker.ambient neutral @a ~ ~ ~ 1 1.5
-execute if score SEA_ch6_event rng5 matches 281 unless items block 90148 145 152 container.1 blue_wool run tellraw @a[distance=0..150] [{"text":"诺玛：","color":"red","bold": true},{"text":"\n“你已经帮我清理掉了前往水晶祀堂的路上全部的尸变体，我还没来得及感谢你呢。”","color":"white","bold": false}]
-execute if score SEA_ch6_event rng5 matches 281 if items block 90148 145 152 container.1 blue_wool run tellraw @a[distance=0..150] [{"text":"诺玛：","color":"red","bold": true},{"text":"\n“你已经帮我清理掉了前往水晶祀堂的路上全部的尸变体，我还没来得及感谢你呢。而且，我也真的很不想你再次体验受伤的感觉。”","color":"white","bold": false}]
+execute if score SEA_ch6_event rng5 matches 1103 run setblock 90145 160 117 minecraft:iron_door[open=false,half=lower]
+execute if score SEA_ch6_event rng5 matches 1103 run setblock 90145 161 117 minecraft:iron_door[open=false,half=upper]
+execute if score SEA_ch6_event rng5 matches 1103 run playsound minecraft:block.iron_door.close block @a 90145 161 117
 
-execute if score SEA_ch6_event rng5 matches 300 as @n[tag=SEAnorma,x=90000,y=100,z=0,distance=0..1200] at @s run playsound minecraft:entity.evoker.ambient neutral @a ~ ~ ~ 1 1.5
-execute if score SEA_ch6_event rng5 matches 300 run tellraw @a[distance=0..150] [{"text":"诺玛：","color":"red","bold": true},{"text":"\n“所以，我会让你死得很痛快的。真的，就像我杀死菲尔娜大小姐那样。”","color":"white","bold": false}]
+execute if score SEA_ch6_event rng5 matches 1104 run tp @n[tag=SEAnorma] 90145 160 115 facing 90145 160 116
+execute if score SEA_ch6_event rng5 matches 1107 run data modify entity @n[tag=SEAnorma] Motion set value [0.0,0.3,-0.5]
+execute if score SEA_ch6_event rng5 matches 1110 run data modify entity @n[tag=SEAnorma] Motion set value [0.0,0.1,2.0]
+execute if score SEA_ch6_event rng5 matches 1115 run data modify entity @n[tag=SEAnorma] Motion set value [0.0,0.3,-0.7]
+execute if score SEA_ch6_event rng5 matches 1118 run data modify entity @n[tag=SEAnorma] Motion set value [0.0,0.1,2.0]
+execute if score SEA_ch6_event rng5 matches 1119 run fill 90145 160 117 90145 161 117 air
+execute if score SEA_ch6_event rng5 matches 1119 run particle minecraft:white_smoke 90145.17 161.00 118.00 0.5 1 0.1 0.05 50
+execute if score SEA_ch6_event rng5 matches 1119 run particle minecraft:smoke 90145.17 161.00 118.00 0.5 1 0.1 0.05 50
+execute if score SEA_ch6_event rng5 matches 1111 run playsound minecraft:entity.zombie.attack_iron_door block @a 90145.17 161.00 118.00 0.9 0.8
+execute if score SEA_ch6_event rng5 matches 1119 run playsound minecraft:entity.zombie.break_wooden_door block @a 90145.17 161.00 118.00 1 0.8
 
-execute if score SEA_ch6_event rng5 matches 13 as @n[tag=SEAnorma] at @s run tp @s ~-0.15 ~ ~-0.5 facing ~-0.6 ~ ~-2
-execute if score SEA_ch6_event rng5 matches 17 as @n[tag=SEAnorma] at @s run tp @s ~-0.15 ~ ~-0.5 facing ~-0.6 ~ ~-2
-execute if score SEA_ch6_event rng5 matches 21 as @n[tag=SEAnorma] at @s run tp @s ~-0.15 ~ ~-0.5 facing ~-0.6 ~ ~-2
-execute if score SEA_ch6_event rng5 matches 25 as @n[tag=SEAnorma] at @s run tp @s ~ ~ ~-0.5 facing ~ ~ ~-2
-execute if score SEA_ch6_event rng5 matches 29 as @n[tag=SEAnorma] at @s run tp @s ~ ~ ~-0.5 facing ~ ~ ~-2
-execute if score SEA_ch6_event rng5 matches 35 as @n[tag=SEAnorma] at @s run rotate @s facing entity @p[tag=SEAPT]
-execute if score SEA_ch6_event rng5 matches 68 as @n[tag=SEAnorma] at @s run rotate @s facing entity @p[tag=SEAPT]
-execute if score SEA_ch6_event rng5 matches 94 as @n[tag=SEAnorma] at @s run rotate @s facing entity @p[tag=SEAPT]
-execute if score SEA_ch6_event rng5 matches 50..139 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run rotate @s facing entity @n[tag=SEAnorma]
-execute if score SEA_ch6_event rng5 matches 140 if score SEA_ch5_event_fiona_favor rng1 matches 15.. as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run rotate @s facing entity @p[tag=SEAPT]
+execute if score SEA_ch6_event rng5 matches 1107 run setblock 90145 160 122 minecraft:redstone_torch
+
+
+execute if score SEA_ch6_event rng5 matches 1112 run particle minecraft:explosion_emitter 90140 162 143 1 1 1 1 1
+execute if score SEA_ch6_event rng5 matches 1112 run playsound minecraft:entity.generic.explode ambient @s 90140 162 143 2 0.8
+
+execute if score SEA_ch6_event rng5 matches 1112 run clone 90148 -60 130 90153 -55 136 90138 159 140
+execute if score SEA_ch6_event rng5 matches 1112 run setblock 90140 163 143 gravel
+execute if score SEA_ch6_event rng5 matches 1112 run setblock 90141 163 142 gravel
+execute if score SEA_ch6_event rng5 matches 1112 run setblock 90141 163 143 gravel
+execute if score SEA_ch6_event rng5 matches 1112 run setblock 90139 155 144 minecraft:mangrove_roots
+execute if score SEA_ch6_event rng5 matches 1112 run setblock 90138 154 143 gravel
+execute if score SEA_ch6_event rng5 matches 1112 run setblock 90139 153 142 gravel
+execute if score SEA_ch6_event rng5 matches 1112 run setblock 90138 156 143 minecraft:mangrove_roots
+execute if score SEA_ch6_event rng5 matches 1112 run fill 90142 154 123 90140 154 123 minecraft:mangrove_roots
+execute if score SEA_ch6_event rng5 matches 1112 run fill 90141 155 122 90143 155 122 minecraft:mangrove_roots
+
+execute if score SEA_ch6_event rng5 matches 1112 run clone 90139 -40 121 90149 -34 129 90139 144 121
+execute if score SEA_ch6_event rng5 matches 1112 run clone 90139 -40 142 90143 -33 150 90139 139 142
+execute if score SEA_ch6_event rng5 matches 1112 run setblock 90138 134 144 gravel
+execute if score SEA_ch6_event rng5 matches 1112 run setblock 90134 134 143 fire
+execute if score SEA_ch6_event rng5 matches 1112 run setblock 90135 134 145 fire
+execute if score SEA_ch6_event rng5 matches 1112 run fill 90151 151 136 90151 152 136 gravel
+execute if score SEA_ch6_event rng5 matches 1112 positioned 90139 161 138 run kill @n[tag=SEAcrafter,distance=..5]
+#禁止右转
+execute if score SEA_ch6_event rng5 matches 1112 run fill 90156 138 136 90155 137 136 gravel
+execute if score SEA_ch6_event rng5 matches 1112 run setblock 90155 137 135 gravel
+execute if score SEA_ch6_event rng5 matches 1112 run setblock 90155 140 136 air
+execute if score SEA_ch6_event rng5 matches 1112 run setblock 90156 140 136 air
+execute if score SEA_ch6_event rng5 matches 1112 run setblock 90156 138 136 air
+execute if score SEA_ch6_event rng5 matches 1112 run fill 90157 128 113 90157 127 113 air
+execute if score SEA_ch6_event rng5 matches 1112 run setblock 90155 138 121 air
+execute if score SEA_ch6_event rng5 matches 1112 run setblock 90154 129 98 air
+#禁止去往支架
+execute if score SEA_ch6_event rng5 matches 1112 run fill 90143 103 115 90143 105 115 air
+execute if score SEA_ch6_event rng5 matches 1112 run fill 90145 103 106 90145 105 104 air
+execute if score SEA_ch6_event rng5 matches 1112 positioned 90153 128 111 run function skyblock:sea/m/skeleton_melee
+execute if score SEA_ch6_event rng5 matches 1112 positioned 90153 128 111 run function skyblock:sea/m/skeleton_melee
+execute if score SEA_ch6_event rng5 matches 1112 positioned 90153 128 111 run function skyblock:sea/m/skeleton_shield
+execute if score SEA_ch6_event rng5 matches 1112 positioned 90153 128 111 run function skyblock:sea/m/skeleton_shield
+execute if score SEA_ch6_event rng5 matches 1112 positioned 90153 128 111 run function skyblock:sea/m/skeleton_shield

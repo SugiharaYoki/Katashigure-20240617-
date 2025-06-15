@@ -33,12 +33,12 @@ execute if score @s sea_4temp1 matches 40.. run scoreboard players add @s sea_4t
 execute if score @s sea_4temp1 matches 24.. run playsound entity.arrow.shoot hostile @a ~ ~0.1 ~ 0.4 1.3
 
 
-execute if score @s sea_4temp1 matches 24.. run summon arrow ~ ~0.3 ~ {Motion:[0.0,0.1,0.0],damage:5,Tags:["sea_drone_arrow"],life:1100}
+execute if score @s sea_4temp1 matches 24.. run summon arrow ~ ~0.3 ~ {Motion:[0.0,0.1,0.0],damage:5,Tags:["SEAdrone_arrow"],life:1100}
 execute if score @s sea_4temp1 matches 24.. store result storage sea_drone:rotation M_x double 0.1 run random value -6..6
 execute if score @s sea_4temp1 matches 24.. store result storage sea_drone:rotation M_z double 0.1 run random value -6..6
-execute if score @s sea_4temp1 matches 24.. run data modify entity @n[tag=sea_drone_arrow,tag=!sea_drone_arrow_modified] Motion[0] set from storage sea_drone:rotation M_x
-execute if score @s sea_4temp1 matches 24.. run data modify entity @n[tag=sea_drone_arrow,tag=!sea_drone_arrow_modified] Motion[2] set from storage sea_drone:rotation M_z
-execute if score @s sea_4temp1 matches 24.. run tag @n[tag=sea_drone_arrow,tag=!sea_drone_arrow_modified] add sea_drone_arrow_modified
+execute if score @s sea_4temp1 matches 24.. run data modify entity @n[tag=SEAdrone_arrow,tag=!SEAdrone_arrow_modified] Motion[0] set from storage sea_drone:rotation M_x
+execute if score @s sea_4temp1 matches 24.. run data modify entity @n[tag=SEAdrone_arrow,tag=!SEAdrone_arrow_modified] Motion[2] set from storage sea_drone:rotation M_z
+execute if score @s sea_4temp1 matches 24.. run tag @n[tag=SEAdrone_arrow,tag=!SEAdrone_arrow_modified] add SEAdrone_arrow_modified
 
 execute if score @s sea_4temp1 matches 1..3 at @s run tp @s ~ ~0.21 ~
 execute if score @s sea_4temp1 matches 4..6 at @s run tp @s ~ ~0.15 ~

@@ -73,7 +73,7 @@ fill 90117 143 134 90119 143 134 minecraft:iron_trapdoor[facing=north,open=true]
 execute positioned 90119 144 149 run summon marker ~ ~ ~ {Tags:["SEAch3_spawn"]}
 execute positioned 90120 149 144 run summon marker ~ ~ ~ {Tags:["SEAch3_spawn"]}
 
-execute positioned 90113 149 147 positioned 90102 149 131 run function skyblock:sea/m/unique/special_ston
+execute unless entity @a[tag=SEAPT,tag=e_i_25] positioned 90113 149 147 positioned 90102 149 131 run function skyblock:sea/m/unique/special_ston
 execute positioned 90113 149 147 run summon marker ~ ~ ~ {Tags:["SEAch3_spawn"]}
 
 execute positioned 90107 155 147 run summon marker ~ ~ ~ {Tags:["SEAch3_spawn"]}

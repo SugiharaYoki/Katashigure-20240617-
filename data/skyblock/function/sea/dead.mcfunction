@@ -106,6 +106,7 @@ scoreboard objectives add constant dummy
 scoreboard players set 2 constant 2
 scoreboard players set 5 constant 5
 scoreboard players set 10 constant 10
+tag @s remove SEAelevatoring
 #scoreboard players operation @s sea_i_trim_zombie *= 2 constant
 #scoreboard players operation @s sea_i_trim_spider *= 2 constant
 #scoreboard players operation @s sea_i_trim_human *= 2 constant
@@ -145,7 +146,7 @@ scoreboard players set @s SEAPT_member 0
 
 clear @s
 effect clear @s
-stopsound @s
+execute unless score SEA_ch6_event rng8 matches 1.. run stopsound @s
 spawnpoint @s -43 55 0 -90
 tp @s -43 55 0
 tag @s add sea_dead
@@ -193,7 +194,7 @@ attribute @s minecraft:attack_knockback modifier remove sea_t_knockback4
 attribute @s minecraft:attack_knockback modifier remove sea_t_knockback5
 
 attribute @s minecraft:movement_speed modifier remove sea:marilyn_01
-attribute @s minecraft:jump_strength modifier remove sea:marilyn_02
+attribute @s minecraft:jump_strength modifier remove sea:marilyn_01
 
 attribute @s movement_speed modifier remove sea_running_1a
 attribute @s knockback_resistance modifier remove sea_running_1b

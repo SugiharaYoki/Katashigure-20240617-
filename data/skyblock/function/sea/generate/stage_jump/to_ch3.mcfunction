@@ -34,4 +34,14 @@ setblock 90071 137 151 minecraft:iron_trapdoor[facing=north,open=true]
 setblock 90082 128 94 air
 time set 16000t
 
+execute if entity @s[scores={SEAPT_setting_yuehan=2}] run fill 90095 131 98 90091 128 98 air
+execute if entity @s[scores={SEAPT_setting_yuehan=2}] run tag @a[tag=SEAPT] add e_i_27
+execute if entity @s[scores={SEAPT_setting_yuehan=2}] run tag @a[tag=SEAPT] add e_i_28
+execute if entity @s[scores={SEAPT_setting_yuehan=2}] run kill @n[tag=SEAeventch3_m_ston]
+execute if entity @s[scores={SEAPT_setting_yuehan=2}] run give @a[tag=SEAPT] snout_armor_trim_smithing_template[custom_name='{"text":"透光吸附 I","italic":true,"color":"light_purple","italic":false}',lore=['{"text":"光谱 I 光棱箭的转换速度加快","color":"white","italic":false}'],custom_data={sea_t_spectral_load1:true}]
+execute if entity @s[scores={SEAPT_setting_yuehan=2}] run setblock 90101 149 131 minecraft:red_candle[candles=3,lit=false]
+execute if entity @s[scores={SEAPT_setting_yuehan=2}] run setblock 90103 149 131 minecraft:red_candle[candles=3,lit=false]
+execute if entity @s[scores={SEAPT_setting_yuehan=2}] run tag @a add e_i_25
+execute if entity @s[scores={SEAPT_setting_yuehan=2}] run setblock 90102 150 130 air
+
 

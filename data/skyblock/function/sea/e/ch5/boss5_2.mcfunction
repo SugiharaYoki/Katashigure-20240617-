@@ -46,7 +46,7 @@ execute if score SEA_ch5_event_boss5 rng2 matches 87.. if score @s rng1 matches 
 
 execute positioned 90142 134 26 as @n[distance=..200,type=vindicator] at @s if entity @n[tag=SEAboss5,distance=8..] run effect give @a[distance=0..2] resistance 1 4 true
 
-execute if score @s rng1 matches 560 positioned 90125 135 23 run function skyblock:sea/e/ch5/boss5/npc_help_summon_1
+execute if score SEA_ch5_event_illager_count rng1 matches 30.. if score @s rng1 matches 560 positioned 90125 135 23 run function skyblock:sea/e/ch5/boss5/npc_help_summon_1
 #execute if score @s rng1 matches 560.. positioned 90125 135 23 unless entity @n[tag=SEAboss5] run function skyblock:sea/e/ch5/boss5/npc_help_quit
 
 scoreboard players add SEA_ch5_event_boss5 rng1 1
