@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "结局：塞壬的谣曲",
+            "color": "gold",
+            "bold": true,
+            "italic": false
+        },
+        "description": {
+            "text": "你是否听见了海妖的歌声？\n那是为了将你引领至彼岸。\n下一次，你也不会是孤身一人。\n\n因为，你终将见证一切。",
+            "color": "white"
+        },
+        "icon": {
+            "id": "minecraft:end_crystal"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "sea": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:sea/chapter6"
+}
