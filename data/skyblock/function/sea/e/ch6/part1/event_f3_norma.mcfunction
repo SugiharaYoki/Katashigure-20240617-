@@ -1,5 +1,5 @@
 scoreboard players add SEA_ch6_event rng5 1
-
+execute if score SEA_ch6_event rng5 matches 1112.. run scoreboard players add SEA_ch6_event rng6 1
 
 execute if score SEA_ch6_event rng5 matches 1002..1100 as @a[x=90144,y=160,z=119,dx=4,dy=4,dz=5,tag=SEAPT] at @s run scoreboard players set SEA_ch6_event rng5 1101
 
@@ -139,5 +139,66 @@ execute if score SEA_ch6_event rng5 matches 1200..1800 as @a[x=90138,y=133,z=143
 execute if score SEA_ch6_event rng5 matches 1200..1800 as @a[tag=SEAPT,gamemode=adventure] at @s if block ~ ~ ~ water if block ~ ~-1 ~ water run kill @s
 
 execute if score SEA_ch6_event rng5 matches 1550..1600 run scoreboard players set SEA_ch6_event rng5 1410
+
+execute if score SEA_ch6_event rng6 matches 20..800 store result score SEA_ch6_event rng7 run random value 1..110
+execute if score SEA_ch6_event rng6 matches 100..800 store result score SEA_ch6_event rng7 run random value 1..90
+execute if score SEA_ch6_event rng6 matches 150..800 store result score SEA_ch6_event rng7 run random value 1..80
+execute if score SEA_ch6_event rng6 matches 250..800 store result score SEA_ch6_event rng7 run random value 1..60
+execute if score SEA_ch6_event rng6 matches 350..800 store result score SEA_ch6_event rng7 run random value 1..40
+execute if score SEA_ch6_event rng6 matches 440..800 store result score SEA_ch6_event rng7 run random value 1..20
+execute if score SEA_ch6_event rng6 matches 20..800 if score SEA_ch6_event rng7 matches 1 run particle minecraft:explosion_emitter 90111 138 115 30 30 30 1 2
+execute if score SEA_ch6_event rng6 matches 20..800 if score SEA_ch6_event rng7 matches 1 positioned 90111 138 115 run playsound minecraft:entity.generic.explode ambient @s ~ ~ ~ 20 0.8
+execute if score SEA_ch6_event rng6 matches 20..800 if score SEA_ch6_event rng7 matches 2 positioned 90111 138 115 run playsound minecraft:entity.generic.explode ambient @s ~ ~ ~ 20 1
+execute if score SEA_ch6_event rng6 matches 20..800 if score SEA_ch6_event rng7 matches 3 positioned 90111 138 115 run playsound minecraft:entity.firework_rocket.large_blast ambient @s ~ ~ ~ 10 0.6
+
+execute if score SEA_ch6_event rng6 matches 20 as @a[tag=SEAPT] at @s run playsound minecraft:ambient.warped_forest.mood ambient @s ~ ~-50 ~ 1000 0.8
+execute if score SEA_ch6_event rng6 matches 20 run title @s times 0 3 1
+execute if score SEA_ch6_event rng6 matches 20 run title @s subtitle [{"text":"剩余 120 秒","color":"white","bold": false}]
+execute if score SEA_ch6_event rng6 matches 20 run title @s subtitle [{"text":"距离 忒尔克西钻井平台 坍塌","color":"white","bold": false}]
+execute if score SEA_ch6_event rng6 matches 24 run title @s subtitle [{"text":"剩余 119 秒","color":"white","bold": false}]
+execute if score SEA_ch6_event rng6 matches 28 run title @s times 0 1 1
+execute if score SEA_ch6_event rng6 matches 28 run title @s subtitle [{"text":"剩余 118 秒","color":"white","bold": false}]
+
+
+execute if score SEA_ch6_event rng6 matches 280 as @a[tag=SEAPT] at @s run playsound minecraft:ambient.warped_forest.mood ambient @s ~ ~-50 ~ 1000 0.8
+execute if score SEA_ch6_event rng6 matches 280 run title @s times 0 3 1
+execute if score SEA_ch6_event rng6 matches 280 run title @s subtitle [{"text":"剩余 60 秒","color":"white","bold": false}]
+execute if score SEA_ch6_event rng6 matches 280 run title @s subtitle [{"text":"距离 忒尔克西钻井平台 坍塌","color":"white","bold": false}]
+execute if score SEA_ch6_event rng6 matches 284 run title @s subtitle [{"text":"剩余 59 秒","color":"white","bold": false}]
+execute if score SEA_ch6_event rng6 matches 288 run title @s times 0 1 1
+execute if score SEA_ch6_event rng6 matches 288 run title @s subtitle [{"text":"剩余 58 秒","color":"white","bold": false}]
+
+
+execute if score SEA_ch6_event rng6 matches 360 as @a[tag=SEAPT] at @s run playsound minecraft:ambient.warped_forest.mood ambient @s ~ ~-50 ~ 1000 0.8
+execute if score SEA_ch6_event rng6 matches 360 run title @s times 0 3 1
+execute if score SEA_ch6_event rng6 matches 360 run title @s subtitle [{"text":"剩余 30 秒","color":"white","bold": false}]
+execute if score SEA_ch6_event rng6 matches 360 run title @s subtitle [{"text":"距离 忒尔克西钻井平台 坍塌","color":"white","bold": false}]
+execute if score SEA_ch6_event rng6 matches 364 run title @s subtitle [{"text":"剩余 29 秒","color":"white","bold": false}]
+execute if score SEA_ch6_event rng6 matches 368 run title @s times 0 1 1
+execute if score SEA_ch6_event rng6 matches 368 run title @s subtitle [{"text":"剩余 28 秒","color":"white","bold": false}]
+
+execute if score SEA_ch6_event rng6 matches 440 run tellraw @a[distance=0..200] [{"text":"距离忒尔克西钻井平台坍塌：","color":"red","bold": true},{"text":"\n剩余 10 秒","color":"red","bold": false}]
+execute if score SEA_ch6_event rng6 matches 444 run tellraw @a[distance=0..200] [{"text":"剩余 9 秒","color":"red","bold": false}]
+execute if score SEA_ch6_event rng6 matches 448 run tellraw @a[distance=0..200] [{"text":"剩余 8 秒","color":"red","bold": false}]
+execute if score SEA_ch6_event rng6 matches 452 run tellraw @a[distance=0..200] [{"text":"剩余 7 秒","color":"red","bold": false}]
+execute if score SEA_ch6_event rng6 matches 456 run tellraw @a[distance=0..200] [{"text":"剩余 6 秒","color":"dark_red","bold": false}]
+execute if score SEA_ch6_event rng6 matches 460 run tellraw @a[distance=0..200] [{"text":"剩余 5 秒","color":"dark_red","bold": false}]
+execute if score SEA_ch6_event rng6 matches 464 run tellraw @a[distance=0..200] [{"text":"剩余 4 秒","color":"dark_red","bold": false}]
+execute if score SEA_ch6_event rng6 matches 468 run tellraw @a[distance=0..200] [{"text":"剩余 3 秒","color":"dark_red","bold": false}]
+execute if score SEA_ch6_event rng6 matches 472 run tellraw @a[distance=0..200] [{"text":"剩余 2 秒","color":"dark_red","bold": false}]
+execute if score SEA_ch6_event rng6 matches 478 run tellraw @a[distance=0..200] [{"text":"剩余 1 秒","color":"dark_red","bold": false}]
+
+execute if score SEA_ch6_event rng6 matches 440.. as @a[tag=SEAPT] at @s run playsound minecraft:ambient.underwater.loop.additions.ultra_rare ambient @a ~ ~-20 ~ 100 0.8
+execute if score SEA_ch6_event rng6 matches 440 as @a[tag=SEAPT] at @s run playsound minecraft:entity.warden.heartbeat ambient @s ~ ~-20 ~ 10 1.3
+execute if score SEA_ch6_event rng6 matches 444 as @a[tag=SEAPT] at @s run playsound minecraft:entity.warden.heartbeat ambient @s ~ ~-20 ~ 10 1.3
+execute if score SEA_ch6_event rng6 matches 448 as @a[tag=SEAPT] at @s run playsound minecraft:entity.warden.heartbeat ambient @s ~ ~-20 ~ 10 1.3
+execute if score SEA_ch6_event rng6 matches 452 as @a[tag=SEAPT] at @s run playsound minecraft:entity.warden.heartbeat ambient @s ~ ~-20 ~ 10 1.3
+execute if score SEA_ch6_event rng6 matches 456 as @a[tag=SEAPT] at @s run playsound minecraft:entity.warden.heartbeat ambient @s ~ ~-20 ~ 10 1.3
+execute if score SEA_ch6_event rng6 matches 460 as @a[tag=SEAPT] at @s run playsound minecraft:entity.warden.heartbeat ambient @s ~ ~-20 ~ 10 1.3
+execute if score SEA_ch6_event rng6 matches 464 as @a[tag=SEAPT] at @s run playsound minecraft:entity.warden.heartbeat ambient @s ~ ~-20 ~ 10 1.3
+execute if score SEA_ch6_event rng6 matches 468 as @a[tag=SEAPT] at @s run playsound minecraft:entity.warden.heartbeat ambient @s ~ ~-20 ~ 10 1.3
+execute if score SEA_ch6_event rng6 matches 472 as @a[tag=SEAPT] at @s run playsound minecraft:entity.warden.heartbeat ambient @s ~ ~-20 ~ 10 1.3
+execute if score SEA_ch6_event rng6 matches 478 as @a[tag=SEAPT] at @s run playsound minecraft:entity.warden.heartbeat ambient @s ~ ~-20 ~ 10 1.3
+
 
 
