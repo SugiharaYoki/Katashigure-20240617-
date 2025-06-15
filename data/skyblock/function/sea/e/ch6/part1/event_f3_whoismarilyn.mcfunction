@@ -149,7 +149,7 @@ execute if score SEA_ch6_event rng5 matches 422 run tp @n[tag=SEAnorma] 90144 16
 execute if score SEA_ch6_event rng5 matches 422 run data modify entity @n[tag=SEAnorma] Motion set value [0.0,1.1,-2.2]
 
 execute if score SEA_ch6_event rng5 matches 419 as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
-execute if score SEA_ch6_event rng5 matches 419 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"red","bold": true},{"text":"\n“我想杀你很久了，你这孽畜真能活！！”","color":"white","bold": false}]
+execute if score SEA_ch6_event rng5 matches 419 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“我想杀你很久了，你这孽畜真能活！！”","color":"white","bold": false}]
 
 execute if score SEA_ch6_event rng5 matches 419 run setblock 90152 161 114 barrier
 
@@ -166,7 +166,7 @@ execute if score SEA_ch6_event rng5 matches 426 positioned 90142 160 125 run fun
 
 execute if score SEA_ch6_event rng5 matches 432 positioned 90152 161 114 run rotate @n[tag=SEAedwina] facing entity @p[tag=SEAPT]
 execute if score SEA_ch6_event rng5 matches 432 as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
-execute if score SEA_ch6_event rng5 matches 432 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"red","bold": true},{"text":"\n“快逃，她也是感染者，我的攻击只会加速她的尸变！！她能撑到现在，尸变后的危险度不容小觑！！”","color":"white","bold": false}]
+execute if score SEA_ch6_event rng5 matches 432 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“快逃，她也是感染者，我的攻击只会加速她的尸变！！她能撑到现在，尸变后的危险度不容小觑！！”","color":"white","bold": false}]
 
 execute if score SEA_ch6_event rng5 matches 440 positioned 90152 161 114 as @n[tag=SEAnorma] at @s run damage @s 3 generic
 execute if score SEA_ch6_event rng5 matches 437 positioned 90152 161 114 as @n[tag=SEAedwina] at @s run item replace entity @s weapon.mainhand with iron_axe
