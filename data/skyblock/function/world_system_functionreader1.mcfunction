@@ -44,8 +44,8 @@ execute as @s[scores={MultiMenu=88}] at @s run function skyblock:multimenu088_se
 execute as @s[scores={MultiMenu=90}] at @s run function skyblock:multimenu090_cct_to_fsb
 execute as @s[scores={MultiMenu=91}] at @s run function skyblock:verbal_hotel_frontdesk
 execute as @s[scores={MultiMenu=93}] at @s run function skyblock:multimenu093_cct_to_fsb_ask
-execute as @s[scores={MultiMenu=810}] if score isStarted Azr_system matches 1 at @s run function skyblock:azr/midway_join
-execute as @s[scores={MultiMenu=810}] unless score isStarted Azr_system matches 1 at @s run function skyblock:multimenu810_teleport_m02
+execute as @s[scores={MultiMenu=810}] if entity @a[tag=azrPlayer] run function skyblock:azr/midway_join
+execute as @s[scores={MultiMenu=810}] unless entity @a[tag=azrPlayer] run function skyblock:multimenu810_teleport_m02
 execute as @s[scores={MultiMenu=815}] at @s run function skyblock:multimenu815_teleport_maze_p1
 execute as @s[scores={MultiMenu=816001..816004}] at @s run function skyblock:multimenu816_teleport_pivottower
 execute as @s[scores={MultiMenu=817}] at @s run function skyblock:multimenu817_teleport_valkyrie_head
