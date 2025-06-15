@@ -1,5 +1,8 @@
 scoreboard players add SEA_ch6_event rng8 1
 
+execute if score SEA_ch6_event rng8 matches 2.. run effect give @a[tag=SEAPT] resistance 100 19 true
+execute if score SEA_ch6_event rng8 matches 2.. run effect give @a[tag=SEAPT] regeneration 100 29 true
+execute if score SEA_ch6_event rng8 matches 2.. run effect give @a[tag=SEAPT] saturation 100 29 true
 execute if score SEA_ch6_event rng8 matches 2 run kill @e[tag=SEAmob]
 execute if score SEA_ch6_event rng8 matches 2 run kill @e[tag=sea_crafter]
 execute if score SEA_ch6_event rng8 matches 2 run kill @n[tag=SEAedwina]
