@@ -1,6 +1,7 @@
 scoreboard players add SEA_ch6_event rng8 1
 
 execute if score SEA_ch6_event rng8 matches 2 run kill @e[tag=SEAmob]
+execute if score SEA_ch6_event rng8 matches 2 run kill @e[tag=sea_crafter]
 execute if score SEA_ch6_event rng8 matches 2 run kill @n[tag=SEAedwina]
 execute if score SEA_ch6_event rng8 matches 2 run stopsound @a[tag=SEAPT]
 execute if score SEA_ch6_event rng8 matches 2 run clear @a[tag=SEAPT]
