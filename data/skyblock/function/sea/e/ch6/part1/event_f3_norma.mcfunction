@@ -197,6 +197,9 @@ execute if score SEA_ch6_event rng6 matches 464 as @p[tag=SEAPT] as @a[distance=
 execute if score SEA_ch6_event rng6 matches 468 as @p[tag=SEAPT] as @a[distance=..250] run tellraw @a[distance=0..200] [{"text":"剩余 3 秒","color":"dark_red","bold": false}]
 execute if score SEA_ch6_event rng6 matches 472 as @p[tag=SEAPT] as @a[distance=..250] run tellraw @a[distance=0..200] [{"text":"剩余 2 秒","color":"dark_red","bold": false}]
 execute if score SEA_ch6_event rng6 matches 478 as @p[tag=SEAPT] as @a[distance=..250] run tellraw @a[distance=0..200] [{"text":"剩余 1 秒","color":"dark_red","bold": false}]
+execute if score SEA_ch6_event rng6 matches 481 as @a[tag=SEAPT] at @s run particle minecraft:explosion_emitter 90154 129 104 2 2 2 1 5
+execute if score SEA_ch6_event rng6 matches 481 as @a[tag=SEAPT] at @s run particle minecraft:flame 90154 129 104 2 2 2 1 180
+execute if score SEA_ch6_event rng6 matches 481 as @a[tag=SEAPT] at @s positioned @s run playsound minecraft:entity.generic.explode ambient @a ~ ~1 ~ 10 0.8
 
 execute if score SEA_ch6_event rng6 matches 440.. as @p[tag=SEAPT] as @a[distance=..250] at @s run playsound minecraft:ambient.underwater.loop.additions.ultra_rare ambient @a ~ ~-20 ~ 100 0.8
 execute if score SEA_ch6_event rng6 matches 440 as @p[tag=SEAPT] as @a[distance=..250] at @s run playsound minecraft:entity.warden.heartbeat ambient @s ~ ~-20 ~ 10 1.3
