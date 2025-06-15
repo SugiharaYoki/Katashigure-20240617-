@@ -10,6 +10,6 @@ execute if score SEA_ch6_event rng8 matches 2 run time set noon
 execute if score SEA_ch6_event rng8 matches 2 run weather rain
 execute if score SEA_ch6_event rng8 matches 40 as @r[tag=SEAPT] at @s as @a[distance=0..200] run playsound minecraft:vol5.afterwordshort music @s ~ ~ ~ 1 1.0
 execute if score SEA_ch6_event rng8 matches 180 run effect give @a[tag=SEAPT] darkness 240 0 true
-execute if score SEA_ch6_event rng8 matches 220 run clear @a[tag=SEAPT]
-execute if score SEA_ch6_event rng8 matches 220 as @a[tag=SEAPT] run tellraw @s [{"text":"达成结局：","color":"gold","bold": true},{"text":"\nBad End「塞壬的谣曲」","color":"gold","bold": false}]
-execute if score SEA_ch6_event rng8 matches 220 as @a[tag=SEAPT] run function skyblock:sea/dead
+execute if score SEA_ch6_event rng8 matches 215 run clear @a[tag=SEAPT]
+execute if score SEA_ch6_event rng8 matches 215 as @a[tag=SEAPT] run tellraw @s [{"text":"达成结局：","color":"gold","bold": true},{"text":"\nBad End「塞壬的谣曲」","color":"white","bold": false}]
+execute if score SEA_ch6_event rng8 matches 215 as @a[tag=SEAPT] run function skyblock:sea/dead
