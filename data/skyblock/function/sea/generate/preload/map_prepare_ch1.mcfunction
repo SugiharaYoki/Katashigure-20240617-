@@ -10,6 +10,7 @@ execute positioned 90056 95 -177 positioned ~ ~ ~ run clone ~ ~ ~ ~8 ~18 ~31 ~ ~
 execute positioned 90056 95 -177 run fill ~ ~ ~ ~8 ~18 ~31 air
 execute positioned 90056 95 -177 run fill ~ ~ ~ ~8 ~3 ~31 water
 
+scoreboard players set SEA_ch6_event rng8 0
 
 weather thunder 1000000s
 time set 12000t
