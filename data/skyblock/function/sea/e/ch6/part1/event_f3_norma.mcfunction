@@ -187,16 +187,16 @@ execute if score SEA_ch6_event rng6 matches 364 as @p[tag=SEAPT] as @a[distance=
 execute if score SEA_ch6_event rng6 matches 368 as @p[tag=SEAPT] as @a[distance=..250] run title @s times 0 10 10
 execute if score SEA_ch6_event rng6 matches 368 as @p[tag=SEAPT] as @a[distance=..250] run title @s title [{"text":"剩余 28 秒","color":"white","bold": true}]
 
-execute if score SEA_ch6_event rng6 matches 440 as @p[tag=SEAPT] as @a[distance=..250] run tellraw @a[distance=0..200] [{"text":"距离忒尔克西钻井平台坍塌：","color":"red","bold": true},{"text":"\n剩余 10 秒","color":"red","bold": false}]
-execute if score SEA_ch6_event rng6 matches 444 as @p[tag=SEAPT] as @a[distance=..250] run tellraw @a[distance=0..200] [{"text":"剩余 9 秒","color":"red","bold": false}]
-execute if score SEA_ch6_event rng6 matches 448 as @p[tag=SEAPT] as @a[distance=..250] run tellraw @a[distance=0..200] [{"text":"剩余 8 秒","color":"red","bold": false}]
-execute if score SEA_ch6_event rng6 matches 452 as @p[tag=SEAPT] as @a[distance=..250] run tellraw @a[distance=0..200] [{"text":"剩余 7 秒","color":"red","bold": false}]
-execute if score SEA_ch6_event rng6 matches 456 as @p[tag=SEAPT] as @a[distance=..250] run tellraw @a[distance=0..200] [{"text":"剩余 6 秒","color":"dark_red","bold": false}]
-execute if score SEA_ch6_event rng6 matches 460 as @p[tag=SEAPT] as @a[distance=..250] run tellraw @a[distance=0..200] [{"text":"剩余 5 秒","color":"dark_red","bold": false}]
-execute if score SEA_ch6_event rng6 matches 464 as @p[tag=SEAPT] as @a[distance=..250] run tellraw @a[distance=0..200] [{"text":"剩余 4 秒","color":"dark_red","bold": false}]
-execute if score SEA_ch6_event rng6 matches 468 as @p[tag=SEAPT] as @a[distance=..250] run tellraw @a[distance=0..200] [{"text":"剩余 3 秒","color":"dark_red","bold": false}]
-execute if score SEA_ch6_event rng6 matches 472 as @p[tag=SEAPT] as @a[distance=..250] run tellraw @a[distance=0..200] [{"text":"剩余 2 秒","color":"dark_red","bold": false}]
-execute if score SEA_ch6_event rng6 matches 478 as @p[tag=SEAPT] as @a[distance=..250] run tellraw @a[distance=0..200] [{"text":"剩余 1 秒","color":"dark_red","bold": false}]
+execute if score SEA_ch6_event rng6 matches 440 as @p[tag=SEAPT] as @a[distance=..250] run tellraw @s[distance=0..200] [{"text":"距离忒尔克西钻井平台坍塌：","color":"red","bold": true},{"text":"\n剩余 10 秒","color":"red","bold": false}]
+execute if score SEA_ch6_event rng6 matches 444 as @p[tag=SEAPT] as @a[distance=..250] run tellraw @s[distance=0..200] [{"text":"剩余 9 秒","color":"red","bold": false}]
+execute if score SEA_ch6_event rng6 matches 448 as @p[tag=SEAPT] as @a[distance=..250] run tellraw @s[distance=0..200] [{"text":"剩余 8 秒","color":"red","bold": false}]
+execute if score SEA_ch6_event rng6 matches 452 as @p[tag=SEAPT] as @a[distance=..250] run tellraw @s[distance=0..200] [{"text":"剩余 7 秒","color":"red","bold": false}]
+execute if score SEA_ch6_event rng6 matches 456 as @p[tag=SEAPT] as @a[distance=..250] run tellraw @s[distance=0..200] [{"text":"剩余 6 秒","color":"dark_red","bold": false}]
+execute if score SEA_ch6_event rng6 matches 460 as @p[tag=SEAPT] as @a[distance=..250] run tellraw @s[distance=0..200] [{"text":"剩余 5 秒","color":"dark_red","bold": false}]
+execute if score SEA_ch6_event rng6 matches 464 as @p[tag=SEAPT] as @a[distance=..250] run tellraw @s[distance=0..200] [{"text":"剩余 4 秒","color":"dark_red","bold": false}]
+execute if score SEA_ch6_event rng6 matches 468 as @p[tag=SEAPT] as @a[distance=..250] run tellraw @s[distance=0..200] [{"text":"剩余 3 秒","color":"dark_red","bold": false}]
+execute if score SEA_ch6_event rng6 matches 472 as @p[tag=SEAPT] as @a[distance=..250] run tellraw @s[distance=0..200] [{"text":"剩余 2 秒","color":"dark_red","bold": false}]
+execute if score SEA_ch6_event rng6 matches 478 as @p[tag=SEAPT] as @a[distance=..250] run tellraw @s[distance=0..200] [{"text":"剩余 1 秒","color":"dark_red","bold": false}]
 execute if score SEA_ch6_event rng6 matches 481 as @a[tag=SEAPT] at @s run particle minecraft:explosion_emitter 90154 129 104 2 2 2 1 5
 execute if score SEA_ch6_event rng6 matches 481 as @a[tag=SEAPT] at @s run particle minecraft:flame 90154 129 104 2 2 2 1 180
 execute if score SEA_ch6_event rng6 matches 481 as @a[tag=SEAPT] at @s positioned ~ ~1 ~ run playsound minecraft:entity.generic.explode ambient @a ~ ~1 ~ 10 0.8
