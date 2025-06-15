@@ -218,7 +218,7 @@ execute if score SEA_ch6_event rng6 matches 390 as @n[tag=SEAedwina] at @s run t
 execute if score SEA_ch6_event rng6 matches 410 as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
 execute if score SEA_ch6_event rng6 matches 410 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“再见了……我的战友。我早就知道你拥有倒转时空的能力。”","color":"white","bold": false}]
 execute if score SEA_ch6_event rng6 matches 440 as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
-execute if score SEA_ch6_event rng6 matches 440 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“下次见面的时候……我会再次尽一切所能与你并肩作战。”","color":"white","bold": false}]
+execute if score SEA_ch6_event rng6 matches 440 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“下次见面的时候……我会再次尽我所能与你并肩作战。”","color":"white","bold": false}]
 execute if score SEA_ch6_event rng6 matches 470 as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
 execute if score SEA_ch6_event rng6 matches 470 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“……愿我们来世再遇。”","color":"white","bold": false}]
 
