@@ -127,9 +127,9 @@ execute if score SEA_ch6_event rng5 matches 1501 run setblock 90153 138 126 air 
 execute if score SEA_ch6_event rng5 matches 1501 run particle explosion 90153 138 126 1 1 1 0.0 5
 execute if score SEA_ch6_event rng5 matches 1501 run particle smoke 90153 138 126 1 1 1 0.05 15
 execute if score SEA_ch6_event rng5 matches 1501 run playsound entity.generic.explode block @a 90153 138 126 1 0.9
-execute if score SEA_ch6_event rng5 matches 1501 run positioned 90153.0 137 127 run function skyblock:sea/m/unique/npc_marilyn_mob
-execute if score SEA_ch6_event rng5 matches 1501 run positioned 90153.0 37 127 run function skyblock:sea/m/unique/warden_norma
-execute if score SEA_ch6_event rng5 matches 1502 run positioned 90153.0 37 127 run effect give @n[tag=SEAnorma_warden,type=warden] invisibility infinite 0 true
+execute if score SEA_ch6_event rng5 matches 1501 positioned 90153.0 137 127 run function skyblock:sea/m/unique/npc_marilyn_mob
+execute if score SEA_ch6_event rng5 matches 1501 positioned 90153.0 37 127 run function skyblock:sea/m/unique/warden_norma
+execute if score SEA_ch6_event rng5 matches 1502 positioned 90153.0 37 127 run effect give @n[tag=SEAnorma_warden,type=warden] invisibility infinite 0 true
 execute if score SEA_ch6_event rng5 matches 1501 as @r[tag=SEAPT] as @a[distance=..200] at @s run playsound garden2.bgm.drowning2 music @s ~ ~ ~ 0.7 1.0
 execute if score SEA_ch6_event rng5 matches 1502 run data modify entity @n[tag=SEAnorma] Motion set value [1.0,0.1,0.1]
 execute if score SEA_ch6_event rng5 matches 1501.. run scoreboard players add SEA_ch6_event rng9 1
