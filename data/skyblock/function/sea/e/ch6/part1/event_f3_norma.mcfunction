@@ -107,7 +107,7 @@ execute if score SEA_ch6_event rng5 matches 1302 positioned 90151 137 137.4 run 
 
 
 execute if score SEA_ch6_event rng5 matches 1310..1400 run scoreboard players set SEA_ch6_event rng5 1310
-execute if score SEA_ch6_event rng5 matches 1310..1400 as @a[x=90144,y=136,z=134,dx=8,dy=4,dz=5,tag=SEAPT] at @s run scoreboard players set SEA_ch6_event rng5 1401
+execute if score SEA_ch6_event rng5 matches 1303..1400 as @a[x=90144,y=136,z=134,dx=8,dy=4,dz=5,tag=SEAPT] at @s run scoreboard players set SEA_ch6_event rng5 1401
 
 execute if score SEA_ch6_event rng5 matches 1403 run particle minecraft:explosion_emitter 90150 140 135 1 1 1 1 1
 execute if score SEA_ch6_event rng5 matches 1403 run playsound minecraft:entity.generic.explode ambient @a 90150 140 135 2 0.8
@@ -123,7 +123,7 @@ execute if score SEA_ch6_event rng5 matches 1309 run tellraw @a[distance=0..200]
 execute if score SEA_ch6_event rng5 matches 1409 run tellraw @a[distance=0..200] [{"text":"全平台广播：","color":"green","bold": true},{"text":"\n“警告，通讯平台濒临崩塌，请所有的幸存者前往……”","color":"white","bold": false}]
 
 execute if score SEA_ch6_event rng5 matches 1410..1500 run scoreboard players set SEA_ch6_event rng5 1410
-execute if score SEA_ch6_event rng5 matches 1410..1500 as @a[x=90152,y=127,z=111,dx=20,dy=20,dz=20,tag=SEAPT] at @s run scoreboard players set SEA_ch6_event rng5 1501
+execute if score SEA_ch6_event rng5 matches 1403..1500 as @a[x=90152,y=127,z=111,dx=20,dy=20,dz=20,tag=SEAPT] at @s run scoreboard players set SEA_ch6_event rng5 1501
 execute if score SEA_ch6_event rng5 matches 1501 run fill 90153 138 127 90153 137 127 minecraft:air destroy
 execute if score SEA_ch6_event rng5 matches 1501 run setblock 90153 138 126 air destroy
 execute if score SEA_ch6_event rng5 matches 1501 run particle explosion 90153 138 126 1 1 1 0.0 5
@@ -157,6 +157,7 @@ execute if score SEA_ch6_event rng9 matches 42.. as @n[tag=SEAnorma,scores={rng8
 execute if score SEA_ch6_event rng9 matches 42.. as @n[tag=SEAnorma,scores={rng8=9..12}] at @s run data modify entity @n[tag=SEAnorma] NoAI set value 1b
 execute if score SEA_ch6_event rng9 matches 42.. as @n[tag=SEAnorma,scores={rng8=8}] at @s run data modify entity @n[tag=SEAnorma] NoAI set value 0b
 
+execute if score SEA_ch6_event rng5 matches 1513 positioned 90152 -50 101 as @p[tag=SEAPT] run tp @n[tag=SEAedwina] @s
 execute if score SEA_ch6_event rng5 matches 1513 run clone 90152 -50 101 90155 -44 108 90152 123 101 
 execute if score SEA_ch6_event rng5 matches 1513 run particle minecraft:explosion_emitter 90154 129 104 1 1 1 1 1
 execute if score SEA_ch6_event rng5 matches 1513 run playsound minecraft:entity.generic.explode ambient @a 90154 129 104 2 0.8
