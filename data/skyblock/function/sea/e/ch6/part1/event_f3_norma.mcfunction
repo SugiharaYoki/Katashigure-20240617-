@@ -140,7 +140,21 @@ execute if score SEA_ch6_event rng5 matches 1200..1800 as @a[x=90138,y=133,z=143
 execute if score SEA_ch6_event rng5 matches 1200..1800 as @a[x=90138,y=133,z=143,dx=30,dy=4,dz=30,tag=SEAPT,tag=!e_i_54] at @s run tag @s add e_i_54
 execute if score SEA_ch6_event rng5 matches 1200..1800 as @a[tag=SEAPT,gamemode=adventure] at @s if block ~ ~ ~ water if block ~ ~-1 ~ water run kill @s
 
-execute if score SEA_ch6_event rng5 matches 1550..1600 run scoreboard players set SEA_ch6_event rng5 1410
+execute if score SEA_ch6_event rng5 matches 1550..1600 run scoreboard players set SEA_ch6_event rng5 1560
+
+execute if score SEA_ch6_event rng5 matches 1550..1600 as @a[x=90147,y=102,z=99,dx=20,dy=4,dz=20,tag=SEAPT] at @s run scoreboard players set SEA_ch6_event rng5 1603
+execute if score SEA_ch6_event rng5 matches 1603 run clone 90149 -20 102 90155 -13 112 90149 102 102 
+execute if score SEA_ch6_event rng5 matches 1603 run particle minecraft:explosion_emitter 90152 102 107 2 1 2 1 2
+execute if score SEA_ch6_event rng5 matches 1605 run particle minecraft:explosion_emitter 90152 102 107 2 1 2 1 1
+execute if score SEA_ch6_event rng5 matches 1603 run playsound minecraft:entity.generic.explode ambient @s 90152 102 107 2 0.8
+execute if score SEA_ch6_event rng5 matches 1605 run playsound minecraft:entity.generic.explode ambient @s 90152 102 109 2 0.8
+
+
+
+execute if score SEA_ch6_event rng5 matches 1610..1700 run scoreboard players set SEA_ch6_event rng5 1610
+
+
+
 
 execute if score SEA_ch6_event rng6 matches 20..800 store result score SEA_ch6_event rng7 run random value 1..110
 execute if score SEA_ch6_event rng6 matches 100..800 store result score SEA_ch6_event rng7 run random value 1..90
