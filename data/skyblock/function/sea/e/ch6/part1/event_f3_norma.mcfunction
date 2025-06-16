@@ -68,6 +68,7 @@ execute if score SEA_ch6_event rng5 matches 1112 positioned 90153 128 111 run fu
 execute if score SEA_ch6_event rng5 matches 1112 positioned 90153 128 111 run function skyblock:sea/m/skeleton_shield
 execute if score SEA_ch6_event rng5 matches 1112 positioned 90153 128 111 run function skyblock:sea/m/skeleton_shield
 execute if score SEA_ch6_event rng5 matches 1112 positioned 90153 128 111 run function skyblock:sea/m/skeleton_shield
+execute if score SEA_ch6_event rng5 matches 1112 run setblock 90143 103 116 gravel
 #二楼蹲守的怪物们
 execute if score SEA_ch6_event rng5 matches 1112 positioned 90149 153 127 run function skyblock:sea/m/silverfish
 execute if score SEA_ch6_event rng5 matches 1112 positioned 90149 153 127 run function skyblock:sea/m/silverfish
