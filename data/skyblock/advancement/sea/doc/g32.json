@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "结局：无谋的崇高",
+            "color": "gold",
+            "bold": true,
+            "italic": false
+        },
+        "description": {
+            "text": "单纯的勇气不会换来任何美好的事物。\n只有最后生还者会成为英雄。\n\n临终之时的他们，或许也领悟了这条道理……\n但你，是唯一有权利反悔之人。",
+            "color": "white"
+        },
+        "icon": {
+            "id": "minecraft:end_crystal"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "sea": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:sea/chapter3"
+}
