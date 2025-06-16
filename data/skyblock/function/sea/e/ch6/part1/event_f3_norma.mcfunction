@@ -97,6 +97,7 @@ execute if score SEA_ch6_event rng5 matches 1200..1300 as @a[x=90138,y=133,z=143
 
 execute if score SEA_ch6_event rng5 matches 1302 as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
 execute if score SEA_ch6_event rng5 matches 1302 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“物资层东面那座电梯应该还能用，我祈祷还能用。去那里！”","color":"white","bold": false}]
+execute if score SEA_ch6_event rng5 matches 1302 positioned 90149 137 136 run kill @n[tag=SEAnorma]
 execute if score SEA_ch6_event rng5 matches 1302 positioned 90149 137 136 run function skyblock:sea/m/zombie_cook
 execute if score SEA_ch6_event rng5 matches 1302 positioned 90150 137 137 run function skyblock:sea/m/zombie_security
 execute if score SEA_ch6_event rng5 matches 1302 positioned 90151 137 137.0 run function skyblock:sea/m/drowned_small
@@ -120,10 +121,19 @@ execute if score SEA_ch6_event rng5 matches 1309 run tellraw @a[distance=0..200]
 execute if score SEA_ch6_event rng5 matches 1409 run tellraw @a[distance=0..200] [{"text":"全平台广播：","color":"green","bold": true},{"text":"\n“警告，通讯平台濒临崩塌，请所有的幸存者前往……”","color":"white","bold": false}]
 
 execute if score SEA_ch6_event rng5 matches 1410..1500 run scoreboard players set SEA_ch6_event rng5 1410
-execute if score SEA_ch6_event rng5 matches 1410..1500 as @a[x=90152,y=127,z=111,dx=10,dy=10,dz=10,tag=SEAPT] at @s run scoreboard players set SEA_ch6_event rng5 1501
-execute if score SEA_ch6_event rng5 matches 1503 run clone 90152 -50 101 90155 -44 108 90152 123 101 
-execute if score SEA_ch6_event rng5 matches 1503 run particle minecraft:explosion_emitter 90154 129 104 1 1 1 1 1
-execute if score SEA_ch6_event rng5 matches 1503 run playsound minecraft:entity.generic.explode ambient @s 90154 129 104 2 0.8
+execute if score SEA_ch6_event rng5 matches 1410..1500 as @a[x=90152,y=127,z=111,dx=20,dy=20,dz=20,tag=SEAPT] at @s run scoreboard players set SEA_ch6_event rng5 1501
+execute if score SEA_ch6_event rng5 matches 1501 run fill 90153 138 127 90153 137 127 minecraft:air destroy
+execute if score SEA_ch6_event rng5 matches 1501 run setblock 90153 138 126 air destroy
+execute if score SEA_ch6_event rng5 matches 1501 run particle explosion 90153 138 126 1 1 1 0.0 5
+execute if score SEA_ch6_event rng5 matches 1501 run particle smoke 90153 138 126 1 1 1 0.05 15
+execute if score SEA_ch6_event rng5 matches 1501 run playsound entity.generic.explode block @a 90153 138 126 1 0.9
+execute if score SEA_ch6_event rng5 matches 1501 run positioned 90153.0 137 127 run function skyblock:sea/m/unique/npc_marilyn_mob
+execute if score SEA_ch6_event rng5 matches 1501 as @r[tag=SEAPT] as @a[distance=..200] at @s run playsound garden2.bgm.drowning2 music @s ~ ~ ~ 0.7 1.0
+execute if score SEA_ch6_event rng5 matches 1502 run data modify entity @n[tag=SEAnorma] Motion set value [1.0,0.1,0.1]
+
+execute if score SEA_ch6_event rng5 matches 1513 run clone 90152 -50 101 90155 -44 108 90152 123 101 
+execute if score SEA_ch6_event rng5 matches 1513 run particle minecraft:explosion_emitter 90154 129 104 1 1 1 1 1
+execute if score SEA_ch6_event rng5 matches 1513 run playsound minecraft:entity.generic.explode ambient @s 90154 129 104 2 0.8
 
 execute if score SEA_ch6_event rng5 matches 1507 positioned 90150 140 61 run particle minecraft:explosion_emitter 90154 129 104 8 8 8 1 5
 execute if score SEA_ch6_event rng5 matches 1507 positioned 90150 140 61 run playsound minecraft:entity.generic.explode ambient @s ~ ~ ~ 10 0.8
