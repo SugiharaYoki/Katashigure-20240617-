@@ -32,3 +32,8 @@ execute as @s[tag=SEAelevatoring_pre] at @s run tp @s ~ 84.0 ~
 execute as @s[tag=SEAelevatoring_pre] at @s run tag @s add SEAelevatoring
 tag @s remove SEAelevatoring_pre
 
+
+execute as @s[x=90153,dx=1,z=106,dz=1,y=71,dy=1,tag=!SEAelevatoring] at @s run tag @s add SEAelevatoring_pre
+execute as @s[tag=SEAelevatoring_pre] at @s run function skyblock:sea/e/ch6/part1/entering_facility
+execute as @s[tag=SEAelevatoring_pre] at @s run tag @s add SEAelevatoring
+tag @s remove SEAelevatoring_pre

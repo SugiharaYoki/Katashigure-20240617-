@@ -1,6 +1,6 @@
 scoreboard players add SEA_ch6_event rng5 1
 execute if score SEA_ch6_event rng5 matches 1180 run scoreboard players set SEA_ch6_event rng6 -230
-execute if score SEA_ch6_event rng5 matches 1198.. run scoreboard players add SEA_ch6_event rng6 1
+execute if score SEA_ch6_event rng5 matches 1198..1900 run scoreboard players add SEA_ch6_event rng6 1
 
 execute if score SEA_ch6_event rng5 matches 1102 run scoreboard players set @a[tag=SEAPT,scores={sea_progress=..15}] sea_progress 16
 
