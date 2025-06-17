@@ -95,7 +95,7 @@ execute if score SEA_ch6_event rng5 matches 1112 run tag @n[tag=SEAedwina] add S
 #90138 133 143
 
 execute if score SEA_ch6_event rng5 matches 1200..1300 run scoreboard players set SEA_ch6_event rng5 1200
-execute if score SEA_ch6_event rng5 matches 1200..1300 as @a[x=90138,y=133,z=143,dx=8,dy=4,dz=5,tag=SEAPT] at @s run scoreboard players set SEA_ch6_event rng5 1301
+execute if score SEA_ch6_event rng5 matches 1200..1300 as @a[x=90138,y=133,z=143,dx=20,dy=4,dz=20,tag=SEAPT] at @s run scoreboard players set SEA_ch6_event rng5 1301
 
 execute if score SEA_ch6_event rng5 matches 1302 as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
 execute if score SEA_ch6_event rng5 matches 1302 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“物资层东面那座电梯应该还能用，我祈祷还能用。去那里！”","color":"white","bold": false}]
@@ -107,7 +107,7 @@ execute if score SEA_ch6_event rng5 matches 1302 positioned 90151 137 137.4 run 
 
 
 execute if score SEA_ch6_event rng5 matches 1310..1400 run scoreboard players set SEA_ch6_event rng5 1310
-execute if score SEA_ch6_event rng5 matches 1303..1400 as @a[x=90144,y=136,z=134,dx=8,dy=4,dz=5,tag=SEAPT] at @s run scoreboard players set SEA_ch6_event rng5 1401
+execute if score SEA_ch6_event rng5 matches 1303..1400 as @a[x=90144,y=136,z=134,dx=80,dy=4,dz=50,tag=SEAPT] at @s run scoreboard players set SEA_ch6_event rng5 1401
 
 execute if score SEA_ch6_event rng5 matches 1403 run particle minecraft:explosion_emitter 90150 140 135 1 1 1 1 1
 execute if score SEA_ch6_event rng5 matches 1403 run playsound minecraft:entity.generic.explode ambient @a 90150 140 135 2 0.8
