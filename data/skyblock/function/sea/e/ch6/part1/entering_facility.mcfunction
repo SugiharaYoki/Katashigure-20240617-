@@ -1,8 +1,8 @@
 
 
 
-execute as @a[tag=SEAPT] at @s run tp @s 90147.99 171.00 -1878.01
 execute as @n[tag=SEAedwina] at @s run tp @s 90147.99 171.00 -1878.01
+execute as @a[tag=SEAPT] at @s run tp @s 90147.99 171.00 -1878.01
 
 
 
@@ -13,6 +13,8 @@ execute if score SEA_ch6_event rng6 matches 390.. as @n[tag=SEAedwina] at @s run
 execute if score SEA_ch6_event rng6 matches 390.. as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“哦上帝，居然赶上了……我就知道和你一起就能做到。”","color":"white","bold": false}]
 
 
+execute unless entity @n[tag=SEAedwina_ch6] positioned 90147.99 171.00 -1878.01 run function skyblock:sea/m/unique/npc_edwina
+execute unless entity @n[tag=SEAedwina_ch6] positioned 90147.99 171.00 -1878.01 run function skyblock:sea/e/ch6/edwina/init
 
 
 
