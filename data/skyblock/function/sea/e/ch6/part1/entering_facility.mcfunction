@@ -19,7 +19,3 @@ execute if score SEA_ch6_event rng6 matches 390.. as @n[tag=SEAedwina] at @s run
 
 
 
-
-
-
-
