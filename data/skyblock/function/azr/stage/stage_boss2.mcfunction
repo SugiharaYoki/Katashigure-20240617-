@@ -66,7 +66,7 @@ execute as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run function skyblo
     execute if score tickTimer Azr_system matches 3120 run tellraw @a[tag=azrPlayer] {"text":"权之残影：","color":"red"}
     execute if score tickTimer Azr_system matches 3120 if score playerCount Azr_system matches 1..5 run tellraw @a[tag=azrPlayer] {"text":"“真正的战斗……由此刻开始。”","color":"white"}
     execute if score tickTimer Azr_system matches 3120 if score playerCount Azr_system matches 6.. run tellraw @a[tag=azrPlayer] {"text":"“做好十二分准备吧！于吾的神力之下，你们必将全数葬身此地！”","color":"white"}
-    
+   
 
 #health check
     execute if score tickTimer Azr_system matches 81 run bossbar add azr:boss_hp_bar "沙利叶神使 权之残影"
@@ -99,7 +99,7 @@ execute as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run function skyblo
     execute if score tickTimer Azr_system matches 172 run scoreboard players set tickTimer Azr_system 1000
     function skyblock:azr/tool_rng
     # Wave I 循环直到第一阶段死亡
-    
+   
     execute if score tickTimer Azr_system matches 1021 if score #rng3 Azr_system matches 1 if score zanei_flat_01_marker rng1 matches 22.. run scoreboard players set zanei_flat_01_marker rng1 0
     execute if score tickTimer Azr_system matches 1035..1510 if score #rng7 Azr_system matches 2 if score #rng2 Azr_system matches 1 as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s if entity @a[tag=azrPlayer,distance=0..4.5] run function skyblock:azr/stage/boss1/move1
     execute if score tickTimer Azr_system matches 1035..1510 if score #rng7 Azr_system matches 2 if score #rng2 Azr_system matches 2 as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s if entity @a[tag=azrPlayer,distance=0..4.5] run function skyblock:azr/stage/boss1/move2

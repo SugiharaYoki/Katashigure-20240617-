@@ -1,1 +1,1 @@
-give @s stone_sword[custom_name='{"text":"石剑","italic":false}',custom_data={stone_sword_normal:1b},custom_model_data={float:100001.0}]
+give @s stone_sword[custom_name='{"text":"石剑","italic":false}',custom_data={stone_sword_normal:1b},custom_model_data={floats:[100001.0]}]

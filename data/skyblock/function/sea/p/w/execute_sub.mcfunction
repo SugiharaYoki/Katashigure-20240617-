@@ -76,7 +76,7 @@ execute if entity @s[scores={sea_crafter=50120},tag=!SEA_w_axe_upg20] run tag @s
 #    耗
 #    技 攻 攻
 #    耗
-# 
+#
 # 1 1 4 3 1
 #   2
 #   3 5 8

@@ -1,5 +1,5 @@
 #生成载体
-summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:arrow",count:1b,components:{"custom_model_data":1}},Age:5988s,PickupDelay:32767s,Tags:["damageDummy"],CustomNameVisible:1b,CustomName:'""'}
+summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:arrow",count:1b,components:{"custom_model_data":{floats:[1.0]}}},Age:5988s,PickupDelay:32767s,Tags:["damageDummy"],CustomNameVisible:1b,CustomName:'""'}
 #随机motion
 execute store result entity @e[tag=damageDummy,limit=1,sort=nearest] Motion[0] double 0.01 run random value -20..20
 execute store result entity @e[tag=damageDummy,limit=1,sort=nearest] Motion[2] double 0.01 run random value -20..20

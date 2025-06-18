@@ -22,7 +22,7 @@ execute if score @s sea_4temp8 matches 2092..2099 run scoreboard players set @s 
 execute if score @s sea_4temp8 matches 2099.. if score SEA_ch5_event_boss5 rng9 matches ..0 run scoreboard players set SEA_ch5_event_boss5 rng9 1
 
 
-#execute if score @s sea_4temp8 matches 2092..2099 unless entity @n[tag=SEAboss5b] run scoreboard players set 
+#execute if score @s sea_4temp8 matches 2092..2099 unless entity @n[tag=SEAboss5b] run scoreboard players set
 
 
 

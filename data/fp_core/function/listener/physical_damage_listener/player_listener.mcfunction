@@ -3,6 +3,6 @@
 #拥有physicalDamageListener的实体会被该监听器追踪
 execute if score @s damage_resisted matches 1.. run tag @s add EVENT_damage
 scoreboard players operation @s damage = @s damage_resisted
-scoreboard players operation @s damage /= 10 constant 
+scoreboard players operation @s damage /= 10 constant
 scoreboard players reset @s damage_resisted
 effect give @s minecraft:resistance 1 5 true

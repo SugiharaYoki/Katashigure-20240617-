@@ -10,7 +10,7 @@ execute as @e[tag=SEAmob_bloodrived] store result score SEA_bloodrive health run
 
 #execute as @e[type=text_display,tag=SEAmob_bloodrive] store result storage sea:bloodrive health int 1 run data get entity @s Health
 
-#data modify storage sea:bloodrive health 
+#data modify storage sea:bloodrive health
 
 execute as @e[tag=SEAmob_bloodrived] on passengers as @s[tag=SEAmob_bloodrive] run data merge entity @s {text:'[{"score":{"name":"SEA_bloodrive","objective":"health"},"color": "green"},{"text": "\\n"}]'}
 

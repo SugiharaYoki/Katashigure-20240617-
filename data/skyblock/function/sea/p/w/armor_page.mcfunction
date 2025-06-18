@@ -110,7 +110,7 @@ execute if entity @s[tag=!SEA_w_armor_upg30] run data modify entity @n[tag=SEA_w
 # 防 火 防 火
 #         防 防 韧
 # 防 速 防 速
-# 
+#
 # 1 1 2 2
 #       3 3 3
 # 1 1 2 2

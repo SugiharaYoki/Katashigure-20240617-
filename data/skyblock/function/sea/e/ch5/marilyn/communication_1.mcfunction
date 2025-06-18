@@ -43,8 +43,8 @@ execute if score SEA_ch5_event_marilyn rng1 matches 243 positioned 90118 90 73 a
 execute if score SEA_ch5_event_marilyn rng1 matches 263 positioned 90118 90 73 as @p[tag=SEAPT] if entity @n[tag=sc,scores={sea_player=1}] run tellraw @a[distance=0..50] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“……在我赶到行政区前一定要活着啊。拜托了。”","color":"white"}]
 execute if score SEA_ch5_event_marilyn rng1 matches 263 positioned 90118 90 73 as @p[tag=SEAPT] if entity @n[tag=sc,scores={sea_player=2..}] run tellraw @a[distance=0..50] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“……一定要活着等我们赶到行政区。拜托了。”","color":"white"}]
 
-#低好感度：unless block 90168 34 93 blue_concrete 
-#高好感度：if block 90168 34 93 blue_concrete 
+#低好感度：unless block 90168 34 93 blue_concrete
+#高好感度：if block 90168 34 93 blue_concrete
 
 execute if score SEA_ch5_event_marilyn rng1 matches 1000..1100 run scoreboard players set SEA_ch5_event_marilyn rng1 1000
 

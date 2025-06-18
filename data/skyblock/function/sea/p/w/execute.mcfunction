@@ -93,7 +93,7 @@ execute if entity @s[scores={sea_crafter=50116}] if entity @s[tag=!SEA_w_axe_upg
 #    耗
 #    技 攻 攻
 #    耗
-# 
+#
 # 1 1 4 3 1
 #   2
 #   3 5 8
@@ -125,10 +125,10 @@ execute if entity @s[scores={sea_crafter=50212}] if entity @s[tag=!SEA_w_flameth
 
 #盾
 # 防 速 防 时
-# 速    反 防 防 反 
+# 速    反 防 防 反
 # 时
-# 
-# 
+#
+#
 # 1 1 2 3
 # 2   3 2 3 3
 # 2
@@ -173,7 +173,7 @@ execute if entity @s[scores={sea_crafter=50311}] if entity @s[tag=!SEA_w_shield_
 # 防 火 防 火
 #         防 防 韧
 # 防 速 防 速
-# 
+#
 # 1 1 2 2
 #       3 3 3
 # 1 1 2 2

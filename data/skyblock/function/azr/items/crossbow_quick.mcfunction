@@ -1,1 +1,1 @@
-give @s crossbow[custom_name='{"text":"弩·速填","color":"white","italic":false}',enchantments={quick_charge:1},custom_data={crossbow_quick:1b},custom_model_data={float:100003.0}]
+give @s crossbow[custom_name='{"text":"弩·速填","color":"white","italic":false}',enchantments={quick_charge:1},custom_data={crossbow_quick:1b},custom_model_data={floats:[100003.0]}]

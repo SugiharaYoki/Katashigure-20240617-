@@ -17,7 +17,9 @@
               "function": "set_components",
               "components": {
                 "custom_name": "{\"text\":\"钝铁\",\"italic\":false,\"color\":\"white\"}",
-                "custom_model_data":100001,
+                "custom_model_data":{
+                  "floats": [100001.0]
+                },
                 "custom_data": {
                   "raw_iron": 1
                 }
@@ -34,7 +36,9 @@
               "function": "minecraft:set_components",
               "components": {
                 "custom_name": "{\"text\":\"圣殿信条\",\"italic\":false,\"color\":\"blue\"}",
-                "custom_model_data":100001,
+                "custom_model_data":{
+                  "floats": [100001.0]
+                },
                 "custom_data": {
                   "sanct_credo": 1
                 }

@@ -32,7 +32,9 @@
               "function": "set_components",
               "components": {
                 "custom_name": "{\"text\":\"蛛毒囊\",\"italic\":false,\"color\":\"white\"}",
-                "custom_model_data":100001,
+                "custom_model_data":{
+                  "floats": [100001.0]
+                },
                 "custom_data": {
                   "poison_sac": 1
                 }
@@ -50,7 +52,9 @@
               "components": {
                 "custom_name": "{\"text\":\"魔蚀·散羽之箭\",\"italic\":false,\"color\":\"dark_blue\"}",
                 "potion_contents": "strong_poison",
-                "custom_model_data":100001,
+                "custom_model_data":{
+                  "floats": [100001.0]
+                },
                 "custom_data": {
                   "magical_arrow_strong": 1
                 }

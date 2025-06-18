@@ -61,7 +61,7 @@ scoreboard objectives add Azr_SK6 dummy
 scoreboard objectives add Azr_SK7 dummy
 #skill 8 膳食搭配 lv2
 scoreboard objectives add Azr_SK8 dummy
-#skill 9 残城箭影 lv5  
+#skill 9 残城箭影 lv5 
 scoreboard objectives add AZR_arrowUpg_pts dummy
 #skill 10 滞空斩击 lv6
 scoreboard objectives add Azr_SK10 dummy

@@ -1,1 +1,1 @@
-give @s leather_chestplate[custom_data={leather_chestplate_normal:1b},custom_model_data={float:100002.0}]
+give @s leather_chestplate[custom_data={leather_chestplate_normal:1b},custom_model_data={floats:[100002.0]}]

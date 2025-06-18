@@ -15,7 +15,7 @@ execute if entity @s[scores={level=..999}] run scoreboard players operation @s n
 execute if entity @s[scores={level=..999}] run scoreboard players operation @s next_exp *= @s level
 #计算实体的最大死亡抵抗值（mind/10+l）
 scoreboard players operation @s m_death_defense = @s mind
-scoreboard players operation @s m_death_defense /= 10 constant 
+scoreboard players operation @s m_death_defense /= 10 constant
 scoreboard players operation @s m_death_defense += @s level
 #计算玩家的最大血量上限(10*level+190)
 scoreboard players operation @s m_health = @s level
@@ -49,9 +49,9 @@ execute if entity @s[level=31..] run scoreboard players operation @s exp_calcula
 execute if entity @s[level=31..] run scoreboard players operation @s exp_calculate -= 158 constant
 scoreboard players operation @s XpP *= @s exp_calculate
 scoreboard players operation @s XpP /= 100 constant
-execute if score @s Xp > @s XpP run xp add @s -1 points 
+execute if score @s Xp > @s XpP run xp add @s -1 points
 execute if score @s Xp > @s XpP run scoreboard players remove @s Xp 1
-execute if score @s Xp < @s XpP run xp add @s 1 points 
+execute if score @s Xp < @s XpP run xp add @s 1 points
 execute if score @s Xp < @s XpP run scoreboard players add @s Xp 1
 execute if score @s game_level < @s level run experience add @s 1 levels
 execute if score @s game_level > @s level run experience add @s -1 levels

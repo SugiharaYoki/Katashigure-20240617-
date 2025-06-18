@@ -17,7 +17,9 @@
               "function": "set_components",
               "components": {
                 "custom_name": "{\"text\":\"虫骸\",\"italic\":false,\"color\":\"white\"}",
-                "custom_model_data":100001,
+                "custom_model_data":{
+                  "floats": [100001.0]
+                },
                 "custom_data": {
                   "insect_remains": 1
                 }
@@ -39,7 +41,9 @@
               "function": "set_components",
               "components": {
                 "custom_name": "{\"text\":\"草附的虫骸\",\"italic\":false,\"color\":\"white\"}",
-                "custom_model_data":100001,
+                "custom_model_data":{
+                  "floats": [100001.0]
+                },
                 "custom_data": {
                   "grass_remains": 1
                 }

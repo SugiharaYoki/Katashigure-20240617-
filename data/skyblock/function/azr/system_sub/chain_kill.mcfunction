@@ -24,7 +24,7 @@ execute if entity @s[scores={AZR_chainKillUpg_antichargedecrease=3}] run scorebo
 execute if entity @s[scores={AZR_chainKillUpg_antichargedecrease=4}] run scoreboard players set @s AZR_chainKill_damagetaken 0
 scoreboard players operation @s AZR_chainKill_damagetaken /= 24 constant
 scoreboard players operation @s AZR_chainKill_chargeup -= @s AZR_chainKill_damagetaken
- 
+
  execute if score @s AZR_chainKill_chargeup matches ..0 run scoreboard players set @s AZR_chainKill_chargeup 0
 execute if score @s AZR_chainKill_chargeup matches ..9 run xp set @s 0 points
 execute if score @s AZR_chainKill_chargeup matches 10..19 run xp set @s 11 points

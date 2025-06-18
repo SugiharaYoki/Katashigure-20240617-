@@ -114,7 +114,7 @@ execute if entity @n[tag=SEAbossch3_light_keep] at @n[tag=SEAbossch3_core,tag=!S
 execute if entity @n[tag=SEAbossch3_light_keep] at @n[tag=SEAbossch3_core,tag=!SEAbossch3_core_lighted] run playsound ambient.crimson_forest.additions master @a ~ ~ ~ 10 0.8
 execute if entity @n[tag=SEAbossch3_light_keep] at @n[tag=SEAbossch3_core,tag=!SEAbossch3_core_lighted] run playsound ambient.crimson_forest.additions master @a ~ ~ ~ 10 0.8
 execute if entity @n[tag=SEAbossch3_light_keep] at @n[tag=SEAbossch3_core,tag=!SEAbossch3_core_lighted] run playsound ambient.crimson_forest.additions master @a ~ ~ ~ 10 0.8
- 
+
 
 execute if entity @n[tag=SEAbossch3_light_keep] at @n[tag=SEAbossch3_core,tag=!SEAbossch3_core_lighted] as @a run bossbar remove 9066602
 execute if entity @n[tag=SEAbossch3_light_keep] at @n[tag=SEAbossch3_core,tag=!SEAbossch3_core_lighted] as @a run bossbar set 9066602 visible false

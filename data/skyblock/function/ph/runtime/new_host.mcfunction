@@ -1,6 +1,6 @@
 #visualize
 #enum no tamplete:
-#enum info : 穷举了81个位置 或许可以通过将transformation存储在列表中简化，此处的transformation和move_target中使用的相同 
+#enum info : 穷举了81个位置 或许可以通过将transformation存储在列表中简化，此处的transformation和move_target中使用的相同
 execute if score active_slot 4ASCEND_system matches 0 at @e[tag=current_table,type=block_display] unless entity @e[tag=a1,distance=..0.1] run summon block_display 0. 0. 0. {Tags:["temp_crossline","protected","a1"],transformation:[0.17,0.0,0.0,0.715, 0.0,0.1,0.0,0.0, 0.0,0.0,0.17,-0.885, 0.0,0.0,0.0,1.0],glow_color_override:63487,Glowing:1b,block_state:{Name:"white_concrete"}}
 execute if score active_slot 4ASCEND_system matches 1 at @e[tag=current_table,type=block_display] unless entity @e[tag=a2,distance=..0.1] run summon block_display 0. 0. 0. {Tags:["temp_crossline","protected","a2"],transformation:[0.17,0.0,0.0,0.515, 0.0,0.1,0.0,0.0, 0.0,0.0,0.17,-0.885, 0.0,0.0,0.0,1.0],glow_color_override:63487,Glowing:1b,block_state:{Name:"white_concrete"}}
 execute if score active_slot 4ASCEND_system matches 2 at @e[tag=current_table,type=block_display] unless entity @e[tag=a3,distance=..0.1] run summon block_display 0. 0. 0. {Tags:["temp_crossline","protected","a3"],transformation:[0.17,0.0,0.0,0.315, 0.0,0.1,0.0,0.0, 0.0,0.0,0.17,-0.885, 0.0,0.0,0.0,1.0],glow_color_override:63487,Glowing:1b,block_state:{Name:"white_concrete"}}
@@ -177,7 +177,7 @@ scoreboard players add slot_data 4ASCEND_system 1
 #write
 #enum no tamplete:
 #enum info : 穷举了81个位置的写入
-execute if score active_slot 4ASCEND_system matches 0 store result storage ph runtime.board[0][0] int 1.0 run scoreboard players get slot_data 4ASCEND_system 
+execute if score active_slot 4ASCEND_system matches 0 store result storage ph runtime.board[0][0] int 1.0 run scoreboard players get slot_data 4ASCEND_system
 execute if score active_slot 4ASCEND_system matches 1 store result storage ph runtime.board[1][0] int 1.0 run scoreboard players get slot_data 4ASCEND_system
 execute if score active_slot 4ASCEND_system matches 2 store result storage ph runtime.board[2][0] int 1.0 run scoreboard players get slot_data 4ASCEND_system
 execute if score active_slot 4ASCEND_system matches 3 store result storage ph runtime.board[3][0] int 1.0 run scoreboard players get slot_data 4ASCEND_system

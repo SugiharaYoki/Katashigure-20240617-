@@ -59,10 +59,10 @@ execute if entity @s[tag=!SEA_w_shield_upg16] run data modify entity @n[tag=SEA_
 #盾
 #    瞬
 # 防 速 防 时
-# 速    反 防 防 反 
+# 速    反 防 防 反
 # 时
-# 
-# 
+#
+#
 # 1 1 2 3
 # 2   3 2 3 3
 # 2

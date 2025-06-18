@@ -42,8 +42,8 @@ execute if entity @s[tag=SEAPT] run function skyblock:sea/p/w/flamethrower_page
 # 距 充 充 充 距
 #    耗
 #    技 攻 攻
-# 
-# 
+#
+#
 # 1 1 4 3 1
 #   2
 #   3 5 8

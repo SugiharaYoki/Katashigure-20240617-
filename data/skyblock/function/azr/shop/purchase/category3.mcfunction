@@ -353,7 +353,7 @@ $execute as @s[scores={Azr_Shop_rng$(rng)=32,Azr_Shop=$(trigger)}] \
     unless function skyblock:azr/shop/purchase/category3/\
     rng32 run scoreboard players set tempPlayerShopSuccess Azr_system 1
     # 32 铁胸甲（裹尸） 1 铁胸甲 14 绿宝石 8 硬骨
-    
+   
 $execute as @s[scores={Azr_Shop_rng$(rng)=33,Azr_Shop=$(trigger)}] \
     if score @s Azr_emerald matches 14.. \
     if items entity @s container.* bone[count~{min:10},custom_data~{hard_bone:1b}] \
@@ -386,7 +386,7 @@ $execute as @s[scores={Azr_Shop_rng$(rng)=36,Azr_Shop=$(trigger)}] \
     unless function skyblock:azr/shop/purchase/category3/\
     rng36 run scoreboard players set tempPlayerShopSuccess Azr_system 1
     # 36 铁胸甲（暗窥） 1 铁胸甲 12 绿宝石 8 丝线 1 冻骨
-    
+   
 $execute as @s[scores={Azr_Shop_rng$(rng)=37,Azr_Shop=$(trigger)}] \
     if items entity @s container.* iron_leggings[count~{min:1},custom_data~{iron_leggings_normal:1b}] \
     if score @s Azr_emerald matches 12.. \

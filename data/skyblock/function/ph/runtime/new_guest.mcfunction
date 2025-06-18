@@ -175,7 +175,7 @@ scoreboard players add slot_data 4ASCEND_system 2
 #write
 #enum no tamplete:
 #enum info : 穷举了81个位置的写入
-execute if score active_slot 4ASCEND_system matches 0 store result storage ph runtime.board[0][0] int 1.0 run scoreboard players get slot_data 4ASCEND_system 
+execute if score active_slot 4ASCEND_system matches 0 store result storage ph runtime.board[0][0] int 1.0 run scoreboard players get slot_data 4ASCEND_system
 execute if score active_slot 4ASCEND_system matches 1 store result storage ph runtime.board[1][0] int 1.0 run scoreboard players get slot_data 4ASCEND_system
 execute if score active_slot 4ASCEND_system matches 2 store result storage ph runtime.board[2][0] int 1.0 run scoreboard players get slot_data 4ASCEND_system
 execute if score active_slot 4ASCEND_system matches 3 store result storage ph runtime.board[3][0] int 1.0 run scoreboard players get slot_data 4ASCEND_system

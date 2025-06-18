@@ -55,7 +55,9 @@
               "function": "set_components",
               "components": {
                 "custom_name": "{\"text\":\"磐石斧·尸劣\",\"italic\":false,\"color\":\"dark_red\"}",
-                "custom_model_data":100005,
+                "custom_model_data":{
+                  "floats": [100005.0]
+                },
                 "attribute_modifiers": [
                   {
                     "type": "generic.attack_damage",

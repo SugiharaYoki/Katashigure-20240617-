@@ -55,7 +55,7 @@ execute if data storage ph {runtime:{turn:1}} run tag @a[tag=current_table,tag=4
         execute if data storage ph {runtime:{turn:0}} as @e[type=block_display,tag=current_table,limit=1] on passengers as @s[tag=target,type=block_display] run data merge entity @s {block_state:{Name:"glass"},Glowing:1b,glow_color_override:63487}
         execute if data storage ph {runtime:{turn:1}} as @e[type=block_display,tag=current_table,limit=1] on passengers as @s[tag=target,type=block_display] run data merge entity @s {block_state:{Name:"glass"},Glowing:1b,glow_color_override:9240576}
         function skyblock:ph/runtime/move_target
-        
+       
     #event callback
     function skyblock:ph/runtime/interaction_callback
     execute if data storage ph {runtime:{next:1b}} run function skyblock:ph/runtime/next

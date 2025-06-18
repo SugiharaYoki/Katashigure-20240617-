@@ -58,7 +58,9 @@
               "function": "set_components",
               "components": {
                 "custom_name": "{\"text\":\"盾牌碎片\",\"italic\":false,\"color\":\"white\"}",
-                "custom_model_data":100001,
+                "custom_model_data":{
+                  "floats": [100001.0]
+                },
                 "custom_data": {
                   "shield_shard": 1
                 }

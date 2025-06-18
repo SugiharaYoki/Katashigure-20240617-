@@ -1,7 +1,7 @@
 kill @e[tag=SEA_follow_target_origin]
 kill @e[tag=SEA_follow_target_marker]
 
-summon marker ~ ~ ~ {Tags:["SEA_follow_target_origin"]} 
+summon marker ~ ~ ~ {Tags:["SEA_follow_target_origin"]}
 
 
 execute positioned ~ ~ ~1 run function skyblock:sea/experimental/test_follow2_available

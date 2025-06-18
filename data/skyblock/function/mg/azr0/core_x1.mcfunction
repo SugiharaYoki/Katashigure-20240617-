@@ -38,7 +38,7 @@ function skyblock:mg/azr0/system/mob/skill
 
 
 
-execute at @n[tag=mg_azr0,type=marker] run gamemode spectator @a[tag=!MG_AZR0PT,gamemode=!creative,distance=0..200] 
+execute at @n[tag=mg_azr0,type=marker] run gamemode spectator @a[tag=!MG_AZR0PT,gamemode=!creative,distance=0..200]
 
 
 

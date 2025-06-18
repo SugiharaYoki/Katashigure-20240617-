@@ -16,7 +16,7 @@ execute as @e[tag=arroworb2,type=marker] at @s run function skyblock:azr/outgame
     execute if score @s Azr_system matches 81 run bossbar set azr:boss_hp_bar_outgame players @a
     execute if score @s Azr_system matches 82.. store result bossbar azr:boss_hp_bar_outgame value run scoreboard players get @n[tag=AzrielBossA_outgame] Azr_mobHealth
     execute if score @s Azr_system matches 90 as @e[tag=AzrielBossA_outgame,limit=3] at @s run function skyblock:azr/outgame/boss1/tp1
-#AI 
+#AI
     #每刻有1/8的肯面向最近玩家
     execute store result score temp_rng Azr_system run random value 1..8
     execute if score @s Azr_system matches 152..2800 if score temp_rng Azr_system matches 1 as @e[tag=AzrielBossA_outgame] at @s run rotate @s facing entity @p[gamemode=!creative,gamemode=!spectator]
@@ -60,7 +60,7 @@ execute as @e[tag=arroworb2,type=marker] at @s run function skyblock:azr/outgame
     execute if score @s Azr_system matches 152.. if score playerCount Azr_system matches 5.. if score #rng6 Azr_system matches 2..3 if score #rng8 Azr_system matches 4 as @e[tag=AzrielBossA_outgame,limit=3] at @s run summon arrow ~-3 ~7 ~0 {Motion:[0.0,-0.3,0.0],pickup:0,damage:0.5,life:1100}
     execute if score @s Azr_system matches 152.. if score playerCount Azr_system matches 5.. if score #rng6 Azr_system matches 2..3 if score #rng8 Azr_system matches 4 as @e[tag=AzrielBossA_outgame,limit=3] at @s run summon arrow ~-3 ~8 ~-3 {Motion:[0.0,-0.3,0.0],pickup:0,damage:0.5,life:1100}
     execute if score @s Azr_system matches 172 run scoreboard players set @s Azr_system 1000
-    
+   
 #跳秒
     execute if score @s Azr_system matches 900..2800 if score playerCount Azr_system matches 1..2 if entity @e[tag=AzrielBossA_outgame,scores={Azr_mobHealth=..75}] run scoreboard players add @s Azr_system 1
     execute if score @s Azr_system matches 900..2800 if score playerCount Azr_system matches 3..4 if entity @e[tag=AzrielBossA_outgame,scores={Azr_mobHealth=..100}] run scoreboard players add @s Azr_system 1
@@ -97,7 +97,7 @@ execute as @e[tag=arroworb2,type=marker] at @s run function skyblock:azr/outgame
 
     execute as @e[tag=AzrielBossA_outgame,type=illusioner,limit=3] at @s run function skyblock:sea/experimental/zanei_flat_01
     execute as @e[tag=AzrielBossA_outgame,type=illusioner,limit=3] at @s run function skyblock:sea/experimental/zanei_flat_02
-    
+   
     # Wave II 900..1880 循环直到死亡
     execute if score @s Azr_system matches 900..2800 if score playerCount Azr_system matches 1.. if score #rng19 Azr_system matches 1..11 if score #rng20 Azr_system matches 4..5 if entity @e[tag=AzrielBossA_outgame,scores={Azr_mobHealth=..30}] if entity @a[gamemode=!creative,gamemode=!spectator,distance=0..2.5] run function skyblock:azr/outgame/boss1/tp1
     execute if score @s Azr_system matches 900..2800 if score playerCount Azr_system matches 1.. if score #rng19 Azr_system matches 1..11 if score #rng20 Azr_system matches 6..7 if entity @e[tag=AzrielBossA_outgame,scores={Azr_mobHealth=..50}] if score zanei_flat_01_marker rng1 matches 22.. run scoreboard players set zanei_flat_01_marker rng1 0

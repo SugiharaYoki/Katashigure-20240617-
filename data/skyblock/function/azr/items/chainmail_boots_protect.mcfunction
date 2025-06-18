@@ -1,1 +1,1 @@
-give @s chainmail_boots[custom_data={chainmail_boots_protect:1b},custom_name='{"text":"链靴·反透","italic":false}',enchantments={protection:1},custom_model_data={float:100012.0},trim={material:"amethyst",pattern:"wild",show_in_tooltip:false}]
+give @s chainmail_boots[custom_data={chainmail_boots_protect:1b},custom_name='{"text":"链靴·反透","italic":false}',enchantments={protection:1},custom_model_data={floats:[100012.0]},trim={material:"amethyst",pattern:"wild",show_in_tooltip:false}]

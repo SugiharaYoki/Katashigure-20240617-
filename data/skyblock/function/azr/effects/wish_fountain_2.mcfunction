@@ -18,10 +18,10 @@ execute if score #rng3 Azr_system matches 3 if score #rng4 Azr_system matches 1.
 #
 execute if score #rng3 Azr_system matches 1 if score #rng4 Azr_system matches 1..2 if score #rng9 Azr_system matches 6 run summon item -79917 42 -76 {Item:{id:"charcoal",count:1b}}
 execute if score #rng3 Azr_system matches 2 if score #rng4 Azr_system matches 1..2 if score #rng9 Azr_system matches 6 run summon item -79917 42 -76 {Item:{id:"honeycomb",count:1b}}
-execute if score #rng3 Azr_system matches 3 if score #rng4 Azr_system matches 1..2 if score #rng9 Azr_system matches 6 run summon item -79917 42 -76 {Item:{id:"minecraft:paper",count:1b,components:{custom_name:'{"text":"圣殿信条","italic":false,"color":"blue"}',"custom_data":{sanct_credo:1b},"custom_model_data":100001}}}
+execute if score #rng3 Azr_system matches 3 if score #rng4 Azr_system matches 1..2 if score #rng9 Azr_system matches 6 run summon item -79917 42 -76 {Item:{id:"minecraft:paper",count:1b,components:{custom_name:'{"text":"圣殿信条","italic":false,"color":"blue"}',"custom_data":{sanct_credo:1b},"custom_model_data":{floats:[100001.0]}}}}
 #
 execute if score #rng3 Azr_system matches 1 if score #rng4 Azr_system matches 1..2 if score #rng9 Azr_system matches 7 run summon item -79917 42 -76 {Item:{id:"charcoal",count:1b}}
-execute if score #rng3 Azr_system matches 2 if score #rng4 Azr_system matches 1..2 if score #rng9 Azr_system matches 7 run summon item -79917 42 -76 {Item:{id:"minecraft:raw_iron",count:1b,components:{custom_name:'{"text":"钝铁","italic":false,"color":"white"}',"custom_data":{raw_iron:1b},"custom_model_data":100001}}}
+execute if score #rng3 Azr_system matches 2 if score #rng4 Azr_system matches 1..2 if score #rng9 Azr_system matches 7 run summon item -79917 42 -76 {Item:{id:"minecraft:raw_iron",count:1b,components:{custom_name:'{"text":"钝铁","italic":false,"color":"white"}',"custom_data":{raw_iron:1b},"custom_model_data":{floats:[100001.0]}}}}
 execute if score #rng3 Azr_system matches 3 if score #rng4 Azr_system matches 1..2 if score #rng9 Azr_system matches 7 run summon item -79917 42 -76 {Item:{id:"leather",count:1b}}
 #
 execute if score #rng3 Azr_system matches 1 if score #rng4 Azr_system matches 1..2 if score #rng9 Azr_system matches 8 run summon item -79917 42 -76 {Item:{id:"slime_ball",count:1b}}
@@ -54,10 +54,10 @@ execute if score #rng3 Azr_system matches 3 if score #rng4 Azr_system matches 1.
 #
 execute if score #rng3 Azr_system matches 1 if score #rng4 Azr_system matches 1..3 if score #rng9 Azr_system matches 6 run summon item -79917 42 -76 {Item:{id:"charcoal",count:1b}}
 execute if score #rng3 Azr_system matches 2 if score #rng4 Azr_system matches 1..3 if score #rng9 Azr_system matches 6 run summon item -79917 42 -76 {Item:{id:"honeycomb",count:1b}}
-execute if score #rng3 Azr_system matches 3 if score #rng4 Azr_system matches 1..3 if score #rng9 Azr_system matches 6 run summon item -79917 42 -76 {Item:{id:"minecraft:paper",count:1b,components:{custom_name:'{"text":"圣殿信条","italic":false,"color":"blue"}',"custom_data":{sanct_credo:1b},"custom_model_data":100001}}}
+execute if score #rng3 Azr_system matches 3 if score #rng4 Azr_system matches 1..3 if score #rng9 Azr_system matches 6 run summon item -79917 42 -76 {Item:{id:"minecraft:paper",count:1b,components:{custom_name:'{"text":"圣殿信条","italic":false,"color":"blue"}',"custom_data":{sanct_credo:1b},"custom_model_data":{floats:[100001.0]}}}}
 #
 execute if score #rng3 Azr_system matches 1 if score #rng4 Azr_system matches 1..3 if score #rng9 Azr_system matches 7 run summon item -79917 42 -76 {Item:{id:"charcoal",count:1b}}
-execute if score #rng3 Azr_system matches 2 if score #rng4 Azr_system matches 1..3 if score #rng9 Azr_system matches 7 run summon item -79917 42 -76 {Item:{id:"minecraft:raw_iron",count:1b,components:{custom_name:'{"text":"钝铁","italic":false,"color":"white"}',"custom_data":{raw_iron:1b},"custom_model_data":100001}}}
+execute if score #rng3 Azr_system matches 2 if score #rng4 Azr_system matches 1..3 if score #rng9 Azr_system matches 7 run summon item -79917 42 -76 {Item:{id:"minecraft:raw_iron",count:1b,components:{custom_name:'{"text":"钝铁","italic":false,"color":"white"}',"custom_data":{raw_iron:1b},"custom_model_data":{floats:[100001.0]}}}}
 execute if score #rng3 Azr_system matches 3 if score #rng4 Azr_system matches 1..3 if score #rng9 Azr_system matches 7 run summon item -79917 42 -76 {Item:{id:"leather",count:1b}}
 #
 execute if score #rng3 Azr_system matches 1 if score #rng4 Azr_system matches 1..3 if score #rng9 Azr_system matches 8 run summon item -79917 42 -76 {Item:{id:"slime_ball",count:1b}}
@@ -87,10 +87,10 @@ execute if score #rng3 Azr_system matches 3 if score #rng4 Azr_system matches 1.
 #
 execute if score #rng3 Azr_system matches 1 if score #rng4 Azr_system matches 1..3 if score #rng9 Azr_system matches 6 run summon item -79917 42 -76 {Item:{id:"charcoal",count:1b}}
 execute if score #rng3 Azr_system matches 2 if score #rng4 Azr_system matches 1..3 if score #rng9 Azr_system matches 6 run summon item -79917 42 -76 {Item:{id:"honeycomb",count:2b}}
-execute if score #rng3 Azr_system matches 3 if score #rng4 Azr_system matches 1..3 if score #rng9 Azr_system matches 6 run summon item -79917 42 -76 {Item:{id:"minecraft:paper",count:1b,components:{custom_name:'{"text":"圣殿信条","italic":false,"color":"blue"}',"custom_data":{sanct_credo:1b},"custom_model_data":100001}}}
+execute if score #rng3 Azr_system matches 3 if score #rng4 Azr_system matches 1..3 if score #rng9 Azr_system matches 6 run summon item -79917 42 -76 {Item:{id:"minecraft:paper",count:1b,components:{custom_name:'{"text":"圣殿信条","italic":false,"color":"blue"}',"custom_data":{sanct_credo:1b},"custom_model_data":{floats:[100001.0]}}}}
 #
 execute if score #rng3 Azr_system matches 1 if score #rng4 Azr_system matches 1..3 if score #rng9 Azr_system matches 7 run summon item -79917 42 -76 {Item:{id:"charcoal",count:1b}}
-execute if score #rng3 Azr_system matches 2 if score #rng4 Azr_system matches 1..3 if score #rng9 Azr_system matches 7 run summon item -79917 42 -76 {Item:{id:"minecraft:raw_iron",count:1b,components:{custom_name:'{"text":"钝铁","italic":false,"color":"white"}',"custom_data":{raw_iron:1b},"custom_model_data":100001}}}
+execute if score #rng3 Azr_system matches 2 if score #rng4 Azr_system matches 1..3 if score #rng9 Azr_system matches 7 run summon item -79917 42 -76 {Item:{id:"minecraft:raw_iron",count:1b,components:{custom_name:'{"text":"钝铁","italic":false,"color":"white"}',"custom_data":{raw_iron:1b},"custom_model_data":{floats:[100001.0]}}}}
 execute if score #rng3 Azr_system matches 3 if score #rng4 Azr_system matches 1..3 if score #rng9 Azr_system matches 7 run summon item -79917 42 -76 {Item:{id:"leather",count:2b}}
 #
 execute if score #rng3 Azr_system matches 1 if score #rng4 Azr_system matches 1..3 if score #rng9 Azr_system matches 8 run summon item -79917 42 -76 {Item:{id:"slime_ball",count:2b}}

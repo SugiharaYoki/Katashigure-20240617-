@@ -1,1 +1,1 @@
-give @s iron_axe[custom_name='{"text":"铁斧·碳钢","italic":false}',unbreakable={},custom_data={iron_axe_coal_iron:1b},custom_model_data={float:100004.0}]
+give @s iron_axe[custom_name='{"text":"铁斧·碳钢","italic":false}',unbreakable={},custom_data={iron_axe_coal_iron:1b},custom_model_data={floats:[100004.0]}]

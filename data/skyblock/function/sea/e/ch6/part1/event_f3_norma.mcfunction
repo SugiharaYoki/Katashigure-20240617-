@@ -110,7 +110,7 @@ execute if score SEA_ch6_event rng5 matches 1403 run playsound minecraft:entity.
 execute if score SEA_ch6_event rng5 matches 1407 run particle minecraft:explosion_emitter 90153 139 138 1 1 1 1 1
 execute if score SEA_ch6_event rng5 matches 1407 run particle minecraft:large_smoke 90153 137 137 0 0 0 0.23 80
 execute if score SEA_ch6_event rng5 matches 1407 run playsound minecraft:entity.generic.explode ambient @s 90153 139 138 2 0.8
-execute if score SEA_ch6_event rng5 matches 1403 run clone 90144 -40 134 90153 -35 140 90144 136 134 
+execute if score SEA_ch6_event rng5 matches 1403 run clone 90144 -40 134 90153 -35 140 90144 136 134
 execute if score SEA_ch6_event rng5 matches 1403 run setblock 90151 140 137 gravel
 execute if score SEA_ch6_event rng5 matches 1403 run setblock 90149 140 135 gravel
 execute if score SEA_ch6_event rng5 matches 1403 run setblock 90151 140 135 gravel
@@ -120,7 +120,7 @@ execute if score SEA_ch6_event rng5 matches 1409 run tellraw @a[distance=0..200]
 
 execute if score SEA_ch6_event rng5 matches 1410..1500 run scoreboard players set SEA_ch6_event rng5 1410
 execute if score SEA_ch6_event rng5 matches 1410..1500 as @a[x=90152,y=127,z=111,dx=10,dy=10,dz=10,tag=SEAPT] at @s run scoreboard players set SEA_ch6_event rng5 1501
-execute if score SEA_ch6_event rng5 matches 1503 run clone 90152 -50 101 90155 -44 108 90152 123 101 
+execute if score SEA_ch6_event rng5 matches 1503 run clone 90152 -50 101 90155 -44 108 90152 123 101
 execute if score SEA_ch6_event rng5 matches 1503 run particle minecraft:explosion_emitter 90154 129 104 1 1 1 1 1
 execute if score SEA_ch6_event rng5 matches 1503 run playsound minecraft:entity.generic.explode ambient @s 90154 129 104 2 0.8
 

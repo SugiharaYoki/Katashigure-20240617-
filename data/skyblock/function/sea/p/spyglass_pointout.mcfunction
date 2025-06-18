@@ -22,7 +22,7 @@ execute if score @n[tag=SEA_spyglass_pointout_marker_in_block] SEAPT_member_eter
 execute if score @n[tag=SEA_spyglass_pointout_marker_in_block] SEAPT_member_eternal = @s SEAPT_member_eternal run scoreboard players set @s SEA_if_spying 0
 kill @n[tag=SEA_spyglass_pointout_marker_in_block]
 
-#execute if score @s SEA_if_spying matches 1.. unless items entity @s weapon.* spyglass as @e[tag=SEA_spyglass_pointout_marker] 
+#execute if score @s SEA_if_spying matches 1.. unless items entity @s weapon.* spyglass as @e[tag=SEA_spyglass_pointout_marker]
 
 
 

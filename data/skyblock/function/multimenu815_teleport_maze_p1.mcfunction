@@ -40,7 +40,7 @@ tellraw @s[scores={MazeLS=27}] [{"text":"  27","bold":false,"color":"blue","clic
 tellraw @s[scores={MazeLS=28}] [{"text":"  27","bold":false,"color":"blue","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 815027"}},{"text":"  28","bold":false,"color":"blue","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 815028"}}]
 
 
-#tellraw @s[scores={MazeLS=??..}] {"text":"","bold":false} 
+#tellraw @s[scores={MazeLS=??..}] {"text":"","bold":false}
 #tellraw @s[scores={MazeLS=??..}] {"text":"  [下一页]","bold":false,"color":"green","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 811"}}
 tellraw @s {"text":"","bold":false}
 #

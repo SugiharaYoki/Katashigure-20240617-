@@ -32,7 +32,9 @@
               "function": "set_components",
               "components": {
                 "custom_name": "{\"text\":\"黑暗精华\",\"italic\":false,\"color\":\"dark_purple\"}",
-                "custom_model_data":100002,
+                "custom_model_data":{
+                  "floats": [100002.0]
+                },
                 "custom_data": {
                   "dark_essence": 1
                 }
@@ -87,7 +89,9 @@
               "function": "set_components",
               "components": {
                 "custom_name": "{\"text\":\"腐烂的尸首\",\"italic\":false,\"color\":\"blue\"}",
-                "custom_model_data":100001,
+                "custom_model_data":{
+                  "floats": [100001.0]
+                },
                 "custom_data": {
                   "zombie_head": 1
                 }

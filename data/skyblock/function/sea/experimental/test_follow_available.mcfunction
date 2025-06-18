@@ -9,8 +9,8 @@ execute if entity @n[tag=SEA_follow_target_marker_previous,distance=0..0.2] run 
 execute if entity @n[tag=SEA_follow_target_marker_previous,distance=0..0.2] run tag @s remove success2
 
 
-execute if entity @s[tag=success] run summon marker ~ ~ ~ {Tags:["SEA_follow_target_marker"]} 
-execute if entity @s[tag=success2] unless entity @n[tag=SEA_follow_target_marker] run summon marker ~ ~1 ~ {Tags:["SEA_follow_target_marker"]} 
+execute if entity @s[tag=success] run summon marker ~ ~ ~ {Tags:["SEA_follow_target_marker"]}
+execute if entity @s[tag=success2] unless entity @n[tag=SEA_follow_target_marker] run summon marker ~ ~1 ~ {Tags:["SEA_follow_target_marker"]}
 
 execute as @e[tag=SEA_follow_target_marker] at @s if entity @n[tag=SEA_follow_target_marker_previous,distance=0..0.75] run tag @s add SEA_follow_target_marker_near_p
 

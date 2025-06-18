@@ -1,4 +1,4 @@
-#execute rotated ~ 0 positioned ^ ^ ^-0.1 if block ~ ~ ~ 
+#execute rotated ~ 0 positioned ^ ^ ^-0.1 if block ~ ~ ~
 
 execute positioned 0.0 0 0.0 run summon marker ^ ^0.15 ^-1 {Tags:["SEA_bj_marker"]}
 execute as @e[tag=SEA_bj_marker,type=marker] at @s run tp @s ~ 0.3 ~

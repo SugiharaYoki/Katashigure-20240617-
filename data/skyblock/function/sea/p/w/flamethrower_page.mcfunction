@@ -61,7 +61,7 @@ execute if entity @s[tag=!SEA_w_flamethrower_upg16] run data modify entity @n[ta
 #    耗
 #    技 攻 攻
 #    耗
-# 
+#
 # 1 1 4 3 1
 #   2
 #   3 5 8
