@@ -86,7 +86,9 @@
               "function": "set_components",
               "components": {
                 "custom_name": "{\"text\":\"纯金长柄斧\",\"italic\":false,\"color\":\"dark_red\"}",
-                "custom_model_data": 100001,
+                "custom_model_data": {
+                  "floats" : [100001.0]
+                },
                 "attribute_modifiers": [
                   {
                     "type": "generic.attack_damage",

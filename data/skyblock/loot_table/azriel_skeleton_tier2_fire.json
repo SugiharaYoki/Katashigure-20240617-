@@ -75,7 +75,9 @@
               "function": "set_components",
               "components": {
                 "custom_name": "{\"text\":\"硬骨铲·改\",\"italic\":false,\"color\":\"dark_red\"}",
-                "custom_model_data": 100002,
+                "custom_model_data": {
+                  "floats" : [100002.0]
+                },
                 "attribute_modifiers": [
                   {
                     "type": "generic.attack_damage",
@@ -112,7 +114,9 @@
               "function": "set_components",
               "components": {
                 "custom_name": "{\"text\":\"硬骨铲·焰\",\"italic\":false,\"color\":\"dark_red\"}",
-                "custom_model_data": 100003,
+                "custom_model_data": {
+                  "floats" : [100003.0]
+                },
                 "attribute_modifiers": [
                   {
                     "type": "generic.attack_damage",

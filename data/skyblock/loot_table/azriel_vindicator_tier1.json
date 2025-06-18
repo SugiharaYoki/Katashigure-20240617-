@@ -60,7 +60,9 @@
               "function": "set_components",
               "components": {
                 "custom_name": "{\"text\":\"铁剑·黑钢\",\"italic\":false,\"color\":\"dark_red\"}",
-                "custom_model_data": 100008,
+                "custom_model_data": {
+                  "floats" : [100008.0]
+                },
                 "attribute_modifiers": [
                   {
                     "type": "generic.attack_damage",
@@ -94,7 +96,9 @@
               "function": "set_components",
               "components": {
                 "custom_name": "{\"text\":\"铁斧·黑钢\",\"italic\":false,\"color\":\"dark_red\"}",
-                "custom_model_data": 100006,
+                "custom_model_data": {
+                  "floats" : [100006.0]
+                },
                 "attribute_modifiers": [
                   {
                     "type": "generic.attack_damage",
