@@ -1024,3 +1024,8 @@ setblock 90143 103 116 air
 clone 90149 -30 102 90155 -23 112 90149 102 102
 fill 90153 138 127 90153 137 127 minecraft:stone_bricks
 setblock 90153 138 126 stone_bricks
+
+setblock 90148 171 -1874 chest[facing=west]
+item replace block 90148 171 -1874 container.13 with emerald 20
+
+
