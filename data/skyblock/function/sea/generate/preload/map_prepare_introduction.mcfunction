@@ -1019,8 +1019,13 @@ fill 90143 103 115 90143 105 115 ladder[facing=east]
 
 clone 90134 -60 98 90142 -52 102 90134 100 98
 fill 90145 103 106 90145 105 104 iron_block
+setblock 90143 103 116 air
 
+clone 90149 -30 102 90155 -23 112 90149 102 102
+fill 90153 138 127 90153 137 127 minecraft:stone_bricks
+setblock 90153 138 126 stone_bricks
 
-
+setblock 90148 171 -1874 chest[facing=west]
+item replace block 90148 171 -1874 container.13 with emerald 20
 
 

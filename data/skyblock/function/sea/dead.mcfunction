@@ -92,6 +92,12 @@ tag @s remove sea_teleport21
 tag @s remove sea_teleport22
 tag @s remove sea_teleport23
 tag @s remove SEA_swap_defending
+
+execute if entity @s[tag=sea_ch3_badend,advancements={skyblock:sea/doc/g32=false}] at @s run give @s mojang_banner_pattern[custom_data={sea_docg32:true}]
+execute if entity @s[tag=sea_ch3_badend] run tellraw @s [{"text":"达成结局：","color":"gold","bold": true},{"text":"\nDead End「无谋的崇高」","color":"white","bold": false}]
+execute if entity @s[tag=sea_ch3_badend] run function skyblock:sea/p/document_macro {doc:"g32"}
+
+tag @s remove sea_ch3_badend
 #tag @s remove SEAPT_storymode
 scoreboard players reset @s sea_dead
 scoreboard players reset @s sea_dead_check

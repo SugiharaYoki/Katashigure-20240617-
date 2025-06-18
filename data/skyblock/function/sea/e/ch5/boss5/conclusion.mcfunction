@@ -50,6 +50,10 @@ execute if score SEA_ch5_event_boss5 rng9 matches 34..41 as @n[tag=SEAboss5b] at
 execute if score SEA_ch5_event_boss5 rng9 matches 34..40 as @n[tag=SEAboss5b] at @s run kill @s
 
 
+execute if score SEA_ch5_event_boss5 rng9 matches 101..458 if items entity @p[scores={sea_progress=15..},tag=SEAPT] weapon.mainhand spyglass as @p[nbt={SelectedItem:{id:"minecraft:spyglass"}}] unless entity @a[tag=SEAPT,scores={sea_progress=..14}] at @s run tellraw @a[tag=SEAPT] [{"selector":"@s","color":"white"},{"text":"：「跳过了剧情」","color":"white"}]
+execute if score SEA_ch5_event_boss5 rng9 matches 101..458 if items entity @p[scores={sea_progress=15..},tag=SEAPT] weapon.mainhand spyglass unless entity @a[tag=SEAPT,scores={sea_progress=..14}] run scoreboard players set SEA_ch5_event_boss5 rng9 459
+
+
 execute if score SEA_ch5_event_boss5 rng9 matches 100 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
 execute if score SEA_ch5_event_boss5 rng9 matches 100 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“……琼斯，最后你来帮我们了？”","color":"white","bold": false}]
 
