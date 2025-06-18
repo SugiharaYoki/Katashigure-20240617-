@@ -33,7 +33,7 @@
               "components": {
                 "custom_name": "{\"text\":\"硬骨\",\"italic\":false,\"color\":\"white\"}",
                 "custom_model_data":{
-                  "floats": [100001.0]
+                  "floats": [100001]
                 },
                 "custom_data": {
                   "hard_bone": 1
@@ -52,7 +52,7 @@
               "components": {
                 "custom_name": "{\"text\":\"硬骨铲\",\"italic\":false,\"color\":\"dark_red\"}",
                 "custom_model_data": {
-                  "floats" : [100001.0]
+                  "floats" : [100001]
                 },
                 "attribute_modifiers": [
                   {
