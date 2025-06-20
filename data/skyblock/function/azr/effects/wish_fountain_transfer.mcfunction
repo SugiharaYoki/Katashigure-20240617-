@@ -1,0 +1,2 @@
+execute as @e[x=-79908,y=37.5,z=123,distance=0..1.48,type=item,nbt={Item:{id:"minecraft:emerald_block"}}] at @s run function skyblock:azr/effects/wish_fountain
+execute as @e[x=-79917,y=39.5,z=-79,distance=0..1.48,type=item,nbt={Item:{id:"minecraft:emerald_block"}}] at @s run function skyblock:azr/effects/wish_fountain

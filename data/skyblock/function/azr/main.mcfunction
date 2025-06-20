@@ -89,18 +89,18 @@ execute if score isStarted Azr_system matches 1 if score stage Azr_system matche
 execute if score isStarted Azr_system matches 1 if score gametick Azr_system matches 20.. run function skyblock:azr/core
 execute if score isStarted Azr_system matches 1 if score gametick_static_5s Azr_system matches 100.. run function skyblock:azr/timer_static_5s
 #使用了tickTimer的关卡在这里处理
-execute as @e[x=-79908,y=37.5,z=123,distance=0..1.48,type=item,nbt={Item:{id:"minecraft:emerald_block"}}] at @s run function skyblock:azr/effects/wish_fountain
-execute as @e[x=-79917,y=39.5,z=-79,distance=0..1.48,type=item,nbt={Item:{id:"minecraft:emerald_block"}}] at @s run function skyblock:azr/effects/wish_fountain
-#timerTimer读秒，要停下只需reset记分板
-execute if entity @a[tag=azrPlayer] if score gametick Azr_system matches -2147483648..2147483647 run scoreboard players add gametick Azr_system 1
-execute if entity @a[tag=azrPlayer] if score gametick_static_5s Azr_system matches -2147483648..2147483647 run scoreboard players add gametick_static_5s Azr_system 1
-execute if score tickTimer Azr_system matches -2147483648..2147483647 run scoreboard players add tickTimer Azr_system 1
-#stage1 event code:2
-execute if score isStarted Azr_system matches 1 if score stage Azr_system matches 2 run function skyblock:azr/stage/stage1_event
-#BOSS1 code:10
-execute if score isStarted Azr_system matches 1 if score stage Azr_system matches 10 run function skyblock:azr/stage/stage_boss1
-#BOSS2 code:[23,24]
-execute if score isStarted Azr_system matches 1 if score stage Azr_system matches 23..24 run function skyblock:azr/stage/stage_boss2
+    #许愿池
+    function skyblock:azr/effects/wish_fountain_transfer
+    #timerTimer读秒，要停下只需reset记分板
+    execute if entity @a[tag=azrPlayer] if score gametick Azr_system matches -2147483648..2147483647 run scoreboard players add gametick Azr_system 1
+    execute if entity @a[tag=azrPlayer] if score gametick_static_5s Azr_system matches -2147483648..2147483647 run scoreboard players add gametick_static_5s Azr_system 1
+    execute if score tickTimer Azr_system matches -2147483648..2147483647 run scoreboard players add tickTimer Azr_system 1
+    #stage1 event code:2
+    execute if score isStarted Azr_system matches 1 if score stage Azr_system matches 2 run function skyblock:azr/stage/stage1_event
+    #BOSS1 code:10
+    execute if score isStarted Azr_system matches 1 if score stage Azr_system matches 10 run function skyblock:azr/stage/stage_boss1
+    #BOSS2 code:[23,24]
+    execute if score isStarted Azr_system matches 1 if score stage Azr_system matches 23..24 run function skyblock:azr/stage/stage_boss2
 
 #重置判定 - 游戏已开始但没有玩家
 execute if score isStarted Azr_system matches 1 if entity @a[x=-79931,y=100,z=0,distance=..10000,gamemode=!spectator] unless entity @a[tag=azrPlayer] run function skyblock:azr/endgame
