@@ -65,14 +65,14 @@
                 },
                 "attribute_modifiers": [
                   {
-                    "type": "generic.attack_damage",
+                    "type": "attack_damage",
                     "id": "azr:brick.attack_damage",
                     "amount": 2,
                     "operation": "add_value",
                     "slot": "mainhand"
                   },
                   {
-                    "type": "generic.attack_speed",
+                    "type": "attack_speed",
                     "id": "azr:brick.attack_speed",
                     "amount": -3.00,
                     "operation": "add_value",

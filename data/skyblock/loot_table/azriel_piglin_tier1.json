@@ -51,14 +51,14 @@
                 },
                 "attribute_modifiers": [
                   {
-                    "type": "generic.attack_damage",
+                    "type": "attack_damage",
                     "id": "azr:gold_sword.attack_damage",
                     "amount": 8,
                     "operation": "add_value",
                     "slot": "mainhand"
                   },
                   {
-                    "type": "generic.attack_speed",
+                    "type": "attack_speed",
                     "id": "azr:gold_sword.attack_speed",
                     "amount": -2.30,
                     "operation": "add_value",
@@ -91,14 +91,14 @@
                 },
                 "attribute_modifiers": [
                   {
-                    "type": "generic.attack_damage",
+                    "type": "attack_damage",
                     "id": "azr:gold_axe.attack_damage",
                     "amount": 11,
                     "operation": "add_value",
                     "slot": "mainhand"
                   },
                   {
-                    "type": "generic.attack_speed",
+                    "type": "attack_speed",
                     "id": "azr:gold_axe.attack_speed",
                     "amount": -2.70,
                     "operation": "add_value",

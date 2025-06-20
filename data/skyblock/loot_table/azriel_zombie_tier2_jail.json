@@ -65,14 +65,14 @@
                 },
                 "attribute_modifiers": [
                   {
-                    "type": "generic.attack_damage",
+                    "type": "attack_damage",
                     "id": "azr:zombie_stone_axe.attack_damage",
                     "amount": 10.5,
                     "operation": "add_value",
                     "slot": "mainhand"
                   },
                   {
-                    "type": "generic.attack_speed",
+                    "type": "attack_speed",
                     "id": "azr:zombie_stone_axe.attack_speed",
                     "amount": -2.77,
                     "operation": "add_value",
