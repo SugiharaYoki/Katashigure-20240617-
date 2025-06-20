@@ -1,0 +1,1 @@
+give @s compass[custom_name='{"text":"探测罗盘","italic": false}',lore=['{"text":"持有该罗盘，将探测附近的灵能反应","color": "gray","italic": false}'],custom_data={azr_compass:1b},custom_model_data={floats:[100001]}]

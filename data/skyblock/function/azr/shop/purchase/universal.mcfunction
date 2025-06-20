@@ -16,7 +16,7 @@ execute if score @s Azr_Shop matches 8431513 \
     run function skyblock:azr/shop/purchase/universal/arrow_damage
 
 execute if score @s Azr_Shop matches 8431514 \
-    if items entity @s container.* black_dye[count={min:1},custom_data~{insect_remains:1b}] \
+    if items entity @s container.* black_dye[count={min:1},custom_data~{insect_remaining:1b}] \
     if items entity @s container.* bone[count={min:1},custom_data~{hard_bone:1b}] \
     run function skyblock:azr/shop/purchase/universal/arrow_heal
 
