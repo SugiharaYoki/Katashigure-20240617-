@@ -4,6 +4,9 @@ execute as @e[x=90100,y=100,z=100,distance=0..500,type=!player] at @s run tp ~ ~
 
 forceload add 90040 -20 90170 170
 forceload add 90000 0 90200 200
+forceload add 90141 -1888 90236 -1835
+
+
 
 scoreboard players set @a SEAPT_member 0
 scoreboard players set SEAmusic rng1 0
@@ -1027,5 +1030,22 @@ setblock 90153 138 126 stone_bricks
 
 setblock 90148 171 -1874 chest[facing=west]
 item replace block 90148 171 -1874 container.13 with emerald 20
+#setblock 90169 172 -1874 minecraft:waxed_copper_bulb[lit=false]
+
+
+
+
+
+
+
+
+
+
+
+forceload remove 90141 -1888 90236 -1835
+
+
+
+
 
 
