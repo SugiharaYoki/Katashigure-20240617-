@@ -17,7 +17,7 @@ execute unless entity @n[tag=SEAedwina] positioned 90147.99 171.00 -1878.01 run 
 execute unless entity @n[tag=SEAedwina] positioned 90147.99 171.00 -1878.01 run function skyblock:sea/e/ch6/edwina/init
 
 
-
+execute as @a[tag=SEAPT] at @s run attribute @s minecraft:jump_strength modifier remove sea:marilyn_01
 
 
 
