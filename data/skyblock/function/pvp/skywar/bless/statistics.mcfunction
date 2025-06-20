@@ -1,4 +1,4 @@
-scoreboard objectives add ishtar_statistics
+scoreboard objectives add ishtar_statistics dummy
 
 execute as @a[scores={ishtar_bless_1=1}] run scoreboard players add #ishtar_statistics_1 ishtar_statistics 1
 execute as @a[scores={ishtar_bless_1=2}] run scoreboard players add #ishtar_statistics_2 ishtar_statistics 1

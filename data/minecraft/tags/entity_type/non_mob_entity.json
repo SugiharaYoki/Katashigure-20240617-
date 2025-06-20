@@ -16,7 +16,7 @@
         "minecraft:wither_skull",
         "minecraft:experience_orb",
         "minecraft:item",
-        "minecraft:boat",
+        "#minecraft:boat",
         "minecraft:minecart",
         "minecraft:chest_minecart",
         "minecraft:command_block_minecart",
