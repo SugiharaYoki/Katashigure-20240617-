@@ -19,7 +19,7 @@ tellraw @s[tag=AZS_BoS06] [{"text":"   "},{"text":"弹簧箭盒 ×1","color":"re
 #tellraw @s[tag=AZS_BoS04,tag=Azr_SExUp08] [{"text":"   "},{"text":"Suspension","color":"red"},{"text":"   20 绿宝石 ","color":"gold"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8431539"},"hoverEvent":{"action":"show_text","contents":{"text":"流之核心 钢之核心","color":"white"}}}]
 #tellraw @s[tag=AZS_BoS09] [{"text":"   "},{"text":"Impersonate","color":"red"},{"text":"   20 绿宝石 ","color":"gold"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8431547"},"hoverEvent":{"action":"show_text","contents":{"text":"猝火核心","color":"white"}}}]
 tellraw @s {"text":"   "}
-tellraw @s [{"text":"  绿宝石余额：  ","color":"yellow"},{"score":{"name":"@s","objective":"Temp_PersonAZS"}}]
+tellraw @s [{"text":"  绿宝石余额：  ","color":"yellow"},{"score":{"name":"@s","objective":"Azr_emerald"}}]
 #execute if entity @s[scores={SeGa_StandLastB=10..}] run tellraw @s [{"text":"  沙利叶之星：  ","color":"yellow"},{"score":{"name":"@s","objective":"Temp_PersonAZSt"}}]
 tellraw @s {"text":"   "}
 scoreboard players set @s Azr_Shop 0

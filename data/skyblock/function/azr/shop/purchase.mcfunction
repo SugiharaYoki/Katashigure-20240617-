@@ -49,4 +49,5 @@ function skyblock:azr/shop/purchase/universal
 
 execute if score @s Azr_Shop matches 84300..84309 run function skyblock:azr/shop/build
 execute if score @s Azr_Shop matches 8431511..8431516 run function skyblock:azr/shop/reader_arrowshop
+execute if score @s Azr_Shop matches 8431522..8431546 run function skyblock:azr/shop/reader_ramiel
 scoreboard players set @s Azr_Shop 0
