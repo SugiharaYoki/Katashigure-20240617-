@@ -44,6 +44,7 @@ scoreboard players operation @s Azr_startCount = Pointer Azr_startCount
 
 #输出信息
 tellraw @s {"text":"游戏开始……","color":"green"}
+execute as @s[tag=DebugMode] run scoreboard objectives setdisplay sidebar Azr_system
 #function skyblock:azr/purchase_sega_azriel_plypts_react1
 
 #wtf

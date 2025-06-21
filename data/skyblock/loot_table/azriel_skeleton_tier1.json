@@ -56,14 +56,14 @@
                 },
                 "attribute_modifiers": [
                   {
-                    "type": "generic.attack_damage",
+                    "type": "attack_damage",
                     "id": "azr:bone_shovel.attack_damage",
                     "amount": 6,
                     "operation": "add_value",
                     "slot": "mainhand"
                   },
                   {
-                    "type": "generic.attack_speed",
+                    "type": "attack_speed",
                     "id": "azr:bone_shovel.attack_speed",
                     "amount": -3.50,
                     "operation": "add_value",

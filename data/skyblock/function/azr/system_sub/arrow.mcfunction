@@ -1,6 +1,6 @@
 execute unless entity @s[predicate=skyblock:sneaking] run clear @s *[custom_data~{skill_arrow_temp:1b}]
-execute unless entity @s[predicate=skyblock:sneaking] run item modify entity @s weapon.mainhand {function:"set_custom_data",tag:{skill_arrow:0b}}
-execute unless entity @s[predicate=skyblock:sneaking] run item modify entity @s weapon.offhand {function:"set_custom_data",tag:{skill_arrow:0b}}
+execute unless entity @s[predicate=skyblock:sneaking] if items entity @s weapon.mainhand *[custom_data~{skill_arrow:1b}] run item modify entity @s weapon.mainhand {function:"set_custom_data",tag:{skill_arrow:0b}}
+execute unless entity @s[predicate=skyblock:sneaking] if items entity @s weapon.offhand *[custom_data~{skill_arrow:1b}] run item modify entity @s weapon.offhand {function:"set_custom_data",tag:{skill_arrow:0b}}
 
 title @s[predicate=skyblock:sneaking,scores={AZR_arrow_energy=1..}] actionbar [{"text":"残余能量 ","color": "aqua"},{"score": {"name": "@s","objective": "AZR_arrow_energy"},"color": "yellow"},{"text":"/1","color": "yellow"}]
 title @s[predicate=skyblock:sneaking,scores={AZR_arrow_energy=0}] actionbar [{"text":"残余能量 ","color": "aqua"},{"score": {"name": "@s","objective": "AZR_arrow_energy"},"color": "red"},{"text":"/1","color": "red"}]

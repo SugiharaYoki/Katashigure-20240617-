@@ -1,6 +1,5 @@
 execute as @a[tag=azrPlayer] run function skyblock:azr/player_slow
 #该函数是花园的时序函数，每秒运行一次
-execute as @a[tag=azrPlayer,tag=DebugMode] run scoreboard objectives setdisplay sidebar Azr_system
 #统计信息，怪物统计limit=70是因为停秒统计最多出现65，这样写是为了优化选择器
 execute store result score playerCount Azr_system if entity @a[tag=azrPlayer,gamemode=!spectator]
 scoreboard players operation playerCount Azr_system += DEBUG_fakePlayer Azr_system
@@ -138,11 +137,6 @@ execute if entity @a[scores={Azr_wave=36..}] run scoreboard players set chapter 
 #execute as @e[tag=AzrielMob,tag=!AzrielDecMob,tag=!AzrielBossA,tag=!AzrielBossB,type=spider] at @s run scoreboard players add @s SeGa_BecomeWild 9
 #execute as @e[tag=AzrielMob,tag=!AzrielDecMob,tag=!AzrielBossA,tag=!AzrielBossB,type=cave_spider] at @s run scoreboard players add @s SeGa_BecomeWild 9
 #execute as @e[tag=AzrielMob,tag=!AzrielDecMob,scores={SeGa_BecomeWild=240..}] at @s run tag @s add AzrielDecMob
-#探测罗盘
-#execute as @a[nbt={SelectedItem:{id:"minecraft:compass"}}] at @s unless entity @e[distance=0..20,tag=AzrielBossB] run function skyblock:azr/azrielsmidgarden_effect_compass
-#execute as @a[nbt={SelectedItem:{id:"minecraft:compass"}}] at @s if entity @e[distance=0..20,tag=AzrielBossB] run function skyblock:azr/azrielsmidgarden_effect_compass_boss3
-#execute as @a[tag=azrPlayer] at @s if score @s Azr_startCount < Pointer Azr_startCount run kill @s
-
 #重置计时器
 scoreboard players set gametick Azr_system 0
 

@@ -21,7 +21,7 @@
                   "floats": [100001.0]
                 },
                 "custom_data": {
-                  "insect_remains": 1
+                  "insect_remaining": 1
                 }
               }
             }

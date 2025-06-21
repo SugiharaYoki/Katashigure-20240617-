@@ -19,6 +19,8 @@ function skyblock:azr/shop/purchase/category3 {rng:8,trigger:84306}
 #-----------------9 skilled
 execute as @s[scores={Azr_SK5=3..}] run function skyblock:azr/shop/purchase/category3 {rng:9,trigger:84309}
 
+execute if score @s Azr_Shop matches 8431522..8431546 run function skyblock:azr/shop/purchase/ramiel
+
 execute if score tempPlayerShopSuccess Azr_system matches 0 run tellraw @s [{"text":"生命手册没有回应，素材不符！","color":"red"}]
 scoreboard players reset tempPlayerShopSuccess Azr_system
 
@@ -47,4 +49,5 @@ function skyblock:azr/shop/purchase/universal
 
 execute if score @s Azr_Shop matches 84300..84309 run function skyblock:azr/shop/build
 execute if score @s Azr_Shop matches 8431511..8431516 run function skyblock:azr/shop/reader_arrowshop
+execute if score @s Azr_Shop matches 8431522..8431546 run function skyblock:azr/shop/reader_ramiel
 scoreboard players set @s Azr_Shop 0

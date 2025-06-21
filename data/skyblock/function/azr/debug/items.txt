@@ -1,3 +1,5 @@
+指南针
+    azr_compass 探测罗盘 100001
 石英
     quartz 魔界石英 100001
 僵尸头
@@ -7,7 +9,7 @@
 绿色染料
     grass_remains 草附的虫骸 100001
 黑色染料
-    insect_remains 虫骸 100001
+    insect_remaining 虫骸 100001
 红色染料
     remnant 遗存的狂戮 100001
 骨头
