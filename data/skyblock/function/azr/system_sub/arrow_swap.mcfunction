@@ -10,6 +10,7 @@ execute unless score @s[tag=!DEBUG_infinityEnergy] AZR_arrow_energy matches 1.. 
 scoreboard players remove @s[scores={AZR_arrow_energy=1..}] AZR_arrow_energy 1
 
 execute at @s anchored eyes run summon arrow ^ ^ ^ {Tags:["skill_arrow_temp"]}
+execute at @s facing ^ ^ ^-1 run tp @n[type=arrow,tag=skill_arrow_temp,distance=..1] ~ ~ ~ ~ ~ 
 execute at @s positioned 0. 0. 0. as 0-0-0-0-0 run function skyblock:azr/system_sub/world_entity_get_motion_3
 execute store result entity @n[tag=skill_arrow_temp] Motion[0] double 0.001 run scoreboard players get motion_x Azr_system
 execute store result entity @n[tag=skill_arrow_temp] Motion[1] double 0.001 run scoreboard players get motion_y Azr_system
