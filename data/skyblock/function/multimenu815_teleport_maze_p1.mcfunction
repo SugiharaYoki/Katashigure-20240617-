@@ -38,6 +38,8 @@ tellraw @s[scores={MazeLS=26..}] [{"text":"  23","bold":false,"color":"blue","cl
 tellraw @s[scores={MazeLS=27..}] [{"text":"《蝶卉的废垣》","bold":false,"color":"white"},{"text":"3层~??层","bold":false,"color":"gray"}]
 tellraw @s[scores={MazeLS=27}] [{"text":"  27","bold":false,"color":"blue","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 815027"}}]
 tellraw @s[scores={MazeLS=28}] [{"text":"  27","bold":false,"color":"blue","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 815027"}},{"text":"  28","bold":false,"color":"blue","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 815028"}}]
+tellraw @s[scores={MazeLS=29}] [{"text":"  27","bold":false,"color":"blue","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 815027"}},{"text":"  28","bold":false,"color":"blue","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 815028"}},{"text":"  29","bold":false,"color":"blue","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 815029"}}]
+tellraw @s[scores={MazeLS=30..}] [{"text":"  27","bold":false,"color":"blue","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 815027"}},{"text":"  28","bold":false,"color":"blue","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 815028"}},{"text":"  29","bold":false,"color":"blue","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 815029"}},{"text":"  30","bold":false,"color":"blue","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 815030"}}]
 
 
 #tellraw @s[scores={MazeLS=??..}] {"text":"","bold":false}
