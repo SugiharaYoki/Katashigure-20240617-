@@ -4,7 +4,7 @@ forceload add 50000 50000 50200 50200
 setblock 50000 18 50000 structure_block{ignoreEntities:0b,powered:0b,rotation:"NONE",posX:0,posY:1,posZ:0,mode:"LOAD",name:"skywar_map019:01"}
 setblock 50000 17 50000 redstone_block
 fill 50000 17 50000 50000 18 50000 air
-setblock 50048 18 50000 structure_block{ignoreEntities:0b,powered:0b,rotation:"NONE",posX:0,posY:1,posZ:0,mode:"LOAD",name:"skywar_map019:01"}
+setblock 50048 18 50000 structure_block{ignoreEntities:0b,powered:0b,rotation:"NONE",posX:0,posY:1,posZ:0,mode:"LOAD",name:"skywar_map019:02"}
 setblock 50048 17 50000 redstone_block
 fill 50048 17 50000 50048 18 50000 air
 setblock 50096 18 50000 structure_block{ignoreEntities:0b,powered:0b,rotation:"NONE",posX:0,posY:1,posZ:0,mode:"LOAD",name:"skywar_map019:03"}
