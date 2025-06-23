@@ -233,3 +233,20 @@ execute if score sc TimeRemainUnsee matches 300 if score sc Map_Code matches 18 
 execute if score sc TimeRemainUnsee matches 300 if score sc Map_Code matches 18 run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run title @a[tag=PVP_see] title {"text":"水灵脉的诱惑","color":"yellow"}
 execute if score sc TimeRemainUnsee matches 300 if score sc Map_Code matches 18 run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run title @a[tag=PVP_see] subtitle {"text":"“你是否听到了水妖的歌声？那是为了将你引导至黄泉”","color":"yellow"}
 execute if score sc TimeRemainUnsee matches 300 if score sc Map_Code matches 18 run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run worldborder set 20 420
+
+
+execute if score sc TimeRemainUnsee matches 400 if score sc Map_Code matches 19 run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run title @a[tag=PVP_see] times 0 60 60
+execute if score sc TimeRemainUnsee matches 400 if score sc Map_Code matches 19 run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run title @a[tag=PVP_see] title {"text":"失色园的色彩永无回归之日","color":"white"}
+execute if score sc TimeRemainUnsee matches 400 if score sc Map_Code matches 19 run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run title @a[tag=PVP_see] subtitle {"text":"“神明聆听人们的祈祷 却仍将惩罚降临至此”","color":"white"}
+execute if score sc TimeRemainUnsee matches 400 if score sc Map_Code matches 19 run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run worldborder set 79 50
+execute if score sc TimeRemainUnsee matches 200 if score sc Map_Code matches 19 run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run title @a[tag=PVP_see] times 0 60 60
+execute if score sc TimeRemainUnsee matches 200 if score sc Map_Code matches 19 run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run title @a[tag=PVP_see] title {"text":"失色园的生命永无回归之日","color":"white"}
+execute if score sc TimeRemainUnsee matches 200 if score sc Map_Code matches 19 run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run title @a[tag=PVP_see] subtitle {"text":"“昔日的屠戮将会永恒地刻印为人类的罪孽”","color":"white"}
+execute if score sc TimeRemainUnsee matches 200 if score sc Map_Code matches 19 run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run worldborder set 47 50
+
+execute if score sc TimeRemainUnsee matches 000 if score sc Map_Code matches 19 run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run title @a[tag=PVP_see] times 0 60 60
+execute if score sc TimeRemainUnsee matches 000 if score sc Map_Code matches 19 run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run title @a[tag=PVP_see] title {"text":"失色园的时间永无回归之日","color":"white"}
+execute if score sc TimeRemainUnsee matches 000 if score sc Map_Code matches 19 run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run title @a[tag=PVP_see] subtitle {"text":"“诅咒从来都只会是永恒的恶意 神明的怒火无法被人类熄灭”","color":"white"}
+execute if score sc TimeRemainUnsee matches 000 if score sc Map_Code matches 19 run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run worldborder set 1 200
+
+
