@@ -67,6 +67,7 @@ execute if score skywar_start rng1 matches 3 if entity @n[tag=!MapLoaAlr,tag=sc]
 execute if score skywar_start rng1 matches 3 if entity @n[tag=!MapLoaAlr,tag=sc] if score sc Map_Code matches 16 run function skyblock:pvp/skywar/system/init/map/map016_part1_hard
 execute if score skywar_start rng1 matches 3 if entity @n[tag=!MapLoaAlr,tag=sc] if score sc Map_Code matches 17 run function skyblock:pvp/skywar/system/init/map/map017_part1_hard
 execute if score skywar_start rng1 matches 3 if entity @n[tag=!MapLoaAlr,tag=sc] if score sc Map_Code matches 18 run function skyblock:pvp/skywar/system/init/map/map018_part1_hard
+execute if score skywar_start rng1 matches 3 if entity @n[tag=!MapLoaAlr,tag=sc] if score sc Map_Code matches 19 run function skyblock:pvp/skywar/system/init/map/map019_part1_hard
 #[futuredevskywar]
 execute if score skywar_start rng1 matches 3 if entity @n[tag=!MapLoaAlr,tag=sc] if score sc Map_Code matches 14 run forceload remove -9838 -10164 -9709 -10035
 execute if score skywar_start rng1 matches 3 if entity @n[tag=!MapLoaAlr,tag=sc] run tag @n[tag=sc] add MapLoaAlr
@@ -248,6 +249,8 @@ execute if score skywar_start rng1 matches 13 if score sc Map_Code matches 17 ru
 execute if score skywar_start rng1 matches 13 if score sc Map_Code matches 17 run title @a[tag=PVP_see] subtitle {"text":"空中军舰锈迹斑斑 刺耳的金属尖啸诠释着何类的昔日辉煌？","color":"white"}
 execute if score skywar_start rng1 matches 13 if score sc Map_Code matches 18 run title @a[tag=PVP_see] title {"text":"穷泽叢烬的水灵脉","color":"white"}
 execute if score skywar_start rng1 matches 13 if score sc Map_Code matches 18 run title @a[tag=PVP_see] subtitle {"text":"昔日水元素最为充沛之所 终也会被滔泊而湮覆","color":"white"}
+execute if score skywar_start rng1 matches 13 if score sc Map_Code matches 19 run title @a[tag=PVP_see] title {"text":"失色园","color":"white"}
+execute if score skywar_start rng1 matches 13 if score sc Map_Code matches 19 run title @a[tag=PVP_see] subtitle {"text":"","color":"white"}
 #[futuredevskywar]
 execute if block -19 23 32 minecraft:soul_lantern if score skywar_start rng1 matches 17 run effect clear @a[tag=PVPing]
 execute if block -19 23 32 minecraft:soul_lantern if score skywar_start rng1 matches 17 as @a[tag=PVPing] at @s run function skyblock:pvp/skywar/system/jobbonus
