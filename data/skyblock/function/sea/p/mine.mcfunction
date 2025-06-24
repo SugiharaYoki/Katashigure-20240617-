@@ -24,7 +24,6 @@ execute if entity @s[tag=!sea_mine_player] if score @s sea_4temp1 matches 20 as 
 execute if entity @s[tag=!sea_mine_player] if score @s sea_4temp1 matches 20 as @e[distance=0..2.6] run damage @s 18 explosion
 execute if entity @s[tag=!sea_mine_player] if score @s sea_4temp1 matches 20 as @e[distance=0..3.3] run damage @s 12 explosion
 execute if entity @s[tag=!sea_mine_player] if score @s sea_4temp1 matches 20 as @e[distance=0..4.2] run damage @s 6 explosion
-say test
 execute if entity @s[tag=!sea_mine_player] if score @s sea_4temp1 matches 20 if entity @e[tag=SEAboss4,distance=0..4.2] run give @a[tag=SEAPT,advancements={skyblock:sea/doc/g22=false}] mojang_banner_pattern[custom_data={sea_docg22:true}]
 
 execute if entity @s[tag=!sea_mine_player] if score @s sea_4temp1 matches 20 run kill @e[type=arrow,distance=0..2]
