@@ -1,0 +1,1 @@
+execute if entity @a[tag=mg_warbridge] run function skyblock:mg/warbridge/core
