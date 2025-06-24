@@ -11,10 +11,10 @@ execute if entity @a[tag=mg_warbridge] run function skyblock:mg/warbridge/outbou
 
 execute as @a[tag=mg_warbridge,scores={MG_death=1..}] at @s run function skyblock:mg/warbridge/death
 
-execute unless block -122 59 -185 green_wool run effect give @a[tag=mg_warbridge] haste 30 0 true
-execute if block -122 59 -185 green_wool run effect give @a[tag=mg_warbridge] haste 30 2 true
-execute if block -122 59 -185 green_wool run effect give @a[tag=mg_warbridge] resistance 30 1 true
-execute if block -122 59 -185 green_wool run effect give @a[tag=mg_warbridge] speed 30 0 true
+execute unless block -122 59 -185 lime_concrete run effect give @a[tag=mg_warbridge] haste 30 0 true
+execute if block -122 59 -185 lime_concrete run effect give @a[tag=mg_warbridge] haste 30 2 true
+execute if block -122 59 -185 lime_concrete run effect give @a[tag=mg_warbridge] resistance 30 1 true
+execute if block -122 59 -185 lime_concrete run effect give @a[tag=mg_warbridge] speed 30 0 true
 
 scoreboard players add @n[tag=MG_WARBRIDGE_anchor] rng9 1
 
