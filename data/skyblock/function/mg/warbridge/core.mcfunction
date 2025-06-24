@@ -11,3 +11,6 @@ execute if entity @a[tag=mg_warbridge] run function skyblock:mg/warbridge/outbou
 execute as @a[tag=mg_warbridge,scores={MG_death=1..}] at @s run function skyblock:mg/warbridge/death
 
 effect give @a[tag=mg_warbridge] haste 30 2 true
+
+tellraw @a[tag=mg_warbridge] [{"text":"绿队生命 ","color":"green","bold": true},{"score":{"name":"@n[tag=MG_WARBRIDGE_anchor]","objective":"rng1"},"color": "green","bold": true},{"text":" || ","color":"white","bold": true},{"score":{"name":"@n[tag=MG_WARBRIDGE_anchor]","objective":"rng2"},"color": "red","bold": true},{"text":" 红队生命","color":"red","bold": true}]
+
