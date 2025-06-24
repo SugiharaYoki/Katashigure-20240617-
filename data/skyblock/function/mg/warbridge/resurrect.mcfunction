@@ -1,14 +1,14 @@
 clear @s
 
-item replace entity @s hotbar.0 with iron_sword
-item replace entity @s hotbar.1 with iron_axe
+item replace entity @s hotbar.0 with iron_axe
+item replace entity @s hotbar.1 with iron_pickaxe[minecraft:can_break={blocks:"#mg_warbridge_buildable"}]
 item replace entity @s hotbar.2 with fishing_rod
 item replace entity @s hotbar.8 with golden_carrot 3
 
 item replace entity @s[team=war_bridge_lime] armor.chest with minecraft:leather_chestplate[dyed_color={rgb:3137865},trim={material:"minecraft:emerald",pattern:"minecraft:tide"}]
-item replace entity @s[team=war_bridge_lime] armor.head with give @s minecraft:leather_helmet[dyed_color={rgb:3137865},trim={material:"minecraft:emerald",pattern:"minecraft:tide"}]
+item replace entity @s[team=war_bridge_lime] armor.head with minecraft:leather_helmet[dyed_color={rgb:3137865},trim={material:"minecraft:emerald",pattern:"minecraft:tide"}]
 item replace entity @s[team=war_bridge_orange] armor.chest with minecraft:leather_chestplate[dyed_color={rgb:15968591},trim={material:"minecraft:redstone",pattern:"minecraft:rib"}]
-item replace entity @s[team=war_bridge_orange] armor.head with give @s minecraft:leather_helmet[dyed_color={rgb:15968591},trim={material:"minecraft:redstone",pattern:"minecraft:rib"}]
+item replace entity @s[team=war_bridge_orange] armor.head with minecraft:leather_helmet[dyed_color={rgb:15968591},trim={material:"minecraft:redstone",pattern:"minecraft:rib"}]
 
 give @s[team=war_bridge_lime] minecraft:lime_concrete[minecraft:can_place_on={blocks:"#mg_warbridge_buildable"}] 16
 give @s[team=war_bridge_lime] minecraft:lime_stained_glass[minecraft:can_place_on={blocks:"#mg_warbridge_buildable"}] 16

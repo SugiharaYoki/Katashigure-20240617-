@@ -9,3 +9,5 @@ execute as @a[tag=mg_warbridge,team=war_bridge_orange] at @s if block ~ ~-0.8 ~ 
 execute if entity @a[tag=mg_warbridge] run function skyblock:mg/warbridge/outbound
 
 execute as @a[tag=mg_warbridge,scores={Azr_isDead=1..}] at @s run function skyblock:mg/warbridge/death
+
+effect give @a[tag=mg_warbridge] haste 30 1 true
