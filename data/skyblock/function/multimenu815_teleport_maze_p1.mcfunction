@@ -40,7 +40,7 @@ tellraw @s[scores={MazeLS=27}] [{"text":"  27","bold":false,"color":"blue","clic
 tellraw @s[scores={MazeLS=28}] [{"text":"  27","bold":false,"color":"blue","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 815027"}},{"text":"  28","bold":false,"color":"blue","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 815028"}}]
 tellraw @s[scores={MazeLS=29}] [{"text":"  27","bold":false,"color":"blue","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 815027"}},{"text":"  28","bold":false,"color":"blue","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 815028"}},{"text":"  29","bold":false,"color":"blue","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 815029"}}]
 tellraw @s[scores={MazeLS=30..}] [{"text":"  27","bold":false,"color":"blue","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 815027"}},{"text":"  28","bold":false,"color":"blue","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 815028"}},{"text":"  29","bold":false,"color":"blue","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 815029"}},{"text":"  30","bold":false,"color":"blue","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 815030"}}]
-
+tellraw @s[scores={MazeLS=31..}] [{"text":"《黑湮的虚砦》","bold":false,"color":"white"},{"text":"??层~??层","bold":false,"color":"gray"}]
 
 #tellraw @s[scores={MazeLS=??..}] {"text":"","bold":false}
 #tellraw @s[scores={MazeLS=??..}] {"text":"  [下一页]","bold":false,"color":"green","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 811"}}
