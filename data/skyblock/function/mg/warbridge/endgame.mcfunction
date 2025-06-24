@@ -1,4 +1,4 @@
-function skyblock:mg/warbridge/regenerate
+
 
 execute as @a[tag=mg_warbridge] at @s run clear @s
 execute as @a[tag=mg_warbridge] at @s run function skyblock:pvp/skywar/system/removeallgaming
@@ -10,5 +10,5 @@ execute if score @n[tag=MG_WARBRIDGE_anchor] rng1 matches ..0 if score @n[tag=MG
 tellraw @a [{"text":"一轮「战桥」游戏结束了","color":"aqua"}]
 
 
-
+function skyblock:mg/warbridge/regenerate
 
