@@ -6,5 +6,7 @@ tag @s add Gaming
 tag @s add NoMultiMenu
 tag @s add mg_warbridge
 
+scoreboard players set @s Azr_isDead 0
+
 function skyblock:mg/warbridge/resurrect
 
