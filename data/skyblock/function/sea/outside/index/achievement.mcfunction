@@ -56,7 +56,6 @@ scoreboard players add @s[advancements={skyblock:sea/doc/b13=true}] rng3 1
 scoreboard players add @s[advancements={skyblock:sea/doc/b14=true}] rng3 1
 scoreboard players add @s[advancements={skyblock:sea/doc/b15=true}] rng3 1
 scoreboard players add @s[advancements={skyblock:sea/doc/b16=true}] rng5 1
-scoreboard players add @s[advancements={skyblock:sea/doc/b16=true}] rng5 1
 scoreboard players add @s[advancements={skyblock:sea/doc/b17=true}] rng7 1
 scoreboard players add @s[advancements={skyblock:sea/doc/b18=true}] rng5 1
 scoreboard players add @s[advancements={skyblock:sea/doc/b19=true}] rng3 1
@@ -107,8 +106,8 @@ scoreboard players add @s[advancements={skyblock:sea/doc/w27=true}] rng4 1
  tellraw @s[scores={rng3=14..}] [{"text":"第三章 档案 ","color":"light_purple","bold": true},{"score":{"name":"@s","objective":"rng3"},"color":"green","bold": false},{"text":"/14","color":"green","bold": false}]
  tellraw @s[scores={rng4=..14}] [{"text":"第四章 档案 ","color":"light_purple","bold": true},{"score":{"name":"@s","objective":"rng4"},"color":"white","bold": false},{"text":"/15","color":"white","bold": false}]
  tellraw @s[scores={rng4=15..}] [{"text":"第四章 档案 ","color":"light_purple","bold": true},{"score":{"name":"@s","objective":"rng4"},"color":"green","bold": false},{"text":"/15","color":"green","bold": false}]
- tellraw @s[scores={rng5=..3}] [{"text":"第五章 档案 ","color":"light_purple","bold": true},{"score":{"name":"@s","objective":"rng5"},"color":"white","bold": false},{"text":"/4","color":"white","bold": false}]
- tellraw @s[scores={rng5=4..}] [{"text":"第五章 档案 ","color":"light_purple","bold": true},{"score":{"name":"@s","objective":"rng5"},"color":"green","bold": false},{"text":"/4","color":"green","bold": false}]
+ tellraw @s[scores={rng5=..4}] [{"text":"第五章 档案 ","color":"light_purple","bold": true},{"score":{"name":"@s","objective":"rng5"},"color":"white","bold": false},{"text":"/4","color":"white","bold": false}]
+ tellraw @s[scores={rng5=5..}] [{"text":"第五章 档案 ","color":"light_purple","bold": true},{"score":{"name":"@s","objective":"rng5"},"color":"green","bold": false},{"text":"/4","color":"green","bold": false}]
 
  tellraw @s[scores={rng7=..9}] [{"text":"第六章 档案 ","color":"light_purple","bold": true},{"score":{"name":"@s","objective":"rng7"},"color":"white","bold": false},{"text":"/?","color":"white","bold": false}]
  tellraw @s[scores={rng7=10..}] [{"text":"第六章 档案 ","color":"light_purple","bold": true},{"score":{"name":"@s","objective":"rng7"},"color":"green","bold": false},{"text":"/?","color":"green","bold": false}]
