@@ -11,6 +11,8 @@ execute as @e[tag=SEAmob,distance=3..4] run damage @s 16 explosion
 execute as @a[distance=0..0.3] run damage @s 24 explosion
 execute as @a[distance=0.3000001..1] run damage @s 16 explosion
 execute as @a[distance=1.000001..2.5] run damage @s 8 explosion
+say test
+execute if score @s sea_4temp1 matches 12 if entity @e[tag=SEAboss4,distance=0..4.2] run give @a[tag=SEAPT,advancements={skyblock:sea/doc/g22=false}] mojang_banner_pattern[custom_data={sea_docg22:true}]
 playsound entity.generic.explode block @a ~ ~ ~ 0.7 0.8
 playsound entity.creeper.primed block @a ~ ~ ~ 0.7 0.8
 kill @s[type=item]
