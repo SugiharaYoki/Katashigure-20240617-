@@ -28,5 +28,7 @@ scoreboard players set @n[tag=MG_WARBRIDGE_anchor] rng1 5
 scoreboard players set @n[tag=MG_WARBRIDGE_anchor] rng2 5
 
 
-
+setblock 124724 2 -147 minecraft:light_weighted_pressure_plate
+setblock 124722 2 -165 minecraft:heavy_weighted_pressure_plate
+setblock 124726 2 -129 minecraft:heavy_weighted_pressure_plate
 
