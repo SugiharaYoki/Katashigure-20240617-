@@ -232,8 +232,8 @@ setblock 90117 139 155 lever[facing=east]
 setblock 90117 137 142 chest[facing=north]
 item replace block 90117 137 142 container.13 with arrow 2
 
-summon painting 90122 138 146 {Facing:2b,variant:"minecraft:humble"}
-summon painting 90123 138 145 {Facing:1,variant:"minecraft:prairie_ride"}
+summon painting 90122 138 146 {facing:2b,variant:"minecraft:humble"}
+summon painting 90123 138 145 {facing:1,variant:"minecraft:prairie_ride"}
 setblock 90123 138 146 minecraft:potted_azure_bluet
 setblock 90130 138 140 minecraft:potted_cherry_sapling
 
@@ -390,7 +390,7 @@ setblock 90120 161 144 air
 setblock 90125 161 143 redstone_block
 setblock 90125 161 143 air
 
-summon painting 90121 162 148 {Facing:1b,variant:"minecraft:backyard"}
+summon painting 90121 162 148 {facing:1b,variant:"minecraft:backyard"}
 setblock 90120 162 140 minecraft:potted_red_tulip
 setblock 90129 162 143 minecraft:potted_cherry_sapling
 
