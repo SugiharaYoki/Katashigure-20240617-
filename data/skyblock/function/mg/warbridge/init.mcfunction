@@ -17,3 +17,6 @@ function skyblock:mg/warbridge/resurrect
 gamemode adventure
 
 scoreboard players set @s MultiMenu 0
+
+execute if block -122 59 -183 lime_concrete run attribute @s minecraft:knockback_resistance modifier add mg_warbridge:knockresist 1.0 add_value
+
