@@ -10,3 +10,4 @@ scoreboard players set @s MG_death 0
 
 function skyblock:mg/warbridge/resurrect
 
+gamemode adventure
