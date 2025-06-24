@@ -10,11 +10,11 @@ item replace entity @s[team=war_bridge_lime] armor.head with minecraft:leather_h
 item replace entity @s[team=war_bridge_orange] armor.chest with minecraft:leather_chestplate[dyed_color={rgb:15968591},trim={material:"minecraft:redstone",pattern:"minecraft:rib"}]
 item replace entity @s[team=war_bridge_orange] armor.head with minecraft:leather_helmet[dyed_color={rgb:15968591},trim={material:"minecraft:redstone",pattern:"minecraft:rib"}]
 
-give @s[team=war_bridge_lime] minecraft:lime_concrete[minecraft:can_place_on={blocks:"#mg_warbridge_buildable"}] 16
+give @s[team=war_bridge_lime] minecraft:lime_wool[minecraft:can_place_on={blocks:"#mg_warbridge_buildable"}] 16
 give @s[team=war_bridge_lime] minecraft:lime_stained_glass[minecraft:can_place_on={blocks:"#mg_warbridge_buildable"}] 16
 give @s[team=war_bridge_lime] minecraft:prismarine[minecraft:can_place_on={blocks:"#mg_warbridge_buildable"}] 16
 
-give @s[team=war_bridge_orange] minecraft:orange_concrete[minecraft:can_place_on={blocks:"#mg_warbridge_buildable"}] 16
+give @s[team=war_bridge_orange] minecraft:orange_wool[minecraft:can_place_on={blocks:"#mg_warbridge_buildable"}] 16
 give @s[team=war_bridge_orange] minecraft:orange_stained_glass[minecraft:can_place_on={blocks:"#mg_warbridge_buildable"}] 16
 give @s[team=war_bridge_orange] minecraft:red_sandstone[minecraft:can_place_on={blocks:"#mg_warbridge_buildable"}] 16
 
