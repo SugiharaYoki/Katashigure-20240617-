@@ -18,3 +18,6 @@ fill 124724 1 -162 124724 1 -132 air
 
 execute unless entity @n[tag=MG_WARBRIDGE_anchor] positioned 124712 -10 -172 run summon marker ~ ~ ~ {Tags:["MG_WARBRIDGE_anchor"]}
 
+
+scoreboard players set @n[tag=MG_WARBRIDGE_anchor] rng1 5
+scoreboard players set @n[tag=MG_WARBRIDGE_anchor] rng2 5
