@@ -9,7 +9,7 @@ team modify war_bridge_orange collisionRule pushOtherTeams
 team modify war_bridge_orange friendlyFire false
 team modify war_bridge_orange color red
 
-scoreboard objectives add Azr_isDead deathCount
+scoreboard objectives add MG_death minecraft.custom:minecraft.deaths
 
 fill 124728 2 -165 124720 19 -129 minecraft:air
 fill 124720 1 -162 124728 -10 -132 air

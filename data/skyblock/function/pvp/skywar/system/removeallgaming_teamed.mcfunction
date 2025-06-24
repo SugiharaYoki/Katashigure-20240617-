@@ -35,6 +35,10 @@ scoreboard players set @s If_Beetrtsoup 0
 scoreboard players set @s If_Bread 0
 scoreboard players set @s If_EscDeath 0
 
+scoreboard players set @s MG_death 0
+
+
+
 attribute @s attack_damage modifier remove 8603fc7b-b1fa-47c6-91f5-67d9b35e53d1
 attribute @s max_health modifier remove 8603fc7b-b1fa-47c6-91f5-67d9b35e53e1
 attribute @s movement_speed modifier remove 8603fc7b-b1fa-47c6-91f5-67d9b35e53f2

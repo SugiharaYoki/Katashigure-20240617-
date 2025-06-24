@@ -1,4 +1,4 @@
-scoreboard players set @s Azr_isDead 0
+scoreboard players set @s MG_death 0
 
 execute if entity @s[team=war_bridge_lime] run scoreboard players remove @n[tag=MG_WARBRIDGE_anchor] rng1 1
 execute if entity @s[team=war_bridge_orange] run scoreboard players remove @n[tag=MG_WARBRIDGE_anchor] rng2 1
