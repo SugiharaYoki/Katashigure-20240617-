@@ -6,6 +6,7 @@ tag @s remove PVP_observer
 tag @s remove PVP_win
 tag @s remove PVP_dead
 tag @s remove Gaming
+tag @s remove mg_warbridge
 tag @s remove ContinuePermission
 tag @s remove FallenSquareEntering
 tag @s remove Azr_player
@@ -144,3 +145,9 @@ attribute @s minecraft:entity_interaction_range modifier remove azr_chainkill_01
 attribute @s minecraft:attack_damage modifier remove azr_chainkill_02
 attribute @s minecraft:armor modifier remove azr_chainkill_03
 attribute @s minecraft:attack_speed modifier remove azr_chainkill_04
+
+
+
+
+
+
