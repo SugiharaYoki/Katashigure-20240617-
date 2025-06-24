@@ -39,7 +39,7 @@ tag @a[tag=PVPing] remove NoMultiMenu
 #无意义变量 scoreboard players reset @a RemainPlayer
 scoreboard players set sc If_Map_Changed 0
 #组队结束
-team leave @a
+team leave @a[tag=!Gaming]
 team remove Team1_1
 team remove Team1_2
 team remove Team1_3

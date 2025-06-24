@@ -69,6 +69,8 @@ execute as @s[scores={MultiMenu=834}] at @s run function skyblock:multimenu834_t
 execute if entity @s[scores={MultiMenu=828}] run function skyblock:multimenu828_teleport_xuanyuland1
 execute as @s[scores={MultiMenu=815001..815999}] at @s run function skyblock:world_system_functionreader_maze
 execute as @s[scores={MultiMenu=832001..832999}] at @s run function skyblock:world_system_functionreader_maze
+execute as @s[scores={MultiMenu=841}] at @s run function skyblock:mg/warbridge/team_join_lime
+execute as @s[scores={MultiMenu=842}] at @s run function skyblock:mg/warbridge/team_join_orange
 execute as @s[scores={MultiMenu=103}] at @s run function skyblock:multimenu103_setting_selectcitybgm_extend1a
 execute as @s[scores={MultiMenu=106}] at @s run function skyblock:multimenu052_changecitybgm1
 execute as @s[scores={MultiMenu=108}] at @s run function skyblock:multimenu108_setting_selectcitybgm_extend2a

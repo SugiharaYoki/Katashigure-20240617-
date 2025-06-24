@@ -6,6 +6,7 @@ tag @s remove PVP_observer
 tag @s remove PVP_win
 tag @s remove PVP_dead
 tag @s remove Gaming
+tag @s remove mg_warbridge
 tag @s remove ContinuePermission
 tag @s remove FallenSquareEntering
 tag @s remove Azr_player
@@ -33,6 +34,10 @@ scoreboard players set @s If_BakedPotato 0
 scoreboard players set @s If_Beetrtsoup 0
 scoreboard players set @s If_Bread 0
 scoreboard players set @s If_EscDeath 0
+
+scoreboard players set @s MG_death 0
+
+attribute @s minecraft:knockback_resistance modifier remove mg_warbridge:knockresist
 
 attribute @s attack_damage modifier remove 8603fc7b-b1fa-47c6-91f5-67d9b35e53d1
 attribute @s max_health modifier remove 8603fc7b-b1fa-47c6-91f5-67d9b35e53e1
@@ -144,3 +149,9 @@ attribute @s minecraft:entity_interaction_range modifier remove azr_chainkill_01
 attribute @s minecraft:attack_damage modifier remove azr_chainkill_02
 attribute @s minecraft:armor modifier remove azr_chainkill_03
 attribute @s minecraft:attack_speed modifier remove azr_chainkill_04
+
+
+
+
+
+

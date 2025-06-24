@@ -21,6 +21,6 @@ execute if score @s sea_4temp1 matches 12 as @e[tag=SEAmob,distance=0..1.3] run 
 execute if score @s sea_4temp1 matches 12 as @e[tag=SEAmob,distance=0..2.6] run damage @s 18 explosion
 execute if score @s sea_4temp1 matches 12 as @e[tag=SEAmob,distance=0..3.3] run damage @s 12 explosion
 execute if score @s sea_4temp1 matches 12 as @e[tag=SEAmob,distance=0..4.2] run damage @s 6 explosion
-execute if score @s sea_4temp1 matches 12 as @e[tag=SEAboss4,distance=0..4.2] run give @a[tag=SEAPT,advancements={skyblock:sea/doc/g22=false}] mojang_banner_pattern[custom_data={sea_docg22:true}]
+execute if score @s sea_4temp1 matches 12 if entity @e[tag=SEAboss4,distance=0..4.2] run give @a[tag=SEAPT,advancements={skyblock:sea/doc/g22=false}] mojang_banner_pattern[custom_data={sea_docg22:true}]
 
 execute if score @s sea_4temp1 matches 12 run kill @s[type=block_display]

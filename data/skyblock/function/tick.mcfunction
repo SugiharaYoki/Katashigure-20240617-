@@ -21,8 +21,8 @@ execute as @a[tag=City_DoubleJumpPass] at @s if block ~ ~-0.1 ~ air if entity @s
 execute as @a[scores={City_DoubleJump=1..},gamemode=adventure] at @s run function skyblock:city/double_jump
 execute as @a[tag=City_DoubleJumpPass] at @s unless block ~ ~-0.1 ~ air run tag @s remove City_DoubleJumpPass
 
-
-
+#战桥
+execute positioned 124733.22 -10.00 -126.36 run function skyblock:mg/warbridge/command_block
 
 
 
