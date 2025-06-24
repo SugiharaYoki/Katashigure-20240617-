@@ -6,7 +6,7 @@ item replace entity @s hotbar.2 with shears[minecraft:can_break={blocks:"#mg_war
 item replace entity @s hotbar.3 with fishing_rod[minecraft:can_break={blocks:"#mg_warbridge_buildable"}]
 
 execute if block -122 59 -182 minecraft:lime_concrete run item replace entity @s hotbar.4 with bow[minecraft:can_break={blocks:"#mg_warbridge_buildable"}]
-execute if block -122 59 -182 minecraft:lime_concrete run item replace entity @s hotbar.7 with arrow 8
+execute if block -122 59 -182 minecraft:lime_concrete run item replace entity @s inventory.0 with arrow 8
 
 item replace entity @s hotbar.8 with golden_carrot 3
 
