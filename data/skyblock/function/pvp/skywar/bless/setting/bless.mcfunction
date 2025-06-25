@@ -37,7 +37,7 @@ function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"尘埃法师"', ti
 function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"尘埃法师"', title:'"唤尘「漆幕虚垒」"', description:'"漆幕虚垒核心×4 在面前4格处召唤持续十数秒的烟幕"', id: 018, idsh: 18}
 function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"欺诈师"', title:'"瞒天「坠落狱穴」"', description:'"号角与特殊模板 放置于背包时吹响号角，即可将20格内的矿镐掉落物化作向下轰击的毁灭炮\\\\n开局会获得三个石镐\\\\n越强的镐破坏力越大"', id: 024, idsh: 24}
 function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"欺诈师"', title:'"乍现「诞生虚桥」"', description:'"鸡蛋×3、特殊模板 放置于背包时，5格内的鸡蛋会被附上“欺诈”状态\\\\n“欺诈”蛋会自动生成一条玻璃天桥\\\\n距离25格内没有玩家时将自动取消“欺诈”状态"', id: 025, idsh: 25}
-function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"欺诈师"', title:'"秘文「理性混淆」"', description:'"风弹×5、特殊模板 放置于背包时，5格内的风弹会被附上“混淆”状态\\\\n“混淆”风弹会自动对周围64格内的玩家输入大量的干扰文字\\\\n拥有“秘文「理性混淆」”模板的玩家可以免疫此效果"', id: 026, idsh: 26}
+function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"欺诈师"', title:'"秘文「理性混淆」"', description:'"风弹×10、特殊模板 放置于背包时，5格内的风弹会被附上“混淆”状态\\\\n“混淆”风弹会自动对周围64格内的玩家输入大量的干扰文字\\\\n拥有“秘文「理性混淆」”模板的玩家可以免疫此效果"', id: 026, idsh: 26}
 function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"欺诈师"', title:'"乍慌「虚惊戏谑」"', description:'"雪球×16、特殊模板 放置于背包时，每丢出一次雪球\\\\n便会为30格内的玩家播放一次虚假音效"', id: 029, idsh: 29}
 
 

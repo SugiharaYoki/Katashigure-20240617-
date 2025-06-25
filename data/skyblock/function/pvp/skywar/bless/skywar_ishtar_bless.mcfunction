@@ -170,10 +170,10 @@ execute if entity @s[scores={ishtar_bless_1=26}] run give @s silence_armor_trim_
 execute if entity @s[scores={ishtar_bless_2=26}] run give @s silence_armor_trim_smithing_template[custom_name='{"text":"理性混淆","italic":false,"color":"red"}',custom_data={skywar_ishtar_26:1},lore=['{"text":"5格内的风弹会被附上“混淆”状态","color":"white","italic":false}','{"text":"“混淆”风弹会自动对周围64格内的玩家输入大量的干扰文字","color":"white","italic":false}','{"text":"拥有这张模板的玩家可以免疫此效果","color":"white","italic":false}']] 1
 execute if entity @s[scores={ishtar_bless_3=26}] run give @s silence_armor_trim_smithing_template[custom_name='{"text":"理性混淆","italic":false,"color":"red"}',custom_data={skywar_ishtar_26:1},lore=['{"text":"5格内的风弹会被附上“混淆”状态","color":"white","italic":false}','{"text":"“混淆”风弹会自动对周围64格内的玩家输入大量的干扰文字","color":"white","italic":false}','{"text":"拥有这张模板的玩家可以免疫此效果","color":"white","italic":false}']] 1
 execute if entity @s[scores={ishtar_bless_4=26}] run give @s silence_armor_trim_smithing_template[custom_name='{"text":"理性混淆","italic":false,"color":"red"}',custom_data={skywar_ishtar_26:1},lore=['{"text":"5格内的风弹会被附上“混淆”状态","color":"white","italic":false}','{"text":"“混淆”风弹会自动对周围64格内的玩家输入大量的干扰文字","color":"white","italic":false}','{"text":"拥有这张模板的玩家可以免疫此效果","color":"white","italic":false}']] 1
-execute if entity @s[scores={ishtar_bless_1=26}] run give @s wind_charge 5
-execute if entity @s[scores={ishtar_bless_2=26}] run give @s wind_charge 5
-execute if entity @s[scores={ishtar_bless_3=26}] run give @s wind_charge 5
-execute if entity @s[scores={ishtar_bless_4=26}] run give @s wind_charge 5
+execute if entity @s[scores={ishtar_bless_1=26}] run give @s wind_charge 10
+execute if entity @s[scores={ishtar_bless_2=26}] run give @s wind_charge 10
+execute if entity @s[scores={ishtar_bless_3=26}] run give @s wind_charge 10
+execute if entity @s[scores={ishtar_bless_4=26}] run give @s wind_charge 10
 
 execute if entity @s[scores={ishtar_bless_1=27}] run give @s bolt_armor_trim_smithing_template[custom_name='{"text":"高速隧梯","italic":false,"color":"red"}',custom_data={skywar_ishtar_27:1},lore=['{"text":"拥有普通/激活铁轨时","color":"light_purple","italic":true}','{"text":"同时按左+右键 朝距离最近的横向正十字坐标打开一道通路","color":"white","italic":false}','{"text":"按SHIFT 则消耗激活铁轨 打开更长的通路","color":"white","italic":false}','{"text":"按空格键 则改为向上建造天梯","color":"white","italic":false}','{"text":"路径上的方块会成为掉落物","color":"green","italic":false}']] 1
 execute if entity @s[scores={ishtar_bless_2=27}] run give @s bolt_armor_trim_smithing_template[custom_name='{"text":"高速隧梯","italic":false,"color":"red"}',custom_data={skywar_ishtar_27:1},lore=['{"text":"拥有普通/激活铁轨时","color":"light_purple","italic":true}','{"text":"同时按左+右键 朝距离最近的横向正十字坐标打开一道通路","color":"white","italic":false}','{"text":"按SHIFT 则消耗激活铁轨 打开更长的通路","color":"white","italic":false}','{"text":"按空格键 则改为向上建造天梯","color":"white","italic":false}','{"text":"路径上的方块会成为掉落物","color":"green","italic":false}']] 1
