@@ -54,7 +54,9 @@ tag @s remove AzrielEvent3763S
 tag @s remove AzrielEvent3764S
 tag @s remove AzrielEvent3765S
 tag @s remove AzrielEvent3766S
-tag @a remove ProcessMachineBow
+tag @s remove ProcessMachineBow
+tag @s remove Skywar_ishtar_16_alarm10
+
 
 attribute @s attack_damage modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd001
 attribute @s attack_damage modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd002
