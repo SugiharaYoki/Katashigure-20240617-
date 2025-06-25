@@ -1,11 +1,11 @@
-execute if entity @s[team=Team1_1] unless entity @a[distance=0.1..10,team=!Team1_1] run tag @s add Skywar_ishtar_16_alarm10_temp
-execute if entity @s[team=Team1_2] unless entity @a[distance=0.1..10,team=!Team1_2] run tag @s add Skywar_ishtar_16_alarm10_temp
-execute if entity @s[team=Team1_3] unless entity @a[distance=0.1..10,team=!Team1_3] run tag @s add Skywar_ishtar_16_alarm10_temp
-execute if entity @s[team=Team1_4] unless entity @a[distance=0.1..10,team=!Team1_4] run tag @s add Skywar_ishtar_16_alarm10_temp
-execute if entity @s[team=Team1_5] unless entity @a[distance=0.1..10,team=!Team1_5] run tag @s add Skywar_ishtar_16_alarm10_temp
-execute if entity @s[team=Team1_6] unless entity @a[distance=0.1..10,team=!Team1_6] run tag @s add Skywar_ishtar_16_alarm10_temp
-execute if entity @s[team=Team1_7] unless entity @a[distance=0.1..10,team=!Team1_7] run tag @s add Skywar_ishtar_16_alarm10_temp
-execute if entity @s[team=Team1_8] unless entity @a[distance=0.1..10,team=!Team1_8] run tag @s add Skywar_ishtar_16_alarm10_temp
+execute if entity @s[team=Team1_1] unless entity @a[distance=..10,team=!Team1_1] run tag @s add Skywar_ishtar_16_alarm10_temp
+execute if entity @s[team=Team1_2] unless entity @a[distance=..10,team=!Team1_2] run tag @s add Skywar_ishtar_16_alarm10_temp
+execute if entity @s[team=Team1_3] unless entity @a[distance=..10,team=!Team1_3] run tag @s add Skywar_ishtar_16_alarm10_temp
+execute if entity @s[team=Team1_4] unless entity @a[distance=..10,team=!Team1_4] run tag @s add Skywar_ishtar_16_alarm10_temp
+execute if entity @s[team=Team1_5] unless entity @a[distance=..10,team=!Team1_5] run tag @s add Skywar_ishtar_16_alarm10_temp
+execute if entity @s[team=Team1_6] unless entity @a[distance=..10,team=!Team1_6] run tag @s add Skywar_ishtar_16_alarm10_temp
+execute if entity @s[team=Team1_7] unless entity @a[distance=..10,team=!Team1_7] run tag @s add Skywar_ishtar_16_alarm10_temp
+execute if entity @s[team=Team1_8] unless entity @a[distance=..10,team=!Team1_8] run tag @s add Skywar_ishtar_16_alarm10_temp
 
 
 
