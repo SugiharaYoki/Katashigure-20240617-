@@ -95,6 +95,7 @@ execute if score skywar_start rng1 matches 2 run scoreboard objectives add If_Bl
 execute if score skywar_start rng1 matches 2 run scoreboard objectives add If_Bless31 dummy
 execute if score skywar_start rng1 matches 2 run scoreboard objectives add If_Bless31c minecraft.custom:damage_dealt
 execute if score skywar_start rng1 matches 2 run scoreboard objectives add If_Bless32 dummy
+execute if score skywar_start rng1 matches 2 run scoreboard objectives add If_BlessDoDamage minecraft.custom:damage_dealt
 execute if score skywar_start rng1 matches 2 as @a[scores={If_Bless11=1..}] run attribute @s jump_strength modifier remove skywar_ishtar_bless11_01
 #无意义变量 scoreboard players reset @s RemainPlayer
 execute if score skywar_start rng1 matches 2 as @a[tag=!NoSkyWar] at @s run scoreboard players reset @s DeathCount
@@ -134,6 +135,7 @@ execute if score skywar_start rng1 matches 3 as @a[tag=!NoSkyWar] at @s run scor
 execute if score skywar_start rng1 matches 3 as @a[tag=!NoSkyWar] at @s run scoreboard players set @s If_Bless30 0
 execute if score skywar_start rng1 matches 3 as @a[tag=!NoSkyWar] at @s run scoreboard players set @s If_Bless31 0
 execute if score skywar_start rng1 matches 3 as @a[tag=!NoSkyWar] at @s run scoreboard players set @s If_Bless32 0
+execute if score skywar_start rng1 matches 3 as @a[tag=!NoSkyWar] at @s run scoreboard players set @s If_BlessDoDamage 0
 #execute if score skywar_start rng1 matches 3 as @a[tag=!NoSkyWar] at @s run scoreboard players set @s If_Bless31c 0
 execute if score skywar_start rng1 matches 3 run scoreboard objectives add TempIf_Job6A dummy
 execute if score skywar_start rng1 matches 3 run scoreboard objectives add TempIf_Job6B dummy
