@@ -1,11 +1,11 @@
-execute if entity @s[team=Team1_1] if entity @a[distance=..12,team=!Team1_1] run tag @s add Skywar_ishtar_16_alarm10_temp
-execute if entity @s[team=Team1_2] if entity @a[distance=..12,team=!Team1_2] run tag @s add Skywar_ishtar_16_alarm10_temp
-execute if entity @s[team=Team1_3] if entity @a[distance=..12,team=!Team1_3] run tag @s add Skywar_ishtar_16_alarm10_temp
-execute if entity @s[team=Team1_4] if entity @a[distance=..12,team=!Team1_4] run tag @s add Skywar_ishtar_16_alarm10_temp
-execute if entity @s[team=Team1_5] if entity @a[distance=..12,team=!Team1_5] run tag @s add Skywar_ishtar_16_alarm10_temp
-execute if entity @s[team=Team1_6] if entity @a[distance=..12,team=!Team1_6] run tag @s add Skywar_ishtar_16_alarm10_temp
-execute if entity @s[team=Team1_7] if entity @a[distance=..12,team=!Team1_7] run tag @s add Skywar_ishtar_16_alarm10_temp
-execute if entity @s[team=Team1_8] if entity @a[distance=..12,team=!Team1_8] run tag @s add Skywar_ishtar_16_alarm10_temp
+execute if entity @s[team=Team1_1] if entity @a[distance=..12,team=!Team1_1,gamemode=!spectator] run tag @s add Skywar_ishtar_16_alarm10_temp
+execute if entity @s[team=Team1_2] if entity @a[distance=..12,team=!Team1_2,gamemode=!spectator] run tag @s add Skywar_ishtar_16_alarm10_temp
+execute if entity @s[team=Team1_3] if entity @a[distance=..12,team=!Team1_3,gamemode=!spectator] run tag @s add Skywar_ishtar_16_alarm10_temp
+execute if entity @s[team=Team1_4] if entity @a[distance=..12,team=!Team1_4,gamemode=!spectator] run tag @s add Skywar_ishtar_16_alarm10_temp
+execute if entity @s[team=Team1_5] if entity @a[distance=..12,team=!Team1_5,gamemode=!spectator] run tag @s add Skywar_ishtar_16_alarm10_temp
+execute if entity @s[team=Team1_6] if entity @a[distance=..12,team=!Team1_6,gamemode=!spectator] run tag @s add Skywar_ishtar_16_alarm10_temp
+execute if entity @s[team=Team1_7] if entity @a[distance=..12,team=!Team1_7,gamemode=!spectator] run tag @s add Skywar_ishtar_16_alarm10_temp
+execute if entity @s[team=Team1_8] if entity @a[distance=..12,team=!Team1_8,gamemode=!spectator] run tag @s add Skywar_ishtar_16_alarm10_temp
 
 
 
