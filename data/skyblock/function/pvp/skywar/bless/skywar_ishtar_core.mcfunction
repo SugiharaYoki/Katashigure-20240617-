@@ -119,7 +119,7 @@ execute if items entity @s container.* *[custom_data={skywar_ishtar_33:1}] unles
 
 execute if items entity @s weapon.* *[custom_data={skywar_ishtar_34:1}] at @s run function skyblock:pvp/skywar/bless/skywar_ishtar_core34
 
-execute if items entity @s[scores={If_BlessDoDamage=1..}] at @s run function skyblock:pvp/skywar/bless/skywar_ishtar_damage_dealt
+execute if entity @s[scores={If_BlessDoDamage=1..}] at @s run function skyblock:pvp/skywar/bless/skywar_ishtar_damage_dealt
 
 
 
