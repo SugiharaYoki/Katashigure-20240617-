@@ -13,7 +13,7 @@ execute as @a[tag=skywar_ishtar_35_target] at @s run playsound minecraft:entity.
 tag @a[tag=skywar_ishtar_35_target] remove skywar_ishtar_35_target
 execute if items entity @s weapon.mainhand *[custom_data={skywar_ishtar_35:1}] run effect give @s regeneration 3 0 false
 
-execute if items entity @s weapon.mainhand *[custom_data={skywar_ishtar_6:1}] run effect give @s invisibility 3 0 false
+execute if items entity @s[scores={If_BlessDoDamage=10..}] weapon.mainhand *[custom_data={skywar_ishtar_6:1}] run effect give @s invisibility 3 0 false
 
 
 scoreboard players set @s If_BlessDoDamage 0

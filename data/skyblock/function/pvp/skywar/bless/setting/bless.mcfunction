@@ -13,7 +13,7 @@ function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"湖灯使者"', ti
 function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"湖灯使者"', title:'"雷祸「天愠引庸」"', description:'"盾牌×3、特殊模板\\\\n放置于背包时，使用盾牌防御成功将在身旁降下天雷\\\\n且自身获得2秒无敌\\\\n将会失去一个盾牌"', id: 030, idsh: 30}
 function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"湖灯使者"', title:'"判钉「畏光迫罪」"', description:'"特殊模板\\\\n放置于背包时，成功对敌人造成伤害后，在5格内的敌人头顶召唤石笋\\\\n此效果3秒最多触发一次，且要求对象头顶至少5格都是空气\\\\n如果对象露天，则15%概率在高空生成雷罚之戟"', id: 031, idsh: 31}
 function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"影猎手"', title:'"猎夜「彻锋戮影」"', description:'"高速移动靴×1 略微减少生命值"', id: 005, idsh: 5}
-function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"影猎手"', title:'"袖剑「初绽轮月」"', description:'"慢充能高攻击剑×1 增加移动速度但减少自身防御力\\\\n自带火焰附加I\\\\n对敌人造成伤害后可以让自己隐身3秒"', id: 006, idsh: 6}
+function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"影猎手"', title:'"袖剑「初绽轮月」"', description:'"慢充能高攻击剑×1 增加移动速度但减少自身防御力\\\\n自带火焰附加I\\\\n对敌人一次性造成一定量的伤害后可以让自己隐身3秒\\\\n\\\\n注意：只在主手使用时有效"', id: 006, idsh: 6}
 function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"影猎手"', title:'"袖刺「恶耀黑星」"', description:'"低攻击剑×1 略微增加移动速度但减少自身防御力\\\\n使用此剑攻击敌人，会导致面前最近的敌人陷入严重的饥饿异常状态\\\\n同时自己恢复一定生命\\\\n\\\\n注意：只在主手使用时有效"', id: 035, idsh: 35}
 function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"影猎手"', title:'"夜城「刺客尊荣」"', description:'"特殊模板 放置于背包时5格内隐身玩家显形\\\\n12格内有玩家时发出警报"', id: 016, idsh: 16}
 function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"影猎手"', title:'"泯没「丛禾蓦至」"', description:'"特殊模板 放置于背包时，可以通过下蹲恢复生命\\\\n在草丛中蹲下可以隐身"', id: 028, idsh: 28}
