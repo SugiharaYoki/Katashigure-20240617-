@@ -27,7 +27,7 @@ execute if entity @s[scores={If_MD_Wait=1..}] run scoreboard players set @s If_M
 execute if entity @s[scores={If_MD_Chirp=1..}] rotated ~ 0 run function skyblock:pvp/skywar/bless/skywar_ishtar_core17
 
 execute if items entity @s container.* *[custom_data={skywar_antiinvis:1}] as @a[distance=0.1..5,nbt={active_effects:[{id:"minecraft:invisibility"}]}] at @s run function skyblock:pvp/skywar/bless/skywar_ishtar_core16
-execute if items entity @s[tag=!Skywar_ishtar_16_alarm10] container.* *[custom_data={skywar_antiinvis:1}] if entity @a[distance=0.1..10] run function skyblock:pvp/skywar/bless/skywar_ishtar_core16_alarm10
+execute if items entity @s[tag=!Skywar_ishtar_16_alarm10] container.* *[custom_data={skywar_antiinvis:1}] if entity @a[distance=0.1..12] run function skyblock:pvp/skywar/bless/skywar_ishtar_core16_alarm10
 execute if items entity @s[tag=Skywar_ishtar_16_alarm10] container.* *[custom_data={skywar_antiinvis:1}] run function skyblock:pvp/skywar/bless/skywar_ishtar_core16_alarm10_cancel
 
 

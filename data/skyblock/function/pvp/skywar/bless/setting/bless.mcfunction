@@ -14,7 +14,7 @@ function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"湖灯使者"', ti
 function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"湖灯使者"', title:'"判钉「畏光迫罪」"', description:'"特殊模板\\\\n放置于背包时，成功对敌人造成伤害后，在5格内的敌人头顶召唤石笋\\\\n此效果3秒最多触发一次，且要求对象头顶至少5格都是空气\\\\n如果对象露天，则15%概率在高空生成雷罚之戟"', id: 031, idsh: 31}
 function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"影猎手"', title:'"猎夜「彻锋戮影」"', description:'"高速移动靴×1 略微减少生命值"', id: 005, idsh: 5}
 function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"影猎手"', title:'"袖剑「初绽轮月」"', description:'"慢充能高攻击剑×1"', id: 006, idsh: 6}
-function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"影猎手"', title:'"夜城「刺客尊荣」"', description:'"特殊模板 放置于背包时5格内隐身玩家显形\\\\n10格内有玩家时发出警报"', id: 016, idsh: 16}
+function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"影猎手"', title:'"夜城「刺客尊荣」"', description:'"特殊模板 放置于背包时5格内隐身玩家显形\\\\n12格内有玩家时发出警报"', id: 016, idsh: 16}
 function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"影猎手"', title:'"泯没「丛禾蓦至」"', description:'"特殊模板 放置于背包时，可以通过下蹲恢复生命\\\\n在草丛中蹲下可以隐身"', id: 028, idsh: 28}
 function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"驯兽师"', title:'"逃亡「刹踪烟消」"', description:'"可食用兔腿×4\\\\n食用后移动速度大幅增加2秒 且可隐身3秒\\\\n有30%的概率使自己受到瞬间伤害！"', id: 012, idsh: 12}
 function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"驯兽师"', title:'"命唤「尸亡重兽」"', description:'"僵尸疣猪兽蛋×2、岩浆怪蛋×2\\\\n\\\\n小提示：最好放置点距离自己远一点"', id: 007, idsh: 7}
