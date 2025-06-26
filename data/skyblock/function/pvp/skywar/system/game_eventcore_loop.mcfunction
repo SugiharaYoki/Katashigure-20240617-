@@ -48,6 +48,12 @@ execute if score sc Temp5_LoopE matches 2 run function skyblock:pvp/skywar/syste
 execute if score sc Temp5_LoopE matches 9 run function skyblock:pvp/skywar/system/gameend_part1
 execute if score sc Temp5_LoopE matches 9 run function skyblock:pvp/skywar/system/gameend_part2
 
+execute if block 43 50 55 lantern as @a[tag=PVPing] at @s run effect give @s invisibility 10 0 false
+execute if block 43 50 55 soul_lantern as @a[tag=PVPing] at @s run effect give @s invisibility 10 0 true
+execute if block 44 51 56 lantern as @a[tag=PVPing] at @s run effect give @s mining_fatigue 10 1 true
+execute if block 44 51 56 soul_lantern as @a[tag=PVPing] at @s run effect give @s haste 10 1 true
+execute if block -131 59 -119 green_concrete as @a[tag=PVPing] at @s run effect give @s weakness 10 2 true
+
 scoreboard players remove sc TimeRemainUnsee 1
 #execute if entity @n[tag=sc,scores={TimeRemainUnsee=600,Map_Code=2}] unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run worldborder center 50100 50100
 #execute if entity @n[tag=sc,scores={TimeRemainUnsee=600,Map_Code=2}] unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run worldborder set 116
@@ -225,9 +231,22 @@ execute if score sc TimeRemainUnsee matches 30 if score sc Map_Code matches 10 r
 execute if score sc TimeRemainUnsee matches 30 if score sc Map_Code matches 10 run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run worldborder set 20 300
 
 execute if score sc TimeRemainUnsee matches 600 if score sc Map_Code matches 11 run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run title @a[tag=PVP_see] times 0 60 60
-execute if score sc TimeRemainUnsee matches 600 if score sc Map_Code matches 11 run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run title @a[tag=PVP_see] title {"text":"莫作烂柯樵","color":"yellow"}
+execute if score sc TimeRemainUnsee matches 600 if score sc Map_Code matches 11 run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run title @a[tag=PVP_see] title {"text":"日斜方待爨","color":"yellow"}
 execute if score sc TimeRemainUnsee matches 600 if score sc Map_Code matches 11 run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run title @a[tag=PVP_see] subtitle {"text":"“双棋未遍局 万物皆为空”","color":"yellow"}
 execute if score sc TimeRemainUnsee matches 600 if score sc Map_Code matches 11 run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run worldborder set 13 1200
+
+execute if score sc TimeRemainUnsee matches 400 if score sc Map_Code matches 11 run title @a[tag=PVP_see] times 0 60 60
+execute if score sc TimeRemainUnsee matches 400 if score sc Map_Code matches 11 run title @a[tag=PVP_see] title {"text":"寂然流水古松间","color":"yellow"}
+execute if score sc TimeRemainUnsee matches 400 if score sc Map_Code matches 11 run title @a[tag=PVP_see] subtitle {"text":"玩家挖掘速度加快","color":"yellow"}
+execute if score sc TimeRemainUnsee matches 400 if score sc Map_Code matches 11 unless block 44 51 56 soul_lantern run effect give @a[tag=PVP_see] haste infinite 1 true
+execute if score sc TimeRemainUnsee matches 400 if score sc Map_Code matches 11 if block 44 51 56 soul_lantern run effect give @a[tag=PVP_see] haste infinite 2 true
+
+execute if score sc TimeRemainUnsee matches 200 if score sc Map_Code matches 11 run title @a[tag=PVP_see] times 0 60 60
+execute if score sc TimeRemainUnsee matches 200 if score sc Map_Code matches 11 run title @a[tag=PVP_see] title {"text":"莫作烂柯樵","color":"yellow"}
+execute if score sc TimeRemainUnsee matches 200 if score sc Map_Code matches 11 run title @a[tag=PVP_see] subtitle {"text":"中心九格内的黑曜石 将在1分钟后消失","color":"yellow"}
+execute if score sc TimeRemainUnsee matches 140 if score sc Map_Code matches 11 run fill 50075 116 50075 50041 100 50041 air replace minecraft:obsidian
+
+
 
 execute if score sc TimeRemainUnsee matches 300 if score sc Map_Code matches 18 run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run title @a[tag=PVP_see] times 0 60 60
 execute if score sc TimeRemainUnsee matches 300 if score sc Map_Code matches 18 run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run title @a[tag=PVP_see] title {"text":"水灵脉的诱惑","color":"yellow"}
