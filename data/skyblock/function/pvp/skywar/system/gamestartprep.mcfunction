@@ -302,14 +302,14 @@ execute if score skywar_start rng1 matches 19 if score sc Map_Code matches 11 as
 
 execute if score skywar_start rng1 matches 19 run scoreboard objectives setdisplay sidebar PersonTimeRemain
 
-execute if score skywar_start rng1 matches 20 run tellraw @a[team=Team1_1] {"text":"看板狐： 与您生成在同一侧的成员为  ","color":"dark_green","extra":[{"selector":"@a[team=Team1_1]"}]}
-execute if score skywar_start rng1 matches 20 run tellraw @a[team=Team1_2] {"text":"看板狐： 与您生成在同一侧的成员为  ","color":"dark_green","extra":[{"selector":"@a[team=Team1_2]"}]}
-execute if score skywar_start rng1 matches 20 run tellraw @a[team=Team1_3] {"text":"看板狐： 与您生成在同一侧的成员为  ","color":"dark_green","extra":[{"selector":"@a[team=Team1_3]"}]}
-execute if score skywar_start rng1 matches 20 run tellraw @a[team=Team1_4] {"text":"看板狐： 与您生成在同一侧的成员为  ","color":"dark_green","extra":[{"selector":"@a[team=Team1_4]"}]}
-execute if score skywar_start rng1 matches 20 run tellraw @a[team=Team1_5] {"text":"看板狐： 与您生成在同一侧的成员为  ","color":"dark_green","extra":[{"selector":"@a[team=Team1_5]"}]}
-execute if score skywar_start rng1 matches 20 run tellraw @a[team=Team1_6] {"text":"看板狐： 与您生成在同一侧的成员为  ","color":"dark_green","extra":[{"selector":"@a[team=Team1_6]"}]}
-execute if score skywar_start rng1 matches 20 run tellraw @a[team=Team1_7] {"text":"看板狐： 与您生成在同一侧的成员为  ","color":"dark_green","extra":[{"selector":"@a[team=Team1_7]"}]}
-execute if score skywar_start rng1 matches 20 run tellraw @a[team=Team1_8] {"text":"看板狐： 与您生成在同一侧的成员为  ","color":"dark_green","extra":[{"selector":"@a[team=Team1_8]"}]}
+execute if score skywar_start rng1 matches 20 run tellraw @a[team=Team1_1] {"text":"你的队伍成员：\n","color":"dark_green","extra":[{"selector":"@a[team=Team1_1]"}]}
+execute if score skywar_start rng1 matches 20 run tellraw @a[team=Team1_2] {"text":"你的队伍成员：\n","color":"dark_green","extra":[{"selector":"@a[team=Team1_2]"}]}
+execute if score skywar_start rng1 matches 20 run tellraw @a[team=Team1_3] {"text":"你的队伍成员：\n","color":"dark_green","extra":[{"selector":"@a[team=Team1_3]"}]}
+execute if score skywar_start rng1 matches 20 run tellraw @a[team=Team1_4] {"text":"你的队伍成员：\n","color":"dark_green","extra":[{"selector":"@a[team=Team1_4]"}]}
+execute if score skywar_start rng1 matches 20 run tellraw @a[team=Team1_5] {"text":"你的队伍成员：\n","color":"dark_green","extra":[{"selector":"@a[team=Team1_5]"}]}
+execute if score skywar_start rng1 matches 20 run tellraw @a[team=Team1_6] {"text":"你的队伍成员：\n","color":"dark_green","extra":[{"selector":"@a[team=Team1_6]"}]}
+execute if score skywar_start rng1 matches 20 run tellraw @a[team=Team1_7] {"text":"你的队伍成员：\n","color":"dark_green","extra":[{"selector":"@a[team=Team1_7]"}]}
+execute if score skywar_start rng1 matches 20 run tellraw @a[team=Team1_8] {"text":"你的队伍成员：\n","color":"dark_green","extra":[{"selector":"@a[team=Team1_8]"}]}
 execute if score skywar_start rng1 matches 20 run worldborder damage amount 1
 execute if score skywar_start rng1 matches 20 if score sc Map_Code matches 13 if block 31 59 -94 green_concrete run give @a[tag=PVPing] netherite_upgrade_smithing_template 2
 execute if score skywar_start rng1 matches 20 if score sc Map_Code matches 13 if block 36 59 -94 green_concrete run give @a[tag=PVPing] netherite_upgrade_smithing_template 3
