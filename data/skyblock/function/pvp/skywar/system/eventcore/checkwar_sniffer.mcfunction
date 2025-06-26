@@ -13,8 +13,8 @@ execute if score sc TimeRemainUnsee matches 840 as @p[tag=PVP_see,team=Team1_8] 
 
 scoreboard players add @e[tag=checkwar_sniffer,type=sniffer] rng1 1
 execute if score sc TimeRemainUnsee matches 790.. as @e[tag=checkwar_sniffer,type=sniffer] at @s store result score @s rng2 run random value 1..10
-execute if score sc TimeRemainUnsee matches 790.. as @e[tag=checkwar_sniffer,type=sniffer] at @s if score rng2 matches 1 run particle minecraft:sneeze ~ ~ ~ 2 0 2 0 20
-execute if score sc TimeRemainUnsee matches 790.. as @e[tag=checkwar_sniffer,type=sniffer] at @s if score rng2 matches 1 run playsound minecraft:entity.sniffer.happy
+execute if score sc TimeRemainUnsee matches 790.. as @e[tag=checkwar_sniffer,type=sniffer] at @s if score @s rng2 matches 1 run particle minecraft:sneeze ~ ~ ~ 2 0 2 0 20
+execute if score sc TimeRemainUnsee matches 790.. as @e[tag=checkwar_sniffer,type=sniffer] at @s if score @s rng2 matches 1 run playsound minecraft:entity.sniffer.happy
 
 
 execute if score sc TimeRemainUnsee matches 780 as @e[tag=checkwar_sniffer,type=sniffer] at @s run particle minecraft:sneeze ~ ~ ~ 2 0 2 0 20
