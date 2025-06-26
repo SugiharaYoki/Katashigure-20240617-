@@ -52,3 +52,7 @@ execute unless items entity @s hotbar.7 knowledge_book run item replace entity @
 execute unless items entity @s hotbar.8 knowledge_book run item replace entity @s[tag=!MG_AZR0PT,gamemode=!creative,gamemode=!spectator] hotbar.8 with air
 
 title @s actionbar [{"text":"影之石 ","color":"light_purple","bold": true},{"score":{"name":"@s","objective":"Perm_PersonSHD"},"color":"light_purple","bold": false}]
+
+execute as @a[distance=0..100,tag=Gaming] unless entity @a[tag=MG_AZR0PT] run tag @s remove Gaming
+
+
