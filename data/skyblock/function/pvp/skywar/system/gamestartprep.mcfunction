@@ -298,8 +298,7 @@ execute if block -131 58 -133 diamond_block if score skywar_start rng1 matches 1
 execute if score skywar_start rng1 matches 19 if score sc Map_Code matches 11 run effect give @a[tag=PVPing,tag=PVPTeamed] invisibility 240 0 true
 execute if score skywar_start rng1 matches 19 if score sc Map_Code matches 11 run effect give @a[tag=PVPing,tag=PVPTeamed] strength 20 4 true
 execute if score skywar_start rng1 matches 19 if score sc Map_Code matches 11 run effect give @a[tag=PVPing,tag=PVPTeamed] resistance 20 2 true
-execute if score skywar_start rng1 matches 19 if score sc Map_Code matches 11 run give @a[tag=PVPing,tag=PVPTeamed] wooden_pickaxe
-execute if score skywar_start rng1 matches 19 if score sc Map_Code matches 11 run give @a[tag=PVPing,tag=PVPTeamed] bread
+execute if score skywar_start rng1 matches 19 if score sc Map_Code matches 11 as @a[tag=PVPing,tag=PVPTeamed] at @s run function skyblock:pvp/skywar/system/eventcore/checkwar_initial_equipments
 
 execute if score skywar_start rng1 matches 19 run scoreboard objectives setdisplay sidebar PersonTimeRemain
 
