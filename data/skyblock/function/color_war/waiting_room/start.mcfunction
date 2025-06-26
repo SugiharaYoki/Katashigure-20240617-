@@ -1,8 +1,8 @@
 scoreboard players set starting color_war_system 1
 
-execute if score start_seconds color_war_system matches 10 run tag @a[tag=!Gaming] remove Temp_NoSkyWar
-execute if score start_seconds color_war_system matches 10 run tag @a[tag=Gaming] add Temp_NoSkyWar
-execute if score start_seconds color_war_system matches 10 run tag @a[tag=Temp_NoSkyWar] add NoSkyWar
+execute if score start_seconds color_war_system matches 10 run tag @a[tag=!Gaming] remove NoSkyWarTemp
+execute if score start_seconds color_war_system matches 10 run tag @a[tag=Gaming] add NoSkyWarTemp
+execute if score start_seconds color_war_system matches 10 run tag @a[tag=NoSkyWarTemp] add NoSkyWar
 execute if score start_seconds color_war_system matches 10 run title @a[tag=!Gaming,tag=!NoSkyWar] times 4 50 5
 execute if score start_seconds color_war_system matches 10 run title @a[tag=!Gaming,tag=!NoSkyWar] title {"text":"开启涂色战争","bold":true,"color":"gold"}
 execute if score start_seconds color_war_system matches 10 run tellraw @a[tag=!Gaming] {"text":"   『个人面板』","color":"yellow"}

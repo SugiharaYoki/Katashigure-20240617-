@@ -19,8 +19,8 @@ team join HajimetanoMachi @a[tag=PVP_see,tag=!Gaming]
 #《游戏规则初始化》
 #gamerule doFireTick false
 #《玩家事件/文字显示/传送支援》
-tag @a[tag=Temp_NoSkyWar,tag=!Gaming] remove NoSkyWar
-tag @a[tag=!Gaming] remove Temp_NoSkyWar
+tag @a[tag=NoSkyWarTemp,tag=!Gaming] remove NoSkyWar
+tag @a[tag=!Gaming] remove NoSkyWarTemp
 #《地图预加载初始化》
 #《禁止提前预加载》
 #-#-#setblock 12 88 86 air

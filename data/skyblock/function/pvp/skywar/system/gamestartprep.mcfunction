@@ -11,9 +11,9 @@ execute if score skywar_start rng1 matches 2 run scoreboard players set @s Annou
 #《游戏规则初始化》
 #gamerule doFireTick false
 #《玩家事件/文字显示/传送支援》
-execute if score skywar_start rng1 matches 2 run tag @a[tag=!Gaming] remove Temp_NoSkyWar
-execute if score skywar_start rng1 matches 2 run tag @a[tag=Gaming] add Temp_NoSkyWar
-execute if score skywar_start rng1 matches 2 run tag @a[tag=Temp_NoSkyWar] add NoSkyWar
+execute if score skywar_start rng1 matches 2 run tag @a[tag=!Gaming] remove NoSkyWarTemp
+execute if score skywar_start rng1 matches 2 run tag @a[tag=Gaming] add NoSkyWarTemp
+execute if score skywar_start rng1 matches 2 run tag @a[tag=NoSkyWarTemp] add NoSkyWar
 execute if score skywar_start rng1 matches 2 run title @a[tag=!Gaming,tag=!NoSkyWar] times 4 50 5
 execute if score skywar_start rng1 matches 2 run title @a[tag=!Gaming,tag=!NoSkyWar] title {"text":"开启PVP竞技场","bold":true,"color":"gold"}
 execute if score skywar_start rng1 matches 2 run tellraw @a[tag=!Gaming] {"text":"   『个人面板』","color":"yellow"}

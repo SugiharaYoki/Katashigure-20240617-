@@ -1,0 +1,28 @@
+execute if score sc TimeRemainUnsee matches 570 run tellraw @a[tag=PVP_see] [{"text":"棋盘落子：","color":"gold","bold": true},{"text":"\n嗅探兽将在30秒后生成。","color":"white","bold": false}]
+execute if score sc TimeRemainUnsee matches 562 run tellraw @a[tag=PVP_see] [{"text":"嗅探兽会停留在原地汲取自然能量。\n留在嗅探兽的15格以内，保护它1分钟，即可获得该群系对应的奖励。","color":"gray","bold": false}]
+
+execute if score sc TimeRemainUnsee matches 540 as @p[tag=PVP_see,team=Team1_1] run summon sniffer ~ ~ ~ {CustomName:'[{"text":"嗅探兽"}]',DeathLootTable:"skyblock:sea_money",Tags:["checkwar_sniffer","checkwar_sniffer_team1"],attributes:[{id:"armor",base:8},{id:"movement_speed",base:0.01},{id:"scale",base:0.4},{id:"max_health",base:10}],Health:10,PersistenceRequired:1b}
+execute if score sc TimeRemainUnsee matches 540 as @p[tag=PVP_see,team=Team1_2] run summon sniffer ~ ~ ~ {CustomName:'[{"text":"嗅探兽"}]',DeathLootTable:"skyblock:sea_money",Tags:["checkwar_sniffer","checkwar_sniffer_team2"],attributes:[{id:"armor",base:8},{id:"movement_speed",base:0.01},{id:"scale",base:0.4},{id:"max_health",base:10}],Health:10,PersistenceRequired:1b}
+execute if score sc TimeRemainUnsee matches 540 as @p[tag=PVP_see,team=Team1_3] run summon sniffer ~ ~ ~ {CustomName:'[{"text":"嗅探兽"}]',DeathLootTable:"skyblock:sea_money",Tags:["checkwar_sniffer","checkwar_sniffer_team3"],attributes:[{id:"armor",base:8},{id:"movement_speed",base:0.01},{id:"scale",base:0.4},{id:"max_health",base:10}],Health:10,PersistenceRequired:1b}
+execute if score sc TimeRemainUnsee matches 540 as @p[tag=PVP_see,team=Team1_4] run summon sniffer ~ ~ ~ {CustomName:'[{"text":"嗅探兽"}]',DeathLootTable:"skyblock:sea_money",Tags:["checkwar_sniffer","checkwar_sniffer_team4"],attributes:[{id:"armor",base:8},{id:"movement_speed",base:0.01},{id:"scale",base:0.4},{id:"max_health",base:10}],Health:10,PersistenceRequired:1b}
+execute if score sc TimeRemainUnsee matches 540 as @p[tag=PVP_see,team=Team1_5] run summon sniffer ~ ~ ~ {CustomName:'[{"text":"嗅探兽"}]',DeathLootTable:"skyblock:sea_money",Tags:["checkwar_sniffer","checkwar_sniffer_team5"],attributes:[{id:"armor",base:8},{id:"movement_speed",base:0.01},{id:"scale",base:0.4},{id:"max_health",base:10}],Health:10,PersistenceRequired:1b}
+execute if score sc TimeRemainUnsee matches 540 as @p[tag=PVP_see,team=Team1_6] run summon sniffer ~ ~ ~ {CustomName:'[{"text":"嗅探兽"}]',DeathLootTable:"skyblock:sea_money",Tags:["checkwar_sniffer","checkwar_sniffer_team6"],attributes:[{id:"armor",base:8},{id:"movement_speed",base:0.01},{id:"scale",base:0.4},{id:"max_health",base:10}],Health:10,PersistenceRequired:1b}
+execute if score sc TimeRemainUnsee matches 540 as @p[tag=PVP_see,team=Team1_7] run summon sniffer ~ ~ ~ {CustomName:'[{"text":"嗅探兽"}]',DeathLootTable:"skyblock:sea_money",Tags:["checkwar_sniffer","checkwar_sniffer_team7"],attributes:[{id:"armor",base:8},{id:"movement_speed",base:0.01},{id:"scale",base:0.4},{id:"max_health",base:10}],Health:10,PersistenceRequired:1b}
+execute if score sc TimeRemainUnsee matches 540 as @p[tag=PVP_see,team=Team1_8] run summon sniffer ~ ~ ~ {CustomName:'[{"text":"嗅探兽"}]',DeathLootTable:"skyblock:sea_money",Tags:["checkwar_sniffer","checkwar_sniffer_team8"],attributes:[{id:"armor",base:8},{id:"movement_speed",base:0.01},{id:"scale",base:0.4},{id:"max_health",base:10}],Health:10,PersistenceRequired:1b}
+
+
+scoreboard players add @e[tag=checkwar_sniffer,type=sniffer] rng1 1
+execute if score sc TimeRemainUnsee matches 490.. as @e[tag=checkwar_sniffer,type=sniffer] at @s store result score @s rng2 run random value 1..10
+execute if score sc TimeRemainUnsee matches 490.. as @e[tag=checkwar_sniffer,type=sniffer] at @s if score rng2 matches 1 run particle minecraft:sneeze ~ ~ ~ 2 0 2 0 20
+execute if score sc TimeRemainUnsee matches 490.. as @e[tag=checkwar_sniffer,type=sniffer] at @s if score rng2 matches 1 run playsound minecraft:entity.sniffer.happy
+
+
+execute if score sc TimeRemainUnsee matches 480 as @e[tag=checkwar_sniffer,type=sniffer] at @s run particle minecraft:sneeze ~ ~ ~ 2 0 2 0 20
+execute if score sc TimeRemainUnsee matches 480 as @e[tag=checkwar_sniffer,type=sniffer] at @s run playsound minecraft:entity.sniffer.happy
+execute if score sc TimeRemainUnsee matches 480 if entity @e[tag=checkwar_sniffer,type=sniffer] at @s run tellraw @a[tag=PVP_see] [{"text":"棋盘落子：","color":"gold","bold": true},{"text":"\n嗅探兽完成了对自然能量的汲取！","color":"white","bold": false}]
+
+
+
+
+
+

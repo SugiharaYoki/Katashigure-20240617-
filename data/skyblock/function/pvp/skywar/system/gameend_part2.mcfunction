@@ -1,5 +1,6 @@
-tag @a[tag=Temp_NoSkyWar] remove NoSkyWar
-tag @a[tag=Temp_NoSkyWar] remove Temp_NoSkyWar
+tag @a[tag=NoSkyWarTemp] remove NoSkyWar
+tag @a[tag=NoSkyWarTemp] remove NoSkyWarTemp
+tag @a[tag=NoSkyWarTemp] remove NoSkyWarTemp
 tag @n[tag=sc] remove MapLoaAlr
 tell @p[tag=ENKIDU] game_end_part2
 #成就系统

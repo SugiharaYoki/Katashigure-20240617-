@@ -26,7 +26,7 @@ tell @p[tag=ENKIDU] sea_ch1_player
 team join SEA @s
 tag @s add Gaming
 tag @s add NoMultiMenu
-tag @s add Temp_NoSkyWar
+tag @s add NoSkyWarTemp
 scoreboard players set @s sea_oxygen 20
 scoreboard players set @s sea_shielding_3 0
 scoreboard players set @s SEA_pounce_charge 0
