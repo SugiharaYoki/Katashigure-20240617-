@@ -113,7 +113,7 @@ execute as @a[tag=PVPing,tag=PVPTeamed] at @s if biome ~ ~ ~ minecraft:windswept
 execute as @a[tag=PVPing,tag=PVPTeamed] at @s if biome ~ ~ ~ minecraft:crimson_forest run tellraw @s [{"text":"初始祝福：","bold":true,"color":"gold"},{"text":"攻击力 +0.5","bold":false,"color":"white"}]
 execute as @a[tag=PVPing,tag=PVPTeamed] at @s if biome ~ ~ ~ minecraft:crimson_forest run attribute @s minecraft:attack_damage modifier add checkwar_bless:origin_1 0.5 add_value
 execute as @a[tag=PVPing,tag=PVPTeamed] at @s if biome ~ ~ ~ minecraft:warm_ocean run tellraw @s [{"text":"初始祝福：","bold":true,"color":"gold"},{"text":"水下挖掘速度 +50%","bold":false,"color":"white"}]
-execute as @a[tag=PVPing,tag=PVPTeamed] at @s if biome ~ ~ ~ minecraft:warm_ocean run attribute @s minecraft:submerged_mining_dpeed modifier add checkwar_bless:origin_1 0.5 add_value
+execute as @a[tag=PVPing,tag=PVPTeamed] at @s if biome ~ ~ ~ minecraft:warm_ocean run attribute @s minecraft:submerged_mining_speed modifier add checkwar_bless:origin_1 0.5 add_value
 execute as @a[tag=PVPing,tag=PVPTeamed] at @s if biome ~ ~ ~ minecraft:bamboo_jungle run tellraw @s [{"text":"初始祝福：","bold":true,"color":"gold"},{"text":"方块交互距离 +0.5","bold":false,"color":"white"}]
 execute as @a[tag=PVPing,tag=PVPTeamed] at @s if biome ~ ~ ~ minecraft:bamboo_jungle run attribute @s minecraft:block_interaction_range modifier add checkwar_bless:origin_1 0.5 add_value
 execute as @a[tag=PVPing,tag=PVPTeamed] at @s if biome ~ ~ ~ minecraft:snowy_plains run tellraw @s [{"text":"初始祝福：","bold":true,"color":"gold"},{"text":"护甲韧性 +2","bold":false,"color":"white"}]
