@@ -230,18 +230,18 @@ execute if score sc TimeRemainUnsee matches 30 if score sc Map_Code matches 10 r
 execute if score sc TimeRemainUnsee matches 30 if score sc Map_Code matches 10 run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run title @a[tag=PVP_see] subtitle {"text":"“汝并不该来到此地 但汝身后已无退路”","color":"yellow"}
 execute if score sc TimeRemainUnsee matches 30 if score sc Map_Code matches 10 run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run worldborder set 20 300
 
-execute if score sc TimeRemainUnsee matches 600 if score sc Map_Code matches 11 run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run title @a[tag=PVP_see] times 0 60 60
-execute if score sc TimeRemainUnsee matches 600 if score sc Map_Code matches 11 run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run title @a[tag=PVP_see] title {"text":"日斜方待爨","color":"yellow"}
-execute if score sc TimeRemainUnsee matches 600 if score sc Map_Code matches 11 run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run title @a[tag=PVP_see] subtitle {"text":"“双棋未遍局 万物皆为空”","color":"yellow"}
-execute if score sc TimeRemainUnsee matches 600 if score sc Map_Code matches 11 run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run worldborder set 13 1200
+execute if score sc TimeRemainUnsee matches 690 if score sc Map_Code matches 11 run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run title @a[tag=PVP_see] times 0 60 60
+execute if score sc TimeRemainUnsee matches 690 if score sc Map_Code matches 11 run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run title @a[tag=PVP_see] title {"text":"日斜方待爨","color":"yellow"}
+execute if score sc TimeRemainUnsee matches 690 if score sc Map_Code matches 11 run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run title @a[tag=PVP_see] subtitle {"text":"“双棋未遍局 万物皆为空”","color":"yellow"}
+execute if score sc TimeRemainUnsee matches 690 if score sc Map_Code matches 11 run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run worldborder set 13 1200
 
-execute if score sc TimeRemainUnsee matches 479..570 if score sc Map_Code matches 11 run function skyblock:pvp/skywar/system/eventcore/checkwar_sniffer
+execute if score sc TimeRemainUnsee matches 779..870 if score sc Map_Code matches 11 run function skyblock:pvp/skywar/system/eventcore/checkwar_sniffer
 
-execute if score sc TimeRemainUnsee matches 400 if score sc Map_Code matches 11 run title @a[tag=PVP_see] times 0 60 60
-execute if score sc TimeRemainUnsee matches 400 if score sc Map_Code matches 11 run title @a[tag=PVP_see] title {"text":"寂然流水古松间","color":"yellow"}
-execute if score sc TimeRemainUnsee matches 400 if score sc Map_Code matches 11 run title @a[tag=PVP_see] subtitle {"text":"玩家挖掘速度加快","color":"yellow"}
-execute if score sc TimeRemainUnsee matches 400 if score sc Map_Code matches 11 unless block 44 51 56 soul_lantern run effect give @a[tag=PVP_see] haste infinite 1 true
-execute if score sc TimeRemainUnsee matches 400 if score sc Map_Code matches 11 if block 44 51 56 soul_lantern run effect give @a[tag=PVP_see] haste infinite 2 true
+execute if score sc TimeRemainUnsee matches 540 if score sc Map_Code matches 11 run title @a[tag=PVP_see] times 0 60 60
+execute if score sc TimeRemainUnsee matches 540 if score sc Map_Code matches 11 run title @a[tag=PVP_see] title {"text":"寂然流水古松间","color":"yellow"}
+execute if score sc TimeRemainUnsee matches 540 if score sc Map_Code matches 11 run title @a[tag=PVP_see] subtitle {"text":"玩家挖掘速度加快","color":"yellow"}
+execute if score sc TimeRemainUnsee matches 540 if score sc Map_Code matches 11 unless block 44 51 56 soul_lantern run effect give @a[tag=PVP_see] haste infinite 1 true
+execute if score sc TimeRemainUnsee matches 540 if score sc Map_Code matches 11 if block 44 51 56 soul_lantern run effect give @a[tag=PVP_see] haste infinite 2 true
 
 execute if score sc TimeRemainUnsee matches 200 if score sc Map_Code matches 11 run title @a[tag=PVP_see] times 0 60 60
 execute if score sc TimeRemainUnsee matches 200 if score sc Map_Code matches 11 run title @a[tag=PVP_see] title {"text":"莫作烂柯樵","color":"yellow"}
