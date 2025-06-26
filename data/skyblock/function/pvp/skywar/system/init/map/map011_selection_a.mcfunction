@@ -6,6 +6,9 @@ execute if score SkyChess_Generator rng1 matches 1..2 positioned ~ ~-2 ~ run set
 execute if score SkyChess_Generator rng1 matches 1..2 positioned ~ ~-1 ~ run fill ~ ~ ~ ~ ~-1 ~ air
 #execute if score SkyChess_Generator rng1 matches 1..2 run tell SugiharaYoki 地图加载中 - 随机数：1
 
+
+
+
 #铃兰遗迹1
 #brush cylinder 60%stone,30%diorite,10%mossy_cobblestone 3 3
 #brush cylinder 80%dirt,15%coarse_dirt,5%mossy_cobblestone 2 2

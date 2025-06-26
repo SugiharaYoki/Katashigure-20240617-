@@ -154,6 +154,15 @@ attribute @s minecraft:attack_speed modifier remove azr_chainkill_04
 
 
 
-
+attribute @s minecraft:movement_efficiency modifier remove checkwar_bless:origin_1
+attribute @s minecraft:attack_speed modifier remove checkwar_bless:origin_1
+attribute @s minecraft:max_health modifier remove checkwar_bless:origin_1
+attribute @s minecraft:attack_damage modifier remove checkwar_bless:origin_1
+attribute @s minecraft:submerged_mining_dpeed modifier remove checkwar_bless:origin_1
+attribute @s minecraft:block_interaction_range modifier remove checkwar_bless:origin_1
+attribute @s minecraft:armor_toughness modifier remove checkwar_bless:origin_1
+attribute @s minecraft:entity_interaction_range modifier remove checkwar_bless:origin_1
+attribute @s minecraft:mining_efficiency modifier remove checkwar_bless:origin_1
+attribute @s minecraft:armor modifier remove checkwar_bless:origin_1
 
 
