@@ -128,6 +128,7 @@ execute at @n[tag=mg_azr0,type=marker] run gamemode creative @a[distance=0..200,
 execute as @a[tag=MG_AZR0PT] at @s run function skyblock:mg/azr0/system/player/death
 
 clear @a[tag=MG_AZR0PT]
+tag @a[tag=MG_AZR0PT] remove Gaming
 tag @a remove MG_AZR0PT
 
 bossbar remove mg:azr0_bar

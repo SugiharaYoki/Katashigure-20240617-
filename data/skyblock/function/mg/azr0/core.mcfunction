@@ -1,4 +1,5 @@
 #计时器0
+execute as @a[tag=MG_AZR0PT] at @s run function skyblock:mg/azr0/system/player/ui
 scoreboard players add MG_AZR0_Timer rng6 1
 execute if score MG_AZR0_Timer rng6 matches 20 run function skyblock:mg/azr0/core_x1
 execute if score MG_AZR0_Timer rng6 matches 20.. run scoreboard players set MG_AZR0_Timer rng6 0
@@ -16,7 +17,6 @@ execute as @e[tag=mg_azr0_MobSummoner_magma,type=marker,scores={rng1=31}] at @s 
 execute as @e[tag=mg_azr0_MobSummoner_magma,type=marker,scores={rng1=31}] at @s positioned ~ ~9 ~ run particle flame ~ ~ ~ 0 0 0 0.3 80
 execute as @e[tag=mg_azr0_MobSummoner_magma,type=marker,scores={rng1=31..}] at @s run kill @s
 
-execute as @a[tag=MG_AZR0PT] at @s run function skyblock:mg/azr0/system/player/ui
 
 
 
