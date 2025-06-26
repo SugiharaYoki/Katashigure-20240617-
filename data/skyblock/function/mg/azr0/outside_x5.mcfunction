@@ -41,15 +41,15 @@ tag @a[tag=MG_AZR0PT_dead,distance=0..250] remove MG_AZR0PT_dead
 
 execute if items entity @s[tag=!MG_AZR0PT] player.cursor *[custom_data={"azr0outside":true}] run function skyblock:mg/azr0/system/outside/index
 
-execute unless items entity @s hotbar.0 knowledge_book run item replace entity @s[tag=!MG_AZR0PT,gamemode=!creative,gamemode=!spectator] hotbar.0 with air
-execute unless items entity @s hotbar.1 knowledge_book run item replace entity @s[tag=!MG_AZR0PT,gamemode=!creative,gamemode=!spectator] hotbar.1 with air
-execute unless items entity @s hotbar.2 knowledge_book run item replace entity @s[tag=!MG_AZR0PT,gamemode=!creative,gamemode=!spectator] hotbar.2 with air
-execute unless items entity @s hotbar.3 knowledge_book run item replace entity @s[tag=!MG_AZR0PT,gamemode=!creative,gamemode=!spectator] hotbar.3 with air
-execute unless items entity @s hotbar.4 knowledge_book run item replace entity @s[tag=!MG_AZR0PT,gamemode=!creative,gamemode=!spectator] hotbar.4 with air
-execute unless items entity @s hotbar.5 knowledge_book run item replace entity @s[tag=!MG_AZR0PT,gamemode=!creative,gamemode=!spectator] hotbar.5 with air
-execute unless items entity @s hotbar.6 knowledge_book run item replace entity @s[tag=!MG_AZR0PT,gamemode=!creative,gamemode=!spectator] hotbar.6 with air
-execute unless items entity @s hotbar.7 knowledge_book run item replace entity @s[tag=!MG_AZR0PT,gamemode=!creative,gamemode=!spectator] hotbar.7 with air
-execute unless items entity @s hotbar.8 knowledge_book run item replace entity @s[tag=!MG_AZR0PT,gamemode=!creative,gamemode=!spectator] hotbar.8 with air
+execute unless items entity @s[tag=!MG_AZR0PT,gamemode=!creative,gamemode=!spectator] hotbar.0 knowledge_book run item replace entity @s hotbar.0 with air
+execute unless items entity @s[tag=!MG_AZR0PT,gamemode=!creative,gamemode=!spectator] hotbar.1 knowledge_book run item replace entity @s hotbar.1 with air
+execute unless items entity @s[tag=!MG_AZR0PT,gamemode=!creative,gamemode=!spectator] hotbar.2 knowledge_book run item replace entity @s hotbar.2 with air
+execute unless items entity @s[tag=!MG_AZR0PT,gamemode=!creative,gamemode=!spectator] hotbar.3 knowledge_book run item replace entity @s hotbar.3 with air
+execute unless items entity @s[tag=!MG_AZR0PT,gamemode=!creative,gamemode=!spectator] hotbar.4 knowledge_book run item replace entity @s hotbar.4 with air
+execute unless items entity @s[tag=!MG_AZR0PT,gamemode=!creative,gamemode=!spectator] hotbar.5 knowledge_book run item replace entity @s hotbar.5 with air
+execute unless items entity @s[tag=!MG_AZR0PT,gamemode=!creative,gamemode=!spectator] hotbar.6 knowledge_book run item replace entity @s hotbar.6 with air
+execute unless items entity @s[tag=!MG_AZR0PT,gamemode=!creative,gamemode=!spectator] hotbar.7 knowledge_book run item replace entity @s hotbar.7 with air
+execute unless items entity @s[tag=!MG_AZR0PT,gamemode=!creative,gamemode=!spectator] hotbar.8 knowledge_book run item replace entity @s hotbar.8 with air
 
 title @s actionbar [{"text":"影之石 ","color":"light_purple","bold": true},{"score":{"name":"@s","objective":"Perm_PersonSHD"},"color":"light_purple","bold": false}]
 
