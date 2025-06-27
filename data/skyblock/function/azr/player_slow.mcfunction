@@ -1,20 +1,4 @@
-clear @s[gamemode=adventure] quartz_pillar
-clear @s[gamemode=adventure] quartz_block
-clear @s[gamemode=adventure] quartz_stairs
-clear @s[gamemode=adventure] quartz_bricks
-clear @s[gamemode=adventure] quartz_slab
-clear @s[gamemode=adventure] smooth_quartz
-clear @s[gamemode=adventure] birch_button
-clear @s[gamemode=adventure] stone_button
-clear @s[gamemode=adventure] polished_blackstone_button
-clear @s[gamemode=adventure] item_frame
-clear @s[gamemode=adventure] lever
-clear @s[gamemode=adventure] stone_bricks
-clear @s[gamemode=adventure] stone_brick_slab
-clear @s[gamemode=adventure] stone_brick_stairs
-clear @s[gamemode=adventure] smooth_stone
-clear @s[gamemode=adventure] flowering_azalea
-clear @s[gamemode=adventure] grass_block
+clear @s[gamemode=adventure] #skyblock:azr_clear
 
 execute if score chapter Azr_system matches 1 at @s if block ~ ~-0.2 ~ black_concrete run damage @s 9999 fall
 

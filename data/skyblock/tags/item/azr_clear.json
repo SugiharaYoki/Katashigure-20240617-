@@ -1,0 +1,22 @@
+{
+    "values": [
+        "quartz_pillar",
+        "quartz_block",
+        "quartz_stairs",
+        "quartz_bricks",
+        "quartz_slab",
+        "smooth_quartz",
+        "birch_button",
+        "stone_button",
+        "polished_blackstone_button",
+        "item_frame",
+        "lever",
+        "stone_bricks",
+        "stone_brick_stairs",
+        "stone_brick_slab",
+        "smooth_stone",
+        "flowering_azalea",
+        "grass_block",
+        "pointed_dripstone"
+    ]
+}
