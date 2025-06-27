@@ -176,4 +176,24 @@ attribute @s minecraft:entity_interaction_range modifier remove checkwar_bless:s
 attribute @s minecraft:mining_efficiency modifier remove checkwar_bless:sniffer_1
 attribute @s minecraft:armor modifier remove checkwar_bless:sniffer_1
 
+attribute @s minecraft:movement_efficiency modifier remove checkwar_bless:sniffer_2
+attribute @s minecraft:attack_speed modifier remove checkwar_bless:sniffer_2
+attribute @s minecraft:max_health modifier remove checkwar_bless:sniffer_2
+attribute @s minecraft:attack_damage modifier remove checkwar_bless:sniffer_2
+attribute @s minecraft:submerged_mining_speed modifier remove checkwar_bless:sniffer_2
+attribute @s minecraft:block_interaction_range modifier remove checkwar_bless:sniffer_2
+attribute @s minecraft:armor_toughness modifier remove checkwar_bless:sniffer_2
+attribute @s minecraft:entity_interaction_range modifier remove checkwar_bless:sniffer_2
+attribute @s minecraft:mining_efficiency modifier remove checkwar_bless:sniffer_2
+attribute @s minecraft:armor modifier remove checkwar_bless:sniffer_2
 
+attribute @s minecraft:movement_efficiency modifier remove checkwar_bless:sniffer_3
+attribute @s minecraft:attack_speed modifier remove checkwar_bless:sniffer_3
+attribute @s minecraft:max_health modifier remove checkwar_bless:sniffer_3
+attribute @s minecraft:attack_damage modifier remove checkwar_bless:sniffer_3
+attribute @s minecraft:submerged_mining_speed modifier remove checkwar_bless:sniffer_3
+attribute @s minecraft:block_interaction_range modifier remove checkwar_bless:sniffer_3
+attribute @s minecraft:armor_toughness modifier remove checkwar_bless:sniffer_3
+attribute @s minecraft:entity_interaction_range modifier remove checkwar_bless:sniffer_3
+attribute @s minecraft:mining_efficiency modifier remove checkwar_bless:sniffer_3
+attribute @s minecraft:armor modifier remove checkwar_bless:sniffer_3

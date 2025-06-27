@@ -21,14 +21,14 @@ execute if score sc TimeRemainUnsee matches 780 as @e[tag=checkwar_sniffer,type=
 execute if score sc TimeRemainUnsee matches 780 as @e[tag=checkwar_sniffer,type=sniffer] at @s run playsound minecraft:entity.sniffer.happy
 execute if score sc TimeRemainUnsee matches 780 run tellraw @a[tag=PVP_see] [{"text":"棋盘落子：","color":"gold","bold": true},{"text":"\n嗅探兽完成了对自然能量的汲取！","color":"white","bold": false}]
 
-execute if score sc TimeRemainUnsee matches 780 as @e[tag=checkwar_sniffer_team1,type=sniffer] at @s as @a[team=Team1_1] run function skyblock:pvp/skywar/system/eventcore/checkwar_sniffer_result
-execute if score sc TimeRemainUnsee matches 780 as @e[tag=checkwar_sniffer_team2,type=sniffer] at @s as @a[team=Team1_2] run function skyblock:pvp/skywar/system/eventcore/checkwar_sniffer_result
-execute if score sc TimeRemainUnsee matches 780 as @e[tag=checkwar_sniffer_team3,type=sniffer] at @s as @a[team=Team1_3] run function skyblock:pvp/skywar/system/eventcore/checkwar_sniffer_result
-execute if score sc TimeRemainUnsee matches 780 as @e[tag=checkwar_sniffer_team4,type=sniffer] at @s as @a[team=Team1_4] run function skyblock:pvp/skywar/system/eventcore/checkwar_sniffer_result
-execute if score sc TimeRemainUnsee matches 780 as @e[tag=checkwar_sniffer_team5,type=sniffer] at @s as @a[team=Team1_5] run function skyblock:pvp/skywar/system/eventcore/checkwar_sniffer_result
-execute if score sc TimeRemainUnsee matches 780 as @e[tag=checkwar_sniffer_team6,type=sniffer] at @s as @a[team=Team1_6] run function skyblock:pvp/skywar/system/eventcore/checkwar_sniffer_result
-execute if score sc TimeRemainUnsee matches 780 as @e[tag=checkwar_sniffer_team7,type=sniffer] at @s as @a[team=Team1_7] run function skyblock:pvp/skywar/system/eventcore/checkwar_sniffer_result
-execute if score sc TimeRemainUnsee matches 780 as @e[tag=checkwar_sniffer_team8,type=sniffer] at @s as @a[team=Team1_8] run function skyblock:pvp/skywar/system/eventcore/checkwar_sniffer_result
+execute if score sc TimeRemainUnsee matches 780 as @e[tag=checkwar_sniffer_team1,type=sniffer] at @s as @a[team=Team1_1] run function skyblock:pvp/skywar/system/eventcore/checkwar_sniffer_result {count:1}
+execute if score sc TimeRemainUnsee matches 780 as @e[tag=checkwar_sniffer_team2,type=sniffer] at @s as @a[team=Team1_2] run function skyblock:pvp/skywar/system/eventcore/checkwar_sniffer_result {count:1}
+execute if score sc TimeRemainUnsee matches 780 as @e[tag=checkwar_sniffer_team3,type=sniffer] at @s as @a[team=Team1_3] run function skyblock:pvp/skywar/system/eventcore/checkwar_sniffer_result {count:1}
+execute if score sc TimeRemainUnsee matches 780 as @e[tag=checkwar_sniffer_team4,type=sniffer] at @s as @a[team=Team1_4] run function skyblock:pvp/skywar/system/eventcore/checkwar_sniffer_result {count:1}
+execute if score sc TimeRemainUnsee matches 780 as @e[tag=checkwar_sniffer_team5,type=sniffer] at @s as @a[team=Team1_5] run function skyblock:pvp/skywar/system/eventcore/checkwar_sniffer_result {count:1}
+execute if score sc TimeRemainUnsee matches 780 as @e[tag=checkwar_sniffer_team6,type=sniffer] at @s as @a[team=Team1_6] run function skyblock:pvp/skywar/system/eventcore/checkwar_sniffer_result {count:1}
+execute if score sc TimeRemainUnsee matches 780 as @e[tag=checkwar_sniffer_team7,type=sniffer] at @s as @a[team=Team1_7] run function skyblock:pvp/skywar/system/eventcore/checkwar_sniffer_result {count:1}
+execute if score sc TimeRemainUnsee matches 780 as @e[tag=checkwar_sniffer_team8,type=sniffer] at @s as @a[team=Team1_8] run function skyblock:pvp/skywar/system/eventcore/checkwar_sniffer_result {count:1}
 execute if score sc TimeRemainUnsee matches 780 as @e[tag=checkwar_sniffer,type=sniffer] at @s run tp @s ~ ~-200 ~
 
 
