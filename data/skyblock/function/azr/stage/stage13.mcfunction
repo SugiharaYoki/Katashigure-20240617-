@@ -110,8 +110,8 @@ execute if score stageSeconds Azr_system matches 10 if score playerCount Azr_sys
 
 
 execute if score stageSeconds Azr_system matches 60..200 run scoreboard players set stageSeconds Azr_system 80
-execute if score stageSeconds Azr_system matches 60..200 as @e[tag=AzrielMachin,tag=AzrielMob,tag=!AzrielDecMobe] unless entity @e[tag=AzrielMob,tag=!AzrielDecMob,distance=0.1..99] run scoreboard players set stageSeconds Azr_system 299
-execute if score stageSeconds Azr_system matches 306 as @e[tag=AzrielMachin,tag=AzrielMob,tag=!AzrielDecMobe] at @s run particle flame ~ ~1.8 ~ 0.1 0.1 0.1 0.1 30
+execute if score stageSeconds Azr_system matches 60..200 as @e[tag=AzrielMachine,tag=AzrielMob,tag=!AzrielDecMobe] unless entity @e[tag=AzrielMob,tag=!AzrielDecMob,distance=0.1..99] run scoreboard players set stageSeconds Azr_system 299
+execute if score stageSeconds Azr_system matches 306 as @e[tag=AzrielMachine,tag=AzrielMob,tag=!AzrielDecMobe] at @s run particle flame ~ ~1.8 ~ 0.1 0.1 0.1 0.1 30
 execute if score stageSeconds Azr_system matches 306.. as @e[tag=AzrielMachine,tag=AzrielMob,tag=!AzrielDecMob] at @s run particle smoke ~ ~1.5 ~ 1.1 0.9 1.1 0.0 1
 execute if score stageSeconds Azr_system matches 309.. as @e[tag=AzrielMachine,tag=AzrielMob,tag=!AzrielDecMob] at @s run particle flame ~ ~1.5 ~ 1.1 0.9 1.1 0.0 2
 execute if score stageSeconds Azr_system matches 301..305 as @e[tag=AzrielMachine,tag=AzrielMob,tag=!AzrielDecMob] at @s run playsound minecraft:item.spyglass.use master @a ~ ~ ~ 5 0.5
