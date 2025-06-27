@@ -29,7 +29,7 @@ execute if score sc TimeRemainUnsee matches 780 as @e[tag=checkwar_sniffer_team5
 execute if score sc TimeRemainUnsee matches 780 as @e[tag=checkwar_sniffer_team6,type=sniffer] at @s as @a[team=Team1_6] run function skyblock:pvp/skywar/system/eventcore/checkwar_sniffer_result
 execute if score sc TimeRemainUnsee matches 780 as @e[tag=checkwar_sniffer_team7,type=sniffer] at @s as @a[team=Team1_7] run function skyblock:pvp/skywar/system/eventcore/checkwar_sniffer_result
 execute if score sc TimeRemainUnsee matches 780 as @e[tag=checkwar_sniffer_team8,type=sniffer] at @s as @a[team=Team1_8] run function skyblock:pvp/skywar/system/eventcore/checkwar_sniffer_result
-
+execute if score sc TimeRemainUnsee matches 780 as @e[tag=checkwar_sniffer,type=sniffer] at @s run tp @s ~ ~-200 ~
 
 
 
