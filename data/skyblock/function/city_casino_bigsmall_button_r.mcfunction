@@ -28,9 +28,9 @@ execute if entity @s[tag=CasBSG2,tag=!CasBSGGS] run tellraw @s {"text":"数字�
 execute if entity @s[tag=CasBSG2,tag=!CasBSGGS] run scoreboard objectives add CasBSGTemp1 dummy
 execute if entity @s[tag=CasBSG2,tag=!CasBSGGS] run scoreboard objectives add CasBSGTemp2 dummy
 execute if entity @s[tag=CasBSG2,tag=!CasBSGGS] run function skyblock:tool_rng
-execute if entity @s[tag=CasBSG2,tag=!CasBSGGS] run scoreboard players operation @s CasBSGTemp1 = @n[tag=sc] rng12
+execute if entity @s[tag=CasBSG2,tag=!CasBSGGS] run scoreboard players operation @s CasBSGTemp1 = 10e959db-4b44-4cdd-b98c-350d3b454206 rng12
 execute if entity @s[tag=CasBSG2,tag=!CasBSGGS] run function skyblock:tool_rng
-execute if entity @s[tag=CasBSG2,tag=!CasBSGGS] run scoreboard players operation @s CasBSGTemp2 = @n[tag=sc] rng12
+execute if entity @s[tag=CasBSG2,tag=!CasBSGGS] run scoreboard players operation @s CasBSGTemp2 = 10e959db-4b44-4cdd-b98c-350d3b454206 rng12
 execute if entity @s[tag=CasBSG2,tag=!CasBSGGS] if score @s CasBSGTemp1 matches 1 run tellraw @s [{"text":"你所获得的数字A： ","color":"white"},{"text":" 1","color":"dark_red"}]
 execute if entity @s[tag=CasBSG2,tag=!CasBSGGS] if score @s CasBSGTemp1 matches 2 run tellraw @s [{"text":"你所获得的数字A： ","color":"white"},{"text":" 2","color":"dark_red"}]
 execute if entity @s[tag=CasBSG2,tag=!CasBSGGS] if score @s CasBSGTemp1 matches 3 run tellraw @s [{"text":"你所获得的数字A： ","color":"white"},{"text":" 3","color":"dark_red"}]

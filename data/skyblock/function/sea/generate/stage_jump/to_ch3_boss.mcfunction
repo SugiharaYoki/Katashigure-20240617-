@@ -4,7 +4,7 @@ tp @a[x=90000,y=100,z=100,distance=..5000,scores={sea_progress=..7},gamemode=!sp
 function skyblock:sea/generate/stage_jump/to_ch3
 
 
-scoreboard players set @n[tag=sc] sea_4temp2 400
+scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 sea_4temp2 400
 
 item replace entity @a[tag=SEAPT] inventory.19 with music_disc_5[custom_name='{"text":"磁锯发射装置","italic":false,"color":"red"}',custom_data={sea_flamethrower:true},unbreakable={}]
 

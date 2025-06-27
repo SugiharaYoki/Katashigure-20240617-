@@ -60,8 +60,8 @@ execute if score sc Map_Code matches 16 as @a[tag=PVP_see] at @s run playsound m
 execute if score sc Map_Code matches 17 as @a[tag=PVP_see] at @s run playsound music.nether.basalt_deltas music @s ~ ~ ~ 0.7
 #[futuredevskywar]
 
-execute if entity @a[tag=NoSkyWar] run tag @n[tag=sc] add Skyblock_NoWorldborder
-execute unless entity @a[tag=NoSkyWar] run tag @n[tag=sc] remove Skyblock_NoWorldborder
+execute if entity @a[tag=NoSkyWar] run tag 10e959db-4b44-4cdd-b98c-350d3b454206 add Skyblock_NoWorldborder
+execute unless entity @a[tag=NoSkyWar] run tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove Skyblock_NoWorldborder
 execute if score sc Map_Code matches 2 run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run worldborder center 50062 50052
 execute if score sc Map_Code matches 2 run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run worldborder set 116
 execute if score sc Map_Code matches 3 run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run worldborder center 50073 50472

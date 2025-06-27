@@ -6,13 +6,13 @@ time set 20500
 
 #第五章出生点90146 84 42
 
-scoreboard players set @n[tag=sc] sea_4temp2 0
-scoreboard players set @n[tag=sc] sea_4temp3 0
-scoreboard players set @n[tag=sc] sea_4temp5 0
-scoreboard players set @n[tag=sc] sea_4temp6 0
-scoreboard players set @n[tag=sc] sea_4temp7 0
-scoreboard players set @n[tag=sc] sea_4temp8 0
-tag @n[tag=sc] add SeGa_sea_ch6
+scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 sea_4temp2 0
+scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 sea_4temp3 0
+scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 sea_4temp5 0
+scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 sea_4temp6 0
+scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 sea_4temp7 0
+scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 sea_4temp8 0
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 add SeGa_sea_ch6
 scoreboard players set SEAmusic rng1 0
 
 scoreboard players set SEA_ch6_event rng1 0

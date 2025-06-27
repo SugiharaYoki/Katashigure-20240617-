@@ -118,7 +118,7 @@ execute positioned 90140 104 023 if entity @a[distance=..6.2,limit=1] run item r
 
 #,custom_data={sea_lever2:true}
 
-#execute if entity @p[x=90080,y=104,z=134,distance=0..9] as @n[tag=sc] run function skyblock:sea/p/documentary_box
+#execute if entity @p[x=90080,y=104,z=134,distance=0..9] as 10e959db-4b44-4cdd-b98c-350d3b454206 run function skyblock:sea/p/documentary_box
 
 
 item replace block 90095 122 128 container.3 with flow_banner_pattern[custom_data={sea_doc02:true},custom_name='{"text":"何日的新闻","italic":true,"color":"dark_purple","italic":false}',lore=['{"text":"这座忒尔克西作为2130年往后的唯一一座新建钻井平台，其背负的不仅是开采石油的使命。","color":"white","italic":false}','{"text":"于2128年在大洋洲火圈地带接连发生的火山喷发，将这一批埋藏于地层深处的石油送入了太平洋。","color":"white","italic":false}','{"text":"这些石油在地理位置的分布再一次提醒了现代的人们过去有关“姆大陆”的学术猜想。","color":"white","italic":false}','{"text":"忒尔克西海上钻井平台在开采这批石油的同时，也将探索位于各处石油分布区域汇聚……","color":"white","italic":false}']]

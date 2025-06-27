@@ -1,4 +1,4 @@
-execute if block ~ ~ ~1 red_concrete run tag @n[tag=sc] add CaWStPCSTemp
+execute if block ~ ~ ~1 red_concrete run tag 10e959db-4b44-4cdd-b98c-350d3b454206 add CaWStPCSTemp
 execute if block ~ ~ ~1 green_concrete run setblock ~ ~ ~1 red_concrete
 execute if block ~ ~ ~1 yellow_concrete run setblock ~ ~ ~1 green_concrete
 execute if block ~ ~ ~1 orange_concrete run setblock ~ ~ ~1 yellow_concrete

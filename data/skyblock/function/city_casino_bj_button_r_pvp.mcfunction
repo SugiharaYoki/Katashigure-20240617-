@@ -72,20 +72,20 @@ execute if score @s[tag=CasBJG1,tag=!CasBJGGS] Perm_PersonFSB matches 100.. if e
 execute if score @s[tag=CasBJG1,tag=!CasBJGGS] Perm_PersonFSB matches 100.. if entity @p[x=-67,y=63,z=-38,distance=0..3,tag=Cas_BJ_A] if entity @p[x=-67,y=63,z=-42,distance=0..3,tag=Cas_BJ_B] run tag @p[tag=Cas_BJ_B] add CasBJG2
 
 execute if entity @s[tag=CasBJG2] run function skyblock:tool_rng
-execute if entity @s[tag=CasBJG2] if score @n[tag=sc] rng2 matches 1 run tellraw @p[tag=Cas_BJ_A] [{"text":"黑杰克 玩家A： ","color":"white"},{"selector":"@p[x=-67,y=63,z=-38,distance=0..3]","color":"blue"}]
-execute if entity @s[tag=CasBJG2] if score @n[tag=sc] rng2 matches 1 run tellraw @p[tag=Cas_BJ_A] [{"text":"黑杰克 玩家B： ","color":"white"},{"selector":"@p[x=-67,y=63,z=-42,distance=0..3]","color":"blue"}]
-execute if entity @s[tag=CasBJG2] if score @n[tag=sc] rng2 matches 1 run tellraw @p[tag=Cas_BJ_B] [{"text":"黑杰克 玩家A： ","color":"white"},{"selector":"@p[x=-67,y=63,z=-38,distance=0..3]","color":"blue"}]
-execute if entity @s[tag=CasBJG2] if score @n[tag=sc] rng2 matches 1 run tellraw @p[tag=Cas_BJ_B] [{"text":"黑杰克 玩家B： ","color":"white"},{"selector":"@p[x=-67,y=63,z=-42,distance=0..3]","color":"blue"}]
-execute if entity @s[tag=CasBJG2] if score @n[tag=sc] rng2 matches 2 run tag @a[tag=Cas_BJ_A] add Cas_BJ_C
-execute if entity @s[tag=CasBJG2] if score @n[tag=sc] rng2 matches 2 run tag @a[tag=Cas_BJ_A] remove Cas_BJ_A
-execute if entity @s[tag=CasBJG2] if score @n[tag=sc] rng2 matches 2 run tag @a[tag=Cas_BJ_B] add Cas_BJ_A
-execute if entity @s[tag=CasBJG2] if score @n[tag=sc] rng2 matches 2 run tag @a[tag=Cas_BJ_B] remove Cas_BJ_B
-execute if entity @s[tag=CasBJG2] if score @n[tag=sc] rng2 matches 2 run tag @a[tag=Cas_BJ_C] add Cas_BJ_B
-execute if entity @s[tag=CasBJG2] if score @n[tag=sc] rng2 matches 2 run tag @a[tag=Cas_BJ_C] remove Cas_BJ_C
-execute if entity @s[tag=CasBJG2] if score @n[tag=sc] rng2 matches 2 run tellraw @p[tag=Cas_BJ_A] [{"text":"黑杰克 玩家A： ","color":"white"},{"selector":"@p[x=-67,y=63,z=-38,distance=0..3]","color":"blue"}]
-execute if entity @s[tag=CasBJG2] if score @n[tag=sc] rng2 matches 2 run tellraw @p[tag=Cas_BJ_A] [{"text":"黑杰克 玩家B： ","color":"white"},{"selector":"@p[x=-67,y=63,z=-42,distance=0..3]","color":"blue"}]
-execute if entity @s[tag=CasBJG2] if score @n[tag=sc] rng2 matches 2 run tellraw @p[tag=Cas_BJ_B] [{"text":"黑杰克 玩家A： ","color":"white"},{"selector":"@p[x=-67,y=63,z=-38,distance=0..3]","color":"blue"}]
-execute if entity @s[tag=CasBJG2] if score @n[tag=sc] rng2 matches 2 run tellraw @p[tag=Cas_BJ_B] [{"text":"黑杰克 玩家B： ","color":"white"},{"selector":"@p[x=-67,y=63,z=-42,distance=0..3]","color":"blue"}]
+execute if entity @s[tag=CasBJG2] if score 10e959db-4b44-4cdd-b98c-350d3b454206 rng2 matches 1 run tellraw @p[tag=Cas_BJ_A] [{"text":"黑杰克 玩家A： ","color":"white"},{"selector":"@p[x=-67,y=63,z=-38,distance=0..3]","color":"blue"}]
+execute if entity @s[tag=CasBJG2] if score 10e959db-4b44-4cdd-b98c-350d3b454206 rng2 matches 1 run tellraw @p[tag=Cas_BJ_A] [{"text":"黑杰克 玩家B： ","color":"white"},{"selector":"@p[x=-67,y=63,z=-42,distance=0..3]","color":"blue"}]
+execute if entity @s[tag=CasBJG2] if score 10e959db-4b44-4cdd-b98c-350d3b454206 rng2 matches 1 run tellraw @p[tag=Cas_BJ_B] [{"text":"黑杰克 玩家A： ","color":"white"},{"selector":"@p[x=-67,y=63,z=-38,distance=0..3]","color":"blue"}]
+execute if entity @s[tag=CasBJG2] if score 10e959db-4b44-4cdd-b98c-350d3b454206 rng2 matches 1 run tellraw @p[tag=Cas_BJ_B] [{"text":"黑杰克 玩家B： ","color":"white"},{"selector":"@p[x=-67,y=63,z=-42,distance=0..3]","color":"blue"}]
+execute if entity @s[tag=CasBJG2] if score 10e959db-4b44-4cdd-b98c-350d3b454206 rng2 matches 2 run tag @a[tag=Cas_BJ_A] add Cas_BJ_C
+execute if entity @s[tag=CasBJG2] if score 10e959db-4b44-4cdd-b98c-350d3b454206 rng2 matches 2 run tag @a[tag=Cas_BJ_A] remove Cas_BJ_A
+execute if entity @s[tag=CasBJG2] if score 10e959db-4b44-4cdd-b98c-350d3b454206 rng2 matches 2 run tag @a[tag=Cas_BJ_B] add Cas_BJ_A
+execute if entity @s[tag=CasBJG2] if score 10e959db-4b44-4cdd-b98c-350d3b454206 rng2 matches 2 run tag @a[tag=Cas_BJ_B] remove Cas_BJ_B
+execute if entity @s[tag=CasBJG2] if score 10e959db-4b44-4cdd-b98c-350d3b454206 rng2 matches 2 run tag @a[tag=Cas_BJ_C] add Cas_BJ_B
+execute if entity @s[tag=CasBJG2] if score 10e959db-4b44-4cdd-b98c-350d3b454206 rng2 matches 2 run tag @a[tag=Cas_BJ_C] remove Cas_BJ_C
+execute if entity @s[tag=CasBJG2] if score 10e959db-4b44-4cdd-b98c-350d3b454206 rng2 matches 2 run tellraw @p[tag=Cas_BJ_A] [{"text":"黑杰克 玩家A： ","color":"white"},{"selector":"@p[x=-67,y=63,z=-38,distance=0..3]","color":"blue"}]
+execute if entity @s[tag=CasBJG2] if score 10e959db-4b44-4cdd-b98c-350d3b454206 rng2 matches 2 run tellraw @p[tag=Cas_BJ_A] [{"text":"黑杰克 玩家B： ","color":"white"},{"selector":"@p[x=-67,y=63,z=-42,distance=0..3]","color":"blue"}]
+execute if entity @s[tag=CasBJG2] if score 10e959db-4b44-4cdd-b98c-350d3b454206 rng2 matches 2 run tellraw @p[tag=Cas_BJ_B] [{"text":"黑杰克 玩家A： ","color":"white"},{"selector":"@p[x=-67,y=63,z=-38,distance=0..3]","color":"blue"}]
+execute if entity @s[tag=CasBJG2] if score 10e959db-4b44-4cdd-b98c-350d3b454206 rng2 matches 2 run tellraw @p[tag=Cas_BJ_B] [{"text":"黑杰克 玩家B： ","color":"white"},{"selector":"@p[x=-67,y=63,z=-42,distance=0..3]","color":"blue"}]
 
 execute if entity @s[tag=CasBJG2] run tellraw @p[tag=Cas_BJ_A] {"text":"你是先手玩家","color":"green"}
 execute if entity @s[tag=CasBJG2] run tellraw @p[tag=Cas_BJ_B] {"text":"对方是先手玩家","color":"red"}

@@ -2,7 +2,7 @@ execute unless block -17 23 32 soul_lantern if score skywar_start rng1 matches .
 #《计时器初始化》
 #-#-#setblock 10 66 -12 minecraft:redstone_wire
 #-#-#setblock 11 60 -10 minecraft:redstone_wire
-#-#-#scoreboard players set @n[tag=sc] TempPaus 0
+#-#-#scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 TempPaus 0
 tell @p[tag=ENKIDU] skywar_city_pause
 
 #《初始化队伍》
@@ -21,7 +21,7 @@ fill -130 59 -117 -130 59 -128 minecraft:cherry_button[facing=east]
 #gamerule doFireTick false
 #《玩家事件/文字显示/传送支援》
 tag @a[tag=NoSkyWarTemp,tag=!Gaming] remove NoSkyWar
-tag @n[tag=sc] remove MapLoaAlr
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove MapLoaAlr
 tag @a[tag=!Gaming] remove NoSkyWarTemp
 title @a[tag=!Gaming,tag=!NoSkyWar] times 0 30 5
 title @a[tag=!Gaming,tag=!NoSkyWar] title {"text":"开局暂停","bold":true,"color":"red"}
@@ -33,7 +33,7 @@ title @a[tag=!Gaming,tag=!NoSkyWar] title {"text":"开局暂停","bold":true,"co
 #-#-#setblock 12 88 86 air
 #《禁止再次开局》
 #《计入历史启动》
-scoreboard players remove @n[tag=sc] HistoryPVP 1
+scoreboard players remove 10e959db-4b44-4cdd-b98c-350d3b454206 HistoryPVP 1
 #无意义变量 scoreboard players set @s Random1 0
 #《变量初始化》
 #无意义变量 scoreboard players reset @s RemainPlayer

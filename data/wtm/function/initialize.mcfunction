@@ -1,4 +1,4 @@
-execute unless entity @n[tag=sc] run summon witch 0 0 0 {Silent:1b,PersistenceRequired:1b,Tags:["sc"],Invulnerable:true,NoAI:1b}
+execute unless entity 10e959db-4b44-4cdd-b98c-350d3b454206 run summon witch 0 0 0 {Silent:1b,PersistenceRequired:1b,Tags:["sc"],Invulnerable:true,NoAI:1b}
 setblock 0 -1 0 bedrock
 scoreboard objectives add rng1 dummy
 scoreboard objectives add rng2 dummy
@@ -13,9 +13,9 @@ scoreboard objectives add wtmgr_split dummy
 scoreboard objectives add t1 dummy
 scoreboard objectives add MultiMenu trigger
 function wtm:wtm_reset
-scoreboard players set @n[tag=sc] fixed1 -99999
-scoreboard players set @n[tag=sc] fixed2 -99999
-scoreboard players set @n[tag=sc] fixed3 -99999
+scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 fixed1 -99999
+scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 fixed2 -99999
+scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 fixed3 -99999
 gamerule commandBlockOutput false
 gamerule doFireTick false
 gamerule keepInventory true

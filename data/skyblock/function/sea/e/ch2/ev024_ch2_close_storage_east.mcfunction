@@ -48,4 +48,4 @@ execute if score sea_ch2_close_storage sea_4temp2 matches 505 positioned 90100 1
 execute if score sea_ch2_close_storage sea_4temp2 matches 505 positioned 90100 128 120 run function skyblock:sea/m/silverfish
 execute if score sea_ch2_close_storage sea_4temp2 matches 505 positioned 90100 128 120 run function skyblock:sea/m/silverfish
 
-execute if score sea_ch2_close_storage sea_4temp2 matches 405 run scoreboard players set @n[tag=sc] sea_4temp2 420
+execute if score sea_ch2_close_storage sea_4temp2 matches 405 run scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 sea_4temp2 420

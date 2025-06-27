@@ -1,6 +1,6 @@
 #排行榜写入
 execute as @a[tag=SeGa_DVA] at @s unless score @s SeGa_DVStageBH matches 0.. run scoreboard players set @s SeGa_DVStageBH 0
-scoreboard players operation @a[tag=SeGa_DVA] SeGa_DVStageBH > @n[tag=sc] SeGa_DVStage
+scoreboard players operation @a[tag=SeGa_DVA] SeGa_DVStageBH > 10e959db-4b44-4cdd-b98c-350d3b454206 SeGa_DVStage
 
 
 setblock -25 143 -58 minecraft:air
@@ -30,8 +30,8 @@ scoreboard objectives add SeGa_DVTimerx10 dummy
 scoreboard objectives add SeGa_DVTimerQT dummy
 scoreboard objectives add SeGa_DVTimerQTS dummy
 scoreboard objectives add SeGa_DVTimerLB dummy
-tag @n[tag=sc] remove DV_North
-tag @n[tag=sc] remove DV_South
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove DV_North
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove DV_South
 scoreboard objectives remove Temp_PersonDVS
 scoreboard objectives remove Temp_PersonDVSt
 scoreboard objectives add Temp_PersonDVS dummy {"text":"绿宝石数量","color":"green"}

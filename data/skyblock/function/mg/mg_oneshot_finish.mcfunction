@@ -17,15 +17,15 @@ tag @a remove OneShotInvite
 tag @a remove OneShotAccept
 kill @e[tag=OneShot]
 setblock -17 23 28 minecraft:air
-tag @n[tag=sc] remove OneShotMap001
-tag @n[tag=sc] remove OneShotMap002
-tag @n[tag=sc] remove OneShotMap003
-tag @n[tag=sc] remove OneShotMap004
-tag @n[tag=sc] remove OneShotMap005
-tag @n[tag=sc] remove OneShotMap006
-tag @n[tag=sc] remove OneShotMap007
-tag @n[tag=sc] remove OneShotMap008
-tag @n[tag=sc] remove OneShotMap009
-tag @n[tag=sc] remove OneShotMap010
-tag @n[tag=sc] remove OneShotMap011
-tag @n[tag=sc] remove OneShotMap012
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove OneShotMap001
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove OneShotMap002
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove OneShotMap003
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove OneShotMap004
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove OneShotMap005
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove OneShotMap006
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove OneShotMap007
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove OneShotMap008
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove OneShotMap009
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove OneShotMap010
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove OneShotMap011
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove OneShotMap012

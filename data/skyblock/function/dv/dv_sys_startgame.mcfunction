@@ -13,12 +13,12 @@ fill -90003 106 47 -89999 106 47 air
 fill -90003 106 65 -89999 106 65 air
 setblock -23 23 32 minecraft:soul_lantern
 setblock -25 143 -58 minecraft:observer[facing=south]
-scoreboard players set @n[tag=sc] SeGa_DVTimer 0
-scoreboard players set @n[tag=sc] SeGa_DVCreeD 0
-scoreboard players set @n[tag=sc] SeGa_DVStage 0
-scoreboard players set @n[tag=sc] SeGa_DVTimerx10 0
-scoreboard players set @n[tag=sc] SeGa_DVInv14 0
-scoreboard players set @n[tag=sc] SeGa_DVInv15 0
-scoreboard players set @n[tag=sc] SeGa_DVInv24 0
-scoreboard players set @n[tag=sc] SeGa_DVInv23 0
-scoreboard players set @n[tag=sc] SeGa_DVInv22 0
+scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 SeGa_DVTimer 0
+scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 SeGa_DVCreeD 0
+scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 SeGa_DVStage 0
+scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 SeGa_DVTimerx10 0
+scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 SeGa_DVInv14 0
+scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 SeGa_DVInv15 0
+scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 SeGa_DVInv24 0
+scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 SeGa_DVInv23 0
+scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 SeGa_DVInv22 0

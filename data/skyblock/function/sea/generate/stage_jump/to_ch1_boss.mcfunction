@@ -17,7 +17,7 @@ item replace entity @a[tag=SEAPT] hotbar.1 with iron_axe[custom_name='{"text":"�
 
 item replace entity @a[tag=SEAPT] inventory.25 with spyglass[lore=['{"text":"我随身携带的望远镜。","color":"white","italic":false}','{"text":"在前途未知的时刻，紧握住它可以让我不再迷惘。","color":"white","italic":false}','{"text":"手持时：显示任务目标 & 跳过已阅读的剧情对话","color":"green","italic":false}']]
 
-scoreboard players set @n[tag=sc] sea_4temp2 3001
+scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 sea_4temp2 3001
 
 scoreboard players set sea_chapter_introduction sea_4temp1 99999
 scoreboard players set sea_chapter_introduction sea_4temp2 99999

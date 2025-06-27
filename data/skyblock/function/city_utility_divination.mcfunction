@@ -2,7 +2,7 @@
 
 execute unless entity @e[limit=1,tag=sc,scores={dailydiv9=-1..}] run scoreboard objectives add dailydiv9 dummy
 execute unless entity @e[limit=1,tag=sc,scores={dailydiv9=-1..}] run scoreboard objectives add dailydiv9y dummy
-execute unless entity @e[limit=1,tag=sc,scores={dailydiv9=-1..}] run scoreboard players set @n[tag=sc] dailydiv9 999
+execute unless entity @e[limit=1,tag=sc,scores={dailydiv9=-1..}] run scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 dailydiv9 999
 #玩家日数刷新
 execute unless score @s dailydiv9 matches -999.. run scoreboard players set @s dailydiv9 0
 execute if score @s dailydiv9 matches 0 run scoreboard players set @s dailydiv9 99

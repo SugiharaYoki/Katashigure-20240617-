@@ -15,12 +15,12 @@ scoreboard players set @s Temp_PersonDVSt 0
 tag @s add SeGa_DVA
 tag @s add Gaming
 tag @s add NoMultiMenu
-tag @n[tag=sc] remove DVC1
-tag @n[tag=sc] remove DVC2
-tag @n[tag=sc] remove DVC3
-tag @n[tag=sc] remove DVC4
-tag @n[tag=sc] remove DVC5
-tag @n[tag=sc] remove DVC1R
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove DVC1
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove DVC2
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove DVC3
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove DVC4
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove DVC5
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove DVC1R
 
 
 scoreboard players set @s SeGa_DVInv0 00

@@ -90,7 +90,7 @@ execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 1198 run fill 9013
 execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 1198 run scoreboard players set @a[tag=SEAPT,scores={sea_progress=..4}] sea_progress 5
 execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 1198 run effect give @a[tag=SEAPT] darkness 3 0 true
 execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 1198..1299 if block 90133 129 121 air unless entity @e[tag=SEAmob,x=90137,y=129,z=117,distance=..7] run scoreboard players set sea_ch2_angel_bless_trial sea_4temp2 1300
-execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 1198..1299 if block 90133 129 121 air unless entity @e[tag=SEAmob,x=90137,y=129,z=117,distance=..7] run scoreboard players set @n[tag=sc] sea_4temp2 1300
+execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 1198..1299 if block 90133 129 121 air unless entity @e[tag=SEAmob,x=90137,y=129,z=117,distance=..7] run scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 sea_4temp2 1300
 
 execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 1301 run fill 90131 131 118 90131 129 116 minecraft:air
 execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 1301 run fill 90143 131 116 90143 129 118 minecraft:air

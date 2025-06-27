@@ -25,17 +25,17 @@ execute if entity @a[tag=mg_cdc,tag=!mg_cdc_start] run scoreboard objectives add
 execute if entity @a[tag=mg_cdc,tag=!mg_cdc_start] run scoreboard objectives add mg_cdc_kill minecraft.killed:minecraft.skeleton
 execute if entity @a[tag=mg_cdc,tag=!mg_cdc_start] run scoreboard objectives add mg_cdc_kill_best dummy
 execute if entity @a[tag=mg_cdc,tag=!mg_cdc_start] run setblock 0 56 101 minecraft:amethyst_cluster
-execute if entity @a[tag=mg_cdc,tag=!mg_cdc_start] run scoreboard players set @n[tag=sc] mg_cdc_timer 0
-execute if entity @a[tag=mg_cdc,tag=!mg_cdc_start] run scoreboard players set @n[tag=sc] mg_cdc_loop 0
-execute if entity @a[tag=mg_cdc,tag=!mg_cdc_start] run scoreboard players set @n[tag=sc] mg_cdc_loop2 0
+execute if entity @a[tag=mg_cdc,tag=!mg_cdc_start] run scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 mg_cdc_timer 0
+execute if entity @a[tag=mg_cdc,tag=!mg_cdc_start] run scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 mg_cdc_loop 0
+execute if entity @a[tag=mg_cdc,tag=!mg_cdc_start] run scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 mg_cdc_loop2 0
 execute if entity @a[tag=mg_cdc,tag=!mg_cdc_start] run scoreboard players set @a mg_cdc_money 0
 execute if entity @a[tag=mg_cdc,tag=!mg_cdc_start] run scoreboard players set @a mg_cdc_load 0
 execute if entity @a[tag=mg_cdc,tag=!mg_cdc_start] run scoreboard players set @a mg_cdc_load_upg 0
 execute if entity @a[tag=mg_cdc,tag=!mg_cdc_start] run scoreboard players set @a mg_cdc_shoot_upg 0
-execute if entity @a[tag=mg_cdc,tag=!mg_cdc_start] run scoreboard players set @n[tag=sc] mg_cdc_loopbonus 0
-execute if entity @a[tag=mg_cdc,tag=!mg_cdc_start] run scoreboard players set @n[tag=sc] mg_rng 1
-execute if entity @a[tag=mg_cdc,tag=!mg_cdc_start] run scoreboard players set @n[tag=sc] mg_rng2 1
-execute if entity @a[tag=mg_cdc,tag=!mg_cdc_start] run scoreboard players set @n[tag=sc] mg_rng3 1
+execute if entity @a[tag=mg_cdc,tag=!mg_cdc_start] run scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 mg_cdc_loopbonus 0
+execute if entity @a[tag=mg_cdc,tag=!mg_cdc_start] run scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 mg_rng 1
+execute if entity @a[tag=mg_cdc,tag=!mg_cdc_start] run scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 mg_rng2 1
+execute if entity @a[tag=mg_cdc,tag=!mg_cdc_start] run scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 mg_rng3 1
 execute if entity @a[tag=mg_cdc,tag=!mg_cdc_start] run scoreboard players set @a mg_cdc_kill 0
 execute as @a[tag=mg_cdc,tag=!mg_cdc_start] run setblock -5 57 108 decorated_pot{sherds:["archer_pottery_sherd","archer_pottery_sherd","archer_pottery_sherd","archer_pottery_sherd"]}
 execute as @a[tag=mg_cdc,tag=!mg_cdc_start] run setblock 5 57 108 decorated_pot{sherds:["heartbreak_pottery_sherd","heartbreak_pottery_sherd","heartbreak_pottery_sherd","heartbreak_pottery_sherd"]}
@@ -45,16 +45,16 @@ execute as @a[tag=mg_cdc,tag=!mg_cdc_start] run setblock -5 59 112 air
 execute as @a[tag=mg_cdc,tag=!mg_cdc_start] run clear @s
 execute as @a[tag=mg_cdc,tag=!mg_cdc_start] run tag @s add mg_cdc_start
 execute as @a[tag=mg_cdc,tag=mg_cdc_start] run gamemode adventure @s
-execute as @a[tag=mg_cdc,tag=mg_cdc_start] run scoreboard players add @n[tag=sc] mg_cdc_timer 1
-execute as @a[tag=mg_cdc,tag=mg_cdc_start] run scoreboard players add @n[tag=sc] mg_cdc_loop 1
-execute as @a[tag=mg_cdc,tag=mg_cdc_start] run scoreboard players add @n[tag=sc] mg_cdc_loop2 1
+execute as @a[tag=mg_cdc,tag=mg_cdc_start] run scoreboard players add 10e959db-4b44-4cdd-b98c-350d3b454206 mg_cdc_timer 1
+execute as @a[tag=mg_cdc,tag=mg_cdc_start] run scoreboard players add 10e959db-4b44-4cdd-b98c-350d3b454206 mg_cdc_loop 1
+execute as @a[tag=mg_cdc,tag=mg_cdc_start] run scoreboard players add 10e959db-4b44-4cdd-b98c-350d3b454206 mg_cdc_loop2 1
 execute as @a[tag=mg_cdc,tag=mg_cdc_start] run scoreboard players add @a[tag=mg_cdc,tag=mg_cdc_start] mg_cdc_load 1
-execute as @a[tag=mg_cdc,tag=mg_cdc_start] run scoreboard players operation @n[tag=sc] mg_cdc_loop += @n[tag=sc] mg_cdc_loopbonus
+execute as @a[tag=mg_cdc,tag=mg_cdc_start] run scoreboard players operation 10e959db-4b44-4cdd-b98c-350d3b454206 mg_cdc_loop += 10e959db-4b44-4cdd-b98c-350d3b454206 mg_cdc_loopbonus
 execute as @a[tag=mg_cdc,tag=mg_cdc_start] at @s run kill @a[tag=!mg_cdc,distance=0..1.5,gamemode=!spectator]
-execute as @n[tag=sc,scores={mg_cdc_timer=..1500}] store result score @n[tag=sc] mg_rng run random value 1..3
-execute as @n[tag=sc,scores={mg_cdc_timer=1501..}] store result score @n[tag=sc] mg_rng run random value 1..5
-execute store result score @n[tag=sc] mg_rng2 run random value 1..13
-execute store result score @n[tag=sc] mg_rng3 run random value 1..17
+execute as @n[tag=sc,scores={mg_cdc_timer=..1500}] store result score 10e959db-4b44-4cdd-b98c-350d3b454206 mg_rng run random value 1..3
+execute as @n[tag=sc,scores={mg_cdc_timer=1501..}] store result score 10e959db-4b44-4cdd-b98c-350d3b454206 mg_rng run random value 1..5
+execute store result score 10e959db-4b44-4cdd-b98c-350d3b454206 mg_rng2 run random value 1..13
+execute store result score 10e959db-4b44-4cdd-b98c-350d3b454206 mg_rng3 run random value 1..17
 execute as @n[tag=sc,scores={mg_cdc_timer=0..999,mg_cdc_loop=60..,mg_rng=1}] run summon skeleton 3 56 110 {Tags:["mg_cdc_mob"],DeathLootTable:"empty",attributes:[{id:max_health,base:7.0},{id:attack_damage,base:0.5},{id:movement_speed,base:0.2}],Health:7.0f,HandItems:[{id:"wooden_sword",components:{"minecraft:enchantments":{"minecraft:knockback":6}}},{}],HandDropChances:[0.0f,0.0f]}
 execute as @n[tag=sc,scores={mg_cdc_timer=0..999,mg_cdc_loop=60..,mg_rng=2}] run summon skeleton 0 56 111 {Tags:["mg_cdc_mob"],DeathLootTable:"empty",attributes:[{id:max_health,base:7.0},{id:attack_damage,base:0.5},{id:movement_speed,base:0.2}],Health:7.0f,HandItems:[{id:"wooden_sword",components:{"minecraft:enchantments":{"minecraft:knockback":6}}},{}],HandDropChances:[0.0f,0.0f]}
 execute as @n[tag=sc,scores={mg_cdc_timer=0..999,mg_cdc_loop=60..,mg_rng=3}] run summon skeleton -3 56 110 {Tags:["mg_cdc_mob"],DeathLootTable:"empty",attributes:[{id:max_health,base:7.0},{id:attack_damage,base:0.5},{id:movement_speed,base:0.2}],Health:7.0f,HandItems:[{id:"wooden_sword",components:{"minecraft:enchantments":{"minecraft:knockback":6}}},{}],HandDropChances:[0.0f,0.0f]}

@@ -43,8 +43,8 @@ execute as @n[tag=sc,scores={sea_4temp2=4000..5000}] if block 90078 124 101 mine
 
 
 
-execute as @n[tag=sc,scores={sea_4temp2=4000..5000}] run scoreboard players add @n[tag=sc] sea_4temp2 1
-execute as @n[tag=sc,scores={sea_4temp2=4800..4810}] run scoreboard players set @n[tag=sc] sea_4temp2 4800
+execute as @n[tag=sc,scores={sea_4temp2=4000..5000}] run scoreboard players add 10e959db-4b44-4cdd-b98c-350d3b454206 sea_4temp2 1
+execute as @n[tag=sc,scores={sea_4temp2=4800..4810}] run scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 sea_4temp2 4800
 execute as @n[tag=sc,scores={sea_4temp2=4001}] positioned 90076 123 122 run kill @e[distance=0..5,type=shulker,tag=SEA_SEEK_DESTINATION]
 execute as @n[tag=sc,scores={sea_4temp2=4001}] positioned 90074.0 129 109.0 run stopsound @a[distance=0..500] music
 execute as @n[tag=sc,scores={sea_4temp2=4001}] run bossbar add 9066601 "圣献的医者 - 法莫洛斯 · 狄奥斐卢斯"
@@ -59,7 +59,7 @@ execute as @n[tag=sc,scores={sea_4temp2=4000..5000}] run scoreboard players add 
 execute if score SEAmusic rng1 matches 478 as @a[tag=SEAPT] at @s run playsound minecraft:app2.heracles music @s ~ ~ ~ 1 1.0
 execute if score SEAmusic rng1 matches 478 as @r[tag=SEAPT] at @s as @a[tag=!SEAPT,gamemode=spectator,distance=0..200] run playsound minecraft:app2.heracles music @s ~ ~ ~ 1 1.0
 execute if score SEAmusic rng1 matches 478.. run scoreboard players set SEAmusic rng1 0
-execute as @n[tag=sc,scores={sea_4temp2=4001}] run scoreboard players set @n[tag=sc] sea_4temp5 1
+execute as @n[tag=sc,scores={sea_4temp2=4001}] run scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 sea_4temp5 1
 execute as @n[tag=sc,scores={sea_4temp2=4001}] run particle minecraft:large_smoke 90074.45 123.00 122.35 1 1 1 0.1 200
 execute as @n[tag=sc,scores={sea_4temp2=4001}] run particle minecraft:crimson_spore 90074.45 123.00 122.35 1 1 1 0.0 100
 execute as @n[tag=sc,scores={sea_4temp2=4001}] run playsound minecraft:item.trident.thunder hostile @a 90074.45 122.00 122.35 10 1.3

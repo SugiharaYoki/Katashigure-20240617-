@@ -80,7 +80,7 @@ scoreboard objectives add sea_progress dummy
 scoreboard objectives add SEA_pounce_charge dummy
 scoreboard objectives add sea_visioned dummy
 scoreboard objectives add sea_killmob custom:minecraft.mob_kills
-scoreboard players set @n[tag=sc] sea_chapter 1
+scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 sea_chapter 1
 scoreboard players set sc sea_speedrun_ch1 0
 scoreboard players set sc sea_speedrun_ch2 0
 scoreboard players set sc sea_speedrun_ch3 0
@@ -185,7 +185,7 @@ fill 90125 125 114 90125 124 114 iron_bars
 fill 90122 125 114 90122 124 114 iron_bars
 fill 90129 124 120 90129 122 119 iron_bars
 setblock 90127 125 122 minecraft:iron_trapdoor[half=bottom,open=false]
-tag @n[tag=sc] add SeGa_sea_ch1
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 add SeGa_sea_ch1
 fill 90110 122 134 90109 124 134 air
 summon minecraft:interaction 90094 123.3 135 {CustomName:'[{"text":"多功能工作站"}]',Tags:["SEAcrafter","SEAcrafter1"]}
 summon minecraft:marker 90094 122 136 {Tags:["SEAcrafter_tp","SEAcrafter_tp1"]}

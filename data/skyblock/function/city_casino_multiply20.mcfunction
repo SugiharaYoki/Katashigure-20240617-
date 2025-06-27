@@ -7,7 +7,7 @@ scoreboard objectives add Cas_Mtpl_C dummy
 function skyblock:tool_rng
 
 #土块
-execute if entity @s[tag=DEBUG_dirt] if score @n[tag=sc] rng4 matches 4 run scoreboard players set @n[tag=sc] rng4 3
+execute if entity @s[tag=DEBUG_dirt] if score 10e959db-4b44-4cdd-b98c-350d3b454206 rng4 matches 4 run scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 rng4 3
 
 execute if entity @s[tag=CasinoMultSuc] run scoreboard players remove @s Perm_PersonFSB 20
 execute if entity @s[tag=CasinoMultSuc,scores={Cas_Mtpl_C=1}] if entity @n[tag=sc,scores={rng10=1}] run tellraw @s {"text":"<< 10 >>","color":"yellow"}
@@ -25,8 +25,8 @@ execute if entity @s[tag=CasinoMultSuc,scores={Cas_Mtpl_C=2..}] if entity @n[tag
 execute if entity @s[tag=CasinoMultSuc,scores={Cas_Mtpl_C=2..}] if entity @n[tag=sc,scores={rng4=3}] run tellraw @s {"text":"〈 加 〉","color":"dark_green"}
 execute if entity @s[tag=CasinoMultSuc,scores={Cas_Mtpl_C=2..}] if entity @n[tag=sc,scores={rng4=4}] run tellraw @s {"text":"〈 减 〉","color":"dark_red"}
 
-execute if entity @s[tag=CasinoMultSuc,scores={Cas_Mtpl_C=1}] run scoreboard players operation @s Cas_Mtpl_A = @n[tag=sc] rng10
-execute if entity @s[tag=CasinoMultSuc,scores={Cas_Mtpl_C=2..}] run scoreboard players operation @s Cas_Mtpl_A = @n[tag=sc] rng4
+execute if entity @s[tag=CasinoMultSuc,scores={Cas_Mtpl_C=1}] run scoreboard players operation @s Cas_Mtpl_A = 10e959db-4b44-4cdd-b98c-350d3b454206 rng10
+execute if entity @s[tag=CasinoMultSuc,scores={Cas_Mtpl_C=2..}] run scoreboard players operation @s Cas_Mtpl_A = 10e959db-4b44-4cdd-b98c-350d3b454206 rng4
 
 
 execute if entity @s[tag=CasinoMultSuc,scores={Cas_Mtpl_A=1,Cas_Mtpl_C=1}] run scoreboard players set @s Cas_Mtpl_B 10

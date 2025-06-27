@@ -10,43 +10,43 @@ execute unless entity @e[limit=1,tag=sc,scores={dailylogin_c1=-1..}] run scorebo
 execute unless entity @e[limit=1,tag=sc,scores={dailydiv=-1..}] run scoreboard objectives add dailydiv_n dummy
 execute unless entity @e[limit=1,tag=sc,scores={dailydiv=-1..}] run scoreboard objectives add dailydiv_w dummy
 execute unless entity @e[limit=1,tag=sc,scores={dailydiv=-1..}] run scoreboard objectives add dailydiv_wy dummy
-execute unless entity @e[limit=1,tag=sc,scores={dailydiv=-1..}] run scoreboard players set @n[tag=sc] dailydiv 999
+execute unless entity @e[limit=1,tag=sc,scores={dailydiv=-1..}] run scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 dailydiv 999
 execute unless entity @e[limit=1,tag=sc,scores={dailydiv1=-1..}] run scoreboard objectives add dailydiv1y dummy
 execute unless entity @e[limit=1,tag=sc,scores={dailydiv1=-1..}] run scoreboard objectives add dailydiv1 dummy
-execute unless entity @e[limit=1,tag=sc,scores={dailydiv1=-1..}] run scoreboard players set @n[tag=sc] dailydiv1 999
+execute unless entity @e[limit=1,tag=sc,scores={dailydiv1=-1..}] run scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 dailydiv1 999
 execute unless entity @e[limit=1,tag=sc,scores={dailydiv2=-1..}] run scoreboard objectives add dailydiv2y dummy
 execute unless entity @e[limit=1,tag=sc,scores={dailydiv2=-1..}] run scoreboard objectives add dailydiv2 dummy
-execute unless entity @e[limit=1,tag=sc,scores={dailydiv2=-1..}] run scoreboard players set @n[tag=sc] dailydiv2 999
+execute unless entity @e[limit=1,tag=sc,scores={dailydiv2=-1..}] run scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 dailydiv2 999
 execute unless entity @e[limit=1,tag=sc,scores={dailydiv3=-1..}] run scoreboard objectives add dailydiv3y dummy
 execute unless entity @e[limit=1,tag=sc,scores={dailydiv3=-1..}] run scoreboard objectives add dailydiv3 dummy
-execute unless entity @e[limit=1,tag=sc,scores={dailydiv3=-1..}] run scoreboard players set @n[tag=sc] dailydiv3 999
+execute unless entity @e[limit=1,tag=sc,scores={dailydiv3=-1..}] run scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 dailydiv3 999
 execute unless entity @e[limit=1,tag=sc,scores={dailydiv4=-1..}] run scoreboard objectives add dailydiv4y dummy
 execute unless entity @e[limit=1,tag=sc,scores={dailydiv4=-1..}] run scoreboard objectives add dailydiv4 dummy
-execute unless entity @e[limit=1,tag=sc,scores={dailydiv4=-1..}] run scoreboard players set @n[tag=sc] dailydiv4 999
+execute unless entity @e[limit=1,tag=sc,scores={dailydiv4=-1..}] run scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 dailydiv4 999
 execute unless entity @e[limit=1,tag=sc,scores={dailydiv5=-1..}] run scoreboard objectives add dailydiv5y dummy
 execute unless entity @e[limit=1,tag=sc,scores={dailydiv5=-1..}] run scoreboard objectives add dailydiv5 dummy
-execute unless entity @e[limit=1,tag=sc,scores={dailydiv5=-1..}] run scoreboard players set @n[tag=sc] dailydiv5 999
+execute unless entity @e[limit=1,tag=sc,scores={dailydiv5=-1..}] run scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 dailydiv5 999
 execute unless entity @e[limit=1,tag=sc,scores={dailydiv6=-1..}] run scoreboard objectives add dailydiv6y dummy
 execute unless entity @e[limit=1,tag=sc,scores={dailydiv6=-1..}] run scoreboard objectives add dailydiv6 dummy
-execute unless entity @e[limit=1,tag=sc,scores={dailydiv6=-1..}] run scoreboard players set @n[tag=sc] dailydiv6 999
+execute unless entity @e[limit=1,tag=sc,scores={dailydiv6=-1..}] run scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 dailydiv6 999
 execute unless entity @e[limit=1,tag=sc,scores={dailydiv7=-1..}] run scoreboard objectives add dailydiv7y dummy
 execute unless entity @e[limit=1,tag=sc,scores={dailydiv7=-1..}] run scoreboard objectives add dailydiv7 dummy
-execute unless entity @e[limit=1,tag=sc,scores={dailydiv7=-1..}] run scoreboard players set @n[tag=sc] dailydiv7 999
+execute unless entity @e[limit=1,tag=sc,scores={dailydiv7=-1..}] run scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 dailydiv7 999
 execute unless entity @e[limit=1,tag=sc,scores={dailydiv8=-1..}] run scoreboard objectives add dailydiv8y dummy
 execute unless entity @e[limit=1,tag=sc,scores={dailydiv8=-1..}] run scoreboard objectives add dailydiv8 dummy
-execute unless entity @e[limit=1,tag=sc,scores={dailydiv8=-1..}] run scoreboard players set @n[tag=sc] dailydiv8 999
+execute unless entity @e[limit=1,tag=sc,scores={dailydiv8=-1..}] run scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 dailydiv8 999
 execute unless entity @e[limit=1,tag=sc,scores={dailydiv1S=-1..}] run scoreboard objectives add dailydiv1S dummy
-execute unless entity @e[limit=1,tag=sc,scores={dailydiv1S=-1..}] run scoreboard players set @n[tag=sc] dailydiv1S 999
+execute unless entity @e[limit=1,tag=sc,scores={dailydiv1S=-1..}] run scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 dailydiv1S 999
 execute unless entity @e[limit=1,tag=sc,scores={dailydiv2S=-1..}] run scoreboard objectives add dailydiv2S dummy
-execute unless entity @e[limit=1,tag=sc,scores={dailydiv2S=-1..}] run scoreboard players set @n[tag=sc] dailydiv2S 999
+execute unless entity @e[limit=1,tag=sc,scores={dailydiv2S=-1..}] run scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 dailydiv2S 999
 execute unless entity @e[limit=1,tag=sc,scores={dailydiv3S=-1..}] run scoreboard objectives add dailydiv3S dummy
-execute unless entity @e[limit=1,tag=sc,scores={dailydiv3S=-1..}] run scoreboard players set @n[tag=sc] dailydiv3S 999
+execute unless entity @e[limit=1,tag=sc,scores={dailydiv3S=-1..}] run scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 dailydiv3S 999
 execute unless entity @e[limit=1,tag=sc,scores={dailydiv4S=-1..}] run scoreboard objectives add dailydiv4S dummy
-execute unless entity @e[limit=1,tag=sc,scores={dailydiv4S=-1..}] run scoreboard players set @n[tag=sc] dailydiv4S 999
+execute unless entity @e[limit=1,tag=sc,scores={dailydiv4S=-1..}] run scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 dailydiv4S 999
 execute unless entity @e[limit=1,tag=sc,scores={dailydiv5S=-1..}] run scoreboard objectives add dailydiv5S dummy
-execute unless entity @e[limit=1,tag=sc,scores={dailydiv5S=-1..}] run scoreboard players set @n[tag=sc] dailydiv5S 999
-execute unless entity @e[limit=1,tag=sc,scores={dailylogin=-1..}] run scoreboard players set @n[tag=sc] dailylogin 0
-execute unless entity @e[limit=1,tag=sc,scores={dailylogin_c=-1..}] run scoreboard players set @n[tag=sc] dailylogin_c 0
+execute unless entity @e[limit=1,tag=sc,scores={dailydiv5S=-1..}] run scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 dailydiv5S 999
+execute unless entity @e[limit=1,tag=sc,scores={dailylogin=-1..}] run scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 dailylogin 0
+execute unless entity @e[limit=1,tag=sc,scores={dailylogin_c=-1..}] run scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 dailylogin_c 0
 #玩家日数刷新
 execute unless score @s dailydiv1 matches -999.. run scoreboard players set @s dailydiv1 12
 execute unless score @s dailydiv1S matches -999.. run scoreboard players set @s dailydiv1S 1
@@ -75,28 +75,28 @@ execute if score @s dailydiv5y matches 13.. run scoreboard players set @s dailyd
 execute if score @s dailydiv6y matches 13.. run scoreboard players set @s dailydiv6y 12
 execute if score @s dailydiv7y matches 13.. run scoreboard players set @s dailydiv7y 12
 execute unless entity @s[scores={dailydiv=-1..}] run scoreboard players set @s dailydiv 0
-execute if score @s dailydiv < @n[tag=sc] dailydiv run scoreboard players operation @s dailydiv1y = @s dailydiv1
-execute if score @s dailydiv < @n[tag=sc] dailydiv run scoreboard players operation @s dailydiv2y = @s dailydiv2
-execute if score @s dailydiv < @n[tag=sc] dailydiv run scoreboard players operation @s dailydiv3y = @s dailydiv3
-execute if score @s dailydiv < @n[tag=sc] dailydiv run scoreboard players operation @s dailydiv4y = @s dailydiv4
-execute if score @s dailydiv < @n[tag=sc] dailydiv run scoreboard players operation @s dailydiv5y = @s dailydiv5
-execute if score @s dailydiv < @n[tag=sc] dailydiv run scoreboard players operation @s dailydiv6y = @s dailydiv6
-execute if score @s dailydiv < @n[tag=sc] dailydiv run scoreboard players operation @s dailydiv7y = @s dailydiv7
-execute if score @s dailydiv < @n[tag=sc] dailydiv run scoreboard players operation @s dailydiv8y = @s dailydiv8
-execute if score @s dailydiv < @n[tag=sc] dailydiv run scoreboard players set @s dailydiv1 12
-execute if score @s dailydiv < @n[tag=sc] dailydiv run scoreboard players set @s dailydiv2 12
-execute if score @s dailydiv < @n[tag=sc] dailydiv run scoreboard players set @s dailydiv3 12
-execute if score @s dailydiv < @n[tag=sc] dailydiv run scoreboard players set @s dailydiv4 12
-execute if score @s dailydiv < @n[tag=sc] dailydiv run scoreboard players set @s dailydiv5 12
-execute if score @s dailydiv < @n[tag=sc] dailydiv run scoreboard players set @s dailydiv6 12
-execute if score @s dailydiv < @n[tag=sc] dailydiv run scoreboard players set @s dailydiv7 12
-execute if score @s dailydiv < @n[tag=sc] dailydiv run scoreboard players set @s dailydiv8 0
-execute if score @s dailydiv < @n[tag=sc] dailydiv run scoreboard players set @s dailydiv1S 1
-execute if score @s dailydiv < @n[tag=sc] dailydiv run scoreboard players set @s dailydiv2S 1
-execute if score @s dailydiv < @n[tag=sc] dailydiv run scoreboard players set @s dailydiv3S 1
-execute if score @s dailydiv < @n[tag=sc] dailydiv run scoreboard players set @s dailydiv4S 1
-execute if score @s dailydiv < @n[tag=sc] dailydiv run scoreboard players set @s dailydiv5S 1
-execute if score @s dailydiv < @n[tag=sc] dailydiv run scoreboard players operation @s dailydiv = @n[tag=sc] dailydiv
+execute if score @s dailydiv < 10e959db-4b44-4cdd-b98c-350d3b454206 dailydiv run scoreboard players operation @s dailydiv1y = @s dailydiv1
+execute if score @s dailydiv < 10e959db-4b44-4cdd-b98c-350d3b454206 dailydiv run scoreboard players operation @s dailydiv2y = @s dailydiv2
+execute if score @s dailydiv < 10e959db-4b44-4cdd-b98c-350d3b454206 dailydiv run scoreboard players operation @s dailydiv3y = @s dailydiv3
+execute if score @s dailydiv < 10e959db-4b44-4cdd-b98c-350d3b454206 dailydiv run scoreboard players operation @s dailydiv4y = @s dailydiv4
+execute if score @s dailydiv < 10e959db-4b44-4cdd-b98c-350d3b454206 dailydiv run scoreboard players operation @s dailydiv5y = @s dailydiv5
+execute if score @s dailydiv < 10e959db-4b44-4cdd-b98c-350d3b454206 dailydiv run scoreboard players operation @s dailydiv6y = @s dailydiv6
+execute if score @s dailydiv < 10e959db-4b44-4cdd-b98c-350d3b454206 dailydiv run scoreboard players operation @s dailydiv7y = @s dailydiv7
+execute if score @s dailydiv < 10e959db-4b44-4cdd-b98c-350d3b454206 dailydiv run scoreboard players operation @s dailydiv8y = @s dailydiv8
+execute if score @s dailydiv < 10e959db-4b44-4cdd-b98c-350d3b454206 dailydiv run scoreboard players set @s dailydiv1 12
+execute if score @s dailydiv < 10e959db-4b44-4cdd-b98c-350d3b454206 dailydiv run scoreboard players set @s dailydiv2 12
+execute if score @s dailydiv < 10e959db-4b44-4cdd-b98c-350d3b454206 dailydiv run scoreboard players set @s dailydiv3 12
+execute if score @s dailydiv < 10e959db-4b44-4cdd-b98c-350d3b454206 dailydiv run scoreboard players set @s dailydiv4 12
+execute if score @s dailydiv < 10e959db-4b44-4cdd-b98c-350d3b454206 dailydiv run scoreboard players set @s dailydiv5 12
+execute if score @s dailydiv < 10e959db-4b44-4cdd-b98c-350d3b454206 dailydiv run scoreboard players set @s dailydiv6 12
+execute if score @s dailydiv < 10e959db-4b44-4cdd-b98c-350d3b454206 dailydiv run scoreboard players set @s dailydiv7 12
+execute if score @s dailydiv < 10e959db-4b44-4cdd-b98c-350d3b454206 dailydiv run scoreboard players set @s dailydiv8 0
+execute if score @s dailydiv < 10e959db-4b44-4cdd-b98c-350d3b454206 dailydiv run scoreboard players set @s dailydiv1S 1
+execute if score @s dailydiv < 10e959db-4b44-4cdd-b98c-350d3b454206 dailydiv run scoreboard players set @s dailydiv2S 1
+execute if score @s dailydiv < 10e959db-4b44-4cdd-b98c-350d3b454206 dailydiv run scoreboard players set @s dailydiv3S 1
+execute if score @s dailydiv < 10e959db-4b44-4cdd-b98c-350d3b454206 dailydiv run scoreboard players set @s dailydiv4S 1
+execute if score @s dailydiv < 10e959db-4b44-4cdd-b98c-350d3b454206 dailydiv run scoreboard players set @s dailydiv5S 1
+execute if score @s dailydiv < 10e959db-4b44-4cdd-b98c-350d3b454206 dailydiv run scoreboard players operation @s dailydiv = 10e959db-4b44-4cdd-b98c-350d3b454206 dailydiv
 #占卜开始
 execute store result score @s rng1 run random value 1..11
 execute if score @s dailydiv1 matches 12.. run scoreboard players operation @s dailydiv1 = @s rng1

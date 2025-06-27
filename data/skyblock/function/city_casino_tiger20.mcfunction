@@ -15,7 +15,7 @@ execute if entity @s[tag=CasinoGeneralSuccess] if entity @n[tag=sc,scores={rng8=
 execute if entity @s[tag=CasinoGeneralSuccess] if entity @n[tag=sc,scores={rng8=6}] run tellraw @s {"text":"-[ 金币 ]-","color":"gold"}
 execute if entity @s[tag=CasinoGeneralSuccess] if entity @n[tag=sc,scores={rng8=7}] run tellraw @s {"text":"-[ 板娘 ]-","color":"aqua"}
 execute if entity @s[tag=CasinoGeneralSuccess] if entity @n[tag=sc,scores={rng8=8}] run tellraw @s {"text":"-[ 假酒 ]-","color":"blue"}
-execute if entity @s[tag=CasinoGeneralSuccess] run scoreboard players operation @s Cas_Tig_A = @n[tag=sc] rng8
+execute if entity @s[tag=CasinoGeneralSuccess] run scoreboard players operation @s Cas_Tig_A = 10e959db-4b44-4cdd-b98c-350d3b454206 rng8
 function skyblock:tool_rng
 execute if entity @n[tag=sc,scores={rng8=7}] run function skyblock:tool_rng
 execute if entity @s[tag=CasinoGeneralSuccess] if entity @n[tag=sc,scores={rng8=1}] run tellraw @s {"text":"-[ 苹果 ]-","color":"red"}
@@ -26,7 +26,7 @@ execute if entity @s[tag=CasinoGeneralSuccess] if entity @n[tag=sc,scores={rng8=
 execute if entity @s[tag=CasinoGeneralSuccess] if entity @n[tag=sc,scores={rng8=6}] run tellraw @s {"text":"-[ 金币 ]-","color":"gold"}
 execute if entity @s[tag=CasinoGeneralSuccess] if entity @n[tag=sc,scores={rng8=7}] run tellraw @s {"text":"-[ 板娘 ]-","color":"aqua"}
 execute if entity @s[tag=CasinoGeneralSuccess] if entity @n[tag=sc,scores={rng8=8}] run tellraw @s {"text":"-[ 假酒 ]-","color":"blue"}
-execute if entity @s[tag=CasinoGeneralSuccess] run scoreboard players operation @s Cas_Tig_B = @n[tag=sc] rng8
+execute if entity @s[tag=CasinoGeneralSuccess] run scoreboard players operation @s Cas_Tig_B = 10e959db-4b44-4cdd-b98c-350d3b454206 rng8
 function skyblock:tool_rng
 execute if entity @n[tag=sc,scores={rng8=7}] run function skyblock:tool_rng
 execute if entity @s[tag=CasinoGeneralSuccess] if entity @n[tag=sc,scores={rng8=1}] run tellraw @s {"text":"-[ 苹果 ]-","color":"red"}
@@ -37,7 +37,7 @@ execute if entity @s[tag=CasinoGeneralSuccess] if entity @n[tag=sc,scores={rng8=
 execute if entity @s[tag=CasinoGeneralSuccess] if entity @n[tag=sc,scores={rng8=6}] run tellraw @s {"text":"-[ 金币 ]-","color":"gold"}
 execute if entity @s[tag=CasinoGeneralSuccess] if entity @n[tag=sc,scores={rng8=7}] run tellraw @s {"text":"-[ 板娘 ]-","color":"aqua"}
 execute if entity @s[tag=CasinoGeneralSuccess] if entity @n[tag=sc,scores={rng8=8}] run tellraw @s {"text":"-[ 假酒 ]-","color":"blue"}
-execute if entity @s[tag=CasinoGeneralSuccess] run scoreboard players operation @s Cas_Tig_C = @n[tag=sc] rng8
+execute if entity @s[tag=CasinoGeneralSuccess] run scoreboard players operation @s Cas_Tig_C = 10e959db-4b44-4cdd-b98c-350d3b454206 rng8
 
 execute if entity @s[tag=CasinoGeneralSuccess] run playsound minecraft:block.bamboo.break neutral @a ~ ~ ~ 3 1.1
 

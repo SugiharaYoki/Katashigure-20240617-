@@ -80,4 +80,4 @@ fillbiome 50000 34 50000 50180 35 50180 crimson_forest
 fillbiome 50000 36 50000 50180 37 50180 crimson_forest
 fillbiome 50000 38 50000 50180 39 50180 crimson_forest
 forceload remove 50000 50000 50200 50200
-tag @n[tag=sc] remove Skyblock_map004_event
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove Skyblock_map004_event

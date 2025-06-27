@@ -20,7 +20,7 @@ execute if block 90074 103 137 scaffolding unless block 90074 103 136 lectern ru
 execute if block 90074 103 137 lectern unless block 90077 105 141 minecraft:dark_oak_hanging_sign run scoreboard players add sc sea_speedrun_ch5 1
 execute if block 90074 103 137 dark_oak_hanging_sign run scoreboard players add sc sea_speedrun_ch6 1
 
-execute store result score @n[tag=sc] sea_player run execute if entity @a[tag=SEAPT]
+execute store result score 10e959db-4b44-4cdd-b98c-350d3b454206 sea_player run execute if entity @a[tag=SEAPT]
 
 execute unless entity @a[tag=SEAPT] if entity @a[x=90074,y=92,z=139,distance=0..50,gamemode=!spectator] run function skyblock:sea/endgame_regen
 

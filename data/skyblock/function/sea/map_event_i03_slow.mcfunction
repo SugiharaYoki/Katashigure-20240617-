@@ -73,12 +73,12 @@ execute as @n[tag=SEAch3_spawn_timer6,scores={sea_4temp1=1..92}] run function sk
 
 execute if entity @a[tag=SEAPT,x=90120,y=155,z=138,distance=0..4.5,tag=!e_i_26] run tag @a[tag=SEAPT] add e_i_26
 
-execute as @n[tag=sc] if block 90133 137 108 minecraft:warped_button[powered=true] unless entity @s[scores={sea_4temp2=80..}] run scoreboard players set @s sea_4temp2 80
+execute as 10e959db-4b44-4cdd-b98c-350d3b454206 if block 90133 137 108 minecraft:warped_button[powered=true] unless entity @s[scores={sea_4temp2=80..}] run scoreboard players set @s sea_4temp2 80
 execute as @n[tag=sc,scores={sea_4temp2=80..395}] run scoreboard players add @s sea_4temp2 1
 execute as @n[tag=sc,scores={sea_4temp2=80..395}] run function skyblock:sea/e/ch3/ev026_ch3_communication_1
 
 
-execute as @n[tag=sc] if block 90133 137 108 minecraft:warped_button[powered=true] unless block 90131 161 144 air run scoreboard players set @s sea_4temp2 1080
+execute as 10e959db-4b44-4cdd-b98c-350d3b454206 if block 90133 137 108 minecraft:warped_button[powered=true] unless block 90131 161 144 air run scoreboard players set @s sea_4temp2 1080
 execute as @n[tag=sc,scores={sea_4temp2=1080..1395}] run scoreboard players add @s sea_4temp2 1
 execute as @n[tag=sc,scores={sea_4temp2=1080..1395}] run function skyblock:sea/e/ch3/ev026_ch3_communication_2
 

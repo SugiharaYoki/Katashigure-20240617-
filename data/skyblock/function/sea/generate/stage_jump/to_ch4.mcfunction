@@ -5,7 +5,7 @@ function skyblock:sea/generate/stage_jump/to_ch3_boss
 function skyblock:sea/generate/preload/map_prepare_ch4
 
 
-scoreboard players set @n[tag=sc] sea_4temp2 0
+scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 sea_4temp2 0
 
 give @a[tag=SEAPT,scores={SEAPT_mode=1}] nether_star 1
 

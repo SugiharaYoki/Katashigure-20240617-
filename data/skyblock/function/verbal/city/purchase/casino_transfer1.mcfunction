@@ -19,6 +19,6 @@ execute if entity @a[distance=0.01..10,gamemode=!spectator] if entity @s[tag=pur
 
 execute if entity @a[distance=0.01..10,gamemode=!spectator] if entity @s[tag=purchasesuccess] run tellraw @p[distance=0.01..10,gamemode=!spectator] [{"text":"如今持有FSB： ","color":"gold"},{"score":{"name":"@p[distance=0.01..10,gamemode=!spectator]","objective":"Perm_PersonFSB"}}]
 execute if entity @a[distance=0.01..10,gamemode=!spectator] if entity @s[tag=purchasesuccess] run playsound entity.villager.yes ambient @s ~ ~ ~ 10
-execute if entity @n[tag=sc] run tellraw @s [{"text":"如今持有FSB： ","color":"gold"},{"score":{"name":"@s","objective":"Perm_PersonFSB"}}]
+execute if entity 10e959db-4b44-4cdd-b98c-350d3b454206 run tellraw @s [{"text":"如今持有FSB： ","color":"gold"},{"score":{"name":"@s","objective":"Perm_PersonFSB"}}]
 tag @s remove purchasesuccess
 scoreboard players set @s MultiMenu 0

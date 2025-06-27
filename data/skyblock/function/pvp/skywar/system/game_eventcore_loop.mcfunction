@@ -209,7 +209,7 @@ execute if score sc Map_Code matches 4 if block 50068 -6 50068 air unless entity
 execute if score sc Map_Code matches 4 if block 50068 -6 50068 air unless entity @n[tag=sc,tag=Skyblock_map004_event] run summon blaze 50068 -6 50068
 execute if score sc Map_Code matches 4 if block 50068 -6 50068 air unless entity @n[tag=sc,tag=Skyblock_map004_event] run summon blaze 50068 -6 50068
 execute if score sc Map_Code matches 4 if block 50068 -6 50068 air unless entity @n[tag=sc,tag=Skyblock_map004_event] run summon blaze 50068 -6 50068
-execute if score sc Map_Code matches 4 if block 50068 -6 50068 air unless entity @n[tag=sc,tag=Skyblock_map004_event] run tag @n[tag=sc] add Skyblock_map004_event
+execute if score sc Map_Code matches 4 if block 50068 -6 50068 air unless entity @n[tag=sc,tag=Skyblock_map004_event] run tag 10e959db-4b44-4cdd-b98c-350d3b454206 add Skyblock_map004_event
 
 #[futuredevskywar]
 

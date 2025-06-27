@@ -70,13 +70,13 @@ execute if score skywar_start rng1 matches 3 if entity @n[tag=!MapLoaAlr,tag=sc]
 execute if score skywar_start rng1 matches 3 if entity @n[tag=!MapLoaAlr,tag=sc] if score sc Map_Code matches 19 run function skyblock:pvp/skywar/system/init/map/map019_part1_hard
 #[futuredevskywar]
 execute if score skywar_start rng1 matches 3 if entity @n[tag=!MapLoaAlr,tag=sc] if score sc Map_Code matches 14 run forceload remove -9838 -10164 -9709 -10035
-execute if score skywar_start rng1 matches 3 if entity @n[tag=!MapLoaAlr,tag=sc] run tag @n[tag=sc] add MapLoaAlr
+execute if score skywar_start rng1 matches 3 if entity @n[tag=!MapLoaAlr,tag=sc] run tag 10e959db-4b44-4cdd-b98c-350d3b454206 add MapLoaAlr
 #《禁止提前预加载》
 #-#-#setblock 12 88 86 air
 #《禁止再次开局》
 #《计入历史启动》
 execute if score skywar_start rng1 matches 1 unless entity @n[tag=sc,scores={HistoryPVP=-1..}] run scoreboard objectives add HistoryPVP dummy
-execute if score skywar_start rng1 matches 1 run scoreboard players add @n[tag=sc] HistoryPVP 1
+execute if score skywar_start rng1 matches 1 run scoreboard players add 10e959db-4b44-4cdd-b98c-350d3b454206 HistoryPVP 1
 #无意义变量 scoreboard players set @s Random1 0
 #《变量初始化》
 execute if score skywar_start rng1 matches 2 run kill @e[x=50000,y=50,z=50000,distance=..1500,type=item]
@@ -143,11 +143,11 @@ execute if score skywar_start rng1 matches 3 run scoreboard objectives add TempI
 execute if score skywar_start rng1 matches 3 run scoreboard objectives add TempIf_Job6D dummy
 execute if score skywar_start rng1 matches 3 run scoreboard objectives add TempIf_Job6E dummy
 execute if score skywar_start rng1 matches 3 run scoreboard objectives add TempIf_Job3 dummy
-execute if score skywar_start rng1 matches 3 run scoreboard players set @n[tag=sc] TempIf_Job6A 0
-execute if score skywar_start rng1 matches 3 run scoreboard players set @n[tag=sc] TempIf_Job6B 0
-execute if score skywar_start rng1 matches 3 run scoreboard players set @n[tag=sc] TempIf_Job6C 0
-execute if score skywar_start rng1 matches 3 run scoreboard players set @n[tag=sc] TempIf_Job6D 0
-execute if score skywar_start rng1 matches 3 run scoreboard players set @n[tag=sc] TempIf_Job6E 0
+execute if score skywar_start rng1 matches 3 run scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 TempIf_Job6A 0
+execute if score skywar_start rng1 matches 3 run scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 TempIf_Job6B 0
+execute if score skywar_start rng1 matches 3 run scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 TempIf_Job6C 0
+execute if score skywar_start rng1 matches 3 run scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 TempIf_Job6D 0
+execute if score skywar_start rng1 matches 3 run scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 TempIf_Job6E 0
 execute if score skywar_start rng1 matches 3 run scoreboard players set @e[tag=sc] TempIf_Job6A 0
 execute if score skywar_start rng1 matches 3 run scoreboard players set @e[tag=sc] TempIf_Job6B 0
 execute if score skywar_start rng1 matches 3 run scoreboard players set @e[tag=sc] TempIf_Job6C 0
@@ -181,7 +181,7 @@ execute if score skywar_start rng1 matches 10 run title @a[tag=!NoSkyWar] title 
 execute if score skywar_start rng1 matches 11 run setblock -17 23 32 minecraft:soul_lantern
 execute if score skywar_start rng1 matches 11 run title @a[tag=!NoSkyWar] times 0 120 40
 execute if score skywar_start rng1 matches 11 run stopsound @s
-execute if score skywar_start rng1 matches 11 run tag @n[tag=sc] remove MapLoaAlr
+execute if score skywar_start rng1 matches 11 run tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove MapLoaAlr
 
 #setblock -55 143 -58 redstone_wire
 #setblock -59 143 -52 observer[facing=east]
@@ -195,10 +195,10 @@ execute if score skywar_start rng1 matches 11 run tag @a[tag=PVPing] add Gaming
 execute if score skywar_start rng1 matches 11 run team leave @a[tag=PVPing,tag=!PVPTeamed]
 execute if score skywar_start rng1 matches 11 run title @a[tag=PVPing] times 10 80 10
 execute if score skywar_start rng1 matches 11 run stopsound @a[tag=PVPing]
-execute if score skywar_start rng1 matches 11 if score @n[tag=sc] Map_Type matches 1 unless score sc Map_Code matches 13 run title @a[tag=PVPing] title {"text":"欢迎来到 空岛战争","color":"white"}
-execute if score skywar_start rng1 matches 11 if score @n[tag=sc] Map_Type matches 1 if score sc Map_Code matches 13 run title @a[tag=PVPing] title {"text":"欢迎来到 混沌魔方","color":"white"}
-execute if score skywar_start rng1 matches 11 if score @n[tag=sc] Map_Type matches 2 run title @a[tag=PVPing] title {"text":"欢迎来到 起床战争","color":"white"}
-execute if score skywar_start rng1 matches 11 if score @n[tag=sc] Map_Type matches 5 run title @a[tag=PVPing] title {"text":"欢迎来到 PVP战场","color":"white"}
+execute if score skywar_start rng1 matches 11 if score 10e959db-4b44-4cdd-b98c-350d3b454206 Map_Type matches 1 unless score sc Map_Code matches 13 run title @a[tag=PVPing] title {"text":"欢迎来到 空岛战争","color":"white"}
+execute if score skywar_start rng1 matches 11 if score 10e959db-4b44-4cdd-b98c-350d3b454206 Map_Type matches 1 if score sc Map_Code matches 13 run title @a[tag=PVPing] title {"text":"欢迎来到 混沌魔方","color":"white"}
+execute if score skywar_start rng1 matches 11 if score 10e959db-4b44-4cdd-b98c-350d3b454206 Map_Type matches 2 run title @a[tag=PVPing] title {"text":"欢迎来到 起床战争","color":"white"}
+execute if score skywar_start rng1 matches 11 if score 10e959db-4b44-4cdd-b98c-350d3b454206 Map_Type matches 5 run title @a[tag=PVPing] title {"text":"欢迎来到 PVP战场","color":"white"}
 execute if score skywar_start rng1 matches 11 run title @a[tag=PVPing] actionbar {"text":"分配成员中……","color":"white"}
 
 execute if score skywar_start rng1 matches 11 run gamerule keepInventory true

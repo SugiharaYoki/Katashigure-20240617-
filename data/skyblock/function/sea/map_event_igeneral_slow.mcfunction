@@ -1,7 +1,7 @@
 #
 
 
-execute store result score @n[tag=sc] rng2 run random value 1..10
+execute store result score 10e959db-4b44-4cdd-b98c-350d3b454206 rng2 run random value 1..10
 execute as @a[tag=SEAPT,x=90076,y=121,z=136,distance=0..25] at @s if entity @n[tag=sc,scores={rng2=1}] run setblock 90078 125 137 minecraft:redstone_lamp[lit=true]
 execute as @a[tag=SEAPT,x=90076,y=121,z=136,distance=0..25] at @s if entity @n[tag=sc,scores={rng2=10}] run setblock 90078 125 137 minecraft:redstone_lamp[lit=false]
 #give @s iron_hoe[custom_name='{"text":"撬棍","italic":false,"color":"red"}',custom_data={sea_crowbar:true}]
@@ -12,7 +12,7 @@ execute as @e[type=bee,tag=SEAbee,x=90000,y=100,z=100,distance=..3000] at @s if 
 execute as @e[tag=SEAhorse_summoner,type=marker,x=90000,y=100,z=100,distance=..3000] at @s run function skyblock:sea/p/horse_summoner
 
 
-execute as @n[tag=sc] unless entity @s[scores={sea_4temp1=-9999..}] run scoreboard players set @s sea_4temp1 -1
+execute as 10e959db-4b44-4cdd-b98c-350d3b454206 unless entity @s[scores={sea_4temp1=-9999..}] run scoreboard players set @s sea_4temp1 -1
 execute as @n[tag=sc,tag=sea_cb001,scores={sea_4temp1=-1..4}] run scoreboard players add @s sea_4temp1 1
 execute as @n[tag=sc,tag=sea_cb001,scores={sea_4temp1=1}] run setblock 90084 122 139 air
 execute as @n[tag=sc,tag=sea_cb001,scores={sea_4temp1=2}] run setblock 90084 123 139 air

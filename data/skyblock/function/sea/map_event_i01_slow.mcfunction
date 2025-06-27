@@ -46,7 +46,7 @@ execute if score sea_chapter_introduction sea_4temp2 matches ..0 positioned 9007
 execute if score sea_chapter_introduction sea_4temp2 matches 1..90 run scoreboard players add sea_chapter_introduction sea_4temp2 1
 execute positioned 90071 102 140 if score sea_chapter_introduction sea_4temp2 matches 1..90 run function skyblock:sea/e/ch1/i_came_aboard_to_the_platform
 
-execute as @a[tag=SEAPT,x=90110,y=123,z=136,distance=0..1.4,tag=!e_i_08] at @s run scoreboard players set @n[tag=sc] sea_4temp3 1
+execute as @a[tag=SEAPT,x=90110,y=123,z=136,distance=0..1.4,tag=!e_i_08] at @s run scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 sea_4temp3 1
 execute as @a[tag=SEAPT,x=90110,y=123,z=136,distance=0..1.4,tag=!e_i_08] run tag @a[tag=SEAPT] add e_i_08
 execute as @n[tag=sc,scores={sea_4temp3=1..7}] run playsound minecraft:ambient.nether_wastes.mood master @a[tag=SEAPT] 90109.79 124.61 134.00 10 0.8
 execute as @n[tag=sc,scores={sea_4temp3=1..7}] run playsound minecraft:ambient.nether_wastes.additions master @a[tag=SEAPT] 90109.79 124.61 134.00 10 0.8
@@ -90,7 +90,7 @@ execute positioned 90094 122 135 as @p[distance=0..3.5,tag=SEAPT,scores={sea_pro
 execute positioned 90094 122 135 as @a[distance=0..600,tag=SEAPT,scores={sea_progress=..1},tag=!e_i_51] at @s if items entity @s container.* trial_key run tellraw @s [{"text": " - 游戏指引 -","color": "green","bold": true},{"text": " 手握部分道具时右键某些容器，可以打开它们的锁。","color": "white","bold": false},{"text": " 并不是每一把钥匙都必定有用，这点需要切记。","color": "white","bold": false}]
 execute positioned 90094 122 135 as @a[distance=0..600,tag=SEAPT,scores={sea_progress=..1},tag=!e_i_51] at @s if items entity @s container.* trial_key run tag @s add e_i_51
 
-execute as @n[tag=sc] unless entity @s[scores={sea_4temp2=-9999..}] run scoreboard players set @s sea_4temp2 0
+execute as 10e959db-4b44-4cdd-b98c-350d3b454206 unless entity @s[scores={sea_4temp2=-9999..}] run scoreboard players set @s sea_4temp2 0
 execute unless block 90062 103 135 grindstone unless items block 90095 122 128 container.26 amethyst_shard run scoreboard players add @n[tag=sc,scores={sea_4temp2=..0}] sea_4temp2 1
 execute as @n[tag=sc,scores={sea_4temp2=1..169}] run scoreboard players add @s sea_4temp2 1
 execute as @n[tag=sc,scores={sea_4temp2=1..169}] run function skyblock:sea/e/ch1/seeing_death
@@ -106,7 +106,7 @@ execute as @a[tag=SEAPT,x=90146,y=122,z=106,distance=0..3] run scoreboard player
 
 execute as @n[tag=sc,scores={sea_4temp2=1991..2400}] run function skyblock:sea/e/ch1/the_roots_are_overgrown
 
-execute as @n[tag=sc,scores={sea_4temp2=2355..2800}] if entity @a[tag=SEAPT,x=90099,y=122,z=103,distance=0..3.5] run scoreboard players set @n[tag=sc] sea_4temp2 3000
+execute as @n[tag=sc,scores={sea_4temp2=2355..2800}] if entity @a[tag=SEAPT,x=90099,y=122,z=103,distance=0..3.5] run scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 sea_4temp2 3000
 execute as @n[tag=sc,scores={sea_4temp2=3000..3900}] run scoreboard players add @s sea_4temp2 1
 execute as @n[tag=sc,scores={sea_4temp2=5000..6000}] run scoreboard players add @s sea_4temp2 1
 execute as @n[tag=sc,scores={sea_4temp2=3000..3100}] run function skyblock:sea/e/ch1/guardians_of_the_terminal
@@ -116,11 +116,11 @@ execute as @n[tag=sc,scores={sea_4temp2=3000..3100}] run function skyblock:sea/e
 execute as @n[tag=sc,scores={sea_4temp2=4000..5000}] run function skyblock:sea/e/ch1/boss1
 
 
-execute if score sc sea_speedrun_ch1 matches 1921.. as @n[tag=sc,scores={sea_4temp2=3001..3950}] if entity @a[tag=SEAPT,x=90074,y=122,z=118,distance=0..4,tag=!SEAPF] run scoreboard players set @n[tag=sc] sea_4temp2 4000
-execute if score sc sea_speedrun_ch1 matches ..1920 as @n[tag=sc,scores={sea_4temp2=3001..3950}] if entity @a[tag=SEAPT,x=90085,y=122,z=104,distance=0..4,tag=!SEAPF] run scoreboard players set @n[tag=sc] sea_4temp2 6000
+execute if score sc sea_speedrun_ch1 matches 1921.. as @n[tag=sc,scores={sea_4temp2=3001..3950}] if entity @a[tag=SEAPT,x=90074,y=122,z=118,distance=0..4,tag=!SEAPF] run scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 sea_4temp2 4000
+execute if score sc sea_speedrun_ch1 matches ..1920 as @n[tag=sc,scores={sea_4temp2=3001..3950}] if entity @a[tag=SEAPT,x=90085,y=122,z=104,distance=0..4,tag=!SEAPF] run scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 sea_4temp2 6000
 
 
-execute as @n[tag=sc,scores={sea_4temp2=4020..5000}] unless entity @n[tag=SEAboss1] run scoreboard players set @n[tag=sc] sea_4temp2 5001
+execute as @n[tag=sc,scores={sea_4temp2=4020..5000}] unless entity @n[tag=SEAboss1] run scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 sea_4temp2 5001
 execute as @n[tag=sc,scores={sea_4temp2=5001}] run kill @e[tag=SEAboss1mob]
 execute as @n[tag=sc,scores={sea_4temp2=5001}] run bossbar remove 9066601
 execute as @n[tag=sc,scores={sea_4temp2=5001}] positioned 90074.0 129 109.0 run stopsound @a[distance=0..500] music
@@ -164,7 +164,7 @@ execute as @n[tag=sc,scores={sea_4temp2=3000..5000,sea_4temp5=40}] as @n[tag=SEA
 
 execute if items entity @a container.* fire_charge as @a[tag=SEAPT,advancements={skyblock:sea/doc/g24=false}] at @s if items entity @s container.* fire_charge run give @s mojang_banner_pattern[custom_data={sea_docg24:true}]
 
-execute as @n[tag=sc,scores={sea_4temp2=6000..6001}] run scoreboard players add @n[tag=sc] sea_4temp2 1
+execute as @n[tag=sc,scores={sea_4temp2=6000..6001}] run scoreboard players add 10e959db-4b44-4cdd-b98c-350d3b454206 sea_4temp2 1
 execute as @n[tag=sc,scores={sea_4temp2=6000..6002}] run function skyblock:sea/e/ch1/boss1_framauros_alive
 execute as @n[tag=sc,scores={sea_4temp2=6002..6360}] at @n[tag=SEAframauros] if entity @a[tag=SEAPT,distance=0.1..5] run function skyblock:sea/e/ch1/boss1_framauros_alive
 execute as @n[tag=sc,scores={sea_4temp2=6360..7000}] run function skyblock:sea/e/ch1/boss1_framauros_alive

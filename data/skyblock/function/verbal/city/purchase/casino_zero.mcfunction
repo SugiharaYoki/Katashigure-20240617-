@@ -12,6 +12,6 @@ execute if entity @s[scores={Perm_PersonFSB=..-501}] run tellraw @s [{"text":"�
 execute if entity @s[scores={Perm_PersonFSB=..-501}] run tag @s add purchasesuccess
 execute if entity @s[tag=purchasesuccess] run scoreboard players set @s Perm_PersonFSB 0
 execute if entity @s[tag=purchasesuccess] run playsound entity.villager.yes ambient @s ~ ~ ~ 10
-execute if entity @n[tag=sc] run tellraw @s [{"text":"如今持有FSB： ","color":"gold"},{"score":{"name":"@s","objective":"Perm_PersonFSB"}}]
+execute if entity 10e959db-4b44-4cdd-b98c-350d3b454206 run tellraw @s [{"text":"如今持有FSB： ","color":"gold"},{"score":{"name":"@s","objective":"Perm_PersonFSB"}}]
 tag @s remove purchasesuccess
 scoreboard players set @s MultiMenu 0

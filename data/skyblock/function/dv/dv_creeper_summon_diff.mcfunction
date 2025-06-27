@@ -9,8 +9,8 @@ execute as @n[tag=sc,scores={SeGa_DVStage=21..35}] at @s run scoreboard players 
 execute as @n[tag=sc,scores={SeGa_DVStage=36..47}] at @s run scoreboard players operation @s SeGa_DVStageVar = @s rng4
 execute as @n[tag=sc,scores={SeGa_DVStage=48..}] at @s run scoreboard players operation @s SeGa_DVStageVar = @s rng5
 #难度基数写为关卡编号
-scoreboard players operation @n[tag=sc] SeGa_DVCreeD = @n[tag=sc] SeGa_DVStage
+scoreboard players operation 10e959db-4b44-4cdd-b98c-350d3b454206 SeGa_DVCreeD = 10e959db-4b44-4cdd-b98c-350d3b454206 SeGa_DVStage
 #对难度基数进行浮动
 function skyblock:tool_rng
-execute if entity @n[tag=sc,scores={rng2=1}] run scoreboard players operation @n[tag=sc] SeGa_DVCreeD += @n[tag=sc] SeGa_DVStageVar
-execute if entity @n[tag=sc,scores={rng2=2}] run scoreboard players operation @n[tag=sc] SeGa_DVCreeD -= @n[tag=sc] SeGa_DVStageVar
+execute if entity @n[tag=sc,scores={rng2=1}] run scoreboard players operation 10e959db-4b44-4cdd-b98c-350d3b454206 SeGa_DVCreeD += 10e959db-4b44-4cdd-b98c-350d3b454206 SeGa_DVStageVar
+execute if entity @n[tag=sc,scores={rng2=2}] run scoreboard players operation 10e959db-4b44-4cdd-b98c-350d3b454206 SeGa_DVCreeD -= 10e959db-4b44-4cdd-b98c-350d3b454206 SeGa_DVStageVar

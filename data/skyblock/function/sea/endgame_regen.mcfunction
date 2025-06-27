@@ -1,78 +1,78 @@
 execute as @a[tag=SEAPT] at @s run function skyblock:sea/dead
-tag @n[tag=sc] remove sea_ch1_speedrun_butif
-tag @n[tag=sc] remove sea_cb001
-tag @n[tag=sc] remove sea_cb002
-tag @n[tag=sc] remove sea_cb003
-tag @n[tag=sc] remove sea_cb004
-tag @n[tag=sc] remove sea_cb005
-tag @n[tag=sc] remove sea_cb006
-tag @n[tag=sc] remove sea_cb007
-tag @n[tag=sc] remove sea_cb008
-tag @n[tag=sc] remove sea_cb009
-tag @n[tag=sc] remove sea_cb010
-tag @n[tag=sc] remove sea_cb011
-tag @n[tag=sc] remove sea_cb012
-tag @n[tag=sc] remove sea_cb013
-tag @n[tag=sc] remove sea_cb014
-tag @n[tag=sc] remove sea_cb015
-tag @n[tag=sc] remove sea_cb016
-tag @n[tag=sc] remove sea_cb017
-tag @n[tag=sc] remove sea_cb018
-tag @n[tag=sc] remove sea_cb019
-tag @n[tag=sc] remove sea_doc01
-tag @n[tag=sc] remove sea_doc02
-tag @n[tag=sc] remove sea_doc03
-tag @n[tag=sc] remove sea_doc04
-tag @n[tag=sc] remove sea_doc05
-tag @n[tag=sc] remove sea_doc06
-tag @n[tag=sc] remove sea_doc07
-tag @n[tag=sc] remove sea_doc08
-tag @n[tag=sc] remove sea_doc09
-tag @n[tag=sc] remove sea_doc10
-tag @n[tag=sc] remove sea_doc11
-tag @n[tag=sc] remove sea_doc12
-tag @n[tag=sc] remove sea_doc13
-tag @n[tag=sc] remove sea_doc14
-tag @n[tag=sc] remove sea_doc15
-tag @n[tag=sc] remove sea_doc16
-tag @n[tag=sc] remove sea_doc17
-tag @n[tag=sc] remove sea_doc18
-tag @n[tag=sc] remove sea_doc19
-tag @n[tag=sc] remove sea_doc20
-tag @n[tag=sc] remove sea_doc21
-tag @n[tag=sc] remove sea_doc22
-tag @n[tag=sc] remove sea_doc23
-tag @n[tag=sc] remove sea_doc24
-tag @n[tag=sc] remove sea_doc25
-tag @n[tag=sc] remove sea_doc26
-tag @n[tag=sc] remove sea_doc27
-tag @n[tag=sc] remove sea_doc01b
-tag @n[tag=sc] remove sea_doc02b
-tag @n[tag=sc] remove sea_doc03b
-tag @n[tag=sc] remove sea_doc04b
-tag @n[tag=sc] remove sea_doc05b
-tag @n[tag=sc] remove sea_doc06b
-tag @n[tag=sc] remove sea_doc07b
-tag @n[tag=sc] remove sea_doc08b
-tag @n[tag=sc] remove sea_doc09b
-tag @n[tag=sc] remove sea_doc10b
-tag @n[tag=sc] remove sea_doc11b
-tag @n[tag=sc] remove sea_doc12b
-tag @n[tag=sc] remove sea_doc13b
-tag @n[tag=sc] remove sea_doc14b
-tag @n[tag=sc] remove sea_doc15b
-tag @n[tag=sc] remove sea_doc16b
-tag @n[tag=sc] remove sea_doc17b
-tag @n[tag=sc] remove sea_doc18b
-tag @n[tag=sc] remove sea_doc19b
-tag @n[tag=sc] remove sea_doc20b
-tag @n[tag=sc] remove sea_doc21b
-tag @n[tag=sc] remove sea_doc22b
-tag @n[tag=sc] remove sea_doc23b
-tag @n[tag=sc] remove sea_doc24b
-tag @n[tag=sc] remove sea_doc25b
-tag @n[tag=sc] remove sea_doc26b
-tag @n[tag=sc] remove sea_doc27b
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove sea_ch1_speedrun_butif
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove sea_cb001
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove sea_cb002
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove sea_cb003
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove sea_cb004
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove sea_cb005
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove sea_cb006
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove sea_cb007
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove sea_cb008
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove sea_cb009
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove sea_cb010
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove sea_cb011
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove sea_cb012
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove sea_cb013
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove sea_cb014
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove sea_cb015
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove sea_cb016
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove sea_cb017
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove sea_cb018
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove sea_cb019
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove sea_doc01
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove sea_doc02
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove sea_doc03
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove sea_doc04
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove sea_doc05
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove sea_doc06
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove sea_doc07
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove sea_doc08
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove sea_doc09
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove sea_doc10
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove sea_doc11
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove sea_doc12
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove sea_doc13
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove sea_doc14
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove sea_doc15
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove sea_doc16
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove sea_doc17
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove sea_doc18
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove sea_doc19
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove sea_doc20
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove sea_doc21
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove sea_doc22
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove sea_doc23
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove sea_doc24
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove sea_doc25
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove sea_doc26
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove sea_doc27
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove sea_doc01b
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove sea_doc02b
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove sea_doc03b
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove sea_doc04b
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove sea_doc05b
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove sea_doc06b
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove sea_doc07b
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove sea_doc08b
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove sea_doc09b
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove sea_doc10b
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove sea_doc11b
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove sea_doc12b
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove sea_doc13b
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove sea_doc14b
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove sea_doc15b
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove sea_doc16b
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove sea_doc17b
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove sea_doc18b
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove sea_doc19b
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove sea_doc20b
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove sea_doc21b
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove sea_doc22b
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove sea_doc23b
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove sea_doc24b
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove sea_doc25b
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove sea_doc26b
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove sea_doc27b
 execute as @e[x=90100,y=100,z=100,distance=0..500,type=!player,type=!marker] at @s run tp ~ ~-500 ~
 kill @e[x=80000,dx=20000,y=-99999,dy=99800,z=-10000,dz=20000]
 kill @e[tag=SEAch3_spawn_timer]
@@ -92,28 +92,28 @@ tellraw @a[tag=!Gaming] {"text": "忒尔克西海上钻井平台已经失联24�
 tellraw @a[tag=!Gaming] {"text": "太平洋石油管理局的高层决定派你前去调查情况。","color": "green"}
 tellraw @a[tag=!Gaming] [{"text": "『厄珀娅的悲歌』","color": "light_purple","bold": true},{"text": " 以雷米尔之名，见证他们的结局……","color": "green","bold": false}]
 tag @a remove sea_dead
-scoreboard players reset @n[tag=sc] sea_4temp1
-scoreboard players set @n[tag=sc] sea_4temp2 0
-scoreboard players set @n[tag=sc] sea_4temp3 0
-scoreboard players set @n[tag=sc] sea_4temp4 0
-scoreboard players set @n[tag=sc] sea_4temp5 0
-scoreboard players set @n[tag=sc] sea_4temp6 0
-scoreboard players set @n[tag=sc] sea_4temp7 0
-scoreboard players set @n[tag=sc] sea_4temp8 0
-scoreboard players set @n[tag=sc] sea_4temp9 0
-scoreboard players set @n[tag=sc] sea_4temp10 0
-scoreboard players set @n[tag=sc] sea_4temp_environment 0
+scoreboard players reset 10e959db-4b44-4cdd-b98c-350d3b454206 sea_4temp1
+scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 sea_4temp2 0
+scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 sea_4temp3 0
+scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 sea_4temp4 0
+scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 sea_4temp5 0
+scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 sea_4temp6 0
+scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 sea_4temp7 0
+scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 sea_4temp8 0
+scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 sea_4temp9 0
+scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 sea_4temp10 0
+scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 sea_4temp_environment 0
 kill @e[tag=SEAcrafter,type=interaction]
 kill @e[tag=SEAcrafter_tp,type=marker]
 kill @e[tag=SEAaidbox,type=interaction]
 kill @e[tag=sea_blockdisplay]
-tag @n[tag=sc] remove SeGa_sea_ch1
-tag @n[tag=sc] remove SeGa_sea_ch2
-tag @n[tag=sc] remove SeGa_sea_ch3
-tag @n[tag=sc] remove SeGa_sea_ch4
-tag @n[tag=sc] remove SeGa_sea_ch5
-tag @n[tag=sc] remove SeGa_sea_ch6
-tag @n[tag=sc] remove SEAbossch3_lighted
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove SeGa_sea_ch1
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove SeGa_sea_ch2
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove SeGa_sea_ch3
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove SeGa_sea_ch4
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove SeGa_sea_ch5
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove SeGa_sea_ch6
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove SEAbossch3_lighted
 
 setblock 90187 36 99 minecraft:potted_azalea_bush
 setblock 90187 36 101 minecraft:potted_azalea_bush

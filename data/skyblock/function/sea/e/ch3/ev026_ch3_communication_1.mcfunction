@@ -1,7 +1,7 @@
 execute as @s[tag=sc,scores={sea_4temp2=89}] positioned 90133 137 108 \
  run tellraw @a[distance=0..50] {"text":"正在呼叫联络总站。","color":"dark_purple"}
 execute as @s[tag=sc,scores={sea_4temp2=89}] positioned 90133 137 108 run playsound minecraft:entity.endermite.ambient ambient @a ~ ~ ~ 0.8 0.1
-execute as @s[tag=sc,scores={sea_4temp2=89}] run scoreboard players add @n[tag=sc] sea_4temp2 3
+execute as @s[tag=sc,scores={sea_4temp2=89}] run scoreboard players add 10e959db-4b44-4cdd-b98c-350d3b454206 sea_4temp2 3
 execute as @s[tag=sc,scores={sea_4temp2=103}] positioned 90133 137 108 if entity @n[tag=sc,scores={sea_player=1}] \
  run tellraw @a[distance=0..50] [{"text":"玛瑞莲：","color":"dark_purple","bold": true},{"text":"\n“这里是玛瑞莲。欢迎你来到甲板。”","color":"white","bold": false}]
 execute as @s[tag=sc,scores={sea_4temp2=103}] positioned 90133 137 108 if entity @n[tag=sc,scores={sea_player=2..}] \
@@ -9,7 +9,7 @@ execute as @s[tag=sc,scores={sea_4temp2=103}] positioned 90133 137 108 if entity
 execute as @s[tag=sc,scores={sea_4temp2=103}] positioned 90133 137 108 as @p[tag=SEAPT] at @s \
  run tellraw @a[tag=SEAPT,distance=3..] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“我再次接通联络总站了！快来我这里。”","color":"white"}]
 execute as @s[tag=sc,scores={sea_4temp2=103..364}] positioned 90133 137 108 as @p[tag=SEAPT,nbt={SelectedItem:{id:"minecraft:spyglass"}},scores={SEA_story=2..}] unless entity @a[tag=SEAPT,scores={SEA_story=..1}] at @s run tellraw @a[tag=SEAPT] [{"selector":"@s","color":"white"},{"text":"：「跳过了剧情」","color":"white"}]
-execute as @s[tag=sc,scores={sea_4temp2=103..364}] positioned 90133 137 108 if entity @p[tag=SEAPT,nbt={SelectedItem:{id:"minecraft:spyglass"}},scores={SEA_story=2..}] unless entity @a[tag=SEAPT,scores={SEA_story=..1}] run scoreboard players set @n[tag=sc] sea_4temp2 365
+execute as @s[tag=sc,scores={sea_4temp2=103..364}] positioned 90133 137 108 if entity @p[tag=SEAPT,nbt={SelectedItem:{id:"minecraft:spyglass"}},scores={SEA_story=2..}] unless entity @a[tag=SEAPT,scores={SEA_story=..1}] run scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 sea_4temp2 365
 execute as @s[tag=sc,scores={sea_4temp2=118}] positioned 90133 137 108 as @p[tag=SEAPT] if entity @n[tag=sc,scores={sea_player=1}] \
  run tellraw @a[distance=0..50] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“玛瑞莲小姐，这里通往行政区的所有通道都被堵住了，我该怎么上去？”","color":"white"}]
 execute as @s[tag=sc,scores={sea_4temp2=118}] positioned 90133 137 108 as @p[tag=SEAPT] if entity @n[tag=sc,scores={sea_player=2..}] \
@@ -36,7 +36,7 @@ execute as @s[tag=sc,scores={sea_4temp2=226}] positioned 90133 137 108 as @p[tag
 
 execute as @s[tag=sc,scores={sea_4temp2=227}] positioned 90133 137 108 run tellraw @a[distance=0..50,tag=SEAPT] [{"text":" - "},{"text":"询问：找到幸存者的希望有多大？  ","color":"yellow"},{"text":"〈◆〉","bold":true,"color":"gold","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 90002"}}]
 
-execute as @s[tag=sc,scores={sea_4temp2=247}] run scoreboard players set @n[tag=sc] sea_4temp2 341
+execute as @s[tag=sc,scores={sea_4temp2=247}] run scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 sea_4temp2 341
 
 execute as @s[tag=sc,scores={sea_4temp2=249}] positioned 90133 137 108 as @p[tag=SEAPT] if entity @n[tag=sc,scores={sea_player=1..}] \
  run tellraw @a[distance=0..50] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“真的……会有幸存者吗？”","color":"white"}]

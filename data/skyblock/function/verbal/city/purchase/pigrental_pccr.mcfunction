@@ -2,7 +2,7 @@
 function skyblock:tool_rng
 
 scoreboard objectives add PigCarCount dummy
-execute store result score @n[tag=sc] PigCarCount if entity @e[tag=PigCar]
+execute store result score 10e959db-4b44-4cdd-b98c-350d3b454206 PigCarCount if entity @e[tag=PigCar]
 
 execute if entity @n[tag=sc,scores={PigCarCount=41..,rng3=1}] run tellraw @s {"text":"中枢猪车公司·接待员：","bold":true,"color":"aqua"}
 execute if entity @n[tag=sc,scores={PigCarCount=41..,rng3=1}] run tellraw @s {"text":"“我们的豪车都被租出去了。非常抱歉。”","bold":false,"color":"white"}

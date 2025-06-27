@@ -31,7 +31,7 @@ execute as @s[scores={sea_4temp2=254..1100}] run particle large_smoke 90120 123 
 execute as @s[scores={sea_4temp2=344..1100}] run particle large_smoke 90125 123 115 0.2 0.5 0.2 0.01 3
 execute as @s[scores={sea_4temp2=284..1100}] run particle large_smoke 90123 121 115 0.2 0.5 0.2 0.01 3
 execute as @s[scores={sea_4temp2=290..1100}] run particle large_smoke 90124 121 120 0.2 0.5 0.2 0.01 3
-execute store result score @n[tag=sc] rng2 run random value 1..14
+execute store result score 10e959db-4b44-4cdd-b98c-350d3b454206 rng2 run random value 1..14
 execute if entity @n[tag=sc,scores={sea_4temp2=274..280,rng2=3}] run playsound ambient.cave ambient @a 90100 150 100 50 1.2
 execute if entity @n[tag=sc,scores={sea_4temp2=274..280,rng2=6}] run playsound ambient.cave ambient @a 90100 150 100 50 0.8
 execute if entity @n[tag=sc,scores={sea_4temp2=234..1155,rng2=7}] run setblock 90127 121 117 redstone_lamp[lit=true]

@@ -14,7 +14,7 @@ execute as @a[tag=SEAPT,x=90084,y=128,z=113,distance=0..3,tag=!e_i_13] at @s run
 execute as @a[tag=SEAPT,x=90084,y=128,z=113,distance=0..3,tag=!e_i_13] at @s run advancement grant @s only skyblock:sea/doc/documentary2
 execute as @a[tag=SEAPT,x=90084,y=128,z=113,distance=0..3,tag=!e_i_13] at @s run tag @s add e_i_13
 
-execute as @n[tag=sc] unless entity @s[scores={sea_4temp2=-9999..}] run scoreboard players set @s sea_4temp2 0
+execute as 10e959db-4b44-4cdd-b98c-350d3b454206 unless entity @s[scores={sea_4temp2=-9999..}] run scoreboard players set @s sea_4temp2 0
 
 execute store result score @n[tag=sc,scores={sea_4temp2=1..500}] rng2 run random value 1..6
 execute as @n[tag=sc,scores={sea_4temp2=1..40}] run scoreboard players add @s sea_4temp2 1
@@ -98,7 +98,7 @@ execute as @a[tag=SEAPT,x=90110,y=128,z=150,distance=0..1.3,tag=!e_i_16,tag=!SEA
 
 
 
-execute as @n[tag=sc] if block 90100 129 127 stone_button[powered=true] unless entity @s[scores={sea_4temp6=1..}] run scoreboard players set @s sea_4temp6 1
+execute as 10e959db-4b44-4cdd-b98c-350d3b454206 if block 90100 129 127 stone_button[powered=true] unless entity @s[scores={sea_4temp6=1..}] run scoreboard players set @s sea_4temp6 1
 execute as @n[tag=sc,scores={sea_4temp6=1..8}] run scoreboard players add @s sea_4temp6 1
 execute as @n[tag=sc,scores={sea_4temp6=2}] run fill 90098 128 128 90098 128 127 air
 execute as @n[tag=sc,scores={sea_4temp6=4}] run fill 90098 129 128 90098 129 127 air
@@ -112,7 +112,7 @@ execute as @n[tag=sc,scores={sea_4temp6=4}] run playsound minecraft:block.iron_d
 execute as @n[tag=sc,scores={sea_4temp6=6}] run playsound minecraft:block.iron_door.open ambient @a 90098 131 128 3 0.3
 
 
-execute as @n[tag=sc] if block 90088 129 132 stone_button[powered=true] unless entity @s[scores={sea_4temp5=1..}] run scoreboard players set @s sea_4temp5 1
+execute as 10e959db-4b44-4cdd-b98c-350d3b454206 if block 90088 129 132 stone_button[powered=true] unless entity @s[scores={sea_4temp5=1..}] run scoreboard players set @s sea_4temp5 1
 execute as @n[tag=sc,scores={sea_4temp5=1..8}] run scoreboard players add @s sea_4temp5 1
 execute as @n[tag=sc,scores={sea_4temp5=2}] run fill 90089 128 130 90088 128 130 air
 execute as @n[tag=sc,scores={sea_4temp5=4}] run fill 90089 129 130 90088 129 130 air
@@ -121,7 +121,7 @@ execute as @n[tag=sc,scores={sea_4temp5=2}] run playsound minecraft:block.iron_d
 execute as @n[tag=sc,scores={sea_4temp5=4}] run playsound minecraft:block.iron_door.open ambient @a 90088 131 130 3 0.3
 execute as @n[tag=sc,scores={sea_4temp5=6}] run playsound minecraft:block.iron_door.open ambient @a 90088 131 130 3 0.3
 
-execute as @n[tag=sc] if block 90122 128 131 minecraft:warped_button[powered=true] unless entity @s[scores={sea_4temp2=80..}] run scoreboard players set @s sea_4temp2 80
+execute as 10e959db-4b44-4cdd-b98c-350d3b454206 if block 90122 128 131 minecraft:warped_button[powered=true] unless entity @s[scores={sea_4temp2=80..}] run scoreboard players set @s sea_4temp2 80
 execute as @n[tag=sc,scores={sea_4temp2=80..395}] run scoreboard players add @s sea_4temp2 1
 execute as @n[tag=sc,scores={sea_4temp2=89}] positioned 90122 128 131 run tellraw @a[distance=0..50] {"text":"正在呼叫联络总站。","color":"dark_purple"}
 execute as @n[tag=sc,scores={sea_4temp2=89}] positioned 90122 128 131 run playsound minecraft:entity.endermite.ambient ambient @a ~ ~ ~ 0.8 0.1
@@ -134,7 +134,7 @@ execute as @n[tag=sc,scores={sea_4temp2=103..395}] run function skyblock:sea/e/c
 #temp4用于南冷冻库
 #temp3为循环装饰性事件/循环功能性事件
 
-execute as @n[tag=sc] if block 90149 130 129 stone_button[powered=true] unless score sea_ch2_close_storage sea_4temp2 matches 400.. run scoreboard players set sea_ch2_close_storage sea_4temp2 400
+execute as 10e959db-4b44-4cdd-b98c-350d3b454206 if block 90149 130 129 stone_button[powered=true] unless score sea_ch2_close_storage sea_4temp2 matches 400.. run scoreboard players set sea_ch2_close_storage sea_4temp2 400
 execute if score sea_ch2_close_storage sea_4temp2 matches 400..460 run scoreboard players add sea_ch2_close_storage sea_4temp2 1
 
 execute if score sea_ch2_close_storage sea_4temp2 matches 405.. run function skyblock:sea/e/ch2/ev024_ch2_close_storage_east
@@ -151,7 +151,7 @@ execute as @n[tag=sc,scores={sea_4temp4=405..}] run particle minecraft:snowflake
 execute as @n[tag=sc,scores={sea_4temp4=805..}] run particle minecraft:snowflake 90112.1 132.00 102.5 3 0 3 0.0 3
 
 
-execute as @n[tag=sc] if block 90132 129 137 stone_button[powered=true] unless entity @s[scores={sea_4temp4=400..}] run scoreboard players set @s sea_4temp4 400
+execute as 10e959db-4b44-4cdd-b98c-350d3b454206 if block 90132 129 137 stone_button[powered=true] unless entity @s[scores={sea_4temp4=400..}] run scoreboard players set @s sea_4temp4 400
 execute as @n[tag=sc,scores={sea_4temp4=400..460}] run scoreboard players add @s sea_4temp4 1
 
 execute as @n[tag=sc,scores={sea_4temp4=405..415}] run playsound minecraft:ambient.soul_sand_valley.additions ambient @a 90139.60 132.00 129.32 10 1.5
@@ -268,7 +268,7 @@ execute if entity @n[tag=sc,scores={sea_4temp2=2279}] positioned 90128 128 97 ru
 
 execute as @n[tag=sc,scores={sea_4temp2=2120..4999}] as @n[tag=SEAboss2,x=80000,dx=20000,y=-100,dy=300,z=-10000,dz=20000] at @s run function skyblock:sea/e/ch2/boss2
 
-execute as @n[tag=sc,scores={sea_4temp2=2400..5000}] unless entity @n[tag=SEAboss2] run scoreboard players set @n[tag=sc] sea_4temp2 5001
+execute as @n[tag=sc,scores={sea_4temp2=2400..5000}] unless entity @n[tag=SEAboss2] run scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 sea_4temp2 5001
 execute as @n[tag=sc,scores={sea_4temp2=5001..5005}] as @a run bossbar remove 9066601
 execute as @n[tag=sc,scores={sea_4temp2=5001..5005}] as @a run bossbar set 9066601 visible false
 execute as @n[tag=sc,scores={sea_4temp2=5001..5005}] run bossbar set minecraft:9066601 players @s

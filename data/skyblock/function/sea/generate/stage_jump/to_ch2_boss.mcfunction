@@ -5,7 +5,7 @@ function skyblock:sea/generate/stage_jump/to_ch2
 
 tp @a[tag=SEAPT] 90136 129 117 facing 90137 129 117
 
-scoreboard players set @n[tag=sc] sea_4temp2 1300
+scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 sea_4temp2 1300
 
 #clear @a[tag=SEAPT]
 item replace entity @a[tag=SEAPT] armor.feet with leather_boots[custom_name='{"text":"基础防护靴","italic":false,"color":"red"}',custom_data={sea_feet:true},attribute_modifiers=[{type:"armor",slot:"feet",id:"sea_armor:008_01",amount:1.0,operation:"add_value"},{type:"armor_toughness",slot:"feet",id:"sea_armor:008_02",amount:0.5,operation:"add_value"}],unbreakable={}]

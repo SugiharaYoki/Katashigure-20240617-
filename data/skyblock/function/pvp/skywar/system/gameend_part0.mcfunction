@@ -7,7 +7,7 @@ scoreboard objectives remove TempIf_Job6D
 scoreboard objectives remove TempIf_Job6E
 scoreboard objectives remove TempIf_Job3
 fill -130 59 -117 -130 59 -128 minecraft:cherry_button[facing=east]
-tag @n[tag=sc] remove Skyblock_map004_event
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove Skyblock_map004_event
 
 kill @e[type=marker,tag=Bless24_Marker,x=50062,y=26,z=50052,distance=..5000]
 

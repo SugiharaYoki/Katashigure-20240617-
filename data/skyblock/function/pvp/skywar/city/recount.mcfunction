@@ -2,7 +2,7 @@ execute unless block -17 23 32 soul_lantern if score skywar_start rng1 matches .
 #《计时器初始化》
 #-#-#setblock 10 66 -12 minecraft:redstone_wire
 #-#-#setblock 11 60 -10 minecraft:redstone_wire
-#-#-#scoreboard players set @n[tag=sc] TempPaus 0
+#-#-#scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 TempPaus 0
 
 tell @p[tag=ENKIDU] skywar_city_recount
 
@@ -26,7 +26,7 @@ tag @a[tag=!Gaming] remove NoSkyWarTemp
 #-#-#setblock 12 88 86 air
 #《禁止再次开局》
 #《计入历史启动》
-scoreboard players remove @n[tag=sc] HistoryPVP 1
+scoreboard players remove 10e959db-4b44-4cdd-b98c-350d3b454206 HistoryPVP 1
 #无意义变量 scoreboard players set @s Random1 0
 #无意义变量 scoreboard players reset @s RemainPlayer
 scoreboard players reset @s DeathCount

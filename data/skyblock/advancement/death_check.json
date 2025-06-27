@@ -1,0 +1,10 @@
+{
+    "criteria": {
+        "death_check":{
+            "trigger": "entity_hurt_player"
+        }
+    },
+    "rewards": {
+        "function": "skyblock:pvp/skywar/system/drop/death_check"
+    }
+}

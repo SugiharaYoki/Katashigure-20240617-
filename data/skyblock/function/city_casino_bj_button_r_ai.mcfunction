@@ -3,25 +3,25 @@ execute if entity @s[tag=Cas_BJ_OK,tag=Cas_BJ_B,tag=CasBJGGS] as @a[tag=Cas_BJ_B
 execute if entity @s[tag=Cas_BJ_OK,tag=Cas_BJ_B,tag=CasBJGGS] run scoreboard objectives add Cas_BJ_Com dummy
 execute if entity @s[tag=Cas_BJ_OK,tag=Cas_BJ_B,tag=CasBJGGS] run function skyblock:tool_rng
 
-execute if score @n[tag=sc] rng19 matches 1 run scoreboard players set @s Cas_BJ_Com 15
-execute if score @n[tag=sc] rng19 matches 2 run scoreboard players set @s Cas_BJ_Com 16
-execute if score @n[tag=sc] rng19 matches 3 run scoreboard players set @s Cas_BJ_Com 16
-execute if score @n[tag=sc] rng19 matches 4 run scoreboard players set @s Cas_BJ_Com 17
-execute if score @n[tag=sc] rng19 matches 5 run scoreboard players set @s Cas_BJ_Com 17
-execute if score @n[tag=sc] rng19 matches 6 run scoreboard players set @s Cas_BJ_Com 17
-execute if score @n[tag=sc] rng19 matches 7 run scoreboard players set @s Cas_BJ_Com 17
-execute if score @n[tag=sc] rng19 matches 8 run scoreboard players set @s Cas_BJ_Com 18
-execute if score @n[tag=sc] rng19 matches 9 run scoreboard players set @s Cas_BJ_Com 18
-execute if score @n[tag=sc] rng19 matches 10 run scoreboard players set @s Cas_BJ_Com 18
-execute if score @n[tag=sc] rng19 matches 11 run scoreboard players set @s Cas_BJ_Com 18
-execute if score @n[tag=sc] rng19 matches 12 run scoreboard players set @s Cas_BJ_Com 19
-execute if score @n[tag=sc] rng19 matches 13 run scoreboard players set @s Cas_BJ_Com 21
-execute if score @n[tag=sc] rng19 matches 14 run scoreboard players set @s Cas_BJ_Com 16
-execute if score @n[tag=sc] rng19 matches 15 run scoreboard players set @s Cas_BJ_Com 15
-execute if score @n[tag=sc] rng19 matches 16 run scoreboard players set @s Cas_BJ_Com 14
-execute if score @n[tag=sc] rng19 matches 17 run scoreboard players set @s Cas_BJ_Com 13
-execute if score @n[tag=sc] rng19 matches 18 run scoreboard players set @s Cas_BJ_Com 19
-execute if score @n[tag=sc] rng19 matches 19 run scoreboard players set @s Cas_BJ_Com 20
+execute if score 10e959db-4b44-4cdd-b98c-350d3b454206 rng19 matches 1 run scoreboard players set @s Cas_BJ_Com 15
+execute if score 10e959db-4b44-4cdd-b98c-350d3b454206 rng19 matches 2 run scoreboard players set @s Cas_BJ_Com 16
+execute if score 10e959db-4b44-4cdd-b98c-350d3b454206 rng19 matches 3 run scoreboard players set @s Cas_BJ_Com 16
+execute if score 10e959db-4b44-4cdd-b98c-350d3b454206 rng19 matches 4 run scoreboard players set @s Cas_BJ_Com 17
+execute if score 10e959db-4b44-4cdd-b98c-350d3b454206 rng19 matches 5 run scoreboard players set @s Cas_BJ_Com 17
+execute if score 10e959db-4b44-4cdd-b98c-350d3b454206 rng19 matches 6 run scoreboard players set @s Cas_BJ_Com 17
+execute if score 10e959db-4b44-4cdd-b98c-350d3b454206 rng19 matches 7 run scoreboard players set @s Cas_BJ_Com 17
+execute if score 10e959db-4b44-4cdd-b98c-350d3b454206 rng19 matches 8 run scoreboard players set @s Cas_BJ_Com 18
+execute if score 10e959db-4b44-4cdd-b98c-350d3b454206 rng19 matches 9 run scoreboard players set @s Cas_BJ_Com 18
+execute if score 10e959db-4b44-4cdd-b98c-350d3b454206 rng19 matches 10 run scoreboard players set @s Cas_BJ_Com 18
+execute if score 10e959db-4b44-4cdd-b98c-350d3b454206 rng19 matches 11 run scoreboard players set @s Cas_BJ_Com 18
+execute if score 10e959db-4b44-4cdd-b98c-350d3b454206 rng19 matches 12 run scoreboard players set @s Cas_BJ_Com 19
+execute if score 10e959db-4b44-4cdd-b98c-350d3b454206 rng19 matches 13 run scoreboard players set @s Cas_BJ_Com 21
+execute if score 10e959db-4b44-4cdd-b98c-350d3b454206 rng19 matches 14 run scoreboard players set @s Cas_BJ_Com 16
+execute if score 10e959db-4b44-4cdd-b98c-350d3b454206 rng19 matches 15 run scoreboard players set @s Cas_BJ_Com 15
+execute if score 10e959db-4b44-4cdd-b98c-350d3b454206 rng19 matches 16 run scoreboard players set @s Cas_BJ_Com 14
+execute if score 10e959db-4b44-4cdd-b98c-350d3b454206 rng19 matches 17 run scoreboard players set @s Cas_BJ_Com 13
+execute if score 10e959db-4b44-4cdd-b98c-350d3b454206 rng19 matches 18 run scoreboard players set @s Cas_BJ_Com 19
+execute if score 10e959db-4b44-4cdd-b98c-350d3b454206 rng19 matches 19 run scoreboard players set @s Cas_BJ_Com 20
 
 
 execute if entity @s[tag=Cas_BJ_OK,tag=Cas_BJ_B,tag=CasBJGGS] if score @s Cas_BJ_Com > @s CasBJGTemp1 run tellraw @s [{"text":"电脑","color":"blue"},{"text":" 的胜利！","color":"gold"}]

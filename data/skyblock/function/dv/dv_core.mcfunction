@@ -1,4 +1,4 @@
-scoreboard players add @n[tag=sc] SeGa_DVTimer 1
+scoreboard players add 10e959db-4b44-4cdd-b98c-350d3b454206 SeGa_DVTimer 1
 
 execute as @n[tag=sc,tag=DVC1R,scores={SeGa_DVTimer=1}] run tag @s add DVC1R
 execute if entity @n[tag=sc,scores={SeGa_DVTimer=1}] run summon villager -90001 105 56 {VillagerData:{profession:"cleric",level:99,type:savanna},Tags:["SeGaDVProt"],PersistenceRequired:1b,Silent:0b,NoAI:1b,Rotation:[180f,0f],CustomName:"\"云端亭主\"",attributes:[{id:"max_health",base:100.0},{id:"armor",base:10.0},{id:"armor_toughness",base:5.0}],Health:100.0f}
@@ -18,8 +18,8 @@ execute if entity @n[tag=sc,scores={SeGa_DVTimer=3}] run tellraw @a[tag=SeGa_DVA
 execute if entity @n[tag=sc,scores={SeGa_DVTimer=4}] run tellraw @a[tag=SeGa_DVA] {"text":"游戏将在2秒内开始……","color":"gray"}
 execute if entity @n[tag=sc,scores={SeGa_DVTimer=5}] run tellraw @a[tag=SeGa_DVA] {"text":"游戏将在1秒内开始……","color":"gray"}
 execute if entity @n[tag=sc,scores={SeGa_DVTimer=6}] run tellraw @a[tag=SeGa_DVA] {"text":" - 游戏开始 - ","color":"green"}
-execute if entity @n[tag=sc,scores={SeGa_DVTimer=6}] run scoreboard players set @n[tag=sc] SeGa_DVTimerx10 0
-execute if entity @n[tag=sc,scores={SeGa_DVTimer=6}] run scoreboard players set @n[tag=sc] SeGa_DVTimerQT 0
+execute if entity @n[tag=sc,scores={SeGa_DVTimer=6}] run scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 SeGa_DVTimerx10 0
+execute if entity @n[tag=sc,scores={SeGa_DVTimer=6}] run scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 SeGa_DVTimerQT 0
 #execute if entity @n[tag=sc,scores={SeGa_DVTimer=6..}] run effect give @a[tag=SeGa_DVA] haste 10 39 true
 execute if entity @n[tag=sc,scores={SeGa_DVTimer=6..}] if entity @a[tag=SeGa_DVA,x=-90001,y=105,z=56,distance=0..200,gamemode=!spectator] as @a[x=-90001,y=105,z=56,distance=0..200,tag=!SeGa_DVA,gamemode=!spectator] at @s run tellraw @s {"text":"你加入了一场正在进行中的『云亭攻防战』","color":"yellow"}
 execute if entity @n[tag=sc,scores={SeGa_DVTimer=6..}] if entity @a[tag=SeGa_DVA,x=-90001,y=105,z=56,distance=0..200,gamemode=!spectator] as @a[x=-90001,y=105,z=56,distance=0..200,tag=!SeGa_DVA,gamemode=!spectator] at @s run function skyblock:dv/dv_sys_initialspawn
@@ -60,7 +60,7 @@ execute if entity @n[tag=sc,scores={SeGa_DVTimer=6..,SeGa_DVStage=21..}] run eff
 execute if entity @n[tag=sc,scores={SeGa_DVTimer=6..,SeGa_DVStage=11..}] run effect give @e[type=piglin_brute,tag=SeGaDVMob] resistance 10 1 false
 
 #计时段落
-execute if entity @n[tag=sc,scores={SeGa_DVTimer=10}] run scoreboard players set @n[tag=sc] SeGa_DVTimer 26
+execute if entity @n[tag=sc,scores={SeGa_DVTimer=10}] run scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 SeGa_DVTimer 26
 execute if entity @n[tag=sc,scores={SeGa_DVTimer=10}] run title @a[tag=SeGa_DVA] times 0 35 15
 execute if entity @n[tag=sc,scores={SeGa_DVTimer=14}] run tellraw @a[tag=SeGa_DVA] {"text":"17","color":"green"}
 execute if entity @n[tag=sc,scores={SeGa_DVTimer=15}] run tellraw @a[tag=SeGa_DVA] {"text":"16","color":"green"}
@@ -79,20 +79,20 @@ execute if entity @n[tag=sc,scores={SeGa_DVTimer=27}] run tellraw @a[tag=SeGa_DV
 execute if entity @n[tag=sc,scores={SeGa_DVTimer=28}] run tellraw @a[tag=SeGa_DVA] {"text":"3","color":"red"}
 execute if entity @n[tag=sc,scores={SeGa_DVTimer=29}] run tellraw @a[tag=SeGa_DVA] {"text":"2","color":"red"}
 execute if entity @n[tag=sc,scores={SeGa_DVTimer=30}] run tellraw @a[tag=SeGa_DVA] {"text":"1","color":"red"}
-execute if entity @n[tag=sc,scores={SeGa_DVTimer=30}] run tag @n[tag=sc] remove DV_North
-execute if entity @n[tag=sc,scores={SeGa_DVTimer=30}] run tag @n[tag=sc] remove DV_South
-execute if entity @n[tag=sc,scores={SeGa_DVTimer=30}] run scoreboard players add @n[tag=sc] SeGa_DVStage 1
-execute if entity @n[tag=sc,scores={SeGa_DVTimer=31}] run tellraw @a[tag=SeGa_DVA] [{"text":"Wave - ","color":"red"},{"color":"red","score":{"name":"@n[tag=sc]","objective":"SeGa_DVStage"}}]
+execute if entity @n[tag=sc,scores={SeGa_DVTimer=30}] run tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove DV_North
+execute if entity @n[tag=sc,scores={SeGa_DVTimer=30}] run tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove DV_South
+execute if entity @n[tag=sc,scores={SeGa_DVTimer=30}] run scoreboard players add 10e959db-4b44-4cdd-b98c-350d3b454206 SeGa_DVStage 1
+execute if entity @n[tag=sc,scores={SeGa_DVTimer=31}] run tellraw @a[tag=SeGa_DVA] [{"text":"Wave - ","color":"red"},{"color":"red","score":{"name":"10e959db-4b44-4cdd-b98c-350d3b454206","objective":"SeGa_DVStage"}}]
 execute if entity @n[tag=sc,scores={SeGa_DVTimer=31..}] run function skyblock:tool_rng
 #实时排行分数
-#scoreboard players add @n[tag=sc] SeGa_DVTimerLB 1
-#execute if score @n[tag=sc] SeGa_DVTimerLB matches 1 run scoreboard objectives setdisplay sidebar
-#execute if score @n[tag=sc] SeGa_DVTimerLB matches 6 run function skyblock:dv/dv_corex10
-#execute if score @n[tag=sc] SeGa_DVTimerLB matches 10.. run scoreboard players set @n[tag=sc] SeGa_DVTimerQT 0
+#scoreboard players add 10e959db-4b44-4cdd-b98c-350d3b454206 SeGa_DVTimerLB 1
+#execute if score 10e959db-4b44-4cdd-b98c-350d3b454206 SeGa_DVTimerLB matches 1 run scoreboard objectives setdisplay sidebar
+#execute if score 10e959db-4b44-4cdd-b98c-350d3b454206 SeGa_DVTimerLB matches 6 run function skyblock:dv/dv_corex10
+#execute if score 10e959db-4b44-4cdd-b98c-350d3b454206 SeGa_DVTimerLB matches 10.. run scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 SeGa_DVTimerQT 0
 
 #固定
-execute if entity @n[tag=sc,scores={SeGa_DVTimer=32,SeGa_DVStage=1..,rng2=1}] run tag @n[tag=sc] add DV_North
-execute if entity @n[tag=sc,scores={SeGa_DVTimer=32,SeGa_DVStage=1..,rng2=2}] run tag @n[tag=sc] add DV_South
+execute if entity @n[tag=sc,scores={SeGa_DVTimer=32,SeGa_DVStage=1..,rng2=1}] run tag 10e959db-4b44-4cdd-b98c-350d3b454206 add DV_North
+execute if entity @n[tag=sc,scores={SeGa_DVTimer=32,SeGa_DVStage=1..,rng2=2}] run tag 10e959db-4b44-4cdd-b98c-350d3b454206 add DV_South
 execute if entity @n[tag=sc,scores={SeGa_DVTimer=32,SeGa_DVStage=1..5}] positioned -90001 81 56 run function skyblock:dv/lib_piglin
 execute if entity @n[tag=sc,scores={SeGa_DVTimer=32,SeGa_DVStage=1..5}] positioned -90001 81 56 run function skyblock:dv/lib_piglin
 execute if entity @n[tag=sc,scores={SeGa_DVTimer=33,SeGa_DVStage=2..5}] positioned -90001 81 56 run function skyblock:dv/lib_piglin
@@ -173,7 +173,7 @@ execute if entity @n[tag=sc,scores={SeGa_DVTimer=46..,SeGa_DVStage=6}] positione
 execute if entity @n[tag=sc,scores={SeGa_DVTimer=49,SeGa_DVStage=10}] positioned -90001 103 111 run tp @e[type=piglin_brute,x=-90001,y=85,z=56,distance=..12,limit=1,sort=random] -90001 103 111 facing -90001 105 56
 execute if entity @n[tag=sc,scores={SeGa_DVTimer=49,SeGa_DVStage=10}] positioned -90001 102 2 run tp @e[type=piglin_brute,x=-90001,y=85,z=56,distance=..12,limit=1,sort=random] -90001 102 2 facing -90001 105 56
 #随机
-execute if entity @n[tag=sc,scores={SeGa_DVTimer=32,SeGa_DVStage=6..}] run scoreboard players operation @n[tag=sc] SeGa_DVrng = @n[tag=sc] rng6
+execute if entity @n[tag=sc,scores={SeGa_DVTimer=32,SeGa_DVStage=6..}] run scoreboard players operation 10e959db-4b44-4cdd-b98c-350d3b454206 SeGa_DVrng = 10e959db-4b44-4cdd-b98c-350d3b454206 rng6
 execute if entity @n[tag=sc,scores={SeGa_DVTimer=34,SeGa_DVStage=6..12,SeGa_DVrng=1..4}] positioned -90001 85 56 run function skyblock:dv/dv_creeper_summon_gen
 execute if entity @n[tag=sc,scores={SeGa_DVTimer=38,SeGa_DVStage=6..12,SeGa_DVrng=1..4}] positioned -90001 85 56 run function skyblock:dv/dv_creeper_summon_gen
 execute if entity @n[tag=sc,scores={SeGa_DVTimer=42,SeGa_DVStage=9..15,SeGa_DVrng=1..4}] positioned -90001 85 56 run function skyblock:dv/dv_creeper_summon_gen
@@ -315,32 +315,32 @@ execute if entity @n[tag=sc,scores={SeGa_DVTimer=50..,SeGa_DVStage=..30}] unless
 execute if entity @n[tag=sc,scores={SeGa_DVTimer=50..,SeGa_DVStage=..30}] unless entity @e[tag=SeGaDVMob] run tellraw @a[tag=SeGa_DVA] [{"text":"Wave Cleared!","color":"green"}]
 execute if entity @n[tag=sc,scores={SeGa_DVTimer=53..,SeGa_DVStage=31..}] unless entity @e[tag=SeGaDVMob] as @a[tag=SeGa_DVA] at @s run playsound entity.player.levelup master @s ~ ~ ~ 1 0.9
 execute if entity @n[tag=sc,scores={SeGa_DVTimer=53..,SeGa_DVStage=31..}] unless entity @e[tag=SeGaDVMob] run tellraw @a[tag=SeGa_DVA] [{"text":"Wave Cleared!","color":"green"}]
-execute if entity @n[tag=sc,scores={SeGa_DVTimer=50..,SeGa_DVStage=1..10,rng3=1}] unless entity @e[tag=SeGaDVMob] run scoreboard players set @n[tag=sc] SeGa_DVTimer 17
-execute if entity @n[tag=sc,scores={SeGa_DVTimer=50..,SeGa_DVStage=1..10,rng3=2}] unless entity @e[tag=SeGaDVMob] run scoreboard players set @n[tag=sc] SeGa_DVTimer 18
-execute if entity @n[tag=sc,scores={SeGa_DVTimer=50..,SeGa_DVStage=1..10,rng3=3}] unless entity @e[tag=SeGaDVMob] run scoreboard players set @n[tag=sc] SeGa_DVTimer 19
-execute if entity @n[tag=sc,scores={SeGa_DVTimer=50..,SeGa_DVStage=11..20,rng5=1}] unless entity @e[tag=SeGaDVMob] run scoreboard players set @n[tag=sc] SeGa_DVTimer 17
-execute if entity @n[tag=sc,scores={SeGa_DVTimer=50..,SeGa_DVStage=11..20,rng5=2}] unless entity @e[tag=SeGaDVMob] run scoreboard players set @n[tag=sc] SeGa_DVTimer 18
-execute if entity @n[tag=sc,scores={SeGa_DVTimer=50..,SeGa_DVStage=11..20,rng5=3}] unless entity @e[tag=SeGaDVMob] run scoreboard players set @n[tag=sc] SeGa_DVTimer 19
-execute if entity @n[tag=sc,scores={SeGa_DVTimer=50..,SeGa_DVStage=11..20,rng5=4}] unless entity @e[tag=SeGaDVMob] run scoreboard players set @n[tag=sc] SeGa_DVTimer 16
-execute if entity @n[tag=sc,scores={SeGa_DVTimer=50..,SeGa_DVStage=11..20,rng5=5}] unless entity @e[tag=SeGaDVMob] run scoreboard players set @n[tag=sc] SeGa_DVTimer 20
-execute if entity @n[tag=sc,scores={SeGa_DVTimer=50..,SeGa_DVStage=21..30,rng7=1}] unless entity @e[tag=SeGaDVMob] run scoreboard players set @n[tag=sc] SeGa_DVTimer 17
-execute if entity @n[tag=sc,scores={SeGa_DVTimer=50..,SeGa_DVStage=21..30,rng7=2}] unless entity @e[tag=SeGaDVMob] run scoreboard players set @n[tag=sc] SeGa_DVTimer 18
-execute if entity @n[tag=sc,scores={SeGa_DVTimer=50..,SeGa_DVStage=21..30,rng7=3}] unless entity @e[tag=SeGaDVMob] run scoreboard players set @n[tag=sc] SeGa_DVTimer 19
-execute if entity @n[tag=sc,scores={SeGa_DVTimer=50..,SeGa_DVStage=21..30,rng7=4}] unless entity @e[tag=SeGaDVMob] run scoreboard players set @n[tag=sc] SeGa_DVTimer 16
-execute if entity @n[tag=sc,scores={SeGa_DVTimer=50..,SeGa_DVStage=21..30,rng7=5}] unless entity @e[tag=SeGaDVMob] run scoreboard players set @n[tag=sc] SeGa_DVTimer 20
-execute if entity @n[tag=sc,scores={SeGa_DVTimer=50..,SeGa_DVStage=21..30,rng7=6}] unless entity @e[tag=SeGaDVMob] run scoreboard players set @n[tag=sc] SeGa_DVTimer 21
-execute if entity @n[tag=sc,scores={SeGa_DVTimer=50..,SeGa_DVStage=21..30,rng7=7}] unless entity @e[tag=SeGaDVMob] run scoreboard players set @n[tag=sc] SeGa_DVTimer 22
-execute if entity @n[tag=sc,scores={SeGa_DVTimer=53..,SeGa_DVStage=31..,rng11=1}] unless entity @e[tag=SeGaDVMob] run scoreboard players set @n[tag=sc] SeGa_DVTimer 17
-execute if entity @n[tag=sc,scores={SeGa_DVTimer=53..,SeGa_DVStage=31..,rng11=2}] unless entity @e[tag=SeGaDVMob] run scoreboard players set @n[tag=sc] SeGa_DVTimer 18
-execute if entity @n[tag=sc,scores={SeGa_DVTimer=53..,SeGa_DVStage=31..,rng11=3}] unless entity @e[tag=SeGaDVMob] run scoreboard players set @n[tag=sc] SeGa_DVTimer 19
-execute if entity @n[tag=sc,scores={SeGa_DVTimer=53..,SeGa_DVStage=31..,rng11=4}] unless entity @e[tag=SeGaDVMob] run scoreboard players set @n[tag=sc] SeGa_DVTimer 16
-execute if entity @n[tag=sc,scores={SeGa_DVTimer=53..,SeGa_DVStage=31..,rng11=5}] unless entity @e[tag=SeGaDVMob] run scoreboard players set @n[tag=sc] SeGa_DVTimer 20
-execute if entity @n[tag=sc,scores={SeGa_DVTimer=53..,SeGa_DVStage=31..,rng11=6}] unless entity @e[tag=SeGaDVMob] run scoreboard players set @n[tag=sc] SeGa_DVTimer 21
-execute if entity @n[tag=sc,scores={SeGa_DVTimer=53..,SeGa_DVStage=31..,rng11=7}] unless entity @e[tag=SeGaDVMob] run scoreboard players set @n[tag=sc] SeGa_DVTimer 22
-execute if entity @n[tag=sc,scores={SeGa_DVTimer=53..,SeGa_DVStage=31..,rng11=8}] unless entity @e[tag=SeGaDVMob] run scoreboard players set @n[tag=sc] SeGa_DVTimer 23
-execute if entity @n[tag=sc,scores={SeGa_DVTimer=53..,SeGa_DVStage=31..,rng11=9}] unless entity @e[tag=SeGaDVMob] run scoreboard players set @n[tag=sc] SeGa_DVTimer 14
-execute if entity @n[tag=sc,scores={SeGa_DVTimer=53..,SeGa_DVStage=31..,rng11=10}] unless entity @e[tag=SeGaDVMob] run scoreboard players set @n[tag=sc] SeGa_DVTimer 15
-execute if entity @n[tag=sc,scores={SeGa_DVTimer=53..,SeGa_DVStage=31..,rng11=11}] unless entity @e[tag=SeGaDVMob] run scoreboard players set @n[tag=sc] SeGa_DVTimer 24
+execute if entity @n[tag=sc,scores={SeGa_DVTimer=50..,SeGa_DVStage=1..10,rng3=1}] unless entity @e[tag=SeGaDVMob] run scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 SeGa_DVTimer 17
+execute if entity @n[tag=sc,scores={SeGa_DVTimer=50..,SeGa_DVStage=1..10,rng3=2}] unless entity @e[tag=SeGaDVMob] run scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 SeGa_DVTimer 18
+execute if entity @n[tag=sc,scores={SeGa_DVTimer=50..,SeGa_DVStage=1..10,rng3=3}] unless entity @e[tag=SeGaDVMob] run scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 SeGa_DVTimer 19
+execute if entity @n[tag=sc,scores={SeGa_DVTimer=50..,SeGa_DVStage=11..20,rng5=1}] unless entity @e[tag=SeGaDVMob] run scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 SeGa_DVTimer 17
+execute if entity @n[tag=sc,scores={SeGa_DVTimer=50..,SeGa_DVStage=11..20,rng5=2}] unless entity @e[tag=SeGaDVMob] run scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 SeGa_DVTimer 18
+execute if entity @n[tag=sc,scores={SeGa_DVTimer=50..,SeGa_DVStage=11..20,rng5=3}] unless entity @e[tag=SeGaDVMob] run scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 SeGa_DVTimer 19
+execute if entity @n[tag=sc,scores={SeGa_DVTimer=50..,SeGa_DVStage=11..20,rng5=4}] unless entity @e[tag=SeGaDVMob] run scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 SeGa_DVTimer 16
+execute if entity @n[tag=sc,scores={SeGa_DVTimer=50..,SeGa_DVStage=11..20,rng5=5}] unless entity @e[tag=SeGaDVMob] run scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 SeGa_DVTimer 20
+execute if entity @n[tag=sc,scores={SeGa_DVTimer=50..,SeGa_DVStage=21..30,rng7=1}] unless entity @e[tag=SeGaDVMob] run scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 SeGa_DVTimer 17
+execute if entity @n[tag=sc,scores={SeGa_DVTimer=50..,SeGa_DVStage=21..30,rng7=2}] unless entity @e[tag=SeGaDVMob] run scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 SeGa_DVTimer 18
+execute if entity @n[tag=sc,scores={SeGa_DVTimer=50..,SeGa_DVStage=21..30,rng7=3}] unless entity @e[tag=SeGaDVMob] run scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 SeGa_DVTimer 19
+execute if entity @n[tag=sc,scores={SeGa_DVTimer=50..,SeGa_DVStage=21..30,rng7=4}] unless entity @e[tag=SeGaDVMob] run scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 SeGa_DVTimer 16
+execute if entity @n[tag=sc,scores={SeGa_DVTimer=50..,SeGa_DVStage=21..30,rng7=5}] unless entity @e[tag=SeGaDVMob] run scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 SeGa_DVTimer 20
+execute if entity @n[tag=sc,scores={SeGa_DVTimer=50..,SeGa_DVStage=21..30,rng7=6}] unless entity @e[tag=SeGaDVMob] run scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 SeGa_DVTimer 21
+execute if entity @n[tag=sc,scores={SeGa_DVTimer=50..,SeGa_DVStage=21..30,rng7=7}] unless entity @e[tag=SeGaDVMob] run scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 SeGa_DVTimer 22
+execute if entity @n[tag=sc,scores={SeGa_DVTimer=53..,SeGa_DVStage=31..,rng11=1}] unless entity @e[tag=SeGaDVMob] run scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 SeGa_DVTimer 17
+execute if entity @n[tag=sc,scores={SeGa_DVTimer=53..,SeGa_DVStage=31..,rng11=2}] unless entity @e[tag=SeGaDVMob] run scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 SeGa_DVTimer 18
+execute if entity @n[tag=sc,scores={SeGa_DVTimer=53..,SeGa_DVStage=31..,rng11=3}] unless entity @e[tag=SeGaDVMob] run scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 SeGa_DVTimer 19
+execute if entity @n[tag=sc,scores={SeGa_DVTimer=53..,SeGa_DVStage=31..,rng11=4}] unless entity @e[tag=SeGaDVMob] run scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 SeGa_DVTimer 16
+execute if entity @n[tag=sc,scores={SeGa_DVTimer=53..,SeGa_DVStage=31..,rng11=5}] unless entity @e[tag=SeGaDVMob] run scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 SeGa_DVTimer 20
+execute if entity @n[tag=sc,scores={SeGa_DVTimer=53..,SeGa_DVStage=31..,rng11=6}] unless entity @e[tag=SeGaDVMob] run scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 SeGa_DVTimer 21
+execute if entity @n[tag=sc,scores={SeGa_DVTimer=53..,SeGa_DVStage=31..,rng11=7}] unless entity @e[tag=SeGaDVMob] run scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 SeGa_DVTimer 22
+execute if entity @n[tag=sc,scores={SeGa_DVTimer=53..,SeGa_DVStage=31..,rng11=8}] unless entity @e[tag=SeGaDVMob] run scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 SeGa_DVTimer 23
+execute if entity @n[tag=sc,scores={SeGa_DVTimer=53..,SeGa_DVStage=31..,rng11=9}] unless entity @e[tag=SeGaDVMob] run scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 SeGa_DVTimer 14
+execute if entity @n[tag=sc,scores={SeGa_DVTimer=53..,SeGa_DVStage=31..,rng11=10}] unless entity @e[tag=SeGaDVMob] run scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 SeGa_DVTimer 15
+execute if entity @n[tag=sc,scores={SeGa_DVTimer=53..,SeGa_DVStage=31..,rng11=11}] unless entity @e[tag=SeGaDVMob] run scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 SeGa_DVTimer 24
 
 execute at @e[tag=SeGaDVProt] run kill @e[tag=SeGaDVRider,distance=..8]
 execute as @e[tag=SeGaDVRider] run damage @s 0.0 mob_attack by @e[tag=SeGaDVProt,limit=1]
