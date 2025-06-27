@@ -95,7 +95,7 @@ execute if score SEA_ch6_event rng5 matches 1112 run tag @n[tag=SEAedwina] add S
 #90138 133 143
 
 execute if score SEA_ch6_event rng5 matches 1200..1300 run scoreboard players set SEA_ch6_event rng5 1200
-execute if score SEA_ch6_event rng5 matches 1200..1300 as @a[x=90138,y=133,z=143,dx=20,dy=4,dz=20,tag=SEAPT] at @s run scoreboard players set SEA_ch6_event rng5 1301
+execute if score SEA_ch6_event rng5 matches 1100..1300 as @a[x=90138,y=133,z=143,dx=20,dy=4,dz=20,tag=SEAPT] at @s run scoreboard players set SEA_ch6_event rng5 1301
 
 execute if score SEA_ch6_event rng5 matches 1302 as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
 execute if score SEA_ch6_event rng5 matches 1302 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“物资层东面那座电梯应该还能用，我祈祷还能用。去那里！”","color":"white","bold": false}]
