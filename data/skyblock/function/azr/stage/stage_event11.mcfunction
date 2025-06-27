@@ -569,7 +569,8 @@ execute if score stageSeconds Azr_system matches 1691 as @a[tag=AzrielBossB] at 
 execute if score stageSeconds Azr_system matches 1690 as @a[tag=azrPlayer] at @s run playsound entity.evoker.cast_spell master @s ~ ~ ~ 100 0.8
 execute if score stageSeconds Azr_system matches 1691 as @a[tag=azrPlayer] at @s run playsound block.ancient_debris.break master @s ~ ~ ~ 100 0.8
 
-execute if score stageSeconds Azr_system matches 1690..3045 run spawnpoint @a[tag=azrPlayer] -79720 50 -163
+execute if score stageSeconds Azr_system matches 1690..3045 positioned -79720 50 -163 run tp @a[tag=azrPlayer,distance=300..] ~ ~ ~
+execute if score stageSeconds Azr_system matches 1690..3045 at @n[tag=AzrielBossB] run tp @a[tag=azrPlayer,distance=10..] ~ ~ ~
 
 execute if score stageSeconds Azr_system matches 2800..2900 if entity @e[tag=AzrielBossB,type=evoker] run scoreboard players set stageSeconds Azr_system 2800
 execute if score stageSeconds Azr_system matches 1720..2900 unless entity @e[tag=AzrielBossB,type=evoker] run scoreboard players set stageSeconds Azr_system 2940
