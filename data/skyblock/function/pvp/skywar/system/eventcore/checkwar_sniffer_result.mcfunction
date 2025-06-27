@@ -25,3 +25,12 @@ execute if biome ~ ~ ~ minecraft:eroded_badlands run tellraw @s [{"text":"嗅探
 execute if biome ~ ~ ~ minecraft:eroded_badlands run attribute @s minecraft:armor modifier add checkwar_bless:sniffer_1 2 add_value
 
 
+execute if biome ~ ~ ~ minecraft:basalt_deltas run tellraw @s [{"text":"嗅探兽的收获：","bold":true,"color":"gold"},{"text":"抗火效果 5 分钟","bold":false,"color":"white"}]
+execute if biome ~ ~ ~ minecraft:basalt_deltas run effect give @s fire_resistance 300 0 true
+execute if biome ~ ~ ~ minecraft:desert run tellraw @s [{"text":"嗅探兽的收获：","bold":true,"color":"gold"},{"text":"获得 1 下界合金镐与 1 下界合金锹","bold":false,"color":"white"}]
+execute if biome ~ ~ ~ minecraft:desert run give @s netherite_pickaxe
+execute if biome ~ ~ ~ minecraft:desert run give @s netherite_shovel
+execute if biome ~ ~ ~ minecraft:cold_ocean run tellraw @s [{"text":"嗅探兽的收获：","bold":true,"color":"gold"},{"text":"攻击速度 +0.2","bold":false,"color":"white"}]
+execute if biome ~ ~ ~ minecraft:cold_ocean run attribute @s minecraft:attack_speed modifier add checkwar_bless:sniffer_1 0.2 add_value
+execute if biome ~ ~ ~ minecraft:end_highlands run tellraw @s [{"text":"嗅探兽的收获：","bold":true,"color":"gold"},{"text":"获得 3 金苹果","bold":false,"color":"white"}]
+execute if biome ~ ~ ~ minecraft:end_highlands run give @s golden_apple 3
