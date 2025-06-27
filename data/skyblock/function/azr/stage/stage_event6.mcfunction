@@ -66,3 +66,5 @@ execute unless entity @a[tag=AzrielEvent382315A] if score playerCount Azr_system
 execute unless entity @a[tag=AzrielEvent382315A] if score playerCount Azr_system matches 7.. if entity @a[x=-79827,y=43,z=197,distance=..4,tag=azrPlayer] positioned -79845 43 197 run summon vindicator ~ ~ ~ {PersistenceRequired:1b,Tags:["AzrielMob","AzrielDecMob"],DeathLootTable:"skyblock:azriel_vindicator_tier1",attributes:[{id:"max_health",base:12.0d},{id:"attack_damage",base:0.0d},{id:"movement_speed",base:0.12d}],Health:12.0f,CustomName:'"圣殿巡逻兵"',CanPickUpLoot:0b,HandItems:[{count:1,id:"stone_sword",components:{custom_name:'{"text":"石剑","italic":false,"color":"white"}'}},{}],HandDropChances:[0.003f,0.003f]}
 
 execute as @a[x=-79827,y=43,z=197,distance=..4,tag=azrPlayer] run tag @s add AzrielEvent382315A
+execute if entity @a[tag=AzrielEvent382315A] run scoreboard players operation stage Azr_system = main_stage Azr_system
+execute if entity @a[tag=AzrielEvent382315A] run scoreboard players reset main_stage Azr_system

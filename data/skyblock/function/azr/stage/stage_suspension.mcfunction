@@ -240,12 +240,8 @@ execute if score stageSeconds Azr_system matches 186 run setblock -79923 39 134 
 execute if score stageSeconds Azr_system matches 186..188 run playsound ambient.soul_sand_valley.additions ambient @a[tag=azrPlayer] -78000 100 0 1000
 execute if score stageSeconds Azr_system matches 186..188 run playsound ambient.soul_sand_valley.loop ambient @a[tag=azrPlayer] -78000 100 0 1000
 execute if score stageSeconds Azr_system matches 186..188 run playsound ambient.soul_sand_valley.mood ambient @a[tag=azrPlayer] -78000 100 0 1000
-execute if score stageSeconds Azr_system matches 188 run scoreboard players set stage Azr_system 14
-
-
-
-
-
+execute if score stageSeconds Azr_system matches 188 run scoreboard players operation stage Azr_system = main_stage Azr_system
+execute if score stageSeconds Azr_system matches 188 run scoreboard players reset main_stage Azr_system
 
 #function skyblock:tool_rng
 #execute if entity @e[tag=sc,limit=1,scores={SeGa_StandLast=143}] rng3 matches 1 run

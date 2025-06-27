@@ -20,10 +20,6 @@ attribute @s minecraft:attack_damage modifier remove azr_chainkill_02
 attribute @s minecraft:armor modifier remove azr_chainkill_03
 attribute @s minecraft:attack_speed modifier remove azr_chainkill_04
 function skyblock:azr/update_bossbar
-#输出
-tellraw @a[tag=azrPlayer,distance=..10000] [{"selector":"@s","color":"blue"},{"text":" 阵亡了！","color":"dark_red"}]
-tellraw @s [{"text":"你已经死亡！最终坚持关数： ","color":"red"},{"score":{"name":"@s","objective":"Azr_wave"}}]
-tellraw @s [{"text":"现在持有的影之石： ","color":"white"},{"score":{"name":"@s","objective":"Perm_PersonSHD"}}]
 #更新战绩
 execute unless score @s SeGa_StandLastBH matches -2147483648..2147483647 run scoreboard players set @s Azr_system 0
 execute if score @s SeGa_StandLastBH < @s Azr_wave run scoreboard players operation @s SeGa_StandLastBH = @s Azr_wave
@@ -88,3 +84,5 @@ function skyblock:pvp/skywar/system/removeallgaming
 #tag @s remove AZr_SExUp07
 #tag @s remove AZr_SExUp08
 #execute as @s at @s run scoreboard players reset @s Azr_forceDeath
+
+return 1

@@ -128,8 +128,8 @@ execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system 
 
 #章节设置
 execute if entity @a[scores={Azr_wave=0..9}] run scoreboard players set chapter Azr_system 1
-execute if entity @a[scores={Azr_wave=10..24}] run scoreboard players set chapter Azr_system 2
-execute if entity @a[scores={Azr_wave=25..35}] run scoreboard players set chapter Azr_system 3
+execute if entity @a[scores={Azr_wave=10..23}] run scoreboard players set chapter Azr_system 2
+execute if entity @a[scores={Azr_wave=24..35}] run scoreboard players set chapter Azr_system 3
 execute if entity @a[scores={Azr_wave=36..}] run scoreboard players set chapter Azr_system 4
 
 #消除蜘蛛占位
