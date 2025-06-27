@@ -31,7 +31,7 @@ function skyblock:azr/items/revival_star
 
 item replace entity @s inventory.0 with stick 16
 item replace entity @s inventory.1 with flint 16
-item replace entity @s inventory.2 with rotten_fles 24
+item replace entity @s inventory.2 with rotten_flesh 24
 item replace entity @s inventory.3 with bone[custom_name='{"text":"硬骨","italic":false}',custom_data={hard_bone:1b},custom_model_data={floats:[100001.0]}] 10
 item replace entity @s inventory.4 with string 10
 item replace entity @s inventory.5 with black_dye[custom_name='{"text":"虫骸","italic":false,"color":"white"}',custom_data={insect_remaining:1b},custom_model_data={floats:[100001.0]}] 8
