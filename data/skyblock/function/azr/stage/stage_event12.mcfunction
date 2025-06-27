@@ -24,6 +24,7 @@ execute if score stageSeconds Azr_system matches 2 run summon bat -79764 45 -227
 execute if score stageSeconds Azr_system matches 2 run summon bat -79764 45 -227 {PersistenceRequired:1b,Tags:["AzrielMob","AzrielDecMob"]}
 execute if score stageSeconds Azr_system matches 2 run summon bat -79764 45 -227 {PersistenceRequired:1b,Tags:["AzrielMob","AzrielDecMob"]}
 execute if score stageSeconds Azr_system matches 2 run fill -79774 39 -345 -79772 41 -345 minecraft:pointed_dripstone[vertical_direction=up]
+execute if score stageSeconds Azr_system matches 2 run team join AzrPlayer @e[tag=AzrielDecMob]
 
 execute if score stageSeconds Azr_system matches 11.. as @a[tag=azrPlayer,tag=!AzrielEvent3761S] at @s at @n[tag=AzrielEvent3761,distance=0..3.5] run playsound entity.piglin.ambient master @a[tag=azrPlayer,distance=0..3.5] ~ ~ ~ 2 0.9
 execute if score stageSeconds Azr_system matches 11.. as @a[tag=azrPlayer,tag=!AzrielEvent3761S] at @s if entity @n[tag=AzrielEvent3761,distance=0..3.5] run tellraw @s {"text":"猪灵居民：","color":"aqua"}
