@@ -42,6 +42,7 @@ execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system 
 #第四关-BOSS1 9
 execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 9 run function skyblock:azr/stage/stage_event1
 #BOSS1 10
+    # azr/main.mcfunction
 #BOSS1-第五关 11
 execute if score stage Azr_system matches 11 run scoreboard players set stageSeconds Azr_system 0
 #第五关 12..13
@@ -65,6 +66,7 @@ execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system 
 #第八关-BOSS2（EVENT3) 21-22
 execute if score stage Azr_system matches 21..22 run function skyblock:azr/stage/stage_event3
 #BOSS2 23-24
+    # azr/main.mcfunction
 #BOSS2-第九关 25
 execute if score stage Azr_system matches 25 run function skyblock:azr/stage/stage_event4
 #第九关 26
@@ -92,6 +94,33 @@ execute if score stage Azr_system matches 43 run function skyblock:azr/stage/sta
 execute if score stage Azr_system matches 43 as @e[tag=!AzrielExtreme,tag=AzrielBossB,limit=1,x=-79900,y=130,z=0,distance=0..1300] at @s run function skyblock:azr/stage/stage_boss3
 execute if score stage Azr_system matches 43 as @e[tag=AzrielExtreme,tag=AzrielBossB,limit=1,x=-79900,y=130,z=0,distance=0..1300] at @s run function skyblock:azr/stage/stage_boss3_ex
 
+# 第四章，由于结构复杂采用另一种方式记录
+    # event12 44
+    execute if score stage Azr_system matches 44 run function skyblock:azr/stage/stage_event12
+    # 第13关 51
+    execute if score stage Azr_system matches 51 run function skyblock:azr/stage/stage13
+    # event13 52..54(55)56..58
+    execute if score stage Azr_system matches 52..54 run function skyblock:azr/stage/stage_event13
+    execute if score stage Azr_system matches 56..58 run function skyblock:azr/stage/stage_event13
+        # event14 53..55
+        execute if score stage Azr_system matches 53..55 run function skyblock:azr/stage/stage_event14
+            # 第14关 55
+            execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 55 run function skyblock:azr/stage/stage14
+        # event15 56..58
+            execute if score stage Azr_system matches 56..58 run function skyblock:azr/stage/stage_event15
+            # 第15关 57
+            execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 57 run function skyblock:azr/stage/stage15
+    # event16 59
+    execute if score stage Azr_system matches 59 run function skyblock:azr/stage/stage_event16
+    # event17 60..62
+    execute if score stage Azr_system matches 60..62 run function skyblock:azr/stage/stage_event17
+        # 第16关 60
+        execute if score stage Azr_system matches 60 run function skyblock:azr/stage/stage16
+        # event18 61
+        execute if score stage Azr_system matches 61 run function skyblock:azr/stage/stage_event18
+        # boss4 62
+            # azr/main.mcfunction
+
 #execute if entity @s[scores={Azr_Progress=44}] run function skyblock:azr/azrielsmidgarden_stage_event12
 #execute if entity @s[scores={Azr_Progress=51}] run function skyblock:azr/azrielsmidgarden_stage_13
 #execute if entity @s[scores={Azr_Progress=52..54}] run function skyblock:azr/azrielsmidgarden_stage_event13
@@ -111,20 +140,23 @@ execute if score stage Azr_system matches 43 as @e[tag=AzrielExtreme,tag=AzrielB
 #execute if entity @s[tag=!Azr_Halt,scores={Azr_Progress=52..70}] run function skyblock:azr/ingame_azrielsmidgarden_corex4_stage_ch4
 #execute if entity @s[tag=!Azr_Halt,scores={Azr_Progress=73..99}] run function skyblock:azr/ingame_azrielsmidgarden_corex4_stage_ch4
 
-#奖励关 Stage Diffident 301
-execute if score stage Azr_system matches 301 run function skyblock:azr/stage/stage_diffident
-#奖励关 Stage Cerement 30
-execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 30 run function skyblock:azr/stage/stage_cerement
-#奖励关 Stage Entertain 31
-execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 31 run function skyblock:azr/stage/stage_entertain
-#奖励关 Stage Vestige 240
-execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 240 run function skyblock:azr/stage/stage_vestige
-#奖励关 Stage Suspension 34
-execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 34 run function skyblock:azr/stage/stage_suspension
-#奖励关 Stage Appetence 39
-execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 39 run function skyblock:azr/stage/stage_appetence
-#奖励关 Stage Breakout 45
-execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 45 run function skyblock:azr/stage/stage_breakout
+# 奖励关
+    # Diffident 301
+    execute if score stage Azr_system matches 301 run function skyblock:azr/stage/stage_diffident
+    # Cerement 30
+    execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 30 run function skyblock:azr/stage/stage_cerement
+    # Entertain 31
+    execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 31 run function skyblock:azr/stage/stage_entertain
+    # Vestige 240
+    execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 240 run function skyblock:azr/stage/stage_vestige
+    # Suspension 34
+    execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 34 run function skyblock:azr/stage/stage_suspension
+    # Appetence 39
+    execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 39 run function skyblock:azr/stage/stage_appetence
+    # Breakout 45
+    execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 45 run function skyblock:azr/stage/stage_breakout
+    # Stage Object
+    execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 53 run function skyblock:azr/stage/stage_object
 
 #章节设置
 execute if entity @a[scores={Azr_wave=0..9}] run scoreboard players set chapter Azr_system 1

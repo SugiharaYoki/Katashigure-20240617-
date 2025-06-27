@@ -86,6 +86,7 @@ team join AzrPlayer @e[tag=AzrielFriendly]
 
 #在部分关卡的的四倍速走秒
 execute if score isStarted Azr_system matches 1 if score stage Azr_system matches 34..45 if score gametick Azr_system matches 5.. run function skyblock:azr/core
+execute if score isStarted Azr_system matches 1 if score stage Azr_system matches 51..61 if score gametick Azr_system matches 5.. run function skyblock:azr/core
 execute if score isStarted Azr_system matches 1 if score gametick Azr_system matches 20.. run function skyblock:azr/core
 execute if score isStarted Azr_system matches 1 if score gametick_static_5s Azr_system matches 100.. run function skyblock:azr/timer_static_5s
 #使用了tickTimer的关卡在这里处理
@@ -101,6 +102,8 @@ execute if score isStarted Azr_system matches 1 if score gametick_static_5s Azr_
     execute if score isStarted Azr_system matches 1 if score stage Azr_system matches 10 run function skyblock:azr/stage/stage_boss1
     #BOSS2 code:[23,24]
     execute if score isStarted Azr_system matches 1 if score stage Azr_system matches 23..24 run function skyblock:azr/stage/stage_boss2
+    #BOSS4 Code:62
+    execute if score stage Azr_system matches 62 run function skyblock:azr/stage/stage18
 
 #重置判定 - 游戏已开始但没有玩家
 execute if score isStarted Azr_system matches 1 if entity @a[x=-79931,y=100,z=0,distance=..10000,gamemode=!spectator] unless entity @a[tag=azrPlayer] run function skyblock:azr/endgame
