@@ -1,0 +1,1 @@
+item replace entity @s armor.head with chainmail_helmet[custom_data={chainmail_helmet_normal:1b},custom_model_data={floats:[100001.0]}]

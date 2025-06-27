@@ -1,0 +1,1 @@
+item replace entity @s armor.feet with chainmail_boots[custom_data={chainmail_boots_normal:1b},custom_model_data={floats:[100004.0]}]

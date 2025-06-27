@@ -26,3 +26,5 @@
     fill -79889 38 73 -79891 42 73 anvil
     # trial button
     setblock -79888 39 67 air
+    # -> boss2 door
+    fill -79891 38 45 -79889 40 45 air

@@ -26,16 +26,16 @@ function skyblock:azr/items/revival_star
 function skyblock:azr/items/revival_star
 function skyblock:azr/items/revival_star
 
-item replace entity @s inventory.9 with stick 6
-item replace entity @s inventory.10 with flint 6
-item replace entity @s inventory.11 with rotten_flesh 6
-item replace entity @s inventory.12 with bone[custom_name='{"text":"硬骨","italic":false}',custom_data={hard_bone:1b},custom_model_data={floats:[100001.0]}] 6
-item replace entity @s inventory.13 with iron_nugget[custom_name='{"text":"盾牌碎片","italic":false,"color":"white"}',custom_data={shield_shard:1b},custom_model_data={floats:[100001.0]}] 8
-item replace entity @s inventory.14 with black_dye[custom_name='{"text":"虫骸","italic":false,"color":"white"}',custom_data={insect_remaining:1b},custom_model_data={floats:[100001.0]}] 6
-item replace entity @s inventory.15 with ghast_tear[custom_name='{"text":"光明精华","italic":false,"color":"blue"}',custom_data={light_essence:1b},custom_model_data={floats:[100001.0]}] 5
-item replace entity @s inventory.16 with paper[custom_name='{"text":"圣殿信条","color":"blue","italic":false}',custom_data={sanct_credo:1b},custom_model_data={floats:[100001.0]}] 5
-item replace entity @s inventory.17 with rabbit_foot[custom_name='{"text":"尸爪","italic":false,"color":"white"}',custom_data={claw:1b},custom_model_data={floats:[100001.0]}] 5
-item replace entity @s inventory.18 with honeycomb 4
+item replace entity @s inventory.0 with stick 6
+item replace entity @s inventory.1 with flint 6
+item replace entity @s inventory.2 with rotten_flesh 6
+item replace entity @s inventory.3 with bone[custom_name='{"text":"硬骨","italic":false}',custom_data={hard_bone:1b},custom_model_data={floats:[100001.0]}] 6
+item replace entity @s inventory.4 with iron_nugget[custom_name='{"text":"盾牌碎片","italic":false,"color":"white"}',custom_data={shield_shard:1b},custom_model_data={floats:[100001.0]}] 8
+item replace entity @s inventory.5 with black_dye[custom_name='{"text":"虫骸","italic":false,"color":"white"}',custom_data={insect_remaining:1b},custom_model_data={floats:[100001.0]}] 6
+item replace entity @s inventory.6 with ghast_tear[custom_name='{"text":"光明精华","italic":false,"color":"blue"}',custom_data={light_essence:1b},custom_model_data={floats:[100001.0]}] 5
+item replace entity @s inventory.7 with paper[custom_name='{"text":"圣殿信条","color":"blue","italic":false}',custom_data={sanct_credo:1b},custom_model_data={floats:[100001.0]}] 5
+item replace entity @s inventory.8 with rabbit_foot[custom_name='{"text":"尸爪","italic":false,"color":"white"}',custom_data={claw:1b},custom_model_data={floats:[100001.0]}] 5
+item replace entity @s inventory.9 with honeycomb 4
 
 # show texts
 tellraw @s {"text":"游戏再续……","color":"green"}

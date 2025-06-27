@@ -15,16 +15,16 @@ scoreboard players set @s Azr_wave 10
 clear @s
 function skyblock:azr/items/stone_sword_normal
 function skyblock:azr/items/stone_axe_normal
-function skyblock:azr/items/chainmail_helmet_normal
-function skyblock:azr/items/chainmail_chestplate_normal
+function skyblock:azr/items/chainmail_helmet_normal_replace
+function skyblock:azr/items/chainmail_chestplate_normal_replace
 give @s bread 8
 function skyblock:azr/items/revival_star
-item replace entity @s inventory.9 with stick 3
-item replace entity @s inventory.10 with flint 3
-item replace entity @s inventory.11 with rotten_flesh 3
-item replace entity @s inventory.12 with bone[custom_name='{"text":"硬骨","italic":false}',custom_data={hard_bone:1b},custom_model_data={floats:[100001.0]}] 3
-item replace entity @s inventory.13 with iron_nugget[custom_name='{"text":"盾牌碎片","italic":false,"color":"white"}',custom_data={shield_shard:1b},custom_model_data={floats:[100001.0]}] 2
-item replace entity @s inventory.14 with black_dye[custom_name='{"text":"虫骸","italic":false,"color":"white"}',custom_data={insect_remaining:1b},custom_model_data={floats:[100001.0]}] 2
+item replace entity @s inventory.0 with stick 3
+item replace entity @s inventory.1 with flint 3
+item replace entity @s inventory.2 with rotten_flesh 3
+item replace entity @s inventory.3 with bone[custom_name='{"text":"硬骨","italic":false}',custom_data={hard_bone:1b},custom_model_data={floats:[100001.0]}] 3
+item replace entity @s inventory.4 with iron_nugget[custom_name='{"text":"盾牌碎片","italic":false,"color":"white"}',custom_data={shield_shard:1b},custom_model_data={floats:[100001.0]}] 2
+item replace entity @s inventory.5 with black_dye[custom_name='{"text":"虫骸","italic":false,"color":"white"}',custom_data={insect_remaining:1b},custom_model_data={floats:[100001.0]}] 2
 
 # show texts
 tellraw @s {"text":"游戏再续……","color":"green"}
