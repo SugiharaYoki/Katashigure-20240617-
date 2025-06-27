@@ -128,8 +128,8 @@ execute if score stageSeconds Azr_system matches 319 unless score $Doppel Azr_sy
 execute if score stageSeconds Azr_system matches 319 if score $Doppel Azr_system matches 1 run title @a[tag=azrPlayer] actionbar {"text":"Double Stage Annihilated","color":"green"}
 execute if score stageSeconds Azr_system matches 319 if score $Doppel Azr_system matches 1 run tag @a[tag=azrPlayer] add AZS_BoS09
 #execute if entity @e[tag=sc,limit=1,scores={stageSeconds=319},tag=Azr_Doppel] run give @a[tag=azrPlayer] end_crystal{display:{Name:"{\"text\":\"猝火核心\",\"italic\":false,\"color\":\"yellow\"}",Lore:["{\"text\":\"置于背包栏第4格且自身着火时\",\"color\":\"gray\",\"italic\":false}","{\"text\":\"攻击力+10% 移动速度+20%\",\"color\":\"dark_green\",\"italic\":false}"]}}
-execute if score stageSeconds Azr_system matches 319 run advancement grant @a[tag=azrPlayer] only skyblock:azr_stage13
-execute if score stageSeconds Azr_system matches 319 if score $Doppel Azr_system matches 1 run advancement grant @a[tag=azrPlayer] only skyblock:azr_stage_bonus_impersonate
+execute if score stageSeconds Azr_system matches 319 run advancement grant @a[tag=azrPlayer] only skyblock:azr/azr_stage13
+execute if score stageSeconds Azr_system matches 319 if score $Doppel Azr_system matches 1 run advancement grant @a[tag=azrPlayer] only skyblock:azr/azr_stage_bonus_impersonate
 execute if score stageSeconds Azr_system matches 319 run playsound ambient.crimson_forest.loop ambient @a[tag=azrPlayer] -78000 100 0 1000
 execute if score stageSeconds Azr_system matches 319 run playsound minecraft:ambient.nether_wastes.mood ambient @a[tag=azrPlayer] -78000 100 0 1000 0.3
 execute if score stageSeconds Azr_system matches 319 run playsound ambient.crimson_forest.additions ambient @a[tag=azrPlayer] -78000 100 0 1000

@@ -61,7 +61,7 @@ scoreboard players set stopSeconds Azr_system 0
 scoreboard players set chapter Azr_system 1
 scoreboard players set gametick Azr_system 0
 scoreboard players set gametick_static_5s Azr_system 0
-scoreboard players set life_vitae_available Azr_system 1
+#scoreboard players set life_vitae_available Azr_system 1
 #创建小队
 team add AzrBossA
 team modify AzrBossA friendlyFire false
