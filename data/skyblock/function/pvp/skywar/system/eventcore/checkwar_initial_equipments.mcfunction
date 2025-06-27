@@ -89,7 +89,21 @@ give @s written_book[written_book_content={pages:[ \
 '[["",{"text":"主题：辉芜戈壁","color":"dark_aqua","bold":true}, \
 "\\n外圈地图 · 普通\\n\\n", \
 {"text":"初始祝福：","bold":true},"防御力 +2\\n\\n", \
-{"text":"嗅探兽奖励：","bold":true},"防御力 +2"]]' \
+{"text":"嗅探兽奖励：","bold":true},"防御力 +2"]]', \
+'[["",{"text":"主题：炎山海滨","color":"dark_aqua","bold":true}, \
+"\\n内圈地图 · 普通\\n\\n", \
+{"text":"初始祝福：","bold":true},{"text":"无","bold":false,"color":"gray"},"\\n\\n", \
+{"text":"嗅探兽奖励：","bold":true},"抗火效果 5 分钟"]]', \
+'[["",{"text":"主题：风蚀沙丘","color":"dark_aqua","bold":true}, \
+"\\n内圈地图 · 普通\\n\\n", \
+{"text":"初始祝福：","bold":true},{"text":"无","bold":false,"color":"gray"},"\\n\\n", \
+{"text":"嗅探兽奖励：","bold":true},"获得 1 下界合金镐与 1 下界合金锹"]]', \
+'[["",{"text":"主题：钢铁秘间","color":"dark_aqua","bold":true}, \
+"\\n内圈地图 · 普通\\n\\n", \
+{"text":"初始祝福：","bold":true},{"text":"无","bold":false,"color":"gray"},"\\n\\n", \
+{"text":"嗅探兽奖励：","bold":true},"攻击速度 +0.2"]]', \
+'[["",{"text":"主题：终末之地","color":"dark_aqua","bold":true}, \
+"\\n内圈地图 · 普通\\n\\n", \
+{"text":"初始祝福：","bold":true},{"text":"无","bold":false,"color":"gray"},"\\n\\n", \
+{"text":"嗅探兽奖励：","bold":true},"获得 3 金苹果"]]' \
 ],title:"『棋盘落子详解』",author:"“方时雨城”小游戏服"}]
-
-
