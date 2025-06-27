@@ -42,7 +42,8 @@ execute as @s at @s if biome ~ ~ ~ minecraft:eroded_badlands run attribute @s mi
 
 
 give @s written_book[written_book_content={pages:[ \
-'[["",{"text":"主题：铃兰遗迹","color":"dark_aqua","bold":true},"\\n\\n", \
+'[["",{"text":"主题：铃兰遗迹","color":"dark_aqua","bold":true}, \
+"外圈地图 · 普通\\n\\n", \
 {"text":"初始祝福：","bold":true},"获得 15 本书\\n\\n", \
 {"text":"嗅探兽奖励：","bold":true},"获得 1 附魔台与 20 青金石"]]', \
 '[["",{"text":"主题：红木深林","color":"dark_aqua","bold":true},"\\n\\n", \
