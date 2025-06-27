@@ -236,6 +236,8 @@ execute if score sc TimeRemainUnsee matches 690 if score sc Map_Code matches 11 
 execute if score sc TimeRemainUnsee matches 690 if score sc Map_Code matches 11 run execute unless entity @n[tag=sc,tag=Skyblock_NoWorldborder] run worldborder set 13 1200
 
 execute if score sc TimeRemainUnsee matches 779..870 if score sc Map_Code matches 11 run function skyblock:pvp/skywar/system/eventcore/checkwar_sniffer
+execute if score sc TimeRemainUnsee matches 579..670 if score sc Map_Code matches 11 run function skyblock:pvp/skywar/system/eventcore/checkwar_sniffer2
+execute if score sc TimeRemainUnsee matches 279..370 if score sc Map_Code matches 11 run function skyblock:pvp/skywar/system/eventcore/checkwar_sniffer3
 
 execute if score sc TimeRemainUnsee matches 540 if score sc Map_Code matches 11 run title @a[tag=PVP_see] times 0 60 60
 execute if score sc TimeRemainUnsee matches 540 if score sc Map_Code matches 11 run title @a[tag=PVP_see] title {"text":"寂然流水古松间","color":"yellow"}

@@ -42,40 +42,68 @@ execute as @s at @s if biome ~ ~ ~ minecraft:eroded_badlands run attribute @s mi
 
 
 give @s written_book[written_book_content={pages:[ \
-'[["",{"text":"主题：铃兰遗迹","color":"dark_aqua","bold":true},"\\n\\n", \
+'[["",{"text":"主题：铃兰遗迹","color":"dark_aqua","bold":true}, \
+"\\n外圈地图 · 普通\\n\\n", \
 {"text":"初始祝福：","bold":true},"获得 15 本书\\n\\n", \
 {"text":"嗅探兽奖励：","bold":true},"获得 1 附魔台与 20 青金石"]]', \
-'[["",{"text":"主题：红木深林","color":"dark_aqua","bold":true},"\\n\\n", \
+'[["",{"text":"主题：红木深林","color":"dark_aqua","bold":true}, \
+"\\n外圈地图 · 普通\\n\\n", \
 {"text":"初始祝福：","bold":true},"获得 15 支箭矢\\n\\n", \
 {"text":"嗅探兽奖励：","bold":true},"获得 20 支箭矢"]]', \
-'[["",{"text":"主题：繁花湿地","color":"dark_aqua","bold":true},"\\n\\n", \
+'[["",{"text":"主题：繁花湿地","color":"dark_aqua","bold":true}, \
+"\\n外圈地图 · 普通\\n\\n", \
 {"text":"初始祝福：","bold":true},"移动效率 +30%\\n\\n", \
 {"text":"嗅探兽奖励：","bold":true},"获得 5 金萝卜"]]', \
-'[["",{"text":"主题：樱落草场","color":"dark_aqua","bold":true},"\\n\\n", \
+'[["",{"text":"主题：樱落草场","color":"dark_aqua","bold":true}, \
+"\\n外圈地图 · 普通\\n\\n", \
 {"text":"初始祝福：","bold":true},"攻击速度 +0.1\\n\\n", \
 {"text":"嗅探兽奖励：","bold":true},"获得 6 钻石"]]', \
-'[["",{"text":"主题：风啸岩山","color":"dark_aqua","bold":true},"\\n\\n", \
+'[["",{"text":"主题：风啸岩山","color":"dark_aqua","bold":true}, \
+"\\n外圈地图 · 普通\\n\\n", \
 {"text":"初始祝福：","bold":true},"生命上限 +4\\n\\n", \
 {"text":"嗅探兽奖励：","bold":true},"生命上限 +4"]]', \
-'[["",{"text":"主题：绯红森林","color":"dark_aqua","bold":true},"\\n\\n", \
+'[["",{"text":"主题：绯红森林","color":"dark_aqua","bold":true}, \
+"\\n外圈地图 · 普通\\n拥有内圈变体“英灵殿堂”\\n\\n", \
 {"text":"初始祝福：","bold":true},"攻击力 +0.5\\n\\n", \
 {"text":"嗅探兽奖励：","bold":true},"攻击力 +0.5"]]', \
-'[["",{"text":"主题：珊瑚礁石","color":"dark_aqua","bold":true},"\\n\\n", \
+'[["",{"text":"主题：珊瑚礁石","color":"dark_aqua","bold":true}, \
+"\\n外圈地图 · 普通\\n拥有内圈变体“水下遗迹”\\n\\n", \
 {"text":"初始祝福：","bold":true},"水下挖掘速度 +50%\\n\\n", \
 {"text":"嗅探兽奖励：","bold":true},"水下挖掘速度 +50%"]]', \
-'[["",{"text":"主题：丛林流域","color":"dark_aqua","bold":true},"\\n\\n", \
+'[["",{"text":"主题：丛林流域","color":"dark_aqua","bold":true}, \
+"\\n外圈地图 · 普通\\n拥有内圈变体“丛林书室”\\n\\n", \
 {"text":"初始祝福：","bold":true},"方块交互距离 +0.5\\n\\n", \
 {"text":"嗅探兽奖励：","bold":true},"方块交互距离 +0.5"]]', \
-'[["",{"text":"主题：皑雪平原","color":"dark_aqua","bold":true},"\\n\\n", \
+'[["",{"text":"主题：皑雪平原","color":"dark_aqua","bold":true}, \
+"\\n外圈地图 · 普通\\n\\n", \
 {"text":"初始祝福：","bold":true},"护甲韧性 +2\\n\\n", \
 {"text":"嗅探兽奖励：","bold":true},"护甲韧性 +2"]]', \
-'[["",{"text":"主题：菌丝晶坑","color":"dark_aqua","bold":true},"\\n\\n", \
+'[["",{"text":"主题：菌丝晶坑","color":"dark_aqua","bold":true}, \
+"\\n外圈地图 · 普通\\n\\n", \
 {"text":"初始祝福：","bold":true},"攻击距离 +0.5\\n\\n", \
 {"text":"嗅探兽奖励：","bold":true},"攻击距离 +0.5"]]', \
-'[["",{"text":"主题：滴水石洞","color":"dark_aqua","bold":true},"\\n\\n", \
+'[["",{"text":"主题：滴水石洞","color":"dark_aqua","bold":true}, \
+"\\n外圈地图 · 普通\\n\\n", \
 {"text":"初始祝福：","bold":true},"挖掘效率 +2\\n\\n", \
 {"text":"嗅探兽奖励：","bold":true},"挖掘效率 +2"]]', \
-'[["",{"text":"主题：辉芜戈壁","color":"dark_aqua","bold":true},"\\n\\n", \
+'[["",{"text":"主题：辉芜戈壁","color":"dark_aqua","bold":true}, \
+"\\n外圈地图 · 普通\\n\\n", \
 {"text":"初始祝福：","bold":true},"防御力 +2\\n\\n", \
-{"text":"嗅探兽奖励：","bold":true},"防御力 +2"]]' \
+{"text":"嗅探兽奖励：","bold":true},"防御力 +2"]]', \
+'[["",{"text":"主题：炎山海滨","color":"red","bold":true}, \
+"\\n内圈地图 · 普通\\n\\n", \
+{"text":"初始祝福：","bold":true},{"text":"无","bold":false,"color":"gray"},"\\n\\n", \
+{"text":"嗅探兽奖励：","bold":true},"抗火效果 5 分钟"]]', \
+'[["",{"text":"主题：风蚀沙丘","color":"red","bold":true}, \
+"\\n内圈地图 · 普通\\n\\n", \
+{"text":"初始祝福：","bold":true},{"text":"无","bold":false,"color":"gray"},"\\n\\n", \
+{"text":"嗅探兽奖励：","bold":true},"获得 1 下界合金镐与 1 下界合金锹"]]', \
+'[["",{"text":"主题：钢铁秘间","color":"red","bold":true}, \
+"\\n内圈地图 · 普通\\n\\n", \
+{"text":"初始祝福：","bold":true},{"text":"无","bold":false,"color":"gray"},"\\n\\n", \
+{"text":"嗅探兽奖励：","bold":true},"攻击速度 +0.2"]]', \
+'[["",{"text":"主题：终末之地","color":"red","bold":true}, \
+"\\n内圈地图 · 普通\\n\\n", \
+{"text":"初始祝福：","bold":true},{"text":"无","bold":false,"color":"gray"},"\\n\\n", \
+{"text":"嗅探兽奖励：","bold":true},"获得 3 金苹果"]]' \
 ],title:"『棋盘落子详解』",author:"“方时雨城”小游戏服"}]

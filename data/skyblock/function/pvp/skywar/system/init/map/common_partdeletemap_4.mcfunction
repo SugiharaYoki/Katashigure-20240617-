@@ -1,184 +1,1129 @@
-fill 50395 0 50395 50500 1 50500 air
-fill 50395 2 50395 50500 3 50500 air
-fill 50395 4 50395 50500 5 50500 air
-fill 50395 6 50395 50500 7 50500 air
-fill 50395 8 50395 50500 9 50500 air
-fill 50395 10 50395 50500 11 50500 air
-fill 50395 12 50395 50500 13 50500 air
-fill 50395 14 50395 50500 15 50500 air
-fill 50395 16 50395 50500 17 50500 air
-fill 50395 18 50395 50500 19 50500 air
-fill 50395 20 50395 50500 21 50500 air
-fill 50395 22 50395 50500 23 50500 air
-fill 50395 24 50395 50500 25 50500 air
-fill 50395 26 50395 50500 27 50500 air
-fill 50395 28 50395 50500 29 50500 air
-fill 50395 30 50395 50500 31 50500 air
-fill 50395 32 50395 50500 33 50500 air
-fill 50395 34 50395 50500 35 50500 air
-fill 50395 36 50395 50500 37 50500 air
-fill 50395 38 50395 50500 39 50500 air
-fill 50395 40 50395 50500 41 50500 air
-fill 50395 42 50395 50500 43 50500 air
-fill 50395 44 50395 50500 45 50500 air
-fill 50395 46 50395 50500 47 50500 air
-fill 50395 48 50395 50500 49 50500 air
-fill 50395 50 50395 50500 51 50500 air
-fill 50395 52 50395 50500 53 50500 air
-fill 50395 54 50395 50500 55 50500 air
-fill 50395 56 50395 50500 57 50500 air
-fill 50395 58 50395 50500 59 50500 air
-fill 50395 60 50395 50500 61 50500 air
-fill 50395 62 50395 50500 63 50500 air
-fill 50395 64 50395 50500 65 50500 air
-fill 50395 66 50395 50500 67 50500 air
-fill 50395 68 50395 50500 69 50500 air
-fill 50395 70 50395 50500 71 50500 air
-fill 50395 72 50395 50500 73 50500 air
-fill 50395 74 50395 50500 75 50500 air
-fill 50395 76 50395 50500 77 50500 air
-fill 50395 78 50395 50500 79 50500 air
-fill 50395 80 50395 50500 81 50500 air
-fill 50395 82 50395 50500 83 50500 air
-fill 50395 84 50395 50500 85 50500 air
-fill 50395 86 50395 50500 87 50500 air
-#
-fill 50500 0 50395 50600 1 50500 air
-fill 50500 2 50395 50600 3 50500 air
-fill 50500 4 50395 50600 5 50500 air
-fill 50500 6 50395 50600 7 50500 air
-fill 50500 8 50395 50600 9 50500 air
-fill 50500 10 50395 50600 11 50500 air
-fill 50500 12 50395 50600 13 50500 air
-fill 50500 14 50395 50600 15 50500 air
-fill 50500 16 50395 50600 17 50500 air
-fill 50500 18 50395 50600 19 50500 air
-fill 50500 20 50395 50600 21 50500 air
-fill 50500 22 50395 50600 23 50500 air
-fill 50500 24 50395 50600 25 50500 air
-fill 50500 26 50395 50600 27 50500 air
-fill 50500 28 50395 50600 29 50500 air
-fill 50500 30 50395 50600 31 50500 air
-fill 50500 32 50395 50600 33 50500 air
-fill 50500 34 50395 50600 35 50500 air
-fill 50500 36 50395 50600 37 50500 air
-fill 50500 38 50395 50600 39 50500 air
-fill 50500 40 50395 50600 41 50500 air
-fill 50500 42 50395 50600 43 50500 air
-fill 50500 44 50395 50600 45 50500 air
-fill 50500 46 50395 50600 47 50500 air
-fill 50500 48 50395 50600 49 50500 air
-fill 50500 50 50395 50600 51 50500 air
-fill 50500 52 50395 50600 53 50500 air
-fill 50500 54 50395 50600 55 50500 air
-fill 50500 56 50395 50600 57 50500 air
-fill 50500 58 50395 50600 59 50500 air
-fill 50500 60 50395 50600 61 50500 air
-fill 50500 62 50395 50600 63 50500 air
-fill 50500 64 50395 50600 65 50500 air
-fill 50500 66 50395 50600 67 50500 air
-fill 50500 68 50395 50600 69 50500 air
-fill 50500 70 50395 50600 71 50500 air
-fill 50500 72 50395 50600 73 50500 air
-fill 50500 74 50395 50600 75 50500 air
-fill 50500 76 50395 50600 77 50500 air
-fill 50500 78 50395 50600 79 50500 air
-fill 50500 80 50395 50600 81 50500 air
-fill 50500 82 50395 50600 83 50500 air
-fill 50500 84 50395 50600 85 50500 air
-fill 50500 86 50395 50600 87 50500 air
-#
-fill 50500 0 50500 50600 1 50600 air
-fill 50500 2 50500 50600 3 50600 air
-fill 50500 4 50500 50600 5 50600 air
-fill 50500 6 50500 50600 7 50600 air
-fill 50500 8 50500 50600 9 50600 air
-fill 50500 10 50500 50600 11 50600 air
-fill 50500 12 50500 50600 13 50600 air
-fill 50500 14 50500 50600 15 50600 air
-fill 50500 16 50500 50600 17 50600 air
-fill 50500 18 50500 50600 19 50600 air
-fill 50500 20 50500 50600 21 50600 air
-fill 50500 22 50500 50600 23 50600 air
-fill 50500 24 50500 50600 25 50600 air
-fill 50500 26 50500 50600 27 50600 air
-fill 50500 28 50500 50600 29 50600 air
-fill 50500 30 50500 50600 31 50600 air
-fill 50500 32 50500 50600 33 50600 air
-fill 50500 34 50500 50600 35 50600 air
-fill 50500 36 50500 50600 37 50600 air
-fill 50500 38 50500 50600 39 50600 air
-fill 50500 40 50500 50600 41 50600 air
-fill 50500 42 50500 50600 43 50600 air
-fill 50500 44 50500 50600 45 50600 air
-fill 50500 46 50500 50600 47 50600 air
-fill 50500 48 50500 50600 49 50600 air
-fill 50500 50 50500 50600 51 50600 air
-fill 50500 52 50500 50600 53 50600 air
-fill 50500 54 50500 50600 55 50600 air
-fill 50500 56 50500 50600 57 50600 air
-fill 50500 58 50500 50600 59 50600 air
-fill 50500 60 50500 50600 61 50600 air
-fill 50500 62 50500 50600 63 50600 air
-fill 50500 64 50500 50600 65 50600 air
-fill 50500 66 50500 50600 67 50600 air
-fill 50500 68 50500 50600 69 50600 air
-fill 50500 70 50500 50600 71 50600 air
-fill 50500 72 50500 50600 73 50600 air
-fill 50500 74 50500 50600 75 50600 air
-fill 50500 76 50500 50600 77 50600 air
-fill 50500 78 50500 50600 79 50600 air
-fill 50500 80 50500 50600 81 50600 air
-fill 50500 82 50500 50600 83 50600 air
-fill 50500 84 50500 50600 85 50600 air
-fill 50500 86 50500 50600 87 50600 air
-#
-fill 50395 0 50500 50500 1 50600 air
-fill 50395 2 50500 50500 3 50600 air
-fill 50395 4 50500 50500 5 50600 air
-fill 50395 6 50500 50500 7 50600 air
-fill 50395 8 50500 50500 9 50600 air
-fill 50395 10 50500 50500 11 50600 air
-fill 50395 12 50500 50500 13 50600 air
-fill 50395 14 50500 50500 15 50600 air
-fill 50395 16 50500 50500 17 50600 air
-fill 50395 18 50500 50500 19 50600 air
-fill 50395 20 50500 50500 21 50600 air
-fill 50395 22 50500 50500 23 50600 air
-fill 50395 24 50500 50500 25 50600 air
-fill 50395 26 50500 50500 27 50600 air
-fill 50395 28 50500 50500 29 50600 air
-fill 50395 30 50500 50500 31 50600 air
-fill 50395 32 50500 50500 33 50600 air
-fill 50395 34 50500 50500 35 50600 air
-fill 50395 36 50500 50500 37 50600 air
-fill 50395 38 50500 50500 39 50600 air
-fill 50395 40 50500 50500 41 50600 air
-fill 50395 42 50500 50500 43 50600 air
-fill 50395 44 50500 50500 45 50600 air
-fill 50395 46 50500 50500 47 50600 air
-fill 50395 48 50500 50500 49 50600 air
-fill 50395 50 50500 50500 51 50600 air
-fill 50395 52 50500 50500 53 50600 air
-fill 50395 54 50500 50500 55 50600 air
-fill 50395 56 50500 50500 57 50600 air
-fill 50395 58 50500 50500 59 50600 air
-fill 50395 60 50500 50500 61 50600 air
-fill 50395 62 50500 50500 63 50600 air
-fill 50395 64 50500 50500 65 50600 air
-fill 50395 66 50500 50500 67 50600 air
-fill 50395 68 50500 50500 69 50600 air
-fill 50395 70 50500 50500 71 50600 air
-fill 50395 72 50500 50500 73 50600 air
-fill 50395 74 50500 50500 75 50600 air
-fill 50395 76 50500 50500 77 50600 air
-fill 50395 78 50500 50500 79 50600 air
-fill 50395 80 50500 50500 81 50600 air
-fill 50395 82 50500 50500 83 50600 air
-fill 50395 84 50500 50500 85 50600 air
-fill 50395 86 50500 50500 87 50600 air
-#Forceload关闭
-forceload remove 50390 50390 50600 50600
-forceload remove 50390 50600 50600 50800
-forceload remove 50600 50390 50800 50600
-forceload remove 50600 50600 50800 50800
+forceload add 3148 3148
+forceload add 3148 3151
+forceload add 3148 3154
+forceload add 3148 3157
+forceload add 3148 3159
+forceload add 3148 3162
+forceload add 3148 3165
+forceload add 3151 3148
+forceload add 3151 3151
+forceload add 3151 3154
+forceload add 3151 3157
+forceload add 3151 3159
+forceload add 3151 3162
+forceload add 3151 3165
+forceload add 3154 3148
+forceload add 3154 3151
+forceload add 3154 3154
+forceload add 3154 3157
+forceload add 3154 3159
+forceload add 3154 3162
+forceload add 3154 3165
+forceload add 3157 3148
+forceload add 3157 3151
+forceload add 3157 3154
+forceload add 3157 3157
+forceload add 3157 3159
+forceload add 3157 3162
+forceload add 3157 3165
+forceload add 3159 3148
+forceload add 3159 3151
+forceload add 3159 3154
+forceload add 3159 3157
+forceload add 3159 3159
+forceload add 3159 3162
+forceload add 3159 3165
+forceload add 3162 3148
+forceload add 3162 3151
+forceload add 3162 3154
+forceload add 3162 3157
+forceload add 3162 3159
+forceload add 3162 3162
+forceload add 3162 3165
+forceload add 3165 3148
+forceload add 3165 3151
+forceload add 3165 3154
+forceload add 3165 3157
+forceload add 3165 3159
+forceload add 3165 3162
+forceload add 3165 3165
+
+execute positioned 50380 -64 50380 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50380 -64 50380 run setblock ~ ~ ~ redstone_block
+execute positioned 50380 -64 50380 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50380 -64 50424 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50380 -64 50424 run setblock ~ ~ ~ redstone_block
+execute positioned 50380 -64 50424 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50380 -64 50468 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50380 -64 50468 run setblock ~ ~ ~ redstone_block
+execute positioned 50380 -64 50468 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50380 -64 50512 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50380 -64 50512 run setblock ~ ~ ~ redstone_block
+execute positioned 50380 -64 50512 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50380 -64 50556 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50380 -64 50556 run setblock ~ ~ ~ redstone_block
+execute positioned 50380 -64 50556 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50380 -64 50600 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50380 -64 50600 run setblock ~ ~ ~ redstone_block
+execute positioned 50380 -64 50600 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50380 -64 50644 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50380 -64 50644 run setblock ~ ~ ~ redstone_block
+execute positioned 50380 -64 50644 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50380 -20 50380 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50380 -20 50380 run setblock ~ ~ ~ redstone_block
+execute positioned 50380 -20 50380 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50380 -20 50424 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50380 -20 50424 run setblock ~ ~ ~ redstone_block
+execute positioned 50380 -20 50424 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50380 -20 50468 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50380 -20 50468 run setblock ~ ~ ~ redstone_block
+execute positioned 50380 -20 50468 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50380 -20 50512 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50380 -20 50512 run setblock ~ ~ ~ redstone_block
+execute positioned 50380 -20 50512 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50380 -20 50556 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50380 -20 50556 run setblock ~ ~ ~ redstone_block
+execute positioned 50380 -20 50556 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50380 -20 50600 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50380 -20 50600 run setblock ~ ~ ~ redstone_block
+execute positioned 50380 -20 50600 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50380 -20 50644 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50380 -20 50644 run setblock ~ ~ ~ redstone_block
+execute positioned 50380 -20 50644 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50380 24 50380 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50380 24 50380 run setblock ~ ~ ~ redstone_block
+execute positioned 50380 24 50380 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50380 24 50424 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50380 24 50424 run setblock ~ ~ ~ redstone_block
+execute positioned 50380 24 50424 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50380 24 50468 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50380 24 50468 run setblock ~ ~ ~ redstone_block
+execute positioned 50380 24 50468 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50380 24 50512 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50380 24 50512 run setblock ~ ~ ~ redstone_block
+execute positioned 50380 24 50512 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50380 24 50556 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50380 24 50556 run setblock ~ ~ ~ redstone_block
+execute positioned 50380 24 50556 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50380 24 50600 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50380 24 50600 run setblock ~ ~ ~ redstone_block
+execute positioned 50380 24 50600 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50380 24 50644 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50380 24 50644 run setblock ~ ~ ~ redstone_block
+execute positioned 50380 24 50644 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50380 68 50380 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50380 68 50380 run setblock ~ ~ ~ redstone_block
+execute positioned 50380 68 50380 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50380 68 50424 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50380 68 50424 run setblock ~ ~ ~ redstone_block
+execute positioned 50380 68 50424 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50380 68 50468 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50380 68 50468 run setblock ~ ~ ~ redstone_block
+execute positioned 50380 68 50468 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50380 68 50512 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50380 68 50512 run setblock ~ ~ ~ redstone_block
+execute positioned 50380 68 50512 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50380 68 50556 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50380 68 50556 run setblock ~ ~ ~ redstone_block
+execute positioned 50380 68 50556 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50380 68 50600 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50380 68 50600 run setblock ~ ~ ~ redstone_block
+execute positioned 50380 68 50600 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50380 68 50644 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50380 68 50644 run setblock ~ ~ ~ redstone_block
+execute positioned 50380 68 50644 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50380 112 50380 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50380 112 50380 run setblock ~ ~ ~ redstone_block
+execute positioned 50380 112 50380 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50380 112 50424 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50380 112 50424 run setblock ~ ~ ~ redstone_block
+execute positioned 50380 112 50424 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50380 112 50468 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50380 112 50468 run setblock ~ ~ ~ redstone_block
+execute positioned 50380 112 50468 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50380 112 50512 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50380 112 50512 run setblock ~ ~ ~ redstone_block
+execute positioned 50380 112 50512 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50380 112 50556 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50380 112 50556 run setblock ~ ~ ~ redstone_block
+execute positioned 50380 112 50556 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50380 112 50600 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50380 112 50600 run setblock ~ ~ ~ redstone_block
+execute positioned 50380 112 50600 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50380 112 50644 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50380 112 50644 run setblock ~ ~ ~ redstone_block
+execute positioned 50380 112 50644 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50380 156 50380 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50380 156 50380 run setblock ~ ~ ~ redstone_block
+execute positioned 50380 156 50380 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50380 156 50424 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50380 156 50424 run setblock ~ ~ ~ redstone_block
+execute positioned 50380 156 50424 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50380 156 50468 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50380 156 50468 run setblock ~ ~ ~ redstone_block
+execute positioned 50380 156 50468 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50380 156 50512 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50380 156 50512 run setblock ~ ~ ~ redstone_block
+execute positioned 50380 156 50512 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50380 156 50556 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50380 156 50556 run setblock ~ ~ ~ redstone_block
+execute positioned 50380 156 50556 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50380 156 50600 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50380 156 50600 run setblock ~ ~ ~ redstone_block
+execute positioned 50380 156 50600 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50380 156 50644 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50380 156 50644 run setblock ~ ~ ~ redstone_block
+execute positioned 50380 156 50644 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50380 200 50380 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50380 200 50380 run setblock ~ ~ ~ redstone_block
+execute positioned 50380 200 50380 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50380 200 50424 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50380 200 50424 run setblock ~ ~ ~ redstone_block
+execute positioned 50380 200 50424 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50380 200 50468 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50380 200 50468 run setblock ~ ~ ~ redstone_block
+execute positioned 50380 200 50468 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50380 200 50512 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50380 200 50512 run setblock ~ ~ ~ redstone_block
+execute positioned 50380 200 50512 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50380 200 50556 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50380 200 50556 run setblock ~ ~ ~ redstone_block
+execute positioned 50380 200 50556 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50380 200 50600 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50380 200 50600 run setblock ~ ~ ~ redstone_block
+execute positioned 50380 200 50600 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50380 200 50644 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50380 200 50644 run setblock ~ ~ ~ redstone_block
+execute positioned 50380 200 50644 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50424 -64 50380 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50424 -64 50380 run setblock ~ ~ ~ redstone_block
+execute positioned 50424 -64 50380 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50424 -64 50424 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50424 -64 50424 run setblock ~ ~ ~ redstone_block
+execute positioned 50424 -64 50424 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50424 -64 50468 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50424 -64 50468 run setblock ~ ~ ~ redstone_block
+execute positioned 50424 -64 50468 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50424 -64 50512 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50424 -64 50512 run setblock ~ ~ ~ redstone_block
+execute positioned 50424 -64 50512 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50424 -64 50556 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50424 -64 50556 run setblock ~ ~ ~ redstone_block
+execute positioned 50424 -64 50556 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50424 -64 50600 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50424 -64 50600 run setblock ~ ~ ~ redstone_block
+execute positioned 50424 -64 50600 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50424 -64 50644 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50424 -64 50644 run setblock ~ ~ ~ redstone_block
+execute positioned 50424 -64 50644 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50424 -20 50380 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50424 -20 50380 run setblock ~ ~ ~ redstone_block
+execute positioned 50424 -20 50380 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50424 -20 50424 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50424 -20 50424 run setblock ~ ~ ~ redstone_block
+execute positioned 50424 -20 50424 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50424 -20 50468 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50424 -20 50468 run setblock ~ ~ ~ redstone_block
+execute positioned 50424 -20 50468 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50424 -20 50512 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50424 -20 50512 run setblock ~ ~ ~ redstone_block
+execute positioned 50424 -20 50512 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50424 -20 50556 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50424 -20 50556 run setblock ~ ~ ~ redstone_block
+execute positioned 50424 -20 50556 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50424 -20 50600 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50424 -20 50600 run setblock ~ ~ ~ redstone_block
+execute positioned 50424 -20 50600 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50424 -20 50644 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50424 -20 50644 run setblock ~ ~ ~ redstone_block
+execute positioned 50424 -20 50644 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50424 24 50380 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50424 24 50380 run setblock ~ ~ ~ redstone_block
+execute positioned 50424 24 50380 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50424 24 50424 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50424 24 50424 run setblock ~ ~ ~ redstone_block
+execute positioned 50424 24 50424 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50424 24 50468 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50424 24 50468 run setblock ~ ~ ~ redstone_block
+execute positioned 50424 24 50468 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50424 24 50512 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50424 24 50512 run setblock ~ ~ ~ redstone_block
+execute positioned 50424 24 50512 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50424 24 50556 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50424 24 50556 run setblock ~ ~ ~ redstone_block
+execute positioned 50424 24 50556 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50424 24 50600 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50424 24 50600 run setblock ~ ~ ~ redstone_block
+execute positioned 50424 24 50600 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50424 24 50644 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50424 24 50644 run setblock ~ ~ ~ redstone_block
+execute positioned 50424 24 50644 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50424 68 50380 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50424 68 50380 run setblock ~ ~ ~ redstone_block
+execute positioned 50424 68 50380 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50424 68 50424 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50424 68 50424 run setblock ~ ~ ~ redstone_block
+execute positioned 50424 68 50424 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50424 68 50468 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50424 68 50468 run setblock ~ ~ ~ redstone_block
+execute positioned 50424 68 50468 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50424 68 50512 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50424 68 50512 run setblock ~ ~ ~ redstone_block
+execute positioned 50424 68 50512 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50424 68 50556 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50424 68 50556 run setblock ~ ~ ~ redstone_block
+execute positioned 50424 68 50556 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50424 68 50600 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50424 68 50600 run setblock ~ ~ ~ redstone_block
+execute positioned 50424 68 50600 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50424 68 50644 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50424 68 50644 run setblock ~ ~ ~ redstone_block
+execute positioned 50424 68 50644 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50424 112 50380 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50424 112 50380 run setblock ~ ~ ~ redstone_block
+execute positioned 50424 112 50380 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50424 112 50424 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50424 112 50424 run setblock ~ ~ ~ redstone_block
+execute positioned 50424 112 50424 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50424 112 50468 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50424 112 50468 run setblock ~ ~ ~ redstone_block
+execute positioned 50424 112 50468 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50424 112 50512 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50424 112 50512 run setblock ~ ~ ~ redstone_block
+execute positioned 50424 112 50512 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50424 112 50556 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50424 112 50556 run setblock ~ ~ ~ redstone_block
+execute positioned 50424 112 50556 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50424 112 50600 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50424 112 50600 run setblock ~ ~ ~ redstone_block
+execute positioned 50424 112 50600 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50424 112 50644 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50424 112 50644 run setblock ~ ~ ~ redstone_block
+execute positioned 50424 112 50644 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50424 156 50380 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50424 156 50380 run setblock ~ ~ ~ redstone_block
+execute positioned 50424 156 50380 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50424 156 50424 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50424 156 50424 run setblock ~ ~ ~ redstone_block
+execute positioned 50424 156 50424 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50424 156 50468 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50424 156 50468 run setblock ~ ~ ~ redstone_block
+execute positioned 50424 156 50468 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50424 156 50512 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50424 156 50512 run setblock ~ ~ ~ redstone_block
+execute positioned 50424 156 50512 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50424 156 50556 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50424 156 50556 run setblock ~ ~ ~ redstone_block
+execute positioned 50424 156 50556 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50424 156 50600 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50424 156 50600 run setblock ~ ~ ~ redstone_block
+execute positioned 50424 156 50600 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50424 156 50644 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50424 156 50644 run setblock ~ ~ ~ redstone_block
+execute positioned 50424 156 50644 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50424 200 50380 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50424 200 50380 run setblock ~ ~ ~ redstone_block
+execute positioned 50424 200 50380 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50424 200 50424 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50424 200 50424 run setblock ~ ~ ~ redstone_block
+execute positioned 50424 200 50424 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50424 200 50468 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50424 200 50468 run setblock ~ ~ ~ redstone_block
+execute positioned 50424 200 50468 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50424 200 50512 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50424 200 50512 run setblock ~ ~ ~ redstone_block
+execute positioned 50424 200 50512 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50424 200 50556 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50424 200 50556 run setblock ~ ~ ~ redstone_block
+execute positioned 50424 200 50556 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50424 200 50600 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50424 200 50600 run setblock ~ ~ ~ redstone_block
+execute positioned 50424 200 50600 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50424 200 50644 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50424 200 50644 run setblock ~ ~ ~ redstone_block
+execute positioned 50424 200 50644 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50468 -64 50380 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50468 -64 50380 run setblock ~ ~ ~ redstone_block
+execute positioned 50468 -64 50380 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50468 -64 50424 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50468 -64 50424 run setblock ~ ~ ~ redstone_block
+execute positioned 50468 -64 50424 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50468 -64 50468 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50468 -64 50468 run setblock ~ ~ ~ redstone_block
+execute positioned 50468 -64 50468 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50468 -64 50512 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50468 -64 50512 run setblock ~ ~ ~ redstone_block
+execute positioned 50468 -64 50512 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50468 -64 50556 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50468 -64 50556 run setblock ~ ~ ~ redstone_block
+execute positioned 50468 -64 50556 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50468 -64 50600 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50468 -64 50600 run setblock ~ ~ ~ redstone_block
+execute positioned 50468 -64 50600 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50468 -64 50644 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50468 -64 50644 run setblock ~ ~ ~ redstone_block
+execute positioned 50468 -64 50644 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50468 -20 50380 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50468 -20 50380 run setblock ~ ~ ~ redstone_block
+execute positioned 50468 -20 50380 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50468 -20 50424 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50468 -20 50424 run setblock ~ ~ ~ redstone_block
+execute positioned 50468 -20 50424 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50468 -20 50468 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50468 -20 50468 run setblock ~ ~ ~ redstone_block
+execute positioned 50468 -20 50468 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50468 -20 50512 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50468 -20 50512 run setblock ~ ~ ~ redstone_block
+execute positioned 50468 -20 50512 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50468 -20 50556 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50468 -20 50556 run setblock ~ ~ ~ redstone_block
+execute positioned 50468 -20 50556 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50468 -20 50600 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50468 -20 50600 run setblock ~ ~ ~ redstone_block
+execute positioned 50468 -20 50600 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50468 -20 50644 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50468 -20 50644 run setblock ~ ~ ~ redstone_block
+execute positioned 50468 -20 50644 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50468 24 50380 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50468 24 50380 run setblock ~ ~ ~ redstone_block
+execute positioned 50468 24 50380 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50468 24 50424 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50468 24 50424 run setblock ~ ~ ~ redstone_block
+execute positioned 50468 24 50424 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50468 24 50468 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50468 24 50468 run setblock ~ ~ ~ redstone_block
+execute positioned 50468 24 50468 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50468 24 50512 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50468 24 50512 run setblock ~ ~ ~ redstone_block
+execute positioned 50468 24 50512 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50468 24 50556 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50468 24 50556 run setblock ~ ~ ~ redstone_block
+execute positioned 50468 24 50556 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50468 24 50600 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50468 24 50600 run setblock ~ ~ ~ redstone_block
+execute positioned 50468 24 50600 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50468 24 50644 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50468 24 50644 run setblock ~ ~ ~ redstone_block
+execute positioned 50468 24 50644 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50468 68 50380 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50468 68 50380 run setblock ~ ~ ~ redstone_block
+execute positioned 50468 68 50380 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50468 68 50424 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50468 68 50424 run setblock ~ ~ ~ redstone_block
+execute positioned 50468 68 50424 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50468 68 50468 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50468 68 50468 run setblock ~ ~ ~ redstone_block
+execute positioned 50468 68 50468 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50468 68 50512 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50468 68 50512 run setblock ~ ~ ~ redstone_block
+execute positioned 50468 68 50512 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50468 68 50556 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50468 68 50556 run setblock ~ ~ ~ redstone_block
+execute positioned 50468 68 50556 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50468 68 50600 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50468 68 50600 run setblock ~ ~ ~ redstone_block
+execute positioned 50468 68 50600 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50468 68 50644 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50468 68 50644 run setblock ~ ~ ~ redstone_block
+execute positioned 50468 68 50644 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50468 112 50380 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50468 112 50380 run setblock ~ ~ ~ redstone_block
+execute positioned 50468 112 50380 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50468 112 50424 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50468 112 50424 run setblock ~ ~ ~ redstone_block
+execute positioned 50468 112 50424 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50468 112 50468 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50468 112 50468 run setblock ~ ~ ~ redstone_block
+execute positioned 50468 112 50468 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50468 112 50512 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50468 112 50512 run setblock ~ ~ ~ redstone_block
+execute positioned 50468 112 50512 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50468 112 50556 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50468 112 50556 run setblock ~ ~ ~ redstone_block
+execute positioned 50468 112 50556 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50468 112 50600 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50468 112 50600 run setblock ~ ~ ~ redstone_block
+execute positioned 50468 112 50600 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50468 112 50644 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50468 112 50644 run setblock ~ ~ ~ redstone_block
+execute positioned 50468 112 50644 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50468 156 50380 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50468 156 50380 run setblock ~ ~ ~ redstone_block
+execute positioned 50468 156 50380 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50468 156 50424 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50468 156 50424 run setblock ~ ~ ~ redstone_block
+execute positioned 50468 156 50424 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50468 156 50468 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50468 156 50468 run setblock ~ ~ ~ redstone_block
+execute positioned 50468 156 50468 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50468 156 50512 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50468 156 50512 run setblock ~ ~ ~ redstone_block
+execute positioned 50468 156 50512 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50468 156 50556 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50468 156 50556 run setblock ~ ~ ~ redstone_block
+execute positioned 50468 156 50556 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50468 156 50600 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50468 156 50600 run setblock ~ ~ ~ redstone_block
+execute positioned 50468 156 50600 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50468 156 50644 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50468 156 50644 run setblock ~ ~ ~ redstone_block
+execute positioned 50468 156 50644 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50468 200 50380 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50468 200 50380 run setblock ~ ~ ~ redstone_block
+execute positioned 50468 200 50380 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50468 200 50424 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50468 200 50424 run setblock ~ ~ ~ redstone_block
+execute positioned 50468 200 50424 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50468 200 50468 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50468 200 50468 run setblock ~ ~ ~ redstone_block
+execute positioned 50468 200 50468 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50468 200 50512 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50468 200 50512 run setblock ~ ~ ~ redstone_block
+execute positioned 50468 200 50512 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50468 200 50556 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50468 200 50556 run setblock ~ ~ ~ redstone_block
+execute positioned 50468 200 50556 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50468 200 50600 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50468 200 50600 run setblock ~ ~ ~ redstone_block
+execute positioned 50468 200 50600 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50468 200 50644 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50468 200 50644 run setblock ~ ~ ~ redstone_block
+execute positioned 50468 200 50644 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50512 -64 50380 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50512 -64 50380 run setblock ~ ~ ~ redstone_block
+execute positioned 50512 -64 50380 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50512 -64 50424 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50512 -64 50424 run setblock ~ ~ ~ redstone_block
+execute positioned 50512 -64 50424 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50512 -64 50468 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50512 -64 50468 run setblock ~ ~ ~ redstone_block
+execute positioned 50512 -64 50468 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50512 -64 50512 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50512 -64 50512 run setblock ~ ~ ~ redstone_block
+execute positioned 50512 -64 50512 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50512 -64 50556 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50512 -64 50556 run setblock ~ ~ ~ redstone_block
+execute positioned 50512 -64 50556 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50512 -64 50600 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50512 -64 50600 run setblock ~ ~ ~ redstone_block
+execute positioned 50512 -64 50600 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50512 -64 50644 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50512 -64 50644 run setblock ~ ~ ~ redstone_block
+execute positioned 50512 -64 50644 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50512 -20 50380 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50512 -20 50380 run setblock ~ ~ ~ redstone_block
+execute positioned 50512 -20 50380 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50512 -20 50424 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50512 -20 50424 run setblock ~ ~ ~ redstone_block
+execute positioned 50512 -20 50424 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50512 -20 50468 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50512 -20 50468 run setblock ~ ~ ~ redstone_block
+execute positioned 50512 -20 50468 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50512 -20 50512 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50512 -20 50512 run setblock ~ ~ ~ redstone_block
+execute positioned 50512 -20 50512 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50512 -20 50556 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50512 -20 50556 run setblock ~ ~ ~ redstone_block
+execute positioned 50512 -20 50556 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50512 -20 50600 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50512 -20 50600 run setblock ~ ~ ~ redstone_block
+execute positioned 50512 -20 50600 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50512 -20 50644 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50512 -20 50644 run setblock ~ ~ ~ redstone_block
+execute positioned 50512 -20 50644 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50512 24 50380 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50512 24 50380 run setblock ~ ~ ~ redstone_block
+execute positioned 50512 24 50380 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50512 24 50424 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50512 24 50424 run setblock ~ ~ ~ redstone_block
+execute positioned 50512 24 50424 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50512 24 50468 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50512 24 50468 run setblock ~ ~ ~ redstone_block
+execute positioned 50512 24 50468 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50512 24 50512 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50512 24 50512 run setblock ~ ~ ~ redstone_block
+execute positioned 50512 24 50512 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50512 24 50556 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50512 24 50556 run setblock ~ ~ ~ redstone_block
+execute positioned 50512 24 50556 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50512 24 50600 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50512 24 50600 run setblock ~ ~ ~ redstone_block
+execute positioned 50512 24 50600 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50512 24 50644 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50512 24 50644 run setblock ~ ~ ~ redstone_block
+execute positioned 50512 24 50644 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50512 68 50380 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50512 68 50380 run setblock ~ ~ ~ redstone_block
+execute positioned 50512 68 50380 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50512 68 50424 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50512 68 50424 run setblock ~ ~ ~ redstone_block
+execute positioned 50512 68 50424 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50512 68 50468 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50512 68 50468 run setblock ~ ~ ~ redstone_block
+execute positioned 50512 68 50468 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50512 68 50512 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50512 68 50512 run setblock ~ ~ ~ redstone_block
+execute positioned 50512 68 50512 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50512 68 50556 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50512 68 50556 run setblock ~ ~ ~ redstone_block
+execute positioned 50512 68 50556 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50512 68 50600 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50512 68 50600 run setblock ~ ~ ~ redstone_block
+execute positioned 50512 68 50600 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50512 68 50644 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50512 68 50644 run setblock ~ ~ ~ redstone_block
+execute positioned 50512 68 50644 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50512 112 50380 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50512 112 50380 run setblock ~ ~ ~ redstone_block
+execute positioned 50512 112 50380 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50512 112 50424 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50512 112 50424 run setblock ~ ~ ~ redstone_block
+execute positioned 50512 112 50424 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50512 112 50468 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50512 112 50468 run setblock ~ ~ ~ redstone_block
+execute positioned 50512 112 50468 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50512 112 50512 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50512 112 50512 run setblock ~ ~ ~ redstone_block
+execute positioned 50512 112 50512 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50512 112 50556 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50512 112 50556 run setblock ~ ~ ~ redstone_block
+execute positioned 50512 112 50556 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50512 112 50600 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50512 112 50600 run setblock ~ ~ ~ redstone_block
+execute positioned 50512 112 50600 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50512 112 50644 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50512 112 50644 run setblock ~ ~ ~ redstone_block
+execute positioned 50512 112 50644 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50512 156 50380 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50512 156 50380 run setblock ~ ~ ~ redstone_block
+execute positioned 50512 156 50380 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50512 156 50424 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50512 156 50424 run setblock ~ ~ ~ redstone_block
+execute positioned 50512 156 50424 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50512 156 50468 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50512 156 50468 run setblock ~ ~ ~ redstone_block
+execute positioned 50512 156 50468 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50512 156 50512 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50512 156 50512 run setblock ~ ~ ~ redstone_block
+execute positioned 50512 156 50512 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50512 156 50556 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50512 156 50556 run setblock ~ ~ ~ redstone_block
+execute positioned 50512 156 50556 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50512 156 50600 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50512 156 50600 run setblock ~ ~ ~ redstone_block
+execute positioned 50512 156 50600 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50512 156 50644 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50512 156 50644 run setblock ~ ~ ~ redstone_block
+execute positioned 50512 156 50644 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50512 200 50380 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50512 200 50380 run setblock ~ ~ ~ redstone_block
+execute positioned 50512 200 50380 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50512 200 50424 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50512 200 50424 run setblock ~ ~ ~ redstone_block
+execute positioned 50512 200 50424 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50512 200 50468 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50512 200 50468 run setblock ~ ~ ~ redstone_block
+execute positioned 50512 200 50468 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50512 200 50512 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50512 200 50512 run setblock ~ ~ ~ redstone_block
+execute positioned 50512 200 50512 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50512 200 50556 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50512 200 50556 run setblock ~ ~ ~ redstone_block
+execute positioned 50512 200 50556 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50512 200 50600 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50512 200 50600 run setblock ~ ~ ~ redstone_block
+execute positioned 50512 200 50600 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50512 200 50644 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50512 200 50644 run setblock ~ ~ ~ redstone_block
+execute positioned 50512 200 50644 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50556 -64 50380 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50556 -64 50380 run setblock ~ ~ ~ redstone_block
+execute positioned 50556 -64 50380 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50556 -64 50424 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50556 -64 50424 run setblock ~ ~ ~ redstone_block
+execute positioned 50556 -64 50424 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50556 -64 50468 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50556 -64 50468 run setblock ~ ~ ~ redstone_block
+execute positioned 50556 -64 50468 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50556 -64 50512 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50556 -64 50512 run setblock ~ ~ ~ redstone_block
+execute positioned 50556 -64 50512 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50556 -64 50556 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50556 -64 50556 run setblock ~ ~ ~ redstone_block
+execute positioned 50556 -64 50556 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50556 -64 50600 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50556 -64 50600 run setblock ~ ~ ~ redstone_block
+execute positioned 50556 -64 50600 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50556 -64 50644 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50556 -64 50644 run setblock ~ ~ ~ redstone_block
+execute positioned 50556 -64 50644 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50556 -20 50380 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50556 -20 50380 run setblock ~ ~ ~ redstone_block
+execute positioned 50556 -20 50380 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50556 -20 50424 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50556 -20 50424 run setblock ~ ~ ~ redstone_block
+execute positioned 50556 -20 50424 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50556 -20 50468 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50556 -20 50468 run setblock ~ ~ ~ redstone_block
+execute positioned 50556 -20 50468 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50556 -20 50512 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50556 -20 50512 run setblock ~ ~ ~ redstone_block
+execute positioned 50556 -20 50512 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50556 -20 50556 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50556 -20 50556 run setblock ~ ~ ~ redstone_block
+execute positioned 50556 -20 50556 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50556 -20 50600 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50556 -20 50600 run setblock ~ ~ ~ redstone_block
+execute positioned 50556 -20 50600 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50556 -20 50644 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50556 -20 50644 run setblock ~ ~ ~ redstone_block
+execute positioned 50556 -20 50644 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50556 24 50380 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50556 24 50380 run setblock ~ ~ ~ redstone_block
+execute positioned 50556 24 50380 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50556 24 50424 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50556 24 50424 run setblock ~ ~ ~ redstone_block
+execute positioned 50556 24 50424 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50556 24 50468 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50556 24 50468 run setblock ~ ~ ~ redstone_block
+execute positioned 50556 24 50468 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50556 24 50512 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50556 24 50512 run setblock ~ ~ ~ redstone_block
+execute positioned 50556 24 50512 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50556 24 50556 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50556 24 50556 run setblock ~ ~ ~ redstone_block
+execute positioned 50556 24 50556 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50556 24 50600 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50556 24 50600 run setblock ~ ~ ~ redstone_block
+execute positioned 50556 24 50600 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50556 24 50644 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50556 24 50644 run setblock ~ ~ ~ redstone_block
+execute positioned 50556 24 50644 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50556 68 50380 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50556 68 50380 run setblock ~ ~ ~ redstone_block
+execute positioned 50556 68 50380 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50556 68 50424 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50556 68 50424 run setblock ~ ~ ~ redstone_block
+execute positioned 50556 68 50424 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50556 68 50468 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50556 68 50468 run setblock ~ ~ ~ redstone_block
+execute positioned 50556 68 50468 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50556 68 50512 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50556 68 50512 run setblock ~ ~ ~ redstone_block
+execute positioned 50556 68 50512 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50556 68 50556 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50556 68 50556 run setblock ~ ~ ~ redstone_block
+execute positioned 50556 68 50556 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50556 68 50600 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50556 68 50600 run setblock ~ ~ ~ redstone_block
+execute positioned 50556 68 50600 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50556 68 50644 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50556 68 50644 run setblock ~ ~ ~ redstone_block
+execute positioned 50556 68 50644 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50556 112 50380 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50556 112 50380 run setblock ~ ~ ~ redstone_block
+execute positioned 50556 112 50380 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50556 112 50424 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50556 112 50424 run setblock ~ ~ ~ redstone_block
+execute positioned 50556 112 50424 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50556 112 50468 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50556 112 50468 run setblock ~ ~ ~ redstone_block
+execute positioned 50556 112 50468 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50556 112 50512 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50556 112 50512 run setblock ~ ~ ~ redstone_block
+execute positioned 50556 112 50512 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50556 112 50556 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50556 112 50556 run setblock ~ ~ ~ redstone_block
+execute positioned 50556 112 50556 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50556 112 50600 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50556 112 50600 run setblock ~ ~ ~ redstone_block
+execute positioned 50556 112 50600 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50556 112 50644 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50556 112 50644 run setblock ~ ~ ~ redstone_block
+execute positioned 50556 112 50644 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50556 156 50380 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50556 156 50380 run setblock ~ ~ ~ redstone_block
+execute positioned 50556 156 50380 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50556 156 50424 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50556 156 50424 run setblock ~ ~ ~ redstone_block
+execute positioned 50556 156 50424 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50556 156 50468 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50556 156 50468 run setblock ~ ~ ~ redstone_block
+execute positioned 50556 156 50468 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50556 156 50512 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50556 156 50512 run setblock ~ ~ ~ redstone_block
+execute positioned 50556 156 50512 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50556 156 50556 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50556 156 50556 run setblock ~ ~ ~ redstone_block
+execute positioned 50556 156 50556 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50556 156 50600 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50556 156 50600 run setblock ~ ~ ~ redstone_block
+execute positioned 50556 156 50600 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50556 156 50644 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50556 156 50644 run setblock ~ ~ ~ redstone_block
+execute positioned 50556 156 50644 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50556 200 50380 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50556 200 50380 run setblock ~ ~ ~ redstone_block
+execute positioned 50556 200 50380 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50556 200 50424 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50556 200 50424 run setblock ~ ~ ~ redstone_block
+execute positioned 50556 200 50424 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50556 200 50468 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50556 200 50468 run setblock ~ ~ ~ redstone_block
+execute positioned 50556 200 50468 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50556 200 50512 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50556 200 50512 run setblock ~ ~ ~ redstone_block
+execute positioned 50556 200 50512 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50556 200 50556 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50556 200 50556 run setblock ~ ~ ~ redstone_block
+execute positioned 50556 200 50556 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50556 200 50600 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50556 200 50600 run setblock ~ ~ ~ redstone_block
+execute positioned 50556 200 50600 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50556 200 50644 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50556 200 50644 run setblock ~ ~ ~ redstone_block
+execute positioned 50556 200 50644 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50600 -64 50380 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50600 -64 50380 run setblock ~ ~ ~ redstone_block
+execute positioned 50600 -64 50380 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50600 -64 50424 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50600 -64 50424 run setblock ~ ~ ~ redstone_block
+execute positioned 50600 -64 50424 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50600 -64 50468 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50600 -64 50468 run setblock ~ ~ ~ redstone_block
+execute positioned 50600 -64 50468 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50600 -64 50512 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50600 -64 50512 run setblock ~ ~ ~ redstone_block
+execute positioned 50600 -64 50512 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50600 -64 50556 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50600 -64 50556 run setblock ~ ~ ~ redstone_block
+execute positioned 50600 -64 50556 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50600 -64 50600 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50600 -64 50600 run setblock ~ ~ ~ redstone_block
+execute positioned 50600 -64 50600 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50600 -64 50644 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50600 -64 50644 run setblock ~ ~ ~ redstone_block
+execute positioned 50600 -64 50644 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50600 -20 50380 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50600 -20 50380 run setblock ~ ~ ~ redstone_block
+execute positioned 50600 -20 50380 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50600 -20 50424 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50600 -20 50424 run setblock ~ ~ ~ redstone_block
+execute positioned 50600 -20 50424 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50600 -20 50468 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50600 -20 50468 run setblock ~ ~ ~ redstone_block
+execute positioned 50600 -20 50468 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50600 -20 50512 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50600 -20 50512 run setblock ~ ~ ~ redstone_block
+execute positioned 50600 -20 50512 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50600 -20 50556 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50600 -20 50556 run setblock ~ ~ ~ redstone_block
+execute positioned 50600 -20 50556 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50600 -20 50600 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50600 -20 50600 run setblock ~ ~ ~ redstone_block
+execute positioned 50600 -20 50600 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50600 -20 50644 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50600 -20 50644 run setblock ~ ~ ~ redstone_block
+execute positioned 50600 -20 50644 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50600 24 50380 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50600 24 50380 run setblock ~ ~ ~ redstone_block
+execute positioned 50600 24 50380 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50600 24 50424 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50600 24 50424 run setblock ~ ~ ~ redstone_block
+execute positioned 50600 24 50424 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50600 24 50468 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50600 24 50468 run setblock ~ ~ ~ redstone_block
+execute positioned 50600 24 50468 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50600 24 50512 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50600 24 50512 run setblock ~ ~ ~ redstone_block
+execute positioned 50600 24 50512 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50600 24 50556 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50600 24 50556 run setblock ~ ~ ~ redstone_block
+execute positioned 50600 24 50556 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50600 24 50600 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50600 24 50600 run setblock ~ ~ ~ redstone_block
+execute positioned 50600 24 50600 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50600 24 50644 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50600 24 50644 run setblock ~ ~ ~ redstone_block
+execute positioned 50600 24 50644 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50600 68 50380 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50600 68 50380 run setblock ~ ~ ~ redstone_block
+execute positioned 50600 68 50380 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50600 68 50424 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50600 68 50424 run setblock ~ ~ ~ redstone_block
+execute positioned 50600 68 50424 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50600 68 50468 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50600 68 50468 run setblock ~ ~ ~ redstone_block
+execute positioned 50600 68 50468 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50600 68 50512 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50600 68 50512 run setblock ~ ~ ~ redstone_block
+execute positioned 50600 68 50512 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50600 68 50556 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50600 68 50556 run setblock ~ ~ ~ redstone_block
+execute positioned 50600 68 50556 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50600 68 50600 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50600 68 50600 run setblock ~ ~ ~ redstone_block
+execute positioned 50600 68 50600 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50600 68 50644 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50600 68 50644 run setblock ~ ~ ~ redstone_block
+execute positioned 50600 68 50644 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50600 112 50380 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50600 112 50380 run setblock ~ ~ ~ redstone_block
+execute positioned 50600 112 50380 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50600 112 50424 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50600 112 50424 run setblock ~ ~ ~ redstone_block
+execute positioned 50600 112 50424 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50600 112 50468 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50600 112 50468 run setblock ~ ~ ~ redstone_block
+execute positioned 50600 112 50468 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50600 112 50512 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50600 112 50512 run setblock ~ ~ ~ redstone_block
+execute positioned 50600 112 50512 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50600 112 50556 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50600 112 50556 run setblock ~ ~ ~ redstone_block
+execute positioned 50600 112 50556 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50600 112 50600 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50600 112 50600 run setblock ~ ~ ~ redstone_block
+execute positioned 50600 112 50600 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50600 112 50644 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50600 112 50644 run setblock ~ ~ ~ redstone_block
+execute positioned 50600 112 50644 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50600 156 50380 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50600 156 50380 run setblock ~ ~ ~ redstone_block
+execute positioned 50600 156 50380 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50600 156 50424 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50600 156 50424 run setblock ~ ~ ~ redstone_block
+execute positioned 50600 156 50424 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50600 156 50468 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50600 156 50468 run setblock ~ ~ ~ redstone_block
+execute positioned 50600 156 50468 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50600 156 50512 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50600 156 50512 run setblock ~ ~ ~ redstone_block
+execute positioned 50600 156 50512 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50600 156 50556 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50600 156 50556 run setblock ~ ~ ~ redstone_block
+execute positioned 50600 156 50556 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50600 156 50600 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50600 156 50600 run setblock ~ ~ ~ redstone_block
+execute positioned 50600 156 50600 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50600 156 50644 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50600 156 50644 run setblock ~ ~ ~ redstone_block
+execute positioned 50600 156 50644 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50600 200 50380 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50600 200 50380 run setblock ~ ~ ~ redstone_block
+execute positioned 50600 200 50380 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50600 200 50424 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50600 200 50424 run setblock ~ ~ ~ redstone_block
+execute positioned 50600 200 50424 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50600 200 50468 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50600 200 50468 run setblock ~ ~ ~ redstone_block
+execute positioned 50600 200 50468 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50600 200 50512 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50600 200 50512 run setblock ~ ~ ~ redstone_block
+execute positioned 50600 200 50512 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50600 200 50556 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50600 200 50556 run setblock ~ ~ ~ redstone_block
+execute positioned 50600 200 50556 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50600 200 50600 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50600 200 50600 run setblock ~ ~ ~ redstone_block
+execute positioned 50600 200 50600 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50600 200 50644 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50600 200 50644 run setblock ~ ~ ~ redstone_block
+execute positioned 50600 200 50644 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50644 -64 50380 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50644 -64 50380 run setblock ~ ~ ~ redstone_block
+execute positioned 50644 -64 50380 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50644 -64 50424 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50644 -64 50424 run setblock ~ ~ ~ redstone_block
+execute positioned 50644 -64 50424 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50644 -64 50468 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50644 -64 50468 run setblock ~ ~ ~ redstone_block
+execute positioned 50644 -64 50468 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50644 -64 50512 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50644 -64 50512 run setblock ~ ~ ~ redstone_block
+execute positioned 50644 -64 50512 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50644 -64 50556 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50644 -64 50556 run setblock ~ ~ ~ redstone_block
+execute positioned 50644 -64 50556 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50644 -64 50600 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50644 -64 50600 run setblock ~ ~ ~ redstone_block
+execute positioned 50644 -64 50600 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50644 -64 50644 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50644 -64 50644 run setblock ~ ~ ~ redstone_block
+execute positioned 50644 -64 50644 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50644 -20 50380 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50644 -20 50380 run setblock ~ ~ ~ redstone_block
+execute positioned 50644 -20 50380 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50644 -20 50424 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50644 -20 50424 run setblock ~ ~ ~ redstone_block
+execute positioned 50644 -20 50424 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50644 -20 50468 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50644 -20 50468 run setblock ~ ~ ~ redstone_block
+execute positioned 50644 -20 50468 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50644 -20 50512 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50644 -20 50512 run setblock ~ ~ ~ redstone_block
+execute positioned 50644 -20 50512 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50644 -20 50556 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50644 -20 50556 run setblock ~ ~ ~ redstone_block
+execute positioned 50644 -20 50556 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50644 -20 50600 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50644 -20 50600 run setblock ~ ~ ~ redstone_block
+execute positioned 50644 -20 50600 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50644 -20 50644 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50644 -20 50644 run setblock ~ ~ ~ redstone_block
+execute positioned 50644 -20 50644 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50644 24 50380 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50644 24 50380 run setblock ~ ~ ~ redstone_block
+execute positioned 50644 24 50380 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50644 24 50424 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50644 24 50424 run setblock ~ ~ ~ redstone_block
+execute positioned 50644 24 50424 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50644 24 50468 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50644 24 50468 run setblock ~ ~ ~ redstone_block
+execute positioned 50644 24 50468 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50644 24 50512 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50644 24 50512 run setblock ~ ~ ~ redstone_block
+execute positioned 50644 24 50512 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50644 24 50556 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50644 24 50556 run setblock ~ ~ ~ redstone_block
+execute positioned 50644 24 50556 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50644 24 50600 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50644 24 50600 run setblock ~ ~ ~ redstone_block
+execute positioned 50644 24 50600 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50644 24 50644 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50644 24 50644 run setblock ~ ~ ~ redstone_block
+execute positioned 50644 24 50644 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50644 68 50380 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50644 68 50380 run setblock ~ ~ ~ redstone_block
+execute positioned 50644 68 50380 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50644 68 50424 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50644 68 50424 run setblock ~ ~ ~ redstone_block
+execute positioned 50644 68 50424 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50644 68 50468 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50644 68 50468 run setblock ~ ~ ~ redstone_block
+execute positioned 50644 68 50468 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50644 68 50512 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50644 68 50512 run setblock ~ ~ ~ redstone_block
+execute positioned 50644 68 50512 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50644 68 50556 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50644 68 50556 run setblock ~ ~ ~ redstone_block
+execute positioned 50644 68 50556 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50644 68 50600 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50644 68 50600 run setblock ~ ~ ~ redstone_block
+execute positioned 50644 68 50600 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50644 68 50644 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50644 68 50644 run setblock ~ ~ ~ redstone_block
+execute positioned 50644 68 50644 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50644 112 50380 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50644 112 50380 run setblock ~ ~ ~ redstone_block
+execute positioned 50644 112 50380 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50644 112 50424 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50644 112 50424 run setblock ~ ~ ~ redstone_block
+execute positioned 50644 112 50424 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50644 112 50468 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50644 112 50468 run setblock ~ ~ ~ redstone_block
+execute positioned 50644 112 50468 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50644 112 50512 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50644 112 50512 run setblock ~ ~ ~ redstone_block
+execute positioned 50644 112 50512 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50644 112 50556 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50644 112 50556 run setblock ~ ~ ~ redstone_block
+execute positioned 50644 112 50556 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50644 112 50600 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50644 112 50600 run setblock ~ ~ ~ redstone_block
+execute positioned 50644 112 50600 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50644 112 50644 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50644 112 50644 run setblock ~ ~ ~ redstone_block
+execute positioned 50644 112 50644 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50644 156 50380 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50644 156 50380 run setblock ~ ~ ~ redstone_block
+execute positioned 50644 156 50380 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50644 156 50424 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50644 156 50424 run setblock ~ ~ ~ redstone_block
+execute positioned 50644 156 50424 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50644 156 50468 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50644 156 50468 run setblock ~ ~ ~ redstone_block
+execute positioned 50644 156 50468 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50644 156 50512 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50644 156 50512 run setblock ~ ~ ~ redstone_block
+execute positioned 50644 156 50512 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50644 156 50556 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50644 156 50556 run setblock ~ ~ ~ redstone_block
+execute positioned 50644 156 50556 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50644 156 50600 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50644 156 50600 run setblock ~ ~ ~ redstone_block
+execute positioned 50644 156 50600 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50644 156 50644 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50644 156 50644 run setblock ~ ~ ~ redstone_block
+execute positioned 50644 156 50644 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50644 200 50380 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50644 200 50380 run setblock ~ ~ ~ redstone_block
+execute positioned 50644 200 50380 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50644 200 50424 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50644 200 50424 run setblock ~ ~ ~ redstone_block
+execute positioned 50644 200 50424 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50644 200 50468 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50644 200 50468 run setblock ~ ~ ~ redstone_block
+execute positioned 50644 200 50468 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50644 200 50512 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50644 200 50512 run setblock ~ ~ ~ redstone_block
+execute positioned 50644 200 50512 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50644 200 50556 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50644 200 50556 run setblock ~ ~ ~ redstone_block
+execute positioned 50644 200 50556 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50644 200 50600 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50644 200 50600 run setblock ~ ~ ~ redstone_block
+execute positioned 50644 200 50600 run fill ~ ~ ~ ~ ~1 ~ air
+execute positioned 50644 200 50644 run setblock ~ ~1 ~ structure_block{ignoreEntities:1b,powered:0b,posX:0,posY:2,posZ:0,mode:"LOAD",name:"skyblock_empty"}
+execute positioned 50644 200 50644 run setblock ~ ~ ~ redstone_block
+execute positioned 50644 200 50644 run fill ~ ~ ~ ~ ~1 ~ air
+
+forceload remove 3148 3148
+forceload remove 3148 3151
+forceload remove 3148 3154
+forceload remove 3148 3157
+forceload remove 3148 3159
+forceload remove 3148 3162
+forceload remove 3148 3165
+forceload remove 3151 3148
+forceload remove 3151 3151
+forceload remove 3151 3154
+forceload remove 3151 3157
+forceload remove 3151 3159
+forceload remove 3151 3162
+forceload remove 3151 3165
+forceload remove 3154 3148
+forceload remove 3154 3151
+forceload remove 3154 3154
+forceload remove 3154 3157
+forceload remove 3154 3159
+forceload remove 3154 3162
+forceload remove 3154 3165
+forceload remove 3157 3148
+forceload remove 3157 3151
+forceload remove 3157 3154
+forceload remove 3157 3157
+forceload remove 3157 3159
+forceload remove 3157 3162
+forceload remove 3157 3165
+forceload remove 3159 3148
+forceload remove 3159 3151
+forceload remove 3159 3154
+forceload remove 3159 3157
+forceload remove 3159 3159
+forceload remove 3159 3162
+forceload remove 3159 3165
+forceload remove 3162 3148
+forceload remove 3162 3151
+forceload remove 3162 3154
+forceload remove 3162 3157
+forceload remove 3162 3159
+forceload remove 3162 3162
+forceload remove 3162 3165
+forceload remove 3165 3148
+forceload remove 3165 3151
+forceload remove 3165 3154
+forceload remove 3165 3157
+forceload remove 3165 3159
+forceload remove 3165 3162
+forceload remove 3165 3165
