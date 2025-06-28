@@ -52,9 +52,11 @@ execute if score SEA_ch6_event rng5 matches 3000.. as @n[tag=SEAnorma,scores={rn
 execute if score SEA_ch6_event rng5 matches 3000.. as @n[tag=SEAnorma,scores={rng8=9..12}] at @s run effect clear @n[tag=SEAnorma_warden] invisibility
 execute if score SEA_ch6_event rng5 matches 3000.. as @n[tag=SEAnorma,scores={rng8=9..12}] at @n[tag=SEAnorma_warden] run particle minecraft:sculk_soul ~ ~1 ~ 1.3 1.2 1.3 0 30
 execute if score SEA_ch6_event rng5 matches 3000.. as @n[tag=SEAnorma,scores={rng8=9..12}] at @s run data modify entity @n[tag=SEAnorma_warden] NoAI set value 0b
+execute if score SEA_ch6_event rng5 matches 3000.. as @n[tag=SEAnorma,scores={rng8=9..12}] at @s run data modify entity @n[tag=SEAnorma_warden] Silent set value 0b
 execute if score SEA_ch6_event rng5 matches 3000.. as @n[tag=SEAnorma,scores={rng8=8}] at @s run effect give @n[tag=SEAnorma_warden] invisibility infinite 0 true
 execute if score SEA_ch6_event rng5 matches 3000.. as @n[tag=SEAnorma,scores={rng8=8}] at @s run effect clear @n[tag=SEAnorma] invisibility
 execute if score SEA_ch6_event rng5 matches 3000.. as @n[tag=SEAnorma,scores={rng8=8}] at @s run data modify entity @n[tag=SEAnorma_warden] NoAI set value 1b
+execute if score SEA_ch6_event rng5 matches 3000.. as @n[tag=SEAnorma,scores={rng8=8}] at @s run data modify entity @n[tag=SEAnorma_warden] Silent set value 1b
 execute if score SEA_ch6_event rng5 matches 3000.. as @n[tag=SEAnorma,scores={rng8=9..12}] at @s run data modify entity @n[tag=SEAnorma] NoAI set value 1b
 execute if score SEA_ch6_event rng5 matches 3000.. as @n[tag=SEAnorma,scores={rng8=8}] at @s run data modify entity @n[tag=SEAnorma] NoAI set value 0b
 
