@@ -4,7 +4,7 @@
 execute as @n[tag=SEAedwina] at @s run tp @s 90147.99 171.00 -1878.01
 execute as @a[tag=SEAPT] at @s run tp @s 90147.99 171.00 -1878.01
 
-
+stopsound @a[tag=SEAPT] music
 
 scoreboard players set SEA_ch6_event rng6 9999
 scoreboard players set SEA_ch6_event rng5 2000
