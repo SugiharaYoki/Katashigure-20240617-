@@ -20,4 +20,27 @@ execute unless entity @n[tag=SEAedwina] positioned 90147.99 171.00 -1878.01 run 
 execute as @a[tag=SEAPT] at @s run attribute @s minecraft:jump_strength modifier remove sea:marilyn_01
 
 
+setblock 90197 175 -1879 minecraft:composter
+setblock 90195 175 -1883 minecraft:composter
+setblock 90203 175 -1879 minecraft:composter
+setblock 90210 175 -1881 minecraft:composter
+setblock 90215 175 -1879 minecraft:composter
+setblock 90215 177 -1875 minecraft:composter
+fill 90207 177 -1875 90206 177 -1875 minecraft:grindstone[face=floor]
+fill 90201 175 -1880 90200 175 -1880 minecraft:grindstone[face=floor]
+fill 90188 175 -1875 90187 175 -1875 minecraft:grindstone[face=floor]
+setblock 90193 175 -1877 minecraft:smithing_table
+setblock 90193 175 -1885 minecraft:cobweb
+setblock 90190 176 -1885 minecraft:cobweb
+setblock 90195 177 -1880 minecraft:cobweb
+setblock 90191 178 -1875 minecraft:cobweb
+setblock 90203 176 -1878 minecraft:cobweb
+setblock 90207 176 -1880 minecraft:cobweb
+setblock 90214 177 -1876 minecraft:cobweb
+setblock 90217 176 -1880 minecraft:cobweb
+fill 90213 176 -1879 90213 175 -1879 minecraft:chiseled_bookshelf[facing=east]
+fill 90202 176 -1881 90202 175 -1881 minecraft:chiseled_bookshelf[facing=west]
+fill 90204 178 -1875 90204 177 -1875 minecraft:chiseled_bookshelf[facing=north]
+
+
 
