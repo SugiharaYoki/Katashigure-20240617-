@@ -42,5 +42,5 @@ fill 90213 176 -1879 90213 175 -1879 minecraft:chiseled_bookshelf[facing=east]
 fill 90202 176 -1881 90202 175 -1881 minecraft:chiseled_bookshelf[facing=west]
 fill 90204 178 -1875 90204 177 -1875 minecraft:chiseled_bookshelf[facing=north]
 
-
-
+execute store result score SEA_ch6_event rng10 if entity @e[tag=SEAedwina]
+execute if score SEA_ch6_event rng10 matches 2.. run kill @n[tag=SEAedwina,tag=!SEAedwina_attackable]

@@ -24,6 +24,7 @@ scoreboard players set SEA_ch6_event rng6 0
 scoreboard players set SEA_ch6_event rng7 0
 scoreboard players set SEA_ch6_event rng8 0
 scoreboard players set SEA_ch6_event rng9 0
+scoreboard players set SEA_ch6_event rng10 0
 scoreboard players set SEA_ch6_f2 rng1 0
 scoreboard players set SEA_ch6_f2 rng2 0
 scoreboard players set SEA_ch6_f2 rng3 0
