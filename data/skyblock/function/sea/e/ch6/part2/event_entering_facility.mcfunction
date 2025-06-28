@@ -27,6 +27,7 @@ execute if score SEA_ch6_event rng5 matches 3001 run playsound entity.generic.ex
 execute if score SEA_ch6_event rng5 matches 3001 positioned 90190.05 178.19 -1872.00 run function skyblock:sea/m/unique/npc_marilyn_mob
 execute if score SEA_ch6_event rng5 matches 3001 positioned 90190.05 178.19 -1872.00 run function skyblock:sea/m/unique/warden_norma
 execute if score SEA_ch6_event rng5 matches 3002 positioned 90190.05 178.19 -1872.00 run effect give @n[tag=SEAnorma_warden,type=warden] invisibility infinite 0 true
+execute if score SEA_ch6_event rng5 matches 3002 positioned 90190.05 178.19 -1872.00 run effect give @n[tag=SEAnorma] speed infinite 3 true
 execute if score SEA_ch6_event rng5 matches 3002 positioned 90190.05 178.19 -1872.00 run data modify entity @n[tag=SEAnorma_warden] Silent set value 1b
 #execute if score SEA_ch6_event rng5 matches 1501 as @r[tag=SEAPT] as @a[distance=..200] at @s run playsound garden2.bgm.drowning2 music @s ~ ~ ~ 0.7 1.0
 execute if score SEA_ch6_event rng5 matches 3002 run data modify entity @n[tag=SEAnorma] Motion set value [0.0,0.1,-2.0]
@@ -34,12 +35,12 @@ execute if score SEA_ch6_event rng5 matches 3002 run data modify entity @n[tag=S
 execute if score SEA_ch6_event rng5 matches 3008 as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
 execute if score SEA_ch6_event rng5 matches 3008 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“操，这个阴魂不散的畜生……！！”","color":"white","bold": false}]
 
-execute if score SEA_ch6_event rng5 matches 3000.. as @n[tag=SEAnorma] at @s positioned ^ ^ ^1 run function skyblock:sea/e/ch6/part2/norma_break_blocks
-execute if score SEA_ch6_event rng5 matches 3000.. as @n[tag=SEAnorma] at @s positioned ^0.4 ^ ^1 run function skyblock:sea/e/ch6/part2/norma_break_blocks
-execute if score SEA_ch6_event rng5 matches 3000.. as @n[tag=SEAnorma] at @s positioned ^-0.4 ^ ^1 run function skyblock:sea/e/ch6/part2/norma_break_blocks
-execute if score SEA_ch6_event rng5 matches 3000.. as @n[tag=SEAnorma] at @s positioned ^ ^ ^1.9 run function skyblock:sea/e/ch6/part2/norma_break_blocks
-execute if score SEA_ch6_event rng5 matches 3000.. as @n[tag=SEAnorma] at @s positioned ^0.5 ^ ^1.9 run function skyblock:sea/e/ch6/part2/norma_break_blocks
-execute if score SEA_ch6_event rng5 matches 3000.. as @n[tag=SEAnorma] at @s positioned ^-0.5 ^ ^1.9 run function skyblock:sea/e/ch6/part2/norma_break_blocks
+execute if score SEA_ch6_event rng5 matches 3000.. as @n[tag=SEAnorma] at @s rotated ~ 0 positioned ^ ^ ^1 run function skyblock:sea/e/ch6/part2/norma_break_blocks
+execute if score SEA_ch6_event rng5 matches 3000.. as @n[tag=SEAnorma] at @s rotated ~ 0 positioned ^0.4 ^ ^1 run function skyblock:sea/e/ch6/part2/norma_break_blocks
+execute if score SEA_ch6_event rng5 matches 3000.. as @n[tag=SEAnorma] at @s rotated ~ 0 positioned ^-0.4 ^ ^1 run function skyblock:sea/e/ch6/part2/norma_break_blocks
+execute if score SEA_ch6_event rng5 matches 3000.. as @n[tag=SEAnorma] at @s rotated ~ 0 positioned ^ ^ ^1.9 run function skyblock:sea/e/ch6/part2/norma_break_blocks
+execute if score SEA_ch6_event rng5 matches 3000.. as @n[tag=SEAnorma] at @s rotated ~ 0 positioned ^0.5 ^ ^1.9 run function skyblock:sea/e/ch6/part2/norma_break_blocks
+execute if score SEA_ch6_event rng5 matches 3000.. as @n[tag=SEAnorma] at @s rotated ~ 0 positioned ^-0.5 ^ ^1.9 run function skyblock:sea/e/ch6/part2/norma_break_blocks
 
 execute if score SEA_ch6_event rng5 matches 3000.. as @n[tag=SEAnorma] at @s run tp @n[tag=SEAnorma_warden] @s
 execute if score SEA_ch6_event rng5 matches 3000.. as @n[tag=SEAnorma] at @s rotated as @s run rotate @n[tag=SEAnorma_warden] ~ ~
@@ -72,9 +73,9 @@ execute as @a[tag=SEAPT,scores={rng1=1..}] at @s run particle minecraft:white_sm
 execute as @a[tag=SEAPT,scores={rng1=1..}] at @s run playsound block.fire.extinguish block @a ~ ~ ~ 0.5 1.4
 execute as @a[tag=SEAPT,scores={rng1=1..3}] at @s run damage @s 2 minecraft:campfire
 execute as @a[tag=SEAPT,scores={rng1=4..6}] at @s run damage @s 4 minecraft:campfire
-execute as @a[tag=SEAPT,scores={rng1=7..9}] at @s run damage @s 6 minecraft:campfire
-execute as @a[tag=SEAPT,scores={rng1=10..13}] at @s run damage @s 8 minecraft:campfire
-execute as @a[tag=SEAPT,scores={rng1=14..17}] at @s run damage @s 10 minecraft:campfire
+execute as @a[tag=SEAPT,scores={rng1=7..9}] at @s run damage @s 5 minecraft:campfire
+execute as @a[tag=SEAPT,scores={rng1=10..13}] at @s run damage @s 6 minecraft:campfire
+execute as @a[tag=SEAPT,scores={rng1=14..17}] at @s run damage @s 7 minecraft:campfire
 execute as @a[tag=SEAPT,scores={rng1=20..}] at @s run damage @s 12 minecraft:campfire
 
 
