@@ -42,6 +42,7 @@ execute if score SEA_ch6_event rng5 matches 3038 as @n[tag=SEAedwina] at @s run 
 execute if score SEA_ch6_event rng5 matches 3038 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“别作战，继续往深处跑，我根本打不死这家伙！！”","color":"white","bold": false}]
 
 execute if score SEA_ch6_event rng5 matches 3000.. as @n[tag=SEAnorma] at @s rotated ~ 0 run function skyblock:sea/e/ch6/part2/norma_break_blocks
+execute if score SEA_ch6_event rng5 matches 3000.. as @n[tag=SEAnorma] at @s positioned ~ ~1 ~ rotated ~ 0 run function skyblock:sea/e/ch6/part2/norma_break_blocks
 
 execute if score SEA_ch6_event rng5 matches 3000.. as @n[tag=SEAnorma] at @s run tp @n[tag=SEAnorma_warden] @s
 execute if score SEA_ch6_event rng5 matches 3000.. as @n[tag=SEAnorma] at @s rotated as @s run rotate @n[tag=SEAnorma_warden] ~ ~
