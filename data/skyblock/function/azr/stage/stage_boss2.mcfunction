@@ -443,9 +443,9 @@ execute as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run function skyblo
     execute if score tickTimer Azr_system matches 6760 run fill -79927 38 -13 -79927 42 -16 minecraft:air destroy
     execute if score tickTimer Azr_system matches 6760 run clone -79902 36 -41 -79898 43 -32 -79933 37 -27
     execute if score tickTimer Azr_system matches 6760 run clone -79933 -44 -53 -79929 -33 -35 -79933 36 -53
-    execute if score tickTimer Azr_system matches 6750 run summon pillager -79932 38 -32 {Rotation:[-28.6f,0.0f],Invulnerable:1b,CanPickUpLoot:0b,PersistenceRequired:1b,Tags:["AzrielFriendly"],Health:3.0f,CustomName:'"弩手"',attributes:[{id:"max_health",base:3.0d},{id:"movement_speed",base:0.0d}],Team:"AzrPlayer"}
-    execute if score tickTimer Azr_system matches 6750 run summon vindicator -79930 38 -34 {Rotation:[90.0f,0.0f],NoAI:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["AzrielFriendly"],CustomName:'"圣殿巡逻兵"',CanPickUpLoot:0b,Team:"AzrPlayer"}
-    execute if score tickTimer Azr_system matches 6750 run summon vindicator -79932 38 -34 {Invulnerable:1b,PersistenceRequired:1b,Tags:["AzrielFriendly"],CustomName:'"圣殿巡逻兵"',CanPickUpLoot:0b,attributes:[{id:"movement_speed",base:0.0d},{id:"attack_damage",base:0.0d},{id:"follow_range",base:0.0d}],Team:"AzrPlayer",Johnny:1b}
+    execute if score tickTimer Azr_system matches 6750 run summon pillager -79932 38 -32 {Rotation:[-28.6f,0.0f],Invulnerable:1b,CanPickUpLoot:0b,PersistenceRequired:1b,Tags:["AzrielFriendly","AzrielNPC"],Health:3.0f,CustomName:'"弩手"',NoAI:1b}
+    execute if score tickTimer Azr_system matches 6750 run summon vindicator -79930 38 -34 {Rotation:[90.0f,0.0f],NoAI:1b,Invulnerable:1b,PersistenceRequired:1b,Tags:["AzrielFriendly","AzrielNPC"],CustomName:'"圣殿巡逻兵"',CanPickUpLoot:0b,Team:"AzrPlayer"}
+    execute if score tickTimer Azr_system matches 6750 run summon vindicator -79932 38 -34 {Invulnerable:1b,PersistenceRequired:1b,Tags:["AzrielFriendly","AzrielNPC"],CustomName:'"圣殿巡逻兵"',CanPickUpLoot:0b,NoAI:1b}
     execute if score tickTimer Azr_system matches 6750 positioned -79939 38 -71 run function skyblock:azr/m/endermite_t1
     execute if score tickTimer Azr_system matches 6750 if score playerCount Azr_system matches 3.. positioned -79939 38 -71 run function skyblock:azr/m/endermite_t1
     execute if score tickTimer Azr_system matches 6750 if score playerCount Azr_system matches 6.. positioned -79939 38 -71 run function skyblock:azr/m/endermite_t1

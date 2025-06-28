@@ -164,6 +164,9 @@ execute if entity @a[scores={Azr_wave=10..22}] run scoreboard players set chapte
 execute if entity @a[scores={Azr_wave=23..35}] run scoreboard players set chapter Azr_system 3
 execute if entity @a[scores={Azr_wave=36..}] run scoreboard players set chapter Azr_system 4
 
+#AzrielNPC
+execute as @e[tag=AzrielNPC] at @s run rotate @s facing entity @p[distance=..3]
+
 #消除蜘蛛占位
 #execute as @e[tag=AzrielMob,tag=!AzrielDecMob,tag=!AzrielBossA,tag=!AzrielBossB] at @s run scoreboard players add @s SeGa_BecomeWild 1
 #execute as @e[tag=AzrielMob,tag=!AzrielDecMob,tag=!AzrielBossA,tag=!AzrielBossB,type=spider] at @s run scoreboard players add @s SeGa_BecomeWild 9
