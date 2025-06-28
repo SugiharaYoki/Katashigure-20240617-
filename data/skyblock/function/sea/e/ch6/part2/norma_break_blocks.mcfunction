@@ -51,4 +51,7 @@ execute if entity @s[tag=SEAnorma_break_block4] run playsound minecraft:block.bo
 
 
 
-tag @s remove SEAnorma_break_block
+tag @s remove SEAnorma_break_block1
+tag @s remove SEAnorma_break_block2
+tag @s remove SEAnorma_break_block3
+tag @s remove SEAnorma_break_block4
