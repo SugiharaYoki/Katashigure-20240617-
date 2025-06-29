@@ -15,7 +15,7 @@ team remove Temp1_5
 team remove Temp1_6
 team remove Temp1_7
 team remove Temp1_8
-team join HajimetanoMachi @a[tag=PVP_see,tag=!Gaming]
+team join HajimetanoMachi @a[tag=!Gaming]
 #《游戏规则初始化》
 #gamerule doFireTick false
 #《玩家事件/文字显示/传送支援》
