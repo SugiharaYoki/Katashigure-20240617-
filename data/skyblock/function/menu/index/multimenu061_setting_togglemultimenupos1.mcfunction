@@ -3,5 +3,5 @@ tag @s[tag=!MultM_to_Bpck] add MultM_to_BpckTemp
 tag @s[tag=MultM_to_Bpck] remove MultM_to_Bpck
 tag @s[tag=MultM_to_BpckTemp] add MultM_to_Bpck
 tag @s[tag=MultM_to_BpckTemp] remove MultM_to_BpckTemp
-function skyblock:multimenu003_mp_button_tosetting
+function skyblock:menu/index/multimenu003_mp_button_tosetting
 scoreboard players set @s MultiMenu 3

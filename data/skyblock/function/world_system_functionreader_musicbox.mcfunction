@@ -59,7 +59,7 @@ execute as @a[tag=!gaming,scores={MultiMenu=101980}] at @s run scoreboard player
 execute as @a[tag=!gaming,scores={MultiMenu=101981}] at @s run scoreboard players set @s ZeroBGM 1
 
 execute as @a[tag=!gaming,scores={MultiMenu=101771..101970}] at @s run scoreboard players set @s MultiMenu 120
-#execute as @a[tag=!gaming,scores={MultiMenu=101971..101979}] at @s run function skyblock:multimenu120_setting_selectcitybgm_extend2b
-#execute as @a[tag=!gaming,scores={MultiMenu=101980..101981}] at @s run function skyblock:multimenu121_setting_selectcitybgm_extend2c
+#execute as @a[tag=!gaming,scores={MultiMenu=101971..101979}] at @s run function skyblock:menu/index/multimenu120_setting_selectcitybgm_extend2b
+#execute as @a[tag=!gaming,scores={MultiMenu=101980..101981}] at @s run function skyblock:menu/index/multimenu121_setting_selectcitybgm_extend2c
 execute as @a[tag=!gaming,scores={MultiMenu=..101770}] at @s run scoreboard players set @s MultiMenu 0
 execute as @a[tag=!gaming,scores={MultiMenu=101800..}] at @s run scoreboard players set @s MultiMenu 0
