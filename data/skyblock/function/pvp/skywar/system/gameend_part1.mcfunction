@@ -3,7 +3,7 @@ execute if entity @a[team=Team1_2] run function skyblock:pvp/skywar/bless/statis
 execute if entity @a[team=Team1_2] run scoreboard players add @a[tag=PVP_win] Perm_PersonWins 1
 execute if entity @a[team=Team1_2] run execute if entity @a[tag=PVP_win] run tellraw @a [{"text":"本局胜利玩家： ","color":"green"},{"selector":"@a[tag=PVP_win]","color":"blue"},{"text":" ！恭喜存活 ♪♪","color":"green"}]
 execute if entity @a[team=Team1_2] run execute unless entity @a[tag=PVP_win] run tellraw @a [{"text":"本局胜利玩家： ","color":"green"},{"text":"无","color":"blue"},{"text":" ！！你们怎么做到的？","color":"green"}]
-execute if entity @a[team=Team1_2] run scoreboard players add @a[tag=!PVP_win,tag=PVP_dead] Perm_PersonDeath 1
+execute if entity @a[team=Team1_2] run scoreboard players add @a[tag=PVP_dead] Perm_PersonDeath 1
 execute if entity @a[team=Team1_2] run execute as @a[tag=PVP_win] at @s run tellraw @s {"text":"游戏胜利！获得了100浮世币的奖励！","color":"gold"}
 execute if entity @a[team=Team1_2] run scoreboard players add @a[tag=PVP_win] Perm_PersonFSB 100
 execute unless entity @a[team=Team1_2] run tellraw @a [{"text":"PVP地图生成模拟结束！操作者： ","color":"green"},{"selector":"@a[tag=PVP_win]","color":"blue"}]

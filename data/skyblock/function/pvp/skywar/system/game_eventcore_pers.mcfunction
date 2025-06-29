@@ -1,12 +1,12 @@
-execute if score sc Temp5_LoopE matches 0 if entity @a[team=Team1_1,tag=!ENKIDU] unless entity @a[team=!Team1_1,tag=!PVP_observer,tag=PVPing] run scoreboard players add sc Temp5_LoopE 1
-execute if score sc Temp5_LoopE matches 0 if entity @a[team=Team1_2,tag=!ENKIDU] unless entity @a[team=!Team1_2,tag=!PVP_observer,tag=PVPing] run scoreboard players add sc Temp5_LoopE 1
-execute if score sc Temp5_LoopE matches 0 if entity @a[team=Team1_3,tag=!ENKIDU] unless entity @a[team=!Team1_3,tag=!PVP_observer,tag=PVPing] run scoreboard players add sc Temp5_LoopE 1
-execute if score sc Temp5_LoopE matches 0 if entity @a[team=Team1_4,tag=!ENKIDU] unless entity @a[team=!Team1_4,tag=!PVP_observer,tag=PVPing] run scoreboard players add sc Temp5_LoopE 1
-execute if score sc Temp5_LoopE matches 0 if entity @a[team=Team1_5,tag=!ENKIDU] unless entity @a[team=!Team1_5,tag=!PVP_observer,tag=PVPing] run scoreboard players add sc Temp5_LoopE 1
-execute if score sc Temp5_LoopE matches 0 if entity @a[team=Team1_6,tag=!ENKIDU] unless entity @a[team=!Team1_6,tag=!PVP_observer,tag=PVPing] run scoreboard players add sc Temp5_LoopE 1
-execute if score sc Temp5_LoopE matches 0 if entity @a[team=Team1_7,tag=!ENKIDU] unless entity @a[team=!Team1_7,tag=!PVP_observer,tag=PVPing] run scoreboard players add sc Temp5_LoopE 1
-execute if score sc Temp5_LoopE matches 0 if entity @a[team=Team1_8,tag=!ENKIDU] unless entity @a[team=!Team1_8,tag=!PVP_observer,tag=PVPing] run scoreboard players add sc Temp5_LoopE 1
-execute if score sc Temp5_LoopE matches 0 if entity @a[tag=!ENKIDU] unless entity @a[tag=!PVP_observer,tag=PVPing] unless entity @a[tag=ENKIDU] run scoreboard players add sc Temp5_LoopE 1
+execute if score sc Temp5_LoopE matches 0 if entity @a[team=Team1_1,tag=!ENKIDU] unless entity @a[team=!Team1_1,tag=!PVP_dead,tag=PVPing] run scoreboard players add sc Temp5_LoopE 1
+execute if score sc Temp5_LoopE matches 0 if entity @a[team=Team1_2,tag=!ENKIDU] unless entity @a[team=!Team1_2,tag=!PVP_dead,tag=PVPing] run scoreboard players add sc Temp5_LoopE 1
+execute if score sc Temp5_LoopE matches 0 if entity @a[team=Team1_3,tag=!ENKIDU] unless entity @a[team=!Team1_3,tag=!PVP_dead,tag=PVPing] run scoreboard players add sc Temp5_LoopE 1
+execute if score sc Temp5_LoopE matches 0 if entity @a[team=Team1_4,tag=!ENKIDU] unless entity @a[team=!Team1_4,tag=!PVP_dead,tag=PVPing] run scoreboard players add sc Temp5_LoopE 1
+execute if score sc Temp5_LoopE matches 0 if entity @a[team=Team1_5,tag=!ENKIDU] unless entity @a[team=!Team1_5,tag=!PVP_dead,tag=PVPing] run scoreboard players add sc Temp5_LoopE 1
+execute if score sc Temp5_LoopE matches 0 if entity @a[team=Team1_6,tag=!ENKIDU] unless entity @a[team=!Team1_6,tag=!PVP_dead,tag=PVPing] run scoreboard players add sc Temp5_LoopE 1
+execute if score sc Temp5_LoopE matches 0 if entity @a[team=Team1_7,tag=!ENKIDU] unless entity @a[team=!Team1_7,tag=!PVP_dead,tag=PVPing] run scoreboard players add sc Temp5_LoopE 1
+execute if score sc Temp5_LoopE matches 0 if entity @a[team=Team1_8,tag=!ENKIDU] unless entity @a[team=!Team1_8,tag=!PVP_dead,tag=PVPing] run scoreboard players add sc Temp5_LoopE 1
+execute if score sc Temp5_LoopE matches 0 if entity @a[tag=!ENKIDU] unless entity @a[tag=!PVP_dead,tag=PVPing] unless entity @a[tag=ENKIDU] run scoreboard players add sc Temp5_LoopE 1
 execute as @a[tag=PVPing,scores={pvp_death_check=1}] at @s run function skyblock:pvp/skywar/system/deaddropitem
 execute if score sc Map_Code matches 2 as @a[tag=PVPing] at @s if entity @s[y=70,dy=15] run tp ~ ~-1 ~
 execute if score sc Map_Code matches 3 as @a[tag=PVPing] at @s if entity @s[y=80,dy=15] run tp ~ ~-1 ~
