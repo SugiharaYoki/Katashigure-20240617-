@@ -2,7 +2,6 @@ tag @s remove LeftGame
 tag @s remove SkyWar
 tag @s remove PVPing
 tag @s remove PVP_see
-tag @s remove PVP_observer
 tag @s remove PVP_win
 tag @s remove PVP_dead
 tag @s remove Gaming
