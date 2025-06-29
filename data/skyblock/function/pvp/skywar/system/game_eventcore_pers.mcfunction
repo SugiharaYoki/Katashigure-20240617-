@@ -17,8 +17,8 @@ execute if score sc Map_Code matches 8 as @a[tag=PVPing] at @s if entity @s[y=45
 execute if score sc Map_Code matches 11 as @a[tag=PVPing] at @s if entity @s[y=118,dy=15] run tp ~ ~-1 ~
 execute as @a[tag=PVPing] at @s if entity @s[y=230,dy=45] run tp ~ ~-1 ~
 
-execute if block -17 23 32 soul_lantern as 10e959db-4b44-4cdd-b98c-350d3b454206 at @s if entity @s[tag=!Skyblock_NoWorldborder] unless entity @a[tag=Gaming,tag=!PVP_see] as @a[tag=!PVP_see] at @s run gamemode spectator @s
-execute if block -17 23 32 soul_lantern as 10e959db-4b44-4cdd-b98c-350d3b454206 at @s if entity @s[tag=!Skyblock_NoWorldborder] unless entity @a[tag=Gaming,tag=!PVP_see] as @a[tag=!PVP_see] at @s run tag @s add PVP_see
+execute if block -17 23 32 soul_lantern as 10e959db-4b44-4cdd-b98c-350d3b454206 at @s if entity @s[tag=!Skyblock_NoWorldborder] unless entity @a[tag=Gaming,tag=!PVP_see] as @a[tag=!PVP_see,tag=!PVPing] at @s run gamemode spectator @s
+execute if block -17 23 32 soul_lantern as 10e959db-4b44-4cdd-b98c-350d3b454206 at @s if entity @s[tag=!Skyblock_NoWorldborder] unless entity @a[tag=Gaming,tag=!PVP_see] as @a[tag=!PVP_see,tag=!PVPing] at @s run tag @s add PVP_see
 execute if block -17 23 32 soul_lantern as 10e959db-4b44-4cdd-b98c-350d3b454206 at @s if entity @s[tag=!Skyblock_NoWorldborder] if entity @a[tag=Gaming,tag=!PVP_see] run worldborder set 10000000
 execute if block -17 23 32 soul_lantern as 10e959db-4b44-4cdd-b98c-350d3b454206 at @s if entity @s[tag=!Skyblock_NoWorldborder] if entity @a[tag=Gaming,tag=!PVP_see] run tag 10e959db-4b44-4cdd-b98c-350d3b454206 add Skyblock_NoWorldborder
 
