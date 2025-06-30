@@ -28,4 +28,4 @@ execute positioned 124733.22 -10.00 -126.36 run function skyblock:mg/warbridge/c
 
 #execute positioned -43 54 0 as @p[tag=Gaming,distance=0..5] at @s run tag @s remove Gaming
 
-
+execute as @p[x=-9860,y=-64,z=-10196,dx=2000,dy=2000,dz=2000,tag=!ServerOwner] run kill @s

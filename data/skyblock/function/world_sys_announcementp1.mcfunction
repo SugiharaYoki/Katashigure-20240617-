@@ -29,7 +29,7 @@ execute unless block -21 23 32 soul_lantern if score sc AnnouncementRoB matches 
 execute if score sc AnnouncementRoB matches 3.. at @s run scoreboard players set sc AnnouncementRoB 0
 scoreboard players reset @a If_TalkVill
 execute unless block -17 23 32 soul_lantern run tag @a remove PVPing
-execute if entity @a[tag=ServerManager,team=!TokumeiM,team=!TokumeiO,tag=!Gaming] as @a[tag=!Gaming] at @s run function skyblock:world_system_team_city
+execute if entity @a[tag=ServerManager,team=!TokumeiM,team=!TokumeiO,team=!TokumeiD,tag=!Gaming] as @a[tag=!Gaming] at @s run function skyblock:world_system_team_city
 #
 #say hi
 #CentralProtection#
