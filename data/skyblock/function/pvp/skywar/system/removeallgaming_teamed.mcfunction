@@ -36,6 +36,8 @@ scoreboard players set @s If_EscDeath 0
 
 scoreboard players set @s MG_death 0
 
+scoreboard players reset @s pvp_death_check
+
 attribute @s minecraft:knockback_resistance modifier remove mg_warbridge:knockresist
 
 attribute @s attack_damage modifier remove 8603fc7b-b1fa-47c6-91f5-67d9b35e53d1
