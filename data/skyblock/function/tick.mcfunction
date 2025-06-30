@@ -26,6 +26,6 @@ execute positioned 124733.22 -10.00 -126.36 run function skyblock:mg/warbridge/c
 
 
 
-execute positioned -43 54 0 as @p[tag=Gaming,distance=0..5] at @s run tag @s remove Gaming
+#execute positioned -43 54 0 as @p[tag=Gaming,distance=0..5] at @s run tag @s remove Gaming
 
 
