@@ -33,7 +33,7 @@
     {"text": "r="},{"nbt":"cache.uncertainty","storage": "skyblock:protector"}]'
 
     tellraw @s [{"text":"可疑的非认证玩家活动，你已被记录，若你是服务器拥有者，请在","color": "red"},{"text":"函数skyblock:protector/__pvp_openchest","color":"white"},{"text":"中认证你的游戏id","color":"red"}]
-    tellraw @a[tag=DebugMode] {"nbt": "text","entity": "0-0-0-0-1","interpret": true}
+    tellraw @a {"nbt": "text","entity": "0-0-0-0-1","interpret": true}
     
     execute unless data storage skyblock:protector record_oringinal[0] run data modify storage skyblock:protector record_oringinal set value []
     execute unless data storage skyblock:protector record_output[0] run data modify storage skyblock:protector record_output set value []
