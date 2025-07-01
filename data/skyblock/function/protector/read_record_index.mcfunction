@@ -1,0 +1,1 @@
+$tellraw @a {"nbt":"record_output[$(index)]","storage":"skyblock:protector","interpret":true}
