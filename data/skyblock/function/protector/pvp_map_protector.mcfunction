@@ -12,6 +12,3 @@
     data modify storage skyblock:protector cache.timestamp[2] set from storage skyblock:cache IRLTime.second_string
 
 # record
-    execute if entity @s[tag=ServerOwner,predicate=skyblock:protector/authenticated] run tellraw @s "你已认证"
-    execute if entity @s[tag=ServerOwner,predicate=!skyblock:protector/authenticated] run tellraw @s "你未认证"
-    execute if entity @s[tag=!ServerOwner] run tellraw @s "严重警告"
