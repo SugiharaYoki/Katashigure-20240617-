@@ -15,7 +15,7 @@ team remove Temp1_5
 team remove Temp1_6
 team remove Temp1_7
 team remove Temp1_8
-team join HajimetanoMachi @a[tag=PVP_see,tag=!Gaming]
+team join HajimetanoMachi @a[tag=!Gaming]
 fill -130 59 -117 -130 59 -128 minecraft:cherry_button[facing=east]
 #《游戏规则初始化》
 #gamerule doFireTick false

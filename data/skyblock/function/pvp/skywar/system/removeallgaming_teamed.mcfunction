@@ -2,7 +2,6 @@ tag @s remove LeftGame
 tag @s remove SkyWar
 tag @s remove PVPing
 tag @s remove PVP_see
-tag @s remove PVP_observer
 tag @s remove PVP_win
 tag @s remove PVP_dead
 tag @s remove Gaming
@@ -36,6 +35,8 @@ scoreboard players set @s If_Bread 0
 scoreboard players set @s If_EscDeath 0
 
 scoreboard players set @s MG_death 0
+
+scoreboard players reset @s pvp_death_check
 
 attribute @s minecraft:knockback_resistance modifier remove mg_warbridge:knockresist
 

@@ -1,4 +1,4 @@
-tag @s add PVP_observer
+#tag @s add PVP_observer
 tag @s add PVP_dead
 tag @s add PVP_see
 tag @s remove PVPing

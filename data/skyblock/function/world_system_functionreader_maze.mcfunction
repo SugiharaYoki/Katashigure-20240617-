@@ -61,6 +61,9 @@ execute as @a[scores={MultiMenu=815028,MazeLS=28..}] at @s run tp @p 116 125 -20
 execute as @a[scores={MultiMenu=815028,MazeLS=28..}] at @s run tellraw @s [{"text":"已抵达","color":"white"},{"text":" 代达罗斯的迷宫之塔 - 5层 入口","color":"green"}]
 execute as @a[scores={MultiMenu=815029,MazeLS=29..}] at @s run tp @p 133 141 -207 facing 135 141 -207
 execute as @a[scores={MultiMenu=815029,MazeLS=29..}] at @s run tellraw @s [{"text":"已抵达","color":"white"},{"text":" 代达罗斯的迷宫之塔 - 6层 尽头","color":"green"}]
+execute as @a[scores={MultiMenu=815030,MazeLS=30..}] at @s run tp @p 124 151 -212 facing 132 154 -219
+execute as @a[scores={MultiMenu=815030,MazeLS=30..}] at @s run tellraw @s [{"text":"已抵达","color":"white"},{"text":" 代达罗斯的迷宫之塔 - 8层 入口","color":"green"}]
+
 
 
 execute as @a[scores={MultiMenu=832001}] at @s run tp @p -141 49 -118 facing -142 49 -118

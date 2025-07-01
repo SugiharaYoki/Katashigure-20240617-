@@ -29,11 +29,11 @@ execute unless block -21 23 32 soul_lantern if score sc AnnouncementRoB matches 
 execute if score sc AnnouncementRoB matches 3.. at @s run scoreboard players set sc AnnouncementRoB 0
 scoreboard players reset @a If_TalkVill
 execute unless block -17 23 32 soul_lantern run tag @a remove PVPing
-execute if entity @a[tag=ServerManager,team=!TokumeiM,team=!TokumeiO,tag=!Gaming] as @a[tag=!Gaming] at @s run function skyblock:world_system_team_city
+execute if entity @a[tag=ServerManager,team=!TokumeiM,team=!TokumeiO,team=!TokumeiD,tag=!Gaming] as @a[tag=!Gaming] at @s run function skyblock:world_system_team_city
 #
 #say hi
 #CentralProtection#
-gamemode adventure @a[tag=!Gaming,tag=!ServerManager,tag=!ServerOperator,tag=!PVP_see]
+gamemode adventure @a[tag=!Gaming,tag=!ServerManager,tag=!ServerOperator]
 effect give @a[tag=!Gaming] minecraft:saturation infinite 0 true
 execute unless block -17 23 32 minecraft:soul_lantern run spawnpoint @a[x=50000,y=0,z=50000,distance=0..1200] -43 55 0
 execute unless block -17 23 32 minecraft:soul_lantern as @a[tag=PVP_see,x=50000,y=50,z=50000,distance=1500..] at @s run function skyblock:pvp/skywar/system/removeallgaming
@@ -57,15 +57,7 @@ execute as @a at @s if block ~ ~-1 ~ minecraft:emerald_block run function skyblo
 
 execute as @a[scores={AnnouncementTime=1},tag=!Gaming] at @s run function skyblock:world_sys_announcementp2_bgm
 
-execute as @a[x=102,y=5,z=-242,dx=58,dy=300,dz=58] at @s if items entity @s weapon.offhand totem_of_undying run tp @s -64 54 -181 facing -65 54 -180
-execute as @a[x=102,y=5,z=-242,dx=58,dy=300,dz=58] at @s run item replace entity @s container.0 with totem_of_undying[minecraft:custom_name='{"text":"光明图腾","italic":false,"color":"gold","bold":true}',lore=['{"text":"有效预防幽闭恐惧症！","italic":false}','{"text":"切换至副手：立即传送回主城。","italic":false,"color": "green"}']]
-execute as @a[x=102,y=5,z=-242,dx=58,dy=300,dz=58] at @s unless items entity @s container.* blaze_rod run item replace entity @s container.1 with blaze_rod[minecraft:custom_name='{"text":"荧光棒","italic":false,"color":"green","bold":true}',lore=['{"text":"我猜这个不需要说明书。","italic":false}']]
-execute as @a[x=102,y=5,z=-242,dx=58,dy=300,dz=58] at @s unless items entity @s container.* blaze_powder run item replace entity @s container.2 with blaze_powder[minecraft:custom_name='{"text":"阻绝粉","italic":false,"color":"green","bold":true}',lore=['{"text":"掷出该道具，清除附近2格内的荧光记号。","italic":false,"color": "green"}']]
-execute as @n[x=102,y=5,z=-242,dx=58,dy=300,dz=58,type=item] at @s unless block ~ ~-0.2 ~ air run scoreboard players add @s rng2 1
-execute as @n[x=102,y=5,z=-242,dx=58,dy=300,dz=58,type=item,scores={rng2=3}] at @s if entity @s[nbt={Item:{id:"minecraft:blaze_rod"}}] run particle composter ~ ~ ~ 0 0 0 0.5 20
-execute as @n[x=102,y=5,z=-242,dx=58,dy=300,dz=58,type=item,scores={rng2=3}] at @s if entity @s[nbt={Item:{id:"minecraft:blaze_rod"}}] run summon marker ~ ~ ~ {Tags:["MazeTower_Glowstick"]}
-execute as @n[x=102,y=5,z=-242,dx=58,dy=300,dz=58,type=item,scores={rng2=3}] at @s if entity @s[nbt={Item:{id:"minecraft:blaze_powder"}}] at @e[type=marker,tag=MazeTower_Glowstick,distance=0..2] run particle white_smoke ~ ~ ~ 0.2 0.3 0.2 0.03 10
-execute as @n[x=102,y=5,z=-242,dx=58,dy=300,dz=58,type=item,scores={rng2=3}] at @s if entity @s[nbt={Item:{id:"minecraft:blaze_powder"}}] run kill @e[type=marker,tag=MazeTower_Glowstick,distance=0..2]
-execute as @n[x=102,y=5,z=-242,dx=58,dy=300,dz=58,type=item,scores={rng2=3..}] at @s run kill @s
-execute as @e[x=102,y=5,z=-242,dx=58,dy=300,dz=58,type=marker,tag=MazeTower_Glowstick,limit=120] at @s if entity @a[distance=..25] run function skyblock:city_maze_marker
+execute as @a[x=102,y=5,z=-242,dx=58,dy=300,dz=58] at @s run function skyblock:mg/maze/ui
+execute as @n[x=102,y=5,z=-242,dx=58,dy=300,dz=58,type=item] at @s run function skyblock:mg/maze/item
+execute as @e[x=102,y=5,z=-242,dx=58,dy=300,dz=58,type=marker,tag=MazeTower_Glowstick,limit=120] at @s if entity @a[distance=..25] run function skyblock:mg/maze/marker
 
