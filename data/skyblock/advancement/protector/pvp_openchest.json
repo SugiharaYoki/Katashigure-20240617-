@@ -1,0 +1,10 @@
+{
+    "criteria": {
+        "pvp_openchest":{
+            "trigger": "any_block_use"
+        }
+    },
+    "rewards": {
+        "function": "skyblock:protector/pvp_map_protector"
+    }
+}
