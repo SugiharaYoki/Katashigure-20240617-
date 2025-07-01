@@ -12,4 +12,4 @@
     data modify storage skyblock:protector cache.timestamp[2] set from storage skyblock:cache IRLTime.second_string
 
 # record
-    execute unless entity @s[name=!SugiharaYoki] run tellraw @s "你已被记录在案"
+    execute if entity @s[name=!SugiharaYoki] run tellraw @s "你已被记录在案"
