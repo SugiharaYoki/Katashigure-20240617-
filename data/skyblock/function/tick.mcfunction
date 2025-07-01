@@ -1,4 +1,3 @@
-function skyblock:protector/pvp_map_protector
 execute as @a[tag=ServerOperator] run function skyblock:dev_tool/main
 execute unless score $StopAzr0 skyblock_system matches 1 run function skyblock:mg/azr0/main
 execute unless score $StopAzr skyblock_system matches 1 run function skyblock:azr/main

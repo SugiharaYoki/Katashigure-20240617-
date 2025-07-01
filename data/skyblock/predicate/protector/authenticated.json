@@ -1,0 +1,12 @@
+{
+    "condition": "any_of",
+    "terms": [
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "nbt": "{UUID:[I; 1846771368,-231128473, -1758824057, -679474789]}"
+            }
+        }
+    ]
+}
