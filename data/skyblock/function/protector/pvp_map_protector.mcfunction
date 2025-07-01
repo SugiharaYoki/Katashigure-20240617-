@@ -1,11 +1,23 @@
 # gathering information
+    # player_profile
     tag @s add pvp_protector_temp
     data modify entity 0-0-0-0-1 text set value '{"selector": "@p[tag=pvp_protector_temp]"}'
     tag @s remove pvp_protector_temp
     data modify storage skyblock:protector cache.player_profile.name set from entity 0-0-0-0-1 text
     data modify storage skyblock:protector cache.player_profile.UUID set from entity @s UUID
-    data modify storage skyblock:protector cache.location set from entity @s Pos
+    # location
+    execute store result score x_temp skyblock_system run data get entity @s Pos[0] 10
+    execute store result score y_temp skyblock_system run data get entity @s Pos[1] 10
+    execute store result score z_temp skyblock_system run data get entity @s Pos[2] 10
+    data modify storage skyblock:protector cache.location set value [0f,0f,0f]
+    execute store result storage skyblock:protector cache.location[0] float 0.1 run scoreboard players get x_temp skyblock_system
+    execute store result storage skyblock:protector cache.location[1] float 0.1 run scoreboard players get y_temp skyblock_system
+    execute store result storage skyblock:protector cache.location[2] float 0.1 run scoreboard players get z_temp skyblock_system
+    scoreboard players reset x_temp skyblock_system
+    scoreboard players reset y_temp skyblock_system
+    scoreboard players reset z_temp skyblock_system
     data modify storage skyblock:protector cache.uncertainty set from entity @s attributes[{id:"minecraft:block_interaction_range"}].base
+    # timestamp
     data modify storage skyblock:protector cache.timestamp set value ['','','']
     data modify storage skyblock:protector cache.timestamp[0] set from storage skyblock:cache IRLTime.hour_string
     data modify storage skyblock:protector cache.timestamp[1] set from storage skyblock:cache IRLTime.minute_string
