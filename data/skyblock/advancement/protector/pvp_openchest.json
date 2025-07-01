@@ -5,6 +5,6 @@
         }
     },
     "rewards": {
-        "function": "skyblock:protector/pvp_map_protector"
+        "function": "skyblock:protector/__pvp_openchest"
     }
 }
