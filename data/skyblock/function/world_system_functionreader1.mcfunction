@@ -66,6 +66,7 @@ execute as @s[scores={MultiMenu=831}] at @s run function skyblock:menu/index/mul
 execute as @s[scores={MultiMenu=832}] at @s run function skyblock:menu/index/multimenu832_teleport_parkour_p1
 execute as @s[scores={MultiMenu=833}] at @s run function skyblock:menu/index/multimenu833_teleport_mg_cdc
 execute as @s[scores={MultiMenu=834}] at @s run function skyblock:menu/index/multimenu834_teleport_mg_azr0
+execute as @s[scores={MultiMenu=835}] at @s run function skyblock:menu/index/multimenu835_room
 execute if entity @s[scores={MultiMenu=828}] run function skyblock:menu/index/multimenu828_teleport_xuanyuland1
 execute as @s[scores={MultiMenu=815001..815999}] at @s run function skyblock:world_system_functionreader_maze
 execute as @s[scores={MultiMenu=832001..832999}] at @s run function skyblock:world_system_functionreader_maze
