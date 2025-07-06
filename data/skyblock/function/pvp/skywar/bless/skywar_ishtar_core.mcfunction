@@ -56,6 +56,7 @@ execute if items entity @s[predicate=!skyblock:sneaking] container.* *[custom_da
 execute if items entity @s[predicate=!skyblock:sneaking] container.* *[custom_data={skywar:1,skywar_ishtar_20:1}] positioned ~ ~-0.05 ~ if block ~ ~ ~ cake run effect give @s jump_boost 1 7 false
 execute if items entity @s[predicate=skyblock:sneaking] container.* *[custom_data={skywar:1,skywar_ishtar_20:1}] run effect give @s jump_boost 1 3 false
 
+execute if items entity @s container.* *[custom_data={skywar_ishtar_7:1}] run function skyblock:pvp/skywar/bless/skywar_ishtar_core7
 
 execute if items entity @s container.* *[custom_data={skywar:1,skywar_ishtar_9:1}] run effect give @s haste 3 1 true
 execute if items entity @s container.* music_disc_strad[custom_data={skywar:1,skywar_ishtar_10:1}] run effect clear @s poison

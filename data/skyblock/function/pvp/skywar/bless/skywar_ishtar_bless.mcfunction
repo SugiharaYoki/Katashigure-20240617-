@@ -46,14 +46,12 @@ execute if entity @s[scores={ishtar_bless_1=35}] run give @s golden_sword[custom
 execute if entity @s[scores={ishtar_bless_2=35}] run give @s golden_sword[custom_name='{"text":"袖刺·黑星","italic":false,"color":"red"}',custom_data={skywar_ishtar_35:1},attribute_modifiers=[{type:"movement_speed",slot:"hand",id:"ishtar_bless:003_01",amount:0.01,operation:"add_value"},{type:"armor",slot:"hand",id:"ishtar_bless:003_02",amount:-2,operation:"add_value"},{type:"attack_damage",slot:"hand",id:"ishtar_bless:003_03",amount:1,operation:"add_value"},{type:"attack_speed",slot:"hand",id:"ishtar_bless:003_04",amount:-1.8,operation:"add_value"}]]
 execute if entity @s[scores={ishtar_bless_3=35}] run give @s golden_sword[custom_name='{"text":"袖刺·黑星","italic":false,"color":"red"}',custom_data={skywar_ishtar_35:1},attribute_modifiers=[{type:"movement_speed",slot:"hand",id:"ishtar_bless:003_01",amount:0.01,operation:"add_value"},{type:"armor",slot:"hand",id:"ishtar_bless:003_02",amount:-2,operation:"add_value"},{type:"attack_damage",slot:"hand",id:"ishtar_bless:003_03",amount:1,operation:"add_value"},{type:"attack_speed",slot:"hand",id:"ishtar_bless:003_04",amount:-1.8,operation:"add_value"}]]
 execute if entity @s[scores={ishtar_bless_4=35}] run give @s golden_sword[custom_name='{"text":"袖刺·黑星","italic":false,"color":"red"}',custom_data={skywar_ishtar_35:1},attribute_modifiers=[{type:"movement_speed",slot:"hand",id:"ishtar_bless:003_01",amount:0.01,operation:"add_value"},{type:"armor",slot:"hand",id:"ishtar_bless:003_02",amount:-2,operation:"add_value"},{type:"attack_damage",slot:"hand",id:"ishtar_bless:003_03",amount:1,operation:"add_value"},{type:"attack_speed",slot:"hand",id:"ishtar_bless:003_04",amount:-1.8,operation:"add_value"}]]
-execute if entity @s[scores={ishtar_bless_1=7}] run give @s zoglin_spawn_egg 2
-execute if entity @s[scores={ishtar_bless_2=7}] run give @s zoglin_spawn_egg 2
-execute if entity @s[scores={ishtar_bless_3=7}] run give @s zoglin_spawn_egg 2
-execute if entity @s[scores={ishtar_bless_4=7}] run give @s zoglin_spawn_egg 2
-execute if entity @s[scores={ishtar_bless_1=7}] run give @s magma_cube_spawn_egg 2
-execute if entity @s[scores={ishtar_bless_2=7}] run give @s magma_cube_spawn_egg 2
-execute if entity @s[scores={ishtar_bless_3=7}] run give @s magma_cube_spawn_egg 2
-execute if entity @s[scores={ishtar_bless_4=7}] run give @s magma_cube_spawn_egg 2
+
+execute if entity @s[scores={ishtar_bless_1=7}] run give @s wild_armor_trim_smithing_template[custom_name='{"text":"尸亡重兽","italic":false,"color":"red"}',custom_data={skywar_ishtar_7:1},lore=['{"text":"放置于背包时","color":"light_purple","italic":true}','{"text":"每隔20秒获得刷怪蛋×1","color":"white","italic":false}','{"text":"可能获得的刷怪蛋：蠹虫、岩浆怪、僵尸疣猪兽","color":"white","italic":false}']] 1
+execute if entity @s[scores={ishtar_bless_2=7}] run give @s wild_armor_trim_smithing_template[custom_name='{"text":"尸亡重兽","italic":false,"color":"red"}',custom_data={skywar_ishtar_7:1},lore=['{"text":"放置于背包时","color":"light_purple","italic":true}','{"text":"每隔20秒获得刷怪蛋×1","color":"white","italic":false}','{"text":"可能获得的刷怪蛋：蠹虫、岩浆怪、僵尸疣猪兽","color":"white","italic":false}']] 1
+execute if entity @s[scores={ishtar_bless_3=7}] run give @s wild_armor_trim_smithing_template[custom_name='{"text":"尸亡重兽","italic":false,"color":"red"}',custom_data={skywar_ishtar_7:1},lore=['{"text":"放置于背包时","color":"light_purple","italic":true}','{"text":"每隔20秒获得刷怪蛋×1","color":"white","italic":false}','{"text":"可能获得的刷怪蛋：蠹虫、岩浆怪、僵尸疣猪兽","color":"white","italic":false}']] 1
+execute if entity @s[scores={ishtar_bless_4=7}] run give @s wild_armor_trim_smithing_template[custom_name='{"text":"尸亡重兽","italic":false,"color":"red"}',custom_data={skywar_ishtar_7:1},lore=['{"text":"放置于背包时","color":"light_purple","italic":true}','{"text":"每隔20秒获得刷怪蛋×1","color":"white","italic":false}','{"text":"可能获得的刷怪蛋：蠹虫、岩浆怪、僵尸疣猪兽","color":"white","italic":false}']] 1
+
 execute if entity @s[scores={ishtar_bless_1=8}] run give @s enchanted_golden_apple
 execute if entity @s[scores={ishtar_bless_2=8}] run give @s enchanted_golden_apple
 execute if entity @s[scores={ishtar_bless_3=8}] run give @s enchanted_golden_apple

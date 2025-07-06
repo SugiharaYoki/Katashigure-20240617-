@@ -84,6 +84,7 @@ execute if score skywar_start rng1 matches 2 run scoreboard objectives add Temp5
 execute if score skywar_start rng1 matches 2 run scoreboard objectives add Temp5_Loop dummy
 execute if score skywar_start rng1 matches 2 run scoreboard objectives add Temp5_LoopF dummy
 execute if score skywar_start rng1 matches 2 run scoreboard objectives add Temp5_LoopE dummy
+execute if score skywar_start rng1 matches 2 run scoreboard objectives add If_Bless7 dummy
 execute if score skywar_start rng1 matches 2 run scoreboard objectives add If_Bless11 dummy
 execute if score skywar_start rng1 matches 2 run scoreboard objectives add If_Bless21b dummy
 execute if score skywar_start rng1 matches 2 run scoreboard objectives add If_Bless23 dummy
@@ -124,6 +125,7 @@ execute if score skywar_start rng1 matches 3 as @a[tag=!NoSkyWar] at @s run scor
 execute if score skywar_start rng1 matches 3 as @a[tag=!NoSkyWar] at @s run scoreboard players set @s If_Dead 0
 execute if score skywar_start rng1 matches 3 as @a[tag=!NoSkyWar] at @s run scoreboard players set @s If_RotFle 0
 execute if score skywar_start rng1 matches 3 as @a[tag=!NoSkyWar] at @s run scoreboard players set @s If_MelonS 0
+execute if score skywar_start rng1 matches 3 as @a[tag=!NoSkyWar] at @s run scoreboard players set @s If_Bless7 0
 execute if score skywar_start rng1 matches 3 as @a[tag=!NoSkyWar] at @s run scoreboard players set @s If_Bless11 0
 execute if score skywar_start rng1 matches 3 as @a[tag=!NoSkyWar] at @s run scoreboard players set @s If_Bless21b 0
 execute if score skywar_start rng1 matches 3 as @a[tag=!NoSkyWar] at @s run scoreboard players set @s If_Bless23 0
