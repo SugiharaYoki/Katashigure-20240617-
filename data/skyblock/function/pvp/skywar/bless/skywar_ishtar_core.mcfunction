@@ -94,7 +94,7 @@ execute if items entity @s[scores={If_Bless29=1..}] container.* *[custom_data={s
 
 execute if items entity @s[scores={If_Bless30=1..}] container.* *[custom_data={skywar_ishtar_30:1}] run function skyblock:pvp/skywar/bless/skywar_ishtar_core30
 
-execute if entity @s[scores={If_Bless31=1..}] run scoreboard players remove @s If_Bless31 1
+execute if entity @s[scores={If_Bless31=21..}] run scoreboard players remove @s If_Bless31 1
 execute if items entity @s[scores={If_Bless31c=1..}] container.* *[custom_data={skywar_ishtar_31:1}] run function skyblock:pvp/skywar/bless/skywar_ishtar_core31
 
 tag @s remove Bless32Execute

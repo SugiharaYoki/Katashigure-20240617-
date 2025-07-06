@@ -19,4 +19,4 @@ execute if entity @s[scores={If_Bless31=58}] run playsound minecraft:block.note_
 execute if entity @s[scores={If_Bless31=58}] run playsound minecraft:block.note_block.xylophone master @a ~ ~ ~ 2 1.7
 
 scoreboard players set @s[scores={If_Bless31c=1..,If_Bless31=..0}] If_Bless31 60
-execute if entity @s[scores={If_Bless31=1}] run scoreboard players set @s If_Bless31c 0
+execute if entity @s[scores={If_Bless31=21}] run scoreboard players set @s If_Bless31c 0
