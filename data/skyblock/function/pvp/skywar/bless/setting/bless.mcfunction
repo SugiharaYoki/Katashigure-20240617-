@@ -20,7 +20,7 @@ function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"影猎手"', title
 function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"驯兽师"', title:'"逃亡「刹踪烟消」"', description:'"可食用兔腿×4\\\\n食用后移动速度大幅增加2秒 且可隐身3秒\\\\n有30%的概率使自己受到瞬间伤害！"', id: 012, idsh: 12}
 function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"驯兽师"', title:'"命唤「尸亡重兽」"', description:'"特殊模板 放置于背包时每隔20秒获得刷怪蛋×1\\\\n\\\\n可能获得的刷怪蛋：蠹虫、岩浆怪、僵尸疣猪兽"', id: 007, idsh: 7}
 function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"驯兽师"', title:'"割荒「暗行豸螨」"', description:'"龙息×2 特殊模板 手持时将周围5格的龙息掉落物转换为炸弹螨\\\\n炸弹螨在有玩家接近时会剧烈爆炸"', id: 034, idsh: 34}
-function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"建筑师"', title:'"筑稳「雕刻罗盘」"', description:'"罗盘 持有时增加方块操作距离2格\\\\n除此之外也会增加移动速度与防御力\\\\n但是会降低攻击速度"', id: 015, idsh: 15}
+function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"建筑师"', title:'"筑稳「雕刻罗盘」"', description:'"罗盘 持有时增加方块操作距离2格\\\\n除此之外也会增加移动速度与防御力"', id: 015, idsh: 15}
 function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"建筑师"', title:'"困笼「殆命角斗」"', description:'"高速堡垒核心×2 搭建落脚堡垒\\\\n使用后还会获得5秒的跳跃提升\\\\n留在背包内时增加挖掘速度（无法叠加）\\\\n\\\\n注意：如果错过了跳跃提升，这个困笼无法在通常状态下跳出"', id: 009, idsh: 9}
 function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"建筑师"', title:'"搬运「输载归初」"', description:'"输载归初核心×2 将周围3格内的宝箱全部刷新成蛋糕盒\\\\n留在背包内时下蹲可以直接破坏脚下的潜影盒\\\\n\\\\n小提示：可用于快速抢夺箱子"', id: 019, idsh: 19}
 function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"建筑师"', title:'"筑道「高速隧梯」"', description:'"铁轨×20、激活铁轨×3、特殊模板 拥有普通/激活铁轨时\\\\n同时按左+右键 朝距离最近的横向正十字坐标打开一道通路\\\\n按SHIFT 则消耗激活铁轨 打开更长的通路\\\\n按空格键 则改为向上建造天梯\\\\n路径上的方块会成为掉落物"', id: 027, idsh: 27}
@@ -29,12 +29,12 @@ function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"圣女"', title:'"
 function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"圣女"', title:'"洗礼「顷刻人间」"', description:'"号角与特殊模板 放置于背包时吹响号角\\\\n即可将4格内全部玩家的主手武器与所装备防具附魔效果清除，且耐久回满\\\\n\\\\n注意：对自己也有效"', id: 022, idsh: 22}
 function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"圣女"', title:'"焚玉「渡火红莲」"', description:'"特殊模板 放置于背包时，若自身行走于烈火，则几乎不会受到火焰以外的伤害，且会持续在周围制造火焰\\\\n但是，火焰伤害本身将是致命的"', id: 032, idsh: 32}
 function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"圣骑士"', title:'"神威「陨落压制」"', description:'"陨落压制核心×3 范围内其他玩家（包括友军）速度完全压制但接近无敌\\\\n\\\\n注意：虽然能够预防跳跃，但是这一效果的持续时长要远远低于减速的时长"', id: 011, idsh: 11}
-function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"圣骑士"', title:'"天威「跃空战技」"', description:'"粘液块×3、跃空战技核心×2 给予自己一把重锤\\\\n留在背包内时可以在粘液块/蛋糕上一跃而起\\\\n留在背包内时，蹲下后跳跃能力短暂增强\\\\n\\\\n小提示：推荐自己寻找重锤"', id: 020, idsh: 20}
+function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"圣骑士"', title:'"天威「跃空战技」"', description:'"粘液块×3、跃空战技核心×2 给予自己一把重锤\\\\n留在背包内时，可以在粘液块/蛋糕上一跃而起\\\\n留在背包内时，蹲下后跳跃能力短暂增强\\\\n\\\\n小提示：推荐自己寻找重锤"', id: 020, idsh: 20}
 function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"弓箭手"', title:'"华弓「花散绯芒」"', description:'"超多重射击弓、箭矢×5\\\\n只不过给这把弓附魔几乎是不可能做到的"', id: 013, idsh: 13, idsh: 13}
 function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"弓箭手"', title:'"祭弓「折剑以箭」"', description:'"号角与特殊模板 放置于背包时吹响号角，即可将所持有的全部近战武器转换为箭矢\\\\n副手持有模板时 可以释放无差别螺旋箭浪"', id: 021, idsh: 21}
 function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"弓箭手"', title:'"剪缘「误月驱华」"', description:'"特殊模板 放置于背包时，若10秒内没受到任何伤害则无效化下一次攻击\\\\n该无效化结束后会取消自身的全部抗性BUFF\\\\n若发动效果时3格内存在其他队伍的玩家，则自己立刻获得一枚末影之眼\\\\n模板存在时，最多持有2颗末影之眼"', id: 023, idsh: 23}
 function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"尘埃法师"', title:'"暴劣「湮体崩裂」"', description:'"药剂×2 自残并增加攻击力5秒"', id: 014, idsh: 14}
-function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"尘埃法师"', title:'"归尘「扬焱剧爆」"', description:'"扬焱剧爆核心×2 在身边召唤引燃的TNT，该TNT引爆速度比普通TNT快3/10\\\\n使用后会立刻获得4个TNT"', id: 017, idsh: 17}
+function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"尘埃法师"', title:'"归尘「扬焱剧爆」"', description:'"扬焱剧爆核心×2 在身边召唤引燃的TNT，该TNT引爆速度比普通TNT快30%\\\\n使用后会立刻获得4个TNT"', id: 017, idsh: 17}
 function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"尘埃法师"', title:'"唤尘「漆幕虚垒」"', description:'"漆幕虚垒核心×4 在面前4格处召唤持续十数秒的烟幕"', id: 018, idsh: 18}
 function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"欺诈师"', title:'"瞒天「坠落狱穴」"', description:'"号角与特殊模板 放置于背包时吹响号角，即可将20格内的矿镐掉落物化作向下轰击的毁灭炮\\\\n开局会获得三个石镐\\\\n越强的镐破坏力越大"', id: 024, idsh: 24}
 function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"欺诈师"', title:'"乍现「诞生虚桥」"', description:'"鸡蛋×3、特殊模板 放置于背包时，5格内的鸡蛋会被附上“欺诈”状态\\\\n“欺诈”蛋会自动生成一条玻璃天桥\\\\n距离25格内没有玩家时将自动取消“欺诈”状态"', id: 025, idsh: 25}
