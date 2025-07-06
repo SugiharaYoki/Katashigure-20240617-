@@ -53,6 +53,8 @@ execute as @a[tag=!city_broadcast_off,tag=!Gaming,scores={AnnouncementTime=32,rn
 execute as @a[tag=!city_broadcast_off,tag=!Gaming,scores={AnnouncementTime=32,rng2=9}] run tellraw @s [{"text":"你有尝试寻找城市内的彩蛋区域吗？这座城市有一些隐藏的地带哟！","color":"green"}]
 execute as @a[tag=!city_broadcast_off,tag=!Gaming,scores={AnnouncementTime=32,rng2=10}] run tellraw @s [{"text":"PVP战争职业系统修复中！","color":"green"}]
 
+execute if score sc AnnouncementRo matches 1 as @a at @s unless entity @s[scores={id=1..}] run function skyblock:id_create
+
 execute as @a at @s if block ~ ~-1 ~ minecraft:emerald_block run function skyblock:city_parkour_save
 
 execute as @a[scores={AnnouncementTime=1},tag=!Gaming] at @s run function skyblock:world_sys_announcementp2_bgm
