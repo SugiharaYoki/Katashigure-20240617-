@@ -1,9 +1,5 @@
 #execute as @s[tag=MG_AZR0PT] at @s run tag @e[distance=..5,tag=AzrielMob] add MG_AZR0PT
 
-#游戏运行时
-execute as @s[scores={Azr_forceDeath=1..}] at @s run function skyblock:azr/end_game/player_dead
-execute as @s[scores={Azr_isDead=1..}] at @s run function skyblock:azr/end_game/player_dead
-
 #update spawnpoint
 execute as @s[tag=azrUpdateSpawnPoint] at @s unless block ~ ~-1 ~ air unless block ~ ~-1 ~ lava unless block ~ ~ ~ lava run spawnpoint @s ~ ~ ~
 execute as @s[tag=azrUpdateSpawnPoint] at @s unless block ~ ~-1 ~ air unless block ~ ~-1 ~ lava unless block ~ ~ ~ lava run tag @s remove azrUpdateSpawnPoint
@@ -23,6 +19,10 @@ tag @s[tag=removeSpark] remove removeSpark
 execute at @s[tag=hasSkills] run function skyblock:azr/system_sub/chain_kill
 #残城箭影
 execute at @s[tag=hasSkills,tag=azr_skills_arrow] run function skyblock:azr/system_sub/arrow
+
+#死亡检测
+execute as @s[scores={Azr_forceDeath=1..}] at @s run function skyblock:azr/end_game/player_dead
+execute as @s[scores={Azr_isDead=1..}] at @s run function skyblock:azr/end_game/player_dead
 
 #结束游戏
 #游戏未开始或对局不匹配时强制杀死玩家
