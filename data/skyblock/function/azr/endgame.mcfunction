@@ -1,19 +1,19 @@
 #scoreboard objectives remove Azr_arrowOrbTimer
 #______________________________________________________________#
-#tag @e[tag=sc,limit=1] remove AzrielEvent382315A
-#tag @e[tag=sc,limit=1] remove AzrielEvent382315B
-#tag @e[tag=sc,limit=1] remove Event18573A
-#tag @e[tag=sc,limit=1] remove Event18573B
-#tag @e[tag=sc,limit=1] remove Event18573C
-#tag @e[tag=sc,limit=1] remove Event18573D
-#tag @e[tag=sc,limit=1] remove azrch4bosstalk1
-#tag @e[tag=sc,limit=1] remove azrch4bosstalk2
-#tag @e[tag=sc,limit=1] remove azrch4bosstalk3
-#tag @e[tag=sc,limit=1] remove azrstage7b
-#tag @e[tag=sc,limit=1] remove StageDiffid
+scoreboard players reset $AzrielEvent382315A Azr_system
+scoreboard players reset $AzrielEvent382315B Azr_system
+scoreboard players reset $Event18573A Azr_system
+scoreboard players reset $Event18573B Azr_system
+scoreboard players reset $Event18573C Azr_system
+scoreboard players reset $Event18573D Azr_system
+scoreboard players reset $azrch4bosstalk1 Azr_system
+scoreboard players reset $azrch4bosstalk2 Azr_system
+scoreboard players reset $azrch4bosstalk3 Azr_system
+scoreboard players reset $azrstage7b Azr_system
+scoreboard players reset $StageDiffid Azr_system
+scoreboard players reset $Azr_Doppel Azr_system
 #tag @s remove Event18575A
 tag @a remove azrDead
-#tag @e[tag=sc,limit=1] remove Azr_Doppel
 #______________________________________________________________#
 bossbar remove azr:boss_hp_bar
 bossbar remove azr:progress_bar_special
