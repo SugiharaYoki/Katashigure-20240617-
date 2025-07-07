@@ -232,10 +232,7 @@ execute if score stageSeconds Azr_system matches 1125 run setblock -79766 26 -45
 
 
 #更改StandLastP/B
-execute if score stageSeconds Azr_system matches 1125 run scoreboard players set stage Azr_system 53
 execute if score stageSeconds Azr_system matches 1125 run scoreboard players set @a[tag=azrPlayer] Azr_wave 38
-
-execute if score stageSeconds Azr_system matches 1126 run scoreboard players set stageSeconds Azr_system 2000
 
 #跳过剧情
 execute if score stageSeconds Azr_system matches 508 unless entity @a[tag=azrPlayer,scores={Azr_skillPoints=..16}] run tellraw @a[tag=azrPlayer] {"text":"〈跳过剧情〉","bold":true,"color":"blue","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 6"}}
@@ -308,5 +305,4 @@ execute if score stageSeconds Azr_system matches 19900.. if score playerCount Az
 
 execute if score stageSeconds Azr_system matches 19900.. if block -79609 18 -417 air if block -79647 23 -422 air run scoreboard players set $Event18575A Azr_system 1
 
-execute if score stageSeconds Azr_system matches 502..4000 if block -79713 47 -380 birch_button[powered=true] run scoreboard players set stageSeconds Azr_system 2000
 #UNSUREE

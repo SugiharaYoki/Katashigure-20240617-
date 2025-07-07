@@ -101,6 +101,8 @@ execute if block -79878 41 -131 minecraft:lever[powered=true] unless entity @n[t
 execute if block -79878 41 -131 minecraft:lever[powered=true] unless entity @n[type=interaction,tag=temp,x=-79877.5,y=41.00,z=-130.5,distance=..1] run summon minecraft:interaction -79877.5 41.00 -130.5 {Tags:["temp"]}
 #Stage Impersonate
 execute if block -79799 28 -284 minecraft:birch_button[powered=true] run function skyblock:azr/stage/stage_impersonate
+#Stage Object
+execute if block -79713 47 -380 birch_button[powered=true] run function skyblock:azr/stage/stage_object_prep
 
 #extra bonus - stage3α
 execute if block -79924 39 25 minecraft:birch_button[powered=true] positioned -79931 38 25 run function skyblock:azr/m/zombie_t2_miner
@@ -187,3 +189,5 @@ execute if block -79925 47 -113 minecraft:stone_button[powered=true] run setbloc
 execute if block -79925 47 -113 minecraft:stone_button[powered=true] run playsound minecraft:block.ladder.step master @a -79922 45 -112 1 0.8
 execute if block -79925 47 -113 minecraft:stone_button[powered=true] run setblock -79922 42 -112 ladder[facing=west]
 execute if block -79925 47 -113 minecraft:stone_button[powered=true] run setblock -79925 47 -113 air
+#functional button - 94935
+execute if block -79751 37 -353 minecraft:polished_blackstone_button[powered=true] run setblock -79761 42 -358 air destroy
