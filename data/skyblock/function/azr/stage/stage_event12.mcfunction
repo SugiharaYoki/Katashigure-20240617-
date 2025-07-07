@@ -57,7 +57,7 @@ execute if score stageSeconds Azr_system matches 50..200 if score #rng15 Azr_sys
 
 execute if score stageSeconds Azr_system matches 50..200 if entity @a[tag=azrPlayer,x=-79773,y=42,z=-276,distance=0..6.5] run scoreboard players set stageSeconds Azr_system 5555
 
-execute if score stageSeconds Azr_system matches 5550..6000 run tag @s add azrBanLifeVitae
+execute if score stageSeconds Azr_system matches 5550..6000 run tag @a[tag=azrPlayer] add azrBanLifeVitae
 execute if score stageSeconds Azr_system matches 5550..6000 run scoreboard players set stage Azr_system 51
 execute if score stageSeconds Azr_system matches 5550..6000 positioned -79776 44 -279 run playsound entity.piglin_brute.ambient master @a[tag=azrPlayer,distance=0..3.5] ~ ~ ~ 2 0.9
 execute if score stageSeconds Azr_system matches 5550..6000 run scoreboard players set stageSeconds Azr_system 0

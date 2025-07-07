@@ -19,6 +19,7 @@ execute if entity @s[tag=!azrBanLifeVitae] if score @s Azr_Shop matches 3 run fu
 execute if entity @s[tag=!azrBanLifeVitae] if score @s Azr_Shop matches 20..40 run function skyblock:azr/shop/refresh
 execute if entity @s[tag=!azrBanLifeVitae] if entity @s[tag=azrShopRefresh] run function skyblock:azr/shop/build
 execute if items entity @s container.* *[custom_data~{LifeVitae:1b}] run clear @s *[custom_data~{LifeVitae:1b}]
+execute if items entity @s player.cursor *[custom_data~{LifeVitae:1b}] run item replace entity @s player.cursor with air
 
 #trigger
 scoreboard players enable @a Azr_Shop

@@ -57,4 +57,3 @@ tellraw @s {"text":"   "}
 tag @s add azrShopOnUse
 tag @s remove azrShopRefresh
 scoreboard players set @s Azr_Shop 0
-execute if items entity @s player.cursor *[custom_data~{LifeVitae:1b}] run item replace entity @s player.cursor with air
