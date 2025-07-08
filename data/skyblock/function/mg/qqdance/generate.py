@@ -29,6 +29,7 @@ def generate_commands_from_file(file_path):
 
     # 起始指令，step从1开始
     output.append(f"execute if score @s MG_qqd_t_abs matches {abs_start} run scoreboard players set @s MG_qqd_step 1")
+    output.append(f"execute if score @s MG_qqd_t_abs matches {abs_start} run scoreboard players set @s MG_qqd_t_rel {split_interval_tick}")
 
     current_abs = abs_start + split_interval_tick
     step_base = 1
