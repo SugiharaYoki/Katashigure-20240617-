@@ -54,6 +54,7 @@ scoreboard objectives remove Azr_Shop_rng13
 scoreboard objectives remove melonCount
 scoreboard objectives remove Azr_skillPoints
 scoreboard objectives remove Azr_shopChapter
+scoreboard objectives remove TimerStack
 scoreboard objectives remove temp_timer1
 scoreboard objectives remove temp_timer2
 scoreboard objectives remove temp_timer3

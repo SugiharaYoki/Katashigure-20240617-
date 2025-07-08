@@ -95,6 +95,9 @@ execute if score stage Azr_system matches 43 as @e[tag=!AzrielExtreme,tag=Azriel
 execute if score stage Azr_system matches 43 as @e[tag=AzrielExtreme,tag=AzrielBossB,limit=1,x=-79900,y=130,z=0,distance=0..1300] at @s run function skyblock:azr/stage/stage_boss3_ex
 
 # 第四章，由于结构复杂采用另一种方式记录
+    # ch4 env 52..70 AND 73..99
+    execute if score stage Azr_system matches 52..70 run function skyblock:azr/system_sub/ch4_env
+    execute if score stage Azr_system matches 73..99 run function skyblock:azr/system_sub/ch4_env
     # event12 44
     execute if score stage Azr_system matches 44 run function skyblock:azr/stage/stage_event12
     # 第13关 51
