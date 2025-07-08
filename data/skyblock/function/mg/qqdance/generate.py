@@ -13,7 +13,7 @@ def generate_commands_from_file(file_path):
 
     bar_time_sec = 4 * 60 / bpm
     split_interval_sec = bars_per_split * bar_time_sec
-    split_interval_tick = round(split_interval_sec / 0.05)
+    split_interval_tick = split_interval_sec / 0.05
 
     input_to_direction = {
         '上': 'forward', '下': 'backward', '左': 'left', '右': 'right',
@@ -31,7 +31,7 @@ def generate_commands_from_file(file_path):
     # 起始指令，step从1开始
     if step_base <= 1:
         output.append(f"execute if score @s MG_qqd_t_abs matches {abs_start} run scoreboard players set @s MG_qqd_step 1")
-        output.append(f"execute if score @s MG_qqd_t_abs matches {abs_start} run scoreboard players set @s MG_qqd_t_rel {split_interval_tick}")
+        output.append(f"execute if score @s MG_qqd_t_abs matches {abs_start} run scoreboard players set @s MG_qqd_t_rel {round(split_interval_tick)}")
 
     current_abs = abs_start + split_interval_tick
 
@@ -66,20 +66,20 @@ def generate_commands_from_file(file_path):
                 f"execute if score @s MG_qqd_step matches {step_base + j} if entity @s[predicate=skyblock:{direction},tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped"
             )
 
-        output.append(f"execute if score @s MG_qqd_t_abs matches {current_abs} run scoreboard players set @s MG_qqd_t_rel 5000")
-        output.append(f"execute if score @s MG_qqd_t_abs matches {current_abs} run scoreboard players set @s[scores={{MG_qqd_step=..{step_base + len(directions) - 1}}}] MG_qqd_t_rel -50")
+        output.append(f"execute if score @s MG_qqd_t_abs matches {round(current_abs)} run scoreboard players set @s MG_qqd_t_rel 5000")
+        output.append(f"execute if score @s MG_qqd_t_abs matches {round(current_abs)} run scoreboard players set @s[scores={{MG_qqd_step=..{step_base + len(directions) - 1}}}] MG_qqd_t_rel -50")
 
         # 这里计算下一组step的起点，取当前最大step向上取整到最近十位再加10
         max_step = step_base + len(directions) - 1
         next_step_base = ((max_step // 10) + 1) * 10 + 1
-        output.append(f"execute if score @s MG_qqd_t_abs matches {current_abs} run scoreboard players set @s MG_qqd_step {next_step_base}")
+        output.append(f"execute if score @s MG_qqd_t_abs matches {round(current_abs)} run scoreboard players set @s MG_qqd_step {next_step_base}")
 
         next_abs = current_abs + split_interval_tick
         if next_abs <= abs_end:
             interval = split_interval_tick
         else:
             interval = abs_end - current_abs
-        output.append(f"execute if score @s MG_qqd_t_abs matches {current_abs} run scoreboard players set @s[scores={{MG_qqd_t_rel=0..}}] MG_qqd_t_rel {interval}")
+        output.append(f"execute if score @s MG_qqd_t_abs matches {round(current_abs)} run scoreboard players set @s[scores={{MG_qqd_t_rel=0..}}] MG_qqd_t_rel {round(interval)}")
 
         current_abs += split_interval_tick
         step_base = next_step_base  # 更新 step_base 为下一组的起点

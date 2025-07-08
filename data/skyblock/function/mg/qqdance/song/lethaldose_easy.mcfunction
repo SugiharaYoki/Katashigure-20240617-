@@ -1,6 +1,9 @@
 execute if score @s MG_qqd_t_abs matches 1 run playsound minecraft:vol2.lethaldose master @s ~ ~ ~ 1 1
 execute if score @s MG_qqd_t_abs matches 1 run scoreboard players set @s MG_qqd_t_rel 50000
 
+execute if score @s MG_qqd_t_abs matches 128 run title @s title [{"text": "3", "color": "blue", "bold": true}]
+execute if score @s MG_qqd_t_abs matches 148 run title @s title [{"text": "2", "color": "blue", "bold": true}]
+execute if score @s MG_qqd_t_abs matches 168 run title @s title [{"text": "Ready", "color": "blue", "bold": true}]
 execute if score @s MG_qqd_t_abs matches 188 run scoreboard players set @s MG_qqd_step 1
 execute if score @s MG_qqd_t_abs matches 188 run scoreboard players set @s MG_qqd_t_rel 93
 execute if score @s MG_qqd_step matches 1 run title @s title [{"text": "↑ ↑ ↑", "color": "blue", "bold": true}]
@@ -286,10 +289,4 @@ execute if score @s MG_qqd_t_abs matches 2234 run scoreboard players set @s MG_q
 
 execute if score @s MG_qqd_t_abs matches 2260 run function skyblock:mg/qqdance/result
 
-execute if entity @s[tag=MG_qqd_stepped,tag=!MG_qqd_stepped_x] run scoreboard players add @s MG_qqd_step 1
-execute if entity @s[tag=MG_qqd_stepped,tag=!MG_qqd_stepped_x] run playsound minecraft:block.note_block.hat music @a ~ ~ ~ 2 0.8
-execute if entity @s[tag=MG_qqd_stepped,tag=!MG_qqd_stepped_x] run tag @s add MG_qqd_stepped_x
-execute if entity @s[tag=MG_qqd_stepped] if entity @s[predicate=!skyblock:forward,predicate=!skyblock:backward,predicate=!skyblock:left,predicate=!skyblock:right] run tag @s remove MG_qqd_stepped_x
-execute if entity @s[tag=MG_qqd_stepped] if entity @s[predicate=!skyblock:forward,predicate=!skyblock:backward,predicate=!skyblock:left,predicate=!skyblock:right] run tag @s remove MG_qqd_stepped
-
-
+function skyblock:mg/qqdance/control

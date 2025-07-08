@@ -26,5 +26,5 @@ execute as @s[scores={MG_qqd_t_rel=78..}] run title @s subtitle [{"text":"★★
 function skyblock:mg/qqdance/song
 
 execute if entity @s[predicate=skyblock:jump] run function skyblock:mg/qqdance/end
-execute as @s[scores={MG_qqd_t_rel=..0}] run function skyblock:mg/qqdance/end
+execute as @s[scores={MG_qqd_t_rel=..-10}] run function skyblock:mg/qqdance/end
 
