@@ -81,28 +81,36 @@ scoreboard objectives add Azr_SK16 dummy
 scoreboard players set DEBUG_maxStageLimit Azr_system 43
 #scoreboard players set DEBUG_fakePlayer Azr_system 10
 
-execute as @a[tag=azrPlayer] run function skyblock:azr/player
+# 许愿池
+function skyblock:azr/effects/wish_fountain_transfer
+
+# 友好生物处理（在本服务器上无效）
 team join AzrPlayer @e[tag=AzrielFriendly]
 
-#在部分关卡的的四倍速走秒
-execute if score isStarted Azr_system matches 1 if score stage Azr_system matches 34..45 if score gametick Azr_system matches 5.. run function skyblock:azr/core
-execute if score isStarted Azr_system matches 1 if score stage Azr_system matches 51..61 if score gametick Azr_system matches 5.. run function skyblock:azr/core
-execute if score isStarted Azr_system matches 1 if score gametick Azr_system matches 20.. run function skyblock:azr/core
-execute if score isStarted Azr_system matches 1 if score gametick_static_5s Azr_system matches 100.. run function skyblock:azr/timer_static_5s
-#使用了tickTimer的关卡在这里处理
-    #许愿池
-    function skyblock:azr/effects/wish_fountain_transfer
-    #timerTimer读秒，要停下只需reset记分板
-    execute if entity @a[tag=azrPlayer] if score gametick Azr_system matches -2147483648..2147483647 run scoreboard players add gametick Azr_system 1
-    execute if entity @a[tag=azrPlayer] if score gametick_static_5s Azr_system matches -2147483648..2147483647 run scoreboard players add gametick_static_5s Azr_system 1
+# 玩家函数
+execute as @a[tag=azrPlayer] run function skyblock:azr/player
+
+
+execute if entity @a[tag=azrPlayer] if score tick_count_main TimerStack matches -2147483648..2147483647 run scoreboard players add tick_count_main TimerStack 1
+execute if entity @a[tag=azrPlayer] if score timer_static_5s TimerStack matches -2147483648..2147483647 run scoreboard players add timer_static_5s TimerStack 1
+# 在部分关卡的的四倍速走秒
+execute if score isStarted Azr_system matches 1 if score stage Azr_system matches 34..45 if score tick_count_main TimerStack matches 5.. run function skyblock:azr/core
+execute if score isStarted Azr_system matches 1 if score stage Azr_system matches 51..61 if score tick_count_main TimerStack matches 5.. run function skyblock:azr/core
+execute if score isStarted Azr_system matches 1 if score tick_count_main TimerStack matches 20.. run function skyblock:azr/core
+execute if score isStarted Azr_system matches 1 if score timer_static_5s TimerStack matches 100.. run function skyblock:azr/timer_static_5s
+
+
+# 使用了tick计时的关卡在这里处理
+    # 读秒，要停下只需reset记分板
     execute if score tick_main_thread TimerStack matches -2147483648..2147483647 run scoreboard players add tick_main_thread TimerStack 1
-    #stage1 event code:2
+    
+    # stage1 event code:2
     execute if score isStarted Azr_system matches 1 if score stage Azr_system matches 2 run function skyblock:azr/stage/stage1_event
-    #BOSS1 code:10
+    # BOSS1 code:10
     execute if score isStarted Azr_system matches 1 if score stage Azr_system matches 10 run function skyblock:azr/stage/stage_boss1
-    #BOSS2 code:[23,24]
+    # BOSS2 code:[23,24]
     execute if score isStarted Azr_system matches 1 if score stage Azr_system matches 23..24 run function skyblock:azr/stage/stage_boss2
-    #BOSS4 Code:62
+    # BOSS4 Code:62
     execute if score stage Azr_system matches 62 run function skyblock:azr/stage/stage18
 
 #重置判定 - 游戏已开始但没有玩家
