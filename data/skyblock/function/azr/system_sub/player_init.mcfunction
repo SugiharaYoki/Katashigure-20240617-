@@ -35,6 +35,7 @@ function skyblock:azr/items/revival_star
 give @s pumpkin_pie 8
 
 #游戏数据初始化
+scoreboard players set @s Azr_wave 0
 scoreboard players set @s Azr_forceDeath 0
 scoreboard players set @s Azr_isDead 0
 scoreboard players set @s Azr_emerald 0

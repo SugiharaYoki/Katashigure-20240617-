@@ -1,5 +1,5 @@
 # 将进度未达到的玩家踢出 - 原判定为 Azr_skillPoints = 4..为通过，这里改成使用BH记录
-execute unless score @s SeGa_StandLastBH matches 7.. if function skyblock:azr/end_game/quit_game run return fail
+execute unless score @s SeGa_StandLastBH matches 7.. if function skyblock:azr/jump_to/return run return fail
 
 
 effect give @s saturation 5 29 true

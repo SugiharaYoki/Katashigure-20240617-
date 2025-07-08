@@ -26,5 +26,5 @@ execute as @s[scores={Azr_isDead=1..}] at @s run function skyblock:azr/end_game/
 
 #结束游戏
 #游戏未开始或对局不匹配时强制杀死玩家
-execute if score isStarted Azr_system matches 0 as @a[tag=azrPlayer] run function skyblock:azr/end_game/quit_game
+execute unless score isStarted Azr_system matches 1 as @a[tag=azrPlayer] run function skyblock:azr/end_game/quit_game
 execute as @a[tag=azrPlayer] unless score @s Azr_startCount = Pointer Azr_startCount run function skyblock:azr/end_game/quit_game
