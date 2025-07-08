@@ -20,7 +20,7 @@ attribute @s minecraft:armor modifier remove azr_chainkill_03
 attribute @s minecraft:attack_speed modifier remove azr_chainkill_04
 function skyblock:azr/update_bossbar
 #更新战绩
-execute unless score @s SeGa_StandLastBH matches -2147483648..2147483647 run scoreboard players set @s Azr_system 0
+execute unless score @s SeGa_StandLastBH matches -2147483648..2147483647 run scoreboard players set @s SeGa_StandLastBH 0
 execute if score @s SeGa_StandLastBH < @s Azr_wave run scoreboard players operation @s SeGa_StandLastBH = @s Azr_wave
 #后续处理
 execute if entity @s[x=-79900,y=40,z=0,distance=0..800] run spawnpoint @s -79953 38 -14 -90

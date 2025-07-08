@@ -56,14 +56,14 @@ execute if score stage_main_thread TimerStack matches 58 positioned -79935 38 8 
 execute if score stage_main_thread TimerStack matches 58 positioned -79927 38 20 run function skyblock:azr/m/pillager_t1
 execute if score stage_main_thread TimerStack matches 58 positioned -79927 38 8 run function skyblock:azr/m/pillager_t1
 execute if score stage_main_thread TimerStack matches 59..61 unless entity @n[tag=AzrielMob] run scoreboard players set stage_main_thread TimerStack 62
-execute store result score temp_rng Azr_system run random value 1..3
-execute if score stage_main_thread TimerStack matches 62 if score temp_rng Azr_system matches 1 positioned -79927 38 12 run function skyblock:azr/m/cow
+execute store result score #temp_rng Azr_system run random value 1..3
+execute if score stage_main_thread TimerStack matches 62 if score #temp_rng Azr_system matches 1 positioned -79927 38 12 run function skyblock:azr/m/cow
 execute if score stage_main_thread TimerStack matches 63..66 unless entity @n[tag=AzrielMob] run scoreboard players set stage_main_thread TimerStack 67
 execute if score stage_main_thread TimerStack matches 67 positioned -79922 38 14 run function skyblock:azr/m/zombie_t1_5hp_full_armor
 execute if score stage_main_thread TimerStack matches 68 unless entity @n[tag=AzrielMob] run scoreboard players set stage_main_thread TimerStack 69
 execute if score stage_main_thread TimerStack matches 69 if score playerCount Azr_system matches 2.. positioned -79922 38 14 run function skyblock:azr/m/zombie_t1_5hp_full_armor
 execute if score stage_main_thread TimerStack matches 70..71 unless entity @n[tag=AzrielMob] run scoreboard players set stage_main_thread TimerStack 72
-execute if score stage_main_thread TimerStack matches 72 if score temp_rng Azr_system matches 1 positioned -79927 38 8 run function skyblock:azr/m/cow
+execute if score stage_main_thread TimerStack matches 72 if score #temp_rng Azr_system matches 1 positioned -79927 38 8 run function skyblock:azr/m/cow
 execute if score stage_main_thread TimerStack matches 72 positioned -79940 38 14 run function skyblock:azr/m/zombie_t2_shield
 execute if score stage_main_thread TimerStack matches 73 unless entity @n[tag=AzrielMob] run scoreboard players set stage_main_thread TimerStack 74
 execute if score stage_main_thread TimerStack matches 74 if score playerCount Azr_system matches 2.. positioned -79940 38 14 run function skyblock:azr/m/zombie_t2_shield
@@ -87,9 +87,9 @@ execute if score stage_main_thread TimerStack matches 110 positioned -79940 38 1
 execute if score stage_main_thread TimerStack matches 111..116 unless entity @n[tag=AzrielMob] run scoreboard players set stage_main_thread TimerStack 117
 execute if score stage_main_thread TimerStack matches 110 positioned -79922 38 14 run function skyblock:azr/m/zombie_t2_shovel
 execute if score stage_main_thread TimerStack matches 117..122 unless entity @n[tag=AzrielMob] run scoreboard players set stage_main_thread TimerStack 123
-execute store result score temp_rng Azr_system run random value 1..3
-execute if score stage_main_thread TimerStack matches 123 if score temp_rng Azr_system matches 1 positioned -79940 38 14 run function skyblock:azr/m/zombie_t1_5hp_full_armor
-execute if score stage_main_thread TimerStack matches 123 if score temp_rng Azr_system matches 2 positioned -79922 38 14 run function skyblock:azr/m/zombie_t2_shield
+execute store result score #temp_rng Azr_system run random value 1..3
+execute if score stage_main_thread TimerStack matches 123 if score #temp_rng Azr_system matches 1 positioned -79940 38 14 run function skyblock:azr/m/zombie_t1_5hp_full_armor
+execute if score stage_main_thread TimerStack matches 123 if score #temp_rng Azr_system matches 2 positioned -79922 38 14 run function skyblock:azr/m/zombie_t2_shield
 execute if score stage_main_thread TimerStack matches 125 positioned -79940 38 14 run function skyblock:azr/m/zombie_t1_5hp_full_armor
 execute if score stage_main_thread TimerStack matches 125 if score playerCount Azr_system matches 2.. positioned -79940 38 14 run function skyblock:azr/m/zombie_t1_5hp_full_armor
 execute if score stage_main_thread TimerStack matches 126..131 unless entity @n[tag=AzrielMob] run scoreboard players set stage_main_thread TimerStack 132

@@ -65,8 +65,8 @@ execute as @e[tag=arroworb2,type=marker] at @s run function skyblock:azr/stage/b
     execute if score tick_main_thread TimerStack matches 90 as @e[tag=AzrielBossA,limit=3] at @s run function skyblock:azr/stage/boss1/tp1
 #AI
     #每刻有1/8的肯面向最近玩家
-    execute store result score temp_rng Azr_system run random value 1..8
-    execute if score tick_main_thread TimerStack matches 152..2800 if score temp_rng Azr_system matches 1 as @e[tag=AzrielBossA,limit=3] at @s run tp @s ~ ~ ~ facing entity @p[tag=azrPlayer]
+    execute store result score #temp_rng Azr_system run random value 1..8
+    execute if score tick_main_thread TimerStack matches 152..2800 if score #temp_rng Azr_system matches 1 as @e[tag=AzrielBossA,limit=3] at @s run tp @s ~ ~ ~ facing entity @p[tag=azrPlayer]
     execute if score tick_main_thread TimerStack matches 152..2800 run team join AzrBossA @e[tag=AzrielMob,x=-79931,y=38,z=88,distance=..20]
     #状态效果控制
     effect clear @a[tag=azrPlayer] blindness
@@ -74,9 +74,9 @@ execute as @e[tag=arroworb2,type=marker] at @s run function skyblock:azr/stage/b
     effect give @e[tag=AzrielBossA] slow_falling 10 0 true
     #防止坠入虚空 传送到定点或传送到玩家各有一半可能
     execute as @e[tag=AzrielBossA,limit=1] at @s if entity @s[y=0,dy=36] run effect give @s speed 3 1 false
-    execute as @e[tag=AzrielBossA,limit=1] at @s if entity @s[y=0,dy=36] store result score temp_rng Azr_system run random value 1..2
-    execute as @e[tag=AzrielBossA,limit=1] at @s if entity @s[y=0,dy=36] if score temp_rng Azr_system matches 1 run tp @s @r[tag=azrPlayer]
-    execute as @e[tag=AzrielBossA,limit=1] at @s if entity @s[y=0,dy=36] if score temp_rng Azr_system matches 2 run tp @s -79931 45 88
+    execute as @e[tag=AzrielBossA,limit=1] at @s if entity @s[y=0,dy=36] store result score #temp_rng Azr_system run random value 1..2
+    execute as @e[tag=AzrielBossA,limit=1] at @s if entity @s[y=0,dy=36] if score #temp_rng Azr_system matches 1 run tp @s @r[tag=azrPlayer]
+    execute as @e[tag=AzrielBossA,limit=1] at @s if entity @s[y=0,dy=36] if score #temp_rng Azr_system matches 2 run tp @s -79931 45 88
     #防止卡在墙内 传送到最近玩家
     execute as @e[tag=AzrielBossA,limit=1] at @s if block ~ ~1 ~ quartz_block run tp @s @r[tag=azrPlayer]
     execute as @e[tag=AzrielBossA,limit=1] at @s if block ~ ~1 ~ quartz_bricks run tp @s @r[tag=azrPlayer]
