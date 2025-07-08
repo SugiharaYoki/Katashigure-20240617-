@@ -95,7 +95,7 @@ execute if score isStarted Azr_system matches 1 if score gametick_static_5s Azr_
     #timerTimer读秒，要停下只需reset记分板
     execute if entity @a[tag=azrPlayer] if score gametick Azr_system matches -2147483648..2147483647 run scoreboard players add gametick Azr_system 1
     execute if entity @a[tag=azrPlayer] if score gametick_static_5s Azr_system matches -2147483648..2147483647 run scoreboard players add gametick_static_5s Azr_system 1
-    execute if score tickTimer Azr_system matches -2147483648..2147483647 run scoreboard players add tickTimer Azr_system 1
+    execute if score tick_main_thread TimerStack matches -2147483648..2147483647 run scoreboard players add tick_main_thread TimerStack 1
     #stage1 event code:2
     execute if score isStarted Azr_system matches 1 if score stage Azr_system matches 2 run function skyblock:azr/stage/stage1_event
     #BOSS1 code:10

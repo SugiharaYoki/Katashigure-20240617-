@@ -10,7 +10,7 @@ execute if score playerCount Azr_system matches 1..4 if score mobCount Azr_syste
 execute if score playerCount Azr_system matches 5..6 if score mobCount Azr_system matches 9.. run scoreboard players set stopSeconds Azr_system 1
 execute if score playerCount Azr_system matches 7.. if score mobCount Azr_system matches 10.. run scoreboard players set stopSeconds Azr_system 1
 #自动读秒
-execute unless score stopSeconds Azr_system matches 1 run scoreboard players add stageSeconds Azr_system 1
+execute unless score stopSeconds Azr_system matches 1 run scoreboard players add stage_main_thread TimerStack 1
 #在部分关卡强制读秒
 execute if score stopSeconds Azr_system matches 1 run function skyblock:azr/system_sub/force_seconds
 
@@ -19,22 +19,22 @@ execute as @e[type=zombie,tag=AZRknight,x=-79943,y=38,z=135,distance=..4000] at 
 
 #关卡控制部分
 #开始-第一关 1
-execute if score stage Azr_system matches 1 run scoreboard players set stageSeconds Azr_system 0
+execute if score stage Azr_system matches 1 run scoreboard players set stage_main_thread TimerStack 0
 #第一关 2
 execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 2 if score playerCount Azr_system matches 1..2 run function skyblock:azr/stage/stage1
 execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 2 if score playerCount Azr_system matches 3.. run function skyblock:azr/stage/stage1_beta
 #第一关-第二关 3
-execute if score stage Azr_system matches 3 run scoreboard players set stageSeconds Azr_system 0
+execute if score stage Azr_system matches 3 run scoreboard players set stage_main_thread TimerStack 0
 #第二关 4
 execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 4 if score playerCount Azr_system matches 1..2 run function skyblock:azr/stage/stage2
 execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 4 if score playerCount Azr_system matches 3.. run function skyblock:azr/stage/stage2_beta
 #第二关-第三关 5
-execute if score stage Azr_system matches 5 run scoreboard players set stageSeconds Azr_system 0
+execute if score stage Azr_system matches 5 run scoreboard players set stage_main_thread TimerStack 0
 #第三关 6/32
 execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 6 run function skyblock:azr/stage/stage3
 execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 32 run function skyblock:azr/stage/stage3_beta
 #第三关-第四关 7
-execute if score stage Azr_system matches 7 run scoreboard players set stageSeconds Azr_system 0
+execute if score stage Azr_system matches 7 run scoreboard players set stage_main_thread TimerStack 0
 #第四关 8/33
 execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 8 run function skyblock:azr/stage/stage4
 execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 33 run function skyblock:azr/stage/stage4_beta
@@ -44,11 +44,11 @@ execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system 
 #BOSS1 10
     # azr/main.mcfunction
 #BOSS1-第五关 11
-execute if score stage Azr_system matches 11 run scoreboard players set stageSeconds Azr_system 0
+execute if score stage Azr_system matches 11 run scoreboard players set stage_main_thread TimerStack 0
 #第五关 12..13
 execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 12..13 run function skyblock:azr/stage/stage5
 #第五关-第六关 14
-execute if score stage Azr_system matches 7 run scoreboard players set stageSeconds Azr_system 0
+execute if score stage Azr_system matches 7 run scoreboard players set stage_main_thread TimerStack 0
 #第六关 15
 execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 15 run function skyblock:azr/stage/stage6
 #第六关-第七关 16
@@ -58,7 +58,7 @@ execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system 
 #第七关beta 18
 execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 18 run function skyblock:azr/stage/stage7_beta
 #第七关-第八关 19
-execute if score stage Azr_system matches 19 run scoreboard players set stageSeconds Azr_system 0
+execute if score stage Azr_system matches 19 run scoreboard players set stage_main_thread TimerStack 0
 #图书馆 (After Stage Vestige) 241
 execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 241 run function skyblock:azr/stage/stage_event6
 #第八关 20
@@ -74,7 +74,7 @@ execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system 
 #event5 27
 execute if score stage Azr_system matches 27 run function skyblock:azr/stage/stage_event5
 #event5-第十关 28
-execute if score stage Azr_system matches 28 run scoreboard players set stageSeconds Azr_system 0
+execute if score stage Azr_system matches 28 run scoreboard players set stage_main_thread TimerStack 0
 #第十关 35
 execute if score stage Azr_system matches 35 run function skyblock:azr/stage/stage10
 #event8 35..36
@@ -95,6 +95,9 @@ execute if score stage Azr_system matches 43 as @e[tag=!AzrielExtreme,tag=Azriel
 execute if score stage Azr_system matches 43 as @e[tag=AzrielExtreme,tag=AzrielBossB,limit=1,x=-79900,y=130,z=0,distance=0..1300] at @s run function skyblock:azr/stage/stage_boss3_ex
 
 # 第四章，由于结构复杂采用另一种方式记录
+    # ch4 env 52..70 AND 73..99
+    execute if score stage Azr_system matches 52..70 run function skyblock:azr/system_sub/ch4_env
+    execute if score stage Azr_system matches 73..99 run function skyblock:azr/system_sub/ch4_env
     # event12 44
     execute if score stage Azr_system matches 44 run function skyblock:azr/stage/stage_event12
     # 第13关 51

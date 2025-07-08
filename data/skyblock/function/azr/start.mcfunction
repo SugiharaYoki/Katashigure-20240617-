@@ -23,16 +23,18 @@ scoreboard objectives add Azr_Shop_rng11 dummy
 scoreboard objectives add Azr_Shop_rng12 dummy
 scoreboard objectives add Azr_Shop_rng13 dummy
 scoreboard objectives add melonCount dummy
-scoreboard objectives add temp_timer1 dummy
-scoreboard objectives add temp_timer2 dummy
-scoreboard objectives add temp_timer3 dummy
-scoreboard objectives add temp_timer4 dummy
-scoreboard objectives add temp_timer5 dummy
-scoreboard objectives add temp_timer6 dummy
-scoreboard objectives add temp_timer7 dummy
-scoreboard objectives add temp_timer8 dummy
-scoreboard objectives add temp_timer9 dummy
-scoreboard objectives add temp_timer10 dummy
+scoreboard objectives add TimerStack dummy
+scoreboard objectives add EntityTimer dummy
+# scoreboard objectives add temp_timer1 dummy
+# scoreboard objectives add temp_timer2 dummy
+# scoreboard objectives add temp_timer3 dummy
+# scoreboard objectives add temp_timer4 dummy
+# scoreboard objectives add temp_timer5 dummy
+# scoreboard objectives add temp_timer6 dummy
+# scoreboard objectives add temp_timer7 dummy
+# scoreboard objectives add temp_timer8 dummy
+# scoreboard objectives add temp_timer9 dummy
+# scoreboard objectives add temp_timer10 dummy
 #Azr_arrowOrbTimer用于boss技能
 scoreboard objectives add Azr_arrowOrbTimer dummy
 scoreboard objectives add Azr_shopChapter dummy
