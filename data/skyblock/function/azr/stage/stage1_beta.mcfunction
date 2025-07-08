@@ -8,8 +8,8 @@ execute if score stage_main_thread TimerStack matches 1 run bossbar set azr:prog
 execute if score stage_main_thread TimerStack matches 1 run tellraw @a[tag=DebugMode,tag=azrPlayer] [{"text":"[DEBUG MODE MESSAGE] You are playing \"Stage 1β\", with playerCount = "},{"score":{"objective":"Azr_system","name":"playerCount"}},{"text":" Maximum Seconds = 31"}]
 execute if score stage_main_thread TimerStack matches 1..31 store result bossbar azr:progress_bar_normal value run scoreboard players get stage_main_thread TimerStack
 execute if score stage_main_thread TimerStack matches 31 run bossbar remove azr:progress_bar_normal
-#wtf
-execute if score stage_main_thread TimerStack matches 2 run scoreboard players set tick_main_thread TimerStack -1
+#启动stage1_event
+execute if score stage_main_thread TimerStack matches 2 run scoreboard players set tick_main_thread TimerStack 0
 #关卡特效
 execute if score stage_main_thread TimerStack matches 11 positioned -79930.5 38.0 3.5 run function skyblock:azr/effects/basalt_open
 #刷怪时序
