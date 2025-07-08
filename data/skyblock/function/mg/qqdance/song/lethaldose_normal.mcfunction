@@ -1,6 +1,9 @@
 execute if score @s MG_qqd_t_abs matches 1 run playsound minecraft:vol2.lethaldose master @s ~ ~ ~ 1 1
 execute if score @s MG_qqd_t_abs matches 1 run scoreboard players set @s MG_qqd_t_rel 50000
 
+execute if score @s MG_qqd_step matches 128 run title @s title [{"text": "3", "color": "blue", "bold": true}]
+execute if score @s MG_qqd_step matches 148 run title @s title [{"text": "2", "color": "blue", "bold": true}]
+execute if score @s MG_qqd_step matches 168 run title @s title [{"text": "Ready", "color": "blue", "bold": true}]
 execute if score @s MG_qqd_t_abs matches 188 run scoreboard players set @s MG_qqd_step 1
 execute if score @s MG_qqd_t_abs matches 188 run scoreboard players set @s MG_qqd_t_rel 93
 execute if score @s MG_qqd_step matches 1 run title @s title [{"text": "↑ ↑ ← ↑", "color": "blue", "bold": true}]

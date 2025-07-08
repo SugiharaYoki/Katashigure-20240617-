@@ -1,6 +1,9 @@
 execute if score @s MG_qqd_t_abs matches 1 run playsound minecraft:vol2.nalca master @s ~ ~ ~ 1 1
 execute if score @s MG_qqd_t_abs matches 1 run scoreboard players set @s MG_qqd_t_rel 50000
 
+execute if score @s MG_qqd_step matches 95 run title @s title [{"text": "3", "color": "blue", "bold": true}]
+execute if score @s MG_qqd_step matches 115 run title @s title [{"text": "2", "color": "blue", "bold": true}]
+execute if score @s MG_qqd_step matches 135 run title @s title [{"text": "Ready", "color": "blue", "bold": true}]
 execute if score @s MG_qqd_t_abs matches 155 run scoreboard players set @s MG_qqd_step 1
 execute if score @s MG_qqd_t_abs matches 155 run scoreboard players set @s MG_qqd_t_rel 71
 execute if score @s MG_qqd_step matches 1 run title @s title [{"text": "← ← ↓ ↓", "color": "blue", "bold": true}]
@@ -456,7 +459,7 @@ execute if score @s MG_qqd_t_abs matches 2274 run scoreboard players set @s MG_q
 
 
 
-execute if score @s MG_qqd_t_abs matches 2274 run function skyblock:mg/qqdance/result
+execute if score @s MG_qqd_t_abs matches 2350 run function skyblock:mg/qqdance/result
 
 execute if entity @s[tag=MG_qqd_stepped,tag=!MG_qqd_stepped_x] run scoreboard players add @s MG_qqd_step 1
 execute if entity @s[tag=MG_qqd_stepped,tag=!MG_qqd_stepped_x] run playsound minecraft:block.note_block.hat music @a ~ ~ ~ 2 0.8
