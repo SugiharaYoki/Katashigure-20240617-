@@ -34,6 +34,7 @@ execute if score @s MG_qqd_t_abs matches 20 run scoreboard players set @s MG_qqd
 #execute if score @s MG_qqd_t_abs matches 200 run scoreboard players set @s MG_qqd_step 11
 
 
+execute if score @s MG_qqd_t_abs matches 2260 run function skyblock:mg/qqdance/result
 
 execute if entity @s[tag=MG_qqd_stepped,tag=!MG_qqd_stepped_x] run scoreboard players add @s MG_qqd_step 1
 execute if entity @s[tag=MG_qqd_stepped,tag=!MG_qqd_stepped_x] run playsound minecraft:block.note_block.hat music @a ~ ~ ~ 2 0.8
