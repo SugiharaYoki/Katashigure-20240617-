@@ -1,6 +1,5 @@
 playsound minecraft:ui.button.click master @s ~ ~ ~ 0.3 1.4 0.4
-tellraw @s[tag=!En] {"text":"「选择主城音乐」","color":"yellow"}
-tellraw @s[tag=En] {"text":"「Select Hometown BGM」","color":"yellow"}
+tellraw @s {"text":"「选择主城音乐」","color":"yellow"}
 tellraw @s {"text":" "}
 tellraw @s [{"text":"  Mall","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 52"},"hoverEvent":{"action":"show_text","contents":{"text":"将主城BGM改为浮世都的主题曲！","color":"white"}}},{"text":"  点唱","color":"gray","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 101752"},"hoverEvent":{"action":"show_text","contents":{"text":"立即播放该曲","color":"white"}}}]
 tellraw @s[tag=!Stal] [{"text":"  Stal","color":"dark_gray","hoverEvent":{"action":"show_text","contents":{"text":"在赌场进行购买","color":"yellow"}}}]
@@ -25,8 +24,6 @@ tellraw @s {"text":" "}
 tellraw @s[tag=!En] {"text":"   - 停止音乐 -","color":"red","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 101700"},"hoverEvent":{"action":"show_text","contents":{"text":"停止游戏目前正在播放的所有声音","color":"red"}}}
 tellraw @s[tag=En] {"text":"   - PAUSE -","color":"red","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 101700"},"hoverEvent":{"action":"show_text","contents":{"text":"停止游戏目前正在播放的所有声音","color":"red"}}}
 tellraw @s {"text":" "}
-tellraw @s[tag=!En] {"text":"   [返回设置]","color":"yellow","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 3"},"hoverEvent":{"action":"show_text","contents":{"text":"回到上一页","color":"green"}}}
-tellraw @s[tag=En] {"text":"   [Back to Setting]","color":"yellow","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 3"},"hoverEvent":{"action":"show_text","contents":{"text":"Back to last page","color":"green"}}}
-tellraw @s[tag=!En] {"text":"   [返回主菜单]","color":"yellow","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 991"},"hoverEvent":{"action":"show_text","contents":{"text":"返回主菜单","color":"green"}}}
-tellraw @s[tag=En] {"text":"   [Back to Main Page]","color":"yellow","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 991"},"hoverEvent":{"action":"show_text","contents":{"text":"Back to the very first page","color":"green"}}}
+tellraw @s {"text":"   [返回设置]","color":"yellow","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 3"},"hoverEvent":{"action":"show_text","contents":{"text":"回到上一页","color":"green"}}}
+tellraw @s {"text":"   [返回主菜单]","color":"yellow","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 991"},"hoverEvent":{"action":"show_text","contents":{"text":"返回主菜单","color":"green"}}}
 scoreboard players set @s MultiMenu 0
