@@ -3,8 +3,8 @@ execute if score @s MG_qqd_t_abs matches 1 run playsound minecraft:vol2.lethaldo
 execute if score @s MG_qqd_t_abs matches 20 run scoreboard players set @s MG_qqd_step 1
 
 execute if score @s MG_qqd_step matches 1 run title @s title [{"text":"↑ ↑ ↑","color":"blue","bold":true}]
-execute if score @s MG_qqd_step matches 2 run title @s title [{"text":"↑","color":"green","bold":true},{"text":"  ↑ ↑","color":"blue","bold":true}]
-execute if score @s MG_qqd_step matches 3 run title @s title [{"text":"↑ ↑","color":"green","bold":true},{"text":"  ↑","color":"blue","bold":true}]
+execute if score @s MG_qqd_step matches 2 run title @s title [{"text":"↑","color":"green","bold":true},{"text":" ↑ ↑","color":"blue","bold":true}]
+execute if score @s MG_qqd_step matches 3 run title @s title [{"text":"↑ ↑","color":"green","bold":true},{"text":" ↑","color":"blue","bold":true}]
 execute if score @s MG_qqd_step matches 4 run title @s title [{"text":"↑ ↑ ↑","color":"green","bold":true},{"text":" ","color":"blue","bold":true}]
 execute if score @s MG_qqd_step matches 5 run title @s title [{"text":"-","color":"blue","bold":true}]
 
