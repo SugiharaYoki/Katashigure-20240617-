@@ -41,3 +41,4 @@ execute as @s[scores={MultiMenu=836029}] at @s run scoreboard players set @s MG_
 tag @s add Gaming
 tag @s add MG_qqd
 
+scoreboard players set @s MultiMenu 0
