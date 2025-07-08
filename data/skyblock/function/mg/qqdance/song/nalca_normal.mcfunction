@@ -287,14 +287,15 @@ execute if score @s MG_qqd_step matches 192 if entity @s[predicate=skyblock:back
 execute if score @s MG_qqd_t_abs matches 1608 run scoreboard players set @s MG_qqd_t_rel 5000
 execute if score @s MG_qqd_t_abs matches 1608 run scoreboard players set @s[scores={MG_qqd_step=..192}] MG_qqd_t_rel -50
 execute if score @s MG_qqd_t_abs matches 1608 run scoreboard players set @s MG_qqd_step 201
-execute if score @s MG_qqd_t_abs matches 1608 run scoreboard players set @s[scores={MG_qqd_t_rel=0..}] MG_qqd_t_rel 71
+execute if score @s MG_qqd_t_abs matches 1608 run scoreboard players set @s[scores={MG_qqd_t_rel=0..}] MG_qqd_t_rel 35
 execute if score @s MG_qqd_step matches 201 run title @s title [{"text": "→", "color": "blue", "bold": true}]
 execute if score @s MG_qqd_step matches 202 run title @s title [{"text": "→", "color": "green", "bold": true}]
 execute if score @s MG_qqd_step matches 201 if entity @s[predicate=skyblock:right,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
-execute if score @s MG_qqd_t_abs matches 1679 run scoreboard players set @s MG_qqd_t_rel 5000
-execute if score @s MG_qqd_t_abs matches 1679 run scoreboard players set @s[scores={MG_qqd_step=..201}] MG_qqd_t_rel -50
-execute if score @s MG_qqd_t_abs matches 1679 run scoreboard players set @s MG_qqd_step 211
-execute if score @s MG_qqd_t_abs matches 1679 run scoreboard players set @s[scores={MG_qqd_t_rel=0..}] MG_qqd_t_rel 71
+execute if score @s MG_qqd_t_abs matches 1643 run scoreboard players set @s MG_qqd_t_rel 5000
+execute if score @s MG_qqd_t_abs matches 1643 run scoreboard players set @s[scores={MG_qqd_step=..201}] MG_qqd_t_rel -50
+execute if score @s MG_qqd_t_abs matches 1643 run scoreboard players set @s MG_qqd_step 211
+execute if score @s MG_qqd_t_abs matches 1643 run scoreboard players set @s[scores={MG_qqd_t_rel=0..}] MG_qqd_t_rel 71
+
 execute if score @s MG_qqd_step matches 211 run title @s title [{"text": "← ↓ → ↓ ← →", "color": "blue", "bold": true}]
 execute if score @s MG_qqd_step matches 212 run title @s title [{"text": "←", "color": "green", "bold": true}, {"text": " ↓ → ↓ ← →", "color": "blue", "bold": true}]
 execute if score @s MG_qqd_step matches 213 run title @s title [{"text": "← ↓", "color": "green", "bold": true}, {"text": " → ↓ ← →", "color": "blue", "bold": true}]
@@ -308,10 +309,10 @@ execute if score @s MG_qqd_step matches 213 if entity @s[predicate=skyblock:righ
 execute if score @s MG_qqd_step matches 214 if entity @s[predicate=skyblock:backward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 215 if entity @s[predicate=skyblock:left,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 216 if entity @s[predicate=skyblock:right,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
-execute if score @s MG_qqd_t_abs matches 1750 run scoreboard players set @s MG_qqd_t_rel 5000
-execute if score @s MG_qqd_t_abs matches 1750 run scoreboard players set @s[scores={MG_qqd_step=..216}] MG_qqd_t_rel -50
-execute if score @s MG_qqd_t_abs matches 1750 run scoreboard players set @s MG_qqd_step 221
-execute if score @s MG_qqd_t_abs matches 1750 run scoreboard players set @s[scores={MG_qqd_t_rel=0..}] MG_qqd_t_rel 71
+execute if score @s MG_qqd_t_abs matches 1714 run scoreboard players set @s MG_qqd_t_rel 5000
+execute if score @s MG_qqd_t_abs matches 1714 run scoreboard players set @s[scores={MG_qqd_step=..216}] MG_qqd_t_rel -50
+execute if score @s MG_qqd_t_abs matches 1714 run scoreboard players set @s MG_qqd_step 221
+execute if score @s MG_qqd_t_abs matches 1714 run scoreboard players set @s[scores={MG_qqd_t_rel=0..}] MG_qqd_t_rel 71
 execute if score @s MG_qqd_step matches 221 run title @s title [{"text": "→ ↑ ← ↓ → ↓", "color": "blue", "bold": true}]
 execute if score @s MG_qqd_step matches 222 run title @s title [{"text": "→", "color": "green", "bold": true}, {"text": " ↑ ← ↓ → ↓", "color": "blue", "bold": true}]
 execute if score @s MG_qqd_step matches 223 run title @s title [{"text": "→ ↑", "color": "green", "bold": true}, {"text": " ← ↓ → ↓", "color": "blue", "bold": true}]
@@ -325,10 +326,10 @@ execute if score @s MG_qqd_step matches 223 if entity @s[predicate=skyblock:left
 execute if score @s MG_qqd_step matches 224 if entity @s[predicate=skyblock:backward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 225 if entity @s[predicate=skyblock:right,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 226 if entity @s[predicate=skyblock:backward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
-execute if score @s MG_qqd_t_abs matches 1821 run scoreboard players set @s MG_qqd_t_rel 5000
-execute if score @s MG_qqd_t_abs matches 1821 run scoreboard players set @s[scores={MG_qqd_step=..226}] MG_qqd_t_rel -50
-execute if score @s MG_qqd_t_abs matches 1821 run scoreboard players set @s MG_qqd_step 231
-execute if score @s MG_qqd_t_abs matches 1821 run scoreboard players set @s[scores={MG_qqd_t_rel=0..}] MG_qqd_t_rel 71
+execute if score @s MG_qqd_t_abs matches 1785 run scoreboard players set @s MG_qqd_t_rel 5000
+execute if score @s MG_qqd_t_abs matches 1785 run scoreboard players set @s[scores={MG_qqd_step=..226}] MG_qqd_t_rel -50
+execute if score @s MG_qqd_t_abs matches 1785 run scoreboard players set @s MG_qqd_step 231
+execute if score @s MG_qqd_t_abs matches 1785 run scoreboard players set @s[scores={MG_qqd_t_rel=0..}] MG_qqd_t_rel 71
 execute if score @s MG_qqd_step matches 231 run title @s title [{"text": "→ ↑ ← ↓ → ←", "color": "blue", "bold": true}]
 execute if score @s MG_qqd_step matches 232 run title @s title [{"text": "→", "color": "green", "bold": true}, {"text": " ↑ ← ↓ → ←", "color": "blue", "bold": true}]
 execute if score @s MG_qqd_step matches 233 run title @s title [{"text": "→ ↑", "color": "green", "bold": true}, {"text": " ← ↓ → ←", "color": "blue", "bold": true}]
@@ -342,10 +343,10 @@ execute if score @s MG_qqd_step matches 233 if entity @s[predicate=skyblock:left
 execute if score @s MG_qqd_step matches 234 if entity @s[predicate=skyblock:backward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 235 if entity @s[predicate=skyblock:right,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 236 if entity @s[predicate=skyblock:left,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
-execute if score @s MG_qqd_t_abs matches 1892 run scoreboard players set @s MG_qqd_t_rel 5000
-execute if score @s MG_qqd_t_abs matches 1892 run scoreboard players set @s[scores={MG_qqd_step=..236}] MG_qqd_t_rel -50
-execute if score @s MG_qqd_t_abs matches 1892 run scoreboard players set @s MG_qqd_step 241
-execute if score @s MG_qqd_t_abs matches 1892 run scoreboard players set @s[scores={MG_qqd_t_rel=0..}] MG_qqd_t_rel 71
+execute if score @s MG_qqd_t_abs matches 1856 run scoreboard players set @s MG_qqd_t_rel 5000
+execute if score @s MG_qqd_t_abs matches 1856 run scoreboard players set @s[scores={MG_qqd_step=..236}] MG_qqd_t_rel -50
+execute if score @s MG_qqd_t_abs matches 1856 run scoreboard players set @s MG_qqd_step 241
+execute if score @s MG_qqd_t_abs matches 1856 run scoreboard players set @s[scores={MG_qqd_t_rel=0..}] MG_qqd_t_rel 71
 execute if score @s MG_qqd_step matches 241 run title @s title [{"text": "← ↑ → ↓ ← ↓", "color": "blue", "bold": true}]
 execute if score @s MG_qqd_step matches 242 run title @s title [{"text": "←", "color": "green", "bold": true}, {"text": " ↑ → ↓ ← ↓", "color": "blue", "bold": true}]
 execute if score @s MG_qqd_step matches 243 run title @s title [{"text": "← ↑", "color": "green", "bold": true}, {"text": " → ↓ ← ↓", "color": "blue", "bold": true}]
@@ -359,10 +360,10 @@ execute if score @s MG_qqd_step matches 243 if entity @s[predicate=skyblock:righ
 execute if score @s MG_qqd_step matches 244 if entity @s[predicate=skyblock:backward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 245 if entity @s[predicate=skyblock:left,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 246 if entity @s[predicate=skyblock:backward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
-execute if score @s MG_qqd_t_abs matches 1963 run scoreboard players set @s MG_qqd_t_rel 5000
-execute if score @s MG_qqd_t_abs matches 1963 run scoreboard players set @s[scores={MG_qqd_step=..246}] MG_qqd_t_rel -50
-execute if score @s MG_qqd_t_abs matches 1963 run scoreboard players set @s MG_qqd_step 251
-execute if score @s MG_qqd_t_abs matches 1963 run scoreboard players set @s[scores={MG_qqd_t_rel=0..}] MG_qqd_t_rel 71
+execute if score @s MG_qqd_t_abs matches 1927 run scoreboard players set @s MG_qqd_t_rel 5000
+execute if score @s MG_qqd_t_abs matches 1927 run scoreboard players set @s[scores={MG_qqd_step=..246}] MG_qqd_t_rel -50
+execute if score @s MG_qqd_t_abs matches 1927 run scoreboard players set @s MG_qqd_step 251
+execute if score @s MG_qqd_t_abs matches 1927 run scoreboard players set @s[scores={MG_qqd_t_rel=0..}] MG_qqd_t_rel 71
 execute if score @s MG_qqd_step matches 251 run title @s title [{"text": "← ↑ → ↓ ← ↑ →", "color": "blue", "bold": true}]
 execute if score @s MG_qqd_step matches 252 run title @s title [{"text": "←", "color": "green", "bold": true}, {"text": " ↑ → ↓ ← ↑ →", "color": "blue", "bold": true}]
 execute if score @s MG_qqd_step matches 253 run title @s title [{"text": "← ↑", "color": "green", "bold": true}, {"text": " → ↓ ← ↑ →", "color": "blue", "bold": true}]
@@ -378,10 +379,10 @@ execute if score @s MG_qqd_step matches 254 if entity @s[predicate=skyblock:back
 execute if score @s MG_qqd_step matches 255 if entity @s[predicate=skyblock:left,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 256 if entity @s[predicate=skyblock:forward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 257 if entity @s[predicate=skyblock:right,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
-execute if score @s MG_qqd_t_abs matches 2034 run scoreboard players set @s MG_qqd_t_rel 5000
-execute if score @s MG_qqd_t_abs matches 2034 run scoreboard players set @s[scores={MG_qqd_step=..257}] MG_qqd_t_rel -50
-execute if score @s MG_qqd_t_abs matches 2034 run scoreboard players set @s MG_qqd_step 261
-execute if score @s MG_qqd_t_abs matches 2034 run scoreboard players set @s[scores={MG_qqd_t_rel=0..}] MG_qqd_t_rel 71
+execute if score @s MG_qqd_t_abs matches 1998 run scoreboard players set @s MG_qqd_t_rel 5000
+execute if score @s MG_qqd_t_abs matches 1998 run scoreboard players set @s[scores={MG_qqd_step=..257}] MG_qqd_t_rel -50
+execute if score @s MG_qqd_t_abs matches 1998 run scoreboard players set @s MG_qqd_step 261
+execute if score @s MG_qqd_t_abs matches 1998 run scoreboard players set @s[scores={MG_qqd_t_rel=0..}] MG_qqd_t_rel 71
 execute if score @s MG_qqd_step matches 261 run title @s title [{"text": "→ ↑ ← ↓ → ↑ ←", "color": "blue", "bold": true}]
 execute if score @s MG_qqd_step matches 262 run title @s title [{"text": "→", "color": "green", "bold": true}, {"text": " ↑ ← ↓ → ↑ ←", "color": "blue", "bold": true}]
 execute if score @s MG_qqd_step matches 263 run title @s title [{"text": "→ ↑", "color": "green", "bold": true}, {"text": " ← ↓ → ↑ ←", "color": "blue", "bold": true}]
@@ -397,10 +398,10 @@ execute if score @s MG_qqd_step matches 264 if entity @s[predicate=skyblock:back
 execute if score @s MG_qqd_step matches 265 if entity @s[predicate=skyblock:right,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 266 if entity @s[predicate=skyblock:forward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 267 if entity @s[predicate=skyblock:left,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
-execute if score @s MG_qqd_t_abs matches 2105 run scoreboard players set @s MG_qqd_t_rel 5000
-execute if score @s MG_qqd_t_abs matches 2105 run scoreboard players set @s[scores={MG_qqd_step=..267}] MG_qqd_t_rel -50
-execute if score @s MG_qqd_t_abs matches 2105 run scoreboard players set @s MG_qqd_step 271
-execute if score @s MG_qqd_t_abs matches 2105 run scoreboard players set @s[scores={MG_qqd_t_rel=0..}] MG_qqd_t_rel 71
+execute if score @s MG_qqd_t_abs matches 2069 run scoreboard players set @s MG_qqd_t_rel 5000
+execute if score @s MG_qqd_t_abs matches 2069 run scoreboard players set @s[scores={MG_qqd_step=..267}] MG_qqd_t_rel -50
+execute if score @s MG_qqd_t_abs matches 2069 run scoreboard players set @s MG_qqd_step 271
+execute if score @s MG_qqd_t_abs matches 2069 run scoreboard players set @s[scores={MG_qqd_t_rel=0..}] MG_qqd_t_rel 71
 execute if score @s MG_qqd_step matches 271 run title @s title [{"text": "← ↓ → → ↓ ←", "color": "blue", "bold": true}]
 execute if score @s MG_qqd_step matches 272 run title @s title [{"text": "←", "color": "green", "bold": true}, {"text": " ↓ → → ↓ ←", "color": "blue", "bold": true}]
 execute if score @s MG_qqd_step matches 273 run title @s title [{"text": "← ↓", "color": "green", "bold": true}, {"text": " → → ↓ ←", "color": "blue", "bold": true}]
@@ -414,10 +415,10 @@ execute if score @s MG_qqd_step matches 273 if entity @s[predicate=skyblock:righ
 execute if score @s MG_qqd_step matches 274 if entity @s[predicate=skyblock:right,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 275 if entity @s[predicate=skyblock:backward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 276 if entity @s[predicate=skyblock:left,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
-execute if score @s MG_qqd_t_abs matches 2176 run scoreboard players set @s MG_qqd_t_rel 5000
-execute if score @s MG_qqd_t_abs matches 2176 run scoreboard players set @s[scores={MG_qqd_step=..276}] MG_qqd_t_rel -50
-execute if score @s MG_qqd_t_abs matches 2176 run scoreboard players set @s MG_qqd_step 281
-execute if score @s MG_qqd_t_abs matches 2176 run scoreboard players set @s[scores={MG_qqd_t_rel=0..}] MG_qqd_t_rel 71
+execute if score @s MG_qqd_t_abs matches 2140 run scoreboard players set @s MG_qqd_t_rel 5000
+execute if score @s MG_qqd_t_abs matches 2140 run scoreboard players set @s[scores={MG_qqd_step=..276}] MG_qqd_t_rel -50
+execute if score @s MG_qqd_t_abs matches 2140 run scoreboard players set @s MG_qqd_step 281
+execute if score @s MG_qqd_t_abs matches 2140 run scoreboard players set @s[scores={MG_qqd_t_rel=0..}] MG_qqd_t_rel 71
 execute if score @s MG_qqd_step matches 281 run title @s title [{"text": "→ ↓ ← ← ↓ →", "color": "blue", "bold": true}]
 execute if score @s MG_qqd_step matches 282 run title @s title [{"text": "→", "color": "green", "bold": true}, {"text": " ↓ ← ← ↓ →", "color": "blue", "bold": true}]
 execute if score @s MG_qqd_step matches 283 run title @s title [{"text": "→ ↓", "color": "green", "bold": true}, {"text": " ← ← ↓ →", "color": "blue", "bold": true}]
@@ -431,17 +432,31 @@ execute if score @s MG_qqd_step matches 283 if entity @s[predicate=skyblock:left
 execute if score @s MG_qqd_step matches 284 if entity @s[predicate=skyblock:left,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 285 if entity @s[predicate=skyblock:backward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 286 if entity @s[predicate=skyblock:right,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
-execute if score @s MG_qqd_t_abs matches 2247 run scoreboard players set @s MG_qqd_t_rel 5000
-execute if score @s MG_qqd_t_abs matches 2247 run scoreboard players set @s[scores={MG_qqd_step=..286}] MG_qqd_t_rel -50
-execute if score @s MG_qqd_t_abs matches 2247 run scoreboard players set @s MG_qqd_step 291
-execute if score @s MG_qqd_t_abs matches 2247 run scoreboard players set @s[scores={MG_qqd_t_rel=0..}] MG_qqd_t_rel 71
+execute if score @s MG_qqd_t_abs matches 2211 run scoreboard players set @s MG_qqd_t_rel 5000
+execute if score @s MG_qqd_t_abs matches 2211 run scoreboard players set @s[scores={MG_qqd_step=..286}] MG_qqd_t_rel -50
+execute if score @s MG_qqd_t_abs matches 2211 run scoreboard players set @s MG_qqd_step 291
+execute if score @s MG_qqd_t_abs matches 2211 run scoreboard players set @s[scores={MG_qqd_t_rel=0..}] MG_qqd_t_rel 71
+execute if score @s MG_qqd_step matches 291 run title @s title [{"text": "→ ↓ ← ↑ →", "color": "blue", "bold": true}]
+execute if score @s MG_qqd_step matches 292 run title @s title [{"text": "→", "color": "green", "bold": true}, {"text": " ↓ ← ↑ →", "color": "blue", "bold": true}]
+execute if score @s MG_qqd_step matches 293 run title @s title [{"text": "→ ↓", "color": "green", "bold": true}, {"text": " ← ↑ →", "color": "blue", "bold": true}]
+execute if score @s MG_qqd_step matches 294 run title @s title [{"text": "→ ↓ ←", "color": "green", "bold": true}, {"text": " ↑ →", "color": "blue", "bold": true}]
+execute if score @s MG_qqd_step matches 295 run title @s title [{"text": "→ ↓ ← ↑", "color": "green", "bold": true}, {"text": " →", "color": "blue", "bold": true}]
+execute if score @s MG_qqd_step matches 296 run title @s title [{"text": "→ ↓ ← ↑ →", "color": "green", "bold": true}]
+execute if score @s MG_qqd_step matches 291 if entity @s[predicate=skyblock:right,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
+execute if score @s MG_qqd_step matches 292 if entity @s[predicate=skyblock:backward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
+execute if score @s MG_qqd_step matches 293 if entity @s[predicate=skyblock:left,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
+execute if score @s MG_qqd_step matches 294 if entity @s[predicate=skyblock:forward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
+execute if score @s MG_qqd_step matches 295 if entity @s[predicate=skyblock:right,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
+execute if score @s MG_qqd_t_abs matches 2282 run scoreboard players set @s MG_qqd_t_rel 5000
+execute if score @s MG_qqd_t_abs matches 2282 run scoreboard players set @s[scores={MG_qqd_step=..295}] MG_qqd_t_rel -50
+execute if score @s MG_qqd_t_abs matches 2282 run scoreboard players set @s MG_qqd_step 301
 
 
 
 
 
 
-execute if score @s MG_qqd_t_abs matches 2260 run function skyblock:mg/qqdance/result
+execute if score @s MG_qqd_t_abs matches 2282 run function skyblock:mg/qqdance/result
 
 execute if entity @s[tag=MG_qqd_stepped,tag=!MG_qqd_stepped_x] run scoreboard players add @s MG_qqd_step 1
 execute if entity @s[tag=MG_qqd_stepped,tag=!MG_qqd_stepped_x] run playsound minecraft:block.note_block.hat music @a ~ ~ ~ 2 0.8
