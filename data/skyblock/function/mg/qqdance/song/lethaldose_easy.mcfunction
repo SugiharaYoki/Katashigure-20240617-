@@ -30,7 +30,7 @@ execute if score @s MG_qqd_step matches 8 if entity @s[predicate=skyblock:right,
 execute if score @s MG_qqd_t_abs matches 160 run scoreboard players set @s MG_qqd_t_rel 500
 execute if score @s MG_qqd_t_abs matches 160 run scoreboard players set @s[scores={MG_qqd_step=..8}] MG_qqd_t_rel -50
 execute if score @s MG_qqd_t_abs matches 160 run scoreboard players set @s MG_qqd_step 10
-execute if score @s MG_qqd_t_abs matches 100 run scoreboard players set @s MG_qqd_step 11
+execute if score @s MG_qqd_t_abs matches 200 run scoreboard players set @s MG_qqd_step 11
 
 
 
