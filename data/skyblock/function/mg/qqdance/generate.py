@@ -27,7 +27,7 @@ def generate_commands_from_file(file_path):
 
     output = []
 
-    # 第一行起始指令，step从1开始
+    # 起始指令，step从1开始
     output.append(f"execute if score @s MG_qqd_t_abs matches {abs_start} run scoreboard players set @s MG_qqd_step 1")
 
     current_abs = abs_start + split_interval_tick
@@ -35,15 +35,21 @@ def generate_commands_from_file(file_path):
 
     for idx, line in enumerate(directions_lines):
         directions = [c for c in line if c in input_to_direction]
-        arrow_line = ''.join(direction_to_arrow[input_to_direction[c]] for c in directions)
+
+        # 箭头用空格隔开
+        arrow_list = [direction_to_arrow[input_to_direction[c]] for c in directions]
+        arrow_line = ' '.join(arrow_list)  # 加空格分隔
 
         for j in range(len(directions) + 1):
             if j == len(directions):
                 title_parts = [{'text': arrow_line, 'color': 'green', 'bold': True}]
             else:
+                # 拆成两部分，注意切分时加空格的处理
+                first_part = ' '.join(arrow_list[:j+1])
+                second_part = ' '.join(arrow_list[j+1:])
                 title_parts = [
-                    {'text': arrow_line[:j+1], 'color': 'green', 'bold': True},
-                    {'text': arrow_line[j+1:], 'color': 'blue', 'bold': True}
+                    {'text': first_part, 'color': 'green', 'bold': True},
+                    {'text': (' ' + second_part) if second_part else '', 'color': 'blue', 'bold': True}
                 ]
             output.append(
                 f"execute if score @s MG_qqd_step matches {step_base + j} run title @s title {json.dumps(title_parts, ensure_ascii=False)}"
@@ -57,7 +63,11 @@ def generate_commands_from_file(file_path):
 
         output.append(f"execute if score @s MG_qqd_t_abs matches {current_abs} run scoreboard players set @s MG_qqd_t_rel 5000")
         output.append(f"execute if score @s MG_qqd_t_abs matches {current_abs} run scoreboard players set @s[scores={{MG_qqd_step=..{step_base + len(directions) - 1}}}] MG_qqd_t_rel -50")
-        output.append(f"execute if score @s MG_qqd_t_abs matches {current_abs} run scoreboard players set @s MG_qqd_step {step_base + len(directions)}")
+
+        # 这里计算下一组step的起点，取当前最大step向上取整到最近十位再加10
+        max_step = step_base + len(directions) - 1
+        next_step_base = ((max_step // 10) + 1) * 10 + 1
+        output.append(f"execute if score @s MG_qqd_t_abs matches {current_abs} run scoreboard players set @s MG_qqd_step {next_step_base}")
 
         next_abs = current_abs + split_interval_tick
         if next_abs <= abs_end:
@@ -67,7 +77,7 @@ def generate_commands_from_file(file_path):
         output.append(f"execute if score @s MG_qqd_t_abs matches {current_abs} run scoreboard players set @s MG_qqd_t_rel {interval}")
 
         current_abs += split_interval_tick
-        step_base += 10
+        step_base = next_step_base  # 更新 step_base 为下一组的起点
 
         if current_abs > abs_end:
             break
