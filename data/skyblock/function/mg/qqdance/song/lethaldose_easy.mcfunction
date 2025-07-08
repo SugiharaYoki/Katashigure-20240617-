@@ -5,7 +5,7 @@ execute if score @s MG_qqd_t_abs matches 20 run scoreboard players set @s MG_qqd
 execute if score @s MG_qqd_step matches 1 run title @s title [{"text":"↑ ↑ ↑","color":"blue","bold":true}]
 execute if score @s MG_qqd_step matches 2 run title @s title [{"text":"↑","color":"green","bold":true},{"text":" ↑ ↑","color":"blue","bold":true}]
 execute if score @s MG_qqd_step matches 3 run title @s title [{"text":"↑ ↑","color":"green","bold":true},{"text":" ↑","color":"blue","bold":true}]
-execute if score @s MG_qqd_step matches 4 run title @s title [{"text":"↑ ↑ ↑","color":"green","bold":true},{"text":" ","color":"blue","bold":true}]
+execute if score @s MG_qqd_step matches 4 run title @s title [{"text":"↑ ↑ ↑","color":"green","bold":true},{"text":"","color":"blue","bold":true}]
 execute if score @s MG_qqd_step matches 5 run title @s title [{"text":"-","color":"blue","bold":true}]
 
 execute if score @s MG_qqd_step matches 1 if entity @s[predicate=skyblock:forward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
@@ -18,9 +18,9 @@ execute if score @s MG_qqd_t_abs matches 80 run scoreboard players set @s MG_qqd
 execute if score @s MG_qqd_t_abs matches 100 run scoreboard players set @s MG_qqd_step 6
 
 execute if score @s MG_qqd_step matches 6 run title @s title [{"text":"← ↑ →","color":"blue","bold":true}]
-execute if score @s MG_qqd_step matches 7 run title @s title [{"text":"←","color":"green","bold":true},{"text":"  ↑ →","color":"blue","bold":true}]
-execute if score @s MG_qqd_step matches 8 run title @s title [{"text":"← ↑","color":"green","bold":true},{"text":"  →","color":"blue","bold":true}]
-execute if score @s MG_qqd_step matches 9 run title @s title [{"text":"← ↑ →","color":"green","bold":true},{"text":" ","color":"blue","bold":true}]
+execute if score @s MG_qqd_step matches 7 run title @s title [{"text":"←","color":"green","bold":true},{"text":" ↑ →","color":"blue","bold":true}]
+execute if score @s MG_qqd_step matches 8 run title @s title [{"text":"← ↑","color":"green","bold":true},{"text":" →","color":"blue","bold":true}]
+execute if score @s MG_qqd_step matches 9 run title @s title [{"text":"← ↑ →","color":"green","bold":true},{"text":"","color":"blue","bold":true}]
 execute if score @s MG_qqd_step matches 10 run title @s title [{"text":"-","color":"blue","bold":true}]
 
 execute if score @s MG_qqd_step matches 6 if entity @s[predicate=skyblock:left,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
