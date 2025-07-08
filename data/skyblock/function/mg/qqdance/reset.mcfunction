@@ -20,4 +20,8 @@ tag @s remove Gaming
 tag @s remove MG_qqd
 tag @s remove MG_qqd_stepped
 tag @s remove MG_qqd_stepped_x
+tag @s remove MG_qqd_stepped_a
+tag @s remove MG_qqd_stepped_d
+tag @s remove MG_qqd_stepped_w
+tag @s remove MG_qqd_stepped_s
 stopsound @s
