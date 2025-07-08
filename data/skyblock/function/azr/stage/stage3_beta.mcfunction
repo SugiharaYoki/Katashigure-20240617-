@@ -202,20 +202,20 @@ execute if score stage_main_thread TimerStack matches 185 positioned -79943 38 1
 execute if score stage_main_thread TimerStack matches 185 positioned -79943 38 10 run function skyblock:azr/m/spider_t1_swift
 execute if score stage_main_thread TimerStack matches 186 positioned -79943 38 10 run function skyblock:azr/m/spider_t1_ruin
 execute if score stage_main_thread TimerStack matches 187 positioned -79943 38 10 run function skyblock:azr/m/spider_t1_swift
-execute store result score temp_rng Azr_system run random value 1..4
-execute if score stage_main_thread TimerStack matches 187 if score temp_rng Azr_system matches 1 positioned -79943 38 10 run function skyblock:azr/m/spider_t1_dust
-execute if score stage_main_thread TimerStack matches 188 if score temp_rng Azr_system matches 2 positioned -79943 38 10 run function skyblock:azr/m/spider_t1_ruin
-execute if score stage_main_thread TimerStack matches 189 if score temp_rng Azr_system matches 3 positioned -79943 38 10 run function skyblock:azr/m/spider_t1_swift
-execute if score stage_main_thread TimerStack matches 190 if score temp_rng Azr_system matches 4 positioned -79943 38 10 run function skyblock:azr/m/spider_t1_swift
+execute store result score #temp_rng Azr_system run random value 1..4
+execute if score stage_main_thread TimerStack matches 187 if score #temp_rng Azr_system matches 1 positioned -79943 38 10 run function skyblock:azr/m/spider_t1_dust
+execute if score stage_main_thread TimerStack matches 188 if score #temp_rng Azr_system matches 2 positioned -79943 38 10 run function skyblock:azr/m/spider_t1_ruin
+execute if score stage_main_thread TimerStack matches 189 if score #temp_rng Azr_system matches 3 positioned -79943 38 10 run function skyblock:azr/m/spider_t1_swift
+execute if score stage_main_thread TimerStack matches 190 if score #temp_rng Azr_system matches 4 positioned -79943 38 10 run function skyblock:azr/m/spider_t1_swift
 execute if score stage_main_thread TimerStack matches 191..194 unless entity @n[tag=AzrielMob] run scoreboard players set stage_main_thread TimerStack 195
-execute if score stage_main_thread TimerStack matches 191 if score playerCount Azr_system matches 4.. if score temp_rng Azr_system matches 1 positioned -79943 38 10 run function skyblock:azr/m/spider_t1_dust
-execute if score stage_main_thread TimerStack matches 192 if score playerCount Azr_system matches 4.. if score temp_rng Azr_system matches 2 positioned -79943 38 10 run function skyblock:azr/m/spider_t1_ruin
-execute if score stage_main_thread TimerStack matches 193 if score playerCount Azr_system matches 4.. if score temp_rng Azr_system matches 3 positioned -79943 38 10 run function skyblock:azr/m/spider_t1_swift
-execute if score stage_main_thread TimerStack matches 194 if score playerCount Azr_system matches 4.. if score temp_rng Azr_system matches 4 positioned -79943 38 10 run function skyblock:azr/m/spider_t1_swift
-execute if score stage_main_thread TimerStack matches 195 if score temp_rng Azr_system matches 1 positioned -79943 38 10 run function skyblock:azr/m/spider_t1_dust
-execute if score stage_main_thread TimerStack matches 196 if score temp_rng Azr_system matches 2 positioned -79943 38 10 run function skyblock:azr/m/spider_t1_ruin
-execute if score stage_main_thread TimerStack matches 197 if score temp_rng Azr_system matches 3 positioned -79943 38 10 run function skyblock:azr/m/spider_t1_swift
-execute if score stage_main_thread TimerStack matches 196 if score temp_rng Azr_system matches 4 positioned -79943 38 10 run function skyblock:azr/m/spider_t1_swift
+execute if score stage_main_thread TimerStack matches 191 if score playerCount Azr_system matches 4.. if score #temp_rng Azr_system matches 1 positioned -79943 38 10 run function skyblock:azr/m/spider_t1_dust
+execute if score stage_main_thread TimerStack matches 192 if score playerCount Azr_system matches 4.. if score #temp_rng Azr_system matches 2 positioned -79943 38 10 run function skyblock:azr/m/spider_t1_ruin
+execute if score stage_main_thread TimerStack matches 193 if score playerCount Azr_system matches 4.. if score #temp_rng Azr_system matches 3 positioned -79943 38 10 run function skyblock:azr/m/spider_t1_swift
+execute if score stage_main_thread TimerStack matches 194 if score playerCount Azr_system matches 4.. if score #temp_rng Azr_system matches 4 positioned -79943 38 10 run function skyblock:azr/m/spider_t1_swift
+execute if score stage_main_thread TimerStack matches 195 if score #temp_rng Azr_system matches 1 positioned -79943 38 10 run function skyblock:azr/m/spider_t1_dust
+execute if score stage_main_thread TimerStack matches 196 if score #temp_rng Azr_system matches 2 positioned -79943 38 10 run function skyblock:azr/m/spider_t1_ruin
+execute if score stage_main_thread TimerStack matches 197 if score #temp_rng Azr_system matches 3 positioned -79943 38 10 run function skyblock:azr/m/spider_t1_swift
+execute if score stage_main_thread TimerStack matches 196 if score #temp_rng Azr_system matches 4 positioned -79943 38 10 run function skyblock:azr/m/spider_t1_swift
 execute if score stage_main_thread TimerStack matches 195 positioned -79943 38 10 run function skyblock:azr/m/spider_t1_swift
 execute if score stage_main_thread TimerStack matches 193 positioned -79943 38 10 run function skyblock:azr/m/spider_t1_swift
 execute if score stage_main_thread TimerStack matches 182 if score playerCount Azr_system matches 1.. positioned -79943 38 10 run function skyblock:azr/m/zombie_t1_5hp_full_armor

@@ -93,11 +93,11 @@ execute if score stage_main_thread TimerStack matches 118 positioned -79931 42.8
 execute if score stage_main_thread TimerStack matches 118 if score playerCount Azr_system matches 3.. positioned -79931 38 25 run function skyblock:azr/m/zombie_t1_4hp
 execute if score stage_main_thread TimerStack matches 119..122 unless entity @n[tag=AzrielMob] run scoreboard players set stage_main_thread TimerStack 123
 execute if score stage_main_thread TimerStack matches 123 positioned -79931 38 25 run function skyblock:azr/m/zombie_t1_4hp
-execute store result score temp_rng Azr_system run random value 1..4
-execute if score stage_main_thread TimerStack matches 124 if score temp_rng Azr_system matches 1 positioned -79931 42 40 run function skyblock:azr/m/pillager_t1_enchant
+execute store result score #temp_rng Azr_system run random value 1..4
+execute if score stage_main_thread TimerStack matches 124 if score #temp_rng Azr_system matches 1 positioned -79931 42 40 run function skyblock:azr/m/pillager_t1_enchant
 execute if score stage_main_thread TimerStack matches 125..126 unless entity @n[tag=AzrielMob] run scoreboard players set stage_main_thread TimerStack 127
-execute if score stage_main_thread TimerStack matches 127 if score temp_rng Azr_system matches 2 positioned -79931 42.8 38 run function skyblock:azr/m/silverfish_t1
-execute if score stage_main_thread TimerStack matches 127 if score playerCount Azr_system matches 3.. if score temp_rng Azr_system matches 4 positioned -79931 42.8 38 run function skyblock:azr/m/silverfish_t1
+execute if score stage_main_thread TimerStack matches 127 if score #temp_rng Azr_system matches 2 positioned -79931 42.8 38 run function skyblock:azr/m/silverfish_t1
+execute if score stage_main_thread TimerStack matches 127 if score playerCount Azr_system matches 3.. if score #temp_rng Azr_system matches 4 positioned -79931 42.8 38 run function skyblock:azr/m/silverfish_t1
 execute if score stage_main_thread TimerStack matches 128 positioned -79931 42.8 38 run function skyblock:azr/m/silverfish_t1
 execute if score stage_main_thread TimerStack matches 129 unless entity @n[tag=AzrielMob] run scoreboard players set stage_main_thread TimerStack 130
 execute if score stage_main_thread TimerStack matches 130 positioned -79931 42 40 run function skyblock:azr/m/zombie_t2_shield
@@ -106,7 +106,7 @@ execute if score stage_main_thread TimerStack matches 131..137 unless entity @n[
 execute if score stage_main_thread TimerStack matches 138 positioned -79931 38 25 run function skyblock:azr/m/zombie_t2_shield
 execute if score stage_main_thread TimerStack matches 139..142 unless entity @n[tag=AzrielMob] run scoreboard players set stage_main_thread TimerStack 143
 execute if score stage_main_thread TimerStack matches 143 positioned -79931 38 25 run function skyblock:azr/m/zombie_t1_5hp_full_armor
-execute store result score temp_rng Azr_system run random value 1..3
+execute store result score #temp_rng Azr_system run random value 1..3
 execute if score stage_main_thread TimerStack matches 143 if score #rng3 Azr_system matches 1 positioned -79931 38 25 run function skyblock:azr/m/zombie_t2_shield
 execute if score stage_main_thread TimerStack matches 143 positioned -79931 38 25 run function skyblock:azr/m/zombie_t1_5hp_full_armor
 execute if score stage_main_thread TimerStack matches 143 positioned -79931 38 25 run function skyblock:azr/m/zombie_t1_5hp_full_armor
@@ -180,21 +180,21 @@ execute if score stage_main_thread TimerStack matches 226 positioned -79926.0 38
 execute if score stage_main_thread TimerStack matches 232 positioned -79926.0 38 34 run function skyblock:azr/m/spider_t1_ruin
 execute if score stage_main_thread TimerStack matches 232 positioned -79926.0 38 34 run function skyblock:azr/m/spider_t1_swift
 execute if score stage_main_thread TimerStack matches 233..237 unless entity @n[tag=AzrielMob] run scoreboard players set stage_main_thread TimerStack 238
-execute store result score temp_rng Azr_system run random value 1..4
-execute if score stage_main_thread TimerStack matches 238 if score temp_rng Azr_system matches 1 positioned -79926.0 38 34 run function skyblock:azr/m/spider_t1_dust
-execute if score stage_main_thread TimerStack matches 238 if score temp_rng Azr_system matches 2 positioned -79926.0 38 34 run function skyblock:azr/m/spider_t1_ruin
-execute if score stage_main_thread TimerStack matches 238 if score temp_rng Azr_system matches 3 positioned -79926.0 38 34 run function skyblock:azr/m/spider_t1_swift
-execute if score stage_main_thread TimerStack matches 238 if score temp_rng Azr_system matches 4 positioned -79926.0 38 34 run function skyblock:azr/m/spider_t1_swift
+execute store result score #temp_rng Azr_system run random value 1..4
+execute if score stage_main_thread TimerStack matches 238 if score #temp_rng Azr_system matches 1 positioned -79926.0 38 34 run function skyblock:azr/m/spider_t1_dust
+execute if score stage_main_thread TimerStack matches 238 if score #temp_rng Azr_system matches 2 positioned -79926.0 38 34 run function skyblock:azr/m/spider_t1_ruin
+execute if score stage_main_thread TimerStack matches 238 if score #temp_rng Azr_system matches 3 positioned -79926.0 38 34 run function skyblock:azr/m/spider_t1_swift
+execute if score stage_main_thread TimerStack matches 238 if score #temp_rng Azr_system matches 4 positioned -79926.0 38 34 run function skyblock:azr/m/spider_t1_swift
 execute if score stage_main_thread TimerStack matches 239 unless entity @n[tag=AzrielMob] run scoreboard players set stage_main_thread TimerStack 240
-execute if score stage_main_thread TimerStack matches 240 if score playerCount Azr_system matches 2.. if score temp_rng Azr_system matches 1 positioned -79926.0 38 34 run function skyblock:azr/m/spider_t1_dust
-execute if score stage_main_thread TimerStack matches 240 if score playerCount Azr_system matches 2.. if score temp_rng Azr_system matches 2 positioned -79926.0 38 34 run function skyblock:azr/m/spider_t1_ruin
-execute if score stage_main_thread TimerStack matches 240 if score playerCount Azr_system matches 2.. if score temp_rng Azr_system matches 3 positioned -79926.0 38 34 run function skyblock:azr/m/spider_t1_swift
-execute if score stage_main_thread TimerStack matches 240 if score playerCount Azr_system matches 2.. if score temp_rng Azr_system matches 4 positioned -79926.0 38 34 run function skyblock:azr/m/spider_t1_swift
+execute if score stage_main_thread TimerStack matches 240 if score playerCount Azr_system matches 2.. if score #temp_rng Azr_system matches 1 positioned -79926.0 38 34 run function skyblock:azr/m/spider_t1_dust
+execute if score stage_main_thread TimerStack matches 240 if score playerCount Azr_system matches 2.. if score #temp_rng Azr_system matches 2 positioned -79926.0 38 34 run function skyblock:azr/m/spider_t1_ruin
+execute if score stage_main_thread TimerStack matches 240 if score playerCount Azr_system matches 2.. if score #temp_rng Azr_system matches 3 positioned -79926.0 38 34 run function skyblock:azr/m/spider_t1_swift
+execute if score stage_main_thread TimerStack matches 240 if score playerCount Azr_system matches 2.. if score #temp_rng Azr_system matches 4 positioned -79926.0 38 34 run function skyblock:azr/m/spider_t1_swift
 execute if score stage_main_thread TimerStack matches 241..242 unless entity @n[tag=AzrielMob] run scoreboard players set stage_main_thread TimerStack 243
-execute if score stage_main_thread TimerStack matches 243 if score temp_rng Azr_system matches 1 positioned -79926.0 38 34 run function skyblock:azr/m/spider_t1_dust
-execute if score stage_main_thread TimerStack matches 243 if score temp_rng Azr_system matches 2 positioned -79926.0 38 34 run function skyblock:azr/m/spider_t1_ruin
-execute if score stage_main_thread TimerStack matches 243 if score temp_rng Azr_system matches 3 positioned -79926.0 38 34 run function skyblock:azr/m/spider_t1_swift
-execute if score stage_main_thread TimerStack matches 243 if score temp_rng Azr_system matches 4 positioned -79926.0 38 34 run function skyblock:azr/m/spider_t1_swift
+execute if score stage_main_thread TimerStack matches 243 if score #temp_rng Azr_system matches 1 positioned -79926.0 38 34 run function skyblock:azr/m/spider_t1_dust
+execute if score stage_main_thread TimerStack matches 243 if score #temp_rng Azr_system matches 2 positioned -79926.0 38 34 run function skyblock:azr/m/spider_t1_ruin
+execute if score stage_main_thread TimerStack matches 243 if score #temp_rng Azr_system matches 3 positioned -79926.0 38 34 run function skyblock:azr/m/spider_t1_swift
+execute if score stage_main_thread TimerStack matches 243 if score #temp_rng Azr_system matches 4 positioned -79926.0 38 34 run function skyblock:azr/m/spider_t1_swift
 execute if score stage_main_thread TimerStack matches 244..245 unless entity @n[tag=AzrielMob] run scoreboard players set stage_main_thread TimerStack 246
 execute if score stage_main_thread TimerStack matches 246 positioned -79926.0 38 34 run function skyblock:azr/m/spider_t1_swift
 execute if score stage_main_thread TimerStack matches 246 positioned -79926.0 38 34 run function skyblock:azr/m/spider_t1_swift

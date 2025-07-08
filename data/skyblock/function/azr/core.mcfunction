@@ -177,6 +177,8 @@ execute as @e[tag=AzrielNPC] at @s run rotate @s facing entity @p[distance=..3]
 #execute as @e[tag=AzrielMob,tag=!AzrielDecMob,scores={SeGa_BecomeWild=240..}] at @s run tag @s add AzrielDecMob
 #重置计时器
 scoreboard players set tick_count_main TimerStack 0
+# 强制释放临时变量
+scoreboard players reset #temp_rng Azr_system
 
 #第一章-第二章 TODO：
 #灵能

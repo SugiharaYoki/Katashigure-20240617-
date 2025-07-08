@@ -14,7 +14,7 @@ execute if entity @s[scores={AZR_chainKillUpg_attackheal=2}] run effect give @s 
 execute if entity @s[scores={AZR_chainKillUpg_attackheal=3}] run effect give @s regeneration 5 1 true
 execute if entity @s[scores={AZR_chainKillUpg_attackheal=4}] run effect give @s regeneration 7 1 true
 
-execute store result score random Azr_system run random value 1..5
+execute store result score #random Azr_system run random value 1..5
 scoreboard players remove @s[scores={AZR_chainKill_count=1..}] AZR_chainKill_count 1
 
 execute if score @s AZR_chainKill_count matches ..0 run title @s actionbar {"text": "- 连击结束 -","color":"dark_gray","bold": true}
