@@ -41,15 +41,18 @@ def generate_commands_from_file(file_path):
         arrow_line = ' '.join(arrow_list)  # 加空格分隔
 
         for j in range(len(directions) + 1):
-            if j == len(directions):
+            if j == 0:
+                # 全蓝色
+                title_parts = [{'text': arrow_line, 'color': 'blue', 'bold': True}]
+            elif j == len(directions):
+                # 全绿色
                 title_parts = [{'text': arrow_line, 'color': 'green', 'bold': True}]
             else:
-                # 拆成两部分，注意切分时加空格的处理
-                first_part = ' '.join(arrow_list[:j+1])
-                second_part = ' '.join(arrow_list[j+1:])
+                first_part = ' '.join(arrow_list[:j])
+                second_part = ' '.join(arrow_list[j:])
                 title_parts = [
                     {'text': first_part, 'color': 'green', 'bold': True},
-                    {'text': (' ' + second_part) if second_part else '', 'color': 'blue', 'bold': True}
+                    {'text': ' ' + second_part, 'color': 'blue', 'bold': True}
                 ]
             output.append(
                 f"execute if score @s MG_qqd_step matches {step_base + j} run title @s title {json.dumps(title_parts, ensure_ascii=False)}"
