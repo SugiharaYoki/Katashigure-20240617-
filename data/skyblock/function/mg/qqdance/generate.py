@@ -77,7 +77,7 @@ def generate_commands_from_file(file_path):
             interval = split_interval_tick
         else:
             interval = abs_end - current_abs
-        output.append(f"execute if score @s MG_qqd_t_abs matches {current_abs} run scoreboard players set @s MG_qqd_t_rel {interval}")
+        output.append(f"execute if score @s MG_qqd_t_abs matches {current_abs} run scoreboard players set @s[scores={{MG_qqd_t_rel=0..}}] MG_qqd_t_rel {interval}")
 
         current_abs += split_interval_tick
         step_base = next_step_base  # 更新 step_base 为下一组的起点
