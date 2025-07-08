@@ -8,7 +8,8 @@ def generate_commands_from_file(file_path):
     bars_per_split = int(lines[1])          # 第二行，每多少小节拆一次
     abs_start = int(lines[2])                # 第三行，起始绝对时间
     abs_end = int(lines[3])                  # 第四行，最大绝对时间
-    directions_lines = lines[4:]             # 方向字符串
+    step_base = int(lines[4])                  # 第五行，初始step
+    directions_lines = lines[5:]             # 方向字符串
 
     bar_time_sec = 4 * 60 / bpm
     split_interval_sec = bars_per_split * bar_time_sec
@@ -28,11 +29,11 @@ def generate_commands_from_file(file_path):
     output = []
 
     # 起始指令，step从1开始
-    output.append(f"execute if score @s MG_qqd_t_abs matches {abs_start} run scoreboard players set @s MG_qqd_step 1")
-    output.append(f"execute if score @s MG_qqd_t_abs matches {abs_start} run scoreboard players set @s MG_qqd_t_rel {split_interval_tick}")
+    if step_base <= 1:
+        output.append(f"execute if score @s MG_qqd_t_abs matches {abs_start} run scoreboard players set @s MG_qqd_step 1")
+        output.append(f"execute if score @s MG_qqd_t_abs matches {abs_start} run scoreboard players set @s MG_qqd_t_rel {split_interval_tick}")
 
     current_abs = abs_start + split_interval_tick
-    step_base = 1
 
     for idx, line in enumerate(directions_lines):
         directions = [c for c in line if c in input_to_direction]
