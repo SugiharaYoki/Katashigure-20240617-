@@ -1,7 +1,7 @@
 scoreboard players add @s MG_qqd_t_abs 1
 scoreboard players remove @s MG_qqd_t_rel 1
 title @s times 0 5s 1s
-title @s title {"text":"测试文本 ↑ ↓ ← →","color":"blue","bold":true}
+#title @s title {"text":"测试文本 ↑ ↓ ← →","color":"blue","bold":true}
 execute as @s[scores={MG_qqd_t_rel=1..4}] run title @s subtitle [{"text":"★","color":"white","bold":false},{"text":"☆☆☆☆ ☆☆☆☆☆ ☆☆☆☆☆ ☆☆☆☆☆","color":"gray","bold":false}]
 execute as @s[scores={MG_qqd_t_rel=5..8}] run title @s subtitle [{"text":"★★","color":"white","bold":false},{"text":"☆☆☆ ☆☆☆☆☆ ☆☆☆☆☆ ☆☆☆☆☆","color":"gray","bold":false}]
 execute as @s[scores={MG_qqd_t_rel=9..12}] run title @s subtitle [{"text":"★★★","color":"white","bold":false},{"text":"☆☆ ☆☆☆☆☆ ☆☆☆☆☆ ☆☆☆☆☆","color":"gray","bold":false}]
@@ -23,6 +23,7 @@ execute as @s[scores={MG_qqd_t_rel=69..72}] run title @s subtitle [{"text":"★�
 execute as @s[scores={MG_qqd_t_rel=73..76}] run title @s subtitle [{"text":"★★★★★ ★★★★★ ★★★★★ ★★★★","color":"white","bold":false},{"text":"☆","color":"gray","bold":false}]
 execute as @s[scores={MG_qqd_t_rel=78..}] run title @s subtitle [{"text":"★★★★★ ★★★★★ ★★★★★ ★★★★★","color":"white","bold":false},{"text":"","color":"gray","bold":false}]
 
+function skyblock:mg/qqdance/song
 
 execute if entity @s[predicate=skyblock:jump] run function skyblock:mg/qqdance/end
 execute as @s[scores={MG_qqd_t_rel=..0}] run function skyblock:mg/qqdance/end

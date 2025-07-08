@@ -1,0 +1,30 @@
+execute if score @s MG_qqd_t_abs matches 1 run playsound minecraft:vol2.lethaldose master @s ~ ~ ~ 1 1
+
+execute if score @s MG_qqd_step matches 1 run title @s title [{"text":"↑ ↑ ↑","color":"blue","bold":true}]
+execute if score @s MG_qqd_step matches 2 run title @s title [{"text":"↑","color":"green","bold":true},{"text":"  ↑ ↑","color":"blue","bold":true}]
+execute if score @s MG_qqd_step matches 3 run title @s title [{"text":"↑ ↑","color":"green","bold":true},{"text":"  ↑","color":"blue","bold":true}]
+execute if score @s MG_qqd_step matches 4 run title @s title [{"text":"↑ ↑ ↑","color":"green","bold":true},{"text":" ","color":"blue","bold":true}]
+execute if score @s MG_qqd_step matches 5 run title @s title [{"text":"-","color":"blue","bold":true}]
+
+execute if score @s MG_qqd_step matches 1 if entity @s[predicate=skyblock:up,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
+execute if score @s MG_qqd_step matches 2 if entity @s[predicate=skyblock:up,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
+execute if score @s MG_qqd_step matches 3 if entity @s[predicate=skyblock:up,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
+
+
+execute if score @s MG_qqd_step matches 6 run title @s title [{"text":"← ↑ →","color":"blue","bold":true}]
+execute if score @s MG_qqd_step matches 7 run title @s title [{"text":"←","color":"green","bold":true},{"text":"  ↑ →","color":"blue","bold":true}]
+execute if score @s MG_qqd_step matches 8 run title @s title [{"text":"← ↑","color":"green","bold":true},{"text":"  →","color":"blue","bold":true}]
+execute if score @s MG_qqd_step matches 9 run title @s title [{"text":"← ↑ →","color":"green","bold":true},{"text":" ","color":"blue","bold":true}]
+execute if score @s MG_qqd_step matches 10 run title @s title [{"text":"-","color":"blue","bold":true}]
+
+execute if score @s MG_qqd_step matches 6 if entity @s[predicate=skyblock:up,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
+execute if score @s MG_qqd_step matches 7 if entity @s[predicate=skyblock:up,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
+execute if score @s MG_qqd_step matches 8 if entity @s[predicate=skyblock:up,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
+
+execute if score @s MG_qqd_t_abs matches 1 run 
+
+
+
+execute if entity @s[tag=MG_qqd_stepped] run scoreboard players add @s MG_qqd_step 1
+execute if entity @s[tag=MG_qqd_stepped] run playsound minecraft:block.note_block.hat music @a ~ ~ ~ 2 0.8
+execute if entity @s[tag=MG_qqd_stepped] if entity @s[predicate=!skyblock:up,predicate=!skyblock:down,predicate=!skyblock:left,predicate=!skyblock:right] run tag @s remove MG_qqd_stepped
