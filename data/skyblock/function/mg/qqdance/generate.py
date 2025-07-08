@@ -91,7 +91,7 @@ def generate_commands_from_file(file_path):
 
 
 if __name__ == '__main__':
-    input_file = 'input.txt'
+    input_file = 'input-lethaldose-hard.txt'
     output_file = 'output.txt'
 
     commands = generate_commands_from_file(input_file)
