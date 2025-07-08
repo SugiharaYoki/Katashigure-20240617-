@@ -1,6 +1,6 @@
 
 
-execute if score @s MG_qqd_song_id matches 1 run tellraw @s [{"text":"连击数量：","color":"gray","bold":true},{"score":{"name":"@s","objective":"MG_qqd_step"}}]
+tellraw @s [{"text":"连击数量：","color":"gray","bold":true},{"score":{"name":"@s","objective":"MG_qqd_step"}}]
 
 
 execute if score @s MG_qqd_song_id matches 1 run tellraw @s [{"text":"歌曲：","color":"gray","bold":true},{"text":"Lethal Dose","color":"gray","bold":false}]
