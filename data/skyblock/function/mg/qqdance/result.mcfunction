@@ -3,6 +3,4 @@ tellraw @s [{"text":"舞蹈结束！","color":"green","bold":true},{"text":"\n�
 
 playsound minecraft:block.note_block.harp master @s ~ ~ ~ 1 0.8
 
-scoreboard players set @s MG_qqd_step 999
-
 function skyblock:mg/qqdance/reset
