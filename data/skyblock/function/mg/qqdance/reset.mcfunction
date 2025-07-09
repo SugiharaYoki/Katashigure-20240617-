@@ -13,6 +13,10 @@ execute if score @s MG_qqd_song_id matches 4 run tellraw @s [{"text":"歌曲："
 execute if score @s MG_qqd_song_id matches 4 run tellraw @s [{"text":"难度：","color":"gray","bold":true},{"text":"Normal 5","color":"yellow","bold":false}]
 execute if score @s MG_qqd_song_id matches 5 run tellraw @s [{"text":"歌曲：","color":"gray","bold":true},{"text":"Nalca","color":"gray","bold":false}]
 execute if score @s MG_qqd_song_id matches 5 run tellraw @s [{"text":"难度：","color":"gray","bold":true},{"text":"Hard 9","color":"red","bold":false}]
+execute if score @s MG_qqd_song_id matches 6 run tellraw @s [{"text":"歌曲：","color":"gray","bold":true},{"text":"Surveiller et punir","color":"gray","bold":false}]
+execute if score @s MG_qqd_song_id matches 6 run tellraw @s [{"text":"难度：","color":"gray","bold":true},{"text":"Normal 6","color":"yellow","bold":false}]
+execute if score @s MG_qqd_song_id matches 7 run tellraw @s [{"text":"歌曲：","color":"gray","bold":true},{"text":"Surveiller et punir","color":"gray","bold":false}]
+execute if score @s MG_qqd_song_id matches 7 run tellraw @s [{"text":"难度：","color":"gray","bold":true},{"text":"Hard 10","color":"red","bold":false}]
 
 title @s times 0 0s 1s
 
