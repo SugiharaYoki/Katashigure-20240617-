@@ -1,6 +1,6 @@
 tellraw @s [{"text":"舞蹈结束！","color":"green","bold":true},{"text":"\n完成了一场出色的舞蹈！","color":"white","bold":false}]
 
-tellraw @a [{"selector":"@s","color":"green","bold":true},{"text":"达成一舞！","color":"gray"}]
+tellraw @a [{"selector":"@s","color":"green"},{"text":"达成一舞！","color":"gray"}]
 
 
 
