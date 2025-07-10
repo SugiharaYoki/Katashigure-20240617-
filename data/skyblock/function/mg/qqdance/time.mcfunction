@@ -23,6 +23,7 @@ execute as @s[scores={MG_qqd_t_rel=69..72}] run title @s subtitle [{"text":"★�
 execute as @s[scores={MG_qqd_t_rel=73..76}] run title @s subtitle [{"text":"★★★★★ ★★★★★ ★★★★★ ★★★★","color":"white","bold":false},{"text":"☆","color":"gray","bold":false}]
 execute as @s[scores={MG_qqd_t_rel=78..}] run title @s subtitle [{"text":"★★★★★ ★★★★★ ★★★★★ ★★★★★","color":"white","bold":false},{"text":"","color":"gray","bold":false}]
 
+#qq炫舞长期修改长期更改更新
 execute if score @s MG_qqd_song_id matches 1 run title @s actionbar [{"text":"Lethal Dose - Easy","color":"green"},{"text":" | ","color":"gray"},{"score":{"name":"@s","objective":"MG_qqd_step"},"color":"white"},{"text":"/216","color":"white"}]
 execute if score @s MG_qqd_song_id matches 2 run title @s actionbar [{"text":"Lethal Dose - Normal","color":"yellow"},{"text":" | ","color":"gray"},{"score":{"name":"@s","objective":"MG_qqd_step"},"color":"white"},{"text":"/207","color":"white"}]
 execute if score @s MG_qqd_song_id matches 3 run title @s actionbar [{"text":"Lethal Dose - Hard","color":"red"},{"text":" | ","color":"gray"},{"score":{"name":"@s","objective":"MG_qqd_step"},"color":"white"},{"text":"/437","color":"white"}]

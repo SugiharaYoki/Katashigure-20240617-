@@ -3,7 +3,7 @@
 tellraw @s [{"text":"连击数量：","color":"gray","bold":true},{"score":{"name":"@s","objective":"MG_qqd_step"}}]
 
 
-
+#qq炫舞长期修改长期更改更新
 execute if score @s MG_qqd_song_id matches 1 run tellraw @a [{"text":"歌曲：","color":"gray","bold":true},{"text":"Lethal Dose","color":"gray","bold":false}]
 execute if score @s MG_qqd_song_id matches 1 run tellraw @a [{"text":"难度：","color":"gray","bold":true},{"text":"Easy 3","color":"green","bold":false}]
 execute if score @s MG_qqd_song_id matches 2 run tellraw @a [{"text":"歌曲：","color":"gray","bold":true},{"text":"Lethal Dose","color":"gray","bold":false}]
