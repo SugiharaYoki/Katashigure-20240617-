@@ -217,7 +217,7 @@ if block 90125 153 129 lever[powered=true] \
 if block 90124 153 129 lever[powered=false] \
 if block 90120 155 139 air run function skyblock:sea/e/ch3/ev007_dorm_password_is_correct
 
-execute as @n[tag=SEAmarshall,scores={sea_4temp1=..538}] at @s if entity @a[tag=SEAPT,distance=..6] run function skyblock:sea/e/ch3/ev006_the_last_survivor
+execute as @n[tag=SEAmarshall,scores={sea_4temp1=..538}] at @s if entity @a[tag=SEAPT,x=90118,y=160,z=139,dx=18,dy=5,dz=12] run function skyblock:sea/e/ch3/ev006_the_last_survivor
 execute as @n[tag=SEAmarshall,scores={sea_4temp1=539..}] at @s if entity @a[tag=SEAPT,distance=..600] run function skyblock:sea/e/ch3/ev006_the_last_survivor
 
 #execute unless block 90131 161 144 air as @a[tag=SEAPT,tag=!e_i_27] if block ~ ~-1 ~ polished_tuff run function skyblock:sea/e/ch3/ev007_dorm_password_is_correct
