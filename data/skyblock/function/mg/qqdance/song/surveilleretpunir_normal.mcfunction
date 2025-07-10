@@ -767,7 +767,6 @@ execute if score @s MG_qqd_step matches 613 if entity @s[predicate=skyblock:back
 execute if score @s MG_qqd_t_abs matches 2792 run scoreboard players set @s MG_qqd_t_rel 5000
 execute if score @s MG_qqd_t_abs matches 2792 run scoreboard players set @s[scores={MG_qqd_step=..613}] MG_qqd_t_rel -50
 execute if score @s MG_qqd_t_abs matches 2792 run scoreboard players set @s MG_qqd_step 621
-execute if score @s MG_qqd_t_abs matches 2792 run scoreboard players set @s[scores={MG_qqd_t_rel=0..}] MG_qqd_t_rel 28
 
 
 execute if score @s MG_qqd_t_abs matches 2820 run function skyblock:mg/qqdance/result

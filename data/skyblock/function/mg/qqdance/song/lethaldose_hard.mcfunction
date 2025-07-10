@@ -649,7 +649,6 @@ execute if score @s MG_qqd_step matches 436 if entity @s[predicate=skyblock:righ
 execute if score @s MG_qqd_t_abs matches 2238 run scoreboard players set @s MG_qqd_t_rel 5000
 execute if score @s MG_qqd_t_abs matches 2238 run scoreboard players set @s[scores={MG_qqd_step=..436}] MG_qqd_t_rel -50
 execute if score @s MG_qqd_t_abs matches 2238 run scoreboard players set @s MG_qqd_step 441
-execute if score @s MG_qqd_t_abs matches 2238 run scoreboard players set @s[scores={MG_qqd_t_rel=0..}] MG_qqd_t_rel 22
 
 
 

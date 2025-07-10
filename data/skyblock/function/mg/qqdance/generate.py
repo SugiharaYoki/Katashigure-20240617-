@@ -18,6 +18,7 @@ def generate_commands_from_file(file_path):
     input_to_direction = {
         '上': 'forward', '下': 'backward', '左': 'left', '右': 'right',
         '↑': 'forward', '↓': 'backward', '←': 'left', '→': 'right',
+        'W': 'forward', 'S': 'backward', 'A': 'left', 'D': 'right',
     }
     direction_to_arrow = {
         'forward': '↑',
