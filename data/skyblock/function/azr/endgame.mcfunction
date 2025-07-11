@@ -54,7 +54,7 @@ scoreboard objectives remove Azr_Shop_rng13
 scoreboard objectives remove melonCount
 scoreboard objectives remove Azr_skillPoints
 scoreboard objectives remove Azr_shopChapter
-scoreboard objectives remove TimerStack
+scoreboard objectives remove AzrTimerStack
 scoreboard objectives remove EntityTimer
 scoreboard objectives remove temp_timer1
 scoreboard objectives remove temp_timer2
@@ -66,14 +66,14 @@ scoreboard objectives remove temp_timer7
 scoreboard objectives remove temp_timer8
 scoreboard objectives remove temp_timer9
 scoreboard objectives remove temp_timer10
-scoreboard players set stage_main_thread TimerStack 0
+scoreboard players set stage_main_thread AzrTimerStack 0
 scoreboard players set stage Azr_system 0
 scoreboard players set isStarted Azr_system 0
 scoreboard players reset CerementPassword Azr_system
 scoreboard players reset internal_clock_001 Azr_system
 scoreboard players reset internal_clock_002 Azr_system
-scoreboard players reset tick_count_main TimerStack
-scoreboard players reset timer_static_5s TimerStack
+scoreboard players reset tick_count_main AzrTimerStack
+scoreboard players reset timer_static_5s AzrTimerStack
 scoreboard objectives setdisplay sidebar SeGa_StandLastBH
 
 #unused

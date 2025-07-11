@@ -11,7 +11,7 @@ xp set @s 25 levels
 scoreboard players set @s Azr_emerald 150
 scoreboard players set stage Azr_system 44
 scoreboard players set @s Azr_wave 36
-scoreboard players set stage_main_thread TimerStack 0
+scoreboard players set stage_main_thread AzrTimerStack 0
 
 clear @s
 function skyblock:azr/items/iron_sword_prison

@@ -2,7 +2,6 @@
 
 #update spawnpoint
 execute as @s[tag=azrUpdateSpawnPoint,nbt={OnGround:1b}] at @s if block ~ ~ ~ air if block ~ ~1 ~ air run spawnpoint @s ~ ~ ~
-execute as @s[tag=azrUpdateSpawnPoint,nbt={OnGround:1b}] at @s if block ~ ~ ~ air if block ~ ~1 ~ air run tell @a[tag=DebugMode] spawnpoint set
 execute as @s[tag=azrUpdateSpawnPoint,nbt={OnGround:1b}] at @s if block ~ ~ ~ air if block ~ ~1 ~ air run tag @s remove azrUpdateSpawnPoint
 
 #商店系统

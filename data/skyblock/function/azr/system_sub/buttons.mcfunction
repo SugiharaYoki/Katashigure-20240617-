@@ -1,31 +1,31 @@
 #stage1
 execute if block -79932 39 4 minecraft:birch_button[powered=true] run scoreboard players set stage Azr_system 2
-execute if block -79932 39 4 minecraft:birch_button[powered=true] run scoreboard players set stage_main_thread TimerStack 0
+execute if block -79932 39 4 minecraft:birch_button[powered=true] run scoreboard players set stage_main_thread AzrTimerStack 0
 execute if block -79932 39 4 minecraft:birch_button[powered=true] run setblock -79932 39 4 air
 #stage2
 execute if block -79935 39 10 minecraft:birch_button[powered=true] run scoreboard players set stage Azr_system 4
-execute if block -79935 39 10 minecraft:birch_button[powered=true] run scoreboard players set stage_main_thread TimerStack 0
+execute if block -79935 39 10 minecraft:birch_button[powered=true] run scoreboard players set stage_main_thread AzrTimerStack 0
 execute if block -79935 39 10 minecraft:birch_button[powered=true] run setblock -79935 39 10 air
 #stage3α
 execute if block -79934 39 34 minecraft:birch_button[powered=true] run scoreboard players set stage Azr_system 6
-execute if block -79934 39 34 minecraft:birch_button[powered=true] run scoreboard players set stage_main_thread TimerStack 0
+execute if block -79934 39 34 minecraft:birch_button[powered=true] run scoreboard players set stage_main_thread AzrTimerStack 0
 execute if block -79934 39 34 minecraft:birch_button[powered=true] run setblock -79956 39 1 air
 execute if block -79934 39 34 minecraft:birch_button[powered=true] run setblock -79934 39 34 air
 #stage3β uncommited
 execute if block -79956 39 1 minecraft:birch_button[powered=true] run scoreboard players set stage Azr_system 32
-execute if block -79956 39 1 minecraft:birch_button[powered=true] run scoreboard players set stage_main_thread TimerStack 0
+execute if block -79956 39 1 minecraft:birch_button[powered=true] run scoreboard players set stage_main_thread AzrTimerStack 0
 execute if block -79956 39 1 minecraft:birch_button[powered=true] run setblock -79934 39 34 air
 execute if block -79956 39 1 minecraft:birch_button[powered=true] run setblock -79956 39 1 air
 #stage4α
 execute if block -79932 39 42 minecraft:birch_button[powered=true] run scoreboard players set stage Azr_system 8
-execute if block -79932 39 42 minecraft:birch_button[powered=true] run scoreboard players set stage_main_thread TimerStack 0
+execute if block -79932 39 42 minecraft:birch_button[powered=true] run scoreboard players set stage_main_thread AzrTimerStack 0
 execute if block -79932 39 42 minecraft:birch_button[powered=true] run setblock -79936 39 42 air
 execute if block -79932 39 42 minecraft:birch_button[powered=true] run setblock -79936 39 41 minecraft:quartz_block
 execute if block -79932 39 42 minecraft:birch_button[powered=true] run setblock -79949 38 31 air
 execute if block -79932 39 42 minecraft:birch_button[powered=true] run setblock -79932 39 42 air
 #stage4β uncommited
 execute if block -79949 38 31 minecraft:birch_button[powered=true] run scoreboard players set stage Azr_system 33
-execute if block -79949 38 31 minecraft:birch_button[powered=true] run scoreboard players set stage_main_thread TimerStack 0
+execute if block -79949 38 31 minecraft:birch_button[powered=true] run scoreboard players set stage_main_thread AzrTimerStack 0
 execute if block -79949 38 31 minecraft:birch_button[powered=true] run setblock -79936 39 42 air
 execute if block -79949 38 31 minecraft:birch_button[powered=true] run setblock -79936 39 41 minecraft:quartz_block
 execute if block -79949 38 31 minecraft:birch_button[powered=true] run setblock -79932 39 42 air
@@ -34,21 +34,21 @@ execute if block -79949 38 31 minecraft:birch_button[powered=true] run setblock 
 execute if block -79931 39 88 minecraft:polished_blackstone_button[powered=true] run function skyblock:azr/stage/stage_boss1_prep
 #stage5α
 execute if block -79934 39 125 minecraft:birch_button[powered=true] run scoreboard players set stage Azr_system 12
-execute if block -79934 39 125 minecraft:birch_button[powered=true] run scoreboard players set stage_main_thread TimerStack 0
+execute if block -79934 39 125 minecraft:birch_button[powered=true] run scoreboard players set stage_main_thread AzrTimerStack 0
 execute if block -79934 39 125 minecraft:birch_button[powered=true] at @p[tag=azrPlayer,x=-79934,y=39,z=125] run tp @a[tag=azrPlayer,distance=5..] @s
 execute if block -79934 39 125 minecraft:birch_button[powered=true] run fill -79932 38 104 -79930 42 104 minecraft:red_stained_glass
 execute if block -79934 39 125 minecraft:birch_button[powered=true] run setblock -79928 39 125 air
 execute if block -79934 39 125 minecraft:birch_button[powered=true] run setblock -79934 39 125 air
 #stage5β
 execute if block -79928 39 125 minecraft:birch_button[powered=true] run scoreboard players set stage Azr_system 13
-execute if block -79928 39 125 minecraft:birch_button[powered=true] run scoreboard players set stage_main_thread TimerStack 0
+execute if block -79928 39 125 minecraft:birch_button[powered=true] run scoreboard players set stage_main_thread AzrTimerStack 0
 execute if block -79928 39 125 minecraft:birch_button[powered=true] at @p[tag=azrPlayer,x=-79928,y=39,z=125] run tp @a[tag=azrPlayer,distance=5..] @s
 execute if block -79928 39 125 minecraft:birch_button[powered=true] run fill -79932 38 104 -79930 42 104 minecraft:red_stained_glass
 execute if block -79928 39 125 minecraft:birch_button[powered=true] run setblock -79934 39 125 air
 execute if block -79928 39 125 minecraft:birch_button[powered=true] run setblock -79928 39 125 air
 #stage6
 execute if block -79923 39 134 minecraft:birch_button[powered=true] run scoreboard players set stage Azr_system 15
-execute if block -79923 39 134 minecraft:birch_button[powered=true] run scoreboard players set stage_main_thread TimerStack 0
+execute if block -79923 39 134 minecraft:birch_button[powered=true] run scoreboard players set stage_main_thread AzrTimerStack 0
 execute if block -79923 39 134 minecraft:birch_button[powered=true] run setblock -79942 39 150 air
 execute if block -79923 39 134 minecraft:birch_button[powered=true] run setblock -79942 39 151 quartz_block
 execute if block -79923 39 134 minecraft:birch_button[powered=true] run setblock -79949 32 140 air
@@ -56,28 +56,28 @@ execute if block -79923 39 134 minecraft:birch_button[powered=true] run setblock
 execute if block -79923 39 134 minecraft:birch_button[powered=true] run setblock -79923 39 134 air
 #stage7α uncommited
 execute if block -79902 39 103 minecraft:birch_button[powered=true] run scoreboard players set stage Azr_system 17
-execute if block -79902 39 103 minecraft:birch_button[powered=true] run scoreboard players set stage_main_thread TimerStack 0
+execute if block -79902 39 103 minecraft:birch_button[powered=true] run scoreboard players set stage_main_thread AzrTimerStack 0
 execute if block -79902 39 103 minecraft:birch_button[powered=true] run setblock -79904 41 97 air
 execute if block -79902 39 103 minecraft:birch_button[powered=true] run setblock -79902 39 103 air
 #stage7β uncommited
 execute if block -79904 41 97 minecraft:birch_button[powered=true] run scoreboard players set stage Azr_system 18
-execute if block -79904 41 97 minecraft:birch_button[powered=true] run scoreboard players set stage_main_thread TimerStack 0
+execute if block -79904 41 97 minecraft:birch_button[powered=true] run scoreboard players set stage_main_thread AzrTimerStack 0
 execute if block -79904 41 97 minecraft:birch_button[powered=true] run setblock -79902 39 103 air
 execute if block -79904 41 97 minecraft:birch_button[powered=true] run setblock -79904 41 97 air
 #stage8 uncommited
 execute if block -79888 39 67 minecraft:birch_button[powered=true] run scoreboard players set stage Azr_system 20
-execute if block -79888 39 67 minecraft:birch_button[powered=true] run scoreboard players set stage_main_thread TimerStack 0
+execute if block -79888 39 67 minecraft:birch_button[powered=true] run scoreboard players set stage_main_thread AzrTimerStack 0
 execute if block -79888 39 67 minecraft:birch_button[powered=true] run setblock -79888 39 67 air
 #stage8 uncommited
 execute if block -79888 39 67 minecraft:birch_button[powered=true] run scoreboard players set stage Azr_system 20
-execute if block -79888 39 67 minecraft:birch_button[powered=true] run scoreboard players set stage_main_thread TimerStack 0
+execute if block -79888 39 67 minecraft:birch_button[powered=true] run scoreboard players set stage_main_thread AzrTimerStack 0
 execute if block -79888 39 67 minecraft:birch_button[powered=true] run setblock -79888 39 67 air
 execute if block -79885 39 39 minecraft:birch_button[powered=true] run tellraw @a[tag=azrPlayer] {"text":"没有任何反应","color":"gray"}
 execute if block -79885 39 39 minecraft:birch_button[powered=true] run setblock -79885 39 39 air
 #boss2 uncommited
 #stage9 uncommited
 execute if block -79903 41 -60 minecraft:birch_button[powered=true] run scoreboard players set stage Azr_system 26
-execute if block -79903 41 -60 minecraft:birch_button[powered=true] run scoreboard players set stage_main_thread TimerStack 0
+execute if block -79903 41 -60 minecraft:birch_button[powered=true] run scoreboard players set stage_main_thread AzrTimerStack 0
 execute if block -79903 41 -60 minecraft:birch_button[powered=true] run setblock -79903 41 -60 air
 #stage10 uncommited
 execute if block -79886 41 -114 minecraft:lever[powered=true] unless entity @n[type=interaction,tag=temp,x=-79885.5,y=41.00,z=-113.5,distance=..1] run scoreboard players set stage Azr_system 35
@@ -97,7 +97,7 @@ execute if block -79873 39 92 minecraft:birch_button[powered=true] run function 
 execute if block -79912 55 -101 minecraft:birch_button[powered=true] run function skyblock:azr/stage/stage_appetence_prep
 #Stage Breakout uncommited
 execute if block -79878 41 -131 minecraft:lever[powered=true] unless entity @n[type=interaction,tag=temp,x=-79877.5,y=41.00,z=-130.5,distance=..1] run scoreboard players set stage Azr_system 45
-execute if block -79878 41 -131 minecraft:lever[powered=true] unless entity @n[type=interaction,tag=temp,x=-79877.5,y=41.00,z=-130.5,distance=..1] run scoreboard players set stage_main_thread TimerStack 0
+execute if block -79878 41 -131 minecraft:lever[powered=true] unless entity @n[type=interaction,tag=temp,x=-79877.5,y=41.00,z=-130.5,distance=..1] run scoreboard players set stage_main_thread AzrTimerStack 0
 execute if block -79878 41 -131 minecraft:lever[powered=true] unless entity @n[type=interaction,tag=temp,x=-79877.5,y=41.00,z=-130.5,distance=..1] run summon minecraft:interaction -79877.5 41.00 -130.5 {Tags:["temp"]}
 #Stage Impersonate
 execute if block -79799 28 -284 minecraft:birch_button[powered=true] run function skyblock:azr/stage/stage_impersonate

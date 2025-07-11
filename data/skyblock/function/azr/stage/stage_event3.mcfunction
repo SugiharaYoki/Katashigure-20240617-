@@ -1,4 +1,4 @@
-scoreboard players set stage_main_thread TimerStack 0
+scoreboard players set stage_main_thread AzrTimerStack 0
 execute if score stage Azr_system matches 21 if entity @a[tag=azrPlayer,x=-79890,y=38,z=17,distance=0..4] run particle explosion -79887 39 17 1 1 1 0.0 50 normal
 execute if score stage Azr_system matches 21 as @a[tag=azrPlayer,x=-79890,y=38,z=17,distance=0..4] at @s run kill @e[tag=AzrielMob,distance=12..]
 execute if score stage Azr_system matches 21 if entity @a[tag=azrPlayer,x=-79890,y=38,z=17,distance=0..4] run particle minecraft:large_smoke -79887 39 17 1 1 1 0.1 150 normal
@@ -17,7 +17,7 @@ execute if score stage Azr_system matches 21 if entity @a[tag=azrPlayer,x=-79890
 execute if score stage Azr_system matches 21 if entity @a[tag=azrPlayer,x=-79890,y=38,z=17,distance=0..4] run scoreboard players set stage Azr_system 22
 execute if score stage Azr_system matches 22 unless entity @e[tag=AzrielMob] run fill -79893 41 5 -79893 38 3 air destroy
 execute if score stage Azr_system matches 22 unless entity @e[tag=AzrielMob] run bossbar remove azr:progress_bar_normal
-execute if score stage Azr_system matches 22 unless entity @e[tag=AzrielMob] run scoreboard players reset tick_main_thread TimerStack
+execute if score stage Azr_system matches 22 unless entity @e[tag=AzrielMob] run scoreboard players reset tick_main_thread AzrTimerStack
 execute if score stage Azr_system matches 22 unless entity @e[tag=AzrielMob] run scoreboard players set stage Azr_system 23
 
 kill @e[type=item,nbt={Item:{id:"minecraft:quartz_block"}}]

@@ -11,7 +11,7 @@ xp set @s 25 levels
 scoreboard players set @s Azr_emerald 120
 scoreboard players set stage Azr_system 42
 scoreboard players set @s Azr_wave 34
-scoreboard players set stage_main_thread TimerStack 99
+scoreboard players set stage_main_thread AzrTimerStack 99
 
 clear @s
 function skyblock:azr/items/iron_sword_normal

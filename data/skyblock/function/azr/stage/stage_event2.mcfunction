@@ -1,4 +1,4 @@
-scoreboard players set stage_main_thread TimerStack 0
+scoreboard players set stage_main_thread AzrTimerStack 0
 
 execute as @a[tag=!hasSkills,tag=azrPlayer,x=-79938,y=41,z=160,distance=..5,scores={If_Lectern=1..}] at @s run tag @s add TEMP_azrEvent2
 execute as @a[tag=TEMP_azrEvent2] at @s run scoreboard players set @s If_Lectern 0

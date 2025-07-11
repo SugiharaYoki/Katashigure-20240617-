@@ -3,7 +3,7 @@
 #AzrielEvent3756RTD - 遭遇玩家后的AzrielEvent3756
 #AzrielEvent3757S - 遭遇AzrielEvent3757后的玩家
 
-scoreboard players set stage_main_thread TimerStack 0
+scoreboard players set stage_main_thread AzrTimerStack 0
 
 #玩家遭遇AzrielEvent3756
 execute as @a[tag=azrPlayer] at @s if entity @n[tag=AzrielEvent3756,distance=..5.5] run tag @a[distance=..1000] add AzrielEvent3756S
