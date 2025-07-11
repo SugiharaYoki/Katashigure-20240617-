@@ -133,7 +133,9 @@ effect give @s health_boost 1 0 true
 effect give @s poison 1 0 true
 effect give @s wither 1 0 true
 
-
+#各种遗留Tag清理
+tag @s remove Bless23_Effective
+tag @s remove SEA_follow_target
 
 tag @s remove ukiyo_nrb
 tag @s remove UNRBPT

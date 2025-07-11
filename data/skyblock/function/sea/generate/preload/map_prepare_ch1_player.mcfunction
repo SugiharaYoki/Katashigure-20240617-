@@ -9,6 +9,27 @@ item replace entity @s[tag=seaPerm000,scores={SEAPT_mode=1..2}] inventory.26 wit
 
 scoreboard players set @s sea_i_emerald 0
 
+function skyblock:city/id/read
+execute as @n[tag=id_data_reading,type=marker] at @s run tp @s ~5 ~ ~
+execute at @n[tag=id_data_reading,type=marker] if items block ~ ~ ~ container.1 green_wool run tag @s add seaPerm001
+execute at @n[tag=id_data_reading,type=marker] if items block ~ ~ ~ container.2 green_wool run tag @s add seaPerm002
+execute at @n[tag=id_data_reading,type=marker] if items block ~ ~ ~ container.3 green_wool run tag @s add seaPerm003
+execute at @n[tag=id_data_reading,type=marker] if items block ~ ~ ~ container.4 green_wool run tag @s add seaPerm004
+execute at @n[tag=id_data_reading,type=marker] if items block ~ ~ ~ container.5 green_wool run tag @s add seaPerm005
+execute at @n[tag=id_data_reading,type=marker] if items block ~ ~ ~ container.6 green_wool run tag @s add seaPerm006
+execute at @n[tag=id_data_reading,type=marker] if items block ~ ~ ~ container.7 green_wool run tag @s add seaPerm007
+execute at @n[tag=id_data_reading,type=marker] if items block ~ ~ ~ container.8 green_wool run tag @s add seaPerm008
+execute at @n[tag=id_data_reading,type=marker] if items block ~ ~ ~ container.9 green_wool run tag @s add seaPerm009
+execute at @n[tag=id_data_reading,type=marker] if items block ~ ~ ~ container.10 green_wool run tag @s add seaPerm010
+execute at @n[tag=id_data_reading,type=marker] if items block ~ ~ ~ container.11 green_wool run tag @s add seaPerm011
+execute at @n[tag=id_data_reading,type=marker] if items block ~ ~ ~ container.12 green_wool run tag @s add seaPerm012
+execute at @n[tag=id_data_reading,type=marker] if items block ~ ~ ~ container.13 green_wool run tag @s add seaPerm013
+execute at @n[tag=id_data_reading,type=marker] if items block ~ ~ ~ container.14 green_wool run tag @s add seaPerm014
+execute at @n[tag=id_data_reading,type=marker] if items block ~ ~ ~ container.15 green_wool run tag @s add seaPerm015
+function skyblock:city/id/read_finish
+
+
+
 
 item replace entity @s inventory.24 with compass
 #give @s baked_potato 3
