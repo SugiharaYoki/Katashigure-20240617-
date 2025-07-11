@@ -1,9 +1,4 @@
 function skyblock:api_start_any_game
-#azr-tags
-tag @s remove azrDead
-tag @s add azrPlayer
-tag @s add azrShopRefresh
-tag @s add azrNeverUsedShop
 
 #azr-player initialization
 #玩家初始化
@@ -35,13 +30,19 @@ function skyblock:azr/items/revival_star
 give @s pumpkin_pie 8
 
 #游戏数据初始化
-scoreboard players set @s Azr_wave 0
+scoreboard players operation @s Azr_wave = @p[tag=azrPlayer] Azr_wave
 scoreboard players set @s Azr_forceDeath 0
 scoreboard players set @s Azr_isDead 0
 scoreboard players set @s Azr_emerald 0
 scoreboard players add @s[scores={Azr_skillPoints=3..}] Azr_emerald 5
 scoreboard players add @s[scores={Azr_skillPoints=6..}] Azr_emerald 5
 scoreboard players operation @s Azr_startCount = Pointer Azr_startCount
+
+#azr-tags
+tag @s remove azrDead
+tag @s add azrPlayer
+tag @s add azrShopRefresh
+tag @s add azrNeverUsedShop
 
 #输出信息
 tellraw @s {"text":"游戏开始……","color":"green"}
