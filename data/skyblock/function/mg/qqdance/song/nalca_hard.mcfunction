@@ -785,7 +785,6 @@ execute if score @s MG_qqd_step matches 576 if entity @s[predicate=skyblock:forw
 execute if score @s MG_qqd_t_abs matches 2273 run scoreboard players set @s MG_qqd_t_rel 5000
 execute if score @s MG_qqd_t_abs matches 2273 run scoreboard players set @s[scores={MG_qqd_step=..576}] MG_qqd_t_rel -50
 execute if score @s MG_qqd_t_abs matches 2273 run scoreboard players set @s MG_qqd_step 581
-execute if score @s MG_qqd_t_abs matches 2273 run scoreboard players set @s[scores={MG_qqd_t_rel=0..}] MG_qqd_t_rel 35
 
 
 

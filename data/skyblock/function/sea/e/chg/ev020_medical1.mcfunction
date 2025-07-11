@@ -31,7 +31,7 @@ execute if score SEAchg_spawn_timer_medical1 sea_4temp2 matches 18 if entity @n[
 execute as @n[tag=SEApillager_npc1] at @s if entity @a[tag=SEAPT,tag=!SEAPF,distance=0..5] run scoreboard players add @s rng1 1
 
 execute as @n[tag=SEApillager_npc1,scores={rng1=80}] at @s run tellraw @a[tag=SEAPT] [{"text":"邪教徒弩手：","color":"green","bold": true},{"text":"\n“话先说在前头，咱们井水不犯河水。”","color":"white","bold": false}]
-execute as @n[tag=SEApillager_npc1,scores={rng1=100}] at @s run tellraw @a[tag=SEAPT] [{"text":"邪教徒弩手：","color":"green","bold": true},{"text":"\n“邪教徒：“我不会给你任何情报的。相同，我也不会告诉任何人我在这里见过你。是的，说不定就是这样。”","color":"white","bold": false}]
+execute as @n[tag=SEApillager_npc1,scores={rng1=100}] at @s run tellraw @a[tag=SEAPT] [{"text":"邪教徒弩手：","color":"green","bold": true},{"text":"\n“我不会给你任何情报的。相同，我也不会告诉任何人我在这里见过你。是的，说不定就是这样。”","color":"white","bold": false}]
 
 
 execute as @n[tag=SEApillager_npc1,scores={rng1=130..}] at @s unless entity @a[tag=SEAPT,tag=!SEAPF,distance=..15] run tp @s ~ ~-500 ~

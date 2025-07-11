@@ -1,3 +1,10 @@
+execute if score @s MG_qqd_t_abs matches 1 run playsound minecraft:app1.caradbolg master @s ~ ~ ~ 1 1
+execute if score @s MG_qqd_t_abs matches 1 run scoreboard players set @s MG_qqd_t_rel 50000
+
+execute if score @s MG_qqd_t_abs matches 100 run title @s title [{"text": "3", "color": "blue", "bold": true}]
+execute if score @s MG_qqd_t_abs matches 120 run title @s title [{"text": "2", "color": "blue", "bold": true}]
+execute if score @s MG_qqd_t_abs matches 140 run title @s title [{"text": "Ready", "color": "blue", "bold": true}]
+
 execute if score @s MG_qqd_t_abs matches 160 run scoreboard players set @s MG_qqd_step 1
 execute if score @s MG_qqd_t_abs matches 160 run scoreboard players set @s MG_qqd_t_rel 73
 execute if score @s MG_qqd_step matches 1 run title @s title [{"text": "↑ → ↓ ↑ →", "color": "blue", "bold": true}]
@@ -514,4 +521,7 @@ execute if score @s MG_qqd_step matches 288 if entity @s[predicate=skyblock:righ
 execute if score @s MG_qqd_t_abs matches 2291 run scoreboard players set @s MG_qqd_t_rel 5000
 execute if score @s MG_qqd_t_abs matches 2291 run scoreboard players set @s[scores={MG_qqd_step=..288}] MG_qqd_t_rel -50
 execute if score @s MG_qqd_t_abs matches 2291 run scoreboard players set @s MG_qqd_step 291
-execute if score @s MG_qqd_t_abs matches 2291 run scoreboard players set @s[scores={MG_qqd_t_rel=0..}] MG_qqd_t_rel 73
+
+execute if score @s MG_qqd_t_abs matches 2400 run function skyblock:mg/qqdance/result
+
+function skyblock:mg/qqdance/control

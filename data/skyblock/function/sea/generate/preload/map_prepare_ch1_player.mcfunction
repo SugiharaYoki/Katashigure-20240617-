@@ -22,7 +22,7 @@ tag @s add sea_t_axeparry1
 scoreboard players set @s SEA_if_spying 0
 
 tell @p[tag=ENKIDU] sea_ch1_player
-
+scoreboard players set @s sea_runs 0
 team join SEA @s
 tag @s add Gaming
 tag @s add NoMultiMenu

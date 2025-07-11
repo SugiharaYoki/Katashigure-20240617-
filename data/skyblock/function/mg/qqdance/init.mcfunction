@@ -7,6 +7,7 @@ scoreboard players set @s MG_qqd_t_abs 0
 scoreboard players set @s MG_qqd_t_rel 100
 scoreboard players set @s MG_qqd_step 0
 
+#qq炫舞长期修改长期更改更新
 execute as @s[scores={MultiMenu=836001}] at @s run scoreboard players set @s MG_qqd_song_id 1
 execute as @s[scores={MultiMenu=836002}] at @s run scoreboard players set @s MG_qqd_song_id 2
 execute as @s[scores={MultiMenu=836003}] at @s run scoreboard players set @s MG_qqd_song_id 3
@@ -40,5 +41,7 @@ execute as @s[scores={MultiMenu=836029}] at @s run scoreboard players set @s MG_
 
 tag @s add Gaming
 tag @s add MG_qqd
+
+stopsound @s
 
 scoreboard players set @s MultiMenu 0
