@@ -1,4 +1,4 @@
-tellraw @s {"text":"「选择想要游玩的歌曲」","color":"yellow"}
+tellraw @s {"text":"「选择想游玩的歌曲」","color":"white"}
 tellraw @s {"text":" "}
 
 
@@ -12,6 +12,7 @@ execute at @n[tag=id_data_reading,type=marker] unless items block ~ ~ ~ containe
 execute at @n[tag=id_data_reading,type=marker] unless items block ~ ~ ~ container.0 white_wool run item replace block ~ ~ ~ container.2 with white_wool
 execute at @n[tag=id_data_reading,type=marker] unless items block ~ ~ ~ container.0 white_wool run item replace block ~ ~ ~ container.1 with white_wool
 execute at @n[tag=id_data_reading,type=marker] unless items block ~ ~ ~ container.0 white_wool run item replace block ~ ~ ~ container.0 with white_wool
+execute at @n[tag=id_data_reading,type=marker] unless items block ~ ~-1 ~ container.0 white_wool run item replace block ~ ~-1 ~ container.0 with white_wool
 
 #qq炫舞长期修改长期更改更新
 
@@ -30,11 +31,14 @@ execute at @n[tag=id_data_reading,type=marker] if items block ~ ~ ~ container.3 
 execute at @n[tag=id_data_reading,type=marker] if items block ~ ~ ~ container.3 yellow_wool run tellraw @s [{"text":"  ☆ Surveiller et punir  ","color":"white","hoverEvent":{"action":"show_text","contents":{"text":"","color":"white"}}},{"text":" [Normal 6] ","color":"yellow","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 836006"},"hoverEvent":{"action":"show_text","contents":{"text":"选择该曲进行游玩","color":"white"}}},{"text":" [Hard 9+] ","color":"red","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 836007"},"hoverEvent":{"action":"show_text","contents":{"text":"选择该曲进行游玩","color":"white"}}}]
 execute at @n[tag=id_data_reading,type=marker] if items block ~ ~ ~ container.3 red_wool run tellraw @s [{"text":"  ★ Surveiller et punir  ","color":"white","hoverEvent":{"action":"show_text","contents":{"text":"","color":"white"}}},{"text":" [Normal 6] ","color":"yellow","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 836006"},"hoverEvent":{"action":"show_text","contents":{"text":"选择该曲进行游玩","color":"white"}}},{"text":" [Hard 9+] ","color":"red","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 836007"},"hoverEvent":{"action":"show_text","contents":{"text":"选择该曲进行游玩","color":"white"}}}]
 
-function skyblock:city/id/read_finish
 
 tellraw @s {"text":" "}
-tellraw @s {"text":"   [返回主菜单]","color":"yellow","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 991"},"hoverEvent":{"action":"show_text","contents":{"text":"返回主菜单","color":"green"}}}
+execute at @n[tag=id_data_reading,type=marker] if items block ~ ~-1 ~ container.0 white_wool run tellraw @s [{"text":"   中断游戏方式：","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 836991"},"hoverEvent":{"action":"show_text","contents":{"text":"点击更改","color":"green"}}},{"text":"跳跃","color":"white","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 836991"},"hoverEvent":{"action":"show_text","contents":{"text":"点击更改","color":"green"}}}]
+execute at @n[tag=id_data_reading,type=marker] if items block ~ ~-1 ~ container.0 green_wool run tellraw @s [{"text":"   中断游戏方式：","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 836991"},"hoverEvent":{"action":"show_text","contents":{"text":"点击更改","color":"green"}}},{"text":"下蹲","color":"white","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 836991"},"hoverEvent":{"action":"show_text","contents":{"text":"点击更改","color":"green"}}}]
+execute at @n[tag=id_data_reading,type=marker] if items block ~ ~-1 ~ container.0 yellow_wool run tellraw @s [{"text":"   中断游戏方式：","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 836991"},"hoverEvent":{"action":"show_text","contents":{"text":"点击更改","color":"green"}}},{"text":"跳跃+下蹲","color":"white","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 836991"},"hoverEvent":{"action":"show_text","contents":{"text":"点击更改","color":"green"}}}]
+tellraw @s {"text":"   [返回主菜单]","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 991"},"hoverEvent":{"action":"show_text","contents":{"text":"返回主菜单","color":"green"}}}
 
+function skyblock:city/id/read_finish
 
 playsound minecraft:ui.button.click master @s ~ ~ ~ 0.3 1.5 0.4
 scoreboard players set @s MultiMenu 0

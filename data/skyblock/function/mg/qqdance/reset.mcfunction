@@ -48,3 +48,6 @@ stopsound @s
 scoreboard players set @s MG_qqd_step 0
 scoreboard players set @s MG_qqd_hit 0
 scoreboard players set @s MultiMenu 836
+tag @s remove MG_qqd_st_stop_1
+tag @s remove MG_qqd_st_stop_2
+tag @s remove MG_qqd_st_stop_3
