@@ -329,6 +329,7 @@ function skyblock:city/id/read
 
 execute as @n[tag=id_data_reading,type=marker] at @s run tp @s ~5 ~ ~
 
+execute if entity @s[tag=seaPerm000] at @n[tag=id_data_reading,type=marker] run item replace block ~ ~ ~ container.0 with green_wool
 execute if entity @s[tag=seaPerm001] at @n[tag=id_data_reading,type=marker] run item replace block ~ ~ ~ container.1 with green_wool
 execute if entity @s[tag=seaPerm002] at @n[tag=id_data_reading,type=marker] run item replace block ~ ~ ~ container.2 with green_wool
 execute if entity @s[tag=seaPerm003] at @n[tag=id_data_reading,type=marker] run item replace block ~ ~ ~ container.3 with green_wool

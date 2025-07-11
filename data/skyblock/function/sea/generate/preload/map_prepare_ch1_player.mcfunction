@@ -11,6 +11,7 @@ scoreboard players set @s sea_i_emerald 0
 
 function skyblock:city/id/read
 execute as @n[tag=id_data_reading,type=marker] at @s run tp @s ~5 ~ ~
+execute at @n[tag=id_data_reading,type=marker] if items block ~ ~ ~ container.0 green_wool run tag @s add seaPerm000
 execute at @n[tag=id_data_reading,type=marker] if items block ~ ~ ~ container.1 green_wool run tag @s add seaPerm001
 execute at @n[tag=id_data_reading,type=marker] if items block ~ ~ ~ container.2 green_wool run tag @s add seaPerm002
 execute at @n[tag=id_data_reading,type=marker] if items block ~ ~ ~ container.3 green_wool run tag @s add seaPerm003
