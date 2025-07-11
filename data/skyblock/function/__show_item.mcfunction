@@ -1,2 +1,2 @@
-execute if items entity @s weapon.mainhand *[!custom_name] run return run tellraw @a [{"text":"","color":"gray","extra":[{"selector":"@s"},{"text":" is holding ["},{"nbt":"SelectedItem.id","entity":"@s","interpret":true},{"text":"]"}]}]
+execute if items entity @s weapon.mainhand *[!custom_name] run return run tellraw @a [{"text":"","color":"gray","extra":[{"selector":"@s"},{"text":" is holding ["},{"nbt":"SelectedItem.id","entity":"@s"},{"text":"]"}]}]
 execute if items entity @s weapon.mainhand *[custom_name] run return run tellraw @a [{"text":"","color":"gray","extra":[{"selector":"@s"},{"text":" is holding ["},{"nbt":"SelectedItem.components.\"minecraft:custom_name\"","entity":"@s","interpret":true},{"text":"]"}]}]
