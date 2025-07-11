@@ -8,10 +8,14 @@ execute if score @s MG_qqd_song_id matches 2 at @n[tag=id_data_reading,type=mark
 execute if score @s MG_qqd_song_id matches 4 at @n[tag=id_data_reading,type=marker] if items block ~ ~ ~ container.0 white_wool run item replace block ~ ~ ~ container.2 with yellow_wool 
 execute if score @s MG_qqd_song_id matches 6 at @n[tag=id_data_reading,type=marker] if items block ~ ~ ~ container.0 white_wool run item replace block ~ ~ ~ container.3 with yellow_wool
 execute if score @s MG_qqd_song_id matches 9 at @n[tag=id_data_reading,type=marker] if items block ~ ~ ~ container.0 white_wool run item replace block ~ ~ ~ container.1 with yellow_wool
-execute if score @s MG_qqd_song_id matches 3 at @n[tag=id_data_reading,type=marker] unless items block ~ ~ ~ container.0 yellow_wool run item replace block ~ ~ ~ container.0 with red_wool
-execute if score @s MG_qqd_song_id matches 5 at @n[tag=id_data_reading,type=marker] unless items block ~ ~ ~ container.0 yellow_wool run item replace block ~ ~ ~ container.2 with red_wool 
-execute if score @s MG_qqd_song_id matches 7 at @n[tag=id_data_reading,type=marker] unless items block ~ ~ ~ container.0 yellow_wool run item replace block ~ ~ ~ container.3 with red_wool
-execute if score @s MG_qqd_song_id matches 10 at @n[tag=id_data_reading,type=marker] unless items block ~ ~ ~ container.0 yellow_wool run item replace block ~ ~ ~ container.1 with red_wool
+execute if score @s MG_qqd_song_id matches 3 at @n[tag=id_data_reading,type=marker] unless items block ~ ~ ~ container.0 red_wool run function skyblock:mg/qqdance/result_new
+execute if score @s MG_qqd_song_id matches 5 at @n[tag=id_data_reading,type=marker] unless items block ~ ~ ~ container.0 red_wool run function skyblock:mg/qqdance/result_new
+execute if score @s MG_qqd_song_id matches 7 at @n[tag=id_data_reading,type=marker] unless items block ~ ~ ~ container.0 red_wool run function skyblock:mg/qqdance/result_new
+execute if score @s MG_qqd_song_id matches 10 at @n[tag=id_data_reading,type=marker] unless items block ~ ~ ~ container.0 red_wool run function skyblock:mg/qqdance/result_new
+execute if score @s MG_qqd_song_id matches 3 at @n[tag=id_data_reading,type=marker] unless items block ~ ~ ~ container.0 red_wool run item replace block ~ ~ ~ container.0 with red_wool
+execute if score @s MG_qqd_song_id matches 5 at @n[tag=id_data_reading,type=marker] unless items block ~ ~ ~ container.0 red_wool run item replace block ~ ~ ~ container.2 with red_wool 
+execute if score @s MG_qqd_song_id matches 7 at @n[tag=id_data_reading,type=marker] unless items block ~ ~ ~ container.0 red_wool run item replace block ~ ~ ~ container.3 with red_wool
+execute if score @s MG_qqd_song_id matches 10 at @n[tag=id_data_reading,type=marker] unless items block ~ ~ ~ container.0 red_wool run item replace block ~ ~ ~ container.1 with red_wool
 
 
 
