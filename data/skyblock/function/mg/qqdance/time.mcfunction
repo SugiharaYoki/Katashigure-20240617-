@@ -38,6 +38,8 @@ execute if score @s MG_qqd_song_id matches 10 run title @s actionbar [{"text":"C
 
 function skyblock:mg/qqdance/song
 
-execute if entity @s[predicate=skyblock:jump] run function skyblock:mg/qqdance/end
+execute if entity @s[tag=MG_qqd_st_stop_1] if entity @s[predicate=skyblock:jump] run function skyblock:mg/qqdance/end
+execute if entity @s[tag=MG_qqd_st_stop_2] if entity @s[predicate=skyblock:sneak] run function skyblock:mg/qqdance/end
+execute if entity @s[tag=MG_qqd_st_stop_3] if entity @s[predicate=skyblock:jump,predicate=skyblock:sneak] run function skyblock:mg/qqdance/end
 execute as @s[scores={MG_qqd_t_rel=..-10}] run function skyblock:mg/qqdance/end
 

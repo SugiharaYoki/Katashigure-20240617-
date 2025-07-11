@@ -9,6 +9,8 @@ scoreboard players set @s MG_qqd_t_rel 100
 scoreboard players set @s MG_qqd_step 0
 scoreboard players set @s MG_qqd_hit 0
 
+function skyblock:city/id/read
+
 #qq炫舞长期修改长期更改更新
 execute as @s[scores={MultiMenu=836001}] at @s run scoreboard players set @s MG_qqd_song_id 1
 execute as @s[scores={MultiMenu=836002}] at @s run scoreboard players set @s MG_qqd_song_id 2
@@ -41,9 +43,17 @@ execute as @s[scores={MultiMenu=836028}] at @s run scoreboard players set @s MG_
 execute as @s[scores={MultiMenu=836029}] at @s run scoreboard players set @s MG_qqd_song_id 29
 
 
-tag @s add Gaming
-tag @s add MG_qqd
+execute as @s[scores={MultiMenu=836001..836500}] at @s run tag @s add Gaming
+execute as @s[scores={MultiMenu=836001..836500}] at @s run tag @s add MG_qqd
 
-stopsound @s
+execute as @s[scores={MultiMenu=836001..836500}] at @s run stopsound @s
 
-scoreboard players set @s MultiMenu 0
+execute as @s[scores={MultiMenu=836001..836500}] at @s run scoreboard players set @s MultiMenu 0
+execute as @s[scores={MultiMenu=836901}] at @s run function skyblock:mg/qqdance/setting/how_to_stop
+execute as @s[scores={MultiMenu=836901..836999}] at @s run scoreboard players set @s MultiMenu 836
+
+execute as @s[scores={MultiMenu=836001..836500}] at @n[tag=id_data_reading,type=marker] if items block ~ ~-1 ~ container.0 red_wool run tag @s add MG_qqd_st_stop_1
+execute as @s[scores={MultiMenu=836001..836500}] at @n[tag=id_data_reading,type=marker] if items block ~ ~-1 ~ container.0 yellow_wool run tag @s add MG_qqd_st_stop_2
+execute as @s[scores={MultiMenu=836001..836500}] at @n[tag=id_data_reading,type=marker] if items block ~ ~-1 ~ container.0 white_wool run tag @s add MG_qqd_st_stop_3
+
+function skyblock:city/id/read_finish
