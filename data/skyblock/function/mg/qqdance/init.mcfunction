@@ -49,8 +49,8 @@ execute as @s[scores={MultiMenu=836001..836500}] at @s run tag @s add MG_qqd
 execute as @s[scores={MultiMenu=836001..836500}] at @s run stopsound @s
 
 execute as @s[scores={MultiMenu=836001..836500}] at @s run scoreboard players set @s MultiMenu 0
-execute as @s[scores={MultiMenu=836901}] at @s run function skyblock:mg/qqdance/setting/how_to_stop
-execute as @s[scores={MultiMenu=836901..836999}] at @s run scoreboard players set @s MultiMenu 836
+execute as @s[scores={MultiMenu=836991}] at @s run function skyblock:mg/qqdance/setting/how_to_stop
+execute as @s[scores={MultiMenu=836991..836999}] at @s run scoreboard players set @s MultiMenu 836
 
 execute as @s[scores={MultiMenu=836001..836500}] at @n[tag=id_data_reading,type=marker] if items block ~ ~-1 ~ container.0 red_wool run tag @s add MG_qqd_st_stop_1
 execute as @s[scores={MultiMenu=836001..836500}] at @n[tag=id_data_reading,type=marker] if items block ~ ~-1 ~ container.0 yellow_wool run tag @s add MG_qqd_st_stop_2
