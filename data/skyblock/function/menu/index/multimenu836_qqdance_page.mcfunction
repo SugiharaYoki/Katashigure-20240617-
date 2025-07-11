@@ -12,7 +12,7 @@ execute at @n[tag=id_data_reading,type=marker] unless items block ~ ~ ~ containe
 execute at @n[tag=id_data_reading,type=marker] unless items block ~ ~ ~ container.0 white_wool run item replace block ~ ~ ~ container.2 with white_wool
 execute at @n[tag=id_data_reading,type=marker] unless items block ~ ~ ~ container.0 white_wool run item replace block ~ ~ ~ container.1 with white_wool
 execute at @n[tag=id_data_reading,type=marker] unless items block ~ ~ ~ container.0 white_wool run item replace block ~ ~ ~ container.0 with white_wool
-execute at @n[tag=id_data_reading,type=marker] unless items block ~ ~-1 ~ container.0 white_wool run item replace block ~ ~-1 ~ container.0 with white_wool
+execute at @n[tag=id_data_reading,type=marker] unless items block ~ ~-1 ~ container.0 #wool run item replace block ~ ~-1 ~ container.0 with white_wool
 
 #qq炫舞长期修改长期更改更新
 
