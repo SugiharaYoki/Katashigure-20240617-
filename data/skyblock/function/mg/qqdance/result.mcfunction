@@ -2,7 +2,12 @@ tellraw @s [{"text":"舞蹈结束！","color":"green","bold":true},{"text":"\n�
 
 tellraw @a [{"selector":"@s","color":"green"},{"text":"达成一舞！","color":"gray"}]
 
+function skyblock:city/id/read
+#qq炫舞长期修改长期更改更新
 
+
+
+function skyblock:city/id/read_finish
 
 playsound minecraft:block.note_block.harp master @s ~ ~ ~ 1 0.8
 

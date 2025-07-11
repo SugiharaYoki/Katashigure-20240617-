@@ -1,6 +1,6 @@
 
 
-tellraw @s [{"text":"连击数量：","color":"gray","bold":true},{"score":{"name":"@s","objective":"MG_qqd_step"}}]
+tellraw @s [{"text":"最终得分：","color":"gray","bold":true},{"score":{"name":"@s","objective":"MG_qqd_step"}}]
 
 
 #qq炫舞长期修改长期更改更新
