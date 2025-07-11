@@ -231,4 +231,12 @@ execute if entity @s[scores={ishtar_bless_2=34}] run give @s dragon_breath 2
 execute if entity @s[scores={ishtar_bless_3=34}] run give @s dragon_breath 2
 execute if entity @s[scores={ishtar_bless_4=34}] run give @s dragon_breath 2
 
+execute if entity @s[scores={ishtar_bless_1=36}] run give @s goat_horn[instrument=admire_goat_horn]
+execute if entity @s[scores={ishtar_bless_2=36}] run give @s goat_horn[instrument=admire_goat_horn]
+execute if entity @s[scores={ishtar_bless_3=36}] run give @s goat_horn[instrument=admire_goat_horn]
+execute if entity @s[scores={ishtar_bless_4=36}] run give @s goat_horn[instrument=admire_goat_horn]
+execute if entity @s[scores={ishtar_bless_1=36}] run give @s ward_armor_trim_smithing_template[custom_name='{"text":"焚白恶魔","italic":false,"color":"red"}',custom_data={skywar_ishtar_36:1},lore=['{"text":"吹响号角","color":"light_purple","italic":true}','{"text":"为自己的队伍生成一个自动旋转扫描的火焰攻击塔","color":"white","italic":false}','{"text":"同一个队伍只能同时存在一个火焰攻击塔","color":"red","italic":false}']] 1
+execute if entity @s[scores={ishtar_bless_2=36}] run give @s ward_armor_trim_smithing_template[custom_name='{"text":"焚白恶魔","italic":false,"color":"red"}',custom_data={skywar_ishtar_36:1},lore=['{"text":"吹响号角","color":"light_purple","italic":true}','{"text":"为自己的队伍生成一个自动旋转扫描的火焰攻击塔","color":"white","italic":false}','{"text":"同一个队伍只能同时存在一个火焰攻击塔","color":"red","italic":false}']] 1
+execute if entity @s[scores={ishtar_bless_3=36}] run give @s ward_armor_trim_smithing_template[custom_name='{"text":"焚白恶魔","italic":false,"color":"red"}',custom_data={skywar_ishtar_36:1},lore=['{"text":"吹响号角","color":"light_purple","italic":true}','{"text":"为自己的队伍生成一个自动旋转扫描的火焰攻击塔","color":"white","italic":false}','{"text":"同一个队伍只能同时存在一个火焰攻击塔","color":"red","italic":false}']] 1
+execute if entity @s[scores={ishtar_bless_4=36}] run give @s ward_armor_trim_smithing_template[custom_name='{"text":"焚白恶魔","italic":false,"color":"red"}',custom_data={skywar_ishtar_36:1},lore=['{"text":"吹响号角","color":"light_purple","italic":true}','{"text":"为自己的队伍生成一个自动旋转扫描的火焰攻击塔","color":"white","italic":false}','{"text":"同一个队伍只能同时存在一个火焰攻击塔","color":"red","italic":false}']] 1
 
