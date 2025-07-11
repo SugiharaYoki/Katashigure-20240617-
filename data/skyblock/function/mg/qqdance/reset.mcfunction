@@ -4,11 +4,11 @@ tellraw @s [{"text":"最终得分：","color":"gray","bold":true},{"score":{"nam
 tellraw @s [{"text":"击中音符数量：","color":"gray","bold":true},{"score":{"name":"@s","objective":"MG_qqd_hit"}}]
 scoreboard players set 10 constant 10
 scoreboard players operation @s MG_qqd_hit %= 10 constant
-scoreboard players operation @s Perm_PersonFSB += @s MG_qqd_hit
-tellraw @s [{"text":"FSB + ","color":"gray","bold":true},{"score":{"name":"@s","objective":"MG_qqd_hit"}}]
+scoreboard players operation @s[tag=MG_qqd_st_gamemode_2] Perm_PersonFSB += @s MG_qqd_hit
+tellraw @s[tag=MG_qqd_st_gamemode_2] [{"text":"FSB + ","color":"gray","bold":true},{"score":{"name":"@s","objective":"MG_qqd_hit"}}]
 scoreboard players operation @s MG_qqd_hit %= 10 constant
-scoreboard players operation @s Perm_PersonSHD += @s MG_qqd_hit
-tellraw @s [{"text":"SHD + ","color":"gray","bold":true},{"score":{"name":"@s","objective":"MG_qqd_hit"}}]
+scoreboard players operation @s[tag=MG_qqd_st_gamemode_2] Perm_PersonSHD += @s MG_qqd_hit
+tellraw @s[tag=MG_qqd_st_gamemode_2] [{"text":"SHD + ","color":"gray","bold":true},{"score":{"name":"@s","objective":"MG_qqd_hit"}}]
 
 scoreboard players add @s Perm_PersonSHD 100
 
@@ -51,3 +51,7 @@ scoreboard players set @s MultiMenu 836
 tag @s remove MG_qqd_st_stop_1
 tag @s remove MG_qqd_st_stop_2
 tag @s remove MG_qqd_st_stop_3
+tag @s remove MG_qqd_st_gamemode_1
+tag @s remove MG_qqd_st_gamemode_2
+
+

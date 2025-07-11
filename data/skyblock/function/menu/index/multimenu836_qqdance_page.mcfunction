@@ -1,4 +1,4 @@
-tellraw @s {"text":"「选择想游玩的歌曲」","color":"white"}
+tellraw @s {"text":"「选择想游玩的歌曲」","color":"aqua","bold":true}
 tellraw @s {"text":" "}
 
 
@@ -12,7 +12,8 @@ execute at @n[tag=id_data_reading,type=marker] unless items block ~ ~ ~ containe
 execute at @n[tag=id_data_reading,type=marker] unless items block ~ ~ ~ container.0 white_wool run item replace block ~ ~ ~ container.2 with white_wool
 execute at @n[tag=id_data_reading,type=marker] unless items block ~ ~ ~ container.0 white_wool run item replace block ~ ~ ~ container.1 with white_wool
 execute at @n[tag=id_data_reading,type=marker] unless items block ~ ~ ~ container.0 white_wool run item replace block ~ ~ ~ container.0 with white_wool
-execute at @n[tag=id_data_reading,type=marker] unless items block ~ ~-1 ~ container.0 white_wool run item replace block ~ ~-1 ~ container.0 with white_wool
+execute at @n[tag=id_data_reading,type=marker] unless items block ~ ~-1 ~ container.0 #wool run item replace block ~ ~-1 ~ container.0 with white_wool
+execute at @n[tag=id_data_reading,type=marker] unless items block ~ ~-1 ~ container.1 #wool run item replace block ~ ~-1 ~ container.1 with white_wool
 
 #qq炫舞长期修改长期更改更新
 
@@ -33,9 +34,11 @@ execute at @n[tag=id_data_reading,type=marker] if items block ~ ~ ~ container.3 
 
 
 tellraw @s {"text":" "}
-execute at @n[tag=id_data_reading,type=marker] if items block ~ ~-1 ~ container.0 white_wool run tellraw @s [{"text":"   中断游戏方式：","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 836991"},"hoverEvent":{"action":"show_text","contents":{"text":"点击更改","color":"green"}}},{"text":"跳跃","color":"white","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 836991"},"hoverEvent":{"action":"show_text","contents":{"text":"点击更改","color":"green"}}}]
-execute at @n[tag=id_data_reading,type=marker] if items block ~ ~-1 ~ container.0 green_wool run tellraw @s [{"text":"   中断游戏方式：","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 836991"},"hoverEvent":{"action":"show_text","contents":{"text":"点击更改","color":"green"}}},{"text":"下蹲","color":"white","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 836991"},"hoverEvent":{"action":"show_text","contents":{"text":"点击更改","color":"green"}}}]
-execute at @n[tag=id_data_reading,type=marker] if items block ~ ~-1 ~ container.0 yellow_wool run tellraw @s [{"text":"   中断游戏方式：","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 836991"},"hoverEvent":{"action":"show_text","contents":{"text":"点击更改","color":"green"}}},{"text":"跳跃+下蹲","color":"white","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 836991"},"hoverEvent":{"action":"show_text","contents":{"text":"点击更改","color":"green"}}}]
+execute at @n[tag=id_data_reading,type=marker] if items block ~ ~-1 ~ container.0 white_wool run tellraw @s [{"text":"   中断游戏方式：","color":"dark_aqua","bold":true,"clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 836991"},"hoverEvent":{"action":"show_text","contents":{"text":"点击更改","color":"green"}}},{"text":"跳跃","color":"white","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 836991"},"hoverEvent":{"action":"show_text","contents":{"text":"点击更改","color":"green"}}}]
+execute at @n[tag=id_data_reading,type=marker] if items block ~ ~-1 ~ container.0 yellow_wool run tellraw @s [{"text":"   中断游戏方式：","color":"dark_aqua","bold":true,"clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 836991"},"hoverEvent":{"action":"show_text","contents":{"text":"点击更改","color":"green"}}},{"text":"下蹲","color":"white","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 836991"},"hoverEvent":{"action":"show_text","contents":{"text":"点击更改","color":"green"}}}]
+execute at @n[tag=id_data_reading,type=marker] if items block ~ ~-1 ~ container.0 red_wool run tellraw @s [{"text":"   中断游戏方式：","color":"dark_aqua","bold":true,"clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 836991"},"hoverEvent":{"action":"show_text","contents":{"text":"点击更改","color":"green"}}},{"text":"跳跃+下蹲","color":"white","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 836991"},"hoverEvent":{"action":"show_text","contents":{"text":"点击更改","color":"green"}}}]
+execute at @n[tag=id_data_reading,type=marker] if items block ~ ~-1 ~ container.1 white_wool run tellraw @s [{"text":"   游戏模式：","color":"dark_aqua","bold":true,"clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 836992"},"hoverEvent":{"action":"show_text","contents":{"text":"点击更改","color":"green"}}},{"text":"炫舞","color":"white","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 836992"},"hoverEvent":{"action":"show_text","contents":{"text":"点击更改","color":"green"}}}]
+execute at @n[tag=id_data_reading,type=marker] if items block ~ ~-1 ~ container.1 yellow_wool run tellraw @s [{"text":"   游戏模式：","color":"dark_aqua","bold":true,"clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 836992"},"hoverEvent":{"action":"show_text","contents":{"text":"点击更改","color":"green"}}},{"text":"排练（你将无法获得奖励）","color":"white","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 836992"},"hoverEvent":{"action":"show_text","contents":{"text":"点击更改","color":"green"}}}]
 tellraw @s {"text":"   [返回主菜单]","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 991"},"hoverEvent":{"action":"show_text","contents":{"text":"返回主菜单","color":"green"}}}
 
 function skyblock:city/id/read_finish
