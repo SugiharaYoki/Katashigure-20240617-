@@ -42,3 +42,12 @@ execute if score @s rng1 matches 7..9 if entity @s[tag=Skywar_Bless36_5] at @s r
 execute if score @s rng1 matches 7..9 if entity @s[tag=Skywar_Bless36_6] at @s run particle minecraft:happy_villager ~ ~1 ~ 0 2 0 0 10 normal @a[team=Team1_6]
 execute if score @s rng1 matches 7..9 if entity @s[tag=Skywar_Bless36_7] at @s run particle minecraft:happy_villager ~ ~1 ~ 0 2 0 0 10 normal @a[team=Team1_7]
 execute if score @s rng1 matches 7..9 if entity @s[tag=Skywar_Bless36_8] at @s run particle minecraft:happy_villager ~ ~1 ~ 0 2 0 0 10 normal @a[team=Team1_8]
+
+execute if entity @s[tag=Skywar_Bless36_1] at @s run effect give @a[team=Team1_1,distance=..4.2] haste 3 3 false
+execute if entity @s[tag=Skywar_Bless36_2] at @s run effect give @a[team=Team1_2,distance=..4.2] haste 3 3 false
+execute if entity @s[tag=Skywar_Bless36_3] at @s run effect give @a[team=Team1_3,distance=..4.2] haste 3 3 false
+execute if entity @s[tag=Skywar_Bless36_4] at @s run effect give @a[team=Team1_4,distance=..4.2] haste 3 3 false
+execute if entity @s[tag=Skywar_Bless36_5] at @s run effect give @a[team=Team1_5,distance=..4.2] haste 3 3 false
+execute if entity @s[tag=Skywar_Bless36_6] at @s run effect give @a[team=Team1_6,distance=..4.2] haste 3 3 false
+execute if entity @s[tag=Skywar_Bless36_7] at @s run effect give @a[team=Team1_7,distance=..4.2] haste 3 3 false
+execute if entity @s[tag=Skywar_Bless36_8] at @s run effect give @a[team=Team1_8,distance=..4.2] haste 3 3 false
