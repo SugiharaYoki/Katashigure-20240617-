@@ -346,6 +346,31 @@ execute if entity @s[tag=seaPerm013] at @n[tag=id_data_reading,type=marker] run 
 execute if entity @s[tag=seaPerm014] at @n[tag=id_data_reading,type=marker] run item replace block ~ ~ ~ container.14 with green_wool
 execute if entity @s[tag=seaPerm015] at @n[tag=id_data_reading,type=marker] run item replace block ~ ~ ~ container.15 with green_wool
 
+execute if entity @s[tag=sea_t_pounce1] at @n[tag=id_data_reading,type=marker] run item replace block ~ ~ ~ container.21 with green_wool
+execute if entity @s[tag=sea_t_sprint] at @n[tag=id_data_reading,type=marker] run item replace block ~ ~ ~ container.22 with green_wool
+execute if entity @s[tag=sea_t_spectral1] at @n[tag=id_data_reading,type=marker] run item replace block ~ ~ ~ container.23 with green_wool
+execute if entity @s[tag=sea_t_spectral2] at @n[tag=id_data_reading,type=marker] run item replace block ~ ~ ~ container.24 with green_wool
+
+tag @s remove seaPerm000
+tag @s remove seaPerm001
+tag @s remove seaPerm002
+tag @s remove seaPerm003
+tag @s remove seaPerm004
+tag @s remove seaPerm005
+tag @s remove seaPerm006
+tag @s remove seaPerm007
+tag @s remove seaPerm008
+tag @s remove seaPerm009
+tag @s remove seaPerm010
+tag @s remove seaPerm011
+tag @s remove seaPerm012
+tag @s remove seaPerm013
+tag @s remove seaPerm014
+tag @s remove seaPerm015
+tag @s remove sea_t_pounce1
+tag @s remove sea_t_sprint
+tag @s remove sea_t_spectral1
+tag @s remove sea_t_spectral2
 
 function skyblock:city/id/read_finish
 

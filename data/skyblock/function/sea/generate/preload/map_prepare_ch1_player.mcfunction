@@ -27,6 +27,12 @@ execute at @n[tag=id_data_reading,type=marker] if items block ~ ~ ~ container.12
 execute at @n[tag=id_data_reading,type=marker] if items block ~ ~ ~ container.13 green_wool run tag @s add seaPerm013
 execute at @n[tag=id_data_reading,type=marker] if items block ~ ~ ~ container.14 green_wool run tag @s add seaPerm014
 execute at @n[tag=id_data_reading,type=marker] if items block ~ ~ ~ container.15 green_wool run tag @s add seaPerm015
+
+execute at @n[tag=id_data_reading,type=marker] if items block ~ ~ ~ container.21 green_wool run tag @s add sea_t_pounce1
+execute at @n[tag=id_data_reading,type=marker] if items block ~ ~ ~ container.22 green_wool run tag @s add sea_t_sprint
+execute at @n[tag=id_data_reading,type=marker] if items block ~ ~ ~ container.23 green_wool run tag @s add sea_t_spectral1
+execute at @n[tag=id_data_reading,type=marker] if items block ~ ~ ~ container.24 green_wool run tag @s add sea_t_spectral2
+
 function skyblock:city/id/read_finish
 
 
