@@ -2,10 +2,12 @@ scoreboard objectives add MG_qqd_t_abs dummy
 scoreboard objectives add MG_qqd_t_rel dummy
 scoreboard objectives add MG_qqd_song_id dummy
 scoreboard objectives add MG_qqd_step dummy
+scoreboard objectives add MG_qqd_hit dummy
 
 scoreboard players set @s MG_qqd_t_abs 0
 scoreboard players set @s MG_qqd_t_rel 100
 scoreboard players set @s MG_qqd_step 0
+scoreboard players set @s MG_qqd_hit 0
 
 #qq炫舞长期修改长期更改更新
 execute as @s[scores={MultiMenu=836001}] at @s run scoreboard players set @s MG_qqd_song_id 1

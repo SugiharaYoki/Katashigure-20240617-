@@ -1,0 +1,1 @@
+kill @n[tag=id_data_reading,type=marker]
