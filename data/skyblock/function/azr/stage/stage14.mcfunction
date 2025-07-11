@@ -484,7 +484,7 @@ execute if score stage_main_thread AzrTimerStack matches 970 as @a[tag=azrPlayer
 
 
 execute if score stage_main_thread AzrTimerStack matches 880..948 if score mobCount Azr_system matches 1.. run scoreboard players set stage_main_thread AzrTimerStack 946
-execute if score stage_main_thread AzrTimerStack matches 950 run function skyblock:azr/azrielsmidgarden_stage_14_end
+execute if score stage_main_thread AzrTimerStack matches 950 run function skyblock:azr/stage14_end
 execute if score stage_main_thread AzrTimerStack matches 970 run scoreboard players set stage Azr_system 56
 execute if score stage_main_thread AzrTimerStack matches 970 run scoreboard players set stage_main_thread AzrTimerStack 10000
 execute if score stage_main_thread AzrTimerStack matches 950 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..16}] Azr_skillPoints 17
