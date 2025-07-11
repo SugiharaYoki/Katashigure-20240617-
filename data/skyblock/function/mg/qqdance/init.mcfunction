@@ -52,6 +52,9 @@ execute as @s[scores={MultiMenu=836001..836500}] at @s run scoreboard players se
 execute as @s[scores={MultiMenu=836991}] at @s run function skyblock:mg/qqdance/setting/how_to_stop
 execute as @s[scores={MultiMenu=836991..836999}] at @s run scoreboard players set @s MultiMenu 836
 
+execute as @s[scores={MultiMenu=836001..836500}] run say hi
+execute as @s[scores={MultiMenu=836001..836500}] at @n[tag=id_data_reading,type=marker] if items block ~ ~-1 ~ container.0 red_wool run say hello
+execute as @s[scores={MultiMenu=836001..836500}] at @n[tag=id_data_reading,type=marker] if block ~ ~-1 ~ barrel run say hru
 execute as @s[scores={MultiMenu=836001..836500}] at @n[tag=id_data_reading,type=marker] if items block ~ ~-1 ~ container.0 red_wool run tag @s add MG_qqd_st_stop_1
 execute as @s[scores={MultiMenu=836001..836500}] at @n[tag=id_data_reading,type=marker] if items block ~ ~-1 ~ container.0 yellow_wool run tag @s add MG_qqd_st_stop_2
 execute as @s[scores={MultiMenu=836001..836500}] at @n[tag=id_data_reading,type=marker] if items block ~ ~-1 ~ container.0 white_wool run tag @s add MG_qqd_st_stop_3
