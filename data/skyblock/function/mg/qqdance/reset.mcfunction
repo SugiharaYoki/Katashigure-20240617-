@@ -4,13 +4,12 @@ tellraw @s [{"text":"最终得分：","color":"gray","bold":true},{"score":{"nam
 tellraw @s [{"text":"击中音符数量：","color":"gray","bold":true},{"score":{"name":"@s","objective":"MG_qqd_hit"}}]
 scoreboard players set 10 constant 10
 scoreboard players operation @s MG_qqd_hit %= 10 constant
-scoreboard players operation @s[tag=MG_qqd_st_gamemode_2] Perm_PersonFSB += @s MG_qqd_hit
-tellraw @s[tag=MG_qqd_st_gamemode_2] [{"text":"FSB + ","color":"gray","bold":true},{"score":{"name":"@s","objective":"MG_qqd_hit"}}]
+scoreboard players operation @s[tag=MG_qqd_st_gamemode_1] Perm_PersonFSB += @s MG_qqd_hit
+tellraw @s[tag=MG_qqd_st_gamemode_1] [{"text":"FSB + ","color":"gray","bold":true},{"score":{"name":"@s","objective":"MG_qqd_hit"}}]
 scoreboard players operation @s MG_qqd_hit %= 10 constant
-scoreboard players operation @s[tag=MG_qqd_st_gamemode_2] Perm_PersonSHD += @s MG_qqd_hit
-tellraw @s[tag=MG_qqd_st_gamemode_2] [{"text":"SHD + ","color":"gray","bold":true},{"score":{"name":"@s","objective":"MG_qqd_hit"}}]
+scoreboard players operation @s[tag=MG_qqd_st_gamemode_1] Perm_PersonSHD += @s MG_qqd_hit
+tellraw @s[tag=MG_qqd_st_gamemode_1] [{"text":"SHD + ","color":"gray","bold":true},{"score":{"name":"@s","objective":"MG_qqd_hit"}}]
 
-scoreboard players add @s Perm_PersonSHD 100
 
 #qq炫舞长期修改长期更改更新
 execute if score @s MG_qqd_song_id matches 1 run tellraw @a [{"text":"歌曲：","color":"gray","bold":true},{"text":"Lethal Dose","color":"gray","bold":false}]
