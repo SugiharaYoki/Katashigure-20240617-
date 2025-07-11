@@ -1,4 +1,4 @@
 #execute if items entity @s weapon.mainhand *[!custom_name] run return run tellraw @a [{"text":"","color":"gray","extra":[{"selector":"@s"},{"text":" is holding ["},{"nbt":"SelectedItem.components.\"minecraft:item_name\"","entity":"@s","interpret":true,"hoverEvent": {"action": "show_item","contents": $(item_stack)}},{"text":"]"}]}]
 #execute if items entity @s weapon.mainhand *[custom_name] run return run tellraw @a [{"text":"","color":"gray","extra":[{"selector":"@s"},{"text":" is holding ["},{"nbt":"SelectedItem.components.\"minecraft:custom_name\"","entity":"@s","interpret":true,"hoverEvent": {"action": "show_item","contents": $(item_stack)}},{"text":"]"}]}]
 
-say $(item_stack)
+$say $(item_stack)
