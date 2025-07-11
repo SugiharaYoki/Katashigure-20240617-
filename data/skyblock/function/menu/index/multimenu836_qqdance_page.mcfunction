@@ -40,6 +40,7 @@ execute at @n[tag=id_data_reading,type=marker] if items block ~ ~-1 ~ container.
 execute at @n[tag=id_data_reading,type=marker] if items block ~ ~-1 ~ container.1 white_wool run tellraw @s [{"text":"   游戏模式：","color":"dark_aqua","bold":true,"clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 836992"},"hoverEvent":{"action":"show_text","contents":{"text":"点击更改","color":"green"}}},{"text":"炫舞","color":"white","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 836992"},"hoverEvent":{"action":"show_text","contents":{"text":"点击更改","color":"green"}}}]
 execute at @n[tag=id_data_reading,type=marker] if items block ~ ~-1 ~ container.1 yellow_wool run tellraw @s [{"text":"   游戏模式：","color":"dark_aqua","bold":true,"clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 836992"},"hoverEvent":{"action":"show_text","contents":{"text":"点击更改","color":"green"}}},{"text":"排练（你将无法获得奖励）","color":"white","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 836992"},"hoverEvent":{"action":"show_text","contents":{"text":"点击更改","color":"green"}}}]
 tellraw @s [{"text":"   持有SHD ","color":"gray","bold":false},{"score":{"name":"@s","objective":"Perm_PersonSHD"}}]
+tellraw @s {"text":" "}
 tellraw @s {"text":"   [返回主菜单]","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 991"},"hoverEvent":{"action":"show_text","contents":{"text":"返回主菜单","color":"green"}}}
 
 function skyblock:city/id/read_finish
