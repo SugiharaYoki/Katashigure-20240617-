@@ -47,3 +47,4 @@ tag @s remove MG_qqd_stepped_s
 stopsound @s
 scoreboard players set @s MG_qqd_step 0
 scoreboard players set @s MG_qqd_hit 0
+scoreboard players set @s MultiMenu 836
