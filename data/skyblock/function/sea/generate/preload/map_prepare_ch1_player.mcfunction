@@ -1,13 +1,3 @@
-execute store result storage sea:doc eid int 1.0 run scoreboard players get @s SEAPT_member_eternal
-clear @s
-effect clear @s
-tag @s[gamemode=!spectator] add SEAPT
-stopsound @s
-#give @s globe_banner_pattern[custom_name='{"text":"调查记录 6月29日 17:42","italic":true,"color":"dark_purple","italic":false}',lore=['{"text":"记录者为忒尔克西钻井平台调查小组成员，也是我本人。","color":"white","italic":false}','{"text":"钻井平台距离失联已经超过36小时，我们在黄昏之时赶到了平台的西南驳口。","color":"white","italic":false}','{"text":"整座海上设施此时一片死寂，至少上百名的工作人员皆数不见踪影。","color":"white","italic":false}']]
-#give @s[tag=seaPerm000,scores={SEAPT_mode=1..2}] nether_star[custom_name='{"text":"神秘的星光宝石","italic":true,"color":"gold","italic":false}',lore=['{"text":"说实话吧，我并不知道这东西是怎么跑到我口袋里来的。","color":"white","italic":false}','{"text":"在我准备下船的时候，碰巧从衣服里摸出了它。","color":"white","italic":false}','{"text":"这上面闪烁的光泽，似乎在尝试向我述说某种既视感强烈的，并不存在的过去。","color":"white","italic":false}']]
-item replace entity @s[tag=seaPerm000,scores={SEAPT_mode=1..2}] inventory.26 with nether_star
-
-scoreboard players set @s sea_i_emerald 0
 
 function skyblock:city/id/read
 execute as @n[tag=id_data_reading,type=marker] at @s run tp @s ~5 ~ ~
@@ -35,8 +25,20 @@ execute at @n[tag=id_data_reading,type=marker] if items block ~ ~ ~ container.24
 
 function skyblock:city/id/read_finish
 
+execute store result storage sea:doc eid int 1.0 run scoreboard players get @s SEAPT_member_eternal
+clear @s
+effect clear @s
+tag @s[gamemode=!spectator] add SEAPT
+stopsound @s
+#give @s globe_banner_pattern[custom_name='{"text":"调查记录 6月29日 17:42","italic":true,"color":"dark_purple","italic":false}',lore=['{"text":"记录者为忒尔克西钻井平台调查小组成员，也是我本人。","color":"white","italic":false}','{"text":"钻井平台距离失联已经超过36小时，我们在黄昏之时赶到了平台的西南驳口。","color":"white","italic":false}','{"text":"整座海上设施此时一片死寂，至少上百名的工作人员皆数不见踪影。","color":"white","italic":false}']]
+#give @s[tag=seaPerm000,scores={SEAPT_mode=1..2}] nether_star[custom_name='{"text":"神秘的星光宝石","italic":true,"color":"gold","italic":false}',lore=['{"text":"说实话吧，我并不知道这东西是怎么跑到我口袋里来的。","color":"white","italic":false}','{"text":"在我准备下船的时候，碰巧从衣服里摸出了它。","color":"white","italic":false}','{"text":"这上面闪烁的光泽，似乎在尝试向我述说某种既视感强烈的，并不存在的过去。","color":"white","italic":false}']]
 
 
+scoreboard players set @s sea_i_emerald 0
+
+
+
+item replace entity @s[tag=seaPerm000,scores={SEAPT_mode=1..2}] inventory.26 with nether_star
 
 item replace entity @s inventory.24 with compass
 #give @s baked_potato 3
