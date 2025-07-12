@@ -137,7 +137,7 @@ execute if entity @s[scores={sea_crafter=50301}] unless entity @s[scores={sea_i_
 execute if entity @s[scores={sea_crafter=50302}] unless entity @s[scores={sea_i_iron_ingot=1..}] run tag @s add SEA_w_upg_FAILED
 execute if entity @s[scores={sea_crafter=50303}] unless entity @s[scores={sea_i_iron_ingot=2..}] run tag @s add SEA_w_upg_FAILED
 execute if entity @s[scores={sea_crafter=50304}] unless entity @s[scores={sea_i_iron_ingot=1..}] run tag @s add SEA_w_upg_FAILED
-execute if entity @s[scores={sea_crafter=50305}] unless entity @s[scores={sea_i_iron_ingot=3..}] run tag @s add SEA_w_upg_FAILED
+execute if entity @s[scores={sea_crafter=50305}] unless entity @s[scores={sea_i_iron_ingot=2..}] run tag @s add SEA_w_upg_FAILED
 execute if entity @s[scores={sea_crafter=50306}] unless entity @s[scores={sea_i_iron_ingot=2..}] run tag @s add SEA_w_upg_FAILED
 execute if entity @s[scores={sea_crafter=50307}] unless entity @s[scores={sea_i_iron_ingot=3..}] run tag @s add SEA_w_upg_FAILED
 execute if entity @s[scores={sea_crafter=50308}] unless entity @s[scores={sea_i_iron_ingot=2..}] run tag @s add SEA_w_upg_FAILED
