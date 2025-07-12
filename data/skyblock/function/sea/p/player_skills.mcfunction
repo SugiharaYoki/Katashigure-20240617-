@@ -90,7 +90,6 @@ execute if items entity @s container.* *[custom_data={sea_t_pounce1:true}] run t
 execute store result score @s rng1 run clear @s pitcher_pod 0
 clear @s[scores={rng1=2..}] pitcher_pod 1
 
-execute as @s[x=80000,dx=20000,z=-10000,dz=20000,y=-200,dy=405] at @s if block ~ ~-1 ~ waxed_weathered_cut_copper_slab run function skyblock:sea/p/elevator_condition
 
 #回响指南针
 execute if items entity @s weapon.* minecraft:recovery_compass run function skyblock:sea/p/echo_compass

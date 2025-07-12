@@ -24,6 +24,7 @@ execute as @s[scores={SEA_pounce_charge=41..}] run scoreboard players set @s SEA
 #execute as @s[tag=sea_exp_thunderrage] run function skyblock:sea/experimental/thunderrage
 #execute as @s[tag=sea_exp_thunderblast] run function skyblock:sea/experimental/thunderblast
 
+execute as @s[x=80000,dx=20000,z=-10000,dz=20000,y=-200,dy=405] at @s if block ~ ~-1 ~ waxed_weathered_cut_copper_slab run function skyblock:sea/p/elevator_condition
 
 execute if score @s SEA_if_spying matches 1.. run function skyblock:sea/p/spyglass_pointout
 
