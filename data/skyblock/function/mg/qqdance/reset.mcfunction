@@ -41,7 +41,7 @@ execute if score @s MG_qqd_song_id matches 13 run tellraw @a [{"text":"难度：
 execute if score @s MG_qqd_song_id matches 14 run tellraw @a [{"text":"歌曲：","color":"gray","bold":true},{"text":"Trideca","color":"gray","bold":false}]
 execute if score @s MG_qqd_song_id matches 14 run tellraw @a [{"text":"难度：","color":"gray","bold":true},{"text":"Normal 4","color":"yellow","bold":false}]
 execute if score @s MG_qqd_song_id matches 15 run tellraw @a [{"text":"歌曲：","color":"gray","bold":true},{"text":"Trideca","color":"gray","bold":false}]
-execute if score @s MG_qqd_song_id matches 15 run tellraw @a [{"text":"难度：","color":"gray","bold":true},{"text":"Hard 7","color":"red","bold":false}]
+execute if score @s MG_qqd_song_id matches 15 run tellraw @a [{"text":"难度：","color":"gray","bold":true},{"text":"Hard 8","color":"red","bold":false}]
 
 title @s times 0 0s 1s
 
