@@ -13,6 +13,9 @@ execute if score @s MG_qqd_song_id matches 9 run function skyblock:mg/qqdance/so
 execute if score @s MG_qqd_song_id matches 10 run function skyblock:mg/qqdance/song/caradbolg_hard
 execute if score @s MG_qqd_song_id matches 11 run function skyblock:mg/qqdance/song/cristalisia_normal
 execute if score @s MG_qqd_song_id matches 12 run function skyblock:mg/qqdance/song/cristalisia_hard
+execute if score @s MG_qqd_song_id matches 13 run function skyblock:mg/qqdance/song/trideca_easy
+execute if score @s MG_qqd_song_id matches 14 run function skyblock:mg/qqdance/song/trideca_normal
+execute if score @s MG_qqd_song_id matches 15 run function skyblock:mg/qqdance/song/trideca_hard
 
 
 
