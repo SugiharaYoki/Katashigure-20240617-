@@ -1,4 +1,4 @@
-
+forceload add 90142 -1886 90209 -1838
 
 
 execute as @n[tag=SEAedwina] at @s run tp @s 90147.99 171.00 -1878.01
@@ -47,3 +47,7 @@ execute if score SEA_ch6_event rng10 matches 2.. run kill @n[tag=SEAedwina,tag=!
 execute store result score SEA_ch6_event rng10 if entity @e[tag=SEAedwina]
 execute if score SEA_ch6_event rng10 matches 2.. run kill @n[tag=SEAedwina,tag=!SEAedwina_attackable]
 kill @e[tag=SEAnorma,type=zombie_villager]
+
+
+
+forceload remove 90142 -1886 90209 -1838
