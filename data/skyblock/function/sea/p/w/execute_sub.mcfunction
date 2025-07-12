@@ -176,7 +176,7 @@ execute if entity @s[scores={sea_crafter=50522},tag=!SEA_w_armor_upg22] run clea
 execute if entity @s[scores={sea_crafter=50523},tag=!SEA_w_armor_upg23] run clear @s echo_shard 3
 execute if entity @s[scores={sea_crafter=50524},tag=!SEA_w_armor_upg24] run clear @s echo_shard 3
 execute if entity @s[scores={sea_crafter=50525},tag=!SEA_w_armor_upg25] run clear @s echo_shard 3
-execute if entity @s[scores={sea_crafter=50526},tag=!SEA_w_armor_upg26] run clear @s echo_sHard 5
+execute if entity @s[scores={sea_crafter=50526},tag=!SEA_w_armor_upg26] run clear @s echo_shard 8
 execute if entity @s[scores={sea_crafter=50527},tag=!SEA_w_armor_upg27] run clear @s echo_shard 4
 execute if entity @s[scores={sea_crafter=50528},tag=!SEA_w_armor_upg28] run clear @s echo_shard 4
 execute if entity @s[scores={sea_crafter=50529},tag=!SEA_w_armor_upg29] run clear @s echo_shard 4
