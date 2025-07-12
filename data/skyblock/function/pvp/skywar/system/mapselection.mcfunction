@@ -1,4 +1,4 @@
-# Map_Type 1:空岛战争 2:起床战争 3:爪巴战争 4:棋盘战争
+# Map_Type 1:空岛战争 2:起床战争 3:混沌魔方 4:棋盘战争
 # Map_Code List:
 # T4 - 002:腐败的祭坛 003:沉默的亚特兰蒂斯 004:炙魇的黑城 005:献堂的圣咏 010:碎晦坍殒的地灵脉 017:天穹巨兽古伽兰那
 # T2 - 007:亚兹列尔的钟台 008:荒废之地的民谣
@@ -77,7 +77,7 @@ execute if score sc Map_Code matches 18 run clone 12 -43 28 16 -47 32 -118 56 -1
 #map019
 execute if score sc Map_Code matches 19 run title @a[tag=!Gaming] actionbar {"text":"空岛战争T4 失色园","bold":true,"color":"light_purple"}
 execute if score sc Map_Code matches 19 run clone 12 -48 28 16 -52 32 -118 56 -110
-#map019
+#map013
 execute if score sc Map_Code matches 13 run title @a[tag=!Gaming] actionbar {"text":"混沌魔方","bold":true,"color":"light_purple"}
 execute if score sc Map_Code matches 13 run clone 12 -53 28 16 -57 32 -118 56 -110
 #空岛战争 初始化
@@ -88,10 +88,10 @@ execute if score sc Map_Type matches 1 run summon minecraft:armor_stand -121 60.
 #execute if score sc Map_Type matches 2 run kill @e[type=minecraft:armor_stand,x=-121,y=60.5,z=-108,distance=0..2]
 #execute if score sc Map_Type matches 2 run summon minecraft:armor_stand -121 60.7 -108 {CustomName:"{\"text\":\"开启\",\"color\":\"aqua\"}",DisabledSlots:65793,CustomNameVisible:1b,Invisible:1b,Marker:1b,NoGravity:1b}
 #execute if score sc Map_Type matches 2 run summon minecraft:armor_stand -121 60.35 -108 {CustomName:"{\"text\":\"匿名之都 起床战争\",\"color\":\"blue\"}",DisabledSlots:65793,CustomNameVisible:1b,Invisible:1b,Marker:1b,NoGravity:1b}
-#爪巴战争 初始化
-#execute if score sc Map_Type matches 3 run kill @e[type=minecraft:armor_stand,x=-121,y=60.5,z=-108,distance=0..2]
-#execute if score sc Map_Type matches 3 run summon minecraft:armor_stand -121 60.7 -108 {CustomName:"{\"text\":\"开启\",\"color\":\"aqua\"}",DisabledSlots:65793,CustomNameVisible:1b,Invisible:1b,Marker:1b,NoGravity:1b}
-#execute if score sc Map_Type matches 3 run summon minecraft:armor_stand -121 60.35 -108 {CustomName:"{\"text\":\"匿名之都 爪巴战争\",\"color\":\"green\"}",DisabledSlots:65793,CustomNameVisible:1b,Invisible:1b,Marker:1b,NoGravity:1b}
+#混沌魔方 初始化
+execute if score sc Map_Type matches 3 run kill @e[type=minecraft:armor_stand,x=-121,y=60.5,z=-108,distance=0..2]
+execute if score sc Map_Type matches 3 run summon minecraft:armor_stand -121 60.7 -108 {CustomName:"{\"text\":\"开启\",\"color\":\"aqua\"}",DisabledSlots:65793,CustomNameVisible:1b,Invisible:1b,Marker:1b,NoGravity:1b}
+execute if score sc Map_Type matches 3 run summon minecraft:armor_stand -121 60.35 -108 {CustomName:"{\"text\":\"匿名之都 混沌魔方\",\"color\":\"light_purple\"}",DisabledSlots:65793,CustomNameVisible:1b,Invisible:1b,Marker:1b,NoGravity:1b}
 #棋盘战争 初始化
 execute if score sc Map_Type matches 4 run kill @e[type=minecraft:armor_stand,x=-121,y=60.5,z=-108,distance=0..2]
 execute if score sc Map_Type matches 4 run summon minecraft:armor_stand -121 60.7 -108 {CustomName:"{\"text\":\"开启\",\"color\":\"aqua\"}",DisabledSlots:65793,CustomNameVisible:1b,Invisible:1b,Marker:1b,NoGravity:1b}

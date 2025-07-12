@@ -197,8 +197,8 @@ execute if score skywar_start rng1 matches 11 run tag @a[tag=PVPing] add Gaming
 execute if score skywar_start rng1 matches 11 run team leave @a[tag=PVPing,tag=!PVPTeamed]
 execute if score skywar_start rng1 matches 11 run title @a[tag=PVPing] times 10 80 10
 execute if score skywar_start rng1 matches 11 run stopsound @a[tag=PVPing]
-execute if score skywar_start rng1 matches 11 if score 10e959db-4b44-4cdd-b98c-350d3b454206 Map_Type matches 1 unless score sc Map_Code matches 13 run title @a[tag=PVPing] title {"text":"欢迎来到 空岛战争","color":"white"}
-execute if score skywar_start rng1 matches 11 if score 10e959db-4b44-4cdd-b98c-350d3b454206 Map_Type matches 1 if score sc Map_Code matches 13 run title @a[tag=PVPing] title {"text":"欢迎来到 混沌魔方","color":"white"}
+execute if score skywar_start rng1 matches 11 if score 10e959db-4b44-4cdd-b98c-350d3b454206 Map_Type matches 1 run title @a[tag=PVPing] title {"text":"欢迎来到 空岛战争","color":"white"}
+execute if score skywar_start rng1 matches 11 if score 10e959db-4b44-4cdd-b98c-350d3b454206 Map_Type matches 3 run title @a[tag=PVPing] title {"text":"欢迎来到 混沌魔方","color":"white"}
 execute if score skywar_start rng1 matches 11 if score 10e959db-4b44-4cdd-b98c-350d3b454206 Map_Type matches 2 run title @a[tag=PVPing] title {"text":"欢迎来到 起床战争","color":"white"}
 execute if score skywar_start rng1 matches 11 if score 10e959db-4b44-4cdd-b98c-350d3b454206 Map_Type matches 5 run title @a[tag=PVPing] title {"text":"欢迎来到 PVP战场","color":"white"}
 execute if score skywar_start rng1 matches 11 run title @a[tag=PVPing] actionbar {"text":"分配成员中……","color":"white"}
