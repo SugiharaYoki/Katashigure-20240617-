@@ -17,6 +17,8 @@ execute if score @s sea_ripper matches 1.. positioned ^ ^ ^ if block ~ ~ ~ basal
 
 execute if score @s[scores={rng3=1..,rng4=1..}] sea_ripper matches 1.. positioned ^ ^-1.5 ^ as @e[tag=SEAmob,distance=0..1.7,type=husk] at @s run damage @s 10 minecraft:cactus
 execute if score @s[scores={rng3=1..,rng4=1..}] sea_ripper matches 1.. positioned ^ ^ ^ as @e[tag=SEAmob,    distance=0..1.7,type=husk] at @s run damage @s 10 minecraft:cactus
+execute if score @s[scores={rng3=1..,rng4=1..}] sea_ripper matches 1.. positioned ^ ^-1.5 ^ as @e[tag=SEAmob,distance=0..1.7,type=husk] at @s run give @s[advancements={skyblock:sea/doc/g33=false}] mojang_banner_pattern[custom_data={sea_docg33:true}]
+execute if score @s[scores={rng3=1..,rng4=1..}] sea_ripper matches 1.. positioned ^ ^ ^ as @e[tag=SEAmob,    distance=0..1.7,type=husk] at @s run give @s[advancements={skyblock:sea/doc/g33=false}] mojang_banner_pattern[custom_data={sea_docg33:true}]
 
 execute if score @s[scores={rng3=1,rng4=1}] sea_ripper matches 1.. positioned ^ ^-1.5 ^ as @e[tag=SEAmob,distance=0..1.5,type=!warden] at @s run damage @s 4 minecraft:cactus
 execute if score @s[scores={rng3=1,rng4=1}] sea_ripper matches 1.. positioned ^ ^ ^ as @e[tag=SEAmob,    distance=0..1.5,type=!warden] at @s run damage @s 4 minecraft:cactus

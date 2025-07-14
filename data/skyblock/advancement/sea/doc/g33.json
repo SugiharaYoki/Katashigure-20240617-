@@ -1,0 +1,28 @@
+{
+    "display": {
+        "title": {
+            "text": "石膏锯发射装置",
+            "color": "aqua",
+            "bold": true,
+            "italic": false
+        },
+        "description": {
+            "text": "使用磁锯发射装置的近距离攻击对呻吟者造成伤害。\n“怕疼的话可以躲到水里。”",
+            "color": "gray",
+            "bold": false
+        },
+        "icon": {
+            "id": "minecraft:stone_hoe"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "sea": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:sea/doc/g30"
+}
