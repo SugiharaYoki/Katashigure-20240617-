@@ -61,6 +61,7 @@ execute if score SEA_ch6_event rng5 matches 3000.. as @n[tag=SEAnorma,scores={rn
 execute if score SEA_ch6_event rng5 matches 3000.. as @n[tag=SEAnorma,scores={rng8=9..12}] at @s run data modify entity @n[tag=SEAnorma] NoAI set value 1b
 execute if score SEA_ch6_event rng5 matches 3000.. as @n[tag=SEAnorma,scores={rng8=8}] at @s run data modify entity @n[tag=SEAnorma] NoAI set value 0b
 
+execute if score SEA_ch6_event rng5 matches 3300 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"？？？：","color":"gray","bold": true},{"text":"\n“你根本不知道你给我们带来了多大的麻烦。”","color":"gray","bold": false}]
 
 execute if score SEA_ch6_event rng5 matches 3000..3900 if entity @a[tag=SEAPT,tag=!SEAPF,x=90224,y=176,z=-1880,dx=20,dy=6,dz=5] run scoreboard players set SEA_ch6_event rng5 4001
 execute if score SEA_ch6_event rng5 matches 3800..3900 run scoreboard players set SEA_ch6_event rng5 3800
@@ -93,6 +94,41 @@ execute if score SEA_ch6_event rng5 matches 4562 as @n[tag=SEAedwina] at @s run 
 execute if score SEA_ch6_event rng5 matches 4562 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“我们得想办法下到更深的地方，我不觉得她来堵我们只是为了好玩。”","color":"white","bold": false}]
 execute if score SEA_ch6_event rng5 matches 4632 as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
 execute if score SEA_ch6_event rng5 matches 4632 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“这地方居然已经毁成这样了……氧气可能很快就会被烧完。主平台也完了，我觉得我们生存的希望很渺茫。”","color":"white","bold": false}]
+
+execute if score SEA_ch6_event rng5 matches 1000..4900 if entity @a[tag=SEAPT,tag=!SEAPF,x=90225,y=181,z=-1868,dx=5,dy=4,dz=8] run scoreboard players set SEA_ch6_event rng5 5001
+execute if score SEA_ch6_event rng5 matches 4800..4900 run scoreboard players set SEA_ch6_event rng5 4800
+execute if score SEA_ch6_event rng5 matches 5002 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"？？？：","color":"gray","bold": true},{"text":"\n“你根本不知道你给我们带来了多大的麻烦。”","color":"gray","bold": false}]
+
+execute if score SEA_ch6_event rng5 matches 5022 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"？？？：","color":"gray","bold": true},{"text":"\n“那是太平洋上的公海，你作为美国人去逞什么英雄？”","color":"gray","bold": false}]
+
+execute if score SEA_ch6_event rng5 matches 5042 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“……我幻听了？”","color":"white"}]
+
+execute if score SEA_ch6_event rng5 matches 5059 as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
+execute if score SEA_ch6_event rng5 matches 5059 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“你也终于开始幻听了吗？这是正常现象。”","color":"white","bold": false}]
+execute if score SEA_ch6_event rng5 matches 5077 as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
+execute if score SEA_ch6_event rng5 matches 5077 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“我现在能幻听到我母亲跟我说话。她让我快点逃走，辞职回家。”","color":"white","bold": false}]
+execute if score SEA_ch6_event rng5 matches 5099 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“是因为我们两个人其实都被细菌感染了吧。”","color":"white"}]
+execute if score SEA_ch6_event rng5 matches 5110 as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
+execute if score SEA_ch6_event rng5 matches 5110 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“我其实为你感到很不公平。我来这里调查的时候想必就是被政府当成了弃子。这对你来说根本是场无妄之灾。”","color":"white","bold": false}]
+execute if score SEA_ch6_event rng5 matches 5130 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“也不完全是如此……我是有选择性地来到了此处。”","color":"white"}]
+execute if score SEA_ch6_event rng5 matches 5150 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"？？？：","color":"gray","bold": true},{"text":"\n“侦破了跨国人口贩卖案件，非常好。但是你不会升职也不会获得表彰。”","color":"gray","bold": false}]
+execute if score SEA_ch6_event rng5 matches 5168 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"？？？：","color":"gray","bold": true},{"text":"\n“我们必须开除你，这是对你的保护。”","color":"gray","bold": false}]
+execute if score SEA_ch6_event rng5 matches 5190 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“又在幻听了……”","color":"white"}]
+execute if score SEA_ch6_event rng5 matches 5203 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“我的父母早就双双离世了，未婚妻也死于意外。但我不觉得这些都是巧合。”","color":"white"}]
+execute if score SEA_ch6_event rng5 matches 5223 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“这么多天，我每天都能梦到自己来到空无一人的忒尔克西。我认为我能在这里找到一些我寻求许久的事物。”","color":"white"}]
+execute if score SEA_ch6_event rng5 matches 5245 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“只是……在见到了这么多后，我确实也不清楚自己究竟是在找寻何物了。”","color":"white"}]
+execute if score SEA_ch6_event rng5 matches 5265 as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
+execute if score SEA_ch6_event rng5 matches 5265 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“你从一开始就没打算活下去，一直自暴自弃到今天，对吗？”","color":"white","bold": false}]
+execute if score SEA_ch6_event rng5 matches 5283 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“没瞒过你呢。”","color":"white"}]
+execute if score SEA_ch6_event rng5 matches 5299 as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
+execute if score SEA_ch6_event rng5 matches 5299 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“我阅人无数，你那不要命的行为逻辑与你在这钻井平台救援至今的事实相结合，使你在我眼中也是异类。”","color":"white","bold": false}]
+execute if score SEA_ch6_event rng5 matches 5319 as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
+execute if score SEA_ch6_event rng5 matches 5319 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“你只是质疑自己的生命而已。你并不认为其他人的生命也是毫无价值的。”","color":"white","bold": false}]
+execute if score SEA_ch6_event rng5 matches 5339 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“抱歉。但我确实……我最后谁都没能救到。不论是法莫洛斯医生、越涵、菲尔娜、玛瑞莲……”","color":"white"}]
+execute if score SEA_ch6_event rng5 matches 5359 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“我不想再目睹任何人死在我的眼前了。我多希望这么简单的一个愿望能够成真。”","color":"white"}]
+execute if score SEA_ch6_event rng5 matches 5379 as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
+execute if score SEA_ch6_event rng5 matches 5379 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“有时候，目睹死亡才会令一个人获得最巨大的力量。在这种情形下，这个道理残酷、无情，却也会无比真实。”","color":"white","bold": false}]
+
 
 scoreboard players set @a[tag=SEAPT] rng1 0
 execute as @a[tag=SEAPT] at @s if block ~ ~ ~ water run scoreboard players add @s rng1 3
