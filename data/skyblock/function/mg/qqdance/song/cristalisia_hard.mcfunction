@@ -3,7 +3,8 @@ execute if score @s MG_qqd_t_abs matches 1 run scoreboard players set @s MG_qqd_
 
 execute if score @s MG_qqd_t_abs matches 110 run title @s title [{"text": "3", "color": "blue", "bold": true}]
 execute if score @s MG_qqd_t_abs matches 130 run title @s title [{"text": "2", "color": "blue", "bold": true}]
-execute if score @s MG_qqd_t_abs matches 150 run title @s title [{"text": "Ready", "color": "blue", "bold": true}]execute if score @s MG_qqd_t_abs matches 170 run scoreboard players set @s MG_qqd_step 1
+execute if score @s MG_qqd_t_abs matches 150 run title @s title [{"text": "Ready", "color": "blue", "bold": true}]
+execute if score @s MG_qqd_t_abs matches 170 run scoreboard players set @s MG_qqd_step 1
 execute if score @s MG_qqd_t_abs matches 170 run scoreboard players set @s MG_qqd_t_rel 72
 execute if score @s MG_qqd_step matches 1 run title @s title [{"text": "← ↑", "color": "blue", "bold": true}]
 execute if score @s MG_qqd_step matches 2 run title @s title [{"text": "←", "color": "green", "bold": true}, {"text": " ↑", "color": "blue", "bold": true}]
