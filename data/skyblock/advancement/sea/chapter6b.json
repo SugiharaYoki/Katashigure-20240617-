@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "水下研究设施：归还",
+            "color": "blue",
+            "bold": true,
+            "italic": false
+        },
+        "description": {
+            "text": "我从来就不想要继续活着。\n我只是认为其他人的生命远比我自己的重要。\n\n为什么……只有我与艾德雯娜苟活到此刻？",
+            "color": "white"
+        },
+        "icon": {
+            "id": "minecraft:waxed_oxidized_copper"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "sea": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:sea/chapter5"
+}

@@ -95,8 +95,30 @@ execute if score SEA_ch6_event rng5 matches 4562 as @n[tag=SEAedwina] at @s run 
 execute if score SEA_ch6_event rng5 matches 4632 as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
 execute if score SEA_ch6_event rng5 matches 4632 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“这地方居然已经毁成这样了……氧气可能很快就会被烧完。主平台也完了，我觉得我们生存的希望很渺茫。”","color":"white","bold": false}]
 
+
+
+
+
+
 execute if score SEA_ch6_event rng5 matches 1000..4900 if entity @a[tag=SEAPT,tag=!SEAPF,x=90225,y=181,z=-1868,dx=5,dy=4,dz=8] run scoreboard players set SEA_ch6_event rng5 5001
 execute if score SEA_ch6_event rng5 matches 4800..4900 run scoreboard players set SEA_ch6_event rng5 4800
+
+
+
+
+
+
+
+
+execute if score SEA_ch6_event rng5 matches 5002 positioned 90202 178 -1844 run function skyblock:sea/m/drowned_shield
+execute if score SEA_ch6_event rng5 matches 5002 positioned 90202 178 -1844 run function skyblock:sea/m/drowned_shield
+execute if score SEA_ch6_event rng5 matches 5002 positioned 90202 178 -1844 run function skyblock:sea/m/drowned
+execute if score SEA_ch6_event rng5 matches 5002 positioned 90202 178 -1844 run function skyblock:sea/m/drowned
+execute if score SEA_ch6_event rng5 matches 5002 positioned 90202 178 -1844 run function skyblock:sea/m/drowned
+execute if score SEA_ch6_event rng5 matches 5002 positioned 90202 178 -1844 run function skyblock:sea/m/drowned
+execute if score SEA_ch6_event rng5 matches 5002 positioned 90202 178 -1844 run function skyblock:sea/m/drowned_trident
+execute if score SEA_ch6_event rng5 matches 5002 positioned 90202 178 -1844 run function skyblock:sea/m/drowned_trident
+
 execute if score SEA_ch6_event rng5 matches 5002 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"？？？：","color":"gray","bold": true},{"text":"\n“你根本不知道你给我们带来了多大的麻烦。”","color":"gray","bold": false}]
 
 execute if score SEA_ch6_event rng5 matches 5022 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"？？？：","color":"gray","bold": true},{"text":"\n“那是太平洋上的公海，你作为美国人去逞什么英雄？”","color":"gray","bold": false}]
@@ -128,6 +150,31 @@ execute if score SEA_ch6_event rng5 matches 5339 as @p[tag=SEAPT] at @s run tell
 execute if score SEA_ch6_event rng5 matches 5359 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“我不想再目睹任何人死在我的眼前了。我多希望这么简单的一个愿望能够成真。”","color":"white"}]
 execute if score SEA_ch6_event rng5 matches 5379 as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
 execute if score SEA_ch6_event rng5 matches 5379 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“有时候，目睹死亡才会令一个人获得最巨大的力量。在这种情形下，这个道理残酷、无情，却也会无比真实。”","color":"white","bold": false}]
+
+execute if score SEA_ch6_event rng5 matches 1000..5900 if entity @a[tag=SEAPT,tag=!SEAPF,x=90217,y=170,z=-1852,dx=5,dy=5,dz=5] run scoreboard players set SEA_ch6_event rng5 5001
+execute if score SEA_ch6_event rng5 matches 5900..5999 run scoreboard players set SEA_ch6_event rng5 5900
+
+execute if score SEA_ch6_event rng5 matches 5904 as @n[tag=SEAedwina] at @s as @a[tag=SEAPT] at @s run function skyblock:sea/e/ch6/title_2
+execute if score SEA_ch6_event rng5 matches 5904 as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
+execute if score SEA_ch6_event rng5 matches 5904 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“欢迎回来。哎，简直是一片废墟。”","color":"white","bold": false}]
+  
+
+execute if score SEA_ch6_event rng5 matches 5002 positioned 90211 164 -1854 run function skyblock:sea/m/visioner
+execute if score SEA_ch6_event rng5 matches 5002 positioned 90234 167 -1852 run function skyblock:sea/m/visioner
+execute if score SEA_ch6_event rng5 matches 5002 positioned 90202 165 -1845 run function skyblock:sea/m/visioner
+
+execute if score SEA_ch6_event rng5 matches 5002 positioned 90228 166 -1845 run function skyblock:sea/m/silverfish
+execute if score SEA_ch6_event rng5 matches 5002 positioned 90228 166 -1845 run function skyblock:sea/m/silverfish
+execute if score SEA_ch6_event rng5 matches 5002 positioned 90228 166 -1845 run function skyblock:sea/m/silverfish
+execute if score SEA_ch6_event rng5 matches 5002 positioned 90212 164 -1853 run function skyblock:sea/m/silverfish
+execute if score SEA_ch6_event rng5 matches 5002 positioned 90212 164 -1853 run function skyblock:sea/m/silverfish
+execute if score SEA_ch6_event rng5 matches 5002 positioned 90212 164 -1853 run function skyblock:sea/m/silverfish
+
+
+
+
+
+
 
 
 scoreboard players set @a[tag=SEAPT] rng1 0
