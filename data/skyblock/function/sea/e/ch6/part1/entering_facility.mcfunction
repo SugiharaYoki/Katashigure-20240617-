@@ -44,6 +44,18 @@ setblock 90217 176 -1880 minecraft:cobweb
 fill 90213 176 -1879 90213 175 -1879 minecraft:chiseled_bookshelf[facing=east]
 fill 90202 176 -1881 90202 175 -1881 minecraft:chiseled_bookshelf[facing=west]
 fill 90204 178 -1875 90204 177 -1875 minecraft:chiseled_bookshelf[facing=north]
+fill 90220 176 -1879 90220 175 -1878 minecraft:chiseled_bookshelf[facing=west]
+setblock 90218 175 -1876 minecraft:grindstone[facing=west,face=floor]
+setblock 90220 175 -1876 minecraft:cobweb
+setblock 90218 176 -1876 minecraft:cobweb
+setblock 90219 176 -1875 minecraft:cobweb
+setblock 90219 176 -1869 minecraft:cobweb
+fill 90219 176 -1872 90219 175 -1872 minecraft:chiseled_bookshelf[facing=north]
+setblock 90220 175 -1874 minecraft:grindstone[facing=east,face=floor]
+setblock 90223 177 -1869 minecraft:smithing_table
+setblock 90223 177 -1871 minecraft:cobweb
+setblock 90218 177 -1874 minecraft:cobweb
+
 
 execute store result score SEA_ch6_event rng10 if entity @e[tag=SEAedwina]
 execute if score SEA_ch6_event rng10 matches 2.. run kill @n[tag=SEAedwina,tag=!SEAedwina_attackable]

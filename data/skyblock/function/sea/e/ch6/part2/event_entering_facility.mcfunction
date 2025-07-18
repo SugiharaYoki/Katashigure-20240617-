@@ -61,6 +61,29 @@ execute if score SEA_ch6_event rng5 matches 3000.. as @n[tag=SEAnorma,scores={rn
 execute if score SEA_ch6_event rng5 matches 3000.. as @n[tag=SEAnorma,scores={rng8=9..12}] at @s run data modify entity @n[tag=SEAnorma] NoAI set value 1b
 execute if score SEA_ch6_event rng5 matches 3000.. as @n[tag=SEAnorma,scores={rng8=8}] at @s run data modify entity @n[tag=SEAnorma] NoAI set value 0b
 
+
+execute if score SEA_ch6_event rng5 matches 3000..3900 if entity @a[tag=SEAPT,tag=!SEAPF,x=90224,y=176,z=-1880,dx=20,dy=6,dz=5] run scoreboard players set SEA_ch6_event rng5 4001
+execute if score SEA_ch6_event rng5 matches 3800..3900 run scoreboard players set SEA_ch6_event rng5 3800
+
+
+execute if score SEA_ch6_event rng5 matches 4001 positioned 90225 177 -1869 as @n[tag=SEAnorma] unless entity @s[distance=0..5] run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
+
+execute if score SEA_ch6_event rng5 matches 3200 as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
+execute if score SEA_ch6_event rng5 matches 3200 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“快跑，我尽可能拖住她！！”","color":"white","bold": false}]
+
+execute if score SEA_ch6_event rng5 matches 4010 as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
+execute if score SEA_ch6_event rng5 matches 4010 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“他妈的……非得经过这段路吗？”","color":"white","bold": false}]
+execute if score SEA_ch6_event rng5 matches 4022 as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
+execute if score SEA_ch6_event rng5 matches 4022 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“不能再往前了，改往上！”","color":"white","bold": false}]
+
+execute if score SEA_ch6_event rng5 matches 4022 as @n[tag=SEAedwina] at @s run tp @n[tag=SEAedwina] 90223 177 -1878
+execute if score SEA_ch6_event rng5 matches 4032 as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
+execute if score SEA_ch6_event rng5 matches 4032 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“这里！！”","color":"white","bold": false}]
+
+
+execute if score SEA_ch6_event rng5 matches 4022..4100 if entity @a[tag=SEAPT,tag=!SEAPF,x=90222,y=176,z=-1880,dx=1,dy=8,dz=6] run scoreboard players set SEA_ch6_event rng5 4001
+execute if score SEA_ch6_event rng5 matches 4033..4100 run scoreboard players set SEA_ch6_event rng5 4033
+
 scoreboard players set @a[tag=SEAPT] rng1 0
 execute as @a[tag=SEAPT] at @s if block ~ ~ ~ water run scoreboard players add @s rng1 5
 execute as @a[tag=SEAPT] at @s if block ~ ~-0.9 ~ water run scoreboard players add @s rng1 3
