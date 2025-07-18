@@ -81,8 +81,18 @@ execute if score SEA_ch6_event rng5 matches 4032 as @n[tag=SEAedwina] at @s run 
 execute if score SEA_ch6_event rng5 matches 4032 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“这里！！”","color":"white","bold": false}]
 
 
-execute if score SEA_ch6_event rng5 matches 4022..4100 if entity @a[tag=SEAPT,tag=!SEAPF,x=90222,y=176,z=-1880,dx=1,dy=8,dz=6] run scoreboard players set SEA_ch6_event rng5 4001
+execute if score SEA_ch6_event rng5 matches 4022..4100 if entity @a[tag=SEAPT,tag=!SEAPF,x=90222,y=176,z=-1880,dx=1,dy=8,dz=6] run scoreboard players set SEA_ch6_event rng5 4201
 execute if score SEA_ch6_event rng5 matches 4033..4100 run scoreboard players set SEA_ch6_event rng5 4033
+
+execute if score SEA_ch6_event rng5 matches 4000..4500 if entity @a[tag=SEAPT,tag=!SEAPF,x=90222,y=176,z=-1880,dx=1,dy=8,dz=6] run scoreboard players set SEA_ch6_event rng5 4501
+execute if score SEA_ch6_event rng5 matches 4400..4500 run scoreboard players set SEA_ch6_event rng5 4400
+
+execute if score SEA_ch6_event rng5 matches 4522 as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
+execute if score SEA_ch6_event rng5 matches 4522 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“选择成为尸变体只会让她连爬梯子这么简单的动作都做不到。”","color":"white","bold": false}]
+execute if score SEA_ch6_event rng5 matches 4562 as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
+execute if score SEA_ch6_event rng5 matches 4562 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“我们得想办法下到更深的地方，我不觉得她来堵我们只是为了好玩。”","color":"white","bold": false}]
+execute if score SEA_ch6_event rng5 matches 4632 as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
+execute if score SEA_ch6_event rng5 matches 4632 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“这地方居然已经毁成这样了……氧气可能很快就会被烧完。主平台也完了，我觉得我们生存的希望很渺茫。”","color":"white","bold": false}]
 
 scoreboard players set @a[tag=SEAPT] rng1 0
 execute as @a[tag=SEAPT] at @s if block ~ ~ ~ water run scoreboard players add @s rng1 5
