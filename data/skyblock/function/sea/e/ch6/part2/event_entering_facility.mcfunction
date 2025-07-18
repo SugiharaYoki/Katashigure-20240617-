@@ -95,17 +95,17 @@ execute if score SEA_ch6_event rng5 matches 4632 as @n[tag=SEAedwina] at @s run 
 execute if score SEA_ch6_event rng5 matches 4632 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“这地方居然已经毁成这样了……氧气可能很快就会被烧完。主平台也完了，我觉得我们生存的希望很渺茫。”","color":"white","bold": false}]
 
 scoreboard players set @a[tag=SEAPT] rng1 0
-execute as @a[tag=SEAPT] at @s if block ~ ~ ~ water run scoreboard players add @s rng1 5
-execute as @a[tag=SEAPT] at @s if block ~ ~-0.9 ~ water run scoreboard players add @s rng1 3
+execute as @a[tag=SEAPT] at @s if block ~ ~ ~ water run scoreboard players add @s rng1 3
+execute as @a[tag=SEAPT] at @s if block ~ ~-0.8 ~ water run scoreboard players add @s rng1 3
 execute as @a[tag=SEAPT] at @s if block ~ ~1 ~ water run scoreboard players add @s rng1 3
-execute as @a[tag=SEAPT] at @s if block ~0.2 ~ ~0.2 water run scoreboard players add @s rng1 2
-execute as @a[tag=SEAPT] at @s if block ~0.2 ~ ~-0.2 water run scoreboard players add @s rng1 2
-execute as @a[tag=SEAPT] at @s if block ~-0.2 ~ ~0.2 water run scoreboard players add @s rng1 2
-execute as @a[tag=SEAPT] at @s if block ~-0.2 ~ ~-0.2 water run scoreboard players add @s rng1 2
-execute as @a[tag=SEAPT] at @s if block ~ ~ ~0.2 water run scoreboard players add @s rng1 2
-execute as @a[tag=SEAPT] at @s if block ~ ~ ~-0.2 water run scoreboard players add @s rng1 2
-execute as @a[tag=SEAPT] at @s if block ~0.2 ~ ~ water run scoreboard players add @s rng1 2
-execute as @a[tag=SEAPT] at @s if block ~-0.2 ~ ~ water run scoreboard players add @s rng1 2
+execute as @a[tag=SEAPT] at @s if block ~0.2 ~0.2 ~0.2 water run scoreboard players add @s rng1 2
+execute as @a[tag=SEAPT] at @s if block ~0.2 ~0.2 ~-0.2 water run scoreboard players add @s rng1 2
+execute as @a[tag=SEAPT] at @s if block ~-0.2 ~0.2 ~0.2 water run scoreboard players add @s rng1 2
+execute as @a[tag=SEAPT] at @s if block ~-0.2 ~0.2 ~-0.2 water run scoreboard players add @s rng1 2
+execute as @a[tag=SEAPT] at @s if block ~ ~0.2 ~0.2 water run scoreboard players add @s rng1 2
+execute as @a[tag=SEAPT] at @s if block ~ ~0.2 ~-0.2 water run scoreboard players add @s rng1 2
+execute as @a[tag=SEAPT] at @s if block ~0.2 ~0.2 ~ water run scoreboard players add @s rng1 2
+execute as @a[tag=SEAPT] at @s if block ~-0.2 ~0.2 ~ water run scoreboard players add @s rng1 2
 execute as @a[tag=SEAPT,scores={rng1=1..}] at @s run particle minecraft:white_smoke ~ ~0.6 ~ 0.15 0.6 0.15 0.01 10
 execute as @a[tag=SEAPT,scores={rng1=1..}] at @s run playsound block.fire.extinguish block @a ~ ~ ~ 0.5 1.4
 execute as @a[tag=SEAPT,scores={rng1=1..3}] at @s run damage @s 2 minecraft:campfire
