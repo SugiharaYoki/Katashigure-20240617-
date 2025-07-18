@@ -96,7 +96,6 @@ execute if score SEA_ch6_event rng5 matches 4632 as @n[tag=SEAedwina] at @s run 
 
 scoreboard players set @a[tag=SEAPT] rng1 0
 execute as @a[tag=SEAPT] at @s if block ~ ~ ~ water run scoreboard players add @s rng1 3
-execute as @a[tag=SEAPT] at @s if block ~ ~-0.8 ~ water run scoreboard players add @s rng1 3
 execute as @a[tag=SEAPT] at @s if block ~ ~1 ~ water run scoreboard players add @s rng1 3
 execute as @a[tag=SEAPT] at @s if block ~0.2 ~0.2 ~0.2 water run scoreboard players add @s rng1 2
 execute as @a[tag=SEAPT] at @s if block ~0.2 ~0.2 ~-0.2 water run scoreboard players add @s rng1 2
