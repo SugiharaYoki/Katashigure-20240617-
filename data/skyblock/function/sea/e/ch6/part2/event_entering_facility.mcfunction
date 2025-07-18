@@ -119,6 +119,10 @@ execute if score SEA_ch6_event rng5 matches 5002 positioned 90202 178 -1844 run 
 execute if score SEA_ch6_event rng5 matches 5002 positioned 90202 178 -1844 run function skyblock:sea/m/drowned_trident
 execute if score SEA_ch6_event rng5 matches 5002 positioned 90202 178 -1844 run function skyblock:sea/m/drowned_trident
 
+execute if score SEA_ch6_event rng5 matches 5002 as @n[tag=SEAnorma] at @s run tp @s ~ ~-200 ~
+execute if score SEA_ch6_event rng5 matches 5002 as @n[tag=SEAnorma] at @s run kill @s
+execute if score SEA_ch6_event rng5 matches 5002 as @n[tag=SEAnorma_warden] at @s run tp @s ~ ~-200 ~
+execute if score SEA_ch6_event rng5 matches 5002 as @n[tag=SEAnorma_warden] at @s run kill @s
 execute if score SEA_ch6_event rng5 matches 5002 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"？？？：","color":"gray","bold": true},{"text":"\n“你根本不知道你给我们带来了多大的麻烦。”","color":"gray","bold": false}]
 
 execute if score SEA_ch6_event rng5 matches 5022 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"？？？：","color":"gray","bold": true},{"text":"\n“那是太平洋上的公海，你作为美国人去逞什么英雄？”","color":"gray","bold": false}]
