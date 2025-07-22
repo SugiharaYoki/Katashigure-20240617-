@@ -166,6 +166,9 @@ execute if score SEA_ch6_event rng5 matches 6004 as @n[tag=SEAedwina] at @s run 
 execute if score SEA_ch6_event rng5 matches 6002 positioned 90211 164 -1854 run function skyblock:sea/m/visioner
 execute if score SEA_ch6_event rng5 matches 6002 positioned 90234 167 -1852 run function skyblock:sea/m/visioner
 execute if score SEA_ch6_event rng5 matches 6002 positioned 90202 165 -1845 run function skyblock:sea/m/visioner
+execute if score SEA_ch6_event rng5 matches 6002 positioned 90211 164 -1854 run function skyblock:sea/m/visioner
+execute if score SEA_ch6_event rng5 matches 6002 positioned 90234 167 -1852 run function skyblock:sea/m/visioner
+execute if score SEA_ch6_event rng5 matches 6002 positioned 90202 165 -1845 run function skyblock:sea/m/visioner
 
 execute if score SEA_ch6_event rng5 matches 6002 positioned 90228 166 -1845 run function skyblock:sea/m/silverfish
 execute if score SEA_ch6_event rng5 matches 6002 positioned 90228 166 -1845 run function skyblock:sea/m/silverfish
