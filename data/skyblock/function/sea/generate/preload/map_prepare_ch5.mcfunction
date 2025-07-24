@@ -47,7 +47,8 @@ setblock 90135 146 120 minecraft:spore_blossom
 
 fill 90105 104 52 90106 101 52 minecraft:air
 
-
+#
+fill 90136 139 49 90137 137 49 minecraft:iron_bars
 
 
 

@@ -200,6 +200,7 @@ execute as @a[tag=SEAPT,scores={rng1=1..}] at @s run playsound block.fire.exting
 execute as @a[tag=SEAPT,scores={rng1=1..3}] at @s run damage @s 2 minecraft:campfire
 execute as @a[tag=SEAPT,scores={rng1=4..6}] at @s run damage @s 4 minecraft:campfire
 execute as @a[tag=SEAPT,scores={rng1=7..9}] at @s run damage @s 5 minecraft:campfire
+execute as @a[tag=SEAPT,scores={rng1=10..}] at @s run effect clear @s resistance
 execute as @a[tag=SEAPT,scores={rng1=10..13}] at @s run damage @s 6 minecraft:campfire
 execute as @a[tag=SEAPT,scores={rng1=14..17}] at @s run damage @s 7 minecraft:campfire
 execute as @a[tag=SEAPT,scores={rng1=20..}] at @s run damage @s 12 minecraft:campfire
