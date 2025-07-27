@@ -104,7 +104,6 @@ execute unless block 90077 105 141 minecraft:dark_oak_hanging_sign positioned 90
 #工程区起始
 
 
-
 execute unless block 90077 105 141 minecraft:dark_oak_hanging_sign if score SEA_ch5_event_engineering_fiona rng1 matches 0 positioned 90138 122 68 if entity @a[tag=SEAPT,tag=!SEAPF,x=90139,y=121,z=64,dx=6,dy=4,dz=6] run scoreboard players set SEA_ch5_event_engineering_fiona rng1 1
 
 execute unless block 90077 105 141 minecraft:dark_oak_hanging_sign if score SEA_ch5_event_engineering_fiona rng1 matches 1..832 run function skyblock:sea/e/ch5/event_engineering_meeting_fiona
@@ -251,5 +250,11 @@ execute unless block 90077 105 141 minecraft:dark_oak_hanging_sign if score SEA_
 
 
 execute unless block 90077 105 141 minecraft:dark_oak_hanging_sign if entity @a[tag=e_i_46,tag=SEAPT,tag=!e_i_47] unless entity @n[tag=SEAboss5] unless entity @n[tag=SEAboss5b] positioned 90142 134 26 run function skyblock:sea/e/ch5/boss5/rebirth_norman
+
+
+
+#圣剑祭坛
+execute if score SEA_ch6_event sea_4temp1 matches ..0 positioned 90120 167 141 if items entity @a[x=90119,y=167,z=140,dx=3,dy=3,dz=3] container.* end_crystal run scoreboard players set SEA_ch6_event sea_4temp1 1
+execute if score SEA_ch6_event sea_4temp1 matches 1.. run function skyblock:sea/e/ch6/trueend/place_crystal
 
 
