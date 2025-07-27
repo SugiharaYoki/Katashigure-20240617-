@@ -67,6 +67,7 @@ execute store result score SEA_ch6_event rng10 if entity @e[tag=SEAedwina]
 execute if score SEA_ch6_event rng10 matches 2.. run kill @n[tag=SEAedwina,tag=!SEAedwina_attackable]
 kill @e[tag=SEAnorma,type=zombie_villager]
 
-
+setblock 90151 133 -1857 air
+execute if items entity @a[tag=SEAPT] container.* golden_sword run setblock 90151 133 -1857 minecraft:skeleton_skull[rotation=10]
 
 forceload remove 90142 -1886 90209 -1838

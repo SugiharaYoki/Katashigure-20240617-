@@ -203,6 +203,37 @@ execute if score SEA_ch6_event rng5 matches 7001 positioned 90155 139 -1842 run 
 execute if score SEA_ch6_event rng5 matches 7001 positioned 90155 139 -1842 run function skyblock:sea/m/drowned_trident
 execute if score SEA_ch6_event rng5 matches 7001 as @r[tag=SEAPT] at @s as @a[distance=0..200] run playsound garden2.bgm.003 music @s ~ ~ ~ 0.7 1.0
 
+execute if score SEA_ch6_event rng5 matches 1000..7999 if entity @a[tag=SEAPT,tag=!SEAPF,x=90130,y=119,z=-1858,dx=20,dy=10,dz=10] run scoreboard players set SEA_ch6_event rng5 8001
+execute if score SEA_ch6_event rng5 matches 7900..8000 run scoreboard players set SEA_ch6_event rng5 7900
+
+execute if score SEA_ch6_event rng5 matches 8003 as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
+execute if score SEA_ch6_event rng5 matches 8003 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“看来我们必须继续往下了。这里的结构随时可能坍塌，再来一场余爆就能让我们喂鱼。”","color":"white","bold": false}]
+execute if score SEA_ch6_event rng5 matches 8023 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“这下面……是什么地方？我之前就经过了这扇门，但它看着坚不可摧，我就完全没管。”","color":"white"}]
+
+execute if score SEA_ch6_event rng5 matches 8042 as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
+execute if score SEA_ch6_event rng5 matches 8042 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“下面吗？猜猜看。\n没错，下面就是他们发现圣水晶的地方。”","color":"white","bold": false}]
+execute if score SEA_ch6_event rng5 matches 8060 as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
+execute if score SEA_ch6_event rng5 matches 8060 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“也就是地底峡谷。”","color":"white","bold": false}]
+execute if score SEA_ch6_event rng5 matches 8077 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“我们……真的要去这么危险的地方吗？”","color":"white"}]
+execute if score SEA_ch6_event rng5 matches 8095 as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
+execute if score SEA_ch6_event rng5 matches 8095 as @n[tag=SEAedwina] at @s if entity @a[tag=SEAPT] run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“从一开始我就想把你带到这里来。”","color":"white","bold": false}]
+execute if score SEA_ch6_event rng5 matches 8095 as @n[tag=SEAedwina] at @s unless block 90151 133 -1857 minecraft:skeleton_skull run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“诺玛不知道还会从哪里追出来。她比我们更清楚这地方的构造……而且，她的神智依然很清晰。”","color":"white","bold": false}]
+execute if score SEA_ch6_event rng5 matches 8112 as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
+execute if score SEA_ch6_event rng5 matches 8112 as @n[tag=SEAedwina] at @s if block 90151 133 -1857 minecraft:skeleton_skull run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“你很快就会知道我为何这么说。在那之前，我们无需回头。”","color":"white","bold": false}]
+execute if score SEA_ch6_event rng5 matches 8112 as @n[tag=SEAedwina] at @s unless block 90151 133 -1857 minecraft:skeleton_skull run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“我不清楚是什么让她变成了如此强大的尸变体，但不得不承认，她已经是特例了。”","color":"white","bold": false}]
+execute if score SEA_ch6_event rng5 matches 8112 as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
+execute if score SEA_ch6_event rng5 matches 8112 as @n[tag=SEAedwina] at @s if block 90151 133 -1857 minecraft:skeleton_skull run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“我……将全部的希望都寄托在你身上。正因如此，我必须要带你去地底峡谷瞧一瞧。”","color":"white","bold": false}]
+execute if score SEA_ch6_event rng5 matches 8112 as @n[tag=SEAedwina] at @s unless block 90151 133 -1857 minecraft:skeleton_skull run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“不论是结构坍塌与否，还是诺玛会不会追上来，于情于理我都不想赌我们一定可以安然无恙。”","color":"white","bold": false}]
+
+execute if score SEA_ch6_event rng5 matches 8130 as @p[tag=SEAPT] at @s if block 90151 133 -1857 minecraft:skeleton_skull run tellraw @a[distance=0..250] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“虽然我不太清楚……但我也总有种感觉。说不定我正在寻找的东西就在那下面。”","color":"white"}]
+execute if score SEA_ch6_event rng5 matches 8130 as @p[tag=SEAPT] at @s unless block 90151 133 -1857 minecraft:skeleton_skull run tellraw @a[distance=0..250] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“说的也有道理……没事，反正我们俩怕是这平台上最强的两个人类吧。”","color":"white"}]
+execute if score SEA_ch6_event rng5 matches 8150 as @p[tag=SEAPT] at @s if block 90151 133 -1857 minecraft:skeleton_skull run tellraw @a[distance=0..250] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“我手中这把黄金之剑也在发光。它的光愈发强烈了……就好像在昭示着我正确的方向一样。”","color":"white"}]
+execute if score SEA_ch6_event rng5 matches 8150 as @p[tag=SEAPT] at @s unless block 90151 133 -1857 minecraft:skeleton_skull run tellraw @a[distance=0..250] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“放心，我会看好你的背后。既然是我们二人，那就不会有问题。”","color":"white"}]
+
+
+
+
+
 
 scoreboard players set @a[tag=SEAPT] rng1 0
 execute as @a[gamemode=adventure,tag=SEAPT] at @s if block ~ ~ ~ water run scoreboard players add @s rng1 3
