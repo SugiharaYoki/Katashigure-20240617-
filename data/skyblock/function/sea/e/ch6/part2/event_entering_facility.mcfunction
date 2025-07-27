@@ -178,9 +178,23 @@ execute if score SEA_ch6_event rng5 matches 6002 positioned 90212 164 -1853 run 
 execute if score SEA_ch6_event rng5 matches 6002 positioned 90212 164 -1853 run function skyblock:sea/m/silverfish
 
 
-
-
-
+execute if score SEA_ch6_event rng5 matches 1000..6999 if entity @a[tag=SEAPT,tag=!SEAPF,x=90185,y=153,z=-1845,dx=20,dy=5,dz=10] run scoreboard players set SEA_ch6_event rng5 7001
+execute if score SEA_ch6_event rng5 matches 6900..7000 run scoreboard players set SEA_ch6_event rng5 6900
+execute if score SEA_ch6_event rng5 matches 7001 positioned 90185 154 -1845 run function skyblock:sea/m/nightblind
+execute if score SEA_ch6_event rng5 matches 7001 positioned 90185 154 -1845 run function skyblock:sea/m/nightblind
+execute if score SEA_ch6_event rng5 matches 7001 positioned 90174 154 -1854 run function skyblock:sea/m/shadow
+execute if score SEA_ch6_event rng5 matches 7001 positioned 90174 154 -1854 run function skyblock:sea/m/shadow
+execute if score SEA_ch6_event rng5 matches 7001 positioned 90174 154 -1854 run function skyblock:sea/m/shadow
+execute if score SEA_ch6_event rng5 matches 7001 positioned 90174 154 -1853 run function skyblock:sea/m/cave_spider
+execute if score SEA_ch6_event rng5 matches 7001 positioned 90174 154 -1855 run function skyblock:sea/m/cave_spider
+execute if score SEA_ch6_event rng5 matches 7001 positioned 90188 154 -1856 run function skyblock:sea/m/cave_spider
+execute if score SEA_ch6_event rng5 matches 7001 positioned 90153 154 -1854 run function skyblock:sea/m/cave_spider
+execute if score SEA_ch6_event rng5 matches 7001 positioned 90156 154 -1857 run function skyblock:sea/m/husk
+execute if score SEA_ch6_event rng5 matches 7001 positioned 90171 140 -1858 run function skyblock:sea/m/creaking
+execute if score SEA_ch6_event rng5 matches 7001 positioned 90165 140 -1849 run function skyblock:sea/m/creaking
+execute if score SEA_ch6_event rng5 matches 7001 positioned 90154 134 -1854 run function skyblock:sea/m/creaking
+execute if score SEA_ch6_event rng5 matches 7001 positioned 90175 140 -1854 run function skyblock:sea/m/visioner
+execute if score SEA_ch6_event rng5 matches 7001 positioned 90175 140 -1854 run function skyblock:sea/m/visioner
 
 
 
