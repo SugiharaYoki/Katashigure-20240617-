@@ -18,8 +18,8 @@ execute unless block 90062 103 135 grindstone run scoreboard players add sc sea_
 execute if block 90062 103 135 grindstone unless block 90075 103 141 minecraft:cauldron run scoreboard players add sc sea_speedrun_ch2 1
 execute if block 90075 103 141 minecraft:cauldron unless block 90074 103 137 scaffolding run scoreboard players add sc sea_speedrun_ch3 1
 execute if block 90074 103 137 scaffolding unless block 90074 103 136 lectern run scoreboard players add sc sea_speedrun_ch4 1
-execute if block 90074 103 137 lectern unless block 90077 105 141 minecraft:dark_oak_hanging_sign run scoreboard players add sc sea_speedrun_ch5 1
-execute if block 90074 103 137 dark_oak_hanging_sign run scoreboard players add sc sea_speedrun_ch6 1
+execute if block 90074 103 136 lectern unless block 90077 105 141 minecraft:dark_oak_hanging_sign run scoreboard players add sc sea_speedrun_ch5 1
+execute if block 90077 105 141 dark_oak_hanging_sign run scoreboard players add sc sea_speedrun_ch6 1
 
 execute store result score 10e959db-4b44-4cdd-b98c-350d3b454206 sea_player run execute if entity @a[tag=SEAPT]
 
