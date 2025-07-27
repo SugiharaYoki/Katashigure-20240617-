@@ -9,7 +9,7 @@ execute if score SEA_ch6_event rng5 matches 9015 as @n[tag=SEAedwina] at @s run 
 
 execute if score SEA_ch6_event rng5 matches 9020 run playsound minecraft:ambient.cave ambient @a 90130.00 129.32 -1854.50 30 0.8
 execute if score SEA_ch6_event rng5 matches 9020 run playsound minecraft:ambient.cave ambient @a 90130.00 129.32 -1854.50 30 0.8
-execute if score SEA_ch6_event rng5 matches 9030..9130 run playsound minecraft:entity.minecart.inside ambient @a 90129 129 -1855 0.5 0.8
+execute if score SEA_ch6_event rng5 matches 9030..9110 run playsound minecraft:entity.minecart.inside ambient @a 90129 129 -1855 0.5 0.8
 
 execute if score SEA_ch6_event rng5 matches 9040 run fill 90129 119 -1853 90129 119 -1857 air
 execute if score SEA_ch6_event rng5 matches 9040 run playsound minecraft:block.iron_door.open block @a 90129 129 -1855 10 0.5
@@ -49,6 +49,8 @@ execute if score SEA_ch6_event rng5 matches 9100..9103 positioned 90142 127 -185
 execute if score SEA_ch6_event rng5 matches 9107..9120 positioned 90142 127 -1856 run function skyblock:sea/m/silverfish
 
 
+execute if score SEA_ch6_event rng5 matches 9090 as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
+execute if score SEA_ch6_event rng5 matches 9090 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“你可要做好准备，总共有三道合金门。我们无论如何也得撑住。”","color":"white","bold": false}]
 
 
 
