@@ -32,3 +32,13 @@ execute if score SEA_ch6_event sea_4temp1 matches 85 as @n[tag=SEAfiona,x=90000,
 execute if score SEA_ch6_event sea_4temp1 matches 85 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if score SEA_ch5_event_fiona_favor rng1 matches 10.. run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“不过……这样的一个怪怪的祭坛居然会出现在诺玛的寝室里。怎么看这都太诡异了。”","color":"white","bold": false}]
 
 
+execute if score SEA_ch6_event sea_4temp1 matches 100..190 run scoreboard players set SEA_ch6_event sea_4temp1 100
+execute if score SEA_ch6_event sea_4temp1 matches 100.. as @a at @s if block 90120 167 141 minecraft:calibrated_sculk_sensor positioned over world_surface if entity @s[distance=0..1.5] run scoreboard players add SEA_ch6_event sea_4temp2 1
+
+execute if score SEA_ch6_event sea_4temp2 matches 40 run scoreboard players set SEA_ch6_event sea_4temp1 200
+
+
+
+
+
+
