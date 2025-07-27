@@ -29,6 +29,6 @@ execute if score SEA_ch6_event sea_4temp1 matches 67 as @n[tag=SEAfiona,x=90000,
 
 execute if score SEA_ch6_event sea_4temp1 matches 85 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
 execute if score SEA_ch6_event sea_4temp1 matches 85 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if score SEA_ch5_event_fiona_favor rng1 matches ..9 run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“这祭坛能出现在诺玛的寝室里，肯定不是啥好东西。我希望你把水晶插上头以后不会后悔。”","color":"white","bold": false}]
-execute if score SEA_ch6_event sea_4temp1 matches 85 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if score SEA_ch5_event_fiona_favor rng1 matches 10.. run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“不过……这样的一个怪怪的祭坛居然会出现在诺玛的寝室里。这太怪异了。”","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp1 matches 85 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if score SEA_ch5_event_fiona_favor rng1 matches 10.. run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“不过……这样的一个怪怪的祭坛居然会出现在诺玛的寝室里。怎么看这都太诡异了。”","color":"white","bold": false}]
 
 
