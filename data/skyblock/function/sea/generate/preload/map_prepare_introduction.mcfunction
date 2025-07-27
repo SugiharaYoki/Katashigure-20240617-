@@ -1034,10 +1034,12 @@ item replace block 90148 171 -1874 container.13 with emerald 20
 
 #通往圣剑
 fill 90126 166 142 90126 165 142 minecraft:mangrove_leaves[persistent=true]
+setblock 90124 167 146 minecraft:redstone_block
+setblock 90124 167 146 minecraft:air
 
-
-
-
+setblock 90128 167 147 chest[facing=west]
+item replace block 90128 167 147 container.12 with wild_armor_trim_smithing_template 2
+item replace block 90128 167 147 container.14 with vex_armor_trim_smithing_template 2
 
 
 
