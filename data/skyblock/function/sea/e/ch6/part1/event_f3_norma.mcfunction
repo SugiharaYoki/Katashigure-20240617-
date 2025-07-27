@@ -179,7 +179,7 @@ execute if score SEA_ch6_event rng5 matches 1200..1800 as @a[tag=SEAPT,gamemode=
 
 execute if score SEA_ch6_event rng5 matches 1550..1600 run scoreboard players set SEA_ch6_event rng5 1560
 
-execute if score SEA_ch6_event rng5 matches 1550..1600 as @a[x=90147,y=102,z=99,dx=20,dy=4,dz=20,tag=SEAPT] at @s run scoreboard players set SEA_ch6_event rng5 1603
+execute if score SEA_ch6_event rng5 matches 1514..1600 as @a[x=90147,y=102,z=99,dx=30,dy=4,dz=30,tag=SEAPT] at @s run scoreboard players set SEA_ch6_event rng5 1603
 execute if score SEA_ch6_event rng5 matches 1603 run clone 90149 -20 102 90155 -13 112 90149 102 102
 execute if score SEA_ch6_event rng5 matches 1603 run particle minecraft:explosion_emitter 90152 102 107 2 1 2 1 2
 execute if score SEA_ch6_event rng5 matches 1605 run particle minecraft:explosion_emitter 90152 102 107 2 1 2 1 1
