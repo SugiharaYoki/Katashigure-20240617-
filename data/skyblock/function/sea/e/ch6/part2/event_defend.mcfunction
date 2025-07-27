@@ -230,8 +230,7 @@ execute if score SEA_ch6_event rng5 matches 8130 as @p[tag=SEAPT] at @s unless b
 execute if score SEA_ch6_event rng5 matches 8150 as @p[tag=SEAPT] at @s if block 90151 133 -1857 minecraft:skeleton_skull run tellraw @a[distance=0..250] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“我手中这把黄金之剑也在发光。它的光愈发强烈了……就好像在昭示着我正确的方向一样。”","color":"white"}]
 execute if score SEA_ch6_event rng5 matches 8150 as @p[tag=SEAPT] at @s unless block 90151 133 -1857 minecraft:skeleton_skull run tellraw @a[distance=0..250] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“放心，我会看好你的背后。既然是我们二人，那就不会有问题。”","color":"white"}]
 
-execute if score SEA_ch6_event rng5 matches 8095..8999 if entity @a[tag=SEAPT,tag=!SEAPF,x=90130,y=119,z=-1858,dx=10,dy=5,dz=6] run scoreboard players set SEA_ch6_event rng5 9001
-execute if score SEA_ch6_event rng5 matches 8900..9000 run scoreboard players set SEA_ch6_event rng5 8900
+
 
 
 
