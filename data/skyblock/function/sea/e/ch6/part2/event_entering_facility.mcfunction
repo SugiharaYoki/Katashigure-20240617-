@@ -190,12 +190,17 @@ execute if score SEA_ch6_event rng5 matches 7001 positioned 90174 154 -1855 run 
 execute if score SEA_ch6_event rng5 matches 7001 positioned 90188 154 -1856 run function skyblock:sea/m/cave_spider
 execute if score SEA_ch6_event rng5 matches 7001 positioned 90153 154 -1854 run function skyblock:sea/m/cave_spider
 execute if score SEA_ch6_event rng5 matches 7001 positioned 90156 154 -1857 run function skyblock:sea/m/husk
+execute if score SEA_ch6_event rng5 matches 7001 positioned 90156 154 -1857 run function skyblock:sea/m/drowned_small
+execute if score SEA_ch6_event rng5 matches 7001 positioned 90156 154 -1857 run function skyblock:sea/m/drowned_small
+execute if score SEA_ch6_event rng5 matches 7001 positioned 90156 154 -1857 run function skyblock:sea/m/drowned_small
 execute if score SEA_ch6_event rng5 matches 7001 positioned 90171 140 -1858 run function skyblock:sea/m/creaking
 execute if score SEA_ch6_event rng5 matches 7001 positioned 90165 140 -1849 run function skyblock:sea/m/creaking
 execute if score SEA_ch6_event rng5 matches 7001 positioned 90154 134 -1854 run function skyblock:sea/m/creaking
 execute if score SEA_ch6_event rng5 matches 7001 positioned 90175 140 -1854 run function skyblock:sea/m/visioner
 execute if score SEA_ch6_event rng5 matches 7001 positioned 90175 140 -1854 run function skyblock:sea/m/visioner
 
+execute if score SEA_ch6_event rng5 matches 7001 positioned 90155 139 -1842 run function skyblock:sea/m/husk
+execute if score SEA_ch6_event rng5 matches 7001 positioned 90155 139 -1842 run function skyblock:sea/m/drowned_trident
 
 
 scoreboard players set @a[tag=SEAPT] rng1 0
