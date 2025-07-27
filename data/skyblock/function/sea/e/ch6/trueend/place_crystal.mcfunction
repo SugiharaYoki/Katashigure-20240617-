@@ -48,4 +48,8 @@ execute if score SEA_ch6_event sea_4temp1 matches 270 as @a[tag=SEAPT,scores={SE
 execute if score SEA_ch6_event sea_4temp1 matches 270 as @a[tag=SEAPT,scores={SEAPT_member=1}] at @s positioned ~3 ~ ~ positioned over world_surface run summon lightning_bolt
 execute if score SEA_ch6_event sea_4temp1 matches 270 as @a[tag=SEAPT,scores={SEAPT_member=1}] at @s positioned ~-3 ~ ~ positioned over world_surface run summon lightning_bolt
 
+execute if score SEA_ch6_event sea_4temp1 matches 270 as @a[tag=SEAPT,scores={SEAPT_member=1}] at @s run particle minecraft:trial_spawner_detection ~ ~30 ~ 1 30 1 0 5000 force
+execute if score SEA_ch6_event sea_4temp1 matches 270 as @a[tag=SEAPT,scores={SEAPT_member=1}] at @s run playsound minecraft:item.totem.use ambient @a ~ ~ ~ 50 0.7
+
+execute if score SEA_ch6_event sea_4temp1 matches 270 as @a[tag=SEAPT,scores={SEAPT_member=1}] at @s run function skyblock:sea/p/weapon/raphael_sword_give
 
