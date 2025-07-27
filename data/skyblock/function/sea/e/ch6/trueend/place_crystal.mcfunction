@@ -37,7 +37,10 @@ execute if score SEA_ch6_event sea_4temp1 matches 100.. as @a at @s if block 901
 
 execute if score SEA_ch6_event sea_4temp2 matches 40 run scoreboard players set SEA_ch6_event sea_4temp1 200
 
-
+execute if score SEA_ch6_event sea_4temp1 matches 201 run stopsound @a[tag=SEAPT]
+execute if score SEA_ch6_event sea_4temp1 matches 201 as @r[tag=SEAPT] at @s run tellraw @a[distance=0..300] [{"text":"？？？：","color":"yellow","bold": true},{"text":"\n“我已经注意到你了，凡人。”","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp1 matches 221 as @r[tag=SEAPT] at @s run tellraw @a[distance=0..300] [{"text":"？？？：","color":"yellow","bold": true},{"text":"\n“不……你已经不再是凡人了。”","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp1 matches 241 as @r[tag=SEAPT] at @s run tellraw @a[distance=0..300] [{"text":"？？？：","color":"yellow","bold": true},{"text":"\n“我拉斐尔很欣赏你。希望你能给这场闹剧增添些乐趣。”","color":"white","bold": false}]
 
 
 
