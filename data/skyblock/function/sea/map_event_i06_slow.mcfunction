@@ -31,7 +31,7 @@ execute positioned 90142 153 147 if entity @a[tag=SEAPT,tag=!SEAPF,distance=0..4
 execute if score SEA_ch6_f2 rng3 matches 1.. run function skyblock:sea/e/ch6/part1/event_f2_mangrove
 execute if score SEA_ch6_f2 rng1 matches 1.. if score SEA_ch6_f2 rng2 matches ..50 run function skyblock:sea/e/ch6/part1/event_f2_boss
 
-execute if score SEA_ch6_event rng4 matches 1..240 run function skyblock:sea/e/ch6/part1/event_f1_broadcast
+execute if score SEA_ch6_event rng4 matches 1..3000 run function skyblock:sea/e/ch6/part1/event_f1_broadcast
 #行政区三楼 通讯总站
 execute unless items block 90148 145 152 container.3 green_wool if block 90144 161 124 air if entity @a[tag=SEAPT,x=90140,y=159,z=120,dx=9,dy=4,dz=9] run function skyblock:sea/e/ch6/part1/event_f3_pointofnoreturn
 execute if score SEA_ch6_event rng5 matches ..0 unless block 90144 161 124 air if entity @a[tag=SEAPT,x=90143,y=159,z=116,dx=9,dy=4,dz=5] run scoreboard players set SEA_ch6_event rng5 1
