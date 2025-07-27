@@ -42,6 +42,10 @@ execute if score SEA_ch6_event sea_4temp1 matches 201 as @r[tag=SEAPT] at @s run
 execute if score SEA_ch6_event sea_4temp1 matches 221 as @r[tag=SEAPT] at @s run tellraw @a[distance=0..300] [{"text":"？？？：","color":"yellow","bold": true},{"text":"\n“不……你已经不再是凡人了。”","color":"white","bold": false}]
 execute if score SEA_ch6_event sea_4temp1 matches 241 as @r[tag=SEAPT] at @s run tellraw @a[distance=0..300] [{"text":"？？？：","color":"yellow","bold": true},{"text":"\n“我拉斐尔很欣赏你。希望你能给这场闹剧增添些乐趣。”","color":"white","bold": false}]
 
-
+execute if score SEA_ch6_event sea_4temp1 matches 269 as @a[tag=SEAPT,scores={SEAPT_member=1}] at @s run effect give @s resistance 3 19 true
+execute if score SEA_ch6_event sea_4temp1 matches 270 as @a[tag=SEAPT,scores={SEAPT_member=1}] at @s positioned ~ ~ ~3 positioned over world_surface run summon lightning_bolt
+execute if score SEA_ch6_event sea_4temp1 matches 270 as @a[tag=SEAPT,scores={SEAPT_member=1}] at @s positioned ~ ~ ~-3 positioned over world_surface run summon lightning_bolt
+execute if score SEA_ch6_event sea_4temp1 matches 270 as @a[tag=SEAPT,scores={SEAPT_member=1}] at @s positioned ~3 ~ ~ positioned over world_surface run summon lightning_bolt
+execute if score SEA_ch6_event sea_4temp1 matches 270 as @a[tag=SEAPT,scores={SEAPT_member=1}] at @s positioned ~-3 ~ ~ positioned over world_surface run summon lightning_bolt
 
 
