@@ -201,7 +201,7 @@ execute if score SEA_ch6_event rng5 matches 7001 positioned 90175 140 -1854 run 
 
 execute if score SEA_ch6_event rng5 matches 7001 positioned 90155 139 -1842 run function skyblock:sea/m/husk
 execute if score SEA_ch6_event rng5 matches 7001 positioned 90155 139 -1842 run function skyblock:sea/m/drowned_trident
-execute if score SEA_ch6_event rng5 matches 7001 as @r[tag=SEAPT] at @s as @a[distance=0..200] run playsound garden2.bgm.002 music @s ~ ~ ~ 0.7 1.0
+execute if score SEA_ch6_event rng5 matches 7001 as @r[tag=SEAPT] at @s as @a[distance=0..200] run playsound garden2.bgm.003 music @s ~ ~ ~ 0.7 1.0
 
 
 scoreboard players set @a[tag=SEAPT] rng1 0
