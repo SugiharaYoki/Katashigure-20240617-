@@ -39,14 +39,14 @@ execute if score SEA_ch6_event rng5 matches 9150.. positioned 90142 127 -1856 ru
 execute if score SEA_ch6_event rng5 matches 9073..9077 positioned 90142 127 -1854 run function skyblock:sea/m/drowned
 execute if score SEA_ch6_event rng5 matches 9073..9077 positioned 90142 127 -1856 run function skyblock:sea/m/drowned
 
-execute if score SEA_ch6_event rng5 matches 9082 positioned 90142 127 -1854 run function skyblock:sea/m/zombie_security2
-execute if score SEA_ch6_event rng5 matches 9082 positioned 90142 127 -1856 run function skyblock:sea/m/zombie_security2
-execute if score SEA_ch6_event rng5 matches 9086 positioned 90142 127 -1854 run function skyblock:sea/m/spider
-execute if score SEA_ch6_event rng5 matches 9086 positioned 90142 127 -1856 run function skyblock:sea/m/spider
-execute if score SEA_ch6_event rng5 matches 9091 positioned 90142 127 -1854 run function skyblock:sea/m/zombie_security2
-execute if score SEA_ch6_event rng5 matches 9091 positioned 90142 127 -1856 run function skyblock:sea/m/zombie_security2
-execute if score SEA_ch6_event rng5 matches 9097..9099 positioned 90142 127 -1854 run function skyblock:sea/m/silverfish
-execute if score SEA_ch6_event rng5 matches 9097..9099 positioned 90142 127 -1856 run function skyblock:sea/m/silverfish
+execute if score SEA_ch6_event rng5 matches 9085 positioned 90142 127 -1854 run function skyblock:sea/m/zombie_security2
+execute if score SEA_ch6_event rng5 matches 9085 positioned 90142 127 -1856 run function skyblock:sea/m/zombie_security2
+execute if score SEA_ch6_event rng5 matches 9089 positioned 90142 127 -1854 run function skyblock:sea/m/spider
+execute if score SEA_ch6_event rng5 matches 9089 positioned 90142 127 -1856 run function skyblock:sea/m/spider
+execute if score SEA_ch6_event rng5 matches 9094 positioned 90142 127 -1854 run function skyblock:sea/m/zombie_security2
+execute if score SEA_ch6_event rng5 matches 9094 positioned 90142 127 -1856 run function skyblock:sea/m/zombie_security2
+execute if score SEA_ch6_event rng5 matches 9100..9103 positioned 90142 127 -1854 run function skyblock:sea/m/silverfish
+execute if score SEA_ch6_event rng5 matches 9107..9120 positioned 90142 127 -1856 run function skyblock:sea/m/silverfish
 
 
 
