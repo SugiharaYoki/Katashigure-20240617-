@@ -37,7 +37,10 @@ execute unless items block 90148 145 152 container.3 green_wool if block 90144 1
 execute if score SEA_ch6_event rng5 matches ..0 unless block 90144 161 124 air if entity @a[tag=SEAPT,x=90143,y=159,z=116,dx=9,dy=4,dz=5] run scoreboard players set SEA_ch6_event rng5 1
 execute if score SEA_ch6_event rng5 matches 1..999 positioned 90144 161 124 run function skyblock:sea/e/ch6/part1/event_f3_whoismarilyn
 execute if score SEA_ch6_event rng5 matches 1000..1999 positioned 90144 161 124 run function skyblock:sea/e/ch6/part1/event_f3_norma
-execute if score SEA_ch6_event rng5 matches 2000.. positioned 90144 161 124 run function skyblock:sea/e/ch6/part2/event_entering_facility
+
+execute if score SEA_ch6_event rng5 matches 2000.. positioned 90144 161 124 run function skyblock:sea/e/ch6/part2/rule_water
+execute if score SEA_ch6_event rng5 matches 2000..8999 positioned 90144 161 124 run function skyblock:sea/e/ch6/part2/event_entering_facility
+execute if score SEA_ch6_event rng5 matches 9000.. positioned 90144 161 124 run function skyblock:sea/e/ch6/part2/event_entering_facility
 
 
 #记忆密码1
