@@ -32,7 +32,8 @@ execute if score SEA_ch6_event rng5 matches 9120 run playsound minecraft:block.i
 execute if score SEA_ch6_event rng5 matches 9120 run playsound minecraft:block.netherite_block.break block @a ~ ~ ~ 10 0.8
 execute if score SEA_ch6_event rng5 matches 9120 run playsound minecraft:entity.ravager.stunned block @a ~ ~ ~ 10 0.5
 
-execute if score SEA_ch6_event rng5 matches 9070 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“看来我们有伴了。”","color":"white"}]
+execute if score SEA_ch6_event rng5 matches 9040 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“我就没在忒尔克西见到多少能快速开启的门。”","color":"white"}]
+execute if score SEA_ch6_event rng5 matches 9070 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“噢，看来我们有伴了。”","color":"white"}]
 
 execute if score SEA_ch6_event rng5 matches 9150.. positioned 90142 127 -1854 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 8
 execute if score SEA_ch6_event rng5 matches 9150.. positioned 90142 127 -1856 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 8
