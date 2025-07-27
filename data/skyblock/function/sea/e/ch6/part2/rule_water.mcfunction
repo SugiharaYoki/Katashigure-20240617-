@@ -4,6 +4,10 @@
 scoreboard players set @a[tag=SEAPT] rng1 0
 execute as @a[gamemode=adventure,tag=SEAPT] at @s if block ~ ~ ~ water run scoreboard players add @s rng1 3
 execute as @a[gamemode=adventure,tag=SEAPT] at @s if block ~ ~ ~ water if block ~ ~1 ~ water run scoreboard players add @s rng1 3
+execute as @a[gamemode=adventure,tag=SEAPT] at @s if block ~0.17 ~0.2 ~0.17 water run scoreboard players add @s rng1 2
+execute as @a[gamemode=adventure,tag=SEAPT] at @s if block ~0.17 ~0.2 ~-0.17 water run scoreboard players add @s rng1 2
+execute as @a[gamemode=adventure,tag=SEAPT] at @s if block ~-0.17 ~0.2 ~0.17 water run scoreboard players add @s rng1 2
+execute as @a[gamemode=adventure,tag=SEAPT] at @s if block ~-0.17 ~0.2 ~-0.17 water run scoreboard players add @s rng1 2
 execute as @a[gamemode=adventure,tag=SEAPT] at @s if block ~ ~ ~ water if block ~0.8 ~0.2 ~0.8 water run scoreboard players add @s rng1 2
 execute as @a[gamemode=adventure,tag=SEAPT] at @s if block ~ ~ ~ water if block ~0.8 ~0.2 ~-0.8 water run scoreboard players add @s rng1 2
 execute as @a[gamemode=adventure,tag=SEAPT] at @s if block ~ ~ ~ water if block ~-0.8 ~0.2 ~0.8 water run scoreboard players add @s rng1 2
