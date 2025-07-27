@@ -1033,7 +1033,7 @@ item replace block 90148 171 -1874 container.13 with emerald 20
 #setblock 90169 172 -1874 minecraft:waxed_copper_bulb[lit=false]
 
 #通往圣剑
-fill 90126 166 142 90126 165 142 minecraft:mangrove_leaves[persistent=true]
+fill 90126 166 142 90126 164 142 minecraft:mangrove_leaves[persistent=true]
 setblock 90124 167 146 minecraft:redstone_block
 setblock 90124 167 146 minecraft:air
 
