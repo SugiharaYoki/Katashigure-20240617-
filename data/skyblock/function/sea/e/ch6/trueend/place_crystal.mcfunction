@@ -64,3 +64,7 @@ execute if score SEA_ch6_event sea_4temp1 matches 330 as @n[tag=SEAfiona,x=90000
 execute if score SEA_ch6_event sea_4temp1 matches 345 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
 execute if score SEA_ch6_event sea_4temp1 matches 345 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if score SEA_ch5_event_fiona_favor rng1 matches ..9 run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“哦……？真有意思，居然会发生这种事情。不像啥坏兆头，我建议你带着这把剑一起行动。”","color":"white","bold": false}]
 execute if score SEA_ch6_event sea_4temp1 matches 345 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if score SEA_ch5_event_fiona_favor rng1 matches 10.. run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“一把……剑？居然还会发生这种事情……总不可能是从天上掉下来的吧。”","color":"white","bold": false}]
+
+#execute if score SEA_ch6_event sea_4temp1 matches 300.. unless items entity @a[tag=SEAPT] container.* golden_sword as @a[tag=SEAPT,scores={SEAPT_member=1}] at @s run function skyblock:sea/e/ch6/raphael_sword_give
+
+

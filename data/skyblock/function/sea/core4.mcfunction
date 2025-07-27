@@ -7,6 +7,7 @@ execute if score SEA_ch6_event rng8 matches ..0 if block 90074 103 136 lectern i
 execute if score SEA_ch6_event rng8 matches ..0 if block 90077 105 141 minecraft:dark_oak_hanging_sign if entity @a[tag=SEAPT] run function skyblock:sea/map_event_i06_slow
 execute if score SEA_ch6_event rng8 matches 1.. if block 90077 105 141 minecraft:dark_oak_hanging_sign if entity @a[tag=SEAPT] run function skyblock:sea/e/ch6/badend
 
+
 #execute if entity @a[tag=SEAPT] if entity @n[tag=sc,tag=SeGa_sea_ch1] run function skyblock:sea/map_event_igeneral_slow
 #execute unless block 90062 103 135 grindstone if entity @a[tag=SEAPT] if entity @n[tag=sc,tag=SeGa_sea_ch1] run function skyblock:sea/map_event_i01_slow
 #execute unless block 90075 103 141 minecraft:cauldron if entity @a[tag=SEAPT] if entity @n[tag=sc,tag=SeGa_sea_ch2] run function skyblock:sea/map_event_i02_slow
