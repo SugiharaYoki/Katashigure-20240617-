@@ -39,7 +39,9 @@ execute if score SEA_ch6_event rng5 matches 1..999 positioned 90144 161 124 run 
 execute if score SEA_ch6_event rng5 matches 1000..1999 positioned 90144 161 124 run function skyblock:sea/e/ch6/part1/event_f3_norma
 execute if score SEA_ch6_event rng5 matches 2000.. positioned 90144 161 124 run function skyblock:sea/e/ch6/part2/event_entering_facility
 
-
+#圣剑祭坛
+execute if score SEA_ch6_event sea_4temp1 matches ..0 positioned 90120 167 141 if items entity @a[x=90119,y=167,z=140,dx=3,dy=3,dz=3] container.* end_crystal run scoreboard players set SEA_ch6_event sea_4temp1 1
+execute if score SEA_ch6_event sea_4temp1 matches 1.. run function skyblock:sea/e/ch6/trueend/place_crystal
 
 #记忆密码1
 execute if block 90146 155 149 lever[powered=false] \
