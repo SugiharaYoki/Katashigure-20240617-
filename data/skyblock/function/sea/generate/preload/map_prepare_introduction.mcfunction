@@ -1040,7 +1040,8 @@ setblock 90124 167 146 minecraft:air
 setblock 90128 167 147 chest[facing=west]
 item replace block 90128 167 147 container.12 with wild_armor_trim_smithing_template 2
 item replace block 90128 167 147 container.14 with vex_armor_trim_smithing_template 2
-
+setblock 90120 167 141 minecraft:air
+setblock 90120 167 141 minecraft:respawn_anchor
 
 
 
