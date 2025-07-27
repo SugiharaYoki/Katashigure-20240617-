@@ -203,7 +203,7 @@ execute if score SEA_ch6_event rng5 matches 7001 positioned 90155 139 -1842 run 
 execute if score SEA_ch6_event rng5 matches 7001 positioned 90155 139 -1842 run function skyblock:sea/m/drowned_trident
 execute if score SEA_ch6_event rng5 matches 7001 as @r[tag=SEAPT] at @s as @a[distance=0..200] run playsound garden2.bgm.003 music @s ~ ~ ~ 0.7 1.0
 
-execute if score SEA_ch6_event rng5 matches 1000..7999 if entity @a[tag=SEAPT,tag=!SEAPF,x=90130,y=119,z=-1858,dx=20,dy=10,dz=10] run scoreboard players set SEA_ch6_event rng5 8001
+execute if score SEA_ch6_event rng5 matches 1000..7999 if entity @a[tag=SEAPT,tag=!SEAPF,x=90130,y=119,z=-1858,dx=20,dy=20,dz=10] run scoreboard players set SEA_ch6_event rng5 8001
 execute if score SEA_ch6_event rng5 matches 7900..8000 run scoreboard players set SEA_ch6_event rng5 7900
 
 execute if score SEA_ch6_event rng5 matches 8003 as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
