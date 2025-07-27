@@ -56,6 +56,10 @@ setblock 90223 177 -1869 minecraft:smithing_table
 setblock 90223 177 -1871 minecraft:cobweb
 setblock 90218 177 -1874 minecraft:cobweb
 
+setblock 90149 133 -1884 chest[facing=east]
+item replace block 90149 133 -1884 container.13 with golden_carrot 5
+
+summon minecraft:interaction 90158 134.3 -1887 {CustomName:'[{"text":"器械式治疗仪"}]',Tags:["SEAaidbox"]}
 
 execute store result score SEA_ch6_event rng10 if entity @e[tag=SEAedwina]
 execute if score SEA_ch6_event rng10 matches 2.. run kill @n[tag=SEAedwina,tag=!SEAedwina_attackable]
