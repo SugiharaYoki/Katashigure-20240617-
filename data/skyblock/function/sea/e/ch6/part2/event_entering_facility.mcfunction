@@ -237,15 +237,15 @@ execute if score SEA_ch6_event rng5 matches 8150 as @p[tag=SEAPT] at @s unless b
 
 scoreboard players set @a[tag=SEAPT] rng1 0
 execute as @a[gamemode=adventure,tag=SEAPT] at @s if block ~ ~ ~ water run scoreboard players add @s rng1 3
-execute as @a[gamemode=adventure,tag=SEAPT] at @s if block ~ ~1 ~ water run scoreboard players add @s rng1 3
-execute as @a[gamemode=adventure,tag=SEAPT] at @s if block ~0.8 ~0.2 ~0.8 water run scoreboard players add @s rng1 2
-execute as @a[gamemode=adventure,tag=SEAPT] at @s if block ~0.8 ~0.2 ~-0.8 water run scoreboard players add @s rng1 2
-execute as @a[gamemode=adventure,tag=SEAPT] at @s if block ~-0.8 ~0.2 ~0.8 water run scoreboard players add @s rng1 2
-execute as @a[gamemode=adventure,tag=SEAPT] at @s if block ~-0.8 ~0.2 ~-0.8 water run scoreboard players add @s rng1 2
-execute as @a[gamemode=adventure,tag=SEAPT] at @s if block ~ ~0.2 ~1.2 water run scoreboard players add @s rng1 2
-execute as @a[gamemode=adventure,tag=SEAPT] at @s if block ~ ~0.2 ~-1.2 water run scoreboard players add @s rng1 2
-execute as @a[gamemode=adventure,tag=SEAPT] at @s if block ~1.2 ~0.2 ~ water run scoreboard players add @s rng1 2
-execute as @a[gamemode=adventure,tag=SEAPT] at @s if block ~-1.2 ~0.2 ~ water run scoreboard players add @s rng1 2
+execute as @a[gamemode=adventure,tag=SEAPT] at @s if block ~ ~ ~ water if block ~ ~1 ~ water run scoreboard players add @s rng1 3
+execute as @a[gamemode=adventure,tag=SEAPT] at @s if block ~ ~ ~ water if block ~0.8 ~0.2 ~0.8 water run scoreboard players add @s rng1 2
+execute as @a[gamemode=adventure,tag=SEAPT] at @s if block ~ ~ ~ water if block ~0.8 ~0.2 ~-0.8 water run scoreboard players add @s rng1 2
+execute as @a[gamemode=adventure,tag=SEAPT] at @s if block ~ ~ ~ water if block ~-0.8 ~0.2 ~0.8 water run scoreboard players add @s rng1 2
+execute as @a[gamemode=adventure,tag=SEAPT] at @s if block ~ ~ ~ water if block ~-0.8 ~0.2 ~-0.8 water run scoreboard players add @s rng1 2
+execute as @a[gamemode=adventure,tag=SEAPT] at @s if block ~ ~ ~ water if block ~ ~0.2 ~1.2 water run scoreboard players add @s rng1 2
+execute as @a[gamemode=adventure,tag=SEAPT] at @s if block ~ ~ ~ water if block ~ ~0.2 ~-1.2 water run scoreboard players add @s rng1 2
+execute as @a[gamemode=adventure,tag=SEAPT] at @s if block ~ ~ ~ water if block ~1.2 ~0.2 ~ water run scoreboard players add @s rng1 2
+execute as @a[gamemode=adventure,tag=SEAPT] at @s if block ~ ~ ~ water if block ~-1.2 ~0.2 ~ water run scoreboard players add @s rng1 2
 execute as @a[gamemode=adventure,tag=SEAPT,scores={rng1=1..}] at @s run particle minecraft:white_smoke ~ ~0.6 ~ 0.15 0.6 0.15 0.01 10
 execute as @a[gamemode=adventure,tag=SEAPT,scores={rng1=1..}] at @s run playsound block.fire.extinguish block @a ~ ~ ~ 0.5 1.4
 execute as @a[gamemode=adventure,tag=SEAPT,scores={rng1=1..6}] at @s run damage @s 3.5 minecraft:campfire
