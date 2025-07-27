@@ -32,11 +32,11 @@ execute as @s[tag=SEAelevatoring_pre] at @s run tp @s ~ 84.0 ~
 execute as @s[tag=SEAelevatoring_pre] at @s run tag @s add SEAelevatoring
 tag @s remove SEAelevatoring_pre
 
-execute as @s[x=90196,dx=2,z=1843,dz=2,y=164,dy=5,tag=!SEAelevatoring] at @s run tag @s add SEAelevatoring_pre
+execute as @s[x=90196,dx=2,z=-1843,dz=2,y=164,dy=5,tag=!SEAelevatoring] at @s run tag @s add SEAelevatoring_pre
 execute as @s[tag=SEAelevatoring_pre] at @s run tp @s ~ 154.0 ~
 execute as @s[tag=SEAelevatoring_pre] at @s run tag @s add SEAelevatoring
 tag @s remove SEAelevatoring_pre
-execute as @s[x=90196,dx=2,z=1843,dz=2,y=154,dy=5,tag=!SEAelevatoring] at @s run tag @s add SEAelevatoring_pre
+execute as @s[x=90196,dx=2,z=-1843,dz=2,y=154,dy=5,tag=!SEAelevatoring] at @s run tag @s add SEAelevatoring_pre
 execute as @s[tag=SEAelevatoring_pre] at @s run tp @s ~ 164.0 ~
 execute as @s[tag=SEAelevatoring_pre] at @s run tag @s add SEAelevatoring
 tag @s remove SEAelevatoring_pre
