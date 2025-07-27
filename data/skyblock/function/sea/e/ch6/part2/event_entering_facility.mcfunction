@@ -204,7 +204,7 @@ execute as @a[gamemode=adventure,tag=SEAPT,scores={rng1=10..}] at @s run effect 
 execute as @a[gamemode=adventure,tag=SEAPT,scores={rng1=10..13}] at @s run damage @s 6 minecraft:campfire
 execute as @a[gamemode=adventure,tag=SEAPT,scores={rng1=14..17}] at @s run damage @s 7 minecraft:campfire
 execute as @a[gamemode=adventure,tag=SEAPT,scores={rng1=20..}] at @s run damage @s 12 minecraft:campfire
-execute as @a[gamemode=adventure,tag=SEAPT,scores={rng1=10..}] at @s if block ~ ~2 ~ water if block ~ ~3 ~ water if block ~ ~4 ~ water if block ~ ~5 ~ water if block ~ ~-0.3 ~ water run kill @s
+execute as @a[gamemode=adventure,tag=SEAPT,scores={rng1=10..}] at @s if block ~ ~2 ~ water if block ~ ~3 ~ water if block ~ ~4 ~ water if block ~ ~5 ~ water if block ~ ~6 ~ water if block ~ ~-0.3 ~ water run kill @s
 execute as @a[gamemode=adventure,tag=SEAPT,scores={rng1=10..}] at @s if block ~ ~3 ~ water if block ~ ~5 ~ water if block ~ ~6 ~ water if block ~ ~7 ~ water if block ~ ~8 ~ water if block ~ ~-3 ~ water run kill @s
 
 
