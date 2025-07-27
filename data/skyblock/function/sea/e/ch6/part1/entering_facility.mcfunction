@@ -70,4 +70,21 @@ kill @e[tag=SEAnorma,type=zombie_villager]
 setblock 90151 133 -1857 air
 execute if items entity @a[tag=SEAPT] container.* golden_sword run setblock 90151 133 -1857 minecraft:skeleton_skull[rotation=10]
 
+fill 90129 119 -1853 90129 124 -1857 minecraft:netherite_block
+fill 90125 119 -1853 90125 124 -1857 minecraft:netherite_block
+fill 90121 119 -1853 90121 124 -1857 minecraft:netherite_block
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 forceload remove 90142 -1886 90209 -1838
