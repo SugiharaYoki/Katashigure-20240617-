@@ -185,28 +185,28 @@ execute if score SEA_ch6_event rng5 matches 6002 positioned 90212 164 -1853 run 
 
 
 scoreboard players set @a[tag=SEAPT] rng1 0
-execute as @a[tag=SEAPT] at @s if block ~ ~ ~ water run scoreboard players add @s rng1 3
-execute as @a[tag=SEAPT] at @s if block ~ ~1 ~ water run scoreboard players add @s rng1 3
-execute as @a[tag=SEAPT] at @s if block ~0.2 ~0.2 ~0.2 water run scoreboard players add @s rng1 2
-execute as @a[tag=SEAPT] at @s if block ~0.2 ~0.2 ~-0.2 water run scoreboard players add @s rng1 2
-execute as @a[tag=SEAPT] at @s if block ~-0.2 ~0.2 ~0.2 water run scoreboard players add @s rng1 2
-execute as @a[tag=SEAPT] at @s if block ~-0.2 ~0.2 ~-0.2 water run scoreboard players add @s rng1 2
-execute as @a[tag=SEAPT] at @s if block ~ ~0.2 ~0.2 water run scoreboard players add @s rng1 2
-execute as @a[tag=SEAPT] at @s if block ~ ~0.2 ~-0.2 water run scoreboard players add @s rng1 2
-execute as @a[tag=SEAPT] at @s if block ~0.2 ~0.2 ~ water run scoreboard players add @s rng1 2
-execute as @a[tag=SEAPT] at @s if block ~-0.2 ~0.2 ~ water run scoreboard players add @s rng1 2
-execute as @a[tag=SEAPT,scores={rng1=1..}] at @s run particle minecraft:white_smoke ~ ~0.6 ~ 0.15 0.6 0.15 0.01 10
-execute as @a[tag=SEAPT,scores={rng1=1..}] at @s run playsound block.fire.extinguish block @a ~ ~ ~ 0.5 1.4
-execute as @a[tag=SEAPT,scores={rng1=1..3}] at @s run damage @s 2 minecraft:campfire
-execute as @a[tag=SEAPT,scores={rng1=4..6}] at @s run damage @s 4 minecraft:campfire
-execute as @a[tag=SEAPT,scores={rng1=7..9}] at @s run damage @s 5 minecraft:campfire
-execute as @a[tag=SEAPT,scores={rng1=10..}] at @s run effect clear @s resistance
-execute as @a[tag=SEAPT,scores={rng1=10..13}] at @s run damage @s 6 minecraft:campfire
-execute as @a[tag=SEAPT,scores={rng1=14..17}] at @s run damage @s 7 minecraft:campfire
-execute as @a[tag=SEAPT,scores={rng1=20..}] at @s run damage @s 12 minecraft:campfire
-execute as @a[tag=SEAPT,scores={rng1=10..}] at @s if block ~ ~2 ~ water if block ~ ~4 ~ water if block ~ ~-2 ~ water run kill @s
-execute as @a[tag=SEAPT,scores={rng1=10..}] at @s if block ~ ~3 ~ water if block ~ ~5 ~ water if block ~ ~-3 ~ water run kill @s
-execute as @a[tag=SEAPT,scores={rng1=10..}] at @s if block ~ ~2 ~ water if block ~ ~8 ~ water if block ~ ~14 ~ water run kill @s
+execute as @a[gamemode=adventure,tag=SEAPT] at @s if block ~ ~ ~ water run scoreboard players add @s rng1 3
+execute as @a[gamemode=adventure,tag=SEAPT] at @s if block ~ ~1 ~ water run scoreboard players add @s rng1 3
+execute as @a[gamemode=adventure,tag=SEAPT] at @s if block ~0.2 ~0.2 ~0.2 water run scoreboard players add @s rng1 2
+execute as @a[gamemode=adventure,tag=SEAPT] at @s if block ~0.2 ~0.2 ~-0.2 water run scoreboard players add @s rng1 2
+execute as @a[gamemode=adventure,tag=SEAPT] at @s if block ~-0.2 ~0.2 ~0.2 water run scoreboard players add @s rng1 2
+execute as @a[gamemode=adventure,tag=SEAPT] at @s if block ~-0.2 ~0.2 ~-0.2 water run scoreboard players add @s rng1 2
+execute as @a[gamemode=adventure,tag=SEAPT] at @s if block ~ ~0.2 ~0.2 water run scoreboard players add @s rng1 2
+execute as @a[gamemode=adventure,tag=SEAPT] at @s if block ~ ~0.2 ~-0.2 water run scoreboard players add @s rng1 2
+execute as @a[gamemode=adventure,tag=SEAPT] at @s if block ~0.2 ~0.2 ~ water run scoreboard players add @s rng1 2
+execute as @a[gamemode=adventure,tag=SEAPT] at @s if block ~-0.2 ~0.2 ~ water run scoreboard players add @s rng1 2
+execute as @a[gamemode=adventure,tag=SEAPT,scores={rng1=1..}] at @s run particle minecraft:white_smoke ~ ~0.6 ~ 0.15 0.6 0.15 0.01 10
+execute as @a[gamemode=adventure,tag=SEAPT,scores={rng1=1..}] at @s run playsound block.fire.extinguish block @a ~ ~ ~ 0.5 1.4
+execute as @a[gamemode=adventure,tag=SEAPT,scores={rng1=1..3}] at @s run damage @s 2 minecraft:campfire
+execute as @a[gamemode=adventure,tag=SEAPT,scores={rng1=4..6}] at @s run damage @s 4 minecraft:campfire
+execute as @a[gamemode=adventure,tag=SEAPT,scores={rng1=7..9}] at @s run damage @s 5 minecraft:campfire
+execute as @a[gamemode=adventure,tag=SEAPT,scores={rng1=10..}] at @s run effect clear @s resistance
+execute as @a[gamemode=adventure,tag=SEAPT,scores={rng1=10..13}] at @s run damage @s 6 minecraft:campfire
+execute as @a[gamemode=adventure,tag=SEAPT,scores={rng1=14..17}] at @s run damage @s 7 minecraft:campfire
+execute as @a[gamemode=adventure,tag=SEAPT,scores={rng1=20..}] at @s run damage @s 12 minecraft:campfire
+execute as @a[gamemode=adventure,tag=SEAPT,scores={rng1=10..}] at @s if block ~ ~2 ~ water if block ~ ~4 ~ water if block ~ ~-2 ~ water run kill @s
+execute as @a[gamemode=adventure,tag=SEAPT,scores={rng1=10..}] at @s if block ~ ~3 ~ water if block ~ ~5 ~ water if block ~ ~-3 ~ water run kill @s
+execute as @a[gamemode=adventure,tag=SEAPT,scores={rng1=10..}] at @s if block ~ ~2 ~ water if block ~ ~8 ~ water if block ~ ~14 ~ water run kill @s
 
 
 
