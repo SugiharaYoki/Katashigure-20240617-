@@ -1,5 +1,6 @@
 scoreboard players add SEA_ch6_event rng5 1
 
+execute if score SEA_ch6_event rng5 matches 9002 as @n[tag=SEAedwina] at @s run tp @s 90131 120 -1855
 execute if score SEA_ch6_event rng5 matches 9002 as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
 execute if score SEA_ch6_event rng5 matches 9002 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“我不太清楚接下来会发生什么，所以做好最坏的准备。”","color":"white","bold": false}]
 
