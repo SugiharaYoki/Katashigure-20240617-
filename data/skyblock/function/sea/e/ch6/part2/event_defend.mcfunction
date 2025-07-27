@@ -24,11 +24,11 @@ execute if score SEA_ch6_event rng5 matches 9080 run fill 90129 121 -1853 90129 
 execute if score SEA_ch6_event rng5 matches 9080 run playsound minecraft:block.iron_door.open block @a 90129 129 -1855 10 0.5
 execute if score SEA_ch6_event rng5 matches 9080 run playsound minecraft:block.netherite_block.break block @a ~ ~ ~ 10 0.8
 execute if score SEA_ch6_event rng5 matches 9080 run playsound minecraft:entity.ravager.stunned block @a ~ ~ ~ 10 0.5
-execute if score SEA_ch6_event rng5 matches 9100 run fill 90129 121 -1853 90129 121 -1857 air
+execute if score SEA_ch6_event rng5 matches 9100 run fill 90129 122 -1853 90129 122 -1857 air
 execute if score SEA_ch6_event rng5 matches 9100 run playsound minecraft:block.iron_door.open block @a 90129 129 -1855 10 0.5
 execute if score SEA_ch6_event rng5 matches 9100 run playsound minecraft:block.netherite_block.break block @a ~ ~ ~ 10 0.8
 execute if score SEA_ch6_event rng5 matches 9100 run playsound minecraft:entity.ravager.stunned block @a ~ ~ ~ 10 0.5
-execute if score SEA_ch6_event rng5 matches 9120 run fill 90129 121 -1853 90129 121 -1857 air
+execute if score SEA_ch6_event rng5 matches 9120 run fill 90129 123 -1853 90129 123 -1857 air
 execute if score SEA_ch6_event rng5 matches 9120 run playsound minecraft:block.iron_door.open block @a 90129 129 -1855 10 0.5
 execute if score SEA_ch6_event rng5 matches 9120 run playsound minecraft:block.netherite_block.break block @a ~ ~ ~ 10 0.8
 execute if score SEA_ch6_event rng5 matches 9120 run playsound minecraft:entity.ravager.stunned block @a ~ ~ ~ 10 0.5
@@ -50,11 +50,11 @@ execute if score SEA_ch6_event rng5 matches 9180 run fill 90125 121 -1853 90125 
 execute if score SEA_ch6_event rng5 matches 9180 run playsound minecraft:block.iron_door.open block @a 90125 129 -1855 10 0.5
 execute if score SEA_ch6_event rng5 matches 9180 run playsound minecraft:block.netherite_block.break block @a ~ ~ ~ 10 0.8
 execute if score SEA_ch6_event rng5 matches 9180 run playsound minecraft:entity.ravager.stunned block @a ~ ~ ~ 10 0.5
-execute if score SEA_ch6_event rng5 matches 9200 run fill 90125 121 -1853 90125 121 -1857 air
+execute if score SEA_ch6_event rng5 matches 9200 run fill 90125 122 -1853 90125 122 -1857 air
 execute if score SEA_ch6_event rng5 matches 9200 run playsound minecraft:block.iron_door.open block @a 90125 129 -1855 10 0.5
 execute if score SEA_ch6_event rng5 matches 9200 run playsound minecraft:block.netherite_block.break block @a ~ ~ ~ 10 0.8
 execute if score SEA_ch6_event rng5 matches 9200 run playsound minecraft:entity.ravager.stunned block @a ~ ~ ~ 10 0.5
-execute if score SEA_ch6_event rng5 matches 9220 run fill 90125 121 -1853 90125 121 -1857 air
+execute if score SEA_ch6_event rng5 matches 9220 run fill 90125 123 -1853 90125 123 -1857 air
 execute if score SEA_ch6_event rng5 matches 9220 run playsound minecraft:block.iron_door.open block @a 90125 129 -1855 10 0.5
 execute if score SEA_ch6_event rng5 matches 9220 run playsound minecraft:block.netherite_block.break block @a ~ ~ ~ 10 0.8
 execute if score SEA_ch6_event rng5 matches 9220 run playsound minecraft:entity.ravager.stunned block @a ~ ~ ~ 10 0.5
@@ -79,11 +79,11 @@ execute if score SEA_ch6_event rng5 matches 9380 run fill 90121 121 -1853 90121 
 execute if score SEA_ch6_event rng5 matches 9380 run playsound minecraft:block.iron_door.open block @a 90121 129 -1855 10 0.5
 execute if score SEA_ch6_event rng5 matches 9380 run playsound minecraft:block.netherite_block.break block @a ~ ~ ~ 10 0.8
 execute if score SEA_ch6_event rng5 matches 9380 run playsound minecraft:entity.ravager.stunned block @a ~ ~ ~ 10 0.5
-execute if score SEA_ch6_event rng5 matches 9400 run fill 90121 121 -1853 90121 121 -1857 air
+execute if score SEA_ch6_event rng5 matches 9400 run fill 90121 122 -1853 90121 122 -1857 air
 execute if score SEA_ch6_event rng5 matches 9400 run playsound minecraft:block.iron_door.open block @a 90125 129 -1855 10 0.5
 execute if score SEA_ch6_event rng5 matches 9400 run playsound minecraft:block.netherite_block.break block @a ~ ~ ~ 10 0.8
 execute if score SEA_ch6_event rng5 matches 9400 run playsound minecraft:entity.ravager.stunned block @a ~ ~ ~ 10 0.5
-execute if score SEA_ch6_event rng5 matches 9420 run fill 90121 121 -1853 90121 121 -1857 air
+execute if score SEA_ch6_event rng5 matches 9420 run fill 90121 123 -1853 90121 123 -1857 air
 execute if score SEA_ch6_event rng5 matches 9420 run playsound minecraft:block.iron_door.open block @a 90121 129 -1855 10 0.5
 execute if score SEA_ch6_event rng5 matches 9420 run playsound minecraft:block.netherite_block.break block @a ~ ~ ~ 10 0.8
 execute if score SEA_ch6_event rng5 matches 9420 run playsound minecraft:entity.ravager.stunned block @a ~ ~ ~ 10 0.5
