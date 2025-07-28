@@ -90,6 +90,8 @@ summon marker 90094 105 -1899 {Tags:["SEAmagma6"]}
 summon marker 90089 102 -1906 {Tags:["SEAmagma6"]}
 summon marker 90086 102 -1900 {Tags:["SEAmagma6"]}
 
+setblock 90093 102 -1899 chest[facing=north]
+item replace block 90093 102 -1899 container.13 with golden_carrot 3
 
 
 execute as @e[tag=SEAmagma6,type=marker] at @s if block ~ ~ ~ air run setblock ~ ~ ~ basalt
