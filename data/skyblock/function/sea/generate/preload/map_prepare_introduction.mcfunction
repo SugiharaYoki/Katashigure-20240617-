@@ -122,7 +122,7 @@ setblock 90074 103 137 air
 setblock 90062 103 135 air
 execute as @a[tag=SEAPT] at @s run function skyblock:sea/generate/preload/map_prepare_ch1_player
 
-setblock 90077 105 141 air
+setblock 90081 101 137 air
 
 gamemode adventure @a[tag=SEAPT]
 setblock 90077 103 146 barrel[facing=up]

@@ -582,6 +582,7 @@ setblock 90145 144 57 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery
 fill 90142 132 46 90142 130 46 iron_bars
 
 setblock 90125 129 29 minecraft:air
+setblock 90136 129 39 minecraft:air
 
 
 setblock 90128 131 18 chest[facing=west]
@@ -618,4 +619,12 @@ clone 90102 -60 172 90113 -51 187 90082 124 152
 fill 90145 120 182 90134 110 192 air
 
 clone 90134 -50 98 90142 -42 102 90134 100 98
+
+fill 90134 131 34 90134 130 31 lever[facing=east,powered=false]
+fill 90138 129 32 90138 130 33 iron_bars
+
+fill 90140 131 30 90142 130 30 lever[facing=south]
+fill 90142 131 35 90140 130 35 lever[facing=north]
+
+
 
