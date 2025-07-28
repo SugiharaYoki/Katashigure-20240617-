@@ -48,6 +48,7 @@ execute store result score sc rng1 run random value 1..3
 
 execute as @s[scores={sea_do_attack=1..}] if items entity @s weapon.mainhand flint_and_steel[custom_data={sea_1time_flint:true}] if score sc rng1 matches 1..2 run clear @s flint_and_steel[custom_data={sea_1time_flint:true}] 1
 execute as @s[scores={sea_do_attack=1..}] if items entity @s weapon.mainhand mace run function skyblock:sea/p/skill/mace
+execute as @s[scores={sea_do_attack=1..}] if score SEA_ch6_event sea_4temp3 matches ..0 if items entity @s weapon.mainhand golden_sword run scoreboard players set SEA_ch6_event sea_4temp3 1
 execute as @s[scores={sea_do_attack=1..}] if items entity @s weapon.mainhand golden_sword[custom_data={sea_goldensword_1:true}] run function skyblock:sea/p/weapon/raphael_sword
 scoreboard players reset @s[scores={sea_do_attack=1..}] sea_do_attack
 

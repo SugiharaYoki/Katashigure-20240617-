@@ -57,6 +57,7 @@ execute if block 90146 155 149 lever[powered=false] \
  positioned 90149 155 145 unless block ~ ~ ~ air \
 run function skyblock:sea/e/ch6/mem_1
 
+execute if score SEA_ch6_event sea_4temp3 matches 1..290 if score SEA_ch6_event rng5 matches ..0 run function skyblock:sea/e/ch6/part1/event_try_golden_sword
 
 
 
