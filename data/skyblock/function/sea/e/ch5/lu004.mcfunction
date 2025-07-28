@@ -27,8 +27,8 @@ execute if score 10e959db-4b44-4cdd-b98c-350d3b454206 rng5 matches 3 positioned 
 execute if score 10e959db-4b44-4cdd-b98c-350d3b454206 rng5 matches 2 positioned 90147 131 36 if block ~ ~ ~ waxed_oxidized_copper_bulb[lit=true] run setblock ~ ~ ~ white_concrete
 execute if score 10e959db-4b44-4cdd-b98c-350d3b454206 rng5 matches 2 positioned 90147 131 36 if block ~ ~ ~ waxed_oxidized_copper_bulb[lit=false] run setblock ~ ~ ~ waxed_oxidized_copper_bulb[lit=true]
 execute if score 10e959db-4b44-4cdd-b98c-350d3b454206 rng5 matches 2 positioned 90147 131 36 if block ~ ~ ~ white_concrete run setblock ~ ~ ~ waxed_oxidized_copper_bulb[lit=false]
-execute if score 10e959db-4b44-4cdd-b98c-350d3b454206 rng5 matches 2 positioned 90149 131 36 if block ~ ~ ~ white_concrete run setblock ~ ~ ~ waxed_oxidized_copper_bulb[lit=false]
-execute if score 10e959db-4b44-4cdd-b98c-350d3b454206 rng5 matches 2 positioned 90150 131 36 if block ~ ~ ~ white_concrete run setblock ~ ~ ~ waxed_oxidized_copper_bulb[lit=false]
+execute if score 10e959db-4b44-4cdd-b98c-350d3b454206 rng5 matches 2 positioned 90149 131 36 run setblock ~ ~ ~ waxed_oxidized_copper_bulb[lit=false]
+execute if score 10e959db-4b44-4cdd-b98c-350d3b454206 rng5 matches 2 positioned 90150 131 36 run setblock ~ ~ ~ waxed_oxidized_copper_bulb[lit=false]
 
 execute if score 10e959db-4b44-4cdd-b98c-350d3b454206 rng5 matches 1 positioned 90149 131 36 if block ~ ~ ~ waxed_oxidized_copper_bulb[lit=true] run setblock ~ ~ ~ white_concrete
 execute if score 10e959db-4b44-4cdd-b98c-350d3b454206 rng5 matches 1 positioned 90149 131 36 if block ~ ~ ~ waxed_oxidized_copper_bulb[lit=false] run setblock ~ ~ ~ waxed_oxidized_copper_bulb[lit=true]
