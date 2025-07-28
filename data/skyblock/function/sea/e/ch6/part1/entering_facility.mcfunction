@@ -77,7 +77,7 @@ fill 90129 119 -1853 90129 124 -1857 minecraft:netherite_block
 fill 90125 119 -1853 90125 124 -1857 minecraft:netherite_block
 fill 90121 119 -1853 90121 124 -1857 minecraft:netherite_block
 
-
+setblock 90151 164 -1851 minecraft:furnace[facing=north]
 
 
 

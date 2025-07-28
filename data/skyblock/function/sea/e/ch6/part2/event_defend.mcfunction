@@ -163,12 +163,25 @@ execute if score SEA_ch6_event rng5 matches 9090 as @n[tag=SEAedwina] at @s run 
 execute if score SEA_ch6_event rng5 matches 9090 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“你可要做好准备，总共有三道合金门。我们无论如何也得撑住。”","color":"white","bold": false}]
 execute if score SEA_ch6_event rng5 matches 9107 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“不是、有三道门？这么重要的事情你现在才告诉我？！”","color":"white"}]
 
+execute if score SEA_ch6_event rng5 matches 9364 as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
+execute if score SEA_ch6_event rng5 matches 9364 as @n[tag=SEAedwina] at @s if entity @e[tag=SEAmob,distance=0..10] run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“门开了！！”","color":"white","bold": false}]
+execute if score SEA_ch6_event rng5 matches 9364 as @n[tag=SEAedwina] at @s unless entity @e[tag=SEAmob,distance=0..10] run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“这破门终于开了。”","color":"white","bold": false}]
+execute if score SEA_ch6_event rng5 matches 9379 as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
+execute if score SEA_ch6_event rng5 matches 9379 as @n[tag=SEAedwina] at @s if entity @e[tag=SEAmob,distance=0..10] run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“谢天谢地，这后面有器械式治疗仪，我们后退。”","color":"white","bold": false}]
+execute if score SEA_ch6_event rng5 matches 9379 as @n[tag=SEAedwina] at @s unless entity @e[tag=SEAmob,distance=0..10] run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“跟你说个好消息，这后面有器械式治疗仪，正好休整一下。”","color":"white","bold": false}]
 
 
-
-
-
-
+execute if score SEA_ch6_event rng5 matches 9460 as @n[tag=SEAedwina] at @s run effect give @s darkness 16 0 true
+execute if score SEA_ch6_event rng5 matches 9460 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"？？？：","color":"gray","bold": true},{"text":"\n“你根本不知道你给我们带来了多大的麻烦。”","color":"gray","bold": false}]
+execute if score SEA_ch6_event rng5 matches 9480 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"？？？：","color":"gray","bold": true},{"text":"\n“父母因为车祸去世？很抱歉听到这件事，节哀顺变。但那不一定是他们的报复，恐怕只是你过于敏感了。”","color":"gray","bold": false}]
+execute if score SEA_ch6_event rng5 matches 9500 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"？？？：","color":"gray","bold": true},{"text":"\n“未婚妻在小巷被人持刀捅死，连送医的机会都没有？而且所有的贵重物品都留在身上……”","color":"gray","bold": false}]
+execute if score SEA_ch6_event rng5 matches 9520 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"？？？：","color":"gray","bold": true},{"text":"\n“我们会派出专人在暗处保护你，请不要担心。”","color":"gray","bold": false}]
+execute if score SEA_ch6_event rng5 matches 9532 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“不要担心你妈逼啊！！我所有需要保护的人、我的未婚妻我的父母全都死了啊！！！”","color":"white"}]
+execute if score SEA_ch6_event rng5 matches 9540 as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
+execute if score SEA_ch6_event rng5 matches 9540 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“噢我的老天……你把我吓一跳。”","color":"white","bold": false}]
+execute if score SEA_ch6_event rng5 matches 9556 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“不……不好意思，我好像已经逐渐分不清现实和幻听了……”","color":"white"}]
+execute if score SEA_ch6_event rng5 matches 9572 as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
+execute if score SEA_ch6_event rng5 matches 9572 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“没事，有我在。如果你失去理智了，我会把你给硬拽回来。”","color":"white","bold": false}]
 
 
 
