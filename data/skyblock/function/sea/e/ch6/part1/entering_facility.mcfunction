@@ -64,6 +64,8 @@ item replace block 90149 133 -1884 container.13 with golden_carrot 5
 summon minecraft:interaction 90158 134.3 -1887 {CustomName:'[{"text":"器械式治疗仪"}]',Tags:["SEAaidbox"]}
 summon minecraft:interaction 90118 120.3 -1862 {CustomName:'[{"text":"器械式治疗仪"}]',Tags:["SEAaidbox"]}
 
+summon minecraft:interaction 90112 106.3 -1902 {CustomName:'[{"text":"多功能工作站"}]',Tags:["SEAcrafter","SEAcrafter_foodless","SEAcrafter21"]}
+summon minecraft:marker 90111 105 -1902 {Tags:["SEAcrafter_tp","SEAcrafter_tp21"]}
 
 
 execute store result score SEA_ch6_event rng10 if entity @e[tag=SEAedwina]
@@ -85,7 +87,8 @@ setblock 90151 164 -1851 minecraft:furnace[facing=north]
 
 
 
-
+setblock 90112 105 -1903 furnace[facing=west]
+setblock 90112 105 -1901 furnace[facing=west]
 
 
 
