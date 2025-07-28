@@ -1048,7 +1048,8 @@ setblock 90124 136 21 lever[facing=north]
 
 forceload remove 90141 -1888 90236 -1835
 
-
+fill 90107 105 36 90107 105 51 minecraft:waxed_copper_trapdoor[facing=east]
+fill 90104 105 36 90104 105 51 minecraft:waxed_copper_trapdoor[facing=west]
 
 
 
