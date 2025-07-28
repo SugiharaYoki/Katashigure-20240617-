@@ -6,8 +6,8 @@ execute if score SEA_ch6_event sea_4temp3 matches 1..2 as @a at @s if items enti
 execute if score SEA_ch6_event sea_4temp3 matches 1..2 as @a at @s if items entity @s weapon.mainhand golden_sword at @s positioned ^ ^0.4 ^3 if entity @e[tag=SEAfiona,distance=0..1.6] run scoreboard players set SEA_ch6_event sea_4temp3 200
 execute if score SEA_ch6_event sea_4temp3 matches 1..2 as @a at @s if items entity @s weapon.mainhand golden_sword at @s positioned ^ ^0.1 ^3 if entity @e[tag=SEAfiona,distance=0..1.6] run scoreboard players set SEA_ch6_event sea_4temp3 200
 
-execute if score SEA_ch6_event sea_4temp3 matches 3 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if score SEA_ch5_event_fiona_favor rng1 matches ..8 run tellraw @a[distance=0..50] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“我去，好厉害的剑。”","color":"white"}]
-execute if score SEA_ch6_event sea_4temp3 matches 3 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if score SEA_ch5_event_fiona_favor rng1 matches 9.. run tellraw @a[distance=0..50] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“哈哈，菲尔娜你看！好厉害的剑！”","color":"white"}]
+execute if score SEA_ch6_event sea_4temp3 matches 3 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if score SEA_ch5_event_fiona_favor rng1 matches ..8 run tellraw @a[distance=0..50] [{"selector":"@p[tag=SEAPT]","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“我去，好厉害的剑。”","color":"white"}]
+execute if score SEA_ch6_event sea_4temp3 matches 3 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if score SEA_ch5_event_fiona_favor rng1 matches 9.. run tellraw @a[distance=0..50] [{"selector":"@p[tag=SEAPT]","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“哈哈，菲尔娜你看！好厉害的剑！”","color":"white"}]
 
 execute if score SEA_ch6_event sea_4temp3 matches 17 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
 execute if score SEA_ch6_event sea_4temp3 matches 17 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if score SEA_ch5_event_fiona_favor rng1 matches ..5 run tellraw @a[distance=0..150] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“当心吸你寿命。”","color":"white","bold": false}]
@@ -18,8 +18,8 @@ execute if score SEA_ch6_event sea_4temp3 matches 17 as @n[tag=SEAfiona,x=90000,
 execute if score SEA_ch6_event sea_4temp3 matches 99 run scoreboard players set SEA_ch6_event sea_4temp3 300
 
 
-execute if score SEA_ch6_event sea_4temp3 matches 201 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if score SEA_ch5_event_fiona_favor rng1 matches ..8 run tellraw @a[distance=0..50] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“我去，好厉害的剑。”","color":"white"}]
-execute if score SEA_ch6_event sea_4temp3 matches 201 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if score SEA_ch5_event_fiona_favor rng1 matches 9.. run tellraw @a[distance=0..50] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“哈哈，菲尔娜你看！好厉害的剑！”","color":"white"}]
+execute if score SEA_ch6_event sea_4temp3 matches 201 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if score SEA_ch5_event_fiona_favor rng1 matches ..8 run tellraw @a[distance=0..50] [{"selector":"@p[tag=SEAPT]","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“我去，好厉害的剑。”","color":"white"}]
+execute if score SEA_ch6_event sea_4temp3 matches 201 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if score SEA_ch5_event_fiona_favor rng1 matches 9.. run tellraw @a[distance=0..50] [{"selector":"@p[tag=SEAPT]","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“哈哈，菲尔娜你看！好厉害的剑！”","color":"white"}]
 
 execute if score SEA_ch6_event sea_4temp3 matches 210 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
 execute if score SEA_ch6_event sea_4temp3 matches 210 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if score SEA_ch5_event_fiona_favor rng1 matches ..5 run tellraw @a[distance=0..150] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“操你妈。”","color":"white","bold": false}]
