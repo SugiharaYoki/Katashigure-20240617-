@@ -84,7 +84,15 @@ fill 90121 119 -1853 90121 124 -1857 minecraft:netherite_block
 setblock 90151 164 -1851 minecraft:furnace[facing=north]
 
 
+summon marker 90100 105 -1901 {Tags:["SEAmagma6"]}
+summon marker 90099 105 -1903 {Tags:["SEAmagma6"]}
+summon marker 90094 105 -1899 {Tags:["SEAmagma6"]}
+summon marker 90089 102 -1906 {Tags:["SEAmagma6"]}
+summon marker 90086 102 -1900 {Tags:["SEAmagma6"]}
 
+
+
+execute as @e[tag=SEAmagma6,type=marker] at @s if block ~ ~ ~ air run setblock ~ ~ ~ basalt
 
 
 setblock 90112 105 -1903 furnace[facing=west]

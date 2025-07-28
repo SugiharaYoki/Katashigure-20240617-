@@ -159,6 +159,17 @@ execute if score SEA_ch6_event rng5 matches 9355 positioned 90139 125 -1856 run 
 execute if score SEA_ch6_event rng5 matches 9390 positioned 90139 125 -1856 run function skyblock:sea/m/zombie_knight
 execute if score SEA_ch6_event rng5 matches 9390 positioned 90139 125 -1854 run function skyblock:sea/m/zombie_knight
 
+#后续地图区域
+execute if score SEA_ch6_event rng5 matches 9390 positioned 90090 102 -1892 run function skyblock:sea/m/silverfish_big
+execute if score SEA_ch6_event rng5 matches 9390 positioned 90090 102 -1892 run function skyblock:sea/m/silverfish_big
+execute if score SEA_ch6_event rng5 matches 9390 positioned 90090 102 -1892 run function skyblock:sea/m/silverfish
+execute if score SEA_ch6_event rng5 matches 9390 positioned 90090 102 -1892 run function skyblock:sea/m/silverfish
+execute if score SEA_ch6_event rng5 matches 9390 positioned 90090 102 -1892 run function skyblock:sea/m/silverfish
+execute if score SEA_ch6_event rng5 matches 9390 positioned 90090 102 -1892 run function skyblock:sea/m/silverfish
+execute if score SEA_ch6_event rng5 matches 9390 positioned 90090 102 -1892 run function skyblock:sea/m/drowned_maintenance
+execute if score SEA_ch6_event rng5 matches 9390 positioned 90090 102 -1892 run function skyblock:sea/m/drowned_maintenance
+
+
 execute if score SEA_ch6_event rng5 matches 9090 as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
 execute if score SEA_ch6_event rng5 matches 9090 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“你可要做好准备，总共有三道合金门。我们无论如何也得撑住。”","color":"white","bold": false}]
 execute if score SEA_ch6_event rng5 matches 9107 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“不是、有三道门？这么重要的事情你现在才告诉我？！”","color":"white"}]
