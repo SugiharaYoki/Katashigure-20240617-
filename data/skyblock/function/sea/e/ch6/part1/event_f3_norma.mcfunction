@@ -89,12 +89,18 @@ execute if score SEA_ch6_event rng5 matches 1156 as @a[tag=SEAPT] run tellraw @a
 execute if score SEA_ch6_event rng5 matches 1173 as @a[tag=SEAPT] run tellraw @a[distance=0..150] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“那我们该怎么办？总不见得无处可去吧？”","color":"white"}]
 
 execute if score SEA_ch6_event rng5 matches 1190 as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
-execute if score SEA_ch6_event rng5 matches 1190 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“最危险的地方就是最安全的地方。跟我一起回水下研究机构。”","color":"white","bold": false}]
+execute if score SEA_ch6_event rng5 matches 1190 as @n[tag=SEAedwina] at @s if items entity @a[tag=SEAPT] weapon.mainhand golden_sword run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“都已经把天使长拉斐尔的剑拿在手里了，还问我这种问题？跟我一起回水下研究机构。”","color":"white","bold": false}]
+execute if score SEA_ch6_event rng5 matches 1190 as @n[tag=SEAedwina] at @s unless items entity @a[tag=SEAPT] weapon.mainhand golden_sword run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“最危险的地方就是最安全的地方。跟我一起回水下研究机构。”","color":"white","bold": false}]
+
+execute if score SEA_ch6_event rng5 matches 1200 as @a[tag=SEAPT] if items entity @a[tag=SEAPT] weapon.mainhand golden_sword run tellraw @a[distance=0..150] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“你先等等、拉斐尔？什么天使长？你在说什么？！”","color":"white"}]
+execute if score SEA_ch6_event rng5 matches 1215 as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
+execute if score SEA_ch6_event rng5 matches 1215 as @n[tag=SEAedwina] at @s if items entity @a[tag=SEAPT] weapon.mainhand golden_sword run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“不知道就别问了，现在没空跟你解释这些！总之往水下去，路线你肯定很熟悉了吧？”","color":"white","bold": false}]
+
 
 execute if score SEA_ch6_event rng5 matches 1112 run tag @n[tag=SEAedwina] add SEAedwina_attackable
 #90138 133 143
 
-execute if score SEA_ch6_event rng5 matches 1200..1300 run scoreboard players set SEA_ch6_event rng5 1200
+execute if score SEA_ch6_event rng5 matches 1280..1300 run scoreboard players set SEA_ch6_event rng5 1280
 execute if score SEA_ch6_event rng5 matches 1100..1300 as @a[x=90138,y=133,z=143,dx=20,dy=4,dz=20,tag=SEAPT] at @s run scoreboard players set SEA_ch6_event rng5 1301
 
 execute if score SEA_ch6_event rng5 matches 1302 as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
