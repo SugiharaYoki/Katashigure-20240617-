@@ -1043,7 +1043,8 @@ item replace block 90128 167 147 container.14 with vex_armor_trim_smithing_templ
 
 setblock 90120 167 141 minecraft:sculk_sensor
 
-
+setblock 90124 136 21 air
+setblock 90124 136 21 lever[facing=north]
 
 forceload remove 90141 -1888 90236 -1835
 
