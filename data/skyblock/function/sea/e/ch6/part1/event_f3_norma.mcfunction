@@ -94,7 +94,7 @@ execute if score SEA_ch6_event rng5 matches 1190 as @n[tag=SEAedwina] at @s unle
 
 execute if score SEA_ch6_event rng5 matches 1200 as @a[tag=SEAPT] if items entity @a[tag=SEAPT] weapon.mainhand golden_sword run tellraw @a[distance=0..150] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“你先等等、拉斐尔？什么天使长？你在说什么？！”","color":"white"}]
 execute if score SEA_ch6_event rng5 matches 1215 as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
-execute if score SEA_ch6_event rng5 matches 1215 as @n[tag=SEAedwina] at @s if items entity @a[tag=SEAPT] weapon.mainhand golden_sword run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“不知道就别问了，现在没空跟你解释这些！总之往水下去，路线你肯定很熟悉了吧？”","color":"white","bold": false}]
+execute if score SEA_ch6_event rng5 matches 1215 as @n[tag=SEAedwina] at @s if items entity @a[tag=SEAPT] weapon.mainhand golden_sword run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“不知道就别问了，现在没空跟你解释这些！总之往水下去，路线很熟悉了吧？”","color":"white","bold": false}]
 
 
 execute if score SEA_ch6_event rng5 matches 1112 run tag @n[tag=SEAedwina] add SEAedwina_attackable
