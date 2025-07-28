@@ -1034,6 +1034,7 @@ item replace block 90148 171 -1874 container.13 with emerald 20
 
 #通往圣剑
 fill 90126 166 142 90126 164 142 minecraft:mangrove_leaves[persistent=true]
+fill 90127 164 142 90127 163 142 minecraft:mangrove_leaves[persistent=true]
 setblock 90124 167 146 minecraft:redstone_block
 setblock 90124 167 146 minecraft:air
 
