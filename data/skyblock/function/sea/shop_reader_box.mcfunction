@@ -13,7 +13,7 @@ execute if items entity @a[tag=SEAPT] container.* crossbow run item replace bloc
 execute if items entity @a[tag=SEAPT] container.* bow run item replace block ~ ~ ~ container.1 with arrow[custom_data={"SEAcrafterbox":true},custom_name='{"text":"制作 箭矢×8","italic":false,"color":"green"}',lore=['{"text":"获得8根箭矢。","color":"white","italic":false}','{"text":"消耗：2 燧石","color":"red","italic":true}']]
 
 execute if items entity @a[tag=SEAPT] container.* *[custom_data={"sea_t_shotgun1":true}] run item replace block ~ ~ ~ container.5 with firework_star[custom_data={"SEAcrafterbox":true},custom_name='{"text":"制作 燃爆剂×5","italic":false,"color":"green"}',lore=['{"text":"获得5份燃爆剂，用于喷火器的霰爆攻击。","color":"white","italic":false}','{"text":"消耗：2 火药","color":"red","italic":true}']]
-execute if items entity @a[tag=SEAPT] container.* gunpowder run item replace block ~ ~ ~ container.4 with fire_charge[custom_data={"SEAcrafterbox":true},custom_name='{"text":"制作 定时炸弹×2","italic":false,"color":"green"}',lore=['{"text":"获得3枚定时炸弹。","color":"white","italic":false}','{"text":"消耗：3 火药","color":"red","italic":true}']]
+execute if items entity @a[tag=SEAPT] container.* gunpowder run item replace block ~ ~ ~ container.4 with fire_charge[custom_data={"SEAcrafterbox":true},custom_name='{"text":"制作 定时炸弹×2","italic":false,"color":"green"}',lore=['{"text":"获得2枚定时炸弹。","color":"white","italic":false}','{"text":"消耗：3 火药","color":"red","italic":true}']]
 
 
 item replace block ~ ~ ~ container.6 with barrier[custom_data={"SEAcrafterbox":true}]

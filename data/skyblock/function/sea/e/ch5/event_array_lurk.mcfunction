@@ -185,6 +185,7 @@ execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 5144 as @n[t
 execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 5144 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s unless entity @a[tag=SEAPT,scores={SEAPT_member=2}] run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“你嘴真欠啊，别再说了。”","color":"white","bold": false}]
 
 execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 5050 run fill 90134 130 58 90134 130 59 minecraft:heavy_weighted_pressure_plate
+execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 5050 run fill 90136 139 49 90137 137 49 minecraft:air
 execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 5050 positioned 90134 130 59.0 run playsound block.note_block.bell block @a ~ ~ ~ 1 0.8
 execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 5050 positioned 90150 130 50 run function skyblock:sea/m/unique/npc_iscariot
 execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 5050 positioned 90149 144 56 run function skyblock:sea/m/unique/npc_jones
@@ -200,6 +201,7 @@ execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 5050 if bloc
 execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 5050 run fill 90142 132 46 90142 130 46 air
 execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 5050 run fill 90117 131 68 90121 131 68 air
 execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 5050 run setblock 90125 129 29 minecraft:heavy_weighted_pressure_plate
+execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 5050 run setblock 90136 129 39 minecraft:heavy_weighted_pressure_plate
 
 execute as @e[tag=SEAmob_surrended,x=90100,y=100,z=100,distance=0..200,type=#illager,limit=3,sort=random] at @s as @n[tag=SEAmob,tag=!SEAnpc,type=!#illager,distance=0..2.9] at @s run function skyblock:sea/e/ch5/event_array_lurk_surrendedattack
 

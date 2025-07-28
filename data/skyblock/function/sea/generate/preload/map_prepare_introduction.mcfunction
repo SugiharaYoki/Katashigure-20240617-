@@ -122,7 +122,7 @@ setblock 90074 103 137 air
 setblock 90062 103 135 air
 execute as @a[tag=SEAPT] at @s run function skyblock:sea/generate/preload/map_prepare_ch1_player
 
-setblock 90077 105 141 air
+setblock 90081 101 137 air
 
 gamemode adventure @a[tag=SEAPT]
 setblock 90077 103 146 barrel[facing=up]
@@ -1032,15 +1032,19 @@ setblock 90148 171 -1874 chest[facing=west]
 item replace block 90148 171 -1874 container.13 with emerald 20
 #setblock 90169 172 -1874 minecraft:waxed_copper_bulb[lit=false]
 
+#通往圣剑
+fill 90126 166 142 90126 164 142 minecraft:mangrove_leaves[persistent=true]
+setblock 90124 167 146 minecraft:redstone_block
+setblock 90124 167 146 minecraft:air
 
+setblock 90128 167 147 chest[facing=west]
+item replace block 90128 167 147 container.12 with wild_armor_trim_smithing_template 2
+item replace block 90128 167 147 container.14 with vex_armor_trim_smithing_template 2
 
+setblock 90120 167 141 minecraft:sculk_sensor
 
-
-
-
-
-
-
+setblock 90124 136 21 air
+setblock 90124 136 21 lever[facing=north]
 
 forceload remove 90141 -1888 90236 -1835
 

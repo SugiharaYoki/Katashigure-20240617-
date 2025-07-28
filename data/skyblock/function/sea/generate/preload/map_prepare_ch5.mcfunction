@@ -47,7 +47,8 @@ setblock 90135 146 120 minecraft:spore_blossom
 
 fill 90105 104 52 90106 101 52 minecraft:air
 
-
+#
+fill 90136 139 49 90137 137 49 minecraft:iron_bars
 
 
 
@@ -581,6 +582,7 @@ setblock 90145 144 57 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery
 fill 90142 132 46 90142 130 46 iron_bars
 
 setblock 90125 129 29 minecraft:air
+setblock 90136 129 39 minecraft:air
 
 
 setblock 90128 131 18 chest[facing=west]
@@ -617,4 +619,18 @@ clone 90102 -60 172 90113 -51 187 90082 124 152
 fill 90145 120 182 90134 110 192 air
 
 clone 90134 -50 98 90142 -42 102 90134 100 98
+
+fill 90134 131 34 90134 130 31 lever[facing=east,powered=false]
+fill 90138 129 32 90138 130 33 iron_bars
+
+fill 90140 131 30 90142 130 30 lever[facing=south]
+fill 90142 131 35 90140 130 35 lever[facing=north]
+
+fill 90150 131 36 90146 131 36 minecraft:waxed_oxidized_copper_bulb[lit=false]
+fill 90147 131 29 90149 129 29 minecraft:deepslate_tiles
+
+fill 90153 129 25 90153 132 28 lever[facing=west,powered=false] replace lever
+setblock 90152 129 30 chest[facing=north]
+
+
 

@@ -72,6 +72,8 @@ execute if items entity @s weapon.offhand *[custom_data={skywar_ishtar_4:1}] as 
 execute if items entity @s[scores={Skywar_ishtar_usehorn=1..}] container.* *[custom_data={skywar_ishtar_21:1}] unless items entity @s weapon.offhand *[custom_data={skywar_ishtar_21:1}] run function skyblock:pvp/skywar/bless/skywar_ishtar_core21
 execute if entity @s[scores={Skywar_ishtar_usehorn=1..}] if items entity @s weapon.offhand *[custom_data={skywar_ishtar_21:1}] at @s run summon marker ~ ~ ~ {Tags:["If_Bless21b"]}
 
+execute if items entity @s[scores={Skywar_ishtar_usehorn=1..}] container.* *[custom_data={skywar_ishtar_36:1}] run function skyblock:pvp/skywar/bless/skywar_ishtar_core36
+
 execute if items entity @s[scores={Skywar_ishtar_usehorn=1..}] container.* *[custom_data={skywar_ishtar_22:1}] run function skyblock:pvp/skywar/bless/skywar_ishtar_core22
 
 execute if items entity @s container.* *[custom_data={skywar_ishtar_23:1}] run function skyblock:pvp/skywar/bless/skywar_ishtar_core23

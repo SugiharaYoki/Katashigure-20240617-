@@ -91,6 +91,10 @@ execute positioned 90145 140 120 if entity @a[distance=..6.2,limit=1] run item r
 
 execute positioned 90140 104 023 if entity @a[distance=..6.2,limit=1] run item replace block ~ ~ ~ container.13 with ominous_trial_key[custom_name='{"text":"厄珀娅之钥","italic":true,"color":"dark_red","italic":false}',custom_data={"sea_key04":true}]
 
+item replace block 90152 129 30 container.13 with snout_armor_trim_smithing_template[custom_name='{"text":"透光吸附 B","italic":true,"color":"light_purple","italic":false}',lore=['{"text":"光谱 I 光棱箭的转换速度加快","color":"white","italic":false}'],custom_data={sea_t_spectral_load2:true}]
+
+
+
 #法莫洛斯：医务部门 总管 - 死亡：被感染成为腐尸，第一章结尾被主角杀死 - 路加福音
 #玛瑞莲：机械研发部门 贝塔小组 组长 - 伪福音犹大福音
 #菲尔娜：舵长的女儿

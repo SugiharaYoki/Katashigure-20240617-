@@ -102,6 +102,7 @@ execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 561 as @n[ta
 
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 580 positioned 90100 125 37 run playsound entity.evoker.ambient neutral @a ~ ~ ~ 1 1
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 580 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"琼斯：","color":"yellow","bold": true},{"text":"\n“先生，神与天使都是真实存在的。\n可能在你听来这些都是骇人听闻的诳语，可这世界的根基切实地建立于生命能源‘以太’之上。\n地球由风、地、水、火四大基础元素所构成，但生命之所以诞生还是归功于‘以太’元素：日、月、星。\n没有这些元素，任何生命都不会诞生，任何灵魂都不会被创造。”","color":"white","bold": false}]
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 580 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run scoreboard players add SEA_ch5_event_fiona_favor rng1 1
 
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 612 positioned 90100 125 37 run playsound entity.evoker.ambient neutral @a ~ ~ ~ 1 1
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 612 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"琼斯：","color":"yellow","bold": true},{"text":"\n“可是……神已经有太久没有回应任何人了啊。就连他的使者也不再光临人世。\n太平洋上空的飘浮城市中枢之城虽然被各国合作成功建立起来，可我们最终迎来了什么？更接近上帝了吗？并没有。\n我们迫切地想要寻求背后的原因啊，我们想要找到神的使者，进行一场对话。”","color":"white","bold": false}]

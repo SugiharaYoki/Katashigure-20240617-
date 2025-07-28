@@ -9,4 +9,4 @@ playsound minecraft:ambient.warped_forest.additions ambient @a ~ ~ ~ 13 0.8
 playsound minecraft:ambient.warped_forest.additions ambient @a ~ ~ ~ 13 0.8
 playsound minecraft:ambient.warped_forest.additions ambient @a ~ ~ ~ 13 0.8
 
-
+setblock 90132 100 27 air

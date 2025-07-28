@@ -325,3 +325,52 @@ tag @s remove sea_t_parry1
 bossbar set sea:ch5_lurkbar players @a[tag=SEAPT]
 
 
+function skyblock:city/id/read
+
+execute as @n[tag=id_data_reading,type=marker] at @s run tp @s ~5 ~ ~
+
+execute if entity @s[tag=seaPerm000] at @n[tag=id_data_reading,type=marker] run item replace block ~ ~ ~ container.0 with green_wool
+execute if entity @s[tag=seaPerm001] at @n[tag=id_data_reading,type=marker] run item replace block ~ ~ ~ container.1 with green_wool
+execute if entity @s[tag=seaPerm002] at @n[tag=id_data_reading,type=marker] run item replace block ~ ~ ~ container.2 with green_wool
+execute if entity @s[tag=seaPerm003] at @n[tag=id_data_reading,type=marker] run item replace block ~ ~ ~ container.3 with green_wool
+execute if entity @s[tag=seaPerm004] at @n[tag=id_data_reading,type=marker] run item replace block ~ ~ ~ container.4 with green_wool
+execute if entity @s[tag=seaPerm005] at @n[tag=id_data_reading,type=marker] run item replace block ~ ~ ~ container.5 with green_wool
+execute if entity @s[tag=seaPerm006] at @n[tag=id_data_reading,type=marker] run item replace block ~ ~ ~ container.6 with green_wool
+execute if entity @s[tag=seaPerm007] at @n[tag=id_data_reading,type=marker] run item replace block ~ ~ ~ container.7 with green_wool
+execute if entity @s[tag=seaPerm008] at @n[tag=id_data_reading,type=marker] run item replace block ~ ~ ~ container.8 with green_wool
+execute if entity @s[tag=seaPerm009] at @n[tag=id_data_reading,type=marker] run item replace block ~ ~ ~ container.9 with green_wool
+execute if entity @s[tag=seaPerm010] at @n[tag=id_data_reading,type=marker] run item replace block ~ ~ ~ container.10 with green_wool
+execute if entity @s[tag=seaPerm011] at @n[tag=id_data_reading,type=marker] run item replace block ~ ~ ~ container.11 with green_wool
+execute if entity @s[tag=seaPerm012] at @n[tag=id_data_reading,type=marker] run item replace block ~ ~ ~ container.12 with green_wool
+execute if entity @s[tag=seaPerm013] at @n[tag=id_data_reading,type=marker] run item replace block ~ ~ ~ container.13 with green_wool
+execute if entity @s[tag=seaPerm014] at @n[tag=id_data_reading,type=marker] run item replace block ~ ~ ~ container.14 with green_wool
+execute if entity @s[tag=seaPerm015] at @n[tag=id_data_reading,type=marker] run item replace block ~ ~ ~ container.15 with green_wool
+
+execute if entity @s[tag=sea_t_pounce1] at @n[tag=id_data_reading,type=marker] run item replace block ~ ~ ~ container.21 with green_wool
+execute if entity @s[tag=sea_t_sprint] at @n[tag=id_data_reading,type=marker] run item replace block ~ ~ ~ container.22 with green_wool
+execute if entity @s[tag=sea_t_spectral1] at @n[tag=id_data_reading,type=marker] run item replace block ~ ~ ~ container.23 with green_wool
+execute if entity @s[tag=sea_t_spectral2] at @n[tag=id_data_reading,type=marker] run item replace block ~ ~ ~ container.24 with green_wool
+
+tag @s remove seaPerm000
+tag @s remove seaPerm001
+tag @s remove seaPerm002
+tag @s remove seaPerm003
+tag @s remove seaPerm004
+tag @s remove seaPerm005
+tag @s remove seaPerm006
+tag @s remove seaPerm007
+tag @s remove seaPerm008
+tag @s remove seaPerm009
+tag @s remove seaPerm010
+tag @s remove seaPerm011
+tag @s remove seaPerm012
+tag @s remove seaPerm013
+tag @s remove seaPerm014
+tag @s remove seaPerm015
+tag @s remove sea_t_pounce1
+tag @s remove sea_t_sprint
+tag @s remove sea_t_spectral1
+tag @s remove sea_t_spectral2
+
+function skyblock:city/id/read_finish
+

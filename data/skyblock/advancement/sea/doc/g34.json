@@ -1,0 +1,28 @@
+{
+    "display": {
+        "title": {
+            "text": "明圣示现",
+            "color": "gold",
+            "bold": true,
+            "italic": false
+        },
+        "description": {
+            "text": "完成通讯平台的大型连续解谜。\n“无论多么曲折的道路都必定会有正确的终点，因为你选择的是命定之途。”",
+            "color": "gray",
+            "bold": false
+        },
+        "icon": {
+            "id": "minecraft:golden_hoe"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "sea": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:sea/doc/g28"
+}

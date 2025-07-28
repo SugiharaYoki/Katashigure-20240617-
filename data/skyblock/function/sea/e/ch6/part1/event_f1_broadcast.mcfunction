@@ -29,4 +29,9 @@ execute if score SEA_ch6_event rng4 matches 168 if score SEA_ch5_event_fiona_fav
 execute if score SEA_ch6_event rng4 matches 168 if score SEA_ch5_event_fiona_favor rng1 matches 18.. as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if entity @a[tag=SEAPT,scores={SEAPT_member=2}] run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“……唉，变得更加严重了吗。”","color":"white","bold": false}]
 
 
+
+execute if score SEA_ch6_event rng4 matches 1168 as @n[tag=SEAfiona] at @s run tellraw @a[distance=0..150] [{"text":"？？？：","color":"gray","bold": true},{"text":"\n“你根本不知道你给我们带来了多大的麻烦。”","color":"gray","bold": false}]
+execute if score SEA_ch6_event rng4 matches 2168 as @n[tag=SEAfiona] at @s run tellraw @a[distance=0..150] [{"text":"？？？：","color":"gray","bold": true},{"text":"\n“你根本不知道你给我们带来了多大的麻烦。”","color":"gray","bold": false}]
+execute if score SEA_ch6_event rng5 matches 2208 as @n[tag=SEAfiona] at @s run tellraw @a[distance=0..150] [{"text":"？？？：","color":"gray","bold": true},{"text":"\n“我们必须开除你，这是对你的保护。”","color":"gray","bold": false}]
+
 scoreboard players add SEA_ch6_event rng4 1

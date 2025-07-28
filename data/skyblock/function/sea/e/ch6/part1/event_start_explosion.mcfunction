@@ -45,3 +45,4 @@ execute if score SEA_ch5_event_boss5 rng9 matches 333 as @n[tag=SEAfiona,x=90000
 execute if score SEA_ch5_event_boss5 rng9 matches 333 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if score SEA_ch5_event_fiona_favor rng1 matches 10.. run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“不对……那里面存的东西不太对劲。记得离爆炸产生的烟尘远一点。”","color":"white","bold": false}]
 
 
+execute if score SEA_ch5_event_boss5 rng9 matches 230 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..150] [{"text":"？？？：","color":"gray","bold": true},{"text":"\n“你根本不知道你给我们带来了多大的麻烦。”","color":"gray","bold": false}]
