@@ -21,6 +21,8 @@ execute as @s[scores={Azr_SK5=3..}] run function skyblock:azr/shop/purchase/cate
 
 execute if score @s Azr_Shop matches 8431522..8431546 run function skyblock:azr/shop/purchase/ramiel
 
+execute if score @s Azr_Shop matches 8431611..8431722 run function skyblock:azr/shop/purchase/nether
+
 execute if score tempPlayerShopSuccess Azr_system matches 0 run tellraw @s [{"text":"生命手册没有回应，素材不符！","color":"red"}]
 scoreboard players reset tempPlayerShopSuccess Azr_system
 

@@ -251,7 +251,7 @@ execute if score playerCount Azr_system matches 1.. run item replace block -7975
 execute if score playerCount Azr_system matches 3.. run item replace block -79754 37 -467 container.11 with minecraft:lapis_lazuli 4
 execute if score playerCount Azr_system matches 5.. run item replace block -79754 37 -467 container.15 with minecraft:lapis_lazuli 6
 
-summon piglin -79757 29 -465 {Invulnerable:1b,IsImmuneToZombification:1b,PersistenceRequired:1b,Tags:["Immune","AzrielTrader4A"],DeathLootTable:"skyblock:azriel_piglin_resident_tier1",Health:20.0f,CustomName:'"猪灵工匠"',CanPickUpLoot:0b,IsBaby:0b,HandItems:[{},{}],HandDropChances:[0.05f,0.05f],ArmorItems:[{},{},{count:1,id:"iron_chestplate",components:{custom_name:'{"text":"铁胸甲","italic":false,"color":"white"}'}},{}],ArmorDropChances:[0.01f,0.01f,0.01f,0.01f],attributes:[{id:"generic.max_health",base:20.0d},{id:"generic.attack_damage",base:0.0d},{id:"generic.follow_range",base:0.0d}]}
+summon piglin -79757 29 -465 {Invulnerable:1b,IsImmuneToZombification:1b,PersistenceRequired:1b,Tags:["Immune","AzrielTrader4A","AzrielNPC"],DeathLootTable:"skyblock:azriel_piglin_resident_tier1",Health:20.0f,CustomName:'"猪灵工匠"',CanPickUpLoot:0b,IsBaby:0b,HandItems:[{},{}],HandDropChances:[0.05f,0.05f],ArmorItems:[{},{},{count:1,id:"iron_chestplate",components:{custom_name:'{"text":"铁胸甲","italic":false,"color":"white"}'}},{}],ArmorDropChances:[0.01f,0.01f,0.01f,0.01f],NoAI:1b}
 
 #function skyblock:tool_rng
 #execute if entity @e[tag=sc,limit=1,scores={SeGa_StandLast=143}] rng3 matches 1 run
