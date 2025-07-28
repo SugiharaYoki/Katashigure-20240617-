@@ -274,7 +274,7 @@ execute if block 90134 131 34 lever[powered=false] \
  if block 90134 130 32 lever[powered=true] \
  if block 90134 130 31 lever[powered=false] \
  positioned 90138 129 32 unless block ~ ~ ~ air \
-run function skyblock:sea/e/ch5/mem_6
+run function skyblock:sea/e/ch5/compare_6
 
 #工程区密码7
 execute if block 90140 131 30 lever[powered=false] \
@@ -290,7 +290,23 @@ execute if block 90140 131 30 lever[powered=false] \
  if block 90141 130 35 lever[powered=false] \
  if block 90142 130 35 lever[powered=true] \
  positioned 90144 129 32 unless block ~ ~ ~ air \
-run function skyblock:sea/e/ch5/mem_7
+run function skyblock:sea/e/ch5/compare_7
 
+#记忆密码5
+execute if block 90153 132 25 lever[powered=false] \
+ if block 90153 132 26 lever[powered=true] \
+ if block 90153 132 28 lever[powered=false] \
+ if block 90153 131 26 lever[powered=true] \
+ if block 90153 131 27 lever[powered=true] \
+ if block 90153 131 28 lever[powered=false] \
+ if block 90153 130 25 lever[powered=true] \
+ if block 90153 130 27 lever[powered=false] \
+ if block 90153 130 28 lever[powered=true] \
+ if block 90153 129 25 lever[powered=false] \
+ if block 90153 129 26 lever[powered=false] \
+ if block 90153 129 27 lever[powered=true] \
+ if block 90153 129 28 lever[powered=false] \
+ positioned 90152 130 29 unless block ~ ~ ~ air \
+run function skyblock:sea/e/ch5/mem_6
 
 

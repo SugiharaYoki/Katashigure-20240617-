@@ -629,5 +629,8 @@ fill 90142 131 35 90140 130 35 lever[facing=north]
 fill 90150 131 36 90146 131 36 minecraft:waxed_oxidized_copper_bulb[lit=false]
 fill 90147 131 29 90149 129 29 minecraft:deepslate_tiles
 
+fill 90153 129 25 90153 132 28 lever[facing=west,powered=false] replace lever
+setblock 90152 129 30 chest[facing=north]
+
 
 
