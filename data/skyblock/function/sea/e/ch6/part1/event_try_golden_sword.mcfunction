@@ -1,10 +1,10 @@
 scoreboard players add SEA_ch6_event sea_4temp3 1
 
-execute if score SEA_ch6_event sea_4temp3 matches 2 unless entity @e[tag=!SEAfiona,type=!player,distance=..7] run scoreboard players set SEA_ch6_event sea_4temp3 200
-execute if score SEA_ch6_event sea_4temp3 matches 2 at @s positioned ^ ^0.2 ^1 if entity @e[tag=SEAfiona,distance=0..1.6] run scoreboard players set SEA_ch6_event sea_4temp3 200
-execute if score SEA_ch6_event sea_4temp3 matches 2 at @s positioned ^ ^0.3 ^2 if entity @e[tag=SEAfiona,distance=0..1.6] run scoreboard players set SEA_ch6_event sea_4temp3 200
-execute if score SEA_ch6_event sea_4temp3 matches 2 at @s positioned ^ ^0.4 ^3 if entity @e[tag=SEAfiona,distance=0..1.6] run scoreboard players set SEA_ch6_event sea_4temp3 200
-execute if score SEA_ch6_event sea_4temp3 matches 2 at @s positioned ^ ^0.1 ^3 if entity @e[tag=SEAfiona,distance=0..1.6] run scoreboard players set SEA_ch6_event sea_4temp3 200
+execute if score SEA_ch6_event sea_4temp3 matches 1..2 as @a at @s if items entity @s weapon.mainhand golden_sword unless entity @e[tag=!SEAfiona,type=!player,distance=..7] run scoreboard players set SEA_ch6_event sea_4temp3 200
+execute if score SEA_ch6_event sea_4temp3 matches 1..2 as @a at @s if items entity @s weapon.mainhand golden_sword at @s positioned ^ ^0.2 ^1 if entity @e[tag=SEAfiona,distance=0..1.6] run scoreboard players set SEA_ch6_event sea_4temp3 200
+execute if score SEA_ch6_event sea_4temp3 matches 1..2 as @a at @s if items entity @s weapon.mainhand golden_sword at @s positioned ^ ^0.3 ^2 if entity @e[tag=SEAfiona,distance=0..1.6] run scoreboard players set SEA_ch6_event sea_4temp3 200
+execute if score SEA_ch6_event sea_4temp3 matches 1..2 as @a at @s if items entity @s weapon.mainhand golden_sword at @s positioned ^ ^0.4 ^3 if entity @e[tag=SEAfiona,distance=0..1.6] run scoreboard players set SEA_ch6_event sea_4temp3 200
+execute if score SEA_ch6_event sea_4temp3 matches 1..2 as @a at @s if items entity @s weapon.mainhand golden_sword at @s positioned ^ ^0.1 ^3 if entity @e[tag=SEAfiona,distance=0..1.6] run scoreboard players set SEA_ch6_event sea_4temp3 200
 
 execute if score SEA_ch6_event sea_4temp3 matches 3 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if score SEA_ch5_event_fiona_favor rng1 matches ..8 run tellraw @a[distance=0..50] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“我去，好厉害的剑。”","color":"white"}]
 execute if score SEA_ch6_event sea_4temp3 matches 3 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if score SEA_ch5_event_fiona_favor rng1 matches 9.. run tellraw @a[distance=0..50] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“哈哈，菲尔娜你看！好厉害的剑！”","color":"white"}]
