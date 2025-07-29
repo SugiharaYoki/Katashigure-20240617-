@@ -8,7 +8,7 @@ execute if score SEA_ch6_event rng5 matches 9015 as @n[tag=SEAedwina] at @s run 
 execute if score SEA_ch6_event rng5 matches 9015 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“我开门了。”","color":"white","bold": false}]
 
 execute if score SEA_ch6_event rng5 matches 9050 as @p[tag=SEAPT] at @s as @a[distance=0..150] at @s run stopsound @s music
-execute if score SEA_ch6_event rng5 matches 9050 as @p[tag=SEAPT] at @s as @a[distance=0..150] at @s run playsound garden2.bgm.roaring music @s ~ ~ ~ 1.0 1.0
+execute if score SEA_ch6_event rng5 matches 9002 as @p[tag=SEAPT] at @s as @a[distance=0..150] at @s run playsound garden2.bgm.roaring music @s ~ ~ ~ 1.0 1.0
 
 execute if score SEA_ch6_event rng5 matches 9020 run playsound minecraft:ambient.cave ambient @a 90130.00 129.32 -1854.50 30 0.8
 execute if score SEA_ch6_event rng5 matches 9020 run playsound minecraft:ambient.cave ambient @a 90130.00 129.32 -1854.50 30 0.8
