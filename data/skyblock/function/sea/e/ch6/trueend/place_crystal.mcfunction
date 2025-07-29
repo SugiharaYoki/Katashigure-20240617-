@@ -33,7 +33,7 @@ execute if score SEA_ch6_event sea_4temp1 matches 85 as @n[tag=SEAfiona,x=90000,
 
 
 execute if score SEA_ch6_event sea_4temp1 matches 100..190 run scoreboard players set SEA_ch6_event sea_4temp1 100
-execute if score SEA_ch6_event sea_4temp1 matches 100.. as @a at @s if block 90120 167 141 minecraft:calibrated_sculk_sensor positioned over world_surface if entity @s[distance=0..1.5] run scoreboard players add SEA_ch6_event sea_4temp2 1
+execute if score SEA_ch6_event sea_4temp1 matches 100.. as @a[tag=SEAPT,limit=1] at @s if block 90120 167 141 minecraft:calibrated_sculk_sensor positioned over world_surface if entity @s[distance=0..1.5] run scoreboard players add SEA_ch6_event sea_4temp2 1
 
 execute if score SEA_ch6_event sea_4temp2 matches 40 run scoreboard players set SEA_ch6_event sea_4temp1 200
 
