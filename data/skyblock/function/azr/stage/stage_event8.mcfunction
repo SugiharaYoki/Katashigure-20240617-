@@ -132,7 +132,7 @@ execute if score stage_main_thread AzrTimerStack matches 3365 run data modify en
 execute if score stage_main_thread AzrTimerStack matches 3365 run data modify entity @e[tag=e8001,tag=AzrielFriendly,type=wolf,limit=1] Owner set from entity @r[tag=azrPlayer] UUID
 execute if score stage_main_thread AzrTimerStack matches 3365 run data modify entity @e[tag=e8002,tag=AzrielFriendly,type=wolf,limit=1] CollarColor set value 9b
 execute if score stage_main_thread AzrTimerStack matches 3365 run data modify entity @e[tag=e8001,tag=AzrielFriendly,type=wolf,limit=1] CollarColor set value 9b
-execute if score stage_main_thread AzrTimerStack matches 3364 as @a[tag=azrPlayer] at @s run playsound minecraft:vol2.caligula master @s ~ ~ ~ 0.56
+execute if score stage_main_thread AzrTimerStack matches 3364 as @a[tag=azrPlayer] at @s run playsound minecraft:caligula master @s ~ ~ ~ 0.56
 
 execute if score stage_main_thread AzrTimerStack matches 3364 as @e[tag=AzrielBossFA] at @s run tp @s ~ ~ ~ facing entity @r[tag=azrPlayer]
 execute if score stage_main_thread AzrTimerStack matches 3364 as @e[tag=AzrielBossFA] at @s run playsound minecraft:entity.illusioner.ambient master @a[tag=azrPlayer] ~ ~ ~ 2 0.6
