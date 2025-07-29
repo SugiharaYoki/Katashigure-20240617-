@@ -84,17 +84,17 @@ fill 90121 119 -1853 90121 124 -1857 minecraft:netherite_block
 setblock 90151 164 -1851 minecraft:furnace[facing=north]
 
 
-summon marker 90100 105 -1901 {Tags:["SEAmagma6"]}
-summon marker 90099 105 -1903 {Tags:["SEAmagma6"]}
-summon marker 90094 105 -1899 {Tags:["SEAmagma6"]}
-summon marker 90089 102 -1906 {Tags:["SEAmagma6"]}
-summon marker 90086 102 -1900 {Tags:["SEAmagma6"]}
+summon marker 90100 105 -1901 {Tags:["SEAmagma1"]}
+summon marker 90099 105 -1903 {Tags:["SEAmagma1"]}
+summon marker 90094 105 -1899 {Tags:["SEAmagma1"]}
+summon marker 90089 102 -1906 {Tags:["SEAmagma1"]}
+summon marker 90086 102 -1900 {Tags:["SEAmagma1"]}
 
 setblock 90093 102 -1899 chest[facing=north]
 item replace block 90093 102 -1899 container.13 with golden_carrot 3
 
 
-execute as @e[tag=SEAmagma6,type=marker] at @s if block ~ ~ ~ air run setblock ~ ~ ~ basalt
+execute as @e[tag=SEAmagma1,type=marker] at @s if block ~ ~ ~ air run setblock ~ ~ ~ basalt
 
 
 setblock 90112 105 -1903 furnace[facing=west]
