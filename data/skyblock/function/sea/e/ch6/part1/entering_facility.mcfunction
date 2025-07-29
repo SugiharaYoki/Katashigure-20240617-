@@ -1,5 +1,5 @@
 forceload add 90142 -1886 90209 -1838
-
+forceload add 90011 -1953 90109 -1888
 
 execute as @n[tag=SEAedwina] at @s run tp @s 90147.99 171.00 -1878.01
 execute as @a[tag=SEAPT] at @s run tp @s 90147.99 171.00 -1878.01
@@ -104,5 +104,5 @@ setblock 90112 105 -1901 furnace[facing=west]
 
 
 
-
+forceload remove 90011 -1953 90109 -1888
 forceload remove 90142 -1886 90209 -1838
