@@ -180,7 +180,7 @@ execute if score stage_main_thread AzrTimerStack matches 1135 run tellraw @a[tag
 execute if score stage_main_thread AzrTimerStack matches 1135 run tellraw @a[tag=azrPlayer] {"text":"“赞美吧！赞美沙利叶，赞美沙利叶的中庭花园！赞美汝，赞美吾，赞美此世，赞美天国！”","color":"white"}
 execute if score stage_main_thread AzrTimerStack matches 1135 as @a[tag=azrPlayer] at @s run playsound minecraft:entity.evoker.celebrate hostile @a[tag=azrPlayer] ~ ~ ~ 2 0.7
 
-execute if score stage_main_thread AzrTimerStack matches 1125 as @a[tag=azrPlayer] at @s run playsound minecraft:vol3.psyborgcocoon master @s ~ ~ ~ 0.65
+execute if score stage_main_thread AzrTimerStack matches 1125 as @a[tag=azrPlayer] at @s run playsound minecraft:psyborgcocoon master @s ~ ~ ~ 0.65
 
 execute if score stage_main_thread AzrTimerStack matches 1135 run bossbar add azr:progress_bar_special "Stage ???"
 execute if score stage_main_thread AzrTimerStack matches 1135 run bossbar set azr:progress_bar_special color blue

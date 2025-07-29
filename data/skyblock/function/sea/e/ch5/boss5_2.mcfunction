@@ -7,8 +7,8 @@ execute store result bossbar minecraft:9066602 value run data get entity @n[tag=
 execute store result score @n[tag=SEAboss5b] health run data get entity @n[tag=SEAboss5b] Health
 
 execute if score @s rng1 matches 1.. run scoreboard players add SEAmusic rng1 1
-execute if score SEAmusic rng1 matches 4502 as @a[tag=SEAPT] at @s run playsound minecraft:vol5.apocalypse music @s ~ ~ ~ 1 1.0
-execute if score SEAmusic rng1 matches 4502 as @r[tag=SEAPT] at @s as @a[tag=!SEAPT,gamemode=spectator,distance=0..200] at @s run playsound minecraft:vol5.apocalypse music @s ~ ~ ~ 1 1.0
+execute if score SEAmusic rng1 matches 4502 as @a[tag=SEAPT] at @s run playsound minecraft:apocalypse music @s ~ ~ ~ 1 1.0
+execute if score SEAmusic rng1 matches 4502 as @r[tag=SEAPT] at @s as @a[tag=!SEAPT,gamemode=spectator,distance=0..200] at @s run playsound minecraft:apocalypse music @s ~ ~ ~ 1 1.0
 execute if score SEAmusic rng1 matches 8400..8450 run scoreboard players set SEAmusic rng1 4500
 
 

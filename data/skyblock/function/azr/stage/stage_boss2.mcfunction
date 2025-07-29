@@ -311,7 +311,7 @@ execute as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run function skyblo
     execute if score tick_main_thread AzrTimerStack matches 3111 if score playerCount Azr_system matches 3..5 run bossbar set azr:boss_hp_bar max 340
     execute if score tick_main_thread AzrTimerStack matches 3111 if score playerCount Azr_system matches 6.. run bossbar set azr:boss_hp_bar max 400
     execute if score tick_main_thread AzrTimerStack matches 3111 run bossbar set azr:boss_hp_bar players @a[tag=azrPlayer]
-    execute if score tick_main_thread AzrTimerStack matches 3111 as @a[tag=azrPlayer] at @s run playsound minecraft:vol3.grenade master @s ~ ~ ~ 0.65
+    execute if score tick_main_thread AzrTimerStack matches 3111 as @a[tag=azrPlayer] at @s run playsound minecraft:grenade master @s ~ ~ ~ 0.65
     execute if score tick_main_thread AzrTimerStack matches 3310..4110 store result score #azr_boss2_rng rng9 run random value 1..40
     execute if score tick_main_thread AzrTimerStack matches 3150..4150 if score #azr_boss2_rng rng9 matches 1 as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s if entity @a[tag=azrPlayer,distance=0..4.5] run function skyblock:azr/stage/boss1/tp2
     execute if score tick_main_thread AzrTimerStack matches 3150..4150 if score #azr_boss2_rng rng9 matches 2 as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s if entity @a[tag=azrPlayer,distance=0..7.5] run function skyblock:azr/stage/boss1/tp1
