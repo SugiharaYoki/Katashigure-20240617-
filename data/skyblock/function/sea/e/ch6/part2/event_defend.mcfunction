@@ -96,10 +96,10 @@ execute if score SEA_ch6_event rng5 matches 9540 run playsound minecraft:entity.
 execute if score SEA_ch6_event rng5 matches 9048 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“我真的服了，我就没在忒尔克西见到多少能快速开启的门。”","color":"white"}]
 execute if score SEA_ch6_event rng5 matches 9077 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“噢，看来我们有伴了。”","color":"white"}]
 
-execute if score SEA_ch6_event rng5 matches 9150..9239 positioned 90142 127 -1854 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 8
-execute if score SEA_ch6_event rng5 matches 9150..9239 positioned 90142 127 -1856 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 8
-execute if score SEA_ch6_event rng5 matches 9242..9390 positioned 90139 125 -1854 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 8
-execute if score SEA_ch6_event rng5 matches 9242..9390 positioned 90139 125 -1856 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 8
+execute if score SEA_ch6_event rng5 matches 9050..9239 positioned 90142 127 -1854 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 8
+execute if score SEA_ch6_event rng5 matches 9050..9239 positioned 90142 127 -1856 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 8
+execute if score SEA_ch6_event rng5 matches 9242..9490 positioned 90139 125 -1854 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 8
+execute if score SEA_ch6_event rng5 matches 9242..9490 positioned 90139 125 -1856 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 8
 execute if score SEA_ch6_event rng5 matches 9073..9077 positioned 90142 127 -1854 run function skyblock:sea/m/drowned
 execute if score SEA_ch6_event rng5 matches 9073..9077 positioned 90142 127 -1856 run function skyblock:sea/m/drowned
 
