@@ -195,13 +195,26 @@ execute if score SEA_ch6_event rng5 matches 9572 as @n[tag=SEAedwina] at @s run 
 execute if score SEA_ch6_event rng5 matches 9572 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“没事，有我在。如果你失去理智了，我会把你给硬拽回来。”","color":"white","bold": false}]
 
 
+execute if score SEA_ch6_event rng5 matches 8095..10999 if entity @a[tag=SEAPT,tag=!SEAPF,x=90089,y=101,z=-1921,dx=4,dy=5,dz=4] run scoreboard players set SEA_ch6_event rng5 11000
+execute if score SEA_ch6_event rng5 matches 10900..10999 run scoreboard players set SEA_ch6_event rng5 10900
 
 
+execute if score SEA_ch6_event rng5 matches 11003 as @n[tag=SEAedwina] at @s as @a[tag=SEAPT] at @s run function skyblock:sea/e/ch6/title_3
+execute if score SEA_ch6_event rng5 matches 11013 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“他们居然真的建立了一条矿道哈。”","color":"white"}]
+execute if score SEA_ch6_event rng5 matches 11028 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“不过这里也有坍塌的痕迹，显然这附近也不安全。”","color":"white"}]
 
-
-
-
-
+execute if score SEA_ch6_event rng5 matches 11058 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“我很好奇……这群人，他们一开始就知道这下方有地下空洞吗？”","color":"white"}]
+execute if score SEA_ch6_event rng5 matches 11073 as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
+execute if score SEA_ch6_event rng5 matches 11073 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“地质勘察发现底下有个不小的断层，但他们没有料到能在里面找到古代遗迹。他们一开始估计以为这下面只会藏着一些远古的细菌吧。”","color":"white","bold": false}]
+execute if score SEA_ch6_event rng5 matches 11090 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“还真是有细菌，那他们如愿以偿了。”","color":"white"}]
+execute if score SEA_ch6_event rng5 matches 11105 as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
+execute if score SEA_ch6_event rng5 matches 11105 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“是啊，现在知道这细菌能把人变成尸变体的人，我们说不定是最后两个。”","color":"white","bold": false}]
+execute if score SEA_ch6_event rng5 matches 11135 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“后来……还是没能找到越涵吧。”","color":"white"}]
+execute if score SEA_ch6_event rng5 matches 11152 as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
+execute if score SEA_ch6_event rng5 matches 11152 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“……抱歉。我连他的实体都没找到。当时洋流切变，我不清楚他到底被卷到了哪里。我只找到了他的随身物品，漂在水上。”","color":"white","bold": false}]
+execute if score SEA_ch6_event rng5 matches 11170 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“我还……挺想和他做朋友的。在一个没有这些狗屁天使和细菌的世界里。”","color":"white"}]
+execute if score SEA_ch6_event rng5 matches 11186 as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
+execute if score SEA_ch6_event rng5 matches 11186 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“他是个好人，一定会升上天堂的。虽然要是没有天使的存在，忒尔克西也不至于落到如此田地。”","color":"white","bold": false}]
 
 
 
