@@ -202,8 +202,8 @@ execute if score SEA_ch6_event rng5 matches 10900..10999 run scoreboard players 
 
 
 execute if score SEA_ch6_event rng5 matches 11003 as @n[tag=SEAedwina] at @s as @a[tag=SEAPT] at @s run function skyblock:sea/e/ch6/title_3
-execute if score SEA_ch6_event rng5 matches 11013 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“他们居然真的建立了一条矿道哈。”","color":"white"}]
-execute if score SEA_ch6_event rng5 matches 11028 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“不过这里也有坍塌的痕迹，显然这附近也不安全。”","color":"white"}]
+execute if score SEA_ch6_event rng5 matches 11013 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“他们居然真的建立了一整条矿道。”","color":"white"}]
+execute if score SEA_ch6_event rng5 matches 11028 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“不过看得出，这里也有坍塌的痕迹，显然这附近也不安全。”","color":"white"}]
 
 execute if score SEA_ch6_event rng5 matches 11058 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“我很好奇……这群人，他们一开始就知道这下方有地下空洞吗？”","color":"white"}]
 execute if score SEA_ch6_event rng5 matches 11073 as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
