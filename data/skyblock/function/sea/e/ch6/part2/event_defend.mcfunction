@@ -12,7 +12,7 @@ execute if score SEA_ch6_event rng5 matches 9050 as @p[tag=SEAPT] at @s as @a[di
 
 execute if score SEA_ch6_event rng5 matches 9020 run playsound minecraft:ambient.cave ambient @a 90130.00 129.32 -1854.50 30 0.8
 execute if score SEA_ch6_event rng5 matches 9020 run playsound minecraft:ambient.cave ambient @a 90130.00 129.32 -1854.50 30 0.8
-execute if score SEA_ch6_event rng5 matches 9030..9110 run playsound minecraft:entity.minecart.inside ambient @a 90129 129 -1855 0.2 0.8
+execute if score SEA_ch6_event rng5 matches 9030..9110 run playsound minecraft:entity.minecart.inside ambient @a 90129 139 -1855 0.1 0.8
 
 execute if score SEA_ch6_event rng5 matches 9040 run fill 90129 119 -1853 90129 119 -1857 air
 execute if score SEA_ch6_event rng5 matches 9040 run playsound minecraft:block.iron_door.open block @a 90129 129 -1855 10 0.5
@@ -38,7 +38,7 @@ execute if score SEA_ch6_event rng5 matches 9120 run playsound minecraft:entity.
 
 execute if score SEA_ch6_event rng5 matches 9120 run playsound minecraft:ambient.cave ambient @a 90130.00 129.32 -1854.50 30 0.8
 execute if score SEA_ch6_event rng5 matches 9120 run playsound minecraft:ambient.cave ambient @a 90130.00 129.32 -1854.50 30 0.8
-execute if score SEA_ch6_event rng5 matches 9130..9210 run playsound minecraft:entity.minecart.inside ambient @a 90125 129 -1855 0.2 0.8
+execute if score SEA_ch6_event rng5 matches 9130..9210 run playsound minecraft:entity.minecart.inside ambient @a 90125 139 -1855 0.1 0.8
 
 execute if score SEA_ch6_event rng5 matches 9140 run fill 90125 119 -1853 90125 119 -1857 air
 execute if score SEA_ch6_event rng5 matches 9140 run playsound minecraft:block.iron_door.open block @a 90125 129 -1855 10 0.5
@@ -67,7 +67,7 @@ execute if score SEA_ch6_event rng5 matches 9246 as @p[tag=SEAPT] at @s run tell
 
 execute if score SEA_ch6_event rng5 matches 9320 run playsound minecraft:ambient.cave ambient @a 90130.00 129.32 -1854.50 30 0.8
 execute if score SEA_ch6_event rng5 matches 9320 run playsound minecraft:ambient.cave ambient @a 90130.00 129.32 -1854.50 30 0.8
-execute if score SEA_ch6_event rng5 matches 9330..9410 run playsound minecraft:entity.minecart.inside ambient @a 90121 129 -1855 0.2 0.8
+execute if score SEA_ch6_event rng5 matches 9330..9410 run playsound minecraft:entity.minecart.inside ambient @a 90121 139 -1855 0.1 0.8
 
 execute if score SEA_ch6_event rng5 matches 9340 run fill 90121 119 -1853 90121 119 -1857 air
 execute if score SEA_ch6_event rng5 matches 9340 run playsound minecraft:block.iron_door.open block @a 90121 129 -1855 10 0.5
