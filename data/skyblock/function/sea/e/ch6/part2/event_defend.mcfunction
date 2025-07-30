@@ -307,14 +307,14 @@ execute if score SEA_ch6_event rng5 matches 12552 positioned 90013 95 -1926 run 
 execute if score SEA_ch6_event rng5 matches 12557 positioned 90013 95 -1926 run kill @n[tag=SEAyuehan,distance=0..100]
 execute if score SEA_ch6_event rng5 matches 12560 positioned 90013 95 -1926 run kill @n[tag=SEAnorma_warden,distance=0..100]
 
-execute if score SEA_ch6_event rng5 matches 12554 positioned 90013 95 -1926 run setblock 90012 89 -1925 air
-execute if score SEA_ch6_event rng5 matches 12554 positioned 90013 95 -1926 run setblock 90010 89 -1927 air
-execute if score SEA_ch6_event rng5 matches 12554 positioned 90013 95 -1926 run setblock 90013 96 -1925 air
-execute if score SEA_ch6_event rng5 matches 12554 positioned 90013 95 -1926 run setblock 90015 96 -1927 air
-execute if score SEA_ch6_event rng5 matches 12554 positioned 90013 95 -1926 run setblock 90014 89 -1927 air
-execute if score SEA_ch6_event rng5 matches 12554 positioned 90013 95 -1926 run setblock 90016 89 -1926 air
-execute if score SEA_ch6_event rng5 matches 12554 positioned 90013 95 -1926 run setblock 90011 91 -1924 air
-execute if score SEA_ch6_event rng5 matches 12554 positioned 90013 95 -1926 run setblock 90011 94 -1928 air
+execute if score SEA_ch6_event rng5 matches 12554 positioned 90013 95 -1926 run setblock 90012 89 -1925 fire
+execute if score SEA_ch6_event rng5 matches 12554 positioned 90013 95 -1926 run setblock 90010 89 -1927 fire
+execute if score SEA_ch6_event rng5 matches 12554 positioned 90013 95 -1926 run setblock 90013 96 -1925 fire
+execute if score SEA_ch6_event rng5 matches 12554 positioned 90013 95 -1926 run setblock 90015 96 -1927 fire
+execute if score SEA_ch6_event rng5 matches 12554 positioned 90013 95 -1926 run setblock 90014 89 -1927 fire
+execute if score SEA_ch6_event rng5 matches 12554 positioned 90013 95 -1926 run setblock 90016 89 -1926 fire
+execute if score SEA_ch6_event rng5 matches 12554 positioned 90013 95 -1926 run setblock 90011 91 -1924 fire
+execute if score SEA_ch6_event rng5 matches 12554 positioned 90013 95 -1926 run setblock 90011 94 -1928 fire
 
 execute if score SEA_ch6_event rng5 matches 12554..12565 positioned 90013 95 -1926 run playsound minecraft:entity.generic.explode block @a ~ ~ ~ 50 1.1
 execute if score SEA_ch6_event rng5 matches 12554..12565 positioned 90013 95 -1926 run playsound minecraft:entity.generic.explode block @a ~ ~ ~ 50 0.8
