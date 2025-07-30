@@ -4,6 +4,8 @@ tp @a[x=90000,y=100,z=100,distance=..5000,scores={sea_progress=..16},gamemode=!s
 
 function skyblock:sea/generate/stage_jump/to_ch6
 
+function skyblock:sea/e/ch6/part1/entering_facility
+
 scoreboard players add @a[tag=SEAPT] sea_i_emerald 150
 give @a[tag=SEAPT] echo_shard 80
 give @a[tag=SEAPT] iron_ingot 20
@@ -14,7 +16,6 @@ give @a[tag=SEAPT] iron_ingot 20
 scoreboard players set SEA_ch6_event rng5 12563
 
 
-function skyblock:sea/e/ch6/part1/entering_facility
 forceload add 90147 -1878
 tp @n[tag=SEAedwina] 90011 57 -1861
 
