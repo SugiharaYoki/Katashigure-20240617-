@@ -1,0 +1,19 @@
+{
+    "criteria": {
+        "azr_crossbow_trigger":{
+            "trigger": "shot_crossbow",
+            "conditions": {
+                "item": {
+                    "components": {
+                        "custom_data": {
+                            "crossbow_v71":1
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "skyblock:azr/system_sub/__crossbow_fill_arrow"
+    }
+}
