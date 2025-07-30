@@ -49,6 +49,8 @@ function skyblock:azr/shop/purchase/universal
 #execute if score @s Azr_Shop_rng11 matches 17 run tellraw @s[tag=!Azr_BuyOnce,scores={Azr_SK5=4..}] [{"text":"   "},{"text":"轰之核心","color":"aqua"},{"text":"   15 绿宝石 1 工匠的桌板 2 光明精华 ","color":"gold"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 84314"}}]
 #execute if score @s Azr_Shop_rng11 matches 18 run tellraw @s[tag=!Azr_BuyOnce,scores={Azr_SK5=4..}] [{"text":"   "},{"text":"轰之核心+","color":"aqua"},{"text":"   1 轰之核心 20 绿宝石 3 工匠的桌板 ","color":"gold"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 84314"}}]
 
+execute at @s run playsound minecraft:item.armor.equip_leather master @s
+
 execute if score @s Azr_Shop matches 84300..84309 run function skyblock:azr/shop/build
 execute if score @s Azr_Shop matches 8431511..8431516 run function skyblock:azr/shop/reader_arrowshop
 execute if score @s Azr_Shop matches 8431522..8431546 run function skyblock:azr/shop/reader_ramiel
