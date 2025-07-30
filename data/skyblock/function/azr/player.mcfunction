@@ -17,7 +17,7 @@ execute as @s[tag=removeSpark] if items entity @s weapon.mainhand *[custom_data=
 tag @s[tag=removeSpark] remove removeSpark
 
 #机械弩
-execute if items entity @s weapon.mainhand crossbow[custom_data~{crossbow_v71:1b}] if items entity @s container.* *[custom_data~{crossbow_arrow:1b}] unless data entity @s SelectedItem.components."minecraft:charged_projectiles"[{id:"arrow"}] run function skyblock:azr/system_sub/crossbow_fill_arrow
+execute if items entity @s weapon.mainhand crossbow[custom_data~{crossbow_v71:1b}] if items entity @s container.* *[custom_data~{crossbow_arrow:1b}] unless data entity @s SelectedItem.components."minecraft:charged_projectiles"[{id:"minecraft:arrow"}] run function skyblock:azr/system_sub/crossbow_fill_arrow
 #索命连击
 execute at @s[tag=hasSkills] run function skyblock:azr/system_sub/chain_kill
 #残城箭影
