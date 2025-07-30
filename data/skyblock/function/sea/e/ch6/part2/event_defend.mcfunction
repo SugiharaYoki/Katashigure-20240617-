@@ -249,7 +249,7 @@ execute if score SEA_ch6_event rng5 matches 12010.. as @n[tag=SEAnorma_warden] a
 execute if score SEA_ch6_event rng5 matches 12012 positioned 90014 96 -1939 run function skyblock:sea/m/unique/npc_yuehan
 execute if score SEA_ch6_event rng5 matches 12014..12025 as @n[tag=SEAyuehan] at @s run tp @s ~ ~ ~1 facing ~0.5 ~-0.3 ~2
 
-execute if score SEA_ch6_event rng5 matches 8095..12499 if entity @a[tag=SEAPT,tag=!SEAPF,x=90004,y=88,z=-1928,dx=3,dy=5,dz=5] run scoreboard players set SEA_ch6_event rng5 12501
+execute if score SEA_ch6_event rng5 matches 8095..12499 if entity @a[tag=SEAPT,tag=!SEAPF,x=90002,y=88,z=-1928,dx=4,dy=5,dz=5] run scoreboard players set SEA_ch6_event rng5 12501
 execute if score SEA_ch6_event rng5 matches 12498..12499 run scoreboard players set SEA_ch6_event rng5 12498
 
 
@@ -262,6 +262,7 @@ execute if score SEA_ch6_event rng5 matches 12501 as @a[tag=SEAPT] at @s run eff
 execute if score SEA_ch6_event rng5 matches 12501 as @a[tag=SEAPT] at @s run effect clear @s slowness
 execute if score SEA_ch6_event rng5 matches 12501 as @a[tag=SEAnorma_warden] at @s run effect clear @s speed
 execute if score SEA_ch6_event rng5 matches 12501 as @a[tag=SEAnorma_warden] at @s run effect clear @s strength
+execute if score SEA_ch6_event rng5 matches 12501 as @a[tag=SEAPT] at @s run effect give @s resistance 8 9 true
 execute if score SEA_ch6_event rng5 matches 12501 as @a[tag=SEAPT] at @s run attribute @s minecraft:movement_speed modifier add sea:marilyn_01 -1 add_value
 execute if score SEA_ch6_event rng5 matches 12501 as @a[tag=SEAPT] at @s run attribute @s minecraft:jump_strength modifier add sea:marilyn_01 -50 add_value
 
