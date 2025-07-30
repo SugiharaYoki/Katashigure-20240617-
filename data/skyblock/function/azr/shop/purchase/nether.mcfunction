@@ -206,7 +206,7 @@ execute as @s[scores={Azr_Shop=8431723}] \
     if items entity @s container.* red_dye[count={min:1},custom_data~{remnant:1b}] \
     unless function skyblock:azr/shop/purchase/nether/\
     crossbow_arrow_2 run scoreboard players set tempPlayerShopSuccess Azr_system 1
-    # 机械弩专用箭 <- 1 遗存的狂戮  8431723
+    # 机械箭x16 <- 1 遗存的狂戮  8431723
 
 execute as @s[scores={Azr_Shop=8431716}] \
     unless score tempPlayerShopSuccess Azr_system matches 1 \
@@ -253,6 +253,6 @@ execute as @s[scores={Azr_Shop=8431721}] \
 execute as @s[scores={Azr_Shop=8431722}] \
     unless score tempPlayerShopSuccess Azr_system matches 1 \
     if items entity @s container.* gold_ingot[count={min:2},custom_data~{soft_gold:1b}] \
-    unless function skyblock:azr/shop/purchase/nether/golden_leggings \
-    run scoreboard players set tempPlayerShopSuccess Azr_system 1
+    unless function skyblock:azr/shop/purchase/nether/\
+    golden_leggings run scoreboard players set tempPlayerShopSuccess Azr_system 1
     # 防具：镀金护腿 <- 2 软金  8431722
