@@ -35,6 +35,7 @@
     poison_sac 蛛毒囊 100001
 药水箭
     magical_arrow_strong 魔蚀·散羽之箭 100001
+    crossbow_arrow 机械箭 100002
 下界之星
     revival_star 下界命星 100001
 铁锭
@@ -152,6 +153,7 @@
     iron_axe_coal_iron 铁斧·碳钢 100004
     iron_axe_prison 铁斧·狱栅 100005
     weapon_black_iron_axe 铁斧·黑钢 100006
+    iron_axe_chain_long_t2 锁链长斧·黑钢 100007
     石
     stone_axe_normal 石斧 100001
     stone_axe_zombie 石斧·尸变 100002
@@ -186,6 +188,7 @@
     rapier_normal 刺剑·传统 100009
     rapier_rain 刺剑·疾雨 100010
     rapier_wind 刺剑·逆雷 100011
+    iron_sword_chain_t2 锁链长剑·黑钢 100012
     
 
     石

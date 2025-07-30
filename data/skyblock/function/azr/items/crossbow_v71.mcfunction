@@ -1,0 +1,1 @@
+give @s crossbow[custom_name='{"text":"机械弩·柒壹式","color":"white","italic":false}',attribute_modifiers=[{id:"azr:crossbow_v71.movement_speed",type:"movement_speed",amount:-0.30,operation:"add_value",slot:"mainhand"}],custom_data={crossbow_v71:1b},custom_model_data={floats:[100006.0]}]

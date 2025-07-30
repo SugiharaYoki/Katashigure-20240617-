@@ -2,14 +2,14 @@ execute as @s[scores={Azr_Shop=8431611}] \
     unless score tempPlayerShopSuccess Azr_system matches 1 \
     if score @s Azr_emerald matches 1.. \
     unless function skyblock:azr/shop/purchase/nether/\
-    break run scoreboard players set tempPlayerShopSuccess Azr_system 1
+    bread run scoreboard players set tempPlayerShopSuccess Azr_system 1
     # 面包 <- 1 绿宝石  8431611
 
 execute as @s[scores={Azr_Shop=8431612}] \
     unless score tempPlayerShopSuccess Azr_system matches 1 \
     if items entity @s container.* rotten_flesh[count={min:1}] \
     unless function skyblock:azr/shop/purchase/nether/\
-    cooked_porkchop run scoreboard players set tempPlayerShopSuccess Azr_system 1
+    cooked_porkchop_1 run scoreboard players set tempPlayerShopSuccess Azr_system 1
     # 熟猪排 <- 1 腐肉  8431612
 
 execute as @s[scores={Azr_Shop=8431613}] \
@@ -23,7 +23,7 @@ execute as @s[scores={Azr_Shop=8431614}] \
     unless score tempPlayerShopSuccess Azr_system matches 1 \
     if items entity @s container.* carrot[count={min:2}] \
     unless function skyblock:azr/shop/purchase/nether/\
-    golden_carrot run scoreboard players set tempPlayerShopSuccess Azr_system 1
+    golden_carrot_1 run scoreboard players set tempPlayerShopSuccess Azr_system 1
     # 金萝卜 <- 2 胡萝卜  8431614
 
 execute as @s[scores={Azr_Shop=8431617}] \
@@ -54,7 +54,7 @@ execute as @s[scores={Azr_Shop=8431616}] \
     if items entity @s container.* stick[count={min:5}] \
     unless function skyblock:azr/shop/purchase/nether/\
     soft_gold run scoreboard players set tempPlayerShopSuccess Azr_system 1
-    # 软金 <- 1 软金 5 木棍  8431616
+    # 软金 <- 1 钝金 5 木棍  8431616
 
 execute as @s[scores={Azr_Shop=8431619}] \
     unless score tempPlayerShopSuccess Azr_system matches 1 \
@@ -161,21 +161,21 @@ execute as @s[scores={Azr_Shop=8431632}] \
     unless score tempPlayerShopSuccess Azr_system matches 1 \
     if items entity @s container.* blaze_powder[count={min:1},custom_data~{flame_powder:1b}] \
     unless function skyblock:azr/shop/purchase/nether/\
-    crossbow_arrow run scoreboard players set tempPlayerShopSuccess Azr_system 1
+    crossbow_arrow_1 run scoreboard players set tempPlayerShopSuccess Azr_system 1
     # 弹药×16 <- 1 炽焰粉尘  8431632
 
 execute as @s[scores={Azr_Shop=843171}] \
     unless score tempPlayerShopSuccess Azr_system matches 1 \
     if items entity @s container.* gold_nugget[count={min:6}] \
     unless function skyblock:azr/shop/purchase/nether/\
-    golden_carrot run scoreboard players set tempPlayerShopSuccess Azr_system 1
+    golden_carrot_2 run scoreboard players set tempPlayerShopSuccess Azr_system 1
     # 金萝卜 <- 6 金粒  843171
 
 execute as @s[scores={Azr_Shop=8431712}] \
     unless score tempPlayerShopSuccess Azr_system matches 1 \
     if items entity @s container.* gold_nugget[count={min:5}] \
     unless function skyblock:azr/shop/purchase/nether/\
-    cooked_porkchop run scoreboard players set tempPlayerShopSuccess Azr_system 1
+    cooked_porkchop_2 run scoreboard players set tempPlayerShopSuccess Azr_system 1
     # 熟猪排 <- 5 金粒  8431712
 
 
@@ -205,7 +205,7 @@ execute as @s[scores={Azr_Shop=8431723}] \
     unless score tempPlayerShopSuccess Azr_system matches 1 \
     if items entity @s container.* red_dye[count={min:1},custom_data~{remnant:1b}] \
     unless function skyblock:azr/shop/purchase/nether/\
-    crossbow_arrow run scoreboard players set tempPlayerShopSuccess Azr_system 1
+    crossbow_arrow_2 run scoreboard players set tempPlayerShopSuccess Azr_system 1
     # 机械弩专用箭 <- 1 遗存的狂戮  8431723
 
 execute as @s[scores={Azr_Shop=8431716}] \
