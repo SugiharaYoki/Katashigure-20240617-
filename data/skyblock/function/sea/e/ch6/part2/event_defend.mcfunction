@@ -277,7 +277,7 @@ execute if score SEA_ch6_event rng5 matches 12501 as @n[tag=SEAnorma_warden] at 
 execute if score SEA_ch6_event rng5 matches 12505 as @n[tag=SEAnorma_warden] at @s run tellraw @a[distance=0..150] [{"text":"诺玛：","color":"red","bold": true},{"text":"\n“受死……吧！！！”","color":"white","bold": false}]
 
 execute if score SEA_ch6_event rng5 matches 12511 as @n[tag=SEAyuehan] at @s run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
-execute if score SEA_ch6_event rng5 matches 12511 as @n[tag=SEAyuehan] at @s run tellraw @a[distance=0..250] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“嘿，臭傻逼狗娘养的，有本事看这里！！”","color":"white","bold": false}]
+execute if score SEA_ch6_event rng5 matches 12511 as @n[tag=SEAyuehan] at @s run tellraw @a[distance=0..250] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“嘿傻逼！！你这畜生养的，有本事看这里！！”","color":"white","bold": false}]
 
 execute if score SEA_ch6_event rng5 matches 12503 as @n[tag=SEAyuehan] at @s run tp @s ~ ~ ~ facing entity @n[tag=SEAyuehan]
 
