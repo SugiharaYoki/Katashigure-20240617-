@@ -17,3 +17,8 @@ tellraw @s [{"text":"   - "},{"text":"防具：试造狱铁靴","color":"white"}
 tellraw @s [{"text":"   - "},{"text":"机械弩·柒壹式","color":"white"},{"text":"  5 硬骨 5 丝线 5 燧石 ","color":"gold"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8431631"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗特殊弹药进行超高速射击的弩","color":"white"}}},{"text":" || 弹药×16","color":"white"},{"text":"  1 炽焰粉尘 ","color":"gold"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8431632"}}]
 tellraw @s {"text":"   "}
 tellraw @s[scores={Azr_wave=..51}] [{"text":"   "},{"text":"〈雷米尔的指引〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 3"}},{"text":"  〈权之残影的弓术商店〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 4"}}]
+tellraw @s {"text":"   "}
+tellraw @s [{"text":"  绿宝石余额：  ","color":"yellow"},{"score":{"name":"@s","objective":"Azr_emerald"}}]
+#execute if entity @s[scores={SeGa_StandLastB=10..}] run tellraw @s [{"text":"  沙利叶之星：  ","color":"yellow"},{"score":{"name":"@s","objective":"Temp_PersonAZSt"}}]
+tellraw @s {"text":"   "}
+scoreboard players set @s Azr_Shop 0
