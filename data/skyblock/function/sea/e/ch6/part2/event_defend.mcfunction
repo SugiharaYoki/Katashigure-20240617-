@@ -226,16 +226,20 @@ execute if score SEA_ch6_event rng5 matches 8095..11999 if entity @a[tag=SEAPT,t
 execute if score SEA_ch6_event rng5 matches 11900..11999 run scoreboard players set SEA_ch6_event rng5 11900
 
 
+execute if score SEA_ch6_event rng5 matches 12007 as @n[tag=SEAedwina] at @s unless entity @a[tag=SEAPT,distance=..7] run tp @s @p[tag=SEAPT]
 execute if score SEA_ch6_event rng5 matches 12008 run particle explosion 90038 92 -1926 1 1 1 0.0 5
 execute if score SEA_ch6_event rng5 matches 12008 run particle smoke 90038 92 -1926 1 1 1 0.05 15
 execute if score SEA_ch6_event rng5 matches 12008 run playsound entity.generic.explode block @a 90038 92 -1926 2 0.9
 execute if score SEA_ch6_event rng5 matches 12008 run fill 90038 91 -1926 90038 92 -1926 gravel
 
+execute if score SEA_ch6_event rng5 matches 12008 positioned 90037 91 -1926 run function skyblock:sea/m/unique/warden_norma_final
+execute if score SEA_ch6_event rng5 matches 12008 as @p[tag=SEAPT] at @s as @a[distance=0..150] at @s run playsound garden2.bgm.drowning3 music @s ~ ~ ~ 1.0 1.0
 
+execute if score SEA_ch6_event rng5 matches 12009 as @n[tag=SEAnorma_warden] at @s run tellraw @a[distance=0..150] [{"text":"诺玛：","color":"red","bold": true},{"text":"\n“……找到……！你了！！”","color":"white","bold": false}]
+execute if score SEA_ch6_event rng5 matches 12019 as @n[tag=SEAnorma_warden] at @s run tellraw @a[distance=0..150] [{"text":"诺玛：","color":"red","bold": true},{"text":"\n“别想别再想别再逃再逃啊啊啊啊啊啊！！！！！！”","color":"white","bold": false}]
 
-
-
-
+execute if score SEA_ch6_event rng5 matches 12012 as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
+execute if score SEA_ch6_event rng5 matches 12012 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“操，快跑！！”","color":"white","bold": false}]
 
 
 
