@@ -253,6 +253,7 @@ execute if score SEA_ch6_event rng5 matches 8095..12499 if entity @a[tag=SEAPT,t
 execute if score SEA_ch6_event rng5 matches 12498..12499 run scoreboard players set SEA_ch6_event rng5 12498
 
 
+execute if score SEA_ch6_event rng5 matches 12501 as @n[tag=SEAedwina] at @s run kill @e[tag=SEAnorma_warden,distance=..1000]
 execute if score SEA_ch6_event rng5 matches 12501 as @n[tag=SEAedwina] at @s run tag @s remove SEAedwina_run
 execute if score SEA_ch6_event rng5 matches 12501 as @n[tag=SEAedwina] at @s run tag @s remove SEAedwina_attackable
 execute if score SEA_ch6_event rng5 matches 12501 as @n[tag=SEAedwina] at @s run tp 90003 89 -1925
@@ -288,52 +289,52 @@ execute if score SEA_ch6_event rng5 matches 12505..12570 as @n[tag=SEAyuehan] at
 execute if score SEA_ch6_event rng5 matches 12518 as @n[tag=SEAyuehan] at @s run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
 execute if score SEA_ch6_event rng5 matches 12518 as @n[tag=SEAyuehan] at @s run tellraw @a[distance=0..250] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“我身上有炸弹！！！\n还愣着干什么，快跑啊啊啊啊啊啊！！！！”","color":"white","bold": false}]
 
-execute if score SEA_ch6_event rng5 matches 12525 as @n[tag=SEAnorma_warden] at @s run tellraw @a[distance=0..150] [{"text":"诺玛：","color":"red","bold": true},{"text":"\n“可恶可恶人的恶人类，就凭就凭你也你也想阻止……！！”","color":"white","bold": false}]
+execute if score SEA_ch6_event rng5 matches 12526 as @n[tag=SEAnorma_warden] at @s run tellraw @a[distance=0..150] [{"text":"诺玛：","color":"red","bold": true},{"text":"\n“可恶可恶人的恶人类，就凭就凭你也你也想阻止……！！”","color":"white","bold": false}]
 
 execute if score SEA_ch6_event rng5 matches 12518 as @a[tag=SEAPT] at @s run attribute @s minecraft:movement_speed modifier remove sea:marilyn_01
 execute if score SEA_ch6_event rng5 matches 12518 as @a[tag=SEAPT] at @s run attribute @s minecraft:jump_strength modifier remove sea:marilyn_01
 
-execute if score SEA_ch6_event rng5 matches 12530 as @n[tag=SEAyuehan] at @s run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
-execute if score SEA_ch6_event rng5 matches 12530 as @n[tag=SEAyuehan] at @s run tellraw @a[distance=0..250] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“可恶、我也不想死啊！！这是为了忒尔克西，为了我所有珍惜的人，为了国家为了党，为了这个世界！！”","color":"white","bold": false}]
-execute if score SEA_ch6_event rng5 matches 12540 as @n[tag=SEAyuehan] at @s run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
-execute if score SEA_ch6_event rng5 matches 12540 as @n[tag=SEAyuehan] at @s run tellraw @a[distance=0..250] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“操你妈逼的！！我叫沈越涵，记住老子的名字，老子要把你亲手送到你想去的天堂！！！”","color":"white","bold": false}]
+execute if score SEA_ch6_event rng5 matches 12532 as @n[tag=SEAyuehan] at @s run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
+execute if score SEA_ch6_event rng5 matches 12532 as @n[tag=SEAyuehan] at @s run tellraw @a[distance=0..250] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“可恶、我也不想死啊！！这是为了忒尔克西，为了我所有珍惜的人，为了国家为了党，为了这个世界！！”","color":"white","bold": false}]
+execute if score SEA_ch6_event rng5 matches 12544 as @n[tag=SEAyuehan] at @s run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
+execute if score SEA_ch6_event rng5 matches 12544 as @n[tag=SEAyuehan] at @s run tellraw @a[distance=0..250] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“操你妈逼的！！我叫沈越涵，记住老子的名字，老子要把你亲手送到你想去的天堂！！！”","color":"white","bold": false}]
 
-execute if score SEA_ch6_event rng5 matches 12542 positioned 90013 95 -1926 run playsound minecraft:entity.generic.explode block @a ~ ~ ~ 50 1.1
-execute if score SEA_ch6_event rng5 matches 12542 positioned 90013 95 -1926 run playsound minecraft:entity.generic.explode block @a ~ ~ ~ 50 0.8
-execute if score SEA_ch6_event rng5 matches 12542 positioned 90013 95 -1926 run particle minecraft:explosion_emitter ~ ~ ~ 0 0 0 0 1
+execute if score SEA_ch6_event rng5 matches 12552 positioned 90013 95 -1926 run playsound minecraft:entity.generic.explode block @a ~ ~ ~ 50 1.1
+execute if score SEA_ch6_event rng5 matches 12552 positioned 90013 95 -1926 run playsound minecraft:entity.generic.explode block @a ~ ~ ~ 50 0.8
+execute if score SEA_ch6_event rng5 matches 12552 positioned 90013 95 -1926 run particle minecraft:explosion_emitter ~ ~ ~ 0 0 0 0 1
 
-execute if score SEA_ch6_event rng5 matches 12547 positioned 90013 95 -1926 run kill @n[tag=SEAyuehan,distance=0..100]
-execute if score SEA_ch6_event rng5 matches 12550 positioned 90013 95 -1926 run kill @n[tag=SEAnorma_warden,distance=0..100]
+execute if score SEA_ch6_event rng5 matches 12557 positioned 90013 95 -1926 run kill @n[tag=SEAyuehan,distance=0..100]
+execute if score SEA_ch6_event rng5 matches 12560 positioned 90013 95 -1926 run kill @n[tag=SEAnorma_warden,distance=0..100]
 
-execute if score SEA_ch6_event rng5 matches 12544 positioned 90013 95 -1926 run setblock 90012 89 -1925 air
-execute if score SEA_ch6_event rng5 matches 12544 positioned 90013 95 -1926 run setblock 90010 89 -1927 air
-execute if score SEA_ch6_event rng5 matches 12544 positioned 90013 95 -1926 run setblock 90013 96 -1925 air
-execute if score SEA_ch6_event rng5 matches 12544 positioned 90013 95 -1926 run setblock 90015 96 -1927 air
-execute if score SEA_ch6_event rng5 matches 12544 positioned 90013 95 -1926 run setblock 90014 89 -1927 air
-execute if score SEA_ch6_event rng5 matches 12544 positioned 90013 95 -1926 run setblock 90016 89 -1926 air
-execute if score SEA_ch6_event rng5 matches 12544 positioned 90013 95 -1926 run setblock 90011 91 -1924 air
-execute if score SEA_ch6_event rng5 matches 12544 positioned 90013 95 -1926 run setblock 90011 94 -1928 air
+execute if score SEA_ch6_event rng5 matches 12554 positioned 90013 95 -1926 run setblock 90012 89 -1925 air
+execute if score SEA_ch6_event rng5 matches 12554 positioned 90013 95 -1926 run setblock 90010 89 -1927 air
+execute if score SEA_ch6_event rng5 matches 12554 positioned 90013 95 -1926 run setblock 90013 96 -1925 air
+execute if score SEA_ch6_event rng5 matches 12554 positioned 90013 95 -1926 run setblock 90015 96 -1927 air
+execute if score SEA_ch6_event rng5 matches 12554 positioned 90013 95 -1926 run setblock 90014 89 -1927 air
+execute if score SEA_ch6_event rng5 matches 12554 positioned 90013 95 -1926 run setblock 90016 89 -1926 air
+execute if score SEA_ch6_event rng5 matches 12554 positioned 90013 95 -1926 run setblock 90011 91 -1924 air
+execute if score SEA_ch6_event rng5 matches 12554 positioned 90013 95 -1926 run setblock 90011 94 -1928 air
 
-execute if score SEA_ch6_event rng5 matches 12544..12545 positioned 90013 95 -1926 run playsound minecraft:entity.generic.explode block @a ~ ~ ~ 50 1.1
-execute if score SEA_ch6_event rng5 matches 12544..12545 positioned 90013 95 -1926 run playsound minecraft:entity.generic.explode block @a ~ ~ ~ 50 0.8
-execute if score SEA_ch6_event rng5 matches 12544..12545 positioned 90013 95 -1926 run particle minecraft:explosion_emitter ~ ~ ~ 2 2 2 0 5
-execute if score SEA_ch6_event rng5 matches 12547 positioned 90013 95 -1926 run playsound minecraft:entity.generic.explode block @a ~ ~ ~ 50 1.1
-execute if score SEA_ch6_event rng5 matches 12547 positioned 90013 95 -1926 run playsound minecraft:entity.generic.explode block @a ~ ~ ~ 50 0.8
-execute if score SEA_ch6_event rng5 matches 12547 positioned 90013 95 -1926 run playsound minecraft:entity.generic.explode block @a ~ ~ ~ 50 0.6
-execute if score SEA_ch6_event rng5 matches 12547 positioned 90013 95 -1926 run playsound minecraft:entity.generic.explode block @a ~ ~ ~ 50 0.9
-execute if score SEA_ch6_event rng5 matches 12547 positioned 90013 95 -1926 run particle minecraft:explosion_emitter ~ ~ ~ 3 3 3 0 8
-execute if score SEA_ch6_event rng5 matches 12547 positioned 90013 95 -1926 run particle minecraft:large_smoke ~ ~ ~ 3 3 3 0.1 100
-execute if score SEA_ch6_event rng5 matches 12542 positioned 90013 95 -1926 as @a[tag=SEAPT,x=89988,y=0,z=-1936,dx=300,dy=100,dz=200,gamemode=adventure] at @s run damage @s 3 explosion
-execute if score SEA_ch6_event rng5 matches 12544 positioned 90013 95 -1926 as @a[tag=SEAPT,x=89988,y=0,z=-1936,dx=300,dy=100,dz=200,gamemode=adventure] at @s run damage @s 8 explosion
-execute if score SEA_ch6_event rng5 matches 12547 positioned 90013 95 -1926 as @a[tag=SEAPT,x=89988,y=0,z=-1936,dx=300,dy=100,dz=200,gamemode=adventure] at @s run damage @s 15 explosion
+execute if score SEA_ch6_event rng5 matches 12554..12565 positioned 90013 95 -1926 run playsound minecraft:entity.generic.explode block @a ~ ~ ~ 50 1.1
+execute if score SEA_ch6_event rng5 matches 12554..12565 positioned 90013 95 -1926 run playsound minecraft:entity.generic.explode block @a ~ ~ ~ 50 0.8
+execute if score SEA_ch6_event rng5 matches 12554..12565 positioned 90013 95 -1926 run particle minecraft:explosion_emitter ~ ~ ~ 2 2 2 0 5
+execute if score SEA_ch6_event rng5 matches 12557 positioned 90013 95 -1926 run playsound minecraft:entity.generic.explode block @a ~ ~ ~ 50 1.1
+execute if score SEA_ch6_event rng5 matches 12557 positioned 90013 95 -1926 run playsound minecraft:entity.generic.explode block @a ~ ~ ~ 50 0.8
+execute if score SEA_ch6_event rng5 matches 12557 positioned 90013 95 -1926 run playsound minecraft:entity.generic.explode block @a ~ ~ ~ 50 0.6
+execute if score SEA_ch6_event rng5 matches 12557 positioned 90013 95 -1926 run playsound minecraft:entity.generic.explode block @a ~ ~ ~ 50 0.9
+execute if score SEA_ch6_event rng5 matches 12557 positioned 90013 95 -1926 run particle minecraft:explosion_emitter ~ ~ ~ 3 3 3 0 8
+execute if score SEA_ch6_event rng5 matches 12557 positioned 90013 95 -1926 run particle minecraft:large_smoke ~ ~ ~ 3 3 3 0.1 100
+execute if score SEA_ch6_event rng5 matches 12552 positioned 90013 95 -1926 as @a[tag=SEAPT,x=89988,y=0,z=-1936,dx=300,dy=100,dz=200,gamemode=adventure] at @s run damage @s 3 explosion
+execute if score SEA_ch6_event rng5 matches 12554 positioned 90013 95 -1926 as @a[tag=SEAPT,x=89988,y=0,z=-1936,dx=300,dy=100,dz=200,gamemode=adventure] at @s run damage @s 8 explosion
+execute if score SEA_ch6_event rng5 matches 12557 positioned 90013 95 -1926 as @a[tag=SEAPT,x=89988,y=0,z=-1936,dx=300,dy=100,dz=200,gamemode=adventure] at @s run damage @s 15 explosion
 
-execute if score SEA_ch6_event rng5 matches 12550 positioned 90013 95 -1926 run playsound minecraft:entity.generic.explode block @a ~ ~ ~ 50 1.1
-execute if score SEA_ch6_event rng5 matches 12550 positioned 90013 95 -1926 run playsound minecraft:entity.generic.explode block @a ~ ~ ~ 50 0.8
-execute if score SEA_ch6_event rng5 matches 12550 positioned 90013 95 -1926 run playsound minecraft:entity.generic.explode block @a ~ ~ ~ 50 0.6
-execute if score SEA_ch6_event rng5 matches 12550 positioned 90013 95 -1926 run playsound minecraft:entity.generic.explode block @a ~ ~ ~ 50 0.9
-execute if score SEA_ch6_event rng5 matches 12550 positioned 90013 95 -1926 run particle minecraft:explosion_emitter ~ ~ ~ 5 5 5 0 12
-execute if score SEA_ch6_event rng5 matches 12550 positioned 90013 95 -1926 run particle minecraft:large_smoke ~ ~ ~ 5 5 5 0.2 180
-execute if score SEA_ch6_event rng5 matches 12550 positioned 90013 95 -1926 run kill @a[tag=SEAPT,x=89988,y=0,z=-1936,dx=300,dy=100,dz=200,gamemode=adventure]
+execute if score SEA_ch6_event rng5 matches 12562 positioned 90013 95 -1926 run playsound minecraft:entity.generic.explode block @a ~ ~ ~ 50 1.1
+execute if score SEA_ch6_event rng5 matches 12562 positioned 90013 95 -1926 run playsound minecraft:entity.generic.explode block @a ~ ~ ~ 50 0.8
+execute if score SEA_ch6_event rng5 matches 12562 positioned 90013 95 -1926 run playsound minecraft:entity.generic.explode block @a ~ ~ ~ 50 0.6
+execute if score SEA_ch6_event rng5 matches 12562 positioned 90013 95 -1926 run playsound minecraft:entity.generic.explode block @a ~ ~ ~ 50 0.9
+execute if score SEA_ch6_event rng5 matches 12562 positioned 90013 95 -1926 run particle minecraft:explosion_emitter ~ ~ ~ 5 5 5 0 12
+execute if score SEA_ch6_event rng5 matches 12562 positioned 90013 95 -1926 run particle minecraft:large_smoke ~ ~ ~ 5 5 5 0.2 180
+execute if score SEA_ch6_event rng5 matches 12562 positioned 90013 95 -1926 run kill @a[tag=SEAPT,x=89988,y=0,z=-1936,dx=300,dy=100,dz=200,gamemode=adventure]
 
 
 
