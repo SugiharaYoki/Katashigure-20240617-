@@ -10,7 +10,6 @@ give @a[tag=SEAPT] iron_ingot 20
 
 
 
-tp @a[tag=SEAPT] 90009 57 -1861 facing 90008 57 -1861
 
 scoreboard players set SEA_ch6_event rng5 12563
 
@@ -27,5 +26,6 @@ setblock 89989 90 -1923 fire
 setblock 89988 91 -1924 fire
 
 
+tp @a[tag=SEAPT] 90009 57 -1861 facing 90008 57 -1861
 
 forceload remove 90147 -1878
