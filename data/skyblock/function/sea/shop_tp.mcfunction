@@ -44,6 +44,7 @@ execute if score SEA_ch6_event rng5 matches 1112.. if entity @s[tag=SEAPT,tag=se
 execute if score SEA_ch6_event rng5 matches 1112.. if entity @s[tag=SEAPT,tag=sea_teleport19] unless entity @n[tag=SEAcrafter_foodless,distance=0..8] run tellraw @s [{"text":"   - "},{"text":"行政区：通讯总站  ","color":"white"},{"text":"〈失联〉","bold":true,"color":"red"}]
 
 execute if entity @s[tag=SEAPT,tag=sea_teleport21] if entity @n[tag=SEAcrafter_foodless,distance=0..8] run tellraw @s [{"text":"   - "},{"text":"水下研究设施：采矿处理区  ","color":"white"},{"text":"〈不支持传送〉","bold":true,"color":"gray"}]
+execute if entity @s[tag=SEAPT,tag=sea_teleport22] if entity @n[tag=SEAcrafter_foodless,distance=0..8] run tellraw @s [{"text":"   - "},{"text":"地底峡谷  ","color":"white"},{"text":"〈不支持传送〉","bold":true,"color":"gray"}]
 
 
 scoreboard players set @s sea_crafter 0
