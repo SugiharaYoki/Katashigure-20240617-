@@ -27,7 +27,7 @@
 生金
     raw_gold 钝金 100001
 兔子腿
-    claw 尸爪
+    claw 尸爪 100001
 恶魂之泪
     light_essence 光明精华 100001
     dark_essence 黑暗精华 100002
@@ -61,11 +61,14 @@
 弓
     bow_normal 弓·传统 100001
     bow_god 神祝弓 100002
+    bow_string 弓（弦束） 100003
 弩
     crossbow_normal 弩·传统 100001
     crossbow_piercing 弩·迅穿 100002
     crossbow_quick 弩·速填 100003
     crossbow_power 弩·强化 100004
+    crossbow_blade 刃弩·钢刺 100005
+    crossbow_v71 机械弩·柒壹式 100006
 盔甲
     铁
     iron_helmet_normal 铁盔 100001
@@ -80,8 +83,9 @@
     iron_chestplate_seek 铁胸甲·暗窥 100010
     iron_leggings_seek 铁护腿·暗窥 100011
     iron_boots_seek 铁靴·暗窥 100012
+    iron_chestplate_nether 试造狱铁铠 100013
+    iron_boots_nether 试造狱铁靴 100014
     皮革
-
     leather_helmet_normal 皮革帽 100001
     leather_chestplate_normal 皮革胸甲 100002
     leather_leggings_normal 皮革护腿 100003
@@ -90,6 +94,8 @@
     leather_chestplate_harden 皮革胸甲·加固 100006
     leather_leggings_harden 皮革护腿·加固 100007
     leather_boots_harden 皮革靴·加固 100008
+    leather_chestplate_fireproof 耐炎皮甲 100009
+    leather_boots_fireproof 耐炎皮鞋 100010
     锁链
     chainmail_helmet_normal 锁链头盔 100001
     chainmail_chestplate_normal 锁链胸甲 100002
@@ -103,23 +109,25 @@
     chainmail_chestplate_protect 锁链胸甲·反透 100010
     chainmail_leggings_protect 锁链护腿·反透 100011
     chainmail_boots_protect 锁链靴·反透 100012
-    spider_chesplate 蜘蛛狼铠甲 100013
+    spider_chestplate 蜘蛛狼铠甲 100013
     spider_leggings 蜘蛛狼护腿 100014
     spider_boots 蜘蛛狼短靴 100015
     金
     bee_helmet 蜂棘帽 100001
     bee_chestplate 黄蜂服 100002
+    golden_helmet 镀金工帽 100003
+    golden_leggings 镀金护腿 100004
     下界合金
     netherite_helmet_normal 合金头盔 100001
-    netherite_chesplate_normal 合金胸甲 100002
+    netherite_chestplate_normal 合金胸甲 100002
     netherite_leggings_normal 合金护腿 100003
     netherite_boots_normal 合金战靴 100004
     netherite_helmet_t1 unused 100005
-    netherite_chesplate_t1 试造防弹甲 100006
+    netherite_chestplate_t1 试造防弹甲 100006
     netherite_leggings_t1 试造防弹护腿 100007
     netherite_boots_t1 unused 100008
     netherite_helmet_t2 unused 100009
-    netherite_chesplate_t2 试造防弹甲·改 100010
+    netherite_chestplate_t2 试造防弹甲·改 100010
     netherite_leggings_t2 unused 100011
     netherite_boots_t2 unused 100012
 铲
@@ -131,9 +139,12 @@
     weapon_bone_shovel 硬骨铲 100001
     weapon_bone_shovel_pro 硬骨铲·改 100002
     weapon_bone_shovel_flame 硬骨铲·焰 100003
+    金
+    golden_shovel 镀金工锹 100001
 斧
     金
     weapon_gold_axe 纯金长柄斧 100001
+    golden_axe 镀金阔斧 100002
     铁
     iron_axe_normal 铁斧 100001
     iron_axe_chain_long 锁链长斧 100002
@@ -162,6 +173,7 @@
 剑
     金
     weapon_gold_sword 纯金单刃剑 100001
+    golden_sword 金锻剑 100002
     铁
     iron_sword_normal 铁剑 100001
     iron_sword_bonecutter 长铸剑·斩骨 100002
@@ -174,6 +186,7 @@
     rapier_normal 刺剑·传统 100009
     rapier_rain 刺剑·疾雨 100010
     rapier_wind 刺剑·逆雷 100011
+    
 
     石
     stone_sword_normal 石剑 100001
@@ -183,12 +196,17 @@
     wooden_sword_normal 木剑 100001
     wooden_sword_death 木剑·亡息 100002
     wooden_sword_zombie 木剑·尸化 100003
+镐
+    金
+    golden_pickaxe 金锻镐 100001
 盾
     shield_normal 盾牌 100001
     shield_solid 坚盾 100002
     shield_sharp 刺盾 100003
-    shield_solid_pro 坚盾·改 100004
-    shield_sharp_pro 刺盾·改 100005
+    shield_solid_t2 坚盾·改 100004
+    shield_sharp_t2 刺盾·改 100005
+    shield_solid_t3 坚盾·化型 100006
+    shield_sharp_t3 刺盾·怠伐 100007
 砖
     weapon_brick 小巧的猪板砖 100001
 末影水晶
