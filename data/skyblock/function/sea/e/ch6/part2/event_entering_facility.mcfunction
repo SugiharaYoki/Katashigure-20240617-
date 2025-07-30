@@ -73,6 +73,7 @@ execute if score SEA_ch6_event rng5 matches 3300 as @n[tag=SEAedwina] at @s run 
 execute if score SEA_ch6_event rng5 matches 3000..3900 if entity @a[tag=SEAPT,tag=!SEAPF,x=90224,y=176,z=-1880,dx=20,dy=6,dz=5] run scoreboard players set SEA_ch6_event rng5 4001
 execute if score SEA_ch6_event rng5 matches 3800..3900 run scoreboard players set SEA_ch6_event rng5 3800
 
+effect clear @s darkness
 
 execute if score SEA_ch6_event rng5 matches 4001 positioned 90225 177 -1869 as @n[tag=SEAnorma] unless entity @s[distance=0..5] run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
 
