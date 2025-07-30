@@ -4,6 +4,7 @@ execute if score SEA_ch6_event rng5 matches 2001..2002 as @n[tag=SEAedwina] at @
 execute if score SEA_ch6_event rng5 matches 2024 as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
 execute if score SEA_ch6_event rng5 matches 2024 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“我之前都走这条路到水下研究机构。这里相对狭窄很多，遇上怪物只能正面战斗。做好万全准备。”","color":"white","bold": false}]
 
+execute if score SEA_ch6_event rng5 matches 2040 as @n[tag=SEAedwina] at @s unless entity @a[tag=SEAPT,distance=..5] run tp @s @p[tag=SEAPT]
 execute if score SEA_ch6_event rng5 matches 2040 as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
 execute if score SEA_ch6_event rng5 matches 2040 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“提醒一下，这里的水被烤到了接近沸腾的温度，最好离水越远越好。”","color":"white","bold": false}]
 
@@ -26,7 +27,7 @@ execute if score SEA_ch6_event rng5 matches 2000..2900 if entity @a[tag=SEAPT,ta
 execute if score SEA_ch6_event rng5 matches 2800..2900 run scoreboard players set SEA_ch6_event rng5 2800
 
 #execute if score SEA_ch6_event rng5 matches 3001 run setblock 90190.05 178.19 -1872.00 air destroy
-execute if score SEA_ch6_event rng5 matches 3001 as @a[tag=SEAPT] at @s run playsound garden2.bgm.drowning2 music @s ~ ~ ~ 0.9 1.0
+execute if score SEA_ch6_event rng5 matches 3001 as @p[tag=SEAPT] at @s as @a[distance=0..150] at @s run playsound garden2.bgm.drowning2 music @s ~ ~ ~ 0.9 1.0
 execute if score SEA_ch6_event rng5 matches 3001 run particle explosion 90190.05 178.19 -1872.00 1 1 1 0.0 20
 execute if score SEA_ch6_event rng5 matches 3001 run particle smoke 90190.05 178.19 -1872.00 1 1 1 0.05 40
 execute if score SEA_ch6_event rng5 matches 3001 run playsound entity.generic.explode block @a 90190.05 178.19 -1872.00 5 0.9

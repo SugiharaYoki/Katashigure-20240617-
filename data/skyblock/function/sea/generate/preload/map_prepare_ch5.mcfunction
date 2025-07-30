@@ -622,6 +622,8 @@ clone 90134 -50 98 90142 -42 102 90134 100 98
 
 fill 90134 131 34 90134 130 31 lever[facing=east,powered=false]
 fill 90138 129 32 90138 130 33 iron_bars
+fill 90144 129 32 90144 130 33 iron_bars
+fill 90152 130 29 90152 129 29 deepslate_tiles
 
 fill 90140 131 30 90142 130 30 lever[facing=south]
 fill 90142 131 35 90140 130 35 lever[facing=north]
