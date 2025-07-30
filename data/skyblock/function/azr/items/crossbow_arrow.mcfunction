@@ -1,1 +1,1 @@
-give @s minecraft:music_disc_cat[minecraft:item_model="tipped_arrow",potion_contents={custom_color:-1},!minecraft:jukebox_playable,custom_name='{"text":"机械箭","italic": false}',custom_data={crossbow_arrow:1b},custom_model_data={floats:[100002]}]
+give @s minecraft:music_disc_cat[minecraft:item_model="tipped_arrow",potion_contents={custom_color:-1},!minecraft:jukebox_playable,custom_name='{"text":"机械箭","italic": false}',custom_data={crossbow_arrow:1b},custom_model_data={floats:[100002]},max_stack_size=16]
