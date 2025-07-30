@@ -20,6 +20,11 @@ execute positioned 90147.99 171.00 -1878.01 run kill @e[distance=0..200,tag=SEAn
 execute positioned 90147.99 171.00 -1878.01 run kill @e[distance=0..200,type=warden]
 execute positioned 90147.99 171.00 -1878.01 run kill @e[distance=0..200,type=item]
 
+execute store result score SEA_ch6_event rng10 if entity @e[tag=SEAedwina]
+execute if score SEA_ch6_event rng10 matches 2.. run kill @n[tag=SEAedwina,tag=!SEAedwina_attackable]
+execute store result score SEA_ch6_event rng10 if entity @e[tag=SEAedwina]
+execute if score SEA_ch6_event rng10 matches 2.. run kill @n[tag=SEAedwina,tag=!SEAedwina_attackable]
+kill @e[tag=SEAnorma,type=zombie_villager]
 execute unless entity @n[tag=SEAedwina] positioned 90147.99 171.00 -1878.01 run function skyblock:sea/m/unique/npc_edwina
 execute unless entity @n[tag=SEAedwina] positioned 90147.99 171.00 -1878.01 run function skyblock:sea/e/ch6/edwina/init
 
@@ -75,11 +80,6 @@ summon minecraft:interaction 90007 58.3 -1861 {CustomName:'[{"text":"多功能�
 summon minecraft:marker 90008 57 -1861 {Tags:["SEAcrafter_tp","SEAcrafter_tp22"]}
 
 
-execute store result score SEA_ch6_event rng10 if entity @e[tag=SEAedwina]
-execute if score SEA_ch6_event rng10 matches 2.. run kill @n[tag=SEAedwina,tag=!SEAedwina_attackable]
-execute store result score SEA_ch6_event rng10 if entity @e[tag=SEAedwina]
-execute if score SEA_ch6_event rng10 matches 2.. run kill @n[tag=SEAedwina,tag=!SEAedwina_attackable]
-kill @e[tag=SEAnorma,type=zombie_villager]
 
 setblock 90151 133 -1857 air
 execute if items entity @a[tag=SEAPT] container.* golden_sword run setblock 90151 133 -1857 minecraft:skeleton_skull[rotation=10]
