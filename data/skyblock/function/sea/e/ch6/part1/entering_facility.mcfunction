@@ -111,7 +111,10 @@ setblock 90016 89 -1926 air
 setblock 90011 91 -1924 air
 setblock 90011 94 -1928 air
 
-
+fill 89988 90 -1924 89989 89 -1924 air
+fill 89988 89 -1923 89989 88 -1923 air
+fill 89990 91 -1923 89990 89 -1923 air
+setblock 89989 91 -1924 minecraft:air
 
 
 
