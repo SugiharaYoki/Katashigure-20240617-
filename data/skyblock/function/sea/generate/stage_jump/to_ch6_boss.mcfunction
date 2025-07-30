@@ -1,5 +1,5 @@
 
-tp @a[x=90000,y=100,z=100,distance=..5000,scores={sea_progress=..14},gamemode=!spectator] -43 55 0
+tp @a[x=90000,y=100,z=100,distance=..5000,scores={sea_progress=..16},gamemode=!spectator] -43 55 0
 
 
 function skyblock:sea/generate/stage_jump/to_ch6
