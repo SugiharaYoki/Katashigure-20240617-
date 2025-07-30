@@ -1,0 +1,2 @@
+
+give @s minecraft:splash_potion[potion_contents={potion:"swiftness",custom_effects:[{id:"speed",duration:3600}]},custom_name='[{"text": "「迅捷瓶」","color":"light_purple","italic":false},{"text":"lv1","color":"blue","italic":false}]']

@@ -55,7 +55,8 @@ scoreboard objectives remove melonCount
 scoreboard objectives remove Azr_skillPoints
 scoreboard objectives remove Azr_shopChapter
 scoreboard objectives remove AzrTimerStack
-scoreboard objectives remove EntityTimer
+scoreboard objectives remove AzrSlotRecord
+scoreboard objectives remove AzrSlotRecord_temp
 scoreboard objectives remove temp_timer1
 scoreboard objectives remove temp_timer2
 scoreboard objectives remove temp_timer3
