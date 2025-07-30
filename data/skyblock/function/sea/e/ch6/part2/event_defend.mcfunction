@@ -227,6 +227,7 @@ execute if score SEA_ch6_event rng5 matches 11900..11999 run scoreboard players 
 
 
 execute if score SEA_ch6_event rng5 matches 12007 as @n[tag=SEAedwina] at @s unless entity @a[tag=SEAPT,distance=..7] run tp @s @p[tag=SEAPT]
+execute if score SEA_ch6_event rng5 matches 12007 as @n[tag=SEAedwina] at @s run tag @s add SEAedwina_run
 execute if score SEA_ch6_event rng5 matches 12008 run particle explosion 90038 92 -1926 1 1 1 0.0 5
 execute if score SEA_ch6_event rng5 matches 12008 run particle smoke 90038 92 -1926 1 1 1 0.05 15
 execute if score SEA_ch6_event rng5 matches 12008 run playsound entity.generic.explode block @a 90038 92 -1926 2 0.9

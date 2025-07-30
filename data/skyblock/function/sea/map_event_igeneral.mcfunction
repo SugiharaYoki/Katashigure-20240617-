@@ -42,6 +42,7 @@ execute if block 90074 103 136 air as @n[tag=SEAch4_spawn_timer_boss4_fast] at @
 execute if entity @n[tag=sea_raphael_sword,type=armor_stand] run function skyblock:sea/p/weapon/raphael_sword_timer
 
 #艾德雯娜技能组
-execute as @n[tag=SEAedwina_ch6] at @s run function skyblock:sea/e/ch6/edwina/core
+execute as @n[tag=SEAedwina_ch6,tag=!SEAedwina_run] at @s run function skyblock:sea/e/ch6/edwina/core
+execute as @n[tag=SEAedwina_ch6,tag=SEAedwina_run] at @s run function skyblock:sea/e/ch6/edwina/core_run
 
 
