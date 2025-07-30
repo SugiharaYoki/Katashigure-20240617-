@@ -14,6 +14,6 @@
         }
     },
     "rewards": {
-        "function": "skyblock:azr/system_sub/__crossbow_fill_arrow"
+        "function": "skyblock:azr/system_sub/__crossbow_trigger"
     }
 }
