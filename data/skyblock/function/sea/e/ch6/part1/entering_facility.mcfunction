@@ -1,6 +1,7 @@
 forceload add 90142 -1886 90209 -1838
 forceload add 90011 -1953 90109 -1888
 forceload add 89977 -1938 90038 -1925
+forceload add 90012 -1858 90007 -1863
 
 execute as @n[tag=SEAedwina] at @s run tp @s 90147.99 171.00 -1878.01
 execute as @a[tag=SEAPT] at @s run tp @s 90147.99 171.00 -1878.01
@@ -130,3 +131,4 @@ setblock 90009 57 -1858 chest[facing=north]
 forceload remove 90011 -1953 90109 -1888
 forceload remove 90142 -1886 90209 -1838
 forceload remove 89977 -1938 90038 -1925
+forceload remove 90012 -1858 90007 -1863
