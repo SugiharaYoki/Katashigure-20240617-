@@ -248,14 +248,38 @@ execute if score SEA_ch6_event rng5 matches 12010.. as @n[tag=SEAnorma_warden] a
 
 execute if score SEA_ch6_event rng5 matches 12012 positioned 90014 96 -1939 run function skyblock:sea/m/unique/npc_yuehan
 execute if score SEA_ch6_event rng5 matches 12014..12025 as @n[tag=SEAyuehan] at @s run tp @s ~ ~ ~1 facing ~0.5 ~-0.3 ~2
-execute if score SEA_ch6_event rng5 matches 12501 as @n[tag=SEAyuehan] at @s run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
-execute if score SEA_ch6_event rng5 matches 12501 as @n[tag=SEAyuehan] at @s run tellraw @a[distance=0..250] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“嘿傻逼诺玛，看这里！！”","color":"white","bold": false}]
+
+execute if score SEA_ch6_event rng5 matches 8095..12499 if entity @a[tag=SEAPT,tag=!SEAPF,x=90004,y=88,z=-1928,dx=3,dy=5,dz=5] run scoreboard players set SEA_ch6_event rng5 12501
+execute if score SEA_ch6_event rng5 matches 12498..12499 run scoreboard players set SEA_ch6_event rng5 12498
+
+
+execute if score SEA_ch6_event rng5 matches 12501 as @n[tag=SEAedwina] at @s run tag @s remove SEAedwina_run
+execute if score SEA_ch6_event rng5 matches 12501 as @n[tag=SEAedwina] at @s run tag @s remove SEAedwina_attackable
+execute if score SEA_ch6_event rng5 matches 12501 as @n[tag=SEAedwina] at @s run tp 90003 89 -1925
+execute if score SEA_ch6_event rng5 matches 12501 as @n[tag=SEAedwina] at @s run tp 90003 89 -1925
+execute if score SEA_ch6_event rng5 matches 12501 as @a[tag=SEAPT] at @s run effect clear @s darkness
+execute if score SEA_ch6_event rng5 matches 12501 as @a[tag=SEAPT] at @s run effect clear @s slowness
+execute if score SEA_ch6_event rng5 matches 12501 as @a[tag=SEAnorma_warden] at @s run effect clear @s speed
+execute if score SEA_ch6_event rng5 matches 12501 as @a[tag=SEAnorma_warden] at @s run effect clear @s strength
+execute if score SEA_ch6_event rng5 matches 12501 as @a[tag=SEAPT] at @s run attribute @s minecraft:movement_speed modifier add sea:marilyn_01 -1 add_value
+execute if score SEA_ch6_event rng5 matches 12501 as @a[tag=SEAPT] at @s run attribute @s minecraft:jump_strength modifier add sea:marilyn_01 -50 add_value
+
+execute if score SEA_ch6_event rng5 matches 12030 as @n[tag=SEAnorma_warden] at @s run tellraw @a[distance=0..150] [{"text":"诺玛：","color":"red","bold": true},{"text":"\n“你是……！！逃不逃不掉不掉的……！”","color":"white","bold": false}]
+execute if score SEA_ch6_event rng5 matches 12060 as @a[tag=SEAPT] at @s run effect give @s darkness infinite 0 false
+execute if score SEA_ch6_event rng5 matches 12060 as @a[tag=SEAPT] at @s run effect give @s slowness infinite 9 true
+execute if score SEA_ch6_event rng5 matches 12060 as @n[tag=SEAnorma_warden] at @s run effect give @s speed infinite 3 true
+execute if score SEA_ch6_event rng5 matches 12060 as @n[tag=SEAnorma_warden] at @s run effect give @s strength infinite 3 true
+execute if score SEA_ch6_event rng5 matches 12505 as @n[tag=SEAnorma_warden] at @s run tellraw @a[distance=0..150] [{"text":"诺玛：","color":"red","bold": true},{"text":"\n“受死……吧！！！”","color":"white","bold": false}]
+
+execute if score SEA_ch6_event rng5 matches 12511 as @n[tag=SEAyuehan] at @s run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
+execute if score SEA_ch6_event rng5 matches 12511 as @n[tag=SEAyuehan] at @s run tellraw @a[distance=0..250] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“嘿，臭傻逼狗娘养的，有本事看这里！！”","color":"white","bold": false}]
+
+execute if score SEA_ch6_event rng5 matches 12503 as @n[tag=SEAyuehan] at @s run tp @s ~ ~ ~ facing entity @n[tag=SEAyuehan]
 
 
 
-
-
-
+execute if score SEA_ch6_event rng5 matches 12561 as @a[tag=SEAPT] at @s run attribute @s minecraft:movement_speed modifier remove sea:marilyn_01
+execute if score SEA_ch6_event rng5 matches 12561 as @a[tag=SEAPT] at @s run attribute @s minecraft:jump_strength modifier remove sea:marilyn_01
 
 
 
