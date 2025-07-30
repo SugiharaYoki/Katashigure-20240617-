@@ -298,10 +298,26 @@ execute if score SEA_ch6_event rng5 matches 12530 as @n[tag=SEAyuehan] at @s run
 execute if score SEA_ch6_event rng5 matches 12540 as @n[tag=SEAyuehan] at @s run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
 execute if score SEA_ch6_event rng5 matches 12540 as @n[tag=SEAyuehan] at @s run tellraw @a[distance=0..250] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“操你妈逼的！！我叫沈越涵，记住老子的名字，老子要把你亲手送到你想去的天堂！！！”","color":"white","bold": false}]
 
+execute if score SEA_ch6_event rng5 matches 12542 positioned 90013 95 -1926 run playsound minecraft:entity.generic.explode block @a ~ ~ ~ 50 1.1
+execute if score SEA_ch6_event rng5 matches 12542 positioned 90013 95 -1926 run playsound minecraft:entity.generic.explode block @a ~ ~ ~ 50 0.8
+execute if score SEA_ch6_event rng5 matches 12542 positioned 90013 95 -1926 run particle minecraft:explosion_emitter ~ ~ ~ 0 0 0 0 1
 
+execute if score SEA_ch6_event rng5 matches 12544..12545 positioned 90013 95 -1926 run playsound minecraft:entity.generic.explode block @a ~ ~ ~ 50 1.1
+execute if score SEA_ch6_event rng5 matches 12544..12545 positioned 90013 95 -1926 run playsound minecraft:entity.generic.explode block @a ~ ~ ~ 50 0.8
+execute if score SEA_ch6_event rng5 matches 12544..12545 positioned 90013 95 -1926 run particle minecraft:explosion_emitter ~ ~ ~ 2 2 2 0 5
+execute if score SEA_ch6_event rng5 matches 12547 positioned 90013 95 -1926 run playsound minecraft:entity.generic.explode block @a ~ ~ ~ 50 1.1
+execute if score SEA_ch6_event rng5 matches 12547 positioned 90013 95 -1926 run playsound minecraft:entity.generic.explode block @a ~ ~ ~ 50 0.8
+execute if score SEA_ch6_event rng5 matches 12547 positioned 90013 95 -1926 run playsound minecraft:entity.generic.explode block @a ~ ~ ~ 50 0.6
+execute if score SEA_ch6_event rng5 matches 12547 positioned 90013 95 -1926 run playsound minecraft:entity.generic.explode block @a ~ ~ ~ 50 0.9
+execute if score SEA_ch6_event rng5 matches 12547 positioned 90013 95 -1926 run particle minecraft:explosion_emitter ~ ~ ~ 3 3 3 0 8
+execute if score SEA_ch6_event rng5 matches 12547 positioned 90013 95 -1926 run particle minecraft:large_smoke ~ ~ ~ 3 3 3 0.1 100
 
-
-
+execute if score SEA_ch6_event rng5 matches 12550 positioned 90013 95 -1926 run playsound minecraft:entity.generic.explode block @a ~ ~ ~ 50 1.1
+execute if score SEA_ch6_event rng5 matches 12550 positioned 90013 95 -1926 run playsound minecraft:entity.generic.explode block @a ~ ~ ~ 50 0.8
+execute if score SEA_ch6_event rng5 matches 12550 positioned 90013 95 -1926 run playsound minecraft:entity.generic.explode block @a ~ ~ ~ 50 0.6
+execute if score SEA_ch6_event rng5 matches 12550 positioned 90013 95 -1926 run playsound minecraft:entity.generic.explode block @a ~ ~ ~ 50 0.9
+execute if score SEA_ch6_event rng5 matches 12550 positioned 90013 95 -1926 run particle minecraft:explosion_emitter ~ ~ ~ 5 5 5 0 12
+execute if score SEA_ch6_event rng5 matches 12550 positioned 90013 95 -1926 run particle minecraft:large_smoke ~ ~ ~ 5 5 5 0.2 180
 
 
 
