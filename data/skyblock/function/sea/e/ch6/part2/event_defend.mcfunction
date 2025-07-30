@@ -302,8 +302,17 @@ execute if score SEA_ch6_event rng5 matches 12542 positioned 90013 95 -1926 run 
 execute if score SEA_ch6_event rng5 matches 12542 positioned 90013 95 -1926 run playsound minecraft:entity.generic.explode block @a ~ ~ ~ 50 0.8
 execute if score SEA_ch6_event rng5 matches 12542 positioned 90013 95 -1926 run particle minecraft:explosion_emitter ~ ~ ~ 0 0 0 0 1
 
-execute if score SEA_ch6_event rng5 matches 12545 positioned 90013 95 -1926 run kill @n[tag=SEAyuehan,distance=0..100]
-execute if score SEA_ch6_event rng5 matches 12545 positioned 90013 95 -1926 run kill @n[tag=SEAnorma_warden,distance=0..100]
+execute if score SEA_ch6_event rng5 matches 12547 positioned 90013 95 -1926 run kill @n[tag=SEAyuehan,distance=0..100]
+execute if score SEA_ch6_event rng5 matches 12550 positioned 90013 95 -1926 run kill @n[tag=SEAnorma_warden,distance=0..100]
+
+execute if score SEA_ch6_event rng5 matches 12544 positioned 90013 95 -1926 run setblock 90012 89 -1925 air
+execute if score SEA_ch6_event rng5 matches 12544 positioned 90013 95 -1926 run setblock 90010 89 -1927 air
+execute if score SEA_ch6_event rng5 matches 12544 positioned 90013 95 -1926 run setblock 90013 96 -1925 air
+execute if score SEA_ch6_event rng5 matches 12544 positioned 90013 95 -1926 run setblock 90015 96 -1927 air
+execute if score SEA_ch6_event rng5 matches 12544 positioned 90013 95 -1926 run setblock 90014 89 -1927 air
+execute if score SEA_ch6_event rng5 matches 12544 positioned 90013 95 -1926 run setblock 90016 89 -1926 air
+execute if score SEA_ch6_event rng5 matches 12544 positioned 90013 95 -1926 run setblock 90011 91 -1924 air
+execute if score SEA_ch6_event rng5 matches 12544 positioned 90013 95 -1926 run setblock 90011 94 -1928 air
 
 execute if score SEA_ch6_event rng5 matches 12544..12545 positioned 90013 95 -1926 run playsound minecraft:entity.generic.explode block @a ~ ~ ~ 50 1.1
 execute if score SEA_ch6_event rng5 matches 12544..12545 positioned 90013 95 -1926 run playsound minecraft:entity.generic.explode block @a ~ ~ ~ 50 0.8

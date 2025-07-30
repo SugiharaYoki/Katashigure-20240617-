@@ -101,6 +101,16 @@ setblock 90112 105 -1903 furnace[facing=west]
 setblock 90112 105 -1901 furnace[facing=west]
 fill 90038 91 -1926 90038 92 -1926 air
 
+setblock 90012 89 -1925 air
+setblock 90010 89 -1927 air
+setblock 90013 96 -1925 air
+setblock 90015 96 -1927 air
+setblock 90014 89 -1927 air
+setblock 90016 89 -1926 air
+setblock 90011 91 -1924 air
+setblock 90011 94 -1928 air
+
+
 
 
 
