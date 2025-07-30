@@ -246,6 +246,48 @@ execute if score SEA_ch6_event rng5 matches 12010.. as @n[tag=SEAnorma_warden] a
 execute if score SEA_ch6_event rng5 matches 12010.. as @n[tag=SEAnorma_warden] at @s positioned ~ ~1 ~ rotated ~ 0 run function skyblock:sea/e/ch6/part2/norma_destroy_blocks_particle
 
 
+execute if score SEA_ch6_event rng5 matches 12012 positioned 90014 96 -1939 run function skyblock:sea/m/unique/npc_yuehan
+execute if score SEA_ch6_event rng5 matches 12014..12025 as @n[tag=SEAyuehan] at @s run tp @s ~ ~ ~1 facing ~0.5 ~-0.3 ~2
+execute if score SEA_ch6_event rng5 matches 12501 as @n[tag=SEAyuehan] at @s run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
+execute if score SEA_ch6_event rng5 matches 12501 as @n[tag=SEAyuehan] at @s run tellraw @a[distance=0..250] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“嘿傻逼诺玛，看这里！！”","color":"white","bold": false}]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
