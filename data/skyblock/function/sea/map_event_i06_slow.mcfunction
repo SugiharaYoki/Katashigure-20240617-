@@ -38,7 +38,7 @@ execute if score SEA_ch6_event rng5 matches ..0 unless block 90144 161 124 air i
 execute if score SEA_ch6_event rng5 matches 1..999 positioned 90144 161 124 run function skyblock:sea/e/ch6/part1/event_f3_whoismarilyn
 execute if score SEA_ch6_event rng5 matches 1000..1999 positioned 90144 161 124 run function skyblock:sea/e/ch6/part1/event_f3_norma
 
-execute if score SEA_ch6_event rng5 matches 2000.. positioned 90144 161 124 run function skyblock:sea/e/ch6/part2/rule_water
+execute if score SEA_ch6_event rng5 matches 2000..12563 positioned 90144 161 124 run function skyblock:sea/e/ch6/part2/rule_water
 execute if score SEA_ch6_event rng5 matches 2000..8999 positioned 90144 161 124 run function skyblock:sea/e/ch6/part2/event_entering_facility
 execute if score SEA_ch6_event rng5 matches 9000.. positioned 90144 161 124 run function skyblock:sea/e/ch6/part2/event_defend
 
