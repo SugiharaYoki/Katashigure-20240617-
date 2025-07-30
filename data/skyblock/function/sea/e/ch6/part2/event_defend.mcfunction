@@ -351,6 +351,8 @@ execute if score SEA_ch6_event rng5 matches 12563 run fill 89990 91 -1923 89990 
 execute if score SEA_ch6_event rng5 matches 12563 run setblock 89989 91 -1924 minecraft:gravel
 
 
+execute if score SEA_ch6_event rng5 matches 12563 positioned 89988 89 -1923 run particle minecraft:explosion_emitter ~ ~ ~ 0 0 0 0.2 1
+execute if score SEA_ch6_event rng5 matches 12563 positioned 89988 89 -1923 run particle minecraft:large_smoke ~ ~ ~ 2 2 2 0.2 180
 
 
 
