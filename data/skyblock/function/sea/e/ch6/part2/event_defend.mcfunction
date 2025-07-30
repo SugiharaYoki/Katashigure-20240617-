@@ -248,9 +248,9 @@ execute if score SEA_ch6_event rng5 matches 12010.. as @n[tag=SEAnorma_warden] a
 
 
 execute if score SEA_ch6_event rng5 matches 12012 positioned 90014 96 -1939 run function skyblock:sea/m/unique/npc_yuehan
-execute if score SEA_ch6_event rng5 matches 12014..12025 as @n[tag=SEAyuehan] at @s run tp @s ~ ~ ~1 facing ~0.5 ~-0.3 ~2
+execute if score SEA_ch6_event rng5 matches 12014..12026 as @n[tag=SEAyuehan] at @s run tp @s ~ ~ ~1 facing ~0.5 ~-0.3 ~2
 
-execute if score SEA_ch6_event rng5 matches 8095..12499 if entity @a[tag=SEAPT,tag=!SEAPF,x=90002,y=88,z=-1928,dx=4,dy=5,dz=5] run scoreboard players set SEA_ch6_event rng5 12501
+execute if score SEA_ch6_event rng5 matches 8095..12499 if entity @a[tag=SEAPT,tag=!SEAPF,x=90000,y=88,z=-1928,dx=4,dy=5,dz=5] run scoreboard players set SEA_ch6_event rng5 12501
 execute if score SEA_ch6_event rng5 matches 12498..12499 run scoreboard players set SEA_ch6_event rng5 12498
 
 
@@ -278,6 +278,8 @@ execute if score SEA_ch6_event rng5 matches 12502..12506 as @n[tag=SEAnorma_ward
 execute if score SEA_ch6_event rng5 matches 12501 as @n[tag=SEAnorma_warden] at @s run attribute @s minecraft:movement_speed modifier add sea:marilyn_01 -10 add_value
 execute if score SEA_ch6_event rng5 matches 12505 as @n[tag=SEAnorma_warden] at @s run tellraw @a[distance=0..150] [{"text":"诺玛：","color":"red","bold": true},{"text":"\n“受死……吧！！！”","color":"white","bold": false}]
 
+execute if score SEA_ch6_event rng5 matches 12512 as @n[tag=SEAyuehan] at @s run data modify entity @s NoAI set value 1b
+execute if score SEA_ch6_event rng5 matches 12512 as @n[tag=SEAyuehan] at @s run tp @s ~-1 ~ ~ facing ~-2 ~-0.5 ~
 execute if score SEA_ch6_event rng5 matches 12511 as @n[tag=SEAyuehan] at @s run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
 execute if score SEA_ch6_event rng5 matches 12511 as @n[tag=SEAyuehan] at @s run tellraw @a[distance=0..250] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“嘿傻逼！！你这畜生养的，有本事看这里！！”","color":"white","bold": false}]
 execute if score SEA_ch6_event rng5 matches 12513 as @n[tag=SEAnorma_warden] at @s run tp @s ~ ~ ~ facing entity @n[tag=SEAyuehan]
