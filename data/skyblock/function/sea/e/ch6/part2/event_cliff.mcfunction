@@ -133,7 +133,7 @@ execute if score SEA_ch6_event rng5 matches 12564 run tag @n[tag=SEAedwina] add 
 execute if score SEA_ch6_event rng5 matches 12563 positioned 89988 89 -1923 run particle minecraft:explosion_emitter ~ ~ ~ 0 0 0 0.2 1
 execute if score SEA_ch6_event rng5 matches 12563 positioned 89988 89 -1923 run particle minecraft:large_smoke ~ ~ ~ 2 2 2 0.2 180
 
-
+execute if score SEA_ch6_event rng5 matches 12563 run scoreboard players set @a[tag=SEAPT,scores={sea_progress=..16}] sea_progress 17
 
 
 
