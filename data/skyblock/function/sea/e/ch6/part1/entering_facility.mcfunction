@@ -64,9 +64,14 @@ item replace block 90149 133 -1884 container.13 with golden_carrot 5
 
 summon minecraft:interaction 90158 134.3 -1887 {CustomName:'[{"text":"器械式治疗仪"}]',Tags:["SEAaidbox"]}
 summon minecraft:interaction 90118 120.3 -1862 {CustomName:'[{"text":"器械式治疗仪"}]',Tags:["SEAaidbox"]}
+summon minecraft:interaction 90007 58.3 -1860 {CustomName:'[{"text":"器械式治疗仪"}]',Tags:["SEAaidbox"]}
+
 
 summon minecraft:interaction 90112 106.3 -1902 {CustomName:'[{"text":"多功能工作站"}]',Tags:["SEAcrafter","SEAcrafter_foodless","SEAcrafter21"]}
 summon minecraft:marker 90111 105 -1902 {Tags:["SEAcrafter_tp","SEAcrafter_tp21"]}
+
+summon minecraft:interaction 90007 58.3 -1861 {CustomName:'[{"text":"多功能工作站"}]',Tags:["SEAcrafter","SEAcrafter_foodless","SEAcrafter22"]}
+summon minecraft:marker 90008 57 -1861 {Tags:["SEAcrafter_tp","SEAcrafter_tp22"]}
 
 
 execute store result score SEA_ch6_event rng10 if entity @e[tag=SEAedwina]
@@ -115,8 +120,12 @@ fill 89988 90 -1924 89989 89 -1924 air
 fill 89988 89 -1923 89989 88 -1923 air
 fill 89990 91 -1923 89990 89 -1923 air
 setblock 89989 91 -1924 minecraft:air
+setblock 90011 57 -1858 furnace[facing=north]
 
 
+
+setblock 90009 59 -1858 chest[facing=north]
+setblock 90009 57 -1858 chest[facing=north]
 
 forceload remove 90011 -1953 90109 -1888
 forceload remove 90142 -1886 90209 -1838
