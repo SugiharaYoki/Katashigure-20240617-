@@ -349,6 +349,8 @@ execute if score SEA_ch6_event rng5 matches 12563 run fill 89988 90 -1924 89989 
 execute if score SEA_ch6_event rng5 matches 12563 run fill 89988 89 -1923 89989 88 -1923 gravel
 execute if score SEA_ch6_event rng5 matches 12563 run fill 89990 91 -1923 89990 89 -1923 gravel
 execute if score SEA_ch6_event rng5 matches 12563 run setblock 89989 91 -1924 minecraft:gravel
+execute if score SEA_ch6_event rng5 matches 12563 run setblock 89989 90 -1923 fire
+execute if score SEA_ch6_event rng5 matches 12563 run setblock 89988 91 -1924 fire
 
 execute if score SEA_ch6_event rng5 matches 12501..12564 run spawnpoint @a[tag=SEAPT] 89987 88 -1922
 execute if score SEA_ch6_event rng5 matches 12564 run tag @n[tag=SEAedwina] add SEAedwina_attackable
