@@ -43,6 +43,7 @@ scoreboard objectives add AZR_chainKillUpg_defensecharge dummy
 scoreboard objectives add AZR_chainKillUpg_antichargedecrease dummy
 scoreboard objectives add AZR_chainKillUpg_attackspeed dummy
 scoreboard objectives add AZR_arrow_energy dummy
+scoreboard objectives add EntityTimer dummy
 
 #skills
 #skill 1 幽毒若水 lv3 - 厄渊毒霾 lv2

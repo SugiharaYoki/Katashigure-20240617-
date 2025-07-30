@@ -24,7 +24,8 @@ scoreboard objectives add Azr_Shop_rng12 dummy
 scoreboard objectives add Azr_Shop_rng13 dummy
 scoreboard objectives add melonCount dummy
 scoreboard objectives add AzrTimerStack dummy
-scoreboard objectives add EntityTimer dummy
+scoreboard objectives add AzrSlotRecord dummy
+scoreboard objectives add AzrSlotRecord_temp dummy
 # scoreboard objectives add temp_timer1 dummy
 # scoreboard objectives add temp_timer2 dummy
 # scoreboard objectives add temp_timer3 dummy
