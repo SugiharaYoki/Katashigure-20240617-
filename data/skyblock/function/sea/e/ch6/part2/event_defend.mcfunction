@@ -287,6 +287,8 @@ execute if score SEA_ch6_event rng5 matches 12503 as @n[tag=SEAyuehan] at @s run
 execute if score SEA_ch6_event rng5 matches 12518 as @n[tag=SEAyuehan] at @s run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
 execute if score SEA_ch6_event rng5 matches 12518 as @n[tag=SEAyuehan] at @s run tellraw @a[distance=0..250] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“我身上有炸弹！！！\n还愣着干什么，快跑啊啊啊啊啊啊！！！！”","color":"white","bold": false}]
 
+execute if score SEA_ch6_event rng5 matches 12525 as @n[tag=SEAnorma_warden] at @s run tellraw @a[distance=0..150] [{"text":"诺玛：","color":"red","bold": true},{"text":"\n“可恶可恶人的恶人类，就凭就凭你也你也想阻止……！！”","color":"white","bold": false}]
+
 execute if score SEA_ch6_event rng5 matches 12518 as @a[tag=SEAPT] at @s run attribute @s minecraft:movement_speed modifier remove sea:marilyn_01
 execute if score SEA_ch6_event rng5 matches 12518 as @a[tag=SEAPT] at @s run attribute @s minecraft:jump_strength modifier remove sea:marilyn_01
 
