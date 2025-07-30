@@ -219,10 +219,10 @@ execute if score SEA_ch6_event rng5 matches 11186 as @n[tag=SEAedwina] at @s run
 execute if score SEA_ch6_event rng5 matches 11186 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“他是个好人，一定会升上天堂的。虽然要是没有天使的存在，忒尔克西的大家也不至于落到如此田地。”","color":"white","bold": false}]
 
 
-execute if score SEA_ch6_event rng5 matches 10900.. run kill @a[tag=SEAPT,gamemode=adventure,x=89900,y=0,z=-2000,dx=130,dy=88,dz=90]
+execute if score SEA_ch6_event rng5 matches 10900.. run kill @a[tag=SEAPT,gamemode=adventure,x=89900,y=0,z=-2000,dx=130,dy=87,dz=90]
 
 
-execute if score SEA_ch6_event rng5 matches 8095..11999 if entity @a[tag=SEAPT,tag=!SEAPF,x=90025,y=91,z=-1927,dx=8,dy=3,dz=4] run scoreboard players set SEA_ch6_event rng5 12000
+execute if score SEA_ch6_event rng5 matches 8095..11999 if entity @a[tag=SEAPT,tag=!SEAPF,x=90025,y=91,z=-1927,dx=8,dy=3,dz=4] run scoreboard players set SEA_ch6_event rng5 12006
 execute if score SEA_ch6_event rng5 matches 11900..11999 run scoreboard players set SEA_ch6_event rng5 11900
 
 
@@ -233,6 +233,7 @@ execute if score SEA_ch6_event rng5 matches 12008 run particle smoke 90038 92 -1
 execute if score SEA_ch6_event rng5 matches 12008 run playsound entity.generic.explode block @a 90038 92 -1926 2 0.9
 execute if score SEA_ch6_event rng5 matches 12008 run fill 90038 91 -1926 90038 92 -1926 gravel
 
+execute if score SEA_ch6_event rng5 matches 12007 as @n[tag=SEAedwina] at @s run kill @e[tag=SEAnorma_warden,distance=..1000]
 execute if score SEA_ch6_event rng5 matches 12008 positioned 90037 91 -1926 run function skyblock:sea/m/unique/warden_norma_final
 execute if score SEA_ch6_event rng5 matches 12008 as @p[tag=SEAPT] at @s as @a[distance=0..150] at @s run playsound garden2.bgm.drowning3 music @s ~ ~ ~ 1.0 1.0
 
@@ -253,12 +254,11 @@ execute if score SEA_ch6_event rng5 matches 8095..12499 if entity @a[tag=SEAPT,t
 execute if score SEA_ch6_event rng5 matches 12498..12499 run scoreboard players set SEA_ch6_event rng5 12498
 
 
-execute if score SEA_ch6_event rng5 matches 12501 as @n[tag=SEAedwina] at @s run kill @e[tag=SEAnorma_warden,distance=..1000]
 execute if score SEA_ch6_event rng5 matches 12501 as @n[tag=SEAedwina] at @s run tag @s remove SEAedwina_run
 execute if score SEA_ch6_event rng5 matches 12501 as @n[tag=SEAedwina] at @s run tag @s remove SEAedwina_attackable
 execute if score SEA_ch6_event rng5 matches 12501 as @n[tag=SEAedwina] at @s run tp 90003 89 -1925
 execute if score SEA_ch6_event rng5 matches 12501 as @n[tag=SEAedwina] at @s run tp 90003 89 -1925
-execute if score SEA_ch6_event rng5 matches 12501 as @a[tag=SEAPT] at @s run effect clear @s darkness
+execute if score SEA_ch6_event rng5 matches 12001.. as @a[tag=SEAPT] at @s run effect clear @s darkness
 execute if score SEA_ch6_event rng5 matches 12501 as @a[tag=SEAPT] at @s run effect clear @s slowness
 execute if score SEA_ch6_event rng5 matches 12501 as @a[tag=SEAnorma_warden] at @s run effect clear @s speed
 execute if score SEA_ch6_event rng5 matches 12501 as @a[tag=SEAnorma_warden] at @s run effect clear @s strength
