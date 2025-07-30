@@ -216,16 +216,20 @@ execute if score SEA_ch6_event rng5 matches 11152 as @n[tag=SEAedwina] at @s run
 execute if score SEA_ch6_event rng5 matches 11152 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“……抱歉。我连他的尸体都没找到。当时洋流切变，我不清楚他到底被卷到了哪里。我只找到了他的随身物品，漂在水上。”","color":"white","bold": false}]
 execute if score SEA_ch6_event rng5 matches 11170 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“我还……挺想和他做朋友的。在一个没有这些狗屁天使和细菌的世界里。”","color":"white"}]
 execute if score SEA_ch6_event rng5 matches 11186 as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
-execute if score SEA_ch6_event rng5 matches 11186 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“他是个好人，一定会升上天堂的。虽然要是没有天使的存在，忒尔克西也不至于落到如此田地。”","color":"white","bold": false}]
+execute if score SEA_ch6_event rng5 matches 11186 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“他是个好人，一定会升上天堂的。虽然要是没有天使的存在，忒尔克西的大家也不至于落到如此田地。”","color":"white","bold": false}]
 
 
+execute if score SEA_ch6_event rng5 matches 10900.. run kill @a[tag=SEAPT,gamemode=adventure,x=89900,y=0,z=-2000,dx=130,dy=88,dz=90]
 
 
+execute if score SEA_ch6_event rng5 matches 8095..11999 if entity @a[tag=SEAPT,tag=!SEAPF,x=90025,y=91,z=-1927,dx=8,dy=3,dz=4] run scoreboard players set SEA_ch6_event rng5 12000
+execute if score SEA_ch6_event rng5 matches 11900..11999 run scoreboard players set SEA_ch6_event rng5 11900
 
 
-
-
-
+execute if score SEA_ch6_event rng5 matches 12008 run particle explosion 90038 92 -1926 1 1 1 0.0 5
+execute if score SEA_ch6_event rng5 matches 12008 run particle smoke 90038 92 -1926 1 1 1 0.05 15
+execute if score SEA_ch6_event rng5 matches 12008 run playsound entity.generic.explode block @a 90038 92 -1926 2 0.9
+execute if score SEA_ch6_event rng5 matches 12008 run fill 90038 91 -1926 90038 92 -1926 gravel
 
 
 

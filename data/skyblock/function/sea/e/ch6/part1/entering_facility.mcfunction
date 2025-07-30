@@ -99,7 +99,7 @@ execute as @e[tag=SEAmagma1,type=marker] at @s if block ~ ~ ~ air run setblock ~
 
 setblock 90112 105 -1903 furnace[facing=west]
 setblock 90112 105 -1901 furnace[facing=west]
-
+fill 90038 91 -1926 90038 92 -1926 air
 
 
 
