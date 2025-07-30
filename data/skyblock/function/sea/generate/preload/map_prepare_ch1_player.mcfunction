@@ -212,7 +212,7 @@ execute if entity @s[tag=sea_t_sprint6] run tag @s add sea_t_sprint6
 #玛瑞莲过场
 execute if score SEA_ch6_event rng5 matches 11..500 run effect give @s glowing infinite 0 true
 execute if score SEA_ch6_event rng5 matches 11..500 run attribute @s minecraft:movement_speed modifier add sea:marilyn_01 -5 add_value
-execute if score SEA_ch6_event rng5 matches 11..500 run attribute @s minecraft:jump_strength modifier add sea:marilyn_01 -5 add_value
+execute if score SEA_ch6_event rng5 matches 11..500 run attribute @s minecraft:jump_strength modifier add sea:marilyn_01 -50 add_value
 
 
 
