@@ -242,7 +242,8 @@ execute if score SEA_ch6_event rng5 matches 12019 as @n[tag=SEAnorma_warden] at 
 execute if score SEA_ch6_event rng5 matches 12012 as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
 execute if score SEA_ch6_event rng5 matches 12012 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“操，快跑！！”","color":"white","bold": false}]
 
-
+execute if score SEA_ch6_event rng5 matches 12010.. as @n[tag=SEAnorma_warden] at @s rotated ~ 0 run function skyblock:sea/e/ch6/part2/norma_destroy_blocks_particle
+execute if score SEA_ch6_event rng5 matches 12010.. as @n[tag=SEAnorma_warden] at @s positioned ~ ~1 ~ rotated ~ 0 run function skyblock:sea/e/ch6/part2/norma_destroy_blocks_particle
 
 
 
