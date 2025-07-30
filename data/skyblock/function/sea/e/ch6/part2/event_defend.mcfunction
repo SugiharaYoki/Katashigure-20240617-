@@ -269,6 +269,11 @@ execute if score SEA_ch6_event rng5 matches 12060 as @a[tag=SEAPT] at @s run eff
 execute if score SEA_ch6_event rng5 matches 12060 as @a[tag=SEAPT] at @s run effect give @s slowness infinite 9 true
 execute if score SEA_ch6_event rng5 matches 12060 as @n[tag=SEAnorma_warden] at @s run effect give @s speed infinite 3 true
 execute if score SEA_ch6_event rng5 matches 12060 as @n[tag=SEAnorma_warden] at @s run effect give @s strength infinite 3 true
+
+
+execute if score SEA_ch6_event rng5 matches 12501 as @n[tag=SEAnorma_warden] at @s run tp @s 90010 89 -1926 facing entity @p[tag=SEAPT]
+execute if score SEA_ch6_event rng5 matches 12502..12506 as @n[tag=SEAnorma_warden] at @s run tp @s ~-0.2 ~ ~ facing entity @p[tag=SEAPT]
+execute if score SEA_ch6_event rng5 matches 12501 as @n[tag=SEAnorma_warden] at @s run attribute @s minecraft:movement_speed modifier add sea:marilyn_01 -10 add_value
 execute if score SEA_ch6_event rng5 matches 12505 as @n[tag=SEAnorma_warden] at @s run tellraw @a[distance=0..150] [{"text":"诺玛：","color":"red","bold": true},{"text":"\n“受死……吧！！！”","color":"white","bold": false}]
 
 execute if score SEA_ch6_event rng5 matches 12511 as @n[tag=SEAyuehan] at @s run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
