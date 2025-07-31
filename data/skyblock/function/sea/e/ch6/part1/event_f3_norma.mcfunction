@@ -91,7 +91,7 @@ execute if score SEA_ch6_event rng5 matches 1173 as @a[tag=SEAPT] if items block
 
 execute if score SEA_ch6_event rng5 matches 1190 as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
 execute if score SEA_ch6_event rng5 matches 1190 as @n[tag=SEAedwina] at @s if items entity @a[tag=SEAPT] weapon.mainhand golden_sword run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“都已经把天使长拉斐尔的剑拿在手里了，还问我这种问题？跟我一起回水下研究机构。”","color":"white","bold": false}]
-execute if score SEA_ch6_event rng5 matches 1190 as @n[tag=SEAedwina] at @s unless items entity @a[tag=SEAPT] weapon.mainhand golden_sword run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“最危险的地方就是最安全的地方。跟我一起回水下研究机构。”","color":"white","bold": false}]
+execute if score SEA_ch6_event rng5 matches 1190 as @n[tag=SEAedwina] at @s unless items block 90148 145 152 container.4 green_wool unless items entity @a[tag=SEAPT] weapon.mainhand golden_sword run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“最危险的地方就是最安全的地方。跟我一起回水下研究机构。”","color":"white","bold": false}]
 execute if score SEA_ch6_event rng5 matches 1190 as @n[tag=SEAedwina] at @s if items block 90148 145 152 container.4 green_wool run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“那东西刚刚就被我劈碎了，我怎么可能允许那玩意留下来？”","color":"white","bold": false}]
 
 execute if score SEA_ch6_event rng5 matches 1200 as @n[tag=SEAedwina] at @s if items block 90148 145 152 container.4 green_wool run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
