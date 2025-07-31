@@ -19,6 +19,8 @@
         "grass_block",
         "pointed_dripstone",
         "cracked_nether_bricks",
-        "red_nether_brick_slab"
+        "red_nether_brick_slab",
+        "white_wool",
+        "polished_blackstone"
     ]
 }

@@ -276,7 +276,7 @@ setblock -79786 31 -359 air
 setblock -79772 26 -386 air
 setblock -79664 21 -415 tinted_glass
 setblock -79664 21 -414 blackstone
-setblock -79753 24 -462 lever[face=floor,facing=south]
+setblock -79753 24 -462 lever[face=floor,facing=south,powered=false]
 setblock -79713 22 -461 chest[facing=west]
 setblock -79743 23 -463 minecraft:water_cauldron[level=3]
 setblock -79742 23 -463 minecraft:water_cauldron[level=2]
