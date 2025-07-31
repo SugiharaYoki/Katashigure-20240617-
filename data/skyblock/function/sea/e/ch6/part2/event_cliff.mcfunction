@@ -135,13 +135,35 @@ execute if score SEA_ch6_event rng5 matches 12563 positioned 89988 89 -1923 run 
 
 execute if score SEA_ch6_event rng5 matches 12563 run scoreboard players set @a[tag=SEAPT,scores={sea_progress=..16}] sea_progress 17
 
+execute if score SEA_ch6_event rng5 matches 12710 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“嗯，艾德雯娜？……不聊点什么吗？”","color":"white"}]
 
+execute if score SEA_ch6_event rng5 matches 12726 as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
+execute if score SEA_ch6_event rng5 matches 12726 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“聊什么？我都可以。”","color":"white","bold": false}]
+execute if score SEA_ch6_event rng5 matches 12740 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“聊什么都可以。……嗯。”","color":"white"}]
 
+execute if score SEA_ch6_event rng5 matches 12780 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“……原来越涵还活着呢。”","color":"white"}]
+execute if score SEA_ch6_event rng5 matches 12798 as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
+execute if score SEA_ch6_event rng5 matches 12798 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“他选择了最崇高的死亡方式。”","color":"white","bold": false}]
 
+execute if score SEA_ch6_event rng5 matches 12808 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“我真希望找到一个他不用死的世界。”","color":"white"}]
 
+execute if score SEA_ch6_event rng5 matches 12824 as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
+execute if score SEA_ch6_event rng5 matches 12824 as @n[tag=SEAedwina] at @s unless block 90151 133 -1857 minecraft:skeleton_skull run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“我们所有人都注定会死。……嗯，但我希望和你一起活下去。”","color":"white","bold": false}]
+execute if score SEA_ch6_event rng5 matches 12824 as @n[tag=SEAedwina] at @s if block 90151 133 -1857 minecraft:skeleton_skull run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“我们所有人都注定会死。……你是唯一的例外，很有可能。”","color":"white","bold": false}]
 
+execute if score SEA_ch6_event rng5 matches 12840 as @p[tag=SEAPT] at @s unless block 90151 133 -1857 minecraft:skeleton_skull run tellraw @a[distance=0..250] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“我们能够活下去的。……一定能。我们可是忒尔克西最强的两个人类了。”","color":"white"}]
+execute if score SEA_ch6_event rng5 matches 12840 as @p[tag=SEAPT] at @s if block 90151 133 -1857 minecraft:skeleton_skull run tellraw @a[distance=0..250] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“我希望那个例外会是其他人。明明活到最后的是我不会有任何好处，但我现在却……我始终都在苟延残喘，一路活到了现在……”","color":"white"}]
 
+execute if score SEA_ch6_event rng5 matches 12855 as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
+execute if score SEA_ch6_event rng5 matches 12855 as @n[tag=SEAedwina] at @s unless block 90151 133 -1857 minecraft:skeleton_skull run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“我也相信你。那么，为了越涵、为了菲尔娜……”","color":"white","bold": false}]
+execute if score SEA_ch6_event rng5 matches 12855 as @n[tag=SEAedwina] at @s if block 90151 133 -1857 minecraft:skeleton_skull run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“你拥有远比其他人要重要的职责。……抱歉，我现在还不能告诉你全部的真相。但你距离知晓事实已经不远了。”","color":"white","bold": false}]
 
+execute if score SEA_ch6_event rng5 matches 12872 as @p[tag=SEAPT] at @s unless block 90151 133 -1857 minecraft:skeleton_skull run tellraw @a[distance=0..250] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“为了越涵。为了菲尔娜。为了忒尔克西的所有人。”","color":"white"}]
+execute if score SEA_ch6_event rng5 matches 12872 as @p[tag=SEAPT] at @s if block 90151 133 -1857 minecraft:skeleton_skull run tellraw @a[distance=0..250] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“为了这个目标……甚至我和你的距离都会越来越疏远吗？”","color":"white"}]
+
+execute if score SEA_ch6_event rng5 matches 12890 as @p[tag=SEAPT] at @s if block 90151 133 -1857 minecraft:skeleton_skull run tellraw @a[distance=0..250] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“……但我能感觉到，我们好像已经经历了无数场过去。”","color":"white"}]
+execute if score SEA_ch6_event rng5 matches 12905 as @p[tag=SEAPT] at @s if block 90151 133 -1857 minecraft:skeleton_skull run tellraw @a[distance=0..250] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“不论如何，艾德雯娜——我信任你所说的。无条件。”","color":"white"}]
+execute if score SEA_ch6_event rng5 matches 12920 as @p[tag=SEAPT] at @s if block 90151 133 -1857 minecraft:skeleton_skull run tellraw @a[distance=0..250] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“我们继续前进吧。”","color":"white"}]
 
 
 
