@@ -219,7 +219,7 @@ execute if score stage_main_thread AzrTimerStack matches 1120 as @n[tag=AzrielBo
 execute if score stage_main_thread AzrTimerStack matches 1120 run advancement grant @a[tag=azrPlayer] only skyblock:azr/azr_stage13_event1
 
 execute if score stage_main_thread AzrTimerStack matches 1125 run fill -79788 31 -343 -79788 32 -343 minecraft:air destroy
-execute if score stage_main_thread AzrTimerStack matches 1125 as @a[tag=azrPlayer] run function skyblock:azr/shop/reader_nethershop_1
+# execute if score stage_main_thread AzrTimerStack matches 1125 as @a[tag=azrPlayer] run function skyblock:azr/shop/reader_nethershop_1
 execute if score stage_main_thread AzrTimerStack matches 1125 run scoreboard players set $NetherShop Azr_system 1
 execute if score stage_main_thread AzrTimerStack matches 1125 run clone -79758 44 -187 -79758 44 -187 -79786 31 -359 replace move
 execute if score stage_main_thread AzrTimerStack matches 1125 run particle minecraft:end_rod -79758 44 -187 0.6 0.6 0.6 0.0 13
