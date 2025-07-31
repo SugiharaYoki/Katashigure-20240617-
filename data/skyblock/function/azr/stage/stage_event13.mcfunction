@@ -220,6 +220,7 @@ execute if score stage_main_thread AzrTimerStack matches 1120 run advancement gr
 
 execute if score stage_main_thread AzrTimerStack matches 1125 run fill -79788 31 -343 -79788 32 -343 minecraft:air destroy
 execute if score stage_main_thread AzrTimerStack matches 1125 as @a[tag=azrPlayer] run function skyblock:azr/shop/reader_nethershop_1
+execute if score stage_main_thread AzrTimerStack matches 1125 run scoreboard players set $NetherShop Azr_system 1
 execute if score stage_main_thread AzrTimerStack matches 1125 run clone -79758 44 -187 -79758 44 -187 -79786 31 -359 replace move
 execute if score stage_main_thread AzrTimerStack matches 1125 run particle minecraft:end_rod -79758 44 -187 0.6 0.6 0.6 0.0 13
 execute if score stage_main_thread AzrTimerStack matches 1125 run particle minecraft:end_rod -79786 31 -359 0.6 0.6 0.6 0.0 13
@@ -236,7 +237,7 @@ execute if score stage_main_thread AzrTimerStack matches 1125 run scoreboard pla
 
 #跳过剧情
 execute if score stage_main_thread AzrTimerStack matches 508 unless entity @a[tag=azrPlayer,scores={Azr_skillPoints=..16}] run tellraw @a[tag=azrPlayer] {"text":"〈跳过剧情〉","bold":true,"color":"blue","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 6"}}
-# execute if entity @a[tag=azrPlayer,scores={Azr_Shop=6..9}] if score stage_main_thread AzrTimerStack matches 511..1999 run scoreboard players set stage_main_thread AzrTimerStack 1110
+execute if entity @a[tag=azrPlayer,scores={Azr_Shop=6..9}] if score stage_main_thread AzrTimerStack matches 511..1999 run scoreboard players set stage_main_thread AzrTimerStack 1110
 
 #execute if entity @e[tag=sc,limit=1,scores={stageSeconds=5555550..}] run scoreboard players set @e[tag=sc,limit=1] Azr_Progress 51
 #execute if entity @e[tag=sc,limit=1,scores={stageSeconds=5555550..}] positioned -79776 44 -279 run playsound entity.piglin_brute.ambient master @a[tag=AZRPT,distance=0..3.#5] ~ ~ ~ 2 0.9

@@ -12,6 +12,7 @@ scoreboard players reset $azrch4bosstalk3 Azr_system
 scoreboard players reset $azrstage7b Azr_system
 scoreboard players reset $StageDiffid Azr_system
 scoreboard players reset $Azr_Doppel Azr_system
+scoreboard players reset $NetherShop Azr_system
 #tag @s remove Event18575A
 tag @a remove azrDead
 #______________________________________________________________#

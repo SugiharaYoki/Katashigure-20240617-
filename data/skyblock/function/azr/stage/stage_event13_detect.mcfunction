@@ -2,8 +2,6 @@ execute if score stage_main_thread AzrTimerStack matches 40..200 if entity @a[ta
 
 execute if score stage_main_thread AzrTimerStack matches 370..400 if entity @a[tag=azrPlayer,x=-79788,y=31,z=-363,distance=0..5.5] run scoreboard players set stage_main_thread AzrTimerStack 497
 
-execute if entity @a[tag=azrPlayer,scores={Azr_Shop=6..9}] if score stage_main_thread AzrTimerStack matches 511..1999 run scoreboard players set stage_main_thread AzrTimerStack 1110
-
 execute if score stage_main_thread AzrTimerStack matches 10000..20000 unless score $Event18573A Azr_system matches 1 if entity @a[tag=azrPlayer,x=-79781,y=39,z=-516,distance=0..10] run summon fireball -79774 85 -539 {ExplosionPower:2,Motion:[0.0d,-0.2d,0.1d],acceleration_power:0.060}
 execute if score stage_main_thread AzrTimerStack matches 10000..20000 unless score $Event18573A Azr_system matches 1 if entity @a[tag=azrPlayer,x=-79781,y=39,z=-516,distance=0..10] run schedule function skyblock:azr/effects/event13_1 3.5s
 execute if score stage_main_thread AzrTimerStack matches 10000..20000 unless score $Event18573A Azr_system matches 1 if entity @a[tag=azrPlayer,x=-79781,y=39,z=-516,distance=0..10] run scoreboard players set $Event18573A Azr_system 1
@@ -22,3 +20,8 @@ execute if score stage_main_thread AzrTimerStack matches 10000..20000 unless sco
 execute if score stage_main_thread AzrTimerStack matches 10000..20000 unless score $Event18573D Azr_system matches 1 if entity @a[tag=azrPlayer,x=-79765,y=45,z=-466,distance=0..8] run execute as @a[tag=azrPlayer] at @s as @e[tag=AzrielMob,tag=AzrielDecMob,type=piglin,limit=8,sort=random,distance=0..60] at @s run summon arrow ~ ~6 ~
 execute if score stage_main_thread AzrTimerStack matches 10000..10020 if entity @a[tag=azrPlayer,x=-79765,y=45,z=-466,distance=0..7.9] run scoreboard players set stage_main_thread AzrTimerStack 10030
 execute if score stage_main_thread AzrTimerStack matches 10000..20000 unless score $Event18573D Azr_system matches 1 if entity @a[tag=azrPlayer,x=-79765,y=45,z=-466,distance=0..8] run scoreboard players set $Event18573D Azr_system 1
+
+execute if score $NetherShop Azr_system matches 1 if entity @a[x=-79906,y=40,z=-144,distance=0..2,tag=azrPlayer,tag=!ZaneiTalkA] at @e[tag=AzrielBossFA] run playsound minecraft:entity.illusioner.ambient master @a[tag=azrPlayer] ~ ~ ~ 2 0.6
+execute if score $NetherShop Azr_system matches 1 as @a[x=-79906,y=40,z=-144,distance=0..2,tag=azrPlayer,tag=!ZaneiTalkA] run function skyblock:azr/shop/reader_nethershop_1
+execute if score $NetherShop Azr_system matches 1 run tag @a[x=-79906,y=40,z=-144,distance=0..2,tag=azrPlayer,tag=!ZaneiTalkA] add ZaneiTalkA
+execute if score $NetherShop Azr_system matches 1 run tag @a[x=-79906,y=40,z=-144,distance=2.5..,tag=azrPlayer,tag=ZaneiTalkA] remove ZaneiTalkA
