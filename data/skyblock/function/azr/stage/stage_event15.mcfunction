@@ -12,3 +12,6 @@ execute if score #rng8 Azr_system matches 8 as @a[x=-79757,y=29,z=-465,distance=
 execute as @a[x=-79757,y=29,z=-465,distance=0..3,tag=azrPlayer,tag=!Trader4ATalkA] run function skyblock:azr/shop/reader_nethershop_2
 tag @a[x=-79757,y=29,z=-465,distance=0..3,tag=azrPlayer,tag=!Trader4ATalkA] add Trader4ATalkA
 tag @a[x=-79757,y=29,z=-465,distance=3..,tag=azrPlayer,tag=Trader4ATalkA] remove Trader4ATalkA
+
+tag @a[x=-79713,y=30,z=-523,dx=4,dy=2,dz=5,tag=azrPlayer,tag=!AZR_event15_spawnpoint] add azrUpdateSpawnPoint
+tag @a[x=-79713,y=30,z=-523,dx=4,dy=2,dz=5,tag=azrPlayer,tag=!AZR_event15_spawnpoint] add AZR_event15_spawnpoint
