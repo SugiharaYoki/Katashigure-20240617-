@@ -33,7 +33,7 @@ execute if entity @a[tag=ServerManager,team=!TokumeiM,team=!TokumeiO,team=!Tokum
 #
 #say hi
 #CentralProtection#
-gamemode adventure @a[tag=!Gaming,tag=!ServerManager,tag=!ServerOperator,gamemode=survival]
+gamemode adventure @a[tag=!Gaming,tag=!ServerManager,tag=!ServerOperator]
 # 下面是夜季写的紧急修复方案
 # gamemode adventure @a[tag=!Gaming,tag=!ServerManager,tag=!ServerOperator,gamemode=survival]
 # gamemode adventure @a[tag=!Gaming,tag=!ServerManager,tag=!ServerOperator,gamemode=spectator,x=0,y=0,z=0,distance=..1000]
