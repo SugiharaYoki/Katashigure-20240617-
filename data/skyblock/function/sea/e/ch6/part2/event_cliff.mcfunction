@@ -118,7 +118,7 @@ execute if score SEA_ch6_event rng5 matches 12563 positioned 90013 95 -1926 run 
 execute if score SEA_ch6_event rng5 matches 12563 positioned 90013 95 -1926 run playsound minecraft:entity.generic.explode block @a ~ ~ ~ 50 0.9
 execute if score SEA_ch6_event rng5 matches 12563 positioned 90013 95 -1926 run particle minecraft:explosion_emitter ~ ~ ~ 5 5 5 0 12
 execute if score SEA_ch6_event rng5 matches 12563 positioned 90013 95 -1926 run particle minecraft:large_smoke ~ ~ ~ 5 5 5 0.2 180
-execute if score SEA_ch6_event rng5 matches 12563 positioned 90013 95 -1926 run kill @a[tag=SEAPT,x=89988,y=0,z=-1936,dx=300,dy=100,dz=200,gamemode=adventure]
+execute if score SEA_ch6_event rng5 matches 12563 positioned 90013 95 -1926 run kill @a[tag=SEAPT,x=89988,y=0,z=-1936,dx=300,dy=100,dz=14,gamemode=adventure]
 
 execute if score SEA_ch6_event rng5 matches 12563 run fill 89988 90 -1924 89989 89 -1924 gravel
 execute if score SEA_ch6_event rng5 matches 12563 run fill 89988 89 -1923 89989 88 -1923 gravel
