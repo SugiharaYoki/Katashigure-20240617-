@@ -49,7 +49,7 @@ execute if score SEA_ch6_event rng5 matches 12060 as @n[tag=SEAnorma_warden] at 
 
 
 execute if score SEA_ch6_event rng5 matches 12501 as @n[tag=SEAnorma_warden] at @s run tp @s 90010 89 -1926 facing entity @p[tag=SEAPT]
-execute if score SEA_ch6_event rng5 matches 12502..12506 as @n[tag=SEAnorma_warden] at @s run tp @s ~-0.2 ~ ~ facing entity @p[tag=SEAPT]
+execute if score SEA_ch6_event rng5 matches 12503..12507 as @n[tag=SEAnorma_warden] at @s run tp @s ~-0.2 ~ ~ facing entity @p[tag=SEAPT]
 execute if score SEA_ch6_event rng5 matches 12501 as @n[tag=SEAnorma_warden] at @s run attribute @s minecraft:movement_speed modifier add sea:marilyn_01 -10 add_value
 execute if score SEA_ch6_event rng5 matches 12505 as @n[tag=SEAnorma_warden] at @s run tellraw @a[distance=0..150] [{"text":"诺玛：","color":"red","bold": true},{"text":"\n“受死……吧！！！”","color":"white","bold": false}]
 
@@ -57,11 +57,11 @@ execute if score SEA_ch6_event rng5 matches 12512 as @n[tag=SEAyuehan] at @s run
 execute if score SEA_ch6_event rng5 matches 12512 as @n[tag=SEAyuehan] at @s run tp @s ~-1 ~ ~ facing ~-2 ~-0.5 ~
 execute if score SEA_ch6_event rng5 matches 12511 as @n[tag=SEAyuehan] at @s run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
 execute if score SEA_ch6_event rng5 matches 12511 as @n[tag=SEAyuehan] at @s run tellraw @a[distance=0..250] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“嘿傻逼！！你这畜生养的，有本事看这里！！”","color":"white","bold": false}]
-execute if score SEA_ch6_event rng5 matches 12513 as @n[tag=SEAnorma_warden] at @s run tp @s ~ ~ ~ facing entity @n[tag=SEAyuehan]
+execute if score SEA_ch6_event rng5 matches 12513 as @n[tag=SEAnorma_warden] at @s run rotate @s facing entity @n[tag=SEAyuehan]
 
-execute if score SEA_ch6_event rng5 matches 12503 as @n[tag=SEAyuehan] at @s run tp @s ~ ~ ~ facing entity @n[tag=SEAnorma_warden]
+execute if score SEA_ch6_event rng5 matches 12503 as @n[tag=SEAyuehan] at @s run rotate @s facing entity @n[tag=SEAnorma_warden]
 
-execute if score SEA_ch6_event rng5 matches 12505..12570 as @n[tag=SEAyuehan] at @s run tp @s ~ ~ ~ facing entity @n[tag=SEAnorma_warden]
+execute if score SEA_ch6_event rng5 matches 12505..12570 as @n[tag=SEAyuehan] at @s run rotate @s facing entity @n[tag=SEAnorma_warden]
 
 
 execute if score SEA_ch6_event rng5 matches 12518 as @n[tag=SEAyuehan] at @s run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
