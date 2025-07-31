@@ -34,7 +34,7 @@ execute unless entity @a[tag=MG_AZR0PT] if entity @a[gamemode=!spectator,distanc
 function skyblock:mg/azr0/system/mob/skill
 
 
-
+execute as @a[tag=MG_AZR0PT] at @s unless entity @n[tag=mg_azr0,distance=..5000] run tp @s 125078 4 -241
 
 
 
