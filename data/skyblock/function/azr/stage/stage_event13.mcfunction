@@ -237,7 +237,8 @@ execute if score stage_main_thread AzrTimerStack matches 1125 run scoreboard pla
 
 #跳过剧情
 execute if score stage_main_thread AzrTimerStack matches 508 unless entity @a[tag=azrPlayer,scores={Azr_skillPoints=..16}] run tellraw @a[tag=azrPlayer] {"text":"〈跳过剧情〉","bold":true,"color":"blue","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 6"}}
-execute if entity @a[tag=azrPlayer,scores={Azr_Shop=6..9}] if score stage_main_thread AzrTimerStack matches 511..1999 run scoreboard players set stage_main_thread AzrTimerStack 1110
+execute if entity @a[tag=azrPlayer,scores={Azr_Shop=6}] if score stage_main_thread AzrTimerStack matches 511..1999 run scoreboard players set stage_main_thread AzrTimerStack 1110
+scoreboard players reset @a[tag=azrPlayer,scores={Azr_Shop=6}] Azr_Shop
 
 #execute if entity @e[tag=sc,limit=1,scores={stageSeconds=5555550..}] run scoreboard players set @e[tag=sc,limit=1] Azr_Progress 51
 #execute if entity @e[tag=sc,limit=1,scores={stageSeconds=5555550..}] positioned -79776 44 -279 run playsound entity.piglin_brute.ambient master @a[tag=AZRPT,distance=0..3.#5] ~ ~ ~ 2 0.9
