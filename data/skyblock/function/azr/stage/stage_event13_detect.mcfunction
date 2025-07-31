@@ -21,7 +21,7 @@ execute if score stage_main_thread AzrTimerStack matches 10000..20000 unless sco
 execute if score stage_main_thread AzrTimerStack matches 10000..10020 if entity @a[tag=azrPlayer,x=-79765,y=45,z=-466,distance=0..7.9] run scoreboard players set stage_main_thread AzrTimerStack 10030
 execute if score stage_main_thread AzrTimerStack matches 10000..20000 unless score $Event18573D Azr_system matches 1 if entity @a[tag=azrPlayer,x=-79765,y=45,z=-466,distance=0..8] run scoreboard players set $Event18573D Azr_system 1
 
-execute if score $NetherShop Azr_system matches 1 if entity @a[x=-79906,y=40,z=-144,distance=0..2,tag=azrPlayer,tag=!ZaneiTalkA] at @e[tag=AzrielBossFA] run playsound minecraft:entity.illusioner.ambient master @a[tag=azrPlayer] ~ ~ ~ 2 0.6
-execute if score $NetherShop Azr_system matches 1 as @a[x=-79906,y=40,z=-144,distance=0..2,tag=azrPlayer,tag=!ZaneiTalkA] run function skyblock:azr/shop/reader_nethershop_1
-execute if score $NetherShop Azr_system matches 1 run tag @a[x=-79906,y=40,z=-144,distance=0..2,tag=azrPlayer,tag=!ZaneiTalkA] add ZaneiTalkA
-execute if score $NetherShop Azr_system matches 1 run tag @a[x=-79906,y=40,z=-144,distance=2.5..,tag=azrPlayer,tag=ZaneiTalkA] remove ZaneiTalkA
+execute if score $NetherShop Azr_system matches 1 if entity @a[x=-79788,y=31.0,z=-363,distance=0..2,tag=azrPlayer,tag=!ZaneiTalkB] at @e[tag=AzrielBossFA] run playsound minecraft:entity.illusioner.ambient master @a[tag=azrPlayer] ~ ~ ~ 2 0.6
+execute if score $NetherShop Azr_system matches 1 as @a[x=-79788,y=31.0,z=-363,distance=0..2,tag=azrPlayer,tag=!ZaneiTalkB] run function skyblock:azr/shop/reader_nethershop_1
+execute if score $NetherShop Azr_system matches 1 run tag @a[x=-79788,y=31.0,z=-363,distance=0..2,tag=azrPlayer,tag=!ZaneiTalkB] add ZaneiTalkB
+execute if score $NetherShop Azr_system matches 1 run tag @a[x=-79788,y=31.0,z=-363,distance=2.5..,tag=azrPlayer,tag=ZaneiTalkB] remove ZaneiTalkB
