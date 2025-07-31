@@ -165,6 +165,8 @@ execute if score SEA_ch6_event rng5 matches 12890 as @p[tag=SEAPT] at @s if bloc
 execute if score SEA_ch6_event rng5 matches 12905 as @p[tag=SEAPT] at @s if block 90151 133 -1857 minecraft:skeleton_skull run tellraw @a[distance=0..250] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“不论如何，艾德雯娜——我信任你所说的。无条件。”","color":"white"}]
 execute if score SEA_ch6_event rng5 matches 12920 as @p[tag=SEAPT] at @s if block 90151 133 -1857 minecraft:skeleton_skull run tellraw @a[distance=0..250] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“我们继续前进吧。”","color":"white"}]
 
+execute if score SEA_ch6_event rng5 matches 12950 as @n[tag=SEAedwina] at @s if block 90151 133 -1857 minecraft:skeleton_skull run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
+execute if score SEA_ch6_event rng5 matches 12950 as @n[tag=SEAedwina] at @s if block 90151 133 -1857 minecraft:skeleton_skull run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“……我会让你活下来的。我发誓。”","color":"white","bold": false}]
 
 
 
