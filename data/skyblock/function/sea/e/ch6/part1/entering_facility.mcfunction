@@ -123,7 +123,9 @@ fill 89990 91 -1923 89990 89 -1923 air
 setblock 89989 91 -1924 minecraft:air
 setblock 90011 57 -1858 furnace[facing=north]
 
-
+forceload add 90028 -1846
+setblock 90028 52 -1846 chest[facing=west]
+forceload remove 90028 -1846
 
 setblock 90009 59 -1858 chest[facing=north]
 setblock 90009 57 -1858 chest[facing=north]

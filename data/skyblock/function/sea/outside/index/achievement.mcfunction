@@ -39,6 +39,7 @@ scoreboard players add @s[advancements={skyblock:sea/doc/27=true}] rng7 1
 scoreboard players add @s[advancements={skyblock:sea/doc/28=true}] rng2 1
 scoreboard players add @s[advancements={skyblock:sea/doc/29=true}] rng2 1
 scoreboard players add @s[advancements={skyblock:sea/doc/30=true}] rng2 1
+scoreboard players add @s[advancements={skyblock:sea/doc/31=true}] rng7 1
 
 scoreboard players add @s[advancements={skyblock:sea/doc/b1=true}] rng3 1
 scoreboard players add @s[advancements={skyblock:sea/doc/b2=true}] rng3 1

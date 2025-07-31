@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "终点前站的笔记 - 作者不明",
+            "color": "light_purple",
+            "bold": false,
+            "italic": false
+        },
+        "description": {
+            "text": "因为你的命运，早已被吾钦定。世界的走向因此无法产生变动。\n你早已被正确之路祝福。\n无数次的尝试、无数次的死亡、无数次的时间倒流……\n全部的苦难，最终都会化为光辉的结局。\n你会见证一切。\n以雷米尔之名。",
+            "color": "white"
+        },
+        "icon": {
+            "id": "minecraft:flow_banner_pattern"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "sea": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:sea/doc/documentary6"
+}
