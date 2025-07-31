@@ -49,7 +49,7 @@ execute if score SEA_ch6_event rng5 matches 12060 as @n[tag=SEAnorma_warden] at 
 
 
 execute if score SEA_ch6_event rng5 matches 12501 as @n[tag=SEAnorma_warden] at @s run tp @s 90010 89 -1926 facing entity @p[tag=SEAPT]
-execute if score SEA_ch6_event rng5 matches 12502..12506 as @n[tag=SEAnorma_warden] at @s run tp @s ~-0.2 ~ ~ facing entity @p[tag=SEAPT]
+execute if score SEA_ch6_event rng5 matches 12503..12507 as @n[tag=SEAnorma_warden] at @s run tp @s ~-0.2 ~ ~ facing entity @p[tag=SEAPT]
 execute if score SEA_ch6_event rng5 matches 12501 as @n[tag=SEAnorma_warden] at @s run attribute @s minecraft:movement_speed modifier add sea:marilyn_01 -10 add_value
 execute if score SEA_ch6_event rng5 matches 12505 as @n[tag=SEAnorma_warden] at @s run tellraw @a[distance=0..150] [{"text":"诺玛：","color":"red","bold": true},{"text":"\n“受死……吧！！！”","color":"white","bold": false}]
 
@@ -57,11 +57,11 @@ execute if score SEA_ch6_event rng5 matches 12512 as @n[tag=SEAyuehan] at @s run
 execute if score SEA_ch6_event rng5 matches 12512 as @n[tag=SEAyuehan] at @s run tp @s ~-1 ~ ~ facing ~-2 ~-0.5 ~
 execute if score SEA_ch6_event rng5 matches 12511 as @n[tag=SEAyuehan] at @s run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
 execute if score SEA_ch6_event rng5 matches 12511 as @n[tag=SEAyuehan] at @s run tellraw @a[distance=0..250] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“嘿傻逼！！你这畜生养的，有本事看这里！！”","color":"white","bold": false}]
-execute if score SEA_ch6_event rng5 matches 12513 as @n[tag=SEAnorma_warden] at @s run tp @s ~ ~ ~ facing entity @n[tag=SEAyuehan]
+execute if score SEA_ch6_event rng5 matches 12513 as @n[tag=SEAnorma_warden] at @s run rotate @s facing entity @n[tag=SEAyuehan]
 
-execute if score SEA_ch6_event rng5 matches 12503 as @n[tag=SEAyuehan] at @s run tp @s ~ ~ ~ facing entity @n[tag=SEAnorma_warden]
+execute if score SEA_ch6_event rng5 matches 12503 as @n[tag=SEAyuehan] at @s run rotate @s facing entity @n[tag=SEAnorma_warden]
 
-execute if score SEA_ch6_event rng5 matches 12505..12570 as @n[tag=SEAyuehan] at @s run tp @s ~ ~ ~ facing entity @n[tag=SEAnorma_warden]
+execute if score SEA_ch6_event rng5 matches 12505..12570 as @n[tag=SEAyuehan] at @s run rotate @s facing entity @n[tag=SEAnorma_warden]
 
 
 execute if score SEA_ch6_event rng5 matches 12518 as @n[tag=SEAyuehan] at @s run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
@@ -118,7 +118,11 @@ execute if score SEA_ch6_event rng5 matches 12563 positioned 90013 95 -1926 run 
 execute if score SEA_ch6_event rng5 matches 12563 positioned 90013 95 -1926 run playsound minecraft:entity.generic.explode block @a ~ ~ ~ 50 0.9
 execute if score SEA_ch6_event rng5 matches 12563 positioned 90013 95 -1926 run particle minecraft:explosion_emitter ~ ~ ~ 5 5 5 0 12
 execute if score SEA_ch6_event rng5 matches 12563 positioned 90013 95 -1926 run particle minecraft:large_smoke ~ ~ ~ 5 5 5 0.2 180
-execute if score SEA_ch6_event rng5 matches 12563 positioned 90013 95 -1926 run kill @a[tag=SEAPT,x=89988,y=0,z=-1936,dx=300,dy=100,dz=200,gamemode=adventure]
+execute if score SEA_ch6_event rng5 matches 12563 positioned 90013 95 -1926 run kill @a[tag=SEAPT,x=89988,y=0,z=-1936,dx=300,dy=100,dz=14,gamemode=adventure]
+
+#execute if score SEA_ch6_event rng5 matches 12563.. positioned 90013 95 -1926 run kill @a[tag=SEAPT,x=89980,y=0,z=-1917,dx=160,dy=33,dz=160,gamemode=adventure]
+execute if score SEA_ch6_event rng5 matches 12563.. positioned 90013 95 -1926 run tp @a[tag=SEAPT,x=89980,y=0,z=-1917,dx=160,dy=33,dz=160,gamemode=adventure] 90009 57 -1861
+
 
 execute if score SEA_ch6_event rng5 matches 12563 run fill 89988 90 -1924 89989 89 -1924 gravel
 execute if score SEA_ch6_event rng5 matches 12563 run fill 89988 89 -1923 89989 88 -1923 gravel
@@ -167,7 +171,6 @@ execute if score SEA_ch6_event rng5 matches 12920 as @p[tag=SEAPT] at @s if bloc
 
 execute if score SEA_ch6_event rng5 matches 12950 as @n[tag=SEAedwina] at @s if block 90151 133 -1857 minecraft:skeleton_skull run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
 execute if score SEA_ch6_event rng5 matches 12950 as @n[tag=SEAedwina] at @s if block 90151 133 -1857 minecraft:skeleton_skull run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“……我会让你活下来的。我发誓。”","color":"white","bold": false}]
-
 
 
 
