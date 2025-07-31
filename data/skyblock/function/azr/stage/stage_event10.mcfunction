@@ -3,7 +3,7 @@ execute if score stage_main_thread AzrTimerStack matches 20.. as @e[name="僵尸
 
 execute if score stage_main_thread AzrTimerStack matches 0..890 run scoreboard players set stage_main_thread AzrTimerStack 0
 
-execute if score stage_main_thread AzrTimerStack matches 0..890 if entity @a[x=-79884,y=46,z=-109,distance=0..4.3,tag=azrPlayer,gamemode=!spectator] run scoreboard players set stage_main_thread AzrTimerStack 1093
+# execute if score stage_main_thread AzrTimerStack matches 0..890 if entity @a[x=-79884,y=46,z=-109,distance=0..4.3,tag=azrPlayer,gamemode=!spectator] run scoreboard players set stage_main_thread AzrTimerStack 1093
 
 execute if score stage_main_thread AzrTimerStack matches 1094 run tellraw @a[tag=DebugMode,tag=azrPlayer] [{"text":"[DEBUG MODE MESSAGE] You are playing \"Stage Event10\", with playerCount = "},{"score":{"objective":"Azr_system","name":"playerCount"}},{"text":" Maximum Seconds = 1900"}]
 execute if score stage_main_thread AzrTimerStack matches 1094 as @p[x=-79883,y=46,z=-109,tag=azrPlayer] at @s run tp @a[distance=20..,tag=azrPlayer] ~ ~ ~ facing -79876 47 -109
@@ -221,7 +221,7 @@ execute if score stage_main_thread AzrTimerStack matches 1200 run item replace b
 execute if score stage_main_thread AzrTimerStack matches 1201..1390 run scoreboard players set stage_main_thread AzrTimerStack 1201
 execute if score stage_main_thread AzrTimerStack matches 1201 as @a[tag=azrPlayer,x=-79877,y=46,z=-114,dx=16,dy=15,dz=10] run tp @s -79877.5 47.00 -108.5
 
-execute if score stage_main_thread AzrTimerStack matches 1201..1390 unless entity @e[tag=AzrielMob,x=-79920,y=50,z=-125,distance=0..10] if entity @a[x=-79920,y=48,z=-125,distance=0..4,tag=azrPlayer,gamemode=!spectator] run scoreboard players set stage_main_thread AzrTimerStack 1394
+# execute if score stage_main_thread AzrTimerStack matches 1201..1390 unless entity @e[tag=AzrielMob,x=-79920,y=50,z=-125,distance=0..10] if entity @a[x=-79920,y=48,z=-125,distance=0..4,tag=azrPlayer,gamemode=!spectator] run scoreboard players set stage_main_thread AzrTimerStack 1394
 
 execute if score stage_main_thread AzrTimerStack matches 1395 run summon skeleton -79926 48 -127 {PersistenceRequired:1b,Tags:["AzrielMob","AzrielDecMob"],DeathLootTable:"skyblock:azriel_skeleton_tier2",Health:10.0f,CustomName:'"骷髅剑士"',CanPickUpLoot:0b,HandItems:[{count:1,id:"iron_sword",components:{enchantments:{knockback:1}}},{}],HandDropChances:[0.0005f,0.0005f],ArmorItems:[{count:1,id:"chainmail_boots",components:{custom_name:'{"text":"链靴","italic":false,"color":"white"}'}},{count:1,id:"chainmail_leggings",components:{custom_name:'{"text":"链裤","italic":false,"color":"white"}'}},{count:1,id:"chainmail_chestplate",components:{custom_name:'{"text":"链甲","italic":false,"color":"white"}'}},{count:1,id:"chainmail_helmet",components:{custom_name:'{"text":"链帽","italic":false,"color":"white"}'}}],ArmorDropChances:[0.002f,0.001f,0.001f,0.002f],attributes:[{id:"max_health",base:30.0d},{id:"attack_damage",base:1.0d}]}
 execute if score stage_main_thread AzrTimerStack matches 1395 run summon skeleton -79926 48 -127 {PersistenceRequired:1b,Tags:["AzrielMob","AzrielDecMob"],DeathLootTable:"skyblock:azriel_skeleton_tier2",Health:10.0f,CustomName:'"骷髅剑士"',CanPickUpLoot:0b,HandItems:[{count:1,id:"iron_sword",components:{enchantments:{knockback:1}}},{}],HandDropChances:[0.0005f,0.0005f],ArmorItems:[{count:1,id:"chainmail_boots",components:{custom_name:'{"text":"链靴","italic":false,"color":"white"}'}},{count:1,id:"chainmail_leggings",components:{custom_name:'{"text":"链裤","italic":false,"color":"white"}'}},{count:1,id:"chainmail_chestplate",components:{custom_name:'{"text":"链甲","italic":false,"color":"white"}'}},{count:1,id:"chainmail_helmet",components:{custom_name:'{"text":"链帽","italic":false,"color":"white"}'}}],ArmorDropChances:[0.002f,0.001f,0.001f,0.002f],attributes:[{id:"max_health",base:30.0d},{id:"attack_damage",base:1.0d}]}
@@ -239,7 +239,7 @@ execute if score stage_main_thread AzrTimerStack matches 1420 if score playerCou
 
 execute if score stage_main_thread AzrTimerStack matches 1421..1590 run scoreboard players set stage_main_thread AzrTimerStack 1421
 
-execute if score stage_main_thread AzrTimerStack matches 1421..1590 unless entity @e[tag=AzrielMob,x=-79920,y=50,z=-138,distance=0..10] if entity @a[x=-79920,y=48,z=-138,distance=0..4,tag=azrPlayer,gamemode=!spectator] run scoreboard players set stage_main_thread AzrTimerStack 1594
+# execute if score stage_main_thread AzrTimerStack matches 1421..1590 unless entity @e[tag=AzrielMob,x=-79920,y=50,z=-138,distance=0..10] if entity @a[x=-79920,y=48,z=-138,distance=0..4,tag=azrPlayer,gamemode=!spectator] run scoreboard players set stage_main_thread AzrTimerStack 1594
 
 execute if score stage_main_thread AzrTimerStack matches 1600 run playsound minecraft:entity.vindicator.ambient hostile @a[tag=azrPlayer] -79920 48 -142 1 0.9
 execute if score stage_main_thread AzrTimerStack matches 1600 run tellraw @a[tag=azrPlayer] {"text":"圣殿巡逻兵：","color":"aqua"}
@@ -293,5 +293,5 @@ execute if score stage_main_thread AzrTimerStack matches 1000.. positioned -7986
 execute if score stage_main_thread AzrTimerStack matches 1000.. positioned -79868 49 -120 as @a[tag=azrPlayer,distance=0..2] at @s if entity @e[tag=Event8432112] run tellraw @a[tag=azrPlayer] {"text":"“求求你、不……不要靠近我！","color":"white"}
 execute if score stage_main_thread AzrTimerStack matches 1000.. positioned -79868 49 -120 as @a[tag=azrPlayer,distance=0..2] at @s if entity @e[tag=Event8432112,type=pillager] run tag @e[type=pillager] remove Event8432112
 
-execute if score stage_main_thread AzrTimerStack matches 100.. if entity @a[tag=azrPlayer,x=-79846,y=48,z=-129,distance=0..7] run scoreboard players set stage_main_thread AzrTimerStack 8000
-execute if score stage_main_thread AzrTimerStack matches 100.. if entity @a[tag=azrPlayer,x=-79846,y=48,z=-129,distance=0..7] run scoreboard players set stage Azr_system 41
+# execute if score stage_main_thread AzrTimerStack matches 100.. if entity @a[tag=azrPlayer,x=-79846,y=48,z=-129,distance=0..7] run scoreboard players set stage_main_thread AzrTimerStack 8000
+# execute if score stage_main_thread AzrTimerStack matches 100.. if entity @a[tag=azrPlayer,x=-79846,y=48,z=-129,distance=0..7] run scoreboard players set stage Azr_system 41

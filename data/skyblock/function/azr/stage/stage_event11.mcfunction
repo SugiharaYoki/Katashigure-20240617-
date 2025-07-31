@@ -7,7 +7,7 @@ execute if score stage_main_thread AzrTimerStack matches 0.. run kill @e[type=it
 execute if score stage_main_thread AzrTimerStack matches 0.. as @e[tag=!AzrielMob,type=vex,x=-79900,y=130,z=0,distance=0..1500] at @s run tp ~ ~-5000 ~
 
 execute if score stage_main_thread AzrTimerStack matches 0..500 run scoreboard players set stage_main_thread AzrTimerStack 20
-execute if score stage_main_thread AzrTimerStack matches 0..500 if entity @a[x=-79815,y=48,z=-128,distance=0..7,tag=azrPlayer,gamemode=!spectator] run scoreboard players set stage_main_thread AzrTimerStack 600
+# execute if score stage_main_thread AzrTimerStack matches 0..500 if entity @a[x=-79815,y=48,z=-128,distance=0..7,tag=azrPlayer,gamemode=!spectator] run scoreboard players set stage_main_thread AzrTimerStack 600
 
 execute if score stage_main_thread AzrTimerStack matches 601 run tag @a[tag=azrPlayer] add azrUpdateSpawnPoint
 execute if score stage_main_thread AzrTimerStack matches 601 run tellraw @a[tag=DebugMode,tag=azrPlayer] [{"text":"[DEBUG MODE MESSAGE] You are playing \"Stage Event11\", with playerCount = "},{"score":{"objective":"Azr_system","name":"playerCount"}},{"text":" Maximum Seconds = 3146"}]
@@ -21,7 +21,7 @@ execute if score stage_main_thread AzrTimerStack matches 601 run fill -79769 43 
 execute if score stage_main_thread AzrTimerStack matches 601 run fill -79728 46 -129 -79728 54 -124 purple_stained_glass
 
 execute if score stage_main_thread AzrTimerStack matches 605..650 run scoreboard players set stage_main_thread AzrTimerStack 620
-execute if score stage_main_thread AzrTimerStack matches 605..650 if entity @a[x=-79800,y=48,z=-128,distance=0..7,tag=azrPlayer,gamemode=!spectator] run scoreboard players set stage_main_thread AzrTimerStack 660
+# execute if score stage_main_thread AzrTimerStack matches 605..650 if entity @a[x=-79800,y=48,z=-128,distance=0..7,tag=azrPlayer,gamemode=!spectator] run scoreboard players set stage_main_thread AzrTimerStack 660
 
 execute if score stage_main_thread AzrTimerStack matches 671 as @a[tag=azrPlayer] at @s run playsound minecraft:entity.illusioner.ambient master @s ~ ~ ~ 0.6 0.6
 execute if score stage_main_thread AzrTimerStack matches 671 as @a[tag=azrPlayer] at @s run tellraw @s {"text":"权之残影（传音）：","color":"red"}
@@ -38,7 +38,7 @@ execute if score stage_main_thread AzrTimerStack matches 693 if score playerCoun
 execute if score stage_main_thread AzrTimerStack matches 693 if score playerCount Azr_system matches 2.. as @a[tag=azrPlayer] at @s run tellraw @s {"text":"“千万□□再□进□ □等请□速归□”","color":"white"}
 
 execute if score stage_main_thread AzrTimerStack matches 694..800 run scoreboard players set stage_main_thread AzrTimerStack 775
-execute if score stage_main_thread AzrTimerStack matches 694..800 if entity @a[x=-79760,y=48,z=-128,distance=0..5,tag=azrPlayer,gamemode=!spectator] run scoreboard players set stage_main_thread AzrTimerStack 1000
+# execute if score stage_main_thread AzrTimerStack matches 694..800 if entity @a[x=-79760,y=48,z=-128,distance=0..5,tag=azrPlayer,gamemode=!spectator] run scoreboard players set stage_main_thread AzrTimerStack 1000
 execute if score stage_main_thread AzrTimerStack matches 1001 as @r[x=-79760,y=48,z=-128,distance=0..5,tag=azrPlayer,gamemode=!spectator] at @s run tp @a[x=-79760,y=48,z=-128,distance=5.5..,tag=azrPlayer,gamemode=!spectator] @s
 
 
