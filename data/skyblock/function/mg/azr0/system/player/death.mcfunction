@@ -37,6 +37,8 @@ attribute @s armor_toughness modifier remove mg_azr0:skill_armor_toughness2
 
 function skyblock:pvp/skywar/system/removeallgaming
 
+tag @s add Gaming
+
 effect clear @s
 
 tag @s remove MGAZR0_SkillPrintable
