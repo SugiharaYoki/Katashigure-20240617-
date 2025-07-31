@@ -86,11 +86,16 @@ execute if score SEA_ch6_event rng5 matches 1138 as @n[tag=SEAedwina] at @s run 
 execute if score SEA_ch6_event rng5 matches 1138 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“这平台终于要炸了，跟着我走。就算平台不炸，美国政府也会往这里丢燃烧弹。”","color":"white","bold": false}]
 
 execute if score SEA_ch6_event rng5 matches 1156 as @a[tag=SEAPT] run tellraw @a[distance=0..150] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“啊？！等等、所以政府已经知道了？！”","color":"white"}]
-execute if score SEA_ch6_event rng5 matches 1173 as @a[tag=SEAPT] run tellraw @a[distance=0..150] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“那我们该怎么办？总不见得无处可去吧？”","color":"white"}]
+execute if score SEA_ch6_event rng5 matches 1173 as @a[tag=SEAPT] unless items block 90148 145 152 container.4 green_wool run tellraw @a[distance=0..150] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“那我们该怎么办？总不见得无处可去吧？”","color":"white"}]
+execute if score SEA_ch6_event rng5 matches 1173 as @a[tag=SEAPT] if items block 90148 145 152 container.4 green_wool run tellraw @a[distance=0..150] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“不、不对！还有更重要的事情，圣水晶还搁玛瑞、还搁诺玛手里呢！！”","color":"white"}]
 
 execute if score SEA_ch6_event rng5 matches 1190 as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
 execute if score SEA_ch6_event rng5 matches 1190 as @n[tag=SEAedwina] at @s if items entity @a[tag=SEAPT] weapon.mainhand golden_sword run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“都已经把天使长拉斐尔的剑拿在手里了，还问我这种问题？跟我一起回水下研究机构。”","color":"white","bold": false}]
 execute if score SEA_ch6_event rng5 matches 1190 as @n[tag=SEAedwina] at @s unless items entity @a[tag=SEAPT] weapon.mainhand golden_sword run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“最危险的地方就是最安全的地方。跟我一起回水下研究机构。”","color":"white","bold": false}]
+execute if score SEA_ch6_event rng5 matches 1190 as @n[tag=SEAedwina] at @s if items block 90148 145 152 container.4 green_wool run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“那东西刚刚就被我劈碎了，我怎么可能允许那玩意留下来？”","color":"white","bold": false}]
+
+execute if score SEA_ch6_event rng5 matches 1200 as @n[tag=SEAedwina] at @s if items block 90148 145 152 container.4 green_wool run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
+execute if score SEA_ch6_event rng5 matches 1200 as @n[tag=SEAedwina] at @s if items block 90148 145 152 container.4 green_wool run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“现在我们有更重要的事情做，跟紧我，我们回水下研究机构。”","color":"white","bold": false}]
 
 execute if score SEA_ch6_event rng5 matches 1200 as @a[tag=SEAPT] if items entity @a[tag=SEAPT] weapon.mainhand golden_sword run tellraw @a[distance=0..150] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“你先等等、拉斐尔？什么天使长？你在说什么？！”","color":"white"}]
 execute if score SEA_ch6_event rng5 matches 1215 as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
