@@ -106,7 +106,7 @@ execute if score stage Azr_system matches 43 as @e[tag=AzrielExtreme,tag=AzrielB
     execute if score stage Azr_system matches 52..54 run function skyblock:azr/stage/stage_event13
     execute if score stage Azr_system matches 56..58 run function skyblock:azr/stage/stage_event13
         # event14 53..55
-        execute if score stage Azr_system matches 53..55 run function skyblock:azr/stage/stage_event14
+        # execute if score stage Azr_system matches 53..55 run function skyblock:azr/stage/stage_event14
             # 第14关 55
             execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 55 run function skyblock:azr/stage/stage14
         # event15 56..58

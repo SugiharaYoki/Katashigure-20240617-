@@ -129,8 +129,8 @@ execute if score isStarted Azr_system matches 1 if score timer_static_5s AzrTime
     # boss3-stage13 event12
     execute if score stage Azr_system matches 44 if score stage_main_thread AzrTimerStack matches 50..200 if entity @a[tag=azrPlayer,x=-79773,y=42,z=-276,distance=0..6.5] run scoreboard players set stage_main_thread AzrTimerStack 5555
     # event13
-    execute if score stage Azr_system matches 52..54 run function skyblock:azr/stage/stage_event13_detect
-    execute if score stage Azr_system matches 56..58 run function skyblock:azr/stage/stage_event13_detect
+    execute if score stage Azr_system matches 52..54 run function skyblock:azr/stage/stage_event14
+    execute if score stage Azr_system matches 56..58 run function skyblock:azr/stage/stage_event14
 
     
 
