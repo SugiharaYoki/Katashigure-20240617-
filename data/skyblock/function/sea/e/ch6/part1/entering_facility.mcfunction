@@ -79,6 +79,13 @@ summon minecraft:marker 90111 105 -1902 {Tags:["SEAcrafter_tp","SEAcrafter_tp21"
 summon minecraft:interaction 90007 58.3 -1861 {CustomName:'[{"text":"多功能工作站"}]',Tags:["SEAcrafter","SEAcrafter_foodless","SEAcrafter22"]}
 summon minecraft:marker 90008 57 -1861 {Tags:["SEAcrafter_tp","SEAcrafter_tp22"]}
 
+setblock 89985 84 -1901 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:flint"}}
+setblock 89990 76 -1889 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 2, id:"minecraft:flint"}}
+setblock 90083 98 -1933 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 2, id:"minecraft:gunpowder"}}
+setblock 90082 102 -1903 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 2, id:"minecraft:gunpowder"}}
+setblock 90100 102 -1919 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 2, id:"minecraft:flint"}}
+
+setblock 90090 102 -1881 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 2, id:"minecraft:flint"}}
 
 
 setblock 90151 133 -1857 air
@@ -96,6 +103,9 @@ summon marker 90099 105 -1903 {Tags:["SEAmagma1"]}
 summon marker 90094 105 -1899 {Tags:["SEAmagma1"]}
 summon marker 90089 102 -1906 {Tags:["SEAmagma1"]}
 summon marker 90086 102 -1900 {Tags:["SEAmagma1"]}
+
+summon marker 90097 102 -1879 {Tags:["SEAmagma1"]}
+summon marker 90098 102 -1883 {Tags:["SEAmagma1"]}
 
 setblock 90093 102 -1899 chest[facing=north]
 item replace block 90093 102 -1899 container.13 with golden_carrot 3
