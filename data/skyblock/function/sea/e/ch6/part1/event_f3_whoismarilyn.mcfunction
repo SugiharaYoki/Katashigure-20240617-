@@ -251,8 +251,9 @@ execute if score SEA_ch6_event rng5 matches 843 as @n[tag=SEAnorma,x=90000,y=100
 execute if score SEA_ch6_event rng5 matches 843 unless items block 90148 145 152 container.1 blue_wool run tellraw @a[distance=0..150] [{"text":"玛瑞莲：","color":"dark_purple","bold": true},{"text":"\n“可笑，圣水晶本就该归我所有，你们也本就该死。”","color":"white","bold": false}]
 execute if score SEA_ch6_event rng5 matches 843 if items block 90148 145 152 container.1 blue_wool run tellraw @a[distance=0..150] [{"text":"玛瑞莲：","color":"dark_purple","bold": true},{"text":"\n“抱歉，我会拿走圣水晶。但……我不能让你们活。我也有自己的考量，请你理解。”","color":"white","bold": false}]
 
-execute if score SEA_ch6_event rng5 matches 844 as @n[tag=SEAnorma,x=90000,y=100,z=0,distance=0..1200] at @s run tp @s ~-1 ~ ~ facing ~-2 ~ ~
+execute if score SEA_ch6_event rng5 matches 843 as @n[tag=SEAnorma,x=90000,y=100,z=0,distance=0..1200] at @s run tp @s ~-1 ~ ~ facing ~-2 ~ ~
+execute if score SEA_ch6_event rng5 matches 846 as @n[tag=SEAnorma,x=90000,y=100,z=0,distance=0..1200] at @s run playsound minecraft:block.amethyst_block.resonate player @a ~ ~ ~ 1 1.2
 execute if score SEA_ch6_event rng5 matches 846 as @n[tag=SEAnorma,x=90000,y=100,z=0,distance=0..1200] at @s run clear @a[tag=SEAPT] end_crystal
 execute if score SEA_ch6_event rng5 matches 846 as @n[tag=SEAnorma,x=90000,y=100,z=0,distance=0..1200] at @s run kill @e[type=item,distance=0..80]
-execute if score SEA_ch6_event rng5 matches 847 as @n[tag=SEAnorma,x=90000,y=100,z=0,distance=0..1200] at @s run tp @s ~1 ~ ~ facing ~-2 ~ ~
+execute if score SEA_ch6_event rng5 matches 848 as @n[tag=SEAnorma,x=90000,y=100,z=0,distance=0..1200] at @s run tp @s ~1 ~ ~ facing ~-2 ~ ~
 
