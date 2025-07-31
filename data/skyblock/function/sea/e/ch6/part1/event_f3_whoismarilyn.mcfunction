@@ -18,6 +18,7 @@ execute if score SEA_ch6_event rng5 matches 11 positioned 90149 160 116 run effe
 execute if score SEA_ch6_event rng5 matches 11 positioned 90149 160 116 run effect give @n[tag=SEAfiona] glowing infinite 0 true
 execute if score SEA_ch6_event rng5 matches 11 as @p[tag=SEAPT] at @s as @a[distance=0..200] run stopsound @s music
 execute if score SEA_ch6_event rng5 matches 11 positioned 90149 160 116 run function skyblock:sea/m/unique/npc_marilyn
+execute if score SEA_ch6_event rng5 matches 11 as @n[tag=SEAfiona] at @s run data modify entity @s Invulnerable set value 1b
 execute if score SEA_ch6_event rng5 matches 11 as @a[tag=SEAPT] at @s run attribute @s minecraft:movement_speed modifier add sea:marilyn_01 -5 add_value
 execute if score SEA_ch6_event rng5 matches 11 as @a[tag=SEAPT] at @s run attribute @s minecraft:jump_strength modifier add sea:marilyn_01 -50 add_value
 
@@ -77,8 +78,10 @@ execute if score SEA_ch6_event rng5 matches 282 if score SEA_ch5_event_fiona_fav
 execute if score SEA_ch6_event rng5 matches 282 if score SEA_ch5_event_fiona_favor rng1 matches 15.. as @a[tag=SEAPT] run tellraw @a[distance=0..50] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“妈的、就你他妈是诺玛！你杀了菲尔娜，我要你血债血偿！！！”","color":"white"}]
 
 execute if score SEA_ch6_event rng5 matches 301 as @n[tag=SEAnorma,x=90000,y=100,z=0,distance=0..1200] at @s run playsound minecraft:entity.evoker.ambient neutral @a ~ ~ ~ 1 1.5
-execute if score SEA_ch6_event rng5 matches 301 unless items block 90148 145 152 container.1 blue_wool run tellraw @a[distance=0..150] [{"text":"诺玛：","color":"red","bold": true},{"text":"\n“你已经帮我清理掉了前往水晶祀堂的路上全部的尸变体，我还没来得及感谢你呢。”","color":"white","bold": false}]
-execute if score SEA_ch6_event rng5 matches 301 if items block 90148 145 152 container.1 blue_wool run tellraw @a[distance=0..150] [{"text":"诺玛：","color":"red","bold": true},{"text":"\n“你已经帮我清理掉了前往水晶祀堂的路上全部的尸变体，我还没来得及感谢你呢。而且，我也真的很不想你再次体验受伤的感觉。”","color":"white","bold": false}]
+execute if score SEA_ch6_event rng5 matches 301 unless items block 90148 145 152 container.1 blue_wool unless items block 90148 145 152 container.4 green_wool run tellraw @a[distance=0..150] [{"text":"诺玛：","color":"red","bold": true},{"text":"\n“你已经帮我清理掉了前往水晶祀堂的路上全部的尸变体，我还没来得及感谢你呢。”","color":"white","bold": false}]
+execute if score SEA_ch6_event rng5 matches 301 if items block 90148 145 152 container.1 blue_wool unless items block 90148 145 152 container.4 green_wool run tellraw @a[distance=0..150] [{"text":"诺玛：","color":"red","bold": true},{"text":"\n“你已经帮我清理掉了前往水晶祀堂的路上全部的尸变体，我还没来得及感谢你呢。而且，我也真的很不想你再次体验受伤的感觉。”","color":"white","bold": false}]
+execute if score SEA_ch6_event rng5 matches 301 unless items block 90148 145 152 container.1 blue_wool if items block 90148 145 152 container.4 green_wool run tellraw @a[distance=0..150] [{"text":"诺玛：","color":"red","bold": true},{"text":"\n“你都把圣水晶送到我手里了，我还没来得及感谢你呢。”","color":"white","bold": false}]
+execute if score SEA_ch6_event rng5 matches 301 if items block 90148 145 152 container.1 blue_wool if items block 90148 145 152 container.4 green_wool run tellraw @a[distance=0..150] [{"text":"诺玛：","color":"red","bold": true},{"text":"\n“你专程为我送来了圣水晶，我还没来得及感谢你呢。而且，我也真的很不想你再次体验受伤的感觉。”","color":"white","bold": false}]
 
 execute if score SEA_ch6_event rng5 matches 320 as @n[tag=SEAnorma,x=90000,y=100,z=0,distance=0..1200] at @s run playsound minecraft:entity.evoker.ambient neutral @a ~ ~ ~ 1 1.5
 execute if score SEA_ch6_event rng5 matches 320 run tellraw @a[distance=0..150] [{"text":"诺玛：","color":"red","bold": true},{"text":"\n“所以，我会让你死得很痛快的。真的，就像我杀死菲尔娜大小姐那样。”","color":"white","bold": false}]
@@ -210,7 +213,7 @@ execute if score SEA_ch6_event rng5 matches 460..600 run scoreboard players set 
 
 
 execute if score SEA_ch6_event rng5 matches 159 run scoreboard players set SEA_ch6_event rng5 700
-execute if score SEA_ch6_event rng5 matches 755..910 run scoreboard players set SEA_ch6_event rng5 160
+execute if score SEA_ch6_event rng5 matches 755..756 run scoreboard players set SEA_ch6_event rng5 160
 
 execute if score SEA_ch6_event rng5 matches 718 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
 execute if score SEA_ch6_event rng5 matches 718 if score SEA_ch5_event_fiona_favor rng1 matches ..14 run tellraw @a[distance=0..150] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“我没有任何能和你谈的，诺玛。我知道我本就会死。”","color":"white","bold": false}]
@@ -221,7 +224,35 @@ execute if score SEA_ch6_event rng5 matches 735 if score SEA_ch5_event_fiona_fav
 execute if score SEA_ch6_event rng5 matches 735 if score SEA_ch5_event_fiona_favor rng1 matches 15..17 run tellraw @a[distance=0..150] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“你这样又能解决什么问题？有本事你冲我动手啊！就算这样，你也不会得到任何你想要的！”","color":"white","bold": false}]
 execute if score SEA_ch6_event rng5 matches 735 if score SEA_ch5_event_fiona_favor rng1 matches 18.. run tellraw @a[distance=0..150] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“他的灵魂远比你的要高洁，你永远都无法胜过他，他是比你更加完美的人选！！”","color":"white","bold": false}]
 execute if score SEA_ch6_event rng5 matches 754 as @n[tag=SEAnorma,x=90000,y=100,z=0,distance=0..1200] at @s run playsound minecraft:entity.evoker.ambient neutral @a ~ ~ ~ 1 1.5
-execute if score SEA_ch6_event rng5 matches 754 run tellraw @a[distance=0..150] [{"text":"诺玛：","color":"red","bold": true},{"text":"\n“……废话真的太多了。大小姐，我其实一直都觉得你不该这么啰嗦。”","color":"white","bold": false}]
+execute if score SEA_ch6_event rng5 matches 754 run tellraw @a[distance=0..150] [{"text":"玛瑞莲：","color":"dark_purple","bold": true},{"text":"\n“……废话真的太多了。大小姐，我其实一直都觉得你不该这么啰嗦。”","color":"white","bold": false}]
 
 
+
+execute if score SEA_ch6_event rng5 matches 156 if items entity @a[tag=SEAPT] container.* end_crystal run item replace block 90148 145 152 container.4 with green_wool
+execute if score SEA_ch6_event rng5 matches 156 if items entity @a[tag=SEAPT] container.* end_crystal run scoreboard players set SEA_ch6_event rng5 760
+execute if score SEA_ch6_event rng5 matches 860..865 run scoreboard players set SEA_ch6_event rng5 157
+
+execute if score SEA_ch6_event rng5 matches 761 as @n[tag=SEAnorma,x=90000,y=100,z=0,distance=0..1200] at @s run playsound minecraft:entity.evoker.ambient neutral @a ~ ~ ~ 1 1.5
+execute if score SEA_ch6_event rng5 matches 761 unless items block 90148 145 152 container.1 blue_wool run tellraw @a[distance=0..150] [{"text":"玛瑞莲：","color":"dark_purple","bold": true},{"text":"\n“哎呀等等，先生。你这不是把我要找的东西带在身上了吗？”","color":"white","bold": false}]
+execute if score SEA_ch6_event rng5 matches 761 if items block 90148 145 152 container.1 blue_wool run tellraw @a[distance=0..150] [{"text":"玛瑞莲：","color":"dark_purple","bold": true},{"text":"\n“……嗯？有点意思。太有意思了，我就知道信任你是对的。你居然把它带在身上了。”","color":"white","bold": false}]
+execute if score SEA_ch6_event rng5 matches 778 as @a[tag=SEAPT] run tellraw @a[distance=0..50] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“什、……你在说什么？”","color":"white"}]
+
+execute if score SEA_ch6_event rng5 matches 790 as @n[tag=SEAnorma,x=90000,y=100,z=0,distance=0..1200] at @s run playsound minecraft:entity.evoker.ambient neutral @a ~ ~ ~ 1 1.5
+execute if score SEA_ch6_event rng5 matches 790 unless items block 90148 145 152 container.1 blue_wool run tellraw @a[distance=0..150] [{"text":"玛瑞莲：","color":"dark_purple","bold": true},{"text":"\n“别跟我装傻，圣水晶就在你的身上吧？”","color":"white","bold": false}]
+execute if score SEA_ch6_event rng5 matches 790 if items block 90148 145 152 container.1 blue_wool run tellraw @a[distance=0..150] [{"text":"玛瑞莲：","color":"dark_purple","bold": true},{"text":"\n“呵呵……我知道圣水晶就在你的身上。”","color":"white","bold": false}]
+
+execute if score SEA_ch6_event rng5 matches 813 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
+execute if score SEA_ch6_event rng5 matches 813 if score SEA_ch5_event_fiona_favor rng1 matches ..10 if items block 90148 145 152 container.5 green_wool run tellraw @a[distance=0..150] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“","color":"white","bold": false},{"selector":"@p[tag=SEAPT,scores={SEAPT_member=1}]","color":"white","bold": false},{"text":"，我之前就跟你说你干了很糟糕的事情，你非要把那玩意带身上，现在怎么办？！”","color":"white","bold": false}]
+execute if score SEA_ch6_event rng5 matches 813 if score SEA_ch5_event_fiona_favor rng1 matches ..10 unless items block 90148 145 152 container.5 green_wool run tellraw @a[distance=0..150] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“","color":"white","bold": false},{"selector":"@p[tag=SEAPT,scores={SEAPT_member=1}]","color":"white","bold": false},{"text":"，你他妈把什么东西带身上了？！我操……”","color":"white","bold": false}]
+execute if score SEA_ch6_event rng5 matches 813 if score SEA_ch5_event_fiona_favor rng1 matches 11.. run tellraw @a[distance=0..150] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“糟糕了，圣水晶才是诺玛的目标，她一开始就在利用你！！”","color":"white","bold": false}]
+execute if score SEA_ch6_event rng5 matches 829 as @a[tag=SEAPT] run tellraw @a[distance=0..50] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“我……我都不清楚这件事，那……我给你圣水晶，你饶我们一命？”","color":"white"}]
+
+execute if score SEA_ch6_event rng5 matches 843 as @n[tag=SEAnorma,x=90000,y=100,z=0,distance=0..1200] at @s run playsound minecraft:entity.evoker.ambient neutral @a ~ ~ ~ 1 1.5
+execute if score SEA_ch6_event rng5 matches 843 unless items block 90148 145 152 container.1 blue_wool run tellraw @a[distance=0..150] [{"text":"玛瑞莲：","color":"dark_purple","bold": true},{"text":"\n“可笑，圣水晶本就该归我所有，你们也本就该死。”","color":"white","bold": false}]
+execute if score SEA_ch6_event rng5 matches 843 if items block 90148 145 152 container.1 blue_wool run tellraw @a[distance=0..150] [{"text":"玛瑞莲：","color":"dark_purple","bold": true},{"text":"\n“抱歉，我会拿走圣水晶。但……我不能让你们活。我也有自己的考量，请你理解。”","color":"white","bold": false}]
+
+execute if score SEA_ch6_event rng5 matches 844 as @n[tag=SEAnorma,x=90000,y=100,z=0,distance=0..1200] at @s run tp @s ~-1 ~ ~ facing ~-2 ~ ~
+execute if score SEA_ch6_event rng5 matches 846 as @n[tag=SEAnorma,x=90000,y=100,z=0,distance=0..1200] at @s run clear @a[tag=SEAPT] end_crystal
+execute if score SEA_ch6_event rng5 matches 846 as @n[tag=SEAnorma,x=90000,y=100,z=0,distance=0..1200] at @s run kill @e[type=item,distance=0..80]
+execute if score SEA_ch6_event rng5 matches 847 as @n[tag=SEAnorma,x=90000,y=100,z=0,distance=0..1200] at @s run tp @s ~1 ~ ~ facing ~-2 ~ ~
 

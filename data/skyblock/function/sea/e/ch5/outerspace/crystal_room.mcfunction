@@ -31,6 +31,7 @@ execute if score SEA_ch5_event_outerspace_fiona sea_4temp1 matches 132 as @n[tag
 execute if score SEA_ch5_event_outerspace_fiona sea_4temp1 matches 132 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if score SEA_ch5_event_fiona_favor rng1 matches 17.. unless entity @a[tag=SEAPT,scores={SEAPT_member=2}] run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“……抱歉，你当做我没说话就好。”","color":"white","bold": false}]
 
 
+execute if score SEA_ch5_event_outerspace_fiona sea_4temp1 matches 209 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run item replace block 90148 145 152 container.5 with green_wool
 execute if score SEA_ch5_event_outerspace_fiona sea_4temp1 matches 209 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
 execute if score SEA_ch5_event_outerspace_fiona sea_4temp1 matches 209 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if score SEA_ch5_event_fiona_favor rng1 matches ..16 run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“……等等，你打算干什么？”","color":"white","bold": false}]
 execute if score SEA_ch5_event_outerspace_fiona sea_4temp1 matches 209 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if score SEA_ch5_event_fiona_favor rng1 matches 17.. run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“……等等，你这是要做什么？”","color":"white","bold": false}]

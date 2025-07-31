@@ -1052,6 +1052,7 @@ forceload remove 90141 -1888 90236 -1835
 fill 90107 105 36 90107 105 51 minecraft:waxed_copper_trapdoor[facing=east]
 fill 90104 105 36 90104 105 51 minecraft:waxed_copper_trapdoor[facing=west]
 
-
+item replace block 90148 145 152 container.4 with air
+item replace block 90148 145 152 container.5 with air
 
 
