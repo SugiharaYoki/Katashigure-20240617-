@@ -1,2 +1,2 @@
 
-give @s minecraft:splash_potion[potion_contents={potion:"fire_resistance",custom_effects:[{id:"fire_resistance",duration:200}]},custom_name='[{"text": "「抗火瓶」","color":"light_purple","italic":false},{"text":"lv1","color":"blue","italic":false}]']
+give @s minecraft:splash_potion[potion_contents={potion:"water",custom_effects:[{id:"fire_resistance",duration:200}]},custom_name='[{"text": "「抗火瓶」","color":"light_purple","italic":false},{"text":"lv1","color":"blue","italic":false}]']
