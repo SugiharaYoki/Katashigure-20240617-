@@ -35,7 +35,9 @@ attribute @s knockback_resistance modifier remove mg_azr0:skill_knockback_resist
 attribute @s armor_toughness modifier remove mg_azr0:skill_armor_toughness1
 attribute @s armor_toughness modifier remove mg_azr0:skill_armor_toughness2
 
-function skyblock:pvp/skywar/system/removeallgaming
+# function skyblock:pvp/skywar/system/removeallgaming
+
+# tag @s add Gaming
 
 effect clear @s
 

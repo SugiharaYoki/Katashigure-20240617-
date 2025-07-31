@@ -33,8 +33,10 @@ execute if entity @a[tag=ServerManager,team=!TokumeiM,team=!TokumeiO,team=!Tokum
 #
 #say hi
 #CentralProtection#
-gamemode adventure @a[tag=!Gaming,tag=!ServerManager,tag=!ServerOperator,gamemode=survival]
-gamemode adventure @a[tag=!Gaming,tag=!ServerManager,tag=!ServerOperator,gamemode=spectator,x=0,y=0,z=0,distance=..1000]
+gamemode adventure @a[tag=!Gaming,tag=!ServerManager,tag=!ServerOperator]
+# 下面是夜季写的紧急修复方案
+# gamemode adventure @a[tag=!Gaming,tag=!ServerManager,tag=!ServerOperator,gamemode=survival]
+# gamemode adventure @a[tag=!Gaming,tag=!ServerManager,tag=!ServerOperator,gamemode=spectator,x=0,y=0,z=0,distance=..1000]
 effect give @a[tag=!Gaming] minecraft:saturation infinite 0 true
 execute unless block -17 23 32 minecraft:soul_lantern run spawnpoint @a[x=50000,y=0,z=50000,distance=0..1200] -43 55 0
 execute unless block -17 23 32 minecraft:soul_lantern as @a[tag=PVP_see,x=50000,y=50,z=50000,distance=1500..] at @s run function skyblock:pvp/skywar/system/removeallgaming
