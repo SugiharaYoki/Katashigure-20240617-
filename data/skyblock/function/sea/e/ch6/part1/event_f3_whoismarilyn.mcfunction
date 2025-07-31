@@ -27,7 +27,12 @@ execute if items block 90148 145 152 container.1 blue_wool if score SEA_ch6_even
 execute if score SEA_ch6_event rng5 matches 34 run tellraw @a[distance=0..150] [{"text":"玛瑞莲：","color":"dark_purple","bold": true},{"text":"\n“那就是无论一件事会有多么危险，令你意外死亡的可能性多么高……你都一定能将它办好。”","color":"white","bold": false}]
 
 execute if score SEA_ch6_event rng5 matches 50..173 if items entity @p[scores={sea_progress=16..},tag=SEAPT] weapon.mainhand spyglass as @p[nbt={SelectedItem:{id:"minecraft:spyglass"}}] unless entity @a[tag=SEAPT,scores={sea_progress=..15}] at @s run tellraw @a[tag=SEAPT] [{"selector":"@s","color":"white"},{"text":"：「跳过了第一段剧情」","color":"white"}]
+execute if score SEA_ch6_event rng5 matches 50..173 if items entity @p[scores={sea_progress=16..},tag=SEAPT] weapon.mainhand spyglass unless entity @a[tag=SEAPT,scores={sea_progress=..15}] if items entity @a[tag=SEAPT] container.* end_crystal run item replace block 90148 145 152 container.4 with green_wool
+execute if score SEA_ch6_event rng5 matches 50..173 if items entity @p[scores={sea_progress=16..},tag=SEAPT] weapon.mainhand spyglass unless entity @a[tag=SEAPT,scores={sea_progress=..15}] if items entity @a[tag=SEAPT] container.* end_crystal run clear @a[tag=SEAPT] end_crystal
+execute if score SEA_ch6_event rng5 matches 50..173 if items entity @p[scores={sea_progress=16..},tag=SEAPT] weapon.mainhand spyglass unless entity @a[tag=SEAPT,scores={sea_progress=..15}] if items entity @a[tag=SEAPT] container.* end_crystal run kill @e[type=item,distance=0..80]
 execute if score SEA_ch6_event rng5 matches 50..173 if items entity @p[scores={sea_progress=16..},tag=SEAPT] weapon.mainhand spyglass unless entity @a[tag=SEAPT,scores={sea_progress=..15}] run scoreboard players set SEA_ch6_event rng5 174
+
+
 
 execute if score SEA_ch6_event rng5 matches 50 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
 execute if score SEA_ch6_event rng5 matches 50 run tellraw @a[distance=0..150] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“我就知道……是你！！”","color":"white","bold": false}]
