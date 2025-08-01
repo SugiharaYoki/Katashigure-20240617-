@@ -33,7 +33,7 @@ execute if score SEA_ch6_event rng5 matches 12501 as @n[tag=SEAedwina] at @s run
 execute if score SEA_ch6_event rng5 matches 12501 as @n[tag=SEAedwina] at @s run tag @s remove SEAedwina_attackable
 execute if score SEA_ch6_event rng5 matches 12501 as @n[tag=SEAedwina] at @s run tp 90003 89 -1925
 execute if score SEA_ch6_event rng5 matches 12501 as @n[tag=SEAedwina] at @s run tp 90003 89 -1925
-execute if score SEA_ch6_event rng5 matches 12001.. as @a[tag=SEAPT] at @s run effect clear @s darkness
+execute if score SEA_ch6_event rng5 matches 12001..14900 as @a[tag=SEAPT] at @s run effect clear @s darkness
 execute if score SEA_ch6_event rng5 matches 12501 as @a[tag=SEAPT] at @s run effect clear @s slowness
 execute if score SEA_ch6_event rng5 matches 12501 as @a[tag=SEAnorma_warden] at @s run effect clear @s speed
 execute if score SEA_ch6_event rng5 matches 12501 as @a[tag=SEAnorma_warden] at @s run effect clear @s strength
@@ -228,8 +228,8 @@ execute if score SEA_ch6_event rng5 matches 15099 as @p[tag=SEAPT] at @s run tel
 execute if score SEA_ch6_event rng5 matches 15117 as @a[scores={SEAPT_member=1}] at @s run stopsound @s
 execute if score SEA_ch6_event rng5 matches 15117 as @a[scores={SEAPT_member=1}] at @s run tellraw @a[distance=0..150] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“所以，在这最后的时间里，你想要怎样死？”","color":"white","bold": false}]
 execute if score SEA_ch6_event rng5 matches 15146 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“我要……活下去。”","color":"white"}]
-execute if score SEA_ch6_event rng5 matches 15157 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“我……不会放弃。……我已经一路走到了这里，我失去了太多，没有任何可以失去的了。”","color":"white"}]
-execute if score SEA_ch6_event rng5 matches 15169 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“我见证了你们的结局。就算如此，我也不会驻足原地。”","color":"white"}]
+execute if score SEA_ch6_event rng5 matches 15160 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“我……不会放弃。……我已经一路走到了这里，我失去了太多，没有任何可以失去的了。”","color":"white"}]
+execute if score SEA_ch6_event rng5 matches 15174 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“我见证了你们的结局。就算如此，我也不会驻足原地。”","color":"white"}]
 
 
 execute if score SEA_ch6_event rng5 matches 8095..19999 if entity @a[tag=SEAPT,tag=!SEAPF,x=90044,y=20,z=-1824,dx=16,dy=5,dz=16] run scoreboard players set SEA_ch6_event rng5 20000
