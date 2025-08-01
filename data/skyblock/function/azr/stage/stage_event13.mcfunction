@@ -128,7 +128,7 @@ execute if score stage_main_thread AzrTimerStack matches 315 if score playerCoun
 execute if score stage_main_thread AzrTimerStack matches 315 if score playerCount Azr_system matches 2.. run tellraw @a[tag=azrPlayer] [{"text":"“难道说……","color":"white"},{"selector":"@r[tag=azrPlayer]","color":"white"},{"text":"？是你们吗？”","color":"white"}]
 execute if score stage_main_thread AzrTimerStack matches 315 as @n[tag=AzrielBossFA] at @s run playsound minecraft:entity.pillager.ambient master @a[tag=azrPlayer] ~ ~ ~ 3 0.8
 
-execute if score stage_main_thread AzrTimerStack matches 303 run summon pillager -79788 31.0 -363 {Silent:1b,PersistenceRequired:1b,Tags:["AzrielBossFA","AzrielBossFA2","AzrielNPC"],NoAI:1b,DeathLootTable:"skyblock:azriel_shadow_tier1",Health:100.0f,CustomName:'"默尔森"',Invulnerable:1b,HandItems:[{},{}],attributes:[{id:"generic.follow_range",base:80.0d},{id:"generic.max_health",base:100.0d},{id:"generic.movement_speed",base:0.0d},{id:"generic.knockback_resistance",base:1.0d}]}
+execute if score stage_main_thread AzrTimerStack matches 304 run summon pillager -79788 31.0 -363 {Silent:1b,PersistenceRequired:1b,Tags:["AzrielBossFA","AzrielBossFA2","AzrielNPC"],NoAI:1b,DeathLootTable:"skyblock:azriel_shadow_tier1",Health:100.0f,CustomName:'"默尔森"',Invulnerable:1b,HandItems:[{},{}],attributes:[{id:"generic.follow_range",base:80.0d},{id:"generic.max_health",base:100.0d},{id:"generic.movement_speed",base:0.0d},{id:"generic.knockback_resistance",base:1.0d}]}
 
 #execute if score stage_main_thread AzrTimerStack matches 315..400 if score #rng3 Azr_system matches 1 as @e[tag=AzrielBossFA,limit=1,x=-79788,y=31.0,z=-363,distance=..300] at @s run tp @s ~ ~ ~ facing entity @a[limit=1,tag=azrPlayer,sort=nearest]
 
