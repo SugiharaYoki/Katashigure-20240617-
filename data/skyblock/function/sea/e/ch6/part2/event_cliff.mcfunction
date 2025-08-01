@@ -242,6 +242,14 @@ execute if score SEA_ch6_event rng5 matches 20001 run particle minecraft:flame 9
 execute if score SEA_ch6_event rng5 matches 20001 run particle minecraft:crimson_spore 90055 23 -1815 8 0 8 0.3 600
 execute if score SEA_ch6_event rng5 matches 20001 run particle minecraft:flash 90055 23 -1815
 execute if score SEA_ch6_event rng5 matches 20001 run playsound minecraft:item.totem.use block @a ~ ~ ~ 1 0.5
+execute if score SEA_ch6_event rng5 matches 20001 run clear @s flint
+execute if score SEA_ch6_event rng5 matches 20001 run clear @s gunpowder
+execute if score SEA_ch6_event rng5 matches 20001 run clear @s coal
+execute if score SEA_ch6_event rng5 matches 20001 run clear @s raw_iron
+execute if score SEA_ch6_event rng5 matches 20001 run clear @s iron_ingot
+execute if score SEA_ch6_event rng5 matches 20001 run clear @s echo_shard
+execute if score SEA_ch6_event rng5 matches 20001 run clear @s gold_ingot
+execute if score SEA_ch6_event rng5 matches 20001 run clear @s emerald_block
 
 execute if score SEA_ch6_event rng5 matches 20007 run setblock 90060 20 -1823 minecraft:redstone_lamp[lit=true]
 execute if score SEA_ch6_event rng5 matches 20008 run setblock 90064 20 -1819 minecraft:redstone_lamp[lit=true]
