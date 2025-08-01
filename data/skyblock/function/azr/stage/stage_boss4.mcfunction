@@ -401,6 +401,7 @@ execute if score tick_main_thread AzrTimerStack matches 8669 run tellraw @a[tag=
 
 execute if score tick_main_thread AzrTimerStack matches 8669.. as @a[tag=azrPlayer] at @s run effect give @s darkness 10 0 true
 execute if score tick_main_thread AzrTimerStack matches 8669 run data modify entity @e[tag=AzrielBossA,limit=1] Invulnerable set value 0b
+execute if score tick_main_thread AzrTimerStack matches 8669.. run function skyblock:azr/tool_rng
 execute if score tick_main_thread AzrTimerStack matches 8669.. if score #rng5 Azr_system matches 1 run effect give @e[tag=AzrielBossA,limit=1] instant_damage 2 2 true
 execute if score tick_main_thread AzrTimerStack matches 8669.. if score #rng5 Azr_system matches 2 run effect give @e[tag=AzrielBossA,limit=1] instant_damage 2 0 true
 # execute if score tick_main_thread AzrTimerStack matches 8669.. if score #rng5 Azr_system matches 1 run damage @e[tag=AzrielBossA,limit=1] 24 magic
