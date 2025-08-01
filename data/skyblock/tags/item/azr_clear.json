@@ -22,6 +22,11 @@
         "red_nether_brick_slab",
         "white_wool",
         "polished_blackstone",
-        "nether_brick_slab"
+        "nether_brick_slab",
+        "gilded_blackstone",
+        "netherrack",
+        "nether_brick_wall",
+        "nether_brick_fence",
+        "tinted_glass"
     ]
 }
