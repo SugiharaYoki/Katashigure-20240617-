@@ -8,4 +8,5 @@ execute if score stage Azr_system matches 35..39 run scoreboard players add stag
 execute if score stage Azr_system matches 42..43 run scoreboard players add stage_main_thread AzrTimerStack 1
 execute if score stage Azr_system matches 44 run scoreboard players add stage_main_thread AzrTimerStack 1
 execute if score stage Azr_system matches 51..54 run scoreboard players add stage_main_thread AzrTimerStack 1
+execute if score stage Azr_system matches 60 run scoreboard players add stage_main_thread AzrTimerStack 1
 execute if score stage Azr_system matches 301 run scoreboard players add stage_main_thread AzrTimerStack 1
