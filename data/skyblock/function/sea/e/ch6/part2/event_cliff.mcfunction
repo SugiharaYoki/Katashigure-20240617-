@@ -239,7 +239,7 @@ execute if score SEA_ch6_event rng5 matches 20001 run setblock 90055 23 -1815 mi
 execute if score SEA_ch6_event rng5 matches 20001 run setblock 90055 21 -1815 minecraft:air destroy
 execute if score SEA_ch6_event rng5 matches 20001 run fill 90056 20 -1814 90054 20 -1816 tuff_bricks
 execute if score SEA_ch6_event rng5 matches 20001 run particle minecraft:flame 90055 23 -1815 0 0 0 0.3 100
-execute if score SEA_ch6_event rng5 matches 20001 run particle minecraft:crimson_spore 90055 23 -1815 8 0 8 0.3 600
+execute if score SEA_ch6_event rng5 matches 20001 run particle minecraft:crimson_spore 90055 21.1 -1815 8 0 8 0.3 600
 execute if score SEA_ch6_event rng5 matches 20001 run particle minecraft:flash 90055 23 -1815
 execute if score SEA_ch6_event rng5 matches 20001 run playsound minecraft:item.totem.use block @a ~ ~ ~ 1 0.5
 execute if score SEA_ch6_event rng5 matches 20001 run clear @s flint
@@ -277,5 +277,15 @@ execute if score SEA_ch6_event rng5 matches 20047..20067 run particle white_ash 
 
 execute if score SEA_ch6_event rng5 matches 20030 as @a[scores={SEAPT_member=1}] at @s run tellraw @a[distance=0..150] [{"text":"？？？：","color":"red","bold": true},{"text":"\n“汝是因知晓神庭的怒雷对地底无能为力吧。”","color":"white","bold": false}]
 
-execute if score SEA_ch6_event rng5 matches 20047 run summon marker 90069 21 -1815 {Tags:["SEAboss5_heaven_portal"]}
+execute if score SEA_ch6_event rng5 matches 20047 run summon marker 90069 28 -1815 {Tags:["SEAboss5_heaven_portal"]}
+execute if score SEA_ch6_event rng5 matches 20058 positioned 90064 20 -1815 run summon lightning_bolt
+execute if score SEA_ch6_event rng5 matches 20058 positioned 90064 22 -1815 run function skyblock:sea/m/unique/boss6
+execute if score SEA_ch6_event rng5 matches 20058 run effect give @n[tag=SEAboss6] fire_resistance infinite 0 true
+#execute if score SEA_ch6_event rng5 matches 20053 positioned 90064 22 -1815 run function skyblock:azr/effects/zanei_appear
+
+execute if score SEA_ch6_event rng5 matches 20047 as @a[scores={SEAPT_member=1}] at @s run tellraw @a[distance=0..150] [{"text":"？？？：","color":"red","bold": true},{"text":"\n“汝可知自己面对的，乃是天使长拉贵尔大人麾下的主天使：权之执理？”","color":"white","bold": false}]
+execute if score SEA_ch6_event rng5 matches 20063 as @a[scores={SEAPT_member=1}] at @s run tellraw @a[distance=0..150] [{"text":"权之执理：","color":"red","bold": true},{"text":"\n“无妨，吾会令汝认知到自己的愚昧与无知。”","color":"white","bold": false}]
+execute if score SEA_ch6_event rng5 matches 20078 as @a[scores={SEAPT_member=1}] at @s run tellraw @a[distance=0..150] [{"text":"权之执理：","color":"red","bold": true},{"text":"\n“纵使天穹的雷霆无法落下，吾也能将汝二人如同蝼蚁般碾碎。”","color":"white","bold": false}]
+
+
 
