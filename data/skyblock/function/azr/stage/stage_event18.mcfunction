@@ -1,3 +1,4 @@
+say hi
 execute if score stage_main_thread TimerStack matches 25 run scoreboard objectives add Azr_Portaling dummy
 execute if score stage_main_thread TimerStack matches 30..190 as @a[tag=azrPlayer] at @s if block ~ ~ ~ nether_portal unless entity @a[tag=azrPlayer,distance=8..] run scoreboard players add @s Azr_Portaling 1
 execute if score stage_main_thread TimerStack matches 30..190 as @a[tag=azrPlayer] at @s unless block ~ ~ ~ nether_portal run scoreboard players set @s Azr_Portaling 0
