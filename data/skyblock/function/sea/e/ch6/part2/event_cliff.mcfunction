@@ -218,6 +218,8 @@ execute if score SEA_ch6_event rng5 matches 15130 as @p[tag=SEAPT] at @s run par
 execute if score SEA_ch6_event rng5 matches 15130 as @p[tag=SEAPT] at @s run playsound item.totem.use master @a ~ ~ ~ 2 0.5
 execute if score SEA_ch6_event rng5 matches 15130 as @p[tag=SEAPT] at @s run playsound item.totem.use master @a ~ ~ ~ 2 0.6
 execute if score SEA_ch6_event rng5 matches 15130 as @p[tag=SEAPT] at @s run playsound item.totem.use master @a ~ ~ ~ 2 0.7
+execute if score SEA_ch6_event rng5 matches 15130 as @a[tag=SEAPT] at @s run attribute @s minecraft:max_health modifier add seaboss6:health 20 add_value
+execute if score SEA_ch6_event rng5 matches 15130 as @a[tag=SEAPT] at @s run effect give @s instant_health 1 19 true
 execute if score SEA_ch6_event rng5 matches 15130 as @p[tag=SEAPT] at @s run playsound minecraft:garden2.chapter_title master @a ~ ~ ~ 2 1
 execute if score SEA_ch6_event rng5 matches 15100 as @a[scores={SEAPT_member=1}] at @s run playsound minecraft:entity.ender_dragon.flap player @a ~ ~ ~ 1 0.5
 execute if score SEA_ch6_event rng5 matches 15100 as @a[scores={SEAPT_member=1}] at @s run effect give @s darkness 10 0 true
@@ -228,6 +230,7 @@ execute if score SEA_ch6_event rng5 matches 15117 as @a[scores={SEAPT_member=1}]
 execute if score SEA_ch6_event rng5 matches 15146 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“我要……活下去。”","color":"white"}]
 execute if score SEA_ch6_event rng5 matches 15157 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“我……不会放弃。……我已经一路走到了这里，我失去了太多，没有任何可以失去的了。”","color":"white"}]
 execute if score SEA_ch6_event rng5 matches 15169 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“我见证了你们的结局。就算如此，我也不会驻足原地。”","color":"white"}]
+
 
 execute if score SEA_ch6_event rng5 matches 8095..19999 if entity @a[tag=SEAPT,tag=!SEAPF,x=90044,y=20,z=-1824,dx=16,dy=5,dz=16] run scoreboard players set SEA_ch6_event rng5 20000
 execute if score SEA_ch6_event rng5 matches 19900..19999 run scoreboard players set SEA_ch6_event rng5 19900
