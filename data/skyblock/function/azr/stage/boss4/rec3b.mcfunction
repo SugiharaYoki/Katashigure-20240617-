@@ -22,4 +22,4 @@ execute if score tick_main_thread AzrTimerStack matches 2610..2680 if score play
 
 
 
-execute if score tick_main_thread AzrTimerStack matches 2720.. if score #rng11 Azr_system matches 1..2 run scoreboard players set tick_main_thread AzrTimerStack 2588
+execute if score tick_main_thread AzrTimerStack matches 2720.. if score #rng11 Azr_system matches 1..2 run scoreboard players set tick_main_thread AzrTimerStack 2601

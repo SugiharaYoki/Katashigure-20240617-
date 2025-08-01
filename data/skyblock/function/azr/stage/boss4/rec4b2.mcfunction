@@ -15,4 +15,4 @@ execute if score tick_main_thread AzrTimerStack matches 2753 if score #rng3 Azr_
 execute if score tick_main_thread AzrTimerStack matches 2753 if score #rng3 Azr_system matches 2 if score playerCount Azr_system matches 1.. run tellraw @a[tag=!En,tag=azrPlayer] {"text":"“又是狱火弹，这回有四发！小心头顶方向！”","color":"white"}
 execute if score tick_main_thread AzrTimerStack matches 2753 if score #rng3 Azr_system matches 3 if score playerCount Azr_system matches 1.. run tellraw @a[tag=!En,tag=azrPlayer] {"text":"“大量狱火弹袭来！注意躲避！”","color":"white"}
 
-execute if score tick_main_thread AzrTimerStack matches 2900.. if score #rng11 Azr_system matches 1..2 run scoreboard players set tick_main_thread AzrTimerStack 2588
+execute if score tick_main_thread AzrTimerStack matches 2900.. if score #rng11 Azr_system matches 1..2 run scoreboard players set tick_main_thread AzrTimerStack 2601

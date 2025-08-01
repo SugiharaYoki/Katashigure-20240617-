@@ -110,5 +110,5 @@ execute if score tick_main_thread AzrTimerStack matches 3339 run summon fireball
 execute if score tick_main_thread AzrTimerStack matches 3339 run summon fireball ~ ~ ~ {Tags:["azrrec1"],ExplosionPower:1,Motion:[0.0d,-0.8d,-0.9d],acceleration_power:0.12}
 execute if score tick_main_thread AzrTimerStack matches 3342 run summon fireball ~ ~ ~ {Tags:["azrrec1"],ExplosionPower:1,Motion:[0.0d,-0.9d,1.2d],acceleration_power:0.15}
 execute if score tick_main_thread AzrTimerStack matches 3342 run summon fireball ~ ~ ~ {Tags:["azrrec1"],ExplosionPower:1,Motion:[0.0d,-0.9d,-1.2d],acceleration_power:0.15}
-execute if score tick_main_thread AzrTimerStack matches 3350.. if score #rng11 Azr_system matches 1..2 run scoreboard players set tick_main_thread AzrTimerStack 2588
+execute if score tick_main_thread AzrTimerStack matches 3350.. if score #rng11 Azr_system matches 1..2 run scoreboard players set tick_main_thread AzrTimerStack 2601
 execute if score tick_main_thread AzrTimerStack matches 3149 if score #rng11 Azr_system matches 1..2 run kill @s[type=marker,tag=AzrielBoss4Rec2]
