@@ -151,13 +151,13 @@ setblock 90009 57 -1858 chest[facing=north]
 
 forceload add 90042 -1829 90068 -1798
 clone 90052 115 -1829 90065 115 -1801 90052 20 -1829
-setblock 90060 20 -1822 minecraft:redstone_lamp[lit=false]
-setblock 90064 20 -1818 minecraft:redstone_lamp[lit=false]
+setblock 90060 20 -1823 minecraft:redstone_lamp[lit=false]
+setblock 90064 20 -1819 minecraft:redstone_lamp[lit=false]
 setblock 90064 20 -1811 minecraft:redstone_lamp[lit=false]
 setblock 90060 20 -1807 minecraft:redstone_lamp[lit=false]
 setblock 90050 20 -1807 minecraft:redstone_lamp[lit=false]
-setblock 90050 20 -1822 minecraft:redstone_lamp[lit=false]
-setblock 90046 20 -1818 minecraft:redstone_lamp[lit=false]
+setblock 90050 20 -1823 minecraft:redstone_lamp[lit=false]
+setblock 90046 20 -1819 minecraft:redstone_lamp[lit=false]
 setblock 90046 20 -1811 minecraft:redstone_lamp[lit=false]
 fill 90056 20 -1814 90054 20 -1816 sculk
 setblock 90055 21 -1815 minecraft:sculk_shrieker
