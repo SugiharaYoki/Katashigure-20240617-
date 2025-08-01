@@ -280,6 +280,7 @@ execute if score SEA_ch6_event rng5 matches 20030 as @a[scores={SEAPT_member=1}]
 execute if score SEA_ch6_event rng5 matches 20047 run summon marker 90069 21 -1815 {Tags:["SEAboss5_heaven_portal"]}
 execute if score SEA_ch6_event rng5 matches 20057 positioned 90064 22 -1815 run summon lightning_bolt
 execute if score SEA_ch6_event rng5 matches 20057 positioned 90064 22 -1815 run function skyblock:sea/m/unique/boss6
+execute if score SEA_ch6_event rng5 matches 20057 run effect give @n[tag=SEAboss6] fire_resistance infinite 0 true
 execute if score SEA_ch6_event rng5 matches 20053 positioned 90064 22 -1815 run function skyblock:azr/effects/zanei_appear
 
 execute if score SEA_ch6_event rng5 matches 20047 as @a[scores={SEAPT_member=1}] at @s run tellraw @a[distance=0..150] [{"text":"？？？：","color":"red","bold": true},{"text":"\n“汝可知自己面对的，乃是天使长拉贵尔大人麾下的主天使：权之执理？”","color":"white","bold": false}]
