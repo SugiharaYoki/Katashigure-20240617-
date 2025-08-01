@@ -94,9 +94,6 @@ fill -79470 84 -337 -79462 84 -339 glass
 fill -79460 64 -343 -79471 64 -332 black_concrete replace air
 clone -79555 32 -352 -79517 32 -319 -79555 41 -352
 
-tellraw @a[tag=azrPlayer,scores={AZR_chainKillUpg_pts=..7},tag=hasSkills] [{"text":"索命连击","color":"gold"},{"text":"可用点数已增加，目前为：8","color":"green"}]
-scoreboard players set @a[scores={AZR_chainKillUpg_pts=..7}] AZR_chainKillUpg_pts 8
-
 
 #【狱山羊 lv6】summon goat ~ ~ ~ {IsScreamingGoat:0b,PersistenceRequired:1,Tags:["AzrielDecMob"],DeathLootTable:"skyblock:azriel_sheep_tier1",CustomName:"\"狱山羊\"",Age:10,Attributes:[{Name:generic.max_health,Base:10.0},{Name:generic.attack_knockback,Base:0.50},{Name:generic.attack_damage,Base:12.0},{Name:generic.movement_speed,Base:0.18}],Health:10.0f}
 #【焰型体 lv8】summon blaze ~ ~ ~ {PersistenceRequired:1,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_blaze_tier1",CustomName:"\"焰型体\"",Attributes:[{Name:generic.max_health,Base:5.0},{Name:generic.attack_damage,Base:4.0},{Name:generic.movement_speed,Base:0.22}],Health:5.0f}
