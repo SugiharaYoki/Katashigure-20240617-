@@ -94,6 +94,8 @@ setblock 90090 102 -1881 decorated_pot{sherds:["prize_pottery_sherd","prize_pott
 
 setblock 90003 47 -1809 air
 setblock 90003 47 -1809 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 20, id:"minecraft:arrow"}}
+setblock 90002 44 -1896 air
+setblock 90002 44 -1896 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 3, id:"minecraft:gunpowder"}}
 
 setblock 90151 133 -1857 air
 execute if items entity @a[tag=SEAPT] container.* golden_sword run setblock 90151 133 -1857 minecraft:skeleton_skull[rotation=10]
