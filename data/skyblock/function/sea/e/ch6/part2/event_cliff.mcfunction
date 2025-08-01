@@ -270,7 +270,12 @@ execute if score SEA_ch6_event rng5 matches 20014 positioned 90046 20 -1811 run 
 
 execute if score SEA_ch6_event rng5 matches 20001 run scoreboard players set SEAmusic rng1 0
 
+execute if score SEA_ch6_event rng5 matches 20047 run playsound minecraft:entity.wither.spawn ambient @a ~ ~ ~ 5 0.5
+execute if score SEA_ch6_event rng5 matches 20047 run particle white_ash 90055 21.1 -1815 20 5 20 1 50000
+execute if score SEA_ch6_event rng5 matches 20047..20067 run particle white_ash 90055 21.1 -1815 20 5 20 1 500
 
 
+execute if score SEA_ch6_event rng5 matches 20030 as @a[scores={SEAPT_member=1}] at @s run tellraw @a[distance=0..150] [{"text":"？？？：","color":"red","bold": true},{"text":"\n“汝是因知晓神庭的怒雷对地底无能为力吧。”","color":"white","bold": false}]
 
+execute if score SEA_ch6_event rng5 matches 20047 run summon marker 90069 21 -1815 {Tags:["SEAboss5_heaven_portal"]}
 
