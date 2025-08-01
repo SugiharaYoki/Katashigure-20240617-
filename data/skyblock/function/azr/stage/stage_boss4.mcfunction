@@ -95,7 +95,7 @@ execute if score #rng4 Azr_system matches 1 as @e[type=fireball,tag=azrrec2] at 
 execute as @e[type=dragon_fireball,tag=azrrecP] at @s run function skyblock:azr/stage/boss4/azrrec_p
 
 
-# execute if score tick_main_thread AzrTimerStack matches 150..2000 if score @e[tag=AzrielBoss4,limit=1] Health matches ..10 run scoreboard players set tick_main_thread AzrTimerStack 2001
+execute if score tick_main_thread AzrTimerStack matches 150..2000 if score @e[tag=AzrielBoss4,limit=1] Health matches ..10 run scoreboard players set tick_main_thread AzrTimerStack 2001
 execute if score tick_main_thread AzrTimerStack matches 300..2000 unless entity @e[tag=AzrielBoss4,limit=1,scores={Health=10..}] run scoreboard players set tick_main_thread AzrTimerStack 2001
 execute if score Azr_Rec Azr_system matches 2 if score tick_main_thread AzrTimerStack matches 2002 run stopsound @a[tag=azrPlayer] music
 execute if score Azr_Rec Azr_system matches 2 if score tick_main_thread AzrTimerStack matches 2002 run playsound minecraft:entity.lightning_bolt.impact master @a[tag=azrPlayer] -79536 51 -338 500 0.6
@@ -124,7 +124,7 @@ execute if score tick_main_thread AzrTimerStack matches 2110..2230 at @e[limit=1
 execute if score tick_main_thread AzrTimerStack matches 2110..2245 if score #rng3 Azr_system matches 1 run particle minecraft:falling_lava -79536 57 -338 2.2 2.2 2.2 0.05 8
 execute if score tick_main_thread AzrTimerStack matches 2110..2245 if score #rng3 Azr_system matches 1 run particle minecraft:squid_ink -79536 57 -338 1.5 1.5 1.5 0.05 2
 execute if score tick_main_thread AzrTimerStack matches 2230 run particle minecraft:large_smoke -79536 57 -338 1.5 1.5 1.5 0.01 50
-execute if score tick_main_thread AzrTimerStack matches 2230 run summon dragon_fireball -79536 57 -338 {Tags:["azrboss4event105"],Motion:[0.0d,-0.01d,0.0d],acceleration_power:-0.018}
+execute if score tick_main_thread AzrTimerStack matches 2230 run summon dragon_fireball -79536 57 -338 {Tags:["azrboss4event105"],Motion:[0.0d,-0.01d,0.0d],acceleration_power:0.018}
 execute if score tick_main_thread AzrTimerStack matches 2120 run playsound minecraft:entity.warden.sonic_charge master @a[tag=azrPlayer] -79536 51 -338 50 0.8
 execute if score tick_main_thread AzrTimerStack matches 2255 run playsound minecraft:entity.warden.sonic_boom master @a[tag=azrPlayer] -79536 51 -338 50 0.8
 execute if score tick_main_thread AzrTimerStack matches 2255 run playsound minecraft:entity.generic.explode master @a[tag=azrPlayer] -79536 51 -338 50 0.7

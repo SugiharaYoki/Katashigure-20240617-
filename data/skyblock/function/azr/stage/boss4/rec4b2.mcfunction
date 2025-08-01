@@ -1,10 +1,10 @@
 execute if score tick_main_thread AzrTimerStack matches 2720..2785 if score #rng3 Azr_system matches 1 run particle minecraft:falling_lava ~ ~ ~ 4.2 2.2 4.2 0.05 16
 execute if score tick_main_thread AzrTimerStack matches 2720..2785 if score #rng3 Azr_system matches 1 run particle minecraft:squid_ink ~ ~ ~ 3.5 1.5 3.5 0.05 5
 execute if score tick_main_thread AzrTimerStack matches 2785 run particle minecraft:large_smoke ~ ~ ~ 3.5 1.5 3.5 0.01 150
-execute if score tick_main_thread AzrTimerStack matches 2785 run summon dragon_fireball ~2 ~ ~ {Tags:["azrrecP"],Motion:[0.0d,-0.01d,0.0d],acceleration_power:-0.018d}
-execute if score tick_main_thread AzrTimerStack matches 2785 run summon dragon_fireball ~ ~ ~2 {Tags:["azrrecP"],Motion:[0.0d,-0.01d,0.0d],acceleration_power:-0.018d}
-execute if score tick_main_thread AzrTimerStack matches 2785 run summon dragon_fireball ~-2 ~ ~ {Tags:["azrrecP"],Motion:[0.0d,-0.01d,0.0d],acceleration_power:-0.018d}
-execute if score tick_main_thread AzrTimerStack matches 2785 run summon dragon_fireball ~ ~ ~-2 {Tags:["azrrecP"],Motion:[0.0d,-0.01d,0.0d],acceleration_power:-0.018d}
+execute if score tick_main_thread AzrTimerStack matches 2785 run summon dragon_fireball ~2 ~ ~ {Tags:["azrrecP"],Motion:[0.0d,-0.01d,0.0d],acceleration_power:0.018d}
+execute if score tick_main_thread AzrTimerStack matches 2785 run summon dragon_fireball ~ ~ ~2 {Tags:["azrrecP"],Motion:[0.0d,-0.01d,0.0d],acceleration_power:0.018d}
+execute if score tick_main_thread AzrTimerStack matches 2785 run summon dragon_fireball ~-2 ~ ~ {Tags:["azrrecP"],Motion:[0.0d,-0.01d,0.0d],acceleration_power:0.018d}
+execute if score tick_main_thread AzrTimerStack matches 2785 run summon dragon_fireball ~ ~ ~-2 {Tags:["azrrecP"],Motion:[0.0d,-0.01d,0.0d],acceleration_power:0.018d}
 execute if score tick_main_thread AzrTimerStack matches 2785 run playsound minecraft:entity.warden.sonic_charge master @a[tag=azrPlayer] ~ ~ ~ 50 0.8
 execute if score tick_main_thread AzrTimerStack matches 2786 run playsound minecraft:entity.warden.sonic_charge master @a[tag=azrPlayer] ~ ~ ~ 40 0.81
 execute if score tick_main_thread AzrTimerStack matches 2784 run playsound minecraft:entity.warden.sonic_charge master @a[tag=azrPlayer] ~ ~ ~ 60 0.79
