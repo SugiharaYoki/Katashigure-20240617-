@@ -1,4 +1,3 @@
-# unused unfixed
 data modify entity @s[tag=skill009a1] Owner set from entity @r[tag=AZRPT] UUID
 data modify entity @s[tag=skill009a2] Owner set from entity @r[tag=AZRPT] UUID
 data modify entity @s[tag=skill009a3] Owner set from entity @r[tag=AZRPT] UUID
