@@ -120,6 +120,7 @@ attribute @s attack_speed modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd410
 attribute @s attack_speed modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd411
 attribute @s attack_speed modifier remove 8603fc7b-b1fa-47c6-91f5-84321abcd412
 
+attribute @s minecraft:max_health modifier remove seaboss6:health
 
 attribute @s armor modifier remove skywar:ishtar_bless_32
 

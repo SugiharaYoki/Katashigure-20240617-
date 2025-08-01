@@ -199,6 +199,8 @@ attribute @s minecraft:attack_knockback modifier remove sea_t_knockback3
 attribute @s minecraft:attack_knockback modifier remove sea_t_knockback4
 attribute @s minecraft:attack_knockback modifier remove sea_t_knockback5
 
+attribute @s minecraft:max_health modifier remove seaboss6:health
+
 attribute @s minecraft:movement_speed modifier remove sea:marilyn_01
 attribute @s minecraft:jump_strength modifier remove sea:marilyn_01
 
