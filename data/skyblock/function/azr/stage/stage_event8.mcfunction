@@ -19,12 +19,12 @@ execute if score stage_main_thread AzrTimerStack matches 1002 run scoreboard pla
 execute if score stage_main_thread AzrTimerStack matches 1002 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..11}] Azr_skillPoints 12
 
 execute if score stage_main_thread AzrTimerStack matches 1016..1220 run scoreboard players set stage_main_thread AzrTimerStack 1016
-execute if score stage_main_thread AzrTimerStack matches 1016..1220 if entity @a[tag=azrPlayer,x=-79898,y=40,z=-139,distance=0..5] run particle minecraft:soul -79890 40 -119 10 8 10 0.00 1200
-execute if score stage_main_thread AzrTimerStack matches 1016..1220 if entity @a[tag=azrPlayer,x=-79898,y=40,z=-139,distance=0..5] as @e[tag=AzrielDecMob] at @s run tp @s ~ ~-80 ~
-execute if score stage_main_thread AzrTimerStack matches 1016..1220 if entity @a[tag=azrPlayer,x=-79898,y=40,z=-139,distance=0..5] as @e[tag=AzrielMob] at @s run tp @s ~ ~-80 ~
-execute if score stage_main_thread AzrTimerStack matches 1016..1220 if entity @a[tag=azrPlayer,x=-79898,y=40,z=-139,distance=0..5] run scoreboard players set stage_main_thread AzrTimerStack 2000
+# execute if score stage_main_thread AzrTimerStack matches 1016..1220 if entity @a[tag=azrPlayer,x=-79898,y=40,z=-142,dx=3,dy=4,dz=6] run particle minecraft:soul -79890 40 -119 10 8 10 0.00 1200
+# execute if score stage_main_thread AzrTimerStack matches 1016..1220 if entity @a[tag=azrPlayer,x=-79898,y=40,z=-142,dx=3,dy=4,dz=6] as @e[tag=AzrielDecMob] at @s run tp @s ~ ~-80 ~
+# execute if score stage_main_thread AzrTimerStack matches 1016..1220 if entity @a[tag=azrPlayer,x=-79898,y=40,z=-142,dx=3,dy=4,dz=6] as @e[tag=AzrielMob] at @s run tp @s ~ ~-80 ~
+# execute if score stage_main_thread AzrTimerStack matches 1016..1220 if entity @a[tag=azrPlayer,x=-79898,y=40,z=-142,dx=3,dy=4,dz=6] run scoreboard players set stage_main_thread AzrTimerStack 2000
 
-execute if score stage_main_thread AzrTimerStack matches 2001..2220 if entity @a[tag=azrPlayer,x=-79905,y=40,z=-137,distance=0..5] run scoreboard players set stage_main_thread AzrTimerStack 3000
+# execute if score stage_main_thread AzrTimerStack matches 2001..2220 if entity @a[tag=azrPlayer,x=-79907,y=39,z=-141,dx=9,dy=6,dz=13] run scoreboard players set stage_main_thread AzrTimerStack 3000
 execute if score stage_main_thread AzrTimerStack matches 2001..2220 run scoreboard players set stage_main_thread AzrTimerStack 2001
 execute if score stage_main_thread AzrTimerStack matches 3001 run particle minecraft:witch -79903 40 -134 0.5 0.5 0.5 0.01 100
 execute if score stage_main_thread AzrTimerStack matches 3001 run particle minecraft:witch -79907 40 -134 0.5 0.5 0.5 0.01 100

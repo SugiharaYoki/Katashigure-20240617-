@@ -164,7 +164,7 @@ execute as @s[scores={Azr_Shop=8431632}] \
     crossbow_arrow_1 run scoreboard players set tempPlayerShopSuccess Azr_system 1
     # 弹药×16 <- 1 炽焰粉尘  8431632
 
-execute as @s[scores={Azr_Shop=843171}] \
+execute as @s[scores={Azr_Shop=8431711}] \
     unless score tempPlayerShopSuccess Azr_system matches 1 \
     if items entity @s container.* gold_nugget[count={min:6}] \
     unless function skyblock:azr/shop/purchase/nether/\

@@ -85,6 +85,12 @@ execute if block -79886 41 -114 minecraft:lever[powered=true] unless entity @n[t
 #stage14
 execute if block -79765 24 -449 minecraft:crimson_button[powered=true] run scoreboard players set stage Azr_system 55
 execute if block -79765 24 -449 minecraft:crimson_button[powered=true] run scoreboard players set stage_main_thread AzrTimerStack 0
+#stage15
+execute if block -79657 23 -421 minecraft:crimson_button[powered=true] run scoreboard players set stage Azr_system 57
+execute if block -79657 23 -421 minecraft:crimson_button[powered=true] run scoreboard players set stage_main_thread AzrTimerStack 20001
+#stage16(event16)
+execute if block -79540 25 -406 minecraft:crimson_button[powered=true] run scoreboard players set stage Azr_system 59
+execute if block -79540 25 -406 minecraft:crimson_button[powered=true] run scoreboard players set stage_main_thread AzrTimerStack 1
 
 #Stage Cerement
 execute if block -79946 39 50 minecraft:birch_button[powered=true] run function skyblock:azr/stage/stage_cerement_prep
@@ -194,3 +200,5 @@ execute if block -79925 47 -113 minecraft:stone_button[powered=true] run setbloc
 execute if block -79925 47 -113 minecraft:stone_button[powered=true] run setblock -79925 47 -113 air
 #functional button - 94935
 execute if block -79751 37 -353 minecraft:polished_blackstone_button[powered=true] run setblock -79761 42 -358 air destroy
+#functional lever
+execute if block -79753 24 -462 minecraft:lever[powered=true] unless score $ch4DoorOpen Azr_system matches 1 run function skyblock:azr/stage/dialog/ch4_door0

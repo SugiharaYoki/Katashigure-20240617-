@@ -279,6 +279,8 @@ execute if score stage_main_thread AzrTimerStack matches 8073 run particle large
 execute if score stage_main_thread AzrTimerStack matches 8073 run particle large_smoke -79846 50 -131 1 1 1 1.18 50
 execute if score stage_main_thread AzrTimerStack matches 8073 run summon evoker -79846 50 -131 {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_witch_tier1",Health:10.0f,CustomName:'"斗篷术士"',attributes:[{id:"max_health",base:10.0d},{id:"attack_damage",base:1.5d},{id:"movement_speed",base:0.2d}]}
 execute if score stage_main_thread AzrTimerStack matches 8073 as @e[tag=AzrielMob,tag=!AzrielDecMob] at @s run kill @s
+execute if score stage_main_thread AzrTimerStack matches 8073 run tellraw @a[tag=azrPlayer,scores={AZR_chainKillUpg_pts=..5},tag=hasSkills] [{"text":"索命连击","color":"gold"},{"text":"可用点数已增加，目前为：6","color":"green"}]
+execute if score stage_main_thread AzrTimerStack matches 8073 run scoreboard players set @a[scores={AZR_chainKillUpg_pts=..5}] AZR_chainKillUpg_pts 6
 execute if score stage_main_thread AzrTimerStack matches 8073 run scoreboard players set stage_main_thread AzrTimerStack 0
 
 

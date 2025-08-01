@@ -100,6 +100,39 @@ execute if score isStarted Azr_system matches 1 if score stage Azr_system matche
 execute if score isStarted Azr_system matches 1 if score tick_count_main AzrTimerStack matches 20.. run function skyblock:azr/core
 execute if score isStarted Azr_system matches 1 if score timer_static_5s AzrTimerStack matches 100.. run function skyblock:azr/timer_static_5s
 
+# 部分关卡检测玩家位置在这里处理
+    # 第四关-boss1 event1
+    execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 9 if score stage_main_thread AzrTimerStack matches 3..5 if entity @a[tag=azrPlayer,x=-79931,y=38,z=62,distance=..4.5] run setblock -79946 39 50 air
+    execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 9 if score stage_main_thread AzrTimerStack matches 3..5 if entity @a[tag=azrPlayer,x=-79931,y=38,z=62,distance=..4.5] run scoreboard players set stage_main_thread AzrTimerStack 300
+    # 第八关-BOSS2 event3
+    execute if score stage Azr_system matches 21..22 run function skyblock:azr/stage/stage_event3
+    # 图书馆 (After Stage Vestige) event6
+    execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 241 run function skyblock:azr/stage/stage_event6
+    # event8
+    execute if score stage Azr_system matches 35..36 if score stage_main_thread AzrTimerStack matches 1016..1220 if entity @a[tag=azrPlayer,x=-79898,y=40,z=-142,dx=3,dy=4,dz=6] run particle minecraft:soul -79890 40 -119 10 8 10 0.00 1200
+    execute if score stage Azr_system matches 35..36 if score stage_main_thread AzrTimerStack matches 1016..1220 if entity @a[tag=azrPlayer,x=-79898,y=40,z=-142,dx=3,dy=4,dz=6] as @e[tag=AzrielDecMob] at @s run tp @s ~ ~-80 ~
+    execute if score stage Azr_system matches 35..36 if score stage_main_thread AzrTimerStack matches 1016..1220 if entity @a[tag=azrPlayer,x=-79898,y=40,z=-142,dx=3,dy=4,dz=6] as @e[tag=AzrielMob] at @s run tp @s ~ ~-80 ~
+    execute if score stage Azr_system matches 35..36 if score stage_main_thread AzrTimerStack matches 1016..1220 if entity @a[tag=azrPlayer,x=-79898,y=40,z=-142,dx=3,dy=4,dz=6] run scoreboard players set stage_main_thread AzrTimerStack 2000
+    execute if score stage Azr_system matches 35..36 if score stage_main_thread AzrTimerStack matches 2001..2220 if entity @a[tag=azrPlayer,x=-79907,y=39,z=-141,dx=9,dy=6,dz=13] run scoreboard players set stage_main_thread AzrTimerStack 3000
+    # event9
+    execute if entity @n[tag=AzrielBossFA,type=illusioner] if score stage Azr_system matches 37..39 run function skyblock:azr/stage/stage_event9
+    # event10
+    execute if score stage Azr_system matches 38..40 unless score stage Azr_system matches 39 if score stage_main_thread AzrTimerStack matches 0..890 if entity @a[x=-79884,y=46,z=-109,distance=0..4.3,tag=azrPlayer,gamemode=!spectator] run scoreboard players set stage_main_thread AzrTimerStack 1093
+    execute if score stage Azr_system matches 38..40 unless score stage Azr_system matches 39 if score stage_main_thread AzrTimerStack matches 1201..1390 unless entity @e[tag=AzrielMob,x=-79920,y=50,z=-125,distance=0..10] if entity @a[x=-79920,y=48,z=-125,distance=0..4,tag=azrPlayer,gamemode=!spectator] run scoreboard players set stage_main_thread AzrTimerStack 1394
+    execute if score stage Azr_system matches 38..40 unless score stage Azr_system matches 39 if score stage_main_thread AzrTimerStack matches 1421..1590 unless entity @e[tag=AzrielMob,x=-79920,y=50,z=-138,distance=0..10] if entity @a[x=-79920,y=48,z=-138,distance=0..4,tag=azrPlayer,gamemode=!spectator] run scoreboard players set stage_main_thread AzrTimerStack 1594
+    execute if score stage Azr_system matches 38..40 unless score stage Azr_system matches 39 if score stage_main_thread AzrTimerStack matches 100.. if entity @a[tag=azrPlayer,x=-79846,y=48,z=-129,distance=0..7] run scoreboard players set stage_main_thread AzrTimerStack 8000
+    execute if score stage Azr_system matches 38..40 unless score stage Azr_system matches 39 if score stage_main_thread AzrTimerStack matches 100.. if entity @a[tag=azrPlayer,x=-79846,y=48,z=-129,distance=0..7] run scoreboard players set stage Azr_system 41
+    # event11
+    execute if score stage Azr_system matches 42..43 if score stage_main_thread AzrTimerStack matches 0..500 if entity @a[x=-79815,y=48,z=-128,distance=0..7,tag=azrPlayer,gamemode=!spectator] run scoreboard players set stage_main_thread AzrTimerStack 600
+    execute if score stage Azr_system matches 42..43 if score stage_main_thread AzrTimerStack matches 605..650 if entity @a[x=-79800,y=48,z=-128,distance=0..7,tag=azrPlayer,gamemode=!spectator] run scoreboard players set stage_main_thread AzrTimerStack 660
+    execute if score stage Azr_system matches 42..43 if score stage_main_thread AzrTimerStack matches 694..800 if entity @a[x=-79760,y=48,z=-128,distance=0..5,tag=azrPlayer,gamemode=!spectator] run scoreboard players set stage_main_thread AzrTimerStack 1000
+    # boss3-stage13 event12
+    execute if score stage Azr_system matches 44 if score stage_main_thread AzrTimerStack matches 50..200 if entity @a[tag=azrPlayer,x=-79773,y=42,z=-276,distance=0..6.5] run scoreboard players set stage_main_thread AzrTimerStack 5555
+    # event13
+    execute if score stage Azr_system matches 52..54 run function skyblock:azr/stage/stage_event14
+    execute if score stage Azr_system matches 56..58 run function skyblock:azr/stage/stage_event14
+
+    
 
 # 使用了tick计时的关卡在这里处理
     # 读秒，要停下只需reset记分板

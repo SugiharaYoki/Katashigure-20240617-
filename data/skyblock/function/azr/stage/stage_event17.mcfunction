@@ -1,0 +1,23 @@
+execute if score $NetherShop Azr_system matches 1 at @n[type=pillager,tag=AzrielBossFA] if entity @a[distance=0..2,tag=azrPlayer,tag=!ZaneiTalkB] run playsound minecraft:entity.pillager.ambient master @a[tag=azrPlayer] ~ ~ ~ 2 0.8
+execute if score $NetherShop Azr_system matches 1 if entity @a[x=-79542,y=24,z=-408,distance=0..2,tag=azrPlayer,tag=!ZaneiTalkB] run function skyblock:tool_rng
+execute if score $NetherShop Azr_system matches 1 as @a[x=-79542,y=24,z=-408,distance=0..2,tag=azrPlayer,tag=!ZaneiTalkB] run tellraw @s {"text":"默尔森：","color":"aqua"}
+execute if score $NetherShop Azr_system matches 1 if score #rng7 Azr_system matches 1 as @a[x=-79542,y=24,z=-408,distance=0..2,tag=azrPlayer,tag=!ZaneiTalkB] run tellraw @s {"text":"“咱是权之残影手下弓箭天使部队的教官。听上去很厉害，是吧？”","color":"white"}
+execute if score $NetherShop Azr_system matches 1 if score #rng7 Azr_system matches 2 as @a[x=-79542,y=24,z=-408,distance=0..2,tag=azrPlayer,tag=!ZaneiTalkB] run tellraw @s {"text":"“有什么需求就来询问我吧。”","color":"white"}
+execute if score $NetherShop Azr_system matches 1 if score #rng7 Azr_system matches 3 as @a[x=-79542,y=24,z=-408,distance=0..2,tag=azrPlayer,tag=!ZaneiTalkB] run tellraw @s {"text":"“以前咱获赠名号‘裁决利箭’，但那已经是数年前的事了。不知咱现在是否宝刀未老呢……”","color":"white"}
+execute if score $NetherShop Azr_system matches 1 if score #rng7 Azr_system matches 4 as @a[x=-79542,y=24,z=-408,distance=0..2,tag=azrPlayer,tag=!ZaneiTalkB] run tellraw @s {"text":"“路西法的军队胆子不小，本事也真大。居然能在神庭与魔界两侧同时展开起义，他们就不怕被双方夹击吗？”","color":"white"}
+execute if score $NetherShop Azr_system matches 1 if score #rng7 Azr_system matches 5 as @a[x=-79542,y=24,z=-408,distance=0..2,tag=azrPlayer,tag=!ZaneiTalkB] run tellraw @s {"text":"“神、人、魔的平衡秩序已持续数十年。为何路西法会选择在这种时候打破静止的水面……”","color":"white"}
+execute if score $NetherShop Azr_system matches 1 if score playerCount Azr_system matches 1 if score #rng7 Azr_system matches 6 as @a[x=-79542,y=24,z=-408,distance=0..2,tag=azrPlayer,tag=!ZaneiTalkB] run tellraw @s {"text":"“权之残影大人此时也身于魔界。你或许很快便能见到他了。”","color":"white"}
+execute if score $NetherShop Azr_system matches 1 if score playerCount Azr_system matches 2.. if score #rng7 Azr_system matches 6 as @a[x=-79542,y=24,z=-408,distance=0..2,tag=azrPlayer,tag=!ZaneiTalkB] run tellraw @s {"text":"“权之残影大人此时也身于魔界。你们或许很快便能见到他了。”","color":"white"}
+execute if score $NetherShop Azr_system matches 1 if score playerCount Azr_system matches 1 if score #rng7 Azr_system matches 7 as @a[x=-79542,y=24,z=-408,distance=0..2,tag=azrPlayer,tag=!ZaneiTalkB] run tellraw @s {"text":"“你放心，咱可没兴趣和你大战一场。”","color":"white"}
+execute if score $NetherShop Azr_system matches 1 if score playerCount Azr_system matches 2 if score #rng7 Azr_system matches 7 as @a[x=-79542,y=24,z=-408,distance=0..2,tag=azrPlayer,tag=!ZaneiTalkB] run tellraw @s {"text":"“你俩放心，咱可没兴趣和你俩大战一场。”","color":"white"}
+execute if score $NetherShop Azr_system matches 1 if score playerCount Azr_system matches 3.. if score #rng7 Azr_system matches 7 as @a[x=-79542,y=24,z=-408,distance=0..2,tag=azrPlayer,tag=!ZaneiTalkB] run tellraw @s {"text":"“你们放心，咱可没兴趣和你们大战一场。”","color":"white"}
+execute if score $NetherShop Azr_system matches 1 as @a[x=-79542,y=24,z=-408,distance=0..2,tag=azrPlayer,tag=!ZaneiTalkB] run function skyblock:azr/shop/reader_nethershop_1
+execute if score $NetherShop Azr_system matches 1 run tag @a[x=-79542,y=24,z=-408,distance=0..2,tag=azrPlayer,tag=!ZaneiTalkB] add ZaneiTalkB
+execute if score $NetherShop Azr_system matches 1 run tag @a[x=-79542,y=24,z=-408,distance=2.5..,tag=azrPlayer,tag=ZaneiTalkB] remove ZaneiTalkB
+execute if score $NetherShop Azr_system matches 1 run effect give @a[x=-79542,y=24,z=-408,distance=2.5..,tag=azrPlayer,tag=ZaneiTalkB] regeneration 5 0 false
+execute if score $NetherShop Azr_system matches 1 run effect give @a[x=-79542,y=24,z=-408,distance=2.5..,tag=azrPlayer,tag=ZaneiTalkB] fire_resistance 5 0 false
+execute if score $NetherShop Azr_system matches 1 run effect give @a[x=-79542,y=24,z=-408,distance=2.5..,tag=azrPlayer,tag=ZaneiTalkB] resistance 5 2 false
+
+execute as @e[tag=AzrielMob,x=-79543,y=25,z=-409,distance=0..4,limit=1,sort=nearest] at @s anchored eyes run tp @n[type=parrot,tag=AzrielFriendly,tag=AzrielDecMob,limit=1] ^ ^ ^ ~ ~
+execute unless entity @e[tag=AzrielMob,x=-79543,y=25,z=-409,distance=0..4,limit=1] as @n[type=parrot,tag=AzrielFriendly,tag=AzrielDecMob] at @s run tp @s -79543 26 -409
+execute at @n[type=parrot,tag=AzrielFriendly,tag=AzrielDecMob] run effect give @e[tag=AzrielMob,distance=0..3,sort=nearest,limit=1] wither 3 2 true
