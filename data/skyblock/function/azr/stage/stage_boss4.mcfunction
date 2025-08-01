@@ -85,7 +85,7 @@ execute if score tick_main_thread AzrTimerStack matches 150 if score #rng3 Azr_s
 execute if score tick_main_thread AzrTimerStack matches 240 unless score $azrch4bosstalk1 Azr_system matches 1 run tellraw @a[tag=azrPlayer] {"text":"？？？：","color":"red"}
 execute if score tick_main_thread AzrTimerStack matches 240 unless score $azrch4bosstalk1 Azr_system matches 1 if score playerCount Azr_system matches 1 run tellraw @a[tag=azrPlayer] {"text":"“你已经失去利用价值，反而会对鄙人造成威胁。鄙人会仁慈地将你送入无间地狱，赐你安详之死。”","color":"white"}
 execute if score tick_main_thread AzrTimerStack matches 240 unless score $azrch4bosstalk1 Azr_system matches 1 if score playerCount Azr_system matches 2.. run tellraw @a[tag=azrPlayer] {"text":"“你们已经失去利用价值，反而会对鄙人造成威胁。鄙人会仁慈地将你们送入无间地狱，赐你们安详之死。”","color":"white"}
-execute if score tick_main_thread AzrTimerStack matches 240 unless score $azrch4bosstalk1 Azr_system matches 1 run scoreboard players reset $azrch4bosstalk1 Azr_system
+execute if score tick_main_thread AzrTimerStack matches 240 unless score $azrch4bosstalk1 Azr_system matches 1 run scoreboard players set $azrch4bosstalk1 Azr_system 1
 
 execute if score #rng4 Azr_system matches 1 as @e[type=fireball,tag=azrrec1] at @s run particle flame ~ ~ ~ 0 0 0 0.0 1
 execute if score #rng4 Azr_system matches 1..2 as @e[type=fireball,tag=azrrecP] at @s run particle flame ~ ~ ~ 0 0 0 0.0 1
