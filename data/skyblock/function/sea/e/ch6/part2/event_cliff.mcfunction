@@ -182,9 +182,13 @@ execute if score SEA_ch6_event rng5 matches 12950 as @n[tag=SEAedwina] at @s if 
 
 
 
+setblock 90060 20 -1822 minecraft:redstone_lamp[lit=true]
+setblock 90063 20 -1818 minecraft:redstone_lamp[lit=true]
+setblock 90063 20 -1811 minecraft:redstone_lamp[lit=true]
+setblock 90060 20 -1807 minecraft:redstone_lamp[lit=true]
 
-
-
+setblock 90050 20 -1807 minecraft:redstone_lamp[lit=true]
+setblock 90050 20 -1822 minecraft:redstone_lamp[lit=true]
 
 
 
