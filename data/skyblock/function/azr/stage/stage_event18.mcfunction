@@ -63,13 +63,13 @@ execute if score stage_main_thread AzrTimerStack matches 482 run fill -79468 80 
 
 execute if score stage_main_thread AzrTimerStack matches 495 run tellraw @a[tag=azrPlayer] [{"selector":"@r[tag=azrPlayer]","color":"aqua"},{"text":"："}]
 execute if score stage_main_thread AzrTimerStack matches 495 if score playerCount Azr_system matches 1.. run tellraw @a[tag=azrPlayer] [{"text":"“我其实一直都知道，我所获得的力量来源于恶魔。”","color":"white"}]
-execute if score stage_main_thread AzrTimerStack matches 520 if score playerCount Azr_system matches 1.. run tellraw @a[tag=azrPlayer] [{"text":"来源于……这股想要颠覆神庭的污浊暗流。","color":"gray"}]
+execute if score stage_main_thread AzrTimerStack matches 520 if score playerCount Azr_system matches 1.. run tellraw @a[tag=azrPlayer] [{"text":"来源于……这股想要颠覆神庭的污浊暗流。","color":"red"}]
 execute if score stage_main_thread AzrTimerStack matches 510..630 if score playerCount Azr_system matches 1.. if score #rng9 Azr_system matches 1 run playsound entity.lightning_bolt.thunder master @a[tag=azrPlayer] -79466 140 -385 1000 0.6
 execute if score stage_main_thread AzrTimerStack matches 540..630 if score playerCount Azr_system matches 1.. if score #rng9 Azr_system matches 2 run playsound entity.lightning_bolt.thunder master @a[tag=azrPlayer] -79466 140 -385 1000 0.8
 execute if score stage_main_thread AzrTimerStack matches 580..630 if score playerCount Azr_system matches 1.. if score #rng9 Azr_system matches 3 run playsound entity.lightning_bolt.thunder master @a[tag=azrPlayer] -79466 140 -385 1000 0.3
-execute if score stage_main_thread AzrTimerStack matches 545 if score playerCount Azr_system matches 1.. run tellraw @a[tag=azrPlayer] [{"text":"我一直都知道他们是要靠我吸引神庭的注意力，借机发动最大规模的突袭。","color":"dark_gray"}]
-execute if score stage_main_thread AzrTimerStack matches 570 if score playerCount Azr_system matches 1.. run tellraw @a[tag=azrPlayer] [{"text":"正因如此，我才会在无数次殒命神庭、重归地狱后，再次提出挑战生命树庭园。再次对这擅自夺走我美好而无罪之生命的神庭，亲手展开复仇。","color":"dark_gray"}]
-execute if score stage_main_thread AzrTimerStack matches 595 if score playerCount Azr_system matches 1.. run tellraw @a[tag=azrPlayer] [{"text":"我是……自愿成为路西法军的诱饵的。","color":"dark_gray"}]
+execute if score stage_main_thread AzrTimerStack matches 545 if score playerCount Azr_system matches 1.. run tellraw @a[tag=azrPlayer] [{"text":"我一直都知道他们是要靠我吸引神庭的注意力，借机发动最大规模的突袭。","color":"dark_red"}]
+execute if score stage_main_thread AzrTimerStack matches 570 if score playerCount Azr_system matches 1.. run tellraw @a[tag=azrPlayer] [{"text":"正因如此，我才会在无数次殒命神庭、重归地狱后，再次提出挑战生命树庭园。再次对这擅自夺走我美好而无罪之生命的神庭，亲手展开复仇。","color":"dark_red"}]
+execute if score stage_main_thread AzrTimerStack matches 595 if score playerCount Azr_system matches 1.. run tellraw @a[tag=azrPlayer] [{"text":"我是……自愿成为路西法军的诱饵的。","color":"dark_red"}]
 
 execute if score stage_main_thread AzrTimerStack matches 600 if score playerCount Azr_system matches 1.. run fill -79467 86 -341 -79465 86 -341 air
 
