@@ -121,8 +121,9 @@ execute if score SEA_ch6_event rng5 matches 12563 positioned 90013 95 -1926 run 
 execute if score SEA_ch6_event rng5 matches 12563 positioned 90013 95 -1926 run kill @a[tag=SEAPT,x=89988,y=0,z=-1936,dx=300,dy=100,dz=14,gamemode=adventure]
 
 #execute if score SEA_ch6_event rng5 matches 12563.. positioned 90013 95 -1926 run kill @a[tag=SEAPT,x=89980,y=0,z=-1917,dx=160,dy=33,dz=160,gamemode=adventure]
-execute if score SEA_ch6_event rng5 matches 12563.. positioned 90013 95 -1926 run tp @a[tag=SEAPT,x=89980,y=0,z=-1917,dx=160,dy=33,dz=100,gamemode=adventure] 90009 57 -1861
-execute if score SEA_ch6_event rng5 matches 12563.. positioned 90013 95 -1926 run tp @a[tag=SEAPT,x=89980,y=0,z=-1816,dx=160,dy=15,dz=100,gamemode=adventure] 90009 57 -1861
+execute if score SEA_ch6_event rng5 matches 12563.. positioned 90013 95 -1926 run tp @a[tag=SEAPT,x=89980,y=0,z=-1917,dx=40,dy=33,dz=100,gamemode=adventure] 90009 57 -1861
+execute if score SEA_ch6_event rng5 matches 12563.. positioned 90013 95 -1926 run tp @a[tag=SEAPT,x=90020,y=0,z=-1917,dx=100,dy=15,dz=100,gamemode=adventure] 90055 21 -1815
+execute if score SEA_ch6_event rng5 matches 12563.. positioned 90013 95 -1926 run tp @a[tag=SEAPT,x=89980,y=0,z=-1816,dx=40,dy=15,dz=100,gamemode=adventure] 90009 57 -1861
 
 
 execute if score SEA_ch6_event rng5 matches 12563 run fill 89988 90 -1924 89989 89 -1924 gravel
@@ -178,17 +179,30 @@ execute if score SEA_ch6_event rng5 matches 12950 as @n[tag=SEAedwina] at @s if 
 
 
 
+execute if score SEA_ch6_event rng5 matches 8095..19999 if entity @a[tag=SEAPT,tag=!SEAPF,x=90044,y=20,z=-1824,dx=16,dy=5,dz=16] run scoreboard players set SEA_ch6_event rng5 20000
+execute if score SEA_ch6_event rng5 matches 19900..19999 run scoreboard players set SEA_ch6_event rng5 19900
 
+execute if score SEA_ch6_event rng5 matches 20001 run setblock 90055 23 -1815 minecraft:air destroy
+execute if score SEA_ch6_event rng5 matches 20001 run setblock 90055 21 -1815 minecraft:air destroy
+execute if score SEA_ch6_event rng5 matches 20001 run fill 90056 20 -1814 90054 20 -1816 tuff_bricks
+execute if score SEA_ch6_event rng5 matches 20001 run particle minecraft:flame 90055 23 -1815 0 0 0 0.3 350
+execute if score SEA_ch6_event rng5 matches 20001 run particle minecraft:flash 90055 23 -1815
+execute if score SEA_ch6_event rng5 matches 20001 run playsound minecraft:item.totem.use block @a ~ ~ ~ 1 0.5
 
-
-
-setblock 90060 20 -1822 minecraft:redstone_lamp[lit=true]
-setblock 90063 20 -1818 minecraft:redstone_lamp[lit=true]
-setblock 90063 20 -1811 minecraft:redstone_lamp[lit=true]
-setblock 90060 20 -1807 minecraft:redstone_lamp[lit=true]
-
-setblock 90050 20 -1807 minecraft:redstone_lamp[lit=true]
-setblock 90050 20 -1822 minecraft:redstone_lamp[lit=true]
-
-
+execute if score SEA_ch6_event rng5 matches 20005 run setblock 90060 20 -1822 minecraft:redstone_lamp[lit=true]
+execute if score SEA_ch6_event rng5 matches 20005 run setblock 90064 20 -1818 minecraft:redstone_lamp[lit=true]
+execute if score SEA_ch6_event rng5 matches 20005 run setblock 90064 20 -1811 minecraft:redstone_lamp[lit=true]
+execute if score SEA_ch6_event rng5 matches 20005 run setblock 90060 20 -1807 minecraft:redstone_lamp[lit=true]
+execute if score SEA_ch6_event rng5 matches 20005 run setblock 90050 20 -1807 minecraft:redstone_lamp[lit=true]
+execute if score SEA_ch6_event rng5 matches 20005 run setblock 90050 20 -1822 minecraft:redstone_lamp[lit=true]
+execute if score SEA_ch6_event rng5 matches 20005 run setblock 90046 20 -1818 minecraft:redstone_lamp[lit=true]
+execute if score SEA_ch6_event rng5 matches 20005 run setblock 90046 20 -1811 minecraft:redstone_lamp[lit=true]
+execute if score SEA_ch6_event rng5 matches 20005 positioned 90060 20 -1822 run playsound block.metal_pressure_plate.click_off block @a ~ ~ ~ 1 0.8
+execute if score SEA_ch6_event rng5 matches 20005 positioned 90064 20 -1818 run playsound block.metal_pressure_plate.click_off block @a ~ ~ ~ 1 0.8
+execute if score SEA_ch6_event rng5 matches 20005 positioned 90064 20 -1811 run playsound block.metal_pressure_plate.click_off block @a ~ ~ ~ 1 0.8
+execute if score SEA_ch6_event rng5 matches 20005 positioned 90060 20 -1807 run playsound block.metal_pressure_plate.click_off block @a ~ ~ ~ 1 0.8
+execute if score SEA_ch6_event rng5 matches 20005 positioned 90050 20 -1807 run playsound block.metal_pressure_plate.click_off block @a ~ ~ ~ 1 0.8
+execute if score SEA_ch6_event rng5 matches 20005 positioned 90050 20 -1822 run playsound block.metal_pressure_plate.click_off block @a ~ ~ ~ 1 0.8
+execute if score SEA_ch6_event rng5 matches 20005 positioned 90046 20 -1818 run playsound block.metal_pressure_plate.click_off block @a ~ ~ ~ 1 0.8
+execute if score SEA_ch6_event rng5 matches 20005 positioned 90046 20 -1811 run playsound block.metal_pressure_plate.click_off block @a ~ ~ ~ 1 0.8
 
