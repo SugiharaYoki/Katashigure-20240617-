@@ -365,7 +365,7 @@ execute if score stage_main_thread AzrTimerStack matches 234..243 positioned -79
 
 execute if score stage_main_thread AzrTimerStack matches 245..246 if score playerCount Azr_system matches 5.. if score mobCount Azr_system matches 25.. run scoreboard players set stage_main_thread AzrTimerStack 245
 execute if score stage_main_thread AzrTimerStack matches 245..246 if score playerCount Azr_system matches 4.. if score mobCount Azr_system matches 30.. run scoreboard players set stage_main_thread AzrTimerStack 245
-execute if score stage_main_thread AzrTimerStack matches 245..246 if score playerCount Azr_system matches 1.. if score mobCount Azr_system matches 45.. run scoreboard players set stage_main_thread AzrTimerStack 245
+execute if score stage_main_thread AzrTimerStack matches 245..246 if score mobCount Azr_system matches 45.. run scoreboard players set stage_main_thread AzrTimerStack 245
 
 execute if score stage_main_thread AzrTimerStack matches 238..244 run playsound ambient.nether_wastes.loop ambient @a[tag=azrPlayer] -79931 38 53 10
 execute if score stage_main_thread AzrTimerStack matches 238..244 run playsound ambient.nether_wastes.mood ambient @a[tag=azrPlayer] -79931 38 53 10 0.7
