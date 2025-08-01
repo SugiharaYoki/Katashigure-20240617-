@@ -62,4 +62,4 @@ execute if score tick_main_thread Azr_system matches 3100..3150 if score #rng8 A
 
 
 execute if score tick_main_thread Azr_system matches 2800.. if score #rng12 Azr_system matches 1 run scoreboard players add tick_main_thread Azr_system 50
-execute if score tick_main_thread Azr_system matches 3200.. if score #rng11 Azr_system matches 1..3 run scoreboard players set tick_main_thread Azr_system 2588
+execute if score tick_main_thread Azr_system matches 3200.. if score #rng11 Azr_system matches 1..3 run scoreboard players set tick_main_thread Azr_system 2601
