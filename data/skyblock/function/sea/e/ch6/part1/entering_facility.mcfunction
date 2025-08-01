@@ -151,7 +151,16 @@ setblock 90009 57 -1858 chest[facing=north]
 
 forceload add 90042 -1829 90068 -1798
 clone 90052 115 -1828 90065 115 -1801 90052 20 -1828
+setblock 90060 20 -1822 minecraft:redstone_lamp[lit=false]
+setblock 90063 20 -1818 minecraft:redstone_lamp[lit=false]
+setblock 90063 20 -1811 minecraft:redstone_lamp[lit=false]
+setblock 90060 20 -1807 minecraft:redstone_lamp[lit=false]
+setblock 90050 20 -1807 minecraft:redstone_lamp[lit=false]
+setblock 90050 20 -1822 minecraft:redstone_lamp[lit=false]
+setblock 90046 20 -1818 minecraft:redstone_lamp[lit=false]
+setblock 90046 20 -1811 minecraft:redstone_lamp[lit=false]
 forceload remove 90042 -1829 90068 -1798
+
 
 forceload remove 90011 -1953 90109 -1888
 forceload remove 90142 -1886 90209 -1838
