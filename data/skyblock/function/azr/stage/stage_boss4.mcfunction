@@ -1,6 +1,6 @@
 #execute if score tick_main_thread AzrTimerStack matches 1..20 ] if entity @a[tag=AZRPT,x=-79466,y=80,z=-4] run scoreboard players set @s SeGa_StandLastQ 1
 #execute if score tick_main_thread AzrTimerStack matches 1..20 ] if entity @a[tag=AZRPT,x=-79466,y=80,z=-4] run scoreboard players set @s SeGa_StandLastQ 119
-execute as @e[tag=AzrielBossA,limit=1] at @s run scoreboard players add @s EntityTimer 1
+execute as @e[tag=AzrielBossA,limit=1,scores={EntityTimer=0..}] at @s run scoreboard players add @s EntityTimer 1
 
 execute if score tick_main_thread AzrTimerStack matches 1..20 run scoreboard players set tick_main_thread AzrTimerStack 118
 
@@ -319,6 +319,8 @@ execute if score tick_main_thread AzrTimerStack matches 2581 run data modify ent
 execute if score tick_main_thread AzrTimerStack matches 2590..8000 if score #rng5 Azr_system matches 1 run effect give @e[tag=AzrielBossA,limit=1] regeneration 3 0 true
 execute if score tick_main_thread AzrTimerStack matches 2290 run effect give @e[tag=AzrielBoss4,limit=1] resistance 20 3 true
 #jump
+execute if score tick_main_thread AzrTimerStack matches 3400..8000 if score @e[tag=AzrielBoss4,limit=1] Health matches 200.. run tellraw @a[tag=azrDebug] "Stage 2 Loop"
+execute if score tick_main_thread AzrTimerStack matches 3400..8000 if score @e[tag=AzrielBoss4,limit=1] Health matches 200.. run scoreboard players set tick_main_thread AzrTimerStack 2601
 execute if score tick_main_thread AzrTimerStack matches 2590..8000 if score @e[tag=AzrielBoss4,limit=1] Health matches -999..200 run scoreboard players set tick_main_thread AzrTimerStack 8001
 execute if score tick_main_thread AzrTimerStack matches 2590..8000 if score @e[tag=AzrielBossA,limit=1] Health matches -999..200 run effect give @e[tag=AzrielBossA,limit=1] resistance 100000 100 true
 #jump
@@ -414,6 +416,7 @@ execute if score tick_main_thread AzrTimerStack matches 9100 run title @a[tag=az
 execute if score tick_main_thread AzrTimerStack matches 9100 run advancement grant @a[tag=azrPlayer] only skyblock:azr/azr_stage16_boss4
 execute if score tick_main_thread AzrTimerStack matches 9100 run kill @e[tag=AzrielBossA,limit=3]
 execute if score tick_main_thread AzrTimerStack matches 9100 run kill @e[tag=AzrielBoss4,limit=3]
+execute if score tick_main_thread AzrTimerStack matches 9100 run kill @e[tag=AzrielMob,tag=!AzrielDecMob]
 execute if score tick_main_thread AzrTimerStack matches 9100 run bossbar remove azr:boss_hp_bar
 execute if score tick_main_thread AzrTimerStack matches 9100 run bossbar remove azr:boss_hp_bar_0
 execute if score tick_main_thread AzrTimerStack matches 8669 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..19}] Azr_skillPoints 20
