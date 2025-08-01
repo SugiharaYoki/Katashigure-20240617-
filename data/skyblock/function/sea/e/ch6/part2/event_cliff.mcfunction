@@ -182,6 +182,8 @@ execute if score SEA_ch6_event rng5 matches 8095..19999 if entity @a[tag=SEAPT,t
 execute if score SEA_ch6_event rng5 matches 19900..19999 run scoreboard players set SEA_ch6_event rng5 19900
 
 execute if score SEA_ch6_event rng5 matches 20001 run setblock 90055 23 -1815 minecraft:air destroy
+execute if score SEA_ch6_event rng5 matches 20001 run setblock 90055 21 -1815 minecraft:air destroy
+execute if score SEA_ch6_event rng5 matches 20001 run fill 90056 20 -1814 90054 20 -1816 tuff_bricks
 execute if score SEA_ch6_event rng5 matches 20001 run particle minecraft:flame 90055 23 -1815 0 0 0 0.3 350
 execute if score SEA_ch6_event rng5 matches 20001 run particle minecraft:flash 90055 23 -1815
 execute if score SEA_ch6_event rng5 matches 20001 run playsound minecraft:item.totem.use block @a ~ ~ ~ 1 0.5
