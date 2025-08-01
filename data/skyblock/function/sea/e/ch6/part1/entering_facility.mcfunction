@@ -149,6 +149,10 @@ forceload remove 90028 -1846
 setblock 90009 59 -1858 chest[facing=north]
 setblock 90009 57 -1858 chest[facing=north]
 
+forceload add 90042 -1829 90068 -1798
+clone 90052 115 -1828 90065 115 -1801 90052 20 -1828
+forceload remove 90042 -1829 90068 -1798
+
 forceload remove 90011 -1953 90109 -1888
 forceload remove 90142 -1886 90209 -1838
 forceload remove 89977 -1938 90038 -1925
