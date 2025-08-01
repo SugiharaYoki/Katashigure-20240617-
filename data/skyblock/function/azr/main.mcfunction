@@ -131,6 +131,10 @@ execute if score isStarted Azr_system matches 1 if score timer_static_5s AzrTime
     # event13
     execute if score stage Azr_system matches 52..54 run function skyblock:azr/stage/stage_event14
     execute if score stage Azr_system matches 56..58 run function skyblock:azr/stage/stage_event14
+    # event18
+    execute if score stage Azr_system matches 61 if score stage_main_thread AzrTimerStack matches 466..470 if entity @a[tag=azrPlayer,x=-79466,y=80,z=-381,distance=0..6] run scoreboard players set stage_main_thread AzrTimerStack 471
+    execute if score stage Azr_system matches 61 if score stage_main_thread AzrTimerStack matches ..699 if entity @a[tag=azrPlayer,x=-79466,y=84,z=-338,distance=0..3] run scoreboard players set stage_main_thread AzrTimerStack 700
+    execute if score stage Azr_system matches 61 if score stage_main_thread AzrTimerStack matches 704..1700 if entity @a[tag=azrPlayer,x=-79537,y=41,z=-338,distance=0..7] run scoreboard players set stage_main_thread AzrTimerStack 1701
 
     
 
@@ -145,7 +149,7 @@ execute if score isStarted Azr_system matches 1 if score timer_static_5s AzrTime
     # BOSS2 code:[23,24]
     execute if score isStarted Azr_system matches 1 if score stage Azr_system matches 23..24 run function skyblock:azr/stage/stage_boss2
     # BOSS4 Code:62
-    execute if score stage Azr_system matches 62 run function skyblock:azr/stage/stage18
+    execute if score stage Azr_system matches 62 run function skyblock:azr/stage/stage_boss4
 
 #重置判定 - 游戏已开始但没有玩家
 execute if score isStarted Azr_system matches 1 if entity @a[x=-79931,y=100,z=0,distance=..10000,gamemode=!spectator] unless entity @a[tag=azrPlayer] run function skyblock:azr/endgame
