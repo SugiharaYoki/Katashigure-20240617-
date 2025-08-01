@@ -96,7 +96,7 @@ execute as @e[type=dragon_fireball,tag=azrrecP] at @s run function skyblock:azr/
 
 
 # execute if score tick_main_thread AzrTimerStack matches 150..2000 if score @e[tag=AzrielBoss4,limit=1] Health matches ..10 run scoreboard players set tick_main_thread AzrTimerStack 2001
-execute if score tick_main_thread AzrTimerStack matches 150..2000 unless entity @e[tag=AzrielBoss4,limit=1,scores={Health=10..}] run scoreboard players set tick_main_thread AzrTimerStack 2001
+execute if score tick_main_thread AzrTimerStack matches 300..2000 unless entity @e[tag=AzrielBoss4,limit=1,scores={Health=10..}] run scoreboard players set tick_main_thread AzrTimerStack 2001
 execute if score Azr_Rec Azr_system matches 2 if score tick_main_thread AzrTimerStack matches 2002 run stopsound @a[tag=azrPlayer] music
 execute if score Azr_Rec Azr_system matches 2 if score tick_main_thread AzrTimerStack matches 2002 run playsound minecraft:entity.lightning_bolt.impact master @a[tag=azrPlayer] -79536 51 -338 500 0.6
 execute if score Azr_Rec Azr_system matches 2 if score tick_main_thread AzrTimerStack matches 2002 run playsound minecraft:entity.lightning_bolt.impact master @a[tag=azrPlayer] -79536 51 -338 500 0.5
@@ -149,30 +149,30 @@ execute if score tick_main_thread AzrTimerStack matches 2373 if score playerCoun
 execute if score tick_main_thread AzrTimerStack matches 2443 as @e[tag=AzrielBoss4,limit=1] at @s run tp @s ~ ~ ~ facing entity @e[tag=AzrielBossA,limit=1]
 execute if score tick_main_thread AzrTimerStack matches 2443 as @e[tag=AzrielBoss4,limit=1] at @s run playsound minecraft:entity.blaze.ambient hostile @a[tag=azrPlayer] ~ ~ ~ 100 0.8
 execute if score tick_main_thread AzrTimerStack matches 2443 unless score $azrch4bosstalk2 Azr_system matches 1 run tellraw @a[tag=azrPlayer] {"text":"路西法烈焰：","color":"aqua"}
-execute if score tick_main_thread AzrTimerStack matches 2443 unless score $azrch4bosstalk2 Azr_system matches 1 if score PlayerCount Azr_system matches 1.. run tellraw @a[tag=azrPlayer] {"text":"“呵呵呵哈哈，凭吾这单单一重分身即可将汝，力天使之长，碾碎于指掌之中。”","color":"white"}
+execute if score tick_main_thread AzrTimerStack matches 2443 unless score $azrch4bosstalk2 Azr_system matches 1 if score playerCount Azr_system matches 1.. run tellraw @a[tag=azrPlayer] {"text":"“呵呵呵哈哈，凭吾这单单一重分身即可将汝，力天使之长，碾碎于指掌之中。”","color":"white"}
 execute if score tick_main_thread AzrTimerStack matches 2486 unless score $azrch4bosstalk2 Azr_system matches 1 as @e[tag=AzrielBossA,limit=1] at @s run playsound minecraft:entity.illusioner.ambient hostile @a[tag=azrPlayer] ~ ~ ~ 100 0.6
 execute if score tick_main_thread AzrTimerStack matches 2486 unless score $azrch4bosstalk2 Azr_system matches 1 run tellraw @a[tag=azrPlayer] {"text":"权之残影：","color":"aqua"}
-execute if score tick_main_thread AzrTimerStack matches 2486 unless score $azrch4bosstalk2 Azr_system matches 1 if score PlayerCount Azr_system matches 1.. run tellraw @a[tag=azrPlayer] {"text":"“十三重分身，被彼列军灭去四重，神界军灭去二重。”","color":"white"}
+execute if score tick_main_thread AzrTimerStack matches 2486 unless score $azrch4bosstalk2 Azr_system matches 1 if score playerCount Azr_system matches 1.. run tellraw @a[tag=azrPlayer] {"text":"“十三重分身，被彼列军灭去四重，神界军灭去二重。”","color":"white"}
 execute if score tick_main_thread AzrTimerStack matches 2526 unless score $azrch4bosstalk2 Azr_system matches 1 as @e[tag=AzrielBossA,limit=1] at @s run playsound minecraft:entity.illusioner.ambient hostile @a[tag=azrPlayer] ~ ~ ~ 100 0.6
 execute if score tick_main_thread AzrTimerStack matches 2536 unless score $azrch4bosstalk2 Azr_system matches 1 run tellraw @a[tag=azrPlayer] {"text":"权之残影：","color":"aqua"}
-execute if score tick_main_thread AzrTimerStack matches 2536 unless score $azrch4bosstalk2 Azr_system matches 1 if score PlayerCount Azr_system matches 1.. run tellraw @a[tag=azrPlayer] {"text":"“限剩七重，一重在此，二重在彼列的王城，四重在神界各处分散。”","color":"white"}
+execute if score tick_main_thread AzrTimerStack matches 2536 unless score $azrch4bosstalk2 Azr_system matches 1 if score playerCount Azr_system matches 1.. run tellraw @a[tag=azrPlayer] {"text":"“限剩七重，一重在此，二重在彼列的王城，四重在神界各处分散。”","color":"white"}
 
 execute if score tick_main_thread AzrTimerStack matches 2596 unless score $azrch4bosstalk2 Azr_system matches 1 as @e[tag=AzrielBossA,limit=1] at @s run playsound minecraft:entity.illusioner.ambient hostile @a[tag=azrPlayer] ~ ~ ~ 100 0.6
 execute if score tick_main_thread AzrTimerStack matches 2596 unless score $azrch4bosstalk2 Azr_system matches 1 run tellraw @a[tag=azrPlayer] {"text":"权之残影：","color":"aqua"}
-execute if score tick_main_thread AzrTimerStack matches 2596 unless score $azrch4bosstalk2 Azr_system matches 1 if score PlayerCount Azr_system matches 1.. run tellraw @a[tag=azrPlayer] {"text":"“但汝已死到临头。自此起，汝将仅剩六重分身。”","color":"white"}
+execute if score tick_main_thread AzrTimerStack matches 2596 unless score $azrch4bosstalk2 Azr_system matches 1 if score playerCount Azr_system matches 1.. run tellraw @a[tag=azrPlayer] {"text":"“但汝已死到临头。自此起，汝将仅剩六重分身。”","color":"white"}
 
 
 execute if score tick_main_thread AzrTimerStack matches 2643 unless score $azrch4bosstalk2 Azr_system matches 1 as @e[tag=AzrielBoss4,limit=1] at @s run tp @s ~ ~ ~ facing entity @e[tag=AzrielBossA,limit=1]
 execute if score tick_main_thread AzrTimerStack matches 2643 unless score $azrch4bosstalk2 Azr_system matches 1 as @e[tag=AzrielBoss4,limit=1] at @s run playsound minecraft:entity.blaze.ambient hostile @a[tag=azrPlayer] ~ ~ ~ 100 0.8
 execute if score tick_main_thread AzrTimerStack matches 2643 unless score $azrch4bosstalk2 Azr_system matches 1 run tellraw @a[tag=azrPlayer] {"text":"路西法烈焰：","color":"aqua"}
-execute if score tick_main_thread AzrTimerStack matches 2643 unless score $azrch4bosstalk2 Azr_system matches 1 if score PlayerCount Azr_system matches 1.. run tellraw @a[tag=azrPlayer] {"text":"“狂妄，狂妄且自大！无能的神庭之天使啊，汝那刺眼的光芒当下就要消逝！”","color":"white"}
+execute if score tick_main_thread AzrTimerStack matches 2643 unless score $azrch4bosstalk2 Azr_system matches 1 if score playerCount Azr_system matches 1.. run tellraw @a[tag=azrPlayer] {"text":"“狂妄，狂妄且自大！无能的神庭之天使啊，汝那刺眼的光芒当下就要消逝！”","color":"white"}
 
 execute if score tick_main_thread AzrTimerStack matches 2643 if score $azrch4bosstalk2 Azr_system matches 1 as @e[tag=AzrielBoss4,limit=1] at @s run tp @s ~ ~ ~ facing entity @e[tag=AzrielBossA,limit=1]
 execute if score tick_main_thread AzrTimerStack matches 2643 if score $azrch4bosstalk2 Azr_system matches 1 as @e[tag=AzrielBoss4,limit=1] at @s run playsound minecraft:entity.blaze.ambient hostile @a[tag=azrPlayer] ~ ~ ~ 100 0.8
 execute if score tick_main_thread AzrTimerStack matches 2643 if score $azrch4bosstalk2 Azr_system matches 1 run tellraw @a[tag=azrPlayer] {"text":"路西法烈焰：","color":"aqua"}
-execute if score tick_main_thread AzrTimerStack matches 2643 if score $azrch4bosstalk2 Azr_system matches 1 if score PlayerCount Azr_system matches 1.. if score #rng3 Azr_system matches 1 run tellraw @a[tag=azrPlayer] {"text":"“狂妄的天使，就此堕落吧！”","color":"white"}
-execute if score tick_main_thread AzrTimerStack matches 2643 if score $azrch4bosstalk2 Azr_system matches 1 if score PlayerCount Azr_system matches 1.. if score #rng3 Azr_system matches 2 run tellraw @a[tag=azrPlayer] {"text":"“我会仁慈地送汝等坠入无间地狱！”","color":"white"}
-execute if score tick_main_thread AzrTimerStack matches 2643 if score $azrch4bosstalk2 Azr_system matches 1 if score PlayerCount Azr_system matches 1.. if score #rng3 Azr_system matches 3 run tellraw @a[tag=azrPlayer] {"text":"“让烈焰焚尽汝等灵魂！”","color":"white"}
+execute if score tick_main_thread AzrTimerStack matches 2643 if score $azrch4bosstalk2 Azr_system matches 1 if score playerCount Azr_system matches 1.. if score #rng3 Azr_system matches 1 run tellraw @a[tag=azrPlayer] {"text":"“狂妄的天使，就此堕落吧！”","color":"white"}
+execute if score tick_main_thread AzrTimerStack matches 2643 if score $azrch4bosstalk2 Azr_system matches 1 if score playerCount Azr_system matches 1.. if score #rng3 Azr_system matches 2 run tellraw @a[tag=azrPlayer] {"text":"“我会仁慈地送汝等坠入无间地狱！”","color":"white"}
+execute if score tick_main_thread AzrTimerStack matches 2643 if score $azrch4bosstalk2 Azr_system matches 1 if score playerCount Azr_system matches 1.. if score #rng3 Azr_system matches 3 run tellraw @a[tag=azrPlayer] {"text":"“让烈焰焚尽汝等灵魂！”","color":"white"}
 
 execute if score tick_main_thread AzrTimerStack matches 2643 unless score $azrch4bosstalk2 Azr_system matches 1 run scoreboard players set $azrch4bosstalk2 Azr_system 1
 execute if score tick_main_thread AzrTimerStack matches 2002.. run effect clear @a[tag=azrPlayer] blindness

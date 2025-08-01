@@ -117,6 +117,6 @@ execute if score stage_main_thread AzrTimerStack matches 704..1700 run scoreboar
 # execute if score stage_main_thread AzrTimerStack matches 704..1700 if entity @a[tag=azrPlayer,x=-79537,y=41,z=-338,distance=0..7] run scoreboard players set stage_main_thread AzrTimerStack 1701
 
 execute if score stage_main_thread AzrTimerStack matches 701..702 run clone -79555 32 -352 -79517 32 -319 -79555 41 -352
-execute if score stage_main_thread AzrTimerStack matches 1705.. run scoreboard players set tick_main_thread Azr_system 0
+execute if score stage_main_thread AzrTimerStack matches 1705.. run scoreboard players set tick_main_thread AzrTimerStack 0
 execute if score stage_main_thread AzrTimerStack matches 1705.. run scoreboard players set stage Azr_system 62
 execute if score stage_main_thread AzrTimerStack matches 1705.. run scoreboard players set stage_main_thread AzrTimerStack 0
