@@ -89,8 +89,8 @@ execute if block -79765 24 -449 minecraft:crimson_button[powered=true] run score
 execute if block -79657 23 -421 minecraft:birch_button[powered=true] run scoreboard players set stage Azr_system 57
 execute if block -79657 23 -421 minecraft:birch_button[powered=true] run scoreboard players set stage_main_thread AzrTimerStack 20001
 #stage16(event16)
-execute if block -79540 25 -406 minecraft:crimson_button[powered=true] run scoreboard players set stage Azr_system 59
-execute if block -79540 25 -406 minecraft:crimson_button[powered=true] run scoreboard players set stage_main_thread AzrTimerStack 1
+execute if block -79540 25 -406 minecraft:birch_button[powered=true] run scoreboard players set stage Azr_system 59
+execute if block -79540 25 -406 minecraft:birch_button[powered=true] run scoreboard players set stage_main_thread AzrTimerStack 1
 
 #Stage Cerement
 execute if block -79946 39 50 minecraft:birch_button[powered=true] run function skyblock:azr/stage/stage_cerement_prep

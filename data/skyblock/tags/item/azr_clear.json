@@ -27,6 +27,8 @@
         "netherrack",
         "nether_brick_wall",
         "nether_brick_fence",
-        "tinted_glass"
+        "tinted_glass",
+        "magma_block",
+        "blackstone"
     ]
 }
