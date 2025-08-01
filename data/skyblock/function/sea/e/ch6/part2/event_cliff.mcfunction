@@ -175,18 +175,18 @@ execute if score SEA_ch6_event rng5 matches 12950 as @n[tag=SEAedwina] at @s if 
 execute if score SEA_ch6_event rng5 matches 12950 as @n[tag=SEAedwina] at @s if block 90151 133 -1857 minecraft:skeleton_skull run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“……我会让你活下来的。我发誓。”","color":"white","bold": false}]
 
 
-execute if score SEA_ch6_event rng5 matches 8095..14999 if entity @a[tag=SEAPT,tag=!SEAPF,x=89997,y=19,z=-1801,dx=30,dy=30,dz=30] run scoreboard players set SEA_ch6_event rng5 15000
-execute if score SEA_ch6_event rng5 matches 14990..14999 run scoreboard players set SEA_ch6_event rng5 14990
-execute if score SEA_ch6_event rng5 matches 15001 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"？？？：","color":"gray","bold": true},{"text":"\n“不要再无理取闹了。我们帮了你够多了。”","color":"gray","bold": false}]
-execute if score SEA_ch6_event rng5 matches 15004 as @a[scores={SEAPT_member=1}] at @s run stopsound @s
-execute if score SEA_ch6_event rng5 matches 15004 as @a[scores={SEAPT_member=1}] at @s run playsound minecraft:entity.ender_dragon.flap player @a ~ ~ ~ 1 0.5
-execute if score SEA_ch6_event rng5 matches 15004 as @a[scores={SEAPT_member=1}] at @s run playsound minecraft:entity.enderman.stare ambient @a ~ ~ ~ 1 0.5
-execute if score SEA_ch6_event rng5 matches 15004 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"？？？：","color":"gray","bold": true},{"text":"\n“不要再无理取闹了。”","color":"gray","bold": false}]
-execute if score SEA_ch6_event rng5 matches 15007 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"？？？：","color":"gray","bold": true},{"text":"\n“给我们带来了多大的麻烦。”","color":"gray","bold": false}]
-execute if score SEA_ch6_event rng5 matches 15009 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"？？？：","color":"gray","bold": true},{"text":"\n“帮了你够多了。”","color":"gray","bold": false}]
-execute if score SEA_ch6_event rng5 matches 15012 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"？？？：","color":"gray","bold": true},{"text":"\n“忒尔克西失联这件事，你非要管吗？”","color":"gray","bold": false}]
-execute if score SEA_ch6_event rng5 matches 15015 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"？？？：","color":"gray","bold": true},{"text":"\n“这就不是你的领域，我们要派的是足够可靠的维修员，不是你这个维修的时候命都不要的家伙。”","color":"gray","bold": false}]
-execute if score SEA_ch6_event rng5 matches 15023 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“我知道……我全都知道，让我加入调查组，我必须去忒尔克西平台看一看！！”","color":"white"}]
+execute if score SEA_ch6_event rng5 matches 8095..14899 if entity @a[tag=SEAPT,tag=!SEAPF,x=89997,y=19,z=-1801,dx=30,dy=30,dz=30] run scoreboard players set SEA_ch6_event rng5 14980
+execute if score SEA_ch6_event rng5 matches 14890..14899 run scoreboard players set SEA_ch6_event rng5 14890
+execute if score SEA_ch6_event rng5 matches 14981 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"？？？：","color":"gray","bold": true},{"text":"\n“不要再无理取闹了。我们帮了你够多了。”","color":"gray","bold": false}]
+execute if score SEA_ch6_event rng5 matches 14986 as @a[scores={SEAPT_member=1}] at @s run stopsound @s
+execute if score SEA_ch6_event rng5 matches 14986 as @a[scores={SEAPT_member=1}] at @s run playsound minecraft:entity.ender_dragon.flap player @a ~ ~ ~ 1 0.5
+execute if score SEA_ch6_event rng5 matches 14986 as @a[scores={SEAPT_member=1}] at @s run playsound minecraft:entity.enderman.stare ambient @a ~ ~ ~ 1 0.5
+execute if score SEA_ch6_event rng5 matches 14986 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"？？？：","color":"gray","bold": true},{"text":"\n“不要再无理取闹了。”","color":"gray","bold": false}]
+execute if score SEA_ch6_event rng5 matches 14994 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"？？？：","color":"gray","bold": true},{"text":"\n“给我们带来了多大的麻烦。”","color":"gray","bold": false}]
+execute if score SEA_ch6_event rng5 matches 14999 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"？？？：","color":"gray","bold": true},{"text":"\n“帮了你够多了。”","color":"gray","bold": false}]
+execute if score SEA_ch6_event rng5 matches 15007 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"？？？：","color":"gray","bold": true},{"text":"\n“忒尔克西失联这件事，你非要管吗？”","color":"gray","bold": false}]
+execute if score SEA_ch6_event rng5 matches 15012 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"？？？：","color":"gray","bold": true},{"text":"\n“这就不是你的领域，我们要派的是足够可靠的维修员，不是你这个维修的时候命都不要的家伙。”","color":"gray","bold": false}]
+execute if score SEA_ch6_event rng5 matches 15022 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“我知道……我全都知道，让我加入调查组，我必须去忒尔克西平台看一看！！”","color":"white"}]
 execute if score SEA_ch6_event rng5 matches 15037 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“风险，没有问题，我可以承担风险，就是因为危险才更需要派我去不是吗？！”","color":"white"}]
 execute if score SEA_ch6_event rng5 matches 15055 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“我要找的东西就在这里，不论如何请让我一定要加入！！”","color":"white"}]
 execute if score SEA_ch6_event rng5 matches 15048 as @a[scores={SEAPT_member=1}] at @s run playsound minecraft:entity.ender_dragon.flap player @a ~ ~ ~ 1 0.5
