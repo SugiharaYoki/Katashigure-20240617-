@@ -268,3 +268,9 @@ execute if score SEA_ch6_event rng5 matches 20012 positioned 90050 20 -1822 run 
 execute if score SEA_ch6_event rng5 matches 20013 positioned 90046 20 -1818 run playsound block.metal_pressure_plate.click_off block @a ~ ~ ~ 2 0.8
 execute if score SEA_ch6_event rng5 matches 20014 positioned 90046 20 -1811 run playsound block.metal_pressure_plate.click_off block @a ~ ~ ~ 2 0.8
 
+execute if score SEA_ch6_event rng5 matches 20001 run scoreboard players set SEAmusic rng1 0
+
+
+
+
+

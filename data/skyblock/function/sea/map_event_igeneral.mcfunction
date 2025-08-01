@@ -45,4 +45,6 @@ execute if entity @n[tag=sea_raphael_sword,type=armor_stand] run function skyblo
 execute as @n[tag=SEAedwina_ch6,tag=!SEAedwina_run] at @s run function skyblock:sea/e/ch6/edwina/core
 execute as @n[tag=SEAedwina_ch6,tag=SEAedwina_run] at @s run function skyblock:sea/e/ch6/edwina/core_run
 
+#最终boss
+execute if score SEA_ch6_event rng5 matches 20001.. run function skyblock:sea/e/ch6/boss6/core
 
