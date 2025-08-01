@@ -136,7 +136,7 @@ execute if score stage_main_thread AzrTimerStack matches 320..380 run scoreboard
 
 
 execute if score stage_main_thread AzrTimerStack matches 390..400 run scoreboard players set stage_main_thread AzrTimerStack 395
-execute if score stage_main_thread AzrTimerStack matches 320..380 as @a[tag=azrPlayer] at @s facing entity @e[tag=AzrielBossFA,limit=1] eyes run scoreboard players set stage_main_thread AzrTimerStack 385
+execute if score stage_main_thread AzrTimerStack matches 320..380 if entity @n[type=pillager,tag=AzrielBossFA,limit=1] run scoreboard players set stage_main_thread AzrTimerStack 385
 
 execute if score stage_main_thread AzrTimerStack matches 386 run tellraw @a[tag=azrPlayer] {"text":"神界军模样的人：","color":"aqua"}
 execute if score stage_main_thread AzrTimerStack matches 386 run tellraw @a[tag=azrPlayer] [{"text":"“这里！看到我了吧！小心跳过来，别跌下去了。”","color":"white"}]
