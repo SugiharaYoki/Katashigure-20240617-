@@ -36,5 +36,4 @@ execute if score tick_main_thread AzrTimerStack matches 230..400 as @e[type=fire
 execute if score tick_main_thread AzrTimerStack matches 401 run fill -79519 42 -321 -79553 42 -355 air replace fire
 execute if score tick_main_thread AzrTimerStack matches 401 run particle campfire_cosy_smoke -79536 42 -338 20 1 20 0.01 800
 
-
 execute if score tick_main_thread AzrTimerStack matches 452..1800 if score #rng11 Azr_system matches 1..2 run scoreboard players set tick_main_thread AzrTimerStack 147

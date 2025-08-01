@@ -60,5 +60,4 @@ execute if score tick_main_thread AzrTimerStack matches 275..276 if score #rng8 
 execute if score tick_main_thread AzrTimerStack matches 275..276 if score #rng8 Azr_system matches 7 run data modify entity @s Motion set value [-0.3,0.6,0.3]
 execute if score tick_main_thread AzrTimerStack matches 275..276 if score #rng8 Azr_system matches 8 run data modify entity @s Motion set value [-0.3,0.6,-0.3]
 
-
 execute if score tick_main_thread AzrTimerStack matches 350..1800 if score #rng11 Azr_system matches 1..2 run scoreboard players set tick_main_thread Azr_system 147

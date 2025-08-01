@@ -10,4 +10,4 @@ execute as @s[scores={SeGa_StandLast=139..150}] at @s as @e[tag=AzrielBoss4,limi
 execute as @s[scores={SeGa_StandLast=139..150}] at @s as @e[tag=AzrielBoss4,limit=1] at @s run summon arrow ~-0.8 ~7.5 ~ {Motion:[0.0,-1.8,0.0],pickup:0,damage:1.0,life:1100,Tags:["skill009a3"]}
 execute as @s[scores={SeGa_StandLast=139..150}] at @s as @e[tag=AzrielBoss4,limit=1] at @s run summon arrow ~ ~7.5 ~0.8 {Motion:[0.0,-1.8,0.0],pickup:0,damage:1.0,life:1100,Tags:["skill009a4"]}
 execute as @s[scores={SeGa_StandLast=139..150}] at @s as @e[tag=AzrielBoss4,limit=1] at @s run summon arrow ~ ~7.5 ~-0.8 {Motion:[0.0,-1.8,0.0],pickup:0,damage:1.0,life:1100,Tags:["skill009a55"]}
-execute as @s[scores={SeGa_StandLast=139..156}] at @s as @e[type=arrow] at @s run function skyblock:azr/sub_boss4_arrowtag
+execute as @s[scores={SeGa_StandLast=139..156}] at @s as @e[type=arrow] at @s run function skyblock:azr/stage/boss4/arrowtag
