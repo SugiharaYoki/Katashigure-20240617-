@@ -253,6 +253,9 @@ execute if score playerCount Azr_system matches 5.. run item replace block -7975
 
 summon piglin -79757 29 -465 {Invulnerable:1b,IsImmuneToZombification:1b,PersistenceRequired:1b,Tags:["Immune","AzrielTrader4A","AzrielNPC"],DeathLootTable:"skyblock:azriel_piglin_resident_tier1",Health:20.0f,CustomName:'"猪灵工匠"',CanPickUpLoot:0b,IsBaby:0b,HandItems:[{},{}],HandDropChances:[0.05f,0.05f],ArmorItems:[{},{},{count:1,id:"iron_chestplate",components:{custom_name:'{"text":"铁胸甲","italic":false,"color":"white"}'}},{}],ArmorDropChances:[0.01f,0.01f,0.01f,0.01f],NoAI:1b}
 
+tellraw @a[tag=azrPlayer,scores={AZR_chainKillUpg_pts=..6},tag=hasSkills] [{"text":"索命连击","color":"gold"},{"text":"可用点数已增加，目前为：7","color":"green"}]
+scoreboard players set @a[scores={AZR_chainKillUpg_pts=..6}] AZR_chainKillUpg_pts 7
+
 #function skyblock:tool_rng
 #execute if entity @e[tag=sc,limit=1,scores={SeGa_StandLast=143}] rng3 matches 1 run
 #【狱山羊 lv6】summon goat ~ ~ ~ {IsScreamingGoat:0b,PersistenceRequired:1,Tags:["AzrielDecMob"],DeathLootTable:"skyblock:azriel_sheep_tier1",CustomName:"\"狱山羊\"",Age:10,Attributes:[{Name:generic.max_health,Base:10.0},{Name:generic.attack_knockback,Base:0.50},{Name:generic.attack_damage,Base:12.0},{Name:generic.movement_speed,Base:0.18}],Health:10.0f}
