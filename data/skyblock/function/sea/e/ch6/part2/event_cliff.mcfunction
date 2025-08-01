@@ -277,7 +277,7 @@ execute if score SEA_ch6_event rng5 matches 20047..20067 run particle white_ash 
 
 execute if score SEA_ch6_event rng5 matches 20030 as @a[scores={SEAPT_member=1}] at @s run tellraw @a[distance=0..150] [{"text":"？？？：","color":"red","bold": true},{"text":"\n“汝是因知晓神庭的怒雷对地底无能为力吧。”","color":"white","bold": false}]
 
-execute if score SEA_ch6_event rng5 matches 20047 run summon marker 90069 31 -1815 {Tags:["SEAboss5_heaven_portal"]}
+execute if score SEA_ch6_event rng5 matches 20047 run summon marker 90069 28 -1815 {Tags:["SEAboss5_heaven_portal"]}
 execute if score SEA_ch6_event rng5 matches 20058 positioned 90064 20 -1815 run summon lightning_bolt
 execute if score SEA_ch6_event rng5 matches 20058 positioned 90064 22 -1815 run function skyblock:sea/m/unique/boss6
 execute if score SEA_ch6_event rng5 matches 20058 run effect give @n[tag=SEAboss6] fire_resistance infinite 0 true
