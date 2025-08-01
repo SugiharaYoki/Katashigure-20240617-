@@ -213,6 +213,9 @@ execute if score SEA_ch6_event rng5 matches 15069 as @p[tag=SEAPT] at @s run eff
 execute if score SEA_ch6_event rng5 matches 15079 as @p[tag=SEAPT] at @s run effect give @s slowness 500 11 true
 execute if score SEA_ch6_event rng5 matches 15120 as @p[tag=SEAPT] at @s run effect clear @s slowness
 execute if score SEA_ch6_event rng5 matches 15120 as @p[tag=SEAPT] at @s run effect clear @s darkness
+execute if score SEA_ch6_event rng5 matches 15120 as @p[tag=SEAPT] at @s run particle totem_of_undying ~ ~1 ~ 0.4 0.8 0.4 0.7 100
+execute if score SEA_ch6_event rng5 matches 15120 as @p[tag=SEAPT] at @s run particle minecraft:flash ~ ~1 ~ 0.4 0.7 0.4 0.3 2
+execute if score SEA_ch6_event rng5 matches 15120 as @p[tag=SEAPT] at @s run playsound item.totem.use master @a ~ ~ ~ 2
 execute if score SEA_ch6_event rng5 matches 15089 as @a[scores={SEAPT_member=1}] at @s run playsound minecraft:entity.ender_dragon.flap player @a ~ ~ ~ 1 0.5
 execute if score SEA_ch6_event rng5 matches 15089 as @a[scores={SEAPT_member=1}] at @s run effect give @s darkness 10 0 true
 execute if score SEA_ch6_event rng5 matches 15089 as @a[scores={SEAPT_member=1}] at @s run playsound minecraft:entity.enderman.stare ambient @a ~ ~ ~ 1 0.8
