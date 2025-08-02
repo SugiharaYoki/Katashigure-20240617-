@@ -6,6 +6,13 @@ forceload add 90040 -20 90170 170
 forceload add 90000 0 90200 200
 forceload add 90141 -1888 90236 -1835
 
+#6章
+forceload add 90142 -1886 90209 -1838
+forceload add 90011 -1953 90109 -1888
+forceload add 89977 -1938 90038 -1925
+forceload add 90012 -1858 90007 -1863
+forceload add 90028 -1846
+forceload add 90042 -1829 90068 -1798
 
 
 scoreboard players set @a SEAPT_member 0
@@ -1047,7 +1054,6 @@ setblock 90120 167 141 minecraft:sculk_sensor
 setblock 90124 136 21 air
 setblock 90124 136 21 lever[facing=north]
 
-forceload remove 90141 -1888 90236 -1835
 
 fill 90107 105 36 90107 105 51 minecraft:waxed_copper_trapdoor[facing=east]
 fill 90104 105 36 90104 105 51 minecraft:waxed_copper_trapdoor[facing=west]
@@ -1055,4 +1061,143 @@ fill 90104 105 36 90104 105 51 minecraft:waxed_copper_trapdoor[facing=west]
 item replace block 90148 145 152 container.4 with air
 item replace block 90148 145 152 container.5 with air
 
+#第六章后半
 
+setblock 90197 175 -1879 minecraft:composter
+setblock 90195 175 -1883 minecraft:composter
+setblock 90203 175 -1879 minecraft:composter
+setblock 90210 175 -1881 minecraft:composter
+setblock 90215 175 -1879 minecraft:composter
+setblock 90215 177 -1875 minecraft:composter
+fill 90207 177 -1875 90206 177 -1875 minecraft:grindstone[face=floor]
+fill 90201 175 -1880 90200 175 -1880 minecraft:grindstone[face=floor]
+fill 90188 175 -1875 90187 175 -1875 minecraft:grindstone[face=floor]
+setblock 90193 175 -1877 minecraft:smithing_table
+setblock 90193 175 -1885 minecraft:cobweb
+setblock 90190 176 -1885 minecraft:cobweb
+setblock 90195 177 -1880 minecraft:cobweb
+setblock 90191 178 -1875 minecraft:cobweb
+setblock 90203 176 -1878 minecraft:cobweb
+setblock 90207 176 -1880 minecraft:cobweb
+setblock 90214 177 -1876 minecraft:cobweb
+setblock 90217 176 -1880 minecraft:cobweb
+fill 90213 176 -1879 90213 175 -1879 minecraft:chiseled_bookshelf[facing=east]
+fill 90202 176 -1881 90202 175 -1881 minecraft:chiseled_bookshelf[facing=west]
+fill 90204 178 -1875 90204 177 -1875 minecraft:chiseled_bookshelf[facing=north]
+fill 90220 176 -1879 90220 175 -1878 minecraft:chiseled_bookshelf[facing=west]
+setblock 90218 175 -1876 minecraft:grindstone[facing=west,face=floor]
+setblock 90220 175 -1876 minecraft:cobweb
+setblock 90218 176 -1876 minecraft:cobweb
+setblock 90219 176 -1875 minecraft:cobweb
+setblock 90219 176 -1869 minecraft:cobweb
+fill 90219 176 -1872 90219 175 -1872 minecraft:chiseled_bookshelf[facing=north]
+setblock 90220 175 -1874 minecraft:grindstone[facing=east,face=floor]
+setblock 90223 177 -1869 minecraft:smithing_table
+setblock 90223 177 -1871 minecraft:cobweb
+setblock 90218 177 -1874 minecraft:cobweb
+
+setblock 90149 133 -1884 chest[facing=east]
+item replace block 90149 133 -1884 container.13 with golden_carrot 5
+
+summon minecraft:interaction 90158 134.3 -1887 {CustomName:'[{"text":"器械式治疗仪"}]',Tags:["SEAaidbox"]}
+summon minecraft:interaction 90118 120.3 -1862 {CustomName:'[{"text":"器械式治疗仪"}]',Tags:["SEAaidbox"]}
+summon minecraft:interaction 90007 58.3 -1860 {CustomName:'[{"text":"器械式治疗仪"}]',Tags:["SEAaidbox"]}
+
+
+summon minecraft:interaction 90112 106.3 -1902 {CustomName:'[{"text":"多功能工作站"}]',Tags:["SEAcrafter","SEAcrafter_foodless","SEAcrafter21"]}
+summon minecraft:marker 90111 105 -1902 {Tags:["SEAcrafter_tp","SEAcrafter_tp21"]}
+
+summon minecraft:interaction 90007 58.3 -1861 {CustomName:'[{"text":"多功能工作站"}]',Tags:["SEAcrafter","SEAcrafter_foodless","SEAcrafter22"]}
+summon minecraft:marker 90008 57 -1861 {Tags:["SEAcrafter_tp","SEAcrafter_tp22"]}
+
+setblock 89985 84 -1901 air
+setblock 89990 76 -1889 air
+setblock 90083 98 -1933 air
+setblock 90082 102 -1903 air
+setblock 90100 102 -1919 air
+setblock 90090 102 -1881 air
+setblock 89985 84 -1901 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:flint"}}
+setblock 89990 76 -1889 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 2, id:"minecraft:flint"}}
+setblock 90083 98 -1933 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 2, id:"minecraft:gunpowder"}}
+setblock 90082 102 -1903 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 2, id:"minecraft:gunpowder"}}
+setblock 90100 102 -1919 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 2, id:"minecraft:flint"}}
+setblock 90090 102 -1881 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 2, id:"minecraft:flint"}}
+
+setblock 90003 47 -1809 air
+setblock 90003 47 -1809 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 20, id:"minecraft:arrow"}}
+setblock 90002 44 -1896 air
+setblock 90002 44 -1896 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 3, id:"minecraft:gunpowder"}}
+
+setblock 90151 133 -1857 air
+execute if items entity @a[tag=SEAPT] container.* golden_sword run setblock 90151 133 -1857 minecraft:skeleton_skull[rotation=10]
+
+fill 90129 119 -1853 90129 124 -1857 minecraft:netherite_block
+fill 90125 119 -1853 90125 124 -1857 minecraft:netherite_block
+fill 90121 119 -1853 90121 124 -1857 minecraft:netherite_block
+
+setblock 90151 164 -1851 minecraft:furnace[facing=north]
+
+
+summon marker 90100 105 -1901 {Tags:["SEAmagma1"]}
+summon marker 90099 105 -1903 {Tags:["SEAmagma1"]}
+summon marker 90094 105 -1899 {Tags:["SEAmagma1"]}
+summon marker 90089 102 -1906 {Tags:["SEAmagma1"]}
+summon marker 90086 102 -1900 {Tags:["SEAmagma1"]}
+
+summon marker 90097 102 -1879 {Tags:["SEAmagma1"]}
+summon marker 90098 102 -1883 {Tags:["SEAmagma1"]}
+
+setblock 90093 102 -1899 chest[facing=north]
+item replace block 90093 102 -1899 container.13 with golden_carrot 3
+
+
+execute as @e[tag=SEAmagma1,type=marker] at @s if block ~ ~ ~ air run setblock ~ ~ ~ basalt
+
+
+setblock 90112 105 -1903 furnace[facing=west]
+setblock 90112 105 -1901 furnace[facing=west]
+fill 90038 91 -1926 90038 92 -1926 air
+
+setblock 90012 89 -1925 air
+setblock 90010 89 -1927 air
+setblock 90013 96 -1925 air
+setblock 90015 96 -1927 air
+setblock 90014 89 -1927 air
+setblock 90016 89 -1926 air
+setblock 90011 91 -1924 air
+setblock 90011 94 -1928 air
+
+fill 89988 90 -1924 89989 89 -1924 air
+fill 89988 89 -1923 89989 88 -1923 air
+fill 89990 91 -1923 89990 89 -1923 air
+setblock 89989 91 -1924 minecraft:air
+setblock 90011 57 -1858 furnace[facing=north]
+
+setblock 90028 52 -1846 chest[facing=west]
+
+setblock 90009 59 -1858 chest[facing=north]
+setblock 90009 57 -1858 chest[facing=north]
+
+clone 90052 115 -1829 90066 115 -1801 90052 20 -1829
+setblock 90060 20 -1823 minecraft:redstone_lamp[lit=false]
+setblock 90064 20 -1819 minecraft:redstone_lamp[lit=false]
+setblock 90064 20 -1811 minecraft:redstone_lamp[lit=false]
+setblock 90060 20 -1807 minecraft:redstone_lamp[lit=false]
+setblock 90050 20 -1807 minecraft:redstone_lamp[lit=false]
+setblock 90050 20 -1823 minecraft:redstone_lamp[lit=false]
+setblock 90046 20 -1819 minecraft:redstone_lamp[lit=false]
+setblock 90046 20 -1811 minecraft:redstone_lamp[lit=false]
+fill 90056 20 -1814 90054 20 -1816 sculk
+setblock 90055 21 -1815 minecraft:sculk_shrieker
+setblock 90055 23 -1815 minecraft:shroomlight
+execute positioned 90050 20 -1807 run kill @e[distance=0..50,type=!player]
+
+
+forceload remove 90141 -1888 90236 -1835
+
+forceload remove 90042 -1829 90068 -1798
+forceload remove 90011 -1953 90109 -1888
+forceload remove 90142 -1886 90209 -1838
+forceload remove 89977 -1938 90038 -1925
+forceload remove 90012 -1858 90007 -1863
+forceload remove 90028 -1846
