@@ -1,5 +1,5 @@
 scoreboard players add SEA_ch6_event sea_4temp4 0
-
+scoreboard players add @s rng1 1
 
 scoreboard players add SEAmusic rng1 1
 execute if score SEAmusic rng1 matches 1 as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s run playsound minecraft:falsegod music @s ~ ~ ~ 1 1.0
