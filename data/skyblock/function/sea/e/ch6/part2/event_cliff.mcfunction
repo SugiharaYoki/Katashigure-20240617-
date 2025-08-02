@@ -328,3 +328,12 @@ execute if score SEA_ch6_event rng5 matches 20078 run bossbar set minecraft:9066
 
 execute store result bossbar minecraft:9066602 value run data get entity @n[tag=SEAboss6] Health
 execute store result score @n[tag=SEAboss6] health run data get entity @n[tag=SEAboss6] Health
+
+
+
+
+
+
+
+
+
