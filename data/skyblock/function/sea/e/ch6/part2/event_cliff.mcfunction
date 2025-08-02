@@ -207,10 +207,10 @@ execute if score SEA_ch6_event rng5 matches 15081 as @a[scores={SEAPT_member=1}]
 execute if score SEA_ch6_event rng5 matches 15103 as @a[scores={SEAPT_member=1}] at @s run tellraw @a[distance=0..150] [{"text":"琼斯：","color":"red","bold": true},{"text":"\n“真是遗憾……我们走的是不同的道路。”","color":"white","bold": false}]
 execute if score SEA_ch6_event rng5 matches 15029 as @p[tag=SEAPT] at @s run effect give @s slowness 500 1 true
 execute if score SEA_ch6_event rng5 matches 15039 as @p[tag=SEAPT] at @s run effect give @s slowness 500 3 true
-execute if score SEA_ch6_event rng5 matches 15059 as @p[tag=SEAPT] at @s run effect give @s slowness 500 5 true
-execute if score SEA_ch6_event rng5 matches 15069 as @p[tag=SEAPT] at @s run effect give @s slowness 500 7 true
-execute if score SEA_ch6_event rng5 matches 15089 as @p[tag=SEAPT] at @s run effect give @s slowness 500 9 true
-execute if score SEA_ch6_event rng5 matches 15099 as @p[tag=SEAPT] at @s run effect give @s slowness 500 11 true
+execute if score SEA_ch6_event rng5 matches 15044 as @p[tag=SEAPT] at @s run effect give @s slowness 500 5 true
+execute if score SEA_ch6_event rng5 matches 15049 as @p[tag=SEAPT] at @s run effect give @s slowness 500 7 true
+execute if score SEA_ch6_event rng5 matches 15054 as @p[tag=SEAPT] at @s run effect give @s slowness 500 9 true
+execute if score SEA_ch6_event rng5 matches 15059 as @p[tag=SEAPT] at @s run effect give @s slowness 500 11 true
 execute if score SEA_ch6_event rng5 matches 15130 as @p[tag=SEAPT] at @s run effect clear @s slowness
 execute if score SEA_ch6_event rng5 matches 15130 as @p[tag=SEAPT] at @s run effect clear @s darkness
 execute if score SEA_ch6_event rng5 matches 15130 as @p[tag=SEAPT] at @s run particle totem_of_undying ~ ~1 ~ 0.4 0.8 0.4 1.7 1000
