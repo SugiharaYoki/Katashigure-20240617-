@@ -1,3 +1,5 @@
+scoreboard players add @s rng4 1
+
 execute if score @s rng4 matches 1..2 if block ~ ~-0.3 ~ air run scoreboard players set @s rng4 1
 execute if score @s rng4 matches 3.. run particle minecraft:small_gust ~ ~ ~ 1 0.5 1 0 10
 execute if score @s rng4 matches 23.. run particle minecraft:small_gust ~ ~ ~ 2 0.5 2 0 20

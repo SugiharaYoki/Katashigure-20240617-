@@ -1,3 +1,4 @@
+scoreboard players add @s rng4 1
 execute if score @s rng4 matches 2.. store result score @s rng5 run random value 1..8
 
 execute if score @s[scores={rng5=1}] rng4 matches 10 positioned ~-1 ~ ~2 unless block ~ ~-1 ~ air run summon marker ~ ~ ~ {Tags:["SEAboss6_summoner_a"]}

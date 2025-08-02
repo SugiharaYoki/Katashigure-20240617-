@@ -1,3 +1,4 @@
+scoreboard players add @s rng4 1
 
 execute if score @s rng4 matches 2 store result score @s rng5 run random value 1..4
 execute if score @s[scores={rng5=1}] rng4 matches 3 at @s as @a[scores={SEAPT_member=1}] at @s run tellraw @a[distance=0..150] [{"text":"权之执理：","color":"red","bold": true},{"text":"\n“劝你立即回来堂堂正正与我打。”","color":"white","bold": false}]
