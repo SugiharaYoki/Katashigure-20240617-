@@ -1,34 +1,34 @@
 execute if score stage_main_thread AzrTimerStack matches 9..11 run tag @a[tag=azrPlayer] add azrUpdateSpawnPoint
 execute if score stage_main_thread AzrTimerStack matches 9 run scoreboard players set $Azr_Doppel Azr_system 1
-execute if score stage_main_thread AzrTimerStack matches 9 run bossbar add azr:progress_bar_special_2 "Stage 16"
-execute if score stage_main_thread AzrTimerStack matches 9 run bossbar set azr:progress_bar_special_2 color blue
-execute if score stage_main_thread AzrTimerStack matches 9 run bossbar set azr:progress_bar_special_2 players @a[tag=azrPlayer]
-execute if score stage_main_thread AzrTimerStack matches 10 run bossbar set azr:progress_bar_special_2 max 38
-execute if score mobCount Azr_system matches 39 if score stage_main_thread AzrTimerStack matches 10..12 run bossbar set azr:progress_bar_special_2 max 39
-execute if score mobCount Azr_system matches 40 if score stage_main_thread AzrTimerStack matches 10..12 run bossbar set azr:progress_bar_special_2 max 40
-execute if score mobCount Azr_system matches 41 if score stage_main_thread AzrTimerStack matches 10..12 run bossbar set azr:progress_bar_special_2 max 41
-execute if score mobCount Azr_system matches 42 if score stage_main_thread AzrTimerStack matches 10..12 run bossbar set azr:progress_bar_special_2 max 42
-execute if score mobCount Azr_system matches 43 if score stage_main_thread AzrTimerStack matches 10..12 run bossbar set azr:progress_bar_special_2 max 43
-execute if score mobCount Azr_system matches 44 if score stage_main_thread AzrTimerStack matches 10..12 run bossbar set azr:progress_bar_special_2 max 44
-execute if score mobCount Azr_system matches 45 if score stage_main_thread AzrTimerStack matches 10..12 run bossbar set azr:progress_bar_special_2 max 45
-execute if score mobCount Azr_system matches 46 if score stage_main_thread AzrTimerStack matches 10..12 run bossbar set azr:progress_bar_special_2 max 46
-execute if score mobCount Azr_system matches 47 if score stage_main_thread AzrTimerStack matches 10..12 run bossbar set azr:progress_bar_special_2 max 47
-execute if score mobCount Azr_system matches 48 if score stage_main_thread AzrTimerStack matches 10..12 run bossbar set azr:progress_bar_special_2 max 48
-execute if score mobCount Azr_system matches 49 if score stage_main_thread AzrTimerStack matches 10..12 run bossbar set azr:progress_bar_special_2 max 49
-execute if score mobCount Azr_system matches 50 if score stage_main_thread AzrTimerStack matches 10..12 run bossbar set azr:progress_bar_special_2 max 50
-execute if score mobCount Azr_system matches 51 if score stage_main_thread AzrTimerStack matches 10..12 run bossbar set azr:progress_bar_special_2 max 51
-execute if score mobCount Azr_system matches 52 if score stage_main_thread AzrTimerStack matches 10..12 run bossbar set azr:progress_bar_special_2 max 52
-execute if score mobCount Azr_system matches 53 if score stage_main_thread AzrTimerStack matches 10..12 run bossbar set azr:progress_bar_special_2 max 53
-execute if score mobCount Azr_system matches 54 if score stage_main_thread AzrTimerStack matches 10..12 run bossbar set azr:progress_bar_special_2 max 54
-execute if score mobCount Azr_system matches 55 if score stage_main_thread AzrTimerStack matches 10..12 run bossbar set azr:progress_bar_special_2 max 55
-execute if score mobCount Azr_system matches 56 if score stage_main_thread AzrTimerStack matches 10..12 run bossbar set azr:progress_bar_special_2 max 56
-execute if score mobCount Azr_system matches 57 if score stage_main_thread AzrTimerStack matches 10..12 run bossbar set azr:progress_bar_special_2 max 57
-execute if score mobCount Azr_system matches 58 if score stage_main_thread AzrTimerStack matches 10..12 run bossbar set azr:progress_bar_special_2 max 58
-execute if score mobCount Azr_system matches 59 if score stage_main_thread AzrTimerStack matches 10..12 run bossbar set azr:progress_bar_special_2 max 59
-execute if score mobCount Azr_system matches 60.. if score stage_main_thread AzrTimerStack matches 10..12 run bossbar set azr:progress_bar_special_2 max 60
-execute if score stage_main_thread AzrTimerStack matches 10.. store result bossbar azr:progress_bar_special_2 value run scoreboard players get mobCount Azr_system
+execute if score stage_main_thread AzrTimerStack matches 9 run bossbar add azr:progress_bar_special_0 "Stage 16"
+execute if score stage_main_thread AzrTimerStack matches 9 run bossbar set azr:progress_bar_special_0 color blue
+execute if score stage_main_thread AzrTimerStack matches 9 run bossbar set azr:progress_bar_special_0 players @a[tag=azrPlayer]
+execute if score stage_main_thread AzrTimerStack matches 10 run bossbar set azr:progress_bar_special_0 max 38
+execute if score mobCount Azr_system matches 39 if score stage_main_thread AzrTimerStack matches 10..12 run bossbar set azr:progress_bar_special_0 max 39
+execute if score mobCount Azr_system matches 40 if score stage_main_thread AzrTimerStack matches 10..12 run bossbar set azr:progress_bar_special_0 max 40
+execute if score mobCount Azr_system matches 41 if score stage_main_thread AzrTimerStack matches 10..12 run bossbar set azr:progress_bar_special_0 max 41
+execute if score mobCount Azr_system matches 42 if score stage_main_thread AzrTimerStack matches 10..12 run bossbar set azr:progress_bar_special_0 max 42
+execute if score mobCount Azr_system matches 43 if score stage_main_thread AzrTimerStack matches 10..12 run bossbar set azr:progress_bar_special_0 max 43
+execute if score mobCount Azr_system matches 44 if score stage_main_thread AzrTimerStack matches 10..12 run bossbar set azr:progress_bar_special_0 max 44
+execute if score mobCount Azr_system matches 45 if score stage_main_thread AzrTimerStack matches 10..12 run bossbar set azr:progress_bar_special_0 max 45
+execute if score mobCount Azr_system matches 46 if score stage_main_thread AzrTimerStack matches 10..12 run bossbar set azr:progress_bar_special_0 max 46
+execute if score mobCount Azr_system matches 47 if score stage_main_thread AzrTimerStack matches 10..12 run bossbar set azr:progress_bar_special_0 max 47
+execute if score mobCount Azr_system matches 48 if score stage_main_thread AzrTimerStack matches 10..12 run bossbar set azr:progress_bar_special_0 max 48
+execute if score mobCount Azr_system matches 49 if score stage_main_thread AzrTimerStack matches 10..12 run bossbar set azr:progress_bar_special_0 max 49
+execute if score mobCount Azr_system matches 50 if score stage_main_thread AzrTimerStack matches 10..12 run bossbar set azr:progress_bar_special_0 max 50
+execute if score mobCount Azr_system matches 51 if score stage_main_thread AzrTimerStack matches 10..12 run bossbar set azr:progress_bar_special_0 max 51
+execute if score mobCount Azr_system matches 52 if score stage_main_thread AzrTimerStack matches 10..12 run bossbar set azr:progress_bar_special_0 max 52
+execute if score mobCount Azr_system matches 53 if score stage_main_thread AzrTimerStack matches 10..12 run bossbar set azr:progress_bar_special_0 max 53
+execute if score mobCount Azr_system matches 54 if score stage_main_thread AzrTimerStack matches 10..12 run bossbar set azr:progress_bar_special_0 max 54
+execute if score mobCount Azr_system matches 55 if score stage_main_thread AzrTimerStack matches 10..12 run bossbar set azr:progress_bar_special_0 max 55
+execute if score mobCount Azr_system matches 56 if score stage_main_thread AzrTimerStack matches 10..12 run bossbar set azr:progress_bar_special_0 max 56
+execute if score mobCount Azr_system matches 57 if score stage_main_thread AzrTimerStack matches 10..12 run bossbar set azr:progress_bar_special_0 max 57
+execute if score mobCount Azr_system matches 58 if score stage_main_thread AzrTimerStack matches 10..12 run bossbar set azr:progress_bar_special_0 max 58
+execute if score mobCount Azr_system matches 59 if score stage_main_thread AzrTimerStack matches 10..12 run bossbar set azr:progress_bar_special_0 max 59
+execute if score mobCount Azr_system matches 60.. if score stage_main_thread AzrTimerStack matches 10..12 run bossbar set azr:progress_bar_special_0 max 60
+execute if score stage_main_thread AzrTimerStack matches 10.. store result bossbar azr:progress_bar_special_0 value run scoreboard players get mobCount Azr_system
 execute if score stage_main_thread AzrTimerStack matches 329.. run bossbar remove azr:progress_bar_special
-execute if score stage_main_thread AzrTimerStack matches 329.. run bossbar remove azr:progress_bar_special_2
+execute if score stage_main_thread AzrTimerStack matches 329.. run bossbar remove azr:progress_bar_special_0
 #
 #mainside:none
 

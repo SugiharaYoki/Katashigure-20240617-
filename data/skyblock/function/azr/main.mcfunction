@@ -15,8 +15,9 @@ execute if score isStarted Azr_system matches 1 run function skyblock:azr/system
 #旁观者显示
 bossbar set azr:progress_bar_normal players @a[x=-79931,y=100,z=0,distance=..10000]
 bossbar set azr:progress_bar_special players @a[x=-79931,y=100,z=0,distance=..10000]
+bossbar set azr:progress_bar_special_0 players @a[x=-79931,y=100,z=0,distance=..10000]
 bossbar set azr:boss_hp_bar players @a[x=-79931,y=100,z=0,distance=..10000]
-bossbar set minecraft:8432102 players @a[x=-79931,y=100,z=0,distance=..10000]
+bossbar set azr:boss_hp_bar_0 players @a[x=-79931,y=100,z=0,distance=..10000]
 
 #开始游戏
 #声明常驻记分板 可能包含系统参数、永久变量、指针等
@@ -89,16 +90,17 @@ function skyblock:azr/effects/wish_fountain_transfer
 team join AzrPlayer @e[tag=AzrielFriendly]
 
 # 玩家函数
+scoreboard players reset $playerExists Azr_system
 execute as @a[tag=azrPlayer] run function skyblock:azr/player
 
 
-execute if entity @a[tag=azrPlayer] if score tick_count_main AzrTimerStack matches -2147483648..2147483647 run scoreboard players add tick_count_main AzrTimerStack 1
-execute if entity @a[tag=azrPlayer] if score timer_static_5s AzrTimerStack matches -2147483648..2147483647 run scoreboard players add timer_static_5s AzrTimerStack 1
+execute if score $playerExists Azr_system matches 1 if score tick_count_main AzrTimerStack matches -2147483648..2147483647 run scoreboard players add tick_count_main AzrTimerStack 1
+execute if score $playerExists Azr_system matches 1 if score timer_static_5s AzrTimerStack matches -2147483648..2147483647 run scoreboard players add timer_static_5s AzrTimerStack 1
 # 在部分关卡的的四倍速走秒
-execute if score isStarted Azr_system matches 1 if score stage Azr_system matches 34..45 if score tick_count_main AzrTimerStack matches 5.. run function skyblock:azr/core
-execute if score isStarted Azr_system matches 1 if score stage Azr_system matches 51..61 if score tick_count_main AzrTimerStack matches 5.. run function skyblock:azr/core
-execute if score isStarted Azr_system matches 1 if score tick_count_main AzrTimerStack matches 20.. run function skyblock:azr/core
-execute if score isStarted Azr_system matches 1 if score timer_static_5s AzrTimerStack matches 100.. run function skyblock:azr/timer_static_5s
+execute if score $playerExists Azr_system matches 1 if score isStarted Azr_system matches 1 if score stage Azr_system matches 34..45 if score tick_count_main AzrTimerStack matches 5.. run function skyblock:azr/core
+execute if score $playerExists Azr_system matches 1 if score isStarted Azr_system matches 1 if score stage Azr_system matches 51..61 if score tick_count_main AzrTimerStack matches 5.. run function skyblock:azr/core
+execute if score $playerExists Azr_system matches 1 if score isStarted Azr_system matches 1 if score tick_count_main AzrTimerStack matches 20.. run function skyblock:azr/core
+execute if score $playerExists Azr_system matches 1 if score isStarted Azr_system matches 1 if score timer_static_5s AzrTimerStack matches 100.. run function skyblock:azr/timer_static_5s
 
 # 部分关卡检测玩家位置在这里处理
     # 第四关-boss1 event1
@@ -140,16 +142,16 @@ execute if score isStarted Azr_system matches 1 if score timer_static_5s AzrTime
 
 # 使用了tick计时的关卡在这里处理
     # 读秒，要停下只需reset记分板
-    execute if score tick_main_thread AzrTimerStack matches -2147483648..2147483647 run scoreboard players add tick_main_thread AzrTimerStack 1
+    execute if score $playerExists Azr_system matches 1 if score tick_main_thread AzrTimerStack matches -2147483648..2147483647 run scoreboard players add tick_main_thread AzrTimerStack 1
     
     # stage1 event code:2
-    execute if score isStarted Azr_system matches 1 if score stage Azr_system matches 2 run function skyblock:azr/stage/stage1_event
+    execute if score $playerExists Azr_system matches 1 if score isStarted Azr_system matches 1 if score stage Azr_system matches 2 run function skyblock:azr/stage/stage1_event
     # BOSS1 code:10
-    execute if score isStarted Azr_system matches 1 if score stage Azr_system matches 10 run function skyblock:azr/stage/stage_boss1
+    execute if score $playerExists Azr_system matches 1 if score isStarted Azr_system matches 1 if score stage Azr_system matches 10 run function skyblock:azr/stage/stage_boss1
     # BOSS2 code:[23,24]
-    execute if score isStarted Azr_system matches 1 if score stage Azr_system matches 23..24 run function skyblock:azr/stage/stage_boss2
+    execute if score $playerExists Azr_system matches 1 if score isStarted Azr_system matches 1 if score stage Azr_system matches 23..24 run function skyblock:azr/stage/stage_boss2
     # BOSS4 Code:62
-    execute if score stage Azr_system matches 62 run function skyblock:azr/stage/stage_boss4
+    execute if score $playerExists Azr_system matches 1 if score stage Azr_system matches 62 run function skyblock:azr/stage/stage_boss4
 
 #重置判定 - 游戏已开始但没有玩家
 execute if score isStarted Azr_system matches 1 if entity @a[x=-79931,y=100,z=0,distance=..10000,gamemode=!spectator] unless entity @a[tag=azrPlayer] run function skyblock:azr/endgame
