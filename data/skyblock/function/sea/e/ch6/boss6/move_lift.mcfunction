@@ -2,7 +2,7 @@ scoreboard players add @s rng4 1
 execute if score @s rng4 matches 2 store result score @s rng5 run random value 1..8
 execute if score @s rng4 matches 2 store result score @s rng6 run random value 1..5
 
-execute if score @s rng4 matches 2 run effect give @s levitation 3 19 true
+execute if score @s rng4 matches 1..2 run effect give @s levitation 3 19 true
 execute if score @s rng4 matches 45..48 if entity @s[x=88000,dx=4000,y=-50,dy=72,z=-3000,dz=4000] run scoreboard players set @s rng4 280
 execute if score @s rng4 matches 281 run tp @s 90055 22 -1815
 execute if score @s rng4 matches 281 run particle enchant 90055 22 -1815 2 2 2 0.5 120
