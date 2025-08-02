@@ -1,7 +1,8 @@
-execute if score @s rng4 matches 2.. run particle minecraft:small_gust ~ ~ ~ 1 0.5 1 0 10
-execute if score @s rng4 matches 22.. run particle minecraft:small_gust ~ ~ ~ 2 0.5 2 0 20
-execute if score @s rng4 matches 42.. run particle minecraft:small_gust ~ ~ ~ 3 0.5 3 0 30
-execute if score @s rng4 matches 62.. run particle minecraft:small_gust ~ ~ ~ 4 0.5 4 0 100
+execute if score @s rng4 matches 1..2 if block ~ ~-0.3 ~ air run scoreboard players set @s rng4 1
+execute if score @s rng4 matches 3.. run particle minecraft:small_gust ~ ~ ~ 1 0.5 1 0 10
+execute if score @s rng4 matches 23.. run particle minecraft:small_gust ~ ~ ~ 2 0.5 2 0 20
+execute if score @s rng4 matches 43.. run particle minecraft:small_gust ~ ~ ~ 3 0.5 3 0 30
+execute if score @s rng4 matches 63.. run particle minecraft:small_gust ~ ~ ~ 4 0.5 4 0 100
 
 execute if score @s rng4 matches 2..3 run playsound minecraft:ambient.soul_sand_valley.mood ambient @a ~ ~ ~ 2 1.5
 execute if score @s rng4 matches 2..3 run playsound minecraft:ambient.soul_sand_valley.mood ambient @a ~ ~ ~ 2 1.2
