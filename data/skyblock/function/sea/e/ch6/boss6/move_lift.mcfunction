@@ -35,3 +35,4 @@ execute if score @s[scores={rng6=5}] rng4 matches 80 positioned 90050 21 -1823 r
 
 execute if score @s rng4 matches 20.. run tag @s remove seaboss6_move_lift
 execute if score @s rng4 matches 300..310 run scoreboard players set @s rng4 0
+execute if score @s rng4 matches 90..110 run scoreboard players set @s rng4 0
