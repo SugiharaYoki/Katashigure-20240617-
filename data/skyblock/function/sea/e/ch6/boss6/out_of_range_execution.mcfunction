@@ -13,5 +13,6 @@ execute if score @s rng4 matches 89 at @s as @a[tag=SEAPT] at @s unless block ~ 
 execute if score @s rng4 matches 89 at @s as @a[tag=SEAPT] at @s unless block ~ ~-0.8 ~ air unless block ~ ~-0.8 ~ minecraft:polished_tuff unless block ~ ~-0.8 ~ minecraft:tuff_bricks unless block ~ ~-0.8 ~ minecraft:polished_tuff_slab unless block ~ ~-0.8 ~ minecraft:tuff_brick_slab unless block ~ ~-0.8 ~ minecraft:redstone_lamp run playsound item.trident.thunder block @a ~ ~ ~ 2 0.7
 execute if score @s rng4 matches 89 at @s as @a[tag=SEAPT] at @s unless block ~ ~-0.8 ~ air unless block ~ ~-0.8 ~ minecraft:polished_tuff unless block ~ ~-0.8 ~ minecraft:tuff_bricks unless block ~ ~-0.8 ~ minecraft:polished_tuff_slab unless block ~ ~-0.8 ~ minecraft:tuff_brick_slab unless block ~ ~-0.8 ~ minecraft:redstone_lamp run kill @s
 
-execute if score @s rng4 matches 1..10 run scoreboard players set @s rng3 0
+execute if score @s rng4 matches 90..100 run scoreboard players set @s rng3 0
+execute if score @s rng3 matches ..30 run scoreboard players set @s rng4 92
 execute if score @s rng4 matches 90..100 run scoreboard players set @s rng4 0

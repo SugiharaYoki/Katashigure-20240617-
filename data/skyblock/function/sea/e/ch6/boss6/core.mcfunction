@@ -15,6 +15,7 @@ execute if score @s rng1 matches 100 run tag @s add seaboss6_move_jump
 
 #初始化技能tag
 execute if score @s rng4 matches ..0 run tag @s remove seaboss6_move_lift
+execute if score @s rng4 matches ..0 run tag @s remove seaboss6_move_center
 execute if score @s rng4 matches ..0 run tag @s remove seaboss6_move_jump
 execute if score @s rng4 matches ..0 run tag @s remove seaboss6_oorexec
 
@@ -26,13 +27,17 @@ execute if score @s rng1 matches 100.. if entity @s[x=88000,dx=4000,y=20,dy=3,z=
 execute if score @s rng1 matches 100.. if entity @s[x=88000,dx=4000,y=-50,dy=65,z=-3000,dz=4000,scores={rng4=..0}] run tag @s add seaboss6_move_lift
 execute as @s[tag=seaboss6_move_lift] run scoreboard players set @s[scores={rng4=..0}] rng4 1
 execute as @s[tag=seaboss6_move_lift] run function skyblock:sea/e/ch6/boss6/move_lift
+#回归中心
+execute if score @s rng1 matches 100.. if entity @s[x=88000,dx=4000,y=20,dy=65,z=-3000,dz=4000,scores={rng4=..0}] positioned 90055 22 -1815 if entity @s[distance=18..] run tag @s add seaboss6_move_center
+execute as @s[tag=seaboss6_move_center] run scoreboard players set @s[scores={rng4=..0}] rng4 1
+execute as @s[tag=seaboss6_move_center] run function skyblock:sea/e/ch6/boss6/move_center
 #大跳
 execute if score @s[scores={rng2=1}] rng1 matches 100.. if entity @s[x=88000,dx=4000,y=20,dy=3,z=-3000,dz=4000,scores={rng4=..0}] run tag @s add seaboss6_move_jump
 execute as @s[tag=seaboss6_move_jump] run scoreboard players set @s[scores={rng4=..0}] rng4 1
 execute as @s[tag=seaboss6_move_jump] run function skyblock:sea/e/ch6/boss6/move_jump
 #处刑
-execute if score @s rng1 matches 100.. if entity @s[x=88000,dx=4000,y=20,dy=3,z=-3000,dz=4000,scores={rng4=..0}] as @a[tag=SEAPT] at @s unless block ~ ~-0.8 ~ air unless block ~ ~-0.8 ~ minecraft:polished_tuff unless block ~ ~-0.8 ~ minecraft:tuff_bricks unless block ~ ~-0.8 ~ minecraft:polished_tuff_slab unless block ~ ~-0.8 ~ minecraft:tuff_brick_slab unless block ~ ~-0.8 ~ minecraft:redstone_lamp run scoreboard players add @n[tag=SEAboss6] rng3 4
-execute if score @s rng1 matches 100.. if entity @s[x=88000,dx=4000,y=20,dy=3,z=-3000,dz=4000,scores={rng4=..0,rng3=1..}] run scoreboard players remove @s rng3 1
+execute if score @s rng1 matches 100.. if entity @s[x=88000,dx=4000,y=20,dy=3,z=-3000,dz=4000,scores={rng4=..0}] as @a[tag=SEAPT] at @s unless block ~ ~-0.8 ~ air unless block ~ ~-0.8 ~ minecraft:polished_tuff unless block ~ ~-0.8 ~ minecraft:tuff_bricks unless block ~ ~-0.8 ~ minecraft:polished_tuff_slab unless block ~ ~-0.8 ~ minecraft:tuff_brick_slab unless block ~ ~-0.8 ~ minecraft:redstone_lamp run scoreboard players add @n[tag=SEAboss6,scores={rng3=..42}] rng3 4
+execute if score @s rng1 matches 100.. if entity @s[x=88000,dx=4000,y=20,dy=3,z=-3000,dz=4000,scores={rng3=1..}] run scoreboard players remove @s rng3 1
 execute if score @s rng3 matches 40.. run tag @s add seaboss6_oorexec
 execute as @s[tag=seaboss6_oorexec] run scoreboard players set @s[scores={rng4=..0}] rng4 1
 execute as @s[tag=seaboss6_oorexec] run function skyblock:sea/e/ch6/boss6/out_of_range_execution
