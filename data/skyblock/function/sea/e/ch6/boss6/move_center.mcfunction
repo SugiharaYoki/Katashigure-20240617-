@@ -7,4 +7,4 @@ execute if score @s rng4 matches 2 at @s run playsound minecraft:entity.enderman
 
 
 execute if score @s rng4 matches 2.. run scoreboard players set @s rng10 0
-execute if score @s rng4 matches 2.. run scoreboard players set @s rng4 0
+execute if score @s rng4 matches 2.. run scoreboard players set @s rng4 -1
