@@ -25,11 +25,11 @@ execute if score @s[scores={rng6=3}] rng4 matches 80 positioned 90050 21 -1819 r
 execute if score @s[scores={rng6=4}] rng4 matches 80 positioned 90050 21 -1807 run playsound entity.generic.explode hostile @a ~ ~ ~ 0.89 1.2
 execute if score @s[scores={rng6=5}] rng4 matches 80 positioned 90050 21 -1823 run playsound entity.generic.explode hostile @a ~ ~ ~ 0.89 1.2
 
-execute if score @s[scores={rng6=1}] rng4 matches 80 positioned 90050 21 -1815 run particle large_smoke ~ ~ ~ 0.3 0.1 0.3 0.32 10
-execute if score @s[scores={rng6=2}] rng4 matches 80 positioned 90050 21 -1811 run particle large_smoke ~ ~ ~ 0.3 0.1 0.3 0.32 10
-execute if score @s[scores={rng6=3}] rng4 matches 80 positioned 90050 21 -1819 run particle large_smoke ~ ~ ~ 0.3 0.1 0.3 0.32 10
-execute if score @s[scores={rng6=4}] rng4 matches 80 positioned 90050 21 -1807 run particle large_smoke ~ ~ ~ 0.3 0.1 0.3 0.32 10
-execute if score @s[scores={rng6=5}] rng4 matches 80 positioned 90050 21 -1823 run particle large_smoke ~ ~ ~ 0.3 0.1 0.3 0.32 10
+execute if score @s[scores={rng6=1}] rng4 matches 80 positioned 90050 21 -1815 run particle large_smoke ~ ~0.3 ~ 0.3 0.1 0.3 0.32 10
+execute if score @s[scores={rng6=2}] rng4 matches 80 positioned 90050 21 -1811 run particle large_smoke ~ ~0.3 ~ 0.3 0.1 0.3 0.32 10
+execute if score @s[scores={rng6=3}] rng4 matches 80 positioned 90050 21 -1819 run particle large_smoke ~ ~0.3 ~ 0.3 0.1 0.3 0.32 10
+execute if score @s[scores={rng6=4}] rng4 matches 80 positioned 90050 21 -1807 run particle large_smoke ~ ~0.3 ~ 0.3 0.1 0.3 0.32 10
+execute if score @s[scores={rng6=5}] rng4 matches 80 positioned 90050 21 -1823 run particle large_smoke ~ ~0.3 ~ 0.3 0.1 0.3 0.32 10
 execute if score @s[scores={rng6=1}] rng4 matches 80 positioned 90050 21 -1815 run particle explosion_emitter ~ ~ ~ 0 0 0 0.32 10
 execute if score @s[scores={rng6=2}] rng4 matches 80 positioned 90050 21 -1811 run particle explosion_emitter ~ ~ ~ 0 0 0 0.32 10
 execute if score @s[scores={rng6=3}] rng4 matches 80 positioned 90050 21 -1819 run particle explosion_emitter ~ ~ ~ 0 0 0 0.32 10
