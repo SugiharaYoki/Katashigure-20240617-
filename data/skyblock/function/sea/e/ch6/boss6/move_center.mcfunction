@@ -1,6 +1,4 @@
 
-execute if score @s rng4 matches 2 store result score @s rng5 run random value 1..8
-execute if score @s rng4 matches 2 store result score @s rng6 run random value 1..5
 
 execute if score @s rng4 matches 1..48 run scoreboard players set @s rng4 280
 execute if score @s rng4 matches 281 run tp @s 90055 22 -1815
