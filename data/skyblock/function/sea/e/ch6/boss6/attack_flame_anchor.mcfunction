@@ -58,15 +58,15 @@ execute if score @s rng1 matches 62 run playsound minecraft:block.lava.pop block
 execute if score @s rng1 matches 62 run playsound minecraft:entity.firework_rocket.blast block @a ~ ~ ~ 1 0.5
 execute if score @s rng1 matches 62 run particle minecraft:lava ~ ~ ~ 0.6 0 0.6 5 80
 execute if score @s rng1 matches 62.. as @a[tag=SEAPT,distance=..1.0] at @s run damage @s 12 in_fire
-execute if score @s rng1 matches 62.. if block ~ ~ ~ air unless block ~ ~-1 ~ redstone_lamp run setblock ~ ~ ~ fire
-execute if score @s rng1 matches 62.. if block ~ ~ ~0.3 air unless block ~ ~-1 ~ redstone_lamp run setblock ~ ~ ~0.3 fire
-execute if score @s rng1 matches 62.. if block ~ ~ ~-0.3 air unless block ~ ~-1 ~ redstone_lamp run setblock ~ ~ ~-0.3 fire
-execute if score @s rng1 matches 62.. if block ~0.3 ~ ~ air unless block ~ ~-1 ~ redstone_lamp run setblock ~0.3 ~ ~ fire
-execute if score @s rng1 matches 62.. if block ~-0.3 ~ ~ air unless block ~ ~-1 ~ redstone_lamp run setblock ~-0.3 ~ ~ fire
-execute if score @s rng1 matches 65.. if block ~ ~ ~ fire run setblock ~ ~ ~ air
-execute if score @s rng1 matches 65.. if block ~ ~ ~0.3 fire run setblock ~ ~ ~0.3 air
-execute if score @s rng1 matches 65.. if block ~ ~ ~-0.3 fire run setblock ~ ~ ~-0.3 air
-execute if score @s rng1 matches 65.. if block ~0.3 ~ ~ fire run setblock ~0.3 ~ ~ air
-execute if score @s rng1 matches 65.. if block ~-0.3 ~ ~ fire run setblock ~-0.3 ~ ~ air
+execute if score @s rng1 matches 62.. if block ~ ~ ~ air run setblock ~ ~ ~ fire
+execute if score @s rng1 matches 62.. if block ~ ~ ~0.3 air run setblock ~ ~ ~0.3 fire
+execute if score @s rng1 matches 62.. if block ~ ~ ~-0.3 air run setblock ~ ~ ~-0.3 fire
+execute if score @s rng1 matches 62.. if block ~0.3 ~ ~ air run setblock ~0.3 ~ ~ fire
+execute if score @s rng1 matches 62.. if block ~-0.3 ~ ~ air run setblock ~-0.3 ~ ~ fire
+#execute if score @s rng1 matches 65.. if block ~ ~ ~ fire run setblock ~ ~ ~ air
+#execute if score @s rng1 matches 65.. if block ~ ~ ~0.3 fire run setblock ~ ~ ~0.3 air
+#execute if score @s rng1 matches 65.. if block ~ ~ ~-0.3 fire run setblock ~ ~ ~-0.3 air
+#execute if score @s rng1 matches 65.. if block ~0.3 ~ ~ fire run setblock ~0.3 ~ ~ air
+#execute if score @s rng1 matches 65.. if block ~-0.3 ~ ~ fire run setblock ~-0.3 ~ ~ air
 execute if score @s rng1 matches 65.. run kill @s
 

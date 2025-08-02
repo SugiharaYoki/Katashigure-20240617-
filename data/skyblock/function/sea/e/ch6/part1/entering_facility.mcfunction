@@ -34,7 +34,7 @@ execute unless entity @n[tag=SEAedwina] positioned 90147.99 171.00 -1878.01 run 
 execute as @a[tag=SEAPT] at @s run attribute @s minecraft:jump_strength modifier remove sea:marilyn_01
 
 
-
+fill 90036 19 -1824 90067 21 -1797 air replace fire
 
 forceload remove 90042 -1829 90068 -1798
 forceload remove 90011 -1953 90109 -1888
