@@ -243,11 +243,11 @@ execute if score stage_main_thread AzrTimerStack matches 93 if score stage Azr_s
 execute if score stage_main_thread AzrTimerStack matches 93 if score stage Azr_system matches 13 if score playerCount Azr_system matches ..2 positioned -79940 38 122 run function skyblock:azr/m/pillager_t1_enchant
 execute if score stage_main_thread AzrTimerStack matches 93 if score stage Azr_system matches 13 if score playerCount Azr_system matches 3.. positioned -79940 38 122 run function skyblock:azr/m/pillager_t2_charger
 
-execute if score stage_main_thread AzrTimerStack matches 94 if score stage Azr_system matches 13 if score playerCount Azr_system matches 1.. positioned -79922 38 122 run function skyblock:azr/m/zombie_militia_t1
+execute if score stage_main_thread AzrTimerStack matches 94 if score stage Azr_system matches 13 positioned -79922 38 122 run function skyblock:azr/m/zombie_militia_t1
 execute if score stage_main_thread AzrTimerStack matches 94 if score stage Azr_system matches 13 if score playerCount Azr_system matches 3.. positioned -79940 38 122 run function skyblock:azr/m/zombie_militia_t1
 execute if score stage_main_thread AzrTimerStack matches 95..97 if score stage Azr_system matches 13 unless entity @n[tag=AzrielMob] run scoreboard players set stage_main_thread AzrTimerStack 98
 execute if score stage_main_thread AzrTimerStack matches 98 if score stage Azr_system matches 13 if score playerCount Azr_system matches 3.. positioned -79922 38 122 run function skyblock:azr/m/zombie_militia_t1
-execute if score stage_main_thread AzrTimerStack matches 98 if score stage Azr_system matches 13 if score playerCount Azr_system matches 1.. positioned -79940 38 122 run function skyblock:azr/m/zombie_militia_t1
+execute if score stage_main_thread AzrTimerStack matches 98 if score stage Azr_system matches 13 positioned -79940 38 122 run function skyblock:azr/m/zombie_militia_t1
 
 execute if score stage_main_thread AzrTimerStack matches 91 if score stage Azr_system matches 13 if score playerCount Azr_system matches 4.. positioned -79922 38 122 run function skyblock:azr/m/silverfish_t1_corridor
 execute if score stage_main_thread AzrTimerStack matches 93 if score stage Azr_system matches 13 if score playerCount Azr_system matches 4.. positioned -79922 38 122 run function skyblock:azr/m/silverfish_t1_corridor
@@ -285,27 +285,27 @@ execute if score stage_main_thread AzrTimerStack matches 121 if score stage Azr_
 
 execute if score stage_main_thread AzrTimerStack matches 127 if score playerCount Azr_system matches 5.. positioned -79922 38 122 run function skyblock:azr/m/pillager_t2_charger
 execute if score stage_main_thread AzrTimerStack matches 127 if score playerCount Azr_system matches 5.. positioned -79940 38 122 run function skyblock:azr/m/pillager_t2_charger
-execute if score stage_main_thread AzrTimerStack matches 128 if score playerCount Azr_system matches 1.. positioned -79922 38 122 run function skyblock:azr/m/pillager_t2_charger
-execute if score stage_main_thread AzrTimerStack matches 128 if score playerCount Azr_system matches 1.. positioned -79940 38 122 run function skyblock:azr/m/pillager_t2_charger
-execute if score stage_main_thread AzrTimerStack matches 128 if score playerCount Azr_system matches 1.. positioned -79922 38 122 run function skyblock:azr/m/pillager_t2_charger
-execute if score stage_main_thread AzrTimerStack matches 128 if score playerCount Azr_system matches 1.. positioned -79940 38 122 run function skyblock:azr/m/pillager_t2_charger
+execute if score stage_main_thread AzrTimerStack matches 128 positioned -79922 38 122 run function skyblock:azr/m/pillager_t2_charger
+execute if score stage_main_thread AzrTimerStack matches 128 positioned -79940 38 122 run function skyblock:azr/m/pillager_t2_charger
+execute if score stage_main_thread AzrTimerStack matches 128 positioned -79922 38 122 run function skyblock:azr/m/pillager_t2_charger
+execute if score stage_main_thread AzrTimerStack matches 128 positioned -79940 38 122 run function skyblock:azr/m/pillager_t2_charger
 
 
 execute if score stage_main_thread AzrTimerStack matches 130 if score playerCount Azr_system matches 5.. positioned -79940 38 122 run function skyblock:azr/m/zombie_t2_shield_iron
 execute if score stage_main_thread AzrTimerStack matches 130 if score playerCount Azr_system matches 5.. positioned -79922 38 122 run function skyblock:azr/m/zombie_t2_shield_iron
 execute if score stage_main_thread AzrTimerStack matches 131 if score playerCount Azr_system matches 2.. positioned -79922 38 122 run function skyblock:azr/m/zombie_t2_small
 execute if score stage_main_thread AzrTimerStack matches 131 if score playerCount Azr_system matches 2.. positioned -79940 38 122 run function skyblock:azr/m/zombie_t2_small
-execute if score stage_main_thread AzrTimerStack matches 133 if score playerCount Azr_system matches 1.. positioned -79922 38 122 run function skyblock:azr/m/zombie_t2_small
-execute if score stage_main_thread AzrTimerStack matches 133 if score playerCount Azr_system matches 1.. positioned -79940 38 122 run function skyblock:azr/m/zombie_t2_small
+execute if score stage_main_thread AzrTimerStack matches 133 positioned -79922 38 122 run function skyblock:azr/m/zombie_t2_small
+execute if score stage_main_thread AzrTimerStack matches 133 positioned -79940 38 122 run function skyblock:azr/m/zombie_t2_small
 execute if score stage_main_thread AzrTimerStack matches 135 if score playerCount Azr_system matches 2.. positioned -79922 38 122 run function skyblock:azr/m/zombie_t2_small
 execute if score stage_main_thread AzrTimerStack matches 135 if score playerCount Azr_system matches 2.. positioned -79940 38 122 run function skyblock:azr/m/zombie_t2_small
-execute if score stage_main_thread AzrTimerStack matches 136 if score playerCount Azr_system matches 1.. positioned -79922 38 122 run function skyblock:azr/m/zombie_t2_small
-execute if score stage_main_thread AzrTimerStack matches 136 if score playerCount Azr_system matches 1.. positioned -79940 38 122 run function skyblock:azr/m/zombie_t2_small
+execute if score stage_main_thread AzrTimerStack matches 136 positioned -79922 38 122 run function skyblock:azr/m/zombie_t2_small
+execute if score stage_main_thread AzrTimerStack matches 136 positioned -79940 38 122 run function skyblock:azr/m/zombie_t2_small
 execute if score stage_main_thread AzrTimerStack matches 137 if score playerCount Azr_system matches 3.. positioned -79922 38 122 run function skyblock:azr/m/zombie_t2_small
 execute if score stage_main_thread AzrTimerStack matches 137 if score playerCount Azr_system matches 3.. positioned -79940 38 122 run function skyblock:azr/m/zombie_t2_small
 execute if score stage_main_thread AzrTimerStack matches 138..139 unless entity @n[tag=AzrielMob] run scoreboard players set stage_main_thread AzrTimerStack 140
-execute if score stage_main_thread AzrTimerStack matches 140 if score playerCount Azr_system matches 1.. positioned -79940 38 122 run function skyblock:azr/m/zombie_militia_t1
-execute if score stage_main_thread AzrTimerStack matches 140 if score playerCount Azr_system matches 1.. positioned -79922 38 122 run function skyblock:azr/m/zombie_militia_t1
+execute if score stage_main_thread AzrTimerStack matches 140 positioned -79940 38 122 run function skyblock:azr/m/zombie_militia_t1
+execute if score stage_main_thread AzrTimerStack matches 140 positioned -79922 38 122 run function skyblock:azr/m/zombie_militia_t1
 execute if score stage_main_thread AzrTimerStack matches 141 if score playerCount Azr_system matches 2.. positioned -79940 38 122 run function skyblock:azr/m/zombie_militia_t1
 execute if score stage_main_thread AzrTimerStack matches 141 if score playerCount Azr_system matches 2.. positioned -79922 38 122 run function skyblock:azr/m/zombie_militia_t1
 

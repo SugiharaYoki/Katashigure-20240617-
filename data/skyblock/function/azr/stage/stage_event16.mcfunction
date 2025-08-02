@@ -2,7 +2,7 @@ execute if score stage_main_thread AzrTimerStack matches 3..6 run playsound ambi
 execute if score stage_main_thread AzrTimerStack matches 1..3 run setblock -79540 25 -406 air
 
 execute if score stage_main_thread AzrTimerStack matches 15 run tellraw @a[tag=azrPlayer] {"text":"熟悉的声音：","color":"aqua"}
-execute if score stage_main_thread AzrTimerStack matches 15 if score playerCount Azr_system matches 1.. run tellraw @a[tag=azrPlayer] {"text":"“收到信号了，是这个坐标对吗？咱现在就赶过去帮忙。”","color":"white"}
+execute if score stage_main_thread AzrTimerStack matches 15 run tellraw @a[tag=azrPlayer] {"text":"“收到信号了，是这个坐标对吗？咱现在就赶过去帮忙。”","color":"white"}
 execute if score stage_main_thread AzrTimerStack matches 15 as @a[tag=azrPlayer] at @s run playsound minecraft:entity.pillager.ambient master @a[tag=azrPlayer] ~ ~ ~ 0.5 0.8
 
 execute if score stage_main_thread AzrTimerStack matches 35 run tellraw @a[tag=azrPlayer] {"text":"熟悉的声音：","color":"aqua"}
@@ -29,7 +29,7 @@ execute if score stage_main_thread AzrTimerStack matches 60 as @e[tag=AzrielBoss
 execute if score stage_main_thread AzrTimerStack matches 66..98 as @e[tag=AzrielBossFA] at @s run tp @s -79543 24 -408 facing entity @a[tag=azrPlayer,limit=1,sort=nearest]
 
 execute if score stage_main_thread AzrTimerStack matches 78 run tellraw @a[tag=azrPlayer] {"text":"默尔森：","color":"aqua"}
-execute if score stage_main_thread AzrTimerStack matches 78 if score playerCount Azr_system matches 1.. run tellraw @a[tag=azrPlayer] {"text":"“方才咱那儿也开始蔓延这些颜色诡异的菌丝了，但咱还没调查清楚这些事物的真面目。唯独知晓猪灵在踩上这些鬼东西后便会彻底失去理智。”","color":"white"}
+execute if score stage_main_thread AzrTimerStack matches 78 run tellraw @a[tag=azrPlayer] {"text":"“方才咱那儿也开始蔓延这些颜色诡异的菌丝了，但咱还没调查清楚这些事物的真面目。唯独知晓猪灵在踩上这些鬼东西后便会彻底失去理智。”","color":"white"}
 execute if score stage_main_thread AzrTimerStack matches 78 as @e[tag=AzrielBossFA] at @s run playsound minecraft:entity.pillager.ambient master @a[tag=azrPlayer] ~ ~ ~ 0.5 0.8
 
 execute if score stage_main_thread AzrTimerStack matches 95 run tellraw @a[tag=azrPlayer] {"text":"默尔森：","color":"aqua"}

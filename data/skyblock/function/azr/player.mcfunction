@@ -1,5 +1,6 @@
 # execute as @s[tag=MG_AZR0PT] at @s run tag @e[distance=..5,tag=AzrielMob] add MG_AZR0PT
 # execute store result score @s AzrSlotRecord_temp run data get entity @s SelectedItemSlot
+scoreboard players set $playerExists Azr_system 1
 
 #update spawnpoint
 execute as @s[tag=azrUpdateSpawnPoint,nbt={OnGround:1b}] at @s if block ~ ~ ~ air if block ~ ~1 ~ air run spawnpoint @s ~ ~ ~
