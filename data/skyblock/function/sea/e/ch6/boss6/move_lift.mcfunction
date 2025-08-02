@@ -60,7 +60,7 @@ execute if score @s rng4 matches 281 positioned 90050 21 -1823 run effect clear 
 execute if score @s rng4 matches 61 store result score @s rng5 run random value 1..8
 execute if score @s[scores={rng5=1}] rng4 matches 62 at @s as @a[scores={SEAPT_member=1}] at @s run tellraw @a[distance=0..150] [{"text":"权之执理：","color":"red","bold": true},{"text":"\n“神之怒火，从天降下。”","color":"white","bold": false}]
 execute if score @s[scores={rng5=2}] rng4 matches 62 at @s as @a[scores={SEAPT_member=1}] at @s run tellraw @a[distance=0..150] [{"text":"权之执理：","color":"red","bold": true},{"text":"\n“汝应当看准点。”","color":"white","bold": false}]
-execute if score @s[scores={rng5=3}] rng4 matches 62 at @s as @a[scores={SEAPT_member=1}] at @s run tellraw @a[distance=0..150] [{"text":"权之执理：","color":"red","bold": true},{"text":"\n“碾碎卑微的人类。”","color":"white","bold": false}]
+execute if score @s[scores={rng5=3}] rng4 matches 62 at @s as @a[scores={SEAPT_member=1}] at @s run tellraw @a[distance=0..150] [{"text":"权之执理：","color":"red","bold": true},{"text":"\n“卑微的人类，汝将被吾碾碎。”","color":"white","bold": false}]
 execute if score @s[scores={rng5=4}] rng4 matches 67 at @s as @a[scores={SEAPT_member=1}] at @s run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“小心，它要从上面撞下来！”","color":"white","bold": false}]
 
 
