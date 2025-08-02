@@ -294,6 +294,7 @@ execute if score SEA_ch6_event rng5 matches 20058 run effect give @n[tag=SEAboss
 #execute if score SEA_ch6_event rng5 matches 20053 positioned 90064 22 -1815 run function skyblock:azr/effects/zanei_appear
 execute if score SEA_ch6_event rng5 matches 20058.. as @n[tag=SEAboss6] at @s if block ~ ~-0.5 ~ air at @s run function skyblock:sea/e/ch6/boss6/particle_insky_angel
 
+execute if score SEA_ch6_event rng5 matches 20058..20120 as @n[tag=SEAboss6] at @s run rotate @s facing entity @p[tag=SEAPT]
 execute if score SEA_ch6_event rng5 matches 20058 run particle small_gust ^0.4 ^2.2 ^-0.5 0.1 0.1 0.1 0 2
 execute if score SEA_ch6_event rng5 matches 20058 run particle small_gust ^-0.4 ^2.2 ^-0.5 0.1 0.1 0.1 0 2
 execute if score SEA_ch6_event rng5 matches 20068 run particle small_gust ^0.6 ^2.3 ^-0.7 0.1 0.1 0.1 0 2
