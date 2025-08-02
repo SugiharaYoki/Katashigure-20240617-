@@ -29,7 +29,7 @@ execute if score @s[scores={rng5=8}] rng4 matches 50 positioned ~-1.5 ~ ~-2 unle
 
 
 
-execute if score @s rng4 matches 120.. run scoreboard players set @s rng4 0
+execute if score @s rng4 matches 120.. run scoreboard players set @s rng4 -2
 
 
 

@@ -15,4 +15,4 @@ execute if score @s rng4 matches 89 at @s as @a[tag=SEAPT] at @s unless block ~ 
 
 execute if score @s rng4 matches 90..100 run scoreboard players set @s rng3 0
 execute if score @s rng3 matches ..30 run scoreboard players set @s rng4 92
-execute if score @s rng4 matches 90..100 run scoreboard players set @s rng4 0
+execute if score @s rng4 matches 90..100 run scoreboard players set @s rng4 -2

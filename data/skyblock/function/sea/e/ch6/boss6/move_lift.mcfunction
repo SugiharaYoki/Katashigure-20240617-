@@ -66,4 +66,4 @@ execute if score @s[scores={rng5=4}] rng4 matches 67 at @s as @a[scores={SEAPT_m
 execute if score @s rng4 matches 1..5 run scoreboard players set @s rng2 -1
 
 execute if score @s rng4 matches 90..110 run scoreboard players set @s rng4 310
-execute if score @s rng4 matches 300..320 run scoreboard players set @s rng4 0
+execute if score @s rng4 matches 300..320 run scoreboard players set @s rng4 -2

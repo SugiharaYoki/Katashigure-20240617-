@@ -32,7 +32,7 @@ execute if score @s rng4 matches 82 as @a[tag=SEAPT,distance=0..4] run damage @s
 execute if score @s rng4 matches 82 run fill ~3 ~-2 ~3 ~-3 ~2 ~-3 air replace fire
 
 
-execute if score @s rng4 matches 92.. run scoreboard players set @s rng4 0
+execute if score @s rng4 matches 92.. run scoreboard players set @s rng4 -2
 
 
 
