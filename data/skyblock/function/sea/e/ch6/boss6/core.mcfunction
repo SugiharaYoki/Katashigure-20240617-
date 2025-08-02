@@ -29,7 +29,7 @@ execute if score @s rng1 matches 100.. if entity @s[scores={rng4=..0}] store res
 #【技能列表】
 #坠落升空
 #execute if score @s rng1 matches 100.. if entity @s[x=88000,dx=4000,y=-50,dy=65,z=-3000,dz=4000,tag=!seaboss6_m_lift] run say hell
-execute if score @s rng1 matches 100.. if entity @s[x=88000,dx=4000,y=-50,dy=65,z=-3000,dz=4000,tag=!seaboss6_m_lift] run scoreboard players set @s rng4 1
+#execute if score @s rng1 matches 100.. if entity @s[x=88000,dx=4000,y=-50,dy=65,z=-3000,dz=4000,tag=!seaboss6_m_lift] run scoreboard players set @s rng4 1
 #execute if score @s rng1 matches 100.. if entity @s[x=88000,dx=4000,y=-50,dy=65,z=-3000,dz=4000,scores={rng4=..0}] run say hi
 execute if score @s rng1 matches 100.. if entity @s[x=88000,dx=4000,y=-50,dy=65,z=-3000,dz=4000,scores={rng4=..0}] run tag @s add seaboss6_m_lift
 execute as @s[tag=seaboss6_m_lift] run scoreboard players set @s[scores={rng4=..0}] rng4 1
