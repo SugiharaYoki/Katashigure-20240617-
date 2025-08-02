@@ -23,12 +23,11 @@ execute if score @s rng4 matches ..0 run tag @s remove seaboss6_attack_wburst
 execute if score @s rng4 matches ..0 run tag @s remove seaboss6_oorexec
 
 #技能roll
-execute if score @s rng1 matches 100.. if entity @s[x=88000,dx=4000,y=20,dy=3,z=-3000,dz=4000,scores={rng4=..0}] store result score @s rng2 run random value 1..7
+execute if score @s rng1 matches 100.. if entity @s[scores={rng4=..0}] store result score @s rng2 run random value 1..7
 
 #【技能列表】
 #坠落升空
 #execute if score @s rng1 matches 100.. if entity @s[x=88000,dx=4000,y=-50,dy=65,z=-3000,dz=4000,tag=!seaboss6_m_lift] run say hell
-execute if score @s rng1 matches 100.. if entity @s[x=88000,dx=4000,y=-50,dy=65,z=-3000,dz=4000,tag=!seaboss6_m_lift] run scoreboard players set @s rng2 -1
 execute if score @s rng1 matches 100.. if entity @s[x=88000,dx=4000,y=-50,dy=65,z=-3000,dz=4000,tag=!seaboss6_m_lift] run scoreboard players set @s rng4 1
 #execute if score @s rng1 matches 100.. if entity @s[x=88000,dx=4000,y=-50,dy=65,z=-3000,dz=4000,scores={rng4=..0}] run say hi
 execute if score @s rng1 matches 100.. if entity @s[x=88000,dx=4000,y=-50,dy=65,z=-3000,dz=4000,scores={rng4=..0}] run tag @s add seaboss6_m_lift

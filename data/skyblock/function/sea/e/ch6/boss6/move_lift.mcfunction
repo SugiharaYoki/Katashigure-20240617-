@@ -63,6 +63,7 @@ execute if score @s[scores={rng5=2}] rng4 matches 62 at @s as @a[scores={SEAPT_m
 execute if score @s[scores={rng5=3}] rng4 matches 62 at @s as @a[scores={SEAPT_member=1}] at @s run tellraw @a[distance=0..150] [{"text":"权之执理：","color":"red","bold": true},{"text":"\n“卑微的人类，汝将被吾碾碎。”","color":"white","bold": false}]
 execute if score @s[scores={rng5=4}] rng4 matches 67 at @s as @a[scores={SEAPT_member=1}] at @s run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“小心，它要从上面撞下来！”","color":"white","bold": false}]
 
+execute if score @s rng4 matches 1..5 run scoreboard players set @s rng2 -1
 
 execute if score @s rng4 matches 90..110 run scoreboard players set @s rng4 310
 execute if score @s rng4 matches 300..320 run scoreboard players set @s rng4 0
