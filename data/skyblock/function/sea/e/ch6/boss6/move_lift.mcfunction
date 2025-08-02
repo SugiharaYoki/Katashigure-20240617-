@@ -25,6 +25,7 @@ execute if score @s[scores={rng6=2}] rng4 matches 80 positioned 90050 21 -1811 r
 execute if score @s[scores={rng6=3}] rng4 matches 80 positioned 90050 21 -1819 run playsound entity.generic.explode hostile @a ~ ~ ~ 0.89 1.2
 execute if score @s[scores={rng6=4}] rng4 matches 80 positioned 90050 21 -1807 run playsound entity.generic.explode hostile @a ~ ~ ~ 0.89 1.2
 execute if score @s[scores={rng6=5}] rng4 matches 80 positioned 90050 21 -1823 run playsound entity.generic.explode hostile @a ~ ~ ~ 0.89 1.2
+execute if score @s rng4 matches 80 at @s run fill ~1 ~ ~1 ~-1 ~ ~-1 air replace fire
 
 execute if score @s[scores={rng6=1}] rng4 matches 79 at @s run rotate @s facing 90050 21 -1815
 execute if score @s[scores={rng6=2}] rng4 matches 79 at @s run rotate @s facing 90050 21 -1811
