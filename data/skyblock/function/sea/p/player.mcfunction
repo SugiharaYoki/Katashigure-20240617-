@@ -106,7 +106,9 @@ execute if entity @s[tag=!e_w_ahl2_e,advancements={skyblock:sea/doc/15=true,skyb
 execute if entity @s[tag=!e_w_ahl2_e,advancements={skyblock:sea/doc/15=true,skyblock:sea/doc/16=true,skyblock:sea/doc/17=true,skyblock:sea/doc/18=true,skyblock:sea/doc/19=true}] run tag @s add e_w_ahl2_e
 
 
-execute unless block ~ ~-1 ~ air unless block ~ ~-1 ~ water if block ~ ~ ~ air if block ~ ~1 ~ air run spawnpoint @s ~ ~ ~
+execute unless entity @n[tag=SEAboss6] unless block ~ ~-1 ~ air unless block ~ ~-1 ~ water if block ~ ~ ~ air if block ~ ~1 ~ air run spawnpoint @s ~ ~ ~
+execute if entity @n[tag=SEAboss6] unless block ~ ~-1 ~ air unless block ~ ~-1 ~ water if block ~ ~ ~ air if block ~ ~1 ~ air run spawnpoint @s 90046 21 -1815
+
 execute if entity @s[tag=!seaPerm000] run clone 90121 122 108 90121 122 108 90118 123 106
 execute unless entity @s[tag=!seaPerm000] run clone 90121 122 109 90121 122 109 90118 123 106
 
