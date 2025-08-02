@@ -6,6 +6,7 @@ execute if score tick_main_thread AzrTimerStack matches 1..20 run scoreboard pla
 
 execute if score tick_main_thread AzrTimerStack matches 119 unless score $AzrBoss4MusicAlready Azr_system matches 1 as @a[tag=azrPlayer] at @s run playsound minecraft:music_disc.pigstep master @s ~ ~ ~ 30000 1
 execute if score tick_main_thread AzrTimerStack matches 119 unless score $AzrBoss4MusicAlready Azr_system matches 1 run scoreboard players set $AzrBoss4MusicAlready Azr_system 1
+execute if score tick_main_thread AzrTimerStack matches 120 run tag @a[tag=azrPlayer] remove AZR_fakeDeath
 execute if score tick_main_thread AzrTimerStack matches 120 run tellraw @a[tag=azrPlayer] {"text":"？？？：","color":"red"}
 execute if score tick_main_thread AzrTimerStack matches 120 run tellraw @a[tag=azrPlayer] {"text":"“终于来了吗？”","color":"white"}
 execute if score tick_main_thread AzrTimerStack matches 120 run tellraw @a[tag=AzrDebug] {"text":"120","color":"gray"}
