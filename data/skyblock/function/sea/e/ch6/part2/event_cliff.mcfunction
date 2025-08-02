@@ -218,6 +218,7 @@ execute if score SEA_ch6_event rng5 matches 15130 as @p[tag=SEAPT] at @s run par
 execute if score SEA_ch6_event rng5 matches 15130 as @p[tag=SEAPT] at @s run playsound item.totem.use master @a ~ ~ ~ 2 0.5
 execute if score SEA_ch6_event rng5 matches 15130 as @p[tag=SEAPT] at @s run playsound item.totem.use master @a ~ ~ ~ 2 0.6
 execute if score SEA_ch6_event rng5 matches 15130 as @p[tag=SEAPT] at @s run playsound item.totem.use master @a ~ ~ ~ 2 0.7
+execute if score SEA_ch6_event rng5 matches 15130 as @p[tag=SEAPT] at @s run fill 90045 29 -1785 90046 31 -1784 gravel
 execute if score SEA_ch6_event rng5 matches 15130 as @a[tag=SEAPT] at @s run attribute @s minecraft:max_health modifier add seaboss6:health 20 add_value
 execute if score SEA_ch6_event rng5 matches 15130 as @a[tag=SEAPT] at @s run effect give @s instant_health 1 19 true
 execute if score SEA_ch6_event rng5 matches 15130 as @p[tag=SEAPT] at @s run playsound minecraft:garden2.chapter_title master @a ~ ~ ~ 2 1
