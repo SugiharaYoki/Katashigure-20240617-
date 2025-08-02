@@ -122,8 +122,8 @@ execute if score SEA_ch6_event rng5 matches 12563 positioned 90013 95 -1926 run 
 
 #execute if score SEA_ch6_event rng5 matches 12563.. positioned 90013 95 -1926 run kill @a[tag=SEAPT,x=89980,y=0,z=-1917,dx=160,dy=33,dz=160,gamemode=adventure]
 execute if score SEA_ch6_event rng5 matches 12563.. positioned 90013 95 -1926 run tp @a[tag=SEAPT,x=89980,y=0,z=-1917,dx=40,dy=33,dz=100,gamemode=adventure] 90009 57 -1861
-execute if score SEA_ch6_event rng5 matches 12563.. positioned 90013 95 -1926 run tp @a[tag=SEAPT,x=90020,y=0,z=-1917,dx=100,dy=15,dz=300,gamemode=adventure] 90055 21 -1815
-execute if score SEA_ch6_event rng5 matches 12563.. positioned 90013 95 -1926 run tp @a[tag=SEAPT,x=89980,y=0,z=-1816,dx=40,dy=15,dz=100,gamemode=adventure] 90009 57 -1861
+execute if score SEA_ch6_event rng5 matches 12563.. positioned 90013 95 -1926 run tp @a[tag=SEAPT,x=90020,y=0,z=-1917,dx=100,dy=19,dz=300,gamemode=adventure] 90046 21 -1815
+execute if score SEA_ch6_event rng5 matches 12563.. positioned 90013 95 -1926 run tp @a[tag=SEAPT,x=89980,y=0,z=-1816,dx=40,dy=19,dz=100,gamemode=adventure] 90009 57 -1861
 
 
 execute if score SEA_ch6_event rng5 matches 12563 run fill 89988 90 -1924 89989 89 -1924 gravel
@@ -207,10 +207,10 @@ execute if score SEA_ch6_event rng5 matches 15081 as @a[scores={SEAPT_member=1}]
 execute if score SEA_ch6_event rng5 matches 15103 as @a[scores={SEAPT_member=1}] at @s run tellraw @a[distance=0..150] [{"text":"琼斯：","color":"red","bold": true},{"text":"\n“真是遗憾……我们走的是不同的道路。”","color":"white","bold": false}]
 execute if score SEA_ch6_event rng5 matches 15029 as @p[tag=SEAPT] at @s run effect give @s slowness 500 1 true
 execute if score SEA_ch6_event rng5 matches 15039 as @p[tag=SEAPT] at @s run effect give @s slowness 500 3 true
-execute if score SEA_ch6_event rng5 matches 15059 as @p[tag=SEAPT] at @s run effect give @s slowness 500 5 true
-execute if score SEA_ch6_event rng5 matches 15069 as @p[tag=SEAPT] at @s run effect give @s slowness 500 7 true
-execute if score SEA_ch6_event rng5 matches 15089 as @p[tag=SEAPT] at @s run effect give @s slowness 500 9 true
-execute if score SEA_ch6_event rng5 matches 15099 as @p[tag=SEAPT] at @s run effect give @s slowness 500 11 true
+execute if score SEA_ch6_event rng5 matches 15044 as @p[tag=SEAPT] at @s run effect give @s slowness 500 5 true
+execute if score SEA_ch6_event rng5 matches 15049 as @p[tag=SEAPT] at @s run effect give @s slowness 500 7 true
+execute if score SEA_ch6_event rng5 matches 15054 as @p[tag=SEAPT] at @s run effect give @s slowness 500 9 true
+execute if score SEA_ch6_event rng5 matches 15059 as @p[tag=SEAPT] at @s run effect give @s slowness 500 11 true
 execute if score SEA_ch6_event rng5 matches 15130 as @p[tag=SEAPT] at @s run effect clear @s slowness
 execute if score SEA_ch6_event rng5 matches 15130 as @p[tag=SEAPT] at @s run effect clear @s darkness
 execute if score SEA_ch6_event rng5 matches 15130 as @p[tag=SEAPT] at @s run particle totem_of_undying ~ ~1 ~ 0.4 0.8 0.4 1.7 1000
@@ -238,10 +238,10 @@ execute if score SEA_ch6_event rng5 matches 19900..19999 run scoreboard players 
 execute if score SEA_ch6_event rng5 matches 20001 run setblock 90055 23 -1815 minecraft:air destroy
 execute if score SEA_ch6_event rng5 matches 20001 run setblock 90055 21 -1815 minecraft:air destroy
 execute if score SEA_ch6_event rng5 matches 20001 run fill 90056 20 -1814 90054 20 -1816 tuff_bricks
-execute if score SEA_ch6_event rng5 matches 20001 run particle minecraft:flame 90055 23 -1815 0 0 0 0.3 100
-execute if score SEA_ch6_event rng5 matches 20001 run particle minecraft:crimson_spore 90055 21.1 -1815 8 0 8 0.3 600
-execute if score SEA_ch6_event rng5 matches 20001 run particle minecraft:flash 90055 23 -1815
-execute if score SEA_ch6_event rng5 matches 20001 run playsound minecraft:item.totem.use block @a ~ ~ ~ 1 0.5
+execute if score SEA_ch6_event rng5 matches 20001 positioned 90055 23 -1815 run particle minecraft:flame 90055 23 -1815 0 0 0 0.3 100
+execute if score SEA_ch6_event rng5 matches 20001 positioned 90055 23 -1815 run particle minecraft:crimson_spore 90055 21.1 -1815 8 0 8 0.3 600
+execute if score SEA_ch6_event rng5 matches 20001 positioned 90055 23 -1815 run particle minecraft:flash 90055 23 -1815
+execute if score SEA_ch6_event rng5 matches 20001 positioned 90055 23 -1815 run playsound minecraft:item.totem.use block @a ~ ~ ~ 1 0.5
 execute if score SEA_ch6_event rng5 matches 20001 run clear @s flint
 execute if score SEA_ch6_event rng5 matches 20001 run clear @s gunpowder
 execute if score SEA_ch6_event rng5 matches 20001 run clear @s coal
@@ -250,6 +250,7 @@ execute if score SEA_ch6_event rng5 matches 20001 run clear @s iron_ingot
 execute if score SEA_ch6_event rng5 matches 20001 run clear @s echo_shard
 execute if score SEA_ch6_event rng5 matches 20001 run clear @s gold_ingot
 execute if score SEA_ch6_event rng5 matches 20001 run clear @s emerald_block
+execute if score SEA_ch6_event rng5 matches 20001 run fill 90063 19 -1795 90055 30 -1795 minecraft:purple_stained_glass replace minecraft:structure_void
 
 execute if score SEA_ch6_event rng5 matches 20007 run setblock 90060 20 -1823 minecraft:redstone_lamp[lit=true]
 execute if score SEA_ch6_event rng5 matches 20008 run setblock 90064 20 -1819 minecraft:redstone_lamp[lit=true]
@@ -270,7 +271,7 @@ execute if score SEA_ch6_event rng5 matches 20014 positioned 90046 20 -1811 run 
 
 execute if score SEA_ch6_event rng5 matches 20001 run scoreboard players set SEAmusic rng1 0
 
-execute if score SEA_ch6_event rng5 matches 20047 run playsound minecraft:entity.wither.spawn ambient @a ~ ~ ~ 5 0.5
+execute if score SEA_ch6_event rng5 matches 20047 positioned 90063 20 -1815 run playsound minecraft:entity.wither.spawn ambient @a ~ ~ ~ 5 0.5
 execute if score SEA_ch6_event rng5 matches 20047 run particle white_ash 90055 21.1 -1815 20 5 20 1 50000
 execute if score SEA_ch6_event rng5 matches 20047..20067 run particle white_ash 90055 21.1 -1815 20 5 20 1 500
 
@@ -280,12 +281,62 @@ execute if score SEA_ch6_event rng5 matches 20030 as @a[scores={SEAPT_member=1}]
 execute if score SEA_ch6_event rng5 matches 20047 run summon marker 90069 28 -1815 {Tags:["SEAboss5_heaven_portal"]}
 execute if score SEA_ch6_event rng5 matches 20058 positioned 90064 20 -1815 run summon lightning_bolt
 execute if score SEA_ch6_event rng5 matches 20058 positioned 90064 22 -1815 run function skyblock:sea/m/unique/boss6
-execute if score SEA_ch6_event rng5 matches 20058 run effect give @n[tag=SEAboss6] fire_resistance infinite 0 true
+execute if score SEA_ch6_event rng5 matches 20058 positioned 90064 22 -1815 run data modify entity @n[tag=SEAboss6] NoAI set value 0b
+execute if score SEA_ch6_event rng5 matches 20058 positioned 90064 22 -1815 run data modify entity @n[tag=SEAboss6] Invulnerable set value 0b
+execute if score SEA_ch6_event rng5 matches 20060 positioned 90064 22 -1815 run data modify entity @n[tag=SEAboss6] NoAI set value 1b
+execute if score SEA_ch6_event rng5 matches 20060 positioned 90064 22 -1815 as @n[tag=SEAboss6] at @s run scoreboard players set @s rng1 1
+execute if score SEA_ch6_event rng5 matches 20060 positioned 90064 22 -1815 as @n[tag=SEAboss6] at @s run scoreboard players set @s rng2 1
+execute if score SEA_ch6_event rng5 matches 20060 positioned 90064 22 -1815 as @n[tag=SEAboss6] at @s run scoreboard players set @s rng3 1
+execute if score SEA_ch6_event rng5 matches 20060 positioned 90064 22 -1815 as @n[tag=SEAboss6] at @s run scoreboard players set @s rng4 1
+execute if score SEA_ch6_event rng5 matches 20060 positioned 90064 22 -1815 as @n[tag=SEAboss6] at @s run scoreboard players set @s rng5 1
+execute if score SEA_ch6_event rng5 matches 20060 positioned 90064 22 -1815 as @n[tag=SEAboss6] at @s run scoreboard players set @s rng6 1
+execute if score SEA_ch6_event rng5 matches 20060 positioned 90064 22 -1815 as @n[tag=SEAboss6] at @s run scoreboard players set @s rng8 1
+execute if score SEA_ch6_event rng5 matches 20058 as @n[tag=SEAboss6] at @s if block ~ ~-0.4 ~ tuff_bricks run particle gust_emitter_small ~ ~-1.5 ~ 0.6 0 0.6 0 3
+execute if score SEA_ch6_event rng5 matches 20058 as @n[tag=SEAboss6] at @s if block ~ ~-0.4 ~ tuff_bricks run playsound minecraft:entity.wind_charge.wind_burst ambient @a ~ ~-0.2 ~ 1 0.5
+execute if score SEA_ch6_event rng5 matches 20058.. run effect give @n[tag=SEAboss6] fire_resistance infinite 0 true
 #execute if score SEA_ch6_event rng5 matches 20053 positioned 90064 22 -1815 run function skyblock:azr/effects/zanei_appear
+execute if score SEA_ch6_event rng5 matches 20058.. as @n[tag=SEAboss6] at @s if block ~ ~-0.5 ~ air at @s run function skyblock:sea/e/ch6/boss6/particle_insky_angel
 
+execute if score SEA_ch6_event rng5 matches 20058..20120 as @n[tag=SEAboss6] at @s run rotate @s facing entity @p[tag=SEAPT]
+execute if score SEA_ch6_event rng5 matches 20058.. as @n[tag=SEAboss6] at @s run particle small_gust ^0.4 ^2.2 ^-0.5 0.1 0.1 0.1 0 2
+execute if score SEA_ch6_event rng5 matches 20058.. as @n[tag=SEAboss6] at @s run particle small_gust ^-0.4 ^2.2 ^-0.5 0.1 0.1 0.1 0 2
+execute if score SEA_ch6_event rng5 matches 20068.. as @n[tag=SEAboss6] at @s run particle small_gust ^0.6 ^2.3 ^-0.7 0.1 0.1 0.1 0 2
+execute if score SEA_ch6_event rng5 matches 20068.. as @n[tag=SEAboss6] at @s run particle small_gust ^-0.6 ^2.3 ^-0.7 0.1 0.1 0.1 0 2
+execute if score SEA_ch6_event rng5 matches 20078.. as @n[tag=SEAboss6] at @s run particle small_gust ^0.8 ^2.45 ^-0.9 0.1 0.1 0.1 0 2
+execute if score SEA_ch6_event rng5 matches 20078.. as @n[tag=SEAboss6] at @s run particle small_gust ^-0.8 ^2.45 ^-0.9 0.1 0.1 0.1 0 2
+execute if score SEA_ch6_event rng5 matches 20088.. as @n[tag=SEAboss6] at @s run particle small_gust ^1.1 ^2.65 ^-1.1 0.13 0.13 0.13 0 3
+execute if score SEA_ch6_event rng5 matches 20088.. as @n[tag=SEAboss6] at @s run particle small_gust ^-1.1 ^2.65 ^-1.1 0.13 0.13 0.13 0 3
+execute if score SEA_ch6_event rng5 matches 20098.. as @n[tag=SEAboss6] at @s run particle small_gust ^1.4 ^2.9 ^-1.3 0.18 0.18 0.18 0 3
+execute if score SEA_ch6_event rng5 matches 20098.. as @n[tag=SEAboss6] at @s run particle small_gust ^-1.4 ^2.9 ^-1.3 0.18 0.18 0.18 0 3
+execute if score SEA_ch6_event rng5 matches 20108.. as @n[tag=SEAboss6] at @s run particle small_gust ^1.8 ^3.15 ^-1.6 0.23 0.23 0.23 0 4
+execute if score SEA_ch6_event rng5 matches 20108.. as @n[tag=SEAboss6] at @s run particle small_gust ^-1.8 ^3.15 ^-1.6 0.23 0.23 0.23 0 4
+execute if score SEA_ch6_event rng5 matches 20108 as @n[tag=SEAboss6] at @s run playsound entity.breeze.shoot hostile @a ~ ~ ~ 3 1.2
+execute if score SEA_ch6_event rng5 matches 20108 as @n[tag=SEAboss6] at @s run playsound entity.breeze.shoot hostile @a ~ ~ ~ 3 0.9
+execute if score SEA_ch6_event rng5 matches 20108 as @n[tag=SEAboss6] at @s run particle gust_emitter_large ^1.8 ^3.25 ^-0.5 0.1 0.1 0.1 3 5
+execute if score SEA_ch6_event rng5 matches 20108 as @n[tag=SEAboss6] at @s run particle gust_emitter_large ^-1.8 ^3.25 ^-0.5 0.1 0.1 0.1 3 5
+execute if score SEA_ch6_event rng5 matches 20108 as @n[tag=SEAboss6] at @s run particle small_gust ^1.8 ^3.25 ^-1.5 0.23 0.23 0.23 0 3
+execute if score SEA_ch6_event rng5 matches 20108 as @n[tag=SEAboss6] at @s run particle small_gust ^-1.8 ^3.25 ^-1.5 0.23 0.23 0.23 0 3
+
+execute if score SEA_ch6_event rng5 matches 20078 positioned 90064 22 -1815 run data modify entity @n[tag=SEAboss6] NoAI set value 0b
 execute if score SEA_ch6_event rng5 matches 20047 as @a[scores={SEAPT_member=1}] at @s run tellraw @a[distance=0..150] [{"text":"？？？：","color":"red","bold": true},{"text":"\n“汝可知自己面对的，乃是天使长拉贵尔大人麾下的主天使：权之执理？”","color":"white","bold": false}]
-execute if score SEA_ch6_event rng5 matches 20063 as @a[scores={SEAPT_member=1}] at @s run tellraw @a[distance=0..150] [{"text":"权之执理：","color":"red","bold": true},{"text":"\n“无妨，吾会令汝认知到自己的愚昧与无知。”","color":"white","bold": false}]
+execute if score SEA_ch6_event rng5 matches 20064 as @a[scores={SEAPT_member=1}] at @s run tellraw @a[distance=0..150] [{"text":"权之执理：","color":"red","bold": true},{"text":"\n“无妨，吾会令汝认知到自己的愚昧与无知。”","color":"white","bold": false}]
 execute if score SEA_ch6_event rng5 matches 20078 as @a[scores={SEAPT_member=1}] at @s run tellraw @a[distance=0..150] [{"text":"权之执理：","color":"red","bold": true},{"text":"\n“纵使天穹的雷霆无法落下，吾也能将汝二人如同蝼蚁般碾碎。”","color":"white","bold": false}]
+
+execute if score SEA_ch6_event rng5 matches 20058 run bossbar add 9066602 "天火的风暴 - 权之执理"
+execute if score SEA_ch6_event rng5 matches 20058 run bossbar set minecraft:9066602 color purple
+execute if score SEA_ch6_event rng5 matches 20058 run bossbar set minecraft:9066602 name "天火的风暴 - 权之执理"
+execute if score SEA_ch6_event rng5 matches 20058 run bossbar set minecraft:9066602 players @a[tag=SEAPT]
+execute if score SEA_ch6_event rng5 matches 20058 run bossbar set minecraft:9066602 style progress
+execute if score SEA_ch6_event rng5 matches 20058 run bossbar set minecraft:9066602 max 800
+
+execute store result bossbar minecraft:9066602 value run data get entity @n[tag=SEAboss6] Health
+execute store result score @n[tag=SEAboss6] health run data get entity @n[tag=SEAboss6] Health
+
+execute if score SEA_ch6_event rng5 matches 20058.. as @e[tag=SEAboss6_summoner_a,type=marker] at @s run function skyblock:sea/e/ch6/boss6/attack_summon_marker
+
+
+
+
 
 
 

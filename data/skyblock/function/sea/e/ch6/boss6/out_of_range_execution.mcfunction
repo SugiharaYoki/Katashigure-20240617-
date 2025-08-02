@@ -1,0 +1,19 @@
+scoreboard players add @s rng4 1
+
+execute if score @s rng4 matches 2 store result score @s rng5 run random value 1..4
+execute if score @s[scores={rng5=1}] rng4 matches 3 at @s as @a[scores={SEAPT_member=1}] at @s run tellraw @a[distance=0..150] [{"text":"权之执理：","color":"red","bold": true},{"text":"\n“劝你立即回来堂堂正正与我打。”","color":"white","bold": false}]
+execute if score @s[scores={rng5=2}] rng4 matches 3 at @s as @a[scores={SEAPT_member=1}] at @s run tellraw @a[distance=0..150] [{"text":"权之执理：","color":"red","bold": true},{"text":"\n“逃跑吗？真替你感到悲哀。”","color":"white","bold": false}]
+execute if score @s[scores={rng5=3}] rng4 matches 3 at @s as @a[scores={SEAPT_member=1}] at @s run tellraw @a[distance=0..150] [{"text":"权之执理：","color":"red","bold": true},{"text":"\n“躲起来可不是什么好主意，人类。”","color":"white","bold": false}]
+execute if score @s[scores={rng5=4}] rng4 matches 3 at @s as @a[scores={SEAPT_member=1}] at @s run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“你要去哪？！你要留我一个在这打吗？”","color":"white","bold": false}]
+
+execute if score @s rng4 matches 5..69 at @s as @a[tag=SEAPT] at @s unless block ~ ~-0.8 ~ air unless block ~ ~-0.8 ~ minecraft:polished_tuff unless block ~ ~-0.8 ~ minecraft:tuff_bricks unless block ~ ~-0.8 ~ minecraft:polished_tuff_slab unless block ~ ~-0.8 ~ minecraft:tuff_brick_slab unless block ~ ~-0.8 ~ minecraft:redstone_lamp run effect give @s wither 2 9 false
+execute if score @s rng4 matches 39..79 at @s as @a[tag=SEAPT] at @s unless block ~ ~-0.8 ~ air unless block ~ ~-0.8 ~ minecraft:polished_tuff unless block ~ ~-0.8 ~ minecraft:tuff_bricks unless block ~ ~-0.8 ~ minecraft:polished_tuff_slab unless block ~ ~-0.8 ~ minecraft:tuff_brick_slab unless block ~ ~-0.8 ~ minecraft:redstone_lamp run particle electric_spark ~ ~3 ~ 0.5 3 0.5 0 80
+execute if score @s rng4 matches 89 at @s as @a[tag=SEAPT] at @s unless block ~ ~-0.8 ~ air unless block ~ ~-0.8 ~ minecraft:polished_tuff unless block ~ ~-0.8 ~ minecraft:tuff_bricks unless block ~ ~-0.8 ~ minecraft:polished_tuff_slab unless block ~ ~-0.8 ~ minecraft:tuff_brick_slab unless block ~ ~-0.8 ~ minecraft:redstone_lamp run particle gust_emitter_large ~ ~ ~ 0 0 0 0 1
+execute if score @s rng4 matches 89 at @s as @a[tag=SEAPT] at @s unless block ~ ~-0.8 ~ air unless block ~ ~-0.8 ~ minecraft:polished_tuff unless block ~ ~-0.8 ~ minecraft:tuff_bricks unless block ~ ~-0.8 ~ minecraft:polished_tuff_slab unless block ~ ~-0.8 ~ minecraft:tuff_brick_slab unless block ~ ~-0.8 ~ minecraft:redstone_lamp run particle lava ~ ~ ~ 0 0 0 1 60
+execute if score @s rng4 matches 89 at @s as @a[tag=SEAPT] at @s unless block ~ ~-0.8 ~ air unless block ~ ~-0.8 ~ minecraft:polished_tuff unless block ~ ~-0.8 ~ minecraft:tuff_bricks unless block ~ ~-0.8 ~ minecraft:polished_tuff_slab unless block ~ ~-0.8 ~ minecraft:tuff_brick_slab unless block ~ ~-0.8 ~ minecraft:redstone_lamp run playsound entity.generic.explode block @a ~ ~ ~ 2 0.9
+execute if score @s rng4 matches 89 at @s as @a[tag=SEAPT] at @s unless block ~ ~-0.8 ~ air unless block ~ ~-0.8 ~ minecraft:polished_tuff unless block ~ ~-0.8 ~ minecraft:tuff_bricks unless block ~ ~-0.8 ~ minecraft:polished_tuff_slab unless block ~ ~-0.8 ~ minecraft:tuff_brick_slab unless block ~ ~-0.8 ~ minecraft:redstone_lamp run playsound item.trident.thunder block @a ~ ~ ~ 2 0.7
+execute if score @s rng4 matches 89 at @s as @a[tag=SEAPT] at @s unless block ~ ~-0.8 ~ air unless block ~ ~-0.8 ~ minecraft:polished_tuff unless block ~ ~-0.8 ~ minecraft:tuff_bricks unless block ~ ~-0.8 ~ minecraft:polished_tuff_slab unless block ~ ~-0.8 ~ minecraft:tuff_brick_slab unless block ~ ~-0.8 ~ minecraft:redstone_lamp run kill @s
+
+execute if score @s rng4 matches 90..100 run scoreboard players set @s rng3 0
+execute if score @s rng3 matches ..30 run scoreboard players set @s rng4 92
+execute if score @s rng4 matches 90..100 run scoreboard players set @s rng4 -2
