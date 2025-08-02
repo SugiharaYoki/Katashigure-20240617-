@@ -25,9 +25,12 @@ execute if score @s rng1 matches 100.. if entity @s[x=88000,dx=4000,y=20,dy=3,z=
 
 #【技能列表】
 #坠落升空
+execute if score @s rng1 matches 100.. if entity @s[x=88000,dx=4000,y=-50,dy=65,z=-3000,dz=4000,tag=!seaboss6_m_lift] run say hell
 execute if score @s rng1 matches 100.. if entity @s[x=88000,dx=4000,y=-50,dy=65,z=-3000,dz=4000,tag=!seaboss6_m_lift] run scoreboard players set @s rng4 1
+execute if score @s rng1 matches 100.. if entity @s[x=88000,dx=4000,y=-50,dy=65,z=-3000,dz=4000,scores={rng4=..0}] run say hi
 execute if score @s rng1 matches 100.. if entity @s[x=88000,dx=4000,y=-50,dy=65,z=-3000,dz=4000,scores={rng4=..0}] run tag @s add seaboss6_m_lift
 execute as @s[tag=seaboss6_m_lift] run scoreboard players set @s[scores={rng4=..0}] rng4 1
+execute as @s[tag=seaboss6_m_lift] run say hello
 execute as @s[tag=seaboss6_m_lift] run function skyblock:sea/e/ch6/boss6/move_lift
 #回归中心
 execute if score @s rng1 matches 100.. unless entity @s[x=90044,y=-100,z=-1829,dx=35,dy=130,dz=30] positioned 90055 22 -1815 if entity @s[distance=9..] run scoreboard players add @s rng10 1
