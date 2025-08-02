@@ -25,6 +25,20 @@ execute if score @s[scores={rng6=3}] rng4 matches 80 positioned 90050 21 -1819 r
 execute if score @s[scores={rng6=4}] rng4 matches 80 positioned 90050 21 -1807 run playsound entity.generic.explode hostile @a ~ ~ ~ 0.89 1.2
 execute if score @s[scores={rng6=5}] rng4 matches 80 positioned 90050 21 -1823 run playsound entity.generic.explode hostile @a ~ ~ ~ 0.89 1.2
 
+execute if score @s[scores={rng6=1}] rng4 matches 79 at @s run rotate @s facing 90050 21 -1815
+execute if score @s[scores={rng6=2}] rng4 matches 79 at @s run rotate @s facing 90050 21 -1811
+execute if score @s[scores={rng6=3}] rng4 matches 79 at @s run rotate @s facing 90050 21 -1819
+execute if score @s[scores={rng6=4}] rng4 matches 79 at @s run rotate @s facing 90050 21 -1807
+execute if score @s[scores={rng6=5}] rng4 matches 79 at @s run rotate @s facing 90050 21 -1823
+execute if score @s rng4 matches 80 at @s run particle gust_emitter_small ^ ^ ^1 0 0 0 0 1
+execute if score @s rng4 matches 80 at @s run particle gust_emitter_small ^ ^ ^2 0 0 0 0 1
+execute if score @s rng4 matches 80 at @s run particle gust_emitter_small ^ ^ ^3 0 0 0 0 1
+execute if score @s rng4 matches 80 at @s run particle gust_emitter_small ^ ^ ^4 0 0 0 0 1
+execute if score @s rng4 matches 80 at @s run particle gust_emitter_small ^ ^ ^5 0 0 0 0 1
+execute if score @s rng4 matches 80 at @s run particle gust_emitter_small ^ ^ ^6 0 0 0 0 1
+execute if score @s rng4 matches 80 at @s run particle gust_emitter_small ^ ^ ^7 0 0 0 0 1
+execute if score @s rng4 matches 80 at @s run particle gust_emitter_small ^ ^ ^8 0 0 0 0 1
+execute if score @s rng4 matches 80 at @s run particle gust_emitter_small ^ ^ ^9 0 0 0 0 1
 execute if score @s[scores={rng6=1}] rng4 matches 80 positioned 90050 21 -1815 run particle large_smoke ~ ~0.3 ~ 0.3 0.1 0.3 0.32 10
 execute if score @s[scores={rng6=2}] rng4 matches 80 positioned 90050 21 -1811 run particle large_smoke ~ ~0.3 ~ 0.3 0.1 0.3 0.32 10
 execute if score @s[scores={rng6=3}] rng4 matches 80 positioned 90050 21 -1819 run particle large_smoke ~ ~0.3 ~ 0.3 0.1 0.3 0.32 10
