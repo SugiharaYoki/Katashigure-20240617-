@@ -57,6 +57,6 @@ execute if score @s[scores={rng5=2}] rng4 matches 65 at @s as @a[scores={SEAPT_m
 execute if score @s[scores={rng5=3}] rng4 matches 65 at @s as @a[scores={SEAPT_member=1}] at @s run tellraw @a[distance=0..150] [{"text":"权之执理：","color":"red","bold": true},{"text":"\n“碾碎卑微的人类。”","color":"white","bold": false}]
 execute if score @s[scores={rng5=4}] rng4 matches 67 at @s as @a[scores={SEAPT_member=1}] at @s run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“小心，它要从上面撞下来！”","color":"white","bold": false}]
 
-execute if score @s rng4 matches 300.. run tag @s remove seaboss6_move_lift
+
 execute if score @s rng4 matches 90..110 run scoreboard players set @s rng4 310
 execute if score @s rng4 matches 300..320 run scoreboard players set @s rng4 0

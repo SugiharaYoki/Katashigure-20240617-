@@ -23,5 +23,5 @@ execute if score @s rng4 matches 2 at @s positioned 90142 134 26 as @n[type=mark
 
 execute if score @s rng4 matches 20.. as @e[type=marker,tag=SEA_boss6_marker] at @s run kill @s
 
-execute if score @s rng4 matches 20.. run tag @s remove seaboss6_move_jump
+
 execute if score @s rng4 matches 20.. run scoreboard players set @s rng4 0

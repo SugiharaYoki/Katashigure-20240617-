@@ -284,6 +284,7 @@ execute if score SEA_ch6_event rng5 matches 20058 positioned 90064 22 -1815 run 
 execute if score SEA_ch6_event rng5 matches 20060 positioned 90064 22 -1815 run data modify entity @n[tag=SEAboss6] NoAI set value 1b
 execute if score SEA_ch6_event rng5 matches 20060 positioned 90064 22 -1815 as @n[tag=SEAboss6] at @s run scoreboard players set @s rng1 1
 execute if score SEA_ch6_event rng5 matches 20060 positioned 90064 22 -1815 as @n[tag=SEAboss6] at @s run scoreboard players set @s rng2 1
+execute if score SEA_ch6_event rng5 matches 20060 positioned 90064 22 -1815 as @n[tag=SEAboss6] at @s run scoreboard players set @s rng3 1
 execute if score SEA_ch6_event rng5 matches 20060 positioned 90064 22 -1815 as @n[tag=SEAboss6] at @s run scoreboard players set @s rng4 1
 execute if score SEA_ch6_event rng5 matches 20060 positioned 90064 22 -1815 as @n[tag=SEAboss6] at @s run scoreboard players set @s rng5 1
 execute if score SEA_ch6_event rng5 matches 20060 positioned 90064 22 -1815 as @n[tag=SEAboss6] at @s run scoreboard players set @s rng6 1
