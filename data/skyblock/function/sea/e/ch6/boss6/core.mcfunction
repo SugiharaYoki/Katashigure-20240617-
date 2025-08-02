@@ -21,6 +21,7 @@ execute if score @s rng4 matches ..0 run tag @s remove seaboss6_m_center
 execute if score @s rng4 matches ..0 run tag @s remove seaboss6_move_jump
 execute if score @s rng4 matches ..0 run tag @s remove seaboss6_attack_wburst
 execute if score @s rng4 matches ..0 run tag @s remove seaboss6_oorexec
+execute if score @s rng4 matches ..0 run scoreboard players set @s rng2 0
 
 #技能roll
 execute if score @s rng1 matches 100.. if entity @s[scores={rng4=..0}] store result score @s rng2 run random value 1..7
