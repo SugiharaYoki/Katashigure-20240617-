@@ -7,10 +7,11 @@ execute if score SEAmusic rng1 matches 7340.. run scoreboard players set SEAmusi
 
 execute positioned 90069 21 -1815 as @e[tag=SEAboss5_heaven_portal,limit=3,distance=0..50] at @s run function skyblock:sea/e/ch5/boss5/particle_heaven_portal
 
+execute positioned 90069 21 -1815 as @e[type=marker,tag=SEA_boss6_flame_anchor,distance=0..50] at @s run function skyblock:sea/e/ch6/boss6/attack_flame_anchor
 
+execute if score @s rng1 matches 100 run tag @s add seaboss6_move_jump
 
-
-
+execute as @s[tag=seaboss6_move_jump] run function skyblock:sea/e/ch6/boss6/move_jump
 
 
 
