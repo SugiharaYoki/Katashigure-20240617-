@@ -30,6 +30,7 @@ execute if score @s[scores={rng6=4}] rng4 matches 80 positioned 90050 21 -1807 r
 execute if score @s[scores={rng6=5}] rng4 matches 80 positioned 90050 21 -1823 run playsound entity.generic.explode hostile @a ~ ~ ~ 0.89 1.2
 execute if score @s rng4 matches 80 at @s run fill ~1 ~ ~1 ~-1 ~ ~-1 air replace fire
 execute if score @s rng4 matches 80 at @s as @a[tag=SEAPT,distance=..2] run damage @s 12 explosion
+execute if score @s rng4 matches 80 at @s as @e[tag=SEAmob,distance=..2.4] run damage @s 12 explosion
 
 execute if score @s[scores={rng6=1}] rng4 matches 79 at @s run rotate @s facing 90050 21 -1815
 execute if score @s[scores={rng6=2}] rng4 matches 79 at @s run rotate @s facing 90050 21 -1811
