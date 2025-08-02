@@ -1,4 +1,4 @@
-scoreboard players add @s rng4 1
+
 execute if score @s rng4 matches 2 store result score @s rng5 run random value 1..8
 execute if score @s rng4 matches 2 store result score @s rng6 run random value 1..5
 

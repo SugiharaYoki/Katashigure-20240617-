@@ -1,5 +1,6 @@
 scoreboard players add SEA_ch6_event sea_4temp4 0
 scoreboard players add @s rng1 1
+scoreboard players add @s[scores={rng4=1..}] rng4 1
 
 scoreboard players add SEAmusic rng1 1
 execute if score SEAmusic rng1 matches 1 as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s run playsound minecraft:falsegod music @s ~ ~ ~ 1 1.0
@@ -11,13 +12,16 @@ execute positioned 90069 21 -1815 as @e[type=marker,tag=SEA_boss6_flame_anchor,d
 
 execute if score @s rng1 matches 100 run tag @s add seaboss6_move_jump
 
-execute as @s[tag=seaboss6_move_jump] run function skyblock:sea/e/ch6/boss6/move_jump
 
+execute if score @s rng1 matches 100.. if entity @s[x=88000,dx=4000,y=20,dy=3,z=-3000,dz=4000,scores={rng4=..0}] store result score @s rng2 run random value 1..2
 
-execute if score @s rng1 matches 100.. if entity @s[x=88000,dx=4000,y=-50,dy=65,z=-3000,dz=4000,tag=!seaboss6_move_lift] run tag @s add seaboss6_move_lift
-
+execute if score @s[scores={rng2=1}] rng1 matches 100.. if entity @s[x=88000,dx=4000,y=-50,dy=65,z=-3000,dz=4000,scores={rng4=..0}] run tag @s add seaboss6_move_lift
+execute as @s[tag=seaboss6_move_lift] run scoreboard players set @s[scores={rng4=..0}] rng4 1
 execute as @s[tag=seaboss6_move_lift] run function skyblock:sea/e/ch6/boss6/move_lift
 
+execute if score @s rng1 matches 100.. if entity @s[x=88000,dx=4000,y=20,dy=3,z=-3000,dz=4000,scores={rng4=..0}] run tag @s add seaboss6_move_jump
+execute as @s[tag=seaboss6_move_jump] run scoreboard players set @s[scores={rng4=..0}] rng4 1
+execute as @s[tag=seaboss6_move_jump] run function skyblock:sea/e/ch6/boss6/move_jump
 
 
 
