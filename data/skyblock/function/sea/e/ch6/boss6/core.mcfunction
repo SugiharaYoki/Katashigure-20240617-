@@ -30,13 +30,13 @@ execute if score @s rng1 matches 100.. if entity @s[x=88000,dx=4000,y=-50,dy=65,
 execute as @s[tag=seaboss6_m_lift] run scoreboard players set @s[scores={rng4=..0}] rng4 1
 execute as @s[tag=seaboss6_m_lift] run function skyblock:sea/e/ch6/boss6/move_lift
 #回归中心
-execute if score @s rng1 matches 100.. if entity @s[x=88000,dx=4000,y=20,dy=65,z=-3000,dz=4000,scores={rng4=..0}] positioned 90055 22 -1815 if entity @s[distance=18..] run tag @s add seaboss6_m_center
-execute if score @s rng1 matches 100.. if entity @s[scores={rng10=90..},tag=!seaboss6_m_center] run scoreboard players set @s rng4 1
-execute if score @s rng1 matches 100.. if entity @s[scores={rng10=90..}] run tag @s add seaboss6_m_center
-execute if score @s rng1 matches 100.. if entity @s[x=88000,dx=4000,y=20,dy=65,z=-3000,dz=4000] positioned 90055 22 -1815 if entity @s[distance=18..] run scoreboard players add @s rng10 1
-execute if score @s rng1 matches 100.. if entity @s[x=88000,dx=4000,y=20,dy=65,z=-3000,dz=4000] positioned 90055 22 -1815 if entity @s[distance=..18] run scoreboard players set @s rng10 0
-execute as @s[tag=seaboss6_m_center] run scoreboard players set @s[scores={rng4=..0}] rng4 1
-execute as @s[tag=seaboss6_m_center] run function skyblock:sea/e/ch6/boss6/move_center
+#execute if score @s rng1 matches 100.. if entity @s[x=88000,dx=4000,y=20,dy=65,z=-3000,dz=4000,scores={rng4=..0}] positioned 90055 22 -1815 if entity @s[distance=18..] run tag @s add seaboss6_m_center
+#execute if score @s rng1 matches 100.. if entity @s[scores={rng10=90..},tag=!seaboss6_m_center] run scoreboard players set @s rng4 1
+#execute if score @s rng1 matches 100.. if entity @s[scores={rng10=90..}] run tag @s add seaboss6_m_center
+#execute if score @s rng1 matches 100.. if entity @s[x=88000,dx=4000,y=20,dy=65,z=-3000,dz=4000] positioned 90055 22 -1815 if entity @s[distance=18..] run scoreboard players add @s rng10 1
+#execute if score @s rng1 matches 100.. if entity @s[x=88000,dx=4000,y=20,dy=65,z=-3000,dz=4000] positioned 90055 22 -1815 if entity @s[distance=..18] run scoreboard players set @s rng10 0
+#execute as @s[tag=seaboss6_m_center] run scoreboard players set @s[scores={rng4=..0}] rng4 1
+#execute as @s[tag=seaboss6_m_center] run function skyblock:sea/e/ch6/boss6/move_center
 #大跳
 execute if score @s[scores={rng2=1..4}] rng1 matches 100.. if entity @s[x=88000,dx=4000,y=20,dy=3,z=-3000,dz=4000,scores={rng4=..0}] run tag @s add seaboss6_move_jump
 execute as @s[tag=seaboss6_move_jump] run scoreboard players set @s[scores={rng4=..0}] rng4 1
