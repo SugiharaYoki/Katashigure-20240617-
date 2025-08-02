@@ -31,7 +31,7 @@ execute if score @s[scores={rng2=1}] rng1 matches 100.. if entity @s[x=88000,dx=
 execute as @s[tag=seaboss6_move_jump] run scoreboard players set @s[scores={rng4=..0}] rng4 1
 execute as @s[tag=seaboss6_move_jump] run function skyblock:sea/e/ch6/boss6/move_jump
 #处刑
-execute if score @s rng1 matches 100.. if entity @s[x=88000,dx=4000,y=20,dy=3,z=-3000,dz=4000,scores={rng4=..0}] as @a[tag=SEAPT] at @s unless block ~ ~-0.8 ~ air unless block ~ ~-0.8 ~ minecraft:polished_tuff unless block ~ ~-0.8 ~ minecraft:tuff_bricks unless block ~ ~-0.8 ~ minecraft:polished_tuff_slab unless block ~ ~-0.8 ~ minecraft:tuff_brick_slab unless block ~ ~-0.8 ~ minecraft:redstone_lamp run scoreboard players add @n[tag=SEAboss6] rng3 2
+execute if score @s rng1 matches 100.. if entity @s[x=88000,dx=4000,y=20,dy=3,z=-3000,dz=4000,scores={rng4=..0}] as @a[tag=SEAPT] at @s unless block ~ ~-0.8 ~ air unless block ~ ~-0.8 ~ minecraft:polished_tuff unless block ~ ~-0.8 ~ minecraft:tuff_bricks unless block ~ ~-0.8 ~ minecraft:polished_tuff_slab unless block ~ ~-0.8 ~ minecraft:tuff_brick_slab unless block ~ ~-0.8 ~ minecraft:redstone_lamp run scoreboard players add @n[tag=SEAboss6] rng3 3
 execute if score @s rng1 matches 100.. if entity @s[x=88000,dx=4000,y=20,dy=3,z=-3000,dz=4000,scores={rng4=..0,rng3=1..}] run scoreboard players remove @s rng3 1
 execute if score @s rng3 matches 40.. run tag @s add seaboss6_oorexec
 execute as @s[tag=seaboss6_oorexec] run scoreboard players set @s[scores={rng4=..0}] rng4 1
