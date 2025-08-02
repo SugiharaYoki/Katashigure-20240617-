@@ -1,7 +1,12 @@
 scoreboard players add @s rng4 1
 execute if score @s rng4 matches 2 store result score @s rng5 run random value 1..8
+execute if score @s rng4 matches 2 store result score @s rng6 run random value 1..5
 
-execute if score @s[scores={rng5=4..8}] rng4 matches 2 run summon marker ~ 21.0 ~ {Tags:["SEA_boss6_flame_anchor"]}
+execute if score @s[scores={rng5=4..8,rng6=1}] rng4 matches 2 positioned ^ ^ ^ run summon marker ~ 21.0 ~ {Tags:["SEA_boss6_flame_anchor"]}
+execute if score @s[scores={rng5=4..8,rng6=2}] rng4 matches 2 positioned ^1 ^ ^2 run summon marker ~ 21.0 ~ {Tags:["SEA_boss6_flame_anchor"]}
+execute if score @s[scores={rng5=4..8,rng6=3}] rng4 matches 2 positioned ^-1 ^ ^2 run summon marker ~ 21.0 ~ {Tags:["SEA_boss6_flame_anchor"]}
+execute if score @s[scores={rng5=4..8,rng6=4}] rng4 matches 2 positioned ^2 ^ ^1 run summon marker ~ 21.0 ~ {Tags:["SEA_boss6_flame_anchor"]}
+execute if score @s[scores={rng5=4..8,rng6=5}] rng4 matches 2 positioned ^-2 ^ ^1 run summon marker ~ 21.0 ~ {Tags:["SEA_boss6_flame_anchor"]}
 
 execute if score @s[scores={rng5=1..8}] rng4 matches 2 run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
 execute if score @s[scores={rng5=1}] rng4 matches 2 at @s positioned 0.0 0 0.0 run summon marker ^ ^0.2 ^-1.1 {Tags:["SEA_boss6_marker"]}
