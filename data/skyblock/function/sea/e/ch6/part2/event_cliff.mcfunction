@@ -280,8 +280,29 @@ execute if score SEA_ch6_event rng5 matches 20030 as @a[scores={SEAPT_member=1}]
 execute if score SEA_ch6_event rng5 matches 20047 run summon marker 90069 28 -1815 {Tags:["SEAboss5_heaven_portal"]}
 execute if score SEA_ch6_event rng5 matches 20058 positioned 90064 20 -1815 run summon lightning_bolt
 execute if score SEA_ch6_event rng5 matches 20058 positioned 90064 22 -1815 run function skyblock:sea/m/unique/boss6
+execute if score SEA_ch6_event rng5 matches 20058 positioned 90064 22 -1815 run data modify entity @n[tag=SEAboss6] NoAI set value 0b
+execute if score SEA_ch6_event rng5 matches 20058 as @n[tag=SEAboss6] at @s if block ~ ~-0.4 ~ tuff_bricks run particle gust_emitter_small ~ ~-1.5 ~ 0.6 0 0.6 0 3
+execute if score SEA_ch6_event rng5 matches 20058 as @n[tag=SEAboss6] at @s if block ~ ~-0.4 ~ tuff_bricks run playsound minecraft:entity.wind_charge.wind_burst ambient @a ~ ~-0.2 ~ 1 0.5
 execute if score SEA_ch6_event rng5 matches 20058 run effect give @n[tag=SEAboss6] fire_resistance infinite 0 true
 #execute if score SEA_ch6_event rng5 matches 20053 positioned 90064 22 -1815 run function skyblock:azr/effects/zanei_appear
+execute if score SEA_ch6_event rng5 matches 20058.. as @n[tag=SEAboss6] at @s if block ~ ~-0.5 ~ air at @s run function skyblock:sea/e/ch6/boss6/particle_insky_angel
+
+execute if score SEA_ch6_event rng5 matches 20058 run particle small_gust ^0.4 ^2.2 ^-0.5 0.1 0.1 0.1 0 2
+execute if score SEA_ch6_event rng5 matches 20058 run particle small_gust ^-0.4 ^2.2 ^-0.5 0.1 0.1 0.1 0 2
+execute if score SEA_ch6_event rng5 matches 20068 run particle small_gust ^0.6 ^2.3 ^-0.7 0.1 0.1 0.1 0 2
+execute if score SEA_ch6_event rng5 matches 20068 run particle small_gust ^-0.6 ^2.3 ^-0.7 0.1 0.1 0.1 0 2
+execute if score SEA_ch6_event rng5 matches 20078 run particle small_gust ^0.8 ^2.45 ^-0.9 0.1 0.1 0.1 0 2
+execute if score SEA_ch6_event rng5 matches 20078 run particle small_gust ^-0.8 ^2.45 ^-0.9 0.1 0.1 0.1 0 2
+execute if score SEA_ch6_event rng5 matches 20088 run particle small_gust ^1.1 ^2.65 ^-1.1 0.13 0.13 0.13 0 3
+execute if score SEA_ch6_event rng5 matches 20088 run particle small_gust ^-1.1 ^2.65 ^-1.1 0.13 0.13 0.13 0 3
+execute if score SEA_ch6_event rng5 matches 20098 run particle small_gust ^1.4 ^2.9 ^-1.3 0.18 0.18 0.18 0 3
+execute if score SEA_ch6_event rng5 matches 20098 run particle small_gust ^-1.4 ^2.9 ^-1.3 0.18 0.18 0.18 0 3
+execute if score SEA_ch6_event rng5 matches 20108 run playsound entity.breeze.shoot hostile @a ~ ~ ~ 3 1.2
+execute if score SEA_ch6_event rng5 matches 20108 run playsound entity.breeze.shoot hostile @a ~ ~ ~ 3 0.9
+execute if score SEA_ch6_event rng5 matches 20108 run particle gust_emitter_large ^1.8 ^3.25 ^-0.5 0.1 0.1 0.1 3 5
+execute if score SEA_ch6_event rng5 matches 20108 run particle gust_emitter_large ^-1.8 ^3.25 ^-0.5 0.1 0.1 0.1 3 5
+execute if score SEA_ch6_event rng5 matches 20108 run particle small_gust ^1.8 ^3.25 ^-1.5 0.23 0.23 0.23 0 3
+execute if score SEA_ch6_event rng5 matches 20108 run particle small_gust ^-1.8 ^3.25 ^-1.5 0.23 0.23 0.23 0 3
 
 execute if score SEA_ch6_event rng5 matches 20047 as @a[scores={SEAPT_member=1}] at @s run tellraw @a[distance=0..150] [{"text":"？？？：","color":"red","bold": true},{"text":"\n“汝可知自己面对的，乃是天使长拉贵尔大人麾下的主天使：权之执理？”","color":"white","bold": false}]
 execute if score SEA_ch6_event rng5 matches 20063 as @a[scores={SEAPT_member=1}] at @s run tellraw @a[distance=0..150] [{"text":"权之执理：","color":"red","bold": true},{"text":"\n“无妨，吾会令汝认知到自己的愚昧与无知。”","color":"white","bold": false}]
