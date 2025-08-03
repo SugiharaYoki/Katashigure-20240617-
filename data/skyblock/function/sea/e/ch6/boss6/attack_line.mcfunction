@@ -48,7 +48,7 @@ execute if score @s[scores={rng5=1}] rng4 matches 24 if entity @s[scores={Health
 execute if score @s[scores={rng5=1}] rng4 matches 24 if entity @s[scores={Health=..400}] positioned ~-10 21.1 ~ if block ~ ~ ~ air unless block ~ ~-1 ~ air run summon marker ~ 21.0 ~ {Tags:["SEA_boss6_burst_anchor"]}
 execute if score @s[scores={rng5=1}] rng4 matches 24 if entity @s[scores={Health=..400}] positioned ~ 21.1 ~-10 if block ~ ~ ~ air unless block ~ ~-1 ~ air run summon marker ~ 21.0 ~ {Tags:["SEA_boss6_burst_anchor"]}
 
-execute if score @s rng4 matches 92.. run scoreboard players set @s rng4 -2
+execute if score @s rng4 matches 50.. run scoreboard players set @s rng4 -2
 
 
 
