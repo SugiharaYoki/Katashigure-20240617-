@@ -54,7 +54,7 @@ execute as @s[tag=seaboss6_move_jump,scores={rng2=1..4}] run function skyblock:s
 execute if score @s[scores={rng2=5}] rng1 matches 100.. if entity @s[x=88000,dx=4000,y=20,dy=5,z=-3000,dz=4000,scores={rng4=..0}] run tag @s add seaboss6_attack_wburst
 execute as @s[tag=seaboss6_attack_wburst,scores={rng2=5}] run function skyblock:sea/e/ch6/boss6/attack_wind_burst
 #划线激光
-execute if score @s[scores={rng2=8..9}] rng1 matches 100.. if entity @s[x=88000,dx=4000,y=20,dy=5,z=-3000,dz=4000,scores={rng4=..0}] run tag @s add seaboss6_attack_line
+execute if score @s[scores={rng2=8..9}] rng1 matches 100.. if entity @s[x=88000,dx=4000,y=20,dy=20,z=-3000,dz=4000,scores={rng4=..0}] run tag @s add seaboss6_attack_line
 execute as @s[tag=seaboss6_attack_line,scores={rng2=8..9}] run function skyblock:sea/e/ch6/boss6/attack_line
 #召唤怪物
 execute if score @s[scores={rng2=6..7}] rng1 matches 100.. if entity @s[x=88000,dx=4000,y=20,dy=5,z=-3000,dz=4000,scores={rng4=..0}] run tag @s add seaboss6_attack_summon
