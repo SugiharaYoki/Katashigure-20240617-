@@ -43,6 +43,8 @@ execute if score SEA_ch6_event rng5 matches 2000..8999 positioned 90144 161 124 
 execute if score SEA_ch6_event rng5 matches 9000..12000 positioned 90144 161 124 run function skyblock:sea/e/ch6/part2/event_defend
 execute if score SEA_ch6_event rng5 matches 12001.. positioned 90144 161 124 run function skyblock:sea/e/ch6/part2/event_cliff
 
+execute if score SEA_ch6_event rng5 matches 1.. unless entity @n[tag=SEAedwina] as @p[tag=SEAPT] at @s run function skyblock:sea/m/unique/npc_edwina_ch6
+execute if score SEA_ch6_event rng5 matches 1.. as @r[tag=SEAPT] as @n[tag=SEAedwina,type=witch,distance=0..2000] run kill @s
 
 #记忆密码1
 execute if block 90146 155 149 lever[powered=false] \
