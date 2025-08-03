@@ -26,9 +26,9 @@ execute if score @s rng4 matches ..0 run tag @s remove seaboss6_phase_update
 execute if score @s rng4 matches ..0 run scoreboard players set @s rng2 0
 
 #技能roll
-execute if score @s rng1 matches 100.. if entity @s[scores={rng4=..0,Health=400..},tag=!Phase2] store result score @s rng2 run random value 1..9
-execute if score @s rng1 matches 100.. if entity @s[scores={rng4=..0,Health=..399},tag=!Phase2] store result score @s rng2 run random value 50..51
-execute if score @s rng1 matches 100.. if entity @s[scores={rng4=..0,Health=1..},tag=Phase2] store result score @s rng2 run random value 1..9
+execute if score @s rng1 matches 100.. if entity @s[scores={rng4=..0,health=400..},tag=!Phase2] store result score @s rng2 run random value 1..9
+execute if score @s rng1 matches 100.. if entity @s[scores={rng4=..0,health=..399},tag=!Phase2] store result score @s rng2 run random value 50..51
+execute if score @s rng1 matches 100.. if entity @s[scores={rng4=..0,health=1..},tag=Phase2] store result score @s rng2 run random value 1..9
 
 #切换阶段
 execute if score @s[scores={rng2=50..51}] rng1 matches 100.. if entity @s[x=88000,dx=4000,y=20,dy=5,z=-3000,dz=4000,scores={rng4=..0},tag=!Phase2] run tag @s add seaboss6_phase_update
