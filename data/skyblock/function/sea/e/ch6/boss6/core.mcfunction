@@ -8,6 +8,7 @@ execute if score SEAmusic rng1 matches 7340.. run scoreboard players set SEAmusi
 execute positioned 90069 21 -1815 as @e[tag=SEAboss5_heaven_portal,limit=3,distance=0..50] at @s run function skyblock:sea/e/ch5/boss5/particle_heaven_portal
 
 execute positioned 90069 21 -1815 as @e[type=marker,tag=SEA_boss6_flame_anchor,distance=0..50] at @s run function skyblock:sea/e/ch6/boss6/attack_flame_anchor
+execute positioned 90069 21 -1815 as @e[type=marker,tag=SEA_boss6_burst_anchor,distance=0..50] at @s run function skyblock:sea/e/ch6/boss6/attack_burst_anchor
 
 #tellraw @a[tag=SEAPT] [{"text":" 检测rng4 = ","color":"white","italic": false},{"score":{"name":"@s","objective":"rng4"},"color": "green","italic": true}]
 
