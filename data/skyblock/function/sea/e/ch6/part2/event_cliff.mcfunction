@@ -252,6 +252,9 @@ execute if score SEA_ch6_event rng5 matches 20001 run clear @s echo_shard
 execute if score SEA_ch6_event rng5 matches 20001 run clear @s gold_ingot
 execute if score SEA_ch6_event rng5 matches 20001 run clear @s emerald_block
 execute if score SEA_ch6_event rng5 matches 20001 run fill 90063 19 -1795 90055 30 -1795 minecraft:purple_stained_glass replace minecraft:structure_void
+execute if score SEA_ch6_event rng5 matches 20001 as @a[tag=SEAPT] at @s run effect give @s strength infinite 4 true
+execute if score SEA_ch6_event rng5 matches 20001 as @a[tag=SEAPT] at @s run attribute @s minecraft:max_health modifier add seaboss6:health 20 add_value
+execute if score SEA_ch6_event rng5 matches 20001 as @a[tag=SEAPT] at @s run effect give @s instant_health 1 19 true
 
 execute if score SEA_ch6_event rng5 matches 20007 run setblock 90060 20 -1823 minecraft:redstone_lamp[lit=true]
 execute if score SEA_ch6_event rng5 matches 20008 run setblock 90064 20 -1819 minecraft:redstone_lamp[lit=true]
