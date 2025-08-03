@@ -13,7 +13,7 @@ execute positioned 90069 21 -1815 as @e[type=marker,tag=SEA_boss6_burst_anchor,d
 #tellraw @a[tag=SEAPT] [{"text":" 检测rng4 = ","color":"white","italic": false},{"score":{"name":"@s","objective":"rng4"},"color": "green","italic": true}]
 
 #开局大跳
-execute if score @s rng1 matches 100 run tag @s add seaboss6_move_jump
+#execute if score @s rng1 matches 100 run tag @s add seaboss6_move_jump
 
 #初始化技能tag
 execute if score @s rng4 matches ..0 run tag @s remove seaboss6_m_lift
