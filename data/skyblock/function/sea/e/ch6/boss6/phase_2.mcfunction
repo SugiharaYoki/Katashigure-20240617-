@@ -18,7 +18,7 @@ execute if score @s rng4 matches 70 positioned 90059 20 -1825 if entity @a[tag=S
 execute if score @s rng4 matches 70 positioned 90059 20 -1825 unless entity @a[tag=SEAPT,distance=0..5.5] run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“祂这是要……将平台砸毁？！”","color":"white","bold": false}]
 execute if score @s rng4 matches 100 at @s as @a[tag=SEAPT,distance=..4] run damage @s 12 explosion
 execute if score @s rng4 matches 102 at @s run fill ~1 ~ ~1 ~-1 ~ ~-1 air replace fire
-execute if score @s rng4 matches 102 run clone 90052 120 -1829 90061 120 -1821 90052 20 -1829
+execute if score @s rng4 matches 102 run clone 90052 120 -1829 90062 120 -1822 90052 20 -1829
 execute if score @s rng4 matches 102 run effect give @s instant_health 1 4 true
 execute if score @s rng4 matches 102 run effect give @s resistance infinite 0 true
 

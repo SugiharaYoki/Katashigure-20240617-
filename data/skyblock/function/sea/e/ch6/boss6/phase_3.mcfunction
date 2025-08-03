@@ -16,7 +16,7 @@ execute if score @s rng4 matches 102 positioned 90059 20 -1805 run summon lightn
 execute if score @s rng4 matches 70 positioned 90059 20 -1805 if entity @a[tag=SEAPT,distance=0..5.5] run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“离远点，祂又要毁掉平台了！！”","color":"white","bold": false}]
 execute if score @s rng4 matches 100 at @s as @a[tag=SEAPT,distance=..4] run damage @s 12 explosion
 execute if score @s rng4 matches 102 at @s run fill ~1 ~ ~1 ~-1 ~ ~-1 air replace fire
-execute if score @s rng4 matches 102 run clone 90052 120 -1808 90061 120 -1801 90052 20 -1808
+execute if score @s rng4 matches 102 run clone 90052 120 -1808 90062 120 -1801 90052 20 -1808
 execute if score @s rng4 matches 102 run effect give @s instant_health 1 4 true
 execute if score @s rng4 matches 102 run effect give @s resistance infinite 1 true
 
