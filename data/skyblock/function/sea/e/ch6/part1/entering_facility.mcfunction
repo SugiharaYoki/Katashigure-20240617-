@@ -33,9 +33,9 @@ function skyblock:sea/e/ch6/edwina/init
 
 execute as @a[tag=SEAPT] at @s run attribute @s minecraft:jump_strength modifier remove sea:marilyn_01
 
-fill 90051 20 -1797 90061 24 -1786 air replace fire
-fill 90036 19 -1824 90067 21 -1797 air replace fire
-fill 90043 24 -1831 90062 20 -1824 air replace fire
+fill 90040 20 -1907 90061 24 -1786 air replace fire
+fill 90030 19 -1834 90067 21 -1797 air replace fire
+fill 90040 24 -1841 90062 20 -1824 air replace fire
 
 forceload remove 90042 -1829 90068 -1798
 forceload remove 90011 -1953 90109 -1888
