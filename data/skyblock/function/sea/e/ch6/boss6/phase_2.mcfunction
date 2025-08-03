@@ -20,6 +20,7 @@ execute if score @s rng4 matches 100 at @s as @a[tag=SEAPT,distance=..4] run dam
 execute if score @s rng4 matches 102 at @s run fill ~1 ~ ~1 ~-1 ~ ~-1 air replace fire
 execute if score @s rng4 matches 102 run clone 90052 120 -1829 90061 120 -1821 90052 20 -1829
 execute if score @s rng4 matches 102 run effect give @s instant_health 1 4 true
+execute if score @s rng4 matches 102 run effect give @s resistance infinite 0 true
 
 execute if score @s[tag=!Phase2] rng4 matches 102 run tag @s add Phase2
 
