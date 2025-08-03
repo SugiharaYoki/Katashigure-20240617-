@@ -242,7 +242,8 @@ execute if score SEA_ch6_event rng5 matches 20001 run fill 90056 20 -1814 90054 
 execute if score SEA_ch6_event rng5 matches 20001 positioned 90055 23 -1815 run particle minecraft:flame 90055 23 -1815 0 0 0 0.3 100
 execute if score SEA_ch6_event rng5 matches 20001 positioned 90055 23 -1815 run particle minecraft:crimson_spore 90055 21.1 -1815 8 0 8 0.3 600
 execute if score SEA_ch6_event rng5 matches 20001 positioned 90055 23 -1815 run particle minecraft:flash 90055 23 -1815
-execute if score SEA_ch6_event rng5 matches 20001 positioned 90055 23 -1815 run playsound minecraft:item.totem.use block @a ~ ~ ~ 1 0.5
+execute if score SEA_ch6_event rng5 matches 20001 positioned 90055 23 -1815 run playsound minecraft:item.totem.use block @a ~ ~ ~ 1 0.8
+execute if score SEA_ch6_event rng5 matches 20001 positioned 90055 23 -1815 run playsound entity.lightning_bolt.thunder block @a ~ ~ ~ 1 0.8
 execute if score SEA_ch6_event rng5 matches 20001 run clear @s flint
 execute if score SEA_ch6_event rng5 matches 20001 run clear @s gunpowder
 execute if score SEA_ch6_event rng5 matches 20001 run clear @s coal
