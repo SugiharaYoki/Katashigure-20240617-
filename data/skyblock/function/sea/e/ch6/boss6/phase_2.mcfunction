@@ -19,7 +19,7 @@ execute if score @s rng4 matches 70 positioned 90059 20 -1825 unless entity @a[t
 execute if score @s rng4 matches 100 at @s as @a[tag=SEAPT,distance=..4] run damage @s 12 explosion
 execute if score @s rng4 matches 102 at @s run fill ~1 ~ ~1 ~-1 ~ ~-1 air replace fire
 execute if score @s rng4 matches 102 run clone 90052 120 -1829 90061 120 -1821 90052 20 -1829
-execute if score @s rng4 matches 102 run effect give @s regeneration 5 9 true
+execute if score @s rng4 matches 102 run effect give @s instant_health 1 19 true
 
 execute if score @s[tag=!Phase2] rng4 matches 102 run tag @s add Phase2
 
