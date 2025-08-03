@@ -244,14 +244,14 @@ execute if score SEA_ch6_event rng5 matches 20001 positioned 90055 23 -1815 run 
 execute if score SEA_ch6_event rng5 matches 20001 positioned 90055 23 -1815 run particle minecraft:flash 90055 23 -1815
 execute if score SEA_ch6_event rng5 matches 20001 positioned 90055 23 -1815 run playsound minecraft:item.totem.use block @a ~ ~ ~ 1 0.8
 execute if score SEA_ch6_event rng5 matches 20001 positioned 90055 23 -1815 run playsound entity.lightning_bolt.thunder block @a ~ ~ ~ 1 0.8
-execute if score SEA_ch6_event rng5 matches 20001 run clear @s flint
-execute if score SEA_ch6_event rng5 matches 20001 run clear @s gunpowder
-execute if score SEA_ch6_event rng5 matches 20001 run clear @s coal
-execute if score SEA_ch6_event rng5 matches 20001 run clear @s raw_iron
-execute if score SEA_ch6_event rng5 matches 20001 run clear @s iron_ingot
-execute if score SEA_ch6_event rng5 matches 20001 run clear @s echo_shard
-execute if score SEA_ch6_event rng5 matches 20001 run clear @s gold_ingot
-execute if score SEA_ch6_event rng5 matches 20001 run clear @s emerald_block
+execute if score SEA_ch6_event rng5 matches 20001 run clear @a[tag=SEAPT] flint
+execute if score SEA_ch6_event rng5 matches 20001 run clear @a[tag=SEAPT] gunpowder
+execute if score SEA_ch6_event rng5 matches 20001 run clear @a[tag=SEAPT] coal
+execute if score SEA_ch6_event rng5 matches 20001 run clear @a[tag=SEAPT] raw_iron
+execute if score SEA_ch6_event rng5 matches 20001 run clear @a[tag=SEAPT] iron_ingot
+execute if score SEA_ch6_event rng5 matches 20001 run clear @a[tag=SEAPT] echo_shard
+execute if score SEA_ch6_event rng5 matches 20001 run clear @a[tag=SEAPT] gold_ingot
+execute if score SEA_ch6_event rng5 matches 20001 run clear @a[tag=SEAPT] emerald_block
 execute if score SEA_ch6_event rng5 matches 20001 run fill 90063 19 -1795 90055 30 -1795 minecraft:purple_stained_glass replace minecraft:structure_void
 execute if score SEA_ch6_event rng5 matches 20001 as @a[tag=SEAPT] at @s run effect give @s strength infinite 4 true
 execute if score SEA_ch6_event rng5 matches 20001 as @a[tag=SEAPT] at @s run attribute @s minecraft:max_health modifier add seaboss6:health 20 add_value
