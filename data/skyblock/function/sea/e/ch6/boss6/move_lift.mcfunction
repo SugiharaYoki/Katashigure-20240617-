@@ -6,8 +6,11 @@ execute if score @s rng4 matches 2 store result score @s rng6 run random value 1
 execute if score @s rng4 matches 1..2 run playsound minecraft:entity.breeze.charge hostile @a ~ ~ ~ 3 1.2
 execute if score @s rng4 matches 1..2 run playsound minecraft:entity.breeze.charge hostile @a ~ ~ ~ 3 0.8
 execute if score @s rng4 matches 1..2 run effect give @s levitation 3 29 true
+execute if score @s rng4 matches 1 run say 1
+execute if score @s rng4 matches 42 run say 2
+execute if score @s rng4 matches 44 run say 3
+execute if score @s rng4 matches 45 run say 4
 execute if score @s rng4 matches 45..200 unless entity @s[x=88000,dx=4000,y=21,dy=30,z=-3000,dz=4000] run scoreboard players set @s rng4 280
-execute if score @s rng4 matches 45..200 unless entity @s[x=88000,dx=4000,y=21,dy=30,z=-3000,dz=4000] run say hi
 execute if score @s rng4 matches 45..55 if entity @s[x=88000,dx=4000,y=21,dy=30,z=-3000,dz=4000] run scoreboard players set @s rng4 56
 execute if score @s rng4 matches 281 run tp @s 90055 22 -1815
 execute if score @s rng4 matches 281 run particle enchant 90055 22 -1815 2 2 2 0.5 120
