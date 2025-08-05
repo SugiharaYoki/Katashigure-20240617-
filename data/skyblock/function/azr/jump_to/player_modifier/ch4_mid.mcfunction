@@ -41,5 +41,6 @@ tellraw @s {"text":"在默尔森的后备援助下，你成功深入了彼列军
 tellraw @s {"text":"权之残影通过传音联系到了你。现在只需要跟随他的指引继续前行……","color":"gray"}
 tp @s -79765 23 -446 facing -79765 23 -447
 tag @s add azrUpdateSpawnPoint
+tag @s add azrBanLifeVitae
 
 playsound minecraft:entity.illusioner.ambient hostile @s ~ ~ ~ 2 0.65
