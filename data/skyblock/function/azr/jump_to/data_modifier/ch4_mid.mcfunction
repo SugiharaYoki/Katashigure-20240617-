@@ -14,9 +14,6 @@ fill -79904 41 0 -79902 38 0 minecraft:red_stained_glass
 fill -79935 45 34 -79935 43 34 air
 fill -79867 48 -127 -79867 51 -130 minecraft:iron_bars
 
-setblock -28 143 -58 minecraft:observer[facing=south]
-setblock -23 143 -53 repeater[facing=west,powered=true]
-
 summon piglin -79768 42 -227 {Invulnerable:1b,IsImmuneToZombification:1b,PersistenceRequired:1b,Tags:["AzrielMob","AzrielDecMob","AzrielNPC","Immune","AzrielEvent3761"],DeathLootTable:"skyblock:azriel_piglin_resident_tier1",Health:10.0f,CustomName:'"猪灵居民"',CanPickUpLoot:0b,IsBaby:0b,HandItems:[{},{}],HandDropChances:[0.05f,0.05f],NoAI:1b}
 summon piglin -79763 41 -239 {Invulnerable:1b,IsImmuneToZombification:1b,PersistenceRequired:1b,Tags:["AzrielMob","AzrielDecMob","AzrielNPC","Immune","AzrielEvent3762"],DeathLootTable:"skyblock:azriel_piglin_resident_tier1",Health:10.0f,CustomName:'"猪灵居民"',CanPickUpLoot:0b,IsBaby:0b,HandItems:[{count:1,id:"spruce_trapdoor"},{}],HandDropChances:[0.05f,0.05f],ArmorItems:[{},{},{count:1,id:"leather_chestplate",components:{custom_name:'{"text":"皮革甲","italic":false,"color":"white"}'}},{}],NoAI:1b}
 summon piglin -79772 41 -241 {Invulnerable:1b,IsImmuneToZombification:1b,PersistenceRequired:1b,Tags:["AzrielMob","AzrielDecMob","AzrielNPC","Immune","AzrielEvent3764"],DeathLootTable:"skyblock:azriel_piglin_resident_tier1",Health:10.0f,CustomName:'"猪灵居民"',CanPickUpLoot:0b,IsBaby:0b,HandItems:[{count:1,id:"golden_pickaxe",components:{custom_name:'{"text":"金镐","italic":false,"color":"white"}'}},{}],HandDropChances:[0.05f,0.05f],NoAI:1b}
