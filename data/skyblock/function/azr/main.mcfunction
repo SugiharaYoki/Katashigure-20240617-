@@ -80,8 +80,8 @@ scoreboard objectives add Azr_SK15 dummy
 #skill 16 unused
 scoreboard objectives add Azr_SK16 dummy
 #设置系统参数
-scoreboard players set DEBUG_maxStageLimit Azr_system 43
-#scoreboard players set DEBUG_fakePlayer Azr_system 10
+# scoreboard players set DEBUG_maxStageLimit Azr_system 43
+# scoreboard players set DEBUG_fakePlayer Azr_system 10
 
 # 许愿池
 function skyblock:azr/effects/wish_fountain_transfer
