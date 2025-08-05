@@ -13,11 +13,13 @@ execute if block -79937 39 -12 minecraft:birch_button[powered=true] run function
 execute if score isStarted Azr_system matches 1 run function skyblock:azr/system_sub/buttons
 
 #旁观者显示
-bossbar set azr:progress_bar_normal players @a[x=-79931,y=100,z=0,distance=..10000]
-bossbar set azr:progress_bar_special players @a[x=-79931,y=100,z=0,distance=..10000]
-bossbar set azr:progress_bar_special_0 players @a[x=-79931,y=100,z=0,distance=..10000]
-bossbar set azr:boss_hp_bar players @a[x=-79931,y=100,z=0,distance=..10000]
-bossbar set azr:boss_hp_bar_0 players @a[x=-79931,y=100,z=0,distance=..10000]
+tag @a[x=-79931,y=100,z=0,distance=..10000] add azrShowDialog
+tag @a[x=-79931,y=100,z=0,distance=10000..] remove azrShowDialog
+bossbar set azr:progress_bar_normal players @a[tag=azrShowDialog]
+bossbar set azr:progress_bar_special players @a[tag=azrShowDialog]
+bossbar set azr:progress_bar_special_0 players @a[tag=azrShowDialog]
+bossbar set azr:boss_hp_bar players @a[tag=azrShowDialog]
+bossbar set azr:boss_hp_bar_0 players @a[tag=azrShowDialog]
 
 #开始游戏
 #声明常驻记分板 可能包含系统参数、永久变量、指针等
