@@ -150,7 +150,7 @@ execute if score tick_main_thread AzrTimerStack matches 2293..2586 if score #rng
 execute if score tick_main_thread AzrTimerStack matches 2293 as @e[tag=AzrielBossA,limit=1] at @s run playsound minecraft:entity.illusioner.ambient hostile @a[tag=azrPlayer] ~ ~ ~ 100 0.6
 execute if score tick_main_thread AzrTimerStack matches 2293 run tellraw @a[tag=azrShowDialog] {"text":"？？？：","color":"aqua"}
 execute if score tick_main_thread AzrTimerStack matches 2293 run tellraw @a[tag=azrShowDialog] {"text":"“路西法，你这胆敢挑战大天使沙利叶的愚昧之徒。”","color":"white"}
-execute if score tick_main_thread AzrTimerStack matches 2373 as @a[tag=azrPlayer] at @s run playsound minecraft:vol3.fuse master @s ~ ~ ~ 0.65
+execute if score tick_main_thread AzrTimerStack matches 2373 as @a[tag=azrPlayer] at @s run playsound minecraft:fuse master @s ~ ~ ~ 0.65
 execute if score tick_main_thread AzrTimerStack matches 2373 as @e[tag=AzrielBossA,limit=1] at @s run playsound minecraft:entity.illusioner.ambient hostile @a[tag=azrPlayer] ~ ~ ~ 100 0.6
 execute if score tick_main_thread AzrTimerStack matches 2373 run tellraw @a[tag=azrShowDialog] {"text":"权之残影：","color":"aqua"}
 execute if score tick_main_thread AzrTimerStack matches 2373 run tellraw @a[tag=azrShowDialog] {"text":"“到此为止了，休想伤害吾威能庇佑之下的人类。”","color":"white"}
