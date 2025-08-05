@@ -1,5 +1,5 @@
 execute if score stage_main_thread AzrTimerStack matches 1 run tag @a[tag=azrPlayer] add azrUpdateSpawnPoint
-execute if score stage_main_thread AzrTimerStack matches 1 run title @a[tag=azrPlayer] actionbar {"color":"red","text":"Stage 5 - Wave 1"}
+execute if score stage_main_thread AzrTimerStack matches 1 run title @a[tag=azrShowDialog] actionbar {"color":"red","text":"Stage 5 - Wave 1"}
 execute if score stage_main_thread AzrTimerStack matches 1 run bossbar add azr:progress_bar_normal "Stage 5"
 execute if score stage_main_thread AzrTimerStack matches 1 run bossbar set azr:progress_bar_normal color white
 execute if score stage_main_thread AzrTimerStack matches 1 run bossbar set azr:progress_bar_normal players @a[tag=azrPlayer]
@@ -172,24 +172,24 @@ execute if score stage_main_thread AzrTimerStack matches 64 positioned -79940 38
 
 execute if score stage_main_thread AzrTimerStack matches 65..68 unless entity @n[tag=AzrielMob] run scoreboard players set stage_main_thread AzrTimerStack 69
 execute if score stage_main_thread AzrTimerStack matches 65..70 if entity @e[tag=AzrielMob,tag=!AzrielDecMob] run scoreboard players set stage_main_thread AzrTimerStack 65
-execute if score stage_main_thread AzrTimerStack matches 68 run title @a[tag=azrPlayer] actionbar {"text":"Wave Clear","color":"green"}
+execute if score stage_main_thread AzrTimerStack matches 68 run title @a[tag=azrShowDialog] actionbar {"text":"Wave Clear","color":"green"}
 execute if score stage_main_thread AzrTimerStack matches 68 run scoreboard players set @a[tag=azrPlayer] Azr_wave 11
-execute if score stage_main_thread AzrTimerStack matches 73 run title @a[tag=azrPlayer] actionbar {"text":"7","color":"yellow"}
-execute if score stage_main_thread AzrTimerStack matches 74 run title @a[tag=azrPlayer] actionbar {"text":"6","color":"yellow"}
-execute if score stage_main_thread AzrTimerStack matches 75 run title @a[tag=azrPlayer] actionbar {"text":"5","color":"yellow"}
-execute if score stage_main_thread AzrTimerStack matches 76 run title @a[tag=azrPlayer] actionbar {"text":"4","color":"yellow"}
-execute if score stage_main_thread AzrTimerStack matches 77 run title @a[tag=azrPlayer] actionbar {"text":"3","color":"red"}
-execute if score stage_main_thread AzrTimerStack matches 78 run title @a[tag=azrPlayer] actionbar {"text":"2","color":"red"}
-execute if score stage_main_thread AzrTimerStack matches 79 run title @a[tag=azrPlayer] actionbar {"text":"1","color":"red"}
-execute if score stage_main_thread AzrTimerStack matches 80 run title @a[tag=azrPlayer] actionbar {"text":"Stage 5 - Wave 2","color":"red"}
+execute if score stage_main_thread AzrTimerStack matches 73 run title @a[tag=azrShowDialog] actionbar {"text":"7","color":"yellow"}
+execute if score stage_main_thread AzrTimerStack matches 74 run title @a[tag=azrShowDialog] actionbar {"text":"6","color":"yellow"}
+execute if score stage_main_thread AzrTimerStack matches 75 run title @a[tag=azrShowDialog] actionbar {"text":"5","color":"yellow"}
+execute if score stage_main_thread AzrTimerStack matches 76 run title @a[tag=azrShowDialog] actionbar {"text":"4","color":"yellow"}
+execute if score stage_main_thread AzrTimerStack matches 77 run title @a[tag=azrShowDialog] actionbar {"text":"3","color":"red"}
+execute if score stage_main_thread AzrTimerStack matches 78 run title @a[tag=azrShowDialog] actionbar {"text":"2","color":"red"}
+execute if score stage_main_thread AzrTimerStack matches 79 run title @a[tag=azrShowDialog] actionbar {"text":"1","color":"red"}
+execute if score stage_main_thread AzrTimerStack matches 80 run title @a[tag=azrShowDialog] actionbar {"text":"Stage 5 - Wave 2","color":"red"}
 
 
 execute if score stage_main_thread AzrTimerStack matches 85..87 positioned -79931 38 122 unless entity @a[tag=azrPlayer,distance=0..4] run scoreboard players set stage_main_thread AzrTimerStack 85
-execute if score stage_main_thread AzrTimerStack matches 88 run tellraw @a[tag=azrPlayer] {"text":"迷之女声：","color":"yellow"}
-execute if score stage_main_thread AzrTimerStack matches 88 run tellraw @a[tag=azrPlayer] {"text":"“抬头看。”","color":"white"}
-execute if score stage_main_thread AzrTimerStack matches 88..89 run playsound ambient.nether_wastes.loop ambient @a[tag=azrPlayer] -79931 38 53 100
-execute if score stage_main_thread AzrTimerStack matches 88..89 run playsound ambient.nether_wastes.mood ambient @a[tag=azrPlayer] -79931 38 53 100
-execute if score stage_main_thread AzrTimerStack matches 88..89 run playsound ambient.nether_wastes.additions ambient @a[tag=azrPlayer] -79931 38 53 100
+execute if score stage_main_thread AzrTimerStack matches 88 run tellraw @a[tag=azrShowDialog] {"text":"迷之女声：","color":"yellow"}
+execute if score stage_main_thread AzrTimerStack matches 88 run tellraw @a[tag=azrShowDialog] {"text":"“抬头看。”","color":"white"}
+execute if score stage_main_thread AzrTimerStack matches 88..89 run playsound ambient.nether_wastes.loop ambient @a[tag=azrShowDialog] -79931 38 53 100
+execute if score stage_main_thread AzrTimerStack matches 88..89 run playsound ambient.nether_wastes.mood ambient @a[tag=azrShowDialog] -79931 38 53 100
+execute if score stage_main_thread AzrTimerStack matches 88..89 run playsound ambient.nether_wastes.additions ambient @a[tag=azrShowDialog] -79931 38 53 100
 execute if score stage_main_thread AzrTimerStack matches 89 positioned -79931 46 122.0 run function skyblock:azr/m/spider_t1_dust
 execute if score stage_main_thread AzrTimerStack matches 89 positioned -79931 46 123.0 run function skyblock:azr/m/spider_t1_dust
 execute if score stage_main_thread AzrTimerStack matches 89 positioned -79931.0 46 122 run function skyblock:azr/m/spider_t1_dust
@@ -317,11 +317,11 @@ execute if score stage_main_thread AzrTimerStack matches 149 positioned -79922 3
 execute if score stage_main_thread AzrTimerStack matches 149 positioned -79940 38 122 run function skyblock:azr/m/vindicator_t1
 
 execute if score stage_main_thread AzrTimerStack matches 150..152 if entity @e[tag=AzrielMob,tag=!AzrielDecMob] run scoreboard players set stage_main_thread AzrTimerStack 150
-execute if score stage_main_thread AzrTimerStack matches 154 run playsound ambient.crimson_forest.loop ambient @a[tag=azrPlayer] -78000 100 0 1000
-execute if score stage_main_thread AzrTimerStack matches 154 run playsound ambient.crimson_forest.mood ambient @a[tag=azrPlayer] -78000 100 0 1000
-execute if score stage_main_thread AzrTimerStack matches 154 run playsound ambient.crimson_forest.additions ambient @a[tag=azrPlayer] -78000 100 0 1000
+execute if score stage_main_thread AzrTimerStack matches 154 run playsound ambient.crimson_forest.loop ambient @a[tag=azrShowDialog] -78000 100 0 1000
+execute if score stage_main_thread AzrTimerStack matches 154 run playsound ambient.crimson_forest.mood ambient @a[tag=azrShowDialog] -78000 100 0 1000
+execute if score stage_main_thread AzrTimerStack matches 154 run playsound ambient.crimson_forest.additions ambient @a[tag=azrShowDialog] -78000 100 0 1000
 execute if score stage_main_thread AzrTimerStack matches 154 run fill -79931 38 40 -79931 40 40 air destroy
-execute if score stage_main_thread AzrTimerStack matches 154 run title @a[tag=azrPlayer] actionbar {"text":"Stage Clear","color":"green"}
+execute if score stage_main_thread AzrTimerStack matches 154 run title @a[tag=azrShowDialog] actionbar {"text":"Stage Clear","color":"green"}
 execute if score stage_main_thread AzrTimerStack matches 154 run fill -79930 38 130 -79932 42 130 air destroy
 execute if score stage_main_thread AzrTimerStack matches 154 run clone -79931 38 76 -79931 38 76 -79931 38 117 replace move
 execute if score stage_main_thread AzrTimerStack matches 154 run particle minecraft:end_rod -79931 39 76 0.6 0.6 0.6 0.0 13

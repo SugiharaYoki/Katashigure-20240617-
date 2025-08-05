@@ -17,7 +17,7 @@ execute if score stage_main_thread AzrTimerStack matches 20.. as @e[name="僵尸
 execute if score stage_main_thread AzrTimerStack matches 20 run summon item_frame -79929 41 -104 {Item:{id:"minecraft:glistering_melon_slice",count:1b},Facing:5}
 
 
-execute if score stage_main_thread AzrTimerStack matches 20 run title @a[tag=azrPlayer] actionbar {"text":"Stage 11","color":"red"}
+execute if score stage_main_thread AzrTimerStack matches 20 run title @a[tag=azrShowDialog] actionbar {"text":"Stage 11","color":"red"}
 execute if score stage_main_thread AzrTimerStack matches 20 run summon slime -79899 40 -117 {PersistenceRequired:1b,Tags:["AzrielMob","AzrielDecMob","Immune"],DeathLootTable:"skyblock:azriel_slime_tier1",Health:4.0f,CustomName:'"污浊史莱姆"',CanPickUpLoot:0b,Size:2,ArmorItems:[{},{},{},{}],attributes:[{id:"max_health",base:4.0d},{id:"attack_damage",base:4.0d}]}
 execute if score stage_main_thread AzrTimerStack matches 20 run summon zombie -79900 40 -110 {PersistenceRequired:1b,Tags:["AzrielMob","AzrielMob_temp1"],DeathLootTable:"skyblock:azriel_zombie_tier2_jail",Health:5.0f,CustomName:'"僵尸"',CanPickUpLoot:0b,IsBaby:0b,ArmorItems:[{count:1,id:"leather_boots",components:{custom_name:'{"text":"皮革靴","italic":false,"color":"white"}'}},{count:1,id:"leather_leggings",components:{custom_name:'{"text":"皮革裤","italic":false,"color":"white"}'}},{count:1,id:"leather_chestplate",components:{custom_name:'{"text":"皮革甲","italic":false,"color":"white"}'}},{count:1,id:"leather_helmet",components:{custom_name:'{"text":"皮革帽","italic":false,"color":"white"}'}}],ArmorDropChances:[0.02f,0.02f,0.02f,0.02f],attributes:[{id:"max_health",base:5.0d},{id:"attack_damage",base:2.0d}]}
 execute if score stage_main_thread AzrTimerStack matches 20 run summon zombie -79900 40 -109 {PersistenceRequired:1b,Tags:["AzrielMob","AzrielMob_temp1"],DeathLootTable:"skyblock:azriel_zombie_tier2_jail",Health:5.0f,CustomName:'"僵尸"',CanPickUpLoot:0b,IsBaby:0b,ArmorItems:[{count:1,id:"leather_boots",components:{custom_name:'{"text":"皮革靴","italic":false,"color":"white"}'}},{count:1,id:"leather_leggings",components:{custom_name:'{"text":"皮革裤","italic":false,"color":"white"}'}},{count:1,id:"leather_chestplate",components:{custom_name:'{"text":"皮革甲","italic":false,"color":"white"}'}},{count:1,id:"leather_helmet",components:{custom_name:'{"text":"皮革帽","italic":false,"color":"white"}'}}],ArmorDropChances:[0.02f,0.02f,0.02f,0.02f],attributes:[{id:"max_health",base:5.0d},{id:"attack_damage",base:2.0d}]}
@@ -113,15 +113,15 @@ execute unless entity @a[tag=azrPlayer,x=-79905,y=40,z=-109,distance=0..5.8] if 
 execute if score mobCount Azr_system matches ..45 if block -79910 40 -105 iron_bars run fill -79910 40 -105 -79910 41 -105 air destroy
 
 execute if score stage_main_thread AzrTimerStack matches 21..255 unless entity @e[tag=AzrielMob_temp1] run scoreboard players set stage_main_thread AzrTimerStack 260
-execute if score stage_main_thread AzrTimerStack matches 260 run tellraw @a[tag=azrPlayer] {"text":"权之残影（传音）：","color":"red"}
-execute if score stage_main_thread AzrTimerStack matches 260 run tellraw @a[tag=azrPlayer] {"text":"“结界最多还能撑5秒，准备迎接下一波敌人！”","color":"white"}
+execute if score stage_main_thread AzrTimerStack matches 260 run tellraw @a[tag=azrShowDialog] {"text":"权之残影（传音）：","color":"red"}
+execute if score stage_main_thread AzrTimerStack matches 260 run tellraw @a[tag=azrShowDialog] {"text":"“结界最多还能撑5秒，准备迎接下一波敌人！”","color":"white"}
 execute if score stage_main_thread AzrTimerStack matches 280 run tag @a[tag=azrPlayer] add azrUpdateSpawnPoint
 execute if score stage_main_thread AzrTimerStack matches 280 run fill -79917 44 -106 -79917 40 -110 minecraft:air destroy
 
 
 execute if score stage_main_thread AzrTimerStack matches 261..389 unless entity @e[tag=AzrielMob_temp2] run scoreboard players set stage_main_thread AzrTimerStack 390
-execute if score stage_main_thread AzrTimerStack matches 390 run tellraw @a[tag=azrPlayer] {"text":"权之残影（传音）：","color":"red"}
-execute if score stage_main_thread AzrTimerStack matches 390 run tellraw @a[tag=azrPlayer] {"text":"“下一道结界坚持不住了，5秒内那边的敌人就会过来！”","color":"white"}
+execute if score stage_main_thread AzrTimerStack matches 390 run tellraw @a[tag=azrShowDialog] {"text":"权之残影（传音）：","color":"red"}
+execute if score stage_main_thread AzrTimerStack matches 390 run tellraw @a[tag=azrShowDialog] {"text":"“下一道结界坚持不住了，5秒内那边的敌人就会过来！”","color":"white"}
 execute if score stage_main_thread AzrTimerStack matches 410 run tag @a[tag=azrPlayer] add azrUpdateSpawnPoint
 execute if score stage_main_thread AzrTimerStack matches 410 run fill -79932 44 -106 -79932 40 -110 minecraft:air destroy
 
@@ -130,25 +130,25 @@ execute if score stage_main_thread AzrTimerStack matches 399 if score playerCoun
 
 
 execute if score stage_main_thread AzrTimerStack matches 501 run fill -79942 40 -105 -79944 40 -105 air
-execute if score stage_main_thread AzrTimerStack matches 501 run playsound minecraft:block.iron_door.open ambient @a[tag=azrPlayer] -79943 45 -105 6 0.3
+execute if score stage_main_thread AzrTimerStack matches 501 run playsound minecraft:block.iron_door.open ambient @a[tag=azrShowDialog] -79943 45 -105 6 0.3
 execute if score stage_main_thread AzrTimerStack matches 502 run fill -79942 41 -105 -79944 41 -105 air
-execute if score stage_main_thread AzrTimerStack matches 502 run playsound minecraft:block.iron_door.open ambient @a[tag=azrPlayer] -79943 45 -105 6 0.3
+execute if score stage_main_thread AzrTimerStack matches 502 run playsound minecraft:block.iron_door.open ambient @a[tag=azrShowDialog] -79943 45 -105 6 0.3
 execute if score stage_main_thread AzrTimerStack matches 503 run fill -79942 42 -105 -79944 42 -105 air
-execute if score stage_main_thread AzrTimerStack matches 503 run playsound minecraft:block.iron_door.open ambient @a[tag=azrPlayer] -79943 45 -105 6 0.3
+execute if score stage_main_thread AzrTimerStack matches 503 run playsound minecraft:block.iron_door.open ambient @a[tag=azrShowDialog] -79943 45 -105 6 0.3
 execute if score stage_main_thread AzrTimerStack matches 501 run fill -79942 40 -111 -79944 40 -111 air
-execute if score stage_main_thread AzrTimerStack matches 501 run playsound minecraft:block.iron_door.open ambient @a[tag=azrPlayer] -79943 45 -111 6 0.3
+execute if score stage_main_thread AzrTimerStack matches 501 run playsound minecraft:block.iron_door.open ambient @a[tag=azrShowDialog] -79943 45 -111 6 0.3
 execute if score stage_main_thread AzrTimerStack matches 502 run fill -79942 41 -111 -79944 41 -111 air
-execute if score stage_main_thread AzrTimerStack matches 502 run playsound minecraft:block.iron_door.open ambient @a[tag=azrPlayer] -79943 45 -111 6 0.3
+execute if score stage_main_thread AzrTimerStack matches 502 run playsound minecraft:block.iron_door.open ambient @a[tag=azrShowDialog] -79943 45 -111 6 0.3
 execute if score stage_main_thread AzrTimerStack matches 503 run fill -79942 42 -111 -79944 42 -111 air
-execute if score stage_main_thread AzrTimerStack matches 503 run playsound minecraft:block.iron_door.open ambient @a[tag=azrPlayer] -79943 45 -111 6 0.3
+execute if score stage_main_thread AzrTimerStack matches 503 run playsound minecraft:block.iron_door.open ambient @a[tag=azrShowDialog] -79943 45 -111 6 0.3
 
 
 execute if score stage_main_thread AzrTimerStack matches 510..529 if score mobCount Azr_system matches 1.. run scoreboard players set stage_main_thread AzrTimerStack 510
-execute if score stage_main_thread AzrTimerStack matches 520 run title @a[tag=azrPlayer] actionbar {"text":"Stage Annihilated","color":"green"}
+execute if score stage_main_thread AzrTimerStack matches 520 run title @a[tag=azrShowDialog] actionbar {"text":"Stage Annihilated","color":"green"}
 execute if score stage_main_thread AzrTimerStack matches 520 run advancement grant @a[tag=azrPlayer] only skyblock:azr/azr_stage11
-execute if score stage_main_thread AzrTimerStack matches 520 run playsound ambient.crimson_forest.loop ambient @a[tag=azrPlayer] -78000 100 0 1000
-execute if score stage_main_thread AzrTimerStack matches 520 run playsound minecraft:ambient.nether_wastes.mood ambient @a[tag=azrPlayer] -78000 100 0 1000 0.3
-execute if score stage_main_thread AzrTimerStack matches 520 run playsound ambient.crimson_forest.additions ambient @a[tag=azrPlayer] -78000 100 0 1000
+execute if score stage_main_thread AzrTimerStack matches 520 run playsound ambient.crimson_forest.loop ambient @a[tag=azrShowDialog] -78000 100 0 1000
+execute if score stage_main_thread AzrTimerStack matches 520 run playsound minecraft:ambient.nether_wastes.mood ambient @a[tag=azrShowDialog] -78000 100 0 1000 0.3
+execute if score stage_main_thread AzrTimerStack matches 520 run playsound ambient.crimson_forest.additions ambient @a[tag=azrShowDialog] -78000 100 0 1000
 execute if score stage_main_thread AzrTimerStack matches 520 run scoreboard players set @a[tag=azrPlayer] Azr_wave 29
 execute if score stage_main_thread AzrTimerStack matches 521 run scoreboard players set stage Azr_system 38
 execute if score stage_main_thread AzrTimerStack matches 521 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..12}] Azr_skillPoints 13

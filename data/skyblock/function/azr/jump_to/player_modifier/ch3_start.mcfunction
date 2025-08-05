@@ -1,6 +1,7 @@
 # 将进度未达到的玩家踢出 - 原判定为 Azr_skillPoints，这里改成使用BH记录
 execute unless score @s SeGa_StandLastBH matches 23.. run return run function skyblock:azr/jump_to/return
 
+stopsound @s
 
 effect give @s saturation 5 29 true
 effect give @s slow_falling 5 5 true
@@ -38,7 +39,7 @@ item replace entity @s inventory.8 with rabbit_foot[custom_name='{"text":"尸爪
 item replace entity @s inventory.9 with honeycomb 4
 
 # show texts
-tellraw @s {"text":"游戏再续……","color":"green"}
+# tellraw @s {"text":"游戏再续……","color":"green"}
 
 tp @s -79906 44 -14.0 facing -79909 44 -14.0
 tag @s add azrUpdateSpawnPoint

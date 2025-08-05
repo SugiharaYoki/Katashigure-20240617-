@@ -1,0 +1,1 @@
+item replace entity @s weapon.offhand with torch[custom_name='{"text":"驱灵的火烛","color":"blue","italic":false}',lore=['{"text":"手持时 极近处的“僵尸”陷入虚弱I","color":"green","italic":false}'],custom_data={soul_expel_torch:1b},custom_model_data={floats:[100001.0]}]

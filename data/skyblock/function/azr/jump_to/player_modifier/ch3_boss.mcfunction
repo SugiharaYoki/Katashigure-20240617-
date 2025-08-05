@@ -1,6 +1,7 @@
 # 将进度未达到的玩家踢出 - 原判定为 Azr_skillPoints，这里改成使用BH记录
 execute unless score @s SeGa_StandLastBH matches 34.. run return run function skyblock:azr/jump_to/return
 
+stopsound @s
 
 effect give @s saturation 5 29 true
 effect give @s slow_falling 5 5 true
@@ -21,7 +22,7 @@ function skyblock:azr/items/iron_helmet_normal_replace
 function skyblock:azr/items/iron_chestplate_normal_replace
 function skyblock:azr/items/iron_leggings_normal_replace
 function skyblock:azr/items/iron_boots_normal_replace
-function skyblock:azr/items/soul_expel_torch
+function skyblock:azr/items/soul_expel_torch_replace
 give @s cooked_salmon 6
 give @s golden_carrot 2
 give @s arrow 30
@@ -49,7 +50,7 @@ item replace entity @s inventory.16 with bone[custom_name='{"text":"冻骨","ita
 
 
 # show texts
-tellraw @s {"text":"游戏再续……","color":"green"}
+# tellraw @s {"text":"游戏再续……","color":"green"}
 tellraw @s {"text":"牢房本该被魔法枷锁限制的魔物全部冲破了牢门，正在牢中四处肆虐。","color":"gray"}
 tellraw @s {"text":"虽说神界军承诺过将前来支援，你所遇到的寥寥无几的残军却早已重伤，甚至死在你的眼前。","color":"gray"}
 tellraw @s {"text":"据军队说，操控并掌管魔物的神使名为权之殊能。究竟是他遭遇了意外，还是存在更加黑暗的真相？","color":"gray"}

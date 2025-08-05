@@ -13,11 +13,13 @@ execute if block -79937 39 -12 minecraft:birch_button[powered=true] run function
 execute if score isStarted Azr_system matches 1 run function skyblock:azr/system_sub/buttons
 
 #旁观者显示
-bossbar set azr:progress_bar_normal players @a[x=-79931,y=100,z=0,distance=..10000]
-bossbar set azr:progress_bar_special players @a[x=-79931,y=100,z=0,distance=..10000]
-bossbar set azr:progress_bar_special_0 players @a[x=-79931,y=100,z=0,distance=..10000]
-bossbar set azr:boss_hp_bar players @a[x=-79931,y=100,z=0,distance=..10000]
-bossbar set azr:boss_hp_bar_0 players @a[x=-79931,y=100,z=0,distance=..10000]
+tag @a[x=-79931,y=100,z=0,distance=..10000] add azrShowDialog
+tag @a[x=-79931,y=100,z=0,distance=10000..] remove azrShowDialog
+bossbar set azr:progress_bar_normal players @a[tag=azrShowDialog]
+bossbar set azr:progress_bar_special players @a[tag=azrShowDialog]
+bossbar set azr:progress_bar_special_0 players @a[tag=azrShowDialog]
+bossbar set azr:boss_hp_bar players @a[tag=azrShowDialog]
+bossbar set azr:boss_hp_bar_0 players @a[tag=azrShowDialog]
 
 #开始游戏
 #声明常驻记分板 可能包含系统参数、永久变量、指针等
@@ -80,8 +82,8 @@ scoreboard objectives add Azr_SK15 dummy
 #skill 16 unused
 scoreboard objectives add Azr_SK16 dummy
 #设置系统参数
-scoreboard players set DEBUG_maxStageLimit Azr_system 43
-#scoreboard players set DEBUG_fakePlayer Azr_system 10
+# scoreboard players set DEBUG_maxStageLimit Azr_system 43
+# scoreboard players set DEBUG_fakePlayer Azr_system 10
 
 # 许愿池
 function skyblock:azr/effects/wish_fountain_transfer
@@ -99,6 +101,7 @@ execute if score $playerExists Azr_system matches 1 if score timer_static_5s Azr
 # 在部分关卡的的四倍速走秒
 execute if score $playerExists Azr_system matches 1 if score isStarted Azr_system matches 1 if score stage Azr_system matches 34..45 if score tick_count_main AzrTimerStack matches 5.. run function skyblock:azr/core
 execute if score $playerExists Azr_system matches 1 if score isStarted Azr_system matches 1 if score stage Azr_system matches 51..61 if score tick_count_main AzrTimerStack matches 5.. run function skyblock:azr/core
+execute if score $playerExists Azr_system matches 1 if score isStarted Azr_system matches 1 if score stage Azr_system matches 63.. if score tick_count_main AzrTimerStack matches 5.. run function skyblock:azr/core
 execute if score $playerExists Azr_system matches 1 if score isStarted Azr_system matches 1 if score tick_count_main AzrTimerStack matches 20.. run function skyblock:azr/core
 execute if score $playerExists Azr_system matches 1 if score isStarted Azr_system matches 1 if score timer_static_5s AzrTimerStack matches 100.. run function skyblock:azr/timer_static_5s
 
@@ -137,8 +140,8 @@ execute if score $playerExists Azr_system matches 1 if score isStarted Azr_syste
     execute if score stage Azr_system matches 61 if score stage_main_thread AzrTimerStack matches 466..470 if entity @a[tag=azrPlayer,x=-79466,y=80,z=-381,distance=0..6] run scoreboard players set stage_main_thread AzrTimerStack 471
     execute if score stage Azr_system matches 61 if score stage_main_thread AzrTimerStack matches ..699 if entity @a[tag=azrPlayer,x=-79466,y=84,z=-338,distance=0..3] run scoreboard players set stage_main_thread AzrTimerStack 700
     execute if score stage Azr_system matches 61 if score stage_main_thread AzrTimerStack matches 704..1700 if entity @a[tag=azrPlayer,x=-79537,y=41,z=-338,distance=0..7] run scoreboard players set stage_main_thread AzrTimerStack 1701
-
-    
+    # event19
+    execute if score stage Azr_system matches 63 if score stage_main_thread AzrTimerStack matches 0..20 as @a[x=-79632.5,y=52.00,z=-337.5,distance=0..7] at @s run tp @s ~ ~-50 ~ ~ ~
 
 # 使用了tick计时的关卡在这里处理
     # 读秒，要停下只需reset记分板

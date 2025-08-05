@@ -1,6 +1,6 @@
 #开局行为
 execute if score stage_main_thread AzrTimerStack matches 1 run tag @a[tag=azrPlayer] add azrUpdateSpawnPoint
-execute if score stage_main_thread AzrTimerStack matches 1 run title @a[tag=azrPlayer] actionbar {"text":"Stage 1 - Wave 1","color":"red"}
+execute if score stage_main_thread AzrTimerStack matches 1 run title @a[tag=azrShowDialog] actionbar {"text":"Stage 1 - Wave 1","color":"red"}
 execute if score stage_main_thread AzrTimerStack matches 1 run bossbar add azr:progress_bar_normal "Stage 1"
 execute if score stage_main_thread AzrTimerStack matches 1 run bossbar set azr:progress_bar_normal color white
 execute if score stage_main_thread AzrTimerStack matches 1 run bossbar set azr:progress_bar_normal players @a[tag=azrPlayer]
@@ -14,7 +14,7 @@ execute if score stage_main_thread AzrTimerStack matches 2 run scoreboard player
 execute if score stage_main_thread AzrTimerStack matches 11 positioned -79930.5 38.0 3.5 run function skyblock:azr/effects/basalt_open
 #刷怪时序
 execute if score stage_main_thread AzrTimerStack matches 6 positioned -79930.5 38.0 -8.5 run function skyblock:azr/effects/basalt_open
-execute if score stage_main_thread AzrTimerStack matches 6 run playsound entity.zombie.ambient ambient @a[tag=azrPlayer] -80000 100 0 1000
+execute if score stage_main_thread AzrTimerStack matches 6 run playsound entity.zombie.ambient ambient @a[tag=azrShowDialog] -80000 100 0 1000
 execute if score stage_main_thread AzrTimerStack matches 6 positioned -79931 38 -9 run function skyblock:azr/m/zombie_t1
 execute if score stage_main_thread AzrTimerStack matches 8 positioned -79931 38 -9 run function skyblock:azr/m/zombie_t1
 execute if score stage_main_thread AzrTimerStack matches 9 unless entity @n[tag=AzrielMob] run scoreboard players set stage_main_thread AzrTimerStack 10
@@ -34,22 +34,22 @@ execute if score stage_main_thread AzrTimerStack matches 25 positioned -79931 38
 #回秒
 execute if score stage_main_thread AzrTimerStack matches 26..27 if entity @e[tag=AzrielMob,tag=!AzrielDecMob] run scoreboard players set stage_main_thread AzrTimerStack 26
 #结束
-execute if score stage_main_thread AzrTimerStack matches 27 run playsound ambient.crimson_forest.loop ambient @a[tag=azrPlayer] -78000 100 0 1000
-execute if score stage_main_thread AzrTimerStack matches 27 run playsound ambient.crimson_forest.mood ambient @a[tag=azrPlayer] -78000 100 0 1000
-execute if score stage_main_thread AzrTimerStack matches 27 run playsound ambient.crimson_forest.additions ambient @a[tag=azrPlayer] -78000 100 0 1000
-execute if score stage_main_thread AzrTimerStack matches 27 run title @a[tag=azrPlayer] actionbar {"text":"Stage Clear","color":"green"}
+execute if score stage_main_thread AzrTimerStack matches 27 run playsound ambient.crimson_forest.loop ambient @a[tag=azrShowDialog] -78000 100 0 1000
+execute if score stage_main_thread AzrTimerStack matches 27 run playsound ambient.crimson_forest.mood ambient @a[tag=azrShowDialog] -78000 100 0 1000
+execute if score stage_main_thread AzrTimerStack matches 27 run playsound ambient.crimson_forest.additions ambient @a[tag=azrShowDialog] -78000 100 0 1000
+execute if score stage_main_thread AzrTimerStack matches 27 run title @a[tag=azrShowDialog] actionbar {"text":"Stage Clear","color":"green"}
 execute if score stage_main_thread AzrTimerStack matches 31.. run fill -79931 40 6 -79931 38 6 air destroy
 execute if score stage_main_thread AzrTimerStack matches 31.. run fill -79928 40 1 -79928 38 -1 air destroy
 #to stage3b - the first door
 execute if score stage_main_thread AzrTimerStack matches 31.. if score playerCount Azr_system matches 3.. run tellraw @a[tag=DebugMode,tag=azrPlayer] {"text":"[DEBUG MODE MESSAGE] You have opened stage3β - DOOR I"}
 execute if score stage_main_thread AzrTimerStack matches 31.. if score playerCount Azr_system matches 3.. run fill -79934 40 -1 -79934 38 1 air destroy
-execute if score stage_main_thread AzrTimerStack matches 31.. run tellraw @a[tag=azrPlayer,tag=!hasLifeVitae] {"text":""}
-execute if score stage_main_thread AzrTimerStack matches 31.. run tellraw @a[tag=azrPlayer,tag=!hasLifeVitae] {"text":"成功通过了第1关的挑战！"}
-execute if score stage_main_thread AzrTimerStack matches 31.. run tellraw @a[tag=azrPlayer,tag=!hasLifeVitae] {"text":"在此之后还会有数不尽的敌人与关卡，请随时做好死亡的准备。"}
+execute if score stage_main_thread AzrTimerStack matches 31.. run tellraw @a[tag=azrShowDialog,tag=!hasLifeVitae] {"text":""}
+execute if score stage_main_thread AzrTimerStack matches 31.. run tellraw @a[tag=azrShowDialog,tag=!hasLifeVitae] {"text":"成功通过了第1关的挑战！"}
+execute if score stage_main_thread AzrTimerStack matches 31.. run tellraw @a[tag=azrShowDialog,tag=!hasLifeVitae] {"text":"在此之后还会有数不尽的敌人与关卡，请随时做好死亡的准备。"}
 execute if score stage_main_thread AzrTimerStack matches 31.. run tellraw @a[tag=azrPlayer,tag=!hasLifeVitae] {"text":"你已永久解锁「生命手册」。记得收集绿宝石与素材，使用手册换取必要的武器与道具。"}
 execute if score stage_main_thread AzrTimerStack matches 31.. run tellraw @a[tag=azrPlayer,tag=!hasLifeVitae] {"text":"打开背包用鼠标选定其以开启商店。"}
 execute if score stage_main_thread AzrTimerStack matches 31.. run tag @a[tag=azrPlayer,tag=!hasLifeVitae] add hasLifeVitae
-execute if score stage_main_thread AzrTimerStack matches 31.. run tellraw @a[tag=azrPlayer,tag=!hasLifeVitae] {"text":""}
+execute if score stage_main_thread AzrTimerStack matches 31.. run tellraw @a[tag=azrShowDialog,tag=!hasLifeVitae] {"text":""}
 execute if score stage_main_thread AzrTimerStack matches 31.. run scoreboard players set stage Azr_system 3
 execute if score stage_main_thread AzrTimerStack matches 31.. run scoreboard players set @a[tag=azrPlayer] Azr_wave 1
 execute if score stage_main_thread AzrTimerStack matches 31.. run scoreboard players reset tick_main_thread AzrTimerStack

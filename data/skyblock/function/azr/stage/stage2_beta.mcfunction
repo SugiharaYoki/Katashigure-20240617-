@@ -1,6 +1,6 @@
 #开局行为
 execute if score stage_main_thread AzrTimerStack matches 1 run tag @a[tag=azrPlayer] add azrUpdateSpawnPoint
-execute if score stage_main_thread AzrTimerStack matches 1 run title @a[tag=azrPlayer] actionbar {"color":"red","text":"Stage 2 - Wave 1"}
+execute if score stage_main_thread AzrTimerStack matches 1 run title @a[tag=azrShowDialog] actionbar {"color":"red","text":"Stage 2 - Wave 1"}
 execute if score stage_main_thread AzrTimerStack matches 1 run bossbar add azr:progress_bar_normal "Stage 2"
 execute if score stage_main_thread AzrTimerStack matches 1 run bossbar set azr:progress_bar_normal color white
 execute if score stage_main_thread AzrTimerStack matches 1 run bossbar set azr:progress_bar_normal players @a[tag=azrPlayer]
@@ -10,16 +10,16 @@ execute if score stage_main_thread AzrTimerStack matches 1..99 store result boss
 execute if score stage_main_thread AzrTimerStack matches 99 run bossbar remove azr:progress_bar_normal
 #刷怪时序
 #第一波
-execute if score stage_main_thread AzrTimerStack matches 21 run playsound block.bell.use ambient @a[tag=azrPlayer] -79887 50 164 100 0.7
-execute if score stage_main_thread AzrTimerStack matches 23 run playsound block.bell.use ambient @a[tag=azrPlayer] -79887 50 164 100 0.7
-execute if score stage_main_thread AzrTimerStack matches 25 run playsound block.bell.use ambient @a[tag=azrPlayer] -79887 50 164 100 0.7
-execute if score stage_main_thread AzrTimerStack matches 27 run playsound block.bell.use ambient @a[tag=azrPlayer] -79887 50 164 100 0.7
-execute if score stage_main_thread AzrTimerStack matches 29 run playsound block.bell.use ambient @a[tag=azrPlayer] -79887 50 164 100 0.7
-execute if score stage_main_thread AzrTimerStack matches 21 run tellraw @a[tag=azrPlayer] {"text":"？？？：","color":"aqua"}
-execute if score stage_main_thread AzrTimerStack matches 21 unless score playerCount Azr_system matches 5.. run tellraw @a[tag=azrPlayer] {"text":"“挑战者到达第一关口，出兵迎战。”","color":"white"}
-execute if score stage_main_thread AzrTimerStack matches 21 if score playerCount Azr_system matches 5.. run tellraw @a[tag=azrPlayer] {"text":"“第一关口有众多人类闯入，准备进行驱逐。”","color":"white"}
-execute if score stage_main_thread AzrTimerStack matches 80 run tellraw @a[tag=azrPlayer] {"text":"第一关口守备军：","color":"aqua"}
-execute if score stage_main_thread AzrTimerStack matches 80 run tellraw @a[tag=azrPlayer] {"text":"“喂，这些人是不是有些太强了？怎么回事？！”","color":"white"}
+execute if score stage_main_thread AzrTimerStack matches 21 run playsound block.bell.use ambient @a[tag=azrShowDialog] -79887 50 164 100 0.7
+execute if score stage_main_thread AzrTimerStack matches 23 run playsound block.bell.use ambient @a[tag=azrShowDialog] -79887 50 164 100 0.7
+execute if score stage_main_thread AzrTimerStack matches 25 run playsound block.bell.use ambient @a[tag=azrShowDialog] -79887 50 164 100 0.7
+execute if score stage_main_thread AzrTimerStack matches 27 run playsound block.bell.use ambient @a[tag=azrShowDialog] -79887 50 164 100 0.7
+execute if score stage_main_thread AzrTimerStack matches 29 run playsound block.bell.use ambient @a[tag=azrShowDialog] -79887 50 164 100 0.7
+execute if score stage_main_thread AzrTimerStack matches 21 run tellraw @a[tag=azrShowDialog] {"text":"？？？：","color":"aqua"}
+execute if score stage_main_thread AzrTimerStack matches 21 unless score playerCount Azr_system matches 5.. run tellraw @a[tag=azrShowDialog] {"text":"“挑战者到达第一关口，出兵迎战。”","color":"white"}
+execute if score stage_main_thread AzrTimerStack matches 21 if score playerCount Azr_system matches 5.. run tellraw @a[tag=azrShowDialog] {"text":"“第一关口有众多人类闯入，准备进行驱逐。”","color":"white"}
+execute if score stage_main_thread AzrTimerStack matches 80 run tellraw @a[tag=azrShowDialog] {"text":"第一关口守备军：","color":"aqua"}
+execute if score stage_main_thread AzrTimerStack matches 80 run tellraw @a[tag=azrShowDialog] {"text":"“喂，这些人是不是有些太强了？怎么回事？！”","color":"white"}
 execute if score stage_main_thread AzrTimerStack matches 2 positioned -79922 38 14 run function skyblock:azr/m/zombie_t1
 execute if score stage_main_thread AzrTimerStack matches 4 positioned -79940 38 14 run function skyblock:azr/m/zombie_t1
 execute if score stage_main_thread AzrTimerStack matches 5 if score playerCount Azr_system matches 4.. positioned -79922 38 14 run function skyblock:azr/m/zombie_t1
@@ -56,14 +56,14 @@ execute if score stage_main_thread AzrTimerStack matches 33 if score playerCount
 execute if score stage_main_thread AzrTimerStack matches 34 positioned -79922 38 14 run function skyblock:azr/m/zombie_t1_6hp
 execute if score stage_main_thread AzrTimerStack matches 34 positioned -79940 38 14 run function skyblock:azr/m/zombie_t1_6hp
 execute if score stage_main_thread AzrTimerStack matches 35..37 if entity @e[tag=AzrielMob,tag=!AzrielDecMob] run scoreboard players set stage_main_thread AzrTimerStack 35
-execute if score stage_main_thread AzrTimerStack matches 38 run title @a[tag=azrPlayer] actionbar {"text":"Wave Clear","color":"green"}
+execute if score stage_main_thread AzrTimerStack matches 38 run title @a[tag=azrShowDialog] actionbar {"text":"Wave Clear","color":"green"}
 execute if score stage_main_thread AzrTimerStack matches 38 run scoreboard players set @a[tag=azrPlayer] Azr_wave 2
-execute if score stage_main_thread AzrTimerStack matches 42 run title @a[tag=azrPlayer] actionbar {"text":"5","color":"yellow"}
-execute if score stage_main_thread AzrTimerStack matches 43 run title @a[tag=azrPlayer] actionbar {"text":"4","color":"yellow"}
-execute if score stage_main_thread AzrTimerStack matches 44 run title @a[tag=azrPlayer] actionbar {"text":"3","color":"red"}
-execute if score stage_main_thread AzrTimerStack matches 45 run title @a[tag=azrPlayer] actionbar {"text":"2","color":"red"}
-execute if score stage_main_thread AzrTimerStack matches 46 run title @a[tag=azrPlayer] actionbar {"text":"1","color":"red"}
-execute if score stage_main_thread AzrTimerStack matches 47 run title @a[tag=azrPlayer] actionbar {"text":"Stage 2 - Wave 2","color":"red"}
+execute if score stage_main_thread AzrTimerStack matches 42 run title @a[tag=azrShowDialog] actionbar {"text":"5","color":"yellow"}
+execute if score stage_main_thread AzrTimerStack matches 43 run title @a[tag=azrShowDialog] actionbar {"text":"4","color":"yellow"}
+execute if score stage_main_thread AzrTimerStack matches 44 run title @a[tag=azrShowDialog] actionbar {"text":"3","color":"red"}
+execute if score stage_main_thread AzrTimerStack matches 45 run title @a[tag=azrShowDialog] actionbar {"text":"2","color":"red"}
+execute if score stage_main_thread AzrTimerStack matches 46 run title @a[tag=azrShowDialog] actionbar {"text":"1","color":"red"}
+execute if score stage_main_thread AzrTimerStack matches 47 run title @a[tag=azrShowDialog] actionbar {"text":"Stage 2 - Wave 2","color":"red"}
 execute if score stage_main_thread AzrTimerStack matches 49 positioned -79935 38 20 run function skyblock:azr/m/pillager_t1
 execute if score stage_main_thread AzrTimerStack matches 49 positioned -79935 38 8 run function skyblock:azr/m/pillager_t1
 execute if score stage_main_thread AzrTimerStack matches 49 positioned -79927 38 20 run function skyblock:azr/m/pillager_t1
@@ -118,9 +118,9 @@ execute if score stage_main_thread AzrTimerStack matches 92 positioned -79935 38
 execute if score stage_main_thread AzrTimerStack matches 92 if score playerCount Azr_system matches 5.. positioned -79940 38 14 run function skyblock:azr/m/zombie_t1_5hp_full_armor
 execute if score stage_main_thread AzrTimerStack matches 92 if score playerCount Azr_system matches 5.. positioned -79922 38 14 run function skyblock:azr/m/zombie_t1_5hp_full_armor
 execute if score stage_main_thread AzrTimerStack matches 94..98 if entity @e[tag=AzrielMob,tag=!AzrielDecMob] run scoreboard players set stage_main_thread AzrTimerStack 94
-execute if score stage_main_thread AzrTimerStack matches 99 run playsound ambient.crimson_forest.loop ambient @a[tag=azrPlayer] -78000 100 0 1000
-execute if score stage_main_thread AzrTimerStack matches 99 run playsound ambient.crimson_forest.mood ambient @a[tag=azrPlayer] -78000 100 0 1000
-execute if score stage_main_thread AzrTimerStack matches 99 run playsound ambient.crimson_forest.additions ambient @a[tag=azrPlayer] -78000 100 0 1000
+execute if score stage_main_thread AzrTimerStack matches 99 run playsound ambient.crimson_forest.loop ambient @a[tag=azrShowDialog] -78000 100 0 1000
+execute if score stage_main_thread AzrTimerStack matches 99 run playsound ambient.crimson_forest.mood ambient @a[tag=azrShowDialog] -78000 100 0 1000
+execute if score stage_main_thread AzrTimerStack matches 99 run playsound ambient.crimson_forest.additions ambient @a[tag=azrShowDialog] -78000 100 0 1000
 execute if score stage_main_thread AzrTimerStack matches 99 run fill -79931 38 22 -79931 40 22 air destroy
 #to stage3b - the second door
 execute if score stage_main_thread AzrTimerStack matches 99 if score playerCount Azr_system matches 3.. run tellraw @a[tag=DebugMode,tag=azrPlayer] {"text":"[DEBUG MODE MESSAGE] You have opened stage3β - DOOR II"}
@@ -133,6 +133,6 @@ execute if score stage_main_thread AzrTimerStack matches 99 run scoreboard playe
 execute if score stage_main_thread AzrTimerStack matches 99 run tellraw @a[scores={Azr_skillPoints=..1}] {"text":"永久升级 - 木剑/斧（尸化）将拥有耐久I的附魔效果","color":"light_purple"}
 execute if score stage_main_thread AzrTimerStack matches 99 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..1}] Azr_skillPoints 2
 execute if score stage_main_thread AzrTimerStack matches 99 run advancement grant @a[tag=azrPlayer] only skyblock:azr/azr_stage2
-execute if score stage_main_thread AzrTimerStack matches 99 run title @a[tag=azrPlayer] actionbar {"text":"Stage Clear","color":"green"}
+execute if score stage_main_thread AzrTimerStack matches 99 run title @a[tag=azrShowDialog] actionbar {"text":"Stage Clear","color":"green"}
 execute if score stage_main_thread AzrTimerStack matches 99 run tellraw @a[tag=azrPlayer,scores={AZR_chainKillUpg_pts=..0},tag=hasSkills] [{"text":"索命连击","color":"gold"},{"text":"可用点数已增加，目前为：1","color":"green"}]
 execute if score stage_main_thread AzrTimerStack matches 99 run scoreboard players set @a[scores={AZR_chainKillUpg_pts=..0}] AZR_chainKillUpg_pts 1

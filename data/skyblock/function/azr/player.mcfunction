@@ -8,7 +8,7 @@ execute as @s[tag=azrUpdateSpawnPoint,nbt={OnGround:1b}] at @s if block ~ ~ ~ ai
 execute as @s[tag=azrUpdateSpawnPoint,nbt={OnGround:1b}] at @s if block ~ ~ ~ air if block ~ ~1 ~ air run tag @s remove azrUpdateSpawnPoint
 
 #商店系统
-execute as @s[tag=hasLifeVitae] run function skyblock:azr/shop/core
+execute as @s[tag=hasLifeVitae] at @s run function skyblock:azr/shop/core
 execute as @s[scores={Azr_Shop=84301..8439999}] run function skyblock:azr/shop/purchase
 execute as @s[scores={Azr_Shop=8900101..8900199}] run function skyblock:azr/chainkill/assign
 

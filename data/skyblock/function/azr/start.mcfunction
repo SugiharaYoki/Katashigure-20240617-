@@ -70,8 +70,9 @@ team modify AzrBossA friendlyFire false
 #重置bossbar
 bossbar remove azr:progress_bar_normal
 bossbar remove azr:progress_bar_special
+bossbar remove azr:progress_bar_special_0
 bossbar remove azr:boss_hp_bar
-bossbar remove minecraft:8432102
+bossbar remove azr:boss_hp_bar_0
 #清场
 kill @e[type=!player,tag=!protected_entity,x=-80000,y=100,z=0,distance=0..1000]
 #初始化玩家

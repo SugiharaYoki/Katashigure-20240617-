@@ -3,15 +3,15 @@ execute if score stage_main_thread AzrTimerStack matches 99 if entity @a[x=-7989
 
 execute if score stage_main_thread AzrTimerStack matches 110 run tag @a[tag=azrPlayer] add azrUpdateSpawnPoint
 execute if score stage_main_thread AzrTimerStack matches 110 run tellraw @a[tag=DebugMode,tag=azrPlayer] [{"text":"[DEBUG MODE MESSAGE] You are playing \"Stage Event5\", with playerCount = "},{"score":{"objective":"Azr_system","name":"playerCount"}},{"text":" Maximum Seconds = 150"}]
-execute if score stage_main_thread AzrTimerStack matches 109..116 run playsound minecraft:ambient.warped_forest.additions master @a[tag=azrPlayer] -79891 60 -60 10 0.6
-execute if score stage_main_thread AzrTimerStack matches 109..116 run playsound minecraft:ambient.warped_forest.loop master @a[tag=azrPlayer] -79891 60 -60 10 0.6
-execute if score stage_main_thread AzrTimerStack matches 109..116 run playsound minecraft:ambient.warped_forest.mood master @a[tag=azrPlayer] -79891 60 -60 10 0.6
-execute if score stage_main_thread AzrTimerStack matches 110 run playsound minecraft:entity.generic.extinguish_fire master @a[tag=azrPlayer] -79883.93 47.00 -60.02 5 1
-execute if score stage_main_thread AzrTimerStack matches 110 run playsound minecraft:entity.generic.extinguish_fire master @a[tag=azrPlayer] -79897.93 47.00 -60.02 5 1
-execute if score stage_main_thread AzrTimerStack matches 112 run playsound minecraft:entity.generic.extinguish_fire master @a[tag=azrPlayer] -79883.93 47.00 -60.02 5 1
-execute if score stage_main_thread AzrTimerStack matches 112 run playsound minecraft:entity.generic.extinguish_fire master @a[tag=azrPlayer] -79897.93 47.00 -60.02 5 1
-execute if score stage_main_thread AzrTimerStack matches 114 run playsound minecraft:entity.generic.extinguish_fire master @a[tag=azrPlayer] -79883.93 47.00 -60.02 5 1
-execute if score stage_main_thread AzrTimerStack matches 114 run playsound minecraft:entity.generic.extinguish_fire master @a[tag=azrPlayer] -79897.93 47.00 -60.02 5 1
+execute if score stage_main_thread AzrTimerStack matches 109..116 run playsound minecraft:ambient.warped_forest.additions master @a[tag=azrShowDialog] -79891 60 -60 10 0.6
+execute if score stage_main_thread AzrTimerStack matches 109..116 run playsound minecraft:ambient.warped_forest.loop master @a[tag=azrShowDialog] -79891 60 -60 10 0.6
+execute if score stage_main_thread AzrTimerStack matches 109..116 run playsound minecraft:ambient.warped_forest.mood master @a[tag=azrShowDialog] -79891 60 -60 10 0.6
+execute if score stage_main_thread AzrTimerStack matches 110 run playsound minecraft:entity.generic.extinguish_fire master @a[tag=azrShowDialog] -79883.93 47.00 -60.02 5 1
+execute if score stage_main_thread AzrTimerStack matches 110 run playsound minecraft:entity.generic.extinguish_fire master @a[tag=azrShowDialog] -79897.93 47.00 -60.02 5 1
+execute if score stage_main_thread AzrTimerStack matches 112 run playsound minecraft:entity.generic.extinguish_fire master @a[tag=azrShowDialog] -79883.93 47.00 -60.02 5 1
+execute if score stage_main_thread AzrTimerStack matches 112 run playsound minecraft:entity.generic.extinguish_fire master @a[tag=azrShowDialog] -79897.93 47.00 -60.02 5 1
+execute if score stage_main_thread AzrTimerStack matches 114 run playsound minecraft:entity.generic.extinguish_fire master @a[tag=azrShowDialog] -79883.93 47.00 -60.02 5 1
+execute if score stage_main_thread AzrTimerStack matches 114 run playsound minecraft:entity.generic.extinguish_fire master @a[tag=azrShowDialog] -79897.93 47.00 -60.02 5 1
 execute if score stage_main_thread AzrTimerStack matches 110 run setblock -79883 50 -66 air
 execute if score stage_main_thread AzrTimerStack matches 112 run setblock -79883 50 -64 air
 execute if score stage_main_thread AzrTimerStack matches 114 run setblock -79883 50 -62 air
@@ -84,9 +84,9 @@ execute if score stage_main_thread AzrTimerStack matches 135 run summon zombie -
 execute if score stage_main_thread AzrTimerStack matches 135 run summon zombie -79893 43 -58 {PersistenceRequired:1b,Tags:["AzrielTempSpec1"],Silent:1b,DeathLootTable:"skyblock:azriel_zombie_knight_tier1",Health:24.0f,CustomName:'"重甲僵尸"',CanPickUpLoot:0b,IsBaby:0b,HandItems:[{count:1,id:"wooden_sword",components:{custom_name:'{"text":"木剑","italic":false,"color":"white"}'}},{count:1,id:"shield",components:{custom_name:'{"text":"盾","italic":false,"color":"white"}'}}],HandDropChances:[0.001f,0.001f],ArmorItems:[{count:1,id:"iron_boots",components:{custom_name:'{"text":"铁靴","italic":false,"color":"white"}'}},{count:1,id:"iron_leggings",components:{custom_name:'{"text":"铁护腿","italic":false,"color":"white"}'}},{count:1,id:"iron_chestplate",components:{custom_name:'{"text":"铁胸甲","italic":false,"color":"white"}'}},{count:1,id:"iron_helmet",components:{custom_name:'{"text":"铁盔","italic":false,"color":"white"}'}}],ArmorDropChances:[0.001f,0.001f,0.001f,0.001f],attributes:[{id:"max_health",base:24.0d},{id:"attack_damage",base:1.5d},{id:"knockback_resistance",base:0.5d},{id:"movement_speed",base:0.14d}]}
 
 execute if score stage_main_thread AzrTimerStack matches 136..149 as @a[tag=azrPlayer] at @s if entity @e[tag=AzrielTempSpec1,distance=0..23] run scoreboard players set stage_main_thread AzrTimerStack 146
-execute if score stage_main_thread AzrTimerStack matches 150 run playsound ambient.crimson_forest.loop ambient @a[tag=azrPlayer] -78000 100 0 1000
-execute if score stage_main_thread AzrTimerStack matches 150 run playsound ambient.crimson_forest.mood ambient @a[tag=azrPlayer] -78000 100 0 1000
-execute if score stage_main_thread AzrTimerStack matches 150 run playsound ambient.crimson_forest.additions ambient @a[tag=azrPlayer] -78000 100 0 1000
+execute if score stage_main_thread AzrTimerStack matches 150 run playsound ambient.crimson_forest.loop ambient @a[tag=azrShowDialog] -78000 100 0 1000
+execute if score stage_main_thread AzrTimerStack matches 150 run playsound ambient.crimson_forest.mood ambient @a[tag=azrShowDialog] -78000 100 0 1000
+execute if score stage_main_thread AzrTimerStack matches 150 run playsound ambient.crimson_forest.additions ambient @a[tag=azrShowDialog] -78000 100 0 1000
 execute if score stage_main_thread AzrTimerStack matches 150 run fill -79891 44 -67 -79890 42 -67 minecraft:air destroy
 execute if score stage_main_thread AzrTimerStack matches 150 run fill -79881 42 -60 -79881 44 -61 minecraft:air destroy
 execute if score stage_main_thread AzrTimerStack matches 150 run setblock -79870 42 -43 purple_candle[lit=true]

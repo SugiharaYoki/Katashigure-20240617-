@@ -1,17 +1,17 @@
 execute if score stage_main_thread AzrTimerStack matches ..108 run scoreboard players set stage_main_thread AzrTimerStack 0
 execute if score stage_main_thread AzrTimerStack matches ..108 if entity @a[x=-79931,y=38,z=-37,distance=0..4,tag=azrPlayer] run scoreboard players set stage_main_thread AzrTimerStack 109
 
-execute if score stage_main_thread AzrTimerStack matches 110 run playsound minecraft:entity.vindicator.ambient hostile @a[tag=azrPlayer] -79930 38 -34 3 0.9
-execute if score stage_main_thread AzrTimerStack matches 115 run playsound minecraft:entity.pillager.ambient hostile @a[tag=azrPlayer] -79932 38 -30 3 0.9
-execute if score stage_main_thread AzrTimerStack matches 120 run playsound minecraft:entity.pillager.ambient hostile @a[tag=azrPlayer] -79932 38 -30 3 0.7
-execute if score stage_main_thread AzrTimerStack matches 110 run tellraw @a[tag=azrPlayer] {"text":"圣殿巡逻兵：","color":"aqua"}
-execute if score stage_main_thread AzrTimerStack matches 110 run tellraw @a[tag=azrPlayer] {"text":"“有和左翼的巡逻小队联系上吗？”","color":"white"}
-execute if score stage_main_thread AzrTimerStack matches 115 run tellraw @a[tag=azrPlayer] {"text":"弩手：","color":"aqua"}
-execute if score stage_main_thread AzrTimerStack matches 115 if score playerCount Azr_system matches ..1 run tellraw @a[tag=azrPlayer] {"text":"“全部都失联了。啊……那边的人类，前面的建筑坍塌得很严重。”","color":"white"}
-execute if score stage_main_thread AzrTimerStack matches 115 if score playerCount Azr_system matches 2.. run tellraw @a[tag=azrPlayer] {"text":"“全部都失联了。啊……那边的几个人类，前面的建筑坍塌得很严重。”","color":"white"}
-execute if score stage_main_thread AzrTimerStack matches 121 run tellraw @a[tag=azrPlayer] {"text":"弩手：","color":"aqua"}
-execute if score stage_main_thread AzrTimerStack matches 121 if score playerCount Azr_system matches ..1 run tellraw @a[tag=azrPlayer] {"text":"“第一关口守卫队的其他人进去之后到现在都没回来。你一定要当心——剩余的部队已经在路上了。”","color":"white"}
-execute if score stage_main_thread AzrTimerStack matches 121 if score playerCount Azr_system matches 2.. run tellraw @a[tag=azrPlayer] {"text":"“第一关口守卫队的其他人进去之后到现在都没回来。你们一定要当心——剩余的部队已经在路上了。”","color":"white"}
+execute if score stage_main_thread AzrTimerStack matches 110 run playsound minecraft:entity.vindicator.ambient hostile @a[tag=azrShowDialog] -79930 38 -34 3 0.9
+execute if score stage_main_thread AzrTimerStack matches 115 run playsound minecraft:entity.pillager.ambient hostile @a[tag=azrShowDialog] -79932 38 -30 3 0.9
+execute if score stage_main_thread AzrTimerStack matches 120 run playsound minecraft:entity.pillager.ambient hostile @a[tag=azrShowDialog] -79932 38 -30 3 0.7
+execute if score stage_main_thread AzrTimerStack matches 110 run tellraw @a[tag=azrShowDialog] {"text":"圣殿巡逻兵：","color":"aqua"}
+execute if score stage_main_thread AzrTimerStack matches 110 run tellraw @a[tag=azrShowDialog] {"text":"“有和左翼的巡逻小队联系上吗？”","color":"white"}
+execute if score stage_main_thread AzrTimerStack matches 115 run tellraw @a[tag=azrShowDialog] {"text":"弩手：","color":"aqua"}
+execute if score stage_main_thread AzrTimerStack matches 115 if score playerCount Azr_system matches ..1 run tellraw @a[tag=azrShowDialog] {"text":"“全部都失联了。啊……那边的人类，前面的建筑坍塌得很严重。”","color":"white"}
+execute if score stage_main_thread AzrTimerStack matches 115 if score playerCount Azr_system matches 2.. run tellraw @a[tag=azrShowDialog] {"text":"“全部都失联了。啊……那边的几个人类，前面的建筑坍塌得很严重。”","color":"white"}
+execute if score stage_main_thread AzrTimerStack matches 121 run tellraw @a[tag=azrShowDialog] {"text":"弩手：","color":"aqua"}
+execute if score stage_main_thread AzrTimerStack matches 121 if score playerCount Azr_system matches ..1 run tellraw @a[tag=azrShowDialog] {"text":"“第一关口守卫队的其他人进去之后到现在都没回来。你一定要当心——剩余的部队已经在路上了。”","color":"white"}
+execute if score stage_main_thread AzrTimerStack matches 121 if score playerCount Azr_system matches 2.. run tellraw @a[tag=azrShowDialog] {"text":"“第一关口守卫队的其他人进去之后到现在都没回来。你们一定要当心——剩余的部队已经在路上了。”","color":"white"}
 
 execute if score stage_main_thread AzrTimerStack matches 122..164 run scoreboard players set stage_main_thread AzrTimerStack 122
 execute if score stage_main_thread AzrTimerStack matches ..200 if entity @a[x=-79917,y=39,z=-47,distance=0..4,tag=azrPlayer] run scoreboard players set stage_main_thread AzrTimerStack 209

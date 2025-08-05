@@ -1,13 +1,13 @@
 advancement grant @a[tag=azrPlayer] only skyblock:azr/azr_stage15
 
-title @a[tag=azrPlayer] actionbar {"text":"Stage Clear","color":"green"}
-playsound ambient.crimson_forest.loop ambient @a[tag=azrPlayer] -78000 100 0 1000
-playsound minecraft:ambient.nether_wastes.mood ambient @a[tag=azrPlayer] -78000 100 0 1000 0.3
-playsound ambient.crimson_forest.additions ambient @a[tag=azrPlayer] -78000 100 0 1000
+title @a[tag=azrShowDialog] actionbar {"text":"Stage Clear","color":"green"}
+playsound ambient.crimson_forest.loop ambient @a[tag=azrShowDialog] -78000 100 0 1000
+playsound minecraft:ambient.nether_wastes.mood ambient @a[tag=azrShowDialog] -78000 100 0 1000 0.3
+playsound ambient.crimson_forest.additions ambient @a[tag=azrShowDialog] -78000 100 0 1000
 scoreboard players set @a[tag=azrPlayer] Azr_wave 44
-playsound ambient.warped_forest.loop ambient @a[tag=azrPlayer] -78000 100 0 1000 0.7
-playsound ambient.warped_forest.mood ambient @a[tag=azrPlayer] -78000 100 0 1000 0.7
-playsound ambient.warped_forest.additions ambient @a[tag=azrPlayer] -78000 100 0 1000 0.7
+playsound ambient.warped_forest.loop ambient @a[tag=azrShowDialog] -78000 100 0 1000 0.7
+playsound ambient.warped_forest.mood ambient @a[tag=azrShowDialog] -78000 100 0 1000 0.7
+playsound ambient.warped_forest.additions ambient @a[tag=azrShowDialog] -78000 100 0 1000 0.7
 scoreboard objectives remove stageSecondsT1
 bossbar remove azr:progress_bar_normal
 scoreboard players set @e[tag=sc,limit=1] stageSecondsT1 9999

@@ -1,3 +1,3 @@
 # event12
-    # storge
+    # storage
     setblock -79758 44 -187 minecraft:white_shulker_box

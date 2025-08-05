@@ -124,20 +124,19 @@ execute if score stage_main_thread AzrTimerStack matches 2100 if score playerCou
 execute if score stage_main_thread AzrTimerStack matches 2150 if score playerCount Azr_system matches 5.. run summon zombie_villager -79712 45 -386 {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_zombie_tier2_armorer",Health:16.0f,CustomName:'"僵尸盔甲匠"',VillagerData:{profession:"armorer",level:99,type:"plains"},CanPickUpLoot:0b,IsBaby:0b,HandItems:[{count:1,id:"iron_trapdoor",components:{custom_name:'{"text":"工匠的桌板","italic":false,"color":"white"}'}},{}],HandDropChances:[0.01f,0.01f],ArmorItems:[{},{},{count:1,id:"iron_chestplate",components:{enchantments:{protection:2}}},{}],ArmorDropChances:[0.01f,0.01f,0.01f,0.01f],attributes:[{id:"max_health",base:16.0d},{id:"attack_damage",base:4.5d}]}
 
 execute if score stage_main_thread AzrTimerStack matches 2260..2276 if entity @e[tag=AzrielMob,tag=!AzrielDecMob] run scoreboard players set stage_main_thread AzrTimerStack 2273
-execute if score stage_main_thread AzrTimerStack matches 2277 run title @a[tag=azrPlayer] actionbar {"text":"Extra Stage Clear","color":"green"}
+execute if score stage_main_thread AzrTimerStack matches 2277 run title @a[tag=azrShowDialog] actionbar {"text":"Extra Stage Clear","color":"green"}
 execute if score stage_main_thread AzrTimerStack matches 2277 run advancement grant @a[tag=azrPlayer] only skyblock:azr/azr_stage_bonus_object
 execute if score stage_main_thread AzrTimerStack matches 2277 as @a[tag=azrPlayer] at @s run give @s shulker_shell[custom_name='{"text":"弹簧箭盒","italic":false}',lore=['{"text":"敲击 - 散射36支箭矢（射程较高）","color":"yellow","italic":false}'],enchantments={blast_protection:1},custom_data={arrow_box:1b},custom_model_data={floats:[100001.0]}] 5
 execute if score stage_main_thread AzrTimerStack matches 2277 as @a[tag=azrPlayer] at @s run tag @s add AZS_BoS07
-execute if score stage_main_thread AzrTimerStack matches 2277 run playsound ambient.crimson_forest.loop ambient @a[tag=azrPlayer] -78000 100 0 1000
-execute if score stage_main_thread AzrTimerStack matches 2277 run playsound minecraft:ambient.nether_wastes.mood ambient @a[tag=azrPlayer] -78000 100 0 1000 0.3
-execute if score stage_main_thread AzrTimerStack matches 2277 run playsound ambient.crimson_forest.additions ambient @a[tag=azrPlayer] -78000 100 0 1000
+execute if score stage_main_thread AzrTimerStack matches 2277 run playsound ambient.crimson_forest.loop ambient @a[tag=azrShowDialog] -78000 100 0 1000
+execute if score stage_main_thread AzrTimerStack matches 2277 run playsound minecraft:ambient.nether_wastes.mood ambient @a[tag=azrShowDialog] -78000 100 0 1000 0.3
+execute if score stage_main_thread AzrTimerStack matches 2277 run playsound ambient.crimson_forest.additions ambient @a[tag=azrShowDialog] -78000 100 0 1000
 #execute if entity @e[tag=sc,limit=1,scores={stageSeconds=2277}] run scoreboard players set @e[tag=sc,limit=1] Azr_Progress 53
 
 execute if score stage_main_thread AzrTimerStack matches 2277 as @a[tag=azrPlayer] run function skyblock:azr/items/netherite_chestplate_t1
 
 execute if score stage_main_thread AzrTimerStack matches 2277 run setblock -79765 24 -449 minecraft:crimson_button[face=floor,facing=north]
 execute if score stage_main_thread AzrTimerStack matches 2277 run scoreboard players set stage_main_thread AzrTimerStack 2300
-execute if score stage_main_thread AzrTimerStack matches 2278.. run scoreboard players set stage_main_thread AzrTimerStack 2273
 #【焰型体 lv8】summon blaze ~ ~ ~ {PersistenceRequired:1,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_blaze_tier1",CustomName:"\"焰型体\"",Attributes:[{Name:generic.max_health,Base:5.0},{Name:generic.attack_damage,Base:4.0},{Name:generic.movement_speed,Base:0.22}],Health:5.0f}
 #【坍缩焰型体 lv9】summon blaze ~ ~ ~ {PersistenceRequired:1,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_blaze_tier1_ht",CustomName:"\"坍缩焰型体\"",Attributes:[{Name:generic.max_health,Base:15.0},{Name:generic.attack_damage,Base:9.0},{Name:generic.movement_speed,Base:0.24}],Health:15.0f}
 #【猪灵弩手 lv7】summon piglin -79704 46 -378 {IsImmuneToZombification:1b,PersistenceRequired:1,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_piglin_tier1",Attributes:[{Name:generic.max_health,Base:10.0},{Name:generic.attack_damage,Base:1.5},{Name:generic.movement_speed,Base:0.47}],Health:10.0f,CustomName:"\"猪灵弩手\"",CanPickUpLoot:0,IsBaby:0,HandItems:[{Count:1,id:"crossbow",tag:{display:{Name:"{\"text\":\"弩·传统\",\"italic\":false,\"color\":\"white\"}"}}}],HandDropChances:[0.001f],ArmorItems:[{},{Count:1,id:leather_leggings,tag:{display:{Name:"{\"text\":\"皮革裤\",\"italic\":false,\"color\":\"white\"}"}}},{Count:1,id:"leather_chestplate",tag:{display:{Name:"{\"text\":\"皮革甲\",\"italic\":false,\"color\":\"white\"}"}}},{}],ArmorDropChances:[0.01f,0.01f,0.01f,0.01f]}
