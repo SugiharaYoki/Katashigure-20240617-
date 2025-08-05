@@ -81,6 +81,7 @@ execute if score stage_main_thread AzrTimerStack matches 466..470 run scoreboard
 
 # execute if score stage_main_thread AzrTimerStack matches ..699 if entity @a[tag=azrPlayer,x=-79466,y=84,z=-338,distance=0..3] run scoreboard players set stage_main_thread AzrTimerStack 700
 execute if score stage_main_thread AzrTimerStack matches 701 run tag @a[tag=azrPlayer] add AZR_fakeDeath
+execute if score stage_main_thread AzrTimerStack matches 701.. at @a[tag=azrPlayer,tag=AZR_fakeDeath] positioned ~ 52 ~ if entity @s[dy=0] run damage @s 1000000 fall
 execute if score stage_main_thread AzrTimerStack matches 701 run tp @a[tag=azrPlayer,x=-79466,y=84,z=-338,distance=3..] -79466 84 -338
 execute if score stage_main_thread AzrTimerStack matches 701 run summon fireball -79465.5 76 -337.5 {ExplosionPower:2,Motion:[0.0d,0.5d,0.0d],acceleration_power:0.05d}
 execute if score stage_main_thread AzrTimerStack matches 706 run effect give @a[tag=azrPlayer] slow_falling 10 0 true

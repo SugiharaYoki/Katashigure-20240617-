@@ -655,6 +655,7 @@ execute if score stage_main_thread AzrTimerStack matches 3045 if score playerCou
 execute if score stage_main_thread AzrTimerStack matches 3045 as @a[tag=azrPlayer] at @s run playsound minecraft:entity.illusioner.ambient master @s ~ ~ ~ 1 0.6
 
 execute if score stage_main_thread AzrTimerStack matches 3045 run tag @a[tag=azrPlayer] add AZR_fakeDeath
+execute if score stage_main_thread AzrTimerStack matches 3045.. at @a[tag=azrPlayer,tag=AZR_fakeDeath] positioned ~ -46 ~ if entity @s[dy=0] run damage @s 1000000 fall
 execute if score stage_main_thread AzrTimerStack matches 3045 run effect clear @a[tag=azrPlayer] minecraft:slow_falling
 execute if score stage_main_thread AzrTimerStack matches 3045 as @a[tag=azrPlayer] run spawnpoint @s -79753 59 -210
 
