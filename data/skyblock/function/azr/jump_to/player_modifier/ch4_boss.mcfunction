@@ -1,5 +1,5 @@
 # 将进度未达到的玩家踢出 - 原判定为 Azr_skillPoints，这里改成使用BH记录
-execute unless score @s SeGa_StandLastBH matches 61.. run return run function skyblock:azr/jump_to/return
+execute unless score @s SeGa_StandLastBH matches 46.. run return run function skyblock:azr/jump_to/return
 
 stopsound @s
 

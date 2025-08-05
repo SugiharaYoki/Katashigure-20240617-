@@ -123,10 +123,10 @@ function skyblock:azr/stage/stage14_end
 
 setblock -79772 26 -386 white_shulker_box
 
-execute if score playerCount Azr_system matches 1 positioned -79772 26 -386 run function skyblock:azr/jump_to/data_modifier/ch4_boss_chests/chest1
-execute if score playerCount Azr_system matches 2..3 positioned -79772 26 -386 run function skyblock:azr/jump_to/data_modifier/ch4_boss_chests/chest2_3
-execute if score playerCount Azr_system matches 4..5 positioned -79772 26 -386 run function skyblock:azr/jump_to/data_modifier/ch4_boss_chests/chest4_5
-execute if score playerCount Azr_system matches 6.. positioned -79772 26 -386 run function skyblock:azr/jump_to/data_modifier/ch4_boss_chests/chest6
+execute if score playerCount Azr_system matches 1 positioned -79772 26 -386 run function skyblock:azr/jump_to/data_modifier/ch4_chests/chest1
+execute if score playerCount Azr_system matches 2..3 positioned -79772 26 -386 run function skyblock:azr/jump_to/data_modifier/ch4_chests/chest2_3
+execute if score playerCount Azr_system matches 4..5 positioned -79772 26 -386 run function skyblock:azr/jump_to/data_modifier/ch4_chests/chest4_5
+execute if score playerCount Azr_system matches 6.. positioned -79772 26 -386 run function skyblock:azr/jump_to/data_modifier/ch4_chests/chest6
 
 setblock -79765 24 -449 air
 
