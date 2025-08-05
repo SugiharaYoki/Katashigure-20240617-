@@ -4,7 +4,6 @@ execute unless score @s SeGa_StandLastBH matches 46.. run return run function sk
 stopsound @s
 
 effect give @s resistance 5 5 true
-effect give @s slow_falling 5 5 true
 
 xp set @s 0
 xp set @s 25 levels
@@ -43,4 +42,4 @@ give @s gold_nugget 48
 # show texts
 tellraw @s {"text":"游戏再续……","color":"green"}
 tp @s -79466 84 -338
-tag @s add azrUpdateSpawnPoint
+tag @s add Azr_fakeDeath
