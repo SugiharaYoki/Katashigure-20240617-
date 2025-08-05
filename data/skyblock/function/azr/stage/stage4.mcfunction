@@ -291,6 +291,11 @@ execute if score stage_main_thread AzrTimerStack matches 268 if score playerCoun
 execute if score stage_main_thread AzrTimerStack matches 268 if score playerCount Azr_system matches 2.. positioned -79937 38 49 run function skyblock:azr/m/skeleton_t1_armor
 execute if score stage_main_thread AzrTimerStack matches 270 if score playerCount Azr_system matches 3.. positioned -79933 38 39 run function skyblock:azr/m/zombie_t2_shovel
 execute if score stage_main_thread AzrTimerStack matches 270 if score playerCount Azr_system matches 3.. positioned -79929 38 39 run function skyblock:azr/m/zombie_t2_shovel
+
+execute if score stage_main_thread AzrTimerStack matches 235 run tellraw @a[tag=azrPlayer] {"text":"第一关口守备军：","color":"aqua"}
+execute if score stage_main_thread AzrTimerStack matches 235 run tellraw @a[tag=azrPlayer] {"text":"“怪、怪物失控了，喂！快点撤退！！”","color":"white"}
+execute if score stage_main_thread AzrTimerStack matches 265 run tellraw @a[tag=azrPlayer] {"text":"第一关口守备军：","color":"aqua"}
+execute if score stage_main_thread AzrTimerStack matches 265 run tellraw @a[tag=azrPlayer] {"text":"“撤退？你就放着挑战者自生自灭吗？快点调用执理大人的碎片！！”","color":"white"}
 execute store result score #temp_rng Azr_system run random value 1..4
 execute store result score #temp_rng Azr_system run random value 1..8
 execute if score stage_main_thread AzrTimerStack matches 271..273 if entity @e[tag=AzrielMob,tag=!AzrielDecMob] run scoreboard players set stage_main_thread AzrTimerStack 274

@@ -363,6 +363,12 @@ execute if score stage_main_thread AzrTimerStack matches 234..243 positioned -79
 execute if score stage_main_thread AzrTimerStack matches 234..243 positioned -79949 32 35 run function skyblock:azr/m/silverfish_t1_corridor
 execute if score stage_main_thread AzrTimerStack matches 234..243 positioned -79955 40 32 run function skyblock:azr/m/silverfish_t1_corridor
 
+
+execute if score stage_main_thread AzrTimerStack matches 212 run tellraw @a[tag=azrPlayer] {"text":"第一关口守备军：","color":"aqua"}
+execute if score stage_main_thread AzrTimerStack matches 212 run tellraw @a[tag=azrPlayer] {"text":"“怪、怪物失控了，喂！快点撤退！！”","color":"white"}
+execute if score stage_main_thread AzrTimerStack matches 228 run tellraw @a[tag=azrPlayer] {"text":"第一关口守备军：","color":"aqua"}
+execute if score stage_main_thread AzrTimerStack matches 228 run tellraw @a[tag=azrPlayer] {"text":"“撤退？你就放着挑战者自生自灭吗？快点调用执理大人的碎片！！”","color":"white"}
+
 execute if score stage_main_thread AzrTimerStack matches 245..246 if score playerCount Azr_system matches 5.. if score mobCount Azr_system matches 25.. run scoreboard players set stage_main_thread AzrTimerStack 245
 execute if score stage_main_thread AzrTimerStack matches 245..246 if score playerCount Azr_system matches 4.. if score mobCount Azr_system matches 30.. run scoreboard players set stage_main_thread AzrTimerStack 245
 execute if score stage_main_thread AzrTimerStack matches 245..246 if score mobCount Azr_system matches 45.. run scoreboard players set stage_main_thread AzrTimerStack 245

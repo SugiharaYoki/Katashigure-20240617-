@@ -1193,6 +1193,7 @@ setblock 90055 23 -1815 minecraft:shroomlight
 execute positioned 90050 20 -1807 run kill @e[distance=0..50,type=!player]
 
 fill 90063 19 -1795 90055 30 -1795 minecraft:structure_void replace minecraft:purple_stained_glass
+fill 90045 29 -1785 90046 31 -1784 gravel
 
 forceload remove 90141 -1888 90236 -1835
 

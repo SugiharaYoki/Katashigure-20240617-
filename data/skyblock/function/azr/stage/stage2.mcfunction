@@ -16,7 +16,9 @@ execute if score stage_main_thread AzrTimerStack matches 27 run playsound block.
 execute if score stage_main_thread AzrTimerStack matches 29 run playsound block.bell.use ambient @a[tag=azrPlayer] -79887 50 164 100 0.7
 execute if score stage_main_thread AzrTimerStack matches 31 run playsound block.bell.use ambient @a[tag=azrPlayer] -79887 50 164 100 0.7
 execute if score stage_main_thread AzrTimerStack matches 23 run tellraw @a[tag=azrPlayer] {"text":"？？？：","color":"aqua"}
-execute if score stage_main_thread AzrTimerStack matches 23 run tellraw @a[tag=azrPlayer] {"text":"“第一关口有人类闯入，准备进行驱逐。”","color":"white"}
+execute if score stage_main_thread AzrTimerStack matches 23 run tellraw @a[tag=azrPlayer] {"text":"“挑战者到达第一关口，出兵迎战。”","color":"white"}
+execute if score stage_main_thread AzrTimerStack matches 123 run tellraw @a[tag=azrPlayer] {"text":"第一关口守备军：","color":"aqua"}
+execute if score stage_main_thread AzrTimerStack matches 123 run tellraw @a[tag=azrPlayer] {"text":"“喂，对方是不是有些太强了？怎么回事？！”","color":"white"}
 execute if score stage_main_thread AzrTimerStack matches 2 positioned -79922 38 14 run function skyblock:azr/m/zombie_t1
 execute if score stage_main_thread AzrTimerStack matches 8 if score playerCount Azr_system matches 2.. positioned -79922 38 14 run function skyblock:azr/m/zombie_t1_4hp
 execute if score stage_main_thread AzrTimerStack matches 5 positioned -79922 38 14 run function skyblock:azr/m/zombie_t1

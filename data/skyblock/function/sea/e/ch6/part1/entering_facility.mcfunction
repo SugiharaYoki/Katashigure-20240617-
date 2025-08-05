@@ -27,15 +27,14 @@ execute if score SEA_ch6_event rng10 matches 2.. run kill @n[tag=SEAedwina,tag=!
 execute store result score SEA_ch6_event rng10 if entity @e[tag=SEAedwina]
 execute if score SEA_ch6_event rng10 matches 2.. run kill @n[tag=SEAedwina,tag=!SEAedwina_attackable]
 kill @e[tag=SEAnorma,type=zombie_villager]
-execute unless entity @n[tag=SEAedwina] positioned 90147.99 171.00 -1878.01 run function skyblock:sea/m/unique/npc_edwina
-execute unless entity @n[tag=SEAedwina] positioned 90147.99 171.00 -1878.01 run function skyblock:sea/e/ch6/edwina/init
+execute unless entity @n[tag=SEAedwina] as @p[tag=SEAPT] at @s run function skyblock:sea/m/unique/npc_edwina_ch6
 
 
 execute as @a[tag=SEAPT] at @s run attribute @s minecraft:jump_strength modifier remove sea:marilyn_01
 
-fill 90051 20 -1797 90061 24 -1786 air replace fire
-fill 90036 19 -1824 90067 21 -1797 air replace fire
-fill 90043 24 -1831 90062 20 -1824 air replace fire
+fill 90040 20 -1907 90061 24 -1786 air replace fire
+fill 90030 19 -1834 90067 21 -1797 air replace fire
+fill 90040 24 -1841 90062 20 -1824 air replace fire
 
 forceload remove 90042 -1829 90068 -1798
 forceload remove 90011 -1953 90109 -1888

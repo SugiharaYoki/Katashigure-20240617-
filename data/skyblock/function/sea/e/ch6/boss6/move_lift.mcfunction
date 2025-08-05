@@ -6,8 +6,8 @@ execute if score @s rng4 matches 2 store result score @s rng6 run random value 1
 execute if score @s rng4 matches 1..2 run playsound minecraft:entity.breeze.charge hostile @a ~ ~ ~ 3 1.2
 execute if score @s rng4 matches 1..2 run playsound minecraft:entity.breeze.charge hostile @a ~ ~ ~ 3 0.8
 execute if score @s rng4 matches 1..2 run effect give @s levitation 3 29 true
-execute if score @s rng4 matches 45..48 if entity @s[x=88000,dx=4000,y=-50,dy=72,z=-3000,dz=4000] run scoreboard players set @s rng4 280
-execute if score @s rng4 matches 45..48 unless entity @s[x=88000,dx=4000,y=-50,dy=72,z=-3000,dz=4000] run scoreboard players set @s rng4 56
+execute if score @s rng4 matches 45..200 unless entity @s[x=88000,dx=4000,y=21,dy=30,z=-3000,dz=4000] run scoreboard players set @s rng4 280
+execute if score @s rng4 matches 45..55 if entity @s[x=88000,dx=4000,y=21,dy=30,z=-3000,dz=4000] run scoreboard players set @s rng4 56
 execute if score @s rng4 matches 281 run tp @s 90055 22 -1815
 execute if score @s rng4 matches 281 run particle enchant 90055 22 -1815 2 2 2 0.5 120
 execute if score @s rng4 matches 281 run particle reverse_portal 90055 22 -1815 0 0 0 0.5 120
@@ -65,7 +65,7 @@ execute if score @s[scores={rng5=2}] rng4 matches 62 at @s as @a[scores={SEAPT_m
 execute if score @s[scores={rng5=3}] rng4 matches 62 at @s as @a[scores={SEAPT_member=1}] at @s run tellraw @a[distance=0..150] [{"text":"权之执理：","color":"red","bold": true},{"text":"\n“卑微的人类，汝将被吾碾碎。”","color":"white","bold": false}]
 execute if score @s[scores={rng5=4}] rng4 matches 67 at @s as @a[scores={SEAPT_member=1}] at @s run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“小心，它要从上面撞下来！”","color":"white","bold": false}]
 
-execute if score @s rng4 matches 1..5 run scoreboard players set @s rng2 -1
+#execute if score @s rng4 matches 1..5 run scoreboard players set @s rng2 -1
 
 execute if score @s rng4 matches 90..110 run scoreboard players set @s rng4 310
 execute if score @s rng4 matches 300..320 run scoreboard players set @s rng4 -2

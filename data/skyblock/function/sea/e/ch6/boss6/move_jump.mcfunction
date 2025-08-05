@@ -20,6 +20,7 @@ execute if score @s[scores={rng5=7}] rng4 matches 2 at @s positioned 0.0 0 0.0 r
 execute if score @s[scores={rng5=8}] rng4 matches 2 at @s positioned 0.0 0 0.0 run summon marker ^ ^0.2 ^-1.6 {Tags:["SEA_boss6_marker"]}
 execute if score @s[scores={rng5=1..8}] rng4 matches 2 at @s run playsound entity.breeze.jump hostile @a ~ ~ ~ 1 0.9
 execute if score @s[scores={rng5=1..8}] rng4 matches 2 at @s run data modify entity @s Motion set from entity @n[type=marker,tag=SEA_boss6_marker] Pos
+execute if score @s[scores={rng5=1..8}] rng4 matches 2 at @s run fill ~1 ~ ~1 ~-1 ~ ~-1 air replace fire
 
 execute if score @s rng4 matches 2 at @s positioned 90142 134 26 as @n[type=marker,tag=SEA_boss6_marker] at @s run kill @s
 
