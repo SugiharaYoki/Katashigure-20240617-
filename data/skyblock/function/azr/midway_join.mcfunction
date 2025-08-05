@@ -34,7 +34,7 @@ execute if entity @s[scores={Azr_wave=36..}] run clear @s
 execute if entity @s[scores={Azr_wave=36..}] run function skyblock:azr/items/iron_sword_prison
 execute if entity @s[scores={Azr_wave=36..}] run function skyblock:azr/items/iron_axe_prison
 execute if entity @s[scores={Azr_wave=36..}] run function skyblock:azr/items/iron_shovel_prison
-execute if entity @s[scores={Azr_wave=36..}] run function skyblock:azr/items/bow_god
+execute if entity @s[scores={Azr_wave=36..}] run function skyblock:azr/items/bow_blessed
 execute if entity @s[scores={Azr_wave=36..}] run function skyblock:azr/items/iron_helmet_normal_replace
 execute if entity @s[scores={Azr_wave=36..}] run function skyblock:azr/items/iron_chestplate_normal_replace
 execute if entity @s[scores={Azr_wave=36..}] run function skyblock:azr/items/iron_leggings_normal_replace

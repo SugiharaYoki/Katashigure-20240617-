@@ -1,6 +1,7 @@
 # 将进度未达到的玩家踢出 - 原判定为 Azr_skillPoints，这里改成使用BH记录
 execute unless score @s SeGa_StandLastBH matches 34.. run return run function skyblock:azr/jump_to/return
 
+stopsound @s
 
 effect give @s saturation 5 29 true
 effect give @s slow_falling 5 5 true
@@ -21,7 +22,7 @@ function skyblock:azr/items/iron_helmet_normal_replace
 function skyblock:azr/items/iron_chestplate_normal_replace
 function skyblock:azr/items/iron_leggings_normal_replace
 function skyblock:azr/items/iron_boots_normal_replace
-function skyblock:azr/items/soul_expel_torch
+function skyblock:azr/items/soul_expel_torch_replace
 give @s cooked_salmon 6
 give @s golden_carrot 2
 give @s arrow 30

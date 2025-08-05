@@ -61,7 +61,7 @@
     chain_rod_heavy_pro 缠绕重杆·改 100003
 弓
     bow_normal 弓·传统 100001
-    bow_god 神祝弓 100002
+    bow_blessed 神祝弓 100002
     bow_string 弓（弦束） 100003
 弩
     crossbow_normal 弩·传统 100001
@@ -189,8 +189,6 @@
     rapier_rain 刺剑·疾雨 100010
     rapier_wind 刺剑·逆雷 100011
     iron_sword_chain_t2 锁链长剑·黑钢 100012
-    
-
     石
     stone_sword_normal 石剑 100001
     stone_sword_zombie 石剑·尸变 100002
