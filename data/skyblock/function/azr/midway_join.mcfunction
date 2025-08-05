@@ -19,7 +19,7 @@ function skyblock:azr/update_bossbar
 #生命手册
 execute if score stage Azr_system matches 3.. run tellraw @s[tag=!hasLifeVitae] {"text":"你已永久解锁「生命手册」。记得收集绿宝石与素材，使用手册换取必要的武器与道具。"}
 execute if score stage Azr_system matches 3.. run tag @s[tag=!hasLifeVitae] add hasLifeVitae
-execute if score @s Azr_wave matches 51..63 run tag @s add azrBanLifeVitae
+execute if score stage Azr_system matches 51..63 run tag @s add azrBanLifeVitae
 #10波后
 execute if entity @s[scores={Azr_wave=10..}] run item replace entity @s inventory.0 with rotten_flesh 3
 execute if entity @s[scores={Azr_wave=10..}] run item replace entity @s inventory.1 with stick 3
