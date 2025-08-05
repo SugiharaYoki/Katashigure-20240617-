@@ -10,7 +10,7 @@ scoreboard players set @s Azr_emerald 200
 scoreboard players set stage Azr_system 61
 scoreboard players set @s Azr_wave 46
 scoreboard players set tick_main_thread AzrTimerStack 0
-scoreboard players set stage_main_thread AzrTimerStack 700
+scoreboard players set stage_main_thread AzrTimerStack 702
 
 clear @s
 function skyblock:azr/items/golden_sword
@@ -39,5 +39,5 @@ give @s gold_nugget 48
 
 # show texts
 tellraw @s {"text":"游戏再续……","color":"green"}
-tp @s -79466 88 -338
+tp @s -79466 84 -338
 tag @s add Azr_fakeDeath
