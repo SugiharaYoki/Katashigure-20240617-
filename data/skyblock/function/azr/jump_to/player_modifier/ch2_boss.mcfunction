@@ -39,7 +39,7 @@ item replace entity @s inventory.8 with rabbit_foot[custom_name='{"text":"尸爪
 item replace entity @s inventory.9 with honeycomb 4
 
 # show texts
-tellraw @s {"text":"游戏再续……","color":"green"}
+# tellraw @s {"text":"游戏再续……","color":"green"}
 tellraw @s {"text":"距离招待厅很远的地方似乎发生了严重的塌陷。地震的余波甚至席卷了此处，虽然负面影响不大，却十分骇人。","color":"gray"}
 tellraw @s {"text":"先前曾与你大战的权之残影指责这是你所引来的纷争，但你却对迫在眉睫的灾厄一无所知。","color":"gray"}
 tellraw @s {"text":"权之残影的军队对你展开的攻势不明原因地戛然而止。如今，招待厅区域一片死寂……","color":"gray"}

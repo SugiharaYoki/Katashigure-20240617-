@@ -1,1 +1,1 @@
-function skyblock:azr/start
+function skyblock:azr/jump_to/ch1_start

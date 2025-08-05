@@ -28,7 +28,7 @@ item replace entity @s inventory.4 with iron_nugget[custom_name='{"text":"盾牌
 item replace entity @s inventory.5 with black_dye[custom_name='{"text":"虫骸","italic":false,"color":"white"}',custom_data={insect_remaining:1b},custom_model_data={floats:[100001.0]}] 2
 
 # show texts
-tellraw @s {"text":"游戏再续……","color":"green"}
+# tellraw @s {"text":"游戏再续……","color":"green"}
 
 tp @s -79930.5 42.15 93.0 facing -79930.5 42.15 94.0
 tag @s add azrUpdateSpawnPoint

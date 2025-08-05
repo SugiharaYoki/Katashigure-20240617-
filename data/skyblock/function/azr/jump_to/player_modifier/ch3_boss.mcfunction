@@ -50,7 +50,7 @@ item replace entity @s inventory.16 with bone[custom_name='{"text":"冻骨","ita
 
 
 # show texts
-tellraw @s {"text":"游戏再续……","color":"green"}
+# tellraw @s {"text":"游戏再续……","color":"green"}
 tellraw @s {"text":"牢房本该被魔法枷锁限制的魔物全部冲破了牢门，正在牢中四处肆虐。","color":"gray"}
 tellraw @s {"text":"虽说神界军承诺过将前来支援，你所遇到的寥寥无几的残军却早已重伤，甚至死在你的眼前。","color":"gray"}
 tellraw @s {"text":"据军队说，操控并掌管魔物的神使名为权之殊能。究竟是他遭遇了意外，还是存在更加黑暗的真相？","color":"gray"}

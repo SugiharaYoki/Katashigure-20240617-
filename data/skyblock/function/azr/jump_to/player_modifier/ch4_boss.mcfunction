@@ -39,7 +39,7 @@ function skyblock:azr/items/splash_fire_resistance_lv1
 give @s gold_nugget 48
 
 # show texts
-tellraw @s {"text":"游戏再续……","color":"green"}
+# tellraw @s {"text":"游戏再续……","color":"green"}
 tp @s -79466 84 -338
 tag @s add AZR_fakeDeath
 tag @s add azrBanLifeVitae

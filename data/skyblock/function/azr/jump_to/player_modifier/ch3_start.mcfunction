@@ -39,7 +39,7 @@ item replace entity @s inventory.8 with rabbit_foot[custom_name='{"text":"尸爪
 item replace entity @s inventory.9 with honeycomb 4
 
 # show texts
-tellraw @s {"text":"游戏再续……","color":"green"}
+# tellraw @s {"text":"游戏再续……","color":"green"}
 
 tp @s -79906 44 -14.0 facing -79909 44 -14.0
 tag @s add azrUpdateSpawnPoint
