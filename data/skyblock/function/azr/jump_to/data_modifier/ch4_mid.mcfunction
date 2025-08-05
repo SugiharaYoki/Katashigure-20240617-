@@ -40,7 +40,7 @@ setblock -79754 46 -356 chest[facing=east]
 setblock -79754 45 -357 minecraft:damaged_anvil[facing=east]
 setblock -79741 39 -363 chest[facing=south]
 setblock -79730 43 -371 minecraft:crimson_trapdoor[half=bottom,facing=north]
-item replace block -79741 39 -363 container.12 with beetroot[custom_name='{"text":"爆裂菜根","italic":false,"color":"white"}',lore=['{"text":"投掷 - 轰炸（射程较低）","color":"yellow","italic":false}'],enchantments={"minecraft:punch":1s}] 3
+item replace block -79741 39 -363 container.12 with beetroot[custom_name='{"text":"爆裂菜根","italic":false}',lore=['{"text":"投掷 - 轰炸（射程较低）","color":"yellow"}'],enchantments={punch:1},custom_data={blast_root:1b},custom_model_data={floats:[100001.0]}] 3
 setblock -79730 42 -373 anvil[facing=east]
 item replace block -79741 39 -363 container.23 with lapis_lazuli 2
 item replace block -79741 39 -363 container.6 with lapis_lazuli 3
