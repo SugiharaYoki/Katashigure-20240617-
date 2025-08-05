@@ -1,6 +1,6 @@
 #开局行为
 execute if score stage_main_thread AzrTimerStack matches 1 run tag @a[tag=azrPlayer] add azrUpdateSpawnPoint
-execute if score stage_main_thread AzrTimerStack matches 1 run title @a[tag=azrPlayer] actionbar {"text":"Stage 1 - Wave 1","color":"red"}
+execute if score stage_main_thread AzrTimerStack matches 1 run title @a[tag=azrShowDialog] actionbar {"text":"Stage 1 - Wave 1","color":"red"}
 execute if score stage_main_thread AzrTimerStack matches 1 run bossbar add azr:progress_bar_normal "Stage 1"
 execute if score stage_main_thread AzrTimerStack matches 1 run bossbar set azr:progress_bar_normal color white
 execute if score stage_main_thread AzrTimerStack matches 1 run bossbar set azr:progress_bar_normal players @a[tag=azrPlayer]
@@ -35,7 +35,7 @@ execute if score stage_main_thread AzrTimerStack matches 31..36 if entity @e[tag
 execute if score stage_main_thread AzrTimerStack matches 36 run playsound ambient.crimson_forest.loop ambient @a[tag=azrPlayer] -78000 100 0 1000
 execute if score stage_main_thread AzrTimerStack matches 36 run playsound ambient.crimson_forest.mood ambient @a[tag=azrPlayer] -78000 100 0 1000
 execute if score stage_main_thread AzrTimerStack matches 36 run playsound ambient.crimson_forest.additions ambient @a[tag=azrPlayer] -78000 100 0 1000
-execute if score stage_main_thread AzrTimerStack matches 36 run title @a[tag=azrPlayer] actionbar {"text":"Stage Clear","color":"green"}
+execute if score stage_main_thread AzrTimerStack matches 36 run title @a[tag=azrShowDialog] actionbar {"text":"Stage Clear","color":"green"}
 execute if score stage_main_thread AzrTimerStack matches 40.. run fill -79931 40 6 -79931 38 6 air destroy
 execute if score stage_main_thread AzrTimerStack matches 40.. run fill -79928 40 1 -79928 38 -1 air destroy
 execute if score stage_main_thread AzrTimerStack matches 40.. run tellraw @a[tag=azrPlayer,tag=!hasLifeVitae] {"text":""}
@@ -48,5 +48,5 @@ execute if score stage_main_thread AzrTimerStack matches 40.. run tellraw @a[tag
 execute if score stage_main_thread AzrTimerStack matches 40.. run scoreboard players set stage Azr_system 3
 execute if score stage_main_thread AzrTimerStack matches 40.. run scoreboard players set @a[tag=azrPlayer] Azr_wave 1
 execute if score stage_main_thread AzrTimerStack matches 40.. run scoreboard players reset tick_main_thread AzrTimerStack
-execute if score stage_main_thread AzrTimerStack matches 40.. run advancement grant @a[tag=azrPlayer] only skyblock:azr/azr_stage1
+execute if score stage_main_thread AzrTimerStack matches 40.. run advancement grant @a[tag=azrShowDialog] only skyblock:azr/azr_stage1
 execute if score stage_main_thread AzrTimerStack matches 40.. run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..0}] Azr_skillPoints 1

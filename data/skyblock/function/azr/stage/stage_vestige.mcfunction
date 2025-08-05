@@ -44,17 +44,17 @@ execute if score stage_main_thread AzrTimerStack matches 88 if score playerCount
 
 
 execute if score stage_main_thread AzrTimerStack matches 90..92 if entity @e[tag=AzrielMob,tag=!AzrielDecMob] run scoreboard players set stage_main_thread AzrTimerStack 90
-execute if score stage_main_thread AzrTimerStack matches 93 run title @a[tag=azrPlayer] actionbar {"text":"Wave Clear","color":"green"}
+execute if score stage_main_thread AzrTimerStack matches 93 run title @a[tag=azrShowDialog] actionbar {"text":"Wave Clear","color":"green"}
 execute if score stage_main_thread AzrTimerStack matches 93 run give @a[tag=azrPlayer] emerald 5
 execute if score stage_main_thread AzrTimerStack matches 93 run give @a[tag=azrPlayer] cooked_beef 5
-execute if score stage_main_thread AzrTimerStack matches 98 run title @a[tag=azrPlayer] actionbar {"text":"7","color":"yellow"}
-execute if score stage_main_thread AzrTimerStack matches 99 run title @a[tag=azrPlayer] actionbar {"text":"6","color":"yellow"}
-execute if score stage_main_thread AzrTimerStack matches 100 run title @a[tag=azrPlayer] actionbar {"text":"5","color":"yellow"}
-execute if score stage_main_thread AzrTimerStack matches 101 run title @a[tag=azrPlayer] actionbar {"text":"4","color":"yellow"}
-execute if score stage_main_thread AzrTimerStack matches 102 run title @a[tag=azrPlayer] actionbar {"text":"3","color":"red"}
-execute if score stage_main_thread AzrTimerStack matches 103 run title @a[tag=azrPlayer] actionbar {"text":"2","color":"red"}
-execute if score stage_main_thread AzrTimerStack matches 104 run title @a[tag=azrPlayer] actionbar {"text":"1","color":"red"}
-execute if score stage_main_thread AzrTimerStack matches 105 run title @a[tag=azrPlayer] actionbar {"text":"Stage Vestige - Wave 2","color":"red"}
+execute if score stage_main_thread AzrTimerStack matches 98 run title @a[tag=azrShowDialog] actionbar {"text":"7","color":"yellow"}
+execute if score stage_main_thread AzrTimerStack matches 99 run title @a[tag=azrShowDialog] actionbar {"text":"6","color":"yellow"}
+execute if score stage_main_thread AzrTimerStack matches 100 run title @a[tag=azrShowDialog] actionbar {"text":"5","color":"yellow"}
+execute if score stage_main_thread AzrTimerStack matches 101 run title @a[tag=azrShowDialog] actionbar {"text":"4","color":"yellow"}
+execute if score stage_main_thread AzrTimerStack matches 102 run title @a[tag=azrShowDialog] actionbar {"text":"3","color":"red"}
+execute if score stage_main_thread AzrTimerStack matches 103 run title @a[tag=azrShowDialog] actionbar {"text":"2","color":"red"}
+execute if score stage_main_thread AzrTimerStack matches 104 run title @a[tag=azrShowDialog] actionbar {"text":"1","color":"red"}
+execute if score stage_main_thread AzrTimerStack matches 105 run title @a[tag=azrShowDialog] actionbar {"text":"Stage Vestige - Wave 2","color":"red"}
 
 execute if score stage_main_thread AzrTimerStack matches 110..130 if score #rng6 Azr_system matches 1 run summon bee -79876 38 110 {PersistenceRequired:1b,Tags:["AzrielDecMob"],DeathLootTable:"skyblock:azriel_bee_tier1",Health:10.0f,CustomName:'"温室蜂"',Age:0,attributes:[{id:"max_health",base:10.0d},{id:"movement_speed",base:0.25d},{id:"attack_damage",base:3.5d}]}
 execute if score stage_main_thread AzrTimerStack matches 110..130 if score #rng6 Azr_system matches 2 if score playerCount Azr_system matches 4.. run summon bee -79893 38 92 {PersistenceRequired:1b,Tags:["AzrielDecMob"],DeathLootTable:"skyblock:azriel_bee_tier1",Health:10.0f,CustomName:'"温室蜂"',Age:0,attributes:[{id:"max_health",base:10.0d},{id:"movement_speed",base:0.25d},{id:"attack_damage",base:3.5d}]}
@@ -130,8 +130,8 @@ execute if score stage_main_thread AzrTimerStack matches 216 if score #rng2 Azr_
 
 execute if score stage_main_thread AzrTimerStack matches 219..221 if entity @e[tag=AzrielMob,tag=!AzrielDecMob] run scoreboard players set stage_main_thread AzrTimerStack 219
 
-execute if score stage_main_thread AzrTimerStack matches 223 run title @a[tag=azrPlayer] actionbar {"text":"Extra Stage Clear","color":"green"}
-execute if score stage_main_thread AzrTimerStack matches 223 run advancement grant @a[tag=azrPlayer] only skyblock:azr/azr_stage_bonus_vestige
+execute if score stage_main_thread AzrTimerStack matches 223 run title @a[tag=azrShowDialog] actionbar {"text":"Extra Stage Clear","color":"green"}
+execute if score stage_main_thread AzrTimerStack matches 223 run advancement grant @a[tag=azrShowDialog] only skyblock:azr/azr_stage_bonus_vestige
 execute if score stage_main_thread AzrTimerStack matches 223 as @a[tag=azrPlayer] at @s run tag @s add AZS_BoS01
 execute if score stage_main_thread AzrTimerStack matches 223 as @a[tag=azrPlayer] at @s run setblock -79888 39 67 birch_button[facing=west]
 execute if score stage_main_thread AzrTimerStack matches 223 as @a[tag=azrPlayer] at @s run give @s emerald 5

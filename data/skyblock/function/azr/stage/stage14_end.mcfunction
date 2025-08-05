@@ -1,5 +1,5 @@
-tellraw @a[tag=azrPlayer] {"text":"权之残影：","color":"aqua"}
-tellraw @a[tag=azrPlayer] {"text":"“实在是打得太精彩了！吾深感祝贺，此刻那片区域应暂时安全了！”","color":"white"}
+tellraw @a[tag=azrShowDialog] {"text":"权之残影：","color":"aqua"}
+tellraw @a[tag=azrShowDialog] {"text":"“实在是打得太精彩了！吾深感祝贺，此刻那片区域应暂时安全了！”","color":"white"}
 execute as @a[tag=azrPlayer] at @s run playsound minecraft:entity.illusioner.ambient hostile @a[tag=azrPlayer] ~ ~ ~ 2 0.65
 
 tp @e[tag=AzrielBossFA,limit=1] -79771 23 -383 facing -79771 23 -382
@@ -13,8 +13,8 @@ setblock -79786 31 -359 air
 tp @e[type=parrot,tag=AzrielFriendly,tag=AzrielDecMob,limit=1] 0 -10000 0
 
 fill -79766 23 -457 -79764 24 -457 air destroy
-title @a[tag=azrPlayer] actionbar {"text":"Stage Clear","color":"green"}
-advancement grant @a[tag=azrPlayer] only skyblock:azr/azr_stage14
+title @a[tag=azrShowDialog] actionbar {"text":"Stage Clear","color":"green"}
+advancement grant @a[tag=azrShowDialog] only skyblock:azr/azr_stage14
 playsound ambient.crimson_forest.loop ambient @a[tag=azrPlayer] -78000 100 0 1000
 playsound minecraft:ambient.nether_wastes.mood ambient @a[tag=azrPlayer] -78000 100 0 1000 0.3
 playsound ambient.crimson_forest.additions ambient @a[tag=azrPlayer] -78000 100 0 1000

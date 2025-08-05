@@ -1,6 +1,6 @@
 #开局行为
 execute if score stage_main_thread AzrTimerStack matches 1 run tag @a[tag=azrPlayer] add azrUpdateSpawnPoint
-execute if score stage_main_thread AzrTimerStack matches 1 run title @a[tag=azrPlayer] actionbar {"color":"red","text":"Stage 3 - Wave 1"}
+execute if score stage_main_thread AzrTimerStack matches 1 run title @a[tag=azrShowDialog] actionbar {"color":"red","text":"Stage 3 - Wave 1"}
 execute if score stage_main_thread AzrTimerStack matches 1 run bossbar add azr:progress_bar_normal "Stage 3"
 execute if score stage_main_thread AzrTimerStack matches 1 run bossbar set azr:progress_bar_normal color white
 execute if score stage_main_thread AzrTimerStack matches 1 run bossbar set azr:progress_bar_normal players @a[tag=azrPlayer]
@@ -67,15 +67,15 @@ execute if score stage_main_thread AzrTimerStack matches 67 if score playerCount
 execute if score stage_main_thread AzrTimerStack matches 67 if score playerCount Azr_system matches 5.. positioned -79959 38 6 run function skyblock:azr/m/zombie_t1_5hp_full_armor
 #回秒
 execute if score stage_main_thread AzrTimerStack matches 68..71 if entity @e[tag=AzrielMob,tag=!AzrielDecMob] run scoreboard players set stage_main_thread AzrTimerStack 68
-execute if score stage_main_thread AzrTimerStack matches 73 run title @a[tag=azrPlayer] actionbar {"text":"Wave Clear","color":"green"}
+execute if score stage_main_thread AzrTimerStack matches 73 run title @a[tag=azrShowDialog] actionbar {"text":"Wave Clear","color":"green"}
 execute if score stage_main_thread AzrTimerStack matches 74 run scoreboard players set @a[tag=azrPlayer] Azr_wave 4
 #第二波
-execute if score stage_main_thread AzrTimerStack matches 83 run title @a[tag=azrPlayer] actionbar {"text":"5","color":"yellow"}
-execute if score stage_main_thread AzrTimerStack matches 84 run title @a[tag=azrPlayer] actionbar {"text":"4","color":"yellow"}
-execute if score stage_main_thread AzrTimerStack matches 85 run title @a[tag=azrPlayer] actionbar {"text":"3","color":"red"}
-execute if score stage_main_thread AzrTimerStack matches 86 run title @a[tag=azrPlayer] actionbar {"text":"2","color":"red"}
-execute if score stage_main_thread AzrTimerStack matches 87 run title @a[tag=azrPlayer] actionbar {"text":"1","color":"red"}
-execute if score stage_main_thread AzrTimerStack matches 88 run title @a[tag=azrPlayer] actionbar {"text":"Stage 3 - Wave 2","color":"red"}
+execute if score stage_main_thread AzrTimerStack matches 83 run title @a[tag=azrShowDialog] actionbar {"text":"5","color":"yellow"}
+execute if score stage_main_thread AzrTimerStack matches 84 run title @a[tag=azrShowDialog] actionbar {"text":"4","color":"yellow"}
+execute if score stage_main_thread AzrTimerStack matches 85 run title @a[tag=azrShowDialog] actionbar {"text":"3","color":"red"}
+execute if score stage_main_thread AzrTimerStack matches 86 run title @a[tag=azrShowDialog] actionbar {"text":"2","color":"red"}
+execute if score stage_main_thread AzrTimerStack matches 87 run title @a[tag=azrShowDialog] actionbar {"text":"1","color":"red"}
+execute if score stage_main_thread AzrTimerStack matches 88 run title @a[tag=azrShowDialog] actionbar {"text":"Stage 3 - Wave 2","color":"red"}
 execute if score stage_main_thread AzrTimerStack matches 89 positioned -79944 38 3 run function skyblock:azr/m/pillager_t1_enchant
 execute if score stage_main_thread AzrTimerStack matches 89 positioned -79942 38 3 run function skyblock:azr/m/pillager_t1_enchant
 execute if score stage_main_thread AzrTimerStack matches 89 if score playerCount Azr_system matches 5.. positioned -79944 38 3 run function skyblock:azr/m/pillager_t1_enchant
@@ -149,17 +149,17 @@ execute if score stage_main_thread AzrTimerStack matches 139 run playsound minec
 execute if score stage_main_thread AzrTimerStack matches 139 run playsound minecraft:ambient.soul_sand_valley.mood master @a -79926 38 34 1000 1
 #回秒
 execute if score stage_main_thread AzrTimerStack matches 134..137 if entity @e[tag=AzrielMob,tag=!AzrielDecMob] run scoreboard players set stage_main_thread AzrTimerStack 134
-execute if score stage_main_thread AzrTimerStack matches 148 run title @a[tag=azrPlayer] actionbar {"text":"Wave Clear","color":"green"}
+execute if score stage_main_thread AzrTimerStack matches 148 run title @a[tag=azrShowDialog] actionbar {"text":"Wave Clear","color":"green"}
 execute if score stage_main_thread AzrTimerStack matches 148 run scoreboard players set @a[tag=azrPlayer] Azr_wave 5
 #第三波
-execute if score stage_main_thread AzrTimerStack matches 153 run title @a[tag=azrPlayer] actionbar {"text":"7","color":"yellow"}
-execute if score stage_main_thread AzrTimerStack matches 154 run title @a[tag=azrPlayer] actionbar {"text":"6","color":"yellow"}
-execute if score stage_main_thread AzrTimerStack matches 155 run title @a[tag=azrPlayer] actionbar {"text":"5","color":"yellow"}
-execute if score stage_main_thread AzrTimerStack matches 156 run title @a[tag=azrPlayer] actionbar {"text":"4","color":"yellow"}
-execute if score stage_main_thread AzrTimerStack matches 157 run title @a[tag=azrPlayer] actionbar {"text":"3","color":"red"}
-execute if score stage_main_thread AzrTimerStack matches 158 run title @a[tag=azrPlayer] actionbar {"text":"2","color":"red"}
-execute if score stage_main_thread AzrTimerStack matches 159 run title @a[tag=azrPlayer] actionbar {"text":"1","color":"red"}
-execute if score stage_main_thread AzrTimerStack matches 160 run title @a[tag=azrPlayer] actionbar {"text":"Stage 3 - Wave 3","color":"red"}
+execute if score stage_main_thread AzrTimerStack matches 153 run title @a[tag=azrShowDialog] actionbar {"text":"7","color":"yellow"}
+execute if score stage_main_thread AzrTimerStack matches 154 run title @a[tag=azrShowDialog] actionbar {"text":"6","color":"yellow"}
+execute if score stage_main_thread AzrTimerStack matches 155 run title @a[tag=azrShowDialog] actionbar {"text":"5","color":"yellow"}
+execute if score stage_main_thread AzrTimerStack matches 156 run title @a[tag=azrShowDialog] actionbar {"text":"4","color":"yellow"}
+execute if score stage_main_thread AzrTimerStack matches 157 run title @a[tag=azrShowDialog] actionbar {"text":"3","color":"red"}
+execute if score stage_main_thread AzrTimerStack matches 158 run title @a[tag=azrShowDialog] actionbar {"text":"2","color":"red"}
+execute if score stage_main_thread AzrTimerStack matches 159 run title @a[tag=azrShowDialog] actionbar {"text":"1","color":"red"}
+execute if score stage_main_thread AzrTimerStack matches 160 run title @a[tag=azrShowDialog] actionbar {"text":"Stage 3 - Wave 3","color":"red"}
 execute if score stage_main_thread AzrTimerStack matches 161 positioned -79951 38 10 run function skyblock:azr/m/silverfish_t1
 execute if score stage_main_thread AzrTimerStack matches 161 if score playerCount Azr_system matches 4.. positioned -79951 38 10 run function skyblock:azr/m/silverfish_t1
 execute if score stage_main_thread AzrTimerStack matches 161 positioned -79951 38 10 run function skyblock:azr/m/silverfish_t1
@@ -239,8 +239,8 @@ execute if score stage_main_thread AzrTimerStack matches 204 run scoreboard play
 execute if score stage_main_thread AzrTimerStack matches 204 run scoreboard players set stage Azr_system 7
 execute if score stage_main_thread AzrTimerStack matches 204 run tellraw @a[scores={Azr_skillPoints=..2}] {"text":"永久升级 - 初始绿宝石数量 +5","color":"light_purple"}
 execute if score stage_main_thread AzrTimerStack matches 204 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..2}] Azr_skillPoints 3
-execute if score stage_main_thread AzrTimerStack matches 204 run title @a[tag=azrPlayer] actionbar {"text":"Stage Clear","color":"green"}
-execute if score stage_main_thread AzrTimerStack matches 204 run advancement grant @a[tag=azrPlayer] only skyblock:azr/azr_stage3_alt
+execute if score stage_main_thread AzrTimerStack matches 204 run title @a[tag=azrShowDialog] actionbar {"text":"Stage Clear","color":"green"}
+execute if score stage_main_thread AzrTimerStack matches 204 run advancement grant @a[tag=azrShowDialog] only skyblock:azr/azr_stage3_alt
 execute if score stage_main_thread AzrTimerStack matches 204 run summon birch_chest_boat -79942.75 37.52 17.70 {Invulnerable: 1b, Rotation: [120.60768f, 0.0f], Items: [{count: 1, Slot: 11b, id: "minecraft:lapis_lazuli"}, {count: 5, Slot: 13b, id: "minecraft:emerald"}, {count: 1, Slot: 15b, id: "minecraft:lapis_lazuli"}]}
 execute if score stage_main_thread AzrTimerStack matches 204 run setblock -79931 43 42 air
 execute if score stage_main_thread AzrTimerStack matches 204 run setblock -79930 43 41 air

@@ -10,20 +10,20 @@ execute if score stage_main_thread AzrTimerStack matches 201 as @a[tag=azrPlayer
 execute if score stage_main_thread AzrTimerStack matches 201 run stopsound @a[tag=azrPlayer]
 
 
-execute if score stage_main_thread AzrTimerStack matches 215 run tellraw @a[tag=azrPlayer] {"selector":"@r[tag=azrPlayer]","color":"aqua"}
-execute if score stage_main_thread AzrTimerStack matches 215 run tellraw @a[tag=azrPlayer] [{"text":"“我在某一天由于突如其来的事故而死。”","color":"white"}]
-execute if score stage_main_thread AzrTimerStack matches 236 run tellraw @a[tag=azrPlayer] {"selector":"@r[tag=azrPlayer]","color":"aqua"}
-execute if score stage_main_thread AzrTimerStack matches 236 run tellraw @a[tag=azrPlayer] [{"text":"“我的生活明明才刚刚开始美满幸福。”","color":"white"}]
-execute if score stage_main_thread AzrTimerStack matches 254 run tellraw @a[tag=azrPlayer] {"selector":"@r[tag=azrPlayer]","color":"aqua"}
-execute if score stage_main_thread AzrTimerStack matches 254 run tellraw @a[tag=azrPlayer] [{"text":"“而再次睁眼时，我已然置身地狱。”","color":"white"}]
-execute if score stage_main_thread AzrTimerStack matches 276 run tellraw @a[tag=azrPlayer] {"selector":"@r[tag=azrPlayer]","color":"aqua"}
-execute if score stage_main_thread AzrTimerStack matches 276 run tellraw @a[tag=azrPlayer] [{"text":"“发生在人间的必然是一场阴谋，我可以确信是有人谋害了我。”","color":"white"}]
-execute if score stage_main_thread AzrTimerStack matches 295 run tellraw @a[tag=azrPlayer] {"selector":"@r[tag=azrPlayer]","color":"aqua"}
-execute if score stage_main_thread AzrTimerStack matches 295 run tellraw @a[tag=azrPlayer] [{"text":"“只是……我再也没有办法夺回本该属于我的那一切了。”","color":"white"}]
-execute if score stage_main_thread AzrTimerStack matches 317 run tellraw @a[tag=azrPlayer] {"selector":"@r[tag=azrPlayer]","color":"aqua"}
-execute if score stage_main_thread AzrTimerStack matches 317 run tellraw @a[tag=azrPlayer] [{"text":"“绝望，乃至我终于决定放弃之时，路西法的信使出现在我的眼前。”","color":"white"}]
-execute if score stage_main_thread AzrTimerStack matches 335 run tellraw @a[tag=azrPlayer] {"selector":"@r[tag=azrPlayer]","color":"aqua"}
-execute if score stage_main_thread AzrTimerStack matches 335 run tellraw @a[tag=azrPlayer] [{"text":"“他，对我说道……”","color":"white"}]
+execute if score stage_main_thread AzrTimerStack matches 215 run tellraw @a[tag=azrShowDialog] {"selector":"@r[tag=azrPlayer]","color":"aqua"}
+execute if score stage_main_thread AzrTimerStack matches 215 run tellraw @a[tag=azrShowDialog] [{"text":"“我在某一天由于突如其来的事故而死。”","color":"white"}]
+execute if score stage_main_thread AzrTimerStack matches 236 run tellraw @a[tag=azrShowDialog] {"selector":"@r[tag=azrPlayer]","color":"aqua"}
+execute if score stage_main_thread AzrTimerStack matches 236 run tellraw @a[tag=azrShowDialog] [{"text":"“我的生活明明才刚刚开始美满幸福。”","color":"white"}]
+execute if score stage_main_thread AzrTimerStack matches 254 run tellraw @a[tag=azrShowDialog] {"selector":"@r[tag=azrPlayer]","color":"aqua"}
+execute if score stage_main_thread AzrTimerStack matches 254 run tellraw @a[tag=azrShowDialog] [{"text":"“而再次睁眼时，我已然置身地狱。”","color":"white"}]
+execute if score stage_main_thread AzrTimerStack matches 276 run tellraw @a[tag=azrShowDialog] {"selector":"@r[tag=azrPlayer]","color":"aqua"}
+execute if score stage_main_thread AzrTimerStack matches 276 run tellraw @a[tag=azrShowDialog] [{"text":"“发生在人间的必然是一场阴谋，我可以确信是有人谋害了我。”","color":"white"}]
+execute if score stage_main_thread AzrTimerStack matches 295 run tellraw @a[tag=azrShowDialog] {"selector":"@r[tag=azrPlayer]","color":"aqua"}
+execute if score stage_main_thread AzrTimerStack matches 295 run tellraw @a[tag=azrShowDialog] [{"text":"“只是……我再也没有办法夺回本该属于我的那一切了。”","color":"white"}]
+execute if score stage_main_thread AzrTimerStack matches 317 run tellraw @a[tag=azrShowDialog] {"selector":"@r[tag=azrPlayer]","color":"aqua"}
+execute if score stage_main_thread AzrTimerStack matches 317 run tellraw @a[tag=azrShowDialog] [{"text":"“绝望，乃至我终于决定放弃之时，路西法的信使出现在我的眼前。”","color":"white"}]
+execute if score stage_main_thread AzrTimerStack matches 335 run tellraw @a[tag=azrShowDialog] {"selector":"@r[tag=azrPlayer]","color":"aqua"}
+execute if score stage_main_thread AzrTimerStack matches 335 run tellraw @a[tag=azrShowDialog] [{"text":"“他，对我说道……”","color":"white"}]
 
 execute if score stage_main_thread AzrTimerStack matches 345 run fill -79466 81 -422 -79467 81 -422 air destroy
 execute if score stage_main_thread AzrTimerStack matches 346 run fill -79466 82 -422 -79467 82 -422 air destroy
@@ -39,12 +39,12 @@ execute if score stage_main_thread AzrTimerStack matches 355..398 if entity @a[t
 execute if score stage_main_thread AzrTimerStack matches 355..398 run scoreboard players set stage_main_thread AzrTimerStack 358
 
 
-execute if score stage_main_thread AzrTimerStack matches 415 run tellraw @a[tag=azrPlayer] [{"selector":"@r[tag=azrPlayer]","color":"aqua"},{"text":"："}]
-execute if score stage_main_thread AzrTimerStack matches 415 run tellraw @a[tag=azrPlayer] [{"text":"“他告知我，前往神庭的生命树花园，闯过重重阻碍，击败沙利叶手下的大将……”","color":"white"}]
-execute if score stage_main_thread AzrTimerStack matches 435 run tellraw @a[tag=azrPlayer] [{"selector":"@r[tag=azrPlayer]","color":"aqua"},{"text":"："}]
-execute if score stage_main_thread AzrTimerStack matches 435 run tellraw @a[tag=azrPlayer] [{"text":"“即可，获得足以令我于人间复活的生命余额。”","color":"white"}]
-execute if score stage_main_thread AzrTimerStack matches 465 run tellraw @a[tag=azrPlayer] [{"selector":"@r[tag=azrPlayer]","color":"aqua"},{"text":"："}]
-execute if score stage_main_thread AzrTimerStack matches 465 run tellraw @a[tag=azrPlayer] [{"text":"“他给了我力量……与凝聚着溢出暗黑能量的邪祟魔法书。我为其美名：「生命手册」。”","color":"white"}]
+execute if score stage_main_thread AzrTimerStack matches 415 run tellraw @a[tag=azrShowDialog] [{"selector":"@r[tag=azrPlayer]","color":"aqua"},{"text":"："}]
+execute if score stage_main_thread AzrTimerStack matches 415 run tellraw @a[tag=azrShowDialog] [{"text":"“他告知我，前往神庭的生命树花园，闯过重重阻碍，击败沙利叶手下的大将……”","color":"white"}]
+execute if score stage_main_thread AzrTimerStack matches 435 run tellraw @a[tag=azrShowDialog] [{"selector":"@r[tag=azrPlayer]","color":"aqua"},{"text":"："}]
+execute if score stage_main_thread AzrTimerStack matches 435 run tellraw @a[tag=azrShowDialog] [{"text":"“即可，获得足以令我于人间复活的生命余额。”","color":"white"}]
+execute if score stage_main_thread AzrTimerStack matches 465 run tellraw @a[tag=azrShowDialog] [{"selector":"@r[tag=azrPlayer]","color":"aqua"},{"text":"："}]
+execute if score stage_main_thread AzrTimerStack matches 465 run tellraw @a[tag=azrShowDialog] [{"text":"“他给了我力量……与凝聚着溢出暗黑能量的邪祟魔法书。我为其美名：「生命手册」。”","color":"white"}]
 
 # execute if score stage_main_thread AzrTimerStack matches 466..470 if entity @a[tag=azrPlayer,x=-79466,y=80,z=-381,distance=0..6] run scoreboard players set stage_main_thread AzrTimerStack 471
 
@@ -61,15 +61,15 @@ execute if score stage_main_thread AzrTimerStack matches 479 run fill -79468 80 
 execute if score stage_main_thread AzrTimerStack matches 482 run playsound minecraft:block.nether_bricks.place master @a[tag=azrPlayer] -79466 80 -371 10 0.8
 execute if score stage_main_thread AzrTimerStack matches 482 run fill -79468 80 -371 -79464 80 -371 minecraft:quartz_block
 
-execute if score stage_main_thread AzrTimerStack matches 495 run tellraw @a[tag=azrPlayer] [{"selector":"@r[tag=azrPlayer]","color":"aqua"},{"text":"："}]
-execute if score stage_main_thread AzrTimerStack matches 495 run tellraw @a[tag=azrPlayer] [{"text":"“我其实一直都知道，我所获得的力量来源于恶魔。”","color":"white"}]
-execute if score stage_main_thread AzrTimerStack matches 520 run tellraw @a[tag=azrPlayer] [{"text":"来源于……这股想要颠覆神庭的污浊暗流。","color":"red"}]
+execute if score stage_main_thread AzrTimerStack matches 495 run tellraw @a[tag=azrShowDialog] [{"selector":"@r[tag=azrPlayer]","color":"aqua"},{"text":"："}]
+execute if score stage_main_thread AzrTimerStack matches 495 run tellraw @a[tag=azrShowDialog] [{"text":"“我其实一直都知道，我所获得的力量来源于恶魔。”","color":"white"}]
+execute if score stage_main_thread AzrTimerStack matches 520 run tellraw @a[tag=azrShowDialog] [{"text":"来源于……这股想要颠覆神庭的污浊暗流。","color":"red"}]
 execute if score stage_main_thread AzrTimerStack matches 510..630 if score #rng9 Azr_system matches 1 run playsound entity.lightning_bolt.thunder master @a[tag=azrPlayer] -79466 140 -385 1000 0.6
 execute if score stage_main_thread AzrTimerStack matches 540..630 if score #rng9 Azr_system matches 2 run playsound entity.lightning_bolt.thunder master @a[tag=azrPlayer] -79466 140 -385 1000 0.8
 execute if score stage_main_thread AzrTimerStack matches 580..630 if score #rng9 Azr_system matches 3 run playsound entity.lightning_bolt.thunder master @a[tag=azrPlayer] -79466 140 -385 1000 0.3
-execute if score stage_main_thread AzrTimerStack matches 545 run tellraw @a[tag=azrPlayer] [{"text":"我一直都知道他们是要靠我吸引神庭的注意力，借机发动最大规模的突袭。","color":"dark_red"}]
-execute if score stage_main_thread AzrTimerStack matches 570 run tellraw @a[tag=azrPlayer] [{"text":"正因如此，我才会在无数次殒命神庭、重归地狱后，再次提出挑战生命树庭园。再次对这擅自夺走我美好而无罪之生命的神庭，亲手展开复仇。","color":"dark_red"}]
-execute if score stage_main_thread AzrTimerStack matches 595 run tellraw @a[tag=azrPlayer] [{"text":"我是……自愿成为路西法军的诱饵的。","color":"dark_red"}]
+execute if score stage_main_thread AzrTimerStack matches 545 run tellraw @a[tag=azrShowDialog] [{"text":"我一直都知道他们是要靠我吸引神庭的注意力，借机发动最大规模的突袭。","color":"dark_red"}]
+execute if score stage_main_thread AzrTimerStack matches 570 run tellraw @a[tag=azrShowDialog] [{"text":"正因如此，我才会在无数次殒命神庭、重归地狱后，再次提出挑战生命树庭园。再次对这擅自夺走我美好而无罪之生命的神庭，亲手展开复仇。","color":"dark_red"}]
+execute if score stage_main_thread AzrTimerStack matches 595 run tellraw @a[tag=azrShowDialog] [{"text":"我是……自愿成为路西法军的诱饵的。","color":"dark_red"}]
 
 execute if score stage_main_thread AzrTimerStack matches 600 run fill -79467 86 -341 -79465 86 -341 air
 

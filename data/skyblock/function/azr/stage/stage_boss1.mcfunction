@@ -33,23 +33,23 @@ execute as @e[tag=arroworb2,type=marker] at @s run function skyblock:azr/stage/b
     execute if score tick_main_thread AzrTimerStack matches 81 run effect give @e[tag=AzrielBossA,limit=1] slow_falling 5 30 true
 
 #verbal
-    execute if score tick_main_thread AzrTimerStack matches 1 run tellraw @a[tag=azrPlayer] {"text":"？？？：","color":"red"}
-    execute if score tick_main_thread AzrTimerStack matches 1 if score playerCount Azr_system matches 1 run tellraw @a[tag=azrPlayer] {"text":"“真是不错的实力，花园很久都没有来过如此骁勇善战的人类了。”","color":"white"}
-    execute if score tick_main_thread AzrTimerStack matches 1 if score playerCount Azr_system matches 2 run tellraw @a[tag=azrPlayer] {"text":"“真是不错的实力，花园很久都没有来过如此骁勇善战的人类了。而且还是两人组。”","color":"white"}
-    execute if score tick_main_thread AzrTimerStack matches 1 if score playerCount Azr_system matches 3.. run tellraw @a[tag=azrPlayer] {"text":"“依靠人海战术来挑战试炼很有意思吗？汝等是否有些过于狂妄了？”","color":"white"}
-    execute if score tick_main_thread AzrTimerStack matches 80 run tellraw @a[tag=azrPlayer] {"text":"？？？：","color":"red"}
-    execute if score tick_main_thread AzrTimerStack matches 80 if score playerCount Azr_system matches 1..2 run tellraw @a[tag=azrPlayer] {"text":"“吾乃沙利叶之护法，力天使「权之残影」，第一关口的守护者。吾来当汝对手。”","color":"white"}
-    execute if score tick_main_thread AzrTimerStack matches 80 if score playerCount Azr_system matches 3.. run tellraw @a[tag=azrPlayer] {"text":"“吾乃沙利叶之护法，力天使「「权之残影」。吾将让你们领会私闯生命树花园的后果。”","color":"white"}
-    execute if score tick_main_thread AzrTimerStack matches 3001 run tellraw @a[tag=azrPlayer] {"text":"权之残影：","color":"red"}
-    execute if score tick_main_thread AzrTimerStack matches 3001 if score playerCount Azr_system matches 1 run tellraw @a[tag=azrPlayer] {"text":"“真是了不起的人类啊，看来是你的胜利。”","color":"white"}
-    execute if score tick_main_thread AzrTimerStack matches 3001 if score playerCount Azr_system matches 2 run tellraw @a[tag=azrPlayer] {"text":"“真是了不起的人类啊，看来是你们二人的胜利。”","color":"white"}
-    execute if score tick_main_thread AzrTimerStack matches 3001 if score playerCount Azr_system matches 3.. run tellraw @a[tag=azrPlayer] {"text":"“可……可恶，吾辈寡不敌众，但可别高兴得太早。”","color":"white"}
-    execute if score tick_main_thread AzrTimerStack matches 3070 run tellraw @a[tag=azrPlayer] {"text":"权之残影：","color":"red"}
-    execute if score tick_main_thread AzrTimerStack matches 3070 if score playerCount Azr_system matches 1 run tellraw @a[tag=azrPlayer] {"text":"“只不过，这只是一次警告。继续前进，汝将面临真正的挑战。吾辈会在第一关口的尽头等待。”","color":"white"}
-    execute if score tick_main_thread AzrTimerStack matches 3070 if score playerCount Azr_system matches 2 run tellraw @a[tag=azrPlayer] {"text":"“只不过，这只是一次警告。继续前进，汝等将面临真正的挑战。吾辈会在第一关口的尽头等待。”","color":"white"}
-    execute if score tick_main_thread AzrTimerStack matches 3070 if score playerCount Azr_system matches 3.. run tellraw @a[tag=azrPlayer] {"text":"“你们会后悔来到这里的。现在如若不回头、下次相遇之刻，吾将全力送你们赴死。”","color":"white"}
-    execute if score tick_main_thread AzrTimerStack matches 3155 run tellraw @a[tag=azrPlayer] {"text":"权之残影：","color":"red"}
-    execute if score tick_main_thread AzrTimerStack matches 3155 run tellraw @a[tag=azrPlayer] {"text":"“前方即是用于欢迎勇者的招待厅。若真有胆量的话，就尽管前行吧。”","color":"white"}
+    execute if score tick_main_thread AzrTimerStack matches 1 run tellraw @a[tag=azrShowDialog] {"text":"？？？：","color":"red"}
+    execute if score tick_main_thread AzrTimerStack matches 1 if score playerCount Azr_system matches 1 run tellraw @a[tag=azrShowDialog] {"text":"“真是不错的实力，花园很久都没有来过如此骁勇善战的人类了。”","color":"white"}
+    execute if score tick_main_thread AzrTimerStack matches 1 if score playerCount Azr_system matches 2 run tellraw @a[tag=azrShowDialog] {"text":"“真是不错的实力，花园很久都没有来过如此骁勇善战的人类了。而且还是两人组。”","color":"white"}
+    execute if score tick_main_thread AzrTimerStack matches 1 if score playerCount Azr_system matches 3.. run tellraw @a[tag=azrShowDialog] {"text":"“依靠人海战术来挑战试炼很有意思吗？汝等是否有些过于狂妄了？”","color":"white"}
+    execute if score tick_main_thread AzrTimerStack matches 80 run tellraw @a[tag=azrShowDialog] {"text":"？？？：","color":"red"}
+    execute if score tick_main_thread AzrTimerStack matches 80 if score playerCount Azr_system matches 1..2 run tellraw @a[tag=azrShowDialog] {"text":"“吾乃沙利叶之护法，力天使「权之残影」，第一关口的守护者。吾来当汝对手。”","color":"white"}
+    execute if score tick_main_thread AzrTimerStack matches 80 if score playerCount Azr_system matches 3.. run tellraw @a[tag=azrShowDialog] {"text":"“吾乃沙利叶之护法，力天使「「权之残影」。吾将让你们领会私闯生命树花园的后果。”","color":"white"}
+    execute if score tick_main_thread AzrTimerStack matches 3001 run tellraw @a[tag=azrShowDialog] {"text":"权之残影：","color":"red"}
+    execute if score tick_main_thread AzrTimerStack matches 3001 if score playerCount Azr_system matches 1 run tellraw @a[tag=azrShowDialog] {"text":"“真是了不起的人类啊，看来是你的胜利。”","color":"white"}
+    execute if score tick_main_thread AzrTimerStack matches 3001 if score playerCount Azr_system matches 2 run tellraw @a[tag=azrShowDialog] {"text":"“真是了不起的人类啊，看来是你们二人的胜利。”","color":"white"}
+    execute if score tick_main_thread AzrTimerStack matches 3001 if score playerCount Azr_system matches 3.. run tellraw @a[tag=azrShowDialog] {"text":"“可……可恶，吾辈寡不敌众，但可别高兴得太早。”","color":"white"}
+    execute if score tick_main_thread AzrTimerStack matches 3070 run tellraw @a[tag=azrShowDialog] {"text":"权之残影：","color":"red"}
+    execute if score tick_main_thread AzrTimerStack matches 3070 if score playerCount Azr_system matches 1 run tellraw @a[tag=azrShowDialog] {"text":"“只不过，这只是一次警告。继续前进，汝将面临真正的挑战。吾辈会在第一关口的尽头等待。”","color":"white"}
+    execute if score tick_main_thread AzrTimerStack matches 3070 if score playerCount Azr_system matches 2 run tellraw @a[tag=azrShowDialog] {"text":"“只不过，这只是一次警告。继续前进，汝等将面临真正的挑战。吾辈会在第一关口的尽头等待。”","color":"white"}
+    execute if score tick_main_thread AzrTimerStack matches 3070 if score playerCount Azr_system matches 3.. run tellraw @a[tag=azrShowDialog] {"text":"“你们会后悔来到这里的。现在如若不回头、下次相遇之刻，吾将全力送你们赴死。”","color":"white"}
+    execute if score tick_main_thread AzrTimerStack matches 3155 run tellraw @a[tag=azrShowDialog] {"text":"权之残影：","color":"red"}
+    execute if score tick_main_thread AzrTimerStack matches 3155 run tellraw @a[tag=azrShowDialog] {"text":"“前方即是用于欢迎勇者的招待厅。若真有胆量的话，就尽管前行吧。”","color":"white"}
 
 #health check
     scoreboard objectives add Azr_mobHealth dummy
@@ -284,9 +284,9 @@ execute as @e[tag=arroworb2,type=marker] at @s run function skyblock:azr/stage/b
     execute if score tick_main_thread AzrTimerStack matches 3200 run scoreboard players reset tick_main_thread AzrTimerStack
     #execute if score tick_main_thread AzrTimerStack matches 3200 run scoreboard players set @a[tag=azrPlayer,scores={Azr_PlyPtsH=..4}] Azr_PlyPtsH 5
     execute if score tick_main_thread AzrTimerStack matches 3140 run playsound minecraft:ui.toast.challenge_complete master @a[tag=azrPlayer] ~ ~ ~ 2 0.9
-    execute if score tick_main_thread AzrTimerStack matches 3140 run title @a[tag=azrPlayer] actionbar {"text":"Chapter Clear","color":"gold"}
-    execute if score tick_main_thread AzrTimerStack matches 3140 run tellraw @a[tag=azrPlayer] {"text":"「生命手册」已升级","color":"green"}
-    execute if score tick_main_thread AzrTimerStack matches 3140 run advancement grant @a[tag=azrPlayer] only skyblock:azr/azr_stage4_boss1
+    execute if score tick_main_thread AzrTimerStack matches 3140 run title @a[tag=azrShowDialog] actionbar {"text":"Chapter Clear","color":"gold"}
+    execute if score tick_main_thread AzrTimerStack matches 3140 run tellraw @a[tag=azrShowDialog] {"text":"「生命手册」已升级","color":"green"}
+    execute if score tick_main_thread AzrTimerStack matches 3140 run advancement grant @a[tag=azrShowDialog] only skyblock:azr/azr_stage4_boss1
     execute if score tick_main_thread AzrTimerStack matches 3120 run kill @e[tag=AzrielMob,x=-79931,y=40,z=88,distance=5..500]
     #rewards
     execute if score tick_main_thread AzrTimerStack matches 3144 as @a[tag=azrPlayer] at @s run summon item ~ ~2 ~ {Item:{id:"emerald",count:2b}}

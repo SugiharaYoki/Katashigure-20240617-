@@ -139,8 +139,8 @@ execute if score stage_main_thread AzrTimerStack matches 120..314 run scoreboard
 
 
 execute if score stage_main_thread AzrTimerStack matches 315..318 if score mobCount Azr_system matches 1.. run scoreboard players set stage_main_thread AzrTimerStack 315
-execute if score stage_main_thread AzrTimerStack matches 329 if score $Azr_Doppel Azr_system matches 1 run title @a[tag=azrPlayer] actionbar {"text":"Stage Annihilated","color":"green"}
-execute if score stage_main_thread AzrTimerStack matches 329 unless score $Azr_Doppel Azr_system matches 1 run title @a[tag=azrPlayer] actionbar {"text":"Double Stage Annihilated","color":"green"}
+execute if score stage_main_thread AzrTimerStack matches 329 if score $Azr_Doppel Azr_system matches 1 run title @a[tag=azrShowDialog] actionbar {"text":"Stage Annihilated","color":"green"}
+execute if score stage_main_thread AzrTimerStack matches 329 unless score $Azr_Doppel Azr_system matches 1 run title @a[tag=azrShowDialog] actionbar {"text":"Double Stage Annihilated","color":"green"}
 execute if score stage_main_thread AzrTimerStack matches 319 run summon minecraft:lightning_bolt -79466.53 32.00 -430.31
 execute if score stage_main_thread AzrTimerStack matches 321 run summon minecraft:lightning_bolt -79465.46 32.00 -430.39
 execute if score stage_main_thread AzrTimerStack matches 322 run summon minecraft:lightning_bolt -79467.29 41.00 -430.13
@@ -155,7 +155,7 @@ execute if score stage_main_thread AzrTimerStack matches 319..323 run playsound 
 execute if score stage_main_thread AzrTimerStack matches 322..328 run playsound ambient.warped_forest.loop ambient @a[tag=azrPlayer] -78000 100 0 1000
 execute if score stage_main_thread AzrTimerStack matches 322..328 run playsound ambient.warped_forest.mood ambient @a[tag=azrPlayer] -78000 100 0 1000
 execute if score stage_main_thread AzrTimerStack matches 322..328 run playsound ambient.warped_forest.additions ambient @a[tag=azrPlayer] -78000 100 0 1000
-execute if score stage_main_thread AzrTimerStack matches 329 run tellraw @a[tag=azrPlayer] {"text":"通往神庭的传送门 已经开启……","color":"aqua","bold":true}
+execute if score stage_main_thread AzrTimerStack matches 329 run tellraw @a[tag=azrShowDialog] {"text":"通往神庭的传送门 已经开启……","color":"aqua","bold":true}
 execute if score stage_main_thread AzrTimerStack matches 329 run playsound item.trident.thunder master @a[tag=azrPlayer] -79466.03 35.97 -430.00 0.2
 execute if score stage_main_thread AzrTimerStack matches 329 run particle minecraft:dripping_obsidian_tear -79466.03 35.97 -430.00 30 30 30 0.05 5000
 execute if score stage_main_thread AzrTimerStack matches 329 run particle minecraft:electric_spark -79466.03 35.97 -430.00 1.9 2.9 0.5 0.05 50

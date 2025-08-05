@@ -6,10 +6,10 @@ execute unless entity @s[nbt={Inventory:[{components:{"minecraft:custom_data":{r
 execute if entity @s[tag=AZR_fakeDeath] run function skyblock:azr/end_game/revival
 execute if items entity @s[tag=!AZR_fakeDeath] container.* *[custom_data~{revival_star:1b}] run function skyblock:azr/end_game/revival
 #输出
-execute unless entity @s[tag=AZR_fakeDeath] unless score @s Azr_forceDeath matches 1 unless entity @s[nbt={Inventory:[{components:{"minecraft:custom_data":{revival_star:1b}}}]}] run tellraw @a[tag=azrPlayer] [{"text":"警告！","color":"red"},{"selector":"@s","color":"blue"},{"text":"已经没有更多下界命星了！","color":"red"}]
+execute unless entity @s[tag=AZR_fakeDeath] unless score @s Azr_forceDeath matches 1 unless entity @s[nbt={Inventory:[{components:{"minecraft:custom_data":{revival_star:1b}}}]}] run tellraw @a[tag=azrShowDialog] [{"text":"警告！","color":"red"},{"selector":"@s","color":"blue"},{"text":"已经没有更多下界命星了！","color":"red"}]
 #死亡后退出游戏
     #输出
-    execute if score @s Azr_forceDeath matches 1 run tellraw @a[tag=azrPlayer,distance=..10000] [{"selector":"@s","color":"blue"},{"text":" 阵亡了！","color":"dark_red"}]
+    execute if score @s Azr_forceDeath matches 1 run tellraw @a[tag=azrShowDialog,distance=..10000] [{"selector":"@s","color":"blue"},{"text":" 阵亡了！","color":"dark_red"}]
     execute if score @s Azr_forceDeath matches 1 run tellraw @s [{"text":"你已经死亡！最终坚持关数： ","color":"red"},{"score":{"name":"@s","objective":"Azr_wave"}}]
     execute if score @s Azr_forceDeath matches 1 run tellraw @s [{"text":"现在持有的影之石： ","color":"white"},{"score":{"name":"@s","objective":"Perm_PersonSHD"}}]
 execute if score @s Azr_forceDeath matches 1 run function skyblock:azr/end_game/quit_game

@@ -151,11 +151,11 @@ execute if score stage_main_thread AzrTimerStack matches 283 if score playerCoun
 execute if score stage_main_thread AzrTimerStack matches 287 if score playerCount Azr_system matches 5.. run summon zombie -79935 53.51 -94 {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_zombie_knight_tier1",Health:24.0f,CustomName:'"重甲僵尸"',CanPickUpLoot:0b,IsBaby:0b,HandItems:[{count:1,id:"wooden_sword",components:{custom_name:'{"text":"木剑","italic":false,"color":"white"}'}},{count:1,id:"shield",components:{custom_name:'{"text":"盾","italic":false,"color":"white"}'}}],HandDropChances:[0.001f,0.001f],ArmorItems:[{count:1,id:"iron_boots",components:{custom_name:'{"text":"铁靴","italic":false,"color":"white"}'}},{count:1,id:"iron_leggings",components:{custom_name:'{"text":"铁护腿","italic":false,"color":"white"}'}},{count:1,id:"iron_chestplate",components:{custom_name:'{"text":"铁胸甲","italic":false,"color":"white"}'}},{count:1,id:"iron_helmet",components:{custom_name:'{"text":"铁盔","italic":false,"color":"white"}'}}],ArmorDropChances:[0.001f,0.001f,0.001f,0.001f],attributes:[{id:"max_health",base:24.0d},{id:"attack_damage",base:1.5d},{id:"knockback_resistance",base:0.5d},{id:"movement_speed",base:0.14d}]}
 execute if score stage_main_thread AzrTimerStack matches 301 if score playerCount Azr_system matches 6.. run summon zombie -79935 53.51 -94 {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_zombie_knight_tier1",Health:24.0f,CustomName:'"重甲僵尸"',CanPickUpLoot:0b,IsBaby:0b,HandItems:[{count:1,id:"wooden_sword",components:{custom_name:'{"text":"木剑","italic":false,"color":"white"}'}},{count:1,id:"shield",components:{custom_name:'{"text":"盾","italic":false,"color":"white"}'}}],HandDropChances:[0.001f,0.001f],ArmorItems:[{count:1,id:"iron_boots",components:{custom_name:'{"text":"铁靴","italic":false,"color":"white"}'}},{count:1,id:"iron_leggings",components:{custom_name:'{"text":"铁护腿","italic":false,"color":"white"}'}},{count:1,id:"iron_chestplate",components:{custom_name:'{"text":"铁胸甲","italic":false,"color":"white"}'}},{count:1,id:"iron_helmet",components:{custom_name:'{"text":"铁盔","italic":false,"color":"white"}'}}],ArmorDropChances:[0.001f,0.001f,0.001f,0.001f],attributes:[{id:"max_health",base:24.0d},{id:"attack_damage",base:1.5d},{id:"knockback_resistance",base:0.5d},{id:"movement_speed",base:0.14d}]}
 
-execute if score stage_main_thread AzrTimerStack matches 292 run title @a[tag=azrPlayer] actionbar [{"text":"冤魂失控","color":"yellow"},{"text":"▌","color":"red"},{"text":"▌","color":"dark_gray"},{"text":"▌","color":"dark_gray"},{"text":"▌","color":"dark_gray"},{"text":"▌","color":"dark_gray"}]
-execute if score stage_main_thread AzrTimerStack matches 296 run title @a[tag=azrPlayer] actionbar [{"text":"冤魂失控","color":"yellow"},{"text":"▌","color":"red"},{"text":"▌","color":"red"},{"text":"▌","color":"dark_gray"},{"text":"▌","color":"dark_gray"},{"text":"▌","color":"dark_gray"}]
-execute if score stage_main_thread AzrTimerStack matches 300 run title @a[tag=azrPlayer] actionbar [{"text":"冤魂失控","color":"yellow"},{"text":"▌","color":"red"},{"text":"▌","color":"red"},{"text":"▌","color":"red"},{"text":"▌","color":"dark_gray"},{"text":"▌","color":"dark_gray"}]
-execute if score stage_main_thread AzrTimerStack matches 304 run title @a[tag=azrPlayer] actionbar [{"text":"冤魂失控","color":"yellow"},{"text":"▌","color":"red"},{"text":"▌","color":"red"},{"text":"▌","color":"red"},{"text":"▌","color":"red"},{"text":"▌","color":"dark_gray"}]
-execute if score stage_main_thread AzrTimerStack matches 308 run title @a[tag=azrPlayer] actionbar [{"text":"冤魂失控","color":"yellow"},{"text":"▌","color":"red"},{"text":"▌","color":"red"},{"text":"▌","color":"red"},{"text":"▌","color":"red"},{"text":"▌","color":"red"}]
+execute if score stage_main_thread AzrTimerStack matches 292 run title @a[tag=azrShowDialog] actionbar [{"text":"冤魂失控","color":"yellow"},{"text":"▌","color":"red"},{"text":"▌","color":"dark_gray"},{"text":"▌","color":"dark_gray"},{"text":"▌","color":"dark_gray"},{"text":"▌","color":"dark_gray"}]
+execute if score stage_main_thread AzrTimerStack matches 296 run title @a[tag=azrShowDialog] actionbar [{"text":"冤魂失控","color":"yellow"},{"text":"▌","color":"red"},{"text":"▌","color":"red"},{"text":"▌","color":"dark_gray"},{"text":"▌","color":"dark_gray"},{"text":"▌","color":"dark_gray"}]
+execute if score stage_main_thread AzrTimerStack matches 300 run title @a[tag=azrShowDialog] actionbar [{"text":"冤魂失控","color":"yellow"},{"text":"▌","color":"red"},{"text":"▌","color":"red"},{"text":"▌","color":"red"},{"text":"▌","color":"dark_gray"},{"text":"▌","color":"dark_gray"}]
+execute if score stage_main_thread AzrTimerStack matches 304 run title @a[tag=azrShowDialog] actionbar [{"text":"冤魂失控","color":"yellow"},{"text":"▌","color":"red"},{"text":"▌","color":"red"},{"text":"▌","color":"red"},{"text":"▌","color":"red"},{"text":"▌","color":"dark_gray"}]
+execute if score stage_main_thread AzrTimerStack matches 308 run title @a[tag=azrShowDialog] actionbar [{"text":"冤魂失控","color":"yellow"},{"text":"▌","color":"red"},{"text":"▌","color":"red"},{"text":"▌","color":"red"},{"text":"▌","color":"red"},{"text":"▌","color":"red"}]
 execute if score stage_main_thread AzrTimerStack matches 308 run particle minecraft:soul -79922 54 -106 15 15 15 0.00 480
 execute if score stage_main_thread AzrTimerStack matches 292..305 as @a[tag=azrPlayer] at @s run playsound minecraft:ambient.warped_forest.additions master @s ~ ~ ~ 10 0.6
 execute if score stage_main_thread AzrTimerStack matches 292..305 as @a[tag=azrPlayer] at @s run playsound minecraft:ambient.warped_forest.loop master @s ~ ~ ~ 10 0.6
@@ -213,21 +213,21 @@ execute if score stage_main_thread AzrTimerStack matches 395 if score playerCoun
 
 execute if score stage_main_thread AzrTimerStack matches 202..207 if entity @e[tag=AzrielMob,tag=!AzrielDecMob] run scoreboard players set stage_main_thread AzrTimerStack 203
 execute if score stage_main_thread AzrTimerStack matches 396..399 if entity @e[tag=AzrielMob,tag=!AzrielDecMob] run scoreboard players set stage_main_thread AzrTimerStack 397
-execute if score stage_main_thread AzrTimerStack matches 197 run title @a[tag=azrPlayer] actionbar {"text":"Wave Clear","color":"green"}
+execute if score stage_main_thread AzrTimerStack matches 197 run title @a[tag=azrShowDialog] actionbar {"text":"Wave Clear","color":"green"}
 execute if score stage_main_thread AzrTimerStack matches 197 run give @a[tag=azrPlayer] glistering_melon_slice 2
-execute if score stage_main_thread AzrTimerStack matches 222 run title @a[tag=azrPlayer] actionbar {"text":"5","color":"yellow"}
-execute if score stage_main_thread AzrTimerStack matches 226 run title @a[tag=azrPlayer] actionbar {"text":"4","color":"yellow"}
-execute if score stage_main_thread AzrTimerStack matches 232 run title @a[tag=azrPlayer] actionbar {"text":"3","color":"red"}
-execute if score stage_main_thread AzrTimerStack matches 236 run title @a[tag=azrPlayer] actionbar {"text":"2","color":"red"}
-execute if score stage_main_thread AzrTimerStack matches 240 run title @a[tag=azrPlayer] actionbar {"text":"1","color":"red"}
-execute if score stage_main_thread AzrTimerStack matches 244 run title @a[tag=azrPlayer] actionbar {"text":"Stage Appetence - Wave 2","color":"red"}
+execute if score stage_main_thread AzrTimerStack matches 222 run title @a[tag=azrShowDialog] actionbar {"text":"5","color":"yellow"}
+execute if score stage_main_thread AzrTimerStack matches 226 run title @a[tag=azrShowDialog] actionbar {"text":"4","color":"yellow"}
+execute if score stage_main_thread AzrTimerStack matches 232 run title @a[tag=azrShowDialog] actionbar {"text":"3","color":"red"}
+execute if score stage_main_thread AzrTimerStack matches 236 run title @a[tag=azrShowDialog] actionbar {"text":"2","color":"red"}
+execute if score stage_main_thread AzrTimerStack matches 240 run title @a[tag=azrShowDialog] actionbar {"text":"1","color":"red"}
+execute if score stage_main_thread AzrTimerStack matches 244 run title @a[tag=azrShowDialog] actionbar {"text":"Stage Appetence - Wave 2","color":"red"}
 
 
 
 #execute if entity @e[tag=sc,limit=1,scores={stageSeconds=130,Azr_Player=1..}] run tellraw @a[tag=AZRPT] {"text":"你感受到一道刺入骨髓的冰冷视线……","color":"gray"}
 #execute if entity @e[tag=sc,limit=1,scores={stageSeconds=143,Azr_Player=1..}] run tellraw @a[tag=AZRPT] {"text":"流浪狙击手 现身","color":"dark_red"}
-execute if score stage_main_thread AzrTimerStack matches 400 run advancement grant @a[tag=azrPlayer] only skyblock:azr/azr_stage_bonus_appetence
-execute if score stage_main_thread AzrTimerStack matches 400 run title @a[tag=azrPlayer] actionbar {"text":"Extra Stage Clear","color":"green"}
+execute if score stage_main_thread AzrTimerStack matches 400 run advancement grant @a[tag=azrShowDialog] only skyblock:azr/azr_stage_bonus_appetence
+execute if score stage_main_thread AzrTimerStack matches 400 run title @a[tag=azrShowDialog] actionbar {"text":"Extra Stage Clear","color":"green"}
 execute if score stage_main_thread AzrTimerStack matches 400 as @a[tag=azrPlayer] at @s unless score @s Azr_SK10 matches 1.. run tellraw @s {"text":"解封了灵能「滞空斩击」！","color":"green"}
 execute if score stage_main_thread AzrTimerStack matches 400 as @a[tag=azrPlayer] at @s unless score @s Azr_SK10 matches 1.. run playsound entity.player.levelup master @s ~ ~ ~ 1 1.1
 execute if score stage_main_thread AzrTimerStack matches 400 as @a[tag=azrPlayer] at @s unless score @s Azr_SK10 matches 1.. run scoreboard players set @s Azr_SK10 1

@@ -127,6 +127,6 @@ execute if score playerCount Azr_system matches 6.. positioned -79772 26 -386 ru
 
 setblock -79765 24 -449 air
 
-tellraw @a[tag=azrPlayer] {"text":"权之残影：","color":"aqua"}
-execute if score playerCount Azr_system matches 1 run tellraw @a[tag=azrPlayer] {"text":"“前方是魔界反叛军的地堡入口。从彼处楼梯上行，汝便可进入绯红森林之中。吾辈会在那尽头的洞窟中等待着你。”","color":"white"}
-execute if score playerCount Azr_system matches 2.. run tellraw @a[tag=azrPlayer] {"text":"“前方是魔界反叛军的地堡入口。从彼处楼梯上行，汝等便可进入绯红森林之中。吾辈会在那尽头的洞窟中等待着你们。”","color":"white"}
+tellraw @a[tag=azrShowDialog] {"text":"权之残影：","color":"aqua"}
+execute if score playerCount Azr_system matches 1 run tellraw @a[tag=azrShowDialog] {"text":"“前方是魔界反叛军的地堡入口。从彼处楼梯上行，汝便可进入绯红森林之中。吾辈会在那尽头的洞窟中等待着你。”","color":"white"}
+execute if score playerCount Azr_system matches 2.. run tellraw @a[tag=azrShowDialog] {"text":"“前方是魔界反叛军的地堡入口。从彼处楼梯上行，汝等便可进入绯红森林之中。吾辈会在那尽头的洞窟中等待着你们。”","color":"white"}

@@ -1,6 +1,6 @@
-advancement grant @a[tag=azrPlayer] only skyblock:azr/azr_stage15
+advancement grant @a[tag=azrShowDialog] only skyblock:azr/azr_stage15
 
-title @a[tag=azrPlayer] actionbar {"text":"Stage Clear","color":"green"}
+title @a[tag=azrShowDialog] actionbar {"text":"Stage Clear","color":"green"}
 playsound ambient.crimson_forest.loop ambient @a[tag=azrPlayer] -78000 100 0 1000
 playsound minecraft:ambient.nether_wastes.mood ambient @a[tag=azrPlayer] -78000 100 0 1000 0.3
 playsound ambient.crimson_forest.additions ambient @a[tag=azrPlayer] -78000 100 0 1000

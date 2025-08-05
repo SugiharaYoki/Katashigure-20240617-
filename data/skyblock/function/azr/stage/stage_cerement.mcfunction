@@ -83,8 +83,8 @@ execute if score stage_main_thread AzrTimerStack matches 145 if score #temp_rng 
 
 
 execute if score stage_main_thread AzrTimerStack matches 147..149 if entity @e[tag=AzrielMob,tag=!AzrielDecMob] run scoreboard players set stage_main_thread AzrTimerStack 147
-execute if score stage_main_thread AzrTimerStack matches 149 run title @a[tag=azrPlayer] actionbar {"text":"Extra Stage Clear","color":"green"}
-execute if score stage_main_thread AzrTimerStack matches 149 run advancement grant @a[tag=azrPlayer] only skyblock:azr/azr_stage_bonus_cerement
+execute if score stage_main_thread AzrTimerStack matches 149 run title @a[tag=azrShowDialog] actionbar {"text":"Extra Stage Clear","color":"green"}
+execute if score stage_main_thread AzrTimerStack matches 149 run advancement grant @a[tag=azrShowDialog] only skyblock:azr/azr_stage_bonus_cerement
 execute if score stage_main_thread AzrTimerStack matches 149 as @a[tag=azrPlayer] at @s run tag @s add AZS_BoS02
 execute if score stage_main_thread AzrTimerStack matches 149 as @a[tag=azrPlayer] at @s run give @s emerald 5
 execute if score stage_main_thread AzrTimerStack matches 149 as @a[tag=azrPlayer] at @s run give @s rotten_flesh 3
