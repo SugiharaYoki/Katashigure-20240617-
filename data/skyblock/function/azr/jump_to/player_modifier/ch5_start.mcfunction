@@ -43,5 +43,4 @@ give @s gold_nugget 52
 # tellraw @s {"text":"游戏再续……","color":"green"}
 tp @s -79632.5 2.00 -337.5 90 0
 tag @s add azrUpdateSpawnPoint
-tag @s add AZR_fakeDeath
 tag @s add azrBanLifeVitae
