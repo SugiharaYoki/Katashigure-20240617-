@@ -3,8 +3,6 @@ execute unless score @s SeGa_StandLastBH matches 46.. run return run function sk
 
 stopsound @s
 
-effect give @s resistance 5 5 true
-
 xp set @s 0
 xp set @s 25 levels
 
