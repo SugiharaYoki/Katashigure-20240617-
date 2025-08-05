@@ -44,7 +44,7 @@ execute if score stage_main_thread AzrTimerStack matches 3027 run summon zombie 
 execute if score stage_main_thread AzrTimerStack matches 3047 run summon illusioner -79905 80 -134 {NoAI:1b,Silent:1b,PersistenceRequired:1b,Tags:["AzrielBossFA"],DeathLootTable:"skyblock:azriel_shadow_tier1",Health:150.0f,CustomName:'"权之残影"',Invulnerable:1b,attributes:[{id:"follow_range",base:0.0d},{id:"max_health",base:150.0d},{id:"movement_speed",base:0.02d},{id:"knockback_resistance",base:1.0d}]}
 execute if score stage_main_thread AzrTimerStack matches 3048 run playsound minecraft:entity.illusioner.ambient hostile @a[tag=azrPlayer] -79905 80 -134 1000 0.6
 execute if score stage_main_thread AzrTimerStack matches 3048 run tellraw @a[tag=azrPlayer] {"text":"？？？：","color":"red"}
-execute if score stage_main_thread AzrTimerStack matches 3048 run tellraw @a[tag=azrPlayer] {"text":"“躲开。”","color":"white"}
+execute if score stage_main_thread AzrTimerStack matches 3048 run tellraw @a[tag=azrPlayer] {"text":"“躲开，离这些怪物远点。”","color":"white"}
 execute if score stage_main_thread AzrTimerStack matches 3048 as @e[tag=AzrielMobE8] at @s run function skyblock:azr/azrielsmidgarden_effect_zanei_targer_w
 execute if score stage_main_thread AzrTimerStack matches 3056..3059 as @e[tag=AzrielMobE8] at @s run playsound minecraft:entity.firework_rocket.blast master @a[tag=azrPlayer] ~ ~3 ~ 10 0.7
 execute if score stage_main_thread AzrTimerStack matches 3056..3059 as @e[tag=AzrielMobE8] at @s run playsound minecraft:entity.arrow.shoot master @a[tag=azrPlayer] ~ ~3 ~ 10 0.8
@@ -63,8 +63,8 @@ execute if entity @a[tag=azrPlayer,scores={Azr_Shop=6..9}] if score stage_main_t
 execute if score stage_main_thread AzrTimerStack matches 3070 as @e[tag=AzrielBossFA] at @s run tp @s ~ ~ ~ facing entity @r[tag=azrPlayer]
 execute if score stage_main_thread AzrTimerStack matches 3070 as @e[tag=AzrielBossFA] at @s run playsound minecraft:entity.illusioner.ambient master @a[tag=azrPlayer] ~ ~ ~ 2 0.6
 execute if score stage_main_thread AzrTimerStack matches 3070 run tellraw @a[tag=azrPlayer] {"text":"权之残影：","color":"red"}
-execute if score stage_main_thread AzrTimerStack matches 3070 if score playerCount Azr_system matches 1 run tellraw @a[tag=azrPlayer] {"text":"“汝居然如约而至了……吾辈果然没有看错人。”","color":"white"}
-execute if score stage_main_thread AzrTimerStack matches 3070 if score playerCount Azr_system matches 2.. run tellraw @a[tag=azrPlayer] {"text":"“汝等居然如约而至了……吾辈果然没有看错人。”","color":"white"}
+execute if score stage_main_thread AzrTimerStack matches 3070 if score playerCount Azr_system matches 1 run tellraw @a[tag=azrPlayer] {"text":"“汝居然真有勇气随我一同来到牢房……吾辈果然没有看错人。”","color":"white"}
+execute if score stage_main_thread AzrTimerStack matches 3070 if score playerCount Azr_system matches 2.. run tellraw @a[tag=azrPlayer] {"text":"“汝等居然真有勇气随我一同来到牢房……吾辈果然没有看错人。”","color":"white"}
 
 execute if score stage_main_thread AzrTimerStack matches 3087 as @e[tag=AzrielBossFA] at @s run tp @s ~ ~ ~ facing entity @r[tag=azrPlayer]
 execute if score stage_main_thread AzrTimerStack matches 3087 as @e[tag=AzrielBossFA] at @s run playsound minecraft:entity.illusioner.ambient master @a[tag=azrPlayer] ~ ~ ~ 2 0.6
@@ -87,36 +87,47 @@ execute if score stage_main_thread AzrTimerStack matches 3187 run tellraw @a[tag
 execute if score stage_main_thread AzrTimerStack matches 3187 if score playerCount Azr_system matches 1 run tellraw @a[tag=azrPlayer] {"text":"“汝听从了路西法信使的谗言，来到沙利叶大人的中庭花园，是为了违抗命中注定的死期吧？”","color":"white"}
 execute if score stage_main_thread AzrTimerStack matches 3187 if score playerCount Azr_system matches 2.. run tellraw @a[tag=azrPlayer] {"text":"“汝等听从了路西法信使的谗言，来到沙利叶大人的中庭花园，是为了违抗命中注定的死期吧？”","color":"white"}
 
-execute if score stage_main_thread AzrTimerStack matches 3216 as @e[tag=AzrielBossFA] at @s run tp @s ~ ~ ~ facing entity @r[tag=azrPlayer]
-execute if score stage_main_thread AzrTimerStack matches 3216 as @e[tag=AzrielBossFA] at @s run playsound minecraft:entity.illusioner.ambient master @a[tag=azrPlayer] ~ ~ ~ 2 0.6
-execute if score stage_main_thread AzrTimerStack matches 3216 run tellraw @a[tag=azrPlayer] {"text":"权之残影：","color":"red"}
-execute if score stage_main_thread AzrTimerStack matches 3216 if score playerCount Azr_system matches 1 run tellraw @a[tag=azrPlayer] {"text":"“此话不假，只是吾等全部中了路西法的计。魔界大军给予你足以与天界守备军抗衡的力量，吸引了军队的注意力，再趁机从地脉开启了缺口，大举进攻了这座花园。”","color":"white"}
-execute if score stage_main_thread AzrTimerStack matches 3216 if score playerCount Azr_system matches 2.. run tellraw @a[tag=azrPlayer] {"text":"“此话不假，只是吾等全部中了路西法的计。魔界大军给予你们足以与天界守备军抗衡的力量，吸引了军队的注意力，再趁机从地脉开启了缺口，大举进攻了这座花园。”","color":"white"}
+execute if score stage_main_thread AzrTimerStack matches 3207 as @e[tag=AzrielBossFA] at @s run tp @s ~ ~ ~ facing entity @r[tag=azrPlayer]
+execute if score stage_main_thread AzrTimerStack matches 3207 as @e[tag=AzrielBossFA] at @s run playsound minecraft:entity.illusioner.ambient master @a[tag=azrPlayer] ~ ~ ~ 2 0.6
+execute if score stage_main_thread AzrTimerStack matches 3207 run tellraw @a[tag=azrPlayer] {"text":"权之残影：","color":"red"}
+execute if score stage_main_thread AzrTimerStack matches 3207 if score playerCount Azr_system matches 1 run tellraw @a[tag=azrPlayer] {"text":"“此话不假，只是吾等全部中了路西法的计。魔界大军给予你足以与天界守备军抗衡的力量，吸引了军队的注意力，再趁机从地脉开启了缺口，大举进攻了这座花园。”","color":"white"}
+execute if score stage_main_thread AzrTimerStack matches 3207 if score playerCount Azr_system matches 2.. run tellraw @a[tag=azrPlayer] {"text":"“此话不假，只是吾等全部中了路西法的计。魔界大军给予你们足以与天界守备军抗衡的力量，吸引了军队的注意力，再趁机从地脉开启了缺口，大举进攻了这座花园。”","color":"white"}
 
+execute if score stage_main_thread AzrTimerStack matches 3227 run tellraw @a[distance=0..150] [{"text":"你：","color":"aqua","bold": true},{"text":"\n“这样啊……所以魔界骗我来这生命树庭园，给予我远超神界军的战斗力，是为了这个目的。我被利用了……”","color":"white","bold": false}]
+
+execute if score stage_main_thread AzrTimerStack matches 3238 as @e[tag=AzrielBossFA] at @s run tp @s ~ ~ ~ facing -79905 40 -136
 execute if score stage_main_thread AzrTimerStack matches 3248 as @e[tag=AzrielBossFA] at @s run tp @s ~ ~ ~ facing entity @r[tag=azrPlayer]
 execute if score stage_main_thread AzrTimerStack matches 3248 as @e[tag=AzrielBossFA] at @s run playsound minecraft:entity.illusioner.ambient master @a[tag=azrPlayer] ~ ~ ~ 2 0.6
 execute if score stage_main_thread AzrTimerStack matches 3248 run tellraw @a[tag=azrPlayer] {"text":"权之残影：","color":"red"}
-execute if score stage_main_thread AzrTimerStack matches 3248 if score playerCount Azr_system matches 1 run tellraw @a[tag=azrPlayer] {"text":"“汝……是被那群魔鬼给利用了啊。”","color":"white"}
-execute if score stage_main_thread AzrTimerStack matches 3248 if score playerCount Azr_system matches 2.. run tellraw @a[tag=azrPlayer] {"text":"“汝等……是被那群魔鬼给利用了啊。”","color":"white"}
+execute if score stage_main_thread AzrTimerStack matches 3248 if score playerCount Azr_system matches 1 run tellraw @a[tag=azrPlayer] {"text":"“吾辈将需要汝帮助我们抵御魔界军团。你已经被赋予能够抗衡神界军的力量，自然能够匹敌魔界军的法力。”","color":"white"}
+execute if score stage_main_thread AzrTimerStack matches 3248 if score playerCount Azr_system matches 2.. run tellraw @a[tag=azrPlayer] {"text":"“吾辈将需要汝等协力抵御魔界军团。你们已经被赋予能够抗衡神界军的力量，自然能够匹敌魔界军的法力。”","color":"white"}
 
-execute if score stage_main_thread AzrTimerStack matches 3278 as @e[tag=AzrielBossFA] at @s run tp @s ~ ~ ~ facing -79905 40 -136
-execute if score stage_main_thread AzrTimerStack matches 3288 as @e[tag=AzrielBossFA] at @s run tp @s ~ ~ ~ facing entity @r[tag=azrPlayer]
-execute if score stage_main_thread AzrTimerStack matches 3288 as @e[tag=AzrielBossFA] at @s run playsound minecraft:entity.illusioner.ambient master @a[tag=azrPlayer] ~ ~ ~ 2 0.6
-execute if score stage_main_thread AzrTimerStack matches 3288 run tellraw @a[tag=azrPlayer] {"text":"权之残影：","color":"red"}
-execute if score stage_main_thread AzrTimerStack matches 3288 if score playerCount Azr_system matches 1 run tellraw @a[tag=azrPlayer] {"text":"“吾辈将需要汝帮助我们抵御魔界军团。你已经被赋予能够抗衡神界军的力量，自然能够匹敌魔界军的法力。”","color":"white"}
-execute if score stage_main_thread AzrTimerStack matches 3288 if score playerCount Azr_system matches 2.. run tellraw @a[tag=azrPlayer] {"text":"“吾辈将需要汝等协力抵御魔界军团。你们已经被赋予能够抗衡神界军的力量，自然能够匹敌魔界军的法力。”","color":"white"}
+execute if score stage_main_thread AzrTimerStack matches 3268 run tellraw @a[distance=0..150] [{"text":"你：","color":"aqua","bold": true},{"text":"\n“目前情况看上去不太允许我拒绝这个邀请。”","color":"white","bold": false}]
+
+execute if score stage_main_thread AzrTimerStack matches 3286 as @e[tag=AzrielBossFA] at @s run tp @s ~ ~ ~ facing entity @r[tag=azrPlayer]
+execute if score stage_main_thread AzrTimerStack matches 3286 as @e[tag=AzrielBossFA] at @s run playsound minecraft:entity.illusioner.ambient master @a[tag=azrPlayer] ~ ~ ~ 2 0.6
+execute if score stage_main_thread AzrTimerStack matches 3286 run tellraw @a[tag=azrPlayer] {"text":"权之残影：","color":"red"}
+execute if score stage_main_thread AzrTimerStack matches 3286 if score playerCount Azr_system matches 1 run tellraw @a[tag=azrPlayer] {"text":"“就此刻而言……汝的命运，似乎暂时未掌握在吾等手中。如今贸然接近花园的外围有很大风险，魔界军留汝活口无用。”","color":"white"}
+execute if score stage_main_thread AzrTimerStack matches 3286 if score playerCount Azr_system matches 2.. run tellraw @a[tag=azrPlayer] {"text":"“就此刻而言……汝等的命运，似乎暂时未掌握在吾等手中。如今贸然接近花园的外围有很大风险，魔界军留汝等活口无用。”","color":"white"}
 
 execute if score stage_main_thread AzrTimerStack matches 3316 as @e[tag=AzrielBossFA] at @s run tp @s ~ ~ ~ facing entity @r[tag=azrPlayer]
 execute if score stage_main_thread AzrTimerStack matches 3316 as @e[tag=AzrielBossFA] at @s run playsound minecraft:entity.illusioner.ambient master @a[tag=azrPlayer] ~ ~ ~ 2 0.6
 execute if score stage_main_thread AzrTimerStack matches 3316 run tellraw @a[tag=azrPlayer] {"text":"权之残影：","color":"red"}
-execute if score stage_main_thread AzrTimerStack matches 3316 if score playerCount Azr_system matches 1 run tellraw @a[tag=azrPlayer] {"text":"“在那之后……沙利叶大人极为赏识勇敢而强大的挑战者。她必将延迟汝的死期。只是就此刻而言……汝的命运，似乎暂时未掌握在吾等手中。”","color":"white"}
-execute if score stage_main_thread AzrTimerStack matches 3316 if score playerCount Azr_system matches 2.. run tellraw @a[tag=azrPlayer] {"text":"“在那之后……沙利叶大人极为赏识勇敢而强大的挑战者。她必将延迟汝等的死期。只是就此刻而言……汝等的命运，似乎暂时未掌握在吾等手中。”","color":"white"}
+execute if score stage_main_thread AzrTimerStack matches 3316 if score playerCount Azr_system matches 1 run tellraw @a[tag=azrPlayer] {"text":"“沙利叶大人极为赏识勇敢而强大的挑战者。抵御魔界大军乃大功一件，她必将延迟汝的死期。”","color":"white"}
+execute if score stage_main_thread AzrTimerStack matches 3316 if score playerCount Azr_system matches 2.. run tellraw @a[tag=azrPlayer] {"text":"“沙利叶大人极为赏识勇敢而强大的挑战者。抵御魔界大军乃大功一件，她必将延迟汝等的死期。”","color":"white"}
 
 execute if score stage_main_thread AzrTimerStack matches 3346 as @e[tag=AzrielBossFA] at @s run tp @s ~ ~ ~ facing entity @r[tag=azrPlayer]
 execute if score stage_main_thread AzrTimerStack matches 3349 as @e[tag=AzrielBossFA] at @s run playsound minecraft:entity.illusioner.ambient master @a[tag=azrPlayer] ~ ~ ~ 2 0.6
 execute if score stage_main_thread AzrTimerStack matches 3349 run tellraw @a[tag=azrPlayer] {"text":"权之残影：","color":"red"}
 execute if score stage_main_thread AzrTimerStack matches 3349 if score playerCount Azr_system matches 1 run tellraw @a[tag=azrPlayer] {"text":"“勇敢的人类啊，请与我们携手作战吧。神界军将提供最大程度的支援，你便是这座中庭花园的希望……”","color":"white"}
 execute if score stage_main_thread AzrTimerStack matches 3349 if score playerCount Azr_system matches 2.. run tellraw @a[tag=azrPlayer] {"text":"“勇敢的人类啊，请与我们携手作战吧。神界军将提供最大程度的支援，你们便是这座中庭花园的希望……”","color":"white"}
+
+execute if score stage_main_thread AzrTimerStack matches 3364 as @e[tag=AzrielBossFA] at @s run tp @s ~ ~ ~ facing entity @r[tag=azrPlayer]
+execute if score stage_main_thread AzrTimerStack matches 3364 as @e[tag=AzrielBossFA] at @s run playsound minecraft:entity.illusioner.ambient master @a[tag=azrPlayer] ~ ~ ~ 2 0.6
+execute if score stage_main_thread AzrTimerStack matches 3364 run tellraw @a[tag=azrPlayer] {"text":"权之残影：","color":"red"}
+execute if score stage_main_thread AzrTimerStack matches 3364 if score playerCount Azr_system matches 1 run tellraw @a[tag=azrPlayer] {"text":"“前路已打开，愿沙利叶大人保佑这位勇士……。”","color":"white"}
+execute if score stage_main_thread AzrTimerStack matches 3364 if score playerCount Azr_system matches 2 run tellraw @a[tag=azrPlayer] {"text":"“前路已打开，愿沙利叶大人保佑这两位人类……。”","color":"white"}
+execute if score stage_main_thread AzrTimerStack matches 3364 if score playerCount Azr_system matches 3.. run tellraw @a[tag=azrPlayer] {"text":"“前路已打开，愿沙利叶大人保佑诸位人类……。”","color":"white"}
 
 execute if score stage_main_thread AzrTimerStack matches 3364 run clone -79908 24 -134 -79902 30 -123 -79908 39 -134 replace
 execute if score stage_main_thread AzrTimerStack matches 3364 run particle minecraft:explosion -79904.53 41.98 -129.00 2 2 2 0.1 50
@@ -134,12 +145,12 @@ execute if score stage_main_thread AzrTimerStack matches 3365 run data modify en
 execute if score stage_main_thread AzrTimerStack matches 3365 run data modify entity @e[tag=e8001,tag=AzrielFriendly,type=wolf,limit=1] CollarColor set value 9b
 execute if score stage_main_thread AzrTimerStack matches 3364 as @a[tag=azrPlayer] at @s run playsound minecraft:caligula master @s ~ ~ ~ 0.56
 
-execute if score stage_main_thread AzrTimerStack matches 3364 as @e[tag=AzrielBossFA] at @s run tp @s ~ ~ ~ facing entity @r[tag=azrPlayer]
-execute if score stage_main_thread AzrTimerStack matches 3364 as @e[tag=AzrielBossFA] at @s run playsound minecraft:entity.illusioner.ambient master @a[tag=azrPlayer] ~ ~ ~ 2 0.6
-execute if score stage_main_thread AzrTimerStack matches 3364 run tellraw @a[tag=azrPlayer] {"text":"权之残影：","color":"red"}
-execute if score stage_main_thread AzrTimerStack matches 3364 if score playerCount Azr_system matches 1 run tellraw @a[tag=azrPlayer] {"text":"“前路已打开，愿沙利叶大人保佑这位勇士……。顺便，吾辈将在这里暂做停留，汝可在此请求吾辈打造强力的箭矢，或是修学灵能。”","color":"white"}
-execute if score stage_main_thread AzrTimerStack matches 3364 if score playerCount Azr_system matches 2 run tellraw @a[tag=azrPlayer] {"text":"“前路已打开，愿沙利叶大人保佑这两位人类……。顺便，吾辈将在这里暂做停留，汝等可在此请求吾辈打造强力的箭矢，或是修学灵能。”","color":"white"}
-execute if score stage_main_thread AzrTimerStack matches 3364 if score playerCount Azr_system matches 3.. run tellraw @a[tag=azrPlayer] {"text":"“前路已打开，愿沙利叶大人保佑诸位人类……。顺便，吾辈将在这里暂做停留，汝等可在此请求吾辈打造强力的箭矢，或是修学灵能。”","color":"white"}
+execute if score stage_main_thread AzrTimerStack matches 3384 as @e[tag=AzrielBossFA] at @s run tp @s ~ ~ ~ facing entity @r[tag=azrPlayer]
+execute if score stage_main_thread AzrTimerStack matches 3384 as @e[tag=AzrielBossFA] at @s run playsound minecraft:entity.illusioner.ambient master @a[tag=azrPlayer] ~ ~ ~ 2 0.6
+execute if score stage_main_thread AzrTimerStack matches 3384 run tellraw @a[tag=azrPlayer] {"text":"权之残影：","color":"red"}
+execute if score stage_main_thread AzrTimerStack matches 3384 if score playerCount Azr_system matches 1 run tellraw @a[tag=azrPlayer] {"text":"“顺便，吾辈将在这里暂做停留，汝可在此请求吾辈打造强力的箭矢，或是修学灵能。”","color":"white"}
+execute if score stage_main_thread AzrTimerStack matches 3384 if score playerCount Azr_system matches 2 run tellraw @a[tag=azrPlayer] {"text":"“顺便，吾辈将在这里暂做停留，汝等可在此请求吾辈打造强力的箭矢，或是修学灵能。”","color":"white"}
+execute if score stage_main_thread AzrTimerStack matches 3384 if score playerCount Azr_system matches 3.. run tellraw @a[tag=azrPlayer] {"text":"“顺便，吾辈将在这里暂做停留，汝等可在此请求吾辈打造强力的箭矢，或是修学灵能。”","color":"white"}
 
 execute if score stage_main_thread AzrTimerStack matches 3367 as @a[tag=azrPlayer] run function skyblock:azr/items/soul_expel_torch
 execute if score stage_main_thread AzrTimerStack matches 3367 run tellraw @a[tag=azrPlayer] {"text":"获得了 驱灵的火烛","color":"gray"}
