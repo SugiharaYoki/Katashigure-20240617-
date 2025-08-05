@@ -40,4 +40,4 @@ give @s gold_nugget 48
 # show texts
 tellraw @s {"text":"游戏再续……","color":"green"}
 tp @s -79466 84 -338
-tag @s add Azr_fakeDeath
+tag @s add AZR_fakeDeath
