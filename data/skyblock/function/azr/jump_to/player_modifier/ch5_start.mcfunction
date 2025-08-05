@@ -41,6 +41,6 @@ give @s gold_nugget 52
 
 # show texts
 # tellraw @s {"text":"游戏再续……","color":"green"}
-tp @s -79616 54 -338 facing -79620 54 -338
+tp @s -79632.5 2.00 -337.5 90 0
 tag @s add AZR_fakeDeath
 tag @s add azrBanLifeVitae

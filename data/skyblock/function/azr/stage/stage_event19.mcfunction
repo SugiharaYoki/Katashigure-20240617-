@@ -1,0 +1,1 @@
+execute if score stage_main_thread AzrTimerStack matches 0..20 run scoreboard players set stage_main_thread AzrTimerStack 0
