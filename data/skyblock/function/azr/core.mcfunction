@@ -124,6 +124,10 @@ execute if score stage Azr_system matches 43 as @e[tag=AzrielExtreme,tag=AzrielB
         # boss4 62
             # azr/main.mcfunction
 
+# 第五章
+#event19
+execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 63 run function skyblock:azr/stage/stage_event19
+
 #execute if entity @s[scores={Azr_Progress=44}] run function skyblock:azr/azrielsmidgarden_stage_event12
 #execute if entity @s[scores={Azr_Progress=51}] run function skyblock:azr/azrielsmidgarden_stage_13
 #execute if entity @s[scores={Azr_Progress=52..54}] run function skyblock:azr/azrielsmidgarden_stage_event13
