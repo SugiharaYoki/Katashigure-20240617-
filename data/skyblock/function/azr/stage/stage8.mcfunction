@@ -27,15 +27,15 @@ execute if block -79873 39 92 birch_button if score stage_main_thread AzrTimerSt
 execute unless block -79873 39 92 birch_button if score stage_main_thread AzrTimerStack matches 3 run tellraw @a[tag=azrPlayer] {"text":"“果然走到这里了吗？吾已等候多时。”","color":"white"}
 execute if score stage_main_thread AzrTimerStack matches 3 as @a[tag=azrPlayer] at @s run playsound minecraft:entity.illusioner.ambient hostile @a[tag=azrPlayer] ~ ~ ~ 2 0.6
 execute if score stage_main_thread AzrTimerStack matches 9 run tellraw @a[tag=azrPlayer] {"text":"权之残影？：","color":"red"}
-execute if score stage_main_thread AzrTimerStack matches 9 if score playerCount Azr_system matches 1 run tellraw @a[tag=azrPlayer] {"text":"“真是了不起的凡人……只可惜，你将为自己在这里造成的破坏付出代价。”","color":"white"}
-execute if score stage_main_thread AzrTimerStack matches 9 if score playerCount Azr_system matches 2.. run tellraw @a[tag=azrPlayer] {"text":"“真是了不起的凡人……只可惜，你们将为自己在这里造成的破坏付出代价。”","color":"white"}
+execute if score stage_main_thread AzrTimerStack matches 9 if score playerCount Azr_system matches 1 run tellraw @a[tag=azrPlayer] {"text":"“汝确实是了不起的人类。只可惜走歪了路，居然将魔界军引至此处。”","color":"white"}
+execute if score stage_main_thread AzrTimerStack matches 9 if score playerCount Azr_system matches 2.. run tellraw @a[tag=azrPlayer] {"text":"“汝等确实是了不起的人类。只可惜走歪了路，居然将魔界军引至此处。”","color":"white"}
 execute if score stage_main_thread AzrTimerStack matches 9 as @a[tag=azrPlayer] at @s run playsound minecraft:entity.illusioner.ambient hostile @a[tag=azrPlayer] ~ ~ ~ 2 0.6
 execute if score stage_main_thread AzrTimerStack matches 15 run tellraw @a[tag=azrPlayer] {"text":"权之残影？：","color":"red"}
-execute if score stage_main_thread AzrTimerStack matches 15 if score playerCount Azr_system matches 1 run tellraw @a[tag=azrPlayer] {"text":"“就让这间房间，成为你的葬身之地……”","color":"dark_red"}
-execute if score stage_main_thread AzrTimerStack matches 15 if score playerCount Azr_system matches 2 run tellraw @a[tag=azrPlayer] {"text":"“就让这间房间，成为你们二人的葬身之地……”","color":"dark_red"}
-execute if score stage_main_thread AzrTimerStack matches 15 if score playerCount Azr_system matches 3 run tellraw @a[tag=azrPlayer] {"text":"“就让这间房间，成为你们三人的葬身之地……”","color":"dark_red"}
-execute if score stage_main_thread AzrTimerStack matches 15 if score playerCount Azr_system matches 4 run tellraw @a[tag=azrPlayer] {"text":"“就让这间房间，成为你们四人的葬身之地……”","color":"dark_red"}
-execute if score stage_main_thread AzrTimerStack matches 15 if score playerCount Azr_system matches 5.. run tellraw @a[tag=azrPlayer] {"text":"“就让这间房间，成为你们全员的葬身之地……”","color":"dark_red"}
+execute if score stage_main_thread AzrTimerStack matches 15 if score playerCount Azr_system matches 1 run tellraw @a[tag=azrPlayer] {"text":"“破坏花园、依靠魔界之力屠杀神界军，该当何罪，汝心里有数吗？就让这间房间，成为你的葬身之地!”","color":"dark_red"}
+execute if score stage_main_thread AzrTimerStack matches 15 if score playerCount Azr_system matches 2 run tellraw @a[tag=azrPlayer] {"text":"“破坏花园、依靠魔界之力屠杀神界军，该当何罪，汝等心里有数吗？就让这间房间，成为你们二人的葬身之地!”","color":"dark_red"}
+execute if score stage_main_thread AzrTimerStack matches 15 if score playerCount Azr_system matches 3 run tellraw @a[tag=azrPlayer] {"text":"“破坏花园、依靠魔界之力屠杀神界军，该当何罪，汝等心里有数吗？就让这间房间，成为你们三人的葬身之地!”","color":"dark_red"}
+execute if score stage_main_thread AzrTimerStack matches 15 if score playerCount Azr_system matches 4 run tellraw @a[tag=azrPlayer] {"text":"“破坏花园、依靠魔界之力屠杀神界军，该当何罪，汝等心里有数吗？就让这间房间，成为你们四人的葬身之地!”","color":"dark_red"}
+execute if score stage_main_thread AzrTimerStack matches 15 if score playerCount Azr_system matches 5.. run tellraw @a[tag=azrPlayer] {"text":"“破坏花园、依靠魔界之力屠杀神界军，该当何罪，汝等心里有数吗？就让这间房间，成为你们全员的葬身之地!”","color":"dark_red"}
 execute if score stage_main_thread AzrTimerStack matches 15 as @a[tag=azrPlayer] at @s run playsound minecraft:entity.illusioner.ambient hostile @a[tag=azrPlayer] ~ ~ ~ 2 0.6
 execute if score stage_main_thread AzrTimerStack matches 7 run setblock -79898 41 62 air destroy
 execute if score stage_main_thread AzrTimerStack matches 10 run title @a[tag=azrPlayer] actionbar {"text":"Stage 8 - Wave 1","color":"red"}
