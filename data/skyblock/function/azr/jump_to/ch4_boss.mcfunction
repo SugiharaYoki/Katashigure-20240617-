@@ -4,4 +4,4 @@ execute as @a[tag=azrPlayer] run function skyblock:azr/jump_to/player_modifier/c
 
 execute store result score playerCount Azr_system if entity @a[tag=azrPlayer,gamemode=!spectator]
 
-schedule function skyblock:azr/jump_to/data_modifier/ch4_boss 5t
+schedule function skyblock:azr/jump_to/data_modifier/ch4_boss 20t
