@@ -122,7 +122,8 @@ execute if score SEA_ch6_event rng5 matches 12563 positioned 90013 95 -1926 run 
 
 #execute if score SEA_ch6_event rng5 matches 12563.. positioned 90013 95 -1926 run kill @a[tag=SEAPT,x=89980,y=0,z=-1917,dx=160,dy=33,dz=160,gamemode=adventure]
 execute if score SEA_ch6_event rng5 matches 12563.. positioned 90013 95 -1926 run tp @a[tag=SEAPT,x=89980,y=0,z=-1917,dx=40,dy=33,dz=100,gamemode=adventure] 90009 57 -1861
-execute if score SEA_ch6_event rng5 matches 12563.. positioned 90013 95 -1926 run tp @a[tag=SEAPT,x=90020,y=0,z=-1917,dx=100,dy=19,dz=300,gamemode=adventure] 90046 21 -1815
+execute if score SEA_ch6_event rng5 matches 12563.. positioned 90013 95 -1926 if score SEA_ch6_event rng5 matches ..20000 run tp @a[tag=SEAPT,x=90020,y=0,z=-1917,dx=100,dy=19,dz=300,gamemode=adventure] 90009 57 -1861
+execute if score SEA_ch6_event rng5 matches 12563.. positioned 90013 95 -1926 if score SEA_ch6_event rng5 matches 20001.. run tp @a[tag=SEAPT,x=90020,y=0,z=-1917,dx=100,dy=19,dz=300,gamemode=adventure] 90046 21 -1815
 execute if score SEA_ch6_event rng5 matches 12563.. positioned 90013 95 -1926 run tp @a[tag=SEAPT,x=89980,y=0,z=-1816,dx=40,dy=19,dz=100,gamemode=adventure] 90009 57 -1861
 
 
