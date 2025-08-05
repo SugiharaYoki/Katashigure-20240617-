@@ -48,7 +48,7 @@ execute if score stage_main_thread AzrTimerStack matches 121 run tellraw @a[tag=
 execute if score stage_main_thread AzrTimerStack matches 121 if score playerCount Azr_system matches 1 run tellraw @a[tag=azrShowDialog] {"text":"“改日传授你破坏地形的方法。”","color":"white"}
 execute if score stage_main_thread AzrTimerStack matches 121 if score playerCount Azr_system matches 2.. run tellraw @a[tag=azrShowDialog] {"text":"“改日传授你们破坏地形的方法”","color":"white"}
 execute if score stage_main_thread AzrTimerStack matches 121 as @e[tag=AzrielBossFA] at @s run playsound minecraft:entity.pillager.ambient master @a[tag=azrPlayer] ~ ~ ~ 0.5 0.8
-execute if score stage_main_thread AzrTimerStack matches 128 run advancement grant @a[tag=azrShowDialog] only skyblock:azr/azr_stage15_event1
+execute if score stage_main_thread AzrTimerStack matches 128 run advancement grant @a[tag=azrPlayer] only skyblock:azr/azr_stage15_event1
 
 
 execute if score stage_main_thread AzrTimerStack matches 133 run clone -79772 26 -386 -79772 26 -386 -79538 24 -409 replace move

@@ -700,7 +700,7 @@ execute if score stage_main_thread AzrTimerStack matches 4146 run scoreboard pla
 execute if score stage_main_thread AzrTimerStack matches 4146 run scoreboard players set stage_main_thread AzrTimerStack 0
 execute if score stage_main_thread AzrTimerStack matches 4146 run summon parrot -79761 79 -190 {PersistenceRequired:1b,Invulnerable:1b,Tags:["AzrielDecMob","AzrielFriendly"],DeathLootTable:"skyblock:azriel_creeper_tier2",Health:37.0f,CustomName:'"小鸢"',Variant:2,attributes:[{id:"max_health",base:50.0d},{id:"flying_speed",base:0.0d},{id:"movement_speed",base:0.0d}]}
 
-execute if score stage_main_thread AzrTimerStack matches 2941 run advancement grant @a[tag=azrShowDialog] only skyblock:azr/azr_stage12_boss3
+execute if score stage_main_thread AzrTimerStack matches 2941 run advancement grant @a[tag=azrPlayer] only skyblock:azr/azr_stage12_boss3
 
 
 execute if score stage_main_thread AzrTimerStack matches 2941 run bossbar remove azr:boss_hp_bar

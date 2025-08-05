@@ -273,7 +273,7 @@ execute if score stage_main_thread AzrTimerStack matches 478 run playsound minec
 execute if score stage_main_thread AzrTimerStack matches 484 run playsound ambient.crimson_forest.loop ambient @a[tag=azrPlayer] -78000 100 0 1000
 execute if score stage_main_thread AzrTimerStack matches 484 run playsound minecraft:ambient.nether_wastes.mood ambient @a[tag=azrPlayer] -78000 100 0 1000 0.3
 execute if score stage_main_thread AzrTimerStack matches 484 run playsound ambient.crimson_forest.additions ambient @a[tag=azrPlayer] -78000 100 0 1000
-execute if score stage_main_thread AzrTimerStack matches 500 run advancement grant @a[tag=azrShowDialog] only skyblock:azr/azr_stage10
+execute if score stage_main_thread AzrTimerStack matches 500 run advancement grant @a[tag=azrPlayer] only skyblock:azr/azr_stage10
 execute if score stage_main_thread AzrTimerStack matches 500 run scoreboard players set @a[tag=azrPlayer] Azr_wave 27
 execute if score stage_main_thread AzrTimerStack matches 500 run scoreboard players set stage Azr_system 36
 execute if score stage_main_thread AzrTimerStack matches 500 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..11}] Azr_skillPoints 12

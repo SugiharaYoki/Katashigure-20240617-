@@ -240,7 +240,7 @@ execute if score stage_main_thread AzrTimerStack matches 204 run scoreboard play
 execute if score stage_main_thread AzrTimerStack matches 204 run tellraw @a[scores={Azr_skillPoints=..2}] {"text":"永久升级 - 初始绿宝石数量 +5","color":"light_purple"}
 execute if score stage_main_thread AzrTimerStack matches 204 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..2}] Azr_skillPoints 3
 execute if score stage_main_thread AzrTimerStack matches 204 run title @a[tag=azrShowDialog] actionbar {"text":"Stage Clear","color":"green"}
-execute if score stage_main_thread AzrTimerStack matches 204 run advancement grant @a[tag=azrShowDialog] only skyblock:azr/azr_stage3_alt
+execute if score stage_main_thread AzrTimerStack matches 204 run advancement grant @a[tag=azrPlayer] only skyblock:azr/azr_stage3_alt
 execute if score stage_main_thread AzrTimerStack matches 204 run summon birch_chest_boat -79942.75 37.52 17.70 {Invulnerable: 1b, Rotation: [120.60768f, 0.0f], Items: [{count: 1, Slot: 11b, id: "minecraft:lapis_lazuli"}, {count: 5, Slot: 13b, id: "minecraft:emerald"}, {count: 1, Slot: 15b, id: "minecraft:lapis_lazuli"}]}
 execute if score stage_main_thread AzrTimerStack matches 204 run setblock -79931 43 42 air
 execute if score stage_main_thread AzrTimerStack matches 204 run setblock -79930 43 41 air

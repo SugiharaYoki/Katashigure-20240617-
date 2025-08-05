@@ -226,9 +226,9 @@ execute if score $AZSBoss4_94981 Azr_system matches 1 as @e[tag=AzrielBossA,limi
 execute if score $AZSBoss4_94982 Azr_system matches 1 as @e[tag=AzrielBossA,limit=1] at @s run effect give @a[tag=azrPlayer,distance=0..10] absorption 50 3
 execute if score $AZSBoss4_94983 Azr_system matches 1 as @e[tag=AzrielBossA,limit=1] at @s run effect give @a[tag=azrPlayer,distance=0..10] resistance 10 0
 execute if score $AZSBoss4_94984 Azr_system matches 1 as @e[tag=AzrielBossA,limit=1] at @s run effect give @a[tag=azrPlayer,distance=0..10] speed 10 0
-execute if score $AZSBoss4_94982 Azr_system matches 1 as @e[tag=AzrielBossA,limit=1] at @s run tellraw @a[tag=azrPlayer,distance=0..10] {"text":"- 已获得吸收魔咒 -","color":"gray"}
-execute if score $AZSBoss4_94983 Azr_system matches 1 as @e[tag=AzrielBossA,limit=1] at @s run tellraw @a[tag=azrPlayer,distance=0..10] {"text":"- 已获得抗性魔咒 -","color":"gray"}
-execute if score $AZSBoss4_94984 Azr_system matches 1 as @e[tag=AzrielBossA,limit=1] at @s run tellraw @a[tag=azrPlayer,distance=0..10] {"text":"- 已获得加速魔咒 -","color":"gray"}
+execute if score $AZSBoss4_94982 Azr_system matches 1 as @e[tag=AzrielBossA,limit=1] at @s run tellraw @a[tag=azrShowDialog,distance=0..10] {"text":"- 已获得吸收魔咒 -","color":"gray"}
+execute if score $AZSBoss4_94983 Azr_system matches 1 as @e[tag=AzrielBossA,limit=1] at @s run tellraw @a[tag=azrShowDialog,distance=0..10] {"text":"- 已获得抗性魔咒 -","color":"gray"}
+execute if score $AZSBoss4_94984 Azr_system matches 1 as @e[tag=AzrielBossA,limit=1] at @s run tellraw @a[tag=azrShowDialog,distance=0..10] {"text":"- 已获得加速魔咒 -","color":"gray"}
 scoreboard players reset $AZSBoss4_94981 Azr_system
 scoreboard players reset $AZSBoss4_94982 Azr_system
 scoreboard players reset $AZSBoss4_94983 Azr_system
@@ -416,7 +416,7 @@ execute if score tick_main_thread AzrTimerStack matches 8669..8999 unless entity
 execute if score tick_main_thread AzrTimerStack matches 9100 run setblock -79619 54 -338 air
 execute if score tick_main_thread AzrTimerStack matches 9100 run setblock -79619 55 -338 air
 execute if score tick_main_thread AzrTimerStack matches 9100 run title @a[tag=azrShowDialog] actionbar {"text":"Chapter Clear","color":"gold"}
-execute if score tick_main_thread AzrTimerStack matches 9100 run advancement grant @a[tag=azrShowDialog] only skyblock:azr/azr_stage16_boss4
+execute if score tick_main_thread AzrTimerStack matches 9100 run advancement grant @a[tag=azrPlayer] only skyblock:azr/azr_stage16_boss4
 execute if score tick_main_thread AzrTimerStack matches 9100 run kill @e[tag=AzrielBossA,limit=3]
 execute if score tick_main_thread AzrTimerStack matches 9100 run kill @e[tag=AzrielBoss4,limit=3]
 execute if score tick_main_thread AzrTimerStack matches 9100 run kill @e[tag=AzrielMob,tag=!AzrielDecMob]

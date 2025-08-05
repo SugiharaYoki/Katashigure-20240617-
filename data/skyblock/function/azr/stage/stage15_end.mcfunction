@@ -1,4 +1,4 @@
-advancement grant @a[tag=azrShowDialog] only skyblock:azr/azr_stage15
+advancement grant @a[tag=azrPlayer] only skyblock:azr/azr_stage15
 
 title @a[tag=azrShowDialog] actionbar {"text":"Stage Clear","color":"green"}
 playsound ambient.crimson_forest.loop ambient @a[tag=azrPlayer] -78000 100 0 1000

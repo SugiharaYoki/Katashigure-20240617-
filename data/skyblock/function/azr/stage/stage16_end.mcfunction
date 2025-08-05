@@ -1,4 +1,4 @@
-advancement grant @a[tag=azrShowDialog] only skyblock:azr/azr_stage16
+advancement grant @a[tag=azrPlayer] only skyblock:azr/azr_stage16
 scoreboard players set @a[tag=azrPlayer] Azr_wave 46
 scoreboard players set stage Azr_system 61
 scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..18}] Azr_skillPoints 19

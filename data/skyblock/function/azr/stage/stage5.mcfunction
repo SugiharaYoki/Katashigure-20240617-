@@ -343,7 +343,7 @@ execute if score stage_main_thread AzrTimerStack matches 161 run scoreboard play
 execute if score stage_main_thread AzrTimerStack matches 161 run scoreboard players set stage Azr_system 14
 execute if score stage_main_thread AzrTimerStack matches 161 run tellraw @a[scores={Azr_skillPoints=..5}] {"text":"永久升级 - 初始绿宝石数量 +5","color":"light_purple"}
 execute if score stage_main_thread AzrTimerStack matches 161 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..5}] Azr_skillPoints 6
-execute if score stage_main_thread AzrTimerStack matches 161 run advancement grant @a[tag=azrShowDialog] only skyblock:azr/azr_stage5
+execute if score stage_main_thread AzrTimerStack matches 161 run advancement grant @a[tag=azrPlayer] only skyblock:azr/azr_stage5
 
 execute if score stage_main_thread AzrTimerStack matches 154 if score #rng2 Azr_system matches 1 positioned -79921 38 136 run function skyblock:azr/m/slime_t1_size2
 execute if score stage_main_thread AzrTimerStack matches 154 if score #rng3 Azr_system matches 1 positioned -79910 38 135 run function skyblock:azr/m/slime_t1_size1

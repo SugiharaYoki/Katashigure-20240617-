@@ -125,7 +125,7 @@ execute if score stage_main_thread AzrTimerStack matches 2150 if score playerCou
 
 execute if score stage_main_thread AzrTimerStack matches 2260..2276 if entity @e[tag=AzrielMob,tag=!AzrielDecMob] run scoreboard players set stage_main_thread AzrTimerStack 2273
 execute if score stage_main_thread AzrTimerStack matches 2277 run title @a[tag=azrShowDialog] actionbar {"text":"Extra Stage Clear","color":"green"}
-execute if score stage_main_thread AzrTimerStack matches 2277 run advancement grant @a[tag=azrShowDialog] only skyblock:azr/azr_stage_bonus_object
+execute if score stage_main_thread AzrTimerStack matches 2277 run advancement grant @a[tag=azrPlayer] only skyblock:azr/azr_stage_bonus_object
 execute if score stage_main_thread AzrTimerStack matches 2277 as @a[tag=azrPlayer] at @s run give @s shulker_shell[custom_name='{"text":"弹簧箭盒","italic":false}',lore=['{"text":"敲击 - 散射36支箭矢（射程较高）","color":"yellow","italic":false}'],enchantments={blast_protection:1},custom_data={arrow_box:1b},custom_model_data={floats:[100001.0]}] 5
 execute if score stage_main_thread AzrTimerStack matches 2277 as @a[tag=azrPlayer] at @s run tag @s add AZS_BoS07
 execute if score stage_main_thread AzrTimerStack matches 2277 run playsound ambient.crimson_forest.loop ambient @a[tag=azrPlayer] -78000 100 0 1000

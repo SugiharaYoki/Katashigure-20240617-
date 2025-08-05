@@ -43,15 +43,15 @@ execute if score stage_main_thread AzrTimerStack matches 31.. run fill -79928 40
 #to stage3b - the first door
 execute if score stage_main_thread AzrTimerStack matches 31.. if score playerCount Azr_system matches 3.. run tellraw @a[tag=DebugMode,tag=azrPlayer] {"text":"[DEBUG MODE MESSAGE] You have opened stage3β - DOOR I"}
 execute if score stage_main_thread AzrTimerStack matches 31.. if score playerCount Azr_system matches 3.. run fill -79934 40 -1 -79934 38 1 air destroy
-execute if score stage_main_thread AzrTimerStack matches 31.. run tellraw @a[tag=azrPlayer,tag=!hasLifeVitae] {"text":""}
-execute if score stage_main_thread AzrTimerStack matches 31.. run tellraw @a[tag=azrPlayer,tag=!hasLifeVitae] {"text":"成功通过了第1关的挑战！"}
-execute if score stage_main_thread AzrTimerStack matches 31.. run tellraw @a[tag=azrPlayer,tag=!hasLifeVitae] {"text":"在此之后还会有数不尽的敌人与关卡，请随时做好死亡的准备。"}
+execute if score stage_main_thread AzrTimerStack matches 31.. run tellraw @a[tag=azrShowDialog,tag=!hasLifeVitae] {"text":""}
+execute if score stage_main_thread AzrTimerStack matches 31.. run tellraw @a[tag=azrShowDialog,tag=!hasLifeVitae] {"text":"成功通过了第1关的挑战！"}
+execute if score stage_main_thread AzrTimerStack matches 31.. run tellraw @a[tag=azrShowDialog,tag=!hasLifeVitae] {"text":"在此之后还会有数不尽的敌人与关卡，请随时做好死亡的准备。"}
 execute if score stage_main_thread AzrTimerStack matches 31.. run tellraw @a[tag=azrPlayer,tag=!hasLifeVitae] {"text":"你已永久解锁「生命手册」。记得收集绿宝石与素材，使用手册换取必要的武器与道具。"}
 execute if score stage_main_thread AzrTimerStack matches 31.. run tellraw @a[tag=azrPlayer,tag=!hasLifeVitae] {"text":"打开背包用鼠标选定其以开启商店。"}
 execute if score stage_main_thread AzrTimerStack matches 31.. run tag @a[tag=azrPlayer,tag=!hasLifeVitae] add hasLifeVitae
-execute if score stage_main_thread AzrTimerStack matches 31.. run tellraw @a[tag=azrPlayer,tag=!hasLifeVitae] {"text":""}
+execute if score stage_main_thread AzrTimerStack matches 31.. run tellraw @a[tag=azrShowDialog,tag=!hasLifeVitae] {"text":""}
 execute if score stage_main_thread AzrTimerStack matches 31.. run scoreboard players set stage Azr_system 3
 execute if score stage_main_thread AzrTimerStack matches 31.. run scoreboard players set @a[tag=azrPlayer] Azr_wave 1
 execute if score stage_main_thread AzrTimerStack matches 31.. run scoreboard players reset tick_main_thread AzrTimerStack
-execute if score stage_main_thread AzrTimerStack matches 31.. run advancement grant @a[tag=azrShowDialog] only skyblock:azr/azr_stage1
+execute if score stage_main_thread AzrTimerStack matches 31.. run advancement grant @a[tag=azrPlayer] only skyblock:azr/azr_stage1
 execute if score stage_main_thread AzrTimerStack matches 31.. run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..0}] Azr_skillPoints 1

@@ -5,7 +5,7 @@ execute if score stage_main_thread AzrTimerStack matches 1 run bossbar add azr:p
 execute if score stage_main_thread AzrTimerStack matches 1 run bossbar set azr:progress_bar_normal color white
 execute if score stage_main_thread AzrTimerStack matches 1 run bossbar set azr:progress_bar_normal players @a[tag=azrPlayer]
 execute if score stage_main_thread AzrTimerStack matches 1 run bossbar set azr:progress_bar_normal max 40
-execute if score stage_main_thread AzrTimerStack matches 1 run tellraw @a[tag=DebugMode,tag=azrPlayer] [{"text":"[DEBUG MODE MESSAGE] You are playing \"Stage 1\", with playerCount = "},{"score":{"objective":"Azr_system","name":"playerCount"}},{"text":" Maximum Seconds = 40"}]
+execute if score stage_main_thread AzrTimerStack matches 1 run tellraw @a[tag=DebugMode,tag=azrShowDialog] [{"text":"[DEBUG MODE MESSAGE] You are playing \"Stage 1\", with playerCount = "},{"score":{"objective":"Azr_system","name":"playerCount"}},{"text":" Maximum Seconds = 40"}]
 execute if score stage_main_thread AzrTimerStack matches 1..40 store result bossbar azr:progress_bar_normal value run scoreboard players get stage_main_thread AzrTimerStack
 execute if score stage_main_thread AzrTimerStack matches 40 run bossbar remove azr:progress_bar_normal
 #启动stage1_event
@@ -38,15 +38,15 @@ execute if score stage_main_thread AzrTimerStack matches 36 run playsound ambien
 execute if score stage_main_thread AzrTimerStack matches 36 run title @a[tag=azrShowDialog] actionbar {"text":"Stage Clear","color":"green"}
 execute if score stage_main_thread AzrTimerStack matches 40.. run fill -79931 40 6 -79931 38 6 air destroy
 execute if score stage_main_thread AzrTimerStack matches 40.. run fill -79928 40 1 -79928 38 -1 air destroy
-execute if score stage_main_thread AzrTimerStack matches 40.. run tellraw @a[tag=azrPlayer,tag=!hasLifeVitae] {"text":""}
-execute if score stage_main_thread AzrTimerStack matches 40.. run tellraw @a[tag=azrPlayer,tag=!hasLifeVitae] {"text":"成功通过了第1关的挑战！"}
-execute if score stage_main_thread AzrTimerStack matches 40.. run tellraw @a[tag=azrPlayer,tag=!hasLifeVitae] {"text":"在此之后还会有数不尽的敌人与关卡，请随时做好死亡的准备。"}
+execute if score stage_main_thread AzrTimerStack matches 40.. run tellraw @a[tag=azrShowDialog,tag=!hasLifeVitae] {"text":""}
+execute if score stage_main_thread AzrTimerStack matches 40.. run tellraw @a[tag=azrShowDialog,tag=!hasLifeVitae] {"text":"成功通过了第1关的挑战！"}
+execute if score stage_main_thread AzrTimerStack matches 40.. run tellraw @a[tag=azrShowDialog,tag=!hasLifeVitae] {"text":"在此之后还会有数不尽的敌人与关卡，请随时做好死亡的准备。"}
 execute if score stage_main_thread AzrTimerStack matches 40.. run tellraw @a[tag=azrPlayer,tag=!hasLifeVitae] {"text":"你已永久解锁「生命手册」。记得收集绿宝石与素材，使用手册换取必要的武器与道具。"}
 execute if score stage_main_thread AzrTimerStack matches 40.. run tellraw @a[tag=azrPlayer,tag=!hasLifeVitae] {"text":"打开背包用鼠标选定其以开启商店。"}
 execute if score stage_main_thread AzrTimerStack matches 40.. run tag @a[tag=azrPlayer,tag=!hasLifeVitae] add hasLifeVitae
-execute if score stage_main_thread AzrTimerStack matches 40.. run tellraw @a[tag=azrPlayer,tag=!hasLifeVitae] {"text":""}
+execute if score stage_main_thread AzrTimerStack matches 40.. run tellraw @a[tag=azrShowDialog,tag=!hasLifeVitae] {"text":""}
 execute if score stage_main_thread AzrTimerStack matches 40.. run scoreboard players set stage Azr_system 3
 execute if score stage_main_thread AzrTimerStack matches 40.. run scoreboard players set @a[tag=azrPlayer] Azr_wave 1
 execute if score stage_main_thread AzrTimerStack matches 40.. run scoreboard players reset tick_main_thread AzrTimerStack
-execute if score stage_main_thread AzrTimerStack matches 40.. run advancement grant @a[tag=azrShowDialog] only skyblock:azr/azr_stage1
+execute if score stage_main_thread AzrTimerStack matches 40.. run advancement grant @a[tag=azrPlayer] only skyblock:azr/azr_stage1
 execute if score stage_main_thread AzrTimerStack matches 40.. run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..0}] Azr_skillPoints 1

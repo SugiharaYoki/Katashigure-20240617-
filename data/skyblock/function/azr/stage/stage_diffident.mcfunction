@@ -64,7 +64,7 @@ execute if score stage_main_thread AzrTimerStack matches 502 positioned -79921 3
 
 execute if score stage_main_thread AzrTimerStack matches 508..5510 if entity @e[tag=AzrielMob,tag=!AzrielDecMob] run scoreboard players set stage_main_thread AzrTimerStack 5500
 execute if score stage_main_thread AzrTimerStack matches 5511.. run title @a[tag=azrShowDialog] actionbar {"text":"Extra Stage Annihilated","color":"green"}
-execute if score stage_main_thread AzrTimerStack matches 5511.. run advancement grant @a[tag=azrShowDialog] only skyblock:azr/azr_stage_bonus_diffident
+execute if score stage_main_thread AzrTimerStack matches 5511.. run advancement grant @a[tag=azrPlayer] only skyblock:azr/azr_stage_bonus_diffident
 execute if score stage_main_thread AzrTimerStack matches 5511.. as @a run function skyblock:azr/items/revival_star
 execute if score stage_main_thread AzrTimerStack matches 5511.. run scoreboard players set tick_main_thread AzrTimerStack 0
 execute if score stage_main_thread AzrTimerStack matches 5511.. run scoreboard players set stage Azr_system 10

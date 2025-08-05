@@ -132,7 +132,7 @@ execute if score stage_main_thread AzrTimerStack matches 99 run scoreboard playe
 execute if score stage_main_thread AzrTimerStack matches 99 run scoreboard players set stage Azr_system 5
 execute if score stage_main_thread AzrTimerStack matches 99 run tellraw @a[scores={Azr_skillPoints=..1}] {"text":"永久升级 - 木剑/斧（尸化）将拥有耐久I的附魔效果","color":"light_purple"}
 execute if score stage_main_thread AzrTimerStack matches 99 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..1}] Azr_skillPoints 2
-execute if score stage_main_thread AzrTimerStack matches 99 run advancement grant @a[tag=azrShowDialog] only skyblock:azr/azr_stage2
+execute if score stage_main_thread AzrTimerStack matches 99 run advancement grant @a[tag=azrPlayer] only skyblock:azr/azr_stage2
 execute if score stage_main_thread AzrTimerStack matches 99 run title @a[tag=azrShowDialog] actionbar {"text":"Stage Clear","color":"green"}
 execute if score stage_main_thread AzrTimerStack matches 99 run tellraw @a[tag=azrPlayer,scores={AZR_chainKillUpg_pts=..0},tag=hasSkills] [{"text":"索命连击","color":"gold"},{"text":"可用点数已增加，目前为：1","color":"green"}]
 execute if score stage_main_thread AzrTimerStack matches 99 run scoreboard players set @a[scores={AZR_chainKillUpg_pts=..0}] AZR_chainKillUpg_pts 1

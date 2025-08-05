@@ -14,7 +14,7 @@ tp @e[type=parrot,tag=AzrielFriendly,tag=AzrielDecMob,limit=1] 0 -10000 0
 
 fill -79766 23 -457 -79764 24 -457 air destroy
 title @a[tag=azrShowDialog] actionbar {"text":"Stage Clear","color":"green"}
-advancement grant @a[tag=azrShowDialog] only skyblock:azr/azr_stage14
+advancement grant @a[tag=azrPlayer] only skyblock:azr/azr_stage14
 playsound ambient.crimson_forest.loop ambient @a[tag=azrPlayer] -78000 100 0 1000
 playsound minecraft:ambient.nether_wastes.mood ambient @a[tag=azrPlayer] -78000 100 0 1000 0.3
 playsound ambient.crimson_forest.additions ambient @a[tag=azrPlayer] -78000 100 0 1000

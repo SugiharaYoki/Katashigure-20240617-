@@ -111,7 +111,7 @@ execute if score stage_main_thread AzrTimerStack matches 1152 as @a[tag=azrPlaye
 execute if score stage_main_thread AzrTimerStack matches 1182 run tellraw @a[tag=azrShowDialog] {"text":"？？？：","color":"red"}
 execute if score stage_main_thread AzrTimerStack matches 1182 run tellraw @a[tag=azrShowDialog] {"text":"“亡于尽暗之所在…… 自由…… 魂绕牵束…… 英烈战亡…… 赞美战亡……”","color":"white"}
 execute if score stage_main_thread AzrTimerStack matches 1182 as @a[tag=azrPlayer] at @s run playsound minecraft:entity.evoker.celebrate hostile @a[tag=azrPlayer] ~ ~ ~ 2 0.7
-execute if score stage_main_thread AzrTimerStack matches 1182 run advancement grant @a[tag=azrShowDialog] only skyblock:azr/azr_stage11_event1
+execute if score stage_main_thread AzrTimerStack matches 1182 run advancement grant @a[tag=azrPlayer] only skyblock:azr/azr_stage11_event1
 
 execute if score stage_main_thread AzrTimerStack matches 1094 run setblock -79912 55 -101 air
 ####################
