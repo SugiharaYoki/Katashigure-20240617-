@@ -9,5 +9,3 @@
     execute if score playerCount Azr_system matches 2..3 positioned -79459 53 -338 run function skyblock:azr/jump_to/data_modifier/ch4_chests/chest2_3
     execute if score playerCount Azr_system matches 4..5 positioned -79459 53 -338 run function skyblock:azr/jump_to/data_modifier/ch4_chests/chest4_5
     execute if score playerCount Azr_system matches 6.. positioned -79459 53 -338 run function skyblock:azr/jump_to/data_modifier/ch4_chests/chest6
-
-say 111
