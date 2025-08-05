@@ -38,3 +38,5 @@ clear @s[gamemode=!creative] redstone_lamp
 clear @s[gamemode=!creative] beacon
 clear @s[gamemode=!creative] chain
 clear @s[gamemode=!creative] stick
+clear @s[gamemode=!creative] iron_door
+clear @s[gamemode=!creative] shroomlight
