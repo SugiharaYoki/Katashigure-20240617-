@@ -187,9 +187,9 @@ execute if score stage_main_thread AzrTimerStack matches 80 run title @a[tag=azr
 execute if score stage_main_thread AzrTimerStack matches 85..87 positioned -79931 38 122 unless entity @a[tag=azrPlayer,distance=0..4] run scoreboard players set stage_main_thread AzrTimerStack 85
 execute if score stage_main_thread AzrTimerStack matches 88 run tellraw @a[tag=azrShowDialog] {"text":"迷之女声：","color":"yellow"}
 execute if score stage_main_thread AzrTimerStack matches 88 run tellraw @a[tag=azrShowDialog] {"text":"“抬头看。”","color":"white"}
-execute if score stage_main_thread AzrTimerStack matches 88..89 run playsound ambient.nether_wastes.loop ambient @a[tag=azrPlayer] -79931 38 53 100
-execute if score stage_main_thread AzrTimerStack matches 88..89 run playsound ambient.nether_wastes.mood ambient @a[tag=azrPlayer] -79931 38 53 100
-execute if score stage_main_thread AzrTimerStack matches 88..89 run playsound ambient.nether_wastes.additions ambient @a[tag=azrPlayer] -79931 38 53 100
+execute if score stage_main_thread AzrTimerStack matches 88..89 run playsound ambient.nether_wastes.loop ambient @a[tag=azrShowDialog] -79931 38 53 100
+execute if score stage_main_thread AzrTimerStack matches 88..89 run playsound ambient.nether_wastes.mood ambient @a[tag=azrShowDialog] -79931 38 53 100
+execute if score stage_main_thread AzrTimerStack matches 88..89 run playsound ambient.nether_wastes.additions ambient @a[tag=azrShowDialog] -79931 38 53 100
 execute if score stage_main_thread AzrTimerStack matches 89 positioned -79931 46 122.0 run function skyblock:azr/m/spider_t1_dust
 execute if score stage_main_thread AzrTimerStack matches 89 positioned -79931 46 123.0 run function skyblock:azr/m/spider_t1_dust
 execute if score stage_main_thread AzrTimerStack matches 89 positioned -79931.0 46 122 run function skyblock:azr/m/spider_t1_dust
@@ -317,9 +317,9 @@ execute if score stage_main_thread AzrTimerStack matches 149 positioned -79922 3
 execute if score stage_main_thread AzrTimerStack matches 149 positioned -79940 38 122 run function skyblock:azr/m/vindicator_t1
 
 execute if score stage_main_thread AzrTimerStack matches 150..152 if entity @e[tag=AzrielMob,tag=!AzrielDecMob] run scoreboard players set stage_main_thread AzrTimerStack 150
-execute if score stage_main_thread AzrTimerStack matches 154 run playsound ambient.crimson_forest.loop ambient @a[tag=azrPlayer] -78000 100 0 1000
-execute if score stage_main_thread AzrTimerStack matches 154 run playsound ambient.crimson_forest.mood ambient @a[tag=azrPlayer] -78000 100 0 1000
-execute if score stage_main_thread AzrTimerStack matches 154 run playsound ambient.crimson_forest.additions ambient @a[tag=azrPlayer] -78000 100 0 1000
+execute if score stage_main_thread AzrTimerStack matches 154 run playsound ambient.crimson_forest.loop ambient @a[tag=azrShowDialog] -78000 100 0 1000
+execute if score stage_main_thread AzrTimerStack matches 154 run playsound ambient.crimson_forest.mood ambient @a[tag=azrShowDialog] -78000 100 0 1000
+execute if score stage_main_thread AzrTimerStack matches 154 run playsound ambient.crimson_forest.additions ambient @a[tag=azrShowDialog] -78000 100 0 1000
 execute if score stage_main_thread AzrTimerStack matches 154 run fill -79931 38 40 -79931 40 40 air destroy
 execute if score stage_main_thread AzrTimerStack matches 154 run title @a[tag=azrShowDialog] actionbar {"text":"Stage Clear","color":"green"}
 execute if score stage_main_thread AzrTimerStack matches 154 run fill -79930 38 130 -79932 42 130 air destroy

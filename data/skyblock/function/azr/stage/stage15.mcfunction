@@ -124,43 +124,43 @@ execute if score stage_alt_thread AzrTimerStack matches 360 run title @a[tag=azr
 
 execute if score stage_alt_thread AzrTimerStack matches 1 run tellraw @a[tag=azrShowDialog] {"text":"权之残影：","color":"aqua"}
 execute if score stage_alt_thread AzrTimerStack matches 1 run tellraw @a[tag=azrShowDialog] {"text":"“敌人就要来了。第一波将会是猪灵的侦查先锋队。实力不强，速战速决。”","color":"white"}
-execute if score stage_alt_thread AzrTimerStack matches 1 as @a[tag=azrPlayer] at @s run playsound minecraft:entity.illusioner.ambient hostile @a[tag=azrPlayer] ~ ~ ~ 2 0.6
+execute if score stage_alt_thread AzrTimerStack matches 1 as @a[tag=azrShowDialog] at @s run playsound minecraft:entity.illusioner.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 2 0.6
 execute if score stage_alt_thread AzrTimerStack matches 50 run tellraw @a[tag=azrShowDialog] {"text":"权之残影：","color":"aqua"}
 execute if score stage_alt_thread AzrTimerStack matches 50 run tellraw @a[tag=azrShowDialog] {"text":"“第二波是猪灵的标准剑士编队。他们很快就会传送至此。”","color":"white"}
-execute if score stage_alt_thread AzrTimerStack matches 50 as @a[tag=azrPlayer] at @s run playsound minecraft:entity.illusioner.ambient hostile @a[tag=azrPlayer] ~ ~ ~ 2 0.6
+execute if score stage_alt_thread AzrTimerStack matches 50 as @a[tag=azrShowDialog] at @s run playsound minecraft:entity.illusioner.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 2 0.6
 execute if score stage_alt_thread AzrTimerStack matches 100 run tellraw @a[tag=azrShowDialog] {"text":"权之残影：","color":"aqua"}
 execute if score stage_alt_thread AzrTimerStack matches 100 run tellraw @a[tag=azrShowDialog] {"text":"“第三波将会是长剑士编队，他们若会掉落手上的长剑，战斗也会容易许多。”","color":"white"}
-execute if score stage_alt_thread AzrTimerStack matches 100 as @a[tag=azrPlayer] at @s run playsound minecraft:entity.illusioner.ambient hostile @a[tag=azrPlayer] ~ ~ ~ 2 0.6
+execute if score stage_alt_thread AzrTimerStack matches 100 as @a[tag=azrShowDialog] at @s run playsound minecraft:entity.illusioner.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 2 0.6
 execute if score stage_alt_thread AzrTimerStack matches 157 run tellraw @a[tag=azrShowDialog] {"text":"权之残影：","color":"aqua"}
 execute if score stage_alt_thread AzrTimerStack matches 157 run tellraw @a[tag=azrShowDialog] {"text":"“准备迎接敌人主力部队的进攻。人数不多，但他们将一哄而上。”","color":"white"}
-execute if score stage_alt_thread AzrTimerStack matches 157 as @a[tag=azrPlayer] at @s run playsound minecraft:entity.illusioner.ambient hostile @a[tag=azrPlayer] ~ ~ ~ 2 0.6
+execute if score stage_alt_thread AzrTimerStack matches 157 as @a[tag=azrShowDialog] at @s run playsound minecraft:entity.illusioner.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 2 0.6
 
 execute if score stage_alt_thread AzrTimerStack matches 377 run tellraw @a[tag=azrShowDialog] {"text":"权之残影：","color":"aqua"}
 execute if score stage_alt_thread AzrTimerStack matches 377 run tellraw @a[tag=azrShowDialog] {"text":"“爬行者将要来临，请切记注意它们的自爆式攻击。”","color":"white"}
 #{"selector":"@r[tag=AZRPT]","color":"white"},{"text":"？”","color":"white"}]
-execute if score stage_alt_thread AzrTimerStack matches 377 as @a[tag=azrPlayer] at @s run playsound minecraft:entity.illusioner.ambient hostile @a[tag=azrPlayer] ~ ~ ~ 2 0.6
+execute if score stage_alt_thread AzrTimerStack matches 377 as @a[tag=azrShowDialog] at @s run playsound minecraft:entity.illusioner.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 2 0.6
 
 execute if score stage_alt_thread AzrTimerStack matches 324 run tellraw @a[tag=azrShowDialog] {"text":"权之残影：","color":"aqua"}
 execute if score stage_alt_thread AzrTimerStack matches 324 run tellraw @a[tag=azrShowDialog] {"text":"“似乎还不仅如此……恭喜，吾等还需面对路西法临时派来的魔物大军。”","color":"white"}
-execute if score stage_alt_thread AzrTimerStack matches 324 as @a[tag=azrPlayer] at @s run playsound minecraft:entity.illusioner.ambient hostile @a[tag=azrPlayer] ~ ~ ~ 2 0.6
+execute if score stage_alt_thread AzrTimerStack matches 324 as @a[tag=azrShowDialog] at @s run playsound minecraft:entity.illusioner.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 2 0.6
 execute if score stage_alt_thread AzrTimerStack matches 346 run tellraw @a[tag=azrShowDialog] {"text":"权之残影：","color":"aqua"}
 execute if score stage_alt_thread AzrTimerStack matches 346 if score playerCount Azr_system matches 1 run tellraw @a[tag=azrShowDialog] {"text":"“它们本该是与方才归顺彼列的猪灵军团作战的，但汝正巧拦在了这两批军队中间。”","color":"white"}
 execute if score stage_alt_thread AzrTimerStack matches 346 if score playerCount Azr_system matches 2 run tellraw @a[tag=azrShowDialog] {"text":"“它们本该是与方才归顺彼列的猪灵军团作战的，但二位正巧拦在了这两批军队中间。”","color":"white"}
 execute if score stage_alt_thread AzrTimerStack matches 346 if score playerCount Azr_system matches 3 run tellraw @a[tag=azrShowDialog] {"text":"“它们本该是与方才归顺彼列的猪灵军团作战的，但三位正巧拦在了这两批军队中间。”","color":"white"}
 execute if score stage_alt_thread AzrTimerStack matches 346 if score playerCount Azr_system matches 4.. run tellraw @a[tag=azrShowDialog] {"text":"“它们本该是与方才归顺彼列的猪灵军团作战的，但汝等正巧拦在了这两批军队中间。”","color":"white"}
-execute if score stage_alt_thread AzrTimerStack matches 346 as @a[tag=azrPlayer] at @s run playsound minecraft:entity.illusioner.ambient hostile @a[tag=azrPlayer] ~ ~ ~ 2 0.6
+execute if score stage_alt_thread AzrTimerStack matches 346 as @a[tag=azrShowDialog] at @s run playsound minecraft:entity.illusioner.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 2 0.6
 
 execute if score stage_alt_thread AzrTimerStack matches 448 run tellraw @a[tag=azrShowDialog] {"text":"权之残影：","color":"aqua"}
 execute if score stage_alt_thread AzrTimerStack matches 448 if score playerCount Azr_system matches 1 run tellraw @a[tag=azrShowDialog] {"text":"“有人正在试图干扰通讯魔法，请务必小心，恐怕有一头极强的魔兽正在靠近你。”","color":"white"}
 execute if score stage_alt_thread AzrTimerStack matches 448 if score playerCount Azr_system matches 2.. run tellraw @a[tag=azrShowDialog] {"text":"“有人正在试图干扰通讯魔法，请务必小心，恐怕有一头极强的魔兽正在靠近你们。”","color":"white"}
 #{"selector":"@r[tag=AZRPT]","color":"white"},{"text":"？”","color":"white"}]
-execute if score stage_alt_thread AzrTimerStack matches 448 as @a[tag=azrPlayer] at @s run playsound minecraft:entity.illusioner.ambient hostile @a[tag=azrPlayer] ~ ~ ~ 2 0.6
+execute if score stage_alt_thread AzrTimerStack matches 448 as @a[tag=azrShowDialog] at @s run playsound minecraft:entity.illusioner.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 2 0.6
 
 execute if score stage_alt_thread AzrTimerStack matches 493 run tellraw @a[tag=azrShowDialog] {"text":"权之残影：","color":"aqua"}
 execute if score stage_alt_thread AzrTimerStack matches 493 if score playerCount Azr_system matches 1 run tellraw @a[tag=azrShowDialog] {"text":"“或许汝已见到我的警示信息，请务必小心烈风的拉斐尔。吾可以肯定他也背叛了花园，并正在尝试干涉地狱这里的战况。”","color":"white"}
 execute if score stage_alt_thread AzrTimerStack matches 493 if score playerCount Azr_system matches 2.. run tellraw @a[tag=azrShowDialog] {"text":"“或许汝等已见到我的警示信息，请务必小心烈风的拉斐尔。吾可以肯定他也背叛了花园，并正在尝试干涉地狱这里的战况。”","color":"white"}
 #{"selector":"@r[tag=AZRPT]","color":"white"},{"text":"？”","color":"white"}]
-execute if score stage_alt_thread AzrTimerStack matches 493 as @a[tag=azrPlayer] at @s run playsound minecraft:entity.illusioner.ambient hostile @a[tag=azrPlayer] ~ ~ ~ 2 0.6
+execute if score stage_alt_thread AzrTimerStack matches 493 as @a[tag=azrShowDialog] at @s run playsound minecraft:entity.illusioner.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 2 0.6
 
 
 execute if score stage_alt_thread AzrTimerStack matches 363..586 if score #rng6 Azr_system matches 1 if score #rng5 Azr_system matches 1 if score #rng2 Azr_system matches 1 run summon silverfish -79664 22 -427 {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_silverfish_tier1",Health:8.5f,CustomName:'"地狱蚀砖虫"',attributes:[{id:"max_health",base:8.5d},{id:"attack_damage",base:5.0d},{id:"movement_speed",base:0.25d}]}
@@ -346,10 +346,10 @@ execute if score stage_alt_thread AzrTimerStack matches 628 run playsound minecr
 execute if score stage_alt_thread AzrTimerStack matches 590..657 if score #rng3 Azr_system matches 1 run playsound minecraft:ambient.warped_forest.loop ambient @a -79600 24 -421 5 0.8
 execute if score stage_alt_thread AzrTimerStack matches 610..657 if score #rng3 Azr_system matches 2 run playsound minecraft:ambient.warped_forest.loop ambient @a -79600 24 -421 5 0.8
 execute if score stage_alt_thread AzrTimerStack matches 630..657 if score #rng3 Azr_system matches 3 run playsound minecraft:ambient.warped_forest.loop ambient @a -79600 24 -421 5 0.8
-execute if score stage_alt_thread AzrTimerStack matches 640..657 run playsound minecraft:ambient.warped_forest.loop ambient @a[tag=azrPlayer] -79600 24 -421 50 1.1
-execute if score stage_alt_thread AzrTimerStack matches 650..657 run playsound minecraft:ambient.warped_forest.loop ambient @a[tag=azrPlayer] -79600 24 -421 50 1.3
-execute if score stage_alt_thread AzrTimerStack matches 620..657 run playsound minecraft:ambient.soul_sand_valley.additions ambient @a[tag=azrPlayer] -79600 24 -421 50 0.5
-execute if score stage_alt_thread AzrTimerStack matches 650..657 run playsound minecraft:ambient.soul_sand_valley.additions ambient @a[tag=azrPlayer] -79600 24 -421 50 0.8
+execute if score stage_alt_thread AzrTimerStack matches 640..657 run playsound minecraft:ambient.warped_forest.loop ambient @a[tag=azrShowDialog] -79600 24 -421 50 1.1
+execute if score stage_alt_thread AzrTimerStack matches 650..657 run playsound minecraft:ambient.warped_forest.loop ambient @a[tag=azrShowDialog] -79600 24 -421 50 1.3
+execute if score stage_alt_thread AzrTimerStack matches 620..657 run playsound minecraft:ambient.soul_sand_valley.additions ambient @a[tag=azrShowDialog] -79600 24 -421 50 0.5
+execute if score stage_alt_thread AzrTimerStack matches 650..657 run playsound minecraft:ambient.soul_sand_valley.additions ambient @a[tag=azrShowDialog] -79600 24 -421 50 0.8
 
 
 execute if score stage_alt_thread AzrTimerStack matches 699 run setblock -79664 21 -416 warped_nylium

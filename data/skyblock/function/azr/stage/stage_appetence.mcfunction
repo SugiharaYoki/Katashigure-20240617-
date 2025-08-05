@@ -11,8 +11,8 @@ execute if score stage_main_thread AzrTimerStack matches 400 run bossbar remove 
 #rightside:-79964 32 135
 execute if score stage_main_thread AzrTimerStack matches 1.. run function skyblock:azr/tool_rng
 
-execute if score stage_main_thread AzrTimerStack matches 4 run playsound minecraft:block.iron_door.open ambient @a[tag=azrPlayer] -79936.0 56 -120 5 0.3
-execute if score stage_main_thread AzrTimerStack matches 5 run playsound minecraft:block.iron_door.open ambient @a[tag=azrPlayer] -79936.0 56 -120 5 0.3
+execute if score stage_main_thread AzrTimerStack matches 4 run playsound minecraft:block.iron_door.open ambient @a[tag=azrShowDialog] -79936.0 56 -120 5 0.3
+execute if score stage_main_thread AzrTimerStack matches 5 run playsound minecraft:block.iron_door.open ambient @a[tag=azrShowDialog] -79936.0 56 -120 5 0.3
 execute if score stage_main_thread AzrTimerStack matches 4 run fill -79936 55 -120 -79935 55 -120 iron_bars
 execute if score stage_main_thread AzrTimerStack matches 5 run fill -79936 54 -120 -79935 54 -120 iron_bars
 execute if score stage_main_thread AzrTimerStack matches 6 as @a[tag=azrPlayer,x=-79913.0,y=54,z=-105.0,distance=15..] at @s run tp -79913.0 54 -105.0
@@ -157,9 +157,9 @@ execute if score stage_main_thread AzrTimerStack matches 300 run title @a[tag=az
 execute if score stage_main_thread AzrTimerStack matches 304 run title @a[tag=azrShowDialog] actionbar [{"text":"冤魂失控","color":"yellow"},{"text":"▌","color":"red"},{"text":"▌","color":"red"},{"text":"▌","color":"red"},{"text":"▌","color":"red"},{"text":"▌","color":"dark_gray"}]
 execute if score stage_main_thread AzrTimerStack matches 308 run title @a[tag=azrShowDialog] actionbar [{"text":"冤魂失控","color":"yellow"},{"text":"▌","color":"red"},{"text":"▌","color":"red"},{"text":"▌","color":"red"},{"text":"▌","color":"red"},{"text":"▌","color":"red"}]
 execute if score stage_main_thread AzrTimerStack matches 308 run particle minecraft:soul -79922 54 -106 15 15 15 0.00 480
-execute if score stage_main_thread AzrTimerStack matches 292..305 as @a[tag=azrPlayer] at @s run playsound minecraft:ambient.warped_forest.additions master @s ~ ~ ~ 10 0.6
-execute if score stage_main_thread AzrTimerStack matches 292..305 as @a[tag=azrPlayer] at @s run playsound minecraft:ambient.warped_forest.loop master @s ~ ~ ~ 10 0.6
-execute if score stage_main_thread AzrTimerStack matches 292..305 as @a[tag=azrPlayer] at @s run playsound minecraft:ambient.warped_forest.mood master @s ~ ~ ~ 10 0.6
+execute if score stage_main_thread AzrTimerStack matches 292..305 as @a[tag=azrShowDialog] at @s run playsound minecraft:ambient.warped_forest.additions master @s ~ ~ ~ 10 0.6
+execute if score stage_main_thread AzrTimerStack matches 292..305 as @a[tag=azrShowDialog] at @s run playsound minecraft:ambient.warped_forest.loop master @s ~ ~ ~ 10 0.6
+execute if score stage_main_thread AzrTimerStack matches 292..305 as @a[tag=azrShowDialog] at @s run playsound minecraft:ambient.warped_forest.mood master @s ~ ~ ~ 10 0.6
 execute if score stage_main_thread AzrTimerStack matches 308 as @e[tag=AzrielMob,type=zombie] at @s run summon vex ~ ~1.5 ~ {Tags:["AzrielMob","AzrielDecMob"],DeathLootTable:"skyblock:azriel_vex_tier2",Health:7.0f,CustomName:'"迷路的亡魂"',HandItems:[{count:1,id:"stone_sword",components:{custom_name:'{"text":"亡灵短剑","italic":false,"color":"white"}',attribute_modifiers:[{type:"max_health",amount:1.2d,operation:"add_multiplied_total",id:"i_84300_1_1_39",slot:"mainhand"},{type:"max_health",amount:1.2d,operation:"add_multiplied_total",id:"i_84300_1_1_40",slot:"offhand"},{type:"attack_damage",amount:5.5d,operation:"add_value",id:"i_84300_1_1_41",slot:"mainhand"},{type:"attack_damage",amount:5.5d,operation:"add_value",id:"i_84300_1_1_42",slot:"offhand"},{type:"attack_speed",amount:-2.4d,operation:"add_value",id:"i_84300_1_1_43",slot:"mainhand"},{type:"attack_speed",amount:-2.4d,operation:"add_value",id:"i_84300_1_1_44",slot:"offhand"}],enchantments:{unbreaking:2}}},{}],HandDropChances:[0.01f,0.01f],LifeTicks:600,attributes:[{id:"max_health",base:7.0d},{id:"attack_damage",base:2.0d},{id:"movement_speed",base:0.58d},{id:"follow_range",base:5.0d}]}
 
 
@@ -233,13 +233,13 @@ execute if score stage_main_thread AzrTimerStack matches 400 as @a[tag=azrPlayer
 execute if score stage_main_thread AzrTimerStack matches 400 as @a[tag=azrPlayer] at @s unless score @s Azr_SK10 matches 1.. run scoreboard players set @s Azr_SK10 1
 execute if score stage_main_thread AzrTimerStack matches 400 as @a[tag=azrPlayer] at @s run give @s golden_apple 2
 execute if score stage_main_thread AzrTimerStack matches 400 run fill -79943 34 136 -79943 32 136 air destroy
-execute if score stage_main_thread AzrTimerStack matches 400 run playsound ambient.crimson_forest.loop ambient @a[tag=azrPlayer] -78000 100 0 1000
-execute if score stage_main_thread AzrTimerStack matches 400 run playsound minecraft:ambient.nether_wastes.mood ambient @a[tag=azrPlayer] -78000 100 0 1000 0.3
-execute if score stage_main_thread AzrTimerStack matches 400 run playsound ambient.crimson_forest.additions ambient @a[tag=azrPlayer] -78000 100 0 1000
+execute if score stage_main_thread AzrTimerStack matches 400 run playsound ambient.crimson_forest.loop ambient @a[tag=azrShowDialog] -78000 100 0 1000
+execute if score stage_main_thread AzrTimerStack matches 400 run playsound minecraft:ambient.nether_wastes.mood ambient @a[tag=azrShowDialog] -78000 100 0 1000 0.3
+execute if score stage_main_thread AzrTimerStack matches 400 run playsound ambient.crimson_forest.additions ambient @a[tag=azrShowDialog] -78000 100 0 1000
 execute if score stage_main_thread AzrTimerStack matches 410 run scoreboard players set stage Azr_system 38
 
-execute if score stage_main_thread AzrTimerStack matches 406 run playsound minecraft:block.iron_door.open ambient @a[tag=azrPlayer] -79936.0 56 -120 5 0.3
-execute if score stage_main_thread AzrTimerStack matches 405 run playsound minecraft:block.iron_door.open ambient @a[tag=azrPlayer] -79936.0 56 -120 5 0.3
+execute if score stage_main_thread AzrTimerStack matches 406 run playsound minecraft:block.iron_door.open ambient @a[tag=azrShowDialog] -79936.0 56 -120 5 0.3
+execute if score stage_main_thread AzrTimerStack matches 405 run playsound minecraft:block.iron_door.open ambient @a[tag=azrShowDialog] -79936.0 56 -120 5 0.3
 execute if score stage_main_thread AzrTimerStack matches 406 run fill -79936 55 -120 -79935 55 -120 air replace
 execute if score stage_main_thread AzrTimerStack matches 405 run fill -79936 54 -120 -79935 54 -120 air replace
 

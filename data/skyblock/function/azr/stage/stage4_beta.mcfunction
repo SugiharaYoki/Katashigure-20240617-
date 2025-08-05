@@ -373,21 +373,21 @@ execute if score stage_main_thread AzrTimerStack matches 245..246 if score playe
 execute if score stage_main_thread AzrTimerStack matches 245..246 if score playerCount Azr_system matches 4.. if score mobCount Azr_system matches 30.. run scoreboard players set stage_main_thread AzrTimerStack 245
 execute if score stage_main_thread AzrTimerStack matches 245..246 if score mobCount Azr_system matches 45.. run scoreboard players set stage_main_thread AzrTimerStack 245
 
-execute if score stage_main_thread AzrTimerStack matches 238..244 run playsound ambient.nether_wastes.loop ambient @a[tag=azrPlayer] -79931 38 53 10
-execute if score stage_main_thread AzrTimerStack matches 238..244 run playsound ambient.nether_wastes.mood ambient @a[tag=azrPlayer] -79931 38 53 10 0.7
+execute if score stage_main_thread AzrTimerStack matches 238..244 run playsound ambient.nether_wastes.loop ambient @a[tag=azrShowDialog] -79931 38 53 10
+execute if score stage_main_thread AzrTimerStack matches 238..244 run playsound ambient.nether_wastes.mood ambient @a[tag=azrShowDialog] -79931 38 53 10 0.7
 execute if score stage_main_thread AzrTimerStack matches 247 run effect give @a[tag=azrPlayer] blindness 5 0 true
 execute if score stage_main_thread AzrTimerStack matches 247 run effect give @a[tag=azrPlayer] unluck 60 0 false
 execute if score stage_main_thread AzrTimerStack matches 247 run kill @e[tag=AzrielMob,x=-79900,y=40,z=0,distance=0..500]
 execute if score stage_main_thread AzrTimerStack matches 247 run kill @e[tag=AzrielDecMob,x=-79900,y=40,z=0,distance=0..500]
-execute if score stage_main_thread AzrTimerStack matches 247 run playsound minecraft:entity.lightning_bolt.thunder ambient @a[tag=azrPlayer] -79931 38 53 100 0.5
-execute if score stage_main_thread AzrTimerStack matches 247 run playsound minecraft:entity.lightning_bolt.thunder ambient @a[tag=azrPlayer] -79931 38 53 100 0.75
-execute if score stage_main_thread AzrTimerStack matches 247 run playsound minecraft:entity.lightning_bolt.thunder ambient @a[tag=azrPlayer] -79931 38 53 100 1
-execute if score stage_main_thread AzrTimerStack matches 247 run playsound minecraft:entity.lightning_bolt.impact ambient @a[tag=azrPlayer] -79931 38 53 100 0.8
+execute if score stage_main_thread AzrTimerStack matches 247 run playsound minecraft:entity.lightning_bolt.thunder ambient @a[tag=azrShowDialog] -79931 38 53 100 0.5
+execute if score stage_main_thread AzrTimerStack matches 247 run playsound minecraft:entity.lightning_bolt.thunder ambient @a[tag=azrShowDialog] -79931 38 53 100 0.75
+execute if score stage_main_thread AzrTimerStack matches 247 run playsound minecraft:entity.lightning_bolt.thunder ambient @a[tag=azrShowDialog] -79931 38 53 100 1
+execute if score stage_main_thread AzrTimerStack matches 247 run playsound minecraft:entity.lightning_bolt.impact ambient @a[tag=azrShowDialog] -79931 38 53 100 0.8
 
 execute if score stage_main_thread AzrTimerStack matches 247 run scoreboard players set @a[tag=azrPlayer] Azr_wave 7
-execute if score stage_main_thread AzrTimerStack matches 247 run playsound ambient.crimson_forest.loop ambient @a[tag=azrPlayer] -78000 100 0 100000
-execute if score stage_main_thread AzrTimerStack matches 247 run playsound ambient.crimson_forest.mood ambient @a[tag=azrPlayer] -78000 100 0 100000
-execute if score stage_main_thread AzrTimerStack matches 247 run playsound ambient.crimson_forest.additions ambient @a[tag=azrPlayer] -78000 100 0 100000
+execute if score stage_main_thread AzrTimerStack matches 247 run playsound ambient.crimson_forest.loop ambient @a[tag=azrShowDialog] -78000 100 0 100000
+execute if score stage_main_thread AzrTimerStack matches 247 run playsound ambient.crimson_forest.mood ambient @a[tag=azrShowDialog] -78000 100 0 100000
+execute if score stage_main_thread AzrTimerStack matches 247 run playsound ambient.crimson_forest.additions ambient @a[tag=azrShowDialog] -78000 100 0 100000
 execute if score stage_main_thread AzrTimerStack matches 247 run fill -79930 38 52 -79932 42 52 air destroy
 execute if score stage_main_thread AzrTimerStack matches 247 run fill -79948 38 45 -79950 36 45 air destroy
 execute if score stage_main_thread AzrTimerStack matches 247 run setblock -79938 39 49 air destroy

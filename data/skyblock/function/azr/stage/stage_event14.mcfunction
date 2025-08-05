@@ -21,7 +21,7 @@ execute if score stage_main_thread AzrTimerStack matches 10000..20000 unless sco
 execute if score stage_main_thread AzrTimerStack matches 10000..10020 if entity @a[tag=azrPlayer,x=-79765,y=45,z=-466,distance=0..7.9] run scoreboard players set stage_main_thread AzrTimerStack 10030
 execute if score stage_main_thread AzrTimerStack matches 10000..20000 unless score $Event18573D Azr_system matches 1 if entity @a[tag=azrPlayer,x=-79765,y=45,z=-466,distance=0..8] run scoreboard players set $Event18573D Azr_system 1
 
-execute if score $NetherShop Azr_system matches 1 at @n[tag=AzrielBossFA,type=pillager] if entity @a[distance=0..2,tag=azrPlayer,tag=!ZaneiTalkB] run playsound minecraft:entity.pillager.ambient master @a[tag=azrPlayer] ~ ~ ~ 2 0.8
+execute if score $NetherShop Azr_system matches 1 at @n[tag=AzrielBossFA,type=pillager] if entity @a[distance=0..2,tag=azrShowDialog,tag=!ZaneiTalkB] run playsound minecraft:entity.pillager.ambient master @a[tag=azrShowDialog] ~ ~ ~ 2 0.8
 execute if score $NetherShop Azr_system matches 1 at @n[tag=AzrielBossFA,type=pillager] if entity @a[distance=0..2,tag=azrPlayer,tag=!ZaneiTalkB] run function skyblock:tool_rng
 execute if score $NetherShop Azr_system matches 1 at @n[tag=AzrielBossFA,type=pillager] as @a[distance=0..2,tag=azrPlayer,tag=!ZaneiTalkB] run tellraw @s {"text":"默尔森：","color":"aqua"}
 execute if score $NetherShop Azr_system matches 1 if score #rng7 Azr_system matches 1 at @n[tag=AzrielBossFA,type=pillager] as @a[distance=0..2,tag=azrPlayer,tag=!ZaneiTalkB] run tellraw @s {"text":"“咱是权之残影手下弓箭天使部队的教官。听上去很厉害，是吧？”","color":"white"}

@@ -34,18 +34,18 @@ execute as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run function skyblo
     execute if score tick_main_thread AzrTimerStack matches 2 run kill @e[tag=AzrielDecMob,x=-79931,y=40,z=88,distance=5..500]
     #effet & sound
     execute if score tick_main_thread AzrTimerStack matches 2..31 positioned -79903 38.4 -14.0 run function skyblock:azr/effects/zanei_appear
-    execute if score tick_main_thread AzrTimerStack matches 2 run playsound minecraft:entity.lightning_bolt.impact master @a[tag=azrPlayer] -79903 38.8 -14.0 10 0.8
-    execute if score tick_main_thread AzrTimerStack matches 2 run playsound minecraft:item.trident.thunder master @a[tag=azrPlayer] -79903 38.8 -14.0 10 0.8
-    execute if score tick_main_thread AzrTimerStack matches 2 run playsound minecraft:entity.lightning_bolt.thunder master @a[tag=azrPlayer] -79903 38.8 -14.0 10 0.8
-    execute if score tick_main_thread AzrTimerStack matches 60 run playsound ambient.soul_sand_valley.loop ambient @a[tag=azrPlayer] -79903 44 -14.0 100 1.5
-    execute if score tick_main_thread AzrTimerStack matches 60 run playsound ambient.soul_sand_valley.mood ambient @a[tag=azrPlayer] -79903 44 -14.0 100 1.5
-    execute if score tick_main_thread AzrTimerStack matches 60 run playsound ambient.soul_sand_valley.additions ambient @a[tag=azrPlayer] -79903 44 -14.0 100 1.5
-    execute if score tick_main_thread AzrTimerStack matches 60 run playsound ambient.soul_sand_valley.loop ambient @a[tag=azrPlayer] -79903 44 -14.0 100 1.5
-    execute if score tick_main_thread AzrTimerStack matches 60 run playsound ambient.soul_sand_valley.mood ambient @a[tag=azrPlayer] -79903 44 -14.0 100 1.5
-    execute if score tick_main_thread AzrTimerStack matches 60 run playsound ambient.soul_sand_valley.additions ambient @a[tag=azrPlayer] -79903 44 -14.0 100 1.5
+    execute if score tick_main_thread AzrTimerStack matches 2 run playsound minecraft:entity.lightning_bolt.impact master @a[tag=azrShowDialog] -79903 38.8 -14.0 10 0.8
+    execute if score tick_main_thread AzrTimerStack matches 2 run playsound minecraft:item.trident.thunder master @a[tag=azrShowDialog] -79903 38.8 -14.0 10 0.8
+    execute if score tick_main_thread AzrTimerStack matches 2 run playsound minecraft:entity.lightning_bolt.thunder master @a[tag=azrShowDialog] -79903 38.8 -14.0 10 0.8
+    execute if score tick_main_thread AzrTimerStack matches 60 run playsound ambient.soul_sand_valley.loop ambient @a[tag=azrShowDialog] -79903 44 -14.0 100 1.5
+    execute if score tick_main_thread AzrTimerStack matches 60 run playsound ambient.soul_sand_valley.mood ambient @a[tag=azrShowDialog] -79903 44 -14.0 100 1.5
+    execute if score tick_main_thread AzrTimerStack matches 60 run playsound ambient.soul_sand_valley.additions ambient @a[tag=azrShowDialog] -79903 44 -14.0 100 1.5
+    execute if score tick_main_thread AzrTimerStack matches 60 run playsound ambient.soul_sand_valley.loop ambient @a[tag=azrShowDialog] -79903 44 -14.0 100 1.5
+    execute if score tick_main_thread AzrTimerStack matches 60 run playsound ambient.soul_sand_valley.mood ambient @a[tag=azrShowDialog] -79903 44 -14.0 100 1.5
+    execute if score tick_main_thread AzrTimerStack matches 60 run playsound ambient.soul_sand_valley.additions ambient @a[tag=azrShowDialog] -79903 44 -14.0 100 1.5
     execute if score tick_main_thread AzrTimerStack matches 60 run particle minecraft:portal -79903 44 -14.0 3 3 3 1.5 1600
     execute if score tick_main_thread AzrTimerStack matches 60 run particle minecraft:enchant -79903 44 -14.0 1 1 1 0.5 200
-    execute if score tick_main_thread AzrTimerStack matches 134 as @a[tag=azrPlayer] at @s run playsound minecraft:lethaldose master @s ~ ~ ~ 0.65
+    execute if score tick_main_thread AzrTimerStack matches 134 as @a[tag=azrShowDialog] at @s run playsound minecraft:lethaldose master @s ~ ~ ~ 0.65
     #summon boss
     execute if score tick_main_thread AzrTimerStack matches 80 run particle minecraft:smoke -79903 44 -14.0 1 1 1 0.02 200
     execute if score tick_main_thread AzrTimerStack matches 80 if score playerCount Azr_system matches 1..3 run summon illusioner -79903 44 -14.0 {PersistenceRequired:1b,Tags:["AzrielMob","AzrielBossA"],DeathLootTable:"skyblock:azriel_shadow_tier1",Health:200.0f,CustomName:'"权之残影"',attributes:[{id:"max_health",base:200.0d},{id:"movement_speed",base:0.0d},{id:"knockback_resistance",base:0.9d},{id:"armor",base:1.0d}]}
@@ -123,7 +123,7 @@ execute as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run function skyblo
     execute if score tick_main_thread AzrTimerStack matches 1105 if score #rng4 Azr_system matches 4 as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run function skyblock:azr/stage/boss2/flat5d
     execute if score tick_main_thread AzrTimerStack matches 1120 if score #rng2 Azr_system matches 1 as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s if entity @a[tag=azrPlayer,distance=0..2.5] run function skyblock:azr/stage/boss1/tp2
     execute if score tick_main_thread AzrTimerStack matches 1120 if score #rng2 Azr_system matches 2 as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s if entity @a[tag=azrPlayer,distance=0..2.5] run function skyblock:azr/stage/boss1/tp1
-    execute if score tick_main_thread AzrTimerStack matches 1130..1178 as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run playsound minecraft:entity.arrow.shoot master @a[tag=azrPlayer] ~ ~ ~ 0.8 1
+    execute if score tick_main_thread AzrTimerStack matches 1130..1178 as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run playsound minecraft:entity.arrow.shoot master @a[tag=azrShowDialog] ~ ~ ~ 0.8 1
     execute if score tick_main_thread AzrTimerStack matches 1130 as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run summon arrow ~ ~1 ~ {Motion:[5.0d,-0.2d,0.0d],pickup:0,damage:4.0d,life:1100}
     execute if score tick_main_thread AzrTimerStack matches 1131 as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run summon arrow ~ ~1 ~ {Motion:[4.8d,-0.1d,0.2d],pickup:0,damage:4.0d,life:1100}
     execute if score tick_main_thread AzrTimerStack matches 1132 as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run summon arrow ~ ~1 ~ {Motion:[4.6d,0.0d,0.4d],pickup:0,damage:4.0d,life:1100}
@@ -152,7 +152,7 @@ execute as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run function skyblo
     execute if score tick_main_thread AzrTimerStack matches 1179 as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s if entity @a[tag=azrPlayer,distance=0..2.5] run function skyblock:azr/stage/boss1/tp2
     execute if score tick_main_thread AzrTimerStack matches 1189 if score #rng2 Azr_system matches 1 as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s if entity @a[tag=azrPlayer,distance=0..4.5] run function skyblock:azr/stage/boss1/move1
     execute if score tick_main_thread AzrTimerStack matches 1189 if score #rng2 Azr_system matches 2 as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s if entity @a[tag=azrPlayer,distance=0..4.5] run function skyblock:azr/stage/boss1/move2
-    execute if score tick_main_thread AzrTimerStack matches 1180..1228 as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run playsound minecraft:entity.arrow.shoot master @a[tag=azrPlayer] ~ ~ ~ 0.8 1
+    execute if score tick_main_thread AzrTimerStack matches 1180..1228 as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run playsound minecraft:entity.arrow.shoot master @a[tag=azrShowDialog] ~ ~ ~ 0.8 1
     execute if score tick_main_thread AzrTimerStack matches 1180 as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run summon arrow ~ ~1 ~ {Motion:[-5.0d,-0.2d,-0.0d],pickup:0,damage:4.0d,life:1100}
     execute if score tick_main_thread AzrTimerStack matches 1181 as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run summon arrow ~ ~1 ~ {Motion:[-4.8d,-0.1d,-0.2d],pickup:0,damage:4.0d,life:1100}
     execute if score tick_main_thread AzrTimerStack matches 1182 as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run summon arrow ~ ~1 ~ {Motion:[-4.6d,0.0d,-0.4d],pickup:0,damage:4.0d,life:1100}
@@ -278,7 +278,7 @@ execute as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run function skyblo
     execute if score tick_main_thread AzrTimerStack matches 3001 run kill @e[tag=AzrielDecMob]
     execute if score tick_main_thread AzrTimerStack matches 3001 run kill @e[tag=AzrielMob]
     execute if score tick_main_thread AzrTimerStack matches 3001 run bossbar remove azr:boss_hp_bar
-    execute if score tick_main_thread AzrTimerStack matches 3001 run playsound minecraft:item.trident.thunder master @a[tag=azrPlayer] -79903 38.8 -14.0 10 0.8
+    execute if score tick_main_thread AzrTimerStack matches 3001 run playsound minecraft:item.trident.thunder master @a[tag=azrShowDialog] -79903 38.8 -14.0 10 0.8
     execute if score tick_main_thread AzrTimerStack matches 3001 run particle minecraft:reverse_portal -79931 39 88 0 0 0 1.5 1800
     execute if score tick_main_thread AzrTimerStack matches 3001 run particle minecraft:enchant -79931 39 88 3 3 3 1.5 800
     # Wave II 循环直到死亡 3110..4150
@@ -291,12 +291,12 @@ execute as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run function skyblo
     execute if score tick_main_thread AzrTimerStack matches 4110 as @n[tag=AzrielBossA,type=illusioner] at @s run function skyblock:azr/stage/boss2/skill_select
 
     execute if score tick_main_thread AzrTimerStack matches 3110..3130 positioned -79903 38.4 -14.0 run function skyblock:azr/effects/zanei_appear_b
-    execute if score tick_main_thread AzrTimerStack matches 3110 run playsound ambient.soul_sand_valley.loop ambient @a[tag=azrPlayer] -79886 44 -14.0 100 1.5
-    execute if score tick_main_thread AzrTimerStack matches 3110 run playsound ambient.soul_sand_valley.mood ambient @a[tag=azrPlayer] -79886 44 -14.0 100 1.5
-    execute if score tick_main_thread AzrTimerStack matches 3110 run playsound ambient.soul_sand_valley.additions ambient @a[tag=azrPlayer] -79903 44 -14.0 100 1.5
-    execute if score tick_main_thread AzrTimerStack matches 3110 run playsound ambient.soul_sand_valley.loop ambient @a[tag=azrPlayer] -79886 44 -14.0 100 1.5
-    execute if score tick_main_thread AzrTimerStack matches 3110 run playsound ambient.soul_sand_valley.mood ambient @a[tag=azrPlayer] -79886 44 -14.0 100 1.5
-    execute if score tick_main_thread AzrTimerStack matches 3110 run playsound ambient.soul_sand_valley.additions ambient @a[tag=azrPlayer] -79886 44 -14.0 100 1.5
+    execute if score tick_main_thread AzrTimerStack matches 3110 run playsound ambient.soul_sand_valley.loop ambient @a[tag=azrShowDialog] -79886 44 -14.0 100 1.5
+    execute if score tick_main_thread AzrTimerStack matches 3110 run playsound ambient.soul_sand_valley.mood ambient @a[tag=azrShowDialog] -79886 44 -14.0 100 1.5
+    execute if score tick_main_thread AzrTimerStack matches 3110 run playsound ambient.soul_sand_valley.additions ambient @a[tag=azrShowDialog] -79903 44 -14.0 100 1.5
+    execute if score tick_main_thread AzrTimerStack matches 3110 run playsound ambient.soul_sand_valley.loop ambient @a[tag=azrShowDialog] -79886 44 -14.0 100 1.5
+    execute if score tick_main_thread AzrTimerStack matches 3110 run playsound ambient.soul_sand_valley.mood ambient @a[tag=azrShowDialog] -79886 44 -14.0 100 1.5
+    execute if score tick_main_thread AzrTimerStack matches 3110 run playsound ambient.soul_sand_valley.additions ambient @a[tag=azrShowDialog] -79886 44 -14.0 100 1.5
     execute if score tick_main_thread AzrTimerStack matches 3110 run particle minecraft:portal -79886 44 -14.0 3 3 3 1.5 1600
     execute if score tick_main_thread AzrTimerStack matches 3110 run particle minecraft:enchant -79886 44 -14.0 1 1 1 0.5 200
     execute if score tick_main_thread AzrTimerStack matches 3110 if score playerCount Azr_system matches 1 run summon illusioner -79903 44 -14.0 {PersistenceRequired:1b,Tags:["AzrielMob","AzrielBossA"],DeathLootTable:"skyblock:azriel_shadow_tier1",attributes:[{id:"max_health",base:180.0},{id:"movement_speed",base:0.35},{id:"knockback_resistance",base:0.9},{id:"armor",base:3.0}],Health:180.0f,CustomName:'"权之残影 解放"',HandItems:[{count:1,id:bow,components:{"minecraft:enchantments":{unbreaking:1}}},{}],HandDropChances:[0.0000f,0.0000f]}
@@ -311,7 +311,7 @@ execute as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run function skyblo
     execute if score tick_main_thread AzrTimerStack matches 3111 if score playerCount Azr_system matches 3..5 run bossbar set azr:boss_hp_bar max 340
     execute if score tick_main_thread AzrTimerStack matches 3111 if score playerCount Azr_system matches 6.. run bossbar set azr:boss_hp_bar max 400
     execute if score tick_main_thread AzrTimerStack matches 3111 run bossbar set azr:boss_hp_bar players @a[tag=azrPlayer]
-    execute if score tick_main_thread AzrTimerStack matches 3111 as @a[tag=azrPlayer] at @s run playsound minecraft:grenade master @s ~ ~ ~ 0.65
+    execute if score tick_main_thread AzrTimerStack matches 3111 as @a[tag=azrShowDialog] at @s run playsound minecraft:grenade master @s ~ ~ ~ 0.65
     execute if score tick_main_thread AzrTimerStack matches 3310..4110 store result score #azr_boss2_rng rng9 run random value 1..40
     execute if score tick_main_thread AzrTimerStack matches 3150..4150 if score #azr_boss2_rng rng9 matches 1 as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s if entity @a[tag=azrPlayer,distance=0..4.5] run function skyblock:azr/stage/boss1/tp2
     execute if score tick_main_thread AzrTimerStack matches 3150..4150 if score #azr_boss2_rng rng9 matches 2 as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s if entity @a[tag=azrPlayer,distance=0..7.5] run function skyblock:azr/stage/boss1/tp1
@@ -358,20 +358,20 @@ execute as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run function skyblo
     execute if score tick_main_thread AzrTimerStack matches 6001 run bossbar remove azr:boss_hp_bar
     execute if score tick_main_thread AzrTimerStack matches 6080..6130 run tag @a[tag=azrPlayer] add azrUpdateSpawnPoint
     #effect & sound
-    execute if score tick_main_thread AzrTimerStack matches 6001 run playsound minecraft:item.trident.thunder master @a[tag=azrPlayer] -79903 38.8 -14.0 10 0.8
+    execute if score tick_main_thread AzrTimerStack matches 6001 run playsound minecraft:item.trident.thunder master @a[tag=azrShowDialog] -79903 38.8 -14.0 10 0.8
     execute if score tick_main_thread AzrTimerStack matches 6001 run particle minecraft:reverse_portal -79931 39 88 0 0 0 1.5 1800
     execute if score tick_main_thread AzrTimerStack matches 6001 run particle minecraft:enchant -79931 39 88 3 3 3 1.5 800
-    execute if score tick_main_thread AzrTimerStack matches 6110 run playsound ambient.soul_sand_valley.loop ambient @a[tag=azrPlayer] -79886 44 -14.0 100 1.5
-    execute if score tick_main_thread AzrTimerStack matches 6110 run playsound ambient.soul_sand_valley.mood ambient @a[tag=azrPlayer] -79886 44 -14.0 100 1.5
-    execute if score tick_main_thread AzrTimerStack matches 6110 run playsound ambient.soul_sand_valley.additions ambient @a[tag=azrPlayer] -79903 44 -14.0 100 1.5
-    execute if score tick_main_thread AzrTimerStack matches 6110 run playsound ambient.soul_sand_valley.loop ambient @a[tag=azrPlayer] -79886 44 -14.0 100 1.5
-    execute if score tick_main_thread AzrTimerStack matches 6110 run playsound ambient.soul_sand_valley.mood ambient @a[tag=azrPlayer] -79886 44 -14.0 100 1.5
-    execute if score tick_main_thread AzrTimerStack matches 6110 run playsound ambient.soul_sand_valley.additions ambient @a[tag=azrPlayer] -79886 44 -14.0 100 1.5
+    execute if score tick_main_thread AzrTimerStack matches 6110 run playsound ambient.soul_sand_valley.loop ambient @a[tag=azrShowDialog] -79886 44 -14.0 100 1.5
+    execute if score tick_main_thread AzrTimerStack matches 6110 run playsound ambient.soul_sand_valley.mood ambient @a[tag=azrShowDialog] -79886 44 -14.0 100 1.5
+    execute if score tick_main_thread AzrTimerStack matches 6110 run playsound ambient.soul_sand_valley.additions ambient @a[tag=azrShowDialog] -79903 44 -14.0 100 1.5
+    execute if score tick_main_thread AzrTimerStack matches 6110 run playsound ambient.soul_sand_valley.loop ambient @a[tag=azrShowDialog] -79886 44 -14.0 100 1.5
+    execute if score tick_main_thread AzrTimerStack matches 6110 run playsound ambient.soul_sand_valley.mood ambient @a[tag=azrShowDialog] -79886 44 -14.0 100 1.5
+    execute if score tick_main_thread AzrTimerStack matches 6110 run playsound ambient.soul_sand_valley.additions ambient @a[tag=azrShowDialog] -79886 44 -14.0 100 1.5
     execute if score tick_main_thread AzrTimerStack matches 6110 run particle minecraft:portal -79886 44 -14.0 3 3 3 1.5 1600
     execute if score tick_main_thread AzrTimerStack matches 6110 run particle minecraft:enchant -79886 44 -14.0 1 1 1 0.5 200
     execute if score tick_main_thread AzrTimerStack matches 6110 run summon illusioner -79903 44 -14.0 {Silent:1b,PersistenceRequired:1b,Tags:["AzrielMob","AzrielBossA"],DeathLootTable:"skyblock:azriel_shadow_tier1",Health:150.0f,CustomName:'"权之残影"',Invulnerable:1b,attributes:[{id:"max_health",base:150.0d},{id:"movement_speed",base:0.15d},{id:"knockback_resistance",base:1.0d}]}
     execute if score tick_main_thread AzrTimerStack matches 6115 as @e[tag=AzrielBossA,type=illusioner,limit=3,nbt={OnGround:1b}] at @s run rotate @s facing entity @r[tag=azrPlayer]
-    execute if score tick_main_thread AzrTimerStack matches 6120 as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run playsound minecraft:entity.illusioner.ambient hostile @a[tag=azrPlayer] ~ ~ ~ 100 0.6
+    execute if score tick_main_thread AzrTimerStack matches 6120 as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run playsound minecraft:entity.illusioner.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 100 0.6
     #verbal
     execute if score tick_main_thread AzrTimerStack matches 6100 unless entity @a[tag=azrPlayer,scores={Azr_skillPoints=..9}] run tellraw @a[tag=azrPlayer] {"text":"〈跳过剧情〉","bold":true,"color":"blue","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 6"}}
     execute if entity @a[tag=azrPlayer,scores={Azr_Shop=6..9}] if score tick_main_thread AzrTimerStack matches 6120..6610 run scoreboard players set tick_main_thread AzrTimerStack 6611
@@ -381,20 +381,20 @@ execute as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run function skyblo
     execute if score tick_main_thread AzrTimerStack matches 6120 if score playerCount Azr_system matches 3..4 run tellraw @a[tag=azrShowDialog] {"text":"“了不起的众位凡人，吾辈甘拜下风。这是属于汝等的胜利。”","color":"white"}
     execute if score tick_main_thread AzrTimerStack matches 6120 if score playerCount Azr_system matches 5.. run tellraw @a[tag=azrShowDialog] {"text":"“了不起的众位凡人，吾辈纵使施展全力，也败下阵来。这是属于汝等的胜利。”","color":"white"}
     execute if score tick_main_thread AzrTimerStack matches 6175 as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run rotate @s facing entity @r[tag=azrPlayer]
-    execute if score tick_main_thread AzrTimerStack matches 6200 as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run playsound minecraft:entity.illusioner.ambient hostile @a[tag=azrPlayer] ~ ~ ~ 100 0.6
+    execute if score tick_main_thread AzrTimerStack matches 6200 as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run playsound minecraft:entity.illusioner.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 100 0.6
     execute if score tick_main_thread AzrTimerStack matches 6190 run tellraw @a[tag=azrShowDialog] {"text":"权之残影：","color":"red"}
     execute if score tick_main_thread AzrTimerStack matches 6190 run tellraw @a[tag=azrShowDialog] {"text":"“只是吾辈仍不明白，为何要将恶魔的大军引导至这生命树来。”","color":"white"}
     execute if score tick_main_thread AzrTimerStack matches 6285 as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run rotate @s facing entity @r[tag=azrPlayer]
 
     execute if score tick_main_thread AzrTimerStack matches 6260 run tellraw @a[distance=0..150] [{"text":"你：","color":"aqua","bold": true},{"text":"\n“现在能给我说话的机会了吗？我根本就不知道你在说什么。引导恶魔的大军？就凭我？”","color":"white","bold": false}]
 
-    execute if score tick_main_thread AzrTimerStack matches 6340 as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run playsound minecraft:entity.illusioner.ambient hostile @a[tag=azrPlayer] ~ ~ ~ 100 0.9
+    execute if score tick_main_thread AzrTimerStack matches 6340 as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run playsound minecraft:entity.illusioner.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 100 0.9
     execute if score tick_main_thread AzrTimerStack matches 6340 run tellraw @a[tag=azrShowDialog] {"text":"权之残影：","color":"red"}
     execute if score tick_main_thread AzrTimerStack matches 6340 if score playerCount Azr_system matches 1 run tellraw @a[tag=azrShowDialog] {"text":"“……什、……你什么都不知情？那这又是怎么回事……”","color":"white"}
     execute if score tick_main_thread AzrTimerStack matches 6340 if score playerCount Azr_system matches 2 run tellraw @a[tag=azrShowDialog] {"text":"“……什、你们两个……对此不知情？那这又是怎么回事……”","color":"white"}
     execute if score tick_main_thread AzrTimerStack matches 6340 if score playerCount Azr_system matches 3.. run tellraw @a[tag=azrShowDialog] {"text":"“……什、你们……没人知情？那这又是怎么回事……”","color":"white"}
-    execute if score tick_main_thread AzrTimerStack matches 6350 run playsound minecraft:entity.zombie_villager.cure ambient @a[tag=azrPlayer] -78889 38 121 90 0.8
-    execute if score tick_main_thread AzrTimerStack matches 6350 run playsound minecraft:entity.elder_guardian.curse ambient @a[tag=azrPlayer] -78889 38 121 100 0.4
+    execute if score tick_main_thread AzrTimerStack matches 6350 run playsound minecraft:entity.zombie_villager.cure ambient @a[tag=azrShowDialog] -78889 38 121 90 0.8
+    execute if score tick_main_thread AzrTimerStack matches 6350 run playsound minecraft:entity.elder_guardian.curse ambient @a[tag=azrShowDialog] -78889 38 121 100 0.4
     execute if score tick_main_thread AzrTimerStack matches 6351 as @a[tag=azrPlayer] at @s run tp ~0.05 ~0.45 ~
     execute if score tick_main_thread AzrTimerStack matches 6353 as @a[tag=azrPlayer] at @s run tp ~ ~0.35 ~0.05
     execute if score tick_main_thread AzrTimerStack matches 6355 as @a[tag=azrPlayer] at @s run tp ~0.05 ~0.35 ~
@@ -404,32 +404,32 @@ execute as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run function skyblo
     execute if score tick_main_thread AzrTimerStack matches 6363 as @a[tag=azrPlayer] at @s run tp ~0.05 ~0.14 ~
     execute if score tick_main_thread AzrTimerStack matches 6365 as @a[tag=azrPlayer] at @s run tp ~ ~0.10 ~0.05
     execute if score tick_main_thread AzrTimerStack matches 6367 as @a[tag=azrPlayer] at @s run tp ~0.05 ~0.05 ~
-    execute if score tick_main_thread AzrTimerStack matches 6351..6367 as @a[tag=azrPlayer] at @s run playsound minecraft:block.basalt.place ambient @s ~ ~ ~ 0.8 0.2
+    execute if score tick_main_thread AzrTimerStack matches 6351..6367 as @a[tag=azrShowDialog] at @s run playsound minecraft:block.basalt.place ambient @s ~ ~ ~ 0.8 0.2
     execute if score tick_main_thread AzrTimerStack matches 6345 as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run rotate @s facing -79686 44 -14.0
-    execute if score tick_main_thread AzrTimerStack matches 6375 as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run playsound minecraft:entity.illusioner.hurt hostile @a[tag=azrPlayer] ~ ~ ~ 100 1.1
+    execute if score tick_main_thread AzrTimerStack matches 6375 as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run playsound minecraft:entity.illusioner.hurt hostile @a[tag=azrShowDialog] ~ ~ ~ 100 1.1
     execute if score tick_main_thread AzrTimerStack matches 6375 run tellraw @a[tag=azrShowDialog] [{"text":"权之残影：","color":"red"},{"text":"\n“可恶……这混蛋路西法，居然利用人类来做圈套……！”","color":"white"}]
     execute if score tick_main_thread AzrTimerStack matches 6415 as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run rotate @s facing entity @r[tag=azrPlayer]
     execute if score tick_main_thread AzrTimerStack matches 6430 run tellraw @a[distance=0..150] [{"text":"你：","color":"aqua","bold": true},{"text":"\n“我像是被卷进了什么不得了的误会里头去。”","color":"white","bold": false}]
 
-    execute if score tick_main_thread AzrTimerStack matches 6490 as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run playsound minecraft:entity.illusioner.ambient hostile @a[tag=azrPlayer] ~ ~ ~ 100 0.6
+    execute if score tick_main_thread AzrTimerStack matches 6490 as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run playsound minecraft:entity.illusioner.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 100 0.6
     execute if score tick_main_thread AzrTimerStack matches 6490 run tellraw @a[tag=azrShowDialog] {"text":"权之残影：","color":"red"}
     execute if score tick_main_thread AzrTimerStack matches 6490 if score playerCount Azr_system matches 1 run tellraw @a[tag=azrShowDialog] {"text":"“……吾辈会尽一切可能引导你前往安全地带。详细的之后再解释。”","color":"white"}
     execute if score tick_main_thread AzrTimerStack matches 6490 if score playerCount Azr_system matches 2 run tellraw @a[tag=azrShowDialog] {"text":"“……吾辈会尽一切可能引导你们二人前往安全地带。详细的之后再解释。”","color":"white"}
     execute if score tick_main_thread AzrTimerStack matches 6490 if score playerCount Azr_system matches 3.. run tellraw @a[tag=azrShowDialog] {"text":"“……吾辈会尽一切可能引导你们全员前往安全地带。详细的之后再解释。”","color":"white"}
-    execute if score tick_main_thread AzrTimerStack matches 6560 as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run playsound minecraft:entity.illusioner.ambient hostile @a[tag=azrPlayer] ~ ~ ~ 100 0.6
+    execute if score tick_main_thread AzrTimerStack matches 6560 as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run playsound minecraft:entity.illusioner.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 100 0.6
     execute if score tick_main_thread AzrTimerStack matches 6560 run tellraw @a[tag=azrShowDialog] {"text":"权之残影：","color":"red"}
     execute if score tick_main_thread AzrTimerStack matches 6560 if score playerCount Azr_system matches 1 run tellraw @a[tag=azrShowDialog] {"text":"“现在吾将前往牢房区域，汝若担忧则在此静待，否则可同我一齐前往。”","color":"white"}
     execute if score tick_main_thread AzrTimerStack matches 6560 if score playerCount Azr_system matches 2.. run tellraw @a[tag=azrShowDialog] {"text":"“现在吾将前往牢房区域，汝等若担忧则在此静待，否则可同我一齐前往。”","color":"white"}
     execute if score tick_main_thread AzrTimerStack matches 6620 as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run rotate @s facing -79686 44 -14.0
-    execute if score tick_main_thread AzrTimerStack matches 6620 as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run playsound minecraft:entity.illusioner.ambient hostile @a[tag=azrPlayer] ~ ~ ~ 100 0.6
+    execute if score tick_main_thread AzrTimerStack matches 6620 as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run playsound minecraft:entity.illusioner.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 100 0.6
     execute if score tick_main_thread AzrTimerStack matches 6620 run tellraw @a[tag=azrShowDialog] {"text":"权之残影：","color":"red"}
     execute if score tick_main_thread AzrTimerStack matches 6620 run tellraw @a[tag=azrShowDialog] {"text":"“沙利叶大人，我该如何向您赔罪……！”","color":"white"}
     execute if score tick_main_thread AzrTimerStack matches 6640 at @e[tag=AzrielBossA,type=illusioner,limit=3] run particle minecraft:portal ~ ~1 ~ 0.5 0.6 0.5 0.5 40
-    execute if score tick_main_thread AzrTimerStack matches 6642 as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run playsound minecraft:entity.illusioner.mirror_move hostile @a[tag=azrPlayer] ~ ~ ~ 100 0.7
+    execute if score tick_main_thread AzrTimerStack matches 6642 as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run playsound minecraft:entity.illusioner.mirror_move hostile @a[tag=azrShowDialog] ~ ~ ~ 100 0.7
     execute if score tick_main_thread AzrTimerStack matches 6643.. as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run tp @s ~100 ~ ~
     #finalize stage
     execute if score tick_main_thread AzrTimerStack matches 6720 run scoreboard players set @a[tag=azrPlayer] Azr_wave 23
-    execute if score tick_main_thread AzrTimerStack matches 6760 as @a[tag=azrPlayer] at @s run playsound minecraft:ui.toast.challenge_complete master @s ~ ~ ~ 2 0.9
+    execute if score tick_main_thread AzrTimerStack matches 6760 as @a[tag=azrShowDialog] at @s run playsound minecraft:ui.toast.challenge_complete master @s ~ ~ ~ 2 0.9
     execute if score tick_main_thread AzrTimerStack matches 6760 run title @a[tag=azrShowDialog] actionbar {"text":"Chapter Clear","color":"gold"}
     execute if score tick_main_thread AzrTimerStack matches 6760 run tellraw @a[tag=azrShowDialog] {"text":"「生命手册」已升级","color":"green"}
     execute if score tick_main_thread AzrTimerStack matches 6760 run advancement grant @a[tag=azrPlayer] only skyblock:azr/azr_stage8_boss2

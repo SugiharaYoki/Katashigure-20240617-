@@ -19,8 +19,8 @@ execute if score stage_main_thread AzrTimerStack matches 10 run summon item_fram
 
 
 execute if score stage_main_thread AzrTimerStack matches 10 run advancement grant @a[tag=azrPlayer] only skyblock:azr/azr_stage13_event0
-execute if score stage_main_thread AzrTimerStack matches 1 as @a[tag=azrPlayer] at @s run playsound music.nether.crimson_forest ambient @s ~ ~ ~ 8 1.0
-execute if score stage_main_thread AzrTimerStack matches 3 as @a[tag=azrPlayer] at @s run playsound event.raid.horn ambient @s ~50 ~ ~-50 483 0.9
+execute if score stage_main_thread AzrTimerStack matches 1 as @a[tag=azrShowDialog] at @s run playsound music.nether.crimson_forest ambient @s ~ ~ ~ 8 1.0
+execute if score stage_main_thread AzrTimerStack matches 3 as @a[tag=azrShowDialog] at @s run playsound event.raid.horn ambient @s ~50 ~ ~-50 483 0.9
 
 execute if score stage_main_thread AzrTimerStack matches 10 as @r at @s as @n[tag=AzrielMob,type=piglin] at @s run playsound entity.piglin.angry master @a ~ ~ ~ 4 0.9
 execute if score stage_main_thread AzrTimerStack matches 10 run tellraw @a[tag=azrShowDialog] {"text":"猪灵？：","color":"aqua"}
@@ -130,9 +130,9 @@ execute if score stage_main_thread AzrTimerStack matches 319 if score $Azr_Doppe
 #execute if entity @e[tag=sc,limit=1,scores={stageSeconds=319},tag=Azr_Doppel] run give @a[tag=azrPlayer] end_crystal{display:{Name:"{\"text\":\"猝火核心\",\"italic\":false,\"color\":\"yellow\"}",Lore:["{\"text\":\"置于背包栏第4格且自身着火时\",\"color\":\"gray\",\"italic\":false}","{\"text\":\"攻击力+10% 移动速度+20%\",\"color\":\"dark_green\",\"italic\":false}"]}}
 execute if score stage_main_thread AzrTimerStack matches 319 run advancement grant @a[tag=azrPlayer] only skyblock:azr/azr_stage13
 execute if score stage_main_thread AzrTimerStack matches 319 if score $Azr_Doppel Azr_system matches 1 run advancement grant @a[tag=azrPlayer] only skyblock:azr/azr_stage_bonus_impersonate
-execute if score stage_main_thread AzrTimerStack matches 319 run playsound ambient.crimson_forest.loop ambient @a[tag=azrPlayer] -78000 100 0 1000
-execute if score stage_main_thread AzrTimerStack matches 319 run playsound minecraft:ambient.nether_wastes.mood ambient @a[tag=azrPlayer] -78000 100 0 1000 0.3
-execute if score stage_main_thread AzrTimerStack matches 319 run playsound ambient.crimson_forest.additions ambient @a[tag=azrPlayer] -78000 100 0 1000
+execute if score stage_main_thread AzrTimerStack matches 319 run playsound ambient.crimson_forest.loop ambient @a[tag=azrShowDialog] -78000 100 0 1000
+execute if score stage_main_thread AzrTimerStack matches 319 run playsound minecraft:ambient.nether_wastes.mood ambient @a[tag=azrShowDialog] -78000 100 0 1000 0.3
+execute if score stage_main_thread AzrTimerStack matches 319 run playsound ambient.crimson_forest.additions ambient @a[tag=azrShowDialog] -78000 100 0 1000
 execute if score stage_main_thread AzrTimerStack matches 319 run scoreboard players set @a[tag=azrPlayer] Azr_wave 37
 execute if score stage_main_thread AzrTimerStack matches 319 run scoreboard players set stage Azr_system 52
 execute if score stage_main_thread AzrTimerStack matches 319 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..15}] Azr_skillPoints 16

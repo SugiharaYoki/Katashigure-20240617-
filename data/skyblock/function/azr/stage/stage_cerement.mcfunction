@@ -91,9 +91,9 @@ execute if score stage_main_thread AzrTimerStack matches 149 as @a[tag=azrPlayer
 execute if score stage_main_thread AzrTimerStack matches 149 as @a[tag=azrPlayer] at @s run function skyblock:azr/items/greed_totem
 execute if score stage_main_thread AzrTimerStack matches 149 run fill -79938 39 49 -79938 38 49 minecraft:air destroy
 execute if score stage_main_thread AzrTimerStack matches 149 run fill -79949 38 57 -79949 41 54 air destroy
-execute if score stage_main_thread AzrTimerStack matches 151..154 run playsound ambient.soul_sand_valley.additions ambient @a[tag=azrPlayer] -78000 100 0 1000
-execute if score stage_main_thread AzrTimerStack matches 151..154 run playsound ambient.soul_sand_valley.loop ambient @a[tag=azrPlayer] -78000 100 0 1000
-execute if score stage_main_thread AzrTimerStack matches 151..154 run playsound ambient.soul_sand_valley.mood ambient @a[tag=azrPlayer] -78000 100 0 1000
+execute if score stage_main_thread AzrTimerStack matches 151..154 run playsound ambient.soul_sand_valley.additions ambient @a[tag=azrShowDialog] -78000 100 0 1000
+execute if score stage_main_thread AzrTimerStack matches 151..154 run playsound ambient.soul_sand_valley.loop ambient @a[tag=azrShowDialog] -78000 100 0 1000
+execute if score stage_main_thread AzrTimerStack matches 151..154 run playsound ambient.soul_sand_valley.mood ambient @a[tag=azrShowDialog] -78000 100 0 1000
 execute if score stage_main_thread AzrTimerStack matches 154 run scoreboard players set stage Azr_system 9
 execute if score stage_main_thread AzrTimerStack matches 154 run scoreboard players set stage_main_thread AzrTimerStack 0
 #function skyblock:tool_rng

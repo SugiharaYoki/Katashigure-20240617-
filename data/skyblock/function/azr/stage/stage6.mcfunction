@@ -260,9 +260,9 @@ execute if score stage_main_thread AzrTimerStack matches 290 if score playerCoun
 execute if score stage_main_thread AzrTimerStack matches 292 if score playerCount Azr_system matches 5.. positioned -79943 38 135 run function skyblock:azr/m/spider_t2_swift
 
 execute if score stage_main_thread AzrTimerStack matches 293..315 if entity @e[tag=AzrielMob,tag=!AzrielDecMob] run scoreboard players set stage_main_thread AzrTimerStack 313
-execute if score stage_main_thread AzrTimerStack matches 316 run playsound ambient.crimson_forest.loop ambient @a[tag=azrPlayer] -78000 100 0 1000
-execute if score stage_main_thread AzrTimerStack matches 316 run playsound ambient.crimson_forest.mood ambient @a[tag=azrPlayer] -78000 100 0 1000
-execute if score stage_main_thread AzrTimerStack matches 316 run playsound ambient.crimson_forest.additions ambient @a[tag=azrPlayer] -78000 100 0 1000
+execute if score stage_main_thread AzrTimerStack matches 316 run playsound ambient.crimson_forest.loop ambient @a[tag=azrShowDialog] -78000 100 0 1000
+execute if score stage_main_thread AzrTimerStack matches 316 run playsound ambient.crimson_forest.mood ambient @a[tag=azrShowDialog] -78000 100 0 1000
+execute if score stage_main_thread AzrTimerStack matches 316 run playsound ambient.crimson_forest.additions ambient @a[tag=azrShowDialog] -78000 100 0 1000
 execute if score stage_main_thread AzrTimerStack matches 316 run fill -79906 40 136 -79906 38 135 minecraft:air destroy
 execute if score stage_main_thread AzrTimerStack matches 316 run tellraw @a[scores={Azr_skillPoints=..6}] {"text":"永久升级 - 中途加入时 若至少位于第二章则额外获取 腐肉×3 + 木棍×3 + 燧石×3","color":"light_purple"}
 execute if score stage_main_thread AzrTimerStack matches 316 run title @a[tag=azrShowDialog] actionbar {"text":"Stage Clear","color":"green"}

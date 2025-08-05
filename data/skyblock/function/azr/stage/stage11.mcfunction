@@ -130,25 +130,25 @@ execute if score stage_main_thread AzrTimerStack matches 399 if score playerCoun
 
 
 execute if score stage_main_thread AzrTimerStack matches 501 run fill -79942 40 -105 -79944 40 -105 air
-execute if score stage_main_thread AzrTimerStack matches 501 run playsound minecraft:block.iron_door.open ambient @a[tag=azrPlayer] -79943 45 -105 6 0.3
+execute if score stage_main_thread AzrTimerStack matches 501 run playsound minecraft:block.iron_door.open ambient @a[tag=azrShowDialog] -79943 45 -105 6 0.3
 execute if score stage_main_thread AzrTimerStack matches 502 run fill -79942 41 -105 -79944 41 -105 air
-execute if score stage_main_thread AzrTimerStack matches 502 run playsound minecraft:block.iron_door.open ambient @a[tag=azrPlayer] -79943 45 -105 6 0.3
+execute if score stage_main_thread AzrTimerStack matches 502 run playsound minecraft:block.iron_door.open ambient @a[tag=azrShowDialog] -79943 45 -105 6 0.3
 execute if score stage_main_thread AzrTimerStack matches 503 run fill -79942 42 -105 -79944 42 -105 air
-execute if score stage_main_thread AzrTimerStack matches 503 run playsound minecraft:block.iron_door.open ambient @a[tag=azrPlayer] -79943 45 -105 6 0.3
+execute if score stage_main_thread AzrTimerStack matches 503 run playsound minecraft:block.iron_door.open ambient @a[tag=azrShowDialog] -79943 45 -105 6 0.3
 execute if score stage_main_thread AzrTimerStack matches 501 run fill -79942 40 -111 -79944 40 -111 air
-execute if score stage_main_thread AzrTimerStack matches 501 run playsound minecraft:block.iron_door.open ambient @a[tag=azrPlayer] -79943 45 -111 6 0.3
+execute if score stage_main_thread AzrTimerStack matches 501 run playsound minecraft:block.iron_door.open ambient @a[tag=azrShowDialog] -79943 45 -111 6 0.3
 execute if score stage_main_thread AzrTimerStack matches 502 run fill -79942 41 -111 -79944 41 -111 air
-execute if score stage_main_thread AzrTimerStack matches 502 run playsound minecraft:block.iron_door.open ambient @a[tag=azrPlayer] -79943 45 -111 6 0.3
+execute if score stage_main_thread AzrTimerStack matches 502 run playsound minecraft:block.iron_door.open ambient @a[tag=azrShowDialog] -79943 45 -111 6 0.3
 execute if score stage_main_thread AzrTimerStack matches 503 run fill -79942 42 -111 -79944 42 -111 air
-execute if score stage_main_thread AzrTimerStack matches 503 run playsound minecraft:block.iron_door.open ambient @a[tag=azrPlayer] -79943 45 -111 6 0.3
+execute if score stage_main_thread AzrTimerStack matches 503 run playsound minecraft:block.iron_door.open ambient @a[tag=azrShowDialog] -79943 45 -111 6 0.3
 
 
 execute if score stage_main_thread AzrTimerStack matches 510..529 if score mobCount Azr_system matches 1.. run scoreboard players set stage_main_thread AzrTimerStack 510
 execute if score stage_main_thread AzrTimerStack matches 520 run title @a[tag=azrShowDialog] actionbar {"text":"Stage Annihilated","color":"green"}
 execute if score stage_main_thread AzrTimerStack matches 520 run advancement grant @a[tag=azrPlayer] only skyblock:azr/azr_stage11
-execute if score stage_main_thread AzrTimerStack matches 520 run playsound ambient.crimson_forest.loop ambient @a[tag=azrPlayer] -78000 100 0 1000
-execute if score stage_main_thread AzrTimerStack matches 520 run playsound minecraft:ambient.nether_wastes.mood ambient @a[tag=azrPlayer] -78000 100 0 1000 0.3
-execute if score stage_main_thread AzrTimerStack matches 520 run playsound ambient.crimson_forest.additions ambient @a[tag=azrPlayer] -78000 100 0 1000
+execute if score stage_main_thread AzrTimerStack matches 520 run playsound ambient.crimson_forest.loop ambient @a[tag=azrShowDialog] -78000 100 0 1000
+execute if score stage_main_thread AzrTimerStack matches 520 run playsound minecraft:ambient.nether_wastes.mood ambient @a[tag=azrShowDialog] -78000 100 0 1000 0.3
+execute if score stage_main_thread AzrTimerStack matches 520 run playsound ambient.crimson_forest.additions ambient @a[tag=azrShowDialog] -78000 100 0 1000
 execute if score stage_main_thread AzrTimerStack matches 520 run scoreboard players set @a[tag=azrPlayer] Azr_wave 29
 execute if score stage_main_thread AzrTimerStack matches 521 run scoreboard players set stage Azr_system 38
 execute if score stage_main_thread AzrTimerStack matches 521 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..12}] Azr_skillPoints 13

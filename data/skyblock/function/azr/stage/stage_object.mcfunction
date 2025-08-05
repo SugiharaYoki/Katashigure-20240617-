@@ -128,9 +128,9 @@ execute if score stage_main_thread AzrTimerStack matches 2277 run title @a[tag=a
 execute if score stage_main_thread AzrTimerStack matches 2277 run advancement grant @a[tag=azrPlayer] only skyblock:azr/azr_stage_bonus_object
 execute if score stage_main_thread AzrTimerStack matches 2277 as @a[tag=azrPlayer] at @s run give @s shulker_shell[custom_name='{"text":"弹簧箭盒","italic":false}',lore=['{"text":"敲击 - 散射36支箭矢（射程较高）","color":"yellow","italic":false}'],enchantments={blast_protection:1},custom_data={arrow_box:1b},custom_model_data={floats:[100001.0]}] 5
 execute if score stage_main_thread AzrTimerStack matches 2277 as @a[tag=azrPlayer] at @s run tag @s add AZS_BoS07
-execute if score stage_main_thread AzrTimerStack matches 2277 run playsound ambient.crimson_forest.loop ambient @a[tag=azrPlayer] -78000 100 0 1000
-execute if score stage_main_thread AzrTimerStack matches 2277 run playsound minecraft:ambient.nether_wastes.mood ambient @a[tag=azrPlayer] -78000 100 0 1000 0.3
-execute if score stage_main_thread AzrTimerStack matches 2277 run playsound ambient.crimson_forest.additions ambient @a[tag=azrPlayer] -78000 100 0 1000
+execute if score stage_main_thread AzrTimerStack matches 2277 run playsound ambient.crimson_forest.loop ambient @a[tag=azrShowDialog] -78000 100 0 1000
+execute if score stage_main_thread AzrTimerStack matches 2277 run playsound minecraft:ambient.nether_wastes.mood ambient @a[tag=azrShowDialog] -78000 100 0 1000 0.3
+execute if score stage_main_thread AzrTimerStack matches 2277 run playsound ambient.crimson_forest.additions ambient @a[tag=azrShowDialog] -78000 100 0 1000
 #execute if entity @e[tag=sc,limit=1,scores={stageSeconds=2277}] run scoreboard players set @e[tag=sc,limit=1] Azr_Progress 53
 
 execute if score stage_main_thread AzrTimerStack matches 2277 as @a[tag=azrPlayer] run function skyblock:azr/items/netherite_chestplate_t1

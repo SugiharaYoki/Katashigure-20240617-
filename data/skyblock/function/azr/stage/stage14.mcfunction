@@ -100,8 +100,8 @@ execute if score stage_main_thread AzrTimerStack matches 140 if score #rng2 Azr_
 execute if score stage_main_thread AzrTimerStack matches 130 if score #rng2 Azr_system matches 1 if score playerCount Azr_system matches 7.. run summon cave_spider -79775 23 -415 {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_cave_spider_tier1",Health:8.5f,CustomName:'"紫瑰棘"',attributes:[{id:"max_health",base:8.5d},{id:"attack_knockback",base:0.01d},{id:"attack_damage",base:5.0d},{id:"movement_speed",base:0.14d}]}
 
 execute if score stage_main_thread AzrTimerStack matches 145..180 if entity @e[tag=AzrielMob,tag=!AzrielDecMob] run scoreboard players set stage_main_thread AzrTimerStack 175
-execute if score stage_main_thread AzrTimerStack matches 180..182 run playsound ambient.cave ambient @a[tag=azrPlayer] -79880 41 -114 5 1.2
-execute if score stage_main_thread AzrTimerStack matches 180..182 run playsound ambient.cave ambient @a[tag=azrPlayer] -79880 41 -114 5 1.0
+execute if score stage_main_thread AzrTimerStack matches 180..182 run playsound ambient.cave ambient @a[tag=azrShowDialog] -79880 41 -114 5 1.2
+execute if score stage_main_thread AzrTimerStack matches 180..182 run playsound ambient.cave ambient @a[tag=azrShowDialog] -79880 41 -114 5 1.0
 execute if score stage_main_thread AzrTimerStack matches 180 run title @a[tag=azrShowDialog] actionbar {"text":"Wave Clear","color":"green"}
 execute if score stage_main_thread AzrTimerStack matches 180 run scoreboard players set @a[tag=azrPlayer] Azr_wave 39
 execute if score stage_main_thread AzrTimerStack matches 200 run title @a[tag=azrShowDialog] actionbar {"text":"10","color":"yellow"}
@@ -121,17 +121,17 @@ execute if score stage_main_thread AzrTimerStack matches 224 run tellraw @a[tag=
 execute if score stage_main_thread AzrTimerStack matches 224 if score playerCount Azr_system matches 1 run tellraw @a[tag=azrShowDialog] [{"text":"“听得见吗，","color":"white"},{"selector":"@r[tag=azrPlayer]","color":"white"},{"text":"？”","color":"white"}]
 execute if score stage_main_thread AzrTimerStack matches 224 if score playerCount Azr_system matches 2 run tellraw @a[tag=azrShowDialog] {"text":"“听得见吗，二位？”","color":"white"}
 execute if score stage_main_thread AzrTimerStack matches 224 if score playerCount Azr_system matches 3.. run tellraw @a[tag=azrShowDialog] {"text":"“听得见吗，诸位？”","color":"white"}
-execute if score stage_main_thread AzrTimerStack matches 224 as @a[tag=azrPlayer] at @s run playsound minecraft:entity.illusioner.ambient hostile @a[tag=azrPlayer] ~ ~ ~ 2 0.6
+execute if score stage_main_thread AzrTimerStack matches 224 as @a[tag=azrShowDialog] at @s run playsound minecraft:entity.illusioner.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 2 0.6
 
 execute if score stage_main_thread AzrTimerStack matches 242 run tellraw @a[tag=azrShowDialog] {"text":"权之残影：","color":"aqua"}
 execute if score stage_main_thread AzrTimerStack matches 242 if score playerCount Azr_system matches 1 run tellraw @a[tag=azrShowDialog] {"text":"“终于联系上你了，接收到默尔森通知汝尚且平安之际，可谓令吾心释重负。”","color":"white"}
 execute if score stage_main_thread AzrTimerStack matches 242 if score playerCount Azr_system matches 2.. run tellraw @a[tag=azrShowDialog] {"text":"“终于联系上你们了，接收到默尔森通知汝等尚且平安之际，可谓令吾心释重负。”","color":"white"}
-execute if score stage_main_thread AzrTimerStack matches 242 as @a[tag=azrPlayer] at @s run playsound minecraft:entity.illusioner.ambient hostile @a[tag=azrPlayer] ~ ~ ~ 2 0.6
+execute if score stage_main_thread AzrTimerStack matches 242 as @a[tag=azrShowDialog] at @s run playsound minecraft:entity.illusioner.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 2 0.6
 
 execute if score stage_main_thread AzrTimerStack matches 258 run tellraw @a[tag=azrShowDialog] {"text":"权之残影：","color":"aqua"}
 execute if score stage_main_thread AzrTimerStack matches 258 if score playerCount Azr_system matches 1 run tellraw @a[tag=azrShowDialog] {"text":"“吾将为你送去些好东西。可要珍惜对待。”","color":"white"}
 execute if score stage_main_thread AzrTimerStack matches 258 if score playerCount Azr_system matches 2.. run tellraw @a[tag=azrShowDialog] {"text":"“吾将为你们送去些好东西。可要珍惜对待。”","color":"white"}
-execute if score stage_main_thread AzrTimerStack matches 258 as @a[tag=azrPlayer] at @s run playsound minecraft:entity.illusioner.ambient hostile @a[tag=azrPlayer] ~ ~ ~ 2 0.6
+execute if score stage_main_thread AzrTimerStack matches 258 as @a[tag=azrShowDialog] at @s run playsound minecraft:entity.illusioner.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 2 0.6
 
 
 execute if score stage_main_thread AzrTimerStack matches 244 if score #rng2 Azr_system matches 1 run summon piglin_brute -79775 23 -415 {IsImmuneToZombification:1b,PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_piglin_tier2",Health:23.0f,CustomName:'"猪灵斧武士"',CanPickUpLoot:0b,HandItems:[{count:1,id:"golden_axe",components:{custom_name:'{"text":"金斧","italic":false,"color":"white"}'}},{}],HandDropChances:[0.001f,0.001f],ArmorItems:[{count:1,id:"golden_boots",components:{custom_name:'{"text":"金靴","italic":false,"color":"white"}'}},{count:1,id:"golden_leggings",components:{custom_name:'{"text":"金护腿","italic":false,"color":"white"}'}},{count:1,id:"golden_chestplate",components:{custom_name:'{"text":"金胸甲","italic":false,"color":"white"}'}},{count:1,id:"golden_helmet",components:{custom_name:'{"text":"金盔","italic":false,"color":"white"}'}}],ArmorDropChances:[0.01f,0.01f,0.01f,0.01f],attributes:[{id:"max_health",base:23.0d},{id:"attack_damage",base:5.5d},{id:"movement_speed",base:0.28d},{id:"armor_toughness",base:3.0d}]}
@@ -215,11 +215,11 @@ execute if score stage_main_thread AzrTimerStack matches 750 if score #rng10 Azr
 
 execute if score stage_main_thread AzrTimerStack matches 440 run tellraw @a[tag=azrShowDialog] {"text":"权之残影：","color":"aqua"}
 execute if score stage_main_thread AzrTimerStack matches 440 run tellraw @a[tag=azrShowDialog] {"text":"“……这样吾之传音就会稳定了。往后可要听仔细了。”","color":"white"}
-execute if score stage_main_thread AzrTimerStack matches 440 as @a[tag=azrPlayer] at @s run playsound minecraft:entity.illusioner.ambient hostile @a[tag=azrPlayer] ~ ~ ~ 2 0.6
+execute if score stage_main_thread AzrTimerStack matches 440 as @a[tag=azrShowDialog] at @s run playsound minecraft:entity.illusioner.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 2 0.6
 
 execute if score stage_main_thread AzrTimerStack matches 445..480 if entity @e[tag=AzrielMob,tag=!AzrielDecMob] run scoreboard players set stage_main_thread AzrTimerStack 475
-execute if score stage_main_thread AzrTimerStack matches 480..482 run playsound ambient.cave ambient @a[tag=azrPlayer] -79880 41 -114 5 1.2
-execute if score stage_main_thread AzrTimerStack matches 480..482 run playsound ambient.cave ambient @a[tag=azrPlayer] -79880 41 -114 5 1.0
+execute if score stage_main_thread AzrTimerStack matches 480..482 run playsound ambient.cave ambient @a[tag=azrShowDialog] -79880 41 -114 5 1.2
+execute if score stage_main_thread AzrTimerStack matches 480..482 run playsound ambient.cave ambient @a[tag=azrShowDialog] -79880 41 -114 5 1.0
 execute if score stage_main_thread AzrTimerStack matches 480 run title @a[tag=azrShowDialog] actionbar {"text":"Wave Clear","color":"green"}
 execute if score stage_main_thread AzrTimerStack matches 480 run scoreboard players set @a[tag=azrPlayer] Azr_wave 40
 execute if score stage_main_thread AzrTimerStack matches 500 run title @a[tag=azrShowDialog] actionbar {"text":"10","color":"yellow"}
@@ -269,11 +269,11 @@ execute if score stage_main_thread AzrTimerStack matches 542 if score playerCoun
 
 execute if score stage_main_thread AzrTimerStack matches 498 run tellraw @a[tag=azrShowDialog] {"text":"权之残影：","color":"aqua"}
 execute if score stage_main_thread AzrTimerStack matches 498 run tellraw @a[tag=azrShowDialog] {"text":"“稍后入口处与启动基座处的两个传送点将会有蜘蛛型魔物袭来，初步判断为攻击性较强的品种。”","color":"white"}
-execute if score stage_main_thread AzrTimerStack matches 498 as @a[tag=azrPlayer] at @s run playsound minecraft:entity.illusioner.ambient hostile @a[tag=azrPlayer] ~ ~ ~ 2 0.6
+execute if score stage_main_thread AzrTimerStack matches 498 as @a[tag=azrShowDialog] at @s run playsound minecraft:entity.illusioner.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 2 0.6
 
 execute if score stage_main_thread AzrTimerStack matches 532 run tellraw @a[tag=azrShowDialog] {"text":"权之残影：","color":"aqua"}
 execute if score stage_main_thread AzrTimerStack matches 532 run tellraw @a[tag=azrShowDialog] {"text":"“注意！远离那两块地板的凹陷，那里的魔力蓄积量正在骤升！”","color":"white"}
-execute if score stage_main_thread AzrTimerStack matches 532 as @a[tag=azrPlayer] at @s run playsound minecraft:entity.illusioner.ambient hostile @a[tag=azrPlayer] ~ ~ ~ 2 0.7
+execute if score stage_main_thread AzrTimerStack matches 532 as @a[tag=azrShowDialog] at @s run playsound minecraft:entity.illusioner.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 2 0.7
 
 
 execute if score stage_main_thread AzrTimerStack matches 543 if score #rng2 Azr_system matches 1 run summon spider -79765 23 -404 {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_spider_tier2",Health:15.0f,CustomName:'"狱墓蜘蛛"',attributes:[{id:"max_health",base:15.0d},{id:"attack_damage",base:7.0d},{id:"knockback_resistance",base:0.75d},{id:"movement_speed",base:0.19d}],active_effects:[{id:"resistance",amplifier:0,duration:10000,ambient:0b},{id:"regeneration",amplifier:0,duration:10000,ambient:0b}]}
@@ -295,7 +295,7 @@ execute if score stage_main_thread AzrTimerStack matches 555 if score #rng2 Azr_
 
 execute if score stage_main_thread AzrTimerStack matches 545 run tellraw @a[tag=azrShowDialog] {"text":"权之残影：","color":"aqua"}
 execute if score stage_main_thread AzrTimerStack matches 545 run tellraw @a[tag=azrShowDialog] {"text":"“左右翼将会有大批骸骨兵袭来，小心它们的烈焰长剑。最好将那些邪教徒给优先铲除。”","color":"white"}
-execute if score stage_main_thread AzrTimerStack matches 545 as @a[tag=azrPlayer] at @s run playsound minecraft:entity.illusioner.ambient hostile @a[tag=azrPlayer] ~ ~ ~ 2 0.6
+execute if score stage_main_thread AzrTimerStack matches 545 as @a[tag=azrShowDialog] at @s run playsound minecraft:entity.illusioner.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 2 0.6
 
 execute if score stage_main_thread AzrTimerStack matches 565 if score #rng2 Azr_system matches 1 run summon zombie_villager -79775 23 -415 {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_zombie_tier2_cartographer",Health:16.0f,CustomName:'"僵尸邪教徒"',VillagerData:{profession:"cartographer",level:99,type:"savanna"},CanPickUpLoot:0b,IsBaby:0b,HandItems:[{count:1,id:"written_book",components:{custom_name:'{"text":"歪曲的法典","italic":false,"color":"white"}'}},{}],HandDropChances:[0.01f,0.01f],ArmorItems:[{},{},{count:1,id:"iron_chestplate",components:{enchantments:{protection:2}}},{}],ArmorDropChances:[0.01f,0.01f,0.01f,0.01f],attributes:[{id:"max_health",base:16.0d},{id:"attack_damage",base:4.5d}]}
 execute if score stage_main_thread AzrTimerStack matches 565 if score #rng2 Azr_system matches 2 run summon zombie_villager -79755 23 -415 {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_zombie_tier2_cartographer",Health:16.0f,CustomName:'"僵尸邪教徒"',VillagerData:{profession:"cartographer",level:99,type:"savanna"},CanPickUpLoot:0b,IsBaby:0b,HandItems:[{count:1,id:"written_book",components:{custom_name:'{"text":"歪曲的法典","italic":false,"color":"white"}'}},{}],HandDropChances:[0.01f,0.01f],ArmorItems:[{},{},{count:1,id:"iron_chestplate",components:{enchantments:{protection:2}}},{}],ArmorDropChances:[0.01f,0.01f,0.01f,0.01f],attributes:[{id:"max_health",base:16.0d},{id:"attack_damage",base:4.5d}]}
@@ -328,7 +328,7 @@ execute if score stage_main_thread AzrTimerStack matches 596 if score #rng2 Azr_
 
 execute if score stage_main_thread AzrTimerStack matches 582 run tellraw @a[tag=azrShowDialog] {"text":"权之残影：","color":"aqua"}
 execute if score stage_main_thread AzrTimerStack matches 582 run tellraw @a[tag=azrShowDialog] {"text":"“入口的方向可能会有妒䖞与甲胄斥候僵尸袭来。要注意它们的队伍可能也会有盔甲匠同行。”","color":"white"}
-execute if score stage_main_thread AzrTimerStack matches 582 as @a[tag=azrPlayer] at @s run playsound minecraft:entity.illusioner.ambient hostile @a[tag=azrPlayer] ~ ~ ~ 2 0.6
+execute if score stage_main_thread AzrTimerStack matches 582 as @a[tag=azrShowDialog] at @s run playsound minecraft:entity.illusioner.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 2 0.6
 
 execute if score stage_main_thread AzrTimerStack matches 590..690 if score #rng7 Azr_system matches 1..4 if score #rng3 Azr_system matches 1..2 if score #rng5 Azr_system matches 1..3 if score #rng4 Azr_system matches 1..2 if score #rng6 Azr_system matches 1..2 if score playerCount Azr_system matches 1..2 run summon zombie -79765 23 -404 {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_zombie_knight_tier1",Health:18.0f,CustomName:'"甲胄斥候"',CanPickUpLoot:0b,IsBaby:0b,HandItems:[{count:1,id:"stone_sword",components:{custom_name:'{"text":"石剑","italic":false,"color":"white"}'}},{count:1,id:"torch",components:{custom_name:'{"text":"斥候的火炬","italic":false,"color":"dark_blue"}',attribute_modifiers:[{type:"generic.armor_toughness",amount:1.0d,operation:"add_value",id:"i_84300_102_293_13",slot:"offhand"},{type:"generic.armor_toughness",amount:1.0d,operation:"add_value",id:"i_84300_102_293_14",slot:"mainhand"}]}}],HandDropChances:[0.001f,0.04f],ArmorItems:[{count:1,id:"iron_boots",components:{custom_name:'{"text":"铁靴","italic":false,"color":"white"}'}},{count:1,id:"iron_leggings",components:{custom_name:'{"text":"铁护腿","italic":false,"color":"white"}'}},{count:1,id:"iron_chestplate",components:{custom_name:'{"text":"铁胸甲","italic":false,"color":"white"}'}},{count:1,id:"iron_helmet",components:{custom_name:'{"text":"铁盔","italic":false,"color":"white"}'}}],ArmorDropChances:[0.001f,0.001f,0.001f,0.001f],attributes:[{id:"max_health",base:18.0d},{id:"attack_damage",base:1.5d},{id:"knockback_resistance",base:0.35d},{id:"movement_speed",base:0.17d},{id:"follow_range",base:60.0d}]}
 execute if score stage_main_thread AzrTimerStack matches 590..690 if score #rng7 Azr_system matches 5..6 if score #rng3 Azr_system matches 1..2 if score #rng5 Azr_system matches 1..3 if score #rng4 Azr_system matches 1..2 if score #rng6 Azr_system matches 1..2 if score playerCount Azr_system matches 1..2 run summon silverfish -79765 23 -404 {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_silverfish_tier2",Health:6.5f,CustomName:'"妒䖞"',attributes:[{id:"max_health",base:6.5d},{id:"attack_damage",base:4.0d},{id:"movement_speed",base:0.3d}]}
@@ -443,7 +443,7 @@ execute if score stage_main_thread AzrTimerStack matches 813 if score #rng2 Azr_
 
 execute if score stage_main_thread AzrTimerStack matches 822 run tellraw @a[tag=azrShowDialog] {"text":"权之残影：","color":"aqua"}
 execute if score stage_main_thread AzrTimerStack matches 822 run tellraw @a[tag=azrShowDialog] {"text":"“一队魔界军的刺客编队将由最靠近启动基座的传送点抵达。”","color":"white"}
-execute if score stage_main_thread AzrTimerStack matches 822 as @a[tag=azrPlayer] at @s run playsound minecraft:entity.illusioner.ambient hostile @a[tag=azrPlayer] ~ ~ ~ 2 0.6
+execute if score stage_main_thread AzrTimerStack matches 822 as @a[tag=azrShowDialog] at @s run playsound minecraft:entity.illusioner.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 2 0.6
 
 execute if score stage_main_thread AzrTimerStack matches 850 run summon spider -79765 23 -454 {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_spider_tier2",Health:6.5f,CustomName:'"影迅蛛"',attributes:[{id:"max_health",base:6.5d},{id:"attack_damage",base:4.0d},{id:"movement_speed",base:0.53d}]}
 execute if score stage_main_thread AzrTimerStack matches 852 if score playerCount Azr_system matches 4.. run summon spider -79765 23 -454 {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_spider_tier2",Health:6.5f,CustomName:'"影迅蛛"',attributes:[{id:"max_health",base:6.5d},{id:"attack_damage",base:4.0d},{id:"movement_speed",base:0.53d}]}
@@ -480,7 +480,7 @@ execute if score stage_main_thread AzrTimerStack matches 391 if score playerCoun
 execute if score stage_main_thread AzrTimerStack matches 970 run tellraw @a[tag=azrShowDialog] {"text":"权之残影：","color":"aqua"}
 execute if score stage_main_thread AzrTimerStack matches 970 if score playerCount Azr_system matches 1 run tellraw @a[tag=azrShowDialog] {"text":"“前方是魔界反叛军的地堡入口。从彼处楼梯上行，汝便可进入绯红森林之中。吾辈会在那尽头的洞窟中等待着你。”","color":"white"}
 execute if score stage_main_thread AzrTimerStack matches 970 if score playerCount Azr_system matches 2.. run tellraw @a[tag=azrShowDialog] {"text":"“前方是魔界反叛军的地堡入口。从彼处楼梯上行，汝等便可进入绯红森林之中。吾辈会在那尽头的洞窟中等待着你们。”","color":"white"}
-execute if score stage_main_thread AzrTimerStack matches 970 as @a[tag=azrPlayer] at @s run playsound minecraft:entity.illusioner.ambient hostile @a[tag=azrPlayer] ~ ~ ~ 2 0.65
+execute if score stage_main_thread AzrTimerStack matches 970 as @a[tag=azrShowDialog] at @s run playsound minecraft:entity.illusioner.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 2 0.65
 
 
 execute if score stage_main_thread AzrTimerStack matches 880..948 if score mobCount Azr_system matches 1.. run scoreboard players set stage_main_thread AzrTimerStack 946

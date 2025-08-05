@@ -1,5 +1,5 @@
-playsound minecraft:entity.arrow.shoot master @a[tag=azrPlayer] ~ ~ ~ 10 1
-playsound minecraft:entity.arrow.shoot master @a[tag=azrPlayer] ~ ~ ~ 10 0.8
+playsound minecraft:entity.arrow.shoot master @a[tag=azrShowDialog] ~ ~ ~ 10 1
+playsound minecraft:entity.arrow.shoot master @a[tag=azrShowDialog] ~ ~ ~ 10 0.8
 summon arrow ~ ~1 ~ {Motion:[0.5,0.18,0.07],pickup:0,damage:2.0,life:1100}
 summon arrow ~ ~1 ~ {Motion:[-0.5,0.18,0.07],pickup:0,damage:2.0,life:1100}
 summon arrow ~ ~1 ~ {Motion:[0.07,0.18,0.5],pickup:0,damage:2.0,life:1100}

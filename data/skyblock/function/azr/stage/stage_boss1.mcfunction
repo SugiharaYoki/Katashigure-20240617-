@@ -12,19 +12,19 @@ execute as @e[tag=arroworb2,type=marker] at @s run function skyblock:azr/stage/b
     #effect & sound
     execute if score tick_main_thread AzrTimerStack matches 1 run particle minecraft:soul_fire_flame -79931 38.8 88 0 0 0 0.3 200
     execute if score tick_main_thread AzrTimerStack matches 1 run particle minecraft:explosion -79931 39.4 88 0.3 0.3 0.3 1 3
-    execute if score tick_main_thread AzrTimerStack matches 1 run playsound minecraft:entity.lightning_bolt.impact master @a[tag=azrPlayer] -79931 38.8 88 10 0.8
-    execute if score tick_main_thread AzrTimerStack matches 1 run playsound minecraft:item.trident.thunder master @a[tag=azrPlayer] -79931 38.8 88 10 0.8
-    execute if score tick_main_thread AzrTimerStack matches 1 run playsound minecraft:entity.lightning_bolt.thunder master @a[tag=azrPlayer] -79931 38.8 88 10 0.8
+    execute if score tick_main_thread AzrTimerStack matches 1 run playsound minecraft:entity.lightning_bolt.impact master @a[tag=azrShowDialog] -79931 38.8 88 10 0.8
+    execute if score tick_main_thread AzrTimerStack matches 1 run playsound minecraft:item.trident.thunder master @a[tag=azrShowDialog] -79931 38.8 88 10 0.8
+    execute if score tick_main_thread AzrTimerStack matches 1 run playsound minecraft:entity.lightning_bolt.thunder master @a[tag=azrShowDialog] -79931 38.8 88 10 0.8
     execute if score tick_main_thread AzrTimerStack matches 1..30 positioned -79931 38.8 88 run function skyblock:azr/effects/zanei_appear
-    execute if score tick_main_thread AzrTimerStack matches 60 run playsound ambient.soul_sand_valley.loop ambient @a[tag=azrPlayer] -79931 47 88 100 1.5
-    execute if score tick_main_thread AzrTimerStack matches 60 run playsound ambient.soul_sand_valley.mood ambient @a[tag=azrPlayer] -79931 47 88 100 1.5
-    execute if score tick_main_thread AzrTimerStack matches 60 run playsound ambient.soul_sand_valley.additions ambient @a[tag=azrPlayer] -79931 47 88 100 1.5
-    execute if score tick_main_thread AzrTimerStack matches 60 run playsound ambient.soul_sand_valley.loop ambient @a[tag=azrPlayer] -79931 47 88 100 1.5
-    execute if score tick_main_thread AzrTimerStack matches 60 run playsound ambient.soul_sand_valley.mood ambient @a[tag=azrPlayer] -79931 47 88 100 1.5
-    execute if score tick_main_thread AzrTimerStack matches 60 run playsound ambient.soul_sand_valley.additions ambient @a[tag=azrPlayer] -79931 47 88 100 1.5
+    execute if score tick_main_thread AzrTimerStack matches 60 run playsound ambient.soul_sand_valley.loop ambient @a[tag=azrShowDialog] -79931 47 88 100 1.5
+    execute if score tick_main_thread AzrTimerStack matches 60 run playsound ambient.soul_sand_valley.mood ambient @a[tag=azrShowDialog] -79931 47 88 100 1.5
+    execute if score tick_main_thread AzrTimerStack matches 60 run playsound ambient.soul_sand_valley.additions ambient @a[tag=azrShowDialog] -79931 47 88 100 1.5
+    execute if score tick_main_thread AzrTimerStack matches 60 run playsound ambient.soul_sand_valley.loop ambient @a[tag=azrShowDialog] -79931 47 88 100 1.5
+    execute if score tick_main_thread AzrTimerStack matches 60 run playsound ambient.soul_sand_valley.mood ambient @a[tag=azrShowDialog] -79931 47 88 100 1.5
+    execute if score tick_main_thread AzrTimerStack matches 60 run playsound ambient.soul_sand_valley.additions ambient @a[tag=azrShowDialog] -79931 47 88 100 1.5
     execute if score tick_main_thread AzrTimerStack matches 60 run particle minecraft:portal -79931 47 88 3 3 3 1.5 1600
     execute if score tick_main_thread AzrTimerStack matches 60 run particle minecraft:enchant -79931 47 88 1 1 1 0.5 200
-    execute if score tick_main_thread AzrTimerStack matches 152 as @a[tag=azrPlayer] at @s run playsound minecraft:lethaldose master @s ~ ~ ~ 0.65
+    execute if score tick_main_thread AzrTimerStack matches 152 as @a[tag=azrShowDialog] at @s run playsound minecraft:lethaldose master @s ~ ~ ~ 0.65
     #summon boss
     execute if score tick_main_thread AzrTimerStack matches 80 run particle minecraft:smoke -79931 47 88 1 1 1 0.02 200
     execute if score tick_main_thread AzrTimerStack matches 80 if score playerCount Azr_system matches 1..2 positioned -79931 47 88 run function skyblock:azr/m/shadow_t1_easy
@@ -173,7 +173,7 @@ execute as @e[tag=arroworb2,type=marker] at @s run function skyblock:azr/stage/b
     execute if score tick_main_thread AzrTimerStack matches 1346 if score #rng3 Azr_system matches 1 as @e[tag=AzrielBossA,limit=3] at @s if entity @a[tag=azrPlayer,distance=0..2.5] run function skyblock:azr/stage/boss1/tp1
     execute if score tick_main_thread AzrTimerStack matches 1346 if score #rng3 Azr_system matches 2 as @e[tag=AzrielBossA,limit=3] at @s if entity @a[tag=azrPlayer,distance=0..2.5] run function skyblock:azr/stage/boss1/tp2
     execute if score tick_main_thread AzrTimerStack matches 1346 if score #rng3 Azr_system matches 3 as @e[tag=AzrielBossA,limit=3] at @s if entity @a[tag=azrPlayer,distance=0..4.5] run function skyblock:azr/stage/boss1/move2
-    execute if score tick_main_thread AzrTimerStack matches 1380..1398 as @e[tag=AzrielBossA,limit=3] at @s run playsound minecraft:entity.arrow.shoot master @a[tag=azrPlayer] ~ ~ ~ 0.8 1
+    execute if score tick_main_thread AzrTimerStack matches 1380..1398 as @e[tag=AzrielBossA,limit=3] at @s run playsound minecraft:entity.arrow.shoot master @a[tag=azrShowDialog] ~ ~ ~ 0.8 1
     execute if score tick_main_thread AzrTimerStack matches 1380 as @e[tag=AzrielBossA,limit=3] at @s run summon arrow ~ ~1 ~ {Motion:[5.0,-0.2,0.0],pickup:0,damage:1.0,life:1100}
     execute if score tick_main_thread AzrTimerStack matches 1382 as @e[tag=AzrielBossA,limit=3] at @s run summon arrow ~ ~1 ~ {Motion:[4.8,-0.1,0.2],pickup:0,damage:1.0,life:1100}
     execute if score tick_main_thread AzrTimerStack matches 1384 as @e[tag=AzrielBossA,limit=3] at @s run summon arrow ~ ~1 ~ {Motion:[4.6,0.0,0.4],pickup:0,damage:1.0,life:1100}
@@ -194,7 +194,7 @@ execute as @e[tag=arroworb2,type=marker] at @s run function skyblock:azr/stage/b
     execute if score tick_main_thread AzrTimerStack matches 1394 as @e[tag=AzrielBossA,limit=3] at @s run summon arrow ~ ~1 ~ {Motion:[-3.6,0.0,-1.4],pickup:0,damage:1.0,life:1100}
     execute if score tick_main_thread AzrTimerStack matches 1396 as @e[tag=AzrielBossA,limit=3] at @s run summon arrow ~ ~1 ~ {Motion:[-3.4,0.1,-1.6],pickup:0,damage:1.0,life:1100}
     execute if score tick_main_thread AzrTimerStack matches 1398 as @e[tag=AzrielBossA,limit=3] at @s run summon arrow ~ ~1 ~ {Motion:[-3.2,0.2,-1.8],pickup:0,damage:1.0,life:1100}
-    execute if score tick_main_thread AzrTimerStack matches 1450..1468 as @e[tag=AzrielBossA,limit=3] at @s run playsound minecraft:entity.arrow.shoot master @a[tag=azrPlayer] ~ ~ ~ 0.8 1
+    execute if score tick_main_thread AzrTimerStack matches 1450..1468 as @e[tag=AzrielBossA,limit=3] at @s run playsound minecraft:entity.arrow.shoot master @a[tag=azrShowDialog] ~ ~ ~ 0.8 1
     execute if score tick_main_thread AzrTimerStack matches 1440 if score #rng2 Azr_system matches 1 as @e[tag=AzrielBossA,limit=3] at @s if entity @a[tag=azrPlayer,distance=0..4.5] run function skyblock:azr/stage/boss1/move1
     execute if score tick_main_thread AzrTimerStack matches 1440 if score #rng2 Azr_system matches 2 as @e[tag=AzrielBossA,limit=3] at @s if entity @a[tag=azrPlayer,distance=0..4.5] run function skyblock:azr/stage/boss1/move2
     execute if score tick_main_thread AzrTimerStack matches 1450 as @e[tag=AzrielBossA,limit=3] at @s run summon arrow ~ ~1 ~ {Motion:[0.0,-0.2,5.0],pickup:0,damage:1.0,life:1100}
@@ -256,18 +256,18 @@ execute as @e[tag=arroworb2,type=marker] at @s run function skyblock:azr/stage/b
     execute if score tick_main_thread AzrTimerStack matches 3001 run kill @e[tag=AzrielMob]
     execute if score tick_main_thread AzrTimerStack matches 3001..3050 run tag @a[tag=azrPlayer] add azrUpdateSpawnPoint
     #effect & sound
-    execute if score tick_main_thread AzrTimerStack matches 3001 run playsound minecraft:item.trident.thunder master @a[tag=azrPlayer] -79931 38.8 88 10 0.8
+    execute if score tick_main_thread AzrTimerStack matches 3001 run playsound minecraft:item.trident.thunder master @a[tag=azrShowDialog] -79931 38.8 88 10 0.8
     execute if score tick_main_thread AzrTimerStack matches 3001 run particle minecraft:reverse_portal -79931 39 88 0 0 0 1.5 1800
     execute if score tick_main_thread AzrTimerStack matches 3001 run particle minecraft:enchant -79931 39 88 3 3 3 1.5 800
-    execute if score tick_main_thread AzrTimerStack matches 3020 run playsound ambient.soul_sand_valley.loop ambient @a[tag=azrPlayer] -79931 47 88 100 1.5
-    execute if score tick_main_thread AzrTimerStack matches 3020 run playsound ambient.soul_sand_valley.mood ambient @a[tag=azrPlayer] -79931 47 88 100 1.5
-    execute if score tick_main_thread AzrTimerStack matches 3020 run playsound ambient.soul_sand_valley.additions ambient @a[tag=azrPlayer] -79931 47 88 100 1.5
-    execute if score tick_main_thread AzrTimerStack matches 3020 run playsound ambient.soul_sand_valley.loop ambient @a[tag=azrPlayer] -79931 47 88 100 1.5
-    execute if score tick_main_thread AzrTimerStack matches 3020 run playsound ambient.soul_sand_valley.mood ambient @a[tag=azrPlayer] -79931 47 88 100 1.5
-    execute if score tick_main_thread AzrTimerStack matches 3020 run playsound ambient.soul_sand_valley.additions ambient @a[tag=azrPlayer] -79931 47 88 100 1.
-    execute if score tick_main_thread AzrTimerStack matches 3120 run playsound ambient.crimson_forest.loop ambient @a[tag=azrPlayer] -78000 100 0 1000
-    execute if score tick_main_thread AzrTimerStack matches 3120 run playsound ambient.crimson_forest.mood ambient @a[tag=azrPlayer] -78000 100 0 1000
-    execute if score tick_main_thread AzrTimerStack matches 3120 run playsound ambient.crimson_forest.additions ambient @a[tag=azrPlayer] -78000 100 0 1000
+    execute if score tick_main_thread AzrTimerStack matches 3020 run playsound ambient.soul_sand_valley.loop ambient @a[tag=azrShowDialog] -79931 47 88 100 1.5
+    execute if score tick_main_thread AzrTimerStack matches 3020 run playsound ambient.soul_sand_valley.mood ambient @a[tag=azrShowDialog] -79931 47 88 100 1.5
+    execute if score tick_main_thread AzrTimerStack matches 3020 run playsound ambient.soul_sand_valley.additions ambient @a[tag=azrShowDialog] -79931 47 88 100 1.5
+    execute if score tick_main_thread AzrTimerStack matches 3020 run playsound ambient.soul_sand_valley.loop ambient @a[tag=azrShowDialog] -79931 47 88 100 1.5
+    execute if score tick_main_thread AzrTimerStack matches 3020 run playsound ambient.soul_sand_valley.mood ambient @a[tag=azrShowDialog] -79931 47 88 100 1.5
+    execute if score tick_main_thread AzrTimerStack matches 3020 run playsound ambient.soul_sand_valley.additions ambient @a[tag=azrShowDialog] -79931 47 88 100 1.
+    execute if score tick_main_thread AzrTimerStack matches 3120 run playsound ambient.crimson_forest.loop ambient @a[tag=azrShowDialog] -78000 100 0 1000
+    execute if score tick_main_thread AzrTimerStack matches 3120 run playsound ambient.crimson_forest.mood ambient @a[tag=azrShowDialog] -78000 100 0 1000
+    execute if score tick_main_thread AzrTimerStack matches 3120 run playsound ambient.crimson_forest.additions ambient @a[tag=azrShowDialog] -78000 100 0 1000
     execute if score tick_main_thread AzrTimerStack matches 3170 run particle minecraft:end_rod -79931 39 42 0.6 0.6 0.6 0.0 13
     execute if score tick_main_thread AzrTimerStack matches 3170 run particle minecraft:end_rod -79931 39 76 0.6 0.6 0.6 0.0 131
     #finalize map
@@ -283,7 +283,7 @@ execute as @e[tag=arroworb2,type=marker] at @s run function skyblock:azr/stage/b
     execute if score tick_main_thread AzrTimerStack matches 3200 run scoreboard players set stage Azr_system 11
     execute if score tick_main_thread AzrTimerStack matches 3200 run scoreboard players reset tick_main_thread AzrTimerStack
     #execute if score tick_main_thread AzrTimerStack matches 3200 run scoreboard players set @a[tag=azrPlayer,scores={Azr_PlyPtsH=..4}] Azr_PlyPtsH 5
-    execute if score tick_main_thread AzrTimerStack matches 3140 run playsound minecraft:ui.toast.challenge_complete master @a[tag=azrPlayer] ~ ~ ~ 2 0.9
+    execute if score tick_main_thread AzrTimerStack matches 3140 run playsound minecraft:ui.toast.challenge_complete master @a[tag=azrShowDialog] ~ ~ ~ 2 0.9
     execute if score tick_main_thread AzrTimerStack matches 3140 run title @a[tag=azrShowDialog] actionbar {"text":"Chapter Clear","color":"gold"}
     execute if score tick_main_thread AzrTimerStack matches 3140 run tellraw @a[tag=azrShowDialog] {"text":"「生命手册」已升级","color":"green"}
     execute if score tick_main_thread AzrTimerStack matches 3140 run advancement grant @a[tag=azrPlayer] only skyblock:azr/azr_stage4_boss1

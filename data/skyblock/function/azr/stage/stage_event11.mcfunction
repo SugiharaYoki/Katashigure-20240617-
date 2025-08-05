@@ -11,7 +11,7 @@ execute if score stage_main_thread AzrTimerStack matches 0..500 run scoreboard p
 
 execute if score stage_main_thread AzrTimerStack matches 601 run tag @a[tag=azrPlayer] add azrUpdateSpawnPoint
 execute if score stage_main_thread AzrTimerStack matches 601 run tellraw @a[tag=DebugMode,tag=azrPlayer] [{"text":"[DEBUG MODE MESSAGE] You are playing \"Stage Event11\", with playerCount = "},{"score":{"objective":"Azr_system","name":"playerCount"}},{"text":" Maximum Seconds = 3146"}]
-execute if score stage_main_thread AzrTimerStack matches 601 as @a[tag=azrPlayer] at @s run playsound minecraft:entity.illusioner.ambient master @s ~ ~ ~ 0.3 0.6
+execute if score stage_main_thread AzrTimerStack matches 601 as @a[tag=azrShowDialog] at @s run playsound minecraft:entity.illusioner.ambient master @s ~ ~ ~ 0.3 0.6
 execute if score stage_main_thread AzrTimerStack matches 601 as @a[tag=azrPlayer] at @s run tellraw @s {"text":"权之残影（传音）：","color":"red"}
 execute if score stage_main_thread AzrTimerStack matches 601 as @a[tag=azrPlayer] at @s run tellraw @s {"text":"“□□□□□□□□□ □□□”","color":"white"}
 
@@ -23,16 +23,16 @@ execute if score stage_main_thread AzrTimerStack matches 601 run fill -79728 46 
 execute if score stage_main_thread AzrTimerStack matches 605..650 run scoreboard players set stage_main_thread AzrTimerStack 620
 # execute if score stage_main_thread AzrTimerStack matches 605..650 if entity @a[x=-79800,y=48,z=-128,distance=0..7,tag=azrPlayer,gamemode=!spectator] run scoreboard players set stage_main_thread AzrTimerStack 660
 
-execute if score stage_main_thread AzrTimerStack matches 671 as @a[tag=azrPlayer] at @s run playsound minecraft:entity.illusioner.ambient master @s ~ ~ ~ 0.6 0.6
+execute if score stage_main_thread AzrTimerStack matches 671 as @a[tag=azrShowDialog] at @s run playsound minecraft:entity.illusioner.ambient master @s ~ ~ ~ 0.6 0.6
 execute if score stage_main_thread AzrTimerStack matches 671 as @a[tag=azrPlayer] at @s run tellraw @s {"text":"权之残影（传音）：","color":"red"}
 execute if score stage_main_thread AzrTimerStack matches 671 as @a[tag=azrPlayer] at @s run tellraw @s {"text":"“听□□□ 勇敢□人□□ 前□□□□□ □到□□□□回复！”","color":"white"}
 
-execute if score stage_main_thread AzrTimerStack matches 681 as @a[tag=azrPlayer] at @s run playsound minecraft:entity.illusioner.ambient master @s ~ ~ ~ 0.9 0.6
+execute if score stage_main_thread AzrTimerStack matches 681 as @a[tag=azrShowDialog] at @s run playsound minecraft:entity.illusioner.ambient master @s ~ ~ ~ 0.9 0.6
 execute if score stage_main_thread AzrTimerStack matches 681 as @a[tag=azrPlayer] at @s run tellraw @s {"text":"权之残影（传音）：","color":"red"}
 execute if score stage_main_thread AzrTimerStack matches 681 if score playerCount Azr_system matches 1 as @a[tag=azrPlayer] at @s run tellraw @s {"text":"“汝□□□是吾之□僚□□之殊□”","color":"white"}
 execute if score stage_main_thread AzrTimerStack matches 681 if score playerCount Azr_system matches 2.. as @a[tag=azrPlayer] at @s run tellraw @s {"text":"“汝□□□□是吾之□僚□□之殊□”","color":"white"}
 
-execute if score stage_main_thread AzrTimerStack matches 693 as @a[tag=azrPlayer] at @s run playsound minecraft:entity.illusioner.ambient master @s ~ ~ ~ 1.1 0.6
+execute if score stage_main_thread AzrTimerStack matches 693 as @a[tag=azrShowDialog] at @s run playsound minecraft:entity.illusioner.ambient master @s ~ ~ ~ 1.1 0.6
 execute if score stage_main_thread AzrTimerStack matches 693 as @a[tag=azrPlayer] at @s run tellraw @s {"text":"权之残影（传音）：","color":"red"}
 execute if score stage_main_thread AzrTimerStack matches 693 if score playerCount Azr_system matches 1 as @a[tag=azrPlayer] at @s run tellraw @s {"text":"“千万□□再□进□ □请□速归□”","color":"white"}
 execute if score stage_main_thread AzrTimerStack matches 693 if score playerCount Azr_system matches 2.. as @a[tag=azrPlayer] at @s run tellraw @s {"text":"“千万□□再□进□ □等请□速归□”","color":"white"}
@@ -42,12 +42,12 @@ execute if score stage_main_thread AzrTimerStack matches 694..800 run scoreboard
 execute if score stage_main_thread AzrTimerStack matches 1001 as @r[x=-79760,y=48,z=-128,distance=0..5,tag=azrPlayer,gamemode=!spectator] at @s run tp @a[x=-79760,y=48,z=-128,distance=5.5..,tag=azrPlayer,gamemode=!spectator] @s
 
 
-execute if score stage_main_thread AzrTimerStack matches 1001 as @a[tag=azrPlayer] at @s run playsound minecraft:entity.illusioner.ambient master @s ~ ~ ~ 100 0.6
+execute if score stage_main_thread AzrTimerStack matches 1001 as @a[tag=azrShowDialog] at @s run playsound minecraft:entity.illusioner.ambient master @s ~ ~ ~ 100 0.6
 execute if score stage_main_thread AzrTimerStack matches 1001 as @a[tag=azrPlayer] at @s run tellraw @s {"text":"权之残影（传音）：","color":"red"}
 execute if score stage_main_thread AzrTimerStack matches 1001 if score playerCount Azr_system matches 1 as @a[tag=azrPlayer] at @s run tellraw @s {"text":"“汝可否听到我的传音？！前面是关押最危险怪物的区域，汝过去就是送死，听到后请尽快返回！”","color":"white"}
 execute if score stage_main_thread AzrTimerStack matches 1001 if score playerCount Azr_system matches 2.. as @a[tag=azrPlayer] at @s run tellraw @s {"text":"“汝等可否听到我的传音？！前面是关押最危险怪物的区域，汝等过去就是送死，听到后请尽快返回！”","color":"white"}
 
-execute if score stage_main_thread AzrTimerStack matches 1020 as @a[tag=azrPlayer] at @s run playsound minecraft:entity.illusioner.ambient master @s ~ ~ ~ 100 0.6
+execute if score stage_main_thread AzrTimerStack matches 1020 as @a[tag=azrShowDialog] at @s run playsound minecraft:entity.illusioner.ambient master @s ~ ~ ~ 100 0.6
 execute if score stage_main_thread AzrTimerStack matches 1020 as @a[tag=azrPlayer] at @s run tellraw @s {"text":"权之残影（传音）：","color":"red"}
 execute if score stage_main_thread AzrTimerStack matches 1020 as @a[tag=azrPlayer] at @s run tellraw @s {"text":"“等等……为什么，那里的怪物好像全都死亡了……”","color":"white"}
 
@@ -81,29 +81,29 @@ execute if score stage_main_thread AzrTimerStack matches 1089 run fill -79728 49
 
 execute if score stage_main_thread AzrTimerStack matches 1079 run tellraw @a[tag=azrShowDialog] {"text":"？？？：","color":"red"}
 execute if score stage_main_thread AzrTimerStack matches 1079 run tellraw @a[tag=azrShowDialog] {"text":"“赞美之歌，是否为吾所唱？是否为汝所唱？”","color":"white"}
-execute if score stage_main_thread AzrTimerStack matches 1079 as @a[tag=azrPlayer] at @s run playsound minecraft:entity.evoker.celebrate hostile @a[tag=azrPlayer] ~ ~ ~ 2 0.7
+execute if score stage_main_thread AzrTimerStack matches 1079 as @a[tag=azrShowDialog] at @s run playsound minecraft:entity.evoker.celebrate hostile @a[tag=azrShowDialog] ~ ~ ~ 2 0.7
 
 execute if score stage_main_thread AzrTimerStack matches 1085 run tellraw @a[tag=azrShowDialog] {"text":"？？？：","color":"red"}
 execute if score stage_main_thread AzrTimerStack matches 1085 run tellraw @a[tag=azrShowDialog] {"text":"“哀叹之曲，是否为吾所奏？是否为汝所奏？”","color":"white"}
-execute if score stage_main_thread AzrTimerStack matches 1085 as @a[tag=azrPlayer] at @s run playsound minecraft:entity.evoker.celebrate hostile @a[tag=azrPlayer] ~ ~ ~ 2 0.7
+execute if score stage_main_thread AzrTimerStack matches 1085 as @a[tag=azrShowDialog] at @s run playsound minecraft:entity.evoker.celebrate hostile @a[tag=azrShowDialog] ~ ~ ~ 2 0.7
 
 execute if score stage_main_thread AzrTimerStack matches 1090 run tellraw @a[tag=azrShowDialog] {"text":"？？？：","color":"red"}
 execute if score stage_main_thread AzrTimerStack matches 1090 run tellraw @a[tag=azrShowDialog] {"text":"“诀别之歌，是否为天国所唱？是否为炼狱所唱？”","color":"white"}
-execute if score stage_main_thread AzrTimerStack matches 1090 as @a[tag=azrPlayer] at @s run playsound minecraft:entity.evoker.celebrate hostile @a[tag=azrPlayer] ~ ~ ~ 2 0.7
+execute if score stage_main_thread AzrTimerStack matches 1090 as @a[tag=azrShowDialog] at @s run playsound minecraft:entity.evoker.celebrate hostile @a[tag=azrShowDialog] ~ ~ ~ 2 0.7
 
 execute if score stage_main_thread AzrTimerStack matches 1095 run tellraw @a[tag=azrShowDialog] {"text":"？？？：","color":"red"}
 execute if score stage_main_thread AzrTimerStack matches 1095 run tellraw @a[tag=azrShowDialog] {"text":"“背叛之曲，是否为天国所奏？是否为炼狱所奏？”","color":"white"}
-execute if score stage_main_thread AzrTimerStack matches 1095 as @a[tag=azrPlayer] at @s run playsound minecraft:entity.evoker.celebrate hostile @a[tag=azrPlayer] ~ ~ ~ 2 0.7
+execute if score stage_main_thread AzrTimerStack matches 1095 as @a[tag=azrShowDialog] at @s run playsound minecraft:entity.evoker.celebrate hostile @a[tag=azrShowDialog] ~ ~ ~ 2 0.7
 
-execute if score stage_main_thread AzrTimerStack matches 1079..1082 as @a[tag=azrPlayer] at @s run playsound ambient.warped_forest.additions master @s ~ ~ ~ 2.8 0.7
-execute if score stage_main_thread AzrTimerStack matches 1079..1082 as @a[tag=azrPlayer] at @s run playsound ambient.warped_forest.mood master @s ~ ~ ~ 2.8 0.7
-execute if score stage_main_thread AzrTimerStack matches 1079..1082 as @a[tag=azrPlayer] at @s run playsound ambient.warped_forest.loop master @s ~ ~ ~ 2.8 0.7
+execute if score stage_main_thread AzrTimerStack matches 1079..1082 as @a[tag=azrShowDialog] at @s run playsound ambient.warped_forest.additions master @s ~ ~ ~ 2.8 0.7
+execute if score stage_main_thread AzrTimerStack matches 1079..1082 as @a[tag=azrShowDialog] at @s run playsound ambient.warped_forest.mood master @s ~ ~ ~ 2.8 0.7
+execute if score stage_main_thread AzrTimerStack matches 1079..1082 as @a[tag=azrShowDialog] at @s run playsound ambient.warped_forest.loop master @s ~ ~ ~ 2.8 0.7
 
-execute if score stage_main_thread AzrTimerStack matches 1086 as @a[tag=azrPlayer] at @s run playsound minecraft:entity.illusioner.ambient master @s ~ ~ ~ 100 0.6
+execute if score stage_main_thread AzrTimerStack matches 1086 as @a[tag=azrShowDialog] at @s run playsound minecraft:entity.illusioner.ambient master @s ~ ~ ~ 100 0.6
 execute if score stage_main_thread AzrTimerStack matches 1086 as @a[tag=azrPlayer] at @s run tellraw @s {"text":"权之残影（传音）：","color":"red"}
 execute if score stage_main_thread AzrTimerStack matches 1086 as @a[tag=azrPlayer] at @s run tellraw @s {"text":"“难道说是，权、权之殊能背叛了沙利叶大人……”","color":"white"}
 
-execute if score stage_main_thread AzrTimerStack matches 1101 as @a[tag=azrPlayer] at @s run playsound minecraft:entity.illusioner.ambient master @s ~ ~ ~ 100 0.6
+execute if score stage_main_thread AzrTimerStack matches 1101 as @a[tag=azrShowDialog] at @s run playsound minecraft:entity.illusioner.ambient master @s ~ ~ ~ 100 0.6
 execute if score stage_main_thread AzrTimerStack matches 1101 as @a[tag=azrPlayer] at @s run tellraw @s {"text":"权之残影（传音）：","color":"red"}
 execute if score stage_main_thread AzrTimerStack matches 1101 if score playerCount Azr_system matches 1 as @a[tag=azrPlayer] at @s run tellraw @s {"text":"“快回去，那里是权之殊能的陷阱，无论你用什么办法，快点逃走！！”","color":"dark_red"}
 execute if score stage_main_thread AzrTimerStack matches 1101 if score playerCount Azr_system matches 2 as @a[tag=azrPlayer] at @s run tellraw @s {"text":"“快回去，那里是权之殊能的陷阱，无论你们两人用什么办法，快点逃走！！”","color":"dark_red"}
@@ -130,57 +130,57 @@ execute if score stage_main_thread AzrTimerStack matches 1135 run setblock -7974
 
 execute if score stage_main_thread AzrTimerStack matches 1118 run tellraw @a[tag=azrShowDialog] {"text":"？？？：","color":"red"}
 execute if score stage_main_thread AzrTimerStack matches 1118 run tellraw @a[tag=azrShowDialog] {"text":"“英勇之人，值得赞美之人，英烈之人，值得哀叹之人……”","color":"white"}
-execute if score stage_main_thread AzrTimerStack matches 1118 as @a[tag=azrPlayer] at @s run playsound minecraft:entity.evoker.celebrate hostile @a[tag=azrPlayer] ~ ~ ~ 2 0.7
+execute if score stage_main_thread AzrTimerStack matches 1118 as @a[tag=azrShowDialog] at @s run playsound minecraft:entity.evoker.celebrate hostile @a[tag=azrShowDialog] ~ ~ ~ 2 0.7
 
 execute if score stage_main_thread AzrTimerStack matches 1122 run tellraw @a[tag=azrShowDialog] {"text":"？？？：","color":"red"}
 execute if score stage_main_thread AzrTimerStack matches 1122 run tellraw @a[tag=azrShowDialog] {"text":"“于此天国之花园，于此圣地之中庭……”","color":"white"}
-execute if score stage_main_thread AzrTimerStack matches 1122 as @a[tag=azrPlayer] at @s run playsound minecraft:entity.evoker.celebrate hostile @a[tag=azrPlayer] ~ ~ ~ 2 0.7
+execute if score stage_main_thread AzrTimerStack matches 1122 as @a[tag=azrShowDialog] at @s run playsound minecraft:entity.evoker.celebrate hostile @a[tag=azrShowDialog] ~ ~ ~ 2 0.7
 
 execute if score stage_main_thread AzrTimerStack matches 1125 run tellraw @a[tag=azrShowDialog] {"text":"？？？：","color":"red"}
 execute if score stage_main_thread AzrTimerStack matches 1125 run tellraw @a[tag=azrShowDialog] {"text":"“残存之命，苟延残喘的英勇之人，即将逝去的勇气之光？”","color":"white"}
-execute if score stage_main_thread AzrTimerStack matches 1125 as @a[tag=azrPlayer] at @s run playsound minecraft:entity.evoker.celebrate hostile @a[tag=azrPlayer] ~ ~ ~ 2 0.7
+execute if score stage_main_thread AzrTimerStack matches 1125 as @a[tag=azrShowDialog] at @s run playsound minecraft:entity.evoker.celebrate hostile @a[tag=azrShowDialog] ~ ~ ~ 2 0.7
 
 execute if score stage_main_thread AzrTimerStack matches 1127 run tellraw @a[tag=azrShowDialog] {"text":"？？？：","color":"red"}
 execute if score stage_main_thread AzrTimerStack matches 1127 run tellraw @a[tag=azrShowDialog] {"text":"“是否值得赞美？赞美？赞美？七日之赞美？”","color":"white"}
-execute if score stage_main_thread AzrTimerStack matches 1127 as @a[tag=azrPlayer] at @s run playsound minecraft:entity.evoker.celebrate hostile @a[tag=azrPlayer] ~ ~ ~ 2 0.7
+execute if score stage_main_thread AzrTimerStack matches 1127 as @a[tag=azrShowDialog] at @s run playsound minecraft:entity.evoker.celebrate hostile @a[tag=azrShowDialog] ~ ~ ~ 2 0.7
 
 execute if score stage_main_thread AzrTimerStack matches 1128 run tellraw @a[tag=azrShowDialog] {"text":"？？？：","color":"red"}
 execute if score stage_main_thread AzrTimerStack matches 1128 run tellraw @a[tag=azrShowDialog] {"text":"“神言此世需要邪恶，汝即为邪恶？吾乃正义？”","color":"white"}
-execute if score stage_main_thread AzrTimerStack matches 1128 as @a[tag=azrPlayer] at @s run playsound minecraft:entity.evoker.celebrate hostile @a[tag=azrPlayer] ~ ~ ~ 2 0.7
+execute if score stage_main_thread AzrTimerStack matches 1128 as @a[tag=azrShowDialog] at @s run playsound minecraft:entity.evoker.celebrate hostile @a[tag=azrShowDialog] ~ ~ ~ 2 0.7
 
 execute if score stage_main_thread AzrTimerStack matches 1129 run tellraw @a[tag=azrShowDialog] {"text":"？？？：","color":"red"}
 execute if score stage_main_thread AzrTimerStack matches 1129 run tellraw @a[tag=azrShowDialog] {"text":"“实吾乃救赎之光，实吾乃圣洁之水。”","color":"white"}
-execute if score stage_main_thread AzrTimerStack matches 1129 as @a[tag=azrPlayer] at @s run playsound minecraft:entity.evoker.celebrate hostile @a[tag=azrPlayer] ~ ~ ~ 2 0.7
+execute if score stage_main_thread AzrTimerStack matches 1129 as @a[tag=azrShowDialog] at @s run playsound minecraft:entity.evoker.celebrate hostile @a[tag=azrShowDialog] ~ ~ ~ 2 0.7
 
 execute if score stage_main_thread AzrTimerStack matches 1130 run tellraw @a[tag=azrShowDialog] {"text":"？？？：","color":"red"}
 execute if score stage_main_thread AzrTimerStack matches 1130 run tellraw @a[tag=azrShowDialog] {"text":"“此沙利叶之中庭花园，必将被毁灭。”","color":"white"}
-execute if score stage_main_thread AzrTimerStack matches 1130 as @a[tag=azrPlayer] at @s run playsound minecraft:entity.evoker.celebrate hostile @a[tag=azrPlayer] ~ ~ ~ 2 0.7
+execute if score stage_main_thread AzrTimerStack matches 1130 as @a[tag=azrShowDialog] at @s run playsound minecraft:entity.evoker.celebrate hostile @a[tag=azrShowDialog] ~ ~ ~ 2 0.7
 
 execute if score stage_main_thread AzrTimerStack matches 1130 run summon evoker -79734 55 -126.0 {Invulnerable:1b,PersistenceRequired:1b,Tags:["AzrielMob","AzrielBossB"],DeathLootTable:"skyblock:azriel_shadow_tier1",Health:300.0f,CustomName:'"权之殊能"',attributes:[{id:"max_health",base:300.0d},{id:"attack_damage",base:1.5d},{id:"movement_speed",base:0.0d}]}
 execute if score stage_main_thread AzrTimerStack matches 1130 run particle large_smoke -79734 55 -126.0 1 1 1 0.08 500
-execute if score stage_main_thread AzrTimerStack matches 1130 run playsound minecraft:entity.elder_guardian.curse master @a[tag=azrPlayer] -79734 55 -126.0 7 0.8
+execute if score stage_main_thread AzrTimerStack matches 1130 run playsound minecraft:entity.elder_guardian.curse master @a[tag=azrShowDialog] -79734 55 -126.0 7 0.8
 
 execute if score stage_main_thread AzrTimerStack matches 1131 run tellraw @a[tag=azrShowDialog] {"text":"？？？：","color":"red"}
 execute if score stage_main_thread AzrTimerStack matches 1131 run tellraw @a[tag=azrShowDialog] {"text":"“此世无需暴君之国，此园无需独裁之主。”","color":"white"}
-execute if score stage_main_thread AzrTimerStack matches 1131 as @a[tag=azrPlayer] at @s run playsound minecraft:entity.evoker.celebrate hostile @a[tag=azrPlayer] ~ ~ ~ 2 0.7
+execute if score stage_main_thread AzrTimerStack matches 1131 as @a[tag=azrShowDialog] at @s run playsound minecraft:entity.evoker.celebrate hostile @a[tag=azrShowDialog] ~ ~ ~ 2 0.7
 
 execute if score stage_main_thread AzrTimerStack matches 1132 run tellraw @a[tag=azrShowDialog] {"text":"？？？：","color":"red"}
 execute if score stage_main_thread AzrTimerStack matches 1132 run tellraw @a[tag=azrShowDialog] {"text":"“路西法的荣光，必将再次照耀世间地表。”","color":"white"}
-execute if score stage_main_thread AzrTimerStack matches 1132 as @a[tag=azrPlayer] at @s run playsound minecraft:entity.evoker.celebrate hostile @a[tag=azrPlayer] ~ ~ ~ 2 0.7
+execute if score stage_main_thread AzrTimerStack matches 1132 as @a[tag=azrShowDialog] at @s run playsound minecraft:entity.evoker.celebrate hostile @a[tag=azrShowDialog] ~ ~ ~ 2 0.7
 
 execute if score stage_main_thread AzrTimerStack matches 1133 run tellraw @a[tag=azrShowDialog] {"text":"？？？：","color":"red"}
 execute if score stage_main_thread AzrTimerStack matches 1133 run tellraw @a[tag=azrShowDialog] {"text":"“此乃汝等终章，也将是此园的灭亡之刻。”","color":"white"}
-execute if score stage_main_thread AzrTimerStack matches 1133 as @a[tag=azrPlayer] at @s run playsound minecraft:entity.evoker.celebrate hostile @a[tag=azrPlayer] ~ ~ ~ 2 0.7
+execute if score stage_main_thread AzrTimerStack matches 1133 as @a[tag=azrShowDialog] at @s run playsound minecraft:entity.evoker.celebrate hostile @a[tag=azrShowDialog] ~ ~ ~ 2 0.7
 
 execute if score stage_main_thread AzrTimerStack matches 1134 run tellraw @a[tag=azrShowDialog] {"text":"？？？：","color":"red"}
 execute if score stage_main_thread AzrTimerStack matches 1134 run tellraw @a[tag=azrShowDialog] {"text":"“参上。鄙人为权之殊能。”","color":"white"}
-execute if score stage_main_thread AzrTimerStack matches 1134 as @a[tag=azrPlayer] at @s run playsound minecraft:entity.evoker.celebrate hostile @a[tag=azrPlayer] ~ ~ ~ 2 0.7
+execute if score stage_main_thread AzrTimerStack matches 1134 as @a[tag=azrShowDialog] at @s run playsound minecraft:entity.evoker.celebrate hostile @a[tag=azrShowDialog] ~ ~ ~ 2 0.7
 
 execute if score stage_main_thread AzrTimerStack matches 1135 run tellraw @a[tag=azrShowDialog] {"text":"？？？：","color":"red"}
 execute if score stage_main_thread AzrTimerStack matches 1135 run tellraw @a[tag=azrShowDialog] {"text":"“赞美吧！赞美沙利叶，赞美沙利叶的中庭花园！赞美汝，赞美吾，赞美此世，赞美天国！”","color":"white"}
-execute if score stage_main_thread AzrTimerStack matches 1135 as @a[tag=azrPlayer] at @s run playsound minecraft:entity.evoker.celebrate hostile @a[tag=azrPlayer] ~ ~ ~ 2 0.7
+execute if score stage_main_thread AzrTimerStack matches 1135 as @a[tag=azrShowDialog] at @s run playsound minecraft:entity.evoker.celebrate hostile @a[tag=azrShowDialog] ~ ~ ~ 2 0.7
 
-execute if score stage_main_thread AzrTimerStack matches 1125 as @a[tag=azrPlayer] at @s run playsound minecraft:psyborgcocoon master @s ~ ~ ~ 0.65
+execute if score stage_main_thread AzrTimerStack matches 1125 as @a[tag=azrShowDialog] at @s run playsound minecraft:psyborgcocoon master @s ~ ~ ~ 0.65
 
 execute if score stage_main_thread AzrTimerStack matches 1135 run bossbar add azr:progress_bar_special "Stage ???"
 execute if score stage_main_thread AzrTimerStack matches 1135 run bossbar set azr:progress_bar_special color blue
@@ -393,12 +393,12 @@ execute if score stage_main_thread AzrTimerStack matches 1395 as @a[tag=azrPlaye
 execute if score stage_main_thread AzrTimerStack matches 1395 as @a[tag=azrPlayer] at @s run particle smoke ~ ~1 ~ 0 0 0 0.1 100
 execute if score stage_main_thread AzrTimerStack matches 1394 run tellraw @a[tag=azrShowDialog] {"text":"权之殊能：","color":"red"}
 execute if score stage_main_thread AzrTimerStack matches 1394 run tellraw @a[tag=azrShowDialog] {"text":"“残存之命，苟延残喘的英勇之人？是否已经逝去，是否升入天堂？”","color":"white"}
-execute if score stage_main_thread AzrTimerStack matches 1394 as @a[tag=azrPlayer] at @s run playsound minecraft:entity.evoker.celebrate hostile @a[tag=azrPlayer] ~ ~ ~ 2 0.7
+execute if score stage_main_thread AzrTimerStack matches 1394 as @a[tag=azrShowDialog] at @s run playsound minecraft:entity.evoker.celebrate hostile @a[tag=azrShowDialog] ~ ~ ~ 2 0.7
 execute if score stage_main_thread AzrTimerStack matches 1393..1443 as @a[tag=azrPlayer] at @s unless block ~ ~-1 ~ air unless block ~ ~-1 ~ lava unless block ~ ~ ~ lava unless block ~ ~1 ~ lava run spawnpoint @s ~ ~ ~
 execute if score stage_main_thread AzrTimerStack matches 1394 as @a[tag=azrPlayer] at @s run tp @s ~ ~2.5 ~
 execute if score stage_main_thread AzrTimerStack matches 1394 as @e[tag=AzrielTempSpec1] at @s run tp @s ~ ~2.5 ~
-execute if score stage_main_thread AzrTimerStack matches 1394 as @a[tag=azrPlayer] at @s run playsound entity.evoker.cast_spell master @s ~ ~ ~ 100 0.8
-execute if score stage_main_thread AzrTimerStack matches 1395 as @a[tag=azrPlayer] at @s run playsound block.ancient_debris.break master @s ~ ~ ~ 100 0.8
+execute if score stage_main_thread AzrTimerStack matches 1394 as @a[tag=azrShowDialog] at @s run playsound entity.evoker.cast_spell master @s ~ ~ ~ 100 0.8
+execute if score stage_main_thread AzrTimerStack matches 1395 as @a[tag=azrShowDialog] at @s run playsound block.ancient_debris.break master @s ~ ~ ~ 100 0.8
 execute if score stage_main_thread AzrTimerStack matches 1395 as @a[tag=azrPlayer] at @s run tp @s ~ ~ ~-36
 execute if score stage_main_thread AzrTimerStack matches 1395 as @e[tag=AzrielTempSpec1] at @s run tp @s ~ ~ ~-36
 execute if score stage_main_thread AzrTimerStack matches 1395 as @a[tag=azrPlayer] at @s run particle warped_spore ~ ~1 ~ 0 0 0 1.0 1000
@@ -446,9 +446,9 @@ execute if score stage_main_thread AzrTimerStack matches 1428 run title @a[tag=a
 execute if score stage_main_thread AzrTimerStack matches 1432 run title @a[tag=azrShowDialog] actionbar [{"text":"冤魂失控","color":"yellow"},{"text":"▌","color":"red"},{"text":"▌","color":"red"},{"text":"▌","color":"red"},{"text":"▌","color":"red"},{"text":"▌","color":"dark_gray"}]
 execute if score stage_main_thread AzrTimerStack matches 1436 run title @a[tag=azrShowDialog] actionbar [{"text":"冤魂失控","color":"yellow"},{"text":"▌","color":"red"},{"text":"▌","color":"red"},{"text":"▌","color":"red"},{"text":"▌","color":"red"},{"text":"▌","color":"red"}]
 execute if score stage_main_thread AzrTimerStack matches 1436 run particle minecraft:soul -79922 54 -106 15 15 15 0.00 480
-execute if score stage_main_thread AzrTimerStack matches 1429..1433 as @a[tag=azrPlayer] at @s run playsound minecraft:ambient.warped_forest.additions master @s ~ ~ ~ 10 0.6
-execute if score stage_main_thread AzrTimerStack matches 1429..1433 as @a[tag=azrPlayer] at @s run playsound minecraft:ambient.warped_forest.loop master @s ~ ~ ~ 10 0.6
-execute if score stage_main_thread AzrTimerStack matches 1429..1433 as @a[tag=azrPlayer] at @s run playsound minecraft:ambient.warped_forest.mood master @s ~ ~ ~ 10 0.6
+execute if score stage_main_thread AzrTimerStack matches 1429..1433 as @a[tag=azrShowDialog] at @s run playsound minecraft:ambient.warped_forest.additions master @s ~ ~ ~ 10 0.6
+execute if score stage_main_thread AzrTimerStack matches 1429..1433 as @a[tag=azrShowDialog] at @s run playsound minecraft:ambient.warped_forest.loop master @s ~ ~ ~ 10 0.6
+execute if score stage_main_thread AzrTimerStack matches 1429..1433 as @a[tag=azrShowDialog] at @s run playsound minecraft:ambient.warped_forest.mood master @s ~ ~ ~ 10 0.6
 execute if score stage_main_thread AzrTimerStack matches 1436 as @e[tag=AzrielTempSpec1] at @s run summon vex ~ ~1.5 ~ {Tags:["AzrielMob","AzrielDecMob"],DeathLootTable:"skyblock:azriel_vex_tier2",Health:7.0f,CustomName:'"迷路的亡魂"',HandItems:[{count:1,id:"stone_sword",components:{custom_name:'{"text":"亡灵短剑","italic":false,"color":"white"}',attribute_modifiers:[{type:"max_health",amount:1.2d,operation:"add_multiplied_total",id:"i_84300_1_1_39",slot:"mainhand"},{type:"max_health",amount:1.2d,operation:"add_multiplied_total",id:"i_84300_1_1_40",slot:"offhand"},{type:"attack_damage",amount:5.5d,operation:"add_value",id:"i_84300_1_1_41",slot:"mainhand"},{type:"attack_damage",amount:5.5d,operation:"add_value",id:"i_84300_1_1_42",slot:"offhand"},{type:"attack_speed",amount:-2.4d,operation:"add_value",id:"i_84300_1_1_43",slot:"mainhand"},{type:"attack_speed",amount:-2.4d,operation:"add_value",id:"i_84300_1_1_44",slot:"offhand"}],enchantments:{unbreaking:2}}},{}],HandDropChances:[0.01f,0.01f],LifeTicks:600,attributes:[{id:"max_health",base:7.0d},{id:"attack_damage",base:2.0d},{id:"movement_speed",base:0.58d},{id:"follow_range",base:5.0d}]}
 
 execute if score stage_main_thread AzrTimerStack matches 1510 run title @a[tag=azrShowDialog] actionbar [{"text":"冤魂失控","color":"yellow"},{"text":"▌","color":"red"},{"text":"▌","color":"dark_gray"},{"text":"▌","color":"dark_gray"},{"text":"▌","color":"dark_gray"},{"text":"▌","color":"dark_gray"}]
@@ -457,9 +457,9 @@ execute if score stage_main_thread AzrTimerStack matches 1518 run title @a[tag=a
 execute if score stage_main_thread AzrTimerStack matches 1522 run title @a[tag=azrShowDialog] actionbar [{"text":"冤魂失控","color":"yellow"},{"text":"▌","color":"red"},{"text":"▌","color":"red"},{"text":"▌","color":"red"},{"text":"▌","color":"red"},{"text":"▌","color":"dark_gray"}]
 execute if score stage_main_thread AzrTimerStack matches 1526 run title @a[tag=azrShowDialog] actionbar [{"text":"冤魂失控","color":"yellow"},{"text":"▌","color":"red"},{"text":"▌","color":"red"},{"text":"▌","color":"red"},{"text":"▌","color":"red"},{"text":"▌","color":"red"}]
 execute if score stage_main_thread AzrTimerStack matches 1526 run particle minecraft:soul -79922 54 -106 15 15 15 0.00 480
-execute if score stage_main_thread AzrTimerStack matches 1519..1523 as @a[tag=azrPlayer] at @s run playsound minecraft:ambient.warped_forest.additions master @s ~ ~ ~ 10 0.6
-execute if score stage_main_thread AzrTimerStack matches 1519..1523 as @a[tag=azrPlayer] at @s run playsound minecraft:ambient.warped_forest.loop master @s ~ ~ ~ 10 0.6
-execute if score stage_main_thread AzrTimerStack matches 1519..1523 as @a[tag=azrPlayer] at @s run playsound minecraft:ambient.warped_forest.mood master @s ~ ~ ~ 10 0.6
+execute if score stage_main_thread AzrTimerStack matches 1519..1523 as @a[tag=azrShowDialog] at @s run playsound minecraft:ambient.warped_forest.additions master @s ~ ~ ~ 10 0.6
+execute if score stage_main_thread AzrTimerStack matches 1519..1523 as @a[tag=azrShowDialog] at @s run playsound minecraft:ambient.warped_forest.loop master @s ~ ~ ~ 10 0.6
+execute if score stage_main_thread AzrTimerStack matches 1519..1523 as @a[tag=azrShowDialog] at @s run playsound minecraft:ambient.warped_forest.mood master @s ~ ~ ~ 10 0.6
 execute if score stage_main_thread AzrTimerStack matches 1526 as @e[tag=AzrielTempSpec1] at @s run summon vex ~ ~1.5 ~ {Tags:["AzrielMob","AzrielDecMob"],DeathLootTable:"skyblock:azriel_vex_tier2",Health:7.0f,CustomName:'"迷路的亡魂"',HandItems:[{count:1,id:"stone_sword",components:{custom_name:'{"text":"亡灵短剑","italic":false,"color":"white"}',attribute_modifiers:[{type:"max_health",amount:1.2d,operation:"add_multiplied_total",id:"i_84300_1_1_39",slot:"mainhand"},{type:"max_health",amount:1.2d,operation:"add_multiplied_total",id:"i_84300_1_1_40",slot:"offhand"},{type:"attack_damage",amount:5.5d,operation:"add_value",id:"i_84300_1_1_41",slot:"mainhand"},{type:"attack_damage",amount:5.5d,operation:"add_value",id:"i_84300_1_1_42",slot:"offhand"},{type:"attack_speed",amount:-2.4d,operation:"add_value",id:"i_84300_1_1_43",slot:"mainhand"},{type:"attack_speed",amount:-2.4d,operation:"add_value",id:"i_84300_1_1_44",slot:"offhand"}],enchantments:{unbreaking:2}}},{}],HandDropChances:[0.01f,0.01f],LifeTicks:600,attributes:[{id:"max_health",base:7.0d},{id:"attack_damage",base:2.0d},{id:"movement_speed",base:0.58d},{id:"follow_range",base:5.0d}]}
 
 
@@ -537,8 +537,8 @@ execute if score stage_main_thread AzrTimerStack matches 1679 run fill -79728 49
 execute if score stage_main_thread AzrTimerStack matches 1690 run fill -79728 49 -163 -79728 41 -163 minecraft:netherite_block
 execute if score stage_main_thread AzrTimerStack matches 1690 run fill -79728 49 -162 -79728 41 -162 minecraft:netherite_block
 
-execute if score stage_main_thread AzrTimerStack matches 1668..1690 run playsound ambient.cave ambient @a[tag=azrPlayer] -79728 49 -162.0 7 1.2
-execute if score stage_main_thread AzrTimerStack matches 1668..1690 run playsound ambient.cave ambient @a[tag=azrPlayer] -79728 49 -162.0 7 1.0
+execute if score stage_main_thread AzrTimerStack matches 1668..1690 run playsound ambient.cave ambient @a[tag=azrShowDialog] -79728 49 -162.0 7 1.2
+execute if score stage_main_thread AzrTimerStack matches 1668..1690 run playsound ambient.cave ambient @a[tag=azrShowDialog] -79728 49 -162.0 7 1.0
 execute if score stage_main_thread AzrTimerStack matches 1668 run playsound minecraft:block.iron_door.open ambient @a -79728 49 -165 160 0.3
 execute if score stage_main_thread AzrTimerStack matches 1668 run playsound minecraft:block.iron_door.open ambient @a -79728 49 -160 160 0.3
 execute if score stage_main_thread AzrTimerStack matches 1679 run playsound minecraft:block.iron_door.open ambient @a -79728 49 -164 160 0.3
@@ -566,8 +566,8 @@ execute if score stage_main_thread AzrTimerStack matches 1691 as @a[tag=azrPlaye
 execute if score stage_main_thread AzrTimerStack matches 1691 as @a[tag=AzrielBossB] at @s run particle warped_spore ~ ~1 ~ 0 0 0 1.0 1000
 execute if score stage_main_thread AzrTimerStack matches 1691 as @a[tag=AzrielBossB] at @s run particle large_smoke ~ ~1 ~ 0 0 0 0.3 400
 
-execute if score stage_main_thread AzrTimerStack matches 1690 as @a[tag=azrPlayer] at @s run playsound entity.evoker.cast_spell master @s ~ ~ ~ 100 0.8
-execute if score stage_main_thread AzrTimerStack matches 1691 as @a[tag=azrPlayer] at @s run playsound block.ancient_debris.break master @s ~ ~ ~ 100 0.8
+execute if score stage_main_thread AzrTimerStack matches 1690 as @a[tag=azrShowDialog] at @s run playsound entity.evoker.cast_spell master @s ~ ~ ~ 100 0.8
+execute if score stage_main_thread AzrTimerStack matches 1691 as @a[tag=azrShowDialog] at @s run playsound block.ancient_debris.break master @s ~ ~ ~ 100 0.8
 
 execute if score stage_main_thread AzrTimerStack matches 1690..3045 positioned -79720 50 -163 run tp @a[tag=azrPlayer,distance=300..] ~ ~ ~
 execute if score stage_main_thread AzrTimerStack matches 1690..3045 at @n[tag=AzrielBossB] run tp @a[tag=azrPlayer,distance=10..] ~ ~ ~
@@ -594,15 +594,15 @@ execute if score stage_main_thread AzrTimerStack matches 2941 as @a[tag=azrPlaye
 
 execute if score stage_main_thread AzrTimerStack matches 2941 as @a[tag=azrPlayer] at @s run tellraw @s {"text":"权之残影（传音）：","color":"red"}
 execute if score stage_main_thread AzrTimerStack matches 2941 as @a[tag=azrPlayer] at @s run tellraw @s {"text":"“听得到声音吗？这已经是吾第七次尝试传音了！”","color":"white"}
-execute if score stage_main_thread AzrTimerStack matches 2941 as @a[tag=azrPlayer] at @s run playsound minecraft:entity.illusioner.ambient master @s ~ ~ ~ 100 0.6
+execute if score stage_main_thread AzrTimerStack matches 2941 as @a[tag=azrShowDialog] at @s run playsound minecraft:entity.illusioner.ambient master @s ~ ~ ~ 100 0.6
 
 execute if score stage_main_thread AzrTimerStack matches 2960 as @a[tag=azrPlayer] at @s run tellraw @s {"text":"权之残影（传音）：","color":"red"}
 execute if score stage_main_thread AzrTimerStack matches 2960 as @a[tag=azrPlayer] at @s run tellraw @s {"text":"“什、听得到吗？！如果听得到的话，快点上来！那底下就是地脉的缺口！”","color":"white"}
-execute if score stage_main_thread AzrTimerStack matches 2960 as @a[tag=azrPlayer] at @s run playsound minecraft:entity.illusioner.ambient master @s ~ ~ ~ 100 0.6
+execute if score stage_main_thread AzrTimerStack matches 2960 as @a[tag=azrShowDialog] at @s run playsound minecraft:entity.illusioner.ambient master @s ~ ~ ~ 100 0.6
 
 execute if score stage_main_thread AzrTimerStack matches 2995 as @a[tag=azrPlayer] at @s run tellraw @s {"text":"权之残影（传音）：","color":"red"}
 execute if score stage_main_thread AzrTimerStack matches 2995 as @a[tag=azrPlayer] at @s run tellraw @s {"text":"“此乃吾的严重失算，权之殊能才是这次入侵的引路者，他反叛了这座花园……”","color":"white"}
-execute if score stage_main_thread AzrTimerStack matches 2995 as @a[tag=azrPlayer] at @s run playsound minecraft:entity.illusioner.ambient master @s ~ ~ ~ 100 0.6
+execute if score stage_main_thread AzrTimerStack matches 2995 as @a[tag=azrShowDialog] at @s run playsound minecraft:entity.illusioner.ambient master @s ~ ~ ~ 100 0.6
 
 execute if score stage_main_thread AzrTimerStack matches 3018 as @a[tag=azrPlayer] at @s run tellraw @s {"text":"权之残影（传音）：","color":"red"}
 execute if score stage_main_thread AzrTimerStack matches 3018 if score playerCount Azr_system matches 1 as @a[tag=azrPlayer] at @s run tellraw @s {"text":"“升降梯区域的结界减弱了……？人类！吾将立即启动升降梯。汝一定要抓稳了！”","color":"white"}
@@ -613,23 +613,23 @@ execute if score stage_main_thread AzrTimerStack matches 3018 if score playerCou
 execute if score stage_main_thread AzrTimerStack matches 3018 if score playerCount Azr_system matches 6 as @a[tag=azrPlayer] at @s run tellraw @s {"text":"“升降梯区域的结界减弱了……？人类！吾将立即启动升降梯。汝六位一定要抓稳了！”","color":"white"}
 execute if score stage_main_thread AzrTimerStack matches 3018 if score playerCount Azr_system matches 7 as @a[tag=azrPlayer] at @s run tellraw @s {"text":"“升降梯区域的结界减弱了……？人类！吾将立即启动升降梯。汝七位一定要抓稳了！”","color":"white"}
 execute if score stage_main_thread AzrTimerStack matches 3018 if score playerCount Azr_system matches 8.. as @a[tag=azrPlayer] at @s run tellraw @s {"text":"“升降梯区域的结界减弱了……？人类！吾将立即启动升降梯。汝等一定要抓稳了！”","color":"white"}
-execute if score stage_main_thread AzrTimerStack matches 3018 as @a[tag=azrPlayer] at @s run playsound minecraft:entity.illusioner.ambient master @s ~ ~ ~ 100 0.6
+execute if score stage_main_thread AzrTimerStack matches 3018 as @a[tag=azrShowDialog] at @s run playsound minecraft:entity.illusioner.ambient master @s ~ ~ ~ 100 0.6
 
-execute if score stage_main_thread AzrTimerStack matches 3026..3038 run playsound ambient.cave ambient @a[tag=azrPlayer] -79690.0 130 -162.0 3 0.9
-execute if score stage_main_thread AzrTimerStack matches 3026..3038 run playsound ambient.cave ambient @a[tag=azrPlayer] -79690.0 130 -162.0 5 1.0
-execute if score stage_main_thread AzrTimerStack matches 3026..3038 run playsound ambient.cave ambient @a[tag=azrPlayer] -79690.0 130 -162.0 7 0.8
+execute if score stage_main_thread AzrTimerStack matches 3026..3038 run playsound ambient.cave ambient @a[tag=azrShowDialog] -79690.0 130 -162.0 3 0.9
+execute if score stage_main_thread AzrTimerStack matches 3026..3038 run playsound ambient.cave ambient @a[tag=azrShowDialog] -79690.0 130 -162.0 5 1.0
+execute if score stage_main_thread AzrTimerStack matches 3026..3038 run playsound ambient.cave ambient @a[tag=azrShowDialog] -79690.0 130 -162.0 7 0.8
 
 execute if score stage_main_thread AzrTimerStack matches 3035 run tellraw @a[tag=azrShowDialog] {"text":"？？？：","color":"red"}
 execute if score stage_main_thread AzrTimerStack matches 3035 run tellraw @a[tag=azrShowDialog] {"text":"“此乃汝等终章，也将是此园的灭亡之刻。”","color":"white"}
-execute if score stage_main_thread AzrTimerStack matches 3035 as @a[tag=azrPlayer] at @s run playsound minecraft:entity.evoker.celebrate hostile @a[tag=azrPlayer] ~ ~10 ~ 2 0.7
+execute if score stage_main_thread AzrTimerStack matches 3035 as @a[tag=azrShowDialog] at @s run playsound minecraft:entity.evoker.celebrate hostile @a[tag=azrShowDialog] ~ ~10 ~ 2 0.7
 
 execute if score stage_main_thread AzrTimerStack matches 3038 run tellraw @a[tag=azrShowDialog] {"text":"？？？：","color":"red"}
 execute if score stage_main_thread AzrTimerStack matches 3038 run tellraw @a[tag=azrShowDialog] {"text":"“此乃汝等终章，也将是此园的灭亡之刻。”","color":"white"}
-execute if score stage_main_thread AzrTimerStack matches 3038 as @a[tag=azrPlayer] at @s run playsound minecraft:entity.evoker.celebrate hostile @a[tag=azrPlayer] ~ ~10 ~ 2 0.7
+execute if score stage_main_thread AzrTimerStack matches 3038 as @a[tag=azrShowDialog] at @s run playsound minecraft:entity.evoker.celebrate hostile @a[tag=azrShowDialog] ~ ~10 ~ 2 0.7
 
 execute if score stage_main_thread AzrTimerStack matches 3040..3050 run tellraw @a[tag=azrShowDialog] {"text":"？？？：","color":"red"}
 execute if score stage_main_thread AzrTimerStack matches 3040..3050 run tellraw @a[tag=azrShowDialog] {"text":"“此乃汝等终章，也将是此园的灭亡之刻。”","color":"white"}
-execute if score stage_main_thread AzrTimerStack matches 3040..3050 as @a[tag=azrPlayer] at @s run playsound minecraft:entity.evoker.celebrate hostile @a[tag=azrPlayer] ~ ~10 ~ 2 0.7
+execute if score stage_main_thread AzrTimerStack matches 3040..3050 as @a[tag=azrShowDialog] at @s run playsound minecraft:entity.evoker.celebrate hostile @a[tag=azrShowDialog] ~ ~10 ~ 2 0.7
 
 execute if score stage_main_thread AzrTimerStack matches 3046..3090 as @a[tag=azrPlayer] at @s run spawnpoint @s -79754 59 -212
 
@@ -641,9 +641,9 @@ execute if score stage_main_thread AzrTimerStack matches 3038 as @a[tag=azrPlaye
 execute if score stage_main_thread AzrTimerStack matches 3038 as @a[tag=azrPlayer] at @s run tp @s ~ ~-5.1 ~
 execute if score stage_main_thread AzrTimerStack matches 3039 as @a[tag=azrPlayer] at @s run tp @s ~ ~-0.1 ~
 
-execute if score stage_main_thread AzrTimerStack matches 3038 as @a[tag=azrPlayer] at @s run playsound entity.generic.explode master @s ~ ~ ~ 5 0.8
-execute if score stage_main_thread AzrTimerStack matches 3038 as @a[tag=azrPlayer] at @s run playsound entity.generic.explode master @s ~ ~ ~ 5 0.9
-execute if score stage_main_thread AzrTimerStack matches 3038 as @a[tag=azrPlayer] at @s run playsound entity.generic.explode master @s ~ ~ ~ 5 1.0
+execute if score stage_main_thread AzrTimerStack matches 3038 as @a[tag=azrShowDialog] at @s run playsound entity.generic.explode master @s ~ ~ ~ 5 0.8
+execute if score stage_main_thread AzrTimerStack matches 3038 as @a[tag=azrShowDialog] at @s run playsound entity.generic.explode master @s ~ ~ ~ 5 0.9
+execute if score stage_main_thread AzrTimerStack matches 3038 as @a[tag=azrShowDialog] at @s run playsound entity.generic.explode master @s ~ ~ ~ 5 1.0
 execute if score stage_main_thread AzrTimerStack matches 3038 run particle large_smoke -79690.0 99 -162.0 1 1 1 0.18 300
 execute if score stage_main_thread AzrTimerStack matches 3038 run particle large_smoke -79690.0 99 -162.0 1 1 1 0.68 100
 execute if score stage_main_thread AzrTimerStack matches 3038 run particle large_smoke -79690.0 99 -162.0 1 1 1 1.18 50
@@ -652,26 +652,26 @@ execute if score stage_main_thread AzrTimerStack matches 3038 run particle large
 execute if score stage_main_thread AzrTimerStack matches 3045 as @a[tag=azrPlayer] at @s run tellraw @s {"text":"权之残影（传音）：","color":"red"}
 execute if score stage_main_thread AzrTimerStack matches 3045 if score playerCount Azr_system matches 1 as @a[tag=azrPlayer] at @s run tellraw @s {"text":"“那是……什么声音？汝是否仍旧安好？……见鬼了，升降梯怎么、？！”","color":"white"}
 execute if score stage_main_thread AzrTimerStack matches 3045 if score playerCount Azr_system matches 2.. as @a[tag=azrPlayer] at @s run tellraw @s {"text":"“那是……什么声音？汝等是否仍旧安好？……见鬼了，升降梯怎么、？！”","color":"white"}
-execute if score stage_main_thread AzrTimerStack matches 3045 as @a[tag=azrPlayer] at @s run playsound minecraft:entity.illusioner.ambient master @s ~ ~ ~ 1 0.6
+execute if score stage_main_thread AzrTimerStack matches 3045 as @a[tag=azrShowDialog] at @s run playsound minecraft:entity.illusioner.ambient master @s ~ ~ ~ 1 0.6
 
 execute if score stage_main_thread AzrTimerStack matches 3045 run tag @a[tag=azrPlayer] add AZR_fakeDeath
 execute if score stage_main_thread AzrTimerStack matches 3045.. as @a[tag=azrPlayer,tag=AZR_fakeDeath] at @s positioned ~ -46 ~ if entity @s[dy=0] run damage @s 1000000 fall
 execute if score stage_main_thread AzrTimerStack matches 3045 run effect clear @a[tag=azrPlayer] minecraft:slow_falling
 execute if score stage_main_thread AzrTimerStack matches 3045 as @a[tag=azrPlayer] run spawnpoint @s -79753 59 -210
 
-execute if score stage_main_thread AzrTimerStack matches 3037..3042 as @a[tag=azrPlayer] at @s run playsound minecraft:ambient.crimson_forest.mood ambient @s ~ ~ ~ 0.7 1.1
-execute if score stage_main_thread AzrTimerStack matches 3039..3044 as @a[tag=azrPlayer] at @s run playsound minecraft:ambient.crimson_forest.mood ambient @s ~ ~ ~ 0.8 1.1
-execute if score stage_main_thread AzrTimerStack matches 3041..3046 as @a[tag=azrPlayer] at @s run playsound minecraft:ambient.crimson_forest.mood ambient @s ~ ~ ~ 1.0 1.2
-execute if score stage_main_thread AzrTimerStack matches 3043..3048 as @a[tag=azrPlayer] at @s run playsound minecraft:ambient.crimson_forest.mood ambient @s ~ ~ ~ 1.9 1.3
-execute if score stage_main_thread AzrTimerStack matches 3045..3049 as @a[tag=azrPlayer] at @s run playsound minecraft:ambient.crimson_forest.mood ambient @s ~ ~ ~ 20 1.4
-execute if score stage_main_thread AzrTimerStack matches 3047..3050 as @a[tag=azrPlayer] at @s run playsound minecraft:ambient.crimson_forest.mood ambient @s ~ ~ ~ 30 1.5
+execute if score stage_main_thread AzrTimerStack matches 3037..3042 as @a[tag=azrShowDialog] at @s run playsound minecraft:ambient.crimson_forest.mood ambient @s ~ ~ ~ 0.7 1.1
+execute if score stage_main_thread AzrTimerStack matches 3039..3044 as @a[tag=azrShowDialog] at @s run playsound minecraft:ambient.crimson_forest.mood ambient @s ~ ~ ~ 0.8 1.1
+execute if score stage_main_thread AzrTimerStack matches 3041..3046 as @a[tag=azrShowDialog] at @s run playsound minecraft:ambient.crimson_forest.mood ambient @s ~ ~ ~ 1.0 1.2
+execute if score stage_main_thread AzrTimerStack matches 3043..3048 as @a[tag=azrShowDialog] at @s run playsound minecraft:ambient.crimson_forest.mood ambient @s ~ ~ ~ 1.9 1.3
+execute if score stage_main_thread AzrTimerStack matches 3045..3049 as @a[tag=azrShowDialog] at @s run playsound minecraft:ambient.crimson_forest.mood ambient @s ~ ~ ~ 20 1.4
+execute if score stage_main_thread AzrTimerStack matches 3047..3050 as @a[tag=azrShowDialog] at @s run playsound minecraft:ambient.crimson_forest.mood ambient @s ~ ~ ~ 30 1.5
 
-execute if score stage_main_thread AzrTimerStack matches 3037..3042 as @a[tag=azrPlayer] at @s run playsound minecraft:ambient.nether_wastes.mood ambient @s ~ ~ ~ 0.7 1.1
-execute if score stage_main_thread AzrTimerStack matches 3039..3044 as @a[tag=azrPlayer] at @s run playsound minecraft:ambient.nether_wastes.mood ambient @s ~ ~ ~ 0.8 1.1
-execute if score stage_main_thread AzrTimerStack matches 3041..3046 as @a[tag=azrPlayer] at @s run playsound minecraft:ambient.nether_wastes.mood ambient @s ~ ~ ~ 1.0 1.2
-execute if score stage_main_thread AzrTimerStack matches 3043..3048 as @a[tag=azrPlayer] at @s run playsound minecraft:ambient.nether_wastes.mood ambient @s ~ ~ ~ 1.9 1.3
-execute if score stage_main_thread AzrTimerStack matches 3045..3049 as @a[tag=azrPlayer] at @s run playsound minecraft:ambient.nether_wastes.mood ambient @s ~ ~ ~ 20 1.4
-execute if score stage_main_thread AzrTimerStack matches 3047..3050 as @a[tag=azrPlayer] at @s run playsound minecraft:ambient.nether_wastes.mood ambient @s ~ ~ ~ 30 1.5
+execute if score stage_main_thread AzrTimerStack matches 3037..3042 as @a[tag=azrShowDialog] at @s run playsound minecraft:ambient.nether_wastes.mood ambient @s ~ ~ ~ 0.7 1.1
+execute if score stage_main_thread AzrTimerStack matches 3039..3044 as @a[tag=azrShowDialog] at @s run playsound minecraft:ambient.nether_wastes.mood ambient @s ~ ~ ~ 0.8 1.1
+execute if score stage_main_thread AzrTimerStack matches 3041..3046 as @a[tag=azrShowDialog] at @s run playsound minecraft:ambient.nether_wastes.mood ambient @s ~ ~ ~ 1.0 1.2
+execute if score stage_main_thread AzrTimerStack matches 3043..3048 as @a[tag=azrShowDialog] at @s run playsound minecraft:ambient.nether_wastes.mood ambient @s ~ ~ ~ 1.9 1.3
+execute if score stage_main_thread AzrTimerStack matches 3045..3049 as @a[tag=azrShowDialog] at @s run playsound minecraft:ambient.nether_wastes.mood ambient @s ~ ~ ~ 20 1.4
+execute if score stage_main_thread AzrTimerStack matches 3047..3050 as @a[tag=azrShowDialog] at @s run playsound minecraft:ambient.nether_wastes.mood ambient @s ~ ~ ~ 30 1.5
 execute if score stage_main_thread AzrTimerStack matches 3051..3053 run scoreboard players set stage_main_thread AzrTimerStack 3051
 
 #TODO: 这里是和跳关相关的一些代码

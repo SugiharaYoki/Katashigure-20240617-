@@ -10,11 +10,11 @@ execute if score stage_main_thread AzrTimerStack matches 1..143 store result bos
 execute if score stage_main_thread AzrTimerStack matches 143 run bossbar remove azr:progress_bar_normal
 #刷怪时序
 #第一波
-execute if score stage_main_thread AzrTimerStack matches 23 run playsound block.bell.use ambient @a[tag=azrPlayer] -79887 50 164 100 0.7
-execute if score stage_main_thread AzrTimerStack matches 25 run playsound block.bell.use ambient @a[tag=azrPlayer] -79887 50 164 100 0.7
-execute if score stage_main_thread AzrTimerStack matches 27 run playsound block.bell.use ambient @a[tag=azrPlayer] -79887 50 164 100 0.7
-execute if score stage_main_thread AzrTimerStack matches 29 run playsound block.bell.use ambient @a[tag=azrPlayer] -79887 50 164 100 0.7
-execute if score stage_main_thread AzrTimerStack matches 31 run playsound block.bell.use ambient @a[tag=azrPlayer] -79887 50 164 100 0.7
+execute if score stage_main_thread AzrTimerStack matches 23 run playsound block.bell.use ambient @a[tag=azrShowDialog] -79887 50 164 100 0.7
+execute if score stage_main_thread AzrTimerStack matches 25 run playsound block.bell.use ambient @a[tag=azrShowDialog] -79887 50 164 100 0.7
+execute if score stage_main_thread AzrTimerStack matches 27 run playsound block.bell.use ambient @a[tag=azrShowDialog] -79887 50 164 100 0.7
+execute if score stage_main_thread AzrTimerStack matches 29 run playsound block.bell.use ambient @a[tag=azrShowDialog] -79887 50 164 100 0.7
+execute if score stage_main_thread AzrTimerStack matches 31 run playsound block.bell.use ambient @a[tag=azrShowDialog] -79887 50 164 100 0.7
 execute if score stage_main_thread AzrTimerStack matches 23 run tellraw @a[tag=azrShowDialog] {"text":"？？？：","color":"aqua"}
 execute if score stage_main_thread AzrTimerStack matches 23 run tellraw @a[tag=azrShowDialog] {"text":"“挑战者到达第一关口，出兵迎战。”","color":"white"}
 execute if score stage_main_thread AzrTimerStack matches 123 run tellraw @a[tag=azrShowDialog] {"text":"第一关口守备军：","color":"aqua"}
@@ -103,9 +103,9 @@ execute if score stage_main_thread AzrTimerStack matches 132 positioned -79935 3
 #回秒
 execute if score stage_main_thread AzrTimerStack matches 140..143 if entity @e[tag=AzrielMob,tag=!AzrielDecMob] run scoreboard players set stage_main_thread AzrTimerStack 140
 #结束
-execute if score stage_main_thread AzrTimerStack matches 143 run playsound ambient.crimson_forest.loop ambient @a[tag=azrPlayer] -78000 100 0 1000
-execute if score stage_main_thread AzrTimerStack matches 143 run playsound ambient.crimson_forest.mood ambient @a[tag=azrPlayer] -78000 100 0 1000
-execute if score stage_main_thread AzrTimerStack matches 143 run playsound ambient.crimson_forest.additions ambient @a[tag=azrPlayer] -78000 100 0 1000
+execute if score stage_main_thread AzrTimerStack matches 143 run playsound ambient.crimson_forest.loop ambient @a[tag=azrShowDialog] -78000 100 0 1000
+execute if score stage_main_thread AzrTimerStack matches 143 run playsound ambient.crimson_forest.mood ambient @a[tag=azrShowDialog] -78000 100 0 1000
+execute if score stage_main_thread AzrTimerStack matches 143 run playsound ambient.crimson_forest.additions ambient @a[tag=azrShowDialog] -78000 100 0 1000
 execute if score stage_main_thread AzrTimerStack matches 143 run fill -79931 38 22 -79931 40 22 air destroy
 execute if score stage_main_thread AzrTimerStack matches 143 run clone -79927 38 0 -79927 38 0 -79934 38 18 replace move
 execute if score stage_main_thread AzrTimerStack matches 143 run particle minecraft:end_rod -79927 39 0 0.6 0.6 0.6 0.0 13

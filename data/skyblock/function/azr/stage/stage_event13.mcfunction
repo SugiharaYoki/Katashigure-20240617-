@@ -78,41 +78,41 @@ execute if score stage_main_thread AzrTimerStack matches 2 run setblock -79745 4
 execute if score stage_main_thread AzrTimerStack matches 2 run item replace block -79745 43 -389 container.12 with sugar 3
 execute if score stage_main_thread AzrTimerStack matches 2 run item replace block -79745 43 -389 container.14 with honeycomb 2
 
-execute if score stage_main_thread AzrTimerStack matches 11..9999 as @a[tag=azrPlayer,tag=!AzrielEvent3761S] at @s as @e[tag=AzrielEvent3761,distance=0..3.5] at @s run playsound entity.piglin.ambient master @a[tag=azrPlayer,distance=0..3.5] ~ ~ ~ 2 0.9
+execute if score stage_main_thread AzrTimerStack matches 11..9999 as @a[tag=azrShowDialog,tag=!AzrielEvent3761S] at @s as @e[tag=AzrielEvent3761,distance=0..3.5] at @s run playsound entity.piglin.ambient master @a[tag=azrShowDialog,distance=0..3.5] ~ ~ ~ 2 0.9
 execute if score stage_main_thread AzrTimerStack matches 11..9999 as @a[tag=azrPlayer,tag=!AzrielEvent3761S] at @s if entity @e[tag=AzrielEvent3761,distance=0..3.5] run tellraw @s {"text":"猪灵居民：","color":"aqua"}
 execute if score stage_main_thread AzrTimerStack matches 11..9999 as @a[tag=azrPlayer,tag=!AzrielEvent3761S] at @s if entity @e[tag=AzrielEvent3761,distance=0..3.5] run tellraw @s {"text":"“人类……是迷路的亡魂吗？但又拥有肉身。真是奇怪啊。”","color":"white"}
 execute if score stage_main_thread AzrTimerStack matches 11..9999 as @a[tag=azrPlayer,tag=!AzrielEvent3761S] at @s if entity @e[tag=AzrielEvent3761,distance=0..3.5] run tag @s add AzrielEvent3761S
-execute if score stage_main_thread AzrTimerStack matches 10000.. as @a[tag=azrPlayer,tag=!AzrielEvent3761S] at @s as @e[tag=AzrielEvent3761,distance=0..3.5] at @s run playsound entity.piglin.ambient master @a[tag=azrPlayer,distance=0..3.5] ~ ~ ~ 2 0.9
+execute if score stage_main_thread AzrTimerStack matches 10000.. as @a[tag=azrShowDialog,tag=!AzrielEvent3761S] at @s as @e[tag=AzrielEvent3761,distance=0..3.5] at @s run playsound entity.piglin.ambient master @a[tag=azrShowDialog,distance=0..3.5] ~ ~ ~ 2 0.9
 execute if score stage_main_thread AzrTimerStack matches 10000.. as @a[tag=azrPlayer,tag=!AzrielEvent3761S] at @s if entity @e[tag=AzrielEvent3761,distance=0..3.5] run tellraw @s {"text":"猪灵居民：","color":"aqua"}
 execute if score stage_main_thread AzrTimerStack matches 10000.. as @a[tag=azrPlayer,tag=!AzrielEvent3761S] at @s if entity @e[tag=AzrielEvent3761,distance=0..3.5] run tellraw @s {"text":"“迷路的亡魂啊，祝愿你能够寻找到真实的正义。神庭固然傲慢，可路西法的信念也必定站不住脚。”","color":"white"}
 execute if score stage_main_thread AzrTimerStack matches 10000.. as @a[tag=azrPlayer,tag=!AzrielEvent3761S] at @s if entity @e[tag=AzrielEvent3761,distance=0..3.5] run tag @s add AzrielEvent3761S
 
-execute if score stage_main_thread AzrTimerStack matches 11.. as @a[tag=azrPlayer,tag=!AzrielEvent3762S] at @s as @e[tag=AzrielEvent3762,distance=0..3.5] at @s run playsound entity.piglin.admiring_item master @a[tag=azrPlayer,distance=0..3.5] ~ ~ ~ 2 0.9
+execute if score stage_main_thread AzrTimerStack matches 11.. as @a[tag=azrShowDialog,tag=!AzrielEvent3762S] at @s as @e[tag=AzrielEvent3762,distance=0..3.5] at @s run playsound entity.piglin.admiring_item master @a[tag=azrShowDialog,distance=0..3.5] ~ ~ ~ 2 0.9
 execute if score stage_main_thread AzrTimerStack matches 11.. as @a[tag=azrPlayer,tag=!AzrielEvent3762S] at @s if entity @e[tag=AzrielEvent3762,distance=0..3.5] run tellraw @s {"text":"猪灵居民：","color":"aqua"}
 execute if score stage_main_thread AzrTimerStack matches 11.. as @a[tag=azrPlayer,tag=!AzrielEvent3762S] at @s if entity @e[tag=AzrielEvent3762,distance=0..3.5] run tellraw @s {"text":"（并没有理睬你）","color":"gray"}
 execute if score stage_main_thread AzrTimerStack matches 11.. as @a[tag=azrPlayer,tag=!AzrielEvent3762S] at @s if entity @e[tag=AzrielEvent3762,distance=0..3.5] run tag @s add AzrielEvent3762S
 
-execute if score stage_main_thread AzrTimerStack matches 11.. as @a[tag=azrPlayer,tag=!AzrielEvent3763S] at @s as @e[tag=AzrielEvent3763,distance=0..3.5] at @s run playsound entity.piglin.ambient master @a[tag=azrPlayer,distance=0..3.5] ~ ~ ~ 2 0.9
+execute if score stage_main_thread AzrTimerStack matches 11.. as @a[tag=azrShowDialog,tag=!AzrielEvent3763S] at @s as @e[tag=AzrielEvent3763,distance=0..3.5] at @s run playsound entity.piglin.ambient master @a[tag=azrShowDialog,distance=0..3.5] ~ ~ ~ 2 0.9
 execute if score stage_main_thread AzrTimerStack matches 11.. as @a[tag=azrPlayer,tag=!AzrielEvent3763S] at @s if entity @e[tag=AzrielEvent3763,distance=0..3.5] run tellraw @s {"text":"猪灵居民：","color":"aqua"}
 execute if score stage_main_thread AzrTimerStack matches 11.. as @a[tag=azrPlayer,tag=!AzrielEvent3763S] at @s if entity @e[tag=AzrielEvent3763,distance=0..3.5] run tellraw @s {"text":"“堕落的佛晓之星将会用祂的污秽荣光染黑地上世界与天庭。”","color":"white"}
 execute if score stage_main_thread AzrTimerStack matches 11.. as @a[tag=azrPlayer,tag=!AzrielEvent3763S] at @s if entity @e[tag=AzrielEvent3763,distance=0..3.5] run tag @s add AzrielEvent3763S
 
-execute if score stage_main_thread AzrTimerStack matches 11..9999 as @a[tag=azrPlayer,tag=!AzrielEvent3764S] at @s as @e[tag=AzrielEvent3764,distance=0..3.5] at @s run playsound entity.piglin.jealous master @a[tag=azrPlayer,distance=0..3.5] ~ ~ ~ 2 0.9
+execute if score stage_main_thread AzrTimerStack matches 11..9999 as @a[tag=azrShowDialog,tag=!AzrielEvent3764S] at @s as @e[tag=AzrielEvent3764,distance=0..3.5] at @s run playsound entity.piglin.jealous master @a[tag=azrShowDialog,distance=0..3.5] ~ ~ ~ 2 0.9
 execute if score stage_main_thread AzrTimerStack matches 11..9999 as @a[tag=azrPlayer,tag=!AzrielEvent3764S] at @s if entity @e[tag=AzrielEvent3764,distance=0..3.5] run tellraw @s {"text":"猪灵居民：","color":"aqua"}
 execute if score stage_main_thread AzrTimerStack matches 11..9999 as @a[tag=azrPlayer,tag=!AzrielEvent3764S] at @s if entity @e[tag=AzrielEvent3764,distance=0..3.5] run tellraw @s {"text":"“你的身上……居然身无分文？什么、绿宝石在这里是毫无价值的！老子才不需要这种魔法水晶！”","color":"white"}
 execute if score stage_main_thread AzrTimerStack matches 11..9999 as @a[tag=azrPlayer,tag=!AzrielEvent3764S] at @s if entity @e[tag=AzrielEvent3764,distance=0..3.5] run tag @s add AzrielEvent3764S
-execute if score stage_main_thread AzrTimerStack matches 10000.. as @a[tag=azrPlayer,tag=!AzrielEvent3764S] at @s as @e[tag=AzrielEvent3764,distance=0..3.5] at @s run playsound entity.piglin.jealous master @a[tag=azrPlayer,distance=0..3.5] ~ ~ ~ 2 0.9
+execute if score stage_main_thread AzrTimerStack matches 10000.. as @a[tag=azrShowDialog,tag=!AzrielEvent3764S] at @s as @e[tag=AzrielEvent3764,distance=0..3.5] at @s run playsound entity.piglin.jealous master @a[tag=azrShowDialog,distance=0..3.5] ~ ~ ~ 2 0.9
 execute if score stage_main_thread AzrTimerStack matches 10000.. as @a[tag=azrPlayer,tag=!AzrielEvent3764S] at @s if entity @e[tag=AzrielEvent3764,distance=0..3.5] run tellraw @s {"text":"猪灵居民：","color":"aqua"}
 execute if score stage_main_thread AzrTimerStack matches 10000.. as @a[tag=azrPlayer,tag=!AzrielEvent3764S] at @s if entity @e[tag=AzrielEvent3764,distance=0..3.5] run tellraw @s {"text":"“你居然变得那么有钱了？真是遗憾啊，我身上可是什么能卖给你的都没有。”","color":"white"}
 execute if score stage_main_thread AzrTimerStack matches 10000.. as @a[tag=azrPlayer,tag=!AzrielEvent3764S] at @s if entity @e[tag=AzrielEvent3764,distance=0..3.5] run tag @s add AzrielEvent3764S
 
-execute if score stage_main_thread AzrTimerStack matches 11.. as @a[tag=azrPlayer,tag=!AzrielEvent3765S] at @s as @e[tag=AzrielEvent3765,distance=0..3.5] at @s run playsound entity.piglin.ambient master @a[tag=azrPlayer,distance=0..3.5] ~ ~ ~ 2 0.9
+execute if score stage_main_thread AzrTimerStack matches 11.. as @a[tag=azrShowDialog,tag=!AzrielEvent3765S] at @s as @e[tag=AzrielEvent3765,distance=0..3.5] at @s run playsound entity.piglin.ambient master @a[tag=azrShowDialog,distance=0..3.5] ~ ~ ~ 2 0.9
 execute if score stage_main_thread AzrTimerStack matches 11.. as @a[tag=azrPlayer,tag=!AzrielEvent3765S] at @s if entity @e[tag=AzrielEvent3765,distance=0..3.5] run tellraw @s {"text":"猪灵剑士：","color":"aqua"}
 execute if score stage_main_thread AzrTimerStack matches 11.. as @a[tag=azrPlayer,tag=!AzrielEvent3765S] at @s if entity @e[tag=AzrielEvent3765,distance=0..3.5] run tellraw @s {"text":"“路西法的审判军已经包围贝利尔的王城。距离推翻地狱的荒唐政权已近在眉睫。”","color":"white"}
 execute if score stage_main_thread AzrTimerStack matches 11.. as @a[tag=azrPlayer,tag=!AzrielEvent3765S] at @s if entity @e[tag=AzrielEvent3765,distance=0..3.5] run tag @s add AzrielEvent3765S
 
 execute if score stage_main_thread AzrTimerStack matches 50..1000 run function skyblock:azr/tool_rng
-execute if score stage_main_thread AzrTimerStack matches 50..1000 if score #rng15 Azr_system matches 1 if score #rng4 Azr_system matches 3 as @r[tag=azrPlayer] at @s run playsound event.raid.horn ambient @a[tag=azrPlayer] ~50 ~ ~-50 480 0.9
+execute if score stage_main_thread AzrTimerStack matches 50..1000 if score #rng15 Azr_system matches 1 if score #rng4 Azr_system matches 3 as @r[tag=azrShowDialog] at @s run playsound event.raid.horn ambient @a[tag=azrShowDialog] ~50 ~ ~-50 480 0.9
 
 execute if score stage_main_thread AzrTimerStack matches 40..200 run scoreboard players set stage_main_thread AzrTimerStack 55
 # execute if score stage_main_thread AzrTimerStack matches 40..200 if entity @a[tag=azrPlayer,x=-79772,y=39,z=-357,distance=0..4.5] run scoreboard players set stage_main_thread AzrTimerStack 303
@@ -120,13 +120,13 @@ execute if score stage_main_thread AzrTimerStack matches 40..200 run scoreboard 
 execute if score stage_main_thread AzrTimerStack matches 305 run tellraw @a[tag=azrShowDialog] {"text":"总感觉有些鬼鬼祟祟的声音：","color":"aqua"}
 execute if score stage_main_thread AzrTimerStack matches 305 if score playerCount Azr_system matches 1 run tellraw @a[tag=azrShowDialog] {"text":"“人类的气息……？”","color":"white"}
 execute if score stage_main_thread AzrTimerStack matches 305 if score playerCount Azr_system matches 2.. run tellraw @a[tag=azrShowDialog] {"text":"“人类的气息……？而且不止一个人……”","color":"white"}
-execute if score stage_main_thread AzrTimerStack matches 305 as @n[tag=AzrielBossFA] at @s run playsound minecraft:entity.pillager.ambient master @a[tag=azrPlayer] ~ ~ ~ 3 0.8
+execute if score stage_main_thread AzrTimerStack matches 305 as @n[tag=AzrielBossFA] at @s run playsound minecraft:entity.pillager.ambient master @a[tag=azrShowDialog] ~ ~ ~ 3 0.8
 
 
 execute if score stage_main_thread AzrTimerStack matches 315 run tellraw @a[tag=azrShowDialog] {"text":"总感觉有些鬼鬼祟祟的声音：","color":"aqua"}
 execute if score stage_main_thread AzrTimerStack matches 315 if score playerCount Azr_system matches 1 run tellraw @a[tag=azrShowDialog] [{"text":"“难道说……","color":"white"},{"selector":"@r[tag=azrPlayer]","color":"white"},{"text":"？是你吗？”","color":"white"}]
 execute if score stage_main_thread AzrTimerStack matches 315 if score playerCount Azr_system matches 2.. run tellraw @a[tag=azrShowDialog] [{"text":"“难道说……","color":"white"},{"selector":"@r[tag=azrPlayer]","color":"white"},{"text":"？是你们吗？”","color":"white"}]
-execute if score stage_main_thread AzrTimerStack matches 315 as @n[tag=AzrielBossFA] at @s run playsound minecraft:entity.pillager.ambient master @a[tag=azrPlayer] ~ ~ ~ 3 0.8
+execute if score stage_main_thread AzrTimerStack matches 315 as @n[tag=AzrielBossFA] at @s run playsound minecraft:entity.pillager.ambient master @a[tag=azrShowDialog] ~ ~ ~ 3 0.8
 
 execute if score stage_main_thread AzrTimerStack matches 304 run summon pillager -79788 31.0 -363 {Silent:1b,PersistenceRequired:1b,Tags:["AzrielBossFA","AzrielBossFA2","AzrielNPC"],NoAI:1b,DeathLootTable:"skyblock:azriel_shadow_tier1",Health:100.0f,CustomName:'"默尔森"',Invulnerable:1b,HandItems:[{},{}],attributes:[{id:"follow_range",base:80.0d},{id:"max_health",base:100.0d},{id:"movement_speed",base:0.0d},{id:"knockback_resistance",base:1.0d}]}
 
@@ -140,7 +140,7 @@ execute if score stage_main_thread AzrTimerStack matches 320..380 if entity @n[t
 
 execute if score stage_main_thread AzrTimerStack matches 386 run tellraw @a[tag=azrShowDialog] {"text":"神界军模样的人：","color":"aqua"}
 execute if score stage_main_thread AzrTimerStack matches 386 run tellraw @a[tag=azrShowDialog] [{"text":"“这里！看到我了吧！小心跳过来，别跌下去了。”","color":"white"}]
-execute if score stage_main_thread AzrTimerStack matches 386 as @n[tag=AzrielBossFA] at @s run playsound minecraft:entity.pillager.ambient master @a[tag=azrPlayer] ~ ~ ~ 2 0.8
+execute if score stage_main_thread AzrTimerStack matches 386 as @n[tag=AzrielBossFA] at @s run playsound minecraft:entity.pillager.ambient master @a[tag=azrShowDialog] ~ ~ ~ 2 0.8
 #execute if score stage_main_thread AzrTimerStack matches 386 as @n[tag=AzrielBossFA] at @s run tp @s ~ ~ ~ facing entity @a[limit=1,tag=azrPlayer,sort=nearest]
 
 
@@ -163,57 +163,57 @@ execute if score stage_main_thread AzrTimerStack matches 501 if score playerCoun
 execute if score stage_main_thread AzrTimerStack matches 501 if score playerCount Azr_system matches 2 run tellraw @a[tag=azrShowDialog] [{"text":"“终于找着你们了。我是权之残影大人派来协助二位的。”","color":"white"}]
 execute if score stage_main_thread AzrTimerStack matches 501 if score playerCount Azr_system matches 3 run tellraw @a[tag=azrShowDialog] [{"text":"“终于找着你们三位了。我是权之残影大人派来协助各位的。”","color":"white"}]
 execute if score stage_main_thread AzrTimerStack matches 501 if score playerCount Azr_system matches 4.. run tellraw @a[tag=azrShowDialog] [{"text":"“终于找着你们几位了。我是权之残影大人派来协助各位的。”","color":"white"}]
-execute if score stage_main_thread AzrTimerStack matches 501 as @n[tag=AzrielBossFA] at @s run playsound minecraft:entity.pillager.ambient master @a[tag=azrPlayer] ~ ~ ~ 2 0.8
+execute if score stage_main_thread AzrTimerStack matches 501 as @n[tag=AzrielBossFA] at @s run playsound minecraft:entity.pillager.ambient master @a[tag=azrShowDialog] ~ ~ ~ 2 0.8
 execute if score stage_main_thread AzrTimerStack matches 501 as @n[tag=AzrielBossFA] at @s run tp @s ~ ~ ~ facing entity @a[limit=1,tag=azrPlayer,sort=random,distance=0..15]
 
 execute if score stage_main_thread AzrTimerStack matches 581 run tellraw @a[tag=azrShowDialog] {"text":"神界军模样的人：","color":"aqua"}
 execute if score stage_main_thread AzrTimerStack matches 581 if score playerCount Azr_system matches 1 run tellraw @a[tag=azrShowDialog] [{"text":"“你一定已经注意到了吧？这里是魔界……也就是你进入神庭花园前暂留的场所。与彼时不同的是，你现在拥有肉身。”","color":"white"}]
 execute if score stage_main_thread AzrTimerStack matches 581 if score playerCount Azr_system matches 2.. run tellraw @a[tag=azrShowDialog] [{"text":"“你们一定已经注意到了吧？这里是魔界……也就是你们进入神庭花园前暂留的场所。与彼时不同的是，你们现在拥有肉身。”","color":"white"}]
-execute if score stage_main_thread AzrTimerStack matches 581 as @n[tag=AzrielBossFA] at @s run playsound minecraft:entity.pillager.ambient master @a[tag=azrPlayer] ~ ~ ~ 2 0.7
+execute if score stage_main_thread AzrTimerStack matches 581 as @n[tag=AzrielBossFA] at @s run playsound minecraft:entity.pillager.ambient master @a[tag=azrShowDialog] ~ ~ ~ 2 0.7
 execute if score stage_main_thread AzrTimerStack matches 581 as @n[tag=AzrielBossFA] at @s run tp @s ~ ~ ~ facing entity @a[limit=1,tag=azrPlayer,sort=random,distance=0..15]
 
 execute if score stage_main_thread AzrTimerStack matches 651 run tellraw @a[tag=azrShowDialog] {"text":"神界军模样的人：","color":"aqua"}
 execute if score stage_main_thread AzrTimerStack matches 651 run tellraw @a[tag=azrShowDialog] [{"text":"“向花园发起闪电袭击的路西法，此时也在魔界展开了针对现任统治者贝利尔帝王的反叛。”","color":"white"}]
-execute if score stage_main_thread AzrTimerStack matches 651 as @n[tag=AzrielBossFA] at @s run playsound minecraft:entity.pillager.ambient master @a[tag=azrPlayer] ~ ~ ~ 2 0.8
+execute if score stage_main_thread AzrTimerStack matches 651 as @n[tag=AzrielBossFA] at @s run playsound minecraft:entity.pillager.ambient master @a[tag=azrShowDialog] ~ ~ ~ 2 0.8
 execute if score stage_main_thread AzrTimerStack matches 651 as @n[tag=AzrielBossFA] at @s run tp @s ~ ~ ~ facing entity @a[limit=1,tag=azrPlayer,sort=random,distance=0..15]
 
 execute if score stage_main_thread AzrTimerStack matches 711 run tellraw @a[tag=azrShowDialog] {"text":"神界军模样的人：","color":"aqua"}
 execute if score stage_main_thread AzrTimerStack matches 711 if score playerCount Azr_system matches 1 run tellraw @a[tag=azrShowDialog] [{"text":"“啊对不住，上来就说正事搞得很奇怪对吧……有失礼节了，咱是权之残影手下的……算是大官吧，具体的名号不是那么重要。你可以称呼我的大名默尔森。”","color":"white"}]
 execute if score stage_main_thread AzrTimerStack matches 711 if score playerCount Azr_system matches 2.. run tellraw @a[tag=azrShowDialog] [{"text":"“啊对不住，上来就说正事搞得很奇怪对吧……有失礼节了，咱是权之残影手下的……算是大官吧，具体的名号不是那么重要。你们可以称呼我的大名默尔森。”","color":"white"}]
-execute if score stage_main_thread AzrTimerStack matches 711 as @n[tag=AzrielBossFA] at @s run playsound minecraft:entity.pillager.ambient master @a[tag=azrPlayer] ~ ~ ~ 2 0.8
+execute if score stage_main_thread AzrTimerStack matches 711 as @n[tag=AzrielBossFA] at @s run playsound minecraft:entity.pillager.ambient master @a[tag=azrShowDialog] ~ ~ ~ 2 0.8
 execute if score stage_main_thread AzrTimerStack matches 711 as @n[tag=AzrielBossFA] at @s run tp @s ~ ~ ~ facing entity @a[limit=1,tag=azrPlayer,sort=random,distance=0..15]
 
 execute if score stage_main_thread AzrTimerStack matches 781 run tellraw @a[tag=azrShowDialog] {"text":"默尔森：","color":"aqua"}
 execute if score stage_main_thread AzrTimerStack matches 781 if score playerCount Azr_system matches 1 run tellraw @a[tag=azrShowDialog] [{"text":"“你作为魔界的棋子，恐怕是已经失去了利用价值，因此他们也停止向你提供道具与装备了。现在你背包里的生命手册可以说就是一沓废纸。”","color":"white"}]
 execute if score stage_main_thread AzrTimerStack matches 781 if score playerCount Azr_system matches 2.. run tellraw @a[tag=azrShowDialog] [{"text":"“你们作为魔界的棋子，恐怕是已经失去了利用价值，因此他们也停止向你们提供道具与装备了。现在你们背包里的生命手册可以说就是一沓废纸。”","color":"white"}]
-execute if score stage_main_thread AzrTimerStack matches 781 as @n[tag=AzrielBossFA] at @s run playsound minecraft:entity.pillager.ambient master @a[tag=azrPlayer] ~ ~ ~ 2 0.8
+execute if score stage_main_thread AzrTimerStack matches 781 as @n[tag=AzrielBossFA] at @s run playsound minecraft:entity.pillager.ambient master @a[tag=azrShowDialog] ~ ~ ~ 2 0.8
 execute if score stage_main_thread AzrTimerStack matches 781 as @n[tag=AzrielBossFA] at @s run tp @s ~ ~ ~ facing entity @a[limit=1,tag=azrPlayer,sort=random,distance=0..15]
 
 execute if score stage_main_thread AzrTimerStack matches 851 run tellraw @a[tag=azrShowDialog] {"text":"默尔森：","color":"aqua"}
 execute if score stage_main_thread AzrTimerStack matches 851 if score playerCount Azr_system matches 1 run tellraw @a[tag=azrShowDialog] [{"text":"“我前来此处一是为了勘察战况，二便是来做你的临时交易员。如果你拥有曾在花园获取的素材或绿宝石，前来向我兑换商品即可。”","color":"white"}]
 execute if score stage_main_thread AzrTimerStack matches 851 if score playerCount Azr_system matches 2.. run tellraw @a[tag=azrShowDialog] [{"text":"“我前来此处一是为了勘察战况，二便是来做你们的临时交易员。如果你们拥有曾在花园获取的素材或绿宝石，前来向我兑换商品即可。”","color":"white"}]
-execute if score stage_main_thread AzrTimerStack matches 851 as @n[tag=AzrielBossFA] at @s run playsound minecraft:entity.pillager.ambient master @a[tag=azrPlayer] ~ ~ ~ 2 0.8
+execute if score stage_main_thread AzrTimerStack matches 851 as @n[tag=AzrielBossFA] at @s run playsound minecraft:entity.pillager.ambient master @a[tag=azrShowDialog] ~ ~ ~ 2 0.8
 execute if score stage_main_thread AzrTimerStack matches 851 as @n[tag=AzrielBossFA] at @s run tp @s ~ ~ ~ facing entity @a[limit=1,tag=azrPlayer,sort=random,distance=0..15]
 
 execute if score stage_main_thread AzrTimerStack matches 921 run tellraw @a[tag=azrShowDialog] {"text":"默尔森：","color":"aqua"}
 execute if score stage_main_thread AzrTimerStack matches 921 run tellraw @a[tag=azrShowDialog] [{"text":"“收取绿宝石可不是因为咱贪财，更多的是因为那些绿宝石本就是储存着魔力的晶体，可算作提供生命手册连通魔界宝库的‘钥匙’，自然同样也能用于为物品祈福。”","color":"white"}]
-execute if score stage_main_thread AzrTimerStack matches 921 as @n[tag=AzrielBossFA] at @s run playsound minecraft:entity.pillager.ambient master @a[tag=azrPlayer] ~ ~ ~ 2 0.8
+execute if score stage_main_thread AzrTimerStack matches 921 as @n[tag=AzrielBossFA] at @s run playsound minecraft:entity.pillager.ambient master @a[tag=azrShowDialog] ~ ~ ~ 2 0.8
 execute if score stage_main_thread AzrTimerStack matches 921 as @n[tag=AzrielBossFA] at @s run tp @s ~ ~ ~ facing entity @a[limit=1,tag=azrPlayer,sort=random,distance=0..15]
 
 execute if score stage_main_thread AzrTimerStack matches 983 run tellraw @a[tag=azrShowDialog] {"text":"默尔森：","color":"aqua"}
 execute if score stage_main_thread AzrTimerStack matches 983 run tellraw @a[tag=azrShowDialog] [{"text":"“闲话就不多说了。岩浆河那岸会通往权之残影大人的所在处。要注意的是，那里此刻也是魔界的主要战场之一。我已在前进路线上布置路标，希望没被那群士兵给拆飞。”","color":"white"}]
-execute if score stage_main_thread AzrTimerStack matches 983 as @n[tag=AzrielBossFA] at @s run playsound minecraft:entity.pillager.ambient master @a[tag=azrPlayer] ~ ~ ~ 2 0.6
+execute if score stage_main_thread AzrTimerStack matches 983 as @n[tag=AzrielBossFA] at @s run playsound minecraft:entity.pillager.ambient master @a[tag=azrShowDialog] ~ ~ ~ 2 0.6
 execute if score stage_main_thread AzrTimerStack matches 983 as @n[tag=AzrielBossFA] at @s run tp @s ~ ~ ~ facing entity @a[limit=1,tag=azrPlayer,sort=random,distance=0..15]
 
 execute if score stage_main_thread AzrTimerStack matches 1045 run tellraw @a[tag=azrShowDialog] {"text":"默尔森：","color":"aqua"}
 execute if score stage_main_thread AzrTimerStack matches 1045 if score playerCount Azr_system matches 1 run tellraw @a[tag=azrShowDialog] [{"text":"“现在已经没多少退路可选了……你准备好了的话就继续深入吧。我会在这里提供有限的帮助。疗伤的话也尽管回到这里即可。”","color":"white"}]
 execute if score stage_main_thread AzrTimerStack matches 1045 if score playerCount Azr_system matches 2.. run tellraw @a[tag=azrShowDialog] [{"text":"“现在已经没多少退路可选了……你们准备好了的话就继续深入吧。我会在这里提供有限的帮助。疗伤的话也尽管回到这里即可。”","color":"white"}]
-execute if score stage_main_thread AzrTimerStack matches 1045 as @n[tag=AzrielBossFA] at @s run playsound minecraft:entity.pillager.ambient master @a[tag=azrPlayer] ~ ~ ~ 2 0.8
+execute if score stage_main_thread AzrTimerStack matches 1045 as @n[tag=AzrielBossFA] at @s run playsound minecraft:entity.pillager.ambient master @a[tag=azrShowDialog] ~ ~ ~ 2 0.8
 execute if score stage_main_thread AzrTimerStack matches 1045 as @n[tag=AzrielBossFA] at @s run tp @s ~ ~ ~ facing entity @a[limit=1,tag=azrPlayer,sort=random,distance=0..15]
 
 execute if score stage_main_thread AzrTimerStack matches 1120 run tellraw @a[tag=azrShowDialog] {"text":"默尔森：","color":"aqua"}
 execute if score stage_main_thread AzrTimerStack matches 1120 run tellraw @a[tag=azrShowDialog] [{"text":"“回见。”","color":"white"}]
-execute if score stage_main_thread AzrTimerStack matches 1120 as @n[tag=AzrielBossFA] at @s run playsound minecraft:entity.pillager.ambient master @a[tag=azrPlayer] ~ ~ ~ 2 0.8
+execute if score stage_main_thread AzrTimerStack matches 1120 as @n[tag=AzrielBossFA] at @s run playsound minecraft:entity.pillager.ambient master @a[tag=azrShowDialog] ~ ~ ~ 2 0.8
 execute if score stage_main_thread AzrTimerStack matches 1120 run setblock -79765 23 -397 minecraft:air
 execute if score stage_main_thread AzrTimerStack matches 1120 as @n[tag=AzrielBossFA] at @s run tp @s ~ ~ ~ facing entity @a[limit=1,tag=azrPlayer,sort=random,distance=0..15]
 execute if score stage_main_thread AzrTimerStack matches 1120 run advancement grant @a[tag=azrPlayer] only skyblock:azr/azr_stage13_event1
@@ -249,12 +249,12 @@ execute if score stage_main_thread AzrTimerStack matches 9900..9999 run scoreboa
 execute if score stage_main_thread AzrTimerStack matches 1900..2000 run scoreboard players set stage_main_thread AzrTimerStack 1900
 
 execute if score stage_main_thread AzrTimerStack matches 10000..30000 run function skyblock:azr/tool_rng
-execute if score stage_main_thread AzrTimerStack matches 10000..30000 if score #rng15 Azr_system matches 1 if score #rng5 Azr_system matches 3 as @r[tag=azrPlayer] at @s run playsound event.raid.horn ambient @a[tag=azrPlayer] ~10 ~ ~-50 480 0.9
-execute if score stage_main_thread AzrTimerStack matches 10000..30000 if score #rng15 Azr_system matches 1 if score #rng5 Azr_system matches 4 if score #rng3 Azr_system matches 1 as @r[tag=azrPlayer] at @s run playsound entity.generic.explode ambient @a[tag=azrPlayer] ~10 ~ ~-50 4.5 0.2
-execute if score stage_main_thread AzrTimerStack matches 10000..30000 if score #rng15 Azr_system matches 1 if score #rng5 Azr_system matches 4 if score #rng3 Azr_system matches 2 as @r[tag=azrPlayer] at @s run playsound entity.firework_rocket.large_blast_far ambient @a[tag=azrPlayer] ~10 ~ ~-50 480 0.6
-execute if score stage_main_thread AzrTimerStack matches 10000..30000 if score #rng15 Azr_system matches 1 if score #rng5 Azr_system matches 4 if score #rng3 Azr_system matches 2 as @r[tag=azrPlayer] at @s run playsound entity.firework_rocket.blast ambient @a[tag=azrPlayer] ~10 ~ ~-50 480 0.6
-execute if score stage_main_thread AzrTimerStack matches 10000..30000 if score #rng15 Azr_system matches 1 if score #rng5 Azr_system matches 4 if score #rng3 Azr_system matches 3 as @r[tag=azrPlayer] at @s run playsound entity.firework_rocket.twinkle ambient @a[tag=azrPlayer] ~10 ~ ~-50 6 0.3
-execute if score stage_main_thread AzrTimerStack matches 10000..30000 if score #rng15 Azr_system matches 1 if score #rng5 Azr_system matches 4 if score #rng3 Azr_system matches 3 as @r[tag=azrPlayer] at @s run playsound entity.firework_rocket.large_blast ambient @a[tag=azrPlayer] ~10 ~ ~-50 480 0.6
+execute if score stage_main_thread AzrTimerStack matches 10000..30000 if score #rng15 Azr_system matches 1 if score #rng5 Azr_system matches 3 as @r[tag=azrShowDialog] at @s run playsound event.raid.horn ambient @a[tag=azrShowDialog] ~10 ~ ~-50 480 0.9
+execute if score stage_main_thread AzrTimerStack matches 10000..30000 if score #rng15 Azr_system matches 1 if score #rng5 Azr_system matches 4 if score #rng3 Azr_system matches 1 as @r[tag=azrShowDialog] at @s run playsound entity.generic.explode ambient @a[tag=azrShowDialog] ~10 ~ ~-50 4.5 0.2
+execute if score stage_main_thread AzrTimerStack matches 10000..30000 if score #rng15 Azr_system matches 1 if score #rng5 Azr_system matches 4 if score #rng3 Azr_system matches 2 as @r[tag=azrShowDialog] at @s run playsound entity.firework_rocket.large_blast_far ambient @a[tag=azrShowDialog] ~10 ~ ~-50 480 0.6
+execute if score stage_main_thread AzrTimerStack matches 10000..30000 if score #rng15 Azr_system matches 1 if score #rng5 Azr_system matches 4 if score #rng3 Azr_system matches 2 as @r[tag=azrShowDialog] at @s run playsound entity.firework_rocket.blast ambient @a[tag=azrShowDialog] ~10 ~ ~-50 480 0.6
+execute if score stage_main_thread AzrTimerStack matches 10000..30000 if score #rng15 Azr_system matches 1 if score #rng5 Azr_system matches 4 if score #rng3 Azr_system matches 3 as @r[tag=azrShowDialog] at @s run playsound entity.firework_rocket.twinkle ambient @a[tag=azrShowDialog] ~10 ~ ~-50 6 0.3
+execute if score stage_main_thread AzrTimerStack matches 10000..30000 if score #rng15 Azr_system matches 1 if score #rng5 Azr_system matches 4 if score #rng3 Azr_system matches 3 as @r[tag=azrShowDialog] at @s run playsound entity.firework_rocket.large_blast ambient @a[tag=azrShowDialog] ~10 ~ ~-50 480 0.6
 
 execute if score stage_main_thread AzrTimerStack matches 10100 run tellraw @a[tag=azrShowDialog] {"text":"远处的吼声：","color":"aqua"}
 execute if score stage_main_thread AzrTimerStack matches 10100 run tellraw @a[tag=azrShowDialog] {"text":"“抗住这道阵线！我们损失的已经太多了，不能再让此处失守！！”","color":"white"}

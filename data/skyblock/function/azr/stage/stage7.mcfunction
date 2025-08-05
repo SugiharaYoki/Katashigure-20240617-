@@ -172,13 +172,13 @@ execute if score stage_main_thread AzrTimerStack matches 256..266 if score #rng9
 execute if score stage_main_thread AzrTimerStack matches 268..278 unless score mobCount Azr_system matches ..2 run scoreboard players set stage_main_thread AzrTimerStack 276
 
 execute if score stage_main_thread AzrTimerStack matches 249 run tellraw @a[tag=azrShowDialog] {"text":"你感知到某种魔力极为强大的生物正在靠近你……","color":"gray"}
-execute if score stage_main_thread AzrTimerStack matches 279..280 run playsound minecraft:entity.lightning_bolt.thunder ambient @a[tag=azrPlayer] -78889 38 121 120 0.5
-execute if score stage_main_thread AzrTimerStack matches 279..280 run playsound minecraft:entity.lightning_bolt.thunder ambient @a[tag=azrPlayer] -78889 38 121 100 0.75
-execute if score stage_main_thread AzrTimerStack matches 279..280 run playsound minecraft:entity.lightning_bolt.thunder ambient @a[tag=azrPlayer] -78889 38 121 100 1
-execute if score stage_main_thread AzrTimerStack matches 279 run playsound minecraft:entity.zombified_piglin.hurt ambient @a[tag=azrPlayer] -78889 38 121 100 0.1
-execute if score stage_main_thread AzrTimerStack matches 281 run playsound minecraft:entity.zombie_villager.cure ambient @a[tag=azrPlayer] -78889 38 121 90 0.74
-execute if score stage_main_thread AzrTimerStack matches 281 run playsound minecraft:entity.elder_guardian.curse ambient @a[tag=azrPlayer] -78889 38 121 100 0.4
-execute if score stage_main_thread AzrTimerStack matches 281 run playsound minecraft:entity.generic.explode ambient @a[tag=azrPlayer] -78889 38 121 98 0.7
+execute if score stage_main_thread AzrTimerStack matches 279..280 run playsound minecraft:entity.lightning_bolt.thunder ambient @a[tag=azrShowDialog] -78889 38 121 120 0.5
+execute if score stage_main_thread AzrTimerStack matches 279..280 run playsound minecraft:entity.lightning_bolt.thunder ambient @a[tag=azrShowDialog] -78889 38 121 100 0.75
+execute if score stage_main_thread AzrTimerStack matches 279..280 run playsound minecraft:entity.lightning_bolt.thunder ambient @a[tag=azrShowDialog] -78889 38 121 100 1
+execute if score stage_main_thread AzrTimerStack matches 279 run playsound minecraft:entity.zombified_piglin.hurt ambient @a[tag=azrShowDialog] -78889 38 121 100 0.1
+execute if score stage_main_thread AzrTimerStack matches 281 run playsound minecraft:entity.zombie_villager.cure ambient @a[tag=azrShowDialog] -78889 38 121 90 0.74
+execute if score stage_main_thread AzrTimerStack matches 281 run playsound minecraft:entity.elder_guardian.curse ambient @a[tag=azrShowDialog] -78889 38 121 100 0.4
+execute if score stage_main_thread AzrTimerStack matches 281 run playsound minecraft:entity.generic.explode ambient @a[tag=azrShowDialog] -78889 38 121 98 0.7
 execute if score stage_main_thread AzrTimerStack matches 281 run scoreboard players set tick_main_thread AzrTimerStack 0
 execute if score stage_main_thread AzrTimerStack matches 281 run tag @a[tag=azrPlayer] add SeGa_SLAQuake
 execute if score stage_main_thread AzrTimerStack matches 282 run tag @a[tag=azrPlayer] remove SeGa_SLAQuake
@@ -191,9 +191,9 @@ execute if score stage_main_thread AzrTimerStack matches 290 run summon vindicat
 
 
 execute if score stage_main_thread AzrTimerStack matches 297..299 if entity @e[x=-79889,y=38,z=121,distance=0..20,tag=AzrielMob,tag=!AzrielDecMob] run scoreboard players set stage_main_thread AzrTimerStack 300
-execute if score stage_main_thread AzrTimerStack matches 301..304 run playsound ambient.crimson_forest.loop ambient @a[tag=azrPlayer] -78000 100 0 1000 1.2
-execute if score stage_main_thread AzrTimerStack matches 301..304 run playsound ambient.crimson_forest.mood ambient @a[tag=azrPlayer] -78000 100 0 1000 1.2
-execute if score stage_main_thread AzrTimerStack matches 301..304 run playsound ambient.crimson_forest.additions ambient @a[tag=azrPlayer] -78000 100 0 1000 1.2
+execute if score stage_main_thread AzrTimerStack matches 301..304 run playsound ambient.crimson_forest.loop ambient @a[tag=azrShowDialog] -78000 100 0 1000 1.2
+execute if score stage_main_thread AzrTimerStack matches 301..304 run playsound ambient.crimson_forest.mood ambient @a[tag=azrShowDialog] -78000 100 0 1000 1.2
+execute if score stage_main_thread AzrTimerStack matches 301..304 run playsound ambient.crimson_forest.additions ambient @a[tag=azrShowDialog] -78000 100 0 1000 1.2
 execute if score stage_main_thread AzrTimerStack matches 301..304 run fill -79898 42 101 -79896 38 101 minecraft:air destroy
 execute if score stage_main_thread AzrTimerStack matches 301..304 run fill -79893 44 128 -79893 43 128 minecraft:air destroy
 execute if score stage_main_thread AzrTimerStack matches 301..304 run fill -79886 46 148 -79888 43 148 air

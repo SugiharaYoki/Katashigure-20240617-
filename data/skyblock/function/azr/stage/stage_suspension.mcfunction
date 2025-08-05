@@ -237,9 +237,9 @@ execute if score stage_main_thread AzrTimerStack matches 186 as @a[tag=azrPlayer
 execute if score stage_main_thread AzrTimerStack matches 186 run fill -79943 34 136 -79943 32 136 air destroy
 execute if score stage_main_thread AzrTimerStack matches 186 run fill -79944 34 145 -79944 32 145 air destroy
 execute if score stage_main_thread AzrTimerStack matches 186 run setblock -79923 39 134 minecraft:birch_button[facing=south]
-execute if score stage_main_thread AzrTimerStack matches 186..188 run playsound ambient.soul_sand_valley.additions ambient @a[tag=azrPlayer] -78000 100 0 1000
-execute if score stage_main_thread AzrTimerStack matches 186..188 run playsound ambient.soul_sand_valley.loop ambient @a[tag=azrPlayer] -78000 100 0 1000
-execute if score stage_main_thread AzrTimerStack matches 186..188 run playsound ambient.soul_sand_valley.mood ambient @a[tag=azrPlayer] -78000 100 0 1000
+execute if score stage_main_thread AzrTimerStack matches 186..188 run playsound ambient.soul_sand_valley.additions ambient @a[tag=azrShowDialog] -78000 100 0 1000
+execute if score stage_main_thread AzrTimerStack matches 186..188 run playsound ambient.soul_sand_valley.loop ambient @a[tag=azrShowDialog] -78000 100 0 1000
+execute if score stage_main_thread AzrTimerStack matches 186..188 run playsound ambient.soul_sand_valley.mood ambient @a[tag=azrShowDialog] -78000 100 0 1000
 execute if score stage_main_thread AzrTimerStack matches 188 run scoreboard players operation stage Azr_system = main_stage Azr_system
 execute if score stage_main_thread AzrTimerStack matches 188 run scoreboard players reset main_stage Azr_system
 

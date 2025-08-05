@@ -15,11 +15,11 @@ execute if score stage_main_thread AzrTimerStack matches 1 run setblock -79887 4
 execute if score stage_main_thread AzrTimerStack matches 1 run setblock -79887 43 164 air
 execute if score stage_main_thread AzrTimerStack matches 1 run fill -79886 46 148 -79888 43 148 purple_stained_glass
 execute if score stage_main_thread AzrTimerStack matches 1.. run function skyblock:azr/tool_rng
-execute if score stage_main_thread AzrTimerStack matches 2 run playsound block.bell.use ambient @a[tag=azrPlayer] -79887 50 164 100 0.7
-execute if score stage_main_thread AzrTimerStack matches 4 run playsound block.bell.use ambient @a[tag=azrPlayer] -79887 50 164 100 0.7
-execute if score stage_main_thread AzrTimerStack matches 6 run playsound block.bell.use ambient @a[tag=azrPlayer] -79887 50 164 100 0.7
-execute if score stage_main_thread AzrTimerStack matches 8 run playsound block.bell.use ambient @a[tag=azrPlayer] -79887 50 164 100 0.7
-execute if score stage_main_thread AzrTimerStack matches 10 run playsound block.bell.use ambient @a[tag=azrPlayer] -79887 50 164 100 0.7
+execute if score stage_main_thread AzrTimerStack matches 2 run playsound block.bell.use ambient @a[tag=azrShowDialog] -79887 50 164 100 0.7
+execute if score stage_main_thread AzrTimerStack matches 4 run playsound block.bell.use ambient @a[tag=azrShowDialog] -79887 50 164 100 0.7
+execute if score stage_main_thread AzrTimerStack matches 6 run playsound block.bell.use ambient @a[tag=azrShowDialog] -79887 50 164 100 0.7
+execute if score stage_main_thread AzrTimerStack matches 8 run playsound block.bell.use ambient @a[tag=azrShowDialog] -79887 50 164 100 0.7
+execute if score stage_main_thread AzrTimerStack matches 10 run playsound block.bell.use ambient @a[tag=azrShowDialog] -79887 50 164 100 0.7
 
 
 execute if score stage_main_thread AzrTimerStack matches 1..5 if score #rng2 Azr_system matches 1 run summon husk -79873 43 164 {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_zombie_tier2",Health:6.5f,CustomName:'"尸壳"',CanPickUpLoot:0b,IsBaby:0b,ArmorItems:[{},{},{count:1,id:"leather_chestplate",components:{enchantments:{fire_protection:3}}},{}],ArmorDropChances:[0.02f,0.02f,0.01f,0.02f],attributes:[{id:"max_health",base:6.5d},{id:"attack_damage",base:1.5d},{id:"movement_speed",base:0.26d},{id:"attack_knockback",base:0.15d}]}
@@ -120,9 +120,9 @@ execute if score stage_main_thread AzrTimerStack matches 97 as @a[tag=azrPlayer]
 #execute if score stage_main_thread AzrTimerStack matches 97 as @a[tag=azrPlayer] at @s run give @s end_crystal[custom_name='{"text":"蛮之核心","italic":false,"color":"yellow"}',lore=['{"text":"置于背包栏第2格时","color":"gray","italic":false}','{"text":"攻击力+15%","color":"dark_green","italic":false}'],custom_data={core_force:1b},custom_model_data={floats:[100001.0]}]
 #execute if score stage_main_thread AzrTimerStack matches 97 as @a[tag=azrPlayer] at @s run give @s end_crystal[custom_name='{"text":"歌之核心","italic":false,"color":"yellow"}',lore=['{"text":"置于背包栏第3格时","color":"gray","italic":false}','{"text":"血量+10%","color":"dark_green","italic":false}'],custom_data={core_melody:1b},custom_model_data={floats:[100002.0]}]
 execute if score stage_main_thread AzrTimerStack matches 97 run fill -79886 46 148 -79888 43 148 minecraft:air destroy
-execute if score stage_main_thread AzrTimerStack matches 97..100 run playsound ambient.soul_sand_valley.additions ambient @a[tag=azrPlayer] -78000 100 0 1000
-execute if score stage_main_thread AzrTimerStack matches 97..100 run playsound ambient.soul_sand_valley.loop ambient @a[tag=azrPlayer] -78000 100 0 1000
-execute if score stage_main_thread AzrTimerStack matches 97..100 run playsound ambient.soul_sand_valley.mood ambient @a[tag=azrPlayer] -78000 100 0 1000
+execute if score stage_main_thread AzrTimerStack matches 97..100 run playsound ambient.soul_sand_valley.additions ambient @a[tag=azrShowDialog] -78000 100 0 1000
+execute if score stage_main_thread AzrTimerStack matches 97..100 run playsound ambient.soul_sand_valley.loop ambient @a[tag=azrShowDialog] -78000 100 0 1000
+execute if score stage_main_thread AzrTimerStack matches 97..100 run playsound ambient.soul_sand_valley.mood ambient @a[tag=azrShowDialog] -78000 100 0 1000
 execute if score stage_main_thread AzrTimerStack matches 100 run scoreboard players set stage Azr_system 19
 
 #function skyblock:tool_rng

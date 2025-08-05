@@ -10,8 +10,8 @@ execute if score stage_main_thread AzrTimerStack matches 90 run bossbar remove a
 #mainside:-79901 41 -49
 #subside:-79906 40 -60
 
-execute if score stage_main_thread AzrTimerStack matches 1..3 run playsound ambient.cave ambient @a[tag=azrPlayer] -78000 100 0 160 1.2
-execute if score stage_main_thread AzrTimerStack matches 1..3 run playsound ambient.cave ambient @a[tag=azrPlayer] -78000 100 0 160 1.0
+execute if score stage_main_thread AzrTimerStack matches 1..3 run playsound ambient.cave ambient @a[tag=azrShowDialog] -78000 100 0 160 1.2
+execute if score stage_main_thread AzrTimerStack matches 1..3 run playsound ambient.cave ambient @a[tag=azrShowDialog] -78000 100 0 160 1.0
 
 execute if score stage_main_thread AzrTimerStack matches 1.. run function skyblock:azr/tool_rng
 execute if score stage_main_thread AzrTimerStack matches 2 run title @a[tag=azrShowDialog] actionbar {"text":"Stage 9 - Wave 1","color":"red"}
@@ -68,8 +68,8 @@ execute if score stage_main_thread AzrTimerStack matches 77 if score playerCount
 execute if score stage_main_thread AzrTimerStack matches 77 if score playerCount Azr_system matches 6.. run summon silverfish -79907 40 -62 {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_silverfish_tier1",Health:7.5f,CustomName:'"蚀砖虫"',attributes:[{id:"max_health",base:7.5d},{id:"attack_damage",base:4.0d},{id:"movement_speed",base:0.25d}]}
 execute if score stage_main_thread AzrTimerStack matches 77 if score playerCount Azr_system matches 4.. run summon silverfish -79907 40 -56 {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_silverfish_tier1",Health:7.5f,CustomName:'"蚀砖虫"',attributes:[{id:"max_health",base:7.5d},{id:"attack_damage",base:4.0d},{id:"movement_speed",base:0.25d}]}
 execute if score stage_main_thread AzrTimerStack matches 77 if score playerCount Azr_system matches 2.. run summon silverfish -79905 40 -47 {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_silverfish_tier1",Health:7.5f,CustomName:'"蚀砖虫"',attributes:[{id:"max_health",base:7.5d},{id:"attack_damage",base:4.0d},{id:"movement_speed",base:0.25d}]}
-execute if score stage_main_thread AzrTimerStack matches 74 run playsound minecraft:entity.silverfish.ambient hostile @a[tag=azrPlayer] -79905.00 40.39 -46.74 10 0.7
-execute if score stage_main_thread AzrTimerStack matches 74 run playsound minecraft:entity.silverfish.ambient hostile @a[tag=azrPlayer] -79905.00 40.39 -46.74 10 0.8
+execute if score stage_main_thread AzrTimerStack matches 74 run playsound minecraft:entity.silverfish.ambient hostile @a[tag=azrShowDialog] -79905.00 40.39 -46.74 10 0.7
+execute if score stage_main_thread AzrTimerStack matches 74 run playsound minecraft:entity.silverfish.ambient hostile @a[tag=azrShowDialog] -79905.00 40.39 -46.74 10 0.8
 execute if score stage_main_thread AzrTimerStack matches 76.. run kill @e[x=-79900,y=130,z=0,distance=0..1000,type=item,nbt={Item:{id:"minecraft:coarse_dirt"}}]
 execute if score stage_main_thread AzrTimerStack matches 76.. run kill @e[x=-79900,y=130,z=0,distance=0..1000,type=item,nbt={Item:{id:"minecraft:gravel"}}]
 execute if score stage_main_thread AzrTimerStack matches 76.. run kill @e[x=-79900,y=130,z=0,distance=0..1000,type=item,nbt={Item:{id:"minecraft:quartz_bricks"}}]
@@ -82,9 +82,9 @@ execute if score stage_main_thread AzrTimerStack matches 85 run summon silverfis
 execute if score stage_main_thread AzrTimerStack matches 85 run summon silverfish -79898 41 -50 {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_silverfish_tier1",Health:7.5f,CustomName:'"蚀砖虫"',attributes:[{id:"max_health",base:7.5d},{id:"attack_damage",base:4.0d},{id:"movement_speed",base:0.25d}]}
 
 execute if score stage_main_thread AzrTimerStack matches 86..87 if entity @e[tag=AzrielMob,tag=!AzrielDecMob] run scoreboard players set stage_main_thread AzrTimerStack 86
-execute if score stage_main_thread AzrTimerStack matches 88 run playsound ambient.crimson_forest.loop ambient @a[tag=azrPlayer] -78000 100 0 1000
-execute if score stage_main_thread AzrTimerStack matches 88 run playsound ambient.crimson_forest.mood ambient @a[tag=azrPlayer] -78000 100 0 1000
-execute if score stage_main_thread AzrTimerStack matches 88 run playsound ambient.crimson_forest.additions ambient @a[tag=azrPlayer] -78000 100 0 1000
+execute if score stage_main_thread AzrTimerStack matches 88 run playsound ambient.crimson_forest.loop ambient @a[tag=azrShowDialog] -78000 100 0 1000
+execute if score stage_main_thread AzrTimerStack matches 88 run playsound ambient.crimson_forest.mood ambient @a[tag=azrShowDialog] -78000 100 0 1000
+execute if score stage_main_thread AzrTimerStack matches 88 run playsound ambient.crimson_forest.additions ambient @a[tag=azrShowDialog] -78000 100 0 1000
 execute if score stage_main_thread AzrTimerStack matches 90 run setblock -79889 44 -48 ladder[facing=west]
 execute if score stage_main_thread AzrTimerStack matches 90 run advancement grant @a[tag=azrPlayer] only skyblock:azr/azr_stage9
 execute if score stage_main_thread AzrTimerStack matches 90 run tellraw @a[scores={SeGa_StandLastBH=..23}] {"text":"永久升级 - 中途加入时 若至少位于第三章则额外获取 腐肉×3 + 硬骨×3 + 盾牌碎片×3 + 弓·传统","color":"light_purple"}

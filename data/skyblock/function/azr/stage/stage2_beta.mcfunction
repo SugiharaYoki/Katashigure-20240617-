@@ -10,11 +10,11 @@ execute if score stage_main_thread AzrTimerStack matches 1..99 store result boss
 execute if score stage_main_thread AzrTimerStack matches 99 run bossbar remove azr:progress_bar_normal
 #刷怪时序
 #第一波
-execute if score stage_main_thread AzrTimerStack matches 21 run playsound block.bell.use ambient @a[tag=azrPlayer] -79887 50 164 100 0.7
-execute if score stage_main_thread AzrTimerStack matches 23 run playsound block.bell.use ambient @a[tag=azrPlayer] -79887 50 164 100 0.7
-execute if score stage_main_thread AzrTimerStack matches 25 run playsound block.bell.use ambient @a[tag=azrPlayer] -79887 50 164 100 0.7
-execute if score stage_main_thread AzrTimerStack matches 27 run playsound block.bell.use ambient @a[tag=azrPlayer] -79887 50 164 100 0.7
-execute if score stage_main_thread AzrTimerStack matches 29 run playsound block.bell.use ambient @a[tag=azrPlayer] -79887 50 164 100 0.7
+execute if score stage_main_thread AzrTimerStack matches 21 run playsound block.bell.use ambient @a[tag=azrShowDialog] -79887 50 164 100 0.7
+execute if score stage_main_thread AzrTimerStack matches 23 run playsound block.bell.use ambient @a[tag=azrShowDialog] -79887 50 164 100 0.7
+execute if score stage_main_thread AzrTimerStack matches 25 run playsound block.bell.use ambient @a[tag=azrShowDialog] -79887 50 164 100 0.7
+execute if score stage_main_thread AzrTimerStack matches 27 run playsound block.bell.use ambient @a[tag=azrShowDialog] -79887 50 164 100 0.7
+execute if score stage_main_thread AzrTimerStack matches 29 run playsound block.bell.use ambient @a[tag=azrShowDialog] -79887 50 164 100 0.7
 execute if score stage_main_thread AzrTimerStack matches 21 run tellraw @a[tag=azrShowDialog] {"text":"？？？：","color":"aqua"}
 execute if score stage_main_thread AzrTimerStack matches 21 unless score playerCount Azr_system matches 5.. run tellraw @a[tag=azrShowDialog] {"text":"“挑战者到达第一关口，出兵迎战。”","color":"white"}
 execute if score stage_main_thread AzrTimerStack matches 21 if score playerCount Azr_system matches 5.. run tellraw @a[tag=azrShowDialog] {"text":"“第一关口有众多人类闯入，准备进行驱逐。”","color":"white"}
@@ -118,9 +118,9 @@ execute if score stage_main_thread AzrTimerStack matches 92 positioned -79935 38
 execute if score stage_main_thread AzrTimerStack matches 92 if score playerCount Azr_system matches 5.. positioned -79940 38 14 run function skyblock:azr/m/zombie_t1_5hp_full_armor
 execute if score stage_main_thread AzrTimerStack matches 92 if score playerCount Azr_system matches 5.. positioned -79922 38 14 run function skyblock:azr/m/zombie_t1_5hp_full_armor
 execute if score stage_main_thread AzrTimerStack matches 94..98 if entity @e[tag=AzrielMob,tag=!AzrielDecMob] run scoreboard players set stage_main_thread AzrTimerStack 94
-execute if score stage_main_thread AzrTimerStack matches 99 run playsound ambient.crimson_forest.loop ambient @a[tag=azrPlayer] -78000 100 0 1000
-execute if score stage_main_thread AzrTimerStack matches 99 run playsound ambient.crimson_forest.mood ambient @a[tag=azrPlayer] -78000 100 0 1000
-execute if score stage_main_thread AzrTimerStack matches 99 run playsound ambient.crimson_forest.additions ambient @a[tag=azrPlayer] -78000 100 0 1000
+execute if score stage_main_thread AzrTimerStack matches 99 run playsound ambient.crimson_forest.loop ambient @a[tag=azrShowDialog] -78000 100 0 1000
+execute if score stage_main_thread AzrTimerStack matches 99 run playsound ambient.crimson_forest.mood ambient @a[tag=azrShowDialog] -78000 100 0 1000
+execute if score stage_main_thread AzrTimerStack matches 99 run playsound ambient.crimson_forest.additions ambient @a[tag=azrShowDialog] -78000 100 0 1000
 execute if score stage_main_thread AzrTimerStack matches 99 run fill -79931 38 22 -79931 40 22 air destroy
 #to stage3b - the second door
 execute if score stage_main_thread AzrTimerStack matches 99 if score playerCount Azr_system matches 3.. run tellraw @a[tag=DebugMode,tag=azrPlayer] {"text":"[DEBUG MODE MESSAGE] You have opened stage3β - DOOR II"}

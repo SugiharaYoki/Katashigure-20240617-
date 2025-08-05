@@ -25,8 +25,8 @@ particle minecraft:soul_fire_flame ~ ~1.5 ~5 0.1 0.1 0.1 0. 7
 particle minecraft:soul_fire_flame ~ ~1.5 ~-5 0.1 0.1 0.1 0. 7
 
 particle minecraft:enchant ~ ~2.5 ~ 0.3 0.4 0.3 1.5 28
-playsound minecraft:entity.illusioner.cast_spell hostile @a[tag=azrPlayer] ~ ~ ~ 100 0.7
-playsound minecraft:entity.illusioner.ambient hostile @a[tag=azrPlayer] ~ ~ ~ 100 0.6
+playsound minecraft:entity.illusioner.cast_spell hostile @a[tag=azrShowDialog] ~ ~ ~ 100 0.7
+playsound minecraft:entity.illusioner.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 100 0.6
 
 schedule function skyblock:azr/stage/boss1/flat_wcb 0t
 schedule function skyblock:azr/stage/boss1/flat_wcb 3t
