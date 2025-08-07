@@ -176,14 +176,14 @@ execute as @e[tag=arroworb2,type=marker] at @s run function skyblock:azr/stage/b
     execute if score tick_main_thread AzrTimerStack matches 1380..1398 as @e[tag=AzrielBossA,limit=3] at @s run playsound minecraft:entity.arrow.shoot master @a[tag=azrShowDialog] ~ ~ ~ 0.8 1
     execute if score tick_main_thread AzrTimerStack matches 1380 as @e[tag=AzrielBossA,limit=3] at @s run summon arrow ~ ~1 ~ {Motion:[5.0,-0.2,0.0],pickup:0,damage:1.0,life:1100}
     execute if score tick_main_thread AzrTimerStack matches 1382 as @e[tag=AzrielBossA,limit=3] at @s run summon arrow ~ ~1 ~ {Motion:[4.8,-0.1,0.2],pickup:0,damage:1.0,life:1100}
-    execute if score tick_main_thread AzrTimerStack matches 1384 as @e[tag=AzrielBossA,limit=3] at @s run summon arrow ~ ~1 ~ {Motion:[4.6d,0.0d,0.4d],Rotation:[85.0302592718897f,0.0f],pickup:0,damage:1.0,life:1100}
-    execute if score tick_main_thread AzrTimerStack matches 1386 as @e[tag=AzrielBossA,limit=3] at @s run summon arrow ~ ~1 ~ {Motion:[4.4d,0.1d,0.6d],Rotation:[82.23483398157467f,1.2900180383093303f],pickup:0,damage:1.0,life:1100}
-    execute if score tick_main_thread AzrTimerStack matches 1388 as @e[tag=AzrielBossA,limit=3] at @s run summon arrow ~ ~1 ~ {Motion:[4.2d,0.2d,0.8d],Rotation:[79.2157021324374f,2.6782311706990347f],pickup:0,damage:1.0,life:1100}
+    execute if score tick_main_thread AzrTimerStack matches 1384 as @e[tag=AzrielBossA,limit=3] at @s run summon arrow ~ ~1 ~ {Motion:[4.6,0.0,0.4],pickup:0,damage:1.0,life:1100}
+    execute if score tick_main_thread AzrTimerStack matches 1386 as @e[tag=AzrielBossA,limit=3] at @s run summon arrow ~ ~1 ~ {Motion:[4.4,0.1,0.6],pickup:0,damage:1.0,life:1100}
+    execute if score tick_main_thread AzrTimerStack matches 1388 as @e[tag=AzrielBossA,limit=3] at @s run summon arrow ~ ~1 ~ {Motion:[4.2,0.2,0.8],pickup:0,damage:1.0,life:1100}
     execute if score tick_main_thread AzrTimerStack matches 1390 as @e[tag=AzrielBossA,limit=3] at @s run summon arrow ~ ~1 ~ {Motion:[4.0,-0.2,1.0],pickup:0,damage:1.0,life:1100}
     execute if score tick_main_thread AzrTimerStack matches 1392 as @e[tag=AzrielBossA,limit=3] at @s run summon arrow ~ ~1 ~ {Motion:[3.8,-0.1,1.2],pickup:0,damage:1.0,life:1100}
-    execute if score tick_main_thread AzrTimerStack matches 1394 as @e[tag=AzrielBossA,limit=3] at @s run summon arrow ~ ~1 ~ {Motion:[3.6d,0.0d,1.4d],Rotation:[68.74949449286676f,0.0f],pickup:0,damage:1.0,life:1100}
-    execute if score tick_main_thread AzrTimerStack matches 1396 as @e[tag=AzrielBossA,limit=3] at @s run summon arrow ~ ~1 ~ {Motion:[3.4d,0.1d,1.6d],Rotation:[64.79887635452492f,1.5244135163784995f],pickup:0,damage:1.0,life:1100}
-    execute if score tick_main_thread AzrTimerStack matches 1398 as @e[tag=AzrielBossA,limit=3] at @s run summon arrow ~ ~1 ~ {Motion:[3.2d,0.2d,1.8d],Rotation:[60.64224645720873f,3.1180183310945f],pickup:0,damage:1.0,life:1100}
+    execute if score tick_main_thread AzrTimerStack matches 1394 as @e[tag=AzrielBossA,limit=3] at @s run summon arrow ~ ~1 ~ {Motion:[3.6,0.0,1.4],pickup:0,damage:1.0,life:1100}
+    execute if score tick_main_thread AzrTimerStack matches 1396 as @e[tag=AzrielBossA,limit=3] at @s run summon arrow ~ ~1 ~ {Motion:[3.4,0.1,1.6],pickup:0,damage:1.0,life:1100}
+    execute if score tick_main_thread AzrTimerStack matches 1398 as @e[tag=AzrielBossA,limit=3] at @s run summon arrow ~ ~1 ~ {Motion:[3.2,0.2,1.8],pickup:0,damage:1.0,life:1100}
     execute if score tick_main_thread AzrTimerStack matches 1380 as @e[tag=AzrielBossA,limit=3] at @s run summon arrow ~ ~1 ~ {Motion:[-5.0,-0.2,0.0],pickup:0,damage:1.0,life:1100}
     execute if score tick_main_thread AzrTimerStack matches 1382 as @e[tag=AzrielBossA,limit=3] at @s run summon arrow ~ ~1 ~ {Motion:[-4.8,-0.1,-0.2],pickup:0,damage:1.0,life:1100}
     execute if score tick_main_thread AzrTimerStack matches 1384 as @e[tag=AzrielBossA,limit=3] at @s run summon arrow ~ ~1 ~ {Motion:[-4.6,0.0,-0.4],pickup:0,damage:1.0,life:1100}
@@ -199,14 +199,14 @@ execute as @e[tag=arroworb2,type=marker] at @s run function skyblock:azr/stage/b
     execute if score tick_main_thread AzrTimerStack matches 1440 if score #rng2 Azr_system matches 2 as @e[tag=AzrielBossA,limit=3] at @s if entity @a[tag=azrPlayer,distance=0..4.5] run function skyblock:azr/stage/boss1/move2
     execute if score tick_main_thread AzrTimerStack matches 1450 as @e[tag=AzrielBossA,limit=3] at @s run summon arrow ~ ~1 ~ {Motion:[0.0,-0.2,5.0],pickup:0,damage:1.0,life:1100}
     execute if score tick_main_thread AzrTimerStack matches 1452 as @e[tag=AzrielBossA,limit=3] at @s run summon arrow ~ ~1 ~ {Motion:[0.2,-0.1,4.8],pickup:0,damage:1.0,life:1100}
-    execute if score tick_main_thread AzrTimerStack matches 1454 as @e[tag=AzrielBossA,limit=3] at @s run summon arrow ~ ~1 ~ {Motion:[0.4d,0.0d,4.6d],Rotation:[4.969740728110304f,0.0f],pickup:0,damage:1.0,life:1100}
-    execute if score tick_main_thread AzrTimerStack matches 1456 as @e[tag=AzrielBossA,limit=3] at @s run summon arrow ~ ~1 ~ {Motion:[0.6d,0.1d,4.4d],Rotation:[7.765166018425332f,1.2900180383093303f],pickup:0,damage:1.0,life:1100}
-    execute if score tick_main_thread AzrTimerStack matches 1458 as @e[tag=AzrielBossA,limit=3] at @s run summon arrow ~ ~1 ~ {Motion:[0.8d,0.2d,4.2d],Rotation:[10.784297867562602f,2.6782311706990347f],pickup:0,damage:1.0,life:1100}
+    execute if score tick_main_thread AzrTimerStack matches 1454 as @e[tag=AzrielBossA,limit=3] at @s run summon arrow ~ ~1 ~ {Motion:[0.4,0.0,4.6],pickup:0,damage:1.0,life:1100}
+    execute if score tick_main_thread AzrTimerStack matches 1456 as @e[tag=AzrielBossA,limit=3] at @s run summon arrow ~ ~1 ~ {Motion:[0.6,0.1,4.4],pickup:0,damage:1.0,life:1100}
+    execute if score tick_main_thread AzrTimerStack matches 1458 as @e[tag=AzrielBossA,limit=3] at @s run summon arrow ~ ~1 ~ {Motion:[0.8,0.2,4.2],pickup:0,damage:1.0,life:1100}
     execute if score tick_main_thread AzrTimerStack matches 1460 as @e[tag=AzrielBossA,limit=3] at @s run summon arrow ~ ~1 ~ {Motion:[1.0,-0.2,4.0],pickup:0,damage:1.0,life:1100}
     execute if score tick_main_thread AzrTimerStack matches 1462 as @e[tag=AzrielBossA,limit=3] at @s run summon arrow ~ ~1 ~ {Motion:[1.2,-0.1,3.8],pickup:0,damage:1.0,life:1100}
-    execute if score tick_main_thread AzrTimerStack matches 1464 as @e[tag=AzrielBossA,limit=3] at @s run summon arrow ~ ~1 ~ {Motion:[1.4d,0.0d,3.6d],Rotation:[21.25050550713324f,0.0f],pickup:0,damage:1.0,life:1100}
-    execute if score tick_main_thread AzrTimerStack matches 1466 as @e[tag=AzrielBossA,limit=3] at @s run summon arrow ~ ~1 ~ {Motion:[1.6d,0.1d,3.4d],Rotation:[25.20112364547507f,1.5244135163784995f],pickup:0,damage:1.0,life:1100}
-    execute if score tick_main_thread AzrTimerStack matches 1468 as @e[tag=AzrielBossA,limit=3] at @s run summon arrow ~ ~1 ~ {Motion:[1.8d,0.2d,3.2d],Rotation:[29.357753542791276f,3.1180183310945f],pickup:0,damage:1.0,life:1100}
+    execute if score tick_main_thread AzrTimerStack matches 1464 as @e[tag=AzrielBossA,limit=3] at @s run summon arrow ~ ~1 ~ {Motion:[1.4,0.0,3.6],pickup:0,damage:1.0,life:1100}
+    execute if score tick_main_thread AzrTimerStack matches 1466 as @e[tag=AzrielBossA,limit=3] at @s run summon arrow ~ ~1 ~ {Motion:[1.6,0.1,3.4],pickup:0,damage:1.0,life:1100}
+    execute if score tick_main_thread AzrTimerStack matches 1468 as @e[tag=AzrielBossA,limit=3] at @s run summon arrow ~ ~1 ~ {Motion:[1.8,0.2,3.2],pickup:0,damage:1.0,life:1100}
     execute if score tick_main_thread AzrTimerStack matches 1450 as @e[tag=AzrielBossA,limit=3] at @s run summon arrow ~ ~1 ~ {Motion:[0.0,-0.2,-5.0],pickup:0,damage:1.0,life:1100}
     execute if score tick_main_thread AzrTimerStack matches 1452 as @e[tag=AzrielBossA,limit=3] at @s run summon arrow ~ ~1 ~ {Motion:[-0.2,-0.1,-4.8],pickup:0,damage:1.0,life:1100}
     execute if score tick_main_thread AzrTimerStack matches 1454 as @e[tag=AzrielBossA,limit=3] at @s run summon arrow ~ ~1 ~ {Motion:[-0.4,0.0,-4.6],pickup:0,damage:1.0,life:1100}

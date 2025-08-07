@@ -1,7 +1,7 @@
 execute at @e[tag=ZaneiSpotCage] run playsound minecraft:entity.arrow.shoot master @a ~ ~ ~ 10 1
 execute at @e[tag=ZaneiSpotCage] run playsound minecraft:entity.arrow.shoot master @a ~ ~ ~ 10 0.8
 execute at @e[tag=ZaneiSpotCage] run playsound minecraft:entity.firework_rocket.blast master @a ~ ~ ~ 10 0.7
-execute at @e[tag=ZaneiSpotCage] run summon arrow ~1.4 ~4 ~1.4 {Motion:[0.0d,0.0d,0.0d],Rotation:[0.0f,0.0f],pickup:0,damage:5.0,life:1100}
+execute at @e[tag=ZaneiSpotCage] run summon arrow ~1.4 ~4 ~1.4 {Motion:[0.0,0.0,0.0],pickup:0,damage:5.0,life:1100}
 execute at @e[tag=ZaneiSpotCage] run summon arrow ~0 ~4 ~1.6 {Motion:[0.0,-0.05,0.1],pickup:0,damage:5.0,life:1100}
 execute at @e[tag=ZaneiSpotCage] run summon arrow ~-1.4 ~4 ~1.4 {Motion:[0.0,-0.1,-0.1],pickup:0,damage:5.0,life:1100}
 execute at @e[tag=ZaneiSpotCage] run summon arrow ~-1.6 ~4 ~0 {Motion:[0.0,-0.5,-0.1],pickup:0,damage:5.0,life:1100}
