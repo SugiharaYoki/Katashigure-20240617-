@@ -1,4 +1,4 @@
-function skyblock:azr/tool_rng
+function skyblock:azr/tool/rng
 particle minecraft:portal ~ ~1 ~ 0.5 0.6 0.5 0.5 40
 tp @s @r[tag=azrPlayer]
 execute if score #rng8 Azr_system matches 1 run tp @s ~ ~ ~2

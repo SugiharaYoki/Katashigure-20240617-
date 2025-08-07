@@ -25,7 +25,7 @@ execute if score stage_main_thread AzrTimerStack matches 20 run playsound minecr
 
 execute if score stage_main_thread AzrTimerStack matches 36 run tellraw @a[tag=azrShowDialog] {"text":"大门似乎卡住了……","color":"gray"}
 
-execute if score stage_main_thread AzrTimerStack matches 4.. run function skyblock:azr/tool_rng
+execute if score stage_main_thread AzrTimerStack matches 4.. run function skyblock:azr/tool/rng
 execute if score stage_main_thread AzrTimerStack matches 52 run title @a[tag=azrShowDialog] actionbar {"text":"Stage 10 - Wave 1","color":"red"}
 execute if score stage_main_thread AzrTimerStack matches 52 positioned -79894 40.05 -113 run function skyblock:azr/effects/basalt_open
 execute if score stage_main_thread AzrTimerStack matches 52 positioned -79894 40.05 -115 run function skyblock:azr/effects/basalt_open

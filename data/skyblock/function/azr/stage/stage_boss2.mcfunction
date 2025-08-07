@@ -86,7 +86,7 @@ execute as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run function skyblo
     execute if score #rng10 Azr_system matches 1 run effect clear @e[tag=AzrielBossA,type=illusioner,limit=3] invisibility
     effect give @e[tag=AzrielBossA,type=illusioner,limit=3] slow_falling 10 0 true
     #防止坠入虚空 传送到定点或传送到玩家各有一半可能
-    execute as @e[tag=AzrielBossA,type=illusioner,limit=1] at @s if entity @s[y=0,dy=35] run function skyblock:azr/tool_rng
+    execute as @e[tag=AzrielBossA,type=illusioner,limit=1] at @s if entity @s[y=0,dy=35] run function skyblock:azr/tool/rng
     execute as @e[tag=AzrielBossA,type=illusioner,limit=1] at @s if entity @s[y=0,dy=35] if score @e[tag=sc,limit=1] rng2 matches 1 run tp @s @r[tag=azrPlayer]
     execute as @e[tag=AzrielBossA,type=illusioner,limit=1] at @s if entity @s[y=0,dy=35] if score @e[tag=sc,limit=1] rng2 matches 2 run tp @s -79903 44 -14.0
     #防止卡在墙内 传送到最近玩家
@@ -97,7 +97,7 @@ execute as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run function skyblo
 #AI - 一阶段
     #进入第一阶段
     execute if score tick_main_thread AzrTimerStack matches 172 run scoreboard players set tick_main_thread AzrTimerStack 1000
-    function skyblock:azr/tool_rng
+    function skyblock:azr/tool/rng
     # Wave I 循环直到第一阶段死亡
    
     execute if score tick_main_thread AzrTimerStack matches 1021 if score #rng3 Azr_system matches 1 if score zanei_flat_01_marker rng1 matches 22.. run scoreboard players set zanei_flat_01_marker rng1 0
@@ -273,7 +273,7 @@ execute as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run function skyblo
 #AI-二阶段
     #进入第二阶段
     execute if score tick_main_thread AzrTimerStack matches 800..2900 unless entity @e[tag=AzrielBossA,type=illusioner,limit=3] run scoreboard players set tick_main_thread AzrTimerStack 3000
-    function skyblock:azr/tool_rng
+    function skyblock:azr/tool/rng
     execute if score tick_main_thread AzrTimerStack matches 3001 run stopsound @a[tag=azrPlayer]
     execute if score tick_main_thread AzrTimerStack matches 3001 run kill @e[tag=AzrielDecMob]
     execute if score tick_main_thread AzrTimerStack matches 3001 run kill @e[tag=AzrielMob]

@@ -1,4 +1,4 @@
-function skyblock:azr/tool_rng
+function skyblock:azr/tool/rng
 
 execute if score stage_main_thread AzrTimerStack matches 1700..2890 if score #rng6 Azr_system matches 1..3 if score #rng7 Azr_system matches 1..2 if entity @a[tag=azrPlayer,distance=2.4..] as @e[tag=AzrielBossB,limit=1] at @s run particle large_smoke ~ ~ ~ 1 1 1 0.08 10
 execute if score stage_main_thread AzrTimerStack matches 1700..2890 if score #rng6 Azr_system matches 1..3 if score #rng7 Azr_system matches 1..2 if entity @a[tag=azrPlayer,distance=2.4..] as @r[tag=azrPlayer] at @s positioned -79719.0 ~ -162.0 run tp @e[tag=AzrielBossB,limit=1] ~ ~1 ~

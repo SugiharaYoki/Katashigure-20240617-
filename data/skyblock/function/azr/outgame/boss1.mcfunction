@@ -29,7 +29,7 @@ execute as @e[tag=arroworb2,type=marker] at @s run function skyblock:azr/outgame
     execute as @e[tag=AzrielBossA_outgame,limit=1] at @s unless block ~ ~1 ~ air run tp @s @r[gamemode=!creative,gamemode=!spectator,sort=nearest]
     # 152..172 -> 1000
     # Wave I - 只运行一次，自动进入下一阶段
-    function skyblock:azr/tool_rng
+    function skyblock:azr/tool/rng
     execute if score @s EntityTimer matches 152.. if score #rng7 Azr_system matches 1 if score #rng11 Azr_system matches 1 as @e[tag=AzrielBossA_outgame,limit=3] at @s if entity @a[gamemode=!creative,gamemode=!spectator,distance=0..2.5] run function skyblock:azr/outgame/boss1/tp1
     execute if score @s EntityTimer matches 152.. if score playerCount Azr_system matches 3.. if score #rng7 Azr_system matches 1 if score #rng11 Azr_system matches 4 as @e[tag=AzrielBossA_outgame,limit=3] at @s run function skyblock:azr/outgame/boss1/summon
     execute if score @s EntityTimer matches 152.. if score playerCount Azr_system matches 7.. if score #rng7 Azr_system matches 1 if score #rng9 Azr_system matches 4 as @e[tag=AzrielBossA_outgame,limit=3] at @s run function skyblock:azr/outgame/boss1/summon

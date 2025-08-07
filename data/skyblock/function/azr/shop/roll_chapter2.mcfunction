@@ -13,29 +13,29 @@ scoreboard players set @s Azr_Shop_rng12 12
 scoreboard players set @s Azr_Shop_rng10 12
 scoreboard players set @s Azr_Shop_rng11 12
 
-function skyblock:azr/tool_rng
+function skyblock:azr/tool/rng
 execute if score @s Azr_Shop_rng1 matches ..10 run scoreboard players operation @s Azr_Shop_rng1 += #rng8 Azr_system
-function skyblock:azr/tool_rng
+function skyblock:azr/tool/rng
 execute if score @s Azr_Shop_rng2 matches ..10 run scoreboard players operation @s Azr_Shop_rng2 += #rng8 Azr_system
-function skyblock:azr/tool_rng
+function skyblock:azr/tool/rng
 execute if score @s Azr_Shop_rng3 matches ..10 run scoreboard players operation @s Azr_Shop_rng3 += #rng8 Azr_system
-function skyblock:azr/tool_rng
+function skyblock:azr/tool/rng
 execute if score @s Azr_Shop_rng4 matches ..8 run scoreboard players operation @s Azr_Shop_rng4 += #rng14 Azr_system
-function skyblock:azr/tool_rng
+function skyblock:azr/tool/rng
 execute if score @s Azr_Shop_rng5 matches ..8 run scoreboard players operation @s Azr_Shop_rng5 += #rng14 Azr_system
-function skyblock:azr/tool_rng
+function skyblock:azr/tool/rng
 execute if score @s Azr_Shop_rng6 matches ..8 run scoreboard players operation @s Azr_Shop_rng6 += #rng14 Azr_system
-function skyblock:azr/tool_rng
+function skyblock:azr/tool/rng
 execute if score @s Azr_Shop_rng7 matches ..12 run scoreboard players operation @s Azr_Shop_rng7 += #rng16 Azr_system
-function skyblock:azr/tool_rng
+function skyblock:azr/tool/rng
 execute if score @s Azr_Shop_rng8 matches ..12 run scoreboard players operation @s Azr_Shop_rng8 += #rng16 Azr_system
-function skyblock:azr/tool_rng
+function skyblock:azr/tool/rng
 execute if score @s Azr_Shop_rng9 matches ..12 run scoreboard players operation @s Azr_Shop_rng9 += #rng16 Azr_system
-function skyblock:azr/tool_rng
+function skyblock:azr/tool/rng
 execute if score @s Azr_Shop_rng10 matches ..10 run scoreboard players operation @s Azr_Shop_rng10 += #rng8 Azr_system
-function skyblock:azr/tool_rng
+function skyblock:azr/tool/rng
 execute if score @s Azr_Shop_rng10 matches ..13 run scoreboard players operation @s Azr_Shop_rng10 += #rng2 Azr_system
-function skyblock:azr/tool_rng
+function skyblock:azr/tool/rng
 execute if score @s Azr_Shop_rng11 matches ..13 run scoreboard players operation @s Azr_Shop_rng11 += #rng2 Azr_system
 
 scoreboard players set @s Azr_Shop_rng11 -1

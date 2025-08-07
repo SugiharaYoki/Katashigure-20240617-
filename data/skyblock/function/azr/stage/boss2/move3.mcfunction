@@ -1,4 +1,4 @@
-function skyblock:azr/tool_rng
+function skyblock:azr/tool/rng
 playsound entity.illusioner.prepare_mirror master @a ~ ~ ~ 3 1.2
 particle campfire_cosy_smoke ~ ~1 ~ 0.4 0.5 0.4 0.2 18
 execute if score playercount Azr_system matches 1..2 run summon illusioner ~ ~ ~ {PersistenceRequired:1b,Tags:["AzrielMob","Immune","AzrielDecMob","AzrielBossAM1"],DeathLootTable:"skyblock:azriel_shadow_tier1",attributes:[{id:max_health,base:1.0},{id:movement_speed,base:0.42},{id:knockback_resistance,base:1.0},{id:armor,base:0.5}],Health:1.0f,CustomName:'"权之残影"',HandItems:[{count:1,id:bow},{}],HandDropChances:[0.0000f,0.0000f]}

@@ -9,7 +9,7 @@ execute if score stage_main_thread AzrTimerStack matches 400 run bossbar remove 
 #frontside:-79967 33 140
 #leftside:-79964 32 145
 #rightside:-79964 32 135
-execute if score stage_main_thread AzrTimerStack matches 1.. run function skyblock:azr/tool_rng
+execute if score stage_main_thread AzrTimerStack matches 1.. run function skyblock:azr/tool/rng
 
 execute if score stage_main_thread AzrTimerStack matches 4 run playsound minecraft:block.iron_door.open ambient @a[tag=azrShowDialog] -79936.0 56 -120 5 0.3
 execute if score stage_main_thread AzrTimerStack matches 5 run playsound minecraft:block.iron_door.open ambient @a[tag=azrShowDialog] -79936.0 56 -120 5 0.3

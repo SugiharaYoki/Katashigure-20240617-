@@ -20,7 +20,7 @@ execute if score stage_alt_thread AzrTimerStack matches 10.. if score #rng3 Azr_
 execute if score stage_alt_thread AzrTimerStack matches 10.. if score #rng3 Azr_system matches 1..2 if score #rng4 Azr_system matches 1..3 if score #rng5 Azr_system matches 1..3 as @e[name="狱山羊"] at @s run data modify entity @s Brain.memories."minecraft:angry_at".value set from entity @e[sort=nearest,limit=1,tag=AzrielMob] UUID
 execute if score stage_alt_thread AzrTimerStack matches 10.. if score #rng3 Azr_system matches 1..2 if score #rng4 Azr_system matches 1..3 if score #rng5 Azr_system matches 1..3 as @e[name="奇怪的狱山羊"] at @s run data modify entity @s Brain.memories."minecraft:angry_at".value set from entity @e[sort=nearest,limit=1,tag=AzrielMob] UUID
 
-execute if score stage_alt_thread AzrTimerStack matches 4.. run function skyblock:azr/tool_rng
+execute if score stage_alt_thread AzrTimerStack matches 4.. run function skyblock:azr/tool/rng
 execute if score stage_alt_thread AzrTimerStack matches 2 run title @a[tag=azrShowDialog] actionbar {"text":"Stage 15 - Wave 1","color":"red"}
 execute if score stage_alt_thread AzrTimerStack matches 2 run setblock -79657 23 -421 air
 

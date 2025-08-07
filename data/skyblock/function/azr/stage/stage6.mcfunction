@@ -12,7 +12,7 @@ execute if score stage_main_thread AzrTimerStack matches 316 run bossbar remove 
 #rightside:-79943 38 135
 
 #wtf?
-function skyblock:azr/tool_rng
+function skyblock:azr/tool/rng
 execute if score stage_main_thread AzrTimerStack matches 2 run scoreboard players set stage_main_thread AzrTimerStack 3
 execute if score stage_main_thread AzrTimerStack matches 5 run scoreboard players set stage_main_thread AzrTimerStack 6
 execute if score stage_main_thread AzrTimerStack matches 8 run scoreboard players set stage_main_thread AzrTimerStack 9
@@ -20,7 +20,7 @@ execute if score stage_main_thread AzrTimerStack matches 15 run scoreboard playe
 
 execute if score stage_main_thread AzrTimerStack matches 1.. as @a[tag=azrPlayer,x=-79926,y=38,z=134,distance=0..2] at @s unless items entity @s container.* arrow run give @s arrow 1
 execute if score stage_main_thread AzrTimerStack matches 1.. as @a[tag=azrPlayer,x=-79926,y=38,z=134,distance=0..2] at @s unless items entity @s container.* arrow run particle minecraft:entity_effect{color:[255,255,255,0]} -79926 38.2 134 1 0 1 2.0 50
-execute if score stage_main_thread AzrTimerStack matches 3.. run function skyblock:azr/tool_rng
+execute if score stage_main_thread AzrTimerStack matches 3.. run function skyblock:azr/tool/rng
 
 execute if score stage_main_thread AzrTimerStack matches 1 run summon pillager -79931 42 153 {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_pillager_tier1",Health:2.0f,CustomName:'"弩手"',CanPickUpLoot:0b,HandItems:[{count:1,id:"crossbow",components:{enchantments:{quick_charge:1,piercing:1}}},{}],HandDropChances:[1.0f,1.0f],ArmorItems:[{},{},{},{}],attributes:[{id:"max_health",base:3.0d},{id:"attack_damage",base:0.5d}]}
 execute if score stage_main_thread AzrTimerStack matches 4 if score playerCount Azr_system matches 2.. run summon pillager -79931 42 153 {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_pillager_tier1",Health:2.0f,CustomName:'"弩手"',CanPickUpLoot:0b,HandItems:[{count:1,id:"crossbow",components:{enchantments:{quick_charge:1,piercing:1}}},{}],HandDropChances:[1.0f,1.0f],ArmorItems:[{},{},{},{}],attributes:[{id:"max_health",base:3.0d},{id:"attack_damage",base:0.5d}]}

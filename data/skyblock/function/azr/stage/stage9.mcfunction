@@ -13,7 +13,7 @@ execute if score stage_main_thread AzrTimerStack matches 90 run bossbar remove a
 execute if score stage_main_thread AzrTimerStack matches 1..3 run playsound ambient.cave ambient @a[tag=azrShowDialog] -78000 100 0 160 1.2
 execute if score stage_main_thread AzrTimerStack matches 1..3 run playsound ambient.cave ambient @a[tag=azrShowDialog] -78000 100 0 160 1.0
 
-execute if score stage_main_thread AzrTimerStack matches 1.. run function skyblock:azr/tool_rng
+execute if score stage_main_thread AzrTimerStack matches 1.. run function skyblock:azr/tool/rng
 execute if score stage_main_thread AzrTimerStack matches 2 run title @a[tag=azrShowDialog] actionbar {"text":"Stage 9 - Wave 1","color":"red"}
 
 execute if score stage_main_thread AzrTimerStack matches 3..6 if score #rng2 Azr_system matches 1 run summon silverfish -79901 41 -49 {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_silverfish_tier1",Health:5.5f,CustomName:'"廊虫"',attributes:[{id:"max_health",base:5.5d},{id:"attack_damage",base:2.0d},{id:"movement_speed",base:0.25d}]}

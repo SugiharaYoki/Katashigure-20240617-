@@ -6,7 +6,7 @@ execute if score stage_main_thread AzrTimerStack matches 1 run bossbar set azr:p
 execute if score stage_main_thread AzrTimerStack matches 1 run bossbar set azr:progress_bar_normal max 370
 execute if score stage_main_thread AzrTimerStack matches 1..370 store result bossbar azr:progress_bar_normal value run scoreboard players get stage_main_thread AzrTimerStack
 execute if score stage_main_thread AzrTimerStack matches 370 run bossbar remove azr:progress_bar_normal
-execute if score stage_main_thread AzrTimerStack matches 1.. run function skyblock:azr/tool_rng
+execute if score stage_main_thread AzrTimerStack matches 1.. run function skyblock:azr/tool/rng
 #
 #nearside:-79887 38 61
 #farside:-79895 38 48

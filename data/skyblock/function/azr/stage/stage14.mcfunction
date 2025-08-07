@@ -10,7 +10,7 @@ execute if score stage_main_thread AzrTimerStack matches 1..12 run setblock -797
 #mainside:-79894 40 -113
 #subside:-79894 40 -115
 
-execute if score stage_main_thread AzrTimerStack matches 4.. run function skyblock:azr/tool_rng
+execute if score stage_main_thread AzrTimerStack matches 4.. run function skyblock:azr/tool/rng
 execute if score stage_main_thread AzrTimerStack matches 10.. as @a[tag=azrPlayer] at @s if entity @s[y=15,dy=4.2] run kill @s
 execute if score stage_main_thread AzrTimerStack matches 10.. as @e[name="僵尸盔甲匠"] at @s run function skyblock:azr/effects/zombie_armorer
 execute if score stage_main_thread AzrTimerStack matches 10.. as @e[name="僵尸牧师"] at @s if score #rng8 Azr_system matches 1 run function skyblock:azr/effects/zombie_cleric

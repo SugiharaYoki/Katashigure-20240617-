@@ -23,7 +23,7 @@ execute if items entity @s weapon.mainhand crossbow[custom_data~{crossbow_v71:1b
 #索命连击
 execute at @s[tag=hasSkills] run function skyblock:azr/system_sub/chain_kill
 #残城箭影
-execute at @s[tag=hasSkills,tag=azr_skills_arrow] run function skyblock:azr/system_sub/arrow
+execute at @s[tag=hasSkills,tag=azr_skills_arrow] run function skyblock:azr/system_sub/skills/arrow/main
 
 #死亡检测
 execute as @s[scores={Azr_forceDeath=1..}] at @s run function skyblock:azr/end_game/player_dead

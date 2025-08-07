@@ -1,4 +1,4 @@
-function skyblock:azr/tool_rng
+function skyblock:azr/tool/rng
 
 execute if score #rng4 Azr_system matches 1 positioned ~1 ~ ~ run function skyblock:azr/m/shadow_t1_skeleton
 execute if score #rng4 Azr_system matches 1 run particle minecraft:reverse_portal ~1 ~1 ~ 0.5 0.6 0.5 0.5 40

@@ -52,7 +52,7 @@ execute if score stage_main_thread AzrTimerStack matches 11.. as @a[tag=azrPlaye
 execute if score stage_main_thread AzrTimerStack matches 11.. as @a[tag=azrPlayer,tag=!AzrielEvent3765S] at @s if entity @n[tag=AzrielEvent3765,distance=0..3.5] run tag @s add AzrielEvent3765S
 
 execute if score stage_main_thread AzrTimerStack matches 50..200 run scoreboard players set stage_main_thread AzrTimerStack 55
-execute if score stage_main_thread AzrTimerStack matches 50..200 run function skyblock:azr/tool_rng
+execute if score stage_main_thread AzrTimerStack matches 50..200 run function skyblock:azr/tool/rng
 execute if score stage_main_thread AzrTimerStack matches 50..200 if score #rng15 Azr_system matches 1 if score #rng3 Azr_system matches 3 at @r[tag=azrShowDialog] run playsound event.raid.horn ambient @a[tag=azrShowDialog] ~50 ~ ~-50 480 0.9
 
 # execute if score stage_main_thread AzrTimerStack matches 50..200 if entity @a[tag=azrPlayer,x=-79773,y=42,z=-276,distance=0..6.5] run scoreboard players set stage_main_thread AzrTimerStack 5555

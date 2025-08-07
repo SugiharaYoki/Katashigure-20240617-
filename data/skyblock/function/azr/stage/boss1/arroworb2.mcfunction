@@ -1,5 +1,5 @@
 scoreboard players add @s Azr_arrowOrbTimer 1
-function skyblock:azr/tool_rng
+function skyblock:azr/tool/rng
 execute as @s[scores={Azr_arrowOrbTimer=1}] at @s run tp @s ~ ~1.5 ~
 execute as @s[scores={Azr_arrowOrbTimer=1}] at @s run particle minecraft:instant_effect ~ ~3.5 ~ 0.1 6 0.1 0.001 60
 execute as @s[scores={Azr_arrowOrbTimer=20..90}] at @s run particle minecraft:electric_spark ~ ~ ~ 0.22 0.22 0.22 0.001 6

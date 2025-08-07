@@ -14,7 +14,7 @@ execute if score stage_main_thread AzrTimerStack matches 1 run fill -79938 39 49
 execute if score stage_main_thread AzrTimerStack matches 1 run setblock -79887 44 164 air
 execute if score stage_main_thread AzrTimerStack matches 1 run setblock -79887 43 164 air
 execute if score stage_main_thread AzrTimerStack matches 1 run fill -79886 46 148 -79888 43 148 purple_stained_glass
-execute if score stage_main_thread AzrTimerStack matches 1.. run function skyblock:azr/tool_rng
+execute if score stage_main_thread AzrTimerStack matches 1.. run function skyblock:azr/tool/rng
 execute if score stage_main_thread AzrTimerStack matches 2 run playsound block.bell.use ambient @a[tag=azrShowDialog] -79887 50 164 100 0.7
 execute if score stage_main_thread AzrTimerStack matches 4 run playsound block.bell.use ambient @a[tag=azrShowDialog] -79887 50 164 100 0.7
 execute if score stage_main_thread AzrTimerStack matches 6 run playsound block.bell.use ambient @a[tag=azrShowDialog] -79887 50 164 100 0.7

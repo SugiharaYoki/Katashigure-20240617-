@@ -15,7 +15,7 @@ execute if score stage_main_thread AzrTimerStack matches 1 run setblock -79949 3
 execute if score stage_main_thread AzrTimerStack matches 1 run setblock -79949 33 140 air
 execute if score stage_main_thread AzrTimerStack matches 1 run setblock -79923 39 134 air
 execute if score stage_main_thread AzrTimerStack matches 1 run fill -79886 46 148 -79888 43 148 purple_stained_glass
-execute if score stage_main_thread AzrTimerStack matches 1.. run function skyblock:azr/tool_rng
+execute if score stage_main_thread AzrTimerStack matches 1.. run function skyblock:azr/tool/rng
 
 
 execute if score stage_main_thread AzrTimerStack matches 1..9 if score #rng2 Azr_system matches 1 if score #rng3 Azr_system matches 1 run summon zombie -79964 32 135 {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_zombie_tier1",Health:4.0f,CustomName:'"僵尸"',CanPickUpLoot:0b,IsBaby:0b,ArmorItems:[{},{},{},{}],attributes:[{id:"max_health",base:4.0d},{id:"attack_damage",base:1.5d}]}

@@ -15,7 +15,7 @@ execute if score stage_main_thread AzrTimerStack matches 20.. as @e[x=-79846,y=4
 execute if score stage_main_thread AzrTimerStack matches 20.. as @e[name="僵尸盔甲匠"] at @s run function skyblock:azr/azrielsmidgarden_effect_zombie_armorer
 execute if score stage_main_thread AzrTimerStack matches 20.. as @e[name="僵尸牧师"] at @s if score #rng8 Azr_system matches 1 run function skyblock:azr/azrielsmidgarden_effect_zombie_cleric
 
-execute if score stage_main_thread AzrTimerStack matches 1.. run function skyblock:azr/tool_rng
+execute if score stage_main_thread AzrTimerStack matches 1.. run function skyblock:azr/tool/rng
 execute if score stage_main_thread AzrTimerStack matches 1 run title @a[tag=azrShowDialog] actionbar {"text":"Stage 12 - Wave 1","color":"red"}
 
 

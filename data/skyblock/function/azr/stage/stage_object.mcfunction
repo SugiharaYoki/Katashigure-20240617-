@@ -6,7 +6,7 @@ execute if score stage_main_thread AzrTimerStack matches 2007 run bossbar set az
 execute if score stage_main_thread AzrTimerStack matches 2007..2277 store result bossbar azr:progress_bar_normal value run scoreboard players get mobCount Azr_system
 execute if score stage_main_thread AzrTimerStack matches 2277 run bossbar remove azr:progress_bar_normal
 #
-execute if score stage_main_thread AzrTimerStack matches 2001.. run function skyblock:azr/tool_rng
+execute if score stage_main_thread AzrTimerStack matches 2001.. run function skyblock:azr/tool/rng
 
 execute if score stage_main_thread AzrTimerStack matches 20.. as @e[name="僵尸盔甲匠"] at @s run function skyblock:azr/effects/zombie_armorer
 

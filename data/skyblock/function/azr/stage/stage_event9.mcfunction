@@ -1,6 +1,6 @@
 execute if entity @a[x=-79906,y=40,z=-144,distance=0..2,tag=azrPlayer,tag=!ZaneiTalkA] as @e[tag=AzrielBossFA] at @s run tp @s ~ ~ ~ facing entity @r[tag=azrPlayer]
 execute if entity @a[x=-79906,y=40,z=-144,distance=0..2,tag=azrShowDialog,tag=!ZaneiTalkA] at @e[tag=AzrielBossFA] run playsound minecraft:entity.illusioner.ambient master @a[tag=azrShowDialog] ~ ~ ~ 2 0.6
-execute if entity @a[x=-79906,y=40,z=-144,distance=0..2,tag=azrPlayer,tag=!ZaneiTalkA] run function skyblock:azr/tool_rng
+execute if entity @a[x=-79906,y=40,z=-144,distance=0..2,tag=azrPlayer,tag=!ZaneiTalkA] run function skyblock:azr/tool/rng
 execute as @a[x=-79906,y=40,z=-144,distance=0..2,tag=azrPlayer,tag=!ZaneiTalkA] run tellraw @s {"text":"权之残影：","color":"red"}
 execute if score #rng7 Azr_system matches 1 as @a[x=-79906,y=40,z=-144,distance=0..2,tag=azrPlayer,tag=!ZaneiTalkA] run tellraw @s {"text":"“吾辈将在这里稍作停留。”","color":"white"}
 execute if score #rng7 Azr_system matches 2 as @a[x=-79906,y=40,z=-144,distance=0..2,tag=azrPlayer,tag=!ZaneiTalkA] run tellraw @s {"text":"（低头冥想）","color":"gray"}

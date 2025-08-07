@@ -1,4 +1,4 @@
-function skyblock:azr/tool_rng
+function skyblock:azr/tool/rng
 execute if score #rng8 Azr_system matches 1 run data modify entity @s[tag=!AzrielBoss_NoMove] Motion set value [1.0,0.1,0.0]
 execute if score #rng8 Azr_system matches 2 run data modify entity @s[tag=!AzrielBoss_NoMove] Motion set value [-1.0,0.1,0.0]
 execute if score #rng8 Azr_system matches 3 run data modify entity @s[tag=!AzrielBoss_NoMove] Motion set value [0.0,0.1,1.0]

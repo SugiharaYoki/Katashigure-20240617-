@@ -111,7 +111,7 @@ execute if score stage_main_thread AzrTimerStack matches 11.. as @a[tag=azrPlaye
 execute if score stage_main_thread AzrTimerStack matches 11.. as @a[tag=azrPlayer,tag=!AzrielEvent3765S] at @s if entity @e[tag=AzrielEvent3765,distance=0..3.5] run tellraw @s {"text":"“路西法的审判军已经包围贝利尔的王城。距离推翻地狱的荒唐政权已近在眉睫。”","color":"white"}
 execute if score stage_main_thread AzrTimerStack matches 11.. as @a[tag=azrPlayer,tag=!AzrielEvent3765S] at @s if entity @e[tag=AzrielEvent3765,distance=0..3.5] run tag @s add AzrielEvent3765S
 
-execute if score stage_main_thread AzrTimerStack matches 50..1000 run function skyblock:azr/tool_rng
+execute if score stage_main_thread AzrTimerStack matches 50..1000 run function skyblock:azr/tool/rng
 execute if score stage_main_thread AzrTimerStack matches 50..1000 if score #rng15 Azr_system matches 1 if score #rng4 Azr_system matches 3 as @r[tag=azrShowDialog] at @s run playsound event.raid.horn ambient @a[tag=azrShowDialog] ~50 ~ ~-50 480 0.9
 
 execute if score stage_main_thread AzrTimerStack matches 40..200 run scoreboard players set stage_main_thread AzrTimerStack 55
@@ -248,7 +248,7 @@ execute if score stage_main_thread AzrTimerStack matches 9900..9999 run scoreboa
 
 execute if score stage_main_thread AzrTimerStack matches 1900..2000 run scoreboard players set stage_main_thread AzrTimerStack 1900
 
-execute if score stage_main_thread AzrTimerStack matches 10000..30000 run function skyblock:azr/tool_rng
+execute if score stage_main_thread AzrTimerStack matches 10000..30000 run function skyblock:azr/tool/rng
 execute if score stage_main_thread AzrTimerStack matches 10000..30000 if score #rng15 Azr_system matches 1 if score #rng5 Azr_system matches 3 as @r[tag=azrShowDialog] at @s run playsound event.raid.horn ambient @a[tag=azrShowDialog] ~10 ~ ~-50 480 0.9
 execute if score stage_main_thread AzrTimerStack matches 10000..30000 if score #rng15 Azr_system matches 1 if score #rng5 Azr_system matches 4 if score #rng3 Azr_system matches 1 as @r[tag=azrShowDialog] at @s run playsound entity.generic.explode ambient @a[tag=azrShowDialog] ~10 ~ ~-50 4.5 0.2
 execute if score stage_main_thread AzrTimerStack matches 10000..30000 if score #rng15 Azr_system matches 1 if score #rng5 Azr_system matches 4 if score #rng3 Azr_system matches 2 as @r[tag=azrShowDialog] at @s run playsound entity.firework_rocket.large_blast_far ambient @a[tag=azrShowDialog] ~10 ~ ~-50 480 0.6
