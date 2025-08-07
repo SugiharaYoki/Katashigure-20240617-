@@ -239,6 +239,7 @@ execute if entity @n[tag=sc,scores={sea_4temp2=2001}] positioned 90147 129 95 ru
 
 execute if entity @n[tag=sc,scores={sea_4temp2=2001}] at @a[tag=SEAPT,x=90132,y=120,z=90.5,dx=23,dy=15,dz=5,limit=1] run tp @a[tag=SEAPT] ~ ~ ~
 execute if entity @n[tag=sc,scores={sea_4temp2=2001..2099}] if entity @n[tag=SEArivette,x=90138,y=128,z=93,distance=0..3.2] run fill 90132 129 94 90131 128 92 air
+execute if entity @n[tag=sc,scores={sea_4temp2=2011..2099}] unless entity @n[tag=SEArivette] run fill 90132 129 94 90131 128 92 air
 execute unless block 90132 128 94 air as @n[tag=sc,scores={sea_4temp2=2085..2099}] run scoreboard players set @s sea_4temp2 2085
 execute if entity @n[tag=sc,scores={sea_4temp2=2030}] run setblock 90147 132 91 air destroy
 execute if entity @n[tag=sc,scores={sea_4temp2=2030}] run summon lightning_bolt 90147 131 91
