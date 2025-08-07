@@ -1,13 +1,13 @@
 playsound minecraft:entity.arrow.shoot master @a[tag=azrShowDialog] ~ ~ ~ 10 1
 playsound minecraft:entity.arrow.shoot master @a[tag=azrShowDialog] ~ ~ ~ 10 0.8
-summon arrow ~ ~1 ~ {Motion:[3.0,0.1,0.0],pickup:0,damage:2.0,life:1100}
-summon arrow ~ ~1 ~ {Motion:[-3.0,0.1,0.0],pickup:0,damage:2.0,life:1100}
-summon arrow ~ ~1 ~ {Motion:[0.0,0.1,3.0],pickup:0,damage:2.0,life:1100}
-summon arrow ~ ~1 ~ {Motion:[0.0,0.1,-3.0],pickup:0,damage:2.0,life:1100}
-execute if entity @s[scores={HP=..50}] run summon arrow ~ ~1 ~ {Motion:[3.0,0.35,0.0],pickup:0,damage:1.5,life:1100}
-execute if entity @s[scores={HP=..50}] run summon arrow ~ ~1 ~ {Motion:[-3.0,0.35,0.0],pickup:0,damage:1.5,life:1100}
-execute if entity @s[scores={HP=..50}] run summon arrow ~ ~1 ~ {Motion:[0.0,0.35,3.0],pickup:0,damage:1.5,life:1100}
-execute if entity @s[scores={HP=..50}] run summon arrow ~ ~1 ~ {Motion:[0.0,0.35,-3.0],pickup:0,damage:1.5,life:1100}
+summon arrow ~ ~1 ~ {Motion:[3.0d,0.1d,0.0d],Rotation:[90.0f,1.9091524329963763f],pickup:0,damage:2.0,life:1100}
+summon arrow ~ ~1 ~ {Motion:[-3.0d,0.1d,0.0d],Rotation:[-90.0f,1.9091524329963763f],pickup:0,damage:2.0,life:1100}
+summon arrow ~ ~1 ~ {Motion:[0.0d,0.1d,3.0d],Rotation:[0.0f,1.9091524329963763f],pickup:0,damage:2.0,life:1100}
+summon arrow ~ ~1 ~ {Motion:[0.0d,0.1d,-3.0d],Rotation:[180.0f,1.9091524329963763f],pickup:0,damage:2.0,life:1100}
+execute if entity @s[scores={HP=..50}] run summon arrow ~ ~1 ~ {Motion:[3.0d,0.35d,0.0d],Rotation:[90.0f,6.654425046006595f],pickup:0,damage:1.5,life:1100}
+execute if entity @s[scores={HP=..50}] run summon arrow ~ ~1 ~ {Motion:[-3.0d,0.35d,0.0d],Rotation:[-90.0f,6.654425046006595f],pickup:0,damage:1.5,life:1100}
+execute if entity @s[scores={HP=..50}] run summon arrow ~ ~1 ~ {Motion:[0.0d,0.35d,3.0d],Rotation:[0.0f,6.654425046006595f],pickup:0,damage:1.5,life:1100}
+execute if entity @s[scores={HP=..50}] run summon arrow ~ ~1 ~ {Motion:[0.0d,0.35d,-3.0d],Rotation:[180.0f,6.654425046006595f],pickup:0,damage:1.5,life:1100}
 
 schedule function skyblock:azr/stage/boss1/flat1_wc 0t
 schedule function skyblock:azr/stage/boss1/flat1_wc 3t

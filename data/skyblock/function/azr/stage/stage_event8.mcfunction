@@ -49,7 +49,7 @@ execute if score stage_main_thread AzrTimerStack matches 3048 as @e[tag=AzrielMo
 execute if score stage_main_thread AzrTimerStack matches 3056..3059 as @e[tag=AzrielMobE8] at @s run playsound minecraft:entity.firework_rocket.blast master @a[tag=azrShowDialog] ~ ~3 ~ 10 0.7
 execute if score stage_main_thread AzrTimerStack matches 3056..3059 as @e[tag=AzrielMobE8] at @s run playsound minecraft:entity.arrow.shoot master @a[tag=azrShowDialog] ~ ~3 ~ 10 0.8
 execute if score stage_main_thread AzrTimerStack matches 3056..3059 as @e[tag=AzrielMobE8] at @s run particle minecraft:soul_fire_flame ~ ~3 ~ 0.2 0.2 0.2 0.15 10
-execute if score stage_main_thread AzrTimerStack matches 3056..3059 as @e[tag=AzrielMobE8] at @s run summon arrow ~ ~3 ~ {Motion:[0.0d,-1.0d,0.0d],pickup:0,damage:30.0d,life:1100}
+execute if score stage_main_thread AzrTimerStack matches 3056..3059 as @e[tag=AzrielMobE8] at @s run summon arrow ~ ~3 ~ {Motion:[0.0d,-1.0d,0.0d],Rotation:[0.0f,-90.0f],pickup:0,damage:30.0d,life:1100}
 
 execute if score stage_main_thread AzrTimerStack matches 3056..3059 if entity @e[tag=AzrielMobE8] run scoreboard players set stage_main_thread AzrTimerStack 3056
 execute if score stage_main_thread AzrTimerStack matches 3067 run effect give @e[tag=AzrielBossFA] slow_falling 3 2 false
