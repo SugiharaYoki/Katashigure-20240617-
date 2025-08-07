@@ -95,9 +95,8 @@ execute as @e[tag=arroworb2,type=marker] at @s run function skyblock:azr/outgame
     execute if score @s EntityTimer matches 2501 if score playerCount Azr_system matches 3..4 if entity @e[tag=AzrielBossA_outgame,scores={Azr_mobHealth=..100}] run scoreboard players add @s EntityTimer 1
     execute if score @s EntityTimer matches 2501 if score playerCount Azr_system matches 5..6 if entity @e[tag=AzrielBossA_outgame,scores={Azr_mobHealth=..150}] run scoreboard players add @s EntityTimer 1
 
-    execute as @e[tag=AzrielBossA_outgame,type=illusioner,limit=3] at @s run function skyblock:sea/experimental/zanei_flat_01
-    execute as @e[tag=AzrielBossA_outgame,type=illusioner,limit=3] at @s run function skyblock:sea/experimental/zanei_flat_02
-   
+    execute as @e[tag=AzrielBossA_outgame,type=illusioner,limit=3] at @s run function skyblock:azr/outgame/boss1/flat7
+    execute as @e[tag=AzrielBossA_outgame,type=illusioner,limit=3] at @s run function skyblock:azr/outgame/boss1/flat8
     # Wave II 900..1880 循环直到死亡
     execute if score @s EntityTimer matches 900..2800 if score #rng19 Azr_system matches 1..11 if score #rng20 Azr_system matches 4..5 if entity @e[tag=AzrielBossA_outgame,scores={Azr_mobHealth=..30}] if entity @a[gamemode=!creative,gamemode=!spectator,distance=0..2.5] run function skyblock:azr/outgame/boss1/tp1
     execute if score @s EntityTimer matches 900..2800 if score #rng19 Azr_system matches 1..11 if score #rng20 Azr_system matches 6..7 if entity @e[tag=AzrielBossA_outgame,scores={Azr_mobHealth=..50}] if score zanei_flat_01_marker rng1 matches 22.. run scoreboard players set zanei_flat_01_marker rng1 0

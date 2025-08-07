@@ -148,8 +148,8 @@ execute as @e[tag=arroworb2,type=marker] at @s run function skyblock:azr/stage/b
     execute if score tick_main_thread AzrTimerStack matches 2501 if score playerCount Azr_system matches 3..4 if entity @e[tag=AzrielBossA,scores={Azr_mobHealth=..100}] run scoreboard players add tick_main_thread AzrTimerStack 1
     execute if score tick_main_thread AzrTimerStack matches 2501 if score playerCount Azr_system matches 5..6 if entity @e[tag=AzrielBossA,scores={Azr_mobHealth=..150}] run scoreboard players add tick_main_thread AzrTimerStack 1
 
-    execute as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run function skyblock:sea/experimental/zanei_flat_01
-    execute as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run function skyblock:sea/experimental/zanei_flat_02
+    execute as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run function skyblock:azr/stage/boss1/flat7
+    execute as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run function skyblock:azr/stage/boss1/flat8
    
     # Wave II 900..1880 循环直到死亡
     execute if score tick_main_thread AzrTimerStack matches 900..2800 if score #rng19 Azr_system matches 1..11 if score #rng20 Azr_system matches 4..5 if entity @e[tag=AzrielBossA,scores={Azr_mobHealth=..30}] if entity @a[tag=azrPlayer,distance=0..2.5] run function skyblock:azr/stage/boss1/tp1
