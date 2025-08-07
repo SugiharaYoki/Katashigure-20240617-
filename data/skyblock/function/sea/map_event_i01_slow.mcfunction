@@ -166,5 +166,5 @@ execute if items entity @a container.* fire_charge as @a[tag=SEAPT,advancements=
 
 execute as @n[tag=sc,scores={sea_4temp2=6000..6001}] run scoreboard players add 10e959db-4b44-4cdd-b98c-350d3b454206 sea_4temp2 1
 execute as @n[tag=sc,scores={sea_4temp2=6000..6002}] run function skyblock:sea/e/ch1/boss1_framauros_alive
-execute as @n[tag=sc,scores={sea_4temp2=6002..6360}] at @n[tag=SEAframauros] if entity @a[tag=SEAPT,distance=0.1..5] run function skyblock:sea/e/ch1/boss1_framauros_alive
-execute as @n[tag=sc,scores={sea_4temp2=6360..7000}] run function skyblock:sea/e/ch1/boss1_framauros_alive
+execute as @n[tag=sc,scores={sea_4temp2=6002..6334}] at @n[tag=SEAframauros] if entity @a[tag=SEAPT,distance=0.1..5] run function skyblock:sea/e/ch1/boss1_framauros_alive
+execute as @n[tag=sc,scores={sea_4temp2=6334..7000}] run function skyblock:sea/e/ch1/boss1_framauros_alive
