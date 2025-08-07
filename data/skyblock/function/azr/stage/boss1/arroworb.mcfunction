@@ -5,12 +5,12 @@ execute as @s[scores={Azr_arrowOrbTimer=1}] at @s run particle minecraft:instant
 execute as @s[scores={Azr_arrowOrbTimer=20..90}] at @s run particle minecraft:electric_spark ~ ~ ~ 0.22 0.22 0.22 0.001 6
 execute as @s[scores={Azr_arrowOrbTimer=20..90}] at @s run particle minecraft:enchant ~ ~ ~ 0.2 0.2 0.2 0.1 3
 execute if score #rng3 Azr_system matches 3 as @s[scores={Azr_arrowOrbTimer=30..90}] at @s run particle minecraft:enchanted_hit ~ ~ ~ 0.17 0.17 0.17 0.001 6
-execute if score #rng3 Azr_system matches 3 if score #rng9 Azr_system matches 1 as @s[scores={Azr_arrowOrbTimer=30..90}] at @s run summon arrow ~ ~0.5 ~ {Motion:[0.0,0.2,0.0],pickup:0,damage:2.5,life:1100}
-execute if score #rng3 Azr_system matches 3 if score #rng9 Azr_system matches 2 as @s[scores={Azr_arrowOrbTimer=30..90}] at @s run summon arrow ~ ~0.5 ~ {Motion:[0.1,0.2,0.0],pickup:0,damage:2.5,life:1100}
+execute if score #rng3 Azr_system matches 3 if score #rng9 Azr_system matches 1 as @s[scores={Azr_arrowOrbTimer=30..90}] at @s run summon arrow ~ ~0.5 ~ {Motion:[0.0d,0.2d,0.0d],Rotation:[0.0f,90.0f],pickup:0,damage:2.5,life:1100}
+execute if score #rng3 Azr_system matches 3 if score #rng9 Azr_system matches 2 as @s[scores={Azr_arrowOrbTimer=30..90}] at @s run summon arrow ~ ~0.5 ~ {Motion:[0.1d,0.2d,0.0d],Rotation:[90.0f,63.43494882292201f],pickup:0,damage:2.5,life:1100}
 execute if score #rng3 Azr_system matches 3 if score #rng9 Azr_system matches 3 as @s[scores={Azr_arrowOrbTimer=30..90}] at @s run summon arrow ~ ~0.5 ~ {Motion:[-0.1,0.2,0.0],pickup:0,damage:2.5,life:1100}
-execute if score #rng3 Azr_system matches 3 if score #rng9 Azr_system matches 4 as @s[scores={Azr_arrowOrbTimer=30..90}] at @s run summon arrow ~ ~0.5 ~ {Motion:[0.0,0.2,0.1],pickup:0,damage:2.5,life:1100}
+execute if score #rng3 Azr_system matches 3 if score #rng9 Azr_system matches 4 as @s[scores={Azr_arrowOrbTimer=30..90}] at @s run summon arrow ~ ~0.5 ~ {Motion:[0.0d,0.2d,0.1d],Rotation:[0.0f,63.43494882292201f],pickup:0,damage:2.5,life:1100}
 execute if score #rng3 Azr_system matches 3 if score #rng9 Azr_system matches 5 as @s[scores={Azr_arrowOrbTimer=30..90}] at @s run summon arrow ~ ~0.5 ~ {Motion:[0.0,0.2,-0.1],pickup:0,damage:2.5,life:1100}
-execute if score #rng3 Azr_system matches 3 if score #rng9 Azr_system matches 6 as @s[scores={Azr_arrowOrbTimer=30..90}] at @s run summon arrow ~ ~0.5 ~ {Motion:[0.1,0.2,0.1],pickup:0,damage:2.5,life:1100}
+execute if score #rng3 Azr_system matches 3 if score #rng9 Azr_system matches 6 as @s[scores={Azr_arrowOrbTimer=30..90}] at @s run summon arrow ~ ~0.5 ~ {Motion:[0.1d,0.2d,0.1d],Rotation:[45.0f,54.735610317245346f],pickup:0,damage:2.5,life:1100}
 execute if score #rng3 Azr_system matches 3 if score #rng9 Azr_system matches 7 as @s[scores={Azr_arrowOrbTimer=30..90}] at @s run summon arrow ~ ~0.5 ~ {Motion:[-0.1,0.2,0.1],pickup:0,damage:2.5,life:1100}
 execute if score #rng3 Azr_system matches 3 if score #rng9 Azr_system matches 8 as @s[scores={Azr_arrowOrbTimer=30..90}] at @s run summon arrow ~ ~0.5 ~ {Motion:[0.1,0.2,-0.1],pickup:0,damage:2.5,life:1100}
 execute if score #rng3 Azr_system matches 3 if score #rng9 Azr_system matches 9 as @s[scores={Azr_arrowOrbTimer=30..90}] at @s run summon arrow ~ ~0.5 ~ {Motion:[-0.1,0.2,-0.1],pickup:0,damage:2.5,life:1100}
