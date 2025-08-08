@@ -29,7 +29,7 @@ execute positioned 90142 153 147 if entity @a[tag=SEAPT,tag=!SEAPF,distance=0..4
 
 #行政区二楼BOSS
 execute if score SEA_ch6_f2 rng3 matches 1.. run function skyblock:sea/e/ch6/part1/event_f2_mangrove
-execute if score SEA_ch6_f2 rng1 matches 1.. if score SEA_ch6_f2 rng2 matches ..50 run function skyblock:sea/e/ch6/part1/event_f2_boss
+execute if score SEA_ch6_f2 rng1 matches 1..300 if score SEA_ch6_f2 rng2 matches ..50 run function skyblock:sea/e/ch6/part1/event_f2_boss
 
 execute if score SEA_ch6_event rng4 matches 1..3000 run function skyblock:sea/e/ch6/part1/event_f1_broadcast
 #行政区三楼 通讯总站
@@ -43,7 +43,7 @@ execute if score SEA_ch6_event rng5 matches 2000..8999 positioned 90144 161 124 
 execute if score SEA_ch6_event rng5 matches 9000..12000 positioned 90144 161 124 run function skyblock:sea/e/ch6/part2/event_defend
 execute if score SEA_ch6_event rng5 matches 12001.. positioned 90144 161 124 run function skyblock:sea/e/ch6/part2/event_cliff
 
-execute if score SEA_ch6_event rng5 matches 1.. unless entity @n[tag=SEAedwina] as @p[tag=SEAPT] at @s run function skyblock:sea/m/unique/npc_edwina_ch6
+execute if score SEA_ch6_event rng5 matches 1000.. unless entity @n[tag=SEAedwina] as @p[tag=SEAPT] at @s run function skyblock:sea/m/unique/npc_edwina_ch6
 execute if score SEA_ch6_event rng5 matches 1.. as @r[tag=SEAPT] at @s as @n[tag=SEAedwina,type=witch,distance=0..2000] run kill @s
 
 #记忆密码1

@@ -83,6 +83,20 @@ execute if block 90074 103 136 lectern if score SEA_ch5_event_engineering_fiona 
 execute if block 90074 103 136 lectern if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 5001.. if score @n[tag=SEAboss5] rng1 matches 2.. run title @s[tag=SEAPT] actionbar {"text":"目标：尝试击败诺曼博士","color":"green"}
 execute if block 90074 103 136 lectern if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 5001.. if entity @n[tag=SEAboss5b] run title @s[tag=SEAPT] actionbar {"text":"目标：与天使战斗。","color":"green"}
 execute if block 90074 103 136 lectern if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 5001.. run title @s[tag=SEAPT,tag=e_i_47] actionbar {"text":"目标：重返主平台 找到进入行政区的方法","color":"green"}
+execute if block 90081 101 137 minecraft:dark_oak_hanging_sign run title @s actionbar {"text":"目标：重返主平台 找到进入行政区的方法","color":"green"}
+execute if block 90081 101 137 minecraft:dark_oak_hanging_sign if score SEA_ch6_event rng1 matches 257.. run title @s actionbar {"text":"目标：找到进入行政区的方法","color":"green"}
+execute if block 90081 101 137 minecraft:dark_oak_hanging_sign run title @s[tag=e_i_52] actionbar {"text":"目标：前往行政区3楼","color":"green"}
+execute if block 90081 101 137 minecraft:dark_oak_hanging_sign if score SEA_ch6_f2 rng3 matches 2..100 run title @s actionbar {"text":"目标：开启行政区2楼的消防系统","color":"green"}
+execute if block 90081 101 137 minecraft:dark_oak_hanging_sign if score SEA_ch6_f2 rng3 matches 101.. run title @s actionbar {"text":"目标：解开行政区2楼的记忆密码","color":"green"}
+execute if block 90081 101 137 minecraft:dark_oak_hanging_sign if score SEA_ch6_f2 rng1 matches 2.. run title @s actionbar {"text":"目标：前往行政区3楼的联络总站","color":"green"}
+execute if block 90081 101 137 minecraft:dark_oak_hanging_sign if score SEA_ch6_f2 rng1 matches 52.. run title @s actionbar {"text":"目标：立即前往行政区3楼的联络总站","color":"green"}
+execute if block 90081 101 137 minecraft:dark_oak_hanging_sign if score SEA_ch6_f2 rng1 matches 102.. run title @s actionbar {"text":"目标：现在 马上 立即前往行政区3楼的联络总站","color":"green"}
+execute if block 90081 101 137 minecraft:dark_oak_hanging_sign if score SEA_ch6_f2 rng1 matches 152.. run title @s actionbar {"text":"目标：前往联络总站 前往联络总站 前往联络总站","color":"green"}
+execute if block 90081 101 137 minecraft:dark_oak_hanging_sign if score SEA_ch6_f2 rng1 matches 202.. run title @s actionbar {"text":"目标：联络总站联络总站联络总站联络总站联络总站联络总站联络总站","color":"dark_red"}
+execute if block 90081 101 137 minecraft:dark_oak_hanging_sign if score SEA_ch6_f2 rng1 matches 252.. run title @s actionbar {"text":"目标：快点 前往联络总站 现在 马上 立即前往联络总站","color":"dark_red"}
+execute if block 90081 101 137 minecraft:dark_oak_hanging_sign if score SEA_ch6_f2 rng1 matches 299.. run title @s actionbar {"text":"前往联络总站前往联络总站前往联络总站前往联络总站前往联络总站前往联络总站前往联络总站前往联络总站前往联络总站前往联络总站前往联络总站前往联络总站","color":"dark_red"}
+execute if block 90081 101 137 minecraft:dark_oak_hanging_sign run title @s[tag=e_i_53] actionbar {"text":"目标：前行 并见证一切","color":"green"}
+execute if block 90081 101 137 minecraft:dark_oak_hanging_sign if score SEA_ch6_event rng5 matches 2.. run title @s actionbar {"text":"玛瑞莲的指引到此结束 你已完成她委托的全部事项","color":"gray"}
 
 
 execute as @e[distance=0..300,type=shulker,tag=SEA_SEEK_DESTINATION] at @s positioned ~ ~0.5 ~ run function skyblock:sea/p/mob/destination
