@@ -1,0 +1,1 @@
+function skyblock:azr/lifecycle/jump_to/data_modifier/ch1_start

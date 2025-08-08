@@ -1,3 +1,0 @@
-scoreboard players remove @s Azr_emerald 3
-
-function skyblock:azr/items/weapons/wooden_hoe_normal

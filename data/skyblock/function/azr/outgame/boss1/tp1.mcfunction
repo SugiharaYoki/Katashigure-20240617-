@@ -1,4 +1,4 @@
-function skyblock:azr/tool/rng
+function skyblock:azr/system/utils/rng
 particle minecraft:portal ~ ~1 ~ 0.5 0.6 0.5 0.5 40
 tp @s @r[tag=azrPlayer]
 execute if score #rng8 Azr_system matches 1 run tp @s ~ ~ ~2
@@ -10,7 +10,7 @@ execute if score #rng8 Azr_system matches 6 run tp @s ~2 ~ ~-2
 execute if score #rng8 Azr_system matches 7 run tp @s ~-2 ~ ~2
 execute if score #rng8 Azr_system matches 8 run tp @s ~-2 ~ ~-2
 execute at @s run particle minecraft:reverse_portal ~ ~1 ~ 0.5 0.6 0.5 0.5 40
-execute positioned ~ ~ ~ run function skyblock:azr/mobs/shadow_t1_skeleton
+execute positioned ~ ~ ~ run function skyblock:azr/assets/mobs/shadow_t1_skeleton
 execute if score #rng4 Azr_system matches 1 run tp @s ~ ~ ~1
 execute if score #rng4 Azr_system matches 2 run tp @s ~ ~ ~-1
 execute if score #rng4 Azr_system matches 3 run tp @s ~1 ~ ~
