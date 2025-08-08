@@ -42,25 +42,25 @@ execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=1..5}] rng7
 execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=6..7}] rng7 matches 10 run playsound minecraft:entity.wither.break_block hostile @a ~ ~ ~ 5 1.1
 execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=6..7}] rng7 matches 10 run playsound minecraft:entity.firework_rocket.large_blast hostile @a ~ ~ ~ 5 0.8
 execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=6..7}] rng7 matches 10 run particle minecraft:gust ~ ~0.0 ~ 2 1 2 0 30
-execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=6..7}] rng7 matches 13 run particle minecraft:gust ~ ~1.5 ~ 4 1 4 0 30
-execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=6..7}] rng7 matches 16 run particle minecraft:gust ~ ~3.0 ~ 6 1 6 0 30
-execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=6..7}] rng7 matches 19 run particle minecraft:gust ~ ~4.5 ~ 8 1 8 0 30
+execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=6..7}] rng7 matches 14 run particle minecraft:gust ~ ~1.5 ~ 4 1 4 0 30
+execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=6..7}] rng7 matches 18 run particle minecraft:gust ~ ~3.0 ~ 6 1 6 0 30
+execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=6..7}] rng7 matches 22 run particle minecraft:gust ~ ~4.5 ~ 8 1 8 0 30
 execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=6..7}] rng7 matches 10 run particle minecraft:explosion ~ ~0.0 ~ 2 1 2 0 100
-execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=6..7}] rng7 matches 13 run particle minecraft:explosion ~ ~1.5 ~ 4 1 4 0 100
-execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=6..7}] rng7 matches 16 run particle minecraft:explosion ~ ~3.0 ~ 6 1 6 0 100
-execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=6..7}] rng7 matches 19 run particle minecraft:explosion ~ ~4.5 ~ 8 1 8 0 100
+execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=6..7}] rng7 matches 14 run particle minecraft:explosion ~ ~1.5 ~ 4 1 4 0 100
+execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=6..7}] rng7 matches 18 run particle minecraft:explosion ~ ~3.0 ~ 6 1 6 0 100
+execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=6..7}] rng7 matches 22 run particle minecraft:explosion ~ ~4.5 ~ 8 1 8 0 100
 execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=6..7}] rng7 matches 10 run playsound entity.wind_charge.wind_burst hostile @a ~ ~ ~ 3 0.8
-execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=6..7}] rng7 matches 13 run playsound entity.wind_charge.wind_burst hostile @a ~ ~ ~ 3 0.8
-execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=6..7}] rng7 matches 16 run playsound entity.wind_charge.wind_burst hostile @a ~ ~ ~ 3 0.8
-execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=6..7}] rng7 matches 19 run playsound entity.wind_charge.wind_burst hostile @a ~ ~ ~ 3 0.8
+execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=6..7}] rng7 matches 14 run playsound entity.wind_charge.wind_burst hostile @a ~ ~ ~ 3 0.8
+execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=6..7}] rng7 matches 18 run playsound entity.wind_charge.wind_burst hostile @a ~ ~ ~ 3 0.8
+execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=6..7}] rng7 matches 22 run playsound entity.wind_charge.wind_burst hostile @a ~ ~ ~ 3 0.8
 execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=6..7}] rng7 matches 10 run playsound entity.generic.explode hostile @a ~ ~ ~ 3 1.2
-execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=6..7}] rng7 matches 13 run playsound entity.generic.explode hostile @a ~ ~ ~ 3 1.2
-execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=6..7}] rng7 matches 16 run playsound entity.generic.explode hostile @a ~ ~ ~ 3 1.2
-execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=6..7}] rng7 matches 19 run playsound entity.generic.explode hostile @a ~ ~ ~ 3 1.2
+execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=6..7}] rng7 matches 14 run playsound entity.generic.explode hostile @a ~ ~ ~ 3 1.2
+execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=6..7}] rng7 matches 18 run playsound entity.generic.explode hostile @a ~ ~ ~ 3 1.2
+execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=6..7}] rng7 matches 22 run playsound entity.generic.explode hostile @a ~ ~ ~ 3 1.2
 execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=6..7}] rng7 matches 10 run fill ~2 ~ ~2 ~-2 ~ ~-2 air replace fire
-execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=6..7}] rng7 matches 13 run fill ~4 ~ ~4 ~-4 ~ ~-4 air replace fire
-execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=6..7}] rng7 matches 16 run fill ~6 ~ ~6 ~-6 ~ ~-6 air replace fire
-execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=6..7}] rng7 matches 19 run fill ~8 ~ ~8 ~-8 ~ ~-8 air replace fire
+execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=6..7}] rng7 matches 14 run fill ~4 ~ ~4 ~-4 ~ ~-4 air replace fire
+execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=6..7}] rng7 matches 18 run fill ~6 ~ ~6 ~-6 ~ ~-6 air replace fire
+execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=6..7}] rng7 matches 22 run fill ~8 ~ ~8 ~-8 ~ ~-8 air replace fire
 execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=6..7}] rng7 matches 23.. run scoreboard players set @s rng7 0
 
 #execute if score @s rng4 matches 50.. run scoreboard players set @s rng4 -2
