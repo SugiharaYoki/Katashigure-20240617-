@@ -83,6 +83,7 @@ execute if block 90074 103 136 lectern if score SEA_ch5_event_engineering_fiona 
 execute if block 90074 103 136 lectern if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 5001.. if score @n[tag=SEAboss5] rng1 matches 2.. run title @s[tag=SEAPT] actionbar {"text":"目标：尝试击败诺曼博士","color":"green"}
 execute if block 90074 103 136 lectern if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 5001.. if entity @n[tag=SEAboss5b] run title @s[tag=SEAPT] actionbar {"text":"目标：与天使战斗。","color":"green"}
 execute if block 90074 103 136 lectern if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 5001.. run title @s[tag=SEAPT,tag=e_i_47] actionbar {"text":"目标：重返主平台 找到进入行政区的方法","color":"green"}
+execute if block 90081 101 137 minecraft:dark_oak_hanging_sign run title @s actionbar {"text":"目标：重返主平台 找到进入行政区的方法","color":"green"}
 execute if block 90081 101 137 minecraft:dark_oak_hanging_sign if score SEA_ch6_event rng1 matches 257.. run title @s actionbar {"text":"目标：找到进入行政区的方法","color":"green"}
 execute if block 90081 101 137 minecraft:dark_oak_hanging_sign run title @s[tag=e_i_52] actionbar {"text":"目标：前往行政区3楼","color":"green"}
 execute if block 90081 101 137 minecraft:dark_oak_hanging_sign if score SEA_ch6_f2 rng3 matches 2..100 run title @s actionbar {"text":"目标：开启行政区2楼的消防系统","color":"green"}
