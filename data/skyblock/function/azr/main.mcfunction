@@ -95,6 +95,16 @@ team join AzrPlayer @e[tag=AzrielFriendly]
 scoreboard players reset $playerExists Azr_system
 execute as @a[tag=azrPlayer] run function skyblock:azr/player
 
+
+execute if score $playerExists Azr_system matches 1 if score tick_count_main AzrTimerStack matches -2147483648..2147483647 run scoreboard players add tick_count_main AzrTimerStack 1
+execute if score $playerExists Azr_system matches 1 if score timer_static_5s AzrTimerStack matches -2147483648..2147483647 run scoreboard players add timer_static_5s AzrTimerStack 1
+# 在部分关卡的的四倍速走秒
+execute if score $playerExists Azr_system matches 1 if score isStarted Azr_system matches 1 if score stage Azr_system matches 34..45 if score tick_count_main AzrTimerStack matches 5.. run function skyblock:azr/core
+execute if score $playerExists Azr_system matches 1 if score isStarted Azr_system matches 1 if score stage Azr_system matches 51..61 if score tick_count_main AzrTimerStack matches 5.. run function skyblock:azr/core
+execute if score $playerExists Azr_system matches 1 if score isStarted Azr_system matches 1 if score stage Azr_system matches 63.. if score tick_count_main AzrTimerStack matches 5.. run function skyblock:azr/core
+execute if score $playerExists Azr_system matches 1 if score isStarted Azr_system matches 1 if score tick_count_main AzrTimerStack matches 20.. run function skyblock:azr/core
+execute if score $playerExists Azr_system matches 1 if score isStarted Azr_system matches 1 if score timer_static_5s AzrTimerStack matches 100.. run function skyblock:azr/timer_static_5s
+
 # 部分关卡检测玩家位置在这里处理
     # 第四关-boss1 event1
     execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 9 if score stage_main_thread AzrTimerStack matches 3..5 if entity @a[tag=azrPlayer,x=-79931,y=38,z=62,distance=..4.5] run setblock -79946 39 50 air
@@ -132,15 +142,6 @@ execute as @a[tag=azrPlayer] run function skyblock:azr/player
     execute if score stage Azr_system matches 61 if score stage_main_thread AzrTimerStack matches 704..1700 if entity @a[tag=azrPlayer,x=-79537,y=41,z=-338,distance=0..7] run scoreboard players set stage_main_thread AzrTimerStack 1701
     # event19
     execute if score stage Azr_system matches 63 if score stage_main_thread AzrTimerStack matches 0..20 as @a[x=-79632.5,y=52.00,z=-337.5,distance=0..7] at @s run tp @s ~ ~-50 ~ ~ ~
-
-execute if score $playerExists Azr_system matches 1 if score tick_count_main AzrTimerStack matches -2147483648..2147483647 run scoreboard players add tick_count_main AzrTimerStack 1
-execute if score $playerExists Azr_system matches 1 if score timer_static_5s AzrTimerStack matches -2147483648..2147483647 run scoreboard players add timer_static_5s AzrTimerStack 1
-# 在部分关卡的的四倍速走秒
-execute if score $playerExists Azr_system matches 1 if score isStarted Azr_system matches 1 if score stage Azr_system matches 34..45 if score tick_count_main AzrTimerStack matches 5.. run function skyblock:azr/core
-execute if score $playerExists Azr_system matches 1 if score isStarted Azr_system matches 1 if score stage Azr_system matches 51..61 if score tick_count_main AzrTimerStack matches 5.. run function skyblock:azr/core
-execute if score $playerExists Azr_system matches 1 if score isStarted Azr_system matches 1 if score stage Azr_system matches 63.. if score tick_count_main AzrTimerStack matches 5.. run function skyblock:azr/core
-execute if score $playerExists Azr_system matches 1 if score isStarted Azr_system matches 1 if score tick_count_main AzrTimerStack matches 20.. run function skyblock:azr/core
-execute if score $playerExists Azr_system matches 1 if score isStarted Azr_system matches 1 if score timer_static_5s AzrTimerStack matches 100.. run function skyblock:azr/timer_static_5s
 
 # 使用了tick计时的关卡在这里处理
     # 读秒，要停下只需reset记分板
