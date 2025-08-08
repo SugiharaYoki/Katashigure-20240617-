@@ -26,7 +26,7 @@ bossbar remove azr:progress_bar_normal
 team remove AzrBossA
 #清场
 schedule function skyblock:azr/end_game/reset_map 10t
-stopsound @a[tag=azrPlayer]
+stopsound @a[tag=azrShowDialog]
 clear @a[tag=azrPlayer]
 #DEBUG: 当该函数被管理员/服务器后台强制执行时，杀死所有玩家。正常流程中触发该函数的同时不会存在玩家。
 execute as @a[tag=azrPlayer] run function skyblock:azr/end_game/quit_game

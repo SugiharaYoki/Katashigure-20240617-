@@ -1,4 +1,4 @@
-execute positioned -79756.5 29.0 -464.5 if entity @a[distance=0..3,tag=azrShowDialog,tag=!Trader4ATalkA] run playsound minecraft:entity.piglin.admiring_item master @a[tag=azrShowDialog] ~ ~ ~ 2 0.8
+execute positioned -79756.5 29.0 -464.5 if entity @a[distance=0..3,tag=azrPlayer,tag=!Trader4ATalkA] run playsound minecraft:entity.piglin.admiring_item master @a[tag=azrShowDialog] ~ ~ ~ 2 0.8
 execute if entity @a[x=-79756.5,y=29.0,z=-464.5,distance=0..3,tag=azrPlayer,tag=!Trader4ATalkA] run function skyblock:azr/tool/rng
 execute as @a[x=-79756.5,y=29.0,z=-464.5,distance=0..3,tag=azrPlayer,tag=!Trader4ATalkA] run tellraw @s {"text":"友好的猪灵工匠：","color":"aqua"}
 execute if score #rng8 Azr_system matches 1 as @a[x=-79756.5,y=29.0,z=-464.5,distance=0..3,tag=azrPlayer,tag=!Trader4ATalkA] run tellraw @s {"text":"“欢迎来到我的工坊。别小看锻造装备这门手艺活。”","color":"white"}
