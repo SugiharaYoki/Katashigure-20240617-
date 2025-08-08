@@ -1,7 +1,7 @@
 scoreboard players add @s rng4 1
 
 
-execute if score @s rng4 matches 10 run tp @s ~ ~21.0 ~
+execute if score @s rng4 matches 10 run tp @s ~ 21.0 ~
 execute if score @s rng4 matches 10 run data modify entity @s NoAI set value 1b
 execute if score @s rng4 matches 10 run playsound minecraft:entity.wither.spawn hostile @a ~ ~ ~ 3 1.3
 execute if score @s rng4 matches 10..40 run particle crimson_spore ~ ~ ~ 20 0.5 20 0 20
