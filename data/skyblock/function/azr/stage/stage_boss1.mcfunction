@@ -251,7 +251,7 @@ execute as @e[tag=arroworb2,type=marker] at @s run function skyblock:azr/stage/b
     execute if score tick_main_thread AzrTimerStack matches 100..1900 unless entity @e[tag=AzrielBossA,limit=3] run scoreboard players set tick_main_thread AzrTimerStack 3000
    
     #finalize
-    execute if score tick_main_thread AzrTimerStack matches 3001 run stopsound @a[tag=azrPlayer]
+    execute if score tick_main_thread AzrTimerStack matches 3001 run stopsound @a[tag=azrShowDialog]
     execute if score tick_main_thread AzrTimerStack matches 3001 run bossbar remove azr:boss_hp_bar
     execute if score tick_main_thread AzrTimerStack matches 3001 run kill @e[tag=AzrielMob]
     execute if score tick_main_thread AzrTimerStack matches 3001..3050 run tag @a[tag=azrPlayer] add azrUpdateSpawnPoint

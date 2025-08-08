@@ -102,7 +102,7 @@ execute if score tick_main_thread AzrTimerStack matches 150..2000 if score @e[ta
 execute if score tick_main_thread AzrTimerStack matches 300..2000 unless entity @e[tag=AzrielBoss4,limit=1,scores={Health=10..}] run scoreboard players set tick_main_thread AzrTimerStack 2001
 
 execute if score tick_main_thread AzrTimerStack matches 2002 run bossbar remove azr:boss_hp_bar
-execute if score Azr_Rec Azr_system matches 2 if score tick_main_thread AzrTimerStack matches 2002 run stopsound @a[tag=azrPlayer] music
+execute if score Azr_Rec Azr_system matches 2 if score tick_main_thread AzrTimerStack matches 2002 run stopsound @a[tag=azrShowDialog] music
 execute if score Azr_Rec Azr_system matches 2 if score tick_main_thread AzrTimerStack matches 2002 run playsound minecraft:entity.lightning_bolt.impact master @a[tag=azrShowDialog] -79536 51 -338 500 0.6
 execute if score Azr_Rec Azr_system matches 2 if score tick_main_thread AzrTimerStack matches 2002 run playsound minecraft:entity.lightning_bolt.impact master @a[tag=azrShowDialog] -79536 51 -338 500 0.5
 execute if score Azr_Rec Azr_system matches 2 if score tick_main_thread AzrTimerStack matches 2002 run playsound minecraft:entity.warden.angry master @a[tag=azrShowDialog] -79536 51 -338 500 0.8
@@ -120,7 +120,7 @@ execute if score tick_main_thread AzrTimerStack matches 2062 at @e[tag=AzrielBos
 execute if score tick_main_thread AzrTimerStack matches 2062 at @e[tag=AzrielBoss4,limit=1] run particle minecraft:soul_fire_flame ~ ~0.5 ~ 0 0 0 0.2 1000
 execute if score tick_main_thread AzrTimerStack matches 2062 at @e[tag=AzrielBoss4,limit=1] run particle minecraft:soul_fire_flame ~ ~0.5 ~ 0 0 0 0.1 500
 execute if score tick_main_thread AzrTimerStack matches 2062 at @e[tag=AzrielBoss4,limit=1] run particle minecraft:flame ~ ~0.5 ~ 0 0 0 0.8 300
-execute if score tick_main_thread AzrTimerStack matches 2062 run stopsound @a[tag=azrPlayer]
+execute if score tick_main_thread AzrTimerStack matches 2062 run stopsound @a[tag=azrShowDialog]
 execute if score tick_main_thread AzrTimerStack matches 2085 run tellraw @a[tag=azrShowDialog] {"text":"？？？：","color":"red"}
 execute if score tick_main_thread AzrTimerStack matches 2085 run tellraw @a[tag=azrShowDialog] {"text":"“真是精彩而有趣的反抗。很遗憾，一切都将在这里结束。”","color":"white"}
 execute if score tick_main_thread AzrTimerStack matches 2095 run tp @e[tag=AzrielBoss4,limit=1] 0 -8000 0 facing entity @r[tag=azrPlayer]
@@ -373,7 +373,7 @@ execute if score tick_main_thread AzrTimerStack matches 8499 if score playerCoun
 execute if score tick_main_thread AzrTimerStack matches 8499 if score playerCount Azr_system matches 4 run tellraw @a[tag=azrShowDialog] [{"text":"“吾将以此力天使之身保护神庭最后的希望，休想伤那四名人类分毫！！”","color":"white"}]
 execute if score tick_main_thread AzrTimerStack matches 8499 if score playerCount Azr_system matches 5.. run tellraw @a[tag=azrShowDialog] [{"text":"“吾将以此力天使之身保护神庭最后的希望，休想伤那些人类分毫！！”","color":"white"}]
 
-execute if score tick_main_thread AzrTimerStack matches 8003 run stopsound @a[tag=azrPlayer]
+execute if score tick_main_thread AzrTimerStack matches 8003 run stopsound @a[tag=azrShowDialog]
 execute if score tick_main_thread AzrTimerStack matches 8290..8900 run playsound entity.blaze.shoot hostile @a ~ ~ ~ 0.9 1.4
 execute if score tick_main_thread AzrTimerStack matches 8290..8900 as @r[tag=azrPlayer] at @s positioned ~ ~25 ~ run function skyblock:azr/stage/boss4/rec5b
 execute if score tick_main_thread AzrTimerStack matches 8290..8900 as @a[tag=azrPlayer] at @s as @e[type=fireball,distance=0..3] at @s run particle minecraft:witch ~ ~ ~ 1 1 1 0.2 100

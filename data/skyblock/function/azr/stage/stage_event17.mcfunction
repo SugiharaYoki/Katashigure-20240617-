@@ -1,4 +1,4 @@
-execute if score $NetherShop Azr_system matches 1 positioned -79542.5 24.0 -407.5 if entity @a[distance=0..2,tag=azrShowDialog,tag=!ZaneiTalkB] run playsound minecraft:entity.pillager.ambient master @a[tag=azrShowDialog] ~ ~ ~ 2 0.8
+execute if score $NetherShop Azr_system matches 1 positioned -79542.5 24.0 -407.5 if entity @a[distance=0..2,tag=azrPlayer,tag=!ZaneiTalkB] run playsound minecraft:entity.pillager.ambient master @a[tag=azrShowDialog] ~ ~ ~ 2 0.8
 execute if score $NetherShop Azr_system matches 1 if entity @a[x=-79542.5,y=24.0,z=-407.5,distance=0..2,tag=azrPlayer,tag=!ZaneiTalkB] run function skyblock:tool_rng
 execute if score $NetherShop Azr_system matches 1 as @a[x=-79542.5,y=24.0,z=-407.5,distance=0..2,tag=azrPlayer,tag=!ZaneiTalkB] run tellraw @s {"text":"默尔森：","color":"aqua"}
 execute if score $NetherShop Azr_system matches 1 if score #rng7 Azr_system matches 1 as @a[x=-79542.5,y=24.0,z=-407.5,distance=0..2,tag=azrPlayer,tag=!ZaneiTalkB] run tellraw @s {"text":"“咱是权之残影手下弓箭天使部队的教官。听上去很厉害，是吧？”","color":"white"}

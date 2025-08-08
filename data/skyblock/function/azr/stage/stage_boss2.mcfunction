@@ -274,7 +274,7 @@ execute as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run function skyblo
     #进入第二阶段
     execute if score tick_main_thread AzrTimerStack matches 800..2900 unless entity @e[tag=AzrielBossA,type=illusioner,limit=3] run scoreboard players set tick_main_thread AzrTimerStack 3000
     function skyblock:azr/tool/rng
-    execute if score tick_main_thread AzrTimerStack matches 3001 run stopsound @a[tag=azrPlayer]
+    execute if score tick_main_thread AzrTimerStack matches 3001 run stopsound @a[tag=azrShowDialog]
     execute if score tick_main_thread AzrTimerStack matches 3001 run kill @e[tag=AzrielDecMob]
     execute if score tick_main_thread AzrTimerStack matches 3001 run kill @e[tag=AzrielMob]
     execute if score tick_main_thread AzrTimerStack matches 3001 run bossbar remove azr:boss_hp_bar
@@ -354,7 +354,7 @@ execute as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run function skyblo
     execute if score tick_main_thread AzrTimerStack matches 6001 run tag @n[tag=AzrielBossA] remove AZR_boss2_skill_arrowpince
     execute if score tick_main_thread AzrTimerStack matches 6001 run tag @n[tag=AzrielBossA] remove AZR_boss2_skill_stockpile
 
-    execute if score tick_main_thread AzrTimerStack matches 6001 run stopsound @a[tag=azrPlayer]
+    execute if score tick_main_thread AzrTimerStack matches 6001 run stopsound @a[tag=azrShowDialog]
     execute if score tick_main_thread AzrTimerStack matches 6001 run bossbar remove azr:boss_hp_bar
     execute if score tick_main_thread AzrTimerStack matches 6080..6130 run tag @a[tag=azrPlayer] add azrUpdateSpawnPoint
     #effect & sound

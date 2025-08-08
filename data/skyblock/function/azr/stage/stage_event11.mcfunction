@@ -582,7 +582,7 @@ execute if score stage_main_thread AzrTimerStack matches 2941 run kill @e[tag=Az
 execute if score stage_main_thread AzrTimerStack matches 2941 as @a[tag=azrPlayer] at @s run spawnpoint @s -79691 170 -162
 execute if score stage_main_thread AzrTimerStack matches 2941 if score playerCount Azr_system matches 1 run tp @a[tag=azrPlayer] -79690.0 175 -162.0
 execute if score stage_main_thread AzrTimerStack matches 2941 if score playerCount Azr_system matches 2.. run spreadplayers -79690.0 -162.0 1 2 under 175 false @a[tag=azrPlayer]
-execute if score stage_main_thread AzrTimerStack matches 2941 as @a[tag=azrPlayer] at @s run stopsound @s
+execute if score stage_main_thread AzrTimerStack matches 2941 as @a[tag=azrShowDialog] at @s run stopsound @s
 
 execute if score stage_main_thread AzrTimerStack matches 2941 run effect give @a[tag=azrPlayer] fire_resistance 60 0 true
 execute if score stage_main_thread AzrTimerStack matches 2941 as @a[tag=azrPlayer] at @s if block ~ ~ ~ air run setblock ~ ~ ~ water
@@ -590,7 +590,7 @@ execute if score stage_main_thread AzrTimerStack matches 2941 as @a[tag=azrPlaye
 
 execute if score stage_main_thread AzrTimerStack matches 2941..3000 as @a[tag=azrPlayer] at @s run effect clear @s levitation
 execute if score stage_main_thread AzrTimerStack matches 2940..2942 as @a[tag=azrPlayer] at @s run effect give @s slow_falling 3 0 true
-execute if score stage_main_thread AzrTimerStack matches 2941 as @a[tag=azrPlayer] at @s run stopsound @s
+execute if score stage_main_thread AzrTimerStack matches 2941 as @a[tag=azrShowDialog] at @s run stopsound @s
 
 execute if score stage_main_thread AzrTimerStack matches 2941 as @a[tag=azrPlayer] at @s run tellraw @s {"text":"权之残影（传音）：","color":"red"}
 execute if score stage_main_thread AzrTimerStack matches 2941 as @a[tag=azrPlayer] at @s run tellraw @s {"text":"“听得到声音吗？这已经是吾第七次尝试传音了！”","color":"white"}

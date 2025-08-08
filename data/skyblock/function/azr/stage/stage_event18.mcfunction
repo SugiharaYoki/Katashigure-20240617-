@@ -7,7 +7,7 @@ execute if score stage_main_thread AzrTimerStack matches 30..190 as @a[tag=azrPl
 execute if score stage_main_thread AzrTimerStack matches 170..180 run scoreboard players set stage_main_thread AzrTimerStack 170
 
 execute if score stage_main_thread AzrTimerStack matches 201 as @a[tag=azrPlayer] at @s run tp ~ 82 ~
-execute if score stage_main_thread AzrTimerStack matches 201 run stopsound @a[tag=azrPlayer]
+execute if score stage_main_thread AzrTimerStack matches 201 run stopsound @a[tag=azrShowDialog]
 
 
 execute if score stage_main_thread AzrTimerStack matches 215 run tellraw @a[tag=azrShowDialog] {"selector":"@r[tag=azrPlayer]","color":"aqua"}
