@@ -33,7 +33,7 @@ execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=1..3}] rng7
 
 execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=1..3}] rng7 matches 5.. as @n[tag=SEA_boss6_burst_master,scores={rng1=1}] at @s run tp @s ^ ^ ^1 facing ^ ^ ^2
 
-execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=1..3}] rng7 matches 5 as @n[tag=SEA_boss6_burst_master,scores={rng1=2..}] at @s run scoreboard players set @s rng1 0
+execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=1..3}] rng7 matches 5.. as @n[tag=SEA_boss6_burst_master,scores={rng1=2..}] at @s run scoreboard players set @s rng1 0
 execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=1..3}] rng7 matches 50.. as @n[tag=SEA_boss6_burst_master] at @s run kill @s
 execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=1..3}] rng7 matches 50.. run scoreboard players set @s rng7 0
 
