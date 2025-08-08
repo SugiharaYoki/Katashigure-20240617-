@@ -63,6 +63,16 @@ execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=6..7}] rng7
 execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=6..7}] rng7 matches 22 run fill ~8 ~ ~8 ~-8 ~ ~-8 air replace fire
 execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=6..7}] rng7 matches 23.. run scoreboard players set @s rng7 0
 
+execute if score @s rng4 matches ..2999 at @s[scores={health=..199}] run scoreboard players set @s rng4 3000
+execute if score @s rng4 matches 4000.. at @s run scoreboard players set @s rng4 3000
+
+execute if score @s rng4 matches 3000 at @s run particle block{block_state:{Name:tuff_bricks}} ~ ~ ~ 8 0.1 8 0.05 50
+execute if score @s rng4 matches 3040 at @s run particle block{block_state:{Name:tuff_bricks}} ~ ~ ~ 8 0.1 8 0.05 100
+execute if score @s rng4 matches 3070 at @s run particle block{block_state:{Name:tuff_bricks}} ~ ~ ~ 8 0.1 8 0.05 100
+execute if score @s rng4 matches 3070 at @s run particle block{block_state:{Name:tuff_bricks}} ~ ~ ~ 8 0.1 8 0.05 100
+execute if score @s rng4 matches 3070 at @s run clone 90052 120 -1821 90067 120 -1809 90052 20 -1821
+execute if score @s rng4 matches 3070 at @s run tag @s add Phase4
+
 #execute if score @s rng4 matches 50.. run scoreboard players set @s rng4 -2
 
 
