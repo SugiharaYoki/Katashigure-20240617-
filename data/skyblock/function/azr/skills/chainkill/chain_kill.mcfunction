@@ -37,9 +37,9 @@ execute if score @s AZR_chainKill_chargeup matches 70..79 run xp set @s 77 point
 execute if score @s AZR_chainKill_chargeup matches 80..89 run xp set @s 88 points
 execute if score @s AZR_chainKill_chargeup matches 90..99 run xp set @s 99 points
 execute if score @s AZR_chainKill_chargeup matches 100.. run xp set @s 111 points
-execute if score @s AZR_chainKill_chargeup matches 100.. if entity @s[tag=!AZR_chainKill_activated] run function skyblock:azr/system_sub/skills/chainkill/chain_kill_execute
+execute if score @s AZR_chainKill_chargeup matches 100.. if entity @s[tag=!AZR_chainKill_activated] run function skyblock:azr/skills/chainkill/chain_kill_execute
 
-function skyblock:azr/system_sub/weapons/shovel/main
+function skyblock:azr/weapons/shovel/main
 
 execute if entity @s[tag=AZR_chainKill_activated] if entity @n[tag=AzrielMob,distance=0..9] run title @s[tag=AZR_chainKillUpg_countvisible,scores={AZR_chainKill_count=10..}] actionbar {"text": "- 索命连击 ×Z -","color":"gold","bold": true}
 execute if entity @s[tag=AZR_chainKill_activated] if entity @n[tag=AzrielMob,distance=0..9] run title @s[tag=AZR_chainKillUpg_countvisible,scores={AZR_chainKill_count=10}] actionbar {"text": "- 索命连击 ×T -","color":"gold","bold": true}
@@ -66,7 +66,7 @@ execute if entity @s[tag=AZR_chainKill_activated] if entity @n[tag=MG_AZR0MOB,di
 execute if entity @s[tag=AZR_chainKill_activated] if entity @n[tag=MG_AZR0MOB,distance=0..19] run title @s[tag=AZR_chainKillUpg_countvisible,scores={AZR_chainKill_count=1}] actionbar [{"text":"绿宝石 ","color":"green","bold": true},{"score":{"name":"@s","objective":"Azr_emerald"},"color":"green","bold": false},{"text": "   - 索命连击 ×1 -","color":"gold","bold": true},{"text":"   钻石 ","color":"aqua","bold": true},{"score":{"name":"@s","objective":"Azr_diamond"},"color":"aqua","bold": false}]
 execute if entity @s[tag=AZR_chainKill_activated] if entity @n[tag=MG_AZR0MOB,distance=0..19] run title @s[tag=!AZR_chainKillUpg_countvisible] actionbar [{"text":"绿宝石 ","color":"green","bold": true},{"score":{"name":"@s","objective":"Azr_emerald"},"color":"green","bold": false},{"text": "   - 索命连击 -","color":"gold","bold": true},{"text":"   钻石 ","color":"aqua","bold": true},{"score":{"name":"@s","objective":"Azr_diamond"},"color":"aqua","bold": false}]
 
-execute if score @s[tag=AZR_chainKill_activated] AZR_chainKill_damage matches 1.. run function skyblock:azr/system_sub/skills/chainkill/chain_kill_activate
+execute if score @s[tag=AZR_chainKill_activated] AZR_chainKill_damage matches 1.. run function skyblock:azr/skills/chainkill/chain_kill_activate
 
 xp set @s 30 levels
 

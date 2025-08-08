@@ -33,4 +33,4 @@ execute if entity @s[scores={Azr_Shop=8900114},tag=!AZR_ChainKillUpg14,tag=!AZR_
 execute if entity @s[scores={Azr_Shop=8900115},tag=!AZR_ChainKillUpg15,tag=!AZR_ChainKillUpg_REMOVE] run tag @s add AZR_ChainKillUpg15
 execute if entity @s[scores={Azr_Shop=8900116},tag=!AZR_ChainKillUpg16,tag=!AZR_ChainKillUpg_REMOVE] run tag @s add AZR_ChainKillUpg16
 
-function skyblock:azr/system_sub/skills/chainkill/calculate
+function skyblock:azr/skills/chainkill/calculate

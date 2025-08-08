@@ -9,4 +9,4 @@ execute if items entity @s weapon.offhand *[max_stack_size=1] run item modify en
 execute unless score @s[tag=!DEBUG_infinityEnergy] AZR_arrow_energy matches 1.. run return fail
 scoreboard players remove @s[scores={AZR_arrow_energy=1..}] AZR_arrow_energy 1
 
-function skyblock:azr/system_sub/skills/arrow/summon
+function skyblock:azr/skills/arrow/summon
