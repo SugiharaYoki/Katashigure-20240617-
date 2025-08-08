@@ -70,6 +70,9 @@ execute if score @s rng4 matches 3000 at @s run particle block{block_state:{Name
 execute if score @s rng4 matches 3040 at @s run particle block{block_state:{Name:tuff_bricks}} ~ ~ ~ 8 0.1 8 0.05 100
 execute if score @s rng4 matches 3070 at @s run particle block{block_state:{Name:tuff_bricks}} ~ ~ ~ 8 0.1 8 0.05 100
 execute if score @s rng4 matches 3070 at @s run particle block{block_state:{Name:tuff_bricks}} ~ ~ ~ 8 0.1 8 0.05 100
+execute if score @s rng4 matches 3030.. at @s run particle large_smoke ~ ~ ~ 8 0 8 0.3 8
+execute if score @s rng4 matches 3050.. at @s run particle large_smoke ~ ~ ~ 8 0 8 0.3 8
+execute if score @s rng4 matches 3070 at @s run particle large_smoke ~ ~ ~ 8 0 8 0.3 90
 execute if score @s rng4 matches 3070 at @s run clone 90052 120 -1821 90067 120 -1809 90052 20 -1821
 execute if score @s rng4 matches 3070 at @s run tag @s add Phase4
 
