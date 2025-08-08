@@ -36,7 +36,7 @@ execute if score @s rng4 matches 50.. at @s if score @s rng7 matches 5.. as @n[t
 execute if score @s rng4 matches 50.. at @s if score @s rng7 matches 50.. as @n[tag=SEA_boss6_burst_master] at @s run kill @s
 execute if score @s rng4 matches 50.. at @s if score @s rng7 matches 50.. run scoreboard players set @s rng7 0
 
-execute if score @s rng4 matches 50.. run scoreboard players set @s rng4 -2
+#execute if score @s rng4 matches 50.. run scoreboard players set @s rng4 -2
 
 
 
