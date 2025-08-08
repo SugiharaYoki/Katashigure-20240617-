@@ -17,6 +17,7 @@ execute if score @s rng4 matches 41.. at @s run tp @s 90060 21 -1815
 
 execute if score @s rng4 matches 50.. at @s if score @s rng7 matches ..0 store result score @s rng9 run random value 1..5
 execute if score @s rng4 matches 50.. at @s if score @s rng7 matches ..0 run scoreboard players set @s rng7 1 
+execute if score @s rng4 matches 50.. at @s if score @s rng7 matches 1.. run scoreboard players add @s rng7 1 
 
 execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=1}] rng7 matches 5 positioned ~6 21.1 ~00 run summon marker ~ 21.1 ~ {Tags:["SEA_boss6_burst_master"]}
 execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=2}] rng7 matches 5 positioned ~6 21.1 ~06 run summon marker ~ 21.1 ~ {Tags:["SEA_boss6_burst_master"]}
