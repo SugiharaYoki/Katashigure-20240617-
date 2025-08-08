@@ -1,4 +1,4 @@
-function skyblock:azr/items/chainmail_chestplate_protect
+function skyblock:azr/items/armors/chainmail_chestplate_protect
 
 clear @s chainmail_chestplate[custom_data~{chainmail_chestplate_normal:1b}] 1
 scoreboard players remove @s Azr_emerald 3

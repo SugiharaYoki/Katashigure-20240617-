@@ -1,4 +1,4 @@
-function skyblock:azr/items/shield_solid_t2
+function skyblock:azr/items/weapons/shield_solid_t2
 
 clear @s shield[custom_data~{shield_solid:1b}] 1
 scoreboard players remove @s Azr_emerald 15

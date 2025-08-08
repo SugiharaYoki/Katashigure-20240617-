@@ -1,3 +1,3 @@
 scoreboard players remove @s Azr_emerald 12
 
-function skyblock:azr/items/stone_sickle
+function skyblock:azr/items/weapons/stone_sickle

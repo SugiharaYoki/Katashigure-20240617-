@@ -15,28 +15,28 @@ scoreboard players set stage_main_thread AzrTimerStack 30
 scoreboard players set life_vitae_available Azr_system 0
 
 clear @s
-function skyblock:azr/items/golden_sword_t2
-function skyblock:azr/items/iron_axe_chain_long_t2
-function skyblock:azr/items/golden_shovel_t2
-function skyblock:azr/items/crossbow_v71
-function skyblock:azr/items/golden_helmet_t2_replace
-function skyblock:azr/items/leather_chestplate_fireproof_replace
-function skyblock:azr/items/golden_leggings_t2_replace
-function skyblock:azr/items/leather_boots_fireproof_replace
-function skyblock:azr/items/shield_solid_pro
+function skyblock:azr/items/weapons/golden_sword_t2
+function skyblock:azr/items/weapons/iron_axe_chain_long_t2
+function skyblock:azr/items/weapons/golden_shovel_t2
+function skyblock:azr/items/weapons/crossbow_v71
+function skyblock:azr/items/armors/golden_helmet_t2_replace
+function skyblock:azr/items/armors/leather_chestplate_fireproof_replace
+function skyblock:azr/items/armors/golden_leggings_t2_replace
+function skyblock:azr/items/armors/leather_boots_fireproof_replace
+function skyblock:azr/items/weapons/shield_solid_pro
 give @s cooked_salmon 18
-function skyblock:azr/items/revival_star
-function skyblock:azr/items/revival_star
-function skyblock:azr/items/instant_spark
-function skyblock:azr/items/blast_root_x8
+function skyblock:azr/items/others/revival_star
+function skyblock:azr/items/others/revival_star
+function skyblock:azr/items/others/instant_spark
+function skyblock:azr/items/others/blast_root_x8
 give @s arrow 18
-function skyblock:azr/items/soul_expel_torch
-function skyblock:azr/items/crossbow_blade
-function skyblock:azr/items/crossbow_arrow_x16
-function skyblock:azr/items/bow_string
-function skyblock:azr/items/iron_chestplate_nether
-function skyblock:azr/items/iron_boots_nether
-function skyblock:azr/items/splash_fire_resistance_lv1
+function skyblock:azr/items/others/soul_expel_torch
+function skyblock:azr/items/weapons/crossbow_blade
+function skyblock:azr/items/others/crossbow_arrow_x16
+function skyblock:azr/items/weapons/bow_string
+function skyblock:azr/items/armors/iron_chestplate_nether
+function skyblock:azr/items/armors/iron_boots_nether
+function skyblock:azr/items/others/splash_fire_resistance_lv1
 give @s gold_nugget 52
 
 # show texts

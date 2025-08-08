@@ -1,4 +1,4 @@
-function skyblock:azr/items/chainmail_boots_protect
+function skyblock:azr/items/armors/chainmail_boots_protect
 
 clear @s chainmail_boots[custom_data~{chainmail_boots_normal:1b}] 1
 scoreboard players remove @s Azr_emerald 3

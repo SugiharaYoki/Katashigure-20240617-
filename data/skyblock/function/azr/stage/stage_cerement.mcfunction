@@ -88,7 +88,7 @@ execute if score stage_main_thread AzrTimerStack matches 149 run advancement gra
 execute if score stage_main_thread AzrTimerStack matches 149 as @a[tag=azrPlayer] at @s run tag @s add AZS_BoS02
 execute if score stage_main_thread AzrTimerStack matches 149 as @a[tag=azrPlayer] at @s run give @s emerald 5
 execute if score stage_main_thread AzrTimerStack matches 149 as @a[tag=azrPlayer] at @s run give @s rotten_flesh 3
-execute if score stage_main_thread AzrTimerStack matches 149 as @a[tag=azrPlayer] at @s run function skyblock:azr/items/greed_totem
+execute if score stage_main_thread AzrTimerStack matches 149 as @a[tag=azrPlayer] at @s run function skyblock:azr/items/others/greed_totem
 execute if score stage_main_thread AzrTimerStack matches 149 run fill -79938 39 49 -79938 38 49 minecraft:air destroy
 execute if score stage_main_thread AzrTimerStack matches 149 run fill -79949 38 57 -79949 41 54 air destroy
 execute if score stage_main_thread AzrTimerStack matches 151..154 run playsound ambient.soul_sand_valley.additions ambient @a[tag=azrShowDialog] -78000 100 0 1000

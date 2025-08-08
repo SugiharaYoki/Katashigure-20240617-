@@ -133,7 +133,7 @@ execute if score stage_main_thread AzrTimerStack matches 2277 run playsound mine
 execute if score stage_main_thread AzrTimerStack matches 2277 run playsound ambient.crimson_forest.additions ambient @a[tag=azrShowDialog] -78000 100 0 1000
 #execute if entity @e[tag=sc,limit=1,scores={stageSeconds=2277}] run scoreboard players set @e[tag=sc,limit=1] Azr_Progress 53
 
-execute if score stage_main_thread AzrTimerStack matches 2277 as @a[tag=azrPlayer] run function skyblock:azr/items/netherite_chestplate_t1
+execute if score stage_main_thread AzrTimerStack matches 2277 as @a[tag=azrPlayer] run function skyblock:azr/items/armors/netherite_chestplate_t1
 
 execute if score stage_main_thread AzrTimerStack matches 2277 run setblock -79765 24 -449 minecraft:crimson_button[face=floor,facing=north]
 execute if score stage_main_thread AzrTimerStack matches 2277 run scoreboard players set stage_main_thread AzrTimerStack 2300

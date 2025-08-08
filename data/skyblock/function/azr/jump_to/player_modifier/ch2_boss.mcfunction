@@ -14,18 +14,18 @@ scoreboard players set stage Azr_system 21
 scoreboard players set @s Azr_wave 22
 
 clear @s
-function skyblock:azr/items/iron_sword_normal
-function skyblock:azr/items/iron_axe_normal
-function skyblock:azr/items/bow_normal
-function skyblock:azr/items/iron_helmet_normal_replace
-function skyblock:azr/items/iron_chestplate_normal_replace
-function skyblock:azr/items/iron_leggings_normal_replace
-function skyblock:azr/items/iron_boots_normal_replace
+function skyblock:azr/items/weapons/iron_sword_normal
+function skyblock:azr/items/weapons/iron_axe_normal
+function skyblock:azr/items/weapons/bow_normal
+function skyblock:azr/items/armors/iron_helmet_normal_replace
+function skyblock:azr/items/armors/iron_chestplate_normal_replace
+function skyblock:azr/items/armors/iron_leggings_normal_replace
+function skyblock:azr/items/armors/iron_boots_normal_replace
 give @s bread 12
 give @s arrow 16
-function skyblock:azr/items/revival_star
-function skyblock:azr/items/revival_star
-function skyblock:azr/items/revival_star
+function skyblock:azr/items/others/revival_star
+function skyblock:azr/items/others/revival_star
+function skyblock:azr/items/others/revival_star
 
 item replace entity @s inventory.0 with stick 6
 item replace entity @s inventory.1 with flint 6

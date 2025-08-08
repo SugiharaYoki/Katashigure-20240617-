@@ -1,3 +1,3 @@
-function skyblock:azr/items/chainmail_helmet_normal
+function skyblock:azr/items/armors/chainmail_helmet_normal
 
 scoreboard players remove @s Azr_emerald 4

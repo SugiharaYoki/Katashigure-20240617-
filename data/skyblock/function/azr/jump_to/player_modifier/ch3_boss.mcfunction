@@ -15,20 +15,20 @@ scoreboard players set @s Azr_wave 34
 scoreboard players set stage_main_thread AzrTimerStack 99
 
 clear @s
-function skyblock:azr/items/iron_sword_normal
-function skyblock:azr/items/iron_axe_normal
-function skyblock:azr/items/bow_normal
-function skyblock:azr/items/iron_helmet_normal_replace
-function skyblock:azr/items/iron_chestplate_normal_replace
-function skyblock:azr/items/iron_leggings_normal_replace
-function skyblock:azr/items/iron_boots_normal_replace
-function skyblock:azr/items/soul_expel_torch_replace
+function skyblock:azr/items/weapons/iron_sword_normal
+function skyblock:azr/items/weapons/iron_axe_normal
+function skyblock:azr/items/weapons/bow_normal
+function skyblock:azr/items/armors/iron_helmet_normal_replace
+function skyblock:azr/items/armors/iron_chestplate_normal_replace
+function skyblock:azr/items/armors/iron_leggings_normal_replace
+function skyblock:azr/items/armors/iron_boots_normal_replace
+function skyblock:azr/items/others/soul_expel_torch_replace
 give @s cooked_salmon 6
 give @s golden_carrot 2
 give @s arrow 30
-function skyblock:azr/items/instant_spark
-function skyblock:azr/items/revival_star
-function skyblock:azr/items/revival_star
+function skyblock:azr/items/others/instant_spark
+function skyblock:azr/items/others/revival_star
+function skyblock:azr/items/others/revival_star
 
 item replace entity @s inventory.0 with stick 16
 item replace entity @s inventory.1 with flint 16

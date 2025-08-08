@@ -1,4 +1,4 @@
-function skyblock:azr/items/iron_helmet_seek
+function skyblock:azr/items/armors/iron_helmet_seek
 
 clear @s iron_helmet[custom_data~{iron_helmet_normal:1b}] 1
 scoreboard players remove @s Azr_emerald 9

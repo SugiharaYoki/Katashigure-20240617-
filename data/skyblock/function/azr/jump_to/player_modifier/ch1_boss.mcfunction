@@ -14,12 +14,12 @@ scoreboard players set stage Azr_system 9
 scoreboard players set @s Azr_wave 7
 
 clear @s
-function skyblock:azr/items/stone_sword_normal
-function skyblock:azr/items/stone_axe_normal
-function skyblock:azr/items/chainmail_helmet_normal_replace
-function skyblock:azr/items/chainmail_chestplate_normal_replace
+function skyblock:azr/items/weapons/stone_sword_normal
+function skyblock:azr/items/weapons/stone_axe_normal
+function skyblock:azr/items/armors/chainmail_helmet_normal_replace
+function skyblock:azr/items/armors/chainmail_chestplate_normal_replace
 give @s bread 8
-function skyblock:azr/items/revival_star
+function skyblock:azr/items/others/revival_star
 item replace entity @s inventory.0 with stick 3
 item replace entity @s inventory.1 with flint 3
 item replace entity @s inventory.2 with rotten_flesh 3

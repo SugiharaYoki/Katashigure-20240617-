@@ -1,3 +1,3 @@
 clear @s slime_ball 3
 
-function skyblock:azr/items/compass
+function skyblock:azr/items/others/compass

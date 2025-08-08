@@ -24,9 +24,9 @@ advancement grant @s only skyblock:azr/azr_root
 
 #背包初始化
 clear @s
-function skyblock:azr/items/wooden_sword_normal
-function skyblock:azr/items/wooden_axe_normal
-function skyblock:azr/items/revival_star
+function skyblock:azr/items/weapons/wooden_sword_normal
+function skyblock:azr/items/weapons/wooden_axe_normal
+function skyblock:azr/items/others/revival_star
 give @s pumpkin_pie 8
 
 #游戏数据初始化

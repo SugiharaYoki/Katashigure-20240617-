@@ -152,7 +152,7 @@ execute if score stage_main_thread AzrTimerStack matches 3384 if score playerCou
 execute if score stage_main_thread AzrTimerStack matches 3384 if score playerCount Azr_system matches 2 run tellraw @a[tag=azrShowDialog] {"text":"“顺便，吾辈将在这里暂做停留，汝等可在此请求吾辈打造强力的箭矢，或是修学灵能。”","color":"white"}
 execute if score stage_main_thread AzrTimerStack matches 3384 if score playerCount Azr_system matches 3.. run tellraw @a[tag=azrShowDialog] {"text":"“顺便，吾辈将在这里暂做停留，汝等可在此请求吾辈打造强力的箭矢，或是修学灵能。”","color":"white"}
 
-execute if score stage_main_thread AzrTimerStack matches 3367 as @a[tag=azrPlayer] run function skyblock:azr/items/soul_expel_torch
+execute if score stage_main_thread AzrTimerStack matches 3367 as @a[tag=azrPlayer] run function skyblock:azr/items/others/soul_expel_torch
 execute if score stage_main_thread AzrTimerStack matches 3367 run tellraw @a[tag=azrShowDialog] {"text":"获得了 驱灵的火烛","color":"gray"}
 execute if score stage_main_thread AzrTimerStack matches 3367 run advancement grant @a[tag=azrPlayer] only skyblock:azr/azr_stage10_event1
 

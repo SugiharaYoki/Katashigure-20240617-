@@ -1,4 +1,4 @@
 clear @s iron_sword[custom_data~{iron_sword_normal:1b}] 1
 clear @s iron_ingot[custom_data~{coal_iron:1b}] 1
 
-function skyblock:azr/items/iron_sword_coal_iron
+function skyblock:azr/items/weapons/iron_sword_coal_iron

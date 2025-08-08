@@ -1,4 +1,4 @@
-function skyblock:azr/items/iron_helmet_zombie
+function skyblock:azr/items/armors/iron_helmet_zombie
 
 scoreboard players remove @s Azr_emerald 12
 clear @s rotten_flesh 10

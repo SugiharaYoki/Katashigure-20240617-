@@ -16,22 +16,22 @@ scoreboard players set stage_main_thread AzrTimerStack 10000
 scoreboard players set life_vitae_available Azr_system 0
 
 clear @s
-function skyblock:azr/items/iron_sword_prison
-function skyblock:azr/items/iron_axe_prison
-function skyblock:azr/items/iron_shovel_prison
-function skyblock:azr/items/bow_blessed
-function skyblock:azr/items/iron_helmet_normal_replace
-function skyblock:azr/items/iron_chestplate_normal_replace
-function skyblock:azr/items/iron_leggings_normal_replace
-function skyblock:azr/items/iron_boots_normal_replace
-function skyblock:azr/items/soul_expel_torch
+function skyblock:azr/items/weapons/iron_sword_prison
+function skyblock:azr/items/weapons/iron_axe_prison
+function skyblock:azr/items/weapons/iron_shovel_prison
+function skyblock:azr/items/weapons/bow_blessed
+function skyblock:azr/items/armors/iron_helmet_normal_replace
+function skyblock:azr/items/armors/iron_chestplate_normal_replace
+function skyblock:azr/items/armors/iron_leggings_normal_replace
+function skyblock:azr/items/armors/iron_boots_normal_replace
+function skyblock:azr/items/others/soul_expel_torch
 give @s cooked_salmon 16
 give @s golden_carrot 2
 give @s gold_nugget 26
-function skyblock:azr/items/revival_star
-function skyblock:azr/items/revival_star
-function skyblock:azr/items/instant_spark
-function skyblock:azr/items/blast_root_x5
+function skyblock:azr/items/others/revival_star
+function skyblock:azr/items/others/revival_star
+function skyblock:azr/items/others/instant_spark
+function skyblock:azr/items/others/blast_root_x5
 give @s arrow 38
 
 # show texts

@@ -154,7 +154,7 @@ execute if block -79901 39 67 minecraft:birch_button[powered=true] positioned -7
 execute if block -79901 39 67 minecraft:birch_button[powered=true] run setblock -79901 39 67 air
 
 
-execute if block -79883 39 67 minecraft:stone_button[powered=true] as @a[tag=azrPlayer] run function skyblock:azr/items/revival_star
+execute if block -79883 39 67 minecraft:stone_button[powered=true] as @a[tag=azrPlayer] run function skyblock:azr/items/others/revival_star
 execute if block -79883 39 67 minecraft:stone_button[powered=true] run setblock -79883 39 67 air
 #extra bonus - stage9 uncommited
 execute if block -79940 39 -60 minecraft:birch_button[powered=true] run function skyblock:azr/stage/dialog/first_pass_west

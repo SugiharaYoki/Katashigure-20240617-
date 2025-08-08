@@ -1,3 +1,3 @@
-function skyblock:azr/items/chainmail_boots_normal
+function skyblock:azr/items/armors/chainmail_boots_normal
 
 scoreboard players remove @s Azr_emerald 4
