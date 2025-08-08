@@ -327,9 +327,9 @@ execute if score SEA_ch6_event rng5 matches 20047 as @a[scores={SEAPT_member=1}]
 execute if score SEA_ch6_event rng5 matches 20064 as @a[scores={SEAPT_member=1}] at @s run tellraw @a[distance=0..150] [{"text":"权之执理：","color":"red","bold": true},{"text":"\n“无妨，吾会令汝认知到自己的愚昧与无知。”","color":"white","bold": false}]
 execute if score SEA_ch6_event rng5 matches 20078 as @a[scores={SEAPT_member=1}] at @s run tellraw @a[distance=0..150] [{"text":"权之执理：","color":"red","bold": true},{"text":"\n“纵使天穹的雷霆无法落下，吾也能将汝二人如同蝼蚁般碾碎。”","color":"white","bold": false}]
 
-execute if score SEA_ch6_event rng5 matches 20058 run bossbar add 9066602 "天火的风暴 - 权之执理"
+execute if score SEA_ch6_event rng5 matches 20058 run bossbar add 9066602 "焚渊的风暴 - 权之执理"
 execute if score SEA_ch6_event rng5 matches 20058 run bossbar set minecraft:9066602 color purple
-execute if score SEA_ch6_event rng5 matches 20058 run bossbar set minecraft:9066602 name "天火的风暴 - 权之执理"
+execute if score SEA_ch6_event rng5 matches 20058 run bossbar set minecraft:9066602 name "焚渊的风暴 - 权之执理"
 execute if score SEA_ch6_event rng5 matches 20058 run bossbar set minecraft:9066602 players @a[tag=SEAPT]
 execute if score SEA_ch6_event rng5 matches 20058 run bossbar set minecraft:9066602 style progress
 execute if score SEA_ch6_event rng5 matches 20058 run bossbar set minecraft:9066602 max 800
