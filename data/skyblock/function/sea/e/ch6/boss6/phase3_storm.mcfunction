@@ -12,6 +12,7 @@ execute if score @s rng4 matches 40 at @s run particle enchant 90060 21 -1815 2 
 execute if score @s rng4 matches 40 at @s run particle reverse_portal 90060 21 -1815 0 0 0 0.5 120
 execute if score @s rng4 matches 40 at @s run playsound minecraft:entity.enderman.teleport hostile @a ~ ~ ~ 1 1.1
 execute if score @s rng4 matches 41.. at @s run data modify entity @s NoAI set value 0b
+execute if score @s rng4 matches 41 at @s run effect give @s resistance 30 4 true
 execute if score @s rng4 matches 41.. at @s run tp @s 90060 21 -1815
 
 execute if score @s rng4 matches 50.. at @s if score @s rng7 matches ..0 store result score @s rng9 run random value 1..5
