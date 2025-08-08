@@ -291,13 +291,6 @@ execute if score SEA_ch6_event rng5 matches 20058 positioned 90064 22 -1815 run 
 execute if score SEA_ch6_event rng5 matches 20058 positioned 90064 22 -1815 run data modify entity @n[tag=SEAboss6] NoAI set value 0b
 execute if score SEA_ch6_event rng5 matches 20058 positioned 90064 22 -1815 run data modify entity @n[tag=SEAboss6] Invulnerable set value 0b
 execute if score SEA_ch6_event rng5 matches 20060 positioned 90064 22 -1815 run data modify entity @n[tag=SEAboss6] NoAI set value 1b
-execute if score SEA_ch6_event rng5 matches 20060 positioned 90064 22 -1815 as @n[tag=SEAboss6] at @s run scoreboard players set @s rng1 1
-execute if score SEA_ch6_event rng5 matches 20060 positioned 90064 22 -1815 as @n[tag=SEAboss6] at @s run scoreboard players set @s rng2 1
-execute if score SEA_ch6_event rng5 matches 20060 positioned 90064 22 -1815 as @n[tag=SEAboss6] at @s run scoreboard players set @s rng3 1
-execute if score SEA_ch6_event rng5 matches 20060 positioned 90064 22 -1815 as @n[tag=SEAboss6] at @s run scoreboard players set @s rng4 1
-execute if score SEA_ch6_event rng5 matches 20060 positioned 90064 22 -1815 as @n[tag=SEAboss6] at @s run scoreboard players set @s rng5 1
-execute if score SEA_ch6_event rng5 matches 20060 positioned 90064 22 -1815 as @n[tag=SEAboss6] at @s run scoreboard players set @s rng6 1
-execute if score SEA_ch6_event rng5 matches 20060 positioned 90064 22 -1815 as @n[tag=SEAboss6] at @s run scoreboard players set @s rng8 1
 execute if score SEA_ch6_event rng5 matches 20058 as @n[tag=SEAboss6] at @s if block ~ ~-0.4 ~ tuff_bricks run particle gust_emitter_small ~ ~-1.5 ~ 0.6 0 0.6 0 3
 execute if score SEA_ch6_event rng5 matches 20058 as @n[tag=SEAboss6] at @s if block ~ ~-0.4 ~ tuff_bricks run playsound minecraft:entity.wind_charge.wind_burst ambient @a ~ ~-0.2 ~ 1 0.5
 execute if score SEA_ch6_event rng5 matches 20058.. run effect give @n[tag=SEAboss6] fire_resistance infinite 0 true
