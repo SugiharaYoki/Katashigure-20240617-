@@ -27,9 +27,9 @@ execute as @e[tag=arroworb2,type=marker] at @s run function skyblock:azr/stage/b
     execute if score tick_main_thread AzrTimerStack matches 152 as @a[tag=azrShowDialog] at @s run playsound minecraft:lethaldose master @s ~ ~ ~ 0.65
     #summon boss
     execute if score tick_main_thread AzrTimerStack matches 80 run particle minecraft:smoke -79931 47 88 1 1 1 0.02 200
-    execute if score tick_main_thread AzrTimerStack matches 80 if score playerCount Azr_system matches 1..2 positioned -79931 47 88 run function skyblock:azr/m/shadow_t1_easy
-    execute if score tick_main_thread AzrTimerStack matches 80 if score playerCount Azr_system matches 3..4 positioned -79931 47 88 run function skyblock:azr/m/shadow_t1_normal
-    execute if score tick_main_thread AzrTimerStack matches 80 if score playerCount Azr_system matches 5.. positioned -79931 47 88 run function skyblock:azr/m/shadow_t1_hard
+    execute if score tick_main_thread AzrTimerStack matches 80 if score playerCount Azr_system matches 1..2 positioned -79931 47 88 run function skyblock:azr/mobs/shadow_t1_easy
+    execute if score tick_main_thread AzrTimerStack matches 80 if score playerCount Azr_system matches 3..4 positioned -79931 47 88 run function skyblock:azr/mobs/shadow_t1_normal
+    execute if score tick_main_thread AzrTimerStack matches 80 if score playerCount Azr_system matches 5.. positioned -79931 47 88 run function skyblock:azr/mobs/shadow_t1_hard
     execute if score tick_main_thread AzrTimerStack matches 81 run effect give @e[tag=AzrielBossA,limit=1] slow_falling 5 30 true
 
 #verbal
@@ -236,12 +236,12 @@ execute as @e[tag=arroworb2,type=marker] at @s run function skyblock:azr/stage/b
     execute if score tick_main_thread AzrTimerStack matches 1790 if score #rng3 Azr_system matches 1 as @e[tag=AzrielBossA,limit=3] at @s run function skyblock:azr/stage/boss1/largeflat1_w
     execute if score tick_main_thread AzrTimerStack matches 1810 if score #rng3 Azr_system matches 2 as @e[tag=AzrielBossA,limit=3] at @s run function skyblock:azr/stage/boss1/largeflat1_w
     execute if score tick_main_thread AzrTimerStack matches 1810 if score #rng3 Azr_system matches 3 as @e[tag=AzrielBossA,limit=3] at @s run function skyblock:azr/stage/boss1/summon
-    execute if score tick_main_thread AzrTimerStack matches 1829 if score playerCount Azr_system matches 4.. positioned -79939 44 96 run function skyblock:azr/m/skeleton_t1_guard
-    execute if score tick_main_thread AzrTimerStack matches 1829 if score playerCount Azr_system matches 4.. positioned -79923 44 80 run function skyblock:azr/m/skeleton_t1_guard
+    execute if score tick_main_thread AzrTimerStack matches 1829 if score playerCount Azr_system matches 4.. positioned -79939 44 96 run function skyblock:azr/mobs/skeleton_t1_guard
+    execute if score tick_main_thread AzrTimerStack matches 1829 if score playerCount Azr_system matches 4.. positioned -79923 44 80 run function skyblock:azr/mobs/skeleton_t1_guard
     execute if score tick_main_thread AzrTimerStack matches 1830 if score #rng3 Azr_system matches 1 as @e[tag=AzrielBossA,limit=3] at @s run function skyblock:azr/stage/boss1/largeflat1
     execute if score tick_main_thread AzrTimerStack matches 1840 if score #rng3 Azr_system matches 3 as @e[tag=AzrielBossA,limit=3] at @s if entity @a[tag=azrPlayer,distance=0..2.5] run function skyblock:azr/stage/boss1/tp1
-    execute if score tick_main_thread AzrTimerStack matches 1849 positioned -79939 44 96 run function skyblock:azr/m/skeleton_t1
-    execute if score tick_main_thread AzrTimerStack matches 1849 positioned -79923 44 80 run function skyblock:azr/m/skeleton_t1
+    execute if score tick_main_thread AzrTimerStack matches 1849 positioned -79939 44 96 run function skyblock:azr/mobs/skeleton_t1
+    execute if score tick_main_thread AzrTimerStack matches 1849 positioned -79923 44 80 run function skyblock:azr/mobs/skeleton_t1
     execute if score tick_main_thread AzrTimerStack matches 1850 if score #rng3 Azr_system matches 2 as @e[tag=AzrielBossA,limit=3] at @s run function skyblock:azr/stage/boss1/largeflat1
     execute if score tick_main_thread AzrTimerStack matches 1850..1880 as @n[tag=AzrielBossA,scores={Azr_mobHealth=..75}] run scoreboard players set tick_main_thread AzrTimerStack 1000
     execute if score tick_main_thread AzrTimerStack matches 1850..1880 as @n[tag=AzrielBossA,scores={Azr_mobHealth=76..}] run scoreboard players set tick_main_thread AzrTimerStack 940

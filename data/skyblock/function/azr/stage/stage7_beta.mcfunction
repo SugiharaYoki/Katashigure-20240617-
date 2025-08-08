@@ -159,10 +159,10 @@ execute if score stage_main_thread AzrTimerStack matches 125..130 if score #rng8
 execute if score stage_main_thread AzrTimerStack matches 125..130 if score #rng6 Azr_system matches 3..4 if score playerCount Azr_system matches 5.. run summon husk -79906 40 92 {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_zombie_tier2",Health:8.5f,CustomName:'"尸壳"',CanPickUpLoot:0b,IsBaby:0b,HandItems:[{count:1,id:"stone_shovel",components:{custom_name:'{"text":"工兵石铲","italic":false,"color":"white"}'}},{}],HandDropChances:[0.001f,0.001f],ArmorItems:[{},{count:1,id:"chainmail_leggings",components:{enchantments:{protection:2}}},{count:1,id:"chainmail_chestplate",components:{enchantments:{projectile_protection:2}}},{}],ArmorDropChances:[0.02f,0.01f,0.01f,0.02f],attributes:[{id:"max_health",base:8.5d},{id:"attack_damage",base:1.5d},{id:"movement_speed",base:0.24d},{id:"attack_knockback",base:0.15d}]}
 
 execute if score stage_main_thread AzrTimerStack matches 131 run tellraw @a[tag=azrShowDialog] {"text":"中世纪骑士 死而复生","color":"dark_red"}
-execute if score stage_main_thread AzrTimerStack matches 131 positioned -79906 40 92 run function skyblock:azr/m/zombie_knight_t1
-execute if score stage_main_thread AzrTimerStack matches 131 positioned -79906 40 87 run function skyblock:azr/m/zombie_knight_t1
-execute if score stage_main_thread AzrTimerStack matches 133 if score playerCount Azr_system matches 5.. positioned -79906 40 92 run function skyblock:azr/m/zombie_knight_t1
-execute if score stage_main_thread AzrTimerStack matches 133 if score playerCount Azr_system matches 5.. positioned -79906 40 87 run function skyblock:azr/m/zombie_knight_t1
+execute if score stage_main_thread AzrTimerStack matches 131 positioned -79906 40 92 run function skyblock:azr/mobs/zombie_knight_t1
+execute if score stage_main_thread AzrTimerStack matches 131 positioned -79906 40 87 run function skyblock:azr/mobs/zombie_knight_t1
+execute if score stage_main_thread AzrTimerStack matches 133 if score playerCount Azr_system matches 5.. positioned -79906 40 92 run function skyblock:azr/mobs/zombie_knight_t1
+execute if score stage_main_thread AzrTimerStack matches 133 if score playerCount Azr_system matches 5.. positioned -79906 40 87 run function skyblock:azr/mobs/zombie_knight_t1
 
 execute if score stage_main_thread AzrTimerStack matches 135..152 run scoreboard players set stage_main_thread AzrTimerStack 176
 execute if score stage_main_thread AzrTimerStack matches 176..180 if entity @e[tag=AzrielMob,tag=!AzrielDecMob] run scoreboard players set stage_main_thread AzrTimerStack 177

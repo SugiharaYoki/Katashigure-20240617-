@@ -114,8 +114,8 @@ execute if block -79799 28 -284 minecraft:birch_button[powered=true] run functio
 execute if block -79713 47 -380 birch_button[powered=true] run function skyblock:azr/stage/stage_object_prep
 
 #extra bonus - stage3α
-execute if block -79924 39 25 minecraft:birch_button[powered=true] positioned -79931 38 25 run function skyblock:azr/m/zombie_t2_miner
-execute if block -79924 39 25 minecraft:birch_button[powered=true] positioned -79931 38 25 run function skyblock:azr/m/zombie_t2_miner
+execute if block -79924 39 25 minecraft:birch_button[powered=true] positioned -79931 38 25 run function skyblock:azr/mobs/zombie_t2_miner
+execute if block -79924 39 25 minecraft:birch_button[powered=true] positioned -79931 38 25 run function skyblock:azr/mobs/zombie_t2_miner
 execute if block -79924 39 25 minecraft:birch_button[powered=true] run summon item -79931 38 25 {Item:{count:3,id:"minecraft:emerald"}}
 execute if block -79924 39 25 minecraft:birch_button[powered=true] run setblock -79924 39 25 air
 #extra bonus - stage3α - spider cave
@@ -123,22 +123,22 @@ execute if block -79919 39 24 minecraft:birch_button[powered=true] run function 
 #extra bonus - stage4α
 execute if block -79936 39 42 minecraft:birch_button[powered=true] run summon item -79931 45 46 {Item:{count:6,id:"minecraft:emerald"}}
 execute if block -79936 39 42 minecraft:birch_button[powered=true] run summon item -79931 45 46 {Item:{count:4,id:"minecraft:beef"}}
-execute if block -79936 39 42 minecraft:birch_button[powered=true] positioned -79931 44 46 run function skyblock:azr/m/zombie_militia_t1
-execute if block -79936 39 42 minecraft:birch_button[powered=true] positioned -79931 44 46 run function skyblock:azr/m/zombie_militia_t1
-execute if block -79936 39 42 minecraft:birch_button[powered=true] positioned -79931 44 46 run function skyblock:azr/m/zombie_militia_t1
+execute if block -79936 39 42 minecraft:birch_button[powered=true] positioned -79931 44 46 run function skyblock:azr/mobs/zombie_militia_t1
+execute if block -79936 39 42 minecraft:birch_button[powered=true] positioned -79931 44 46 run function skyblock:azr/mobs/zombie_militia_t1
+execute if block -79936 39 42 minecraft:birch_button[powered=true] positioned -79931 44 46 run function skyblock:azr/mobs/zombie_militia_t1
 execute if block -79936 39 42 minecraft:birch_button[powered=true] run setblock -79936 39 42 air
 #extra bonus - stage4β uncommited
-execute if block -79959 39 20 minecraft:birch_button[powered=true] positioned -79956 38 24 run function skyblock:azr/m/vindicator_t1
-execute if block -79959 39 20 minecraft:birch_button[powered=true] positioned -79956 38 24 run function skyblock:azr/m/vindicator_t1
-execute if block -79959 39 20 minecraft:birch_button[powered=true] positioned -79956 38 16 run function skyblock:azr/m/vindicator_t1
-execute if block -79959 39 20 minecraft:birch_button[powered=true] positioned -79956 38 16 run function skyblock:azr/m/vindicator_t1
+execute if block -79959 39 20 minecraft:birch_button[powered=true] positioned -79956 38 24 run function skyblock:azr/mobs/vindicator_t1
+execute if block -79959 39 20 minecraft:birch_button[powered=true] positioned -79956 38 24 run function skyblock:azr/mobs/vindicator_t1
+execute if block -79959 39 20 minecraft:birch_button[powered=true] positioned -79956 38 16 run function skyblock:azr/mobs/vindicator_t1
+execute if block -79959 39 20 minecraft:birch_button[powered=true] positioned -79956 38 16 run function skyblock:azr/mobs/vindicator_t1
 execute if block -79959 39 20 minecraft:birch_button[powered=true] run summon item -79956 42 20 {Item:{count:3,id:"minecraft:emerald_block"}}
 execute if block -79959 39 20 minecraft:birch_button[powered=true] run setblock -79959 39 20 air
 #extra bonus - stage6 uncommited
 execute if block -79942 39 150 minecraft:birch_button[powered=true] run summon item -79931 44 149 {Item:{count:2,id:"minecraft:emerald_block"}}
-execute if block -79942 39 150 minecraft:birch_button[powered=true] positioned -79931 42 153 run function skyblock:azr/m/silverfish_t2
-execute if block -79942 39 150 minecraft:birch_button[powered=true] positioned -79931 42 153 run function skyblock:azr/m/silverfish_t2
-execute if block -79942 39 150 minecraft:birch_button[powered=true] positioned -79931 42 153 run function skyblock:azr/m/silverfish_t2
+execute if block -79942 39 150 minecraft:birch_button[powered=true] positioned -79931 42 153 run function skyblock:azr/mobs/silverfish_t2
+execute if block -79942 39 150 minecraft:birch_button[powered=true] positioned -79931 42 153 run function skyblock:azr/mobs/silverfish_t2
+execute if block -79942 39 150 minecraft:birch_button[powered=true] positioned -79931 42 153 run function skyblock:azr/mobs/silverfish_t2
 execute if block -79942 39 150 minecraft:birch_button[powered=true] run setblock -79942 39 150 air
 #extra bonus - stage7α uncommited
 execute if block -79903 44 131 minecraft:birch_button[powered=true] at @p[tag=azrPlayer] run summon item ~ ~1 ~ {Item:{components:{"minecraft:custom_name":'{"text":"光明精华","italic":false,"color":"blue"}',custom_data:{light_essence:1b},custom_model_data:{floats:[100001.0]}},count:3,id:"minecraft:ghast_tear"}}
@@ -148,9 +148,9 @@ execute if block -79901 49 131 minecraft:birch_button[powered=true] run setblock
 #extra bonus - stage8 uncommited
 execute if block -79901 39 67 minecraft:birch_button[powered=true] run summon item -79894 40 80 {Item:{count:2,id:"minecraft:golden_carrot"}}
 execute if block -79901 39 67 minecraft:birch_button[powered=true] if score playerCount Azr_system matches 4.. run summon item -79894 40 80 {Item:{count:2,id:"minecraft:golden_carrot"}}
-execute if block -79901 39 67 minecraft:birch_button[powered=true] positioned -79880 38 88 run function skyblock:azr/m/spider_t2_swift
-execute if block -79901 39 67 minecraft:birch_button[powered=true] positioned -79884 38 72 run function skyblock:azr/m/spider_t2_swift
-execute if block -79901 39 67 minecraft:birch_button[powered=true] positioned -79892 38 88 run function skyblock:azr/m/spider_t2_swift
+execute if block -79901 39 67 minecraft:birch_button[powered=true] positioned -79880 38 88 run function skyblock:azr/mobs/spider_t2_swift
+execute if block -79901 39 67 minecraft:birch_button[powered=true] positioned -79884 38 72 run function skyblock:azr/mobs/spider_t2_swift
+execute if block -79901 39 67 minecraft:birch_button[powered=true] positioned -79892 38 88 run function skyblock:azr/mobs/spider_t2_swift
 execute if block -79901 39 67 minecraft:birch_button[powered=true] run setblock -79901 39 67 air
 
 
@@ -158,17 +158,17 @@ execute if block -79883 39 67 minecraft:stone_button[powered=true] as @a[tag=azr
 execute if block -79883 39 67 minecraft:stone_button[powered=true] run setblock -79883 39 67 air
 #extra bonus - stage9 uncommited
 execute if block -79940 39 -60 minecraft:birch_button[powered=true] run function skyblock:azr/stage/dialog/first_pass_west
-execute if block -79924 39 -72 minecraft:birch_button[powered=true] positioned -79931 38 -72 run function skyblock:azr/m/zombie_t2_miner
-execute if block -79924 39 -72 minecraft:birch_button[powered=true] positioned -79931 38 -72 run function skyblock:azr/m/zombie_t2_miner
-execute if block -79924 39 -72 minecraft:birch_button[powered=true] positioned -79931 38 -72 run function skyblock:azr/m/zombie_t2_miner
+execute if block -79924 39 -72 minecraft:birch_button[powered=true] positioned -79931 38 -72 run function skyblock:azr/mobs/zombie_t2_miner
+execute if block -79924 39 -72 minecraft:birch_button[powered=true] positioned -79931 38 -72 run function skyblock:azr/mobs/zombie_t2_miner
+execute if block -79924 39 -72 minecraft:birch_button[powered=true] positioned -79931 38 -72 run function skyblock:azr/mobs/zombie_t2_miner
 execute if block -79924 39 -72 minecraft:birch_button[powered=true] run setblock -79924 39 -72 air
 #extra bonus - event10
 execute if block -79938 41 -125 minecraft:birch_button[powered=true] run give @a[tag=azrPlayer] minecraft:glistering_melon_slice 1
 execute if block -79938 41 -125 minecraft:birch_button[powered=true] run give @a[tag=azrPlayer] minecraft:emerald 5
-execute if block -79938 41 -125 minecraft:birch_button[powered=true] positioned -79933 40 -122 run function skyblock:azr/m/husk_t2
-execute if block -79938 41 -125 minecraft:birch_button[powered=true] positioned -79933 40 -122 run function skyblock:azr/m/husk_t2
-execute if block -79938 41 -125 minecraft:birch_button[powered=true] positioned -79933 40 -122 run function skyblock:azr/m/husk_t2
-execute if block -79938 41 -125 minecraft:birch_button[powered=true] positioned -79933 40 -122 run function skyblock:azr/m/husk_t2
+execute if block -79938 41 -125 minecraft:birch_button[powered=true] positioned -79933 40 -122 run function skyblock:azr/mobs/husk_t2
+execute if block -79938 41 -125 minecraft:birch_button[powered=true] positioned -79933 40 -122 run function skyblock:azr/mobs/husk_t2
+execute if block -79938 41 -125 minecraft:birch_button[powered=true] positioned -79933 40 -122 run function skyblock:azr/mobs/husk_t2
+execute if block -79938 41 -125 minecraft:birch_button[powered=true] positioned -79933 40 -122 run function skyblock:azr/mobs/husk_t2
 execute if block -79938 41 -125 minecraft:birch_button[powered=true] run setblock -79934 40 -124 air destroy
 execute if block -79938 41 -125 minecraft:birch_button[powered=true] run setblock -79938 41 -125 air
 #extra bonus - event10

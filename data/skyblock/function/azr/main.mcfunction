@@ -2,7 +2,7 @@
 execute as @a[scores={MultiMenu=16220001}] run function skyblock:azr/info/guide_sub1
 execute as @a[scores={MultiMenu=16220002}] run function skyblock:azr/info/guide_sub2
 execute as @a[scores={MultiMenu=16220003}] run function skyblock:azr/info/guide_sub3
-execute as @a[scores={MultiMenu=112}] at @s run function skyblock:azr/midway_join
+execute as @a[scores={MultiMenu=112}] at @s run function skyblock:azr/player/join
 execute as @a[scores={MultiMenu=114}] run function skyblock:azr/info/toggle_money_remind
 execute as @a[scores={MultiMenu=115}] run function skyblock:azr/info/menu
 scoreboard players enable @a MultiMenu
@@ -93,7 +93,7 @@ team join AzrPlayer @e[tag=AzrielFriendly]
 
 # 玩家函数
 scoreboard players reset $playerExists Azr_system
-execute as @a[tag=azrPlayer] run function skyblock:azr/player
+execute as @a[tag=azrPlayer] run function skyblock:azr/player/main
 
 
 execute if score $playerExists Azr_system matches 1 if score tick_count_main AzrTimerStack matches -2147483648..2147483647 run scoreboard players add tick_count_main AzrTimerStack 1

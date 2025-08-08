@@ -182,12 +182,12 @@ execute as @e[tag=arroworb2,type=marker] at @s run function skyblock:azr/outgame
     execute if score @s EntityTimer matches 1790 if score #rng3 Azr_system matches 1 as @e[tag=AzrielBossA_outgame,limit=3] at @s run function skyblock:azr/outgame/boss1/largeflat1_w
     execute if score @s EntityTimer matches 1810 if score #rng3 Azr_system matches 2 as @e[tag=AzrielBossA_outgame,limit=3] at @s run function skyblock:azr/outgame/boss1/largeflat1_w
     execute if score @s EntityTimer matches 1810 if score #rng3 Azr_system matches 3 as @e[tag=AzrielBossA_outgame,limit=3] at @s run function skyblock:azr/outgame/boss1/summon
-    execute if score @s EntityTimer matches 1829 if score playerCount Azr_system matches 4.. positioned ~ ~ ~ run function skyblock:azr/m/skeleton_t1_guard
-    execute if score @s EntityTimer matches 1829 if score playerCount Azr_system matches 4.. positioned ~ ~ ~ run function skyblock:azr/m/skeleton_t1_guard
+    execute if score @s EntityTimer matches 1829 if score playerCount Azr_system matches 4.. positioned ~ ~ ~ run function skyblock:azr/mobs/skeleton_t1_guard
+    execute if score @s EntityTimer matches 1829 if score playerCount Azr_system matches 4.. positioned ~ ~ ~ run function skyblock:azr/mobs/skeleton_t1_guard
     execute if score @s EntityTimer matches 1830 if score #rng3 Azr_system matches 1 as @e[tag=AzrielBossA_outgame,limit=3] at @s run function skyblock:azr/outgame/boss1/largeflat1
     execute if score @s EntityTimer matches 1840 if score #rng3 Azr_system matches 3 as @e[tag=AzrielBossA_outgame,limit=3] at @s if entity @a[gamemode=!creative,gamemode=!spectator,distance=0..2.5] run function skyblock:azr/outgame/boss1/tp1
-    execute if score @s EntityTimer matches 1849 positioned ~ ~ ~ run function skyblock:azr/m/skeleton_t1
-    execute if score @s EntityTimer matches 1849 positioned ~ ~ ~ run function skyblock:azr/m/skeleton_t1
+    execute if score @s EntityTimer matches 1849 positioned ~ ~ ~ run function skyblock:azr/mobs/skeleton_t1
+    execute if score @s EntityTimer matches 1849 positioned ~ ~ ~ run function skyblock:azr/mobs/skeleton_t1
     execute if score @s EntityTimer matches 1850 if score #rng3 Azr_system matches 2 as @e[tag=AzrielBossA_outgame,limit=3] at @s run function skyblock:azr/outgame/boss1/largeflat1
     execute if score @s EntityTimer matches 1850..1880 as @n[tag=AzrielBossA_outgame,scores={Azr_mobHealth=..75}] run scoreboard players set @s EntityTimer 1000
     execute if score @s EntityTimer matches 1850..1880 as @n[tag=AzrielBossA_outgame,scores={Azr_mobHealth=76..}] run scoreboard players set @s EntityTimer 940

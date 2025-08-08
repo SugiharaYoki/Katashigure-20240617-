@@ -16,49 +16,49 @@ execute if score stage_main_thread AzrTimerStack matches 502 run setblock -79946
 execute if score stage_main_thread AzrTimerStack matches 502 run setblock -79946 38 50 air
 
 #0
-execute if score stage_main_thread AzrTimerStack matches 502 positioned -79933 38 88 run function skyblock:azr/m/zombie_t1_4hp
-execute if score stage_main_thread AzrTimerStack matches 502 positioned -79929 38 88 run function skyblock:azr/m/zombie_t1_4hp
-execute if score stage_main_thread AzrTimerStack matches 502 positioned -79931 38 86 run function skyblock:azr/m/zombie_t1_4hp
-execute if score stage_main_thread AzrTimerStack matches 502 positioned -79931 38 90 run function skyblock:azr/m/zombie_t1_4hp
+execute if score stage_main_thread AzrTimerStack matches 502 positioned -79933 38 88 run function skyblock:azr/mobs/zombie_t1_4hp
+execute if score stage_main_thread AzrTimerStack matches 502 positioned -79929 38 88 run function skyblock:azr/mobs/zombie_t1_4hp
+execute if score stage_main_thread AzrTimerStack matches 502 positioned -79931 38 86 run function skyblock:azr/mobs/zombie_t1_4hp
+execute if score stage_main_thread AzrTimerStack matches 502 positioned -79931 38 90 run function skyblock:azr/mobs/zombie_t1_4hp
 #4
-execute if score stage_main_thread AzrTimerStack matches 502 positioned -79932 38 88 run function skyblock:azr/m/zombie_t2_shield_iron
-execute if score stage_main_thread AzrTimerStack matches 502 positioned -79930 38 88 run function skyblock:azr/m/zombie_t2_shield_iron
-execute if score stage_main_thread AzrTimerStack matches 502 positioned -79931 38 87 run function skyblock:azr/m/zombie_t2_shield_iron
-execute if score stage_main_thread AzrTimerStack matches 502 positioned -79931 38 89 run function skyblock:azr/m/zombie_t2_shield_iron
+execute if score stage_main_thread AzrTimerStack matches 502 positioned -79932 38 88 run function skyblock:azr/mobs/zombie_t2_shield_iron
+execute if score stage_main_thread AzrTimerStack matches 502 positioned -79930 38 88 run function skyblock:azr/mobs/zombie_t2_shield_iron
+execute if score stage_main_thread AzrTimerStack matches 502 positioned -79931 38 87 run function skyblock:azr/mobs/zombie_t2_shield_iron
+execute if score stage_main_thread AzrTimerStack matches 502 positioned -79931 38 89 run function skyblock:azr/mobs/zombie_t2_shield_iron
 #8
-execute if score stage_main_thread AzrTimerStack matches 502 positioned -79933 38 88 run function skyblock:azr/m/zombie_t1_4hp
-execute if score stage_main_thread AzrTimerStack matches 502 positioned -79929 38 88 run function skyblock:azr/m/zombie_t1_4hp
-execute if score stage_main_thread AzrTimerStack matches 502 positioned -79931 38 86 run function skyblock:azr/m/zombie_t1_4hp
-execute if score stage_main_thread AzrTimerStack matches 502 positioned -79931 38 90 run function skyblock:azr/m/zombie_t1_4hp
+execute if score stage_main_thread AzrTimerStack matches 502 positioned -79933 38 88 run function skyblock:azr/mobs/zombie_t1_4hp
+execute if score stage_main_thread AzrTimerStack matches 502 positioned -79929 38 88 run function skyblock:azr/mobs/zombie_t1_4hp
+execute if score stage_main_thread AzrTimerStack matches 502 positioned -79931 38 86 run function skyblock:azr/mobs/zombie_t1_4hp
+execute if score stage_main_thread AzrTimerStack matches 502 positioned -79931 38 90 run function skyblock:azr/mobs/zombie_t1_4hp
 #12
-execute if score stage_main_thread AzrTimerStack matches 502 positioned -79932 38 88 run function skyblock:azr/m/zombie_t2_shield_iron
-execute if score stage_main_thread AzrTimerStack matches 502 positioned -79930 38 88 run function skyblock:azr/m/zombie_t2_shield_iron
-execute if score stage_main_thread AzrTimerStack matches 502 positioned -79931 38 87 run function skyblock:azr/m/zombie_t2_shield_iron
-execute if score stage_main_thread AzrTimerStack matches 502 positioned -79931 38 89 run function skyblock:azr/m/zombie_t2_shield_iron
+execute if score stage_main_thread AzrTimerStack matches 502 positioned -79932 38 88 run function skyblock:azr/mobs/zombie_t2_shield_iron
+execute if score stage_main_thread AzrTimerStack matches 502 positioned -79930 38 88 run function skyblock:azr/mobs/zombie_t2_shield_iron
+execute if score stage_main_thread AzrTimerStack matches 502 positioned -79931 38 87 run function skyblock:azr/mobs/zombie_t2_shield_iron
+execute if score stage_main_thread AzrTimerStack matches 502 positioned -79931 38 89 run function skyblock:azr/mobs/zombie_t2_shield_iron
 #16
-execute if score stage_main_thread AzrTimerStack matches 502 positioned -79930 38 87 run function skyblock:azr/m/zombie_militia_t1
-execute if score stage_main_thread AzrTimerStack matches 502 positioned -79932 38 89 run function skyblock:azr/m/zombie_militia_t1
-execute if score stage_main_thread AzrTimerStack matches 502 positioned -79932 38 87 run function skyblock:azr/m/zombie_militia_t1
-execute if score stage_main_thread AzrTimerStack matches 502 positioned -79930 38 89 run function skyblock:azr/m/zombie_militia_t1
+execute if score stage_main_thread AzrTimerStack matches 502 positioned -79930 38 87 run function skyblock:azr/mobs/zombie_militia_t1
+execute if score stage_main_thread AzrTimerStack matches 502 positioned -79932 38 89 run function skyblock:azr/mobs/zombie_militia_t1
+execute if score stage_main_thread AzrTimerStack matches 502 positioned -79932 38 87 run function skyblock:azr/mobs/zombie_militia_t1
+execute if score stage_main_thread AzrTimerStack matches 502 positioned -79930 38 89 run function skyblock:azr/mobs/zombie_militia_t1
 #20
-execute if score stage_main_thread AzrTimerStack matches 502 positioned -79930 38 87 run function skyblock:azr/m/zombie_militia_t1
-execute if score stage_main_thread AzrTimerStack matches 502 positioned -79932 38 89 run function skyblock:azr/m/zombie_militia_t1
-execute if score stage_main_thread AzrTimerStack matches 502 positioned -79932 38 87 run function skyblock:azr/m/zombie_militia_t1
-execute if score stage_main_thread AzrTimerStack matches 502 positioned -79930 38 89 run function skyblock:azr/m/zombie_militia_t1
+execute if score stage_main_thread AzrTimerStack matches 502 positioned -79930 38 87 run function skyblock:azr/mobs/zombie_militia_t1
+execute if score stage_main_thread AzrTimerStack matches 502 positioned -79932 38 89 run function skyblock:azr/mobs/zombie_militia_t1
+execute if score stage_main_thread AzrTimerStack matches 502 positioned -79932 38 87 run function skyblock:azr/mobs/zombie_militia_t1
+execute if score stage_main_thread AzrTimerStack matches 502 positioned -79930 38 89 run function skyblock:azr/mobs/zombie_militia_t1
 #24
-execute if score stage_main_thread AzrTimerStack matches 502 positioned -79925 38 82 run function skyblock:azr/m/silverfish_t1_corridor
-execute if score stage_main_thread AzrTimerStack matches 502 positioned -79925 38 82 run function skyblock:azr/m/silverfish_t1_corridor
-execute if score stage_main_thread AzrTimerStack matches 502 positioned -79925 38 82 run function skyblock:azr/m/silverfish_t1_corridor
-execute if score stage_main_thread AzrTimerStack matches 502 positioned -79937 38 94 run function skyblock:azr/m/silverfish_t1_corridor
-execute if score stage_main_thread AzrTimerStack matches 502 positioned -79937 38 94 run function skyblock:azr/m/silverfish_t1_corridor
-execute if score stage_main_thread AzrTimerStack matches 502 positioned -79937 38 94 run function skyblock:azr/m/silverfish_t1_corridor
+execute if score stage_main_thread AzrTimerStack matches 502 positioned -79925 38 82 run function skyblock:azr/mobs/silverfish_t1_corridor
+execute if score stage_main_thread AzrTimerStack matches 502 positioned -79925 38 82 run function skyblock:azr/mobs/silverfish_t1_corridor
+execute if score stage_main_thread AzrTimerStack matches 502 positioned -79925 38 82 run function skyblock:azr/mobs/silverfish_t1_corridor
+execute if score stage_main_thread AzrTimerStack matches 502 positioned -79937 38 94 run function skyblock:azr/mobs/silverfish_t1_corridor
+execute if score stage_main_thread AzrTimerStack matches 502 positioned -79937 38 94 run function skyblock:azr/mobs/silverfish_t1_corridor
+execute if score stage_main_thread AzrTimerStack matches 502 positioned -79937 38 94 run function skyblock:azr/mobs/silverfish_t1_corridor
 #30
-execute if score stage_main_thread AzrTimerStack matches 502 positioned -79936 38 83 run function skyblock:azr/m/skeleton_t1
-execute if score stage_main_thread AzrTimerStack matches 502 positioned -79936 38 83 run function skyblock:azr/m/skeleton_t1
-execute if score stage_main_thread AzrTimerStack matches 502 positioned -79926 38 93 run function skyblock:azr/m/skeleton_t1
-execute if score stage_main_thread AzrTimerStack matches 502 positioned -79926 38 93 run function skyblock:azr/m/skeleton_t1
+execute if score stage_main_thread AzrTimerStack matches 502 positioned -79936 38 83 run function skyblock:azr/mobs/skeleton_t1
+execute if score stage_main_thread AzrTimerStack matches 502 positioned -79936 38 83 run function skyblock:azr/mobs/skeleton_t1
+execute if score stage_main_thread AzrTimerStack matches 502 positioned -79926 38 93 run function skyblock:azr/mobs/skeleton_t1
+execute if score stage_main_thread AzrTimerStack matches 502 positioned -79926 38 93 run function skyblock:azr/mobs/skeleton_t1
 #34
-execute if score stage_main_thread AzrTimerStack matches 502 positioned -79921 38 90 run function skyblock:azr/m/vindicator_t3
+execute if score stage_main_thread AzrTimerStack matches 502 positioned -79921 38 90 run function skyblock:azr/mobs/vindicator_t3
 #35
 
 

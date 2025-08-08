@@ -26,12 +26,12 @@ execute at @s[tag=hasSkills] run function skyblock:azr/system_sub/chain_kill
 execute at @s[tag=hasSkills,tag=azr_skills_arrow] run function skyblock:azr/system_sub/skills/arrow/main
 
 #死亡检测
-execute as @s[scores={Azr_forceDeath=1..}] at @s run function skyblock:azr/end_game/player_dead
-execute as @s[scores={Azr_isDead=1..}] at @s run function skyblock:azr/end_game/player_dead
+execute as @s[scores={Azr_forceDeath=1..}] at @s run function skyblock:azr/player/die
+execute as @s[scores={Azr_isDead=1..}] at @s run function skyblock:azr/player/die
 
 #结束游戏
 #游戏未开始或对局不匹配时强制杀死玩家
-execute unless score isStarted Azr_system matches 1 as @a[tag=azrPlayer] run function skyblock:azr/end_game/quit_game
-execute as @a[tag=azrPlayer] unless score @s Azr_startCount = Pointer Azr_startCount run function skyblock:azr/end_game/quit_game
+execute unless score isStarted Azr_system matches 1 as @a[tag=azrPlayer] run function skyblock:azr/endgame/quit_game
+execute as @a[tag=azrPlayer] unless score @s Azr_startCount = Pointer Azr_startCount run function skyblock:azr/endgame/quit_game
 
 # scoreboard players operation @s AzrSlotRecord = @s AzrSlotRecord_temp

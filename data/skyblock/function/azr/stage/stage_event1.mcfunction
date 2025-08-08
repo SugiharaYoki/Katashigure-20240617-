@@ -9,14 +9,14 @@ execute if score stage_main_thread AzrTimerStack matches 300 run fill -79930 42 
 execute if score stage_main_thread AzrTimerStack matches 301 run fill -79930 42 54 -79932 42 54 anvil
 execute if score stage_main_thread AzrTimerStack matches 302 run fill -79930 42 54 -79932 42 54 anvil
 execute if score stage_main_thread AzrTimerStack matches 303 run fill -79930 42 54 -79932 42 54 anvil
-execute if score stage_main_thread AzrTimerStack matches 303..306 positioned -79929 38 75 run function skyblock:azr/m/zombie_t2_shield_iron
-execute if score stage_main_thread AzrTimerStack matches 303..306 positioned -79933 38 75 run function skyblock:azr/m/zombie_t2_shield_iron
-execute if score stage_main_thread AzrTimerStack matches 303 positioned -79934 38 46 run function skyblock:azr/m/spider_t3_nightmare
-execute if score stage_main_thread AzrTimerStack matches 303 positioned -79928 38 46 run function skyblock:azr/m/spider_t3_nightmare
-execute if score stage_main_thread AzrTimerStack matches 303 positioned -79928 38 46 run function skyblock:azr/m/zombie_t2_shovel_iron
-execute if score stage_main_thread AzrTimerStack matches 303 positioned -79928 38 46 run function skyblock:azr/m/zombie_t2_shovel_iron
-execute if score stage_main_thread AzrTimerStack matches 303 positioned -79934 38 46 run function skyblock:azr/m/zombie_t2_shovel_iron
-execute if score stage_main_thread AzrTimerStack matches 303 positioned -79934 38 46 run function skyblock:azr/m/zombie_t2_shovel_iron
+execute if score stage_main_thread AzrTimerStack matches 303..306 positioned -79929 38 75 run function skyblock:azr/mobs/zombie_t2_shield_iron
+execute if score stage_main_thread AzrTimerStack matches 303..306 positioned -79933 38 75 run function skyblock:azr/mobs/zombie_t2_shield_iron
+execute if score stage_main_thread AzrTimerStack matches 303 positioned -79934 38 46 run function skyblock:azr/mobs/spider_t3_nightmare
+execute if score stage_main_thread AzrTimerStack matches 303 positioned -79928 38 46 run function skyblock:azr/mobs/spider_t3_nightmare
+execute if score stage_main_thread AzrTimerStack matches 303 positioned -79928 38 46 run function skyblock:azr/mobs/zombie_t2_shovel_iron
+execute if score stage_main_thread AzrTimerStack matches 303 positioned -79928 38 46 run function skyblock:azr/mobs/zombie_t2_shovel_iron
+execute if score stage_main_thread AzrTimerStack matches 303 positioned -79934 38 46 run function skyblock:azr/mobs/zombie_t2_shovel_iron
+execute if score stage_main_thread AzrTimerStack matches 303 positioned -79934 38 46 run function skyblock:azr/mobs/zombie_t2_shovel_iron
 execute if score stage_main_thread AzrTimerStack matches 305..317 run playsound minecraft:ambient.soul_sand_valley.mood master @a -79926 38 34 1000 1.3
 execute if score stage_main_thread AzrTimerStack matches 305..317 run playsound minecraft:ambient.soul_sand_valley.loop master @a -79926 38 34 1000 1.3
 execute if score stage_main_thread AzrTimerStack matches 305..317 run playsound minecraft:ambient.soul_sand_valley.mood master @a -79926 38 34 1000 1
