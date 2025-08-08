@@ -15,7 +15,7 @@ execute if score @s rng4 matches 41.. at @s run data modify entity @s NoAI set v
 execute if score @s rng4 matches 41 at @s run effect give @s resistance 30 4 true
 execute if score @s rng4 matches 41.. at @s run tp @s 90060 21 -1815
 
-execute if score @s rng4 matches 50.. at @s if score @s rng7 matches ..0 store result score @s rng9 run random value 1..5
+execute if score @s rng4 matches 50.. at @s if score @s rng7 matches ..0 store result score @s rng9 run random value 1..3
 execute if score @s rng4 matches 50.. at @s if score @s rng7 matches ..0 run scoreboard players set @s rng7 1 
 execute if score @s rng4 matches 50.. at @s if score @s rng7 matches 1.. run scoreboard players add @s rng7 1 
 
