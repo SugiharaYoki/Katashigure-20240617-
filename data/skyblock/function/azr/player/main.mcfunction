@@ -10,7 +10,7 @@ execute as @s[tag=azrUpdateSpawnPoint,nbt={OnGround:1b}] at @s if block ~ ~ ~ ai
 #商店系统
 execute as @s[tag=hasLifeVitae] at @s run function skyblock:azr/shop/core
 execute as @s[scores={Azr_Shop=84301..8439999}] run function skyblock:azr/shop/purchase
-execute as @s[scores={Azr_Shop=8900101..8900199}] run function skyblock:azr/chainkill/assign
+execute as @s[scores={Azr_Shop=8900101..8900199}] run function skyblock:azr/system_sub/skills/chainkill/assign
 
 #背包管理器
 #execute as @s[tag=azrPlayer] run function skyblock:azr/inventory_manager
@@ -21,7 +21,7 @@ tag @s[tag=removeSpark] remove removeSpark
 #机械弩
 execute if items entity @s weapon.mainhand crossbow[custom_data~{crossbow_v71:1b}] if items entity @s container.* *[custom_data~{crossbow_arrow:1b}] unless data entity @s SelectedItem.components."minecraft:charged_projectiles"[{id:"minecraft:arrow"}] run function skyblock:azr/system_sub/crossbow_fill_arrow
 #索命连击
-execute at @s[tag=hasSkills] run function skyblock:azr/system_sub/chain_kill
+execute at @s[tag=hasSkills] run function skyblock:azr/system_sub/skills/chainkill/chain_kill
 #残城箭影
 execute at @s[tag=hasSkills,tag=azr_skills_arrow] run function skyblock:azr/system_sub/skills/arrow/main
 

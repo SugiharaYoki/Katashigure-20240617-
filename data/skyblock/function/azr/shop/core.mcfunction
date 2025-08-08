@@ -10,7 +10,7 @@ execute unless items entity @s player.crafting.1 *[!custom_data~{PsychicVitae:1b
 #绿宝石管理
 execute if items entity @s[tag=hasLifeVitae] container.* emerald run function skyblock:azr/shop/money_conversion
 #灵能入口
-execute if items entity @s player.cursor *[custom_data~{PsychicVitae:1b}] run function skyblock:azr/chainkill/build
+execute if items entity @s player.cursor *[custom_data~{PsychicVitae:1b}] run function skyblock:azr/system_sub/skills/chainkill/build
 execute if items entity @s container.* *[custom_data~{PsychicVitae:1b}] run clear @s *[custom_data~{PsychicVitae:1b}]
 #商店入口
 execute if entity @s[tag=!azrBanLifeVitae] unless score @s Azr_shopChapter matches 2.. run scoreboard players set @s Azr_shopChapter 1

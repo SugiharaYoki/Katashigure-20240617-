@@ -35,11 +35,11 @@ execute if entity @s[scores={Azr_Shop=8900115},tag=AZR_ChainKillUpg15] run tag @
 execute if entity @s[scores={Azr_Shop=8900116},tag=AZR_ChainKillUpg16] run tag @s add AZR_ChainKillUpg_REMOVE
 execute if entity @s[tag=AZR_ChainKillUpg_REMOVE] run tag @s remove AZR_ChainKillUpg_FAILED
 
-execute if entity @s[tag=!AZR_ChainKillUpg_FAILED] run function skyblock:azr/chainkill/assign_execute
+execute if entity @s[tag=!AZR_ChainKillUpg_FAILED] run function skyblock:azr/system_sub/skills/chainkill/assign_execute
 
 
 tellraw @s[tag=AZR_ChainKillUpg_FAILED] [{"text":"失败：剩余点数不足！请取消已选择的升级。","color":"red"}]
 tag @s remove AZR_ChainKillUpg_FAILED
 tag @s remove AZR_ChainKillUpg_REMOVE
 playsound minecraft:ui.button.click master @s ~ ~ ~ 0.3 1.5 0.4
-function skyblock:azr/chainkill/build
+function skyblock:azr/system_sub/skills/chainkill/build
