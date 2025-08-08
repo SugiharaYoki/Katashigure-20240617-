@@ -4,7 +4,7 @@ fill -79931 40 6 -79931 38 6 air
 fill -79930 43 42 -79932 42 41 air
 setblock -79934 39 34 air
 setblock -79932 39 42 air
-setblock -79935 39 22 air
+setblock -79935 39 10 air
 setblock -79932 39 4 air
 
 fill -79932 38 72 -79930 42 72 red_stained_glass
