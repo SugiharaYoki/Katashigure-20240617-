@@ -66,16 +66,24 @@ execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=6..7}] rng7
 execute if score @s rng4 matches ..2999 at @s[scores={health=..199}] run scoreboard players set @s rng4 3000
 execute if score @s rng4 matches 4000.. at @s run scoreboard players set @s rng4 3000
 
+execute if score @s rng4 matches 30 positioned 90059 20 -1825 run tellraw @a[distance=0..150] [{"text":"权之执理：","color":"red","bold": true},{"text":"\n“有意思，但汝不再有耍小聪明的机会。”","color":"white","bold": false}]
+execute if score @s rng4 matches 50 positioned 90059 20 -1825 run tellraw @a[distance=0..150] [{"text":"权之执理：","color":"red","bold": true},{"text":"\n“品尝这焚灭一切卑微生灵的烈火吧。”","color":"white","bold": false}]
+execute if score @s rng4 matches 1000 positioned 90059 20 -1825 run tellraw @a[distance=0..150] [{"text":"权之执理：","color":"red","bold": true},{"text":"\n“无谓而幼稚的反抗。”","color":"white","bold": false}]
+execute if score @s rng4 matches 2000 positioned 90059 20 -1825 run tellraw @a[distance=0..150] [{"text":"权之执理：","color":"red","bold": true},{"text":"\n“被神圣的烈火焚尽吧。”","color":"white","bold": false}]
+
+execute if score @s rng4 matches 3000 at @s run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“中间的平台撑不住了，随时准备后退！！”","color":"white","bold": false}]
+execute if score @s rng4 matches 3050 at @s run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“保持距离！！！！”","color":"white","bold": false}]
+
 execute if score @s rng4 matches 3000 at @s run particle block{block_state:{Name:tuff_bricks}} ~ ~ ~ 8 0.1 8 0.05 50
 execute if score @s rng4 matches 3040.. at @s run particle block{block_state:{Name:tuff_bricks}} ~ ~ ~ 8 0.1 8 0.05 10
-execute if score @s rng4 matches 3070 at @s run particle block{block_state:{Name:tuff_bricks}} ~ ~ ~ 8 0.1 8 0.05 150
+execute if score @s rng4 matches 3080 at @s run particle block{block_state:{Name:tuff_bricks}} ~ ~ ~ 8 0.1 8 0.05 150
 execute if score @s rng4 matches 3030.. at @s run particle large_smoke ~ ~ ~ 8 0 8 0.3 8
-execute if score @s rng4 matches 3050.. at @s run particle large_smoke ~ ~ ~ 8 0 8 0.3 8
-execute if score @s rng4 matches 3070 at @s run particle large_smoke ~ ~ ~ 8 0 8 0.3 90
-execute if score @s rng4 matches 3070 at @s run clone 90052 120 -1821 90067 120 -1809 90052 20 -1821
-execute if score @s rng4 matches 3070 at @s run tag @s add Phase4
+execute if score @s rng4 matches 3050.. at @s run particle large_smoke ~ ~ ~ 8 0 8 0.3 12
+execute if score @s rng4 matches 3080 at @s run particle large_smoke ~ ~ ~ 8 0 8 0.3 120
+execute if score @s rng4 matches 3080 at @s run clone 90052 120 -1821 90067 120 -1809 90052 20 -1821
+execute if score @s rng4 matches 3080 at @s run tag @s add Phase4
 
-execute if score @s rng4 matches 3070 at @s run scoreboard players set @s rng4 -2
+execute if score @s rng4 matches 3080 at @s run scoreboard players set @s rng4 -2
 
 
 

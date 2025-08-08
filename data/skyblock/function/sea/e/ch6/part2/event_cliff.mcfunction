@@ -283,7 +283,7 @@ execute if score SEA_ch6_event rng5 matches 20047 run particle white_ash 90055 2
 execute if score SEA_ch6_event rng5 matches 20047..20067 run particle white_ash 90055 21.1 -1815 20 5 20 1 500
 
 
-execute if score SEA_ch6_event rng5 matches 20030 as @a[scores={SEAPT_member=1}] at @s run tellraw @a[distance=0..150] [{"text":"？？？：","color":"red","bold": true},{"text":"\n“汝是因知晓神庭的怒雷对地底无能为力吧。”","color":"white","bold": false}]
+execute if score SEA_ch6_event rng5 matches 20003 as @a[scores={SEAPT_member=1}] at @s run tellraw @a[distance=0..150] [{"text":"？？？：","color":"red","bold": true},{"text":"\n“汝是因知晓神庭的怒雷对地底无能为力吧。”","color":"white","bold": false}]
 
 execute if score SEA_ch6_event rng5 matches 20047 run summon marker 90069 28 -1815 {Tags:["SEAboss5_heaven_portal"]}
 execute if score SEA_ch6_event rng5 matches 20058 positioned 90064 20 -1815 run summon lightning_bolt
@@ -322,7 +322,8 @@ execute if score SEA_ch6_event rng5 matches 20108 as @n[tag=SEAboss6] at @s run 
 execute if score SEA_ch6_event rng5 matches 20108 as @n[tag=SEAboss6] at @s run particle small_gust ^-1.8 ^3.25 ^-1.5 0.23 0.23 0.23 0 3
 
 execute if score SEA_ch6_event rng5 matches 20078 positioned 90064 22 -1815 run data modify entity @n[tag=SEAboss6] NoAI set value 0b
-execute if score SEA_ch6_event rng5 matches 20047 as @a[scores={SEAPT_member=1}] at @s run tellraw @a[distance=0..150] [{"text":"？？？：","color":"red","bold": true},{"text":"\n“汝可知自己面对的，乃是天使长拉贵尔大人麾下的主天使：权之执理？”","color":"white","bold": false}]
+execute if score SEA_ch6_event rng5 matches 20030 as @a[scores={SEAPT_member=1}] at @s run tellraw @a[distance=0..150] [{"text":"？？？：","color":"red","bold": true},{"text":"\n“既然一路走至此处，那吾也该报上名号了。”","color":"white","bold": false}]
+execute if score SEA_ch6_event rng5 matches 20047 as @a[scores={SEAPT_member=1}] at @s run tellraw @a[distance=0..150] [{"text":"权之执理：","color":"red","bold": true},{"text":"\n“吾乃拉贵尔大人麾下的主天使：权之执理。吾之职责，是焚毁所有妄图沾染天使神力的肮脏之物。”","color":"white","bold": false}]
 execute if score SEA_ch6_event rng5 matches 20064 as @a[scores={SEAPT_member=1}] at @s run tellraw @a[distance=0..150] [{"text":"权之执理：","color":"red","bold": true},{"text":"\n“无妨，吾会令汝认知到自己的愚昧与无知。”","color":"white","bold": false}]
 execute if score SEA_ch6_event rng5 matches 20078 as @a[scores={SEAPT_member=1}] at @s run tellraw @a[distance=0..150] [{"text":"权之执理：","color":"red","bold": true},{"text":"\n“纵使天穹的雷霆无法落下，吾也能将汝二人如同蝼蚁般碾碎。”","color":"white","bold": false}]
 
