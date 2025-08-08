@@ -25,6 +25,7 @@ bossbar set azr:boss_hp_bar_0 players @a[tag=azrShowDialog]
 #声明常驻记分板 可能包含系统参数、永久变量、指针等
 scoreboard objectives add Azr_system dummy
 scoreboard objectives add Azr_startCount dummy
+scoreboard objectives add Azr_personalStartCount dummy
 scoreboard objectives add Azr_skillPoints dummy
 scoreboard objectives add AZR_chainKill minecraft.custom:minecraft.mob_kills
 scoreboard objectives add AZR_chainKill_damage minecraft.custom:minecraft.damage_dealt

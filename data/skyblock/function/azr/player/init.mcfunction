@@ -37,6 +37,7 @@ scoreboard players set @s Azr_emerald 0
 scoreboard players add @s[scores={Azr_skillPoints=3..}] Azr_emerald 5
 scoreboard players add @s[scores={Azr_skillPoints=6..}] Azr_emerald 5
 scoreboard players operation @s Azr_startCount = Pointer Azr_startCount
+scoreboard players add @s Azr_personalStartCount 1
 
 #azr-tags
 tag @s remove azrDead

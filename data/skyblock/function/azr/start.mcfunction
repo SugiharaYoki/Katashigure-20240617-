@@ -77,7 +77,7 @@ bossbar remove azr:boss_hp_bar_0
 kill @e[type=!player,tag=!protected_entity,x=-80000,y=100,z=0,distance=0..1000]
 #初始化玩家
 tag @a[x=-79953.0,y=38,z=-14.0,distance=..1000,gamemode=!spectator] add azrPlayer
-execute as @a[tag=azrPlayer] at @s run function skyblock:azr/system_sub/player_init
+execute as @a[tag=azrPlayer] at @s run function skyblock:azr/player/init
 
 #位置初始化
 execute as @a[x=-79936.0,y=38.15,z=-14.0,distance=10..1000] run tp @s -79936.0 38.15 -14.0 facing -79935.0 38.15 -14.0
