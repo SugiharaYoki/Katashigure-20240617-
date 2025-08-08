@@ -23,6 +23,7 @@ execute if score @s rng4 matches ..0 run tag @s remove seaboss6_attack_wburst
 execute if score @s rng4 matches ..0 run tag @s remove seaboss6_attack_line
 execute if score @s rng4 matches ..0 run tag @s remove seaboss6_oorexec
 execute if score @s rng4 matches ..0 run tag @s remove seaboss6_phase_update
+execute if score @s rng4 matches ..0 run tag @s remove seaboss6_phase3_storm
 execute if score @s rng4 matches ..0 run scoreboard players set @s rng2 0
 
 #技能roll
@@ -31,7 +32,8 @@ execute if score @s rng1 matches 100.. if entity @s[scores={rng4=..0,health=400.
 execute if score @s rng1 matches 100.. if entity @s[scores={rng4=..0,health=..399},tag=!Phase2] store result score @s rng2 run random value 50..51
 execute if score @s rng1 matches 100.. if entity @s[scores={rng4=..0,health=380..780},tag=Phase2,tag=!Phase3] store result score @s rng2 run random value 1..9
 execute if score @s rng1 matches 100.. if entity @s[scores={rng4=..0,health=..379},tag=Phase2,tag=!Phase3] store result score @s rng2 run random value 50..51
-execute if score @s rng1 matches 100.. if entity @s[scores={rng4=..0,health=1..780},tag=Phase3,tag=!Phase4] store result score @s rng2 run random value 1..9
+execute if score @s rng1 matches 100.. if entity @s[scores={rng4=..0,health=300..780},tag=Phase3,tag=!Phase4] store result score @s rng2 run random value 1..9
+execute if score @s rng1 matches 100.. if entity @s[scores={rng4=..0,health=1..299},tag=Phase3,tag=!Phase4] store result score @s rng2 run random value 45..49
 
 #切换阶段
 execute if score @s[scores={rng2=50..51}] rng1 matches 100.. if entity @s[x=88000,dx=4000,y=20,dy=5,z=-3000,dz=4000,scores={rng4=..0}] run tag @s add seaboss6_phase_update
@@ -64,7 +66,10 @@ execute if score @s rng1 matches 100.. if entity @s[x=88000,dx=4000,y=20,dy=3,z=
 execute if score @s rng1 matches 100.. if entity @s[x=88000,dx=4000,y=20,dy=3,z=-3000,dz=4000,scores={rng3=1..}] run scoreboard players remove @s rng3 1
 execute if score @s rng3 matches 40.. run tag @s add seaboss6_oorexec
 execute as @s[tag=seaboss6_oorexec] run function skyblock:sea/e/ch6/boss6/out_of_range_execution
-
+#三阶段大风暴
+#90060 21 -1815
+execute if score @s[scores={rng2=45..49}] rng1 matches 100.. if entity @s[x=88000,dx=4000,y=20,dy=5,z=-3000,dz=4000,scores={rng4=..1}] run tag @s add seaboss6_phase3_storm
+execute as @s[tag=seaboss6_phase3_storm,scores={rng2=45..49}] run function skyblock:sea/e/ch6/boss6/phase3_storm
 
 
 

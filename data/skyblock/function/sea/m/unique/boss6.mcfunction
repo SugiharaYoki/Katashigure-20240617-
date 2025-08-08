@@ -8,5 +8,7 @@ scoreboard players set @n[tag=SEAboss6] rng3 1
 scoreboard players set @n[tag=SEAboss6] rng4 1
 scoreboard players set @n[tag=SEAboss6] rng5 1
 scoreboard players set @n[tag=SEAboss6] rng6 1
+scoreboard players set @n[tag=SEAboss6] rng7 1
 scoreboard players set @n[tag=SEAboss6] rng8 1
+scoreboard players set @n[tag=SEAboss6] rng9 1
 effect give @n[tag=SEAboss6] fire_resistance infinite 0 true
