@@ -34,7 +34,7 @@ execute if score @s rng4 matches 92 run playsound entity.generic.explode hostile
 execute if score @s rng4 matches 22 store result score @s rng5 run random value 1..9
 execute if score @s[scores={rng5=1}] rng4 matches 22 at @s as @a[scores={SEAPT_member=1}] at @s run tellraw @a[distance=0..150] [{"text":"权之执理：","color":"red","bold": true},{"text":"\n“吾曾击败漆黑之生灵。”","color":"white","bold": false}]
 execute if score @s[scores={rng5=2}] rng4 matches 22 at @s as @a[scores={SEAPT_member=1}] at @s run tellraw @a[distance=0..150] [{"text":"权之执理：","color":"red","bold": true},{"text":"\n“尸变体……真是令人作呕的事物。”","color":"white","bold": false}]
-execute if score @s[scores={rng5=3}] rng4 matches 22 at @s as @a[scores={SEAPT_member=1}] at @s run tellraw @a[distance=0..150] [{"text":"权之执理：","color":"red","bold": true},{"text":"\n“于神圣的火焰中被焚烧成灰烬吧。”","color":"white","bold": false}]
+execute if score @s[scores={rng5=3}] rng4 matches 22 at @s as @a[scores={SEAPT_member=1}] at @s run tellraw @a[distance=0..150] [{"text":"权之执理：","color":"red","bold": true},{"text":"\n“化作灰烬，归于风暴吧。”","color":"white","bold": false}]
 execute if score @s[scores={rng5=4}] rng4 matches 32 at @s as @a[scores={SEAPT_member=1}] at @s run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“好大的风……！要站不稳了！”","color":"white","bold": false}]
 
 execute if score @s rng4 matches 82 as @a[tag=SEAPT,distance=0..4] run damage @s 8 wind_charge
