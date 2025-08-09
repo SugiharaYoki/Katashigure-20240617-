@@ -1,13 +1,13 @@
 {
     "display": {
         "title": {
-            "text": "第一关口区域 - 3",
+            "text": "神庭：第一关口区域 - 3",
             "color": "aqua",
             "bold": true,
             "italic": false
         },
         "description": {
-            "text": "这是此处魔物原本的习性 还是连巡逻兵都未曾预料的失控？",
+            "text": "墙壁的崩塌带来的是一场由魔物带来的混乱。\n这是此处魔物原本的习性，还是连巡逻兵都未曾预料的失控？",
             "color": "white"
         },
         "icon": {

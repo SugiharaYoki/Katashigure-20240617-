@@ -39,7 +39,7 @@ execute as @e[tag=arroworb2,type=marker] at @s run function skyblock:azr/assets/
     execute if score tick_main_thread AzrTimerStack matches 1 if score playerCount Azr_system matches 3.. run tellraw @a[tag=azrShowDialog] {"text":"“依靠人海战术来挑战试炼很有意思吗？汝等是否有些过于狂妄了？”","color":"white"}
     execute if score tick_main_thread AzrTimerStack matches 80 run tellraw @a[tag=azrShowDialog] {"text":"？？？：","color":"red"}
     execute if score tick_main_thread AzrTimerStack matches 80 if score playerCount Azr_system matches 1..2 run tellraw @a[tag=azrShowDialog] {"text":"“吾乃沙利叶之护法，力天使「权之残影」，第一关口的守护者。吾来当汝对手。”","color":"white"}
-    execute if score tick_main_thread AzrTimerStack matches 80 if score playerCount Azr_system matches 3.. run tellraw @a[tag=azrShowDialog] {"text":"“吾乃沙利叶之护法，力天使「「权之残影」。吾将让你们领会私闯生命树花园的后果。”","color":"white"}
+    execute if score tick_main_thread AzrTimerStack matches 80 if score playerCount Azr_system matches 3.. run tellraw @a[tag=azrShowDialog] {"text":"“吾乃沙利叶之护法，力天使「权之残影」。吾将让你们领会私闯生命树花园的后果。”","color":"white"}
     execute if score tick_main_thread AzrTimerStack matches 3001 run tellraw @a[tag=azrShowDialog] {"text":"权之残影：","color":"red"}
     execute if score tick_main_thread AzrTimerStack matches 3001 if score playerCount Azr_system matches 1 run tellraw @a[tag=azrShowDialog] {"text":"“真是了不起的人类啊，看来是你的胜利。”","color":"white"}
     execute if score tick_main_thread AzrTimerStack matches 3001 if score playerCount Azr_system matches 2 run tellraw @a[tag=azrShowDialog] {"text":"“真是了不起的人类啊，看来是你们二人的胜利。”","color":"white"}

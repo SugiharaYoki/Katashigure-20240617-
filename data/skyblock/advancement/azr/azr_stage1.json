@@ -1,13 +1,13 @@
 {
     "display": {
         "title": {
-            "text": "第一关口区域 - 1",
+            "text": "神庭：第一关口区域 - 1",
             "color": "aqua",
             "bold": true,
             "italic": false
         },
         "description": {
-            "text": "寂静无声的走廊 魔物与巡逻军骤然现身……",
+            "text": "寂静无声的走廊，魔物与巡逻军骤然现身……\n不，突然现身的恐怕其实是我。",
             "color": "white"
         },
         "icon": {

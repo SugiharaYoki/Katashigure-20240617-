@@ -1,13 +1,13 @@
 {
     "display": {
         "title": {
-            "text": "第一关口区域 - 2",
+            "text": "神庭：第一关口区域 - 2",
             "color": "aqua",
             "bold": true,
             "italic": false
         },
         "description": {
-            "text": "此处的结界与机关 为何像是由人精心设计而成？",
+            "text": "此处的结界与机关由人精心设计而成。",
             "color": "white"
         },
         "icon": {

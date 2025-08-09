@@ -1,13 +1,13 @@
 {
     "display": {
         "title": {
-            "text": "招待厅区域 - 1",
+            "text": "神庭：招待厅区域 - 1",
             "color": "aqua",
             "bold": true,
             "italic": false
         },
         "description": {
-            "text": "刚才给予我提示的女声 究竟来自何方？ 难道是……我的脚下？",
+            "text": "刚才给予我提示的女声，究竟位于何方？\n难道是……我的脚下？\n沙利叶乃生命与死亡之神，是否意味着我的死亡……\n也是祂所决定的结局？",
             "color": "white"
         },
         "icon": {

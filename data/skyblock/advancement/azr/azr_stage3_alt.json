@@ -1,13 +1,13 @@
 {
     "display": {
         "title": {
-            "text": "第一关口区域 - 3B",
+            "text": "神庭：第一关口区域 - 3B",
             "color": "aqua",
             "bold": true,
             "italic": false
         },
         "description": {
-            "text": "失控的魔物摧毁墙壁 蜂拥而上 我逐渐不再相信这一切都是某人有意设计而之。",
+            "text": "失控的魔物摧毁墙壁，蜂拥而上。\n试炼本该是有意设计为之，\n但此时此刻的我却察觉到一种不协调感。",
             "color": "white"
         },
         "icon": {

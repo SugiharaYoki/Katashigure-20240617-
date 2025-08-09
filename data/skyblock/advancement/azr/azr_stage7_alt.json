@@ -1,13 +1,13 @@
 {
     "display": {
         "title": {
-            "text": "招待厅区域 - 3B",
+            "text": "神庭：招待厅区域 - 3B",
             "color": "aqua",
             "bold": true,
             "italic": false
         },
         "description": {
-            "text": "我的心中逐渐浮现起某种第六感： 不论方才的魔力感应来自何物， 它都不是冲着我来的。",
+            "text": "我的心中逐渐浮现起某种第六感：\n不论方才的魔力感应来自何物，它都不是冲着我来的。",
             "color": "white"
         },
         "icon": {

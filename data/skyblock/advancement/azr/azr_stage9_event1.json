@@ -1,13 +1,13 @@
 {
     "display": {
         "title": {
-            "text": "第一关口区域 - 6",
+            "text": "神庭：第一关口区域 - 6",
             "color": "aqua",
             "bold": true,
             "italic": false
         },
         "description": {
-            "text": "怪物消失在我的面前 却在我的背后再度出现…… 这些魔物恐怕真的脱离控制了。",
+            "text": "怪物消失在我的面前，却在我的背后再度出现……\n正如那些神界军所言，这些魔物恐怕真的脱离控制了。",
             "color": "white"
         },
         "icon": {
