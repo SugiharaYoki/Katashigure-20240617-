@@ -10,7 +10,7 @@ scoreboard players add @a[tag=SEAPT] sea_i_emerald 150
 give @a[tag=SEAPT] echo_shard 80
 give @a[tag=SEAPT] iron_ingot 20
 
-
+execute as @n[tag=SEAedwina] at @s run function skyblock:sea/e/ch6/edwina/init
 
 
 scoreboard players set SEA_ch6_event rng5 12563
