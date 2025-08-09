@@ -1,7 +1,7 @@
 
 scoreboard players add @s rng4 1
 
-execute if score @s rng4 matches 2 run effect give @s levitation 5 2 true
+execute if score @s rng4 matches 2 run effect give @s levitation 5 1 true
 
 execute if score @s rng4 matches 10 positioned 90059 20 -1825 run tellraw @a[distance=0..150] [{"text":"权之执理：","color":"red","bold": true},{"text":"\n“很好，汝有同吾对战的资格。”","color":"white","bold": false}]
 
