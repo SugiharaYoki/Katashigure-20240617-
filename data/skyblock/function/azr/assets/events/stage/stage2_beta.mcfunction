@@ -19,7 +19,7 @@ execute if score stage_main_thread AzrTimerStack matches 21 run tellraw @a[tag=a
 execute if score stage_main_thread AzrTimerStack matches 21 unless score playerCount Azr_system matches 5.. run tellraw @a[tag=azrShowDialog] {"text":"“挑战者到达第一关口，出兵迎战。”","color":"white"}
 execute if score stage_main_thread AzrTimerStack matches 21 if score playerCount Azr_system matches 5.. run tellraw @a[tag=azrShowDialog] {"text":"“第一关口有众多人类闯入，准备进行驱逐。”","color":"white"}
 execute if score stage_main_thread AzrTimerStack matches 80 run tellraw @a[tag=azrShowDialog] {"text":"第一关口守备军：","color":"aqua"}
-execute if score stage_main_thread AzrTimerStack matches 80 run tellraw @a[tag=azrShowDialog] {"text":"“喂，这些人是不是有些太强了？怎么回事？！”","color":"white"}
+execute if score stage_main_thread AzrTimerStack matches 80 run tellraw @a[tag=azrShowDialog] {"text":"“喂，对方是不是有些太强了？怎么回事？！”","color":"white"}
 execute if score stage_main_thread AzrTimerStack matches 2 positioned -79922 38 14 run function skyblock:azr/assets/mobs/zombie_t1
 execute if score stage_main_thread AzrTimerStack matches 4 positioned -79940 38 14 run function skyblock:azr/assets/mobs/zombie_t1
 execute if score stage_main_thread AzrTimerStack matches 5 if score playerCount Azr_system matches 4.. positioned -79922 38 14 run function skyblock:azr/assets/mobs/zombie_t1

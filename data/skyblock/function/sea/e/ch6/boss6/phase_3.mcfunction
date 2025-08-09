@@ -1,7 +1,7 @@
 
 scoreboard players add @s rng4 1
 
-execute if score @s rng4 matches 2 run effect give @s levitation 5 2 true
+execute if score @s rng4 matches 2 run effect give @s levitation 5 1 true
 
 
 execute if score @s rng4 matches 5..8 positioned 90059 26 -1805 facing 90059 26 -1805 run tp ^ ^ ^2
