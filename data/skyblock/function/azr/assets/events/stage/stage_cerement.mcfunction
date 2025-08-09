@@ -29,7 +29,7 @@ execute if score stage_main_thread AzrTimerStack matches 41..50 if score #temp_r
 execute if score stage_main_thread AzrTimerStack matches 41..50 if score #temp_rng Azr_system matches 1 if score playerCount Azr_system matches 3.. positioned -79946 38 50 run function skyblock:azr/assets/mobs/zombie_t1_5hp_full_armor
 execute if score stage_main_thread AzrTimerStack matches 41..50 if score #temp_rng Azr_system matches 2 if score playerCount Azr_system matches 4.. positioned -79946 38 50 run function skyblock:azr/assets/mobs/zombie_militia_t1
 execute if score stage_main_thread AzrTimerStack matches 41..50 if score #temp_rng Azr_system matches 3 if score playerCount Azr_system matches 5.. positioned -79946 38 50 run function skyblock:azr/assets/mobs/zombie_t1_5hp_full_armor
-execute if score stage_main_thread AzrTimerStack matches 51..80 if entity @n[tag=AzrielMob] run scoreboard players set stage_main_thread AzrTimerStack 60
+execute if score stage_main_thread AzrTimerStack matches 51..69 if entity @n[tag=AzrielMob] run scoreboard players set stage_main_thread AzrTimerStack 60
 
 
 execute if score stage_main_thread AzrTimerStack matches 11..154 store result score #temp_rng Azr_system run random value 1..4
