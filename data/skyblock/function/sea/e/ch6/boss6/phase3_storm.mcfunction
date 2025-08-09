@@ -12,7 +12,7 @@ execute if score @s rng4 matches 40 at @s run particle enchant 90060 21 -1815 2 
 execute if score @s rng4 matches 40 at @s run particle reverse_portal 90060 21 -1815 0 0 0 0.5 120
 execute if score @s rng4 matches 40 at @s run playsound minecraft:entity.enderman.teleport hostile @a ~ ~ ~ 1 1.1
 execute if score @s rng4 matches 41.. at @s run data modify entity @s NoAI set value 0b
-execute if score @s rng4 matches 41 at @s run effect give @s resistance 30 4 true
+execute if score @s rng4 matches 41 at @s run effect give @s resistance 2 4 true
 execute if score @s rng4 matches 41.. at @s run tp @s 90060 21 -1815
 
 execute if score @s rng4 matches 50.. at @s if score @s rng7 matches ..0 store result score @s rng9 run random value 1..7
@@ -20,8 +20,8 @@ execute if score @s rng4 matches 50.. at @s if score @s rng7 matches ..0 store r
 execute if score @s rng4 matches 50.. at @s if score @s rng7 matches 1.. run scoreboard players add @s rng7 1 
 
 execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=1}] rng7 matches 15 positioned ~6 21.1 ~00 run summon marker ~ 21.1 ~ {Tags:["SEA_boss6_burst_master"]}
-execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=50}] rng7 matches 15 positioned ~6 21.1 ~06 run summon marker ~ 21.1 ~ {Tags:["SEA_boss6_burst_master"]}
-execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=50}] rng7 matches 15 positioned ~6 21.1 ~-6 run summon marker ~ 21.1 ~ {Tags:["SEA_boss6_burst_master"]}
+#execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=50}] rng7 matches 15 positioned ~6 21.1 ~06 run summon marker ~ 21.1 ~ {Tags:["SEA_boss6_burst_master"]}
+#execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=50}] rng7 matches 15 positioned ~6 21.1 ~-6 run summon marker ~ 21.1 ~ {Tags:["SEA_boss6_burst_master"]}
 execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=2..5}] rng7 matches 15 positioned ~ 21.1 ~ run summon marker ~ 21.1 ~ {Tags:["SEA_boss6_burst_master"]}
 execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=1}] rng7 matches 15 as @n[tag=SEA_boss6_burst_master] at @s run tp @s ~ ~ ~ facing ~-1 ~ ~
 execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=50}] rng7 matches 15 as @n[tag=SEA_boss6_burst_master] at @s run tp @s ~ ~ ~ facing ~-1 ~ ~-1
@@ -29,9 +29,9 @@ execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=50}] rng7 m
 execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=2..5}] rng7 matches 15 as @n[tag=SEA_boss6_burst_master] at @s run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
 
 execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=1..5}] rng7 matches 15.. as @n[tag=SEA_boss6_burst_master] at @s run scoreboard players add @s rng1 1
-execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=1..5}] rng7 matches 15.. at @n[tag=SEA_boss6_burst_master,scores={rng1=2}] positioned ~ ~ ~-1 run summon marker ~ 21.0 ~ {Tags:["SEA_boss6_burst_anchor"]}
+#execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=1..5}] rng7 matches 15.. at @n[tag=SEA_boss6_burst_master,scores={rng1=2}] positioned ~ ~ ~-1 run summon marker ~ 21.0 ~ {Tags:["SEA_boss6_burst_anchor"]}
 execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=1..5}] rng7 matches 15.. at @n[tag=SEA_boss6_burst_master,scores={rng1=2}] positioned ~ ~ ~00 run summon marker ~ 21.0 ~ {Tags:["SEA_boss6_burst_anchor"]}
-execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=1..5}] rng7 matches 15.. at @n[tag=SEA_boss6_burst_master,scores={rng1=2}] positioned ~ ~ ~01 run summon marker ~ 21.0 ~ {Tags:["SEA_boss6_burst_anchor"]}
+#execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=1..5}] rng7 matches 15.. at @n[tag=SEA_boss6_burst_master,scores={rng1=2}] positioned ~ ~ ~01 run summon marker ~ 21.0 ~ {Tags:["SEA_boss6_burst_anchor"]}
 
 execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=1..5}] rng7 matches 15.. as @n[tag=SEA_boss6_burst_master,scores={rng1=1}] at @s run tp @s ^ ^ ^1.5 facing ^ ^ ^2
 
