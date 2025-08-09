@@ -108,7 +108,7 @@ execute if score stage_main_thread AzrTimerStack matches 10000.. as @a[tag=azrPl
 
 execute if score stage_main_thread AzrTimerStack matches 11.. as @a[tag=azrShowDialog,tag=!AzrielEvent3765S] at @s as @e[tag=AzrielEvent3765,distance=0..3.5] at @s run playsound entity.piglin.ambient master @a[tag=azrShowDialog,distance=0..3.5] ~ ~ ~ 2 0.9
 execute if score stage_main_thread AzrTimerStack matches 11.. as @a[tag=azrPlayer,tag=!AzrielEvent3765S] at @s if entity @e[tag=AzrielEvent3765,distance=0..3.5] run tellraw @s {"text":"猪灵剑士：","color":"aqua"}
-execute if score stage_main_thread AzrTimerStack matches 11.. as @a[tag=azrPlayer,tag=!AzrielEvent3765S] at @s if entity @e[tag=AzrielEvent3765,distance=0..3.5] run tellraw @s {"text":"“路西法的审判军已经包围贝利尔的王城。距离推翻地狱的荒唐政权已近在眉睫。”","color":"white"}
+execute if score stage_main_thread AzrTimerStack matches 11.. as @a[tag=azrPlayer,tag=!AzrielEvent3765S] at @s if entity @e[tag=AzrielEvent3765,distance=0..3.5] run tellraw @s {"text":"“路西法的审判军已经包围彼列的王城。距离推翻地狱的荒唐政权已近在眉睫。”","color":"white"}
 execute if score stage_main_thread AzrTimerStack matches 11.. as @a[tag=azrPlayer,tag=!AzrielEvent3765S] at @s if entity @e[tag=AzrielEvent3765,distance=0..3.5] run tag @s add AzrielEvent3765S
 
 execute if score stage_main_thread AzrTimerStack matches 50..1000 run function skyblock:azr/system/utils/rng
@@ -173,7 +173,7 @@ execute if score stage_main_thread AzrTimerStack matches 581 as @n[tag=AzrielBos
 execute if score stage_main_thread AzrTimerStack matches 581 as @n[tag=AzrielBossFA] at @s run tp @s ~ ~ ~ facing entity @a[limit=1,tag=azrPlayer,sort=random,distance=0..15]
 
 execute if score stage_main_thread AzrTimerStack matches 651 run tellraw @a[tag=azrShowDialog] {"text":"神界军模样的人：","color":"aqua"}
-execute if score stage_main_thread AzrTimerStack matches 651 run tellraw @a[tag=azrShowDialog] [{"text":"“向花园发起闪电袭击的路西法，此时也在魔界展开了针对现任统治者贝利尔帝王的反叛。”","color":"white"}]
+execute if score stage_main_thread AzrTimerStack matches 651 run tellraw @a[tag=azrShowDialog] [{"text":"“向花园发起闪电袭击的路西法，此时也在魔界展开了针对现任统治者彼列帝王的反叛。”","color":"white"}]
 execute if score stage_main_thread AzrTimerStack matches 651 as @n[tag=AzrielBossFA] at @s run playsound minecraft:entity.pillager.ambient master @a[tag=azrShowDialog] ~ ~ ~ 2 0.8
 execute if score stage_main_thread AzrTimerStack matches 651 as @n[tag=AzrielBossFA] at @s run tp @s ~ ~ ~ facing entity @a[limit=1,tag=azrPlayer,sort=random,distance=0..15]
 

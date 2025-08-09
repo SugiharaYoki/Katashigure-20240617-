@@ -48,7 +48,7 @@ execute if score stage_main_thread AzrTimerStack matches 11.. as @a[tag=azrPlaye
 
 execute if score stage_main_thread AzrTimerStack matches 11.. as @a[tag=azrShowDialog,tag=!AzrielEvent3765S] at @s at @n[tag=AzrielEvent3765,distance=0..3.5] run playsound entity.piglin.ambient master @a[tag=azrShowDialog,distance=0..3.5] ~ ~ ~ 2 0.9
 execute if score stage_main_thread AzrTimerStack matches 11.. as @a[tag=azrPlayer,tag=!AzrielEvent3765S] at @s if entity @n[tag=AzrielEvent3765,distance=0..3.5] run tellraw @s {"text":"猪灵剑士：","color":"aqua"}
-execute if score stage_main_thread AzrTimerStack matches 11.. as @a[tag=azrPlayer,tag=!AzrielEvent3765S] at @s if entity @n[tag=AzrielEvent3765,distance=0..3.5] run tellraw @s {"text":"“路西法的审判军已经包围贝利尔的王城。距离推翻地狱的荒唐政权已近在眉睫。”","color":"white"}
+execute if score stage_main_thread AzrTimerStack matches 11.. as @a[tag=azrPlayer,tag=!AzrielEvent3765S] at @s if entity @n[tag=AzrielEvent3765,distance=0..3.5] run tellraw @s {"text":"“路西法的审判军已经包围彼列的王城。距离推翻地狱的荒唐政权已近在眉睫。”","color":"white"}
 execute if score stage_main_thread AzrTimerStack matches 11.. as @a[tag=azrPlayer,tag=!AzrielEvent3765S] at @s if entity @n[tag=AzrielEvent3765,distance=0..3.5] run tag @s add AzrielEvent3765S
 
 execute if score stage_main_thread AzrTimerStack matches 50..200 run scoreboard players set stage_main_thread AzrTimerStack 55
