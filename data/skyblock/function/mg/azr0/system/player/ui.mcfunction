@@ -116,7 +116,7 @@ execute if entity @s[scores={Azr_usebread=1..}] run scoreboard players remove @s
 execute if entity @s[scores={Azr_usebread=1..}] run scoreboard players set @s Azr_usebread 0
 
 
-execute at @s[tag=hasSkills] run function skyblock:azr/system_sub/chain_kill
+execute at @s[tag=hasSkills] run function skyblock:azr/system/player/skills/chainkill/chain_kill
 
 execute as @s[scores={Azr0_SKILL_19=1..}] at @s if items entity @s weapon.offhand *[custom_data={"azr0skill_core6":true}] at @s run function skyblock:mg/azr0/system/player/skill/skill_19
 execute as @s[scores={Azr0_SKILL_19=1..2}] at @s if items entity @s[predicate=skyblock:sneaking] weapon.mainhand *[custom_data={"azr0skill_core6":true}] at @s run function skyblock:mg/azr0/system/player/skill/skill_19
