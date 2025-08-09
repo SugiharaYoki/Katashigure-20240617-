@@ -35,7 +35,7 @@ execute if items entity @s player.cursor *[custom_data={"azr0skill":true}] run f
 
 
 scoreboard players enable @s Azr_Shop
-execute if items entity @s player.cursor *[custom_data~{PsychicVitae:1b}] run function skyblock:azr/chainkill/build
+execute if items entity @s player.cursor *[custom_data~{PsychicVitae:1b}] run function skyblock:azr/system/player/skills/chainkill/build
 
 
 clear @s *[custom_data={"azr0shop":true}]
@@ -77,7 +77,7 @@ scoreboard players add @s[scores={Azr0_UPG_axe_recharge=10..}] Azr0_axe_recharge
 execute if entity @s[scores={Azr0_axe_recharge=1000..1009}] run playsound block.amethyst_block.resonate player @a ~ ~ ~ 0.9 1.3
 execute if entity @s[scores={Azr0_axe_recharge=5000..5050}] run scoreboard players set @s Azr0_axe_recharge 5000
 
-execute as @s[scores={Azr_Shop=8900101..8900199}] run function skyblock:azr/chainkill/assign
+execute as @s[scores={Azr_Shop=8900101..8900199}] run function skyblock:azr/system/player/skills/chainkill/assign
 
 
 
