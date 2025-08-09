@@ -29,6 +29,10 @@ tellraw @s[scores={parkour_stage=27..}] [{"text":"  月光遗迹 27","bold":fals
 tellraw @s[scores={parkour_stage=28..}] [{"text":"  月光遗迹 28","bold":false,"color":"dark_purple","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 832028"}}]
 tellraw @s[scores={parkour_stage=29..}] [{"text":"  月光遗迹 29","bold":false,"color":"dark_purple","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 832029"}}]
 tellraw @s[scores={parkour_stage=30..}] [{"text":"  月光遗迹 30","bold":false,"color":"dark_purple","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 832030"}}]
+tellraw @s[scores={parkour_stage=31..}] [{"text":"   饰月械道 31","bold":false,"color":"dark_purple","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 832031"}}]
+tellraw @s[scores={parkour_stage=32..}] [{"text":"   饰月械道 32","bold":false,"color":"dark_purple","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 832032"}}]
+tellraw @s[scores={parkour_stage=33..}] [{"text":"   饰月械道 33","bold":false,"color":"dark_purple","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 832033"}}]
+tellraw @s[scores={parkour_stage=34..}] [{"text":"   饰月械道 34","bold":false,"color":"dark_purple","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 832034"}}]
 #tellraw @s[scores={MazeLS=??..}] {"text":"","bold":false}
 #tellraw @s[scores={MazeLS=??..}] {"text":"  [下一页]","bold":false,"color":"green","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 811"}}
 tellraw @s {"text":"","bold":false}
