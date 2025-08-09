@@ -1,7 +1,7 @@
-setblock -79951 37 -12 minecraft:command_block[facing=down]{Command:"function skyblock:azr/info/intro"} destroy
-setblock -79951 37 -17 minecraft:command_block[facing=down]{Command:"function skyblock:azr/info/guide"} destroy
-setblock -79937 39 -10 minecraft:command_block[facing=south]{Command:"function skyblock:azr/start"} destroy
-setblock -79950 31 -39 minecraft:command_block[facing=down]{Command:"function skyblock:azr/info/midway_join"} destroy
+setblock -79951 37 -12 minecraft:command_block[facing=down]{Command:"function skyblock:azr/outgame/info/intro"} destroy
+setblock -79951 37 -17 minecraft:command_block[facing=down]{Command:"function skyblock:azr/outgame/info/guide"} destroy
+setblock -79937 39 -10 minecraft:command_block[facing=south]{Command:"function skyblock:azr/lifecycle/start"} destroy
+setblock -79950 31 -39 minecraft:command_block[facing=down]{Command:"function skyblock:azr/outgame/info/midway_join"} destroy
 #第一关
 setblock -79934 39 4 minecraft:command_block[facing=west]{Command:'title @a[tag=azrPlayer] actionbar {"text":"Stage 1 - Wave 1","color":"red"}'} destroy
 setblock -79935 39 4 minecraft:chain_command_block[facing=west]{Command:"scoreboard players set stage Azr_system 2",auto:1b} destroy
