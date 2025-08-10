@@ -4,7 +4,7 @@ tellraw @s [{"text":"选择你想使用的礼装","color":"yellow","bold": true}
 #function skyblock:pvp/skywar/bless/setting/bless_macro {bless:ishtar_bless_2,bless_name:"- 纵之礼"}
 #function skyblock:pvp/skywar/bless/setting/bless_macro {bless:ishtar_bless_3,bless_name:"- 纺之礼"}
 #function skyblock:pvp/skywar/bless/setting/bless_macro {bless:ishtar_bless_4,bless_name:"- 解之礼"}
-execute as @s at @s[tag=purchasesuccess] run function skyblock:city/id/read
+execute as @s at @s run function skyblock:city/id/read
 execute as @n[tag=id_data_reading,type=marker] at @s run tp @s ~2 ~ ~
 
 
