@@ -36,3 +36,5 @@ execute if entity @s[scores={SEAPT_setting_trueend=2}] run setblock 90093 127 10
 execute if entity @s[scores={SEAPT_setting_trueend=2}] run scoreboard players set SEA_chg_true_end sea_4temp1 999
 execute if entity @s[scores={SEAPT_setting_trueend=2}] run item replace block 90095 122 128 container.26 with air
 execute if entity @s[scores={SEAPT_setting_trueend=2}] positioned 90093 127 100 run kill @e[type=item,distance=..20]
+execute if entity @s[scores={SEAPT_setting_trueend=2}] run scoreboard players set SEA_ch5_event_outerspace_fiona sea_4temp1 9999
+
