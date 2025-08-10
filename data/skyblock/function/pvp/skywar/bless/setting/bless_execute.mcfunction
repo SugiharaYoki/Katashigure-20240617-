@@ -165,47 +165,46 @@ execute as @s[scores={MultiMenu=134038}] at @s run scoreboard players set @s ish
 execute as @s[scores={MultiMenu=134039}] at @s run scoreboard players set @s ishtar_bless_4 39
 execute as @s[scores={MultiMenu=134040}] at @s run scoreboard players set @s ishtar_bless_4 40
 
-execute as @s[scores={MultiMenu=139001}] at @s run function skyblock:pvp/skywar/bless/setting/bless_purchase {price:50, id: 001, code: 00}
-execute as @s[scores={MultiMenu=139002}] at @s run function skyblock:pvp/skywar/bless/setting/bless_purchase {price:50, id: 002, code: 00}
-execute as @s[scores={MultiMenu=139003}] at @s run function skyblock:pvp/skywar/bless/setting/bless_purchase {price:50, id: 003, code: 00}
-execute as @s[scores={MultiMenu=139004}] at @s run function skyblock:pvp/skywar/bless/setting/bless_purchase {price:50, id: 004, code: 1}
-execute as @s[scores={MultiMenu=139005}] at @s run function skyblock:pvp/skywar/bless/setting/bless_purchase {price:50, id: 005, code: 00}
-execute as @s[scores={MultiMenu=139006}] at @s run function skyblock:pvp/skywar/bless/setting/bless_purchase {price:50, id: 006, code: 00}
-execute as @s[scores={MultiMenu=139007}] at @s run function skyblock:pvp/skywar/bless/setting/bless_purchase {price:50, id: 007, code: 00}
-execute as @s[scores={MultiMenu=139008}] at @s run function skyblock:pvp/skywar/bless/setting/bless_purchase {price:50, id: 008, code: 00}
-execute as @s[scores={MultiMenu=139009}] at @s run function skyblock:pvp/skywar/bless/setting/bless_purchase {price:50, id: 009, code: 00}
-execute as @s[scores={MultiMenu=139010}] at @s run function skyblock:pvp/skywar/bless/setting/bless_purchase {price:50, id: 010, code: 2}
-execute as @s[scores={MultiMenu=139011}] at @s run function skyblock:pvp/skywar/bless/setting/bless_purchase {price:50, id: 011, code: 3}
-execute as @s[scores={MultiMenu=139012}] at @s run function skyblock:pvp/skywar/bless/setting/bless_purchase {price:50, id: 012, code: 00}
-execute as @s[scores={MultiMenu=139013}] at @s run function skyblock:pvp/skywar/bless/setting/bless_purchase {price:50, id: 013, code: 4}
-execute as @s[scores={MultiMenu=139014}] at @s run function skyblock:pvp/skywar/bless/setting/bless_purchase {price:50, id: 014, code: 5}
-execute as @s[scores={MultiMenu=139015}] at @s run function skyblock:pvp/skywar/bless/setting/bless_purchase {price:50, id: 015, code: 00}
-execute as @s[scores={MultiMenu=139016}] at @s run function skyblock:pvp/skywar/bless/setting/bless_purchase {price:50, id: 016, code: 00}
-execute as @s[scores={MultiMenu=139017}] at @s run function skyblock:pvp/skywar/bless/setting/bless_purchase {price:50, id: 017, code: 6}
-execute as @s[scores={MultiMenu=139018}] at @s run function skyblock:pvp/skywar/bless/setting/bless_purchase {price:50, id: 018, code: 7}
-execute as @s[scores={MultiMenu=139019}] at @s run function skyblock:pvp/skywar/bless/setting/bless_purchase {price:50, id: 019, code: 00}
-execute as @s[scores={MultiMenu=139020}] at @s run function skyblock:pvp/skywar/bless/setting/bless_purchase {price:50, id: 020, code: 8}
-execute as @s[scores={MultiMenu=139021}] at @s run function skyblock:pvp/skywar/bless/setting/bless_purchase {price:50, id: 021, code: 9}
-execute as @s[scores={MultiMenu=139022}] at @s run function skyblock:pvp/skywar/bless/setting/bless_purchase {price:50, id: 022, code: 10}
-execute as @s[scores={MultiMenu=139023}] at @s run function skyblock:pvp/skywar/bless/setting/bless_purchase {price:50, id: 023, code: 11}
-execute as @s[scores={MultiMenu=139024}] at @s run function skyblock:pvp/skywar/bless/setting/bless_purchase {price:50, id: 024, code: 12}
-execute as @s[scores={MultiMenu=139025}] at @s run function skyblock:pvp/skywar/bless/setting/bless_purchase {price:50, id: 025, code: 13}
-execute as @s[scores={MultiMenu=139026}] at @s run function skyblock:pvp/skywar/bless/setting/bless_purchase {price:50, id: 026, code: 14}
-execute as @s[scores={MultiMenu=139027}] at @s run function skyblock:pvp/skywar/bless/setting/bless_purchase {price:50, id: 027, code: 00}
-execute as @s[scores={MultiMenu=139028}] at @s run function skyblock:pvp/skywar/bless/setting/bless_purchase {price:50, id: 028, code: 00}
-execute as @s[scores={MultiMenu=139029}] at @s run function skyblock:pvp/skywar/bless/setting/bless_purchase {price:50, id: 029, code: 15}
-execute as @s[scores={MultiMenu=139030}] at @s run function skyblock:pvp/skywar/bless/setting/bless_purchase {price:50, id: 030, code: 16}
-execute as @s[scores={MultiMenu=139031}] at @s run function skyblock:pvp/skywar/bless/setting/bless_purchase {price:50, id: 031, code: 17}
-execute as @s[scores={MultiMenu=139032}] at @s run function skyblock:pvp/skywar/bless/setting/bless_purchase {price:50, id: 032, code: 18}
-execute as @s[scores={MultiMenu=139033}] at @s run function skyblock:pvp/skywar/bless/setting/bless_purchase {price:50, id: 033, code: 00}
-execute as @s[scores={MultiMenu=139034}] at @s run function skyblock:pvp/skywar/bless/setting/bless_purchase {price:50, id: 034, code: 00}
-execute as @s[scores={MultiMenu=139035}] at @s run function skyblock:pvp/skywar/bless/setting/bless_purchase {price:50, id: 035, code: 00}
-execute as @s[scores={MultiMenu=139036}] at @s run function skyblock:pvp/skywar/bless/setting/bless_purchase {price:50, id: 036, code: 19}
-execute as @s[scores={MultiMenu=139037}] at @s run function skyblock:pvp/skywar/bless/setting/bless_purchase {price:50, id: 037, code: 20}
-execute as @s[scores={MultiMenu=139038}] at @s run function skyblock:pvp/skywar/bless/setting/bless_purchase {price:50, id: 038, code: 21}
-execute as @s[scores={MultiMenu=139039}] at @s run function skyblock:pvp/skywar/bless/setting/bless_purchase {price:50, id: 039, code: 22}
-execute as @s[scores={MultiMenu=139040}] at @s run function skyblock:pvp/skywar/bless/setting/bless_purchase {price:50, id: 040, code: 23}
-
+execute as @s[scores={MultiMenu=139001}] at @s run function skyblock:pvp/skywar/bless/setting/bless_purchase {pos:2, price:50, id: 001, code: 1}
+execute as @s[scores={MultiMenu=139002}] at @s run function skyblock:pvp/skywar/bless/setting/bless_purchase {pos:2, price:50, id: 002, code: 2}
+execute as @s[scores={MultiMenu=139003}] at @s run function skyblock:pvp/skywar/bless/setting/bless_purchase {pos:2, price:50, id: 003, code: 3}
+execute as @s[scores={MultiMenu=139004}] at @s run function skyblock:pvp/skywar/bless/setting/bless_purchase {pos:2, price:50, id: 004, code: 4}
+execute as @s[scores={MultiMenu=139005}] at @s run function skyblock:pvp/skywar/bless/setting/bless_purchase {pos:2, price:50, id: 005, code: 5}
+execute as @s[scores={MultiMenu=139006}] at @s run function skyblock:pvp/skywar/bless/setting/bless_purchase {pos:2, price:50, id: 006, code: 6}
+execute as @s[scores={MultiMenu=139007}] at @s run function skyblock:pvp/skywar/bless/setting/bless_purchase {pos:2, price:50, id: 007, code: 7}
+execute as @s[scores={MultiMenu=139008}] at @s run function skyblock:pvp/skywar/bless/setting/bless_purchase {pos:2, price:50, id: 008, code: 8}
+execute as @s[scores={MultiMenu=139009}] at @s run function skyblock:pvp/skywar/bless/setting/bless_purchase {pos:2, price:50, id: 009, code: 9}
+execute as @s[scores={MultiMenu=139010}] at @s run function skyblock:pvp/skywar/bless/setting/bless_purchase {pos:2, price:50, id: 010, code: 10}
+execute as @s[scores={MultiMenu=139011}] at @s run function skyblock:pvp/skywar/bless/setting/bless_purchase {pos:2, price:50, id: 011, code: 11}
+execute as @s[scores={MultiMenu=139012}] at @s run function skyblock:pvp/skywar/bless/setting/bless_purchase {pos:2, price:50, id: 012, code: 12}
+execute as @s[scores={MultiMenu=139013}] at @s run function skyblock:pvp/skywar/bless/setting/bless_purchase {pos:2, price:50, id: 013, code: 13}
+execute as @s[scores={MultiMenu=139014}] at @s run function skyblock:pvp/skywar/bless/setting/bless_purchase {pos:2, price:50, id: 014, code: 14}
+execute as @s[scores={MultiMenu=139015}] at @s run function skyblock:pvp/skywar/bless/setting/bless_purchase {pos:2, price:50, id: 015, code: 15}
+execute as @s[scores={MultiMenu=139016}] at @s run function skyblock:pvp/skywar/bless/setting/bless_purchase {pos:2, price:50, id: 016, code: 16}
+execute as @s[scores={MultiMenu=139017}] at @s run function skyblock:pvp/skywar/bless/setting/bless_purchase {pos:2, price:50, id: 017, code: 17}
+execute as @s[scores={MultiMenu=139018}] at @s run function skyblock:pvp/skywar/bless/setting/bless_purchase {pos:2, price:50, id: 018, code: 18}
+execute as @s[scores={MultiMenu=139019}] at @s run function skyblock:pvp/skywar/bless/setting/bless_purchase {pos:2, price:50, id: 019, code: 19}
+execute as @s[scores={MultiMenu=139020}] at @s run function skyblock:pvp/skywar/bless/setting/bless_purchase {pos:2, price:50, id: 020, code: 20}
+execute as @s[scores={MultiMenu=139021}] at @s run function skyblock:pvp/skywar/bless/setting/bless_purchase {pos:2, price:50, id: 021, code: 21}
+execute as @s[scores={MultiMenu=139022}] at @s run function skyblock:pvp/skywar/bless/setting/bless_purchase {pos:2, price:50, id: 022, code: 22}
+execute as @s[scores={MultiMenu=139023}] at @s run function skyblock:pvp/skywar/bless/setting/bless_purchase {pos:2, price:50, id: 023, code: 23}
+execute as @s[scores={MultiMenu=139024}] at @s run function skyblock:pvp/skywar/bless/setting/bless_purchase {pos:2, price:50, id: 024, code: 24}
+execute as @s[scores={MultiMenu=139025}] at @s run function skyblock:pvp/skywar/bless/setting/bless_purchase {pos:2, price:50, id: 025, code: 25}
+execute as @s[scores={MultiMenu=139026}] at @s run function skyblock:pvp/skywar/bless/setting/bless_purchase {pos:2, price:50, id: 026, code: 26}
+execute as @s[scores={MultiMenu=139027}] at @s run function skyblock:pvp/skywar/bless/setting/bless_purchase {pos:3, price:50, id: 027, code: 1}
+execute as @s[scores={MultiMenu=139028}] at @s run function skyblock:pvp/skywar/bless/setting/bless_purchase {pos:3, price:50, id: 028, code: 2}
+execute as @s[scores={MultiMenu=139029}] at @s run function skyblock:pvp/skywar/bless/setting/bless_purchase {pos:3, price:50, id: 029, code: 3}
+execute as @s[scores={MultiMenu=139030}] at @s run function skyblock:pvp/skywar/bless/setting/bless_purchase {pos:3, price:50, id: 030, code: 4}
+execute as @s[scores={MultiMenu=139031}] at @s run function skyblock:pvp/skywar/bless/setting/bless_purchase {pos:3, price:50, id: 031, code: 5}
+execute as @s[scores={MultiMenu=139032}] at @s run function skyblock:pvp/skywar/bless/setting/bless_purchase {pos:3, price:50, id: 032, code: 6}
+execute as @s[scores={MultiMenu=139033}] at @s run function skyblock:pvp/skywar/bless/setting/bless_purchase {pos:3, price:50, id: 033, code: 7}
+execute as @s[scores={MultiMenu=139034}] at @s run function skyblock:pvp/skywar/bless/setting/bless_purchase {pos:3, price:50, id: 034, code: 8}
+execute as @s[scores={MultiMenu=139035}] at @s run function skyblock:pvp/skywar/bless/setting/bless_purchase {pos:3, price:50, id: 035, code: 9}
+execute as @s[scores={MultiMenu=139036}] at @s run function skyblock:pvp/skywar/bless/setting/bless_purchase {pos:3, price:50, id: 036, code: 10}
+execute as @s[scores={MultiMenu=139037}] at @s run function skyblock:pvp/skywar/bless/setting/bless_purchase {pos:3, price:50, id: 037, code: 11}
+execute as @s[scores={MultiMenu=139038}] at @s run function skyblock:pvp/skywar/bless/setting/bless_purchase {pos:3, price:50, id: 038, code: 12}
+execute as @s[scores={MultiMenu=139039}] at @s run function skyblock:pvp/skywar/bless/setting/bless_purchase {pos:3, price:50, id: 039, code: 13}
+execute as @s[scores={MultiMenu=139040}] at @s run function skyblock:pvp/skywar/bless/setting/bless_purchase {pos:3, price:50, id: 040, code: 14}
 
 execute as @s[scores={MultiMenu=131001..134999}] at @s run scoreboard players set @s MultiMenu 131
 #execute as @s[scores={MultiMenu=132001..132999}] at @s run scoreboard players set @s MultiMenu 132
