@@ -26,27 +26,27 @@ execute if score stage_main_thread AzrTimerStack matches 2 run summon bat -79764
 execute if score stage_main_thread AzrTimerStack matches 2 run fill -79774 39 -345 -79772 41 -345 minecraft:pointed_dripstone[vertical_direction=up]
 #execute if score stage_main_thread AzrTimerStack matches 2 run team join AzrPlayer @e[tag=AzrielDecMob]
 
-execute if score stage_main_thread AzrTimerStack matches 11.. as @a[tag=azrShowDialog,tag=!AzrielEvent3761S] at @s at @n[tag=AzrielEvent3761,distance=0..3.5] run playsound entity.piglin.ambient master @a[tag=azrShowDialog,distance=0..3.5] ~ ~ ~ 2 0.9
+execute if score stage_main_thread AzrTimerStack matches 11.. as @a[tag=azrPlayer,tag=!AzrielEvent3761S] at @s at @n[tag=AzrielEvent3761,distance=0..3.5] run playsound entity.piglin.ambient master @a[tag=azrShowDialog,distance=0..3.5] ~ ~ ~ 2 0.9
 execute if score stage_main_thread AzrTimerStack matches 11.. as @a[tag=azrPlayer,tag=!AzrielEvent3761S] at @s if entity @n[tag=AzrielEvent3761,distance=0..3.5] run tellraw @s {"text":"猪灵居民：","color":"aqua"}
 execute if score stage_main_thread AzrTimerStack matches 11.. as @a[tag=azrPlayer,tag=!AzrielEvent3761S] at @s if entity @n[tag=AzrielEvent3761,distance=0..3.5] run tellraw @s {"text":"“人类……是迷路的亡魂吗？但又拥有肉身。真是奇怪啊。”","color":"white"}
 execute if score stage_main_thread AzrTimerStack matches 11.. as @a[tag=azrPlayer,tag=!AzrielEvent3761S] at @s if entity @n[tag=AzrielEvent3761,distance=0..3.5] run tag @s add AzrielEvent3761S
 
-execute if score stage_main_thread AzrTimerStack matches 11.. as @a[tag=azrShowDialog,tag=!AzrielEvent3762S] at @s at @n[tag=AzrielEvent3762,distance=0..3.5] run playsound entity.piglin.admiring_item master @a[tag=azrShowDialog,distance=0..3.5] ~ ~ ~ 2 0.9
+execute if score stage_main_thread AzrTimerStack matches 11.. as @a[tag=azrPlayer,tag=!AzrielEvent3762S] at @s at @n[tag=AzrielEvent3762,distance=0..3.5] run playsound entity.piglin.admiring_item master @a[tag=azrShowDialog,distance=0..3.5] ~ ~ ~ 2 0.9
 execute if score stage_main_thread AzrTimerStack matches 11.. as @a[tag=azrPlayer,tag=!AzrielEvent3762S] at @s if entity @n[tag=AzrielEvent3762,distance=0..3.5] run tellraw @s {"text":"猪灵居民：","color":"aqua"}
 execute if score stage_main_thread AzrTimerStack matches 11.. as @a[tag=azrPlayer,tag=!AzrielEvent3762S] at @s if entity @n[tag=AzrielEvent3762,distance=0..3.5] run tellraw @s {"text":"（并没有理睬你）","color":"gray"}
 execute if score stage_main_thread AzrTimerStack matches 11.. as @a[tag=azrPlayer,tag=!AzrielEvent3762S] at @s if entity @n[tag=AzrielEvent3762,distance=0..3.5] run tag @s add AzrielEvent3762S
 
-execute if score stage_main_thread AzrTimerStack matches 11.. as @a[tag=azrShowDialog,tag=!AzrielEvent3763S] at @s at @n[tag=AzrielEvent3763,distance=0..3.5] run playsound entity.piglin.ambient master @a[tag=azrShowDialog,distance=0..3.5] ~ ~ ~ 2 0.9
+execute if score stage_main_thread AzrTimerStack matches 11.. as @a[tag=azrPlayer,tag=!AzrielEvent3763S] at @s at @n[tag=AzrielEvent3763,distance=0..3.5] run playsound entity.piglin.ambient master @a[tag=azrShowDialog,distance=0..3.5] ~ ~ ~ 2 0.9
 execute if score stage_main_thread AzrTimerStack matches 11.. as @a[tag=azrPlayer,tag=!AzrielEvent3763S] at @s if entity @n[tag=AzrielEvent3763,distance=0..3.5] run tellraw @s {"text":"猪灵居民：","color":"aqua"}
 execute if score stage_main_thread AzrTimerStack matches 11.. as @a[tag=azrPlayer,tag=!AzrielEvent3763S] at @s if entity @n[tag=AzrielEvent3763,distance=0..3.5] run tellraw @s {"text":"“堕落的佛晓之星将会用祂的污秽荣光染黑地上世界与天庭。”","color":"white"}
 execute if score stage_main_thread AzrTimerStack matches 11.. as @a[tag=azrPlayer,tag=!AzrielEvent3763S] at @s if entity @n[tag=AzrielEvent3763,distance=0..3.5] run tag @s add AzrielEvent3763S
 
-execute if score stage_main_thread AzrTimerStack matches 11.. as @a[tag=azrShowDialog,tag=!AzrielEvent3764S] at @s at @n[tag=AzrielEvent3764,distance=0..3.5] run playsound entity.piglin.jealous master @a[tag=azrShowDialog,distance=0..3.5] ~ ~ ~ 2 0.9
+execute if score stage_main_thread AzrTimerStack matches 11.. as @a[tag=azrPlayer,tag=!AzrielEvent3764S] at @s at @n[tag=AzrielEvent3764,distance=0..3.5] run playsound entity.piglin.jealous master @a[tag=azrShowDialog,distance=0..3.5] ~ ~ ~ 2 0.9
 execute if score stage_main_thread AzrTimerStack matches 11.. as @a[tag=azrPlayer,tag=!AzrielEvent3764S] at @s if entity @n[tag=AzrielEvent3764,distance=0..3.5] run tellraw @s {"text":"猪灵居民：","color":"aqua"}
 execute if score stage_main_thread AzrTimerStack matches 11.. as @a[tag=azrPlayer,tag=!AzrielEvent3764S] at @s if entity @n[tag=AzrielEvent3764,distance=0..3.5] run tellraw @s {"text":"“你的身上……居然身无分文？什么、绿宝石在这里是毫无价值的！老子才不需要这种魔法水晶！”","color":"white"}
 execute if score stage_main_thread AzrTimerStack matches 11.. as @a[tag=azrPlayer,tag=!AzrielEvent3764S] at @s if entity @n[tag=AzrielEvent3764,distance=0..3.5] run tag @s add AzrielEvent3764S
 
-execute if score stage_main_thread AzrTimerStack matches 11.. as @a[tag=azrShowDialog,tag=!AzrielEvent3765S] at @s at @n[tag=AzrielEvent3765,distance=0..3.5] run playsound entity.piglin.ambient master @a[tag=azrShowDialog,distance=0..3.5] ~ ~ ~ 2 0.9
+execute if score stage_main_thread AzrTimerStack matches 11.. as @a[tag=azrPlayer,tag=!AzrielEvent3765S] at @s at @n[tag=AzrielEvent3765,distance=0..3.5] run playsound entity.piglin.ambient master @a[tag=azrShowDialog,distance=0..3.5] ~ ~ ~ 2 0.9
 execute if score stage_main_thread AzrTimerStack matches 11.. as @a[tag=azrPlayer,tag=!AzrielEvent3765S] at @s if entity @n[tag=AzrielEvent3765,distance=0..3.5] run tellraw @s {"text":"猪灵剑士：","color":"aqua"}
 execute if score stage_main_thread AzrTimerStack matches 11.. as @a[tag=azrPlayer,tag=!AzrielEvent3765S] at @s if entity @n[tag=AzrielEvent3765,distance=0..3.5] run tellraw @s {"text":"“路西法的审判军已经包围彼列的王城。距离推翻地狱的荒唐政权已近在眉睫。”","color":"white"}
 execute if score stage_main_thread AzrTimerStack matches 11.. as @a[tag=azrPlayer,tag=!AzrielEvent3765S] at @s if entity @n[tag=AzrielEvent3765,distance=0..3.5] run tag @s add AzrielEvent3765S
