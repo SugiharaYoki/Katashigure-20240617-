@@ -18,6 +18,10 @@ execute if items entity @s player.cursor amethyst_cluster run scoreboard players
 execute if items entity @s player.cursor amethyst_cluster run scoreboard players set @s[scores={SEAPT_setting_yuehan=1}] SEAPT_setting_yuehan 2
 execute if items entity @s player.cursor amethyst_cluster run scoreboard players set @s[scores={SEAPT_setting_yuehan=3}] SEAPT_setting_yuehan 1
 
+execute if items entity @s player.cursor golden_sword run scoreboard players set @s[scores={SEAPT_setting_trueend=2}] SEAPT_setting_trueend 3
+execute if items entity @s player.cursor golden_sword run scoreboard players set @s[scores={SEAPT_setting_trueend=1}] SEAPT_setting_trueend 2
+execute if items entity @s player.cursor golden_sword run scoreboard players set @s[scores={SEAPT_setting_trueend=3}] SEAPT_setting_trueend 1
+
 #tp @a[x=89829,y=12,z=-165,dx=30,dy=20,dz=30]
 
 execute if items entity @s player.cursor polished_deepslate[custom_data={"sea_setting_box":true}] run function skyblock:sea/outside/setting_box_execute_chapter_selection

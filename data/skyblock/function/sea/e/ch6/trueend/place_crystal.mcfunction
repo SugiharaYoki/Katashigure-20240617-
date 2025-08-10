@@ -52,6 +52,7 @@ execute if score SEA_ch6_event sea_4temp1 matches 270 as @a[tag=SEAPT,scores={SE
 execute if score SEA_ch6_event sea_4temp1 matches 270 as @a[tag=SEAPT,scores={SEAPT_member=1}] at @s run playsound minecraft:item.totem.use ambient @a ~ ~ ~ 50 0.7
 
 execute if score SEA_ch6_event sea_4temp1 matches 270 as @a[tag=SEAPT,scores={SEAPT_member=1}] at @s run function skyblock:sea/p/weapon/raphael_sword_give
+execute if score SEA_ch6_event sea_4temp1 matches 270 as @a[tag=SEAPT,scores={SEAPT_member=1}] at @s run give @a[tag=SEAPT,advancements={skyblock:sea/doc/g35=false}] mojang_banner_pattern[custom_data={sea_docg35:true}]
 
 execute if score SEA_ch6_event sea_4temp1 matches 300 as @a[tag=SEAPT,scores={SEAPT_member=1}] at @s run tellraw @a[distance=0..250] [{"selector":"@p[tag=SEAPT,scores={SEAPT_member=1}]","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“等等……这把金色的剑，是什么时候……？”","color":"white"}]
 

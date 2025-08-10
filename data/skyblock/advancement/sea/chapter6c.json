@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "深渊",
+            "color": "blue",
+            "bold": true,
+            "italic": false
+        },
+        "description": {
+            "text": "我能感受到这片深邃的黑暗在呼唤我。\n命中注定，我会来到此处。",
+            "color": "white"
+        },
+        "icon": {
+            "id": "minecraft:sculk"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "sea": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:sea/chapter6b"
+}

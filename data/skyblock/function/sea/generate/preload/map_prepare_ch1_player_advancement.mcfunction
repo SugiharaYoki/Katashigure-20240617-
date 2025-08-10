@@ -33,3 +33,4 @@ advancement grant @s[scores={sea_progress=16..}] only skyblock:sea/chapter6b
 advancement grant @s[scores={sea_progress=17..}] only skyblock:sea/chapter6c
 
 
+
