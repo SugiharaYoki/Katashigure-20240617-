@@ -1,5 +1,8 @@
+
 execute unless entity @s[scores={SEAPT_setting_fiona=1..}] run scoreboard players set @s SEAPT_setting_fiona 2
-execute unless entity @s[scores={SEAPT_setting_yuehan=1..}] run scoreboard players set @s SEAPT_setting_yuehan 2
+execute unless entity @s[scores={SEAPT_setting_yuehan=1..}] run scoreboard players set @s SEAPT_setting_yuehan 1
+execute unless entity @s[scores={SEAPT_setting_marilyn=1..}] run scoreboard players set @s SEAPT_setting_marilyn 1
+execute unless entity @s[scores={SEAPT_setting_trueend=1..}] run scoreboard players set @s SEAPT_setting_trueend 1
 
 item replace entity @s[scores={sea_progress=0..}] container.9 with polished_deepslate[custom_data={"sea_setting_box":true},custom_name='{"text":"『第一章：维修层』","italic":false,"color":"aqua"}',lore=['{"text":"“有人在维修层？维修层居然还有活人？”","color":"white","italic":true}']]
 item replace entity @s[scores={sea_progress=3..}] container.10 with polished_diorite[custom_data={"sea_setting_box":true},custom_name='{"text":"『第二章：物资层』","italic":false,"color":"aqua"}',lore=['{"text":"“必须先把北区的冷冻系统给关停。”","color":"white","italic":true}']]
@@ -26,6 +29,9 @@ item replace entity @s[scores={sea_progress=14..,SEAPT_setting_fiona=2}] contain
 item replace entity @s[scores={sea_progress=14..,SEAPT_setting_fiona=3}] container.31 with tropical_fish[custom_data={"sea_setting_box":true},custom_name='{"text":"菲尔娜：好感度","italic":false,"color":"red"}',lore=['{"text":"更改角色“菲尔娜”的初始好感度","color":"white","italic":false}','{"text":"（只对第五章BOSS与后续关卡有效）","color":"white","italic":false}','{"text":"","color":"green","italic":false}','{"text":"当前：16","color":"green","italic":true}','{"text":"更高的好感度会使得她更加愿意向你敞开心扉，","color":"gray","italic":true}','{"text":"在战斗时也会所向披靡。","color":"gray","italic":true}']]
 item replace entity @s[scores={sea_progress=14..,SEAPT_setting_fiona=4}] container.31 with tropical_fish[custom_data={"sea_setting_box":true},custom_name='{"text":"菲尔娜：好感度","italic":false,"color":"red"}',lore=['{"text":"更改角色“菲尔娜”的初始好感度","color":"white","italic":false}','{"text":"（只对第五章BOSS与后续关卡有效）","color":"white","italic":false}','{"text":"","color":"green","italic":false}','{"text":"当前：24","color":"green","italic":true}','{"text":"更高的好感度会使得她更加愿意向你敞开心扉，","color":"gray","italic":true}','{"text":"在战斗时也会所向披靡。","color":"gray","italic":true}']]
 
+item replace entity @s[scores={sea_progress=15..,SEAPT_setting_trueend=1},advancements={skyblock:sea/doc/g35=true}] container.32 with golden_sword[custom_data={"sea_setting_box":true},custom_name='{"text":"圣水晶：支线任务","italic":false,"color":"red"}',lore=['{"text":"设定是否完成圣水晶支线，并获得烈风圣剑","color":"white","italic":false}','{"text":"开启此选项后将强制设定为已完成越涵的支线任务","color":"white","italic":false}','{"text":"（只对第六章与后续关卡有效）","color":"white","italic":false}','{"text":"","color":"green","italic":false}','{"text":"当前：否","color":"red","italic":true}','{"text":"天使长拉斐尔并不是一位很好相处的天使。","color":"gray","italic":true}','{"text":"但是祂最为明辨是非，祂清楚你会成为怎样的存在。","color":"gray","italic":true}']]
+item replace entity @s[scores={sea_progress=15..,SEAPT_setting_trueend=2},advancements={skyblock:sea/doc/g35=true}] container.32 with golden_sword[custom_data={"sea_setting_box":true},custom_name='{"text":"圣水晶：支线任务","italic":false,"color":"red"}',lore=['{"text":"设定是否完成圣水晶支线，并获得烈风圣剑","color":"white","italic":false}','{"text":"开启此选项后将强制设定为已完成越涵的支线任务","color":"white","italic":false}','{"text":"（只对第六章与后续关卡有效）","color":"white","italic":false}','{"text":"","color":"green","italic":false}','{"text":"当前：是","color":"green","italic":true}','{"text":"天使长拉斐尔并不是一位很好相处的天使。","color":"gray","italic":true}','{"text":"但是祂最为明辨是非，祂清楚你会成为怎样的存在。","color":"gray","italic":true}']]
+item replace entity @s[scores={sea_progress=15..},advancements={skyblock:sea/doc/g35=false}] container.32 with barrier[custom_data={"sea_setting_box":true},custom_name='{"text":"未知的支线任务","italic":false,"color":"dark_gray"}',lore=['{"text":"试着进一步研究圣水晶的秘密吧。","color":"gray","italic":true}']]
 
 
 

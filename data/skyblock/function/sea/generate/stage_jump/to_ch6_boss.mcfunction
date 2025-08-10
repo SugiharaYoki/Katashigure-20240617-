@@ -12,6 +12,7 @@ give @a[tag=SEAPT] iron_ingot 20
 
 execute as @n[tag=SEAedwina] at @s run function skyblock:sea/e/ch6/edwina/init
 
+scoreboard players set sc sea_speedrun_ch6 19999
 
 scoreboard players set SEA_ch6_event rng5 12563
 

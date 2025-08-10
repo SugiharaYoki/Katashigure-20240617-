@@ -92,7 +92,7 @@ execute as @s[scores={MultiMenu=120}] at @s run function skyblock:menu/index/mul
 execute as @s[scores={MultiMenu=121}] at @s run function skyblock:menu/index/multimenu121_setting_selectcitybgm_extend2c
 
 execute as @s[scores={MultiMenu=131}] at @s run function skyblock:pvp/skywar/bless/setting/bless
-execute as @s[scores={MultiMenu=131001..134999}] at @s run function skyblock:pvp/skywar/bless/setting/bless_execute
+execute as @s[scores={MultiMenu=131001..139999}] at @s run function skyblock:pvp/skywar/bless/setting/bless_execute
 
 execute as @s[scores={MultiMenu=119001..119099}] at @s run function skyblock:world_system_functionreader_pvpjob
 execute as @s[scores={MultiMenu=101700..102000}] at @s run function skyblock:world_system_functionreader_musicbox

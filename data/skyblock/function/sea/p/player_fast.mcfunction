@@ -1,4 +1,4 @@
-tp @s[x=90100,y=100,z=0,distance=10000..] 90060 103 141 facing 90061 103 141
+tp @s[x=90100,y=100,z=0,distance=10000..,tag=!SEAPF,gamemode=!spectator] 90060 103 141 facing 90061 103 141
 
 
 execute as @s[tag=!sea_t_sprint_disabled,tag=sea_t_sprint,scores={sea_runs=0}] run effect give @s luck

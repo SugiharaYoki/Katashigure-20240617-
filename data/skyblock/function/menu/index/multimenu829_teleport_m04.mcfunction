@@ -2,9 +2,11 @@ scoreboard objectives add SEAPT_mode dummy
 scoreboard objectives add SEAPT_setting_fiona dummy
 scoreboard objectives add SEAPT_setting_yuehan dummy
 scoreboard objectives add SEAPT_setting_marilyn dummy
+scoreboard objectives add SEAPT_setting_trueend dummy
 execute unless entity @s[scores={SEAPT_mode=0..}] run scoreboard players set @s SEAPT_mode 1
 scoreboard objectives add sea_setting_box_index dummy
 execute unless entity @s[scores={sea_setting_box_index=0..}] run scoreboard players set @s sea_setting_box_index 1
+
 
 execute as @s[tag=SEAPT,x=89829,y=12,z=-165,dx=30,dy=20,dz=30] at @s run function skyblock:sea/dead
 tag @a[tag=SEAPT,x=89829,y=12,z=-165,dx=30,dy=20,dz=30] add SEAPT_trial_hall
