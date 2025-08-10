@@ -11,7 +11,6 @@ execute unless entity @s[tag=AZR_fakeDeath] unless score @s Azr_forceDeath match
     #输出
     execute if score @s Azr_forceDeath matches 1 run tellraw @a[tag=azrShowDialog,distance=..10000] [{"selector":"@s","color":"blue"},{"text":" 阵亡了！","color":"dark_red"}]
     execute if score @s Azr_forceDeath matches 1 run tellraw @s [{"text":"你已经死亡！最终坚持关数： ","color":"red"},{"score":{"name":"@s","objective":"Azr_wave"}}]
-    execute if score @s Azr_forceDeath matches 1 run tellraw @s [{"text":"现在持有的影之石： ","color":"white"},{"score":{"name":"@s","objective":"Perm_PersonSHD"}}]
 execute if score @s Azr_forceDeath matches 1 run function skyblock:azr/lifecycle/endgame/quit_game
 tag @s remove AZR_fakeDeath
 #当局一次性提示

@@ -19,6 +19,10 @@ attribute @s minecraft:attack_damage modifier remove azr_chainkill_02
 attribute @s minecraft:armor modifier remove azr_chainkill_03
 attribute @s minecraft:attack_speed modifier remove azr_chainkill_04
 function skyblock:azr/system/player/refresh_bossbar
+#SHD奖励
+scoreboard players operation @s Perm_PersonSHD += @s Azr_wave
+tellraw @s [{"text":" 获得影之石：","color":"white"},{"score":{"name":"@s","objective":"Azr_wave"},"color":"yellow"}]
+tellraw @s [{"text":" 现在持有的影之石：","color":"white"},{"score":{"name":"@s","objective":"Perm_PersonSHD"},"color":"yellow"}]
 #更新战绩
 execute unless score @s SeGa_StandLastBH matches -2147483648..2147483647 run scoreboard players set @s SeGa_StandLastBH 0
 execute if score @s SeGa_StandLastBH < @s Azr_wave run scoreboard players operation @s SeGa_StandLastBH = @s Azr_wave
