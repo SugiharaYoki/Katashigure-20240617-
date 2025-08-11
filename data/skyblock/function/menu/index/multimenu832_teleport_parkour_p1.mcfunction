@@ -38,6 +38,10 @@ tellraw @s[scores={parkour_stage=36..}] [{"text":"    紊蔓浸庭 36","bold":fa
 tellraw @s[scores={parkour_stage=37..}] [{"text":"    紊蔓浸庭 37","bold":false,"color":"dark_purple","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 832037"}}]
 tellraw @s[scores={parkour_stage=38..}] [{"text":"    紊蔓浸庭 38","bold":false,"color":"dark_purple","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 832038"}}]
 tellraw @s[scores={parkour_stage=39..}] [{"text":"    紊蔓浸庭 39","bold":false,"color":"dark_purple","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 832039"}}]
+tellraw @s[scores={parkour_stage=40..}] [{"text":"     销愚驻防 40","bold":false,"color":"dark_purple","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 832040"}}]
+tellraw @s[scores={parkour_stage=41..}] [{"text":"     销愚驻防 41","bold":false,"color":"dark_purple","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 832041"}}]
+tellraw @s[scores={parkour_stage=42..}] [{"text":"     销愚驻防 42","bold":false,"color":"dark_purple","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 832042"}}]
+tellraw @s[scores={parkour_stage=43..}] [{"text":"     销愚驻防 43","bold":false,"color":"dark_purple","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 832043"}}]
 #tellraw @s[scores={MazeLS=??..}] {"text":"","bold":false}
 #tellraw @s[scores={MazeLS=??..}] {"text":"  [下一页]","bold":false,"color":"green","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 811"}}
 tellraw @s {"text":"","bold":false}
