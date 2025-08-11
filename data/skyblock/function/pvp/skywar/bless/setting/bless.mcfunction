@@ -7,6 +7,7 @@ tellraw @s [{"text":"选择你想使用的礼装","color":"yellow","bold": true}
 execute as @s at @s run function skyblock:city/id/read
 execute as @n[tag=id_data_reading,type=marker] at @s run tp @s ~2 ~ ~
 
+execute as @n[tag=id_data_reading,type=marker] at @s run particle minecraft:end_rod ~ ~ ~ 0 5 0 0 100
 execute as @n[tag=id_data_reading,type=marker] at @s run item replace block ~ ~ ~ container.8 with green_wool
 execute as @n[tag=id_data_reading,type=marker] at @s run item replace block ~ ~ ~ container.1 with green_wool
 execute as @n[tag=id_data_reading,type=marker] at @s run item replace block ~ ~ ~ container.2 with green_wool
