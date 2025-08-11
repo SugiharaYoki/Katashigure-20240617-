@@ -142,6 +142,8 @@ execute as @a[scores={MultiMenu=832037,parkour_stage=37..}] at @s run tp @p -143
 execute as @a[scores={MultiMenu=832037,parkour_stage=37..}] at @s run tellraw @s [{"text":"已抵达","color":"white"},{"text":" 梦蝶的长廊 - 第37廊间","color":"green"}]
 execute as @a[scores={MultiMenu=832038,parkour_stage=38..}] at @s run tp @p -1497 57 -118 facing -1498 57 -118
 execute as @a[scores={MultiMenu=832038,parkour_stage=38..}] at @s run tellraw @s [{"text":"已抵达","color":"white"},{"text":" 梦蝶的长廊 - 第38廊间","color":"green"}]
+execute as @a[scores={MultiMenu=832039,parkour_stage=39..}] at @s run tp @p -1550 57 -118 facing -1551 57 -118
+execute as @a[scores={MultiMenu=832039,parkour_stage=39..}] at @s run tellraw @s [{"text":"已抵达","color":"white"},{"text":" 梦蝶的长廊 - 第39廊间","color":"green"}]
 
 
 
