@@ -21,11 +21,10 @@ attribute @s minecraft:armor modifier remove azr_chainkill_03
 attribute @s minecraft:attack_speed modifier remove azr_chainkill_04
 function skyblock:azr/system/player/refresh_bossbar
 #SHD奖励
-scoreboard players set tempSHD Azr_system 0
 scoreboard players operation tempSHD Azr_system = wave Azr_system
 scoreboard players operation tempSHD Azr_system -= @s AzrJoinWave
-scoreboard players operation @s Perm_PersonSHD += @s tempSHD
-tellraw @s [{"text":" 获得影之石：","color":"white"},{"score":{"name":"@s","objective":"tempSHD"},"color":"yellow"}]
+scoreboard players operation @s Perm_PersonSHD += tempSHD Azr_system
+tellraw @s [{"text":" 获得影之石：","color":"white"},{"score":{"name":"tempSHD","objective":"Azr_system"},"color":"yellow"}]
 scoreboard players reset tempSHD Azr_system
 tellraw @s [{"text":" 现在持有的影之石：","color":"white"},{"score":{"name":"@s","objective":"Perm_PersonSHD"},"color":"yellow"}]
 tellraw @s [{"text":" 继承到下一局的瓜片：","color":"white"},{"score":{"name":"@s","objective":"AzrExtraMelon"},"color":"yellow"}]
