@@ -49,8 +49,8 @@ execute if score @s rng4 matches 60 run playsound entity.breeze.shoot hostile @a
 execute if score @s rng4 matches 60 run playsound entity.breeze.shoot hostile @a ~ ~ ~ 3 0.9
 execute if score @s rng4 matches 60 run particle gust_emitter_large ^1.8 ^3.25 ^-0.5 0.1 0.1 0.1 3 50
 execute if score @s rng4 matches 60 run particle gust_emitter_large ^-1.8 ^3.25 ^-0.5 0.1 0.1 0.1 3 50
-execute if score @s rng4 matches 60 run particle small_gust ^2.8 ^4.25 ^-2.5 1.9 1.9 1.9 0 8
-execute if score @s rng4 matches 60 run particle small_gust ^-2.8 ^4.25 ^-2.5 1.9 1.9 1.9 0 8
+execute if score @s rng4 matches 60 run particle small_gust ^2.8 ^4.25 ^-2.5 1.9 1.9 1.9 0 3
+execute if score @s rng4 matches 60 run particle small_gust ^-2.8 ^4.25 ^-2.5 1.9 1.9 1.9 0 3
 execute if score @s rng4 matches 60 as @s at @s run playsound entity.generic.explode hostile @a ~ ~ ~ 3 0.9
 execute if score @s rng4 matches 60 as @s at @s run particle minecraft:white_ash ~ ~1.5 ~ 15 2 15 0 500
 
