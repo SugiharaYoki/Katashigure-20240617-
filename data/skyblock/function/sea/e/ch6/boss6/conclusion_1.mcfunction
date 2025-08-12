@@ -55,6 +55,7 @@ execute if score SEA_ch6_event sea_4temp4 matches 1362..1364 positioned 90061 -1
 execute if score SEA_ch6_event sea_4temp4 matches 1362..1364 positioned 90061 -10 -1815 run summon lightning_bolt
 execute if score SEA_ch6_event sea_4temp4 matches 1362..1364 positioned 90061 -10 -1815 run summon lightning_bolt
 execute if score SEA_ch6_event sea_4temp4 matches 1364 positioned 90061 -5 -1815 run function skyblock:sea/m/unique/boss6b
+execute if score SEA_ch6_event sea_4temp4 matches 1364 positioned 90061 -5 -1815 run effect give @n[tag=SEAboss6b] resistance infinite 9 true
 
 execute if score SEA_ch6_event sea_4temp4 matches 1362 run effect give @n[tag=SEAboss6b] levitation infinite 0 true
 execute if score SEA_ch6_event sea_4temp4 matches 1362 run bossbar add 9066602 "神圣的风暴 - 权之执理"
