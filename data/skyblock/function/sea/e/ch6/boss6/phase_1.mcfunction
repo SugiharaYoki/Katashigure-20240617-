@@ -36,15 +36,15 @@ execute if score @s rng4 matches 18 as @s at @s run fill ~6 ~ ~4 ~-6 ~ ~-6 fire 
 execute if score @s rng4 matches 19 as @s at @s run fill ~7 ~ ~4 ~-7 ~ ~-7 fire replace air
 execute if score @s rng4 matches 13 as @s at @s run particle flame ~ ~1 ~ 0 0 0 3 100
 execute if score @s rng4 matches 29 as @s at @s run particle flash ~ ~1 ~ 0 0 0 0 1
-execute if score @s rng4 matches 29 as @s at @s run fill ~1 ~ ~1 ~-1 ~ ~-1 air replace fire
-execute if score @s rng4 matches 30 as @s at @s run fill ~2 ~ ~2 ~-2 ~ ~-2 air replace fire
-execute if score @s rng4 matches 31 as @s at @s run fill ~3 ~ ~3 ~-3 ~ ~-3 air replace fire
-execute if score @s rng4 matches 32 as @s at @s run fill ~4 ~ ~4 ~-4 ~ ~-4 air replace fire
-execute if score @s rng4 matches 33 as @s at @s run fill ~5 ~ ~4 ~-5 ~ ~-5 air replace fire
-execute if score @s rng4 matches 34 as @s at @s run fill ~6 ~ ~4 ~-6 ~ ~-6 air replace fire
-execute if score @s rng4 matches 35 as @s at @s run fill ~7 ~ ~4 ~-7 ~ ~-7 air replace fire
+execute if score @s rng4 matches 20 as @s at @s run fill ~1 ~ ~1 ~-1 ~ ~-1 air replace fire
+execute if score @s rng4 matches 21 as @s at @s run fill ~2 ~ ~2 ~-2 ~ ~-2 air replace fire
+execute if score @s rng4 matches 22 as @s at @s run fill ~3 ~ ~3 ~-3 ~ ~-3 air replace fire
+execute if score @s rng4 matches 23 as @s at @s run fill ~4 ~ ~4 ~-4 ~ ~-4 air replace fire
+execute if score @s rng4 matches 24 as @s at @s run fill ~5 ~ ~4 ~-5 ~ ~-5 air replace fire
+execute if score @s rng4 matches 25 as @s at @s run fill ~6 ~ ~4 ~-6 ~ ~-6 air replace fire
+execute if score @s rng4 matches 26 as @s at @s run fill ~7 ~ ~4 ~-7 ~ ~-7 air replace fire
 
-execute if score @s rng4 matches 60 as @s at @s run data modify entity @s NoAI set value 1b
+execute if score @s rng4 matches 60 as @s at @s run data modify entity @s NoAI set value 0b
 execute if score @s rng4 matches 60 run playsound entity.breeze.shoot hostile @a ~ ~ ~ 3 1.2
 execute if score @s rng4 matches 60 run playsound entity.breeze.shoot hostile @a ~ ~ ~ 3 0.9
 execute if score @s rng4 matches 60 run particle gust_emitter_large ^1.8 ^3.25 ^-0.5 0.1 0.1 0.1 3 50
