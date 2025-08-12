@@ -350,7 +350,7 @@ execute store result score @n[tag=SEAboss6] health run data get entity @n[tag=SE
 
 execute if score SEA_ch6_event rng5 matches 20058.. as @e[tag=SEAboss6_summoner_a,type=marker] at @s run function skyblock:sea/e/ch6/boss6/attack_summon_marker
 
-
+execute if score SEA_ch6_event sea_4temp4 matches ..3 run scoreboard players add SEA_ch6_event sea_4temp4 1
 
 
 

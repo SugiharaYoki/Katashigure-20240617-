@@ -1,4 +1,4 @@
-scoreboard players add SEA_ch6_event sea_4temp4 0
+
 scoreboard players add @s rng1 1
 
 scoreboard players add SEAmusic rng1 1
@@ -79,7 +79,7 @@ execute as @s[tag=seaboss6_phase3_storm,scores={rng2=45..49}] run function skybl
 
 
 
-
+execute if score SEA_ch6_event sea_4temp4 matches 2..3 run scoreboard players set SEA_ch6_event sea_4temp4 2
 
 
 
