@@ -56,6 +56,7 @@ execute if score SEA_ch6_event sea_4temp4 matches 1352 positioned 90073 -10 -181
 execute if score SEA_ch6_event sea_4temp4 matches 1352 positioned 90073 -10 -1815 run summon lightning_bolt
 execute if score SEA_ch6_event sea_4temp4 matches 1352 positioned 90073 -10 -1815 run function skyblock:sea/m/unique/boss6b
 
+execute if score SEA_ch6_event sea_4temp4 matches 1352 run effect give @n[tag=SEAboss6b] levitation infinite 0 true
 execute if score SEA_ch6_event sea_4temp4 matches 1352 run bossbar add 9066602 "神圣的风暴 - 权之执理"
 execute if score SEA_ch6_event sea_4temp4 matches 1352 run bossbar set minecraft:9066602 color red
 execute if score SEA_ch6_event sea_4temp4 matches 1352 run bossbar set minecraft:9066602 name "神圣的风暴 - 权之执理"
@@ -67,7 +68,7 @@ execute if score SEA_ch6_event sea_4temp4 matches 1352..1452 run scoreboard play
 execute if score SEA_ch6_event sea_4temp4 matches 1352.. store result bossbar minecraft:9066602 value run scoreboard players get SEA_ch6_event sea_4temp5
 
 
-
+execute as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s run playsound minecraft:salvation2 music @s ~ ~ ~ 1 1.0
 
 
 
