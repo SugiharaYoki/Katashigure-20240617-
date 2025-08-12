@@ -50,31 +50,32 @@ execute if score SEA_ch6_event sea_4temp4 matches 1332..1342 as @p[tag=SEAPT] at
 execute if score SEA_ch6_event sea_4temp4 matches 1342 as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.4
 execute if score SEA_ch6_event sea_4temp4 matches 1342 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“温度在升高……？糟了，天使还活着！！”","color":"white","bold": false}]
 
-execute if score SEA_ch6_event sea_4temp4 matches 1352..1354 positioned 90061 -10 -1815 run summon lightning_bolt
-execute if score SEA_ch6_event sea_4temp4 matches 1352..1354 positioned 90061 -10 -1815 run summon lightning_bolt
-execute if score SEA_ch6_event sea_4temp4 matches 1352..1354 positioned 90061 -10 -1815 run summon lightning_bolt
-execute if score SEA_ch6_event sea_4temp4 matches 1352..1354 positioned 90061 -10 -1815 run summon lightning_bolt
-execute if score SEA_ch6_event sea_4temp4 matches 1352 positioned 90061 -10 -1815 run function skyblock:sea/m/unique/boss6b
+execute if score SEA_ch6_event sea_4temp4 matches 1362..1364 positioned 90061 -10 -1815 run summon lightning_bolt
+execute if score SEA_ch6_event sea_4temp4 matches 1362..1364 positioned 90061 -10 -1815 run summon lightning_bolt
+execute if score SEA_ch6_event sea_4temp4 matches 1362..1364 positioned 90061 -10 -1815 run summon lightning_bolt
+execute if score SEA_ch6_event sea_4temp4 matches 1362..1364 positioned 90061 -10 -1815 run summon lightning_bolt
+execute if score SEA_ch6_event sea_4temp4 matches 1362 positioned 90061 -10 -1815 run function skyblock:sea/m/unique/boss6b
 
-execute if score SEA_ch6_event sea_4temp4 matches 1352 run effect give @n[tag=SEAboss6b] levitation infinite 0 true
-execute if score SEA_ch6_event sea_4temp4 matches 1352 run bossbar add 9066602 "神圣的风暴 - 权之执理"
-execute if score SEA_ch6_event sea_4temp4 matches 1352 run bossbar set minecraft:9066602 color red
-execute if score SEA_ch6_event sea_4temp4 matches 1352 run bossbar set minecraft:9066602 name "神圣的风暴 - 权之执理"
-execute if score SEA_ch6_event sea_4temp4 matches 1352 run bossbar set minecraft:9066602 players @a[tag=SEAPT]
-execute if score SEA_ch6_event sea_4temp4 matches 1352 run bossbar set minecraft:9066602 style progress
-execute if score SEA_ch6_event sea_4temp4 matches 1352 run bossbar set minecraft:9066602 max 400
+execute if score SEA_ch6_event sea_4temp4 matches 1362 run effect give @n[tag=SEAboss6b] levitation infinite 0 true
+execute if score SEA_ch6_event sea_4temp4 matches 1362 run bossbar add 9066602 "神圣的风暴 - 权之执理"
+execute if score SEA_ch6_event sea_4temp4 matches 1362 run bossbar set minecraft:9066602 color red
+execute if score SEA_ch6_event sea_4temp4 matches 1362 run bossbar set minecraft:9066602 name "神圣的风暴 - 权之执理"
+execute if score SEA_ch6_event sea_4temp4 matches 1362 run bossbar set minecraft:9066602 players @a[tag=SEAPT]
+execute if score SEA_ch6_event sea_4temp4 matches 1362 run bossbar set minecraft:9066602 style progress
+execute if score SEA_ch6_event sea_4temp4 matches 1362 run bossbar set minecraft:9066602 max 400
 
-execute if score SEA_ch6_event sea_4temp4 matches 1352..1452 run scoreboard players add SEA_ch6_event sea_4temp5 4
-execute if score SEA_ch6_event sea_4temp4 matches 1352.. store result bossbar minecraft:9066602 value run scoreboard players get SEA_ch6_event sea_4temp5
+execute if score SEA_ch6_event sea_4temp4 matches 1362..1462 run scoreboard players add SEA_ch6_event sea_4temp5 4
+execute if score SEA_ch6_event sea_4temp4 matches 1362.. store result bossbar minecraft:9066602 value run scoreboard players get SEA_ch6_event sea_4temp5
 
-execute if score SEA_ch6_event sea_4temp4 matches 1417 as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.4
-execute if score SEA_ch6_event sea_4temp4 matches 1417 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“糟糕，这家伙之前根本没动真格！！”","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 1427 as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.4
+execute if score SEA_ch6_event sea_4temp4 matches 1427 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“糟糕，这家伙之前根本没动真格！！”","color":"white","bold": false}]
 
-execute if score SEA_ch6_event sea_4temp4 matches 1352 as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s run playsound minecraft:salvation1 music @s ~ ~ ~ 1 1.0
+execute if score SEA_ch6_event sea_4temp4 matches 1362 as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s run playsound minecraft:salvation1 music @s ~ ~ ~ 1 1.0
 
 execute if score SEA_ch6_event sea_4temp4 matches 1352 as @p[tag=SEAPT] at @s run title @a[distance=0..250] times 1s 3s 1s
-execute if score SEA_ch6_event sea_4temp4 matches 1352 as @p[tag=SEAPT] at @s run title @a[distance=0..250] title [{"text":"汝等乃强大的人类。","color":"white","bold": false}]
-execute if score SEA_ch6_event sea_4temp4 matches 1452 as @p[tag=SEAPT] at @s run title @a[distance=0..250] title [{"text":"可惜，汝等踏上了歧途。","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 1352 as @p[tag=SEAPT] at @s run title @a[distance=0..250] title [{"text":"汝等实乃强大的人类。","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 1462 as @p[tag=SEAPT] at @s run title @a[distance=0..250] title [{"text":"可惜，汝等踏上了歧途。","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 1662 as @p[tag=SEAPT] at @s run title @a[distance=0..250] title [{"text":"在神圣的风暴中被焚尽吧。","color":"white","bold": false}]
 
 
 
