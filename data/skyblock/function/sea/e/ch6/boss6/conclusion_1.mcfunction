@@ -40,9 +40,9 @@ execute if score SEA_ch6_event sea_4temp4 matches 1217 as @n[tag=SEAedwina] at @
 execute if score SEA_ch6_event sea_4temp4 matches 1217 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“太好了……我知道跟你一起就肯定做得到，但这也……太不可置信了。”","color":"white","bold": false}]
 execute if score SEA_ch6_event sea_4temp4 matches 1287 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“先别急着庆祝，我觉得……事情没那么简单。”","color":"white"}]
 
-execute if score SEA_ch6_event sea_4temp4 matches 1212..2000 as @p[tag=SEAPT] at @s run particle small_flame ~ ~2 ~ 50 3 50 0.01 2
-execute if score SEA_ch6_event sea_4temp4 matches 1292..2000 as @p[tag=SEAPT] at @s run particle small_flame ~ ~2 ~ 50 3 50 0.01 2
-execute if score SEA_ch6_event sea_4temp4 matches 1332..2000 as @p[tag=SEAPT] at @s run particle small_flame ~ ~2 ~ 50 3 50 0.01 2
+execute if score SEA_ch6_event sea_4temp4 matches 1212..2000 as @p[tag=SEAPT] at @s run particle small_flame ~ ~2 ~ 10 3 10 0.01 8
+execute if score SEA_ch6_event sea_4temp4 matches 1292..2000 as @p[tag=SEAPT] at @s run particle small_flame ~ ~2 ~ 10 3 10 0.01 15
+execute if score SEA_ch6_event sea_4temp4 matches 1332..2000 as @p[tag=SEAPT] at @s run particle small_flame ~ ~2 ~ 10 3 10 0.01 20
 execute if score SEA_ch6_event sea_4temp4 matches 1332..1338 as @p[tag=SEAPT] at @s run playsound minecraft:ambient.soul_sand_valley.mood ambient @a ~ ~ ~ 3 1.3
 execute if score SEA_ch6_event sea_4temp4 matches 1332..1338 as @p[tag=SEAPT] at @s run playsound minecraft:ambient.soul_sand_valley.mood ambient @a ~ ~ ~ 3 0.9
 execute if score SEA_ch6_event sea_4temp4 matches 1332..1342 as @p[tag=SEAPT] at @s run playsound minecraft:ambient.soul_sand_valley.mood ambient @a ~ ~ ~ 3 0.7
@@ -134,4 +134,8 @@ execute if score SEA_ch6_event sea_4temp4 matches 1542 as @n[tag=SEAedwina] at @
 execute if score SEA_ch6_event sea_4temp4 matches 1542 as @n[tag=SEAedwina] at @s positioned ~ ~ ~3 run summon marker ~ 21.0 ~ {Tags:["SEA_boss6_burst_anchor"]}
 execute if score SEA_ch6_event sea_4temp4 matches 1542 as @n[tag=SEAedwina] at @s positioned ~ ~ ~-3 run summon marker ~ 21.0 ~ {Tags:["SEA_boss6_burst_anchor"]}
 execute if score SEA_ch6_event sea_4temp4 matches 1542 as @n[tag=SEAedwina] at @s positioned ~ ~ ~ run summon marker ~ 21.0 ~ {Tags:["SEA_boss6_burst_anchor"]}
+
+execute positioned 90069 21 -1815 as @e[type=marker,tag=SEA_boss6_flame_anchor,distance=0..50] at @s run function skyblock:sea/e/ch6/boss6/attack_flame_anchor
+execute positioned 90069 21 -1815 as @e[type=marker,tag=SEA_boss6_burst_anchor,distance=0..50] at @s run function skyblock:sea/e/ch6/boss6/attack_burst_anchor
+
 
