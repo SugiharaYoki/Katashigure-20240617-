@@ -314,12 +314,23 @@ execute if score SEA_ch6_event rng5 matches 20108.. as @n[tag=SEAboss6] at @s ru
 execute if score SEA_ch6_event rng5 matches 20108.. as @n[tag=SEAboss6] at @s run particle small_gust ^-2.5 ^3.35 ^-2.3 0.23 0.28 0.23 0 4
 execute if score SEA_ch6_event rng5 matches 20108.. as @n[tag=SEAboss6] at @s run particle small_gust ^2.9 ^3.6 ^-2.6 0.25 0.28 0.25 0 4
 execute if score SEA_ch6_event rng5 matches 20108.. as @n[tag=SEAboss6] at @s run particle small_gust ^-2.9 ^3.6 ^-2.6 0.25 0.28 0.25 0 4
-execute if score SEA_ch6_event rng5 matches 20108 as @n[tag=SEAboss6] at @s run playsound entity.breeze.shoot hostile @a ~ ~ ~ 3 1.2
-execute if score SEA_ch6_event rng5 matches 20108 as @n[tag=SEAboss6] at @s run playsound entity.breeze.shoot hostile @a ~ ~ ~ 3 0.9
-execute if score SEA_ch6_event rng5 matches 20108 as @n[tag=SEAboss6] at @s run particle gust_emitter_large ^1.8 ^3.25 ^-0.5 0.1 0.1 0.1 3 5
-execute if score SEA_ch6_event rng5 matches 20108 as @n[tag=SEAboss6] at @s run particle gust_emitter_large ^-1.8 ^3.25 ^-0.5 0.1 0.1 0.1 3 5
-execute if score SEA_ch6_event rng5 matches 20108 as @n[tag=SEAboss6] at @s run particle small_gust ^1.8 ^3.25 ^-1.5 0.23 0.23 0.23 0 3
-execute if score SEA_ch6_event rng5 matches 20108 as @n[tag=SEAboss6] at @s run particle small_gust ^-1.8 ^3.25 ^-1.5 0.23 0.23 0.23 0 3
+
+execute if score SEA_ch6_event rng5 matches 20108.. as @n[tag=SEAboss6,tag=Phase1] at @s run particle small_gust ^1.4 ^2.2 ^-1.5 0.1 0.15 0.1 0 3
+execute if score SEA_ch6_event rng5 matches 20108.. as @n[tag=SEAboss6,tag=Phase1] at @s run particle small_gust ^-1.4 ^2.2 ^-1.5 0.1 0.15 0.1 0 3
+execute if score SEA_ch6_event rng5 matches 20108.. as @n[tag=SEAboss6,tag=Phase1] at @s run particle small_gust ^1.7 ^2.3 ^-1.8 0.1 0.15 0.1 0 3
+execute if score SEA_ch6_event rng5 matches 20108.. as @n[tag=SEAboss6,tag=Phase1] at @s run particle small_gust ^-1.7 ^2.3 ^-1.8 0.1 0.15 0.1 0 3
+execute if score SEA_ch6_event rng5 matches 20108.. as @n[tag=SEAboss6,tag=Phase1] at @s run particle small_gust ^2.0 ^2.45 ^-2.1 0.1 0.15 0.1 0 3
+execute if score SEA_ch6_event rng5 matches 20108.. as @n[tag=SEAboss6,tag=Phase1] at @s run particle small_gust ^-2.0 ^2.45 ^-2.1 0.1 0.15 0.1 0 3
+execute if score SEA_ch6_event rng5 matches 20108.. as @n[tag=SEAboss6,tag=Phase1] at @s run particle small_gust ^2.4 ^2.65 ^-2.4 0.13 0.19 0.13 0 4
+execute if score SEA_ch6_event rng5 matches 20108.. as @n[tag=SEAboss6,tag=Phase1] at @s run particle small_gust ^-2.4 ^2.65 ^-2.4 0.13 0.19 0.13 0 4
+execute if score SEA_ch6_event rng5 matches 20108.. as @n[tag=SEAboss6,tag=Phase1] at @s run particle small_gust ^2.7 ^2.9 ^-2.7 0.18 0.22 0.18 0 4
+execute if score SEA_ch6_event rng5 matches 20108.. as @n[tag=SEAboss6,tag=Phase1] at @s run particle small_gust ^-2.7 ^2.9 ^-2.7 0.18 0.22 0.18 0 4
+execute if score SEA_ch6_event rng5 matches 20108.. as @n[tag=SEAboss6,tag=Phase1] at @s run particle small_gust ^3.1 ^3.15 ^-3.0 0.23 0.28 0.23 0 4
+execute if score SEA_ch6_event rng5 matches 20108.. as @n[tag=SEAboss6,tag=Phase1] at @s run particle small_gust ^-3.1 ^3.15 ^-3.0 0.23 0.28 0.23 0 4
+execute if score SEA_ch6_event rng5 matches 20108.. as @n[tag=SEAboss6,tag=Phase1] at @s run particle small_gust ^3.5 ^3.35 ^-3.3 0.23 0.28 0.23 0 4
+execute if score SEA_ch6_event rng5 matches 20108.. as @n[tag=SEAboss6,tag=Phase1] at @s run particle small_gust ^-3.5 ^3.35 ^-3.3 0.23 0.28 0.23 0 4
+execute if score SEA_ch6_event rng5 matches 20108.. as @n[tag=SEAboss6,tag=Phase1] at @s run particle small_gust ^4.9 ^3.6 ^-4.6 0.25 0.28 0.25 0 4
+execute if score SEA_ch6_event rng5 matches 20108.. as @n[tag=SEAboss6,tag=Phase1] at @s run particle small_gust ^-4.9 ^3.6 ^-4.6 0.25 0.28 0.25 0 4
 
 execute if score SEA_ch6_event rng5 matches 20078 positioned 90064 22 -1815 run data modify entity @n[tag=SEAboss6] NoAI set value 0b
 execute if score SEA_ch6_event rng5 matches 20030 as @a[scores={SEAPT_member=1}] at @s run tellraw @a[distance=0..150] [{"text":"？？？：","color":"red","bold": true},{"text":"\n“既然一路走至此处，那吾也该报上名号了。”","color":"white","bold": false}]
