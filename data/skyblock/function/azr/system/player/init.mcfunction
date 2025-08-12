@@ -30,7 +30,7 @@ function skyblock:azr/assets/items/others/revival_star
 give @s pumpkin_pie 8
 
 #游戏数据初始化
-scoreboard players operation @s Azr_wave = @p[tag=azrPlayer] Azr_wave
+scoreboard players operation wave Azr_system = @p[tag=azrPlayer] Azr_wave
 scoreboard players set @s Azr_forceDeath 0
 scoreboard players set @s Azr_isDead 0
 scoreboard players set @s Azr_emerald 0
@@ -46,9 +46,13 @@ tag @s add azrShopRefresh
 tag @s add azrNeverUsedShop
 
 #输出信息
-tellraw @s {"text":"游戏开始……","color":"green"}
+execute unless score $jumpto Azr_system matches 1 run tellraw @s {"text":"游戏开始……","color":"green"}
+execute if score $jumpto Azr_system matches 1 run tellraw @s {"text":"游戏再续……","color":"green"}
+scoreboard players reset $jumpto Azr_system
 execute as @s[tag=DebugMode] run scoreboard objectives setdisplay sidebar Azr_system
 #function skyblock:azr/purchase_sega_azriel_plypts_react1
+
+tp @s -79936.0 38.15 -14.0 facing -79935.0 38.15 -14.0
 
 #wtf
 #scoreboard players set @s AzrielTag10 10

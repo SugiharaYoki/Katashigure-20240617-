@@ -8,7 +8,8 @@ xp set @s 25 levels
 
 scoreboard players set @s Azr_emerald 200
 scoreboard players set stage Azr_system 61
-scoreboard players set @s Azr_wave 46
+scoreboard players set wave Azr_system 46
+scoreboard players set @s AzrJoinWave 46
 scoreboard players set tick_main_thread AzrTimerStack 0
 scoreboard players set stage_main_thread AzrTimerStack 702
 scoreboard players set life_vitae_available Azr_system 0

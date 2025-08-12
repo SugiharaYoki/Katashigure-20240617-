@@ -11,7 +11,8 @@ xp set @s 8 levels
 
 scoreboard players set @s Azr_emerald 50
 scoreboard players set stage Azr_system 11
-scoreboard players set @s Azr_wave 10
+scoreboard players set wave Azr_system 10
+scoreboard players set @s AzrJoinWave 10
 
 clear @s
 function skyblock:azr/assets/items/weapons/stone_sword_normal

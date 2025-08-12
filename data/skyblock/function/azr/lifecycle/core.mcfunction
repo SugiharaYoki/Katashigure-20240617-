@@ -166,10 +166,10 @@ execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system 
     execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 53 run function skyblock:azr/assets/events/stage/stage_object
 
 #章节设置
-execute if entity @a[scores={Azr_wave=0..9}] run scoreboard players set chapter Azr_system 1
-execute if entity @a[scores={Azr_wave=10..22}] run scoreboard players set chapter Azr_system 2
-execute if entity @a[scores={Azr_wave=23..35}] run scoreboard players set chapter Azr_system 3
-execute if entity @a[scores={Azr_wave=36..}] run scoreboard players set chapter Azr_system 4
+execute if score wave Azr_system matches 0..9 run scoreboard players set chapter Azr_system 1
+execute if score wave Azr_system matches 10..22 run scoreboard players set chapter Azr_system 2
+execute if score wave Azr_system matches 23..35 run scoreboard players set chapter Azr_system 3
+execute if score wave Azr_system matches 36.. run scoreboard players set chapter Azr_system 4
 
 #AzrielNPC
 execute as @e[tag=AzrielNPC] at @s run rotate @s facing entity @p[distance=..3]

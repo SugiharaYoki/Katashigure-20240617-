@@ -113,7 +113,7 @@ execute if score stage_main_thread AzrTimerStack matches 704 run particle minecr
 execute if score stage_main_thread AzrTimerStack matches 704 run particle minecraft:end_rod -79459 53 -338 0.6 0.6 0.6 0.0 13
 execute if score stage_main_thread AzrTimerStack matches 704 run setblock -79538 24 -409 air
 
-execute if score stage_main_thread AzrTimerStack matches 704 run scoreboard players set @a[tag=azrPlayer] Azr_wave 47
+execute if score stage_main_thread AzrTimerStack matches 704 run scoreboard players set wave Azr_system 47
 execute if score stage_main_thread AzrTimerStack matches 709..1700 run scoreboard players set stage_main_thread AzrTimerStack 1600
 # execute if score stage_main_thread AzrTimerStack matches 704..1700 if entity @a[tag=azrPlayer,x=-79537,y=41,z=-338,distance=0..7] run scoreboard players set stage_main_thread AzrTimerStack 1701
 

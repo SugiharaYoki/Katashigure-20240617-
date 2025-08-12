@@ -64,7 +64,7 @@ execute if score stage_main_thread AzrTimerStack matches 70..73 unless entity @n
 #回秒
 execute if score stage_main_thread AzrTimerStack matches 70..74 if entity @e[tag=AzrielMob,tag=!AzrielDecMob] run scoreboard players set stage_main_thread AzrTimerStack 70
 execute if score stage_main_thread AzrTimerStack matches 73 run title @a[tag=azrShowDialog] actionbar {"text":"Wave Clear","color":"green"}
-execute if score stage_main_thread AzrTimerStack matches 74 run scoreboard players set @a[tag=azrPlayer] Azr_wave 4
+execute if score stage_main_thread AzrTimerStack matches 74 run scoreboard players set wave Azr_system 4
 #第二波
 execute if score stage_main_thread AzrTimerStack matches 83 run title @a[tag=azrShowDialog] actionbar {"text":"5","color":"yellow"}
 execute if score stage_main_thread AzrTimerStack matches 84 run title @a[tag=azrShowDialog] actionbar {"text":"4","color":"yellow"}
@@ -121,7 +121,7 @@ execute if score stage_main_thread AzrTimerStack matches 149..151 run playsound 
 execute if score stage_main_thread AzrTimerStack matches 145..148 if entity @e[tag=AzrielMob,tag=!AzrielDecMob] run scoreboard players set stage_main_thread AzrTimerStack 145
 execute if score stage_main_thread AzrTimerStack matches 152..159 unless entity @n[tag=AzrielMob] run scoreboard players set stage_main_thread AzrTimerStack 160
 execute if score stage_main_thread AzrTimerStack matches 160 run title @a[tag=azrShowDialog] actionbar {"text":"Wave Clear","color":"green"}
-execute if score stage_main_thread AzrTimerStack matches 160 run scoreboard players set @a[tag=azrPlayer] Azr_wave 5
+execute if score stage_main_thread AzrTimerStack matches 160 run scoreboard players set wave Azr_system 5
 #第三波
 execute if score stage_main_thread AzrTimerStack matches 165 run title @a[tag=azrShowDialog] actionbar {"text":"7","color":"yellow"}
 execute if score stage_main_thread AzrTimerStack matches 166 run title @a[tag=azrShowDialog] actionbar {"text":"6","color":"yellow"}
@@ -207,7 +207,7 @@ execute if score stage_main_thread AzrTimerStack matches 251 run playsound ambie
 execute if score stage_main_thread AzrTimerStack matches 251 run playsound ambient.crimson_forest.additions ambient @a[tag=azrShowDialog] -78000 100 0 1000
 execute if score stage_main_thread AzrTimerStack matches 251 run fill -79931 38 40 -79931 40 40 air destroy
 execute if score stage_main_thread AzrTimerStack matches 251 run fill -79935 43 34 -79935 45 34 air destroy
-execute if score stage_main_thread AzrTimerStack matches 251 run scoreboard players set @a[tag=azrPlayer] Azr_wave 6
+execute if score stage_main_thread AzrTimerStack matches 251 run scoreboard players set wave Azr_system 6
 execute if score stage_main_thread AzrTimerStack matches 251 run scoreboard players set stage Azr_system 7
 execute if score stage_main_thread AzrTimerStack matches 251 run advancement grant @a[tag=azrPlayer] only skyblock:azr/azr_stage3
 execute if score stage_main_thread AzrTimerStack matches 251 run tellraw @a[scores={Azr_skillPoints=..2}] {"text":"永久升级 - 初始绿宝石数量 +5","color":"light_purple"}

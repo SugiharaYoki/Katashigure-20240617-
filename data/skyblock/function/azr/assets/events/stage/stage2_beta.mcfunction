@@ -57,7 +57,7 @@ execute if score stage_main_thread AzrTimerStack matches 34 positioned -79922 38
 execute if score stage_main_thread AzrTimerStack matches 34 positioned -79940 38 14 run function skyblock:azr/assets/mobs/zombie_t1_6hp
 execute if score stage_main_thread AzrTimerStack matches 35..37 if entity @e[tag=AzrielMob,tag=!AzrielDecMob] run scoreboard players set stage_main_thread AzrTimerStack 35
 execute if score stage_main_thread AzrTimerStack matches 38 run title @a[tag=azrShowDialog] actionbar {"text":"Wave Clear","color":"green"}
-execute if score stage_main_thread AzrTimerStack matches 38 run scoreboard players set @a[tag=azrPlayer] Azr_wave 2
+execute if score stage_main_thread AzrTimerStack matches 38 run scoreboard players set wave Azr_system 2
 execute if score stage_main_thread AzrTimerStack matches 42 run title @a[tag=azrShowDialog] actionbar {"text":"5","color":"yellow"}
 execute if score stage_main_thread AzrTimerStack matches 43 run title @a[tag=azrShowDialog] actionbar {"text":"4","color":"yellow"}
 execute if score stage_main_thread AzrTimerStack matches 44 run title @a[tag=azrShowDialog] actionbar {"text":"3","color":"red"}
@@ -128,7 +128,7 @@ execute if score stage_main_thread AzrTimerStack matches 99 if score playerCount
 execute if score stage_main_thread AzrTimerStack matches 99 run clone -79927 38 0 -79927 38 0 -79934 38 18 replace move
 execute if score stage_main_thread AzrTimerStack matches 99 run particle minecraft:end_rod -79927 39 0 0.6 0.6 0.6 0.0 13
 execute if score stage_main_thread AzrTimerStack matches 99 run particle minecraft:end_rod -79934 39 18 0.6 0.6 0.6 0.0 13
-execute if score stage_main_thread AzrTimerStack matches 99 run scoreboard players set @a[tag=azrPlayer] Azr_wave 3
+execute if score stage_main_thread AzrTimerStack matches 99 run scoreboard players set wave Azr_system 3
 execute if score stage_main_thread AzrTimerStack matches 99 run scoreboard players set stage Azr_system 5
 execute if score stage_main_thread AzrTimerStack matches 99 run tellraw @a[scores={Azr_skillPoints=..1}] {"text":"永久升级 - 木剑/斧（尸化）将拥有耐久I的附魔效果","color":"light_purple"}
 execute if score stage_main_thread AzrTimerStack matches 99 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..1}] Azr_skillPoints 2

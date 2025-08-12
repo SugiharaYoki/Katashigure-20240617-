@@ -376,10 +376,10 @@ execute if score stage_main_thread AzrTimerStack matches 1135..1390 if score #rn
 execute if score stage_main_thread AzrTimerStack matches 1135..1390 if score #rng2 Azr_system matches 2 if score #rng9 Azr_system matches 7 if score #rng7 Azr_system matches 3 as @a[tag=azrPlayer] at @s align xyz positioned ~0.5 ~ ~0.5 run summon marker ~-2 ~ ~-2 {Tags:["57534"],Invulnerable:1b}
 execute if score stage_main_thread AzrTimerStack matches 1135..1390 if score #rng2 Azr_system matches 2 if score #rng9 Azr_system matches 8 if score #rng7 Azr_system matches 3 as @a[tag=azrPlayer] at @s align xyz positioned ~0.5 ~ ~0.5 run summon marker ~ ~ ~-2 {Tags:["57534"],Invulnerable:1b}
 execute if score stage_main_thread AzrTimerStack matches 1135..1390 if score #rng2 Azr_system matches 2 if score #rng9 Azr_system matches 9 if score #rng7 Azr_system matches 3 as @a[tag=azrPlayer] at @s align xyz positioned ~0.5 ~ ~0.5 run summon marker ~2 ~ ~-2 {Tags:["57534"],Invulnerable:1b}
-execute if score stage_main_thread AzrTimerStack matches 1135..1397 as @e[tag=57534,type=marker] at @s run scoreboard players add @s EntityTimer 1
-execute if score stage_main_thread AzrTimerStack matches 1135..1397 as @e[tag=57534,type=marker,scores={EntityTimer=1}] at @s run particle minecraft:dragon_breath ~ ~3.5 ~ 0.1 5 0.1 0.01 50
-execute if score stage_main_thread AzrTimerStack matches 1135..1397 as @e[tag=57534,type=marker,scores={EntityTimer=5}] at @s run summon minecraft:evoker_fangs
-execute if score stage_main_thread AzrTimerStack matches 1135..1397 as @e[tag=57534,type=marker,scores={EntityTimer=6}] at @s run kill @s
+execute if score stage_main_thread AzrTimerStack matches 1135..1397 as @e[tag=57534,type=marker] at @s run scoreboard players add @s AzrEntityTimer 1
+execute if score stage_main_thread AzrTimerStack matches 1135..1397 as @e[tag=57534,type=marker,scores={AzrEntityTimer=1}] at @s run particle minecraft:dragon_breath ~ ~3.5 ~ 0.1 5 0.1 0.01 50
+execute if score stage_main_thread AzrTimerStack matches 1135..1397 as @e[tag=57534,type=marker,scores={AzrEntityTimer=5}] at @s run summon minecraft:evoker_fangs
+execute if score stage_main_thread AzrTimerStack matches 1135..1397 as @e[tag=57534,type=marker,scores={AzrEntityTimer=6}] at @s run kill @s
 
 
 #地图初始化刷新
@@ -551,7 +551,7 @@ execute if score stage_main_thread AzrTimerStack matches 1690 positioned -79771 
 execute if score stage_main_thread AzrTimerStack matches 1691..2940 positioned -79728 28 -191 as @a[tag=azrPlayer,dx=40,dy=50,dz=50] at @s run spawnpoint @s -79720 50 -162
 
 execute if score stage_main_thread AzrTimerStack matches 1691 run scoreboard players set stage Azr_system 43
-execute if score stage_main_thread AzrTimerStack matches 1691 run scoreboard players set @a[tag=azrPlayer] Azr_wave 35
+execute if score stage_main_thread AzrTimerStack matches 1691 run scoreboard players set wave Azr_system 35
 execute if score stage_main_thread AzrTimerStack matches 1691 run kill @e[tag=AzrielTempSpec1]
 execute if score stage_main_thread AzrTimerStack matches 1691 run kill @e[tag=AzrielTempSpec2]
 execute if score stage_main_thread AzrTimerStack matches 1691 run kill @e[tag=AzrielTempSpec3]
@@ -684,7 +684,7 @@ execute if score stage_main_thread AzrTimerStack matches 3051..3053 run scoreboa
 
 execute if score stage_main_thread AzrTimerStack matches 3051..3053 positioned -79753 59 -210 unless entity @a[tag=azrPlayer,distance=5..] run scoreboard players set stage_main_thread AzrTimerStack 4142
 
-execute if score stage_main_thread AzrTimerStack matches 4142 run scoreboard players set @a[tag=azrPlayer] Azr_wave 36
+execute if score stage_main_thread AzrTimerStack matches 4142 run scoreboard players set wave Azr_system 36
 execute if score stage_main_thread AzrTimerStack matches 4142 run title @a[tag=azrShowDialog] actionbar {"text":"Chapter Clear","color":"gold"}
 execute if score stage_main_thread AzrTimerStack matches 4142 run clone -79844 48 -127 -79844 48 -127 -79758 44 -187 replace move
 execute if score stage_main_thread AzrTimerStack matches 4142 unless block -79758 44 -187 white_shulker_box run setblock -79758 44 -187 white_shulker_box

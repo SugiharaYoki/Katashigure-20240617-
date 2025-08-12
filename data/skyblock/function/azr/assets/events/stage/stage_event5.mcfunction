@@ -91,7 +91,7 @@ execute if score stage_main_thread AzrTimerStack matches 150 run fill -79891 44 
 execute if score stage_main_thread AzrTimerStack matches 150 run fill -79881 42 -60 -79881 44 -61 minecraft:air destroy
 execute if score stage_main_thread AzrTimerStack matches 150 run setblock -79870 42 -43 purple_candle[lit=true]
 execute if score stage_main_thread AzrTimerStack matches 150 run setblock -79870 40 -49 minecraft:redstone_block
-execute if score stage_main_thread AzrTimerStack matches 150 run scoreboard players set @a[tag=azrPlayer] Azr_wave 25
+execute if score stage_main_thread AzrTimerStack matches 150 run scoreboard players set wave Azr_system 25
 execute if score stage_main_thread AzrTimerStack matches 150 run advancement grant @a[tag=azrPlayer] only skyblock:azr/azr_stage9_event1
 execute if score stage_main_thread AzrTimerStack matches 155 run scoreboard players set stage Azr_system 28
 execute if score stage_main_thread AzrTimerStack matches 155 run summon witch -79860 44 -66 {PersistenceRequired:1b,Tags:["AzrielMob","AzrielDecMob"],DeathLootTable:"skyblock:azriel_witch_tier1",Health:9.0f,CustomName:'"女巫"',CanPickUpLoot:0b,attributes:[{id:"max_health",base:9.0d},{id:"movement_speed",base:0.24d}]}

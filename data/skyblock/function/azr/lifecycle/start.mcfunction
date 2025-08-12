@@ -4,7 +4,7 @@
 #scoreboard objectives add Perm_PersonSHD dummy
 
 #初始化临时记分板 这些记分板将在游戏结束后销毁
-scoreboard objectives add Azr_wave dummy
+scoreboard objectives add AzrJoinWave dummy
 scoreboard objectives add Azr_forceDeath dummy
 scoreboard objectives add Azr_isDead deathCount
 scoreboard objectives add Azr_emerald dummy
@@ -22,7 +22,7 @@ scoreboard objectives add Azr_Shop_rng10 dummy
 scoreboard objectives add Azr_Shop_rng11 dummy
 scoreboard objectives add Azr_Shop_rng12 dummy
 scoreboard objectives add Azr_Shop_rng13 dummy
-scoreboard objectives add melonCount dummy
+scoreboard objectives add AzrMelonCount dummy
 scoreboard objectives add AzrTimerStack dummy
 scoreboard objectives add AzrSlotRecord dummy
 scoreboard objectives add AzrSlotRecord_temp dummy

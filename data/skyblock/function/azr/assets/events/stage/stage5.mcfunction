@@ -173,7 +173,7 @@ execute if score stage_main_thread AzrTimerStack matches 64 positioned -79940 38
 execute if score stage_main_thread AzrTimerStack matches 65..68 unless entity @n[tag=AzrielMob] run scoreboard players set stage_main_thread AzrTimerStack 69
 execute if score stage_main_thread AzrTimerStack matches 65..70 if entity @e[tag=AzrielMob,tag=!AzrielDecMob] run scoreboard players set stage_main_thread AzrTimerStack 65
 execute if score stage_main_thread AzrTimerStack matches 68 run title @a[tag=azrShowDialog] actionbar {"text":"Wave Clear","color":"green"}
-execute if score stage_main_thread AzrTimerStack matches 68 run scoreboard players set @a[tag=azrPlayer] Azr_wave 11
+execute if score stage_main_thread AzrTimerStack matches 68 run scoreboard players set wave Azr_system 11
 execute if score stage_main_thread AzrTimerStack matches 73 run title @a[tag=azrShowDialog] actionbar {"text":"7","color":"yellow"}
 execute if score stage_main_thread AzrTimerStack matches 74 run title @a[tag=azrShowDialog] actionbar {"text":"6","color":"yellow"}
 execute if score stage_main_thread AzrTimerStack matches 75 run title @a[tag=azrShowDialog] actionbar {"text":"5","color":"yellow"}
@@ -339,7 +339,7 @@ execute if score stage_main_thread AzrTimerStack matches 158..161 if score #rng4
 
 execute if score stage_main_thread AzrTimerStack matches 161 run fill -79944 34 145 -79944 32 145 minecraft:purple_stained_glass
 execute if score stage_main_thread AzrTimerStack matches 161 run fill -79935 9 147 -79935 8 147 minecraft:quartz_pillar
-execute if score stage_main_thread AzrTimerStack matches 161 run scoreboard players set @a[tag=azrPlayer] Azr_wave 12
+execute if score stage_main_thread AzrTimerStack matches 161 run scoreboard players set wave Azr_system 12
 execute if score stage_main_thread AzrTimerStack matches 161 run scoreboard players set stage Azr_system 14
 execute if score stage_main_thread AzrTimerStack matches 161 run tellraw @a[scores={Azr_skillPoints=..5}] {"text":"永久升级 - 初始绿宝石数量 +5","color":"light_purple"}
 execute if score stage_main_thread AzrTimerStack matches 161 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..5}] Azr_skillPoints 6

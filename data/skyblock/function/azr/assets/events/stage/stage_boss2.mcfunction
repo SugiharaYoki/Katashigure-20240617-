@@ -428,7 +428,7 @@ execute as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run function skyblo
     execute if score tick_main_thread AzrTimerStack matches 6642 as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run playsound minecraft:entity.illusioner.mirror_move hostile @a[tag=azrShowDialog] ~ ~ ~ 100 0.7
     execute if score tick_main_thread AzrTimerStack matches 6643.. as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run tp @s ~100 ~ ~
     #finalize stage
-    execute if score tick_main_thread AzrTimerStack matches 6720 run scoreboard players set @a[tag=azrPlayer] Azr_wave 23
+    execute if score tick_main_thread AzrTimerStack matches 6720 run scoreboard players set wave Azr_system 23
     execute if score tick_main_thread AzrTimerStack matches 6760 as @a[tag=azrShowDialog] at @s run playsound minecraft:ui.toast.challenge_complete master @s ~ ~ ~ 2 0.9
     execute if score tick_main_thread AzrTimerStack matches 6760 run title @a[tag=azrShowDialog] actionbar {"text":"Chapter Clear","color":"gold"}
     execute if score tick_main_thread AzrTimerStack matches 6760 run tellraw @a[tag=azrShowDialog] {"text":"「生命手册」已升级","color":"green"}
