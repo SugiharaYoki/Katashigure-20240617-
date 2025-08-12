@@ -4,7 +4,8 @@ execute if score SEA_ch6_event rng5 matches ..400 as @n[type=villager,tag=SEAisc
 execute if score SEA_ch6_event rng5 matches ..400 as @n[type=pillager,tag=SEApillager_npc1,x=90100,y=100,z=100,distance=..250] at @s if entity @a[tag=SEAPT,distance=0..3.4] run function skyblock:sea/e/ch5/event_array_building_pillagernpc
 
 execute if score SEA_ch6_event rng5 matches ..150 unless entity @n[tag=SEAfiona] positioned 90126 122 23 run function skyblock:sea/m/unique/npc_fiona
-execute positioned 90126 122 23 run kill @e[type=witch,distance=0..200]
+execute positioned 90126 122 23 as @e[tag=SEAfiona,type=witch,distance=0..200] at @s run tp @s ~ ~-500 ~
+execute positioned 90126 122 23 run kill @e[tag=SEAfiona,type=witch]
 
 #菲尔娜技能组
 execute if score SEA_ch6_event rng5 matches ..400 if block 90144 161 124 air as @n[tag=SEAfiona_laser_attacking,x=90000,y=100,z=0,distance=0..1200] at @s run function skyblock:sea/e/ch5/fiona_attack_laser
