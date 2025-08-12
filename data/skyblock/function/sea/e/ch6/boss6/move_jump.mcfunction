@@ -21,6 +21,19 @@ execute if score @s[scores={rng5=8}] rng4 matches 2 at @s positioned 0.0 0 0.0 r
 execute if score @s[scores={rng5=1..8}] rng4 matches 2 at @s run playsound entity.breeze.jump hostile @a ~ ~ ~ 1 0.9
 execute if score @s[scores={rng5=1..8}] rng4 matches 2 at @s run data modify entity @s Motion set from entity @n[type=marker,tag=SEA_boss6_marker] Pos
 execute if score @s[scores={rng5=1..8}] rng4 matches 2 at @s run fill ~1 ~ ~1 ~-1 ~ ~-1 air replace fire
+execute if score @s[scores={rng5=1..8}] rng4 matches 2 at @s positioned ~3 ~ ~ if block ~ ~ ~ fire run summon marker ~ ~ ~ {Tags:["SEA_boss6_fire_blast"]}
+execute if score @s[scores={rng5=1..8}] rng4 matches 2 at @s positioned ~-3 ~ ~ if block ~ ~ ~ fire run summon marker ~ ~ ~ {Tags:["SEA_boss6_fire_blast"]}
+execute if score @s[scores={rng5=1..8}] rng4 matches 2 at @s positioned ~ ~ ~3 if block ~ ~ ~ fire run summon marker ~ ~ ~ {Tags:["SEA_boss6_fire_blast"]}
+execute if score @s[scores={rng5=1..8}] rng4 matches 2 at @s positioned ~ ~ ~-3 if block ~ ~ ~ fire run summon marker ~ ~ ~ {Tags:["SEA_boss6_fire_blast"]}
+execute if score @s[scores={rng5=1..8}] rng4 matches 2 at @s positioned ~3 ~ ~3 if block ~ ~ ~ fire run summon marker ~ ~ ~ {Tags:["SEA_boss6_fire_blast"]}
+execute if score @s[scores={rng5=1..8}] rng4 matches 2 at @s positioned ~3 ~ ~-3 if block ~ ~ ~ fire run summon marker ~ ~ ~ {Tags:["SEA_boss6_fire_blast"]}
+execute if score @s[scores={rng5=1..8}] rng4 matches 2 at @s positioned ~-3 ~ ~3 if block ~ ~ ~ fire run summon marker ~ ~ ~ {Tags:["SEA_boss6_fire_blast"]}
+execute if score @s[scores={rng5=1..8}] rng4 matches 2 at @s positioned ~-3 ~ ~-3 if block ~ ~ ~ fire run summon marker ~ ~ ~ {Tags:["SEA_boss6_fire_blast"]}
+execute if score @s[scores={rng5=1..8}] rng4 matches 2..7 as @n[tag=SEA_boss6_fire_blast,type=marker] at @s run playsound minecraft:block.lava.pop block @a ~ ~ ~ 0.8 0.7
+execute if score @s[scores={rng5=1..8}] rng4 matches 2..7 as @n[tag=SEA_boss6_fire_blast,type=marker] at @s run playsound minecraft:entity.firework_rocket.blast block @a ~ ~ ~ 1 0.5
+execute if score @s[scores={rng5=1..8}] rng4 matches 2..7 as @n[tag=SEA_boss6_fire_blast,type=marker] at @s run particle minecraft:lava ~ ~ ~ 0.6 0 0.6 9 100
+execute if score @s[scores={rng5=1..8}] rng4 matches 2..7 as @n[tag=SEA_boss6_fire_blast,type=marker] at @s as @a[tag=SEAPT,distance=..1.3] at @s run damage @s 2 in_fire
+execute if score @s[scores={rng5=1..8}] rng4 matches 8 as @e[tag=SEA_boss6_fire_blast,type=marker] at @s run kill @s
 
 execute if score @s rng4 matches 2 at @s positioned 90142 134 26 as @n[type=marker,tag=SEA_boss6_marker] at @s run kill @s
 
