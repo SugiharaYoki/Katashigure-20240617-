@@ -1,6 +1,6 @@
 #execute if score tick_main_thread AzrTimerStack matches 1..20 ] if entity @a[tag=AZRPT,x=-79466,y=80,z=-4] run scoreboard players set @s SeGa_StandLastQ 1
 #execute if score tick_main_thread AzrTimerStack matches 1..20 ] if entity @a[tag=AZRPT,x=-79466,y=80,z=-4] run scoreboard players set @s SeGa_StandLastQ 119
-execute as @e[tag=AzrielBossA,limit=1,scores={EntityTimer=0..}] at @s run scoreboard players add @s EntityTimer 1
+execute as @e[tag=AzrielBossA,limit=1,scores={AzrEntityTimer=0..}] at @s run scoreboard players add @s AzrEntityTimer 1
 
 execute if score tick_main_thread AzrTimerStack matches 1..20 run scoreboard players set tick_main_thread AzrTimerStack 118
 
@@ -288,28 +288,28 @@ execute if score Azr_Rec Azr_system matches 3 if score tick_main_thread AzrTimer
 execute if score Azr_Rec Azr_system matches 4 if score tick_main_thread AzrTimerStack matches 2643..8000 if entity @e[tag=AzrielBoss4,limit=1] as @r[tag=azrPlayer] at @s positioned ~ ~20 ~ run function skyblock:azr/assets/events/stage/boss4/rec4b
 execute if score Azr_Rec Azr_system matches 5 if score tick_main_thread AzrTimerStack matches 2643..8000 if entity @e[tag=AzrielBoss4,limit=1] as @r[tag=azrPlayer] at @s positioned ~ ~20 ~ run function skyblock:azr/assets/events/stage/boss4/rec4b2
 
-execute if score tick_main_thread AzrTimerStack matches 2088..2289 as @e[tag=AzrielBossA,limit=1] at @s run scoreboard players set @s EntityTimer 50
-scoreboard players set @e[tag=AzrielBossA,limit=1,scores={EntityTimer=80..90}] EntityTimer 81
-execute if score tick_main_thread AzrTimerStack matches 2690..8000 if score #rng15 Azr_system matches 1..5 if score #rng3 Azr_system matches 1 if score #rng2 Azr_system matches 2 if score #rng6 Azr_system matches 4 as @e[tag=AzrielBossA,limit=1] at @s if entity @e[tag=AzrielBoss4,distance=0..10] run scoreboard players set @s EntityTimer 20
-execute if score tick_main_thread AzrTimerStack matches 2690..8000 if score #rng7 Azr_System matches 1..3 as @e[tag=AzrielBossA,limit=1,scores={EntityTimer=21}] at @s run playsound minecraft:entity.illusioner.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 100 0.6
-execute if score tick_main_thread AzrTimerStack matches 2690..8000 if score #rng7 Azr_System matches 1..3 as @e[tag=AzrielBossA,limit=1,scores={EntityTimer=21}] at @s run tellraw @a[tag=azrShowDialog] {"text":"权之残影：","color":"aqua"}
-execute if score tick_main_thread AzrTimerStack matches 2690..8000 if score #rng7 Azr_System matches 1 as @e[tag=AzrielBossA,limit=1,scores={EntityTimer=21}] at @s run tellraw @a[tag=azrShowDialog] {"text":"“汝之对手乃吾！”","color":"white"}
-execute if score tick_main_thread AzrTimerStack matches 2690..8000 if score #rng7 Azr_System matches 2 as @e[tag=AzrielBossA,limit=1,scores={EntityTimer=21}] at @s run tellraw @a[tag=azrShowDialog] {"text":"“接招！！”","color":"white"}
-execute if score tick_main_thread AzrTimerStack matches 2690..8000 if score #rng7 Azr_System matches 3 as @e[tag=AzrielBossA,limit=1,scores={EntityTimer=21}] at @s run tellraw @a[tag=azrShowDialog] {"text":"“休想伤害吾身后的人类！”","color":"white"}
-execute if score tick_main_thread AzrTimerStack matches 2690..8000 as @e[tag=AzrielBossA,limit=1,scores={EntityTimer=29}] at @s run tp @s @e[tag=AzrielBoss4,limit=1]
-execute if score tick_main_thread AzrTimerStack matches 2690..8000 as @e[tag=AzrielBossA,limit=1,scores={EntityTimer=34}] at @s run particle minecraft:sweep_attack ~ ~1.0 ~ 4.0 0.2 2.2 0.01 20
-execute if score tick_main_thread AzrTimerStack matches 2690..8000 as @e[tag=AzrielBossA,limit=1,scores={EntityTimer=34}] at @s run particle minecraft:crit ~ ~1.0 ~ 2.0 0.6 2.0 0.01 20
-execute if score tick_main_thread AzrTimerStack matches 2690..8000 as @e[tag=AzrielBossA,limit=1,scores={EntityTimer=34}] at @s run playsound minecraft:entity.player.attack.sweep master @a ~ ~ ~ 0.65 0.7
-execute if score tick_main_thread AzrTimerStack matches 2690..8000 as @e[tag=AzrielBossA,limit=1,scores={EntityTimer=34}] at @s as @e[tag=AzrielBoss4,limit=1,distance=0..4] at @s run effect give @s instant_damage 1 4
-execute if score tick_main_thread AzrTimerStack matches 2690..8000 as @e[tag=AzrielBossA,limit=1,scores={EntityTimer=34}] at @s as @e[tag=AzrielBoss4,limit=1,distance=0..4] at @s run tp ^ ^ ^-0.8
+execute if score tick_main_thread AzrTimerStack matches 2088..2289 as @e[tag=AzrielBossA,limit=1] at @s run scoreboard players set @s AzrEntityTimer 50
+scoreboard players set @e[tag=AzrielBossA,limit=1,scores={AzrEntityTimer=80..90}] AzrEntityTimer 81
+execute if score tick_main_thread AzrTimerStack matches 2690..8000 if score #rng15 Azr_system matches 1..5 if score #rng3 Azr_system matches 1 if score #rng2 Azr_system matches 2 if score #rng6 Azr_system matches 4 as @e[tag=AzrielBossA,limit=1] at @s if entity @e[tag=AzrielBoss4,distance=0..10] run scoreboard players set @s AzrEntityTimer 20
+execute if score tick_main_thread AzrTimerStack matches 2690..8000 if score #rng7 Azr_System matches 1..3 as @e[tag=AzrielBossA,limit=1,scores={AzrEntityTimer=21}] at @s run playsound minecraft:entity.illusioner.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 100 0.6
+execute if score tick_main_thread AzrTimerStack matches 2690..8000 if score #rng7 Azr_System matches 1..3 as @e[tag=AzrielBossA,limit=1,scores={AzrEntityTimer=21}] at @s run tellraw @a[tag=azrShowDialog] {"text":"权之残影：","color":"aqua"}
+execute if score tick_main_thread AzrTimerStack matches 2690..8000 if score #rng7 Azr_System matches 1 as @e[tag=AzrielBossA,limit=1,scores={AzrEntityTimer=21}] at @s run tellraw @a[tag=azrShowDialog] {"text":"“汝之对手乃吾！”","color":"white"}
+execute if score tick_main_thread AzrTimerStack matches 2690..8000 if score #rng7 Azr_System matches 2 as @e[tag=AzrielBossA,limit=1,scores={AzrEntityTimer=21}] at @s run tellraw @a[tag=azrShowDialog] {"text":"“接招！！”","color":"white"}
+execute if score tick_main_thread AzrTimerStack matches 2690..8000 if score #rng7 Azr_System matches 3 as @e[tag=AzrielBossA,limit=1,scores={AzrEntityTimer=21}] at @s run tellraw @a[tag=azrShowDialog] {"text":"“休想伤害吾身后的人类！”","color":"white"}
+execute if score tick_main_thread AzrTimerStack matches 2690..8000 as @e[tag=AzrielBossA,limit=1,scores={AzrEntityTimer=29}] at @s run tp @s @e[tag=AzrielBoss4,limit=1]
+execute if score tick_main_thread AzrTimerStack matches 2690..8000 as @e[tag=AzrielBossA,limit=1,scores={AzrEntityTimer=34}] at @s run particle minecraft:sweep_attack ~ ~1.0 ~ 4.0 0.2 2.2 0.01 20
+execute if score tick_main_thread AzrTimerStack matches 2690..8000 as @e[tag=AzrielBossA,limit=1,scores={AzrEntityTimer=34}] at @s run particle minecraft:crit ~ ~1.0 ~ 2.0 0.6 2.0 0.01 20
+execute if score tick_main_thread AzrTimerStack matches 2690..8000 as @e[tag=AzrielBossA,limit=1,scores={AzrEntityTimer=34}] at @s run playsound minecraft:entity.player.attack.sweep master @a ~ ~ ~ 0.65 0.7
+execute if score tick_main_thread AzrTimerStack matches 2690..8000 as @e[tag=AzrielBossA,limit=1,scores={AzrEntityTimer=34}] at @s as @e[tag=AzrielBoss4,limit=1,distance=0..4] at @s run effect give @s instant_damage 1 4
+execute if score tick_main_thread AzrTimerStack matches 2690..8000 as @e[tag=AzrielBossA,limit=1,scores={AzrEntityTimer=34}] at @s as @e[tag=AzrielBoss4,limit=1,distance=0..4] at @s run tp ^ ^ ^-0.8
 
-execute if score tick_main_thread AzrTimerStack matches 2690..3000 if score #rng15 Azr_system matches 6..9 if score #rng3 Azr_system matches 1 if score #rng6 Azr_system matches 4 unless entity @e[tag=AzrielBossA,limit=1] run scoreboard players set @s EntityTimer 0
-execute if score tick_main_thread AzrTimerStack matches 2690..8000 if score #rng15 Azr_system matches 6..9 if score #rng3 Azr_system matches 1 if score #rng6 Azr_system matches 4 as @e[tag=AzrielBossA,limit=1] at @s if entity @e[tag=AzrielBoss4,distance=10..] run scoreboard players set @s EntityTimer 120
-execute if score tick_main_thread AzrTimerStack matches 2690..8000 if score #rng7 Azr_System matches 1..4 as @e[tag=AzrielBossA,limit=1,scores={EntityTimer=121}] at @s run playsound minecraft:entity.illusioner.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 100 0.6
-execute if score tick_main_thread AzrTimerStack matches 2690..8000 if score #rng7 Azr_System matches 1..4 as @e[tag=AzrielBossA,limit=1,scores={EntityTimer=121}] at @s run tellraw @a[tag=azrShowDialog] {"text":"权之残影：","color":"aqua"}
-execute if score tick_main_thread AzrTimerStack matches 2690..8000 if score #rng7 Azr_System matches 1..2 as @e[tag=AzrielBossA,limit=1,scores={EntityTimer=121}] at @s run tellraw @a[tag=azrShowDialog] {"text":"“看箭，此乃神罚！！”","color":"white"}
-execute if score tick_main_thread AzrTimerStack matches 2690..8000 if score #rng7 Azr_System matches 3..4 as @e[tag=AzrielBossA,limit=1,scores={EntityTimer=121}] at @s run tellraw @a[tag=azrShowDialog] {"text":"“吾将降下制裁之箭，不要被误射了！”","color":"white"}
-execute if score tick_main_thread AzrTimerStack matches 2690..8000 as @e[tag=AzrielBossA,limit=1,scores={EntityTimer=129..146}] at @s run function skyblock:azr/assets/events/stage/boss4/zaneiarrow
+execute if score tick_main_thread AzrTimerStack matches 2690..3000 if score #rng15 Azr_system matches 6..9 if score #rng3 Azr_system matches 1 if score #rng6 Azr_system matches 4 unless entity @e[tag=AzrielBossA,limit=1] run scoreboard players set @s AzrEntityTimer 0
+execute if score tick_main_thread AzrTimerStack matches 2690..8000 if score #rng15 Azr_system matches 6..9 if score #rng3 Azr_system matches 1 if score #rng6 Azr_system matches 4 as @e[tag=AzrielBossA,limit=1] at @s if entity @e[tag=AzrielBoss4,distance=10..] run scoreboard players set @s AzrEntityTimer 120
+execute if score tick_main_thread AzrTimerStack matches 2690..8000 if score #rng7 Azr_System matches 1..4 as @e[tag=AzrielBossA,limit=1,scores={AzrEntityTimer=121}] at @s run playsound minecraft:entity.illusioner.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 100 0.6
+execute if score tick_main_thread AzrTimerStack matches 2690..8000 if score #rng7 Azr_System matches 1..4 as @e[tag=AzrielBossA,limit=1,scores={AzrEntityTimer=121}] at @s run tellraw @a[tag=azrShowDialog] {"text":"权之残影：","color":"aqua"}
+execute if score tick_main_thread AzrTimerStack matches 2690..8000 if score #rng7 Azr_System matches 1..2 as @e[tag=AzrielBossA,limit=1,scores={AzrEntityTimer=121}] at @s run tellraw @a[tag=azrShowDialog] {"text":"“看箭，此乃神罚！！”","color":"white"}
+execute if score tick_main_thread AzrTimerStack matches 2690..8000 if score #rng7 Azr_System matches 3..4 as @e[tag=AzrielBossA,limit=1,scores={AzrEntityTimer=121}] at @s run tellraw @a[tag=azrShowDialog] {"text":"“吾将降下制裁之箭，不要被误射了！”","color":"white"}
+execute if score tick_main_thread AzrTimerStack matches 2690..8000 as @e[tag=AzrielBossA,limit=1,scores={AzrEntityTimer=129..146}] at @s run function skyblock:azr/assets/events/stage/boss4/zaneiarrow
 
 
 execute if score tick_main_thread AzrTimerStack matches 2581 run data modify entity @e[tag=AzrielBossA,limit=1] NoAI set value 0b

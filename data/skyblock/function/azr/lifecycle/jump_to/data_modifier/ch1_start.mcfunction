@@ -22,7 +22,7 @@ scoreboard objectives add Azr_Shop_rng10 dummy
 scoreboard objectives add Azr_Shop_rng11 dummy
 scoreboard objectives add Azr_Shop_rng12 dummy
 scoreboard objectives add Azr_Shop_rng13 dummy
-scoreboard objectives add melonCount dummy
+scoreboard objectives add AzrMelonCount dummy
 scoreboard objectives add AzrTimerStack dummy
 scoreboard objectives add AzrSlotRecord dummy
 scoreboard objectives add AzrSlotRecord_temp dummy

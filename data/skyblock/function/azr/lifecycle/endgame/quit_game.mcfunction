@@ -1,4 +1,5 @@
 #处理玩家数据
+execute store result score @s AzrExtraMelon run clear @s glistering_melon_slice
 function skyblock:api_quit_any_game
 tag @s remove azrPlayer
 tag @s remove azrShopOnUse
@@ -23,6 +24,7 @@ function skyblock:azr/system/player/refresh_bossbar
 scoreboard players operation @s Perm_PersonSHD += @s Azr_wave
 tellraw @s [{"text":" 获得影之石：","color":"white"},{"score":{"name":"@s","objective":"Azr_wave"},"color":"yellow"}]
 tellraw @s [{"text":" 现在持有的影之石：","color":"white"},{"score":{"name":"@s","objective":"Perm_PersonSHD"},"color":"yellow"}]
+tellraw @s [{"text":" 继承到下一局的瓜片：","color":"white"},{"score":{"name":"@s","objective":"AzrExtraMelon"},"color":"yellow"}]
 #更新战绩
 execute unless score @s SeGa_StandLastBH matches -2147483648..2147483647 run scoreboard players set @s SeGa_StandLastBH 0
 execute if score @s SeGa_StandLastBH < @s Azr_wave run scoreboard players operation @s SeGa_StandLastBH = @s Azr_wave

@@ -49,14 +49,14 @@ execute if score stage_main_thread AzrTimerStack matches 1700..2890 if score #rn
 execute if score stage_main_thread AzrTimerStack matches 1700..2890 if score #rng2 Azr_system matches 1 if score #rng4 Azr_system matches 1 if score #rng8 Azr_system matches 8 as @s at @s align xyz positioned ~0.5 ~ ~0.5 run summon armor_stand ~-1 ~ ~ {Tags:["57534a"],Invulnerable:1b,Invisible:1b,NoGravity:1b}
 execute if score stage_main_thread AzrTimerStack matches 1700..2890 if score #rng2 Azr_system matches 1 if score #rng4 Azr_system matches 1 if score #rng8 Azr_system matches 8 as @s at @s align xyz positioned ~0.5 ~ ~0.5 run summon armor_stand ~-1 ~ ~1 {Tags:["57534a"],Invulnerable:1b,Invisible:1b,NoGravity:1b}
 execute if score stage_main_thread AzrTimerStack matches 1700..2890 if score #rng2 Azr_system matches 1 if score #rng4 Azr_system matches 1 if score #rng8 Azr_system matches 8 as @s at @s align xyz positioned ~0.5 ~ ~0.5 run summon armor_stand ~ ~ ~-1 {Tags:["57534a"],Invulnerable:1b,Invisible:1b,NoGravity:1b}
-execute if score stage_main_thread AzrTimerStack matches 1700.. as @e[tag=57534a,type=armor_stand] at @s run scoreboard players add @s EntityTimer 1
-execute if score stage_main_thread AzrTimerStack matches 1700.. as @e[tag=57534a,type=armor_stand,scores={EntityTimer=1}] at @s run particle minecraft:dragon_breath ~ ~3.5 ~ 0.1 6 0.1 0.01 60
-execute if score stage_main_thread AzrTimerStack matches 1700.. as @e[tag=57534a,type=armor_stand,scores={EntityTimer=5}] at @s run summon minecraft:evoker_fangs ~ ~4 ~
-execute if score stage_main_thread AzrTimerStack matches 1700.. as @e[tag=57534a,type=armor_stand,scores={EntityTimer=5}] at @s run summon minecraft:evoker_fangs ~ ~3 ~
-execute if score stage_main_thread AzrTimerStack matches 1700.. as @e[tag=57534a,type=armor_stand,scores={EntityTimer=5}] at @s run summon minecraft:evoker_fangs ~ ~2 ~
-execute if score stage_main_thread AzrTimerStack matches 1700.. as @e[tag=57534a,type=armor_stand,scores={EntityTimer=5}] at @s run summon minecraft:evoker_fangs ~ ~1 ~
-execute if score stage_main_thread AzrTimerStack matches 1700.. as @e[tag=57534a,type=armor_stand,scores={EntityTimer=5}] at @s run summon minecraft:evoker_fangs ~ ~0 ~
-execute if score stage_main_thread AzrTimerStack matches 1700.. as @e[tag=57534a,type=armor_stand,scores={EntityTimer=6}] at @s run kill @s
+execute if score stage_main_thread AzrTimerStack matches 1700.. as @e[tag=57534a,type=armor_stand] at @s run scoreboard players add @s AzrEntityTimer 1
+execute if score stage_main_thread AzrTimerStack matches 1700.. as @e[tag=57534a,type=armor_stand,scores={AzrEntityTimer=1}] at @s run particle minecraft:dragon_breath ~ ~3.5 ~ 0.1 6 0.1 0.01 60
+execute if score stage_main_thread AzrTimerStack matches 1700.. as @e[tag=57534a,type=armor_stand,scores={AzrEntityTimer=5}] at @s run summon minecraft:evoker_fangs ~ ~4 ~
+execute if score stage_main_thread AzrTimerStack matches 1700.. as @e[tag=57534a,type=armor_stand,scores={AzrEntityTimer=5}] at @s run summon minecraft:evoker_fangs ~ ~3 ~
+execute if score stage_main_thread AzrTimerStack matches 1700.. as @e[tag=57534a,type=armor_stand,scores={AzrEntityTimer=5}] at @s run summon minecraft:evoker_fangs ~ ~2 ~
+execute if score stage_main_thread AzrTimerStack matches 1700.. as @e[tag=57534a,type=armor_stand,scores={AzrEntityTimer=5}] at @s run summon minecraft:evoker_fangs ~ ~1 ~
+execute if score stage_main_thread AzrTimerStack matches 1700.. as @e[tag=57534a,type=armor_stand,scores={AzrEntityTimer=5}] at @s run summon minecraft:evoker_fangs ~ ~0 ~
+execute if score stage_main_thread AzrTimerStack matches 1700.. as @e[tag=57534a,type=armor_stand,scores={AzrEntityTimer=6}] at @s run kill @s
 
 execute if score stage_main_thread AzrTimerStack matches 1700..2890 if score #rng2 Azr_system matches 1 if score #rng3 Azr_system matches 3 if score #rng5 Azr_system matches 1 if entity @a[tag=azrPlayer,distance=0..1.2] align xyz positioned ~0.5 ~ ~0.5 run summon armor_stand ~1 ~ ~ {Tags:["57534b"],Invulnerable:1b,Invisible:1b,NoGravity:1b}
 execute if score stage_main_thread AzrTimerStack matches 1700..2890 if score #rng2 Azr_system matches 1 if score #rng3 Azr_system matches 3 if score #rng5 Azr_system matches 1 if entity @a[tag=azrPlayer,distance=0..1.2] align xyz positioned ~0.5 ~ ~0.5 run summon armor_stand ~-1 ~ ~ {Tags:["57534b"],Invulnerable:1b,Invisible:1b,NoGravity:1b}
@@ -76,19 +76,19 @@ execute if score stage_main_thread AzrTimerStack matches 1700..2890 if score #rn
 execute if score stage_main_thread AzrTimerStack matches 1700..2890 if score #rng2 Azr_system matches 2 if score #rng3 Azr_system matches 3 if score #rng5 Azr_system matches 1 if entity @a[tag=azrPlayer,distance=0..1.2] align xyz positioned ~0.5 ~ ~0.5 run summon armor_stand ~2 ~ ~-2 {Tags:["57534c"],Invulnerable:1b,Invisible:1b,NoGravity:1b}
 execute if score stage_main_thread AzrTimerStack matches 1700..2890 if score #rng2 Azr_system matches 2 if score #rng3 Azr_system matches 3 if score #rng5 Azr_system matches 1 if entity @a[tag=azrPlayer,distance=0..1.2] align xyz positioned ~0.5 ~ ~0.5 run summon armor_stand ~-2 ~ ~-2 {Tags:["57534c"],Invulnerable:1b,Invisible:1b,NoGravity:1b}
 
-execute if score stage_main_thread AzrTimerStack matches 1700.. as @e[tag=57534b,type=armor_stand] at @s run scoreboard players add @s EntityTimer 1
-execute if score stage_main_thread AzrTimerStack matches 1700.. as @e[tag=57534b,type=armor_stand,scores={EntityTimer=1}] at @s run particle minecraft:instant_effect ~ ~3.5 ~ 0.1 6 0.1 0.001 60
-execute if score stage_main_thread AzrTimerStack matches 1700.. as @e[tag=57534b,type=armor_stand,scores={EntityTimer=3}] at @s run summon minecraft:evoker_fangs ~ ~3 ~
-execute if score stage_main_thread AzrTimerStack matches 1700.. as @e[tag=57534b,type=armor_stand,scores={EntityTimer=3}] at @s run summon minecraft:evoker_fangs ~ ~2 ~
-execute if score stage_main_thread AzrTimerStack matches 1700.. as @e[tag=57534b,type=armor_stand,scores={EntityTimer=3}] at @s run summon minecraft:evoker_fangs ~ ~1 ~
-execute if score stage_main_thread AzrTimerStack matches 1700.. as @e[tag=57534b,type=armor_stand,scores={EntityTimer=4}] at @s run kill @s
+execute if score stage_main_thread AzrTimerStack matches 1700.. as @e[tag=57534b,type=armor_stand] at @s run scoreboard players add @s AzrEntityTimer 1
+execute if score stage_main_thread AzrTimerStack matches 1700.. as @e[tag=57534b,type=armor_stand,scores={AzrEntityTimer=1}] at @s run particle minecraft:instant_effect ~ ~3.5 ~ 0.1 6 0.1 0.001 60
+execute if score stage_main_thread AzrTimerStack matches 1700.. as @e[tag=57534b,type=armor_stand,scores={AzrEntityTimer=3}] at @s run summon minecraft:evoker_fangs ~ ~3 ~
+execute if score stage_main_thread AzrTimerStack matches 1700.. as @e[tag=57534b,type=armor_stand,scores={AzrEntityTimer=3}] at @s run summon minecraft:evoker_fangs ~ ~2 ~
+execute if score stage_main_thread AzrTimerStack matches 1700.. as @e[tag=57534b,type=armor_stand,scores={AzrEntityTimer=3}] at @s run summon minecraft:evoker_fangs ~ ~1 ~
+execute if score stage_main_thread AzrTimerStack matches 1700.. as @e[tag=57534b,type=armor_stand,scores={AzrEntityTimer=4}] at @s run kill @s
 
-execute if score stage_main_thread AzrTimerStack matches 1700.. as @e[tag=57534c,type=armor_stand] at @s run scoreboard players add @s EntityTimer 1
-execute if score stage_main_thread AzrTimerStack matches 1700.. as @e[tag=57534c,type=armor_stand,scores={EntityTimer=5}] at @s run particle minecraft:instant_effect ~ ~3.5 ~ 0.1 6 0.1 0.001 60
-execute if score stage_main_thread AzrTimerStack matches 1700.. as @e[tag=57534c,type=armor_stand,scores={EntityTimer=7}] at @s run summon minecraft:evoker_fangs ~ ~3 ~
-execute if score stage_main_thread AzrTimerStack matches 1700.. as @e[tag=57534c,type=armor_stand,scores={EntityTimer=7}] at @s run summon minecraft:evoker_fangs ~ ~2 ~
-execute if score stage_main_thread AzrTimerStack matches 1700.. as @e[tag=57534c,type=armor_stand,scores={EntityTimer=7}] at @s run summon minecraft:evoker_fangs ~ ~1 ~
-execute if score stage_main_thread AzrTimerStack matches 1700.. as @e[tag=57534c,type=armor_stand,scores={EntityTimer=8}] at @s run kill @s
+execute if score stage_main_thread AzrTimerStack matches 1700.. as @e[tag=57534c,type=armor_stand] at @s run scoreboard players add @s AzrEntityTimer 1
+execute if score stage_main_thread AzrTimerStack matches 1700.. as @e[tag=57534c,type=armor_stand,scores={AzrEntityTimer=5}] at @s run particle minecraft:instant_effect ~ ~3.5 ~ 0.1 6 0.1 0.001 60
+execute if score stage_main_thread AzrTimerStack matches 1700.. as @e[tag=57534c,type=armor_stand,scores={AzrEntityTimer=7}] at @s run summon minecraft:evoker_fangs ~ ~3 ~
+execute if score stage_main_thread AzrTimerStack matches 1700.. as @e[tag=57534c,type=armor_stand,scores={AzrEntityTimer=7}] at @s run summon minecraft:evoker_fangs ~ ~2 ~
+execute if score stage_main_thread AzrTimerStack matches 1700.. as @e[tag=57534c,type=armor_stand,scores={AzrEntityTimer=7}] at @s run summon minecraft:evoker_fangs ~ ~1 ~
+execute if score stage_main_thread AzrTimerStack matches 1700.. as @e[tag=57534c,type=armor_stand,scores={AzrEntityTimer=8}] at @s run kill @s
 
 execute if score stage_main_thread AzrTimerStack matches 1780 run fill -79723 145 -166 -79723 146 -166 lava[level=15]
 execute if score stage_main_thread AzrTimerStack matches 1780 run fill -79716 145 -166 -79716 146 -166 lava[level=15]

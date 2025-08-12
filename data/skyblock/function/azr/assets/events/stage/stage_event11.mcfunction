@@ -376,10 +376,10 @@ execute if score stage_main_thread AzrTimerStack matches 1135..1390 if score #rn
 execute if score stage_main_thread AzrTimerStack matches 1135..1390 if score #rng2 Azr_system matches 2 if score #rng9 Azr_system matches 7 if score #rng7 Azr_system matches 3 as @a[tag=azrPlayer] at @s align xyz positioned ~0.5 ~ ~0.5 run summon marker ~-2 ~ ~-2 {Tags:["57534"],Invulnerable:1b}
 execute if score stage_main_thread AzrTimerStack matches 1135..1390 if score #rng2 Azr_system matches 2 if score #rng9 Azr_system matches 8 if score #rng7 Azr_system matches 3 as @a[tag=azrPlayer] at @s align xyz positioned ~0.5 ~ ~0.5 run summon marker ~ ~ ~-2 {Tags:["57534"],Invulnerable:1b}
 execute if score stage_main_thread AzrTimerStack matches 1135..1390 if score #rng2 Azr_system matches 2 if score #rng9 Azr_system matches 9 if score #rng7 Azr_system matches 3 as @a[tag=azrPlayer] at @s align xyz positioned ~0.5 ~ ~0.5 run summon marker ~2 ~ ~-2 {Tags:["57534"],Invulnerable:1b}
-execute if score stage_main_thread AzrTimerStack matches 1135..1397 as @e[tag=57534,type=marker] at @s run scoreboard players add @s EntityTimer 1
-execute if score stage_main_thread AzrTimerStack matches 1135..1397 as @e[tag=57534,type=marker,scores={EntityTimer=1}] at @s run particle minecraft:dragon_breath ~ ~3.5 ~ 0.1 5 0.1 0.01 50
-execute if score stage_main_thread AzrTimerStack matches 1135..1397 as @e[tag=57534,type=marker,scores={EntityTimer=5}] at @s run summon minecraft:evoker_fangs
-execute if score stage_main_thread AzrTimerStack matches 1135..1397 as @e[tag=57534,type=marker,scores={EntityTimer=6}] at @s run kill @s
+execute if score stage_main_thread AzrTimerStack matches 1135..1397 as @e[tag=57534,type=marker] at @s run scoreboard players add @s AzrEntityTimer 1
+execute if score stage_main_thread AzrTimerStack matches 1135..1397 as @e[tag=57534,type=marker,scores={AzrEntityTimer=1}] at @s run particle minecraft:dragon_breath ~ ~3.5 ~ 0.1 5 0.1 0.01 50
+execute if score stage_main_thread AzrTimerStack matches 1135..1397 as @e[tag=57534,type=marker,scores={AzrEntityTimer=5}] at @s run summon minecraft:evoker_fangs
+execute if score stage_main_thread AzrTimerStack matches 1135..1397 as @e[tag=57534,type=marker,scores={AzrEntityTimer=6}] at @s run kill @s
 
 
 #地图初始化刷新
