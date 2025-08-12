@@ -34,27 +34,27 @@ execute if score SEA_ch6_event sea_4temp4 matches 1001 run bossbar remove 906660
 
 execute if score SEA_ch6_event sea_4temp4 matches 1080 run tag @n[tag=SEAedwina] remove SEAedwina_attackable
 execute if score SEA_ch6_event sea_4temp4 matches 1090 as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
-execute if score SEA_ch6_event sea_4temp4 matches 1090 run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“我们……好像成功了。”","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 1090 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“我们……好像成功了。”","color":"white","bold": false}]
 execute if score SEA_ch6_event sea_4temp4 matches 1147 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“……我们，击败了货真价实的……天使？”","color":"white"}]
 execute if score SEA_ch6_event sea_4temp4 matches 1217 as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
-execute if score SEA_ch6_event sea_4temp4 matches 1217 run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“太好了……我知道跟你一起就肯定做得到，但这也……太不可置信了。”","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 1217 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“太好了……我知道跟你一起就肯定做得到，但这也……太不可置信了。”","color":"white","bold": false}]
 execute if score SEA_ch6_event sea_4temp4 matches 1287 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“先别急着庆祝，我觉得……事情没那么简单。”","color":"white"}]
 
 execute if score SEA_ch6_event sea_4temp4 matches 1212..2000 as @p[tag=SEAPT] at @s run particle small_flame ~ ~2 ~ 50 3 50 0.01 2
 execute if score SEA_ch6_event sea_4temp4 matches 1292..2000 as @p[tag=SEAPT] at @s run particle small_flame ~ ~2 ~ 50 3 50 0.01 2
 execute if score SEA_ch6_event sea_4temp4 matches 1332..2000 as @p[tag=SEAPT] at @s run particle small_flame ~ ~2 ~ 50 3 50 0.01 2
-execute if score SEA_ch6_event sea_4temp4 matches 1332..1352 as @p[tag=SEAPT] at @s run playsound minecraft:ambient.soul_sand_valley.mood ambient @a ~ ~ ~ 3 1.3
-execute if score SEA_ch6_event sea_4temp4 matches 1332..1352 as @p[tag=SEAPT] at @s run playsound minecraft:ambient.soul_sand_valley.mood ambient @a ~ ~ ~ 3 0.9
-execute if score SEA_ch6_event sea_4temp4 matches 1332..2000 as @p[tag=SEAPT] at @s run playsound minecraft:ambient.soul_sand_valley.mood ambient @a ~ ~ ~ 3 0.7
+execute if score SEA_ch6_event sea_4temp4 matches 1332..1338 as @p[tag=SEAPT] at @s run playsound minecraft:ambient.soul_sand_valley.mood ambient @a ~ ~ ~ 3 1.3
+execute if score SEA_ch6_event sea_4temp4 matches 1332..1338 as @p[tag=SEAPT] at @s run playsound minecraft:ambient.soul_sand_valley.mood ambient @a ~ ~ ~ 3 0.9
+execute if score SEA_ch6_event sea_4temp4 matches 1332..1342 as @p[tag=SEAPT] at @s run playsound minecraft:ambient.soul_sand_valley.mood ambient @a ~ ~ ~ 3 0.7
 
 execute if score SEA_ch6_event sea_4temp4 matches 1342 as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.4
-execute if score SEA_ch6_event sea_4temp4 matches 1342 run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“温度在升高……？糟了，天使还活着！！”","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 1342 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“温度在升高……？糟了，天使还活着！！”","color":"white","bold": false}]
 
-execute if score SEA_ch6_event sea_4temp4 matches 1352 positioned 90073 -10 -1815 run summon lightning_bolt
-execute if score SEA_ch6_event sea_4temp4 matches 1352 positioned 90073 -10 -1815 run summon lightning_bolt
-execute if score SEA_ch6_event sea_4temp4 matches 1352 positioned 90073 -10 -1815 run summon lightning_bolt
-execute if score SEA_ch6_event sea_4temp4 matches 1352 positioned 90073 -10 -1815 run summon lightning_bolt
-execute if score SEA_ch6_event sea_4temp4 matches 1352 positioned 90073 -10 -1815 run function skyblock:sea/m/unique/boss6b
+execute if score SEA_ch6_event sea_4temp4 matches 1352..1354 positioned 90061 -10 -1815 run summon lightning_bolt
+execute if score SEA_ch6_event sea_4temp4 matches 1352..1354 positioned 90061 -10 -1815 run summon lightning_bolt
+execute if score SEA_ch6_event sea_4temp4 matches 1352..1354 positioned 90061 -10 -1815 run summon lightning_bolt
+execute if score SEA_ch6_event sea_4temp4 matches 1352..1354 positioned 90061 -10 -1815 run summon lightning_bolt
+execute if score SEA_ch6_event sea_4temp4 matches 1352 positioned 90061 -10 -1815 run function skyblock:sea/m/unique/boss6b
 
 execute if score SEA_ch6_event sea_4temp4 matches 1352 run effect give @n[tag=SEAboss6b] levitation infinite 0 true
 execute if score SEA_ch6_event sea_4temp4 matches 1352 run bossbar add 9066602 "神圣的风暴 - 权之执理"
@@ -67,8 +67,10 @@ execute if score SEA_ch6_event sea_4temp4 matches 1352 run bossbar set minecraft
 execute if score SEA_ch6_event sea_4temp4 matches 1352..1452 run scoreboard players add SEA_ch6_event sea_4temp5 4
 execute if score SEA_ch6_event sea_4temp4 matches 1352.. store result bossbar minecraft:9066602 value run scoreboard players get SEA_ch6_event sea_4temp5
 
+execute if score SEA_ch6_event sea_4temp4 matches 1417 as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.4
+execute if score SEA_ch6_event sea_4temp4 matches 1417 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“糟糕，这家伙之前根本没动真格！！”","color":"white","bold": false}]
 
-execute if score SEA_ch6_event sea_4temp4 matches 1352 as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s run playsound minecraft:salvation2 music @s ~ ~ ~ 1 1.0
+execute if score SEA_ch6_event sea_4temp4 matches 1352 as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s run playsound minecraft:salvation1 music @s ~ ~ ~ 1 1.0
 
 
 
