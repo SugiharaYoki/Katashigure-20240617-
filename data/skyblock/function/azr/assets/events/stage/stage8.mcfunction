@@ -68,7 +68,7 @@ execute if score stage_main_thread AzrTimerStack matches 47 run title @a[tag=azr
 execute if score stage_main_thread AzrTimerStack matches 48 run title @a[tag=azrShowDialog] actionbar {"text":"2","color":"red"}
 execute if score stage_main_thread AzrTimerStack matches 49 run title @a[tag=azrShowDialog] actionbar {"text":"1","color":"red"}
 execute if score stage_main_thread AzrTimerStack matches 50 run title @a[tag=azrShowDialog] actionbar {"text":"Stage 8 - Wave 2","color":"red"}
-execute if score stage_main_thread AzrTimerStack matches 50 run scoreboard players set @a[tag=azrPlayer] Azr_wave 19
+execute if score stage_main_thread AzrTimerStack matches 50 run scoreboard players set wave Azr_system 19
 
 execute if score stage_main_thread AzrTimerStack matches 51..65 if score #rng3 Azr_system matches 1 run summon spider -79887 38 61 {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_spider_tier1",Health:2.5f,CustomName:'"迅蛛"',attributes:[{id:"max_health",base:2.5d},{id:"attack_damage",base:1.0d},{id:"movement_speed",base:0.4d}]}
 execute if score stage_main_thread AzrTimerStack matches 51..65 if score #rng4 Azr_system matches 1 run summon spider -79895 38 48 {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_spider_tier1",Health:4.5f,CustomName:'"遗迹蜘蛛"',attributes:[{id:"max_health",base:4.5d},{id:"attack_damage",base:1.5d},{id:"movement_speed",base:0.24d}]}
@@ -117,7 +117,7 @@ execute if score stage_main_thread AzrTimerStack matches 92 run title @a[tag=azr
 execute if score stage_main_thread AzrTimerStack matches 93 run title @a[tag=azrShowDialog] actionbar {"text":"2","color":"red"}
 execute if score stage_main_thread AzrTimerStack matches 94 run title @a[tag=azrShowDialog] actionbar {"text":"1","color":"red"}
 execute if score stage_main_thread AzrTimerStack matches 95 run title @a[tag=azrShowDialog] actionbar {"text":"Stage 8 - Wave 3","color":"red"}
-execute if score stage_main_thread AzrTimerStack matches 95 run scoreboard players set @a[tag=azrPlayer] Azr_wave 20
+execute if score stage_main_thread AzrTimerStack matches 95 run scoreboard players set wave Azr_system 20
 
 execute if score stage_main_thread AzrTimerStack matches 96 if score #rng3 Azr_system matches 1 run summon zombie -79887 38 61 {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_zombie_militia_tier1",Health:7.0f,CustomName:'"僵尸民兵"',CanPickUpLoot:0b,IsBaby:0b,HandItems:[{count:1,id:"wooden_sword",components:{custom_name:'{"text":"木剑","italic":false,"color":"white"}'}},{}],HandDropChances:[0.06f,0.06f],ArmorItems:[{count:1,id:"leather_boots",components:{custom_name:'{"text":"皮革靴","italic":false,"color":"white"}'}},{count:1,id:"leather_leggings",components:{custom_name:'{"text":"皮革裤","italic":false,"color":"white"}'}},{count:1,id:"chainmail_chestplate",components:{custom_name:'{"text":"链甲","italic":false,"color":"white"}'}},{count:1,id:"leather_helmet",components:{custom_name:'{"text":"皮革帽","italic":false,"color":"white"}'}}],ArmorDropChances:[0.02f,0.02f,0.02f,0.02f],attributes:[{id:"max_health",base:7.0d},{id:"attack_damage",base:2.0d},{id:"movement_speed",base:0.18d}]}
 execute if score stage_main_thread AzrTimerStack matches 96 if score #rng3 Azr_system matches 2 run summon zombie -79887 38 61 {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_zombie_tier1",Health:6.5f,CustomName:'"僵尸"',CanPickUpLoot:0b,IsBaby:0b,ArmorItems:[{count:1,id:"leather_boots",components:{custom_name:'{"text":"皮革靴","italic":false,"color":"white"}'}},{count:1,id:"leather_leggings",components:{custom_name:'{"text":"皮革裤","italic":false,"color":"white"}'}},{count:1,id:"leather_chestplate",components:{enchantments:{protection:1}}},{count:1,id:"leather_helmet",components:{enchantments:{protection:1}}}],ArmorDropChances:[0.02f,0.02f,0.02f,0.02f],attributes:[{id:"max_health",base:6.5d},{id:"attack_damage",base:2.0d}]}
@@ -229,7 +229,7 @@ execute if score stage_main_thread AzrTimerStack matches 128 run title @a[tag=az
 execute if score stage_main_thread AzrTimerStack matches 129 run title @a[tag=azrShowDialog] actionbar {"text":"2","color":"red"}
 execute if score stage_main_thread AzrTimerStack matches 130 run title @a[tag=azrShowDialog] actionbar {"text":"1","color":"red"}
 execute if score stage_main_thread AzrTimerStack matches 131 run title @a[tag=azrShowDialog] actionbar {"text":"Stage 8 - Wave 4","color":"red"}
-execute if score stage_main_thread AzrTimerStack matches 132 run scoreboard players set @a[tag=azrPlayer] Azr_wave 21
+execute if score stage_main_thread AzrTimerStack matches 132 run scoreboard players set wave Azr_system 21
 
 execute if score stage_main_thread AzrTimerStack matches 133..134 run summon pillager -79887 38 61 {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_pillager_tier2",Health:5.0f,CustomName:'"迅弩手"',CanPickUpLoot:0b,HandItems:[{count:1,id:"crossbow",components:{enchantments:{quick_charge:2,piercing:2}}},{}],HandDropChances:[0.004f,0.004f],ArmorItems:[{},{},{},{}],attributes:[{id:"max_health",base:7.0d},{id:"attack_damage",base:1.0d}]}
 execute if score stage_main_thread AzrTimerStack matches 135 run summon vindicator -79887 38 61 {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_vindicator_tier1",Health:12.0f,CustomName:'"圣殿巡逻兵"',CanPickUpLoot:0b,HandItems:[{count:1,id:"stone_sword",components:{custom_name:'{"text":"石剑","italic":false,"color":"white"}'}},{}],HandDropChances:[0.003f,0.003f],attributes:[{id:"max_health",base:12.0d},{id:"attack_damage",base:0.0d},{id:"movement_speed",base:0.2d}]}
@@ -352,7 +352,7 @@ execute if score stage_main_thread AzrTimerStack matches 365..367 if entity @e[t
 
 
 execute if score stage_main_thread AzrTimerStack matches 370 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..8}] Azr_skillPoints 9
-execute if score stage_main_thread AzrTimerStack matches 370 run scoreboard players set @a[tag=azrPlayer] Azr_wave 22
+execute if score stage_main_thread AzrTimerStack matches 370 run scoreboard players set wave Azr_system 22
 execute if score stage_main_thread AzrTimerStack matches 370 run fill -79889 40 45 -79891 38 45 air destroy
 execute if score stage_main_thread AzrTimerStack matches 370 run playsound ambient.crimson_forest.loop ambient @a[tag=azrShowDialog] -78000 100 0 1000 1.0
 execute if score stage_main_thread AzrTimerStack matches 370 run playsound ambient.crimson_forest.mood ambient @a[tag=azrShowDialog] -78000 100 0 1000 1.0

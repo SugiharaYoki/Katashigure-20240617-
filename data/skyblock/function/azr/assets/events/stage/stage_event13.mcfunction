@@ -233,7 +233,7 @@ execute if score stage_main_thread AzrTimerStack matches 1125 run setblock -7976
 
 
 #更改StandLastP/B
-execute if score stage_main_thread AzrTimerStack matches 1125 run scoreboard players set @a[tag=azrPlayer] Azr_wave 38
+execute if score stage_main_thread AzrTimerStack matches 1125 run scoreboard players set wave Azr_system 38
 
 #跳过剧情
 execute if score stage_main_thread AzrTimerStack matches 508 unless entity @a[tag=azrPlayer,scores={Azr_skillPoints=..16}] run tellraw @a[tag=azrPlayer] {"text":"〈跳过剧情〉","bold":true,"color":"blue","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 6"}}

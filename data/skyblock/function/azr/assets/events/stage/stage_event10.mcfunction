@@ -213,7 +213,7 @@ execute if score stage_main_thread AzrTimerStack matches 1200 run setblock -7990
 execute if score stage_main_thread AzrTimerStack matches 1200 run clone -79885 40 -139 -79885 40 -139 -79907 46 -111 masked move
 execute if score stage_main_thread AzrTimerStack matches 1200 run particle minecraft:end_rod -79885 41 -139 0.6 0.6 0.6 0.0 13
 execute if score stage_main_thread AzrTimerStack matches 1200 run particle minecraft:end_rod -79907 47 -111 0.6 0.6 0.6 0.0 13
-execute if score stage_main_thread AzrTimerStack matches 1200 run scoreboard players set @a[tag=azrPlayer] Azr_wave 30
+execute if score stage_main_thread AzrTimerStack matches 1200 run scoreboard players set wave Azr_system 30
 execute if score stage_main_thread AzrTimerStack matches 1200 run fill -79928 50 -123 -79927 49 -123 blast_furnace[facing=south]
 execute if score stage_main_thread AzrTimerStack matches 1200 run setblock -79898 48 -135 chest[facing=south]
 execute if score stage_main_thread AzrTimerStack matches 1200 run item replace block -79898 48 -135 container.13 with potion[potion_contents={potion:"minecraft:healing"},custom_data={healing_potion:1b}]

@@ -82,7 +82,7 @@ execute if score stage_main_thread AzrTimerStack matches 56 if score playerCount
 execute if score stage_main_thread AzrTimerStack matches 57..58 unless entity @n[tag=AzrielMob] run scoreboard players set stage_main_thread AzrTimerStack 59
 execute if score stage_main_thread AzrTimerStack matches 57..60 if entity @e[tag=AzrielMob,tag=!AzrielDecMob] run scoreboard players set stage_main_thread AzrTimerStack 65
 execute if score stage_main_thread AzrTimerStack matches 59 run title @a[tag=azrShowDialog] actionbar {"text":"Wave Clear","color":"green"}
-execute if score stage_main_thread AzrTimerStack matches 59 run scoreboard players set @a[tag=azrPlayer] Azr_wave 7
+execute if score stage_main_thread AzrTimerStack matches 59 run scoreboard players set wave Azr_system 7
 execute if score stage_main_thread AzrTimerStack matches 64 run title @a[tag=azrShowDialog] actionbar {"text":"10","color":"yellow"}
 execute if score stage_main_thread AzrTimerStack matches 65 run title @a[tag=azrShowDialog] actionbar {"text":"9","color":"yellow"}
 execute if score stage_main_thread AzrTimerStack matches 66 run title @a[tag=azrShowDialog] actionbar {"text":"8","color":"yellow"}
@@ -179,7 +179,7 @@ execute if score stage_main_thread AzrTimerStack matches 158..159 unless entity 
 
 execute if score stage_main_thread AzrTimerStack matches 159..161 if entity @e[tag=AzrielMob,tag=!AzrielDecMob] run scoreboard players set stage_main_thread AzrTimerStack 159
 execute if score stage_main_thread AzrTimerStack matches 162 run title @a[tag=azrShowDialog] actionbar {"text":"Wave Clear","color":"green"}
-execute if score stage_main_thread AzrTimerStack matches 162 run scoreboard players set @a[tag=azrPlayer] Azr_wave 8
+execute if score stage_main_thread AzrTimerStack matches 162 run scoreboard players set wave Azr_system 8
 execute if score stage_main_thread AzrTimerStack matches 167 run title @a[tag=azrShowDialog] actionbar {"text":"10","color":"yellow"}
 execute if score stage_main_thread AzrTimerStack matches 168 run title @a[tag=azrShowDialog] actionbar {"text":"9","color":"yellow"}
 execute if score stage_main_thread AzrTimerStack matches 169 run title @a[tag=azrShowDialog] actionbar {"text":"8","color":"yellow"}
@@ -384,7 +384,7 @@ execute if score stage_main_thread AzrTimerStack matches 247 run playsound minec
 execute if score stage_main_thread AzrTimerStack matches 247 run playsound minecraft:entity.lightning_bolt.thunder ambient @a[tag=azrShowDialog] -79931 38 53 100 1
 execute if score stage_main_thread AzrTimerStack matches 247 run playsound minecraft:entity.lightning_bolt.impact ambient @a[tag=azrShowDialog] -79931 38 53 100 0.8
 
-execute if score stage_main_thread AzrTimerStack matches 247 run scoreboard players set @a[tag=azrPlayer] Azr_wave 7
+execute if score stage_main_thread AzrTimerStack matches 247 run scoreboard players set wave Azr_system 7
 execute if score stage_main_thread AzrTimerStack matches 247 run playsound ambient.crimson_forest.loop ambient @a[tag=azrShowDialog] -78000 100 0 100000
 execute if score stage_main_thread AzrTimerStack matches 247 run playsound ambient.crimson_forest.mood ambient @a[tag=azrShowDialog] -78000 100 0 100000
 execute if score stage_main_thread AzrTimerStack matches 247 run playsound ambient.crimson_forest.additions ambient @a[tag=azrShowDialog] -78000 100 0 100000

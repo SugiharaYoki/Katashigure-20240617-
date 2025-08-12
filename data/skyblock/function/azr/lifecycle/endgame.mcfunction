@@ -15,6 +15,7 @@ scoreboard players reset $Azr_Doppel Azr_system
 scoreboard players reset $NetherShop Azr_system
 scoreboard players reset $ch4DoorOpen Azr_system
 scoreboard players reset $AzrBoss4MusicAlready Azr_system
+scoreboard players reset wave Azr_system
 #tag @s remove Event18575A
 tag @a remove azrDead
 #______________________________________________________________#
@@ -39,7 +40,6 @@ execute as @a[tag=azrPlayer] run function skyblock:azr/lifecycle/endgame/quit_ga
 #scoreboard objectives remove AZR_chainKill_damagetaken
 #scoreboard objectives remove AZR_chainKill_count
 #scoreboard objectives remove AZR_chainKill_chargeup
-scoreboard objectives remove Azr_wave
 scoreboard objectives remove Azr_forceDeath
 #scoreboard objectives remove Azr_isDead
 #scoreboard objectives remove Azr_emerald
@@ -72,6 +72,7 @@ scoreboard objectives remove temp_timer7
 scoreboard objectives remove temp_timer8
 scoreboard objectives remove temp_timer9
 scoreboard objectives remove temp_timer10
+scoreboard objectives remove AzrJoinWave
 scoreboard players set stage_main_thread AzrTimerStack 0
 scoreboard players set stage Azr_system 0
 scoreboard players set isStarted Azr_system 0

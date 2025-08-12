@@ -18,7 +18,7 @@ advancement grant @a[tag=azrPlayer] only skyblock:azr/azr_stage14
 playsound ambient.crimson_forest.loop ambient @a[tag=azrShowDialog] -78000 100 0 1000
 playsound minecraft:ambient.nether_wastes.mood ambient @a[tag=azrShowDialog] -78000 100 0 1000 0.3
 playsound ambient.crimson_forest.additions ambient @a[tag=azrShowDialog] -78000 100 0 1000
-scoreboard players set @a[tag=azrPlayer] Azr_wave 41
+scoreboard players set wave Azr_system 41
 execute if score playerCount Azr_system matches 3.. run item replace block -79770 23 -460 container.11 with minecraft:gold_nugget 30
 execute if score playerCount Azr_system matches 5.. run item replace block -79770 23 -460 container.15 with minecraft:gold_nugget 30
 summon goat -79774 37 -421 {IsScreamingGoat:0b,PersistenceRequired:1b,Tags:["AzrielDecMob"],DeathLootTable:"skyblock:azriel_sheep_tier1",CustomName:'"狱山羊"',Age:10,Health:10.0f,attributes:[{id:"max_health",base:10.0d},{id:"attack_knockback",base:0.5d},{id:"attack_damage",base:12.0d},{id:"movement_speed",base:0.18d}]}

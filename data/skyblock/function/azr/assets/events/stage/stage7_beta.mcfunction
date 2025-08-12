@@ -100,7 +100,7 @@ execute if score stage_main_thread AzrTimerStack matches 23..32 if score #rng20 
 execute if score stage_main_thread AzrTimerStack matches 33..78 run scoreboard players set stage_main_thread AzrTimerStack 79
 execute if score stage_main_thread AzrTimerStack matches 79..82 if entity @e[tag=AzrielMob,tag=!AzrielDecMob] run scoreboard players set stage_main_thread AzrTimerStack 80
 execute if score stage_main_thread AzrTimerStack matches 82 run title @a[tag=azrShowDialog] actionbar {"text":"Wave Clear","color":"green"}
-execute if score stage_main_thread AzrTimerStack matches 82 run scoreboard players set @a[tag=azrPlayer] Azr_wave 16
+execute if score stage_main_thread AzrTimerStack matches 82 run scoreboard players set wave Azr_system 16
 execute if score stage_main_thread AzrTimerStack matches 87 run title @a[tag=azrShowDialog] actionbar {"text":"5","color":"yellow"}
 execute if score stage_main_thread AzrTimerStack matches 88 run title @a[tag=azrShowDialog] actionbar {"text":"4","color":"yellow"}
 execute if score stage_main_thread AzrTimerStack matches 89 run title @a[tag=azrShowDialog] actionbar {"text":"3","color":"red"}
@@ -167,7 +167,7 @@ execute if score stage_main_thread AzrTimerStack matches 133 if score playerCoun
 execute if score stage_main_thread AzrTimerStack matches 135..152 run scoreboard players set stage_main_thread AzrTimerStack 176
 execute if score stage_main_thread AzrTimerStack matches 176..180 if entity @e[tag=AzrielMob,tag=!AzrielDecMob] run scoreboard players set stage_main_thread AzrTimerStack 177
 execute if score stage_main_thread AzrTimerStack matches 179 run title @a[tag=azrShowDialog] actionbar {"text":"Wave Clear","color":"green"}
-execute if score stage_main_thread AzrTimerStack matches 179 run scoreboard players set @a[tag=azrPlayer] Azr_wave 17
+execute if score stage_main_thread AzrTimerStack matches 179 run scoreboard players set wave Azr_system 17
 execute if score stage_main_thread AzrTimerStack matches 184 run title @a[tag=azrShowDialog] actionbar {"text":"7","color":"yellow"}
 execute if score stage_main_thread AzrTimerStack matches 185 run title @a[tag=azrShowDialog] actionbar {"text":"6","color":"yellow"}
 execute if score stage_main_thread AzrTimerStack matches 186 run title @a[tag=azrShowDialog] actionbar {"text":"5","color":"yellow"}
@@ -266,7 +266,7 @@ execute if score stage_main_thread AzrTimerStack matches 301..304 run fill -7988
 execute if score stage_main_thread AzrTimerStack matches 301..304 run fill -79895 50 126 -79895 48 127 minecraft:air destroy
 execute if score stage_main_thread AzrTimerStack matches 301 run title @a[tag=azrShowDialog] actionbar {"text":"Stage Clear","color":"green"}
 execute if score stage_main_thread AzrTimerStack matches 304 run advancement grant @a[tag=azrPlayer] only skyblock:azr/azr_stage7_alt
-execute if score stage_main_thread AzrTimerStack matches 304 run scoreboard players set @a[tag=azrPlayer] Azr_wave 19
+execute if score stage_main_thread AzrTimerStack matches 304 run scoreboard players set wave Azr_system 19
 execute if score stage_main_thread AzrTimerStack matches 304 run scoreboard players set stage Azr_system 19
 execute if score stage_main_thread AzrTimerStack matches 304 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..7}] Azr_skillPoints 8
 execute if score stage_main_thread AzrTimerStack matches 281 run fill -79901 39 88 -79901 38 88 air destroy

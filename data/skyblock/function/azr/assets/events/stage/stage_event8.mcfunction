@@ -15,7 +15,7 @@ execute if score stage_main_thread AzrTimerStack matches 1005 run playsound mine
 execute if score stage_main_thread AzrTimerStack matches 1005 run tp @a[x=-79891,y=40,z=-126,distance=6..,tag=azrPlayer] -79891 40 -123
 execute if score stage_main_thread AzrTimerStack matches 1005 run spawnpoint @a[tag=azrPlayer] -79891 40 -123
 execute if score stage_main_thread AzrTimerStack matches 1002 run scoreboard players set stage Azr_system 36
-execute if score stage_main_thread AzrTimerStack matches 1002 run scoreboard players set @a[tag=azrPlayer] Azr_wave 27
+execute if score stage_main_thread AzrTimerStack matches 1002 run scoreboard players set wave Azr_system 27
 execute if score stage_main_thread AzrTimerStack matches 1002 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..11}] Azr_skillPoints 12
 
 execute if score stage_main_thread AzrTimerStack matches 1016..1220 run scoreboard players set stage_main_thread AzrTimerStack 1016
@@ -164,7 +164,7 @@ execute if score stage_main_thread AzrTimerStack matches 3364 run particle minec
 execute if score stage_main_thread AzrTimerStack matches 3394 run particle minecraft:portal -79906 41 -139 0.5 0.6 0.5 0.5 40
 execute if score stage_main_thread AzrTimerStack matches 3394 as @e[tag=AzrielBossFA] at @s run tp @s -79906 40 -144 facing entity @r[tag=azrPlayer]
 execute if score stage_main_thread AzrTimerStack matches 3394 run particle minecraft:reverse_portal -79906 41 -144 0.5 0.6 0.5 0.5 40
-execute if score stage_main_thread AzrTimerStack matches 3395 run scoreboard players set @a[tag=azrPlayer] Azr_wave 28
+execute if score stage_main_thread AzrTimerStack matches 3395 run scoreboard players set wave Azr_system 28
 execute if score stage_main_thread AzrTimerStack matches 3395 run scoreboard players set stage Azr_system 37
 execute if score stage_main_thread AzrTimerStack matches 3395 run scoreboard players set stage_main_thread AzrTimerStack 0
 execute if score stage_main_thread AzrTimerStack matches 3395 run setblock -79906 42 -146 minecraft:soul_lantern[hanging=true]

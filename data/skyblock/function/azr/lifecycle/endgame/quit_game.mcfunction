@@ -21,13 +21,16 @@ attribute @s minecraft:armor modifier remove azr_chainkill_03
 attribute @s minecraft:attack_speed modifier remove azr_chainkill_04
 function skyblock:azr/system/player/refresh_bossbar
 #SHD奖励
-scoreboard players operation @s Perm_PersonSHD += @s Azr_wave
-tellraw @s [{"text":" 获得影之石：","color":"white"},{"score":{"name":"@s","objective":"Azr_wave"},"color":"yellow"}]
+scoreboard players operation tempSHD Azr_system = wave Azr_system
+scoreboard players operation tempSHD Azr_system -= @s AzrJoinWave
+scoreboard players operation @s Perm_PersonSHD += @s tempSHD
+tellraw @s [{"text":" 获得影之石：","color":"white"},{"score":{"name":"@s","objective":"tempSHD"},"color":"yellow"}]
+scoreboard players reset tempSHD Azr_system
 tellraw @s [{"text":" 现在持有的影之石：","color":"white"},{"score":{"name":"@s","objective":"Perm_PersonSHD"},"color":"yellow"}]
 tellraw @s [{"text":" 继承到下一局的瓜片：","color":"white"},{"score":{"name":"@s","objective":"AzrExtraMelon"},"color":"yellow"}]
 #更新战绩
 execute unless score @s SeGa_StandLastBH matches -2147483648..2147483647 run scoreboard players set @s SeGa_StandLastBH 0
-execute if score @s SeGa_StandLastBH < @s Azr_wave run scoreboard players operation @s SeGa_StandLastBH = @s Azr_wave
+execute if score @s SeGa_StandLastBH < wave Azr_system run scoreboard players operation @s SeGa_StandLastBH = wave Azr_system
 #后续处理
 execute if entity @s[x=-79900,y=40,z=0,distance=0..800] run spawnpoint @s -79953 38 -14 -90
 execute if entity @s[x=-79900,y=40,z=0,distance=0..800] run tp @s -79953.0 38.5 -14.0 facing -79952.0 38.5 -14.0

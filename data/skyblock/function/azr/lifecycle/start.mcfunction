@@ -4,7 +4,7 @@
 #scoreboard objectives add Perm_PersonSHD dummy
 
 #初始化临时记分板 这些记分板将在游戏结束后销毁
-scoreboard objectives add Azr_wave dummy
+scoreboard objectives add AzrJoinWave dummy
 scoreboard objectives add Azr_forceDeath dummy
 scoreboard objectives add Azr_isDead deathCount
 scoreboard objectives add Azr_emerald dummy

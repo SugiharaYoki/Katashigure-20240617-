@@ -23,7 +23,7 @@ execute if score stage_main_thread AzrTimerStack matches 1 run title @a[tag=azrS
 
 execute if score stage_main_thread AzrTimerStack matches 2..9 if entity @e[tag=AzrielMob,tag=!AzrielDecMob,type=!evoker] run scoreboard players set stage_main_thread AzrTimerStack 6
 execute if score stage_main_thread AzrTimerStack matches 10 run title @a[tag=azrShowDialog] actionbar {"text":"Stage Clear","color":"green"}
-execute if score stage_main_thread AzrTimerStack matches 10 run scoreboard players set @a[tag=azrPlayer] Azr_wave 31
+execute if score stage_main_thread AzrTimerStack matches 10 run scoreboard players set wave Azr_system 31
 
 execute if score stage_main_thread AzrTimerStack matches 21 run bossbar add azr:progress_bar_normal "Stage 12"
 execute if score stage_main_thread AzrTimerStack matches 21 run bossbar set azr:progress_bar_normal color white
@@ -59,7 +59,7 @@ execute if score stage_main_thread AzrTimerStack matches 29..30 if score playerC
 
 execute if score stage_main_thread AzrTimerStack matches 30..34 if entity @e[tag=AzrielMob,tag=!AzrielDecMob] run scoreboard players set stage_main_thread AzrTimerStack 31
 execute if score stage_main_thread AzrTimerStack matches 35 run title @a[tag=azrShowDialog] actionbar {"text":"Stage Clear","color":"green"}
-execute if score stage_main_thread AzrTimerStack matches 35 run scoreboard players set @a[tag=azrPlayer] Azr_wave 32
+execute if score stage_main_thread AzrTimerStack matches 35 run scoreboard players set wave Azr_system 32
 
 execute if score stage_main_thread AzrTimerStack matches 49 run bossbar add azr:progress_bar_normal "Stage 12"
 execute if score stage_main_thread AzrTimerStack matches 49 run bossbar set azr:progress_bar_normal color white
@@ -103,7 +103,7 @@ execute if score stage_main_thread AzrTimerStack matches 54 if score playerCount
 
 execute if score stage_main_thread AzrTimerStack matches 57..60 if entity @e[tag=AzrielMob,tag=!AzrielDecMob] run scoreboard players set stage_main_thread AzrTimerStack 57
 execute if score stage_main_thread AzrTimerStack matches 61 run title @a[tag=azrShowDialog] actionbar {"text":"Stage Clear","color":"green"}
-execute if score stage_main_thread AzrTimerStack matches 61 run scoreboard players set @a[tag=azrPlayer] Azr_wave 33
+execute if score stage_main_thread AzrTimerStack matches 61 run scoreboard players set wave Azr_system 33
 execute if score stage_main_thread AzrTimerStack matches 61 run fill -79873 47 -110 -79873 48 -108 iron_bars
 execute if score stage_main_thread AzrTimerStack matches 61 run tellraw @a[tag=azrPlayer,scores={AZR_chainKillUpg_pts=..5},tag=hasSkills] [{"text":"索命连击","color":"gold"},{"text":"可用点数已增加，目前为：6","color":"green"}]
 execute if score stage_main_thread AzrTimerStack matches 61 run scoreboard players set @a[scores={AZR_chainKillUpg_pts=..5}] AZR_chainKillUpg_pts 6
@@ -115,7 +115,7 @@ execute if score stage_main_thread AzrTimerStack matches 94 as @a[tag=azrPlayer]
 execute if score stage_main_thread AzrTimerStack matches 95..96 if entity @e[tag=AzrielMob,tag=!AzrielDecMob] run scoreboard players set stage_main_thread AzrTimerStack 95
 execute if score stage_main_thread AzrTimerStack matches 97 as @a[tag=azrPlayer] at @s run summon evoker ~ ~ ~ {PersistenceRequired:1b,Tags:["AzrielMob","AzrielDecMob"],DeathLootTable:"skyblock:azriel_witch_tier1",Health:1.0f,CustomName:'"斗篷术士"',attributes:[{id:"max_health",base:1.0d},{id:"attack_damage",base:1.5d},{id:"movement_speed",base:0.29d}]}
 execute if score stage_main_thread AzrTimerStack matches 98..99 if entity @e[tag=AzrielMob,tag=!AzrielDecMob] run scoreboard players set stage_main_thread AzrTimerStack 98
-execute if score stage_main_thread AzrTimerStack matches 100 run scoreboard players set @a[tag=azrPlayer] Azr_wave 34
+execute if score stage_main_thread AzrTimerStack matches 100 run scoreboard players set wave Azr_system 34
 execute if score stage_main_thread AzrTimerStack matches 100 run fill -79837 48 -127 -79837 51 -130 air
 execute if score stage_main_thread AzrTimerStack matches 100 run fill -79820 48 -130 -79820 53 -127 air
 execute if score stage_main_thread AzrTimerStack matches 100 run advancement grant @a[tag=azrPlayer] only skyblock:azr/azr_stage12

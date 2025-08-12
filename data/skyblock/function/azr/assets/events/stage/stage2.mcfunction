@@ -46,7 +46,7 @@ execute if score stage_main_thread AzrTimerStack matches 40 if score playerCount
 #回秒
 execute if score stage_main_thread AzrTimerStack matches 41..46 if entity @e[tag=AzrielMob,tag=!AzrielDecMob] run scoreboard players set stage_main_thread AzrTimerStack 41
 execute if score stage_main_thread AzrTimerStack matches 44 run title @a[tag=azrShowDialog] actionbar {"text":"Wave Clear","color":"green"}
-execute if score stage_main_thread AzrTimerStack matches 45 run scoreboard players set @a[tag=azrPlayer] Azr_wave 2
+execute if score stage_main_thread AzrTimerStack matches 45 run scoreboard players set wave Azr_system 2
 execute if score stage_main_thread AzrTimerStack matches 49 run title @a[tag=azrShowDialog] actionbar {"text":"5","color":"yellow"}
 execute if score stage_main_thread AzrTimerStack matches 50 run title @a[tag=azrShowDialog] actionbar {"text":"4","color":"yellow"}
 execute if score stage_main_thread AzrTimerStack matches 51 run title @a[tag=azrShowDialog] actionbar {"text":"3","color":"red"}
@@ -110,7 +110,7 @@ execute if score stage_main_thread AzrTimerStack matches 143 run fill -79931 38 
 execute if score stage_main_thread AzrTimerStack matches 143 run clone -79927 38 0 -79927 38 0 -79934 38 18 replace move
 execute if score stage_main_thread AzrTimerStack matches 143 run particle minecraft:end_rod -79927 39 0 0.6 0.6 0.6 0.0 13
 execute if score stage_main_thread AzrTimerStack matches 143 run particle minecraft:end_rod -79934 39 18 0.6 0.6 0.6 0.0 13
-execute if score stage_main_thread AzrTimerStack matches 143 run scoreboard players set @a[tag=azrPlayer] Azr_wave 3
+execute if score stage_main_thread AzrTimerStack matches 143 run scoreboard players set wave Azr_system 3
 execute if score stage_main_thread AzrTimerStack matches 143 run scoreboard players set stage Azr_system 5
 execute if score stage_main_thread AzrTimerStack matches 143 run tellraw @a[scores={Azr_skillPoints=..1}] {"text":"永久升级 - 木剑/斧（尸化）将拥有耐久I的附魔效果","color":"light_purple"}
 execute if score stage_main_thread AzrTimerStack matches 143 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..1}] Azr_skillPoints 2

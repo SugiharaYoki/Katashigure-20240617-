@@ -11,7 +11,8 @@ xp set @s 30 levels
 
 scoreboard players set @s Azr_emerald 80
 scoreboard players set stage Azr_system 25
-scoreboard players set @s Azr_wave 23
+scoreboard players set wave Azr_system 23
+scoreboard players set @s AzrJoinWave 23
 
 clear @s
 function skyblock:azr/assets/items/weapons/iron_sword_normal

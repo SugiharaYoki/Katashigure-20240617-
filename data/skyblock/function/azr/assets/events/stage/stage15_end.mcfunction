@@ -4,7 +4,7 @@ title @a[tag=azrShowDialog] actionbar {"text":"Stage Clear","color":"green"}
 playsound ambient.crimson_forest.loop ambient @a[tag=azrShowDialog] -78000 100 0 1000
 playsound minecraft:ambient.nether_wastes.mood ambient @a[tag=azrShowDialog] -78000 100 0 1000 0.3
 playsound ambient.crimson_forest.additions ambient @a[tag=azrShowDialog] -78000 100 0 1000
-scoreboard players set @a[tag=azrPlayer] Azr_wave 44
+scoreboard players set wave Azr_system 44
 playsound ambient.warped_forest.loop ambient @a[tag=azrShowDialog] -78000 100 0 1000 0.7
 playsound ambient.warped_forest.mood ambient @a[tag=azrShowDialog] -78000 100 0 1000 0.7
 playsound ambient.warped_forest.additions ambient @a[tag=azrShowDialog] -78000 100 0 1000 0.7

@@ -57,7 +57,7 @@ execute if score stage_main_thread AzrTimerStack matches 133 run particle minecr
 execute if score stage_main_thread AzrTimerStack matches 133 run setblock -79772 26 -386 air
 
 execute if score stage_main_thread AzrTimerStack matches 133 run scoreboard players set stage Azr_system 60
-execute if score stage_main_thread AzrTimerStack matches 133 run scoreboard players set @a[tag=azrPlayer] Azr_wave 45
+execute if score stage_main_thread AzrTimerStack matches 133 run scoreboard players set wave Azr_system 45
 execute if score stage_main_thread AzrTimerStack matches 133.. run scoreboard players set stage_main_thread AzrTimerStack 0
 
 

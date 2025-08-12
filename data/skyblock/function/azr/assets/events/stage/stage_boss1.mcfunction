@@ -279,7 +279,7 @@ execute as @e[tag=arroworb2,type=marker] at @s run function skyblock:azr/assets/
     execute if score tick_main_thread AzrTimerStack matches 3170 run clone -79931 38 42 -79931 38 42 -79931 38 76 replace move
     execute if score tick_main_thread AzrTimerStack matches 3170 unless block -79931 38 76 white_shulker_box run setblock -79931 38 76 white_shulker_box
     #finalize stage
-    execute if score tick_main_thread AzrTimerStack matches 3200 run scoreboard players set @a[tag=azrPlayer] Azr_wave 10
+    execute if score tick_main_thread AzrTimerStack matches 3200 run scoreboard players set wave Azr_system 10
     execute if score tick_main_thread AzrTimerStack matches 3200 run scoreboard players set stage Azr_system 11
     execute if score tick_main_thread AzrTimerStack matches 3200 run scoreboard players reset tick_main_thread AzrTimerStack
     #execute if score tick_main_thread AzrTimerStack matches 3200 run scoreboard players set @a[tag=azrPlayer,scores={Azr_PlyPtsH=..4}] Azr_PlyPtsH 5

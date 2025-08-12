@@ -103,7 +103,7 @@ execute if score stage_main_thread AzrTimerStack matches 145..180 if entity @e[t
 execute if score stage_main_thread AzrTimerStack matches 180..182 run playsound ambient.cave ambient @a[tag=azrShowDialog] -79880 41 -114 5 1.2
 execute if score stage_main_thread AzrTimerStack matches 180..182 run playsound ambient.cave ambient @a[tag=azrShowDialog] -79880 41 -114 5 1.0
 execute if score stage_main_thread AzrTimerStack matches 180 run title @a[tag=azrShowDialog] actionbar {"text":"Wave Clear","color":"green"}
-execute if score stage_main_thread AzrTimerStack matches 180 run scoreboard players set @a[tag=azrPlayer] Azr_wave 39
+execute if score stage_main_thread AzrTimerStack matches 180 run scoreboard players set wave Azr_system 39
 execute if score stage_main_thread AzrTimerStack matches 200 run title @a[tag=azrShowDialog] actionbar {"text":"10","color":"yellow"}
 execute if score stage_main_thread AzrTimerStack matches 204 run title @a[tag=azrShowDialog] actionbar {"text":"9","color":"yellow"}
 execute if score stage_main_thread AzrTimerStack matches 208 run title @a[tag=azrShowDialog] actionbar {"text":"8","color":"yellow"}
@@ -221,7 +221,7 @@ execute if score stage_main_thread AzrTimerStack matches 445..480 if entity @e[t
 execute if score stage_main_thread AzrTimerStack matches 480..482 run playsound ambient.cave ambient @a[tag=azrShowDialog] -79880 41 -114 5 1.2
 execute if score stage_main_thread AzrTimerStack matches 480..482 run playsound ambient.cave ambient @a[tag=azrShowDialog] -79880 41 -114 5 1.0
 execute if score stage_main_thread AzrTimerStack matches 480 run title @a[tag=azrShowDialog] actionbar {"text":"Wave Clear","color":"green"}
-execute if score stage_main_thread AzrTimerStack matches 480 run scoreboard players set @a[tag=azrPlayer] Azr_wave 40
+execute if score stage_main_thread AzrTimerStack matches 480 run scoreboard players set wave Azr_system 40
 execute if score stage_main_thread AzrTimerStack matches 500 run title @a[tag=azrShowDialog] actionbar {"text":"10","color":"yellow"}
 execute if score stage_main_thread AzrTimerStack matches 504 run title @a[tag=azrShowDialog] actionbar {"text":"9","color":"yellow"}
 execute if score stage_main_thread AzrTimerStack matches 508 run title @a[tag=azrShowDialog] actionbar {"text":"8","color":"yellow"}

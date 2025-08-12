@@ -91,7 +91,7 @@ execute if score stage_main_thread AzrTimerStack matches 73 if score playerCount
 execute if score stage_main_thread AzrTimerStack matches 72..74 unless entity @n[tag=AzrielMob] run scoreboard players set stage_main_thread AzrTimerStack 75
 execute if score stage_main_thread AzrTimerStack matches 73..76 if entity @e[tag=AzrielMob,tag=!AzrielDecMob] run scoreboard players set stage_main_thread AzrTimerStack 73
 execute if score stage_main_thread AzrTimerStack matches 75 run title @a[tag=azrShowDialog] actionbar {"text":"Wave Clear","color":"green"}
-execute if score stage_main_thread AzrTimerStack matches 75 run scoreboard players set @a[tag=azrPlayer] Azr_wave 7
+execute if score stage_main_thread AzrTimerStack matches 75 run scoreboard players set wave Azr_system 7
 execute if score stage_main_thread AzrTimerStack matches 80 run title @a[tag=azrShowDialog] actionbar {"text":"10","color":"yellow"}
 execute if score stage_main_thread AzrTimerStack matches 81 run title @a[tag=azrShowDialog] actionbar {"text":"9","color":"yellow"}
 execute if score stage_main_thread AzrTimerStack matches 82 run title @a[tag=azrShowDialog] actionbar {"text":"8","color":"yellow"}
@@ -183,7 +183,7 @@ execute if score stage_main_thread AzrTimerStack matches 186 positioned -79925 3
 execute if score stage_main_thread AzrTimerStack matches 186 positioned -79937 38 49 run function skyblock:azr/assets/mobs/zombie_t2_shield
 execute if score stage_main_thread AzrTimerStack matches 187..190 if entity @e[tag=AzrielMob,tag=!AzrielDecMob] run scoreboard players set stage_main_thread AzrTimerStack 187
 execute if score stage_main_thread AzrTimerStack matches 188 run title @a[tag=azrShowDialog] actionbar {"text":"Wave Clear","color":"green"}
-execute if score stage_main_thread AzrTimerStack matches 188 run scoreboard players set @a[tag=azrPlayer] Azr_wave 8
+execute if score stage_main_thread AzrTimerStack matches 188 run scoreboard players set wave Azr_system 8
 execute if score stage_main_thread AzrTimerStack matches 192 run title @a[tag=azrShowDialog] actionbar {"text":"10","color":"yellow"}
 execute if score stage_main_thread AzrTimerStack matches 193 run title @a[tag=azrShowDialog] actionbar {"text":"9","color":"yellow"}
 execute if score stage_main_thread AzrTimerStack matches 194 run title @a[tag=azrShowDialog] actionbar {"text":"8","color":"yellow"}
@@ -330,7 +330,7 @@ execute if score stage_main_thread AzrTimerStack matches 289 run playsound ambie
 execute if score stage_main_thread AzrTimerStack matches 289 run fill -79930 38 52 -79932 42 52 air destroy
 execute if score stage_main_thread AzrTimerStack matches 289 run setblock -79938 39 49 air destroy
 execute if score stage_main_thread AzrTimerStack matches 289 run setblock -79938 38 49 air destroy
-execute if score stage_main_thread AzrTimerStack matches 289 run scoreboard players set @a[tag=azrPlayer] Azr_wave 7
+execute if score stage_main_thread AzrTimerStack matches 289 run scoreboard players set wave Azr_system 7
 execute if score stage_main_thread AzrTimerStack matches 293 run scoreboard players set stage Azr_system 9
 execute if score stage_main_thread AzrTimerStack matches 293 run scoreboard players set stage_main_thread AzrTimerStack 0
 #execute if score stage_main_thread AzrTimerStack matches 293 run scoreboard players set @a[tag=azrPlayer,scores={Azr_PlyPtsH=..3}] Azr_PlyPtsH 4

@@ -30,7 +30,7 @@ function skyblock:azr/assets/items/others/revival_star
 give @s pumpkin_pie 8
 
 #游戏数据初始化
-scoreboard players operation @s Azr_wave = @p[tag=azrPlayer] Azr_wave
+scoreboard players operation @s AzrJoinWave = wave Azr_system
 scoreboard players set @s Azr_forceDeath 0
 scoreboard players set @s Azr_isDead 0
 scoreboard players set @s Azr_emerald 0
