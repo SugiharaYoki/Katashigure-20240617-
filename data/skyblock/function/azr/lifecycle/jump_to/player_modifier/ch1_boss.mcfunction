@@ -35,5 +35,5 @@ tellraw @s {"text":"第一关口正处于半封锁状态。选择从南翼绕道
 tellraw @s {"text":"在这条走廊的前方，是一种你从未感受过的，那种带着神圣气息的强大威压感。","color":"gray"}
 tellraw @s {"text":"而你将于此处，与第一位神使展开激烈的战斗……","color":"gray"}
 
-tp @s -79931 38 62 facing -79931 38 63
+tp @s -79931 38 56 facing -79931 38 63
 tag @s add azrUpdateSpawnPoint
