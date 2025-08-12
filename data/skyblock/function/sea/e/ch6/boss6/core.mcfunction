@@ -28,7 +28,8 @@ execute if score @s rng4 matches ..0 run scoreboard players set @s rng2 0
 
 #技能roll
 execute if entity @s[scores={rng4=1..,rng2=0}] run scoreboard players set @s rng4 0
-execute if score @s rng1 matches 100.. if entity @s[scores={rng4=..0,health=400..750},tag=!Phase2] store result score @s rng2 run random value 1..9
+execute if score @s rng1 matches 100.. if entity @s[scores={rng4=..0,health=600..750},tag=!Phase2] store result score @s rng2 run random value 1..7
+execute if score @s rng1 matches 100.. if entity @s[scores={rng4=..0,health=400..599},tag=!Phase2] store result score @s rng2 run random value 1..9
 execute if score @s rng1 matches 100.. if entity @s[scores={rng4=..0,health=..399},tag=!Phase2] store result score @s rng2 run random value 50..51
 execute if score @s rng1 matches 100.. if entity @s[scores={rng4=..0,health=380..780},tag=Phase2,tag=!Phase3] store result score @s rng2 run random value 1..9
 execute if score @s rng1 matches 100.. if entity @s[scores={rng4=..0,health=..379},tag=Phase2,tag=!Phase3] store result score @s rng2 run random value 50..51
@@ -58,11 +59,11 @@ execute as @s[tag=seaboss6_move_jump,scores={rng2=1..4}] run function skyblock:s
 execute if score @s[scores={rng2=5}] rng1 matches 100.. if entity @s[x=88000,dx=4000,y=20,dy=5,z=-3000,dz=4000,scores={rng4=..1}] run tag @s add seaboss6_attack_wburst
 execute as @s[tag=seaboss6_attack_wburst,scores={rng2=5}] run function skyblock:sea/e/ch6/boss6/attack_wind_burst
 #划线激光
-execute if score @s[scores={rng2=8..9}] rng1 matches 100.. if entity @s[x=88000,dx=4000,y=20,dy=20,z=-3000,dz=4000,scores={rng4=..1}] run tag @s add seaboss6_attack_line
-execute as @s[tag=seaboss6_attack_line,scores={rng2=8..9}] run function skyblock:sea/e/ch6/boss6/attack_line
+execute if score @s[scores={rng2=6..7}] rng1 matches 100.. if entity @s[x=88000,dx=4000,y=20,dy=20,z=-3000,dz=4000,scores={rng4=..1}] run tag @s add seaboss6_attack_line
+execute as @s[tag=seaboss6_attack_line,scores={rng2=6..7}] run function skyblock:sea/e/ch6/boss6/attack_line
 #召唤怪物
-execute if score @s[scores={rng2=6..7}] rng1 matches 100.. if entity @s[x=88000,dx=4000,y=20,dy=5,z=-3000,dz=4000,scores={rng4=..1}] run tag @s add seaboss6_attack_summon
-execute as @s[tag=seaboss6_attack_summon,scores={rng2=6..7}] run function skyblock:sea/e/ch6/boss6/attack_summon
+execute if score @s[scores={rng2=8..9}] rng1 matches 100.. if entity @s[x=88000,dx=4000,y=20,dy=5,z=-3000,dz=4000,scores={rng4=..1}] run tag @s add seaboss6_attack_summon
+execute as @s[tag=seaboss6_attack_summon,scores={rng2=8..9}] run function skyblock:sea/e/ch6/boss6/attack_summon
 #处刑
 execute if score @s rng1 matches 100.. if entity @s[x=88000,dx=4000,y=20,dy=3,z=-3000,dz=4000,scores={rng4=..1}] as @a[tag=SEAPT] at @s unless block ~ ~-0.8 ~ air unless block ~ ~-0.8 ~ minecraft:polished_tuff unless block ~ ~-0.8 ~ minecraft:tuff_bricks unless block ~ ~-0.8 ~ minecraft:polished_tuff_slab unless block ~ ~-0.8 ~ minecraft:tuff_brick_slab unless block ~ ~-0.8 ~ minecraft:redstone_lamp run scoreboard players add @n[tag=SEAboss6,scores={rng3=..42}] rng3 4
 execute if score @s rng1 matches 100.. if entity @s[x=88000,dx=4000,y=20,dy=3,z=-3000,dz=4000,scores={rng3=1..}] run scoreboard players remove @s rng3 1
