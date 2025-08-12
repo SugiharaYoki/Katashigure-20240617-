@@ -246,10 +246,10 @@ execute if score SEA_ch6_event rng5 matches 20001 positioned 90055 23 -1815 run 
 execute if score SEA_ch6_event rng5 matches 20001 positioned 90055 23 -1815 run particle minecraft:flash 90055 23 -1815
 execute if score SEA_ch6_event rng5 matches 20001 positioned 90055 23 -1815 run playsound minecraft:item.totem.use block @a ~ ~ ~ 1 0.8
 execute if score SEA_ch6_event rng5 matches 20001 positioned 90055 23 -1815 run playsound entity.lightning_bolt.thunder block @a ~ ~ ~ 1 0.8
-execute if score SEA_ch6_event rng5 matches 20001 run clear @a[tag=SEAPT] flint
-execute if score SEA_ch6_event rng5 matches 20001 run clear @a[tag=SEAPT] gunpowder
-execute if score SEA_ch6_event rng5 matches 20001 run clear @a[tag=SEAPT] coal
-execute if score SEA_ch6_event rng5 matches 20001 run clear @a[tag=SEAPT] raw_iron
+#execute if score SEA_ch6_event rng5 matches 20001 run clear @a[tag=SEAPT] flint
+#execute if score SEA_ch6_event rng5 matches 20001 run clear @a[tag=SEAPT] gunpowder
+#execute if score SEA_ch6_event rng5 matches 20001 run clear @a[tag=SEAPT] coal
+#execute if score SEA_ch6_event rng5 matches 20001 run clear @a[tag=SEAPT] raw_iron
 execute if score SEA_ch6_event rng5 matches 20001 run clear @a[tag=SEAPT] iron_ingot
 execute if score SEA_ch6_event rng5 matches 20001 run clear @a[tag=SEAPT] echo_shard
 execute if score SEA_ch6_event rng5 matches 20001 run clear @a[tag=SEAPT] gold_ingot
