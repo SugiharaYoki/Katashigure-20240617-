@@ -21,6 +21,7 @@ attribute @s minecraft:armor modifier remove azr_chainkill_03
 attribute @s minecraft:attack_speed modifier remove azr_chainkill_04
 function skyblock:azr/system/player/refresh_bossbar
 #SHD奖励
+scoreboard players set tempSHD Azr_system 0
 scoreboard players operation tempSHD Azr_system = wave Azr_system
 scoreboard players operation tempSHD Azr_system -= @s AzrJoinWave
 scoreboard players operation @s Perm_PersonSHD += @s tempSHD
