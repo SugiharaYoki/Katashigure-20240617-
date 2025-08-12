@@ -24,10 +24,10 @@ execute if score SEA_ch6_event sea_4temp4 matches 1060 as @p[tag=SEAPT] at @s as
 execute if score SEA_ch6_event sea_4temp4 matches 1060 as @p[tag=SEAPT] at @s as @e[tag=SEAmob,distance=0..100] at @s run kill @s
 
 
-execute if score SEA_ch6_event sea_4temp4 matches 1001 run playsound block.fire.extinguish block @a 90044 21 -1821 1 0.8
-execute if score SEA_ch6_event sea_4temp4 matches 1001 run playsound block.fire.extinguish block @a 90057 21 -1809 1 0.8
-execute if score SEA_ch6_event sea_4temp4 matches 1001 run playsound block.fire.extinguish block @a 90057 21 -1821 1 0.8
-execute if score SEA_ch6_event sea_4temp4 matches 1001 run playsound block.fire.extinguish block @a 90044 21 -1809 1 0.8
-execute if score SEA_ch6_event sea_4temp4 matches 1001 run fill 90044 21 -1821 90057 21 -1809 air replace fire
+execute if score SEA_ch6_event sea_4temp4 matches 1060 run playsound block.fire.extinguish block @a 90044 21 -1821 1 0.8
+execute if score SEA_ch6_event sea_4temp4 matches 1060 run playsound block.fire.extinguish block @a 90057 21 -1809 1 0.8
+execute if score SEA_ch6_event sea_4temp4 matches 1060 run playsound block.fire.extinguish block @a 90057 21 -1821 1 0.8
+execute if score SEA_ch6_event sea_4temp4 matches 1060 run playsound block.fire.extinguish block @a 90044 21 -1809 1 0.8
+execute if score SEA_ch6_event sea_4temp4 matches 1060 run fill 90044 21 -1821 90057 21 -1809 air replace fire
 execute if score SEA_ch6_event sea_4temp4 matches 1001 run playsound minecraft:item.trident.thunder master @a ~ ~ ~ 5 0.5
 execute if score SEA_ch6_event sea_4temp4 matches 1001 run bossbar remove 9066602
