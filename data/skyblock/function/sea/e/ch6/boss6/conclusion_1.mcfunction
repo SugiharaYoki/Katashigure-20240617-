@@ -45,7 +45,7 @@ execute if score SEA_ch6_event sea_4temp4 matches 1332.. as @p[tag=SEAPT] at @s 
 execute if score SEA_ch6_event sea_4temp4 matches 1332.. as @p[tag=SEAPT] at @s run playsound minecraft:ambient.soul_sand_valley.mood ambient @a ~ ~ ~ 3 0.9
 execute if score SEA_ch6_event sea_4temp4 matches 1332.. as @p[tag=SEAPT] at @s run playsound minecraft:ambient.soul_sand_valley.mood ambient @a ~ ~ ~ 3 0.7
 
-execute if score SEA_ch6_event sea_4temp4 matches 1322 run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“温度在升高……？不对，天使还活着！！”","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 1342 run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“温度在升高……？糟了，天使还活着！！”","color":"white","bold": false}]
 
 
 
