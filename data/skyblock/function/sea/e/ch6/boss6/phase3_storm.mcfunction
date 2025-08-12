@@ -83,6 +83,11 @@ execute if score @s rng4 matches 3080 at @s run particle large_smoke ~ ~ ~ 8 0 8
 execute if score @s rng4 matches 3080 at @s run clone 90052 120 -1821 90067 120 -1809 90052 20 -1821
 execute if score @s rng4 matches 3080 at @s run tag @s add Phase4
 
+execute if score @s rng4 matches 3080 at @s positioned 90046 21 -1811 run summon marker ~ ~ ~ {Tags:["SEAboss6_summoner_a","SEAboss6_summoner_husk"]}
+execute if score @s rng4 matches 3080 at @s positioned 90046 21 -1819 run summon marker ~ ~ ~ {Tags:["SEAboss6_summoner_a","SEAboss6_summoner_husk"]}
+execute if score @s rng4 matches 3080 at @s positioned 90045 21 -1815 run summon marker ~ ~ ~ {Tags:["SEAboss6_summoner_a","SEAboss6_summoner_husk"]}
+
+
 execute if score @s rng4 matches 3080 at @s run scoreboard players set @s rng4 -2
 
 

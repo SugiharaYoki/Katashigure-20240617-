@@ -2,6 +2,7 @@ execute as @s[scores={sea_4temp1=1..10}] run particle trial_omen ~ ~1 ~ 0.3 0.5 
 execute as @s[scores={sea_4temp1=1..10}] run particle sculk_soul ~ ~1 ~ 0.3 0.5 0.3 0.05 10
 execute store result score @s rng1 run random value 1..10
 execute if entity @n[tag=SEAboss6,tag=Phase4] store result score @s rng1 run random value 1..12
+execute if entity @n[tag=SEAboss6,tag=Phase4] as @s[tag=SEAboss6_summoner_husk] at @s run scoreboard players set @s rng1 12
 execute as @s[scores={sea_4temp1=5}] run playsound minecraft:entity.zombie_villager.converted hostile @a ~ ~ ~ 1 0.8
 execute as @s[scores={sea_4temp1=11}] run playsound minecraft:block.vault.eject_item hostile @a ~ ~ ~ 1 0.8
 execute as @s[scores={sea_4temp1=11}] run playsound minecraft:block.vault.eject_item hostile @a ~ ~ ~ 1 0.65
