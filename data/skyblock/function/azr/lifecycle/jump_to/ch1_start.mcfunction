@@ -1,1 +1,2 @@
-function skyblock:azr/lifecycle/jump_to/data_modifier/ch1_start
+scoreboard players set $jumpto Azr_system 1
+function skyblock:azr/lifecycle/start

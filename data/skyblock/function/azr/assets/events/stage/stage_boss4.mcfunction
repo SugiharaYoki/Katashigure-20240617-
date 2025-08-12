@@ -22,7 +22,7 @@ execute if score tick_main_thread AzrTimerStack matches 144 run particle snowfla
 execute if score tick_main_thread AzrTimerStack matches 144 run particle minecraft:falling_lava -79536 51 -338 2.1 2.1 2.1 0.00 400
 # execute if score tick_main_thread AzrTimerStack matches 144 run scoreboard objectives add Azr_boss4 dummy
 # execute if score tick_main_thread AzrTimerStack matches 144 run scoreboard players set @s Azr_boss4 0
-execute if score tick_main_thread AzrTimerStack matches 144 run scoreboard players set Azr_Rec Azr_system 0
+execute if score tick_main_thread AzrTimerStack matches 144 run scoreboard players set #Azr_Rec Azr_system 0
 execute if score tick_main_thread AzrTimerStack matches 144 run scoreboard objectives add Health dummy
 #焱蓝焰型体
 execute if score tick_main_thread AzrTimerStack matches 144 if score playerCount Azr_system matches 1 run summon blaze -79536 52 -338 {PersistenceRequired:1b,Tags:["AzrielMob","AzrielBoss4"],DeathLootTable:"skyblock:azriel_shadow_tier1",Health:200.0f,CustomName:'"焱蓝焰型体"',ArmorItems:[{},{},{count:1,id:"golden_chestplate",components:{enchantments:{blast_protection:50}}},{}],ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],attributes:[{id:"armor",base:8.0d},{id:"max_health",base:200.0d},{id:"movement_speed",base:1.0d},{id:"knockback_resistance",base:0.5d}]}
@@ -52,36 +52,36 @@ execute if score tick_main_thread AzrTimerStack matches 144 run bossbar set azr:
 execute if score tick_main_thread AzrTimerStack matches 144..8000 store result bossbar azr:boss_hp_bar value run data get entity @e[tag=AzrielBoss4,limit=1] Health
 execute if score tick_main_thread AzrTimerStack matches 144..8000 store result score @e[tag=AzrielBoss4,limit=1] Health run data get entity @e[tag=AzrielBoss4,limit=1] Health
 
-execute if score Azr_Rec Azr_system matches 1 if score tick_main_thread AzrTimerStack matches 150..1900 as @e[tag=AzrielBoss4,limit=1] at @s unless block ~ ~ ~ air if score #rng5 Azr_system matches 1 as @a[tag=azrPlayer,limit=1,sort=random] at @s positioned ~ ~ ~ run tp @e[tag=AzrielBoss4,limit=1] ~ ~5 ~
-execute if score Azr_Rec Azr_system matches 1 if score tick_main_thread AzrTimerStack matches 150..1900 as @e[tag=AzrielBoss4,limit=1] at @s unless block ~ ~ ~ air if score #rng5 Azr_system matches 2 as @a[tag=azrPlayer,limit=1,sort=random] at @s positioned ~ ~ ~ run tp @e[tag=AzrielBoss4,limit=1] ~3 ~5 ~
-execute if score Azr_Rec Azr_system matches 1 if score tick_main_thread AzrTimerStack matches 150..1900 as @e[tag=AzrielBoss4,limit=1] at @s unless block ~ ~ ~ air if score #rng5 Azr_system matches 3 as @a[tag=azrPlayer,limit=1,sort=random] at @s positioned ~ ~ ~ run tp @e[tag=AzrielBoss4,limit=1] ~ ~5 ~3
-execute if score Azr_Rec Azr_system matches 1 if score tick_main_thread AzrTimerStack matches 150..1900 as @e[tag=AzrielBoss4,limit=1] at @s unless block ~ ~ ~ air if score #rng5 Azr_system matches 4 as @a[tag=azrPlayer,limit=1,sort=random] at @s positioned ~ ~ ~ run tp @e[tag=AzrielBoss4,limit=1] ~-3 ~5 ~
-execute if score Azr_Rec Azr_system matches 1 if score tick_main_thread AzrTimerStack matches 150..1900 as @e[tag=AzrielBoss4,limit=1] at @s unless block ~ ~ ~ air if score #rng5 Azr_system matches 5 as @a[tag=azrPlayer,limit=1,sort=random] at @s positioned ~ ~ ~ run tp @e[tag=AzrielBoss4,limit=1] ~ ~5 ~-3
-execute if score Azr_Rec Azr_system matches 1 if score tick_main_thread AzrTimerStack matches 150..1900 as @e[tag=AzrielBoss4,limit=1] at @s unless block ~ ~1 ~ air if score #rng5 Azr_system matches 1 as @a[tag=azrPlayer,limit=1,sort=random] at @s positioned ~ ~ ~ run tp @e[tag=AzrielBoss4,limit=1] ~ ~5 ~
-execute if score Azr_Rec Azr_system matches 1 if score tick_main_thread AzrTimerStack matches 150..1900 as @e[tag=AzrielBoss4,limit=1] at @s unless block ~ ~1 ~ air if score #rng5 Azr_system matches 2 as @a[tag=azrPlayer,limit=1,sort=random] at @s positioned ~ ~ ~ run tp @e[tag=AzrielBoss4,limit=1] ~3 ~5 ~
-execute if score Azr_Rec Azr_system matches 1 if score tick_main_thread AzrTimerStack matches 150..1900 as @e[tag=AzrielBoss4,limit=1] at @s unless block ~ ~1 ~ air if score #rng5 Azr_system matches 3 as @a[tag=azrPlayer,limit=1,sort=random] at @s positioned ~ ~ ~ run tp @e[tag=AzrielBoss4,limit=1] ~ ~5 ~3
-execute if score Azr_Rec Azr_system matches 1 if score tick_main_thread AzrTimerStack matches 150..1900 as @e[tag=AzrielBoss4,limit=1] at @s unless block ~ ~1 ~ air if score #rng5 Azr_system matches 4 as @a[tag=azrPlayer,limit=1,sort=random] at @s positioned ~ ~ ~ run tp @e[tag=AzrielBoss4,limit=1] ~-3 ~5 ~
-execute if score Azr_Rec Azr_system matches 1 if score tick_main_thread AzrTimerStack matches 150..1900 as @e[tag=AzrielBoss4,limit=1] at @s unless block ~ ~1 ~ air if score #rng5 Azr_system matches 5 as @a[tag=azrPlayer,limit=1,sort=random] at @s positioned ~ ~ ~ run tp @e[tag=AzrielBoss4,limit=1] ~ ~5 ~-3
-execute if score Azr_Rec Azr_system matches 1 if score tick_main_thread AzrTimerStack matches 150..1900 as @e[tag=AzrielBoss4,limit=1] at @s unless entity @a[tag=azrPlayer,distance=0..18] if score #rng5 Azr_system matches 5 as @a[tag=azrPlayer,limit=1,sort=random] at @s positioned ~ ~ ~ run tp @e[tag=AzrielBoss4,limit=1] ~ ~5 ~
+execute if score #Azr_Rec Azr_system matches 1 if score tick_main_thread AzrTimerStack matches 150..1900 as @e[tag=AzrielBoss4,limit=1] at @s unless block ~ ~ ~ air if score #rng5 Azr_system matches 1 as @a[tag=azrPlayer,limit=1,sort=random] at @s positioned ~ ~ ~ run tp @e[tag=AzrielBoss4,limit=1] ~ ~5 ~
+execute if score #Azr_Rec Azr_system matches 1 if score tick_main_thread AzrTimerStack matches 150..1900 as @e[tag=AzrielBoss4,limit=1] at @s unless block ~ ~ ~ air if score #rng5 Azr_system matches 2 as @a[tag=azrPlayer,limit=1,sort=random] at @s positioned ~ ~ ~ run tp @e[tag=AzrielBoss4,limit=1] ~3 ~5 ~
+execute if score #Azr_Rec Azr_system matches 1 if score tick_main_thread AzrTimerStack matches 150..1900 as @e[tag=AzrielBoss4,limit=1] at @s unless block ~ ~ ~ air if score #rng5 Azr_system matches 3 as @a[tag=azrPlayer,limit=1,sort=random] at @s positioned ~ ~ ~ run tp @e[tag=AzrielBoss4,limit=1] ~ ~5 ~3
+execute if score #Azr_Rec Azr_system matches 1 if score tick_main_thread AzrTimerStack matches 150..1900 as @e[tag=AzrielBoss4,limit=1] at @s unless block ~ ~ ~ air if score #rng5 Azr_system matches 4 as @a[tag=azrPlayer,limit=1,sort=random] at @s positioned ~ ~ ~ run tp @e[tag=AzrielBoss4,limit=1] ~-3 ~5 ~
+execute if score #Azr_Rec Azr_system matches 1 if score tick_main_thread AzrTimerStack matches 150..1900 as @e[tag=AzrielBoss4,limit=1] at @s unless block ~ ~ ~ air if score #rng5 Azr_system matches 5 as @a[tag=azrPlayer,limit=1,sort=random] at @s positioned ~ ~ ~ run tp @e[tag=AzrielBoss4,limit=1] ~ ~5 ~-3
+execute if score #Azr_Rec Azr_system matches 1 if score tick_main_thread AzrTimerStack matches 150..1900 as @e[tag=AzrielBoss4,limit=1] at @s unless block ~ ~1 ~ air if score #rng5 Azr_system matches 1 as @a[tag=azrPlayer,limit=1,sort=random] at @s positioned ~ ~ ~ run tp @e[tag=AzrielBoss4,limit=1] ~ ~5 ~
+execute if score #Azr_Rec Azr_system matches 1 if score tick_main_thread AzrTimerStack matches 150..1900 as @e[tag=AzrielBoss4,limit=1] at @s unless block ~ ~1 ~ air if score #rng5 Azr_system matches 2 as @a[tag=azrPlayer,limit=1,sort=random] at @s positioned ~ ~ ~ run tp @e[tag=AzrielBoss4,limit=1] ~3 ~5 ~
+execute if score #Azr_Rec Azr_system matches 1 if score tick_main_thread AzrTimerStack matches 150..1900 as @e[tag=AzrielBoss4,limit=1] at @s unless block ~ ~1 ~ air if score #rng5 Azr_system matches 3 as @a[tag=azrPlayer,limit=1,sort=random] at @s positioned ~ ~ ~ run tp @e[tag=AzrielBoss4,limit=1] ~ ~5 ~3
+execute if score #Azr_Rec Azr_system matches 1 if score tick_main_thread AzrTimerStack matches 150..1900 as @e[tag=AzrielBoss4,limit=1] at @s unless block ~ ~1 ~ air if score #rng5 Azr_system matches 4 as @a[tag=azrPlayer,limit=1,sort=random] at @s positioned ~ ~ ~ run tp @e[tag=AzrielBoss4,limit=1] ~-3 ~5 ~
+execute if score #Azr_Rec Azr_system matches 1 if score tick_main_thread AzrTimerStack matches 150..1900 as @e[tag=AzrielBoss4,limit=1] at @s unless block ~ ~1 ~ air if score #rng5 Azr_system matches 5 as @a[tag=azrPlayer,limit=1,sort=random] at @s positioned ~ ~ ~ run tp @e[tag=AzrielBoss4,limit=1] ~ ~5 ~-3
+execute if score #Azr_Rec Azr_system matches 1 if score tick_main_thread AzrTimerStack matches 150..1900 as @e[tag=AzrielBoss4,limit=1] at @s unless entity @a[tag=azrPlayer,distance=0..18] if score #rng5 Azr_system matches 5 as @a[tag=azrPlayer,limit=1,sort=random] at @s positioned ~ ~ ~ run tp @e[tag=AzrielBoss4,limit=1] ~ ~5 ~
 
 execute if score tick_main_thread AzrTimerStack matches 150..1000 run function skyblock:azr/system/utils/rng
-execute if score tick_main_thread AzrTimerStack matches 150 if score #rng3 Azr_system matches 1 run scoreboard players set Azr_Rec Azr_system 1
-execute if score tick_main_thread AzrTimerStack matches 150 if score #rng3 Azr_system matches 2 run scoreboard players set Azr_Rec Azr_system 2
-execute if score tick_main_thread AzrTimerStack matches 150 if score #rng3 Azr_system matches 3 run scoreboard players set Azr_Rec Azr_system 3
+execute if score tick_main_thread AzrTimerStack matches 150 if score #rng3 Azr_system matches 1 run scoreboard players set #Azr_Rec Azr_system 1
+execute if score tick_main_thread AzrTimerStack matches 150 if score #rng3 Azr_system matches 2 run scoreboard players set #Azr_Rec Azr_system 2
+execute if score tick_main_thread AzrTimerStack matches 150 if score #rng3 Azr_system matches 3 run scoreboard players set #Azr_Rec Azr_system 3
 execute if score tick_main_thread AzrTimerStack matches 150 if score #rng3 Azr_system matches 1 run tellraw @a[tag=AzrDebug] {"text":"150 rng3=1","color":"gray"}
 execute if score tick_main_thread AzrTimerStack matches 150 if score #rng3 Azr_system matches 2 run tellraw @a[tag=AzrDebug] {"text":"150 rng3=2","color":"gray"}
 execute if score tick_main_thread AzrTimerStack matches 150 if score #rng3 Azr_system matches 3 run tellraw @a[tag=AzrDebug] {"text":"150 rng3=3","color":"gray"}
 
-    execute if score Azr_Rec Azr_system matches 1 if score tick_main_thread AzrTimerStack matches 150..1000 as @e[tag=AzrielBoss4,limit=1] at @s run tp @s ~ 42 ~
-    execute if score Azr_Rec Azr_system matches 1 if score tick_main_thread AzrTimerStack matches 150..1000 as @e[tag=AzrielBoss4,limit=1] at @s run function skyblock:azr/assets/events/stage/boss4/rec1
+    execute if score #Azr_Rec Azr_system matches 1 if score tick_main_thread AzrTimerStack matches 150..1000 as @e[tag=AzrielBoss4,limit=1] at @s run tp @s ~ 42 ~
+    execute if score #Azr_Rec Azr_system matches 1 if score tick_main_thread AzrTimerStack matches 150..1000 as @e[tag=AzrielBoss4,limit=1] at @s run function skyblock:azr/assets/events/stage/boss4/rec1
 
-    execute if score Azr_Rec Azr_system matches 2 if score tick_main_thread AzrTimerStack matches 150 as @e[tag=AzrielBoss4,limit=1] at @s run tp @s ~ 52 ~
-    execute if score Azr_Rec Azr_system matches 2 if score tick_main_thread AzrTimerStack matches 150 run kill @e[type=marker,tag=AzrielBoss4Rec2]
-    execute if score Azr_Rec Azr_system matches 2 if score tick_main_thread AzrTimerStack matches 152 as @e[tag=AzrielBoss4,limit=1] at @s run summon marker ~ ~ ~ {Tags:["AzrielBoss4Rec2"]}
-    execute if score Azr_Rec Azr_system matches 2 if score tick_main_thread AzrTimerStack matches 150..1000 as @e[type=marker,tag=AzrielBoss4Rec2,limit=1] at @s run function skyblock:azr/assets/events/stage/boss4/rec2
+    execute if score #Azr_Rec Azr_system matches 2 if score tick_main_thread AzrTimerStack matches 150 as @e[tag=AzrielBoss4,limit=1] at @s run tp @s ~ 52 ~
+    execute if score #Azr_Rec Azr_system matches 2 if score tick_main_thread AzrTimerStack matches 150 run kill @e[type=marker,tag=AzrielBoss4Rec2]
+    execute if score #Azr_Rec Azr_system matches 2 if score tick_main_thread AzrTimerStack matches 152 as @e[tag=AzrielBoss4,limit=1] at @s run summon marker ~ ~ ~ {Tags:["AzrielBoss4Rec2"]}
+    execute if score #Azr_Rec Azr_system matches 2 if score tick_main_thread AzrTimerStack matches 150..1000 as @e[type=marker,tag=AzrielBoss4Rec2,limit=1] at @s run function skyblock:azr/assets/events/stage/boss4/rec2
 
-    execute if score Azr_Rec Azr_system matches 3 if score tick_main_thread AzrTimerStack matches 150..1000 as @e[tag=AzrielBoss4,limit=1] at @s run tp @s ~ 42 ~
-    execute if score Azr_Rec Azr_system matches 3 if score tick_main_thread AzrTimerStack matches 150..1000 as @e[tag=AzrielBoss4,limit=1] at @s run function skyblock:azr/assets/events/stage/boss4/rec3
+    execute if score #Azr_Rec Azr_system matches 3 if score tick_main_thread AzrTimerStack matches 150..1000 as @e[tag=AzrielBoss4,limit=1] at @s run tp @s ~ 42 ~
+    execute if score #Azr_Rec Azr_system matches 3 if score tick_main_thread AzrTimerStack matches 150..1000 as @e[tag=AzrielBoss4,limit=1] at @s run function skyblock:azr/assets/events/stage/boss4/rec3
 
 execute if score tick_main_thread AzrTimerStack matches 240 unless score $azrch4bosstalk1 Azr_system matches 1 run tellraw @a[tag=azrShowDialog] {"text":"？？？：","color":"red"}
 execute if score tick_main_thread AzrTimerStack matches 240 unless score $azrch4bosstalk1 Azr_system matches 1 if score playerCount Azr_system matches 1 run tellraw @a[tag=azrShowDialog] {"text":"“你已经失去利用价值，反而会对鄙人造成威胁。鄙人会仁慈地将你送入无间地狱，赐你安详之死。”","color":"white"}
@@ -102,12 +102,12 @@ execute if score tick_main_thread AzrTimerStack matches 150..2000 if score @e[ta
 execute if score tick_main_thread AzrTimerStack matches 300..2000 unless entity @e[tag=AzrielBoss4,limit=1,scores={Health=10..}] run scoreboard players set tick_main_thread AzrTimerStack 2001
 
 execute if score tick_main_thread AzrTimerStack matches 2002 run bossbar remove azr:boss_hp_bar
-execute if score Azr_Rec Azr_system matches 2 if score tick_main_thread AzrTimerStack matches 2002 run stopsound @a[tag=azrShowDialog] music
-execute if score Azr_Rec Azr_system matches 2 if score tick_main_thread AzrTimerStack matches 2002 run playsound minecraft:entity.lightning_bolt.impact master @a[tag=azrShowDialog] -79536 51 -338 500 0.6
-execute if score Azr_Rec Azr_system matches 2 if score tick_main_thread AzrTimerStack matches 2002 run playsound minecraft:entity.lightning_bolt.impact master @a[tag=azrShowDialog] -79536 51 -338 500 0.5
-execute if score Azr_Rec Azr_system matches 2 if score tick_main_thread AzrTimerStack matches 2002 run playsound minecraft:entity.warden.angry master @a[tag=azrShowDialog] -79536 51 -338 500 0.8
-execute if score Azr_Rec Azr_system matches 2 if score tick_main_thread AzrTimerStack matches 2002 run playsound minecraft:entity.blaze.hurt master @a[tag=azrShowDialog] -79536 51 -338 50 0.7
-execute if score Azr_Rec Azr_system matches 2 if score tick_main_thread AzrTimerStack matches 2002 run playsound minecraft:entity.blaze.burn master @a[tag=azrShowDialog] -79536 51 -338 50 0.7
+execute if score #Azr_Rec Azr_system matches 2 if score tick_main_thread AzrTimerStack matches 2002 run stopsound @a[tag=azrShowDialog] music
+execute if score #Azr_Rec Azr_system matches 2 if score tick_main_thread AzrTimerStack matches 2002 run playsound minecraft:entity.lightning_bolt.impact master @a[tag=azrShowDialog] -79536 51 -338 500 0.6
+execute if score #Azr_Rec Azr_system matches 2 if score tick_main_thread AzrTimerStack matches 2002 run playsound minecraft:entity.lightning_bolt.impact master @a[tag=azrShowDialog] -79536 51 -338 500 0.5
+execute if score #Azr_Rec Azr_system matches 2 if score tick_main_thread AzrTimerStack matches 2002 run playsound minecraft:entity.warden.angry master @a[tag=azrShowDialog] -79536 51 -338 500 0.8
+execute if score #Azr_Rec Azr_system matches 2 if score tick_main_thread AzrTimerStack matches 2002 run playsound minecraft:entity.blaze.hurt master @a[tag=azrShowDialog] -79536 51 -338 50 0.7
+execute if score #Azr_Rec Azr_system matches 2 if score tick_main_thread AzrTimerStack matches 2002 run playsound minecraft:entity.blaze.burn master @a[tag=azrShowDialog] -79536 51 -338 50 0.7
 
 execute if score tick_main_thread AzrTimerStack matches 2002.. run effect clear @a[tag=azrPlayer] blindness
 execute if score tick_main_thread AzrTimerStack matches 2002.. run effect clear @e[tag=AzrielBossA,limit=3] invisibility
@@ -248,45 +248,45 @@ scoreboard players reset $AZSBoss4_94988 Azr_system
 
 #execute if entity @s[predicate=skyblock:c/10,predicate=skyblock:c/14] as @e[tag=AzrielBossA,limit=3] at @s if entity @e[tag=AzrB4LargeF] run tp @s @e[tag=AzrB4LargeF,limit=1]
 
-execute if score Azr_Rec Azr_system matches 1 if score tick_main_thread AzrTimerStack matches 2643..8000 as @e[tag=AzrielBoss4,limit=1] at @s unless block ~ ~ ~ air if score #rng5 Azr_system matches 1 as @a[tag=azrPlayer,limit=1,sort=random] at @s positioned ~ ~ ~ run tp @e[tag=AzrielBoss4,limit=1] ~ ~5 ~
-execute if score Azr_Rec Azr_system matches 1 if score tick_main_thread AzrTimerStack matches 2643..8000 as @e[tag=AzrielBoss4,limit=1] at @s unless block ~ ~ ~ air if score #rng5 Azr_system matches 2 as @a[tag=azrPlayer,limit=1,sort=random] at @s positioned ~ ~ ~ run tp @e[tag=AzrielBoss4,limit=1] ~3 ~5 ~
-execute if score Azr_Rec Azr_system matches 1 if score tick_main_thread AzrTimerStack matches 2643..8000 as @e[tag=AzrielBoss4,limit=1] at @s unless block ~ ~ ~ air if score #rng5 Azr_system matches 3 as @a[tag=azrPlayer,limit=1,sort=random] at @s positioned ~ ~ ~ run tp @e[tag=AzrielBoss4,limit=1] ~ ~5 ~3
-execute if score Azr_Rec Azr_system matches 1 if score tick_main_thread AzrTimerStack matches 2643..8000 as @e[tag=AzrielBoss4,limit=1] at @s unless block ~ ~ ~ air if score #rng5 Azr_system matches 4 as @a[tag=azrPlayer,limit=1,sort=random] at @s positioned ~ ~ ~ run tp @e[tag=AzrielBoss4,limit=1] ~-3 ~5 ~
-execute if score Azr_Rec Azr_system matches 1 if score tick_main_thread AzrTimerStack matches 2643..8000 as @e[tag=AzrielBoss4,limit=1] at @s unless block ~ ~ ~ air if score #rng5 Azr_system matches 5 as @a[tag=azrPlayer,limit=1,sort=random] at @s positioned ~ ~ ~ run tp @e[tag=AzrielBoss4,limit=1] ~ ~5 ~-3
-execute if score Azr_Rec Azr_system matches 1 if score tick_main_thread AzrTimerStack matches 2643..8000 as @e[tag=AzrielBoss4,limit=1] at @s unless block ~ ~1 ~ air if score #rng5 Azr_system matches 1 as @a[tag=azrPlayer,limit=1,sort=random] at @s positioned ~ ~ ~ run tp @e[tag=AzrielBoss4,limit=1] ~ ~5 ~
-execute if score Azr_Rec Azr_system matches 1 if score tick_main_thread AzrTimerStack matches 2643..8000 as @e[tag=AzrielBoss4,limit=1] at @s unless block ~ ~1 ~ air if score #rng5 Azr_system matches 2 as @a[tag=azrPlayer,limit=1,sort=random] at @s positioned ~ ~ ~ run tp @e[tag=AzrielBoss4,limit=1] ~3 ~5 ~
-execute if score Azr_Rec Azr_system matches 1 if score tick_main_thread AzrTimerStack matches 2643..8000 as @e[tag=AzrielBoss4,limit=1] at @s unless block ~ ~1 ~ air if score #rng5 Azr_system matches 3 as @a[tag=azrPlayer,limit=1,sort=random] at @s positioned ~ ~ ~ run tp @e[tag=AzrielBoss4,limit=1] ~ ~5 ~3
-execute if score Azr_Rec Azr_system matches 1 if score tick_main_thread AzrTimerStack matches 2643..8000 as @e[tag=AzrielBoss4,limit=1] at @s unless block ~ ~1 ~ air if score #rng5 Azr_system matches 4 as @a[tag=azrPlayer,limit=1,sort=random] at @s positioned ~ ~ ~ run tp @e[tag=AzrielBoss4,limit=1] ~-3 ~5 ~
-execute if score Azr_Rec Azr_system matches 1 if score tick_main_thread AzrTimerStack matches 2643..8000 as @e[tag=AzrielBoss4,limit=1] at @s unless block ~ ~1 ~ air if score #rng5 Azr_system matches 5 as @a[tag=azrPlayer,limit=1,sort=random] at @s positioned ~ ~ ~ run tp @e[tag=AzrielBoss4,limit=1] ~ ~5 ~-3
-execute if score Azr_Rec Azr_system matches 1 if score tick_main_thread AzrTimerStack matches 2643..8000 as @e[tag=AzrielBoss4,limit=1] at @s unless entity @a[tag=azrPlayer,distance=0..18] if score #rng5 Azr_system matches 5 as @a[tag=azrPlayer,limit=1,sort=random] at @s positioned ~ ~ ~ run tp @e[tag=AzrielBoss4,limit=1] ~ ~5 ~
+execute if score #Azr_Rec Azr_system matches 1 if score tick_main_thread AzrTimerStack matches 2643..8000 as @e[tag=AzrielBoss4,limit=1] at @s unless block ~ ~ ~ air if score #rng5 Azr_system matches 1 as @a[tag=azrPlayer,limit=1,sort=random] at @s positioned ~ ~ ~ run tp @e[tag=AzrielBoss4,limit=1] ~ ~5 ~
+execute if score #Azr_Rec Azr_system matches 1 if score tick_main_thread AzrTimerStack matches 2643..8000 as @e[tag=AzrielBoss4,limit=1] at @s unless block ~ ~ ~ air if score #rng5 Azr_system matches 2 as @a[tag=azrPlayer,limit=1,sort=random] at @s positioned ~ ~ ~ run tp @e[tag=AzrielBoss4,limit=1] ~3 ~5 ~
+execute if score #Azr_Rec Azr_system matches 1 if score tick_main_thread AzrTimerStack matches 2643..8000 as @e[tag=AzrielBoss4,limit=1] at @s unless block ~ ~ ~ air if score #rng5 Azr_system matches 3 as @a[tag=azrPlayer,limit=1,sort=random] at @s positioned ~ ~ ~ run tp @e[tag=AzrielBoss4,limit=1] ~ ~5 ~3
+execute if score #Azr_Rec Azr_system matches 1 if score tick_main_thread AzrTimerStack matches 2643..8000 as @e[tag=AzrielBoss4,limit=1] at @s unless block ~ ~ ~ air if score #rng5 Azr_system matches 4 as @a[tag=azrPlayer,limit=1,sort=random] at @s positioned ~ ~ ~ run tp @e[tag=AzrielBoss4,limit=1] ~-3 ~5 ~
+execute if score #Azr_Rec Azr_system matches 1 if score tick_main_thread AzrTimerStack matches 2643..8000 as @e[tag=AzrielBoss4,limit=1] at @s unless block ~ ~ ~ air if score #rng5 Azr_system matches 5 as @a[tag=azrPlayer,limit=1,sort=random] at @s positioned ~ ~ ~ run tp @e[tag=AzrielBoss4,limit=1] ~ ~5 ~-3
+execute if score #Azr_Rec Azr_system matches 1 if score tick_main_thread AzrTimerStack matches 2643..8000 as @e[tag=AzrielBoss4,limit=1] at @s unless block ~ ~1 ~ air if score #rng5 Azr_system matches 1 as @a[tag=azrPlayer,limit=1,sort=random] at @s positioned ~ ~ ~ run tp @e[tag=AzrielBoss4,limit=1] ~ ~5 ~
+execute if score #Azr_Rec Azr_system matches 1 if score tick_main_thread AzrTimerStack matches 2643..8000 as @e[tag=AzrielBoss4,limit=1] at @s unless block ~ ~1 ~ air if score #rng5 Azr_system matches 2 as @a[tag=azrPlayer,limit=1,sort=random] at @s positioned ~ ~ ~ run tp @e[tag=AzrielBoss4,limit=1] ~3 ~5 ~
+execute if score #Azr_Rec Azr_system matches 1 if score tick_main_thread AzrTimerStack matches 2643..8000 as @e[tag=AzrielBoss4,limit=1] at @s unless block ~ ~1 ~ air if score #rng5 Azr_system matches 3 as @a[tag=azrPlayer,limit=1,sort=random] at @s positioned ~ ~ ~ run tp @e[tag=AzrielBoss4,limit=1] ~ ~5 ~3
+execute if score #Azr_Rec Azr_system matches 1 if score tick_main_thread AzrTimerStack matches 2643..8000 as @e[tag=AzrielBoss4,limit=1] at @s unless block ~ ~1 ~ air if score #rng5 Azr_system matches 4 as @a[tag=azrPlayer,limit=1,sort=random] at @s positioned ~ ~ ~ run tp @e[tag=AzrielBoss4,limit=1] ~-3 ~5 ~
+execute if score #Azr_Rec Azr_system matches 1 if score tick_main_thread AzrTimerStack matches 2643..8000 as @e[tag=AzrielBoss4,limit=1] at @s unless block ~ ~1 ~ air if score #rng5 Azr_system matches 5 as @a[tag=azrPlayer,limit=1,sort=random] at @s positioned ~ ~ ~ run tp @e[tag=AzrielBoss4,limit=1] ~ ~5 ~-3
+execute if score #Azr_Rec Azr_system matches 1 if score tick_main_thread AzrTimerStack matches 2643..8000 as @e[tag=AzrielBoss4,limit=1] at @s unless entity @a[tag=azrPlayer,distance=0..18] if score #rng5 Azr_system matches 5 as @a[tag=azrPlayer,limit=1,sort=random] at @s positioned ~ ~ ~ run tp @e[tag=AzrielBoss4,limit=1] ~ ~5 ~
 
 
 execute if score tick_main_thread AzrTimerStack matches 2643..8000 run function skyblock:azr/system/utils/rng
-execute if score tick_main_thread AzrTimerStack matches 2643 if score #rng7 Azr_system matches 1 run scoreboard players set Azr_Rec Azr_system 1
-execute if score tick_main_thread AzrTimerStack matches 2643 if score #rng7 Azr_system matches 2 run scoreboard players set Azr_Rec Azr_system 2
-execute if score tick_main_thread AzrTimerStack matches 2643 if score #rng7 Azr_system matches 3 run scoreboard players set Azr_Rec Azr_system 3
-execute if score tick_main_thread AzrTimerStack matches 2643 if score #rng7 Azr_system matches 4..5 run scoreboard players set Azr_Rec Azr_system 4
-execute if score tick_main_thread AzrTimerStack matches 2643 if score #rng7 Azr_system matches 6..7 run scoreboard players set Azr_Rec Azr_system 5
+execute if score tick_main_thread AzrTimerStack matches 2643 if score #rng7 Azr_system matches 1 run scoreboard players set #Azr_Rec Azr_system 1
+execute if score tick_main_thread AzrTimerStack matches 2643 if score #rng7 Azr_system matches 2 run scoreboard players set #Azr_Rec Azr_system 2
+execute if score tick_main_thread AzrTimerStack matches 2643 if score #rng7 Azr_system matches 3 run scoreboard players set #Azr_Rec Azr_system 3
+execute if score tick_main_thread AzrTimerStack matches 2643 if score #rng7 Azr_system matches 4..5 run scoreboard players set #Azr_Rec Azr_system 4
+execute if score tick_main_thread AzrTimerStack matches 2643 if score #rng7 Azr_system matches 6..7 run scoreboard players set #Azr_Rec Azr_system 5
 execute if score tick_main_thread AzrTimerStack matches 2643 if score #rng7 Azr_system matches 1 run tellraw @a[tag=AzrDebug] {"text":"2700 rng6=1","color":"gray"}
 execute if score tick_main_thread AzrTimerStack matches 2643 if score #rng7 Azr_system matches 2 run tellraw @a[tag=AzrDebug] {"text":"2700 rng6=2","color":"gray"}
 execute if score tick_main_thread AzrTimerStack matches 2643 if score #rng7 Azr_system matches 3 run tellraw @a[tag=AzrDebug] {"text":"2700 rng6=3","color":"gray"}
 execute if score tick_main_thread AzrTimerStack matches 2643 if score #rng7 Azr_system matches 4..5 run tellraw @a[tag=AzrDebug] {"text":"2700 rng6=4 & 5","color":"gray"}
 execute if score tick_main_thread AzrTimerStack matches 2643 if score #rng7 Azr_system matches 6..7 run tellraw @a[tag=AzrDebug] {"text":"2700 rng6=6 & 7","color":"gray"}
 
-execute if score Azr_Rec Azr_system matches 1 if score tick_main_thread AzrTimerStack matches 2643..8000 as @e[tag=AzrielBoss4,limit=1] at @s run tp @s ~ 42 ~
-execute if score Azr_Rec Azr_system matches 1 if score tick_main_thread AzrTimerStack matches 2643..8000 as @e[tag=AzrielBoss4,limit=1] at @s run function skyblock:azr/assets/events/stage/boss4/rec1b
+execute if score #Azr_Rec Azr_system matches 1 if score tick_main_thread AzrTimerStack matches 2643..8000 as @e[tag=AzrielBoss4,limit=1] at @s run tp @s ~ 42 ~
+execute if score #Azr_Rec Azr_system matches 1 if score tick_main_thread AzrTimerStack matches 2643..8000 as @e[tag=AzrielBoss4,limit=1] at @s run function skyblock:azr/assets/events/stage/boss4/rec1b
 
-execute if score Azr_Rec Azr_system matches 2 if score tick_main_thread AzrTimerStack matches 2643 as @e[tag=AzrielBoss4,limit=1] at @s run tp @s ~ 52 ~
-execute if score Azr_Rec Azr_system matches 2 if score tick_main_thread AzrTimerStack matches 2643 run kill @e[type=marker,tag=AzrielBoss4Rec2]
-execute if score Azr_Rec Azr_system matches 2 if score tick_main_thread AzrTimerStack matches 2643 as @e[tag=AzrielBoss4,limit=1] at @s run summon marker ~ ~ ~ {Tags:["AzrielBoss4Rec2"]}
-execute if score Azr_Rec Azr_system matches 2 if score tick_main_thread AzrTimerStack matches 2643..8000 as @e[type=marker,tag=AzrielBoss4Rec2,limit=1] at @s run function skyblock:azr/assets/events/stage/boss4/rec2b
+execute if score #Azr_Rec Azr_system matches 2 if score tick_main_thread AzrTimerStack matches 2643 as @e[tag=AzrielBoss4,limit=1] at @s run tp @s ~ 52 ~
+execute if score #Azr_Rec Azr_system matches 2 if score tick_main_thread AzrTimerStack matches 2643 run kill @e[type=marker,tag=AzrielBoss4Rec2]
+execute if score #Azr_Rec Azr_system matches 2 if score tick_main_thread AzrTimerStack matches 2643 as @e[tag=AzrielBoss4,limit=1] at @s run summon marker ~ ~ ~ {Tags:["AzrielBoss4Rec2"]}
+execute if score #Azr_Rec Azr_system matches 2 if score tick_main_thread AzrTimerStack matches 2643..8000 as @e[type=marker,tag=AzrielBoss4Rec2,limit=1] at @s run function skyblock:azr/assets/events/stage/boss4/rec2b
 
-execute if score Azr_Rec Azr_system matches 3 if score tick_main_thread AzrTimerStack matches 2643..8000 as @e[tag=AzrielBoss4,limit=1] at @s run tp @s ~ 42 ~
-execute if score Azr_Rec Azr_system matches 3 if score tick_main_thread AzrTimerStack matches 2643..8000 as @e[tag=AzrielBoss4,limit=1] at @s run function skyblock:azr/assets/events/stage/boss4/rec3b
+execute if score #Azr_Rec Azr_system matches 3 if score tick_main_thread AzrTimerStack matches 2643..8000 as @e[tag=AzrielBoss4,limit=1] at @s run tp @s ~ 42 ~
+execute if score #Azr_Rec Azr_system matches 3 if score tick_main_thread AzrTimerStack matches 2643..8000 as @e[tag=AzrielBoss4,limit=1] at @s run function skyblock:azr/assets/events/stage/boss4/rec3b
 
-#execute if entity @s[scores={Azr_Rec=4..5,SeGa_StandLastQ=2630..8000}] as @e[tag=AzrielBoss4,limit=1] at @s run tp @s ~ ~10 ~
-execute if score Azr_Rec Azr_system matches 4 if score tick_main_thread AzrTimerStack matches 2643..8000 if entity @e[tag=AzrielBoss4,limit=1] as @r[tag=azrPlayer] at @s positioned ~ ~20 ~ run function skyblock:azr/assets/events/stage/boss4/rec4b
-execute if score Azr_Rec Azr_system matches 5 if score tick_main_thread AzrTimerStack matches 2643..8000 if entity @e[tag=AzrielBoss4,limit=1] as @r[tag=azrPlayer] at @s positioned ~ ~20 ~ run function skyblock:azr/assets/events/stage/boss4/rec4b2
+#execute if entity @s[scores={#Azr_Rec=4..5,SeGa_StandLastQ=2630..8000}] as @e[tag=AzrielBoss4,limit=1] at @s run tp @s ~ ~10 ~
+execute if score #Azr_Rec Azr_system matches 4 if score tick_main_thread AzrTimerStack matches 2643..8000 if entity @e[tag=AzrielBoss4,limit=1] as @r[tag=azrPlayer] at @s positioned ~ ~20 ~ run function skyblock:azr/assets/events/stage/boss4/rec4b
+execute if score #Azr_Rec Azr_system matches 5 if score tick_main_thread AzrTimerStack matches 2643..8000 if entity @e[tag=AzrielBoss4,limit=1] as @r[tag=azrPlayer] at @s positioned ~ ~20 ~ run function skyblock:azr/assets/events/stage/boss4/rec4b2
 
 execute if score tick_main_thread AzrTimerStack matches 2088..2289 as @e[tag=AzrielBossA,limit=1] at @s run scoreboard players set @s AzrEntityTimer 50
 scoreboard players set @e[tag=AzrielBossA,limit=1,scores={AzrEntityTimer=80..90}] AzrEntityTimer 81
