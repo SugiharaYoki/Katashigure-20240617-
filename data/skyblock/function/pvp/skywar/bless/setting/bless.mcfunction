@@ -7,20 +7,21 @@ tellraw @s [{"text":"选择你想使用的礼装","color":"yellow","bold": true}
 execute as @s at @s run function skyblock:city/id/read
 execute as @n[tag=id_data_reading,type=marker] at @s run tp @s ~2 ~ ~
 
-execute at @n[tag=id_data_reading,type=marker] run item replace block ~ ~ ~ container.8 with green_wool
-execute at @n[tag=id_data_reading,type=marker] run item replace block ~ ~ ~ container.1 with green_wool
-execute at @n[tag=id_data_reading,type=marker] run item replace block ~ ~ ~ container.2 with green_wool
-execute at @n[tag=id_data_reading,type=marker] run item replace block ~ ~ ~ container.3 with green_wool
-execute at @n[tag=id_data_reading,type=marker] run item replace block ~ ~ ~ container.5 with green_wool
-execute at @n[tag=id_data_reading,type=marker] run item replace block ~ ~ ~ container.6 with green_wool
-execute at @n[tag=id_data_reading,type=marker] run item replace block ~1 ~ ~ container.9 with green_wool
-execute at @n[tag=id_data_reading,type=marker] run item replace block ~ ~ ~ container.12 with green_wool
-execute at @n[tag=id_data_reading,type=marker] run item replace block ~1 ~ ~ container.2 with green_wool
-execute at @n[tag=id_data_reading,type=marker] run item replace block ~ ~ ~ container.9 with green_wool
-execute at @n[tag=id_data_reading,type=marker] run item replace block ~ ~ ~ container.15 with green_wool
-execute at @n[tag=id_data_reading,type=marker] run item replace block ~ ~ ~ container.19 with green_wool
-execute at @n[tag=id_data_reading,type=marker] run item replace block ~1 ~ ~ container.1 with green_wool
-execute at @n[tag=id_data_reading,type=marker] run item replace block ~1 ~ ~ container.7 with green_wool
+#execute as @n[tag=id_data_reading,type=marker] at @s run particle minecraft:end_rod ~ ~ ~ 0 5 0 0 100
+execute as @n[tag=id_data_reading,type=marker] at @s run item replace block ~ ~ ~ container.8 with green_wool
+execute as @n[tag=id_data_reading,type=marker] at @s run item replace block ~ ~ ~ container.1 with green_wool
+execute as @n[tag=id_data_reading,type=marker] at @s run item replace block ~ ~ ~ container.2 with green_wool
+execute as @n[tag=id_data_reading,type=marker] at @s run item replace block ~ ~ ~ container.3 with green_wool
+execute as @n[tag=id_data_reading,type=marker] at @s run item replace block ~ ~ ~ container.5 with green_wool
+execute as @n[tag=id_data_reading,type=marker] at @s run item replace block ~ ~ ~ container.6 with green_wool
+execute as @n[tag=id_data_reading,type=marker] at @s run item replace block ~1 ~ ~ container.9 with green_wool
+execute as @n[tag=id_data_reading,type=marker] at @s run item replace block ~ ~ ~ container.12 with green_wool
+execute as @n[tag=id_data_reading,type=marker] at @s run item replace block ~1 ~ ~ container.2 with green_wool
+execute as @n[tag=id_data_reading,type=marker] at @s run item replace block ~ ~ ~ container.9 with green_wool
+execute as @n[tag=id_data_reading,type=marker] at @s run item replace block ~ ~ ~ container.15 with green_wool
+execute as @n[tag=id_data_reading,type=marker] at @s run item replace block ~ ~ ~ container.19 with green_wool
+execute as @n[tag=id_data_reading,type=marker] at @s run item replace block ~1 ~ ~ container.1 with green_wool
+execute as @n[tag=id_data_reading,type=marker] at @s run item replace block ~1 ~ ~ container.7 with green_wool
 
 function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"旅行家"', title:'"启礼「黄金圣果」"', description:'"附魔金苹果×1"', id: 008, idsh: 8, pos: 0, idloop: 8}
 function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"旅行家"', title:'"统礼「末影水晶」"', description:'"末影水晶×1"', id: 001, idsh: 1, pos: 0, idloop: 1}

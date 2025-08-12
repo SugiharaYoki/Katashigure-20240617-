@@ -209,6 +209,7 @@ execute as @n[type=villager,tag=SEAiscariot,x=90100,y=100,z=100,distance=..250] 
 execute as @n[type=pillager,tag=SEApillager_npc1,x=90100,y=100,z=100,distance=..250] at @s if entity @a[tag=SEAPT,distance=0..3.4] run function skyblock:sea/e/ch5/event_array_building_pillagernpc
 
 execute unless entity @n[tag=SEAfiona] positioned 90126 122 23 run function skyblock:sea/m/unique/npc_fiona
-execute positioned 90126 122 23 run kill @e[type=witch,distance=0..200]
+execute positioned 90126 122 23 as @e[tag=SEAfiona,type=witch,distance=0..200] at @s run tp @s ~ ~-500 ~
+execute positioned 90126 122 23 run kill @e[tag=SEAfiona,type=witch]
 
 

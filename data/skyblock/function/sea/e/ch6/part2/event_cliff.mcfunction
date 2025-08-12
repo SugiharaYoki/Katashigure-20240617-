@@ -124,7 +124,7 @@ execute if score SEA_ch6_event rng5 matches 12563 positioned 90013 95 -1926 run 
 execute if score SEA_ch6_event rng5 matches 12563.. positioned 90013 95 -1926 run tp @a[tag=SEAPT,x=89980,y=0,z=-1917,dx=40,dy=33,dz=100,gamemode=adventure] 90009 57 -1861
 execute if score SEA_ch6_event rng5 matches 12563.. positioned 90013 95 -1926 if score SEA_ch6_event rng5 matches ..20000 run tp @a[tag=SEAPT,x=90020,y=0,z=-1917,dx=100,dy=19,dz=300,gamemode=adventure] 90009 57 -1861
 execute if score SEA_ch6_event rng5 matches 12563.. positioned 90013 95 -1926 if score SEA_ch6_event rng5 matches 20001.. run tp @a[tag=SEAPT,x=90020,y=0,z=-1917,dx=100,dy=19,dz=300,gamemode=adventure] 90046 21 -1815
-execute if score SEA_ch6_event rng5 matches 12563.. positioned 90013 95 -1926 if score SEA_ch6_event rng5 matches 20001.. run kill @n[tag=SEAmob,x=90020,y=0,z=-1917,dx=100,dy=19,dz=300,tag=!SEAboss6]
+execute if score SEA_ch6_event rng5 matches 12563.. positioned 90013 95 -1926 if score SEA_ch6_event rng5 matches 20001.. run kill @n[tag=SEAmob,x=90020,y=0,z=-1917,dx=100,dy=19,dz=300,tag=!SEAangel]
 execute if score SEA_ch6_event rng5 matches 12563.. positioned 90013 95 -1926 run tp @a[tag=SEAPT,x=89980,y=0,z=-1816,dx=40,dy=19,dz=100,gamemode=adventure] 90009 57 -1861
 
 
@@ -246,10 +246,10 @@ execute if score SEA_ch6_event rng5 matches 20001 positioned 90055 23 -1815 run 
 execute if score SEA_ch6_event rng5 matches 20001 positioned 90055 23 -1815 run particle minecraft:flash 90055 23 -1815
 execute if score SEA_ch6_event rng5 matches 20001 positioned 90055 23 -1815 run playsound minecraft:item.totem.use block @a ~ ~ ~ 1 0.8
 execute if score SEA_ch6_event rng5 matches 20001 positioned 90055 23 -1815 run playsound entity.lightning_bolt.thunder block @a ~ ~ ~ 1 0.8
-execute if score SEA_ch6_event rng5 matches 20001 run clear @a[tag=SEAPT] flint
-execute if score SEA_ch6_event rng5 matches 20001 run clear @a[tag=SEAPT] gunpowder
-execute if score SEA_ch6_event rng5 matches 20001 run clear @a[tag=SEAPT] coal
-execute if score SEA_ch6_event rng5 matches 20001 run clear @a[tag=SEAPT] raw_iron
+#execute if score SEA_ch6_event rng5 matches 20001 run clear @a[tag=SEAPT] flint
+#execute if score SEA_ch6_event rng5 matches 20001 run clear @a[tag=SEAPT] gunpowder
+#execute if score SEA_ch6_event rng5 matches 20001 run clear @a[tag=SEAPT] coal
+#execute if score SEA_ch6_event rng5 matches 20001 run clear @a[tag=SEAPT] raw_iron
 execute if score SEA_ch6_event rng5 matches 20001 run clear @a[tag=SEAPT] iron_ingot
 execute if score SEA_ch6_event rng5 matches 20001 run clear @a[tag=SEAPT] echo_shard
 execute if score SEA_ch6_event rng5 matches 20001 run clear @a[tag=SEAPT] gold_ingot
@@ -314,12 +314,23 @@ execute if score SEA_ch6_event rng5 matches 20108.. as @n[tag=SEAboss6] at @s ru
 execute if score SEA_ch6_event rng5 matches 20108.. as @n[tag=SEAboss6] at @s run particle small_gust ^-2.5 ^3.35 ^-2.3 0.23 0.28 0.23 0 4
 execute if score SEA_ch6_event rng5 matches 20108.. as @n[tag=SEAboss6] at @s run particle small_gust ^2.9 ^3.6 ^-2.6 0.25 0.28 0.25 0 4
 execute if score SEA_ch6_event rng5 matches 20108.. as @n[tag=SEAboss6] at @s run particle small_gust ^-2.9 ^3.6 ^-2.6 0.25 0.28 0.25 0 4
-execute if score SEA_ch6_event rng5 matches 20108 as @n[tag=SEAboss6] at @s run playsound entity.breeze.shoot hostile @a ~ ~ ~ 3 1.2
-execute if score SEA_ch6_event rng5 matches 20108 as @n[tag=SEAboss6] at @s run playsound entity.breeze.shoot hostile @a ~ ~ ~ 3 0.9
-execute if score SEA_ch6_event rng5 matches 20108 as @n[tag=SEAboss6] at @s run particle gust_emitter_large ^1.8 ^3.25 ^-0.5 0.1 0.1 0.1 3 5
-execute if score SEA_ch6_event rng5 matches 20108 as @n[tag=SEAboss6] at @s run particle gust_emitter_large ^-1.8 ^3.25 ^-0.5 0.1 0.1 0.1 3 5
-execute if score SEA_ch6_event rng5 matches 20108 as @n[tag=SEAboss6] at @s run particle small_gust ^1.8 ^3.25 ^-1.5 0.23 0.23 0.23 0 3
-execute if score SEA_ch6_event rng5 matches 20108 as @n[tag=SEAboss6] at @s run particle small_gust ^-1.8 ^3.25 ^-1.5 0.23 0.23 0.23 0 3
+
+execute if score SEA_ch6_event rng5 matches 20108.. as @n[tag=SEAboss6,tag=Phase1] at @s run particle small_gust ^1.4 ^3.2 ^-1.5 0.1 0.15 0.1 0 1
+execute if score SEA_ch6_event rng5 matches 20108.. as @n[tag=SEAboss6,tag=Phase1] at @s run particle small_gust ^-1.4 ^3.2 ^-1.5 0.1 0.15 0.1 0 1
+execute if score SEA_ch6_event rng5 matches 20108.. as @n[tag=SEAboss6,tag=Phase1] at @s run particle small_gust ^1.7 ^3.3 ^-1.8 0.1 0.15 0.1 0 1
+execute if score SEA_ch6_event rng5 matches 20108.. as @n[tag=SEAboss6,tag=Phase1] at @s run particle small_gust ^-1.7 ^3.3 ^-1.8 0.1 0.15 0.1 0 1
+execute if score SEA_ch6_event rng5 matches 20108.. as @n[tag=SEAboss6,tag=Phase1] at @s run particle small_gust ^2.0 ^3.45 ^-2.1 0.1 0.15 0.1 0 1
+execute if score SEA_ch6_event rng5 matches 20108.. as @n[tag=SEAboss6,tag=Phase1] at @s run particle small_gust ^-2.0 ^3.45 ^-2.1 0.1 0.15 0.1 0 1
+execute if score SEA_ch6_event rng5 matches 20108.. as @n[tag=SEAboss6,tag=Phase1] at @s run particle small_gust ^2.4 ^3.65 ^-2.4 0.13 0.19 0.13 0 2
+execute if score SEA_ch6_event rng5 matches 20108.. as @n[tag=SEAboss6,tag=Phase1] at @s run particle small_gust ^-2.4 ^3.65 ^-2.4 0.13 0.19 0.13 0 2
+execute if score SEA_ch6_event rng5 matches 20108.. as @n[tag=SEAboss6,tag=Phase1] at @s run particle small_gust ^2.7 ^3.9 ^-2.7 0.18 0.22 0.18 0 4
+execute if score SEA_ch6_event rng5 matches 20108.. as @n[tag=SEAboss6,tag=Phase1] at @s run particle small_gust ^-2.7 ^3.9 ^-2.7 0.18 0.22 0.18 0 2
+execute if score SEA_ch6_event rng5 matches 20108.. as @n[tag=SEAboss6,tag=Phase1] at @s run particle small_gust ^3.1 ^4.15 ^-3.0 0.23 0.28 0.23 0 2
+execute if score SEA_ch6_event rng5 matches 20108.. as @n[tag=SEAboss6,tag=Phase1] at @s run particle small_gust ^-3.1 ^4.15 ^-3.0 0.23 0.28 0.23 0 2
+execute if score SEA_ch6_event rng5 matches 20108.. as @n[tag=SEAboss6,tag=Phase1] at @s run particle small_gust ^3.5 ^4.35 ^-3.3 0.23 0.28 0.23 0 2
+execute if score SEA_ch6_event rng5 matches 20108.. as @n[tag=SEAboss6,tag=Phase1] at @s run particle small_gust ^-3.5 ^4.35 ^-3.3 0.23 0.28 0.23 0 2
+execute if score SEA_ch6_event rng5 matches 20108.. as @n[tag=SEAboss6,tag=Phase1] at @s run particle small_gust ^4.9 ^4.6 ^-4.6 0.25 0.28 0.25 0 4
+execute if score SEA_ch6_event rng5 matches 20108.. as @n[tag=SEAboss6,tag=Phase1] at @s run particle small_gust ^-4.9 ^4.6 ^-4.6 0.25 0.28 0.25 0 2
 
 execute if score SEA_ch6_event rng5 matches 20078 positioned 90064 22 -1815 run data modify entity @n[tag=SEAboss6] NoAI set value 0b
 execute if score SEA_ch6_event rng5 matches 20030 as @a[scores={SEAPT_member=1}] at @s run tellraw @a[distance=0..150] [{"text":"？？？：","color":"red","bold": true},{"text":"\n“既然一路走至此处，那吾也该报上名号了。”","color":"white","bold": false}]
@@ -339,7 +350,7 @@ execute store result score @n[tag=SEAboss6] health run data get entity @n[tag=SE
 
 execute if score SEA_ch6_event rng5 matches 20058.. as @e[tag=SEAboss6_summoner_a,type=marker] at @s run function skyblock:sea/e/ch6/boss6/attack_summon_marker
 
-
+execute if score SEA_ch6_event sea_4temp4 matches ..3 run scoreboard players add SEA_ch6_event sea_4temp4 1
 
 
 

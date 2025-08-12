@@ -46,5 +46,6 @@ execute as @n[tag=SEAedwina_ch6,tag=!SEAedwina_run] at @s run function skyblock:
 execute as @n[tag=SEAedwina_ch6,tag=SEAedwina_run] at @s run function skyblock:sea/e/ch6/edwina/core_run
 
 #最终boss
-execute if score SEA_ch6_event rng5 matches 20001.. as @n[tag=SEAboss6] at @s run function skyblock:sea/e/ch6/boss6/core
+execute if score SEA_ch6_event sea_4temp4 matches ..3 if score SEA_ch6_event rng5 matches 20001.. as @n[tag=SEAboss6] at @s run function skyblock:sea/e/ch6/boss6/core
+execute if score SEA_ch6_event sea_4temp4 matches 4.. run function skyblock:sea/e/ch6/boss6/conclusion_1
 

@@ -15,7 +15,7 @@ execute if score @s rng4 matches 41.. at @s run data modify entity @s NoAI set v
 execute if score @s rng4 matches 41 at @s run effect give @s resistance 2 4 true
 execute if score @s rng4 matches 41.. at @s run tp @s 90060 21 -1815
 
-execute if score @s rng4 matches 50.. at @s if score @s rng7 matches ..0 store result score @s rng9 run random value 1..7
+execute if score @s rng4 matches 50.. at @s if score @s rng7 matches ..0 store result score @s rng9 run random value 1..8
 execute if score @s rng4 matches 50.. at @s if score @s rng7 matches ..0 store result score @s rng7 run random value 1..8
 execute if score @s rng4 matches 50.. at @s if score @s rng7 matches 1.. run scoreboard players add @s rng7 1 
 
@@ -23,6 +23,7 @@ execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=1}] rng7 ma
 #execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=50}] rng7 matches 15 positioned ~6 21.1 ~06 run summon marker ~ 21.1 ~ {Tags:["SEA_boss6_burst_master"]}
 #execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=50}] rng7 matches 15 positioned ~6 21.1 ~-6 run summon marker ~ 21.1 ~ {Tags:["SEA_boss6_burst_master"]}
 execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=2..5}] rng7 matches 15 positioned ~ 21.1 ~ run summon marker ~ 21.1 ~ {Tags:["SEA_boss6_burst_master"]}
+execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=8}] rng7 matches 15 at @p[tag=SEAPT] positioned ~ 21.1 ~ run summon marker ~ 21.1 ~ {Tags:["SEA_boss6_burst_master"]}
 execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=1}] rng7 matches 15 as @n[tag=SEA_boss6_burst_master] at @s run tp @s ~ ~ ~ facing ~-1 ~ ~
 execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=50}] rng7 matches 15 as @n[tag=SEA_boss6_burst_master] at @s run tp @s ~ ~ ~ facing ~-1 ~ ~-1
 execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=50}] rng7 matches 15 as @n[tag=SEA_boss6_burst_master] at @s run tp @s ~ ~ ~ facing ~-1 ~ ~1
@@ -63,6 +64,19 @@ execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=6..7}] rng7
 execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=6..7}] rng7 matches 22 run fill ~8 ~ ~8 ~-8 ~ ~-8 air replace fire
 execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=6..7}] rng7 matches 23.. run scoreboard players set @s rng7 0
 
+execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=9}] rng7 matches 10 run summon marker ~ 21.0 ~ {Tags:["SEA_boss6_flame_anchor"]}
+execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=9}] rng7 matches 14 run summon marker ~1.5 21.0 ~ {Tags:["SEA_boss6_flame_anchor"]}
+execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=9}] rng7 matches 14 run summon marker ~-1.5 21.0 ~ {Tags:["SEA_boss6_flame_anchor"]}
+execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=9}] rng7 matches 14 run summon marker ~ 21.0 ~1.5 {Tags:["SEA_boss6_flame_anchor"]}
+execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=9}] rng7 matches 14 run summon marker ~ 21.0 ~-1.5 {Tags:["SEA_boss6_flame_anchor"]}
+execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=9}] rng7 matches 18 run summon marker ~3 21.0 ~ {Tags:["SEA_boss6_flame_anchor"]}
+execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=9}] rng7 matches 18 run summon marker ~-3 21.0 ~ {Tags:["SEA_boss6_flame_anchor"]}
+execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=9}] rng7 matches 18 run summon marker ~ 21.0 ~3 {Tags:["SEA_boss6_flame_anchor"]}
+execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=9}] rng7 matches 18 run summon marker ~ 21.0 ~-3 {Tags:["SEA_boss6_flame_anchor"]}
+
+execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=9}] rng7 matches 18 run scoreboard players set @s rng7 23
+execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=9}] rng7 matches 23.. run scoreboard players set @s rng7 0
+
 execute if score @s rng4 matches ..2999 at @s[scores={health=..199}] run scoreboard players set @s rng4 3000
 execute if score @s rng4 matches 4000.. at @s run scoreboard players set @s rng4 3000
 
@@ -82,6 +96,11 @@ execute if score @s rng4 matches 3050.. at @s run particle large_smoke ~ ~ ~ 8 0
 execute if score @s rng4 matches 3080 at @s run particle large_smoke ~ ~ ~ 8 0 8 0.3 120
 execute if score @s rng4 matches 3080 at @s run clone 90052 120 -1821 90067 120 -1809 90052 20 -1821
 execute if score @s rng4 matches 3080 at @s run tag @s add Phase4
+
+execute if score @s rng4 matches 3080 at @s positioned 90046 21 -1811 run summon marker ~ ~ ~ {Tags:["SEAboss6_summoner_a","SEAboss6_summoner_husk"]}
+execute if score @s rng4 matches 3080 at @s positioned 90046 21 -1819 run summon marker ~ ~ ~ {Tags:["SEAboss6_summoner_a","SEAboss6_summoner_husk"]}
+execute if score @s rng4 matches 3080 at @s positioned 90045 21 -1815 run summon marker ~ ~ ~ {Tags:["SEAboss6_summoner_a","SEAboss6_summoner_husk"]}
+
 
 execute if score @s rng4 matches 3080 at @s run scoreboard players set @s rng4 -2
 
