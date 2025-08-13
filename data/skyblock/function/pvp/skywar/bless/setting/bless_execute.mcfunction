@@ -2,7 +2,7 @@
 playsound minecraft:block.beacon.power_select ambient @s ~ ~ ~ 0.8 1.2\
 
 execute as @s at @s run function skyblock:city/id/read
-execute at @n[tag=id_data_reading,type=marker] run tp @s ~2 ~ ~
+execute as @n[tag=id_data_reading,type=marker] at @s run tp @s ~2 ~ ~
 
 execute as @s[scores={MultiMenu=131001}] at @s at @n[tag=id_data_reading,type=marker] if items block ~0 ~ ~0 container.1 green_wool run scoreboard players set @s ishtar_bless_1 1
 execute as @s[scores={MultiMenu=131002}] at @s at @n[tag=id_data_reading,type=marker] if items block ~0 ~ ~0 container.2 green_wool run scoreboard players set @s ishtar_bless_1 2
