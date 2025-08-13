@@ -75,7 +75,7 @@ execute if score SEA_ch6_event rng5 matches 12518 as @a[tag=SEAPT] at @s run att
 execute if score SEA_ch6_event rng5 matches 12516 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“越涵，怎么你……？！！”","color":"white"}]
 
 execute if score SEA_ch6_event rng5 matches 12532 as @n[tag=SEAyuehan] at @s run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
-execute if score SEA_ch6_event rng5 matches 12532 as @n[tag=SEAyuehan] at @s run tellraw @a[distance=0..250] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“可恶、我也不想死啊！！这是为了忒尔克西，为了我所有珍惜的人，为了国家为了党，为了这个世界！！”","color":"white","bold": false}]
+execute if score SEA_ch6_event rng5 matches 12532 as @n[tag=SEAyuehan] at @s run tellraw @a[distance=0..250] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“他妈的、我也不想死啊！！这是为了忒尔克西，为了我所有珍惜的人，为了国家为了党，为了这个世界！！”","color":"white","bold": false}]
 execute if score SEA_ch6_event rng5 matches 12544 as @n[tag=SEAyuehan] at @s run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
 execute if score SEA_ch6_event rng5 matches 12544 as @n[tag=SEAyuehan] at @s run tellraw @a[distance=0..250] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“操你妈逼的！！我叫沈越涵，记住老子的名字，老子要把你亲手送到你想去的天堂！！！”","color":"white","bold": false}]
 
