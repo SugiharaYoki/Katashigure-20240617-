@@ -76,7 +76,7 @@ execute if score @s sea_crafter matches 10059 as @s[scores={sea_i_emerald=..19}]
 execute if score @s sea_crafter matches 10059 as @s[scores={sea_i_emerald=20..}] run tag @s add sea_purchase_pass
 execute if entity @s[tag=sea_purchase_pass] run playsound minecraft:item.armor.equip_iron neutral @s ~ ~ ~ 100
 execute if entity @s[tag=sea_purchase_pass] run give @s shears[custom_name='{"text":"喷火器","italic":false,"color":"red"}',custom_data={sea_flamethrower:true},unbreakable={}]
-execute if entity @s[tag=sea_purchase_pass,tag=e_w_04b_eternal] run give @s snout_armor_trim_smithing_template[custom_name='{"text":"爆燃膛针 I","italic":false,"color":"red"}',custom_data={sea_t_shotgun1:true},lore=['{"text":"急霰 I 解锁喷火器右键攻击","color":"white","italic":false}','{"text":"对面前近距离造成大量伤害","color":"white","italic":false}','{"text":"消耗一份燃爆剂","color":"red","italic":false}']]
+execute if entity @s[tag=sea_purchase_pass,tag=e_w_04b_eternal] run give @s snout_armor_trim_smithing_template[custom_name='{"text":"爆燃膛针","italic":false,"color":"red"}',custom_data={sea_t_shotgun1:true},lore=['{"text":"急霰 I 解锁喷火器右键攻击","color":"white","italic":false}','{"text":"对面前近距离造成大量伤害","color":"white","italic":false}','{"text":"消耗一份燃爆剂","color":"red","italic":false}']]
 execute if entity @s[tag=sea_purchase_pass] run tellraw @a[gamemode=spectator,distance=0..20] [{"text":"◆ 玩家操作：","bold":true,"color":"yellow"},{"text":"通过工作站获得喷火器","bold":true,"color":"white"}]
 execute if entity @s[tag=sea_purchase_pass] run scoreboard players remove @s sea_i_emerald 20
 tag @s remove sea_purchase_pass
