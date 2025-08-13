@@ -21,7 +21,7 @@ execute if score SEAchg_spawn_timer_medical1 sea_4temp2 matches 1..9 as @n[tag=S
 execute if score SEAchg_spawn_timer_medical1 sea_4temp2 matches 5..9 run scoreboard players set SEAchg_spawn_timer_medical1 sea_4temp2 5
 
 execute if score SEAchg_spawn_timer_medical1 sea_4temp2 matches 12 run tellraw @a[tag=SEAPT] [{"text":"邪教徒弩手：","color":"green","bold": true},{"text":"\n“别……别打我！”","color":"white","bold": false}]
-execute if score SEAchg_spawn_timer_medical1 sea_4temp2 matches 28 if entity @n[tag=SEApillager_npc1] run tellraw @a[tag=SEAPT] [{"text":"邪教徒弩手：","color":"green","bold": true},{"text":"\n“邪教徒：“我只是来这里找药的，我没带武器！”","color":"white","bold": false}]
+execute if score SEAchg_spawn_timer_medical1 sea_4temp2 matches 28 if entity @n[tag=SEApillager_npc1] run tellraw @a[tag=SEAPT] [{"text":"邪教徒弩手：","color":"green","bold": true},{"text":"\n“我只是来这里找药的，我没带武器！”","color":"white","bold": false}]
 execute if score SEAchg_spawn_timer_medical1 sea_4temp2 matches 52 if entity @n[tag=SEApillager_npc1] run tellraw @a[tag=SEAPT] [{"text":"邪教徒弩手：","color":"green","bold": true},{"text":"\n“你、你看……我们也没什么纠葛，就、算了吧？”","color":"white","bold": false}]
 
 execute if score SEAchg_spawn_timer_medical1 sea_4temp2 matches 14 if entity @n[tag=SEApillager_npc1] run fill 90111 143 140 90111 143 142 air
