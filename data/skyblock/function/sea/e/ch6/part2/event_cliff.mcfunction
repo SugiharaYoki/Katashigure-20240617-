@@ -354,5 +354,6 @@ execute if score SEA_ch6_event sea_4temp4 matches ..3 run scoreboard players add
 
 
 
+execute if score SEA_ch6_event rng5 matches ..20058 if score SEA_ch6_event sea_4temp4 matches 2..3 run scoreboard players set SEA_ch6_event sea_4temp4 2
 
 
