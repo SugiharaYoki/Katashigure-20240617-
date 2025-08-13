@@ -4,6 +4,9 @@ tp @a[x=90000,y=100,z=100,distance=..5000,scores={sea_progress=..13},gamemode=!s
 
 function skyblock:sea/generate/stage_jump/to_ch5
 
+execute as @a[tag=SEAPT] at @s[scores={SEAPT_setting_recall=2}] run tag @s add sea_teleport15
+execute as @a[tag=SEAPT] at @s[scores={SEAPT_setting_recall=2}] run tag @s add sea_teleport16
+execute as @a[tag=SEAPT] at @s[scores={SEAPT_setting_recall=2}] run tag @s add sea_teleport17
 
 
 fill 90105 93 57 90105 94 57 minecraft:air

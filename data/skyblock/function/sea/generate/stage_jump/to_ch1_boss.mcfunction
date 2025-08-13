@@ -6,6 +6,10 @@ function skyblock:sea/generate/preload/map_prepare_ch1
 
 time set 13000t
 
+execute as @a[tag=SEAPT] at @s[scores={SEAPT_setting_recall=2}] run tag @s add sea_teleport01
+execute as @a[tag=SEAPT] at @s[scores={SEAPT_setting_recall=2}] run tag @s add sea_teleport02
+execute as @a[tag=SEAPT] at @s[scores={SEAPT_setting_recall=2}] run tag @s add sea_teleport03
+
 tp @a[x=90000,y=100,z=100,distance=0..300] 90091.92 122.00 104.97 facing 90081.92 122.00 104.97
 
 #clear @a[tag=SEAPT]

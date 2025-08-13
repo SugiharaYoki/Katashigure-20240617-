@@ -1,6 +1,8 @@
 
 tp @a[x=90000,y=100,z=100,distance=..5000,scores={sea_progress=..16},gamemode=!spectator] -43 55 0
 
+execute as @a[tag=SEAPT] at @s[scores={SEAPT_setting_recall=2}] run tag @s add sea_teleport18
+execute as @a[tag=SEAPT] at @s[scores={SEAPT_setting_recall=2}] run tag @s add sea_teleport19
 
 function skyblock:sea/generate/stage_jump/to_ch6
 

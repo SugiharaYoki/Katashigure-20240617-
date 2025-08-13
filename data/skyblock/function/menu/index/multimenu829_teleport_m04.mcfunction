@@ -3,6 +3,7 @@ scoreboard objectives add SEAPT_setting_fiona dummy
 scoreboard objectives add SEAPT_setting_yuehan dummy
 scoreboard objectives add SEAPT_setting_marilyn dummy
 scoreboard objectives add SEAPT_setting_trueend dummy
+scoreboard objectives add SEAPT_setting_recall dummy
 execute unless entity @s[scores={SEAPT_mode=0..}] run scoreboard players set @s SEAPT_mode 1
 scoreboard objectives add sea_setting_box_index dummy
 execute unless entity @s[scores={sea_setting_box_index=0..}] run scoreboard players set @s sea_setting_box_index 1

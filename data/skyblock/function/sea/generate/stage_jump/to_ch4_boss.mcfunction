@@ -3,7 +3,10 @@ tp @a[x=90000,y=100,z=100,distance=..5000,scores={sea_progress=..10},gamemode=!s
 
 function skyblock:sea/generate/stage_jump/to_ch4
 
-
+execute as @a[tag=SEAPT] at @s[scores={SEAPT_setting_recall=2}] run tag @s add sea_teleport11
+execute as @a[tag=SEAPT] at @s[scores={SEAPT_setting_recall=2}] run tag @s add sea_teleport12
+execute as @a[tag=SEAPT] at @s[scores={SEAPT_setting_recall=2}] run tag @s add sea_teleport13
+execute as @a[tag=SEAPT] at @s[scores={SEAPT_setting_recall=2}] run tag @s add sea_teleport14
 
 
 scoreboard players add @a[tag=SEAPT] sea_i_emerald 40
