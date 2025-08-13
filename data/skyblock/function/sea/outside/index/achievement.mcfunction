@@ -110,8 +110,8 @@ scoreboard players add @s[advancements={skyblock:sea/doc/w27=true}] rng4 1
  tellraw @s[scores={rng5=..3}] [{"text":"第五章 档案 ","color":"light_purple","bold": true},{"score":{"name":"@s","objective":"rng5"},"color":"white","bold": false},{"text":"/4","color":"white","bold": false}]
  tellraw @s[scores={rng5=4..}] [{"text":"第五章 档案 ","color":"light_purple","bold": true},{"score":{"name":"@s","objective":"rng5"},"color":"green","bold": false},{"text":"/4","color":"green","bold": false}]
 
- tellraw @s[scores={rng7=..4}] [{"text":"第六章 档案 ","color":"light_purple","bold": true},{"score":{"name":"@s","objective":"rng7"},"color":"white","bold": false},{"text":"/5","color":"white","bold": false}]
- tellraw @s[scores={rng7=5..}] [{"text":"第六章 档案 ","color":"light_purple","bold": true},{"score":{"name":"@s","objective":"rng7"},"color":"green","bold": false},{"text":"/5","color":"green","bold": false}]
+ tellraw @s[scores={rng7=..5}] [{"text":"第六章 档案 ","color":"light_purple","bold": true},{"score":{"name":"@s","objective":"rng7"},"color":"white","bold": false},{"text":"/6","color":"white","bold": false}]
+ tellraw @s[scores={rng7=6..}] [{"text":"第六章 档案 ","color":"light_purple","bold": true},{"score":{"name":"@s","objective":"rng7"},"color":"green","bold": false},{"text":"/6","color":"green","bold": false}]
 
  tellraw @s[scores={rng6=..7}] [{"text":"法莫洛斯的医疗报告 ","color":"light_purple","bold": true},{"score":{"name":"@s","objective":"rng6"},"color":"white","bold": false},{"text":"/8","color":"white","bold": false}]
  tellraw @s[scores={rng6=8..}] [{"text":"法莫洛斯的医疗报告 ","color":"light_purple","bold": true},{"score":{"name":"@s","objective":"rng6"},"color":"green","bold": false},{"text":"/8","color":"green","bold": false}]
