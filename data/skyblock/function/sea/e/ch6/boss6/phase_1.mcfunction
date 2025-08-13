@@ -55,6 +55,7 @@ execute if score @s rng4 matches 60 as @s at @s run playsound entity.generic.exp
 execute if score @s rng4 matches 60 as @s at @s run particle minecraft:white_ash ~ ~1.5 ~ 15 2 15 0 500
 
 execute if score @s[tag=!Phase1] rng4 matches 102 run tag @s add Phase1
+execute if score @s[tag=!Phase1] rng4 matches 102.. run scoreboard players set @s rng4 -5
 
 
 
