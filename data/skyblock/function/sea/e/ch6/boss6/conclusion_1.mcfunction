@@ -57,9 +57,9 @@ execute if score SEA_ch6_event sea_4temp4 matches 1362..1364 positioned 90061 -1
 execute if score SEA_ch6_event sea_4temp4 matches 1362..1364 positioned 90061 -10 -1815 run summon lightning_bolt
 execute if score SEA_ch6_event sea_4temp4 matches 1364 positioned 90061 8 -1815 run function skyblock:sea/m/unique/boss6b
 execute if score SEA_ch6_event sea_4temp4 matches 1364 positioned 90061 8 -1815 run effect give @n[tag=SEAboss6b] resistance infinite 9 true
-execute if score SEA_ch6_event sea_4temp4 matches 1364..1900 positioned 90061 29 -1815 as @n[tag=SEAboss6b,tag=!Phase6] at @s run data modify entity @s NoAI set value 1b
-execute if score SEA_ch6_event sea_4temp4 matches 1364..1900 positioned 90061 29 -1815 as @n[tag=SEAboss6b,tag=!Phase6] at @s run tag @s add Phase6
-execute if score SEA_ch6_event sea_4temp4 matches 1364..2000 positioned 90061 29 -1815 as @n[tag=SEAboss6b,tag=Phase6] at @s run rotate @s facing entity @p[tag=SEAPT]
+execute if score SEA_ch6_event sea_4temp4 matches 1364..1900 positioned 90061 31 -1815 as @n[tag=SEAboss6b,tag=!Phase6,distance=0..5] at @s run data modify entity @s NoAI set value 1b
+execute if score SEA_ch6_event sea_4temp4 matches 1364..1900 positioned 90061 31 -1815 as @n[tag=SEAboss6b,tag=!Phase6,distance=0..5] at @s run tag @s add Phase6
+execute if score SEA_ch6_event sea_4temp4 matches 1364..2000 positioned 90061 31 -1815 as @n[tag=SEAboss6b,tag=Phase6,distance=0..5] at @s run rotate @s facing entity @p[tag=SEAPT]
 
 execute if score SEA_ch6_event sea_4temp4 matches 1365.. run effect give @n[tag=SEAboss6b] levitation infinite 4 true
 execute if score SEA_ch6_event sea_4temp4 matches 1362 run bossbar add 9066602 "神圣的风暴 - 权之执理"
