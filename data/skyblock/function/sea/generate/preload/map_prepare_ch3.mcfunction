@@ -21,6 +21,15 @@ fill 90137 129 97 90136 129 97 air
 setblock 90082 144 120 minecraft:potted_cherry_sapling
 setblock 90132 138 106 minecraft:potted_cherry_sapling
 
+#水晶祀堂 TE箱子
+
+setblock 90097 132 99 air
+setblock 90097 132 99 chest[facing=south]{lock:{components:{custom_data:{"sea_key04":true}}}}
+item replace block 90097 132 99 container.4 with amethyst_shard 1
+item replace block 90097 132 99 container.12 with amethyst_shard 1
+item replace block 90097 132 99 container.14 with amethyst_shard 1
+item replace block 90097 132 99 container.22 with amethyst_shard 1
+
 #物资楼三楼
 setblock 90082 150 118 air
 #瓦罐章鱼

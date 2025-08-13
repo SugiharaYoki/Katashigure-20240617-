@@ -442,12 +442,6 @@ setblock 90140 104 23 chest[facing=north]
 #item replace block 90140 104 23 container.11 with echo_shard 2
 #item replace block 90140 104 23 container.15 with iron_ingot 2
 
-setblock 90097 132 99 air
-setblock 90097 132 99 chest[facing=south]{lock:{components:{custom_data:{"sea_key04":true}}}}
-item replace block 90097 132 99 container.4 with amethyst_shard 1
-item replace block 90097 132 99 container.12 with amethyst_shard 1
-item replace block 90097 132 99 container.14 with amethyst_shard 1
-item replace block 90097 132 99 container.22 with amethyst_shard 1
 
 fill 90132 124 19 90134 123 19 lever[facing=south]
 fill 90135 122 21 90135 122 22 air
