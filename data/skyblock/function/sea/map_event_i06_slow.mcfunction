@@ -30,6 +30,7 @@ execute positioned 90142 153 147 if entity @a[tag=SEAPT,tag=!SEAPF,distance=0..4
 #行政区二楼BOSS
 execute if score SEA_ch6_f2 rng3 matches 1.. run function skyblock:sea/e/ch6/part1/event_f2_mangrove
 execute if score SEA_ch6_f2 rng1 matches 1..300 if score SEA_ch6_f2 rng2 matches ..50 run function skyblock:sea/e/ch6/part1/event_f2_boss
+execute if score SEA_ch6_f2 rng1 matches 1..300 if score SEA_ch6_f2 rng2 matches 50.. run scoreboard players add SEA_ch6_f2 rng1 1
 
 execute if score SEA_ch6_event rng4 matches 1..3000 run function skyblock:sea/e/ch6/part1/event_f1_broadcast
 #行政区三楼 通讯总站
