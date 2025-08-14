@@ -1234,6 +1234,8 @@ forceload remove 90028 -1846
 
 #大船
 forceload add 90382 -1899 90401 -1835
+setblock 90385 245 -1902 air
+setblock 90385 245 -1902 minecraft:jukebox[has_record=true]{RecordItem:{id:"minecraft:music_disc_creator"}}
 setblock 90389 245 -1899 minecraft:redstone_block
 setblock 90389 245 -1899 minecraft:air
 setblock 90382 247 -1899 minecraft:flower_pot
