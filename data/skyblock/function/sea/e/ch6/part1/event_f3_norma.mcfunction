@@ -282,11 +282,14 @@ execute if score SEA_ch6_event rng6 matches 200 as @n[tag=SEAedwina] at @s run t
 execute if score SEA_ch6_event rng6 matches 390 as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
 execute if score SEA_ch6_event rng6 matches 390 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“我们已经做了所有我们能做的。”","color":"white","bold": false}]
 execute if score SEA_ch6_event rng6 matches 410 as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
-execute if score SEA_ch6_event rng6 matches 410 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“再见了……我的战友。我早就知道你拥有倒转时空的能力。”","color":"white","bold": false}]
+execute if score SEA_ch6_event rng6 matches 410 as @n[tag=SEAedwina] at @s unless entity @a[tag=SEAPT,scores={sea_count_dead=1..}] run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“再见了……我的战友。”","color":"white","bold": false}]
+execute if score SEA_ch6_event rng6 matches 410 as @n[tag=SEAedwina] at @s if entity @a[tag=SEAPT,scores={sea_count_dead=1..}] run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“我的战友，我早就知道你拥有倒转时空的能力。”","color":"white","bold": false}]
 execute if score SEA_ch6_event rng6 matches 440 as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
-execute if score SEA_ch6_event rng6 matches 440 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“下次见面的时候……我会再次尽我所能与你并肩作战。”","color":"white","bold": false}]
+execute if score SEA_ch6_event rng6 matches 440 as @n[tag=SEAedwina] at @s unless entity @a[tag=SEAPT,scores={sea_count_dead=1..}] run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“抱歉……我本该做得更好。事态演变成这一步，我有不可推卸的责任……”","color":"white","bold": false}]
+execute if score SEA_ch6_event rng6 matches 440 as @n[tag=SEAedwina] at @s if entity @a[tag=SEAPT,scores={sea_count_dead=1..}] run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“下次见面的时候……我会再次尽我所能与你并肩作战。”","color":"white","bold": false}]
 execute if score SEA_ch6_event rng6 matches 470 as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
-execute if score SEA_ch6_event rng6 matches 470 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“……愿我们来世再遇。”","color":"white","bold": false}]
+execute if score SEA_ch6_event rng6 matches 470 as @n[tag=SEAedwina] at @s unless entity @a[tag=SEAPT,scores={sea_count_dead=1..}] run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“真的很对不起，我对不起你们所有人……”","color":"white","bold": false}]
+execute if score SEA_ch6_event rng6 matches 470 as @n[tag=SEAedwina] at @s if entity @a[tag=SEAPT,scores={sea_count_dead=1..}] run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“……愿我们来世再遇。”","color":"white","bold": false}]
 
 execute if score SEA_ch6_event rng6 matches 482 run scoreboard players set SEA_ch6_event rng8 1
 
