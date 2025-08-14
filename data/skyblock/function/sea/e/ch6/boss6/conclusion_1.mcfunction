@@ -279,4 +279,7 @@ execute if score SEA_ch6_event sea_4temp4 matches ..2999 if entity @a[tag=SEAPT,
 
 execute if score SEA_ch6_event sea_4temp4 matches 7001 as @a[tag=SEAPT] at @s run effect give @s slowness 30 7 true
 
-
+execute if score SEA_ch6_event sea_4temp4 matches 7014 as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s run playsound entity.villager.ambient neutral @s ~ ~ ~ 0.4 1.4
+execute if score SEA_ch6_event sea_4temp4 matches 7014 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"熟悉的声音：","color":"green","bold": true},{"text":"\n“……伊曼纽尔，还好吗？”","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 7094 as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s run playsound entity.villager.ambient neutral @s ~ ~ ~ 0.4 1.4
+execute if score SEA_ch6_event sea_4temp4 matches 7094 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"熟悉的声音：","color":"green","bold": true},{"text":"\n“快醒醒、伊曼纽尔，我们成功躲过去了。”","color":"white","bold": false}]
