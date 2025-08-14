@@ -166,6 +166,20 @@ execute if score @s rng4 matches 2..3 run playsound minecraft:ambient.soul_sand_
 execute if score @s rng4 matches 22..23 run playsound minecraft:ambient.soul_sand_valley.mood ambient @a ~ ~ ~ 2 1.5
 execute if score @s rng4 matches 22..23 run playsound minecraft:ambient.soul_sand_valley.mood ambient @a ~ ~ ~ 2 1.2
 
+execute if score SEA_ch6_event sea_4temp4 matches 1690 as @n[tag=SEAedwina] at @s positioned 90055 20 -1820 run particle explosion ~ ~ ~ 1 0.5 1 0 1
+execute if score SEA_ch6_event sea_4temp4 matches 1690 as @n[tag=SEAedwina] at @s positioned 90055 20 -1810 run particle explosion ~ ~ ~ 1 0.5 1 0 1
+execute if score SEA_ch6_event sea_4temp4 matches 1690 as @n[tag=SEAedwina] at @s positioned 90052 20 -1815 run particle explosion ~ ~ ~ 1 0.5 1 0 1
+execute if score SEA_ch6_event sea_4temp4 matches 1690 as @n[tag=SEAedwina] at @s positioned 90055 20 -1820 run playsound entity.generic.explode block @a ~ ~ ~ 1 1.1
+execute if score SEA_ch6_event sea_4temp4 matches 1690 as @n[tag=SEAedwina] at @s positioned 90055 20 -1810 run playsound entity.generic.explode block @a ~ ~ ~ 1 1.1
+execute if score SEA_ch6_event sea_4temp4 matches 1690 as @n[tag=SEAedwina] at @s positioned 90052 20 -1815 run playsound entity.generic.explode block @a ~ ~ ~ 1 1.1
+execute if score SEA_ch6_event sea_4temp4 matches 1700 as @n[tag=SEAedwina] at @s positioned 90052 20 -1823 run particle explosion ~ ~ ~ 1 0.5 1 0 1
+execute if score SEA_ch6_event sea_4temp4 matches 1700 as @n[tag=SEAedwina] at @s positioned 90052 20 -1807 run particle explosion ~ ~ ~ 1 0.5 1 0 1
+execute if score SEA_ch6_event sea_4temp4 matches 1700 as @n[tag=SEAedwina] at @s positioned 90050 20 -1815 run particle explosion ~ ~ ~ 1 0.5 1 0 1
+execute if score SEA_ch6_event sea_4temp4 matches 1700 as @n[tag=SEAedwina] at @s positioned 90052 20 -1823 run playsound entity.generic.explode block @a ~ ~ ~ 1 1.1
+execute if score SEA_ch6_event sea_4temp4 matches 1700 as @n[tag=SEAedwina] at @s positioned 90052 20 -1807 run playsound entity.generic.explode block @a ~ ~ ~ 1 1.1
+execute if score SEA_ch6_event sea_4temp4 matches 1700 as @n[tag=SEAedwina] at @s positioned 90050 20 -1815 run playsound entity.generic.explode block @a ~ ~ ~ 1 1.1
+
+
 
 execute if score SEA_ch6_event sea_4temp4 matches 1680 as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.4
 execute if score SEA_ch6_event sea_4temp4 matches 1680 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“快退后！！我们绝不能在这种时候死了，退后！！”","color":"white","bold": false}]
