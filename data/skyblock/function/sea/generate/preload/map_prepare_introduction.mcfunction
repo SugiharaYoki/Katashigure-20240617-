@@ -1233,10 +1233,10 @@ forceload remove 90028 -1846
 
 
 #大船
-forceload add 90389 -1899 90401 -1835
+forceload add 90382 -1899 90401 -1835
 setblock 90389 245 -1899 minecraft:redstone_block
 setblock 90389 245 -1899 minecraft:air
-
+setblock 90382 247 -1899 minecraft:flower_pot
 
 forceload remove 90389 -1899 90401 -1835
 
