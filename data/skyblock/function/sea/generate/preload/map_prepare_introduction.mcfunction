@@ -1230,3 +1230,17 @@ forceload remove 90142 -1886 90209 -1838
 forceload remove 89977 -1938 90038 -1925
 forceload remove 90012 -1858 90007 -1863
 forceload remove 90028 -1846
+
+
+#大船
+forceload add 90389 -1899 90401 -1835
+setblock 90389 245 -1899 minecraft:redstone_block
+setblock 90389 245 -1899 minecraft:air
+
+
+forceload remove 90389 -1899 90401 -1835
+
+
+
+
+
