@@ -195,7 +195,76 @@ execute if score SEA_ch6_event sea_4temp4 matches 1680 as @n[tag=SEAedwina] at @
 execute if score SEA_ch6_event sea_4temp4 matches 1680 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“快退后！！我们绝不能在这种时候死了，退后！！”","color":"white","bold": false}]
 execute if score SEA_ch6_event sea_4temp4 matches 1680.. as @n[tag=SEAedwina] at @s run effect give @a[tag=SEAPT] regeneration 10 9 true
 
-execute if score SEA_ch6_event sea_4temp4 matches 1710 as @p[tag=SEAPT] at @s run stopsound @a[distance=0..200]
-execute if score SEA_ch6_event sea_4temp4 matches 1710 as @p[tag=SEAPT] at @s run tp @s 90385 245 -1899 facing 90387 245 -1899
+execute if score SEA_ch6_event sea_4temp4 matches 1710 as @a[tag=SEAPT] at @s run stopsound @a[distance=0..200]
+execute if score SEA_ch6_event sea_4temp4 matches 1710 as @a[tag=SEAPT] at @s run tp @s 90385 245 -1899 facing 90387 245 -1899
+execute if score SEA_ch6_event sea_4temp4 matches 1710 as @a[tag=SEAPT] at @s run attribute @s max_health modifier remove seaboss6:health
+execute if score SEA_ch6_event sea_4temp4 matches 1710 as @a[tag=SEAPT] at @s run clear @s
+execute if score SEA_ch6_event sea_4temp4 matches 1710 as @a[tag=SEAPT] at @s run effect clear @s
+execute if score SEA_ch6_event sea_4temp4 matches 1710 as @a[tag=SEAPT] at @s run effect give @s darkness 3 0 true
 #execute if score SEA_ch6_event sea_4temp4 matches 1682..2000 as @n[tag=SEAboss6b] at @s positioned ~ ~ ~ run 
+
+execute if score SEA_ch6_event sea_4temp4 matches 1710 as @a[tag=SEAPT] at @s run attribute @s minecraft:armor modifier remove sea_t_armor1
+execute if score SEA_ch6_event sea_4temp4 matches 1710 as @a[tag=SEAPT] at @s run attribute @s minecraft:armor modifier remove sea_t_armor2
+execute if score SEA_ch6_event sea_4temp4 matches 1710 as @a[tag=SEAPT] at @s run attribute @s minecraft:armor modifier remove sea_t_armor3
+execute if score SEA_ch6_event sea_4temp4 matches 1710 as @a[tag=SEAPT] at @s run attribute @s minecraft:armor modifier remove sea_t_armor4
+execute if score SEA_ch6_event sea_4temp4 matches 1710 as @a[tag=SEAPT] at @s run attribute @s minecraft:armor modifier remove sea_t_armor5
+execute if score SEA_ch6_event sea_4temp4 matches 1710 as @a[tag=SEAPT] at @s run attribute @s minecraft:armor_toughness modifier remove sea_t_tough1
+execute if score SEA_ch6_event sea_4temp4 matches 1710 as @a[tag=SEAPT] at @s run attribute @s minecraft:armor_toughness modifier remove sea_t_tough2
+execute if score SEA_ch6_event sea_4temp4 matches 1710 as @a[tag=SEAPT] at @s run attribute @s minecraft:armor_toughness modifier remove sea_t_tough3
+execute if score SEA_ch6_event sea_4temp4 matches 1710 as @a[tag=SEAPT] at @s run attribute @s minecraft:armor_toughness modifier remove sea_t_tough4
+execute if score SEA_ch6_event sea_4temp4 matches 1710 as @a[tag=SEAPT] at @s run attribute @s minecraft:armor_toughness modifier remove sea_t_tough5
+execute if score SEA_ch6_event sea_4temp4 matches 1710 as @a[tag=SEAPT] at @s run attribute @s minecraft:attack_damage modifier remove sea_t_damage1
+execute if score SEA_ch6_event sea_4temp4 matches 1710 as @a[tag=SEAPT] at @s run attribute @s minecraft:attack_damage modifier remove sea_t_damage2
+execute if score SEA_ch6_event sea_4temp4 matches 1710 as @a[tag=SEAPT] at @s run attribute @s minecraft:attack_damage modifier remove sea_t_damage3
+execute if score SEA_ch6_event sea_4temp4 matches 1710 as @a[tag=SEAPT] at @s run attribute @s minecraft:attack_damage modifier remove sea_t_damage4
+execute if score SEA_ch6_event sea_4temp4 matches 1710 as @a[tag=SEAPT] at @s run attribute @s minecraft:attack_damage modifier remove sea_t_damage5
+execute if score SEA_ch6_event sea_4temp4 matches 1710 as @a[tag=SEAPT] at @s run attribute @s minecraft:movement_speed modifier remove sea_t_speed1
+execute if score SEA_ch6_event sea_4temp4 matches 1710 as @a[tag=SEAPT] at @s run attribute @s minecraft:movement_speed modifier remove sea_t_speed2
+execute if score SEA_ch6_event sea_4temp4 matches 1710 as @a[tag=SEAPT] at @s run attribute @s minecraft:movement_speed modifier remove sea_t_speed3
+execute if score SEA_ch6_event sea_4temp4 matches 1710 as @a[tag=SEAPT] at @s run attribute @s minecraft:movement_speed modifier remove sea_t_speed4
+execute if score SEA_ch6_event sea_4temp4 matches 1710 as @a[tag=SEAPT] at @s run attribute @s minecraft:movement_speed modifier remove sea_t_speed5
+execute if score SEA_ch6_event sea_4temp4 matches 1710 as @a[tag=SEAPT] at @s run attribute @s minecraft:attack_speed modifier remove sea_t_attackspeed1
+execute if score SEA_ch6_event sea_4temp4 matches 1710 as @a[tag=SEAPT] at @s run attribute @s minecraft:attack_speed modifier remove sea_t_attackspeed2
+execute if score SEA_ch6_event sea_4temp4 matches 1710 as @a[tag=SEAPT] at @s run attribute @s minecraft:attack_speed modifier remove sea_t_attackspeed3
+execute if score SEA_ch6_event sea_4temp4 matches 1710 as @a[tag=SEAPT] at @s run attribute @s minecraft:attack_speed modifier remove sea_t_attackspeed4
+execute if score SEA_ch6_event sea_4temp4 matches 1710 as @a[tag=SEAPT] at @s run attribute @s minecraft:attack_speed modifier remove sea_t_attackspeed5
+execute if score SEA_ch6_event sea_4temp4 matches 1710 as @a[tag=SEAPT] at @s run attribute @s minecraft:max_health modifier remove sea_t_health1
+execute if score SEA_ch6_event sea_4temp4 matches 1710 as @a[tag=SEAPT] at @s run attribute @s minecraft:max_health modifier remove sea_t_health2
+execute if score SEA_ch6_event sea_4temp4 matches 1710 as @a[tag=SEAPT] at @s run attribute @s minecraft:max_health modifier remove sea_t_health3
+execute if score SEA_ch6_event sea_4temp4 matches 1710 as @a[tag=SEAPT] at @s run attribute @s minecraft:max_health modifier remove sea_t_health4
+execute if score SEA_ch6_event sea_4temp4 matches 1710 as @a[tag=SEAPT] at @s run attribute @s minecraft:max_health modifier remove sea_t_health5
+execute if score SEA_ch6_event sea_4temp4 matches 1710 as @a[tag=SEAPT] at @s run attribute @s minecraft:attack_knockback modifier remove sea_t_knockback1
+execute if score SEA_ch6_event sea_4temp4 matches 1710 as @a[tag=SEAPT] at @s run attribute @s minecraft:attack_knockback modifier remove sea_t_knockback2
+execute if score SEA_ch6_event sea_4temp4 matches 1710 as @a[tag=SEAPT] at @s run attribute @s minecraft:attack_knockback modifier remove sea_t_knockback3
+execute if score SEA_ch6_event sea_4temp4 matches 1710 as @a[tag=SEAPT] at @s run attribute @s minecraft:attack_knockback modifier remove sea_t_knockback4
+execute if score SEA_ch6_event sea_4temp4 matches 1710 as @a[tag=SEAPT] at @s run attribute @s minecraft:attack_knockback modifier remove sea_t_knockback5
+
+execute if score SEA_ch6_event sea_4temp4 matches 1710 as @a[tag=SEAPT] at @s run attribute @s minecraft:max_health modifier remove seaboss6:health
+
+execute if score SEA_ch6_event sea_4temp4 matches 1710 as @a[tag=SEAPT] at @s run attribute @s minecraft:movement_speed modifier remove sea:marilyn_01
+execute if score SEA_ch6_event sea_4temp4 matches 1710 as @a[tag=SEAPT] at @s run attribute @s minecraft:jump_strength modifier remove sea:marilyn_01
+
+execute if score SEA_ch6_event sea_4temp4 matches 1710 as @a[tag=SEAPT] at @s run attribute @s movement_speed modifier remove sea_running_1a
+execute if score SEA_ch6_event sea_4temp4 matches 1710 as @a[tag=SEAPT] at @s run attribute @s knockback_resistance modifier remove sea_running_1b
+execute if score SEA_ch6_event sea_4temp4 matches 1710 as @a[tag=SEAPT] at @s run attribute @s armor modifier remove sea_running_1c
+
+execute if score SEA_ch6_event sea_4temp4 matches 1710 as @a[tag=SEAPT] at @s run attribute @s armor modifier remove sea_weapon:upg_armor01
+execute if score SEA_ch6_event sea_4temp4 matches 1710 as @a[tag=SEAPT] at @s run attribute @s armor_toughness modifier remove sea_weapon:upg_armor02
+
+execute if score SEA_ch6_event sea_4temp4 matches 1741 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"你：","color":"aqua","bold": true},{"text":"\n“……艾德雯娜？”","color":"white"}]
+execute if score SEA_ch6_event sea_4temp4 matches 1841 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"你：","color":"aqua","bold": true},{"text":"\n“艾德雯娜，你去哪了？……这里是哪？”","color":"white"}]
+execute if score SEA_ch6_event sea_4temp4 matches 2041 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"你：","color":"aqua","bold": true},{"text":"\n“是那艘游轮。为什么我会回忆起这里？”","color":"white"}]
+execute if score SEA_ch6_event sea_4temp4 matches 2241 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"你：","color":"aqua","bold": true},{"text":"\n“我在这里侦破了一起跨国人口贩卖案。”","color":"white"}]
+execute if score SEA_ch6_event sea_4temp4 matches 2321 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"你：","color":"aqua","bold": true},{"text":"\n“虽然救下了数十名女孩，但我招惹到的是公海上势力强大的犯罪团体。”","color":"white"}]
+execute if score SEA_ch6_event sea_4temp4 matches 2401 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"你：","color":"aqua","bold": true},{"text":"\n“我十分确信自己的父母和未婚妻是受他们报复被杀害。”","color":"white"}]
+execute if score SEA_ch6_event sea_4temp4 matches 2481 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"你：","color":"aqua","bold": true},{"text":"\n“后来，我也只有大海能够依靠。虽然当不了海警，我却仍能从事维修工作。”","color":"white"}]
+execute if score SEA_ch6_event sea_4temp4 matches 2565 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"你：","color":"aqua","bold": true},{"text":"\n“我在前些日子一直梦见忒尔克西钻井平台。我十分确信自己是被选中的人。”","color":"white"}]
+execute if score SEA_ch6_event sea_4temp4 matches 2645 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"你：","color":"aqua","bold": true},{"text":"\n“只不过……为什么，要选中我？偏偏是我？”","color":"white"}]
+
+
+
+
+
+
+
 
