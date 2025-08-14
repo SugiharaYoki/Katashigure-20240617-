@@ -1061,6 +1061,31 @@ fill 90104 105 36 90104 105 51 minecraft:waxed_copper_trapdoor[facing=west]
 item replace block 90148 145 152 container.4 with air
 item replace block 90148 145 152 container.5 with air
 
+scoreboard players set SEA_ch6_event rng1 0
+scoreboard players set SEA_ch6_event rng2 0
+scoreboard players set SEA_ch6_event rng3 0
+scoreboard players set SEA_ch6_event rng4 0
+scoreboard players set SEA_ch6_event rng5 0
+scoreboard players set SEA_ch6_event rng6 0
+scoreboard players set SEA_ch6_event rng7 0
+scoreboard players set SEA_ch6_event rng8 0
+scoreboard players set SEA_ch6_event rng9 0
+scoreboard players set SEA_ch6_event rng10 0
+scoreboard players set SEA_ch6_event sea_4temp1 0
+scoreboard players set SEA_ch6_event sea_4temp2 0
+scoreboard players set SEA_ch6_event sea_4temp3 0
+#boss用
+scoreboard players set SEA_ch6_event sea_4temp4 0
+scoreboard players set SEA_ch6_event sea_4temp5 0
+scoreboard players set SEA_ch6_event sea_4temp6 0
+scoreboard players set SEA_ch6_event sea_4temp7 0
+scoreboard players set SEA_ch6_event sea_4temp8 0
+#2楼事件
+scoreboard players set SEA_ch6_f2 rng1 0
+scoreboard players set SEA_ch6_f2 rng2 0
+scoreboard players set SEA_ch6_f2 rng3 0
+scoreboard players set SEA_ch6_f2 rng4 0
+
 #第六章后半
 
 setblock 90197 175 -1879 minecraft:composter

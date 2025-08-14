@@ -15,30 +15,7 @@ scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 sea_4temp8 0
 tag 10e959db-4b44-4cdd-b98c-350d3b454206 add SeGa_sea_ch6
 scoreboard players set SEAmusic rng1 0
 
-scoreboard players set SEA_ch6_event rng1 0
-scoreboard players set SEA_ch6_event rng2 0
-scoreboard players set SEA_ch6_event rng3 0
-scoreboard players set SEA_ch6_event rng4 0
-scoreboard players set SEA_ch6_event rng5 0
-scoreboard players set SEA_ch6_event rng6 0
-scoreboard players set SEA_ch6_event rng7 0
-scoreboard players set SEA_ch6_event rng8 0
-scoreboard players set SEA_ch6_event rng9 0
-scoreboard players set SEA_ch6_event rng10 0
-scoreboard players set SEA_ch6_event sea_4temp1 0
-scoreboard players set SEA_ch6_event sea_4temp2 0
-scoreboard players set SEA_ch6_event sea_4temp3 0
-#boss用
-scoreboard players set SEA_ch6_event sea_4temp4 0
-scoreboard players set SEA_ch6_event sea_4temp5 0
-scoreboard players set SEA_ch6_event sea_4temp6 0
-scoreboard players set SEA_ch6_event sea_4temp7 0
-scoreboard players set SEA_ch6_event sea_4temp8 0
-#2楼事件
-scoreboard players set SEA_ch6_f2 rng1 0
-scoreboard players set SEA_ch6_f2 rng2 0
-scoreboard players set SEA_ch6_f2 rng3 0
-scoreboard players set SEA_ch6_f2 rng4 0
+
 
 fill 90134 130 58 90134 130 59 minecraft:heavy_weighted_pressure_plate
 fill 90142 132 46 90142 130 46 air
