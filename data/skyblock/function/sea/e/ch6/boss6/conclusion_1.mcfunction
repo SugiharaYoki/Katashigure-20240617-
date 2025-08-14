@@ -272,9 +272,11 @@ execute if score SEA_ch6_event sea_4temp4 matches 2908 as @p[tag=SEAPT] at @s ru
 execute if score SEA_ch6_event sea_4temp4 matches 2988 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"你：","color":"aqua","bold": true},{"text":"\n“可为什么……直至如今，我都不认为自己找到了自己需要的东西？”","color":"white"}]
 
 
+
 execute if score SEA_ch6_event sea_4temp4 matches ..2906 if entity @a[tag=SEAPT,tag=!SEAPF,x=90392,y=249,z=-1836,dx=10,dy=10,dz=10] run scoreboard players set SEA_ch6_event sea_4temp4 2907
+execute if score SEA_ch6_event sea_4temp4 matches 2990..2998 run scoreboard players set SEA_ch6_event sea_4temp4 2990
+execute if score SEA_ch6_event sea_4temp4 matches ..2999 if entity @a[tag=SEAPT,tag=!SEAPF,x=90395,y=253,z=-1853,dx=20,dy=10,dz=10] run scoreboard players set SEA_ch6_event sea_4temp4 4000
 
-
-
+execute if score SEA_ch6_event sea_4temp4 matches 4001 as @a[tag=SEAPT] at @s run effect give @s slowness 30 7 true
 
 
