@@ -200,13 +200,14 @@ execute if score SEA_ch6_event sea_4temp4 matches 1680 as @n[tag=SEAedwina] at @
 execute if score SEA_ch6_event sea_4temp4 matches 1680 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“快退后！！我们绝不能在这种时候死了，退后！！”","color":"white","bold": false}]
 execute if score SEA_ch6_event sea_4temp4 matches 1680.. as @n[tag=SEAedwina] at @s run effect give @a[tag=SEAPT] regeneration 10 9 true
 
-execute if score SEA_ch6_event sea_4temp4 matches 1790 as @a[tag=SEAPT] at @s run tag @a[tag=SEAedwina] remove SEAedwina_ch6
+execute if score SEA_ch6_event sea_4temp4 matches 1790 as @a[tag=SEAPT] at @s run tag @n[tag=SEAedwina] remove SEAedwina_ch6
 execute if score SEA_ch6_event sea_4temp4 matches 1790 as @a[tag=SEAPT] at @s run stopsound @a[distance=0..200]
 execute if score SEA_ch6_event sea_4temp4 matches 1790 as @a[tag=SEAPT] at @s run tp @s 90385 245 -1899 facing 90387 245 -1899
 execute if score SEA_ch6_event sea_4temp4 matches 1790 as @a[tag=SEAPT] at @s run attribute @s max_health modifier remove seaboss6:health
 execute if score SEA_ch6_event sea_4temp4 matches 1790 as @a[tag=SEAPT] at @s run clear @s
 execute if score SEA_ch6_event sea_4temp4 matches 1790 as @a[tag=SEAPT] at @s run effect clear @s
 execute if score SEA_ch6_event sea_4temp4 matches 1790 as @a[tag=SEAPT] at @s run effect give @s darkness 3 0 true
+execute if score SEA_ch6_event sea_4temp4 matches 1790 run bossbar remove 9066602
 #execute if score SEA_ch6_event sea_4temp4 matches 1682..2000 as @n[tag=SEAboss6b] at @s positioned ~ ~ ~ run 
 
 execute if score SEA_ch6_event sea_4temp4 matches 1790 as @a[tag=SEAPT] at @s run attribute @s minecraft:armor modifier remove sea_t_armor1
