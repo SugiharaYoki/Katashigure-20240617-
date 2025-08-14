@@ -269,9 +269,10 @@ execute if score SEA_ch6_event sea_4temp4 matches 2665 as @p[tag=SEAPT] at @s ru
 execute if score SEA_ch6_event sea_4temp4 matches 2745 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"你：","color":"aqua","bold": true},{"text":"\n“我在前些日子一直梦见忒尔克西钻井平台。我十分确信自己是被选中的人。”","color":"white"}]
 execute if score SEA_ch6_event sea_4temp4 matches 2828 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"你：","color":"aqua","bold": true},{"text":"\n“只不过……命运，选中的偏偏是我。”","color":"white"}]
 execute if score SEA_ch6_event sea_4temp4 matches 2908 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"你：","color":"aqua","bold": true},{"text":"\n“……难道，我只有‘接受命运’这一条选择了吗？”","color":"white"}]
+execute if score SEA_ch6_event sea_4temp4 matches 2988 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"你：","color":"aqua","bold": true},{"text":"\n“可为什么……直至如今，我都不认为自己找到了自己需要的东西？”","color":"white"}]
 
 
-
+execute if score SEA_ch6_event sea_4temp4 matches ..2906 if entity @a[tag=SEAPT,tag=!SEAPF,x=90392,y=249,z=-1836,dx=10,dy=10,dz=10] run scoreboard players set SEA_ch6_event sea_4temp4 2907
 
 
 
