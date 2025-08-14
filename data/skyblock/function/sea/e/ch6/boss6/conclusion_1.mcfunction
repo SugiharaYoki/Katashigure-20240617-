@@ -267,7 +267,8 @@ execute if score SEA_ch6_event sea_4temp4 matches 2501 as @p[tag=SEAPT] at @s ru
 execute if score SEA_ch6_event sea_4temp4 matches 2581 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"你：","color":"aqua","bold": true},{"text":"\n“后来，我也只有大海能够依靠。虽然当不了海警，我却仍能从事维修工作。”","color":"white"}]
 execute if score SEA_ch6_event sea_4temp4 matches 2665 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"你：","color":"aqua","bold": true},{"text":"\n“我改了自己的名字，再加上终于受到警方保护，这才苟活到现在。”","color":"white"}]
 execute if score SEA_ch6_event sea_4temp4 matches 2745 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"你：","color":"aqua","bold": true},{"text":"\n“我在前些日子一直梦见忒尔克西钻井平台。我十分确信自己是被选中的人。”","color":"white"}]
-execute if score SEA_ch6_event sea_4temp4 matches 2828 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"你：","color":"aqua","bold": true},{"text":"\n“只不过……为什么，要选中我？偏偏是我？”","color":"white"}]
+execute if score SEA_ch6_event sea_4temp4 matches 2828 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"你：","color":"aqua","bold": true},{"text":"\n“只不过……命运，选中的偏偏是我。”","color":"white"}]
+execute if score SEA_ch6_event sea_4temp4 matches 2908 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"你：","color":"aqua","bold": true},{"text":"\n“……难道，我只有‘接受命运’这一条选择了吗？”","color":"white"}]
 
 
 
