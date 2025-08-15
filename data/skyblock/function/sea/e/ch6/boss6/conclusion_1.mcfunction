@@ -312,7 +312,9 @@ execute if score SEA_ch6_event sea_4temp4 matches 8940 as @a[tag=SEAPT] at @s ru
 execute if score SEA_ch6_event sea_4temp4 matches 8940 as @a[tag=SEAPT] at @s run setblock 90093 30 -1834 lantern
 
 
+execute if score SEA_ch6_event sea_4temp4 matches 8940 as @a[tag=SEAPT] at @s as @p[tag=SEAPT] at @s run function skyblock:sea/m/unique/npc_edwina_ch6
 execute if score SEA_ch6_event sea_4temp4 matches 8940 as @a[tag=SEAPT] at @s run tag @n[tag=SEAedwina] add SEAedwina_ch6
+execute if score SEA_ch6_event sea_4temp4 matches 8940 as @a[tag=SEAPT] at @s run tp @n[tag=SEAedwina] 90091 29 -1835
 
 execute if score SEA_ch6_event sea_4temp4 matches 9000 as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s run playsound entity.villager.ambient neutral @s ~ ~ ~ 0.4 1.4
 execute if score SEA_ch6_event sea_4temp4 matches 9000 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“我们回到上面吧。地下已经不再安全，随便一点动静就会坍塌了……”","color":"white","bold": false}]
