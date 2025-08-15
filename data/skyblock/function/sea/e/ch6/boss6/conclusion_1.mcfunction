@@ -329,7 +329,7 @@ execute if score SEA_ch6_event sea_4temp4 matches 9090 as @p[tag=SEAPT] at @s ru
 
 execute if score SEA_ch6_event sea_4temp4 matches 9190 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"伊曼纽尔：","color":"aqua","bold": true},{"text":"\n“我没想到那位天使知道我的原名。一直以来欺骗了你们所有人，抱歉。”","color":"white","bold": false}]
 
-execute if score SEA_ch6_event sea_4temp4 matches 8000..10000 positioned 90121 58 -1870 as @a[tag=SEAPT,distance=0..4] at @s run tp @s ~22 ~60 ~-9
+execute if score SEA_ch6_event sea_4temp4 matches 8000..12000 positioned 90121 58 -1870 as @a[tag=SEAPT,distance=0..4] at @s run tp @s ~22 ~60 ~-9
 
 
 execute if score SEA_ch6_event sea_4temp4 matches 7000..11000 if entity @a[tag=SEAPT,tag=!SEAPF,x=90129,y=125,z=-1889,dx=30,dy=30,dz=30] run scoreboard players set SEA_ch6_event sea_4temp4 11001
