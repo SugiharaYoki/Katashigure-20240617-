@@ -1241,12 +1241,13 @@ setblock 90389 245 -1899 minecraft:air
 setblock 90382 247 -1899 minecraft:flower_pot
 setblock 90383 246 -1902 minecraft:potted_allium
 forceload remove 90389 -1899 90401 -1835
-
+#警察局
+forceload add 90430 -1878 90475 -1836
 fill 90453 207 -1844 90452 207 -1844 minecraft:redstone_block
 fill 90453 207 -1844 90452 207 -1844 minecraft:air
-
 setblock 90431 207 -1877 minecraft:redstone_block
 setblock 90431 207 -1877 minecraft:air
-
+setblock 90431 212 -1840 minecraft:quartz_block
+forceload remove 90430 -1878 90475 -1836
 
 
