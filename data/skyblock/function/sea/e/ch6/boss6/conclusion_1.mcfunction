@@ -297,6 +297,8 @@ execute if score SEA_ch6_event sea_4temp4 matches 7784 as @p[tag=SEAPT] at @s ru
 
 execute if score SEA_ch6_event sea_4temp4 matches 7754 as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s run playsound entity.villager.ambient neutral @s ~ ~ ~ 0.4 1.4
 execute if score SEA_ch6_event sea_4temp4 matches 7754 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"熟悉的声音：","color":"green","bold": true},{"text":"\n“我真的没想到，最后陪伴我的……会是你。”","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 7854 as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s run playsound entity.villager.ambient neutral @s ~ ~ ~ 0.4 1.4
+execute if score SEA_ch6_event sea_4temp4 matches 7854 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"熟悉的声音：","color":"green","bold": true},{"text":"\n“真的……太好了……”","color":"white","bold": false}]
 
 
 execute if score SEA_ch6_event sea_4temp4 matches ..7100 if entity @a[tag=SEAPT,tag=!SEAPF,x=90430,y=207,z=-1869,dx=10,dy=10,dz=10] run scoreboard players set SEA_ch6_event sea_4temp4 7200
