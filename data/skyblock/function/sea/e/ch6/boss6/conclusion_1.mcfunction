@@ -380,6 +380,7 @@ execute unless entity @a[tag=SEAPT,tag=e_i_55] if score SEA_ch6_event sea_4temp4
 execute if score SEA_ch6_event sea_4temp4 matches 12650 run tp @n[tag=SEAedwina] 90117 223 -1886
 execute if score SEA_ch6_event sea_4temp4 matches 12650 run tag @n[tag=SEAedwina] remove SEAedwina_ch6_end
 execute if score SEA_ch6_event sea_4temp4 matches 12650 run tag @n[tag=SEAedwina] remove SEAedwina_ch6
+execute if score SEA_ch6_event sea_4temp4 matches 12650.. run rotate @n[tag=SEAedwina] facing entity @p[tag=SEAPT]
 
 execute if score SEA_ch6_event sea_4temp4 matches 12350 as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s run playsound entity.villager.ambient neutral @s ~ ~ ~ 1 1.4
 execute if score SEA_ch6_event sea_4temp4 matches 12350 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“我们的时间已经走到了尽头。最终，我们还是会归于烈火吧。”","color":"white","bold": false}]
