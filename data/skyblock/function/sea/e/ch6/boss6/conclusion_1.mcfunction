@@ -364,7 +364,9 @@ execute if score SEA_ch6_event sea_4temp4 matches 12110 as @p[tag=SEAPT] at @s r
 execute if score SEA_ch6_event sea_4temp4 matches 12190 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"伊曼纽尔：","color":"aqua","bold": true},{"text":"\n“我们甚至……没能救下自己。”","color":"white"}]
 
 
+execute positioned 90132 223 -1873 as @p[tag=SEAPT,tag=!e_i_55,distance=0..5] at @s as @a[distance=0..250] at @s run playsound minecraft:afterword music @s ~ ~ ~ 1 1.0
 
+execute positioned 90132 223 -1873 as @p[tag=SEAPT,tag=!e_i_55,distance=0..5] at @s run tag @a[tag=SEAPT] add e_i_55
 
 
 
