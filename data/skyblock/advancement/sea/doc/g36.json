@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "NE结局：少女的祝福",
+            "color": "gold",
+            "bold": true,
+            "italic": false
+        },
+        "description": {
+            "text": "这里还不是终点。\n结局还尚能被改变。\n再次重来吧。\n\n因为，你答应她了。",
+            "color": "white"
+        },
+        "icon": {
+            "id": "minecraft:end_crystal"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "sea": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:sea/chapter6c"
+}

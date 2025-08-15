@@ -423,6 +423,11 @@ execute if score SEA_ch6_event sea_4temp4 matches 15450 as @p[tag=SEAPT] at @s r
 
 execute if score SEA_ch6_event sea_4temp4 matches 15550 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“我会在天国，永远祝福你。”","color":"white","bold": false}]
 
+execute if score SEA_ch6_event sea_4temp4 matches 15750 as @a[tag=SEAPT,advancements={skyblock:sea/doc/g31=false}] at @s run give @s mojang_banner_pattern[custom_data={sea_docg31:true}]
+execute if score SEA_ch6_event sea_4temp4 matches 15750 run clear @a[tag=SEAPT]
+execute if score SEA_ch6_event sea_4temp4 matches 15750 as @a[tag=SEAPT] run tellraw @s [{"text":"达成结局：","color":"gold","bold": true},{"text":"\nBad End「塞壬的谣曲」","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 15750 as @a[tag=SEAPT] run function skyblock:sea/dead
+
 
 execute if score SEA_ch6_event sea_4temp4 matches 14470.. store result score @n[tag=SEAedwina] rng7 run random value 1..200
 execute if score SEA_ch6_event sea_4temp4 matches 14670.. store result score @n[tag=SEAedwina] rng7 run random value 1..180
