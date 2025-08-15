@@ -412,6 +412,17 @@ execute if score SEA_ch6_event sea_4temp4 matches 14590 as @p[tag=SEAPT] at @s r
 execute if score SEA_ch6_event sea_4temp4 matches 14690 as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s run playsound entity.villager.ambient neutral @s ~ ~ ~ 1 1.4
 execute if score SEA_ch6_event sea_4temp4 matches 14690 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“或许……我们不会再有这样的机会了。”","color":"white","bold": false}]
 
+execute if score SEA_ch6_event sea_4temp4 matches 14890 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"伊曼纽尔：","color":"aqua","bold": true},{"text":"\n“艾德雯娜。……”","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 15090 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"伊曼纽尔：","color":"aqua","bold": true},{"text":"\n“我会把你当做我永远的战友。”","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 15290 as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s run playsound entity.villager.ambient neutral @s ~ ~ ~ 1 1.4
+execute if score SEA_ch6_event sea_4temp4 matches 15290 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“永远的战友。……永远的，家人。”","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 15390 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"伊曼纽尔：","color":"aqua","bold": true},{"text":"\n“我会……改变这一切。”","color":"white","bold": false}]
+
+execute if score SEA_ch6_event sea_4temp4 matches 15450 as @p[tag=SEAPT] at @s run kill @n[tag=SEAedwina]
+execute if score SEA_ch6_event sea_4temp4 matches 15450 as @p[tag=SEAPT] at @s run tp @a[distance=0..250] 90053 213 -1757
+
+execute if score SEA_ch6_event sea_4temp4 matches 15550 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“我会在天国，永远祝福你。”","color":"white","bold": false}]
+
 
 execute if score SEA_ch6_event sea_4temp4 matches 14470.. store result score @n[tag=SEAedwina] rng7 run random value 1..200
 execute if score SEA_ch6_event sea_4temp4 matches 14670.. store result score @n[tag=SEAedwina] rng7 run random value 1..180
