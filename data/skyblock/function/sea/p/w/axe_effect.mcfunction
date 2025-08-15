@@ -15,6 +15,7 @@ execute if entity @s[tag=SEA_w_axe_upg14] run attribute @s attack_damage modifie
 execute if entity @s[tag=SEA_w_axe_upg15] run tag @s add sea_w_axe_skill_a_3
 execute if entity @s[tag=SEA_w_axe_upg16] run attribute @s attack_knockback modifier add sea_weapon:upg_axe16 0.5 add_value
 
+execute if entity @s[tag=SEA_w_axe_upg_e_1] run attribute @s attack_damage modifier add sea_weapon:upg_axe_e_01 1.0 add_value
 
 tag @s add SEA_w_02_effected
 

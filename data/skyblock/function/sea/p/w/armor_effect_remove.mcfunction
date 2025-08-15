@@ -6,8 +6,8 @@ attribute @s armor modifier remove sea_weapon:upg_armor05
 attribute @s armor_toughness modifier remove sea_weapon:upg_armor06
 attribute @s armor modifier remove sea_weapon:upg_armor07
 attribute @s armor_toughness modifier remove sea_weapon:upg_armor08
-attribute @s armor modifier remove sea_weapon:upg_armor09
-attribute @s burning_time modifier remove sea_weapon:upg_armor10
+attribute @s[scores={sea_progress=..17}] armor modifier remove sea_weapon:upg_armor09
+attribute @s[scores={sea_progress=..17}] burning_time modifier remove sea_weapon:upg_armor10
 attribute @s armor modifier remove sea_weapon:upg_armor11
 attribute @s burning_time modifier remove sea_weapon:upg_armor12
 attribute @s armor modifier remove sea_weapon:upg_armor13

@@ -15,5 +15,6 @@ attribute @s attack_damage modifier remove sea_weapon:upg_crowbar14
 attribute @s entity_interaction_range modifier remove sea_weapon:upg_crowbar15
 attribute @s entity_interaction_range modifier remove sea_weapon:upg_crowbar16
 
+attribute @s attack_damage modifier remove sea_weapon:upg_crowbar_e_01
 
 tag @s remove SEA_w_01_effected

@@ -15,5 +15,6 @@ execute if entity @s[tag=SEA_w_crowbar_upg14] run attribute @s attack_damage mod
 execute if entity @s[tag=SEA_w_crowbar_upg15] run attribute @s entity_interaction_range modifier add sea_weapon:upg_crowbar15 0.3 add_value
 execute if entity @s[tag=SEA_w_crowbar_upg16] run attribute @s entity_interaction_range modifier add sea_weapon:upg_crowbar16 0.3 add_value
 
+execute if entity @s[tag=SEA_w_crowbar_upg_e_1] run attribute @s attack_damage modifier add sea_weapon:upg_crowbar_e_01 0.5 add_value
 
 tag @s add SEA_w_01_effected

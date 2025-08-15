@@ -15,6 +15,8 @@ attribute @s attack_damage modifier remove sea_weapon:upg_axe14
 tag @s remove sea_w_axe_skill_a_3
 attribute @s attack_knockback modifier remove sea_weapon:upg_axe16
 
+attribute @s attack_damage modifier remove sea_weapon:upg_axe_e_01
+
 
 tag @s remove SEA_w_02_effected
 

@@ -22,6 +22,8 @@ execute if items entity @s weapon.mainhand spyglass at @s run function skyblock:
 
 
 execute as @s store result score @s sea_i_spectral run clear @s spectral_arrow 0
+execute as @s[scores={sea_progress=18..}] run scoreboard players remove @s sea_i_spectral 2
+
 execute as @s unless entity @s[scores={sea_i_spectral_load=-999..}] run scoreboard players set @s sea_i_spectral_load 0
 execute unless items entity @s container.* arrow run scoreboard players set @s sea_i_spectral_load 0
 execute as @s[tag=sea_t_spectral1,scores={sea_i_spectral=..2,sea_i_spectral_load=..160}] run scoreboard players add @s sea_i_spectral_load 1

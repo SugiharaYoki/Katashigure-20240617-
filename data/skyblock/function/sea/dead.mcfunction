@@ -316,6 +316,9 @@ function skyblock:sea/p/w/shield_effect_reset
 function skyblock:sea/p/w/armor_effect_reset
 function skyblock:sea/p/w/ripper_effect_reset
 
+tag @s remove SEA_w_crowbar_upg_e_1
+tag @s remove SEA_w_axe_upg_e_1
+
 clear @s
 
 attribute @s jump_strength modifier remove sea:mob_debuff_visioned01

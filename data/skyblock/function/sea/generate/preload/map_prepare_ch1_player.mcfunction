@@ -193,6 +193,8 @@ scoreboard players add @s sea_count_played 1
 
 tag @s[tag=e_w_ahl2_e] add SEA_w_armor_upg1
 tag @s[tag=e_w_ahl2_e] add SEA_w_armor_upg2
+tag @s[scores={sea_progress=18..}] add SEA_w_armor_upg9
+tag @s[scores={sea_progress=18..}] add SEA_w_armor_upg10
 function skyblock:sea/p/w/armor_effect
 
 scoreboard players set @s sea_ripper 0
@@ -214,6 +216,8 @@ execute if score SEA_ch6_event rng5 matches 11..500 run effect give @s glowing i
 execute if score SEA_ch6_event rng5 matches 11..500 run attribute @s minecraft:movement_speed modifier add sea:marilyn_01 -5 add_value
 execute if score SEA_ch6_event rng5 matches 11..500 run attribute @s minecraft:jump_strength modifier add sea:marilyn_01 -50 add_value
 
+tag @s[scores={sea_progress=18..}] add SEA_w_crowbar_upg_e_1
+tag @s[scores={sea_progress=18..}] add SEA_w_axe_upg_e_1
 
 
 tag @s remove SEAelevatoring

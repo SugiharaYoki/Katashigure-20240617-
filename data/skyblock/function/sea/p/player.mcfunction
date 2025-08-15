@@ -101,8 +101,7 @@ execute if entity @s[tag=!e_w_51_eternal,advancements={skyblock:sea/doc/6=true,s
 
 execute if entity @s[tag=!e_w_ahl2_e,advancements={skyblock:sea/doc/15=true,skyblock:sea/doc/16=true,skyblock:sea/doc/17=true,skyblock:sea/doc/18=true,skyblock:sea/doc/19=true}] run tellraw @s {"text": "已获取物资层厨师团队所留下的全部笔记！","color": "blue"}
 execute if entity @s[tag=!e_w_ahl2_e,advancements={skyblock:sea/doc/15=true,skyblock:sea/doc/16=true,skyblock:sea/doc/17=true,skyblock:sea/doc/18=true,skyblock:sea/doc/19=true}] run playsound minecraft:ui.toast.challenge_complete player @s ~ ~ ~ 1 1
-execute if entity @s[tag=!e_w_ahl2_e,advancements={skyblock:sea/doc/15=true,skyblock:sea/doc/16=true,skyblock:sea/doc/17=true,skyblock:sea/doc/18=true,skyblock:sea/doc/19=true}] run tellraw @s {"text": "已获得可用于多功能工作站的永久升级。","color": "white"}
-execute if entity @s[tag=!e_w_ahl2_e,advancements={skyblock:sea/doc/15=true,skyblock:sea/doc/16=true,skyblock:sea/doc/17=true,skyblock:sea/doc/18=true,skyblock:sea/doc/19=true}] run tellraw @s {"text": "以后电工安全帽的升级会始终点亮最左两格。","color": "white"}
+execute if entity @s[tag=!e_w_ahl2_e,advancements={skyblock:sea/doc/15=true,skyblock:sea/doc/16=true,skyblock:sea/doc/17=true,skyblock:sea/doc/18=true,skyblock:sea/doc/19=true}] run tellraw @s {"text": "已获得可用于多功能工作站的永久升级。\n第1起始点的升级会始终点亮最左两格。","color": "white"}
 execute if entity @s[tag=!e_w_ahl2_e,advancements={skyblock:sea/doc/15=true,skyblock:sea/doc/16=true,skyblock:sea/doc/17=true,skyblock:sea/doc/18=true,skyblock:sea/doc/19=true}] run tag @s add e_w_ahl2_e
 
 
