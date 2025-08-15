@@ -288,40 +288,40 @@ execute if score SEA_ch6_event sea_4temp4 matches 7094 as @p[tag=SEAPT] at @s ru
 execute if score SEA_ch6_event sea_4temp4 matches 7104 as @a[tag=SEAPT] at @s run tp @s 90430 207 -1882 facing 90429 207 -1882
 
 execute if score SEA_ch6_event sea_4temp4 matches 7164 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"你：","color":"aqua","bold": true},{"text":"\n“我这是在……水下研究机构？”","color":"white"}]
-execute if score SEA_ch6_event sea_4temp4 matches 7364 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"你：","color":"aqua","bold": true},{"text":"\n“不对……我记得这个地方。我太熟悉这里了。”","color":"white"}]
-execute if score SEA_ch6_event sea_4temp4 matches 7464 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"你：","color":"aqua","bold": true},{"text":"\n“抱歉……我最后，谁都没能拯救。”","color":"white"}]
-execute if score SEA_ch6_event sea_4temp4 matches 7544 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"\n但我——将见证一切。我不该为自己的旅途感到遗憾。","color":"white"}]
-execute if score SEA_ch6_event sea_4temp4 matches 7624 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"\n就算不是这次。在未来的某一次，我一定……","color":"white"}]
-execute if score SEA_ch6_event sea_4temp4 matches 7704 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"\n就算时间回溯，我也依然会再次做出某些决定。","color":"white"}]
-execute if score SEA_ch6_event sea_4temp4 matches 7784 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"\n因为，我将贯彻正确。我将无怨无悔。","color":"white"}]
+execute if score SEA_ch6_event sea_4temp4 matches 8364 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"你：","color":"aqua","bold": true},{"text":"\n“不对……我记得这个地方。我太熟悉这里了。”","color":"white"}]
+execute if score SEA_ch6_event sea_4temp4 matches 8464 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"你：","color":"aqua","bold": true},{"text":"\n“抱歉……我最后，谁都没能拯救。”","color":"white"}]
+execute if score SEA_ch6_event sea_4temp4 matches 8544 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"\n但我——将见证一切。我不该为自己的旅途感到遗憾。","color":"white"}]
+execute if score SEA_ch6_event sea_4temp4 matches 8624 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"\n就算不是这次。在未来的某一次，我一定……","color":"white"}]
+execute if score SEA_ch6_event sea_4temp4 matches 8704 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"\n就算时间回溯，我也依然会再次做出某些决定。","color":"white"}]
+execute if score SEA_ch6_event sea_4temp4 matches 8784 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"\n因为，我将贯彻正确。我将无怨无悔。","color":"white"}]
 
-execute if score SEA_ch6_event sea_4temp4 matches 7754 as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s run playsound entity.villager.ambient neutral @s ~ ~ ~ 0.4 1.4
-execute if score SEA_ch6_event sea_4temp4 matches 7754 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"熟悉的声音：","color":"green","bold": true},{"text":"\n“我真的没想到，最后陪伴我的……会是你。”","color":"white","bold": false}]
-execute if score SEA_ch6_event sea_4temp4 matches 7854 as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s run playsound entity.villager.ambient neutral @s ~ ~ ~ 0.4 1.4
-execute if score SEA_ch6_event sea_4temp4 matches 7854 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"熟悉的声音：","color":"green","bold": true},{"text":"\n“真的……太好了……”","color":"white","bold": false}]
-
-
-execute if score SEA_ch6_event sea_4temp4 matches ..7100 if entity @a[tag=SEAPT,tag=!SEAPF,x=90430,y=207,z=-1869,dx=10,dy=10,dz=10] run scoreboard players set SEA_ch6_event sea_4temp4 7200
-execute if score SEA_ch6_event sea_4temp4 matches 7090..7099 run scoreboard players set SEA_ch6_event sea_4temp4 7090
+execute if score SEA_ch6_event sea_4temp4 matches 8754 as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s run playsound entity.villager.ambient neutral @s ~ ~ ~ 0.4 1.4
+execute if score SEA_ch6_event sea_4temp4 matches 8754 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"熟悉的声音：","color":"green","bold": true},{"text":"\n“我真的没想到，最后陪伴我的……会是你。”","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 8854 as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s run playsound entity.villager.ambient neutral @s ~ ~ ~ 0.4 1.4
+execute if score SEA_ch6_event sea_4temp4 matches 8854 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"熟悉的声音：","color":"green","bold": true},{"text":"\n“真的……太好了……”","color":"white","bold": false}]
 
 
-execute if score SEA_ch6_event sea_4temp4 matches 7250 as @p[tag=SEAPT] at @s run setblock 90431 212 -1840 minecraft:white_stained_glass
-
-execute if score SEA_ch6_event sea_4temp4 matches 7940 as @a[tag=SEAPT] at @s run stopsound @s
-execute if score SEA_ch6_event sea_4temp4 matches 7940 as @a[tag=SEAPT] at @s run tp @s 90090 29 -1834 facing 90091 29 -1834
-execute if score SEA_ch6_event sea_4temp4 matches 7940 as @a[tag=SEAPT] at @s run setblock 90093 30 -1834 lantern
+execute if score SEA_ch6_event sea_4temp4 matches ..8100 if entity @a[tag=SEAPT,tag=!SEAPF,x=90430,y=207,z=-1869,dx=10,dy=10,dz=10] run scoreboard players set SEA_ch6_event sea_4temp4 8200
+execute if score SEA_ch6_event sea_4temp4 matches 8090..8099 run scoreboard players set SEA_ch6_event sea_4temp4 7090
 
 
-execute if score SEA_ch6_event sea_4temp4 matches 7940 as @a[tag=SEAPT] at @s run tag @n[tag=SEAedwina] add SEAedwina_ch6
+execute if score SEA_ch6_event sea_4temp4 matches 8250 as @p[tag=SEAPT] at @s run setblock 90431 212 -1840 minecraft:white_stained_glass
 
-execute if score SEA_ch6_event sea_4temp4 matches 8000 as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s run playsound entity.villager.ambient neutral @s ~ ~ ~ 0.4 1.4
-execute if score SEA_ch6_event sea_4temp4 matches 8000 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“我们回到上面吧。地下已经不再安全，随便一点动静就会坍塌了……”","color":"white","bold": false}]
-execute if score SEA_ch6_event sea_4temp4 matches 8090 as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s run playsound entity.villager.ambient neutral @s ~ ~ ~ 0.4 1.4
-execute if score SEA_ch6_event sea_4temp4 matches 8090 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“……你是，伊曼纽尔吧。”","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 8940 as @a[tag=SEAPT] at @s run stopsound @s
+execute if score SEA_ch6_event sea_4temp4 matches 8940 as @a[tag=SEAPT] at @s run tp @s 90090 29 -1834 facing 90091 29 -1834
+execute if score SEA_ch6_event sea_4temp4 matches 8940 as @a[tag=SEAPT] at @s run setblock 90093 30 -1834 lantern
 
-execute if score SEA_ch6_event sea_4temp4 matches 8190 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"伊曼纽尔：","color":"aqua","bold": true},{"text":"\n“我没想到那天使知道我的原名。一直以来欺骗了你们所有人，抱歉。”","color":"white"}]
 
-execute if score SEA_ch6_event sea_4temp4 matches 7000..9000 positioned 90121 58 -1870 as @a[tag=SEAPT,distance=0..4] at @s run tp @s ~22 ~60 ~-9
+execute if score SEA_ch6_event sea_4temp4 matches 8940 as @a[tag=SEAPT] at @s run tag @n[tag=SEAedwina] add SEAedwina_ch6
+
+execute if score SEA_ch6_event sea_4temp4 matches 9000 as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s run playsound entity.villager.ambient neutral @s ~ ~ ~ 0.4 1.4
+execute if score SEA_ch6_event sea_4temp4 matches 9000 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“我们回到上面吧。地下已经不再安全，随便一点动静就会坍塌了……”","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 9090 as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s run playsound entity.villager.ambient neutral @s ~ ~ ~ 0.4 1.4
+execute if score SEA_ch6_event sea_4temp4 matches 9090 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“……你是，伊曼纽尔吧。”","color":"white","bold": false}]
+
+execute if score SEA_ch6_event sea_4temp4 matches 9190 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"伊曼纽尔：","color":"aqua","bold": true},{"text":"\n“我没想到那天使知道我的原名。一直以来欺骗了你们所有人，抱歉。”","color":"white"}]
+
+execute if score SEA_ch6_event sea_4temp4 matches 8000..10000 positioned 90121 58 -1870 as @a[tag=SEAPT,distance=0..4] at @s run tp @s ~22 ~60 ~-9
 
 
 
