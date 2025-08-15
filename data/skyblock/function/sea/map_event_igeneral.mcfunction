@@ -42,8 +42,9 @@ execute if block 90074 103 136 air as @n[tag=SEAch4_spawn_timer_boss4_fast] at @
 execute if entity @n[tag=sea_raphael_sword,type=armor_stand] run function skyblock:sea/p/weapon/raphael_sword_timer
 
 #艾德雯娜技能组
-execute as @n[tag=SEAedwina_ch6,tag=!SEAedwina_run] at @s run function skyblock:sea/e/ch6/edwina/core
-execute as @n[tag=SEAedwina_ch6,tag=SEAedwina_run] at @s run function skyblock:sea/e/ch6/edwina/core_run
+execute as @n[tag=!SEAedwina_ch6_end,tag=SEAedwina_ch6,tag=!SEAedwina_run] at @s run function skyblock:sea/e/ch6/edwina/core
+execute as @n[tag=!SEAedwina_ch6_end,tag=SEAedwina_ch6,tag=SEAedwina_run] at @s run function skyblock:sea/e/ch6/edwina/core_run
+execute as @n[tag=SEAedwina_ch6_end] at @s run function skyblock:sea/e/ch6/edwina/core
 
 #最终boss
 execute if score SEA_ch6_event sea_4temp4 matches ..3 if score SEA_ch6_event rng5 matches 20001.. as @n[tag=SEAboss6] at @s run function skyblock:sea/e/ch6/boss6/core
