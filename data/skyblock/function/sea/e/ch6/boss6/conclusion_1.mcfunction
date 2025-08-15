@@ -425,7 +425,8 @@ execute if score SEA_ch6_event sea_4temp4 matches 15290 as @p[tag=SEAPT] at @s a
 execute if score SEA_ch6_event sea_4temp4 matches 15290 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“永远的战友。……永远的，家人。”","color":"white","bold": false}]
 execute if score SEA_ch6_event sea_4temp4 matches 15390 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"伊曼纽尔：","color":"aqua","bold": true},{"text":"\n“我会……改变这一切。”","color":"white","bold": false}]
 
-execute if score SEA_ch6_event sea_4temp4 matches 15450 as @p[tag=SEAPT] at @s run kill @n[tag=SEAedwina]
+execute if score SEA_ch6_event sea_4temp4 matches 15450 as @p[tag=SEAPT] at @s run kill @e[tag=SEAedwina]
+execute if score SEA_ch6_event sea_4temp4 matches 15450 as @p[tag=SEAPT] at @s run kill @e[type=fireball,distance=..800]
 execute if score SEA_ch6_event sea_4temp4 matches 15450 as @p[tag=SEAPT] at @s run tp @a[distance=0..250] 90053 213 -1757
 
 execute if score SEA_ch6_event sea_4temp4 matches 15550 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“不再想我，坚持朝前走去。”","color":"white","bold": false}]
@@ -437,10 +438,10 @@ execute if score SEA_ch6_event sea_4temp4 matches 15950 as @a[tag=SEAPT] run tel
 execute if score SEA_ch6_event sea_4temp4 matches 15950 as @a[tag=SEAPT] run function skyblock:sea/dead
 
 
-execute if score SEA_ch6_event sea_4temp4 matches 14470.. store result score @n[tag=SEAedwina] rng7 run random value 1..200
-execute if score SEA_ch6_event sea_4temp4 matches 14670.. store result score @n[tag=SEAedwina] rng7 run random value 1..180
-execute if score SEA_ch6_event sea_4temp4 matches 14870.. store result score @n[tag=SEAedwina] rng7 run random value 1..160
-execute if score SEA_ch6_event sea_4temp4 matches 15200.. store result score @n[tag=SEAedwina] rng7 run random value 1..100
+execute if score SEA_ch6_event sea_4temp4 matches 14470..15449 store result score @n[tag=SEAedwina] rng7 run random value 1..200
+execute if score SEA_ch6_event sea_4temp4 matches 14670..15449 store result score @n[tag=SEAedwina] rng7 run random value 1..180
+execute if score SEA_ch6_event sea_4temp4 matches 14870..15449 store result score @n[tag=SEAedwina] rng7 run random value 1..160
+execute if score SEA_ch6_event sea_4temp4 matches 15200..15449 store result score @n[tag=SEAedwina] rng7 run random value 1..100
 execute if score SEA_ch6_event sea_4temp4 matches 14470.. if score @n[tag=SEAedwina] rng7 matches 1 positioned 90116 222 -1889 positioned ~15 ~ ~ run summon fireball ~ ~50 ~-30 {ExplosionPower:3,Motion:[0.01,-0.05,0.03]}
 execute if score SEA_ch6_event sea_4temp4 matches 14470.. if score @n[tag=SEAedwina] rng7 matches 2 positioned 90116 222 -1889 positioned ~ ~ ~15 run summon fireball ~ ~50 ~-30 {ExplosionPower:3,Motion:[0.01,-0.05,0.03]}
 execute if score SEA_ch6_event sea_4temp4 matches 14470.. if score @n[tag=SEAedwina] rng7 matches 3 positioned 90116 222 -1889 positioned ~-15 ~ ~ run summon fireball ~ ~50 ~-30 {ExplosionPower:3,Motion:[0.01,-0.05,0.03]}
