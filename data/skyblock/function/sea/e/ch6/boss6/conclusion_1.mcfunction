@@ -319,7 +319,7 @@ execute if score SEA_ch6_event sea_4temp4 matches 8941 as @a[tag=SEAPT] at @s ru
 execute if score SEA_ch6_event sea_4temp4 matches 8941 as @a[tag=SEAPT] at @s run weather clear 99999
 
 execute if score SEA_ch6_event sea_4temp4 matches 8940 as @a[tag=SEAPT] at @s as @p[tag=SEAPT] at @s run function skyblock:sea/m/unique/npc_edwina_ch6
-execute if score SEA_ch6_event sea_4temp4 matches 8940 as @a[tag=SEAPT] at @s run tag @n[tag=SEAedwina] add SEAedwina_ch6
+execute if score SEA_ch6_event sea_4temp4 matches 8940 as @a[tag=SEAPT] at @s run tag @n[tag=SEAedwina] add SEAedwina_ch6_end
 execute if score SEA_ch6_event sea_4temp4 matches 8940 as @a[tag=SEAPT] at @s run tp @n[tag=SEAedwina] 90091 29 -1835
 
 execute if score SEA_ch6_event sea_4temp4 matches 9000 as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s run playsound entity.villager.ambient neutral @s ~ ~ ~ 1 1.4
@@ -344,7 +344,7 @@ execute if score SEA_ch6_event sea_4temp4 matches 11162 as @p[tag=SEAPT] at @s r
 execute if score SEA_ch6_event sea_4temp4 matches 11222 as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s run playsound entity.villager.ambient neutral @s ~ ~ ~ 1 1.4
 execute if score SEA_ch6_event sea_4temp4 matches 11222 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“大约是十多年前吧，我当时还在读初中。”","color":"white","bold": false}]
 execute if score SEA_ch6_event sea_4temp4 matches 11302 as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s run playsound entity.villager.ambient neutral @s ~ ~ ~ 1 1.4
-execute if score SEA_ch6_event sea_4temp4 matches 11302 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“一伙人在我上学路上绑架了我。等我醒来的时候，自己已经被关在了海上游轮的一个铁笼子里。”","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 11302 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“有伙人在我上学路上绑架了我。等我醒来的时候，自己已经被关在了海上游轮的一个铁笼子里。”","color":"white","bold": false}]
 execute if score SEA_ch6_event sea_4temp4 matches 11382 as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s run playsound entity.villager.ambient neutral @s ~ ~ ~ 1 1.4
 execute if score SEA_ch6_event sea_4temp4 matches 11382 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“身上没留一件衣服，而且满是污渍，各种人为的污渍……他们告诉我，已经有买家买下了我。”","color":"white","bold": false}]
 execute if score SEA_ch6_event sea_4temp4 matches 11472 as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s run playsound entity.villager.ambient neutral @s ~ ~ ~ 1 1.4
