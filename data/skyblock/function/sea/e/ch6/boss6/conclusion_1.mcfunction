@@ -310,7 +310,8 @@ execute if score SEA_ch6_event sea_4temp4 matches 8250 as @p[tag=SEAPT] at @s ru
 execute if score SEA_ch6_event sea_4temp4 matches 8940 as @a[tag=SEAPT] at @s run stopsound @s
 execute if score SEA_ch6_event sea_4temp4 matches 8940 as @a[tag=SEAPT] at @s run tp @s 90090 29 -1834 facing 90091 29 -1834
 execute if score SEA_ch6_event sea_4temp4 matches 8940 as @a[tag=SEAPT] at @s run setblock 90093 30 -1834 lantern
-
+execute if score SEA_ch6_event sea_4temp4 matches 8941 as @a[tag=SEAPT] at @s run time set 500
+execute if score SEA_ch6_event sea_4temp4 matches 8941 as @a[tag=SEAPT] at @s run weather clear 99999
 
 execute if score SEA_ch6_event sea_4temp4 matches 8940 as @a[tag=SEAPT] at @s as @p[tag=SEAPT] at @s run function skyblock:sea/m/unique/npc_edwina_ch6
 execute if score SEA_ch6_event sea_4temp4 matches 8940 as @a[tag=SEAPT] at @s run tag @n[tag=SEAedwina] add SEAedwina_ch6
