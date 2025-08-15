@@ -321,4 +321,19 @@ execute if score SEA_ch6_event sea_4temp4 matches 8090 as @p[tag=SEAPT] at @s ru
 
 execute if score SEA_ch6_event sea_4temp4 matches 8190 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"伊曼纽尔：","color":"aqua","bold": true},{"text":"\n“我没想到那天使知道我的原名。一直以来欺骗了你们所有人，抱歉。”","color":"white"}]
 
+execute if score SEA_ch6_event sea_4temp4 matches 7000..9000 positioned 90121 58 -1870 as @a[tag=SEAPT,distance=0..4] at @s run tp @s ~22 ~60 ~-9
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
