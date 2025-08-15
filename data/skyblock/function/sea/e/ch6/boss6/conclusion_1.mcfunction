@@ -306,7 +306,7 @@ execute if score SEA_ch6_event sea_4temp4 matches 8854 as @p[tag=SEAPT] at @s as
 
 
 execute if score SEA_ch6_event sea_4temp4 matches ..8100 if entity @a[tag=SEAPT,tag=!SEAPF,x=90430,y=207,z=-1869,dx=10,dy=10,dz=10] run scoreboard players set SEA_ch6_event sea_4temp4 8200
-execute if score SEA_ch6_event sea_4temp4 matches 8090..8099 run scoreboard players set SEA_ch6_event sea_4temp4 7090
+execute if score SEA_ch6_event sea_4temp4 matches 8090..8099 run scoreboard players set SEA_ch6_event sea_4temp4 8090
 
 
 execute if score SEA_ch6_event sea_4temp4 matches 8250 as @p[tag=SEAPT] at @s run setblock 90431 212 -1840 minecraft:white_stained_glass
