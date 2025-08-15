@@ -258,18 +258,18 @@ execute if score SEA_ch6_event sea_4temp4 matches 1790 as @a[tag=SEAPT] at @s ru
 execute if score SEA_ch6_event sea_4temp4 matches 1790 as @a[tag=SEAPT] at @s run attribute @s armor modifier remove sea_weapon:upg_armor01
 execute if score SEA_ch6_event sea_4temp4 matches 1790 as @a[tag=SEAPT] at @s run attribute @s armor_toughness modifier remove sea_weapon:upg_armor02
 
-execute if score SEA_ch6_event sea_4temp4 matches 1791 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"你：","color":"aqua","bold": true},{"text":"\n“……艾德雯娜？”","color":"white"}]
-execute if score SEA_ch6_event sea_4temp4 matches 1921 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"你：","color":"aqua","bold": true},{"text":"\n“艾德雯娜，你去哪了？……这里是哪？”","color":"white"}]
-execute if score SEA_ch6_event sea_4temp4 matches 2191 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"你：","color":"aqua","bold": true},{"text":"\n“是那艘游轮。为什么我会回忆起这里？”","color":"white"}]
-execute if score SEA_ch6_event sea_4temp4 matches 2361 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"你：","color":"aqua","bold": true},{"text":"\n“我在这里侦破了一起跨国人口贩卖案。”","color":"white"}]
-execute if score SEA_ch6_event sea_4temp4 matches 2421 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"你：","color":"aqua","bold": true},{"text":"\n“虽然救下了数十名女孩，但我招惹到的是公海上势力强大的犯罪团体。”","color":"white"}]
-execute if score SEA_ch6_event sea_4temp4 matches 2501 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"你：","color":"aqua","bold": true},{"text":"\n“我十分确信自己的父母和未婚妻是受他们报复被杀害。”","color":"white"}]
-execute if score SEA_ch6_event sea_4temp4 matches 2581 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"你：","color":"aqua","bold": true},{"text":"\n“后来，我也只有大海能够依靠。虽然当不了海警，我却仍能从事维修工作。”","color":"white"}]
-execute if score SEA_ch6_event sea_4temp4 matches 2665 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"你：","color":"aqua","bold": true},{"text":"\n“我改了自己的名字，再加上终于受到警方保护，这才苟活到现在。”","color":"white"}]
-execute if score SEA_ch6_event sea_4temp4 matches 2745 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"你：","color":"aqua","bold": true},{"text":"\n“我在前些日子一直梦见忒尔克西钻井平台。我十分确信自己是被选中的人。”","color":"white"}]
-execute if score SEA_ch6_event sea_4temp4 matches 2828 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"你：","color":"aqua","bold": true},{"text":"\n“只不过……命运，选中的偏偏是我。”","color":"white"}]
-execute if score SEA_ch6_event sea_4temp4 matches 2908 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"你：","color":"aqua","bold": true},{"text":"\n“……难道，我只有‘接受命运’这一条选择了吗？”","color":"white"}]
-execute if score SEA_ch6_event sea_4temp4 matches 2988 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"你：","color":"aqua","bold": true},{"text":"\n“可为什么……直至如今，我都不认为自己找到了自己需要的东西？”","color":"white"}]
+execute if score SEA_ch6_event sea_4temp4 matches 1791 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"你：","color":"aqua","bold": true},{"text":"\n“……艾德雯娜？”","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 1921 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"你：","color":"aqua","bold": true},{"text":"\n“艾德雯娜，你去哪了？……这里是哪？”","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 2191 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"你：","color":"aqua","bold": true},{"text":"\n“是那艘游轮。为什么我会回忆起这里？”","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 2361 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"你：","color":"aqua","bold": true},{"text":"\n“我在这里侦破了一起跨国人口贩卖案。”","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 2421 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"你：","color":"aqua","bold": true},{"text":"\n“虽然救下了数十名女孩，但我招惹到的是公海上势力强大的犯罪团体。”","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 2501 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"你：","color":"aqua","bold": true},{"text":"\n“我十分确信自己的父母和未婚妻是受他们报复被杀害。”","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 2581 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"你：","color":"aqua","bold": true},{"text":"\n“后来，我也只有大海能够依靠。虽然当不了海警，我却仍能从事维修工作。”","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 2665 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"你：","color":"aqua","bold": true},{"text":"\n“我改了自己的名字，再加上终于受到警方保护，这才苟活到现在。”","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 2745 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"你：","color":"aqua","bold": true},{"text":"\n“我在前些日子一直梦见忒尔克西钻井平台。我十分确信自己是被选中的人。”","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 2828 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"你：","color":"aqua","bold": true},{"text":"\n“只不过……命运，选中的偏偏是我。”","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 2908 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"你：","color":"aqua","bold": true},{"text":"\n“……难道，我只有‘接受命运’这一条选择了吗？”","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 2988 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"你：","color":"aqua","bold": true},{"text":"\n“可为什么……直至如今，我都不认为自己找到了自己需要的东西？”","color":"white","bold": false}]
 
 
 
@@ -287,9 +287,9 @@ execute if score SEA_ch6_event sea_4temp4 matches 7094 as @p[tag=SEAPT] at @s ru
 
 execute if score SEA_ch6_event sea_4temp4 matches 7104 as @a[tag=SEAPT] at @s run tp @s 90430 207 -1882 facing 90429 207 -1882
 
-execute if score SEA_ch6_event sea_4temp4 matches 7164 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"你：","color":"aqua","bold": true},{"text":"\n“我这是在……水下研究机构？”","color":"white"}]
-execute if score SEA_ch6_event sea_4temp4 matches 8364 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"你：","color":"aqua","bold": true},{"text":"\n“不对……我记得这个地方。我太熟悉这里了。”","color":"white"}]
-execute if score SEA_ch6_event sea_4temp4 matches 8464 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"你：","color":"aqua","bold": true},{"text":"\n“抱歉……我最后，谁都没能拯救。”","color":"white"}]
+execute if score SEA_ch6_event sea_4temp4 matches 7164 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"你：","color":"aqua","bold": true},{"text":"\n“我这是在……水下研究机构？”","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 8364 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"你：","color":"aqua","bold": true},{"text":"\n“不对……我记得这个地方。我太熟悉这里了。”","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 8464 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"你：","color":"aqua","bold": true},{"text":"\n“抱歉……我最后，谁都没能拯救。”","color":"white","bold": false}]
 execute if score SEA_ch6_event sea_4temp4 matches 8544 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"\n但我——将见证一切。我不该为自己的旅途感到遗憾。","color":"white"}]
 execute if score SEA_ch6_event sea_4temp4 matches 8624 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"\n就算不是这次。在未来的某一次，我一定……","color":"white"}]
 execute if score SEA_ch6_event sea_4temp4 matches 8704 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"\n就算时间回溯，我也依然会再次做出某些决定。","color":"white"}]
