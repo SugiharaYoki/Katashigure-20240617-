@@ -405,12 +405,12 @@ execute if score SEA_ch6_event sea_4temp4 matches 14100 as @p[tag=SEAPT] at @s a
 execute if score SEA_ch6_event sea_4temp4 matches 14100 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“我知道你一定做得到的。不论是我、越涵、菲尔娜，甚至诺玛……都做不到。”","color":"white","bold": false}]
 execute if score SEA_ch6_event sea_4temp4 matches 14190 as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s run playsound entity.villager.ambient neutral @s ~ ~ ~ 1 1.4
 execute if score SEA_ch6_event sea_4temp4 matches 14190 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“只有你可以。”","color":"white","bold": false}]
-execute if score SEA_ch6_event sea_4temp4 matches 14290 as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s run playsound entity.villager.ambient neutral @s ~ ~ ~ 1 1.4
-execute if score SEA_ch6_event sea_4temp4 matches 14290 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“你一直都被错误的人指引着。那诺玛她究竟是想要什么呢？你不妨自己试一试？”","color":"white","bold": false}]
-execute if score SEA_ch6_event sea_4temp4 matches 14490 as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s run playsound entity.villager.ambient neutral @s ~ ~ ~ 1 1.4
-execute if score SEA_ch6_event sea_4temp4 matches 14490 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“然后……就与我正式地道个别吧。”","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 14390 as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s run playsound entity.villager.ambient neutral @s ~ ~ ~ 1 1.4
+execute if score SEA_ch6_event sea_4temp4 matches 14390 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“你一直都被错误的人指引着。那诺玛她究竟是想要什么呢？你不妨自己试一试？”","color":"white","bold": false}]
 execute if score SEA_ch6_event sea_4temp4 matches 14590 as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s run playsound entity.villager.ambient neutral @s ~ ~ ~ 1 1.4
-execute if score SEA_ch6_event sea_4temp4 matches 14590 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“或许……我们不会再有这样的机会了。”","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 14590 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“然后……就与我正式地道个别吧。”","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 14690 as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s run playsound entity.villager.ambient neutral @s ~ ~ ~ 1 1.4
+execute if score SEA_ch6_event sea_4temp4 matches 14690 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“或许……我们不会再有这样的机会了。”","color":"white","bold": false}]
 
 
 execute if score SEA_ch6_event sea_4temp4 matches 14470.. store result score @n[tag=SEAedwina] rng7 run random value 1..200
