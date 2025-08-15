@@ -317,9 +317,9 @@ execute if score SEA_ch6_event sea_4temp4 matches 8940 as @a[tag=SEAPT] at @s as
 execute if score SEA_ch6_event sea_4temp4 matches 8940 as @a[tag=SEAPT] at @s run tag @n[tag=SEAedwina] add SEAedwina_ch6
 execute if score SEA_ch6_event sea_4temp4 matches 8940 as @a[tag=SEAPT] at @s run tp @n[tag=SEAedwina] 90091 29 -1835
 
-execute if score SEA_ch6_event sea_4temp4 matches 9000 as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s run playsound entity.villager.ambient neutral @s ~ ~ ~ 0.4 1.4
+execute if score SEA_ch6_event sea_4temp4 matches 9000 as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s run playsound entity.villager.ambient neutral @s ~ ~ ~ 1 1.4
 execute if score SEA_ch6_event sea_4temp4 matches 9000 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“我们回到上面吧。地下已经不再安全，随便一点动静就会坍塌了……”","color":"white","bold": false}]
-execute if score SEA_ch6_event sea_4temp4 matches 9090 as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s run playsound entity.villager.ambient neutral @s ~ ~ ~ 0.4 1.4
+execute if score SEA_ch6_event sea_4temp4 matches 9090 as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s run playsound entity.villager.ambient neutral @s ~ ~ ~ 1 1.4
 execute if score SEA_ch6_event sea_4temp4 matches 9090 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“……你是，伊曼纽尔吧。”","color":"white","bold": false}]
 
 execute if score SEA_ch6_event sea_4temp4 matches 9190 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"伊曼纽尔：","color":"aqua","bold": true},{"text":"\n“我没想到那天使知道我的原名。一直以来欺骗了你们所有人，抱歉。”","color":"white"}]
@@ -327,11 +327,41 @@ execute if score SEA_ch6_event sea_4temp4 matches 9190 as @p[tag=SEAPT] at @s ru
 execute if score SEA_ch6_event sea_4temp4 matches 8000..10000 positioned 90121 58 -1870 as @a[tag=SEAPT,distance=0..4] at @s run tp @s ~22 ~60 ~-9
 
 
+execute if score SEA_ch6_event sea_4temp4 matches 7000..11000 if entity @a[tag=SEAPT,tag=!SEAPF,x=90129,y=125,z=-1889,dx=30,dy=30,dz=30] run scoreboard players set SEA_ch6_event sea_4temp4 11001
+execute if score SEA_ch6_event sea_4temp4 matches 10990..10999 run scoreboard players set SEA_ch6_event sea_4temp4 10990
 
 
+execute if score SEA_ch6_event sea_4temp4 matches 11002 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"伊曼纽尔：","color":"aqua","bold": true},{"text":"\n“那么，也算是礼尚往来……”","color":"white"}]
+execute if score SEA_ch6_event sea_4temp4 matches 11082 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"伊曼纽尔：","color":"aqua","bold": true},{"text":"\n“在死之前，我能知道你的真实身份吗？”","color":"white"}]
 
+execute if score SEA_ch6_event sea_4temp4 matches 11162 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“……”","color":"white","bold": false}]
 
+execute if score SEA_ch6_event sea_4temp4 matches 11222 as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s run playsound entity.villager.ambient neutral @s ~ ~ ~ 1 1.4
+execute if score SEA_ch6_event sea_4temp4 matches 11222 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“大约是十多年前吧，我当时还在读初中。”","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 11302 as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s run playsound entity.villager.ambient neutral @s ~ ~ ~ 1 1.4
+execute if score SEA_ch6_event sea_4temp4 matches 11302 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“一伙人在我上学路上绑架了我。等我醒来的时候，自己已经被关在了海上游轮的一个铁笼子里。”","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 11382 as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s run playsound entity.villager.ambient neutral @s ~ ~ ~ 1 1.4
+execute if score SEA_ch6_event sea_4temp4 matches 11382 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“身上没留一件衣服，而且满是污渍，各种人为的污渍……他们告诉我，已经有买家买下了我。”","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 11472 as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s run playsound entity.villager.ambient neutral @s ~ ~ ~ 1 1.4
+execute if score SEA_ch6_event sea_4temp4 matches 11472 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“他们说我从此可以什么都不想了。你知道吗？我那时是多么绝望。我确实期望着自己无法再思考。”","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 11552 as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s run playsound entity.villager.ambient neutral @s ~ ~ ~ 1 1.4
+execute if score SEA_ch6_event sea_4temp4 matches 11552 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“但我……做不到啊。我的人生，我……本该是在那里坠入炼狱的。”","color":"white","bold": false}]
 
+execute if score SEA_ch6_event sea_4temp4 matches 11632 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"伊曼纽尔：","color":"aqua","bold": true},{"text":"\n“但我……救了你们。对吗？”","color":"white"}]
+execute if score SEA_ch6_event sea_4temp4 matches 11722 as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s run playsound entity.villager.ambient neutral @s ~ ~ ~ 1 1.4
+execute if score SEA_ch6_event sea_4temp4 matches 11722 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“嗯。”","color":"white","bold": false}]
+
+execute if score SEA_ch6_event sea_4temp4 matches 11782 as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s run playsound entity.villager.ambient neutral @s ~ ~ ~ 1 1.4
+execute if score SEA_ch6_event sea_4temp4 matches 11782 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“我原本想要报答你，但无论如何都找不到你了，你的亲人也都已经去世。”","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 11867 as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s run playsound entity.villager.ambient neutral @s ~ ~ ~ 1 1.4
+execute if score SEA_ch6_event sea_4temp4 matches 11867 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“加入中情局一半是为了调查当时跨国人口贩卖案的余党，另外就是尝试找到你。”","color":"white","bold": false}]
+
+execute if score SEA_ch6_event sea_4temp4 matches 11950 as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s run playsound entity.villager.ambient neutral @s ~ ~ ~ 1 1.4
+execute if score SEA_ch6_event sea_4temp4 matches 11950 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“我想……接下尽可能多的发生在太平洋上的案子，迟早有一天会同你相遇吧。”","color":"white","bold": false}]
+
+execute if score SEA_ch6_event sea_4temp4 matches 12030 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"伊曼纽尔：","color":"aqua","bold": true},{"text":"\n“最后，我们在这样的日子……这样的场合下，重逢了。”","color":"white"}]
+execute if score SEA_ch6_event sea_4temp4 matches 12110 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"伊曼纽尔：","color":"aqua","bold": true},{"text":"\n“只可惜……我们还是没能救下这些人。”","color":"white"}]
+execute if score SEA_ch6_event sea_4temp4 matches 12190 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"伊曼纽尔：","color":"aqua","bold": true},{"text":"\n“我们甚至……没能救下自己。”","color":"white"}]
 
 
 
