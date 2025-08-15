@@ -407,5 +407,27 @@ execute if score SEA_ch6_event sea_4temp4 matches 14190 as @p[tag=SEAPT] at @s a
 execute if score SEA_ch6_event sea_4temp4 matches 14190 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“只有你可以。”","color":"white","bold": false}]
 execute if score SEA_ch6_event sea_4temp4 matches 14290 as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s run playsound entity.villager.ambient neutral @s ~ ~ ~ 1 1.4
 execute if score SEA_ch6_event sea_4temp4 matches 14290 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“你一直都被错误的人指引着。那诺玛她究竟是想要什么呢？你不妨自己试一试？”","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 14490 as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s run playsound entity.villager.ambient neutral @s ~ ~ ~ 1 1.4
+execute if score SEA_ch6_event sea_4temp4 matches 14490 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“然后……就与我正式地道个别吧。”","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 14590 as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s run playsound entity.villager.ambient neutral @s ~ ~ ~ 1 1.4
+execute if score SEA_ch6_event sea_4temp4 matches 14590 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“或许……我们不会再有这样的机会了。”","color":"white","bold": false}]
+
+
+execute if score SEA_ch6_event sea_4temp4 matches 14470.. store result score @n[tag=SEAedwina] rng7 run random value 1..200
+execute if score SEA_ch6_event sea_4temp4 matches 14670.. store result score @n[tag=SEAedwina] rng7 run random value 1..180
+execute if score SEA_ch6_event sea_4temp4 matches 14870.. store result score @n[tag=SEAedwina] rng7 run random value 1..160
+execute if score SEA_ch6_event sea_4temp4 matches 14470.. if score @n[tag=SEAedwina] rng7 matches 1 positioned 90116 222 -1889 positioned ~15 ~ ~ run summon fireball ~ ~50 ~-30 {ExplosionPower:3,Motion:[0.01,-0.05,0.03]}
+execute if score SEA_ch6_event sea_4temp4 matches 14470.. if score @n[tag=SEAedwina] rng7 matches 2 positioned 90116 222 -1889 positioned ~ ~ ~15 run summon fireball ~ ~50 ~-30 {ExplosionPower:3,Motion:[0.01,-0.05,0.03]}
+execute if score SEA_ch6_event sea_4temp4 matches 14470.. if score @n[tag=SEAedwina] rng7 matches 3 positioned 90116 222 -1889 positioned ~-15 ~ ~ run summon fireball ~ ~50 ~-30 {ExplosionPower:3,Motion:[0.01,-0.05,0.03]}
+execute if score SEA_ch6_event sea_4temp4 matches 14470.. if score @n[tag=SEAedwina] rng7 matches 4 positioned 90116 222 -1889 positioned ~ ~ ~-15 run summon fireball ~ ~50 ~-30 {ExplosionPower:3,Motion:[0.01,-0.05,0.03]}
+execute if score SEA_ch6_event sea_4temp4 matches 14470.. if score @n[tag=SEAedwina] rng7 matches 5 positioned 90116 222 -1889 positioned ~28 ~ ~6 run summon fireball ~ ~50 ~-30 {ExplosionPower:3,Motion:[0.01,-0.05,0.03]}
+execute if score SEA_ch6_event sea_4temp4 matches 14470.. if score @n[tag=SEAedwina] rng7 matches 6 positioned 90116 222 -1889 positioned ~6 ~ ~28 run summon fireball ~ ~50 ~-30 {ExplosionPower:3,Motion:[0.01,-0.05,0.03]}
+execute if score SEA_ch6_event sea_4temp4 matches 14470.. if score @n[tag=SEAedwina] rng7 matches 7 positioned 90116 222 -1889 positioned ~28 ~ ~-6 run summon fireball ~ ~50 ~-30 {ExplosionPower:3,Motion:[0.01,-0.05,0.03]}
+execute if score SEA_ch6_event sea_4temp4 matches 14470.. if score @n[tag=SEAedwina] rng7 matches 8 positioned 90116 222 -1889 positioned ~-6 ~ ~28 run summon fireball ~ ~50 ~-30 {ExplosionPower:3,Motion:[0.01,-0.05,0.03]}
+execute if score SEA_ch6_event sea_4temp4 matches 14470.. if score @n[tag=SEAedwina] rng7 matches 9 positioned 90116 222 -1889 positioned ~-28 ~ ~6 run summon fireball ~ ~50 ~-30 {ExplosionPower:3,Motion:[0.01,-0.05,0.03]}
+execute if score SEA_ch6_event sea_4temp4 matches 14470.. if score @n[tag=SEAedwina] rng7 matches 10 positioned 90116 222 -1889 positioned ~-28 ~ ~-6 run summon fireball ~ ~50 ~-30 {ExplosionPower:3,Motion:[0.01,-0.05,0.03]}
+execute if score SEA_ch6_event sea_4temp4 matches 14470.. if score @n[tag=SEAedwina] rng7 matches 11 positioned 90116 222 -1889 positioned ~6 ~ ~-28 run summon fireball ~ ~50 ~-30 {ExplosionPower:3,Motion:[0.01,-0.05,0.03]}
+execute if score SEA_ch6_event sea_4temp4 matches 14470.. if score @n[tag=SEAedwina] rng7 matches 12 positioned 90116 222 -1889 positioned ~-6 ~ ~-28 run summon fireball ~ ~50 ~-30 {ExplosionPower:3,Motion:[0.01,-0.05,0.03]}
+
 
 
