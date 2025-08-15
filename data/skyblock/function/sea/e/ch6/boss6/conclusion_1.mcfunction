@@ -284,6 +284,7 @@ execute if score SEA_ch6_event sea_4temp4 matches 7094 as @p[tag=SEAPT] at @s as
 execute if score SEA_ch6_event sea_4temp4 matches 7094 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"熟悉的声音：","color":"green","bold": true},{"text":"\n“快醒醒、伊曼纽尔，我们成功躲过去了。”","color":"white","bold": false}]
 
 
+execute if score SEA_ch6_event sea_4temp4 matches 7104 as @a[tag=SEAPT] at @s run effect clear @s
 execute if score SEA_ch6_event sea_4temp4 matches 7104 as @a[tag=SEAPT] at @s run effect give @s darkness 1 0 true
 execute if score SEA_ch6_event sea_4temp4 matches 7104 as @a[tag=SEAPT] at @s run tp @s 90430 207 -1882 facing 90429 207 -1882
 
