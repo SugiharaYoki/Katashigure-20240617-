@@ -1,6 +1,7 @@
 
 execute if items entity @s player.cursor name_tag run scoreboard players set @s[scores={SEAPT_mode=3}] SEAPT_mode 4
-execute if items entity @s player.cursor name_tag run scoreboard players set @s[scores={SEAPT_mode=2}] SEAPT_mode 3
+execute if items entity @s player.cursor name_tag run scoreboard players set @s[scores={SEAPT_mode=2,sea_progress=18..}] SEAPT_mode 3
+execute if items entity @s player.cursor name_tag run scoreboard players set @s[scores={SEAPT_mode=2,sea_progress=..17}] SEAPT_mode 4
 execute if items entity @s player.cursor name_tag run scoreboard players set @s[scores={SEAPT_mode=1}] SEAPT_mode 2
 execute if items entity @s player.cursor name_tag run scoreboard players set @s[scores={SEAPT_mode=4}] SEAPT_mode 1
 
