@@ -276,7 +276,7 @@ execute if score SEA_ch6_event sea_4temp4 matches ..2906 if entity @a[tag=SEAPT,
 execute if score SEA_ch6_event sea_4temp4 matches 2990..2998 run scoreboard players set SEA_ch6_event sea_4temp4 2990
 execute if score SEA_ch6_event sea_4temp4 matches ..2999 if entity @a[tag=SEAPT,tag=!SEAPF,x=90395,y=253,z=-1853,dx=20,dy=10,dz=10] run scoreboard players set SEA_ch6_event sea_4temp4 7000
 
-execute if score SEA_ch6_event sea_4temp4 matches 7001 as @a[tag=SEAPT] at @s run effect give @s slowness 30 7 true
+execute if score SEA_ch6_event sea_4temp4 matches 7001 as @a[tag=SEAPT] at @s run effect give @s slowness 30 3 true
 
 execute if score SEA_ch6_event sea_4temp4 matches 7014 as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s run playsound entity.villager.ambient neutral @s ~ ~ ~ 0.4 1.4
 execute if score SEA_ch6_event sea_4temp4 matches 7014 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"熟悉的声音：","color":"green","bold": true},{"text":"\n“……伊曼纽尔，还好吗？”","color":"white","bold": false}]
@@ -284,6 +284,7 @@ execute if score SEA_ch6_event sea_4temp4 matches 7094 as @p[tag=SEAPT] at @s as
 execute if score SEA_ch6_event sea_4temp4 matches 7094 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"熟悉的声音：","color":"green","bold": true},{"text":"\n“快醒醒、伊曼纽尔，我们成功躲过去了。”","color":"white","bold": false}]
 
 
+execute if score SEA_ch6_event sea_4temp4 matches 7104 as @a[tag=SEAPT] at @s run effect give @s darkness 1 0 true
 execute if score SEA_ch6_event sea_4temp4 matches 7104 as @a[tag=SEAPT] at @s run tp @s 90430 207 -1882 facing 90429 207 -1882
 
 execute if score SEA_ch6_event sea_4temp4 matches 7164 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"你：","color":"aqua","bold": true},{"text":"\n“我这是在……水下研究机构？”","color":"white","bold": false}]
@@ -307,6 +308,7 @@ execute if score SEA_ch6_event sea_4temp4 matches 8090..8099 run scoreboard play
 execute if score SEA_ch6_event sea_4temp4 matches 8250 as @p[tag=SEAPT] at @s run setblock 90431 212 -1840 minecraft:white_stained_glass
 
 execute if score SEA_ch6_event sea_4temp4 matches 8940 as @a[tag=SEAPT] at @s run stopsound @s
+execute if score SEA_ch6_event sea_4temp4 matches 8940 as @a[tag=SEAPT] at @s run effect give @s darkness 1 0 true
 execute if score SEA_ch6_event sea_4temp4 matches 8940 as @a[tag=SEAPT] at @s run tp @s 90090 29 -1834 facing 90091 29 -1834
 execute if score SEA_ch6_event sea_4temp4 matches 8940 as @a[tag=SEAPT] at @s run setblock 90093 30 -1834 lantern
 execute if score SEA_ch6_event sea_4temp4 matches 8941 as @a[tag=SEAPT] at @s run time set 500
