@@ -368,7 +368,11 @@ execute positioned 90132 223 -1873 as @p[tag=SEAPT,tag=!e_i_55,distance=0..5] at
 
 execute positioned 90132 223 -1873 as @p[tag=SEAPT,tag=!e_i_55,distance=0..5] at @s run tag @a[tag=SEAPT] add e_i_55
 
+execute unless entity @a[tag=SEAPT,tag=e_i_55] if score SEA_ch6_event sea_4temp4 matches 12222..12299 run scoreboard players set SEA_ch6_event sea_4temp4 12222
 
-
+execute if score SEA_ch6_event sea_4temp4 matches 12300 as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s run playsound entity.villager.ambient neutral @s ~ ~ ~ 1 1.4
+execute if score SEA_ch6_event sea_4temp4 matches 12300 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“我们的时间已经走到了尽头。最终，我们还是会归于烈火吧。”","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 12400 as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s run playsound entity.villager.ambient neutral @s ~ ~ ~ 1 1.4
+execute if score SEA_ch6_event sea_4temp4 matches 12400 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“它们……就快要来了。”","color":"white","bold": false}]
 
 
