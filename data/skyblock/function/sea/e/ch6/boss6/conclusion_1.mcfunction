@@ -33,7 +33,6 @@ execute if score SEA_ch6_event sea_4temp4 matches 1060 run fill 90044 21 -1821 9
 execute if score SEA_ch6_event sea_4temp4 matches 1001 run playsound minecraft:item.trident.thunder master @a ~ ~ ~ 5 0.5
 execute if score SEA_ch6_event sea_4temp4 matches 1001 run bossbar remove 9066602
 
-execute if score SEA_ch6_event sea_4temp4 matches 1080 run tag @n[tag=SEAedwina] remove SEAedwina_attackable
 execute if score SEA_ch6_event sea_4temp4 matches 1090 as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
 execute if score SEA_ch6_event sea_4temp4 matches 1090 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“我们……好像成功了。”","color":"white","bold": false}]
 execute if score SEA_ch6_event sea_4temp4 matches 1147 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“……我们，击败了货真价实的……天使？”","color":"white"}]
@@ -149,10 +148,10 @@ execute positioned 90069 21 -1815 as @e[type=marker,tag=SEA_boss6_burst_anchor,d
 
 
 execute if score SEA_ch6_event sea_4temp4 matches 1592..1621 as @n[tag=SEAboss6b] at @s positioned ~ ~ ~ run particle minecraft:small_gust ~ ~4 ~ 0 8 0 0.9 100
-execute if score SEA_ch6_event sea_4temp4 matches 1592..1621 as @n[tag=SEAboss6b] at @s positioned ~ ~ ~ run particle minecraft:flame ~ ~4 ~ 0 8 0 0.3 100
-execute if score SEA_ch6_event sea_4temp4 matches 1622..1651 as @n[tag=SEAboss6b] at @s positioned ~ ~ ~ run particle minecraft:flame ~ ~4 ~ 0 8 0 1 200
-execute if score SEA_ch6_event sea_4temp4 matches 1652..1681 as @n[tag=SEAboss6b] at @s positioned ~ ~ ~ run particle minecraft:flame ~ ~4 ~ 0 8 0 2 300
-execute if score SEA_ch6_event sea_4temp4 matches 1682..2000 as @n[tag=SEAboss6b] at @s positioned ~ ~ ~ run particle minecraft:flame ~ ~4 ~ 0 8 0 3 500
+execute if score SEA_ch6_event sea_4temp4 matches 1592..1621 as @n[tag=SEAboss6b] at @s positioned ~ ~ ~ run particle minecraft:flame ~ ~4 ~ 0 8 0 0.2 40
+execute if score SEA_ch6_event sea_4temp4 matches 1622..1651 as @n[tag=SEAboss6b] at @s positioned ~ ~ ~ run particle minecraft:flame ~ ~4 ~ 0 8 0 0.8 80
+execute if score SEA_ch6_event sea_4temp4 matches 1652..1681 as @n[tag=SEAboss6b] at @s positioned ~ ~ ~ run particle minecraft:flame ~ ~4 ~ 0 8 0 1 150
+execute if score SEA_ch6_event sea_4temp4 matches 1682..2000 as @n[tag=SEAboss6b] at @s positioned ~ ~ ~ run particle minecraft:flame ~ ~4 ~ 0 8 0 2 300
 execute if score SEA_ch6_event sea_4temp4 matches 1592..1621 as @n[tag=SEAboss6b] at @s positioned ~ ~ ~ run particle minecraft:trial_spawner_detection_ominous ~ ~8 ~ 0.5 16 0.5 0 50
 execute if score SEA_ch6_event sea_4temp4 matches 1622..1651 as @n[tag=SEAboss6b] at @s positioned ~ ~ ~ run particle minecraft:trial_spawner_detection_ominous ~ ~8 ~ 1 16 1 0 180
 execute if score SEA_ch6_event sea_4temp4 matches 1652..1681 as @n[tag=SEAboss6b] at @s positioned ~ ~ ~ run particle minecraft:trial_spawner_detection_ominous ~ ~8 ~ 2 16 2 0 320
@@ -166,15 +165,15 @@ execute if score @s rng4 matches 2..3 run playsound minecraft:ambient.soul_sand_
 execute if score @s rng4 matches 22..23 run playsound minecraft:ambient.soul_sand_valley.mood ambient @a ~ ~ ~ 2 1.5
 execute if score @s rng4 matches 22..23 run playsound minecraft:ambient.soul_sand_valley.mood ambient @a ~ ~ ~ 2 1.2
 
-execute if score SEA_ch6_event sea_4temp4 matches 1750 as @n[tag=SEAedwina] at @s positioned 90055 20 -1820 run particle explosion ~ ~ ~ 1 0.5 1 0 1
-execute if score SEA_ch6_event sea_4temp4 matches 1750 as @n[tag=SEAedwina] at @s positioned 90055 20 -1810 run particle explosion ~ ~ ~ 1 0.5 1 0 1
-execute if score SEA_ch6_event sea_4temp4 matches 1750 as @n[tag=SEAedwina] at @s positioned 90052 20 -1815 run particle explosion ~ ~ ~ 1 0.5 1 0 1
-execute if score SEA_ch6_event sea_4temp4 matches 1750 as @n[tag=SEAedwina] at @s positioned 90055 20 -1820 run playsound entity.generic.explode block @a ~ ~ ~ 2 1.1
-execute if score SEA_ch6_event sea_4temp4 matches 1750 as @n[tag=SEAedwina] at @s positioned 90055 20 -1810 run playsound entity.generic.explode block @a ~ ~ ~ 2 1.1
-execute if score SEA_ch6_event sea_4temp4 matches 1750 as @n[tag=SEAedwina] at @s positioned 90052 20 -1815 run playsound entity.generic.explode block @a ~ ~ ~ 2 1.1
-execute if score SEA_ch6_event sea_4temp4 matches 1770 as @n[tag=SEAedwina] at @s positioned 90052 20 -1823 run particle explosion ~ ~ ~ 1 0.5 1 0 1
-execute if score SEA_ch6_event sea_4temp4 matches 1770 as @n[tag=SEAedwina] at @s positioned 90052 20 -1807 run particle explosion ~ ~ ~ 1 0.5 1 0 1
-execute if score SEA_ch6_event sea_4temp4 matches 1770 as @n[tag=SEAedwina] at @s positioned 90050 20 -1815 run particle explosion ~ ~ ~ 1 0.5 1 0 1
+execute if score SEA_ch6_event sea_4temp4 matches 1760 as @n[tag=SEAedwina] at @s positioned 90055 20 -1820 run particle explosion ~ ~3 ~ 1 0.5 1 0 2
+execute if score SEA_ch6_event sea_4temp4 matches 1760 as @n[tag=SEAedwina] at @s positioned 90055 20 -1810 run particle explosion ~ ~3 ~ 1 0.5 1 0 2
+execute if score SEA_ch6_event sea_4temp4 matches 1760 as @n[tag=SEAedwina] at @s positioned 90052 20 -1815 run particle explosion ~ ~3 ~ 1 0.5 1 0 2
+execute if score SEA_ch6_event sea_4temp4 matches 1760 as @n[tag=SEAedwina] at @s positioned 90055 20 -1820 run playsound entity.generic.explode block @a ~ ~ ~ 2 1.1
+execute if score SEA_ch6_event sea_4temp4 matches 1760 as @n[tag=SEAedwina] at @s positioned 90055 20 -1810 run playsound entity.generic.explode block @a ~ ~ ~ 2 1.1
+execute if score SEA_ch6_event sea_4temp4 matches 1760 as @n[tag=SEAedwina] at @s positioned 90052 20 -1815 run playsound entity.generic.explode block @a ~ ~ ~ 2 1.1
+execute if score SEA_ch6_event sea_4temp4 matches 1770 as @n[tag=SEAedwina] at @s positioned 90052 20 -1823 run particle explosion ~ ~3 ~ 1 0.5 1 0 2
+execute if score SEA_ch6_event sea_4temp4 matches 1770 as @n[tag=SEAedwina] at @s positioned 90052 20 -1807 run particle explosion ~ ~3 ~ 1 0.5 1 0 2
+execute if score SEA_ch6_event sea_4temp4 matches 1770 as @n[tag=SEAedwina] at @s positioned 90050 20 -1815 run particle explosion ~ ~3 ~ 1 0.5 1 0 2
 execute if score SEA_ch6_event sea_4temp4 matches 1770 as @n[tag=SEAedwina] at @s positioned 90052 20 -1823 run playsound entity.generic.explode block @a ~ ~ ~ 2 1.1
 execute if score SEA_ch6_event sea_4temp4 matches 1770 as @n[tag=SEAedwina] at @s positioned 90052 20 -1807 run playsound entity.generic.explode block @a ~ ~ ~ 2 1.1
 execute if score SEA_ch6_event sea_4temp4 matches 1770 as @n[tag=SEAedwina] at @s positioned 90050 20 -1815 run playsound entity.generic.explode block @a ~ ~ ~ 2 1.1
