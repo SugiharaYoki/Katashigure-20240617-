@@ -59,6 +59,7 @@ execute as @s[tag=e_w_04,level=..7,scores={sea_oxygen=20..}] run xp add @s 1 poi
 execute as @s[tag=e_w_04,level=..7,scores={sea_oxygen=20..}] if entity @s[tag=sea_w_flamethrower_skill_refill_1] run xp add @s 1 points
 execute as @s[tag=e_w_04,level=..7,scores={sea_oxygen=20..}] if entity @s[tag=sea_w_flamethrower_skill_refill_2] run xp add @s 1 points
 execute as @s[tag=e_w_04,level=..7,scores={sea_oxygen=20..}] if entity @s[tag=sea_w_flamethrower_skill_refill_3] run xp add @s 1 points
+execute as @s[tag=e_w_04,level=..7,scores={sea_oxygen=20..}] if entity @s[advancements={skyblock:sea/doc/g27=true}] run xp add @s 1 points
 execute as @s[tag=e_w_04,level=8..,scores={sea_oxygen=20..}] run xp set @s 8 levels
 execute as @s[tag=e_w_04,level=8..,scores={sea_oxygen=20..}] run xp set @s 0 points
 
