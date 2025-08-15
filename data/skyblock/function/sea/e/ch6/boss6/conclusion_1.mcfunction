@@ -157,6 +157,7 @@ execute if score SEA_ch6_event sea_4temp4 matches 1622..1651 as @n[tag=SEAboss6b
 execute if score SEA_ch6_event sea_4temp4 matches 1652..1681 as @n[tag=SEAboss6b] at @s positioned ~ ~ ~ run particle minecraft:trial_spawner_detection_ominous ~ ~8 ~ 2 16 2 0 320
 execute if score SEA_ch6_event sea_4temp4 matches 1682..2000 as @n[tag=SEAboss6b] at @s positioned ~ ~ ~ run particle minecraft:trial_spawner_detection_ominous ~ ~8 ~ 4 16 4 0 560
 
+execute if score SEA_ch6_event sea_4temp4 matches 1590 as @n[tag=SEAedwina] at @s run tag @s add SEAedwina_ch6_end
 execute if score SEA_ch6_event sea_4temp4 matches 1600 as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.4
 execute if score SEA_ch6_event sea_4temp4 matches 1600 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“你是……伊曼纽尔……？”","color":"white","bold": false}]
 
