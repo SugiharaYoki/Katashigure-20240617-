@@ -375,9 +375,37 @@ execute positioned 90132 223 -1873 as @p[tag=SEAPT,tag=!e_i_55,distance=0..5] at
 
 execute unless entity @a[tag=SEAPT,tag=e_i_55] if score SEA_ch6_event sea_4temp4 matches 12222..12299 run scoreboard players set SEA_ch6_event sea_4temp4 12222
 
-execute if score SEA_ch6_event sea_4temp4 matches 12300 as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s run playsound entity.villager.ambient neutral @s ~ ~ ~ 1 1.4
-execute if score SEA_ch6_event sea_4temp4 matches 12300 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“我们的时间已经走到了尽头。最终，我们还是会归于烈火吧。”","color":"white","bold": false}]
-execute if score SEA_ch6_event sea_4temp4 matches 12400 as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s run playsound entity.villager.ambient neutral @s ~ ~ ~ 1 1.4
-execute if score SEA_ch6_event sea_4temp4 matches 12400 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“它们……就快要来了。”","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 12350 as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s run playsound entity.villager.ambient neutral @s ~ ~ ~ 1 1.4
+execute if score SEA_ch6_event sea_4temp4 matches 12350 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“我们的时间已经走到了尽头。最终，我们还是会归于烈火吧。”","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 12450 as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s run playsound entity.villager.ambient neutral @s ~ ~ ~ 1 1.4
+execute if score SEA_ch6_event sea_4temp4 matches 12450 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“政府的保守措施，战争用燃烧弹……想要毁尸灭迹还是简单得很。”","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 12650 as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s run playsound entity.villager.ambient neutral @s ~ ~ ~ 1 1.4
+execute if score SEA_ch6_event sea_4temp4 matches 12650 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“伊曼纽尔，我这条命都是你给的。”","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 12750 as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s run playsound entity.villager.ambient neutral @s ~ ~ ~ 1 1.4
+execute if score SEA_ch6_event sea_4temp4 matches 12750 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“能和你一起死去……我很开心。”","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 12850 as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s run playsound entity.villager.ambient neutral @s ~ ~ ~ 1 1.4
+execute if score SEA_ch6_event sea_4temp4 matches 12850 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“至少，我最后的……也是唯一的愿望，达成了。”","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 13150 as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s run playsound entity.villager.ambient neutral @s ~ ~ ~ 1 1.4
+execute if score SEA_ch6_event sea_4temp4 matches 13150 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“只不过，我知道……这对我而言就是结局。”","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 13250 as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s run playsound entity.villager.ambient neutral @s ~ ~ ~ 1 1.4
+execute if score SEA_ch6_event sea_4temp4 matches 13250 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“……但对你还不是。”","color":"white","bold": false}]
+
+execute if score SEA_ch6_event sea_4temp4 matches 13450 as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s run playsound entity.villager.ambient neutral @s ~ ~ ~ 1 1.4
+execute if score SEA_ch6_event sea_4temp4 matches 13450 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“你拥有更重要的事情要做。我一直以来是如此迟钝……以至于我到现在才发现这件事。”","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 13650 as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s run playsound entity.villager.ambient neutral @s ~ ~ ~ 1 1.4
+execute if score SEA_ch6_event sea_4temp4 matches 13650 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“圣水晶……你知道圣水晶在哪里吗？”","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 13750 as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s run playsound entity.villager.ambient neutral @s ~ ~ ~ 1 1.4
+execute if score SEA_ch6_event sea_4temp4 matches 13750 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“在你刚踏上甲板的时候，能在甲板中心那片铜制金属架的外围找到三个按钮。”","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 13880 as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s run playsound entity.villager.ambient neutral @s ~ ~ ~ 1 1.4
+execute if score SEA_ch6_event sea_4temp4 matches 13880 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“打开那三盏灯，接着……越涵就会指引你的。”","color":"white","bold": false}]
+
+execute if score SEA_ch6_event sea_4temp4 matches 13980 as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s run playsound entity.villager.ambient neutral @s ~ ~ ~ 1 1.4
+execute if score SEA_ch6_event sea_4temp4 matches 13980 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“……怎么啦？这种眼神。是因为我告诉你去做一些只有过去才做得到的事情嘛？”","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 14100 as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s run playsound entity.villager.ambient neutral @s ~ ~ ~ 1 1.4
+execute if score SEA_ch6_event sea_4temp4 matches 14100 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“我知道你一定做得到的。不论是我、越涵、菲尔娜，甚至诺玛……都做不到。”","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 14190 as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s run playsound entity.villager.ambient neutral @s ~ ~ ~ 1 1.4
+execute if score SEA_ch6_event sea_4temp4 matches 14190 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“只有你可以。”","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 14290 as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s run playsound entity.villager.ambient neutral @s ~ ~ ~ 1 1.4
+execute if score SEA_ch6_event sea_4temp4 matches 14290 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“你一直都被错误的人指引着。那诺玛她究竟是想要什么呢？你不妨自己试一试？”","color":"white","bold": false}]
 
 
