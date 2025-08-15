@@ -1249,5 +1249,16 @@ setblock 90431 207 -1877 minecraft:redstone_block
 setblock 90431 207 -1877 minecraft:air
 setblock 90431 212 -1840 minecraft:quartz_block
 forceload remove 90430 -1878 90475 -1836
+#lantern
+forceload add 90093 -1834
+setblock 90093 30 -1834 air
+forceload remove 90093 -1834
+
+
+
+
+
+
+
 
 
