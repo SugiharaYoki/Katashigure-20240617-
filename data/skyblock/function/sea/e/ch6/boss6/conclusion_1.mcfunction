@@ -440,6 +440,7 @@ execute if score SEA_ch6_event sea_4temp4 matches 15950 as @a[tag=SEAPT] run fun
 execute if score SEA_ch6_event sea_4temp4 matches 14470.. store result score @n[tag=SEAedwina] rng7 run random value 1..200
 execute if score SEA_ch6_event sea_4temp4 matches 14670.. store result score @n[tag=SEAedwina] rng7 run random value 1..180
 execute if score SEA_ch6_event sea_4temp4 matches 14870.. store result score @n[tag=SEAedwina] rng7 run random value 1..160
+execute if score SEA_ch6_event sea_4temp4 matches 15200.. store result score @n[tag=SEAedwina] rng7 run random value 1..100
 execute if score SEA_ch6_event sea_4temp4 matches 14470.. if score @n[tag=SEAedwina] rng7 matches 1 positioned 90116 222 -1889 positioned ~15 ~ ~ run summon fireball ~ ~50 ~-30 {ExplosionPower:3,Motion:[0.01,-0.05,0.03]}
 execute if score SEA_ch6_event sea_4temp4 matches 14470.. if score @n[tag=SEAedwina] rng7 matches 2 positioned 90116 222 -1889 positioned ~ ~ ~15 run summon fireball ~ ~50 ~-30 {ExplosionPower:3,Motion:[0.01,-0.05,0.03]}
 execute if score SEA_ch6_event sea_4temp4 matches 14470.. if score @n[tag=SEAedwina] rng7 matches 3 positioned 90116 222 -1889 positioned ~-15 ~ ~ run summon fireball ~ ~50 ~-30 {ExplosionPower:3,Motion:[0.01,-0.05,0.03]}
