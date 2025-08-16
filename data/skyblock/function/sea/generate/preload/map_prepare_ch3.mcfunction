@@ -538,5 +538,5 @@ setblock 90101 137 147 chest[facing=west]
 
 
 
-
+fill 90140 39 101 90140 38 99 barrier
 

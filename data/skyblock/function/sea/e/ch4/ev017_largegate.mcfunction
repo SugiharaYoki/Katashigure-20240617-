@@ -4,6 +4,8 @@ execute as @s[scores={sea_4temp1=21}] run playsound block.iron_door.open block @
 execute as @s[scores={sea_4temp1=21}] run kill @n[type=text_display,x=90160,y=34,z=130,distance=0..7]
 
 execute as @s[scores={sea_4temp1=21}] run fill 90151 39 101 90151 37 99 air
+execute as @s[scores={sea_4temp1=21}] run fill 90140 39 101 90140 38 99 air
+
 
 execute as @s[scores={sea_4temp1=31..60}] positioned 90160 34 130 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
 execute as @s[scores={sea_4temp1=31..60}] positioned 90160 34 130 run particle sculk_soul ~ ~1 ~ 0.3 0.5 0.3 0.05 10
