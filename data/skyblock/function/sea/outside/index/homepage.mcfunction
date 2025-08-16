@@ -4,7 +4,7 @@ item replace entity @s[scores={SEAPT_mode=3}] container.20 with name_tag[custom_
 
 item replace entity @s container.22 with sculk_shrieker[custom_data={"sea_setting_box":true},custom_name='{"text":"选择章节","italic":false,"color":"aqua"}',lore=['{"text":"选择跳关至《厄珀娅的悲歌》中的某一章节。","color":"white","italic":false}']]
 
-item replace entity @s container.24 with lectern[custom_data={"sea_setting_box":true},custom_name='{"text":"成就总览","italic":false,"color":"aqua"}',lore=['{"text":"查看你在《厄珀娅的悲歌》中所获得的全部进度成就。","color":"white","italic":false}','{"text":"成就的获取数量会打印在聊天区域。","color":"white","italic":false}']]
+item replace entity @s container.24 with lectern[custom_data={"sea_setting_box":true},custom_name='{"text":"玩家数据","italic":false,"color":"aqua"}',lore=['{"text":"查看你在《厄珀娅的悲歌》的玩家数据。","color":"white","italic":false}','{"text":"包含你已经收集的档案、成就、永久升级等。","color":"white","italic":false}','{"text":"点击一次即可赎回全部的成就数据。","color":"white","italic":false}']]
 
 
 execute unless entity @s[x=89829,y=12,z=-165,dx=30,dy=20,dz=30] run item replace entity @s[scores={sea_progress=3..}] container.18 with trial_spawner[custom_data={"sea_setting_box":true},custom_name='{"text":"试炼殿堂","italic":false,"color":"aqua"}',lore=['{"text":"查看你已经解锁的怪物图鉴。","color":"white","italic":false}','{"text":"你可以在殿堂中与它们进行模拟战斗。","color":"white","italic":false}']]

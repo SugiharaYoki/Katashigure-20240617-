@@ -1,4 +1,4 @@
-function skyblock:sea/generate/preload/map_prepare_ch1_player_advancement
+
 
 scoreboard players set @s rng1 0
 scoreboard players set @s rng2 0

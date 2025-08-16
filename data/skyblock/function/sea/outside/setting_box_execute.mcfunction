@@ -43,7 +43,9 @@ execute if items entity @s player.cursor iron_axe[custom_data={"sea_setting_box"
 execute if items entity @s player.cursor wind_charge[custom_data={"sea_setting_box":true}] run function skyblock:sea/outside/setting_box_execute_chapter_selection
 execute if items entity @s player.cursor amethyst_shard[custom_data={"sea_setting_box":true}] run function skyblock:sea/outside/setting_box_execute_chapter_selection
 
-execute if items entity @s player.cursor lectern run function skyblock:sea/outside/index/achievement
+execute if items entity @s player.cursor lectern run function skyblock:sea/outside/index/profile
+execute if items entity @s player.cursor golden_hoe run function skyblock:sea/outside/index/permanent_upgrades
+execute if items entity @s player.cursor guster_banner_pattern run function skyblock:sea/outside/index/achievement
 execute if items entity @s player.cursor trial_spawner[custom_data={"sea_setting_box":true}] run function skyblock:sea/outside/index/trial_hall
 execute if items entity @s player.cursor netherite_upgrade_smithing_template[custom_data={"sea_setting_box":true}] run function skyblock:menu/index/multimenu829_teleport_m04
 
