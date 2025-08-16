@@ -1,6 +1,8 @@
 execute store result score temp_wish_fountain_rolls Azr_system run data get entity @s Item.count
 scoreboard players remove temp_wish_fountain_rolls Azr_system 1
 
+# test
+
 function skyblock:azr/system/utils/rng
 execute if score #rng3 Azr_system matches 1 if score #rng4 Azr_system matches 1..2 if score #rng9 Azr_system matches 1 run summon item ~ ~ ~ {Item:{id:"emerald",count:6b}}
 execute if score #rng3 Azr_system matches 1 if score #rng4 Azr_system matches 1..2 if score #rng9 Azr_system matches 2 run summon item ~ ~ ~ {Item:{id:"emerald",count:9b}}
