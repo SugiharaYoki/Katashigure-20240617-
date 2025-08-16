@@ -1,30 +1,30 @@
 
 execute as @s[scores={sea_4temp1=1}] if block 90236 63 85 air as @n[tag=SEAboss4] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
-execute as @s[scores={sea_4temp1=1}] if block 90236 63 85 air run tellraw @a[tag=SEAPT] [{"text":"陌生的女声：","color":"yellow","bold": true},{"text":"\n“水下研究设施的人，无论是研究人员还是安保，可能再加上那些邪教徒，全都死了。”","color":"white","bold": false}]
+execute as @s[scores={sea_4temp1=1}] if block 90236 63 85 air as @p[tag=SEAPT] at @s run tellraw @a[distance=..150] [{"text":"陌生的女声：","color":"yellow","bold": true},{"text":"\n“水下研究设施的人，无论是研究人员还是安保，可能再加上那些邪教徒，全都死了。”","color":"white","bold": false}]
 execute as @s[scores={sea_4temp1=1}] if block 90236 63 85 air run scoreboard players add @s sea_4temp1 8
 execute as @s[scores={sea_4temp1=1}] if block 90236 63 85 grindstone as @n[tag=SEAboss4] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
-execute as @s[scores={sea_4temp1=1}] if block 90236 63 85 grindstone run tellraw @a[tag=SEAPT] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“和我梦到的一样。”","color":"white","bold": false}]
+execute as @s[scores={sea_4temp1=1}] if block 90236 63 85 grindstone as @p[tag=SEAPT] at @s run tellraw @a[distance=..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“和我梦到的一样。”","color":"white","bold": false}]
 execute as @s[scores={sea_4temp1=21}] if block 90236 63 85 grindstone run scoreboard players set @s sea_4temp1 51
 execute as @s[scores={sea_4temp1=32}] as @n[tag=SEAboss4] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
-execute as @s[scores={sea_4temp1=32}] run tellraw @a[tag=SEAPT] [{"text":"陌生的女声：","color":"yellow","bold": true},{"text":"\n“我曾来到这里，我现在很后悔自己中途离开。”","color":"white","bold": false}]
+execute as @s[scores={sea_4temp1=32}] as @p[tag=SEAPT] at @s run tellraw @a[distance=..150] [{"text":"陌生的女声：","color":"yellow","bold": true},{"text":"\n“我曾来到这里，我现在很后悔自己中途离开。”","color":"white","bold": false}]
 execute as @s[scores={sea_4temp1=52}] if block 90236 63 85 air as @n[tag=SEAboss4] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
-execute as @s[scores={sea_4temp1=52}] if block 90236 63 85 air run tellraw @a[tag=SEAPT] [{"text":"陌生的女声：","color":"green","bold": true},{"text":"\n“他们没能破坏生态主控，但冷凝系统的过热使得研究设施无法再撑超过3小时。”","color":"white","bold": false}]
+execute as @s[scores={sea_4temp1=52}] if block 90236 63 85 air as @p[tag=SEAPT] at @s run tellraw @a[distance=..150] [{"text":"陌生的女声：","color":"green","bold": true},{"text":"\n“他们没能破坏生态主控，但冷凝系统的过热使得研究设施无法再撑超过3小时。”","color":"white","bold": false}]
 execute as @s[scores={sea_4temp1=52}] if block 90236 63 85 grindstone as @n[tag=SEAboss4] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
-execute as @s[scores={sea_4temp1=52}] if block 90236 63 85 grindstone run tellraw @a[tag=SEAPT] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“那就继续吧，我们之间这战必然会发生。”","color":"white","bold": false}]
+execute as @s[scores={sea_4temp1=52}] if block 90236 63 85 grindstone as @p[tag=SEAPT] at @s run tellraw @a[distance=..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“那就继续吧，我们之间这战必然会发生。”","color":"white","bold": false}]
 execute as @s[scores={sea_4temp1=55}] if block 90236 63 85 grindstone run scoreboard players set @s sea_4temp1 75
 execute as @s[scores={sea_4temp1=73}] if block 90236 63 85 air run scoreboard players set @s sea_4temp1 1009
 
-execute as @s[scores={sea_4temp1=1001..1107}] if items entity @p[scores={sea_progress=12..},tag=SEAPT] weapon.mainhand spyglass as @p[nbt={SelectedItem:{id:"minecraft:spyglass"}}] unless entity @a[tag=SEAPT,scores={sea_progress=..11}] at @s run tellraw @a[tag=SEAPT] [{"selector":"@s","color":"white"},{"text":"：「跳过了剧情」","color":"white"}]
+execute as @s[scores={sea_4temp1=1001..1107}] if items entity @p[scores={sea_progress=12..},tag=SEAPT] weapon.mainhand spyglass as @p[nbt={SelectedItem:{id:"minecraft:spyglass"}}] unless entity @a[tag=SEAPT,scores={sea_progress=..11}] at @s as @p[tag=SEAPT] at @s run tellraw @a[distance=..150] [{"selector":"@s","color":"white"},{"text":"：「跳过了剧情」","color":"white"}]
 execute as @s[scores={sea_4temp1=1001..1107}] if items entity @p[scores={sea_progress=12..},tag=SEAPT] weapon.mainhand spyglass unless entity @a[tag=SEAPT,scores={sea_progress=..11}] run scoreboard players set @s sea_4temp1 1209
 
 execute as @s[scores={sea_4temp1=1011}] if block 90236 63 85 air if entity @a[tag=SEAPT,scores={SEAPT_member=2}] run tellraw @a[distance=0..250] [{"selector":"@p[tag=SEAPT,scores={SEAPT_member=1}]","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“你先冷静，我们无意与你为敌。我们也根本不是邪教徒。”","color":"white"}]
 execute as @s[scores={sea_4temp1=1011}] if block 90236 63 85 air unless entity @a[tag=SEAPT,scores={SEAPT_member=2}] run tellraw @a[distance=0..250] [{"selector":"@p[tag=SEAPT,scores={SEAPT_member=1}]","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“你先冷静，我无意与你为敌。我也根本不是邪教徒。”","color":"white"}]
 
 execute as @s[scores={sea_4temp1=1028}] if block 90236 63 85 air as @n[tag=SEAboss4] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
-execute as @s[scores={sea_4temp1=1028}] if block 90236 63 85 air run tellraw @a[tag=SEAPT] [{"text":"陌生女性：","color":"green","bold": true},{"text":"\n“没错，恰恰是因为你们并非邪教徒。诺玛给整个平台带来的麻烦太多了，但我确实没想到她甚至敢向这座研究设施派出人手。”","color":"white","bold": false}]
+execute as @s[scores={sea_4temp1=1028}] if block 90236 63 85 air as @p[tag=SEAPT] at @s run tellraw @a[distance=..150] [{"text":"陌生女性：","color":"green","bold": true},{"text":"\n“没错，恰恰是因为你们并非邪教徒。诺玛给整个平台带来的麻烦太多了，但我确实没想到她甚至敢向这座研究设施派出人手。”","color":"white","bold": false}]
 execute as @s[scores={sea_4temp1=1048}] if block 90236 63 85 air as @n[tag=SEAboss4] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
-execute as @s[scores={sea_4temp1=1048}] if block 90236 63 85 air if entity @a[tag=SEAPT,scores={SEAPT_member=2}] run tellraw @a[tag=SEAPT] [{"text":"陌生女性：","color":"green","bold": true},{"text":"\n“很遗憾。她甚至没想过提前告诉你们我会守在这儿。惊讶吗？”","color":"white","bold": false}]
-execute as @s[scores={sea_4temp1=1048}] if block 90236 63 85 air unless entity @a[tag=SEAPT,scores={SEAPT_member=2}] run tellraw @a[tag=SEAPT] [{"text":"陌生女性：","color":"green","bold": true},{"text":"\n“很遗憾。她甚至从没告诉过你我会守在这儿。惊讶吗？”","color":"white","bold": false}]
+execute as @s[scores={sea_4temp1=1048}] if block 90236 63 85 air if entity @a[tag=SEAPT,scores={SEAPT_member=2}] as @p[tag=SEAPT] at @s run tellraw @a[distance=..150] [{"text":"陌生女性：","color":"green","bold": true},{"text":"\n“很遗憾。她甚至没想过提前告诉你们我会守在这儿。惊讶吗？”","color":"white","bold": false}]
+execute as @s[scores={sea_4temp1=1048}] if block 90236 63 85 air unless entity @a[tag=SEAPT,scores={SEAPT_member=2}] as @p[tag=SEAPT] at @s run tellraw @a[distance=..150] [{"text":"陌生女性：","color":"green","bold": true},{"text":"\n“很遗憾。她甚至从没告诉过你我会守在这儿。惊讶吗？”","color":"white","bold": false}]
 
 execute as @s[scores={sea_4temp1=1067}] if block 90236 63 85 air if entity @a[tag=SEAPT,scores={SEAPT_member=2}] run tellraw @a[distance=0..250] [{"selector":"@p[tag=SEAPT,scores={SEAPT_member=1}]","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“我们根本就不认识你，也请你冷静，我们好好谈一谈好吗？我也是为了救人。”","color":"white"}]
 execute as @s[scores={sea_4temp1=1067}] if block 90236 63 85 air unless entity @a[tag=SEAPT,scores={SEAPT_member=2}] run tellraw @a[distance=0..250] [{"selector":"@p[tag=SEAPT,scores={SEAPT_member=1}]","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“我根本就不认识你，也请你冷静，我们好好谈一谈好吗？我也是为了救人。”","color":"white"}]
@@ -32,14 +32,14 @@ execute as @s[scores={sea_4temp1=1086}] if block 90236 63 85 air if entity @a[ta
 execute as @s[scores={sea_4temp1=1086}] if block 90236 63 85 air unless entity @a[tag=SEAPT,scores={SEAPT_member=2}] run tellraw @a[distance=0..250] [{"selector":"@p[tag=SEAPT,scores={SEAPT_member=1}]","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“就算我有歹意，我也不至于单枪匹马下到这么危险的地方来，你说对不对？”","color":"white"}]
 
 execute as @s[scores={sea_4temp1=1105}] if block 90236 63 85 air as @n[tag=SEAboss4] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
-execute as @s[scores={sea_4temp1=1105}] if block 90236 63 85 air if entity @a[tag=SEAPT,scores={SEAPT_member=2}] run tellraw @a[tag=SEAPT] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“没想到你的同伴还有些自知之明。\n自我介绍一下吧：美国中情局特工艾德雯娜。”","color":"white","bold": false}]
-execute as @s[scores={sea_4temp1=1105}] if block 90236 63 85 air unless entity @a[tag=SEAPT,scores={SEAPT_member=2}] run tellraw @a[tag=SEAPT] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“交谈还是免了吧，我没有理由信任你。\n自我介绍一下吧：美国中情局特工艾德雯娜。”","color":"white","bold": false}]
+execute as @s[scores={sea_4temp1=1105}] if block 90236 63 85 air if entity @a[tag=SEAPT,scores={SEAPT_member=2}] as @p[tag=SEAPT] at @s run tellraw @a[distance=..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“没想到你的同伴还有些自知之明。\n自我介绍一下吧：美国中情局特工艾德雯娜。”","color":"white","bold": false}]
+execute as @s[scores={sea_4temp1=1105}] if block 90236 63 85 air unless entity @a[tag=SEAPT,scores={SEAPT_member=2}] as @p[tag=SEAPT] at @s run tellraw @a[distance=..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“交谈还是免了吧，我没有理由信任你。\n自我介绍一下吧：美国中情局特工艾德雯娜。”","color":"white","bold": false}]
 
 scoreboard players set @s[scores={sea_4temp1=900..909}] sea_4temp1 900
 scoreboard players set @s[scores={sea_4temp1=1108..1180}] sea_4temp1 75
 scoreboard players set @s[scores={sea_4temp1=1218..1220}] sea_4temp1 75
 execute as @s[scores={sea_4temp1=1211}] if block 90236 63 85 air as @n[tag=SEAboss4] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
-execute as @s[scores={sea_4temp1=1211}] if block 90236 63 85 air run tellraw @a[tag=SEAPT] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“操，你知道吗？我在这里执行任务那么久，还没碰见谁嫌我艾德雯娜说话啰嗦。”","color":"white","bold": false}]
+execute as @s[scores={sea_4temp1=1211}] if block 90236 63 85 air as @p[tag=SEAPT] at @s run tellraw @a[distance=..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“操，你知道吗？我在这里执行任务那么久，还没碰见谁嫌我艾德雯娜说话啰嗦。”","color":"white","bold": false}]
 
 
 
@@ -53,8 +53,8 @@ execute as @s[scores={sea_4temp1=52}] run setblock 90182 71 74 minecraft:waxed_c
 execute as @s[scores={sea_4temp1=52}] run setblock 90187 71 74 minecraft:waxed_copper_bulb[lit=true]
 
 execute as @s[scores={sea_4temp1=76}] as @n[tag=SEAboss4] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
-execute as @s[scores={sea_4temp1=76}] if entity @a[tag=SEAPT,scores={SEAPT_member=2}] run tellraw @a[tag=SEAPT] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“真是愚笨啊……明明再过三小时，这里的一切就会灰飞烟灭。我不会让你们将在这里的所见所闻带出去。”","color":"white","bold": false}]
-execute as @s[scores={sea_4temp1=76}] unless entity @a[tag=SEAPT,scores={SEAPT_member=2}] run tellraw @a[tag=SEAPT] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“真是愚笨啊……明明再过三小时，这里的一切就会灰飞烟灭。我不会让你将你的所见所闻带出去。”","color":"white","bold": false}]
+execute as @s[scores={sea_4temp1=76}] if entity @a[tag=SEAPT,scores={SEAPT_member=2}] as @p[tag=SEAPT] at @s run tellraw @a[distance=..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“真是愚笨啊……明明再过三小时，这里的一切就会灰飞烟灭。我不会让你们将在这里的所见所闻带出去。”","color":"white","bold": false}]
+execute as @s[scores={sea_4temp1=76}] unless entity @a[tag=SEAPT,scores={SEAPT_member=2}] as @p[tag=SEAPT] at @s run tellraw @a[distance=..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“真是愚笨啊……明明再过三小时，这里的一切就会灰飞烟灭。我不会让你将你的所见所闻带出去。”","color":"white","bold": false}]
 
 execute as @s[scores={sea_4temp1=76}] run tag @a[tag=SEAPT] add e_e_01
 execute as @s[scores={sea_4temp1=76}] run data modify entity @n[tag=SEAboss4] NoAI set value 0b
