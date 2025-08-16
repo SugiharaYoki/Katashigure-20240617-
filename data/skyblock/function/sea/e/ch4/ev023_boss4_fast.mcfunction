@@ -54,9 +54,9 @@ execute as @n[tag=SEAboss4,scores={health=..80,rng2=11..,rng7=..180}] run scoreb
 execute as @n[tag=SEAboss4,scores={rng7=181..}] run scoreboard players add @s rng7 1
 
 execute store result score SEAboss4_killed rng1 run random value 1..3
-execute unless entity @n[tag=SEAedwina] if score SEAboss4_killed rng1 matches 1 run tellraw @a[tag=SEAPT] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“你知道那下有多痛吗？你真的惹毛我了。”","color":"white","bold": false}]
-execute unless entity @n[tag=SEAedwina] if score SEAboss4_killed rng1 matches 2 run tellraw @a[tag=SEAPT] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“我可不会就这么死了，你以为我是怎么活到现在的？”","color":"white","bold": false}]
-execute unless entity @n[tag=SEAedwina] if score SEAboss4_killed rng1 matches 3 run tellraw @a[tag=SEAPT] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“……真狠啊，只可惜并没成功放倒我。”","color":"white","bold": false}]
+execute unless entity @n[tag=SEAedwina] if score SEAboss4_killed rng1 matches 1 as @p[tag=SEAPT] at @s run tellraw @a[distance=..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“你知道那下有多痛吗？你真的惹毛我了。”","color":"white","bold": false}]
+execute unless entity @n[tag=SEAedwina] if score SEAboss4_killed rng1 matches 2 as @p[tag=SEAPT] at @s run tellraw @a[distance=..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“我可不会就这么死了，你以为我是怎么活到现在的？”","color":"white","bold": false}]
+execute unless entity @n[tag=SEAedwina] if score SEAboss4_killed rng1 matches 3 as @p[tag=SEAPT] at @s run tellraw @a[distance=..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“……真狠啊，只可惜并没成功放倒我。”","color":"white","bold": false}]
 execute unless entity @n[tag=SEAedwina] run setblock 90227 58 91 minecraft:copper_block
 execute unless entity @n[tag=SEAedwina] at @p[tag=SEAPT] rotated ~ 0 positioned ^ ^ ^-1 run function skyblock:sea/m/unique/boss4
 execute if block 90227 58 91 copper_block run function skyblock:sea/e/ch4/boss/_init_re
