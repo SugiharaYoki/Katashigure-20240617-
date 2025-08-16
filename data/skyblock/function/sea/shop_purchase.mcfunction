@@ -88,12 +88,19 @@ execute if entity @s[tag=sea_purchase_pass] run clear @s crossbow[custom_data={s
 execute if entity @s[tag=sea_purchase_pass] run give @s crossbow[custom_name='{"text":"工程弩·二版","italic":false,"color":"red"}',custom_data={sea_crossbow2:true},enchantments={quick_charge:1,piercing:1},unbreakable={}]
 execute if entity @s[tag=sea_purchase_pass] run scoreboard players remove @s sea_i_emerald 30
 tag @s remove sea_purchase_pass
-execute if items entity @s container.* *[custom_data={sea_crossbow2:true}] if score @s sea_crafter matches 10032 as @s[scores={sea_i_emerald=..29}] run tellraw @s {"text":"失败！余额不足！","color":"red"}
-execute if items entity @s container.* *[custom_data={sea_crossbow2:true}] if score @s sea_crafter matches 10032 as @s[scores={sea_i_emerald=30..}] run tag @s add sea_purchase_pass
+execute if items entity @s container.* *[custom_data={sea_crossbow2:true}] if score @s sea_crafter matches 10032 as @s[scores={sea_i_emerald=..39}] run tellraw @s {"text":"失败！余额不足！","color":"red"}
+execute if items entity @s container.* *[custom_data={sea_crossbow2:true}] if score @s sea_crafter matches 10032 as @s[scores={sea_i_emerald=40..}] run tag @s add sea_purchase_pass
 execute if entity @s[tag=sea_purchase_pass] run playsound minecraft:item.armor.equip_iron neutral @s ~ ~ ~ 100
 execute if entity @s[tag=sea_purchase_pass] run clear @s crossbow[custom_data={sea_crossbow2:true}] 1
 execute if entity @s[tag=sea_purchase_pass] run give @s crossbow[custom_name='{"text":"工程弩·三版","italic":false,"color":"red"}',custom_data={sea_crossbow3:true},enchantments={quick_charge:2,piercing:2},unbreakable={}]
-execute if entity @s[tag=sea_purchase_pass] run scoreboard players remove @s sea_i_emerald 30
+execute if entity @s[tag=sea_purchase_pass] run scoreboard players remove @s sea_i_emerald 40
+tag @s remove sea_purchase_pass
+execute if items entity @s container.* *[custom_data={sea_crossbow3:true}] if score @s sea_crafter matches 10062 as @s[scores={sea_i_emerald=..199}] run tellraw @s {"text":"失败！余额不足！","color":"red"}
+execute if items entity @s container.* *[custom_data={sea_crossbow3:true}] if score @s sea_crafter matches 10062 as @s[scores={sea_i_emerald=200..}] run tag @s add sea_purchase_pass
+execute if entity @s[tag=sea_purchase_pass] run playsound minecraft:item.armor.equip_iron neutral @s ~ ~ ~ 100
+execute if entity @s[tag=sea_purchase_pass] run clear @s crossbow[custom_data={sea_crossbow3:true}] 1
+execute if entity @s[tag=sea_purchase_pass] run give @s crossbow[custom_name='{"text":"工程弩·终版","italic":false,"color":"red"}',custom_data={sea_crossbow4:true},enchantments={quick_charge:3,piercing:3},unbreakable={}]
+execute if entity @s[tag=sea_purchase_pass] run scoreboard players remove @s sea_i_emerald 200
 tag @s remove sea_purchase_pass
 
 #复合弓制作
@@ -357,6 +364,20 @@ execute if entity @s[tag=sea_purchase_pass,scores={rng1=41..45}] run give @s net
 execute if entity @s[tag=sea_purchase_pass,scores={rng1=41..45}] run give @s emerald 30
 execute if entity @s[tag=sea_purchase_pass] run scoreboard players remove @s sea_i_trim_human 5
 execute if entity @s[tag=sea_purchase_pass] run scoreboard players remove @s sea_i_trim_skeleton 5
+tag @s remove sea_purchase_pass
+
+execute if score @s sea_crafter matches 20026 as @s[tag=seaPerm009,scores={sea_i_trim_bug=5..,sea_i_trim_spider=5..,SEAPT_mode=1..2}] run tag @s add sea_purchase_pass
+execute if score @s sea_crafter matches 20026 as @s[tag=!sea_purchase_pass] run tellraw @s {"text":"你的吟唱并未得到海妖的回应……","color":"red"}
+execute if entity @s[tag=sea_purchase_pass] run playsound minecraft:item.lodestone_compass.lock neutral @s ~ ~ ~ 100 0.8
+execute if entity @s[tag=sea_purchase_pass] run playsound minecraft:block.enchantment_table.use neutral @s ~ ~ ~ 100 0.9
+execute if entity @s[tag=sea_purchase_pass,scores={rng1=1..15}] run give @s bolt_armor_trim_smithing_template[custom_name='{"text":"密械铜板","italic":true,"color":"light_purple","italic":false}',lore=['{"text":"蛮力 III 增加基础攻击","color":"white","italic":false}'],custom_data={sea_t_damage3:true}]
+execute if entity @s[tag=sea_purchase_pass,scores={rng1=16..20}] run give @s bolt_armor_trim_smithing_template[custom_name='{"text":"坍缩铜板","italic":true,"color":"light_purple","italic":false}',lore=['{"text":"蛮力 IV 增加基础攻击","color":"white","italic":false}'],custom_data={sea_t_damage4:true}]
+execute if entity @s[tag=sea_purchase_pass,scores={rng1=21..35}] run give @s bolt_armor_trim_smithing_template[custom_name='{"text":"密械铜板","italic":true,"color":"light_purple","italic":false}',lore=['{"text":"坚韧 III 增加护甲韧度","color":"white","italic":false}'],custom_data={sea_t_tough3:true}]
+execute if entity @s[tag=sea_purchase_pass,scores={rng1=36..40}] run give @s bolt_armor_trim_smithing_template[custom_name='{"text":"坍缩铜板","italic":true,"color":"light_purple","italic":false}',lore=['{"text":"坚韧 IV 增加护甲韧度","color":"white","italic":false}'],custom_data={sea_t_tough4:true}]
+execute if entity @s[tag=sea_purchase_pass,scores={rng1=41..45}] run give @s netherite_scrap[custom_name='{"text":"废物铜板","italic":true,"color":"gray","italic":false}',lore=['{"text":"毫无任何魔力感应","color":"gray","italic":false}'],custom_data={sea_t_empty:true}]
+execute if entity @s[tag=sea_purchase_pass,scores={rng1=41..45}] run give @s emerald 30
+execute if entity @s[tag=sea_purchase_pass] run scoreboard players remove @s sea_i_trim_bug 5
+execute if entity @s[tag=sea_purchase_pass] run scoreboard players remove @s sea_i_trim_spider 5
 tag @s remove sea_purchase_pass
 
 
