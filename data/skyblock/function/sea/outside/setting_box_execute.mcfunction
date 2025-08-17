@@ -45,6 +45,7 @@ execute if items entity @s player.cursor amethyst_shard[custom_data={"sea_settin
 
 execute if items entity @s player.cursor lectern run scoreboard players set @s sea_setting_box_index 3
 execute if items entity @s player.cursor golden_hoe run function skyblock:sea/outside/index/permanent_upgrades
+execute if items entity @s player.cursor writable_book run function skyblock:sea/outside/index/music_sheets
 execute if items entity @s player.cursor guster_banner_pattern run function skyblock:sea/outside/index/achievement
 execute if items entity @s player.cursor trial_spawner[custom_data={"sea_setting_box":true}] run function skyblock:sea/outside/index/trial_hall
 execute if items entity @s player.cursor netherite_upgrade_smithing_template[custom_data={"sea_setting_box":true}] run function skyblock:menu/index/multimenu829_teleport_m04
