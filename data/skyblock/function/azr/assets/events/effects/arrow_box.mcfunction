@@ -14,14 +14,11 @@ execute if score @s AzrEntityTimer matches 9 run data merge entity @s {teleport_
 execute if score @s AzrEntityTimer matches 9 at @s run tp @s ~ ~0.25 ~
 execute if score @s AzrEntityTimer matches 11 run data merge entity @s {teleport_duration:2}
 execute if score @s AzrEntityTimer matches 11 at @s run tp @s ~ ~0.05 ~
-execute if score @s AzrEntityTimer matches 13 run data merge entity @s {teleport_duration:30}
-execute if score @s AzrEntityTimer matches 13 at @s run tp @s ~ ~ ~ ~540 ~
-# execute if score @s AzrEntityTimer matches 18 at @s run tp @s ~ ~ ~ ~90 ~
-# execute if score @s AzrEntityTimer matches 23 at @s run tp @s ~ ~ ~ ~90 ~
-# execute if score @s AzrEntityTimer matches 28 at @s run tp @s ~ ~ ~ ~90 ~
-# execute if score @s AzrEntityTimer matches 33 at @s run tp @s ~ ~ ~ ~90 ~
-# execute if score @s AzrEntityTimer matches 48 at @s run tp @s ~ ~ ~ ~90 ~
-# execute if score @s AzrEntityTimer matches 63 at @s run tp @s ~ ~-1.6 ~
+execute if score @s AzrEntityTimer matches 13 run data merge entity @s {teleport_duration:10}
+execute if score @s AzrEntityTimer matches 13 at @s run tp @s ~ ~ ~ ~180 ~
+execute if score @s AzrEntityTimer matches 23 at @s run tp @s ~ ~ ~ ~180 ~
+execute if score @s AzrEntityTimer matches 33 at @s run tp @s ~ ~ ~ ~180 ~
+execute if score @s AzrEntityTimer matches 63 at @s run tp @s ~ ~-1.6 ~
 execute if score @s AzrEntityTimer matches 63 run scoreboard players reset @s AzrEntityTimer
 
 # summon block_display ~ ~ ~ {block_state:{Name:"shulker_box"},transformation:[0.1, 0.0, 0.0, -0.05,  0.0, 0.1, 0.0, 0.0,  0.0, 0.0, 0.1, -0.05, 0.0, 0.0, 0.0, 1.0]}
