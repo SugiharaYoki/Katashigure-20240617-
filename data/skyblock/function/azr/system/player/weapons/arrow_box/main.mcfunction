@@ -2,7 +2,6 @@
 # 由箭盒展示实体执行
 scoreboard players add @s AzrEntityTimer 1
 
-execute if score @s AzrEntityTimer matches 1 facing entity @n[tag=AzrielMob] eyes rotated ~-162 0 run tp @s ~ ~ ~ ~ ~
 execute if score @s AzrEntityTimer matches 1 run data merge entity @s {teleport_duration:2}
 execute if score @s AzrEntityTimer matches 1 run playsound entity.firework_rocket.launch master @a[tag=azrShowDialog] ~ ~ ~
 execute if score @s AzrEntityTimer matches 1..14 at @s run particle firework ~ ~ ~ 0 0 0 0.02 1
