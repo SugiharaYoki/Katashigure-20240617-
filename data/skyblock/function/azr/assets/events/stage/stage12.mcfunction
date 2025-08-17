@@ -118,7 +118,7 @@ execute if score stage_main_thread AzrTimerStack matches 98..99 if entity @e[tag
 execute if score stage_main_thread AzrTimerStack matches 100 run scoreboard players set wave Azr_system 34
 execute if score stage_main_thread AzrTimerStack matches 100 run fill -79837 48 -127 -79837 51 -130 air
 execute if score stage_main_thread AzrTimerStack matches 100 run fill -79820 48 -130 -79820 53 -127 air
-execute if score stage_main_thread AzrTimerStack matches 100 run advancement grant @a[tag=azrPlayer] only skyblock:azr/azr_stage12
+execute if score stage_main_thread AzrTimerStack matches 100 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage12
 
 
 execute if score stage_main_thread AzrTimerStack matches 100 run scoreboard players set stage Azr_system 42

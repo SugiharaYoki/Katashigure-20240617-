@@ -286,7 +286,7 @@ execute as @e[tag=arroworb2,type=marker] at @s run function skyblock:azr/assets/
     execute if score tick_main_thread AzrTimerStack matches 3140 run playsound minecraft:ui.toast.challenge_complete master @a[tag=azrShowDialog] ~ ~ ~ 2 0.9
     execute if score tick_main_thread AzrTimerStack matches 3140 run title @a[tag=azrShowDialog] actionbar {"text":"Chapter Clear","color":"gold"}
     execute if score tick_main_thread AzrTimerStack matches 3140 run tellraw @a[tag=azrShowDialog] {"text":"「生命手册」已升级","color":"green"}
-    execute if score tick_main_thread AzrTimerStack matches 3140 run advancement grant @a[tag=azrPlayer] only skyblock:azr/azr_stage4_boss1
+    execute if score tick_main_thread AzrTimerStack matches 3140 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage4_boss1
     execute if score tick_main_thread AzrTimerStack matches 3120 run kill @e[tag=AzrielMob,x=-79931,y=40,z=88,distance=5..500]
     #rewards
     execute if score tick_main_thread AzrTimerStack matches 3144 as @a[tag=azrPlayer] at @s run summon item ~ ~2 ~ {Item:{id:"emerald",count:2b}}

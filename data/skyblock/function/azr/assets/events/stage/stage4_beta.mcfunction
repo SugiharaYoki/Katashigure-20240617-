@@ -402,7 +402,7 @@ execute if score stage_main_thread AzrTimerStack matches 251 run particle minecr
 execute if score stage_main_thread AzrTimerStack matches 251 run tellraw @a[tag=azrPlayer,scores={AZR_chainKillUpg_pts=..1},tag=hasSkills] [{"text":"索命连击","color":"gold"},{"text":"可用点数已增加，目前为：2","color":"green"}]
 execute if score stage_main_thread AzrTimerStack matches 251 run scoreboard players set @a[scores={AZR_chainKillUpg_pts=..1}] AZR_chainKillUpg_pts 2
 
-execute if score stage_main_thread AzrTimerStack matches 251 run advancement grant @a[tag=azrPlayer] only skyblock:azr/azr_stage4_alt
+execute if score stage_main_thread AzrTimerStack matches 251 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage4_alt
 execute if score stage_main_thread AzrTimerStack matches 251 positioned -79962 43 49 run function skyblock:azr/assets/mobs/zombie_t2_miner
 execute if score stage_main_thread AzrTimerStack matches 251 positioned -79962 43 49 run function skyblock:azr/assets/mobs/zombie_t2_miner
 execute if score stage_main_thread AzrTimerStack matches 251 if score playerCount Azr_system matches 5.. positioned -79962 43 49 run function skyblock:azr/assets/mobs/zombie_t2_miner

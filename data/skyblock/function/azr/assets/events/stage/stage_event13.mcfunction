@@ -216,7 +216,7 @@ execute if score stage_main_thread AzrTimerStack matches 1120 run tellraw @a[tag
 execute if score stage_main_thread AzrTimerStack matches 1120 as @n[tag=AzrielBossFA] at @s run playsound minecraft:entity.pillager.ambient master @a[tag=azrShowDialog] ~ ~ ~ 2 0.8
 execute if score stage_main_thread AzrTimerStack matches 1120 run setblock -79765 23 -397 minecraft:air
 execute if score stage_main_thread AzrTimerStack matches 1120 as @n[tag=AzrielBossFA] at @s run tp @s ~ ~ ~ facing entity @a[limit=1,tag=azrPlayer,sort=random,distance=0..15]
-execute if score stage_main_thread AzrTimerStack matches 1120 run advancement grant @a[tag=azrPlayer] only skyblock:azr/azr_stage13_event1
+execute if score stage_main_thread AzrTimerStack matches 1120 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage13_event1
 
 execute if score stage_main_thread AzrTimerStack matches 1125 run fill -79788 31 -343 -79788 32 -343 minecraft:air destroy
 # execute if score stage_main_thread AzrTimerStack matches 1125 as @a[tag=azrPlayer] run function skyblock:azr/system/shop/reader_nethershop_1
@@ -292,7 +292,7 @@ execute if score stage_main_thread AzrTimerStack matches 10030..10038 as @a[tag=
 execute if score stage_main_thread AzrTimerStack matches 10000..10020 run scoreboard players set stage_main_thread AzrTimerStack 10010
 execute if score stage_main_thread AzrTimerStack matches 19900..19999 run scoreboard players set stage_main_thread AzrTimerStack 19900
 
-advancement grant @a[tag=azrPlayer,x=-79699,y=27,z=-451,distance=0..5] only skyblock:azr/azr_stage14_event1
+advancement grant @a[tag=azrPlayer,x=-79699,y=27,z=-451,distance=0..5] only skyblock:azr/progress/stage14_event1
 
 execute if score stage_main_thread AzrTimerStack matches 29900..29999 run scoreboard players set stage_main_thread AzrTimerStack 29900
 

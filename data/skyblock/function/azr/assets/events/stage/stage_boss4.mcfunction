@@ -416,7 +416,7 @@ execute if score tick_main_thread AzrTimerStack matches 8669..8999 unless entity
 execute if score tick_main_thread AzrTimerStack matches 9100 run setblock -79619 54 -338 air
 execute if score tick_main_thread AzrTimerStack matches 9100 run setblock -79619 55 -338 air
 execute if score tick_main_thread AzrTimerStack matches 9100 run title @a[tag=azrShowDialog] actionbar {"text":"Chapter Clear","color":"gold"}
-execute if score tick_main_thread AzrTimerStack matches 9100 run advancement grant @a[tag=azrPlayer] only skyblock:azr/azr_stage16_boss4
+execute if score tick_main_thread AzrTimerStack matches 9100 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage16_boss4
 execute if score tick_main_thread AzrTimerStack matches 9100 run kill @e[tag=AzrielBossA,limit=3]
 execute if score tick_main_thread AzrTimerStack matches 9100 run kill @e[tag=AzrielBoss4,limit=3]
 execute if score tick_main_thread AzrTimerStack matches 9100 run kill @e[tag=AzrielMob,tag=!AzrielDecMob]

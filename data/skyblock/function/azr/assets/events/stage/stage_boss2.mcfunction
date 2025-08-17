@@ -432,7 +432,7 @@ execute as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run function skyblo
     execute if score tick_main_thread AzrTimerStack matches 6760 as @a[tag=azrShowDialog] at @s run playsound minecraft:ui.toast.challenge_complete master @s ~ ~ ~ 2 0.9
     execute if score tick_main_thread AzrTimerStack matches 6760 run title @a[tag=azrShowDialog] actionbar {"text":"Chapter Clear","color":"gold"}
     execute if score tick_main_thread AzrTimerStack matches 6760 run tellraw @a[tag=azrShowDialog] {"text":"「生命手册」已升级","color":"green"}
-    execute if score tick_main_thread AzrTimerStack matches 6760 run advancement grant @a[tag=azrPlayer] only skyblock:azr/azr_stage8_boss2
+    execute if score tick_main_thread AzrTimerStack matches 6760 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage8_boss2
     execute if score tick_main_thread AzrTimerStack matches 6740 run kill @e[tag=AzrielBossA,type=illusioner,limit=3]
     execute if score tick_main_thread AzrTimerStack matches 6520 run scoreboard players set stage_main_thread AzrTimerStack 0
     execute if score tick_main_thread AzrTimerStack matches 6790 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..9}] Azr_skillPoints 10

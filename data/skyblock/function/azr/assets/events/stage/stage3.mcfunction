@@ -209,7 +209,7 @@ execute if score stage_main_thread AzrTimerStack matches 251 run fill -79931 38 
 execute if score stage_main_thread AzrTimerStack matches 251 run fill -79935 43 34 -79935 45 34 air destroy
 execute if score stage_main_thread AzrTimerStack matches 251 run scoreboard players set wave Azr_system 6
 execute if score stage_main_thread AzrTimerStack matches 251 run scoreboard players set stage Azr_system 7
-execute if score stage_main_thread AzrTimerStack matches 251 run advancement grant @a[tag=azrPlayer] only skyblock:azr/azr_stage3
+execute if score stage_main_thread AzrTimerStack matches 251 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage3
 execute if score stage_main_thread AzrTimerStack matches 251 run tellraw @a[scores={Azr_skillPoints=..2}] {"text":"永久升级 - 初始绿宝石数量 +5","color":"light_purple"}
 execute if score stage_main_thread AzrTimerStack matches 251 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..2}] Azr_skillPoints 3
 execute if score stage_main_thread AzrTimerStack matches 251 run title @a[tag=azrShowDialog] actionbar {"text":"Stage Clear","color":"green"}

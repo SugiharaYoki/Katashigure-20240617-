@@ -267,7 +267,7 @@ execute if score stage_main_thread AzrTimerStack matches 316 run fill -79906 40 
 execute if score stage_main_thread AzrTimerStack matches 316 run tellraw @a[scores={Azr_skillPoints=..6}] {"text":"永久升级 - 中途加入时 若至少位于第二章则额外获取 腐肉×3 + 木棍×3 + 燧石×3","color":"light_purple"}
 execute if score stage_main_thread AzrTimerStack matches 316 run title @a[tag=azrShowDialog] actionbar {"text":"Stage Clear","color":"green"}
 execute if score stage_main_thread AzrTimerStack matches 318 run scoreboard players set wave Azr_system 15
-execute if score stage_main_thread AzrTimerStack matches 318 run advancement grant @a[tag=azrPlayer] only skyblock:azr/azr_stage6
+execute if score stage_main_thread AzrTimerStack matches 318 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage6
 execute if score stage_main_thread AzrTimerStack matches 318 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..6}] Azr_skillPoints 7
 execute if score stage_main_thread AzrTimerStack matches 318 run fill -79938 44 151 -79938 43 151 air destroy
 execute if score stage_main_thread AzrTimerStack matches 318 run summon vindicator -79936 43 157 {PersistenceRequired:1b,Tags:["AzrielDecMob","AzrielMob"],DeathLootTable:"skyblock:azriel_vindicator_tier1",Health:12.0f,CustomName:'"圣殿守卫"',CanPickUpLoot:0b,HandItems:[{count:1,id:"stone_axe",components:{custom_name:'{"text":"石斧","italic":false,"color":"white"}'}},{}],HandDropChances:[0.003f,0.003f],attributes:[{id:"max_health",base:12.0d},{id:"attack_damage",base:2.5d},{id:"movement_speed",base:0.32d}]}

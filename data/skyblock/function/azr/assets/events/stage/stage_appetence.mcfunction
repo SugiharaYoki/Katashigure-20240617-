@@ -226,7 +226,7 @@ execute if score stage_main_thread AzrTimerStack matches 244 run title @a[tag=az
 
 #execute if entity @e[tag=sc,limit=1,scores={stageSeconds=130,Azr_Player=1..}] run tellraw @a[tag=AZRPT] {"text":"你感受到一道刺入骨髓的冰冷视线……","color":"gray"}
 #execute if entity @e[tag=sc,limit=1,scores={stageSeconds=143,Azr_Player=1..}] run tellraw @a[tag=AZRPT] {"text":"流浪狙击手 现身","color":"dark_red"}
-execute if score stage_main_thread AzrTimerStack matches 400 run advancement grant @a[tag=azrPlayer] only skyblock:azr/azr_stage_bonus_appetence
+execute if score stage_main_thread AzrTimerStack matches 400 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage_bonus_appetence
 execute if score stage_main_thread AzrTimerStack matches 400 run title @a[tag=azrShowDialog] actionbar {"text":"Extra Stage Clear","color":"green"}
 execute if score stage_main_thread AzrTimerStack matches 400 as @a[tag=azrPlayer] at @s unless score @s Azr_SK10 matches 1.. run tellraw @s {"text":"解封了灵能「滞空斩击」！","color":"green"}
 execute if score stage_main_thread AzrTimerStack matches 400 as @a[tag=azrPlayer] at @s unless score @s Azr_SK10 matches 1.. run playsound entity.player.levelup master @s ~ ~ ~ 1 1.1

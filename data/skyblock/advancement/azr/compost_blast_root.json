@@ -1,0 +1,33 @@
+{
+    "criteria": {
+        "trigger": {
+            "trigger": "item_used_on_block",
+            "conditions": {
+                "location": [
+                    {
+                        "condition": "block_state_property",
+                        "block": "composter"
+                    },
+                    {
+                        "condition": "entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "slots": {
+                                "weapon.*": {
+                                    "components": {
+                                        "custom_data": {
+                                            "blast_root": 1
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "skyblock:azr/system/player/weapons/blast_root/eat"
+    }
+}

@@ -18,7 +18,7 @@ execute if score stage_main_thread AzrTimerStack matches 10.. as @e[name="僵尸
 execute if score stage_main_thread AzrTimerStack matches 10 run summon item_frame -79929 41 -104 {Item:{id:"minecraft:glistering_melon_slice",count:1b},Facing:5}
 
 
-execute if score stage_main_thread AzrTimerStack matches 10 run advancement grant @a[tag=azrPlayer] only skyblock:azr/azr_stage13_event0
+execute if score stage_main_thread AzrTimerStack matches 10 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage13_event0
 execute if score stage_main_thread AzrTimerStack matches 1 as @a[tag=azrShowDialog] at @s run playsound music.nether.crimson_forest ambient @s ~ ~ ~ 8 1.0
 execute if score stage_main_thread AzrTimerStack matches 3 as @a[tag=azrShowDialog] at @s run playsound event.raid.horn ambient @s ~50 ~ ~-50 483 0.9
 
@@ -128,8 +128,8 @@ execute if score stage_main_thread AzrTimerStack matches 319 unless score $Azr_D
 execute if score stage_main_thread AzrTimerStack matches 319 if score $Azr_Doppel Azr_system matches 1 run title @a[tag=azrShowDialog] actionbar {"text":"Double Stage Annihilated","color":"green"}
 execute if score stage_main_thread AzrTimerStack matches 319 if score $Azr_Doppel Azr_system matches 1 run tag @a[tag=azrPlayer] add AZS_BoS09
 #execute if entity @e[tag=sc,limit=1,scores={stageSeconds=319},tag=Azr_Doppel] run give @a[tag=azrPlayer] end_crystal{display:{Name:"{\"text\":\"猝火核心\",\"italic\":false,\"color\":\"yellow\"}",Lore:["{\"text\":\"置于背包栏第4格且自身着火时\",\"color\":\"gray\",\"italic\":false}","{\"text\":\"攻击力+10% 移动速度+20%\",\"color\":\"dark_green\",\"italic\":false}"]}}
-execute if score stage_main_thread AzrTimerStack matches 319 run advancement grant @a[tag=azrPlayer] only skyblock:azr/azr_stage13
-execute if score stage_main_thread AzrTimerStack matches 319 if score $Azr_Doppel Azr_system matches 1 run advancement grant @a[tag=azrPlayer] only skyblock:azr/azr_stage_bonus_impersonate
+execute if score stage_main_thread AzrTimerStack matches 319 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage13
+execute if score stage_main_thread AzrTimerStack matches 319 if score $Azr_Doppel Azr_system matches 1 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage_bonus_impersonate
 execute if score stage_main_thread AzrTimerStack matches 319 run playsound ambient.crimson_forest.loop ambient @a[tag=azrShowDialog] -78000 100 0 1000
 execute if score stage_main_thread AzrTimerStack matches 319 run playsound minecraft:ambient.nether_wastes.mood ambient @a[tag=azrShowDialog] -78000 100 0 1000 0.3
 execute if score stage_main_thread AzrTimerStack matches 319 run playsound ambient.crimson_forest.additions ambient @a[tag=azrShowDialog] -78000 100 0 1000

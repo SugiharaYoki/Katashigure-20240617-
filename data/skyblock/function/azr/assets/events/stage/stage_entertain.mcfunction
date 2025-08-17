@@ -113,7 +113,7 @@ execute if score stage_main_thread AzrTimerStack matches 87..90 if score #rng3 A
 
 execute if score stage_main_thread AzrTimerStack matches 95..97 if entity @e[tag=AzrielMob,tag=!AzrielDecMob] run scoreboard players set stage_main_thread AzrTimerStack 95
 execute if score stage_main_thread AzrTimerStack matches 97 run title @a[tag=azrShowDialog] actionbar {"text":"Extra Stage Clear","color":"green"}
-execute if score stage_main_thread AzrTimerStack matches 97 run advancement grant @a[tag=azrPlayer] only skyblock:azr/azr_stage_bonus_entertain
+execute if score stage_main_thread AzrTimerStack matches 97 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage_bonus_entertain
 execute if score stage_main_thread AzrTimerStack matches 97 as @a[tag=azrPlayer] at @s run tag @s add AZS_BoS03
 execute if score stage_main_thread AzrTimerStack matches 97 as @a[tag=azrPlayer] at @s run give @s emerald 20
 execute if score stage_main_thread AzrTimerStack matches 97 as @a[tag=azrPlayer] at @s run give @s golden_carrot 5

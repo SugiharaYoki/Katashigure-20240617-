@@ -29,7 +29,7 @@ tag @a remove AzrielEvent3756S
 tag @a remove AzrielEvent3757S
 
 #大图书馆进度
-execute as @a[x=-79859,y=43,z=176,distance=..3,tag=azrPlayer] at @s run advancement grant @s only skyblock:azr/azr_stage_extra_library1
+execute as @a[x=-79859,y=43,z=176,distance=..3,tag=azrPlayer] at @s run advancement grant @s only skyblock:azr/progress/stage_extra_library1
 
 #水族馆 AzrielEvent382315A是进入水族馆的遭遇事件
 execute unless entity @a[tag=AzrielEvent382315A] if entity @a[x=-79827,y=43,z=197,distance=..4 ,tag=azrPlayer] positioned -79804 43.0 197 run function skyblock:azr/assets/events/effects/basalt_open
