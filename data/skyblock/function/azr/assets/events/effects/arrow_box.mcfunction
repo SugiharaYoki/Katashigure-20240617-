@@ -2,14 +2,24 @@
 # 由箭盒展示实体执行
 scoreboard players add @s AzrEntityTimer 1
 
-execute if score @s AzrEntityTimer matches 1 run data merge entity @s {teleport_duration:10}
-execute if score @s AzrEntityTimer matches 1 at @s run tp @s ~ ~1.6 ~
-execute if score @s AzrEntityTimer matches 10 run data merge entity @s {teleport_duration:5}
-execute if score @s AzrEntityTimer matches 10 at @s run tp @s ~ ~ ~ ~90 ~
-execute if score @s AzrEntityTimer matches 15 at @s run tp @s ~ ~ ~ ~90 ~
-execute if score @s AzrEntityTimer matches 20 at @s run tp @s ~ ~ ~ ~90 ~
-execute if score @s AzrEntityTimer matches 25 at @s run tp @s ~ ~ ~ ~90 ~
-execute if score @s AzrEntityTimer matches 30 at @s run tp @s ~ ~ ~ ~90 ~
-execute if score @s AzrEntityTimer matches 45 at @s run tp @s ~ ~ ~ ~90 ~
-execute if score @s AzrEntityTimer matches 60 at @s run tp @s ~ ~-1.6 ~
-execute if score @s AzrEntityTimer matches 60 run scoreboard players reset @s AzrEntityTimer
+execute if score @s AzrEntityTimer matches 1 run data merge entity @s {teleport_duration:2}
+execute if score @s AzrEntityTimer matches 1 at @s run tp @s ~ ~0.05 ~
+execute if score @s AzrEntityTimer matches 3 run data merge entity @s {teleport_duration:2}
+execute if score @s AzrEntityTimer matches 3 at @s run tp @s ~ ~0.25 ~
+execute if score @s AzrEntityTimer matches 5 run data merge entity @s {teleport_duration:2}
+execute if score @s AzrEntityTimer matches 5 at @s run tp @s ~ ~0.5 ~
+execute if score @s AzrEntityTimer matches 7 run data merge entity @s {teleport_duration:2}
+execute if score @s AzrEntityTimer matches 7 at @s run tp @s ~ ~0.5 ~
+execute if score @s AzrEntityTimer matches 9 run data merge entity @s {teleport_duration:2}
+execute if score @s AzrEntityTimer matches 9 at @s run tp @s ~ ~0.25 ~
+execute if score @s AzrEntityTimer matches 11 run data merge entity @s {teleport_duration:2}
+execute if score @s AzrEntityTimer matches 11 at @s run tp @s ~ ~0.05 ~
+execute if score @s AzrEntityTimer matches 13 run data merge entity @s {teleport_duration:5}
+execute if score @s AzrEntityTimer matches 13 at @s run tp @s ~ ~ ~ ~90 ~
+execute if score @s AzrEntityTimer matches 18 at @s run tp @s ~ ~ ~ ~90 ~
+execute if score @s AzrEntityTimer matches 23 at @s run tp @s ~ ~ ~ ~90 ~
+execute if score @s AzrEntityTimer matches 28 at @s run tp @s ~ ~ ~ ~90 ~
+execute if score @s AzrEntityTimer matches 33 at @s run tp @s ~ ~ ~ ~90 ~
+execute if score @s AzrEntityTimer matches 48 at @s run tp @s ~ ~ ~ ~90 ~
+execute if score @s AzrEntityTimer matches 63 at @s run tp @s ~ ~-1.6 ~
+execute if score @s AzrEntityTimer matches 63 run scoreboard players reset @s AzrEntityTimer
