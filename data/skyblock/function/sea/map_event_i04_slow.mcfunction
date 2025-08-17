@@ -55,7 +55,7 @@ execute as @a[tag=SEAPT,tag=!e_i_34] at @s if entity @n[tag=SEAherb,distance=0..
 execute as @a[tag=SEAPT,tag=!e_i_34] at @s if entity @n[tag=SEAherb,distance=0..3.5,scores={sea_4temp1=..1}] run tag @s add e_i_34
 
 execute if entity @a[tag=SEAPT,tag=e_i_36] as @n[tag=SEAherb] at @s unless entity @a[tag=SEAPT,distance=0..8] positioned 90229 48 105 if entity @s[distance=10..] run tp @s ~ ~ ~
-execute as @n[tag=SEAherb] at @s positioned 90229 48 105 if entity @s[distance=..8] run function skyblock:sea/e/ch4/herb
+execute as @n[tag=SEAherb] at @s positioned 90229 48 105 if entity @s[distance=..5] run function skyblock:sea/e/ch4/herb
 
 #防止回船
 execute positioned 90060 102 142 as @a[tag=SEAPT,distance=..40] at @s run tp @s 90141.56 19.00 88.99 facing 90142.56 19.00 88.99
