@@ -325,9 +325,11 @@ execute if score SEA_ch6_event sea_4temp4 matches 8941 as @a[tag=SEAPT] at @s ru
 execute if score SEA_ch6_event sea_4temp4 matches 8941 as @a[tag=SEAPT] at @s run time set 500
 execute if score SEA_ch6_event sea_4temp4 matches 8941 as @a[tag=SEAPT] at @s run weather clear 99999
 
-execute if score SEA_ch6_event sea_4temp4 matches 8939 as @a[tag=SEAPT] at @s as @p[tag=SEAPT] at @s run kill @e[tag=SEAedwina,distance=..800]
+execute if score SEA_ch6_event sea_4temp4 matches 8939 as @a[tag=SEAPT] at @s as @p[tag=SEAPT] at @s run kill @e[tag=SEAedwina,distance=..1800]
+execute if score SEA_ch6_event sea_4temp4 matches 8939 as @a[tag=SEAPT] at @s as @p[tag=SEAPT] at @s run kill @e[tag=SEAboss6b,distance=..1800]
 execute if score SEA_ch6_event sea_4temp4 matches 8940 as @a[tag=SEAPT] at @s as @p[tag=SEAPT] at @s run function skyblock:sea/m/unique/npc_edwina_ch6
 execute if score SEA_ch6_event sea_4temp4 matches 8940 as @a[tag=SEAPT] at @s run tag @n[tag=SEAedwina] add SEAedwina_ch6_end
+execute if score SEA_ch6_event sea_4temp4 matches 8941..8950 as @n[tag=SEAedwina_ch6_end] at @s run kill @e[tag=SEAedwina,distance=0.5..800]
 execute if score SEA_ch6_event sea_4temp4 matches 8940 as @a[tag=SEAPT] at @s run tp @n[tag=SEAedwina] 90091 29 -1835
 execute if score SEA_ch6_event sea_4temp4 matches 8945 as @n[tag=SEAedwina] at @s run tag @s add SEAedwina_ch6_end
 execute if score SEA_ch6_event sea_4temp4 matches 9000 as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s run playsound entity.villager.ambient neutral @s ~ ~ ~ 1 1.4
