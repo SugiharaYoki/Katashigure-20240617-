@@ -3,12 +3,12 @@
 scoreboard players add @s AzrEntityTimer 1
 
 execute if score @s AzrEntityTimer matches 1 run data merge entity @s {teleport_duration:2}
-execute if score @s AzrEntityTimer matches 2 at @s run tp @s ~ ~0.05 ~
-execute if score @s AzrEntityTimer matches 4 at @s run tp @s ~ ~0.25 ~
-execute if score @s AzrEntityTimer matches 6 at @s run tp @s ~ ~0.5 ~
-execute if score @s AzrEntityTimer matches 8 at @s run tp @s ~ ~0.5 ~
-execute if score @s AzrEntityTimer matches 10 at @s run tp @s ~ ~0.25 ~
-execute if score @s AzrEntityTimer matches 12 at @s run tp @s ~ ~0.05 ~
+execute if score @s AzrEntityTimer matches 2 at @s run tp @s ~ ~0.1 ~ ~27 ~
+execute if score @s AzrEntityTimer matches 4 at @s run tp @s ~ ~0.25 ~ ~27 ~
+execute if score @s AzrEntityTimer matches 6 at @s run tp @s ~ ~0.5 ~ ~27 ~
+execute if score @s AzrEntityTimer matches 8 at @s run tp @s ~ ~0.5 ~ ~27 ~
+execute if score @s AzrEntityTimer matches 10 at @s run tp @s ~ ~0.25 ~ ~27 ~
+execute if score @s AzrEntityTimer matches 12 at @s run tp @s ~ ~0.1 ~ ~27 ~
 execute if score @s AzrEntityTimer matches 13 run data merge entity @s {teleport_duration:10}
 execute if score @s AzrEntityTimer matches 14 at @s run tp @s ~ ~-0.1 ~ ~135 ~
 execute if score @s AzrEntityTimer matches 24 at @s run tp @s ~ ~-0.1 ~ ~135 ~
