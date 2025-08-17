@@ -195,7 +195,7 @@ execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 5050 positio
 execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 5050 positioned 90148 144 51 run tag @n[type=vindicator,distance=0..5] add SEApillager_npc2
 
 execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 5050 positioned 90136 144 53 run function skyblock:sea/m/unique/vindicator_guardian
-
+execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 5050 if score SEA_ch5_event_illager_count rng1 matches 90.. positioned 90136 144 53 run give @a[tag=SEAPT,advancements={skyblock:sea/doc/g37=false}] mojang_banner_pattern[custom_data={sea_docg37:true}]
 
 execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 5050 if block 90060 101 142 red_candle positioned 90140 130 64 run function skyblock:sea/m/pillager_npc
 execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 5050 run fill 90142 132 46 90142 130 46 air

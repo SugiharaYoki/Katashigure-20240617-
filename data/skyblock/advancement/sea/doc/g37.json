@@ -1,0 +1,28 @@
+{
+    "display": {
+        "title": {
+            "text": "应行之责",
+            "color": "gold",
+            "bold": true,
+            "italic": false
+        },
+        "description": {
+            "text": "到达通讯大楼为止，几乎没杀死任何人类。\n“毕竟，这才是你原本的愿望。”",
+            "color": "gray",
+            "bold": false
+        },
+        "icon": {
+            "id": "minecraft:diamond_hoe"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "sea": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:sea/doc/g16"
+}
