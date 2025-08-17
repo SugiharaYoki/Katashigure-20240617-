@@ -14,15 +14,15 @@ execute if score @s AzrEntityTimer matches 12 at @s run tp @s ~ ~0.1 ~ ~27 ~
 execute if score @s AzrEntityTimer matches 13 run data merge entity @s {teleport_duration:10}
 execute if score @s AzrEntityTimer matches 14 at @s rotated 0.0 0.0 run function skyblock:azr/assets/events/effects/arrows/hexagon
 execute if score @s AzrEntityTimer matches 14 at @s run tp @s ~ ~-0.1 ~ ~135 ~
-execute if score @s AzrEntityTimer matches 14 at @s rotated 10.0 0.0 run function skyblock:azr/assets/events/effects/arrows/hexagon
+execute if score @s AzrEntityTimer matches 24 at @s rotated 10.0 0.0 run function skyblock:azr/assets/events/effects/arrows/hexagon
 execute if score @s AzrEntityTimer matches 24 at @s run tp @s ~ ~-0.1 ~ ~135 ~
-execute if score @s AzrEntityTimer matches 14 at @s rotated 20.0 0.0 run function skyblock:azr/assets/events/effects/arrows/hexagon
+execute if score @s AzrEntityTimer matches 34 at @s rotated 20.0 0.0 run function skyblock:azr/assets/events/effects/arrows/hexagon
 execute if score @s AzrEntityTimer matches 34 at @s run tp @s ~ ~-0.1 ~ ~135 ~
-execute if score @s AzrEntityTimer matches 14 at @s rotated 30.0 0.0 run function skyblock:azr/assets/events/effects/arrows/hexagon
+execute if score @s AzrEntityTimer matches 44 at @s rotated 30.0 0.0 run function skyblock:azr/assets/events/effects/arrows/hexagon
 execute if score @s AzrEntityTimer matches 44 at @s run tp @s ~ ~0.1 ~ ~135 ~
-execute if score @s AzrEntityTimer matches 14 at @s rotated 40.0 0.0 run function skyblock:azr/assets/events/effects/arrows/hexagon
+execute if score @s AzrEntityTimer matches 54 at @s rotated 40.0 0.0 run function skyblock:azr/assets/events/effects/arrows/hexagon
 execute if score @s AzrEntityTimer matches 54 at @s run tp @s ~ ~0.1 ~ ~135 ~
-execute if score @s AzrEntityTimer matches 14 at @s rotated 50.0 0.0 run function skyblock:azr/assets/events/effects/arrows/hexagon
+execute if score @s AzrEntityTimer matches 64 at @s rotated 50.0 0.0 run function skyblock:azr/assets/events/effects/arrows/hexagon
 execute if score @s AzrEntityTimer matches 64 at @s run tp @s ~ ~0.1 ~ ~135 ~
 execute if score @s AzrEntityTimer matches 74 run data merge entity @s {teleport_duration:0}
 execute if score @s AzrEntityTimer matches 75 at @s run tp @s ~ ~-1.7 ~
