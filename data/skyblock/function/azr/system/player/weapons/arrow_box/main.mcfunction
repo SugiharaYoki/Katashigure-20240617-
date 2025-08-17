@@ -3,7 +3,7 @@
 scoreboard players add @s AzrEntityTimer 1
 
 execute if score @s AzrEntityTimer matches 1 run data merge entity @s {teleport_duration:2}
-execute if score @s AzrEntityTimer matches 1 run playsound entity.firework_rocket.launch master @a[tag=azrShowDialog] ~ ~ ~
+execute if score @s AzrEntityTimer matches 1 run playsound entity.firework_rocket.launch master @a ~ ~ ~
 execute if score @s AzrEntityTimer matches 1..14 at @s run particle firework ~ ~ ~ 0 0 0 0.02 1
 execute if score @s AzrEntityTimer matches 2 at @s run tp @s ~ ~0.1 ~ ~27 ~
 execute if score @s AzrEntityTimer matches 4 at @s run tp @s ~ ~0.25 ~ ~27 ~
