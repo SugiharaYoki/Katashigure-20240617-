@@ -24,4 +24,4 @@ execute if score @s AzrEntityTimer matches 13 at @s run tp @s ~ ~ ~ ~540 ~
 # execute if score @s AzrEntityTimer matches 63 at @s run tp @s ~ ~-1.6 ~
 execute if score @s AzrEntityTimer matches 63 run scoreboard players reset @s AzrEntityTimer
 
-summon block_display ~ ~ ~ {block_state:{Name:"shulker_box"},transformation:[0.1, 0.0, 0.0, -0.05,  0.0, 0.1, 0.0, 0.0,  0.0, 0.0, 0.1, -0.05, 0.0, 0.0, 0.0, 1.0]}
+# summon block_display ~ ~ ~ {block_state:{Name:"shulker_box"},transformation:[0.1, 0.0, 0.0, -0.05,  0.0, 0.1, 0.0, 0.0,  0.0, 0.0, 0.1, -0.05, 0.0, 0.0, 0.0, 1.0]}
