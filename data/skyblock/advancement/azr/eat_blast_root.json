@@ -1,0 +1,19 @@
+{
+    "criteria": {
+        "eat_blast_root": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "components": {
+                        "custom_data": {
+                            "blast_root": 1
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "skyblock:azr/system/player/weapons/blast_root/eat"
+    }
+}

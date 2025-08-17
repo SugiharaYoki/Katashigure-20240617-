@@ -97,11 +97,8 @@ team join AzrPlayer @e[tag=AzrielFriendly]
 scoreboard players reset $playerExists Azr_system
 execute as @a[tag=azrPlayer] run function skyblock:azr/system/player/main
 
-#投掷道具
-execute as @e[type=item,nbt={OnGround:1b}] if items entity @s container.0 shulker_shell[custom_data~{arrow_box:1b}] at @s on origin as @n[distance=..0.01,type=item] run function skyblock:azr/system/player/weapons/arrow_box/summon
-execute as @e[tag=azrArrowBox,type=block_display] at @s run function skyblock:azr/system/player/weapons/arrow_box/main
-execute as @e[type=item,nbt={OnGround:1b},tag=!azrBlastRootExpired] if items entity @s container.0 beetroot[custom_data~{blast_root:1b}] at @s on origin as @n[distance=..0.01,type=item] run function skyblock:azr/system/player/weapons/blast_root/summon
-execute as @e[tag=azrBlastRoot,type=item] at @s run function skyblock:azr/system/player/weapons/blast_root/main
+#实体函数
+execute as @e[x=-79931,y=100,z=0,distance=..10000] run function skyblock:azr/system/entity/main
 
 execute if score $playerExists Azr_system matches 1 if score tick_count_main AzrTimerStack matches -2147483648..2147483647 run scoreboard players add tick_count_main AzrTimerStack 1
 execute if score $playerExists Azr_system matches 1 if score timer_static_5s AzrTimerStack matches -2147483648..2147483647 run scoreboard players add timer_static_5s AzrTimerStack 1

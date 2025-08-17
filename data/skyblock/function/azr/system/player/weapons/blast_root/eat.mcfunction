@@ -1,0 +1,1 @@
+summon minecraft:fireball ~ ~0.3 ~ {Motion:[0.0,-1.0,0.0],ExplosionPower:1}

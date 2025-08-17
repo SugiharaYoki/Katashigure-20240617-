@@ -25,5 +25,5 @@ execute if score @s AzrEntityTimer matches 54 at @s run tp @s ~ ~0.1 ~ ~135 ~
 execute if score @s AzrEntityTimer matches 64 at @s rotated 50.0 0.0 run function skyblock:azr/system/player/weapons/arrow_box/hexagon
 execute if score @s AzrEntityTimer matches 64 at @s run tp @s ~ ~0.1 ~ ~135 ~
 execute if score @s AzrEntityTimer matches 74 at @s run particle large_smoke ~ ~ ~ 0 0 0 0.01 5
-execute if score @s AzrEntityTimer matches 74 at @s run playsound entity.item.break master @a[tag=azrShowDialog] ~ ~ ~
+execute if score @s AzrEntityTimer matches 74 at @s run playsound entity.item.break master @a ~ ~ ~
 execute if score @s AzrEntityTimer matches 74 run kill @s
