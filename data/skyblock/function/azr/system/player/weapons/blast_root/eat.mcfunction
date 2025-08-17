@@ -1,2 +1,3 @@
-summon minecraft:fireball ~ ~0.3 ~ {Motion:[0.0,-1.0,0.0],ExplosionPower:1}
+damage @s 10 minecraft:fireball at ~ ~-1 ~
+function skyblock:azr/system/player/weapons/blast_root/blast
 advancement revoke @s only skyblock:azr/eat_blast_root
