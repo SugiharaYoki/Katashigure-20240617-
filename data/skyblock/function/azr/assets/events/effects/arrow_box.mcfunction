@@ -15,9 +15,9 @@ execute if score @s AzrEntityTimer matches 9 at @s run tp @s ~ ~0.25 ~
 execute if score @s AzrEntityTimer matches 11 run data merge entity @s {teleport_duration:2}
 execute if score @s AzrEntityTimer matches 11 at @s run tp @s ~ ~0.05 ~
 execute if score @s AzrEntityTimer matches 13 run data merge entity @s {teleport_duration:10}
-execute if score @s AzrEntityTimer matches 13 at @s run tp @s ~ ~ ~ ~180 ~
-execute if score @s AzrEntityTimer matches 23 at @s run tp @s ~ ~ ~ ~180 ~
-execute if score @s AzrEntityTimer matches 33 at @s run tp @s ~ ~ ~ ~180 ~
+execute if score @s AzrEntityTimer matches 14 at @s run tp @s ~ ~ ~ ~180 ~
+execute if score @s AzrEntityTimer matches 24 at @s run tp @s ~ ~ ~ ~180 ~
+execute if score @s AzrEntityTimer matches 34 at @s run tp @s ~ ~ ~ ~180 ~
 execute if score @s AzrEntityTimer matches 63 at @s run tp @s ~ ~-1.6 ~
 execute if score @s AzrEntityTimer matches 63 run scoreboard players reset @s AzrEntityTimer
 
