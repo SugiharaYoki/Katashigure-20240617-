@@ -15,10 +15,12 @@ execute if score @s AzrEntityTimer matches 9 at @s run tp @s ~ ~0.25 ~
 execute if score @s AzrEntityTimer matches 11 run data merge entity @s {teleport_duration:2}
 execute if score @s AzrEntityTimer matches 11 at @s run tp @s ~ ~0.05 ~
 execute if score @s AzrEntityTimer matches 13 run data merge entity @s {teleport_duration:10}
-execute if score @s AzrEntityTimer matches 14 at @s run tp @s ~ ~ ~ ~180 ~
-execute if score @s AzrEntityTimer matches 24 at @s run tp @s ~ ~ ~ ~180 ~
-execute if score @s AzrEntityTimer matches 34 at @s run tp @s ~ ~ ~ ~180 ~
-execute if score @s AzrEntityTimer matches 63 at @s run tp @s ~ ~-1.6 ~
-execute if score @s AzrEntityTimer matches 63 run scoreboard players reset @s AzrEntityTimer
+execute if score @s AzrEntityTimer matches 14 at @s run tp @s ~ ~ ~ ~179 ~
+execute if score @s AzrEntityTimer matches 24 at @s run tp @s ~ ~ ~ ~179 ~
+execute if score @s AzrEntityTimer matches 34 at @s run tp @s ~ ~ ~ ~179 ~
+execute if score @s AzrEntityTimer matches 44 at @s run tp @s ~ ~ ~ ~179 ~
+execute if score @s AzrEntityTimer matches 54 at @s run tp @s ~ ~ ~ ~179 ~
+execute if score @s AzrEntityTimer matches 70 at @s run tp @s ~ ~-1.6 ~
+execute if score @s AzrEntityTimer matches 70 run scoreboard players reset @s AzrEntityTimer
 
 # summon block_display ~ ~ ~ {block_state:{Name:"shulker_box"},transformation:[0.1, 0.0, 0.0, -0.05,  0.0, 0.1, 0.0, 0.0,  0.0, 0.0, 0.1, -0.05, 0.0, 0.0, 0.0, 1.0]}
