@@ -443,7 +443,7 @@ execute if score SEA_ch6_event sea_4temp4 matches 15450 as @p[tag=SEAPT] at @s r
 execute if score SEA_ch6_event sea_4temp4 matches 15550 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“不再想我，坚持朝前走去。”","color":"white","bold": false}]
 execute if score SEA_ch6_event sea_4temp4 matches 15750 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“我会在天国……永远祝福你。”","color":"white","bold": false}]
 
-execute if score SEA_ch6_event sea_4temp4 matches 15949 as @a[tag=SEAPT,advancements={skyblock:sea/doc/g36=false}] at @s run give @s mojang_banner_pattern[custom_data={sea_docg36:true}]
+execute if score SEA_ch6_event sea_4temp4 matches 15949 as @a[tag=SEAPT] at @s run give @s mojang_banner_pattern[custom_data={sea_docg36:true}]
 execute if score SEA_ch6_event sea_4temp4 matches 15950 run clear @a[tag=SEAPT]
 execute if score SEA_ch6_event sea_4temp4 matches 15949 as @a[tag=SEAPT] run tellraw @s [{"text":"达成结局：","color":"gold","bold": true},{"text":"\nNormal End「少女的祝福」","color":"white","bold": false}]
 execute if score SEA_ch6_event sea_4temp4 matches 15949 run tellraw @a[tag=SEAPT,scores={sea_progress=..17}] [{"text":"新模式解锁！","color":"green","bold": true},{"text":"已解锁“佛卡洛之隐”极难游戏模式！\n该游戏模式无法使用命星复活，也无法利用“塞壬的指引”。\n试着挑战自己的极限吧！","color":"white","bold": false}]
