@@ -10,12 +10,12 @@ execute if score isStarted Azr_system matches 1 run tellraw @s[tag=!azrDead] [{"
 scoreboard players operation @s AzrJoinWave = wave Azr_system
 #给予绿宝石补偿（三倍于波数）
 scoreboard players set 3 constant 3
-scoreboard players operation @s Azr_emerald = @r[tag=azrPlayer] Azr_wave
+scoreboard players operation @s Azr_emerald = wave Azr_system
 scoreboard players operation @s Azr_emerald *= 3 constant
 #初始化并传送自己
-tp @s @r[tag=azrPlayer,distance=1..]
 function skyblock:azr/system/player/init
 function skyblock:azr/system/player/refresh_bossbar
+execute at @s run tp @s @r[tag=azrPlayer,distance=1..]
 #生命手册
 execute if score stage Azr_system matches 3.. run tellraw @s[tag=!hasLifeVitae] {"text":"你已永久解锁「生命手册」。记得收集绿宝石与素材，使用手册换取必要的武器与道具。"}
 execute if score stage Azr_system matches 3.. run tag @s[tag=!hasLifeVitae] add hasLifeVitae
