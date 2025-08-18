@@ -1244,6 +1244,8 @@ setblock 90109 102 -1870 decorated_pot{sherds:["prize_pottery_sherd","prize_pott
 setblock 90109 102 -1870 air
 
 fill 90113 103 -1872 90113 102 -1872 minecraft:waxed_copper_grate
+setblock 90114 105 -1866 chest[facing=west]
+item replace block 90114 105 -1866 container.14 with vex_armor_trim_smithing_template 2
 
 #大船
 forceload add 90382 -1899 90401 -1835

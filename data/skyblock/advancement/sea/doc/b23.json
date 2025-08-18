@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "矿物处理中心的笔记 - 史丹尼舵长",
+            "color": "light_purple",
+            "bold": false,
+            "italic": false
+        },
+        "description": {
+            "text": "我们所有人都没想到这底下会出现这么大一个地层空洞。\n这里存在着至少是数万年前制造的古代遗迹，就这点让外界知道肯定会引起轩然大波。\n我们并不清楚这种事情是如何做到的，诺曼的猜测是有远超人类理解的势力建造了这些建筑。\n以及……有关于那流溢着七彩光芒的水晶，自从脱离那祭台之后就逐渐转为了紫色。\n诺曼手下有个研究员叫琼斯的，这家伙的团队发现水晶内部蕴藏着巨大的能量。\n只不过，如何将这样的能量转换为可以被我们利用的事物，就成了我们的议题。",
+            "color": "white"
+        },
+        "icon": {
+            "id": "minecraft:flow_banner_pattern"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "sea": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:sea/doc/documentary6"
+}
