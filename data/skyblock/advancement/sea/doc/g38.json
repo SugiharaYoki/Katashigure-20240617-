@@ -1,0 +1,28 @@
+{
+    "display": {
+        "title": {
+            "text": "魔神的指引",
+            "color": "gold",
+            "bold": true,
+            "italic": false
+        },
+        "description": {
+            "text": "集齐10张塞壬的乐谱。\n“你从未自佛卡洛之手获得任何外界的魔力。”\n“因为，回溯时间的能力本就源于你自己。”",
+            "color": "gray",
+            "bold": false
+        },
+        "icon": {
+            "id": "minecraft:golden_hoe"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "sea": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:sea/doc/g34"
+}

@@ -114,4 +114,6 @@ execute if entity @s[tag=sea_t_sprint,tag=SEAPT] run tellraw @s [{"text":" MAGIC
 execute if entity @s[nbt={Inventory:[{id:"minecraft:gold_ingot"}]},tag=SEAPT,scores={sea_progress=7..}] run tellraw @s [{"text":" "},{"text":"音符篡改  ","color":"white"},{"score":{"name":"@s","objective":"sea_i_gold_ingot"},"color":"light_purple"},{"text":"/1 金锭 ","color":"light_purple"},{"text":"〈牧羊人〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 20007"}},{"text":"〈狂荒〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 20008"}},{"text":"〈醒殉徒〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 20009"}},{"text":"〈辽哨〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 20010"}},{"text":"〈金砂〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 20011"}}]
 
 
+give @s[tag=seaPerm000,tag=seaPerm001,tag=seaPerm002,tag=seaPerm003,tag=seaPerm004,tag=seaPerm005,tag=seaPerm006,tag=seaPerm007,tag=seaPerm008,tag=seaPerm009,tag=SEAPT,advancements={skyblock:sea/doc/g38=false}] mojang_banner_pattern[custom_data={sea_docg38:true}]
+
 scoreboard players set @s sea_crafter 0
