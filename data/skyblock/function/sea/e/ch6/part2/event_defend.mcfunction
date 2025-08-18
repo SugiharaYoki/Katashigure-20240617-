@@ -171,6 +171,9 @@ execute if score SEA_ch6_event rng5 matches 9490 positioned 90090 102 -1892 run 
 execute if score SEA_ch6_event rng5 matches 9490 positioned 90090 102 -1892 run function skyblock:sea/m/drowned_maintenance
 execute if score SEA_ch6_event rng5 matches 9490 positioned 90090 102 -1892 run function skyblock:sea/m/drowned_maintenance
 
+execute if score SEA_ch6_event rng5 matches 9490 positioned 90110 102 -1881 run function skyblock:sea/m/shadow
+execute if score SEA_ch6_event rng5 matches 9490 positioned 90110 102 -1881 run function skyblock:sea/m/zombie_security2
+execute if score SEA_ch6_event rng5 matches 9490 positioned 90110 102 -1881 run function skyblock:sea/m/zombie_security2
 
 execute if score SEA_ch6_event rng5 matches 9090 as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
 execute if score SEA_ch6_event rng5 matches 9090 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“你可要做好准备，总共有三道合金门。我们无论如何也得撑住。”","color":"white","bold": false}]

@@ -1231,6 +1231,17 @@ forceload remove 89977 -1938 90038 -1925
 forceload remove 90012 -1858 90007 -1863
 forceload remove 90028 -1846
 
+#最后的乐谱
+forceload add 90106 -1885 90133 -1860
+fill 90113 105 -1876 90113 102 -1874 air
+fill 90113 105 -1876 90113 102 -1874 lever[facing=west]
+setblock 90113 102 -1874 air
+setblock 90113 105 -1876 air
+setblock 90110 102 -1880 minecraft:redstone_block
+setblock 90110 102 -1880 minecraft:air
+
+setblock 90109 102 -1870 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 2, id:"minecraft:gunpowder"}}
+setblock 90109 102 -1870 air
 
 #大船
 forceload add 90382 -1899 90401 -1835
@@ -1253,7 +1264,7 @@ forceload remove 90430 -1878 90475 -1836
 forceload add 90093 -1834
 setblock 90093 30 -1834 air
 forceload remove 90093 -1834
-
+forceload remove 90106 -1885 90133 -1860
 
 
 
