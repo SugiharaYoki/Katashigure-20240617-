@@ -77,8 +77,6 @@ execute if score @s[scores={rng2=45..49}] rng1 matches 100.. if entity @s[x=8800
 execute as @s[tag=seaboss6_phase3_storm,scores={rng2=45..49}] run function skyblock:sea/e/ch6/boss6/phase3_storm
 
 
-
-
 execute if score SEA_ch6_event sea_4temp4 matches 2..3 run scoreboard players set SEA_ch6_event sea_4temp4 2
 
 

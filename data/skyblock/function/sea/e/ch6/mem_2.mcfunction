@@ -10,5 +10,5 @@ execute positioned 90114 102 -1872 run function skyblock:sea/m/drowned_small
 execute positioned 90117 102 -1886 run function skyblock:sea/m/shadow
 execute positioned 90117 102 -1886 run function skyblock:sea/m/shadow
 
-
-
+setblock 90111 103 -1870 minecraft:waxed_copper_bulb[lit=false]
+setblock 90120 104 -1872 minecraft:waxed_copper_bulb[lit=false]

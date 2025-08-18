@@ -80,6 +80,8 @@ execute if block 90113 105 -1875 lever[powered=false] \
 run function skyblock:sea/e/ch6/mem_2
 
 
+#塞壬
+execute positioned 90118.48 102.99 -1891.25 if entity @a[tag=SEAPT,distance=..10] run particle minecraft:nautilus 90118.48 102.99 -1891.25 2 2 2 0.1 10
 
 
 

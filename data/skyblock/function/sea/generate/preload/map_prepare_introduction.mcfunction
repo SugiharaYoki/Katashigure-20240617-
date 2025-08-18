@@ -1074,6 +1074,7 @@ scoreboard players set SEA_ch6_event rng10 0
 scoreboard players set SEA_ch6_event sea_4temp1 0
 scoreboard players set SEA_ch6_event sea_4temp2 0
 scoreboard players set SEA_ch6_event sea_4temp3 0
+scoreboard players set SEA_ch6_event sea_4temp4 0
 #boss用
 scoreboard players set SEA_ch6_event sea_4temp4 0
 scoreboard players set SEA_ch6_event sea_4temp5 0
@@ -1239,6 +1240,8 @@ setblock 90113 102 -1874 air
 setblock 90113 105 -1876 air
 setblock 90110 102 -1880 minecraft:redstone_block
 setblock 90110 102 -1880 minecraft:air
+setblock 90111 103 -1870 minecraft:waxed_copper_bulb[lit=true]
+setblock 90120 104 -1872 minecraft:waxed_copper_bulb[lit=true]
 
 setblock 90109 102 -1870 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 2, id:"minecraft:gunpowder"}}
 setblock 90109 102 -1870 air
