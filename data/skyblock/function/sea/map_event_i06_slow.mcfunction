@@ -66,8 +66,18 @@ execute if score SEA_ch6_event sea_4temp3 matches 1..290 if score SEA_ch6_event 
 
 
 
-
-
+#记忆密码2
+execute if block 90113 105 -1875 lever[powered=false] \
+ if block 90113 105 -1874 lever[powered=true] \
+ if block 90113 104 -1876 lever[powered=false] \
+ if block 90113 104 -1875 lever[powered=true] \
+ if block 90113 104 -1874 lever[powered=true] \
+ if block 90113 103 -1876 lever[powered=true] \
+ if block 90113 103 -1875 lever[powered=false] \
+ if block 90113 103 -1874 lever[powered=false] \
+ if block 90113 102 -1876 lever[powered=false] \
+ if block 90113 102 -1875 lever[powered=false] unless block 90113 103 -1872 air \
+run function skyblock:sea/e/ch6/mem_2
 
 
 

@@ -1243,6 +1243,8 @@ setblock 90110 102 -1880 minecraft:air
 setblock 90109 102 -1870 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 2, id:"minecraft:gunpowder"}}
 setblock 90109 102 -1870 air
 
+fill 90113 103 -1872 90113 102 -1872 minecraft:waxed_copper_grate
+
 #大船
 forceload add 90382 -1899 90401 -1835
 setblock 90385 245 -1902 air
