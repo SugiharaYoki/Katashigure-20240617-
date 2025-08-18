@@ -84,7 +84,7 @@ run function skyblock:sea/e/ch6/mem_2
 execute positioned 90118.48 102.99 -1891.25 if entity @a[tag=SEAPT,distance=..10] run particle minecraft:nautilus 90118.48 102.99 -1891.25 2 2 2 0.1 10
 
 
-execute if score SEA_ch6_event sea_4temp4 matches 1..1299 run function skyblock:sea/e/music_sheet/pu009_event
+execute if score SEA_ch6_event sea_4temp9 matches 1..1299 run function skyblock:sea/e/music_sheet/pu009_event
 
 
 

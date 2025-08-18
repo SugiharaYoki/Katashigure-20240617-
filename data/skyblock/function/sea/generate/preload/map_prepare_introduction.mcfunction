@@ -1074,7 +1074,7 @@ scoreboard players set SEA_ch6_event rng10 0
 scoreboard players set SEA_ch6_event sea_4temp1 0
 scoreboard players set SEA_ch6_event sea_4temp2 0
 scoreboard players set SEA_ch6_event sea_4temp3 0
-scoreboard players set SEA_ch6_event sea_4temp4 0
+scoreboard players set SEA_ch6_event sea_4temp9 0
 #boss用
 scoreboard players set SEA_ch6_event sea_4temp4 0
 scoreboard players set SEA_ch6_event sea_4temp5 0
