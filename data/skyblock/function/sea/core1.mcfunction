@@ -228,10 +228,15 @@ item replace block 90080 153 147 container.14 with flow_banner_pattern[custom_da
 lore=['{"text":"原本医务中心由于细菌感染的原因就已经人满为患了，再加上暴乱……","color":"white","italic":false}','{"text":"这下子不论是医疗设施还是药品都已经严重不足了。","color":"white","italic":false}','{"text":"我为了自己人藏了几瓶药剂，隔天就发现药全都被暴民偷了。","color":"white","italic":false}','{"text":"他们根本不是要邪教徒跟他们讲道理，他们自己就不讲任何道理。","color":"white","italic":false}','{"text":"相反，那群邪教徒才是积极配合我们治疗病患的一方。","color":"white","italic":false}','{"text":"暴乱是从我们与外部失联，且通讯平台与主平台也失联后开始的。","color":"white","italic":false}','{"text":"但那显然不可能是邪教徒的手笔。他们巴不得圣水晶信仰传播到外界。","color":"white","italic":false}','{"text":"有一股神秘的力量吸收了电磁波。暴民们知道这一点，却装作不知道。","color":"white","italic":false}']]
 
 
-
 item replace block 90151 153 124 container.13 with flow_banner_pattern[custom_data={sea_doc22b:true},custom_name=\
 '{"text":"行政区二楼仓库的笔记 - 诺玛","italic":true,"color":"dark_purple","italic":false}',\
 lore=['{"text":"不够，还要更多。","color":"white","italic":false}','{"text":"还要更多。","color":"white","italic":false}','{"text":"还要更多还要更多还要更多还要更多","color":"white","italic":false}','{"text":"还要更多还要更多还要更多还要更多","color":"white","italic":false}','{"text":"还要更多还要更多还要更多还要更多","color":"white","italic":false}','{"text":"还要更多还要更多还要更多还要更多","color":"white","italic":false}']]
+
+item replace block 90114 105 -1866 container.12 with flow_banner_pattern[custom_data={sea_doc23b:true},custom_name=\
+'{"text":"矿物处理中心的笔记 - 史丹尼舵长","italic":true,"color":"dark_purple","italic":false}',\
+lore=['{"text":"我们所有人都没想到这底下会出现这么大一个地层空洞。","color":"white","italic":false}','{"text":"这里存在着至少是数万年前制造的古代遗迹，就这点让外界知道肯定会引起轩然大波。","color":"white","italic":false}','{"text":"我们并不清楚这种事情是如何做到的，诺曼的猜测是有远超人类理解的势力建造了这些建筑。","color":"white","italic":false}','{"text":"以及……有关于那流溢着七彩光芒的水晶，自从脱离那祭台之后就逐渐转为了紫色。","color":"white","italic":false}','{"text":"诺曼手下有个研究员叫琼斯的，这家伙的团队发现水晶内部蕴藏着巨大的能量。","color":"white","italic":false}','{"text":"只不过，如何将这样的能量转换为可以被我们利用的事物，就成了我们的议题。","color":"white","italic":false}']]
+
+
 
 
 item replace block 90126 128 124 container.2 with flow_banner_pattern[custom_data={sea_doc15:true},custom_name=\
@@ -282,10 +287,6 @@ item replace block 90145 146 115 container.14 with flow_banner_pattern[custom_da
 '{"text":"行政区一楼仓库的笔记 - 艾德雯娜","italic":true,"color":"dark_purple","italic":false}',\
 lore=['{"text":"我原先是隐藏了真实身份，前来调查史丹尼舵长受贿的案件。","color":"white","italic":false}','{"text":"但我并没料到自己恰巧碰上他们从地底峡谷中开采出一块神秘的紫色水晶。","color":"white","italic":false}','{"text":"说到底，中央情报局也从未收到过有关忒尔克西下方存在巨大地层空洞的信息。","color":"white","italic":false}','{"text":"我有理由怀疑平台上有人一开始就是冲着地下的东西来的。这人绝不会是史丹尼舵长。","color":"white","italic":false}','{"text":"……那么，是诺曼博士？他要那块水晶做什么用，卖钱？","color":"white","italic":false}']]
 
-
-item replace block 90114 105 -1866 container.12 with flow_banner_pattern[custom_data={sea_doc23b:true},custom_name=\
-'{"text":"矿物处理中心的笔记 - 史丹尼舵长","italic":true,"color":"dark_purple","italic":false}',\
-lore=['{"text":"我们所有人都没想到这底下会出现这么大一个地层空洞。","color":"white","italic":false}','{"text":"这里存在着至少是数万年前制造的古代遗迹，就这点让外界知道肯定会引起轩然大波。","color":"white","italic":false}','{"text":"我们并不清楚这种事情是如何做到的，诺曼的猜测是有远超人类理解的势力建造了这些建筑。","color":"white","italic":false}','{"text":"以及……有关于那流溢着七彩光芒的水晶，自从脱离那祭台之后就逐渐转为了紫色。","color":"white","italic":false}','{"text":"诺曼手下有个研究员叫琼斯的，这家伙的团队发现水晶内部蕴藏着巨大的能量。","color":"white","italic":false}','{"text":"只不过，如何将这样的能量转换为可以被我们利用的事物，就成了我们的议题。","color":"white","italic":false}']]
 
 
 
