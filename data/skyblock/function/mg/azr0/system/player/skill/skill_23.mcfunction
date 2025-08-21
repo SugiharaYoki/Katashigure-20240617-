@@ -3,7 +3,7 @@ execute if entity @s[scores={Azr0_SKILL_23=2}] run tag @s add Azr0_SKILL_23b
 execute if entity @s[scores={Azr0_SKILL_23=3..}] run tag @s add Azr0_SKILL_23c
 
 
-summon marker ~ ~1 ~ {Tags:["Azr0_SKILL_23"]}
+execute as @n[tag=SEAmob,distance=..5] run summon marker ~ ~1 ~ {Tags:["Azr0_SKILL_23"]}
 
 
 execute if entity @s[tag=Azr0_SKILL_23a] run scoreboard players set @n[tag=Azr0_SKILL_23,tag=!Azr0_SKILL_23_s] rng2 1
