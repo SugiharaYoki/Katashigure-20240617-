@@ -30,6 +30,7 @@ execute as @e[type=bogged,tag=MG_AZR0MOB,distance=..200,nbt=!{Fire:-1s}] run dam
 #赐福技能效果
 execute as @e[type=marker,tag=Azr0_SKILL_14] at @s run function skyblock:mg/azr0/system/player/skill/skill_14_e
 execute as @e[type=marker,tag=Azr0_SKILL_15] at @s run function skyblock:mg/azr0/system/player/skill/skill_15_e
+execute as @e[type=marker,tag=Azr0_SKILL_23] at @s run function skyblock:mg/azr0/system/player/skill/skill_23_e
 
 
 #商店系统

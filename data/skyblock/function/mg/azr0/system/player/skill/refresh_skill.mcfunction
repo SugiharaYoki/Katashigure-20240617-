@@ -1,6 +1,6 @@
-execute store result score @s Azr0_SkillEquip_1rng run random value 1..22
-execute store result score @s Azr0_SkillEquip_2rng run random value 1..22
-execute store result score @s Azr0_SkillEquip_3rng run random value 1..22
+execute store result score @s Azr0_SkillEquip_1rng run random value 1..23
+execute store result score @s Azr0_SkillEquip_2rng run random value 1..23
+execute store result score @s Azr0_SkillEquip_3rng run random value 1..23
 
 clear @s *[custom_data={"azr0skill":true}]
 
