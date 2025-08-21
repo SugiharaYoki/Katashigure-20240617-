@@ -9,3 +9,4 @@ execute if entity @s[scores={Azr0_SKILL_5=1}] at @s as @e[distance=0..2.5,tag=MG
 execute if entity @s[scores={Azr0_SKILL_5=2}] at @s as @e[distance=0..2.5,tag=MG_AZR0MOB,limit=5,sort=nearest] run damage @s 4 thorns by @p[tag=MG_AZR0PT]
 execute if entity @s[scores={Azr0_SKILL_5=3}] at @s as @e[distance=0..2.5,tag=MG_AZR0MOB,limit=5,sort=nearest] run damage @s 6 thorns by @p[tag=MG_AZR0PT]
 
+execute if entity @s[scores={Azr0_SKILL_24=1..}] run function skyblock:mg/azr0/system/player/skill/skill_24
