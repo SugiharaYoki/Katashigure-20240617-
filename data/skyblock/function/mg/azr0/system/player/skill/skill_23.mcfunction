@@ -1,18 +1,21 @@
-execute if entity @s[scores={Azr0_SKILL_23=1}] run tag @s add Azr0_SKILL_23a
-execute if entity @s[scores={Azr0_SKILL_23=2}] run tag @s add Azr0_SKILL_23b
-execute if entity @s[scores={Azr0_SKILL_23=3..}] run tag @s add Azr0_SKILL_23c
+
+execute store result score @s rng1 run clear @s end_crystal 0
 
 
-execute as @n[tag=MG_AZR0MOB,distance=..5] at @s run summon marker ~ ~1 ~ {Tags:["Azr0_SKILL_23"]}
+execute store result score @s[scores={rng1=1}] rng2 run random value 1..10
+execute store result score @s[scores={rng1=2}] rng2 run random value 1..9
+execute store result score @s[scores={rng1=3}] rng2 run random value 1..8
+execute store result score @s[scores={rng1=4}] rng2 run random value 1..7
+execute store result score @s[scores={rng1=5}] rng2 run random value 1..6
+execute store result score @s[scores={rng1=6}] rng2 run random value 1..5
+execute store result score @s[scores={rng1=7}] rng2 run random value 1..4
+execute store result score @s[scores={rng1=8}] rng2 run random value 1..3
+execute store result score @s[scores={rng1=9}] rng2 run random value 1..2
+execute if entity @s[scores={rng1=10..}] run scoreboard players set @s rng2 1
 
 
-execute if entity @s[tag=Azr0_SKILL_23a] run scoreboard players set @n[tag=Azr0_SKILL_23,tag=!Azr0_SKILL_23_s] rng2 1
-execute if entity @s[tag=Azr0_SKILL_23b] run scoreboard players set @n[tag=Azr0_SKILL_23,tag=!Azr0_SKILL_23_s] rng2 2
-execute if entity @s[tag=Azr0_SKILL_23c] run scoreboard players set @n[tag=Azr0_SKILL_23,tag=!Azr0_SKILL_23_s] rng2 3
-execute if entity @s[tag=Azr0_SKILL_23a] run tag @n[tag=Azr0_SKILL_23,tag=!Azr0_SKILL_23_s] add Azr0_SKILL_23_s
-execute if entity @s[tag=Azr0_SKILL_23b] run tag @n[tag=Azr0_SKILL_23,tag=!Azr0_SKILL_23_s] add Azr0_SKILL_23_s
-execute if entity @s[tag=Azr0_SKILL_23c] run tag @n[tag=Azr0_SKILL_23,tag=!Azr0_SKILL_23_s] add Azr0_SKILL_23_s
 
-tag @s remove Azr0_SKILL_23a
-tag @s remove Azr0_SKILL_23b
-tag @s remove Azr0_SKILL_23c
+
+
+
+
