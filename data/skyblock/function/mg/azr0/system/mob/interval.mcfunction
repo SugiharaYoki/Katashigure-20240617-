@@ -1,4 +1,9 @@
 
+
+
+
+
+
 execute if score MG_AZR0_Timer rng2 matches 0 store result score MG_AZR0_Timer rng4 run random value 37..41
 execute if score MG_AZR0_Timer rng2 matches 1..3 store result score MG_AZR0_Timer rng4 run random value 33..40
 execute if score MG_AZR0_Timer rng2 matches 4..6 store result score MG_AZR0_Timer rng4 run random value 30..39

@@ -20,7 +20,6 @@ execute if score MG_AZR0_Timer rng9 matches 12..50 run function skyblock:mg/azr0
 
 
 
-
 execute if score MG_AZR0_Timer rng3 matches 10.. as @e[tag=mg_azr0_MobPortals_horizontal,limit=2] at @s run function skyblock:mg/azr0/particle/mob_portal_horizontal
 execute if score MG_AZR0_Timer rng3 matches 10.. as @e[tag=mg_azr0_MobPortals_vertical,limit=2] at @s run function skyblock:mg/azr0/particle/mob_portal_horizontal
 

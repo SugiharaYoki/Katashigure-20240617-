@@ -12,6 +12,8 @@ execute if score MG_AZR0_Timer rng2 matches 36..55 store result score MG_AZR0_rn
 execute if score MG_AZR0_Timer rng2 matches 56..80 store result score MG_AZR0_rng rng4 run random value 5..11
 execute if score MG_AZR0_Timer rng2 matches 81.. store result score MG_AZR0_rng rng4 run random value 9..11
 
+execute if score MG_AZR0_Timer rng2 matches ..100 store result score MG_AZR0_rng rng5 run random value 1..40
+execute if score MG_AZR0_Timer rng2 matches 101.. store result score MG_AZR0_rng rng5 run random value 1..41
 
 #1左 2右 3前 4后 5左右 6左前 7右前 8前后 9左右前 10左右后 11四方
 tellraw @a[tag=MG_AZR0PT] [{"text": "第","color": "red","bold": true},{"score":{"name":"MG_AZR0_Timer","objective":"rng2"},"color":"red","bold": true},{"text": "波","color": "red","bold": true}]
@@ -26,6 +28,8 @@ execute if score MG_AZR0_rng rng4 matches 8 run tellraw @a[tag=MG_AZR0PT] [{"tex
 execute if score MG_AZR0_rng rng4 matches 9 run tellraw @a[tag=MG_AZR0PT] [{"text": "灵能感知：","color": "yellow","bold": true},{"text": " 怪物将从左右翼、灵座来袭！！","color": "white","bold": false}]
 execute if score MG_AZR0_rng rng4 matches 10 run tellraw @a[tag=MG_AZR0PT] [{"text": "灵能感知：","color": "yellow","bold": true},{"text": " 怪物将从左右翼、大门处来袭！！","color": "white","bold": false}]
 execute if score MG_AZR0_rng rng4 matches 11 run tellraw @a[tag=MG_AZR0PT] [{"text": "灵能感知：","color": "yellow","bold": true},{"text": " 怪物将从全部方向来袭！！","color": "red","bold": false}]
+
+execute if score MG_AZR0_rng rng5 matches 41 run tellraw @a[tag=MG_AZR0PT] [{"text": "灵能感知：","color": "yellow","bold": true},{"text": " 汹涌的虫潮即将席卷圣堂……","color": "red","bold": false}]
 
 
 execute if score MG_AZR0_rng rng4 matches 1 at @n[tag=mg_azr0,type=marker] positioned ~-34 ~2 ~ run summon marker ~ ~ ~ {Tags:["mg_azr0_MobPortals","mg_azr0_MobPortals_horizontal"]}
