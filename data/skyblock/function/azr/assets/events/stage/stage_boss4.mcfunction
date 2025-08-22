@@ -10,6 +10,7 @@ execute if score tick_main_thread AzrTimerStack matches 120 run tag @a[tag=azrPl
 execute if score tick_main_thread AzrTimerStack matches 120 run tellraw @a[tag=azrShowDialog] {"text":"？？？：","color":"red"}
 execute if score tick_main_thread AzrTimerStack matches 120 run tellraw @a[tag=azrShowDialog] {"text":"“终于来了吗？”","color":"white"}
 execute if score tick_main_thread AzrTimerStack matches 120 run tellraw @a[tag=AzrDebug] {"text":"120","color":"gray"}
+execute if score tick_main_thread AzrTimerStack matches 120 run tag @a[tag=AzrDebug] add azrUpdateSpawnPoint
 execute if score tick_main_thread AzrTimerStack matches 120..136 as @a[tag=azrShowDialog] at @s run playsound minecraft:ambient.nether_wastes.additions master @s ~ ~ ~ 10 0.6
 execute if score tick_main_thread AzrTimerStack matches 120..136 as @a[tag=azrShowDialog] at @s run playsound minecraft:ambient.nether_wastes.loop master @s ~ ~ ~ 10 0.6
 execute if score tick_main_thread AzrTimerStack matches 120..136 as @a[tag=azrShowDialog] at @s run playsound minecraft:ambient.nether_wastes.mood master @s ~ ~ ~ 10 0.6
