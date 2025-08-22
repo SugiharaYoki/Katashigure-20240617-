@@ -36,3 +36,6 @@ execute as @n[tag=MG_AZR0MOB_ravager,tag=!MG_AZR0_ravager_ridden,tag=MG_AZR0_rav
 
 
 
+execute as @e[tag=MG_AZR0MOB_endermite,distance=..100,type=endermite] at @s unless score @s rng5 matches 0.. run scoreboard players add @s rng5 1
+execute as @e[tag=MG_AZR0MOB_endermite,distance=..100,type=endermite,scores={rng5=0..}] at @s store result score @s rng5 run random value 1..30
+execute as @e[tag=MG_AZR0MOB_endermite,distance=..100,type=endermite,scores={rng5=1..3}] at @s run function skyblock:mg/azr0/system/mob/skill/endermite_generic
