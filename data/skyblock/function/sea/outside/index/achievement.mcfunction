@@ -107,8 +107,8 @@ scoreboard players add @s[advancements={skyblock:sea/doc/w27=true}] rng4 1
  tellraw @s[scores={rng3=14..}] [{"text":"第三章 档案 ","color":"light_purple","bold": true},{"score":{"name":"@s","objective":"rng3"},"color":"green","bold": false},{"text":"/14","color":"green","bold": false}]
  tellraw @s[scores={rng4=..14}] [{"text":"第四章 档案 ","color":"light_purple","bold": true},{"score":{"name":"@s","objective":"rng4"},"color":"white","bold": false},{"text":"/15","color":"white","bold": false}]
  tellraw @s[scores={rng4=15..}] [{"text":"第四章 档案 ","color":"light_purple","bold": true},{"score":{"name":"@s","objective":"rng4"},"color":"green","bold": false},{"text":"/15","color":"green","bold": false}]
- tellraw @s[scores={rng5=..3}] [{"text":"第五章 档案 ","color":"light_purple","bold": true},{"score":{"name":"@s","objective":"rng5"},"color":"white","bold": false},{"text":"/4","color":"white","bold": false}]
- tellraw @s[scores={rng5=4..}] [{"text":"第五章 档案 ","color":"light_purple","bold": true},{"score":{"name":"@s","objective":"rng5"},"color":"green","bold": false},{"text":"/4","color":"green","bold": false}]
+ tellraw @s[scores={rng5=..4}] [{"text":"第五章 档案 ","color":"light_purple","bold": true},{"score":{"name":"@s","objective":"rng5"},"color":"white","bold": false},{"text":"/4","color":"white","bold": false}]
+ tellraw @s[scores={rng5=5..}] [{"text":"第五章 档案 ","color":"light_purple","bold": true},{"score":{"name":"@s","objective":"rng5"},"color":"green","bold": false},{"text":"/4","color":"green","bold": false}]
 
  tellraw @s[scores={rng7=..6}] [{"text":"第六章 档案 ","color":"light_purple","bold": true},{"score":{"name":"@s","objective":"rng7"},"color":"white","bold": false},{"text":"/7","color":"white","bold": false}]
  tellraw @s[scores={rng7=7..}] [{"text":"第六章 档案 ","color":"light_purple","bold": true},{"score":{"name":"@s","objective":"rng7"},"color":"green","bold": false},{"text":"/7","color":"green","bold": false}]
