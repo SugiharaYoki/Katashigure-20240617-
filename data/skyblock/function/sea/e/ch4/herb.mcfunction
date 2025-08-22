@@ -1,4 +1,5 @@
-scoreboard players add @s rng9 1
+execute if entity @s[scores={rng9=..152}] run scoreboard players add @s rng9 1
+execute if entity @s[scores={rng9=153..}] if entity @a[tag=SEAPT,distance=..7] run scoreboard players add @s rng9 1
 
 execute if entity @s[scores={rng9=90..99}] run scoreboard players set @s rng9 90
 execute if entity @a[tag=SEAPT,distance=..5] run scoreboard players set @s rng9 100
