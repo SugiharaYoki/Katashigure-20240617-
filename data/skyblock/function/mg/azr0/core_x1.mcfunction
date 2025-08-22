@@ -1,5 +1,5 @@
 #计时器0
-execute store result score MG_AZR0_rng rng7 if entity @e[tag=MG_AZR0MOB]
+execute store result score MG_AZR0_rng rng7 if entity @e[tag=MG_AZR0MOB,type=!endermite]
 execute if score MG_AZR0_Timer rng3 matches 0.. run scoreboard players remove MG_AZR0_Timer rng3 1
 execute if score MG_AZR0_Timer rng3 matches 0..5 if score MG_AZR0_rng rng7 matches 50.. run scoreboard players add MG_AZR0_Timer rng3 1
 
