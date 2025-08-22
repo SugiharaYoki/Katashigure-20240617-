@@ -40,3 +40,4 @@ clear @s[gamemode=!creative] chain
 clear @s[gamemode=!creative] stick
 clear @s[gamemode=!creative] iron_door
 clear @s[gamemode=!creative] shroomlight
+clear @s[gamemode=!creative] acacia_door
