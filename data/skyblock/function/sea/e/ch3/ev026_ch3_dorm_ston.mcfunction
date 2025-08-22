@@ -6,5 +6,5 @@ execute positioned 90102 149 131 if entity @a[tag=SEAPT,distance=..3.5,tag=!SEAP
 execute positioned 90102 149 131 if entity @a[tag=SEAPT,distance=..3.5,tag=!SEAPF] unless block 90102 150 130 air run setblock 90103 149 131 minecraft:red_candle[candles=3,lit=false]
 execute positioned 90102 149 131 if entity @a[tag=SEAPT,distance=..3.5,tag=!SEAPF] unless block 90102 150 130 air run playsound block.amethyst_cluster.break block @a ~ ~ ~ 1 0.8
 execute positioned 90102 149 131 if entity @a[tag=SEAPT,distance=..3.5,tag=!SEAPF] unless block 90102 150 130 air run playsound block.amethyst_block.chime block @a ~ ~ ~ 1 0.8
-execute positioned 90102 149 131 if entity @a[tag=SEAPT,distance=..3.5,tag=!SEAPF] unless block 90102 150 130 air run tag @a add e_i_25
+execute positioned 90102 149 131 if entity @a[tag=SEAPT,distance=..3.5,tag=!SEAPF] unless block 90102 150 130 air run tag @a[tag=SEAPT] add e_i_25
 execute positioned 90102 149 131 if entity @a[tag=SEAPT,distance=..3.5,tag=!SEAPF] unless block 90102 150 130 air run setblock 90102 150 130 air

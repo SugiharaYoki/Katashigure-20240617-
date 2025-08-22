@@ -120,7 +120,7 @@ execute as @n[tag=sc,scores={sea_4temp3=280}] run fill 90124 144 117 90124 145 1
 
 
 execute unless entity @a[tag=SEAPT,tag=e_i_27] positioned 90093 128 95 if entity @a[tag=SEAPT,distance=..4,tag=!SEAPF] if block 90124 145 117 air unless entity @n[tag=SEAch3_spawn_timer8,distance=0..3] run summon marker ~ ~ ~ {Tags:["SEAch3_spawn_timer","SEAch3_spawn_timer8"]}
-execute as @n[tag=SEAch3_spawn_timer8,scores={sea_4temp1=3}] positioned 90093 128 95 run tellraw @a[distance=0..50] [{"selector":"@p","color":"aqua"},[{"text":"：","color":"aqua","bold": true},{"text":"\n“那个备用电台里的人提到的水晶祀堂……是这里？”","color":"white","bold": false}]
+execute as @n[tag=SEAch3_spawn_timer8,scores={sea_4temp1=3}] positioned 90093 128 95 run tellraw @a[distance=0..50] [{"selector":"@p","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“那个备用电台里的人提到的水晶祀堂……是这里？”","color":"white","bold": false}]
 
 execute as @n[tag=SEAch3_spawn_timer8,scores={sea_4temp1=10..18}] positioned 90093 128 98 run playsound minecraft:ambient.crimson_forest.additions ambient @a ~ ~ ~ 5 0.8
 execute as @n[tag=SEAch3_spawn_timer8,scores={sea_4temp1=10..12}] positioned 90093 128 98 run playsound minecraft:ambient.crimson_forest.mood ambient @a ~ ~ ~ 5 0.8
