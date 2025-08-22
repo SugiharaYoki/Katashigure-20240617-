@@ -42,3 +42,5 @@ execute if entity @s[scores={Azr0_SKILL_23=1..}] store result score @s rng1 run 
 execute if entity @s[scores={Azr0_SKILL_23=1,rng1=1..2}] run function skyblock:mg/azr0/system/player/skill/skill_23
 execute if entity @s[scores={Azr0_SKILL_23=2,rng1=1..4}] run function skyblock:mg/azr0/system/player/skill/skill_23
 execute if entity @s[scores={Azr0_SKILL_23=3,rng1=1..6}] run function skyblock:mg/azr0/system/player/skill/skill_23
+
+execute if entity @s[scores={Azr0_SKILL_25=1..}] run function skyblock:mg/azr0/system/player/skill/skill_25
