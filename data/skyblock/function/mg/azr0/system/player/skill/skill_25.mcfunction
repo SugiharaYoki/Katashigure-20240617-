@@ -19,8 +19,8 @@ execute if entity @s[scores={rng2=1,Azr_emerald=..4,Azr0_SKILL_24=3..}] run scor
 
 execute if entity @s[scores={rng2=1}] run playsound minecraft:entity.wandering_trader.trade master @s ~ ~ ~ 1 1.3
 execute if entity @s[scores={rng2=1}] as @n[tag=MG_AZR0MOB,distance=..15] at @s as @n[tag=MG_AZR0MOB,distance=..5] at @s run playsound minecraft:block.note_block.bit hostile @a ~ ~ ~ 1 0.7
-execute if entity @s[scores={rng2=1,Azr0_SKILL_25=..2}] as @n[tag=MG_AZR0MOB,distance=..15] at @s as @n[tag=MG_AZR0MOB,distance=..5] at @s run summon fireball ~ ~1 ~-0 {ExplosionPower:1,Motion:[0.0,-0.25,0.00]}
-execute if entity @s[scores={rng2=1,Azr0_SKILL_25=3..}] as @n[tag=MG_AZR0MOB,distance=..15] at @s as @n[tag=MG_AZR0MOB,distance=..5] at @s run summon fireball ~ ~1 ~-0 {ExplosionPower:2,Motion:[0.0,-0.25,0.00]}
+execute if entity @s[scores={rng2=1,Azr0_SKILL_25=..2}] as @n[tag=MG_AZR0MOB,distance=..15] at @s as @n[tag=MG_AZR0MOB,distance=0.1..5] at @s run summon fireball ~ ~1 ~-0 {ExplosionPower:1,Motion:[0.0,-0.25,0.00]}
+execute if entity @s[scores={rng2=1,Azr0_SKILL_25=3..}] as @n[tag=MG_AZR0MOB,distance=..15] at @s as @n[tag=MG_AZR0MOB,distance=0.1..5] at @s run summon fireball ~ ~1 ~-0 {ExplosionPower:2,Motion:[0.0,-0.25,0.00]}
 execute if entity @s[scores={rng2=1,Azr0_SKILL_24=1}] run scoreboard players remove @s Azr_emerald 30
 execute if entity @s[scores={rng2=1,Azr0_SKILL_24=2}] run scoreboard players remove @s Azr_emerald 15
 execute if entity @s[scores={rng2=1,Azr0_SKILL_24=3..}] run scoreboard players remove @s Azr_emerald 5
