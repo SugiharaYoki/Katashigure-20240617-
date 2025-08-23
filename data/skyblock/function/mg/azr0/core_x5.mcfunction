@@ -36,6 +36,7 @@ execute as @e[type=marker,tag=Azr0_SKILL_23] at @s run function skyblock:mg/azr0
 execute as @a[tag=MG_AZR0PT] at @s run function skyblock:mg/azr0/system/player/shop/index
 
 function skyblock:mg/azr0/system/mob/skill_fast
+function skyblock:mg/azr0/system/player/shop/wand_summon/core
 
 
 execute as @n[distance=..200,type=silverfish,tag=!MG_AZR0MOB] at @s if entity @n[tag=,distance=0..12] run tag @s add MG_AZR0MOB

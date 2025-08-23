@@ -122,6 +122,7 @@ scoreboard players set isStarted azr0_system 0
 
 kill @e[tag=mg_azr0_MobPortals,type=marker]
 kill @e[tag=MG_AZR0MOB]
+kill @e[tag=MG_AZR0SPIRIT]
 kill @e[tag=MG_AZR0FRIENDLY]
 execute at @n[tag=mg_azr0,type=marker] run kill @e[type=item,distance=..120]
 
