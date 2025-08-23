@@ -6,5 +6,4 @@ execute if score @s rng1 matches 1..5 at @n[tag=azr0_wand_summon_pos,type=marker
 
 
 
-scoreboard players remove @s Azr_diamond 1
 
