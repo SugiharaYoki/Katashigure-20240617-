@@ -27,13 +27,18 @@ execute as @e[type=marker,tag=MG_AZR0_FIRE,scores={rng1=6}] at @s if block ~ ~ ~
 execute as @e[type=marker,tag=MG_AZR0_FIRE,scores={rng1=20}] at @s if block ~ ~ ~ fire run setblock ~ ~ ~ air
 execute as @e[type=marker,tag=MG_AZR0_FIRE,scores={rng1=20..}] at @s run kill @s
 
-execute as @n[tag=MG_AZR0MOB_ravager,tag=!MG_AZR0_ravager_ridden] at @s if entity @n[type=vindicator,distance=..3.1] run tag @s add MG_AZR0_ravager_ridden_temp
-execute as @n[tag=MG_AZR0MOB_ravager,tag=!MG_AZR0_ravager_ridden] at @s run ride @n[type=vindicator,distance=..3.1] mount @s
-execute as @n[tag=MG_AZR0MOB_ravager,tag=!MG_AZR0_ravager_ridden,tag=MG_AZR0_ravager_ridden_temp] at @s run tag @s add MG_AZR0_ravager_ridden
-execute as @n[tag=MG_AZR0MOB_ravager,tag=!MG_AZR0_ravager_ridden] at @s if entity @n[type=pillager,distance=..3.3] run tag @s add MG_AZR0_ravager_ridden_temp
-execute as @n[tag=MG_AZR0MOB_ravager,tag=!MG_AZR0_ravager_ridden] at @s run ride @n[type=pillager,distance=..3.3] mount @s
-execute as @n[tag=MG_AZR0MOB_ravager,tag=!MG_AZR0_ravager_ridden,tag=MG_AZR0_ravager_ridden_temp] at @s run tag @s add MG_AZR0_ravager_ridden
+execute as @n[type=ravager,tag=MG_AZR0MOB_ravager,tag=!MG_AZR0_ravager_ridden] at @s if entity @n[type=vindicator,distance=..3.1] run tag @s add MG_AZR0_ravager_ridden_temp
+execute as @n[type=ravager,tag=MG_AZR0MOB_ravager,tag=!MG_AZR0_ravager_ridden] at @s run ride @n[type=vindicator,distance=..3.1] mount @s
+execute as @n[type=ravager,tag=MG_AZR0MOB_ravager,tag=!MG_AZR0_ravager_ridden,tag=MG_AZR0_ravager_ridden_temp] at @s run tag @s add MG_AZR0_ravager_ridden
+execute as @n[type=ravager,tag=MG_AZR0MOB_ravager,tag=!MG_AZR0_ravager_ridden] at @s if entity @n[type=pillager,distance=..3.3] run tag @s add MG_AZR0_ravager_ridden_temp
+execute as @n[type=ravager,tag=MG_AZR0MOB_ravager,tag=!MG_AZR0_ravager_ridden] at @s run ride @n[type=pillager,distance=..3.3] mount @s
+execute as @n[type=ravager,tag=MG_AZR0MOB_ravager,tag=!MG_AZR0_ravager_ridden,tag=MG_AZR0_ravager_ridden_temp] at @s run tag @s add MG_AZR0_ravager_ridden
 
+execute as @e[distance=..100,type=rabbit,tag=MG_AZR0MOB_rabbit] run scoreboard players add @s rng5 1
+execute as @e[distance=..100,type=rabbit,tag=MG_AZR0MOB_rabbit,scores={rng5=2}] at @s run tellraw @a[tag=MG_AZR0PT] {"text":"宝藏兔现身了！","color": "gold","bold": false}
+execute as @e[distance=..100,type=rabbit,tag=MG_AZR0MOB_rabbit,scores={rng5=..3}] at @s run effect give @s resistance 3 3 true
+execute as @n[distance=..100,type=rabbit,tag=MG_AZR0MOB_rabbit,scores={rng5=120..}] at @s run tp @s ~ ~-50 ~
+execute as @n[distance=..100,type=rabbit,tag=MG_AZR0MOB_rabbit,scores={rng5=120..}] at @s run tellraw @a[tag=MG_AZR0PT] {"text":"宝藏兔逃走了……","color": "gray","bold": false}
 
 
 execute as @e[tag=MG_AZR0MOB_endermite,distance=..100,type=endermite] at @s unless score @s rng5 matches 0.. run scoreboard players add @s rng5 1
