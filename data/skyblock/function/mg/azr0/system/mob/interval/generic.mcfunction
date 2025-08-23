@@ -33,6 +33,12 @@ execute if score MG_AZR0_rng rng3 matches 80..83 at @e[tag=mg_azr0_MobPortals,ty
 
 
 
+execute if score MG_AZR0_Timer rng2 matches 50..99 store result score MG_AZR0_rng rng3 run random value 1..600
+execute if score MG_AZR0_Timer rng2 matches 100..199 store result score MG_AZR0_rng rng3 run random value 1..550
+execute if score MG_AZR0_Timer rng2 matches 200..299 store result score MG_AZR0_rng rng3 run random value 1..500
+execute if score MG_AZR0_Timer rng2 matches 300..399 store result score MG_AZR0_rng rng3 run random value 1..450
+execute if score MG_AZR0_Timer rng2 matches 400.. store result score MG_AZR0_rng rng3 run random value 1..400
+execute if score MG_AZR0_rng rng3 matches 1 at @e[tag=mg_azr0_MobPortals,type=marker,limit=1,sort=random] run function skyblock:mg/azr0/m/rabbit
 
 
 
