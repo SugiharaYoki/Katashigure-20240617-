@@ -114,6 +114,7 @@ scoreboard objectives remove Azr0_dealt_damage
 scoreboard objectives remove Azr0_UPG_bow
 scoreboard objectives remove Azr0_UPG_crossbow
 scoreboard objectives remove Azr0_UPG_armor
+scoreboard objectives remove Azr0_UPG_wand_level
 
 
 #setblock 125078 0 -242 minecraft:air

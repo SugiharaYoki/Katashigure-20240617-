@@ -76,6 +76,7 @@ scoreboard objectives add Azr0_USED_star dummy
 scoreboard objectives add Azr0_dealt_damage custom:damage_dealt
 scoreboard objectives add Azr0_hurt custom:damage_taken
 
+scoreboard objectives add Azr0_UPG_wand_level dummy
 
 
 scoreboard objectives add Azr0_SkillPoint dummy
