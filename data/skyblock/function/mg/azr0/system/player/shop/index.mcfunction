@@ -8,6 +8,11 @@ execute if items entity @s player.cursor iron_axe[custom_data={"azr0shop":true}]
 execute if items entity @s player.cursor iron_ingot[custom_data={"azr0shop":true}] run function skyblock:mg/azr0/system/player/shop/upg/axe_recharge
 execute if items entity @s player.cursor heavy_core[custom_data={"azr0shop":true}] run function skyblock:mg/azr0/system/player/shop/upg/axe_range
 
+execute if items entity @s player.cursor stone_hoe[custom_data={"azr0shop":true}] run function skyblock:mg/azr0/system/player/shop/upg/wand_level
+execute if items entity @s player.cursor brick[custom_data={"azr0shop":true}] run function skyblock:mg/azr0/system/player/shop/upg/wand_summon {"min":50,"max":100}
+execute if items entity @s player.cursor copper_ingot[custom_data={"azr0shop":true}] run function skyblock:mg/azr0/system/player/shop/upg/wand_summon {"min":30,"max":130}
+execute if items entity @s player.cursor resin_brick[custom_data={"azr0shop":true}] run function skyblock:mg/azr0/system/player/shop/upg/wand_summon {"min":0,"max":200}
+
 execute if items entity @s player.cursor golden_apple[custom_data={"azr0shop":true}] run function skyblock:mg/azr0/system/player/shop/upg/hp
 execute if items entity @s player.cursor torchflower[custom_data={"azr0shop":true}] run function skyblock:mg/azr0/system/player/shop/upg/star
 execute if items entity @s player.cursor chainmail_chestplate[custom_data={"azr0shop":true}] run function skyblock:mg/azr0/system/player/shop/upg/armor
