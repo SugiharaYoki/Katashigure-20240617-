@@ -29,3 +29,11 @@ execute if score MG_AZR0_rng rng3 matches 71 at @e[tag=mg_azr0_MobPortals,type=m
 execute if score MG_AZR0_rng rng3 matches 72..73 at @e[tag=mg_azr0_MobPortals,type=marker,limit=1,sort=random] run function skyblock:mg/azr0/m/silverfish
 execute if score MG_AZR0_rng rng3 matches 74..79 at @e[tag=mg_azr0_MobPortals,type=marker,limit=1,sort=random] run function skyblock:mg/azr0/m/creeper
 execute if score MG_AZR0_rng rng3 matches 80..83 at @e[tag=mg_azr0_MobPortals,type=marker,limit=1,sort=random] run function skyblock:mg/azr0/m/zombie_villager
+
+
+
+
+
+
+
+
