@@ -34,9 +34,3 @@ execute as @n[type=ravager,tag=MG_AZR0MOB_ravager,tag=!MG_AZR0_ravager_ridden] a
 execute as @n[type=ravager,tag=MG_AZR0MOB_ravager,tag=!MG_AZR0_ravager_ridden] at @s run ride @n[type=pillager,distance=..3.3] mount @s
 execute as @n[type=ravager,tag=MG_AZR0MOB_ravager,tag=!MG_AZR0_ravager_ridden,tag=MG_AZR0_ravager_ridden_temp] at @s run tag @s add MG_AZR0_ravager_ridden
 
-execute as @e[distance=..100,type=rabbit,tag=MG_AZR0MOB_rabbit] run function skyblock:mg/azr0/system/mob/skill/rabbit_generic
-
-
-execute as @e[tag=MG_AZR0MOB_endermite,distance=..100,type=endermite] at @s unless score @s rng5 matches 0.. run scoreboard players add @s rng5 1
-execute as @e[tag=MG_AZR0MOB_endermite,distance=..100,type=endermite,scores={rng5=0..}] at @s store result score @s rng5 run random value 1..30
-execute as @e[tag=MG_AZR0MOB_endermite,distance=..100,type=endermite,scores={rng5=1..3}] at @s run function skyblock:mg/azr0/system/mob/skill/endermite_generic
