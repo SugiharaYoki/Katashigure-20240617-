@@ -40,6 +40,13 @@ execute if entity @s[tag=MG_AZR0_MoneyPicked] run clear @s flint 1
 
 tag @s remove MG_AZR0_MoneyPicked
 
+execute if items entity @s container.* netherite_ingot run tag @s add MG_AZR0_MoneyPicked
+
+execute if entity @s[tag=MG_AZR0_MoneyPicked] run scoreboard players add @a[tag=MG_AZR0PT] Perm_PersonSHD 1
+execute if entity @s[tag=MG_AZR0_MoneyPicked] run clear @s netherite_ingot 1
+execute if entity @s[tag=MG_AZR0_MoneyPicked] run playsound minecraft:entity.experience_orb.pickup master @a ~ ~ ~ 1 0.8
+
+tag @s remove MG_AZR0_MoneyPicked
 
 
 
