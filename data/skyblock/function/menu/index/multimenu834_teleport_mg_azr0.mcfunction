@@ -26,11 +26,13 @@ scoreboard objectives add Azr0_UPG_OTSD_emerald_critical dummy
 scoreboard objectives add Azr0_UPG_OTSD_armor_helmet dummy
 scoreboard objectives add Azr0_UPG_OTSD_skill_point dummy
 scoreboard objectives add Azr0_UPG_OTSD_diamond_drop dummy
+scoreboard objectives add Azr0_UPG_OTSD_auto_collect dummy
 execute unless score @s Azr0_UPG_OTSD_emerald_wave matches -999.. run scoreboard players set @s Azr0_UPG_OTSD_emerald_wave 0
 execute unless score @s Azr0_UPG_OTSD_emerald_critical matches -999.. run scoreboard players set @s Azr0_UPG_OTSD_emerald_critical 0
 execute unless score @s Azr0_UPG_OTSD_armor_helmet matches -999.. run scoreboard players set @s Azr0_UPG_OTSD_armor_helmet 0
 execute unless score @s Azr0_UPG_OTSD_skill_point matches -999.. run scoreboard players set @s Azr0_UPG_OTSD_skill_point 0
 execute unless score @s Azr0_UPG_OTSD_diamond_drop matches -999.. run scoreboard players set @s Azr0_UPG_OTSD_diamond_drop 0
+execute unless score @s Azr0_UPG_OTSD_auto_collect matches -999.. run scoreboard players set @s Azr0_UPG_OTSD_auto_collect 0
 
 
 

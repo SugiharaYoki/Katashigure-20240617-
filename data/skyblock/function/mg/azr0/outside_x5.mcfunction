@@ -35,6 +35,8 @@ item replace entity @s[tag=!MG_AZR0PT,scores={Azr0_UPG_OTSD_skill_point=1}] inve
 item replace entity @s[tag=!MG_AZR0PT,scores={Azr0_UPG_OTSD_skill_point=2}] inventory.2 with cat_spawn_egg[custom_data={"azr0outside":true},custom_name='{"text":"升级：准备充分","italic":false,"bold":false,"color":"green"}',lore=['{"text":"当前：lv 2","color":"gray","italic":true}','{"text":"开局立即获得1赐福点数","color":"white","italic":true}','{"text":"下一级：赐福点数+1","color":"white","italic":false}','{"text":"消耗：800影之石","color":"red","italic":true}']]
 item replace entity @s[tag=!MG_AZR0PT,scores={Azr0_UPG_OTSD_skill_point=3}] inventory.2 with end_crystal[custom_data={"azr0outside":true},custom_name='{"text":"升级：准备充分 [已达版本上限]","italic":false,"bold":false,"color":"gray"}',lore=['{"text":"当前：lv 3","color":"gray","italic":true}','{"text":"开局立即获得1赐福点数","color":"white","italic":true}','{"text":"下一级：赐福点数+1","color":"white","italic":false}','{"text":"消耗：1200影之石","color":"red","italic":true}']]
 
+item replace entity @s[tag=!MG_AZR0PT,scores={Azr0_UPG_OTSD_auto_collect=0}] inventory.2 with cat_spawn_egg[custom_data={"azr0outside":true},custom_name='{"text":"魅力磁铁","italic":false,"bold":false,"color":"green"}',lore=['{"text":"当前：lv 0","color":"gray","italic":true}','{"text":"下一级：拾取道具的范围大幅增加","color":"white","italic":false}','{"text":"消耗：500影之石","color":"red","italic":true}']]
+item replace entity @s[tag=!MG_AZR0PT,scores={Azr0_UPG_OTSD_auto_collect=1}] inventory.2 with end_crystal[custom_data={"azr0outside":true},custom_name='{"text":"升级：魅力磁铁 [已达版本上限]","italic":false,"bold":false,"color":"gray"}',lore=['{"text":"当前：lv 1","color":"gray","italic":true}','{"text":"拾取道具的范围大幅增加","color":"white","italic":true}']]
 
 tag @a[tag=MG_AZR0PT_dead,distance=0..250] remove MG_AZR0PT_dead
 

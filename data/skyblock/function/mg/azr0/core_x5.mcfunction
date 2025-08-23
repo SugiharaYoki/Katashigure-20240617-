@@ -18,7 +18,7 @@ execute if score MG_AZR0_Timer rng9 matches 3..5 run playsound ambient.soul_sand
 
 execute if score MG_AZR0_Timer rng9 matches 12..50 run function skyblock:mg/azr0/event/0_intro
 
-
+execute as @a[tag=MG_AZR0PT,scores={Azr0_UPG_OTSD_auto_collect=1}] at @s as @e[type=item,distance=..10] run tp @s ~ ~ ~
 
 execute if score MG_AZR0_Timer rng3 matches 10.. as @e[tag=mg_azr0_MobPortals_horizontal,limit=2] at @s run function skyblock:mg/azr0/particle/mob_portal_horizontal
 execute if score MG_AZR0_Timer rng3 matches 10.. as @e[tag=mg_azr0_MobPortals_vertical,limit=2] at @s run function skyblock:mg/azr0/particle/mob_portal_horizontal
