@@ -31,7 +31,7 @@ execute if score MG_AZR0_rng rng4 matches 11 run tellraw @a[tag=MG_AZR0PT] [{"te
 
 execute if score MG_AZR0_rng rng5 matches 41 run tellraw @a[tag=MG_AZR0PT] [{"text": "灵能感知：","color": "yellow","bold": true},{"text": " 汹涌的虫潮即将席卷圣堂……","color": "red","bold": false}]
 execute if score MG_AZR0_rng rng5 matches 42 run tellraw @a[tag=MG_AZR0PT] [{"text": "灵能感知：","color": "yellow","bold": true},{"text": " 传送门内响起恐怖的噪音，你却感受不到任何生命的气息……","color": "red","bold": false}]
-execute if score MG_AZR0_rng rng5 matches 43 run tellraw @a[tag=MG_AZR0PT] [{"text": "灵能感知：","color": "yellow","bold": true},{"text": " 远方的呼喊声杀意渐浓，一支神界军中队奉命前来将你抹杀……","color": "red","bold": false}]
+execute if score MG_AZR0_rng rng5 matches 43 run tellraw @a[tag=MG_AZR0PT] [{"text": "灵能感知：","color": "yellow","bold": true},{"text": " 你感到远方杀意渐浓，一支神界军中队奉命前来将你抹杀……","color": "red","bold": false}]
 
 
 execute if score MG_AZR0_rng rng4 matches 1 at @n[tag=mg_azr0,type=marker] positioned ~-34 ~2 ~ run summon marker ~ ~ ~ {Tags:["mg_azr0_MobPortals","mg_azr0_MobPortals_horizontal"]}
