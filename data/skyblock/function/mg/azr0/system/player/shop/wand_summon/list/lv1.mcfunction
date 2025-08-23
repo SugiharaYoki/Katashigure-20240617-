@@ -6,7 +6,7 @@ execute if score @s rng1 matches 2 at @n[tag=azr0_wand_summon_pos,type=marker,di
 execute if score @s rng1 matches 3..5 at @n[tag=azr0_wand_summon_pos,type=marker,distance=0..10] run function skyblock:mg/azr0/system/player/shop/wand_summon/list/m/iron_golem_lv1
 
 
-
+scoreboard players remove @s Azr_emerald 100
 
 
 
