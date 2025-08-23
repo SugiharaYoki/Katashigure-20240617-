@@ -54,7 +54,9 @@ item replace entity @s[scores={Azr0_UPG_sword_sweeping=5}] inventory.9 with end_
 
 
 
-item replace entity @s[scores={Azr0_UPG_wand_level=0}] inventory.1 with end_crystal[custom_data={"azr0shop":true},custom_name='{"text":"武器：杖 已升至最高级","italic":false,"color":"green"}']
+item replace entity @s[scores={Azr0_UPG_wand_level=0}] inventory.1 with brick[custom_data={"azr0shop":true},custom_name='{"text":"使魔召唤：初级","italic":false,"color":"green"}',lore=['{"text":"召唤使魔 分为初/中/高三类 随机出现","color":"white","italic":true}','{"text":"消耗：100绿宝石","color":"red","italic":true}']]
+item replace entity @s[scores={Azr0_UPG_wand_level=0}] inventory.10 with copper_ingot[custom_data={"azr0shop":true},custom_name='{"text":"使魔召唤：中级","italic":false,"color":"green"}',lore=['{"text":"召唤使魔 出现中高级使魔概率增加","color":"white","italic":true}','{"text":"消耗：500绿宝石","color":"red","italic":true}']]
+item replace entity @s[scores={Azr0_UPG_wand_level=0}] inventory.19 with resin_brick[custom_data={"azr0shop":true},custom_name='{"text":"使魔召唤：高级","italic":false,"color":"green"}',lore=['{"text":"召唤使魔 出现中高级使魔概率大幅增加","color":"white","italic":true}','{"text":"消耗：1钻石","color":"red","italic":true}']]
 
 
 item replace entity @s[scores={Azr0_UPG_wand_level=-1,Azr0_UPG_axe_damage=-1,Azr0_UPG_sword_speed=..0}] inventory.1 with barrier
@@ -85,7 +87,7 @@ item replace entity @s[scores={Azr0_UPG_axe_recharge=9}] inventory.10 with iron_
 item replace entity @s[scores={Azr0_UPG_axe_recharge=10}] inventory.10 with end_crystal[custom_data={"azr0shop":true},custom_name='{"text":"升级：斧 充能速度 已升至最高级","italic":false,"color":"gold"}']
 
 
-item replace entity @s[scores={Azr0_UPG_axe_damage=..3}] inventory.19 with barrier
+item replace entity @s[scores={Azr0_UPG_axe_damage=..3,Azr0_UPG_wand_level=-1}] inventory.19 with barrier
 execute unless entity @s[scores={Azr0_UPG_axe_damage=..3}] run item replace entity @s[scores={Azr0_UPG_axe_range=0}] inventory.19 with heavy_core[custom_data={"azr0shop":true},custom_name='{"text":"升级：斧 范围攻击","italic":false,"color":"green"}',lore=['{"text":"距离自己2.3格以内的目标将受到6点伤害 最大捕捉：6","color":"white","italic":true}','{"text":"消耗：100绿宝石","color":"red","italic":true}']]
 item replace entity @s[scores={Azr0_UPG_axe_range=1}] inventory.19 with heavy_core[custom_data={"azr0shop":true},custom_name='{"text":"升级：斧 范围攻击","italic":false,"color":"green"}',lore=['{"text":"增加2点伤害 0.5距离","color":"white","italic":true}','{"text":"消耗：200绿宝石","color":"red","italic":true}']]
 item replace entity @s[scores={Azr0_UPG_axe_range=2}] inventory.19 with heavy_core[custom_data={"azr0shop":true},custom_name='{"text":"升级：斧 范围攻击","italic":false,"color":"green"}',lore=['{"text":"增加2点伤害 1最大捕捉","color":"white","italic":true}','{"text":"消耗：300绿宝石","color":"red","italic":true}']]
