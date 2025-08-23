@@ -14,7 +14,8 @@ execute unless items entity @s[scores={Azr_isDead=1..}] container.* nether_star 
 execute unless items entity @s hotbar.0 *[custom_data={"azr0weapon_sword":true}] run function skyblock:mg/azr0/system/player/hotbar/sword1
 execute if entity @s[scores={Azr0_axe_recharge=1000..}] unless items entity @s hotbar.0 *[custom_data={"azr0weapon_axe":true}] run function skyblock:mg/azr0/system/player/hotbar/axe1
 execute if entity @s[scores={Azr0_axe_recharge=..999}] run function skyblock:mg/azr0/system/player/hotbar/axe_loading1
-execute if entity @s[scores={Azr0_UPG_axe_damage=..-1}] run item replace entity @s hotbar.1 with barrier
+execute if entity @s[scores={Azr0_UPG_wand_level=-1,Azr0_UPG_axe_damage=..-1}] run item replace entity @s hotbar.1 with barrier
+execute if entity @s[scores={Azr0_UPG_wand_level=0}] run item replace entity @s hotbar.1 with stone_hoe[custom_data={"azr0weapon_wand":true},custom_name='{"text":"石杖","italic":false,"color":"red"}',lore=['{"text":"手持时 将5格内的使魔召唤至身旁","color":"gray","italic":false}']]
 execute if entity @s[scores={Azr0_UPG_bow=-1,Azr0_UPG_crossbow=-1}] run item replace entity @s hotbar.2 with barrier
 execute unless items entity @s[scores={Azr0_UPG_bow=0..}] hotbar.2 *[custom_data={"azr0weapon_bow":true}] run function skyblock:mg/azr0/system/player/hotbar/bow1
 execute unless items entity @s[scores={Azr0_UPG_crossbow=0..}] hotbar.2 *[custom_data={"azr0weapon_bow":true}] run function skyblock:mg/azr0/system/player/hotbar/crossbow1
