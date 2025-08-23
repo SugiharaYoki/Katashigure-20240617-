@@ -1,4 +1,4 @@
-function skyblock:mg/azr0/particle/m_mob_tier1
+function skyblock:mg/azr0/particle/m_mob_tier2
 execute store result score @s rng2 run random value 1..3
 
 execute if score @s rng2 matches 1 run summon iron_golem ~ ~ ~ {CustomName:'[{"text":"首领铁傀儡·守"}]',DeathLootTable:"skyblock:null",Tags:["MG_AZR0SPIRIT","MG_AZR0SPIRIT_iron_golem"],attributes:[{id:"attack_damage",base:6.5},{id:"attack_knockback",base:0.15},{id:"scale",base:1},{id:"armor",base:20.0},{id:"movement_speed",base:0.14},{id:"max_health",base:120}],Health:120,PersistenceRequired:1b}
