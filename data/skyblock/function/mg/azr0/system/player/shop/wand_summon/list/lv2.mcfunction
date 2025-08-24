@@ -8,6 +8,6 @@ execute if score @s rng1 matches 6 at @n[tag=azr0_wand_summon_pos,type=marker,di
 
 
 
-
+say hi
 
 
