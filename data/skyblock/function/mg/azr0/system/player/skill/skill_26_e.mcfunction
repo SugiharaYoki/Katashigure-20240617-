@@ -21,10 +21,10 @@ execute if score @s[scores={rng4=4}] rng1 matches 21.. positioned ^ ^ ^1.5 as @e
 
 execute if score @s rng1 matches 21.. run rotate @s ~20 0
 
-execute if score @s[scores={rng2=1}] rng1 matches 22 run scoreboard players add @s rng1 36
-execute if score @s[scores={rng2=2}] rng1 matches 22 run scoreboard players add @s rng1 18
+execute if score @s[scores={rng2=1}] rng1 matches 22 run scoreboard players add @s rng1 72
+execute if score @s[scores={rng2=2}] rng1 matches 22 run scoreboard players add @s rng1 36
 
-execute if score @s rng1 matches 75.. run kill @s
+execute if score @s rng1 matches 111.. run kill @s
 
 
 

@@ -6,6 +6,9 @@ execute if entity @s[scores={Azr0_UPG_axe_damage=3,Azr_emerald=150..}] run tag @
 execute if entity @s[scores={Azr0_UPG_axe_damage=4,Azr_emerald=250..}] run tag @s add AZR0SHOP_SUCCESS
 execute if entity @s[scores={Azr0_UPG_axe_damage=5,Azr_emerald=450..}] run tag @s add AZR0SHOP_SUCCESS
 execute if entity @s[scores={Azr0_UPG_axe_damage=6,Azr_emerald=650..}] run tag @s add AZR0SHOP_SUCCESS
+execute if entity @s[scores={Azr0_UPG_axe_damage=7,Azr_emerald=1000..}] run tag @s add AZR0SHOP_SUCCESS
+execute if entity @s[scores={Azr0_UPG_axe_damage=8,Azr_emerald=1500..}] run tag @s add AZR0SHOP_SUCCESS
+execute if entity @s[scores={Azr0_UPG_axe_damage=9,Azr_emerald=3000..}] run tag @s add AZR0SHOP_SUCCESS
 execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_axe_damage=-1}] run scoreboard players remove @s Azr_emerald 30
 execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_axe_damage=0}] run scoreboard players remove @s Azr_emerald 50
 execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_axe_damage=1}] run scoreboard players remove @s Azr_emerald 80
@@ -14,6 +17,9 @@ execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_axe_damage=3}] run sc
 execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_axe_damage=4}] run scoreboard players remove @s Azr_emerald 250
 execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_axe_damage=5}] run scoreboard players remove @s Azr_emerald 450
 execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_axe_damage=6}] run scoreboard players remove @s Azr_emerald 650
+execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_axe_damage=7}] run scoreboard players remove @s Azr_emerald 1000
+execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_axe_damage=8}] run scoreboard players remove @s Azr_emerald 1500
+execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_axe_damage=9}] run scoreboard players remove @s Azr_emerald 3000
 execute if entity @s[tag=AZR0SHOP_SUCCESS] run scoreboard players add @s Azr0_UPG_axe_damage 1
 execute if entity @s[tag=AZR0SHOP_SUCCESS] run scoreboard players set @s Azr0_axe_recharge 1001
 execute if entity @s[tag=AZR0SHOP_SUCCESS] run tellraw @s {"text": "升级成功！","color": "green"}
