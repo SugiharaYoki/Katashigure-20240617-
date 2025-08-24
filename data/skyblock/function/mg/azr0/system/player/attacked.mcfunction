@@ -12,9 +12,9 @@ execute if entity @s[scores={Azr0_SKILL_10=3,rng1=4..10}] if items entity @s wea
 execute if items entity @s[scores={Azr0_UPG_axe_range=1..}] weapon.mainhand *[custom_data={"azr0weapon_axe":true}] at @s run particle sweep_attack ~ ~1.2 ~ 1 0.2 1 0 5
 execute if items entity @s[scores={Azr0_UPG_axe_range=1}] weapon.mainhand *[custom_data={"azr0weapon_axe":true}] at @s as @e[distance=0..2.3,tag=MG_AZR0MOB,limit=6,sort=nearest] run damage @s 6 falling_anvil by @p[tag=MG_AZR0PT]
 execute if items entity @s[scores={Azr0_UPG_axe_range=2}] weapon.mainhand *[custom_data={"azr0weapon_axe":true}] at @s as @e[distance=0..2.8,tag=MG_AZR0MOB,limit=6,sort=nearest] run damage @s 8 falling_anvil by @p[tag=MG_AZR0PT]
-execute if items entity @s[scores={Azr0_UPG_axe_range=3}] weapon.mainhand *[custom_data={"azr0weapon_axe":true}] at @s as @e[distance=0..2.8,tag=MG_AZR0MOB,limit=7,sort=nearest] run damage @s 10 falling_anvil by @p[tag=MG_AZR0PT]
-execute if items entity @s[scores={Azr0_UPG_axe_range=4}] weapon.mainhand *[custom_data={"azr0weapon_axe":true}] at @s as @e[distance=0..3.3,tag=MG_AZR0MOB,limit=7,sort=nearest] run damage @s 12 falling_anvil by @p[tag=MG_AZR0PT]
-execute if items entity @s[scores={Azr0_UPG_axe_range=5}] weapon.mainhand *[custom_data={"azr0weapon_axe":true}] at @s as @e[distance=0..3.3,tag=MG_AZR0MOB,limit=8,sort=nearest] run damage @s 14 falling_anvil by @p[tag=MG_AZR0PT]
+execute if items entity @s[scores={Azr0_UPG_axe_range=3}] weapon.mainhand *[custom_data={"azr0weapon_axe":true}] at @s as @e[distance=0..2.8,tag=MG_AZR0MOB,limit=8,sort=nearest] run damage @s 10 falling_anvil by @p[tag=MG_AZR0PT]
+execute if items entity @s[scores={Azr0_UPG_axe_range=4}] weapon.mainhand *[custom_data={"azr0weapon_axe":true}] at @s as @e[distance=0..3.3,tag=MG_AZR0MOB,limit=8,sort=nearest] run damage @s 12 falling_anvil by @p[tag=MG_AZR0PT]
+execute if items entity @s[scores={Azr0_UPG_axe_range=5}] weapon.mainhand *[custom_data={"azr0weapon_axe":true}] at @s as @e[distance=0..3.3,tag=MG_AZR0MOB,limit=10,sort=nearest] run damage @s 14 falling_anvil by @p[tag=MG_AZR0PT]
 
 
 scoreboard players set @s Azr0_dealt_damage 0
