@@ -48,5 +48,14 @@ execute if entity @s[tag=MG_AZR0_MoneyPicked] run playsound minecraft:entity.exp
 
 tag @s remove MG_AZR0_MoneyPicked
 
+execute if items entity @s container.* cake run tag @s add MG_AZR0_MoneyPicked
+
+execute if entity @s[tag=MG_AZR0_MoneyPicked] run effect give @s instant_health 1 9 true
+execute if entity @s[tag=MG_AZR0_MoneyPicked] run clear @s cake 1
+execute if entity @s[tag=MG_AZR0_MoneyPicked] run playsound minecraft:entity.strider.eat player @a ~ ~ ~ 1 1.2
+execute if entity @s[tag=MG_AZR0_MoneyPicked] run playsound minecraft:entity.experience_orb.pickup master @a ~ ~ ~ 1 1.2
+
+tag @s remove MG_AZR0_MoneyPicked
+
 
 
