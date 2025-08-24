@@ -2,6 +2,7 @@
 
 execute as @e[tag=MG_AZR0SPIRIT_bombchicken,type=chicken,distance=..150] at @s run function skyblock:mg/azr0/system/player/shop/wand_summon/core/bomb_chicken
 execute as @e[tag=MG_AZR0SPIRIT_dreamsheep,type=sheep,distance=..150] at @s run function skyblock:mg/azr0/system/player/shop/wand_summon/core/dream_sheep
+execute as @e[tag=MG_AZR0SPIRIT_gingercat,type=cat,distance=..150] at @s run function skyblock:mg/azr0/system/player/shop/wand_summon/core/ginger_cat
 
 
 
