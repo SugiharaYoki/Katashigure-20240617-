@@ -7,6 +7,11 @@ execute if entity @s[scores={Azr0_SKILL_26=3..}] run tag @s add Azr0_SKILL_26c
 summon marker ~ ~ ~ {Tags:["Azr0_SKILL_26"]}
 
 
+execute if entity @s[scores={Azr0_UPG_axe_damage=1..2}] run scoreboard players set @n[tag=Azr0_SKILL_26,tag=!Azr0_SKILL_26_s] rng4 1
+execute if entity @s[scores={Azr0_UPG_axe_damage=3..4}] run scoreboard players set @n[tag=Azr0_SKILL_26,tag=!Azr0_SKILL_26_s] rng4 2
+execute if entity @s[scores={Azr0_UPG_axe_damage=5..6}] run scoreboard players set @n[tag=Azr0_SKILL_26,tag=!Azr0_SKILL_26_s] rng4 3
+execute if entity @s[scores={Azr0_UPG_axe_damage=7..}] run scoreboard players set @n[tag=Azr0_SKILL_26,tag=!Azr0_SKILL_26_s] rng4 4
+
 execute if entity @s[tag=Azr0_SKILL_26a] run scoreboard players set @n[tag=Azr0_SKILL_26,tag=!Azr0_SKILL_26_s] rng2 1
 execute if entity @s[tag=Azr0_SKILL_26b] run scoreboard players set @n[tag=Azr0_SKILL_26,tag=!Azr0_SKILL_26_s] rng2 2
 execute if entity @s[tag=Azr0_SKILL_26c] run scoreboard players set @n[tag=Azr0_SKILL_26,tag=!Azr0_SKILL_26_s] rng2 3
