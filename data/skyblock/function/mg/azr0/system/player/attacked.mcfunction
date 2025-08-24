@@ -16,6 +16,7 @@ execute if items entity @s[scores={Azr0_UPG_axe_range=3}] weapon.mainhand *[cust
 execute if items entity @s[scores={Azr0_UPG_axe_range=4}] weapon.mainhand *[custom_data={"azr0weapon_axe":true}] at @s as @e[distance=0..3.3,tag=MG_AZR0MOB,limit=8,sort=nearest] run damage @s 12 falling_anvil by @p[tag=MG_AZR0PT]
 execute if items entity @s[scores={Azr0_UPG_axe_range=5}] weapon.mainhand *[custom_data={"azr0weapon_axe":true}] at @s as @e[distance=0..3.3,tag=MG_AZR0MOB,limit=10,sort=nearest] run damage @s 14 falling_anvil by @p[tag=MG_AZR0PT]
 
+execute if items entity @s[scores={Azr0_SKILL_26=1..}] weapon.mainhand *[custom_data={"azr0weapon_axe":true}] at @s run function skyblock:mg/azr0/system/player/skill/skill_26
 
 scoreboard players set @s Azr0_dealt_damage 0
 
