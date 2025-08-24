@@ -13,9 +13,6 @@ execute at @s rotated ~ 0 positioned ^ ^ ^2 if block ~ ~ ~ air if block ~ ~1 ~ a
 execute if entity @s[tag=azr0_wand_position_pass] at @s rotated ~ 0 positioned ^ ^ ^2 if block ~ ~ ~ air if block ~ ~1 ~ air run summon marker ~ ~ ~ {Tags:["azr0_wand_summon_pos"]}
 execute unless entity @s[tag=azr0_wand_position_pass] at @s run summon marker ~ ~ ~ {Tags:["azr0_wand_summon_pos"]}
 
-execute as @p at @s store result score @s rng5 if entity @e[tag=azr0_wand_position_pass]
-execute if entity @s[scores={rng5=1}] run say hello
-execute if entity @s[scores={rng5=2}] run say hi
 
 execute if score @s rng1 matches 52..90 run function skyblock:mg/azr0/system/player/shop/wand_summon/list/lv1
 execute if score @s rng1 matches 91.. run function skyblock:mg/azr0/system/player/shop/wand_summon/list/lv2
