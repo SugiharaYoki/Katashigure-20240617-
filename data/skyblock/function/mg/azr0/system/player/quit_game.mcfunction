@@ -53,6 +53,7 @@ bossbar set mg:azr0_bar players @a[tag=MG_AZR0PT]
 
 scoreboard players set @s Azr_isDead 0
 
+execute unless score @s Azr0_Wave matches 0.. run scoreboard players set @s Azr0_Wave 0
 
 execute if score MG_AZR0_Timer rng2 > @s Azr0_Wave run tellraw @s [{"text":"游戏存档：第","color":"white"},{"score":{"name":"MG_AZR0_Timer","objective":"rng2"}},{"text":"波","color":"white"}]
 execute if score MG_AZR0_Timer rng2 <= @s Azr0_Wave run tellraw @s [{"text":"分数低于最高分，游戏不会存档。","color":"white"}]
