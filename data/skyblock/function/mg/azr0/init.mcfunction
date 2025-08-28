@@ -168,6 +168,12 @@ execute as @a[tag=MG_AZR0PT] at @s run function skyblock:mg/azr0/system/player/i
 execute at @n[tag=mg_azr0,type=marker] positioned ~ ~1 ~ run tp @a[tag=MG_AZR0PT] ~ ~ ~
 execute at @n[tag=mg_azr0,type=marker] positioned ~ ~1 ~ run spawnpoint @a[tag=MG_AZR0PT] ~ ~ ~
 
+execute if entity @a[tag=azr0_load_game] run scoreboard players operation MG_AZR0_Timer rng2 = @p[tag=azr0_load_game] Azr0_Wave
+execute if entity @a[tag=azr0_load_game] run scoreboard players remove MG_AZR0_Timer rng2 1
+
+tag @a remove azr0_new_game
+tag @a remove azr0_load_game
+
 execute at @n[tag=mg_azr0,type=marker] run kill @e[type=item,distance=..120]
 
 

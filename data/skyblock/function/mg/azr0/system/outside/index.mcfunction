@@ -11,6 +11,7 @@ execute if items entity @s[tag=!MG_AZR0PT] player.cursor nether_star[custom_data
 execute if items entity @s[tag=!MG_AZR0PT] player.cursor nether_star[custom_data={"azr0outside":true}] run function skyblock:mg/azr0/init with storage skyblock:cache azr0.BaseCoordinate
 
 execute if items entity @s[tag=!MG_AZR0PT] player.cursor ender_eye[custom_data={"azr0outside":true}] run tellraw @a[distance=0..200] [{"selector":"@s","color":"yellow"},{"text":"继承了保存的进度","color":"yellow"}]
+execute if items entity @s[tag=!MG_AZR0PT] player.cursor ender_eye[custom_data={"azr0outside":true}] run tag @s add azr0_load_game
 execute if items entity @s[tag=!MG_AZR0PT] player.cursor ender_eye[custom_data={"azr0outside":true}] run function skyblock:mg/azr0/init with storage skyblock:cache azr0.BaseCoordinate
 
 
