@@ -7,15 +7,15 @@ execute if entity @s[scores={Azr0_UPG_armor=5,Azr_diamond=20..}] run tag @s add 
 execute if entity @s[scores={Azr0_UPG_armor=6,Azr_diamond=20..}] run tag @s add AZR0SHOP_SUCCESS
 execute if entity @s[scores={Azr0_UPG_armor=7,Azr_diamond=20..}] run tag @s add AZR0SHOP_SUCCESS
 execute if entity @s[scores={Azr0_UPG_armor=8,Azr_diamond=20..}] run tag @s add AZR0SHOP_SUCCESS
-execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_armor=0}] run scoreboard players remove @s Azr_emerald 10
-execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_armor=1}] run scoreboard players remove @s Azr_emerald 30
-execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_armor=2}] run scoreboard players remove @s Azr_emerald 70
-execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_armor=3}] run scoreboard players remove @s Azr_diamond 3
-execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_armor=4}] run scoreboard players remove @s Azr_diamond 8
-execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_armor=5}] run scoreboard players remove @s Azr_diamond 20
-execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_armor=6}] run scoreboard players remove @s Azr_diamond 20
-execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_armor=7}] run scoreboard players remove @s Azr_diamond 20
-execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_armor=8}] run scoreboard players remove @s Azr_diamond 20
+execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_armor=0},tag=!azr0_load_game] run scoreboard players remove @s Azr_emerald 10
+execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_armor=1},tag=!azr0_load_game] run scoreboard players remove @s Azr_emerald 30
+execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_armor=2},tag=!azr0_load_game] run scoreboard players remove @s Azr_emerald 70
+execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_armor=3},tag=!azr0_load_game] run scoreboard players remove @s Azr_diamond 3
+execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_armor=4},tag=!azr0_load_game] run scoreboard players remove @s Azr_diamond 8
+execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_armor=5},tag=!azr0_load_game] run scoreboard players remove @s Azr_diamond 20
+execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_armor=6},tag=!azr0_load_game] run scoreboard players remove @s Azr_diamond 20
+execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_armor=7},tag=!azr0_load_game] run scoreboard players remove @s Azr_diamond 20
+execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_armor=8},tag=!azr0_load_game] run scoreboard players remove @s Azr_diamond 20
 
 execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_armor=0}] run item replace entity @s armor.chest with leather_chestplate[custom_data={azr0armor_chest:true},attribute_modifiers=[{type:"armor",id:"mg_azr0_armor:chest_0_1",amount:2,operation:"add_value"},{type:"armor_toughness",id:"mg_azr0_armor:chest_0_2",amount:0,operation:"add_value"}],unbreakable={},enchantments={binding_curse:1b,vanishing_curse:1b},enchantment_glint_override=false,dyed_color={rgb:12166150}]
 execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_armor=1}] run item replace entity @s armor.chest with leather_chestplate[custom_data={azr0armor_chest:true},attribute_modifiers=[{type:"armor",id:"mg_azr0_armor:chest_0_1",amount:4,operation:"add_value"},{type:"armor_toughness",id:"mg_azr0_armor:chest_0_2",amount:0.5,operation:"add_value"}],unbreakable={},enchantments={binding_curse:1b,vanishing_curse:1b},enchantment_glint_override=false,dyed_color={rgb:503467}]
@@ -27,8 +27,8 @@ execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_armor=6}] run item re
 execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_armor=7}] run item replace entity @s armor.chest with iron_chestplate[custom_data={azr0armor_chest:true},attribute_modifiers=[{type:"armor",id:"mg_azr0_armor:chest_0_1",amount:16,operation:"add_value"},{type:"armor_toughness",id:"mg_azr0_armor:chest_0_2",amount:3.5,operation:"add_value"}],unbreakable={},enchantments={binding_curse:1b,vanishing_curse:1b},enchantment_glint_override=false,trim={material:lapis,pattern:rib}]
 execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_armor=8}] run item replace entity @s armor.chest with iron_chestplate[custom_data={azr0armor_chest:true},attribute_modifiers=[{type:"armor",id:"mg_azr0_armor:chest_0_1",amount:18,operation:"add_value"},{type:"armor_toughness",id:"mg_azr0_armor:chest_0_2",amount:4,operation:"add_value"}],unbreakable={},enchantments={binding_curse:1b,vanishing_curse:1b},enchantment_glint_override=false,trim={material:redstone,pattern:rib}]
 
-execute if entity @s[tag=AZR0SHOP_SUCCESS] run scoreboard players add @s Azr0_UPG_armor 1
-execute if entity @s[tag=AZR0SHOP_SUCCESS] run tellraw @s {"text": "升级成功！","color": "green"}
-execute if entity @s[tag=AZR0SHOP_SUCCESS] run playsound entity.player.levelup player @s ~ ~ ~ 1 1
-execute if entity @s[tag=AZR0SHOP_SUCCESS] run playsound item.armor.equip_generic player @s ~ ~ ~ 1 1
+execute if entity @s[tag=AZR0SHOP_SUCCESS,tag=!azr0_load_game] run scoreboard players add @s Azr0_UPG_armor 1
+execute if entity @s[tag=AZR0SHOP_SUCCESS,tag=!azr0_load_game] run tellraw @s {"text": "升级成功！","color": "green"}
+execute if entity @s[tag=AZR0SHOP_SUCCESS,tag=!azr0_load_game] run playsound entity.player.levelup player @s ~ ~ ~ 1 1
+execute if entity @s[tag=AZR0SHOP_SUCCESS,tag=!azr0_load_game] run playsound item.armor.equip_generic player @s ~ ~ ~ 1 1
 tag @s remove AZR0SHOP_SUCCESS

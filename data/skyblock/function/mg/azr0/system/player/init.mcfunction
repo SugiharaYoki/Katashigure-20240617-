@@ -124,3 +124,27 @@ execute if entity @s[tag=azr0_new_game,scores={Azr0_UPG_OTSD_skill_point=3..}] r
 
 tag @s add Gaming
 effect clear @s
+
+
+
+tag @s[tag=azr0_load_game] add AZR0SHOP_SUCCESS
+execute as @s[tag=azr0_load_game] at @s run function skyblock:mg/azr0/system/player/shop/upg/armor
+tag @s[tag=azr0_load_game] add AZR0SHOP_SUCCESS
+execute as @s[tag=azr0_load_game] at @s run function skyblock:mg/azr0/system/player/shop/upg/hp
+
+execute as @s[tag=azr0_load_game,scores={Azr0_SKILL_1=1}] run attribute @s entity_interaction_range modifier add mg_azr0:skill_attack_range1 0.3 add_value
+execute as @s[tag=azr0_load_game,scores={Azr0_SKILL_1=2}] run attribute @s entity_interaction_range modifier add mg_azr0:skill_attack_range2 0.3 add_value
+execute as @s[tag=azr0_load_game,scores={Azr0_SKILL_1=3}] run attribute @s entity_interaction_range modifier add mg_azr0:skill_attack_range3 0.3 add_value
+execute as @s[tag=azr0_load_game,scores={Azr0_SKILL_2=1}] run attribute @s max_health modifier add mg_azr0:skill_max_health1 2 add_value
+execute as @s[tag=azr0_load_game,scores={Azr0_SKILL_2=2}] run attribute @s max_health modifier add mg_azr0:skill_max_health2 2 add_value
+execute as @s[tag=azr0_load_game,scores={Azr0_SKILL_2=3}] run attribute @s max_health modifier add mg_azr0:skill_max_health3 2 add_value
+execute as @s[tag=azr0_load_game,scores={Azr0_SKILL_16=1}] run attribute @s movement_speed modifier add mg_azr0:skill_movement_speed1 0.01 add_value
+execute as @s[tag=azr0_load_game,scores={Azr0_SKILL_16=2}] run attribute @s movement_speed modifier add mg_azr0:skill_movement_speed2 0.02 add_value
+execute as @s[tag=azr0_load_game,scores={Azr0_SKILL_16=3}] run attribute @s movement_speed modifier add mg_azr0:skill_movement_speed3 0.02 add_value
+execute as @s[tag=azr0_load_game,scores={Azr0_SKILL_17=1}] run attribute @s knockback_resistance modifier add mg_azr0:skill_knockback_resistance1 0.3 add_value
+execute as @s[tag=azr0_load_game,scores={Azr0_SKILL_17=2}] run attribute @s knockback_resistance modifier add mg_azr0:skill_knockback_resistance2 0.3 add_value
+execute as @s[tag=azr0_load_game,scores={Azr0_SKILL_17=3}] run attribute @s knockback_resistance modifier add mg_azr0:skill_knockback_resistance3 0.4 add_value
+execute as @s[tag=azr0_load_game,scores={Azr0_SKILL_17=2}] run attribute @s armor_toughness modifier add mg_azr0:skill_armor_toughness1 1 add_value
+execute as @s[tag=azr0_load_game,scores={Azr0_SKILL_17=3}] run attribute @s armor_toughness modifier add mg_azr0:skill_armor_toughness2 1 add_value
+
+
