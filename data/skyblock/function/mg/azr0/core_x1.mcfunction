@@ -41,6 +41,7 @@ execute as @a[tag=MG_AZR0PT] at @s unless entity @n[tag=mg_azr0,distance=..5000]
 execute at @n[tag=mg_azr0,type=marker] run gamemode spectator @a[tag=!MG_AZR0PT,gamemode=!creative,distance=0..200]
 
 
+execute as @a[distance=0..100,x=125075,y=4,z=-185,dx=5,dy=5,dz=1,tag=Gaming,tag=MG_AZR0PT] run function skyblock:mg/azr0/system/player/quit_game
 
 
 

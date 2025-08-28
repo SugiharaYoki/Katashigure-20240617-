@@ -60,5 +60,4 @@ execute as @a[distance=0..100,tag=Gaming] unless entity @a[tag=MG_AZR0PT] run ta
 
 execute as @a[distance=0..100,x=125075,y=4,z=-185,dx=5,dy=5,dz=1,tag=!Gaming] run function skyblock:menu/index/multimenu821_teleport_pivotdunggc
 
-execute as @a[distance=0..100,x=125075,y=4,z=-185,dx=5,dy=5,dz=1,tag=Gaming,tag=MG_AZR0PT] run function skyblock:mg/azr0/system/player/quit_game
 
