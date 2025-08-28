@@ -69,4 +69,4 @@ tellraw @s [{"text": "获得了","color": "light_purple","bold": false,"italic":
 scoreboard players set @s Azr0_kills 0
 function skyblock:menu/index/multimenu821_teleport_pivotdunggc
 gamemode adventure @s
-
+function skyblock:pvp/skywar/system/removeallgaming

@@ -146,3 +146,5 @@ scoreboard players reset @s Azr0_SKILL_36
 scoreboard players reset @s Azr0_SKILL_37
 scoreboard players reset @s Azr0_SKILL_38
 scoreboard players reset @s Azr0_SKILL_39
+
+function skyblock:pvp/skywar/system/removeallgaming
