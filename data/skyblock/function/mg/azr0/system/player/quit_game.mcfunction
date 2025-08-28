@@ -46,6 +46,15 @@ tag @s remove MGAZR0_SkillPrintable
 tag @s remove MG_AZR0PT
 tag @s add MG_AZR0PT_dead
 
+scoreboard players operation @s MG_AZR0_Timer_rng1 = MG_AZR0_Timer rng1
+scoreboard players operation @s MG_AZR0_Timer_rng2 = MG_AZR0_Timer rng2
+scoreboard players operation @s MG_AZR0_Timer_rng3 = MG_AZR0_Timer rng3
+scoreboard players operation @s MG_AZR0_Timer_rng4 = MG_AZR0_Timer rng4
+scoreboard players operation @s MG_AZR0_Timer_rng5 = MG_AZR0_Timer rng5
+scoreboard players operation @s MG_AZR0_Timer_rng6 = MG_AZR0_Timer rng6
+scoreboard players operation @s MG_AZR0_Timer_rng7 = MG_AZR0_Timer rng7
+scoreboard players operation @s MG_AZR0_Timer_rng9 = MG_AZR0_Timer rng9
+
 clear @s
 tellraw @a[distance=..230] [{"selector":"@s","color":"white"},{"text":" 中途退出了游戏！","color":"dark_red"}]
 
