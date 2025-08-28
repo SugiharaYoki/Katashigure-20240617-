@@ -67,6 +67,6 @@ scoreboard players operation @s Perm_PersonSHD += @s Azr0_kills
 tellraw @s [{"text": "获得了","color": "light_purple","bold": false,"italic": true},{"score":{"name":"@s","objective":"Azr0_kills"},"color":"light_purple"},{"text": "影之石","color": "light_purple"}]
 
 scoreboard players set @s Azr0_kills 0
-gamemode adventure @s
 function skyblock:menu/index/multimenu821_teleport_pivotdunggc
+gamemode adventure @s
 
