@@ -179,7 +179,7 @@ execute at @n[tag=mg_azr0,type=marker] positioned ~ ~1 ~ run spawnpoint @a[tag=M
 
 execute if entity @a[tag=azr0_load_game,scores={Azr0_Wave=..1}] run tag @s remove azr0_load_game
 execute if entity @a[tag=azr0_load_game] run scoreboard players operation MG_AZR0_Timer rng2 = @p[tag=azr0_load_game] Azr0_Wave
-execute if entity @a[tag=azr0_load_game] run scoreboard players remove MG_AZR0_Timer rng2 1
+#execute if entity @a[tag=azr0_load_game] run scoreboard players remove MG_AZR0_Timer rng2 1
 
 execute if entity @a[tag=azr0_load_game] run bossbar set mg:azr0_bar color purple
 execute if entity @a[tag=azr0_load_game] run bossbar set mg:azr0_bar style notched_20
