@@ -147,7 +147,8 @@ execute as @s[tag=azr0_load_game,scores={Azr0_SKILL_17=3}] run attribute @s knoc
 execute as @s[tag=azr0_load_game,scores={Azr0_SKILL_17=2}] run attribute @s armor_toughness modifier add mg_azr0:skill_armor_toughness1 1 add_value
 execute as @s[tag=azr0_load_game,scores={Azr0_SKILL_17=3}] run attribute @s armor_toughness modifier add mg_azr0:skill_armor_toughness2 1 add_value
 
-
+execute if score @s[tag=azr0_load_game] MG_AZR0_rng_rng7 matches 1.. at @n[tag=mg_azr0,type=marker] positioned ~ ~2 ~-19 run summon marker ~ ~ ~ {Tags:["mg_azr0_MobPortals","mg_azr0_MobPortals_vertical"]}
+execute if score @s[tag=azr0_load_game] MG_AZR0_rng_rng7 matches 1.. as @e[tag=mg_azr0_MobPortals_vertical,limit=2] at @s run tp @s ~ ~ ~ facing ~-1 ~ ~
 execute if score @s[tag=azr0_load_game] MG_AZR0_rng_rng7 matches 1.. run function skyblock:mg/azr0/system/mob/interval/generic
 execute if score @s[tag=azr0_load_game] MG_AZR0_rng_rng7 matches 2.. run function skyblock:mg/azr0/system/mob/interval/generic
 execute if score @s[tag=azr0_load_game] MG_AZR0_rng_rng7 matches 3.. run function skyblock:mg/azr0/system/mob/interval/generic
@@ -218,5 +219,7 @@ execute if score @s[tag=azr0_load_game] MG_AZR0_rng_rng7 matches 67.. run functi
 execute if score @s[tag=azr0_load_game] MG_AZR0_rng_rng7 matches 68.. run function skyblock:mg/azr0/system/mob/interval/generic
 execute if score @s[tag=azr0_load_game] MG_AZR0_rng_rng7 matches 69.. run function skyblock:mg/azr0/system/mob/interval/generic
 execute if score @s[tag=azr0_load_game] MG_AZR0_rng_rng7 matches 70.. run function skyblock:mg/azr0/system/mob/interval/generic
+execute if score @s[tag=azr0_load_game] MG_AZR0_rng_rng7 matches 1.. run kill @e[type=marker,tag=mg_azr0_MobPortals]
+
 
 scoreboard players set @s MG_AZR0_rng_rng7 0
