@@ -20,6 +20,7 @@ scoreboard objectives add MG_AZR0_Timer_rng5 dummy
 scoreboard objectives add MG_AZR0_Timer_rng6 dummy
 scoreboard objectives add MG_AZR0_Timer_rng7 dummy
 scoreboard objectives add MG_AZR0_Timer_rng9 dummy
+scoreboard objectives add MG_AZR0_rng_rng7 dummy
 
 scoreboard players set MG_AZR0_rng rng1 0
 scoreboard players set MG_AZR0_rng rng2 0
