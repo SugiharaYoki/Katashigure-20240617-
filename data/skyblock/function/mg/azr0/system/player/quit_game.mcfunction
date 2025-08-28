@@ -55,6 +55,8 @@ scoreboard players operation @s MG_AZR0_Timer_rng6 = MG_AZR0_Timer rng6
 scoreboard players operation @s MG_AZR0_Timer_rng7 = MG_AZR0_Timer rng7
 scoreboard players operation @s MG_AZR0_Timer_rng9 = MG_AZR0_Timer rng9
 
+scoreboard players operation @s MG_AZR0_rng_rng7 = MG_AZR0_rng rng7
+
 clear @s
 tellraw @a[distance=..230] [{"selector":"@s","color":"white"},{"text":" 中途退出了游戏！","color":"dark_red"}]
 
