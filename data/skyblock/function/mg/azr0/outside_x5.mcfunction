@@ -1,7 +1,8 @@
 
 execute as @a[tag=MG_AZR0PT] at @s unless entity @e[tag=mg_azr0] run function skyblock:mg/azr0/system/player/death
 
-item replace entity @s[tag=!MG_AZR0PT] inventory.13 with nether_star[custom_data={"azr0outside":true},custom_name='{"text":"「开始游戏」","italic":false,"bold":true,"color":"green"}']
+item replace entity @s[tag=!MG_AZR0PT] inventory.13 with nether_star[custom_data={"azr0outside":true},custom_name='{"text":"「开始新游戏」","italic":false,"bold":true,"color":"green"}']
+item replace entity @s[tag=!MG_AZR0PT] inventory.15 with ender_eye[custom_data={"azr0outside":true},custom_name='{"text":"「继续游戏」","italic":false,"bold":true,"color":"green"}']
 
 item replace entity @s[tag=!MG_AZR0PT,scores={Azr0_UPG_OTSD_emerald_wave=0}] inventory.0 with iron_ingot[custom_data={"azr0outside":true},custom_name='{"text":"升级：积少成多","italic":false,"bold":false,"color":"green"}',lore=['{"text":"当前：lv 0","color":"gray","italic":true}','{"text":"下一级：每局结束后获得等同于波数数量的绿宝石","color":"white","italic":false}','{"text":"一次最多获得80绿宝石","color":"white","italic":false}','{"text":"消耗：100影之石","color":"red","italic":true}']]
 item replace entity @s[tag=!MG_AZR0PT,scores={Azr0_UPG_OTSD_emerald_wave=1}] inventory.0 with iron_ingot[custom_data={"azr0outside":true},custom_name='{"text":"升级：积少成多","italic":false,"bold":false,"color":"green"}',lore=['{"text":"当前：lv 1","color":"gray","italic":true}','{"text":"每局结束后获得等同于波数数量的绿宝石","color":"white","italic":true}','{"text":"下一级：数量+ ×0.3","color":"white","italic":false}','{"text":"一次最多获得80绿宝石","color":"white","italic":false}','{"text":"消耗：300影之石","color":"red","italic":true}']]
@@ -59,4 +60,5 @@ execute as @a[distance=0..100,tag=Gaming] unless entity @a[tag=MG_AZR0PT] run ta
 
 execute as @a[distance=0..100,x=125075,y=4,z=-185,dx=5,dy=5,dz=1,tag=!Gaming] run function skyblock:menu/index/multimenu821_teleport_pivotdunggc
 
+execute as @a[distance=0..100,x=125075,y=4,z=-185,dx=5,dy=5,dz=1,tag=Gaming,tag=MG_AZR0PT] run function skyblock:mg/azr0/system/player/quit_game
 

@@ -137,6 +137,7 @@ scoreboard objectives add Azr0_SKILL_37 dummy
 scoreboard objectives add Azr0_SKILL_38 dummy
 scoreboard objectives add Azr0_SKILL_39 dummy
 
+scoreboard objectives add Azr0_Wave dummy
 
 
 #索命连击
