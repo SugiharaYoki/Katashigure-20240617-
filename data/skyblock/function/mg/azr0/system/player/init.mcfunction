@@ -148,6 +148,12 @@ execute as @s[tag=azr0_load_game,scores={Azr0_SKILL_17=2}] run attribute @s armo
 execute as @s[tag=azr0_load_game,scores={Azr0_SKILL_17=3}] run attribute @s armor_toughness modifier add mg_azr0:skill_armor_toughness2 1 add_value
 
 execute if score @s[tag=azr0_load_game] MG_AZR0_rng_rng7 matches 1.. at @n[tag=mg_azr0,type=marker] positioned ~ ~2 ~-19 run summon marker ~ ~ ~ {Tags:["mg_azr0_MobPortals","mg_azr0_MobPortals_vertical"]}
+execute if score @s[tag=azr0_load_game] MG_AZR0_rng_rng7 matches 1.. at @n[tag=mg_azr0,type=marker] positioned ~ ~2 ~15 run summon marker ~ ~ ~ {Tags:["mg_azr0_MobPortals","mg_azr0_MobPortals_vertical"]}
+execute if score @s[tag=azr0_load_game] MG_AZR0_rng_rng7 matches 1.. at @n[tag=mg_azr0,type=marker] at @n[tag=mg_azr0,type=marker] positioned ~-34 ~2 ~ run summon marker ~ ~ ~ {Tags:["mg_azr0_MobPortals","mg_azr0_MobPortals_horizontal"]}
+execute if score @s[tag=azr0_load_game] MG_AZR0_rng_rng7 matches 1.. at @n[tag=mg_azr0,type=marker] at @n[tag=mg_azr0,type=marker] positioned ~34 ~2 ~ run summon marker ~ ~ ~ {Tags:["mg_azr0_MobPortals","mg_azr0_MobPortals_horizontal"]}
+
+
+execute if score @s[tag=azr0_load_game] MG_AZR0_rng_rng7 matches 1.. as @e[tag=mg_azr0_MobPortals_horizontal,limit=2] at @s run tp @s ~ ~ ~ facing ~ ~ ~-1
 execute if score @s[tag=azr0_load_game] MG_AZR0_rng_rng7 matches 1.. as @e[tag=mg_azr0_MobPortals_vertical,limit=2] at @s run tp @s ~ ~ ~ facing ~-1 ~ ~
 execute if score @s[tag=azr0_load_game] MG_AZR0_rng_rng7 matches 1.. run function skyblock:mg/azr0/system/mob/interval/generic
 execute if score @s[tag=azr0_load_game] MG_AZR0_rng_rng7 matches 2.. run function skyblock:mg/azr0/system/mob/interval/generic
