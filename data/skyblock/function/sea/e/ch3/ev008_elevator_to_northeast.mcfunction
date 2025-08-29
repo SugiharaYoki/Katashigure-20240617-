@@ -107,9 +107,12 @@ execute if entity @a[tag=SEAPT,distance=..6] as @s[scores={sea_4temp1=1039}] at 
 execute if entity @a[tag=SEAPT,distance=..6] as @s[scores={sea_4temp1=1039}] at @s if entity @a[tag=!e_i_27] run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
 
 
-execute if entity @a[tag=SEAPT,distance=..6] as @s[scores={sea_4temp1=1239}] at @s if entity @n[tag=sc,scores={sea_player=1..}] run tellraw @a[distance=0..250] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“还是快点出发吧。我们没多少时间。”","color":"white","bold": false}]
+execute unless entity @a[tag=SEAPT,tag=e_i_28,tag=e_i_27] if entity @a[tag=SEAPT,distance=..6] as @s[scores={sea_4temp1=1239}] at @s if entity @n[tag=sc,scores={sea_player=1..}] run tellraw @a[distance=0..250] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“还是快点出发吧。我们没多少时间。”","color":"white","bold": false}]
+execute if entity @a[tag=SEAPT,tag=e_i_28,tag=e_i_27] if entity @a[tag=SEAPT,distance=..6] as @s[scores={sea_4temp1=1239}] at @s if entity @n[tag=sc,scores={sea_player=1..}] run tellraw @a[distance=0..250] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“我已经缓过来了。准备好的话就乘电梯下去吧。做好万全准备。”","color":"white","bold": false}]
 execute if entity @a[tag=SEAPT,distance=..6] as @s[scores={sea_4temp1=1239}] at @s if entity @a[tag=!e_i_27] run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
 
+execute if entity @a[tag=SEAPT,tag=e_i_28,tag=e_i_27] if entity @a[tag=SEAPT,distance=..6] as @s[scores={sea_4temp1=1259}] at @s if entity @n[tag=sc,scores={sea_player=1..}] run tellraw @a[distance=0..250] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“……不是嘴上说说。我不想再眼睁睁看着其他人死去还什么都做不到了。”","color":"white","bold": false}]
+execute if entity @a[tag=SEAPT,tag=e_i_28,tag=e_i_27] if entity @a[tag=SEAPT,distance=..6] as @s[scores={sea_4temp1=1259}] at @s if entity @a[tag=!e_i_27] run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
 
 
 execute if entity @a[tag=SEAPT,distance=..6] run scoreboard players add @s[scores={sea_4temp1=1302..}] sea_4temp1 1
