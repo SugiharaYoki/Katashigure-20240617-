@@ -28,8 +28,11 @@ execute if score @s rng4 matches ..0 run scoreboard players set @s rng2 0
 
 #技能roll
 execute if entity @s[scores={rng4=1..,rng2=0}] run scoreboard players set @s rng4 0
-execute if score @s rng1 matches 100.. if entity @s[scores={rng4=..0,health=600..750},tag=!Phase1] store result score @s rng2 run random value 50..51
-execute if score @s rng1 matches 100.. if entity @s[scores={rng4=..0,health=600..750},tag=Phase1,tag=!Phase2] store result score @s rng2 run random value 1..7
+
+
+execute if score @s rng1 matches 100.. if block 90151 133 -1857 minecraft:skeleton_skull if entity @s[scores={rng4=..0,health=600..799},tag=!Phase1] store result score @s rng2 run random value 50..51
+execute if score @s rng1 matches 100.. unless block 90151 133 -1857 minecraft:skeleton_skull if entity @s[scores={rng4=..0,health=600..740},tag=!Phase1] store result score @s rng2 run random value 50..51
+execute if score @s rng1 matches 100.. if entity @s[scores={rng4=..0,health=600..740},tag=Phase1,tag=!Phase2] store result score @s rng2 run random value 1..7
 execute if score @s rng1 matches 100.. if entity @s[scores={rng4=..0,health=400..599},tag=Phase1,tag=!Phase2] store result score @s rng2 run random value 1..9
 execute if score @s rng1 matches 100.. if entity @s[scores={rng4=..0,health=..399},tag=!Phase2] store result score @s rng2 run random value 50..51
 execute if score @s rng1 matches 100.. if entity @s[scores={rng4=..0,health=380..780},tag=Phase2,tag=!Phase3] store result score @s rng2 run random value 1..9

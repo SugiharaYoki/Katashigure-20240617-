@@ -335,8 +335,11 @@ execute if score SEA_ch6_event rng5 matches 20108.. as @n[tag=SEAboss6,tag=Phase
 execute if score SEA_ch6_event rng5 matches 20078 positioned 90064 22 -1815 run data modify entity @n[tag=SEAboss6] NoAI set value 0b
 execute if score SEA_ch6_event rng5 matches 20030 as @a[scores={SEAPT_member=1}] at @s run tellraw @a[distance=0..150] [{"text":"？？？：","color":"red","bold": true},{"text":"\n“既然一路走至此处，那吾也该报上名号了。”","color":"white","bold": false}]
 execute if score SEA_ch6_event rng5 matches 20047 as @a[scores={SEAPT_member=1}] at @s run tellraw @a[distance=0..150] [{"text":"权之执理：","color":"red","bold": true},{"text":"\n“吾乃拉贵尔大人麾下的主天使：权之执理。吾之职责，是焚毁所有妄图沾染天使神力的肮脏之物。”","color":"white","bold": false}]
-execute if score SEA_ch6_event rng5 matches 20064 as @a[scores={SEAPT_member=1}] at @s run tellraw @a[distance=0..150] [{"text":"权之执理：","color":"red","bold": true},{"text":"\n“无妨，吾会令汝认知到自己的愚昧与无知。”","color":"white","bold": false}]
-execute if score SEA_ch6_event rng5 matches 20078 as @a[scores={SEAPT_member=1}] at @s run tellraw @a[distance=0..150] [{"text":"权之执理：","color":"red","bold": true},{"text":"\n“纵使天穹的雷霆无法落下，吾也能将汝二人如同蝼蚁般碾碎。”","color":"white","bold": false}]
+execute if score SEA_ch6_event rng5 matches 20064 as @a[scores={SEAPT_member=1}] at @s unless block 90151 133 -1857 minecraft:skeleton_skull run tellraw @a[distance=0..150] [{"text":"权之执理：","color":"red","bold": true},{"text":"\n“无妨，吾会令汝认知到自己的愚昧与无知。”","color":"white","bold": false}]
+execute if score SEA_ch6_event rng5 matches 20078 as @a[scores={SEAPT_member=1}] at @s unless block 90151 133 -1857 minecraft:skeleton_skull run tellraw @a[distance=0..150] [{"text":"权之执理：","color":"red","bold": true},{"text":"\n“纵使天穹的雷霆无法落下，吾也能将汝二人如同蝼蚁般碾碎。”","color":"white","bold": false}]
+
+execute if score SEA_ch6_event rng5 matches 20064 as @a[scores={SEAPT_member=1}] at @s if block 90151 133 -1857 minecraft:skeleton_skull run tellraw @a[distance=0..150] [{"text":"权之执理：","color":"red","bold": true},{"text":"\n“……岂有此理，岂有此理！！就凭你也配篡夺雷米尔的权能？！”","color":"white","bold": false}]
+execute if score SEA_ch6_event rng5 matches 20078 as @a[scores={SEAPT_member=1}] at @s if block 90151 133 -1857 minecraft:skeleton_skull run tellraw @a[distance=0..150] [{"text":"权之执理：","color":"red","bold": true},{"text":"\n“这是踩在天使的头上挑衅，汝等应当赎罪，死吧！！”","color":"white","bold": false}]
 
 execute if score SEA_ch6_event rng5 matches 20058 run bossbar add 9066602 "焚渊的风暴 - 权之执理"
 execute if score SEA_ch6_event rng5 matches 20058 run bossbar set minecraft:9066602 color purple

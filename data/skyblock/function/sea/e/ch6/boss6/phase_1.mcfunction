@@ -44,6 +44,7 @@ execute if score @s rng4 matches 24 as @s at @s run fill ~5 ~ ~4 ~-5 ~ ~-5 air r
 execute if score @s rng4 matches 25 as @s at @s run fill ~6 ~ ~4 ~-6 ~ ~-6 air replace fire
 execute if score @s rng4 matches 26 as @s at @s run fill ~7 ~ ~4 ~-7 ~ ~-7 air replace fire
 
+
 execute if score @s rng4 matches 60 as @s at @s run data modify entity @s NoAI set value 0b
 execute if score @s rng4 matches 60 run playsound entity.breeze.shoot hostile @a ~ ~ ~ 3 1.2
 execute if score @s rng4 matches 60 run playsound entity.breeze.shoot hostile @a ~ ~ ~ 3 0.9

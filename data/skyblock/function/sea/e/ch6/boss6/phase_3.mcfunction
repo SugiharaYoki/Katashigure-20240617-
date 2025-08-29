@@ -6,6 +6,8 @@ execute if score @s rng4 matches 2 run effect give @s levitation 5 1 true
 
 execute if score @s rng4 matches 5..8 positioned 90059 26 -1805 facing 90059 26 -1805 run tp ^ ^ ^2
 
+execute if score @s rng4 matches 30 run scoreboard players add @s rng4 20 
+
 execute if score @s rng4 matches 60 positioned 90059 20 -1805 run summon marker ~ 21.0 ~ {Tags:["SEA_boss6_flame_anchor"]}
 execute if score @s rng4 matches 60.. positioned 90059 20 -1805 run particle electric_spark ~ ~2 ~ 3 8 3 0 30
 execute if score @s rng4 matches 100 positioned 90059 20 -1805 run tp @s ~ ~ ~
