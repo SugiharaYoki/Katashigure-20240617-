@@ -178,12 +178,14 @@ execute if score SEA_ch6_event sea_4temp4 matches 1770 as @n[tag=SEAedwina] at @
 execute if score SEA_ch6_event sea_4temp4 matches 1770 as @n[tag=SEAedwina] at @s positioned 90052 20 -1823 run playsound entity.generic.explode block @a ~ ~ ~ 2 1.1
 execute if score SEA_ch6_event sea_4temp4 matches 1770 as @n[tag=SEAedwina] at @s positioned 90052 20 -1807 run playsound entity.generic.explode block @a ~ ~ ~ 2 1.1
 execute if score SEA_ch6_event sea_4temp4 matches 1770 as @n[tag=SEAedwina] at @s positioned 90050 20 -1815 run playsound entity.generic.explode block @a ~ ~ ~ 2 1.1
-execute if score SEA_ch6_event sea_4temp4 matches 1780 as @n[tag=SEAedwina] at @s positioned 90052 20 -1823 run particle explosion ~ ~3 ~ 1 0.5 1 0 2
-execute if score SEA_ch6_event sea_4temp4 matches 1780 as @n[tag=SEAedwina] at @s positioned 90052 20 -1807 run particle explosion ~ ~3 ~ 1 0.5 1 0 2
-execute if score SEA_ch6_event sea_4temp4 matches 1780 as @n[tag=SEAedwina] at @s positioned 90050 20 -1815 run particle explosion ~ ~3 ~ 1 0.5 1 0 2
+execute if score SEA_ch6_event sea_4temp4 matches 1780..1782 as @n[tag=SEAedwina] at @s positioned 90052 20 -1823 run particle explosion_emitter ~ ~3 ~ 3 0.5 3 0 2
+execute if score SEA_ch6_event sea_4temp4 matches 1780..1782 as @n[tag=SEAedwina] at @s positioned 90052 20 -1807 run particle explosion_emitter ~ ~3 ~ 3 0.5 3 0 2
+execute if score SEA_ch6_event sea_4temp4 matches 1780..1782 as @n[tag=SEAedwina] at @s positioned 90050 20 -1815 run particle explosion_emitter ~ ~3 ~ 3 0.5 3 0 2
 execute if score SEA_ch6_event sea_4temp4 matches 1780 as @n[tag=SEAedwina] at @s positioned 90052 20 -1823 run playsound entity.generic.explode block @a ~ ~ ~ 2 1.1
 execute if score SEA_ch6_event sea_4temp4 matches 1780 as @n[tag=SEAedwina] at @s positioned 90052 20 -1807 run playsound entity.generic.explode block @a ~ ~ ~ 2 1.1
 execute if score SEA_ch6_event sea_4temp4 matches 1780 as @n[tag=SEAedwina] at @s positioned 90050 20 -1815 run playsound entity.generic.explode block @a ~ ~ ~ 2 1.1
+execute if score SEA_ch6_event sea_4temp4 matches 1781 as @n[tag=SEAedwina] at @s positioned 90050 20 -1815 run playsound entity.generic.explode block @a ~ ~ ~ 2 1.2
+execute if score SEA_ch6_event sea_4temp4 matches 1782 as @n[tag=SEAedwina] at @s positioned 90050 20 -1815 run playsound entity.generic.explode block @a ~ ~ ~ 2 1.3
 
 
 execute if score SEA_ch6_event sea_4temp4 matches 1660 as @a[tag=SEAPT] at @s positioned ~3 ~ ~ run summon marker ~ 21.0 ~ {Tags:["SEA_boss6_flame_anchor"]}
