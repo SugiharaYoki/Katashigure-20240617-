@@ -7,9 +7,6 @@ execute unless entity @s[advancements={skyblock:sea/doc/15=true,skyblock:sea/doc
 execute unless entity @s[advancements={skyblock:sea/doc/15=true,skyblock:sea/doc/16=true,skyblock:sea/doc/17=true,skyblock:sea/doc/18=true,skyblock:sea/doc/19=true}] run tellraw @s[scores={sea_progress=6..}] [{"text":"1项未解锁：集齐物资层厨师团队所留下的全部笔记","color":"gray","bold": true}]
 execute if entity @s[advancements={skyblock:sea/doc/15=true,skyblock:sea/doc/16=true,skyblock:sea/doc/17=true,skyblock:sea/doc/18=true,skyblock:sea/doc/19=true}] run tellraw @s [{"text":"效果：","color":"gold","bold": true},{"text":"防具第1起始点的升级会始终点亮最左两格","color":"white","bold": false}]
 
-execute unless entity @s[advancements={skyblock:sea/doc/15=true,skyblock:sea/doc/16=true,skyblock:sea/doc/17=true,skyblock:sea/doc/18=true,skyblock:sea/doc/19=true}] run tellraw @s[scores={sea_progress=..5}] [{"text":"未知的1项升级","color":"gray","bold": true}]
-execute unless entity @s[advancements={skyblock:sea/doc/15=true,skyblock:sea/doc/16=true,skyblock:sea/doc/17=true,skyblock:sea/doc/18=true,skyblock:sea/doc/19=true}] run tellraw @s[scores={sea_progress=6..}] [{"text":"1项未解锁：集齐物资层厨师团队所留下的全部笔记","color":"gray","bold": true}]
-execute if entity @s[advancements={skyblock:sea/doc/15=true,skyblock:sea/doc/16=true,skyblock:sea/doc/17=true,skyblock:sea/doc/18=true,skyblock:sea/doc/19=true}] run tellraw @s [{"text":"效果：","color":"gold","bold": true},{"text":"防具第1起始点的升级会始终点亮最左两格","color":"white","bold": false}]
 
 execute if entity @s[scores={sea_progress=..14}] run tellraw @s [{"text":"未知的4项升级","color":"gray","bold": true}]
 execute if entity @s[scores={sea_progress=15..17}] run tellraw @s [{"text":"4项未解锁：通关游戏的Normal结局","color":"gray","bold": true}]
