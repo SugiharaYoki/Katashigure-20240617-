@@ -26,6 +26,8 @@ execute if score @s rng4 matches 102 run effect give @s instant_health 1 4 true
 execute if score @s rng4 matches 102 run effect give @s resistance infinite 0 true
 
 execute if score @s[tag=!Phase2] rng4 matches 102 run tag @s add Phase2
+execute if score @s rng2 matches 102.. run scoreboard players set @s rng2 0
+
 
 
 
