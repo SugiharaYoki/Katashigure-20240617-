@@ -224,7 +224,6 @@ execute as @n[tag=SEAmarshall,scores={sea_4temp1=539..}] at @s if entity @a[tag=
 #execute unless block 90131 161 144 air as @a[tag=SEAPT,tag=!e_i_27] if block ~ ~-1 ~ polished_tuff run function skyblock:sea/e/ch3/ev007_dorm_password_is_correct
 
 execute as @n[tag=SEAyuehan] at @s unless block 90131 161 144 air run function skyblock:sea/e/ch3/ev008_elevator_to_northeast
-execute as @n[tag=SEAyuehan] at @s unless entity @a[tag=e_i_25] unless block 90131 161 144 air run function skyblock:sea/e/ch3/ev008_elevator_to_northeast_b
 
 
 execute as @a[tag=SEAPT,x=90138,y=103,z=100,distance=0..2.7,tag=!e_i_29] at @s run tellraw @s {"text": "我有预感……去了更下层后就很难再回来了。做好万全的准备再前进吧。","color": "gray"}

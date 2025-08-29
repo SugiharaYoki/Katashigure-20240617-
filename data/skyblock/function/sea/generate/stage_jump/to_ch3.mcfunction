@@ -43,5 +43,5 @@ execute if entity @s[scores={SEAPT_setting_yuehan=2}] run setblock 90101 149 131
 execute if entity @s[scores={SEAPT_setting_yuehan=2}] run setblock 90103 149 131 minecraft:red_candle[candles=3,lit=false]
 execute if entity @s[scores={SEAPT_setting_yuehan=2}] run tag @a add e_i_25
 execute if entity @s[scores={SEAPT_setting_yuehan=2}] run setblock 90102 150 130 air
-
-
+execute if entity @s[scores={SEAPT_setting_yuehan=2}] run scoreboard players set @n[tag=sc] sea_4temp3 9999
+execute if entity @s[scores={SEAPT_setting_yuehan=2}] run fill 90124 144 117 90124 145 117 minecraft:air destroy
