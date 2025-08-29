@@ -215,13 +215,13 @@ execute if score SEA_ch6_event rng5 matches 15054 as @p[tag=SEAPT] at @s run eff
 execute if score SEA_ch6_event rng5 matches 15059 as @p[tag=SEAPT] at @s run effect give @s slowness 500 11 true
 execute if score SEA_ch6_event rng5 matches 15130 as @p[tag=SEAPT] at @s run effect clear @s slowness
 execute if score SEA_ch6_event rng5 matches 15130 as @p[tag=SEAPT] at @s run effect clear @s darkness
-execute if score SEA_ch6_event rng5 matches 15130 as @p[tag=SEAPT] at @s run particle totem_of_undying ~ ~1 ~ 0.4 0.8 0.4 1.7 1000
-execute if score SEA_ch6_event rng5 matches 15130 as @p[tag=SEAPT] at @s run particle minecraft:flash ~ ~1 ~ 4 7 4 0.3 20
-execute if score SEA_ch6_event rng5 matches 15130 as @p[tag=SEAPT] at @s run playsound item.totem.use master @a ~ ~ ~ 2 0.5
-execute if score SEA_ch6_event rng5 matches 15130 as @p[tag=SEAPT] at @s run playsound item.totem.use master @a ~ ~ ~ 2 0.6
-execute if score SEA_ch6_event rng5 matches 15130 as @p[tag=SEAPT] at @s run playsound item.totem.use master @a ~ ~ ~ 2 0.7
+execute if score SEA_ch6_event rng5 matches 15130 as @p[tag=SEAPT] at @s if score SEA_ch5_event_fiona_favor rng1 matches 10.. run particle totem_of_undying ~ ~1 ~ 0.4 0.8 0.4 1.7 1000
+execute if score SEA_ch6_event rng5 matches 15130 as @p[tag=SEAPT] at @s if score SEA_ch5_event_fiona_favor rng1 matches 10.. run particle minecraft:flash ~ ~1 ~ 4 7 4 0.3 20
+execute if score SEA_ch6_event rng5 matches 15130 as @p[tag=SEAPT] at @s if score SEA_ch5_event_fiona_favor rng1 matches 10.. run playsound item.totem.use master @a ~ ~ ~ 2 0.5
+execute if score SEA_ch6_event rng5 matches 15130 as @p[tag=SEAPT] at @s if score SEA_ch5_event_fiona_favor rng1 matches 10.. run playsound item.totem.use master @a ~ ~ ~ 2 0.6
+execute if score SEA_ch6_event rng5 matches 15130 as @p[tag=SEAPT] at @s if score SEA_ch5_event_fiona_favor rng1 matches 10.. run playsound item.totem.use master @a ~ ~ ~ 2 0.7
 execute if score SEA_ch6_event rng5 matches 15130 as @p[tag=SEAPT] at @s run fill 90045 29 -1785 90046 31 -1784 air
-execute if score SEA_ch6_event rng5 matches 15130 as @a[tag=SEAPT] at @s run attribute @s minecraft:max_health modifier add seaboss6:health 20 add_value
+execute if score SEA_ch6_event rng5 matches 15130 as @a[tag=SEAPT] at @s if score SEA_ch5_event_fiona_favor rng1 matches 10.. run attribute @s minecraft:max_health modifier add seaboss6:health 20 add_value
 execute if score SEA_ch6_event rng5 matches 15130 as @a[tag=SEAPT] at @s run effect give @s instant_health 1 19 true
 execute if score SEA_ch6_event rng5 matches 15130 as @p[tag=SEAPT] at @s run playsound minecraft:garden2.chapter_title master @a ~ ~ ~ 2 1
 execute if score SEA_ch6_event rng5 matches 15100 as @a[scores={SEAPT_member=1}] at @s run playsound minecraft:entity.ender_dragon.flap player @a ~ ~ ~ 1 0.5
@@ -229,10 +229,15 @@ execute if score SEA_ch6_event rng5 matches 15100 as @a[scores={SEAPT_member=1}]
 execute if score SEA_ch6_event rng5 matches 15100 as @a[scores={SEAPT_member=1}] at @s run playsound minecraft:entity.enderman.stare ambient @a ~ ~ ~ 1 0.8
 execute if score SEA_ch6_event rng5 matches 15099 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“不是我的错……不是我的错！！！这些全都不是我的错，为什么受到惩罚的会是我？！为什么！！！”","color":"white"}]
 execute if score SEA_ch6_event rng5 matches 15117 as @a[scores={SEAPT_member=1}] at @s run stopsound @s
-execute if score SEA_ch6_event rng5 matches 15117 as @a[scores={SEAPT_member=1}] at @s run tellraw @a[distance=0..150] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“所以，在这最后的时间里，你想要怎样死？”","color":"white","bold": false}]
-execute if score SEA_ch6_event rng5 matches 15146 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“我要……活下去。”","color":"white"}]
-execute if score SEA_ch6_event rng5 matches 15160 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“我……不会放弃。……我已经一路走到了这里，我失去了太多，没有任何可以失去的了。”","color":"white"}]
-execute if score SEA_ch6_event rng5 matches 15174 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“我见证了你们的结局。就算如此，我也不会驻足原地。”","color":"white"}]
+execute if score SEA_ch6_event rng5 matches 15117 if score SEA_ch5_event_fiona_favor rng1 matches ..9 as @a[scores={SEAPT_member=1}] at @s run tellraw @a[distance=0..150] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“你打算……就永远看戏吗？”","color":"white","bold": false}]
+execute if score SEA_ch6_event rng5 matches 15146 if score SEA_ch5_event_fiona_favor rng1 matches ..9 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“我不该被自己的执念带着跑……”","color":"white"}]
+execute if score SEA_ch6_event rng5 matches 15160 if score SEA_ch5_event_fiona_favor rng1 matches ..9 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“抱歉，菲尔娜。我没能保护好你……我明明是能够救你的……”","color":"white"}]
+execute if score SEA_ch6_event rng5 matches 15174 if score SEA_ch5_event_fiona_favor rng1 matches ..9 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“……我会尝试弥补我的所有过错。”","color":"white"}]
+
+execute if score SEA_ch6_event rng5 matches 15117 if score SEA_ch5_event_fiona_favor rng1 matches 10.. as @a[scores={SEAPT_member=1}] at @s run tellraw @a[distance=0..150] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“所以，在这最后的时间里，你想要怎样死？”","color":"white","bold": false}]
+execute if score SEA_ch6_event rng5 matches 15146 if score SEA_ch5_event_fiona_favor rng1 matches 10.. as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“我要……活下去。”","color":"white"}]
+execute if score SEA_ch6_event rng5 matches 15160 if score SEA_ch5_event_fiona_favor rng1 matches 10.. as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“我……不会放弃。……我已经一路走到了这里，我失去了太多，没有任何可以失去的了。”","color":"white"}]
+execute if score SEA_ch6_event rng5 matches 15174 if score SEA_ch5_event_fiona_favor rng1 matches 10.. as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“我见证了你们的结局。就算如此，我也不会驻足原地。”","color":"white"}]
 
 
 execute if score SEA_ch6_event rng5 matches 8095..19999 if entity @a[tag=SEAPT,tag=!SEAPF,x=90044,y=20,z=-1824,dx=16,dy=5,dz=16] run scoreboard players set SEA_ch6_event rng5 20000
@@ -256,7 +261,7 @@ execute if score SEA_ch6_event rng5 matches 20001 run clear @a[tag=SEAPT] gold_i
 execute if score SEA_ch6_event rng5 matches 20001 run clear @a[tag=SEAPT] emerald_block
 execute if score SEA_ch6_event rng5 matches 20001 run fill 90063 19 -1795 90055 30 -1795 minecraft:purple_stained_glass replace minecraft:structure_void
 execute if score SEA_ch6_event rng5 matches 20001 as @a[tag=SEAPT] at @s run effect give @s strength infinite 4 true
-execute if score SEA_ch6_event rng5 matches 20001 as @a[tag=SEAPT] at @s run attribute @s minecraft:max_health modifier add seaboss6:health 20 add_value
+execute if score SEA_ch6_event rng5 matches 20001 if score SEA_ch5_event_fiona_favor rng1 matches 10.. as @a[tag=SEAPT] at @s run attribute @s minecraft:max_health modifier add seaboss6:health 20 add_value
 execute if score SEA_ch6_event rng5 matches 20001 as @a[tag=SEAPT] at @s run effect give @s instant_health 1 19 true
 
 execute if score SEA_ch6_event rng5 matches 20007 run setblock 90060 20 -1823 minecraft:redstone_lamp[lit=true]
