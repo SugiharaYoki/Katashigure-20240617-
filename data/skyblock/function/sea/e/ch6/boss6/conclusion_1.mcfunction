@@ -414,7 +414,7 @@ execute if score SEA_ch6_event sea_4temp4 matches 13250 as @p[tag=SEAPT] at @s r
 execute if score SEA_ch6_event sea_4temp4 matches 13450 as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s run playsound entity.villager.ambient neutral @s ~ ~ ~ 1 1.4
 execute if score SEA_ch6_event sea_4temp4 matches 13450 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“你拥有更重要的事情要做。我一直以来是如此迟钝……以至于我到现在才发现这件事。”","color":"white","bold": false}]
 execute if score SEA_ch6_event sea_4temp4 matches 13650 as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s run playsound entity.villager.ambient neutral @s ~ ~ ~ 1 1.4
-execute if score SEA_ch6_event sea_4temp4 matches 13650 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“圣水晶……你知道圣水晶在哪里吗？”","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 13650 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“破局的关键始终都是圣水晶……你知道圣水晶在哪里吗？”","color":"white","bold": false}]
 execute if score SEA_ch6_event sea_4temp4 matches 13750 as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s run playsound entity.villager.ambient neutral @s ~ ~ ~ 1 1.4
 execute if score SEA_ch6_event sea_4temp4 matches 13750 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“在你刚踏上甲板的时候，能在甲板中心那片铜制金属架的外围找到三个按钮。”","color":"white","bold": false}]
 execute if score SEA_ch6_event sea_4temp4 matches 13880 as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s run playsound entity.villager.ambient neutral @s ~ ~ ~ 1 1.4
