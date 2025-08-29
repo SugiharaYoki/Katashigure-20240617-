@@ -14,7 +14,7 @@ give @a[tag=SEAPT] iron_ingot 20
 
 
 
-
+execute if entity @s[scores={SEAPT_setting_trueend=2}] run setblock 90151 133 -1857 minecraft:skeleton_skull
 
 
 
