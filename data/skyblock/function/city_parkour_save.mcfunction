@@ -46,3 +46,12 @@ execute if block ~ ~-1 ~ emerald_block if block ~ ~-2 ~ green_concrete if block 
 execute if block ~ ~-1 ~ emerald_block if block ~ ~-2 ~ green_concrete if block ~ ~-3 ~ blue_concrete if score @s parkour_stage matches ..42 run scoreboard players set @s parkour_stage 43
 execute if block ~ ~-1 ~ emerald_block if block ~ ~-2 ~ green_concrete if block ~ ~-3 ~ purple_concrete if score @s parkour_stage matches ..43 run scoreboard players set @s parkour_stage 44
 execute if block ~ ~-1 ~ emerald_block if block ~ ~-2 ~ green_concrete if block ~ ~-3 ~ black_concrete if score @s parkour_stage matches ..44 run scoreboard players set @s parkour_stage 45
+execute if block ~ ~-1 ~ emerald_block if block ~ ~-2 ~ cyan_concrete if block ~ ~-3 ~ white_concrete if score @s parkour_stage matches ..45 run scoreboard players set @s parkour_stage 46
+execute if block ~ ~-1 ~ emerald_block if block ~ ~-2 ~ cyan_concrete if block ~ ~-3 ~ red_concrete if score @s parkour_stage matches ..46 run scoreboard players set @s parkour_stage 47
+execute if block ~ ~-1 ~ emerald_block if block ~ ~-2 ~ cyan_concrete if block ~ ~-3 ~ orange_concrete if score @s parkour_stage matches ..47 run scoreboard players set @s parkour_stage 48
+execute if block ~ ~-1 ~ emerald_block if block ~ ~-2 ~ cyan_concrete if block ~ ~-3 ~ yellow_concrete if score @s parkour_stage matches ..48 run scoreboard players set @s parkour_stage 49
+execute if block ~ ~-1 ~ emerald_block if block ~ ~-2 ~ cyan_concrete if block ~ ~-3 ~ green_concrete if score @s parkour_stage matches ..49 run scoreboard players set @s parkour_stage 50
+execute if block ~ ~-1 ~ emerald_block if block ~ ~-2 ~ cyan_concrete if block ~ ~-3 ~ cyan_concrete if score @s parkour_stage matches ..50 run scoreboard players set @s parkour_stage 51
+execute if block ~ ~-1 ~ emerald_block if block ~ ~-2 ~ cyan_concrete if block ~ ~-3 ~ blue_concrete if score @s parkour_stage matches ..51 run scoreboard players set @s parkour_stage 52
+execute if block ~ ~-1 ~ emerald_block if block ~ ~-2 ~ cyan_concrete if block ~ ~-3 ~ purple_concrete if score @s parkour_stage matches ..52 run scoreboard players set @s parkour_stage 53
+execute if block ~ ~-1 ~ emerald_block if block ~ ~-2 ~ cyan_concrete if block ~ ~-3 ~ black_concrete if score @s parkour_stage matches ..53 run scoreboard players set @s parkour_stage 54
