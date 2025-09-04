@@ -113,16 +113,16 @@ execute if entity @s[scores={Azr_bread_recharge_level=7,Azr0_UPG_bread_quality=4
 execute if entity @s[scores={Azr_bread_recharge=4000..}] run scoreboard players add @s Azr_bread_recharge_level 1
 execute if entity @s[scores={Azr_bread_recharge=4000..}] run scoreboard players set @s Azr_bread_recharge 0
 
-#execute if entity @s[scores={Azr_usebread1=1..}] run scoreboard players remove @s Azr_bread_recharge_level 1
-#execute if entity @s[scores={Azr_usebread1=1..}] run scoreboard players set @s Azr_usebread1 0
-#execute if entity @s[scores={Azr_usebread2=1..}] run scoreboard players remove @s Azr_bread_recharge_level 1
-#execute if entity @s[scores={Azr_usebread2=1..}] run scoreboard players set @s Azr_usebread2 0
-#execute if entity @s[scores={Azr_usebread3=1..}] run scoreboard players remove @s Azr_bread_recharge_level 1
-#execute if entity @s[scores={Azr_usebread3=1..}] run scoreboard players set @s Azr_usebread3 0
-#execute if entity @s[scores={Azr_usebread4=1..}] run scoreboard players remove @s Azr_bread_recharge_level 1
-#execute if entity @s[scores={Azr_usebread4=1..}] run scoreboard players set @s Azr_usebread4 0
-#execute if entity @s[scores={Azr_usebread5=1..}] run scoreboard players remove @s Azr_bread_recharge_level 1
-#execute if entity @s[scores={Azr_usebread5=1..}] run scoreboard players set @s Azr_usebread5 0
+execute if entity @s[scores={Azr_usebread1=1..}] run scoreboard players remove @s Azr_bread_recharge_level 1
+execute if entity @s[scores={Azr_usebread1=1..}] run scoreboard players set @s Azr_usebread1 0
+execute if entity @s[scores={Azr_usebread2=1..}] run scoreboard players remove @s Azr_bread_recharge_level 1
+execute if entity @s[scores={Azr_usebread2=1..}] run scoreboard players set @s Azr_usebread2 0
+execute if entity @s[scores={Azr_usebread3=1..}] run scoreboard players remove @s Azr_bread_recharge_level 1
+execute if entity @s[scores={Azr_usebread3=1..}] run scoreboard players set @s Azr_usebread3 0
+execute if entity @s[scores={Azr_usebread4=1..}] run scoreboard players remove @s Azr_bread_recharge_level 1
+execute if entity @s[scores={Azr_usebread4=1..}] run scoreboard players set @s Azr_usebread4 0
+execute if entity @s[scores={Azr_usebread5=1..}] run scoreboard players remove @s Azr_bread_recharge_level 1
+execute if entity @s[scores={Azr_usebread5=1..}] run scoreboard players set @s Azr_usebread5 0
 
 
 execute at @s[tag=hasSkills] run function skyblock:azr/system/player/skills/chainkill/chain_kill
