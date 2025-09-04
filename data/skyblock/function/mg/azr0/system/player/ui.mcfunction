@@ -61,13 +61,13 @@ execute if score @s rng1 matches 5 run item replace entity @s hotbar.7 with neth
 execute if score @s rng1 matches 6 run item replace entity @s hotbar.7 with nether_star 6
 execute if score @s rng1 matches 7.. run item replace entity @s hotbar.7 with nether_star 7
 
-execute if entity @s[scores={Azr0_UPG_bread_storage=0,Azr_bread_recharge_level=1..,Azr_bread_recharge=1..}] run scoreboard players set @s Azr_bread_recharge 0
-execute if entity @s[scores={Azr0_UPG_bread_storage=1,Azr_bread_recharge_level=2..,Azr_bread_recharge=1..}] run scoreboard players set @s Azr_bread_recharge 0
-execute if entity @s[scores={Azr0_UPG_bread_storage=2,Azr_bread_recharge_level=3..,Azr_bread_recharge=1..}] run scoreboard players set @s Azr_bread_recharge 0
-execute if entity @s[scores={Azr0_UPG_bread_storage=3,Azr_bread_recharge_level=4..,Azr_bread_recharge=1..}] run scoreboard players set @s Azr_bread_recharge 0
-execute if entity @s[scores={Azr0_UPG_bread_storage=4,Azr_bread_recharge_level=5..,Azr_bread_recharge=1..}] run scoreboard players set @s Azr_bread_recharge 0
-execute if entity @s[scores={Azr0_UPG_bread_storage=5,Azr_bread_recharge_level=6..,Azr_bread_recharge=1..}] run scoreboard players set @s Azr_bread_recharge 0
-execute if entity @s[scores={Azr0_UPG_bread_storage=6,Azr_bread_recharge_level=7..,Azr_bread_recharge=1..}] run scoreboard players set @s Azr_bread_recharge 0
+execute if entity @s[scores={Azr0_UPG_bread_storage=0,Azr_bread_recharge_level=1..}] run scoreboard players set @s Azr_bread_recharge 0
+execute if entity @s[scores={Azr0_UPG_bread_storage=1,Azr_bread_recharge_level=2..}] run scoreboard players set @s Azr_bread_recharge 0
+execute if entity @s[scores={Azr0_UPG_bread_storage=2,Azr_bread_recharge_level=3..}] run scoreboard players set @s Azr_bread_recharge 0
+execute if entity @s[scores={Azr0_UPG_bread_storage=3,Azr_bread_recharge_level=4..}] run scoreboard players set @s Azr_bread_recharge 0
+execute if entity @s[scores={Azr0_UPG_bread_storage=4,Azr_bread_recharge_level=5..}] run scoreboard players set @s Azr_bread_recharge 0
+execute if entity @s[scores={Azr0_UPG_bread_storage=5,Azr_bread_recharge_level=6..}] run scoreboard players set @s Azr_bread_recharge 0
+execute if entity @s[scores={Azr0_UPG_bread_storage=6,Azr_bread_recharge_level=7..}] run scoreboard players set @s Azr_bread_recharge 0
 execute if entity @s[scores={Azr0_UPG_bread_recharge=0..}] run scoreboard players add @s Azr_bread_recharge 1
 execute if entity @s[scores={Azr0_UPG_bread_recharge=1..}] run scoreboard players add @s Azr_bread_recharge 1
 execute if entity @s[scores={Azr0_UPG_bread_recharge=2..}] run scoreboard players add @s Azr_bread_recharge 1
