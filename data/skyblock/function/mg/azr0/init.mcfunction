@@ -51,7 +51,11 @@ scoreboard objectives add Azr_emerald dummy
 scoreboard objectives add Azr_diamond dummy
 scoreboard objectives add Azr_bread_recharge dummy
 scoreboard objectives add Azr_bread_recharge_level dummy
-scoreboard objectives add Azr_usebread minecraft.used:minecraft.bread
+scoreboard objectives add Azr_usebread1 minecraft.used:minecraft.bread
+scoreboard objectives add Azr_usebread2 minecraft.used:minecraft.cooked_chicken
+scoreboard objectives add Azr_usebread3 minecraft.used:minecraft.cooked_salmon
+scoreboard objectives add Azr_usebread4 minecraft.used:minecraft.cooked_beef
+scoreboard objectives add Azr_usebread5 minecraft.used:minecraft.golden_carrot
 scoreboard objectives add Azr_isDead deathCount
 
 scoreboard objectives add Azr0_arrow dummy
