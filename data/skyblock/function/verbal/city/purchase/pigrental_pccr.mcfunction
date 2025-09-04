@@ -23,4 +23,7 @@ execute if entity @n[tag=sc,scores={PigCarCount=..40}] as @s at @s[tag=purchases
 execute if entity @n[tag=sc,scores={PigCarCount=..40}] run tellraw @s [{"text":"如今持有FSB： ","color":"gold"},{"score":{"name":"@s","objective":"Perm_PersonFSB"}}]
 execute if entity @n[tag=sc,scores={PigCarCount=..40}] as @s at @s[tag=purchasesuccess] run summon pig -9 54 -28 {Tags:[PigCar],Saddle:1b,Rotation:[-90f,0f],attributes:[{id:"max_health",base:80.0},{id:"movement_speed",base:0.5}],Health:80.0f,CustomName:'"豪车"'}
 tag @s remove purchasesuccess
+
+execute as @e[tag=PigCar,type=pig] at @s run effect give @s minecraft:speed infinite 5 true
+
 scoreboard players set @s MultiMenu 0

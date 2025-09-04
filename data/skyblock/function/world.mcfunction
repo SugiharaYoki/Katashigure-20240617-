@@ -20,7 +20,7 @@ execute if score world_loop rng2 matches 20.. run scoreboard players set world_l
 #World NewPlayer注册机
 execute as @p[tag=!Registered] run function skyblock:newcomer_registration
 
-execute as @e[tag=PigCar] at @s if entity @a[distance=0..2] run effect give @s minecraft:speed 5 5 true
+
 execute as @a[tag=Shop_CSSON,tag=!Gaming,distance=0..9000] at @s unless entity @s[x=-10137,dx=10000,y=40,dy=20,z=-121,dz=6] run effect give @s minecraft:speed 2 9 true
 function ukiyo_nrb:core20
 
