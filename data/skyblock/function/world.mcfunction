@@ -22,7 +22,7 @@ execute as @p[tag=!Registered] run function skyblock:newcomer_registration
 
 
 execute as @a[tag=Shop_CSSON,tag=!Gaming,distance=0..9000] at @s unless entity @s[x=-10137,dx=10000,y=40,dy=20,z=-121,dz=6] run effect give @s minecraft:speed 2 9 true
-function ukiyo_nrb:core20
+execute if block -52 55 -178 heavy_core run function ukiyo_nrb:core20
 
 #多功能菜单
 execute as @a at @s run function skyblock:world_system_multimenu
