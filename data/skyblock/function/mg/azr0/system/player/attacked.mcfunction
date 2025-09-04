@@ -20,6 +20,13 @@ execute if items entity @s[scores={Azr0_SKILL_26=1..}] weapon.mainhand *[custom_
 
 scoreboard players set @s Azr0_dealt_damage 0
 
+execute if entity @s[scores={Azr0_UPG_axe_damage=2..}] if items entity @s weapon.mainhand *[custom_data={"azr0weapon_axe":true}] run scoreboard players add @s Azr0_axe_revival 3
+execute if entity @s[scores={Azr0_UPG_axe_damage=4..}] if items entity @s weapon.mainhand *[custom_data={"azr0weapon_axe":true}] run scoreboard players add @s Azr0_axe_revival 3
+execute if entity @s[scores={Azr0_UPG_axe_damage=6..}] if items entity @s weapon.mainhand *[custom_data={"azr0weapon_axe":true}] run scoreboard players add @s Azr0_axe_revival 3
+execute if entity @s[scores={Azr0_UPG_axe_damage=8..}] if items entity @s weapon.mainhand *[custom_data={"azr0weapon_axe":true}] run scoreboard players add @s Azr0_axe_revival 3
+execute if entity @s[scores={Azr0_UPG_axe_damage=10..}] if items entity @s weapon.mainhand *[custom_data={"azr0weapon_axe":true}] run scoreboard players add @s Azr0_axe_revival 3
+
+
 
 execute unless entity @s[scores={Azr0_shoot1=0,Azr0_shoot2=0}] run tag @s add MG_AZR0_used_bow
 execute if entity @s[tag=MG_AZR0_used_bow] run scoreboard players remove @s Azr0_arrow 1

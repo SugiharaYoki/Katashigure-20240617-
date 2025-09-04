@@ -18,7 +18,7 @@ execute as @e[tag=mg_azr0_MobSummoner_magma,type=marker,scores={rng1=31}] at @s 
 execute as @e[tag=mg_azr0_MobSummoner_magma,type=marker,scores={rng1=31..}] at @s run kill @s
 
 
-
+scoreboard players remove @a[scores={Azr0_axe_revival=1..}] Azr0_axe_revival 1
 
 execute as @a[tag=MG_AZR0PT] at @s unless entity @s[scores={Azr0_shoot1=0,Azr0_shoot2=0}] run function skyblock:mg/azr0/system/player/attacked
 execute as @a[tag=MG_AZR0PT,scores={Azr0_dealt_damage=1..}] at @s run function skyblock:mg/azr0/system/player/attacked

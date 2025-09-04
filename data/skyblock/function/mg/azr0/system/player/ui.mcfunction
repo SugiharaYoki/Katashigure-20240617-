@@ -7,6 +7,7 @@ title @s[scores={Azr0_SkillPoint=1..}] actionbar [{"text":"绿宝石 ","color":"
 
 
 
+execute if entity @s[scores={Azr_isDead=1..,Azr0_axe_revival=1..}] run function skyblock:mg/azr0/system/player/death_revival_axe
 execute if entity @s[scores={Azr_isDead=1..}] if entity @n[tag=MG_AZR0SPIRIT_revival_turtle,distance=0..180,type=turtle] run function skyblock:mg/azr0/system/player/death_revival
 execute if items entity @s[scores={Azr_isDead=1..}] container.* nether_star run function skyblock:mg/azr0/system/player/death_revival
 execute unless items entity @s[scores={Azr_isDead=1..}] container.* nether_star run function skyblock:mg/azr0/system/player/death

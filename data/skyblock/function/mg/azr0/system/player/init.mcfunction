@@ -44,6 +44,7 @@ scoreboard players set @s[tag=azr0_new_game] Azr0_UPG_star 0
 scoreboard players set @s[tag=azr0_new_game] Azr0_UPG_armor 0
 scoreboard players set @s[tag=azr0_new_game] Azr0_USED_star 0
 scoreboard players set @s[tag=azr0_new_game] Azr0_UPG_wand_level -1
+scoreboard players set @s[tag=azr0_new_game] Azr0_axe_revival 0
 
 scoreboard players set @s[tag=azr0_new_game] Azr0_SkillPoint 0
 scoreboard players set @s[tag=azr0_new_game] Azr0_SkillEquip_1 0
@@ -52,6 +53,7 @@ scoreboard players set @s[tag=azr0_new_game] Azr0_SkillEquip_3 0
 scoreboard players set @s[tag=azr0_new_game] Azr0_SkillEquip_1rng 0
 scoreboard players set @s[tag=azr0_new_game] Azr0_SkillEquip_2rng 0
 scoreboard players set @s[tag=azr0_new_game] Azr0_SkillEquip_3rng 0
+
 
 scoreboard players set @s[tag=azr0_new_game] Azr0_SKILL_1 0
 scoreboard players set @s[tag=azr0_new_game] Azr0_SKILL_2 0
