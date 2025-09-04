@@ -58,7 +58,7 @@ execute if entity @s[tag=MG_AZR0_MoneyPicked] run playsound minecraft:entity.exp
 tag @s remove MG_AZR0_MoneyPicked
 
 execute if items entity @s container.* egg run tag @s add MG_AZR0_MoneyPicked
-execute if entity @s[tag=MG_AZR0_MoneyPicked] run scoreboard players add @s Azr_bread_recharge 8
+execute if entity @s[tag=MG_AZR0_MoneyPicked] run scoreboard players add @s Azr_bread_recharge 80
 execute if entity @s[tag=MG_AZR0_MoneyPicked] run playsound minecraft:entity.experience_orb.pickup master @a ~ ~ ~ 1 1.2
 
 tag @s remove MG_AZR0_MoneyPicked
