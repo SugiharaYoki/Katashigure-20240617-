@@ -2,7 +2,7 @@
 scoreboard players enable @s[tag=!NoMultiMenu] MultiMenu
 scoreboard objectives add throw_multimenu minecraft.dropped:minecraft.knowledge_book
 
-tag @s[tag=!Gaming] remove NoMultiMenu
+execute if entity @s[tag=!Gaming] run tag @s remove NoMultiMenu
 #Set MultiM=1
 execute as @s[tag=!NoMultiMenu,tag=!MultiMenuAlready] at @s if items entity @s weapon.mainhand knowledge_book if items entity @s weapon.mainhand *[custom_data={multimenu:true}] run scoreboard players set @s MultiMenu 1
 #MultiM giving

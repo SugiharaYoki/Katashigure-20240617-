@@ -26,7 +26,7 @@ execute if block -52 55 -178 heavy_core run function ukiyo_nrb:core20
 
 #多功能菜单
 execute as @a[tag=!Gaming] at @s run function skyblock:world_system_multimenu
-tag @a[tag=Gaming] add NoMultiMenu
+execute as @a[tag=Gaming] at @s run tag @s add NoMultiMenu
 
 execute as @a[scores={If_TalkVill=1..},gamemode=!spectator] at @s run function skyblock:world_system_functionreader_verbal
 
