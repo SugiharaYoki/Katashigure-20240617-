@@ -202,6 +202,7 @@ execute if score SEA_ch6_event sea_4temp4 matches 1970 as @n[tag=SEAedwina] at @
 execute if score SEA_ch6_event sea_4temp4 matches 1985 as @n[tag=SEAedwina] at @s positioned 90050 20 -1815 run kill @s
 
 execute if score SEA_ch6_event sea_4temp4 matches 1950 as @a[tag=SEAPT] at @s positioned ~6 ~ ~ run effect give @s slowness 5 19 true
+execute if score SEA_ch6_event sea_4temp4 matches 1940 as @a[tag=SEAPT] at @s positioned ~6 ~ ~ run effect give @s resistance 5 19 true
 
 execute if score SEA_ch6_event sea_4temp4 matches 1950 as @a[tag=SEAPT] at @s positioned ~6 ~ ~ run summon marker ~ 21.0 ~ {Tags:["SEA_boss6_burst_anchor"]}
 execute if score SEA_ch6_event sea_4temp4 matches 1950 as @a[tag=SEAPT] at @s positioned ~-6 ~ ~ run summon marker ~ 21.0 ~ {Tags:["SEA_boss6_burst_anchor"]}
