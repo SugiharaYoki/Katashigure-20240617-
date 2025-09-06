@@ -99,6 +99,8 @@ execute if score @s rng4 matches 3050.. at @s run particle large_smoke ~ ~ ~ 8 0
 execute if score @s rng4 matches 3080 at @s run particle large_smoke ~ ~ ~ 8 0 8 0.3 120
 execute if score @s rng4 matches 3080 at @s run clone 90052 120 -1821 90067 120 -1809 90052 20 -1821
 execute if score @s rng4 matches 3080 at @s run tag @s add Phase4
+execute if score @s rng4 matches 3081 at @s if block 90151 133 -1857 minecraft:skeleton_skull at @s run summon lightning_bolt
+execute if score @s rng4 matches 3081 at @s if block 90151 133 -1857 minecraft:skeleton_skull run kill @s
 
 execute if score @s rng4 matches 3080 at @s positioned 90046 21 -1811 run summon marker ~ ~ ~ {Tags:["SEAboss6_summoner_a","SEAboss6_summoner_husk"]}
 execute if score @s rng4 matches 3080 at @s positioned 90046 21 -1819 run summon marker ~ ~ ~ {Tags:["SEAboss6_summoner_a","SEAboss6_summoner_husk"]}

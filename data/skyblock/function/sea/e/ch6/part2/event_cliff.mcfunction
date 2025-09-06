@@ -343,7 +343,7 @@ execute if score SEA_ch6_event rng5 matches 20047 as @a[scores={SEAPT_member=1}]
 execute if score SEA_ch6_event rng5 matches 20064 as @a[scores={SEAPT_member=1}] at @s unless block 90151 133 -1857 minecraft:skeleton_skull run tellraw @a[distance=0..150] [{"text":"权之执理：","color":"red","bold": true},{"text":"\n“无妨，吾会令汝认知到自己的愚昧与无知。”","color":"white","bold": false}]
 execute if score SEA_ch6_event rng5 matches 20078 as @a[scores={SEAPT_member=1}] at @s unless block 90151 133 -1857 minecraft:skeleton_skull run tellraw @a[distance=0..150] [{"text":"权之执理：","color":"red","bold": true},{"text":"\n“纵使天穹的雷霆无法落下，吾也能将汝二人如同蝼蚁般碾碎。”","color":"white","bold": false}]
 
-execute if score SEA_ch6_event rng5 matches 20064 as @a[scores={SEAPT_member=1}] at @s if block 90151 133 -1857 minecraft:skeleton_skull run tellraw @a[distance=0..150] [{"text":"权之执理：","color":"red","bold": true},{"text":"\n“……岂有此理，岂有此理！！就凭你也配篡夺雷米尔的权能？！”","color":"white","bold": false}]
+execute if score SEA_ch6_event rng5 matches 20064 as @a[scores={SEAPT_member=1}] at @s if block 90151 133 -1857 minecraft:skeleton_skull run tellraw @a[distance=0..150] [{"text":"权之执理：","color":"red","bold": true},{"text":"\n“等下，汝手中之剑……岂有此理，岂有此理！！就凭你也配篡夺烈风的权能？！”","color":"white","bold": false}]
 execute if score SEA_ch6_event rng5 matches 20078 as @a[scores={SEAPT_member=1}] at @s if block 90151 133 -1857 minecraft:skeleton_skull run tellraw @a[distance=0..150] [{"text":"权之执理：","color":"red","bold": true},{"text":"\n“这是踩在天使的头上挑衅，汝等应当赎罪，死吧！！”","color":"white","bold": false}]
 
 execute if score SEA_ch6_event rng5 matches 20058 run bossbar add 9066602 "焚渊的风暴 - 权之执理"
