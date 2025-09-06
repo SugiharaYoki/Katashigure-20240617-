@@ -39,5 +39,5 @@ clone 90109 -60 108 90117 -49 117 90099 128 108
 
 setblock 90150 153 128 shroomlight
 
-
+forceload add 90151 -1857
 
