@@ -242,5 +242,5 @@ execute if score SEA_ch6_event sea_4temp4 matches 2070 as @a[tag=SEAPT] at @s ru
 execute if score SEA_ch6_event sea_4temp4 matches 2070 as @a[tag=SEAPT] at @s run tp @s 90384 229 -1842 facing 90384 229 -1840
 execute if score SEA_ch6_event sea_4temp4 matches 2070 as @a[tag=SEAPT] at @s run clear @s
 execute if score SEA_ch6_event sea_4temp4 matches 2070 as @a[tag=SEAPT] at @s run effect clear @s
-execute if score SEA_ch6_event sea_4temp4 matches 2070 as @a[tag=SEAPT] at @s run effect give @s darkness 3 0 true
+execute if score SEA_ch6_event sea_4temp4 matches 2070 as @a[tag=SEAPT] at @s run effect give @s darkness 5 0 true
 #execute if score SEA_ch6_event sea_4temp4 matches 1790 run bossbar remove 9066602
