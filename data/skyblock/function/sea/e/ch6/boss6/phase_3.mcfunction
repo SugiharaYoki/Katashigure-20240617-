@@ -24,8 +24,10 @@ execute if score @s rng4 matches 102 run effect give @s instant_health 1 4 true
 execute if score @s rng4 matches 102 run effect give @s resistance infinite 1 true
 
 execute if score @s[tag=!Phase3] rng4 matches 102 run tag @s add Phase3
-execute if score @s rng2 matches 102.. run scoreboard players set @s rng2 0
+execute if score @s rng4 matches 102.. run scoreboard players set @s rng2 0
+execute if score @s rng4 matches 102.. run scoreboard players set @s rng4 0
 
+execute if score @s rng4 matches 60 as @a[scores={SEAPT_member=1}] at @s if block 90151 133 -1857 minecraft:skeleton_skull run tellraw @a[distance=0..150] [{"text":"权之执理：","color":"red","bold": true},{"text":"\n“非常好。但吾将使出全力。”","color":"white","bold": false}]
 
 
 
