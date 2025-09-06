@@ -67,15 +67,15 @@ execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=6..7}] rng7
 execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=6..7}] rng7 matches 22 run fill ~8 ~ ~8 ~-8 ~ ~-8 air replace fire
 execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=6..7}] rng7 matches 23.. run scoreboard players set @s rng7 0
 
-execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=8..9}] rng7 matches 10 run summon marker ~ 21.0 ~ {Tags:["SEA_boss6_flame_anchor"]}
-execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=8..9}] rng7 matches 14 run summon marker ~1.5 21.0 ~ {Tags:["SEA_boss6_flame_anchor"]}
-execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=8..9}] rng7 matches 14 run summon marker ~-1.5 21.0 ~ {Tags:["SEA_boss6_flame_anchor"]}
-execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=8..9}] rng7 matches 14 run summon marker ~ 21.0 ~1.5 {Tags:["SEA_boss6_flame_anchor"]}
-execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=8..9}] rng7 matches 14 run summon marker ~ 21.0 ~-1.5 {Tags:["SEA_boss6_flame_anchor"]}
-execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=8..9}] rng7 matches 18 run summon marker ~3 21.0 ~ {Tags:["SEA_boss6_flame_anchor"]}
-execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=8..9}] rng7 matches 18 run summon marker ~-3 21.0 ~ {Tags:["SEA_boss6_flame_anchor"]}
-execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=8..9}] rng7 matches 18 run summon marker ~ 21.0 ~3 {Tags:["SEA_boss6_flame_anchor"]}
-execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=8..9}] rng7 matches 18 run summon marker ~ 21.0 ~-3 {Tags:["SEA_boss6_flame_anchor"]}
+execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=8..9}] rng7 matches 10 at @p[tag=SEAPT] run summon marker ~ 21.0 ~ {Tags:["SEA_boss6_flame_anchor"]}
+execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=8..9}] rng7 matches 14 at @p[tag=SEAPT] run summon marker ~1.5 21.0 ~ {Tags:["SEA_boss6_flame_anchor"]}
+execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=8..9}] rng7 matches 14 at @p[tag=SEAPT] run summon marker ~-1.5 21.0 ~ {Tags:["SEA_boss6_flame_anchor"]}
+execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=8..9}] rng7 matches 14 at @p[tag=SEAPT] run summon marker ~ 21.0 ~1.5 {Tags:["SEA_boss6_flame_anchor"]}
+execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=8..9}] rng7 matches 14 at @p[tag=SEAPT] run summon marker ~ 21.0 ~-1.5 {Tags:["SEA_boss6_flame_anchor"]}
+execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=8..9}] rng7 matches 18 at @p[tag=SEAPT] run summon marker ~3 21.0 ~ {Tags:["SEA_boss6_flame_anchor"]}
+execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=8..9}] rng7 matches 18 at @p[tag=SEAPT] run summon marker ~-3 21.0 ~ {Tags:["SEA_boss6_flame_anchor"]}
+execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=8..9}] rng7 matches 18 at @p[tag=SEAPT] run summon marker ~ 21.0 ~3 {Tags:["SEA_boss6_flame_anchor"]}
+execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=8..9}] rng7 matches 18 at @p[tag=SEAPT] run summon marker ~ 21.0 ~-3 {Tags:["SEA_boss6_flame_anchor"]}
 
 execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=8..9}] rng7 matches 18 run scoreboard players set @s rng7 23
 execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=8..9}] rng7 matches 23.. run scoreboard players set @s rng7 0
