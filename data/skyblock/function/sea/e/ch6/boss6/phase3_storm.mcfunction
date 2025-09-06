@@ -83,8 +83,9 @@ execute if score @s rng4 matches 50.. at @s if score @s[scores={rng9=8..9}] rng7
 execute if score @s rng4 matches ..2999 at @s[scores={health=..199}] run scoreboard players set @s rng4 3000
 execute if score @s rng4 matches 4000.. at @s run scoreboard players set @s rng4 3000
 
-execute if score @s rng4 matches 30 positioned 90059 20 -1825 run tellraw @a[distance=0..150] [{"text":"权之执理：","color":"red","bold": true},{"text":"\n“有意思，但汝不再有耍小聪明的机会。”","color":"white","bold": false}]
-execute if score @s rng4 matches 50 positioned 90059 20 -1825 run tellraw @a[distance=0..150] [{"text":"权之执理：","color":"red","bold": true},{"text":"\n“品尝这焚灭一切卑微生灵的烈火吧。”","color":"white","bold": false}]
+execute if score @s rng4 matches 30 positioned 90059 20 -1825 unless block 90151 133 -1857 minecraft:skeleton_skull run tellraw @a[distance=0..150] [{"text":"权之执理：","color":"red","bold": true},{"text":"\n“有意思，但汝不再有耍小聪明的机会。”","color":"white","bold": false}]
+execute if score @s rng4 matches 50 positioned 90059 20 -1825 unless block 90151 133 -1857 minecraft:skeleton_skull run tellraw @a[distance=0..150] [{"text":"权之执理：","color":"red","bold": true},{"text":"\n“品尝这焚灭一切卑微生灵的烈火吧。”","color":"white","bold": false}]
+execute if score @s rng4 matches 50 positioned 90059 20 -1825 if block 90151 133 -1857 minecraft:skeleton_skull run tellraw @a[distance=0..150] [{"text":"权之执理：","color":"red","bold": true},{"text":"\n“受死吧，篡夺天使力量的家伙！！”","color":"white","bold": false}]
 execute if score @s rng4 matches 1000 positioned 90059 20 -1825 run tellraw @a[distance=0..150] [{"text":"权之执理：","color":"red","bold": true},{"text":"\n“无谓而幼稚的反抗。”","color":"white","bold": false}]
 execute if score @s rng4 matches 2000 positioned 90059 20 -1825 run tellraw @a[distance=0..150] [{"text":"权之执理：","color":"red","bold": true},{"text":"\n“被神圣的烈火焚尽吧。”","color":"white","bold": false}]
 
