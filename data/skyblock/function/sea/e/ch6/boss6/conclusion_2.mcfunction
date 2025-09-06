@@ -238,11 +238,9 @@ execute if score SEA_ch6_event sea_4temp4 matches 2040 as @p[tag=SEAPT] at @s ru
 execute if score SEA_ch6_event sea_4temp4 matches 2040 as @p[tag=SEAPT] at @s run playsound minecraft:ambient.underwater.loop.additions.ultra_rare ambient @a ~ ~ ~ 5 0.9
 
 
-#execute if score SEA_ch6_event sea_4temp4 matches 1790 as @a[tag=SEAPT] at @s run tag @n[tag=SEAedwina] remove SEAedwina_ch6
-#execute if score SEA_ch6_event sea_4temp4 matches 1790 as @a[tag=SEAPT] at @s run kill @e[tag=SEAedwina,distance=..200]
-#execute if score SEA_ch6_event sea_4temp4 matches 1790 as @a[tag=SEAPT] at @s run stopsound @a[distance=0..200]
-#execute if score SEA_ch6_event sea_4temp4 matches 1790 as @a[tag=SEAPT] at @s run tp @s 90385 245 -1899 facing 90387 245 -1899
-#execute if score SEA_ch6_event sea_4temp4 matches 1790 as @a[tag=SEAPT] at @s run clear @s
-#execute if score SEA_ch6_event sea_4temp4 matches 1790 as @a[tag=SEAPT] at @s run effect clear @s
-#execute if score SEA_ch6_event sea_4temp4 matches 1790 as @a[tag=SEAPT] at @s run effect give @s darkness 3 0 true
+execute if score SEA_ch6_event sea_4temp4 matches 2070 as @a[tag=SEAPT] at @s run kill @e[tag=SEAedwina,distance=..200]
+execute if score SEA_ch6_event sea_4temp4 matches 2070 as @a[tag=SEAPT] at @s run tp @s 90384 229 -1842 facing 90384 229 -1840
+execute if score SEA_ch6_event sea_4temp4 matches 2070 as @a[tag=SEAPT] at @s run clear @s
+execute if score SEA_ch6_event sea_4temp4 matches 2070 as @a[tag=SEAPT] at @s run effect clear @s
+execute if score SEA_ch6_event sea_4temp4 matches 2070 as @a[tag=SEAPT] at @s run effect give @s darkness 3 0 true
 #execute if score SEA_ch6_event sea_4temp4 matches 1790 run bossbar remove 9066602
