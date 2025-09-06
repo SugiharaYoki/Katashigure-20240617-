@@ -108,7 +108,7 @@ execute if score @s rng4 matches 3080 at @s positioned 90046 21 -1819 run summon
 execute if score @s rng4 matches 3080 at @s positioned 90045 21 -1815 run summon marker ~ ~ ~ {Tags:["SEAboss6_summoner_a","SEAboss6_summoner_husk"]}
 
 
-execute if score @s rng4 matches 3080 at @s run scoreboard players set @s rng4 -2
+execute if score @s rng4 matches 3081 at @s run scoreboard players set @s rng4 -2
 
 
 
