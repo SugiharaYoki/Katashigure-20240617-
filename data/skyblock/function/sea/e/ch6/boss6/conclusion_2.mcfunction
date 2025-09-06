@@ -68,19 +68,19 @@ execute if score SEA_ch6_event sea_4temp4 matches 1364..1900 positioned 90061 31
 execute if score SEA_ch6_event sea_4temp4 matches 1364..1900 positioned 90061 31 -1815 as @n[tag=SEAboss6b,tag=!Phase6,distance=0..5] at @s run tag @s add Phase6
 execute if score SEA_ch6_event sea_4temp4 matches 1364..2000 positioned 90061 31 -1815 as @n[tag=SEAboss6b,tag=Phase6,distance=0..5] at @s run rotate @s facing entity @p[tag=SEAPT]
 
-execute if score SEA_ch6_event sea_4temp4 matches 1365.. run effect give @n[tag=SEAboss6b] levitation infinite 4 true
-execute if score SEA_ch6_event sea_4temp4 matches 1362 run bossbar add 9066602 "神圣的风暴 - 权之执理"
-execute if score SEA_ch6_event sea_4temp4 matches 1362 run bossbar set minecraft:9066602 color red
-execute if score SEA_ch6_event sea_4temp4 matches 1362 run bossbar set minecraft:9066602 name "神圣的风暴 - 权之执理"
-execute if score SEA_ch6_event sea_4temp4 matches 1362 run bossbar set minecraft:9066602 players @a[tag=SEAPT]
-execute if score SEA_ch6_event sea_4temp4 matches 1362 run bossbar set minecraft:9066602 style progress
-execute if score SEA_ch6_event sea_4temp4 matches 1362 run bossbar set minecraft:9066602 max 400
+execute if score SEA_ch6_event sea_4temp4 matches 1545.. run effect give @n[tag=SEAboss6b] levitation infinite 4 true
+execute if score SEA_ch6_event sea_4temp4 matches 1542 run bossbar add 9066602 "神圣的风暴 - 权之执理"
+execute if score SEA_ch6_event sea_4temp4 matches 1542 run bossbar set minecraft:9066602 color red
+execute if score SEA_ch6_event sea_4temp4 matches 1542 run bossbar set minecraft:9066602 name "神圣的风暴 - 权之执理"
+execute if score SEA_ch6_event sea_4temp4 matches 1542 run bossbar set minecraft:9066602 players @a[tag=SEAPT]
+execute if score SEA_ch6_event sea_4temp4 matches 1542 run bossbar set minecraft:9066602 style progress
+execute if score SEA_ch6_event sea_4temp4 matches 1542 run bossbar set minecraft:9066602 max 400
 
-execute if score SEA_ch6_event sea_4temp4 matches 1362..1462 run scoreboard players add SEA_ch6_event sea_4temp5 4
-execute if score SEA_ch6_event sea_4temp4 matches 1362.. store result bossbar minecraft:9066602 value run scoreboard players get SEA_ch6_event sea_4temp5
+execute if score SEA_ch6_event sea_4temp4 matches 1542..1762 run scoreboard players add SEA_ch6_event sea_4temp5 4
+execute if score SEA_ch6_event sea_4temp4 matches 1542.. store result bossbar minecraft:9066602 value run scoreboard players get SEA_ch6_event sea_4temp5
 
 
-execute if score SEA_ch6_event sea_4temp4 matches 1362 as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s run playsound minecraft:salvation1 music @s ~ ~ ~ 1 1.0
+execute if score SEA_ch6_event sea_4temp4 matches 1562 as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s run playsound minecraft:salvation1 music @s ~ ~ ~ 1 1.0
 
 execute if score SEA_ch6_event sea_4temp4 matches 1552 as @p[tag=SEAPT] at @s run title @a[distance=0..250] times 1s 3s 1s
 execute if score SEA_ch6_event sea_4temp4 matches 1552 as @p[tag=SEAPT] at @s run title @a[distance=0..250] title [{"text":"伊曼纽尔、艾德雯娜，","color":"white","bold": false}]
