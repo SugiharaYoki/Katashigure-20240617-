@@ -236,6 +236,7 @@ execute if score SEA_ch6_event sea_4temp4 matches 1979 as @a[tag=SEAPT] at @s ru
 execute if score SEA_ch6_event sea_4temp4 matches 1979 as @a[tag=SEAPT] at @s run stopsound @s music
 
 
+execute if score SEA_ch6_event sea_4temp4 matches 2070 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"伊曼纽尔：","color":"aqua","bold": true},{"text":"\n“艾德雯娜！！！！！”","color":"white"}]
 
 
 #execute if score SEA_ch6_event sea_4temp4 matches 1790 as @a[tag=SEAPT] at @s run tag @n[tag=SEAedwina] remove SEAedwina_ch6
