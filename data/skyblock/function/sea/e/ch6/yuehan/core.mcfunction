@@ -38,3 +38,6 @@ execute as @s[scores={rng3=1}] at @s unless entity @r[tag=SEAPT,distance=..5] at
 execute as @s[scores={rng3=1}] at @s unless entity @r[tag=SEAPT,distance=..5] at @r[tag=SEAPT] if entity @n[tag=SEAmob,distance=..1.4] rotated ~ 0 positioned ^-1 ^ ^-1 if block ~ ~ ~ air if block ~ ~1 ~ air if block ~ ~1 ~0.3 air if block ~ ~1 ~-0.3 air if block ~0.3 ~1 ~ air if block ~-0.3 ~1 ~ air unless block ~ ~-0.7 ~ air run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
 
 scoreboard players set @s rng4 0
+
+
+say hi
