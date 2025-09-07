@@ -5,7 +5,7 @@ execute as @s[scores={rng8=4},tag=SEAyuehan_act_dismantle] store result score @s
 
 execute as @s[scores={rng8=3,rng7=1},tag=SEAyuehan_act_dismantle] at @s run tellraw @a[distance=0..28] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“这傻逼钻井平台上怎么这么多无人机，走路都走不安稳。”","color":"white","bold": false}]
 execute as @s[scores={rng8=3,rng7=2},tag=SEAyuehan_act_dismantle] at @s run tellraw @a[distance=0..28] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“我之前就叫艾德雯娜别乱放无人机了……唉。”","color":"white","bold": false}]
-execute as @s[scores={rng8=3,rng7=3},tag=SEAyuehan_act_dismantle] at @s run tellraw @a[distance=0..28] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“我把这玩意给拆了，你等等我。”","color":"white","bold": false}]
+execute as @s[scores={rng8=3,rng7=3},tag=SEAyuehan_act_dismantle] at @s run tellraw @a[distance=0..28] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“我把这玩意给打废，你等等我。”","color":"white","bold": false}]
 
 execute as @s[scores={rng8=10},tag=SEAyuehan_act_dismantle] at @n[tag=SEAdrone] rotated ~ 90 run tp @s ^ ^ ^-1
 execute as @s[scores={rng8=13},tag=SEAyuehan_act_dismantle] at @n[tag=SEAdrone] run particle smoke ~ ~ ~ 0 0 0 0.01 10
