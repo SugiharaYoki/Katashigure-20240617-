@@ -2,6 +2,7 @@ scoreboard players add @s rng8 1
 
 execute as @s[scores={rng8=2..29},tag=SEAyuehan_act_heal] at @s run item replace entity @s weapon.mainhand with honey_bottle
 execute as @s[scores={rng8=3},tag=SEAyuehan_act_heal] at @s if entity @a[tag=SEAPT,scores={player_health=..10}] run tag @r[tag=SEAPT,scores={player_health=..10}] add SEAyuehan_act_heal_target
+execute as @s[scores={rng8=3},tag=SEAyuehan_act_heal] at @s unless entity @a[tag=SEAPT,scores={player_health=..10}] run scoreboard players set @s rng8 28
 execute as @s[scores={rng8=4},tag=SEAyuehan_act_heal] store result score @s rng7 run random value 1..3
 
 execute as @s[scores={rng8=3,rng7=1},tag=SEAyuehan_act_heal] at @s if entity @a[tag=SEAyuehan_act_heal_target] run tellraw @a[distance=0..28] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“","color":"white","bold": false},{"selector":"@s","color":"white"},{"text":"，你等下，我帮你治疗！”","color":"white","bold": false}]
