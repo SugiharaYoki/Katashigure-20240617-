@@ -53,6 +53,7 @@ tellraw @s[scores={parkour_stage=45..47}] [{"text":"  星光湮桥 45","bold":fa
 tellraw @s[scores={parkour_stage=46..47}] [{"text":"  星光湮桥 46","bold":false,"color":"dark_red","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 832046"}}]
 tellraw @s[scores={parkour_stage=47}] [{"text":"  星光湮桥 47","bold":false,"color":"dark_red","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 832047"}}]
 tellraw @s[scores={parkour_stage=48..}] [{"text":"  星光湮桥 44","bold":false,"color":"dark_red","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 832044"}},{"text":"  45","bold":false,"color":"dark_red","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 832045"}},{"text":"  46","bold":false,"color":"dark_red","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 832046"}},{"text":"  47","bold":false,"color":"dark_red","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 832047"}}]
+tellraw @s[scores={parkour_stage=48..}] [{"text":"  旧日边境 48","bold":false,"color":"dark_red","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 832048"}}]
 #tellraw @s[scores={MazeLS=??..}] {"text":"","bold":false}
 #tellraw @s[scores={MazeLS=??..}] {"text":"  [下一页]","bold":false,"color":"green","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 811"}}
 tellraw @s {"text":"","bold":false}
