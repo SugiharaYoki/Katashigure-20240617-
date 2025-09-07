@@ -12,9 +12,9 @@ execute as @s[scores={rng8=13},tag=SEAyuehan_act_dismantle] at @n[tag=SEAdrone] 
 execute as @s[scores={rng8=13},tag=SEAyuehan_act_dismantle] at @n[tag=SEAdrone] run playsound minecraft:block.chain.break block @a ~ ~ ~ 1 0.9
 execute as @s[scores={rng8=13},tag=SEAyuehan_act_dismantle] at @n[tag=SEAdrone] run playsound minecraft:block.chain.break block @a ~ ~ ~ 1 0.9
 
-execute as @s[scores={rng8=13},tag=SEAyuehan_act_dismantle] at @n[tag=SEAdrone] run playsound block.fire.extinguish block @a ~ ~ ~ 0.6 1.4
-execute as @s[scores={rng8=13},tag=SEAyuehan_act_dismantle] at @n[tag=SEAdrone] run playsound minecraft:block.note_block.bell block @a ~ ~ ~ 0.8 1.6
-execute as @s[scores={rng8=13},tag=SEAyuehan_act_dismantle] at @n[tag=SEAdrone] run kill @s[type=block_display]
+execute as @s[scores={rng8=13},tag=SEAyuehan_act_dismantle] as @n[tag=SEAdrone] at @s run playsound block.fire.extinguish block @a ~ ~ ~ 0.6 1.4
+execute as @s[scores={rng8=13},tag=SEAyuehan_act_dismantle] as @n[tag=SEAdrone] at @s run playsound minecraft:block.note_block.bell block @a ~ ~ ~ 0.8 1.6
+execute as @s[scores={rng8=13},tag=SEAyuehan_act_dismantle] as @n[tag=SEAdrone] at @s run kill @s[type=block_display]
 
 
 execute as @s[scores={rng8=39..},tag=SEAyuehan_act_dismantle] at @s run scoreboard players set @s rng2 0
