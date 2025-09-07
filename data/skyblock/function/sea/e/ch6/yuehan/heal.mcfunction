@@ -9,7 +9,7 @@ execute as @s[scores={rng8=3,rng7=1},tag=SEAyuehan_act_heal] at @s if entity @a[
 execute as @s[scores={rng8=3,rng7=2},tag=SEAyuehan_act_heal] at @s if entity @a[tag=SEAyuehan_act_heal_target] run tellraw @a[distance=0..28] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“","color":"white","bold": false},{"selector":"@p[tag=SEAyuehan_act_heal_target]","color":"white","bold": false},{"text":"，你该感谢我随身带着巨多治疗药水。”","color":"white","bold": false}]
 execute as @s[scores={rng8=3,rng7=3},tag=SEAyuehan_act_heal] at @s if entity @a[tag=SEAyuehan_act_heal_target] run tellraw @a[distance=0..28] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“","color":"white","bold": false},{"selector":"@p[tag=SEAyuehan_act_heal_target]","color":"white","bold": false},{"text":"，你快被打死了，别莽！”","color":"white","bold": false}]
 
-execute as @s[scores={rng8=10},tag=SEAyuehan_act_heal] at @p[tag=SEAyuehan_act_heal_target] rotated ~ 90 run tp @s ^ ^ ^-1
+execute as @s[scores={rng8=10},tag=SEAyuehan_act_heal] at @p[tag=SEAyuehan_act_heal_target] rotated ~ 0 run tp @s ^ ^ ^-1
 execute as @s[scores={rng8=16},tag=SEAyuehan_act_heal] run tp @s ~ ~ ~
 execute as @s[scores={rng8=13},tag=SEAyuehan_act_heal] run summon potion ~ ~1 ~ {Item:{id:potion,components:{potion_contents:{custom_color:16599149,custom_effects:[{id:regeneration,duration:40,amplifier:3}]}}}}
 
