@@ -1,14 +1,10 @@
 execute as @s at @s store result score @s rng1 if entity @e[tag=SEAmob,distance=0..7,tag=!SEAcreak]
 
-execute as @s[scores={rng8=0}] unless entity @n[tag=SEAPT,distance=0..10] store result score @s rng3 run random value 1..4
-execute as @s[scores={rng8=0}] if entity @n[tag=SEAPT,distance=0..10] store result score @s rng3 run random value 1..20
-execute as @s[scores={rng8=0}] if entity @n[tag=SEAmob,distance=0..4] store result score @s rng3 run random value 1..30
-execute as @s[scores={rng8=0}] if entity @n[tag=SEAmob,distance=0..10] unless entity @n[tag=SEAmob,distance=0..4] store result score @s rng3 run random value 29..30
+execute as @s[scores={rng8=0}] store result score @s rng3 run random value 1..4
 
 execute as @s unless entity @n[tag=SEAPT,distance=0..2] store result score @s rng3 run random value 1..2
 
-execute unless score @s rng3 matches 1 as @s[scores={rng1=1..5,rng2=..0}] at @s store result score @s rng2 run random value 1..4
-execute unless score @s rng3 matches 1 as @s[scores={rng1=3..,rng2=1..4}] at @s store result score @s rng2 run random value 1..7
+execute if score @s rng3 matches 2 as @s[scores={rng8=0}] at @s store result score @s rng2 run random value 1..3
 execute as @s[scores={rng2=1..3}] run tag @s add SEAyuehan_act_heal
 
 execute as @s[tag=SEAyuehan_act_heal] at @s run function skyblock:sea/e/ch6/yuehan/heal
