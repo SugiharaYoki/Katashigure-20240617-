@@ -1,6 +1,6 @@
 scoreboard players add @s rng8 1
 
-execute as @s[scores={rng8=2..29},tag=SEAyuehan_act_dismantle] at @s run item replace entity @s weapon.mainhand with iron_hoe
+execute as @s[scores={rng8=2..29},tag=SEAyuehan_act_dismantle] at @s run item replace entity @s weapon.mainhand with name_tag
 execute as @s[scores={rng8=4},tag=SEAyuehan_act_dismantle] store result score @s rng7 run random value 1..3
 
 execute as @s[scores={rng8=3,rng7=1},tag=SEAyuehan_act_dismantle] at @s run tellraw @a[distance=0..28] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“这傻逼钻井平台上怎么这么多无人机，走路都走不安稳。”","color":"white","bold": false}]
