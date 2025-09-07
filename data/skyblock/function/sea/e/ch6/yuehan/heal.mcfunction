@@ -1,6 +1,6 @@
 scoreboard players add @s rng8 1
 
-execute as @s[scores={rng8=2..29},tag=SEAyuehan_act_heal] at @s run item replace entity @s weapon.mainhand with honey_bottle
+execute as @s[scores={rng8=4..29},tag=SEAyuehan_act_heal] at @s run item replace entity @s weapon.mainhand with honey_bottle
 execute as @s[scores={rng8=3},tag=SEAyuehan_act_heal] at @s if entity @a[tag=SEAPT,scores={player_health=..10}] run tag @r[tag=SEAPT,scores={player_health=..10}] add SEAyuehan_act_heal_target
 execute as @s[scores={rng8=3},tag=SEAyuehan_act_heal] at @s unless entity @a[tag=SEAPT,scores={player_health=..10}] run scoreboard players set @s rng8 38
 execute as @s[scores={rng8=4},tag=SEAyuehan_act_heal] store result score @s rng7 run random value 1..3
