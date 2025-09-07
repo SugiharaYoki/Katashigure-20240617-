@@ -3,9 +3,9 @@ scoreboard players add @s rng8 1
 execute as @s[scores={rng8=4..29},tag=SEAyuehan_act_heal] at @s run item replace entity @s weapon.mainhand with honey_bottle
 execute as @s[scores={rng8=3},tag=SEAyuehan_act_heal] at @s if entity @a[tag=SEAPT,scores={player_health=..10}] run tag @r[tag=SEAPT,scores={player_health=..10}] add SEAyuehan_act_heal_target
 execute as @s[scores={rng8=3},tag=SEAyuehan_act_heal] at @s unless entity @a[tag=SEAPT,scores={player_health=..10}] run scoreboard players set @s rng8 38
-execute as @s[scores={rng8=4},tag=SEAyuehan_act_heal] store result score @s[scores={rng9=..8}] rng7 run random value 1..3
-execute as @s[scores={rng8=4},tag=SEAyuehan_act_heal] store result score @s[scores={rng9=9..16}] rng7 run random value 1..6
-execute as @s[scores={rng8=4},tag=SEAyuehan_act_heal] store result score @s[scores={rng9=17..}] rng7 run random value 1..10
+execute as @s[scores={rng8=4,rng9=..8},tag=SEAyuehan_act_heal] store result score @s rng7 run random value 1..3
+execute as @s[scores={rng8=4,rng9=9..20},tag=SEAyuehan_act_heal] store result score @s rng7 run random value 1..6
+execute as @s[scores={rng8=4,rng9=21..},tag=SEAyuehan_act_heal] store result score @s rng7 run random value 1..10
 execute as @s[scores={rng8=4},tag=SEAyuehan_act_heal] run scoreboard players add @s rng9 1
 
 execute as @s[scores={rng8=3,rng7=1},tag=SEAyuehan_act_heal] at @s if entity @a[tag=SEAyuehan_act_heal_target] run tellraw @a[distance=0..28] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“你等下，","color":"white","bold": false},{"selector":"@p[tag=SEAyuehan_act_heal_target]","color":"white","bold": false},{"text":"！我帮你治疗！”","color":"white","bold": false}]
