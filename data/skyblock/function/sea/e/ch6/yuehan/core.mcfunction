@@ -34,5 +34,8 @@ execute if entity @s[scores={rng4=2}] run tellraw @a[distance=0..28] [{"text":"�
 execute if entity @s[scores={rng4=3}] run tellraw @a[distance=0..28] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“你听好我随时准备跑了，要看到我没影了别找我！”","color":"white","bold": false}]
 execute if entity @s[scores={rng4=4}] run tellraw @a[distance=0..28] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“好兄弟救救我！！”","color":"white","bold": false}]
 
+execute as @s[scores={rng3=1}] at @s unless entity @r[tag=SEAPT,distance=..5] at @r[tag=SEAPT] if entity @n[tag=SEAmob,distance=..1.4] rotated ~ 0 positioned ^ ^ ^-1 if block ~ ~ ~ air if block ~ ~1 ~ air if block ~ ~1 ~0.3 air if block ~ ~1 ~-0.3 air if block ~0.3 ~1 ~ air if block ~-0.3 ~1 ~ air unless block ~ ~-0.7 ~ air run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
+execute as @s[scores={rng3=1}] at @s unless entity @r[tag=SEAPT,distance=..5] at @r[tag=SEAPT] if entity @n[tag=SEAmob,distance=..1.4] rotated ~ 0 positioned ^1 ^ ^-1 if block ~ ~ ~ air if block ~ ~1 ~ air if block ~ ~1 ~0.3 air if block ~ ~1 ~-0.3 air if block ~0.3 ~1 ~ air if block ~-0.3 ~1 ~ air unless block ~ ~-0.7 ~ air run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
+execute as @s[scores={rng3=1}] at @s unless entity @r[tag=SEAPT,distance=..5] at @r[tag=SEAPT] if entity @n[tag=SEAmob,distance=..1.4] rotated ~ 0 positioned ^-1 ^ ^-1 if block ~ ~ ~ air if block ~ ~1 ~ air if block ~ ~1 ~0.3 air if block ~ ~1 ~-0.3 air if block ~0.3 ~1 ~ air if block ~-0.3 ~1 ~ air unless block ~ ~-0.7 ~ air run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
 
 scoreboard players set @s rng4 0
