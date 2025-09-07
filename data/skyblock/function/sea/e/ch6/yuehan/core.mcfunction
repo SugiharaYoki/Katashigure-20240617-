@@ -4,10 +4,13 @@ execute as @s[scores={rng8=0}] store result score @s rng3 run random value 1..4
 
 execute as @s unless entity @n[tag=SEAPT,distance=0..2] store result score @s rng3 run random value 1..2
 
+execute if score @s rng3 matches 2..4 as @s[scores={rng8=0}] at @s if entity @n[tag=SEAdrone,distance=..5] store result score @s rng2 run random value 4..6
 execute if score @s rng3 matches 2 as @s[scores={rng8=0}] at @s store result score @s rng2 run random value 1..3
 execute as @s[scores={rng2=1..3}] run tag @s add SEAyuehan_act_heal
+execute as @s[scores={rng2=1..3}] run tag @s add SEAyuehan_act_dismantle
 
 execute as @s[tag=SEAyuehan_act_heal] at @s run function skyblock:sea/e/ch6/yuehan/heal
+execute as @s[tag=SEAyuehan_act_dismantle] at @s run function skyblock:sea/e/ch6/yuehan/dismantle
 
 
 #execute as @s[scores={rng3=1}] if score SEA_ch6_event rng5 matches 4031..4070 run scoreboard players set @s rng3 0
