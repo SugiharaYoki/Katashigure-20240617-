@@ -29,10 +29,10 @@ execute at @s run tag @n[tag=AzrielMob,distance=0..10,tag=!SEAmob] add SEAmob
 
 
 execute if entity @n[tag=SEAmob,distance=..3.8] store result score @s rng4 run random value 1..80
-execute if entity @n[scores={rng4=1}] run tellraw @a[distance=0..28] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“啊啊啊、你快点帮忙把这些家伙拦住！”","color":"white","bold": false}]
-execute if entity @n[scores={rng4=2}] run tellraw @a[distance=0..28] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“敌人快蹭到我身上来了！！”","color":"white","bold": false}]
-execute if entity @n[scores={rng4=3}] run tellraw @a[distance=0..28] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“你听好我随时准备跑了，要看到我没影了别找我！”","color":"white","bold": false}]
-execute if entity @n[scores={rng4=4}] run tellraw @a[distance=0..28] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“好兄弟救救我！！”","color":"white","bold": false}]
+execute if entity @s[scores={rng4=1}] run tellraw @a[distance=0..28] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“啊啊啊、你快点帮忙把这些家伙拦住！”","color":"white","bold": false}]
+execute if entity @s[scores={rng4=2}] run tellraw @a[distance=0..28] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“敌人快蹭到我身上来了！！”","color":"white","bold": false}]
+execute if entity @s[scores={rng4=3}] run tellraw @a[distance=0..28] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“你听好我随时准备跑了，要看到我没影了别找我！”","color":"white","bold": false}]
+execute if entity @s[scores={rng4=4}] run tellraw @a[distance=0..28] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“好兄弟救救我！！”","color":"white","bold": false}]
 
 
 scoreboard players set @s rng4 0
