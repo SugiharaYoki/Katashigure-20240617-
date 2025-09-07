@@ -3,11 +3,13 @@ scoreboard players add @s rng8 1
 execute as @s[scores={rng8=4..29},tag=SEAyuehan_act_heal] at @s run item replace entity @s weapon.mainhand with honey_bottle
 execute as @s[scores={rng8=3},tag=SEAyuehan_act_heal] at @s if entity @a[tag=SEAPT,scores={player_health=..10}] run tag @r[tag=SEAPT,scores={player_health=..10}] add SEAyuehan_act_heal_target
 execute as @s[scores={rng8=3},tag=SEAyuehan_act_heal] at @s unless entity @a[tag=SEAPT,scores={player_health=..10}] run scoreboard players set @s rng8 38
-execute as @s[scores={rng8=4},tag=SEAyuehan_act_heal] store result score @s rng7 run random value 1..3
+execute as @s[scores={rng8=4},tag=SEAyuehan_act_heal] store result score @s rng7 run random value 1..5
 
 execute as @s[scores={rng8=3,rng7=1},tag=SEAyuehan_act_heal] at @s if entity @a[tag=SEAyuehan_act_heal_target] run tellraw @a[distance=0..28] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“你等下，","color":"white","bold": false},{"selector":"@p[tag=SEAyuehan_act_heal_target]","color":"white","bold": false},{"text":"！我帮你治疗！”","color":"white","bold": false}]
 execute as @s[scores={rng8=3,rng7=2},tag=SEAyuehan_act_heal] at @s if entity @a[tag=SEAyuehan_act_heal_target] run tellraw @a[distance=0..28] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“","color":"white","bold": false},{"selector":"@p[tag=SEAyuehan_act_heal_target]","color":"white","bold": false},{"text":"，你该感谢我随身带着巨多治疗药水。”","color":"white","bold": false}]
 execute as @s[scores={rng8=3,rng7=3},tag=SEAyuehan_act_heal] at @s if entity @a[tag=SEAyuehan_act_heal_target] run tellraw @a[distance=0..28] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“","color":"white","bold": false},{"selector":"@p[tag=SEAyuehan_act_heal_target]","color":"white","bold": false},{"text":"，你快被打死了，别莽！”","color":"white","bold": false}]
+execute as @s[scores={rng8=3,rng7=4},tag=SEAyuehan_act_heal] at @s if entity @a[tag=SEAyuehan_act_heal_target] run tellraw @a[distance=0..28] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“能不能别浪了，啊？","color":"white","bold": false},{"selector":"@p[tag=SEAyuehan_act_heal_target]","color":"white","bold": false},{"text":"？能不能别浪了？”","color":"white","bold": false}]
+execute as @s[scores={rng8=3,rng7=5},tag=SEAyuehan_act_heal] at @s if entity @a[tag=SEAyuehan_act_heal_target] run tellraw @a[distance=0..28] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“我真的服了，","color":"white","bold": false},{"selector":"@p[tag=SEAyuehan_act_heal_target]","color":"white","bold": false},{"text":"，要是法莫洛斯医生还在，你能给他活活气死。”","color":"white","bold": false}]
 
 execute as @s[scores={rng8=10},tag=SEAyuehan_act_heal] at @p[tag=SEAyuehan_act_heal_target] rotated ~ 0 run tp @s ^ ^ ^-1
 execute as @s[scores={rng8=16},tag=SEAyuehan_act_heal] run tp @s ~ ~ ~
