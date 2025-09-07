@@ -39,5 +39,3 @@ execute as @s[scores={rng3=1}] at @s unless entity @r[tag=SEAPT,distance=..5] at
 
 scoreboard players set @s rng4 0
 
-
-say hi
