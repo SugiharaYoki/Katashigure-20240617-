@@ -11,7 +11,7 @@ tellraw @a[distance=..200] [{"text": "头目：执烛使者 到来！","color": 
 
 
 
-
+scoreboard players set MG_AZR0_Timer rng8 0
 
 
 
