@@ -19,6 +19,7 @@ scoreboard objectives add MG_AZR0_Timer_rng4 dummy
 scoreboard objectives add MG_AZR0_Timer_rng5 dummy
 scoreboard objectives add MG_AZR0_Timer_rng6 dummy
 scoreboard objectives add MG_AZR0_Timer_rng7 dummy
+scoreboard objectives add MG_AZR0_Timer_rng8 dummy
 scoreboard objectives add MG_AZR0_Timer_rng9 dummy
 scoreboard objectives add MG_AZR0_rng_rng7 dummy
 
@@ -200,6 +201,7 @@ execute if entity @a[tag=azr0_load_game] run scoreboard players operation MG_AZR
 execute if entity @a[tag=azr0_load_game] run scoreboard players operation MG_AZR0_Timer rng5 = @p[tag=azr0_load_game] MG_AZR0_Timer_rng5
 execute if entity @a[tag=azr0_load_game] run scoreboard players operation MG_AZR0_Timer rng6 = @p[tag=azr0_load_game] MG_AZR0_Timer_rng6
 execute if entity @a[tag=azr0_load_game] run scoreboard players operation MG_AZR0_Timer rng7 = @p[tag=azr0_load_game] MG_AZR0_Timer_rng7
+execute if entity @a[tag=azr0_load_game] run scoreboard players operation MG_AZR0_Timer rng8 = @p[tag=azr0_load_game] MG_AZR0_Timer_rng8
 execute if entity @a[tag=azr0_load_game] run scoreboard players operation MG_AZR0_Timer rng9 = @p[tag=azr0_load_game] MG_AZR0_Timer_rng9
 
 tag @a remove azr0_new_game

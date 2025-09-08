@@ -1,5 +1,15 @@
 execute as @a[tag=MG_AZR0PT] at @s run function skyblock:mg/azr0/system/player/skill/emerald_wave
 
+execute if score MG_AZR0_Timer rng2 matches 20 run scoreboard players add MG_AZR0_Timer rng8 1000
+execute if score MG_AZR0_Timer rng2 matches 40 run scoreboard players add MG_AZR0_Timer rng8 1000
+execute if score MG_AZR0_Timer rng2 matches 60 run scoreboard players add MG_AZR0_Timer rng8 1000
+execute if score MG_AZR0_Timer rng2 matches 80 run scoreboard players add MG_AZR0_Timer rng8 1000
+execute if score MG_AZR0_Timer rng2 matches 100 run scoreboard players add MG_AZR0_Timer rng8 1000
+
+
+execute if score MG_AZR0_Timer rng2 matches 20.. store result score MG_AZR0_rng rng1 run random value 10..30
+execute if score MG_AZR0_Timer rng2 matches 20.. run scoreboard players operation MG_AZR0_Timer rng8 += MG_AZR0_rng rng1
+execute if score MG_AZR0_Timer rng8 matches 250.. run tellraw @a[distance=..200] [{"text": "你感受到一股深入骨髓的恶寒……","color": "gray"}]
 
 execute if score MG_AZR0_Timer rng2 matches 5 run tag @a[tag=MG_AZR0PT] add MGAZR0_NewPTS
 execute if score MG_AZR0_Timer rng2 matches 10 run tag @a[tag=MG_AZR0PT] add MGAZR0_NewPTS
