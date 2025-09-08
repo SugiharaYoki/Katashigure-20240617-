@@ -31,11 +31,11 @@ execute if score @s rng5 matches 42..50 as @n[tag=azr0_candle_angel_fireattack_m
 execute if score @s rng5 matches 42..49 run rotate @n[tag=azr0_candle_angel_fireattack_marker1] ~-5 ~
 execute if score @s rng5 matches 42..49 run rotate @n[tag=azr0_candle_angel_fireattack_marker2] ~5 ~
 
-execute if score @s rng5 matches 51 as @n[tag=azr0_candle_angel_fireattack_marker1] at @s positioned ^ ^ ^0.9 run particle small_flame ~ 4.1 ~ 0 3 0 0.00 30
-execute if score @s rng5 matches 52 as @n[tag=azr0_candle_angel_fireattack_marker1] at @s positioned ^ ^ ^1.9 run particle small_flame ~ 4.1 ~ 0 3 0 0.00 30
-execute if score @s rng5 matches 53 as @n[tag=azr0_candle_angel_fireattack_marker1] at @s positioned ^ ^ ^2.9 run particle small_flame ~ 4.1 ~ 0 3 0 0.00 30
-execute if score @s rng5 matches 54 as @n[tag=azr0_candle_angel_fireattack_marker1] at @s positioned ^ ^ ^3.9 run particle small_flame ~ 4.1 ~ 0 3 0 0.00 30
-execute if score @s rng5 matches 55 as @n[tag=azr0_candle_angel_fireattack_marker1] at @s positioned ^ ^ ^4.9 run particle small_flame ~ 4.1 ~ 0 3 0 0.00 30
+execute if score @s rng5 matches 51 as @n[tag=azr0_candle_angel_fireattack_marker1] at @s positioned ^ ^ ^0.9 run summon marker ~ ~ ~ {Tags:["azr0_candle_angel_candle_marker"]}
+execute if score @s rng5 matches 53 as @n[tag=azr0_candle_angel_fireattack_marker1] at @s positioned ^ ^ ^1.9 run summon marker ~ ~ ~ {Tags:["azr0_candle_angel_candle_marker"]}
+execute if score @s rng5 matches 55 as @n[tag=azr0_candle_angel_fireattack_marker1] at @s positioned ^ ^ ^2.9 run summon marker ~ ~ ~ {Tags:["azr0_candle_angel_candle_marker"]}
+execute if score @s rng5 matches 57 as @n[tag=azr0_candle_angel_fireattack_marker1] at @s positioned ^ ^ ^3.9 run summon marker ~ ~ ~ {Tags:["azr0_candle_angel_candle_marker"]}
+execute if score @s rng5 matches 59 as @n[tag=azr0_candle_angel_fireattack_marker1] at @s positioned ^ ^ ^4.9 run summon marker ~ ~ ~ {Tags:["azr0_candle_angel_candle_marker"]}
 
 
 execute if score @s rng5 matches 50.. run kill @n[tag=azr0_candle_angel_fireattack_marker1]

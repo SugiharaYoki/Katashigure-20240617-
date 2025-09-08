@@ -13,7 +13,7 @@ execute if score @s rng2 matches 1 run function skyblock:mg/azr0/system/mob/boss
 
 
 
-
+execute as @e[distance=..200,type=marker,tag=azr0_candle_angel_candle_marker] at @s run function skyblock:mg/azr0/system/mob/boss/angel_candle/marker_candle
 
 
 

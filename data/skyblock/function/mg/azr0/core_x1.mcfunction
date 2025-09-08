@@ -2,6 +2,7 @@
 execute store result score MG_AZR0_rng rng7 if entity @e[tag=MG_AZR0MOB,type=!endermite]
 execute if score MG_AZR0_Timer rng3 matches 0.. run scoreboard players remove MG_AZR0_Timer rng3 1
 execute if score MG_AZR0_Timer rng3 matches 0..5 if score MG_AZR0_rng rng7 matches 50.. run scoreboard players add MG_AZR0_Timer rng3 1
+execute if score MG_AZR0_Timer rng3 matches 0..5 if score MG_AZR0_rng rng7 matches ..49 if entity @n[tag=MG_AZR0BOSS] run scoreboard players add MG_AZR0_Timer rng3 1
 
 execute if score MG_AZR0_Timer rng3 matches 0 run bossbar set mg:azr0_bar name [{"text": "迎战敌人  第","color":"green","bold": true},{"score":{"name":"MG_AZR0_Timer","objective":"rng2"},"color":"green","bold": true},{"text": "波","color":"green","bold": true}]
 execute if score MG_AZR0_Timer rng3 matches 0 run bossbar set mg:azr0_bar color green
