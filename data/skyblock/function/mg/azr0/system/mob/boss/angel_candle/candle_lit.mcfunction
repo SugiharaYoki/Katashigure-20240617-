@@ -46,6 +46,7 @@ execute if score @s rng5 matches 59 as @n[tag=azr0_candle_angel_fireattack_marke
 
 execute if score @s rng5 matches 59.. run kill @n[tag=azr0_candle_angel_fireattack_marker1]
 execute if score @s rng5 matches 59.. run kill @n[tag=azr0_candle_angel_fireattack_marker2]
+execute if score @s rng5 matches 51.. run effect clear @s slowness
 execute if score @s rng5 matches 59.. run scoreboard players set @s rng8 -20
 execute if score @s rng5 matches 59.. run scoreboard players set @s rng5 0
 
