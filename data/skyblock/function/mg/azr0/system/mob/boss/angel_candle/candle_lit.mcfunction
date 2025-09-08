@@ -43,23 +43,23 @@ execute if score @s rng5 matches 55 as @n[tag=azr0_candle_angel_fireattack_marke
 execute if score @s rng5 matches 57 as @n[tag=azr0_candle_angel_fireattack_marker1] at @s positioned ^ ^ ^6.9 run summon marker ~ 4.0 ~ {Tags:["azr0_candle_angel_candle_marker"]}
 execute if score @s rng5 matches 59 as @n[tag=azr0_candle_angel_fireattack_marker1] at @s positioned ^ ^ ^8.9 run summon marker ~ 4.0 ~ {Tags:["azr0_candle_angel_candle_marker"]}
 
-execute if score @s[scores={Health=..29}] rng5 matches 51 as @n[tag=azr0_candle_angel_fireattack_marker1] at @s positioned ^1 ^ ^0.9 run summon marker ~ 4.0 ~ {Tags:["azr0_candle_angel_candle_marker"]}
-execute if score @s[scores={Health=..29}] rng5 matches 53 as @n[tag=azr0_candle_angel_fireattack_marker1] at @s positioned ^3 ^ ^2.9 run summon marker ~ 4.0 ~ {Tags:["azr0_candle_angel_candle_marker"]}
-execute if score @s[scores={Health=..29}] rng5 matches 55 as @n[tag=azr0_candle_angel_fireattack_marker1] at @s positioned ^5 ^ ^4.9 run summon marker ~ 4.0 ~ {Tags:["azr0_candle_angel_candle_marker"]}
-execute if score @s[scores={Health=..29}] rng5 matches 57 as @n[tag=azr0_candle_angel_fireattack_marker1] at @s positioned ^7 ^ ^6.9 run summon marker ~ 4.0 ~ {Tags:["azr0_candle_angel_candle_marker"]}
-execute if score @s[scores={Health=..29}] rng5 matches 59 as @n[tag=azr0_candle_angel_fireattack_marker1] at @s positioned ^9 ^ ^8.9 run summon marker ~ 4.0 ~ {Tags:["azr0_candle_angel_candle_marker"]}
+execute if score @s[scores={Health=..29}] rng5 matches 55 as @n[tag=azr0_candle_angel_fireattack_marker1] at @s positioned ^1 ^ ^0.9 run summon marker ~ 4.0 ~ {Tags:["azr0_candle_angel_candle_marker"]}
+execute if score @s[scores={Health=..29}] rng5 matches 57 as @n[tag=azr0_candle_angel_fireattack_marker1] at @s positioned ^3 ^ ^2.9 run summon marker ~ 4.0 ~ {Tags:["azr0_candle_angel_candle_marker"]}
+execute if score @s[scores={Health=..29}] rng5 matches 59 as @n[tag=azr0_candle_angel_fireattack_marker1] at @s positioned ^5 ^ ^4.9 run summon marker ~ 4.0 ~ {Tags:["azr0_candle_angel_candle_marker"]}
+execute if score @s[scores={Health=..29}] rng5 matches 61 as @n[tag=azr0_candle_angel_fireattack_marker1] at @s positioned ^7 ^ ^6.9 run summon marker ~ 4.0 ~ {Tags:["azr0_candle_angel_candle_marker"]}
+execute if score @s[scores={Health=..29}] rng5 matches 63 as @n[tag=azr0_candle_angel_fireattack_marker1] at @s positioned ^9 ^ ^8.9 run summon marker ~ 4.0 ~ {Tags:["azr0_candle_angel_candle_marker"]}
 
-execute if score @s[scores={Health=..29}] rng5 matches 51 as @n[tag=azr0_candle_angel_fireattack_marker1] at @s positioned ^-1 ^ ^0.9 run summon marker ~ 4.0 ~ {Tags:["azr0_candle_angel_candle_marker"]}
-execute if score @s[scores={Health=..29}] rng5 matches 53 as @n[tag=azr0_candle_angel_fireattack_marker1] at @s positioned ^-3 ^ ^2.9 run summon marker ~ 4.0 ~ {Tags:["azr0_candle_angel_candle_marker"]}
-execute if score @s[scores={Health=..29}] rng5 matches 55 as @n[tag=azr0_candle_angel_fireattack_marker1] at @s positioned ^-5 ^ ^4.9 run summon marker ~ 4.0 ~ {Tags:["azr0_candle_angel_candle_marker"]}
-execute if score @s[scores={Health=..29}] rng5 matches 57 as @n[tag=azr0_candle_angel_fireattack_marker1] at @s positioned ^-7 ^ ^6.9 run summon marker ~ 4.0 ~ {Tags:["azr0_candle_angel_candle_marker"]}
-execute if score @s[scores={Health=..29}] rng5 matches 59 as @n[tag=azr0_candle_angel_fireattack_marker1] at @s positioned ^-9 ^ ^8.9 run summon marker ~ 4.0 ~ {Tags:["azr0_candle_angel_candle_marker"]}
+execute if score @s[scores={Health=..29}] rng5 matches 55 as @n[tag=azr0_candle_angel_fireattack_marker1] at @s positioned ^-1 ^ ^0.9 run summon marker ~ 4.0 ~ {Tags:["azr0_candle_angel_candle_marker"]}
+execute if score @s[scores={Health=..29}] rng5 matches 57 as @n[tag=azr0_candle_angel_fireattack_marker1] at @s positioned ^-3 ^ ^2.9 run summon marker ~ 4.0 ~ {Tags:["azr0_candle_angel_candle_marker"]}
+execute if score @s[scores={Health=..29}] rng5 matches 59 as @n[tag=azr0_candle_angel_fireattack_marker1] at @s positioned ^-5 ^ ^4.9 run summon marker ~ 4.0 ~ {Tags:["azr0_candle_angel_candle_marker"]}
+execute if score @s[scores={Health=..29}] rng5 matches 61 as @n[tag=azr0_candle_angel_fireattack_marker1] at @s positioned ^-7 ^ ^6.9 run summon marker ~ 4.0 ~ {Tags:["azr0_candle_angel_candle_marker"]}
+execute if score @s[scores={Health=..29}] rng5 matches 63 as @n[tag=azr0_candle_angel_fireattack_marker1] at @s positioned ^-9 ^ ^8.9 run summon marker ~ 4.0 ~ {Tags:["azr0_candle_angel_candle_marker"]}
 
 
 
-execute if score @s rng5 matches 59.. run kill @n[tag=azr0_candle_angel_fireattack_marker1]
-execute if score @s rng5 matches 59.. run kill @n[tag=azr0_candle_angel_fireattack_marker2]
+execute if score @s rng5 matches 63.. run kill @n[tag=azr0_candle_angel_fireattack_marker1]
+execute if score @s rng5 matches 63.. run kill @n[tag=azr0_candle_angel_fireattack_marker2]
 execute if score @s rng5 matches 51.. run effect clear @s slowness
-execute if score @s rng5 matches 59.. run scoreboard players set @s rng8 -20
-execute if score @s rng5 matches 59.. run scoreboard players set @s rng5 0
+execute if score @s rng5 matches 63.. run scoreboard players set @s rng8 -20
+execute if score @s rng5 matches 63.. run scoreboard players set @s rng5 0
 
