@@ -1,10 +1,10 @@
 execute as @a[tag=MG_AZR0PT] at @s run function skyblock:mg/azr0/system/player/skill/emerald_wave
 
-execute if score MG_AZR0_Timer rng2 matches 20 run scoreboard players add MG_AZR0_Timer rng8 1000
-execute if score MG_AZR0_Timer rng2 matches 40 run scoreboard players add MG_AZR0_Timer rng8 1000
-execute if score MG_AZR0_Timer rng2 matches 60 run scoreboard players add MG_AZR0_Timer rng8 1000
-execute if score MG_AZR0_Timer rng2 matches 80 run scoreboard players add MG_AZR0_Timer rng8 1000
-execute if score MG_AZR0_Timer rng2 matches 100 run scoreboard players add MG_AZR0_Timer rng8 1000
+execute if score MG_AZR0_Timer rng2 matches 19 run scoreboard players add MG_AZR0_Timer rng8 1000
+execute if score MG_AZR0_Timer rng2 matches 39 run scoreboard players add MG_AZR0_Timer rng8 1000
+execute if score MG_AZR0_Timer rng2 matches 59 run scoreboard players add MG_AZR0_Timer rng8 1000
+execute if score MG_AZR0_Timer rng2 matches 79 run scoreboard players add MG_AZR0_Timer rng8 1000
+execute if score MG_AZR0_Timer rng2 matches 99 run scoreboard players add MG_AZR0_Timer rng8 1000
 
 
 execute if score MG_AZR0_Timer rng2 matches 20.. store result score MG_AZR0_rng rng1 run random value 10..30
