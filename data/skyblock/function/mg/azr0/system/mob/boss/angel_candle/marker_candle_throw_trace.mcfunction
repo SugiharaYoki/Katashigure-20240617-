@@ -21,7 +21,11 @@ execute if score @s rng1 matches 61 run summon marker ~2 4.0 ~ {Tags:["azr0_cand
 execute if score @s rng1 matches 61 run summon marker ~-2 4.0 ~ {Tags:["azr0_candle_angel_candle_marker"]}
 execute if score @s rng1 matches 61 run summon marker ~ 4.0 ~2 {Tags:["azr0_candle_angel_candle_marker"]}
 execute if score @s rng1 matches 61 run summon marker ~ 4.0 ~-2 {Tags:["azr0_candle_angel_candle_marker"]}
-execute if score @s rng1 matches 61.. run kill @s
+execute if score @s rng1 matches 64 run summon marker ~4 4.0 ~ {Tags:["azr0_candle_angel_candle_marker"]}
+execute if score @s rng1 matches 64 run summon marker ~-4 4.0 ~ {Tags:["azr0_candle_angel_candle_marker"]}
+execute if score @s rng1 matches 64 run summon marker ~ 4.0 ~4 {Tags:["azr0_candle_angel_candle_marker"]}
+execute if score @s rng1 matches 64 run summon marker ~ 4.0 ~-4 {Tags:["azr0_candle_angel_candle_marker"]}
+execute if score @s rng1 matches 64.. run kill @s
 
 
 
