@@ -12,7 +12,7 @@ execute as @s[tag=SEAfiona_act_attack] at @s run function skyblock:sea/e/ch6/fio
 execute as @s[tag=SEAfiona_act_laser_attack] at @s run tag @s add SEAfiona_laser_attacking
 
 
-
+say hi
 
 #菲尔娜技能组
 execute as @s[tag=SEAfiona_laser_attacking] at @s run function skyblock:sea/e/ch6/fiona/attack_laser
