@@ -15,8 +15,10 @@ execute if score @s rng5 matches 2..40 run rotate @s facing entity @p[tag=MG_AZR
 execute if score @s rng5 matches 41 run summon marker ~ ~ ~ {Tags:["azr0_candle_angel_fireattack_marker1"]}
 execute if score @s rng5 matches 41 run summon marker ~ ~ ~ {Tags:["azr0_candle_angel_fireattack_marker2"]}
 
-execute if score @s rng5 matches 41 run tp @n[tag=azr0_candle_angel_fireattack_marker1] ^ ^1 ^-0.1 facing entity @s
-execute if score @s rng5 matches 41 run tp @n[tag=azr0_candle_angel_fireattack_marker2] ^ ^1 ^-0.1 facing entity @s
+execute if score @s rng5 matches 41 run tp @n[tag=azr0_candle_angel_fireattack_marker1] ^ ^ ^-0.1
+execute if score @s rng5 matches 41 run tp @n[tag=azr0_candle_angel_fireattack_marker2] ^ ^ ^-0.1
+execute if score @s rng5 matches 41 run rotate @n[tag=azr0_candle_angel_fireattack_marker1] facing entity @s
+execute if score @s rng5 matches 41 run rotate @n[tag=azr0_candle_angel_fireattack_marker2] facing entity @s
 
 execute if score @s rng5 matches 41 as @n[tag=azr0_candle_angel_fireattack_marker1] at @s rotated as @s run rotate @s ~80 0
 execute if score @s rng5 matches 41 as @n[tag=azr0_candle_angel_fireattack_marker2] at @s rotated as @s run rotate @s ~-80 0
@@ -24,8 +26,8 @@ execute if score @s rng5 matches 41 as @n[tag=azr0_candle_angel_fireattack_marke
 execute if score @s rng5 matches 42 run playsound minecraft:entity.blaze.shoot hostile @a ~ ~ ~ 1 1.3
 execute if score @s rng5 matches 45 run playsound minecraft:entity.blaze.shoot hostile @a ~ ~ ~ 1 1.3
 execute if score @s rng5 matches 48 run playsound minecraft:entity.blaze.shoot hostile @a ~ ~ ~ 1 1.3
-execute if score @s rng5 matches 42..50 as @n[tag=azr0_candle_angel_fireattack_marker1] at @s positioned ^ ^ ^1.5 run particle flame ~ ~ ~ 0 0 0 0.00 3
-execute if score @s rng5 matches 42..50 as @n[tag=azr0_candle_angel_fireattack_marker2] at @s positioned ^ ^ ^1.5 run particle flame ~ ~ ~ 0 0 0 0.00 3
+execute if score @s rng5 matches 42..50 as @n[tag=azr0_candle_angel_fireattack_marker1] at @s positioned ^ ^ ^1.5 run particle flame ~ ~1.3 ~ 0 0 0 0.00 3
+execute if score @s rng5 matches 42..50 as @n[tag=azr0_candle_angel_fireattack_marker2] at @s positioned ^ ^ ^1.5 run particle flame ~ ~1.3 ~ 0 0 0 0.00 3
 execute if score @s rng5 matches 42..50 as @n[tag=azr0_candle_angel_fireattack_marker1] at @s positioned ^ ^ ^1.5 as @a[distance=0..1] at @s run damage @s 4 in_fire
 execute if score @s rng5 matches 42..50 as @n[tag=azr0_candle_angel_fireattack_marker2] at @s positioned ^ ^ ^1.5 as @a[distance=0..1] at @s run damage @s 4 in_fire
 execute if score @s rng5 matches 42..49 as @n[tag=azr0_candle_angel_fireattack_marker1] at @s rotated as @s run rotate @s ~-8 0
@@ -33,7 +35,7 @@ execute if score @s rng5 matches 42..49 as @n[tag=azr0_candle_angel_fireattack_m
 
 execute if score @s rng5 matches 51 run playsound minecraft:entity.blaze.shoot hostile @a ~ ~ ~ 1 1.3
 execute if score @s rng5 matches 51 run playsound entity.generic.explode hostile @a ~ ~ ~ 0.8 1.5
-execute if score @s rng5 matches 51 positioned ^ ^ ^1.5 run particle flame ~ ~ ~ 0 0 0 0.05 8
+execute if score @s rng5 matches 51 positioned ^ ^ ^1.5 run particle flame ~ ~1.3 ~ 0 0 0 0.05 8
 
 execute if score @s rng5 matches 51 as @n[tag=azr0_candle_angel_fireattack_marker1] at @s positioned ^ ^ ^0.9 run summon marker ~ 4.0 ~ {Tags:["azr0_candle_angel_candle_marker"]}
 execute if score @s rng5 matches 53 as @n[tag=azr0_candle_angel_fireattack_marker1] at @s positioned ^ ^ ^2.9 run summon marker ~ 4.0 ~ {Tags:["azr0_candle_angel_candle_marker"]}
