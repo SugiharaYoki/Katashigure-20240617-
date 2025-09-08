@@ -24,8 +24,8 @@ execute if score @s rng5 matches 41 run rotate @n[tag=azr0_candle_angel_fireatta
 execute if score @s rng5 matches 42 run playsound minecraft:entity.blaze.shoot hostile @a ~ ~ ~ 1 1.3
 execute if score @s rng5 matches 45 run playsound minecraft:entity.blaze.shoot hostile @a ~ ~ ~ 1 1.3
 execute if score @s rng5 matches 48 run playsound minecraft:entity.blaze.shoot hostile @a ~ ~ ~ 1 1.3
-execute if score @s rng5 matches 42..50 as @n[tag=azr0_candle_angel_fireattack_marker1] at @s positioned ^ ^ ^0.9 run particle flame ~ ~ ~ 0 0 0 0.05 3
-execute if score @s rng5 matches 42..50 as @n[tag=azr0_candle_angel_fireattack_marker2] at @s positioned ^ ^ ^0.9 run particle flame ~ ~ ~ 0 0 0 0.05 3
+execute if score @s rng5 matches 42..50 as @n[tag=azr0_candle_angel_fireattack_marker1] at @s positioned ^ ^ ^0.9 run particle flame ~ ~ ~ 0 0 0 0.00 3
+execute if score @s rng5 matches 42..50 as @n[tag=azr0_candle_angel_fireattack_marker2] at @s positioned ^ ^ ^0.9 run particle flame ~ ~ ~ 0 0 0 0.00 3
 execute if score @s rng5 matches 42..50 as @n[tag=azr0_candle_angel_fireattack_marker1] at @s positioned ^ ^ ^0.9 as @a[distance=0..1] at @s run damage @s 4 in_fire
 execute if score @s rng5 matches 42..50 as @n[tag=azr0_candle_angel_fireattack_marker2] at @s positioned ^ ^ ^0.9 as @a[distance=0..1] at @s run damage @s 4 in_fire
 execute if score @s rng5 matches 42..49 run rotate @n[tag=azr0_candle_angel_fireattack_marker1] ~-5 ~
@@ -38,8 +38,8 @@ execute if score @s rng5 matches 57 as @n[tag=azr0_candle_angel_fireattack_marke
 execute if score @s rng5 matches 59 as @n[tag=azr0_candle_angel_fireattack_marker1] at @s positioned ^ ^ ^4.9 run summon marker ~ ~ ~ {Tags:["azr0_candle_angel_candle_marker"]}
 
 
-execute if score @s rng5 matches 50.. run kill @n[tag=azr0_candle_angel_fireattack_marker1]
-execute if score @s rng5 matches 50.. run kill @n[tag=azr0_candle_angel_fireattack_marker2]
-execute if score @s rng5 matches 50.. run scoreboard players set @s rng8 0
-execute if score @s rng5 matches 50.. run scoreboard players set @s rng5 0
+execute if score @s rng5 matches 59.. run kill @n[tag=azr0_candle_angel_fireattack_marker1]
+execute if score @s rng5 matches 59.. run kill @n[tag=azr0_candle_angel_fireattack_marker2]
+execute if score @s rng5 matches 59.. run scoreboard players set @s rng8 0
+execute if score @s rng5 matches 59.. run scoreboard players set @s rng5 0
 
