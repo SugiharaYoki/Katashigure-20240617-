@@ -17,7 +17,6 @@ execute as @s[tag=SEAfiona_act_laser_attack] at @s run tag @s add SEAfiona_laser
 #菲尔娜技能组
 execute as @s[tag=SEAfiona_laser_attacking] at @s run function skyblock:sea/e/ch6/fiona/attack_laser
 execute as @s[tag=SEAfiona_laser_attacking_hostile] at @s run function skyblock:sea/e/ch6/fiona/attack_laser_hostile
-execute as @s[tag=SEAfiona] run effect give @s regeneration 5 5 true
 
 tag @s remove SEAfiona_act_attack
 tag @s remove SEAfiona_act_laser_attack
