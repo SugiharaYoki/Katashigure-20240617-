@@ -17,7 +17,11 @@ execute if score @s[scores={rng2=2}] rng1 matches 8.. run tp @s ^0.25 ^ ^
 execute if score @s[scores={rng2=2}] rng1 matches 8.. run tp @s ^-0.25 ^ ^
 
 execute if score @s rng1 matches 58 run summon marker ~ 4.0 ~ {Tags:["azr0_candle_angel_candle_marker"]}
-execute if score @s rng1 matches 58.. run kill @s
+execute if score @s rng1 matches 61 run summon marker ~2 4.0 ~ {Tags:["azr0_candle_angel_candle_marker"]}
+execute if score @s rng1 matches 61 run summon marker ~-2 4.0 ~ {Tags:["azr0_candle_angel_candle_marker"]}
+execute if score @s rng1 matches 61 run summon marker ~ 4.0 ~2 {Tags:["azr0_candle_angel_candle_marker"]}
+execute if score @s rng1 matches 61 run summon marker ~ 4.0 ~-2 {Tags:["azr0_candle_angel_candle_marker"]}
+execute if score @s rng1 matches 61.. run kill @s
 
 
 
