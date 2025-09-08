@@ -131,13 +131,13 @@ execute if block 90115 152 127 bamboo_button[powered=true] run fill 90115 150 12
 execute if block 90093 146 153 bamboo_button[powered=true] run fill 90092 144 154 90092 137 154 ladder[facing=west]
 
 
-execute as @n[tag=SEAmob_carrybomb,nbt=!{Fire:-1s}] run kill @s
+execute as @e[tag=SEAmob_carrybomb,x=90000,y=0,z=0,distance=..3000,type=zombie] at @s if entity @s[nbt=!{Fire:-1s}] run kill @s
 
 execute as @e[type=silverfish,tag=SEAmob,x=90000,y=0,z=0,distance=..3000,nbt=!{Fire:-1s}] run function skyblock:sea/p/silverfish
 
 #ch4激光
-execute as @e[x=90184.0,dx=3.8,y=20.65,dy=0,z=96.50,dz=0] run damage @s 3 sting
-execute as @e[x=90184.0,dx=3.8,y=18.55,dy=0,z=92.50,dz=0] run damage @s 3 sting
+execute if block 90074 103 137 scaffolding unless block 90074 103 136 lectern as @e[x=90184.0,dx=3.8,y=20.65,dy=0,z=96.50,dz=0] run damage @s 3 sting
+execute if block 90074 103 137 scaffolding unless block 90074 103 136 lectern as @e[x=90184.0,dx=3.8,y=18.55,dy=0,z=92.50,dz=0] run damage @s 3 sting
 
 #水晶祀堂
 execute positioned 90093 131 102 if entity @a[distance=0..12] run particle enchant 90093 131 102 3 2 3 0.01 20
@@ -166,3 +166,6 @@ execute if items block 90097 132 99 container.4 amethyst_shard if items block 90
 
 execute if score SEA_chg_true_end sea_4temp1 matches 1..100 positioned 90093 131 102 run function skyblock:sea/e/chg/true_end_the_crystal
 execute positioned 90102 149 131 if entity @a[tag=SEAPT,distance=..3.5,tag=!SEAPF] unless block 90102 150 130 air run function skyblock:sea/e/ch3/ev026_ch3_dorm_ston
+
+
+execute as @n[type=villager,tag=SEAfiona_actable,tag=SEAfiona] at @s run function skyblock:sea/e/ch6/fiona/core
