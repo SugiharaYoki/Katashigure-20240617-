@@ -12,4 +12,4 @@ tag @n[tag=SEAyuehan] remove SEAmob
 data modify entity @n[tag=SEAyuehan] NoAI set value 0b
 data modify entity @n[tag=SEAyuehan] Invulnerable set value 0b
 
-effect give @s regeneration infinite 5 true
+effect give @n[tag=SEAyuehan] regeneration infinite 5 true
