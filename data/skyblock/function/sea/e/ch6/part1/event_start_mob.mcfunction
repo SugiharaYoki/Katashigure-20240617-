@@ -1,6 +1,6 @@
 scoreboard players add SEA_ch6_event rng1 1
 
-execute if score SEA_ch6_event rng1 matches 1 run give @a[tag=SEAPT] nether_star
+execute if score SEA_ch6_event rng1 matches 1 run give @a[tag=SEAPT,scores={SEAPT_mode=1}] nether_star
 
 execute if score SEA_ch6_event rng1 matches 2 positioned 90127 137 142 run function skyblock:sea/m/visioner
 execute if score SEA_ch6_event rng1 matches 2 positioned 90127 137 142 run function skyblock:sea/m/visioner
