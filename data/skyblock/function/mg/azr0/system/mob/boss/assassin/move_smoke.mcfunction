@@ -39,12 +39,17 @@ execute if score @s rng5 matches 80 at @s run kill @e[type=marker,tag=azr0_boss_
 execute if score @s rng5 matches 81 at @s run particle sweep_attack ^ ^1.3 ^1.3 0 0 0 0 1
 execute if score @s rng5 matches 84 at @s run particle sweep_attack ^ ^1.3 ^1.3 0 0 0 0 1
 execute if score @s rng5 matches 87 at @s run particle sweep_attack ^ ^1.3 ^1.3 0 0 0 0 1
+execute if score @s[scores={Health=..89}] rng5 matches 90 at @s run particle sweep_attack ^ ^1.3 ^1.3 0 0 0 0 1
 execute if score @s rng5 matches 81 at @s positioned ^ ^ ^1.3 as @a[tag=MG_AZR0PT,distance=..1.1] at @s run damage @s 5 mob_attack by @n[tag=MG_AZR0BOSS_assassin]
 execute if score @s rng5 matches 84 at @s positioned ^ ^ ^1.3 as @a[tag=MG_AZR0PT,distance=..1.3] at @s run damage @s 5 mob_attack by @n[tag=MG_AZR0BOSS_assassin]
 execute if score @s rng5 matches 87 at @s positioned ^ ^ ^1.3 as @a[tag=MG_AZR0PT,distance=..1.5] at @s run damage @s 5 mob_attack by @n[tag=MG_AZR0BOSS_assassin]
+execute if score @s[scores={Health=..89}] rng5 matches 90 at @s positioned ^ ^ ^1.3 as @a[tag=MG_AZR0PT,distance=..1.5] at @s run damage @s 5 mob_attack by @n[tag=MG_AZR0BOSS_assassin]
 execute if score @s rng5 matches 81 at @s run playsound entity.player.attack.sweep hostile @a ~ ~ ~ 1 1.2
 execute if score @s rng5 matches 84 at @s run playsound entity.player.attack.sweep hostile @a ~ ~ ~ 1 1.2
 execute if score @s rng5 matches 87 at @s run playsound entity.player.attack.sweep hostile @a ~ ~ ~ 1 1.2
+execute if score @s[scores={Health=..89}] rng5 matches 90 at @s run playsound entity.player.attack.sweep hostile @a ~ ~ ~ 1 1.2
+
+
 
 
 execute if score @s rng5 matches 90.. run scoreboard players set @s rng8 -20
