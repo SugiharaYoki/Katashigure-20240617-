@@ -4,7 +4,7 @@ summon husk ~ ~ ~ {CustomName:'[{"text":"示剑刑者"}]',DeathLootTable:"skyblo
 
 
 
-effect give @e[tag=MG_AZR0BOSS_assassin_shadow,distance=..200] weakness infinite 2 true
+effect give @e[tag=MG_AZR0BOSS_assassin_shadow,distance=..200] weakness infinite 0 true
 
 
 
