@@ -3,6 +3,6 @@ execute as @s at @s if entity @a[tag=MG_AZR0PT,distance=0..1.8] run scoreboard p
 execute as @s at @s as @a[tag=MG_AZR0PT,distance=0..1.2] run effect give @s blindness 2 0 false
 execute as @s at @s as @a[tag=MG_AZR0PT,distance=0..1.8] run effect give @s blindness 1 0 false
 execute as @s at @s if entity @a[tag=MG_AZR0PT,distance=0..1.8] run scoreboard players add @s rng1 1
-execute as @s at @s run particle squid_ink ~ ~1 ~ 1.5 2.3 1.5 0.03 30
-execute as @s at @s run particle large_smoke ~ ~1.2 ~ 1.5 2.6 1.5 0.03 40
+execute as @s at @s run particle squid_ink ~ ~1 ~ 1 2.0 1 0.03 15
+execute as @s at @s run particle large_smoke ~ ~1.2 ~ 1 2.2 1 0.03 20
 execute as @s[scores={rng1=400..}] at @s run kill @s
