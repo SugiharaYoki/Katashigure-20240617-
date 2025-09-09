@@ -27,21 +27,24 @@ execute if score @s[scores={rng1=3..4}] rng5 matches 62 as @r[tag=MG_AZR0PT,dist
 execute if score @s[scores={rng1=3..4}] rng5 matches 62 at @n[type=marker,tag=azr0_boss_assassin_tp_pos] run tp @s ~ ~ ~ facing entity @p[tag=MG_AZR0PT]
 execute if score @s[scores={rng1=3..4}] rng5 matches 64..65 at @s run tp @s ~ ~ ~ facing entity @p[tag=MG_AZR0PT]
 
-execute if score @s rng5 matches 70 at @s run tp @s ~ ~ ~ facing entity @p[tag=MG_AZR0PT]
-execute if score @s rng5 matches 70 at @s positioned 0.0 0 0.0 run summon marker ^ ^0.2 ^2.4 {Tags:["azr0_boss_assassin_jump_pos"]}
-execute if score @s rng5 matches 70 at @s run data modify entity @s Motion set from entity @n[type=marker,tag=azr0_boss_assassin_jump_pos] Pos
-execute if score @s rng5 matches 70 at @s run kill @e[type=marker,tag=azr0_boss_assassin_jump_pos]
-execute if score @s rng5 matches 70 at @s run kill @e[type=marker,tag=azr0_boss_assassin_tp_pos]
+execute if score @s rng5 matches 1..20 run particle minecraft:angry_villager ~ ~1.3 ~ 0.3 0.3 0.3 0.5 10
+execute if score @s rng5 matches 2 run playsound minecraft:block.note_block.xylophone hostile @a ~ ~ ~ 1 0.7
 
-execute if score @s rng5 matches 71 at @s run particle sweep_attack ^ ^1.3 ^1.3 0 0 0 0 1
-execute if score @s rng5 matches 74 at @s run particle sweep_attack ^ ^1.3 ^1.3 0 0 0 0 1
-execute if score @s rng5 matches 77 at @s run particle sweep_attack ^ ^1.3 ^1.3 0 0 0 0 1
-execute if score @s rng5 matches 71 at @s positioned ^ ^ ^1.3 as @a[tag=MG_AZR0PT,distance=..1.1] at @s run damage @s 5 mob_attack by @n[tag=MG_AZR0BOSS_assassin]
-execute if score @s rng5 matches 74 at @s positioned ^ ^ ^1.3 as @a[tag=MG_AZR0PT,distance=..1.3] at @s run damage @s 5 mob_attack by @n[tag=MG_AZR0BOSS_assassin]
-execute if score @s rng5 matches 77 at @s positioned ^ ^ ^1.3 as @a[tag=MG_AZR0PT,distance=..1.5] at @s run damage @s 5 mob_attack by @n[tag=MG_AZR0BOSS_assassin]
-execute if score @s rng5 matches 71 at @s run playsound entity.player.attack.sweep hostile @a ~ ~ ~ 1 1.2
-execute if score @s rng5 matches 74 at @s run playsound entity.player.attack.sweep hostile @a ~ ~ ~ 1 1.2
-execute if score @s rng5 matches 77 at @s run playsound entity.player.attack.sweep hostile @a ~ ~ ~ 1 1.2
+execute if score @s rng5 matches 80 at @s run tp @s ~ ~ ~ facing entity @p[tag=MG_AZR0PT]
+execute if score @s rng5 matches 80 at @s positioned 0.0 0 0.0 run summon marker ^ ^0.2 ^2.4 {Tags:["azr0_boss_assassin_jump_pos"]}
+execute if score @s rng5 matches 80 at @s run data modify entity @s Motion set from entity @n[type=marker,tag=azr0_boss_assassin_jump_pos] Pos
+execute if score @s rng5 matches 80 at @s run kill @e[type=marker,tag=azr0_boss_assassin_jump_pos]
+execute if score @s rng5 matches 80 at @s run kill @e[type=marker,tag=azr0_boss_assassin_tp_pos]
+
+execute if score @s rng5 matches 81 at @s run particle sweep_attack ^ ^1.3 ^1.3 0 0 0 0 1
+execute if score @s rng5 matches 84 at @s run particle sweep_attack ^ ^1.3 ^1.3 0 0 0 0 1
+execute if score @s rng5 matches 87 at @s run particle sweep_attack ^ ^1.3 ^1.3 0 0 0 0 1
+execute if score @s rng5 matches 81 at @s positioned ^ ^ ^1.3 as @a[tag=MG_AZR0PT,distance=..1.1] at @s run damage @s 5 mob_attack by @n[tag=MG_AZR0BOSS_assassin]
+execute if score @s rng5 matches 84 at @s positioned ^ ^ ^1.3 as @a[tag=MG_AZR0PT,distance=..1.3] at @s run damage @s 5 mob_attack by @n[tag=MG_AZR0BOSS_assassin]
+execute if score @s rng5 matches 87 at @s positioned ^ ^ ^1.3 as @a[tag=MG_AZR0PT,distance=..1.5] at @s run damage @s 5 mob_attack by @n[tag=MG_AZR0BOSS_assassin]
+execute if score @s rng5 matches 81 at @s run playsound entity.player.attack.sweep hostile @a ~ ~ ~ 1 1.2
+execute if score @s rng5 matches 84 at @s run playsound entity.player.attack.sweep hostile @a ~ ~ ~ 1 1.2
+execute if score @s rng5 matches 87 at @s run playsound entity.player.attack.sweep hostile @a ~ ~ ~ 1 1.2
 
 
 execute if score @s rng5 matches 90.. run scoreboard players set @s rng8 -20
