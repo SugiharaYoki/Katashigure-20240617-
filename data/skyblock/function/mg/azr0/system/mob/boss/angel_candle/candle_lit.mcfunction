@@ -30,6 +30,8 @@ execute if score @s rng5 matches 42..50 as @n[tag=azr0_candle_angel_fireattack_m
 execute if score @s rng5 matches 42..50 as @n[tag=azr0_candle_angel_fireattack_marker2] at @s positioned ^ ^ ^1.5 run particle flame ~ ~1.3 ~ 0 0 0 0.00 1
 execute if score @s rng5 matches 42..50 as @n[tag=azr0_candle_angel_fireattack_marker1] at @s positioned ^ ^ ^1.5 as @a[distance=0..1] at @s run damage @s 4 in_fire
 execute if score @s rng5 matches 42..50 as @n[tag=azr0_candle_angel_fireattack_marker2] at @s positioned ^ ^ ^1.5 as @a[distance=0..1] at @s run damage @s 4 in_fire
+execute if score @s rng5 matches 42..50 as @n[tag=azr0_candle_angel_fireattack_marker1] at @s positioned ^ ^ ^1.5 as @e[distance=0..1,tag=MG_AZR0SPIRIT] at @s run damage @s 8 in_fire
+execute if score @s rng5 matches 42..50 as @n[tag=azr0_candle_angel_fireattack_marker2] at @s positioned ^ ^ ^1.5 as @e[distance=0..1,tag=MG_AZR0SPIRIT] at @s run damage @s 8 in_fire
 execute if score @s rng5 matches 42..49 as @n[tag=azr0_candle_angel_fireattack_marker1] at @s rotated as @s run rotate @s ~-8 0
 execute if score @s rng5 matches 42..49 as @n[tag=azr0_candle_angel_fireattack_marker2] at @s rotated as @s run rotate @s ~8 0
 

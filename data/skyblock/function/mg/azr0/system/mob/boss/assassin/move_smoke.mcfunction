@@ -44,6 +44,10 @@ execute if score @s rng5 matches 81 at @s positioned ^ ^ ^1.3 as @a[tag=MG_AZR0P
 execute if score @s rng5 matches 84 at @s positioned ^ ^ ^1.3 as @a[tag=MG_AZR0PT,distance=..1.3] at @s run damage @s 5 mob_attack by @n[tag=MG_AZR0BOSS_assassin]
 execute if score @s rng5 matches 87 at @s positioned ^ ^ ^1.3 as @a[tag=MG_AZR0PT,distance=..1.5] at @s run damage @s 5 mob_attack by @n[tag=MG_AZR0BOSS_assassin]
 execute if score @s[scores={Health=..89}] rng5 matches 90 at @s positioned ^ ^ ^1.3 as @a[tag=MG_AZR0PT,distance=..1.5] at @s run damage @s 5 mob_attack by @n[tag=MG_AZR0BOSS_assassin]
+execute if score @s rng5 matches 81 at @s positioned ^ ^ ^1.3 as @e[tag=MG_AZR0SPIRIT,distance=..1.1] at @s run damage @s 8 mob_attack by @n[tag=MG_AZR0BOSS_assassin]
+execute if score @s rng5 matches 84 at @s positioned ^ ^ ^1.3 as @e[tag=MG_AZR0SPIRIT,distance=..1.3] at @s run damage @s 8 mob_attack by @n[tag=MG_AZR0BOSS_assassin]
+execute if score @s rng5 matches 87 at @s positioned ^ ^ ^1.3 as @e[tag=MG_AZR0SPIRIT,distance=..1.5] at @s run damage @s 8 mob_attack by @n[tag=MG_AZR0BOSS_assassin]
+execute if score @s[scores={Health=..89}] rng5 matches 90 at @s positioned ^ ^ ^1.3 as @e[tag=MG_AZR0SPIRIT,distance=..1.5] at @s run damage @s 8 mob_attack by @n[tag=MG_AZR0BOSS_assassin]
 execute if score @s rng5 matches 81 at @s run playsound entity.player.attack.sweep hostile @a ~ ~ ~ 1 1.2
 execute if score @s rng5 matches 84 at @s run playsound entity.player.attack.sweep hostile @a ~ ~ ~ 1 1.2
 execute if score @s rng5 matches 87 at @s run playsound entity.player.attack.sweep hostile @a ~ ~ ~ 1 1.2

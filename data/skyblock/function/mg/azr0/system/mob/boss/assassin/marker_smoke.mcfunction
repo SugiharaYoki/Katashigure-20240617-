@@ -22,5 +22,7 @@ execute as @s[scores={rng1=200..},tag=azr0_assassin_smoke_marker_bomb] at @s run
 execute as @s[scores={rng1=250..},tag=azr0_assassin_smoke_marker_bomb] at @s run playsound entity.generic.explode block @a ~ ~ ~ 1 1.2
 execute as @s[scores={rng1=250..},tag=azr0_assassin_smoke_marker_bomb] at @s run particle explosion_emitter ~ ~1 ~ 0 0 0 0 1
 execute as @s[scores={rng1=250..},tag=azr0_assassin_smoke_marker_bomb] at @s as @a[distance=..2.8] at @s run damage @s 8 explosion
+execute as @s[scores={rng1=250..},tag=azr0_assassin_smoke_marker_bomb] at @s as @e[tag=MG_AZR0SPIRIT,distance=..3.2] at @s run damage @s 12 explosion
+
 execute as @s[scores={rng1=250..},tag=azr0_assassin_smoke_marker_bomb] at @s run kill @s
 

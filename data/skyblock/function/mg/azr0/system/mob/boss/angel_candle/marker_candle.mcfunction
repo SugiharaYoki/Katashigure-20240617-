@@ -10,6 +10,8 @@ execute if score @s rng1 matches 28 run playsound minecraft:block.lava.pop block
 execute if score @s rng1 matches 28 run playsound minecraft:entity.firework_rocket.blast block @a ~ ~ ~ 1 0.5
 execute if score @s rng1 matches 28 run particle minecraft:lava ~ ~ ~ 0.6 0 0.6 5 80
 execute if score @s rng1 matches 28.. as @a[tag=MG_AZR0PT,distance=..1.0] at @s run damage @s 6 in_fire
+execute if score @s rng1 matches 28.. as @e[tag=MG_AZR0SPIRIT,distance=..1.0] at @s run damage @s 12 in_fire
+
 execute if score @s rng1 matches 28.. run kill @s
 
 
