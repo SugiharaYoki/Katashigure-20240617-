@@ -13,6 +13,7 @@ execute if score MG_AZR0_Timer rng2 matches 80..99 store result score MG_AZR0_rn
 execute if score MG_AZR0_Timer rng2 matches 100.. store result score MG_AZR0_rng rng3 run random value -10..83
 
 execute if score MG_AZR0_Timer rng8 matches 8000.. if score MG_AZR0_Timer rng2 matches 20..39 store result score MG_AZR0_rng rng3 run random value 3000..3010
+execute if score MG_AZR0_Timer rng8 matches 8000.. if score MG_AZR0_Timer rng2 matches 40..59 store result score MG_AZR0_rng rng3 run random value 3011..3020
 
 execute if score MG_AZR0_rng rng3 matches -30..10 at @e[tag=mg_azr0_MobPortals,type=marker,limit=1,sort=random] run function skyblock:mg/azr0/m/zombie
 execute unless entity @a[tag=MG_AZR0PT,scores={Azr0_UPG_hp=..2}] if score MG_AZR0_rng rng3 matches 11..16 at @e[tag=mg_azr0_MobPortals,type=marker,limit=1,sort=random] run function skyblock:mg/azr0/m/pillager
@@ -33,6 +34,7 @@ execute if score MG_AZR0_rng rng3 matches 80..83 at @e[tag=mg_azr0_MobPortals,ty
 
 
 execute if score MG_AZR0_rng rng3 matches 3000..3010 at @e[tag=mg_azr0_MobPortals,type=marker,limit=1,sort=random] run function skyblock:mg/azr0/system/mob/boss/angel_candle/summon
+execute if score MG_AZR0_rng rng3 matches 3011..3020 at @e[tag=mg_azr0_MobPortals,type=marker,limit=1,sort=random] run function skyblock:mg/azr0/system/mob/boss/assassin/summon
 
 
 execute if score MG_AZR0_Timer rng2 matches 50..99 store result score MG_AZR0_rng rng3 run random value 1..600
