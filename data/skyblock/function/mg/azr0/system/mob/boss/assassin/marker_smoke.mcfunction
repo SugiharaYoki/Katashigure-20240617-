@@ -18,8 +18,8 @@ execute as @s[scores={rng1=200}] if entity @s[scores={rng4=1}] run tag @s add az
 
 execute as @s[scores={rng1=200..},tag=azr0_assassin_smoke_marker_bomb] at @s run particle small_flame ~ ~1.2 ~ 1 2.2 1 0.03 20
 
-execute as @s[scores={rng1=300..},tag=azr0_assassin_smoke_marker_bomb] at @s run playsound entity.generic.explode block @a ~ ~ ~ 1 1.2
-execute as @s[scores={rng1=300..},tag=azr0_assassin_smoke_marker_bomb] at @s run particle explosion_emitter ~ ~1 ~ 0 0 0 0 1
-execute as @s[scores={rng1=300..},tag=azr0_assassin_smoke_marker_bomb] at @s as @a[distance=..2.8] at @s run damage @s 8 explosion
-execute as @s[scores={rng1=300..},tag=azr0_assassin_smoke_marker_bomb] at @s run kill @s
+execute as @s[scores={rng1=250..},tag=azr0_assassin_smoke_marker_bomb] at @s run playsound entity.generic.explode block @a ~ ~ ~ 1 1.2
+execute as @s[scores={rng1=250..},tag=azr0_assassin_smoke_marker_bomb] at @s run particle explosion_emitter ~ ~1 ~ 0 0 0 0 1
+execute as @s[scores={rng1=250..},tag=azr0_assassin_smoke_marker_bomb] at @s as @a[distance=..2.8] at @s run damage @s 8 explosion
+execute as @s[scores={rng1=250..},tag=azr0_assassin_smoke_marker_bomb] at @s run kill @s
 
