@@ -43,6 +43,7 @@ execute if score @s[scores={rng1=4}] rng5 matches 62..105 at @n[type=marker,tag=
 execute if score @s[scores={rng1=4}] rng5 matches 64..105 at @s run tp @s ~ ~ ~ facing entity @p[tag=MG_AZR0PT]
 
 scoreboard players set @s rng1 0
+execute if score @s rng5 matches 64..105 at @s run kill @n[type=marker,tag=azr0_boss_assassin_tp_pos]
 
 execute if score @s rng5 matches 104 run scoreboard players set @s rng5 166
 
