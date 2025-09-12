@@ -12,7 +12,7 @@ execute if score @s[tag=azr0_axe_angel_attack_throw_backward] rng1 matches 1 at 
 
 execute if score @s[tag=!azr0_axe_angel_attack_throw_high] rng1 matches 1 at @s rotated as @s run tp @s ~ ~0.3 ~
 execute if score @s[tag=azr0_axe_angel_attack_throw_high] rng1 matches 1 at @s rotated as @s run tp @s ~ ~1.8 ~
-execute if score @s rng1 matches 1.. run tp @s ^ ^ ^1
+execute if score @s rng1 matches 1.. rotated ~ 0 run tp @s ^ ^ ^1
 
 
 #particle wax_on ^-2.5 ^ ^0.1 0 0 0 0 1

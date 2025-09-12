@@ -8,7 +8,7 @@ execute if score @s[tag=azr0_axe_angel_attack_throw_right] rng1 matches 1 at @n[
 execute if score @s[tag=azr0_axe_angel_attack_throw_backward] rng1 matches 1 at @n[tag=MG_AZR0BOSS_axe_angel,distance=..50] rotated as @n[tag=MG_AZR0BOSS_axe_angel,distance=..5] run tp @s ^ ^ ^1 facing entity @n[tag=MG_AZR0BOSS_axe_angel,distance=..5]
 
 
-execute if score @s rng1 matches 18.. run tp @s ^ ^ ^1
+execute if score @s rng1 matches 18.. rotated ~ 0 run tp @s ^ ^ ^1
 
 
 execute if score @s rng1 matches 18.. at @s[tag=!azr0_axe_angel_attack_throw_high] run particle sweep_attack ^ ^0.4 ^0.4 0 0 0 0 1
