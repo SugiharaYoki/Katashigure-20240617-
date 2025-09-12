@@ -15,7 +15,7 @@ execute if score @s rng5 matches 1..20 at @s run tp @s ~ ~ ~ facing entity @p[ta
 
 
 
-execute if score @s rng5 matches 3..8 run particle minecraft:angry_villager ~ ~1.3 ~ 0.3 0.3 0.3 0.5 10
+execute if score @s rng5 matches 3..8 run particle minecraft:angry_villager ~ ~1.3 ~ 0.3 0.3 0.3 0.5 3
 
 execute if score @s rng5 matches 30 run playsound minecraft:block.note_block.xylophone hostile @a ~ ~ ~ 1 0.7
 
