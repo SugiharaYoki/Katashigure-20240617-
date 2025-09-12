@@ -91,7 +91,7 @@ scoreboard objectives add Azr_SK16 dummy
 function skyblock:azr/assets/events/effects/wish_fountain_transfer
 
 # 友好生物处理（在本服务器上无效）
-team join AzrPlayer @e[tag=AzrielFriendly]
+execute as @p[tag=azrPlayer] at @s as @n[tag=AzrielFriendly,team=!AzrPlayer,distance=0..2000] run team join AzrPlayer @s
 
 # 玩家函数
 scoreboard players reset $playerExists Azr_system
