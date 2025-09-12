@@ -11,6 +11,7 @@ execute if score @s rng5 matches 2 run playsound entity.illusioner.cast_spell ho
 execute if score @s rng5 matches 2 run playsound minecraft:entity.husk.ambient hostile @a ~ ~ ~ 1 0.5
 execute if score @s rng5 matches 2 run effect give @s slowness 1 39 true
 execute if score @s rng5 matches 12..30 run particle witch ~ ~ ~ 0.5 0 0.5 0.5 6
+execute if score @s rng5 matches 12 run kill @e[distance=..200,type=husk,tag=MG_AZR0BOSS_assassin_shadow]
 
 execute if score @s rng5 matches 31 store result score @s rng1 run random value 1..5
 execute if score @s[scores={Health=..59}] rng5 matches 31 store result score @s rng1 run random value 1..9
