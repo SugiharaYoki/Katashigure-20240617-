@@ -1,6 +1,5 @@
 {
     "values": [
-        "fp_core:application/main",
         "skyblock:tick",
         "24_point_da651c:tick"
     ]
