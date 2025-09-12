@@ -25,7 +25,8 @@ execute as @a[tag=City_DoubleJumpPass] at @s unless block ~ ~-0.1 ~ air run tag 
 execute positioned 124733.22 -10.00 -126.36 run function skyblock:mg/warbridge/command_block
 #qq炫舞
 execute if entity @a[tag=Gaming,tag=MG_qqd] run function skyblock:mg/qqdance/core
-
+#cdc
+execute if block 0 61 113 minecraft:soul_campfire run function skyblock:mg/cdc_core
 
 #execute positioned -43 54 0 as @p[tag=Gaming,distance=0..5] at @s run tag @s remove Gaming
 

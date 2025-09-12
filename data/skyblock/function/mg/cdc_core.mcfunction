@@ -1,4 +1,7 @@
 execute unless entity @a[tag=mg_cdc] as @a[x=0,y=57,z=100,distance=0..1.2,gamemode=!spectator] at @s run tag @s add mg_cdc
+
+execute positioned 0 57 100 run kill @e[limit=3,distance=0..1.8,type=!player]
+
 execute as @a[x=0,y=57,z=100,distance=1.2..] at @s run tag @s remove mg_cdc
 execute as @a[x=0,y=57,z=100,distance=1.2..,tag=mg_cdc_start] at @s run scoreboard players operation @s mg_cdc_kill_best > @s mg_cdc_kill
 execute as @a[x=0,y=57,z=100,distance=1.2..,tag=mg_cdc_start] at @s run tellraw @s {"text":"『水晶防御弩台』游戏结束","color":"red","bold":true}
