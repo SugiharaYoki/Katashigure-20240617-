@@ -1,9 +1,0 @@
-execute if score Tree.run.target function_memory matches 1990 store success score Tree.run.out_of_range function_memory run function fp_core:funcs/tree_list/1990
-execute if score Tree.run.target function_memory matches 1991 store success score Tree.run.out_of_range function_memory run function fp_core:funcs/tree_list/1991
-execute if score Tree.run.target function_memory matches 1992 store success score Tree.run.out_of_range function_memory run function fp_core:funcs/tree_list/1992
-execute if score Tree.run.target function_memory matches 1993 store success score Tree.run.out_of_range function_memory run function fp_core:funcs/tree_list/1993
-execute if score Tree.run.target function_memory matches 1994 store success score Tree.run.out_of_range function_memory run function fp_core:funcs/tree_list/1994
-execute if score Tree.run.target function_memory matches 1995 store success score Tree.run.out_of_range function_memory run function fp_core:funcs/tree_list/1995
-execute if score Tree.run.target function_memory matches 1996 store success score Tree.run.out_of_range function_memory run function fp_core:funcs/tree_list/1996
-execute if score Tree.run.target function_memory matches 1997 store success score Tree.run.out_of_range function_memory run function fp_core:funcs/tree_list/1997
-execute if score Tree.run.target function_memory matches 1998 store success score Tree.run.out_of_range function_memory run function fp_core:funcs/tree_list/1998

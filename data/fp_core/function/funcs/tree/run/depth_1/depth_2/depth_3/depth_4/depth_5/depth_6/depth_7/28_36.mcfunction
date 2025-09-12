@@ -1,9 +1,0 @@
-execute if score Tree.run.target function_memory matches 28 store success score Tree.run.out_of_range function_memory run function fp_core:funcs/tree_list/28
-execute if score Tree.run.target function_memory matches 29 store success score Tree.run.out_of_range function_memory run function fp_core:funcs/tree_list/29
-execute if score Tree.run.target function_memory matches 30 store success score Tree.run.out_of_range function_memory run function fp_core:funcs/tree_list/30
-execute if score Tree.run.target function_memory matches 31 store success score Tree.run.out_of_range function_memory run function fp_core:funcs/tree_list/31
-execute if score Tree.run.target function_memory matches 32 store success score Tree.run.out_of_range function_memory run function fp_core:funcs/tree_list/32
-execute if score Tree.run.target function_memory matches 33 store success score Tree.run.out_of_range function_memory run function fp_core:funcs/tree_list/33
-execute if score Tree.run.target function_memory matches 34 store success score Tree.run.out_of_range function_memory run function fp_core:funcs/tree_list/34
-execute if score Tree.run.target function_memory matches 35 store success score Tree.run.out_of_range function_memory run function fp_core:funcs/tree_list/35
-execute if score Tree.run.target function_memory matches 36 store success score Tree.run.out_of_range function_memory run function fp_core:funcs/tree_list/36

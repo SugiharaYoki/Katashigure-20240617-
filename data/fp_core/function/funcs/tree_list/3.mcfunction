@@ -1,1 +1,0 @@
-execute rotated as @p run summon minecraft:marker ~ ~ ~ {Tags:["fp_entity","init_self","IGNORE_physicalDamageListener","DUST_glow","EVENT_auto_rotate","MOVE_drift_narrow","MOVE_fast"],data:{scores:{fp_life:40},Listener:{initListener:[{initialized:2}]}}}
