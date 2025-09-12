@@ -20,13 +20,13 @@ execute if score @s[scores={rng1=1..2}] rng5 matches 62 as @r[tag=MG_AZR0PT,dist
 execute if score @s[scores={rng1=1..2}] rng5 matches 62 as @r[tag=MG_AZR0PT,distance=..200] at @s rotated ~ 0 positioned ^ ^ ^3.3 run particle portal ~ ~1 ~ 0.5 1 0.5 0 20
 execute if score @s[scores={rng1=1..2}] rng5 matches 62 as @r[tag=MG_AZR0PT,distance=..200] at @s rotated ~ 0 positioned ^ ^ ^3.3 run summon marker ~ ~ ~ {Tags:["azr0_boss_assassin_tp_pos"]}
 execute if score @s[scores={rng1=1..2}] rng5 matches 62 at @n[type=marker,tag=azr0_boss_assassin_tp_pos] run tp @s ~ ~ ~ facing entity @p[tag=MG_AZR0PT]
-execute if score @s[scores={rng1=1..2}] rng5 matches 64..65 at @s run tp @s ~ ~ ~ facing entity @p[tag=MG_AZR0PT]
+execute if score @s[scores={rng1=1..2}] rng5 matches 64..67 at @s run tp @s ~ ~ ~ facing entity @p[tag=MG_AZR0PT]
 
 execute if score @s[scores={rng1=3..4}] rng5 matches 62 as @r[tag=MG_AZR0PT,distance=..200] at @s rotated ~ 0 positioned ^ ^ ^-3 run playsound entity.enderman.teleport hostile @a ~ ~ ~ 1 0.8
 execute if score @s[scores={rng1=3..4}] rng5 matches 62 as @r[tag=MG_AZR0PT,distance=..200] at @s rotated ~ 0 positioned ^ ^ ^-3 run particle portal ~ ~1 ~ 0.5 1 0.5 0 20
 execute if score @s[scores={rng1=3..4}] rng5 matches 62 as @r[tag=MG_AZR0PT,distance=..200] at @s rotated ~ 0 positioned ^ ^ ^-3 run summon marker ~ ~ ~ {Tags:["azr0_boss_assassin_tp_pos"]}
 execute if score @s[scores={rng1=3..4}] rng5 matches 62 at @n[type=marker,tag=azr0_boss_assassin_tp_pos] run tp @s ~ ~ ~ facing entity @p[tag=MG_AZR0PT]
-execute if score @s[scores={rng1=3..4}] rng5 matches 62..67 at @s run tp @s ~ ~ ~ facing entity @p[tag=MG_AZR0PT]
+execute if score @s[scores={rng1=3..4}] rng5 matches 64..67 at @s run tp @s ~ ~ ~ facing entity @p[tag=MG_AZR0PT]
 
 execute if score @s rng5 matches 70 run particle minecraft:angry_villager ~ ~1.3 ~ 0.3 0.3 0.3 0.5 10
 execute if score @s rng5 matches 70 run playsound minecraft:block.note_block.xylophone hostile @a ~ ~ ~ 1 0.7
