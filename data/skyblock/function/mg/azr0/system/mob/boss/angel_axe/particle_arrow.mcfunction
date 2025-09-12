@@ -8,9 +8,9 @@ execute if score @s rng1 matches 1 at @s rotated as @s run tp @s ~ ~0.3 ~
 execute if score @s rng1 matches 1.. run tp @s ^ ^ ^1
 
 
-particle wax_on ^-2.5 ^ ^0.1 0 0 0 0 1
-particle wax_on ^-2.25 ^ ^0.2 0 0 0 0 1
-particle wax_on ^-2 ^ ^0.3 0 0 0 0 1
+#particle wax_on ^-2.5 ^ ^0.1 0 0 0 0 1
+#particle wax_on ^-2.25 ^ ^0.2 0 0 0 0 1
+#particle wax_on ^-2 ^ ^0.3 0 0 0 0 1
 particle wax_on ^-1.75 ^ ^0.4 0 0 0 0 1
 particle wax_on ^-1.5 ^ ^0.5 0 0 0 0 1
 particle wax_on ^-1.25 ^ ^0.6 0 0 0 0 1
@@ -26,9 +26,9 @@ particle wax_on ^1 ^ ^0.7 0 0 0 0 1
 particle wax_on ^1.25 ^ ^0.6 0 0 0 0 1
 particle wax_on ^1.5 ^ ^0.5 0 0 0 0 1
 particle wax_on ^1.75 ^ ^0.4 0 0 0 0 1
-particle wax_on ^2 ^ ^0.3 0 0 0 0 1
-particle wax_on ^2.25 ^ ^0.2 0 0 0 0 1
-particle wax_on ^2.5 ^ ^0.1 0 0 0 0 1
+#particle wax_on ^2 ^ ^0.3 0 0 0 0 1
+#particle wax_on ^2.25 ^ ^0.2 0 0 0 0 1
+#particle wax_on ^2.5 ^ ^0.1 0 0 0 0 1
 
 
 

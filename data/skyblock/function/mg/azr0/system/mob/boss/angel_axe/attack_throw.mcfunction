@@ -23,8 +23,8 @@ execute if score @s rng5 matches 30 run summon marker ~ 4.0 ~ {Tags:["azr0_axe_a
 
 
 
-execute if score @s rng5 matches 90.. run scoreboard players set @s rng8 -20
-execute if score @s rng5 matches 90.. run scoreboard players set @s rng5 0
+execute if score @s rng5 matches 60.. run scoreboard players set @s rng8 -10
+execute if score @s rng5 matches 60.. run scoreboard players set @s rng5 0
 
 
 
