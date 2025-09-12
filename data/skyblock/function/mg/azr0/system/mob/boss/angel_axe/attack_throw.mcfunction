@@ -9,6 +9,7 @@ scoreboard players add @s rng5 1
 execute if score @s rng5 matches 1..20 run particle enchant ~ ~1 ~ 1 1 1 0.5 6
 execute if score @s rng5 matches 2 run playsound entity.illusioner.cast_spell hostile @a ~ ~ ~ 5 0.8
 
+execute if score @s rng1 matches 2 run effect give @s slowness 2 39 true
 
 execute if score @s rng5 matches 1..20 at @s run tp @s ~ ~ ~ facing entity @p[tag=MG_AZR0PT]
 
