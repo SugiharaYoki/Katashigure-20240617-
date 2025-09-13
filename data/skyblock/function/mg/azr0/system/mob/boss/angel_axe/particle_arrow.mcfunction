@@ -21,15 +21,15 @@ execute if score @s rng1 matches 1.. at @s rotated ~ 0 run tp @s ^ ^ ^1
 #particle wax_on ^-1.75 ^ ^0.4 0 0 0 0 1
 #particle wax_on ^-1.5 ^ ^0.5 0 0 0 0 1
 #particle wax_on ^-1.25 ^ ^0.6 0 0 0 0 1
-execute if score @s rng1 matches 1.. run particle wax_on ^-1 ^ ^0.7 0 0 0 0 1
-execute if score @s rng1 matches 1.. run particle wax_on ^-0.75 ^ ^0.8 0 0 0 0 1
-execute if score @s rng1 matches 1.. run particle wax_on ^-0.5 ^ ^0.9 0 0 0 0 1
-execute if score @s rng1 matches 1.. run particle wax_on ^-0.25 ^ ^1 0 0 0 0 1
-execute if score @s rng1 matches 1.. run particle wax_on ^ ^ ^1.1 0 0 0 0 1
-execute if score @s rng1 matches 1.. run particle wax_on ^0.25 ^ ^1 0 0 0 0 1
-execute if score @s rng1 matches 1.. run particle wax_on ^0.5 ^ ^0.9 0 0 0 0 1
-execute if score @s rng1 matches 1.. run particle wax_on ^0.75 ^ ^0.8 0 0 0 0 1
-execute if score @s rng1 matches 1.. run particle wax_on ^1 ^ ^0.7 0 0 0 0 1
+execute if score @s rng1 matches 1.. at @s run particle wax_on ^-1 ^ ^0.7 0 0 0 0 1
+execute if score @s rng1 matches 1.. at @s run particle wax_on ^-0.75 ^ ^0.8 0 0 0 0 1
+execute if score @s rng1 matches 1.. at @s run particle wax_on ^-0.5 ^ ^0.9 0 0 0 0 1
+execute if score @s rng1 matches 1.. at @s run particle wax_on ^-0.25 ^ ^1 0 0 0 0 1
+execute if score @s rng1 matches 1.. at @s run particle wax_on ^ ^ ^1.1 0 0 0 0 1
+execute if score @s rng1 matches 1.. at @s run particle wax_on ^0.25 ^ ^1 0 0 0 0 1
+execute if score @s rng1 matches 1.. at @s run particle wax_on ^0.5 ^ ^0.9 0 0 0 0 1
+execute if score @s rng1 matches 1.. at @s run particle wax_on ^0.75 ^ ^0.8 0 0 0 0 1
+execute if score @s rng1 matches 1.. at @s run particle wax_on ^1 ^ ^0.7 0 0 0 0 1
 #particle wax_on ^1.25 ^ ^0.6 0 0 0 0 1
 #particle wax_on ^1.5 ^ ^0.5 0 0 0 0 1
 #particle wax_on ^1.75 ^ ^0.4 0 0 0 0 1
