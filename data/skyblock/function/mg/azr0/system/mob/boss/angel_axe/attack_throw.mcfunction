@@ -26,8 +26,10 @@ execute if score @s rng5 matches 30 run summon marker ~ 4.0 ~ {Tags:["azr0_axe_a
 execute if score @s rng5 matches 30 run summon marker ~ 4.0 ~ {Tags:["azr0_axe_angel_attack_throw_axe","azr0_axe_angel_attack_throw_normal"]}
 
 execute if score @s[scores={Health=..249}] rng5 matches 31..40 at @s run tp @s ~ ~ ~ facing entity @p[tag=MG_AZR0PT]
-execute if score @s[scores={Health=..249}] rng5 matches 40 run summon marker ~ 4.0 ~ {Tags:["azr0_axe_angel_attack_throw_arrow","azr0_axe_angel_attack_throw_normal"]}
-execute if score @s[scores={Health=..249}] rng5 matches 40 run summon marker ~ 4.0 ~ {Tags:["azr0_axe_angel_attack_throw_axe","azr0_axe_angel_attack_throw_normal"]}
+execute if score @s[scores={Health=..249}] rng5 matches 40 run summon marker ~ 4.0 ~ {Tags:["azr0_axe_angel_attack_throw_arrow","azr0_axe_angel_attack_throw_leftsmall"]}
+execute if score @s[scores={Health=..249}] rng5 matches 40 run summon marker ~ 4.0 ~ {Tags:["azr0_axe_angel_attack_throw_axe","azr0_axe_angel_attack_throw_leftsmall"]}
+execute if score @s[scores={Health=..249}] rng5 matches 40 run summon marker ~ 4.0 ~ {Tags:["azr0_axe_angel_attack_throw_arrow","azr0_axe_angel_attack_throw_rightsmall"]}
+execute if score @s[scores={Health=..249}] rng5 matches 40 run summon marker ~ 4.0 ~ {Tags:["azr0_axe_angel_attack_throw_axe","azr0_axe_angel_attack_throw_rightsmall"]}
 
 execute if score @s[scores={Health=..169}] rng5 matches 41..50 at @s run tp @s ~ ~ ~ facing entity @p[tag=MG_AZR0PT]
 execute if score @s[scores={Health=..169}] rng5 matches 50 run summon marker ~ 4.0 ~ {Tags:["azr0_axe_angel_attack_throw_arrow","azr0_axe_angel_attack_throw_high","azr0_axe_angel_attack_throw_normal"]}
