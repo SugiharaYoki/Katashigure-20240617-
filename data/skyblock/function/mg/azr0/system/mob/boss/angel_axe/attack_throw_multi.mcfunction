@@ -48,6 +48,9 @@ execute if score @s rng5 matches 60 run summon marker ~ 4.0 ~ {Tags:["azr0_axe_a
 execute if score @s rng5 matches 60 run summon marker ~ 4.0 ~ {Tags:["azr0_axe_angel_attack_throw_arrow","azr0_axe_angel_attack_throw_backward","azr0_axe_angel_attack_throw_high"]}
 execute if score @s rng5 matches 60 run summon marker ~ 4.0 ~ {Tags:["azr0_axe_angel_attack_throw_axe","azr0_axe_angel_attack_throw_backward","azr0_axe_angel_attack_throw_high"]}
 
+
+
+
 execute if score @s rng5 matches 109 run playsound minecraft:entity.vindicator.celebrate hostile @a ~ ~ ~ 1 0.9
 execute if score @s rng5 matches 109 run particle minecraft:white_smoke ~ ~ ~ 0 0 0 0.1 50
 execute if score @s rng5 matches 119 run effect give @s speed 2 3 true

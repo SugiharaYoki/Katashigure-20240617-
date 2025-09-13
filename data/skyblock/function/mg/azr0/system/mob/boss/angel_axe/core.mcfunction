@@ -17,7 +17,7 @@ execute if score @s[scores={Health=..149}] rng8 matches 80 store result score @s
 execute if score @s rng8 matches 80.. if score @s rng2 matches 1..3 at @s run function skyblock:mg/azr0/system/mob/boss/angel_axe/attack_throw
 execute if score @s rng8 matches 80.. if score @s rng2 matches 4..5 at @s run function skyblock:mg/azr0/system/mob/boss/angel_axe/attack_throw_multi
 execute if score @s rng8 matches 80.. if score @s rng2 matches 6..7 at @s run summon marker ~ 4.0 ~ {Tags:["azr0_axe_angel_attack_vortex"]}
-execute if score @s rng8 matches 80.. if score @s rng2 matches 6..7 at @s run scoreboard players set @s rng8 -10
+execute if score @s rng8 matches 80.. if score @s rng2 matches 6..7 at @s run scoreboard players set @s rng8 0
 
 
 execute as @e[distance=..200,type=marker,tag=azr0_axe_angel_attack_throw_arrow] at @s run function skyblock:mg/azr0/system/mob/boss/angel_axe/particle_arrow

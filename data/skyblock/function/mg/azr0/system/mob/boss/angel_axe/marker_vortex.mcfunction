@@ -30,4 +30,4 @@ execute if score @s rng1 matches 18.. rotated as @s at @s[tag=azr0_axe_angel_att
 execute if score @s rng1 matches 18.. rotated as @s at @s[tag=azr0_axe_angel_attack_throw_high] positioned ^ ^0.3 ^2.9 as @e[tag=MG_AZR0SPIRIT,distance=..1.8] at @s run damage @s 8 mob_attack by @n[tag=MG_AZR0BOSS_axe_angel]
 execute if score @s rng1 matches 18.. rotated as @s at @s[tag=azr0_axe_angel_attack_throw_high] run playsound entity.player.attack.sweep hostile @a ~ ~ ~ 1 1.2
 
-execute if score @s rng1 matches 69.. run kill @s
+execute if score @s rng1 matches 60.. run kill @s
