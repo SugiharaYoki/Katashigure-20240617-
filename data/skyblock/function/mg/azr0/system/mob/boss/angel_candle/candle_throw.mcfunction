@@ -11,8 +11,8 @@ execute if score @s rng5 matches 2 run playsound entity.illusioner.cast_spell ho
 execute if score @s rng5 matches 41 run summon marker ~ 4.0 ~ {Tags:["azr0_candle_angel_candle_throw_marker"]}
 execute if score @s rng5 matches 51 run summon marker ~ 4.0 ~ {Tags:["azr0_candle_angel_candle_throw_marker"]}
 execute if score @s rng5 matches 61 run summon marker ~ 4.0 ~ {Tags:["azr0_candle_angel_candle_throw_marker"]}
-execute if score @s[scores={Health=70..}] rng5 matches 71 run summon marker ~ 4.0 ~ {Tags:["azr0_candle_angel_candle_throw_marker"]}
-execute if score @s[scores={Health=..69}] rng5 matches 71 run summon marker ~ 4.0 ~ {Tags:["azr0_candle_angel_candle_throw_marker_trace"]}
+execute if score @s[scores={Health=90..}] rng5 matches 71 run summon marker ~ 4.0 ~ {Tags:["azr0_candle_angel_candle_throw_marker"]}
+execute if score @s[scores={Health=..89}] rng5 matches 71 run summon marker ~ 4.0 ~ {Tags:["azr0_candle_angel_candle_throw_marker_trace"]}
 
 
 execute if score @s rng5 matches 80.. run scoreboard players set @s rng8 -20
