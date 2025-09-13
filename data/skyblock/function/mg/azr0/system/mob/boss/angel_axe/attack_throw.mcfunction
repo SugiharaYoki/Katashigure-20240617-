@@ -35,10 +35,12 @@ execute if score @s[scores={Health=..169}] rng5 matches 41..50 at @s run tp @s ~
 execute if score @s[scores={Health=..169}] rng5 matches 50 run summon marker ~ 4.0 ~ {Tags:["azr0_axe_angel_attack_throw_arrow","azr0_axe_angel_attack_throw_high","azr0_axe_angel_attack_throw_normal"]}
 execute if score @s[scores={Health=..169}] rng5 matches 50 run summon marker ~ 4.0 ~ {Tags:["azr0_axe_angel_attack_throw_axe","azr0_axe_angel_attack_throw_high","azr0_axe_angel_attack_throw_normal"]}
 
+execute if score @s rng5 matches 59 run playsound minecraft:entity.vindicator.celebrate hostile @a ~ ~ ~ 1 0.9
+execute if score @s rng5 matches 59 run particle minecraft:white_smoke ~ ~ ~ 0 0 0 0.1 50
+execute if score @s rng5 matches 69 run effect give @s speed 2 3 true
 
-
-execute if score @s rng5 matches 60.. run scoreboard players set @s rng8 -10
-execute if score @s rng5 matches 60.. run scoreboard players set @s rng5 0
+execute if score @s rng5 matches 70.. run scoreboard players set @s rng8 -10
+execute if score @s rng5 matches 70.. run scoreboard players set @s rng5 0
 
 
 
