@@ -10,7 +10,11 @@ execute if score @s rng1 matches 1 if entity @s[scores={rng2=8}] run rotate @s 3
 
 scoreboard players add @s rng1 1
 
+execute if score @s rng1 matches ..17 run particle wax_on ^ ^0.1 ^1.9 0 0 0 0 1
 execute if score @s rng1 matches ..17 run particle wax_on ^ ^0.3 ^1.9 0 0 0 0 1
+execute if score @s rng1 matches ..17 run particle wax_on ^ ^0.5 ^1.9 0 0 0 0 1
+execute if score @s rng1 matches ..17 run particle wax_on ^ ^0.7 ^1.9 0 0 0 0 1
+execute if score @s rng1 matches ..17 run particle wax_on ^ ^0.9 ^1.9 0 0 0 0 1
 
 execute if score @s rng1 matches 1.. run rotate @s ~5 ~
 
