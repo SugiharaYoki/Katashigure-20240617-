@@ -11,6 +11,8 @@ execute if score @s rng5 matches 2 run effect give @s resistance 3 4 true
 
 
 execute if score @s rng5 matches 20 store result score @s rng1 run random value 1..8
+execute if score @s rng5 matches 23 store result score @s rng1 run random value 1..8
+execute if score @s rng5 matches 60 store result score @s rng1 run random value 1..8
 
 execute if score @s[scores={Health=..299}] rng5 matches 20 store result score @s rng1 run random value 1..4
 execute if score @s[scores={Health=..299}] rng5 matches 20 at @s[scores={rng1=1}] rotated ~ 0 run summon marker ^ ^0.2 ^2.4 {Tags:["azr0_boss_devil_goat_circle_marker"]}

@@ -201,3 +201,13 @@ attribute @s minecraft:armor_toughness modifier remove checkwar_bless:sniffer_3
 attribute @s minecraft:entity_interaction_range modifier remove checkwar_bless:sniffer_3
 attribute @s minecraft:mining_efficiency modifier remove checkwar_bless:sniffer_3
 attribute @s minecraft:armor modifier remove checkwar_bless:sniffer_3
+
+tag @s remove azr0_player_looking_at_devil_goat
+
+
+
+
+
+
+
+
