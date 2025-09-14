@@ -37,6 +37,7 @@ execute as @e[type=marker,tag=Azr0_SKILL_27,distance=..200] at @s run function s
 execute if entity @n[tag=MG_AZR0BOSS_candle_angel,distance=..200] as @e[tag=MG_AZR0BOSS_candle_angel,distance=..200] at @s run function skyblock:mg/azr0/system/mob/boss/angel_candle/core
 execute if entity @n[tag=MG_AZR0BOSS_axe_angel,distance=..200] as @e[tag=MG_AZR0BOSS_axe_angel,distance=..200] at @s run function skyblock:mg/azr0/system/mob/boss/angel_axe/core
 execute if entity @n[tag=MG_AZR0BOSS_assassin,distance=..200] as @e[tag=MG_AZR0BOSS_assassin,distance=..200] at @s run function skyblock:mg/azr0/system/mob/boss/assassin/core
+execute if entity @n[tag=MG_AZR0BOSS_devil_goat,distance=..200] as @e[tag=MG_AZR0BOSS_devil_goat,distance=..200] at @s run function skyblock:mg/azr0/system/mob/boss/devil_goat/core
 
 
 

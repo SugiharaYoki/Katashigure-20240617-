@@ -13,7 +13,7 @@ execute if score @s rng5 matches 21 store result score @s rng1 run random value 
 execute if score @s[scores={rng1=1..2}] rng5 matches 21 run summon marker ~ 4.0 ~ {Tags:["azr0_assassin_smoke_marker"]}
 execute if score @s rng5 matches 23 run playsound entity.enderman.teleport hostile @a ~ ~ ~ 1 0.8
 execute if score @s rng5 matches 23 run particle portal ~ ~1 ~ 0.5 1 0.5 0 20
-execute if score @s rng5 matches 23 run tp 125078 17 -260
+execute if score @s rng5 matches 23 run tp 125078 -8 -237
 
 execute if score @s rng5 matches 62 store result score @s rng1 run random value 1..4
 execute if score @s rng5 matches 69 store result score @s rng1 run random value 1..4
