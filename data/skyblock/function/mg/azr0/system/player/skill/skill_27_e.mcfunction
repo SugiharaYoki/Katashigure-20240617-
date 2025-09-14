@@ -8,7 +8,7 @@ scoreboard players add @s rng1 1
 
 execute if score @s rng1 matches 2.. unless entity @n[tag=MG_AZR0MOB,distance=..12] run scoreboard players set @s rng1 999
 
-execute if score @s rng1 matches 2.. run particle fire_flame ~ 4.1 ~ 0 0 0 0.00 1
+execute if score @s rng1 matches 2.. run particle flame ~ 4.1 ~ 0 0 0 0.00 1
 
 execute if score @s rng1 matches 2 store result score @s rng2 run random value 1..8
 
