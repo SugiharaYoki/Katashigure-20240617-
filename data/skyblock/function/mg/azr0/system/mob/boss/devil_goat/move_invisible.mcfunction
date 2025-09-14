@@ -38,5 +38,6 @@ execute if score @s rng5 matches 20 at @s[scores={rng1=4}] rotated ~ 0 run summo
 
 
 execute if score @s rng5 matches 70.. run scoreboard players set @s rng5 0
+execute if score @s rng5 matches 70.. run scoreboard players set @s rng8 0
 
 
