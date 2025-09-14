@@ -42,10 +42,11 @@ execute if score @s rng5 matches 20 at @s run data modify entity @s Motion set f
 execute if score @s rng5 matches 20 at @s run kill @e[type=marker,tag=azr0_boss_devil_goat_jump_pos]
 
 
+execute if score @s rng5 matches 40 at @s unless entity @p[tag=MG_AZR0PT,distance=..13] at @r[tag=MG_AZR0PT] positioned ~ ~ ~ run tp @s ~ ~ ~
 
 
 execute if score @s rng5 matches 60 run playsound minecraft:entity.evoker.prepare_attack hostile @a ~ ~ ~ 1 1.5
-execute if score @s rng5 matches 60 run particle sculk_soul ~ ~ ~ 0 0 0 0.3 30
+execute if score @s rng5 matches 60 run particle sculk_soul ~ ~ ~ 0 0 0 0.3 40
 execute if score @s rng5 matches 40 run playsound minecraft:entity.goat.screaming.prepare_ram hostile @a ~ ~ ~ 1 0.7
 
 
