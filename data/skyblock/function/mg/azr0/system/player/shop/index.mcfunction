@@ -2,7 +2,7 @@
 
 execute if items entity @s player.cursor *[custom_data={"azr0shop":true}] run function skyblock:mg/azr0/system/player/shop/index_generic_shop_items
 
-execute unless items entity @s player.cursor *[custom_data={"azr0shop":true}] run function skyblock:mg/azr0/system/player/shop/index_switch_skill
+function skyblock:mg/azr0/system/player/shop/index_switch_skill
 
 execute if items entity @s player.cursor *[custom_data={"azr0skill":true}] run function skyblock:mg/azr0/system/player/shop/skill_print/upg
 
