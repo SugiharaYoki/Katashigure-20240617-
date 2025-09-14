@@ -205,6 +205,8 @@ execute if entity @a[tag=azr0_load_game] run scoreboard players operation MG_AZR
 execute if entity @a[tag=azr0_load_game] run scoreboard players operation MG_AZR0_Timer rng8 = @p[tag=azr0_load_game] MG_AZR0_Timer_rng8
 execute if entity @a[tag=azr0_load_game] run scoreboard players operation MG_AZR0_Timer rng9 = @p[tag=azr0_load_game] MG_AZR0_Timer_rng9
 
+
+
 tag @a remove azr0_new_game
 tag @a remove azr0_load_game
 

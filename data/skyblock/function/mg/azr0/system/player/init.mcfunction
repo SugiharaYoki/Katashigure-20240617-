@@ -54,6 +54,7 @@ scoreboard players set @s[tag=azr0_new_game] Azr0_SkillEquip_1rng 0
 scoreboard players set @s[tag=azr0_new_game] Azr0_SkillEquip_2rng 0
 scoreboard players set @s[tag=azr0_new_game] Azr0_SkillEquip_3rng 0
 
+execute unless score @s Azr0_Wave_best matches -50.. run scoreboard players set @s Azr0_Wave_best 0
 
 scoreboard players set @s[tag=azr0_new_game] Azr0_SKILL_1 0
 scoreboard players set @s[tag=azr0_new_game] Azr0_SKILL_2 0
