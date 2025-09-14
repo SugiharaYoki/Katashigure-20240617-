@@ -3,6 +3,7 @@ scoreboard players add @s rng5 1
 
 
 execute if score @s rng5 matches 2 run effect give @s speed 3 2 true
+execute if score @s rng5 matches 2 run particle sculk_soul ~ ~1 ~ 0.53 1 0.53 0.02 50
 execute if score @s rng5 matches 2.. run particle soul ~ ~1 ~ 0.53 1 0.53 0.02 5
 execute if score @s rng5 matches 2.. run particle crimson_spore ~ ~0.2 ~ 0.8 0.3 0.8 0 5
 execute if score @s rng5 matches 2 run playsound minecraft:ambient.warped_forest.mood hostile @a ~ ~ ~ 3 0.8
