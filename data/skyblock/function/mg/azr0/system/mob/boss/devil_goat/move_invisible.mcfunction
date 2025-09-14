@@ -4,7 +4,7 @@ scoreboard players add @s rng5 1
 
 execute if score @s rng5 matches 2 run playsound entity.warden.attack_impact hostile @a ~ ~ ~ 1 0.7
 execute if score @s rng5 matches 2 run particle soul ~ ~1 ~ 0.3 1 0.3 0 30
-execute if score @s rng5 matches 2 run particle end_rod ~ ~1 ~ 0.3 1 0.3 0 15
+execute if score @s rng5 matches 2 run particle crimson_spore ~ ~1 ~ 0.3 1 0.3 0 15
 
 execute if score @s rng5 matches 2 run effect give @s invisibility 3 0 true
 execute if score @s rng5 matches 2 run effect give @s resistance 3 4 true

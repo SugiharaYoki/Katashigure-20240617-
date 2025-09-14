@@ -8,7 +8,7 @@ execute store result score @s Health run data get entity @s Health
 
 execute if score @s rng8 matches 20 store result score @s rng1 run random value 20..50
 execute if score @s rng8 matches 20 run scoreboard players operation @s rng8 += @s rng1
-execute if score @s rng8 matches 80 store result score @s rng2 run random value 1..8
+execute if score @s rng8 matches 80 store result score @s rng2 run random value 1..3
 
 execute if score @s rng8 matches 80.. if score @s rng2 matches 1..3 at @s run function skyblock:mg/azr0/system/mob/boss/devil_goat/move_invisible
 
