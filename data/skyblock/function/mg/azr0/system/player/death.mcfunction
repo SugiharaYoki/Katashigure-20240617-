@@ -147,6 +147,8 @@ scoreboard players reset @s Azr0_SKILL_37
 scoreboard players reset @s Azr0_SKILL_38
 scoreboard players reset @s Azr0_SKILL_39
 
+execute if score @s Azr0_Wave_best <= MG_AZR0_Timer rng2 run scoreboard players operation @s Azr0_Wave_best = MG_AZR0_Timer rng2
+
 scoreboard players set @s Azr0_Wave 0
 
 function skyblock:pvp/skywar/system/removeallgaming

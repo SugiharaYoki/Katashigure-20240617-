@@ -8,6 +8,12 @@ execute if score MG_AZR0_Timer rng2 matches 59 run scoreboard players add MG_AZR
 execute if score MG_AZR0_Timer rng2 matches 79 run scoreboard players add MG_AZR0_Timer rng8 1000
 #execute if score MG_AZR0_Timer rng2 matches 99 run scoreboard players add MG_AZR0_Timer rng8 1000
 
+execute if score MG_AZR0_Timer rng2 matches 20 run function skyblock:mg/azr0/event/general_end_round_boss
+execute if score MG_AZR0_Timer rng2 matches 40 run function skyblock:mg/azr0/event/general_end_round_boss
+execute if score MG_AZR0_Timer rng2 matches 60 run function skyblock:mg/azr0/event/general_end_round_boss
+execute if score MG_AZR0_Timer rng2 matches 80 run function skyblock:mg/azr0/event/general_end_round_boss
+
+
 execute if score MG_AZR0_Timer rng2 matches 20.. store result score MG_AZR0_rng rng1 run random value 10..30
 execute if score MG_AZR0_Timer rng2 matches 20.. run scoreboard players operation MG_AZR0_Timer rng8 += MG_AZR0_rng rng1
 execute if score MG_AZR0_Timer rng8 matches 250..3000 run tellraw @a[distance=..200] [{"text": "你感受到一股深入骨髓的恶寒……","color": "gray"}]
