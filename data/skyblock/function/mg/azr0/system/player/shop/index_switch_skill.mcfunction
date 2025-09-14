@@ -14,9 +14,9 @@ execute if entity @s[tag=azr0_switch_skill_success,scores={Azr0_SkillEquip_1=3,A
 execute if entity @s[tag=azr0_switch_skill_success,scores={Azr0_SkillEquip_1=5,Azr0_SKILL_18=..0}] run scoreboard players set @s Azr0_SkillEquip_1 2
 execute if entity @s[tag=azr0_switch_skill_success,scores={Azr0_SkillEquip_1=2,Azr0_SKILL_12=..0}] run scoreboard players set @s Azr0_SkillEquip_1 3
 
-clear @s *[custom_data={"azr0skill_core2":true}]
-clear @s *[custom_data={"azr0skill_core3":true}]
-clear @s *[custom_data={"azr0skill_core5":true}]
+execute if entity @s[tag=azr0_switch_skill_success] run clear @s *[custom_data={"azr0skill_core2":true}]
+execute if entity @s[tag=azr0_switch_skill_success] run clear @s *[custom_data={"azr0skill_core3":true}]
+execute if entity @s[tag=azr0_switch_skill_success] run clear @s *[custom_data={"azr0skill_core5":true}]
 tag @s remove azr0_switch_skill_success
 
 
@@ -34,9 +34,9 @@ execute if entity @s[tag=azr0_switch_skill_success,scores={Azr0_SkillEquip_1=4,A
 execute if entity @s[tag=azr0_switch_skill_success,scores={Azr0_SkillEquip_1=6,Azr0_SKILL_19=..0}] run scoreboard players set @s Azr0_SkillEquip_1 1
 execute if entity @s[tag=azr0_switch_skill_success,scores={Azr0_SkillEquip_1=1,Azr0_SKILL_11=..0}] run scoreboard players set @s Azr0_SkillEquip_1 4
 
-clear @s *[custom_data={"azr0skill_core1":true}]
-clear @s *[custom_data={"azr0skill_core4":true}]
-clear @s *[custom_data={"azr0skill_core6":true}]
+execute if entity @s[tag=azr0_switch_skill_success] run clear @s *[custom_data={"azr0skill_core1":true}]
+execute if entity @s[tag=azr0_switch_skill_success] run clear @s *[custom_data={"azr0skill_core4":true}]
+execute if entity @s[tag=azr0_switch_skill_success] run clear @s *[custom_data={"azr0skill_core6":true}]
 tag @s remove azr0_switch_skill_success
 
 
@@ -51,8 +51,8 @@ execute if entity @s[tag=azr0_switch_skill_success,scores={Azr0_SkillEquip_1=99}
 execute if entity @s[tag=azr0_switch_skill_success,scores={Azr0_SkillEquip_1=7,Azr0_SKILL_21=..0}] run scoreboard players set @s Azr0_SkillEquip_1 8
 execute if entity @s[tag=azr0_switch_skill_success,scores={Azr0_SkillEquip_1=8,Azr0_SKILL_22=..0}] run scoreboard players set @s Azr0_SkillEquip_1 7
 
-clear @s *[custom_data={"azr0skill_core7":true}]
-clear @s *[custom_data={"azr0skill_core8":true}]
+execute if entity @s[tag=azr0_switch_skill_success] run clear @s *[custom_data={"azr0skill_core7":true}]
+execute if entity @s[tag=azr0_switch_skill_success] run clear @s *[custom_data={"azr0skill_core8":true}]
 tag @s remove azr0_switch_skill_success
 
 
