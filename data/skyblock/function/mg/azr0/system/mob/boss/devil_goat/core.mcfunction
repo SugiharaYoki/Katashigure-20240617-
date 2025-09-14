@@ -16,11 +16,11 @@ execute if score @s rng8 matches 80.. if score @s rng2 matches 4..5 at @s run fu
 
 
 execute as @e[distance=..200,type=marker,tag=azr0_boss_devil_goat_circle_marker] at @s run function skyblock:mg/azr0/system/mob/boss/devil_goat/circle_marker
+execute as @e[distance=..200,type=marker,tag=azr0_boss_devil_goat_summon_protector_marker] at @s run function skyblock:mg/azr0/system/mob/boss/devil_goat/summon_protector
 
 
-
-
-
+execute store result score @s rng9 if entity @e[distance=0..200,type=drowned,tag=MG_AZR0MOB_devil_goat_protector]
+execute as @e[distance=30..,type=drowned,tag=MG_AZR0MOB_devil_goat_protector] at @s run effect give @s wither 2 1 false
 
 
 execute if score @s rng8 matches 300.. run scoreboard players set @s rng8 0
