@@ -3,8 +3,8 @@ scoreboard players add @s rng5 1
 
 
 execute if score @s rng5 matches 2 run playsound entity.warden.attack_impact hostile @a ~ ~ ~ 1 0.7
-execute if score @s rng5 matches 2 run particle soul ~ ~1 ~ 0.3 1 0.3 0 30
-execute if score @s rng5 matches 2 run particle crimson_spore ~ ~1 ~ 0.3 1 0.3 0 15
+execute if score @s rng5 matches 2 run particle soul ~ ~1 ~ 0.3 1 0.3 0.02 40
+execute if score @s rng5 matches 2 run particle crimson_spore ~ ~0.2 ~ 0.8 0.3 0.8 0 30
 
 execute if score @s rng5 matches 2 run effect give @s invisibility 3 0 true
 execute if score @s rng5 matches 2 run effect give @s resistance 3 4 true
@@ -12,14 +12,14 @@ execute if score @s rng5 matches 2 run effect give @s resistance 3 4 true
 
 execute if score @s rng5 matches 20 store result score @s rng1 run random value 1..8
 
-execute if score @s rng5 matches 20 at @s[scores={rng1=1}] positioned 0.0 0 0.0 run summon marker ^ ^0.8 ^2.4 {Tags:["azr0_boss_devil_goat_jump_pos"]}
-execute if score @s rng5 matches 20 at @s[scores={rng1=2}] positioned 0.0 0 0.0 run summon marker ^ ^0.8 ^-2.4 {Tags:["azr0_boss_devil_goat_jump_pos"]}
-execute if score @s rng5 matches 20 at @s[scores={rng1=3}] positioned 0.0 0 0.0 run summon marker ^2.4 ^0.8 ^ {Tags:["azr0_boss_devil_goat_jump_pos"]}
-execute if score @s rng5 matches 20 at @s[scores={rng1=4}] positioned 0.0 0 0.0 run summon marker ^-2.4 ^0.8 ^ {Tags:["azr0_boss_devil_goat_jump_pos"]}
-execute if score @s rng5 matches 20 at @s[scores={rng1=5}] positioned 0.0 0 0.0 run summon marker ^1.9 ^0.8 ^1.9 {Tags:["azr0_boss_devil_goat_jump_pos"]}
-execute if score @s rng5 matches 20 at @s[scores={rng1=6}] positioned 0.0 0 0.0 run summon marker ^1.9 ^0.8 ^-1.9 {Tags:["azr0_boss_devil_goat_jump_pos"]}
-execute if score @s rng5 matches 20 at @s[scores={rng1=7}] positioned 0.0 0 0.0 run summon marker ^-1.9 ^0.8 ^1.9 {Tags:["azr0_boss_devil_goat_jump_pos"]}
-execute if score @s rng5 matches 20 at @s[scores={rng1=8}] positioned 0.0 0 0.0 run summon marker ^-1.9 ^0.8 ^-1.9 {Tags:["azr0_boss_devil_goat_jump_pos"]}
+execute if score @s rng5 matches 20 at @s[scores={rng1=1}] positioned 0.0 0 0.0 run summon marker ^ ^0.8 ^1.7 {Tags:["azr0_boss_devil_goat_jump_pos"]}
+execute if score @s rng5 matches 20 at @s[scores={rng1=2}] positioned 0.0 0 0.0 run summon marker ^ ^0.8 ^-1.7 {Tags:["azr0_boss_devil_goat_jump_pos"]}
+execute if score @s rng5 matches 20 at @s[scores={rng1=3}] positioned 0.0 0 0.0 run summon marker ^1.7 ^0.8 ^ {Tags:["azr0_boss_devil_goat_jump_pos"]}
+execute if score @s rng5 matches 20 at @s[scores={rng1=4}] positioned 0.0 0 0.0 run summon marker ^-1.7 ^0.8 ^ {Tags:["azr0_boss_devil_goat_jump_pos"]}
+execute if score @s rng5 matches 20 at @s[scores={rng1=5}] positioned 0.0 0 0.0 run summon marker ^1.4 ^0.8 ^1.4 {Tags:["azr0_boss_devil_goat_jump_pos"]}
+execute if score @s rng5 matches 20 at @s[scores={rng1=6}] positioned 0.0 0 0.0 run summon marker ^1.4 ^0.8 ^-1.4 {Tags:["azr0_boss_devil_goat_jump_pos"]}
+execute if score @s rng5 matches 20 at @s[scores={rng1=7}] positioned 0.0 0 0.0 run summon marker ^-1.4 ^0.8 ^1.4 {Tags:["azr0_boss_devil_goat_jump_pos"]}
+execute if score @s rng5 matches 20 at @s[scores={rng1=8}] positioned 0.0 0 0.0 run summon marker ^-1.4 ^0.8 ^-1.4 {Tags:["azr0_boss_devil_goat_jump_pos"]}
 execute if score @s rng5 matches 20 at @s run data modify entity @s Motion set from entity @n[type=marker,tag=azr0_boss_devil_goat_jump_pos] Pos
 execute if score @s rng5 matches 20 at @s run kill @e[type=marker,tag=azr0_boss_devil_goat_jump_pos]
 
