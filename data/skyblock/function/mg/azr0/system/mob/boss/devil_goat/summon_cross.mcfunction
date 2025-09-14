@@ -18,11 +18,11 @@ execute if score @s rng1 matches 3..10 run tp @s ~ ~-0.5 ~
 execute if score @s rng1 matches 10 run function skyblock:mg/azr0/m/boss4/cross
 execute if score @s rng1 matches 10 run playsound minecraft:block.beacon.deactivate hostile @a ~ ~ ~ 1 1.5
 execute if score @s rng1 matches 10 run playsound minecraft:entity.generic.explode hostile @a ~ ~ ~ 1 1.5
-execute if score @s rng1 matches 10 run particle white_smoke ~ ~ ~ 1 0 1 0.15 80
-execute if score @s rng1 matches 10 run particle white_ash ~ ~ ~ 3 3 3 0.15 80
+execute if score @s rng1 matches 10 at @s facing entity @n[type=goat,tag=MG_AZR0BOSS_devil_goat] eyes run particle white_smoke ~ ~ ~ 1 0 1 0.15 80
+execute if score @s rng1 matches 10 at @s facing entity @n[type=goat,tag=MG_AZR0BOSS_devil_goat] eyes run particle white_ash ~ ~ ~ 3 3 3 0.15 80
 
-execute if score @s rng1 matches 1.. run particle end_rod ~ ~3 ~ 0 3 0 0 8
-execute if score @s rng1 matches 1.. run particle end_rod ~ ~2.4 ~ 0.3 0 0.3 0 8
+execute if score @s rng1 matches 1.. at @s run particle end_rod ~ ~3 ~ 0 3 0 0 8
+execute if score @s rng1 matches 1.. at @s run particle end_rod ~ ~2.4 ~ 0.3 0 0.3 0 8
 
 
 execute if score @s rng1 matches 10.. unless entity @n[tag=MG_AZR0MOB_devil_goat_cross,distance=0..0.5] run kill @s
