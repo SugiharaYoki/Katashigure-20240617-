@@ -12,16 +12,16 @@ execute if score @s rng1 matches 2.. run particle flame ~ 4.1 ~ 0 0 0 0.00 1
 
 execute if score @s rng1 matches 2 store result score @s rng2 run random value 1..8
 
-execute if score @s[scores={rng2=1..5}] rng1 matches 3.. run rotate @s facing entity @n[tag=MG_AZR0MOB]
+execute if score @s rng1 matches 2.. at @s rotated as @s run rotate @s facing entity @n[tag=MG_AZR0MOB]
 
-execute if score @s rng1 matches 4.. run tp @s ^ ^ ^0.35
-execute if score @s rng1 matches 4.. run tp @s[tag=Azr0_SKILL_27_level_2] ^ ^ ^0.15
-execute if score @s rng1 matches 4.. run tp @s[tag=Azr0_SKILL_27_level_3] ^ ^ ^0.15
-execute if score @s rng1 matches 4.. store result score @s rng2 run random value 1..5
-execute if score @s[scores={rng2=2}] rng1 matches 8.. run tp @s ^0.03 ^ ^
-execute if score @s[scores={rng2=3}] rng1 matches 8.. run tp @s ^-0.03 ^ ^
-execute if score @s[scores={rng2=4}] rng1 matches 8.. run tp @s ^0.1 ^ ^
-execute if score @s[scores={rng2=5}] rng1 matches 8.. run tp @s ^-0.1 ^ ^
+execute if score @s rng1 matches 4.. at @s rotated as @s run tp @s ^ ^ ^0.35
+execute if score @s rng1 matches 4.. at @s rotated as @s run tp @s[tag=Azr0_SKILL_27_level_2] ^ ^ ^0.15
+execute if score @s rng1 matches 4.. at @s rotated as @s run tp @s[tag=Azr0_SKILL_27_level_3] ^ ^ ^0.15
+execute if score @s rng1 matches 4.. at @s rotated as @s store result score @s rng2 run random value 1..5
+execute if score @s[scores={rng2=2}] rng1 matches 4.. at @s rotated as @s run tp @s ^0.03 ^ ^
+execute if score @s[scores={rng2=3}] rng1 matches 4.. at @s rotated as @s run tp @s ^-0.03 ^ ^
+execute if score @s[scores={rng2=4}] rng1 matches 4.. at @s rotated as @s run tp @s ^0.1 ^ ^
+execute if score @s[scores={rng2=5}] rng1 matches 4.. at @s rotated as @s run tp @s ^-0.1 ^ ^
 
 execute if score @s rng1 matches 2.. if entity @n[tag=MG_AZR0MOB,distance=..1.2] run scoreboard players set @s rng1 9999
 
