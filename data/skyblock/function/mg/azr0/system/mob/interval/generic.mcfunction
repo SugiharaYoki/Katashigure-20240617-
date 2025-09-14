@@ -34,7 +34,7 @@ execute if score MG_AZR0_rng rng3 matches 72..73 at @e[tag=mg_azr0_MobPortals,ty
 execute if score MG_AZR0_rng rng3 matches 74..79 at @e[tag=mg_azr0_MobPortals,type=marker,limit=1,sort=random] run function skyblock:mg/azr0/m/creeper
 execute if score MG_AZR0_rng rng3 matches 80..83 at @e[tag=mg_azr0_MobPortals,type=marker,limit=1,sort=random] run function skyblock:mg/azr0/m/zombie_villager
 
-execute if score MG_AZR0_rng rng3 matches 3000.. as @r[tag=MG_AZR0PT] at @s as @a[distance=0..250] at @s run playsound minecraft:renegade music @a ~ ~ ~ 0.8
+
 execute if score MG_AZR0_rng rng3 matches 3000..3010 at @e[tag=mg_azr0_MobPortals,type=marker,limit=1,sort=random] run function skyblock:mg/azr0/system/mob/boss/angel_candle/summon
 execute if score MG_AZR0_rng rng3 matches 3011..3020 at @e[tag=mg_azr0_MobPortals,type=marker,limit=1,sort=random] run function skyblock:mg/azr0/system/mob/boss/assassin/summon
 execute if score MG_AZR0_rng rng3 matches 3021..3030 at @e[tag=mg_azr0_MobPortals,type=marker,limit=1,sort=random] run function skyblock:mg/azr0/system/mob/boss/angel_axe/summon
