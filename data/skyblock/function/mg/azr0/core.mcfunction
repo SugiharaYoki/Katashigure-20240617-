@@ -25,6 +25,7 @@ execute as @a[tag=MG_AZR0PT,scores={Azr0_dealt_damage=1..}] at @s run function s
 execute as @a[tag=MG_AZR0PT,scores={Azr0_hurt=1..}] at @s run function skyblock:mg/azr0/system/player/hurt
 execute as @a[tag=MG_AZR0PT,scores={Azr0_ifkill=1..}] at @s run function skyblock:mg/azr0/system/player/killed
 
+execute as @a[tag=MG_AZR0PT,scores={Azr0_SKILL_27=1..}] at @s if entity @e[distance=0..16,tag=MG_AZR0MOB] run function skyblock:mg/azr0/system/player/skill/skill_27
 execute as @a[tag=MG_AZR0PT,scores={Azr0_SKILL_6=1..}] at @s if entity @e[distance=0..8,tag=MG_AZR0MOB] run function skyblock:mg/azr0/system/player/skill/skill_6
 execute as @a[tag=MG_AZR0PT,scores={Azr0_SKILL_7=1..}] at @s if entity @e[distance=0..8,tag=MG_AZR0MOB] run function skyblock:mg/azr0/system/player/skill/skill_7
 
