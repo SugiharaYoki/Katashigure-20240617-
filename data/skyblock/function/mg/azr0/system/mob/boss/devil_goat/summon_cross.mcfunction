@@ -26,6 +26,6 @@ execute if score @s rng1 matches 1.. at @s run particle end_rod ~ ~2.4 ~ 0.8 0 0
 
 
 execute if score @s rng1 matches 10.. unless entity @n[tag=MG_AZR0MOB_devil_goat_cross,distance=0..0.5] run playsound minecraft:block.beacon.activate hostile @a ~ ~ ~ 1 1.5
-execute if score @s rng1 matches 10.. unless entity @n[tag=MG_AZR0MOB_devil_goat_cross,distance=0..0.5] run particle end_rod ~ ~ ~ 0.3 0 0.3 0.15 70
+execute if score @s rng1 matches 10.. unless entity @n[tag=MG_AZR0MOB_devil_goat_cross,distance=0..0.5] run particle end_rod ~ ~0.4 ~ 0.3 0 0.3 0.15 70
 execute if score @s rng1 matches 10.. unless entity @n[tag=MG_AZR0MOB_devil_goat_cross,distance=0..0.5] run kill @s
 
