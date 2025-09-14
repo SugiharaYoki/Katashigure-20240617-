@@ -1,6 +1,7 @@
 scoreboard players add @s rng1 1
 
 execute if score @s rng1 matches 2 unless block ~ ~ ~ air run kill @s
+execute if score @s rng1 matches 2 if entity @n[tag=MG_AZR0MOB_devil_goat_cross,distance=0.1..5] run kill @s
 execute if score @s rng1 matches 2 store result score @s rng2 run random value 1..8
 execute if score @s[scores={rng2=1}] rng1 matches 2 run tp @s ~2 8.0 ~
 execute if score @s[scores={rng2=2}] rng1 matches 2 run tp @s ~-2 8.0 ~
