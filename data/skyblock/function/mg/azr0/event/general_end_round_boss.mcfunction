@@ -1,6 +1,7 @@
 
-execute as @a[tag=MG_AZR0PT] at @s if score MG_AZR0_Timer rng2 matches 20 if score @s Azr0_Wave_best matches ..19 run tellraw @s [{"text": "永久解锁了全新灵能！","color": "gold","bold":true},{"text": "\n - 魂萦圆环·尖牙","color": "green","bold":false}]
-execute as @a[tag=MG_AZR0PT] at @s if score MG_AZR0_Timer rng2 matches 40 if score @s Azr0_Wave_best matches ..39 run tellraw @s [{"text": "永久解锁了全新灵能！","color": "gold","bold":true},{"text": "\n - 存护祝福·继修","color": "green","bold":false}]
+execute as @a[tag=MG_AZR0PT] at @s if score MG_AZR0_Timer rng2 matches 20 if score @s Azr0_Wave_best matches ..19 run tellraw @s [{"text": "永久解锁了全新灵能！","color": "gold","bold":true},{"text": "\n - 魂萦圆环·尖牙","color": "green","bold":false},{"text": "\n - 庇灵圆环·烈焰","color": "green","bold":false}]
+
+execute as @a[tag=MG_AZR0PT] at @s if score MG_AZR0_Timer rng2 matches 40 if score @s Azr0_Wave_best matches ..39 run tellraw @s [{"text": "永久解锁了全新灵能！","color": "gold","bold":true},{"text": "\n - 存护祝福·继修","color": "green","bold":false},{"text": "\n - 灵能溢出·魂展","color": "green","bold":false}]
 execute as @a[tag=MG_AZR0PT] at @s if score MG_AZR0_Timer rng2 matches 60 if score @s Azr0_Wave_best matches ..59 run tellraw @s [{"text": "永久解锁了全新灵能！","color": "gold","bold":true},{"text": "\n - 魂萦圆环·绞岚","color": "green","bold":false}]
 
 
