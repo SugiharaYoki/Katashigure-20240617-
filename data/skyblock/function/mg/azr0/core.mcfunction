@@ -30,6 +30,7 @@ execute as @a[tag=MG_AZR0PT,scores={Azr0_SKILL_7=1..}] at @s if entity @e[distan
 
 
 execute as @e[type=marker,tag=Azr0_SKILL_26,distance=..200] at @s run function skyblock:mg/azr0/system/player/skill/skill_26_e
+execute as @e[type=marker,tag=Azr0_SKILL_27,distance=..200] at @s run function skyblock:mg/azr0/system/player/skill/skill_27_e
 
 
 execute if entity @n[tag=MG_AZR0BOSS_candle_angel,distance=..200] as @e[tag=MG_AZR0BOSS_candle_angel,distance=..200] at @s run function skyblock:mg/azr0/system/mob/boss/angel_candle/core

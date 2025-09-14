@@ -44,9 +44,12 @@ execute if entity @s[scores={Azr0_SkillEquip_1rng=9}] run function skyblock:mg/a
 execute if entity @s[scores={Azr0_SkillEquip_2rng=9}] run function skyblock:mg/azr0/system/player/shop/skill_print/9 {"skill":9, "slot":13}
 execute if entity @s[scores={Azr0_SkillEquip_3rng=9}] run function skyblock:mg/azr0/system/player/shop/skill_print/9 {"skill":9, "slot":22}
 
-execute if entity @s[scores={Azr0_SkillEquip_1rng=10}] run function skyblock:mg/azr0/system/player/shop/skill_print/10 {"skill":10, "slot":4}
-execute if entity @s[scores={Azr0_SkillEquip_2rng=10}] run function skyblock:mg/azr0/system/player/shop/skill_print/10 {"skill":10, "slot":13}
-execute if entity @s[scores={Azr0_SkillEquip_3rng=10}] run function skyblock:mg/azr0/system/player/shop/skill_print/10 {"skill":10, "slot":22}
+execute if entity @s[scores={Azr0_SkillEquip_1rng=10,Azr0_Wave_best=..59}] run function skyblock:mg/azr0/system/player/skill/refresh_skill
+execute if entity @s[scores={Azr0_SkillEquip_2rng=10,Azr0_Wave_best=..59}] run function skyblock:mg/azr0/system/player/skill/refresh_skill
+execute if entity @s[scores={Azr0_SkillEquip_3rng=10,Azr0_Wave_best=..59}] run function skyblock:mg/azr0/system/player/skill/refresh_skill
+execute if entity @s[scores={Azr0_SkillEquip_1rng=10,Azr0_Wave_best=60..}] run function skyblock:mg/azr0/system/player/shop/skill_print/10 {"skill":10, "slot":4}
+execute if entity @s[scores={Azr0_SkillEquip_2rng=10,Azr0_Wave_best=60..}] run function skyblock:mg/azr0/system/player/shop/skill_print/10 {"skill":10, "slot":13}
+execute if entity @s[scores={Azr0_SkillEquip_3rng=10,Azr0_Wave_best=60..}] run function skyblock:mg/azr0/system/player/shop/skill_print/10 {"skill":10, "slot":22}
 execute if entity @s[scores={Azr0_SkillEquip_1rng=11}] run function skyblock:mg/azr0/system/player/shop/skill_print/11 {"skill":11, "slot":4}
 execute if entity @s[scores={Azr0_SkillEquip_2rng=11}] run function skyblock:mg/azr0/system/player/shop/skill_print/11 {"skill":11, "slot":13}
 execute if entity @s[scores={Azr0_SkillEquip_3rng=11}] run function skyblock:mg/azr0/system/player/shop/skill_print/11 {"skill":11, "slot":22}
@@ -102,9 +105,13 @@ execute if entity @s[scores={Azr0_SkillEquip_3rng=26,Azr0_Wave_best=..59}] run f
 execute if entity @s[scores={Azr0_SkillEquip_1rng=26,Azr0_Wave_best=60..}] run function skyblock:mg/azr0/system/player/shop/skill_print/26 {"skill":26, "slot":4}
 execute if entity @s[scores={Azr0_SkillEquip_2rng=26,Azr0_Wave_best=60..}] run function skyblock:mg/azr0/system/player/shop/skill_print/26 {"skill":26, "slot":13}
 execute if entity @s[scores={Azr0_SkillEquip_3rng=26,Azr0_Wave_best=60..}] run function skyblock:mg/azr0/system/player/shop/skill_print/26 {"skill":26, "slot":22}
-execute if entity @s[scores={Azr0_SkillEquip_1rng=27}] run function skyblock:mg/azr0/system/player/shop/skill_print/27 {"skill":27, "slot":4}
-execute if entity @s[scores={Azr0_SkillEquip_2rng=27}] run function skyblock:mg/azr0/system/player/shop/skill_print/27 {"skill":27, "slot":13}
-execute if entity @s[scores={Azr0_SkillEquip_3rng=27}] run function skyblock:mg/azr0/system/player/shop/skill_print/27 {"skill":27, "slot":22}
+
+execute if entity @s[scores={Azr0_SkillEquip_1rng=27,Azr0_Wave_best=..79}] run function skyblock:mg/azr0/system/player/skill/refresh_skill
+execute if entity @s[scores={Azr0_SkillEquip_2rng=27,Azr0_Wave_best=..79}] run function skyblock:mg/azr0/system/player/skill/refresh_skill
+execute if entity @s[scores={Azr0_SkillEquip_3rng=27,Azr0_Wave_best=..79}] run function skyblock:mg/azr0/system/player/skill/refresh_skill
+execute if entity @s[scores={Azr0_SkillEquip_1rng=27,Azr0_Wave_best=80..}] run function skyblock:mg/azr0/system/player/shop/skill_print/27 {"skill":27, "slot":4}
+execute if entity @s[scores={Azr0_SkillEquip_2rng=27,Azr0_Wave_best=80..}] run function skyblock:mg/azr0/system/player/shop/skill_print/27 {"skill":27, "slot":13}
+execute if entity @s[scores={Azr0_SkillEquip_3rng=27,Azr0_Wave_best=80..}] run function skyblock:mg/azr0/system/player/shop/skill_print/27 {"skill":27, "slot":22}
 execute if entity @s[scores={Azr0_SkillEquip_1rng=28}] run function skyblock:mg/azr0/system/player/shop/skill_print/28 {"skill":28, "slot":4}
 execute if entity @s[scores={Azr0_SkillEquip_2rng=28}] run function skyblock:mg/azr0/system/player/shop/skill_print/28 {"skill":28, "slot":13}
 execute if entity @s[scores={Azr0_SkillEquip_3rng=28}] run function skyblock:mg/azr0/system/player/shop/skill_print/28 {"skill":28, "slot":22}

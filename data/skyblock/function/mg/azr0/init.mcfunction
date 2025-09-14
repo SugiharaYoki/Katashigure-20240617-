@@ -132,6 +132,7 @@ scoreboard objectives add Azr0_SKILL_18_condition custom:sprint_one_cm
 scoreboard objectives add Azr0_SKILL_19 dummy
 scoreboard objectives add Azr0_SKILL_20 dummy
 scoreboard objectives add Azr0_SKILL_20_timer dummy
+scoreboard objectives add Azr0_SKILL_27_timer dummy
 
 scoreboard objectives add Azr0_SKILL_21 dummy
 scoreboard objectives add Azr0_SKILL_22 dummy

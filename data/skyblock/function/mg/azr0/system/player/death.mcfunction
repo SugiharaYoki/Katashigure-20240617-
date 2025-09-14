@@ -134,6 +134,7 @@ scoreboard players reset @s Azr0_SKILL_24
 scoreboard players reset @s Azr0_SKILL_25
 scoreboard players reset @s Azr0_SKILL_26
 scoreboard players reset @s Azr0_SKILL_27
+scoreboard players reset @s Azr0_SKILL_27_timer
 scoreboard players reset @s Azr0_SKILL_28
 scoreboard players reset @s Azr0_SKILL_29
 scoreboard players reset @s Azr0_SKILL_30
