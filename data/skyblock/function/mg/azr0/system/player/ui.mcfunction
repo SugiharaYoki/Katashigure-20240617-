@@ -36,7 +36,7 @@ item replace entity @s[scores={Azr0_SkillEquip_2=6,Azr0_SkillEquip_2_timer=..0}]
 item replace entity @s[scores={Azr0_SkillEquip_3=0}] hotbar.5 with barrier
 item replace entity @s[scores={Azr0_SkillEquip_3=1..,Azr0_SkillEquip_3_timer=1..}] hotbar.5 with music_disc_stal[custom_data={"azr0skill_core0":true},custom_name='{"text":"充能中…","italic":false,"color":"dark_gray"}']
 item replace entity @s[scores={Azr0_SkillEquip_3=7,Azr0_SkillEquip_3_timer=..0}] hotbar.5 with music_disc_creator_music_box[custom_data={"azr0skill_core7":true},custom_name='{"text":"按下F使用 - 忠契命约","italic":false,"color":"aqua"}',lore=['{"text":"鼠标左键点击可在已解锁的主动技能间切换","color":"gray","italic":false}']]
-item replace entity @s[scores={Azr0_SkillEquip_3=8,Azr0_SkillEquip_3_timer=..0}] hotbar.5 with music_disc_creator[custom_data={"azr0skill_core8":true},custom_name='{"text":"按下F使用 - 妖艳舞曲","italic":false,"color":"aqua"}']
+item replace entity @s[scores={Azr0_SkillEquip_3=8,Azr0_SkillEquip_3_timer=..0}] hotbar.5 with music_disc_creator[custom_data={"azr0skill_core8":true},custom_name='{"text":"按下F使用 - 妖艳舞曲","italic":false,"color":"aqua"}',lore=['{"text":"鼠标左键点击可在已解锁的主动技能间切换","color":"gray","italic":false}']]
 clear @s[scores={Azr0_arrow=..0}] arrow
 item replace entity @s[scores={Azr0_arrow=0}] hotbar.6 with barrier
 item replace entity @s[scores={Azr0_arrow=1}] hotbar.6 with arrow 1
