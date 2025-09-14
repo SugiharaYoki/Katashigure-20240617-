@@ -23,6 +23,11 @@ execute store result score @s rng9 if entity @e[distance=0..200,type=drowned,tag
 execute as @e[distance=30..,type=drowned,tag=MG_AZR0MOB_devil_goat_protector] at @s run effect give @s wither 2 1 false
 
 
+execute as @e[tag=MG_AZR0MOB_devil_goat_cross,type=shulker] as @e[distance=..8,type=drowned,tag=MG_AZR0MOB_devil_goat_protector] at @s run effect give @s resistance 1 2 true
+execute as @e[tag=MG_AZR0MOB_devil_goat_cross,type=shulker] as @e[distance=..8,type=drowned,tag=MG_AZR0MOB_devil_goat_protector] at @s run effect give @s slowness 1 0 true
+execute as @e[tag=MG_AZR0MOB_devil_goat_cross,type=shulker] as @e[distance=..8,type=drowned,tag=MG_AZR0MOB_devil_goat_protector] at @s run particle minecraft:trial_omen ~ ~1.5 ~ 0 0 0 0 1
+
+
 execute if score @s rng8 matches 300.. run scoreboard players set @s rng8 0
 
 
