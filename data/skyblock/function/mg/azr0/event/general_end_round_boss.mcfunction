@@ -14,3 +14,5 @@ execute as @a[tag=MG_AZR0PT] at @s run playsound minecraft:ui.toast.challenge_co
 execute as @a[tag=MG_AZR0PT] at @s run give @s diamond 5
 execute as @a[tag=MG_AZR0PT] at @s run give @s netherite_ingot 5
 
+kill @e[tag=azr0_boss_devil_goat_summon_cross_marker,distance=..200]
+kill @e[tag=MG_AZR0MOB_devil_goat_cross,distance=..200]
