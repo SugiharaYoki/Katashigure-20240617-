@@ -12,7 +12,7 @@ execute as @a[tag=MG_AZR0PT,tag=!azr0_player_looking_at_devil_goat] at @s if pre
 execute as @a[tag=MG_AZR0PT,tag=azr0_player_looking_at_devil_goat_process] at @s run playsound minecraft:entity.warden.heartbeat hostile @s ~ ~ ~ 1 1.3
 execute as @a[tag=MG_AZR0PT,tag=azr0_player_looking_at_devil_goat_process] at @s run playsound minecraft:entity.elder_guardian.curse hostile @s ~ ~ ~ 1 0.5
 execute as @a[tag=MG_AZR0PT,tag=azr0_player_looking_at_devil_goat_process] at @s run effect give @s slowness 2 9 false
-execute as @a[tag=MG_AZR0PT,tag=azr0_player_looking_at_devil_goat_process] at @s run tellraw @s [{"text": "注视使者的瞬间，你的双脚霎时无法移动！","color": "red"}]
+execute as @a[tag=MG_AZR0PT,tag=azr0_player_looking_at_devil_goat_process] at @s run tellraw @s [{"text": "刻骨铭心的黑暗侵入你的思绪，你的两腿霎时脱力！","color": "red"}]
 execute as @a[tag=MG_AZR0PT,tag=azr0_player_looking_at_devil_goat_process] at @s run tag @s add azr0_player_looking_at_devil_goat
 execute as @a[tag=MG_AZR0PT,tag=azr0_player_looking_at_devil_goat_process] at @s run tag @s remove azr0_player_looking_at_devil_goat_process
 
