@@ -28,6 +28,7 @@ execute as @e[tag=MG_AZR0MOB_devil_goat_cross,type=shulker] as @e[distance=..8,t
 execute as @e[tag=MG_AZR0MOB_devil_goat_cross,type=shulker] as @e[distance=..8,type=drowned,tag=MG_AZR0MOB_devil_goat_protector] at @s run effect give @s slowness 1 0 true
 execute as @e[tag=MG_AZR0MOB_devil_goat_cross,type=shulker] as @e[distance=..8,type=drowned,tag=MG_AZR0MOB_devil_goat_protector] at @s run particle minecraft:trial_omen ~ ~1.5 ~ 0 0 0 0 1
 
+execute as @n[tag=MG_AZR0MOB_devil_goat_cross,distance=0..0.5] at @s unless entity @e[tag=azr0_boss_devil_goat_summon_cross_marker,distance=..1.5] run kill @s
 
 execute if score @s rng8 matches 300.. run scoreboard players set @s rng8 0
 
