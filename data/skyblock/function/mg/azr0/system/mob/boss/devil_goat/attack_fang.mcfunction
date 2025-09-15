@@ -4,10 +4,11 @@ scoreboard players add @s rng5 1
 
 
 execute if score @s rng5 matches 20 run playsound minecraft:entity.evoker.prepare_attack hostile @a ~ ~ ~ 1 1.5
-execute if score @s rng5 matches 20 run particle sculk_soul ~ ~ ~ 0 0 0 0.3 40
+execute if score @s rng5 matches 20 run particle sculk_soul ~ ~ ~ 0 0 0 0.3 80
 execute if score @s rng5 matches 10 run playsound minecraft:entity.goat.screaming.prepare_ram hostile @a ~ ~ ~ 1 0.7
+execute if score @s rng5 matches 10 run playsound minecraft:entity.lightning_bolt.thunder hostile @a ~ ~ ~ 1 0.56
 
-execute if score @s rng5 matches 12..49 run particle soul ~ ~1 ~ 0.53 1 0.53 0.02 5
+execute if score @s rng5 matches 12..49 run particle soul ~ ~1 ~ 0.53 1 0.53 0.03 8
 execute if score @s rng5 matches 12..49 run particle crimson_spore ~ ~0.2 ~ 0.8 0.3 0.8 0 5
 execute if score @s rng5 matches 12 run playsound minecraft:ambient.warped_forest.mood hostile @a ~ ~ ~ 3 0.8
 execute if score @s rng5 matches 12 run playsound minecraft:ambient.warped_forest.mood hostile @a ~ ~ ~ 3 0.5
