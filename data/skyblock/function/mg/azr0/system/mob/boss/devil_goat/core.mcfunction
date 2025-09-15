@@ -9,10 +9,12 @@ execute store result score @s Health run data get entity @s Health
 execute if score @s rng8 matches 20..60 run rotate @s facing entity @p[tag=MG_AZR0PT]
 execute if score @s rng8 matches 20 store result score @s rng1 run random value 20..50
 execute if score @s rng8 matches 20 run scoreboard players operation @s rng8 += @s rng1
-execute if score @s rng8 matches 80 store result score @s rng2 run random value 1..5
+execute if score @s rng8 matches 80 store result score @s rng2 run random value 1..6
+execute if score @s rng8 matches 80 store result score @s[scores={Health=..199,rng8=..3}] rng2 run random value 1..7
 
 execute if score @s rng8 matches 80.. if score @s rng2 matches 1..3 at @s run function skyblock:mg/azr0/system/mob/boss/devil_goat/move_invisible
-execute if score @s rng8 matches 80.. if score @s rng2 matches 4..5 at @s run function skyblock:mg/azr0/system/mob/boss/devil_goat/move_eye
+execute if score @s rng8 matches 80.. if score @s rng2 matches 4..6 at @s run function skyblock:mg/azr0/system/mob/boss/devil_goat/move_eye
+execute if score @s rng8 matches 80.. if score @s rng2 matches 7 at @s run function skyblock:mg/azr0/system/mob/boss/devil_goat/attack_fang
 
 
 execute as @e[distance=..200,type=marker,tag=azr0_boss_devil_goat_circle_marker] at @s run function skyblock:mg/azr0/system/mob/boss/devil_goat/circle_marker
@@ -32,6 +34,9 @@ execute as @n[tag=MG_AZR0MOB_devil_goat_cross,distance=..200] at @s unless entit
 
 execute if score @s rng8 matches 300.. run scoreboard players set @s rng8 0
 
+scoreboard players add @s[scores={Health=..199,rng8=..3}] rng10 1
+execute if score @s rng10 matches 2 run scoreboard players set @s rng2 2
+execute if score @s rng10 matches 2 run scoreboard players set @s rng8 80
 
 
 

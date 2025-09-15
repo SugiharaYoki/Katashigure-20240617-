@@ -214,6 +214,13 @@ tag @a remove azr0_load_game
 execute at @n[tag=mg_azr0,type=marker] run kill @e[type=item,distance=..120]
 
 
+execute if entity @a[tag=azr0_new_game_15,tag=MG_AZR0PT] run scoreboard players set MG_AZR0_Timer rng2 16
+execute if entity @a[tag=azr0_new_game_15,tag=MG_AZR0PT] run scoreboard players set MG_AZR0_Timer rng7 80
+execute if entity @a[tag=azr0_new_game_15,tag=MG_AZR0PT] run scoreboard players add @a[tag=MG_AZR0PT] Azr_emerald 450
+execute if entity @a[tag=azr0_new_game_15,tag=MG_AZR0PT] run scoreboard players add @a[tag=MG_AZR0PT] Azr_diamond 2
+execute if entity @a[tag=azr0_new_game_15,tag=MG_AZR0PT] run scoreboard players add @a[tag=MG_AZR0PT] Azr0_SkillPoint 3
+execute if entity @a[tag=azr0_new_game_15,tag=MG_AZR0PT] run scoreboard players add @a[tag=MG_AZR0PT] Azr0_arrow 20
+
 #启动core
 #execute at @n[tag=mg_azr0,type=marker] positioned ~ ~-3 ~-1 run setblock 125078 0 -242 minecraft:redstone_block
 execute at @n[tag=mg_azr0,type=marker] positioned ~ ~-3 ~-1 run scoreboard players set isStarted azr0_system 1
@@ -221,7 +228,7 @@ execute at @n[tag=mg_azr0,type=marker] positioned ~ ~-3 ~-1 run scoreboard playe
 tag @a remove MG_AZR0PT_dead
 
 
-
+tag @a remove azr0_new_game_15
 
 
 

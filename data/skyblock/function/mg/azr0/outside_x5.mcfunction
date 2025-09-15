@@ -2,6 +2,7 @@
 execute as @a[tag=MG_AZR0PT] at @s unless entity @e[tag=mg_azr0] run function skyblock:mg/azr0/system/player/death
 
 execute unless score @s Azr0_Wave matches 2.. run item replace entity @s[tag=!MG_AZR0PT] inventory.13 with nether_star[custom_data={"azr0outside":true},custom_name='{"text":"「开始新游戏」","italic":false,"bold":true,"color":"green"}']
+execute unless score @s Azr0_Wave matches 2.. if score @s Azr0_Wave_best matches 101.. run item replace entity @s[tag=!MG_AZR0PT] inventory.14 with bordure_indented_banner_pattern[custom_data={"azr0outside":true},custom_name='{"text":"「开始新游戏：第16波」","italic":false,"bold":true,"color":"green"}']
 item replace entity @s[tag=!MG_AZR0PT,scores={Azr0_Wave=2..}] inventory.13 with ender_eye[custom_data={"azr0outside":true},custom_name='{"text":"「继续游戏」","italic":false,"bold":true,"color":"green"}']
 item replace entity @s[tag=!MG_AZR0PT,scores={Azr0_Wave=2..}] inventory.26 with nether_star[custom_data={"azr0outside":true},custom_name='{"text":"「删除存档！！」","italic":false,"bold":true,"color":"red"}']
 
