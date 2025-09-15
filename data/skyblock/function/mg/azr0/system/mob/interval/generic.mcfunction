@@ -46,11 +46,8 @@ execute if score MG_AZR0_rng rng3 matches 3031..3040 at @e[tag=mg_azr0_MobPortal
 execute if score MG_AZR0_rng rng3 matches 3031..3040 at @e[tag=mg_azr0_MobPortals,type=marker,limit=1,sort=random] run function skyblock:mg/azr0/system/mob/boss/angel_candle/summon
 execute if score MG_AZR0_rng rng3 matches 3041..3050 at @e[tag=mg_azr0_MobPortals,type=marker,limit=1,sort=random] run function skyblock:mg/azr0/system/mob/boss/devil_goat/summon
 execute if score MG_AZR0_rng rng3 matches 3051..3060 at @e[tag=mg_azr0_MobPortals,type=marker,limit=1,sort=random] run function skyblock:mg/azr0/system/mob/boss/assassin/summon
-execute if score MG_AZR0_rng rng3 matches 3051..3060 at @e[tag=mg_azr0_MobPortals,type=marker,limit=1,sort=random] run function skyblock:mg/azr0/system/mob/boss/assassin/summon
-execute if score MG_AZR0_rng rng3 matches 3051..3060 at @e[tag=mg_azr0_MobPortals,type=marker,limit=1,sort=random] run function skyblock:mg/azr0/system/mob/boss/assassin/summon
-execute if score MG_AZR0_rng rng3 matches 3061..3070 at @e[tag=mg_azr0_MobPortals,type=marker,limit=1,sort=random] run function skyblock:mg/azr0/system/mob/boss/angel_axe/summon
-execute if score MG_AZR0_rng rng3 matches 3061..3070 at @e[tag=mg_azr0_MobPortals,type=marker,limit=1,sort=random] run function skyblock:mg/azr0/system/mob/boss/angel_axe/summon
-execute if score MG_AZR0_rng rng3 matches 3061..3070 at @e[tag=mg_azr0_MobPortals,type=marker,limit=1,sort=random] run function skyblock:mg/azr0/system/mob/boss/angel_axe/summon
+execute if score MG_AZR0_rng rng3 matches 3051..3060 at @e[tag=mg_azr0_MobPortals,type=marker,limit=1,sort=random] run function skyblock:mg/azr0/system/mob/boss/angel_axe/summon
+execute if score MG_AZR0_rng rng3 matches 3051..3060 at @e[tag=mg_azr0_MobPortals,type=marker,limit=1,sort=random] run function skyblock:mg/azr0/system/mob/boss/angel_axe/summon
 
 
 execute if score MG_AZR0_Timer rng2 matches 50..99 store result score MG_AZR0_rng rng3 run random value 1..600
