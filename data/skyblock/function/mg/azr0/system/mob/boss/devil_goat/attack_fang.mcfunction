@@ -21,22 +21,22 @@ execute if score @s rng5 matches 56 store result score @s rng1 run random value 
 execute if score @s rng5 matches 61 store result score @s rng1 run random value 1..16
 execute if score @s rng5 matches 66 store result score @s rng1 run random value 1..16
 execute if score @s rng5 matches 71 store result score @s rng1 run random value 1..16
-execute if score @s rng5 matches 20.. at @s[scores={rng1=1}] rotated ~ 0 run summon marker ^ ^0.2 ^2.4 {Tags:["azr0_boss_devil_goat_circle_marker"]}
-execute if score @s rng5 matches 20.. at @s[scores={rng1=2}] rotated ~ 0 run summon marker ^ ^0.2 ^-2.4 {Tags:["azr0_boss_devil_goat_circle_marker"]}
-execute if score @s rng5 matches 20.. at @s[scores={rng1=3}] rotated ~ 0 run summon marker ^2.4 ^0.2 ^ {Tags:["azr0_boss_devil_goat_circle_marker"]}
-execute if score @s rng5 matches 20.. at @s[scores={rng1=4}] rotated ~ 0 run summon marker ^-2.4 ^0.2 ^ {Tags:["azr0_boss_devil_goat_circle_marker"]}
-execute if score @s rng5 matches 20.. at @s[scores={rng1=5}] rotated ~ 0 run summon marker ^2.4 ^0.2 ^2.4 {Tags:["azr0_boss_devil_goat_circle_marker"]}
-execute if score @s rng5 matches 20.. at @s[scores={rng1=6}] rotated ~ 0 run summon marker ^2.4 ^0.2 ^-2.4 {Tags:["azr0_boss_devil_goat_circle_marker"]}
-execute if score @s rng5 matches 20.. at @s[scores={rng1=7}] rotated ~ 0 run summon marker ^-2.4 ^0.2 ^2.4 {Tags:["azr0_boss_devil_goat_circle_marker"]}
-execute if score @s rng5 matches 20.. at @s[scores={rng1=8}] rotated ~ 0 run summon marker ^-2.4 ^0.2 ^-2.4 {Tags:["azr0_boss_devil_goat_circle_marker"]}
-execute if score @s rng5 matches 20.. at @s[scores={rng1=9}] rotated ~ 0 run summon marker ^4.6 ^0.2 ^3.2 {Tags:["azr0_boss_devil_goat_circle_marker"]}
-execute if score @s rng5 matches 20.. at @s[scores={rng1=10}] rotated ~ 0 run summon marker ^3.2 ^0.2 ^4.6 {Tags:["azr0_boss_devil_goat_circle_marker"]}
-execute if score @s rng5 matches 20.. at @s[scores={rng1=11}] rotated ~ 0 run summon marker ^4.6 ^0.2 ^-3.2 {Tags:["azr0_boss_devil_goat_circle_marker"]}
-execute if score @s rng5 matches 20.. at @s[scores={rng1=12}] rotated ~ 0 run summon marker ^3.2 ^0.2 ^-4.6 {Tags:["azr0_boss_devil_goat_circle_marker"]}
-execute if score @s rng5 matches 20.. at @s[scores={rng1=13}] rotated ~ 0 run summon marker ^-4.6 ^0.2 ^3.2 {Tags:["azr0_boss_devil_goat_circle_marker"]}
-execute if score @s rng5 matches 20.. at @s[scores={rng1=14}] rotated ~ 0 run summon marker ^-3.2 ^0.2 ^4.6 {Tags:["azr0_boss_devil_goat_circle_marker"]}
-execute if score @s rng5 matches 20.. at @s[scores={rng1=15}] rotated ~ 0 run summon marker ^-4.6 ^0.2 ^-3.2 {Tags:["azr0_boss_devil_goat_circle_marker"]}
-execute if score @s rng5 matches 20.. at @s[scores={rng1=16}] rotated ~ 0 run summon marker ^-3.2 ^0.2 ^-4.6 {Tags:["azr0_boss_devil_goat_circle_marker"]}
+execute if score @s rng5 matches 20.. at @s[scores={rng1=1}] rotated ~ 0 run summon marker ^ ^0.2 ^3.4 {Tags:["azr0_boss_devil_goat_circle_marker"]}
+execute if score @s rng5 matches 20.. at @s[scores={rng1=2}] rotated ~ 0 run summon marker ^ ^0.2 ^-3.4 {Tags:["azr0_boss_devil_goat_circle_marker"]}
+execute if score @s rng5 matches 20.. at @s[scores={rng1=3}] rotated ~ 0 run summon marker ^3.4 ^0.2 ^ {Tags:["azr0_boss_devil_goat_circle_marker"]}
+execute if score @s rng5 matches 20.. at @s[scores={rng1=4}] rotated ~ 0 run summon marker ^-3.4 ^0.2 ^ {Tags:["azr0_boss_devil_goat_circle_marker"]}
+execute if score @s rng5 matches 20.. at @s[scores={rng1=5}] rotated ~ 0 run summon marker ^3.4 ^0.2 ^3.4 {Tags:["azr0_boss_devil_goat_circle_marker"]}
+execute if score @s rng5 matches 20.. at @s[scores={rng1=6}] rotated ~ 0 run summon marker ^3.4 ^0.2 ^-3.4 {Tags:["azr0_boss_devil_goat_circle_marker"]}
+execute if score @s rng5 matches 20.. at @s[scores={rng1=7}] rotated ~ 0 run summon marker ^-3.4 ^0.2 ^3.4 {Tags:["azr0_boss_devil_goat_circle_marker"]}
+execute if score @s rng5 matches 20.. at @s[scores={rng1=8}] rotated ~ 0 run summon marker ^-3.4 ^0.2 ^-3.4 {Tags:["azr0_boss_devil_goat_circle_marker"]}
+execute if score @s rng5 matches 20.. at @s[scores={rng1=9}] rotated ~ 0 run summon marker ^5.9 ^0.2 ^4.8 {Tags:["azr0_boss_devil_goat_circle_marker"]}
+execute if score @s rng5 matches 20.. at @s[scores={rng1=10}] rotated ~ 0 run summon marker ^4.8 ^0.2 ^5.9 {Tags:["azr0_boss_devil_goat_circle_marker"]}
+execute if score @s rng5 matches 20.. at @s[scores={rng1=11}] rotated ~ 0 run summon marker ^5.9 ^0.2 ^-4.8 {Tags:["azr0_boss_devil_goat_circle_marker"]}
+execute if score @s rng5 matches 20.. at @s[scores={rng1=12}] rotated ~ 0 run summon marker ^4.8 ^0.2 ^-5.9 {Tags:["azr0_boss_devil_goat_circle_marker"]}
+execute if score @s rng5 matches 20.. at @s[scores={rng1=13}] rotated ~ 0 run summon marker ^-5.9 ^0.2 ^4.8 {Tags:["azr0_boss_devil_goat_circle_marker"]}
+execute if score @s rng5 matches 20.. at @s[scores={rng1=14}] rotated ~ 0 run summon marker ^-4.8 ^0.2 ^5.9 {Tags:["azr0_boss_devil_goat_circle_marker"]}
+execute if score @s rng5 matches 20.. at @s[scores={rng1=15}] rotated ~ 0 run summon marker ^-5.9 ^0.2 ^-4.8 {Tags:["azr0_boss_devil_goat_circle_marker"]}
+execute if score @s rng5 matches 20.. at @s[scores={rng1=16}] rotated ~ 0 run summon marker ^-4.8 ^0.2 ^-5.9 {Tags:["azr0_boss_devil_goat_circle_marker"]}
 
 execute if score @s rng5 matches 88 store result score @s rng1 run random value 1..4
 execute if score @s[scores={rng1=1}] rng5 matches 88 rotated ~ 0 run summon marker ^ ^ ^5 {Tags:["azr0_boss_devil_goat_summon_cross_marker"]}
