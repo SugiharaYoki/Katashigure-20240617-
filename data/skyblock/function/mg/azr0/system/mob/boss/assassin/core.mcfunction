@@ -19,8 +19,6 @@ execute if score @s rng8 matches 80.. if score @s rng2 matches 4..5 at @s run fu
 execute if score @s rng8 matches 80.. if score @s rng2 matches 6..7 at @s run function skyblock:mg/azr0/system/mob/boss/assassin/move_multi
 
 
-execute as @e[distance=..200,type=marker,tag=azr0_assassin_smoke_marker] at @s run function skyblock:mg/azr0/system/mob/boss/assassin/marker_smoke
-
 
 
 execute if score @s rng9 matches 2 run scoreboard players set @s rng2 2

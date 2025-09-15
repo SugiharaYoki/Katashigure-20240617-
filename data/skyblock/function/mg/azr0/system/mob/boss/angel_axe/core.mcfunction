@@ -23,10 +23,6 @@ execute if score @s rng8 matches 80.. if score @s rng2 matches 6..7 at @s run su
 execute if score @s rng8 matches 80.. if score @s rng2 matches 6..7 at @s run scoreboard players set @s rng8 0
 
 
-execute as @e[distance=..200,type=marker,tag=azr0_axe_angel_attack_throw_arrow] at @s run function skyblock:mg/azr0/system/mob/boss/angel_axe/particle_arrow
-execute as @e[distance=..200,type=marker,tag=azr0_axe_angel_attack_throw_axe] at @s run function skyblock:mg/azr0/system/mob/boss/angel_axe/marker_axe
-execute as @e[distance=..200,type=marker,tag=azr0_axe_angel_attack_vortex] at @s run function skyblock:mg/azr0/system/mob/boss/angel_axe/marker_vortex
-
 
 #execute if score @s rng9 matches 2 run scoreboard players set @s rng2 2
 #execute if score @s rng9 matches 2 run scoreboard players set @s rng8 80
