@@ -12,13 +12,7 @@ execute if score MG_AZR0_Timer rng3 matches 0 run bossbar set mg:azr0_bar max 1
 execute if score MG_AZR0_Timer rng3 matches 0 run effect give @a[tag=MG_AZR0PT,scores={Azr0_SKILL_16=0..2}] speed 5 2 true
 execute if score MG_AZR0_Timer rng3 matches 0 run effect give @a[tag=MG_AZR0PT,scores={Azr0_SKILL_16=3}] speed 6 3 true
 execute if score MG_AZR0_Timer rng3 matches 0 run effect give @a[tag=MG_AZR0PT] resistance 5 1 true
-execute if score MG_AZR0_Timer rng3 matches 5 if score MG_AZR0_Timer rng2 matches 21 run function skyblock:mg/azr0/event/general_end_round_boss
-execute if score MG_AZR0_Timer rng3 matches 5 if score MG_AZR0_Timer rng2 matches 41 run function skyblock:mg/azr0/event/general_end_round_boss
-execute if score MG_AZR0_Timer rng3 matches 5 if score MG_AZR0_Timer rng2 matches 61 run function skyblock:mg/azr0/event/general_end_round_boss
-execute if score MG_AZR0_Timer rng3 matches 5 if score MG_AZR0_Timer rng2 matches 81 run function skyblock:mg/azr0/event/general_end_round_boss
-execute if score MG_AZR0_Timer rng3 matches 5 if score MG_AZR0_Timer rng2 matches 101 run function skyblock:mg/azr0/event/general_end_round_boss
-execute if score MG_AZR0_Timer rng3 matches 5 if score MG_AZR0_Timer rng2 matches 121 run function skyblock:mg/azr0/event/general_end_round_boss
-execute if score MG_AZR0_Timer rng3 matches 5 if score MG_AZR0_Timer rng2 matches 141 run function skyblock:mg/azr0/event/general_end_round_boss
+execute if score MG_AZR0_Timer rng3 matches 2 run function skyblock:mg/azr0/event/general_end_round_late
 execute if score MG_AZR0_Timer rng3 matches 10 run function skyblock:mg/azr0/event/general_end_round
 execute if score MG_AZR0_Timer rng3 matches 10 if score MG_AZR0_Timer rng2 matches 1..29 run kill @e[type=marker,tag=mg_azr0_MobPortals]
 execute if score MG_AZR0_Timer rng3 matches 12 if score MG_AZR0_Timer rng2 matches 30..69 run kill @e[type=marker,tag=mg_azr0_MobPortals]

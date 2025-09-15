@@ -40,6 +40,7 @@ attribute @s armor_toughness modifier remove mg_azr0:skill_armor_toughness2
 # tag @s add Gaming
 
 effect clear @s
+stopsound @s music
 
 tag @s remove MGAZR0_SkillPrintable
 
