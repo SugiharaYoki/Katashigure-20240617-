@@ -35,7 +35,7 @@ execute as @n[tag=MG_AZR0MOB_devil_goat_cross,distance=..200] at @s unless entit
 execute if score @s rng8 matches 300.. run scoreboard players set @s rng8 0
 
 scoreboard players add @s[scores={Health=..199,rng8=..3}] rng10 1
-execute if score @s rng10 matches 2 run scoreboard players set @s rng2 2
+execute if score @s rng10 matches 2 run scoreboard players set @s rng2 7
 execute if score @s rng10 matches 2 run scoreboard players set @s rng8 80
 
 
