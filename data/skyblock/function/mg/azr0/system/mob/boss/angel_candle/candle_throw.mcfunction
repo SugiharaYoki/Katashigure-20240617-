@@ -12,7 +12,7 @@ execute if score @s rng5 matches 41 run summon marker ~ 4.0 ~ {Tags:["azr0_candl
 execute if score @s rng5 matches 51 run summon marker ~ 4.0 ~ {Tags:["azr0_candle_angel_candle_throw_marker"]}
 execute if score @s rng5 matches 61 run summon marker ~ 4.0 ~ {Tags:["azr0_candle_angel_candle_throw_marker"]}
 execute if score @s[scores={Health=90..}] rng5 matches 71 run summon marker ~ 4.0 ~ {Tags:["azr0_candle_angel_candle_throw_marker"]}
-execute if score @s[scores={Health=..49}] rng5 matches 46 run summon marker ~ 4.0 ~ {Tags:["azr0_candle_angel_candle_throw_marker"]}
+execute if score @s[scores={Health=..49}] rng5 matches 46 run summon marker ~ 4.0 ~ {Tags:["azr0_candle_angel_candle_throw_marker_trace"]}
 execute if score @s[scores={Health=..49}] rng5 matches 56 run summon marker ~ 4.0 ~ {Tags:["azr0_candle_angel_candle_throw_marker"]}
 execute if score @s[scores={Health=..49}] rng5 matches 66 run summon marker ~ 4.0 ~ {Tags:["azr0_candle_angel_candle_throw_marker"]}
 execute if score @s[scores={Health=..89}] rng5 matches 71 run summon marker ~ 4.0 ~ {Tags:["azr0_candle_angel_candle_throw_marker_trace"]}
