@@ -14,6 +14,13 @@ execute if score MG_AZR0_Timer rng2 matches 81.. store result score MG_AZR0_rng 
 
 execute if score MG_AZR0_Timer rng2 matches ..100 store result score MG_AZR0_rng rng5 run random value 1..40
 execute if score MG_AZR0_Timer rng2 matches 101.. store result score MG_AZR0_rng rng5 run random value 1..43
+execute if score MG_AZR0_Timer rng2 matches 120 run scoreboard players set MG_AZR0_rng rng5 1
+execute if score MG_AZR0_Timer rng2 matches 140 run scoreboard players set MG_AZR0_rng rng5 1
+execute if score MG_AZR0_Timer rng2 matches 160 run scoreboard players set MG_AZR0_rng rng5 1
+execute if score MG_AZR0_Timer rng2 matches 180 run scoreboard players set MG_AZR0_rng rng5 1
+execute if score MG_AZR0_Timer rng2 matches 200 run scoreboard players set MG_AZR0_rng rng5 1
+
+
 
 #1左 2右 3前 4后 5左右 6左前 7右前 8前后 9左右前 10左右后 11四方
 tellraw @a[tag=MG_AZR0PT] [{"text": "第","color": "red","bold": true},{"score":{"name":"MG_AZR0_Timer","objective":"rng2"},"color":"red","bold": true},{"text": "波","color": "red","bold": true}]
