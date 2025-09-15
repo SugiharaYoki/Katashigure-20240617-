@@ -43,8 +43,12 @@ execute if score @s[scores={rng1=1}] rng5 matches 88 rotated ~ 0 run summon mark
 execute if score @s[scores={rng1=2}] rng5 matches 88 rotated ~ 0 run summon marker ^ ^ ^-5 {Tags:["azr0_boss_devil_goat_summon_cross_marker"]}
 execute if score @s[scores={rng1=3}] rng5 matches 88 rotated ~ 0 run summon marker ^5 ^ ^ {Tags:["azr0_boss_devil_goat_summon_cross_marker"]}
 execute if score @s[scores={rng1=4}] rng5 matches 88 rotated ~ 0 run summon marker ^-5 ^ ^ {Tags:["azr0_boss_devil_goat_summon_cross_marker"]}
+execute if score @s[scores={rng1=1}] rng5 matches 88 rotated ~ 0 run summon marker ^ ^ ^5 {Tags:["azr0_boss_devil_goat_summon_protector_marker"]}
+execute if score @s[scores={rng1=2}] rng5 matches 88 rotated ~ 0 run summon marker ^ ^ ^-5 {Tags:["azr0_boss_devil_goat_summon_protector_marker"]}
+execute if score @s[scores={rng1=3}] rng5 matches 88 rotated ~ 0 run summon marker ^5 ^ ^ {Tags:["azr0_boss_devil_goat_summon_protector_marker"]}
+execute if score @s[scores={rng1=4}] rng5 matches 88 rotated ~ 0 run summon marker ^-5 ^ ^ {Tags:["azr0_boss_devil_goat_summon_protector_marker"]}
 
 execute if score @s rng5 matches 90.. run scoreboard players set @s rng5 0
-execute if score @s rng5 matches 90.. run scoreboard players set @s rng8 -20
+execute if score @s rng5 matches 90.. run scoreboard players set @s rng8 -10
 
 
