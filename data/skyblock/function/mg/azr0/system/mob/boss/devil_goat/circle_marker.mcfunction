@@ -20,11 +20,12 @@ execute if score @s rng1 matches 3..24 at @s positioned ~ ~ ~ rotated 320 0 run 
 execute if score @s rng1 matches 3..24 at @s positioned ~ ~ ~ rotated 340 0 run particle soul_fire_flame ^ ^0.2 ^2 0 0 0 0.0 1
 execute if score @s rng1 matches 3..24 at @s positioned ~ ~ ~ rotated 360 0 run particle soul_fire_flame ^ ^0.2 ^2 0 0 0 0.0 1
 
+execute if score @s rng1 matches 3 at @s run tp @s ~ 4.1 ~
 execute if score @s rng1 matches 3..25 at @s run tp @s ~ ~0.01 ~
 execute if score @s rng1 matches 8..25 at @s run tp @s ~ ~0.01 ~
 execute if score @s rng1 matches 13..25 at @s run tp @s ~ ~0.01 ~
-execute if score @s rng1 matches 18..25 at @s run tp @s ~ ~0.01 ~
-execute if score @s rng1 matches 22..25 at @s run tp @s ~ ~0.01 ~
+execute if score @s rng1 matches 18..25 at @s run tp @s ~ ~0.02 ~
+execute if score @s rng1 matches 22..25 at @s run tp @s ~ ~0.03 ~
 
 execute if score @s rng1 matches 25 at @s positioned ~ 4.0 ~ rotated 20 0 run summon evoker_fangs ^ ^ ^2
 execute if score @s rng1 matches 25 at @s positioned ~ 4.0 ~ rotated 40 0 run summon evoker_fangs ^ ^ ^2
