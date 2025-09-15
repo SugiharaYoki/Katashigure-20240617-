@@ -25,7 +25,7 @@ execute if score @s rng5 matches 50 if score @s[scores={Health=..399}] rng9 matc
 execute if score @s rng5 matches 60 if score @s[scores={Health=..249}] rng9 matches ..3 run summon marker ^ ^ ^0.3 {Tags:["azr0_boss_devil_goat_summon_protector_marker"]}
 execute if score @s rng5 matches 60 if score @s[scores={Health=..99}] rng9 matches ..4 run summon marker ^ ^ ^0.3 {Tags:["azr0_boss_devil_goat_summon_protector_marker"]}
 
-execute if score @s rng5 matches 69 if entity @s[scores={Health=..299}] run summon marker ^ ^ ^0.3 {Tags:["azr0_boss_devil_goat_summon_cross_marker"]}
+execute if score @s rng5 matches 69 rotated ~ 0 if entity @s[scores={Health=..299}] run summon marker ^ ^ ^0.3 {Tags:["azr0_boss_devil_goat_summon_cross_marker"]}
 
 execute if score @s rng5 matches 70.. run tag @a remove azr0_player_looking_at_devil_goat
 execute if score @s rng5 matches 70.. run scoreboard players set @s rng5 0
