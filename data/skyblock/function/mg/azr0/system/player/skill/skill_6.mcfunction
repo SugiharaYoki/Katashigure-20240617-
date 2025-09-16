@@ -3,6 +3,7 @@ scoreboard players add @s Azr0_SKILL_6_timer 1
 execute if entity @s[scores={Azr0_SKILL_6=1,Azr0_SKILL_6_timer=18}] run tag @s add Azr0_SKILL_6a
 execute if entity @s[scores={Azr0_SKILL_6=2,Azr0_SKILL_6_timer=18}] run tag @s add Azr0_SKILL_6a
 execute if entity @s[scores={Azr0_SKILL_6=3,Azr0_SKILL_6_timer=18}] run tag @s add Azr0_SKILL_6a
+execute if entity @s[scores={Azr0_SKILL_6=4,Azr0_SKILL_6_timer=18}] run tag @s add Azr0_SKILL_6a
 
 
 execute if entity @s[tag=Azr0_SKILL_6a] run playsound entity.blaze.shoot player @a ~ ~ ~ 0.9 0.9
@@ -29,6 +30,7 @@ execute if entity @s[tag=Azr0_SKILL_6a,scores={Azr0_SKILL_6=4}] at @s as @e[dist
 execute if entity @s[scores={Azr0_SKILL_6=1,Azr0_SKILL_6_timer=40..}] run scoreboard players set @s Azr0_SKILL_6_timer 0
 execute if entity @s[scores={Azr0_SKILL_6=2,Azr0_SKILL_6_timer=36..}] run scoreboard players set @s Azr0_SKILL_6_timer 0
 execute if entity @s[scores={Azr0_SKILL_6=3,Azr0_SKILL_6_timer=32..}] run scoreboard players set @s Azr0_SKILL_6_timer 0
+execute if entity @s[scores={Azr0_SKILL_6=4,Azr0_SKILL_6_timer=32..}] run scoreboard players set @s Azr0_SKILL_6_timer 0
 
 tag @s remove Azr0_SKILL_6a
 tag @s remove Azr0_SKILL_6b
