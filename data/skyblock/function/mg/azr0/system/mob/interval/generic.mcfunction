@@ -12,12 +12,12 @@ execute if score MG_AZR0_Timer rng2 matches 60..79 store result score MG_AZR0_rn
 execute if score MG_AZR0_Timer rng2 matches 80..99 store result score MG_AZR0_rng rng3 run random value -15..83
 execute if score MG_AZR0_Timer rng2 matches 100.. store result score MG_AZR0_rng rng3 run random value -10..83
 
-execute if score MG_AZR0_Timer rng8 matches 8000.. if score MG_AZR0_Timer rng2 matches 15..25 store result score MG_AZR0_rng rng3 run random value 3000..3010
-execute if score MG_AZR0_Timer rng8 matches 8000.. if score MG_AZR0_Timer rng2 matches 35..45 store result score MG_AZR0_rng rng3 run random value 3011..3020
-execute if score MG_AZR0_Timer rng8 matches 8000.. if score MG_AZR0_Timer rng2 matches 55..65 store result score MG_AZR0_rng rng3 run random value 3021..3030
-execute if score MG_AZR0_Timer rng8 matches 8000.. if score MG_AZR0_Timer rng2 matches 75..85 store result score MG_AZR0_rng rng3 run random value 3031..3040
-execute if score MG_AZR0_Timer rng8 matches 8000.. if score MG_AZR0_Timer rng2 matches 95..105 store result score MG_AZR0_rng rng3 run random value 3041..3050
-execute if score MG_AZR0_Timer rng8 matches 8000.. if score MG_AZR0_Timer rng2 matches 115..125 store result score MG_AZR0_rng rng3 run random value 3051..3060
+execute if score MG_AZR0_Timer rng8 matches 8000.. if score MG_AZR0_Timer rng2 matches 20 store result score MG_AZR0_rng rng3 run random value 3000..3010
+execute if score MG_AZR0_Timer rng8 matches 8000.. if score MG_AZR0_Timer rng2 matches 40 store result score MG_AZR0_rng rng3 run random value 3011..3020
+execute if score MG_AZR0_Timer rng8 matches 8000.. if score MG_AZR0_Timer rng2 matches 60 store result score MG_AZR0_rng rng3 run random value 3021..3030
+execute if score MG_AZR0_Timer rng8 matches 8000.. if score MG_AZR0_Timer rng2 matches 80 store result score MG_AZR0_rng rng3 run random value 3031..3040
+execute if score MG_AZR0_Timer rng8 matches 8000.. if score MG_AZR0_Timer rng2 matches 100 store result score MG_AZR0_rng rng3 run random value 3041..3050
+execute if score MG_AZR0_Timer rng8 matches 8000.. if score MG_AZR0_Timer rng2 matches 120 store result score MG_AZR0_rng rng3 run random value 3051..3060
 execute if score MG_AZR0_Timer rng8 matches 8000.. if score MG_AZR0_Timer rng2 matches 135..145 store result score MG_AZR0_rng rng3 run random value 3061..3070
 
 execute if score MG_AZR0_rng rng3 matches -30..10 at @e[tag=mg_azr0_MobPortals,type=marker,limit=1,sort=random] run function skyblock:mg/azr0/m/zombie
