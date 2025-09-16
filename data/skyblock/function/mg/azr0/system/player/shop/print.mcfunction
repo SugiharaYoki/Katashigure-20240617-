@@ -221,4 +221,5 @@ item replace entity @s[scores={Azr0_UPG_armor=9}] inventory.25 with end_crystal[
 
 
 execute if entity @s[scores={Azr0_SkillPoint=1..,Azr0_SkillEquip_1rng=0}] run function skyblock:mg/azr0/system/player/skill/refresh_skill
+execute if entity @s[scores={Azr0_SkillPoint=1..,Azr0_SkillEquip_1rng=1..}] unless score @s Azr0_SkillEquip_1rng = @s Azr0_SkillEquip_2rng unless score @s Azr0_SkillEquip_2rng = @s Azr0_SkillEquip_3rng unless score @s Azr0_SkillEquip_1rng = @s Azr0_SkillEquip_3rng run function skyblock:mg/azr0/system/player/skill/refresh_skill_2
 execute if entity @s[tag=MGAZR0_SkillPrintable] run function skyblock:mg/azr0/system/player/shop/skill_print
