@@ -12,7 +12,6 @@ execute if score MG_AZR0_Timer rng3 matches 0 run bossbar set mg:azr0_bar max 1
 execute if score MG_AZR0_Timer rng3 matches 0 run effect give @a[tag=MG_AZR0PT,scores={Azr0_SKILL_16=0..2}] speed 5 2 true
 execute if score MG_AZR0_Timer rng3 matches 0 run effect give @a[tag=MG_AZR0PT,scores={Azr0_SKILL_16=3}] speed 6 3 true
 execute if score MG_AZR0_Timer rng3 matches 0 run effect give @a[tag=MG_AZR0PT] resistance 5 1 true
-execute if score MG_AZR0_Timer rng3 matches 2 run function skyblock:mg/azr0/event/general_end_round_late
 execute if score MG_AZR0_Timer rng3 matches 10 run function skyblock:mg/azr0/event/general_end_round
 execute if score MG_AZR0_Timer rng3 matches 10 if score MG_AZR0_Timer rng2 matches 1..29 run kill @e[type=marker,tag=mg_azr0_MobPortals]
 execute if score MG_AZR0_Timer rng3 matches 12 if score MG_AZR0_Timer rng2 matches 30..69 run kill @e[type=marker,tag=mg_azr0_MobPortals]
@@ -25,6 +24,7 @@ execute if score MG_AZR0_Timer rng3 matches 1..20 run bossbar set mg:azr0_bar ma
 execute if score MG_AZR0_Timer rng3 matches 1..20 run bossbar set mg:azr0_bar players @a[tag=MG_AZR0PT]
 execute if score MG_AZR0_Timer rng3 matches 1..20 store result bossbar mg:azr0_bar value run scoreboard players get MG_AZR0_Timer rng3
 execute if score MG_AZR0_Timer rng3 matches 2..20 if score MG_AZR0_rng rng7 matches ..49 if items entity @a[tag=MG_AZR0PT,predicate=skyblock:sneaking] weapon.offhand #swords[custom_data={"azr0weapon_sword":true}] run scoreboard players set MG_AZR0_Timer rng3 1
+execute if score MG_AZR0_Timer rng3 matches 1 run function skyblock:mg/azr0/event/general_end_round_late
 
 #rng4
 #1左 2右 3前 4后 5左右 6左前 7右前 8前后 9左右前 10左右后 11四方
