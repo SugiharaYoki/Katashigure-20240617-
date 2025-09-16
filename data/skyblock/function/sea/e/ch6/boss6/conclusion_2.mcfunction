@@ -28,8 +28,8 @@ execute if score SEA_ch6_event sea_4temp4 matches 1277 as @n[tag=SEAedwina] at @
 execute if score SEA_ch6_event sea_4temp4 matches 1349 as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
 execute if score SEA_ch6_event sea_4temp4 matches 1349 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“伊曼纽尔，我是你在十二年前救下的那些女孩的其中一人。”","color":"white","bold": false}]
 
-execute if score SEA_ch6_event sea_4temp4 matches 1408 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"伊曼纽尔：","color":"aqua","bold": true},{"text":"\n“为、为什么……你会知道我的真名……？！我明明没告诉你们任、……”","color":"white","bold": false}]
-execute if score SEA_ch6_event sea_4temp4 matches 1478 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"伊曼纽尔：","color":"aqua","bold": true},{"text":"\n“……等等，你刚刚说的是，十二年前的那场跨国人口贩卖案？！”","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 1408 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“为、为什么……你会知道我的真名……？！我明明没告诉你们任、……”","color":"white"}]
+execute if score SEA_ch6_event sea_4temp4 matches 1478 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“……等等，你刚刚说的是，十二年前的那场跨国人口贩卖案？！”","color":"white"}]
 
 execute if score SEA_ch6_event sea_4temp4 matches 1544 as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
 execute if score SEA_ch6_event sea_4temp4 matches 1544 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“……谢谢你赐予我新生。我真的没有想到，最终……居然真的能够再次与你相见。”","color":"white","bold": false}]
