@@ -257,10 +257,38 @@ execute if score SEA_ch6_event sea_4temp4 matches 2100..2999 run scoreboard play
 
 execute if score SEA_ch6_event sea_4temp4 matches 1700..2999 if entity @a[tag=SEAPT,x=90381,y=228,z=-1764,dx=30,dy=20,dz=30] run scoreboard players set SEA_ch6_event sea_4temp4 3001
 
+execute if score SEA_ch6_event sea_4temp4 matches 3050 as @p[tag=SEAPT] at @s run playsound minecraft:ambient.underwater.loop.additions.ultra_rare ambient @a ~ ~ ~ 5 0.9
+execute if score SEA_ch6_event sea_4temp4 matches 3050 as @p[tag=SEAPT] at @s run playsound minecraft:ambient.underwater.loop.additions.ultra_rare ambient @a ~ ~ ~ 5 0.9
+execute if score SEA_ch6_event sea_4temp4 matches 3050 as @p[tag=SEAPT] at @s run playsound minecraft:ambient.underwater.loop.additions.ultra_rare ambient @a ~ ~ ~ 5 0.9
+execute if score SEA_ch6_event sea_4temp4 matches 3050 as @p[tag=SEAPT] at @s run playsound minecraft:ambient.underwater.loop.additions.ultra_rare ambient @a ~ ~ ~ 5 0.9
+execute if score SEA_ch6_event sea_4temp4 matches 3050 as @p[tag=SEAPT] at @s run playsound minecraft:ambient.underwater.loop.additions.ultra_rare ambient @a ~ ~ ~ 5 0.9
+execute if score SEA_ch6_event sea_4temp4 matches 3050 as @p[tag=SEAPT] at @s run playsound minecraft:ambient.underwater.loop.additions.ultra_rare ambient @a ~ ~ ~ 5 0.9
+execute if score SEA_ch6_event sea_4temp4 matches 3050 as @p[tag=SEAPT] at @s run playsound minecraft:ambient.underwater.loop.additions.ultra_rare ambient @a ~ ~ ~ 5 0.9
+execute if score SEA_ch6_event sea_4temp4 matches 3050 as @p[tag=SEAPT] at @s run playsound minecraft:ambient.underwater.loop.additions.ultra_rare ambient @a ~ ~ ~ 5 0.9
+execute if score SEA_ch6_event sea_4temp4 matches 3050 as @p[tag=SEAPT] at @s run playsound minecraft:ambient.underwater.loop.additions.ultra_rare ambient @a ~ ~ ~ 5 0.9
+execute if score SEA_ch6_event sea_4temp4 matches 3050 as @p[tag=SEAPT] at @s run playsound minecraft:ambient.underwater.loop.additions.ultra_rare ambient @a ~ ~ ~ 5 0.9
+execute if score SEA_ch6_event sea_4temp4 matches 3050 as @p[tag=SEAPT] at @s run playsound minecraft:ambient.underwater.loop.additions.ultra_rare ambient @a ~ ~ ~ 5 0.9
+execute if score SEA_ch6_event sea_4temp4 matches 3050 as @p[tag=SEAPT] at @s run playsound minecraft:ambient.underwater.loop.additions.ultra_rare ambient @a ~ ~ ~ 5 0.9
+execute if score SEA_ch6_event sea_4temp4 matches 3050 as @p[tag=SEAPT] at @s run playsound minecraft:ambient.underwater.loop.additions.ultra_rare ambient @a ~ ~ ~ 5 0.9
+execute if score SEA_ch6_event sea_4temp4 matches 3050 as @p[tag=SEAPT] at @s run playsound minecraft:ambient.underwater.loop.additions.ultra_rare ambient @a ~ ~ ~ 5 0.9
+execute if score SEA_ch6_event sea_4temp4 matches 3050 as @p[tag=SEAPT] at @s run playsound minecraft:ambient.underwater.loop.additions.ultra_rare ambient @a ~ ~ ~ 5 0.9
 execute if score SEA_ch6_event sea_4temp4 matches 3001..3100 run particle minecraft:trial_spawner_detection_ominous 90398 229 -1749 0.6 0 0.6 0 10
 execute if score SEA_ch6_event sea_4temp4 matches 3021..3100 run particle minecraft:trial_spawner_detection_ominous 90398 229 -1749 0.6 0 0.6 0 10
 execute if score SEA_ch6_event sea_4temp4 matches 3041..3100 run particle minecraft:trial_spawner_detection_ominous 90398 229 -1749 0.6 0 0.6 0 10
 execute if score SEA_ch6_event sea_4temp4 matches 3061..3100 run particle minecraft:trial_spawner_detection_ominous 90398 229 -1749 0.6 0 0.6 0 10
 execute if score SEA_ch6_event sea_4temp4 matches 3081..3100 run particle minecraft:trial_spawner_detection_ominous 90398 229 -1749 0.6 0 0.6 0 10
+
+execute if score SEA_ch6_event sea_4temp4 matches 3051 run setblock 90398 234 -1749 air destroy
+execute if score SEA_ch6_event sea_4temp4 matches 3051 run particle minecraft:soul_fire_flame 90398 234.5 -1749 0 0 0 0.3 60
+execute if score SEA_ch6_event sea_4temp4 matches 3051 run particle minecraft:soul_fire_flame 90398 234.5 -1749 0 0 0 0.6 60
+execute if score SEA_ch6_event sea_4temp4 matches 3100 run setblock 90401 234 -1749 air destroy
+execute if score SEA_ch6_event sea_4temp4 matches 3100 run setblock 90395 234 -1749 air destroy
+execute if score SEA_ch6_event sea_4temp4 matches 3100 run setblock 90398 237 -1749 air destroy
+execute if score SEA_ch6_event sea_4temp4 matches 3100 run setblock 90398 229 -1749 air destroy
+execute if score SEA_ch6_event sea_4temp4 matches 3100 run fill 90398 236 -1749 90398 230 -1749 air destroy
+execute if score SEA_ch6_event sea_4temp4 matches 3100 run fill 90400 234 -1749 90396 234 -1749 air destroy
+execute if score SEA_ch6_event sea_4temp4 matches 3100 run summon minecraft:lightning_bolt 90398 229 -1749
+execute if score SEA_ch6_event sea_4temp4 matches 3100 run summon minecraft:lightning_bolt 90398 229 -1749
+execute if score SEA_ch6_event sea_4temp4 matches 3100 run summon minecraft:lightning_bolt 90398 229 -1749
 
 
