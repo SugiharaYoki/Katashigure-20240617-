@@ -244,3 +244,19 @@ execute if score SEA_ch6_event sea_4temp4 matches 2070 as @a[tag=SEAPT] at @s ru
 execute if score SEA_ch6_event sea_4temp4 matches 2070 as @a[tag=SEAPT] at @s run effect clear @s
 execute if score SEA_ch6_event sea_4temp4 matches 2070 as @a[tag=SEAPT] at @s run effect give @s darkness 5 0 true
 #execute if score SEA_ch6_event sea_4temp4 matches 1790 run bossbar remove 9066602
+
+execute if score SEA_ch6_event sea_4temp4 matches 2070 as @a[tag=SEAPT] at @s run setblock 90401 234 -1749 minecraft:prismarine_bricks
+execute if score SEA_ch6_event sea_4temp4 matches 2070 as @a[tag=SEAPT] at @s run setblock 90395 234 -1749 minecraft:prismarine_bricks
+execute if score SEA_ch6_event sea_4temp4 matches 2070 as @a[tag=SEAPT] at @s run setblock 90398 237 -1749 minecraft:prismarine_bricks
+execute if score SEA_ch6_event sea_4temp4 matches 2070 as @a[tag=SEAPT] at @s run setblock 90398 229 -1749 minecraft:prismarine_bricks
+execute if score SEA_ch6_event sea_4temp4 matches 2070 as @a[tag=SEAPT] at @s run fill 90398 236 -1749 90398 230 -1749 minecraft:dark_prismarine
+execute if score SEA_ch6_event sea_4temp4 matches 2070 as @a[tag=SEAPT] at @s run fill 90400 234 -1749 90396 234 -1749 minecraft:dark_prismarine
+execute if score SEA_ch6_event sea_4temp4 matches 2070 as @a[tag=SEAPT] at @s run setblock 90398 234 -1749 minecraft:sea_lantern
+
+
+execute if entity @a[tag=SEAPT,x=90381,y=228,z=-1764,dx=30,dy=20,dz=30] run
+
+
+
+
+
