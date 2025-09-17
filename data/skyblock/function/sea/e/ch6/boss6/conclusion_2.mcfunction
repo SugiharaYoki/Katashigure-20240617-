@@ -332,7 +332,8 @@ execute if score SEA_ch6_event sea_4temp4 matches 4071 as @p[tag=SEAPT] at @s ru
 execute if score SEA_ch6_event sea_4temp4 matches 4075 as @p[tag=SEAPT] at @s run fill 90227 241 -2193 90205 241 -2171 polished_deepslate replace air
 execute if score SEA_ch6_event sea_4temp4 matches 4075 as @p[tag=SEAPT] at @s run playsound minecraft:block.vault.close_shutter block @a 90216 241 -2182 10 0.77
 execute if score SEA_ch6_event sea_4temp4 matches 4075 as @p[tag=SEAPT] at @s run playsound minecraft:block.vault.insert_item_fail block @a 90216 241 -2182 10 0.7
-
+execute if score SEA_ch6_event sea_4temp4 matches 4085 as @p[tag=SEAPT] at @s run setblock 90216 241 -2182 beacon destroy
+execute if score SEA_ch6_event sea_4temp4 matches 4085 as @p[tag=SEAPT] at @s run playsound block.beacon.activate block @a 90216 241 -2182 10 0.8
 
 execute if score SEA_ch6_event sea_4temp4 matches 4075 as @p[tag=SEAPT] at @s run bossbar add 9066602 "权之执理"
 execute if score SEA_ch6_event sea_4temp4 matches 4075 as @p[tag=SEAPT] at @s run bossbar set minecraft:9066602 color red
