@@ -136,15 +136,15 @@ execute positioned 90069 21 -1815 as @e[type=marker,tag=SEA_boss6_flame_anchor,d
 execute positioned 90069 21 -1815 as @e[type=marker,tag=SEA_boss6_burst_anchor,distance=0..50] at @s run function skyblock:sea/e/ch6/boss6/attack_burst_anchor
 
 
-execute if score SEA_ch6_event sea_4temp4 matches 1792..1821 as @n[tag=SEAboss6b] at @s positioned ~ ~ ~ run particle minecraft:small_gust ~ ~4 ~ 0 8 0 0.9 100
+#execute if score SEA_ch6_event sea_4temp4 matches 1792..1821 as @n[tag=SEAboss6b] at @s positioned ~ ~ ~ run particle minecraft:small_gust ~ ~4 ~ 0 8 0 0.9 100
 execute if score SEA_ch6_event sea_4temp4 matches 1792..1821 as @n[tag=SEAboss6b] at @s positioned ~ ~ ~ run particle minecraft:flame ~ ~4 ~ 0 8 0 0.2 40
 execute if score SEA_ch6_event sea_4temp4 matches 1822..1851 as @n[tag=SEAboss6b] at @s positioned ~ ~ ~ run particle minecraft:flame ~ ~4 ~ 0 8 0 0.8 80
 execute if score SEA_ch6_event sea_4temp4 matches 1852..1881 as @n[tag=SEAboss6b] at @s positioned ~ ~ ~ run particle minecraft:flame ~ ~4 ~ 0 8 0 1 150
-execute if score SEA_ch6_event sea_4temp4 matches 1882..2200 as @n[tag=SEAboss6b] at @s positioned ~ ~ ~ run particle minecraft:flame ~ ~4 ~ 0 8 0 2 300
-execute if score SEA_ch6_event sea_4temp4 matches 1792..1821 as @n[tag=SEAboss6b] at @s positioned ~ ~ ~ run particle minecraft:trial_spawner_detection_ominous ~ ~8 ~ 0.5 16 0.5 0 50
-execute if score SEA_ch6_event sea_4temp4 matches 1822..1851 as @n[tag=SEAboss6b] at @s positioned ~ ~ ~ run particle minecraft:trial_spawner_detection_ominous ~ ~8 ~ 1 16 1 0 180
-execute if score SEA_ch6_event sea_4temp4 matches 1852..1881 as @n[tag=SEAboss6b] at @s positioned ~ ~ ~ run particle minecraft:trial_spawner_detection_ominous ~ ~8 ~ 2 16 2 0 320
-execute if score SEA_ch6_event sea_4temp4 matches 1882..2200 as @n[tag=SEAboss6b] at @s positioned ~ ~ ~ run particle minecraft:trial_spawner_detection_ominous ~ ~8 ~ 4 16 4 0 560
+#execute if score SEA_ch6_event sea_4temp4 matches 1882..2200 as @n[tag=SEAboss6b] at @s positioned ~ ~ ~ run particle minecraft:flame ~ ~4 ~ 0 8 0 2 300
+#execute if score SEA_ch6_event sea_4temp4 matches 1792..1821 as @n[tag=SEAboss6b] at @s positioned ~ ~ ~ run particle minecraft:trial_spawner_detection_ominous ~ ~8 ~ 0.5 16 0.5 0 50
+#execute if score SEA_ch6_event sea_4temp4 matches 1822..1851 as @n[tag=SEAboss6b] at @s positioned ~ ~ ~ run particle minecraft:trial_spawner_detection_ominous ~ ~8 ~ 1 16 1 0 180
+#execute if score SEA_ch6_event sea_4temp4 matches 1852..1881 as @n[tag=SEAboss6b] at @s positioned ~ ~ ~ run particle minecraft:trial_spawner_detection_ominous ~ ~8 ~ 2 16 2 0 320
+#execute if score SEA_ch6_event sea_4temp4 matches 1882..2200 as @n[tag=SEAboss6b] at @s positioned ~ ~ ~ run particle minecraft:trial_spawner_detection_ominous ~ ~8 ~ 4 16 4 0 560
 
 
 execute if score SEA_ch6_event sea_4temp4 matches 1880 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“……永别了，我最后的‘家人’。”","color":"white","bold": false}]
@@ -337,14 +337,14 @@ execute if score SEA_ch6_event sea_4temp4 matches 3999 as @p[tag=SEAPT] at @s ru
 execute if score SEA_ch6_event sea_4temp4 matches 3999 as @p[tag=SEAPT] at @s run particle large_smoke ~ ~ ~ 2 2 2 0 50
 execute if score SEA_ch6_event sea_4temp4 matches 3996 as @a[tag=SEAPT] at @s run playsound item.elytra.flying player @s ~ ~ ~ 1 0.7
 execute if score SEA_ch6_event sea_4temp4 matches 3906 as @a[tag=SEAPT] at @s run playsound item.elytra.flying player @s ~ ~ ~ 1 0.9
-execute if score SEA_ch6_event sea_4temp4 matches 4056 run playsound minecraft:block.vault.close_shutter block @a 90211 241 -2187 10 0.77
-execute if score SEA_ch6_event sea_4temp4 matches 4058 run playsound minecraft:block.vault.close_shutter block @a 90211 241 -2177 10 0.77
-execute if score SEA_ch6_event sea_4temp4 matches 4060 run playsound minecraft:block.vault.close_shutter block @a 90221 241 -2177 10 0.77
-execute if score SEA_ch6_event sea_4temp4 matches 4062 run playsound minecraft:block.vault.close_shutter block @a 90221 241 -2187 10 0.77
-execute if score SEA_ch6_event sea_4temp4 matches 4056 run playsound minecraft:block.vault.insert_item_fail block @a 90211 241 -2187 10 0.7
-execute if score SEA_ch6_event sea_4temp4 matches 4058 run playsound minecraft:block.vault.insert_item_fail block @a 90211 241 -2177 10 0.7
-execute if score SEA_ch6_event sea_4temp4 matches 4061 run playsound minecraft:block.vault.insert_item_fail block @a 90221 241 -2177 10 0.7
-execute if score SEA_ch6_event sea_4temp4 matches 4063 run playsound minecraft:block.vault.insert_item_fail block @a 90221 241 -2187 10 0.7
+execute if score SEA_ch6_event sea_4temp4 matches 4056 run playsound minecraft:block.vault.close_shutter block @a 90211 241 -2187 30 0.77
+execute if score SEA_ch6_event sea_4temp4 matches 4058 run playsound minecraft:block.vault.close_shutter block @a 90211 241 -2177 30 0.77
+execute if score SEA_ch6_event sea_4temp4 matches 4060 run playsound minecraft:block.vault.close_shutter block @a 90221 241 -2177 30 0.77
+execute if score SEA_ch6_event sea_4temp4 matches 4062 run playsound minecraft:block.vault.close_shutter block @a 90221 241 -2187 30 0.77
+execute if score SEA_ch6_event sea_4temp4 matches 4056 run playsound minecraft:block.vault.insert_item_fail block @a 90211 241 -2187 30 0.7
+execute if score SEA_ch6_event sea_4temp4 matches 4058 run playsound minecraft:block.vault.insert_item_fail block @a 90211 241 -2177 30 0.7
+execute if score SEA_ch6_event sea_4temp4 matches 4061 run playsound minecraft:block.vault.insert_item_fail block @a 90221 241 -2177 30 0.7
+execute if score SEA_ch6_event sea_4temp4 matches 4063 run playsound minecraft:block.vault.insert_item_fail block @a 90221 241 -2187 30 0.7
 execute if score SEA_ch6_event sea_4temp4 matches 4056 as @p[tag=SEAPT] at @s run fill 90211 241 -2187 90216 241 -2182 deepslate_tiles
 execute if score SEA_ch6_event sea_4temp4 matches 4058 as @p[tag=SEAPT] at @s run fill 90211 241 -2177 90216 241 -2182 deepslate_tiles
 execute if score SEA_ch6_event sea_4temp4 matches 4061 as @p[tag=SEAPT] at @s run fill 90221 241 -2177 90216 241 -2182 deepslate_tiles
