@@ -317,5 +317,12 @@ execute if score SEA_ch6_event sea_4temp4 matches 3890 as @p[tag=SEAPT] at @s ru
 execute if score SEA_ch6_event sea_4temp4 matches 3890 as @p[tag=SEAPT] at @s run particle large_smoke ~ ~ ~ 2 2 2 0 50
 execute if score SEA_ch6_event sea_4temp4 matches 3895 as @p[tag=SEAPT] at @s run particle explosion_emitter ~ ~ ~ 2 2 2 0 2
 execute if score SEA_ch6_event sea_4temp4 matches 3895 as @p[tag=SEAPT] at @s run particle large_smoke ~ ~ ~ 2 2 2 0 50
-
+execute if score SEA_ch6_event sea_4temp4 matches 3896 as @p[tag=SEAPT] at @s run tp @s 90216 131 -2182
+execute if score SEA_ch6_event sea_4temp4 matches 3896 as @p[tag=SEAPT] at @s run effect give @s levitation 3 50 true
+execute if score SEA_ch6_event sea_4temp4 matches 3896..3897 as @p[tag=SEAPT] at @s run particle explosion_emitter ~ ~ ~ 2 2 2 0 2
+execute if score SEA_ch6_event sea_4temp4 matches 3896..3897 as @p[tag=SEAPT] at @s run particle large_smoke ~ ~ ~ 2 2 2 0 50
+execute if score SEA_ch6_event sea_4temp4 matches 3899 as @p[tag=SEAPT] at @s run particle explosion_emitter ~ ~ ~ 2 2 2 0 2
+execute if score SEA_ch6_event sea_4temp4 matches 3899 as @p[tag=SEAPT] at @s run particle large_smoke ~ ~ ~ 2 2 2 0 50
+execute if score SEA_ch6_event sea_4temp4 matches 3896..3946 as @a[tag=SEAPT] at @s run playsound item.elytra.flying player @s ~ ~ ~ 1 0.7
+execute if score SEA_ch6_event sea_4temp4 matches 3916..3946 as @a[tag=SEAPT] at @s run playsound item.elytra.flying player @s ~ ~ ~ 1 0.9
 
