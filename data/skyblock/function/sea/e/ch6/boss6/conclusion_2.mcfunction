@@ -291,4 +291,25 @@ execute if score SEA_ch6_event sea_4temp4 matches 3100 run summon minecraft:ligh
 execute if score SEA_ch6_event sea_4temp4 matches 3100 run summon minecraft:lightning_bolt 90398 229 -1749
 execute if score SEA_ch6_event sea_4temp4 matches 3100 run summon minecraft:lightning_bolt 90398 229 -1749
 
+execute if score SEA_ch6_event sea_4temp4 matches 3100 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"权之执理：","color":"red","bold": true},{"text":"\n“我终于知道了……我终于知道这股天使神力从何而来了。”","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 3180 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"权之执理：","color":"red","bold": true},{"text":"\n“那个名叫诺曼的人类篡夺了我的神力……而你——”","color":"white","bold": false}]
+
+
+execute if score SEA_ch6_event sea_4temp4 matches 3001 positioned 90398 229 -1749 run kill @e[tag=SEAboss6b,distance=..2000]
+execute if score SEA_ch6_event sea_4temp4 matches 3220 positioned 90398 229 -1749 run function skyblock:sea/m/unique/boss6c
+execute if score SEA_ch6_event sea_4temp4 matches 3220 positioned 90398 229 -1749 run particle enchant ~ ~ ~ 2 2 2 0.5 120
+execute if score SEA_ch6_event sea_4temp4 matches 3220 positioned 90398 229 -1749 run particle reverse_portal ~ ~ ~ 0 0 0 0.5 120
+execute if score SEA_ch6_event sea_4temp4 matches 3220 positioned 90398 229 -1749 run playsound minecraft:entity.enderman.teleport hostile @a ~ ~ ~ 1 1.1
+execute if score SEA_ch6_event sea_4temp4 matches 3220..3900 positioned 90398 229 -1749 run rotate @n[tag=SEAboss6c] facing entity @p[tag=SEAPT]
+
+execute if score SEA_ch6_event sea_4temp4 matches 3240 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"伊曼纽尔：","color":"aqua","bold": true},{"text":"\n“权之执理……！！你把我带到什么地方来了？！艾德雯娜呢，艾德雯娜去哪了？！”","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 3330 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"权之执理：","color":"red","bold": true},{"text":"\n“没必要再跟我装傻充愣了吧，伊曼纽尔。你甚至不知道那个可悲的人类女性是为了你而死？”","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 3420 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"伊曼纽尔：","color":"aqua","bold": true},{"text":"\n“我……饶不了你，不论是细菌还是圣水晶，全部都是你们这堆狗屁天使带下来的，直到现在也不打算收手吗？！”","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 3510 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"权之执理：","color":"red","bold": true},{"text":"\n“圣水晶是雷米尔大人的遗骸，与我的主人拉贵尔大人又有何干系？！”","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 3600 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"权之执理：","color":"red","bold": true},{"text":"\n“而且，你到现在还没意识到吗？这里是你的意识空间，不是我的！是你将我拉到了这里来！！”","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 3690 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"伊曼纽尔：","color":"aqua","bold": true},{"text":"\n“……你说什么？”","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 3780 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"权之执理：","color":"red","bold": true},{"text":"\n“在你将我杀死之前……”","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 3850 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"权之执理：","color":"red","bold": true},{"text":"\n“不，我不会再问了。我们之间尚有一战。你，与我。我已经窥见了自己的命运。既然是祂的计划，我愿奉陪到底。”","color":"white","bold": false}]
+
+
 
