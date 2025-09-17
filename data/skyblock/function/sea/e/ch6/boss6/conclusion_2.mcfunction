@@ -311,5 +311,11 @@ execute if score SEA_ch6_event sea_4temp4 matches 3690 as @p[tag=SEAPT] at @s ru
 execute if score SEA_ch6_event sea_4temp4 matches 3780 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"权之执理：","color":"red","bold": true},{"text":"\n“在你将我杀死之前……”","color":"white","bold": false}]
 execute if score SEA_ch6_event sea_4temp4 matches 3850 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"权之执理：","color":"red","bold": true},{"text":"\n“不，我不会再问了。我们之间尚有一战。你，与我。我已经窥见了自己的命运。既然是祂的计划，我愿奉陪到底。”","color":"white","bold": false}]
 
+execute if score SEA_ch6_event sea_4temp4 matches 3870 as @p[tag=SEAPT] at @s run particle explosion_emitter ~ ~ ~ 2 2 2 0 2
+execute if score SEA_ch6_event sea_4temp4 matches 3870 as @p[tag=SEAPT] at @s run particle large_smoke ~ ~ ~ 2 2 2 0 50
+execute if score SEA_ch6_event sea_4temp4 matches 3890 as @p[tag=SEAPT] at @s run particle explosion_emitter ~ ~ ~ 2 2 2 0 2
+execute if score SEA_ch6_event sea_4temp4 matches 3890 as @p[tag=SEAPT] at @s run particle large_smoke ~ ~ ~ 2 2 2 0 50
+execute if score SEA_ch6_event sea_4temp4 matches 3895 as @p[tag=SEAPT] at @s run particle explosion_emitter ~ ~ ~ 2 2 2 0 2
+execute if score SEA_ch6_event sea_4temp4 matches 3895 as @p[tag=SEAPT] at @s run particle large_smoke ~ ~ ~ 2 2 2 0 50
 
 
