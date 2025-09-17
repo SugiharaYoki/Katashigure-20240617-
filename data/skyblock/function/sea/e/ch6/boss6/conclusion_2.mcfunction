@@ -257,7 +257,10 @@ execute if score SEA_ch6_event sea_4temp4 matches 2100..2999 run scoreboard play
 
 execute if score SEA_ch6_event sea_4temp4 matches 1700..2999 if entity @a[tag=SEAPT,x=90381,y=228,z=-1764,dx=30,dy=20,dz=30] run scoreboard players set SEA_ch6_event sea_4temp4 3001
 
-
-
+execute if score SEA_ch6_event sea_4temp4 matches 3001..3100 run particle minecraft:trial_spawner_detection_ominous 90398 229 -1749 0.6 0 0.6 0 10
+execute if score SEA_ch6_event sea_4temp4 matches 3021..3100 run particle minecraft:trial_spawner_detection_ominous 90398 229 -1749 0.6 0 0.6 0 10
+execute if score SEA_ch6_event sea_4temp4 matches 3041..3100 run particle minecraft:trial_spawner_detection_ominous 90398 229 -1749 0.6 0 0.6 0 10
+execute if score SEA_ch6_event sea_4temp4 matches 3061..3100 run particle minecraft:trial_spawner_detection_ominous 90398 229 -1749 0.6 0 0.6 0 10
+execute if score SEA_ch6_event sea_4temp4 matches 3081..3100 run particle minecraft:trial_spawner_detection_ominous 90398 229 -1749 0.6 0 0.6 0 10
 
 
