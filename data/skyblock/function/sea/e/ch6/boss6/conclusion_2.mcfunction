@@ -241,7 +241,7 @@ execute if score SEA_ch6_event sea_4temp4 matches 2070 as @a[tag=SEAPT] at @s ru
 execute if score SEA_ch6_event sea_4temp4 matches 2070 as @a[tag=SEAPT] at @s run kill @e[tag=SEAboss6c,distance=..2000]
 execute if score SEA_ch6_event sea_4temp4 matches 2070 as @a[tag=SEAPT] at @s run tp @s 90384 229 -1842 facing 90384 229 -1840
 execute if score SEA_ch6_event sea_4temp4 matches 2071 as @a[tag=SEAPT] at @s run tp @s 90384 229 -1842 facing 90384 229 -1840
-execute if score SEA_ch6_event sea_4temp4 matches 2070 as @a[tag=SEAPT] at @s run clear @s
+#execute if score SEA_ch6_event sea_4temp4 matches 2070 as @a[tag=SEAPT] at @s run clear @s
 execute if score SEA_ch6_event sea_4temp4 matches 2070 as @a[tag=SEAPT] at @s run effect clear @s
 execute if score SEA_ch6_event sea_4temp4 matches 2070 as @a[tag=SEAPT] at @s run effect give @s darkness 5 0 true
 #execute if score SEA_ch6_event sea_4temp4 matches 1790 run bossbar remove 9066602
@@ -276,10 +276,10 @@ execute if score SEA_ch6_event sea_4temp4 matches 3050 as @p[tag=SEAPT] at @s ru
 execute if score SEA_ch6_event sea_4temp4 matches 3050 as @p[tag=SEAPT] at @s run playsound minecraft:ambient.underwater.loop.additions.ultra_rare ambient @a ~ ~ ~ 5 0.9
 execute if score SEA_ch6_event sea_4temp4 matches 3050 as @p[tag=SEAPT] at @s run playsound minecraft:ambient.underwater.loop.additions.ultra_rare ambient @a ~ ~ ~ 5 0.9
 execute if score SEA_ch6_event sea_4temp4 matches 3001..3100 run particle minecraft:trial_spawner_detection_ominous 90398 229 -1749 0.6 0 0.6 0 10
-execute if score SEA_ch6_event sea_4temp4 matches 3021..3100 run particle minecraft:trial_spawner_detection_ominous 90398 229 -1749 0.6 0 0.6 0 10
-execute if score SEA_ch6_event sea_4temp4 matches 3041..3100 run particle minecraft:trial_spawner_detection_ominous 90398 229 -1749 0.6 0 0.6 0 10
-execute if score SEA_ch6_event sea_4temp4 matches 3061..3100 run particle minecraft:trial_spawner_detection_ominous 90398 229 -1749 0.6 0 0.6 0 10
-execute if score SEA_ch6_event sea_4temp4 matches 3081..3100 run particle minecraft:trial_spawner_detection_ominous 90398 229 -1749 0.6 0 0.6 0 10
+execute if score SEA_ch6_event sea_4temp4 matches 3021..3100 run particle minecraft:trial_spawner_detection_ominous 90398 230 -1749 0.6 1 0.6 0 10
+execute if score SEA_ch6_event sea_4temp4 matches 3041..3100 run particle minecraft:trial_spawner_detection_ominous 90398 231 -1749 0.6 2 0.6 0 10
+execute if score SEA_ch6_event sea_4temp4 matches 3061..3100 run particle minecraft:trial_spawner_detection_ominous 90398 232 -1749 0.6 3 0.6 0 10
+execute if score SEA_ch6_event sea_4temp4 matches 3081..3100 run particle minecraft:trial_spawner_detection_ominous 90398 233 -1749 0.6 4 0.6 0 10
 
 execute if score SEA_ch6_event sea_4temp4 matches 3051 run setblock 90398 234 -1749 air destroy
 execute if score SEA_ch6_event sea_4temp4 matches 3051 run particle minecraft:soul_fire_flame 90398 234.5 -1749 0 0 0 0.3 60
@@ -299,11 +299,11 @@ execute if score SEA_ch6_event sea_4temp4 matches 3180 as @p[tag=SEAPT] at @s ru
 
 
 execute if score SEA_ch6_event sea_4temp4 matches 3001 positioned 90398 229 -1749 run kill @e[tag=SEAboss6b,distance=..2000]
-execute if score SEA_ch6_event sea_4temp4 matches 3220 positioned 90398 229 -1749 run function skyblock:sea/m/unique/boss6c
-execute if score SEA_ch6_event sea_4temp4 matches 3220 positioned 90398 229 -1749 run particle enchant ~ ~ ~ 2 2 2 0.5 120
-execute if score SEA_ch6_event sea_4temp4 matches 3220 positioned 90398 229 -1749 run particle reverse_portal ~ ~ ~ 0 0 0 0.5 120
-execute if score SEA_ch6_event sea_4temp4 matches 3220 positioned 90398 229 -1749 run playsound minecraft:entity.enderman.teleport hostile @a ~ ~ ~ 1 1.1
-execute if score SEA_ch6_event sea_4temp4 matches 3220..3900 positioned 90398 229 -1749 run rotate @n[tag=SEAboss6c] facing entity @p[tag=SEAPT]
+execute if score SEA_ch6_event sea_4temp4 matches 3100 positioned 90398 229 -1749 run function skyblock:sea/m/unique/boss6c
+execute if score SEA_ch6_event sea_4temp4 matches 3100 positioned 90398 229 -1749 run particle enchant ~ ~ ~ 2 2 2 0.5 120
+execute if score SEA_ch6_event sea_4temp4 matches 3100 positioned 90398 229 -1749 run particle reverse_portal ~ ~ ~ 0 0 0 0.5 120
+execute if score SEA_ch6_event sea_4temp4 matches 3100 positioned 90398 229 -1749 run playsound minecraft:entity.enderman.teleport hostile @a ~ ~ ~ 1 1.1
+#execute if score SEA_ch6_event sea_4temp4 matches 3220..3900 positioned 90398 229 -1749 run rotate @n[tag=SEAboss6c] facing entity @p[tag=SEAPT]
 
 execute if score SEA_ch6_event sea_4temp4 matches 3240 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"伊曼纽尔：","color":"aqua","bold": true},{"text":"\n“权之执理……！！你把我带到什么地方来了？！艾德雯娜呢，艾德雯娜去哪了？！”","color":"white","bold": false}]
 execute if score SEA_ch6_event sea_4temp4 matches 3330 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"权之执理：","color":"red","bold": true},{"text":"\n“没必要再跟我装傻充愣了吧，伊曼纽尔。你甚至不知道那个可悲的人类女性是为了你而死？”","color":"white","bold": false}]
@@ -335,14 +335,14 @@ execute if score SEA_ch6_event sea_4temp4 matches 3899 as @p[tag=SEAPT] at @s ru
 execute if score SEA_ch6_event sea_4temp4 matches 3899 as @p[tag=SEAPT] at @s run particle large_smoke ~ ~ ~ 2 2 2 0 50
 execute if score SEA_ch6_event sea_4temp4 matches 3896 as @a[tag=SEAPT] at @s run playsound item.elytra.flying player @s ~ ~ ~ 1 0.7
 execute if score SEA_ch6_event sea_4temp4 matches 3906 as @a[tag=SEAPT] at @s run playsound item.elytra.flying player @s ~ ~ ~ 1 0.9
-execute if score SEA_ch6_event sea_4temp4 matches 3956 as @p[tag=SEAPT] at @s run playsound minecraft:block.vault.close_shutter block @a 90211 241 -2187 10 0.77
-execute if score SEA_ch6_event sea_4temp4 matches 3958 as @p[tag=SEAPT] at @s run playsound minecraft:block.vault.close_shutter block @a 90211 241 -2177 10 0.77
-execute if score SEA_ch6_event sea_4temp4 matches 3960 as @p[tag=SEAPT] at @s run playsound minecraft:block.vault.close_shutter block @a 90221 241 -2177 10 0.77
-execute if score SEA_ch6_event sea_4temp4 matches 3962 as @p[tag=SEAPT] at @s run playsound minecraft:block.vault.close_shutter block @a 90221 241 -2187 10 0.77
-execute if score SEA_ch6_event sea_4temp4 matches 3956 as @p[tag=SEAPT] at @s run playsound minecraft:block.vault.insert_item_fail block @a 90211 241 -2187 10 0.7
-execute if score SEA_ch6_event sea_4temp4 matches 3958 as @p[tag=SEAPT] at @s run playsound minecraft:block.vault.insert_item_fail block @a 90211 241 -2177 10 0.7
-execute if score SEA_ch6_event sea_4temp4 matches 3961 as @p[tag=SEAPT] at @s run playsound minecraft:block.vault.insert_item_fail block @a 90221 241 -2177 10 0.7
-execute if score SEA_ch6_event sea_4temp4 matches 3963 as @p[tag=SEAPT] at @s run playsound minecraft:block.vault.insert_item_fail block @a 90221 241 -2187 10 0.7
+execute if score SEA_ch6_event sea_4temp4 matches 3956 run playsound minecraft:block.vault.close_shutter block @a 90211 241 -2187 10 0.77
+execute if score SEA_ch6_event sea_4temp4 matches 3958 run playsound minecraft:block.vault.close_shutter block @a 90211 241 -2177 10 0.77
+execute if score SEA_ch6_event sea_4temp4 matches 3960 run playsound minecraft:block.vault.close_shutter block @a 90221 241 -2177 10 0.77
+execute if score SEA_ch6_event sea_4temp4 matches 3962 run playsound minecraft:block.vault.close_shutter block @a 90221 241 -2187 10 0.77
+execute if score SEA_ch6_event sea_4temp4 matches 3956 run playsound minecraft:block.vault.insert_item_fail block @a 90211 241 -2187 10 0.7
+execute if score SEA_ch6_event sea_4temp4 matches 3958 run playsound minecraft:block.vault.insert_item_fail block @a 90211 241 -2177 10 0.7
+execute if score SEA_ch6_event sea_4temp4 matches 3961 run playsound minecraft:block.vault.insert_item_fail block @a 90221 241 -2177 10 0.7
+execute if score SEA_ch6_event sea_4temp4 matches 3963 run playsound minecraft:block.vault.insert_item_fail block @a 90221 241 -2187 10 0.7
 execute if score SEA_ch6_event sea_4temp4 matches 3956 as @p[tag=SEAPT] at @s run fill 90211 241 -2187 90216 241 -2182 deepslate_tiles
 execute if score SEA_ch6_event sea_4temp4 matches 3958 as @p[tag=SEAPT] at @s run fill 90211 241 -2177 90216 241 -2182 deepslate_tiles
 execute if score SEA_ch6_event sea_4temp4 matches 3961 as @p[tag=SEAPT] at @s run fill 90221 241 -2177 90216 241 -2182 deepslate_tiles
