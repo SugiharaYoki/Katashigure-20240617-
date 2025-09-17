@@ -238,6 +238,7 @@ execute if score SEA_ch6_event sea_4temp4 matches 2020 as @p[tag=SEAPT] at @s ru
 
 execute if score SEA_ch6_event sea_4temp4 matches 2070 as @a[tag=SEAPT] at @s run forceload add 90151 -1857
 execute if score SEA_ch6_event sea_4temp4 matches 2070 as @a[tag=SEAPT] at @s run kill @e[tag=SEAedwina,distance=..200]
+execute if score SEA_ch6_event sea_4temp4 matches 2070 as @a[tag=SEAPT] at @s run kill @e[tag=SEAboss6c,distance=..2000]
 execute if score SEA_ch6_event sea_4temp4 matches 2070 as @a[tag=SEAPT] at @s run tp @s 90384 229 -1842 facing 90384 229 -1840
 execute if score SEA_ch6_event sea_4temp4 matches 2071 as @a[tag=SEAPT] at @s run tp @s 90384 229 -1842 facing 90384 229 -1840
 execute if score SEA_ch6_event sea_4temp4 matches 2070 as @a[tag=SEAPT] at @s run clear @s
