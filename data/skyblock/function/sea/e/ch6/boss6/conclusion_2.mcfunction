@@ -65,7 +65,7 @@ execute if score SEA_ch6_event sea_4temp4 matches 1542..1762 run scoreboard play
 execute if score SEA_ch6_event sea_4temp4 matches 1542.. store result bossbar minecraft:9066602 value run scoreboard players get SEA_ch6_event sea_4temp5
 
 
-execute if score SEA_ch6_event sea_4temp4 matches 1562 as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s run playsound minecraft:salvation1 music @s ~ ~ ~ 1 1.0
+execute if score SEA_ch6_event sea_4temp4 matches 3100 as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s run playsound minecraft:salvation1 music @s ~ ~ ~ 1 1.0
 
 execute if score SEA_ch6_event sea_4temp4 matches 1552 as @p[tag=SEAPT] at @s run title @a[distance=0..250] times 1s 3s 1s
 execute if score SEA_ch6_event sea_4temp4 matches 1552 as @p[tag=SEAPT] at @s run title @a[distance=0..250] title [{"text":"伊曼纽尔、艾德雯娜，","color":"white","bold": false}]
