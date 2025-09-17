@@ -313,6 +313,12 @@ execute if score SEA_ch6_event sea_4temp4 matches 3690 as @p[tag=SEAPT] at @s ru
 execute if score SEA_ch6_event sea_4temp4 matches 3780 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"权之执理：","color":"red","bold": true},{"text":"\n“在你将我杀死之前……”","color":"white","bold": false}]
 execute if score SEA_ch6_event sea_4temp4 matches 3850 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"权之执理：","color":"red","bold": true},{"text":"\n“不，我不会再问了。我们之间尚有一战。你，与我。我已经窥见了自己的命运。既然是祂的计划，我愿奉陪到底。”","color":"white","bold": false}]
 
+execute if score SEA_ch6_event sea_4temp4 matches 3870 as @a[tag=SEAPT] at @s run playsound entity.generic.explode block @a ~ ~ ~ 5 0.8
+execute if score SEA_ch6_event sea_4temp4 matches 3890 as @a[tag=SEAPT] at @s run playsound entity.generic.explode block @a ~ ~ ~ 5 0.8
+execute if score SEA_ch6_event sea_4temp4 matches 3895 as @a[tag=SEAPT] at @s run playsound entity.generic.explode block @a ~ ~ ~ 5 0.8
+execute if score SEA_ch6_event sea_4temp4 matches 3896 as @a[tag=SEAPT] at @s run playsound entity.generic.explode block @a ~ ~ ~ 5 0.8
+execute if score SEA_ch6_event sea_4temp4 matches 3897 as @a[tag=SEAPT] at @s run playsound entity.generic.explode block @a ~ ~ ~ 5 0.8
+execute if score SEA_ch6_event sea_4temp4 matches 3899 as @a[tag=SEAPT] at @s run playsound entity.generic.explode block @a ~ ~ ~ 5 0.8
 execute if score SEA_ch6_event sea_4temp4 matches 3870 as @p[tag=SEAPT] at @s run particle explosion_emitter ~ ~ ~ 2 2 2 0 2
 execute if score SEA_ch6_event sea_4temp4 matches 3870 as @p[tag=SEAPT] at @s run particle large_smoke ~ ~ ~ 2 2 2 0 50
 execute if score SEA_ch6_event sea_4temp4 matches 3890 as @p[tag=SEAPT] at @s run particle explosion_emitter ~ ~ ~ 2 2 2 0 2
@@ -328,28 +334,28 @@ execute if score SEA_ch6_event sea_4temp4 matches 3899 as @p[tag=SEAPT] at @s ru
 execute if score SEA_ch6_event sea_4temp4 matches 3899 as @p[tag=SEAPT] at @s run particle large_smoke ~ ~ ~ 2 2 2 0 50
 execute if score SEA_ch6_event sea_4temp4 matches 3896 as @a[tag=SEAPT] at @s run playsound item.elytra.flying player @s ~ ~ ~ 1 0.7
 execute if score SEA_ch6_event sea_4temp4 matches 3906 as @a[tag=SEAPT] at @s run playsound item.elytra.flying player @s ~ ~ ~ 1 0.9
-execute if score SEA_ch6_event sea_4temp4 matches 3956 as @p[tag=SEAPT] at @s run playsound minecraft:block.vault.close_shutter block @a 90211 231 -2187 10 0.77
-execute if score SEA_ch6_event sea_4temp4 matches 3958 as @p[tag=SEAPT] at @s run playsound minecraft:block.vault.close_shutter block @a 90211 231 -2177 10 0.77
-execute if score SEA_ch6_event sea_4temp4 matches 3960 as @p[tag=SEAPT] at @s run playsound minecraft:block.vault.close_shutter block @a 90221 231 -2177 10 0.77
-execute if score SEA_ch6_event sea_4temp4 matches 3962 as @p[tag=SEAPT] at @s run playsound minecraft:block.vault.close_shutter block @a 90221 231 -2187 10 0.77
-execute if score SEA_ch6_event sea_4temp4 matches 3956 as @p[tag=SEAPT] at @s run playsound minecraft:block.vault.insert_item_fail block @a 90211 231 -2187 10 0.7
-execute if score SEA_ch6_event sea_4temp4 matches 3958 as @p[tag=SEAPT] at @s run playsound minecraft:block.vault.insert_item_fail block @a 90211 231 -2177 10 0.7
-execute if score SEA_ch6_event sea_4temp4 matches 3961 as @p[tag=SEAPT] at @s run playsound minecraft:block.vault.insert_item_fail block @a 90221 231 -2177 10 0.7
-execute if score SEA_ch6_event sea_4temp4 matches 3963 as @p[tag=SEAPT] at @s run playsound minecraft:block.vault.insert_item_fail block @a 90221 231 -2187 10 0.7
-execute if score SEA_ch6_event sea_4temp4 matches 3956 as @p[tag=SEAPT] at @s run fill 90211 231 -2187 90216 231 -2182 deepslate_tiles
-execute if score SEA_ch6_event sea_4temp4 matches 3958 as @p[tag=SEAPT] at @s run fill 90211 231 -2177 90216 231 -2182 deepslate_tiles
-execute if score SEA_ch6_event sea_4temp4 matches 3961 as @p[tag=SEAPT] at @s run fill 90221 231 -2177 90216 231 -2182 deepslate_tiles
-execute if score SEA_ch6_event sea_4temp4 matches 3963 as @p[tag=SEAPT] at @s run fill 90221 231 -2187 90216 231 -2182 deepslate_tiles
-execute if score SEA_ch6_event sea_4temp4 matches 3967 as @p[tag=SEAPT] at @s run fill 90222 231 -2188 90210 231 -2176 polished_deepslate replace air
-execute if score SEA_ch6_event sea_4temp4 matches 3967 as @p[tag=SEAPT] at @s run playsound minecraft:block.vault.close_shutter block @a 90216 231 -2182 10 0.77
-execute if score SEA_ch6_event sea_4temp4 matches 3967 as @p[tag=SEAPT] at @s run playsound minecraft:block.vault.insert_item_fail block @a 90216 231 -2182 10 0.7
+execute if score SEA_ch6_event sea_4temp4 matches 3956 as @p[tag=SEAPT] at @s run playsound minecraft:block.vault.close_shutter block @a 90211 241 -2187 10 0.77
+execute if score SEA_ch6_event sea_4temp4 matches 3958 as @p[tag=SEAPT] at @s run playsound minecraft:block.vault.close_shutter block @a 90211 241 -2177 10 0.77
+execute if score SEA_ch6_event sea_4temp4 matches 3960 as @p[tag=SEAPT] at @s run playsound minecraft:block.vault.close_shutter block @a 90221 241 -2177 10 0.77
+execute if score SEA_ch6_event sea_4temp4 matches 3962 as @p[tag=SEAPT] at @s run playsound minecraft:block.vault.close_shutter block @a 90221 241 -2187 10 0.77
+execute if score SEA_ch6_event sea_4temp4 matches 3956 as @p[tag=SEAPT] at @s run playsound minecraft:block.vault.insert_item_fail block @a 90211 241 -2187 10 0.7
+execute if score SEA_ch6_event sea_4temp4 matches 3958 as @p[tag=SEAPT] at @s run playsound minecraft:block.vault.insert_item_fail block @a 90211 241 -2177 10 0.7
+execute if score SEA_ch6_event sea_4temp4 matches 3961 as @p[tag=SEAPT] at @s run playsound minecraft:block.vault.insert_item_fail block @a 90221 241 -2177 10 0.7
+execute if score SEA_ch6_event sea_4temp4 matches 3963 as @p[tag=SEAPT] at @s run playsound minecraft:block.vault.insert_item_fail block @a 90221 241 -2187 10 0.7
+execute if score SEA_ch6_event sea_4temp4 matches 3956 as @p[tag=SEAPT] at @s run fill 90211 241 -2187 90216 241 -2182 deepslate_tiles
+execute if score SEA_ch6_event sea_4temp4 matches 3958 as @p[tag=SEAPT] at @s run fill 90211 241 -2177 90216 241 -2182 deepslate_tiles
+execute if score SEA_ch6_event sea_4temp4 matches 3961 as @p[tag=SEAPT] at @s run fill 90221 241 -2177 90216 241 -2182 deepslate_tiles
+execute if score SEA_ch6_event sea_4temp4 matches 3963 as @p[tag=SEAPT] at @s run fill 90221 241 -2187 90216 241 -2182 deepslate_tiles
+execute if score SEA_ch6_event sea_4temp4 matches 3967 as @p[tag=SEAPT] at @s run fill 90222 241 -2188 90210 241 -2176 polished_deepslate replace air
+execute if score SEA_ch6_event sea_4temp4 matches 3967 as @p[tag=SEAPT] at @s run playsound minecraft:block.vault.close_shutter block @a 90216 241 -2182 10 0.77
+execute if score SEA_ch6_event sea_4temp4 matches 3967 as @p[tag=SEAPT] at @s run playsound minecraft:block.vault.insert_item_fail block @a 90216 241 -2182 10 0.7
 
-execute if score SEA_ch6_event sea_4temp4 matches 3971 as @p[tag=SEAPT] at @s run fill 90225 231 -2191 90207 231 -2173 deepslate_tiles replace air
-execute if score SEA_ch6_event sea_4temp4 matches 3971 as @p[tag=SEAPT] at @s run playsound minecraft:block.vault.close_shutter block @a 90216 231 -2182 10 0.77
-execute if score SEA_ch6_event sea_4temp4 matches 3971 as @p[tag=SEAPT] at @s run playsound minecraft:block.vault.insert_item_fail block @a 90216 231 -2182 10 0.7
-execute if score SEA_ch6_event sea_4temp4 matches 3975 as @p[tag=SEAPT] at @s run fill 90226 231 -2192 90206 231 -2172 polished_deepslate replace air
-execute if score SEA_ch6_event sea_4temp4 matches 3975 as @p[tag=SEAPT] at @s run playsound minecraft:block.vault.close_shutter block @a 90216 231 -2182 10 0.77
-execute if score SEA_ch6_event sea_4temp4 matches 3975 as @p[tag=SEAPT] at @s run playsound minecraft:block.vault.insert_item_fail block @a 90216 231 -2182 10 0.7
+execute if score SEA_ch6_event sea_4temp4 matches 3971 as @p[tag=SEAPT] at @s run fill 90225 241 -2191 90207 241 -2173 deepslate_tiles replace air
+execute if score SEA_ch6_event sea_4temp4 matches 3971 as @p[tag=SEAPT] at @s run playsound minecraft:block.vault.close_shutter block @a 90216 241 -2182 10 0.77
+execute if score SEA_ch6_event sea_4temp4 matches 3971 as @p[tag=SEAPT] at @s run playsound minecraft:block.vault.insert_item_fail block @a 90216 241 -2182 10 0.7
+execute if score SEA_ch6_event sea_4temp4 matches 3975 as @p[tag=SEAPT] at @s run fill 90226 241 -2192 90206 241 -2172 polished_deepslate replace air
+execute if score SEA_ch6_event sea_4temp4 matches 3975 as @p[tag=SEAPT] at @s run playsound minecraft:block.vault.close_shutter block @a 90216 241 -2182 10 0.77
+execute if score SEA_ch6_event sea_4temp4 matches 3975 as @p[tag=SEAPT] at @s run playsound minecraft:block.vault.insert_item_fail block @a 90216 241 -2182 10 0.7
 
 
 execute if score SEA_ch6_event sea_4temp4 matches 3975 as @p[tag=SEAPT] at @s run bossbar add 9066602 "权之执理"
