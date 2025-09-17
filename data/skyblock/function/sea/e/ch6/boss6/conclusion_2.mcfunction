@@ -253,8 +253,9 @@ execute if score SEA_ch6_event sea_4temp4 matches 2070 as @a[tag=SEAPT] at @s ru
 execute if score SEA_ch6_event sea_4temp4 matches 2070 as @a[tag=SEAPT] at @s run fill 90400 234 -1749 90396 234 -1749 minecraft:dark_prismarine
 execute if score SEA_ch6_event sea_4temp4 matches 2070 as @a[tag=SEAPT] at @s run setblock 90398 234 -1749 minecraft:sea_lantern
 
+execute if score SEA_ch6_event sea_4temp4 matches 2100..2999 run scoreboard players set SEA_ch6_event sea_4temp4 2100
 
-execute if entity @a[tag=SEAPT,x=90381,y=228,z=-1764,dx=30,dy=20,dz=30] run
+execute if score SEA_ch6_event sea_4temp4 matches 1700..2999 if entity @a[tag=SEAPT,x=90381,y=228,z=-1764,dx=30,dy=20,dz=30] run scoreboard players set SEA_ch6_event sea_4temp4 3001
 
 
 
