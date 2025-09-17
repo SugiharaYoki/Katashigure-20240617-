@@ -245,6 +245,7 @@ execute if score SEA_ch6_event sea_4temp4 matches 2070 as @a[tag=SEAPT] at @s ru
 execute if score SEA_ch6_event sea_4temp4 matches 2070 as @a[tag=SEAPT] at @s run effect give @s darkness 5 0 true
 #execute if score SEA_ch6_event sea_4temp4 matches 1790 run bossbar remove 9066602
 
+execute if score SEA_ch6_event sea_4temp4 matches 2071 run bossbar remove 9066602
 execute if score SEA_ch6_event sea_4temp4 matches 2071 as @a[tag=SEAPT] at @s run setblock 90401 234 -1749 minecraft:prismarine_bricks
 execute if score SEA_ch6_event sea_4temp4 matches 2071 as @a[tag=SEAPT] at @s run setblock 90395 234 -1749 minecraft:prismarine_bricks
 execute if score SEA_ch6_event sea_4temp4 matches 2071 as @a[tag=SEAPT] at @s run setblock 90398 237 -1749 minecraft:prismarine_bricks
