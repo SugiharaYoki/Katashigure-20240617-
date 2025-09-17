@@ -1279,7 +1279,7 @@ forceload add 90206 -2172 90226 -2192
 fill 90205 241 -2171 90227 241 -2193 air
 forceload remove 90227 -2193 90205 -2171
 forceload add 90398 -1749
-execute positioned 90398 230 -1749 run kill @e[tag=SEAboss6c,distance=..2000]
+execute positioned 90398 230 -1749 run kill @e[tag=SEAboss6c,distance=..200]
 forceload remove 90398 -1749
 
 
