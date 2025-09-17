@@ -62,7 +62,7 @@ execute if score SEA_ch6_event sea_4temp4 matches 1542 run bossbar set minecraft
 execute if score SEA_ch6_event sea_4temp4 matches 1542 run bossbar set minecraft:9066602 max 400
 
 execute if score SEA_ch6_event sea_4temp4 matches 1542..1762 run scoreboard players add SEA_ch6_event sea_4temp5 4
-execute if score SEA_ch6_event sea_4temp4 matches 1542.. store result bossbar minecraft:9066602 value run scoreboard players get SEA_ch6_event sea_4temp5
+execute if score SEA_ch6_event sea_4temp4 matches 1542..2069 store result bossbar minecraft:9066602 value run scoreboard players get SEA_ch6_event sea_4temp5
 
 
 execute if score SEA_ch6_event sea_4temp4 matches 3100 as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s run playsound minecraft:salvation1 music @s ~ ~ ~ 1 1.0
@@ -348,3 +348,14 @@ execute if score SEA_ch6_event sea_4temp4 matches 3971 as @p[tag=SEAPT] at @s ru
 execute if score SEA_ch6_event sea_4temp4 matches 3975 as @p[tag=SEAPT] at @s run fill 90226 231 -2192 90206 231 -2172 polished_deepslate replace air
 execute if score SEA_ch6_event sea_4temp4 matches 3975 as @p[tag=SEAPT] at @s run playsound minecraft:block.vault.close_shutter block @a 90216 231 -2182 10 0.77
 execute if score SEA_ch6_event sea_4temp4 matches 3975 as @p[tag=SEAPT] at @s run playsound minecraft:block.vault.insert_item_fail block @a 90216 231 -2182 10 0.7
+
+
+execute if score SEA_ch6_event sea_4temp4 matches 3975 as @p[tag=SEAPT] at @s run bossbar add 9066602 "权之执理"
+execute if score SEA_ch6_event sea_4temp4 matches 3975 as @p[tag=SEAPT] at @s run bossbar set minecraft:9066602 color red
+execute if score SEA_ch6_event sea_4temp4 matches 3975 as @p[tag=SEAPT] at @s run bossbar set minecraft:9066602 name "权之执理"
+execute if score SEA_ch6_event sea_4temp4 matches 3975 as @p[tag=SEAPT] at @s run bossbar set minecraft:9066602 players @a[tag=SEAPT]
+execute if score SEA_ch6_event sea_4temp4 matches 3975 as @p[tag=SEAPT] at @s run bossbar set minecraft:9066602 style progress
+execute if score SEA_ch6_event sea_4temp4 matches 3975 as @p[tag=SEAPT] at @s run bossbar set minecraft:9066602 max 400
+
+execute if score SEA_ch6_event sea_4temp4 matches 3975.. store result bossbar minecraft:9066602 value run scoreboard players get SEA_ch6_event sea_4temp5
+
