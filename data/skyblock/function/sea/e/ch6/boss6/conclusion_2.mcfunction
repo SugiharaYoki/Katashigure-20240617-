@@ -366,6 +366,10 @@ execute if score SEA_ch6_event sea_4temp4 matches 4275 as @p[tag=SEAPT] at @s ru
 execute if score SEA_ch6_event sea_4temp4 matches 4275.. store result bossbar minecraft:9066602 value run data get entity @n[tag=SEAboss6c] Health
 execute if score SEA_ch6_event sea_4temp4 matches 4275.. store result score @n[tag=SEAboss6c] health run data get entity @n[tag=SEAboss6c] Health
 
+execute if score SEA_ch6_event sea_4temp4 matches 4300 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"权之执理：","color":"red","bold": true},{"text":"\n“这是我们之间的决战。”","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 4370 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"权之执理：","color":"red","bold": true},{"text":"\n“至于你有没有能力做接下来的事情，我会进行最后的验证。”","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 4460 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"伊曼纽尔：","color":"aqua","bold": true},{"text":"\n“无需废话，我会终结忒尔克西的所有悲剧。”","color":"white","bold": false}]
+
 execute if score SEA_ch6_event sea_4temp4 matches 4275 run time set 22000
 execute if score SEA_ch6_event sea_4temp4 matches 4275..6274 run time add 1
 execute if score SEA_ch6_event sea_4temp4 matches 5000 run weather rain 1000s
