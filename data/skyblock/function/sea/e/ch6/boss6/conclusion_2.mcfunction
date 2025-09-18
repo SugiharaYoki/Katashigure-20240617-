@@ -315,8 +315,8 @@ execute if score SEA_ch6_event sea_4temp4 matches 4360 as @p[tag=SEAPT] at @s ru
 
 execute if score SEA_ch6_event sea_4temp4 matches 4361 as @p[tag=SEAPT] at @s run scoreboard players add SEA_ch6_event sea_4temp4 200
 
-execute if score SEA_ch6_event sea_4temp4 matches 5070 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"权之执理：","color":"red","bold": true},{"text":"\n“在你将我杀死之前……”","color":"white","bold": false}]
-execute if score SEA_ch6_event sea_4temp4 matches 5150 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"权之执理：","color":"red","bold": true},{"text":"\n“不，我不会再问了。我们之间尚有一战。你，与我。我已经窥见了自己的命运。既然是祂的计划，我愿奉陪到底。”","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 5070 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"权之执理：","color":"red","bold": true},{"text":"\n“我已经窥见了自己的命运。既然是祂的计划，我愿奉陪到底。”","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 5150 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"权之执理：","color":"red","bold": true},{"text":"\n“在那之前，我们该脱离这个意识空间，堂堂正正打一场。”","color":"white","bold": false}]
 
 execute if score SEA_ch6_event sea_4temp4 matches 5170 as @a[tag=SEAPT] at @s run playsound entity.generic.explode block @a ~ ~ ~ 5 0.8
 execute if score SEA_ch6_event sea_4temp4 matches 5190 as @a[tag=SEAPT] at @s run playsound entity.generic.explode block @a ~ ~ ~ 5 0.8
