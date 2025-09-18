@@ -246,7 +246,7 @@ execute if score SEA_ch6_event sea_4temp4 matches 2602 as @a[scores={SEAPT_membe
 execute if score SEA_ch6_event sea_4temp4 matches 2602 as @a[scores={SEAPT_member=1}] at @s run tellraw @a[distance=0..150] [{"text":"远方的声音：","color":"red","bold": true},{"text":"\n“尔后，你终将走上命中注定的道路。但那又何妨？世间万物皆为你而逆转。”","color":"white","bold": false}]
 
 
-execute if score SEA_ch6_event sea_4temp4 matches 2900..2999 run scoreboard players set SEA_ch6_event sea_4temp4 2100
+execute if score SEA_ch6_event sea_4temp4 matches 2900..2999 run scoreboard players set SEA_ch6_event sea_4temp4 2900
 execute if score SEA_ch6_event sea_4temp4 matches 1700..2999 if entity @a[tag=SEAPT,x=90381,y=228,z=-1764,dx=30,dy=20,dz=30] run scoreboard players set SEA_ch6_event sea_4temp4 3001
 
 execute if score SEA_ch6_event sea_4temp4 matches 3050 as @p[tag=SEAPT] at @s run playsound minecraft:ambient.underwater.loop.additions.ultra_rare ambient @a ~ ~ ~ 5 0.9
