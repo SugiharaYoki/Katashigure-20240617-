@@ -35,3 +35,8 @@ setblock 89988 91 -1924 fire
 tp @a[tag=SEAPT] 90009 57 -1861 facing 90008 57 -1861
 
 forceload remove 90147 -1878
+
+
+execute as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
+execute as @n[tag=SEAedwina] at @s unless block 90151 133 -1857 minecraft:skeleton_skull run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“你回来了。欢迎回来。”","color":"white","bold": false}]
+execute as @n[tag=SEAedwina] at @s if block 90151 133 -1857 minecraft:skeleton_skull run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“是为了与我再次相见吗？……开玩笑的。不要难受。结局无法被改变，但至少……我会记得你。”","color":"white","bold": false}]
