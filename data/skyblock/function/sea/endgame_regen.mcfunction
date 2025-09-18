@@ -186,6 +186,6 @@ forceload remove 90000 0 90200 200
 summon minecraft:armor_stand 90074 93.5 139 {CustomName:'{"text": "『厄珀娅的悲歌』","color": "blue","bold": true}',DisabledSlots:65793,CustomNameVisible:1b,Invisible:1b,Marker:1b,NoGravity:1b}
 summon minecraft:armor_stand 90074 93 139 {CustomName:'{"text": "探索孤独而死寂的海上钢铁要塞","color": "white"}',DisabledSlots:65793,CustomNameVisible:1b,Invisible:1b,Marker:1b,NoGravity:1b}
 summon minecraft:armor_stand 90074 92.7 139 {CustomName:'{"text": "解开忒尔克西钻井平台的秘密","color": "white"}',DisabledSlots:65793,CustomNameVisible:1b,Invisible:1b,Marker:1b,NoGravity:1b}
-summon minecraft:armor_stand 90074 92.3 139 {CustomName:'{"text": "第一章 初始","color": "green"}',DisabledSlots:65793,CustomNameVisible:1b,Invisible:1b,Marker:1b,NoGravity:1b,Tags:["SEA_choose_chapter_1","SEA_choose_chapter"]}
+summon minecraft:armor_stand 90074 92.3 139 {CustomName:'{"text": "开始新游戏","color": "green"}',DisabledSlots:65793,CustomNameVisible:1b,Invisible:1b,Marker:1b,NoGravity:1b,Tags:["SEA_choose_chapter_1","SEA_choose_chapter"]}
 
 forceload remove 90379 -1845 90421 -1732
