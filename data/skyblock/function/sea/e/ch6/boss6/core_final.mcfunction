@@ -1,6 +1,10 @@
 
 scoreboard players add @s rng1 1
 
+scoreboard players add SEAmusic rng1 1
+execute if score SEAmusic rng1 matches 1 as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s run playsound minecraft:salvation2 music @s ~ ~ ~ 1 1.0
+execute if score SEAmusic rng1 matches 7140.. run scoreboard players set SEAmusic rng1 0
+
 execute at @s as @e[type=marker,tag=SEA_boss6_flame_anchor,distance=0..450] at @s run function skyblock:sea/e/ch6/boss6/attack_flame_anchor_final
 execute at @s as @e[type=marker,tag=SEA_boss6_burst_anchor,distance=0..450] at @s run function skyblock:sea/e/ch6/boss6/attack_burst_anchor_final
 
