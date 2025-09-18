@@ -6,6 +6,7 @@ execute if score SEAmusic rng1 matches 2110 as @p[tag=SEAPT] at @s as @a[distanc
 execute if score SEAmusic rng1 matches 2110 as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s if entity @n[tag=SEAboss6c,scores={health=..199}] run playsound minecraft:salvation3 music @s ~ ~ ~ 1 1.0
 execute if score SEAmusic rng1 matches 3936.. as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s if entity @n[tag=SEAboss6c,scores={health=200..}] run stopsound @s music minecraft:salvation2
 execute if score SEAmusic rng1 matches 3936.. if entity @n[tag=SEAboss6c,scores={health=200..}] run scoreboard players set SEAmusic rng1 2109
+execute if score SEAmusic rng1 matches 3936.. if entity @n[tag=SEAboss6c,scores={health=..199}] run scoreboard players set SEAmusic rng1 2109
 
 execute at @s as @e[type=marker,tag=SEA_boss6_flame_anchor,distance=0..450] at @s run function skyblock:sea/e/ch6/boss6/attack_flame_anchor_final
 execute at @s as @e[type=marker,tag=SEA_boss6_burst_anchor,distance=0..450] at @s run function skyblock:sea/e/ch6/boss6/attack_burst_anchor_final
