@@ -35,7 +35,8 @@ execute if score @s rng1 matches 23 run playsound minecraft:entity.wither.break_
 execute if score @s rng1 matches 26 run playsound minecraft:entity.wither.break_block player @a ~ ~ ~ 2 1.2
 execute if score @s rng1 matches 29 run playsound minecraft:entity.wither.break_block player @a ~ ~ ~ 2 1.2
 execute if score @s rng1 matches 31 run playsound minecraft:entity.wither.break_block player @a ~ ~ ~ 2 1.2
-execute if score @s rng1 matches 11 if entity @n[tag=SEAboss6c,scores={health=..400}] run playsound entity.generic.explode player @a ~ ~ ~ 10 1.2
+execute if score @s rng1 matches 11 if entity @n[tag=SEAboss6c,scores={health=300..400}] run playsound entity.generic.explode player @a ~ ~ ~ 1 1.2
+execute if score @s rng1 matches 11 if entity @n[tag=SEAboss6c,scores={health=..299}] run playsound entity.generic.explode player @a ~ ~ ~ 10 1.2
 execute if score @s rng1 matches 11 if entity @n[tag=SEAboss6c,scores={health=..500}] run particle enchant ~ ~ ~ 1 1 1 0.03 30
 
 execute if score @s rng1 matches 11.. rotated ~ 0 run tp @s ^ ^ ^0.7
