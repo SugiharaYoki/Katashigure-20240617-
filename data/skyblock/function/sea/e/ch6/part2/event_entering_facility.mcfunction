@@ -218,6 +218,9 @@ execute if score SEA_ch6_event rng5 matches 8003 as @n[tag=SEAedwina] at @s run 
 execute if score SEA_ch6_event rng5 matches 8003 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“看来我们必须继续往下了。这里的结构随时可能坍塌，再来一场余爆就能让我们喂鱼。”","color":"white","bold": false}]
 execute if score SEA_ch6_event rng5 matches 8023 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“冷凝系统的下面……是什么地方？我之前在底下探索时有见到一扇巨大的金属门，但它看着坚不可摧，我就完全没管。”","color":"white"}]
 
+
+execute if score SEA_ch6_event rng5 matches 8023 if items entity @a[tag=SEAPT] container.* golden_sword run setblock 90151 133 -1857 minecraft:skeleton_skull[rotation=10]
+
 execute if score SEA_ch6_event rng5 matches 8042 as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
 execute if score SEA_ch6_event rng5 matches 8042 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“下面吗？猜猜看。\n没错，这下面就是他们发现圣水晶的地方。”","color":"white","bold": false}]
 execute if score SEA_ch6_event rng5 matches 8060 as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
