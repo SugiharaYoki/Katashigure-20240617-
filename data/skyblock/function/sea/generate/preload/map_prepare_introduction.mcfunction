@@ -1272,9 +1272,9 @@ forceload add 90093 -1834
 setblock 90093 30 -1834 air
 forceload remove 90093 -1834
 forceload remove 90106 -1885 90133 -1860
-
+forceload add 90205 -2193 90237 -2171
 forceload add 90205 -2171 90227 -2193
-fill 90205 241 -2171 90227 241 -2193 minecraft:void_air
+fill 90205 241 -2171 90227 241 -2193 minecraft:air
 forceload add 90395 -1749 90401 -1749
 execute positioned 90398 230 -1749 run kill @e[tag=SEAboss6c,distance=..200]
 setblock 90401 234 -1749 minecraft:prismarine_bricks
@@ -1287,5 +1287,5 @@ setblock 90398 234 -1749 minecraft:sea_lantern
 forceload remove 90395 -1749 90401 -1749
 
 forceload remove 90205 -2171 90227 -2193
-
+forceload remove 90205 -2193 90237 -2171
 
