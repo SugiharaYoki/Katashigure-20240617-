@@ -292,6 +292,7 @@ execute if score SEA_ch6_event sea_4temp4 matches 3180 as @p[tag=SEAPT] at @s ru
 
 execute if score SEA_ch6_event sea_4temp4 matches 3101.. as @n[tag=SEAboss6c] at @s run kill @n[tag=SEAboss6c,distance=0.1..200]
 execute if score SEA_ch6_event sea_4temp4 matches 3101.. as @n[tag=SEAboss6c] at @s run function skyblock:sea/e/ch6/boss6/core_final
+execute if score SEA_ch6_event sea_4temp4 matches 3101.. as @n[tag=SEAboss6c] at @s run function skyblock:sea/e/ch6/boss6/core_final
 
 execute if score SEA_ch6_event sea_4temp4 matches 3001 positioned 90398 229 -1749 run kill @e[tag=SEAboss6b,distance=..2000]
 execute if score SEA_ch6_event sea_4temp4 matches 3100 positioned 90398 229 -1749 run function skyblock:sea/m/unique/boss6c
@@ -333,6 +334,7 @@ execute if score SEA_ch6_event sea_4temp4 matches 5195 as @a[tag=SEAPT] at @s ru
 execute if score SEA_ch6_event sea_4temp4 matches 5270 as @e[tag=SEAboss6c] at @s run tp @s 90214 261 -2182
 execute if score SEA_ch6_event sea_4temp4 matches 5196 as @a[tag=SEAPT] at @s run tp @s 90216 131 -2182
 execute if score SEA_ch6_event sea_4temp4 matches 5196 as @n[tag=SEAboss6c] at @s run effect give @s slow_falling 3 50 true
+execute if score SEA_ch6_event sea_4temp4 matches 5196 as @n[tag=SEAboss6c] at @s run data modify entity @s Health set value 600
 execute if score SEA_ch6_event sea_4temp4 matches 5196 as @a[tag=SEAPT] at @s run effect give @s levitation 2 65 true
 execute if score SEA_ch6_event sea_4temp4 matches 5196 as @a[tag=SEAPT] at @s run effect give @s slow_falling 2 0 true
 execute if score SEA_ch6_event sea_4temp4 matches 5196 as @a[tag=SEAPT] at @s run effect give @s resistance 8 4 true
