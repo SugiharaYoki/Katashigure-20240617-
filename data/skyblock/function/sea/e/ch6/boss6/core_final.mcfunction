@@ -41,7 +41,7 @@ execute if score @s[scores={rng2=8..9}] rng1 matches 100.. if entity @s[scores={
 execute as @s[tag=seaboss6_attack_summon,scores={rng2=8..9}] run function skyblock:sea/e/ch6/boss6/attack_summon
 
 
-
+execute as @a[tag=SEAPT] at @s run scoreboard players add @s sea_ch6_ultimate_attack 1
 
 
 

@@ -179,7 +179,7 @@ bossbar remove sea:ch5_lurkbar
 forceload remove 90040 -20 90170 170
 
 forceload remove 90151 -1857
-
+scoreboard objectives remove sea_ch6_ultimate_attack
 
 forceload remove 90000 0 90200 200
 #setblock 90060 104 144 stone_button[facing=south,face=floor]

@@ -101,6 +101,8 @@ scoreboard players set sea_chapter_introduction sea_4temp1 0
 scoreboard players set sea_chapter_introduction sea_4temp2 0
 scoreboard players set sea_chapter_introduction sea_4temp3 0
 
+scoreboard objectives add sea_ch6_ultimate_attack dummy
+
 scoreboard players operation @s rng1 = @s SEA_w_upg_pts
 
 scoreboard players set sea_ch1_wasting_time rng1 0
