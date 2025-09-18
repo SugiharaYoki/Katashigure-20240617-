@@ -17,6 +17,7 @@ execute at @s as @e[type=marker,tag=SEA_boss6_burst_anchor,distance=0..450] at @
 #初始化技能tag
 execute if score @s rng4 matches ..0 run tag @s remove seaboss6_move_jump
 execute if score @s rng4 matches ..0 run tag @s remove seaboss6_attack_wburst
+execute if score @s rng4 matches ..0 run tag @s remove seaboss6_attack_summon
 execute if score @s rng4 matches ..0 run tag @s remove seaboss6_attack_line
 execute if score @s rng4 matches ..0 run tag @s remove seaboss6_attack_ray
 execute if score @s rng4 matches ..0 run scoreboard players set @s rng2 0
