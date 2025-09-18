@@ -366,4 +366,7 @@ execute if score SEA_ch6_event sea_4temp4 matches 4275 as @p[tag=SEAPT] at @s ru
 execute if score SEA_ch6_event sea_4temp4 matches 4275.. store result bossbar minecraft:9066602 value run data get entity @n[tag=SEAboss6c] Health
 execute if score SEA_ch6_event sea_4temp4 matches 4275.. store result score @n[tag=SEAboss6c] health run data get entity @n[tag=SEAboss6c] Health
 
-
+execute if score SEA_ch6_event sea_4temp4 matches 4275 run time set 22000
+execute if score SEA_ch6_event sea_4temp4 matches 4275..6274 run time add 1
+execute if score SEA_ch6_event sea_4temp4 matches 5000 run weather rain 1000s
+execute if score SEA_ch6_event sea_4temp4 matches 6000 run weather clear 10000s
