@@ -3,6 +3,7 @@ scoreboard players add @s rng1 1
 
 
 execute if score @s rng1 matches 2 run playsound minecraft:item.trident.riptide_3 player @a ~ ~ ~ 10 0.8
+execute if score @s rng1 matches 2 at @s run tp @s ~ ~-0.8 ~
 execute if score @s rng1 matches 1.. rotated ~ 0 run particle soul_fire_flame ^ ^3.4 ^1 0 0 0 0 1
 execute if score @s rng1 matches 2.. rotated ~ 0 run particle soul_fire_flame ^ ^3.0 ^1 0 0 0 0 1
 execute if score @s rng1 matches 3.. rotated ~ 0 run particle soul_fire_flame ^ ^2.6 ^1 0 0 0 0 1
