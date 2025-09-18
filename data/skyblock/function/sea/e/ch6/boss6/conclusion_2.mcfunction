@@ -361,15 +361,15 @@ execute if score SEA_ch6_event sea_4temp4 matches 5275 as @p[tag=SEAPT] at @s ru
 execute if score SEA_ch6_event sea_4temp4 matches 5285 as @p[tag=SEAPT] at @s run setblock 90216 241 -2182 beacon destroy
 execute if score SEA_ch6_event sea_4temp4 matches 5285 as @p[tag=SEAPT] at @s run playsound block.beacon.activate block @a 90216 241 -2182 10 0.8
 
-execute if score SEA_ch6_event sea_4temp4 matches 5275 as @p[tag=SEAPT] at @s run bossbar add 9066602 "权之执理"
-execute if score SEA_ch6_event sea_4temp4 matches 5275 as @p[tag=SEAPT] at @s run bossbar set minecraft:9066602 color red
-execute if score SEA_ch6_event sea_4temp4 matches 5275 as @p[tag=SEAPT] at @s run bossbar set minecraft:9066602 name "权之执理"
-execute if score SEA_ch6_event sea_4temp4 matches 5275 as @p[tag=SEAPT] at @s run bossbar set minecraft:9066602 players @a[tag=SEAPT]
-execute if score SEA_ch6_event sea_4temp4 matches 5275 as @p[tag=SEAPT] at @s run bossbar set minecraft:9066602 style progress
-execute if score SEA_ch6_event sea_4temp4 matches 5275 as @p[tag=SEAPT] at @s run bossbar set minecraft:9066602 max 800
+execute if score SEA_ch6_event sea_4temp4 matches 3100 as @p[tag=SEAPT] at @s run bossbar add 9066602 "权之执理"
+execute if score SEA_ch6_event sea_4temp4 matches 3100 as @p[tag=SEAPT] at @s run bossbar set minecraft:9066602 color red
+execute if score SEA_ch6_event sea_4temp4 matches 3100 as @p[tag=SEAPT] at @s run bossbar set minecraft:9066602 name "权之执理"
+execute if score SEA_ch6_event sea_4temp4 matches 3100 as @p[tag=SEAPT] at @s run bossbar set minecraft:9066602 players @a[tag=SEAPT]
+execute if score SEA_ch6_event sea_4temp4 matches 3100 as @p[tag=SEAPT] at @s run bossbar set minecraft:9066602 style progress
+execute if score SEA_ch6_event sea_4temp4 matches 3100 as @p[tag=SEAPT] at @s run bossbar set minecraft:9066602 max 800
 
-execute if score SEA_ch6_event sea_4temp4 matches 5275.. store result bossbar minecraft:9066602 value run data get entity @n[tag=SEAboss6c] Health
-execute if score SEA_ch6_event sea_4temp4 matches 5275.. store result score @n[tag=SEAboss6c] health run data get entity @n[tag=SEAboss6c] Health
+execute if score SEA_ch6_event sea_4temp4 matches 3100.. store result bossbar minecraft:9066602 value run data get entity @n[tag=SEAboss6c] Health
+execute if score SEA_ch6_event sea_4temp4 matches 3100.. store result score @n[tag=SEAboss6c] health run data get entity @n[tag=SEAboss6c] Health
 
 execute if score SEA_ch6_event sea_4temp4 matches 5300 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"权之执理：","color":"red","bold": true},{"text":"\n“这是我们之间的决战。”","color":"white","bold": false}]
 execute if score SEA_ch6_event sea_4temp4 matches 5370 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"权之执理：","color":"red","bold": true},{"text":"\n“至于你有没有能力做接下来的事情，我会进行最后的验证。”","color":"white","bold": false}]
