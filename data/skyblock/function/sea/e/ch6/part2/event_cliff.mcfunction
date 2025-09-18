@@ -228,7 +228,7 @@ execute if score SEA_ch6_event rng5 matches 15100 as @a[scores={SEAPT_member=1}]
 execute if score SEA_ch6_event rng5 matches 15100 as @a[scores={SEAPT_member=1}] at @s run effect give @s darkness 10 0 true
 execute if score SEA_ch6_event rng5 matches 15100 as @a[scores={SEAPT_member=1}] at @s run playsound minecraft:entity.enderman.stare ambient @a ~ ~ ~ 1 0.8
 execute if score SEA_ch6_event rng5 matches 15099 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“不是我的错……不是我的错！！！这些全都不是我的错，为什么受到惩罚的会是我？！为什么！！！”","color":"white"}]
-execute if score SEA_ch6_event rng5 matches 15117 as @a[scores={SEAPT_member=1}] at @s run stopsound @s
+execute if score SEA_ch6_event rng5 matches 15117 as @a[scores={SEAPT_member=1}] at @s run stopsound @a[distance=..250]
 execute if score SEA_ch6_event rng5 matches 15117 if score SEA_ch5_event_fiona_favor rng1 matches ..9 as @a[scores={SEAPT_member=1}] at @s run tellraw @a[distance=0..150] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“你打算……就永远看戏吗？”","color":"white","bold": false}]
 execute if score SEA_ch6_event rng5 matches 15146 if score SEA_ch5_event_fiona_favor rng1 matches ..9 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“我不该被自己的执念带着跑……但我又如何才能摆脱自己的罪孽？”","color":"white"}]
 execute if score SEA_ch6_event rng5 matches 15160 if score SEA_ch5_event_fiona_favor rng1 matches ..9 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“我没能保护好你们……我明明是能够救你们的……”","color":"white"}]
