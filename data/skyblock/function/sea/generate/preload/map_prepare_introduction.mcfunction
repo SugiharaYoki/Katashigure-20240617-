@@ -126,6 +126,8 @@ time set 11000t
 gamerule doDaylightCycle false
 gamerule keepInventory true
 
+#TE结尾
+fill 90074 104 154 90073 103 154 air
 
 setblock 90060 103 129 minecraft:jukebox[has_record=true]{RecordItem:{id:"minecraft:music_disc_creator_music_box"}}
 tag @a remove SEAPT
