@@ -42,6 +42,7 @@ execute as @s[tag=seaboss6_attack_summon,scores={rng2=8..9}] run function skyblo
 
 
 execute as @a[tag=SEAPT] at @s run scoreboard players add @s sea_ch6_ultimate_attack 1
+execute as @e[tag=sea_ch6_ultimate_attack_marker,type=marker,distance=0..200] at @s run function skyblock:sea/p/weapon/ch6_ultimate_attack_marker
 
 
 
