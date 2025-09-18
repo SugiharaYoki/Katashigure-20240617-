@@ -366,7 +366,7 @@ execute if score SEA_ch6_event sea_4temp4 matches 5275 as @p[tag=SEAPT] at @s ru
 execute if score SEA_ch6_event sea_4temp4 matches 5275 as @p[tag=SEAPT] at @s run bossbar set minecraft:9066602 name "权之执理"
 execute if score SEA_ch6_event sea_4temp4 matches 5275 as @p[tag=SEAPT] at @s run bossbar set minecraft:9066602 players @a[tag=SEAPT]
 execute if score SEA_ch6_event sea_4temp4 matches 5275 as @p[tag=SEAPT] at @s run bossbar set minecraft:9066602 style progress
-execute if score SEA_ch6_event sea_4temp4 matches 5275 as @p[tag=SEAPT] at @s run bossbar set minecraft:9066602 max 400
+execute if score SEA_ch6_event sea_4temp4 matches 5275 as @p[tag=SEAPT] at @s run bossbar set minecraft:9066602 max 800
 
 execute if score SEA_ch6_event sea_4temp4 matches 5275.. store result bossbar minecraft:9066602 value run data get entity @n[tag=SEAboss6c] Health
 execute if score SEA_ch6_event sea_4temp4 matches 5275.. store result score @n[tag=SEAboss6c] health run data get entity @n[tag=SEAboss6c] Health
