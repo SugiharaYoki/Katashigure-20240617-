@@ -56,8 +56,9 @@ execute as @e[tag=SEAmob,distance=..30] at @s if block ~ ~ ~ barrier run tp @s @
 
 
 
-execute as @a[tag=SEAPT] at @s run scoreboard players add @s sea_ch6_ultimate_attack 1
-execute as @e[tag=sea_ch6_ultimate_attack_marker,type=marker,distance=0..200] at @s run function skyblock:sea/p/weapon/ch6_ultimate_attack_marker
+execute as @a[tag=SEAPT] at @s if score SEA_ch6_event sea_4temp4 matches 4000..8501 run scoreboard players add @s sea_ch6_ultimate_attack 1
+execute as @a[tag=SEAPT] at @s if score SEA_ch6_event sea_4temp4 matches 8000..8501 run scoreboard players add @s sea_ch6_ultimate_attack 1
+execute as @e[tag=sea_ch6_ultimate_attack_marker,type=marker,distance=0..200] at @s if score SEA_ch6_event sea_4temp4 matches ..8501 run function skyblock:sea/p/weapon/ch6_ultimate_attack_marker
 
 
 
