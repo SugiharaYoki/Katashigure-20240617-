@@ -28,7 +28,7 @@ execute if score SEA_ch6_event sea_4temp4 matches 10002 run kill @e[tag=sea_craf
 execute if score SEA_ch6_event sea_4temp4 matches 10002 run kill @n[tag=SEAedwina]
 execute if score SEA_ch6_event sea_4temp4 matches 10001.. run rotate @n[tag=SEAexusiai] facing entity @p[tag=SEAPT]
 
-execute if score SEA_ch6_event sea_4temp4 matches 11612 as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s run playsound minecraft:afterword music @s ~ ~ ~ 1 1.0
+execute if score SEA_ch6_event sea_4temp4 matches 11632 as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s run playsound minecraft:afterword music @s ~ ~ ~ 1 1.0
 execute if score SEA_ch6_event sea_4temp4 matches 10011 as @n[tag=SEAexusiai] at @s run playsound minecraft:entity.evoker.ambient hostile @a ~ ~ ~ 1 0.7
 execute if score SEA_ch6_event sea_4temp4 matches 10011 as @n[tag=SEAexusiai] at @s run tellraw @a[distance=..200] [{"text":"诡谲之人：","color":"yellow","bold": true},{"text":"\n“祝贺你，成功出演了一场完美的歌剧。”","color":"white","bold": false}]
 execute if score SEA_ch6_event sea_4temp4 matches 10091 as @n[tag=SEAexusiai] at @s run playsound minecraft:entity.evoker.ambient hostile @a ~ ~ ~ 1 0.7
@@ -57,7 +57,7 @@ execute if score SEA_ch6_event sea_4temp4 matches 11332 as @p[tag=SEAPT] at @s r
 execute if score SEA_ch6_event sea_4temp4 matches 11432 as @n[tag=SEAexusiai] at @s run playsound minecraft:entity.evoker.ambient hostile @a ~ ~ ~ 1 0.7
 execute if score SEA_ch6_event sea_4temp4 matches 11432 as @n[tag=SEAexusiai] at @s run tellraw @a[distance=..200] [{"text":"诡谲之人：","color":"yellow","bold": true},{"text":"\n“那就要交给你自己来寻找答案了。”","color":"white","bold": false}]
 execute if score SEA_ch6_event sea_4temp4 matches 11492 as @n[tag=SEAexusiai] at @s run playsound entity.evoker.cast_spell neutral @a ~ ~ ~ 1 0.8
-execute if score SEA_ch6_event sea_4temp4 matches 11492 as @n[tag=SEAexusiai] at @s run particle enchant ~ ~1 ~ 0.2 0.5 0.2 0.02 50
+execute if score SEA_ch6_event sea_4temp4 matches 11492 as @n[tag=SEAexusiai] at @s run particle enchant ~ ~1 ~ 0.7 1.3 0.7 0.02 50
 execute if score SEA_ch6_event sea_4temp4 matches 11512 as @n[tag=SEAexusiai] at @s run playsound entity.player.teleport neutral @a ~ ~ ~ 1 1.1
 execute if score SEA_ch6_event sea_4temp4 matches 11512 as @n[tag=SEAexusiai] at @s run particle portal ~ ~1 ~ 0.2 0.5 0.2 0.02 50
 execute if score SEA_ch6_event sea_4temp4 matches 11512 as @n[tag=SEAexusiai] at @s run tp @s ~ ~-50 ~
@@ -66,8 +66,8 @@ execute if score SEA_ch6_event sea_4temp4 matches 11612 as @p[tag=SEAPT] at @s r
 execute if score SEA_ch6_event sea_4temp4 matches 11612 as @p[tag=SEAPT] at @s run effect give @a[distance=0..50] blindness 3 0 true
 execute if score SEA_ch6_event sea_4temp4 matches 11612 as @p[tag=SEAPT] at @s run tp @a[distance=..200,gamemode=spectator] 90094 228 -1845
 execute if score SEA_ch6_event sea_4temp4 matches 11612 as @p[tag=SEAPT] at @s run tp @a[tag=SEAPT] 90094 228 -1845
-execute if score SEA_ch6_event sea_4temp4 matches 11652 as @p[tag=SEAPT] at @s as @a[distance=0..250] run playsound minecraft:entity.evoker.ambient hostile @a ~ ~ ~ 1 0.7
-execute if score SEA_ch6_event sea_4temp4 matches 11652 as @p[tag=SEAPT] at @s as @a[distance=0..250] run tellraw @a[distance=..200] [{"text":"权之殊能：","color":"yellow","bold": true},{"text":"\n“……但你，其实早就知晓答案了吧。”","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 11632 as @p[tag=SEAPT] at @s as @a[distance=0..250] run playsound minecraft:entity.evoker.ambient hostile @a ~ ~ ~ 1 0.7
+execute if score SEA_ch6_event sea_4temp4 matches 11632 as @p[tag=SEAPT] at @s as @a[distance=0..250] run tellraw @a[distance=..200] [{"text":"权之殊能：","color":"yellow","bold": true},{"text":"\n“……但你，其实早就知晓答案了吧。”","color":"white","bold": false}]
 
 execute if score SEA_ch6_event sea_4temp4 matches 11852 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"伊曼纽尔：","color":"aqua","bold": true},{"text":"\n“是啊，我早就知晓答案了。”","color":"white","bold": false}]
 execute if score SEA_ch6_event sea_4temp4 matches 11942 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"伊曼纽尔：","color":"aqua","bold": true},{"text":"\n“我拥有了引领灵魂、逆转时间的权能。”","color":"white","bold": false}]
