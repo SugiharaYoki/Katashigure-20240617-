@@ -1,9 +1,14 @@
 scoreboard players add @s rng4 1
 
 execute if score @s rng4 matches 20 store result score @s rng10 run random value 1..21
-execute if score @s rng4 matches 35 store result score @s rng10 run random value 1..21
-execute if score @s rng4 matches 60 store result score @s rng10 run random value 1..21
-execute if score @s rng4 matches 75 store result score @s rng10 run random value 1..21
+execute if score @s rng4 matches 30 store result score @s rng10 run random value 1..21
+execute if score @s rng4 matches 40 store result score @s rng10 run random value 1..21
+execute if score @s[scores={health=..299}] rng4 matches 50 store result score @s rng10 run random value 1..21
+execute if score @s[scores={health=..249}] rng4 matches 60 store result score @s rng10 run random value 1..21
+execute if score @s[scores={health=..199}] rng4 matches 70 store result score @s rng10 run random value 1..21
+execute if score @s[scores={health=..149}] rng4 matches 80 store result score @s rng10 run random value 1..21
+execute if score @s[scores={health=..99}] rng4 matches 90 store result score @s rng10 run random value 1..21
+execute if score @s[scores={health=..49}] rng4 matches 100 store result score @s rng10 run random value 1..21
 
 execute if score @s rng4 matches 20.. store result score @s rng5 run random value 1..4
 
