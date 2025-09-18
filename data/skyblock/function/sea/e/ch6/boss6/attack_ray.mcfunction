@@ -95,7 +95,7 @@ execute if entity @s[scores={rng5=4,rng10=19}] run summon marker 90227 242 -2190
 execute if entity @s[scores={rng5=4,rng10=20}] run summon marker 90227 242 -2191 {Tags:["sea_boss6_ray_marker","sea_boss6_ray_marker_4"]}
 execute if entity @s[scores={rng5=4,rng10=21}] run summon marker 90227 242 -2192 {Tags:["sea_boss6_ray_marker","sea_boss6_ray_marker_4"]}
 
-scoreboard players set @s rng1 0
+scoreboard players set @s rng10 0
 
 execute if score @s rng4 matches 100.. run scoreboard players set @s rng4 -2
 
