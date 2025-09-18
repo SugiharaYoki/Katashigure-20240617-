@@ -50,8 +50,8 @@ execute as @s[scores={sea_do_attack=1..}] if items entity @s weapon.mainhand fli
 execute as @s[scores={sea_do_attack=1..}] if items entity @s weapon.mainhand mace run function skyblock:sea/p/skill/mace
 execute as @s[scores={sea_do_attack=1..}] if score SEA_ch6_event sea_4temp3 matches ..0 if items entity @s weapon.mainhand golden_sword run scoreboard players set SEA_ch6_event sea_4temp3 1
 execute as @s[scores={sea_do_attack=1..}] if items entity @s weapon.mainhand golden_sword[custom_data={sea_goldensword_1:true}] run function skyblock:sea/p/weapon/raphael_sword
-execute as @s[scores={sea_ch6_ultimate_attack=200..}] run function skyblock:sea/p/weapon/ch6_ultimate_attack_ready_particle
-execute as @s[scores={sea_do_attack=1..,sea_ch6_ultimate_attack=200..}] run function skyblock:sea/p/weapon/ch6_ultimate_attack
+execute as @s[scores={sea_ch6_ultimate_attack=200..}] if score SEA_ch6_event sea_4temp4 matches 4000..8501 run function skyblock:sea/p/weapon/ch6_ultimate_attack_ready_particle
+execute as @s[scores={sea_do_attack=1..,sea_ch6_ultimate_attack=200..}] if score SEA_ch6_event sea_4temp4 matches 4000..8501 run function skyblock:sea/p/weapon/ch6_ultimate_attack
 scoreboard players reset @s[scores={sea_do_attack=1..}] sea_do_attack
 
 #function skyblock:sea/experimental/backjump_loop
