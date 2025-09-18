@@ -45,6 +45,11 @@ execute if score @s rng1 matches 20.. rotated ~ 0 run tp @s ^ ^ ^1.4
 execute if score @s rng1 matches 23.. rotated ~ 0 run tp @s ^ ^ ^1.7
 execute if score @s rng1 matches 26.. rotated ~ 0 run tp @s ^ ^ ^2.0
 execute if score @s rng1 matches 11.. as @e[tag=SEAmob,distance=..2.9] at @s run damage @s 12 generic by @p[tag=SEAPT]
+execute if score @s rng1 matches 11 if entity @n[tag=SEAmob,distance=..2.9] at @s run effect give @a[tag=SEAPT,distance=..50] instant_health 1 0 true
+execute if score @s rng1 matches 16 if entity @n[tag=SEAmob,distance=..2.9] at @s run effect give @a[tag=SEAPT,distance=..50] instant_health 1 0 true
+execute if score @s rng1 matches 21 if entity @n[tag=SEAmob,distance=..2.9] at @s run effect give @a[tag=SEAPT,distance=..50] instant_health 1 0 true
+execute if score @s rng1 matches 26 if entity @n[tag=SEAmob,distance=..2.9] at @s run effect give @a[tag=SEAPT,distance=..50] instant_health 1 0 true
+execute if score @s rng1 matches 31 if entity @n[tag=SEAmob,distance=..2.9] at @s run effect give @a[tag=SEAPT,distance=..50] instant_health 1 0 true
 
 execute if score @s rng1 matches 32.. run kill @s
 
