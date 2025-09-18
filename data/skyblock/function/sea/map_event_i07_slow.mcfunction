@@ -16,7 +16,7 @@ execute if score SEA_ch6_event sea_4temp4 matches 10001 run fill 90085 111 137 9
 execute if score SEA_ch6_event sea_4temp4 matches 10001 run setblock 90073 123 134 air
 execute if score SEA_ch6_event sea_4temp4 matches 10001 run fill 90084 124 139 90084 122 139 iron_bars
 
-execute if score SEA_ch6_event sea_4temp4 matches 10001.. as @a[tag=SEAPT] at @s if block ~ ~ ~ water run tp @s 90060 103 141 facing 90061 103 141
+execute if score SEA_ch6_event sea_4temp4 matches 10001..11612 as @a[tag=SEAPT] at @s if block ~ ~ ~ water run tp @s 90060 103 141 facing 90061 103 141
 
 execute if score SEA_ch6_event sea_4temp4 matches 10002 run kill @e[tag=SEAmob]
 execute if score SEA_ch6_event sea_4temp4 matches 10002 run summon evoker 90059 103 144 {DeathLootTable:"skyblock:sea_pillager1",Tags:["SEAmob","SEAexusiai"],attributes:[{id:"armor",base:1.0},{id:"movement_speed",base:0.0},{id:"max_health",base:100}],Health:100,ArmorItems:[{id:leather_boots,count:1},{id:leather_leggings,count:1},{id:leather_chestplate,count:1},{id:leather_helmet,count:1}],ArmorDropChances:[0f,0f,0f,0f],Silent:true,Invulnerable:1b,NoAI:true,PersistenceRequired:true}
@@ -74,6 +74,7 @@ execute if score SEA_ch6_event sea_4temp4 matches 11942 as @p[tag=SEAPT] at @s r
 execute if score SEA_ch6_event sea_4temp4 matches 12052 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"伊曼纽尔：","color":"aqua","bold": true},{"text":"\n“从此刻起，我成为了雷米尔。”","color":"white","bold": false}]
 execute if score SEA_ch6_event sea_4temp4 matches 12162 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"伊曼纽尔：","color":"aqua","bold": true},{"text":"\n“我……成为了天使长。”","color":"white","bold": false}]
 
+execute if score SEA_ch6_event sea_4temp4 matches 11613.. as @a[tag=SEAPT] at @s if block ~ ~ ~ water run tp @s 90094 228 -1845
 
 execute if score SEA_ch6_event sea_4temp4 matches 12262 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"伊曼纽尔：","color":"aqua","bold": true},{"text":"\n“圣水晶吸引生者、细菌制造死亡，这一切都是为了汇聚魔力，使得新一任的雷米尔能够更快诞生。”","color":"white","bold": false}]
 execute if score SEA_ch6_event sea_4temp4 matches 12372 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"伊曼纽尔：","color":"aqua","bold": true},{"text":"\n“从最开始的开始，这一切就注定会是一场悲剧。”","color":"white","bold": false}]
@@ -101,16 +102,16 @@ execute if score SEA_ch6_event sea_4temp4 matches 14200 as @p[tag=SEAPT] at @s r
 
 execute if score SEA_ch6_event sea_4temp4 matches 14600 as @p[tag=SEAPT] at @s run title @a[distance=0..250] title [{"text":"- Fin -","color":"white","bold": true}]
 
-execute if score SEA_ch6_event sea_4temp4 matches 15048 as @a[tag=SEAPT] at @s run give @s mojang_banner_pattern[custom_data={sea_docg36:true}]
-execute if score SEA_ch6_event sea_4temp4 matches 15050 run clear @a[tag=SEAPT]
-execute if score SEA_ch6_event sea_4temp4 matches 15049 as @a[tag=SEAPT] run tellraw @s [{"text":"达成结局：","color":"gold","bold": true},{"text":"\nTrue End「时针的延续」","color":"white","bold": false}]
-execute if score SEA_ch6_event sea_4temp4 matches 15049 run tellraw @a[tag=SEAPT,scores={sea_progress=..17}] [{"text":"新模式解锁！","color":"green","bold": true},{"text":"已解锁“佛卡洛之隐”极难游戏模式！\n该游戏模式无法使用命星复活，也无法利用“塞壬的指引”。\n试着挑战自己的极限吧！","color":"white","bold": false}]
-execute if score SEA_ch6_event sea_4temp4 matches 15049 run tellraw @a[tag=SEAPT,scores={sea_progress=..17}] [{"text":"永久奖励：","color":"green","bold": true},{"text": "已获得可用于多功能工作站的永久升级。\n防具第3起始点的升级会始终点亮最左两格。","color": "white"}]
-execute if score SEA_ch6_event sea_4temp4 matches 15049 run tellraw @a[tag=SEAPT,scores={sea_progress=..17}] [{"text":"永久奖励：","color":"green","bold": true},{"text": "撬棍类武器的基础攻击力 +0.5","color": "white"}]
-execute if score SEA_ch6_event sea_4temp4 matches 15049 run tellraw @a[tag=SEAPT,scores={sea_progress=..17}] [{"text":"永久奖励：","color":"green","bold": true},{"text": "消防斧类武器的基础攻击力 +1.0","color": "white"}]
-execute if score SEA_ch6_event sea_4temp4 matches 15049 run tellraw @a[tag=SEAPT,scores={sea_progress=..17}] [{"text":"永久奖励：","color":"green","bold": true},{"text": "光棱箭的最大持有数量 +2","color": "white"}]
-execute if score SEA_ch6_event sea_4temp4 matches 15049 run scoreboard players set @a[tag=SEAPT,scores={sea_progress=..18}] sea_progress 19
-execute if score SEA_ch6_event sea_4temp4 matches 15050 as @a[tag=SEAPT] run function skyblock:sea/dead
+execute if score SEA_ch6_event sea_4temp4 matches 15148 as @a[tag=SEAPT] at @s run give @s mojang_banner_pattern[custom_data={sea_docg39:true}]
+execute if score SEA_ch6_event sea_4temp4 matches 15150 run clear @a[tag=SEAPT]
+execute if score SEA_ch6_event sea_4temp4 matches 15149 as @a[tag=SEAPT] run tellraw @s [{"text":"达成结局：","color":"gold","bold": true},{"text":"\nTrue End「时针的延续」","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 15149 run tellraw @a[tag=SEAPT,scores={sea_progress=..17}] [{"text":"新模式解锁！","color":"green","bold": true},{"text":"已解锁“佛卡洛之隐”极难游戏模式！\n该游戏模式无法使用命星复活，也无法利用“塞壬的指引”。\n试着挑战自己的极限吧！","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 15149 run tellraw @a[tag=SEAPT,scores={sea_progress=..17}] [{"text":"永久奖励：","color":"green","bold": true},{"text": "已获得可用于多功能工作站的永久升级。\n防具第3起始点的升级会始终点亮最左两格。","color": "white"}]
+execute if score SEA_ch6_event sea_4temp4 matches 15149 run tellraw @a[tag=SEAPT,scores={sea_progress=..17}] [{"text":"永久奖励：","color":"green","bold": true},{"text": "撬棍类武器的基础攻击力 +0.5","color": "white"}]
+execute if score SEA_ch6_event sea_4temp4 matches 15149 run tellraw @a[tag=SEAPT,scores={sea_progress=..17}] [{"text":"永久奖励：","color":"green","bold": true},{"text": "消防斧类武器的基础攻击力 +1.0","color": "white"}]
+execute if score SEA_ch6_event sea_4temp4 matches 15149 run tellraw @a[tag=SEAPT,scores={sea_progress=..17}] [{"text":"永久奖励：","color":"green","bold": true},{"text": "光棱箭的最大持有数量 +2","color": "white"}]
+execute if score SEA_ch6_event sea_4temp4 matches 15149 run scoreboard players set @a[tag=SEAPT,scores={sea_progress=..18}] sea_progress 19
+execute if score SEA_ch6_event sea_4temp4 matches 15150 as @a[tag=SEAPT] run function skyblock:sea/dead
 
 
 
