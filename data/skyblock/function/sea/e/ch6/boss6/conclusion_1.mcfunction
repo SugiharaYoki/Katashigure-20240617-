@@ -69,7 +69,7 @@ execute if score SEA_ch6_event sea_4temp4 matches 1362 run bossbar set minecraft
 execute if score SEA_ch6_event sea_4temp4 matches 1362 run bossbar set minecraft:9066602 max 400
 
 execute if score SEA_ch6_event sea_4temp4 matches 1362..1462 run scoreboard players add SEA_ch6_event sea_4temp5 4
-execute if score SEA_ch6_event sea_4temp4 matches 1362.. store result bossbar minecraft:9066602 value run scoreboard players get SEA_ch6_event sea_4temp5
+execute if score SEA_ch6_event sea_4temp4 matches 1362..2070 store result bossbar minecraft:9066602 value run scoreboard players get SEA_ch6_event sea_4temp5
 
 execute if score SEA_ch6_event sea_4temp4 matches 1427 as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.4
 execute if score SEA_ch6_event sea_4temp4 matches 1427 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“糟糕，这家伙之前根本没动真格！！”","color":"white","bold": false}]

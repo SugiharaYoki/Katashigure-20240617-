@@ -309,6 +309,9 @@ execute if score SEA_ch6_event sea_4temp4 matches 3970 as @p[tag=SEAPT] at @s ru
 execute if score SEA_ch6_event sea_4temp4 matches 4060 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"权之执理：","color":"red","bold": true},{"text":"\n“这也就算了，拉斐尔大人和乌列尔大人又凭什么选择你？！！”","color":"white","bold": false}]
 execute if score SEA_ch6_event sea_4temp4 matches 4260 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"权之执理：","color":"red","bold": true},{"text":"\n“区区一介凡人……只是个随处可见的人类，维修工！连家人都没有的孤独的人类！！”","color":"white","bold": false}]
 execute if score SEA_ch6_event sea_4temp4 matches 4360 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"权之执理：","color":"red","bold": true},{"text":"\n“这到底怎么可能，雷米尔大人怎么可能会在这种地方选择后继之人？！”","color":"white","bold": false}]
+
+execute if score SEA_ch6_event sea_4temp4 matches 4361 as @p[tag=SEAPT] at @s run scoreboard players add SEA_ch6_event sea_4temp4 200
+
 execute if score SEA_ch6_event sea_4temp4 matches 5070 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"权之执理：","color":"red","bold": true},{"text":"\n“在你将我杀死之前……”","color":"white","bold": false}]
 execute if score SEA_ch6_event sea_4temp4 matches 5150 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"权之执理：","color":"red","bold": true},{"text":"\n“不，我不会再问了。我们之间尚有一战。你，与我。我已经窥见了自己的命运。既然是祂的计划，我愿奉陪到底。”","color":"white","bold": false}]
 
