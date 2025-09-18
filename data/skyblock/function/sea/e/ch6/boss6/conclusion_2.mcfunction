@@ -240,7 +240,7 @@ execute if score SEA_ch6_event sea_4temp4 matches ..2400 if entity @a[tag=SEAPT,
 execute if score SEA_ch6_event sea_4temp4 matches 2402 as @p[tag=SEAPT] at @s run effect give @s slowness 2 11 true
 execute if score SEA_ch6_event sea_4temp4 matches 2402 as @a[scores={SEAPT_member=1}] at @s run playsound minecraft:entity.ender_dragon.flap player @a ~ ~ ~ 1 0.5
 execute if score SEA_ch6_event sea_4temp4 matches 2402 as @a[scores={SEAPT_member=1}] at @s run effect give @a[distance=0..150] darkness 2 0 true
-execute if score SEA_ch6_event sea_4temp4 matches 2402 as @a[scores={SEAPT_member=1}] at @s run tellraw @a[distance=0..150] [{"text":"远方的声音：","color":"red","bold": true},{"text":"\n“伊曼努尔，我们来进行一场盛大的合作吧。由你，来改变结局。”","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 2402 as @a[scores={SEAPT_member=1}] at @s run tellraw @a[distance=0..150] [{"text":"远方的声音：","color":"red","bold": true},{"text":"\n“伊曼纽尔，我们来进行一场盛大的合作吧。由你，来改变结局。”","color":"white","bold": false}]
 execute if score SEA_ch6_event sea_4temp4 matches 2500..2600 run scoreboard players set SEA_ch6_event sea_4temp4 2500
 execute if score SEA_ch6_event sea_4temp4 matches ..2600 if entity @a[tag=SEAPT,x=90381,y=228,z=-1800,dx=30,dy=20,dz=30] run scoreboard players set SEA_ch6_event sea_4temp4 2601
 execute if score SEA_ch6_event sea_4temp4 matches 2602 as @p[tag=SEAPT] at @s run effect give @s slowness 2 11 true
