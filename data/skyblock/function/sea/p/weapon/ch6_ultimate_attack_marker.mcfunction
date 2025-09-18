@@ -13,10 +13,12 @@ execute if score @s rng1 matches 5.. rotated ~ 0 run particle soul_fire_flame ^0
 execute if score @s rng1 matches 6.. rotated ~ 0 run particle soul_fire_flame ^0.8 ^2.2 ^1 0 0 0 0 1
 execute if score @s rng1 matches 7.. rotated ~ 0 run particle soul_fire_flame ^1.2 ^2.2 ^1 0 0 0 0 1
 execute if score @s rng1 matches 8.. rotated ~ 0 run particle soul_fire_flame ^1.6 ^2.2 ^1 0 0 0 0 1
+execute if score @s rng1 matches 9.. rotated ~ 0 run particle soul_fire_flame ^2.0 ^2.2 ^1 0 0 0 0 1
 execute if score @s rng1 matches 5.. rotated ~ 0 run particle soul_fire_flame ^-0.4 ^2.2 ^1 0 0 0 0 1
 execute if score @s rng1 matches 6.. rotated ~ 0 run particle soul_fire_flame ^-0.8 ^2.2 ^1 0 0 0 0 1
 execute if score @s rng1 matches 7.. rotated ~ 0 run particle soul_fire_flame ^-1.2 ^2.2 ^1 0 0 0 0 1
 execute if score @s rng1 matches 8.. rotated ~ 0 run particle soul_fire_flame ^-1.6 ^2.2 ^1 0 0 0 0 1
+execute if score @s rng1 matches 9.. rotated ~ 0 run particle soul_fire_flame ^-2.0 ^2.2 ^1 0 0 0 0 1
 
 execute if score @s rng1 matches 5.. rotated ~ 0 run particle soul_fire_flame ^ ^1.8 ^1 0 0 0 0 1
 execute if score @s rng1 matches 6.. rotated ~ 0 run particle soul_fire_flame ^ ^1.4 ^1 0 0 0 0 1
