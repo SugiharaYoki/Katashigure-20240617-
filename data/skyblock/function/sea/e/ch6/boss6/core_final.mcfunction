@@ -18,13 +18,14 @@ execute at @s as @e[type=marker,tag=SEA_boss6_burst_anchor,distance=0..450] at @
 execute if score @s rng4 matches ..0 run tag @s remove seaboss6_move_jump
 execute if score @s rng4 matches ..0 run tag @s remove seaboss6_attack_wburst
 execute if score @s rng4 matches ..0 run tag @s remove seaboss6_attack_line
+execute if score @s rng4 matches ..0 run tag @s remove seaboss6_attack_ray
 execute if score @s rng4 matches ..0 run scoreboard players set @s rng2 0
 
 #技能roll
 execute if entity @s[scores={rng4=1..,rng2=0}] run scoreboard players set @s rng4 0
 
 execute if score @s rng1 matches 10.. if entity @s[scores={rng4=..0,health=500..780}] store result score @s rng2 run random value 1..9
-execute if score @s rng1 matches 10.. if entity @s[scores={rng4=..0,health=..499}] store result score @s rng2 run random value 1..9
+execute if score @s rng1 matches 10.. if entity @s[scores={rng4=..0,health=..499}] store result score @s rng2 run random value 1..13
 
 #【技能列表】
 #大跳
@@ -39,7 +40,15 @@ execute as @s[tag=seaboss6_attack_line,scores={rng2=6..7}] run function skyblock
 #召唤怪物
 execute if score @s[scores={rng2=8..9}] rng1 matches 100.. if entity @s[scores={rng4=..1}] run tag @s add seaboss6_attack_summon
 execute as @s[tag=seaboss6_attack_summon,scores={rng2=8..9}] run function skyblock:sea/e/ch6/boss6/attack_summon
+
+execute if score @s[scores={rng2=10..13}] rng1 matches 100.. if entity @s[scores={rng4=..1}] run tag @s add seaboss6_attack_ray
+execute as @s[tag=seaboss6_attack_ray,scores={rng2=10..13}] run function skyblock:sea/e/ch6/boss6/attack_ray
+
+execute at @s as @e[type=marker,tag=sea_boss6_ray_marker,distance=0..450] at @s run function skyblock:sea/e/ch6/boss6/attack_ray_marker
+
 execute as @e[tag=SEAmob,distance=..30] at @s if block ~ ~ ~ barrier run tp @s @n[tag=SEAboss6c]
+
+
 
 execute as @a[tag=SEAPT] at @s run scoreboard players add @s sea_ch6_ultimate_attack 1
 execute as @e[tag=sea_ch6_ultimate_attack_marker,type=marker,distance=0..200] at @s run function skyblock:sea/p/weapon/ch6_ultimate_attack_marker
