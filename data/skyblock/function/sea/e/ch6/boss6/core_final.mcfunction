@@ -10,20 +10,16 @@ execute at @s as @e[type=marker,tag=SEA_boss6_burst_anchor,distance=0..450] at @
 #execute if score @s rng1 matches 100 run tag @s add seaboss6_move_jump
 
 #初始化技能tag
-execute if score @s rng4 matches ..0 run tag @s remove seaboss6_m_lift
-execute if score @s rng4 matches ..0 run tag @s remove seaboss6_m_center
 execute if score @s rng4 matches ..0 run tag @s remove seaboss6_move_jump
 execute if score @s rng4 matches ..0 run tag @s remove seaboss6_attack_wburst
 execute if score @s rng4 matches ..0 run tag @s remove seaboss6_attack_line
-execute if score @s rng4 matches ..0 run tag @s remove seaboss6_oorexec
-execute if score @s rng4 matches ..0 run tag @s remove seaboss6_phase_update
-execute if score @s rng4 matches ..0 run tag @s remove seaboss6_phase3_storm
 execute if score @s rng4 matches ..0 run scoreboard players set @s rng2 0
 
 #技能roll
 execute if entity @s[scores={rng4=1..,rng2=0}] run scoreboard players set @s rng4 0
 
-execute if score @s rng1 matches 10.. if entity @s[scores={rng4=..0,health=499..780}] store result score @s rng2 run random value 1..9
+execute if score @s rng1 matches 10.. if entity @s[scores={rng4=..0,health=500..780}] store result score @s rng2 run random value 1..9
+execute if score @s rng1 matches 10.. if entity @s[scores={rng4=..0,health=..499}] store result score @s rng2 run random value 1..9
 
 #【技能列表】
 #大跳
@@ -31,7 +27,7 @@ execute if score @s[scores={rng2=1..3}] rng1 matches 100.. if entity @s[scores={
 execute as @s[tag=seaboss6_move_jump,scores={rng2=1..4}] run function skyblock:sea/e/ch6/boss6/move_jump
 #掀风灭火
 execute if score @s[scores={rng2=4..5}] rng1 matches 100.. if entity @s[scores={rng4=..1}] run tag @s add seaboss6_attack_wburst
-execute as @s[tag=seaboss6_attack_wburst,scores={rng2=5}] run function skyblock:sea/e/ch6/boss6/attack_wind_burst
+execute as @s[tag=seaboss6_attack_wburst,scores={rng2=5}] run function skyblock:sea/e/ch6/boss6/attack_wind_burst_final
 #划线激光
 execute if score @s[scores={rng2=6..7}] rng1 matches 100.. if entity @s[scores={rng4=..1}] run tag @s add seaboss6_attack_line
 execute as @s[tag=seaboss6_attack_line,scores={rng2=6..7}] run function skyblock:sea/e/ch6/boss6/attack_line
