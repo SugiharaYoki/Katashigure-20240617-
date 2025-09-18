@@ -80,8 +80,8 @@ execute if score SEA_ch6_event sea_4temp4 matches 12372 as @p[tag=SEAPT] at @s r
 execute if score SEA_ch6_event sea_4temp4 matches 12482 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"伊曼纽尔：","color":"aqua","bold": true},{"text":"\n“因为由我来演奏的，只是一曲悲歌。我只是完成了我必将完成之事。”","color":"white","bold": false}]
 execute if score SEA_ch6_event sea_4temp4 matches 12602 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"伊曼纽尔：","color":"aqua","bold": true},{"text":"\n“……再重来一次的话，我也不会尝试更改过去了吧。”","color":"white","bold": false}]
 execute if score SEA_ch6_event sea_4temp4 matches 12692 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"伊曼纽尔：","color":"aqua","bold": true},{"text":"\n“因为……继承‘雷米尔’这一称呼，才能……拯救世界？”","color":"white","bold": false}]
-execute if score SEA_ch6_event sea_4temp4 matches 12782 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"拯救什么世界……真是可笑。","color":"white","bold": false}]
-execute if score SEA_ch6_event sea_4temp4 matches 12902 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"我自始至终，都只想要拯救那些人啊。","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 12882 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"拯救什么世界……真是可笑。","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 13002 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"我自始至终，都只想要拯救那些人啊。","color":"white","bold": false}]
 
 execute if score SEA_ch6_event sea_4temp4 matches 13200 as @p[tag=SEAPT] at @s run title @a[distance=0..250] times 2s 3s 2s
 execute if score SEA_ch6_event sea_4temp4 matches 13200 as @p[tag=SEAPT] at @s run title @a[distance=0..250] title [{"text":"『厄珀娅的悲歌』","color":"white","bold": true}]
