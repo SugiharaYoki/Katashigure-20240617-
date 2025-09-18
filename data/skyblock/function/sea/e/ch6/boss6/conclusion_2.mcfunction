@@ -206,6 +206,8 @@ execute if score SEA_ch6_event sea_4temp4 matches 2020 as @p[tag=SEAPT] at @s ru
 execute if score SEA_ch6_event sea_4temp4 matches 2020 as @p[tag=SEAPT] at @s run playsound minecraft:ambient.underwater.loop.additions.ultra_rare ambient @a ~ ~ ~ 5 0.9
 execute if score SEA_ch6_event sea_4temp4 matches 2020 as @p[tag=SEAPT] at @s run playsound minecraft:ambient.underwater.loop.additions.ultra_rare ambient @a ~ ~ ~ 5 0.9
 
+execute if score SEA_ch6_event sea_4temp4 matches 2060 run forceload add 90379 -1845 90421 -1732
+
 execute if score SEA_ch6_event sea_4temp4 matches 2070 as @a[tag=SEAPT] at @s run forceload add 90151 -1857
 execute if score SEA_ch6_event sea_4temp4 matches 2070 as @a[tag=SEAPT] at @s run kill @e[tag=SEAedwina,distance=..200]
 execute if score SEA_ch6_event sea_4temp4 matches 2070 as @a[tag=SEAPT] at @s run kill @e[tag=SEAboss6c,distance=..2000]
