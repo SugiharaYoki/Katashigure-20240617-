@@ -30,8 +30,8 @@ execute if score @s rng4 matches 85 run playsound entity.generic.explode hostile
 execute if score @s rng4 matches 88 run playsound entity.generic.explode hostile @a ~ ~ ~ 3 1.2
 execute if score @s rng4 matches 92 run playsound entity.generic.explode hostile @a ~ ~ ~ 3 1.2
 
-execute if score @s rng4 matches 82 as @a[tag=SEAPT,distance=0..4] run damage @s 8 wind_charge
-execute if score @s rng4 matches 82 as @e[tag=SEAmob,distance=0..4] run damage @s 12 wind_charge
+execute if score @s rng4 matches 82 as @a[tag=SEAPT,distance=0..5] run damage @s 8 wind_charge
+execute if score @s rng4 matches 82 as @e[tag=SEAmob,distance=0..5] run damage @s 12 wind_charge
 
 
 execute if score @s rng4 matches 92.. run scoreboard players set @s rng4 -2

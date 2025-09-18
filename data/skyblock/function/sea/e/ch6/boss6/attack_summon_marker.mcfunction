@@ -3,6 +3,8 @@ execute as @s[scores={sea_4temp1=1..10}] run particle sculk_soul ~ ~1 ~ 0.3 0.5 
 execute store result score @s rng1 run random value 1..10
 execute if entity @n[tag=SEAboss6,tag=Phase4] store result score @s rng1 run random value 1..12
 execute if entity @n[tag=SEAboss6,tag=Phase4] as @s[tag=SEAboss6_summoner_husk] at @s run scoreboard players set @s rng1 12
+execute if entity @n[tag=SEAboss6c] store result score @s rng1 run random value 1..12
+execute if entity @n[tag=SEAboss6c] as @s[tag=SEAboss6_summoner_husk] at @s run scoreboard players set @s rng1 12
 execute as @s[scores={sea_4temp1=5}] run playsound minecraft:entity.zombie_villager.converted hostile @a ~ ~ ~ 1 0.8
 execute as @s[scores={sea_4temp1=11}] run playsound minecraft:block.vault.eject_item hostile @a ~ ~ ~ 1 0.8
 execute as @s[scores={sea_4temp1=11}] run playsound minecraft:block.vault.eject_item hostile @a ~ ~ ~ 1 0.65
@@ -15,6 +17,6 @@ execute as @s[scores={sea_4temp1=11,rng1=9..10}] run function skyblock:sea/m/mag
 execute as @s[scores={sea_4temp1=11,rng1=11}] run function skyblock:sea/m/visioner
 execute as @s[scores={sea_4temp1=11,rng1=12}] run function skyblock:sea/m/husk
 execute as @s[scores={sea_4temp1=11}] run kill @s
-execute unless entity @n[tag=SEAboss6,distance=0..8] run kill @s
+execute unless entity @n[tag=SEAboss6,distance=0..8] unless entity @n[tag=SEAboss6c,distance=0..8] run kill @s
 
 scoreboard players add @s sea_4temp1 1
