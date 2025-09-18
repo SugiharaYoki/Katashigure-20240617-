@@ -28,7 +28,7 @@ execute if score SEA_ch6_event sea_4temp4 matches 10002 run kill @e[tag=sea_craf
 execute if score SEA_ch6_event sea_4temp4 matches 10002 run kill @n[tag=SEAedwina]
 execute if score SEA_ch6_event sea_4temp4 matches 10001.. run rotate @n[tag=SEAexusiai] facing entity @p[tag=SEAPT]
 
-execute if score SEA_ch6_event sea_4temp4 matches 10091 as @n[tag=SEAexusiai] at @s as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s run playsound minecraft:afterword music @s ~ ~ ~ 1 1.0
+execute if score SEA_ch6_event sea_4temp4 matches 11612 as @n[tag=SEAexusiai] at @s as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s run playsound minecraft:afterword music @s ~ ~ ~ 1 1.0
 execute if score SEA_ch6_event sea_4temp4 matches 10011 as @n[tag=SEAexusiai] at @s run playsound minecraft:entity.evoker.ambient hostile @a ~ ~ ~ 1 0.7
 execute if score SEA_ch6_event sea_4temp4 matches 10011 as @n[tag=SEAexusiai] at @s run tellraw @a[distance=..200] [{"text":"诡谲之人：","color":"yellow","bold": true},{"text":"\n“祝贺你，成功出演了一场完美的歌剧。”","color":"white","bold": false}]
 execute if score SEA_ch6_event sea_4temp4 matches 10091 as @n[tag=SEAexusiai] at @s run playsound minecraft:entity.evoker.ambient hostile @a ~ ~ ~ 1 0.7
