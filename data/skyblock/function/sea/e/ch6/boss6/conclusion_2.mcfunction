@@ -394,7 +394,7 @@ execute if entity @n[tag=SEAboss6c,scores={health=200..}] if score SEA_ch6_event
 execute if score SEA_ch6_event sea_4temp4 matches 6800 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"权之执理：","color":"red","bold": true},{"text":"\n“这里所发生的全部，都将迎来终结……”","color":"white","bold": false}]
 execute if score SEA_ch6_event sea_4temp4 matches 6890 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"权之执理：","color":"red","bold": true},{"text":"\n“我承认了你的资格。”","color":"white","bold": false}]
 execute if score SEA_ch6_event sea_4temp4 matches 6980 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"权之执理：","color":"red","bold": true},{"text":"\n“我相信你自己也不知道自己亲自背负上了怎样的命运。”","color":"white","bold": false}]
-execute if score SEA_ch6_event sea_4temp4 matches 7070 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"权之执理：","color":"red","bold": true},{"text":"\n“若你做好了准备……那就，打败我。”","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 7070 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"权之执理：","color":"red","bold": true},{"text":"\n“若你做好了准备……那就，打败我！！”","color":"white","bold": false}]
 
 execute if entity @n[tag=SEAboss6c,scores={health=..99}] if score SEA_ch6_event sea_4temp4 matches 7900..7999 run scoreboard players set SEA_ch6_event sea_4temp4 8000
 
