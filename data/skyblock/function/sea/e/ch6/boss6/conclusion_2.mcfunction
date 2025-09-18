@@ -396,7 +396,8 @@ execute if score SEA_ch6_event sea_4temp4 matches 6890 as @p[tag=SEAPT] at @s ru
 execute if score SEA_ch6_event sea_4temp4 matches 6980 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"权之执理：","color":"red","bold": true},{"text":"\n“我相信你自己也不知道自己亲自背负上了怎样的命运。”","color":"white","bold": false}]
 execute if score SEA_ch6_event sea_4temp4 matches 7070 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"权之执理：","color":"red","bold": true},{"text":"\n“若你做好了准备……那就，打败我！！”","color":"white","bold": false}]
 
-execute if entity @n[tag=SEAboss6c,scores={health=..99}] if score SEA_ch6_event sea_4temp4 matches 7900..7999 run scoreboard players set SEA_ch6_event sea_4temp4 8000
+execute if entity @n[tag=SEAboss6c,scores={health=100..}] if score SEA_ch6_event sea_4temp4 matches 7900..7999 run scoreboard players set SEA_ch6_event sea_4temp4 7900
+execute if entity @n[tag=SEAboss6c,scores={health=..99}] if score SEA_ch6_event sea_4temp4 matches ..7999 run scoreboard players set SEA_ch6_event sea_4temp4 8000
 
 execute if score SEA_ch6_event sea_4temp4 matches 8001 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"远方的声音：","color":"yellow","bold": true},{"text":"\n“你是不幸之人，却也是受祝福之人。”","color":"white","bold": false}]
 execute if score SEA_ch6_event sea_4temp4 matches 8100 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"远方的声音：","color":"yellow","bold": true},{"text":"\n“象征迷宫与正确道路的天使已为你指明前路。”","color":"white","bold": false}]
