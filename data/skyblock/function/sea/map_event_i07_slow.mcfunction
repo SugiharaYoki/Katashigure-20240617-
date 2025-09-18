@@ -44,7 +44,7 @@ execute if score SEA_ch6_event sea_4temp4 matches 10551 as @n[tag=SEAexusiai] at
 execute if score SEA_ch6_event sea_4temp4 matches 10661 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"伊曼纽尔：","color":"aqua","bold": true},{"text":"\n“所以……你是谁？你难道就是那个我始终未曾找到的麦迪逊吗？”","color":"white","bold": false}]
 execute if score SEA_ch6_event sea_4temp4 matches 10752 as @n[tag=SEAexusiai] at @s run playsound minecraft:entity.evoker.ambient hostile @a ~ ~ ~ 1 0.7
 execute if score SEA_ch6_event sea_4temp4 matches 10752 as @n[tag=SEAexusiai] at @s run tellraw @a[distance=..200] [{"text":"诡谲之人：","color":"yellow","bold": true},{"text":"\n“麦迪逊？那个人类发现了圣水晶背后的真相，意识到只要藏到最后，第二代雷米尔就一定会解决一切，现在都还躲在平台的某个角落苟全性命呢。”","color":"white","bold": false}]
-execute if score SEA_ch6_event sea_4temp4 matches 10862 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"伊曼纽尔：","color":"aqua","bold": true},{"text":"\n“……”","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 10862 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"伊曼纽尔：","color":"aqua","bold": true},{"text":"\n“这样……”","color":"white","bold": false}]
 execute if score SEA_ch6_event sea_4temp4 matches 10932 as @n[tag=SEAexusiai] at @s run playsound minecraft:entity.evoker.ambient hostile @a ~ ~ ~ 1 0.7
 execute if score SEA_ch6_event sea_4temp4 matches 10932 as @n[tag=SEAexusiai] at @s run tellraw @a[distance=..200] [{"text":"诡谲之人：","color":"yellow","bold": true},{"text":"\n“我是谁，一点都不重要。但是，我希望你会帮我一个忙。”","color":"white","bold": false}]
 execute if score SEA_ch6_event sea_4temp4 matches 11022 as @n[tag=SEAexusiai] at @s run playsound minecraft:entity.evoker.ambient hostile @a ~ ~ ~ 1 0.7
