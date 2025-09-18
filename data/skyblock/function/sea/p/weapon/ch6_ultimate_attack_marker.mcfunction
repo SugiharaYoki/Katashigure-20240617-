@@ -52,11 +52,11 @@ execute if score @s rng1 matches 21 if entity @n[tag=SEAmob,distance=..2.9] at @
 execute if score @s rng1 matches 26 if entity @n[tag=SEAmob,distance=..2.9] at @s run effect give @a[tag=SEAPT,distance=..50] instant_health 1 0 true
 execute if score @s rng1 matches 31 if entity @n[tag=SEAmob,distance=..2.9] at @s run effect give @a[tag=SEAPT,distance=..50] instant_health 1 0 true
 
-execute if score @s rng1 matches 20 if entity @n[tag=SEAboss6c,scores={health=..600}] run kill @s
-execute if score @s rng1 matches 23 if entity @n[tag=SEAboss6c,scores={health=..500}] run kill @s
-execute if score @s rng1 matches 26 if entity @n[tag=SEAboss6c,scores={health=..400}] run kill @s
-execute if score @s rng1 matches 29 if entity @n[tag=SEAboss6c,scores={health=..300}] run kill @s
-execute if score @s rng1 matches 31 if entity @n[tag=SEAboss6c,scores={health=..200}] run kill @s
+execute if score @s rng1 matches 20 if entity @n[tag=SEAboss6c,scores={health=600..}] run kill @s
+execute if score @s rng1 matches 23 if entity @n[tag=SEAboss6c,scores={health=500..}] run kill @s
+execute if score @s rng1 matches 26 if entity @n[tag=SEAboss6c,scores={health=400..}] run kill @s
+execute if score @s rng1 matches 29 if entity @n[tag=SEAboss6c,scores={health=300..}] run kill @s
+execute if score @s rng1 matches 31 if entity @n[tag=SEAboss6c,scores={health=200..}] run kill @s
 
 execute if score @s rng1 matches 32.. run kill @s
 
