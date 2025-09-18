@@ -402,10 +402,10 @@ execute if entity @n[tag=SEAboss6c,scores={health=100..}] if score SEA_ch6_event
 execute if entity @n[tag=SEAboss6c,scores={health=..99}] if score SEA_ch6_event sea_4temp4 matches ..7999 run scoreboard players set SEA_ch6_event sea_4temp4 8000
 
 execute if score SEA_ch6_event sea_4temp4 matches 8001 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"远方的声音：","color":"yellow","bold": true},{"text":"\n“你是不幸之人，却也是受祝福之人。”","color":"white","bold": false}]
-execute if score SEA_ch6_event sea_4temp4 matches 8100 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"远方的声音：","color":"yellow","bold": true},{"text":"\n“象征迷宫与正确道路的天使已为你指明前路。”","color":"white","bold": false}]
-execute if score SEA_ch6_event sea_4temp4 matches 8180 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"远方的声音：","color":"yellow","bold": true},{"text":"\n“深海的魔神将你的未来提前示意予你。”","color":"white","bold": false}]
-execute if score SEA_ch6_event sea_4temp4 matches 8260 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"远方的声音：","color":"yellow","bold": true},{"text":"\n“烈焰与智慧的天使赐予了你远超凡人的神力。”","color":"white","bold": false}]
-execute if score SEA_ch6_event sea_4temp4 matches 8340 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"远方的声音：","color":"yellow","bold": true},{"text":"\n“指引灵魂的天使令你能够积攒足够的魔力。”","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 8100 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"远方的声音：","color":"yellow","bold": true},{"text":"\n“象征迷宫与正确道路的天使长已为你指明前路。”","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 8260 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"远方的声音：","color":"yellow","bold": true},{"text":"\n“深海的魔神将你的未来提前示意予你。”","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 8340 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"远方的声音：","color":"yellow","bold": true},{"text":"\n“烈焰与智慧的天使长赐予了你远超凡人的神力。”","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 8180 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"远方的声音：","color":"yellow","bold": true},{"text":"\n“指引灵魂的天使长令你能够积攒足够的魔力。”","color":"white","bold": false}]
 execute if score SEA_ch6_event sea_4temp4 matches 8420 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"远方的声音：","color":"yellow","bold": true},{"text":"\n“最重要的是……你获得了对你生命最重要之人的祝福。”","color":"white","bold": false}]
 execute if score SEA_ch6_event sea_4temp4 matches 8520 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"远方的声音：","color":"yellow","bold": true},{"text":"\n“在故事的最开始，你就注定成为祂。”","color":"white","bold": false}]
 execute if score SEA_ch6_event sea_4temp4 matches 8001 as @p[tag=SEAPT] at @s run damage @n[tag=SEAboss6c] 10 generic

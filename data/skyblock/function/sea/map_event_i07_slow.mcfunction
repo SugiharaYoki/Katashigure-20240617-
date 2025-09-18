@@ -69,8 +69,19 @@ execute if score SEA_ch6_event sea_4temp4 matches 11612 as @p[tag=SEAPT] at @s r
 execute if score SEA_ch6_event sea_4temp4 matches 11652 as @n[tag=SEAexusiai] at @s run playsound minecraft:entity.evoker.ambient hostile @a ~ ~ ~ 1 0.7
 execute if score SEA_ch6_event sea_4temp4 matches 11652 as @n[tag=SEAexusiai] at @s run tellraw @a[distance=..200] [{"text":"权之殊能：","color":"yellow","bold": true},{"text":"\n“……但你，其实早就知晓答案了吧。”","color":"white","bold": false}]
 
+execute if score SEA_ch6_event sea_4temp4 matches 11852 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"伊曼纽尔：","color":"aqua","bold": true},{"text":"\n“是啊，我早就知晓答案了。”","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 11942 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"伊曼纽尔：","color":"aqua","bold": true},{"text":"\n“我拥有了引领灵魂、逆转时间的权能。”","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 12052 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"伊曼纽尔：","color":"aqua","bold": true},{"text":"\n“从此刻起，我成为了雷米尔。”","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 12162 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"伊曼纽尔：","color":"aqua","bold": true},{"text":"\n“我……成为了天使长。”","color":"white","bold": false}]
 
 
+execute if score SEA_ch6_event sea_4temp4 matches 12262 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"伊曼纽尔：","color":"aqua","bold": true},{"text":"\n“圣水晶吸引生者、细菌制造死亡，这一切都是为了汇聚魔力，使得新一任的雷米尔能够更快诞生。”","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 12372 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"伊曼纽尔：","color":"aqua","bold": true},{"text":"\n“从最开始的开始，这一切就注定会是一场悲剧。”","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 12482 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"伊曼纽尔：","color":"aqua","bold": true},{"text":"\n“因为由我来演奏的，只是一曲悲歌。我只是完成了我必将完成之事。”","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 12602 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"伊曼纽尔：","color":"aqua","bold": true},{"text":"\n“……再重来一次的话，我也不会尝试更改过去了吧。”","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 12692 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"伊曼纽尔：","color":"aqua","bold": true},{"text":"\n“因为……继承‘雷米尔’这一称呼，才能……拯救世界？”","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 12782 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"拯救什么世界……真是可笑。","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 12902 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"我自始至终，都只想要拯救那些人啊。","color":"white","bold": false}]
 
 
 
