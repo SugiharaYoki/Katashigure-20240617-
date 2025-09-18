@@ -3,6 +3,7 @@
 scoreboard players add SEA_ch6_event sea_4temp4 1
 
 
+execute if score SEA_ch6_event sea_4temp4 matches 10001 run bossbar remove 9066602
 execute if score SEA_ch6_event sea_4temp4 matches 10001 as @p[tag=SEAPT] at @s run tp @a[distance=..200,gamemode=spectator] 90060 103 141 facing 90061 103 141
 execute if score SEA_ch6_event sea_4temp4 matches 10001 run tp @a[tag=SEAPT] 90060 103 141 facing 90061 103 141
 execute if score SEA_ch6_event sea_4temp4 matches 10001 run clear @a[tag=SEAPT]
