@@ -52,5 +52,5 @@ execute as @n[type=villager,tag=SEAyuehan_actable,tag=SEAyuehan] at @s run funct
 #最终boss
 execute if score SEA_ch6_event sea_4temp4 matches ..3 if score SEA_ch6_event rng5 matches 20001.. as @n[tag=SEAboss6] at @s run function skyblock:sea/e/ch6/boss6/core
 execute if score SEA_ch6_event sea_4temp4 matches 4.. unless block 90151 133 -1857 minecraft:skeleton_skull run function skyblock:sea/e/ch6/boss6/conclusion_1
-execute if score SEA_ch6_event sea_4temp4 matches 4.. if block 90151 133 -1857 minecraft:skeleton_skull run function skyblock:sea/e/ch6/boss6/conclusion_2
+execute if score SEA_ch6_event sea_4temp4 matches 4..9998 if block 90151 133 -1857 minecraft:skeleton_skull run function skyblock:sea/e/ch6/boss6/conclusion_2
 
