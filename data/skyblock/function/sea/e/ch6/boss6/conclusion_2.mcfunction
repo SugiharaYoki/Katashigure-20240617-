@@ -330,7 +330,7 @@ execute if score SEA_ch6_event sea_4temp4 matches 5190 as @a[tag=SEAPT] at @s ru
 execute if score SEA_ch6_event sea_4temp4 matches 5195 as @a[tag=SEAPT] at @s run particle explosion_emitter ~ ~ ~ 2 2 2 0 2
 execute if score SEA_ch6_event sea_4temp4 matches 5195 as @a[tag=SEAPT] at @s run particle large_smoke ~ ~ ~ 2 2 2 0 50
 execute if score SEA_ch6_event sea_4temp4 matches 5195 as @a[tag=SEAPT] at @s run spawnpoint @a[distance=..2000,tag=SEAPT] 90216 242 -2182
-execute if score SEA_ch6_event sea_4temp4 matches 5195..5197 as @e[tag=SEAboss6c] at @s run tp @s 90214 261 -2182
+execute if score SEA_ch6_event sea_4temp4 matches 5270 as @e[tag=SEAboss6c] at @s run tp @s 90214 261 -2182
 execute if score SEA_ch6_event sea_4temp4 matches 5196 as @a[tag=SEAPT] at @s run tp @s 90216 131 -2182
 execute if score SEA_ch6_event sea_4temp4 matches 5196 as @n[tag=SEAboss6c] at @s run effect give @s slow_falling 3 50 true
 execute if score SEA_ch6_event sea_4temp4 matches 5196 as @a[tag=SEAPT] at @s run effect give @s levitation 2 65 true
