@@ -158,6 +158,7 @@ execute if score SEA_ch6_event sea_4temp4 matches 1983..1985 as @n[tag=SEAedwina
 execute if score SEA_ch6_event sea_4temp4 matches 1970 as @n[tag=SEAedwina] at @s positioned 90050 20 -1815 run playsound entity.generic.explode block @a ~ ~ ~ 2 1.1
 
 execute if score SEA_ch6_event sea_4temp4 matches 1985 as @n[tag=SEAedwina] at @s positioned 90050 20 -1815 run kill @s
+execute if score SEA_ch6_event sea_4temp4 matches 1965 as @p[tag=SEAPT] at @s rotated ~ 0 run tp @n[tag=SEAedwina] ^ ^ ^2 facing entity @n[tag=SEAboss6b]
 
 execute if score SEA_ch6_event sea_4temp4 matches 1950 as @a[tag=SEAPT] at @s positioned ~6 ~ ~ run effect give @s slowness 5 19 true
 execute if score SEA_ch6_event sea_4temp4 matches 1940 as @a[tag=SEAPT] at @s positioned ~6 ~ ~ run effect give @s resistance 5 19 true
