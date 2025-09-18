@@ -6,9 +6,14 @@ execute if score @s rng4 matches 40 store result score @s rng10 run random value
 execute if score @s[scores={health=..299}] rng4 matches 50 store result score @s rng10 run random value 1..21
 execute if score @s[scores={health=..249}] rng4 matches 60 store result score @s rng10 run random value 1..21
 execute if score @s[scores={health=..199}] rng4 matches 70 store result score @s rng10 run random value 1..21
-execute if score @s[scores={health=..149}] rng4 matches 80 store result score @s rng10 run random value 1..21
-execute if score @s[scores={health=..99}] rng4 matches 90 store result score @s rng10 run random value 1..21
-execute if score @s[scores={health=..49}] rng4 matches 100 store result score @s rng10 run random value 1..21
+execute if score @s[scores={health=..149}] rng4 matches 100 store result score @s rng10 run random value 1..21
+execute if score @s[scores={health=..149}] rng4 matches 110 store result score @s rng10 run random value 1..21
+execute if score @s[scores={health=..149}] rng4 matches 120 store result score @s rng10 run random value 1..21
+execute if score @s[scores={health=..149}] rng4 matches 130 store result score @s rng10 run random value 1..21
+execute if score @s[scores={health=..99}] rng4 matches 135 store result score @s rng10 run random value 1..21
+execute if score @s[scores={health=..99}] rng4 matches 140 store result score @s rng10 run random value 1..21
+execute if score @s[scores={health=..49}] rng4 matches 145 store result score @s rng10 run random value 1..21
+execute if score @s[scores={health=..49}] rng4 matches 150 store result score @s rng10 run random value 1..21
 
 execute if score @s rng4 matches 20.. store result score @s rng5 run random value 1..4
 
@@ -102,7 +107,8 @@ execute if entity @s[scores={rng5=4,rng10=21}] run summon marker 90227 242 -2192
 
 scoreboard players set @s rng10 0
 
-execute if score @s rng4 matches 100.. run scoreboard players set @s rng4 -2
+execute if score @s[scores={health=150..}] rng4 matches 100.. run scoreboard players set @s rng4 -2
+execute if score @s[scores={health=..149}] rng4 matches 150.. run scoreboard players set @s rng4 -2
 
 
 
