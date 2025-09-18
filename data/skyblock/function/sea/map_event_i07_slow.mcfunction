@@ -64,6 +64,8 @@ execute if score SEA_ch6_event sea_4temp4 matches 11512 as @n[tag=SEAexusiai] at
 execute if score SEA_ch6_event sea_4temp4 matches 11515 as @n[tag=SEAexusiai] at @s run kill @s
 execute if score SEA_ch6_event sea_4temp4 matches 11612 as @p[tag=SEAPT] at @s run effect give @a[distance=0..50] darkness 3 0 true
 execute if score SEA_ch6_event sea_4temp4 matches 11612 as @p[tag=SEAPT] at @s run effect give @a[distance=0..50] blindness 3 0 true
+execute if score SEA_ch6_event sea_4temp4 matches 11612 as @p[tag=SEAPT] at @s run tp @a[distance=..200,gamemode=spectator] 90094 228 -1845
+execute if score SEA_ch6_event sea_4temp4 matches 11612 as @p[tag=SEAPT] at @s run tp @a[tag=SEAPT] 90094 228 -1845
 execute if score SEA_ch6_event sea_4temp4 matches 11652 as @n[tag=SEAexusiai] at @s run playsound minecraft:entity.evoker.ambient hostile @a ~ ~ ~ 1 0.7
 execute if score SEA_ch6_event sea_4temp4 matches 11652 as @n[tag=SEAexusiai] at @s run tellraw @a[distance=..200] [{"text":"权之殊能：","color":"yellow","bold": true},{"text":"\n“……但你，其实早就知晓答案了吧。”","color":"white","bold": false}]
 
