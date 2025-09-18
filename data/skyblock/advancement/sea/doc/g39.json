@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "结局：时针的延续",
+            "color": "gold",
+            "bold": true,
+            "italic": false
+        },
+        "description": {
+            "text": "你从没有犯下任何错。\n正因如此，你无需为自己的过去感到后悔。\n时间，本质就无法倒流。\n你的一切过去，都造就了仅为你量身定做的未来。\n\n这便是，属于你的曲谱。\n而这首乐曲，仍将延续。",
+            "color": "white"
+        },
+        "icon": {
+            "id": "minecraft:end_crystal"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "sea": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:sea/chapter6c"
+}

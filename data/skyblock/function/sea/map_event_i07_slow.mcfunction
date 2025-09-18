@@ -83,6 +83,32 @@ execute if score SEA_ch6_event sea_4temp4 matches 12692 as @p[tag=SEAPT] at @s r
 execute if score SEA_ch6_event sea_4temp4 matches 12782 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"拯救什么世界……真是可笑。","color":"white","bold": false}]
 execute if score SEA_ch6_event sea_4temp4 matches 12902 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"我自始至终，都只想要拯救那些人啊。","color":"white","bold": false}]
 
+execute if score SEA_ch6_event sea_4temp4 matches 13200 as @p[tag=SEAPT] at @s run title @a[distance=0..250] times 2s 3s 2s
+execute if score SEA_ch6_event sea_4temp4 matches 13200 as @p[tag=SEAPT] at @s run title @a[distance=0..250] title [{"text":"『厄珀娅的悲歌』","color":"white","bold": true}]
+execute if score SEA_ch6_event sea_4temp4 matches 13200 as @p[tag=SEAPT] at @s run title @a[distance=0..250] subtitle [{"text":"“亚兹列尔的中庭花园”系列作品 第二幕","color":"white","bold": false}]
+
+execute if score SEA_ch6_event sea_4temp4 matches 13400 as @p[tag=SEAPT] at @s run title @a[distance=0..250] title [{"text":"作者：SugiharaYoki","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 13400 as @p[tag=SEAPT] at @s run title @a[distance=0..250] subtitle [{"text":"地图制作、数据包、内容策划、剧情","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 13600..13800 as @p[tag=SEAPT] at @s run title @a[distance=0..250] title [{"text":"协力制作者","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 13600 as @p[tag=SEAPT] at @s run title @a[distance=0..250] subtitle [{"text":"XuanYu1725_XYU qfys521","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 13800 as @p[tag=SEAPT] at @s run title @a[distance=0..250] subtitle [{"text":"xiyihan sdgedghdg","color":"white","bold": false}]
+
+execute if score SEA_ch6_event sea_4temp4 matches 14000..14200 as @p[tag=SEAPT] at @s run title @a[distance=0..250] title [{"text":"特别感谢","color":"white","bold": true}]
+execute if score SEA_ch6_event sea_4temp4 matches 14000 as @p[tag=SEAPT] at @s run title @a[distance=0..250] subtitle [{"text":"所有参与游戏测试的玩家","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 14200 as @p[tag=SEAPT] at @s run title @a[distance=0..250] subtitle [{"text":"以及你。","color":"white","bold": false}]
+
+execute if score SEA_ch6_event sea_4temp4 matches 14600 as @p[tag=SEAPT] at @s run title @a[distance=0..250] title [{"text":"- Fin -","color":"white","bold": true}]
+
+execute if score SEA_ch6_event sea_4temp4 matches 15048 as @a[tag=SEAPT] at @s run give @s mojang_banner_pattern[custom_data={sea_docg36:true}]
+execute if score SEA_ch6_event sea_4temp4 matches 15050 run clear @a[tag=SEAPT]
+execute if score SEA_ch6_event sea_4temp4 matches 15049 as @a[tag=SEAPT] run tellraw @s [{"text":"达成结局：","color":"gold","bold": true},{"text":"\nTrue End「时针的延续」","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 15049 run tellraw @a[tag=SEAPT,scores={sea_progress=..17}] [{"text":"新模式解锁！","color":"green","bold": true},{"text":"已解锁“佛卡洛之隐”极难游戏模式！\n该游戏模式无法使用命星复活，也无法利用“塞壬的指引”。\n试着挑战自己的极限吧！","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 15049 run tellraw @a[tag=SEAPT,scores={sea_progress=..17}] [{"text":"永久奖励：","color":"green","bold": true},{"text": "已获得可用于多功能工作站的永久升级。\n防具第3起始点的升级会始终点亮最左两格。","color": "white"}]
+execute if score SEA_ch6_event sea_4temp4 matches 15049 run tellraw @a[tag=SEAPT,scores={sea_progress=..17}] [{"text":"永久奖励：","color":"green","bold": true},{"text": "撬棍类武器的基础攻击力 +0.5","color": "white"}]
+execute if score SEA_ch6_event sea_4temp4 matches 15049 run tellraw @a[tag=SEAPT,scores={sea_progress=..17}] [{"text":"永久奖励：","color":"green","bold": true},{"text": "消防斧类武器的基础攻击力 +1.0","color": "white"}]
+execute if score SEA_ch6_event sea_4temp4 matches 15049 run tellraw @a[tag=SEAPT,scores={sea_progress=..17}] [{"text":"永久奖励：","color":"green","bold": true},{"text": "光棱箭的最大持有数量 +2","color": "white"}]
+execute if score SEA_ch6_event sea_4temp4 matches 15049 run scoreboard players set @a[tag=SEAPT,scores={sea_progress=..18}] sea_progress 19
+execute if score SEA_ch6_event sea_4temp4 matches 15050 as @a[tag=SEAPT] run function skyblock:sea/dead
 
 
 

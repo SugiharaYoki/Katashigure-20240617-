@@ -163,6 +163,7 @@ scoreboard players add @s[advancements={skyblock:sea/doc/g35=true}] rng3 1
 scoreboard players add @s[advancements={skyblock:sea/doc/g36=true}] rng5 1
 scoreboard players add @s[advancements={skyblock:sea/doc/g37=true}] rng4 1
 scoreboard players add @s[advancements={skyblock:sea/doc/g38=true}] rng3 1
+scoreboard players add @s[advancements={skyblock:sea/doc/g39=true}] rng5 1
 
  tellraw @s [{"text":"游戏成就 探索 ","color":"aqua","bold": true},{"score":{"name":"@s","objective":"rng1"},"color":"white","bold": false},{"text":"/11","color":"white","bold": false}]
  tellraw @s [{"text":"游戏成就 巧思 ","color":"aqua","bold": true},{"score":{"name":"@s","objective":"rng2"},"color":"white","bold": false},{"text":"/12","color":"white","bold": false}]
