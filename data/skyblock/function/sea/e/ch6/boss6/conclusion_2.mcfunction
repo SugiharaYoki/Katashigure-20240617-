@@ -286,6 +286,7 @@ execute if score SEA_ch6_event sea_4temp4 matches 3100 as @p[tag=SEAPT] at @s ru
 execute if score SEA_ch6_event sea_4temp4 matches 3180 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"权之执理：","color":"red","bold": true},{"text":"\n“那个名叫诺曼的人类篡夺了我的神力……而你——”","color":"white","bold": false}]
 
 
+execute if score SEA_ch6_event sea_4temp4 matches 3101.. as @n[tag=SEAboss6c] at @s run kill @n[tag=SEAboss6c,distance=0.1..200]
 execute if score SEA_ch6_event sea_4temp4 matches 3101.. as @n[tag=SEAboss6c] at @s run function skyblock:sea/e/ch6/boss6/core_final
 
 execute if score SEA_ch6_event sea_4temp4 matches 3001 positioned 90398 229 -1749 run kill @e[tag=SEAboss6b,distance=..2000]
