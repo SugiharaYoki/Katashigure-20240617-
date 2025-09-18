@@ -18,7 +18,7 @@ execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 107 as @n[ta
 
 execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 126 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if entity @a[tag=SEAPT,distance=0..6] run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
 execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 126 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if entity @a[tag=SEAPT,distance=0..6] run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“你听着就像对世界心灰意冷了一样。\n我和你看法不同，就算我很可能会死在这里，也要阻止这荒谬的天灾与人祸继续扩散。”","color":"white","bold": false}]
-execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 126 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if entity @a[tag=SEAPT,distance=0..6] run scoreboard players add SEA_ch5_event_fiona_favor rng1 1
+execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 126 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if entity @a[tag=SEAPT,distance=0..6] run scoreboard players add SEA_ch5_event_fiona_favor rng1 2
 
 execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 146 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if entity @a[tag=SEAPT,distance=0..6] run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
 execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 146 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if entity @a[tag=SEAPT,distance=0..6] run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“石油钻井与水下研究设施相连。\n既然下面已经经历过爆炸，石油管道很可能会破损。就算没有，这座钻井平台要被炸上天也只是时间问题。”","color":"white","bold": false}]
