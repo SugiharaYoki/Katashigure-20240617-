@@ -353,8 +353,8 @@ execute if score SEA_ch6_event rng5 matches 20058 run bossbar set minecraft:9066
 execute if score SEA_ch6_event rng5 matches 20058 run bossbar set minecraft:9066602 style progress
 execute if score SEA_ch6_event rng5 matches 20058 run bossbar set minecraft:9066602 max 800
 
-execute store result bossbar minecraft:9066602 value run data get entity @n[tag=SEAboss6] Health
-execute store result score @n[tag=SEAboss6] health run data get entity @n[tag=SEAboss6] Health
+execute if score SEA_ch6_event sea_4temp4 matches ..2069 store result bossbar minecraft:9066602 value run data get entity @n[tag=SEAboss6] Health
+execute if score SEA_ch6_event sea_4temp4 matches ..2069 store result score @n[tag=SEAboss6] health run data get entity @n[tag=SEAboss6] Health
 
 execute if score SEA_ch6_event rng5 matches 20058.. as @e[tag=SEAboss6_summoner_a,type=marker] at @s run function skyblock:sea/e/ch6/boss6/attack_summon_marker
 
