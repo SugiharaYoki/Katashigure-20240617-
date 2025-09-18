@@ -25,14 +25,14 @@ execute if score @s rng1 matches 8.. rotated ~ 0 run particle soul_fire_flame ^ 
 execute if score @s rng1 matches 9.. rotated ~ 0 run particle soul_fire_flame ^ ^0.2 ^1 0 0 0 0 1
 execute if score @s rng1 matches 10.. rotated ~ 0 run particle soul_fire_flame ^ ^-0.2 ^1 0 0 0 0 1
 
-execute if score @s rng1 matches 11 run playsound minecraft:entity.wither.break_block player @a ~ ~ ~ 10 1.2
-execute if score @s rng1 matches 14 run playsound minecraft:entity.wither.break_block player @a ~ ~ ~ 8 1.2
-execute if score @s rng1 matches 17 run playsound minecraft:entity.wither.break_block player @a ~ ~ ~ 6 1.2
-execute if score @s rng1 matches 20 run playsound minecraft:entity.wither.break_block player @a ~ ~ ~ 5 1.2
-execute if score @s rng1 matches 23 run playsound minecraft:entity.wither.break_block player @a ~ ~ ~ 4 1.2
-execute if score @s rng1 matches 26 run playsound minecraft:entity.wither.break_block player @a ~ ~ ~ 3 1.2
+execute if score @s rng1 matches 11 run playsound minecraft:entity.wither.break_block player @a ~ ~ ~ 5 1.2
+execute if score @s rng1 matches 14 run playsound minecraft:entity.wither.break_block player @a ~ ~ ~ 3 1.2
+execute if score @s rng1 matches 17 run playsound minecraft:entity.wither.break_block player @a ~ ~ ~ 3 1.2
+execute if score @s rng1 matches 20 run playsound minecraft:entity.wither.break_block player @a ~ ~ ~ 3 1.2
+execute if score @s rng1 matches 23 run playsound minecraft:entity.wither.break_block player @a ~ ~ ~ 3 1.2
+execute if score @s rng1 matches 26 run playsound minecraft:entity.wither.break_block player @a ~ ~ ~ 2 1.2
 execute if score @s rng1 matches 29 run playsound minecraft:entity.wither.break_block player @a ~ ~ ~ 2 1.2
-execute if score @s rng1 matches 31 run playsound minecraft:entity.wither.break_block player @a ~ ~ ~ 1 1.2
+execute if score @s rng1 matches 31 run playsound minecraft:entity.wither.break_block player @a ~ ~ ~ 2 1.2
 execute if score @s rng1 matches 11 run playsound entity.generic.explode player @a ~ ~ ~ 10 1.2
 execute if score @s rng1 matches 11 run particle enchant ~ ~ ~ 1 1 1 0.03 30
 
