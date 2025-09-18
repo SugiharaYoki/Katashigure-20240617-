@@ -378,8 +378,9 @@ execute if score SEA_ch6_event sea_4temp4 matches 3100.. store result score @n[t
 execute if score SEA_ch6_event sea_4temp4 matches 5300 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"权之执理：","color":"red","bold": true},{"text":"\n“这是我们之间的决战。”","color":"white","bold": false}]
 execute if score SEA_ch6_event sea_4temp4 matches 5370 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"权之执理：","color":"red","bold": true},{"text":"\n“至于你有没有能力做接下来的事情，我会进行最后的验证。”","color":"white","bold": false}]
 execute if score SEA_ch6_event sea_4temp4 matches 5460 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"伊曼纽尔：","color":"aqua","bold": true},{"text":"\n“无需废话，我会终结忒尔克西的所有悲剧。”","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 5550 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"权之执理：","color":"red","bold": true},{"text":"\n“很好，很好！那就向我证明！向我证实你比所有人都有资格改变世界！！”","color":"white","bold": false}]
 
-execute if score SEA_ch6_event sea_4temp4 matches 5275 run time set 22000
+execute if score SEA_ch6_event sea_4temp4 matches 5275 run time set 22500
 execute if score SEA_ch6_event sea_4temp4 matches 5275..7274 run time add 1
-execute if score SEA_ch6_event sea_4temp4 matches 6000 run weather rain 1000s
-execute if score SEA_ch6_event sea_4temp4 matches 7000 run weather clear 10000s
+execute if score SEA_ch6_event sea_4temp4 matches 5700 run weather rain 1000s
+execute if score SEA_ch6_event sea_4temp4 matches 6700 run weather clear 10000s
