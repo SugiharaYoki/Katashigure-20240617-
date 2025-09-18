@@ -96,8 +96,8 @@ execute if score SEA_ch6_event sea_4temp4 matches 13800 as @p[tag=SEAPT] at @s r
 
 execute if score SEA_ch6_event sea_4temp4 matches 14000 as @p[tag=SEAPT] at @s run title @a[distance=0..250] title [{"text":"特别感谢","color":"white","bold": true}]
 execute if score SEA_ch6_event sea_4temp4 matches 14000 as @p[tag=SEAPT] at @s run title @a[distance=0..250] subtitle [{"text":"所有参与游戏测试的玩家","color":"white","bold": false}]
-execute if score SEA_ch6_event sea_4temp4 matches 14200 as @p[tag=SEAPT] at @s run title @a[distance=0..250] title [{"text":"……","color":"white","bold": true}]
-execute if score SEA_ch6_event sea_4temp4 matches 14200 as @p[tag=SEAPT] at @s run title @a[distance=0..250] subtitle [{"text":"以及你。","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 14200 as @p[tag=SEAPT] at @s run title @a[distance=0..250] title [{"text":"以及你。","color":"white","bold": true}]
+execute if score SEA_ch6_event sea_4temp4 matches 14200 as @p[tag=SEAPT] at @s run title @a[distance=0..250] subtitle [{"text":"","color":"white","bold": false}]
 
 execute if score SEA_ch6_event sea_4temp4 matches 14600 as @p[tag=SEAPT] at @s run title @a[distance=0..250] title [{"text":"- Fin -","color":"white","bold": true}]
 
