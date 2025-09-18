@@ -234,19 +234,19 @@ execute if score SEA_ch6_event sea_4temp4 matches ..2200 if entity @a[tag=SEAPT,
 execute if score SEA_ch6_event sea_4temp4 matches 2202 as @p[tag=SEAPT] at @s run effect give @s slowness 2 11 true
 execute if score SEA_ch6_event sea_4temp4 matches 2202 as @a[scores={SEAPT_member=1}] at @s run playsound minecraft:entity.ender_dragon.flap player @a ~ ~ ~ 1 0.5
 execute if score SEA_ch6_event sea_4temp4 matches 2202 as @a[scores={SEAPT_member=1}] at @s run effect give @a[distance=0..150] darkness 2 0 true
-execute if score SEA_ch6_event sea_4temp4 matches 2202 as @a[scores={SEAPT_member=1}] at @s run tellraw @a[distance=0..150] [{"text":"远方的声音：","color":"red","bold": true},{"text":"\n“天使无法审判天使。但如果是你的话，就一定能改变更多。”","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 2202 as @a[scores={SEAPT_member=1}] at @s run tellraw @a[distance=0..150] [{"text":"远方的声音：","color":"yellow","bold": true},{"text":"\n“天使无法审判天使。但如果是你的话，就一定能改变更多。”","color":"white","bold": false}]
 execute if score SEA_ch6_event sea_4temp4 matches 2300..2400 run scoreboard players set SEA_ch6_event sea_4temp4 2300
 execute if score SEA_ch6_event sea_4temp4 matches ..2400 if entity @a[tag=SEAPT,x=90381,y=228,z=-1812,dx=30,dy=20,dz=30] run scoreboard players set SEA_ch6_event sea_4temp4 2401
 execute if score SEA_ch6_event sea_4temp4 matches 2402 as @p[tag=SEAPT] at @s run effect give @s slowness 2 11 true
 execute if score SEA_ch6_event sea_4temp4 matches 2402 as @a[scores={SEAPT_member=1}] at @s run playsound minecraft:entity.ender_dragon.flap player @a ~ ~ ~ 1 0.5
 execute if score SEA_ch6_event sea_4temp4 matches 2402 as @a[scores={SEAPT_member=1}] at @s run effect give @a[distance=0..150] darkness 2 0 true
-execute if score SEA_ch6_event sea_4temp4 matches 2402 as @a[scores={SEAPT_member=1}] at @s run tellraw @a[distance=0..150] [{"text":"远方的声音：","color":"red","bold": true},{"text":"\n“伊曼纽尔，我们来进行一场盛大的合作吧。由你，来改变结局。”","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 2402 as @a[scores={SEAPT_member=1}] at @s run tellraw @a[distance=0..150] [{"text":"远方的声音：","color":"yellow","bold": true},{"text":"\n“伊曼纽尔，我们来进行一场盛大的合作吧。由你，来改变结局。”","color":"white","bold": false}]
 execute if score SEA_ch6_event sea_4temp4 matches 2500..2600 run scoreboard players set SEA_ch6_event sea_4temp4 2500
 execute if score SEA_ch6_event sea_4temp4 matches ..2600 if entity @a[tag=SEAPT,x=90381,y=228,z=-1800,dx=30,dy=20,dz=30] run scoreboard players set SEA_ch6_event sea_4temp4 2601
 execute if score SEA_ch6_event sea_4temp4 matches 2602 as @p[tag=SEAPT] at @s run effect give @s slowness 2 11 true
 execute if score SEA_ch6_event sea_4temp4 matches 2602 as @a[scores={SEAPT_member=1}] at @s run playsound minecraft:entity.ender_dragon.flap player @a ~ ~ ~ 1 0.5
 execute if score SEA_ch6_event sea_4temp4 matches 2602 as @a[scores={SEAPT_member=1}] at @s run effect give @a[distance=0..150] darkness 2 0 true
-execute if score SEA_ch6_event sea_4temp4 matches 2602 as @a[scores={SEAPT_member=1}] at @s run tellraw @a[distance=0..150] [{"text":"远方的声音：","color":"red","bold": true},{"text":"\n“尔后，你终将走上命中注定的道路。但那又何妨？世间万物皆为你而逆转。”","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 2602 as @a[scores={SEAPT_member=1}] at @s run tellraw @a[distance=0..150] [{"text":"远方的声音：","color":"yellow","bold": true},{"text":"\n“尔后，你终将走上命中注定的道路。但那又何妨？世间万物皆为你而逆转。”","color":"white","bold": false}]
 
 
 execute if score SEA_ch6_event sea_4temp4 matches 2900..2999 run scoreboard players set SEA_ch6_event sea_4temp4 2900
@@ -396,5 +396,14 @@ execute if score SEA_ch6_event sea_4temp4 matches 6890 as @p[tag=SEAPT] at @s ru
 execute if score SEA_ch6_event sea_4temp4 matches 6980 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"权之执理：","color":"red","bold": true},{"text":"\n“我相信你自己也不知道自己亲自背负上了怎样的命运。”","color":"white","bold": false}]
 execute if score SEA_ch6_event sea_4temp4 matches 7070 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"权之执理：","color":"red","bold": true},{"text":"\n“若你做好了准备……那就，打败我。”","color":"white","bold": false}]
 
+execute if entity @n[tag=SEAboss6c,scores={health=..99}] if score SEA_ch6_event sea_4temp4 matches 7900..7999 run scoreboard players set SEA_ch6_event sea_4temp4 8000
+
+execute if score SEA_ch6_event sea_4temp4 matches 8001 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"远方的声音：","color":"yellow","bold": true},{"text":"\n“你是不幸之人，却也是受祝福之人。”","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 8100 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"远方的声音：","color":"yellow","bold": true},{"text":"\n“象征迷宫与正确道路的天使已为你指明前路。”","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 8180 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"远方的声音：","color":"yellow","bold": true},{"text":"\n“深海的魔神将你的未来提前示意予你。”","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 8260 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"远方的声音：","color":"yellow","bold": true},{"text":"\n“烈焰与智慧的天使赐予了你远超凡人的神力。”","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 8340 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"远方的声音：","color":"yellow","bold": true},{"text":"\n“指引灵魂的天使令你能够积攒足够的魔力。”","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 8420 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"远方的声音：","color":"yellow","bold": true},{"text":"\n“最重要的是……你获得了对你生命最重要之人的祝福。”","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 8520 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"远方的声音：","color":"yellow","bold": true},{"text":"\n“一切……都会尘埃落定。”","color":"white","bold": false}]
 
 execute if score SEA_ch6_event sea_4temp4 matches 3100 run forceload add 90151 -1857
