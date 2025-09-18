@@ -2,7 +2,8 @@
 scoreboard players add @s rng1 1
 
 scoreboard players add SEAmusic rng1 1
-execute if score SEAmusic rng1 matches 2110 as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s run playsound minecraft:salvation2 music @s ~ ~ ~ 1 1.0
+execute if score SEAmusic rng1 matches 2110 as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s if entity @n[tag=SEAboss6c,scores={health=200..}] run playsound minecraft:salvation2 music @s ~ ~ ~ 1 1.0
+execute if score SEAmusic rng1 matches 2110 as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s if entity @n[tag=SEAboss6c,scores={health=..199}] run playsound minecraft:salvation3 music @s ~ ~ ~ 1 1.0
 execute if score SEAmusic rng1 matches 3936.. as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s run stopsound @s music minecraft:salvation2
 execute if score SEAmusic rng1 matches 3936.. run scoreboard players set SEAmusic rng1 2109
 
@@ -26,7 +27,8 @@ execute if score @s rng4 matches ..0 run scoreboard players set @s rng2 0
 execute if entity @s[scores={rng4=1..,rng2=0}] run scoreboard players set @s rng4 0
 
 execute if score @s rng1 matches 10.. if entity @s[scores={rng4=..0,health=500..780}] store result score @s rng2 run random value 1..9
-execute if score @s rng1 matches 10.. if entity @s[scores={rng4=..0,health=..499}] store result score @s rng2 run random value 1..13
+execute if score @s rng1 matches 10.. if entity @s[scores={rng4=..0,health=50..499}] store result score @s rng2 run random value 1..13
+execute if score @s rng1 matches 10.. if entity @s[scores={rng4=..0,health=0..49}] store result score @s rng2 run random value 10..13
 
 #【技能列表】
 #大跳
@@ -41,9 +43,12 @@ execute as @s[tag=seaboss6_attack_line,scores={rng2=6..7}] run function skyblock
 #召唤怪物
 execute if score @s[scores={rng2=8..9}] rng1 matches 100.. if entity @s[scores={rng4=..1}] run tag @s add seaboss6_attack_summon
 execute as @s[tag=seaboss6_attack_summon,scores={rng2=8..9}] run function skyblock:sea/e/ch6/boss6/attack_summon
-
+#划线攻击
 execute if score @s[scores={rng2=10..13}] rng1 matches 100.. if entity @s[scores={rng4=..1}] run tag @s add seaboss6_attack_ray
 execute as @s[tag=seaboss6_attack_ray,scores={rng2=10..13}] run function skyblock:sea/e/ch6/boss6/attack_ray
+#雷电
+execute at @s as @e[type=marker,tag=SEA_boss5_lightning_anchor,distance=0..50] at @s run function skyblock:sea/e/ch5/boss5/lightning_anchor
+
 
 execute at @s as @e[type=marker,tag=sea_boss6_ray_marker,distance=0..450] at @s run function skyblock:sea/e/ch6/boss6/attack_ray_marker
 

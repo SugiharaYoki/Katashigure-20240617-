@@ -107,6 +107,29 @@ execute if entity @s[scores={rng5=4,rng10=21}] run summon marker 90227 242 -2192
 
 scoreboard players set @s rng10 0
 
+execute if score @s[scores={health=..199}] rng4 matches 110 store result score @s rng10 run random value 1..8
+execute if score @s[scores={health=..199}] rng4 matches 130 store result score @s rng10 run random value 1..8
+execute if score @s rng10 matches 1 positioned ^5 ^ ^5 positioned over world_surface run summon marker ~ 242.0 ~ {Tags:["SEA_boss5_lightning_anchor"]}
+execute if score @s rng10 matches 2 positioned ^-5 ^ ^5 positioned over world_surface run summon marker ~ 242.0 ~ {Tags:["SEA_boss5_lightning_anchor"]}
+execute if score @s rng10 matches 3 positioned ^-5 ^ ^-5 positioned over world_surface run summon marker ~ 242.0 ~ {Tags:["SEA_boss5_lightning_anchor"]}
+execute if score @s rng10 matches 4 positioned ^5 ^ ^-5 positioned over world_surface run summon marker ~ 242.0 ~ {Tags:["SEA_boss5_lightning_anchor"]}
+execute if score @s rng10 matches 5 positioned ^8 ^ ^ positioned over world_surface run summon marker ~ 242.0 ~ {Tags:["SEA_boss5_lightning_anchor"]}
+execute if score @s rng10 matches 6 positioned ^ ^ ^8 positioned over world_surface run summon marker ~ 242.0 ~ {Tags:["SEA_boss5_lightning_anchor"]}
+execute if score @s rng10 matches 7 positioned ^-8 ^ ^ positioned over world_surface run summon marker ~ 242.0 ~ {Tags:["SEA_boss5_lightning_anchor"]}
+execute if score @s rng10 matches 8 positioned ^ ^ ^-8 positioned over world_surface run summon marker ~ 242.0 ~ {Tags:["SEA_boss5_lightning_anchor"]}
+execute if score @s[scores={health=..199}] rng4 matches 120 store result score @s rng10 run random value 9..16
+execute if score @s[scores={health=..199}] rng4 matches 140 store result score @s rng10 run random value 9..16
+execute if score @s rng10 matches 9 positioned ^10 ^ ^10 positioned over world_surface run summon marker ~ 242.0 ~ {Tags:["SEA_boss5_lightning_anchor"]}
+execute if score @s rng10 matches 10 positioned ^-10 ^ ^10 positioned over world_surface run summon marker ~ 242.0 ~ {Tags:["SEA_boss5_lightning_anchor"]}
+execute if score @s rng10 matches 11 positioned ^-10 ^ ^-10 positioned over world_surface run summon marker ~ 242.0 ~ {Tags:["SEA_boss5_lightning_anchor"]}
+execute if score @s rng10 matches 12 positioned ^10 ^ ^-10 positioned over world_surface run summon marker ~ 242.0 ~ {Tags:["SEA_boss5_lightning_anchor"]}
+execute if score @s rng10 matches 13 positioned ^12 ^ ^ positioned over world_surface run summon marker ~ 242.0 ~ {Tags:["SEA_boss5_lightning_anchor"]}
+execute if score @s rng10 matches 14 positioned ^ ^ ^12 positioned over world_surface run summon marker ~ 242.0 ~ {Tags:["SEA_boss5_lightning_anchor"]}
+execute if score @s rng10 matches 15 positioned ^-12 ^ ^ positioned over world_surface run summon marker ~ 242.0 ~ {Tags:["SEA_boss5_lightning_anchor"]}
+execute if score @s rng10 matches 16 positioned ^ ^ ^-12 positioned over world_surface run summon marker ~ 242.0 ~ {Tags:["SEA_boss5_lightning_anchor"]}
+
+scoreboard players set @s rng10 0
+
 execute if score @s[scores={health=150..}] rng4 matches 100.. run scoreboard players set @s rng4 -2
 execute if score @s[scores={health=..149}] rng4 matches 150.. run scoreboard players set @s rng4 -2
 
