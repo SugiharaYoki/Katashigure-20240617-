@@ -39,7 +39,7 @@ execute as @s[tag=seaboss6_attack_line,scores={rng2=6..7}] run function skyblock
 #召唤怪物
 execute if score @s[scores={rng2=8..9}] rng1 matches 100.. if entity @s[scores={rng4=..1}] run tag @s add seaboss6_attack_summon
 execute as @s[tag=seaboss6_attack_summon,scores={rng2=8..9}] run function skyblock:sea/e/ch6/boss6/attack_summon
-
+execute as @e[tag=SEAmob,distance=..30] at @s if block ~ ~ ~ barrier run tp @s @n[tag=SEAboss6c]
 
 execute as @a[tag=SEAPT] at @s run scoreboard players add @s sea_ch6_ultimate_attack 1
 execute as @e[tag=sea_ch6_ultimate_attack_marker,type=marker,distance=0..200] at @s run function skyblock:sea/p/weapon/ch6_ultimate_attack_marker
