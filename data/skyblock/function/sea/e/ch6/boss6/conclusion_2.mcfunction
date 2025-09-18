@@ -383,8 +383,18 @@ execute if score SEA_ch6_event sea_4temp4 matches 5460 as @p[tag=SEAPT] at @s ru
 execute if score SEA_ch6_event sea_4temp4 matches 5550 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"权之执理：","color":"red","bold": true},{"text":"\n“很好，很好！那就向我证明！向我证实你比所有人都有资格改变世界！！”","color":"white","bold": false}]
 
 execute if score SEA_ch6_event sea_4temp4 matches 5275 run time set 22500
-execute if score SEA_ch6_event sea_4temp4 matches 5275..7274 run time add 1
+execute if score SEA_ch6_event sea_4temp4 matches 5275..6274 run time add 1
+execute if entity @n[tag=SEAboss6c,scores={health=400..}] if score SEA_ch6_event sea_4temp4 matches 6275..6280 run scoreboard players set SEA_ch6_event sea_4temp4 6275
+execute if score SEA_ch6_event sea_4temp4 matches 6285..7284 run time add 1
 execute if score SEA_ch6_event sea_4temp4 matches 5700 run weather rain 1000s
 execute if score SEA_ch6_event sea_4temp4 matches 6700 run weather clear 10000s
+
+execute if entity @n[tag=SEAboss6c,scores={health=200..}] if score SEA_ch6_event sea_4temp4 matches 6790..6799 run scoreboard players set SEA_ch6_event sea_4temp4 6790
+
+execute if score SEA_ch6_event sea_4temp4 matches 6800 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"权之执理：","color":"red","bold": true},{"text":"\n“这里所发生的全部，都将迎来终结……”","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 6890 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"权之执理：","color":"red","bold": true},{"text":"\n“我承认了你的资格。”","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 6980 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"权之执理：","color":"red","bold": true},{"text":"\n“我相信你自己也不知道自己亲自背负上了怎样的命运。”","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 7070 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"权之执理：","color":"red","bold": true},{"text":"\n“若你做好了准备……那就，打败我。”","color":"white","bold": false}]
+
 
 execute if score SEA_ch6_event sea_4temp4 matches 3100 run forceload add 90151 -1857
