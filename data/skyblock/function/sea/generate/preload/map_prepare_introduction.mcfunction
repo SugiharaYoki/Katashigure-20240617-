@@ -14,6 +14,16 @@ forceload add 90012 -1858 90007 -1863
 forceload add 90028 -1846
 forceload add 90042 -1829 90068 -1798
 
+forceload add 90106 -1885 90133 -1860
+forceload add 90092 -405 90116 -375
+forceload add 90050 -180 90100 -130
+forceload add 90382 -1899 90401 -1835
+forceload add 90093 -188 90168 -161
+forceload add 90430 -1878 90475 -1836
+forceload add 90093 -1834
+forceload add 90205 -2193 90237 -2171
+forceload add 90205 -2171 90227 -2193
+forceload add 90395 -1749 90401 -1749
 
 scoreboard players set @a SEAPT_member 0
 scoreboard players set SEAmusic rng1 0
@@ -712,7 +722,6 @@ setblock 90136 100 136 lever[facing=east]
 
 
 #开头之船
-forceload add 90050 -180 90100 -130
 execute positioned 90056 95 -177 positioned ~ ~-120 ~ run clone ~ ~ ~ ~8 ~18 ~31 ~ ~120 ~
 
 setblock 90061 103 -168 chest[facing=west]
@@ -755,14 +764,12 @@ setblock 90144 140 38 redstone_lamp[lit=true]
 
 fill 90125 102 101 90127 102 99 iron_block
 
-forceload add 90092 -405 90116 -375
 clone 90092 -50 -405 90116 -20 -375 90092 178 131
 clone 90092 -20 -405 90116 10 -375 90092 208 131
 
 
 #更多地形变化
 
-forceload add 90093 -188 90168 -161
 clone 90093 -25 -188 90108 -2 -161 90103 152 88
 fill 90121 152 114 90114 152 114 minecraft:waxed_cut_copper_slab[type=bottom]
 fill 90142 130 91 90140 130 91 minecraft:polished_andesite_slab[type=bottom]
@@ -1235,7 +1242,6 @@ forceload remove 90012 -1858 90007 -1863
 forceload remove 90028 -1846
 
 #最后的乐谱
-forceload add 90106 -1885 90133 -1860
 fill 90113 105 -1876 90113 102 -1874 air
 fill 90113 105 -1876 90113 102 -1874 lever[facing=west]
 setblock 90113 102 -1874 air
@@ -1253,7 +1259,6 @@ setblock 90114 105 -1866 chest[facing=west]
 item replace block 90114 105 -1866 container.14 with vex_armor_trim_smithing_template 2
 
 #大船
-forceload add 90382 -1899 90401 -1835
 setblock 90385 245 -1902 air
 setblock 90385 245 -1902 minecraft:jukebox[has_record=true]{RecordItem:{id:"minecraft:music_disc_creator"}}
 setblock 90389 245 -1899 minecraft:redstone_block
@@ -1262,7 +1267,6 @@ setblock 90382 247 -1899 minecraft:flower_pot
 setblock 90383 246 -1902 minecraft:potted_allium
 forceload remove 90389 -1899 90401 -1835
 #警察局
-forceload add 90430 -1878 90475 -1836
 fill 90453 207 -1844 90452 207 -1844 minecraft:redstone_block
 fill 90453 207 -1844 90452 207 -1844 minecraft:air
 setblock 90431 207 -1877 minecraft:redstone_block
@@ -1270,14 +1274,10 @@ setblock 90431 207 -1877 minecraft:air
 setblock 90431 212 -1840 minecraft:quartz_block
 forceload remove 90430 -1878 90475 -1836
 #lantern
-forceload add 90093 -1834
 setblock 90093 30 -1834 air
 forceload remove 90093 -1834
 forceload remove 90106 -1885 90133 -1860
-forceload add 90205 -2193 90237 -2171
-forceload add 90205 -2171 90227 -2193
 fill 90205 241 -2171 90227 241 -2193 minecraft:air
-forceload add 90395 -1749 90401 -1749
 execute positioned 90398 230 -1749 run kill @e[tag=SEAboss6c,distance=..200]
 setblock 90401 234 -1749 minecraft:prismarine_bricks
 setblock 90395 234 -1749 minecraft:prismarine_bricks
