@@ -308,7 +308,7 @@ execute if score SEA_ch6_event sea_4temp4 matches 3600 as @p[tag=SEAPT] at @s ru
 execute if score SEA_ch6_event sea_4temp4 matches 3690 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"伊曼纽尔：","color":"aqua","bold": true},{"text":"\n“……你说什么？”","color":"white","bold": false}]
 execute if score SEA_ch6_event sea_4temp4 matches 3880 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"权之执理：","color":"red","bold": true},{"text":"\n“简直太过荒谬……不可置信！！”","color":"white","bold": false}]
 execute if score SEA_ch6_event sea_4temp4 matches 3970 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"权之执理：","color":"red","bold": true},{"text":"\n“雷米尔大人凭什么选择你？！”","color":"white","bold": false}]
-execute if score SEA_ch6_event sea_4temp4 matches 4060 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"权之执理：","color":"red","bold": true},{"text":"\n“这也就算了，拉斐尔大人和乌列尔大人又凭什么选择你？！！”","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 4060 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"权之执理：","color":"red","bold": true},{"text":"\n“抛开这件事不谈，拉斐尔大人和乌列尔大人又凭什么选择你？！！”","color":"white","bold": false}]
 execute if score SEA_ch6_event sea_4temp4 matches 4260 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"权之执理：","color":"red","bold": true},{"text":"\n“区区一介凡人……只是个随处可见的人类，维修工！连家人都没有的孤独的人类！！”","color":"white","bold": false}]
 execute if score SEA_ch6_event sea_4temp4 matches 4360 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"权之执理：","color":"red","bold": true},{"text":"\n“场地方面也是，雷米尔大人怎么可能会在这种地方选择后继之人？！”","color":"white","bold": false}]
 
