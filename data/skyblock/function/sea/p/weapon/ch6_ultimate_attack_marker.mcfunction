@@ -30,8 +30,11 @@ execute if score @s rng1 matches 11 run playsound entity.generic.explode player 
 execute if score @s rng1 matches 11 run particle enchant ~ ~ ~ 1 1 1 0.03 30
 
 execute if score @s rng1 matches 11.. rotated ~ 0 run tp @s ^ ^ ^1
-execute if score @s rng1 matches 18.. rotated ~ 0 run tp @s ^ ^ ^0.3
-execute if score @s rng1 matches 23.. rotated ~ 0 run tp @s ^ ^ ^0.3
+execute if score @s rng1 matches 14.. rotated ~ 0 run tp @s ^ ^ ^0.4
+execute if score @s rng1 matches 17.. rotated ~ 0 run tp @s ^ ^ ^0.4
+execute if score @s rng1 matches 20.. rotated ~ 0 run tp @s ^ ^ ^0.5
+execute if score @s rng1 matches 23.. rotated ~ 0 run tp @s ^ ^ ^0.6
+execute if score @s rng1 matches 26.. rotated ~ 0 run tp @s ^ ^ ^0.7
 execute if score @s rng1 matches 11.. as @e[tag=SEAmob,distance=..2.9] at @s run damage @s 12 generic by @p[tag=SEAPT]
 
 execute if score @s rng1 matches 32.. run kill @s
