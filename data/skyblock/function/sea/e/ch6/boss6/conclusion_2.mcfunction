@@ -66,7 +66,7 @@ execute if score SEA_ch6_event sea_4temp4 matches 1542..2069 store result bossba
 
 
 execute if score SEA_ch6_event sea_4temp4 matches 3100 as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s run playsound minecraft:salvation1 music @s ~ ~ ~ 1 1.0
-execute if score SEA_ch6_event sea_4temp4 matches 5290 as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s run playsound minecraft:salvation2 music @s ~ ~ ~ 1 1.0
+execute if score SEA_ch6_event sea_4temp4 matches 5310 as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s run playsound minecraft:salvation2 music @s ~ ~ ~ 1 1.0
 
 execute if score SEA_ch6_event sea_4temp4 matches 1552 as @p[tag=SEAPT] at @s run title @a[distance=0..250] times 1s 3s 1s
 execute if score SEA_ch6_event sea_4temp4 matches 1552 as @p[tag=SEAPT] at @s run title @a[distance=0..250] title [{"text":"伊曼纽尔、艾德雯娜，","color":"white","bold": false}]
@@ -310,7 +310,7 @@ execute if score SEA_ch6_event sea_4temp4 matches 3880 as @p[tag=SEAPT] at @s ru
 execute if score SEA_ch6_event sea_4temp4 matches 3970 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"权之执理：","color":"red","bold": true},{"text":"\n“雷米尔大人凭什么选择你？！”","color":"white","bold": false}]
 execute if score SEA_ch6_event sea_4temp4 matches 4060 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"权之执理：","color":"red","bold": true},{"text":"\n“这也就算了，拉斐尔大人和乌列尔大人又凭什么选择你？！！”","color":"white","bold": false}]
 execute if score SEA_ch6_event sea_4temp4 matches 4260 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"权之执理：","color":"red","bold": true},{"text":"\n“区区一介凡人……只是个随处可见的人类，维修工！连家人都没有的孤独的人类！！”","color":"white","bold": false}]
-execute if score SEA_ch6_event sea_4temp4 matches 4360 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"权之执理：","color":"red","bold": true},{"text":"\n“这到底怎么可能，雷米尔大人怎么可能会在这种地方选择后继之人？！”","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 4360 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"权之执理：","color":"red","bold": true},{"text":"\n“场地方面也是，雷米尔大人怎么可能会在这种地方选择后继之人？！”","color":"white","bold": false}]
 
 execute if score SEA_ch6_event sea_4temp4 matches 4361 as @p[tag=SEAPT] at @s run scoreboard players add SEA_ch6_event sea_4temp4 200
 
