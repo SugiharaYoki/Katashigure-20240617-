@@ -1,12 +1,12 @@
 scoreboard players add @e[tag=sea_raphael_sword,type=armor_stand] sea_4temp1 1
 
 execute as @e[tag=sea_raphael_sword,type=armor_stand,scores={sea_4temp1=2}] at @s run tp ~ ~1.5 ~
-execute as @e[tag=sea_raphael_sword_1,type=armor_stand,scores={sea_4temp1=2}] at @s rotated ~-90 ~ run tp ~ ~ ~
-execute as @e[tag=sea_raphael_sword_1,type=armor_stand,scores={sea_4temp1=3..10}] at @s rotated ~20 ~ run tp ~ ~ ~
-execute as @e[tag=sea_raphael_sword_2,type=armor_stand,scores={sea_4temp1=2}] at @s rotated ~90 ~ run tp ~ ~ ~
-execute as @e[tag=sea_raphael_sword_2,type=armor_stand,scores={sea_4temp1=3..10}] at @s rotated ~-20 ~ run tp ~ ~ ~
-execute as @e[tag=sea_raphael_sword_3,type=armor_stand,scores={sea_4temp1=2}] at @s rotated ~ ~-90 run tp ~ ~ ~
-execute as @e[tag=sea_raphael_sword_3,type=armor_stand,scores={sea_4temp1=3..6}] at @s rotated ~ ~20 run tp ~ ~ ~
+execute as @e[tag=sea_raphael_sword_1,type=armor_stand,scores={sea_4temp1=2}] at @s rotated as @s run rotate @s ~-90 ~
+execute as @e[tag=sea_raphael_sword_1,type=armor_stand,scores={sea_4temp1=3..10}] at @s rotated as @s run rotate @s ~20 ~
+execute as @e[tag=sea_raphael_sword_2,type=armor_stand,scores={sea_4temp1=2}] at @s rotated as @s run rotate @s ~90 ~
+execute as @e[tag=sea_raphael_sword_2,type=armor_stand,scores={sea_4temp1=3..10}] at @s rotated as @s run rotate @s ~-20 ~
+execute as @e[tag=sea_raphael_sword_3,type=armor_stand,scores={sea_4temp1=2}] at @s rotated as @s run rotate @s ~ ~-90
+execute as @e[tag=sea_raphael_sword_3,type=armor_stand,scores={sea_4temp1=3..6}] at @s rotated as @s run rotate @s ~ ~20
 
 execute as @e[tag=sea_raphael_sword_1,type=armor_stand,scores={sea_4temp1=10}] at @s run kill @s
 execute as @e[tag=sea_raphael_sword_2,type=armor_stand,scores={sea_4temp1=10}] at @s run kill @s
