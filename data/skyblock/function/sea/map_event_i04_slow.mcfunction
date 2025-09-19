@@ -432,7 +432,8 @@ execute as @n[tag=SEAch4_spawn_timer_boss4,tag=!SEAch4_conclusion] at @s run fun
 execute as @n[tag=SEAch4_spawn_timer_boss4,tag=SEAch4_conclusion] at @s run function skyblock:sea/e/ch4/ev027_ch4_conclusion1
 
 
-
+execute if score SEA_ch4_event_railbox rng1 matches ..0 positioned 90178 39 184 as @a[tag=SEAPT,distance=..8] at @s if items entity @s player.cursor detector_rail run function skyblock:sea/e/ch4/railbox_1
+execute if score SEA_ch4_event_railbox rng1 matches 1.. positioned 90178 39 184 run function skyblock:sea/e/ch4/railbox_1_success
 
 
 particle minecraft:snowflake 90214.00 49.20 72.13 1 0 1.2 0 2

@@ -14,6 +14,7 @@ scoreboard players set SEAmusic rng1 0
 kill @e[tag=SEAbossch3_core]
 kill @e[tag=SEAbossch3_light]
 
+scoreboard players set SEA_ch4_event_railbox rng1 0
 
 setblock 90169 20 80 air
 setblock 90169 20 80 lever[facing=north,face=floor]
@@ -524,6 +525,11 @@ item replace block 90212 46 71 container.14 with chicken 1
 #烟囱隐藏陶罐
 setblock 90188 52 134 minecraft:air
 setblock 90188 52 134 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 2, id:"minecraft:flint"}}
+
+
+#联络箱子
+setblock 90178 39 184 light_gray_shulker_box[facing=north]
+
 
 
 

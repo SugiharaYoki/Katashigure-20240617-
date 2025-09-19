@@ -42,3 +42,5 @@ clear @s[gamemode=!creative] iron_door
 clear @s[gamemode=!creative] shroomlight
 clear @s[gamemode=!creative] acacia_door
 clear @s[gamemode=!creative] spore_blossom
+clear @s[gamemode=!creative] rail
+clear @s[gamemode=!creative] detector_rail

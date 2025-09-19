@@ -110,6 +110,9 @@ scoreboard players set sc sea_count_dead 0
 scoreboard players set sea_chapter_introduction sea_4temp1 0
 scoreboard players set sea_chapter_introduction sea_4temp2 0
 scoreboard players set sea_chapter_introduction sea_4temp3 0
+scoreboard objectives add sea_railbox_1 dummy
+scoreboard objectives add sea_railbox_2 dummy
+scoreboard objectives add sea_railbox_3 dummy
 
 scoreboard objectives add sea_ch6_ultimate_attack dummy
 

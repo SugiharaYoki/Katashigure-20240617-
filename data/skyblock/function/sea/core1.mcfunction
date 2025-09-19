@@ -290,7 +290,10 @@ item replace block 90145 146 115 container.14 with flow_banner_pattern[custom_da
 lore=['{"text":"我原先是隐藏了真实身份，前来调查史丹尼舵长受贿的案件。","color":"white","italic":false}','{"text":"但我并没料到自己恰巧碰上他们从地底峡谷中开采出一块神秘的紫色水晶。","color":"white","italic":false}','{"text":"说到底，中央情报局也从未收到过有关忒尔克西下方存在巨大地层空洞的信息。","color":"white","italic":false}','{"text":"我有理由怀疑平台上有人一开始就是冲着地下的东西来的。这人绝不会是史丹尼舵长。","color":"white","italic":false}','{"text":"……那么，是诺曼博士？他要那块水晶做什么用，卖钱？","color":"white","italic":false}']]
 
 
-
+execute positioned 90178 39 184 if entity @a[tag=SEAPT,distance=..8] run item replace block 90178 39 184 container.10 with detector_rail[custom_name='{"text":"1号操作按钮","italic":true,"color":"yellow","italic":false}',custom_data={"sea_railbox_1_1":true}]
+execute positioned 90178 39 184 if entity @a[tag=SEAPT,distance=..8] run item replace block 90178 39 184 container.12 with detector_rail[custom_name='{"text":"2号操作按钮","italic":true,"color":"yellow","italic":false}',custom_data={"sea_railbox_1_2":true}]
+execute positioned 90178 39 184 if entity @a[tag=SEAPT,distance=..8] run item replace block 90178 39 184 container.14 with detector_rail[custom_name='{"text":"3号操作按钮","italic":true,"color":"yellow","italic":false}',custom_data={"sea_railbox_1_3":true}]
+execute positioned 90178 39 184 if entity @a[tag=SEAPT,distance=..8] run item replace block 90178 39 184 container.16 with detector_rail[custom_name='{"text":"4号操作按钮","italic":true,"color":"yellow","italic":false}',custom_data={"sea_railbox_1_4":true}]
 
 
 

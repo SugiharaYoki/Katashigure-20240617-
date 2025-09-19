@@ -41,6 +41,10 @@
     "minecraft:chain",
     "minecraft:stick",
     "minecraft:iron_door",
-    "minecraft:shroomlight"
+    "minecraft:shroomlight",
+    "minecraft:acacia_door",
+    "minecraft:spore_blossom",
+    "minecraft:rail",
+    "minecraft:detector_rail"
   ]
 }

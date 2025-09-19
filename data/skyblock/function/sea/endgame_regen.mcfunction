@@ -134,6 +134,10 @@ scoreboard players set sea_ch2_dwight_conversation rng4 0
 scoreboard players set sea_ch2_dwight_conversation rng5 0
 scoreboard players set sea_ch2_dwight_conversation rng6 0
 
+scoreboard objectives remove sea_railbox_1
+scoreboard objectives remove sea_railbox_2
+scoreboard objectives remove sea_railbox_3
+
 setblock 90074 103 137 air
 
 tag @s remove sea_ch1_speedrun_butif
