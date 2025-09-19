@@ -152,7 +152,7 @@ execute if score SEA_ch4_event_railbox rng9 matches 70 run playsound entity.vill
 execute if score SEA_ch4_event_railbox rng9 matches 70 run tellraw @a[distance=0..250] [{"selector":"@p[tag=SEAPT]","color":"white"},{"text":"：\n“我不是那个意思！我是说我早就认识你，我听说过你！！”","color":"white"}]
 execute if score SEA_ch4_event_railbox rng9 matches 90 run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
 execute if score SEA_ch4_event_railbox rng9 matches 90 run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“那我更得在这里将你杀了，接招！”","color":"white","bold": false}]
-execute if score SEA_ch4_event_railbox rng9 matches 110 run scoreboard players add @s rng2 4
+execute if score SEA_ch4_event_railbox rng9 matches 110 run scoreboard players set @n[tag=SEAboss4] rng2 4
 #execute if score SEA_ch4_event_railbox rng9 matches 130 run tellraw @a[distance=0..250] [{"selector":"@p[tag=SEAPT]","color":"white"},{"text":"：\n“这是武器不武器的问题吗？！”","color":"white"}]
 execute if score SEA_ch4_event_railbox rng9 matches 160 run tellraw @a[distance=0..250] [{"selector":"@p[tag=SEAPT]","color":"white"},{"text":"：\n“先别打，我是从越涵那里听说的你！！”","color":"white"}]
 execute if score SEA_ch4_event_railbox rng9 matches 180 run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
@@ -170,7 +170,7 @@ execute if score SEA_ch4_event_railbox rng9 matches 330 run tellraw @a[distance=
 execute if score SEA_ch4_event_railbox rng9 matches 350 run tellraw @a[distance=0..250] [{"selector":"@p[tag=SEAPT]","color":"white"},{"text":"：\n“货真价实，贝塔机械小组组长还是副组长啊，你先听我解释一下好不好？！”","color":"white"}]
 execute if score SEA_ch4_event_railbox rng9 matches 370 run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
 execute if score SEA_ch4_event_railbox rng9 matches 370 run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“这地方随时会炸，我听你解释？去地狱跟我解释吧！”","color":"white","bold": false}]
-execute if score SEA_ch4_event_railbox rng9 matches 390 run scoreboard players add @s rng2 8
+execute if score SEA_ch4_event_railbox rng9 matches 390 run scoreboard players set @s[tag=SEAboss4] rng2 8
 
 
 
