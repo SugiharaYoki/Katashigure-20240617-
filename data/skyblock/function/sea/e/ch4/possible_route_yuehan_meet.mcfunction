@@ -61,5 +61,25 @@ execute if score @s sea_4temp1 matches 1210 run playsound entity.villager.ambien
 execute if score @s sea_4temp1 matches 1250 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“说是这么说啊……现在还挺想和她汇合的。”","color":"white","bold": false}]
 execute if score @s sea_4temp1 matches 1250 run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
 
+execute if score @s sea_4temp1 matches 1550 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“好想回家啊，这遇到的都是些什么事。”","color":"white","bold": false}]
+execute if score @s sea_4temp1 matches 1550 run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
+execute if score @s sea_4temp1 matches 1570 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“我父母那么久没联系到我，肯定已经意识到不对劲了。”","color":"white","bold": false}]
+execute if score @s sea_4temp1 matches 1570 run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
+execute if score @s sea_4temp1 matches 1590 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“这鬼地方……我一定会尽全力让你们活下去的。”","color":"white"}]
+execute if score @s sea_4temp1 matches 1610 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“你的话，想回家吗？”","color":"white","bold": false}]
+execute if score @s sea_4temp1 matches 1610 run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
 
+execute if score @s sea_4temp1 matches 1636 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“……嗯，我已经没有家了。或许对我而言，死在这里也没什么不妥的。”","color":"white"}]
+
+execute if score @s sea_4temp1 matches 1656 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“但我希望这不是一次没有意义的牺牲。”","color":"white"}]
+
+execute if score @s sea_4temp1 matches 1680 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“……对不起啊，哥们。我没料到这种事情……”","color":"white","bold": false}]
+execute if score @s sea_4temp1 matches 1680 run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
+
+execute if score @s sea_4temp1 matches 1700 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“没有。不是你的问题。……不需要在意。”","color":"white"}]
+
+execute if score @s sea_4temp1 matches 1780 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“唉……好想参加我哥的婚礼啊。”","color":"white","bold": false}]
+execute if score @s sea_4temp1 matches 1780 run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
+execute if score @s sea_4temp1 matches 1800 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“他要知道我死在这种鸟不拉屎的海洋中心，他不要难受死啊。”","color":"white","bold": false}]
+execute if score @s sea_4temp1 matches 1800 run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
 
