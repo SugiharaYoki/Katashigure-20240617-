@@ -80,6 +80,6 @@ execute if score @s sea_4temp1 matches 1700 as @p[tag=SEAPT] at @s run tellraw @
 
 execute if score @s sea_4temp1 matches 1780 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“唉……好想参加我哥的婚礼啊。”","color":"white","bold": false}]
 execute if score @s sea_4temp1 matches 1780 run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
-execute if score @s sea_4temp1 matches 1800 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“他要知道我死在这种鸟不拉屎的海洋中心，他不要难受死啊。”","color":"white","bold": false}]
+execute if score @s sea_4temp1 matches 1800 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“他要知道我死在这种鸟不拉屎的海上，他不要难受死啊。”","color":"white","bold": false}]
 execute if score @s sea_4temp1 matches 1800 run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
 
