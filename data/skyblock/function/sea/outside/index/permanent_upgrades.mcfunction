@@ -12,6 +12,9 @@ execute if entity @s[scores={sea_progress=..14}] run tellraw @s [{"text":"未知
 execute if entity @s[scores={sea_progress=15..17}] run tellraw @s [{"text":"4项未解锁：通关游戏的Normal结局","color":"gray","bold": true}]
 execute if entity @s[scores={sea_progress=18..}] run tellraw @s [{"text":"效果：","color":"gold","bold": true},{"text":"防具第3起始点的升级会始终点亮最左两格","color":"white","bold": false},{"text":"\n效果：","color":"gold","bold": true},{"text":"撬棍类武器的基础攻击力 +0.5","color":"white","bold": false},{"text":"\n效果：","color":"gold","bold": true},{"text":"消防斧类武器的基础攻击力 +1.0","color":"white","bold": false},{"text":"\n效果：","color":"gold","bold": true},{"text":"光棱箭的最大持有数量 +2","color":"white","bold": false}]
 
+execute if entity @s[scores={sea_progress=..17}] run tellraw @s [{"text":"未知的2项升级","color":"gray","bold": true}]
+execute if entity @s[scores={sea_progress=18}] run tellraw @s [{"text":"2项未解锁：通关游戏的True结局","color":"gray","bold": true}]
+execute if entity @s[scores={sea_progress=19..}] run tellraw @s [{"text":"效果：","color":"gold","bold": true},{"text":"拾起模板时获得的数量翻倍","color":"white","bold": false},{"text":"\n效果：","color":"gold","bold": true},{"text":"对深海侵蚀的耐性增加50%","color":"white","bold": false}]
 
 execute unless entity @s[advancements={skyblock:sea/doc/g27=true}] run tellraw @s[scores={sea_progress=..14}] [{"text":"未知的1项升级","color":"gray","bold": true}]
 execute unless entity @s[advancements={skyblock:sea/doc/g27=true}] run tellraw @s[scores={sea_progress=15..}] [{"text":"1项未解锁：在医务中心开启一段横跨三章的支线任务","color":"gray","bold": true}]

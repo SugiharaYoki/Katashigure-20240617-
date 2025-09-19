@@ -110,6 +110,8 @@ execute if score SEA_ch6_event sea_4temp4 matches 15149 run tellraw @a[tag=SEAPT
 execute if score SEA_ch6_event sea_4temp4 matches 15149 run tellraw @a[tag=SEAPT,scores={sea_progress=..17}] [{"text":"永久奖励：","color":"green","bold": true},{"text": "撬棍类武器的基础攻击力 +0.5","color": "white"}]
 execute if score SEA_ch6_event sea_4temp4 matches 15149 run tellraw @a[tag=SEAPT,scores={sea_progress=..17}] [{"text":"永久奖励：","color":"green","bold": true},{"text": "消防斧类武器的基础攻击力 +1.0","color": "white"}]
 execute if score SEA_ch6_event sea_4temp4 matches 15149 run tellraw @a[tag=SEAPT,scores={sea_progress=..17}] [{"text":"永久奖励：","color":"green","bold": true},{"text": "光棱箭的最大持有数量 +2","color": "white"}]
+execute if score SEA_ch6_event sea_4temp4 matches 15149 run tellraw @a[tag=SEAPT,scores={sea_progress=..18}] [{"text":"永久奖励：","color":"green","bold": true},{"text": "拾起模板时获得的数量翻倍","color": "white"}]
+execute if score SEA_ch6_event sea_4temp4 matches 15149 run tellraw @a[tag=SEAPT,scores={sea_progress=..18}] [{"text":"永久奖励：","color":"green","bold": true},{"text": "对深海侵蚀的耐性增加50%","color": "white"}]
 execute if score SEA_ch6_event sea_4temp4 matches 15149 run scoreboard players set @a[tag=SEAPT,scores={sea_progress=..18}] sea_progress 19
 execute if score SEA_ch6_event sea_4temp4 matches 15150 as @a[tag=SEAPT] run function skyblock:sea/dead
 
