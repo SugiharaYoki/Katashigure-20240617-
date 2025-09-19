@@ -83,3 +83,15 @@ execute if score @s sea_4temp1 matches 1780 run playsound entity.villager.ambien
 execute if score @s sea_4temp1 matches 1800 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“他要知道我死在这种鸟不拉屎的海上，他不要难受死啊。”","color":"white","bold": false}]
 execute if score @s sea_4temp1 matches 1800 run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
 
+execute if score @s sea_4temp1 matches 1900..1999 run scoreboard players set @s sea_4temp1 1900
+
+
+execute if entity @a[tag=SEAPT,x=90229,y=49,z=101,dx=7,dy=6,dz=7] run scoreboard players set @s sea_4temp1 5001
+
+
+
+
+
+
+
+
