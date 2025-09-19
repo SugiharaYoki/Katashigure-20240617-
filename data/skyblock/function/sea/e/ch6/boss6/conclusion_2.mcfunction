@@ -65,6 +65,7 @@ execute if score SEA_ch6_event sea_4temp4 matches 1542..1762 run scoreboard play
 execute if score SEA_ch6_event sea_4temp4 matches 1542..2069 store result bossbar minecraft:9066602 value run scoreboard players get SEA_ch6_event sea_4temp5
 
 
+execute if score SEA_ch6_event sea_4temp4 matches 1349 as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s run playsound minecraft:falsegod music @s ~ ~ ~ 1 1.0
 execute if score SEA_ch6_event sea_4temp4 matches 3100 as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s run playsound minecraft:salvation1 music @s ~ ~ ~ 1 1.0
 #execute if score SEA_ch6_event sea_4temp4 matches 5310 as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s run playsound minecraft:salvation2 music @s ~ ~ ~ 1 1.0
 
