@@ -153,7 +153,7 @@ execute if score SEA_ch4_event_railbox rng9 matches 70 run tellraw @a[distance=0
 execute if score SEA_ch4_event_railbox rng9 matches 90 run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
 execute if score SEA_ch4_event_railbox rng9 matches 90 run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“那我更得在这里将你杀了，接招！”","color":"white","bold": false}]
 execute if score SEA_ch4_event_railbox rng9 matches 110 run scoreboard players add @s rng2 4
-execute if score SEA_ch4_event_railbox rng9 matches 130 run tellraw @a[distance=0..250] [{"selector":"@p[tag=SEAPT]","color":"white"},{"text":"：\n“这是武器不武器的问题吗？！”","color":"white"}]
+#execute if score SEA_ch4_event_railbox rng9 matches 130 run tellraw @a[distance=0..250] [{"selector":"@p[tag=SEAPT]","color":"white"},{"text":"：\n“这是武器不武器的问题吗？！”","color":"white"}]
 execute if score SEA_ch4_event_railbox rng9 matches 160 run tellraw @a[distance=0..250] [{"selector":"@p[tag=SEAPT]","color":"white"},{"text":"：\n“先别打，我是从越涵那里听说的你！！”","color":"white"}]
 execute if score SEA_ch4_event_railbox rng9 matches 180 run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
 execute if score SEA_ch4_event_railbox rng9 matches 180 run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“越涵连把称手的武器都没有，他一个人行动肯定早就遇害了，你休想骗我！”","color":"white","bold": false}]
