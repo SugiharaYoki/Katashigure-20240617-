@@ -135,3 +135,13 @@ execute as @s[scores={rng1=100}] at @n[tag=SEAedwina] if entity @n[tag=sc,scores
 execute as @s[scores={rng1=104}] as @n[tag=SEAboss4_end] at @s rotated ~ 0 run tp @s ~ ~ ~ facing 90185.00 57.14 80.87
 execute as @s[scores={rng1=105..150}] as @n[tag=SEAboss4_end,x=90185.00,y=57.14,z=80.87,distance=1.5..] at @s facing 90185.00 57.14 80.87 run tp @s ~ ~ ~1 ~ 0
 execute as @s[scores={rng1=120..150}] run tag @s add SEAch4_conclusion
+
+
+
+#与越涵共同行动
+execute if score SEA_ch4_event_railbox rng9 matches 1.. run scoreboard players add SEA_ch4_event_railbox rng9 1
+
+
+
+
+

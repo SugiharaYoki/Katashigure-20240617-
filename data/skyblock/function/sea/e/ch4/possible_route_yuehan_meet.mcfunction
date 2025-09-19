@@ -90,6 +90,7 @@ execute if score @s sea_4temp1 matches 10..5000 if entity @a[tag=SEAPT,x=90229,y
 
 
 execute if score @s sea_4temp1 matches 5001 run tag @n[tag=SEAyuehan] remove SEAyuehan_actable
+execute if score @s sea_4temp1 matches 5001 run scoreboard players set SEA_ch4_event_railbox rng9 1
 execute if score @s sea_4temp1 matches 5001 run tellraw @a[distance=0..250] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“从这里爬上去确实能到生态控制系统……”","color":"white","bold": false}]
 execute if score @s sea_4temp1 matches 5001 run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
 
