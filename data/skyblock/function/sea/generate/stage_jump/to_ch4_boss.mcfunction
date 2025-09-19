@@ -12,6 +12,9 @@ execute as @a[tag=SEAPT] at @s[scores={SEAPT_setting_recall=2}] run tag @s add s
 scoreboard players add @a[tag=SEAPT] sea_i_emerald 40
 
 
+execute if entity @a[tag=SEAPT,scores={SEAPT_setting_marilyn=2..}] run setblock 90163 36 86 green_concrete
+execute if entity @a[tag=SEAPT,scores={SEAPT_setting_marilyn=2..}] run item replace block 90148 145 152 container.1 with minecraft:yellow_wool
+
 ####
 tag @a[tag=SEAPT] add e_i_33
 tag @a[tag=SEAPT] add e_i_35

@@ -8,6 +8,8 @@ execute as @a[tag=SEAPT] at @s[scores={SEAPT_setting_recall=2}] run tag @s add s
 execute as @a[tag=SEAPT] at @s[scores={SEAPT_setting_recall=2}] run tag @s add sea_teleport16
 execute as @a[tag=SEAPT] at @s[scores={SEAPT_setting_recall=2}] run tag @s add sea_teleport17
 
+execute if entity @a[tag=SEAPT,scores={SEAPT_setting_marilyn=2..}] run item replace block 90148 145 152 container.1 with minecraft:green_wool
+#execute if entity @a[tag=SEAPT,scores={SEAPT_setting_marilyn=2..}] run item replace block 90148 145 152 container.1 with minecraft:blue_wool
 
 fill 90105 93 57 90105 94 57 minecraft:air
 execute positioned 90105 93 57 run function skyblock:sea/m/visioner

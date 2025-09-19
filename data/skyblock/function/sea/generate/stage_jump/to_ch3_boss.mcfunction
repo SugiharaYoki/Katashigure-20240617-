@@ -34,6 +34,7 @@ tag @a[tag=SEAPT] add e_w_06
 #scoreboard players set @a[tag=SEAPT] sea_i_trim_ghost 0
 scoreboard players add @a[tag=SEAPT] sea_i_emerald 50
 
+execute if entity @a[tag=SEAPT,scores={SEAPT_setting_marilyn=2..}] run setblock 90168 34 93 blue_concrete
 
 tag @a add e_i_30
 execute positioned 90084 137 115 run summon marker ~ ~ ~ {Tags:["SEAch3_spawn"]}

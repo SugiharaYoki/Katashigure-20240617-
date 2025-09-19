@@ -19,6 +19,10 @@ execute if items entity @s player.cursor amethyst_cluster run scoreboard players
 execute if items entity @s player.cursor amethyst_cluster run scoreboard players set @s[scores={SEAPT_setting_yuehan=1}] SEAPT_setting_yuehan 2
 execute if items entity @s player.cursor amethyst_cluster run scoreboard players set @s[scores={SEAPT_setting_yuehan=3}] SEAPT_setting_yuehan 1
 
+execute if items entity @s player.cursor spyglass run scoreboard players set @s[scores={SEAPT_setting_marilyn=2}] SEAPT_setting_marilyn 3
+execute if items entity @s player.cursor spyglass run scoreboard players set @s[scores={SEAPT_setting_marilyn=1}] SEAPT_setting_marilyn 2
+execute if items entity @s player.cursor spyglass run scoreboard players set @s[scores={SEAPT_setting_marilyn=3}] SEAPT_setting_marilyn 1
+
 execute if items entity @s player.cursor golden_sword run scoreboard players set @s[scores={SEAPT_setting_trueend=2}] SEAPT_setting_trueend 3
 execute if items entity @s player.cursor golden_sword run scoreboard players set @s[scores={SEAPT_setting_trueend=1}] SEAPT_setting_trueend 2
 execute if items entity @s player.cursor golden_sword run scoreboard players set @s[scores={SEAPT_setting_trueend=3}] SEAPT_setting_trueend 1
