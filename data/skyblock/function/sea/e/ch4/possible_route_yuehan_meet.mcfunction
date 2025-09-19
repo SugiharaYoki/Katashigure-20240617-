@@ -86,7 +86,7 @@ execute if score @s sea_4temp1 matches 1800 run playsound entity.villager.ambien
 execute if score @s sea_4temp1 matches 1900..1999 run scoreboard players set @s sea_4temp1 1900
 
 
-execute if entity @a[tag=SEAPT,x=90229,y=49,z=101,dx=7,dy=6,dz=7] run scoreboard players set @s sea_4temp1 5001
+execute if score @s sea_4temp1 matches 10..5000 if entity @a[tag=SEAPT,x=90229,y=49,z=101,dx=7,dy=6,dz=7] run scoreboard players set @s sea_4temp1 5001
 
 
 execute if score @s sea_4temp1 matches 5001 run tag @n[tag=SEAyuehan] remove SEAyuehan_actable
