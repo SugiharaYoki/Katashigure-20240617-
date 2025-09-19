@@ -10,3 +10,6 @@ execute if entity @s[scores={rng4=4}] run tellraw @a[distance=0..28] [{"text":"è
 playsound entity.player.attack.sweep neutral @a ~ ~ ~ 1 1.2
 execute anchored eyes run particle sweep_attack ~ ~1 ~ 0.1 0.1 0.1 0 1
 execute anchored eyes run damage @n[tag=SEAmob,type=!bee,distance=..4] 8 generic by @s
+
+
+scoreboard players add @s sea_4temp3 1
