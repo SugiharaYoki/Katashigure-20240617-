@@ -55,8 +55,10 @@ if block 90159 38 131 minecraft:waxed_exposed_copper_bulb[lit=false] if block 90
 execute if block 90074 103 137 scaffolding positioned 90185 19 130 if entity @n[tag=SEAch4_spawn,distance=0..3] \
 if block 90159 38 131 minecraft:waxed_exposed_copper_bulb[lit=false] if block 90159 38 130 minecraft:waxed_exposed_copper_bulb[lit=false] if block 90159 38 129 minecraft:waxed_exposed_copper_bulb[lit=false] run title @s[tag=SEAPT] actionbar {"text":"目标：乘坐中央电梯 前往水下研究设施的实验区","color":"green"}
 
-execute if block 90074 103 137 scaffolding run title @s[tag=SEAPT,tag=e_i_35] actionbar {"text":"目标：寻找越涵的行踪","color":"green"}
-execute if block 90074 103 137 scaffolding if block 90163 36 86 green_concrete run title @s[tag=SEAPT,tag=e_i_35] actionbar {"text":"目标：探索水下研究设施的北侧并找到前进的路线","color":"green"}
+execute if block 90074 103 137 scaffolding unless entity @n[tag=SEAyuehan_ch4_acting] run title @s[tag=SEAPT,tag=e_i_35] actionbar {"text":"目标：寻找越涵的行踪","color":"green"}
+execute if block 90074 103 137 scaffolding if entity @n[tag=SEAyuehan_ch4_acting] run title @s[tag=SEAPT,tag=e_i_35] actionbar {"text":"目标：同越涵探索水下研究设施的实验区域。","color":"green"}
+execute if block 90074 103 137 scaffolding unless entity @n[tag=SEAyuehan_ch4_acting] if block 90163 36 86 green_concrete run title @s[tag=SEAPT,tag=e_i_35] actionbar {"text":"目标：探索水下研究设施的北侧并找到前进的路线","color":"green"}
+execute if block 90074 103 137 scaffolding if entity @n[tag=SEAyuehan_ch4_acting] if block 90163 36 86 green_concrete run title @s[tag=SEAPT,tag=e_i_35] actionbar {"text":"目标：探索水下研究设施的北侧并找到前往更上层的替代路线","color":"green"}
 
 execute if block 90074 103 137 scaffolding if entity @n[tag=SEAedwina,tag=SEAboss4] run title @s[tag=SEAPT] actionbar {"text":"目标：使艾德雯娜失去战斗能力","color":"green"}
 execute if block 90074 103 137 scaffolding if entity @n[tag=SEAedwina] if entity @n[tag=SEAyuehan] run title @s[tag=SEAPT] actionbar {"text":"目标：顺着越涵来时的路上行 离开水下研究设施","color":"green"}

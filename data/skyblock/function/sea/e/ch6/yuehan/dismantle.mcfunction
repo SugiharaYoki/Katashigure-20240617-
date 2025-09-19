@@ -4,7 +4,7 @@ execute as @s[scores={rng8=2..29},tag=SEAyuehan_act_dismantle] at @s run item re
 execute as @s[scores={rng8=4},tag=SEAyuehan_act_dismantle] store result score @s rng7 run random value 1..3
 
 execute as @s[scores={rng8=3,rng7=1},tag=SEAyuehan_act_dismantle,tag=!SEAyuehan_ch4_acting] at @s run tellraw @a[distance=0..28] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“这傻逼钻井平台上怎么这么多无人机，走路都走不安稳。”","color":"white","bold": false}]
-execute as @s[scores={rng8=3,rng7=1},tag=SEAyuehan_act_dismantle,tag=SEAyuehan_ch4_acting] at @s run tellraw @a[distance=0..28] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“怎么连水下研究机构都一堆无人机，这群人到底多喜欢这些玩意？”","color":"white","bold": false}]
+execute as @s[scores={rng8=3,rng7=1},tag=SEAyuehan_act_dismantle,tag=SEAyuehan_ch4_acting] at @s run tellraw @a[distance=0..28] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“怎么连水下研究设施都一堆无人机，这群人到底多喜欢这些玩意？”","color":"white","bold": false}]
 execute as @s[scores={rng8=3,rng7=2},tag=SEAyuehan_act_dismantle] at @s run tellraw @a[distance=0..28] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“我之前就叫艾德雯娜别乱放无人机了……唉。”","color":"white","bold": false}]
 execute as @s[scores={rng8=3,rng7=3},tag=SEAyuehan_act_dismantle] at @s run tellraw @a[distance=0..28] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“我把这玩意给打废，你等等我。”","color":"white","bold": false}]
 

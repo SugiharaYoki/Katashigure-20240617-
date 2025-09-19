@@ -255,7 +255,8 @@ execute as @n[tag=SEAch4_spawn_timer_leverway] at @s run function skyblock:sea/e
 execute as @n[tag=SEAch4_spawn_timer_largegate] at @s run function skyblock:sea/e/ch4/ev017_largegate
 
 execute if block 90168 35 88 warped_button[powered=true] unless entity @n[tag=SEAch4_spawn_timer_marilyn] if block 90182 57 81 minecraft:iron_block run summon marker 90160 34 130 {Tags:["SEAch4_spawn_timer","SEAch4_spawn_timer_marilyn"]}
-execute as @n[tag=SEAch4_spawn_timer_marilyn] at @s run function skyblock:sea/e/ch4/ev018_communication
+execute as @n[tag=SEAch4_spawn_timer_marilyn] at @s unless entity @n[tag=SEAyuehan_ch4_acting] run function skyblock:sea/e/ch4/ev018_communication
+execute as @n[tag=SEAch4_spawn_timer_marilyn] at @s if entity @n[tag=SEAyuehan_ch4_acting] run function skyblock:sea/e/ch4/ev018_communication_with_yuehan
 
 #生成怪物
 execute positioned 90163 44 130 if entity @a[tag=SEAPT,distance=..2.7] unless entity @n[tag=SEAch4_spawn,distance=0..1] run function skyblock:sea/e/ch6/part1/entering_facility

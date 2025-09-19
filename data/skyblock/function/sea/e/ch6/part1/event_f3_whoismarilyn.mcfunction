@@ -200,8 +200,8 @@ execute if score SEA_ch6_event rng5 matches 440 positioned 90152 161 114 as @n[t
 execute if score SEA_ch6_event rng5 matches 440 positioned 90152 161 114 as @n[tag=SEAedwina] at @s run particle sweep_attack ^ ^1.2 ^1.1 0.35 0.2 0.35 0 4
 
 execute if score SEA_ch6_event rng5 matches 438 as @n[tag=SEAnorma,x=90000,y=100,z=0,distance=0..1200] at @s run playsound minecraft:entity.evoker.ambient neutral @a ~ ~ ~ 1 1.5
-execute if score SEA_ch6_event rng5 matches 438 unless items block 90148 145 152 container.4 green_wool run tellraw @a[distance=0..150] [{"text":"诺玛：","color":"red","bold": true},{"text":"\n“呵呵呵，原来如此啊，我提前炸掉水下研究机构，居然没能困住你。”","color":"white","bold": false}]
-execute if score SEA_ch6_event rng5 matches 438 if items block 90148 145 152 container.4 green_wool run tellraw @a[distance=0..150] [{"text":"诺玛：","color":"red","bold": true},{"text":"\n“啊啊啊、你居然……！！可恶！我提前炸掉水下研究机构，居然没能困住你！！”","color":"white","bold": false}]
+execute if score SEA_ch6_event rng5 matches 438 unless items block 90148 145 152 container.4 green_wool run tellraw @a[distance=0..150] [{"text":"诺玛：","color":"red","bold": true},{"text":"\n“呵呵呵，原来如此啊，我提前炸掉水下研究设施，居然没能困住你。”","color":"white","bold": false}]
+execute if score SEA_ch6_event rng5 matches 438 if items block 90148 145 152 container.4 green_wool run tellraw @a[distance=0..150] [{"text":"诺玛：","color":"red","bold": true},{"text":"\n“啊啊啊、你居然……！！可恶！我提前炸掉水下研究设施，居然没能困住你！！”","color":"white","bold": false}]
 execute if score SEA_ch6_event rng5 matches 452 as @n[tag=SEAnorma,x=90000,y=100,z=0,distance=0..1200] at @s run playsound minecraft:entity.evoker.ambient neutral @a ~ ~ ~ 1 1.5
 execute if score SEA_ch6_event rng5 matches 452 unless items block 90148 145 152 container.4 green_wool run tellraw @a[distance=0..150] [{"text":"诺玛：","color":"red","bold": true},{"text":"\n“很遗憾……我可不止有嘴皮功夫。我不会让你们就这么离开。”","color":"white","bold": false}]
 execute if score SEA_ch6_event rng5 matches 452 if items block 90148 145 152 container.4 green_wool run tellraw @a[distance=0..150] [{"text":"诺玛：","color":"red","bold": true},{"text":"\n“我饶不了你啊啊啊！！”","color":"white","bold": false}]

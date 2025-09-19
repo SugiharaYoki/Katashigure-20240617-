@@ -298,7 +298,7 @@ execute if score SEA_ch6_event sea_4temp4 matches 7104 as @a[tag=SEAPT] at @s ru
 execute if score SEA_ch6_event sea_4temp4 matches 7104 as @a[tag=SEAPT] at @s run effect give @s darkness 1 0 true
 execute if score SEA_ch6_event sea_4temp4 matches 7104 as @a[tag=SEAPT] at @s run tp @s 90430 207 -1882 facing 90429 207 -1882
 
-execute if score SEA_ch6_event sea_4temp4 matches 7164 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"你：","color":"aqua","bold": true},{"text":"\n“我这是在……水下研究机构？”","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 7164 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"你：","color":"aqua","bold": true},{"text":"\n“我这是在……水下研究设施？”","color":"white","bold": false}]
 execute if score SEA_ch6_event sea_4temp4 matches 8364 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"你：","color":"aqua","bold": true},{"text":"\n“不对……我记得这个地方。我太熟悉这里了。”","color":"white","bold": false}]
 execute if score SEA_ch6_event sea_4temp4 matches 8464 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"你：","color":"aqua","bold": true},{"text":"\n“抱歉……我最后，谁都没能拯救。”","color":"white","bold": false}]
 execute if score SEA_ch6_event sea_4temp4 matches 8544 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"\n但我——将见证一切。我不该为自己的旅途感到遗憾。","color":"white"}]
