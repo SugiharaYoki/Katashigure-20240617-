@@ -33,6 +33,7 @@ execute if score @s sea_4temp1 matches 109..110 at @s run tp @s ~1 ~ ~ facing ~2
 execute if score @s sea_4temp1 matches 112 at @s run playsound minecraft:block.iron_door.open block @a 90161 45 130 10 0.5
 execute if score @s sea_4temp1 matches 112 at @s run fill 90161 45 129 90161 45 131 air
 execute if score @s sea_4temp1 matches 115 at @s run function skyblock:sea/e/ch6/yuehan/init
+execute if score @s sea_4temp1 matches 115 at @s run tag @n[tag=SEAyuehan] add SEAyuehan_ch4_acting
 
 execute if score @s sea_4temp1 matches 128 run tellraw @a[distance=0..250] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“切记：小心！这里有一堆你没见过的怪物。”","color":"white","bold": false}]
 execute if score @s sea_4temp1 matches 128 run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
