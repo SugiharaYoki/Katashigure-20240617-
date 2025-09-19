@@ -420,8 +420,8 @@ execute if score SEA_ch6_event sea_4temp4 matches 8301 as @p[tag=SEAPT] at @s ru
 execute if score SEA_ch6_event sea_4temp4 matches 8351 as @p[tag=SEAPT] at @s run damage @n[tag=SEAboss6c] 10 generic
 execute if score SEA_ch6_event sea_4temp4 matches 8401 as @p[tag=SEAPT] at @s run damage @n[tag=SEAboss6c] 10 generic
 execute if score SEA_ch6_event sea_4temp4 matches 8501 as @p[tag=SEAPT] at @s run damage @n[tag=SEAboss6c] 10 generic
-execute if score SEA_ch6_event sea_4temp4 matches 8501..9999 as @p[tag=SEAPT] at @s unless entity @n[tag=SEAboss6c] run particle white_ash ~ ~5 ~ 10 5 10 0 50
-execute if score SEA_ch6_event sea_4temp4 matches 8501..9999 as @p[tag=SEAPT] at @s unless entity @n[tag=SEAboss6c] run particle cherry_leaves ~ ~5 ~ 10 5 10 0 20
+execute if score SEA_ch6_event sea_4temp4 matches 8200..9629 as @p[tag=SEAPT] at @s unless entity @n[tag=SEAboss6c] run particle white_ash ~ ~5 ~ 10 5 10 0 50
+execute if score SEA_ch6_event sea_4temp4 matches 8200..9629 as @p[tag=SEAPT] at @s unless entity @n[tag=SEAboss6c] run particle cherry_leaves ~ ~5 ~ 10 5 10 0 20
 execute if score SEA_ch6_event sea_4temp4 matches 8001..9501 run time add 1
 execute if score SEA_ch6_event sea_4temp4 matches 8501..9629 if score SEAmusic rng1 matches 4300.. run scoreboard players set SEA_ch6_event sea_4temp4 9630
 execute if score SEA_ch6_event sea_4temp4 matches 9630 as @p[tag=SEAPT] at @s run effect give @a[distance=0..50] darkness 5 0 true
