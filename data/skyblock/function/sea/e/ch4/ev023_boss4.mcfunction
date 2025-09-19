@@ -140,7 +140,32 @@ execute as @s[scores={rng1=120..150}] run tag @s add SEAch4_conclusion
 
 #与越涵共同行动
 execute if score SEA_ch4_event_railbox rng9 matches 1.. run scoreboard players add SEA_ch4_event_railbox rng9 1
-
+execute if score SEA_ch4_event_railbox rng9 matches 30 run tellraw @a[distance=0..250] [{"selector":"@p[tag=SEAPT]","color":"white"},{"text":"：\n“不对等下！等下！你就是艾德雯娜吗？！”","color":"white"}]
+execute if score SEA_ch4_event_railbox rng9 matches 50 run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
+execute if score SEA_ch4_event_railbox rng9 matches 50 run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“不然我还能是谁？少说废话！”","color":"white","bold": false}]
+execute if score SEA_ch4_event_railbox rng9 matches 70 run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
+execute if score SEA_ch4_event_railbox rng9 matches 70 run tellraw @a[distance=0..250] [{"selector":"@p[tag=SEAPT]","color":"white"},{"text":"：\n“我不是那个意思！我是说我早就认识你，我听说过你！！”","color":"white"}]
+execute if score SEA_ch4_event_railbox rng9 matches 90 run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
+execute if score SEA_ch4_event_railbox rng9 matches 90 run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“那我更得在这里将你杀了，接招！”","color":"white","bold": false}]
+execute if score SEA_ch4_event_railbox rng9 matches 110 run scoreboard players add @s rng2 4
+execute if score SEA_ch4_event_railbox rng9 matches 130 run tellraw @a[distance=0..250] [{"selector":"@p[tag=SEAPT]","color":"white"},{"text":"：\n“这是武器不武器的问题吗？！”","color":"white"}]
+execute if score SEA_ch4_event_railbox rng9 matches 160 run tellraw @a[distance=0..250] [{"selector":"@p[tag=SEAPT]","color":"white"},{"text":"：\n“先别打，我是从越涵那里听说的你！！”","color":"white"}]
+execute if score SEA_ch4_event_railbox rng9 matches 180 run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
+execute if score SEA_ch4_event_railbox rng9 matches 180 run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“越涵连把称手的武器都没有，他一个人行动肯定早就遇害了，你休想骗我！”","color":"white","bold": false}]
+execute if score SEA_ch4_event_railbox rng9 matches 220 run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
+execute if score SEA_ch4_event_railbox rng9 matches 220 run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“就算是越涵还活着，他又怎么可能会主动带你到这种地方来？！他是个不折不扣的胆小鬼！”","color":"white","bold": false}]
+execute if score SEA_ch4_event_railbox rng9 matches 245 run tellraw @a[distance=0..250] [{"selector":"@p[tag=SEAPT]","color":"white"},{"text":"：\n“他是不是胆小鬼，不应该由你说的算吧？！陪我一路杀到这里来的可就是他本人！”","color":"white"}]
+execute if score SEA_ch4_event_railbox rng9 matches 265 run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
+execute if score SEA_ch4_event_railbox rng9 matches 265 run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“说到底这本身就和勇气无关，任何正常人都不可能会主动想要到这底下来！”","color":"white","bold": false}]
+execute if score SEA_ch4_event_railbox rng9 matches 285 run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
+execute if score SEA_ch4_event_railbox rng9 matches 285 run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“任何正常人都不该知道这底下是干什么的，而你却已经知道了……！”","color":"white","bold": false}]
+execute if score SEA_ch4_event_railbox rng9 matches 310 run tellraw @a[distance=0..250] [{"selector":"@p[tag=SEAPT]","color":"white"},{"text":"：\n“是玛瑞莲叫我下来的，她说这里才能安全地通往通讯平台！”","color":"white"}]
+execute if score SEA_ch4_event_railbox rng9 matches 330 run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
+execute if score SEA_ch4_event_railbox rng9 matches 330 run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“你放屁，我根本就从来没听说过什么玛瑞莲，不要胡编乱造！”","color":"white","bold": false}]
+execute if score SEA_ch4_event_railbox rng9 matches 350 run tellraw @a[distance=0..250] [{"selector":"@p[tag=SEAPT]","color":"white"},{"text":"：\n“货真价实，贝塔机械小组组长还是副组长啊，你先听我解释一下好不好？！”","color":"white"}]
+execute if score SEA_ch4_event_railbox rng9 matches 370 run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
+execute if score SEA_ch4_event_railbox rng9 matches 370 run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“这地方随时会炸，我听你解释？去地狱跟我解释吧！”","color":"white","bold": false}]
+execute if score SEA_ch4_event_railbox rng9 matches 390 run scoreboard players add @s rng2 8
 
 
 
