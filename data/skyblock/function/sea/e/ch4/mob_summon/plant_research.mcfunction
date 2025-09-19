@@ -1,0 +1,26 @@
+execute positioned 90212 48 97 run function skyblock:sea/m/bee
+execute positioned 90221 48 87 run function skyblock:sea/m/bee
+execute positioned 90221 46 91 run function skyblock:sea/m/cave_spider
+execute positioned 90209 46 98 run function skyblock:sea/m/spider
+execute positioned 90208 46 87 run function skyblock:sea/m/cave_spider
+execute positioned 90228 46 98 run function skyblock:sea/m/cave_spider_small
+execute positioned 90228 46 98 run function skyblock:sea/m/cave_spider_small
+execute positioned 90228 46 98 run function skyblock:sea/m/cave_spider_small
+execute positioned 90231 46 95 run function skyblock:sea/m/silverfish
+execute positioned 90231 46 95 run function skyblock:sea/m/silverfish
+execute positioned 90252 46 105 run function skyblock:sea/m/cave_spider
+execute positioned 90252 46 105 run function skyblock:sea/m/cave_spider
+execute positioned 90252 46 105 run function skyblock:sea/m/cave_spider_small
+execute positioned 90252 46 105 run function skyblock:sea/m/cave_spider_small
+execute positioned 90252 46 105 run function skyblock:sea/m/cave_spider_small
+execute positioned 90252 46 105 run function skyblock:sea/m/cave_spider_small
+execute positioned 90248 50 102 run function skyblock:sea/m/bee
+execute positioned 90234 57 89 run function skyblock:sea/m/shadow
+execute positioned 90234 57 89 run function skyblock:sea/m/drowned_maintenance
+execute positioned 90234 57 89 run function skyblock:sea/m/drowned_maintenance
+execute positioned 90214 46 71 run function skyblock:sea/m/skeleton_shield
+execute positioned 90214 46 71 run function skyblock:sea/m/skeleton
+execute positioned 90238 57 95 run function skyblock:sea/m/mine
+execute positioned 90222 57 87 run function skyblock:sea/m/drone
+execute positioned 90208 57 93 run function skyblock:sea/m/drone
+execute positioned 90215 46 98 if entity @a[tag=SEAPT,distance=..15] unless entity @n[tag=SEAch4_spawn,distance=0..1] run summon marker ~ ~ ~ {Tags:["SEAch4_spawn"]}

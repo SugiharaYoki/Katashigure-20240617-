@@ -8,44 +8,9 @@ execute unless score sea_ch4_switch_secondfloor sea_4temp2 matches -999.. run sc
 execute unless score sea_ch4_switch_waterstorage sea_4temp2 matches -999.. run scoreboard players set sea_ch4_switch_waterstorage sea_4temp2 -9
 
 
-execute as @a[tag=SEAPT,x=90175,y=19,z=89,distance=0..4.8,tag=!e_i_33] at @s run title @s times 0s 2s 2s
-execute as @a[tag=SEAPT,x=90175,y=19,z=89,distance=0..4.8,tag=!e_i_33] at @s run title @s title {"text": "冷 凝 系 统","color": "blue","bold": true}
-#execute as @a[tag=SEAPT,x=90175,y=19,z=89,distance=0..4.8,tag=!e_i_33] at @s run title @s subtitle {"text": "厄珀娅的悲歌 第肆章","color": "gray"}
-execute as @a[tag=SEAPT,x=90175,y=19,z=89,distance=0..4.8,tag=!e_i_33] at @s run playsound ambient.underwater.loop master @s ~ ~ ~ 100 0.8
-execute as @a[tag=SEAPT,x=90175,y=19,z=89,distance=0..4.8,tag=!e_i_33] at @s run playsound ambient.underwater.loop master @s ~ ~ ~ 100 0.8
-execute as @a[tag=SEAPT,x=90175,y=19,z=89,distance=0..4.8,tag=!e_i_33] at @s run playsound ambient.underwater.loop master @s ~ ~ ~ 100 1.2
-execute as @a[tag=SEAPT,x=90175,y=19,z=89,distance=0..4.8,tag=!e_i_33] at @s run playsound garden2.chapter_title master @s ~ ~ ~ 100 1.0
-execute as @a[tag=SEAPT,x=90175,y=19,z=89,distance=0..4.8,tag=!e_i_33] at @s run playsound ambient.warped_forest.mood master @s ~ ~ ~ 100 0.6
-execute as @a[tag=SEAPT,x=90175,y=19,z=89,distance=0..4.8,tag=!e_i_33] at @s run playsound ambient.warped_forest.mood master @s ~ ~ ~ 100 0.6
-execute as @a[tag=SEAPT,x=90175,y=19,z=89,distance=0..4.8,tag=!e_i_33] at @s run playsound ambient.warped_forest.mood master @s ~ ~ ~ 100 0.6
-execute as @a[tag=SEAPT,x=90175,y=19,z=89,distance=0..4.8,tag=!e_i_33] at @s run playsound ambient.warped_forest.mood master @s ~ ~ ~ 100 0.6
-execute as @a[tag=SEAPT,x=90175,y=19,z=89,distance=0..4.8,tag=!e_i_33] at @s run playsound ambient.warped_forest.mood master @s ~ ~ ~ 100 0.6
-execute as @a[tag=SEAPT,x=90175,y=19,z=89,distance=0..4.8,tag=!e_i_33] at @s run playsound ambient.warped_forest.mood master @s ~ ~ ~ 100 0.6
-execute as @a[tag=SEAPT,x=90175,y=19,z=89,distance=0..4.8,tag=!e_i_33] at @s run playsound ambient.warped_forest.mood master @s ~ ~ ~ 100 0.6
-execute as @a[tag=SEAPT,x=90175,y=19,z=89,distance=0..4.8,tag=!e_i_33] at @s run playsound ambient.warped_forest.mood master @s ~ ~ ~ 100 0.6
-execute as @a[tag=SEAPT,x=90175,y=19,z=89,distance=0..4.8,tag=!e_i_33] at @s run playsound ambient.warped_forest.mood master @s ~ ~ ~ 100 0.6
-execute as @a[tag=SEAPT,x=90175,y=19,z=89,distance=0..4.8,tag=!e_i_33] at @s run advancement grant @s only skyblock:sea/chapter4
-execute as @a[tag=SEAPT,x=90175,y=19,z=89,distance=0..4.8,tag=!e_i_33] at @s run advancement grant @s only skyblock:sea/doc/documentary4
-execute as @a[tag=SEAPT,x=90175,y=19,z=89,distance=0..4.8,tag=!e_i_33] at @s run tag @s add e_i_33
+execute as @a[tag=SEAPT,x=90175,y=19,z=89,distance=0..4.8,tag=!e_i_33] at @s run function skyblock:sea/e/ch4/title_1
 
-execute as @a[tag=SEAPT,x=90170,y=44,z=130,distance=0..3.2,tag=!e_i_35] at @s run title @s times 0s 2s 2s
-execute as @a[tag=SEAPT,x=90170,y=44,z=130,distance=0..3.2,tag=!e_i_35] at @s run title @s title {"text": "实 验 区","color": "blue","bold": true}
-execute as @a[tag=SEAPT,x=90170,y=44,z=130,distance=0..3.2,tag=!e_i_35] at @s run playsound ambient.warped_forest.loop master @s ~ ~ ~ 100 0.8
-execute as @a[tag=SEAPT,x=90170,y=44,z=130,distance=0..3.2,tag=!e_i_35] at @s run playsound ambient.warped_forest.loop master @s ~ ~ ~ 100 1.2
-execute as @a[tag=SEAPT,x=90170,y=44,z=130,distance=0..3.2,tag=!e_i_35] at @s run playsound garden2.chapter_title master @s ~ ~ ~ 100 1.0
-execute as @a[tag=SEAPT,x=90170,y=44,z=130,distance=0..3.2,tag=!e_i_35] at @s run playsound ambient.warped_forest.additions master @s ~ ~ ~ 100 0.7
-execute as @a[tag=SEAPT,x=90170,y=44,z=130,distance=0..3.2,tag=!e_i_35] at @s run playsound ambient.warped_forest.additions master @s ~ ~ ~ 100 0.7
-execute as @a[tag=SEAPT,x=90170,y=44,z=130,distance=0..3.2,tag=!e_i_35] at @s run playsound ambient.warped_forest.additions master @s ~ ~ ~ 100 0.7
-execute as @a[tag=SEAPT,x=90170,y=44,z=130,distance=0..3.2,tag=!e_i_35] at @s run playsound ambient.warped_forest.additions master @s ~ ~ ~ 100 0.7
-execute as @a[tag=SEAPT,x=90170,y=44,z=130,distance=0..3.2,tag=!e_i_35] at @s run playsound ambient.warped_forest.additions master @s ~ ~ ~ 100 0.7
-execute as @a[tag=SEAPT,x=90170,y=44,z=130,distance=0..3.2,tag=!e_i_35] at @s run playsound ambient.warped_forest.additions master @s ~ ~ ~ 100 0.7
-execute as @a[tag=SEAPT,x=90170,y=44,z=130,distance=0..3.2,tag=!e_i_35] at @s run playsound ambient.warped_forest.additions master @s ~ ~ ~ 100 0.7
-execute as @a[tag=SEAPT,x=90170,y=44,z=130,distance=0..3.2,tag=!e_i_35] at @s run playsound ambient.warped_forest.mood master @s ~ ~ ~ 100 0.55
-execute as @a[tag=SEAPT,x=90170,y=44,z=130,distance=0..3.2,tag=!e_i_35] at @s run playsound ambient.warped_forest.mood master @s ~ ~ ~ 100 0.55
-execute as @a[tag=SEAPT,x=90170,y=44,z=130,distance=0..3.2,tag=!e_i_35] at @s run playsound ambient.warped_forest.mood master @s ~ ~ ~ 100 0.55
-execute as @a[tag=SEAPT,x=90170,y=44,z=130,distance=0..3.2,tag=!e_i_35] at @s run advancement grant @s only skyblock:sea/chapter4b
-execute as @a[tag=SEAPT,x=90170,y=44,z=130,distance=0..3.2,tag=!e_i_35] at @s run advancement grant @s only skyblock:sea/doc/documentary4b
-execute as @a[tag=SEAPT,x=90170,y=44,z=130,distance=0..3.2,tag=!e_i_35] at @s run tag @s add e_i_35
+execute as @a[tag=SEAPT,x=90170,y=44,z=130,distance=0..3.2,tag=!e_i_35] at @s run function skyblock:sea/e/ch4/title_2
 
 execute as @a[tag=SEAPT,tag=!e_i_36,tag=!e_i_34] at @s if entity @n[tag=SEAherb,tag=SEAherb2,distance=0..3.5,scores={sea_4temp1=..1}] run tellraw @s {"text": "嗯？小猫？你是怎么从怪物手里活下来的？","color": "gray"}
 execute as @a[tag=SEAPT,tag=!e_i_36,tag=e_i_34] at @s if entity @n[tag=SEAherb,tag=SEAherb2,distance=0..3.5,scores={sea_4temp1=..1}] run tellraw @s {"text": "又见面了，小猫。看来你掌握了几条捷径呢。","color": "gray"}
@@ -137,37 +102,12 @@ execute as @n[tag=SEAch4_spawn_timer1,scores={sea_4temp1=3}] run setblock 90213 
 execute as @n[tag=SEAch4_spawn_timer1,scores={sea_4temp1=3..4}] run playsound block.beacon.activate block @a 90192 22 121 2 1.5
 
 
-execute positioned 90185 19 130 if entity @a[tag=SEAPT,distance=..4.7] unless entity @n[tag=SEAch4_spawn,distance=0..3] positioned 90160 13 136 as @a[distance=0..300] at @s run playsound garden2.bgm.003 music @s ~ ~ ~ 0.7 1.0
-execute positioned 90185 19 130 if entity @a[tag=SEAPT,distance=..4.7] unless entity @n[tag=SEAch4_spawn,distance=0..3] positioned 90160 13 136 run function skyblock:sea/m/zombie_security2
-execute positioned 90185 19 130 if entity @a[tag=SEAPT,distance=..4.7] unless entity @n[tag=SEAch4_spawn,distance=0..3] positioned 90160 13 124 run function skyblock:sea/m/zombie_security2
-execute positioned 90185 19 130 if entity @a[tag=SEAPT,distance=..4.7] unless entity @n[tag=SEAch4_spawn,distance=0..3] positioned 90169 19 126 run function skyblock:sea/m/drone
-execute positioned 90185 19 130 if entity @a[tag=SEAPT,distance=..4.7] unless entity @n[tag=SEAch4_spawn,distance=0..3] positioned 90180 19 122 run function skyblock:sea/m/drowned_maintenance
-execute positioned 90185 19 130 if entity @a[tag=SEAPT,distance=..4.7] unless entity @n[tag=SEAch4_spawn,distance=0..3] positioned 90178 34 130 run function skyblock:sea/m/skeleton
-execute positioned 90185 19 130 if entity @a[tag=SEAPT,distance=..4.7] unless entity @n[tag=SEAch4_spawn,distance=0..3] positioned 90178 34 130 run function skyblock:sea/m/nightblind
-execute positioned 90185 19 130 if entity @a[tag=SEAPT,distance=..4.7] unless entity @n[tag=SEAch4_spawn,distance=0..3] positioned 90190 34 121 run function skyblock:sea/m/zombie_bomb
-execute positioned 90185 19 130 if entity @a[tag=SEAPT,distance=..4.7] unless entity @n[tag=SEAch4_spawn,distance=0..3] positioned 90190 34 121 run function skyblock:sea/m/drowned_small
-execute positioned 90185 19 130 if entity @a[tag=SEAPT,distance=..4.7] unless entity @n[tag=SEAch4_spawn,distance=0..3] positioned 90190 34 121 run function skyblock:sea/m/drowned_small
-execute positioned 90185 19 130 if entity @a[tag=SEAPT,distance=..4.7] unless entity @n[tag=SEAch4_spawn,distance=0..3] positioned 90190 34 121 run function skyblock:sea/m/drowned_small
-execute positioned 90185 19 130 if entity @a[tag=SEAPT,distance=..4.7] unless entity @n[tag=SEAch4_spawn,distance=0..3] positioned 90185 34 130 run function skyblock:sea/m/shadow
 
-execute positioned 90185 19 130 if entity @a[tag=SEAPT,distance=..4.7] unless entity @n[tag=SEAch4_spawn,distance=0..3] positioned 90163 6 125 run function skyblock:sea/m/drowned_maintenance
-execute positioned 90185 19 130 if entity @a[tag=SEAPT,distance=..4.7] unless entity @n[tag=SEAch4_spawn,distance=0..3] positioned 90163 6 125 run function skyblock:sea/m/drowned
-execute positioned 90185 19 130 if entity @a[tag=SEAPT,distance=..4.7] unless entity @n[tag=SEAch4_spawn,distance=0..3] positioned 90155 6 121 run function skyblock:sea/m/drowned_hat
 
-execute positioned 90185 19 130 if entity @a[tag=SEAPT,distance=..4.7] unless entity @n[tag=SEAch4_spawn,distance=0..3] positioned 90176 6 129 run function skyblock:sea/m/drowned
-execute positioned 90185 19 130 if entity @a[tag=SEAPT,distance=..4.7] unless entity @n[tag=SEAch4_spawn,distance=0..3] positioned 90176 6 129 run function skyblock:sea/m/drowned
-execute positioned 90185 19 130 if entity @a[tag=SEAPT,distance=..4.7] unless entity @n[tag=SEAch4_spawn,distance=0..3] positioned 90175 9 114 run function skyblock:sea/m/drowned
-execute positioned 90185 19 130 if entity @a[tag=SEAPT,distance=..4.7] unless entity @n[tag=SEAch4_spawn,distance=0..3] positioned 90175 9 114 run function skyblock:sea/m/drowned_trident
 
-#水下额外区域
-execute positioned 90185 19 130 if entity @a[tag=SEAPT,distance=..4.7] unless entity @n[tag=SEAch4_spawn,distance=0..3] positioned 90170 6 138 run function skyblock:sea/m/drowned
-execute positioned 90185 19 130 if entity @a[tag=SEAPT,distance=..4.7] unless entity @n[tag=SEAch4_spawn,distance=0..3] positioned 90170 6 138 run function skyblock:sea/m/drowned_trident
-execute positioned 90185 19 130 if entity @a[tag=SEAPT,distance=..4.7] unless entity @n[tag=SEAch4_spawn,distance=0..3] positioned 90187 5 148 run function skyblock:sea/m/cave_spider
-execute positioned 90185 19 130 if entity @a[tag=SEAPT,distance=..4.7] unless entity @n[tag=SEAch4_spawn,distance=0..3] positioned 90187 5 148 run function skyblock:sea/m/cave_spider_small
-execute positioned 90185 19 130 if entity @a[tag=SEAPT,distance=..4.7] unless entity @n[tag=SEAch4_spawn,distance=0..3] positioned 90187 5 148 run function skyblock:sea/m/cave_spider_small
-execute positioned 90185 19 130 if entity @a[tag=SEAPT,distance=..4.7] unless entity @n[tag=SEAch4_spawn,distance=0..3] positioned 90187 5 148 run function skyblock:sea/m/cave_spider_small
 
-execute positioned 90185 19 130 if entity @a[tag=SEAPT,distance=..4.7] unless entity @n[tag=SEAch4_spawn,distance=0..3] run summon marker ~ ~ ~ {Tags:["SEAch4_spawn"]}
+#冷凝系统大生成
+execute positioned 90185 19 130 if entity @a[tag=SEAPT,distance=..4.7] unless entity @n[tag=SEAch4_spawn,distance=0..3] positioned 90170 6 138 run function skyblock:sea/e/ch4/mob_summon/condensation_main
 
 #
 execute if block 90192 34 181 stone_button[powered=true] if score sea_ch4_switch_waterstorage sea_4temp2 matches ..0 run scoreboard players set sea_ch4_switch_waterstorage sea_4temp2 41
@@ -244,12 +184,7 @@ execute positioned 90189 28 124 if block ~ ~ ~ minecraft:magenta_glazed_terracot
 execute positioned 90189 28 124 if block ~ ~ ~ minecraft:magenta_glazed_terracotta[facing=south] if block 90195 29 121 minecraft:waxed_copper_bulb[lit=false] run setblock 90195 29 125 minecraft:waxed_copper_bulb[lit=true]
 execute positioned 90189 28 124 if block ~ ~ ~ minecraft:magenta_glazed_terracotta[facing=south] if block 90195 29 121 minecraft:waxed_copper_bulb[lit=false] run setblock 90195 29 121 minecraft:waxed_copper_bulb[lit=true]
 
-execute if block 90192 28 133 iron_bars positioned 90189 28 124 if block ~ ~ ~ minecraft:magenta_glazed_terracotta[facing=west] positioned 90189 28 122 if block ~ ~ ~ minecraft:magenta_glazed_terracotta[facing=west] positioned 90179 19 121 run function skyblock:sea/m/shadow
-execute if block 90192 28 133 iron_bars positioned 90189 28 124 if block ~ ~ ~ minecraft:magenta_glazed_terracotta[facing=west] positioned 90189 28 122 if block ~ ~ ~ minecraft:magenta_glazed_terracotta[facing=west] positioned 90168 19 132 run function skyblock:sea/m/shadow
-execute if block 90192 28 133 iron_bars positioned 90189 28 124 if block ~ ~ ~ minecraft:magenta_glazed_terracotta[facing=west] positioned 90189 28 122 if block ~ ~ ~ minecraft:magenta_glazed_terracotta[facing=west] positioned 90192 27 134 run particle minecraft:soul ~ ~1 ~ 0.2 0.7 0.2 0 7
-execute if block 90192 28 133 iron_bars positioned 90189 28 124 if block ~ ~ ~ minecraft:magenta_glazed_terracotta[facing=west] positioned 90189 28 122 if block ~ ~ ~ minecraft:magenta_glazed_terracotta[facing=west] positioned 90192 27 134 run playsound entity.zombie.infect hostile @a ~ ~ ~ 0.7 0.7
-execute if block 90192 28 133 iron_bars positioned 90189 28 124 if block ~ ~ ~ minecraft:magenta_glazed_terracotta[facing=west] positioned 90189 28 122 if block ~ ~ ~ minecraft:magenta_glazed_terracotta[facing=west] run fill 90191 28 119 90192 27 119 air destroy
-execute if block 90192 28 133 iron_bars positioned 90189 28 124 if block ~ ~ ~ minecraft:magenta_glazed_terracotta[facing=west] positioned 90189 28 122 if block ~ ~ ~ minecraft:magenta_glazed_terracotta[facing=west] run fill 90192 28 133 90192 27 133 air destroy
+execute if block 90192 28 133 iron_bars positioned 90189 28 124 if block ~ ~ ~ minecraft:magenta_glazed_terracotta[facing=west] positioned 90189 28 122 if block ~ ~ ~ minecraft:magenta_glazed_terracotta[facing=west] positioned 90179 19 121 run function skyblock:sea/e/ch4/mob_summon/condensation_shadow_escapes
 
 
 execute if block 90199 35 129 redstone_lamp[lit=false] if score sea_ch4_switch_secondfloor sea_4temp2 matches 25.. run scoreboard players set sea_ch4_switch_secondfloor sea_4temp2 24
@@ -322,71 +257,23 @@ execute as @n[tag=SEAch4_spawn_timer_largegate] at @s run function skyblock:sea/
 execute if block 90168 35 88 warped_button[powered=true] unless entity @n[tag=SEAch4_spawn_timer_marilyn] if block 90182 57 81 minecraft:iron_block run summon marker 90160 34 130 {Tags:["SEAch4_spawn_timer","SEAch4_spawn_timer_marilyn"]}
 execute as @n[tag=SEAch4_spawn_timer_marilyn] at @s run function skyblock:sea/e/ch4/ev018_communication
 
-execute positioned 90163 44 130 if entity @a[tag=SEAPT,distance=..2.7] unless entity @n[tag=SEAch4_spawn,distance=0..1] positioned 90171 44 128 run function skyblock:sea/m/skeleton_shield
-execute positioned 90163 44 130 if entity @a[tag=SEAPT,distance=..2.7] unless entity @n[tag=SEAch4_spawn,distance=0..1] positioned 90171 44 132 run function skyblock:sea/m/skeleton_shield
-execute positioned 90163 44 130 if entity @a[tag=SEAPT,distance=..2.7] unless entity @n[tag=SEAch4_spawn,distance=0..1] positioned 90181 44 116 run function skyblock:sea/m/zombie_security2
-execute positioned 90163 44 130 if entity @a[tag=SEAPT,distance=..2.7] unless entity @n[tag=SEAch4_spawn,distance=0..1] positioned 90183 45 118 run function skyblock:sea/m/bee
-
-execute positioned 90163 44 130 if entity @a[tag=SEAPT,distance=..2.7] unless entity @n[tag=SEAch4_spawn,distance=0..1] positioned 90209 44 136 run function skyblock:sea/m/silverfish_big
-execute positioned 90163 44 130 if entity @a[tag=SEAPT,distance=..2.7] unless entity @n[tag=SEAch4_spawn,distance=0..1] positioned 90209 44 136 run function skyblock:sea/m/silverfish_big
-execute positioned 90163 44 130 if entity @a[tag=SEAPT,distance=..2.7] unless entity @n[tag=SEAch4_spawn,distance=0..1] positioned 90215 44 133 run function skyblock:sea/m/cave_spider
-execute positioned 90163 44 130 if entity @a[tag=SEAPT,distance=..2.7] unless entity @n[tag=SEAch4_spawn,distance=0..1] positioned 90184 44 116 run function skyblock:sea/m/skeleton_melee
-execute positioned 90163 44 130 if entity @a[tag=SEAPT,distance=..2.7] unless entity @n[tag=SEAch4_spawn,distance=0..1] positioned 90181 44 119 run function skyblock:sea/m/skeleton_melee
-execute positioned 90163 44 130 if entity @a[tag=SEAPT,distance=..2.7] unless entity @n[tag=SEAch4_spawn,distance=0..1] run summon marker ~ ~ ~ {Tags:["SEAch4_spawn"]}
-
-execute positioned 90163 44 130 if entity @a[tag=SEAPT,distance=..2.7] unless entity @n[tag=SEAch4_spawn,distance=0..1] positioned 90193 44 121 run function skyblock:sea/m/skeleton_shield
-execute positioned 90163 44 130 if entity @a[tag=SEAPT,distance=..2.7] unless entity @n[tag=SEAch4_spawn,distance=0..1] positioned 90193 44 121 run function skyblock:sea/m/skeleton_shield
-
-
-execute positioned 90172 44 134 if entity @a[tag=SEAPT,distance=..1.5] unless entity @n[tag=SEAch4_spawn,distance=0..1] positioned 90172 44 138 run summon zombie ~ ~ ~ {CustomName:'[{"text":"爆弹僵尸"}]',DeathLootTable:"skyblock:sea_zombie_bomb",Tags:["SEAmob","SEAmob_carrybomb"],attributes:[{id:"attack_damage",base:1.5},{id:"movement_speed",base:0.26},{id:"max_health",base:2.0},{id:"knockback_resistance",base:0.5}],Health:2,HandItems:[{id:fire_charge,count:1},{}],HandDropChances:[0f,0f],ArmorItems:[{id:iron_boots,count:1,components:{"minecraft:trim":{material:"minecraft:copper",pattern:"minecraft:dune"}}},{id:iron_leggings,count:1,components:{"minecraft:trim":{material:"minecraft:copper",pattern:"minecraft:dune"}}},{id:iron_chestplate,count:1,components:{"minecraft:trim":{material:"minecraft:copper",pattern:"minecraft:dune"}}},{id:chainmail_helmet,count:1}],ArmorDropChances:[0f,0f,0f,0f],PersistenceRequired:1b,Rotation:[180f,0f]}
-execute positioned 90172 44 134 if entity @a[tag=SEAPT,distance=..1.5] unless entity @n[tag=SEAch4_spawn,distance=0..1] run playsound entity.elder_guardian.curse hostile @a 90172 49 137 1 0.7
-execute positioned 90172 44 134 if entity @a[tag=SEAPT,distance=..1.5] unless entity @n[tag=SEAch4_spawn,distance=0..1] run setblock 90172 49 137 minecraft:tinted_glass destroy
-execute positioned 90172 44 134 if entity @a[tag=SEAPT,distance=..1.5] unless entity @n[tag=SEAch4_spawn,distance=0..1] run summon marker ~ ~ ~ {Tags:["SEAch4_spawn"]}
-
+#生成怪物
+execute positioned 90163 44 130 if entity @a[tag=SEAPT,distance=..2.7] unless entity @n[tag=SEAch4_spawn,distance=0..1] run function skyblock:sea/e/ch6/part1/entering_facility
+execute positioned 90172 44 134 if entity @a[tag=SEAPT,distance=..1.5] unless entity @n[tag=SEAch4_spawn,distance=0..1] run function skyblock:sea/e/ch4/mob_summon/the_bomber
+#会议室旁的办公室
+execute positioned 90187 47 105 if entity @a[tag=SEAPT,distance=..12] unless entity @n[tag=SEAch4_spawn,distance=0..1] run function skyblock:sea/e/ch4/mob_summon/office_by_the_conference_room
+#植物研究室
+execute positioned 90215 46 98 if entity @a[tag=SEAPT,distance=..15] unless entity @n[tag=SEAch4_spawn,distance=0..1] run function skyblock:sea/e/ch4/mob_summon/plant_research
 
 execute positioned 90175 44 130 if entity @a[tag=SEAPT,distance=..4.7] unless items entity @a[tag=SEAPT] container.* heart_of_the_sea unless entity @n[tag=SEAch4_spawn,distance=0..3] positioned ~ ~ ~ run function skyblock:sea/m/zombie_knight
 execute positioned 90175 44 130 if entity @a[tag=SEAPT,distance=..4.7] unless items entity @a[tag=SEAPT] container.* heart_of_the_sea unless entity @n[tag=SEAch4_spawn,distance=0..3] run summon marker ~ ~ ~ {Tags:["SEAch4_spawn"]}
 
+#越涵相遇可选路线
+execute if score SEA_ch4_event_railbox rng1 matches 2000.. as @n[tag=SEAyuehan] at @s if score @s sea_4temp1 matches ..800 run function skyblock:sea/e/ch4/possible_route_yuehan_meet
 
 
-#会议室旁的办公室
-execute positioned 90187 47 105 if entity @a[tag=SEAPT,distance=..12] unless entity @n[tag=SEAch4_spawn,distance=0..1] positioned 90186 46 104 run function skyblock:sea/m/silverfish
-execute positioned 90187 47 105 if entity @a[tag=SEAPT,distance=..12] unless entity @n[tag=SEAch4_spawn,distance=0..1] positioned 90190 46 106 run function skyblock:sea/m/skeleton_melee
-execute positioned 90187 47 105 if entity @a[tag=SEAPT,distance=..12] unless entity @n[tag=SEAch4_spawn,distance=0..1] positioned 90191 46 105 run function skyblock:sea/m/cave_spider
-execute positioned 90187 47 105 if entity @a[tag=SEAPT,distance=..12] unless entity @n[tag=SEAch4_spawn,distance=0..1] positioned 90179 46 107 run function skyblock:sea/m/skeleton_shield
-execute positioned 90187 47 105 if entity @a[tag=SEAPT,distance=..12] unless entity @n[tag=SEAch4_spawn,distance=0..1] positioned 90179 46 105 run function skyblock:sea/m/skeleton_melee
-execute positioned 90187 47 105 if entity @a[tag=SEAPT,distance=..12] unless entity @n[tag=SEAch4_spawn,distance=0..1] run summon marker ~ ~ ~ {Tags:["SEAch4_spawn"]}
 
-#植物研究室
-execute positioned 90215 46 98 if entity @a[tag=SEAPT,distance=..15] unless entity @n[tag=SEAch4_spawn,distance=0..1] positioned 90212 48 97 run function skyblock:sea/m/bee
-execute positioned 90215 46 98 if entity @a[tag=SEAPT,distance=..15] unless entity @n[tag=SEAch4_spawn,distance=0..1] positioned 90221 48 87 run function skyblock:sea/m/bee
-execute positioned 90215 46 98 if entity @a[tag=SEAPT,distance=..15] unless entity @n[tag=SEAch4_spawn,distance=0..1] positioned 90221 46 91 run function skyblock:sea/m/cave_spider
-execute positioned 90215 46 98 if entity @a[tag=SEAPT,distance=..15] unless entity @n[tag=SEAch4_spawn,distance=0..1] positioned 90209 46 98 run function skyblock:sea/m/spider
-execute positioned 90215 46 98 if entity @a[tag=SEAPT,distance=..15] unless entity @n[tag=SEAch4_spawn,distance=0..1] positioned 90208 46 87 run function skyblock:sea/m/cave_spider
-execute positioned 90215 46 98 if entity @a[tag=SEAPT,distance=..15] unless entity @n[tag=SEAch4_spawn,distance=0..1] positioned 90228 46 98 run function skyblock:sea/m/cave_spider_small
-execute positioned 90215 46 98 if entity @a[tag=SEAPT,distance=..15] unless entity @n[tag=SEAch4_spawn,distance=0..1] positioned 90228 46 98 run function skyblock:sea/m/cave_spider_small
-execute positioned 90215 46 98 if entity @a[tag=SEAPT,distance=..15] unless entity @n[tag=SEAch4_spawn,distance=0..1] positioned 90228 46 98 run function skyblock:sea/m/cave_spider_small
-execute positioned 90215 46 98 if entity @a[tag=SEAPT,distance=..15] unless entity @n[tag=SEAch4_spawn,distance=0..1] positioned 90231 46 95 run function skyblock:sea/m/silverfish
-execute positioned 90214 46 98 if entity @a[tag=SEAPT,distance=..15] unless entity @n[tag=SEAch4_spawn,distance=0..1] positioned 90231 46 95 run function skyblock:sea/m/silverfish
-execute positioned 90215 46 98 if entity @a[tag=SEAPT,distance=..15] unless entity @n[tag=SEAch4_spawn,distance=0..1] positioned 90252 46 105 run function skyblock:sea/m/cave_spider
-execute positioned 90215 46 98 if entity @a[tag=SEAPT,distance=..15] unless entity @n[tag=SEAch4_spawn,distance=0..1] positioned 90252 46 105 run function skyblock:sea/m/cave_spider
-execute positioned 90215 46 98 if entity @a[tag=SEAPT,distance=..15] unless entity @n[tag=SEAch4_spawn,distance=0..1] positioned 90252 46 105 run function skyblock:sea/m/cave_spider_small
-execute positioned 90215 46 98 if entity @a[tag=SEAPT,distance=..15] unless entity @n[tag=SEAch4_spawn,distance=0..1] positioned 90252 46 105 run function skyblock:sea/m/cave_spider_small
-execute positioned 90215 46 98 if entity @a[tag=SEAPT,distance=..15] unless entity @n[tag=SEAch4_spawn,distance=0..1] positioned 90252 46 105 run function skyblock:sea/m/cave_spider_small
-execute positioned 90215 46 98 if entity @a[tag=SEAPT,distance=..15] unless entity @n[tag=SEAch4_spawn,distance=0..1] positioned 90252 46 105 run function skyblock:sea/m/cave_spider_small
-execute positioned 90215 46 98 if entity @a[tag=SEAPT,distance=..15] unless entity @n[tag=SEAch4_spawn,distance=0..1] positioned 90248 50 102 run function skyblock:sea/m/bee
-execute positioned 90215 46 98 if entity @a[tag=SEAPT,distance=..15] unless entity @n[tag=SEAch4_spawn,distance=0..1] positioned 90234 57 89 run function skyblock:sea/m/shadow
-execute positioned 90215 46 98 if entity @a[tag=SEAPT,distance=..15] unless entity @n[tag=SEAch4_spawn,distance=0..1] positioned 90234 57 89 run function skyblock:sea/m/drowned_maintenance
-execute positioned 90215 46 98 if entity @a[tag=SEAPT,distance=..15] unless entity @n[tag=SEAch4_spawn,distance=0..1] positioned 90234 57 89 run function skyblock:sea/m/drowned_maintenance
 
-execute positioned 90215 46 98 if entity @a[tag=SEAPT,distance=..15] unless entity @n[tag=SEAch4_spawn,distance=0..1] positioned 90214 46 71 run function skyblock:sea/m/skeleton_shield
-execute positioned 90215 46 98 if entity @a[tag=SEAPT,distance=..15] unless entity @n[tag=SEAch4_spawn,distance=0..1] positioned 90214 46 71 run function skyblock:sea/m/skeleton
-
-execute positioned 90215 46 98 if entity @a[tag=SEAPT,distance=..15] unless entity @n[tag=SEAch4_spawn,distance=0..1] positioned 90238 57 95 run function skyblock:sea/m/mine
-execute positioned 90215 46 98 if entity @a[tag=SEAPT,distance=..15] unless entity @n[tag=SEAch4_spawn,distance=0..1] positioned 90222 57 87 run function skyblock:sea/m/drone
-execute positioned 90215 46 98 if entity @a[tag=SEAPT,distance=..15] unless entity @n[tag=SEAch4_spawn,distance=0..1] positioned 90208 57 93 run function skyblock:sea/m/drone
-
-execute positioned 90215 46 98 if entity @a[tag=SEAPT,distance=..15] unless entity @n[tag=SEAch4_spawn,distance=0..1] run summon marker ~ ~ ~ {Tags:["SEAch4_spawn"]}
 
 
 
