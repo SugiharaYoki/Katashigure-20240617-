@@ -40,3 +40,26 @@ execute if score @s sea_4temp1 matches 128 run playsound entity.villager.ambient
 execute if score @s sea_4temp1 matches 148 run tellraw @a[distance=0..250] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“还有，我说的小心是让你真小心点！我可没法打架，你真碰上事我可要跑的。”","color":"white","bold": false}]
 execute if score @s sea_4temp1 matches 148 run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
 
+execute if score @s sea_4temp1 matches 400 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“你确定你和我分开行动的时候没受伤吧？这地方这么危险，我很担心你。”","color":"white"}]
+execute if score @s sea_4temp1 matches 420 as @p[tag=SEAPT] at @s if entity @e[tag=SEAmob,distance=..5] run tellraw @a[distance=0..250] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“你先担心担心自己好不好？！非要现在问我吗？”","color":"white","bold": false}]
+execute if score @s sea_4temp1 matches 420 as @p[tag=SEAPT] at @s unless entity @e[tag=SEAmob,distance=..5] run tellraw @a[distance=0..250] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“我真的没事，活蹦乱跳的。我还担心你更多一点。”","color":"white","bold": false}]
+execute if score @s sea_4temp1 matches 420 run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
+
+execute if score @s sea_4temp1 matches 1020 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“奇怪了，她到底跑到哪里去了……”","color":"white","bold": false}]
+execute if score @s sea_4temp1 matches 1020 run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
+
+execute if score @s sea_4temp1 matches 1040 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“嗯？你指谁？”","color":"white"}]
+
+execute if score @s sea_4temp1 matches 1060 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“艾德雯娜。她确实没有告诉我具体要做什么，但十有八九就在这里。为什么找不到她呢……”","color":"white","bold": false}]
+execute if score @s sea_4temp1 matches 1060 run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
+
+execute if score @s sea_4temp1 matches 1190 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“话说你提到的这个艾德雯娜，她靠谱吗？”","color":"white"}]
+
+execute if score @s sea_4temp1 matches 1210 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“确实靠谱，但她喜欢打架，导致跟她走到哪里都没法消停。”","color":"white","bold": false}]
+execute if score @s sea_4temp1 matches 1210 run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
+
+execute if score @s sea_4temp1 matches 1250 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“说是这么说啊……现在还挺想和她汇合的。”","color":"white","bold": false}]
+execute if score @s sea_4temp1 matches 1250 run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
+
+
+

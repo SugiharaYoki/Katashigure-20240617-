@@ -269,7 +269,7 @@ execute positioned 90175 44 130 if entity @a[tag=SEAPT,distance=..4.7] unless it
 execute positioned 90175 44 130 if entity @a[tag=SEAPT,distance=..4.7] unless items entity @a[tag=SEAPT] container.* heart_of_the_sea unless entity @n[tag=SEAch4_spawn,distance=0..3] run summon marker ~ ~ ~ {Tags:["SEAch4_spawn"]}
 
 #越涵相遇可选路线
-execute if score SEA_ch4_event_railbox rng1 matches 2000.. as @n[tag=SEAyuehan] at @s if score @s sea_4temp1 matches ..800 run function skyblock:sea/e/ch4/possible_route_yuehan_meet
+execute if score SEA_ch4_event_railbox rng1 matches 2000.. as @n[tag=SEAyuehan] at @s if score @s sea_4temp1 matches ..2000 run function skyblock:sea/e/ch4/possible_route_yuehan_meet
 
 
 
