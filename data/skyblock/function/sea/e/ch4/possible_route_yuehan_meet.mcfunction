@@ -20,6 +20,7 @@ execute if score @s sea_4temp1 matches 44 run tellraw @a[distance=0..250] [{"tex
 execute if score @s sea_4temp1 matches 44 run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
 execute if score @s sea_4temp1 matches 64 run tellraw @a[distance=0..250] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“你这不也成功从下面那堆怪物里头杀上来了，我就知道你可以的兄弟！”","color":"white","bold": false}]
 execute if score @s sea_4temp1 matches 64 run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
+execute if score @s sea_4temp1 matches 81..90 run rotate @s facing 90159 45 132
 execute if score @s sea_4temp1 matches 84 run tellraw @a[distance=0..250] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“从这里继续往前就是实验区了。以我的看法，在这里探索一番无伤大雅，却也没什么意义。”","color":"white","bold": false}]
 execute if score @s sea_4temp1 matches 84 run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
 execute if score @s sea_4temp1 matches 104 run tellraw @a[distance=0..250] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“我会跟在你后面。至于具体打算怎么做，我听你的。”","color":"white","bold": false}]
