@@ -301,7 +301,15 @@ execute positioned 90209 57 89 if entity @a[tag=SEAPT,distance=..2.7] unless ite
 
 execute unless block 90241 46 134 air if score sea_ch4_aquatic_alarm rng1 matches 50 positioned 90229 43 134 as @a[tag=SEAPT,distance=..20] run tellraw @s {"text": "警告：水生生物研究区域 戒严管控中 请无关人员不要接近该区域","color": "red"}
 execute if score sea_ch4_aquatic_alarm rng1 matches 90 positioned 90167 35 99 as @a[tag=SEAPT,distance=..12] run tellraw @s {"text": "播报：欢迎来到忒尔克西水下研究中心，世界级实验动物学研究机构","color": "green"}
-execute if score sea_ch4_aquatic_alarm rng1 matches 90.. run scoreboard players set sea_ch4_aquatic_alarm rng1 0
+execute if score sea_ch4_aquatic_alarm rng1 matches 99 positioned 90167 35 99 as @a[tag=SEAPT,distance=..12] if entity @n[tag=SEAyuehan_ch4_acting,scores={sea_4temp2=5}] run tellraw @a[distance=0..250] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“欢迎来到忒尔克西水下研究中心，世界级实验动物学研究机构。”","color":"white","bold": false}]
+execute if score sea_ch4_aquatic_alarm rng1 matches 99 positioned 90167 35 99 as @a[tag=SEAPT,distance=..12] if entity @n[tag=SEAyuehan_ch4_acting,scores={sea_4temp2=5}] run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
+execute if score sea_ch4_aquatic_alarm rng1 matches 99 positioned 90167 35 99 as @a[tag=SEAPT,distance=..12] if entity @n[tag=SEAyuehan_ch4_acting,scores={sea_4temp2=10}] run tellraw @a[distance=0..250] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“我耳朵快长茧了。是因为这里很亮堂所以你不想走吗？”","color":"white","bold": false}]
+execute if score sea_ch4_aquatic_alarm rng1 matches 99 positioned 90167 35 99 as @a[tag=SEAPT,distance=..12] if entity @n[tag=SEAyuehan_ch4_acting,scores={sea_4temp2=10}] run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
+execute if score sea_ch4_aquatic_alarm rng1 matches 99 positioned 90167 35 99 as @a[tag=SEAPT,distance=..12] as @n[tag=SEAyuehan_ch4_acting] run scoreboard players add @s sea_4temp2 1
+
+
+
+execute if score sea_ch4_aquatic_alarm rng1 matches 100.. run scoreboard players set sea_ch4_aquatic_alarm rng1 0
 execute run scoreboard players add sea_ch4_aquatic_alarm rng1 1
 
 execute unless block 90241 46 134 air if block 90213 45 144 minecraft:waxed_weathered_copper_bulb[lit=true] \

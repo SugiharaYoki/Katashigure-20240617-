@@ -27,7 +27,7 @@ execute as @s[scores={rng3=1..}] run scoreboard players set @s rng3 0
 execute at @s run tag @n[tag=AzrielMob,distance=0..10,tag=!SEAmob] add SEAmob
 
 
-execute if entity @n[tag=SEAmob,distance=..3.8] store result score @s rng4 run random value 1..800
+execute if entity @n[tag=SEAmob,distance=..3.8,type=!bee] store result score @s rng4 run random value 1..800
 execute if entity @s[scores={rng4=1}] run tellraw @a[distance=0..28] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“啊啊啊、你快点帮忙把这些家伙拦住！”","color":"white","bold": false}]
 execute if entity @s[scores={rng4=2}] run tellraw @a[distance=0..28] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“敌人快蹭到我身上来了！！”","color":"white","bold": false}]
 execute if entity @s[scores={rng4=3}] run tellraw @a[distance=0..28] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“你听好我随时准备跑了，要看到我没影了别找我！”","color":"white","bold": false}]
@@ -40,3 +40,23 @@ execute as @s[scores={rng3=1}] at @s unless entity @r[tag=SEAPT,distance=..5] at
 scoreboard players set @s rng4 0
 
 effect clear @s poison
+
+
+
+execute if score @s sea_4temp3 matches ..200 as @a[tag=SEAPT] at @s if entity @e[type=bee,tag=SEAmob,distance=0..7] run scoreboard players add @s sea_4temp3 1
+execute if score @s sea_4temp3 matches 10 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“你看到那些巨型蜜蜂不？我刚刚做了一番观察。”","color":"white","bold": false}]
+execute if score @s sea_4temp3 matches 10 run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
+execute if score @s sea_4temp3 matches 100 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“这群蜜蜂没有主动攻击欲望，但是它们撒下来的毒粉很他妈棘手。”","color":"white","bold": false}]
+execute if score @s sea_4temp3 matches 100 run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
+execute if score @s sea_4temp3 matches 190 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“我建议是绕着走，不然你尝试用火去给它们烧了也行。”","color":"white","bold": false}]
+execute if score @s sea_4temp3 matches 190 run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
+
+
+
+
+
+
+
+
+
+
