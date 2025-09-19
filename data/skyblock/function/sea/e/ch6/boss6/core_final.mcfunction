@@ -90,14 +90,14 @@ execute as @n[tag=SEAboss6c] at @s run particle small_gust ^2.0 ^2.45 ^-2.1 0.04
 execute as @n[tag=SEAboss6c] at @s run particle small_gust ^-2.0 ^2.45 ^-2.1 0.04 0.05 0.04 0 1
 execute as @n[tag=SEAboss6c] at @s run particle small_gust ^2.4 ^2.65 ^-2.4 0.04 0.05 0.04 0 1
 execute as @n[tag=SEAboss6c] at @s run particle small_gust ^-2.4 ^2.65 ^-2.4 0.04 0.05 0.04 0 1
-execute as @n[tag=SEAboss6c] at @s run particle small_gust ^2.7 ^2.9 ^-2.7 0.05 0.06 0.05 0 1
-execute as @n[tag=SEAboss6c] at @s run particle small_gust ^-2.7 ^2.9 ^-2.7 0.05 0.06 0.05 0 1
-execute as @n[tag=SEAboss6c] at @s run particle small_gust ^3.1 ^3.15 ^-3.0 0.05 0.06 0.05 0 1
-execute as @n[tag=SEAboss6c] at @s run particle small_gust ^-3.1 ^3.15 ^-3.0 0.05 0.06 0.05 0 1
-execute as @n[tag=SEAboss6c] at @s run particle small_gust ^3.5 ^3.35 ^-3.3 0.05 0.06 0.05 0 1
-execute as @n[tag=SEAboss6c] at @s run particle small_gust ^-3.5 ^3.35 ^-3.3 0.06 0.07 0.06 0 1
-execute as @n[tag=SEAboss6c] at @s run particle small_gust ^4.9 ^3.6 ^-4.6 0.06 0.07 0.06 0 1
-execute as @n[tag=SEAboss6c] at @s run particle small_gust ^-4.9 ^3.6 ^-4.6 0.06 0.07 0.06 0 1
+execute as @n[tag=SEAboss6c] at @s run particle small_gust ^2.7 ^2.7 ^-2.7 0.05 0.06 0.05 0 1
+execute as @n[tag=SEAboss6c] at @s run particle small_gust ^-2.7 ^2.7 ^-2.7 0.05 0.06 0.05 0 1
+execute as @n[tag=SEAboss6c] at @s run particle small_gust ^3.1 ^2.8 ^-3.0 0.05 0.06 0.05 0 1
+execute as @n[tag=SEAboss6c] at @s run particle small_gust ^-3.1 ^2.8 ^-3.0 0.05 0.06 0.05 0 1
+execute as @n[tag=SEAboss6c] at @s run particle small_gust ^3.5 ^2.85 ^-3.3 0.05 0.06 0.05 0 1
+execute as @n[tag=SEAboss6c] at @s run particle small_gust ^-3.5 ^2.85 ^-3.3 0.06 0.07 0.06 0 1
+execute as @n[tag=SEAboss6c] at @s run particle small_gust ^4.9 ^2.9 ^-4.6 0.06 0.07 0.06 0 1
+execute as @n[tag=SEAboss6c] at @s run particle small_gust ^-4.9 ^2.9 ^-4.6 0.06 0.07 0.06 0 1
 
 
 
