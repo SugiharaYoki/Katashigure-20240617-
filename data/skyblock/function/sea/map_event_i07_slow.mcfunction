@@ -90,10 +90,10 @@ execute if score SEA_ch6_event sea_4temp4 matches 13200 as @p[tag=SEAPT] at @s r
 
 execute if score SEA_ch6_event sea_4temp4 matches 13400 as @p[tag=SEAPT] at @s run title @a[distance=0..250] title [{"text":"作者：SugiharaYoki","color":"white","bold": false}]
 execute if score SEA_ch6_event sea_4temp4 matches 13400 as @p[tag=SEAPT] at @s run title @a[distance=0..250] subtitle [{"text":"地图制作、数据包、内容策划、剧情","color":"white","bold": false}]
-execute if score SEA_ch6_event sea_4temp4 matches 13600 as @p[tag=SEAPT] at @s run title @a[distance=0..250] title [{"text":"协力制作者","color":"white","bold": false}]
-execute if score SEA_ch6_event sea_4temp4 matches 13600 as @p[tag=SEAPT] at @s run title @a[distance=0..250] subtitle [{"text":"XuanYu1725_XYU、qfys521","color":"white","bold": false}]
-execute if score SEA_ch6_event sea_4temp4 matches 13800 as @p[tag=SEAPT] at @s run title @a[distance=0..250] title [{"text":"协力制作者（续）","color":"white","bold": false}]
-execute if score SEA_ch6_event sea_4temp4 matches 13800 as @p[tag=SEAPT] at @s run title @a[distance=0..250] subtitle [{"text":"xiyihan、sdgedghdg","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 13600 as @p[tag=SEAPT] at @s run title @a[distance=0..250] title [{"text":"领衔协力制作者","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 13600 as @p[tag=SEAPT] at @s run title @a[distance=0..250] subtitle [{"text":"XuanYu1725_XYU、xiyihan","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 13800 as @p[tag=SEAPT] at @s run title @a[distance=0..250] title [{"text":"协力制作者","color":"white","bold": false}]
+execute if score SEA_ch6_event sea_4temp4 matches 13800 as @p[tag=SEAPT] at @s run title @a[distance=0..250] subtitle [{"text":"qfys521、sdgedghdg","color":"white","bold": false}]
 
 execute if score SEA_ch6_event sea_4temp4 matches 14000 as @p[tag=SEAPT] at @s run title @a[distance=0..250] title [{"text":"特别感谢","color":"white","bold": true}]
 execute if score SEA_ch6_event sea_4temp4 matches 14000 as @p[tag=SEAPT] at @s run title @a[distance=0..250] subtitle [{"text":"所有参与游戏测试的玩家","color":"white","bold": false}]
