@@ -144,7 +144,7 @@ execute as @s[scores={rng1=120..150}] run tag @s add SEAch4_conclusion
 
 
 #与越涵共同行动
-execute if score SEA_ch4_event_railbox rng9 matches 1.. run scoreboard players add SEA_ch4_event_railbox rng9 1
+execute if score SEA_ch4_event_railbox rng9 matches 1.. if score @n[tag=SEAboss4] sea_4temp1 matches 2.. run scoreboard players add SEA_ch4_event_railbox rng9 1
 execute if score SEA_ch4_event_railbox rng9 matches 30 run tellraw @a[distance=0..250] [{"selector":"@p[tag=SEAPT]","color":"aqua"},{"text":"：\n“不对等下！等下！你就是艾德雯娜吗？！”","color":"white"}]
 execute if score SEA_ch4_event_railbox rng9 matches 50 run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
 execute if score SEA_ch4_event_railbox rng9 matches 50 run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“不然我还能是谁？少说废话！”","color":"white","bold": false}]
