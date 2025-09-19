@@ -28,7 +28,7 @@ execute at @s run tag @n[tag=AzrielMob,distance=0..10,tag=!SEAmob] add SEAmob
 
 
 execute if entity @n[tag=SEAmob,distance=..3.8,type=!bee] store result score @s rng4 run random value 1..800
-execute if entity @s[scores={rng4=5..6}] run function skyblock:sea/e/ch6/yuehan/attack
+execute if entity @s[scores={rng4=5..9}] run function skyblock:sea/e/ch6/yuehan/attack
 execute if entity @s[scores={rng4=400..}] if items entity @s weapon.mainhand iron_hoe run item replace entity @s weapon.mainhand with air
 execute if entity @s[scores={rng4=1}] run tellraw @a[distance=0..28] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“啊啊啊、你快点帮忙把这些家伙拦住！”","color":"white","bold": false}]
 execute if entity @s[scores={rng4=2}] run tellraw @a[distance=0..28] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“敌人快蹭到我身上来了！！”","color":"white","bold": false}]
