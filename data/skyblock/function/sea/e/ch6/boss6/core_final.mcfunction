@@ -4,9 +4,9 @@ scoreboard players add @s rng1 1
 scoreboard players add SEAmusic rng1 1
 execute if score SEAmusic rng1 matches 2110 as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s if entity @n[tag=SEAboss6c,scores={health=250..}] run playsound minecraft:salvation2 music @s ~ ~ ~ 1 1.0
 execute if score SEAmusic rng1 matches 2110 as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s if entity @n[tag=SEAboss6c,scores={health=..249}] run playsound minecraft:salvation3 music @s ~ ~ ~ 1 1.0
-execute if score SEAmusic rng1 matches 3936.. as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s if entity @n[tag=SEAboss6c,scores={health=250..}] run stopsound @s music minecraft:salvation2
-execute if score SEAmusic rng1 matches 3936.. if entity @n[tag=SEAboss6c,scores={health=250..}] run scoreboard players set SEAmusic rng1 2109
-execute if score SEAmusic rng1 matches 3936.. if entity @n[tag=SEAboss6c,scores={health=..249}] run scoreboard players set SEAmusic rng1 2109
+execute if score SEAmusic rng1 matches 3930.. as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s if entity @n[tag=SEAboss6c,scores={health=250..}] run stopsound @s music minecraft:salvation2
+execute if score SEAmusic rng1 matches 3930.. if entity @n[tag=SEAboss6c,scores={health=250..}] run scoreboard players set SEAmusic rng1 2109
+execute if score SEAmusic rng1 matches 3930.. if entity @n[tag=SEAboss6c,scores={health=..249}] run scoreboard players set SEAmusic rng1 2109
 
 execute at @s as @e[type=marker,tag=SEA_boss6_flame_anchor,distance=0..450] at @s run function skyblock:sea/e/ch6/boss6/attack_flame_anchor_final
 execute at @s as @e[type=marker,tag=SEA_boss6_burst_anchor,distance=0..450] at @s run function skyblock:sea/e/ch6/boss6/attack_burst_anchor_final
@@ -66,38 +66,38 @@ execute as @e[tag=sea_ch6_ultimate_attack_marker,type=marker,distance=0..200] at
 
 
 
-execute as @n[tag=SEAboss6c] at @s run particle small_gust ^0.4 ^1.2 ^-0.5 0.04 0.05 0.04 0.03 1
-execute as @n[tag=SEAboss6c] at @s run particle small_gust ^-0.4 ^1.2 ^-0.5 0.04 0.05 0.04 0.03 1
-execute as @n[tag=SEAboss6c] at @s run particle small_gust ^0.7 ^1.3 ^-0.8 0.04 0.05 0.04 0.03 1
-execute as @n[tag=SEAboss6c] at @s run particle small_gust ^-0.7 ^1.3 ^-0.8 0.04 0.05 0.04 0.03 1
-execute as @n[tag=SEAboss6c] at @s run particle small_gust ^1.0 ^1.45 ^-1.1 0.04 0.05 0.04 0.03 1
-execute as @n[tag=SEAboss6c] at @s run particle small_gust ^-1.0 ^1.45 ^-1.1 0.04 0.05 0.04 0.03 1
-execute as @n[tag=SEAboss6c] at @s run particle small_gust ^1.4 ^1.65 ^-1.4 0.04 0.05 0.04 0.03 1
-execute as @n[tag=SEAboss6c] at @s run particle small_gust ^-1.4 ^1.65 ^-1.4 0.04 0.05 0.04 0.03 1
-execute as @n[tag=SEAboss6c] at @s run particle small_gust ^1.7 ^1.9 ^-1.7 0.05 0.06 0.05 0.03 1
-execute as @n[tag=SEAboss6c] at @s run particle small_gust ^-1.7 ^1.9 ^-1.7 0.05 0.06 0.05 0.03 1
-execute as @n[tag=SEAboss6c] at @s run particle small_gust ^2.1 ^2.15 ^-2.0 0.05 0.06 0.05 0.03 1
-execute as @n[tag=SEAboss6c] at @s run particle small_gust ^-2.1 ^2.15 ^-2.0 0.05 0.06 0.05 0.03 1
-execute as @n[tag=SEAboss6c] at @s run particle small_gust ^2.5 ^2.35 ^-2.3 0.05 0.06 0.05 0.03 1
-execute as @n[tag=SEAboss6c] at @s run particle small_gust ^-2.5 ^2.35 ^-2.3 0.06 0.07 0.06 0.03 1
-execute as @n[tag=SEAboss6c] at @s run particle small_gust ^2.9 ^2.6 ^-2.6 0.06 0.07 0.06 0.03 1
-execute as @n[tag=SEAboss6c] at @s run particle small_gust ^-2.9 ^2.6 ^-2.6 0.06 0.07 0.06 0.03 1
-execute as @n[tag=SEAboss6c] at @s run particle small_gust ^1.4 ^1.2 ^-1.5 0.04 0.05 0.04 0.03 1
-execute as @n[tag=SEAboss6c] at @s run particle small_gust ^-1.4 ^1.2 ^-1.5 0.04 0.05 0.04 0.03 1
-execute as @n[tag=SEAboss6c] at @s run particle small_gust ^1.7 ^1.3 ^-1.8 0.04 0.05 0.04 0.03 1
-execute as @n[tag=SEAboss6c] at @s run particle small_gust ^-1.7 ^1.3 ^-1.8 0.04 0.05 0.04 0.03 1
-execute as @n[tag=SEAboss6c] at @s run particle small_gust ^2.0 ^1.45 ^-2.1 0.04 0.05 0.04 0.03 1
-execute as @n[tag=SEAboss6c] at @s run particle small_gust ^-2.0 ^1.45 ^-2.1 0.04 0.05 0.04 0.03 1
-execute as @n[tag=SEAboss6c] at @s run particle small_gust ^2.4 ^1.65 ^-2.4 0.04 0.05 0.04 0.03 1
-execute as @n[tag=SEAboss6c] at @s run particle small_gust ^-2.4 ^1.65 ^-2.4 0.04 0.05 0.04 0.03 1
-execute as @n[tag=SEAboss6c] at @s run particle small_gust ^2.7 ^1.7 ^-2.7 0.05 0.06 0.05 0.03 1
-execute as @n[tag=SEAboss6c] at @s run particle small_gust ^-2.7 ^1.7 ^-2.7 0.05 0.06 0.05 0.03 1
-execute as @n[tag=SEAboss6c] at @s run particle small_gust ^3.1 ^1.8 ^-3.0 0.05 0.06 0.05 0.03 1
-execute as @n[tag=SEAboss6c] at @s run particle small_gust ^-3.1 ^1.8 ^-3.0 0.05 0.06 0.05 0.03 1
-execute as @n[tag=SEAboss6c] at @s run particle small_gust ^3.5 ^1.85 ^-3.3 0.05 0.06 0.05 0.03 1
-execute as @n[tag=SEAboss6c] at @s run particle small_gust ^-3.5 ^1.85 ^-3.3 0.06 0.07 0.06 0.03 1
-execute as @n[tag=SEAboss6c] at @s run particle small_gust ^4.9 ^1.9 ^-4.6 0.06 0.07 0.06 0.03 1
-execute as @n[tag=SEAboss6c] at @s run particle small_gust ^-4.9 ^1.9 ^-4.6 0.06 0.07 0.06 0.03 1
+execute as @n[tag=SEAboss6c] at @s run particle small_gust ^0.4 ^1.2 ^-0.2 0.04 0.05 0.04 0.03 1
+execute as @n[tag=SEAboss6c] at @s run particle small_gust ^-0.4 ^1.2 ^-0.2 0.04 0.05 0.04 0.03 1
+execute as @n[tag=SEAboss6c] at @s run particle small_gust ^0.7 ^1.3 ^-0.5 0.04 0.05 0.04 0.03 1
+execute as @n[tag=SEAboss6c] at @s run particle small_gust ^-0.7 ^1.3 ^-0.5 0.04 0.05 0.04 0.03 1
+execute as @n[tag=SEAboss6c] at @s run particle small_gust ^1.0 ^1.45 ^-0.8 0.04 0.05 0.04 0.03 1
+execute as @n[tag=SEAboss6c] at @s run particle small_gust ^-1.0 ^1.45 ^-0.8 0.04 0.05 0.04 0.03 1
+execute as @n[tag=SEAboss6c] at @s run particle small_gust ^1.4 ^1.65 ^-1.1 0.04 0.05 0.04 0.03 1
+execute as @n[tag=SEAboss6c] at @s run particle small_gust ^-1.4 ^1.65 ^-1.1 0.04 0.05 0.04 0.03 1
+execute as @n[tag=SEAboss6c] at @s run particle small_gust ^1.7 ^1.9 ^-1.4 0.05 0.06 0.05 0.03 1
+execute as @n[tag=SEAboss6c] at @s run particle small_gust ^-1.7 ^1.9 ^-1.4 0.05 0.06 0.05 0.03 1
+execute as @n[tag=SEAboss6c] at @s run particle small_gust ^2.1 ^2.15 ^-1.7 0.05 0.06 0.05 0.03 1
+execute as @n[tag=SEAboss6c] at @s run particle small_gust ^-2.1 ^2.15 ^-1.7 0.05 0.06 0.05 0.03 1
+execute as @n[tag=SEAboss6c] at @s run particle small_gust ^2.5 ^2.35 ^-2.0 0.05 0.06 0.05 0.03 1
+execute as @n[tag=SEAboss6c] at @s run particle small_gust ^-2.5 ^2.35 ^-2.0 0.06 0.07 0.06 0.03 1
+execute as @n[tag=SEAboss6c] at @s run particle small_gust ^2.9 ^2.6 ^-2.3 0.06 0.07 0.06 0.03 1
+execute as @n[tag=SEAboss6c] at @s run particle small_gust ^-2.9 ^2.6 ^-2.3 0.06 0.07 0.06 0.03 1
+execute as @n[tag=SEAboss6c] at @s run particle small_gust ^1.4 ^1.2 ^-1.2 0.04 0.05 0.04 0.03 1
+execute as @n[tag=SEAboss6c] at @s run particle small_gust ^-1.4 ^1.2 ^-1.2 0.04 0.05 0.04 0.03 1
+execute as @n[tag=SEAboss6c] at @s run particle small_gust ^1.7 ^1.3 ^-1.5 0.04 0.05 0.04 0.03 1
+execute as @n[tag=SEAboss6c] at @s run particle small_gust ^-1.7 ^1.3 ^-1.5 0.04 0.05 0.04 0.03 1
+execute as @n[tag=SEAboss6c] at @s run particle small_gust ^2.0 ^1.45 ^-1.8 0.04 0.05 0.04 0.03 1
+execute as @n[tag=SEAboss6c] at @s run particle small_gust ^-2.0 ^1.45 ^-1.8 0.04 0.05 0.04 0.03 1
+execute as @n[tag=SEAboss6c] at @s run particle small_gust ^2.4 ^1.65 ^-2.1 0.04 0.05 0.04 0.03 1
+execute as @n[tag=SEAboss6c] at @s run particle small_gust ^-2.4 ^1.65 ^-2.1 0.04 0.05 0.04 0.03 1
+execute as @n[tag=SEAboss6c] at @s run particle small_gust ^2.7 ^1.7 ^-2.4 0.05 0.06 0.05 0.03 1
+execute as @n[tag=SEAboss6c] at @s run particle small_gust ^-2.7 ^1.7 ^-2.4 0.05 0.06 0.05 0.03 1
+execute as @n[tag=SEAboss6c] at @s run particle small_gust ^3.1 ^1.8 ^-2.7 0.05 0.06 0.05 0.03 1
+execute as @n[tag=SEAboss6c] at @s run particle small_gust ^-3.1 ^1.8 ^-2.7 0.05 0.06 0.05 0.03 1
+execute as @n[tag=SEAboss6c] at @s run particle small_gust ^3.5 ^1.85 ^-3.0 0.05 0.06 0.05 0.03 1
+execute as @n[tag=SEAboss6c] at @s run particle small_gust ^-3.5 ^1.85 ^-3.0 0.06 0.07 0.06 0.03 1
+execute as @n[tag=SEAboss6c] at @s run particle small_gust ^4.9 ^1.9 ^-4.2 0.06 0.07 0.06 0.03 1
+execute as @n[tag=SEAboss6c] at @s run particle small_gust ^-4.9 ^1.9 ^-4.2 0.06 0.07 0.06 0.03 1
 
 
 
