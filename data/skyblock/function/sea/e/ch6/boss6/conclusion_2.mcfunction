@@ -108,7 +108,9 @@ execute if score SEA_ch6_event sea_4temp4 matches 1742 as @n[tag=SEAedwina] at @
 
 execute positioned 90069 21 -1815 as @e[type=marker,tag=SEA_boss6_flame_anchor,distance=0..50] at @s run function skyblock:sea/e/ch6/boss6/attack_flame_anchor
 execute positioned 90069 21 -1815 as @e[type=marker,tag=SEA_boss6_burst_anchor,distance=0..50] at @s run function skyblock:sea/e/ch6/boss6/attack_burst_anchor
-
+execute if score SEA_ch6_event sea_4temp4 matches 1792..1800 as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s run playsound ambient.soul_sand_valley.mood ambient @s ~ ~ ~ 3 0.7
+execute if score SEA_ch6_event sea_4temp4 matches 1792..1800 as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s run playsound ambient.soul_sand_valley.mood ambient @s ~ ~ ~ 3 0.8
+execute if score SEA_ch6_event sea_4temp4 matches 1792..1794 as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s run playsound ambient.soul_sand_valley.additions ambient @s ~ ~ ~ 3 0.7
 
 #execute if score SEA_ch6_event sea_4temp4 matches 1792..1821 as @n[tag=SEAboss6b] at @s positioned ~ ~ ~ run particle minecraft:small_gust ~ ~4 ~ 0 8 0 0.9 100
 execute if score SEA_ch6_event sea_4temp4 matches 1792..1821 as @n[tag=SEAboss6b] at @s positioned ~ ~ ~ run particle minecraft:flame ~ ~4 ~ 0 8 0 0.2 40
