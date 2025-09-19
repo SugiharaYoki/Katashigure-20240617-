@@ -43,6 +43,8 @@ execute as @s[scores={sea_4temp1=1}] positioned 90170 45 123 run tag @n[tag=SEAh
 
 execute if score SEA_ch4_event_railbox rng1 matches 2000.. positioned 90157 44 132 run function skyblock:sea/m/unique/npc_yuehan
 execute if score SEA_ch4_event_railbox rng1 matches 2000.. positioned 90157 44 132 run scoreboard players set @n[tag=SEAyuehan] sea_4temp1 0
+execute if score SEA_ch4_event_railbox rng1 matches ..1999 run fill 90161 45 129 90161 45 131 air
+
 
 execute as @s[scores={sea_4temp1=1}] run scoreboard players set @a[tag=SEAPT,scores={sea_progress=..9}] sea_progress 10
 

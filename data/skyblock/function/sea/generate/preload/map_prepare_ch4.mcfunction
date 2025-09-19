@@ -15,6 +15,7 @@ kill @e[tag=SEAbossch3_core]
 kill @e[tag=SEAbossch3_light]
 
 scoreboard players set SEA_ch4_event_railbox rng1 0
+fill 90161 45 129 90161 45 131 minecraft:iron_block
 
 setblock 90169 20 80 air
 setblock 90169 20 80 lever[facing=north,face=floor]

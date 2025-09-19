@@ -1,17 +1,39 @@
-scoreboard players add SEA_ch4_event_railbox rng1 1
 
-execute if score SEA_ch4_event_railbox rng1 matches 2 run playsound minecraft:item.goat_horn.sound.6 master @a[tag=SEAPT] ~ ~20 ~ 10000 0.8
-execute if score SEA_ch4_event_railbox rng1 matches 2 run playsound minecraft:item.goat_horn.sound.6 master @a[tag=SEAPT] ~ ~20 ~ 10000 0.87
-execute if score SEA_ch4_event_railbox rng1 matches 2 run playsound minecraft:item.goat_horn.sound.6 master @a[tag=SEAPT] ~ ~20 ~ 10000 0.84
-execute if score SEA_ch4_event_railbox rng1 matches 32 run playsound minecraft:item.goat_horn.sound.6 master @a[tag=SEAPT] ~ ~20 ~ 10000 0.8
-execute if score SEA_ch4_event_railbox rng1 matches 32 run playsound minecraft:item.goat_horn.sound.6 master @a[tag=SEAPT] ~ ~20 ~ 10000 0.87
-execute if score SEA_ch4_event_railbox rng1 matches 32 run playsound minecraft:item.goat_horn.sound.6 master @a[tag=SEAPT] ~ ~20 ~ 10000 0.84
-execute if score SEA_ch4_event_railbox rng1 matches 62 run playsound minecraft:item.goat_horn.sound.6 master @a[tag=SEAPT] ~ ~20 ~ 10000 0.8
-execute if score SEA_ch4_event_railbox rng1 matches 62 run playsound minecraft:item.goat_horn.sound.6 master @a[tag=SEAPT] ~ ~20 ~ 10000 0.87
-execute if score SEA_ch4_event_railbox rng1 matches 62 run playsound minecraft:item.goat_horn.sound.6 master @a[tag=SEAPT] ~ ~20 ~ 10000 0.84
 
-execute if score SEA_ch4_event_railbox rng1 matches 22 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“我这是把什么警报触发了……？”","color":"white"}]
-execute if score SEA_ch4_event_railbox rng1 matches 92 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“好像……什么事都没发生。看来这里的警报系统已经没有意义了。”","color":"white"}]
+scoreboard players add @s sea_4temp1 1
 
-execute if score SEA_ch4_event_railbox rng1 matches 93..100 unless block 90151 39 101 air if entity @a[tag=e_i_28,tag=SEAPT] run scoreboard players set SEA_ch4_event_railbox rng1 2000
-execute if score SEA_ch4_event_railbox rng1 matches 93..100 run scoreboard players set SEA_ch4_event_railbox rng1 95
+
+
+
+execute if score @s sea_4temp1 matches 2..5 run scoreboard players set @s sea_4temp1 2
+execute if entity @a[tag=SEAPT,x=90154,y=44,z=128,dx=10,dy=10,dz=10] if score @s sea_4temp1 matches ..5 run scoreboard players set @s sea_4temp1 10
+
+execute if score @s sea_4temp1 matches 11 run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.9
+execute if score @s sea_4temp1 matches 11..20 run rotate @s facing entity @p[tag=SEAPT]
+execute if score @s sea_4temp1 matches 14 run tellraw @a[distance=0..250] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“我操，操！你吓得我混都没了！！”","color":"white","bold": false}]
+execute if score @s sea_4temp1 matches 14 run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
+
+execute if score @s sea_4temp1 matches 29 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“越涵！！这下松了口气，你没事真是太好了……”","color":"white"}]
+
+execute if score @s sea_4temp1 matches 44 run tellraw @a[distance=0..250] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“我能有什么事，我可是东躲西藏一路活到现在了！我本事高着呢。”","color":"white","bold": false}]
+execute if score @s sea_4temp1 matches 44 run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
+execute if score @s sea_4temp1 matches 64 run tellraw @a[distance=0..250] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“你这不也成功从下面那堆怪物里头杀上来了，我就知道你可以的兄弟！”","color":"white","bold": false}]
+execute if score @s sea_4temp1 matches 64 run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
+execute if score @s sea_4temp1 matches 84 run tellraw @a[distance=0..250] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“从这里继续往前就是实验区了。以我的看法，在这里探索一番无伤大雅，却也没什么意义。”","color":"white","bold": false}]
+execute if score @s sea_4temp1 matches 84 run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
+execute if score @s sea_4temp1 matches 104 run tellraw @a[distance=0..250] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“我会跟在你后面。至于具体打算怎么做，我听你的。”","color":"white","bold": false}]
+execute if score @s sea_4temp1 matches 104 run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
+
+execute if score @s sea_4temp1 matches 106 at @s run tp @s ~ ~ ~ facing 90158 45 131
+execute if score @s sea_4temp1 matches 107 at @s run tp @s 90158 45 131 facing 90159 45 130
+execute if score @s sea_4temp1 matches 108 at @s run tp @s ~ ~ ~ facing 90159 45 131
+execute if score @s sea_4temp1 matches 109..110 at @s run tp @s ~1 ~ ~ facing ~2 ~ ~
+execute if score @s sea_4temp1 matches 112 at @s run playsound minecraft:block.iron_door.open block @a 90161 45 130 10 0.5
+execute if score @s sea_4temp1 matches 112 at @s run fill 90161 45 129 90161 45 131 air
+execute if score @s sea_4temp1 matches 115 at @s run function skyblock:sea/e/ch6/yuehan/init
+
+execute if score @s sea_4temp1 matches 128 run tellraw @a[distance=0..250] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“切记：小心！这里有一堆你没见过的怪物。”","color":"white","bold": false}]
+execute if score @s sea_4temp1 matches 128 run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
+execute if score @s sea_4temp1 matches 148 run tellraw @a[distance=0..250] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“还有，我说的小心是让你真小心点！我可没法打架，你真碰上事我可要跑的。”","color":"white","bold": false}]
+execute if score @s sea_4temp1 matches 148 run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
+
