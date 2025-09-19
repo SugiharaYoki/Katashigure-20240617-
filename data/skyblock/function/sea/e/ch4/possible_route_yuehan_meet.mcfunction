@@ -6,10 +6,11 @@ scoreboard players add @s sea_4temp1 1
 
 
 execute if score @s sea_4temp1 matches 2..5 run scoreboard players set @s sea_4temp1 2
+execute if score @s sea_4temp1 matches 2..5 run rotate @s facing 90158 44 133
 execute if entity @a[tag=SEAPT,x=90154,y=44,z=128,dx=10,dy=10,dz=10] if score @s sea_4temp1 matches ..5 run scoreboard players set @s sea_4temp1 10
 
 execute if score @s sea_4temp1 matches 11 run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.9
-execute if score @s sea_4temp1 matches 11..20 run rotate @s facing entity @p[tag=SEAPT]
+execute if score @s sea_4temp1 matches 11..80 run rotate @s facing entity @p[tag=SEAPT]
 execute if score @s sea_4temp1 matches 14 run tellraw @a[distance=0..250] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“我操，操！你吓得我混都没了！！”","color":"white","bold": false}]
 execute if score @s sea_4temp1 matches 14 run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
 
