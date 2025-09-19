@@ -87,10 +87,12 @@ bossbar remove 9066602
 setblock -25 23 32 air
 #fill 90065 104 139 90065 104 141 barrier
 gamerule doDaylightCycle true
-tellraw @a[tag=!Gaming] {"text": "2135年6月29日","color": "green"}
-tellraw @a[tag=!Gaming] {"text": "忒尔克西海上钻井平台已经失联24小时整，","color": "green"}
-tellraw @a[tag=!Gaming] {"text": "太平洋石油管理局的高层决定派你前去调查情况。","color": "green"}
-tellraw @a[tag=!Gaming] [{"text": "『厄珀娅的悲歌』","color": "light_purple","bold": true},{"text": " 以雷米尔之名，见证他们的结局……","color": "green","bold": false}]
+tellraw @a[tag=!Gaming,scores={sea_progress=..18}] {"text": "2135年6月29日","color": "green"}
+tellraw @a[tag=!Gaming,scores={sea_progress=19..}] {"text": "2135年7月4日","color": "green"}
+tellraw @a[tag=!Gaming,scores={sea_progress=..18}] {"text": "忒尔克西海上钻井平台已经失联24小时整，\n太平洋石油管理局的高层决定派你前去调查情况。","color": "green"}
+tellraw @a[tag=!Gaming,scores={sea_progress=19..}] {"text": "美国政府就忒尔克西海上钻井平台意外爆炸一事展开全面调查。\n太平洋石油管理局的高层拒绝接受采访。\n死亡者不计其数，甚至中情局的特派调查员也未能幸免。","color": "green"}
+tellraw @a[tag=!Gaming,scores={sea_progress=..18}] [{"text": "『厄珀娅的悲歌』","color": "light_purple","bold": true},{"text": " 以雷米尔之名，见证他们的结局……","color": "green","bold": false}]
+tellraw @a[tag=!Gaming,scores={sea_progress=19..}] [{"text": "『厄珀娅的悲歌』","color": "light_purple","bold": true},{"text": " 以雷米尔之名，你已见证他们的结局。\n但你依然能那些受限于过去的人们重逢。\n怀念故人，抑或是踏上新的旅程？你早已作出正确的决定。","color": "green","bold": false}]
 tag @a remove sea_dead
 scoreboard players reset 10e959db-4b44-4cdd-b98c-350d3b454206 sea_4temp1
 scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 sea_4temp2 0
