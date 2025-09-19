@@ -89,9 +89,19 @@ execute if score @s sea_4temp1 matches 1900..1999 run scoreboard players set @s 
 execute if entity @a[tag=SEAPT,x=90229,y=49,z=101,dx=7,dy=6,dz=7] run scoreboard players set @s sea_4temp1 5001
 
 
+execute if score @s sea_4temp1 matches 5001 run tag @n[tag=SEAyuehan] remove SEAyuehan_actable
+execute if score @s sea_4temp1 matches 5001 run tellraw @a[distance=0..250] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“从这里爬上去确实能到生态控制系统……”","color":"white","bold": false}]
+execute if score @s sea_4temp1 matches 5001 run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
 
+execute if score @s sea_4temp1 matches 5020 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“嗯？怎么，你不跟我上来吗？”","color":"white"}]
 
+execute if score @s sea_4temp1 matches 5037 run tellraw @a[distance=0..250] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“那我也得上得去啊。没事兄弟你别担心，我有别的路线可以过去。”","color":"white","bold": false}]
+execute if score @s sea_4temp1 matches 5037 run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
 
+execute if score @s sea_4temp1 matches 5057 if entity @a[tag=SEAPT,distance=0..8] run tellraw @a[distance=0..250] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“刚刚是因为我们一起。如果是我一个人的话很快就能绕过去。别担心我。”","color":"white","bold": false}]
+execute if score @s sea_4temp1 matches 5057 if entity @a[tag=SEAPT,distance=0..8] run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
 
+execute if score @s sea_4temp1 matches 5057.. unless entity @a[tag=SEAPT,distance=0..12] run tp @s ~ ~-50 ~
+execute if score @s sea_4temp1 matches 5059.. unless entity @a[tag=SEAPT,distance=0..12] run kill @s
 
 
