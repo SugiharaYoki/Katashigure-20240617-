@@ -62,5 +62,9 @@ execute as @s[scores={sea_4temp1=338}] positioned 90168 36 87 as @p[tag=SEAPT] r
 execute as @s[scores={sea_4temp1=359}] run tellraw @a[distance=0..250] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“要到那地方的话，正常过去的路相当危险，我们得找一条替代路线。”","color":"white","bold": false}]
 execute as @s[scores={sea_4temp1=359}] run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
 
+execute as @s[scores={sea_4temp1=379}] positioned 90168 36 87 as @p[tag=SEAPT] run tellraw @a[distance=0..50] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“你有什么头绪吗？”","color":"white"}]
+execute as @s[scores={sea_4temp1=395}] run tellraw @a[distance=0..250] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“很遗憾！完全没。”","color":"white","bold": false}]
+execute as @s[scores={sea_4temp1=395}] run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
+
 execute as @s[scores={sea_4temp1=359}] run setblock 90163 36 86 green_concrete
 execute as @s[scores={sea_4temp1=359}] run item replace block 90148 145 152 container.1 with minecraft:yellow_wool
