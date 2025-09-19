@@ -112,7 +112,7 @@ execute positioned 90118 123 106 unless entity @s[tag=!seaPerm000,distance=0..12
 
 
 #炽热球体
-execute as @n[tag=SEAmagma1,type=marker,distance=0..2.5,predicate=!skyblock:sneaking] at @s run function skyblock:sea/p/magma
-execute as @n[tag=SEAmagma1,type=marker,distance=0..2.0,predicate=skyblock:sneaking] at @s run function skyblock:sea/p/magma
+execute if entity @s[predicate=!skyblock:sneaking] as @n[tag=SEAmagma1,type=marker,distance=0..2.7] at @s run function skyblock:sea/p/magma
+execute if entity @s[predicate=sneaking] as @n[tag=SEAmagma1,type=marker,distance=0..2.2] at @s run function skyblock:sea/p/magma
 
 
