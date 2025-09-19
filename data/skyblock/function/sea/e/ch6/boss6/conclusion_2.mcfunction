@@ -189,7 +189,7 @@ execute if score SEA_ch6_event sea_4temp4 matches 1890 as @a[tag=SEAedwina] at @
 
 execute if score SEA_ch6_event sea_4temp4 matches 1970..2080 run function skyblock:sea/experimental/backjump_loop
 execute if score SEA_ch6_event sea_4temp4 matches 1979 as @a[tag=SEAPT] at @s run function skyblock:sea/experimental/backjump
-execute if score SEA_ch6_event sea_4temp4 matches 1880 as @a[tag=SEAPT] at @s run stopsound @s music
+execute if score SEA_ch6_event sea_4temp4 matches 1880 as @p[tag=SEAPT] at @s run stopsound @a[distance=..250] music
 
 
 execute if score SEA_ch6_event sea_4temp4 matches 2050 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"伊曼纽尔：","color":"aqua","bold": true},{"text":"\n“艾德雯娜！！！！！”","color":"white","bold": false}]
