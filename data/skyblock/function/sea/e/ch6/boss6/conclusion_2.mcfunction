@@ -68,6 +68,7 @@ execute if score SEA_ch6_event sea_4temp4 matches 1542..2069 store result bossba
 execute if score SEA_ch6_event sea_4temp4 matches 1349 as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s run playsound minecraft:falsegod music @s ~ ~ ~ 1 1.0
 execute if score SEA_ch6_event sea_4temp4 matches 3100 as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s run playsound minecraft:salvation1 music @s ~ ~ ~ 1 1.0
 execute if score SEA_ch6_event sea_4temp4 matches 3101 as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s run scoreboard players set SEAmusic rng1 0
+execute if score SEA_ch6_event sea_4temp4 matches ..5000 as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s run stopsound @s music minecraft:salvation2
 #execute if score SEA_ch6_event sea_4temp4 matches 5310 as @p[tag=SEAPT] at @s as @a[distance=0..250] at @s run playsound minecraft:salvation2 music @s ~ ~ ~ 1 1.0
 
 execute if score SEA_ch6_event sea_4temp4 matches 1552 as @p[tag=SEAPT] at @s run title @a[distance=0..250] times 1s 3s 1s
