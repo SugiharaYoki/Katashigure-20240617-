@@ -94,11 +94,11 @@ execute as @s[scores={rng1=5}] as @n[tag=SEAboss_end] at @s run tp @s ~ ~ ~ faci
 execute as @s[scores={rng1=7}] as @n[tag=SEAboss_end] at @s run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
 
 
-execute as @s[scores={rng1=25}] if score SEA_ch4_event_railbox rng9 matches 160.. if entity @n[tag=sc,scores={sea_player=1..}] run tellraw @a[distance=0..250] [{"selector":"@p[tag=SEAPT]","color":"white"},{"text":"：\n“我靠……感情我说的是不是实话有任何区别吗？”","color":"white"}]
+execute as @s[scores={rng1=25}] if score SEA_ch4_event_railbox rng9 matches 160.. if entity @n[tag=sc,scores={sea_player=1..}] run tellraw @a[distance=0..250] [{"selector":"@p[tag=SEAPT]","color":"aqua"},{"text":"：\n“我靠……感情我说的是不是实话有任何区别吗？”","color":"white"}]
 execute as @s[scores={rng1=25}] if score SEA_ch4_event_railbox rng9 matches ..159 at @n[tag=SEAedwina] run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
 execute as @s[scores={rng1=25}] if score SEA_ch4_event_railbox rng9 matches ..159 at @n[tag=SEAedwina] run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“你怎么不告诉我这件事？”","color":"white","bold": false}]
 
-execute as @s[scores={rng1=40}] if score SEA_ch4_event_railbox rng9 matches ..159 if entity @n[tag=sc,scores={sea_player=1..}] run tellraw @a[distance=0..250] [{"selector":"@p[tag=SEAPT]","color":"white"},{"text":"：\n“你……你也没问我啊，而且你是要我假设告诉你这件事，你就会信过我了？”","color":"white"}]
+execute as @s[scores={rng1=40}] if score SEA_ch4_event_railbox rng9 matches ..159 if entity @n[tag=sc,scores={sea_player=1..}] run tellraw @a[distance=0..250] [{"selector":"@p[tag=SEAPT]","color":"aqua"},{"text":"：\n“你……你也没问我啊，而且你是要我假设告诉你这件事，你就会信过我了？”","color":"white"}]
 execute as @s[scores={rng1=40}] if score SEA_ch4_event_railbox rng9 matches 160.. at @n[tag=SEAedwina] run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
 execute as @s[scores={rng1=40}] if score SEA_ch4_event_railbox rng9 matches 160.. at @n[tag=SEAedwina] run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“我……这、我真的相当抱歉，我完全没有料到会有我们这边的人主动来到这下面。”","color":"white","bold": false}]
 
@@ -126,10 +126,10 @@ execute as @s[scores={rng1=55}] as @n[tag=SEAboss_end] run data modify entity @s
 execute as @s[scores={rng1=70}] at @n[tag=SEAedwina] run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
 execute as @s[scores={rng1=70}] at @n[tag=SEAedwina] run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“容许我再次自我介绍一下吧：我是艾德雯娜，美国CIA特工。那个，你身上有面包吗？”","color":"white","bold": false}]
 
-execute as @s[scores={rng1=86}] if entity @n[tag=sc,scores={sea_player=1}] unless items entity @a[tag=SEAPT] container.* bread run tellraw @a[distance=0..250] [{"selector":"@p[tag=SEAPT]","color":"white"},{"text":"：\n“那必然是没有的。你觉得就你需要一直吃东西？”","color":"white"}]
-execute as @s[scores={rng1=86}] if entity @n[tag=sc,scores={sea_player=2..}] unless items entity @a[tag=SEAPT] container.* bread run tellraw @a[distance=0..250] [{"selector":"@p[tag=SEAPT]","color":"white"},{"text":"：\n“那必然是没有的。至少我没了。”","color":"white"}]
-execute as @s[scores={rng1=86}] if entity @n[tag=sc,scores={sea_player=1}] if items entity @a[tag=SEAPT] container.* bread run tellraw @a[distance=0..250] [{"selector":"@p[tag=SEAPT]","color":"white"},{"text":"：\n“有是有。你又要啃？”","color":"white"}]
-execute as @s[scores={rng1=86}] if entity @n[tag=sc,scores={sea_player=2..}] if items entity @a[tag=SEAPT] container.* bread run tellraw @a[distance=0..250] [{"selector":"@p[tag=SEAPT]","color":"white"},{"text":"：\n“有是有，但我得先问我同事他要不要。我可不想面包直接被你霍霍了。”","color":"white"}]
+execute as @s[scores={rng1=86}] if entity @n[tag=sc,scores={sea_player=1}] unless items entity @a[tag=SEAPT] container.* bread run tellraw @a[distance=0..250] [{"selector":"@p[tag=SEAPT]","color":"aqua"},{"text":"：\n“那必然是没有的。你觉得就你需要一直吃东西？”","color":"white"}]
+execute as @s[scores={rng1=86}] if entity @n[tag=sc,scores={sea_player=2..}] unless items entity @a[tag=SEAPT] container.* bread run tellraw @a[distance=0..250] [{"selector":"@p[tag=SEAPT]","color":"aqua"},{"text":"：\n“那必然是没有的。至少我没了。”","color":"white"}]
+execute as @s[scores={rng1=86}] if entity @n[tag=sc,scores={sea_player=1}] if items entity @a[tag=SEAPT] container.* bread run tellraw @a[distance=0..250] [{"selector":"@p[tag=SEAPT]","color":"aqua"},{"text":"：\n“有是有。你又要啃？”","color":"white"}]
+execute as @s[scores={rng1=86}] if entity @n[tag=sc,scores={sea_player=2..}] if items entity @a[tag=SEAPT] container.* bread run tellraw @a[distance=0..250] [{"selector":"@p[tag=SEAPT]","color":"aqua"},{"text":"：\n“有是有，但我得先问我同事他要不要。我可不想面包直接被你霍霍了。”","color":"white"}]
 
 execute as @s[scores={rng1=100}] at @n[tag=SEAedwina] run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
 execute as @s[scores={rng1=100}] at @n[tag=SEAedwina] if entity @n[tag=sc,scores={sea_player=1}] unless items entity @a[tag=SEAPT] container.* bread run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“嗯，想必也是如此……抱歉。我们先去找越涵吧。”","color":"white","bold": false}]
@@ -145,29 +145,29 @@ execute as @s[scores={rng1=120..150}] run tag @s add SEAch4_conclusion
 
 #与越涵共同行动
 execute if score SEA_ch4_event_railbox rng9 matches 1.. run scoreboard players add SEA_ch4_event_railbox rng9 1
-execute if score SEA_ch4_event_railbox rng9 matches 30 run tellraw @a[distance=0..250] [{"selector":"@p[tag=SEAPT]","color":"white"},{"text":"：\n“不对等下！等下！你就是艾德雯娜吗？！”","color":"white"}]
+execute if score SEA_ch4_event_railbox rng9 matches 30 run tellraw @a[distance=0..250] [{"selector":"@p[tag=SEAPT]","color":"aqua"},{"text":"：\n“不对等下！等下！你就是艾德雯娜吗？！”","color":"white"}]
 execute if score SEA_ch4_event_railbox rng9 matches 50 run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
 execute if score SEA_ch4_event_railbox rng9 matches 50 run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“不然我还能是谁？少说废话！”","color":"white","bold": false}]
 execute if score SEA_ch4_event_railbox rng9 matches 70 run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
-execute if score SEA_ch4_event_railbox rng9 matches 70 run tellraw @a[distance=0..250] [{"selector":"@p[tag=SEAPT]","color":"white"},{"text":"：\n“我不是那个意思！我是说我早就认识你，我听说过你！！”","color":"white"}]
+execute if score SEA_ch4_event_railbox rng9 matches 70 run tellraw @a[distance=0..250] [{"selector":"@p[tag=SEAPT]","color":"aqua"},{"text":"：\n“我不是那个意思！我是说我早就认识你，我听说过你！！”","color":"white"}]
 execute if score SEA_ch4_event_railbox rng9 matches 90 run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
 execute if score SEA_ch4_event_railbox rng9 matches 90 run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“那我更得在这里将你杀了，接招！”","color":"white","bold": false}]
 execute if score SEA_ch4_event_railbox rng9 matches 110 run scoreboard players set @n[tag=SEAboss4] rng2 4
-execute if score SEA_ch4_event_railbox rng9 matches 130 run tellraw @a[distance=0..250] [{"selector":"@p[tag=SEAPT]","color":"white"},{"text":"：\n“这是武器不武器的问题吗？！”","color":"white"}]
-execute if score SEA_ch4_event_railbox rng9 matches 160 run tellraw @a[distance=0..250] [{"selector":"@p[tag=SEAPT]","color":"white"},{"text":"：\n“先别打，我是从越涵那里听说的你！！”","color":"white"}]
+execute if score SEA_ch4_event_railbox rng9 matches 130 run tellraw @a[distance=0..250] [{"selector":"@p[tag=SEAPT]","color":"aqua"},{"text":"：\n“这是武器不武器的问题吗？！”","color":"white"}]
+execute if score SEA_ch4_event_railbox rng9 matches 160 run tellraw @a[distance=0..250] [{"selector":"@p[tag=SEAPT]","color":"aqua"},{"text":"：\n“先别打，我是从越涵那里听说的你！！”","color":"white"}]
 execute if score SEA_ch4_event_railbox rng9 matches 180 run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
 execute if score SEA_ch4_event_railbox rng9 matches 180 run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“越涵连把称手的武器都没有，他一个人行动肯定早就遇害了，你休想骗我！”","color":"white","bold": false}]
 execute if score SEA_ch4_event_railbox rng9 matches 220 run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
 execute if score SEA_ch4_event_railbox rng9 matches 220 run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“就算是越涵还活着，他又怎么可能会主动带你到这种地方来？！他是个不折不扣的胆小鬼！”","color":"white","bold": false}]
-execute if score SEA_ch4_event_railbox rng9 matches 245 run tellraw @a[distance=0..250] [{"selector":"@p[tag=SEAPT]","color":"white"},{"text":"：\n“他是不是胆小鬼，不应该由你说的算吧？！陪我一路杀到这里来的可就是他本人！”","color":"white"}]
+execute if score SEA_ch4_event_railbox rng9 matches 245 run tellraw @a[distance=0..250] [{"selector":"@p[tag=SEAPT]","color":"aqua"},{"text":"：\n“他是不是胆小鬼，不应该由你说的算吧？！陪我一路杀到这里来的可就是他本人！”","color":"white"}]
 execute if score SEA_ch4_event_railbox rng9 matches 265 run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
 execute if score SEA_ch4_event_railbox rng9 matches 265 run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“说到底这本身就和勇气无关，任何正常人都不可能会主动想要到这底下来！”","color":"white","bold": false}]
 execute if score SEA_ch4_event_railbox rng9 matches 285 run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
 execute if score SEA_ch4_event_railbox rng9 matches 285 run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“任何正常人都不该知道这底下是干什么的，而你却已经知道了……！”","color":"white","bold": false}]
-execute if score SEA_ch4_event_railbox rng9 matches 310 run tellraw @a[distance=0..250] [{"selector":"@p[tag=SEAPT]","color":"white"},{"text":"：\n“是玛瑞莲叫我下来的，她说这里才能安全地通往通讯平台！”","color":"white"}]
+execute if score SEA_ch4_event_railbox rng9 matches 310 run tellraw @a[distance=0..250] [{"selector":"@p[tag=SEAPT]","color":"aqua"},{"text":"：\n“是玛瑞莲叫我下来的，她说这里才能安全地通往通讯平台！”","color":"white"}]
 execute if score SEA_ch4_event_railbox rng9 matches 330 run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
 execute if score SEA_ch4_event_railbox rng9 matches 330 run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“你放屁，我根本就从来没听说过什么玛瑞莲，不要胡编乱造！”","color":"white","bold": false}]
-execute if score SEA_ch4_event_railbox rng9 matches 350 run tellraw @a[distance=0..250] [{"selector":"@p[tag=SEAPT]","color":"white"},{"text":"：\n“货真价实，贝塔机械小组组长还是副组长啊，你先听我解释一下好不好？！”","color":"white"}]
+execute if score SEA_ch4_event_railbox rng9 matches 350 run tellraw @a[distance=0..250] [{"selector":"@p[tag=SEAPT]","color":"aqua"},{"text":"：\n“货真价实，贝塔机械小组组长还是副组长啊，你先听我解释一下好不好？！”","color":"white"}]
 execute if score SEA_ch4_event_railbox rng9 matches 370 run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
 execute if score SEA_ch4_event_railbox rng9 matches 370 run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“这地方随时会炸，我听你解释？去地狱跟我解释吧！”","color":"white","bold": false}]
 execute if score SEA_ch4_event_railbox rng9 matches 390 run scoreboard players set @s[tag=SEAboss4] rng2 8
