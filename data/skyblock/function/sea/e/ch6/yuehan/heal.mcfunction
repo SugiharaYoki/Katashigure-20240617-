@@ -23,6 +23,7 @@ execute as @s[scores={rng8=10},tag=SEAyuehan_act_heal] at @p[tag=SEAyuehan_act_h
 execute as @s[scores={rng8=16},tag=SEAyuehan_act_heal] run tp @s ~ ~ ~
 execute as @s[scores={rng8=13},tag=SEAyuehan_act_heal] run summon potion ~ ~1 ~ {Item:{id:potion,components:{potion_contents:{custom_color:16599149,custom_effects:[{id:regeneration,duration:40,amplifier:3}]}}}}
 execute as @s[scores={rng8=13},tag=SEAyuehan_act_heal] run effect clear @a[tag=SEAPT,distance=..6] poison
+execute as @s[scores={rng8=13},tag=SEAyuehan_act_heal] run effect clear @s poison
 
 execute as @s[scores={rng8=39..},tag=SEAyuehan_act_heal] at @s run scoreboard players set @s rng2 0
 execute as @s[scores={rng8=39..},tag=SEAyuehan_act_heal] at @s run item replace entity @s weapon.mainhand with air
