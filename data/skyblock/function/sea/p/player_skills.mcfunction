@@ -1,11 +1,18 @@
 
-execute at @s \
+execute at @s[scores={sea_progress=..18}] \
 if block ~ ~0 ~ water \
 if block ~ ~-0.2 ~ water \
 if block ~ ~-1.1 ~ water \
 if block ~ ~-2.1 ~ water \
 if block ~ ~-3.9 ~ water \
 run scoreboard players remove @s[scores={sea_oxygen=-10..}] sea_oxygen 3
+execute at @s[scores={sea_progress=19..}] \
+if block ~ ~0 ~ water \
+if block ~ ~-0.2 ~ water \
+if block ~ ~-1.1 ~ water \
+if block ~ ~-2.1 ~ water \
+if block ~ ~-3.9 ~ water \
+run scoreboard players remove @s[scores={sea_oxygen=-10..}] sea_oxygen 2
 
 scoreboard players remove @s[scores={sea_oxygen=46..50}] sea_oxygen 10
 
