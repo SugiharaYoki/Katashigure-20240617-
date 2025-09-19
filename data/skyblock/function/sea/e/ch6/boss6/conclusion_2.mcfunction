@@ -389,7 +389,7 @@ execute if score SEA_ch6_event sea_4temp4 matches 5550 as @p[tag=SEAPT] at @s ru
 execute if score SEA_ch6_event sea_4temp4 matches 5275 run time set 22500
 execute if score SEA_ch6_event sea_4temp4 matches 5275..6274 run time add 1
 execute if entity @n[tag=SEAboss6c,scores={health=400..}] if score SEA_ch6_event sea_4temp4 matches 6275..6280 run scoreboard players set SEA_ch6_event sea_4temp4 6275
-execute if score SEA_ch6_event sea_4temp4 matches 6285..7284 run time add 1
+execute if score SEA_ch6_event sea_4temp4 matches 6285..6788 run time add 1
 execute if score SEA_ch6_event sea_4temp4 matches 5700 run weather rain 1000s
 execute if score SEA_ch6_event sea_4temp4 matches 6700 run weather clear 10000s
 
