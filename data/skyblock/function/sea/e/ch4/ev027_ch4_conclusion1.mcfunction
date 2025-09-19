@@ -2,13 +2,19 @@ scoreboard players add @s rng5 1
 execute as @s[scores={rng5=1}] run scoreboard players set @s rng7 0
 
 execute as @s[scores={rng5=1}] at @n[tag=SEAyuehan] run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
-execute as @s[scores={rng5=1}] at @n[tag=SEAyuehan] run tellraw @a[distance=0..250] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“你们可真有本事，我刚来你们就打成这样。”","color":"white","bold": false}]
+execute as @s[scores={rng5=1}] at @n[tag=SEAyuehan] if score SEA_ch4_event_railbox rng9 matches ..0 run tellraw @a[distance=0..250] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“你们可真有本事，我刚来你们就打成这样。”","color":"white","bold": false}]
+execute as @s[scores={rng5=1}] at @n[tag=SEAyuehan] if score SEA_ch4_event_railbox rng9 matches 1.. run tellraw @a[distance=0..250] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“你们可真有本事，我还就担心你们会不会打起来，真给我打一场是吧？”","color":"white","bold": false}]
 
 execute as @s[scores={rng5=21}] at @n[tag=SEAedwina] run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 1.3
 execute as @s[scores={rng5=21}] at @n[tag=SEAedwina] run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“抱歉，因为剩余的时间不允许我们静下来交流。”","color":"white","bold": false}]
 
 execute as @s[scores={rng5=43}] at @n[tag=SEAedwina] run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 1.3
 execute as @s[scores={rng5=43}] at @n[tag=SEAedwina] run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“冷凝系统彻底瘫痪，生态维护装置过不了多久会爆炸，我们还是先往上头去吧。”","color":"white","bold": false}]
+
+execute as @s[scores={rng5=63}] at @n[tag=SEAedwina] as @p[tag=SEAPT] at @s if score SEA_ch4_event_railbox rng9 matches 1.. run tellraw @a[distance=0..250] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“我靠我跟你说，这个艾德雯娜不听我说话的，上来就劈我。”","color":"white"}]
+
+execute as @s[scores={rng5=79}] at @n[tag=SEAedwina] if score SEA_ch4_event_railbox rng9 matches 1.. run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 1.3
+execute as @s[scores={rng5=79}] at @n[tag=SEAedwina] if score SEA_ch4_event_railbox rng9 matches 1.. run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“真的……相当相当抱歉。我也为越涵赔礼一个道歉吧。”","color":"white","bold": false}]
 
 execute unless entity @s[scores={rng6=-99..}] run scoreboard players set @s rng6 0
 execute positioned 90164 56 81 if entity @a[tag=SEAPT,tag=!SEAPF,distance=0..5] run scoreboard players set @s[scores={rng6=..9}] rng6 10
