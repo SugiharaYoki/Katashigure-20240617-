@@ -51,13 +51,13 @@ effect clear @s poison
 
 
 
-execute if score @s sea_4temp3 matches ..200 as @a[tag=SEAPT] at @s if entity @e[type=bee,tag=SEAmob,distance=0..7] run scoreboard players add @s sea_4temp3 1
-execute if score @s sea_4temp3 matches 10 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“你看到那些巨型蜜蜂不？我刚刚做了一番观察。”","color":"white","bold": false}]
-execute if score @s sea_4temp3 matches 10 run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
-execute if score @s sea_4temp3 matches 100 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“这群蜜蜂没有主动攻击欲望，但是它们撒下来的毒粉很他妈棘手。”","color":"white","bold": false}]
-execute if score @s sea_4temp3 matches 100 run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
-execute if score @s sea_4temp3 matches 190 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“我建议是绕着走，不然你尝试用火去给它们烧了也行。”","color":"white","bold": false}]
-execute if score @s sea_4temp3 matches 190 run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
+execute if score @s sea_4temp4 matches ..200 as @a[tag=SEAPT] at @s if entity @e[type=bee,tag=SEAmob,distance=0..7] run scoreboard players add @s sea_4temp4 1
+execute if score @s sea_4temp4 matches 10 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“你看到那些巨型蜜蜂不？我刚刚做了一番观察。”","color":"white","bold": false}]
+execute if score @s sea_4temp4 matches 10 run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
+execute if score @s sea_4temp4 matches 100 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“这群蜜蜂没有主动攻击欲望，但是它们撒下来的毒粉很他妈棘手。”","color":"white","bold": false}]
+execute if score @s sea_4temp4 matches 100 run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
+execute if score @s sea_4temp4 matches 190 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“我建议是绕着走，不然你尝试用火去给它们烧了也行。”","color":"white","bold": false}]
+execute if score @s sea_4temp4 matches 190 run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
 
 
 
