@@ -259,7 +259,7 @@ execute as @n[tag=SEAch4_spawn_timer_marilyn] at @s unless entity @n[tag=SEAyueh
 execute as @n[tag=SEAch4_spawn_timer_marilyn] at @s if entity @n[tag=SEAyuehan_ch4_acting] run function skyblock:sea/e/ch4/ev018_communication_with_yuehan
 
 #生成怪物
-execute positioned 90163 44 130 if entity @a[tag=SEAPT,distance=..2.7] unless entity @n[tag=SEAch4_spawn,distance=0..1] run function skyblock:sea/e/ch6/part1/entering_facility
+execute positioned 90163 44 130 if entity @a[tag=SEAPT,distance=..2.7] unless entity @n[tag=SEAch4_spawn,distance=0..1] run function skyblock:sea/e/ch4/mob_summon/entering_facility
 execute positioned 90172 44 134 if entity @a[tag=SEAPT,distance=..1.5] unless entity @n[tag=SEAch4_spawn,distance=0..1] run function skyblock:sea/e/ch4/mob_summon/the_bomber
 #会议室旁的办公室
 execute positioned 90187 47 105 if entity @a[tag=SEAPT,distance=..12] unless entity @n[tag=SEAch4_spawn,distance=0..1] run function skyblock:sea/e/ch4/mob_summon/office_by_the_conference_room
