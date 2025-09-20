@@ -86,7 +86,7 @@ execute if score @s sea_4temp1 matches 1800 run playsound entity.villager.ambien
 execute if score @s sea_4temp1 matches 1900..1999 run scoreboard players set @s sea_4temp1 1900
 
 
-execute if score @s sea_4temp1 matches 10..5000 if entity @a[tag=SEAPT,x=90229,y=49,z=101,dx=7,dy=6,dz=7] run scoreboard players set @s sea_4temp1 5001
+execute if score @s sea_4temp1 matches 10..5000 if entity @a[tag=SEAPT,x=90229,y=51,z=101,dx=7,dy=6,dz=7] run scoreboard players set @s sea_4temp1 5001
 
 
 execute if score @s sea_4temp1 matches 5001 run tag @n[tag=SEAyuehan] remove SEAyuehan_actable
@@ -105,4 +105,6 @@ execute if score @s sea_4temp1 matches 5057 if entity @a[tag=SEAPT,distance=0..8
 execute if score @s sea_4temp1 matches 5057.. unless entity @a[tag=SEAPT,distance=0..12] run tp @s ~ ~-50 ~
 execute if score @s sea_4temp1 matches 5059.. unless entity @a[tag=SEAPT,distance=0..12] run kill @s
 
+execute if score @s sea_4temp1 matches 5257 if entity @n[tag=SEAyuehan] if entity @a[tag=SEAPT,distance=0..8] run tellraw @a[distance=0..250] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“真的没事的，我可有本领了。”","color":"white","bold": false}]
+execute if score @s sea_4temp1 matches 5257 if entity @n[tag=SEAyuehan] if entity @a[tag=SEAPT,distance=0..8] run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
 
