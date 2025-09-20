@@ -94,7 +94,7 @@ execute as @s[scores={rng1=5}] as @n[tag=SEAboss_end] at @s run tp @s ~ ~ ~ faci
 execute as @s[scores={rng1=7}] as @n[tag=SEAboss_end] at @s run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
 
 
-execute as @s[scores={rng1=25}] if score SEA_ch4_event_railbox rng9 matches 160.. if entity @n[tag=sc,scores={sea_player=1..}] run tellraw @a[distance=0..250] [{"selector":"@p[tag=SEAPT]","color":"aqua"},{"text":"：\n“我靠……感情我说的是不是实话有任何区别吗？”","color":"white"}]
+execute as @s[scores={rng1=25}] if score SEA_ch4_event_railbox rng9 matches 160.. if entity @n[tag=sc,scores={sea_player=1..}] run tellraw @a[distance=0..250] [{"selector":"@p[tag=SEAPT]","color":"aqua"},{"text":"：\n“我靠……敢情我说的是不是实话有任何区别吗？”","color":"white"}]
 execute as @s[scores={rng1=25}] if score SEA_ch4_event_railbox rng9 matches ..159 at @n[tag=SEAedwina] run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
 execute as @s[scores={rng1=25}] if score SEA_ch4_event_railbox rng9 matches ..159 at @n[tag=SEAedwina] run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“你怎么不告诉我这件事？”","color":"white","bold": false}]
 
