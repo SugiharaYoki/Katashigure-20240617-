@@ -27,8 +27,8 @@ execute if score @s sea_4temp1 matches 104 run tellraw @a[distance=0..250] [{"te
 execute if score @s sea_4temp1 matches 104 run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
 
 execute if score @s sea_4temp1 matches 106 at @s run tp @s ~ ~ ~ facing 90158 45 131
-execute if score @s sea_4temp1 matches 107 at @s run tp @s 90158 45 131 facing 90159 45 130
-execute if score @s sea_4temp1 matches 108 at @s run tp @s ~ ~ ~ facing 90159 45 131
+execute if score @s sea_4temp1 matches 107 at @s run tp @s 90158 44 131 facing 90159 44 130
+execute if score @s sea_4temp1 matches 108 at @s run tp @s ~ ~ ~ facing 90159 44 131
 execute if score @s sea_4temp1 matches 109..110 at @s run tp @s ~1 ~ ~ facing ~2 ~ ~
 execute if score @s sea_4temp1 matches 112 at @s run playsound minecraft:block.iron_door.open block @a 90161 45 130 10 0.5
 execute if score @s sea_4temp1 matches 112 at @s run fill 90161 45 129 90161 45 131 air
