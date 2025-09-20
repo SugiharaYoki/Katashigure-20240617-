@@ -92,6 +92,7 @@ execute as @s[scores={rng1=5}] if score SEA_ch4_event_railbox rng9 matches ..159
 execute as @s[scores={rng1=5}] if score SEA_ch4_event_railbox rng9 matches 160.. if entity @n[tag=sc,scores={sea_player=1..}] at @n[tag=SEAedwina] run tellraw @a[distance=0..250] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“沈越涵……？我的天，你刚刚是在说实话？！”","color":"white","bold": false}]
 execute as @s[scores={rng1=5}] as @n[tag=SEAboss_end] at @s run tp @s ~ ~ ~ facing entity @n[tag=SEAyuehan]
 execute as @s[scores={rng1=7}] as @n[tag=SEAboss_end] at @s run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
+execute as @s[scores={rng1=7}] as @n[tag=SEAboss_end] at @s run item replace entity @s weapon.mainhand with air
 
 
 execute as @s[scores={rng1=25}] if score SEA_ch4_event_railbox rng9 matches 160.. if entity @n[tag=sc,scores={sea_player=1..}] run tellraw @a[distance=0..250] [{"selector":"@p[tag=SEAPT]","color":"aqua"},{"text":"：\n“我靠……敢情我说的是不是实话有任何区别吗？”","color":"white"}]
