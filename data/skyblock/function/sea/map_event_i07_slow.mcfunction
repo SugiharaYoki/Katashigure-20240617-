@@ -116,5 +116,5 @@ execute if score SEA_ch6_event sea_4temp4 matches 15149 run scoreboard players s
 execute if score SEA_ch6_event sea_4temp4 matches 15150 as @a[tag=SEAPT] run function skyblock:sea/dead
 
 
-
+execute if score SEA_ch6_event sea_4temp4 matches 15149 as @a[tag=SEAPT] if score @s sea_speedrun_ch6 > sc sea_speedrun_ch6 run scoreboard players operation @s sea_speedrun_ch6 = sc sea_speedrun_ch6
 
