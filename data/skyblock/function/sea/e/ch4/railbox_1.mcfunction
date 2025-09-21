@@ -11,6 +11,7 @@ execute if entity @s[scores={sea_railbox_1=27..}] run playsound minecraft:block.
 tellraw @s[scores={sea_railbox_1=..25}] {"text": "操作了一下控制台……","color": "gray"}
 tellraw @s[scores={sea_railbox_1=26}] {"text": "操作了一下控制台……","color": "gray"}
 tellraw @s[scores={sea_railbox_1=27..}] {"text": "操作了一下控制台，但是控制台自动重启了。","color": "gray"}
+scoreboard players set @s[scores={sea_railbox_1=27..}] sea_railbox_1 0
 
 execute if entity @s[scores={sea_railbox_1=26}] run scoreboard players set SEA_ch4_event_railbox rng1 1
 
