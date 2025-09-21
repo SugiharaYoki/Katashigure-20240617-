@@ -90,9 +90,9 @@ gamerule doDaylightCycle true
 tellraw @a[tag=!Gaming,scores={sea_progress=..18}] {"text": "2135年6月29日","color": "green"}
 tellraw @a[tag=!Gaming,scores={sea_progress=19..}] {"text": "2135年7月4日","color": "green"}
 tellraw @a[tag=!Gaming,scores={sea_progress=..18}] {"text": "忒尔克西海上钻井平台已经失联24小时整，\n太平洋石油管理局的高层决定派你前去调查情况。","color": "green"}
-tellraw @a[tag=!Gaming,scores={sea_progress=19..}] {"text": "受公众舆论影响，美国政府在独立日宣布就忒尔克西海上钻井平台爆炸一事展开全面调查。\n死亡者不计其数，甚至中情局的特派调查员也未能幸免。\n面对如此人祸，太平洋石油管理局的高层却拒绝接受任何采访，舆情处于水深火热之中。","color": "white"}
+tellraw @a[tag=!Gaming,scores={sea_progress=19..}] {"text": "受公众舆论影响，美国政府于独立日宣布就忒尔克西海上钻井平台大爆炸一事展开全面调查。\n死亡者不计其数，甚至中情局的特派调查员也未能幸免。\n面对如此人祸，太平洋石油管理局的高层却拒绝接受任何采访，舆情处于水深火热之中。","color": "white"}
 tellraw @a[tag=!Gaming,scores={sea_progress=..18}] [{"text": "『厄珀娅的悲歌』","color": "light_purple","bold": true},{"text": " 以雷米尔之名，见证他们的结局……","color": "green","bold": false}]
-tellraw @a[tag=!Gaming,scores={sea_progress=19..}] [{"text": "『厄珀娅的悲歌』","color": "light_purple","bold": true},{"text": " 以雷米尔之名，你已见证他们的结局。\n但你依然能与被时间所受限的他们重逢。\n怀念故人，抑或是踏上新的旅程？你早已作出正确的决定。","color": "white","bold": false}]
+tellraw @a[tag=!Gaming,scores={sea_progress=19..}] [{"text": "『厄珀娅的悲歌』","color": "light_purple","bold": true},{"text": " 以雷米尔之名，你见证了他们的结局。\n但你依然能同受限于时间的他们重逢。\n缅怀故人，抑或是踏上新的旅程？你早已作出正确的决定。","color": "white","bold": false}]
 tag @a remove sea_dead
 scoreboard players reset 10e959db-4b44-4cdd-b98c-350d3b454206 sea_4temp1
 scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 sea_4temp2 0
