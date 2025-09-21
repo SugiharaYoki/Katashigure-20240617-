@@ -25,10 +25,10 @@ execute if score sea_chapter_introduction sea_4temp1 matches 45 unless entity @a
 execute if score sea_chapter_introduction sea_4temp1 matches 100 unless entity @a[scores={SEAPT_member=2}] run tellraw @a[distance=0..250] {"text": "忒尔克西有搭配极为先进的通讯基站。","color": "gray"}
 execute if score sea_chapter_introduction sea_4temp1 matches 130 unless entity @a[scores={SEAPT_member=2}] run tellraw @a[distance=0..250] {"text": "这样的钻井平台，居然也会失联24小时……","color": "gray"}
 
-execute if score sea_chapter_introduction sea_4temp1 matches 155 unless entity @a[scores={SEAPT_member=2}] run tellraw @a[distance=0..250] {"text": "说到底，他们居然真的只派了我一个维修工来呢。","color": "gray"}
+execute if score sea_chapter_introduction sea_4temp1 matches 155 unless entity @a[scores={SEAPT_member=2}] run tellraw @a[distance=0..250] {"text": "说到底，他们居然真敢只派我一个维修工来呢。","color": "gray"}
 execute if score sea_chapter_introduction sea_4temp1 matches 185 unless entity @a[scores={SEAPT_member=2}] run tellraw @a[distance=0..250] {"text": "虽说我以前是海警队的，如果平台上真的出了什么事，我又能做什么呢。","color": "gray"}
 execute if score sea_chapter_introduction sea_4temp1 matches 215 unless entity @a[scores={SEAPT_member=2}] run tellraw @a[distance=0..250] {"text": "……下雨了啊。","color": "gray"}
-execute if score sea_chapter_introduction sea_4temp1 matches 235 unless entity @a[scores={SEAPT_member=2}] run tellraw @a[distance=0..250] {"text": "已经快到目的地了。但愿工作能快点结束吧。","color": "gray"}
+execute if score sea_chapter_introduction sea_4temp1 matches 235 unless entity @a[scores={SEAPT_member=2}] run tellraw @a[distance=0..250] {"text": "已经快到目的地了。说到底，这是我自己选择的工作，尽早做完吧。","color": "gray"}
 
 execute if score sea_chapter_introduction sea_4temp1 matches ..275 positioned 90122 128 131 if items entity @p[scores={SEA_story=1..}] weapon.mainhand spyglass unless entity @a[tag=SEAPT,scores={SEA_story=..0}] as @p[nbt={SelectedItem:{id:"minecraft:spyglass"}}] at @s run tellraw @a[tag=SEAPT] [{"selector":"@s","color":"white"},{"text":"：「跳过了剧情」","color":"white"}]
 execute if score sea_chapter_introduction sea_4temp1 matches ..275 positioned 90122 128 131 if items entity @p[scores={SEA_story=1..}] weapon.mainhand spyglass unless entity @a[tag=SEAPT,scores={SEA_story=..0}] run give @a[tag=SEAPT,advancements={skyblock:sea/doc/g17=false}] mojang_banner_pattern[custom_data={sea_docg17:true}]
