@@ -7,7 +7,7 @@ execute store result score @n[tag=SEAboss5] health run data get entity @n[tag=SE
 execute store result bossbar minecraft:9066602 value run data get entity @n[tag=SEAboss5b] Health
 execute store result score @n[tag=SEAboss5b] health run data get entity @n[tag=SEAboss5b] Health
 
-execute if score @s rng1 matches 2 run stopsound @a[tag=SEAPT] music
+execute if score @s rng1 matches 2 as @p[tag=SEAPT] at @s run stopsound @a[distance=..180] music
 execute if score @s rng1 matches 2 run summon lightning_bolt
 execute if score @s rng1 matches 2 run kill @e[tag=SEA_boss5_lightning_anchor,type=marker]
 execute if score @s rng1 matches 2 run kill @e[tag=SEA_boss5_attack_rail,type=marker]

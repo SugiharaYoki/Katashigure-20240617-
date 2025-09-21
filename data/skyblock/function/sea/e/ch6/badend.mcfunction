@@ -6,7 +6,7 @@ execute if score SEA_ch6_event rng8 matches 2.. run effect give @a[tag=SEAPT] sa
 execute if score SEA_ch6_event rng8 matches 2 run kill @e[tag=SEAmob]
 execute if score SEA_ch6_event rng8 matches 2 run kill @e[tag=sea_crafter]
 execute if score SEA_ch6_event rng8 matches 2 run kill @n[tag=SEAedwina]
-execute if score SEA_ch6_event rng8 matches 2 run stopsound @a[tag=SEAPT]
+execute if score SEA_ch6_event rng8 matches 2 as @p[tag=SEAPT] at @s run stopsound @a[distance=..180]
 execute if score SEA_ch6_event rng8 matches 2 run clear @a[tag=SEAPT]
 execute if score SEA_ch6_event rng8 matches 2 run tp @a[tag=SEAPT] 90060 103 141
 execute if score SEA_ch6_event rng8 matches 2 run time set noon
