@@ -19,10 +19,14 @@ execute if score stage_main_thread AzrTimerStack matches 6 run playsound entity.
 execute if score stage_main_thread AzrTimerStack matches 6 positioned -79931 38 -9 run function skyblock:azr/assets/mobs_new/summoner
 execute if score stage_main_thread AzrTimerStack matches 7 run tellraw @a[tag=azrShowDialog] [{"text":"驭灵使：","color":"yellow"},{"text":"\n“嗯……？试炼者？这种节骨眼上？”","color":"white"}]
 
-execute if score stage_main_thread AzrTimerStack matches 28 positioned -79930.5 38.0 3.5 run function skyblock:azr/assets/events/effects/basalt_open
-execute if score stage_main_thread AzrTimerStack matches 28 positioned -79931 38 3 run function skyblock:azr/assets/mobs_new/summoner
-execute if score stage_main_thread AzrTimerStack matches 29 run tellraw @a[tag=azrShowDialog] [{"text":"驭灵使：","color":"yellow"},{"text":"\n“把我叫来就为了这种事？这就是普通人类亡灵啊。”","color":"white"}]
-execute if score stage_main_thread AzrTimerStack matches 33 run tellraw @a[tag=azrShowDialog] [{"text":"驭灵使：","color":"yellow"},{"text":"\n“……不对，人类哪来这么强大的力量？！”","color":"white"}]
+execute if score stage_main_thread AzrTimerStack matches 10..12 unless entity @n[tag=AzrielMob] run scoreboard players set stage_main_thread AzrTimerStack 10
+
+execute if score stage_main_thread AzrTimerStack matches 19 positioned -79930.5 38.0 3.5 run function skyblock:azr/assets/events/effects/basalt_open
+execute if score stage_main_thread AzrTimerStack matches 19 positioned -79931 38 3 run function skyblock:azr/assets/mobs_new/summoner
+execute if score stage_main_thread AzrTimerStack matches 21 run tellraw @a[tag=azrShowDialog] [{"text":"驭灵使：","color":"yellow"},{"text":"\n“把我叫来就为了这种事？这就是普通人类亡灵啊。”","color":"white"}]
+execute if score stage_main_thread AzrTimerStack matches 27 run tellraw @a[tag=azrShowDialog] [{"text":"驭灵使：","color":"yellow"},{"text":"\n“……不对，人类哪来这么强大的力量？！”","color":"white"}]
+
+execute if score stage_main_thread AzrTimerStack matches 30 positioned -79931 38 3 run function skyblock:azr/assets/mobs_new/shield
 
 execute if score stage_main_thread AzrTimerStack matches 31..35 unless entity @n[tag=AzrielMob] run scoreboard players set stage_main_thread AzrTimerStack 36
 #回秒
