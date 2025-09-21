@@ -365,4 +365,4 @@ execute if score SEA_ch6_event sea_4temp4 matches ..3 run scoreboard players add
 execute if score SEA_ch6_event rng5 matches ..20058 if score SEA_ch6_event sea_4temp4 matches 2..3 run scoreboard players set SEA_ch6_event sea_4temp4 2
 
 
-execute as @a[x=89975,y=75,z=-1935,dx=83,dy=10,dz=13,tag=SEAPT] at @s run kill @s
+execute as @p[x=89975,y=75,z=-1935,dx=83,dy=10,dz=13,tag=SEAPT] at @s run kill @s
