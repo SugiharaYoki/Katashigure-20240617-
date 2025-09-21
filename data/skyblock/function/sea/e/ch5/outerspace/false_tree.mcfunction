@@ -1,7 +1,5 @@
 scoreboard players add SEA_ch5_event_outerspace_fiona sea_4temp3 1
 
-execute if score SEA_ch5_event_outerspace_fiona sea_4temp3 matches 1..200 if block 90097 132 99 air run scoreboard players set SEA_ch5_event_outerspace_fiona sea_4temp3 205
-execute if score SEA_ch5_event_outerspace_fiona sea_4temp3 matches 180..190 unless block 90097 132 99 air run scoreboard players set SEA_ch5_event_outerspace_fiona sea_4temp3 180
 
 execute if score SEA_ch5_event_outerspace_fiona sea_4temp3 matches 2 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
 execute if score SEA_ch5_event_outerspace_fiona sea_4temp3 matches 2 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if score SEA_ch5_event_fiona_favor rng1 matches 10.. run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“这棵树给我的感觉特别特别糟糕。”","color":"white","bold": false}]
