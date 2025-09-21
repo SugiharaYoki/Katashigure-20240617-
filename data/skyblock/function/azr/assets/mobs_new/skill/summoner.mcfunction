@@ -7,7 +7,7 @@ execute if score @s[scores={AzrielMobLevel=5..}] rng1 matches 35 run scoreboard 
 
 
 execute if score @s rng1 matches 60 run item replace entity @s weapon.mainhand with amethyst_shard
-execute if score @s rng1 matches 60 run playsound minecraft:entity.evoker.cast_spell hostile @a ~ ~ ~ 1 1.3
+execute if score @s rng1 matches 60 run playsound entity.evoker.prepare_summon hostile @a ~ ~ ~ 1 1.3
 execute if score @s rng1 matches 60 run particle minecraft:soul_fire_flame ~ ~1 ~ 0.3 0.5 0.3 0 20
 execute if score @s rng1 matches 60 run particle minecraft:enchant ~ ~0.5 ~ 1 0 0 0.2 20
 execute if score @s rng1 matches 60 run particle minecraft:enchant ~ ~0.5 ~ 0 0 1 0.2 20
