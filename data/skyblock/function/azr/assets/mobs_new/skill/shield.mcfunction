@@ -18,9 +18,9 @@ execute if score @s rng1 matches 70.. rotated ~ 0 run particle minecraft:wax_off
 execute if score @s rng1 matches 70.. rotated ~ 0 run particle minecraft:wax_off ^ ^0.2 ^2
 execute if score @s rng1 matches 70.. rotated ~ 0 run particle minecraft:wax_off ^ ^0.2 ^2.5
 execute if score @s rng1 matches 70.. rotated ~ 0 run particle minecraft:wax_off ^ ^0.2 ^3
-execute if score @s rng1 matches 80 rotated ~ 0 as @s at @s positioned 0.0 0 0.0 run summon marker ^ ^0.02 ^1.8 {Tags:["AzrielMob_move_marker"]}
-execute if score @s rng1 matches 80 rotated ~ 0 as @s at @s run data modify entity @s Motion set from entity @n[type=marker,tag=AzrielMob_move_marker] Pos
-execute if score @s rng1 matches 80 rotated ~ 0 as @s at @s run kill @e[type=marker,tag=AzrielMob_move_marker]
+execute if score @s rng1 matches 88 rotated ~ 0 as @s at @s positioned 0.0 0 0.0 run summon marker ^ ^0.02 ^1.1 {Tags:["AzrielMob_move_marker"]}
+execute if score @s rng1 matches 88 rotated ~ 0 as @s at @s run data modify entity @s Motion set from entity @n[type=marker,tag=AzrielMob_move_marker] Pos
+execute if score @s rng1 matches 88 rotated ~ 0 as @s at @s run kill @e[type=marker,tag=AzrielMob_move_marker]
 
 
 
