@@ -5,6 +5,7 @@ execute if score stage_main_thread AzrTimerStack matches 1 run bossbar add azr:p
 execute if score stage_main_thread AzrTimerStack matches 1 run bossbar set azr:progress_bar_normal color white
 execute if score stage_main_thread AzrTimerStack matches 1 run bossbar set azr:progress_bar_normal players @a[tag=azrPlayer]
 execute if score stage_main_thread AzrTimerStack matches 1 run bossbar set azr:progress_bar_normal max 40
+execute if score stage_main_thread AzrTimerStack matches 1 run scoreboard players set AzrielC_danger rng1 1
 execute if score stage_main_thread AzrTimerStack matches 1 run tellraw @a[tag=DebugMode,tag=azrShowDialog] [{"text":"[DEBUG MODE MESSAGE] You are playing \"Stage 1\", with playerCount = "},{"score":{"objective":"Azr_system","name":"playerCount"}},{"text":" Maximum Seconds = 40"}]
 execute if score stage_main_thread AzrTimerStack matches 1..40 store result bossbar azr:progress_bar_normal value run scoreboard players get stage_main_thread AzrTimerStack
 execute if score stage_main_thread AzrTimerStack matches 40 run bossbar remove azr:progress_bar_normal
@@ -15,19 +16,14 @@ execute if score stage_main_thread AzrTimerStack matches 19 positioned -79930.5 
 #刷怪时序
 execute if score stage_main_thread AzrTimerStack matches 6 positioned -79930.5 38.0 -8.5 run function skyblock:azr/assets/events/effects/basalt_open
 execute if score stage_main_thread AzrTimerStack matches 6 run playsound entity.zombie.ambient ambient @a[tag=azrShowDialog] -80000 100 0 1000
-execute if score stage_main_thread AzrTimerStack matches 6 positioned -79931 38 -9 run function skyblock:azr/assets/mobs/zombie_t1
-execute if score stage_main_thread AzrTimerStack matches 8 positioned -79931 38 -9 run function skyblock:azr/assets/mobs/zombie_t1
-execute if score stage_main_thread AzrTimerStack matches 9..14 unless entity @n[tag=AzrielMob] run scoreboard players set stage_main_thread AzrTimerStack 15
-execute if score stage_main_thread AzrTimerStack matches 15 positioned -79931 38 -9 run function skyblock:azr/assets/mobs/zombie_t1
-execute if score stage_main_thread AzrTimerStack matches 16..18 unless entity @n[tag=AzrielMob] run scoreboard players set stage_main_thread AzrTimerStack 19
-execute if score stage_main_thread AzrTimerStack matches 19 positioned -79931 38 -9 run function skyblock:azr/assets/mobs/zombie_t1_4hp
-execute if score stage_main_thread AzrTimerStack matches 20..24 unless entity @n[tag=AzrielMob] run scoreboard players set stage_main_thread AzrTimerStack 25
-execute if score stage_main_thread AzrTimerStack matches 25 positioned -79931 38 -9 run function skyblock:azr/assets/mobs/zombie_t1_4hp
-execute if score stage_main_thread AzrTimerStack matches 26..27 unless entity @n[tag=AzrielMob] run scoreboard players set stage_main_thread AzrTimerStack 28
+execute if score stage_main_thread AzrTimerStack matches 6 positioned -79931 38 -9 run function skyblock:azr/assets/mobs_new/summoner
+execute if score stage_main_thread AzrTimerStack matches 7 run tellraw @a[tag=azrShowDialog] [{"text":"驭灵使：","color":"yellow"},{"text":"\n“嗯……？试炼者？这种节骨眼上？”","color":"white"}]
+
 execute if score stage_main_thread AzrTimerStack matches 28 positioned -79930.5 38.0 3.5 run function skyblock:azr/assets/events/effects/basalt_open
-execute if score stage_main_thread AzrTimerStack matches 28 positioned -79931 38 3 run function skyblock:azr/assets/mobs/pillager_t1
-execute if score stage_main_thread AzrTimerStack matches 20 if score playerCount Azr_system matches 2.. positioned -79931 38 3 run function skyblock:azr/assets/mobs/pillager_t1
-execute if score stage_main_thread AzrTimerStack matches 30 positioned -79931 38 3 run function skyblock:azr/assets/mobs/zombie_t1_5hp
+execute if score stage_main_thread AzrTimerStack matches 28 positioned -79931 38 3 run function skyblock:azr/assets/mobs_new/summoner
+execute if score stage_main_thread AzrTimerStack matches 29 run tellraw @a[tag=azrShowDialog] [{"text":"驭灵使：","color":"yellow"},{"text":"\n“把我叫来就为了这种事？这就是普通人类亡灵啊。”","color":"white"}]
+execute if score stage_main_thread AzrTimerStack matches 33 run tellraw @a[tag=azrShowDialog] [{"text":"驭灵使：","color":"yellow"},{"text":"\n“……不对，人类哪来这么强大的力量？！”","color":"white"}]
+
 execute if score stage_main_thread AzrTimerStack matches 31..35 unless entity @n[tag=AzrielMob] run scoreboard players set stage_main_thread AzrTimerStack 36
 #回秒
 execute if score stage_main_thread AzrTimerStack matches 31..36 if entity @e[tag=AzrielMob,tag=!AzrielDecMob] run scoreboard players set stage_main_thread AzrTimerStack 31
