@@ -1,0 +1,1 @@
+execute if entity @s[tag=AzrielMob_summoner_1_skill_marker] run function skyblock:azr/assets/mobs_new/summon_delay/undead

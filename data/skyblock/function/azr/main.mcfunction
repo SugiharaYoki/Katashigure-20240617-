@@ -26,6 +26,7 @@ scoreboard objectives add AZR_chainKillUpg_antichargedecrease dummy
 scoreboard objectives add AZR_chainKillUpg_attackspeed dummy
 scoreboard objectives add AZR_arrow_energy dummy
 scoreboard objectives add AzrEntityTimer dummy
+scoreboard objectives add AzrielMobLevel dummy
 scoreboard objectives add AzrExtraMelon dummy
 
 #skills
