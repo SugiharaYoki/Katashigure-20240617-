@@ -17,6 +17,7 @@ execute if score SEA_ch5_event_outerspace_fiona sea_4temp2 matches 46 as @n[tag=
 
 execute if score SEA_ch5_event_outerspace_fiona sea_4temp2 matches 67 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if score SEA_ch5_event_fiona_favor rng1 matches 12.. unless entity @a[tag=SEAPT,scores={SEAPT_member=2}] run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
 execute if score SEA_ch5_event_outerspace_fiona sea_4temp2 matches 67 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if score SEA_ch5_event_fiona_favor rng1 matches 12.. unless entity @a[tag=SEAPT,scores={SEAPT_member=2}] run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“……这样啊，还真像她做得出的事情。”","color":"white","bold": false}]
+execute if score SEA_ch5_event_outerspace_fiona sea_4temp2 matches 67 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if score SEA_ch5_event_fiona_favor rng1 matches 12.. unless entity @a[tag=SEAPT,scores={SEAPT_member=2}] run scoreboard players add SEA_ch5_event_fiona_favor rng1 1
 
 
 execute if block 90060 101 142 red_candle if score SEA_ch5_event_outerspace_fiona sea_4temp2 matches 167 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if score SEA_ch5_event_fiona_favor rng1 matches 6.. run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3

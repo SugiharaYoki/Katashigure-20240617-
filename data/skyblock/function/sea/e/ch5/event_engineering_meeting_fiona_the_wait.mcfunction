@@ -39,7 +39,7 @@ execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 227 as @n[ta
 
 execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 249 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if entity @a[tag=SEAPT,distance=0..6] if entity @a[tag=SEAPT,scores={SEAPT_member=2}] run tellraw @a[distance=0..250] [{"selector":"@p[tag=SEAPT,scores={SEAPT_member=2}]","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“唉……说得好。虽然讲现在看来邪教徒比主平台曾经那批人要更讲道理，但妄想那些从未显现过的天使能够眷顾人类，这本身就足够可笑了。\n至少追求我们自己心中的正义吧。”","color":"white"}]
 execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 249 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if entity @a[tag=SEAPT,distance=0..6] unless entity @a[tag=SEAPT,scores={SEAPT_member=2}] run tellraw @a[distance=0..250] [{"selector":"@p[tag=SEAPT,scores={SEAPT_member=1}]","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“我不会让你孤身一人。哪怕结局我们都会死，就由你同我合作——让我们看看能够争取到什么吧。”","color":"white"}]
-execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 249 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if entity @a[tag=SEAPT,distance=0..6] if entity @a[tag=SEAPT,scores={SEAPT_member=2}] run scoreboard players add SEA_ch5_event_fiona_favor rng1 3
+execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 249 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if entity @a[tag=SEAPT,distance=0..6] if entity @a[tag=SEAPT,scores={SEAPT_member=2}] run scoreboard players add SEA_ch5_event_fiona_favor rng1 2
 
 
 execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 270 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if entity @a[tag=SEAPT,distance=0..6] run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
@@ -51,7 +51,7 @@ execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 290 as @n[ta
 
 execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 312 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if entity @a[tag=SEAPT,distance=0..6] unless entity @a[tag=SEAPT,scores={SEAPT_member=2}] run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
 execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 312 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if entity @a[tag=SEAPT,distance=0..6] unless entity @a[tag=SEAPT,scores={SEAPT_member=2}] run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“谢谢你陪我聊这些，我放松一些了。”","color":"white","bold": false}]
-execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 312 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if entity @a[tag=SEAPT,distance=0..6] unless entity @a[tag=SEAPT,scores={SEAPT_member=2}] run scoreboard players add SEA_ch5_event_fiona_favor rng1 5
+execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 312 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if entity @a[tag=SEAPT,distance=0..6] unless entity @a[tag=SEAPT,scores={SEAPT_member=2}] run scoreboard players add SEA_ch5_event_fiona_favor rng1 4
 
 
 execute if score SEA_ch5_event_engineering_fiona sea_4temp6 matches 490 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if entity @a[tag=SEAPT,distance=0..6] run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
