@@ -9,8 +9,8 @@ execute if score SEA_ch6_event rng5 matches 2040 as @n[tag=SEAedwina] at @s run 
 execute if score SEA_ch6_event rng5 matches 2040 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“提醒一下，这里的水被烤到了接近沸腾的温度，最好离水越远越好。”","color":"white","bold": false}]
 
 execute if block 90172 142 -1867 lantern if score SEA_ch6_event rng5 matches 2060 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“你刚刚说……你知道我有倒转时空的能力？那是什么意思？”","color":"white"}]
-execute if score SEA_ch6_event rng5 matches 2077 as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
-execute if score SEA_ch6_event rng5 matches 2077 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“这是我梦境中的内容。抱歉……或许是在危急关头，我宁可相信它是真的吧。”","color":"white","bold": false}]
+execute if block 90172 142 -1867 lantern if score SEA_ch6_event rng5 matches 2077 as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
+execute if block 90172 142 -1867 lantern if score SEA_ch6_event rng5 matches 2077 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“这是我梦境中的内容。抱歉……或许是在危急关头，我宁可相信它是真的吧。”","color":"white","bold": false}]
 execute if block 90172 142 -1867 lantern if score SEA_ch6_event rng5 matches 2094 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“我……确实做了很多场预知梦。只不过内容和现实多有差异，所以我没有放在心上。”","color":"white"}]
 
 
