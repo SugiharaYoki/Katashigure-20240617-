@@ -11,6 +11,7 @@ execute as @s[scores={sea_4temp1=1..90}] positioned 90184 62 91 as @n[tag=SEAedw
 
 execute as @s[scores={sea_4temp1=1}] run scoreboard players add @s sea_4temp1 8
 
+execute as @s[scores={sea_4temp1=15}] as @n[tag=SEAedwina] at @s run kill @n[tag=SEAyuehan,distance=..500]
 execute as @s[scores={sea_4temp1=15}] as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
 execute as @s[scores={sea_4temp1=33}] as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
 execute as @s[scores={sea_4temp1=46}] as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3

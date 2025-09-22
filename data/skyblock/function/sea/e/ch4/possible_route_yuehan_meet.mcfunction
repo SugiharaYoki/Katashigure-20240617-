@@ -89,11 +89,11 @@ execute if score @s sea_4temp1 matches 1900..1999 run scoreboard players set @s 
 execute if score @s sea_4temp1 matches 10..5000 if entity @a[tag=SEAPT,x=90229,y=51,z=101,dx=7,dy=6,dz=7] run scoreboard players set @s sea_4temp1 5001
 
 
-execute if score @s sea_4temp1 matches 5001 run tag @n[tag=SEAyuehan] remove SEAyuehan_actable
-execute if score @s sea_4temp1 matches 5001 run scoreboard players set SEA_ch4_event_railbox rng9 1
-execute if score @s sea_4temp1 matches 5001 run scoreboard players set @n[tag=SEAch4_spawn_timer_marilyn] sea_4temp1 9999
-execute if score @s sea_4temp1 matches 5001 run tellraw @a[distance=0..250] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“从这里爬上去确实能到生态控制系统……”","color":"white","bold": false}]
-execute if score @s sea_4temp1 matches 5001 run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
+execute if score @s sea_4temp1 matches 5002 run tag @n[tag=SEAyuehan] remove SEAyuehan_actable
+execute if score @s sea_4temp1 matches 5002 run scoreboard players set SEA_ch4_event_railbox rng9 1
+execute if score @s sea_4temp1 matches 5002 run scoreboard players set @n[tag=SEAch4_spawn_timer_marilyn] sea_4temp1 9999
+execute if score @s sea_4temp1 matches 5002 run tellraw @a[distance=0..250] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“从这里爬上去确实能到生态控制系统……”","color":"white","bold": false}]
+execute if score @s sea_4temp1 matches 5002 run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
 
 execute if score @s sea_4temp1 matches 5020 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“嗯？怎么，你不跟我上来吗？”","color":"white"}]
 
