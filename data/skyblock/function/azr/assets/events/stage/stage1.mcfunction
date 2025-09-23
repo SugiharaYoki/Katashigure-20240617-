@@ -27,15 +27,16 @@ execute if score stage_main_thread AzrTimerStack matches 21 run tellraw @a[tag=a
 execute if score stage_main_thread AzrTimerStack matches 27 run tellraw @a[tag=azrShowDialog] [{"text":"驭灵使：","color":"yellow"},{"text":"\n“……不对，人类哪来这么强大的力量？！”","color":"white"}]
 
 execute if score stage_main_thread AzrTimerStack matches 30 positioned -79931 38 3 run function skyblock:azr/assets/mobs_new/shield
+execute if score stage_main_thread AzrTimerStack matches 30 positioned -79931 38 -9 run function skyblock:azr/assets/mobs_new/barrier_maintainer
 
-execute if score stage_main_thread AzrTimerStack matches 31..35 unless entity @n[tag=AzrielMob] run scoreboard players set stage_main_thread AzrTimerStack 36
 #回秒
-execute if score stage_main_thread AzrTimerStack matches 31..36 if entity @e[tag=AzrielMob,tag=!AzrielDecMob] run scoreboard players set stage_main_thread AzrTimerStack 31
+execute if score stage_main_thread AzrTimerStack matches 31..32 if entity @e[tag=AzrielMob_barrier_maintainer] run scoreboard players set stage_main_thread AzrTimerStack 31
+execute if score stage_main_thread AzrTimerStack matches 31..32 unless entity @e[tag=AzrielMob_barrier_maintainer] run scoreboard players set stage_main_thread AzrTimerStack 37
 #结束
-execute if score stage_main_thread AzrTimerStack matches 36 run playsound ambient.crimson_forest.loop ambient @a[tag=azrShowDialog] -78000 100 0 1000
-execute if score stage_main_thread AzrTimerStack matches 36 run playsound ambient.crimson_forest.mood ambient @a[tag=azrShowDialog] -78000 100 0 1000
-execute if score stage_main_thread AzrTimerStack matches 36 run playsound ambient.crimson_forest.additions ambient @a[tag=azrShowDialog] -78000 100 0 1000
-execute if score stage_main_thread AzrTimerStack matches 36 run title @a[tag=azrShowDialog] actionbar {"text":"Stage Clear","color":"green"}
+execute if score stage_main_thread AzrTimerStack matches 38 run playsound ambient.crimson_forest.loop ambient @a[tag=azrShowDialog] -78000 100 0 1000
+execute if score stage_main_thread AzrTimerStack matches 38 run playsound ambient.crimson_forest.mood ambient @a[tag=azrShowDialog] -78000 100 0 1000
+execute if score stage_main_thread AzrTimerStack matches 38 run playsound ambient.crimson_forest.additions ambient @a[tag=azrShowDialog] -78000 100 0 1000
+execute if score stage_main_thread AzrTimerStack matches 38 run title @a[tag=azrShowDialog] actionbar {"text":"Stage Clear","color":"green"}
 execute if score stage_main_thread AzrTimerStack matches 40.. run fill -79931 40 6 -79931 38 6 air destroy
 execute if score stage_main_thread AzrTimerStack matches 40.. run fill -79928 40 1 -79928 38 -1 air destroy
 execute if score stage_main_thread AzrTimerStack matches 40.. run tellraw @a[tag=azrShowDialog,tag=!hasLifeVitae] {"text":""}
