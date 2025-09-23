@@ -21,8 +21,8 @@ execute as @e[type=zombie,tag=AZRknight,x=-79943,y=38,z=135,distance=..4000] at 
 #开始-第一关 1
 execute if score stage Azr_system matches 1 run scoreboard players set stage_main_thread AzrTimerStack 0
 #第一关 2
-execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 2 if score playerCount Azr_system matches 1..2 run function skyblock:azr/assets/events/stage/stage1
-execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 2 if score playerCount Azr_system matches 3.. run function skyblock:azr/assets/events/stage/stage1_beta
+execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 2 if score playerCount Azr_system matches 1.. run function skyblock:azr/assets/events/stage/stage1
+#execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 2 if score playerCount Azr_system matches 3.. run function skyblock:azr/assets/events/stage/stage1_beta
 #第一关-第二关 3
 execute if score stage Azr_system matches 3 run scoreboard players set stage_main_thread AzrTimerStack 0
 #第二关 4
