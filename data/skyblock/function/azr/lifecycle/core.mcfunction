@@ -26,8 +26,8 @@ execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system 
 #第一关-第二关 3
 execute if score stage Azr_system matches 3 run scoreboard players set stage_main_thread AzrTimerStack 0
 #第二关 4
-execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 4 if score playerCount Azr_system matches 1..2 run function skyblock:azr/assets/events/stage/stage2
-execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 4 if score playerCount Azr_system matches 3.. run function skyblock:azr/assets/events/stage/stage2_beta
+execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 4 if score playerCount Azr_system matches 1.. run function skyblock:azr/assets/events/stage/stage2
+#execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 4 if score playerCount Azr_system matches 3.. run function skyblock:azr/assets/events/stage/stage2_beta
 #第二关-第三关 5
 execute if score stage Azr_system matches 5 run scoreboard players set stage_main_thread AzrTimerStack 0
 #第三关 6/32

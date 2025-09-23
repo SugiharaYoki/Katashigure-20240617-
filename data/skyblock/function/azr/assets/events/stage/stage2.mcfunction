@@ -19,30 +19,7 @@ execute if score stage_main_thread AzrTimerStack matches 23 run tellraw @a[tag=a
 execute if score stage_main_thread AzrTimerStack matches 23 run tellraw @a[tag=azrShowDialog] {"text":"“挑战者到达第一关口，出兵迎战。”","color":"white"}
 execute if score stage_main_thread AzrTimerStack matches 123 run tellraw @a[tag=azrShowDialog] {"text":"第一关口守备军：","color":"aqua"}
 execute if score stage_main_thread AzrTimerStack matches 123 run tellraw @a[tag=azrShowDialog] {"text":"“喂，对方是不是有些太强了？怎么回事？！”","color":"white"}
-execute if score stage_main_thread AzrTimerStack matches 2 positioned -79922 38 14 run function skyblock:azr/assets/mobs/zombie_t1
-execute if score stage_main_thread AzrTimerStack matches 8 if score playerCount Azr_system matches 2.. positioned -79922 38 14 run function skyblock:azr/assets/mobs/zombie_t1_4hp
-execute if score stage_main_thread AzrTimerStack matches 5 positioned -79922 38 14 run function skyblock:azr/assets/mobs/zombie_t1
-execute if score stage_main_thread AzrTimerStack matches 11 if score playerCount Azr_system matches 2.. positioned -79922 38 14 run function skyblock:azr/assets/mobs/zombie_t1_4hp
-execute if score stage_main_thread AzrTimerStack matches 12..13 unless entity @n[tag=AzrielMob] run scoreboard players set stage_main_thread AzrTimerStack 14
-execute if score stage_main_thread AzrTimerStack matches 14 positioned -79940 38 14 run function skyblock:azr/assets/mobs/zombie_t1_4hp
-execute if score stage_main_thread AzrTimerStack matches 15..18 unless entity @n[tag=AzrielMob] run scoreboard players set stage_main_thread AzrTimerStack 19
-execute if score stage_main_thread AzrTimerStack matches 19 positioned -79922 38 14 run function skyblock:azr/assets/mobs/zombie_t1_5hp
-execute if score stage_main_thread AzrTimerStack matches 20..21 unless entity @n[tag=AzrielMob] run scoreboard players set stage_main_thread AzrTimerStack 22
-execute if score stage_main_thread AzrTimerStack matches 22 positioned -79940 38 14 run function skyblock:azr/assets/mobs/zombie_t1_5hp
-execute if score stage_main_thread AzrTimerStack matches 23..25 unless entity @n[tag=AzrielMob] run scoreboard players set stage_main_thread AzrTimerStack 26
-execute if score stage_main_thread AzrTimerStack matches 26 positioned -79927 38 8 run function skyblock:azr/assets/mobs/pillager_t1
-execute if score stage_main_thread AzrTimerStack matches 26 positioned -79927 38 20 run function skyblock:azr/assets/mobs/vindicator_t1
-execute if score stage_main_thread AzrTimerStack matches 26 positioned -79935 38 20 run function skyblock:azr/assets/mobs/pillager_t1_shield
-execute if score stage_main_thread AzrTimerStack matches 27..28 unless entity @n[tag=AzrielMob] run scoreboard players set stage_main_thread AzrTimerStack 29
-execute if score stage_main_thread AzrTimerStack matches 29 positioned -79922 38 14 run function skyblock:azr/assets/mobs/zombie_t1_5hp
-execute if score stage_main_thread AzrTimerStack matches 30..32 unless entity @n[tag=AzrielMob] run scoreboard players set stage_main_thread AzrTimerStack 33
-execute if score stage_main_thread AzrTimerStack matches 33 positioned -79935 38 20 run function skyblock:azr/assets/mobs/pillager_t1
-execute if score stage_main_thread AzrTimerStack matches 34..36 unless entity @n[tag=AzrielMob] run scoreboard players set stage_main_thread AzrTimerStack 37
-execute if score stage_main_thread AzrTimerStack matches 37 positioned -79935 38 8 run function skyblock:azr/assets/mobs/pillager_t1
-execute if score stage_main_thread AzrTimerStack matches 38 positioned -79922 38 14 run function skyblock:azr/assets/mobs/zombie_t1_4hp
-execute if score stage_main_thread AzrTimerStack matches 38 positioned -79940 38 14 run function skyblock:azr/assets/mobs/zombie_t1_4hp
-execute if score stage_main_thread AzrTimerStack matches 40 positioned -79922 38 14 run function skyblock:azr/assets/mobs/zombie_t1_6hp
-execute if score stage_main_thread AzrTimerStack matches 40 if score playerCount Azr_system matches 2.. positioned -79940 38 14 run function skyblock:azr/assets/mobs/zombie_t1_6hp
+
 #回秒
 execute if score stage_main_thread AzrTimerStack matches 41..46 if entity @e[tag=AzrielMob,tag=!AzrielDecMob] run scoreboard players set stage_main_thread AzrTimerStack 41
 execute if score stage_main_thread AzrTimerStack matches 44 run title @a[tag=azrShowDialog] actionbar {"text":"Wave Clear","color":"green"}
@@ -107,6 +84,7 @@ execute if score stage_main_thread AzrTimerStack matches 143 run playsound ambie
 execute if score stage_main_thread AzrTimerStack matches 143 run playsound ambient.crimson_forest.mood ambient @a[tag=azrShowDialog] -78000 100 0 1000
 execute if score stage_main_thread AzrTimerStack matches 143 run playsound ambient.crimson_forest.additions ambient @a[tag=azrShowDialog] -78000 100 0 1000
 execute if score stage_main_thread AzrTimerStack matches 143 run fill -79931 38 22 -79931 40 22 air destroy
+execute if score stage_main_thread AzrTimerStack matches 143 if score playerCount Azr_system matches 3.. run fill -79942 40 3 -79944 38 3 air destroy
 execute if score stage_main_thread AzrTimerStack matches 143 run clone -79927 38 0 -79927 38 0 -79934 38 18 replace move
 execute if score stage_main_thread AzrTimerStack matches 143 run particle minecraft:end_rod -79927 39 0 0.6 0.6 0.6 0.0 13
 execute if score stage_main_thread AzrTimerStack matches 143 run particle minecraft:end_rod -79934 39 18 0.6 0.6 0.6 0.0 13
