@@ -5,15 +5,16 @@ execute store result score playerCount Azr_system if entity @a[tag=azrPlayer,gam
 scoreboard players operation playerCount Azr_system += DEBUG_fakePlayer Azr_system
 execute store result score mobCount Azr_system if entity @e[tag=AzrielMob,tag=!AzrielDecMob,x=-79931,y=100,z=0,distance=..10000,limit=70]
 #停秒
-scoreboard players set stopSeconds Azr_system 0
-execute if score playerCount Azr_system matches 1..4 if score mobCount Azr_system matches 7.. run scoreboard players set stopSeconds Azr_system 1
-execute if score playerCount Azr_system matches 5..6 if score mobCount Azr_system matches 9.. run scoreboard players set stopSeconds Azr_system 1
-execute if score playerCount Azr_system matches 7.. if score mobCount Azr_system matches 10.. run scoreboard players set stopSeconds Azr_system 1
+#scoreboard players set stopSeconds Azr_system 0
+#execute if score playerCount Azr_system matches 1..4 if score mobCount Azr_system matches 7.. run scoreboard players set stopSeconds Azr_system 1
+#execute if score playerCount Azr_system matches 5..6 if score mobCount Azr_system matches 9.. run scoreboard players set stopSeconds Azr_system 1
+#execute if score playerCount Azr_system matches 7.. if score mobCount Azr_system matches 10.. run scoreboard players set stopSeconds Azr_system 1
 #自动读秒
 execute unless score stopSeconds Azr_system matches 1 run scoreboard players add stage_main_thread AzrTimerStack 1
 #在部分关卡强制读秒
-execute if score stopSeconds Azr_system matches 1 run function skyblock:azr/lifecycle/force_seconds
-
+#execute if score stopSeconds Azr_system matches 1 run function skyblock:azr/lifecycle/force_seconds
+#动态难度
+execute if score stage_main_thread AzrTimerStack matches 1.. run function skyblock:azr/system/entity/dynamic_difficulty
 #不死骑士（花园1）
 execute as @e[type=zombie,tag=AZRknight,x=-79943,y=38,z=135,distance=..4000] at @s if entity @a[tag=azrPlayer,distance=0..8] run function skyblock:azr/assets/events/effects/zombie_knight
 
