@@ -1,0 +1,23 @@
+
+
+
+execute if score AzrielC_danger rng1 matches 1..2 run summon vindicator ~ ~ ~ {PersistenceRequired:1b,Tags:["AzrielMob","AzrielMob_sword","AzrielMob_level_1"],DeathLootTable:"skyblock:azriel_vindicator_tier1",attributes:[{id:"attack_damage",base:0.0},{id:"max_health",base:12.0},{id:"armor",base:0.0},{base:0.18d,id:"movement_speed"}],Health:12.0f,CustomName:'"哨兵剑士"',HandItems:[{},{}],HandDropChances:[0.1f,0.1f],ArmorItems:[{},{},{},{}]}
+execute if score AzrielC_danger rng1 matches 3 run summon vindicator ~ ~ ~ {PersistenceRequired:1b,Tags:["AzrielMob","AzrielMob_sword","AzrielMob_level_2"],DeathLootTable:"skyblock:azriel_vindicator_tier1",attributes:[{id:"attack_damage",base:0.0},{id:"max_health",base:16.0},{id:"armor",base:1.0},{base:0.19d,id:"movement_speed"}],Health:16.0f,CustomName:'"哨兵剑士"',HandItems:[{},{}],HandDropChances:[0.1f,0.1f],ArmorItems:[{},{},{},{}]}
+execute if score AzrielC_danger rng1 matches 4 run summon vindicator ~ ~ ~ {PersistenceRequired:1b,Tags:["AzrielMob","AzrielMob_sword","AzrielMob_level_3"],DeathLootTable:"skyblock:azriel_vindicator_tier1",attributes:[{id:"attack_damage",base:0.0},{id:"max_health",base:24.0},{id:"armor",base:2.0},{base:0.20d,id:"movement_speed"}],Health:24.0f,CustomName:'"哨兵剑士"',HandItems:[{},{}],HandDropChances:[0.1f,0.1f],ArmorItems:[{},{},{},{}]}
+execute if score AzrielC_danger rng1 matches 5..6 run summon vindicator ~ ~ ~ {PersistenceRequired:1b,Tags:["AzrielMob","AzrielMob_sword","AzrielMob_level_4"],DeathLootTable:"skyblock:azriel_vindicator_tier1",attributes:[{id:"attack_damage",base:0.0},{id:"max_health",base:32.0},{id:"armor",base:3.0},{base:0.22d,id:"movement_speed"}],Health:32.0f,CustomName:'"哨兵剑士"',HandItems:[{},{}],HandDropChances:[0.1f,0.1f],ArmorItems:[{},{},{},{}]}
+execute if score AzrielC_danger rng1 matches 7.. run summon vindicator ~ ~ ~ {PersistenceRequired:1b,Tags:["AzrielMob","AzrielMob_sword","AzrielMob_level_5"],DeathLootTable:"skyblock:azriel_vindicator_tier1",attributes:[{id:"attack_damage",base:0.0},{id:"max_health",base:40.0},{id:"armor",base:4.0},{base:0.24d,id:"movement_speed"}],Health:40.0f,CustomName:'"哨兵剑士"',HandItems:[{},{}],HandDropChances:[0.1f,0.1f],ArmorItems:[{},{},{},{}]}
+particle minecraft:reverse_portal ~ ~0.8 ~ 0.3 0.7 0.3 0.1 18
+playsound entity.enderman.teleport hostile @a ~ ~ ~ 0.8 1.2
+
+execute as @n[tag=AzrielMob,tag=!AzrielMob_level_ed,tag=AzrielMob_level_1] at @s run scoreboard players set @s AzrielMobLevel 1
+execute as @n[tag=AzrielMob,tag=!AzrielMob_level_ed,tag=AzrielMob_level_2] at @s run scoreboard players set @s AzrielMobLevel 2
+execute as @n[tag=AzrielMob,tag=!AzrielMob_level_ed,tag=AzrielMob_level_3] at @s run scoreboard players set @s AzrielMobLevel 3
+execute as @n[tag=AzrielMob,tag=!AzrielMob_level_ed,tag=AzrielMob_level_4] at @s run scoreboard players set @s AzrielMobLevel 4
+execute as @n[tag=AzrielMob,tag=!AzrielMob_level_ed,tag=AzrielMob_level_5] at @s run scoreboard players set @s AzrielMobLevel 5
+execute as @n[tag=AzrielMob,tag=!AzrielMob_level_ed] at @s run tag @s add AzrielMob_level_ed
+
+
+
+
+
+
