@@ -3,3 +3,4 @@ execute if entity @s[tag=AzrielMob_shield] run function skyblock:azr/assets/mobs
 execute if entity @s[tag=AzrielMob_sword] run function skyblock:azr/assets/mobs_new/skill/sword
 execute if entity @s[tag=AzrielMob_smoke] run function skyblock:azr/assets/mobs_new/skill/smoke
 
+execute if entity @s[tag=AzrielMob_elite_candle_angel] run function skyblock:azr/assets/mobs_new/skill/candle/core

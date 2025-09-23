@@ -112,6 +112,8 @@ function skyblock:azr/assets/events/effects/wish_fountain_transfer
 
 #实体函数
 execute as @e[x=-79931,y=100,z=0,distance=..10000] run function skyblock:azr/system/entity/main
+#精英怪共享指令
+execute if entity @n[tag=AzrielMob_elite_candle_angel] run function skyblock:azr/assets/mobs_new/skill/candle/core_controller
 
 execute if score tick_count_main AzrTimerStack matches -2147483648..2147483647 run scoreboard players add tick_count_main AzrTimerStack 1
 execute if score timer_static_5s AzrTimerStack matches -2147483648..2147483647 run scoreboard players add timer_static_5s AzrTimerStack 1
