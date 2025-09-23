@@ -51,7 +51,7 @@ execute if score stage_main_thread AzrTimerStack matches 75 positioned -79931 38
 
 #回秒
 execute if score stage_main_thread AzrTimerStack matches 76..77 if entity @e[tag=AzrielMob_barrier_maintainer] run scoreboard players set stage_main_thread AzrTimerStack 76
-execute if score stage_main_thread AzrTimerStack matches 76..77 unless entity @e[tag=AzrielMob_barrier_maintainer] run scoreboard players set stage_main_thread AzrTimerStack 142
+execute if score stage_main_thread AzrTimerStack matches 76..77 unless entity @e[tag=AzrielMob_barrier_maintainer] run scoreboard players set stage_main_thread AzrTimerStack 141
 #结束
 execute if score stage_main_thread AzrTimerStack matches 143 run playsound ambient.crimson_forest.loop ambient @a[tag=azrShowDialog] -78000 100 0 1000
 execute if score stage_main_thread AzrTimerStack matches 143 run playsound ambient.crimson_forest.mood ambient @a[tag=azrShowDialog] -78000 100 0 1000
