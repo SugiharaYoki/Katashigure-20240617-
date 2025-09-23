@@ -24,4 +24,4 @@ execute if score @s rng1 matches 75 run item replace entity @s weapon.mainhand w
 
 
 
-execute if score @s rng1 matches 200 run scoreboard players set @s rng1 0
+#execute if score @s rng1 matches 200 run scoreboard players set @s rng1 0
