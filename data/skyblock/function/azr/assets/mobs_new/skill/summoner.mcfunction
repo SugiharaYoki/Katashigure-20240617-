@@ -1,6 +1,6 @@
 scoreboard players add @s rng1 1
 
-execute if score @s[scores={AzrielMobLevel=2..}] rng1 matches 2 run scoreboard players add @s rng1 10
+execute if score @s[scores={AzrielMobLevel=1..}] rng1 matches 2 run scoreboard players add @s rng1 10
 execute if score @s[scores={AzrielMobLevel=3..}] rng1 matches 13 run scoreboard players add @s rng1 10
 execute if score @s[scores={AzrielMobLevel=4..}] rng1 matches 24 run scoreboard players add @s rng1 10
 execute if score @s[scores={AzrielMobLevel=5..}] rng1 matches 35 run scoreboard players add @s rng1 10
