@@ -5,10 +5,10 @@ execute if score playerCount Azr_system matches 5.. run scoreboard players add A
 execute if score playerCount Azr_system matches 8.. run scoreboard players add AzrielC_danger rng1 1
 
 
-execute if score stage Azr_system matches 4.. run scoreboard players add AzrielC_danger rng1 1
-execute if score stage Azr_system matches 9.. run scoreboard players add AzrielC_danger rng1 1
-execute if score stage Azr_system matches 17.. run scoreboard players add AzrielC_danger rng1 1
-execute if score stage Azr_system matches 25.. run scoreboard players add AzrielC_danger rng1 1
+execute if score stage Azr_system matches 12.. run scoreboard players add AzrielC_danger rng1 1
+execute if score stage Azr_system matches 26.. run scoreboard players add AzrielC_danger rng1 1
+execute if score stage Azr_system matches 52.. run scoreboard players add AzrielC_danger rng1 1
+execute if score stage Azr_system matches 100.. run scoreboard players add AzrielC_danger rng1 1
 
 
 
