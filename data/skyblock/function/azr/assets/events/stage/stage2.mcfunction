@@ -10,6 +10,7 @@ execute if score stage_main_thread AzrTimerStack matches 1..143 store result bos
 execute if score stage_main_thread AzrTimerStack matches 143 run bossbar remove azr:progress_bar_normal
 #刷怪时序
 #第一波
+execute if score stage_main_thread AzrTimerStack matches 2 run scoreboard players set stage_main_thread AzrTimerStack 22
 execute if score stage_main_thread AzrTimerStack matches 23 run playsound block.bell.use ambient @a[tag=azrShowDialog] -79887 50 164 100 0.7
 execute if score stage_main_thread AzrTimerStack matches 25 run playsound block.bell.use ambient @a[tag=azrShowDialog] -79887 50 164 100 0.7
 execute if score stage_main_thread AzrTimerStack matches 27 run playsound block.bell.use ambient @a[tag=azrShowDialog] -79887 50 164 100 0.7
