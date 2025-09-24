@@ -30,7 +30,7 @@ execute if score Azr_Story_Introduction rng1 matches 126 as @p[tag=azrPlayer] at
 execute if score Azr_Story_Introduction rng1 matches 126 run scoreboard players add Azr_Story_Introduction rng1 18
 
 execute if score Azr_Story_Introduction rng1 matches 166 as @p[tag=azrPlayer] at @s run title @a[tag=azrShowDialog] times 1s 2s 1s
-execute if score Azr_Story_Introduction rng1 matches 166 as @p[tag=azrPlayer] at @s run title @a[tag=azrShowDialog] title [{"text":"周而复始，多少年过去","color":"white","bold": false}]
+execute if score Azr_Story_Introduction rng1 matches 166 as @p[tag=azrPlayer] at @s run title @a[tag=azrShowDialog] title [{"text":"周而复始，多少年月的流逝","color":"white","bold": false}]
 execute if score Azr_Story_Introduction rng1 matches 166 as @p[tag=azrPlayer] at @s run title @a[tag=azrShowDialog] subtitle [{"text":"世界的整体走向竟无任何变化","color":"white","bold": false}]
 execute if score Azr_Story_Introduction rng1 matches 166 run scoreboard players add Azr_Story_Introduction rng1 18
 
@@ -79,9 +79,9 @@ execute if score Azr_Story_Introduction rng1 matches 290 positioned -79438 30 -4
 execute if score Azr_Story_Introduction rng1 matches 290 positioned -79488 30 -405 run summon piglin ~ ~ ~ {CustomName:'"魔界居民"',PersistenceRequired:1b,Tags:["AzrielMob_StoryIntroduction_NPC_unused"],Invulnerable:1b,IsImmuneToZombification:1b,attributes:[{id:"movement_speed",base:0.15}],HandItems:[{},{}],ArmorItems:[{},{},{count:1,id:"golden_chestplate"},{}]}
 execute if score Azr_Story_Introduction rng1 matches 290 positioned -79488 30 -405 run summon piglin ~ ~ ~ {CustomName:'"魔界居民"',PersistenceRequired:1b,Tags:["AzrielMob_StoryIntroduction_NPC_unused"],Invulnerable:1b,IsImmuneToZombification:1b,attributes:[{id:"movement_speed",base:0.15}],HandItems:[{count:1,id:"spyglass"},{}]}
 
-execute if score Azr_Story_Introduction rng1 matches 290 positioned -79385 22 -382 run summon hoglin ~ ~ ~ {PersistenceRequired:1b,Invulnerable:1b}
-execute if score Azr_Story_Introduction rng1 matches 290 positioned -79385 22 -382 run summon hoglin ~ ~ ~ {PersistenceRequired:1b,Invulnerable:1b,attributes:[{id:"scale",base:0.3}]}
-execute if score Azr_Story_Introduction rng1 matches 290 positioned -79385 22 -382 run summon hoglin ~ ~ ~ {PersistenceRequired:1b,Invulnerable:1b,attributes:[{id:"scale",base:0.3}]}
+execute if score Azr_Story_Introduction rng1 matches 290 positioned -79385 22 -382 run summon hoglin ~ ~ ~ {PersistenceRequired:1b,IsImmuneToZombification:1b,Invulnerable:1b}
+execute if score Azr_Story_Introduction rng1 matches 290 positioned -79385 22 -382 run summon hoglin ~ ~ ~ {PersistenceRequired:1b,IsImmuneToZombification:1b,Invulnerable:1b,attributes:[{id:"scale",base:0.3}]}
+execute if score Azr_Story_Introduction rng1 matches 290 positioned -79385 22 -382 run summon hoglin ~ ~ ~ {PersistenceRequired:1b,IsImmuneToZombification:1b,Invulnerable:1b,attributes:[{id:"scale",base:0.3}]}
 
 execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC1,distance=..100,type=piglin] at @s if entity @p[tag=SEAPT,distance=..4.4] run scoreboard players add @s rng1 1
 execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC1,distance=..100,type=piglin,scores={rng1=2}] at @s if entity @p[tag=SEAPT,distance=..4.4] run playsound entity.piglin.ambient neutral @a ~ ~ ~ 1 1
