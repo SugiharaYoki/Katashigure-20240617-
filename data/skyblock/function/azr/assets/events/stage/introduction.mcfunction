@@ -14,8 +14,20 @@ execute if score Azr_Story_Introduction rng1 matches 26 at @p[tag=azrPlayer] run
 execute if score Azr_Story_Introduction rng1 matches 27..28 run scoreboard players set Azr_Story_Introduction rng1 27
 execute if score Azr_Story_Introduction rng1 matches ..28 if entity @a[x=-79762,y=104,z=-2078,dx=4,dy=4,dz=24] run scoreboard players set Azr_Story_Introduction rng1 29
 
+execute if score Azr_Story_Introduction rng1 matches 46 as @p[tag=azrPlayer] at @s run title @a[tag=azrShowDialog] times 2s 3s 2s
+execute if score Azr_Story_Introduction rng1 matches 46 as @p[tag=azrPlayer] at @s run title @a[tag=azrShowDialog] title [{"text":"亘古至今","color":"white","bold": true}]
+execute if score Azr_Story_Introduction rng1 matches 46 as @p[tag=azrPlayer] at @s run title @a[tag=azrShowDialog] subtitle [{"text":"人类总是在制造同样的错误","color":"white","bold": false}]
 
+execute if score Azr_Story_Introduction rng1 matches 86 as @p[tag=azrPlayer] at @s run title @a[tag=azrShowDialog] times 2s 3s 2s
+execute if score Azr_Story_Introduction rng1 matches 86 as @p[tag=azrPlayer] at @s run title @a[tag=azrShowDialog] title [{"text":"但又有多少人类能够理解","color":"white","bold": true}]
+execute if score Azr_Story_Introduction rng1 matches 86 as @p[tag=azrPlayer] at @s run title @a[tag=azrShowDialog] subtitle [{"text":"居于天穹的神明，往往也并非神通广大","color":"white","bold": false}]
 
+execute if score Azr_Story_Introduction rng1 matches 126 as @p[tag=azrPlayer] at @s run title @a[tag=azrShowDialog] times 2s 3s 2s
+execute if score Azr_Story_Introduction rng1 matches 126 as @p[tag=azrPlayer] at @s run title @a[tag=azrShowDialog] title [{"text":"为了解决一个问题","color":"white","bold": true}]
+execute if score Azr_Story_Introduction rng1 matches 126 as @p[tag=azrPlayer] at @s run title @a[tag=azrShowDialog] subtitle [{"text":"所有生灵总倾向于制造另一个问题","color":"white","bold": false}]
 
+execute if score Azr_Story_Introduction rng1 matches 166 as @p[tag=azrPlayer] at @s run title @a[tag=azrShowDialog] times 2s 3s 2s
+execute if score Azr_Story_Introduction rng1 matches 166 as @p[tag=azrPlayer] at @s run title @a[tag=azrShowDialog] title [{"text":"周而复始，多少年过去","color":"white","bold": true}]
+execute if score Azr_Story_Introduction rng1 matches 166 as @p[tag=azrPlayer] at @s run title @a[tag=azrShowDialog] subtitle [{"text":"世界的整体走向竟无任何变化","color":"white","bold": false}]
 
 
