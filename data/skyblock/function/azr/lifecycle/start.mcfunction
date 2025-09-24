@@ -57,7 +57,7 @@ execute as @a unless entity @s[scores={AZR_chainKillUpg_attackspeed=-999..}] run
 
 #设置游戏数据
 scoreboard players add Pointer Azr_startCount 1
-scoreboard players set stage Azr_system 1
+scoreboard players set stage Azr_system -1
 scoreboard players set isStarted Azr_system 1
 scoreboard players set stopSeconds Azr_system 0
 scoreboard players set chapter Azr_system 1
