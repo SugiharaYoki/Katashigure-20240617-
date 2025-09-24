@@ -544,8 +544,8 @@ fill -79465 84 -342 -79467 84 -334 glass
 fill -79470 84 -337 -79462 84 -339 glass
 fill -79460 64 -343 -79471 64 -332 black_concrete replace air
 clone -79555 32 -352 -79517 32 -319 -79555 41 -352
-
-
+setblock -79416 28 -382 smoker[facing=west]
+setblock -79416 28 -381 minecraft:potted_crimson_roots
 
 
 fill -79409 30 -398 -79409 32 -396 minecraft:red_stained_glass
