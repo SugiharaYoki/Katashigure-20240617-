@@ -47,6 +47,6 @@ execute if score Azr_Story_Introduction rng1 matches 232 as @p[tag=azrPlayer] at
 
 execute if score Azr_Story_Introduction rng1 matches 272 as @p[tag=azrPlayer] at @s run title @a[tag=azrShowDialog] times 0s 2s 7s
 execute if score Azr_Story_Introduction rng1 matches 272 as @p[tag=azrPlayer] at @s as @a[distance=..200] at @s run playsound garden2.chapter_title master @s ~ ~ ~ 100 1.0
-execute if score Azr_Story_Introduction rng1 matches 272 as @p[tag=azrPlayer] at @s run title @a[tag=azrShowDialog] title [{"text":"你迎来了自己的死亡","color":"white","bold": true}]
+execute if score Azr_Story_Introduction rng1 matches 272 as @p[tag=azrPlayer] at @s run title @a[tag=azrShowDialog] title [{"text":"你迎来了属于自己的死亡","color":"dark_red","bold": true}]
 
 
