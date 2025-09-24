@@ -32,8 +32,8 @@ tellraw @s [{"text":" 继承到下一局的瓜片：","color":"white"},{"score":
 execute unless score @s SeGa_StandLastBH matches -2147483648..2147483647 run scoreboard players set @s SeGa_StandLastBH 0
 execute if score @s SeGa_StandLastBH < wave Azr_system run scoreboard players operation @s SeGa_StandLastBH = wave Azr_system
 #后续处理
-execute if entity @s[x=-79900,y=40,z=0,distance=0..800] run spawnpoint @s -79953 38 -14 -90
-execute if entity @s[x=-79900,y=40,z=0,distance=0..800] run tp @s -79953.0 38.5 -14.0 facing -79952.0 38.5 -14.0
+execute if entity @s[x=-79900,y=40,z=0,distance=0..2200] run spawnpoint @s -79953 38 -14 -90
+execute if entity @s[x=-79900,y=40,z=0,distance=0..2200] run tp @s -79953.0 38.5 -14.0 facing -79952.0 38.5 -14.0
 #对接主城系统
 function skyblock:pvp/skywar/system/removeallmd
 function skyblock:pvp/skywar/system/removeallgaming
