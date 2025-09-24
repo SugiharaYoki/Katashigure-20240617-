@@ -466,6 +466,7 @@ item replace block -79571 11 -412 container.12 with minecraft:splash_potion[cust
 item replace block -79571 11 -412 container.14 with emerald 12
 item replace block -79791 28 -294 container.13 with minecraft:bundle
 #游戏开场
+forceload add -79541 -472 -79345 -350
 forceload add -79950 -2150 -79800 -1850
 setblock -79775 106 -2074 minecraft:potted_blue_orchid
 setblock -79769 105 -2079 smoker[facing=west]
@@ -482,6 +483,7 @@ setblock -79388 24 -400 decorated_pot{sherds:["prize_pottery_sherd","prize_potte
 setblock -79396 26 -384 air
 setblock -79396 26 -384 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:flint"}}
 
+fill -79370 27 -373 -79372 26 -373 minecraft:iron_bars
 
 #第16关地图预加载#
 setblock -79540 25 -406 birch_button[face=floor]
@@ -572,6 +574,7 @@ forceload remove -79400 -200 -79200 000
 forceload remove -79400 000 -79200 200
 forceload remove -79400 200 -79200 400
 forceload remove -79950 -2150 -79800 -1850
+forceload remove -79541 -472 -79345 -350
 #______________________________________________________________#
 kill @e[type=!player,tag=!protected_entity,x=-80000,y=100,z=0,distance=0..1000]
 

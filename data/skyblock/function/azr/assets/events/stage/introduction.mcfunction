@@ -59,7 +59,10 @@ execute if score Azr_Story_Introduction rng1 matches 280 as @p[tag=azrPlayer] at
 execute if score Azr_Story_Introduction rng1 matches 280 as @p[tag=azrPlayer] at @s run title @a[tag=azrShowDialog] subtitle [{"text":"『亚兹列尔的中庭花园』","color":"white","bold": true}]
 
 
+execute if score Azr_Story_Introduction rng1 matches 283 as @p[tag=azrPlayer] at @s run tp @a[distance=..200] -79440 25 -358 facing -79441 25 -358
 
+execute if score Azr_Story_Introduction rng1 matches 290 at @p[tag=azrPlayer] run tellraw @a[tag=azrShowDialog] [{"text":"温柔的声音：","color":"dark_purple"},{"text":"\n“承受不公命运的人类啊，你必将再度睁开双眼。”","color":"white"}]
+execute if score Azr_Story_Introduction rng1 matches 310 at @p[tag=azrPlayer] run tellraw @a[tag=azrShowDialog] [{"text":"温柔的声音：","color":"dark_purple"},{"text":"\n“我已犯下重罪，而你将会成为我的审判者。”","color":"white"}]
 
 execute positioned -79381 22 -385 run summon piglin ~ ~ ~ {CustomName:'"魔界居民"',PersistenceRequired:1b,Tags:["AzrielMob_StoryIntroduction_NPC1"],Invulnerable:1b,IsImmuneToZombification:1b,attributes:[{id:"movement_speed",base:0.0}],HandItems:[{},{}]}
 execute positioned -79387 24 -404 run summon piglin ~ ~ ~ {CustomName:'"魔界居民"',PersistenceRequired:1b,Tags:["AzrielMob_StoryIntroduction_NPC2"],Invulnerable:1b,IsImmuneToZombification:1b,attributes:[{id:"movement_speed",base:0.15}],HandItems:[{},{}]}
@@ -68,9 +71,9 @@ execute positioned -79394 26 -386 run summon piglin ~ ~ ~ {CustomName:'"仓管"'
 execute positioned -79377 24 -399 run summon piglin ~ ~ ~ {CustomName:'"魔界居民"',PersistenceRequired:1b,Tags:["AzrielMob_StoryIntroduction_NPC_unused"],Invulnerable:1b,IsImmuneToZombification:1b,attributes:[{id:"movement_speed",base:0.15}],HandItems:[{},{}]}
 
 execute positioned -79407 30 -398 run summon piglin_brute ~ ~ ~ {CustomName:'"守卫"',PersistenceRequired:1b,Tags:["AzrielMob_StoryIntroduction_NPC4"],Invulnerable:1b,IsImmuneToZombification:1b,attributes:[{id:"movement_speed",base:0.0},{id:"attack_damage",base:0.0}],HandItems:[{count:1,id:"golden_axe"},{}]}
+execute positioned -79373 26 -371 run summon piglin_brute ~ ~ ~ {CustomName:'"守卫"',PersistenceRequired:1b,Tags:["AzrielMob_StoryIntroduction_NPC5"],Invulnerable:1b,IsImmuneToZombification:1b,attributes:[{id:"movement_speed",base:0.0},{id:"attack_damage",base:0.0}],HandItems:[{count:1,id:"golden_axe"},{}]}
+
 execute positioned -79431 27 -395 run summon piglin_brute ~ ~ ~ {CustomName:'"守卫"',PersistenceRequired:1b,Tags:["AzrielMob_StoryIntroduction_NPC_unused"],Invulnerable:1b,IsImmuneToZombification:1b,attributes:[{id:"movement_speed",base:0.0},{id:"attack_damage",base:0.0}],HandItems:[{count:1,id:"golden_axe"},{}]}
-
-
 execute positioned -79438 30 -405 run summon strider ~ ~ ~ {CustomName:'"炽足兽"',PersistenceRequired:1b,Tags:["AzrielMob_StoryIntroduction_NPC_unused"],Invulnerable:1b,attributes:[{id:"movement_speed",base:0.15}]}
 execute positioned -79438 30 -405 run summon piglin ~ ~ ~ {CustomName:'"魔界居民"',PersistenceRequired:1b,Tags:["AzrielMob_StoryIntroduction_NPC_unused"],Invulnerable:1b,IsImmuneToZombification:1b,attributes:[{id:"movement_speed",base:0.15}],HandItems:[{},{}]}
 execute positioned -79438 30 -405 run summon piglin ~ ~ ~ {CustomName:'"魔界居民"',PersistenceRequired:1b,Tags:["AzrielMob_StoryIntroduction_NPC_unused"],Invulnerable:1b,IsImmuneToZombification:1b,attributes:[{id:"movement_speed",base:0.15}],HandItems:[{},{}],ArmorItems:[{count:1,id:"golden_boots"},{count:1,id:"golden_leggings"},{count:1,id:"golden_chestplate"},{}]}
@@ -110,4 +113,27 @@ execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC4,dis
 execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC4,distance=..100,type=piglin,scores={rng1=28}] at @s if entity @p[tag=SEAPT,distance=..4.4] run tellraw @a[tag=azrShowDialog] [{"text":"守卫：","color":"yellow"},{"text":"\n“呵呵……这算是神魔两界暗地里的交易吗？”","color":"white"}]
 execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC4,distance=..100,type=piglin,scores={rng1=68}] at @s if entity @p[tag=SEAPT,distance=..4.4] run playsound entity.piglin.ambient neutral @a ~ ~ ~ 1 1
 execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC4,distance=..100,type=piglin,scores={rng1=68}] at @s if entity @p[tag=SEAPT,distance=..4.4] run tellraw @a[tag=azrShowDialog] [{"text":"守卫：","color":"yellow"},{"text":"\n“你还在这里做什么？继续前进吧。”","color":"white"}]
+
+execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC5,distance=..100,type=piglin] at @s if entity @p[tag=SEAPT,distance=..4.4] run scoreboard players add @s rng1 1
+execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC5,distance=..100,type=piglin,scores={rng1=2}] at @s if entity @p[tag=SEAPT,distance=..4.4] run playsound entity.piglin.ambient neutral @a ~ ~ ~ 1 1
+execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC5,distance=..100,type=piglin,scores={rng1=2}] at @s if entity @p[tag=SEAPT,distance=..4.4] run tellraw @a[tag=azrShowDialog] [{"text":"守卫：","color":"yellow"},{"text":"\n“哈……欠。亚米提到的人类亡魂就是你吧？”","color":"white"}]
+execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC5,distance=..100,type=piglin,scores={rng1=18}] at @s if entity @p[tag=SEAPT,distance=..4.4] run playsound entity.piglin.ambient neutral @a ~ ~ ~ 1 1
+execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC5,distance=..100,type=piglin,scores={rng1=18}] at @s if entity @p[tag=SEAPT,distance=..4.4] run tellraw @a[tag=azrShowDialog] [{"text":"守卫：","color":"yellow"},{"text":"\n“不用看我。最近死后被传送到这里来的人类就你一个。”","color":"white"}]
+execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC5,distance=..100,type=piglin,scores={rng1=36}] at @s if entity @p[tag=SEAPT,distance=..4.4] run playsound entity.piglin.ambient neutral @a ~ ~ ~ 1 1
+execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC5,distance=..100,type=piglin,scores={rng1=36}] at @s if entity @p[tag=SEAPT,distance=..4.4] run tellraw @a[tag=azrShowDialog] [{"text":"守卫：","color":"yellow"},{"text":"\n“是的，是的。你已经死了。没救了。这些都不是关键。”","color":"white"}]
+execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC5,distance=..100,type=piglin,scores={rng1=56}] at @s if entity @p[tag=SEAPT,distance=..4.4] run playsound entity.piglin.ambient neutral @a ~ ~ ~ 1 1
+execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC5,distance=..100,type=piglin,scores={rng1=56}] at @s if entity @p[tag=SEAPT,distance=..4.4] run tellraw @a[tag=azrShowDialog] [{"text":"守卫：","color":"yellow"},{"text":"\n“我会为你开门，走到尽头——嗯，应该会有其他人指引你的。不是我的职责。”","color":"white"}]
+
+execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC5,distance=..100,type=piglin,scores={rng1=62..63}] at @s if entity @p[tag=SEAPT,distance=..4.4] run playsound block.iron_door.open block @a -79371 27 -373 1 0.7
+execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC5,distance=..100,type=piglin,scores={rng1=62}] at @s if entity @p[tag=SEAPT,distance=..4.4] run fill -79372 26 -373 -79370 26 -373 air
+execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC5,distance=..100,type=piglin,scores={rng1=63}] at @s if entity @p[tag=SEAPT,distance=..4.4] run fill -79372 26 -373 -79370 26 -373 air
+
+execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC5,distance=..100,type=piglin,scores={rng1=86}] at @s if entity @p[tag=SEAPT,distance=..4.4] run playsound entity.piglin.ambient neutral @a ~ ~ ~ 1 1
+execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC5,distance=..100,type=piglin,scores={rng1=86}] at @s if entity @p[tag=SEAPT,distance=..4.4] run tellraw @a[tag=azrShowDialog] [{"text":"守卫：","color":"yellow"},{"text":"\n“还不走……麻烦死了。从这条路走到底，有个传送门，进去就到神庭了。”","color":"white"}]
+execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC5,distance=..100,type=piglin,scores={rng1=108}] at @s if entity @p[tag=SEAPT,distance=..4.4] run playsound entity.piglin.ambient neutral @a ~ ~ ~ 1 1
+execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC5,distance=..100,type=piglin,scores={rng1=108}] at @s if entity @p[tag=SEAPT,distance=..4.4] run tellraw @a[tag=azrShowDialog] [{"text":"守卫：","color":"yellow"},{"text":"\n“神庭是什么？神界有一个试炼，你打通了他们会赐予你额外的凡间寿命。就是这样。”","color":"white"}]
+execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC5,distance=..100,type=piglin,scores={rng1=148}] at @s if entity @p[tag=SEAPT,distance=..4.4] run playsound entity.piglin.ambient neutral @a ~ ~ ~ 1 1
+execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC5,distance=..100,type=piglin,scores={rng1=148}] at @s if entity @p[tag=SEAPT,distance=..4.4] run tellraw @a[tag=azrShowDialog] [{"text":"守卫：","color":"yellow"},{"text":"\n“还不走吗？我困得要死，没法跟你解释更多了。”","color":"white"}]
+execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC5,distance=..100,type=piglin,scores={rng1=188}] at @s if entity @p[tag=SEAPT,distance=..4.4] run playsound entity.piglin.ambient neutral @a ~ ~ ~ 1 1
+execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC5,distance=..100,type=piglin,scores={rng1=188}] at @s if entity @p[tag=SEAPT,distance=..4.4] run tellraw @a[tag=azrShowDialog] [{"text":"守卫：","color":"yellow"},{"text":"\n“随你便。”","color":"white"}]
 
