@@ -2,6 +2,12 @@
 kill @n[tag=mg_azr0_MobPortals,type=marker]
 scoreboard players set MG_AZR0_Timer rng1 0
 
+bossbar add mg:azr0_bar "..."
+bossbar set mg:azr0_bar color purple
+bossbar set mg:azr0_bar style notched_20
+bossbar set mg:azr0_bar value 20
+bossbar set mg:azr0_bar max 20
+bossbar set mg:azr0_bar players @a[tag=MG_AZR0PT]
 
 execute if score MG_AZR0_Timer rng2 matches 1..3 store result score MG_AZR0_rng rng4 run random value 1..2
 execute if score MG_AZR0_Timer rng2 matches 4..6 store result score MG_AZR0_rng rng4 run random value 1..3

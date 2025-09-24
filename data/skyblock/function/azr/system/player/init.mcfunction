@@ -3,7 +3,7 @@ function skyblock:api_start_any_game
 #azr-player initialization
 #玩家初始化
 gamemode adventure @s
-execute at @s run spawnpoint @s ~ ~ ~
+execute at @s run spawnpoint @s -79775 105 -2081
 team add AzrPlayer
 team join AzrPlayer @s
 team modify AzrPlayer color green
@@ -24,10 +24,10 @@ advancement grant @s only skyblock:azr/azr_root
 
 #背包初始化
 clear @s
-function skyblock:azr/assets/items/weapons/wooden_sword_normal
-function skyblock:azr/assets/items/weapons/wooden_axe_normal
-function skyblock:azr/assets/items/others/revival_star
-give @s pumpkin_pie 8
+#function skyblock:azr/assets/items/weapons/wooden_sword_normal
+#function skyblock:azr/assets/items/weapons/wooden_axe_normal
+#function skyblock:azr/assets/items/others/revival_star
+#give @s pumpkin_pie 8
 
 #游戏数据初始化
 scoreboard players set @s Azr_forceDeath 0
@@ -50,8 +50,9 @@ execute if score $jumpto Azr_system matches 1 run tellraw @s {"text":"游戏再�
 scoreboard players reset $jumpto Azr_system
 execute as @s[tag=DebugMode] run scoreboard objectives setdisplay sidebar Azr_system
 #function skyblock:azr/purchase_sega_azriel_plypts_react1
-
-tp @s -79936.0 38.15 -14.0 facing -79935.0 38.15 -14.0
+tp @s -79775 105 -2081 facing -79774 105 -2081
+playsound music_disc.mall music @a -79771 105 -2071 2 1
+#tp @s -79936.0 38.15 -14.0 facing -79935.0 38.15 -14.0
 
 #wtf
 #scoreboard players set @s AzrielTag10 10

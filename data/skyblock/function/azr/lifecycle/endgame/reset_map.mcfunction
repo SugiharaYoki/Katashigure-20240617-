@@ -466,6 +466,22 @@ item replace block -79571 11 -412 container.12 with minecraft:splash_potion[cust
 item replace block -79571 11 -412 container.14 with emerald 12
 item replace block -79791 28 -294 container.13 with minecraft:bundle
 #游戏开场
+forceload add -79950 -2150 -79800 -1850
+setblock -79775 106 -2074 minecraft:potted_blue_orchid
+setblock -79769 105 -2079 smoker[facing=west]
+
+setblock -79774 105 -2077 minecraft:redstone_block
+setblock -79774 105 -2077 minecraft:air
+setblock -79771 105 -2076 minecraft:redstone_block
+setblock -79771 105 -2076 minecraft:air
+
+
+
+
+
+
+
+
 fill -79409 30 -398 -79409 32 -396 minecraft:red_stained_glass
 setblock -79401 27 -385 minecraft:redstone_block
 setblock -79401 27 -385 minecraft:air
@@ -492,6 +508,7 @@ forceload remove -79400 -400 -79200 -200
 forceload remove -79400 -200 -79200 000
 forceload remove -79400 000 -79200 200
 forceload remove -79400 200 -79200 400
+forceload remove -79950 -2150 -79800 -1850
 #______________________________________________________________#
 kill @e[type=!player,tag=!protected_entity,x=-80000,y=100,z=0,distance=0..1000]
 
