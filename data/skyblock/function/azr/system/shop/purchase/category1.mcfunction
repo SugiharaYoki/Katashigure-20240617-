@@ -10,7 +10,7 @@ $execute as @s[scores={Azr_Shop_rng$(rng)=1,Azr_Shop=$(trigger)}] \
     if items entity @s container.* flint \
     unless function skyblock:azr/system/shop/purchase/category1/\
     rng1 run scoreboard players set tempPlayerShopSuccess Azr_system 1
-    # 1_alt  面包 ×3  1 燧石
+    # 1  面包 ×3  1 燧石
 
 $execute as @s[scores={Azr_Shop_rng$(rng)=2,Azr_Shop=$(trigger)}] \
     unless score tempPlayerShopSuccess Azr_system matches 1 \
