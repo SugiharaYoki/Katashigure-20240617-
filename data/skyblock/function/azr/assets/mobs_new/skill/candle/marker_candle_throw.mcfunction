@@ -18,7 +18,7 @@ execute if score @s[scores={rng2=7}] rng1 matches 3 run rotate @s 270 0
 execute if score @s[scores={rng2=8}] rng1 matches 3 run rotate @s 315 0
 execute if score @s[scores={rng2=99..}] rng1 matches 3.. run rotate @s facing entity @p[tag=azrPlayer]
 
-execute if score @s rng1 matches 8.. rotated ~ 0 run tp @s ^ ^ ^0.25
+execute if score @s rng1 matches 8.. rotated ~ 0 run tp @s ^ ^ ^0.35
 execute if score @s rng1 matches 8.. store result score @s rng2 run random value 1..5
 execute if score @s[scores={rng2=2}] rng1 matches 8.. rotated ~ 0 run tp @s ^0.15 ^ ^
 execute if score @s[scores={rng2=3}] rng1 matches 8.. rotated ~ 0 run tp @s ^-0.15 ^ ^
