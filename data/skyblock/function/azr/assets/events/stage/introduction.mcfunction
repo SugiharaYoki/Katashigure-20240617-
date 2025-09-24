@@ -82,6 +82,8 @@ execute if score Azr_Story_Introduction rng1 matches 290 positioned -79488 30 -4
 execute if score Azr_Story_Introduction rng1 matches 290 positioned -79385 22 -382 run summon hoglin ~ ~ ~ {PersistenceRequired:1b,IsImmuneToZombification:1b,Invulnerable:1b}
 execute if score Azr_Story_Introduction rng1 matches 290 positioned -79385 22 -382 run summon hoglin ~ ~ ~ {PersistenceRequired:1b,IsImmuneToZombification:1b,Invulnerable:1b,attributes:[{id:"scale",base:0.3}]}
 execute if score Azr_Story_Introduction rng1 matches 290 positioned -79385 22 -382 run summon hoglin ~ ~ ~ {PersistenceRequired:1b,IsImmuneToZombification:1b,Invulnerable:1b,attributes:[{id:"scale",base:0.3}]}
+execute if score Azr_Story_Introduction rng1 matches 290 positioned -79385 22 -382 run effect give @e[type=piglin_brute,distance=..200] weakness infinite 59 true
+execute if score Azr_Story_Introduction rng1 matches 290 positioned -79385 22 -382 run effect give @e[type=piglin,distance=..200] weakness infinite 59 true
 
 execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC1,distance=..100,type=piglin] at @s if entity @p[tag=azrPlayer,distance=..4.4] run scoreboard players add @s rng1 1
 execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC1,distance=..100,type=piglin,scores={rng1=2}] at @s if entity @p[tag=azrPlayer,distance=..4.4] run playsound entity.piglin.ambient neutral @a ~ ~ ~ 1 1
