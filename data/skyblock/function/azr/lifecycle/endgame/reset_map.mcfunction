@@ -64,8 +64,9 @@ fill -79931 38 40 -79931 40 40 purple_stained_glass{name: "to Stage4 alpha"}
 fill -79957 42 13 -79955 38 13 minecraft:purple_stained_glass{name: "to Stage4 beta"}
 
 #Spider Room
-setblock -79922 38 35 chest[facing=east]{lock:{components:{custom_data:{key_rough_quartz:1b}}}}
-item replace block -79922 38 35 container.11 with minecraft:experience_bottle 5
+setblock -79922 38 35 air
+setblock -79922 38 35 chest[facing=east]{lock:{components:{custom_data:{key_required:1b}}}}
+item replace block -79922 38 35 container.11 with minecraft:beef 5
 item replace block -79922 38 35 container.15 with skull_banner_pattern[custom_name='{"text":"“招待厅事务记录6”","color":"dark_purple","italic":false}',lore=['{"text":"权之残影大人曾言","color":"white","italic":false}','{"text":"下一回便会有真正的强者光临神庭。","color":"white","italic":false}','{"text":"并非由魔界之污秽魔力所造就，","color":"white","italic":false}','{"text":"而是命定将拯救三界之人。","color":"white","italic":false}']] 1
 setblock -79912 38 34 chest[facing=west]
 item replace block -79912 38 34 container.12 with skull_banner_pattern[custom_name='{"text": "“我的东南水路正门钥匙被迅蛛偷走六回了”", "color": "dark_purple","italic":false}', lore=['{"text": "我敢肯定那群蜘蛛最近经常失控。","color":"white", "italic": false}','{"text": "能天使大人难不成是患上疾病了？","color":"white", "italic": false}','{"text": "这总不可能是怹刻意为之吧。","color":"white", "italic": false}']] 1
@@ -86,10 +87,11 @@ setblock -79938 38 49 minecraft:quartz_block{name: "to Stage Cerement"}
 setblock -79938 39 49 minecraft:quartz_bricks{name: "to Stage Cerement"}
 
 #Stage4 beta
-setblock -79939 38 20 chest[facing=west]{lock:{components:{custom_data:{key_boat:1b}}}}
-item replace block -79939 38 20 container.11 with minecraft:paper[custom_name='{"text":"圣殿信条","color":"blue","italic":false}',custom_data={sanct_credo:1b},custom_model_data={floats:[100001.0]}] 3
+setblock -79939 38 20 air
+setblock -79939 38 20 chest[facing=west]{lock:{components:{custom_data:{key_required:1b}}}}
+item replace block -79939 38 20 container.11 with eye_armor_trim_smithing_template 3
 item replace block -79939 38 20 container.13 with skull_banner_pattern[custom_name='{"text":"“仍旧在调查魔物失控的真相”","color":"dark_purple","italic":false}',lore=['{"text":"拉斐尔大人告知我丢失钥匙并无大碍，","color":"white","italic":false}','{"text":"地下水路东区不存在任何有用的事物。","color":"white","italic":false}','{"text":"可那里明明封印着源自各处的亡灵……","color":"white","italic":false}']]
-item replace block -79939 38 20 container.15 with iron_ingot[custom_name='{"text":"碳钢","italic":false}',custom_data={coal_iron:1b},custom_model_data={floats:[100001.0]}] 1
+item replace block -79939 38 20 container.15 with iron_ingot 1
 fill -79948 36 45 -79950 38 45 minecraft:purple_stained_glass{name: "to Stage Cerement"}
 
 #Stage Cerement
@@ -162,7 +164,8 @@ setblock -79898 38 50 air
 setblock -79888 39 67 birch_button[facing=west]
 setblock -79924 39 -72 birch_button[face=floor,facing=west]
 setblock -79891 49 136 minecraft:birch_button[face=floor,facing=east]
-setblock -79925 24 136 chest[facing=south]{lock:{components:{custom_data:{key_stone:1b}}}}
+setblock -79925 24 136 air
+setblock -79925 24 136 chest[facing=south]{lock:{components:{custom_data:{key_required:1b}}}}
 setblock -79903 41 -60 birch_button[face=wall,facing=west]
 setblock -79907 40 -62 coarse_dirt
 setblock -79907 40 -56 minecraft:quartz_bricks
@@ -203,7 +206,8 @@ setblock -79894 41 -123 lever[facing=east,face=floor,powered=false]
 setblock -79898 40 -109 chest[facing=west]
 setblock -79903 40 -104 chest[facing=west]
 setblock -79929 47 -110 chest[facing=south]
-setblock -79897 40 -115 chest[facing=west]{lock:{components:{custom_data:{key_paper:1b}}}}
+setblock -79897 40 -115 air
+setblock -79897 40 -115 chest[facing=west]{lock:{components:{custom_data:{key_required:1b}}}}
 setblock -79919 40 -112 chest[facing=north]
 setblock -79917 41 -104 minecraft:spruce_trapdoor[open=false,facing=west]
 setblock -79917 41 -102 minecraft:spruce_trapdoor[open=false,facing=west]
@@ -230,9 +234,11 @@ setblock -79904 41 97 birch_button[face=wall,facing=north]
 setblock -79917 41 -66 minecraft:birch_button[face=floor,facing=west]
 setblock -79939 35 -76 chest[facing=north,waterlogged=true]
 setblock -79904 44 118 birch_button[facing=west,face=floor]
-setblock -79917 40 -62 chest[facing=north]{lock:{components:{custom_data:{key_sapphire:1b}}}}
+setblock -79917 40 -62 air
+setblock -79917 40 -62 chest[facing=north]{lock:{components:{custom_data:{key_required:1b}}}}
 setblock -79875 38 64 chest[facing=north]
-setblock -79895 48 136 chest[facing=east]{lock:{components:{custom_data:{key_chair:1b}}}}
+setblock -79895 48 136 air
+setblock -79895 48 136 chest[facing=east]{lock:{components:{custom_data:{key_required:1b}}}}
 setblock -79902 43 109 chest[facing=east]
 setblock -79764 30 218 chest[facing=north,waterlogged=true]
 setblock -79850 48 205 chest[facing=south]
@@ -246,7 +252,8 @@ setblock -79941 39 86 birch_button[facing=south]
 setblock -79941 39 85 minecraft:diamond_block
 setblock -79938 48 -144 chest[facing=east]
 setblock -79935 48 -164 barrel[facing=up]
-setblock -79936 49 -158 chest[facing=north]{lock:{components:{custom_data:{key_charcoal:1b}}}}
+setblock -79936 49 -158 air
+setblock -79936 49 -158 chest[facing=north]{lock:{components:{custom_data:{key_required:1b}}}}
 setblock -79867 44 -52 barrel[facing=north]
 setblock -79866 43 -52 barrel[facing=north]
 setblock -79865 42 -52 barrel[facing=north]
@@ -255,7 +262,8 @@ setblock -79866 43 -57 barrel[facing=south]
 setblock -79865 42 -57 barrel[facing=south]
 setblock -79870 40 -49 minecraft:air
 setblock -79867 40 -103 chest[facing=west]
-setblock -79863 40 -76 chest[facing=west]{lock:{components:{custom_data:{key_azalea:1b}}}}
+setblock -79863 40 -76 air
+setblock -79863 40 -76 chest[facing=west]{lock:{components:{custom_data:{key_required:1b}}}}
 setblock -79929 49 -123 chest[facing=south]
 setblock -79864 37 -84 air
 setblock -79864 42 -75 minecraft:pointed_dripstone[vertical_direction=down]
@@ -294,7 +302,8 @@ setblock -79761 42 -358 minecraft:cracked_polished_blackstone_bricks
 setblock -79713 47 -380 minecraft:birch_button[face=floor,facing=east]
 setblock -79723 47 -380 crimson_hyphae[axis=z]
 setblock -79588 8 -427 chest[facing=west]
-setblock -79571 11 -412 chest[facing=north]{lock:{components:{custom_data:{key_golden_pickaxe:1b}}}}
+setblock -79571 11 -412 air
+setblock -79571 11 -412 chest[facing=north]{lock:{components:{custom_data:{key_required:1b}}}}
 setblock -79790 27 -288 nether_brick_fence
 setblock -79790 28 -288 nether_brick_fence
 setblock -79791 28 -294 chest[facing=south]
@@ -396,28 +405,28 @@ clone -79613 14 -401 -79606 18 -394 -79613 14 -420
 #______________________________________________________________#
 execute if block -79895 50 126 air run fill -79895 50 126 -79895 48 127 minecraft:purple_stained_glass
 item replace block -79939 39 58 container.13 with tripwire_hook[custom_name='{"text":"白方岩钥匙","color":"blue","italic":false}',custom_data={key_stone:1b}] 1
-item replace block -79925 24 136 container.12 with slime_ball 5
+item replace block -79925 24 136 container.12 with flint 5
 item replace block -79925 24 136 container.14 with honey_bottle 2
-item replace block -79898 40 -109 container.11 with minecraft:rotten_flesh
-item replace block -79898 40 -109 container.13 with minecraft:iron_nugget[custom_name='{"text":"盾牌碎片","italic":false,"color":"white"}',custom_data={shield_shard:1b},custom_model_data={floats:[100001.0]}]
-item replace block -79898 40 -109 container.15 with minecraft:rotten_flesh
-item replace block -79903 40 -104 container.11 with minecraft:carrot 2
+item replace block -79898 40 -109 container.11 with minecraft:gunpowder
+item replace block -79898 40 -109 container.13 with iron_ingot
+item replace block -79898 40 -109 container.15 with minecraft:gunpowder
+item replace block -79903 40 -104 container.11 with minecraft:dried_kelp 8
 item replace block -79903 40 -104 container.13 with minecraft:beef 2
 item replace block -79903 40 -104 container.15 with minecraft:bread 2
 item replace block -79929 47 -110 container.13 with tripwire_hook[custom_name='{"text":"纸张图案的钥匙","color":"blue","italic":false}',custom_data={key_paper:1b}] 1
-item replace block -79897 40 -115 container.12 with minecraft:paper[custom_name='{"text":"被污染的信条","color":"dark_purple","italic":false}',custom_data={dirty_credo:1b},custom_model_data={floats:[100002.0]}] 1
-item replace block -79897 40 -115 container.14 with minecraft:paper[custom_name='{"text":"被污染的信条","color":"dark_purple","italic":false}',custom_data={dirty_credo:1b},custom_model_data={floats:[100002.0]}] 1
+item replace block -79897 40 -115 container.12 with minecraft:eye_armor_trim_smithing_template 1
+item replace block -79897 40 -115 container.14 with minecraft:eye_armor_trim_smithing_template 1
 item replace block -79919 40 -112 container.12 with string
 item replace block -79919 40 -112 container.14 with string
-item replace block -79939 35 -76 container.11 with minecraft:paper[custom_name='{"text":"被污染的信条","color":"dark_purple","italic":false}',custom_data={dirty_credo:1b},custom_model_data={floats:[100002.0]}] 1
+item replace block -79939 35 -76 container.11 with minecraft:eye_armor_trim_smithing_template
 item replace block -79939 35 -76 container.13 with minecraft:dried_kelp 8
 item replace block -79939 35 -76 container.15 with tripwire_hook[custom_name='{"text":"蓝宝石钥匙","color":"blue","italic":false}',custom_data={key_sapphire:1b}] 1
-item replace block -79917 40 -62 container.11 with minecraft:paper[custom_name='{"text":"被污染的信条","color":"dark_purple","italic":false}',custom_data={dirty_credo:1b},custom_model_data={floats:[100002.0]}] 2
-item replace block -79917 40 -62 container.13 with minecraft:chain 5
+item replace block -79917 40 -62 container.11 with minecraft:eye_armor_trim_smithing_template 2
+item replace block -79917 40 -62 container.13 with iron_ingot 2
 item replace block -79917 40 -62 container.15 with skull_banner_pattern[custom_name='{"text":"“拉斐尔大人与能天使大人吵了一架”","color":"dark_purple","italic":false}',lore=['{"text":"希望神庭近些日子不要遭遇困难。","color":"white","italic":false}','{"text":"这两天拉斐尔大人的脾气特别不稳定，","color":"white","italic":false}','{"text":"还时不时地跟我们说，","color":"white","italic":false}','{"text":"“百千年的重头戏终于要到来了”。","color":"white","italic":false}']] 1
 item replace block -79875 38 64 container.13 with tripwire_hook[custom_name='{"text":"粗石英钥匙","color":"blue","italic":false}',custom_data={key_rough_quartz:1b}] 1
-item replace block -79895 48 136 container.11 with minecraft:paper[custom_name='{"text":"圣殿信条","color":"blue","italic":false}',custom_data={sanct_credo:1b},custom_model_data={floats:[100001.0]}] 2
-item replace block -79895 48 136 container.13 with minecraft:carrot 5
+item replace block -79895 48 136 container.11 with eye_armor_trim_smithing_template 2
+item replace block -79895 48 136 container.13 with minecraft:dried_kelp 8
 item replace block -79902 43 109 container.12 with minecraft:arrow 6
 item replace block -79902 43 109 container.12 with tripwire_hook[custom_name='{"text":"椅子形状的钥匙","color":"blue","italic":false}',custom_data={key_chair:1b}] 1
 item replace block -79764 30 218 container.13 with skull_banner_pattern[custom_name='{"text":"“招待厅事务记录2”","color":"dark_purple","italic":false}',lore=['{"text":"有更多的巡逻士兵说，","color":"white","italic":false}','{"text":"自己在执行任务时遭遇了轻微的幻听。","color":"white","italic":false}','{"text":"他们说，","color":"white","italic":false}','{"text":"那温柔话语声的来源像是艾奥洛斯之女：","color":"white","italic":false}','{"text":"雅尔希奥妮。","color":"white","italic":false}']] 1
@@ -435,19 +444,19 @@ item replace block -79938 48 -144 container.14 with emerald 7
 item replace block -79935 48 -164 container.13 with cooked_beef 3
 item replace block -79936 49 -158 container.11 with cooked_beef 5
 item replace block -79936 49 -158 container.15 with shulker_shell[custom_name='{"text":"弹簧箭盒","italic":false}',lore=['{"text":"敲击 - 散射36支箭矢（射程较高）","color":"yellow","italic":false}'],enchantments={blast_protection:1},custom_data={arrow_box:1b},custom_model_data={floats:[100001.0]}] 3
-item replace block -79866 43 -57 container.14 with charcoal 2
+item replace block -79866 43 -57 container.14 with coal 2
 item replace block -79867 44 -52 container.12 with emerald 3
-item replace block -79865 42 -52 container.13 with carrot 2
+item replace block -79865 42 -52 container.13 with dried_kelp 8
 item replace block -79867 40 -103 container.12 with shulker_shell[custom_name='{"text":"弹簧箭盒","italic":false}',lore=['{"text":"敲击 - 散射36支箭矢（射程较高）","color":"yellow","italic":false}'],enchantments={blast_protection:1},custom_data={arrow_box:1b},custom_model_data={floats:[100001.0]}] 2
 item replace block -79867 40 -103 container.14 with tripwire_hook[custom_name='{"text":"紫翡翠钥匙","color":"blue","italic":false}',custom_data={key_purple_jade:1b}] 1
 item replace block -79863 40 -76 container.12 with stone_axe[custom_name='{"text":"苔石斧·笼怨","italic":false}',attribute_modifiers=[{type:"knockback_resistance",slot:"mainhand",id:"azr:mossstone_axe.knockback_resistance",amount:0.13,operation:"add_value"},{type:"attack_damage",slot:"mainhand",id:"azr:mossstone_axe.attack_damage",amount:10.5,operation:"add_value"},{type:"attack_speed",slot:"mainhand",id:"azr:mossstone_axe.attack_speed",amount:-3.2,operation:"add_value"}],enchantments={"unbreaking":2}] 1
-item replace block -79929 49 -123 container.12 with raw_iron[custom_name='{"text":"钝铁","italic":false,"color":"white"}',custom_data={raw_iron:1b},custom_model_data={floats:[100001.0]}] 1
+item replace block -79929 49 -123 container.12 with iron_ingot 1
 item replace block -79929 49 -123 container.14 with tripwire_hook[custom_name='{"text":"杜鹃花钥匙","color":"blue","italic":false}',custom_data={key_azalea:1b}] 1
 item replace block -79782 27 -286 container.13 with nether_star[custom_name='{"text":"下界命星","color":"yellow","italic":false}',custom_data={revival_star:1b},custom_model_data={floats:[100001.0]}] 1
 item replace block -79770 23 -460 container.13 with minecraft:gold_nugget 30
 item replace block -79765 24 -469 container.13 with minecraft:gold_nugget 28
-item replace block -79713 22 -461 container.13 with paper[custom_name='{"text":"圣殿信条","color":"blue","italic":false}',custom_data={sanct_credo:1b},custom_model_data={floats:[100001.0]}] 3
-item replace block -79626 21 -415 container.11 with minecraft:paper[custom_name='{"text":"圣殿信条","color":"blue","italic":false}',custom_data={sanct_credo:1b},custom_model_data={floats:[100001.0]}] 3
+item replace block -79713 22 -461 container.13 with eye_armor_trim_smithing_template 3
+item replace block -79626 21 -415 container.11 with eye_armor_trim_smithing_template 3
 item replace block -79626 21 -415 container.13 with skull_banner_pattern[custom_name='{"text":"“神罚 这一切都是神罚 全部都是”","color":"dark_purple","italic":false}',lore=['{"text":"我们触怒了神庭 我们触怒了神庭","color":"white","italic":false}','{"text":"我们触怒了神庭 我们触怒了神庭","color":"white","italic":false}','{"text":"现在轮到我们自取灭亡了","color":"white","italic":false}','{"text":"现在轮到我们自取灭亡了","color":"white","italic":false}']] 1
 item replace block -79626 21 -415 container.15 with flint 5
 item replace block 79588 8 -427 container.11 with firework_star[custom_name='{"text":"机械箭","italic":false}'] 5
@@ -456,6 +465,10 @@ item replace block 79588 8 -427 container.15 with firework_star[custom_name='{"t
 item replace block -79571 11 -412 container.12 with minecraft:splash_potion[custom_name='[{"text":"「抗火瓶」","color":"light_purple","italic":false},{"text":"lv1","color":"blue","italic":false}]',potion_contents={custom_effects:[{id:"minecraft:fire_resistance",duration:200}]}] 1
 item replace block -79571 11 -412 container.14 with emerald 12
 item replace block -79791 28 -294 container.13 with minecraft:bundle
+#游戏开场
+fill -79409 30 -398 -79409 32 -396 minecraft:red_stained_glass
+
+
 #______________________________________________________________#
 forceload remove -80000 -400 -79800 -200
 forceload remove -80000 -200 -79800 000
