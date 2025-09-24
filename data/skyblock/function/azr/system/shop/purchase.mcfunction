@@ -3,19 +3,19 @@ scoreboard players set tempPlayerShopSuccess Azr_system 0
 #-----------------1
 function skyblock:azr/system/shop/purchase/category1 {rng:1,trigger:84301}
 #-----------------2
-function skyblock:azr/system/shop/purchase/category1 {rng:2,trigger:84304}
+function skyblock:azr/system/shop/purchase/category1 {rng:2,trigger:84302}
 #-----------------3
-function skyblock:azr/system/shop/purchase/category1 {rng:3,trigger:84307}
+execute as @s[scores={Azr_SK5=1..}] run function skyblock:azr/system/shop/purchase/category1 {rng:3,trigger:84303}
 #-----------------4
-function skyblock:azr/system/shop/purchase/category2 {rng:4,trigger:84302}
+function skyblock:azr/system/shop/purchase/category2 {rng:4,trigger:84304}
 #-----------------5
 function skyblock:azr/system/shop/purchase/category2 {rng:5,trigger:84305}
 #-----------------6 skilled
-execute as @s[scores={Azr_SK5=2..}] run function skyblock:azr/system/shop/purchase/category2 {rng:6,trigger:84308}
+execute as @s[scores={Azr_SK5=2..}] run function skyblock:azr/system/shop/purchase/category2 {rng:6,trigger:84306}
 #-----------------7
-function skyblock:azr/system/shop/purchase/category3 {rng:7,trigger:84303}
+function skyblock:azr/system/shop/purchase/category3 {rng:7,trigger:84307}
 #-----------------8
-function skyblock:azr/system/shop/purchase/category3 {rng:8,trigger:84306}
+function skyblock:azr/system/shop/purchase/category3 {rng:8,trigger:84308}
 #-----------------9 skilled
 execute as @s[scores={Azr_SK5=3..}] run function skyblock:azr/system/shop/purchase/category3 {rng:9,trigger:84309}
 

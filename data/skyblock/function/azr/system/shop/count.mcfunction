@@ -1,0 +1,11 @@
+execute as @s store result score @s rng1 run clear @s iron_ingot 0
+execute as @s store result score @s rng2 run clear @s flint 0
+execute as @s store result score @s rng3 run clear @s bone 0
+execute as @s store result score @s rng4 run clear @s gunpowder 0
+execute as @s store result score @s rng5 run clear @s glistering_melon_slice 0
+execute as @s store result score @s rng6 run clear @s ink_sac 0
+execute as @s store result score @s rng7 run clear @s string 0
+execute as @s store result score @s rng8 run clear @s ghast_tear 0
+execute as @s store result score @s rng9 run clear @s chicken 0
+execute as @s store result score @s rng10 run clear @s beef 0
+execute as @s store result score @s rng11 run clear @s coal 0

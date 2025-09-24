@@ -1,0 +1,105 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 4,
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 900
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:arrow",
+          "weight": 50
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:flint",
+          "weight": 20
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:emerald",
+          "weight": 50
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:gunpowder",
+          "weight": 20
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:stone_shovel",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "custom_name": "{\"text\":\"硬骨铲\",\"italic\":false,\"color\":\"dark_red\"}",
+                "custom_model_data": {
+                  "floats" : [100001]
+                },
+                "attribute_modifiers": [
+                  {
+                    "type": "attack_damage",
+                    "id": "azr:bone_shovel.attack_damage",
+                    "amount": 6,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                  },
+                  {
+                    "type": "attack_speed",
+                    "id": "azr:bone_shovel.attack_speed",
+                    "amount": -3.50,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                  }
+                ],
+                "enchantments": {
+                  "bane_of_arthropods": 1
+                },
+                "custom_data": {
+                  "weapon_bone_shovel": 1
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 50
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:emerald",
+          "weight": 20
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 995
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:glistering_melon_slice",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:ghast_tear",
+          "weight": 3
+        }
+      ]
+    }
+  ]
+}

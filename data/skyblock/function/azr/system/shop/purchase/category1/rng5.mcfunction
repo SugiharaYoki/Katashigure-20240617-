@@ -1,3 +1,3 @@
-scoreboard players remove @s Azr_emerald 2
+scoreboard players remove @s Azr_emerald 4
 
-give @s melon_slice 5
+give @s coal 3

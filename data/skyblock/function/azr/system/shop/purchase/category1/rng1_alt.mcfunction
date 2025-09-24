@@ -1,3 +1,3 @@
-clear @s rotten_flesh 1
+clear @s flint 1
 
-give @s bread 2
+give @s bread 3

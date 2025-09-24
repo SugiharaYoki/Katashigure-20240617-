@@ -1,3 +1,4 @@
-scoreboard players remove @s Azr_emerald 2
+clear @s coal 1
+clear @s beef 1
 
-give @s mushroom_stew 1
+give @s cooked_beef 1

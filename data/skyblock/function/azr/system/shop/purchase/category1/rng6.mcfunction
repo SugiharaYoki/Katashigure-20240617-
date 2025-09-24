@@ -1,3 +1,3 @@
-clear @s rotten_flesh 1
+clear @s chicken 3
 
-give @s beef 1
+give @s beef 2
