@@ -474,6 +474,8 @@ setblock -79774 105 -2077 minecraft:redstone_block
 setblock -79774 105 -2077 minecraft:air
 setblock -79771 105 -2076 minecraft:redstone_block
 setblock -79771 105 -2076 minecraft:air
+setblock -79764 105 -2067 minecraft:redstone_block
+setblock -79764 105 -2067 minecraft:air
 
 
 
