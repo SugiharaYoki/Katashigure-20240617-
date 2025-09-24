@@ -24,7 +24,7 @@ execute if score @s[scores={rng2=2}] rng1 matches 8.. run tp @s ^0.25 ^ ^
 execute if score @s[scores={rng2=2}] rng1 matches 8.. run tp @s ^-0.25 ^ ^
 
 execute if score @s rng1 matches 38 rotated ~ 0 run summon marker ~ ~ ~ {Tags:["AzrielMob_candle_angel_candle_marker"]}
-execute if score @s rng1 matches 41 rotated ~ 0 run summon marker ~2 ~ ~ {Tags:["AzrielMob_candle_angel_candle_marker"]}
+execute if score @s[scores={Health=..79}] rng1 matches 41 rotated ~ 0 run summon marker ~2 ~ ~ {Tags:["AzrielMob_candle_angel_candle_marker"]}
 execute if score @s[scores={Health=..79}] rng1 matches 41 rotated ~ 0 run summon marker ~-2 ~ ~ {Tags:["AzrielMob_candle_angel_candle_marker"]}
 execute if score @s[scores={Health=..79}] rng1 matches 41 rotated ~ 0 run summon marker ~ ~ ~2 {Tags:["AzrielMob_candle_angel_candle_marker"]}
 execute if score @s[scores={Health=..79}] rng1 matches 41 rotated ~ 0 run summon marker ~ ~ ~-2 {Tags:["AzrielMob_candle_angel_candle_marker"]}
