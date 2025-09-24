@@ -18,12 +18,12 @@ execute if score @s[scores={rng2=7}] rng1 matches 3 run rotate @s 270 0
 execute if score @s[scores={rng2=8}] rng1 matches 3 run rotate @s 315 0
 execute if score @s[scores={rng2=99..}] rng1 matches 3.. run rotate @s facing entity @p[tag=MG_AZR0PT]
 
-execute if score @s rng1 matches 8.. rotated ~ 0 run tp @s ^ ^ ^0.3
-execute if score @s rng1 matches 8.. store result score @s rng2 run random value 1..5
-execute if score @s[scores={rng2=2}] rng1 matches 8.. rotated ~ 0 run tp @s ^0.1 ^ ^
-execute if score @s[scores={rng2=3}] rng1 matches 8.. rotated ~ 0 run tp @s ^-0.1 ^ ^
-execute if score @s[scores={rng2=4}] rng1 matches 8.. rotated ~ 0 run tp @s ^0.25 ^ ^
-execute if score @s[scores={rng2=5}] rng1 matches 8.. rotated ~ 0 run tp @s ^-0.25 ^ ^
+execute if score @s rng1 matches 8.. rotated ~ 0 run tp @s ^ ^ ^0.5
+execute if score @s rng1 matches 8.. store result score @s rng3 run random value 1..5
+execute if score @s[scores={rng3=2}] rng1 matches 8.. rotated ~ 0 run tp @s ^0.1 ^ ^0.1 facing ^0.2 ^ ^0.2
+execute if score @s[scores={rng3=3}] rng1 matches 8.. rotated ~ 0 run tp @s ^-0.1 ^ ^0.1 facing ^-0.2 ^ ^0.2
+execute if score @s[scores={rng3=4}] rng1 matches 8.. rotated ~ 0 run tp @s ^0.25 ^ ^0.1 facing ^0.5 ^ ^0.2
+execute if score @s[scores={rng3=5}] rng1 matches 8.. rotated ~ 0 run tp @s ^-0.25 ^ ^0.1 facing ^-0.5 ^ ^0.2
 
 execute if score @s rng1 matches 58 run summon marker ~ 4.0 ~ {Tags:["azr0_candle_angel_candle_marker"]}
 execute if score @s[scores={Health=..79}] rng1 matches 61 run summon marker ~2 4.0 ~ {Tags:["azr0_candle_angel_candle_marker"]}
