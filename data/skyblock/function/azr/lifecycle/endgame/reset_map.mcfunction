@@ -477,6 +477,7 @@ setblock -79771 105 -2076 minecraft:redstone_block
 setblock -79771 105 -2076 minecraft:air
 setblock -79764 105 -2067 minecraft:redstone_block
 setblock -79764 105 -2067 minecraft:air
+setblock -79436 30 -404 minecraft:anvil[facing=east]
 
 setblock -79388 24 -400 air
 setblock -79388 24 -400 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:flint"}}
