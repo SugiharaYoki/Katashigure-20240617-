@@ -11,6 +11,8 @@ execute if score Azr_Story_Introduction rng1 matches ..25 if entity @a[x=-79767,
 
 execute if score Azr_Story_Introduction rng1 matches 26 at @p[tag=azrPlayer] run tellraw @a[tag=azrShowDialog] [{"text":"你：","color":"aqua"},{"text":"\n（现在出门吗？不过今天天气还挺不错的。钥匙带了吗？）","color":"white"}]
 
+execute if score Azr_Story_Introduction rng1 matches 27..28 run scoreboard players set Azr_Story_Introduction rng1 27
+execute if score Azr_Story_Introduction rng1 matches ..28 if entity @a[x=-79762,y=104,z=-2078,dx=4,dy=4,dz=24] run scoreboard players set Azr_Story_Introduction rng1 29
 
 
 
