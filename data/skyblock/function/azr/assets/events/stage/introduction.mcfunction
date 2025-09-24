@@ -58,7 +58,7 @@ execute if score Azr_Story_Introduction rng1 matches 280 as @p[tag=azrPlayer] at
 execute if score Azr_Story_Introduction rng1 matches 280 as @p[tag=azrPlayer] at @s run title @a[tag=azrShowDialog] title [{"text":"你迎来了属于自己的死亡","color":"dark_red","bold": false}]
 execute if score Azr_Story_Introduction rng1 matches 280 as @p[tag=azrPlayer] at @s run title @a[tag=azrShowDialog] subtitle [{"text":"『亚兹列尔的中庭花园』","color":"white","bold": true}]
 
-
+execute if score Azr_Story_Introduction rng1 matches 283 as @p[tag=azrPlayer] at @s run spawnpoint @a[distance=..200] -79376 26 -366
 execute if score Azr_Story_Introduction rng1 matches 283 as @p[tag=azrPlayer] at @s run tp @a[distance=..200] -79440 25 -358 facing -79441 25 -358
 
 execute if score Azr_Story_Introduction rng1 matches 290 at @p[tag=azrPlayer] run tellraw @a[tag=azrShowDialog] [{"text":"温柔的声音：","color":"dark_purple"},{"text":"\n“承受不公命运的人类啊，你必将再度睁开双眼。”","color":"white"}]
