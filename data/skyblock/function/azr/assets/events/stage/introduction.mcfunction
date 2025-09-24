@@ -59,3 +59,37 @@ execute if score Azr_Story_Introduction rng1 matches 280 as @p[tag=azrPlayer] at
 execute if score Azr_Story_Introduction rng1 matches 280 as @p[tag=azrPlayer] at @s run title @a[tag=azrShowDialog] subtitle [{"text":"『亚兹列尔的中庭花园』","color":"white","bold": true}]
 
 
+
+
+execute positioned -79381 22 -385 run summon piglin ~ ~ ~ {CustomName:'"魔界居民"',PersistenceRequired:1b,Tags:["AzrielMob_StoryIntroduction_NPC1"],Invulnerable:1b,IsImmuneToZombification:1b,attributes:[{id:"movement_speed",base:0.0}],HandItems:[{},{}]}
+execute positioned -79387 24 -404 run summon piglin ~ ~ ~ {CustomName:'"魔界居民"',PersistenceRequired:1b,Tags:["AzrielMob_StoryIntroduction_NPC2"],Invulnerable:1b,IsImmuneToZombification:1b,attributes:[{id:"movement_speed",base:0.15}],HandItems:[{},{}]}
+execute positioned -79394 26 -386 run summon piglin ~ ~ ~ {CustomName:'"仓管"',PersistenceRequired:1b,Tags:["AzrielMob_StoryIntroduction_NPC3"],Invulnerable:1b,IsImmuneToZombification:1b,attributes:[{id:"movement_speed",base:0.0},{id:"attack_damage",base:0.0}],HandItems:[{count:1,id:"golden_sword"},{count:1,id:"shield"}]}
+
+
+execute positioned -79385 22 -382 run summon hoglin ~ ~ ~ {PersistenceRequired:1b,Invulnerable:1b}
+execute positioned -79385 22 -382 run summon hoglin ~ ~ ~ {PersistenceRequired:1b,Invulnerable:1b,attributes:[{id:"scale",base:0.3}]}
+execute positioned -79385 22 -382 run summon hoglin ~ ~ ~ {PersistenceRequired:1b,Invulnerable:1b,attributes:[{id:"scale",base:0.3}]}
+
+execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC1,distance=..100,type=piglin] at @s if entity @p[tag=SEAPT,distance=..4.4] run scoreboard players add @s rng1 1
+execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC1,distance=..100,type=piglin,scores={rng1=2}] at @s if entity @p[tag=SEAPT,distance=..4.4] run playsound entity.piglin.ambient neutral @a ~ ~ ~ 1 1
+execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC1,distance=..100,type=piglin,scores={rng1=2}] at @s if entity @p[tag=SEAPT,distance=..4.4] run tellraw @a[tag=azrShowDialog] [{"text":"看守猪圈的魔界居民：","color":"yellow"},{"text":"\n“怎么，你也想和我一起研究怎么减少疣猪的肥肉占比？”","color":"white"}]
+execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC1,distance=..100,type=piglin,scores={rng1=18}] at @s if entity @p[tag=SEAPT,distance=..4.4] run playsound entity.piglin.ambient neutral @a ~ ~ ~ 1 1
+execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC1,distance=..100,type=piglin,scores={rng1=18}] at @s if entity @p[tag=SEAPT,distance=..4.4] run tellraw @a[tag=azrShowDialog] [{"text":"看守猪圈的魔界居民：","color":"yellow"},{"text":"\n“如果想要疣猪肉，拿些金粒来买。可别想着能白嫖。”","color":"white"}]
+
+execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC3,distance=..100,type=piglin] at @s if entity @p[tag=SEAPT,distance=..4.4] run scoreboard players add @s rng1 1
+execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC3,distance=..100,type=piglin,scores={rng1=2}] at @s if entity @p[tag=SEAPT,distance=..4.4] run playsound entity.piglin.ambient neutral @a ~ ~ ~ 1 1
+execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC3,distance=..100,type=piglin,scores={rng1=2}] at @s if entity @p[tag=SEAPT,distance=..4.4] run tellraw @a[tag=azrShowDialog] [{"text":"仓管：","color":"yellow"},{"text":"\n“走远点。但如果你只是想要些战斗指导，我倒是能提供。”","color":"white"}]
+execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC3,distance=..100,type=piglin,scores={rng1=18}] at @s if entity @p[tag=SEAPT,distance=..4.4] run playsound entity.piglin.ambient neutral @a ~ ~ ~ 1 1
+execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC3,distance=..100,type=piglin,scores={rng1=18}] at @s if entity @p[tag=SEAPT,distance=..4.4] run tellraw @a[tag=azrShowDialog] [{"text":"仓管：","color":"yellow"},{"text":"\n“一般他们会给你发一把剑和一把斧头。\n剑可以进行范围攻击，而且冷却更短。\n斧只能进行单体攻击，但充能完毕后威力巨大。”","color":"white"}]
+execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC3,distance=..100,type=piglin,scores={rng1=42}] at @s if entity @p[tag=SEAPT,distance=..4.4] run playsound entity.piglin.ambient neutral @a ~ ~ ~ 1 1
+execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC3,distance=..100,type=piglin,scores={rng1=42}] at @s if entity @p[tag=SEAPT,distance=..4.4] run tellraw @a[tag=azrShowDialog] [{"text":"仓管：","color":"yellow"},{"text":"\n“趁早搞清楚哪一类更适合自己。当然，你应该也能在之后发现与剑斧不同的武器。”","color":"white"}]
+
+execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC2,distance=..100,type=piglin] at @s if entity @p[tag=SEAPT,distance=..4.4] run scoreboard players add @s rng1 1
+execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC2,distance=..100,type=piglin,scores={rng1=2}] at @s if entity @p[tag=SEAPT,distance=..4.4] run playsound entity.piglin.ambient neutral @a ~ ~ ~ 1 1
+execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC2,distance=..100,type=piglin,scores={rng1=2}] at @s if entity @p[tag=SEAPT,distance=..4.4] run tellraw @a[tag=azrShowDialog] [{"text":"魔界居民：","color":"yellow"},{"text":"\n“彼列王就是个废物，虽然他依然是我们的王。”","color":"white"}]
+execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC2,distance=..100,type=piglin,scores={rng1=18}] at @s if entity @p[tag=SEAPT,distance=..4.4] run playsound entity.piglin.ambient neutral @a ~ ~ ~ 1 1
+execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC2,distance=..100,type=piglin,scores={rng1=18}] at @s if entity @p[tag=SEAPT,distance=..4.4] run tellraw @a[tag=azrShowDialog] [{"text":"魔界居民：","color":"yellow"},{"text":"\n“最近反抗军已经打到城门口了，我随时准备倒戈。”","color":"white"}]
+execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC2,distance=..100,type=piglin,scores={rng1=49}] at @s if entity @p[tag=SEAPT,distance=..4.4] run playsound entity.piglin.ambient neutral @a ~ ~ ~ 1 1
+execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC2,distance=..100,type=piglin,scores={rng1=49}] at @s if entity @p[tag=SEAPT,distance=..4.4] run tellraw @a[tag=azrShowDialog] [{"text":"魔界居民：","color":"yellow"},{"text":"\n“但你在这里干什么？人类的亡魂，内战不是你该参与的事情。”","color":"white"}]
+
+
