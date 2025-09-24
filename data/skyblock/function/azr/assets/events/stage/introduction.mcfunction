@@ -71,7 +71,7 @@ execute if score Azr_Story_Introduction rng1 matches 290 positioned -79407 30 -3
 execute if score Azr_Story_Introduction rng1 matches 290 positioned -79373 26 -371 run summon piglin_brute ~ ~ ~ {CustomName:'"守卫"',PersistenceRequired:1b,Tags:["AzrielMob_StoryIntroduction_NPC5"],Invulnerable:1b,IsImmuneToZombification:1b,attributes:[{id:"movement_speed",base:0.0},{id:"attack_damage",base:0.0}],HandItems:[{count:1,id:"golden_axe"},{}]}
 execute if score Azr_Story_Introduction rng1 matches 290 positioned -79371 26 -385 run summon piglin ~ ~ ~ {CustomName:'"魔界居民"',PersistenceRequired:1b,Tags:["AzrielMob_StoryIntroduction_NPC6"],Invulnerable:1b,IsImmuneToZombification:1b,attributes:[{id:"movement_speed",base:0.0}],HandItems:[{count:1,id:"pumpkin_pie"},{}]}
 execute if score Azr_Story_Introduction rng1 matches 290 positioned -79441 30 -407 run summon piglin ~ ~ ~ {CustomName:'"魔界居民"',PersistenceRequired:1b,Tags:["AzrielMob_StoryIntroduction_NPC7"],Invulnerable:1b,IsImmuneToZombification:1b,attributes:[{id:"movement_speed",base:0.0}],HandItems:[{count:1,id:"wooden_sword"},{count:1,id:"wooden_axe"}]}
-
+execute if score Azr_Story_Introduction rng1 matches 290 positioned -79417 27 -390 run summon piglin ~ ~ ~ {CustomName:'"魔界居民"',PersistenceRequired:1b,Tags:["AzrielMob_StoryIntroduction_NPC8"],Invulnerable:1b,IsImmuneToZombification:1b,attributes:[{id:"movement_speed",base:0.0}],HandItems:[{},{}]}
 
 execute if score Azr_Story_Introduction rng1 matches 290 positioned -79377 24 -399 run summon piglin ~ ~ ~ {CustomName:'"魔界居民"',PersistenceRequired:1b,Tags:["AzrielMob_StoryIntroduction_NPC_unused"],Invulnerable:1b,IsImmuneToZombification:1b,attributes:[{id:"movement_speed",base:0.15}],HandItems:[{},{}]}
 execute if score Azr_Story_Introduction rng1 matches 290 positioned -79431 27 -395 run summon piglin_brute ~ ~ ~ {CustomName:'"守卫"',PersistenceRequired:1b,Tags:["AzrielMob_StoryIntroduction_NPC_unused"],Invulnerable:1b,IsImmuneToZombification:1b,attributes:[{id:"movement_speed",base:0.0},{id:"attack_damage",base:0.0}],HandItems:[{count:1,id:"golden_axe"},{}]}
@@ -151,4 +151,20 @@ execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC7,dis
 execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC7,distance=..100,type=piglin,scores={rng1=2}] at @s if entity @p[tag=azrPlayer,distance=..4.2] run item replace entity @s weapon.offhand with air
 execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC7,distance=..100,type=piglin,scores={rng1=2}] at @s if entity @p[tag=azrPlayer,distance=..4.2] run give @a[tag=azrPlayer] wooden_sword 1
 execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC7,distance=..100,type=piglin,scores={rng1=2}] at @s if entity @p[tag=azrPlayer,distance=..4.2] run give @a[tag=azrPlayer] wooden_axe 1
+
+
+execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC8,distance=..100,type=piglin] at @s if entity @p[tag=azrPlayer,distance=..4.2] run scoreboard players add @s rng1 1
+execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC8,distance=..100,type=piglin,scores={rng1=2}] at @s if entity @p[tag=azrPlayer,distance=..4.2] run playsound entity.piglin.ambient neutral @a ~ ~ ~ 1 0.8
+execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC8,distance=..100,type=piglin,scores={rng1=2}] at @s if entity @p[tag=azrPlayer,distance=..4.2] run tellraw @a[tag=azrShowDialog] [{"text":"魔界居民：","color":"yellow"},{"text":"\n“起得太晚了……没领到南瓜派。”","color":"white"}]
+execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC8,distance=..100,type=piglin,scores={rng1=18}] at @s if entity @p[tag=azrPlayer,distance=..4.2] run playsound entity.piglin.ambient neutral @a ~ ~ ~ 1 0.8
+execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC8,distance=..100,type=piglin,scores={rng1=18}] at @s if entity @p[tag=azrPlayer,distance=..4.2] run tellraw @a[tag=azrShowDialog] [{"text":"魔界居民：","color":"yellow"},{"text":"\n“你能把南瓜派分我三块吗？作为交换，我可以给你些煤炭。”","color":"white"}]
+execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC8,distance=..100,type=piglin,scores={rng1=19..20}] at @s if entity @p[tag=azrPlayer,distance=..4.2] run scoreboard players set @s rng1 19
+execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC8,distance=..100,type=piglin,scores={rng1=19..21}] at @s if entity @p[tag=azrPlayer,distance=..4.2] if entity @n[type=item,nbt={Item:{id:"minecraft:pumpkin_pie",count:3}},distance=..5] run playsound entity.piglin.celebrate neutral @a ~ ~ ~ 1 1
+execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC8,distance=..100,type=piglin,scores={rng1=19..21}] at @s if entity @p[tag=azrPlayer,distance=..4.2] if entity @n[type=item,nbt={Item:{id:"minecraft:pumpkin_pie",count:3}},distance=..5] run scoreboard players set @s rng1 21
+execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC8,distance=..100,type=piglin,scores={rng1=19..21}] at @s if entity @p[tag=azrPlayer,distance=..4.2] if entity @n[type=item,nbt={Item:{id:"minecraft:pumpkin_pie",count:3}},distance=..5] run kill @n[type=item,nbt={Item:{id:"minecraft:pumpkin_pie",count:3}}]
+execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC8,distance=..100,type=piglin,scores={rng1=21}] at @s if entity @p[tag=azrPlayer,distance=..4.2] run tellraw @a[tag=azrShowDialog] [{"text":"魔界居民：","color":"yellow"},{"text":"\n“实在是太感谢了！这些煤炭您务必收好，希望能帮上忙！”","color":"white"}]
+execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC8,distance=..100,type=piglin,scores={rng1=21}] at @s if entity @p[tag=azrPlayer,distance=..4.2] run give @p[tag=azrPlayer] coal 3
+
+
+
 
