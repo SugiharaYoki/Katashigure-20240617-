@@ -1,3 +1,3 @@
-clear @s flint 2
+clear @s flint 1
 
-give @s arrow 5
+give @s arrow 4
