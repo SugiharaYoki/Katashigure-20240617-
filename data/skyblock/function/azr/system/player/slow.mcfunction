@@ -1,6 +1,6 @@
 clear @s[gamemode=adventure] #skyblock:azr_clear
 
-execute if score chapter Azr_system matches 1..2 at @s if block ~ ~-0.2 ~ black_concrete run damage @s 9999 fall
+execute if score chapter Azr_system matches 1..2 at @s if block ~ ~-0.2 ~ black_concrete if block ~ ~-1.2 ~ red_concrete run damage @s 9999 fall
 
 #故事模式
 effect give @s[tag=AZR_storymode] resistance infinite 1
