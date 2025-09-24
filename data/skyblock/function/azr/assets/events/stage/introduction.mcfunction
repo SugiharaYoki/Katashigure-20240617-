@@ -65,6 +65,8 @@ execute positioned -79381 22 -385 run summon piglin ~ ~ ~ {CustomName:'"魔界�
 execute positioned -79387 24 -404 run summon piglin ~ ~ ~ {CustomName:'"魔界居民"',PersistenceRequired:1b,Tags:["AzrielMob_StoryIntroduction_NPC2"],Invulnerable:1b,IsImmuneToZombification:1b,attributes:[{id:"movement_speed",base:0.15}],HandItems:[{},{}]}
 execute positioned -79394 26 -386 run summon piglin ~ ~ ~ {CustomName:'"仓管"',PersistenceRequired:1b,Tags:["AzrielMob_StoryIntroduction_NPC3"],Invulnerable:1b,IsImmuneToZombification:1b,attributes:[{id:"movement_speed",base:0.0},{id:"attack_damage",base:0.0}],HandItems:[{count:1,id:"golden_sword"},{count:1,id:"shield"}]}
 
+execute positioned -79377 24 -399 run summon piglin ~ ~ ~ {CustomName:'"魔界居民"',PersistenceRequired:1b,Tags:["AzrielMob_StoryIntroduction_NPC_unused"],Invulnerable:1b,IsImmuneToZombification:1b,attributes:[{id:"movement_speed",base:0.15}],HandItems:[{},{}]}
+
 
 execute positioned -79385 22 -382 run summon hoglin ~ ~ ~ {PersistenceRequired:1b,Invulnerable:1b}
 execute positioned -79385 22 -382 run summon hoglin ~ ~ ~ {PersistenceRequired:1b,Invulnerable:1b,attributes:[{id:"scale",base:0.3}]}
