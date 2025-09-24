@@ -30,4 +30,23 @@ execute if score Azr_Story_Introduction rng1 matches 166 as @p[tag=azrPlayer] at
 execute if score Azr_Story_Introduction rng1 matches 166 as @p[tag=azrPlayer] at @s run title @a[tag=azrShowDialog] title [{"text":"周而复始，多少年过去","color":"white","bold": true}]
 execute if score Azr_Story_Introduction rng1 matches 166 as @p[tag=azrPlayer] at @s run title @a[tag=azrShowDialog] subtitle [{"text":"世界的整体走向竟无任何变化","color":"white","bold": false}]
 
+execute if score Azr_Story_Introduction rng1 matches 200 as @p[tag=azrPlayer] at @s run effect give @a[distance=..200] darkness 5 0 true
+
+execute if score Azr_Story_Introduction rng1 matches 208 as @p[tag=azrPlayer] at @s run tp @a[distance=..200] -79760 97 -2133
+
+execute if score Azr_Story_Introduction rng1 matches 212 as @p[tag=azrPlayer] at @s run playsound minecraft:ambient.cave ambient @a ~ ~ ~ 1 0.5
+execute if score Azr_Story_Introduction rng1 matches 212 as @p[tag=azrPlayer] at @s run playsound minecraft:ambient.cave ambient @a ~ ~ ~ 1 0.5
+execute if score Azr_Story_Introduction rng1 matches 212 as @p[tag=azrPlayer] at @s run playsound minecraft:ambient.cave ambient @a ~ ~ ~ 1 0.5
+execute if score Azr_Story_Introduction rng1 matches 212 as @p[tag=azrPlayer] at @s run playsound minecraft:ambient.cave ambient @a ~ ~ ~ 1 0.5
+execute if score Azr_Story_Introduction rng1 matches 212 as @p[tag=azrPlayer] at @s run playsound minecraft:ambient.cave ambient @a ~ ~ ~ 1 0.5
+
+
+execute if score Azr_Story_Introduction rng1 matches 232 as @p[tag=azrPlayer] at @s run title @a[tag=azrShowDialog] times 2s 3s 2s
+execute if score Azr_Story_Introduction rng1 matches 232 as @p[tag=azrPlayer] at @s run title @a[tag=azrShowDialog] title [{"text":"而就是在这无趣的世界","color":"white","bold": true}]
+execute if score Azr_Story_Introduction rng1 matches 232 as @p[tag=azrPlayer] at @s run title @a[tag=azrShowDialog] subtitle [{"text":"在这种平淡、乏味，且完全遵循规律的日常里","color":"white","bold": false}]
+
+execute if score Azr_Story_Introduction rng1 matches 272 as @p[tag=azrPlayer] at @s run title @a[tag=azrShowDialog] times 0s 2s 7s
+execute if score Azr_Story_Introduction rng1 matches 272 as @p[tag=azrPlayer] at @s as @a[distance=..200] at @s run playsound garden2.chapter_title master @s ~ ~ ~ 100 1.0
+execute if score Azr_Story_Introduction rng1 matches 272 as @p[tag=azrPlayer] at @s run title @a[tag=azrShowDialog] title [{"text":"你迎来了自己的死亡","color":"white","bold": true}]
+
 
