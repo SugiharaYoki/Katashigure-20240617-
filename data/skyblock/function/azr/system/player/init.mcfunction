@@ -51,7 +51,7 @@ scoreboard players reset $jumpto Azr_system
 execute as @s[tag=DebugMode] run scoreboard objectives setdisplay sidebar Azr_system
 #function skyblock:azr/purchase_sega_azriel_plypts_react1
 tp @s -79775 105 -2081 facing -79774 105 -2081
-playsound music_disc.mall music @a -79771 105 -2071 2 1
+
 #tp @s -79936.0 38.15 -14.0 facing -79935.0 38.15 -14.0
 
 #wtf
