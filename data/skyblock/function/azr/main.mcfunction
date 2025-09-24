@@ -118,7 +118,7 @@ execute positioned -79900 100 0 if entity @n[tag=AzrielMob_elite_candle_angel,di
 execute if score tick_count_main AzrTimerStack matches -2147483648..2147483647 run scoreboard players add tick_count_main AzrTimerStack 1
 execute if score timer_static_5s AzrTimerStack matches -2147483648..2147483647 run scoreboard players add timer_static_5s AzrTimerStack 1
 # 在部分关卡的的四倍速走秒
-execute if score stage Azr_system matches 1..5 if score tick_count_main AzrTimerStack matches 5.. run function skyblock:azr/lifecycle/core
+execute if score stage Azr_system matches -1..5 if score tick_count_main AzrTimerStack matches 5.. run function skyblock:azr/lifecycle/core
 execute if score stage Azr_system matches 34..45 if score tick_count_main AzrTimerStack matches 5.. run function skyblock:azr/lifecycle/core
 execute if score stage Azr_system matches 51..61 if score tick_count_main AzrTimerStack matches 5.. run function skyblock:azr/lifecycle/core
 execute if score stage Azr_system matches 63.. if score tick_count_main AzrTimerStack matches 5.. run function skyblock:azr/lifecycle/core
