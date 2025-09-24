@@ -37,6 +37,10 @@ execute if score playerCount Azr_system matches 2.. run summon piglin -79577 10 
 execute if score playerCount Azr_system matches 4.. run summon piglin -79577 10 -419 {IsImmuneToZombification:1b,PersistenceRequired:1b,Tags:["AzrielMob","AzrielDecMob"],DeathLootTable:"skyblock:azriel_piglin_tier1",Health:10.0f,CustomName:'"精锐猪灵弩手"',CanPickUpLoot:0b,IsBaby:0b,HandItems:[{count:1,id:"crossbow",components:{custom_name:'{"text":"猪灵弩·散瘟","italic":false,"color":"white"}',enchantments:{multishot:1,quick_charge:1,unbreaking:1}}},{}],HandDropChances:[0.03f,0.03f],ArmorItems:[{count:1,id:"golden_boots",components:{custom_name:'{"text":"金靴","italic":false,"color":"white"}'}},{count:1,id:"iron_leggings",components:{custom_name:'{"text":"铁护腿","italic":false,"color":"white"}'}},{count:1,id:"iron_chestplate",components:{custom_name:'{"text":"铁胸甲","italic":false,"color":"white"}'}},{}],ArmorDropChances:[0.01f,0.01f,0.01f,0.01f],attributes:[{id:"max_health",base:10.0d},{id:"attack_damage",base:1.5d},{id:"movement_speed",base:0.47d}]}
 
 fill -79464 40 -431 -79469 31 -431 minecraft:air replace minecraft:nether_portal[axis=x]
+setblock -79466 29 -408 minecraft:air
+fill -79467 29 -410 -79467 29 -409 minecraft:air
+fill -79466 29 -415 -79466 29 -414 minecraft:air
+fill -79467 29 -416 -79467 29 -415 minecraft:air
 
 #【狱山羊 lv6】summon goat ~ ~ ~ {IsScreamingGoat:0b,PersistenceRequired:1,Tags:["AzrielDecMob"],DeathLootTable:"skyblock:azriel_sheep_tier1",CustomName:"\"狱山羊\"",Age:10,Attributes:[{Name:generic.max_health,Base:10.0},{Name:generic.attack_knockback,Base:0.50},{Name:generic.attack_damage,Base:12.0},{Name:generic.movement_speed,Base:0.18}],Health:10.0f}
 #【焰型体 lv8】summon blaze ~ ~ ~ {PersistenceRequired:1,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_blaze_tier1",CustomName:"\"焰型体\"",Attributes:[{Name:generic.max_health,Base:5.0},{Name:generic.attack_damage,Base:4.0},{Name:generic.movement_speed,Base:0.22}],Health:5.0f}

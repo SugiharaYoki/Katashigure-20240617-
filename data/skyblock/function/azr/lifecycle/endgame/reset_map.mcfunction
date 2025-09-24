@@ -547,6 +547,11 @@ clone -79555 32 -352 -79517 32 -319 -79555 41 -352
 setblock -79416 28 -382 smoker[facing=west]
 setblock -79416 28 -381 minecraft:potted_crimson_roots
 
+setblock -79466 29 -408 minecraft:nether_brick_slab[type=top]
+fill -79467 29 -410 -79467 29 -409 minecraft:nether_brick_slab[type=top]
+fill -79466 29 -415 -79466 29 -414 minecraft:nether_brick_slab[type=top]
+fill -79467 29 -416 -79467 29 -415 minecraft:nether_brick_slab[type=top]
+
 
 fill -79409 30 -398 -79409 32 -396 minecraft:red_stained_glass
 setblock -79401 27 -385 minecraft:redstone_block
