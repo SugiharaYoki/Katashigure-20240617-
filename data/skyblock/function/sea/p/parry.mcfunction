@@ -1,11 +1,4 @@
 execute as @s run scoreboard players remove @s sea_shield_switch 1
-#execute if items entity @s weapon.mainhand shield[minecraft:custom_data={"sea_shield":true}] run tag @s add sea_shield1_checked
-#execute if items entity @s weapon.mainhand shield[minecraft:custom_data={"sea_shield2":true}] run tag @s add sea_shield2_checked
-#execute if items entity @s weapon.mainhand shield[minecraft:custom_data={"sea_shield3":true}] run tag @s add sea_shield3_checked
-#execute if items entity @s weapon.mainhand shield[minecraft:custom_data={"sea_shield4":true}] run tag @s add sea_shield4_checked
-#execute if items entity @s weapon.mainhand shield[minecraft:custom_data={"sea_shield5":true}] run tag @s add sea_shield5_checked
-#execute if items entity @s weapon.mainhand shield[minecraft:custom_data={"sea_shield6":true}] run tag @s add sea_shield6_checked
-#execute if items entity @s weapon.mainhand shield[minecraft:custom_data={"sea_shield7":true}] run tag @s add sea_shield7_checked
 scoreboard players set @s rng3 14
 scoreboard players set @s rng4 1
 scoreboard players remove @s[tag=sea_w_shield_skill_a_1] rng3 2

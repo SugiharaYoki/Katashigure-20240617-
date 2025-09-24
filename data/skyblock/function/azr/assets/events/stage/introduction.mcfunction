@@ -39,11 +39,11 @@ execute if score Azr_Story_Introduction rng1 matches 200 as @p[tag=azrPlayer] at
 execute if score Azr_Story_Introduction rng1 matches 208 as @p[tag=azrPlayer] at @s run tp @a[distance=..200] -79760 97 -2133
 execute if score Azr_Story_Introduction rng1 matches 208 run scoreboard players add Azr_Story_Introduction rng1 18
 
-execute if score Azr_Story_Introduction rng1 matches 232 as @p[tag=azrPlayer] at @s run playsound minecraft:ambient.cave ambient @a ~ ~ ~ 1 0.5
-execute if score Azr_Story_Introduction rng1 matches 232 as @p[tag=azrPlayer] at @s run playsound minecraft:ambient.cave ambient @a ~ ~ ~ 1 0.5
-execute if score Azr_Story_Introduction rng1 matches 232 as @p[tag=azrPlayer] at @s run playsound minecraft:ambient.cave ambient @a ~ ~ ~ 1 0.5
-execute if score Azr_Story_Introduction rng1 matches 232 as @p[tag=azrPlayer] at @s run playsound minecraft:ambient.cave ambient @a ~ ~ ~ 1 0.5
-execute if score Azr_Story_Introduction rng1 matches 232 as @p[tag=azrPlayer] at @s run playsound minecraft:ambient.cave ambient @a ~ ~ ~ 1 0.5
+execute if score Azr_Story_Introduction rng1 matches 234 as @p[tag=azrPlayer] at @s run playsound minecraft:ambient.cave ambient @a ~ ~ ~ 1 0.5
+execute if score Azr_Story_Introduction rng1 matches 234 as @p[tag=azrPlayer] at @s run playsound minecraft:ambient.cave ambient @a ~ ~ ~ 1 0.5
+execute if score Azr_Story_Introduction rng1 matches 234 as @p[tag=azrPlayer] at @s run playsound minecraft:ambient.cave ambient @a ~ ~ ~ 1 0.5
+execute if score Azr_Story_Introduction rng1 matches 234 as @p[tag=azrPlayer] at @s run playsound minecraft:ambient.cave ambient @a ~ ~ ~ 1 0.5
+execute if score Azr_Story_Introduction rng1 matches 234 as @p[tag=azrPlayer] at @s run playsound minecraft:ambient.cave ambient @a ~ ~ ~ 1 0.5
 
 
 execute if score Azr_Story_Introduction rng1 matches 232 as @p[tag=azrPlayer] at @s run title @a[tag=azrShowDialog] times 1s 2s 1s

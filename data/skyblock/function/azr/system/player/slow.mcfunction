@@ -18,6 +18,8 @@ execute unless entity @s[x=-79931,y=100,z=0,distance=..10000] run tp @s @p[tag=a
 execute if items entity @s weapon.mainhand compass[custom_data~{azr_compass:1b}] at @s unless entity @e[distance=0..20,tag=AzrielBossB] run function skyblock:azr/assets/events/effects/compass
 execute if items entity @s weapon.mainhand compass[custom_data~{azr_compass:1b}] at @s if entity @e[distance=0..20,tag=AzrielBossB] run function skyblock:azr/assets/events/effects/compass_boss3
 
+#破箱
+execute if items entity @s weapon.mainhand tripwire_hook at @s anchored eyes run function skyblock:azr/system/player/unlock_chest
 
 #打印剧情
 execute if items entity @s container.* skull_banner_pattern run tellraw @a[tag=azrShowDialog] [{"selector":"@s"},{"text":"解锁了剧情"}]
