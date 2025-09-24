@@ -9,7 +9,7 @@ execute if items entity @s[tag=!AZR_fakeDeath] container.* *[custom_data~{reviva
 execute unless entity @s[tag=AZR_fakeDeath] unless score @s Azr_forceDeath matches 1 unless entity @s[nbt={Inventory:[{components:{"minecraft:custom_data":{revival_star:1b}}}]}] run tellraw @a[tag=azrShowDialog] [{"text":"警告！","color":"red"},{"selector":"@s","color":"blue"},{"text":"已经没有更多下界命星了！","color":"red"}]
 #死亡后退出游戏
     #输出
-    execute if score @s Azr_forceDeath matches 1 run tellraw @a[tag=azrShowDialog,distance=..10000] [{"selector":"@s","color":"blue"},{"text":" 阵亡了！","color":"dark_red"}]
+    execute if score @s Azr_forceDeath matches 1 run tellraw @a[tag=azrShowDialog,distance=..10000] [{"selector":"@s","color":"white"},{"text":" 的灵魂不幸碎裂！","color":"dark_red"}]
     execute if score @s Azr_forceDeath matches 1 run tellraw @s [{"text":"你已经死亡！最终坚持关数： ","color":"red"},{"score":{"name":"@s","objective":"Azr_wave"}}]
 execute if score @s Azr_forceDeath matches 1 run function skyblock:azr/lifecycle/endgame/quit_game
 tag @s remove AZR_fakeDeath
