@@ -67,12 +67,11 @@ execute if score Azr_Story_Introduction rng1 matches 310 at @p[tag=azrPlayer] ru
 execute positioned -79381 22 -385 run summon piglin ~ ~ ~ {CustomName:'"魔界居民"',PersistenceRequired:1b,Tags:["AzrielMob_StoryIntroduction_NPC1"],Invulnerable:1b,IsImmuneToZombification:1b,attributes:[{id:"movement_speed",base:0.0}],HandItems:[{},{}]}
 execute positioned -79387 24 -404 run summon piglin ~ ~ ~ {CustomName:'"魔界居民"',PersistenceRequired:1b,Tags:["AzrielMob_StoryIntroduction_NPC2"],Invulnerable:1b,IsImmuneToZombification:1b,attributes:[{id:"movement_speed",base:0.15}],HandItems:[{},{}]}
 execute positioned -79394 26 -386 run summon piglin ~ ~ ~ {CustomName:'"仓管"',PersistenceRequired:1b,Tags:["AzrielMob_StoryIntroduction_NPC3"],Invulnerable:1b,IsImmuneToZombification:1b,attributes:[{id:"movement_speed",base:0.0},{id:"attack_damage",base:0.0}],HandItems:[{count:1,id:"golden_sword"},{count:1,id:"shield"}],ArmorItems:[{},{},{count:1,id:"golden_chestplate"},{}]}
-
-execute positioned -79377 24 -399 run summon piglin ~ ~ ~ {CustomName:'"魔界居民"',PersistenceRequired:1b,Tags:["AzrielMob_StoryIntroduction_NPC_unused"],Invulnerable:1b,IsImmuneToZombification:1b,attributes:[{id:"movement_speed",base:0.15}],HandItems:[{},{}]}
-
+execute positioned -79371 26 -385 run summon piglin ~ ~ ~ {CustomName:'"魔界居民"',PersistenceRequired:1b,Tags:["AzrielMob_StoryIntroduction_NPC6"],Invulnerable:1b,IsImmuneToZombification:1b,attributes:[{id:"movement_speed",base:0.0}],HandItems:[{count:1,id:"pumpkin_pie"},{}]}
 execute positioned -79407 30 -398 run summon piglin_brute ~ ~ ~ {CustomName:'"守卫"',PersistenceRequired:1b,Tags:["AzrielMob_StoryIntroduction_NPC4"],Invulnerable:1b,IsImmuneToZombification:1b,attributes:[{id:"movement_speed",base:0.0},{id:"attack_damage",base:0.0}],HandItems:[{count:1,id:"golden_axe"},{}]}
 execute positioned -79373 26 -371 run summon piglin_brute ~ ~ ~ {CustomName:'"守卫"',PersistenceRequired:1b,Tags:["AzrielMob_StoryIntroduction_NPC5"],Invulnerable:1b,IsImmuneToZombification:1b,attributes:[{id:"movement_speed",base:0.0},{id:"attack_damage",base:0.0}],HandItems:[{count:1,id:"golden_axe"},{}]}
 
+execute positioned -79377 24 -399 run summon piglin ~ ~ ~ {CustomName:'"魔界居民"',PersistenceRequired:1b,Tags:["AzrielMob_StoryIntroduction_NPC_unused"],Invulnerable:1b,IsImmuneToZombification:1b,attributes:[{id:"movement_speed",base:0.15}],HandItems:[{},{}]}
 execute positioned -79431 27 -395 run summon piglin_brute ~ ~ ~ {CustomName:'"守卫"',PersistenceRequired:1b,Tags:["AzrielMob_StoryIntroduction_NPC_unused"],Invulnerable:1b,IsImmuneToZombification:1b,attributes:[{id:"movement_speed",base:0.0},{id:"attack_damage",base:0.0}],HandItems:[{count:1,id:"golden_axe"},{}]}
 execute positioned -79438 30 -405 run summon strider ~ ~ ~ {CustomName:'"炽足兽"',PersistenceRequired:1b,Tags:["AzrielMob_StoryIntroduction_NPC_unused"],Invulnerable:1b,attributes:[{id:"movement_speed",base:0.15}]}
 execute positioned -79438 30 -405 run summon piglin ~ ~ ~ {CustomName:'"魔界居民"',PersistenceRequired:1b,Tags:["AzrielMob_StoryIntroduction_NPC_unused"],Invulnerable:1b,IsImmuneToZombification:1b,attributes:[{id:"movement_speed",base:0.15}],HandItems:[{},{}]}
@@ -136,4 +135,10 @@ execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC5,dis
 execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC5,distance=..100,type=piglin,scores={rng1=148}] at @s if entity @p[tag=SEAPT,distance=..4.4] run tellraw @a[tag=azrShowDialog] [{"text":"守卫：","color":"yellow"},{"text":"\n“还不走吗？我困得要死，没法跟你解释更多了。”","color":"white"}]
 execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC5,distance=..100,type=piglin,scores={rng1=188}] at @s if entity @p[tag=SEAPT,distance=..4.4] run playsound entity.piglin.ambient neutral @a ~ ~ ~ 1 1
 execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC5,distance=..100,type=piglin,scores={rng1=188}] at @s if entity @p[tag=SEAPT,distance=..4.4] run tellraw @a[tag=azrShowDialog] [{"text":"守卫：","color":"yellow"},{"text":"\n“随你便。”","color":"white"}]
+
+execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC6,distance=..100,type=piglin] at @s if entity @p[tag=SEAPT,distance=..3.8] run scoreboard players add @s rng1 1
+execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC6,distance=..100,type=piglin,scores={rng1=2}] at @s if entity @p[tag=SEAPT,distance=..3.8] run playsound entity.piglin.ambient neutral @a ~ ~ ~ 1 1
+execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC6,distance=..100,type=piglin,scores={rng1=2}] at @s if entity @p[tag=SEAPT,distance=..3.8] run tellraw @a[tag=azrShowDialog] [{"text":"猪灵居委会成员：","color":"yellow"},{"text":"\n“社区粮食分发。今天有剩的，给你点，伙计。”","color":"white"}]
+execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC6,distance=..100,type=piglin,scores={rng1=2}] at @s if entity @p[tag=SEAPT,distance=..3.8] run give @a[tag=azrPlayer] pumpkin_pie 8
+
 
