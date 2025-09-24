@@ -6,7 +6,7 @@ scoreboard players add @s rng1 1
 execute if score @s rng1 matches 2.. rotated ~ 0 run particle end_rod ~ ~0.2 ~ 0 0 0 0.00 1
 
 execute if score @s rng1 matches 2 store result score @s[tag=!AzrTrace] rng2 run random value 1..8
-execute if score @s rng1 matches 2 store result score @s[tag=AzrTrace] rng2 run random value 99..100
+execute if score @s rng1 matches 2.. store result score @s[tag=AzrTrace] rng2 run random value 99..100
 
 execute if score @s[scores={rng2=1}] rng1 matches 3 run rotate @s 0 0
 execute if score @s[scores={rng2=2}] rng1 matches 3 run rotate @s 45 0
