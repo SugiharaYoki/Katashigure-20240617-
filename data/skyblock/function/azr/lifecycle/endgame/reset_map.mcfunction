@@ -551,7 +551,7 @@ setblock -79466 29 -408 minecraft:nether_brick_slab[type=top]
 fill -79467 29 -410 -79467 29 -409 minecraft:nether_brick_slab[type=top]
 fill -79466 29 -415 -79466 29 -414 minecraft:nether_brick_slab[type=top]
 fill -79467 29 -416 -79467 29 -415 minecraft:nether_brick_slab[type=top]
-
+fill -79952 41 -20 -79955 38 -20 minecraft:air
 
 fill -79409 30 -398 -79409 32 -396 minecraft:red_stained_glass
 setblock -79401 27 -385 minecraft:redstone_block

@@ -200,7 +200,8 @@ execute if score Azr_Story_Introduction rng1 matches 1025 positioned -79984.03 4
 execute if score Azr_Story_Introduction rng1 matches 1025 positioned -79984.03 40.00 -14.01 run playsound block.beacon.deactivate ambient @a ~ ~ ~ 2 0.8
 execute if score Azr_Story_Introduction rng1 matches 1024..1034 positioned -79984.03 40.00 -14.01 run particle trial_spawner_detection ~ ~ ~ 3 0 3 0 10
 
-
+execute if score Azr_Story_Introduction rng1 matches 1025 positioned -79984.03 40.00 -14.01 run fill -79952 41 -20 -79955 38 -20 minecraft:quartz_block
+execute if score Azr_Story_Introduction rng1 matches 1025 positioned -79984.03 40.00 -14.01 run fill -79952 39 -20 -79955 39 -20 minecraft:quartz_bricks
 
 
 
