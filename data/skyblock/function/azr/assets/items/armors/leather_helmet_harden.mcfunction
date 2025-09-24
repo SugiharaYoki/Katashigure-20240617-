@@ -1,1 +1,0 @@
-give @s leather_helmet[custom_data={leather_helmet_harden:1b},custom_name='{"text":"皮革帽·加固","italic":false}',attribute_modifiers=[{type:"minecraft:armor",id:"azr:leather_helmet_harden.armor",amount:1.5,operation:"add_value",slot:"armor"}],custom_model_data={floats:[100005.0]},dyed_color={rgb:2664379,show_in_tooltip:false}]

@@ -1,10 +1,9 @@
 $execute as @s[scores={Azr_Shop_rng$(rng)=0,Azr_Shop=$(trigger)}] \
     unless score tempPlayerShopSuccess Azr_system matches 1 \
-    if score @s Azr_emerald matches 2.. \
-    if items entity @s container.* iron_nugget[count~{min:2},custom_data~{shield_shard:1b}] \
+    if items entity @s container.* iron_ingot[count={min:2}] \
     unless function skyblock:azr/system/shop/purchase/category3/\
     rng0 run scoreboard players set tempPlayerShopSuccess Azr_system 1
-    # 0 @s  盾牌 2 绿宝石 2 盾牌碎片
+    # 0 @s  盾牌 2 铁锭
 
 $execute as @s[scores={Azr_Shop_rng$(rng)=1,Azr_Shop=$(trigger)}] \
     unless score tempPlayerShopSuccess Azr_system matches 1 \
@@ -13,140 +12,86 @@ $execute as @s[scores={Azr_Shop_rng$(rng)=1,Azr_Shop=$(trigger)}] \
     rng1 run scoreboard players set tempPlayerShopSuccess Azr_system 1
     # 1 @s  皮革帽 2 绿宝石
 
-$execute as @s[scores={Azr_Shop_rng$(rng)=1,Azr_Shop=$(trigger)33}] \
-    unless score tempPlayerShopSuccess Azr_system matches 1 \
-    if score @s Azr_emerald matches 3.. \
-    unless function skyblock:azr/system/shop/purchase/category3/\
-    rng1_alt run scoreboard players set tempPlayerShopSuccess Azr_system 1
-    # 1 alt @s  皮革甲 3 绿宝石
-
 $execute as @s[scores={Azr_Shop_rng$(rng)=2,Azr_Shop=$(trigger)}] \
     unless score tempPlayerShopSuccess Azr_system matches 1 \
     if score @s Azr_emerald matches 2.. \
     unless function skyblock:azr/system/shop/purchase/category3/\
     rng2 run scoreboard players set tempPlayerShopSuccess Azr_system 1
-    # 2 @s  皮革帽 2 绿宝石
-
-$execute as @s[scores={Azr_Shop_rng$(rng)=2,Azr_Shop=$(trigger)33}] \
-    unless score tempPlayerShopSuccess Azr_system matches 1 \
-    if score @s Azr_emerald matches 3.. \
-    unless function skyblock:azr/system/shop/purchase/category3/\
-    rng2_alt run scoreboard players set tempPlayerShopSuccess Azr_system 1
-    # 2 alt @s  皮革甲 3 绿宝石
+    # 2 @s  皮革甲 2 绿宝石
 
 $execute as @s[scores={Azr_Shop_rng$(rng)=3,Azr_Shop=$(trigger)}] \
     unless score tempPlayerShopSuccess Azr_system matches 1 \
-    if score @s Azr_emerald matches 3.. \
-    unless function skyblock:azr/system/shop/purchase/category3/\
-    rng3 run scoreboard players set tempPlayerShopSuccess Azr_system 1
-    # 3 @s  皮革裤 3 绿宝石
-
-$execute as @s[scores={Azr_Shop_rng$(rng)=3,Azr_Shop=$(trigger)33}] \
-    unless score tempPlayerShopSuccess Azr_system matches 1 \
     if score @s Azr_emerald matches 2.. \
     unless function skyblock:azr/system/shop/purchase/category3/\
-    rng3_alt run scoreboard players set tempPlayerShopSuccess Azr_system 1
-    # 3 alt @s  皮革靴 2 绿宝石
+    rng3 run scoreboard players set tempPlayerShopSuccess Azr_system 1
+    # 3 @s  皮革裤 2 绿宝石
 
 $execute as @s[scores={Azr_Shop_rng$(rng)=4,Azr_Shop=$(trigger)}] \
     unless score tempPlayerShopSuccess Azr_system matches 1 \
-    if score @s Azr_emerald matches 3.. \
-    unless function skyblock:azr/system/shop/purchase/category3/\
-    rng4 run scoreboard players set tempPlayerShopSuccess Azr_system 1
-    # 4 @s  皮革裤 3 绿宝石
-
-$execute as @s[scores={Azr_Shop_rng$(rng)=4,Azr_Shop=$(trigger)33}] \
-    unless score tempPlayerShopSuccess Azr_system matches 1 \
     if score @s Azr_emerald matches 2.. \
     unless function skyblock:azr/system/shop/purchase/category3/\
-    rng4_alt run scoreboard players set tempPlayerShopSuccess Azr_system 1
-    # 4 alt @s  皮革靴 2 绿宝石
+    rng4 run scoreboard players set tempPlayerShopSuccess Azr_system 1
+    # 4 @s  皮革靴 2 绿宝石
 
 $execute as @s[scores={Azr_Shop_rng$(rng)=5,Azr_Shop=$(trigger)}] \
     unless score tempPlayerShopSuccess Azr_system matches 1 \
-    if score @s Azr_emerald matches 4.. \
+    if score @s Azr_emerald matches 6.. \
     unless function skyblock:azr/system/shop/purchase/category3/\
     rng5 run scoreboard players set tempPlayerShopSuccess Azr_system 1
-    # 5 @s  链帽 4 绿宝石
-
-$execute as @s[scores={Azr_Shop_rng$(rng)=5,Azr_Shop=$(trigger)33}] \
-    unless score tempPlayerShopSuccess Azr_system matches 1 \
-    if score @s Azr_emerald matches 7.. \
-    unless function skyblock:azr/system/shop/purchase/category3/\
-    rng5_alt run scoreboard players set tempPlayerShopSuccess Azr_system 1
-    # 5 alt @s  链甲 7 绿宝石
+    # 5 @s  链帽 6 绿宝石
 
 $execute as @s[scores={Azr_Shop_rng$(rng)=6,Azr_Shop=$(trigger)}] \
     unless score tempPlayerShopSuccess Azr_system matches 1 \
-    if score @s Azr_emerald matches 4.. \
+    if score @s Azr_emerald matches 6.. \
     unless function skyblock:azr/system/shop/purchase/category3/\
     rng6 run scoreboard players set tempPlayerShopSuccess Azr_system 1
-    # 6 @s  链帽 4 绿宝石
-
-$execute as @s[scores={Azr_Shop_rng$(rng)=6,Azr_Shop=$(trigger)33}] \
-    unless score tempPlayerShopSuccess Azr_system matches 1 \
-    if score @s Azr_emerald matches 7.. \
-    unless function skyblock:azr/system/shop/purchase/category3/\
-    rng6_alt run scoreboard players set tempPlayerShopSuccess Azr_system 1
-    # 6 alt @s  链甲 7 绿宝石
+    # 6 @s  链甲 6 绿宝石
 
 $execute as @s[scores={Azr_Shop_rng$(rng)=7,Azr_Shop=$(trigger)}] \
     unless score tempPlayerShopSuccess Azr_system matches 1 \
-    if score @s Azr_emerald matches 7.. \
+    if score @s Azr_emerald matches 6.. \
     unless function skyblock:azr/system/shop/purchase/category3/\
     rng7 run scoreboard players set tempPlayerShopSuccess Azr_system 1
     # 7 @s  链裤 6 绿宝石
 
-$execute as @s[scores={Azr_Shop_rng$(rng)=7,Azr_Shop=$(trigger)33}] \
+$execute as @s[scores={Azr_Shop_rng$(rng)=7,Azr_Shop=$(trigger)}] \
     unless score tempPlayerShopSuccess Azr_system matches 1 \
-    if score @s Azr_emerald matches 4.. \
-    unless function skyblock:azr/system/shop/purchase/category3/\
-    rng7_alt run scoreboard players set tempPlayerShopSuccess Azr_system 1
-    # 7 alt @s  链靴 4 绿宝石
-
-
-$execute as @s[scores={Azr_Shop_rng$(rng)=8,Azr_Shop=$(trigger)}] \
-    unless score tempPlayerShopSuccess Azr_system matches 1 \
-    if score @s Azr_emerald matches 7.. \
+    if score @s Azr_emerald matches 6.. \
     unless function skyblock:azr/system/shop/purchase/category3/\
     rng8 run scoreboard players set tempPlayerShopSuccess Azr_system 1
-    # 8 @s  链裤 6 绿宝石
-
-$execute as @s[scores={Azr_Shop_rng$(rng)=8,Azr_Shop=$(trigger)33}] \
-    unless score tempPlayerShopSuccess Azr_system matches 1 \
-    if score @s Azr_emerald matches 4.. \
-    unless function skyblock:azr/system/shop/purchase/category3/\
-    rng8_alt run scoreboard players set tempPlayerShopSuccess Azr_system 1
-    # 8 alt @s  链靴 4 绿宝石
+    # 8 @s  链靴 6 绿宝石
 
 
 $execute as @s[scores={Azr_Shop_rng$(rng)=9,Azr_Shop=$(trigger)}] \
     unless score tempPlayerShopSuccess Azr_system matches 1 \
-    if items entity @s container.* leather[count~{min:2}] \
+    if items entity @s container.* ink_sac[count~{min:2}] \
     unless function skyblock:azr/system/shop/purchase/category3/\
     rng9 run scoreboard players set tempPlayerShopSuccess Azr_system 1
-    # 9 皮革帽（加固） 2 皮革
+    # 9 皮革帽（加固） 2 墨囊
 
 $execute as @s[scores={Azr_Shop_rng$(rng)=10,Azr_Shop=$(trigger)}] \
     unless score tempPlayerShopSuccess Azr_system matches 1 \
-    if items entity @s container.* leather[count~{min:3}] \
+    if items entity @s container.* ink_sac[count~{min:2}] \
     unless function skyblock:azr/system/shop/purchase/category3/\
     rng10 run scoreboard players set tempPlayerShopSuccess Azr_system 1
-    # 10 皮革甲（加固） 3 皮革
+    # 10 皮革甲（加固） 2 墨囊
 
 $execute as @s[scores={Azr_Shop_rng$(rng)=11,Azr_Shop=$(trigger)}] \
     unless score tempPlayerShopSuccess Azr_system matches 1 \
-    if items entity @s container.* leather[count~{min:3}] \
+    if items entity @s container.* ink_sac[count~{min:2}] \
     unless function skyblock:azr/system/shop/purchase/category3/\
     rng11 run scoreboard players set tempPlayerShopSuccess Azr_system 1
-    # 11 皮革裤（加固） 3 皮革
+    # 11 皮革裤（加固） 2 墨囊
 
 $execute as @s[scores={Azr_Shop_rng$(rng)=12,Azr_Shop=$(trigger)}] \
     unless score tempPlayerShopSuccess Azr_system matches 1 \
-    if items entity @s container.* leather[count~{min:2}] \
+    if items entity @s container.* ink_sac[count~{min:2}] \
     unless function skyblock:azr/system/shop/purchase/category3/\
     rng12 run scoreboard players set tempPlayerShopSuccess Azr_system 1
-    # 12 皮革靴（加固） 2 皮革
+    # 12 皮革靴（加固） 2 墨囊
+
+
+
 
 $execute as @s[scores={Azr_Shop_rng$(rng)=13,Azr_Shop=$(trigger)}] \
     unless score tempPlayerShopSuccess Azr_system matches 1 \

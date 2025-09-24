@@ -72,7 +72,6 @@ execute if score stage_main_thread AzrTimerStack matches 160 run particle minecr
 execute if score stage_main_thread AzrTimerStack matches 160 run particle minecraft:end_rod -79934 39 18 0.6 0.6 0.6 0.0 13
 execute if score stage_main_thread AzrTimerStack matches 160 run scoreboard players set wave Azr_system 3
 execute if score stage_main_thread AzrTimerStack matches 160 run scoreboard players set stage Azr_system 5
-execute if score stage_main_thread AzrTimerStack matches 160 run tellraw @a[scores={Azr_skillPoints=..1}] {"text":"永久升级 - 木剑/斧（尸化）将拥有耐久I的附魔效果","color":"light_purple"}
 execute if score stage_main_thread AzrTimerStack matches 160 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..1}] Azr_skillPoints 2
 execute if score stage_main_thread AzrTimerStack matches 160 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage2
 execute if score stage_main_thread AzrTimerStack matches 160 run title @a[tag=azrShowDialog] actionbar {"text":"Stage Clear","color":"green"}

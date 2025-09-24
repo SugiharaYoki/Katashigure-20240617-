@@ -1,3 +1,3 @@
-function skyblock:azr/assets/items/armors/leather_leggings_normal
+function skyblock:azr/assets/items/armors/leather_boots_normal
 
-scoreboard players remove @s Azr_emerald 3
+scoreboard players remove @s Azr_emerald 2

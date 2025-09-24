@@ -1,1 +1,1 @@
-give @s chainmail_helmet[custom_data={chainmail_helmet_normal:1b},custom_model_data={floats:[100001.0]}]
+give @s chainmail_helmet[custom_data={chainmail_helmet_normal:1b},attribute_modifiers=[{type:"minecraft:armor",id:"azr:chainmail_helmet_normal.armor",amount:2.0,operation:"add_value",slot:"armor"}],custom_model_data={floats:[100001.0]}]
