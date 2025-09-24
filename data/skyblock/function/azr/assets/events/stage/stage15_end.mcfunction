@@ -36,64 +36,7 @@ summon piglin -79577 10 -419 {IsImmuneToZombification:1b,PersistenceRequired:1b,
 execute if score playerCount Azr_system matches 2.. run summon piglin -79577 10 -419 {IsImmuneToZombification:1b,PersistenceRequired:1b,Tags:["AzrielMob","AzrielDecMob"],DeathLootTable:"skyblock:azriel_piglin_tier1",Health:10.0f,CustomName:'"精锐猪灵弩手"',CanPickUpLoot:0b,IsBaby:0b,HandItems:[{count:1,id:"crossbow",components:{custom_name:'{"text":"猪灵弩·散瘟","italic":false,"color":"white"}',enchantments:{multishot:1,quick_charge:1,unbreaking:1}}},{}],HandDropChances:[0.03f,0.03f],ArmorItems:[{count:1,id:"golden_boots",components:{custom_name:'{"text":"金靴","italic":false,"color":"white"}'}},{count:1,id:"iron_leggings",components:{custom_name:'{"text":"铁护腿","italic":false,"color":"white"}'}},{count:1,id:"iron_chestplate",components:{custom_name:'{"text":"铁胸甲","italic":false,"color":"white"}'}},{}],ArmorDropChances:[0.01f,0.01f,0.01f,0.01f],attributes:[{id:"max_health",base:10.0d},{id:"attack_damage",base:1.5d},{id:"movement_speed",base:0.47d}]}
 execute if score playerCount Azr_system matches 4.. run summon piglin -79577 10 -419 {IsImmuneToZombification:1b,PersistenceRequired:1b,Tags:["AzrielMob","AzrielDecMob"],DeathLootTable:"skyblock:azriel_piglin_tier1",Health:10.0f,CustomName:'"精锐猪灵弩手"',CanPickUpLoot:0b,IsBaby:0b,HandItems:[{count:1,id:"crossbow",components:{custom_name:'{"text":"猪灵弩·散瘟","italic":false,"color":"white"}',enchantments:{multishot:1,quick_charge:1,unbreaking:1}}},{}],HandDropChances:[0.03f,0.03f],ArmorItems:[{count:1,id:"golden_boots",components:{custom_name:'{"text":"金靴","italic":false,"color":"white"}'}},{count:1,id:"iron_leggings",components:{custom_name:'{"text":"铁护腿","italic":false,"color":"white"}'}},{count:1,id:"iron_chestplate",components:{custom_name:'{"text":"铁胸甲","italic":false,"color":"white"}'}},{}],ArmorDropChances:[0.01f,0.01f,0.01f,0.01f],attributes:[{id:"max_health",base:10.0d},{id:"attack_damage",base:1.5d},{id:"movement_speed",base:0.47d}]}
 
-#第16关地图预加载#
-setblock -79540 25 -406 birch_button[face=floor]
-fill -79464 40 -431 -79469 31 -431 minecraft:obsidian replace minecraft:crying_obsidian
 fill -79464 40 -431 -79469 31 -431 minecraft:air replace minecraft:nether_portal[axis=x]
-fill -79420 22 -364 -79491 24 -503 minecraft:crimson_nylium replace minecraft:warped_nylium
-fill -79420 25 -364 -79491 27 -503 minecraft:crimson_nylium replace minecraft:warped_nylium
-fill -79420 28 -364 -79491 30 -503 minecraft:crimson_nylium replace minecraft:warped_nylium
-fill -79420 31 -364 -79491 33 -503 minecraft:crimson_nylium replace minecraft:warped_nylium
-fill -79420 34 -364 -79491 36 -503 minecraft:crimson_nylium replace minecraft:warped_nylium
-fill -79420 37 -364 -79491 39 -503 minecraft:crimson_nylium replace minecraft:warped_nylium
-fill -79420 40 -364 -79491 42 -503 minecraft:crimson_nylium replace minecraft:warped_nylium
-fill -79420 43 -364 -79491 45 -503 minecraft:crimson_nylium replace minecraft:warped_nylium
-fill -79420 22 -364 -79491 24 -503 minecraft:crimson_roots replace minecraft:warped_roots
-fill -79420 25 -364 -79491 27 -503 minecraft:crimson_roots replace minecraft:warped_roots
-fill -79420 28 -364 -79491 30 -503 minecraft:crimson_roots replace minecraft:warped_roots
-fill -79420 31 -364 -79491 33 -503 minecraft:crimson_roots replace minecraft:warped_roots
-fill -79420 34 -364 -79491 36 -503 minecraft:crimson_roots replace minecraft:warped_roots
-fill -79420 37 -364 -79491 39 -503 minecraft:crimson_roots replace minecraft:warped_roots
-fill -79420 40 -364 -79491 42 -503 minecraft:crimson_roots replace minecraft:warped_roots
-fill -79420 43 -364 -79491 45 -503 minecraft:crimson_roots replace minecraft:warped_roots
-fill -79420 22 -364 -79491 24 -503 minecraft:crimson_fungus replace minecraft:warped_fungus
-fill -79420 25 -364 -79491 27 -503 minecraft:crimson_fungus replace minecraft:warped_fungus
-fill -79420 28 -364 -79491 30 -503 minecraft:crimson_fungus replace minecraft:warped_fungus
-fill -79420 31 -364 -79491 33 -503 minecraft:crimson_fungus replace minecraft:warped_fungus
-fill -79420 34 -364 -79491 36 -503 minecraft:crimson_fungus replace minecraft:warped_fungus
-fill -79420 37 -364 -79491 39 -503 minecraft:crimson_fungus replace minecraft:warped_fungus
-fill -79420 40 -364 -79491 42 -503 minecraft:crimson_fungus replace minecraft:warped_fungus
-fill -79420 43 -364 -79491 45 -503 minecraft:crimson_fungus replace minecraft:warped_fungus
-fill -79420 22 -364 -79491 24 -503 minecraft:nether_wart_block replace minecraft:warped_wart_block
-fill -79420 25 -364 -79491 27 -503 minecraft:nether_wart_block replace minecraft:warped_wart_block
-fill -79420 28 -364 -79491 30 -503 minecraft:nether_wart_block replace minecraft:warped_wart_block
-fill -79420 31 -364 -79491 33 -503 minecraft:nether_wart_block replace minecraft:warped_wart_block
-fill -79420 34 -364 -79491 36 -503 minecraft:nether_wart_block replace minecraft:warped_wart_block
-fill -79420 37 -364 -79491 39 -503 minecraft:nether_wart_block replace minecraft:warped_wart_block
-fill -79420 40 -364 -79491 42 -503 minecraft:nether_wart_block replace minecraft:warped_wart_block
-fill -79420 43 -364 -79491 45 -503 minecraft:nether_wart_block replace minecraft:warped_wart_block
-fill -79420 22 -364 -79491 24 -503 minecraft:lantern replace minecraft:soul_lantern
-fill -79420 25 -364 -79491 27 -503 minecraft:lantern replace minecraft:soul_lantern
-fill -79420 28 -364 -79491 30 -503 minecraft:lantern replace minecraft:soul_lantern
-fill -79420 31 -364 -79491 33 -503 minecraft:lantern replace minecraft:soul_lantern
-fill -79420 34 -364 -79491 36 -503 minecraft:lantern replace minecraft:soul_lantern
-fill -79420 37 -364 -79491 39 -503 minecraft:lantern replace minecraft:soul_lantern
-fill -79470 32 -429 -79463 35 -432 crimson_stem[axis=y] replace warped_stem
-fill -79468 31 -430 -79465 31 -432 crimson_stem[axis=x] replace warped_stem
-fill -79466 81 -422 -79467 88 -422 blackstone
-fill -79467 81 -399 -79465 88 -399 blackstone
-fill -79463 80 -377 -79469 80 -378 air
-fill -79468 80 -371 -79464 80 -371 air
-fill -79468 80 -373 -79464 80 -373 air
-fill -79463 82 -378 -79469 82 -378 barrier
-fill -79467 86 -341 -79465 86 -341 barrier
-fill -79519 42 -321 -79553 42 -355 air replace fire
-
-fill -79465 84 -342 -79467 84 -334 glass
-fill -79470 84 -337 -79462 84 -339 glass
-fill -79460 64 -343 -79471 64 -332 black_concrete replace air
-clone -79555 32 -352 -79517 32 -319 -79555 41 -352
-
 
 #【狱山羊 lv6】summon goat ~ ~ ~ {IsScreamingGoat:0b,PersistenceRequired:1,Tags:["AzrielDecMob"],DeathLootTable:"skyblock:azriel_sheep_tier1",CustomName:"\"狱山羊\"",Age:10,Attributes:[{Name:generic.max_health,Base:10.0},{Name:generic.attack_knockback,Base:0.50},{Name:generic.attack_damage,Base:12.0},{Name:generic.movement_speed,Base:0.18}],Health:10.0f}
 #【焰型体 lv8】summon blaze ~ ~ ~ {PersistenceRequired:1,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_blaze_tier1",CustomName:"\"焰型体\"",Attributes:[{Name:generic.max_health,Base:5.0},{Name:generic.attack_damage,Base:4.0},{Name:generic.movement_speed,Base:0.22}],Health:5.0f}

@@ -63,11 +63,19 @@ execute if score Azr_Story_Introduction rng1 matches 280 as @p[tag=azrPlayer] at
 
 execute positioned -79381 22 -385 run summon piglin ~ ~ ~ {CustomName:'"魔界居民"',PersistenceRequired:1b,Tags:["AzrielMob_StoryIntroduction_NPC1"],Invulnerable:1b,IsImmuneToZombification:1b,attributes:[{id:"movement_speed",base:0.0}],HandItems:[{},{}]}
 execute positioned -79387 24 -404 run summon piglin ~ ~ ~ {CustomName:'"魔界居民"',PersistenceRequired:1b,Tags:["AzrielMob_StoryIntroduction_NPC2"],Invulnerable:1b,IsImmuneToZombification:1b,attributes:[{id:"movement_speed",base:0.15}],HandItems:[{},{}]}
-execute positioned -79394 26 -386 run summon piglin ~ ~ ~ {CustomName:'"仓管"',PersistenceRequired:1b,Tags:["AzrielMob_StoryIntroduction_NPC3"],Invulnerable:1b,IsImmuneToZombification:1b,attributes:[{id:"movement_speed",base:0.0},{id:"attack_damage",base:0.0}],HandItems:[{count:1,id:"golden_sword"},{count:1,id:"shield"}]}
+execute positioned -79394 26 -386 run summon piglin ~ ~ ~ {CustomName:'"仓管"',PersistenceRequired:1b,Tags:["AzrielMob_StoryIntroduction_NPC3"],Invulnerable:1b,IsImmuneToZombification:1b,attributes:[{id:"movement_speed",base:0.0},{id:"attack_damage",base:0.0}],HandItems:[{count:1,id:"golden_sword"},{count:1,id:"shield"}],ArmorItems:[{},{},{count:1,id:"golden_chestplate"},{}]}
 
 execute positioned -79377 24 -399 run summon piglin ~ ~ ~ {CustomName:'"魔界居民"',PersistenceRequired:1b,Tags:["AzrielMob_StoryIntroduction_NPC_unused"],Invulnerable:1b,IsImmuneToZombification:1b,attributes:[{id:"movement_speed",base:0.15}],HandItems:[{},{}]}
 
-execute positioned -79407 30 -398 run summon piglin_brute ~ ~ ~ {CustomName:'"守卫"',PersistenceRequired:1b,Tags:["AzrielMob_StoryIntroduction_NPC4"],Invulnerable:1b,IsImmuneToZombification:1b,attributes:[{id:"movement_speed",base:0.0},{id:"attack_damage",base:0.0}],HandItems:[{},{}]}
+execute positioned -79407 30 -398 run summon piglin_brute ~ ~ ~ {CustomName:'"守卫"',PersistenceRequired:1b,Tags:["AzrielMob_StoryIntroduction_NPC4"],Invulnerable:1b,IsImmuneToZombification:1b,attributes:[{id:"movement_speed",base:0.0},{id:"attack_damage",base:0.0}],HandItems:[{count:1,id:"golden_axe"},{}]}
+execute positioned -79431 27 -395 run summon piglin_brute ~ ~ ~ {CustomName:'"守卫"',PersistenceRequired:1b,Tags:["AzrielMob_StoryIntroduction_NPC_unused"],Invulnerable:1b,IsImmuneToZombification:1b,attributes:[{id:"movement_speed",base:0.0},{id:"attack_damage",base:0.0}],HandItems:[{count:1,id:"golden_axe"},{}]}
+
+
+execute positioned -79438 30 -405 run summon strider ~ ~ ~ {CustomName:'"炽足兽"',PersistenceRequired:1b,Tags:["AzrielMob_StoryIntroduction_NPC_unused"],Invulnerable:1b,attributes:[{id:"movement_speed",base:0.15}]}
+execute positioned -79438 30 -405 run summon piglin ~ ~ ~ {CustomName:'"魔界居民"',PersistenceRequired:1b,Tags:["AzrielMob_StoryIntroduction_NPC_unused"],Invulnerable:1b,IsImmuneToZombification:1b,attributes:[{id:"movement_speed",base:0.15}],HandItems:[{},{}]}
+execute positioned -79438 30 -405 run summon piglin ~ ~ ~ {CustomName:'"魔界居民"',PersistenceRequired:1b,Tags:["AzrielMob_StoryIntroduction_NPC_unused"],Invulnerable:1b,IsImmuneToZombification:1b,attributes:[{id:"movement_speed",base:0.15}],HandItems:[{},{}],ArmorItems:[{count:1,id:"golden_boots"},{count:1,id:"golden_leggings"},{count:1,id:"golden_chestplate"},{}]}
+execute positioned -79488 30 -405 run summon piglin ~ ~ ~ {CustomName:'"魔界居民"',PersistenceRequired:1b,Tags:["AzrielMob_StoryIntroduction_NPC_unused"],Invulnerable:1b,IsImmuneToZombification:1b,attributes:[{id:"movement_speed",base:0.15}],HandItems:[{},{}],ArmorItems:[{},{},{count:1,id:"golden_chestplate"},{}]}
+execute positioned -79488 30 -405 run summon piglin ~ ~ ~ {CustomName:'"魔界居民"',PersistenceRequired:1b,Tags:["AzrielMob_StoryIntroduction_NPC_unused"],Invulnerable:1b,IsImmuneToZombification:1b,attributes:[{id:"movement_speed",base:0.15}],HandItems:[{count:1,id:"spyglass"},{}]}
 
 execute positioned -79385 22 -382 run summon hoglin ~ ~ ~ {PersistenceRequired:1b,Invulnerable:1b}
 execute positioned -79385 22 -382 run summon hoglin ~ ~ ~ {PersistenceRequired:1b,Invulnerable:1b,attributes:[{id:"scale",base:0.3}]}

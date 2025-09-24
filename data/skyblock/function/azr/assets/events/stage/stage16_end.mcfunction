@@ -4,7 +4,7 @@ scoreboard players set stage Azr_system 61
 scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..18}] Azr_skillPoints 19
 scoreboard players set stage_main_thread AzrTimerStack 0
 
-fill -79464 40 -431 -79469 31 -431 minecraft:crying_obsidian replace minecraft:obsidian
+#fill -79464 40 -431 -79469 31 -431 minecraft:crying_obsidian replace minecraft:obsidian
 fill -79464 40 -431 -79469 31 -431 minecraft:nether_portal[axis=x] replace minecraft:air
 fill -79420 22 -364 -79491 24 -503 minecraft:warped_nylium replace minecraft:crimson_nylium
 fill -79420 25 -364 -79491 27 -503 minecraft:warped_nylium replace minecraft:crimson_nylium

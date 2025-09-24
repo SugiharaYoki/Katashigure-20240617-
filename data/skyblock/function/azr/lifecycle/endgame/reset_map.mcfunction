@@ -483,6 +483,64 @@ setblock -79396 26 -384 air
 setblock -79396 26 -384 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:flint"}}
 
 
+#第16关地图预加载#
+setblock -79540 25 -406 birch_button[face=floor]
+
+fill -79464 40 -431 -79469 31 -431 minecraft:obsidian replace minecraft:crying_obsidian
+fill -79464 40 -431 -79469 31 -431 minecraft:nether_portal[axis=x] replace minecraft:air
+fill -79420 22 -364 -79491 24 -503 minecraft:crimson_nylium replace minecraft:warped_nylium
+fill -79420 25 -364 -79491 27 -503 minecraft:crimson_nylium replace minecraft:warped_nylium
+fill -79420 28 -364 -79491 30 -503 minecraft:crimson_nylium replace minecraft:warped_nylium
+fill -79420 31 -364 -79491 33 -503 minecraft:crimson_nylium replace minecraft:warped_nylium
+fill -79420 34 -364 -79491 36 -503 minecraft:crimson_nylium replace minecraft:warped_nylium
+fill -79420 37 -364 -79491 39 -503 minecraft:crimson_nylium replace minecraft:warped_nylium
+fill -79420 40 -364 -79491 42 -503 minecraft:crimson_nylium replace minecraft:warped_nylium
+fill -79420 43 -364 -79491 45 -503 minecraft:crimson_nylium replace minecraft:warped_nylium
+fill -79420 22 -364 -79491 24 -503 minecraft:crimson_roots replace minecraft:warped_roots
+fill -79420 25 -364 -79491 27 -503 minecraft:crimson_roots replace minecraft:warped_roots
+fill -79420 28 -364 -79491 30 -503 minecraft:crimson_roots replace minecraft:warped_roots
+fill -79420 31 -364 -79491 33 -503 minecraft:crimson_roots replace minecraft:warped_roots
+fill -79420 34 -364 -79491 36 -503 minecraft:crimson_roots replace minecraft:warped_roots
+fill -79420 37 -364 -79491 39 -503 minecraft:crimson_roots replace minecraft:warped_roots
+fill -79420 40 -364 -79491 42 -503 minecraft:crimson_roots replace minecraft:warped_roots
+fill -79420 43 -364 -79491 45 -503 minecraft:crimson_roots replace minecraft:warped_roots
+fill -79420 22 -364 -79491 24 -503 minecraft:crimson_fungus replace minecraft:warped_fungus
+fill -79420 25 -364 -79491 27 -503 minecraft:crimson_fungus replace minecraft:warped_fungus
+fill -79420 28 -364 -79491 30 -503 minecraft:crimson_fungus replace minecraft:warped_fungus
+fill -79420 31 -364 -79491 33 -503 minecraft:crimson_fungus replace minecraft:warped_fungus
+fill -79420 34 -364 -79491 36 -503 minecraft:crimson_fungus replace minecraft:warped_fungus
+fill -79420 37 -364 -79491 39 -503 minecraft:crimson_fungus replace minecraft:warped_fungus
+fill -79420 40 -364 -79491 42 -503 minecraft:crimson_fungus replace minecraft:warped_fungus
+fill -79420 43 -364 -79491 45 -503 minecraft:crimson_fungus replace minecraft:warped_fungus
+fill -79420 22 -364 -79491 24 -503 minecraft:nether_wart_block replace minecraft:warped_wart_block
+fill -79420 25 -364 -79491 27 -503 minecraft:nether_wart_block replace minecraft:warped_wart_block
+fill -79420 28 -364 -79491 30 -503 minecraft:nether_wart_block replace minecraft:warped_wart_block
+fill -79420 31 -364 -79491 33 -503 minecraft:nether_wart_block replace minecraft:warped_wart_block
+fill -79420 34 -364 -79491 36 -503 minecraft:nether_wart_block replace minecraft:warped_wart_block
+fill -79420 37 -364 -79491 39 -503 minecraft:nether_wart_block replace minecraft:warped_wart_block
+fill -79420 40 -364 -79491 42 -503 minecraft:nether_wart_block replace minecraft:warped_wart_block
+fill -79420 43 -364 -79491 45 -503 minecraft:nether_wart_block replace minecraft:warped_wart_block
+fill -79420 22 -364 -79491 24 -503 minecraft:lantern replace minecraft:soul_lantern
+fill -79420 25 -364 -79491 27 -503 minecraft:lantern replace minecraft:soul_lantern
+fill -79420 28 -364 -79491 30 -503 minecraft:lantern replace minecraft:soul_lantern
+fill -79420 31 -364 -79491 33 -503 minecraft:lantern replace minecraft:soul_lantern
+fill -79420 34 -364 -79491 36 -503 minecraft:lantern replace minecraft:soul_lantern
+fill -79420 37 -364 -79491 39 -503 minecraft:lantern replace minecraft:soul_lantern
+fill -79470 32 -429 -79463 35 -432 crimson_stem[axis=y] replace warped_stem
+fill -79468 31 -430 -79465 31 -432 crimson_stem[axis=x] replace warped_stem
+fill -79466 81 -422 -79467 88 -422 blackstone
+fill -79467 81 -399 -79465 88 -399 blackstone
+fill -79463 80 -377 -79469 80 -378 air
+fill -79468 80 -371 -79464 80 -371 air
+fill -79468 80 -373 -79464 80 -373 air
+fill -79463 82 -378 -79469 82 -378 barrier
+fill -79467 86 -341 -79465 86 -341 barrier
+fill -79519 42 -321 -79553 42 -355 air replace fire
+
+fill -79465 84 -342 -79467 84 -334 glass
+fill -79470 84 -337 -79462 84 -339 glass
+fill -79460 64 -343 -79471 64 -332 black_concrete replace air
+clone -79555 32 -352 -79517 32 -319 -79555 41 -352
 
 
 
