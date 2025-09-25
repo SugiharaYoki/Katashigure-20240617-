@@ -31,6 +31,9 @@ execute if score stage_main_thread AzrTimerStack matches 110..111 if entity @n[t
 #回秒
 execute if score stage_main_thread AzrTimerStack matches 112 run title @a[tag=azrShowDialog] actionbar {"text":"Wave Clear","color":"green"}
 execute if score stage_main_thread AzrTimerStack matches 113 run scoreboard players set wave Azr_system 2
+
+execute if score stage_main_thread AzrTimerStack matches 133 run scoreboard players set stage_main_thread AzrTimerStack 212
+
 execute if score stage_main_thread AzrTimerStack matches 213 run title @a[tag=azrShowDialog] actionbar {"text":"Stage 2 - Wave 2","color":"red"}
 execute if score stage_main_thread AzrTimerStack matches 214 positioned -79940 38 14 run function skyblock:azr/assets/mobs_new/sword
 execute if score stage_main_thread AzrTimerStack matches 214 positioned -79922 38 14 run function skyblock:azr/assets/mobs_new/sword
