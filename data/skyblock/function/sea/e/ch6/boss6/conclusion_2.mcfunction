@@ -336,7 +336,7 @@ execute if score SEA_ch6_event sea_4temp4 matches 5195 as @a[tag=SEAPT] at @s ru
 execute if score SEA_ch6_event sea_4temp4 matches 5195 as @a[tag=SEAPT] at @s run particle large_smoke ~ ~ ~ 2 2 2 0 50
 execute if score SEA_ch6_event sea_4temp4 matches 5195 as @a[tag=SEAPT] at @s run spawnpoint @a[distance=..2000,tag=SEAPT] 90216 242 -2182
 execute if score SEA_ch6_event sea_4temp4 matches 5270 as @e[tag=SEAboss6c] at @s run tp @s 90214 261 -2182
-execute if score SEA_ch6_event sea_4temp4 matches 5196 as @a[tag=SEAPT] at @s run tp @s 90216 131 -2182
+execute if score SEA_ch6_event sea_4temp4 matches 5196..5400 positioned 90216 131 -2182 as @a[tag=SEAPT,distance=80..] at @s run tp @s 90216 131 -2182
 execute if score SEA_ch6_event sea_4temp4 matches 5196..6000 as @a[tag=SEAPT,x=90210,y=110,z=-2190,dx=12,dy=16,dz=16] at @s run tp @s 90216 242 -2182
 execute if score SEA_ch6_event sea_4temp4 matches 5196 as @n[tag=SEAboss6c] at @s run effect give @s slow_falling 3 50 true
 execute if score SEA_ch6_event sea_4temp4 matches 5196 as @n[tag=SEAboss6c] at @s run data modify entity @s Health set value 600
