@@ -114,9 +114,9 @@ execute if block -79799 28 -284 minecraft:birch_button[powered=true] run functio
 execute if block -79713 47 -380 birch_button[powered=true] run function skyblock:azr/assets/events/stage/stage_object_prep
 
 #extra bonus - stage3α
-execute if block -79924 39 25 minecraft:birch_button[powered=true] positioned -79931 38 25 run function skyblock:azr/assets/mobs/zombie_t2_miner
-execute if block -79924 39 25 minecraft:birch_button[powered=true] positioned -79931 38 25 run function skyblock:azr/assets/mobs/zombie_t2_miner
-execute if block -79924 39 25 minecraft:birch_button[powered=true] run summon item -79931 38 25 {Item:{count:3,id:"minecraft:emerald"}}
+execute if block -79924 39 25 minecraft:birch_button[powered=true] positioned -79933 38 27 run summon marker ~ ~ ~ {Tags:["AzrielMob_summoner_skill_marker","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if block -79924 39 25 minecraft:birch_button[powered=true] positioned -79933 38 23 run summon marker ~ ~ ~ {Tags:["AzrielMob_summoner_skill_marker","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if block -79924 39 25 minecraft:birch_button[powered=true] run summon item -79931 38 25 {Item:{count:5,id:"minecraft:emerald"}}
 execute if block -79924 39 25 minecraft:birch_button[powered=true] run setblock -79924 39 25 air
 #extra bonus - stage3α - spider cave
 execute if block -79919 39 24 minecraft:birch_button[powered=true] run function skyblock:azr/assets/events/stage/dialog/southwest_cenic_path
