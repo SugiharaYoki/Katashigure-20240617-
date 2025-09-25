@@ -219,9 +219,10 @@ execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC10,di
 
 execute if score Azr_Story_Introduction rng1 matches 390..400 run scoreboard players set Azr_Story_Introduction rng1 390
 execute if score Azr_Story_Introduction rng1 matches ..400 if entity @p[tag=azrPlayer,x=-79468,y=31,z=-431,dx=4,dy=1,dz=1] run scoreboard players set Azr_Story_Introduction rng1 1001
+execute if score Azr_Story_Introduction rng1 matches 1001..1023 unless entity @p[tag=azrPlayer,x=-79468,y=31,z=-431,dx=4,dy=1,dz=1] run scoreboard players set Azr_Story_Introduction rng1 390
 
 
-execute if score Azr_Story_Introduction rng1 matches 1010 at @p[tag=azrPlayer] run tellraw @a[tag=azrShowDialog] [{"text":"温柔的声音：","color":"dark_purple"},{"text":"\n“因为，你终将毁灭神庭，也终将拯救它。”","color":"white"}]
+execute if score Azr_Story_Introduction rng1 matches 1024 at @p[tag=azrPlayer] run tellraw @a[tag=azrShowDialog] [{"text":"温柔的声音：","color":"dark_purple"},{"text":"\n“因为，你终将毁灭神庭，也终将拯救它。”","color":"white"}]
 
 execute if score Azr_Story_Introduction rng1 matches 1024 at @p[tag=azrPlayer] run tp @a[distance=..200] -79984.03 40.00 -14.01 facing -79983.03 40.00 -14.01
 
