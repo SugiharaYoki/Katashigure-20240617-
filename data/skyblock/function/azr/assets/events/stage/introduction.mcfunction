@@ -162,8 +162,8 @@ execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC7,dis
 execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC7,distance=..100,type=piglin,scores={rng1=2}] at @s if entity @p[tag=azrPlayer,distance=..4.2] run tellraw @a[tag=azrShowDialog] [{"text":"魔界居民：","color":"yellow"},{"text":"\n“恭候多时了，亚米大人已经交代过武器的事情。这把木剑和这把木斧都交给你。”","color":"white"}]
 execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC7,distance=..100,type=piglin,scores={rng1=2}] at @s if entity @p[tag=azrPlayer,distance=..4.2] run item replace entity @s weapon.mainhand with air
 execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC7,distance=..100,type=piglin,scores={rng1=2}] at @s if entity @p[tag=azrPlayer,distance=..4.2] run item replace entity @s weapon.offhand with air
-execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC7,distance=..100,type=piglin,scores={rng1=2}] at @s if entity @p[tag=azrPlayer,distance=..4.2] run give @a[tag=azrPlayer] wooden_sword 1
-execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC7,distance=..100,type=piglin,scores={rng1=2}] at @s if entity @p[tag=azrPlayer,distance=..4.2] run give @a[tag=azrPlayer] wooden_axe 1
+execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC7,distance=..100,type=piglin,scores={rng1=2}] at @s if entity @p[tag=azrPlayer,distance=..4.2] as @a[tag=azrPlayer] at @s run function skyblock:azr/assets/items/weapons/wooden_sword_normal
+execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC7,distance=..100,type=piglin,scores={rng1=2}] at @s if entity @p[tag=azrPlayer,distance=..4.2] as @a[tag=azrPlayer] at @s run function skyblock:azr/assets/items/weapons/wooden_axe_normal
 
 
 execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC8,distance=..100,type=piglin] at @s if entity @p[tag=azrPlayer,distance=..4.2] run scoreboard players add @s rng1 1
