@@ -236,8 +236,8 @@ execute if score Azr_Story_Introduction rng1 matches 1025 positioned -79984.03 4
 execute if score Azr_Story_Introduction rng1 matches 1025 positioned -79984.03 40.00 -14.01 run fill -79948 38 -16 -79948 42 -13 air destroy
 
 
-execute if score Azr_Story_Introduction rng1 matches 1025 positioned -79974 37 -15 run function skyblock:azr/assets/mobs_new/sword
-execute if score Azr_Story_Introduction rng1 matches 1025 positioned -79974 37 -13 run function skyblock:azr/assets/mobs_new/sword
+execute if score Azr_Story_Introduction rng1 matches 1025 positioned -79974 38 -15 run function skyblock:azr/assets/mobs_new/sword
+execute if score Azr_Story_Introduction rng1 matches 1025 positioned -79974 38 -13 run function skyblock:azr/assets/mobs_new/sword
 
 
 
