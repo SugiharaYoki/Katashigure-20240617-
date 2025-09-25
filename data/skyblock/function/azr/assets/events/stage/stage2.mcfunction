@@ -10,11 +10,11 @@ execute if score stage_main_thread AzrTimerStack matches 1..310 store result bos
 execute if score stage_main_thread AzrTimerStack matches 310 run bossbar remove azr:progress_bar_normal
 #刷怪时序
 #第一波
-execute if score stage_main_thread AzrTimerStack matches 2 run scoreboard players set stage_main_thread AzrTimerStack 22
-execute if score stage_main_thread AzrTimerStack matches 20 run playsound block.bell.use ambient @a[tag=azrShowDialog] -79887 50 164 100 0.7
-execute if score stage_main_thread AzrTimerStack matches 40 run playsound block.bell.use ambient @a[tag=azrShowDialog] -79887 50 164 100 0.7
-execute if score stage_main_thread AzrTimerStack matches 60 run playsound block.bell.use ambient @a[tag=azrShowDialog] -79887 50 164 100 0.7
-execute if score stage_main_thread AzrTimerStack matches 80 run playsound block.bell.use ambient @a[tag=azrShowDialog] -79887 50 164 100 0.7
+execute if score stage_main_thread AzrTimerStack matches 2 run scoreboard players set stage_main_thread AzrTimerStack 83
+execute if score stage_main_thread AzrTimerStack matches 84 run playsound block.bell.use ambient @a[tag=azrShowDialog] -79887 50 164 100 0.7
+execute if score stage_main_thread AzrTimerStack matches 88 run playsound block.bell.use ambient @a[tag=azrShowDialog] -79887 50 164 100 0.7
+execute if score stage_main_thread AzrTimerStack matches 92 run playsound block.bell.use ambient @a[tag=azrShowDialog] -79887 50 164 100 0.7
+execute if score stage_main_thread AzrTimerStack matches 96 run playsound block.bell.use ambient @a[tag=azrShowDialog] -79887 50 164 100 0.7
 execute if score stage_main_thread AzrTimerStack matches 100 run playsound block.bell.use ambient @a[tag=azrShowDialog] -79887 50 164 100 0.7
 execute if score stage_main_thread AzrTimerStack matches 90 run tellraw @a[tag=azrShowDialog] [{"text":"驭灵使：","color":"yellow"},{"text":"\n“挑战者到达第一关口，出兵迎战。”","color":"white"}]
 execute if score stage_main_thread AzrTimerStack matches 140 run tellraw @a[tag=azrShowDialog] [{"text":"哨兵剑士：","color":"yellow"},{"text":"\n“喂，对方是不是有些太强了？怎么回事？！”","color":"white"}]
