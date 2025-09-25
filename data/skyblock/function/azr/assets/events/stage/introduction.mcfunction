@@ -232,10 +232,11 @@ execute if score Azr_Story_Introduction rng1 matches 1024..1034 positioned -7998
 
 execute if score Azr_Story_Introduction rng1 matches 1025 positioned -79984.03 40.00 -14.01 run fill -79952 41 -20 -79955 38 -20 minecraft:quartz_block
 execute if score Azr_Story_Introduction rng1 matches 1025 positioned -79984.03 40.00 -14.01 run fill -79952 39 -20 -79955 39 -20 minecraft:quartz_bricks
+execute if score Azr_Story_Introduction rng1 matches 1025 positioned -79984.03 40.00 -14.01 run fill -79948 38 -16 -79948 42 -13 air destroy
 
 
-
-
+execute if score Azr_Story_Introduction rng1 matches 1025 positioned -79974 37 -15 run function skyblock:azr/assets/mobs_new/sword
+execute if score Azr_Story_Introduction rng1 matches 1025 positioned -79974 37 -13 run function skyblock:azr/assets/mobs_new/sword
 
 
 
