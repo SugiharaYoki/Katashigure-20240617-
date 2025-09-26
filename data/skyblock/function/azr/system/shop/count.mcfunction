@@ -1,11 +1,11 @@
-execute as @s store result score @s rng1 run clear @s iron_ingot 0
-execute as @s store result score @s rng2 run clear @s flint 0
-execute as @s store result score @s rng3 run clear @s bone 0
-execute as @s store result score @s rng4 run clear @s gunpowder 0
-execute as @s store result score @s rng5 run clear @s glistering_melon_slice 0
-execute as @s store result score @s rng6 run clear @s ink_sac 0
-execute as @s store result score @s rng7 run clear @s string 0
-execute as @s store result score @s rng8 run clear @s ghast_tear 0
-execute as @s store result score @s rng9 run clear @s chicken 0
-execute as @s store result score @s rng10 run clear @s beef 0
-execute as @s store result score @s rng11 run clear @s coal 0
+execute store result storage azr:shop ingredient.iron_ingot int 1.0 if items entity @s container.* iron_ingot
+execute store result storage azr:shop ingredient.flint int 1.0 if items entity @s container.* flint
+execute store result storage azr:shop ingredient.bone int 1.0 if items entity @s container.* bone
+execute store result storage azr:shop ingredient.gunpowder int 1.0 if items entity @s container.* gunpowder
+execute store result storage azr:shop ingredient.glistering_melon_slice int 1.0 if items entity @s container.* glistering_melon_slice
+execute store result storage azr:shop ingredient.ink_sac int 1.0 if items entity @s container.* ink_sac
+execute store result storage azr:shop ingredient.string int 1.0 if items entity @s container.* string
+execute store result storage azr:shop ingredient.ghast_tear int 1.0 if items entity @s container.* ghast_tear
+execute store result storage azr:shop ingredient.chicken int 1.0 if items entity @s container.* chicken
+execute store result storage azr:shop ingredient.beef int 1.0 if items entity @s container.* beef
+execute store result storage azr:shop ingredient.coal int 1.0 if items entity @s container.* coal
