@@ -122,6 +122,7 @@ execute if entity @a[tag=SEAPT,distance=..6] run scoreboard players add @s[score
 execute as @s[tag=SEA_ch4elevator_end,scores={sea_4temp1=..1300}] at @s run scoreboard players set @s[scores={sea_4temp1=..1301}] sea_4temp1 1302
 
 #修复了时间轴
+execute if entity @a[tag=SEAPT,distance=..6] as @s[tag=SEA_ch4elevator_end,scores={sea_4temp1=1310}] at @s run tag @s remove SEAyuehan_actable
 execute if entity @a[tag=SEAPT,distance=..6] as @s[tag=SEA_ch4elevator_end,scores={sea_4temp1=1310}] at @s if entity @n[tag=sc,scores={sea_player=1..}] run tellraw @a[distance=0..250] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“坏事了，这底下居然没有升降开关。”","color":"white","bold": false}]
 execute if entity @a[tag=SEAPT,distance=..6] as @s[tag=SEA_ch4elevator_end,scores={sea_4temp1=1310}] at @s run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
 
