@@ -11,4 +11,5 @@ give @a[tag=azrPlayer] flint 1
 give @a[tag=azrPlayer] iron_ingot 1
 give @a[tag=azrPlayer] string 1
 give @a[tag=azrPlayer] gunpowder 1
+give @a[tag=azrPlayer] pumpkin_pie 8
 
