@@ -57,7 +57,7 @@ fill -79942 40 3 -79944 38 3 minecraft:purple_stained_glass{name: "to Stage3 bat
 
 #Stage3 alpha
 fill -79935 43 34 -79935 45 34 minecraft:purple_stained_glass{name: "to Secret Room-1"}
-setblock -79928 38 33 minecraft:white_concrete{name: "Spider Room"}
+setblock -79928 38 33 minecraft:quartz_pillar{name: "Spider Room"}
 fill -79931 38 40 -79931 40 40 purple_stained_glass{name: "to Stage4 alpha"}
 
 #Stage3 beta
@@ -121,7 +121,7 @@ setblock -79956 39 -29 air
 setblock -28 143 -58 minecraft:air
 setblock -23 143 -53 air
 setblock -79937 39 -12 birch_button[facing=north,face=wall]
-setblock -79928 40 34 minecraft:white_concrete
+setblock -79928 40 34 minecraft:quartz_block
 setblock -79932 39 42 birch_button[face=wall,facing=east]
 setblock -79936 39 41 minecraft:gold_block
 setblock -79924 38 33 air
@@ -322,7 +322,8 @@ setblock -79897 38 51 minecraft:potted_flowering_azalea_bush
 #______________________________________________________________#
 fill -79519 42 -321 -79553 42 -355 air replace fire
 fill -79948 38 -13 -79948 42 -16 air
-fill -79928 38 34 -79928 39 35 white_concrete
+fill -79928 38 34 -79928 38 35 quartz_pillar
+fill -79928 39 34 -79928 39 35 quartz_bricks
 fill -79906 40 27 -79906 38 29 minecraft:purple_stained_glass
 fill -79932 38 104 -79930 42 104 minecraft:red_stained_glass
 fill -79932 38 72 -79930 42 72 air
