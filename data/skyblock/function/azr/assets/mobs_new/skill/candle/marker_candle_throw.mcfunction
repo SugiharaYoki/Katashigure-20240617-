@@ -2,6 +2,7 @@
 
 scoreboard players add @s rng1 1
 
+execute if block ~ ~-0.1 ~ air run tp @s ~ ~-0.1 ~
 
 execute if score @s rng1 matches 2.. rotated ~ 0 run particle end_rod ~ ~0.2 ~ 0 0 0 0.00 1
 
