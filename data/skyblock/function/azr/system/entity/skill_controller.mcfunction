@@ -2,5 +2,6 @@ execute if entity @s[tag=AzrielMob_summoner] if entity @a[tag=azrPlayer,distance
 execute if entity @s[tag=AzrielMob_shield] run function skyblock:azr/assets/mobs_new/skill/shield
 execute if entity @s[tag=AzrielMob_sword] run function skyblock:azr/assets/mobs_new/skill/sword
 execute if entity @s[tag=AzrielMob_smoke] run function skyblock:azr/assets/mobs_new/skill/smoke
+execute if entity @s[tag=AzrielMob_undead_pickaxe] run function skyblock:azr/assets/mobs_new/skill/undead_pickaxe
 
 execute if entity @s[tag=AzrielMob_elite_candle_angel] run function skyblock:azr/assets/mobs_new/skill/candle/core

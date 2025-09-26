@@ -9,6 +9,6 @@ execute if score @s[scores={AzrielMobLevel=5..}] rng1 matches 2 run item replace
 execute if score @s rng1 matches 2 run effect give @s weakness 13 0 true
 execute if score @s rng1 matches 200 run playsound minecraft:entity.evoker.cast_spell hostile @a ~ ~ ~ 1 1.3
 execute if score @s rng1 matches 200 run playsound minecraft:entity.vindicator.celebrate hostile @a ~ ~ ~ 1 1.0
-execute if score @s rng1 matches 200 run effect give @s slowness 3 0 true
+execute if score @s rng1 matches 200 run effect give @s slowness 3 0 false
 execute if score @s rng1 matches 260 run effect give @s speed 30 1 true
 
