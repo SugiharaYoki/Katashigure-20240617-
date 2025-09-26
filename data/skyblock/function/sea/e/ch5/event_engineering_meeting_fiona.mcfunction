@@ -86,19 +86,39 @@ execute if score SEA_ch5_event_engineering_fiona rng1 matches 55..700 run effect
 execute if score SEA_ch5_event_engineering_fiona rng1 matches 55..700 run effect give @a[tag=SEAPT] strength 3 2 false
 
 execute if score SEA_ch5_event_engineering_fiona rng7 matches 3 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
+execute if score SEA_ch5_event_engineering_fiona rng7 matches 3 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run bossbar add 9066601 "门禁系统 - 加载进度"
+execute if score SEA_ch5_event_engineering_fiona rng7 matches 3 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run bossbar set minecraft:9066601 color green
+execute if score SEA_ch5_event_engineering_fiona rng7 matches 3 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run bossbar set minecraft:9066601 players @a[tag=SEAPT]
+execute if score SEA_ch5_event_engineering_fiona rng7 matches 3 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run bossbar set minecraft:9066601 style progress
+execute if score SEA_ch5_event_engineering_fiona rng7 matches 3 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run bossbar set minecraft:9066601 max 100
 execute if score SEA_ch5_event_engineering_fiona rng7 matches 3 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if entity @n[tag=sc,scores={sea_player=1}] run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“就是这里，给我点时间，保护好我！”","color":"white","bold": false}]
 execute if score SEA_ch5_event_engineering_fiona rng7 matches 3 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if entity @n[tag=sc,scores={sea_player=2..}] run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“就是这里，给我点时间，来一个人保护好我！”","color":"white","bold": false}]
 
+execute if score SEA_ch5_event_engineering_fiona rng7 matches 20 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run bossbar set minecraft:9066601 value 5
+execute if score SEA_ch5_event_engineering_fiona rng7 matches 40 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run bossbar set minecraft:9066601 value 15
+execute if score SEA_ch5_event_engineering_fiona rng7 matches 60 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run bossbar set minecraft:9066601 value 25
+execute if score SEA_ch5_event_engineering_fiona rng7 matches 80 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run bossbar set minecraft:9066601 value 45
+
 execute if score SEA_ch5_event_engineering_fiona rng7 matches 92 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s as @p[tag=SEAPT] run tellraw @a[distance=0..250] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“还没好吗？！我的大小姐？？”","color":"white"}]
+
+execute if score SEA_ch5_event_engineering_fiona rng7 matches 98 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run bossbar set minecraft:9066601 value 55
 
 execute if score SEA_ch5_event_engineering_fiona rng7 matches 104 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
 execute if score SEA_ch5_event_engineering_fiona rng7 matches 104 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“我都说了我炸掉了半个通讯基站，现在这本地网络慢得像一坨屎，再等等我！”","color":"white","bold": false}]
 
+execute if score SEA_ch5_event_engineering_fiona rng7 matches 124 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run bossbar set minecraft:9066601 value 60
+execute if score SEA_ch5_event_engineering_fiona rng7 matches 144 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run bossbar set minecraft:9066601 value 70
+
 execute if score SEA_ch5_event_engineering_fiona rng7 matches 164 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
-execute if score SEA_ch5_event_engineering_fiona rng7 matches 164 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“快好了快好了，加载中！72%！”","color":"white","bold": false}]
+execute if score SEA_ch5_event_engineering_fiona rng7 matches 164 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“快好了快好了，加载中！80%！”","color":"white","bold": false}]
+
+execute if score SEA_ch5_event_engineering_fiona rng7 matches 164 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run bossbar set minecraft:9066601 value 80
+execute if score SEA_ch5_event_engineering_fiona rng7 matches 174 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run bossbar set minecraft:9066601 value 90
+execute if score SEA_ch5_event_engineering_fiona rng7 matches 184 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run bossbar set minecraft:9066601 value 100
 
 execute if score SEA_ch5_event_engineering_fiona rng7 matches 184 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
 execute if score SEA_ch5_event_engineering_fiona rng7 matches 184 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“那儿的铁门被我打开了，快去那里！！”","color":"white","bold": false}]
+execute if score SEA_ch5_event_engineering_fiona rng7 matches 184 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run bossbar set minecraft:9066601 name {"text":"菲尔娜已经开启西北侧的铁门！","color":"green","bold":true}
 
 execute if score SEA_ch5_event_engineering_fiona rng7 matches 194 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s as @p[tag=SEAPT] run tellraw @a[distance=0..250] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“我操，这么多敌人，你还继续深入敌巢是吗？！”","color":"white"}]
 
@@ -134,6 +154,7 @@ execute if score SEA_ch5_event_engineering_fiona rng1 matches 60..700 positioned
 execute if score SEA_ch5_event_engineering_fiona rng1 matches 780..790 run scoreboard players set SEA_ch5_event_engineering_fiona rng1 780
 execute if score SEA_ch5_event_engineering_fiona rng1 matches ..790 positioned 90101 122 41 if entity @a[tag=SEAPT,tag=!SEAPF,gamemode=!spectator,x=90101,y=122,z=41,dx=6,dy=5,dz=6] run scoreboard players set SEA_ch5_event_engineering_fiona rng1 800
 
+execute if score SEA_ch5_event_engineering_fiona rng1 matches 801 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run bossbar remove 9066601
 execute if score SEA_ch5_event_engineering_fiona rng1 matches 801 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
 execute if score SEA_ch5_event_engineering_fiona rng1 matches 801 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if score SEA_ch5_event_engineering_fiona rng8 matches ..4 run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“我去把门关了。你去确保没人跟过来。”","color":"white","bold": false}]
 execute if score SEA_ch5_event_engineering_fiona rng1 matches 801 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if score SEA_ch5_event_engineering_fiona rng8 matches 5.. run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“我把门关上，你给守好！！”","color":"white","bold": false}]
