@@ -156,14 +156,16 @@ execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC6,dis
 execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC6,distance=..100,type=piglin,scores={rng1=2}] at @s if entity @p[tag=azrPlayer,distance=..3.8] run playsound entity.piglin.ambient neutral @a ~ ~ ~ 1 1
 execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC6,distance=..100,type=piglin,scores={rng1=2}] at @s if entity @p[tag=azrPlayer,distance=..3.8] run tellraw @a[tag=azrShowDialog] [{"text":"猪灵居委会成员：","color":"yellow"},{"text":"\n“社区粮食分发。今天有剩的，给你点，伙计。”","color":"white"}]
 execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC6,distance=..100,type=piglin,scores={rng1=2}] at @s if entity @p[tag=azrPlayer,distance=..3.8] run give @a[tag=azrPlayer] pumpkin_pie 8
+execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC6,distance=..100,type=piglin,scores={rng1=2}] at @s if entity @p[tag=azrPlayer,distance=..3.8] run scoreboard players set $azrInitialPieGiven Azr_system 1
 
 execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC7,distance=..100,type=piglin] at @s if entity @p[tag=azrPlayer,distance=..4.2] run scoreboard players add @s rng1 1
 execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC7,distance=..100,type=piglin,scores={rng1=2}] at @s if entity @p[tag=azrPlayer,distance=..4.2] run playsound entity.piglin.celebrate neutral @a ~ ~ ~ 1 1
 execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC7,distance=..100,type=piglin,scores={rng1=2}] at @s if entity @p[tag=azrPlayer,distance=..4.2] run tellraw @a[tag=azrShowDialog] [{"text":"魔界居民：","color":"yellow"},{"text":"\n“恭候多时了，亚米大人已经交代过武器的事情。这把木剑和这把木斧都交给你。”","color":"white"}]
-execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC7,distance=..100,type=piglin,scores={rng1=2}] at @s if entity @p[tag=azrPlayer,distance=..4.2] run item replace entity @s weapon.mainhand with air
-execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC7,distance=..100,type=piglin,scores={rng1=2}] at @s if entity @p[tag=azrPlayer,distance=..4.2] run item replace entity @s weapon.offhand with air
+# execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC7,distance=..100,type=piglin,scores={rng1=2}] at @s if entity @p[tag=azrPlayer,distance=..4.2] run item replace entity @s weapon.mainhand with air
+# execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC7,distance=..100,type=piglin,scores={rng1=2}] at @s if entity @p[tag=azrPlayer,distance=..4.2] run item replace entity @s weapon.offhand with air
 execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC7,distance=..100,type=piglin,scores={rng1=2}] at @s if entity @p[tag=azrPlayer,distance=..4.2] as @a[tag=azrPlayer] at @s run function skyblock:azr/assets/items/weapons/wooden_sword_normal
 execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC7,distance=..100,type=piglin,scores={rng1=2}] at @s if entity @p[tag=azrPlayer,distance=..4.2] as @a[tag=azrPlayer] at @s run function skyblock:azr/assets/items/weapons/wooden_axe_normal
+execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC7,distance=..100,type=piglin,scores={rng1=2}] at @s if entity @p[tag=azrPlayer,distance=..4.2] run scoreboard players set $azrInitialWeaponGiven Azr_system 1
 
 
 execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC8,distance=..100,type=piglin] at @s if entity @p[tag=azrPlayer,distance=..4.2] run scoreboard players add @s rng1 1
@@ -216,6 +218,7 @@ execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC10,di
 execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC10,distance=..100,type=piglin_brute,scores={rng1=16}] at @s if entity @p[tag=azrPlayer,distance=..4.4] run give @a[tag=azrPlayer] flint
 execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC10,distance=..100,type=piglin_brute,scores={rng1=16}] at @s if entity @p[tag=azrPlayer,distance=..4.4] run give @a[tag=azrPlayer] string
 execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC10,distance=..100,type=piglin_brute,scores={rng1=16}] at @s if entity @p[tag=azrPlayer,distance=..4.4] run give @a[tag=azrPlayer] gunpowder
+execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC10,distance=..100,type=piglin_brute,scores={rng1=16}] at @s if entity @p[tag=azrPlayer,distance=..4.4] run scoreboard players set $azrInitialIngredientGiven Azr_system 1
 
 execute if score Azr_Story_Introduction rng1 matches 390..400 run scoreboard players set Azr_Story_Introduction rng1 390
 execute if score Azr_Story_Introduction rng1 matches ..400 if entity @p[tag=azrPlayer,x=-79468,y=31,z=-431,dx=4,dy=1,dz=1] run scoreboard players set Azr_Story_Introduction rng1 1001

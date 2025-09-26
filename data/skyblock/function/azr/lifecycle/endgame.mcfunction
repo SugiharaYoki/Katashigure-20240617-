@@ -16,6 +16,9 @@ scoreboard players reset $NetherShop Azr_system
 scoreboard players reset $ch4DoorOpen Azr_system
 scoreboard players reset $AzrBoss4MusicAlready Azr_system
 scoreboard players reset wave Azr_system
+scoreboard players reset $azrInitialWeaponGiven
+scoreboard players reset $azrInitialPieGiven
+scoreboard players reset $azrInitialIngredientGiven
 #tag @s remove Event18575A
 tag @a remove azrDead
 #______________________________________________________________#

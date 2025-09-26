@@ -20,6 +20,14 @@ execute at @s run tp @s @r[tag=azrPlayer,distance=1..]
 execute if score stage Azr_system matches 3.. run tellraw @s[tag=!hasLifeVitae] {"text":"你已永久解锁「生命手册」。记得收集绿宝石与素材，使用手册换取必要的武器与道具。"}
 execute if score stage Azr_system matches 3.. run tag @s[tag=!hasLifeVitae] add hasLifeVitae
 execute if score stage Azr_system matches 51..63 run tag @s add azrBanLifeVitae
+#初始资源
+execute if score $azrInitialPieGiven Azr_system matches 1 run give @s pumpkin_pie 8
+execute if score $azrInitialWeaponGiven Azr_system matches 1 run function skyblock:azr/assets/items/weapons/wooden_sword_normal
+execute if score $azrInitialWeaponGiven Azr_system matches 1 run function skyblock:azr/assets/items/weapons/wooden_axe_normal
+execute if score $azrInitialIngredientGiven Azr_system matches 1 run give @s iron_ingot
+execute if score $azrInitialIngredientGiven Azr_system matches 1 run give @s flint
+execute if score $azrInitialIngredientGiven Azr_system matches 1 run give @s string
+execute if score $azrInitialIngredientGiven Azr_system matches 1 run give @s gunpowder
 #10波后
 execute if entity @s[scores={Azr_wave=10..}] run item replace entity @s inventory.0 with rotten_flesh 3
 execute if entity @s[scores={Azr_wave=10..}] run item replace entity @s inventory.1 with stick 3
