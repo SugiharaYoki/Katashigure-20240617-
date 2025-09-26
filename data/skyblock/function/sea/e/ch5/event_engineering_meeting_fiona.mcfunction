@@ -68,6 +68,7 @@ execute if score SEA_ch5_event_engineering_fiona rng1 matches 68 as @n[tag=SEAfi
 
 execute if score SEA_ch5_event_engineering_fiona rng1 matches 68 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run scoreboard players add SEA_ch5_event_fiona_favor rng1 4
 
+execute if score SEA_ch5_event_engineering_fiona rng1 matches 100..151 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s positioned 90120 123 66 if entity @p[tag=SEAPT,tag=!SEAPF,distance=..7] run scoreboard players add SEA_ch5_event_engineering_fiona rng1 1
 execute if score SEA_ch5_event_engineering_fiona rng1 matches 152 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s as @p[tag=SEAPT] run tellraw @a[distance=0..250] [{"selector":"@s","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“你他妈捅了贼窝吗？他们倾巢出动杀你？！”","color":"white"}]
 
 execute if score SEA_ch5_event_engineering_fiona rng1 matches 164 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
