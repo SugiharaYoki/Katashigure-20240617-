@@ -41,7 +41,7 @@ scoreboard players add @s Azr_personalStartCount 1
 #azr-tags
 tag @s remove azrDead
 tag @s add azrPlayer
-tag @s add azrShopRefresh
+#tag @s add azrShopRefresh
 tag @s add azrNeverUsedShop
 
 #输出信息

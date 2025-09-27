@@ -47,11 +47,7 @@ execute if score stage_main_thread AzrTimerStack matches 72.. run fill -79934 40
 
 execute if score stage_main_thread AzrTimerStack matches 72.. run fill -79931 40 6 -79931 38 6 air destroy
 execute if score stage_main_thread AzrTimerStack matches 72.. run fill -79928 40 1 -79928 38 -1 air destroy
-execute if score stage_main_thread AzrTimerStack matches 72.. run tellraw @a[tag=azrShowDialog,tag=!hasLifeVitae] {"text":""}
-execute if score stage_main_thread AzrTimerStack matches 72.. run tellraw @a[tag=azrShowDialog,tag=!hasLifeVitae] {"text":"成功通过了第1关的挑战！"}
-execute if score stage_main_thread AzrTimerStack matches 72.. run tellraw @a[tag=azrShowDialog,tag=!hasLifeVitae] {"text":"在此之后还会有数不尽的敌人与关卡，请随时做好死亡的准备。"}
-execute if score stage_main_thread AzrTimerStack matches 72.. run tellraw @a[tag=azrPlayer,tag=!hasLifeVitae] {"text":"你已永久解锁「生命手册」。记得收集绿宝石与素材，使用手册换取必要的武器与道具。"}
-execute if score stage_main_thread AzrTimerStack matches 72.. run tellraw @a[tag=azrPlayer,tag=!hasLifeVitae] {"text":"打开背包用鼠标选定其以开启商店。"}
+execute if score stage_main_thread AzrTimerStack matches 72.. run tellraw @a[tag=azrShowDialog,tag=!hasLifeVitae] [{"text":"成功通过了第1关的挑战！你已永久解锁「生命手册」。"},{"text":"\n收集绿宝石与素材，使用手册换取必要的武器与道具。\n你可以打开背包用鼠标选定“生命手册”以开启商店，并使用聊天区域进行交互。"}]
 execute if score stage_main_thread AzrTimerStack matches 72.. run tag @a[tag=azrPlayer,tag=!hasLifeVitae] add hasLifeVitae
 execute if score stage_main_thread AzrTimerStack matches 72.. run tellraw @a[tag=azrShowDialog,tag=!hasLifeVitae] {"text":""}
 execute if score stage_main_thread AzrTimerStack matches 72.. run scoreboard players set stage Azr_system 3
