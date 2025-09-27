@@ -64,35 +64,12 @@ execute if score stage_main_thread AzrTimerStack matches 223 run playsound minec
 execute if score stage_main_thread AzrTimerStack matches 223 run fill -79928 38 34 -79928 39 35 air destroy
 execute if score stage_main_thread AzrTimerStack matches 223 run setblock -79928 40 34 air destroy
 execute if score stage_main_thread AzrTimerStack matches 223 run setblock -79928 38 33 air destroy
-execute if score stage_main_thread AzrTimerStack matches 223 run kill @e[x=-79900,y=130,z=0,distance=0..1000,type=item,nbt={Item:{id:"minecraft:white_concrete"}}]
-execute if score stage_main_thread AzrTimerStack matches 224..225 unless entity @n[tag=AzrielMob] run scoreboard players set stage_main_thread AzrTimerStack 226
-execute if score stage_main_thread AzrTimerStack matches 226 positioned -79926.0 38 34 run function skyblock:azr/assets/mobs/spider_t1_ruin
-execute if score stage_main_thread AzrTimerStack matches 227..231 unless entity @n[tag=AzrielMob] run scoreboard players set stage_main_thread AzrTimerStack 232
-execute if score stage_main_thread AzrTimerStack matches 226 positioned -79926.0 38 34 run function skyblock:azr/assets/mobs/spider_t1_swift
-execute if score stage_main_thread AzrTimerStack matches 232 positioned -79926.0 38 34 run function skyblock:azr/assets/mobs/spider_t1_ruin
-execute if score stage_main_thread AzrTimerStack matches 232 positioned -79926.0 38 34 run function skyblock:azr/assets/mobs/spider_t1_swift
-execute if score stage_main_thread AzrTimerStack matches 233..237 unless entity @n[tag=AzrielMob] run scoreboard players set stage_main_thread AzrTimerStack 238
-execute store result score #temp_rng Azr_system run random value 1..4
-execute if score stage_main_thread AzrTimerStack matches 238 if score #temp_rng Azr_system matches 1 positioned -79926.0 38 34 run function skyblock:azr/assets/mobs/spider_t1_dust
-execute if score stage_main_thread AzrTimerStack matches 238 if score #temp_rng Azr_system matches 2 positioned -79926.0 38 34 run function skyblock:azr/assets/mobs/spider_t1_ruin
-execute if score stage_main_thread AzrTimerStack matches 238 if score #temp_rng Azr_system matches 3 positioned -79926.0 38 34 run function skyblock:azr/assets/mobs/spider_t1_swift
-execute if score stage_main_thread AzrTimerStack matches 238 if score #temp_rng Azr_system matches 4 positioned -79926.0 38 34 run function skyblock:azr/assets/mobs/spider_t1_swift
-execute if score stage_main_thread AzrTimerStack matches 239 unless entity @n[tag=AzrielMob] run scoreboard players set stage_main_thread AzrTimerStack 240
-execute if score stage_main_thread AzrTimerStack matches 240 if score playerCount Azr_system matches 2.. if score #temp_rng Azr_system matches 1 positioned -79926.0 38 34 run function skyblock:azr/assets/mobs/spider_t1_dust
-execute if score stage_main_thread AzrTimerStack matches 240 if score playerCount Azr_system matches 2.. if score #temp_rng Azr_system matches 2 positioned -79926.0 38 34 run function skyblock:azr/assets/mobs/spider_t1_ruin
-execute if score stage_main_thread AzrTimerStack matches 240 if score playerCount Azr_system matches 2.. if score #temp_rng Azr_system matches 3 positioned -79926.0 38 34 run function skyblock:azr/assets/mobs/spider_t1_swift
-execute if score stage_main_thread AzrTimerStack matches 240 if score playerCount Azr_system matches 2.. if score #temp_rng Azr_system matches 4 positioned -79926.0 38 34 run function skyblock:azr/assets/mobs/spider_t1_swift
-execute if score stage_main_thread AzrTimerStack matches 241..242 unless entity @n[tag=AzrielMob] run scoreboard players set stage_main_thread AzrTimerStack 243
-execute if score stage_main_thread AzrTimerStack matches 243 if score #temp_rng Azr_system matches 1 positioned -79926.0 38 34 run function skyblock:azr/assets/mobs/spider_t1_dust
-execute if score stage_main_thread AzrTimerStack matches 243 if score #temp_rng Azr_system matches 2 positioned -79926.0 38 34 run function skyblock:azr/assets/mobs/spider_t1_ruin
-execute if score stage_main_thread AzrTimerStack matches 243 if score #temp_rng Azr_system matches 3 positioned -79926.0 38 34 run function skyblock:azr/assets/mobs/spider_t1_swift
-execute if score stage_main_thread AzrTimerStack matches 243 if score #temp_rng Azr_system matches 4 positioned -79926.0 38 34 run function skyblock:azr/assets/mobs/spider_t1_swift
-execute if score stage_main_thread AzrTimerStack matches 244..245 unless entity @n[tag=AzrielMob] run scoreboard players set stage_main_thread AzrTimerStack 246
-execute if score stage_main_thread AzrTimerStack matches 246 positioned -79926.0 38 34 run function skyblock:azr/assets/mobs/spider_t1_swift
-execute if score stage_main_thread AzrTimerStack matches 246 positioned -79926.0 38 34 run function skyblock:azr/assets/mobs/spider_t1_swift
-execute if score stage_main_thread AzrTimerStack matches 247..249 unless entity @n[tag=AzrielMob] run scoreboard players set stage_main_thread AzrTimerStack 250
-#回秒
-execute if score stage_main_thread AzrTimerStack matches 248..251 if entity @e[tag=AzrielMob,tag=!AzrielDecMob] run scoreboard players set stage_main_thread AzrTimerStack 248
+execute if score stage_main_thread AzrTimerStack matches 223 run kill @e[x=-79900,y=130,z=0,distance=0..1000,type=item,nbt={Item:{id:"minecraft:quartz_block"}}]
+execute if score stage_main_thread AzrTimerStack matches 223 run kill @e[x=-79900,y=130,z=0,distance=0..1000,type=item,nbt={Item:{id:"minecraft:quartz_bricks"}}]
+execute if score stage_main_thread AzrTimerStack matches 223 run kill @e[x=-79900,y=130,z=0,distance=0..1000,type=item,nbt={Item:{id:"minecraft:quartz_pillar"}}]
+
+
+
 #结束
 execute if score stage_main_thread AzrTimerStack matches 251 run playsound ambient.crimson_forest.loop ambient @a[tag=azrShowDialog] -78000 100 0 1000
 execute if score stage_main_thread AzrTimerStack matches 251 run playsound ambient.crimson_forest.mood ambient @a[tag=azrShowDialog] -78000 100 0 1000
@@ -102,7 +79,7 @@ execute if score stage_main_thread AzrTimerStack matches 251 run fill -79935 43 
 execute if score stage_main_thread AzrTimerStack matches 251 run scoreboard players set wave Azr_system 6
 execute if score stage_main_thread AzrTimerStack matches 251 run scoreboard players set stage Azr_system 7
 execute if score stage_main_thread AzrTimerStack matches 251 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage3
-execute if score stage_main_thread AzrTimerStack matches 251 run tellraw @a[scores={Azr_skillPoints=..2}] {"text":"永久升级 - 初始绿宝石数量 +5","color":"light_purple"}
+execute if score stage_main_thread AzrTimerStack matches 251 run tellraw @a[scores={Azr_skillPoints=..2}] {"text":"永久升级 - 开始新游戏时 绿宝石数量 +5","color":"light_purple"}
 execute if score stage_main_thread AzrTimerStack matches 251 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..2}] Azr_skillPoints 3
 execute if score stage_main_thread AzrTimerStack matches 251 run title @a[tag=azrShowDialog] actionbar {"text":"Stage Clear","color":"green"}
 execute if score stage_main_thread AzrTimerStack matches 251 run setblock -79931 43 42 air
