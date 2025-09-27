@@ -12,9 +12,9 @@ execute if score @s rng1 matches 50 run particle minecraft:soul_fire_flame ~ ~1 
 execute if score @s rng1 matches 50 run particle minecraft:enchant ~ ~0.5 ~ 1 0 0 0.2 20
 execute if score @s rng1 matches 50 run particle minecraft:enchant ~ ~0.5 ~ 0 0 1 0.2 20
 
-execute if score @s[scores={AzrielMobLevel=1..2}] rng1 matches 55 as @s at @s run summon marker ~ ~ ~ {Tags:["AzrielMob_summoner_skill_marker","AzrielMob_summon_delay","AzrielMob_level_1"]}
-execute if score @s[scores={AzrielMobLevel=3..4}] rng1 matches 55 as @s at @s run summon marker ~ ~ ~ {Tags:["AzrielMob_summoner_skill_marker","AzrielMob_summon_delay","AzrielMob_level_2"]}
-execute if score @s[scores={AzrielMobLevel=5..}] rng1 matches 55 as @s at @s run summon marker ~ ~ ~ {Tags:["AzrielMob_summoner_skill_marker","AzrielMob_summon_delay","AzrielMob_level_3"]}
+execute if score @s[scores={AzrielMobLevel=1..2}] rng1 matches 55 as @s at @s run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_undead","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score @s[scores={AzrielMobLevel=3..4}] rng1 matches 55 as @s at @s run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_undead","AzrielMob_summon_delay","AzrielMob_level_2"]}
+execute if score @s[scores={AzrielMobLevel=5..}] rng1 matches 55 as @s at @s run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_undead","AzrielMob_summon_delay","AzrielMob_level_3"]}
 execute if score @s rng1 matches 55 as @s at @s positioned 0.0 0 0.0 run summon marker ^ ^0.12 ^-0.3 {Tags:["AzrielMob_backjump_marker"]}
 execute if score @s rng1 matches 55 as @s at @s run data modify entity @s Motion set from entity @n[type=marker,tag=AzrielMob_backjump_marker] Pos
 execute if score @s rng1 matches 55 as @s at @s run kill @e[type=marker,tag=AzrielMob_backjump_marker]

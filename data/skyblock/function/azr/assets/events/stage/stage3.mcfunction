@@ -14,8 +14,8 @@ execute if score stage_main_thread AzrTimerStack matches 20 positioned -79927 38
 execute if score stage_main_thread AzrTimerStack matches 40 positioned -79927 38 25 run function skyblock:azr/assets/mobs_new/shield
 execute if score stage_main_thread AzrTimerStack matches 60 positioned -79927 38 25 run function skyblock:azr/assets/mobs_new/shield
 execute if score stage_main_thread AzrTimerStack matches 65 positioned -79927 38 25 run function skyblock:azr/assets/mobs_new/undead_pickaxe
-execute if score stage_main_thread AzrTimerStack matches 3 positioned -79930 38 38 run summon marker ~ ~ ~ {Tags:["AzrielMob_summoner_skill_marker","AzrielMob_summon_delay","AzrielMob_level_1"]}
-execute if score stage_main_thread AzrTimerStack matches 3 positioned -79932 38 38 run summon marker ~ ~ ~ {Tags:["AzrielMob_summoner_skill_marker","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score stage_main_thread AzrTimerStack matches 3 positioned -79930 38 38 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_undead","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score stage_main_thread AzrTimerStack matches 3 positioned -79932 38 38 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_undead","AzrielMob_summon_delay","AzrielMob_level_1"]}
 
 execute if score stage_main_thread AzrTimerStack matches 30 positioned -79931 42 40 run function skyblock:azr/assets/mobs_new/smoke
 execute if score stage_main_thread AzrTimerStack matches 55 positioned -79931 42 40 run function skyblock:azr/assets/mobs_new/smoke
