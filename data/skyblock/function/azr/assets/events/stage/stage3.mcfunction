@@ -56,35 +56,55 @@ execute if score stage_main_thread AzrTimerStack matches 160 run scoreboard play
 #第三波
 execute if score stage_main_thread AzrTimerStack matches 180 run title @a[tag=azrShowDialog] actionbar {"text":"Stage 3 - Wave 3","color":"red"}
 
+execute if score stage_main_thread AzrTimerStack matches 181 positioned -79930 38 38 run tellraw @a[tag=azrShowDialog] [{"text":"哨兵剑士：","color":"yellow"},{"text":"\n“躲在蜘蛛后面进攻，我可怕被砍疼了。”","color":"white"}]
+execute if score stage_main_thread AzrTimerStack matches 181 positioned -79927 38 25 run function skyblock:azr/assets/mobs_new/spider_giant
+execute if score stage_main_thread AzrTimerStack matches 189 positioned -79927 38 25 run function skyblock:azr/assets/mobs_new/spider_giant
+execute if score stage_main_thread AzrTimerStack matches 187 positioned -79932 38 38 run function skyblock:azr/assets/mobs_new/sword
+execute if score stage_main_thread AzrTimerStack matches 189 positioned -79932 38 38 run function skyblock:azr/assets/mobs_new/sword
+execute if score stage_main_thread AzrTimerStack matches 191 positioned -79932 38 38 run function skyblock:azr/assets/mobs_new/sword
+execute if score stage_main_thread AzrTimerStack matches 187..191 positioned -79932 38 38 run effect give @e[tag=AzrielMob_sword,distance=..9] resistance 2 5 true
+execute if score stage_main_thread AzrTimerStack matches 192 positioned -79932 38 38 as @e[tag=AzrielMob_spider_giant,distance=..30] at @s run damage @s 1 generic by @n[tag=AzrielMob_sword]
+execute if score stage_main_thread AzrTimerStack matches 212 positioned -79932 38 38 as @e[tag=AzrielMob_spider_giant,distance=..30] at @s run damage @s 1 generic by @n[tag=AzrielMob_sword]
+execute if score stage_main_thread AzrTimerStack matches 232 positioned -79932 38 38 as @e[tag=AzrielMob_spider_giant,distance=..30] at @s run damage @s 1 generic by @n[tag=AzrielMob_sword]
+execute if score stage_main_thread AzrTimerStack matches 226 positioned -79930 38 38 run tellraw @a[tag=azrShowDialog] [{"text":"哨兵剑士：","color":"yellow"},{"text":"\n“怎、……怎么回事？！啊啊啊！”","color":"white"}]
+execute if score stage_main_thread AzrTimerStack matches 210 positioned -79930 38 38 run tellraw @a[tag=azrShowDialog] [{"text":"哨兵剑士：","color":"yellow"},{"text":"\n“蜘蛛的样子不对劲！”","color":"white"}]
+execute if score stage_main_thread AzrTimerStack matches 221..222 if entity @n[tag=AzrielMob_spider_giant] run scoreboard players set stage_main_thread AzrTimerStack 221
 
 
 #碎墙
-execute if score stage_main_thread AzrTimerStack matches 223 run playsound minecraft:entity.spider.ambient master @a -79926.0 38 34 1 0.7
-execute if score stage_main_thread AzrTimerStack matches 223 run playsound minecraft:block.basalt.break master @a -79926.0 38 34 10 0.1
-execute if score stage_main_thread AzrTimerStack matches 223 run fill -79928 38 34 -79928 39 35 air destroy
-execute if score stage_main_thread AzrTimerStack matches 223 run setblock -79928 40 34 air destroy
-execute if score stage_main_thread AzrTimerStack matches 223 run setblock -79928 38 33 air destroy
-execute if score stage_main_thread AzrTimerStack matches 223 run kill @e[x=-79900,y=130,z=0,distance=0..1000,type=item,nbt={Item:{id:"minecraft:quartz_block"}}]
-execute if score stage_main_thread AzrTimerStack matches 223 run kill @e[x=-79900,y=130,z=0,distance=0..1000,type=item,nbt={Item:{id:"minecraft:quartz_bricks"}}]
-execute if score stage_main_thread AzrTimerStack matches 223 run kill @e[x=-79900,y=130,z=0,distance=0..1000,type=item,nbt={Item:{id:"minecraft:quartz_pillar"}}]
+execute if score stage_main_thread AzrTimerStack matches 225 run playsound minecraft:entity.spider.ambient master @a -79926.0 38 34 1 0.7
+execute if score stage_main_thread AzrTimerStack matches 225 run playsound minecraft:block.basalt.break master @a -79926.0 38 34 10 0.1
+execute if score stage_main_thread AzrTimerStack matches 225 run fill -79928 38 34 -79928 39 35 air destroy
+execute if score stage_main_thread AzrTimerStack matches 225 run setblock -79928 40 34 air destroy
+execute if score stage_main_thread AzrTimerStack matches 225 run setblock -79928 38 33 air destroy
+execute if score stage_main_thread AzrTimerStack matches 225 run kill @e[x=-79900,y=130,z=0,distance=0..1000,type=item,nbt={Item:{id:"minecraft:quartz_block"}}]
+execute if score stage_main_thread AzrTimerStack matches 225 run kill @e[x=-79900,y=130,z=0,distance=0..1000,type=item,nbt={Item:{id:"minecraft:quartz_bricks"}}]
+execute if score stage_main_thread AzrTimerStack matches 225 run kill @e[x=-79900,y=130,z=0,distance=0..1000,type=item,nbt={Item:{id:"minecraft:quartz_pillar"}}]
 
+execute if score stage_main_thread AzrTimerStack matches 223 positioned -79926 38 34 run function skyblock:azr/assets/mobs_new/spider_mini
+execute if score stage_main_thread AzrTimerStack matches 223 positioned -79926 38 34 run function skyblock:azr/assets/mobs_new/spider_mini
+execute if score stage_main_thread AzrTimerStack matches 223 positioned -79926 38 34 run function skyblock:azr/assets/mobs_new/spider_mini
+execute if score stage_main_thread AzrTimerStack matches 223 positioned -79926 38 34 run function skyblock:azr/assets/mobs_new/spider_mini
+execute if score stage_main_thread AzrTimerStack matches 223 positioned -79926 38 34 run function skyblock:azr/assets/mobs_new/barrier_maintainer
+execute if score stage_main_thread AzrTimerStack matches 224 positioned -79932 38 38 as @e[tag=AzrielMob_spider_mini,distance=..30] at @s run damage @s 0 generic by @n[tag=AzrielMob_barrier_maintainer]
 
+execute if score stage_main_thread AzrTimerStack matches 228..229 if entity @n[tag=AzrielMob_barrier_maintainer] run scoreboard players set stage_main_thread AzrTimerStack 228
 
 #结束
-execute if score stage_main_thread AzrTimerStack matches 251 run playsound ambient.crimson_forest.loop ambient @a[tag=azrShowDialog] -78000 100 0 1000
-execute if score stage_main_thread AzrTimerStack matches 251 run playsound ambient.crimson_forest.mood ambient @a[tag=azrShowDialog] -78000 100 0 1000
-execute if score stage_main_thread AzrTimerStack matches 251 run playsound ambient.crimson_forest.additions ambient @a[tag=azrShowDialog] -78000 100 0 1000
-execute if score stage_main_thread AzrTimerStack matches 251 run fill -79931 38 40 -79931 40 40 air destroy
-execute if score stage_main_thread AzrTimerStack matches 251 run fill -79935 43 34 -79935 45 34 air destroy
-execute if score stage_main_thread AzrTimerStack matches 251 run scoreboard players set wave Azr_system 6
-execute if score stage_main_thread AzrTimerStack matches 251 run scoreboard players set stage Azr_system 7
-execute if score stage_main_thread AzrTimerStack matches 251 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage3
-execute if score stage_main_thread AzrTimerStack matches 251 run tellraw @a[scores={Azr_skillPoints=..2}] {"text":"永久升级 - 开始新游戏时 绿宝石数量 +5","color":"light_purple"}
-execute if score stage_main_thread AzrTimerStack matches 251 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..2}] Azr_skillPoints 3
-execute if score stage_main_thread AzrTimerStack matches 251 run title @a[tag=azrShowDialog] actionbar {"text":"Stage Clear","color":"green"}
-execute if score stage_main_thread AzrTimerStack matches 251 run setblock -79931 43 42 air
-execute if score stage_main_thread AzrTimerStack matches 251 run setblock -79930 43 41 air
-execute if score stage_main_thread AzrTimerStack matches 251 run setblock -79932 43 41 air
-execute if score stage_main_thread AzrTimerStack matches 251 run setblock -79931 42 42 air
-execute if score stage_main_thread AzrTimerStack matches 251 run setblock -79930 42 41 air
-execute if score stage_main_thread AzrTimerStack matches 251 run setblock -79932 42 41 air
+execute if score stage_main_thread AzrTimerStack matches 232 run playsound ambient.crimson_forest.loop ambient @a[tag=azrShowDialog] -78000 100 0 1000
+execute if score stage_main_thread AzrTimerStack matches 232 run playsound ambient.crimson_forest.mood ambient @a[tag=azrShowDialog] -78000 100 0 1000
+execute if score stage_main_thread AzrTimerStack matches 232 run playsound ambient.crimson_forest.additions ambient @a[tag=azrShowDialog] -78000 100 0 1000
+execute if score stage_main_thread AzrTimerStack matches 232 run fill -79931 38 40 -79931 40 40 air destroy
+execute if score stage_main_thread AzrTimerStack matches 232 run fill -79935 43 34 -79935 45 34 air destroy
+execute if score stage_main_thread AzrTimerStack matches 232 run scoreboard players set wave Azr_system 6
+execute if score stage_main_thread AzrTimerStack matches 232 run scoreboard players set stage Azr_system 7
+execute if score stage_main_thread AzrTimerStack matches 232 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage3
+execute if score stage_main_thread AzrTimerStack matches 232 run tellraw @a[scores={Azr_skillPoints=..2}] {"text":"永久升级 - 开始新游戏时 绿宝石数量 +5","color":"light_purple"}
+execute if score stage_main_thread AzrTimerStack matches 232 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..2}] Azr_skillPoints 3
+execute if score stage_main_thread AzrTimerStack matches 232 run title @a[tag=azrShowDialog] actionbar {"text":"Stage Clear","color":"green"}
+execute if score stage_main_thread AzrTimerStack matches 232 run setblock -79931 43 42 air
+execute if score stage_main_thread AzrTimerStack matches 232 run setblock -79930 43 41 air
+execute if score stage_main_thread AzrTimerStack matches 232 run setblock -79932 43 41 air
+execute if score stage_main_thread AzrTimerStack matches 232 run setblock -79931 42 42 air
+execute if score stage_main_thread AzrTimerStack matches 232 run setblock -79930 42 41 air
+execute if score stage_main_thread AzrTimerStack matches 232 run setblock -79932 42 41 air
