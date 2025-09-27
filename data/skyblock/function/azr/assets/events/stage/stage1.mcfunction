@@ -41,7 +41,10 @@ execute if score stage_main_thread AzrTimerStack matches 65 positioned -79925 38
 execute if score stage_main_thread AzrTimerStack matches 65 positioned -79937 38 13 run function skyblock:azr/assets/mobs_new/undead
 execute if score stage_main_thread AzrTimerStack matches 65 positioned -79937 38 15 run function skyblock:azr/assets/mobs_new/undead
 execute if score stage_main_thread AzrTimerStack matches 65 run title @a[tag=azrShowDialog] actionbar {"text":"Stage Clear","color":"green"}
-execute if score stage_main_thread AzrTimerStack matches 72.. if score playerCount Azr_system matches 3.. run fill -79934 40 -1 -79934 38 1 air destroy
+
+#execute if score stage_main_thread AzrTimerStack matches 72.. if score playerCount Azr_system matches 3.. run fill -79934 40 -1 -79934 38 1 air destroy
+execute if score stage_main_thread AzrTimerStack matches 72.. run fill -79934 40 -1 -79934 38 1 air destroy
+
 execute if score stage_main_thread AzrTimerStack matches 72.. run fill -79931 40 6 -79931 38 6 air destroy
 execute if score stage_main_thread AzrTimerStack matches 72.. run fill -79928 40 1 -79928 38 -1 air destroy
 execute if score stage_main_thread AzrTimerStack matches 72.. run tellraw @a[tag=azrShowDialog,tag=!hasLifeVitae] {"text":""}
