@@ -59,7 +59,7 @@ execute if score stage_main_thread AzrTimerStack matches 284 run playsound ambie
 execute if score stage_main_thread AzrTimerStack matches 284 run playsound ambient.crimson_forest.mood ambient @a[tag=azrShowDialog] -78000 100 0 1000
 execute if score stage_main_thread AzrTimerStack matches 284 run playsound ambient.crimson_forest.additions ambient @a[tag=azrShowDialog] -78000 100 0 1000
 execute if score stage_main_thread AzrTimerStack matches 284 run fill -79931 38 22 -79931 40 22 barrier destroy
-
+execute if score stage_main_thread AzrTimerStack matches 284..297 positioned -79931 38 14 run function skyblock:azr/assets/events/effects/player_magic_release
 #execute if score stage_main_thread AzrTimerStack matches 284 if score playerCount Azr_system matches 3.. run fill -79942 40 3 -79944 38 3 air destroy
 execute if score stage_main_thread AzrTimerStack matches 284 run fill -79942 40 3 -79944 38 3 air destroy
 
