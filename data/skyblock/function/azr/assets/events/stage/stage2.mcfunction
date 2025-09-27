@@ -50,7 +50,7 @@ execute if score stage_main_thread AzrTimerStack matches 244 positioned -79935 3
 execute if score stage_main_thread AzrTimerStack matches 264 positioned -79922 38 14 run function skyblock:azr/assets/mobs_new/summoner
 execute if score stage_main_thread AzrTimerStack matches 273 run tellraw @a[tag=azrShowDialog] [{"text":"驭灵使：","color":"yellow"},{"text":"\n“直接……？可是为什么？现在是这么紧急的情况吗？”","color":"white"}]
 execute if score stage_main_thread AzrTimerStack matches 274..275 if entity @n[tag=AzrielMob_summoner] run scoreboard players set stage_main_thread AzrTimerStack 274
-execute if score stage_main_thread AzrTimerStack matches 278 positioned -79931 38 14 run function skyblock:azr/assets/mobs_new/barrier_maintainer
+execute if score stage_main_thread AzrTimerStack matches 278 positioned -79931 38 14 run function skyblock:azr/assets/mobs_new/barrier_maintainer {id:null}
 
 #回秒
 execute if score stage_main_thread AzrTimerStack matches 280..281 if entity @e[tag=AzrielMob_barrier_maintainer] run scoreboard players set stage_main_thread AzrTimerStack 280

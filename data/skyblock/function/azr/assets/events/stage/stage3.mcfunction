@@ -10,9 +10,12 @@ execute if score stage_main_thread AzrTimerStack matches 1..251 store result bos
 execute if score stage_main_thread AzrTimerStack matches 251 run bossbar remove azr:progress_bar_normal
 #刷怪时序
 #第一波
-execute if score stage_main_thread AzrTimerStack matches 20 positioned -79927 38 25 run function skyblock:azr/assets/mobs_new/shield
-execute if score stage_main_thread AzrTimerStack matches 40 positioned -79927 38 25 run function skyblock:azr/assets/mobs_new/shield
-execute if score stage_main_thread AzrTimerStack matches 60 positioned -79927 38 25 run function skyblock:azr/assets/mobs_new/shield
+execute if score stage_main_thread AzrTimerStack matches 20 positioned -79927 38 25 run function skyblock:azr/assets/mobs_new/undead
+execute if score stage_main_thread AzrTimerStack matches 30 positioned -79927 38 25 run function skyblock:azr/assets/mobs_new/shield
+execute if score stage_main_thread AzrTimerStack matches 40 positioned -79927 38 25 run function skyblock:azr/assets/mobs_new/undead
+execute if score stage_main_thread AzrTimerStack matches 50 positioned -79927 38 25 run function skyblock:azr/assets/mobs_new/shield
+execute if score stage_main_thread AzrTimerStack matches 60 positioned -79927 38 25 run function skyblock:azr/assets/mobs_new/undead
+
 execute if score stage_main_thread AzrTimerStack matches 65 positioned -79927 38 25 run function skyblock:azr/assets/mobs_new/undead_pickaxe
 execute if score stage_main_thread AzrTimerStack matches 3 positioned -79930 38 38 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_undead","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute if score stage_main_thread AzrTimerStack matches 3 positioned -79932 38 38 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_undead","AzrielMob_summon_delay","AzrielMob_level_1"]}
@@ -42,7 +45,7 @@ execute if score stage_main_thread AzrTimerStack matches 145 positioned -79930 3
 
 execute if score stage_main_thread AzrTimerStack matches 146..147 if entity @n[tag=AzrielMob_spider_giant] run scoreboard players set stage_main_thread AzrTimerStack 146
 
-execute if score stage_main_thread AzrTimerStack matches 155 positioned -79930 38 38 run tellraw @a[tag=azrShowDialog] [{"text":"你：","color":"aqua"},{"text":"\n（有哪里不对劲，这不是任何能被称得上“神圣”的气息）","color":"white"}]
+execute if score stage_main_thread AzrTimerStack matches 163 positioned -79930 38 38 run tellraw @a[tag=azrShowDialog] [{"text":"你：","color":"aqua"},{"text":"\n（有哪里不对劲，这不是任何能被称得上“神圣”的气息）","color":"white"}]
 
 
 execute if score stage_main_thread AzrTimerStack matches 149..151 run playsound minecraft:ambient.soul_sand_valley.mood master @a -79926 38 34 1000 1.3
@@ -59,15 +62,15 @@ execute if score stage_main_thread AzrTimerStack matches 180 run title @a[tag=az
 execute if score stage_main_thread AzrTimerStack matches 181 positioned -79930 38 38 run tellraw @a[tag=azrShowDialog] [{"text":"哨兵剑士：","color":"yellow"},{"text":"\n“躲在蜘蛛后面进攻，我可怕被砍疼了。”","color":"white"}]
 execute if score stage_main_thread AzrTimerStack matches 181 positioned -79927 38 25 run function skyblock:azr/assets/mobs_new/spider_giant
 execute if score stage_main_thread AzrTimerStack matches 189 positioned -79927 38 25 run function skyblock:azr/assets/mobs_new/spider_giant
-execute if score stage_main_thread AzrTimerStack matches 187 positioned -79932 38 38 run function skyblock:azr/assets/mobs_new/sword
-execute if score stage_main_thread AzrTimerStack matches 189 positioned -79932 38 38 run function skyblock:azr/assets/mobs_new/sword
-execute if score stage_main_thread AzrTimerStack matches 191 positioned -79932 38 38 run function skyblock:azr/assets/mobs_new/sword
-execute if score stage_main_thread AzrTimerStack matches 187..191 positioned -79932 38 38 run effect give @e[tag=AzrielMob_sword,distance=..9] resistance 2 5 true
-execute if score stage_main_thread AzrTimerStack matches 192 positioned -79932 38 38 as @e[tag=AzrielMob_spider_giant,distance=..30] at @s run damage @s 1 generic by @n[tag=AzrielMob_sword]
-execute if score stage_main_thread AzrTimerStack matches 212 positioned -79932 38 38 as @e[tag=AzrielMob_spider_giant,distance=..30] at @s run damage @s 1 generic by @n[tag=AzrielMob_sword]
-execute if score stage_main_thread AzrTimerStack matches 232 positioned -79932 38 38 as @e[tag=AzrielMob_spider_giant,distance=..30] at @s run damage @s 1 generic by @n[tag=AzrielMob_sword]
-execute if score stage_main_thread AzrTimerStack matches 226 positioned -79930 38 38 run tellraw @a[tag=azrShowDialog] [{"text":"哨兵剑士：","color":"yellow"},{"text":"\n“怎、……怎么回事？！啊啊啊！”","color":"white"}]
-execute if score stage_main_thread AzrTimerStack matches 210 positioned -79930 38 38 run tellraw @a[tag=azrShowDialog] [{"text":"哨兵剑士：","color":"yellow"},{"text":"\n“蜘蛛的样子不对劲！”","color":"white"}]
+execute if score stage_main_thread AzrTimerStack matches 187 positioned -79927 38 25 run function skyblock:azr/assets/mobs_new/sword
+execute if score stage_main_thread AzrTimerStack matches 189 positioned -79927 38 25 run function skyblock:azr/assets/mobs_new/sword
+execute if score stage_main_thread AzrTimerStack matches 191 positioned -79927 38 25 run function skyblock:azr/assets/mobs_new/sword
+execute if score stage_main_thread AzrTimerStack matches 187..191 positioned -79927 38 25 run effect give @e[tag=AzrielMob_sword,distance=..9] resistance 2 5 true
+execute if score stage_main_thread AzrTimerStack matches 193 positioned -79927 38 25 as @e[tag=AzrielMob_spider_giant,distance=..30] at @s run damage @s 1 generic by @n[tag=AzrielMob_sword]
+execute if score stage_main_thread AzrTimerStack matches 214 positioned -79927 38 25 as @e[tag=AzrielMob_spider_giant,distance=..30] at @s run damage @s 1 generic by @n[tag=AzrielMob_sword]
+execute if score stage_main_thread AzrTimerStack matches 235 positioned -79927 38 25 as @e[tag=AzrielMob_spider_giant,distance=..30] at @s run damage @s 1 generic by @n[tag=AzrielMob_sword]
+execute if score stage_main_thread AzrTimerStack matches 227 positioned -79927 38 25 run tellraw @a[tag=azrShowDialog] [{"text":"哨兵剑士：","color":"yellow"},{"text":"\n“怎、……怎么回事？！啊啊啊！”","color":"white"}]
+execute if score stage_main_thread AzrTimerStack matches 209 positioned -79927 38 25 run tellraw @a[tag=azrShowDialog] [{"text":"哨兵剑士：","color":"yellow"},{"text":"\n“蜘蛛的样子不对劲！”","color":"white"}]
 execute if score stage_main_thread AzrTimerStack matches 221..222 if entity @n[tag=AzrielMob_spider_giant] run scoreboard players set stage_main_thread AzrTimerStack 221
 
 
@@ -85,7 +88,7 @@ execute if score stage_main_thread AzrTimerStack matches 223 positioned -79926 3
 execute if score stage_main_thread AzrTimerStack matches 223 positioned -79926 38 34 run function skyblock:azr/assets/mobs_new/spider_mini
 execute if score stage_main_thread AzrTimerStack matches 223 positioned -79926 38 34 run function skyblock:azr/assets/mobs_new/spider_mini
 execute if score stage_main_thread AzrTimerStack matches 223 positioned -79926 38 34 run function skyblock:azr/assets/mobs_new/spider_mini
-execute if score stage_main_thread AzrTimerStack matches 223 positioned -79926 38 34 run function skyblock:azr/assets/mobs_new/barrier_maintainer
+execute if score stage_main_thread AzrTimerStack matches 223 positioned -79926 38 34 run function skyblock:azr/assets/mobs_new/barrier_maintainer {id:null}
 execute if score stage_main_thread AzrTimerStack matches 224 positioned -79932 38 38 as @e[tag=AzrielMob_spider_mini,distance=..30] at @s run damage @s 0 generic by @n[tag=AzrielMob_barrier_maintainer]
 
 execute if score stage_main_thread AzrTimerStack matches 228..229 if entity @n[tag=AzrielMob_barrier_maintainer] run scoreboard players set stage_main_thread AzrTimerStack 228

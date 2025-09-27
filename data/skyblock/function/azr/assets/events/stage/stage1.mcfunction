@@ -28,7 +28,7 @@ execute if score stage_main_thread AzrTimerStack matches 42 run tellraw @a[tag=a
 execute if score stage_main_thread AzrTimerStack matches 45 run tellraw @a[tag=azrShowDialog] [{"text":"驭灵使：","color":"yellow"},{"text":"\n“……不对，人类哪来这么强大的力量？！”","color":"white"}]
 
 execute if score stage_main_thread AzrTimerStack matches 51 positioned -79931 38 3 run function skyblock:azr/assets/mobs_new/shield
-execute if score stage_main_thread AzrTimerStack matches 61 positioned -79931 38 -9 run function skyblock:azr/assets/mobs_new/barrier_maintainer
+execute if score stage_main_thread AzrTimerStack matches 61 positioned -79931 38 -9 run function skyblock:azr/assets/mobs_new/barrier_maintainer {id:null}
 
 #回秒
 execute if score stage_main_thread AzrTimerStack matches 62..63 if entity @e[tag=AzrielMob_barrier_maintainer] run scoreboard players set stage_main_thread AzrTimerStack 62
