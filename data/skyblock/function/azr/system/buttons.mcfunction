@@ -128,11 +128,7 @@ execute if block -79936 39 42 minecraft:birch_button[powered=true] positioned -7
 execute if block -79936 39 42 minecraft:birch_button[powered=true] positioned -79931 44 46 run function skyblock:azr/assets/mobs/zombie_militia_t1
 execute if block -79936 39 42 minecraft:birch_button[powered=true] run setblock -79936 39 42 air
 #extra bonus - stage4β uncommited
-execute if block -79959 39 20 minecraft:birch_button[powered=true] positioned -79956 38 24 run function skyblock:azr/assets/mobs/vindicator_t1
-execute if block -79959 39 20 minecraft:birch_button[powered=true] positioned -79956 38 24 run function skyblock:azr/assets/mobs/vindicator_t1
-execute if block -79959 39 20 minecraft:birch_button[powered=true] positioned -79956 38 16 run function skyblock:azr/assets/mobs/vindicator_t1
-execute if block -79959 39 20 minecraft:birch_button[powered=true] positioned -79956 38 16 run function skyblock:azr/assets/mobs/vindicator_t1
-execute if block -79959 39 20 minecraft:birch_button[powered=true] run summon item -79956 42 20 {Item:{count:3,id:"minecraft:emerald_block"}}
+execute if block -79959 39 20 minecraft:birch_button[powered=true] run summon item -79956 42 20 {Item:{count:2,id:"minecraft:coal"}}
 execute if block -79959 39 20 minecraft:birch_button[powered=true] run setblock -79959 39 20 air
 #extra bonus - stage6 uncommited
 execute if block -79942 39 150 minecraft:birch_button[powered=true] run summon item -79931 44 149 {Item:{count:2,id:"minecraft:emerald_block"}}
