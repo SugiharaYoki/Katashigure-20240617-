@@ -30,7 +30,7 @@ execute if score stage Azr_system matches 3 run scoreboard players set stage_mai
 #第二关 4
 execute if score stage Azr_system matches 4 if score playerCount Azr_system matches 1.. run function skyblock:azr/assets/events/stage/stage2
 #第二关-第三关 5
-execute if score stage Azr_system matches 5 run scoreboard players set stage_main_thread AzrTimerStack 0
+execute if score stage Azr_system matches 5..11 if score playerCount Azr_system matches 1.. run function skyblock:azr/assets/events/stage/stage3_pre
 #第三关 6/32
 execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 6 run function skyblock:azr/assets/events/stage/stage3
 execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 32 run function skyblock:azr/assets/events/stage/stage3_beta

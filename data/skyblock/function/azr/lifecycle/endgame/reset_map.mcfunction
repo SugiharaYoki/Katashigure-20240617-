@@ -62,6 +62,14 @@ fill -79931 38 40 -79931 40 40 purple_stained_glass{name: "to Stage4 alpha"}
 
 #Stage3 beta
 fill -79957 42 13 -79955 38 13 minecraft:purple_stained_glass{name: "to Stage4 beta"}
+setblock -79955 38 1 minecraft:potted_azalea_bush
+setblock -79957 38 1 minecraft:potted_azalea_bush
+setblock -79960 38 19 minecraft:potted_azalea_bush
+setblock -79960 38 21 minecraft:potted_azalea_bush
+setblock -79938 38 19 minecraft:potted_azalea_bush
+setblock -79938 38 21 minecraft:potted_azalea_bush
+
+
 
 #Spider Room
 setblock -79922 38 35 air
