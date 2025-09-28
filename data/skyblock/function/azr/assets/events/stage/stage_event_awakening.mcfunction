@@ -18,6 +18,7 @@ execute positioned -80003 7 68 as @n[tag=AzrielMarker_encounter,distance=0..0.5,
 execute positioned -80003 7 68 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=88..90}] as @a[distance=..30,tag=!AZR_SEAawakened] at @s run playsound minecraft:ambient.warped_forest.mood ambient @s ~ ~ ~ 5 0.5
 execute positioned -80003 7 68 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=92..}] as @a[distance=..30,tag=!AZR_SEAawakened] at @s run playsound minecraft:ambient.warped_forest.additions ambient @s ~ ~ ~ 5 0.7
 execute positioned -80003 7 68 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=92..}] as @a[distance=..30,tag=!AZR_SEAawakened] at @s run playsound minecraft:ambient.warped_forest.additions ambient @s ~ ~ ~ 5 0.5
+execute positioned -80003 7 68 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=70}] as @a[distance=..30,tag=!AZR_SEAawakened] at @s run effect give @s darkness 5 0 true
 execute positioned -80003 7 68 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=68..100}] as @a[distance=..30,tag=!AZR_SEAawakened] at @s run particle minecraft:warped_spore ~ ~2 ~ 3 2 3 0 20
 execute positioned -80003 7 68 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=88..100}] as @a[distance=..30,tag=!AZR_SEAawakened] at @s run particle minecraft:warped_spore ~ ~2 ~ 3 2 3 0 100
 execute positioned -80003 7 68 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=68..100}] as @a[distance=..30,tag=!AZR_SEAawakened] at @s run particle minecraft:soul_fire_flame ~ ~2 ~ 3 2 3 0 20
