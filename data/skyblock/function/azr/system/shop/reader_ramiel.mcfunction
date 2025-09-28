@@ -1,7 +1,7 @@
 
 tellraw @s [{"text":" - "},{"text":"下界命星  ","color":"#935dff"},{"score":{"name":"@s","objective":"AzrMelonCount"},"color":"#fff5c2"},{"text":"/3 金西瓜 ","color":"#fff5c2"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8431551"}}]
 tellraw @s [{"text":" - "},{"text":"金萝卜 ×2  ","color":"#7ac42c"},{"score":{"name":"@s","objective":"AzrMelonCount"},"color":"#fff5c2"},{"text":"/1 金西瓜 ","color":"#fff5c2"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8431552"}}]
-tellraw @s [{"text":" - "},{"text":"心跳仪  ","color":"#306fc2"},{"score":{"name":"@s","objective":"AzrMelonCount"},"color":"#fff5c2"},{"text":"/2 金西瓜 ","color":"#fff5c2"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8431553"},"hoverEvent":{"action":"show_text","contents":{"text":"背包常效装备\n在血量过低时给予心跳声警报","color":"white"}}}]
+tellraw @s [{"text":" - "},{"text":"心跳仪  ","color":"#306fc2"},{"score":{"name":"@s","objective":"AzrMelonCount"},"color":"#fff5c2"},{"text":"/2 金西瓜 ","color":"#fff5c2"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8431553"},"hoverEvent":{"action":"show_text","contents":{"text":"背包常效装备\n在血量过低时给予心跳声警报\n只在8格内存在敌人时有效","color":"white"}}}]
 
 
 
