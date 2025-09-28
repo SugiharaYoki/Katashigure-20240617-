@@ -21,6 +21,7 @@ execute as @e[type=zombie,tag=AZRknight,x=-79943,y=38,z=135,distance=..4000] at 
 #关卡控制部分
 #Introduction
 execute if score stage Azr_system matches -1 if score playerCount Azr_system matches 1.. run function skyblock:azr/assets/events/stage/introduction
+execute if score stage Azr_system matches -1.. if score playerCount Azr_system matches 1.. run function skyblock:azr/assets/events/stage/stage_event_awakening
 #开始-第一关 1
 execute if score stage Azr_system matches 1 run scoreboard players set stage_main_thread AzrTimerStack 0
 #第一关 2
