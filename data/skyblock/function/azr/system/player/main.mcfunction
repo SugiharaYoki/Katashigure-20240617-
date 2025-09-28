@@ -37,4 +37,4 @@ execute unless score @s Azr_startCount = Pointer Azr_startCount run function sky
 # scoreboard players operation @s AzrSlotRecord = @s AzrSlotRecord_temp
 
 #护身符
-execute if entity @n[tag=AzrielMob,distance=0..8] if items entity @s container.* *[custom_data~{azr_amulet_heart_rate_monitor:1b}] run function skyblock:azr/system/player/skills/amulet/heart_rate_monitor_core
+execute at @s if entity @n[tag=AzrielMob,distance=0..8] if items entity @s container.* *[custom_data~{azr_amulet_heart_rate_monitor:1b}] run function skyblock:azr/system/player/skills/amulet/heart_rate_monitor_core
