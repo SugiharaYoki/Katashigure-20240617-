@@ -16,5 +16,5 @@ execute if entity @s[tag=AZR_SEAawakened] unless entity @s[tag=AZR_fakeDeath] ru
 clear @s[tag=!AZR_storymode,tag=!AZR_fakeDeath] nether_star[custom_data~{revival_star:1b}] 1
 
 execute if entity @s[tag=!AZR_SEAawakened] positioned -80003 7 68 run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
-
+execute if entity @s[tag=!AZR_SEAawakened] positioned -80003 7 68 as @n[tag=AzrielMarker_encounter,distance=0..0.5] run scoreboard players set @s rng1 0
 scoreboard players set @s AzrTimerReviving 0
