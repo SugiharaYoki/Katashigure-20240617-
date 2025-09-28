@@ -1,3 +1,29 @@
+
+    
+execute as @s[scores={Azr_Shop=8431551}] \
+    unless score tempPlayerShopSuccess Azr_system matches 1 \
+    if score @s AzrMelonCount matches 3.. \
+    unless function skyblock:azr/system/shop/purchase/ramiel/\
+    star run scoreboard players set tempPlayerShopSuccess Azr_system 1
+    # new_1  @s  3 金西瓜 换 1 命星
+    
+execute as @s[scores={Azr_Shop=8431552}] \
+    unless score tempPlayerShopSuccess Azr_system matches 1 \
+    if score @s AzrMelonCount matches 1.. \
+    unless function skyblock:azr/system/shop/purchase/ramiel/\
+    carrot run scoreboard players set tempPlayerShopSuccess Azr_system 1
+    # new_2  @s  1 金西瓜 换 2 金萝卜
+    
+execute as @s[scores={Azr_Shop=8431553}] \
+    unless score tempPlayerShopSuccess Azr_system matches 1 \
+    if score @s AzrMelonCount matches 2.. \
+    unless function skyblock:azr/system/shop/purchase/ramiel/\
+    heart_rate_monitor run scoreboard players set tempPlayerShopSuccess Azr_system 1
+    # new_3  @s  2 金西瓜 换 1 心跳仪
+    
+#下方全部没有使用
+    
+    
 execute as @s[scores={Azr_Shop=8431522}] \
     unless score tempPlayerShopSuccess Azr_system matches 1 \
     if items entity @s container.* slime_ball[count={min:3}] \

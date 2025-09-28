@@ -35,3 +35,6 @@ execute as @s[scores={Azr_isDead=1..}] at @s run function skyblock:azr/system/pl
 execute unless score @s Azr_startCount = Pointer Azr_startCount run function skyblock:azr/lifecycle/endgame/quit_game
 
 # scoreboard players operation @s AzrSlotRecord = @s AzrSlotRecord_temp
+
+#护身符
+execute if items entity @s container.* *[custom_data~{azr_amulet_heart_rate_monitor:1b}] run function skyblock:azr/system/player/skills/amulet/heart_rate_monitor_core

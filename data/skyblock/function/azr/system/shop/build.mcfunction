@@ -2,9 +2,6 @@
 tag @s[tag=azrNeverUsedShop] add azrShopRefresh
 tag @s[tag=azrNeverUsedShop] remove azrNeverUsedShop
 
-#贪婪图腾效果
-execute store result score #temp_rng Azr_system run random value 0..1
-execute if score #temp_rng Azr_system matches 1 if data entity @s {Inventory:[{components:{"minecraft:custom_data":{greed_totem:1b}}}]} run scoreboard players remove @s[scores={Azr_emerald=1..}] Azr_emerald 1
 
 #print title
 execute if score @s Azr_shopChapter matches 1 run tellraw @s {"text":"『第一章 - Chapter 1』","bold":true,"color":"white"}
@@ -34,18 +31,16 @@ execute store result score @s AzrMelonCount run clear @s glistering_melon_slice 
 scoreboard players operation @s AzrMelonCount += @s AzrExtraMelon
 
 #print extra-buttons
-execute if score wave Azr_system matches 1..5 run tellraw @s [{"text":"   "},{"text":"〈刷新商店〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 20"}},{"text":"   花费 1 绿宝石   ","color":"gold"}]
+execute if score wave Azr_system matches -1..5 run tellraw @s [{"text":"   "},{"text":"〈刷新商店〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 20"}},{"text":"   花费 1 绿宝石   ","color":"gold"}]
 execute if score wave Azr_system matches 6..9 run tellraw @s [{"text":"   "},{"text":"〈刷新商店〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 20"}},{"text":"   花费 3 绿宝石   ","color":"gold"}]
 execute if score wave Azr_system matches 10..15 run tellraw @s [{"text":"   "},{"text":"〈壹〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 21"}},{"text":"〈贰〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 22"}},{"text":"   花费 3 绿宝石   ","color":"gold"}]
 execute if score wave Azr_system matches 16..22 run tellraw @s [{"text":"   "},{"text":"〈壹〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 21"}},{"text":"〈贰〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 22"}},{"text":"   花费 5 绿宝石   ","color":"gold"}]
 execute if score wave Azr_system matches 23..51 run tellraw @s [{"text":"   "},{"text":"〈壹〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 21"}},{"text":"〈贰〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 22"}},{"text":"〈叁〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 23"}},{"text":"   花费 7 绿宝石   ","color":"gold"}]
 execute if score wave Azr_system matches 52..130 run tellraw @s [{"text":"   "},{"text":"〈壹〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 21"}},{"text":"〈贰〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 22"}},{"text":"〈叁〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 23"}},{"text":"〈绯〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 24"}},{"text":"〈金〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 25"}},{"text":"〈诡〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 26"}},{"text":"   花费 3 绿宝石   ","color":"gold"}]
 
-execute if score wave Azr_system matches 10.. run tellraw @s [{"text":"   "},{"text":"〈雷米尔的指引〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 3"}}]
-tellraw @s {"text":"   "}
-
+execute if entity @s[tag=AZR_SEAawakened] run tellraw @s [{"text":"   "},{"text":"〈雷米尔的指引〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 3"}}]
 #print last line
-tellraw @s [{"text":"  绿宝石余额：  ","color":"yellow"},{"score":{"name":"@s","objective":"Azr_emerald"}}]
+#tellraw @s [{"text":"  绿宝石余额：  ","color":"yellow"},{"score":{"name":"@s","objective":"Azr_emerald"}}]
 #execute if entity @s[scores={Azr_wave=10..}] run tellraw @s [{"text":"  绿宝石余额：  ","color":"yellow"},{"score":{"name":"@s","objective":"Azr_emerald"}},{"text":"   沙利叶之星：  ","color":"yellow"},{"score":{"name":"@s","objective":"Azr_sarielStar"}}]
 tellraw @s {"text":"   "}
 

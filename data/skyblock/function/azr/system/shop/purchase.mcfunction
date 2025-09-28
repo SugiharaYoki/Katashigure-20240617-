@@ -19,7 +19,7 @@ function skyblock:azr/system/shop/purchase/category3 {rng:8,trigger:84308}
 #-----------------9 skilled
 execute as @s[scores={Azr_SK5=3..}] run function skyblock:azr/system/shop/purchase/category3 {rng:9,trigger:84309}
 
-execute if score @s Azr_Shop matches 8431522..8431546 run function skyblock:azr/system/shop/purchase/ramiel
+execute if score @s Azr_Shop matches 8431551..8431599 run function skyblock:azr/system/shop/purchase/ramiel
 
 execute if score @s Azr_Shop matches 8431611..8431723 run function skyblock:azr/system/shop/purchase/nether
 
