@@ -16,8 +16,8 @@ execute if score stage_main_thread AzrTimerStack matches 88 run playsound block.
 execute if score stage_main_thread AzrTimerStack matches 92 run playsound block.bell.use ambient @a[tag=azrShowDialog] -79887 50 164 100 0.7
 execute if score stage_main_thread AzrTimerStack matches 96 run playsound block.bell.use ambient @a[tag=azrShowDialog] -79887 50 164 100 0.7
 execute if score stage_main_thread AzrTimerStack matches 100 run playsound block.bell.use ambient @a[tag=azrShowDialog] -79887 50 164 100 0.7
-execute if score stage_main_thread AzrTimerStack matches 90 run tellraw @a[tag=azrShowDialog] [{"text":"驭灵使：","color":"yellow"},{"text":"\n“挑战者到达第一关口，出兵迎战。”","color":"white"}]
-execute if score stage_main_thread AzrTimerStack matches 140 run tellraw @a[tag=azrShowDialog] [{"text":"哨兵剑士：","color":"yellow"},{"text":"\n“喂，对方是不是有些太强了？怎么回事？！”","color":"white"}]
+execute if score stage_main_thread AzrTimerStack matches 90 run tellraw @a[tag=azrShowDialog] [{"text":"驭灵使：","color":"yellow","bold": true},{"bold": false,"text":"\n“挑战者到达第一关口，出兵迎战。”","color":"white"}]
+execute if score stage_main_thread AzrTimerStack matches 140 run tellraw @a[tag=azrShowDialog] [{"text":"哨兵剑士：","color":"yellow","bold": true},{"bold": false,"text":"\n“喂，对方是不是有些太强了？怎么回事？！”","color":"white"}]
 execute if score stage_main_thread AzrTimerStack matches 97 positioned -79940 38 14 run function skyblock:azr/assets/mobs_new/shield
 execute if score stage_main_thread AzrTimerStack matches 97 positioned -79922 38 14 run function skyblock:azr/assets/mobs_new/shield
 execute if score stage_main_thread AzrTimerStack matches 90 positioned -79940 38 14 run function skyblock:azr/assets/mobs_new/summoner
@@ -40,7 +40,7 @@ execute if score stage_main_thread AzrTimerStack matches 214 positioned -79922 3
 execute if score stage_main_thread AzrTimerStack matches 229 positioned -79940 38 14 run function skyblock:azr/assets/mobs_new/shield
 execute if score stage_main_thread AzrTimerStack matches 229 positioned -79922 38 14 run function skyblock:azr/assets/mobs_new/sword
 
-execute if score stage_main_thread AzrTimerStack matches 233 run tellraw @a[tag=azrShowDialog] [{"text":"哨兵剑士：","color":"yellow"},{"text":"\n“刚刚收到消息，权之残影大人让我们直接召唤执烛使者。”","color":"white"}]
+execute if score stage_main_thread AzrTimerStack matches 233 run tellraw @a[tag=azrShowDialog] [{"text":"哨兵剑士：","color":"yellow","bold": true},{"bold": false,"text":"\n“刚刚收到消息，权之残影大人让我们直接召唤执烛使者。”","color":"white"}]
 
 execute if score stage_main_thread AzrTimerStack matches 234..235 if entity @n[tag=AzrielMob_sword] run scoreboard players set stage_main_thread AzrTimerStack 234
 execute if score stage_main_thread AzrTimerStack matches 244 positioned -79927 38 21 run function skyblock:azr/assets/mobs_new/smoke
@@ -48,7 +48,7 @@ execute if score stage_main_thread AzrTimerStack matches 244 positioned -79935 3
 execute if score stage_main_thread AzrTimerStack matches 244 positioned -79927 38 7 run function skyblock:azr/assets/mobs_new/smoke
 execute if score stage_main_thread AzrTimerStack matches 244 positioned -79935 38 7 run function skyblock:azr/assets/mobs_new/smoke
 execute if score stage_main_thread AzrTimerStack matches 264 positioned -79922 38 14 run function skyblock:azr/assets/mobs_new/summoner
-execute if score stage_main_thread AzrTimerStack matches 273 run tellraw @a[tag=azrShowDialog] [{"text":"驭灵使：","color":"yellow"},{"text":"\n“直接……？可是为什么？现在是这么紧急的情况吗？”","color":"white"}]
+execute if score stage_main_thread AzrTimerStack matches 273 run tellraw @a[tag=azrShowDialog] [{"text":"驭灵使：","color":"yellow","bold": true},{"bold": false,"text":"\n“直接……？可是为什么？现在是这么紧急的情况吗？”","color":"white"}]
 execute if score stage_main_thread AzrTimerStack matches 274..275 if entity @n[tag=AzrielMob_summoner] run scoreboard players set stage_main_thread AzrTimerStack 274
 execute if score stage_main_thread AzrTimerStack matches 278 positioned -79931 38 14 run function skyblock:azr/assets/mobs_new/barrier_maintainer {id:null}
 

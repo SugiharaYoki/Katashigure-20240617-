@@ -407,7 +407,7 @@ execute as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run function skyblo
     execute if score tick_main_thread AzrTimerStack matches 6351..6367 as @a[tag=azrShowDialog] at @s run playsound minecraft:block.basalt.place ambient @s ~ ~ ~ 0.8 0.2
     execute if score tick_main_thread AzrTimerStack matches 6345 as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run rotate @s facing -79686 44 -14.0
     execute if score tick_main_thread AzrTimerStack matches 6375 as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run playsound minecraft:entity.illusioner.hurt hostile @a[tag=azrShowDialog] ~ ~ ~ 100 1.1
-    execute if score tick_main_thread AzrTimerStack matches 6375 run tellraw @a[tag=azrShowDialog] [{"text":"权之残影：","color":"red"},{"text":"\n“可恶……这混蛋路西法，居然利用人类来做圈套……！”","color":"white"}]
+    execute if score tick_main_thread AzrTimerStack matches 6375 run tellraw @a[tag=azrShowDialog] [{"text":"权之残影：","color":"red","bold": true},{"bold": false,"text":"\n“可恶……这混蛋路西法，居然利用人类来做圈套……！”","color":"white"}]
     execute if score tick_main_thread AzrTimerStack matches 6415 as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run rotate @s facing entity @r[tag=azrPlayer]
     execute if score tick_main_thread AzrTimerStack matches 6430 run tellraw @a[distance=0..150] [{"text":"你：","color":"aqua","bold": true},{"text":"\n“我像是被卷进了什么不得了的误会里头去。”","color":"white","bold": false}]
 
