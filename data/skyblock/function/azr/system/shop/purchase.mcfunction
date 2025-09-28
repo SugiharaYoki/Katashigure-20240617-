@@ -52,7 +52,7 @@ function skyblock:azr/system/shop/purchase/universal
 execute at @s run playsound minecraft:item.armor.equip_leather master @s
 
 execute if score @s Azr_Shop matches 84300..84309 run function skyblock:azr/system/shop/build
-execute if score @s Azr_Shop matches 8431511..8431516 run function skyblock:azr/system/shop/reader_arrowshop
+execute if score @s Azr_Shop matches 8431551..8431599 run function skyblock:azr/system/shop/reader_arrowshop
 execute if score @s Azr_Shop matches 8431522..8431546 run function skyblock:azr/system/shop/reader_ramiel
 execute if score @s Azr_Shop matches 8431611..8431631 run function skyblock:azr/system/shop/reader_nethershop_1
 execute if score @s Azr_Shop matches 8431711..8431722 run function skyblock:azr/system/shop/reader_nethershop_2
