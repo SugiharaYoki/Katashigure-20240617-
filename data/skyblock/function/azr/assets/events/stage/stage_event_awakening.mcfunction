@@ -23,8 +23,8 @@ execute positioned -80003 7 68 as @n[tag=AzrielMarker_encounter,distance=0..0.5,
 execute positioned -80003 7 68 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=100}] as @a[tag=azrPlayer,distance=..30,tag=!AZR_SEAawakened] at @s run tag @s add AZR_SEAawakening
 execute positioned -80003 7 68 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=100}] as @a[tag=AZR_SEAawakening] at @s run tp @s -79931 38 25
 execute positioned -80003 7 68 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=100}] as @a[tag=AZR_SEAawakening] at @s run stopsound @s
-execute positioned -80003 7 68 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=101}] as @a[tag=AZR_SEAawakening] at @s run particle totem_of_undying -79931 39 25 0.4 0.8 0.4 0.7 100
-execute positioned -80003 7 68 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=101}] as @a[tag=AZR_SEAawakening] at @s run particle minecraft:flash -79931 39 25 0.4 0.7 0.4 0.3 2
+execute positioned -80003 7 68 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=100}] run particle totem_of_undying -79931 39 25 0.4 0.8 0.4 0.7 100 force
+execute positioned -80003 7 68 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=100}] run particle minecraft:flash -79931 39 25 0.4 0.7 0.4 0.3 2 force
 execute positioned -80003 7 68 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=100}] as @a[tag=AZR_SEAawakening] at @s run playsound item.totem.use master @a -79931 38 25 2
 execute positioned -80003 7 68 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=100}] as @a[tag=AZR_SEAawakening] at @s run effect give @s absorption 10 2
 execute positioned -80003 7 68 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=100}] as @a[tag=AZR_SEAawakening] at @s run effect give @s regeneration 10 4
