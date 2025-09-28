@@ -38,6 +38,8 @@ scoreboard players add @s[scores={Azr_skillPoints=6..}] Azr_emerald 5
 scoreboard players operation @s Azr_startCount = Pointer Azr_startCount
 scoreboard players add @s Azr_personalStartCount 1
 
+execute if entity @s[tag=AZR_SEAawakened] run function skyblock:azr/assets/items/others/revival_star
+
 #azr-tags
 tag @s remove azrDead
 tag @s add azrPlayer
