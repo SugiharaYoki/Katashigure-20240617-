@@ -28,6 +28,7 @@ scoreboard objectives add AzrSlotRecord dummy
 scoreboard objectives add AzrSlotRecord_temp dummy
 scoreboard objectives add AzrTimerReviving dummy
 scoreboard objectives add AzrTimerAmulet_hrm dummy
+scoreboard objectives add AzrTimerAmulet_pacemaker dummy
 # scoreboard objectives add temp_timer1 dummy
 # scoreboard objectives add temp_timer2 dummy
 # scoreboard objectives add temp_timer3 dummy

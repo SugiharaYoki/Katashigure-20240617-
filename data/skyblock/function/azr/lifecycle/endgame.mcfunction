@@ -39,6 +39,7 @@ execute as @a[tag=azrPlayer] run function skyblock:azr/lifecycle/endgame/quit_ga
 #删除临时记分板
 scoreboard objectives remove AzrTimerReviving
 scoreboard objectives remove AzrTimerAmulet_hrm
+scoreboard objectives remove AzrTimerAmulet_pacemaker
 #scoreboard objectives remove AZR_chainKill
 #scoreboard objectives remove AZR_chainKill_damage
 #scoreboard objectives remove AZR_chainKill_damageblocked
