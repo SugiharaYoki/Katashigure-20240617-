@@ -27,7 +27,6 @@ scoreboard objectives add AZR_chainKillUpg_attackspeed dummy
 scoreboard objectives add AZR_arrow_energy dummy
 scoreboard objectives add AzrEntityTimer dummy
 scoreboard objectives add AzrielMobLevel dummy
-scoreboard objectives add AzrExtraMelon dummy
 
 #skills
 #skill 1 幽毒若水 lv3 - 厄渊毒霾 lv2

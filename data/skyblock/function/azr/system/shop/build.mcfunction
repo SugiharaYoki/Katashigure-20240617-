@@ -27,8 +27,6 @@ execute if score @s Azr_shopChapter matches 4 run function skyblock:azr/system/s
 #execute if entity @s[tag=azrShopRefresh] if score @s Azr_shopChapter matches 7 run function skyblock:azr/system/shop/roll_chapter7
 tellraw @s {"text":"   "}
 
-execute store result score @s AzrMelonCount run clear @s glistering_melon_slice 0
-scoreboard players operation @s AzrMelonCount += @s AzrExtraMelon
 
 #print extra-buttons
 execute if score wave Azr_system matches -1..5 run tellraw @s [{"text":"   "},{"text":"〈刷新商店〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 20"}},{"text":"   花费 1 绿宝石   ","color":"gold"}]

@@ -9,6 +9,8 @@ execute unless items entity @s player.crafting.0 *[!custom_data~{LifeVitae:1b}] 
 execute unless items entity @s player.crafting.1 *[!custom_data~{PsychicVitae:1b}] if entity @s[tag=hasSkills] run item replace entity @s player.crafting.1 with minecraft:enchanted_book[custom_name='{"bold":true,"italic":false,"color":"gold","text":"索命连击"}',lore=['{"italic":false,"text":"在物品栏选定以展开索命连击升级页面"}'],custom_data={PsychicVitae:1b},custom_model_data={floats:[100001.0]}]
 #绿宝石管理
 execute if items entity @s[tag=hasLifeVitae] container.* emerald run function skyblock:azr/system/shop/money_conversion
+execute if items entity @s[tag=hasLifeVitae] container.* glistering_melon_slice run function skyblock:azr/system/shop/melon_conversion
+
 #灵能入口
 execute if items entity @s player.cursor *[custom_data~{PsychicVitae:1b}] run function skyblock:azr/system/player/skills/chainkill/build
 execute if items entity @s container.* *[custom_data~{PsychicVitae:1b}] run clear @s *[custom_data~{PsychicVitae:1b}]
