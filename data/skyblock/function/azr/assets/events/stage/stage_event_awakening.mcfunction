@@ -1,7 +1,7 @@
 
 execute positioned -80003 7 68 as @n[tag=AzrielMarker_encounter,distance=0..0.5] run scoreboard players add @s rng1 1
 execute positioned -80003 7 68 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2..3}] run scoreboard players set @s rng1 2
-execute positioned -80003 7 68 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2..3}] if entity @a[tag=azrPlayer,x=-80004,y=6,z=65,dx=4,dy=4,dz=6] run scoreboard players set @s rng1 4
+execute positioned -80003 7 68 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2..3}] if entity @a[tag=azrPlayer,x=-80004,y=6,z=65,dx=4,dy=4,dz=9] run scoreboard players set @s rng1 4
 execute positioned -80003 7 68 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=5..64}] store result score @s rng2 run random value 1..30
 execute positioned -80003 7 68 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=5..64,rng2=1}] as @a[distance=..30,tag=!AZR_SEAawakened] at @s run playsound minecraft:ambient.warped_forest.mood ambient @s ~ ~ ~ 1.2 0.5
 execute positioned -80003 7 68 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=5..64,rng2=2}] as @a[distance=..30,tag=!AZR_SEAawakened] at @s run playsound minecraft:ambient.warped_forest.additions ambient @s ~ ~ ~ 1.2 0.8
