@@ -66,6 +66,7 @@ scoreboard players set stopSeconds Azr_system 0
 scoreboard players set chapter Azr_system 1
 scoreboard players set tick_count_main AzrTimerStack 0
 scoreboard players set timer_static_5s AzrTimerStack 0
+scoreboard players set wave Azr_system -2
 #scoreboard players set life_vitae_available Azr_system 1
 #创建小队
 team add AzrBossA
