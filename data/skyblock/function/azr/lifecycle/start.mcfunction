@@ -67,6 +67,21 @@ scoreboard players set chapter Azr_system 1
 scoreboard players set tick_count_main AzrTimerStack 0
 scoreboard players set timer_static_5s AzrTimerStack 0
 scoreboard players set wave Azr_system -2
+#游戏开场剧情
+scoreboard players set Azr_Story_Introduction rng1 0
+scoreboard players set Azr_Story_Introduction rng2 0
+scoreboard players set Azr_Story_Introduction rng3 0
+scoreboard players set Azr_Story_Introduction rng4 0
+scoreboard players set Azr_Story_Introduction rng5 0
+scoreboard players set Azr_Story_Introduction rng6 0
+scoreboard players set Azr_Story_Introduction rng7 0
+scoreboard players set Azr_Story_Introduction rng8 0
+scoreboard players set Azr_Story_Introduction rng9 0
+scoreboard players set Azr_Story_Introduction rng10 0
+scoreboard players set $azrInitialIngredientGiven Azr_system 1
+scoreboard players set $azrInitialWeaponGiven Azr_system 1
+scoreboard players set $azrInitialPieGiven Azr_system 1
+
 #scoreboard players set life_vitae_available Azr_system 1
 #创建小队
 team add AzrBossA
@@ -86,19 +101,7 @@ execute as @a[tag=azrPlayer] at @s run function skyblock:azr/system/player/init
 #位置初始化
 execute as @a[x=-79936.0,y=38.15,z=-14.0,distance=10..1000] run tp @s -79936.0 38.15 -14.0 facing -79935.0 38.15 -14.0
 
-#游戏开场剧情
-scoreboard players set Azr_Story_Introduction rng1 0
-scoreboard players set Azr_Story_Introduction rng2 0
-scoreboard players set Azr_Story_Introduction rng3 0
-scoreboard players set Azr_Story_Introduction rng4 0
-scoreboard players set Azr_Story_Introduction rng5 0
-scoreboard players set Azr_Story_Introduction rng6 0
-scoreboard players set Azr_Story_Introduction rng7 0
-scoreboard players set Azr_Story_Introduction rng8 0
-scoreboard players set Azr_Story_Introduction rng9 0
-scoreboard players set Azr_Story_Introduction rng10 0
-
-#地图更改
+#地图更改a
 #开局大门
 fill -79948 38 -13 -79948 42 -16 minecraft:purple_stained_glass
 fill -79933 38 -15 -79933 40 -14 minecraft:air destroy
