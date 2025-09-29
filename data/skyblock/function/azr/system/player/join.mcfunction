@@ -6,14 +6,14 @@ execute unless score isStarted Azr_system matches 1 run return fail
 execute if score isStarted Azr_system matches 1 if score @s Azr_startCount = Pointer Azr_startCount run tellraw @s[tag=azrDead] [{"text":"加入失败！你已经死亡过一次了！","color":"red"}]
 execute if score isStarted Azr_system matches 1 if score @s Azr_startCount = Pointer Azr_startCount if entity @s[tag=azrDead] run return fail
 execute if score isStarted Azr_system matches 1 run tellraw @s[tag=!azrDead] [{"text":"加入游戏成功！正在跳转至游戏。","color":"green"}]
-#记录加入波数
-scoreboard players operation @s AzrJoinWave = wave Azr_system
 #给予绿宝石补偿（三倍于波数）
 scoreboard players set 3 constant 3
 scoreboard players operation @s Azr_emerald = wave Azr_system
 scoreboard players operation @s Azr_emerald *= 3 constant
 #初始化并传送自己
 function skyblock:azr/system/player/init
+#记录加入波数
+scoreboard players operation @s AzrJoinWave = wave Azr_system
 function skyblock:azr/system/player/refresh_bossbar
 execute at @s run tp @s @r[tag=azrPlayer,distance=1..]
 #生命手册
