@@ -72,7 +72,7 @@ execute if score stage_main_thread AzrTimerStack matches 235 positioned -79927 3
 execute if score stage_main_thread AzrTimerStack matches 227 positioned -79927 38 25 run tellraw @a[tag=azrShowDialog] [{"text":"哨兵剑士：","color":"yellow","bold": true},{"bold": false,"text":"\n“怎、……怎么回事？！啊啊啊！”","color":"white"}]
 execute if score stage_main_thread AzrTimerStack matches 209 positioned -79927 38 25 run tellraw @a[tag=azrShowDialog] [{"text":"哨兵剑士：","color":"yellow","bold": true},{"bold": false,"text":"\n“蜘蛛的样子不对劲！”","color":"white"}]
 execute if score stage_main_thread AzrTimerStack matches 221..222 if entity @n[tag=AzrielMob_spider_giant] run scoreboard players set stage_main_thread AzrTimerStack 221
-
+execute if score stage_main_thread AzrTimerStack matches 224 positioned -79930 38 38 run tellraw @a[tag=azrShowDialog] [{"text":"你：","color":"aqua"},{"text":"\n（那些魔物……攻击了神界军？它们是失控了吗？）","color":"white"}]
 
 #碎墙
 execute if score stage_main_thread AzrTimerStack matches 225 run playsound minecraft:entity.spider.ambient master @a -79926.0 38 34 1 0.7
