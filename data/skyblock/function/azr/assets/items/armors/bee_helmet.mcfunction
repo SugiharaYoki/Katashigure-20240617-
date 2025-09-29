@@ -1,1 +1,1 @@
-give @s golden_helmet[custom_data={bee_helmet:1b},custom_name='{"text":"蜂棘帽","italic":false}',enchantments={thorns:2,unbreaking:2},custom_model_data={floats:[100001.0]},trim={material:"netherite",pattern:"vex",show_in_tooltip:false}]
+give @s leather_helmet[custom_data={bee_helmet_normal:1b},attribute_modifiers=[{type:"minecraft:armor",id:"azr:bee_helmet_normal.armor",amount:2.0,operation:"add_value",slot:"armor"}],enchantments={thorns:3},custom_model_data={floats:[100002.0]},dyed_color=16769309,trim={material:coal,pattern:rib}]

@@ -26,7 +26,32 @@ execute as @s[scores={Azr_Shop=8431554}] \
     if score @s AzrMelonCount matches 4.. \
     unless function skyblock:azr/system/shop/purchase/ramiel/\
     pacemaker run scoreboard players set tempPlayerShopSuccess Azr_system 1
-    # new_3  @s  4 金西瓜 换 1 起搏器
+    # new_4  @s  4 金西瓜 换 1 起搏器
+    
+execute as @s[scores={Azr_Shop=8431555}] \
+    unless score tempPlayerShopSuccess Azr_system matches 1 \
+    if score @s AzrMelonCount matches 2.. \
+    unless function skyblock:azr/system/shop/purchase/ramiel/\
+    bee_armor_head run scoreboard players set tempPlayerShopSuccess Azr_system 1
+    # new_5~8  @s  2 金西瓜 换 蜂棘系列护甲
+execute as @s[scores={Azr_Shop=8431556}] \
+    unless score tempPlayerShopSuccess Azr_system matches 1 \
+    if score @s AzrMelonCount matches 2.. \
+    unless function skyblock:azr/system/shop/purchase/ramiel/\
+    bee_armor_chest run scoreboard players set tempPlayerShopSuccess Azr_system 1
+    # new_5~8  @s  2 金西瓜 换 蜂棘系列护甲
+execute as @s[scores={Azr_Shop=8431557}] \
+    unless score tempPlayerShopSuccess Azr_system matches 1 \
+    if score @s AzrMelonCount matches 2.. \
+    unless function skyblock:azr/system/shop/purchase/ramiel/\
+    bee_armor_leg run scoreboard players set tempPlayerShopSuccess Azr_system 1
+    # new_5~8  @s  2 金西瓜 换 蜂棘系列护甲
+execute as @s[scores={Azr_Shop=8431558}] \
+    unless score tempPlayerShopSuccess Azr_system matches 1 \
+    if score @s AzrMelonCount matches 2.. \
+    unless function skyblock:azr/system/shop/purchase/ramiel/\
+    bee_armor_feet run scoreboard players set tempPlayerShopSuccess Azr_system 1
+    # new_5~8  @s  2 金西瓜 换 蜂棘系列护甲
     
 #下方全部没有使用
     

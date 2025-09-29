@@ -1,1 +1,1 @@
-give @s golden_chestplate[custom_data={bee_chestplate:1b},custom_name='{"text":"黄蜂服","italic":false}',enchantments={thorns:2,unbreaking:2},custom_model_data={floats:[100002.0]},trim={material:"netherite",pattern:"rib",show_in_tooltip:false}]
+give @s leather_chestplate[custom_data={bee_chestplate_normal:1b},attribute_modifiers=[{type:"minecraft:armor",id:"azr:bee_chestplate_normal.armor",amount:2.0,operation:"add_value",slot:"armor"}],enchantments={thorns:3},custom_model_data={floats:[100002.0]},dyed_color=16769309,trim={material:coal,pattern:rib}]

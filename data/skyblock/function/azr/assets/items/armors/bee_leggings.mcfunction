@@ -1,0 +1,1 @@
+give @s leather_leggings[custom_data={bee_leggings_normal:1b},attribute_modifiers=[{type:"minecraft:armor",id:"azr:bee_leggings_normal.armor",amount:2.0,operation:"add_value",slot:"armor"}],enchantments={thorns:3},custom_model_data={floats:[100002.0]},dyed_color=16769309,trim={material:coal,pattern:rib}]
