@@ -328,8 +328,6 @@ execute if score stage_main_thread AzrTimerStack matches 289 run playsound ambie
 execute if score stage_main_thread AzrTimerStack matches 289 run playsound ambient.crimson_forest.mood ambient @a[tag=azrShowDialog] -78000 100 0 100000
 execute if score stage_main_thread AzrTimerStack matches 289 run playsound ambient.crimson_forest.additions ambient @a[tag=azrShowDialog] -78000 100 0 100000
 execute if score stage_main_thread AzrTimerStack matches 289 run fill -79930 38 52 -79932 42 52 air destroy
-execute if score stage_main_thread AzrTimerStack matches 289 run setblock -79938 39 49 air destroy
-execute if score stage_main_thread AzrTimerStack matches 289 run setblock -79938 38 49 air destroy
 execute if score stage_main_thread AzrTimerStack matches 289 run scoreboard players set wave Azr_system 7
 execute if score stage_main_thread AzrTimerStack matches 293 run scoreboard players set stage Azr_system 9
 execute if score stage_main_thread AzrTimerStack matches 293 run scoreboard players set stage_main_thread AzrTimerStack 0

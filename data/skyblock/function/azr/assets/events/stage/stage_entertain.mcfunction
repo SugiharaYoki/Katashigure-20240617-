@@ -10,7 +10,6 @@ execute if score stage_main_thread AzrTimerStack matches 97 run bossbar remove a
 #frontside:-79887 43 178
 #leftside:-79873 43 164
 #rightside:-79901 43 164
-execute if score stage_main_thread AzrTimerStack matches 1 run fill -79938 39 49 -79938 38 49 minecraft:purple_stained_glass
 execute if score stage_main_thread AzrTimerStack matches 1 run setblock -79887 44 164 air
 execute if score stage_main_thread AzrTimerStack matches 1 run setblock -79887 43 164 air
 execute if score stage_main_thread AzrTimerStack matches 1 run fill -79886 46 148 -79888 43 148 purple_stained_glass

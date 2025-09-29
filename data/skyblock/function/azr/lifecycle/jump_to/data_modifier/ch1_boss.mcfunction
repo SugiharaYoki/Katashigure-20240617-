@@ -25,7 +25,5 @@
     fill -79930 43 42 -79932 42 41 air
     # storage
     setblock -79931 38 42 white_shulker_box
-    # -> cerement door
-    fill -79938 38 49 -79938 39 49 air
     # -> boss1 door
     fill -79930 38 52 -79932 42 52 air

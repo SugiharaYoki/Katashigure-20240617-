@@ -390,8 +390,6 @@ execute if score stage_main_thread AzrTimerStack matches 247 run playsound ambie
 execute if score stage_main_thread AzrTimerStack matches 247 run playsound ambient.crimson_forest.additions ambient @a[tag=azrShowDialog] -78000 100 0 100000
 execute if score stage_main_thread AzrTimerStack matches 247 run fill -79930 38 52 -79932 42 52 air destroy
 execute if score stage_main_thread AzrTimerStack matches 247 run fill -79948 38 45 -79950 36 45 air destroy
-execute if score stage_main_thread AzrTimerStack matches 247 run setblock -79938 39 49 air destroy
-execute if score stage_main_thread AzrTimerStack matches 247 run setblock -79938 38 49 air destroy
 execute if score stage_main_thread AzrTimerStack matches 251 run scoreboard players set stage Azr_system 9
 execute if score stage_main_thread AzrTimerStack matches 251 run scoreboard players set stage_main_thread AzrTimerStack 0
 #execute if score stage_main_thread AzrTimerStack matches 251 run scoreboard players set @a[tag=azrPlayer,scores={Azr_PlyPtsH=..3}] Azr_PlyPtsH 4

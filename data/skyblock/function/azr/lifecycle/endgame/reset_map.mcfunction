@@ -92,8 +92,6 @@ setblock -79931 42 42 barrier
 setblock -79930 42 41 barrier
 setblock -79932 42 41 barrier
 fill -79930 38 52 -79932 42 52 purple_stained_glass{name: "to Stage Boss1"}
-setblock -79938 38 49 minecraft:quartz_block{name: "to Stage Cerement"}
-setblock -79938 39 49 minecraft:quartz_bricks{name: "to Stage Cerement"}
 
 #Stage4 beta
 setblock -79939 38 20 air
@@ -101,7 +99,6 @@ setblock -79939 38 20 trapped_chest[facing=west]{lock:{components:{custom_data:{
 item replace block -79939 38 20 container.11 with eye_armor_trim_smithing_template 3
 item replace block -79939 38 20 container.13 with skull_banner_pattern[custom_name='{"text":"“仍旧在调查魔物失控的真相”","color":"dark_purple","italic":false}',lore=['{"text":"拉斐尔大人告知我丢失钥匙并无大碍，","color":"white","italic":false}','{"text":"地下水路东区不存在任何有用的事物。","color":"white","italic":false}','{"text":"可那里明明封印着源自各处的亡灵……","color":"white","italic":false}']]
 item replace block -79939 38 20 container.15 with iron_ingot 1
-fill -79948 36 45 -79950 38 45 minecraft:purple_stained_glass{name: "to Stage Cerement"}
 
 #Stage Cerement
 setblock -79939 39 58 chest[facing=north]
