@@ -95,7 +95,7 @@ bossbar set azr:progress_bar_special players @a[tag=azrShowDialog]
 bossbar set azr:progress_bar_special_0 players @a[tag=azrShowDialog]
 bossbar set azr:boss_hp_bar players @a[tag=azrShowDialog]
 bossbar set azr:boss_hp_bar_0 players @a[tag=azrShowDialog]
-
+say debug
 # 玩家函数
 scoreboard players reset $playerExists Azr_system
 execute as @a[tag=azrPlayer] run function skyblock:azr/system/player/main
