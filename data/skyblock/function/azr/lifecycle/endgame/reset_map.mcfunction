@@ -196,7 +196,6 @@ setblock -79887 44 164 minecraft:birch_button[face=floor,facing=south]
 setblock -79887 43 164 diamond_block
 setblock -79951 38 9 minecraft:quartz_stairs[facing=south]
 setblock -79943 39 8 chiseled_quartz_block
-setblock -79949 38 31 birch_button[facing=south]
 setblock -79949 32 140 diamond_block
 setblock -79949 33 140 birch_button[face=floor,facing=west]
 setblock -79940 39 -60 minecraft:birch_button[facing=north]

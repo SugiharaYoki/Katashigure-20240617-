@@ -23,11 +23,6 @@ execute if block -79932 39 42 minecraft:birch_button[powered=true] run setblock 
 execute if block -79932 39 42 minecraft:birch_button[powered=true] run setblock -79936 39 41 minecraft:quartz_block
 execute if block -79932 39 42 minecraft:birch_button[powered=true] run setblock -79949 38 31 air
 execute if block -79932 39 42 minecraft:birch_button[powered=true] run setblock -79932 39 42 air
-#stage4β uncommited
-execute if block -79949 38 31 minecraft:birch_button[powered=true] run scoreboard players set stage Azr_system 33
-execute if block -79949 38 31 minecraft:birch_button[powered=true] run scoreboard players set stage_main_thread AzrTimerStack 0
-execute if block -79949 38 31 minecraft:birch_button[powered=true] run setblock -79932 39 42 air
-execute if block -79949 38 31 minecraft:birch_button[powered=true] run setblock -79949 38 31 air
 #boss1 uncommited
 execute if block -79931 39 88 minecraft:polished_blackstone_button[powered=true] run function skyblock:azr/assets/events/stage/stage_boss1_prep
 #stage5α
