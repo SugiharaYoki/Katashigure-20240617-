@@ -71,6 +71,7 @@ execute if score stage_main_thread AzrTimerStack matches 206 run title @a[tag=az
 
 
 
+execute if score stage_main_thread AzrTimerStack matches 280..281 if entity @n[tag=AzrielMob_summoner] run scoreboard players set stage_main_thread AzrTimerStack 280
 
 execute if score stage_main_thread AzrTimerStack matches 281..287 run playsound ambient.nether_wastes.loop ambient @a[tag=azrShowDialog] -79931 38 53 10
 execute if score stage_main_thread AzrTimerStack matches 281..287 run playsound ambient.nether_wastes.mood ambient @a[tag=azrShowDialog] -79931 38 53 10 0.7
