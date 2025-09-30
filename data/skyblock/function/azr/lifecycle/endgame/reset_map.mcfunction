@@ -33,7 +33,6 @@ setblock -79924 39 25 birch_button[face=floor,facing=west]{name: "Stage3 alpha b
 #setblock -79956 39 1 minecraft:birch_button[facing=south]{name: "Stage3 beta"}
 setblock -79919 39 24 birch_button[facing=south]{name: "Spider Room bonus"}
 setblock -79946 39 50 minecraft:birch_button[face=floor,facing=north]{name: "Stage Cerement"}
-setblock -79936 39 42 birch_button[facing=south,face=wall]{name: "Stage4 alpha bonus"}
 setblock -79959 39 20 minecraft:birch_button[face=floor,facing=west]{name: "Stage4 beta bonus"}
 setblock -79931 39 88 polished_blackstone_button[face=floor,facing=south]{name: "Stage Boss1"}
 setblock -79885 39 39 minecraft:birch_button[face=wall,facing=west]{name: "Before Boss2"}
@@ -133,7 +132,6 @@ setblock -23 143 -53 air
 setblock -79937 39 -12 birch_button[facing=north,face=wall]
 setblock -79928 40 34 minecraft:quartz_block
 setblock -79932 39 42 birch_button[face=wall,facing=east]
-setblock -79936 39 41 minecraft:gold_block
 setblock -79924 38 33 air
 setblock -79946 38 50 minecraft:diamond_block
 setblock -79928 39 56 sea_lantern

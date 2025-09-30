@@ -26,8 +26,6 @@ execute if block -79932 39 42 minecraft:birch_button[powered=true] run setblock 
 #stage4β uncommited
 execute if block -79949 38 31 minecraft:birch_button[powered=true] run scoreboard players set stage Azr_system 33
 execute if block -79949 38 31 minecraft:birch_button[powered=true] run scoreboard players set stage_main_thread AzrTimerStack 0
-execute if block -79949 38 31 minecraft:birch_button[powered=true] run setblock -79936 39 42 air
-execute if block -79949 38 31 minecraft:birch_button[powered=true] run setblock -79936 39 41 minecraft:quartz_block
 execute if block -79949 38 31 minecraft:birch_button[powered=true] run setblock -79932 39 42 air
 execute if block -79949 38 31 minecraft:birch_button[powered=true] run setblock -79949 38 31 air
 #boss1 uncommited
@@ -120,13 +118,6 @@ execute if block -79924 39 25 minecraft:birch_button[powered=true] run summon it
 execute if block -79924 39 25 minecraft:birch_button[powered=true] run setblock -79924 39 25 air
 #extra bonus - stage3α - spider cave
 execute if block -79919 39 24 minecraft:birch_button[powered=true] run function skyblock:azr/assets/events/stage/dialog/southwest_cenic_path
-#extra bonus - stage4α
-execute if block -79936 39 42 minecraft:birch_button[powered=true] run summon item -79931 45 46 {Item:{count:6,id:"minecraft:emerald"}}
-execute if block -79936 39 42 minecraft:birch_button[powered=true] run summon item -79931 45 46 {Item:{count:4,id:"minecraft:beef"}}
-execute if block -79936 39 42 minecraft:birch_button[powered=true] positioned -79931 44 46 run function skyblock:azr/assets/mobs/zombie_militia_t1
-execute if block -79936 39 42 minecraft:birch_button[powered=true] positioned -79931 44 46 run function skyblock:azr/assets/mobs/zombie_militia_t1
-execute if block -79936 39 42 minecraft:birch_button[powered=true] positioned -79931 44 46 run function skyblock:azr/assets/mobs/zombie_militia_t1
-execute if block -79936 39 42 minecraft:birch_button[powered=true] run setblock -79936 39 42 air
 #extra bonus - stage4β uncommited
 execute if block -79959 39 20 minecraft:birch_button[powered=true] run summon item -79956 42 20 {Item:{count:2,id:"minecraft:coal"}}
 execute if block -79959 39 20 minecraft:birch_button[powered=true] run setblock -79959 39 20 air
