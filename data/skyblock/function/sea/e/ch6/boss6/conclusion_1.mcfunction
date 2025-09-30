@@ -67,6 +67,7 @@ execute if score SEA_ch6_event sea_4temp4 matches 1362 run bossbar set minecraft
 execute if score SEA_ch6_event sea_4temp4 matches 1362 run bossbar set minecraft:9066602 players @a[tag=SEAPT]
 execute if score SEA_ch6_event sea_4temp4 matches 1362 run bossbar set minecraft:9066602 style progress
 execute if score SEA_ch6_event sea_4temp4 matches 1362 run bossbar set minecraft:9066602 max 400
+execute if score SEA_ch6_event sea_4temp4 matches 1362 run forceload add 90151 -1857
 
 execute if score SEA_ch6_event sea_4temp4 matches 1362..1462 run scoreboard players add SEA_ch6_event sea_4temp5 4
 execute if score SEA_ch6_event sea_4temp4 matches 1362..2070 store result bossbar minecraft:9066602 value run scoreboard players get SEA_ch6_event sea_4temp5
