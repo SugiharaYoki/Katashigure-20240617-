@@ -63,6 +63,7 @@ setblock -79918 42 25 chest[facing=north]
 item replace block -79918 42 25 container.13 with coal 2
 setblock -79905 42 33 chest[facing=west]
 item replace block -79905 42 33 container.13 with iron_ingot 1
+fill -79929 45 29 -79929 45 27 minecraft:potted_azalea_bush
 
 #Stage3 beta
 fill -79957 42 13 -79955 38 13 minecraft:purple_stained_glass{name: "to Stage4 beta"}
@@ -72,8 +73,6 @@ setblock -79960 38 19 minecraft:potted_azalea_bush
 setblock -79960 38 21 minecraft:potted_azalea_bush
 setblock -79938 38 19 minecraft:potted_azalea_bush
 setblock -79938 38 21 minecraft:potted_azalea_bush
-
-
 
 #Spider Room
 setblock -79922 38 35 air
