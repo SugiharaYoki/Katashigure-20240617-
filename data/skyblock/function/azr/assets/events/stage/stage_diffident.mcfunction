@@ -8,12 +8,11 @@ execute if score stage_main_thread AzrTimerStack matches 502..5510 store result 
 execute if score stage_main_thread AzrTimerStack matches 5511 run bossbar remove azr:progress_bar_special
 #
 #leftside:-79946 38 61
-#rightside:-79946 38 50
+#rightside:-79946 38 50 - unused
 execute if score stage_main_thread AzrTimerStack matches 500..502 run playsound minecraft:ambient.soul_sand_valley.additions master @a -79926 38 34 1000 1
 execute if score stage_main_thread AzrTimerStack matches 502 as @p[x=-79946,y=38,z=56,distance=0..6] at @s run tp @a[tag=azrPlayer,x=-79946,y=38,z=56,distance=6..] @s
 execute if score stage_main_thread AzrTimerStack matches 502 run fill -79938 39 49 -79938 38 49 minecraft:purple_stained_glass
 execute if score stage_main_thread AzrTimerStack matches 502 run setblock -79946 39 50 air
-execute if score stage_main_thread AzrTimerStack matches 502 run setblock -79946 38 50 air
 
 #0
 execute if score stage_main_thread AzrTimerStack matches 502 positioned -79933 38 88 run function skyblock:azr/assets/mobs/zombie_t1_4hp

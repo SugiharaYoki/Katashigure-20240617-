@@ -1100,6 +1100,7 @@ scoreboard players set SEA_ch6_f2 rng1 0
 scoreboard players set SEA_ch6_f2 rng2 0
 scoreboard players set SEA_ch6_f2 rng3 0
 scoreboard players set SEA_ch6_f2 rng4 0
+setblock 90143 153 123 air
 
 #第六章后半
 

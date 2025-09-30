@@ -132,7 +132,6 @@ setblock -79937 39 -12 birch_button[facing=north,face=wall]
 setblock -79928 40 34 minecraft:quartz_block
 setblock -79932 39 42 birch_button[face=wall,facing=east]
 setblock -79924 38 33 air
-setblock -79946 38 50 minecraft:diamond_block
 setblock -79928 39 56 sea_lantern
 setblock -79928 39 58 sea_lantern
 setblock -79928 39 60 sea_lantern
