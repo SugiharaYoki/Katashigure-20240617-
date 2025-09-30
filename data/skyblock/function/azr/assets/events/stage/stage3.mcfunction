@@ -97,6 +97,8 @@ execute if score stage_main_thread AzrTimerStack matches 228..229 if entity @n[t
 execute if score stage_main_thread AzrTimerStack matches 232 positioned -79919 38 35 run function skyblock:azr/assets/mobs_new/spider_giant
 execute if score stage_main_thread AzrTimerStack matches 232 positioned -79914 38 28 run function skyblock:azr/assets/mobs_new/undead_pickaxe
 execute if score stage_main_thread AzrTimerStack matches 232 positioned -79914 38 27 run function skyblock:azr/assets/mobs_new/undead
+execute if score stage_main_thread AzrTimerStack matches 232 positioned -79923 44 28 run function skyblock:azr/assets/mobs_new/summoner
+execute if score stage_main_thread AzrTimerStack matches 232 positioned -79923 44 28 run function skyblock:azr/assets/mobs_new/summoner
 
 execute if score stage_main_thread AzrTimerStack matches 232 run playsound ambient.crimson_forest.loop ambient @a[tag=azrShowDialog] -78000 100 0 1000
 execute if score stage_main_thread AzrTimerStack matches 232 run playsound ambient.crimson_forest.mood ambient @a[tag=azrShowDialog] -78000 100 0 1000

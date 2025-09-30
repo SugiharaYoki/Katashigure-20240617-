@@ -60,6 +60,10 @@ fill -79942 40 3 -79944 38 3 minecraft:purple_stained_glass{name: "to Stage3 bat
 fill -79935 43 34 -79935 45 34 minecraft:purple_stained_glass{name: "to Secret Room-1"}
 setblock -79928 38 33 minecraft:quartz_pillar{name: "Spider Room"}
 fill -79931 38 40 -79931 40 40 purple_stained_glass{name: "to Stage4 alpha"}
+setblock -79918 42 25 chest[facing=north]
+item replace block -79918 42 25 container.13 with coal 2
+setblock -79905 42 33 chest[facing=west]
+item replace block -79905 42 33 container.13 with iron_ingot 1
 
 #Stage3 beta
 fill -79957 42 13 -79955 38 13 minecraft:purple_stained_glass{name: "to Stage4 beta"}
