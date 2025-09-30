@@ -277,7 +277,7 @@ execute if score stage_main_thread AzrTimerStack matches 500 run advancement gra
 execute if score stage_main_thread AzrTimerStack matches 500 run scoreboard players set wave Azr_system 27
 execute if score stage_main_thread AzrTimerStack matches 500 run scoreboard players set stage Azr_system 36
 execute if score stage_main_thread AzrTimerStack matches 500 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..11}] Azr_skillPoints 12
-execute if score stage_main_thread AzrTimerStack matches 500 run tellraw @a[tag=azrPlayer,scores={AZR_chainKillUpg_pts=..4},tag=hasSkills] [{"text":"索命连击","color":"gold"},{"text":"可用点数已增加，目前为：5","color":"green"}]
+execute if score stage_main_thread AzrTimerStack matches 500 run tellraw @a[tag=azrPlayer,scores={AZR_chainKillUpg_pts=..4},tag=hasSkills] [{"text":"索命连击","color":"light_purple","bold":true},{"bold":false,"text":"可用点数已增加，目前为：5","color":"white"}]
 execute if score stage_main_thread AzrTimerStack matches 500 run scoreboard players set @a[scores={AZR_chainKillUpg_pts=..4}] AZR_chainKillUpg_pts 5
 execute if score stage_main_thread AzrTimerStack matches 500 run summon minecraft:item_frame -79898.50 40.0 -116.50 {ItemRotation: 2b, Invulnerable: 1b, Item: {count: 1, id: "minecraft:map"}, Invisible: 1b,Facing:1}
 execute if score stage_main_thread AzrTimerStack matches 500 run summon minecraft:item_frame -79897.50 40.0 -115.50 {ItemRotation: 0b, Invulnerable: 1b, Item: {count: 1, id: "minecraft:paper"}, Invisible: 1b,Facing:1}
