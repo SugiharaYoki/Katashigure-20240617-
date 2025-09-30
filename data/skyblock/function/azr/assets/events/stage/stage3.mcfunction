@@ -4,10 +4,10 @@ execute if score stage_main_thread AzrTimerStack matches 1 run title @a[tag=azrS
 execute if score stage_main_thread AzrTimerStack matches 1 run bossbar add azr:progress_bar_normal "Stage 3"
 execute if score stage_main_thread AzrTimerStack matches 1 run bossbar set azr:progress_bar_normal color white
 execute if score stage_main_thread AzrTimerStack matches 1 run bossbar set azr:progress_bar_normal players @a[tag=azrPlayer]
-execute if score stage_main_thread AzrTimerStack matches 1 run bossbar set azr:progress_bar_normal max 251
+execute if score stage_main_thread AzrTimerStack matches 1 run bossbar set azr:progress_bar_normal max 232
 execute if score stage_main_thread AzrTimerStack matches 1 run tellraw @a[tag=DebugMode,tag=azrPlayer] [{"text":"[DEBUG MODE MESSAGE] You are playing \"Stage 3\", with playerCount = "},{"score":{"objective":"Azr_system","name":"playerCount"}},{"text":" Maximum Seconds = 251"}]
-execute if score stage_main_thread AzrTimerStack matches 1..251 store result bossbar azr:progress_bar_normal value run scoreboard players get stage_main_thread AzrTimerStack
-execute if score stage_main_thread AzrTimerStack matches 251 run bossbar remove azr:progress_bar_normal
+execute if score stage_main_thread AzrTimerStack matches 1..232 store result bossbar azr:progress_bar_normal value run scoreboard players get stage_main_thread AzrTimerStack
+execute if score stage_main_thread AzrTimerStack matches 232 run bossbar remove azr:progress_bar_normal
 #刷怪时序
 #第一波
 execute if score stage_main_thread AzrTimerStack matches 20 positioned -79927 38 25 run function skyblock:azr/assets/mobs_new/undead
