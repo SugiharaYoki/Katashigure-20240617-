@@ -16,10 +16,10 @@ execute as @s[scores={Azr_Shop=8431552}] \
     
 execute as @s[scores={Azr_Shop=8431553}] \
     unless score tempPlayerShopSuccess Azr_system matches 1 \
-    if score @s AzrMelonCount matches 2.. \
+    if score @s AzrMelonCount matches 1.. \
     unless function skyblock:azr/system/shop/purchase/ramiel/\
     heart_rate_monitor run scoreboard players set tempPlayerShopSuccess Azr_system 1
-    # new_3  @s  2 金西瓜 换 1 心跳仪
+    # new_3  @s  1 金西瓜 换 1 心跳仪
     
 execute as @s[scores={Azr_Shop=8431554}] \
     unless score tempPlayerShopSuccess Azr_system matches 1 \
