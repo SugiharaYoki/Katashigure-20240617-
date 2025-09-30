@@ -341,7 +341,7 @@ execute if score stage_main_thread AzrTimerStack matches 161 run fill -79944 34 
 execute if score stage_main_thread AzrTimerStack matches 161 run fill -79935 9 147 -79935 8 147 minecraft:quartz_pillar
 execute if score stage_main_thread AzrTimerStack matches 161 run scoreboard players set wave Azr_system 12
 execute if score stage_main_thread AzrTimerStack matches 161 run scoreboard players set stage Azr_system 14
-execute if score stage_main_thread AzrTimerStack matches 161 run tellraw @a[scores={Azr_skillPoints=..5}] {"text":"永久升级 - 初始绿宝石数量 +5","color":"light_purple"}
+execute if score stage_main_thread AzrTimerStack matches 161 run tellraw @a[scores={Azr_skillPoints=..5}] [{"text":"永久升级：","color":"light_purple","bold": true},{"text":"开始新游戏时，绿宝石数量 +5","color":"white","bold": false}]
 execute if score stage_main_thread AzrTimerStack matches 161 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..5}] Azr_skillPoints 6
 execute if score stage_main_thread AzrTimerStack matches 161 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage5
 

@@ -109,7 +109,7 @@ execute if score stage_main_thread AzrTimerStack matches 232 run fill -79935 43 
 execute if score stage_main_thread AzrTimerStack matches 232 run scoreboard players set wave Azr_system 6
 execute if score stage_main_thread AzrTimerStack matches 232 run scoreboard players set stage Azr_system 7
 execute if score stage_main_thread AzrTimerStack matches 232 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage3
-execute if score stage_main_thread AzrTimerStack matches 232 run tellraw @a[scores={Azr_skillPoints=..2}] {"text":"永久升级 - 开始新游戏时 绿宝石数量 +5","color":"light_purple"}
+execute if score stage_main_thread AzrTimerStack matches 232 run tellraw @a[scores={Azr_skillPoints=..2}] [{"text":"永久升级：","color":"light_purple","bold": true},{"text":"开始新游戏时，绿宝石数量 +5","color":"white","bold": false}]
 execute if score stage_main_thread AzrTimerStack matches 232 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..2}] Azr_skillPoints 3
 execute if score stage_main_thread AzrTimerStack matches 232 run title @a[tag=azrShowDialog] actionbar {"text":"Stage Clear","color":"green"}
 execute if score stage_main_thread AzrTimerStack matches 232 run setblock -79931 43 42 air
