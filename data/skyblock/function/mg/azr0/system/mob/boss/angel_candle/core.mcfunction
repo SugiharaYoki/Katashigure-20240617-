@@ -6,9 +6,9 @@ execute store result score @s Health run data get entity @s Health
 
 #execute if score MG_AZR0_Timer rng2 matches 0 store result score MG_AZR0_Timer rng4 run random value 37..41
 
-execute if score @s rng8 matches 10 store result score @s[scores={Health=100..}] rng1 run random value 15..62
-execute if score @s rng8 matches 10 store result score @s[scores={Health=60..99}] rng1 run random value 25..64
-execute if score @s rng8 matches 10 store result score @s[scores={Health=..59}] rng1 run random value 35..68
+execute if score @s rng8 matches 10 store result score @s[scores={Health=130..}] rng1 run random value 15..62
+execute if score @s rng8 matches 10 store result score @s[scores={Health=80..129}] rng1 run random value 25..64
+execute if score @s rng8 matches 10 store result score @s[scores={Health=..79}] rng1 run random value 35..68
 execute if score @s rng8 matches 10 run scoreboard players operation @s rng8 += @s rng1
 execute if score @s rng8 matches 80 store result score @s rng2 run random value 1..8
 
