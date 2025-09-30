@@ -39,7 +39,6 @@ scoreboard players operation @s Azr_startCount = Pointer Azr_startCount
 scoreboard players add @s Azr_personalStartCount 1
 scoreboard players set @s AzrJoinWave -2
 
-execute if entity @s[tag=AZR_SEAawakened] run function skyblock:azr/assets/items/others/revival_star
 
 #azr-tags
 tag @s remove azrDead

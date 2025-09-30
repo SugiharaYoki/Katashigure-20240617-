@@ -241,6 +241,7 @@ execute if score Azr_Story_Introduction rng1 matches 1025 positioned -79977 8 61
 
 execute if score Azr_Story_Introduction rng1 matches 1025 positioned -79974 38 -16 run function skyblock:azr/assets/mobs_new/sword
 execute if score Azr_Story_Introduction rng1 matches 1025 positioned -79974 38 -13 run function skyblock:azr/assets/mobs_new/sword
+execute if score Azr_Story_Introduction rng1 matches 1025 positioned -79974 38 -13 as @a[tag=azrPlayer] at @s run function skyblock:azr/assets/items/others/revival_star
 
 execute if score Azr_Story_Introduction rng1 matches 1025 positioned -79974 38 -16 as @e[type=vindicator,distance=0..10] at @s run rotate @s facing entity @p[tag=azrPlayer]
 
