@@ -1,14 +1,14 @@
-execute as @a[tag=azrPlayer] at @s[tag=!AzrCookie] anchored eyes positioned ^ ^ ^1 if entity @e[type=parrot,tag=AzrielFriendly,distance=0..0.5] run tag @s add AzrCookieR
-execute as @a[tag=azrPlayer] at @s[tag=!AzrCookie] anchored eyes positioned ^ ^ ^1.5 if entity @e[type=parrot,tag=AzrielFriendly,distance=0..0.5] run tag @s add AzrCookieR
-execute as @a[tag=azrPlayer] at @s[tag=!AzrCookie] anchored eyes positioned ^ ^ ^2 if entity @e[type=parrot,tag=AzrielFriendly,distance=0..0.5] run tag @s add AzrCookieR
-execute as @a[tag=azrPlayer] at @s[tag=!AzrCookie] anchored eyes positioned ^ ^ ^2.5 if entity @e[type=parrot,tag=AzrielFriendly,distance=0..0.5] run tag @s add AzrCookieR
-execute as @a[tag=azrPlayer] at @s[tag=!AzrCookie] anchored eyes positioned ^ ^ ^3 if entity @e[type=parrot,tag=AzrielFriendly,distance=0..0.5] run tag @s add AzrCookieR
-execute as @a[tag=azrPlayer] at @s[tag=!AzrCookie] anchored eyes positioned ^ ^ ^3.5 if entity @e[type=parrot,tag=AzrielFriendly,distance=0..0.5] run tag @s add AzrCookieR
-execute as @a[tag=azrPlayer] at @s[tag=!AzrCookie] anchored eyes positioned ^ ^ ^4 if entity @e[type=parrot,tag=AzrielFriendly,distance=0..0.5] run tag @s add AzrCookieR
-execute as @a[tag=azrPlayer] at @s[tag=!AzrCookie] anchored eyes positioned ^ ^ ^4.5 if entity @e[type=parrot,tag=AzrielFriendly,distance=0..0.5] run tag @s add AzrCookieR
-execute as @a[tag=azrPlayer] at @s[tag=!AzrCookie] anchored eyes positioned ^ ^ ^5 if entity @e[type=parrot,tag=AzrielFriendly,distance=0..0.5] run tag @s add AzrCookieR
-execute as @a[tag=azrPlayer] at @s[tag=!AzrCookie] anchored eyes positioned ^ ^ ^5.5 if entity @e[type=parrot,tag=AzrielFriendly,distance=0..0.5] run tag @s add AzrCookieR
-execute as @a[tag=azrPlayer] at @s[tag=!AzrCookie] anchored eyes positioned ^ ^ ^6 if entity @e[type=parrot,tag=AzrielFriendly,distance=0..0.5] run tag @s add AzrCookieR
+execute as @a[tag=azrPlayer] at @s[tag=!AzrCookie] anchored eyes positioned ^ ^ ^1 if entity @e[type=parrot,tag=AzrielNPC_bird,distance=0..0.5] run tag @s add AzrCookieR
+execute as @a[tag=azrPlayer] at @s[tag=!AzrCookie] anchored eyes positioned ^ ^ ^1.5 if entity @e[type=parrot,tag=AzrielNPC_bird,distance=0..0.5] run tag @s add AzrCookieR
+execute as @a[tag=azrPlayer] at @s[tag=!AzrCookie] anchored eyes positioned ^ ^ ^2 if entity @e[type=parrot,tag=AzrielNPC_bird,distance=0..0.5] run tag @s add AzrCookieR
+execute as @a[tag=azrPlayer] at @s[tag=!AzrCookie] anchored eyes positioned ^ ^ ^2.5 if entity @e[type=parrot,tag=AzrielNPC_bird,distance=0..0.5] run tag @s add AzrCookieR
+execute as @a[tag=azrPlayer] at @s[tag=!AzrCookie] anchored eyes positioned ^ ^ ^3 if entity @e[type=parrot,tag=AzrielNPC_bird,distance=0..0.5] run tag @s add AzrCookieR
+execute as @a[tag=azrPlayer] at @s[tag=!AzrCookie] anchored eyes positioned ^ ^ ^3.5 if entity @e[type=parrot,tag=AzrielNPC_bird,distance=0..0.5] run tag @s add AzrCookieR
+execute as @a[tag=azrPlayer] at @s[tag=!AzrCookie] anchored eyes positioned ^ ^ ^4 if entity @e[type=parrot,tag=AzrielNPC_bird,distance=0..0.5] run tag @s add AzrCookieR
+execute as @a[tag=azrPlayer] at @s[tag=!AzrCookie] anchored eyes positioned ^ ^ ^4.5 if entity @e[type=parrot,tag=AzrielNPC_bird,distance=0..0.5] run tag @s add AzrCookieR
+execute as @a[tag=azrPlayer] at @s[tag=!AzrCookie] anchored eyes positioned ^ ^ ^5 if entity @e[type=parrot,tag=AzrielNPC_bird,distance=0..0.5] run tag @s add AzrCookieR
+execute as @a[tag=azrPlayer] at @s[tag=!AzrCookie] anchored eyes positioned ^ ^ ^5.5 if entity @e[type=parrot,tag=AzrielNPC_bird,distance=0..0.5] run tag @s add AzrCookieR
+execute as @a[tag=azrPlayer] at @s[tag=!AzrCookie] anchored eyes positioned ^ ^ ^6 if entity @e[type=parrot,tag=AzrielNPC_bird,distance=0..0.5] run tag @s add AzrCookieR
 give @a[tag=AzrCookieR] cookie 1
 tag @a[tag=AzrCookieR] add AzrCookie
 tag @a remove AzrCookieR

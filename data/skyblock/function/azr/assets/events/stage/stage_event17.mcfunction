@@ -18,6 +18,6 @@ execute if score $NetherShop Azr_system matches 1 run effect give @a[x=-79542.5,
 execute if score $NetherShop Azr_system matches 1 run effect give @a[x=-79542.5,y=24.0,z=-407.5,distance=2.5..,tag=azrPlayer,tag=ZaneiTalkB] fire_resistance 5 0 false
 execute if score $NetherShop Azr_system matches 1 run effect give @a[x=-79542.5,y=24.0,z=-407.5,distance=2.5..,tag=azrPlayer,tag=ZaneiTalkB] resistance 5 2 false
 
-execute as @e[tag=AzrielMob,x=-79543,y=25,z=-409,distance=0..4,limit=1,sort=nearest] at @s anchored eyes run tp @n[type=parrot,tag=AzrielFriendly,tag=AzrielDecMob,limit=1] ^ ^ ^ ~ ~
-execute unless entity @e[tag=AzrielMob,x=-79543,y=25,z=-409,distance=0..4,limit=1] as @n[type=parrot,tag=AzrielFriendly,tag=AzrielDecMob] at @s run tp @s -79543 26 -409
-execute at @n[type=parrot,tag=AzrielFriendly,tag=AzrielDecMob] run effect give @e[tag=AzrielMob,distance=0..3,sort=nearest,limit=1] wither 3 2 true
+execute as @e[tag=AzrielMob,x=-79543,y=25,z=-409,distance=0..4,limit=1,sort=nearest] at @s anchored eyes run tp @n[type=parrot,tag=AzrielNPC_bird] ^ ^ ^ ~ ~
+execute unless entity @e[tag=AzrielMob,x=-79543,y=25,z=-409,distance=0..4,limit=1] as @n[type=parrot,tag=AzrielNPC_bird] at @s run tp @s -79543 26 -409
+execute at @n[type=parrot,tag=AzrielNPC_bird] run effect give @e[tag=AzrielMob,distance=0..3.2,sort=nearest,limit=1] wither 3 2 true
