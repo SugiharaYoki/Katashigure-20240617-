@@ -1,1 +1,1 @@
-summon villager ~ ~ ~ {PersistenceRequired:1b,Invulnerable:1b,Tags:["AzrielNPC_marinus","AzrielFriendly"],DeathLootTable:"skyblock:null",Health:500.0f,CustomName:'"马林努斯"',attributes:[{id:"max_health",base:500.0d},{id:"movement_speed",base:0.0d}]}
+summon villager ~ ~ ~ {PersistenceRequired:1b,Invulnerable:1b,Tags:["AzrielNPC_marinus","AzrielFriendly"],DeathLootTable:"skyblock:null",Health:500.0f,CustomName:'"马林努斯"',attributes:[{id:"max_health",base:500.0d},{id:"movement_speed",base:0.0d}],Rotation:[180.0f,0.0f]}
