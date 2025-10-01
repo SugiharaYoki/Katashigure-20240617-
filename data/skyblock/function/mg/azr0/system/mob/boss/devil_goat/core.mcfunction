@@ -40,7 +40,9 @@ execute if score @s rng10 matches 2 run scoreboard players set @s rng2 7
 execute if score @s rng10 matches 2 run scoreboard players set @s rng8 81
 
 
-execute as @s at @s if entity @n[type=minecraft:evoker_fangs,distance=..1] run effect give @s minecraft:instant_health 1 0 true
+execute as @s at @s if entity @n[type=minecraft:evoker_fangs,distance=..1] if score @s rng7 matches ..0 run scoreboard players set @s rng7 60
+execute as @s at @s if score @s rng7 matches 1.. run scoreboard players remove @s rng7 1
+execute as @s at @s if score @s rng7 matches 58 run effect give @s minecraft:instant_health 1 0 true
 
 
 
