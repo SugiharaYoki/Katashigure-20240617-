@@ -106,13 +106,16 @@ item replace block -79939 38 20 container.15 with iron_ingot 1
 setblock -79939 39 58 chest[facing=north]
 fill -79949 41 54 -79949 38 57 minecraft:purple_stained_glass{name: "to Password Panel"}
 fill -79950 38 59 -79951 38 59 chest[facing=north]
-item replace block -79950 38 59 container.11 with minecraft:emerald 10
-item replace block -79950 38 59 container.13 with minecraft:emerald 10
-item replace block -79950 38 59 container.15 with minecraft:emerald 10
-item replace block -79951 38 59 container.11 with minecraft:emerald 10
-item replace block -79951 38 59 container.13 with minecraft:emerald 10
-item replace block -79951 38 59 container.15 with minecraft:emerald 10
+item replace block -79950 38 59 container.11 with minecraft:emerald 5
+item replace block -79950 38 59 container.13 with minecraft:emerald 5
+item replace block -79950 38 59 container.15 with minecraft:emerald 5
+item replace block -79951 38 59 container.11 with minecraft:emerald 5
+item replace block -79951 38 59 container.13 with minecraft:emerald 5
+item replace block -79951 38 59 container.15 with minecraft:emerald 5
 fill -79950 38 58 -79951 39 58 quartz_block
+
+setblock -79949 39 61 minecraft:white_stained_glass
+setblock -79943 39 61 minecraft:white_stained_glass
 
 #even1
 fill -79930 42 54 -79932 38 54 air{name: "clear anvil barrier"}

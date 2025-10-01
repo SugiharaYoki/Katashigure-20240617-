@@ -1,0 +1,1 @@
+give @s flow_armor_trim_smithing_template[custom_name='{"text":"贪婪石板","italic":false,"color":"#306fc2"}',lore=['{"text":"背包常效装备","italic":false,"color":"yellow","bold": true}','{"text":"大大增加道具拾取范围","italic":false,"color":"#9eb9de"}'],custom_data={azr_amulet:1b,azr_amulet_greed_board:1b}]
