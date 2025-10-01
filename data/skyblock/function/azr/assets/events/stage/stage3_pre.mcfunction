@@ -35,12 +35,12 @@ execute positioned -79942 32 39 as @n[tag=AzrielMarker_encounter,distance=0..0.5
 execute positioned -79942 32 39 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=34}] positioned -79949 36 42 run function skyblock:azr/assets/mobs_new/undead
 execute positioned -79942 32 39 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=38}] positioned -79949 36 42 run function skyblock:azr/assets/mobs_new/smoke
 execute positioned -79942 32 39 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=42}] positioned -79949 36 42 run function skyblock:azr/assets/mobs_new/undead
-execute positioned -79942 32 39 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=50}] positioned -79940 32 42 run function skyblock:azr/assets/mobs_new/summon_delay/undead_pickaxe
-execute positioned -79942 32 39 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=50}] positioned -79940 32 36 run function skyblock:azr/assets/mobs_new/summon_delay/undead_pickaxe
+execute positioned -79942 32 39 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=50}] positioned -79940 32 42 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_undead_pickaxe","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute positioned -79942 32 39 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=50}] positioned -79940 32 36 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_undead_pickaxe","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute positioned -79942 32 39 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=51..52}] positioned -79949 36 42 if entity @n[tag=AzrielMob_smoke,distance=..8] run scoreboard players set @s rng1 51
 execute positioned -79942 32 39 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=54}] positioned -79949 36 42 run function skyblock:azr/assets/mobs_new/smoke_mother
-execute positioned -79942 32 39 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=58}] positioned -79940 32 42 run function skyblock:azr/assets/mobs_new/summon_delay/undead_pickaxe
-execute positioned -79942 32 39 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=58}] positioned -79940 32 36 run function skyblock:azr/assets/mobs_new/summon_delay/undead_pickaxe
+execute positioned -79942 32 39 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=58}] positioned -79940 32 42 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_undead_pickaxe","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute positioned -79942 32 39 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=58}] positioned -79940 32 36 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_undead_pickaxe","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute positioned -79942 32 39 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=88}] positioned -79949 36 42 run function skyblock:azr/assets/mobs_new/smoke_mother
 execute positioned -79942 32 39 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=90..91}] positioned -79949 36 42 if entity @n[tag=AzrielMob_smoke,distance=..8] run scoreboard players set @s rng1 90
 execute positioned -79942 32 39 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=93}] positioned -79949 36 42 run function skyblock:azr/assets/mobs_new/barrier_maintainer {id:_stagepre3_2}
