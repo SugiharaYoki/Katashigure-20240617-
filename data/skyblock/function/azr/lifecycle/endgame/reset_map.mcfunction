@@ -97,6 +97,8 @@ fill -79930 38 52 -79932 42 52 purple_stained_glass{name: "to Stage Boss1"}
 setblock -79954 32 39 chest[facing=east]
 item replace block -79954 32 39 container.12 with minecraft:beef 2
 item replace block -79954 32 39 container.14 with minecraft:flint 1
+fill -79932 48 44 -79930 48 44 minecraft:quartz_block
+fill -79931 48 43 -79931 48 45 minecraft:quartz_block
 
 #Stage4 beta
 setblock -79939 38 20 air

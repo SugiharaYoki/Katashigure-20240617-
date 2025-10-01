@@ -67,22 +67,48 @@ execute if score stage_main_thread AzrTimerStack matches 184..185 if entity @n[t
 execute if score stage_main_thread AzrTimerStack matches 186 run title @a[tag=azrShowDialog] actionbar {"text":"Wave Clear","color":"green"}
 execute if score stage_main_thread AzrTimerStack matches 206 run title @a[tag=azrShowDialog] actionbar {"text":"Stage 4 - Wave 3","color":"red"}
 
+execute if score stage_main_thread AzrTimerStack matches 207 positioned -79925 38 46 run function skyblock:azr/assets/mobs_new/undead
+execute if score stage_main_thread AzrTimerStack matches 211 positioned -79925 38 46 run function skyblock:azr/assets/mobs_new/undead
+execute if score stage_main_thread AzrTimerStack matches 215 positioned -79925 38 46 run function skyblock:azr/assets/mobs_new/shield
+execute if score stage_main_thread AzrTimerStack matches 227 positioned -79937 38 46 run function skyblock:azr/assets/mobs_new/undead
+execute if score stage_main_thread AzrTimerStack matches 231 positioned -79937 38 46 run function skyblock:azr/assets/mobs_new/undead
+execute if score stage_main_thread AzrTimerStack matches 235 positioned -79937 38 46 run function skyblock:azr/assets/mobs_new/shield
+execute if score stage_main_thread AzrTimerStack matches 240 if score #temp_rng Azr_system matches 1 positioned -79925 38 46 run function skyblock:azr/assets/mobs_new/summoner
+execute if score stage_main_thread AzrTimerStack matches 240 if score #temp_rng Azr_system matches 2 positioned -79937 38 46 run function skyblock:azr/assets/mobs_new/summoner
+execute if score stage_main_thread AzrTimerStack matches 258..259 if entity @n[tag=AzrielMob_summoner] run scoreboard players set stage_main_thread AzrTimerStack 258
+execute if score stage_main_thread AzrTimerStack matches 260 if score #temp_rng Azr_system matches 1 positioned -79925 38 46 run function skyblock:azr/assets/mobs_new/summoner
+execute if score stage_main_thread AzrTimerStack matches 260 if score #temp_rng Azr_system matches 2 positioned -79937 38 46 run function skyblock:azr/assets/mobs_new/summoner
+execute if score stage_main_thread AzrTimerStack matches 260 positioned -79935 38 46 run function skyblock:azr/assets/mobs_new/sword
+execute if score stage_main_thread AzrTimerStack matches 260 positioned -79927 38 46 run function skyblock:azr/assets/mobs_new/sword
+execute if score stage_main_thread AzrTimerStack matches 261..262 if entity @n[tag=AzrielMob_summoner] run scoreboard players set stage_main_thread AzrTimerStack 261
+execute if score stage_main_thread AzrTimerStack matches 264 positioned -79937 38 46 run playsound minecraft:entity.warden.dig block @a -79930.23 49.00 44.45 2 0.5
+execute if score stage_main_thread AzrTimerStack matches 263 if score #temp_rng Azr_system matches 1 positioned -79935 38 46 run function skyblock:azr/assets/mobs_new/smoke
+execute if score stage_main_thread AzrTimerStack matches 263 if score #temp_rng Azr_system matches 2 positioned -79927 38 46 run function skyblock:azr/assets/mobs_new/smoke
+execute if score stage_main_thread AzrTimerStack matches 266 if score #temp_rng Azr_system matches 1 positioned -79935 38 46 run function skyblock:azr/assets/mobs_new/smoke
+execute if score stage_main_thread AzrTimerStack matches 266 if score #temp_rng Azr_system matches 2 positioned -79927 38 46 run function skyblock:azr/assets/mobs_new/smoke
+execute if score stage_main_thread AzrTimerStack matches 269 if score #temp_rng Azr_system matches 1 positioned -79935 38 46 run function skyblock:azr/assets/mobs_new/smoke
+execute if score stage_main_thread AzrTimerStack matches 269 if score #temp_rng Azr_system matches 2 positioned -79927 38 46 run function skyblock:azr/assets/mobs_new/smoke
+execute if score stage_main_thread AzrTimerStack matches 272 if score #temp_rng Azr_system matches 1 positioned -79925 38 46 run function skyblock:azr/assets/mobs_new/undead_pickaxe
+execute if score stage_main_thread AzrTimerStack matches 272 if score #temp_rng Azr_system matches 2 positioned -79937 38 46 run function skyblock:azr/assets/mobs_new/undead_pickaxe
+execute if score stage_main_thread AzrTimerStack matches 275..276 if entity @n[tag=AzrielMob_undead_pickaxe] run scoreboard players set stage_main_thread AzrTimerStack 275
+
+#粒子效果动画 - 屋顶坍塌
+execute if score stage_main_thread AzrTimerStack matches 272 run particle minecraft:block{block_state:{Name:quartz_block}} -79930.49 48.00 44.50 1 0 1 0.5 200 normal
+execute if score stage_main_thread AzrTimerStack matches 273..275 run particle minecraft:block{block_state:{Name:quartz_block}} -79930.49 48.00 44.50 1 0 1 0.5 20 force
+execute if score stage_main_thread AzrTimerStack matches 277..283 run particle minecraft:block{block_state:{Name:quartz_block}} -79930.49 48.00 44.50 1 0 1 0.5 40 normal
+execute if score stage_main_thread AzrTimerStack matches 283 positioned -79931 48 44 run function skyblock:azr/assets/mobs_new/zoglin
+execute if score stage_main_thread AzrTimerStack matches 284 positioned -79931 48 44 run effect give @n[type=zoglin,distance=..20] resistance infinite 4 true
+execute if score stage_main_thread AzrTimerStack matches 284 run particle minecraft:block{block_state:{Name:quartz_block}} -79930.49 48.00 44.50 1 0 1 0.8 200 normal
+execute if score stage_main_thread AzrTimerStack matches 284 run particle explosion -79930.49 47.00 44.50 2 0 2 0.8 10 normal
+execute if score stage_main_thread AzrTimerStack matches 284 run playsound minecraft:entity.generic.explode block @a -79930.64 48.00 44.44 2 0.7
+execute if score stage_main_thread AzrTimerStack matches 284 positioned -79937 38 46 run fill -79932 48 44 -79930 48 44 air
+execute if score stage_main_thread AzrTimerStack matches 284 positioned -79937 38 46 run fill -79931 48 43 -79931 48 45 air
 
 
 
+execute if score stage_main_thread AzrTimerStack matches 280..287 run playsound ambient.nether_wastes.mood ambient @a[tag=azrShowDialog] -79931 38 53 10 0.7
 
-execute if score stage_main_thread AzrTimerStack matches 280..281 if entity @n[tag=AzrielMob_summoner] run scoreboard players set stage_main_thread AzrTimerStack 280
 
-execute if score stage_main_thread AzrTimerStack matches 281..287 run playsound ambient.nether_wastes.loop ambient @a[tag=azrShowDialog] -79931 38 53 10
-execute if score stage_main_thread AzrTimerStack matches 281..287 run playsound ambient.nether_wastes.mood ambient @a[tag=azrShowDialog] -79931 38 53 10 0.7
-execute if score stage_main_thread AzrTimerStack matches 287 run effect give @a[tag=azrPlayer] darkness 5 0 true
-execute if score stage_main_thread AzrTimerStack matches 289 run effect give @a[tag=azrPlayer] unluck 60 0 false
-execute if score stage_main_thread AzrTimerStack matches 289 run kill @e[tag=AzrielMob,x=-79900,y=40,z=0,distance=0..500]
-execute if score stage_main_thread AzrTimerStack matches 289 run kill @e[tag=AzrielDecMob,x=-79900,y=40,z=0,distance=0..500]
-execute if score stage_main_thread AzrTimerStack matches 289 run playsound minecraft:entity.lightning_bolt.thunder ambient @a[tag=azrShowDialog] -79931 38 53 100 0.5
-execute if score stage_main_thread AzrTimerStack matches 289 run playsound minecraft:entity.lightning_bolt.thunder ambient @a[tag=azrShowDialog] -79931 38 53 100 0.75
-execute if score stage_main_thread AzrTimerStack matches 289 run playsound minecraft:entity.lightning_bolt.thunder ambient @a[tag=azrShowDialog] -79931 38 53 100 1
-execute if score stage_main_thread AzrTimerStack matches 289 run playsound minecraft:entity.lightning_bolt.impact ambient @a[tag=azrShowDialog] -79931 38 53 100 0.8
 
 execute if score stage_main_thread AzrTimerStack matches 289 run playsound ambient.crimson_forest.loop ambient @a[tag=azrShowDialog] -78000 100 0 100000
 execute if score stage_main_thread AzrTimerStack matches 289 run playsound ambient.crimson_forest.mood ambient @a[tag=azrShowDialog] -78000 100 0 100000
@@ -91,15 +117,11 @@ execute if score stage_main_thread AzrTimerStack matches 289 run fill -79930 38 
 execute if score stage_main_thread AzrTimerStack matches 289 run scoreboard players set wave Azr_system 7
 execute if score stage_main_thread AzrTimerStack matches 293 run scoreboard players set stage Azr_system 9
 execute if score stage_main_thread AzrTimerStack matches 293 run scoreboard players set stage_main_thread AzrTimerStack 0
-#execute if score stage_main_thread AzrTimerStack matches 293 run scoreboard players set @a[tag=azrPlayer,scores={Azr_PlyPtsH=..3}] Azr_PlyPtsH 4
 execute if score stage_main_thread AzrTimerStack matches 293 run title @a[tag=azrShowDialog] actionbar {"text":"Stage Clear..?","color":"green"}
 execute if score stage_main_thread AzrTimerStack matches 293 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage4
 execute if score stage_main_thread AzrTimerStack matches 293 run tellraw @a[tag=azrPlayer,scores={AZR_chainKillUpg_pts=..1},tag=hasSkills] [{"text":"索命连击","color":"light_purple","bold":true},{"bold":false,"text":"可用点数已增加，目前为：2","color":"white"}]
 execute if score stage_main_thread AzrTimerStack matches 293 run scoreboard players set @a[scores={AZR_chainKillUpg_pts=..1}] AZR_chainKillUpg_pts 2
 
-execute if score stage_main_thread AzrTimerStack matches 200.. run kill @e[x=-79900,y=130,z=0,distance=0..1000,type=item,nbt={Item:{id:"minecraft:quartz_block"}}]
-execute if score stage_main_thread AzrTimerStack matches 200.. run kill @e[x=-79900,y=130,z=0,distance=0..1000,type=item,nbt={Item:{id:"minecraft:quartz_bricks"}}]
-execute if score stage_main_thread AzrTimerStack matches 200.. run kill @e[x=-79900,y=130,z=0,distance=0..1000,type=item,nbt={Item:{id:"minecraft:quartz_pillar"}}]
 execute if score stage_main_thread AzrTimerStack matches 293 run clone -79934 38 18 -79934 38 18 -79931 38 42 replace move
 
 execute if score stage_main_thread AzrTimerStack matches 293 run particle minecraft:end_rod -79934 39 18 0.6 0.6 0.6 0.0 13
