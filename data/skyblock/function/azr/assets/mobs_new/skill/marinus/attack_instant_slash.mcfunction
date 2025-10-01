@@ -18,6 +18,10 @@ execute at @s rotated ~ 0 positioned ^0.6 ^0.3 ^1 positioned ~ ~1.2 ~ run partic
 execute at @s rotated ~ 0 positioned ^0.6 ^0.3 ^1 positioned ~ ~1.2 ~ run particle minecraft:dripping_dripstone_water ~ ~ ~ 0.1 0.1 0.1 0.0 7
 execute at @s rotated ~ 0 positioned ^0.8 ^0.4 ^1 positioned ~ ~1.2 ~ run particle minecraft:crit ~ ~ ~ 0.2 0.2 0.2 0.0 7
 execute at @s rotated ~ 0 positioned ^0.8 ^0.4 ^1 positioned ~ ~1.2 ~ run particle minecraft:dripping_dripstone_water ~ ~ ~ 0.1 0.1 0.1 0.0 7
+execute at @s rotated ~ 0 positioned ^1.0 ^0.5 ^1 positioned ~ ~1.2 ~ run particle minecraft:crit ~ ~ ~ 0.2 0.2 0.2 0.0 7
+execute at @s rotated ~ 0 positioned ^1.0 ^0.5 ^1 positioned ~ ~1.2 ~ run particle minecraft:dripping_dripstone_water ~ ~ ~ 0.1 0.1 0.1 0.0 7
+execute at @s rotated ~ 0 positioned ^1.2 ^0.6 ^1 positioned ~ ~1.2 ~ run particle minecraft:crit ~ ~ ~ 0.2 0.2 0.2 0.0 7
+execute at @s rotated ~ 0 positioned ^1.2 ^0.6 ^1 positioned ~ ~1.2 ~ run particle minecraft:dripping_dripstone_water ~ ~ ~ 0.1 0.1 0.1 0.0 7
 execute at @s rotated ~ 0 positioned ^-0.2 ^-0.1 ^1 positioned ~ ~1.2 ~ run particle minecraft:crit ~ ~ ~ 0.2 0.2 0.2 0.0 7
 execute at @s rotated ~ 0 positioned ^-0.2 ^-0.1 ^1 positioned ~ ~1.2 ~ run particle minecraft:dripping_dripstone_water ~ ~ ~ 0.1 0.1 0.1 0.0 7
 execute at @s rotated ~ 0 positioned ^-0.4 ^-0.2 ^1 positioned ~ ~1.2 ~ run particle minecraft:crit ~ ~ ~ 0.2 0.2 0.2 0.0 7
@@ -26,6 +30,10 @@ execute at @s rotated ~ 0 positioned ^-0.6 ^-0.3 ^1 positioned ~ ~1.2 ~ run part
 execute at @s rotated ~ 0 positioned ^-0.6 ^-0.3 ^1 positioned ~ ~1.2 ~ run particle minecraft:dripping_dripstone_water ~ ~ ~ 0.1 0.1 0.1 0.0 7
 execute at @s rotated ~ 0 positioned ^-0.8 ^-0.4 ^1 positioned ~ ~1.2 ~ run particle minecraft:crit ~ ~ ~ 0.2 0.2 0.2 0.0 7
 execute at @s rotated ~ 0 positioned ^-0.8 ^-0.4 ^1 positioned ~ ~1.2 ~ run particle minecraft:dripping_dripstone_water ~ ~ ~ 0.1 0.1 0.1 0.0 7
+execute at @s rotated ~ 0 positioned ^-1.0 ^-0.5 ^1 positioned ~ ~1.2 ~ run particle minecraft:crit ~ ~ ~ 0.2 0.2 0.2 0.0 7
+execute at @s rotated ~ 0 positioned ^-1.0 ^-0.5 ^1 positioned ~ ~1.2 ~ run particle minecraft:dripping_dripstone_water ~ ~ ~ 0.1 0.1 0.1 0.0 7
+execute at @s rotated ~ 0 positioned ^-1.2 ^-0.6 ^1 positioned ~ ~1.2 ~ run particle minecraft:crit ~ ~ ~ 0.2 0.2 0.2 0.0 7
+execute at @s rotated ~ 0 positioned ^-1.2 ^-0.6 ^1 positioned ~ ~1.2 ~ run particle minecraft:dripping_dripstone_water ~ ~ ~ 0.1 0.1 0.1 0.0 7
 
 
 
