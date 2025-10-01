@@ -29,7 +29,10 @@ execute if score @s rng8 matches 300.. run scoreboard players set @s rng8 0
 
 
 
-
+execute as @n[type=arrow,distance=0..6] at @s run particle sweep_attack ~ ~ ~ 0 0 0 0 1
+execute as @n[type=arrow,distance=0..6] at @s run playsound minecraft:block.note_block.snare block @a ~ ~ ~ 1 1.2
+execute as @n[type=arrow,distance=0..6] at @s run playsound minecraft:block.anvil.land block @a ~ ~ ~ 0.8 1.7
+execute as @n[type=arrow,distance=0..6] at @s run kill @s
 
 
 
