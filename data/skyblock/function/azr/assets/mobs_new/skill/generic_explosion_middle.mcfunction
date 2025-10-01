@@ -1,5 +1,6 @@
 particle large_smoke ~ ~ ~ 0.2 0.2 0.2 0.3 8
-particle explosion ~ ~ ~ 0.2 0.2 0.2 0 3
+particle large_smoke ~ ~ ~ 0.2 0.2 0.2 0.1 10
+particle explosion ~ ~ ~ 0.4 0.4 0.4 0 4
 playsound entity.generic.explode hostile @a ~ ~ ~ 1 0.9
 execute as @a[tag=azrPlayer,distance=..3.0] at @s run damage @s 2 explosion
 execute as @a[tag=azrPlayer,distance=..2.5] at @s run damage @s 5 explosion
