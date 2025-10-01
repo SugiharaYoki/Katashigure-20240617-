@@ -12,7 +12,7 @@ execute if score stage_bonus_thread AzrTimerStack matches 149 run bossbar remove
 #rightside:-79946 38 50
 execute if score stage_bonus_thread AzrTimerStack matches 2 positioned -79946 38 61 run function skyblock:azr/assets/mobs_new/undead
 
-execute if score stage_bonus_thread AzrTimerStack matches 20..21 if entity @n[tag=AzrielMob_undead] run scoreboard players set stage_bonus_thread AzrTimerStack 20
+execute if score stage_bonus_thread AzrTimerStack matches 4..5 if entity @n[tag=AzrielMob_undead] run scoreboard players set stage_bonus_thread AzrTimerStack 4
 
 execute if score stage_bonus_thread AzrTimerStack matches 22 positioned -79946 38 61 run tellraw @a[tag=azrShowDialog] [{"text":"你：","color":"aqua"},{"text":"\n（怪物……不再出现了？）","color":"white"}]
 
@@ -29,11 +29,13 @@ execute if score stage_bonus_thread AzrTimerStack matches 36 run setblock -79943
 execute if score stage_bonus_thread AzrTimerStack matches 41 positioned -79946 38 61 run tellraw @a[tag=azrShowDialog] [{"text":"你：","color":"aqua"},{"text":"\n（不对，有什么东西要来了）","color":"white"}]
 
 
-execute if score stage_bonus_thread AzrTimerStack matches 45..50 positioned -79946 38 61 run function skyblock:azr/assets/mobs_new/undead
+execute if score stage_bonus_thread AzrTimerStack matches 45..48 positioned -79946 38 61 run function skyblock:azr/assets/mobs_new/undead
 execute if score stage_bonus_thread AzrTimerStack matches 54..55 positioned -79946 38 61 run function skyblock:azr/assets/mobs_new/smoke
 execute if score stage_bonus_thread AzrTimerStack matches 59..60 positioned -79946 38 61 run function skyblock:azr/assets/mobs_new/smoke
 
-execute if score stage_bonus_thread AzrTimerStack matches 70..78 positioned -79946 38 61 run function skyblock:azr/assets/mobs_new/undead
+execute if score stage_bonus_thread AzrTimerStack matches 68..69 if entity @n[tag=AzrielMob_undead] run scoreboard players set stage_bonus_thread AzrTimerStack 68
+
+execute if score stage_bonus_thread AzrTimerStack matches 70..73 positioned -79946 38 61 run function skyblock:azr/assets/mobs_new/undead
 execute if score stage_bonus_thread AzrTimerStack matches 70 positioned -79946 38 61 run function skyblock:azr/assets/mobs_new/undead_pickaxe
 execute if score stage_bonus_thread AzrTimerStack matches 79 positioned -79946 38 61 run function skyblock:azr/assets/mobs_new/undead_pickaxe
 
