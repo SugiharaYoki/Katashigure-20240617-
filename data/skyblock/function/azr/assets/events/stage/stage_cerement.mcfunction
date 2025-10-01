@@ -66,6 +66,6 @@ execute if score stage_bonus_thread AzrTimerStack matches 106 as @a[tag=azrPlaye
 execute if score stage_bonus_thread AzrTimerStack matches 108..114 run playsound ambient.soul_sand_valley.additions ambient @a[tag=azrShowDialog] -78000 100 0 1000
 execute if score stage_bonus_thread AzrTimerStack matches 108..114 run playsound ambient.soul_sand_valley.loop ambient @a[tag=azrShowDialog] -78000 100 0 1000
 execute if score stage_bonus_thread AzrTimerStack matches 108..114 run playsound ambient.soul_sand_valley.mood ambient @a[tag=azrShowDialog] -78000 100 0 1000
-execute if score stage_bonus_thread AzrTimerStack matches 114 run scoreboard players set stage_bonus Azr_system 9
+execute if score stage_bonus_thread AzrTimerStack matches 114 run scoreboard players set stage_bonus Azr_system 0
 execute if score stage_bonus_thread AzrTimerStack matches 114 run scoreboard players set stage_bonus_thread AzrTimerStack 0
 
