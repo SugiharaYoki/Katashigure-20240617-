@@ -27,6 +27,7 @@ bossbar remove azr:boss_hp_bar_0
 bossbar remove azr:progress_bar_special
 bossbar remove azr:progress_bar_special_0
 bossbar remove azr:progress_bar_normal
+bossbar remove azr:progress_bar_bonus
 #______________________________________________________________#
 #清理小队
 team remove AzrBossA

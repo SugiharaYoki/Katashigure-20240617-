@@ -90,6 +90,7 @@ team add AzrBossA
 team modify AzrBossA friendlyFire false
 #重置bossbar
 bossbar remove azr:progress_bar_normal
+bossbar remove azr:progress_bar_bonus
 bossbar remove azr:progress_bar_special
 bossbar remove azr:progress_bar_special_0
 bossbar remove azr:boss_hp_bar
