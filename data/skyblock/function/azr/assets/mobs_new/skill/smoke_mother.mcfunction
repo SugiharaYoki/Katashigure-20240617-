@@ -21,12 +21,13 @@ execute if entity @s[tag=azr_smoke_mother_explosion] run scoreboard players add 
 execute if score @s rng3 matches 2 run playsound minecraft:entity.creeper.primed hostile @a ~ ~ ~ 2 1.1
 execute if score @s rng3 matches 2 run particle minecraft:large_smoke ~ ~ ~ 0 0.5 0 0.2 16 force
 execute if score @s rng3 matches 2 run particle minecraft:gust ~ ~ ~ 0 0.5 0 0.2 1 force
-execute if score @s rng3 matches 24 run function skyblock:azr/assets/mobs_new/skill/generic_explosion_middle
-execute if score @s rng3 matches 24 run function skyblock:azr/assets/mobs_new/smoke
-execute if score @s rng3 matches 24 run function skyblock:azr/assets/mobs_new/smoke
-execute if score @s rng3 matches 24 run function skyblock:azr/assets/mobs_new/smoke
-execute if score @s[scores={AzrielMobLevel=3..}] rng3 matches 24 run function skyblock:azr/assets/mobs_new/smoke
-execute if score @s[scores={AzrielMobLevel=4..}] rng3 matches 24 run function skyblock:azr/assets/mobs_new/smoke
-execute if score @s[scores={AzrielMobLevel=5..}] rng3 matches 24 run function skyblock:azr/assets/mobs_new/smoke
+execute if score @s rng3 matches 27 run function skyblock:azr/assets/mobs_new/skill/generic_explosion_middle
+execute if score @s rng3 matches 27 run function skyblock:azr/assets/mobs_new/smoke
+execute if score @s rng3 matches 27 run function skyblock:azr/assets/mobs_new/smoke
+execute if score @s rng3 matches 27 run function skyblock:azr/assets/mobs_new/smoke
+execute if score @s[scores={AzrielMobLevel=3..}] rng3 matches 27 run function skyblock:azr/assets/mobs_new/smoke
+execute if score @s[scores={AzrielMobLevel=4..}] rng3 matches 27 run function skyblock:azr/assets/mobs_new/smoke
+execute if score @s[scores={AzrielMobLevel=5..}] rng3 matches 27 run function skyblock:azr/assets/mobs_new/smoke
 
+execute if score @s rng3 matches 27 run kill @s
 
