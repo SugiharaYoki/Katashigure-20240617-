@@ -104,7 +104,8 @@ execute if score stage_main_thread AzrTimerStack matches 284 run playsound minec
 execute if score stage_main_thread AzrTimerStack matches 284 positioned -79937 38 46 run fill -79932 48 44 -79930 48 44 air
 execute if score stage_main_thread AzrTimerStack matches 284 positioned -79937 38 46 run fill -79931 48 43 -79931 48 45 air
 
-
+execute if score stage_main_thread AzrTimerStack matches 278 positioned -79925 38 46 run function skyblock:azr/assets/mobs_new/undead
+execute if score stage_main_thread AzrTimerStack matches 278 positioned -79925 38 46 run function skyblock:azr/assets/mobs_new/undead
 
 execute if score stage_main_thread AzrTimerStack matches 280..287 run playsound ambient.nether_wastes.mood ambient @a[tag=azrShowDialog] -79931 38 53 10 0.7
 
