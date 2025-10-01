@@ -1,7 +1,7 @@
 scoreboard players add @s rng1 1
 
 
-execute if score @s rng1 matches 2.. as @s at @s run particle smoke ~ ~0.3 ~ 0 0.1 0 0.04 2 force
+execute if score @s rng1 matches 2.. as @s at @s run particle smoke ~ ~0.3 ~ 0 0.1 0 0.02 1 force
 
 execute if score @s rng1 matches 2.. store result score @s rng2 run data get entity @s Health
 
