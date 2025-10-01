@@ -126,7 +126,6 @@ execute if score timer_static_5s AzrTimerStack matches 100.. run function skyblo
 
 # 部分关卡检测玩家位置在这里处理
     # 第四关-boss1 event1
-    execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 9 if score stage_main_thread AzrTimerStack matches 3..5 if entity @a[tag=azrPlayer,x=-79931,y=38,z=62,distance=..4.5] run setblock -79946 39 50 air
     execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 9 if score stage_main_thread AzrTimerStack matches 3..5 as @a[tag=azrPlayer,x=-79931,y=38,z=62,distance=..4.5] at @s run tp @a[tag=azrPlayer,distance=3..] @s
     execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 9 if score stage_main_thread AzrTimerStack matches 3..5 if entity @a[tag=azrPlayer,x=-79931,y=38,z=62,distance=..4.5] run scoreboard players set stage_main_thread AzrTimerStack 299
     # 第八关-BOSS2 event3

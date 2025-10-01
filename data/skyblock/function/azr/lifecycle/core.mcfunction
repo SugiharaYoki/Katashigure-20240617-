@@ -15,7 +15,7 @@ execute as @e[type=zombie,tag=AZRknight,x=-79943,y=38,z=135,distance=..4000] at 
 #关卡控制部分
 #Introduction
 execute if score stage_bonus Azr_system matches 1.. if score playerCount Azr_system matches 1.. run function skyblock:azr/lifecycle/stage_bonus
-execute if score stage_bonus Azr_system matches ..0 if score playerCount Azr_system matches 1.. run function skyblock:azr/lifecycle/stage_normal
+execute if score playerCount Azr_system matches 1.. run function skyblock:azr/lifecycle/stage_normal
 
 
 
