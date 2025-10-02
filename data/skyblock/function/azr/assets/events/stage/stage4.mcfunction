@@ -96,8 +96,8 @@ execute if score stage_main_thread AzrTimerStack matches 275..276 if entity @n[t
 execute if score stage_main_thread AzrTimerStack matches 272 run particle minecraft:block{block_state:{Name:quartz_block}} -79930.49 48.00 44.50 1 0 1 0.5 200 normal
 execute if score stage_main_thread AzrTimerStack matches 273..275 run particle minecraft:block{block_state:{Name:quartz_block}} -79930.49 48.00 44.50 1 0 1 0.5 20 force
 execute if score stage_main_thread AzrTimerStack matches 277..283 run particle minecraft:block{block_state:{Name:quartz_block}} -79930.49 48.00 44.50 1 0 1 0.5 40 normal
-execute if score stage_main_thread AzrTimerStack matches 283 positioned -79931 48 44 run function skyblock:azr/assets/mobs_new/zoglin
-execute if score stage_main_thread AzrTimerStack matches 284 positioned -79931 48 44 run effect give @n[type=zoglin,distance=..20] resistance infinite 4 true
+execute if score stage_main_thread AzrTimerStack matches 283 positioned -79931 26 44 run function skyblock:azr/assets/mobs_new/zoglin
+execute if score stage_main_thread AzrTimerStack matches 284 positioned -79931 26 44 run effect give @n[type=zoglin,distance=..20] resistance infinite 4 true
 execute if score stage_main_thread AzrTimerStack matches 284 run particle minecraft:block{block_state:{Name:quartz_block}} -79930.49 48.00 44.50 1 0 1 0.8 200 normal
 execute if score stage_main_thread AzrTimerStack matches 284 run particle explosion -79930.49 47.00 44.50 2 0 2 0.8 10 normal
 execute if score stage_main_thread AzrTimerStack matches 284 run playsound minecraft:entity.generic.explode block @a -79930.64 48.00 44.44 2 0.7
@@ -113,7 +113,7 @@ execute if score stage_main_thread AzrTimerStack matches 303 positioned -79931 3
 execute if score stage_main_thread AzrTimerStack matches 305 positioned -79931 38 46 run rotate @n[tag=AzrielNPC_marinus] facing entity @n[type=zoglin]
 execute if score stage_main_thread AzrTimerStack matches 307 as @n[tag=AzrielNPC_marinus] at @s facing entity @n[type=zoglin] eyes rotated ~ 0 run function skyblock:azr/assets/mobs_new/skill/marinus/move_dash
 execute if score stage_main_thread AzrTimerStack matches 308 as @n[tag=AzrielNPC_marinus] at @s facing entity @n[type=zoglin] eyes rotated ~ 0 run function skyblock:azr/assets/mobs_new/skill/marinus/attack_instant_slash
-execute if score stage_main_thread AzrTimerStack matches 308 as @n[type=zoglin,distance=0..50] run kill @s
+execute if score stage_main_thread AzrTimerStack matches 308 as @n[tag=AzrielNPC_marinus] at @s as @n[type=zoglin,distance=0..50] run kill @s
 execute if score stage_main_thread AzrTimerStack matches 310..313 as @n[tag=AzrielNPC_marinus] at @s run rotate @s facing entity @p[tag=azrPlayer]
 execute if score stage_main_thread AzrTimerStack matches 314 as @n[tag=AzrielNPC_marinus] at @s run tp @s -79930.46 71.00 74.33
 
