@@ -96,7 +96,7 @@ execute if score stage_main_thread AzrTimerStack matches 238..239 if entity @n[t
 
 #结束
 execute if score stage_main_thread AzrTimerStack matches 242 positioned -79919 38 35 run function skyblock:azr/assets/mobs_new/spider_giant
-execute if score stage_main_thread AzrTimerStack matches 242 positioned -79914 38 28 run function skyblock:azr/assets/mobs_new/undead_pickaxe
+execute if score stage_main_thread AzrTimerStack matches 242 positioned -79914 38 28 run function skyblock:azr/assets/mobs_new/spider_mini
 execute if score stage_main_thread AzrTimerStack matches 242 positioned -79914 38 27 run function skyblock:azr/assets/mobs_new/undead
 execute if score stage_main_thread AzrTimerStack matches 242 positioned -79923 44 28 run function skyblock:azr/assets/mobs_new/summoner
 execute if score stage_main_thread AzrTimerStack matches 242 positioned -79923 44 28 run function skyblock:azr/assets/mobs_new/summoner
