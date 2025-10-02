@@ -4,10 +4,10 @@ execute if score stage_main_thread AzrTimerStack matches 1 run title @a[tag=azrS
 execute if score stage_main_thread AzrTimerStack matches 1 run bossbar add azr:progress_bar_normal "Stage 4"
 execute if score stage_main_thread AzrTimerStack matches 1 run bossbar set azr:progress_bar_normal color white
 execute if score stage_main_thread AzrTimerStack matches 1 run bossbar set azr:progress_bar_normal players @a[tag=azrPlayer]
-execute if score stage_main_thread AzrTimerStack matches 1 run bossbar set azr:progress_bar_normal max 300
+execute if score stage_main_thread AzrTimerStack matches 1 run bossbar set azr:progress_bar_normal max 336
 execute if score stage_main_thread AzrTimerStack matches 1 run tellraw @a[tag=DebugMode,tag=azrPlayer] [{"text":"[DEBUG MODE MESSAGE] You are playing \"Stage 4\", with playerCount = "},{"score":{"objective":"Azr_system","name":"playerCount"}},{"text":" Maximum Seconds = 300"}]
-execute if score stage_main_thread AzrTimerStack matches 1..289 store result bossbar azr:progress_bar_normal value run scoreboard players get stage_main_thread AzrTimerStack
-execute if score stage_main_thread AzrTimerStack matches 293 run bossbar remove azr:progress_bar_normal
+execute if score stage_main_thread AzrTimerStack matches 1..336 store result bossbar azr:progress_bar_normal value run scoreboard players get stage_main_thread AzrTimerStack
+execute if score stage_main_thread AzrTimerStack matches 336 run bossbar remove azr:progress_bar_normal
 #
 #leftside:-79925 38 49
 #rightside:-79937 38 49
