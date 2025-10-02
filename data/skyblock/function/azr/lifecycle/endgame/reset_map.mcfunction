@@ -64,6 +64,8 @@ item replace block -79918 42 25 container.13 with coal 2
 setblock -79905 42 33 chest[facing=west]
 item replace block -79905 42 33 container.13 with iron_ingot 1
 fill -79929 45 29 -79929 45 27 minecraft:potted_azalea_bush
+fill -79924 36 34 -79924 34 34 minecraft:purple_stained_glass
+
 
 #Stage3 beta
 fill -79957 42 13 -79955 38 13 minecraft:purple_stained_glass{name: "to Stage4 beta"}
@@ -78,9 +80,9 @@ setblock -79938 38 21 minecraft:potted_azalea_bush
 setblock -79922 38 35 air
 setblock -79922 38 35 trapped_chest[facing=east]{lock:{components:{custom_data:{key_required:1b}}}}
 item replace block -79922 38 35 container.11 with minecraft:beef 5
-item replace block -79922 38 35 container.15 with skull_banner_pattern[custom_name='{"text":"“招待厅事务记录6”","color":"dark_purple","italic":false}',lore=['{"text":"权之残影大人曾言","color":"white","italic":false}','{"text":"下一回便会有真正的强者光临神庭。","color":"white","italic":false}','{"text":"并非由魔界之污秽魔力所造就，","color":"white","italic":false}','{"text":"而是命定将拯救三界之人。","color":"white","italic":false}']] 1
+item replace block -79922 38 35 container.15 with skull_banner_pattern[custom_name='{"text":"“招待厅事务记录6”","color":"dark_purple","italic":false}',lore=['{"text":"权之殊能大人曾言","color":"white","italic":false}','{"text":"下一回便会有真正的强者光临神庭。","color":"white","italic":false}','{"text":"并非由魔界之污秽魔力所造就，","color":"white","italic":false}','{"text":"而是命定将拯救三界之人。","color":"white","italic":false}']] 1
 setblock -79912 38 34 chest[facing=west]
-item replace block -79912 38 34 container.12 with skull_banner_pattern[custom_name='{"text": "“我的东南水路正门钥匙被迅蛛偷走六回了”", "color": "dark_purple","italic":false}', lore=['{"text": "我敢肯定那群蜘蛛最近经常失控。","color":"white", "italic": false}','{"text": "能天使大人难不成是患上疾病了？","color":"white", "italic": false}','{"text": "这总不可能是怹刻意为之吧。","color":"white", "italic": false}']] 1
+item replace block -79912 38 34 container.12 with skull_banner_pattern[custom_name='{"text": "“我的东南水路正门钥匙被人偷走六回了”", "color": "dark_purple","italic":false}', lore=['{"text": "我不知道是谁对禁地这么感兴趣。","color":"white", "italic": false}','{"text": "如果只是对下水道感兴趣的话，那人完全可以选择其他三个区域。","color":"white", "italic": false}','{"text": "魔神的力量……果然也在被觊觎着吧。","color":"white", "italic": false}']] 1
 item replace block -79912 38 34 container.14 with tripwire_hook[custom_name='{"text":"木船图案的钥匙","color":"blue","italic":false}',custom_data={key_boat:1b}] 1
 setblock -79915 39 34 minecraft:quartz_bricks{name: "secret chest"}
 setblock -79915 38 34 minecraft:quartz_block{name: "secret chest"}
