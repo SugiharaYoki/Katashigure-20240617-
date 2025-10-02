@@ -111,6 +111,8 @@ execute if score stage_main_thread AzrTimerStack matches 278 positioned -79925 3
 
 execute if score stage_main_thread AzrTimerStack matches 280..287 run playsound ambient.nether_wastes.mood ambient @a[tag=azrShowDialog] -79931 38 53 10 0.7
 
+execute if score stage_main_thread AzrTimerStack matches 295 positioned -79931 38 46 run playsound minecraft:block.portal.trigger ambient @a ~ ~ ~ 2 2
+execute if score stage_main_thread AzrTimerStack matches 299 positioned -79931 38 46 run function skyblock:azr/assets/events/effects/magic_circle/generic_angel_tp_npc_marinus_moon_small
 execute if score stage_main_thread AzrTimerStack matches 303 positioned -79931 38 46 run function skyblock:azr/assets/mobs_new/unique/marinus
 execute if score stage_main_thread AzrTimerStack matches 305 positioned -79931 38 46 run rotate @n[tag=AzrielNPC_marinus] facing entity @n[type=zoglin]
 execute if score stage_main_thread AzrTimerStack matches 307 as @n[tag=AzrielNPC_marinus] at @s facing entity @n[type=zoglin] eyes rotated ~ 0 run function skyblock:azr/assets/mobs_new/skill/marinus/move_dash
