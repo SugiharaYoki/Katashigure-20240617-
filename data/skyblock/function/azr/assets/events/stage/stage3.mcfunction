@@ -95,12 +95,20 @@ execute if score stage_main_thread AzrTimerStack matches 235 positioned -79926 3
 execute if score stage_main_thread AzrTimerStack matches 238..239 if entity @n[tag=AzrielMob_barrier_maintainer] run scoreboard players set stage_main_thread AzrTimerStack 238
 
 #结束
+#怪物生成：第四关道中与周边野怪
 execute if score stage_main_thread AzrTimerStack matches 242 positioned -79919 38 35 run function skyblock:azr/assets/mobs_new/spider_giant
 execute if score stage_main_thread AzrTimerStack matches 242 positioned -79914 38 28 run function skyblock:azr/assets/mobs_new/spider_mini
 execute if score stage_main_thread AzrTimerStack matches 242 positioned -79914 38 27 run function skyblock:azr/assets/mobs_new/undead
 execute if score stage_main_thread AzrTimerStack matches 242 positioned -79923 44 28 run function skyblock:azr/assets/mobs_new/summoner
 execute if score stage_main_thread AzrTimerStack matches 242 positioned -79923 44 28 run function skyblock:azr/assets/mobs_new/summoner
 execute if score stage_main_thread AzrTimerStack matches 242 positioned -79923.85 46.3 45.02 run function skyblock:azr/assets/mobs_new/unique/bird
+#怪物生成：diffident道中
+execute if score stage_main_thread AzrTimerStack matches 242 positioned -79916 34 30 run function skyblock:azr/assets/mobs_new/unique/spider_giant
+execute if score stage_main_thread AzrTimerStack matches 242 positioned -79916 34 26 run function skyblock:azr/assets/mobs_new/unique/spider_mini
+execute if score stage_main_thread AzrTimerStack matches 242 positioned -79916 34 26 run function skyblock:azr/assets/mobs_new/unique/spider_mini
+execute if score stage_main_thread AzrTimerStack matches 242 positioned -79916 34 26 run function skyblock:azr/assets/mobs_new/unique/spider_mini
+
+
 execute if score stage_main_thread AzrTimerStack matches 242 positioned -79923 44 28 run tag @n[type=pillager,distance=0..1.1] add AzrielMob_dialog_stage4pre_hidden_a1
 
 execute if score stage_main_thread AzrTimerStack matches 242 run playsound ambient.crimson_forest.loop ambient @a[tag=azrShowDialog] -78000 100 0 1000
