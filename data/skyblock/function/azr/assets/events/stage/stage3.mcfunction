@@ -103,10 +103,11 @@ execute if score stage_main_thread AzrTimerStack matches 242 positioned -79923 4
 execute if score stage_main_thread AzrTimerStack matches 242 positioned -79923 44 28 run function skyblock:azr/assets/mobs_new/summoner
 execute if score stage_main_thread AzrTimerStack matches 242 positioned -79923.85 46.3 45.02 run function skyblock:azr/assets/mobs_new/unique/bird
 #怪物生成：diffident道中
-execute if score stage_main_thread AzrTimerStack matches 242 positioned -79916 34 30 run function skyblock:azr/assets/mobs_new/unique/spider_giant
-execute if score stage_main_thread AzrTimerStack matches 242 positioned -79916 34 26 run function skyblock:azr/assets/mobs_new/unique/spider_mini
-execute if score stage_main_thread AzrTimerStack matches 242 positioned -79916 34 26 run function skyblock:azr/assets/mobs_new/unique/spider_mini
-execute if score stage_main_thread AzrTimerStack matches 242 positioned -79916 34 26 run function skyblock:azr/assets/mobs_new/unique/spider_mini
+execute if score stage_main_thread AzrTimerStack matches 242 positioned -79916 34 30 run function skyblock:azr/assets/mobs_new/spider_giant
+execute if score stage_main_thread AzrTimerStack matches 242 positioned -79916 34 26 run function skyblock:azr/assets/mobs_new/spider_mini
+execute if score stage_main_thread AzrTimerStack matches 242 positioned -79916 34 26 run function skyblock:azr/assets/mobs_new/spider_mini
+execute if score stage_main_thread AzrTimerStack matches 242 positioned -79916 34 26 run function skyblock:azr/assets/mobs_new/spider_mini
+execute if score stage_main_thread AzrTimerStack matches 242 positioned -79916 32 15 run function skyblock:azr/assets/mobs_new/smoke_mother
 
 
 execute if score stage_main_thread AzrTimerStack matches 242 positioned -79923 44 28 run tag @n[type=pillager,distance=0..1.1] add AzrielMob_dialog_stage4pre_hidden_a1
