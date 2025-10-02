@@ -1,1 +1,1 @@
-summon parrot ~ ~ ~ {PersistenceRequired:1b,Invulnerable:1b,Tags:["AzrielNPC_bird","AzrielFriendly"],DeathLootTable:"skyblock:null",Health:50.0f,CustomName:'"小鸢"',Variant:2,attributes:[{id:"max_health",base:50.0d},{id:"flying_speed",base:0.1d},{id:"movement_speed",base:0.0d}]}
+summon parrot ~ ~ ~ {PersistenceRequired:1b,Invulnerable:1b,Tags:["AzrielNPC_bird","AzrielFriendly"],DeathLootTable:"skyblock:null",Health:50.0f,CustomName:'"小鸢"',Variant:2,attributes:[{id:"max_health",base:50.0d},{id:"flying_speed",base:0.4d},{id:"movement_speed",base:0.05d}]}
