@@ -6,7 +6,7 @@ execute if score stage_main_thread AzrTimerStack matches 1 run bossbar set azr:p
 execute if score stage_main_thread AzrTimerStack matches 1 run bossbar set azr:progress_bar_normal players @a[tag=azrPlayer]
 execute if score stage_main_thread AzrTimerStack matches 1 run bossbar set azr:progress_bar_normal max 72
 
-execute if score stage_main_thread AzrTimerStack matches 1 run tellraw @a[tag=DebugMode,tag=azrShowDialog] [{"text":"[DEBUG MODE MESSAGE] You are playing \"Stage 1\", with playerCount = "},{"score":{"objective":"Azr_system","name":"playerCount"}},{"text":" Maximum Seconds = 40"}]
+execute if score stage_main_thread AzrTimerStack matches 1 run tellraw @a[tag=DebugMode,tag=azrShowDialog] [{"text":"[DEBUG MODE MESSAGE] You are playing \"Stage 1\", with playerCount = "},{"score":{"objective":"Azr_system","name":"playerCount"}},{"text":" Maximum Seconds = 72"}]
 execute if score stage_main_thread AzrTimerStack matches 1..72 store result bossbar azr:progress_bar_normal value run scoreboard players get stage_main_thread AzrTimerStack
 execute if score stage_main_thread AzrTimerStack matches 72 run bossbar remove azr:progress_bar_normal
 #启动stage1_event
