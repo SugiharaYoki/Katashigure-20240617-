@@ -112,7 +112,6 @@ execute if score stage_main_thread AzrTimerStack matches 242 positioned -79916 3
 
 execute if score stage_main_thread AzrTimerStack matches 242 positioned -79923 44 28 run tag @n[type=pillager,distance=0..1.1] add AzrielMob_dialog_stage4pre_hidden_a1
 
-execute if score stage_main_thread AzrTimerStack matches 242 run playsound ambient.crimson_forest.loop ambient @a[tag=azrShowDialog] -78000 100 0 1000
 execute if score stage_main_thread AzrTimerStack matches 242 run playsound ambient.crimson_forest.mood ambient @a[tag=azrShowDialog] -78000 100 0 1000
 execute if score stage_main_thread AzrTimerStack matches 242 run playsound ambient.crimson_forest.additions ambient @a[tag=azrShowDialog] -78000 100 0 1000
 execute if score stage_main_thread AzrTimerStack matches 242 run fill -79931 38 40 -79931 40 40 air destroy

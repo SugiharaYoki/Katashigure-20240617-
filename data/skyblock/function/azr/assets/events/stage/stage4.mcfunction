@@ -123,7 +123,6 @@ execute if score stage_main_thread AzrTimerStack matches 314 as @n[tag=AzrielNPC
 execute if score stage_main_thread AzrTimerStack matches 314 as @n[tag=AzrielNPC_marinus] at @s run tp @s -79930.46 71.00 74.33
 
 
-execute if score stage_main_thread AzrTimerStack matches 328 run playsound ambient.crimson_forest.loop ambient @a[tag=azrShowDialog] -78000 100 0 100000
 execute if score stage_main_thread AzrTimerStack matches 328 run playsound ambient.crimson_forest.mood ambient @a[tag=azrShowDialog] -78000 100 0 100000
 execute if score stage_main_thread AzrTimerStack matches 328 run playsound ambient.crimson_forest.additions ambient @a[tag=azrShowDialog] -78000 100 0 100000
 execute if score stage_main_thread AzrTimerStack matches 328 run fill -79930 38 52 -79932 42 52 air destroy

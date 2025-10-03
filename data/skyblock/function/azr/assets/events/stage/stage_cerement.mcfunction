@@ -30,8 +30,8 @@ execute if score stage_bonus_thread AzrTimerStack matches 41 positioned -79946 3
 
 
 execute if score stage_bonus_thread AzrTimerStack matches 45..48 positioned -79946 38 61 run function skyblock:azr/assets/mobs_new/undead
-execute if score stage_bonus_thread AzrTimerStack matches 54..55 positioned -79946 38 61 run function skyblock:azr/assets/mobs_new/smoke
-execute if score stage_bonus_thread AzrTimerStack matches 59..60 positioned -79946 38 61 run function skyblock:azr/assets/mobs_new/smoke
+execute if score stage_bonus_thread AzrTimerStack matches 54..55 positioned -79946 38 61 run function skyblock:azr/assets/mobs_new/undead_shield
+execute if score stage_bonus_thread AzrTimerStack matches 66..67 positioned -79946 38 61 run function skyblock:azr/assets/mobs_new/undead
 
 execute if score stage_bonus_thread AzrTimerStack matches 68..69 if entity @n[tag=AzrielMob_undead] run scoreboard players set stage_bonus_thread AzrTimerStack 68
 
@@ -64,7 +64,6 @@ execute if score stage_bonus_thread AzrTimerStack matches 106 as @a[tag=azrPlaye
 execute if score stage_bonus_thread AzrTimerStack matches 106 as @a[tag=azrPlayer] at @s run give @s emerald 5
 execute if score stage_bonus_thread AzrTimerStack matches 106 as @a[tag=azrPlayer] at @s run function skyblock:azr/assets/items/amulets/greed_board
 execute if score stage_bonus_thread AzrTimerStack matches 108..114 run playsound ambient.soul_sand_valley.additions ambient @a[tag=azrShowDialog] -78000 100 0 1000
-execute if score stage_bonus_thread AzrTimerStack matches 108..114 run playsound ambient.soul_sand_valley.loop ambient @a[tag=azrShowDialog] -78000 100 0 1000
 execute if score stage_bonus_thread AzrTimerStack matches 108..114 run playsound ambient.soul_sand_valley.mood ambient @a[tag=azrShowDialog] -78000 100 0 1000
 execute if score stage_bonus_thread AzrTimerStack matches 114 run scoreboard players set stage_bonus Azr_system 0
 execute if score stage_bonus_thread AzrTimerStack matches 114 run scoreboard players set stage_bonus_thread AzrTimerStack 0

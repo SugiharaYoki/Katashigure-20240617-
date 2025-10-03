@@ -11,14 +11,34 @@ execute if score stage_bonus_thread AzrTimerStack matches 106 run bossbar remove
 #leftside:-79946 38 61
 #rightside:-79946 38 50
 
-execute if score stage_bonus_thread AzrTimerStack matches 106 run title @a[tag=azrShowDialog] actionbar {"text":"Extra Stage Clear","color":"green"}
-execute if score stage_bonus_thread AzrTimerStack matches 106 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage_bonus_diffident
-execute if score stage_bonus_thread AzrTimerStack matches 106 as @a[tag=azrPlayer] at @s run tag @s add AZS_BoS04
-execute if score stage_bonus_thread AzrTimerStack matches 106 as @a[tag=azrPlayer] at @s run give @s emerald 5
+execute if score stage_bonus_thread AzrTimerStack matches 3 positioned -79946 38 61 run tellraw @a[tag=azrShowDialog] [{"text":"你：","color":"aqua"},{"text":"\n（糟了，难不成这里是陷阱？！）","color":"white"}]
 
-execute if score stage_bonus_thread AzrTimerStack matches 108..114 run playsound ambient.soul_sand_valley.additions ambient @a[tag=azrShowDialog] -78000 100 0 1000
-execute if score stage_bonus_thread AzrTimerStack matches 108..114 run playsound ambient.soul_sand_valley.loop ambient @a[tag=azrShowDialog] -78000 100 0 1000
-execute if score stage_bonus_thread AzrTimerStack matches 108..114 run playsound ambient.soul_sand_valley.mood ambient @a[tag=azrShowDialog] -78000 100 0 1000
-execute if score stage_bonus_thread AzrTimerStack matches 114 run scoreboard players set stage_bonus Azr_system 0
-execute if score stage_bonus_thread AzrTimerStack matches 114 run scoreboard players set stage_bonus_thread AzrTimerStack 0
+
+execute if score stage_bonus_thread AzrTimerStack matches 5 positioned -79910 32 -5 run function skyblock:azr/assets/mobs_new/skill/smoke
+execute if score stage_bonus_thread AzrTimerStack matches 7 positioned -79910 32 -5 run function skyblock:azr/assets/mobs_new/skill/smoke
+execute if score stage_bonus_thread AzrTimerStack matches 9 positioned -79910 32 -5 run function skyblock:azr/assets/mobs_new/skill/smoke
+execute if score stage_bonus_thread AzrTimerStack matches 11 positioned -79910 32 -5 run function skyblock:azr/assets/mobs_new/skill/smoke
+
+execute if score stage_bonus_thread AzrTimerStack matches 35 positioned -79910 32 -5 run function skyblock:azr/assets/mobs_new/skill/smoke
+execute if score stage_bonus_thread AzrTimerStack matches 37 positioned -79910 32 -5 run function skyblock:azr/assets/mobs_new/skill/smoke
+execute if score stage_bonus_thread AzrTimerStack matches 39 positioned -79910 32 -5 run function skyblock:azr/assets/mobs_new/skill/smoke
+execute if score stage_bonus_thread AzrTimerStack matches 41 positioned -79910 32 -5 run function skyblock:azr/assets/mobs_new/skill/smoke
+
+execute if score stage_bonus_thread AzrTimerStack matches 55 positioned -79910 32 -5 run function skyblock:azr/assets/mobs_new/skill/undead_pickaxe
+
+execute if score stage_bonus_thread AzrTimerStack matches 70 positioned -79910 32 -5 run function skyblock:azr/assets/mobs_new/skill/smoke_mother
+execute if score stage_bonus_thread AzrTimerStack matches 100 positioned -79910 32 -5 run function skyblock:azr/assets/mobs_new/skill/smoke_mother
+execute if score stage_bonus_thread AzrTimerStack matches 110 positioned -79910 32 -5 run function skyblock:azr/assets/mobs_new/skill/undead_pickaxe
+
+execute if score stage_main_thread AzrTimerStack matches 112..113 if entity @n[tag=AzrielMob_barrier_maintainer] run scoreboard players set stage_main_thread AzrTimerStack 112
+
+execute if score stage_bonus_thread AzrTimerStack matches 114 run title @a[tag=azrShowDialog] actionbar {"text":"Extra Stage Clear","color":"green"}
+execute if score stage_bonus_thread AzrTimerStack matches 114 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage_bonus_diffident
+execute if score stage_bonus_thread AzrTimerStack matches 114 as @a[tag=azrPlayer] at @s run tag @s add AZS_BoS04
+execute if score stage_bonus_thread AzrTimerStack matches 114 as @a[tag=azrPlayer] at @s run give @s emerald 5
+
+execute if score stage_bonus_thread AzrTimerStack matches 114..122 run playsound ambient.soul_sand_valley.additions ambient @a[tag=azrShowDialog] -78000 100 0 1000
+execute if score stage_bonus_thread AzrTimerStack matches 114..122 run playsound ambient.soul_sand_valley.mood ambient @a[tag=azrShowDialog] -78000 100 0 1000
+execute if score stage_bonus_thread AzrTimerStack matches 122 run scoreboard players set stage_bonus Azr_system 0
+execute if score stage_bonus_thread AzrTimerStack matches 122 run scoreboard players set stage_bonus_thread AzrTimerStack 0
 

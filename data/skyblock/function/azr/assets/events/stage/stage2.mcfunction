@@ -55,7 +55,6 @@ execute if score stage_main_thread AzrTimerStack matches 278 positioned -79931 3
 #回秒
 execute if score stage_main_thread AzrTimerStack matches 280..281 if entity @e[tag=AzrielMob_barrier_maintainer] run scoreboard players set stage_main_thread AzrTimerStack 280
 #结束
-execute if score stage_main_thread AzrTimerStack matches 284 run playsound ambient.crimson_forest.loop ambient @a[tag=azrShowDialog] -78000 100 0 1000
 execute if score stage_main_thread AzrTimerStack matches 284 run playsound ambient.crimson_forest.mood ambient @a[tag=azrShowDialog] -78000 100 0 1000
 execute if score stage_main_thread AzrTimerStack matches 284 run playsound ambient.crimson_forest.additions ambient @a[tag=azrShowDialog] -78000 100 0 1000
 execute if score stage_main_thread AzrTimerStack matches 284 run fill -79931 38 22 -79931 40 22 barrier destroy

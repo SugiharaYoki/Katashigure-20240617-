@@ -1,7 +1,7 @@
 {
     "display": {
         "title": {
-            "text": "外庭花园 - 万花祭坛",
+            "text": "第一关口区域 - 地下层苔藓培育室",
             "color": "green",
             "bold": true,
             "italic": false
@@ -23,5 +23,5 @@
             "trigger": "minecraft:impossible"
         }
     },
-    "parent": "skyblock:azr/azr_stage4"
+    "parent": "skyblock:azr/azr_stage3"
 }
