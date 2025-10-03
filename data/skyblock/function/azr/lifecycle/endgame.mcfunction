@@ -10,7 +10,6 @@ scoreboard players reset $azrch4bosstalk1 Azr_system
 scoreboard players reset $azrch4bosstalk2 Azr_system
 scoreboard players reset $azrch4bosstalk3 Azr_system
 scoreboard players reset $azrstage7b Azr_system
-scoreboard players reset $StageDiffid Azr_system
 scoreboard players reset $Azr_Doppel Azr_system
 scoreboard players reset $NetherShop Azr_system
 scoreboard players reset $ch4DoorOpen Azr_system
