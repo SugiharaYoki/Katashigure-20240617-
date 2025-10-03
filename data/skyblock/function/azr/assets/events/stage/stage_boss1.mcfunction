@@ -8,7 +8,6 @@ execute as @e[tag=arroworb2,type=marker] at @s run function skyblock:azr/assets/
     #init map
     execute if score tick_main_thread AzrTimerStack matches 1 run fill -79932 38 72 -79930 42 72 red_stained_glass
     execute if score tick_main_thread AzrTimerStack matches 1 at @p[x=-79931,y=38.8,z=88,distance=0..19,tag=azrPlayer] run tp @a[tag=azrPlayer,distance=9..] ~ ~ ~
-    execute if score tick_main_thread AzrTimerStack matches 1 run setblock -79931 39 88 air destroy
     #effect & sound
     execute if score tick_main_thread AzrTimerStack matches 1 run particle minecraft:soul_fire_flame -79931 38.8 88 0 0 0 0.3 200
     execute if score tick_main_thread AzrTimerStack matches 1 run particle minecraft:explosion -79931 39.4 88 0.3 0.3 0.3 1 3

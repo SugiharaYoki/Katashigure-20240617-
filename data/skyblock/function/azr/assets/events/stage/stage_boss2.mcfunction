@@ -279,8 +279,8 @@ execute as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run function skyblo
     execute if score tick_main_thread AzrTimerStack matches 3001 run kill @e[tag=AzrielMob]
     execute if score tick_main_thread AzrTimerStack matches 3001 run bossbar remove azr:boss_hp_bar
     execute if score tick_main_thread AzrTimerStack matches 3001 run playsound minecraft:item.trident.thunder master @a[tag=azrShowDialog] -79903 38.8 -14.0 10 0.8
-    execute if score tick_main_thread AzrTimerStack matches 3001 run particle minecraft:reverse_portal -79931 39 88 0 0 0 1.5 1800
-    execute if score tick_main_thread AzrTimerStack matches 3001 run particle minecraft:enchant -79931 39 88 3 3 3 1.5 800
+    execute if score tick_main_thread AzrTimerStack matches 3001 run particle minecraft:reverse_portal -79903 38.8 -14.0 0 0 0 1.5 1800
+    execute if score tick_main_thread AzrTimerStack matches 3001 run particle minecraft:enchant -79903 38.8 -14.0 3 3 3 1.5 800
     # Wave II 循环直到死亡 3110..4150
     execute if score tick_main_thread AzrTimerStack matches 3310..4110 store result score #azr_boss2_rng rng3 run random value 1..3
     execute if score tick_main_thread AzrTimerStack matches 3310..4110 store result score #azr_boss2_rng rng2 run random value 1..2
@@ -359,8 +359,8 @@ execute as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run function skyblo
     execute if score tick_main_thread AzrTimerStack matches 6080..6130 run tag @a[tag=azrPlayer] add azrUpdateSpawnPoint
     #effect & sound
     execute if score tick_main_thread AzrTimerStack matches 6001 run playsound minecraft:item.trident.thunder master @a[tag=azrShowDialog] -79903 38.8 -14.0 10 0.8
-    execute if score tick_main_thread AzrTimerStack matches 6001 run particle minecraft:reverse_portal -79931 39 88 0 0 0 1.5 1800
-    execute if score tick_main_thread AzrTimerStack matches 6001 run particle minecraft:enchant -79931 39 88 3 3 3 1.5 800
+    execute if score tick_main_thread AzrTimerStack matches 6001 run particle minecraft:reverse_portal -79903 38.8 -14.0 0 0 0 1.5 1800
+    execute if score tick_main_thread AzrTimerStack matches 6001 run particle minecraft:enchant -79903 38.8 -14.0 3 3 3 1.5 800
     execute if score tick_main_thread AzrTimerStack matches 6110 run playsound ambient.soul_sand_valley.loop ambient @a[tag=azrShowDialog] -79886 44 -14.0 100 1.5
     execute if score tick_main_thread AzrTimerStack matches 6110 run playsound ambient.soul_sand_valley.mood ambient @a[tag=azrShowDialog] -79886 44 -14.0 100 1.5
     execute if score tick_main_thread AzrTimerStack matches 6110 run playsound ambient.soul_sand_valley.additions ambient @a[tag=azrShowDialog] -79903 44 -14.0 100 1.5

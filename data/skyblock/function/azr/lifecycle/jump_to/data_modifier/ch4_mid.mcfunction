@@ -8,7 +8,6 @@ setblock -79935 39 10 air
 setblock -79932 39 4 air
 
 fill -79932 38 72 -79930 42 72 red_stained_glass
-setblock -79931 39 88 air
 fill -79879 40 -16 -79879 43 -13 anvil
 fill -79904 41 0 -79902 38 0 minecraft:red_stained_glass
 fill -79935 45 34 -79935 43 34 air
