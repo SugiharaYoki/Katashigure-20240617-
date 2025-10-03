@@ -63,17 +63,17 @@ $execute as @s[scores={Azr_Shop_rng$(rng)=8,Azr_Shop=$(trigger)}] \
 
 $execute as @s[scores={Azr_Shop_rng$(rng)=9,Azr_Shop=$(trigger)}] \
     unless score tempPlayerShopSuccess Azr_system matches 1 \
-    if score @s Azr_emerald matches 3.. \
+    if score @s Azr_emerald matches 5.. \
     unless function skyblock:azr/system/shop/purchase/category1/\
     rng9 run scoreboard players set tempPlayerShopSuccess Azr_system 1
-    # 9  箭 ×5  3 绿宝石
+    # 9  箭 ×5  5 绿宝石
 
 $execute as @s[scores={Azr_Shop_rng$(rng)=10,Azr_Shop=$(trigger)}] \
     unless score tempPlayerShopSuccess Azr_system matches 1 \
-    if items entity @s container.* flint[count={min:2}] \
+    if items entity @s container.* flint[count={min:1}] \
     unless function skyblock:azr/system/shop/purchase/category1/\
     rng10 run scoreboard players set tempPlayerShopSuccess Azr_system 1
-    # 10  箭 ×5  1 燧石
+    # 10  箭 ×4  1 燧石
 
 $execute as @s[scores={Azr_Shop_rng$(rng)=11,Azr_Shop=$(trigger)}] \
     unless score tempPlayerShopSuccess Azr_system matches 1 \
