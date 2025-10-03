@@ -37,6 +37,8 @@ execute if score stage_bonus_thread AzrTimerStack matches 114 run advancement gr
 execute if score stage_bonus_thread AzrTimerStack matches 114 as @a[tag=azrPlayer] at @s run tag @s add AZS_BoS04
 execute if score stage_bonus_thread AzrTimerStack matches 114 as @a[tag=azrPlayer] at @s run give @s emerald 5
 
+execute if score stage_bonus_thread AzrTimerStack matches 120 positioned -79946 38 61 run tellraw @a[tag=azrShowDialog] [{"text":"你：","color":"aqua"},{"text":"\n（我有段时间不想再见到任何虫子了……）","color":"white"}]
+
 execute if score stage_bonus_thread AzrTimerStack matches 114..122 run playsound ambient.soul_sand_valley.additions ambient @a[tag=azrShowDialog] -78000 100 0 1000
 execute if score stage_bonus_thread AzrTimerStack matches 114..122 run playsound ambient.soul_sand_valley.mood ambient @a[tag=azrShowDialog] -78000 100 0 1000
 execute if score stage_bonus_thread AzrTimerStack matches 122 run scoreboard players set stage_bonus Azr_system 0
