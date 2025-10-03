@@ -49,6 +49,15 @@ execute positioned -79942 32 39 as @n[tag=AzrielMarker_encounter,distance=0..0.5
 
 
 
+execute positioned -79920 30 3 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[x=-79920,y=30,z=3,dx=6,dy=2,dz=6,tag=azrPlayer] run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
+execute positioned -79920 30 3 as @n[tag=AzrielMarker_encounter,distance=0..0.5] run scoreboard players add @s rng1 1
+execute positioned -79920 30 3 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79914 30 4 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_smoke_mother","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute positioned -79920 30 3 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79918 30 4 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_smoke_mother","AzrielMob_summon_delay","AzrielMob_level_1"]}
+
+
+
+
+
 execute positioned -79956 38 2 as @n[tag=AzrielMob_dialog_stage4pre_hidden_a1,type=pillager] run scoreboard players add @s AzrEntityTimer 1
 execute positioned -79956 38 2 as @n[tag=AzrielMob_dialog_stage4pre_hidden_a1,type=pillager,scores={AzrEntityTimer=3}] at @s unless entity @a[distance=0..5,tag=azrPlayer] run scoreboard players set @s AzrEntityTimer 2
 execute positioned -79956 38 2 as @n[tag=AzrielMob_dialog_stage4pre_hidden_a1,type=pillager,scores={AzrEntityTimer=4}] at @s if entity @a[distance=0..5,tag=azrPlayer] run tellraw @a[tag=azrShowDialog] [{"text":"驭灵使：","color":"yellow","bold": true},{"bold": false,"text":"\n“我靠……这家伙从哪里上来的？！”","color":"white"}]
