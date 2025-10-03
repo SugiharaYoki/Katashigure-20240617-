@@ -87,7 +87,7 @@ execute if block -79540 25 -406 minecraft:birch_button[powered=true] run scorebo
 #Stage Cerement
 execute if block -79946 39 50 minecraft:birch_button[powered=true] if score stage_bonus Azr_system matches ..0 run function skyblock:azr/assets/events/stage/stage_cerement_prep
 #Stage Diffident
-execute if block -79941 39 86 minecraft:birch_button[powered=true] if score stage_bonus Azr_system matches ..0 run function skyblock:azr/assets/events/stage/stage_diffident_prep
+#遭遇事件
 #Stage Suspension
 execute if block -79949 33 140 minecraft:birch_button[powered=true] if score stage_bonus Azr_system matches ..0 run function skyblock:azr/assets/events/stage/stage_suspension_prep
 #Stage Entertain uncommited

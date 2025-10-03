@@ -1,68 +1,24 @@
-execute if score stage_main_thread AzrTimerStack matches 502 run tag @a[tag=azrPlayer] add azrUpdateSpawnPoint
-execute if score stage_main_thread AzrTimerStack matches 502 run bossbar add azr:progress_bar_special "Stage Diffident"
-execute if score stage_main_thread AzrTimerStack matches 502 run bossbar set azr:progress_bar_special color blue
-execute if score stage_main_thread AzrTimerStack matches 502 run bossbar set azr:progress_bar_special players @a[tag=azrPlayer]
-execute if score stage_main_thread AzrTimerStack matches 502 run bossbar set azr:progress_bar_special max 35
-execute if score stage_main_thread AzrTimerStack matches 502 run tellraw @a[tag=DebugMode,tag=azrPlayer] [{"text":"[DEBUG MODE MESSAGE] You are playing \"Stage Diffident\", with playerCount = "},{"score":{"objective":"Azr_system","name":"playerCount"}},{"text":" Maximum MobCount = 35"}]
-execute if score stage_main_thread AzrTimerStack matches 502..5510 store result bossbar azr:progress_bar_special value run scoreboard players get mobCount Azr_system
-execute if score stage_main_thread AzrTimerStack matches 5511 run bossbar remove azr:progress_bar_special
+#开局行为
+execute if score stage_bonus_thread AzrTimerStack matches 1 run tag @a[tag=azrPlayer] add azrUpdateSpawnPoint
+execute if score stage_bonus_thread AzrTimerStack matches 1 run bossbar add azr:progress_bar_bonus "Stage Diffident"
+execute if score stage_bonus_thread AzrTimerStack matches 1 run bossbar set azr:progress_bar_bonus color yellow
+execute if score stage_bonus_thread AzrTimerStack matches 1 run bossbar set azr:progress_bar_bonus players @a[tag=azrPlayer]
+execute if score stage_bonus_thread AzrTimerStack matches 1 run bossbar set azr:progress_bar_bonus max 149
+execute if score stage_bonus_thread AzrTimerStack matches 1 run tellraw @a[tag=DebugMode,tag=azrPlayer] [{"text":"[DEBUG MODE MESSAGE] You are playing \"Stage Diffident\", with playerCount = "},{"score":{"objective":"Azr_system","name":"playerCount"}},{"text":" Maximum Seconds = 149"}]
+execute if score stage_bonus_thread AzrTimerStack matches 1..106 store result bossbar azr:progress_bar_bonus value run scoreboard players get stage_bonus_thread AzrTimerStack
+execute if score stage_bonus_thread AzrTimerStack matches 106 run bossbar remove azr:progress_bar_bonus
 #
 #leftside:-79946 38 61
-#rightside:-79946 38 50 - unused
-execute if score stage_main_thread AzrTimerStack matches 500..502 run playsound minecraft:ambient.soul_sand_valley.additions master @a -79926 38 34 1000 1
-execute if score stage_main_thread AzrTimerStack matches 502 as @p[x=-79946,y=38,z=56,distance=0..6] at @s run tp @a[tag=azrPlayer,x=-79946,y=38,z=56,distance=6..] @s
-execute if score stage_main_thread AzrTimerStack matches 502 run fill -79938 39 49 -79938 38 49 minecraft:purple_stained_glass
+#rightside:-79946 38 50
 
-#0
-execute if score stage_main_thread AzrTimerStack matches 502 positioned -79933 38 88 run function skyblock:azr/assets/mobs/zombie_t1_4hp
-execute if score stage_main_thread AzrTimerStack matches 502 positioned -79929 38 88 run function skyblock:azr/assets/mobs/zombie_t1_4hp
-execute if score stage_main_thread AzrTimerStack matches 502 positioned -79931 38 86 run function skyblock:azr/assets/mobs/zombie_t1_4hp
-execute if score stage_main_thread AzrTimerStack matches 502 positioned -79931 38 90 run function skyblock:azr/assets/mobs/zombie_t1_4hp
-#4
-execute if score stage_main_thread AzrTimerStack matches 502 positioned -79932 38 88 run function skyblock:azr/assets/mobs/zombie_t2_shield_iron
-execute if score stage_main_thread AzrTimerStack matches 502 positioned -79930 38 88 run function skyblock:azr/assets/mobs/zombie_t2_shield_iron
-execute if score stage_main_thread AzrTimerStack matches 502 positioned -79931 38 87 run function skyblock:azr/assets/mobs/zombie_t2_shield_iron
-execute if score stage_main_thread AzrTimerStack matches 502 positioned -79931 38 89 run function skyblock:azr/assets/mobs/zombie_t2_shield_iron
-#8
-execute if score stage_main_thread AzrTimerStack matches 502 positioned -79933 38 88 run function skyblock:azr/assets/mobs/zombie_t1_4hp
-execute if score stage_main_thread AzrTimerStack matches 502 positioned -79929 38 88 run function skyblock:azr/assets/mobs/zombie_t1_4hp
-execute if score stage_main_thread AzrTimerStack matches 502 positioned -79931 38 86 run function skyblock:azr/assets/mobs/zombie_t1_4hp
-execute if score stage_main_thread AzrTimerStack matches 502 positioned -79931 38 90 run function skyblock:azr/assets/mobs/zombie_t1_4hp
-#12
-execute if score stage_main_thread AzrTimerStack matches 502 positioned -79932 38 88 run function skyblock:azr/assets/mobs/zombie_t2_shield_iron
-execute if score stage_main_thread AzrTimerStack matches 502 positioned -79930 38 88 run function skyblock:azr/assets/mobs/zombie_t2_shield_iron
-execute if score stage_main_thread AzrTimerStack matches 502 positioned -79931 38 87 run function skyblock:azr/assets/mobs/zombie_t2_shield_iron
-execute if score stage_main_thread AzrTimerStack matches 502 positioned -79931 38 89 run function skyblock:azr/assets/mobs/zombie_t2_shield_iron
-#16
-execute if score stage_main_thread AzrTimerStack matches 502 positioned -79930 38 87 run function skyblock:azr/assets/mobs/zombie_militia_t1
-execute if score stage_main_thread AzrTimerStack matches 502 positioned -79932 38 89 run function skyblock:azr/assets/mobs/zombie_militia_t1
-execute if score stage_main_thread AzrTimerStack matches 502 positioned -79932 38 87 run function skyblock:azr/assets/mobs/zombie_militia_t1
-execute if score stage_main_thread AzrTimerStack matches 502 positioned -79930 38 89 run function skyblock:azr/assets/mobs/zombie_militia_t1
-#20
-execute if score stage_main_thread AzrTimerStack matches 502 positioned -79930 38 87 run function skyblock:azr/assets/mobs/zombie_militia_t1
-execute if score stage_main_thread AzrTimerStack matches 502 positioned -79932 38 89 run function skyblock:azr/assets/mobs/zombie_militia_t1
-execute if score stage_main_thread AzrTimerStack matches 502 positioned -79932 38 87 run function skyblock:azr/assets/mobs/zombie_militia_t1
-execute if score stage_main_thread AzrTimerStack matches 502 positioned -79930 38 89 run function skyblock:azr/assets/mobs/zombie_militia_t1
-#24
-execute if score stage_main_thread AzrTimerStack matches 502 positioned -79925 38 82 run function skyblock:azr/assets/mobs/silverfish_t1_corridor
-execute if score stage_main_thread AzrTimerStack matches 502 positioned -79925 38 82 run function skyblock:azr/assets/mobs/silverfish_t1_corridor
-execute if score stage_main_thread AzrTimerStack matches 502 positioned -79925 38 82 run function skyblock:azr/assets/mobs/silverfish_t1_corridor
-execute if score stage_main_thread AzrTimerStack matches 502 positioned -79937 38 94 run function skyblock:azr/assets/mobs/silverfish_t1_corridor
-execute if score stage_main_thread AzrTimerStack matches 502 positioned -79937 38 94 run function skyblock:azr/assets/mobs/silverfish_t1_corridor
-execute if score stage_main_thread AzrTimerStack matches 502 positioned -79937 38 94 run function skyblock:azr/assets/mobs/silverfish_t1_corridor
-#30
-execute if score stage_main_thread AzrTimerStack matches 502 positioned -79936 38 83 run function skyblock:azr/assets/mobs/skeleton_t1
-execute if score stage_main_thread AzrTimerStack matches 502 positioned -79936 38 83 run function skyblock:azr/assets/mobs/skeleton_t1
-execute if score stage_main_thread AzrTimerStack matches 502 positioned -79926 38 93 run function skyblock:azr/assets/mobs/skeleton_t1
-execute if score stage_main_thread AzrTimerStack matches 502 positioned -79926 38 93 run function skyblock:azr/assets/mobs/skeleton_t1
-#34
-execute if score stage_main_thread AzrTimerStack matches 502 positioned -79921 38 90 run function skyblock:azr/assets/mobs/vindicator_t3
-#35
+execute if score stage_bonus_thread AzrTimerStack matches 106 run title @a[tag=azrShowDialog] actionbar {"text":"Extra Stage Clear","color":"green"}
+execute if score stage_bonus_thread AzrTimerStack matches 106 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage_bonus_diffident
+execute if score stage_bonus_thread AzrTimerStack matches 106 as @a[tag=azrPlayer] at @s run tag @s add AZS_BoS04
+execute if score stage_bonus_thread AzrTimerStack matches 106 as @a[tag=azrPlayer] at @s run give @s emerald 5
 
+execute if score stage_bonus_thread AzrTimerStack matches 108..114 run playsound ambient.soul_sand_valley.additions ambient @a[tag=azrShowDialog] -78000 100 0 1000
+execute if score stage_bonus_thread AzrTimerStack matches 108..114 run playsound ambient.soul_sand_valley.loop ambient @a[tag=azrShowDialog] -78000 100 0 1000
+execute if score stage_bonus_thread AzrTimerStack matches 108..114 run playsound ambient.soul_sand_valley.mood ambient @a[tag=azrShowDialog] -78000 100 0 1000
+execute if score stage_bonus_thread AzrTimerStack matches 114 run scoreboard players set stage_bonus Azr_system 0
+execute if score stage_bonus_thread AzrTimerStack matches 114 run scoreboard players set stage_bonus_thread AzrTimerStack 0
 
-execute if score stage_main_thread AzrTimerStack matches 508..5510 if entity @e[tag=AzrielMob,tag=!AzrielDecMob] run scoreboard players set stage_main_thread AzrTimerStack 5500
-execute if score stage_main_thread AzrTimerStack matches 5511.. run title @a[tag=azrShowDialog] actionbar {"text":"Extra Stage Annihilated","color":"green"}
-execute if score stage_main_thread AzrTimerStack matches 5511.. run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage_bonus_diffident
-execute if score stage_main_thread AzrTimerStack matches 5511.. as @a run function skyblock:azr/assets/items/others/revival_star
-execute if score stage_main_thread AzrTimerStack matches 5511.. run scoreboard players set tick_main_thread AzrTimerStack 0
-execute if score stage_main_thread AzrTimerStack matches 5511.. run scoreboard players set stage Azr_system 10

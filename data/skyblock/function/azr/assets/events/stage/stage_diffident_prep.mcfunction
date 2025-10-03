@@ -1,5 +1,3 @@
-scoreboard players set stage_main_thread AzrTimerStack 500
-scoreboard players set stage Azr_system 301
-setblock -79931 39 88 air
-setblock -79941 39 86 air
-setblock -79941 39 85 quartz_pillar
+scoreboard players set stage_bonus_thread AzrTimerStack 1
+scoreboard players set stage_bonus Azr_system 4
+summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
