@@ -8,7 +8,7 @@ execute as @e[tag=arroworb2,type=marker] at @s run function skyblock:azr/assets/
 
 
 
-scoreboard players add stage_boss_bgm AzrTimerStack 0
+scoreboard players add stage_boss_bgm AzrTimerStack 1
 execute if score stage_boss_bgm AzrTimerStack matches 1 as @a[tag=azrShowDialog] at @s run playsound minecraft:lethaldose master @s ~ ~ ~ 0.65
 execute if score stage_boss_bgm AzrTimerStack matches 2321.. run scoreboard players set stage_boss_bgm AzrTimerStack 0
 
