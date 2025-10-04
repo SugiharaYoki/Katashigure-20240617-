@@ -43,8 +43,15 @@ execute if score stage_main_thread AzrTimerStack matches 314 positioned -79930 3
 execute if score stage_main_thread AzrTimerStack matches 314 positioned -79932 38 72 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_shield","AzrielMob_summon_delay","AzrielMob_level_1"]}
 
 execute if score stage_main_thread AzrTimerStack matches 320..321 run scoreboard players set stage_main_thread AzrTimerStack 320
+execute if score stage_main_thread AzrTimerStack matches 320..321 if entity @a[x=-79934,y=37,z=85,dx=6,dy=4,dz=6,tag=azrPlayer] run scoreboard players set stage_main_thread AzrTimerStack 400
 
+    execute if score stage_main_thread AzrTimerStack matches 400 run particle minecraft:soul_fire_flame -79931 38.8 88 0 0 0 0.3 200
+    execute if score stage_main_thread AzrTimerStack matches 400 run particle minecraft:explosion -79931 39.4 88 0.3 0.3 0.3 1 3
+    execute if score stage_main_thread AzrTimerStack matches 400 run playsound minecraft:entity.lightning_bolt.impact master @a[tag=azrShowDialog] -79931 38.8 88 10 0.8
+    execute if score stage_main_thread AzrTimerStack matches 400 run playsound minecraft:item.trident.thunder master @a[tag=azrShowDialog] -79931 38.8 88 10 0.8
+    execute if score stage_main_thread AzrTimerStack matches 400 run playsound minecraft:entity.lightning_bolt.thunder master @a[tag=azrShowDialog] -79931 38.8 88 10 0.8
+    execute if score stage_main_thread AzrTimerStack matches 400..405 positioned -79931 38.8 88 run function skyblock:azr/assets/events/effects/zanei_appear
+    execute if score stage_main_thread AzrTimerStack matches 401 positioned -79923 43 96 run function skyblock:azr/assets/mobs_new/unique/andralune
 
-
-
+execute if score stage_main_thread AzrTimerStack matches 401..900 positioned -79923 43 96 run rotate @n[tag=AzrielNPC_andralune] facing entity @p[tag=azrPlayer]
 
