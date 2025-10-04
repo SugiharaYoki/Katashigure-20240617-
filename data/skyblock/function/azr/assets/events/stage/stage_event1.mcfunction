@@ -52,6 +52,8 @@ execute if score stage_main_thread AzrTimerStack matches 320..321 if entity @a[x
     execute if score stage_main_thread AzrTimerStack matches 400 run playsound minecraft:entity.lightning_bolt.thunder master @a[tag=azrShowDialog] -79931 38.8 88 10 0.8
     execute if score stage_main_thread AzrTimerStack matches 400..405 positioned -79931 38.8 88 run function skyblock:azr/assets/events/effects/zanei_appear
     execute if score stage_main_thread AzrTimerStack matches 401 positioned -79923 43 96 run function skyblock:azr/assets/mobs_new/unique/andralune
+    execute if score stage_main_thread AzrTimerStack matches 401 positioned -79923.58 42.50 96.50 run function skyblock:azr/assets/mobs_new/unique/mersenne
 
 execute if score stage_main_thread AzrTimerStack matches 401..900 positioned -79923 43 96 run rotate @n[tag=AzrielNPC_andralune] facing entity @p[tag=azrPlayer]
+execute if score stage_main_thread AzrTimerStack matches 401..900 positioned -79923 43 96 run rotate @n[tag=AzrielNPC_mersenne] facing entity @p[tag=azrPlayer]
 
