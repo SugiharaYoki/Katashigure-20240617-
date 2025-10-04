@@ -94,6 +94,7 @@ execute if score stage_main_thread AzrTimerStack matches 626 positioned -79931 3
 
 execute if score stage_main_thread AzrTimerStack matches 592..622 positioned -79923 43 96 run rotate @n[tag=AzrielNPC_andralune] facing entity @n[tag=AzrielNPC_mersenne]
 execute if score stage_main_thread AzrTimerStack matches 604..622 positioned -79923 43 96 run rotate @n[tag=AzrielNPC_mersenne] facing entity @n[tag=AzrielNPC_andralune]
+execute if score stage_main_thread AzrTimerStack matches 623.. positioned -79923 43 96 run rotate @n[tag=AzrielNPC_andralune] facing entity @p[tag=azrPlayer]
 execute if score stage_main_thread AzrTimerStack matches 594 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"权之残影：","color":"light_purple","bold": true},{"bold": false,"text":"\n“默尔森，你回去视察第一关口的受损情况。”","color":"white"}]
 execute if score stage_main_thread AzrTimerStack matches 612 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"默尔森：","color":"yellow","bold": true},{"bold": false,"text":"\n“属下听命。”","color":"white"}]
 execute if score stage_main_thread AzrTimerStack matches 622 positioned -79923 43 96 as @n[tag=AzrielNPC_mersenne] at @s run function skyblock:azr/assets/events/effects/magic_circle/generic_angel_tp_npc_marinus_moon_small
