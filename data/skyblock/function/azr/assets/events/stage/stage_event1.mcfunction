@@ -113,10 +113,11 @@ execute if score stage_main_thread AzrTimerStack matches 660 run particle minecr
 execute if score stage_main_thread AzrTimerStack matches 660 run playsound minecraft:entity.lightning_bolt.impact master @a[tag=azrShowDialog] -79931 38.8 88 10 1.2
 execute if score stage_main_thread AzrTimerStack matches 660 run playsound minecraft:item.trident.thunder master @a[tag=azrShowDialog] -79931 38.8 88 10 0.8
 execute if score stage_main_thread AzrTimerStack matches 660 run playsound minecraft:entity.lightning_bolt.thunder master @a[tag=azrShowDialog] -79931 38.8 88 10 0.8
+execute if score stage_main_thread AzrTimerStack matches 660 as @n[tag=AzrielBossA] run tag @s add actionable
 execute if score stage_main_thread AzrTimerStack matches 660..665 positioned -79931 38.8 88 run function skyblock:azr/assets/events/effects/zanei_appear
 
 execute if score stage_main_thread AzrTimerStack matches 665 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"权之残影：","color":"light_purple","bold": true},{"bold": false,"text":"\n“我算是见识到了，你拥有魔界的帮助，是吗？”","color":"white"}]
 execute if score stage_main_thread AzrTimerStack matches 685 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"权之残影：","color":"light_purple","bold": true},{"bold": false,"text":"\n“看来你就是第一关口遇袭的罪魁祸首。我不会容忍这种行径，我会在这里将你的灵魂碾碎。”","color":"white"}]
 
 execute if score stage_main_thread AzrTimerStack matches 990..999 positioned -79931 38 88 if entity @n[tag=AzrielMob_sword,distance=0..15] run scoreboard players set stage_main_thread AzrTimerStack 990
-
+execute if score stage_main_thread AzrTimerStack matches 1001 as @n[tag=AzrielBossA] run tag @s remove actionable

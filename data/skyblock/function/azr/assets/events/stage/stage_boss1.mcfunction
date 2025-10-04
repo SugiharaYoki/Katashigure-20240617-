@@ -41,8 +41,11 @@ execute if score stage_boss_bgm AzrTimerStack matches 2281.. run scoreboard play
     #死亡检测 800..2900 -> 3000
     execute if score tick_main_thread AzrTimerStack matches 100..1900 as @n[tag=AzrielBossA,scores={Health=..80}] run scoreboard players set tick_main_thread AzrTimerStack 2000
    
+    execute if score tick_main_thread AzrTimerStack matches 2001 run scoreboard players set stage_main_thread AzrTimerStack 1000
+    execute if score tick_main_thread AzrTimerStack matches 2001 run stopsound @a[tag=azrShowDialog]
+    execute if score tick_main_thread AzrTimerStack matches 2001 run playsound minecraft:block.beacon.deactivate block @a ~ ~ ~ 10 0.7
+
     #finalize
-    execute if score tick_main_thread AzrTimerStack matches 3001 run stopsound @a[tag=azrShowDialog]
     execute if score tick_main_thread AzrTimerStack matches 3001 run bossbar remove azr:boss_hp_bar
     execute if score tick_main_thread AzrTimerStack matches 3001 run kill @e[tag=AzrielMob,tag=AzrielMob_skeleton_melee,x=-79931,y=40,z=88,distance=5..500]
     execute if score tick_main_thread AzrTimerStack matches 3001..3050 run tag @a[tag=azrPlayer] add azrUpdateSpawnPoint
