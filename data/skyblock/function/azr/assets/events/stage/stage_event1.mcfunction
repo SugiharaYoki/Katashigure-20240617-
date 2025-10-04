@@ -45,13 +45,16 @@ execute if score stage_main_thread AzrTimerStack matches 314 positioned -79932 3
 execute if score stage_main_thread AzrTimerStack matches 320..321 run scoreboard players set stage_main_thread AzrTimerStack 320
 execute if score stage_main_thread AzrTimerStack matches 320..321 if entity @a[x=-79934,y=37,z=85,dx=6,dy=4,dz=6,tag=azrPlayer] run scoreboard players set stage_main_thread AzrTimerStack 400
 
+execute if score stage_main_thread AzrTimerStack matches 401 positioned -79923 43 96 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_empty_human","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score stage_main_thread AzrTimerStack matches 401 positioned -79923.58 42.50 96.50 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_empty_human","AzrielMob_summon_delay","AzrielMob_level_1"]}
+
 #    execute if score stage_main_thread AzrTimerStack matches 400 run particle minecraft:soul_fire_flame -79931 38.8 88 0 0 0 0.3 200
 #    execute if score stage_main_thread AzrTimerStack matches 400 run particle minecraft:explosion -79931 39.4 88 0.3 0.3 0.3 1 3
-    execute if score stage_main_thread AzrTimerStack matches 401 positioned -79923 43 96 run function skyblock:azr/assets/mobs_new/unique/andralune
-    execute if score stage_main_thread AzrTimerStack matches 401 positioned -79923.58 42.50 96.50 run function skyblock:azr/assets/mobs_new/unique/mersenne
+    execute if score stage_main_thread AzrTimerStack matches 409 positioned -79923 43 96 run function skyblock:azr/assets/mobs_new/unique/andralune
+    execute if score stage_main_thread AzrTimerStack matches 409 positioned -79923.58 42.50 96.50 run function skyblock:azr/assets/mobs_new/unique/mersenne
 
-execute if score stage_main_thread AzrTimerStack matches 401..590 positioned -79923 43 96 run rotate @n[tag=AzrielNPC_andralune] facing entity @p[tag=azrPlayer]
-execute if score stage_main_thread AzrTimerStack matches 401..590 positioned -79923 43 96 run rotate @n[tag=AzrielNPC_mersenne] facing entity @p[tag=azrPlayer]
+execute if score stage_main_thread AzrTimerStack matches 409..590 positioned -79923 43 96 run rotate @n[tag=AzrielNPC_andralune] facing entity @p[tag=azrPlayer]
+execute if score stage_main_thread AzrTimerStack matches 409..590 positioned -79923 43 96 run rotate @n[tag=AzrielNPC_mersenne] facing entity @p[tag=azrPlayer]
 
 execute if score stage_main_thread AzrTimerStack matches 403 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"？？？：","color":"light_purple","bold": true},{"bold": false,"text":"\n“我知道对你而言，闯过前四个试炼房间根本不是问题。”","color":"white"}]
 execute if score stage_main_thread AzrTimerStack matches 419 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"身披战袍的天使：","color":"light_purple","bold": true},{"bold": false,"text":"\n“但我确实比较吃惊，多少年内最为骁勇善战的人类亡魂，居然是女儿身。”","color":"white"}]
