@@ -49,8 +49,8 @@ execute if score stage_main_thread AzrTimerStack matches 401 positioned -79925.4
     execute if score stage_main_thread AzrTimerStack matches 409 positioned -79923 43 96 run function skyblock:azr/assets/mobs_new/unique/andralune
     execute if score stage_main_thread AzrTimerStack matches 409 positioned -79925.49 41.50 96.49 run function skyblock:azr/assets/mobs_new/unique/mersenne
 
-execute if score stage_main_thread AzrTimerStack matches 409..590 positioned -79923 43 96 run rotate @n[tag=AzrielNPC_andralune] facing entity @p[tag=azrPlayer]
-execute if score stage_main_thread AzrTimerStack matches 409..590 positioned -79923 43 96 run rotate @n[tag=AzrielNPC_mersenne] facing entity @p[tag=azrPlayer]
+execute if score stage_main_thread AzrTimerStack matches 409..580 positioned -79923 43 96 run rotate @n[tag=AzrielNPC_andralune] facing entity @p[tag=azrPlayer]
+execute if score stage_main_thread AzrTimerStack matches 409..580 positioned -79923 43 96 run rotate @n[tag=AzrielNPC_mersenne] facing entity @p[tag=azrPlayer]
 
 execute if score stage_main_thread AzrTimerStack matches 403 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"？？？：","color":"light_purple","bold": true},{"bold": false,"text":"\n“我知道对你而言，闯过前四个试炼房间根本不是问题。”","color":"white"}]
 execute if score stage_main_thread AzrTimerStack matches 419 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"身披战袍的天使：","color":"light_purple","bold": true},{"bold": false,"text":"\n“但我确实比较吃惊，多少年内最为骁勇善战的人类亡魂，居然是女儿身。”","color":"white"}]
@@ -92,8 +92,8 @@ execute if score stage_main_thread AzrTimerStack matches 624..625 positioned -79
 execute if score stage_main_thread AzrTimerStack matches 626 positioned -79931 38 95 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_summoner","AzrielMob_summon_delay","AzrielMob_level_1"]}
 
 
-execute if score stage_main_thread AzrTimerStack matches 594..622 positioned -79923 43 96 run rotate @n[tag=AzrielNPC_andralune] facing entity @n[tag=AzrielNPC_mersenne]
-execute if score stage_main_thread AzrTimerStack matches 594..622 positioned -79923 43 96 run rotate @n[tag=AzrielNPC_mersenne] facing entity @n[tag=AzrielNPC_andralune]
+execute if score stage_main_thread AzrTimerStack matches 592..622 positioned -79923 43 96 run rotate @n[tag=AzrielNPC_andralune] facing entity @n[tag=AzrielNPC_mersenne]
+execute if score stage_main_thread AzrTimerStack matches 604..622 positioned -79923 43 96 run rotate @n[tag=AzrielNPC_mersenne] facing entity @n[tag=AzrielNPC_andralune]
 execute if score stage_main_thread AzrTimerStack matches 594 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"权之残影：","color":"light_purple","bold": true},{"bold": false,"text":"\n“默尔森，你回去视察第一关口的受损情况。”","color":"white"}]
 execute if score stage_main_thread AzrTimerStack matches 612 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"默尔森：","color":"yellow","bold": true},{"bold": false,"text":"\n“属下听命。”","color":"white"}]
 execute if score stage_main_thread AzrTimerStack matches 622 positioned -79923 43 96 as @n[tag=AzrielNPC_mersenne] at @s run function skyblock:azr/assets/events/effects/magic_circle/generic_angel_tp_npc_marinus_moon_small
