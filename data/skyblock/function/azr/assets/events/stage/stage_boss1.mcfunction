@@ -34,20 +34,19 @@ execute if score stage_boss_bgm AzrTimerStack matches 2281.. run scoreboard play
 
 
 
-    execute if score tick_main_thread AzrTimerStack matches 1850..1880 as @n[tag=AzrielBossA,scores={Azr_mobHealth=..75}] run scoreboard players set tick_main_thread AzrTimerStack 1000
-    execute if score tick_main_thread AzrTimerStack matches 1850..1880 as @n[tag=AzrielBossA,scores={Azr_mobHealth=76..}] run scoreboard players set tick_main_thread AzrTimerStack 940
+    execute if score tick_main_thread AzrTimerStack matches 1850..1880 as @n[tag=AzrielBossA,scores={Health=..75}] run scoreboard players set tick_main_thread AzrTimerStack 38
+    execute if score tick_main_thread AzrTimerStack matches 1850..1880 as @n[tag=AzrielBossA,scores={Health=76..}] run scoreboard players set tick_main_thread AzrTimerStack 20
 
 #end
     #死亡检测 800..2900 -> 3000
-    execute if score tick_main_thread AzrTimerStack matches 100..1900 unless entity @e[tag=AzrielBossA,limit=3] run scoreboard players set tick_main_thread AzrTimerStack 3000
+    execute if score tick_main_thread AzrTimerStack matches 100..1900 as @n[tag=AzrielBossA,scores={Health=..80}] run scoreboard players set tick_main_thread AzrTimerStack 2000
    
     #finalize
     execute if score tick_main_thread AzrTimerStack matches 3001 run stopsound @a[tag=azrShowDialog]
     execute if score tick_main_thread AzrTimerStack matches 3001 run bossbar remove azr:boss_hp_bar
-    execute if score tick_main_thread AzrTimerStack matches 3001 run kill @e[tag=AzrielMob]
+    execute if score tick_main_thread AzrTimerStack matches 3001 run kill @e[tag=AzrielMob,tag=AzrielMob_skeleton_melee,x=-79931,y=40,z=88,distance=5..500]
     execute if score tick_main_thread AzrTimerStack matches 3001..3050 run tag @a[tag=azrPlayer] add azrUpdateSpawnPoint
     #effect & sound
-    execute if score tick_main_thread AzrTimerStack matches 3001 run playsound minecraft:item.trident.thunder master @a[tag=azrShowDialog] -79931 38.8 88 10 0.8
     execute if score tick_main_thread AzrTimerStack matches 3120 run playsound ambient.crimson_forest.mood ambient @a[tag=azrShowDialog] -78000 100 0 1000
     execute if score tick_main_thread AzrTimerStack matches 3120 run playsound ambient.crimson_forest.additions ambient @a[tag=azrShowDialog] -78000 100 0 1000
     execute if score tick_main_thread AzrTimerStack matches 3170 run particle minecraft:end_rod -79931 39 42 0.6 0.6 0.6 0.0 13
@@ -65,7 +64,6 @@ execute if score stage_boss_bgm AzrTimerStack matches 2281.. run scoreboard play
     execute if score tick_main_thread AzrTimerStack matches 3140 run title @a[tag=azrShowDialog] actionbar {"text":"Chapter Clear","color":"gold"}
     execute if score tick_main_thread AzrTimerStack matches 3140 run tellraw @a[tag=azrShowDialog] {"text":"「生命手册」已升级","color":"green"}
     execute if score tick_main_thread AzrTimerStack matches 3140 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage4_boss1
-    execute if score tick_main_thread AzrTimerStack matches 3120 run kill @e[tag=AzrielMob,tag=AzrielMob_skeleton_melee,x=-79931,y=40,z=88,distance=5..500]
     #rewards
     execute if score tick_main_thread AzrTimerStack matches 3144 as @a[tag=azrPlayer] at @s run summon item ~ ~ ~ {Item:{id:"emerald",count:20b}}
     execute if score tick_main_thread AzrTimerStack matches 3144 as @a[tag=azrPlayer] at @s run give @s glistering_melon_slice 1

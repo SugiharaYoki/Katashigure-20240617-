@@ -118,4 +118,5 @@ execute if score stage_main_thread AzrTimerStack matches 660..665 positioned -79
 execute if score stage_main_thread AzrTimerStack matches 665 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"权之残影：","color":"light_purple","bold": true},{"bold": false,"text":"\n“我算是见识到了，你拥有魔界的帮助，是吗？”","color":"white"}]
 execute if score stage_main_thread AzrTimerStack matches 685 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"权之残影：","color":"light_purple","bold": true},{"bold": false,"text":"\n“看来你就是第一关口遇袭的罪魁祸首。我不会容忍这种行径，我会在这里将你的灵魂碾碎。”","color":"white"}]
 
+execute if score stage_main_thread AzrTimerStack matches 990..999 positioned -79931 38 88 if entity @n[tag=AzrielMob_sword,distance=0..15] run scoreboard players set stage_main_thread AzrTimerStack 990
 
