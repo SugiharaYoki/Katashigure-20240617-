@@ -42,6 +42,7 @@ execute if score stage_main_thread AzrTimerStack matches 310 positioned -79932 3
 execute if score stage_main_thread AzrTimerStack matches 314 positioned -79930 38 72 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_shield","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute if score stage_main_thread AzrTimerStack matches 314 positioned -79932 38 72 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_shield","AzrielMob_summon_delay","AzrielMob_level_1"]}
 
+execute if score stage_main_thread AzrTimerStack matches 320..321 run scoreboard players set stage_main_thread AzrTimerStack 320
 
 
 
