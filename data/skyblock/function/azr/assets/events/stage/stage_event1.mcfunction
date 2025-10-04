@@ -45,12 +45,8 @@ execute if score stage_main_thread AzrTimerStack matches 314 positioned -79932 3
 execute if score stage_main_thread AzrTimerStack matches 320..321 run scoreboard players set stage_main_thread AzrTimerStack 320
 execute if score stage_main_thread AzrTimerStack matches 320..321 if entity @a[x=-79934,y=37,z=85,dx=6,dy=4,dz=6,tag=azrPlayer] run scoreboard players set stage_main_thread AzrTimerStack 400
 
-    execute if score stage_main_thread AzrTimerStack matches 400 run particle minecraft:soul_fire_flame -79931 38.8 88 0 0 0 0.3 200
-    execute if score stage_main_thread AzrTimerStack matches 400 run particle minecraft:explosion -79931 39.4 88 0.3 0.3 0.3 1 3
-    execute if score stage_main_thread AzrTimerStack matches 400 run playsound minecraft:entity.lightning_bolt.impact master @a[tag=azrShowDialog] -79931 38.8 88 10 0.8
-    execute if score stage_main_thread AzrTimerStack matches 400 run playsound minecraft:item.trident.thunder master @a[tag=azrShowDialog] -79931 38.8 88 10 0.8
-    execute if score stage_main_thread AzrTimerStack matches 400 run playsound minecraft:entity.lightning_bolt.thunder master @a[tag=azrShowDialog] -79931 38.8 88 10 0.8
-    execute if score stage_main_thread AzrTimerStack matches 400..405 positioned -79931 38.8 88 run function skyblock:azr/assets/events/effects/zanei_appear
+#    execute if score stage_main_thread AzrTimerStack matches 400 run particle minecraft:soul_fire_flame -79931 38.8 88 0 0 0 0.3 200
+#    execute if score stage_main_thread AzrTimerStack matches 400 run particle minecraft:explosion -79931 39.4 88 0.3 0.3 0.3 1 3
     execute if score stage_main_thread AzrTimerStack matches 401 positioned -79923 43 96 run function skyblock:azr/assets/mobs_new/unique/andralune
     execute if score stage_main_thread AzrTimerStack matches 401 positioned -79923.58 42.50 96.50 run function skyblock:azr/assets/mobs_new/unique/mersenne
 
@@ -71,23 +67,30 @@ execute if score stage_main_thread AzrTimerStack matches 557 run playsound ambie
 execute if score stage_main_thread AzrTimerStack matches 557 run playsound ambient.soul_sand_valley.additions ambient @a[tag=azrShowDialog] -79931 47 88 100 1.5
 execute if score stage_main_thread AzrTimerStack matches 557 run playsound ambient.soul_sand_valley.mood ambient @a[tag=azrShowDialog] -79931 47 88 100 0.8
 execute if score stage_main_thread AzrTimerStack matches 557 run playsound ambient.soul_sand_valley.additions ambient @a[tag=azrShowDialog] -79931 47 88 100 0.8
-execute if score stage_main_thread AzrTimerStack matches 557 positioned -79924 38 88 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_summoner","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score stage_main_thread AzrTimerStack matches 557 positioned -79924 38 88 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute if score stage_main_thread AzrTimerStack matches 557 positioned -79931 38 95 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
-execute if score stage_main_thread AzrTimerStack matches 587 positioned -79938 38 88 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_summoner","AzrielMob_summon_delay","AzrielMob_level_1"]}
-execute if score stage_main_thread AzrTimerStack matches 587 positioned -79931 38 82 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
 
+#boss1并线运行开始
 execute if score stage_main_thread AzrTimerStack matches 567 positioned -79924 38 88 run scoreboard players set stage_boss_bgm AzrTimerStack 0
-
-execute if score stage_main_thread AzrTimerStack matches 567.. as @n[tag=AzrielBossA] store result score @s Health run data get entity @s Health
-execute if score stage_main_thread AzrTimerStack matches 567.. store result bossbar azr:boss_hp_bar value run scoreboard players get @n[tag=AzrielBossA] Health
-execute if score stage_main_thread AzrTimerStack matches 567 run bossbar add azr:boss_hp_bar "权之残影 - 安德拉伦恩"
-execute if score stage_main_thread AzrTimerStack matches 567 run bossbar set azr:boss_hp_bar color red
-execute if score stage_main_thread AzrTimerStack matches 567 run bossbar set azr:boss_hp_bar max 300
-execute if score stage_main_thread AzrTimerStack matches 567 run bossbar set azr:boss_hp_bar players @a[tag=azrPlayer]
-
 execute if score stage_main_thread AzrTimerStack matches 567 positioned -79924 38 88 run scoreboard players set tick_main_thread AzrTimerStack 0
 execute if score stage_main_thread AzrTimerStack matches 567 positioned -79924 38 88 run setblock -79931 39 88 air
 execute if score stage_main_thread AzrTimerStack matches 567 positioned -79924 38 88 run scoreboard players set stage Azr_system 10
+
+execute if score stage_main_thread AzrTimerStack matches 558..559 positioned -79931 38 88 if entity @n[tag=AzrielMob_sword,distance=0..15] run scoreboard players set stage_main_thread AzrTimerStack 558
+execute if score stage_main_thread AzrTimerStack matches 560 positioned -79938 38 88 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score stage_main_thread AzrTimerStack matches 560 positioned -79931 38 82 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score stage_main_thread AzrTimerStack matches 561..562 positioned -79931 38 88 if entity @n[tag=AzrielMob_sword,distance=0..15] run scoreboard players set stage_main_thread AzrTimerStack 561
+execute if score stage_main_thread AzrTimerStack matches 563 positioned -79924 38 88 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_summoner","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score stage_main_thread AzrTimerStack matches 563 positioned -79931 38 95 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score stage_main_thread AzrTimerStack matches 587 positioned -79938 38 88 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_summoner","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score stage_main_thread AzrTimerStack matches 587 positioned -79931 38 82 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score stage_main_thread AzrTimerStack matches 613 positioned -79931 38 95 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score stage_main_thread AzrTimerStack matches 613 positioned -79938 38 88 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
+
+execute if score stage_main_thread AzrTimerStack matches 613 positioned -79931 38 82 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score stage_main_thread AzrTimerStack matches 613 positioned -79931 38 95 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score stage_main_thread AzrTimerStack matches 614..615 positioned -79931 38 88 if entity @n[tag=AzrielMob_sword,distance=0..15] run scoreboard players set stage_main_thread AzrTimerStack 614
+
 
 execute if score stage_main_thread AzrTimerStack matches 597 positioned -79923 43 96 run rotate @n[tag=AzrielNPC_andralune] facing entity @n[tag=AzrielNPC_mersenne]
 execute if score stage_main_thread AzrTimerStack matches 607 positioned -79923 43 96 run rotate @n[tag=AzrielNPC_mersenne] facing entity @n[tag=AzrielNPC_andralune]
@@ -96,5 +99,22 @@ execute if score stage_main_thread AzrTimerStack matches 615 positioned -79923 4
 execute if score stage_main_thread AzrTimerStack matches 625 positioned -79923 43 96 as @n[tag=AzrielNPC_mersenne] at @s run function skyblock:azr/assets/events/effects/magic_circle/generic_angel_tp_npc_marinus_moon_small
 execute if score stage_main_thread AzrTimerStack matches 625 positioned -79923 43 96 as @n[tag=AzrielNPC_mersenne] at @s run tp @s -79937 51 67
 
+execute if score stage_main_thread AzrTimerStack matches 660 run tp @n[tag=AzrielBossA] -79931 39 88 facing -79932 38.5 87 
+execute if score stage_main_thread AzrTimerStack matches 660 run particle minecraft:enchant -79903 44 -14.0 1 1 1 0.5 200
+execute if score stage_main_thread AzrTimerStack matches 660.. as @n[tag=AzrielBossA] store result score @s Health run data get entity @s Health
+execute if score stage_main_thread AzrTimerStack matches 660.. store result bossbar azr:boss_hp_bar value run scoreboard players get @n[tag=AzrielBossA] Health
+execute if score stage_main_thread AzrTimerStack matches 660 run bossbar add azr:boss_hp_bar "权之残影 - 安德拉伦恩"
+execute if score stage_main_thread AzrTimerStack matches 660 run bossbar set azr:boss_hp_bar color red
+execute if score stage_main_thread AzrTimerStack matches 660 run bossbar set azr:boss_hp_bar max 300
+execute if score stage_main_thread AzrTimerStack matches 660 run bossbar set azr:boss_hp_bar players @a[tag=azrPlayer]
+
+execute if score stage_main_thread AzrTimerStack matches 660 run particle minecraft:explosion -79931 39.4 88 0.3 0.3 0.3 1 3
+execute if score stage_main_thread AzrTimerStack matches 660 run playsound minecraft:entity.lightning_bolt.impact master @a[tag=azrShowDialog] -79931 38.8 88 10 1.2
+execute if score stage_main_thread AzrTimerStack matches 660 run playsound minecraft:item.trident.thunder master @a[tag=azrShowDialog] -79931 38.8 88 10 0.8
+execute if score stage_main_thread AzrTimerStack matches 660 run playsound minecraft:entity.lightning_bolt.thunder master @a[tag=azrShowDialog] -79931 38.8 88 10 0.8
+execute if score stage_main_thread AzrTimerStack matches 660..665 positioned -79931 38.8 88 run function skyblock:azr/assets/events/effects/zanei_appear
+
+execute if score stage_main_thread AzrTimerStack matches 665 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"权之残影：","color":"light_purple","bold": true},{"bold": false,"text":"\n“我算是见识到了，你拥有魔界的帮助，是吗？”","color":"white"}]
+execute if score stage_main_thread AzrTimerStack matches 685 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"权之残影：","color":"light_purple","bold": true},{"bold": false,"text":"\n“看来你就是第一关口遇袭的罪魁祸首。我不会容忍这种行径，我会在这里将你的灵魂碾碎。”","color":"white"}]
 
 
