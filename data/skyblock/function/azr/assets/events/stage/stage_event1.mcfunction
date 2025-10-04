@@ -114,6 +114,8 @@ execute if score stage_main_thread AzrTimerStack matches 660 run playsound minec
 execute if score stage_main_thread AzrTimerStack matches 660 run playsound minecraft:item.trident.thunder master @a[tag=azrShowDialog] -79931 38.8 88 10 0.8
 execute if score stage_main_thread AzrTimerStack matches 660 run playsound minecraft:entity.lightning_bolt.thunder master @a[tag=azrShowDialog] -79931 38.8 88 10 0.8
 execute if score stage_main_thread AzrTimerStack matches 660 as @n[tag=AzrielBossA] run tag @s add actionable
+execute if score stage_main_thread AzrTimerStack matches 660 as @n[tag=AzrielBossA] run data modify entity @s Invulnerable set value 0b
+execute if score stage_main_thread AzrTimerStack matches 660 as @n[tag=AzrielBossA] run data modify entity @s NoAI set value 0b
 execute if score stage_main_thread AzrTimerStack matches 660..665 positioned -79931 38.8 88 run function skyblock:azr/assets/events/effects/zanei_appear
 
 execute if score stage_main_thread AzrTimerStack matches 665 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"权之残影：","color":"light_purple","bold": true},{"bold": false,"text":"\n“我算是见识到了，你拥有魔界的帮助，是吗？”","color":"white"}]
@@ -121,28 +123,35 @@ execute if score stage_main_thread AzrTimerStack matches 685 positioned -79923 4
 
 execute if score stage_main_thread AzrTimerStack matches 990..999 positioned -79931 38 88 if entity @n[tag=AzrielMob_sword,distance=0..15] run scoreboard players set stage_main_thread AzrTimerStack 990
 execute if score stage_main_thread AzrTimerStack matches 1001 as @n[tag=AzrielBossA] run tag @s remove actionable
-    #finalize
-    execute if score tick_main_thread AzrTimerStack matches 2001 run bossbar remove azr:boss_hp_bar
-    execute if score tick_main_thread AzrTimerStack matches 2001 run kill @e[tag=AzrielMob,tag=AzrielMob_skeleton_melee,x=-79931,y=40,z=88,distance=5..500]
-    execute if score tick_main_thread AzrTimerStack matches 2001..2020 run tag @a[tag=azrPlayer] add azrUpdateSpawnPoint
-    #effect & sound
-    execute if score tick_main_thread AzrTimerStack matches 2001 run playsound ambient.crimson_forest.mood ambient @a[tag=azrShowDialog] -78000 100 0 1000
-    execute if score tick_main_thread AzrTimerStack matches 2001 run playsound ambient.crimson_forest.additions ambient @a[tag=azrShowDialog] -78000 100 0 1000
-    execute if score tick_main_thread AzrTimerStack matches 2011 run particle minecraft:end_rod -79931 39 42 0.6 0.6 0.6 0.0 13
-    execute if score tick_main_thread AzrTimerStack matches 2011 run particle minecraft:end_rod -79931 39 76 0.6 0.6 0.6 0.0 131
-    #finalize map
-    execute if score tick_main_thread AzrTimerStack matches 2011 run fill -79930 42 104 -79932 38 104 air destroy
-    execute if score tick_main_thread AzrTimerStack matches 2011 run clone -79931 38 42 -79931 38 42 -79931 38 76 replace move
-    execute if score tick_main_thread AzrTimerStack matches 2011 unless block -79931 38 76 white_shulker_box run setblock -79931 38 76 white_shulker_box
-    #finalize stage
-    execute if score tick_main_thread AzrTimerStack matches 2011 run scoreboard players set wave Azr_system 10
-    execute if score tick_main_thread AzrTimerStack matches 2011 run scoreboard players set stage Azr_system 11
-    execute if score tick_main_thread AzrTimerStack matches 2011 run scoreboard players reset tick_main_thread AzrTimerStack
-    #execute if score tick_main_thread AzrTimerStack matches 3200 run scoreboard players set @a[tag=azrPlayer,scores={Azr_PlyPtsH=..4}] Azr_PlyPtsH 5
-    execute if score tick_main_thread AzrTimerStack matches 2011 run playsound minecraft:ui.toast.challenge_complete master @a[tag=azrShowDialog] ~ ~ ~ 2 0.9
-    execute if score tick_main_thread AzrTimerStack matches 2011 run title @a[tag=azrShowDialog] actionbar {"text":"Chapter Clear","color":"gold"}
-    execute if score tick_main_thread AzrTimerStack matches 2011 run tellraw @a[tag=azrShowDialog] {"text":"「生命手册」已升级","color":"green"}
-    execute if score tick_main_thread AzrTimerStack matches 2011 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage4_boss1
-    #rewards
-    execute if score tick_main_thread AzrTimerStack matches 2011 as @a[tag=azrPlayer] at @s run summon item ~ ~ ~ {Item:{id:"emerald",count:20b}}
-    execute if score tick_main_thread AzrTimerStack matches 2011 as @a[tag=azrPlayer] at @s run give @s glistering_melon_slice 1
+#finalize
+execute if score tick_main_thread AzrTimerStack matches 2001 run bossbar remove azr:boss_hp_bar
+execute if score tick_main_thread AzrTimerStack matches 2001 run kill @e[tag=AzrielMob,tag=AzrielMob_skeleton_melee,x=-79931,y=40,z=88,distance=5..500]
+execute if score tick_main_thread AzrTimerStack matches 2001..2020 run tag @a[tag=azrPlayer] add azrUpdateSpawnPoint
+#effect & sound
+execute if score tick_main_thread AzrTimerStack matches 2001 run playsound ambient.crimson_forest.mood ambient @a[tag=azrShowDialog] -78000 100 0 1000
+execute if score tick_main_thread AzrTimerStack matches 2001 run playsound ambient.crimson_forest.additions ambient @a[tag=azrShowDialog] -78000 100 0 1000
+execute if score tick_main_thread AzrTimerStack matches 2011 run particle minecraft:end_rod -79931 39 42 0.6 0.6 0.6 0.0 13
+execute if score tick_main_thread AzrTimerStack matches 2011 run particle minecraft:end_rod -79931 39 76 0.6 0.6 0.6 0.0 131
+#finalize map
+execute if score tick_main_thread AzrTimerStack matches 2011 run fill -79930 42 104 -79932 38 104 air destroy
+execute if score tick_main_thread AzrTimerStack matches 2011 run clone -79931 38 42 -79931 38 42 -79931 38 76 replace move
+execute if score tick_main_thread AzrTimerStack matches 2011 unless block -79931 38 76 white_shulker_box run setblock -79931 38 76 white_shulker_box
+#finalize stage
+execute if score tick_main_thread AzrTimerStack matches 2011 run scoreboard players set wave Azr_system 10
+execute if score tick_main_thread AzrTimerStack matches 2011 run scoreboard players set stage Azr_system 11
+execute if score tick_main_thread AzrTimerStack matches 2011 run scoreboard players reset tick_main_thread AzrTimerStack
+#execute if score tick_main_thread AzrTimerStack matches 3200 run scoreboard players set @a[tag=azrPlayer,scores={Azr_PlyPtsH=..4}] Azr_PlyPtsH 5
+execute if score tick_main_thread AzrTimerStack matches 2011 run playsound minecraft:ui.toast.challenge_complete master @a[tag=azrShowDialog] ~ ~ ~ 2 0.9
+execute if score tick_main_thread AzrTimerStack matches 2011 run title @a[tag=azrShowDialog] actionbar {"text":"Chapter Clear","color":"gold"}
+execute if score tick_main_thread AzrTimerStack matches 2011 run tellraw @a[tag=azrShowDialog] {"text":"「生命手册」已升级","color":"green"}
+execute if score tick_main_thread AzrTimerStack matches 2011 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage4_boss1
+#rewards
+execute if score tick_main_thread AzrTimerStack matches 2011 as @a[tag=azrPlayer] at @s run summon item ~ ~ ~ {Item:{id:"emerald",count:20b}}
+execute if score tick_main_thread AzrTimerStack matches 2011 as @a[tag=azrPlayer] at @s run give @s glistering_melon_slice 1
+
+
+
+
+
+
+
