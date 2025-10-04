@@ -33,10 +33,9 @@ execute if score stage_main_thread AzrTimerStack matches 91 positioned -79927 38
 execute if score stage_main_thread AzrTimerStack matches 93 positioned -79927 38 25 run function skyblock:azr/assets/mobs_new/undead_pickaxe
 execute if score stage_main_thread AzrTimerStack matches 103 positioned -79927 38 25 run function skyblock:azr/assets/mobs_new/undead_pickaxe
 execute if score stage_main_thread AzrTimerStack matches 94..95 if entity @n[tag=AzrielMob_undead_pickaxe] run scoreboard players set stage_main_thread AzrTimerStack 94
-execute if score stage_main_thread AzrTimerStack matches 96 positioned -79930 38 38 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_empty_human","AzrielMob_summon_delay","AzrielMob_level_1"]}
-execute if score stage_main_thread AzrTimerStack matches 96 positioned -79932 38 38 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_empty_human","AzrielMob_summon_delay","AzrielMob_level_1"]}
-execute if score stage_main_thread AzrTimerStack matches 101 positioned -79930 38 38 run function skyblock:azr/assets/mobs_new/sword
-execute if score stage_main_thread AzrTimerStack matches 101 positioned -79932 38 38 run function skyblock:azr/assets/mobs_new/sword
+execute if score stage_main_thread AzrTimerStack matches 96 positioned -79930 38 38 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score stage_main_thread AzrTimerStack matches 96 positioned -79932 38 38 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
+
 
 execute if score stage_main_thread AzrTimerStack matches 123 positioned -79927 38 25 run function skyblock:azr/assets/mobs_new/spider_giant
 

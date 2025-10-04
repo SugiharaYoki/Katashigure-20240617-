@@ -24,6 +24,7 @@ execute if score @s rng1 matches 4..6 positioned ~ ~1 ~ run playsound block.beac
 execute if score @s rng1 matches 7..10 positioned ~ ~1 ~ run playsound block.beacon.ambient ambient @a ~ ~ ~ 0.3 0.5
 execute if score @s rng1 matches 11..20 positioned ~ ~1 ~ run playsound block.beacon.ambient ambient @a ~ ~ ~ 0.4 0.6
 
+execute if score @s rng1 matches 26 positioned ~ ~ ~ run function skyblock:azr/assets/mobs_new/sword
 #$execute if score @s rng1 matches 45 positioned ~ ~ ~ run function skyblock:azr/assets/mobs_new/$(mob_name)
 
 execute if score @s rng1 matches 27.. run kill @s

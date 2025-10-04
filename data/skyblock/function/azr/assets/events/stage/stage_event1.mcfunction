@@ -67,6 +67,27 @@ execute if score stage_main_thread AzrTimerStack matches 511 positioned -79923 4
 execute if score stage_main_thread AzrTimerStack matches 531 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"你：","color":"aqua"},{"text":"\n“你好，‘权之残影’。你知道我是谁。”","color":"white"}]
 execute if score stage_main_thread AzrTimerStack matches 547 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"权之残影：","color":"light_purple","bold": true},{"bold": false,"text":"\n“我确实窥见了你在人间的身份，爱理莎女士。在同你过招前——我想先测试一下你如今的实力。”","color":"white"}]
 
+execute if score stage_main_thread AzrTimerStack matches 557 run playsound ambient.soul_sand_valley.mood ambient @a[tag=azrShowDialog] -79931 47 88 100 1.5
+execute if score stage_main_thread AzrTimerStack matches 557 run playsound ambient.soul_sand_valley.additions ambient @a[tag=azrShowDialog] -79931 47 88 100 1.5
+execute if score stage_main_thread AzrTimerStack matches 557 run playsound ambient.soul_sand_valley.mood ambient @a[tag=azrShowDialog] -79931 47 88 100 0.8
+execute if score stage_main_thread AzrTimerStack matches 557 run playsound ambient.soul_sand_valley.additions ambient @a[tag=azrShowDialog] -79931 47 88 100 0.8
+execute if score stage_main_thread AzrTimerStack matches 557 positioned -79924 38 88 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_summoner","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score stage_main_thread AzrTimerStack matches 557 positioned -79931 38 95 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score stage_main_thread AzrTimerStack matches 587 positioned -79938 38 88 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_summoner","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score stage_main_thread AzrTimerStack matches 587 positioned -79931 38 82 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
+
+execute if score stage_main_thread AzrTimerStack matches 567 positioned -79924 38 88 run scoreboard players set stage_boss_bgm AzrTimerStack 0
+
+execute if score stage_main_thread AzrTimerStack matches 567.. as @n[tag=AzrielBossA] store result score @s Health run data get entity @s Health
+execute if score stage_main_thread AzrTimerStack matches 567.. store result bossbar azr:boss_hp_bar value run scoreboard players get @n[tag=AzrielBossA] Health
+execute if score stage_main_thread AzrTimerStack matches 567 run bossbar add azr:boss_hp_bar "权之残影 - 安德拉伦恩"
+execute if score stage_main_thread AzrTimerStack matches 567 run bossbar set azr:boss_hp_bar color red
+execute if score stage_main_thread AzrTimerStack matches 567 run bossbar set azr:boss_hp_bar max 300
+execute if score stage_main_thread AzrTimerStack matches 567 run bossbar set azr:boss_hp_bar players @a[tag=azrPlayer]
+
+execute if score stage_main_thread AzrTimerStack matches 567 positioned -79924 38 88 run scoreboard players set tick_main_thread AzrTimerStack 0
+execute if score stage_main_thread AzrTimerStack matches 567 positioned -79924 38 88 run setblock -79931 39 88 air
+execute if score stage_main_thread AzrTimerStack matches 567 positioned -79924 38 88 run scoreboard players set stage Azr_system 10
 
 execute if score stage_main_thread AzrTimerStack matches 597 positioned -79923 43 96 run rotate @n[tag=AzrielNPC_andralune] facing entity @n[tag=AzrielNPC_mersenne]
 execute if score stage_main_thread AzrTimerStack matches 607 positioned -79923 43 96 run rotate @n[tag=AzrielNPC_mersenne] facing entity @n[tag=AzrielNPC_andralune]
