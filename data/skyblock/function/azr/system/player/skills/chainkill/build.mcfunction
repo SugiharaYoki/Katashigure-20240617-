@@ -96,3 +96,4 @@ tellraw @s[scores={rng1=..0}] [{"text":"剩余可分配点数：","bold":true,"c
 kill @e[tag=AZR_ChainKillUpg_displaymarker,type=marker]
 scoreboard players set @s Azr_Shop 0
 execute if items entity @s player.cursor *[custom_data~{PsychicVitae:1b}] run item replace entity @s player.cursor with air
+execute if items entity @s player.cursor *[custom_data~{SarielVitae:1b}] run item replace entity @s player.cursor with air

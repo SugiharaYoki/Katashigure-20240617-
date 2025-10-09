@@ -14,6 +14,9 @@ execute if items entity @s[tag=hasLifeVitae] container.* glistering_melon_slice 
 #灵能入口
 execute if items entity @s player.cursor *[custom_data~{PsychicVitae:1b}] run function skyblock:azr/system/player/skills/chainkill/build
 execute if items entity @s container.* *[custom_data~{PsychicVitae:1b}] run clear @s *[custom_data~{PsychicVitae:1b}]
+#节制入口
+execute if items entity @s player.cursor *[custom_data~{SarielVitae:1b}] run scoreboard players set @s Azr_Shop 8432100
+execute if items entity @s container.* *[custom_data~{SarielVitae:1b}] run clear @s *[custom_data~{SarielVitae:1b}]
 #商店入口
 execute if entity @s[tag=!azrBanLifeVitae] unless score @s Azr_shopChapter matches 2.. run scoreboard players set @s Azr_shopChapter 1
 execute if entity @s[tag=!azrBanLifeVitae] if items entity @s player.cursor *[custom_data~{LifeVitae:1b}] run function skyblock:azr/system/shop/build
