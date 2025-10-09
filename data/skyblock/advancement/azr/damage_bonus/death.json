@@ -1,0 +1,13 @@
+{
+  "criteria": {
+    "hit": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": {
+          "nbt": "{Tags:[\"AzrielMob_typeDEATH\"]}" 
+        }
+      }
+    }
+  },
+  "rewards": { "function": "skyblock:azr/system/player/damage_bonus/death" }
+}

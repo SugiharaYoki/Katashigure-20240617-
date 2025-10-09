@@ -109,19 +109,19 @@ execute if entity @s[tag=!AzrSariel_upg16C] run data modify entity @n[tag=AzrSar
 
 
 
-# 防
-# 生
-# 防
-# 生
-# 防
-# 生
-# ★
-# 攻
-# 速
-# 攻
-# 速
-# 攻
-# 速
+#  01 防
+#  02 生
+#  03 防
+#  04 生
+#  05 防
+#  06 生
+#  07 ★
+#  08 攻
+#  09 速
+#  10 攻
+#  11 速
+#  12 攻
+#  13 速
 
 
 tellraw @s [{"text":" ","color":"light_purple"},\
