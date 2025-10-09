@@ -19,6 +19,8 @@ execute if items entity @s[tag=hasLifeVitae] container.* glistering_melon_slice 
 execute if items entity @s player.cursor *[custom_data~{PsychicVitae:1b}] run function skyblock:azr/system/player/skills/chainkill/build
 #节制入口
 execute if items entity @s player.cursor *[custom_data~{SarielVitae:1b}] run scoreboard players set @s Azr_Shop 8432100
+execute unless entity @s[tag=AZR_sariel_01_effected] run function skyblock:azr/system/shop/purchase/sariel/effect
+
 execute if items entity @s container.* *[custom_data~{Vitae:1b}] run clear @s *[custom_data~{Vitae:1b}]
 #商店入口
 execute if entity @s[tag=!azrBanLifeVitae] unless score @s Azr_shopChapter matches 2.. run scoreboard players set @s Azr_shopChapter 1
