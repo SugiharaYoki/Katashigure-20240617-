@@ -28,4 +28,4 @@ execute if score @s rng8 matches 26 at @n[tag=AZR_boss2_arrowpince_marker] run s
 #summon block_display 90130.0 124.5 125.5 {transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[3.2f,0.03f,0.03f],translation:[0f,0f,0f]},block_state:{Name:},Tags:["sea_blockdisplay"]}
 
 
-execute if score @s rng8 matches 63.. run scoreboard players set @s rng8 0
+execute if score @s rng8 matches 63.. run scoreboard players set @s rng8 9999
