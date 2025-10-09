@@ -1,16 +1,7 @@
-#function skyblock:sea/p/w/cost
-#function skyblock:sea/p/w/axe_cost
-#function skyblock:sea/p/w/flamethrower_cost
-#function skyblock:sea/p/w/shield_cost
 
 
 tag @s add AzrSariel_upg_SUCCESS
 
-#撬棍
-# 伤 速 伤 速 伤 速
-#    速    速    速
-#    伤 距 速 距 伤
-#          距    距
 
 execute if entity @s[scores={Azr_Shop=8432101}] if entity @s[tag=!AzrSariel_upg2] run tag @s add AzrSariel_upg_FAILED_NC
 execute if entity @s[scores={Azr_Shop=8432102}] if entity @s[tag=!AzrSariel_upg3] run tag @s add AzrSariel_upg_FAILED_NC
@@ -40,6 +31,12 @@ execute if entity @s[scores={Azr_Shop=8432111}] unless entity @s[scores={Azr_eme
 execute if entity @s[scores={Azr_Shop=8432112}] unless entity @s[scores={Azr_emerald=20..}] run tag @s add AzrSariel_upg_FAILED
 execute if entity @s[scores={Azr_Shop=8432113}] unless entity @s[scores={Azr_emerald=20..}] run tag @s add AzrSariel_upg_FAILED
 
+execute if entity @s[scores={Azr_Shop=8432114}] if entity @s[tag=!AzrSariel_upg5] run tag @s add AzrSariel_upg_FAILED_NC
+execute if entity @s[scores={Azr_Shop=8432115}] if entity @s[tag=!AzrSariel_upg5B] run tag @s add AzrSariel_upg_FAILED_NC
+execute if entity @s[scores={Azr_Shop=8432116}] if entity @s[tag=!AzrSariel_upg5C] run tag @s add AzrSariel_upg_FAILED_NC
+execute if entity @s[scores={Azr_Shop=8432114}] unless entity @s[scores={Azr_emerald=5..}] run tag @s add AzrSariel_upg_FAILED
+execute if entity @s[scores={Azr_Shop=8432115}] unless entity @s[scores={Azr_emerald=20..}] run tag @s add AzrSariel_upg_FAILED
+execute if entity @s[scores={Azr_Shop=8432116}] unless entity @s[scores={Azr_emerald=40..}] run tag @s add AzrSariel_upg_FAILED
 
 
 tag @s[tag=AzrSariel_upg_FAILED] remove AzrSariel_upg_SUCCESS
@@ -52,8 +49,6 @@ tag @s[tag=AzrSariel_upg_FAILED_NC_armor4] remove AzrSariel_upg_SUCCESS
 execute if entity @s[tag=AzrSariel_upg_SUCCESS] run function skyblock:sea/p/w/execute_sub
 
 
-#execute if entity @s[scores={sea_i_echo_shard=-90..-1}] run tellraw @s[tag=AzrSariel_upg_FAILED] [{"text":"警告：回声碎片已透支！","color":"red"}]
-#execute if entity @s[scores={sea_i_iron_ingot=-90..-1}] run tellraw @s[tag=AzrSariel_upg_FAILED] [{"text":"警告：铁锭已透支！","color":"red"}]
 tellraw @s[tag=AzrSariel_upg_FAILED] [{"text":"失败：剩余素材不足！","color":"red"}]
 tellraw @s[tag=AzrSariel_upg_FAILED_NC] [{"text":"失败：相邻升级格未解锁！","color":"red"}]
 tag @s remove AzrSariel_upg_FAILED

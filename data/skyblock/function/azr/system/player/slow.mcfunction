@@ -41,3 +41,10 @@ execute if items entity @s weapon.mainhand *[custom_data~{Error:1b}] run tellraw
 {"text":"\nplayerCount"},{"score":{"name":"playerCount","objective":"Azr_system"}},\
 {"text":"\nmobCount"},{"score":{"name":"mobCount","objective":"Azr_system"}},\
 {"text":"\n=============\n"}]
+
+#节制生死平衡
+scoreboard players remove @s AzrSariel_Skill_FanFire_cooldown 1
+
+
+
+

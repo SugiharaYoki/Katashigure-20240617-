@@ -14,5 +14,9 @@ execute if entity @s[tag=AzrSariel_upg11] run attribute @s attack_speed modifier
 execute if entity @s[tag=AzrSariel_upg12] run attribute @s attack_damage modifier add azr_sariel:upg_12 0.5 add_value
 execute if entity @s[tag=AzrSariel_upg13] run attribute @s attack_speed modifier add azr_sariel:upg_13 0.1 add_value
 
+scoreboard players set @s AzrSariel_Skill_FanFire 0
+execute if entity @s[tag=AzrSariel_upg5B] run scoreboard players add @s AzrSariel_Skill_FanFire 1
+execute if entity @s[tag=AzrSariel_upg5C] run scoreboard players add @s AzrSariel_Skill_FanFire 1
+execute if entity @s[tag=AzrSariel_upg5D] run scoreboard players add @s AzrSariel_Skill_FanFire 1
 
 tag @s add AZR_sariel_01_effected
