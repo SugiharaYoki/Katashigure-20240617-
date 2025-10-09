@@ -5,9 +5,6 @@
     #set spawnpoint
     execute if score tick_main_thread AzrTimerStack matches 1 run tag @a[tag=azrPlayer] add azrUpdateSpawnPoint
 
-say hi
-tell @a HI
-
 scoreboard players add stage_boss_bgm AzrTimerStack 1
 execute if score stage_boss_bgm AzrTimerStack matches 1 as @a[tag=azrShowDialog] at @s run playsound minecraft:lethaldose master @s ~ ~ ~ 0.65
 execute if score stage_boss_bgm AzrTimerStack matches 2281.. run scoreboard players set stage_boss_bgm AzrTimerStack 0
@@ -33,13 +30,13 @@ execute if score stage_boss_bgm AzrTimerStack matches 2281.. run scoreboard play
 #ACTION
 
     execute if entity @s[tag=actionable] run scoreboard players add @s rng8 1
-    execute if score @s[scores={Health=151..}] rng8 matches 2 store result score @s rng2 run random value 1..8
-    execute if score @s[scores={Health=..150}] rng8 matches 2 store result score @s rng2 run random value 1..10
+    execute if score @s[scores={Health=151..}] rng8 matches 1 store result score @s rng2 run random value 1..8
+    execute if score @s[scores={Health=..150}] rng8 matches 1 store result score @s rng2 run random value 1..10
     execute if score @s[scores={rng2=1..3}] rng8 matches 2.. run function skyblock:azr/assets/mobs_new/skill/boss1_andralune/attack_flat_01
     execute if score @s[scores={rng2=4..6}] rng8 matches 2.. run function skyblock:azr/assets/mobs_new/skill/boss1_andralune/attack_flat_02
     execute if score @s[scores={rng2=7..8}] rng8 matches 2.. run function skyblock:azr/assets/mobs_new/skill/boss1_andralune/skill_arrowpince
     execute if score @s[scores={rng2=9..10}] rng8 matches 2.. run function skyblock:azr/assets/mobs_new/skill/boss1_andralune/skill_arrowpince
-    execute if score @s rng8 matches 999.. run scoreboard players set @s rng8 0
+    execute if score @s rng8 matches 999.. run scoreboard players set @s rng8 -20
 
 #MARKER
 
