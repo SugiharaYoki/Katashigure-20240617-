@@ -42,6 +42,7 @@ execute if score stage_boss_bgm AzrTimerStack matches 2281.. run scoreboard play
     execute if score @s[scores={Health=..180}] rng8 matches 0 store result score @s rng5 run random value 1..100
     execute if entity @s[scores={rng5=1}] run function skyblock:azr/assets/mobs_new/skill/boss1_andralune/move_back
     execute if entity @s[scores={rng5=2}] run function skyblock:azr/assets/mobs_new/skill/boss1_andralune/move_forward
+    execute if entity @s[scores={rng5=3..4}] run function skyblock:azr/assets/mobs_new/skill/boss1_andralune/move_fastshift
 
 #MARKER
 
