@@ -1,1 +1,1 @@
-function skyblock:azr/system/player/damage_bonus/monster
+say hi
