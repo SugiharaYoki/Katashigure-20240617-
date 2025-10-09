@@ -93,7 +93,7 @@ tellraw @s [{"text":" ","color":"light_purple"},\
 {"selector":"@n[tag=AzrSariel_displaymarker4]","color":"#5dffce","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432104"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：10\n生命上限 +2","color":"white"}}}]
 
 tellraw @s [{"text":" ","color":"light_purple"},\
-{"selector":"@n[tag=AzrSariel_displaymarkerE]","color":"dark_grayred"},\
+{"selector":"@n[tag=AzrSariel_displaymarkerE]","color":"dark_gray"},\
 {"selector":"@n[tag=AzrSariel_displaymarker5]","color":"#5dffce","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432105"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：5\n基础防御 +1","color":"white"}}}]
 
 tellraw @s [{"text":" ","color":"light_purple"},\
