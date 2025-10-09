@@ -205,7 +205,7 @@ execute if score @s rng1 matches 1.. run item replace entity @s[scores={Azr0_UPG
 execute if score @s rng1 matches 1.. run item replace entity @s[scores={Azr0_UPG_star=6}] inventory.16 with end_crystal[custom_data={"azr0shop":true},custom_name='{"text":"已购买全部命星！","italic":false,"color":"gold"}']
 
 execute unless items entity @s player.crafting.1 *[!custom_data~{PsychicVitae:1b}] if entity @s[tag=hasSkills] run item replace entity @s player.crafting.1 with minecraft:enchanted_book[custom_name='{"bold":true,"italic":false,"color":"gold","text":"灵能手册"}',lore=['{"italic":false,"text":"在物品栏选定以展开索命连击升级页面"}'],custom_data={PsychicVitae:1b}]
-execute unless items entity @s player.crafting.2 *[!custom_data~{SarielVitae:1b}] if entity @s[tag=hasLifeVitae] run item replace entity @s player.crafting.1 with minecraft:enchanted_book[custom_name='{"bold":true,"italic":false,"color":"gold","text":"节制手册"}',lore=['{"italic":false,"text":"在物品栏选定以展开生死平衡升级页面"}'],custom_data={SarielVitae:1b}]
+
 
 
 item replace entity @s[scores={Azr0_UPG_armor=0,Azr0_UPG_hp=..2}] inventory.25 with barrier
