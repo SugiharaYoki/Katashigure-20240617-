@@ -21,6 +21,54 @@ summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarker13"
 summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarker14"]}
 summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarker15"]}
 summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarker16"]}
+summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarker1B"]}
+summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarker2B"]}
+summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarker3B"]}
+summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarker4B"]}
+summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarker5B"]}
+summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarker6B"]}
+summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarker7B"]}
+summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarker8B"]}
+summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarker9B"]}
+summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarker10B"]}
+summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarker11B"]}
+summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarker12B"]}
+summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarker13B"]}
+summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarker14B"]}
+summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarker15B"]}
+summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarker16B"]}
+summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarker1C"]}
+summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarker2C"]}
+summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarker3C"]}
+summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarker4C"]}
+summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarker5C"]}
+summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarker6C"]}
+summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarker7C"]}
+summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarker8C"]}
+summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarker9C"]}
+summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarker10C"]}
+summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarker11C"]}
+summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarker12C"]}
+summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarker13C"]}
+summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarker14C"]}
+summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarker15C"]}
+summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarker16C"]}
+summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarker1D"]}
+summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarker2D"]}
+summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarker3D"]}
+summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarker4D"]}
+summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarker5D"]}
+summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarker6D"]}
+summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarker7D"]}
+summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarker8D"]}
+summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarker9D"]}
+summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarker10D"]}
+summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarker11D"]}
+summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarker12D"]}
+summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarker13D"]}
+summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarker14D"]}
+summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarker15D"]}
+summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarker16D"]}
 data modify entity @n[tag=AzrSariel_displaymarker0] CustomName set value '" ▼ "'
 data modify entity @n[tag=AzrSariel_displaymarker0b] CustomName set value '" ▽ "'
 data modify entity @n[tag=AzrSariel_displaymarkerE] CustomName set value '" ▽ "'
@@ -104,6 +152,22 @@ execute if entity @s[tag=!AzrSariel_upg13C] run data modify entity @n[tag=AzrSar
 execute if entity @s[tag=!AzrSariel_upg14C] run data modify entity @n[tag=AzrSariel_displaymarker14C] CustomName set value '" □ "'
 execute if entity @s[tag=!AzrSariel_upg15C] run data modify entity @n[tag=AzrSariel_displaymarker15C] CustomName set value '" □ "'
 execute if entity @s[tag=!AzrSariel_upg16C] run data modify entity @n[tag=AzrSariel_displaymarker16C] CustomName set value '" □ "'
+execute if entity @s[tag=!AzrSariel_upg1D] run data modify entity @n[tag=AzrSariel_displaymarker1D] CustomName set value '" □ "'
+execute if entity @s[tag=!AzrSariel_upg2D] run data modify entity @n[tag=AzrSariel_displaymarker2D] CustomName set value '" □ "'
+execute if entity @s[tag=!AzrSariel_upg3D] run data modify entity @n[tag=AzrSariel_displaymarker3D] CustomName set value '" □ "'
+execute if entity @s[tag=!AzrSariel_upg4D] run data modify entity @n[tag=AzrSariel_displaymarker4D] CustomName set value '" □ "'
+execute if entity @s[tag=!AzrSariel_upg5D] run data modify entity @n[tag=AzrSariel_displaymarker5D] CustomName set value '" □ "'
+execute if entity @s[tag=!AzrSariel_upg6D] run data modify entity @n[tag=AzrSariel_displaymarker6D] CustomName set value '" □ "'
+execute if entity @s[tag=!AzrSariel_upg7D] run data modify entity @n[tag=AzrSariel_displaymarker7D] CustomName set value '" □ "'
+execute if entity @s[tag=!AzrSariel_upg8D] run data modify entity @n[tag=AzrSariel_displaymarker8D] CustomName set value '" □ "'
+execute if entity @s[tag=!AzrSariel_upg9D] run data modify entity @n[tag=AzrSariel_displaymarker9D] CustomName set value '" □ "'
+execute if entity @s[tag=!AzrSariel_upg10D] run data modify entity @n[tag=AzrSariel_displaymarker10D] CustomName set value '" □ "'
+execute if entity @s[tag=!AzrSariel_upg11D] run data modify entity @n[tag=AzrSariel_displaymarker11D] CustomName set value '" □ "'
+execute if entity @s[tag=!AzrSariel_upg12D] run data modify entity @n[tag=AzrSariel_displaymarker12D] CustomName set value '" □ "'
+execute if entity @s[tag=!AzrSariel_upg13D] run data modify entity @n[tag=AzrSariel_displaymarker13D] CustomName set value '" □ "'
+execute if entity @s[tag=!AzrSariel_upg14D] run data modify entity @n[tag=AzrSariel_displaymarker14D] CustomName set value '" □ "'
+execute if entity @s[tag=!AzrSariel_upg15D] run data modify entity @n[tag=AzrSariel_displaymarker15D] CustomName set value '" □ "'
+execute if entity @s[tag=!AzrSariel_upg16D] run data modify entity @n[tag=AzrSariel_displaymarker16D] CustomName set value '" □ "'
 
 
 
