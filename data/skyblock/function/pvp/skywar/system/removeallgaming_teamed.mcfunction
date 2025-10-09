@@ -206,6 +206,7 @@ tag @s remove azr0_player_looking_at_devil_goat
 
 #生死节制系统归零
 function skyblock:azr/system/shop/purchase/sariel/effect_remove
+function skyblock:azr/system/shop/purchase/sariel/reset
 
 
 
