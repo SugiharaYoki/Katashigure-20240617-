@@ -29,6 +29,13 @@ execute if entity @s[scores={Azr_Shop=8432112}] run scoreboard players remove @s
 execute if entity @s[scores={Azr_Shop=8432113}] run scoreboard players remove @s Azr_emerald 20
 
 
+execute if entity @s[scores={Azr_Shop=8432114}] run tag @s add AzrSariel_upg5B
+execute if entity @s[scores={Azr_Shop=8432115}] run tag @s add AzrSariel_upg5C
+execute if entity @s[scores={Azr_Shop=8432116}] run tag @s add AzrSariel_upg5D
+execute if entity @s[scores={Azr_Shop=8432114}] run scoreboard players remove @s Azr_emerald 5
+execute if entity @s[scores={Azr_Shop=8432115}] run scoreboard players remove @s Azr_emerald 20
+execute if entity @s[scores={Azr_Shop=8432116}] run scoreboard players remove @s Azr_emerald 40
+
 
 tag @s remove AZR_sariel_01_effected
 
