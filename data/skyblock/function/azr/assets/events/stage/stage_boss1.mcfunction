@@ -32,7 +32,7 @@ execute if score stage_boss_bgm AzrTimerStack matches 2281.. run scoreboard play
 #ACTION
 
     execute if entity @s[tag=actionable] run scoreboard players add @s rng8 1
-    execute if score @s rng8 matches 2 store result score @s rng2 run random value 1..8
+    execute if score @s[scores={Health=151..}] rng8 matches 2 store result score @s rng2 run random value 1..8
     execute if score @s[scores={Health=..150}] rng8 matches 2 store result score @s rng2 run random value 1..10
     execute if score @s[scores={rng2=1..3}] rng8 matches 2.. run function skyblock:azr/assets/mobs_new/skill/boss1_andralune/attack_flat_01
     execute if score @s[scores={rng2=4..6}] rng8 matches 2.. run function skyblock:azr/assets/mobs_new/skill/boss1_andralune/attack_flat_02
