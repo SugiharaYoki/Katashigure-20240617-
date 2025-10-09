@@ -54,4 +54,4 @@ tellraw @s[tag=AzrSariel_upg_FAILED_NC] [{"text":"失败：相邻升级格未解
 tag @s remove AzrSariel_upg_FAILED
 tag @s remove AzrSariel_upg_FAILED_NC
 playsound minecraft:ui.button.click master @s ~ ~ ~ 0.3 1.5 0.4
-execute if entity @s[scores={Azr_Shop=8432101..8432199}] run function skyblock:azr/system/shop/purchase/page
+execute if entity @s[scores={Azr_Shop=8432101..8432199}] run function skyblock:azr/system/shop/purchase/sariel/page
