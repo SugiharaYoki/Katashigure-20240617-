@@ -42,7 +42,6 @@ execute if score stage_boss_bgm AzrTimerStack matches 2281.. run scoreboard play
 #MARKER
 
     execute as @e[distance=0..80,tag=AZR_boss2_arrowpince_marker,tag=AZR_summon_particle] at @s run function skyblock:azr/assets/mobs_new/skill/boss1_andralune/skill_arrowpince_particle
-    execute as @e[distance=0..80,tag=AZR_boss2_arrowpince_marker,tag=AZR_summon_attack] at @s run function skyblock:azr/assets/mobs_new/skill/boss1_andralune/skill_arrowpince_attack
     execute as @e[distance=0..80,tag=AZR_summon_arroworb] at @s run function skyblock:azr/assets/mobs_new/skill/boss1_andralune/summon_arroworb
 
 
