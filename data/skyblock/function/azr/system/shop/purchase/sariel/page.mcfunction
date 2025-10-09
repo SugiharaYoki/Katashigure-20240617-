@@ -129,7 +129,8 @@ tellraw @s [{"text":" ","color":"light_purple"},\
 {"selector":"@n[tag=AzrSariel_displaymarker13]","color":"#ae5dff","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432113"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：20\n攻击速度 +0.1","color":"white"}}}]
 
 
-tellraw @s [{"text":"剩余绿宝石：","bold":true,"color":"green"},{"bold":false,"score":{"name":"@s","objective":"azr_emerald"},"color":"green"}]
+tellraw @s {"text":"   "}
+tellraw @s [{"text":"剩余绿宝石：","bold":true,"color":"green"},{"bold":false,"score":{"name":"@s","objective":"Azr_emerald"},"color":"green"}]
 
 kill @e[tag=AzrSariel_displaymarker,type=marker]
 scoreboard players set @s Azr_Shop 0
