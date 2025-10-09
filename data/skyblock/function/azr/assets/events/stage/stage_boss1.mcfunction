@@ -36,6 +36,7 @@ execute if score stage_boss_bgm AzrTimerStack matches 2281.. run scoreboard play
     execute if score @s[scores={rng2=4..6}] rng8 matches 1.. run function skyblock:azr/assets/mobs_new/skill/boss1_andralune/attack_flat_02
     execute if score @s[scores={rng2=7..8}] rng8 matches 1.. run function skyblock:azr/assets/mobs_new/skill/boss1_andralune/skill_arrowpince
     execute if score @s[scores={rng2=9..10}] rng8 matches 1.. run function skyblock:azr/assets/mobs_new/skill/boss1_andralune/skill_arroworb
+    execute if score @s[scores={rng2=..0}] rng8 matches 2.. run scoreboard players set @s rng8 -20
     execute if score @s rng8 matches 999.. run scoreboard players set @s rng8 -20
 
 #MARKER
