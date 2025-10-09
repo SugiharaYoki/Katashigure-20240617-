@@ -1,8 +1,36 @@
-execute if entity @s[scores={Azr_Shop=8432101},tag=!AzrSariel_upg1] run clear @s echo_shard 1
-execute if entity @s[scores={Azr_Shop=8432101},tag=!AzrSariel_upg1] run tag @s add AzrSariel_upg1
+
+
+execute if entity @s[scores={Azr_Shop=8432101}] run tag @s add AzrSariel_upg1
+execute if entity @s[scores={Azr_Shop=8432102}] run tag @s add AzrSariel_upg2
+execute if entity @s[scores={Azr_Shop=8432103}] run tag @s add AzrSariel_upg3
+execute if entity @s[scores={Azr_Shop=8432104}] run tag @s add AzrSariel_upg4
+execute if entity @s[scores={Azr_Shop=8432105}] run tag @s add AzrSariel_upg5
+execute if entity @s[scores={Azr_Shop=8432106}] run tag @s add AzrSariel_upg6
+execute if entity @s[scores={Azr_Shop=8432107}] run tag @s add AzrSariel_upg7
+execute if entity @s[scores={Azr_Shop=8432108}] run tag @s add AzrSariel_upg8
+execute if entity @s[scores={Azr_Shop=8432109}] run tag @s add AzrSariel_upg9
+execute if entity @s[scores={Azr_Shop=8432110}] run tag @s add AzrSariel_upg10
+execute if entity @s[scores={Azr_Shop=8432111}] run tag @s add AzrSariel_upg11
+execute if entity @s[scores={Azr_Shop=8432112}] run tag @s add AzrSariel_upg12
+execute if entity @s[scores={Azr_Shop=8432113}] run tag @s add AzrSariel_upg13
+
+execute if entity @s[scores={Azr_Shop=8432101}] run scoreboard players remove @s Azr_emerald 20
+execute if entity @s[scores={Azr_Shop=8432102}] run scoreboard players remove @s Azr_emerald 20
+execute if entity @s[scores={Azr_Shop=8432103}] run scoreboard players remove @s Azr_emerald 10
+execute if entity @s[scores={Azr_Shop=8432104}] run scoreboard players remove @s Azr_emerald 10
+execute if entity @s[scores={Azr_Shop=8432105}] run scoreboard players remove @s Azr_emerald 5
+execute if entity @s[scores={Azr_Shop=8432106}] run scoreboard players remove @s Azr_emerald 5
+execute if entity @s[scores={Azr_Shop=8432107}] run scoreboard players remove @s Azr_emerald 5
+execute if entity @s[scores={Azr_Shop=8432108}] run scoreboard players remove @s Azr_emerald 5
+execute if entity @s[scores={Azr_Shop=8432109}] run scoreboard players remove @s Azr_emerald 5
+execute if entity @s[scores={Azr_Shop=8432110}] run scoreboard players remove @s Azr_emerald 10
+execute if entity @s[scores={Azr_Shop=8432111}] run scoreboard players remove @s Azr_emerald 10
+execute if entity @s[scores={Azr_Shop=8432112}] run scoreboard players remove @s Azr_emerald 20
+execute if entity @s[scores={Azr_Shop=8432113}] run scoreboard players remove @s Azr_emerald 20
+
 
 
 tag @s remove AZR_sariel_01_effected
 
-playsound item.armor.equip_iron player @a ~ ~ ~ 1 1.1
+playsound block.enchantment_table.use player @a ~ ~ ~ 1 1.3
 playsound block.amethyst_block.resonate player @a ~ ~ ~ 1 1.2
