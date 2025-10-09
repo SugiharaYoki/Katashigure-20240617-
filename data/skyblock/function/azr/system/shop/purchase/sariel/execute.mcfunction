@@ -46,7 +46,7 @@ tag @s[tag=AzrSariel_upg_FAILED_NC_armor2] remove AzrSariel_upg_SUCCESS
 tag @s[tag=AzrSariel_upg_FAILED_NC_armor3] remove AzrSariel_upg_SUCCESS
 tag @s[tag=AzrSariel_upg_FAILED_NC_armor4] remove AzrSariel_upg_SUCCESS
 
-execute if entity @s[tag=AzrSariel_upg_SUCCESS] run function skyblock:sea/p/w/execute_sub
+execute if entity @s[tag=AzrSariel_upg_SUCCESS] run function skyblock:azr/system/shop/purchase/sariel/execute_sub
 
 
 tellraw @s[tag=AzrSariel_upg_FAILED] [{"text":"失败：剩余素材不足！","color":"red"}]
