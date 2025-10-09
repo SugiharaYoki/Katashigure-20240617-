@@ -239,9 +239,9 @@ tellraw @s [{"text":" ","color":"light_purple"},\
 tellraw @s [{"text":" ","color":"light_purple"},\
 {"selector":"@n[tag=AzrSariel_displaymarkerE]","color":"dark_gray"},\
 {"selector":"@n[tag=AzrSariel_displaymarker5]","color":"#ffb65d","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432105"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：5\n基础防御 +1","color":"white"}}},\
-{"selector":"@n[tag=AzrSariel_displaymarker5B]","color":"#ac2803","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432114"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：5\n攻击亡魂时，朝前释放扇形范围攻击\n初始攻击：2 初始冷却：3\n重复选中增加攻击力，减少冷却时间","color":"white"}}},\
-{"selector":"@n[tag=AzrSariel_displaymarker5C]","color":"#ac2803","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432115"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：20\n攻击亡魂时，朝前释放扇形范围攻击\n初始攻击：2 初始冷却：3\n重复选中增加攻击力，减少冷却时间","color":"white"}}},\
-{"selector":"@n[tag=AzrSariel_displaymarker5D]","color":"#ac2803","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432116"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：40\n攻击亡魂时，朝前释放扇形范围攻击\n初始攻击：2 初始冷却：3\n重复选中增加攻击力，减少冷却时间","color":"white"}}}]
+{"selector":"@n[tag=AzrSariel_displaymarker5B]","color":"#ac2803","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432114"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：5\n攻击亡魂时，朝前释放针对亡魂的扇形范围攻击\n初始攻击：2 初始冷却：3\n重复选中增加攻击力，减少冷却时间","color":"white"}}},\
+{"selector":"@n[tag=AzrSariel_displaymarker5C]","color":"#ac2803","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432115"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：20\n攻击亡魂时，朝前释放针对亡魂的扇形范围攻击\n初始攻击：2 初始冷却：3\n重复选中增加攻击力，减少冷却时间","color":"white"}}},\
+{"selector":"@n[tag=AzrSariel_displaymarker5D]","color":"#ac2803","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432116"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：40\n攻击亡魂时，朝前释放针对亡魂的扇形范围攻击\n初始攻击：2 初始冷却：3\n重复选中增加攻击力，减少冷却时间","color":"white"}}}]
 
 tellraw @s [{"text":" ","color":"light_purple"},\
 {"selector":"@n[tag=AzrSariel_displaymarkerE]","color":"dark_gray"},\
