@@ -4,10 +4,10 @@ execute store result score @s rng3 run random value 1..4
 #execute if score @s rng8 matches 360.. run scoreboard players set @s rng8 1
 
 
-execute if score @s rng8 matches 1 run summon marker ~ ~1 ~ {Tags:["AZR_boss2_arrowpince_origin"]}
-execute if score @s rng8 matches 1 at @s rotated ~ 0 run tp @n[tag=AZR_boss2_arrowpince_origin] ^ ^ ^-1 facing entity @s
-execute if score @s rng8 matches 1 as @n[tag=AZR_boss2_arrowpince_origin] at @s run tp ~ ~1.5 ~
-execute if score @s rng8 matches 1 run summon marker ~ ~1 ~ {Tags:["AZR_boss2_arrowpince_marker"]}
+execute if score @s rng8 matches 3 run summon marker ~ ~1 ~ {Tags:["AZR_boss2_arrowpince_origin"]}
+execute if score @s rng8 matches 3 at @s rotated ~ 0 run tp @n[tag=AZR_boss2_arrowpince_origin] ^ ^ ^-1 facing entity @s
+execute if score @s rng8 matches 3 as @n[tag=AZR_boss2_arrowpince_origin] at @s run tp ~ ~1.5 ~
+execute if score @s rng8 matches 3 run summon marker ~ ~1 ~ {Tags:["AZR_boss2_arrowpince_marker"]}
 
 execute if score @s rng8 matches 5 at @n[tag=AZR_boss2_arrowpince_origin] run tp @n[tag=AZR_boss2_arrowpince_marker] ^ ^ ^-2.4 facing entity @n[tag=AZR_boss2_arrowpince_origin]
 execute if score @s rng8 matches 5 as @n[tag=AZR_boss2_arrowpince_marker] at @s run tp @s ^ ^ ^2.4
