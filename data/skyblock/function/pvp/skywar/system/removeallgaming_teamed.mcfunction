@@ -204,8 +204,8 @@ attribute @s minecraft:armor modifier remove checkwar_bless:sniffer_3
 
 tag @s remove azr0_player_looking_at_devil_goat
 
-
-
+#生死节制系统归零
+function skyblock:azr/system/shop/purchase/sariel/effect_remove
 
 
 

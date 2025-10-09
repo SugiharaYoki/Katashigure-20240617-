@@ -1,20 +1,18 @@
-execute if entity @s[tag=SEA_w_crowbar_upg1] run attribute @s attack_damage modifier add sea_weapon:upg_crowbar01 0.5 add_value
-execute if entity @s[tag=SEA_w_crowbar_upg2] run attribute @s attack_speed modifier add sea_weapon:upg_crowbar02 0.1 add_value
-execute if entity @s[tag=SEA_w_crowbar_upg3] run attribute @s attack_damage modifier add sea_weapon:upg_crowbar03 0.5 add_value
-execute if entity @s[tag=SEA_w_crowbar_upg4] run attribute @s attack_speed modifier add sea_weapon:upg_crowbar04 0.1 add_value
-execute if entity @s[tag=SEA_w_crowbar_upg5] run attribute @s attack_damage modifier add sea_weapon:upg_crowbar05 0.5 add_value
-execute if entity @s[tag=SEA_w_crowbar_upg6] run attribute @s attack_speed modifier add sea_weapon:upg_crowbar06 0.1 add_value
-execute if entity @s[tag=SEA_w_crowbar_upg7] run attribute @s attack_speed modifier add sea_weapon:upg_crowbar07 0.1 add_value
-execute if entity @s[tag=SEA_w_crowbar_upg8] run attribute @s attack_speed modifier add sea_weapon:upg_crowbar08 0.2 add_value
-execute if entity @s[tag=SEA_w_crowbar_upg9] run attribute @s attack_speed modifier add sea_weapon:upg_crowbar09 0.2 add_value
-execute if entity @s[tag=SEA_w_crowbar_upg10] run attribute @s attack_damage modifier add sea_weapon:upg_crowbar10 0.5 add_value
-execute if entity @s[tag=SEA_w_crowbar_upg11] run attribute @s entity_interaction_range modifier add sea_weapon:upg_crowbar11 0.3 add_value
-execute if entity @s[tag=SEA_w_crowbar_upg12] run attribute @s attack_speed modifier add sea_weapon:upg_crowbar12 0.2 add_value
-execute if entity @s[tag=SEA_w_crowbar_upg13] run attribute @s entity_interaction_range modifier add sea_weapon:upg_crowbar13 0.3 add_value
-execute if entity @s[tag=SEA_w_crowbar_upg14] run attribute @s attack_damage modifier add sea_weapon:upg_crowbar14 1.0 add_value
-execute if entity @s[tag=SEA_w_crowbar_upg15] run attribute @s entity_interaction_range modifier add sea_weapon:upg_crowbar15 0.3 add_value
-execute if entity @s[tag=SEA_w_crowbar_upg16] run attribute @s entity_interaction_range modifier add sea_weapon:upg_crowbar16 0.3 add_value
 
-execute if entity @s[tag=SEA_w_crowbar_upg_e_1] run attribute @s attack_damage modifier add sea_weapon:upg_crowbar_e_01 0.5 add_value
 
-tag @s add SEA_w_01_effected
+execute if entity @s[tag=AzrSariel_upg1] run attribute @s armor modifier add azr_sariel:upg_01 1 add_value
+execute if entity @s[tag=AzrSariel_upg2] run attribute @s max_health modifier add azr_sariel:upg_02 2 add_value
+execute if entity @s[tag=AzrSariel_upg3] run attribute @s armor modifier add azr_sariel:upg_03 1 add_value
+execute if entity @s[tag=AzrSariel_upg4] run attribute @s max_health modifier add azr_sariel:upg_04 2 add_value
+execute if entity @s[tag=AzrSariel_upg5] run attribute @s armor modifier add azr_sariel:upg_05 1 add_value
+execute if entity @s[tag=AzrSariel_upg6] run attribute @s max_health modifier add azr_sariel:upg_06 2 add_value
+execute if entity @s[tag=AzrSariel_upg7] run tag @s add AzrSariel_sub_stardeplete
+execute if entity @s[tag=AzrSariel_upg8] run attribute @s attack_damage modifier add azr_sariel:upg_08 0.5 add_value
+execute if entity @s[tag=AzrSariel_upg9] run attribute @s attack_speed modifier add azr_sariel:upg_09 0.1 add_value
+execute if entity @s[tag=AzrSariel_upg10] run attribute @s attack_damage modifier add azr_sariel:upg_10 0.5 add_value
+execute if entity @s[tag=AzrSariel_upg11] run attribute @s attack_speed modifier add azr_sariel:upg_11 0.1 add_value
+execute if entity @s[tag=AzrSariel_upg12] run attribute @s attack_damage modifier add azr_sariel:upg_12 0.5 add_value
+execute if entity @s[tag=AzrSariel_upg13] run attribute @s attack_speed modifier add azr_sariel:upg_13 0.1 add_value
+
+
+tag @s add AZR_sariel_01_effected

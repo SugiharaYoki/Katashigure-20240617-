@@ -1,20 +1,15 @@
-attribute @s attack_damage modifier remove sea_weapon:upg_crowbar01
-attribute @s attack_speed modifier remove sea_weapon:upg_crowbar02
-attribute @s attack_damage modifier remove sea_weapon:upg_crowbar03
-attribute @s attack_speed modifier remove sea_weapon:upg_crowbar04
-attribute @s attack_damage modifier remove sea_weapon:upg_crowbar05
-attribute @s attack_speed modifier remove sea_weapon:upg_crowbar06
-attribute @s attack_speed modifier remove sea_weapon:upg_crowbar07
-attribute @s attack_speed modifier remove sea_weapon:upg_crowbar08
-attribute @s attack_speed modifier remove sea_weapon:upg_crowbar09
-attribute @s attack_damage modifier remove sea_weapon:upg_crowbar10
-attribute @s entity_interaction_range modifier remove sea_weapon:upg_crowbar11
-attribute @s attack_speed modifier remove sea_weapon:upg_crowbar12
-attribute @s entity_interaction_range modifier remove sea_weapon:upg_crowbar13
-attribute @s attack_damage modifier remove sea_weapon:upg_crowbar14
-attribute @s entity_interaction_range modifier remove sea_weapon:upg_crowbar15
-attribute @s entity_interaction_range modifier remove sea_weapon:upg_crowbar16
+attribute @s armor modifier remove azr_sariel:upg_01
+attribute @s max_health modifier remove azr_sariel:upg_02
+attribute @s armor modifier remove azr_sariel:upg_03
+attribute @s max_health modifier remove azr_sariel:upg_04
+attribute @s armor modifier remove azr_sariel:upg_05
+attribute @s max_health modifier remove azr_sariel:upg_06
+tag @s remove AzrSariel_sub_stardeplete
+attribute @s attack_damage modifier remove azr_sariel:upg_08
+attribute @s attack_speed modifier remove azr_sariel:upg_09
+attribute @s attack_damage modifier remove azr_sariel:upg_10
+attribute @s attack_speed modifier remove azr_sariel:upg_11
+attribute @s attack_damage modifier remove azr_sariel:upg_12
+attribute @s attack_speed modifier remove azr_sariel:upg_13
 
-attribute @s attack_damage modifier remove sea_weapon:upg_crowbar_e_01
-
-tag @s remove SEA_w_01_effected
+tag @s remove AZR_sariel_01_effected
