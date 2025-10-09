@@ -1,6 +1,7 @@
 #生命手册形态管理
 kill @n[distance=..8,nbt={Item:{components:{"minecraft:custom_data":{LifeVitae:1b}}}},type=item]
 kill @n[distance=..8,nbt={Item:{components:{"minecraft:custom_data":{PsychicVitae:1b}}}},type=item]
+kill @n[distance=..8,nbt={Item:{components:{"minecraft:custom_data":{SarielVitae:1b}}}},type=item]
 execute unless items entity @s player.crafting.0 *[!custom_data~{LifeVitae:1b}] if entity @s[tag=!azrBanLifeVitae,tag=!azrUpgrateLifeVitae] run item replace entity @s player.crafting.0 with minecraft:knowledge_book[custom_name='{"bold":true,"italic":false,"color":"gold","text":"生命手册"}',lore=['{"italic":false,"text":"在物品栏选定以展开商店页面"}'],custom_data={LifeVitae:1b,SlotLock:36b},custom_model_data={floats:[100001.0]}]
 execute unless items entity @s player.crafting.0 *[!custom_data~{LifeVitae:1b}] if entity @s[tag=azrBanLifeVitae,tag=!azrUpgrateLifeVitae] run item replace entity @s player.crafting.0 with minecraft:book[custom_name='{"bold":true,"italic":false,"color":"dark_gray","text":"黯淡的生命手册"}',lore=['{"italic":false,"text":"在物品栏选定以展开商店页面..?"}'],custom_data={LifeVitae:1b,SlotLock:36b},custom_model_data={floats:[100001.0]}]
 execute unless items entity @s player.crafting.0 *[!custom_data~{LifeVitae:1b}] if entity @s[tag=!azrBanLifeVitae,tag=azrUpgrateLifeVitae] run item replace entity @s player.crafting.0 with minecraft:knowledge_book[custom_name='{"bold":true,"italic":false,"color":"gold","text":"神圣手册"}',lore=['{"italic":false,"text":"在物品栏选定以展开商店页面"}'],custom_data={LifeVitae:1b,SlotLock:36b},custom_model_data={floats:[100001.0]}]

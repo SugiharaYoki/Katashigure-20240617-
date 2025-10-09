@@ -299,20 +299,7 @@ execute if entity @s[scores={sea_i_echo_shard=-90..-1}] run tellraw @s[tag=SEA_w
 execute if entity @s[scores={sea_i_iron_ingot=-90..-1}] run tellraw @s[tag=SEA_w_upg_FAILED] [{"text":"警告：铁锭已透支！","color":"red"}]
 tellraw @s[tag=SEA_w_upg_FAILED] [{"text":"失败：剩余素材不足！","color":"red"}]
 tellraw @s[tag=SEA_w_upg_FAILED_NC] [{"text":"失败：相邻升级格未解锁！","color":"red"}]
-tellraw @s[tag=SEA_w_upg_FAILED_NC_armor1] [{"text":"我需要找到头盔才能进行这个升级……","color":"red"}]
-tellraw @s[tag=SEA_w_upg_FAILED_NC_armor2] [{"text":"我需要找到护胸才能进行这个升级……","color":"red"}]
-tellraw @s[tag=SEA_w_upg_FAILED_NC_armor3] [{"text":"我需要找到护腿才能进行这个升级……","color":"red"}]
-tellraw @s[tag=SEA_w_upg_FAILED_NC_armor4] [{"text":"我需要找到靴子才能进行这个升级……","color":"red"}]
 tag @s remove SEA_w_upg_FAILED
 tag @s remove SEA_w_upg_FAILED_NC
-tag @s remove SEA_w_upg_FAILED_NC_armor1
-tag @s remove SEA_w_upg_FAILED_NC_armor2
-tag @s remove SEA_w_upg_FAILED_NC_armor3
-tag @s remove SEA_w_upg_FAILED_NC_armor4
 playsound minecraft:ui.button.click master @s ~ ~ ~ 0.3 1.5 0.4
-execute if entity @s[scores={sea_crafter=50001..50099}] run function skyblock:sea/p/w/crowbar_page
-execute if entity @s[scores={sea_crafter=50101..50199}] run function skyblock:sea/p/w/axe_page
-execute if entity @s[scores={sea_crafter=50201..50299}] run function skyblock:sea/p/w/flamethrower_page
-execute if entity @s[scores={sea_crafter=50301..50399}] run function skyblock:sea/p/w/shield_page
-execute if entity @s[scores={sea_crafter=50501..50599}] run function skyblock:sea/p/w/armor_page
-execute if entity @s[scores={sea_crafter=50601..50699}] run function skyblock:sea/p/w/ripper_page
+execute if entity @s[scores={sea_crafter=8432101..8432199}] run function skyblock:azr/system/shop/purchase/page
