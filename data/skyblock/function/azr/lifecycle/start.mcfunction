@@ -87,6 +87,8 @@ scoreboard players set $azrInitialPieGiven Azr_system 1
 #节制生死平衡
 scoreboard objectives add AzrSariel_Skill_FanFire dummy
 scoreboard objectives add AzrSariel_Skill_FanFire_cooldown dummy
+scoreboard objectives add AzrSariel_Skill_ElecBall dummy
+scoreboard objectives add AzrSariel_Skill_ElecBall_cooldown dummy
 
 
 #scoreboard players set life_vitae_available Azr_system 1

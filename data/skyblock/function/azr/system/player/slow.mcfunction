@@ -43,7 +43,8 @@ execute if items entity @s weapon.mainhand *[custom_data~{Error:1b}] run tellraw
 {"text":"\n=============\n"}]
 
 #节制生死平衡
-scoreboard players remove @s AzrSariel_Skill_FanFire_cooldown 1
+execute if score @s AzrSariel_Skill_FanFire matches 1.. run scoreboard players remove @s AzrSariel_Skill_FanFire_cooldown 1
+execute if score @s AzrSariel_Skill_ElecBall matches 1.. run scoreboard players remove @s AzrSariel_Skill_ElecBall_cooldown 1
 
 
 

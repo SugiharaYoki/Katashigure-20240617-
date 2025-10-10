@@ -93,6 +93,8 @@ scoreboard players reset stage_boss_bgm AzrTimerStack
 #节制生死平衡
 scoreboard objectives remove AzrSariel_Skill_FanFire
 scoreboard objectives remove AzrSariel_Skill_FanFire_cooldown
+scoreboard objectives remove AzrSariel_Skill_ElecBall
+scoreboard objectives remove AzrSariel_Skill_ElecBall_cooldown
 
 
 

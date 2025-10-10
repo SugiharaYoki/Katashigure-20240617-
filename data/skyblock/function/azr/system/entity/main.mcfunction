@@ -10,5 +10,6 @@ execute as @s[tag=azrArrowBox,type=block_display] at @s run function skyblock:az
 
 execute as @s[tag=AzrielMob_level_ed] at @s run function skyblock:azr/system/entity/skill_controller
 execute as @s[tag=AzrielMob_summon_delay] at @s run function skyblock:azr/system/entity/summon_delay_controller
+execute as @s[tag=AzrielMob_sariel_skill] at @s run function skyblock:azr/system/entity/sariel_skill_controller
 
 
