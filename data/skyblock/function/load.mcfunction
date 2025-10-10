@@ -161,22 +161,6 @@ scoreboard objectives add azr0_system dummy
 scoreboard objectives add Azr_system dummy
 scoreboard objectives add Azr_startCount dummy
 scoreboard objectives add Azr_skillPoints dummy
-scoreboard objectives add Azr_SK1 dummy
-scoreboard objectives add Azr_SK2 dummy
-scoreboard objectives add Azr_SK3 dummy
-scoreboard objectives add Azr_SK4 dummy
-scoreboard objectives add Azr_SK5 dummy
-scoreboard objectives add Azr_SK6 dummy
-scoreboard objectives add Azr_SK7 dummy
-scoreboard objectives add Azr_SK8 dummy
-scoreboard objectives add Azr_SK9 dummy
-scoreboard objectives add Azr_SK10 dummy
-scoreboard objectives add Azr_SK11 dummy
-scoreboard objectives add Azr_SK12 dummy
-scoreboard objectives add Azr_SK13 dummy
-scoreboard objectives add Azr_SK14 dummy
-scoreboard objectives add Azr_SK15 dummy
-scoreboard objectives add Azr_SK16 dummy
 #4ASCEND
 scoreboard objectives add PlayHouseTrigger trigger
 scoreboard objectives add 4ASCEND_HP_Trigger trigger

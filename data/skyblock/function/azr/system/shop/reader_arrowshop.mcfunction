@@ -11,6 +11,4 @@ tellraw @s [{"text":"   - "},{"text":"圣殿信条","color":"white"},{"text":"  
 tellraw @s [{"text":" - 学习灵能","color":"gray"}]
 execute unless entity @s[scores={AZR_arrowUpg_pts=1..}] run tellraw @s [{"text":"   - "},{"text":"主动灵能「残城箭影」","color":"white"},{"text":"  5 锁链 ","color":"gold"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8431517"},"hoverEvent":{"action":"show_text","contents":{"text":"射出魔法箭矢","color":"white"}}}]
 tellraw @s[scores={AZR_arrowUpg_pts=1..}] [{"text":"   - "},{"text":"主动灵能「残城箭影」","color":"dark_gray"},{"text":"   5 锁链   ","color":"dark_gray"}]
-#execute unless entity @s[scores={Azr_SK11=1..}] run tellraw @s [{"text":"   - "},{"text":"主动灵能「螺旋风压」","color":"white"},{"text":"  5 锁链 ","color":"gold"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8431518"},"hoverEvent":{"action":"show_text","contents":{"text":"将身边的敌人暴吹而开","color":"white"}}}]
-#tellraw @s[scores={Azr_SK11=1..}] [{"text":"   - "},{"text":"主动灵能「螺旋风压」","color":"dark_gray"},{"text":"   5 锁链   ","color":"dark_gray"}]
 tellraw @s {"text":"   "}

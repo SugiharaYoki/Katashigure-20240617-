@@ -210,8 +210,3 @@
     shield_sharp_t3 刺盾·怠伐 100007
 砖
     weapon_brick 小巧的猪板砖 100001
-末影水晶
-    core_force 蛮之核心 100001
-    core_melody 歌之核心 100002
-    core_flow 流之核心 100003
-    core_steel 钢之核心 100004

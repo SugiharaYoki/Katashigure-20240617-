@@ -232,8 +232,6 @@ execute if score stage_main_thread AzrTimerStack matches 186 run advancement gra
 execute if score stage_main_thread AzrTimerStack matches 186 as @a[tag=azrPlayer] at @s run tag @s add AZS_BoS04
 execute if score stage_main_thread AzrTimerStack matches 186 as @a[tag=azrPlayer] at @s run give @s ghast_tear[custom_name='{"text":"光明精华","italic":false,"color":"blue"}',custom_data={light_essence:1b},custom_model_data={floats:[100001.0]}] 3
 execute if score stage_main_thread AzrTimerStack matches 186 as @a[tag=azrPlayer] at @s run give @s golden_carrot 5
-#execute if score stage_main_thread AzrTimerStack matches 186 as @a[tag=azrPlayer] at @s run give @s end_crystal[custom_name='{"text":"流之核心","italic":false,"color":"yellow"}',lore=['{"text":"置于背包栏第1格时","color":"gray","italic":false}','{"text":"移动速度+15%","color":"dark_green","italic":false}'],custom_data={core_flow:1b},custom_model_data={floats:[100003.0]}]
-#execute if score stage_main_thread AzrTimerStack matches 186 as @a[tag=azrPlayer] at @s run give @s end_crystal[custom_name='{"text":"钢之核心","italic":false,"color":"yellow"}',lore=['{"text":"置于背包栏第3格时","color":"gray","italic":false}','{"text":"护甲韧度+30%","color":"dark_green","italic":false}'],custom_data={core_steel:1b},custom_model_data={floats:[100004.0]}]
 execute if score stage_main_thread AzrTimerStack matches 186 run fill -79943 34 136 -79943 32 136 air destroy
 execute if score stage_main_thread AzrTimerStack matches 186 run fill -79944 34 145 -79944 32 145 air destroy
 execute if score stage_main_thread AzrTimerStack matches 186 run setblock -79923 39 134 minecraft:birch_button[facing=south]

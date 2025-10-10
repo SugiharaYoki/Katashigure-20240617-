@@ -127,7 +127,6 @@ execute if score stage_main_thread AzrTimerStack matches 319 run fill -79774 39 
 execute if score stage_main_thread AzrTimerStack matches 319 unless score $Azr_Doppel Azr_system matches 1 run title @a[tag=azrShowDialog] actionbar {"text":"Stage Annihilated","color":"green"}
 execute if score stage_main_thread AzrTimerStack matches 319 if score $Azr_Doppel Azr_system matches 1 run title @a[tag=azrShowDialog] actionbar {"text":"Double Stage Annihilated","color":"green"}
 execute if score stage_main_thread AzrTimerStack matches 319 if score $Azr_Doppel Azr_system matches 1 run tag @a[tag=azrPlayer] add AZS_BoS09
-#execute if entity @e[tag=sc,limit=1,scores={stageSeconds=319},tag=Azr_Doppel] run give @a[tag=azrPlayer] end_crystal{display:{Name:"{\"text\":\"猝火核心\",\"italic\":false,\"color\":\"yellow\"}",Lore:["{\"text\":\"置于背包栏第4格且自身着火时\",\"color\":\"gray\",\"italic\":false}","{\"text\":\"攻击力+10% 移动速度+20%\",\"color\":\"dark_green\",\"italic\":false}"]}}
 execute if score stage_main_thread AzrTimerStack matches 319 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage13
 execute if score stage_main_thread AzrTimerStack matches 319 if score $Azr_Doppel Azr_system matches 1 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage_bonus_impersonate
 execute if score stage_main_thread AzrTimerStack matches 319 run playsound ambient.crimson_forest.loop ambient @a[tag=azrShowDialog] -78000 100 0 1000
@@ -139,7 +138,6 @@ execute if score stage_main_thread AzrTimerStack matches 319 run scoreboard play
 execute if score stage_main_thread AzrTimerStack matches 319 run tp @e[tag=AzrielFriendly,x=-79761,y=69,z=-190,distance=0..80,type=parrot,sort=nearest,limit=1] -79788.30 33.20 -359.68
 execute if score stage_main_thread AzrTimerStack matches 319 run setblock -79799 28 -284 air
 
-#execute if score stage_main_thread AzrTimerStack matches 319 as @a[tag=azrPlayer] at @s unless score @s Azr_SK12 matches 0.. run scoreboard players set @s Azr_SK12 0
 
 execute if score stage_main_thread AzrTimerStack matches 319 run scoreboard players set stage_main_thread AzrTimerStack 0
 

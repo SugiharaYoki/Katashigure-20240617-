@@ -28,11 +28,6 @@ execute if score wave Azr_system matches 36.. run scoreboard players set chapter
 #AzrielNPC
 execute as @e[tag=AzrielNPC] at @s run rotate @s facing entity @p[distance=..3]
 
-#消除蜘蛛占位
-#execute as @e[tag=AzrielMob,tag=!AzrielDecMob,tag=!AzrielBossA,tag=!AzrielBossB] at @s run scoreboard players add @s SeGa_BecomeWild 1
-#execute as @e[tag=AzrielMob,tag=!AzrielDecMob,tag=!AzrielBossA,tag=!AzrielBossB,type=spider] at @s run scoreboard players add @s SeGa_BecomeWild 9
-#execute as @e[tag=AzrielMob,tag=!AzrielDecMob,tag=!AzrielBossA,tag=!AzrielBossB,type=cave_spider] at @s run scoreboard players add @s SeGa_BecomeWild 9
-#execute as @e[tag=AzrielMob,tag=!AzrielDecMob,scores={SeGa_BecomeWild=240..}] at @s run tag @s add AzrielDecMob
 #重置计时器
 scoreboard players set tick_count_main AzrTimerStack 0
 # 强制释放临时变量

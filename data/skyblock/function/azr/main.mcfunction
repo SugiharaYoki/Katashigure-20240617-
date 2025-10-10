@@ -29,38 +29,8 @@ scoreboard objectives add AzrEntityTimer dummy
 scoreboard objectives add AzrielMobLevel dummy
 
 #skills
-#skill 1 幽毒若水 lv3 - 厄渊毒霾 lv2
-scoreboard objectives add Azr_SK1 dummy
-#skill 2 嗜血狂袭 lv3
-scoreboard objectives add Azr_SK2 dummy
-#skill 3 光缭百剑 lv3
-scoreboard objectives add Azr_SK3 dummy
-#skill 4 治魂威慑 lv3 - 判灵枷锁 lv2
-scoreboard objectives add Azr_SK4 dummy
-#skill 5 备选策略 lv3
-scoreboard objectives add Azr_SK5 dummy
-#skill 6 宝石切割 lv3
-scoreboard objectives add Azr_SK6 dummy
-#skill 7 铃兰之风 lv3 - 花卉领域 lv2
-scoreboard objectives add Azr_SK7 dummy
-#skill 8 膳食搭配 lv2
-scoreboard objectives add Azr_SK8 dummy
 #skill 9 残城箭影 lv5 
 scoreboard objectives add AZR_arrowUpg_pts dummy
-#skill 10 滞空斩击 lv6
-scoreboard objectives add Azr_SK10 dummy
-#skill 11 螺旋风压 lv5
-scoreboard objectives add Azr_SK11 dummy
-#skill 12 多维构筑 lv1
-scoreboard objectives add Azr_SK12 dummy
-#skill 13 精冶镰刃 lv2
-scoreboard objectives add Azr_SK13 dummy
-#skill 14 unused
-scoreboard objectives add Azr_SK14 dummy
-#skill 15 unused
-scoreboard objectives add Azr_SK15 dummy
-#skill 16 unused
-scoreboard objectives add Azr_SK16 dummy
 #设置系统参数
 # scoreboard players set DEBUG_maxStageLimit Azr_system 43
 # scoreboard players set DEBUG_fakePlayer Azr_system 10

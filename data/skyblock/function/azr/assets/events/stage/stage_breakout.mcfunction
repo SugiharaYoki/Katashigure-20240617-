@@ -177,9 +177,6 @@ execute if score stage_main_thread AzrTimerStack matches 271 if score playerCoun
 
 execute if score stage_main_thread AzrTimerStack matches 277 run title @a[tag=azrShowDialog] actionbar {"text":"Extra Stage Clear","color":"green"}
 execute if score stage_main_thread AzrTimerStack matches 277 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage_bonus_breakout
-#execute if entity @e[tag=sc,limit=1,scores={stageSeconds=279}] as @a[tag=AZRPT] at @s unless score @s Azr_SK10 matches 1.. run tellraw @s {"text":"解封了灵能「滞空斩击」！","color":"green"}
-#execute if entity @e[tag=sc,limit=1,scores={stageSeconds=279}] as @a[tag=AZRPT] at @s unless score @s Azr_SK10 matches 1.. run playsound entity.player.levelup master @s ~ ~ ~ 1 1.1
-#execute if entity @e[tag=sc,limit=1,scores={stageSeconds=279}] as @a[tag=AZRPT] at @s unless score @s Azr_SK10 matches 1.. run scoreboard players set @s Azr_SK10 1
 execute if score stage_main_thread AzrTimerStack matches 277 as @a[tag=azrPlayer] at @s run function skyblock:azr/assets/items/others/arrow_box_x5
 execute if score stage_main_thread AzrTimerStack matches 277 as @a[tag=azrPlayer] at @s run give @s beetroot[custom_name='{"text":"爆裂菜根","italic":false}',lore=['{"text":"投掷 - 轰炸（射程较低）","color":"yellow"}'],enchantments={punch:1},custom_data={blast_root:1b},custom_model_data={floats:[100001.0]}] 3
 execute if score stage_main_thread AzrTimerStack matches 277 as @a[tag=azrPlayer] at @s run tag @s add AZS_BoS06

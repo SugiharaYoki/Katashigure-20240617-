@@ -84,7 +84,7 @@ scoreboard players set $azrInitialIngredientGiven Azr_system 1
 scoreboard players set $azrInitialWeaponGiven Azr_system 1
 scoreboard players set $azrInitialPieGiven Azr_system 1
 
-#节制生死平衡
+#节制天平
 scoreboard objectives add AzrSariel_Skill_FanFire dummy
 scoreboard objectives add AzrSariel_Skill_FanFire_cooldown dummy
 scoreboard objectives add AzrSariel_Skill_ElecBall dummy
@@ -122,78 +122,5 @@ execute if entity @a[tag=azrPlayer,tag=AZS_BoS02] run fill -79949 41 54 -79949 3
 execute if entity @a[tag=azrPlayer,tag=AZS_BoS01] run setblock -79915 39 34 minecraft:air
 execute if entity @a[tag=azrPlayer,tag=AZS_BoS01] run setblock -79915 38 34 minecraft:air
 execute if entity @a[tag=azrPlayer,tag=AZS_BoS01] run setblock -79915 40 34 minecraft:air
-#开始强制加载
-#forceload add -80000 -400 -79800 -200
-#forceload add -80000 -200 -79800 000
-#forceload add -80000 000 -79800 200
-#forceload add -80000 200 -79800 400
-#forceload add -79800 -600 -79600 -400
-#forceload add -79800 -400 -79600 -200
-#forceload add -79800 -200 -79600 000
-#forceload add -79800 000 -79600 200
-#forceload add -79800 200 -79600 400
-#forceload add -79600 -600 -79400 -400
-#forceload add -79600 -400 -79400 -200
-#forceload add -79600 -200 -79400 000
-#forceload add -79600 000 -79400 200
-#forceload add -79600 200 -79400 400
-#forceload add -79400 -600 -79200 -400
-#forceload add -79400 -400 -79200 -200
-#forceload add -79400 -200 -79200 000
-#forceload add -79400 000 -79200 200
-#forceload add -79400 200 -79200 400
 
 
-#wtf 这些原本应该在初始化玩家前
-#scoreboard objectives add Azr dummy
-#scoreboard objectives add Azr_arrowOrbTimer dummy
-#scoreboard objectives add Azr_Timerx4T1 dummy
-#scoreboard objectives add AzrielTagTemp1 dummy
-#scoreboard objectives add AzrielTagTemp2 dummy
-#scoreboard objectives add AzrielTagTemp3 dummy
-#scoreboard objectives add AzrielTag10 dummy
-#scoreboard objectives add Azr_Mt_0001 dummy
-#scoreboard objectives add Azr_Mt_0002 dummy
-#scoreboard objectives add Azr_Mt_0003 dummy
-#scoreboard objectives add Azr_Mt_0004 dummy
-#scoreboard objectives add Azr_Mt_0005 dummy
-#scoreboard objectives add Azr_Mt_0006 dummy
-#scoreboard objectives add Azr_Mt_0007 dummy
-#scoreboard objectives add Azr_Mt_0008 dummy
-#scoreboard objectives add Azr_Mt_0009 dummy
-#scoreboard objectives add Azr_Mt_0010 dummy
-#scoreboard objectives add Azr_Mt_0011 dummy
-#scoreboard objectives add Azr_Mt_0012 dummy
-#scoreboard objectives add Azr_Mt_0013 dummy
-#scoreboard objectives add Azr_Mt_0014 dummy
-#scoreboard objectives add Azr_Mt_0015 dummy
-#scoreboard objectives add Azr_Mt_0016 dummy
-#scoreboard objectives add Azr_Mt_0017 dummy
-#scoreboard objectives add Azr_Mt_0018 dummy
-#scoreboard objectives add Azr_Mt_0019 dummy
-#scoreboard objectives add Azr_Mt_0020 dummy
-#scoreboard objectives add Azr_Mt_0021 dummy
-#scoreboard objectives add Azr_Mt_0022 dummy
-#scoreboard objectives add Azr_Mt_0023 dummy
-#scoreboard objectives add Azr_Mt_0024 dummy
-#scoreboard objectives add Azr_Mt_0025 dummy
-#scoreboard objectives add Azr_Mt_0026 dummy
-#scoreboard objectives add Azr_Mt_0027 dummy
-#scoreboard objectives add Azr_Mt_0028 dummy
-#scoreboard objectives add Azr_Mt_0029 dummy
-#scoreboard objectives add Azr_Mt_0030 dummy
-#scoreboard objectives add Azr_Mt_0031 dummy
-#scoreboard objectives add Azr_Mt_0032 dummy
-#scoreboard objectives add Azr_Mt_0033 dummy
-#scoreboard objectives add Azr_Mt_0034 dummy
-#scoreboard objectives add Azr_Mt_0035 dummy
-#scoreboard objectives add Azr_Mt_0036 dummy
-#scoreboard objectives add Azr_Mt_0037 dummy
-#scoreboard objectives add Azr_Mt_0038 dummy
-#scoreboard objectives add Azr_Mt_0039 dummy
-#scoreboard objectives add Azr_Mt_0040 dummy
-#scoreboard objectives add Azr_Mt_0041 dummy
-#scoreboard objectives add Azr_Mt_0042 dummy
-#scoreboard objectives add Azr_Mt_0043 dummy
-#scoreboard objectives add Azr_Mt_0044 dummy
-#scoreboard objectives add Azr_Mt_0045 dummy

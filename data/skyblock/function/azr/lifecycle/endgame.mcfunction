@@ -90,7 +90,7 @@ scoreboard players reset timer_static_5s AzrTimerStack
 scoreboard objectives setdisplay sidebar SeGa_StandLastBH
 scoreboard players reset stage_boss_bgm AzrTimerStack
 
-#节制生死平衡
+#节制天平
 scoreboard objectives remove AzrSariel_Skill_FanFire
 scoreboard objectives remove AzrSariel_Skill_FanFire_cooldown
 scoreboard objectives remove AzrSariel_Skill_ElecBall

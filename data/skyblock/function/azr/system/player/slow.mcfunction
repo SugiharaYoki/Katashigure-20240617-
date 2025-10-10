@@ -14,9 +14,6 @@ execute if items entity @s[tag=AZR_storymode] armor.feet *[minecraft:max_damage]
 
 execute unless entity @s[x=-79931,y=100,z=0,distance=..10000] run tp @s @p[tag=azrPlayer,x=-79931,y=100,z=0,distance=..10000]
 
-#探测罗盘
-#execute if items entity @s weapon.mainhand compass[custom_data~{azr_compass:1b}] at @s unless entity @e[distance=0..20,tag=AzrielBossB] run function skyblock:azr/assets/events/effects/compass
-#execute if items entity @s weapon.mainhand compass[custom_data~{azr_compass:1b}] at @s if entity @e[distance=0..20,tag=AzrielBossB] run function skyblock:azr/assets/events/effects/compass_boss3
 
 #破箱
 execute if items entity @s weapon.mainhand tripwire_hook at @s anchored eyes run function skyblock:azr/system/player/unlock_chest
@@ -42,7 +39,11 @@ execute if items entity @s weapon.mainhand *[custom_data~{Error:1b}] run tellraw
 {"text":"\nmobCount"},{"score":{"name":"mobCount","objective":"Azr_system"}},\
 {"text":"\n=============\n"}]
 
-#节制生死平衡
+#护身符
+execute if items entity @s player.cursor *[custom_data~{azr_amulet_pacemaker:1b}] run function skyblock:azr/system/player/skills/amulet/pacemaker_switch_mode_safe
+execute if items entity @s player.cursor *[custom_data~{azr_amulet_pacemaker_safe:1b}] run function skyblock:azr/system/player/skills/amulet/pacemaker_switch_mode_normal
+
+#节制天平
 execute if score @s AzrSariel_Skill_FanFire matches 1.. run scoreboard players remove @s AzrSariel_Skill_FanFire_cooldown 1
 execute if score @s AzrSariel_Skill_ElecBall matches 1.. run scoreboard players remove @s AzrSariel_Skill_ElecBall_cooldown 1
 execute if entity @s[tag=AzrSariel_upg6C] run scoreboard players remove @s AzrSariel_Skill_AbsDefend_cooldown 1
