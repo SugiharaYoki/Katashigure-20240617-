@@ -247,7 +247,7 @@ tellraw @s [{"text":" ","color":"light_purple"},\
 {"selector":"@n[tag=AzrSariel_displaymarker0b]","color":"dark_gray"},\
 {"selector":"@n[tag=AzrSariel_displaymarker6]","color":"#ff5dd7","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432106"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：5\n生命上限 +2","color":"white"}}},\
 {"selector":"@n[tag=AzrSariel_displaymarkerE]","color":"dark_gray"},\
-{"selector":"@n[tag=AzrSariel_displaymarker6C]","color":"#ffb65d","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432120"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：20\n每8秒获得一次绝对防御\n受到任何伤害都将解除绝对防御效果","color":"white"}}},\
+{"selector":"@n[tag=AzrSariel_displaymarker6C]","color":"#ffe3af","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432120"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：20\n每8秒获得一次绝对防御\n受到任何伤害都将解除绝对防御效果","color":"white"}}},\
 {"selector":"@n[tag=AzrSariel_displaymarkerE]","color":"dark_gray"}]
 
 tellraw @s [{"text":" ","color":"light_purple"},\
