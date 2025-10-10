@@ -4,7 +4,7 @@ tellraw @s {"text":"『生灵能量面板』","extra":[""],"color":"red","bold":
 tellraw @s {"text":"   "}
 summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarker0"]}
 summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarker0b"]}
-summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarkerE"]}
+summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarker0b"]}
 summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarker1"]}
 summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarker2"]}
 summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarker3"]}
@@ -221,61 +221,64 @@ execute if entity @s[tag=!AzrSariel_upg16D] run data modify entity @n[tag=AzrSar
 
 
 tellraw @s [{"text":" ","color":"light_purple"},\
-{"selector":"@n[tag=AzrSariel_displaymarkerE]","color":"dark_gray"},\
+{"selector":"@n[tag=AzrSariel_displaymarker0b]","color":"dark_gray"},\
 {"selector":"@n[tag=AzrSariel_displaymarker1]","color":"#ffb65d","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432101"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：20\n基础防御 +1","color":"white"}}}]
 
 tellraw @s [{"text":" ","color":"light_purple"},\
-{"selector":"@n[tag=AzrSariel_displaymarkerE]","color":"dark_gray"},\
+{"selector":"@n[tag=AzrSariel_displaymarker0b]","color":"dark_gray"},\
 {"selector":"@n[tag=AzrSariel_displaymarker2]","color":"#ff5dd7","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432102"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：20\n生命上限 +2","color":"white"}}}]
 
 tellraw @s [{"text":" ","color":"light_purple"},\
-{"selector":"@n[tag=AzrSariel_displaymarkerE]","color":"dark_gray"},\
+{"selector":"@n[tag=AzrSariel_displaymarker0b]","color":"dark_gray"},\
 {"selector":"@n[tag=AzrSariel_displaymarker3]","color":"#ffb65d","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432103"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：10\n基础防御 +1","color":"white"}}}]
 
 tellraw @s [{"text":" ","color":"light_purple"},\
-{"selector":"@n[tag=AzrSariel_displaymarkerE]","color":"dark_gray"},\
+{"selector":"@n[tag=AzrSariel_displaymarker0b]","color":"dark_gray"},\
 {"selector":"@n[tag=AzrSariel_displaymarker4]","color":"#ff5dd7","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432104"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：10\n生命上限 +2","color":"white"}}}]
 
 tellraw @s [{"text":" ","color":"light_purple"},\
-{"selector":"@n[tag=AzrSariel_displaymarkerE]","color":"dark_gray"},\
+{"selector":"@n[tag=AzrSariel_displaymarker0b]","color":"dark_gray"},\
 {"selector":"@n[tag=AzrSariel_displaymarker5]","color":"#ffb65d","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432105"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：5\n基础防御 +1","color":"white"}}},\
 {"selector":"@n[tag=AzrSariel_displaymarker5B]","color":"#ac2803","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432114"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：5\n攻击亡魂时，朝前释放针对亡魂的扇形范围攻击\n攻击：2/3/4 冷却：3/2.5/2\n重复选中将升级效果","color":"white"}}},\
 {"selector":"@n[tag=AzrSariel_displaymarker5C]","color":"#ac2803","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432115"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：20\n攻击亡魂时，朝前释放针对亡魂的扇形范围攻击\n攻击：2/3/4 冷却：3/2.5/2\n重复选中将升级效果","color":"white"}}},\
 {"selector":"@n[tag=AzrSariel_displaymarker5D]","color":"#ac2803","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432116"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：40\n攻击亡魂时，朝前释放针对亡魂的扇形范围攻击\n攻击：2/3/4 冷却：3/2.5/2\n重复选中将升级效果","color":"white"}}}]
 
 tellraw @s [{"text":" ","color":"light_purple"},\
+{"selector":"@n[tag=AzrSariel_displaymarker0b]","color":"dark_gray"},\
+{"selector":"@n[tag=AzrSariel_displaymarker6]","color":"#ff5dd7","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432106"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：5\n生命上限 +2","color":"white"}}},\
 {"selector":"@n[tag=AzrSariel_displaymarkerE]","color":"dark_gray"},\
-{"selector":"@n[tag=AzrSariel_displaymarker6]","color":"#ff5dd7","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432106"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：5\n生命上限 +2","color":"white"}}}]
+{"selector":"@n[tag=AzrSariel_displaymarker6C]","color":"#ffb65d","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432120"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：20\n每8秒获得一次绝对防御\n受到任何伤害都将解除绝对防御效果","color":"white"}}},\
+{"selector":"@n[tag=AzrSariel_displaymarkerE]","color":"dark_gray"}]
 
 tellraw @s [{"text":" ","color":"light_purple"},\
 {"selector":"@n[tag=AzrSariel_displaymarker0]","color":"white"},\
 {"selector":"@n[tag=AzrSariel_displaymarker7]","color":"#ffec5d","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432107"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：5\n看穿生死余命\n当你不再拥有命星时，获得文字预警","color":"white"}}}]
 
 tellraw @s [{"text":" ","color":"light_purple"},\
-{"selector":"@n[tag=AzrSariel_displaymarkerE]","color":"dark_gray"},\
+{"selector":"@n[tag=AzrSariel_displaymarker0b]","color":"dark_gray"},\
 {"selector":"@n[tag=AzrSariel_displaymarker8]","color":"#ff5d5d","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432108"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：5\n攻击力 +0.5","color":"white"}}}]
 
 tellraw @s [{"text":" ","color":"light_purple"},\
-{"selector":"@n[tag=AzrSariel_displaymarkerE]","color":"dark_gray"},\
+{"selector":"@n[tag=AzrSariel_displaymarker0b]","color":"dark_gray"},\
 {"selector":"@n[tag=AzrSariel_displaymarker9]","color":"#7b5dff","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432109"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：5\n攻击速度 +0.1","color":"white"}}},\
-{"selector":"@n[tag=AzrSariel_displaymarker9B]","color":"#ac2803","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432117"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：5\n攻击生灵时，释放一个不断追踪生灵的电球\n电球成功造成攻击后将会停顿0.25秒\n攻击：2/3/4 持续时间：1/1.5/2 冷却：2\n重复选中将升级效果","color":"white"}}},\
-{"selector":"@n[tag=AzrSariel_displaymarker9C]","color":"#ac2803","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432118"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：20\n攻击生灵时，释放一个不断追踪生灵的电球\n电球成功造成攻击后将会停顿0.25秒\n攻击：2/3/4 持续时间：1/1.5/2 冷却：2\n重复选中将升级效果","color":"white"}}},\
-{"selector":"@n[tag=AzrSariel_displaymarker9D]","color":"#ac2803","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432119"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：40\n攻击生灵时，释放一个不断追踪生灵的电球\n电球成功造成攻击后将会停顿0.25秒\n攻击：2/3/4 持续时间：1/1.5/2 冷却：2\n重复选中将升级效果","color":"white"}}}]
+{"selector":"@n[tag=AzrSariel_displaymarker9B]","color":"#576fe4","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432117"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：5\n攻击生灵时，释放一个不断追踪生灵的电球\n电球成功造成攻击后将会停顿0.25秒\n攻击：2/3/4 持续时间：1/1.5/2 冷却：2\n重复选中将升级效果","color":"white"}}},\
+{"selector":"@n[tag=AzrSariel_displaymarker9C]","color":"#576fe4","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432118"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：20\n攻击生灵时，释放一个不断追踪生灵的电球\n电球成功造成攻击后将会停顿0.25秒\n攻击：2/3/4 持续时间：1/1.5/2 冷却：2\n重复选中将升级效果","color":"white"}}},\
+{"selector":"@n[tag=AzrSariel_displaymarker9D]","color":"#576fe4","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432119"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：40\n攻击生灵时，释放一个不断追踪生灵的电球\n电球成功造成攻击后将会停顿0.25秒\n攻击：2/3/4 持续时间：1/1.5/2 冷却：2\n重复选中将升级效果","color":"white"}}}]
 
 tellraw @s [{"text":" ","color":"light_purple"},\
-{"selector":"@n[tag=AzrSariel_displaymarkerE]","color":"dark_gray"},\
+{"selector":"@n[tag=AzrSariel_displaymarker0b]","color":"dark_gray"},\
 {"selector":"@n[tag=AzrSariel_displaymarker10]","color":"#ff5d5d","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432110"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：10\n攻击力 +0.5","color":"white"}}}]
 
 tellraw @s [{"text":" ","color":"light_purple"},\
-{"selector":"@n[tag=AzrSariel_displaymarkerE]","color":"dark_gray"},\
+{"selector":"@n[tag=AzrSariel_displaymarker0b]","color":"dark_gray"},\
 {"selector":"@n[tag=AzrSariel_displaymarker11]","color":"#7b5dff","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432111"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：10\n攻击速度 +0.1","color":"white"}}}]
 
 tellraw @s [{"text":" ","color":"light_purple"},\
-{"selector":"@n[tag=AzrSariel_displaymarkerE]","color":"dark_gray"},\
+{"selector":"@n[tag=AzrSariel_displaymarker0b]","color":"dark_gray"},\
 {"selector":"@n[tag=AzrSariel_displaymarker12]","color":"#ff5d5d","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432112"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：20\n攻击力 +0.5","color":"white"}}}]
 
 tellraw @s [{"text":" ","color":"light_purple"},\
-{"selector":"@n[tag=AzrSariel_displaymarkerE]","color":"dark_gray"},\
+{"selector":"@n[tag=AzrSariel_displaymarker0b]","color":"dark_gray"},\
 {"selector":"@n[tag=AzrSariel_displaymarker13]","color":"#7b5dff","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432113"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：20\n攻击速度 +0.1","color":"white"}}}]
 
 

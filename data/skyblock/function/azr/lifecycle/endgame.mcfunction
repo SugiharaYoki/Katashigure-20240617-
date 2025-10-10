@@ -95,6 +95,8 @@ scoreboard objectives remove AzrSariel_Skill_FanFire
 scoreboard objectives remove AzrSariel_Skill_FanFire_cooldown
 scoreboard objectives remove AzrSariel_Skill_ElecBall
 scoreboard objectives remove AzrSariel_Skill_ElecBall_cooldown
+scoreboard objectives remove AzrSariel_Skill_AbsDefend_condition
+scoreboard objectives remove AzrSariel_Skill_AbsDefend_cooldown
 
 
 
