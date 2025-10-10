@@ -4,7 +4,7 @@ tellraw @s {"text":"『生灵能量面板』","extra":[""],"color":"red","bold":
 tellraw @s {"text":"   "}
 summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarker0"]}
 summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarker0b"]}
-summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarker0b"]}
+summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarkerE"]}
 summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarker1"]}
 summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarker2"]}
 summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarker3"]}
