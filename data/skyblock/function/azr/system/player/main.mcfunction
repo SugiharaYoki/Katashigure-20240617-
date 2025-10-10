@@ -43,7 +43,7 @@ execute if items entity @s container.* *[custom_data~{azr_amulet_pacemaker:1b}] 
 execute if items entity @s container.* *[custom_data~{azr_amulet_pacemaker_safe:1b}] run function skyblock:azr/system/player/skills/amulet/pacemaker_safe_core
 
 #节制天平
-execute if score @s[tag=AzrSariel_upg6C,scores={AzrSariel_Skill_AbsDefend_cooldown=..1}] AzrSariel_Skill_AbsDefend_condition matches 1.. run function skyblock:azr/system/player/damage_bonus/effect/absdefend
+execute if entity @s[tag=AzrSariel_upg6C,scores={AzrSariel_Skill_AbsDefend_cooldown=..1}] run function skyblock:azr/system/player/damage_bonus/effect/absdefend
 
 
 
