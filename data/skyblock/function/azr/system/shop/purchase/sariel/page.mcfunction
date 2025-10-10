@@ -258,9 +258,9 @@ tellraw @s [{"text":" ","color":"light_purple"},\
 tellraw @s [{"text":" ","color":"light_purple"},\
 {"selector":"@n[tag=AzrSariel_displaymarkerE]","color":"dark_gray"},\
 {"selector":"@n[tag=AzrSariel_displaymarker9]","color":"#7b5dff","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432109"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：5\n攻击速度 +0.1","color":"white"}}},\
-{"selector":"@n[tag=AzrSariel_displaymarker9B]","color":"#ac2803","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432117"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：5\n攻击生灵时，释放一个会不断追踪生灵的电球\n电球成功造成攻击后将会停顿0.25秒\n攻击：2/3/4 持续时间：1/1.5/2 冷却：2\n重复选中将升级效果","color":"white"}}},\
-{"selector":"@n[tag=AzrSariel_displaymarker9C]","color":"#ac2803","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432118"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：20\n攻击生灵时，释放一个会不断追踪生灵的电球\n电球成功造成攻击后将会停顿0.25秒\n攻击：2/3/4 持续时间：1/1.5/2 冷却：2\n重复选中将升级效果","color":"white"}}},\
-{"selector":"@n[tag=AzrSariel_displaymarker9D]","color":"#ac2803","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432119"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：40\n攻击生灵时，释放一个会不断追踪生灵的电球\n电球成功造成攻击后将会停顿0.25秒\n攻击：2/3/4 持续时间：1/1.5/2 冷却：2\n重复选中将升级效果","color":"white"}}}]
+{"selector":"@n[tag=AzrSariel_displaymarker9B]","color":"#ac2803","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432117"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：5\n攻击生灵时，释放一个不断追踪生灵的电球\n电球成功造成攻击后将会停顿0.25秒\n攻击：2/3/4 持续时间：1/1.5/2 冷却：2\n重复选中将升级效果","color":"white"}}},\
+{"selector":"@n[tag=AzrSariel_displaymarker9C]","color":"#ac2803","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432118"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：20\n攻击生灵时，释放一个不断追踪生灵的电球\n电球成功造成攻击后将会停顿0.25秒\n攻击：2/3/4 持续时间：1/1.5/2 冷却：2\n重复选中将升级效果","color":"white"}}},\
+{"selector":"@n[tag=AzrSariel_displaymarker9D]","color":"#ac2803","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432119"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：40\n攻击生灵时，释放一个不断追踪生灵的电球\n电球成功造成攻击后将会停顿0.25秒\n攻击：2/3/4 持续时间：1/1.5/2 冷却：2\n重复选中将升级效果","color":"white"}}}]
 
 tellraw @s [{"text":" ","color":"light_purple"},\
 {"selector":"@n[tag=AzrSariel_displaymarkerE]","color":"dark_gray"},\
