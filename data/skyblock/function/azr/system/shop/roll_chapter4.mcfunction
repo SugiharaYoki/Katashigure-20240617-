@@ -45,3 +45,8 @@ execute if score @s Azr_Shop_rng11 matches ..22 run scoreboard players operation
 scoreboard players set @s Azr_Shop_rng10 -1
 scoreboard players set @s Azr_Shop_rng11 -1
 scoreboard players set @s Azr_Shop_rng12 -1
+
+
+
+execute if entity @s[tag=AzrSariel_upg7B] run scoreboard players set @s Azr_Shop_rng6 -1
+execute if entity @s[tag=AzrSariel_upg7B] run scoreboard players set @s Azr_Shop_rng9 -1

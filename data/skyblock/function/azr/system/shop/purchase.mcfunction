@@ -11,13 +11,13 @@ function skyblock:azr/system/shop/purchase/category2 {rng:4,trigger:84304}
 #-----------------5
 function skyblock:azr/system/shop/purchase/category2 {rng:5,trigger:84305}
 #-----------------6 skilled
-function skyblock:azr/system/shop/purchase/category2 {rng:6,trigger:84306}
+execute if entity @s[tag=AzrSariel_upg7B] run function skyblock:azr/system/shop/purchase/category2 {rng:6,trigger:84306}
 #-----------------7
 function skyblock:azr/system/shop/purchase/category3 {rng:7,trigger:84307}
 #-----------------8
 function skyblock:azr/system/shop/purchase/category3 {rng:8,trigger:84308}
 #-----------------9 skilled
-function skyblock:azr/system/shop/purchase/category3 {rng:9,trigger:84309}
+execute if entity @s[tag=AzrSariel_upg7B] run function skyblock:azr/system/shop/purchase/category3 {rng:9,trigger:84309}
 
 execute if score @s Azr_Shop matches 8431551..8431599 run function skyblock:azr/system/shop/purchase/ramiel
 execute if score @s Azr_Shop matches 8432100..8432299 run function skyblock:azr/system/shop/purchase/sariel/alter
