@@ -47,6 +47,16 @@ execute if entity @s[scores={Azr_Shop=8432120}] run scoreboard players remove @s
 execute if entity @s[scores={Azr_Shop=8432121}] run tag @s add AzrSariel_upg7B
 execute if entity @s[scores={Azr_Shop=8432121}] run scoreboard players remove @s Azr_emerald 30
 
+execute if entity @s[scores={Azr_Shop=8432122}] run tag @s add AzrSariel_upg3B
+execute if entity @s[scores={Azr_Shop=8432123}] run tag @s add AzrSariel_upg3C
+execute if entity @s[scores={Azr_Shop=8432124}] run tag @s add AzrSariel_upg3D
+execute if entity @s[scores={Azr_Shop=8432122}] run scoreboard players remove @s Azr_emerald 10
+execute if entity @s[scores={Azr_Shop=8432123}] run scoreboard players remove @s Azr_emerald 20
+execute if entity @s[scores={Azr_Shop=8432124}] run scoreboard players remove @s Azr_emerald 40
+
+
+
+
 tag @s remove AZR_sariel_01_effected
 
 playsound block.enchantment_table.use player @a ~ ~ ~ 1 1.3

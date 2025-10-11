@@ -207,11 +207,11 @@ execute if entity @s[tag=!AzrSariel_upg16D] run data modify entity @n[tag=AzrSar
 
 #  01 防
 #  02 生
-#  03 防
+#  03 防 移 移 移
 #  04 生
 #  05 防 火 火 火
 #  06 生
-#  07 ★
+#  07 ★ 商
 #  08 攻
 #  09 速 电 电 电
 #  10 攻
@@ -230,7 +230,10 @@ tellraw @s [{"text":" ","color":"light_purple"},\
 
 tellraw @s [{"text":" ","color":"light_purple"},\
 {"selector":"@n[tag=AzrSariel_displaymarker0b]","color":"dark_gray"},\
-{"selector":"@n[tag=AzrSariel_displaymarker3]","color":"#ffb65d","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432103"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：10\n基础防御 +1","color":"white"}}}]
+{"selector":"@n[tag=AzrSariel_displaymarker3]","color":"#ffb65d","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432103"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：10\n基础防御 +1","color":"white"}}},\
+{"selector":"@n[tag=AzrSariel_displaymarker3B]","color":"#ac2803","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432122"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：10\n增加移动速度\n你的身体将拥有碰撞伤害\n伤害：1/3/6 冷却：0.5\n重复选中将升级效果","color":"white"}}},\
+{"selector":"@n[tag=AzrSariel_displaymarker3C]","color":"#ac2803","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432123"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：20\n增加移动速度\n你的身体将拥有碰撞伤害\n伤害：1/3/6 冷却：0.5\n重复选中将升级效果","color":"white"}}},\
+{"selector":"@n[tag=AzrSariel_displaymarker3D]","color":"#ac2803","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432124"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：40\n增加移动速度\n你的身体将拥有碰撞伤害\n伤害：1/3/6 冷却：0.5\n重复选中将升级效果","color":"white"}}}]
 
 tellraw @s [{"text":" ","color":"light_purple"},\
 {"selector":"@n[tag=AzrSariel_displaymarker0b]","color":"dark_gray"},\
@@ -239,9 +242,9 @@ tellraw @s [{"text":" ","color":"light_purple"},\
 tellraw @s [{"text":" ","color":"light_purple"},\
 {"selector":"@n[tag=AzrSariel_displaymarker0b]","color":"dark_gray"},\
 {"selector":"@n[tag=AzrSariel_displaymarker5]","color":"#ffb65d","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432105"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：5\n基础防御 +1","color":"white"}}},\
-{"selector":"@n[tag=AzrSariel_displaymarker5B]","color":"#ac2803","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432114"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：5\n攻击亡魂时，朝前释放针对亡魂的扇形范围攻击\n攻击：2/3/4 冷却：3/2.5/2\n重复选中将升级效果","color":"white"}}},\
-{"selector":"@n[tag=AzrSariel_displaymarker5C]","color":"#ac2803","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432115"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：20\n攻击亡魂时，朝前释放针对亡魂的扇形范围攻击\n攻击：2/3/4 冷却：3/2.5/2\n重复选中将升级效果","color":"white"}}},\
-{"selector":"@n[tag=AzrSariel_displaymarker5D]","color":"#ac2803","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432116"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：40\n攻击亡魂时，朝前释放针对亡魂的扇形范围攻击\n攻击：2/3/4 冷却：3/2.5/2\n重复选中将升级效果","color":"white"}}}]
+{"selector":"@n[tag=AzrSariel_displaymarker5B]","color":"#ac2803","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432114"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：5\n攻击亡魂时，朝前释放针对亡魂的扇形范围攻击\n伤害：2/3/4 冷却：3/2.5/2\n重复选中将升级效果","color":"white"}}},\
+{"selector":"@n[tag=AzrSariel_displaymarker5C]","color":"#ac2803","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432115"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：20\n攻击亡魂时，朝前释放针对亡魂的扇形范围攻击\n伤害：2/3/4 冷却：3/2.5/2\n重复选中将升级效果","color":"white"}}},\
+{"selector":"@n[tag=AzrSariel_displaymarker5D]","color":"#ac2803","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432116"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：40\n攻击亡魂时，朝前释放针对亡魂的扇形范围攻击\n伤害：2/3/4 冷却：3/2.5/2\n重复选中将升级效果","color":"white"}}}]
 
 tellraw @s [{"text":" ","color":"light_purple"},\
 {"selector":"@n[tag=AzrSariel_displaymarker0b]","color":"dark_gray"},\
@@ -264,9 +267,9 @@ tellraw @s [{"text":" ","color":"light_purple"},\
 tellraw @s [{"text":" ","color":"light_purple"},\
 {"selector":"@n[tag=AzrSariel_displaymarker0b]","color":"dark_gray"},\
 {"selector":"@n[tag=AzrSariel_displaymarker9]","color":"#7b5dff","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432109"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：5\n攻击速度 +0.1","color":"white"}}},\
-{"selector":"@n[tag=AzrSariel_displaymarker9B]","color":"#576fe4","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432117"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：5\n攻击生灵时，释放一个不断追踪生灵的电球\n电球成功造成攻击后将会停顿0.25秒\n攻击：2/3/4 持续时间：1/1.5/2 冷却：2\n重复选中将升级效果","color":"white"}}},\
-{"selector":"@n[tag=AzrSariel_displaymarker9C]","color":"#576fe4","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432118"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：20\n攻击生灵时，释放一个不断追踪生灵的电球\n电球成功造成攻击后将会停顿0.25秒\n攻击：2/3/4 持续时间：1/1.5/2 冷却：2\n重复选中将升级效果","color":"white"}}},\
-{"selector":"@n[tag=AzrSariel_displaymarker9D]","color":"#576fe4","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432119"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：40\n攻击生灵时，释放一个不断追踪生灵的电球\n电球成功造成攻击后将会停顿0.25秒\n攻击：2/3/4 持续时间：1/1.5/2 冷却：2\n重复选中将升级效果","color":"white"}}}]
+{"selector":"@n[tag=AzrSariel_displaymarker9B]","color":"#576fe4","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432117"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：5\n攻击生灵时，释放一个不断追踪生灵的电球\n电球成功造成攻击后将会停顿0.25秒\n伤害：2/3/4 持续时间：1/1.5/2 冷却：2\n重复选中将升级效果","color":"white"}}},\
+{"selector":"@n[tag=AzrSariel_displaymarker9C]","color":"#576fe4","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432118"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：20\n攻击生灵时，释放一个不断追踪生灵的电球\n电球成功造成攻击后将会停顿0.25秒\n伤害：2/3/4 持续时间：1/1.5/2 冷却：2\n重复选中将升级效果","color":"white"}}},\
+{"selector":"@n[tag=AzrSariel_displaymarker9D]","color":"#576fe4","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432119"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：40\n攻击生灵时，释放一个不断追踪生灵的电球\n电球成功造成攻击后将会停顿0.25秒\n伤害：2/3/4 持续时间：1/1.5/2 冷却：2\n重复选中将升级效果","color":"white"}}}]
 
 tellraw @s [{"text":" ","color":"light_purple"},\
 {"selector":"@n[tag=AzrSariel_displaymarker0b]","color":"dark_gray"},\
