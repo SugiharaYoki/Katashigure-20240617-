@@ -17,7 +17,7 @@ scoreboard players operation @s AzrJoinWave = wave Azr_system
 function skyblock:azr/system/player/refresh_bossbar
 execute at @s run tp @s @r[tag=azrPlayer,distance=1..]
 #生命手册
-execute if score stage Azr_system matches 3.. run tellraw @s[tag=!hasLifeVitae] {"text":"你已永久解锁「生命手册」。记得收集绿宝石与素材，使用手册换取必要的武器与道具。"}
+execute if score stage Azr_system matches 3.. run tellraw @s[tag=!hasLifeVitae] {"text":"你已永久解锁「生命手册」与「节制天平」。\n记得收集绿宝石与素材，使用「生命手册」换取必要的武器与道具。\n消耗绿宝石可以在「节制天平」中解锁修习新的主被动技能。"}
 execute if score stage Azr_system matches 1.. if entity @s[tag=AZR_SEAawakened] run function skyblock:azr/assets/items/others/revival_star
 execute if score stage Azr_system matches 3.. run tag @s[tag=!hasLifeVitae] add hasLifeVitae
 execute if score stage Azr_system matches 51..63 run tag @s add azrBanLifeVitae
