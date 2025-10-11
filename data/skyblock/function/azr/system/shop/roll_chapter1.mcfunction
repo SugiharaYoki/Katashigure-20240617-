@@ -27,10 +27,8 @@ execute if score @s Azr_Shop_rng8 matches -1 store result score @s Azr_Shop_rng8
 execute if score @s Azr_Shop_rng9 matches -1 store result score @s Azr_Shop_rng9 run random value 0..12
 
 
-execute if entity @s[tag=AzrSariel_upg7B] run scoreboard players set @s Azr_Shop_rng6 -1
-execute if entity @s[tag=AzrSariel_upg7B] run scoreboard players set @s Azr_Shop_rng9 -1
+execute if entity @s[tag=!AzrSariel_upg7B] run scoreboard players set @s Azr_Shop_rng6 -1
+execute if entity @s[tag=!AzrSariel_upg7B] run scoreboard players set @s Azr_Shop_rng9 -1
 
 
 
-
-execute if score @s Azr_Shop_rng10 matches -1 store result score @s Azr_Shop_rng10 run random value 0..11
