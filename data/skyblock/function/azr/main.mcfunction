@@ -68,7 +68,7 @@ bossbar set azr:boss_hp_bar_0 players @a[tag=azrShowDialog]
 
 # 玩家函数
 scoreboard players reset $playerExists Azr_system
-execute as @a[tag=azrPlayer] run function skyblock:azr/system/player/main
+execute as @a[tag=azrPlayer] at @s run function skyblock:azr/system/player/main
 
 execute unless score $playerExists Azr_system matches 1 run return 0
 # --------------------- 玩家存在 ----------------------------------
