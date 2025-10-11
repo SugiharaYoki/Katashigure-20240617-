@@ -231,9 +231,9 @@ tellraw @s [{"text":" ","color":"light_purple"},\
 tellraw @s [{"text":" ","color":"light_purple"},\
 {"selector":"@n[tag=AzrSariel_displaymarker0b]","color":"dark_gray"},\
 {"selector":"@n[tag=AzrSariel_displaymarker3]","color":"#ffb65d","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432103"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：10\n基础防御 +1","color":"white"}}},\
-{"selector":"@n[tag=AzrSariel_displaymarker3B]","color":"#6d4892","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432122"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：10\n增加移动速度\n你的身体将拥有碰撞伤害\n伤害：1/2/4 冷却：0.5\n重复选中将升级效果","color":"white"}}},\
-{"selector":"@n[tag=AzrSariel_displaymarker3C]","color":"#6d4892","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432123"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：20\n增加移动速度\n你的身体将拥有碰撞伤害\n伤害：1/2/4 冷却：0.5\n重复选中将升级效果","color":"white"}}},\
-{"selector":"@n[tag=AzrSariel_displaymarker3D]","color":"#6d4892","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432124"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：40\n增加移动速度\n你的身体将拥有碰撞伤害\n伤害：1/2/4 冷却：0.5\n重复选中将升级效果","color":"white"}}}]
+{"selector":"@n[tag=AzrSariel_displaymarker3B]","color":"#6d4892","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432122"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：10\n移动速度增加3%\n你的身体将拥有碰撞伤害\n伤害：1/2/4 冷却：0.5\n重复选中将升级效果","color":"white"}}},\
+{"selector":"@n[tag=AzrSariel_displaymarker3C]","color":"#6d4892","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432123"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：20\n移动速度增加3%\n你的身体将拥有碰撞伤害\n伤害：1/2/4 冷却：0.5\n重复选中将升级效果","color":"white"}}},\
+{"selector":"@n[tag=AzrSariel_displaymarker3D]","color":"#6d4892","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432124"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：40\n移动速度增加3%\n你的身体将拥有碰撞伤害\n伤害：1/2/4 冷却：0.5\n重复选中将升级效果","color":"white"}}}]
 
 tellraw @s [{"text":" ","color":"light_purple"},\
 {"selector":"@n[tag=AzrSariel_displaymarker0b]","color":"dark_gray"},\
