@@ -10,3 +10,5 @@ execute if score #rng20 Azr_system matches 1 if score @s AzrSariel_Skill_FlowerR
 
 
 scoreboard players set @s AzrSariel_Skill_FlowerReason_condition 0
+
+say hi
