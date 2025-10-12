@@ -29,6 +29,10 @@ execute if score stage_boss_bgm AzrTimerStack matches 2281.. run scoreboard play
    
 #ACTION
 
+#rng5：移动控制器
+#rng8：技能循环计时器
+#rng2：技能选择器
+
     execute if entity @s[tag=actionable] run scoreboard players add @s rng8 1
     execute if score @s[scores={Health=181..}] rng8 matches 1 store result score @s rng2 run random value 1..5
     execute if score @s[scores={Health=..180}] rng8 matches 1 store result score @s rng2 run random value 1..10
@@ -39,10 +43,11 @@ execute if score stage_boss_bgm AzrTimerStack matches 2281.. run scoreboard play
     execute if score @s[scores={rng2=..0}] rng8 matches 2.. run scoreboard players set @s rng8 -20
     execute if score @s rng8 matches 999.. run scoreboard players set @s rng8 -20
 
-    execute if score @s[scores={Health=..250}] rng8 matches 0 store result score @s rng5 run random value 1..100
-    execute if entity @s[scores={rng5=1}] run function skyblock:azr/assets/mobs_new/skill/boss1_andralune/move_back
-    execute if entity @s[scores={rng5=2}] run function skyblock:azr/assets/mobs_new/skill/boss1_andralune/move_forward
-    execute if entity @s[scores={rng5=3..4}] run function skyblock:azr/assets/mobs_new/skill/boss1_andralune/move_fastshift
+    execute if score @s[scores={Health=..250}] rng8 matches -3 store result score @s rng5 run random value 1..100
+    execute if entity @s[scores={rng5=1..2}] run function skyblock:azr/assets/mobs_new/skill/boss1_andralune/move_back
+    execute if entity @s[scores={rng5=3..4}] run function skyblock:azr/assets/mobs_new/skill/boss1_andralune/move_forward
+    execute if entity @s[scores={rng5=5..8}] run function skyblock:azr/assets/mobs_new/skill/boss1_andralune/move_fastshift
+    execute if entity @s[scores={rng5=1..}] run scoreboard players set @s rng5 0
 
 #MARKER
 

@@ -262,7 +262,10 @@ tellraw @s [{"text":" ","color":"light_purple"},\
 
 tellraw @s [{"text":" ","color":"light_purple"},\
 {"selector":"@n[tag=AzrSariel_displaymarker0b]","color":"dark_gray"},\
-{"selector":"@n[tag=AzrSariel_displaymarker8]","color":"#ff5d5d","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432108"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：5\n攻击力 +0.5","color":"white"}}}]
+{"selector":"@n[tag=AzrSariel_displaymarker8]","color":"#ff5d5d","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432108"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：5\n攻击力 +0.5","color":"white"}}},\
+{"selector":"@n[tag=AzrSariel_displaymarkerE]","color":"dark_gray"},\
+{"selector":"@n[tag=AzrSariel_displaymarker8C]","color":"#ffe3af","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432125"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：20\n下蹲可以抹除6格内所有的箭矢\n冷却：3","color":"white"}}},\
+{"selector":"@n[tag=AzrSariel_displaymarkerE]","color":"dark_gray"}]
 
 tellraw @s [{"text":" ","color":"light_purple"},\
 {"selector":"@n[tag=AzrSariel_displaymarker0b]","color":"dark_gray"},\

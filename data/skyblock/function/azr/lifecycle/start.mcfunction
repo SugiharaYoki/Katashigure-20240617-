@@ -93,6 +93,7 @@ scoreboard objectives add AzrSariel_Skill_AbsDefend_condition minecraft.custom:m
 scoreboard objectives add AzrSariel_Skill_AbsDefend_cooldown dummy
 scoreboard objectives add AzrSariel_Skill_ContactDmg dummy
 scoreboard objectives add AzrSariel_Skill_ContactDmg_cooldown dummy
+scoreboard objectives add AzrSariel_Skill_SneakDodgeArrow_cooldown dummy
 
 
 #scoreboard players set life_vitae_available Azr_system 1
