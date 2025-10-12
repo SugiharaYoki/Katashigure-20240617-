@@ -15,9 +15,12 @@ execute if entity @s[tag=flowerreason_activate] run playsound minecraft:block.ch
 execute if entity @s[tag=flowerreason_activate,tag=AzrielMob_level_1] as @a[distance=..3.5,tag=azrPlayer] run effect give @s instant_health 1 0 true
 execute if entity @s[tag=flowerreason_activate,tag=AzrielMob_level_2] as @a[distance=..3.5,tag=azrPlayer] run effect give @s instant_health 1 1 true
 execute if entity @s[tag=flowerreason_activate,tag=AzrielMob_level_3] as @a[distance=..3.5,tag=azrPlayer] run effect give @s instant_health 1 2 true
-execute if entity @s[tag=flowerreason_activate,tag=AzrielMob_level_1] as @e[distance=..3.8,tag=AzrielMob_typeDEATH] run damage @s 4 magic
-execute if entity @s[tag=flowerreason_activate,tag=AzrielMob_level_2] as @e[distance=..3.8,tag=AzrielMob_typeDEATH] run damage @s 7 magic
-execute if entity @s[tag=flowerreason_activate,tag=AzrielMob_level_3] as @e[distance=..3.8,tag=AzrielMob_typeDEATH] run damage @s 10 magic
+execute if entity @s[tag=flowerreason_activate,tag=AzrielMob_level_1] as @e[distance=..3.8,tag=AzrielMob_typeDEATH] run damage @s 6 magic
+execute if entity @s[tag=flowerreason_activate,tag=AzrielMob_level_2] as @e[distance=..3.8,tag=AzrielMob_typeDEATH] run damage @s 10 magic
+execute if entity @s[tag=flowerreason_activate,tag=AzrielMob_level_3] as @e[distance=..3.8,tag=AzrielMob_typeDEATH] run damage @s 14 magic
+execute if entity @s[tag=flowerreason_activate,tag=AzrielMob_level_1] as @e[distance=..3.8,tag=AzrielMob_typeMONSTER] run damage @s 3 magic
+execute if entity @s[tag=flowerreason_activate,tag=AzrielMob_level_2] as @e[distance=..3.8,tag=AzrielMob_typeMONSTER] run damage @s 5 magic
+execute if entity @s[tag=flowerreason_activate,tag=AzrielMob_level_3] as @e[distance=..3.8,tag=AzrielMob_typeMONSTER] run damage @s 7 magic
 execute if entity @s[tag=flowerreason_activate] run kill @s
 
 
