@@ -208,7 +208,7 @@ tag @s remove azr0_player_looking_at_devil_goat
 function skyblock:azr/system/shop/purchase/sariel/effect_remove
 function skyblock:azr/system/shop/purchase/sariel/reset
 
-
-
+tag @s remove AzrAmulet_FlowerWall_Activated
+attribute @s armor modifier remove azr_amulet:flowerwall_01
 
 
