@@ -210,5 +210,6 @@ function skyblock:azr/system/shop/purchase/sariel/reset
 
 tag @s remove AzrAmulet_FlowerWall_Activated
 attribute @s armor modifier remove azr_amulet:flowerwall_01
+attribute @s attack_damage modifier remove azr_amulet:flowerwall_01
 
 
