@@ -225,13 +225,14 @@ tellraw @s [{"text":" ","color":"light_purple"},\
 {"selector":"@n[tag=AzrSariel_displaymarker1]","color":"#ffb65d","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432101"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：20\n基础防御 +1","color":"white"}}},\
 {"selector":"@n[tag=AzrSariel_displaymarkerE]","color":"dark_gray"},\
 {"selector":"@n[tag=AzrSariel_displaymarkerE]","color":"dark_gray"},\
-{"selector":"@n[tag=AzrSariel_displaymarker1D]","color":"#ffb0ff","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432127"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：20\n造成点数超过6的攻击时，有5%概率在最近的敌人处制造一个理之花团\n触碰理之花团可以对范围内的所有亡魂造成伤害，并恢复自身生命\n伤害：4/6/8 治疗：2/4/8 存在时间：60\n重复选中将升级效果","color":"white"}}}]
+{"selector":"@n[tag=AzrSariel_displaymarker1D]","color":"#ffb0ff","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432127"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：20\n造成点数超过6的攻击时，有5%概率在最近的敌人处制造一个理之花团\n触碰理之花团可以对范围内的所有亡魂造成伤害，并恢复自身生命\n伤害：4/6/8 治疗：2/4/8 存在\n重复选中将升级效果","color":"white"}}}]
 
 tellraw @s [{"text":" ","color":"light_purple"},\
 {"selector":"@n[tag=AzrSariel_displaymarker0b]","color":"dark_gray"},\
+{"selector":"@n[tag=AzrSariel_displaymarker2]","color":"#ff5dd7","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432102"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：20\n生命上限 +2","color":"white"}}},\
 {"selector":"@n[tag=AzrSariel_displaymarkerE]","color":"dark_gray"},\
 {"selector":"@n[tag=AzrSariel_displaymarkerE]","color":"dark_gray"},\
-{"selector":"@n[tag=AzrSariel_displaymarker2D]","color":"#ffb0ff","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432128"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：30\n造成点数超过6的攻击时，有5%概率在最近的敌人处制造一个理之花团\n触碰理之花团可以对范围内的所有亡魂造成伤害，并恢复自身生命\n伤害：4/6/8 治疗：2/4/8 存在时间：60\n重复选中将升级效果","color":"white"}}}]
+{"selector":"@n[tag=AzrSariel_displaymarker2D]","color":"#ffb0ff","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432128"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：30\n造成点数超过6的攻击时，有5%概率在最近的敌人处制造一个理之花团\n触碰理之花团可以对范围内的所有亡魂造成伤害，并恢复自身生命\n伤害：4/6/8 治疗：2/4/8 存在\n重复选中将升级效果","color":"white"}}}]
 
 tellraw @s [{"text":" ","color":"light_purple"},\
 {"selector":"@n[tag=AzrSariel_displaymarker0b]","color":"dark_gray"},\
@@ -245,7 +246,7 @@ tellraw @s [{"text":" ","color":"light_purple"},\
 {"selector":"@n[tag=AzrSariel_displaymarker4]","color":"#ff5dd7","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432104"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：10\n生命上限 +2","color":"white"}}},\
 {"selector":"@n[tag=AzrSariel_displaymarkerE]","color":"dark_gray"},\
 {"selector":"@n[tag=AzrSariel_displaymarkerE]","color":"dark_gray"},\
-{"selector":"@n[tag=AzrSariel_displaymarker2D]","color":"#ffb0ff","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432129"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：20\n造成点数超过6的攻击时，有5%概率在最近的敌人处制造一个理之花团\n触碰理之花团可以对范围内的所有亡魂造成伤害，并恢复自身生命\n伤害：4/6/8 治疗：2/4/8 存在时间：60\n重复选中将升级效果","color":"white"}}}]
+{"selector":"@n[tag=AzrSariel_displaymarker2D]","color":"#ffb0ff","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432129"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：20\n造成点数超过6的攻击时，有5%概率在最近的敌人处制造一个理之花团\n触碰理之花团可以对范围内的所有亡魂造成伤害，并恢复自身生命\n伤害：4/6/8 治疗：2/4/8 存在\n重复选中将升级效果","color":"white"}}}]
 
 tellraw @s [{"text":" ","color":"light_purple"},\
 {"selector":"@n[tag=AzrSariel_displaymarker0b]","color":"dark_gray"},\
