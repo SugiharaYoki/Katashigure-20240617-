@@ -54,7 +54,7 @@ $execute as @s[scores={Azr_Shop_rng$(rng)=7,Azr_Shop=$(trigger)}] \
     rng7 run scoreboard players set tempPlayerShopSuccess Azr_system 1
     # 7 @s  链裤 6 绿宝石
 
-$execute as @s[scores={Azr_Shop_rng$(rng)=7,Azr_Shop=$(trigger)}] \
+$execute as @s[scores={Azr_Shop_rng$(rng)=8,Azr_Shop=$(trigger)}] \
     unless score tempPlayerShopSuccess Azr_system matches 1 \
     if score @s Azr_emerald matches 6.. \
     unless function skyblock:azr/system/shop/purchase/category3/\
