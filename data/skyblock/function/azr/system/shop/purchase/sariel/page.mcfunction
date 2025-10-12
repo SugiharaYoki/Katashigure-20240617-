@@ -257,7 +257,7 @@ tellraw @s [{"text":" ","color":"light_purple"},\
 {"selector":"@n[tag=AzrSariel_displaymarker0]","color":"white"},\
 {"selector":"@n[tag=AzrSariel_displaymarker7]","color":"#ffec5d","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432107"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：5\n「能力解放」\n看穿生死余命\n当你不再拥有命星时，获得文字预警","color":"white"}}},\
 {"selector":"@n[tag=AzrSariel_displaymarker7B]","color":"#ffec5d","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432121"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：30\n「能力解放」\n生命手册商店的武器与防具栏目中各增加一项","color":"white"}}},\
-{"selector":"@n[tag=AzrSariel_displaymarker7B]","color":"#ffec5d","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432126"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：40\n「能力解放」「全队共享」\n拾取绿宝石时有20%的概率获得双倍","color":"white"}}},\
+{"selector":"@n[tag=AzrSariel_displaymarker7C]","color":"#ffec5d","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432126"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：40\n「能力解放」「全队共享」\n拾取绿宝石时有20%的概率获得双倍","color":"white"}}},\
 {"selector":"@n[tag=AzrSariel_displaymarkerE]","color":"dark_gray"}]
 
 tellraw @s [{"text":" ","color":"light_purple"},\
