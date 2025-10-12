@@ -12,12 +12,12 @@ execute if score @s rng1 matches 60 run playsound minecraft:entity.evoker.cast_s
 execute if score @s rng1 matches 60 run particle minecraft:flame ~ ~0.3 ~ 0.2 0 0.2 0 20
 execute if score @s rng1 matches 60 run effect give @s slowness 2 9 true
 
-execute if score @s rng1 matches 70.. rotated ~ 0 run particle minecraft:wax_off ^ ^0.2 ^0.5
-execute if score @s rng1 matches 70.. rotated ~ 0 run particle minecraft:wax_off ^ ^0.2 ^1
-execute if score @s rng1 matches 70.. rotated ~ 0 run particle minecraft:wax_off ^ ^0.2 ^1.5
-execute if score @s rng1 matches 70.. rotated ~ 0 run particle minecraft:wax_off ^ ^0.2 ^2
-execute if score @s rng1 matches 70.. rotated ~ 0 run particle minecraft:wax_off ^ ^0.2 ^2.5
-execute if score @s rng1 matches 70.. rotated ~ 0 run particle minecraft:wax_off ^ ^0.2 ^3
+execute if score @s rng1 matches 70..87 rotated ~ 0 run particle minecraft:wax_off ^ ^0.2 ^0.5
+execute if score @s rng1 matches 70..87 rotated ~ 0 run particle minecraft:wax_off ^ ^0.2 ^1
+execute if score @s rng1 matches 70..87 rotated ~ 0 run particle minecraft:wax_off ^ ^0.2 ^1.5
+execute if score @s rng1 matches 70..87 rotated ~ 0 run particle minecraft:wax_off ^ ^0.2 ^2
+execute if score @s rng1 matches 70..87 rotated ~ 0 run particle minecraft:wax_off ^ ^0.2 ^2.5
+execute if score @s rng1 matches 70..87 rotated ~ 0 run particle minecraft:wax_off ^ ^0.2 ^3
 execute if score @s rng1 matches 88 rotated ~ 0 as @s at @s positioned 0.0 0 0.0 run summon marker ^ ^0.02 ^1.1 {Tags:["AzrielMob_move_marker"]}
 execute if score @s rng1 matches 88 rotated ~ 0 as @s at @s run data modify entity @s Motion set from entity @n[type=marker,tag=AzrielMob_move_marker] Pos
 execute if score @s rng1 matches 88 rotated ~ 0 as @s at @s run kill @e[type=marker,tag=AzrielMob_move_marker]
