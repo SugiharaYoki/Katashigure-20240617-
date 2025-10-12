@@ -30,5 +30,9 @@ scoreboard players set @s AzrSariel_Skill_ElecBall 0
 execute if entity @s[tag=AzrSariel_upg9B] run scoreboard players add @s AzrSariel_Skill_ElecBall 1
 execute if entity @s[tag=AzrSariel_upg9C] run scoreboard players add @s AzrSariel_Skill_ElecBall 1
 execute if entity @s[tag=AzrSariel_upg9D] run scoreboard players add @s AzrSariel_Skill_ElecBall 1
+scoreboard players set @s AzrSariel_Skill_FlowerReason 0
+execute if entity @s[tag=AzrSariel_upg1D] run scoreboard players add @s AzrSariel_Skill_FlowerReason 1
+execute if entity @s[tag=AzrSariel_upg2D] run scoreboard players add @s AzrSariel_Skill_FlowerReason 1
+execute if entity @s[tag=AzrSariel_upg4D] run scoreboard players add @s AzrSariel_Skill_FlowerReason 1
 
 tag @s add AZR_sariel_01_effected

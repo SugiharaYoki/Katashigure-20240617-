@@ -94,6 +94,8 @@ scoreboard objectives add AzrSariel_Skill_AbsDefend_cooldown dummy
 scoreboard objectives add AzrSariel_Skill_ContactDmg dummy
 scoreboard objectives add AzrSariel_Skill_ContactDmg_cooldown dummy
 scoreboard objectives add AzrSariel_Skill_SneakDodgeArrow_cooldown dummy
+scoreboard objectives add AzrSariel_Skill_FlowerReason dummy
+scoreboard objectives add AzrSariel_Skill_FlowerReason_condition minecraft.custom:minecraft.damage_dealt
 
 
 #scoreboard players set life_vitae_available Azr_system 1

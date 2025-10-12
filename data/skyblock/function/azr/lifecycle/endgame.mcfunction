@@ -100,6 +100,8 @@ scoreboard objectives remove AzrSariel_Skill_AbsDefend_cooldown
 scoreboard objectives remove AzrSariel_Skill_ContactDmg
 scoreboard objectives remove AzrSariel_Skill_ContactDmg_cooldown
 scoreboard objectives remove AzrSariel_Skill_SneakDodgeArrow_cooldown
+scoreboard objectives remove AzrSariel_Skill_FlowerReason
+scoreboard objectives remove AzrSariel_Skill_FlowerReason_condition
 
 
 
