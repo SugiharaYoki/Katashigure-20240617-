@@ -1,3 +1,3 @@
-clear @s chicken 3
+clear @s beef 2
 
-give @s beef 2
+give @s cooked_beef 1
