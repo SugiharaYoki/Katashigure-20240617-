@@ -3,9 +3,8 @@
 scoreboard players set $playerExists Azr_system 1
 
 # update spawnpoint
-execute as @s[tag=azrUpdateSpawnPoint,nbt={OnGround:1b}] at @s if block ~ ~ ~ air if block ~ ~1 ~ air run spawnpoint @s ~ ~ ~
-# execute as @s[tag=azrUpdateSpawnPoint,nbt={OnGround:1b}] at @s if block ~ ~ ~ air if block ~ ~1 ~ air run tell @a[tag=DebugMode] "Updatespawnpoint"
-execute as @s[tag=azrUpdateSpawnPoint,nbt={OnGround:1b}] at @s if block ~ ~ ~ air if block ~ ~1 ~ air run tag @s remove azrUpdateSpawnPoint
+execute as @s[tag=azrUpdateSpawnPoint] at @s unless block ~ ~-0.1 ~ air if block ~ ~ ~ air if block ~ ~1 ~ air run spawnpoint @s ~ ~ ~
+execute as @s[tag=azrUpdateSpawnPoint] at @s unless block ~ ~-0.1 ~ air if block ~ ~ ~ air if block ~ ~1 ~ air run tag @s remove azrUpdateSpawnPoint
 
 # 商店系统
 execute as @s[tag=hasLifeVitae] at @s run function skyblock:azr/system/shop/core
