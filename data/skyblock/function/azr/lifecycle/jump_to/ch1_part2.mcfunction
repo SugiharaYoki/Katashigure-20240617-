@@ -5,7 +5,6 @@ stopsound @s
 effect give @s saturation 5 29 true
 effect give @s slow_falling 5 5 true
 
-scoreboard players set Azr_Story_Introduction rng1 1023
 
 tp @a[tag=azrPlayer] -79984.03 40.00 -14.01 facing -79983.03 40.00 -14.01
 
