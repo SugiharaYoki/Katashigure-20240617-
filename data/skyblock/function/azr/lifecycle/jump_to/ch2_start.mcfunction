@@ -1,6 +1,10 @@
-function skyblock:azr/lifecycle/jump_to/ch1_start
+function skyblock:azr/lifecycle/jump_to/ch1_boss
 
-execute as @a[tag=azrPlayer] run function skyblock:azr/lifecycle/jump_to/player_modifier/ch2_start
-
-function skyblock:azr/lifecycle/jump_to/data_modifier/ch1_boss
-function skyblock:azr/lifecycle/jump_to/data_modifier/ch2_start
+# stage 4
+    # remove storage
+    setblock -79931 38 42 air
+# boss1
+    # close stage 4
+    fill -79932 38 72 -79930 42 72 red_stained_glass
+    # -> 5 door
+    fill -79930 38 104 -79932 42 104 air

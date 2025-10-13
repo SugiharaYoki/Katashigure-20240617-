@@ -1,0 +1,1 @@
+function skyblock:azr/lifecycle/jump_to/ch4_mid
