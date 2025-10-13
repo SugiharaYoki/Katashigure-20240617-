@@ -15,3 +15,4 @@ scoreboard players add @s[scores={Azr_skillPoints=6..}] Azr_emerald 5
 
 
 
+tag @s add azrRetrieved
