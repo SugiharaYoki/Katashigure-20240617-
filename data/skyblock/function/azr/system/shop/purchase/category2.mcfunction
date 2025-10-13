@@ -123,6 +123,14 @@ $execute as @s[scores={Azr_Shop_rng$(rng)=26,Azr_Shop=$(trigger)}] \
     rng26 run scoreboard players set tempPlayerShopSuccess Azr_system 1
     # 26 @s 弓 25 绿宝石 2 燧石
 
+$execute as @s[scores={Azr_Shop_rng$(rng)=27,Azr_Shop=$(trigger)}] \
+    unless score tempPlayerShopSuccess Azr_system matches 1 \
+    if score @s Azr_emerald matches 15.. \
+    if items entity @s container.* flint[count={min:6}] \
+    unless function skyblock:azr/system/shop/purchase/category2/\
+    rng27 run scoreboard players set tempPlayerShopSuccess Azr_system 1
+    # 27 @s 弓 15 绿宝石 2 燧石
+
 
 
 
