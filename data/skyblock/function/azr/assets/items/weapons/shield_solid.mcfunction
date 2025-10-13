@@ -1,1 +1,0 @@
-give @s shield[custom_data={shield_solid:1b},custom_name='{"text":"坚盾","italic":false}',attribute_modifiers=[{type:"armor_toughness","id":"azr:shield_solid.armor_toughness",amount:1.0,operation:"add_value",slot:"offhand"},{type:"armor_toughness","id":"azr:shield_solid.armor_toughness",amount:1.0,operation:"add_value",slot:"mainhand"}],custom_model_data={floats:[100002.0]}]

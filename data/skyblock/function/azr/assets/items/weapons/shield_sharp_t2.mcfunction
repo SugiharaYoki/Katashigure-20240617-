@@ -1,1 +1,0 @@
-give @s shield[custom_data={shield_sharp_t2:1b},custom_name='{"text":"刺盾·改造","italic":false}',attribute_modifiers=[{type:"attack_damage",id:"azr:shield_sharp_t2.attack_damage",amount:8.0,operation:"add_value",slot:"mainhand"},{type:"attack_speed",id:"azr:shield_sharp_t2.attack_speed",amount:-3.2,operation:"add_value",slot:"mainhand"}],custom_model_data={floats:[100005.0]}]

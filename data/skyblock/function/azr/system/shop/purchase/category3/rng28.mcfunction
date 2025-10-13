@@ -1,5 +1,3 @@
-function skyblock:azr/assets/items/weapons/bee_chestplate
+function skyblock:azr/assets/items/armors/iron_boots_normal
 
-scoreboard players remove @s Azr_emerald 5
-clear @s honeycomb 4
-clear @s sugar 2
+scoreboard players remove @s Azr_emerald 18
