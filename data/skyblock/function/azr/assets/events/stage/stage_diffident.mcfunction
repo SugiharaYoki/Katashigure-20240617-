@@ -29,9 +29,9 @@ execute if score stage_bonus_thread AzrTimerStack matches 55 positioned -79910 3
 execute if score stage_bonus_thread AzrTimerStack matches 70 positioned -79910 32 -5 run function skyblock:azr/assets/mobs_new/smoke_mother
 execute if score stage_bonus_thread AzrTimerStack matches 100 positioned -79910 32 -5 run function skyblock:azr/assets/mobs_new/smoke_mother
 execute if score stage_bonus_thread AzrTimerStack matches 110 positioned -79910 32 -5 run function skyblock:azr/assets/mobs_new/undead_pickaxe
-execute if score stage_bonus_thread AzrTimerStack matches 121 positioned -79910 32 -5 run function skyblock:azr/assets/mobs_new/barrier_maintainer
+execute if score stage_bonus_thread AzrTimerStack matches 121 positioned -79910 32 -5 run function skyblock:azr/assets/mobs_new/barrier_maintainer {id:_stagediffident}
 
-execute if score stage_main_thread AzrTimerStack matches 122..123 if entity @n[tag=AzrielMob_barrier_maintainer] run scoreboard players set stage_main_thread AzrTimerStack 122
+execute if score stage_main_thread AzrTimerStack matches 122..123 if entity @n[tag=AzrielMob_barrier_maintainer_stagediffident] run scoreboard players set stage_main_thread AzrTimerStack 122
 
 execute if score stage_bonus_thread AzrTimerStack matches 124 run title @a[tag=azrShowDialog] actionbar {"text":"Extra Stage Clear","color":"green"}
 execute if score stage_bonus_thread AzrTimerStack matches 124 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage_bonus_diffident
