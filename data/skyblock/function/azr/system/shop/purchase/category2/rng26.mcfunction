@@ -1,5 +1,4 @@
-clear @s stick 6
-clear @s string 8
-clear @s slime_ball 2
+scoreboard players remove @s Azr_emerald 25
+clear @s flint 2
 
-function skyblock:azr/assets/items/weapons/chain_rod_heavy
+function skyblock:azr/assets/items/weapons/bow_broken

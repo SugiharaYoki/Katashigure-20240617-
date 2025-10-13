@@ -1,1 +1,1 @@
-give @s iron_sword[custom_name='{"text":"铁剑","italic":false}',custom_data={iron_sword_normal:1b},custom_model_data={floats:[100001.0]}]
+give @s iron_sword[custom_name='{"text":"铁剑","italic":false}',attribute_modifiers=[{id:"azr:iron_sword_normal.attack_damage",type:"attack_damage",amount:5.0,operation:"add_value",slot:"mainhand"},{id:"azr:iron_sword_normal.attack_speed",type:"attack_speed",amount:-1.6,operation:"add_value",slot:"mainhand"}],custom_data={iron_sword_normal:1b},custom_model_data={floats:[100001.0]}]

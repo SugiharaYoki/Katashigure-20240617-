@@ -1,1 +1,1 @@
-give @s bow[custom_name='{"text":"弓·破烂","italic":false}',damage=334,custom_data={bow_borken:1b}]
+give @s bow[custom_name='{"text":"弓·破烂","italic":false}',damage=338,custom_data={bow_borken:1b}]

@@ -1,5 +1,4 @@
-scoreboard players remove @s Azr_emerald 22
-clear @s stone_sword 1
-clear @s bone[custom_data~{hard_bone:1b}] 2
+scoreboard players remove @s Azr_emerald 10
+clear @s ink_sac 4
 
-function skyblock:azr/assets/items/weapons/stone_sword_evil
+function skyblock:azr/assets/items/weapons/iron_sword_zombie
