@@ -365,7 +365,7 @@ execute if score stage_main_thread AzrTimerStack matches 370 run scoreboard play
 execute if score stage_main_thread AzrTimerStack matches 370 run summon parrot -79900 43 34 {PersistenceRequired:1b,Invulnerable:1b,Tags:["AzrielDecMob","AzrielFriendly"],DeathLootTable:"skyblock:azriel_creeper_tier2",Health:47.0f,CustomName:'"小鸢"',Variant:2,attributes:[{id:"max_health",base:50.0d},{id:"flying_speed",base:0.0d},{id:"movement_speed",base:0.0d}]}
 
 execute if score stage_main_thread AzrTimerStack matches 369 run setblock -79879 38 4 white_shulker_box
-execute if score stage_main_thread AzrTimerStack matches 370 run clone -79900 38 142 -79900 38 142 -79879 38 4 replace move
+execute if score stage_main_thread AzrTimerStack matches 370 run clone -79899 38 142 -79899 38 142 -79879 38 4 replace move
 
 
 #function skyblock:tool_rng

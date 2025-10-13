@@ -183,7 +183,7 @@ execute if score stage_main_thread AzrTimerStack matches 281 run scoreboard play
 execute if score stage_main_thread AzrTimerStack matches 281 run tag @a[tag=azrPlayer] add SeGa_SLAQuake
 execute if score stage_main_thread AzrTimerStack matches 282 run tag @a[tag=azrPlayer] remove SeGa_SLAQuake
 execute if score stage_main_thread AzrTimerStack matches 281 as @e[tag=AzrielMob,tag=!AzrielDecMob] at @s unless entity @r[tag=stageSeconds,distance=0..3] run kill @s
-execute if score stage_main_thread AzrTimerStack matches 281 run fill -79900 39 129 -79900 39 128 air destroy
+
 
 
 execute if score stage_main_thread AzrTimerStack matches 288 run tellraw @a[tag=azrShowDialog] {"text":"那种强大的魔力……似乎逐渐远去了？","color":"gray"}

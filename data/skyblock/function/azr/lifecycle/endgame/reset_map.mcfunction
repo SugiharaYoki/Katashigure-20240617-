@@ -166,12 +166,14 @@ setblock -79934 39 70 sea_lantern
 setblock -79934 39 72 sea_lantern
 setblock -79928 39 125 birch_button[facing=north,face=wall]
 setblock -79934 39 125 birch_button[facing=north,face=wall]
-setblock -79942 39 151 minecraft:gold_block
-setblock -79942 39 150 birch_button[facing=north,face=wall]
-setblock -79923 39 134 birch_button[facing=south,face=wall]
+#stage5
+setblock -79929 39 125 minecraft:potted_oak_sapling
+setblock -79933 39 125 minecraft:potted_dead_bush
+
+fill -79917 41 134 -79917 38 136 minecraft:purple_stained_glass
+setblock -79943 39 135 minecraft:birch_button[facing=west,face=floor]
 setblock -79901 49 131 minecraft:birch_button[facing=east]
 setblock -79903 44 131 minecraft:birch_button[facing=east]
-setblock -79904 38 127 anvil[facing=east]
 setblock -79902 39 103 birch_button[facing=south]
 setblock -79901 39 67 minecraft:birch_button[facing=east]
 setblock -79898 38 62 air
@@ -243,7 +245,7 @@ setblock -79934 38 18 air
 setblock -79931 38 42 air
 setblock -79931 38 76 air
 setblock -79931 38 117 air
-setblock -79900 38 142 air
+setblock -79899 38 142 air
 setblock -79879 38 4 air
 setblock -79885 40 -139 air
 setblock -79893 47 -48 air
@@ -345,11 +347,9 @@ fill -79906 40 27 -79906 38 29 minecraft:purple_stained_glass
 fill -79932 38 104 -79930 42 104 minecraft:red_stained_glass
 fill -79932 38 72 -79930 42 72 air
 fill -79932 42 130 -79930 38 130 minecraft:purple_stained_glass
-fill -79906 40 136 -79906 38 135 minecraft:purple_stained_glass
 fill -79938 44 151 -79938 43 151 smooth_quartz
 fill -79898 42 101 -79896 38 101 minecraft:purple_stained_glass
 fill -79893 44 128 -79893 43 128 minecraft:purple_stained_glass
-fill -79900 39 129 -79900 39 128 minecraft:quartz_slab[type=bottom]
 fill -79898 41 62 -79898 41 50 quartz_slab[type=top]
 fill -79898 42 62 -79898 42 50 anvil[facing=north]
 fill -79898 41 61 -79898 42 61 air

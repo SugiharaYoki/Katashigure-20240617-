@@ -13,7 +13,6 @@ execute if score stage_main_thread AzrTimerStack matches 186 run bossbar remove 
 execute if score stage_main_thread AzrTimerStack matches 1 run fill -79943 34 136 -79943 32 136 purple_stained_glass
 execute if score stage_main_thread AzrTimerStack matches 1 run setblock -79949 32 140 air
 execute if score stage_main_thread AzrTimerStack matches 1 run setblock -79949 33 140 air
-execute if score stage_main_thread AzrTimerStack matches 1 run setblock -79923 39 134 air
 execute if score stage_main_thread AzrTimerStack matches 1 run fill -79886 46 148 -79888 43 148 purple_stained_glass
 execute if score stage_main_thread AzrTimerStack matches 1.. run function skyblock:azr/system/utils/rng
 
@@ -234,7 +233,7 @@ execute if score stage_main_thread AzrTimerStack matches 186 as @a[tag=azrPlayer
 execute if score stage_main_thread AzrTimerStack matches 186 as @a[tag=azrPlayer] at @s run give @s golden_carrot 5
 execute if score stage_main_thread AzrTimerStack matches 186 run fill -79943 34 136 -79943 32 136 air destroy
 execute if score stage_main_thread AzrTimerStack matches 186 run fill -79944 34 145 -79944 32 145 air destroy
-execute if score stage_main_thread AzrTimerStack matches 186 run setblock -79923 39 134 minecraft:birch_button[facing=south]
+execute if score stage_main_thread AzrTimerStack matches 186 run setblock -79943 39 135 minecraft:birch_button[facing=south]
 execute if score stage_main_thread AzrTimerStack matches 186..188 run playsound ambient.soul_sand_valley.additions ambient @a[tag=azrShowDialog] -78000 100 0 1000
 execute if score stage_main_thread AzrTimerStack matches 186..188 run playsound ambient.soul_sand_valley.loop ambient @a[tag=azrShowDialog] -78000 100 0 1000
 execute if score stage_main_thread AzrTimerStack matches 186..188 run playsound ambient.soul_sand_valley.mood ambient @a[tag=azrShowDialog] -78000 100 0 1000

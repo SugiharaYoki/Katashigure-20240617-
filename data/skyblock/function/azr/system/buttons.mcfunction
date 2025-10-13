@@ -37,13 +37,11 @@ execute if block -79928 39 125 minecraft:birch_button[powered=true] run fill -79
 execute if block -79928 39 125 minecraft:birch_button[powered=true] run setblock -79934 39 125 air
 execute if block -79928 39 125 minecraft:birch_button[powered=true] run setblock -79928 39 125 air
 #stage6
-execute if block -79923 39 134 minecraft:birch_button[powered=true] run scoreboard players set stage Azr_system 15
-execute if block -79923 39 134 minecraft:birch_button[powered=true] run scoreboard players set stage_main_thread AzrTimerStack 0
-execute if block -79923 39 134 minecraft:birch_button[powered=true] run setblock -79942 39 150 air
-execute if block -79923 39 134 minecraft:birch_button[powered=true] run setblock -79942 39 151 quartz_block
-# execute if block -79923 39 134 minecraft:birch_button[powered=true] run setblock -79949 32 140 air
-# execute if block -79923 39 134 minecraft:birch_button[powered=true] run setblock -79949 33 140 air
-execute if block -79923 39 134 minecraft:birch_button[powered=true] run setblock -79923 39 134 air
+execute if block -79943 39 135 minecraft:birch_button[powered=true] run scoreboard players set stage Azr_system 15
+execute if block -79943 39 135 minecraft:birch_button[powered=true] run scoreboard players set stage_main_thread AzrTimerStack 0
+# execute if block -79943 39 135 minecraft:birch_button[powered=true] run setblock -79949 32 140 air
+# execute if block -79943 39 135 minecraft:birch_button[powered=true] run setblock -79949 33 140 air
+execute if block -79943 39 135 minecraft:birch_button[powered=true] run setblock -79943 39 135 air
 #stage7α uncommited
 execute if block -79902 39 103 minecraft:birch_button[powered=true] run scoreboard players set stage Azr_system 17
 execute if block -79902 39 103 minecraft:birch_button[powered=true] run scoreboard players set stage_main_thread AzrTimerStack 0
@@ -113,12 +111,6 @@ execute if block -79919 39 24 minecraft:birch_button[powered=true] run function 
 #extra bonus - stage4β uncommited
 execute if block -79959 39 20 minecraft:birch_button[powered=true] run summon item -79956 42 20 {Item:{count:2,id:"minecraft:coal"}}
 execute if block -79959 39 20 minecraft:birch_button[powered=true] run setblock -79959 39 20 air
-#extra bonus - stage6 uncommited
-execute if block -79942 39 150 minecraft:birch_button[powered=true] run summon item -79931 44 149 {Item:{count:2,id:"minecraft:emerald_block"}}
-execute if block -79942 39 150 minecraft:birch_button[powered=true] positioned -79931 42 153 run function skyblock:azr/assets/mobs/silverfish_t2
-execute if block -79942 39 150 minecraft:birch_button[powered=true] positioned -79931 42 153 run function skyblock:azr/assets/mobs/silverfish_t2
-execute if block -79942 39 150 minecraft:birch_button[powered=true] positioned -79931 42 153 run function skyblock:azr/assets/mobs/silverfish_t2
-execute if block -79942 39 150 minecraft:birch_button[powered=true] run setblock -79942 39 150 air
 #extra bonus - stage7α uncommited
 execute if block -79903 44 131 minecraft:birch_button[powered=true] at @p[tag=azrPlayer] run summon item ~ ~1 ~ {Item:{components:{"minecraft:custom_name":'{"text":"光明精华","italic":false,"color":"blue"}',custom_data:{light_essence:1b},custom_model_data:{floats:[100001.0]}},count:3,id:"minecraft:ghast_tear"}}
 execute if block -79903 44 131 minecraft:birch_button[powered=true] run setblock -79903 44 131 air

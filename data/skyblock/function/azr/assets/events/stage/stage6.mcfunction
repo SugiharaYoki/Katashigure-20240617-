@@ -18,8 +18,6 @@ execute if score stage_main_thread AzrTimerStack matches 5 run scoreboard player
 execute if score stage_main_thread AzrTimerStack matches 8 run scoreboard players set stage_main_thread AzrTimerStack 9
 execute if score stage_main_thread AzrTimerStack matches 15 run scoreboard players set stage_main_thread AzrTimerStack 16
 
-execute if score stage_main_thread AzrTimerStack matches 1.. as @a[tag=azrPlayer,x=-79926,y=38,z=134,distance=0..2] at @s unless items entity @s container.* arrow run give @s arrow 1
-execute if score stage_main_thread AzrTimerStack matches 1.. as @a[tag=azrPlayer,x=-79926,y=38,z=134,distance=0..2] at @s unless items entity @s container.* arrow run particle minecraft:entity_effect{color:[255,255,255,0]} -79926 38.2 134 1 0 1 2.0 50
 execute if score stage_main_thread AzrTimerStack matches 3.. run function skyblock:azr/system/utils/rng
 
 execute if score stage_main_thread AzrTimerStack matches 1 run summon pillager -79931 42 153 {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_pillager_tier1",Health:2.0f,CustomName:'"弩手"',CanPickUpLoot:0b,HandItems:[{count:1,id:"crossbow",components:{enchantments:{quick_charge:1,piercing:1}}},{}],HandDropChances:[1.0f,1.0f],ArmorItems:[{},{},{},{}],attributes:[{id:"max_health",base:3.0d},{id:"attack_damage",base:0.5d}]}
@@ -263,7 +261,6 @@ execute if score stage_main_thread AzrTimerStack matches 293..315 if entity @e[t
 execute if score stage_main_thread AzrTimerStack matches 316 run playsound ambient.crimson_forest.loop ambient @a[tag=azrShowDialog] -78000 100 0 1000
 execute if score stage_main_thread AzrTimerStack matches 316 run playsound ambient.crimson_forest.mood ambient @a[tag=azrShowDialog] -78000 100 0 1000
 execute if score stage_main_thread AzrTimerStack matches 316 run playsound ambient.crimson_forest.additions ambient @a[tag=azrShowDialog] -78000 100 0 1000
-execute if score stage_main_thread AzrTimerStack matches 316 run fill -79906 40 136 -79906 38 135 minecraft:air destroy
 execute if score stage_main_thread AzrTimerStack matches 316 run tellraw @a[scores={Azr_skillPoints=..6}] {"text":"永久升级 - 中途加入时 若至少位于第二章则额外获取 腐肉×3 + 木棍×3 + 燧石×3","color":"light_purple"}
 execute if score stage_main_thread AzrTimerStack matches 316 run title @a[tag=azrShowDialog] actionbar {"text":"Stage Clear","color":"green"}
 execute if score stage_main_thread AzrTimerStack matches 318 run scoreboard players set wave Azr_system 15
@@ -283,7 +280,7 @@ execute if score stage_main_thread AzrTimerStack matches 318 run scoreboard play
 execute if score stage_main_thread AzrTimerStack matches 318 run tellraw @a[tag=azrPlayer,scores={AZR_chainKillUpg_pts=..2},tag=hasSkills] [{"text":"索命连击","color":"light_purple","bold":true},{"bold":false,"text":"可用点数已增加，目前为：3","color":"white"}]
 execute if score stage_main_thread AzrTimerStack matches 318 run scoreboard players set @a[scores={AZR_chainKillUpg_pts=..2}] AZR_chainKillUpg_pts 3
 
-execute if score stage_main_thread AzrTimerStack matches 318 run clone -79931 38 117 -79931 38 117 -79900 38 142 replace move
+execute if score stage_main_thread AzrTimerStack matches 318 run clone -79931 38 117 -79931 38 117 -79899 38 142 replace move
 execute if score stage_main_thread AzrTimerStack matches 318 run particle minecraft:end_rod -79900 39 142 0.6 0.6 0.6 0.0 13
 execute if score stage_main_thread AzrTimerStack matches 318 run particle minecraft:end_rod -79931 39 117 0.6 0.6 0.6 0.0 13
 
