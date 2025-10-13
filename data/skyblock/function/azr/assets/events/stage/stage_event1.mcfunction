@@ -106,7 +106,7 @@ execute if score stage_main_thread AzrTimerStack matches 594 at @n[tag=AzrielNPC
 execute if score stage_main_thread AzrTimerStack matches 594 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"权之残影：","color":"light_purple","bold": true},{"bold": false,"text":"\n“默尔森，你回去视察第一关口的受损情况。”","color":"white"}]
 execute if score stage_main_thread AzrTimerStack matches 612 at @n[tag=AzrielNPC_mersenne] run playsound minecraft:entity.pillager.ambient master @a ~ ~ ~ 2 0.8
 execute if score stage_main_thread AzrTimerStack matches 612 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"默尔森：","color":"yellow","bold": true},{"bold": false,"text":"\n“属下听命。”","color":"white"}]
-execute if score stage_main_thread AzrTimerStack matches 622 positioned -79923 43 96 as @n[tag=AzrielNPC_mersenne] at @s run function skyblock:azr/assets/events/effects/magic_circle/generic_angel_tp_npc_marinus_moon_small
+execute if score stage_main_thread AzrTimerStack matches 614 as @n[tag=AzrielNPC_mersenne] at @s run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_empty_human","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute if score stage_main_thread AzrTimerStack matches 622 positioned -79923 43 96 as @n[tag=AzrielNPC_mersenne] at @s run tp @s -79937 51 67
 
 execute if score stage_main_thread AzrTimerStack matches 660 run tp @n[tag=AzrielBossA] -79931 39 88 facing -79932 38.5 87 
@@ -159,36 +159,38 @@ execute if score stage_main_thread AzrTimerStack matches 1070 positioned -79923 
 execute if score stage_main_thread AzrTimerStack matches 1087 at @n[tag=AzrielNPC_andralune] run playsound minecraft:entity.illusioner.ambient hostile @a ~ ~ ~ 3 0.6
 execute if score stage_main_thread AzrTimerStack matches 1087 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"权之残影：","color":"light_purple","bold": true},{"bold": false,"text":"\n“如果你真的那么想早点挑战我，找到专门接待勇者的招待厅区域。假设你有能力打过马林努斯。”","color":"white"}]
 execute if score stage_main_thread AzrTimerStack matches 1102 as @n[tag=AzrielNPC_andralune] at @s run function skyblock:azr/assets/events/effects/magic_circle/generic_angel_tp_npc_marinus_moon_small
+execute if score stage_main_thread AzrTimerStack matches 1084 positioned -79923 43 96 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_empty_human","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute if score stage_main_thread AzrTimerStack matches 1102 as @n[tag=AzrielNPC_andralune] at @s run tp @s -79909 31 116
 execute if score stage_main_thread AzrTimerStack matches 1102 as @n[tag=AzrielNPC_bird] at @s run tp @s -79934 61 91
 
 execute if score stage_main_thread AzrTimerStack matches 1130 run scoreboard players set stage_main_thread AzrTimerStack 1999
 
 #finalize
-execute if score tick_main_thread AzrTimerStack matches 2001 run bossbar remove azr:boss_hp_bar
-execute if score tick_main_thread AzrTimerStack matches 2001 run kill @e[tag=AzrielMob,tag=AzrielMob_skeleton_melee,x=-79931,y=40,z=88,distance=5..500]
-execute if score tick_main_thread AzrTimerStack matches 2001..2020 run tag @a[tag=azrPlayer] add azrUpdateSpawnPoint
+execute if score stage_main_thread AzrTimerStack matches 2001 run bossbar remove azr:boss_hp_bar
+execute if score stage_main_thread AzrTimerStack matches 2001 run kill @e[tag=AzrielMob,tag=AzrielMob_skeleton_melee,x=-79931,y=40,z=88,distance=5..500]
+execute if score stage_main_thread AzrTimerStack matches 2001..2020 run tag @a[tag=azrPlayer] add azrUpdateSpawnPoint
 #effect & sound
-execute if score tick_main_thread AzrTimerStack matches 2001 run playsound ambient.crimson_forest.mood ambient @a[tag=azrShowDialog] -78000 100 0 1000
-execute if score tick_main_thread AzrTimerStack matches 2001 run playsound ambient.crimson_forest.additions ambient @a[tag=azrShowDialog] -78000 100 0 1000
-execute if score tick_main_thread AzrTimerStack matches 2011 run particle minecraft:end_rod -79931 39 42 0.6 0.6 0.6 0.0 13
-execute if score tick_main_thread AzrTimerStack matches 2011 run particle minecraft:end_rod -79931 39 76 0.6 0.6 0.6 0.0 131
+execute if score stage_main_thread AzrTimerStack matches 2001 run playsound ambient.crimson_forest.mood ambient @a[tag=azrShowDialog] -78000 100 0 1000
+execute if score stage_main_thread AzrTimerStack matches 2001 run playsound ambient.crimson_forest.additions ambient @a[tag=azrShowDialog] -78000 100 0 1000
+execute if score stage_main_thread AzrTimerStack matches 2011 run particle minecraft:end_rod -79931 39 42 0.6 0.6 0.6 0.0 13
+execute if score stage_main_thread AzrTimerStack matches 2011 run particle minecraft:end_rod -79931 39 76 0.6 0.6 0.6 0.0 131
 #finalize map
-execute if score tick_main_thread AzrTimerStack matches 2011 run fill -79930 42 104 -79932 38 104 air destroy
-execute if score tick_main_thread AzrTimerStack matches 2011 run clone -79931 38 42 -79931 38 42 -79931 38 76 replace move
-execute if score tick_main_thread AzrTimerStack matches 2011 unless block -79931 38 76 white_shulker_box run setblock -79931 38 76 white_shulker_box
+execute if score stage_main_thread AzrTimerStack matches 2011 run fill -79930 42 104 -79932 38 104 air destroy
+execute if score stage_main_thread AzrTimerStack matches 2011 run clone -79931 38 42 -79931 38 42 -79931 38 76 replace move
+execute if score stage_main_thread AzrTimerStack matches 2011 unless block -79931 38 76 white_shulker_box run setblock -79931 38 76 white_shulker_box
 #finalize stage
-execute if score tick_main_thread AzrTimerStack matches 2011 run scoreboard players set wave Azr_system 10
-execute if score tick_main_thread AzrTimerStack matches 2011 run scoreboard players set stage Azr_system 11
-execute if score tick_main_thread AzrTimerStack matches 2011 run scoreboard players reset tick_main_thread AzrTimerStack
+execute if score stage_main_thread AzrTimerStack matches 2011 run scoreboard players set wave Azr_system 10
+execute if score stage_main_thread AzrTimerStack matches 2011 run scoreboard players set stage Azr_system 11
+execute if score stage_main_thread AzrTimerStack matches 2011 run scoreboard players reset stage_main_thread AzrTimerStack
+execute if score stage_main_thread AzrTimerStack matches 2011 run scoreboard players reset tick_main_thread AzrTimerStack
 #execute if score tick_main_thread AzrTimerStack matches 3200 run scoreboard players set @a[tag=azrPlayer,scores={Azr_PlyPtsH=..4}] Azr_PlyPtsH 5
-execute if score tick_main_thread AzrTimerStack matches 2011 run playsound minecraft:ui.toast.challenge_complete master @a[tag=azrShowDialog] ~ ~ ~ 2 0.9
-execute if score tick_main_thread AzrTimerStack matches 2011 run title @a[tag=azrShowDialog] actionbar {"text":"Chapter Clear","color":"gold"}
-execute if score tick_main_thread AzrTimerStack matches 2011 run tellraw @a[tag=azrShowDialog] {"text":"「生命手册」已开放第 2 页","color":"green"}
-execute if score tick_main_thread AzrTimerStack matches 2011 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage4_boss1
+execute if score stage_main_thread AzrTimerStack matches 2011 run playsound minecraft:ui.toast.challenge_complete master @a[tag=azrShowDialog] ~ ~ ~ 2 0.9
+execute if score stage_main_thread AzrTimerStack matches 2011 run title @a[tag=azrShowDialog] actionbar {"text":"Chapter Clear","color":"gold"}
+execute if score stage_main_thread AzrTimerStack matches 2011 run tellraw @a[tag=azrShowDialog] {"text":"「生命手册」已开放第 2 页","color":"green"}
+execute if score stage_main_thread AzrTimerStack matches 2011 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage4_boss1
 #rewards
-execute if score tick_main_thread AzrTimerStack matches 2011 as @a[tag=azrPlayer] at @s run summon item ~ ~ ~ {Item:{id:"emerald",count:20b}}
-execute if score tick_main_thread AzrTimerStack matches 2011 as @a[tag=azrPlayer] at @s run give @s glistering_melon_slice 1
+execute if score stage_main_thread AzrTimerStack matches 2011 as @a[tag=azrPlayer] at @s run summon item ~ ~ ~ {Item:{id:"emerald",count:20b}}
+execute if score stage_main_thread AzrTimerStack matches 2011 as @a[tag=azrPlayer] at @s run give @s glistering_melon_slice 1
 
 
 
