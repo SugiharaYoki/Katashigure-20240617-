@@ -181,7 +181,6 @@ execute if score stage_main_thread AzrTimerStack matches 2011 unless block -7993
 #finalize stage
 execute if score stage_main_thread AzrTimerStack matches 2011 run scoreboard players set wave Azr_system 10
 execute if score stage_main_thread AzrTimerStack matches 2011 run scoreboard players set stage Azr_system 11
-execute if score stage_main_thread AzrTimerStack matches 2011 run scoreboard players reset stage_main_thread AzrTimerStack
 execute if score stage_main_thread AzrTimerStack matches 2011 run scoreboard players reset tick_main_thread AzrTimerStack
 #execute if score tick_main_thread AzrTimerStack matches 3200 run scoreboard players set @a[tag=azrPlayer,scores={Azr_PlyPtsH=..4}] Azr_PlyPtsH 5
 execute if score stage_main_thread AzrTimerStack matches 2011 run playsound minecraft:ui.toast.challenge_complete master @a[tag=azrShowDialog] ~ ~ ~ 2 0.9
@@ -191,6 +190,7 @@ execute if score stage_main_thread AzrTimerStack matches 2011 run advancement gr
 #rewards
 execute if score stage_main_thread AzrTimerStack matches 2011 as @a[tag=azrPlayer] at @s run summon item ~ ~ ~ {Item:{id:"emerald",count:20b}}
 execute if score stage_main_thread AzrTimerStack matches 2011 as @a[tag=azrPlayer] at @s run give @s glistering_melon_slice 1
+execute if score stage_main_thread AzrTimerStack matches 2011 run scoreboard players reset stage_main_thread AzrTimerStack
 
 
 
