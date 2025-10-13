@@ -97,6 +97,10 @@ scoreboard objectives add AzrSariel_Skill_SneakDodgeArrow_cooldown dummy
 scoreboard objectives add AzrSariel_Skill_FlowerReason dummy
 scoreboard objectives add AzrSariel_Skill_FlowerReason_condition minecraft.custom:minecraft.damage_dealt
 
+#特殊食物
+scoreboard objectives add AzrSariel_Food_HardenedCookie dummy
+scoreboard objectives add AzrSariel_Food_PowerSalmon dummy
+
 
 #scoreboard players set life_vitae_available Azr_system 1
 #创建小队

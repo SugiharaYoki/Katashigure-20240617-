@@ -48,5 +48,7 @@ execute if score @s AzrSariel_Skill_FanFire matches 1.. run scoreboard players r
 execute if score @s AzrSariel_Skill_ElecBall matches 1.. run scoreboard players remove @s AzrSariel_Skill_ElecBall_cooldown 1
 execute if entity @s[tag=AzrSariel_upg6C] run scoreboard players remove @s AzrSariel_Skill_AbsDefend_cooldown 1
 
-
+#特殊食物
+execute if score @s AzrSariel_Food_HardenedCookie matches 1.. run function skyblock:azr/system/player/food_consumption/hardened_cookie_effect
+execute if score @s AzrSariel_Food_PowerSalmon matches 1.. run function skyblock:azr/system/player/food_consumption/power_salmon_effect
 

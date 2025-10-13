@@ -1,0 +1,1 @@
+scoreboard players set @s AzrSariel_Food_PowerSalmon 361

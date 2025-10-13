@@ -1,3 +1,3 @@
-clear @s slime_ball 1
+clear @s ink_sac 1
 
-give @s cooked_cod 1
+give @s coal 2

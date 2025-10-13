@@ -9,4 +9,5 @@ execute store result storage azr:shop ingredient.ghast_tear int 1.0 if items ent
 execute store result storage azr:shop ingredient.chicken int 1.0 if items entity @s container.* chicken
 execute store result storage azr:shop ingredient.beef int 1.0 if items entity @s container.* beef
 execute store result storage azr:shop ingredient.coal int 1.0 if items entity @s container.* coal
+execute store result storage azr:shop ingredient.blaze_powder int 1.0 if items entity @s container.* blaze_powder
 

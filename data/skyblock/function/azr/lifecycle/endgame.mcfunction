@@ -102,7 +102,9 @@ scoreboard objectives remove AzrSariel_Skill_ContactDmg_cooldown
 scoreboard objectives remove AzrSariel_Skill_SneakDodgeArrow_cooldown
 scoreboard objectives remove AzrSariel_Skill_FlowerReason
 scoreboard objectives remove AzrSariel_Skill_FlowerReason_condition
-
+#特殊食物
+scoreboard objectives remove AzrSariel_Food_HardenedCookie
+scoreboard objectives remove AzrSariel_Food_PowerSalmon
 
 
 #unused

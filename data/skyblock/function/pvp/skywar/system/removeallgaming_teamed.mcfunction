@@ -1,3 +1,5 @@
+#removeallgaming_teamed
+
 tag @s remove LeftGame
 tag @s remove SkyWar
 tag @s remove PVPing
@@ -211,5 +213,12 @@ function skyblock:azr/system/shop/purchase/sariel/reset
 tag @s remove AzrAmulet_FlowerWall_Activated
 attribute @s armor modifier remove azr_amulet:flowerwall_01
 attribute @s attack_damage modifier remove azr_amulet:flowerwall_01
+
+
+attribute @s armor modifier remove azr_food:hardened_cookie_01
+attribute @s attack_damage modifier remove azr_food:power_salmon_01
+
+
+
 
 

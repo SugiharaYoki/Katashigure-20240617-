@@ -1,0 +1,16 @@
+{
+  "criteria": {
+    "eat_cookie": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": ["minecraft:cookie"],
+          "components": {
+            "custom_data": { "hardened_cookie": 1 }
+          }
+        }
+      }
+    }
+  },
+  "rewards": { "function": "skyblock:azr/system/player/food_consumption/hardened_cookie" }
+}

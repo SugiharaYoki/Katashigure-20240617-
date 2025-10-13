@@ -1,4 +1,5 @@
-scoreboard players remove @s Azr_emerald 3
-clear @s carrot 4
+clear @s gunpowder 2
 
-give @s golden_carrot 1
+
+function skyblock:azr/assets/items/others/power_salmon
+function skyblock:azr/assets/items/others/power_salmon
