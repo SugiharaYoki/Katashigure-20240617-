@@ -52,5 +52,5 @@ execute if entity @s[tag=AzrSariel_upg6C] run scoreboard players remove @s AzrSa
 execute if score @s AzrSariel_Food_HardenedCookie matches 1.. run function skyblock:azr/system/player/food_consumption/hardened_cookie_effect
 execute if score @s AzrSariel_Food_PowerSalmon matches 1.. run function skyblock:azr/system/player/food_consumption/power_salmon_effect
 
-execute if entity @s[tag=!azrRetrieved] as @s[tag=azrPlayer,tag=AZR_SEAawakened] at @s run function skyblock:azr/lifecycle/jump_to/generic_retrieve
+execute if entity @s[tag=!azrRetrieved] if score stage Azr_system matches 1.. as @s[tag=azrPlayer,tag=AZR_SEAawakened] at @s run function skyblock:azr/lifecycle/jump_to/generic_retrieve
 #function skyblock:azr/assets/items/others/revival_star
