@@ -26,8 +26,9 @@ execute if score stage Azr_system matches 9..10 run function skyblock:azr/assets
     # azr/main.mcfunction
 #BOSS1-第五关 11
 execute if score stage Azr_system matches 11 run scoreboard players set stage_main_thread AzrTimerStack 0
-#第五关 12..13
-execute if score stage Azr_system matches 12..13 run function skyblock:azr/assets/events/stage/stage5
+#第五关 12
+execute if score stage Azr_system matches 12 run function skyblock:azr/assets/events/stage/stage5
+#13未使用
 #第五关-第六关 14
 execute if score stage Azr_system matches 7 run scoreboard players set stage_main_thread AzrTimerStack 0
 #第六关 15

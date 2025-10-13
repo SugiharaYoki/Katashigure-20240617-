@@ -26,16 +26,16 @@ execute if block -79932 39 42 minecraft:birch_button[powered=true] run setblock 
 execute if block -79934 39 125 minecraft:birch_button[powered=true] run scoreboard players set stage Azr_system 12
 execute if block -79934 39 125 minecraft:birch_button[powered=true] run scoreboard players set stage_main_thread AzrTimerStack 0
 execute if block -79934 39 125 minecraft:birch_button[powered=true] at @p[tag=azrPlayer,x=-79934,y=39,z=125] run tp @a[tag=azrPlayer,distance=5..] @s
-execute if block -79934 39 125 minecraft:birch_button[powered=true] run fill -79932 38 104 -79930 42 104 minecraft:red_stained_glass
 execute if block -79934 39 125 minecraft:birch_button[powered=true] run setblock -79928 39 125 air
 execute if block -79934 39 125 minecraft:birch_button[powered=true] run setblock -79934 39 125 air
+execute if block -79934 39 125 minecraft:birch_button[powered=true] run setblock -79933 39 125 air destroy
 #stage5β
-execute if block -79928 39 125 minecraft:birch_button[powered=true] run scoreboard players set stage Azr_system 13
+execute if block -79928 39 125 minecraft:birch_button[powered=true] run scoreboard players set stage Azr_system 12
 execute if block -79928 39 125 minecraft:birch_button[powered=true] run scoreboard players set stage_main_thread AzrTimerStack 0
 execute if block -79928 39 125 minecraft:birch_button[powered=true] at @p[tag=azrPlayer,x=-79928,y=39,z=125] run tp @a[tag=azrPlayer,distance=5..] @s
-execute if block -79928 39 125 minecraft:birch_button[powered=true] run fill -79932 38 104 -79930 42 104 minecraft:red_stained_glass
 execute if block -79928 39 125 minecraft:birch_button[powered=true] run setblock -79934 39 125 air
 execute if block -79928 39 125 minecraft:birch_button[powered=true] run setblock -79928 39 125 air
+execute if block -79928 39 125 minecraft:birch_button[powered=true] run setblock -79929 39 125 air destroy
 #stage6
 execute if block -79943 39 135 minecraft:birch_button[powered=true] run scoreboard players set stage Azr_system 15
 execute if block -79943 39 135 minecraft:birch_button[powered=true] run scoreboard players set stage_main_thread AzrTimerStack 0
