@@ -7,6 +7,7 @@ tag @s remove azrBanLifeVitae
 tag @s remove azrUpgrateLifeVitae
 tag @s add azrDead
 tag @s remove AZR_chainKill_activated
+tag @s remove azrRetrieved
 tag @s remove AzrielEvent382315A
 scoreboard players set @s Azr_forceDeath 0
 scoreboard players set @s AZR_chainKill_count 0
