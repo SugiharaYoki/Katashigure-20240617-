@@ -17,6 +17,7 @@ execute if score stage_main_thread AzrTimerStack matches 50 positioned -79927 38
 execute if score stage_main_thread AzrTimerStack matches 60 positioned -79927 38 25 run function skyblock:azr/assets/mobs_new/undead
 
 execute if score stage_main_thread AzrTimerStack matches 65 positioned -79927 38 25 run function skyblock:azr/assets/mobs_new/undead_pickaxe
+execute if score stage_main_thread AzrTimerStack matches 65 as @a[tag=azrPlayer] at @s run function skyblock:azr/system/shop/purchase/handbook/input {doc:undead_pickaxe}
 execute if score stage_main_thread AzrTimerStack matches 3 positioned -79930 38 38 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_undead","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute if score stage_main_thread AzrTimerStack matches 3 positioned -79932 38 38 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_undead","AzrielMob_summon_delay","AzrielMob_level_1"]}
 
@@ -38,6 +39,7 @@ execute if score stage_main_thread AzrTimerStack matches 96 positioned -79932 38
 
 
 execute if score stage_main_thread AzrTimerStack matches 123 positioned -79927 38 25 run function skyblock:azr/assets/mobs_new/spider_giant
+execute if score stage_main_thread AzrTimerStack matches 123 as @a[tag=azrPlayer] at @s run function skyblock:azr/system/shop/purchase/handbook/input {doc:spider_giant}
 
 execute if score stage_main_thread AzrTimerStack matches 125 positioned -79930 38 38 run tellraw @a[tag=azrShowDialog] [{"text":"哨兵剑士：","color":"yellow","bold": true},{"bold": false,"text":"\n“已经把蜘蛛带来了吗？那再怎么也够这人类的亡魂喝一大壶了。”","color":"white"}]
 execute if score stage_main_thread AzrTimerStack matches 145 positioned -79930 38 38 run tellraw @a[tag=azrShowDialog] [{"text":"哨兵剑士：","color":"yellow","bold": true},{"bold": false,"text":"\n“这家伙根本不说话，她就一个劲揍我们啊！我任职以来就没见过这么猛的挑战者！”","color":"white"}]
