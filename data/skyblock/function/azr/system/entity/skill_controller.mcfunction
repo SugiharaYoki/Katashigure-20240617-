@@ -5,6 +5,7 @@ execute if entity @s[tag=AzrielMob_smoke] run function skyblock:azr/assets/mobs_
 execute if entity @s[tag=AzrielMob_smoke_mother] run function skyblock:azr/assets/mobs_new/skill/smoke_mother
 execute if entity @s[tag=AzrielMob_undead_pickaxe] run function skyblock:azr/assets/mobs_new/skill/undead_pickaxe
 execute if entity @s[tag=AzrielMob_treasure_rabbit] run function skyblock:azr/assets/mobs_new/skill/treasure_rabbit
+execute if entity @s[tag=AzrielMob_skeleton_general] run function skyblock:azr/assets/mobs_new/skill/skeleton_general
 
 
 

@@ -34,10 +34,24 @@ execute if score stage_main_thread AzrTimerStack matches 34 unless block -79929 
 execute if score stage_main_thread AzrTimerStack matches 41 unless block -79929 39 125 air positioned -79940 38 122 run function skyblock:azr/assets/mobs_new/pillager
 execute if score stage_main_thread AzrTimerStack matches 52 unless block -79929 39 125 air positioned -79940 38 122 run function skyblock:azr/assets/mobs_new/smoke_mother
 
+execute if score stage_main_thread AzrTimerStack matches 53..54 if entity @n[tag=AzrielMob_smoke_mother] run scoreboard players set stage_main_thread AzrTimerStack 53
 
-execute if score stage_main_thread AzrTimerStack matches 68 run title @a[tag=azrShowDialog] actionbar {"text":"Wave Clear","color":"green"}
-execute if score stage_main_thread AzrTimerStack matches 68 run scoreboard players set wave Azr_system 11
-execute if score stage_main_thread AzrTimerStack matches 80 run title @a[tag=azrShowDialog] actionbar {"text":"Stage 5 - Wave 2","color":"red"}
+execute if score stage_main_thread AzrTimerStack matches 56 if block -79929 39 125 air positioned -79922 38 122 run function skyblock:azr/assets/mobs_new/skeleton_melee
+execute if score stage_main_thread AzrTimerStack matches 64 if block -79929 39 125 air positioned -79922 38 122 run function skyblock:azr/assets/mobs_new/shield
+
+execute if score stage_main_thread AzrTimerStack matches 56 unless block -79929 39 125 air positioned -79922 38 122 run function skyblock:azr/assets/mobs_new/sword
+execute if score stage_main_thread AzrTimerStack matches 60 unless block -79929 39 125 air positioned -79922 38 122 run function skyblock:azr/assets/mobs_new/pillager
+
+execute if score stage_main_thread AzrTimerStack matches 72 if block -79929 39 125 air positioned -79922 38 122 run function skyblock:azr/assets/mobs_new/skeleton_melee
+execute if score stage_main_thread AzrTimerStack matches 70 unless block -79929 39 125 air positioned -79922 38 122 run function skyblock:azr/assets/mobs_new/axe
+
+execute if score stage_main_thread AzrTimerStack matches 89 positioned -79922 38 122 run function skyblock:azr/assets/mobs_new/summoner
+
+execute if score stage_main_thread AzrTimerStack matches 97..98 if entity @n[tag=AzrielMob_smoke_mother] run scoreboard players set stage_main_thread AzrTimerStack 97
+
+execute if score stage_main_thread AzrTimerStack matches 99 run title @a[tag=azrShowDialog] actionbar {"text":"Wave Clear","color":"green"}
+execute if score stage_main_thread AzrTimerStack matches 99 run scoreboard players set wave Azr_system 11
+execute if score stage_main_thread AzrTimerStack matches 119 run title @a[tag=azrShowDialog] actionbar {"text":"Stage 5 - Wave 2","color":"red"}
 
 
 
