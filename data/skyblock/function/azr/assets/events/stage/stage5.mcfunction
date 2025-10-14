@@ -57,21 +57,21 @@ execute if score stage_main_thread AzrTimerStack matches 99 run title @a[tag=azr
 execute if score stage_main_thread AzrTimerStack matches 99 run scoreboard players set wave Azr_system 11
 execute if score stage_main_thread AzrTimerStack matches 119 run title @a[tag=azrShowDialog] actionbar {"text":"Stage 5 - Wave 2","color":"red"}
 
-execute if score stage_main_thread AzrTimerStack matches 123 run particle minecraft:splash -79931 38 122 0.3 0 0.3 0.7 30
-execute if score stage_main_thread AzrTimerStack matches 123 run playsound minecraft:entity.player.splash block @a -79931 38 122 2 0.7
-execute if score stage_main_thread AzrTimerStack matches 124..125 run particle minecraft:bubble_pop -79931 38 122 0.2 0 0.2 0.0 1
+execute if score stage_main_thread AzrTimerStack matches 129 run particle minecraft:splash -79931 38 122 0.33 0 0.33 0.7 50
+execute if score stage_main_thread AzrTimerStack matches 129 run playsound minecraft:entity.player.splash block @a -79931 38 122 2 0.7
+execute if score stage_main_thread AzrTimerStack matches 129..130 run particle minecraft:bubble_pop -79931 38 122 0.2 0 0.2 0.0 1
 
-execute if score stage_main_thread AzrTimerStack matches 125..126 positioned -79931 38 122 if entity @a[tag=azrPlayer,distance=0..0.7] run scoreboard players set stage_main_thread AzrTimerStack 127
-execute if score stage_main_thread AzrTimerStack matches 125..126 run scoreboard players set stage_main_thread AzrTimerStack 125
+execute if score stage_main_thread AzrTimerStack matches 130..131 positioned -79931 38 122 if entity @a[tag=azrPlayer,distance=0..0.7] run scoreboard players set stage_main_thread AzrTimerStack 127
+execute if score stage_main_thread AzrTimerStack matches 130..131 run scoreboard players set stage_main_thread AzrTimerStack 130
 
 
-execute if score stage_main_thread AzrTimerStack matches 127 positioned -79931 38 122 as @a[tag=azrPlayer,distance=0..4.7] at @s run playsound minecraft:entity.player.splash block @a -79931 -43 122 2 0.8
-execute if score stage_main_thread AzrTimerStack matches 127 positioned -79931 38 122 as @a[tag=azrPlayer,distance=0..4.7] at @s run playsound ambient.underwater.loop.additions.ultra_rare block @a -79931 -43 122 50 0.7
-execute if score stage_main_thread AzrTimerStack matches 127 positioned -79931 38 122 as @a[tag=azrPlayer,distance=0..4.7] at @s run playsound ambient.underwater.loop.additions.ultra_rare block @a -79931 -43 122 50 0.7
-execute if score stage_main_thread AzrTimerStack matches 127 positioned -79931 38 122 as @a[tag=azrPlayer,distance=0..4.7] at @s run playsound ambient.underwater.loop.additions.ultra_rare block @a -79931 -43 122 50 0.7
-execute if score stage_main_thread AzrTimerStack matches 127 positioned -79931 38 122 as @a[tag=azrPlayer,distance=0..4.7] at @s run playsound ambient.underwater.loop.additions.ultra_rare block @a -79931 -43 122 50 0.7
-execute if score stage_main_thread AzrTimerStack matches 127 positioned -79931 38 122 as @a[tag=azrPlayer,distance=0..4.7] at @s run tp @s ~ ~-80 ~
-execute if score stage_main_thread AzrTimerStack matches 128 positioned -79931 -43 122 as @a[tag=azrPlayer,distance=0..10.7] at @s run tp @s ~ ~80 ~
+execute if score stage_main_thread AzrTimerStack matches 132 positioned -79931 38 122 as @a[tag=azrPlayer,distance=0..4.7] at @s run playsound minecraft:entity.player.splash block @a -79931 -43 122 2 0.8
+execute if score stage_main_thread AzrTimerStack matches 132 positioned -79931 38 122 as @a[tag=azrPlayer,distance=0..4.7] at @s run playsound ambient.underwater.loop.additions.ultra_rare block @a -79931 -43 122 50 0.7
+execute if score stage_main_thread AzrTimerStack matches 132 positioned -79931 38 122 as @a[tag=azrPlayer,distance=0..4.7] at @s run playsound ambient.underwater.loop.additions.ultra_rare block @a -79931 -43 122 50 0.7
+execute if score stage_main_thread AzrTimerStack matches 132 positioned -79931 38 122 as @a[tag=azrPlayer,distance=0..4.7] at @s run playsound ambient.underwater.loop.additions.ultra_rare block @a -79931 -43 122 50 0.7
+execute if score stage_main_thread AzrTimerStack matches 132 positioned -79931 38 122 as @a[tag=azrPlayer,distance=0..4.7] at @s run playsound ambient.underwater.loop.additions.ultra_rare block @a -79931 -43 122 50 0.7
+execute if score stage_main_thread AzrTimerStack matches 132 positioned -79931 38 122 as @a[tag=azrPlayer,distance=0..4.7] at @s run tp @s ~ ~-80 ~
+execute if score stage_main_thread AzrTimerStack matches 133 positioned -79931 -43 122 as @a[tag=azrPlayer,distance=0..10.7] at @s run tp @s ~ ~80 ~
 
 
 
