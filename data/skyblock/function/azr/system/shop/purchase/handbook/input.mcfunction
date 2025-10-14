@@ -1,5 +1,4 @@
-#execute if items entity @s container.* *[custom_data={sea_doc01:true}] run function skyblock:sea/p/document_macro {doc:1}
-
+#function skyblock:azr/system/shop/purchase/handbook/input {doc:summoner}
 
 
 
