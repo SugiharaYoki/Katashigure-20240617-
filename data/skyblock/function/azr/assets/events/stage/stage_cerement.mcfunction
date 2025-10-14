@@ -42,6 +42,7 @@ execute if score stage_bonus_thread AzrTimerStack matches 79 positioned -79946 3
 execute if score stage_bonus_thread AzrTimerStack matches 81..82 if entity @n[tag=AzrielMob_undead_pickaxe] run scoreboard players set stage_bonus_thread AzrTimerStack 81
 
 execute if score stage_bonus_thread AzrTimerStack matches 83 positioned -79946 38 61 run function skyblock:azr/assets/mobs_new/undead_greed
+execute if score stage_bonus_thread AzrTimerStack matches 83 as @a[tag=azrPlayer] at @s run function skyblock:azr/system/shop/purchase/handbook/input {doc:undead_greed}
 
 execute if score stage_bonus_thread AzrTimerStack matches 84..85 if entity @n[tag=AzrielMob_undead_greed] run scoreboard players set stage_bonus_thread AzrTimerStack 84
 
