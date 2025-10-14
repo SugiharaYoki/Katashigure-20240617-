@@ -169,6 +169,9 @@ setblock -79934 39 125 birch_button[facing=north,face=wall]
 #stage5
 setblock -79929 39 125 minecraft:potted_oak_sapling
 setblock -79933 39 125 minecraft:potted_dead_bush
+#供能区域
+fill -79931 35 171 -79931 35 183 minecraft:red_concrete replace minecraft:redstone_block
+
 
 fill -79917 41 134 -79917 38 136 minecraft:purple_stained_glass
 setblock -79943 39 135 minecraft:birch_button[facing=west,face=floor]
