@@ -1,5 +1,4 @@
-execute as @s run function skyblock:sea/calc/crowbar
-# tellraw @s {"text":"『武器升级页面 - 撬棍』","bold":true,"color":"red"}
+
 tellraw @s {"text":"『节制天平面板』","extra":[""],"color":"red","bold":true}
 tellraw @s {"text":"   "}
 summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarker0"]}

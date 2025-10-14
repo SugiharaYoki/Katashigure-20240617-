@@ -36,7 +36,7 @@ $execute if data storage azr:handbook_vitae doc.$(eid).barrier_maintainer run te
 
 
 
-
+scoreboard players set tempPlayerShopSuccess Azr_system 1
 
 
 scoreboard players set @s Azr_Shop 0
