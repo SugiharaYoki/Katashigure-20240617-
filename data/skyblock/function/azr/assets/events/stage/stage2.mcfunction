@@ -26,7 +26,6 @@ execute if score stage_main_thread AzrTimerStack matches 98..99 if entity @n[tag
 execute if score stage_main_thread AzrTimerStack matches 101 positioned -79940 38 14 run function skyblock:azr/assets/mobs_new/sword
 execute if score stage_main_thread AzrTimerStack matches 105 positioned -79940 38 14 run function skyblock:azr/assets/mobs_new/sword
 execute if score stage_main_thread AzrTimerStack matches 109 positioned -79940 38 14 run function skyblock:azr/assets/mobs_new/sword
-execute if score stage_main_thread AzrTimerStack matches 101 as @a[tag=azrPlayer] at @s run function skyblock:azr/system/shop/purchase/handbook/input {doc:sword}
 execute if score stage_main_thread AzrTimerStack matches 110..111 if entity @n[tag=AzrielMob_sword] run scoreboard players set stage_main_thread AzrTimerStack 110
 
 #回秒
