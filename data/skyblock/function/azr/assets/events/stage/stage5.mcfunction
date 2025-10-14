@@ -59,7 +59,7 @@ execute if score stage_main_thread AzrTimerStack matches 119 run title @a[tag=az
 
 execute if score stage_main_thread AzrTimerStack matches 129 run particle minecraft:splash -79931 38 122 0.33 0 0.33 0.7 50
 execute if score stage_main_thread AzrTimerStack matches 129 run playsound minecraft:entity.player.splash block @a -79931 38 122 2 0.7
-execute if score stage_main_thread AzrTimerStack matches 129..130 run particle minecraft:bubble_pop -79931 38 122 0.2 0 0.2 0.0 1
+execute if score stage_main_thread AzrTimerStack matches 129..131 run particle minecraft:bubble_pop -79931 38 122 0.2 0 0.2 0.0 1
 
 execute if score stage_main_thread AzrTimerStack matches 130..131 positioned -79931 38 122 if entity @a[tag=azrPlayer,distance=0..0.7] run scoreboard players set stage_main_thread AzrTimerStack 127
 execute if score stage_main_thread AzrTimerStack matches 130..131 run scoreboard players set stage_main_thread AzrTimerStack 130
