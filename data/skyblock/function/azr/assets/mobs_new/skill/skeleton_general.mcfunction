@@ -23,5 +23,7 @@ execute if score @s rng3 matches 50 run effect give @s instant_damage 2 0 false
 execute if score @s rng3 matches 60 run effect give @s instant_damage 2 0 false
 execute if score @s rng3 matches 60 run playsound minecraft:entity.skeleton.hurt hostile @a ~ ~ ~ 1 1.3
 execute if score @s rng3 matches 60 run particle minecraft:white_ash ~ ~1 ~ 0.1 0.5 0.1 3 50
+execute if score @s rng3 matches 60 run data modify entity @s NoAI set value 0b
+execute if score @s rng3 matches 2..60 run particle minecraft:witch ~ ~1 ~ 0.2 0.5 0.2 0.03 5
 
 
