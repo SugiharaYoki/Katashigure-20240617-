@@ -21,7 +21,8 @@ execute if entity @s[tag=AzrSariel_upg7B] run function skyblock:azr/system/shop/
 
 execute if score @s Azr_Shop matches 8431551..8431599 run function skyblock:azr/system/shop/purchase/ramiel
 execute if score @s Azr_Shop matches 8432100..8432299 run function skyblock:azr/system/shop/purchase/sariel/alter
-execute if score @s Azr_Shop matches 8433100..8433999 run function skyblock:azr/system/shop/purchase/handbook/page
+execute if score @s Azr_Shop matches 8433100..8433999 store result storage azr:handbook_vitae eid int 1.0 run scoreboard players get @s azrPlayer_eternal
+execute if score @s Azr_Shop matches 8433100..8433999 run function skyblock:azr/system/shop/purchase/handbook/page with storage azr:handbook_vitae
 
 execute if score @s Azr_Shop matches 8431611..8431723 run function skyblock:azr/system/shop/purchase/nether
 
