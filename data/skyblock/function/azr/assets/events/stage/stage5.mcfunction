@@ -18,12 +18,12 @@ execute if score stage_main_thread AzrTimerStack matches 154 run bossbar remove 
 execute if score stage_main_thread AzrTimerStack matches 13..16 run playsound ambient.nether_wastes.mood ambient @a[tag=azrShowDialog] -79931 38 53 100
 execute if score stage_main_thread AzrTimerStack matches 13..16 run playsound ambient.nether_wastes.additions ambient @a[tag=azrShowDialog] -79931 38 53 100
 
-execute if score stage_main_thread AzrTimerStack matches 13 as @p[tag=azrPlayer] at @s run title @a[tag=azrShowDialog] times 0s 3s 5s
-execute if score stage_main_thread AzrTimerStack matches 13..29 as @p[tag=azrPlayer] at @s unless block -79929 39 125 air run title @a[tag=azrShowDialog] title [{"text":"我乃生命之神","color":"dark_red","bold": false}]
-execute if score stage_main_thread AzrTimerStack matches 13..29 as @p[tag=azrPlayer] at @s if block -79929 39 125 air run title @a[tag=azrShowDialog] title [{"text":"我乃死亡之神","color":"dark_red","bold": false}]
-execute if score stage_main_thread AzrTimerStack matches 29 as @p[tag=azrPlayer] at @s run title @a[tag=azrShowDialog] times 0s 2s 2s
-execute if score stage_main_thread AzrTimerStack matches 29 as @p[tag=azrPlayer] at @s unless block -79929 39 125 air run title @a[tag=azrShowDialog] subtitle [{"text":"掌司刑决而虚怀若谷","color":"dark_red","bold": true}]
-execute if score stage_main_thread AzrTimerStack matches 29 as @p[tag=azrPlayer] at @s if block -79929 39 125 air run title @a[tag=azrShowDialog] subtitle [{"text":"创生万灵而恃才傲物","color":"dark_red","bold": true}]
+execute if score stage_main_thread AzrTimerStack matches 13 as @p[tag=azrPlayer] at @s run title @a[tag=azrShowDialog] times 0s 3s 1s
+execute if score stage_main_thread AzrTimerStack matches 13..27 as @p[tag=azrPlayer] at @s unless block -79929 39 125 air run title @a[tag=azrShowDialog] title [{"text":"我乃生命之神","color":"dark_red","bold": false}]
+execute if score stage_main_thread AzrTimerStack matches 13..27 as @p[tag=azrPlayer] at @s if block -79929 39 125 air run title @a[tag=azrShowDialog] title [{"text":"我乃死亡之神","color":"dark_red","bold": false}]
+execute if score stage_main_thread AzrTimerStack matches 27 as @p[tag=azrPlayer] at @s run title @a[tag=azrShowDialog] times 0s 2s 1s
+execute if score stage_main_thread AzrTimerStack matches 27 as @p[tag=azrPlayer] at @s unless block -79929 39 125 air run title @a[tag=azrShowDialog] subtitle [{"text":"掌司刑决而虚怀若谷","color":"dark_red","bold": true}]
+execute if score stage_main_thread AzrTimerStack matches 27 as @p[tag=azrPlayer] at @s if block -79929 39 125 air run title @a[tag=azrShowDialog] subtitle [{"text":"创生万灵而恃才傲物","color":"dark_red","bold": true}]
 
 execute if score stage_main_thread AzrTimerStack matches 32..35 if block -79929 39 125 air positioned -79922 38 122 run function skyblock:azr/assets/mobs_new/undead
 execute if score stage_main_thread AzrTimerStack matches 41 if block -79929 39 125 air positioned -79922 38 122 run function skyblock:azr/assets/mobs_new/undead_pickaxe
