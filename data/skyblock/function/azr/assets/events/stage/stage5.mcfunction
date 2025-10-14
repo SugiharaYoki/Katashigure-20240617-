@@ -27,6 +27,7 @@ execute if score Azr_Story_Introduction rng1 matches 29 as @p[tag=azrPlayer] at 
 
 execute if score stage_main_thread AzrTimerStack matches 32..35 if block -79929 39 125 air positioned -79922 38 122 run function skyblock:azr/assets/mobs_new/undead
 execute if score stage_main_thread AzrTimerStack matches 41 if block -79929 39 125 air positioned -79922 38 122 run function skyblock:azr/assets/mobs_new/undead_pickaxe
+execute if score stage_main_thread AzrTimerStack matches 52 if block -79929 39 125 air positioned -79922 38 122 run function skyblock:azr/system/shop/purchase/handbook/input {doc:smoke_mother}
 execute if score stage_main_thread AzrTimerStack matches 52 if block -79929 39 125 air positioned -79922 38 122 run function skyblock:azr/assets/mobs_new/smoke_mother
 
 execute if score stage_main_thread AzrTimerStack matches 32 unless block -79929 39 125 air positioned -79940 38 122 run function skyblock:azr/assets/mobs_new/sword
