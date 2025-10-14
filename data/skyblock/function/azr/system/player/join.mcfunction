@@ -29,30 +29,21 @@ execute if score $azrInitialIngredientGiven Azr_system matches 1 run give @s iro
 execute if score $azrInitialIngredientGiven Azr_system matches 1 run give @s flint
 execute if score $azrInitialIngredientGiven Azr_system matches 1 run give @s string
 execute if score $azrInitialIngredientGiven Azr_system matches 1 run give @s gunpowder
-#10波后
-execute if entity @s[scores={Azr_wave=10..}] run item replace entity @s inventory.0 with rotten_flesh 3
-execute if entity @s[scores={Azr_wave=10..}] run item replace entity @s inventory.1 with stick 3
-execute if entity @s[scores={Azr_wave=10..}] run item replace entity @s inventory.2 with flint 3
-#23波后
-execute if entity @s[scores={Azr_wave=23..}] run function skyblock:azr/assets/items/weapons/bow_normal
-execute if entity @s[scores={Azr_wave=23..}] run item replace entity @s inventory.0 with rotten_flesh 6
-execute if entity @s[scores={Azr_wave=23..}] run item replace entity @s inventory.3 with bone[custom_name='{"text":"硬骨","italic":false}',custom_data={hard_bone:1b},custom_model_data={floats:[100001.0]}] 3
-execute if entity @s[scores={Azr_wave=23..}] run item replace entity @s inventory.4 with iron_nugget[custom_name='{"text":"盾牌碎片","italic":false,"color":"white"}',custom_data={shield_shard:1b},custom_model_data={floats:[100001.0]}] 3
-#36波（第四章）后
-execute if entity @s[scores={Azr_wave=36..}] run clear @s
-execute if entity @s[scores={Azr_wave=36..}] run function skyblock:azr/assets/items/weapons/iron_sword_prison
-execute if entity @s[scores={Azr_wave=36..}] run function skyblock:azr/assets/items/weapons/iron_axe_prison
-execute if entity @s[scores={Azr_wave=36..}] run function skyblock:azr/assets/items/weapons/iron_shovel_prison
-execute if entity @s[scores={Azr_wave=36..}] run function skyblock:azr/assets/items/weapons/bow_blessed
-execute if entity @s[scores={Azr_wave=36..}] run function skyblock:azr/assets/items/armors/iron_helmet_normal_replace
-execute if entity @s[scores={Azr_wave=36..}] run function skyblock:azr/assets/items/armors/iron_chestplate_normal_replace
-execute if entity @s[scores={Azr_wave=36..}] run function skyblock:azr/assets/items/armors/iron_leggings_normal_replace
-execute if entity @s[scores={Azr_wave=36..}] run function skyblock:azr/assets/items/armors/iron_boots_normal_replace
-execute if entity @s[scores={Azr_wave=36..}] run function skyblock:azr/assets/items/others/soul_expel_torch
-execute if entity @s[scores={Azr_wave=36..}] run give @s cooked_salmon 16
-execute if entity @s[scores={Azr_wave=36..}] run give @s golden_carrot 2
-execute if entity @s[scores={Azr_wave=36..}] run function skyblock:azr/assets/items/others/revival_star
-execute if entity @s[scores={Azr_wave=36..}] run function skyblock:azr/assets/items/others/revival_star
-execute if entity @s[scores={Azr_wave=36..}] run item replace entity @s inventory.2 with flint_and_steel[enchantments={fire_aspect:2}]
-execute if entity @s[scores={Azr_wave=36..}] run item replace entity @s inventory.3 with beetroot[custom_name='{"text":"爆裂菜根","italic":false}',lore=['{"text":"投掷 - 轰炸（射程较低）","color":"yellow"}'],enchantments={punch:1},custom_data={blast_root:1b},custom_model_data={floats:[100001.0]}] 5
-execute if entity @s[scores={Azr_wave=36..}] run item replace entity @s inventory.4 with arrow 38
+
+scoreboard objectives add azrPlayer_eternal dummy
+execute unless entity @s[scores={azrPlayer_eternal=1..}] run scoreboard players add azrPlayer_eternal azrPlayer_eternal 1
+execute unless entity @s[scores={azrPlayer_eternal=1..}] run scoreboard players operation @s azrPlayer_eternal = azrPlayer_eternal azrPlayer_eternal
+
+
+
+
+
+
+
+
+
+
+
+
+
+
