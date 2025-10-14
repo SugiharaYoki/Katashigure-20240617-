@@ -61,17 +61,17 @@ execute if score stage_main_thread AzrTimerStack matches 129 run particle minecr
 execute if score stage_main_thread AzrTimerStack matches 129 run playsound minecraft:entity.player.splash block @a -79931 38 122 2 0.7
 execute if score stage_main_thread AzrTimerStack matches 129..131 run particle minecraft:bubble_pop -79931 38 122 0.2 0 0.2 0.0 1
 
-execute if score stage_main_thread AzrTimerStack matches 130..131 positioned -79931 38 122 if entity @a[tag=azrPlayer,distance=0..0.7] run scoreboard players set stage_main_thread AzrTimerStack 127
 execute if score stage_main_thread AzrTimerStack matches 130..131 run scoreboard players set stage_main_thread AzrTimerStack 130
+execute if score stage_main_thread AzrTimerStack matches 130..131 positioned -79931 38 122 if entity @a[tag=azrPlayer,distance=0..0.7] run scoreboard players set stage_main_thread AzrTimerStack 132
 
 
-execute if score stage_main_thread AzrTimerStack matches 132 positioned -79931 38 122 as @a[tag=azrPlayer,distance=0..4.7] at @s run playsound minecraft:entity.player.splash block @a -79931 -43 122 2 0.8
-execute if score stage_main_thread AzrTimerStack matches 132 positioned -79931 38 122 as @a[tag=azrPlayer,distance=0..4.7] at @s run playsound ambient.underwater.loop.additions.ultra_rare block @a -79931 -43 122 50 0.7
-execute if score stage_main_thread AzrTimerStack matches 132 positioned -79931 38 122 as @a[tag=azrPlayer,distance=0..4.7] at @s run playsound ambient.underwater.loop.additions.ultra_rare block @a -79931 -43 122 50 0.7
-execute if score stage_main_thread AzrTimerStack matches 132 positioned -79931 38 122 as @a[tag=azrPlayer,distance=0..4.7] at @s run playsound ambient.underwater.loop.additions.ultra_rare block @a -79931 -43 122 50 0.7
-execute if score stage_main_thread AzrTimerStack matches 132 positioned -79931 38 122 as @a[tag=azrPlayer,distance=0..4.7] at @s run playsound ambient.underwater.loop.additions.ultra_rare block @a -79931 -43 122 50 0.7
-execute if score stage_main_thread AzrTimerStack matches 132 positioned -79931 38 122 as @a[tag=azrPlayer,distance=0..4.7] at @s run tp @s ~ ~-80 ~
-execute if score stage_main_thread AzrTimerStack matches 133 positioned -79931 -43 122 as @a[tag=azrPlayer,distance=0..10.7] at @s run tp @s ~ ~80 ~
+execute if score stage_main_thread AzrTimerStack matches 135 positioned -79931 38 122 as @a[tag=azrPlayer,distance=0..4.7] at @s run playsound minecraft:entity.player.splash block @a -79931 -43 122 2 0.8
+execute if score stage_main_thread AzrTimerStack matches 135 positioned -79931 38 122 as @a[tag=azrPlayer,distance=0..4.7] at @s run playsound ambient.underwater.loop.additions.ultra_rare block @a -79931 -43 122 50 0.7
+execute if score stage_main_thread AzrTimerStack matches 135 positioned -79931 38 122 as @a[tag=azrPlayer,distance=0..4.7] at @s run playsound ambient.underwater.loop.additions.ultra_rare block @a -79931 -43 122 50 0.7
+execute if score stage_main_thread AzrTimerStack matches 135 positioned -79931 38 122 as @a[tag=azrPlayer,distance=0..4.7] at @s run playsound ambient.underwater.loop.additions.ultra_rare block @a -79931 -43 122 50 0.7
+execute if score stage_main_thread AzrTimerStack matches 135 positioned -79931 38 122 as @a[tag=azrPlayer,distance=0..4.7] at @s run playsound ambient.underwater.loop.additions.ultra_rare block @a -79931 -43 122 50 0.7
+execute if score stage_main_thread AzrTimerStack matches 135 positioned -79931 38 122 as @a[tag=azrPlayer,distance=0..4.7] at @s run tp @s ~ ~-80 ~
+execute if score stage_main_thread AzrTimerStack matches 136 positioned -79931 -43 122 as @a[tag=azrPlayer,distance=0..10.7] at @s run tp @s ~ ~80 ~
 
 
 
