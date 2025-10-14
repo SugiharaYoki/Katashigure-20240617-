@@ -106,7 +106,7 @@ fill -79931 48 43 -79931 48 45 minecraft:quartz_block
 #Stage4 beta
 setblock -79939 38 20 air
 setblock -79939 38 20 trapped_chest[facing=west]{lock:{components:{custom_data:{key_required:1b}}}}
-item replace block -79939 38 20 container.11 with eye_armor_trim_smithing_template 3
+item replace block -79939 38 20 container.11 with emerald 3
 item replace block -79939 38 20 container.13 with skull_banner_pattern[custom_name='{"text":"“仍旧在调查魔物失控的真相”","color":"dark_purple","italic":false}',lore=['{"text":"拉斐尔大人告知我丢失钥匙并无大碍，","color":"white","italic":false}','{"text":"地下水路东区不存在任何有用的事物。","color":"white","italic":false}','{"text":"可那里明明封印着源自各处的亡灵……","color":"white","italic":false}']]
 item replace block -79939 38 20 container.15 with iron_ingot 1
 
@@ -171,7 +171,9 @@ setblock -79929 39 125 minecraft:potted_oak_sapling
 setblock -79933 39 125 minecraft:potted_dead_bush
 #供能区域
 fill -79931 35 171 -79931 35 183 minecraft:red_concrete replace minecraft:redstone_block
-
+setblock -79920 37 176 chest[facing=north]
+item replace block -79920 37 176 container.12 with emerald 3
+item replace block -79920 37 176 container.14 with skull_banner_pattern[custom_name='{"text":"“魔法燃料”","color":"dark_purple","italic":false}',lore=['{"text":"请火把花培育人员时刻注意花蕊的花粉浓度。过多的花粉容易引起微型爆燃。","color":"white","italic":false}','{"text":"虽然炸了这一块供能区域也只会让招待厅的一小部分伸手不见五指，但这太掉价了，我们这是正儿八经的神庭试炼，不是三流角色扮演剧本杀。","color":"white","italic":false}']]
 
 fill -79917 41 134 -79917 38 136 minecraft:purple_stained_glass
 setblock -79943 39 135 minecraft:birch_button[facing=west,face=floor]
