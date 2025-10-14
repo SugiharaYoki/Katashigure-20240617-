@@ -15,7 +15,6 @@ execute if score stage_main_thread AzrTimerStack matches 2 run scoreboard player
 execute if score stage_main_thread AzrTimerStack matches 76 positioned -79930.5 38.0 3.5 run function skyblock:azr/assets/events/effects/basalt_open
 #刷怪时序
 execute if score stage_main_thread AzrTimerStack matches 24 positioned -79930.5 38.0 -8.5 run function skyblock:azr/assets/events/effects/basalt_open
-execute if score stage_main_thread AzrTimerStack matches 24 run playsound entity.zombie.ambient ambient @a[tag=azrShowDialog] -80000 100 0 1000
 execute if score stage_main_thread AzrTimerStack matches 28 positioned -79931 38 -9 run function skyblock:azr/assets/mobs_new/summoner
 execute if score stage_main_thread AzrTimerStack matches 28 as @a[tag=azrPlayer] at @s run function skyblock:azr/system/shop/purchase/handbook/input {doc:summoner}
 execute if score stage_main_thread AzrTimerStack matches 28 as @a[tag=azrPlayer] at @s run function skyblock:azr/system/shop/purchase/handbook/input {doc:undead}
