@@ -53,7 +53,7 @@ execute if score stage_bonus_thread AzrTimerStack matches 87 positioned -79946 3
 
 execute if score stage_bonus_thread AzrTimerStack matches 89..90 if entity @n[tag=AzrielMob_undead_greed] run scoreboard players set stage_bonus_thread AzrTimerStack 89
 
-execute if score stage_bonus_thread AzrTimerStack matches 91..93 positioned -79946 38 61 run function skyblock:azr/assets/mobs_new/undead_greed
+execute if score stage_bonus_thread AzrTimerStack matches 93 positioned -79946 38 61 run function skyblock:azr/assets/mobs_new/undead_greed
 
 execute if score stage_bonus_thread AzrTimerStack matches 103 positioned -79946 38 61 run tellraw @a[tag=azrShowDialog] [{"text":"贪婪丧尸：","color":"red","bold": true},{"bold": false,"text":"\n“更……多！！……要！！给我、绿宝石……！全都给我！！！”","color":"white"}]
 
