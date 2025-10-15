@@ -36,6 +36,7 @@ execute if score SEA_ch6_event rng5 matches 1112 run particle minecraft:explosio
 execute if score SEA_ch6_event rng5 matches 1112 run playsound minecraft:entity.generic.explode ambient @s 90140 162 143 2 0.8
 
 execute if score SEA_ch6_event rng5 matches 1112 run clone 90148 -60 130 90153 -55 136 90138 159 140
+execute if score SEA_ch6_event rng5 matches 1112 run setblock 90140 103 102 air
 execute if score SEA_ch6_event rng5 matches 1112 run setblock 90140 163 143 gravel
 execute if score SEA_ch6_event rng5 matches 1112 run setblock 90141 163 142 gravel
 execute if score SEA_ch6_event rng5 matches 1112 run setblock 90141 163 143 gravel

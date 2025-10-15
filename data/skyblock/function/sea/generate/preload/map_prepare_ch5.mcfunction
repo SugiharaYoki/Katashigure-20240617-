@@ -630,3 +630,4 @@ setblock 90152 129 30 chest[facing=north]
 
 
 
+setblock 90140 103 102 minecraft:mangrove_fence
