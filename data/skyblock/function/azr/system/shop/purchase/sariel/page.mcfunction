@@ -213,8 +213,8 @@ execute if entity @s[tag=!AzrSariel_upg16D] run data modify entity @n[tag=AzrSar
 #  07 ★ 商 绿
 #  08 攻    抹
 #  09 速 电 电 电
-#  10 攻
-#  11 速
+#  10 攻    缓
+#  11 速 缓 缓
 #  12 攻
 #  13 速
 
@@ -284,11 +284,17 @@ tellraw @s [{"text":" ","color":"light_purple"},\
 
 tellraw @s [{"text":" ","color":"light_purple"},\
 {"selector":"@n[tag=AzrSariel_displaymarker0b]","color":"dark_gray"},\
-{"selector":"@n[tag=AzrSariel_displaymarker10]","color":"#ff5d5d","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432110"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：10\n攻击力 +0.5","color":"white"}}}]
+{"selector":"@n[tag=AzrSariel_displaymarker10]","color":"#ff5d5d","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432110"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：10\n攻击力 +0.5","color":"white"}}},\
+{"selector":"@n[tag=AzrSariel_displaymarkerE]","color":"dark_gray"},\
+{"selector":"@n[tag=AzrSariel_displaymarker10C]","color":"#ac2803","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432130"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：20\n在距离自己2.5格处悬浮锁链环\n当有生灵或凶兽接触到环时，环附近的所有生灵和凶兽都将被大大减缓移动速度3秒，并永久减少自身防御力\n因为悬浮环造成的防御力减少对同一敌人只会起效一次\n减防：1/2/3 冷却：4/3.7/3.4\n重复选中将升级效果","color":"white"}}},\
+{"selector":"@n[tag=AzrSariel_displaymarkerE]","color":"dark_gray"}]
 
 tellraw @s [{"text":" ","color":"light_purple"},\
 {"selector":"@n[tag=AzrSariel_displaymarker0b]","color":"dark_gray"},\
-{"selector":"@n[tag=AzrSariel_displaymarker11]","color":"#7b5dff","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432111"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：10\n攻击速度 +0.1","color":"white"}}}]
+{"selector":"@n[tag=AzrSariel_displaymarker11]","color":"#7b5dff","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432111"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：10\n攻击速度 +0.1","color":"white"}}},\
+{"selector":"@n[tag=AzrSariel_displaymarker11B]","color":"#ac2803","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432131"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：20\n在距离自己2.5格处悬浮锁链环\n当有生灵或凶兽接触到环时，环附近的所有生灵和凶兽都将被大大减缓移动速度3秒，并永久减少自身防御力\n因为悬浮环造成的防御力减少对同一敌人只会起效一次\n减防：1/2/3 冷却：4/3.7/3.4\n重复选中将升级效果","color":"white"}}},\
+{"selector":"@n[tag=AzrSariel_displaymarker11C]","color":"#ac2803","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432132"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：30\n在距离自己2.5格处悬浮锁链环\n当有生灵或凶兽接触到环时，环附近的所有生灵和凶兽都将被大大减缓移动速度3秒，并永久减少自身防御力\n因为悬浮环造成的防御力减少对同一敌人只会起效一次\n减防：1/2/3 冷却：4/3.7/3.4\n重复选中将升级效果","color":"white"}}},\
+{"selector":"@n[tag=AzrSariel_displaymarkerE]","color":"dark_gray"}]
 
 tellraw @s [{"text":" ","color":"light_purple"},\
 {"selector":"@n[tag=AzrSariel_displaymarker0b]","color":"dark_gray"},\

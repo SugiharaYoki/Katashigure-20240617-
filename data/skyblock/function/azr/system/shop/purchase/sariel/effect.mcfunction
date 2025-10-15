@@ -34,5 +34,9 @@ scoreboard players set @s AzrSariel_Skill_FlowerReason 0
 execute if entity @s[tag=AzrSariel_upg1D] run scoreboard players add @s AzrSariel_Skill_FlowerReason 1
 execute if entity @s[tag=AzrSariel_upg2D] run scoreboard players add @s AzrSariel_Skill_FlowerReason 1
 execute if entity @s[tag=AzrSariel_upg4D] run scoreboard players add @s AzrSariel_Skill_FlowerReason 1
+scoreboard players set @s AzrSariel_Skill_SlowRing 0
+execute if entity @s[tag=AzrSariel_upg10C] run scoreboard players add @s AzrSariel_Skill_SlowRing 1
+execute if entity @s[tag=AzrSariel_upg11B] run scoreboard players add @s AzrSariel_Skill_SlowRing 1
+execute if entity @s[tag=AzrSariel_upg11C] run scoreboard players add @s AzrSariel_Skill_SlowRing 1
 
 tag @s add AZR_sariel_01_effected
