@@ -11,8 +11,7 @@ execute if score @s[scores={rng2=1..}] rng1 matches 2.. as @s at @s run effect g
 execute if score @s[scores={rng2=1..}] rng1 matches 2.. as @s at @s run effect give @a[distance=0..1.2,gamemode=adventure] blindness 2 0 false
 execute if score @s[scores={rng2=1..}] rng1 matches 2.. as @s at @s run playsound block.fire.extinguish hostile @a ~ ~ ~ 1 0.8
 execute if score @s[scores={rng2=1..},nbt=!{Fire:-1s}] rng1 matches 2.. as @s at @s run particle large_smoke ~ ~0.3 ~ 0.8 0.8 0.8 0.34 40 force
-execute if score @s[scores={rng2=1..},nbt=!{Fire:-1s}] rng1 matches 2.. as @s at @s run damage @s 1 in_fire
-execute if score @s[scores={rng2=1..}] rng1 matches 2.. as @s at @s run data modify entity @s Fire set value -1s
+execute if score @s[scores={rng2=1..},nbt=!{Fire:-1s}] rng1 matches 2.. as @s at @s run damage @s 2 in_fire
 execute if score @s[scores={rng2=1..}] rng1 matches 2.. as @s at @s run data modify entity @s HurtTime set value 0s
 execute if score @s[scores={rng2=1..}] rng1 matches 2.. as @s at @s run scoreboard players set @s rng2 0
 
