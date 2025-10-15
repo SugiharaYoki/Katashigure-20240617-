@@ -70,6 +70,8 @@ execute as @n[tag=azrSariel_slowring_marker,type=marker,distance=..1] at @s run 
 execute as @n[tag=azrSariel_slowring_marker,type=marker,distance=..1] at @s run tp @s ~ ~ ~ ~10 0
 execute as @n[tag=azrSariel_slowring_marker,type=marker,distance=..1] at @s run particle falling_obsidian_tear ^ ^ ^3.00 0 0 0 0 1
 execute as @n[tag=azrSariel_slowring_marker,type=marker,distance=..1] at @s run tp @s ~ ~ ~ ~10 0
+execute as @n[tag=azrSariel_slowring_marker,type=marker,distance=..1] at @s run particle falling_obsidian_tear ^ ^ ^3.00 0 0 0 0 1
+execute as @n[tag=azrSariel_slowring_marker,type=marker,distance=..1] at @s run tp @s ~ ~ ~ ~10 0
 
 
 kill @n[tag=azrSariel_slowring_marker,type=marker,distance=..1]

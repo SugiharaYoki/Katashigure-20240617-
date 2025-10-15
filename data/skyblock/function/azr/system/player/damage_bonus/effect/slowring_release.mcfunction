@@ -70,6 +70,8 @@ execute as @n[tag=azrSariel_slowring_marker,type=marker,distance=..1] at @s run 
 execute as @n[tag=azrSariel_slowring_marker,type=marker,distance=..1] at @s run tp @s ~ ~ ~ ~10 0
 execute as @n[tag=azrSariel_slowring_marker,type=marker,distance=..1] at @s run particle block{block_state:{Name:chain}} ^ ^ ^3.00 0.2 0.05 0.2 0.02 4
 execute as @n[tag=azrSariel_slowring_marker,type=marker,distance=..1] at @s run tp @s ~ ~ ~ ~10 0
+execute as @n[tag=azrSariel_slowring_marker,type=marker,distance=..1] at @s run particle block{block_state:{Name:chain}} ^ ^ ^3.00 0.2 0.05 0.2 0.02 4
+execute as @n[tag=azrSariel_slowring_marker,type=marker,distance=..1] at @s run tp @s ~ ~ ~ ~10 0
 
 execute as @n[tag=azrSariel_slowring_marker,type=marker,distance=..1] at @s positioned ~ ~-0.3 ~ as @e[distance=2.3..3.6,tag=AzrielMob,tag=AzrielMob_typeLIFE] at @s run effect give @s slowness 3 7 false
 execute as @n[tag=azrSariel_slowring_marker,type=marker,distance=..1] at @s positioned ~ ~-0.3 ~ as @e[distance=2.3..3.6,tag=AzrielMob,tag=AzrielMob_typeMONSTER] at @s run effect give @s slowness 3 7 false
