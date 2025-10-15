@@ -81,19 +81,19 @@ execute if score stage_main_thread AzrTimerStack matches 136 as @a[tag=azrPlayer
 
 execute if score stage_main_thread AzrTimerStack matches 144 unless block -79929 39 125 air positioned -79922 38 122 run function skyblock:azr/assets/mobs_new/axe
 execute if score stage_main_thread AzrTimerStack matches 144 if block -79929 39 125 air positioned -79940 38 122 run function skyblock:azr/assets/mobs_new/shield
-execute if score stage_main_thread AzrTimerStack matches 147 positioned -79922 38 122 run function skyblock:azr/assets/mobs_new/skeleton_melee
-execute if score stage_main_thread AzrTimerStack matches 147 positioned -79940 38 122 run function skyblock:azr/assets/mobs_new/skeleton_melee
+execute if score stage_main_thread AzrTimerStack matches 157 positioned -79922 38 122 run function skyblock:azr/assets/mobs_new/skeleton_melee
+execute if score stage_main_thread AzrTimerStack matches 157 positioned -79940 38 122 run function skyblock:azr/assets/mobs_new/skeleton_melee
 
-execute if score stage_main_thread AzrTimerStack matches 157 unless block -79929 39 125 air positioned -79922 38 122 run function skyblock:azr/assets/mobs_new/pillager
-execute if score stage_main_thread AzrTimerStack matches 157 if block -79929 39 125 air positioned -79940 38 122 run function skyblock:azr/assets/mobs_new/undead_pickaxe
+execute if score stage_main_thread AzrTimerStack matches 167 unless block -79929 39 125 air positioned -79922 38 122 run function skyblock:azr/assets/mobs_new/pillager
+execute if score stage_main_thread AzrTimerStack matches 167 if block -79929 39 125 air positioned -79940 38 122 run function skyblock:azr/assets/mobs_new/undead_pickaxe
 
-execute if score stage_main_thread AzrTimerStack matches 177 positioned -79940 38 122 run function skyblock:azr/assets/mobs_new/axe
-execute if score stage_main_thread AzrTimerStack matches 177 as @a[tag=azrPlayer] at @s run function skyblock:azr/system/shop/purchase/handbook/input {doc:axe}
-execute if score stage_main_thread AzrTimerStack matches 182 positioned -79940 38 122 run function skyblock:azr/assets/mobs_new/axe
+execute if score stage_main_thread AzrTimerStack matches 184 positioned -79940 38 122 run function skyblock:azr/assets/mobs_new/axe
+execute if score stage_main_thread AzrTimerStack matches 184 as @a[tag=azrPlayer] at @s run function skyblock:azr/system/shop/purchase/handbook/input {doc:axe}
+execute if score stage_main_thread AzrTimerStack matches 180 positioned -79940 38 122 run function skyblock:azr/assets/mobs_new/axe
 
-execute if score stage_main_thread AzrTimerStack matches 187 positioned -79940 38 122 run function skyblock:azr/assets/mobs_new/pillager
-execute if score stage_main_thread AzrTimerStack matches 187 as @a[tag=azrPlayer] at @s run function skyblock:azr/system/shop/purchase/handbook/input {doc:pillager}
 execute if score stage_main_thread AzrTimerStack matches 192 positioned -79940 38 122 run function skyblock:azr/assets/mobs_new/pillager
+execute if score stage_main_thread AzrTimerStack matches 192 as @a[tag=azrPlayer] at @s run function skyblock:azr/system/shop/purchase/handbook/input {doc:pillager}
+execute if score stage_main_thread AzrTimerStack matches 197 positioned -79940 38 122 run function skyblock:azr/assets/mobs_new/pillager
 
 execute if score stage_main_thread AzrTimerStack matches 199..200 if entity @n[tag=AzrielMob_axe] run scoreboard players set stage_main_thread AzrTimerStack 199
 
