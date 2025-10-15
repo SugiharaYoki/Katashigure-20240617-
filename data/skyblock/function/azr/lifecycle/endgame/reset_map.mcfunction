@@ -186,6 +186,16 @@ fill -79916 39 193 -79916 37 193 minecraft:purple_stained_glass
   #单向门
 setblock -79917 38 191 minecraft:birch_button[facing=east]
 
+#entertain
+setblock -79917 44 165 minecraft:potted_cornflower
+setblock -79917 44 163 minecraft:potted_cornflower
+
+
+
+
+
+
+
 
 fill -79917 41 134 -79917 38 136 minecraft:purple_stained_glass
 setblock -79943 39 135 minecraft:birch_button[facing=west,face=floor]
