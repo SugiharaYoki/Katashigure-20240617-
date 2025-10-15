@@ -16,8 +16,8 @@ execute if score @s[scores={rng2=1..}] rng1 matches 2.. as @s at @s run scoreboa
 
 execute store result score @s rng3 run data get entity @s Fire
 
-execute if score @s rng3 matches 2.. as @s at @s run damage @s 0.5 in_fire
-execute if score @s rng3 matches 2.. as @s at @s run particle large_smoke ~ ~0.3 ~ 0.8 0.8 0.8 0.34 20 force
+execute if score @s rng3 matches 2.. as @s at @s run damage @s 2 in_fire
+execute if score @s rng3 matches 2.. as @s at @s run particle large_smoke ~ ~0.3 ~ 0.8 0.8 0.8 0.34 8 force
 execute if score @s rng3 matches 2.. as @s at @s run scoreboard players set @s rng2 0
 
 
