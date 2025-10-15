@@ -174,6 +174,10 @@ fill -79931 35 171 -79931 35 183 minecraft:red_concrete replace minecraft:redsto
 setblock -79920 37 176 chest[facing=north]
 item replace block -79920 37 176 container.12 with emerald 3
 item replace block -79920 37 176 container.14 with skull_banner_pattern[custom_name='{"text":"“魔法燃料”","color":"dark_purple","italic":false}',lore=['{"text":"请火把花培育人员时刻注意花蕊的花粉浓度。过多的花粉容易引起微型爆燃。","color":"white","italic":false}','{"text":"虽然炸了这一块供能区域也只会让招待厅的一小部分伸手不见五指，但这太掉价了，我们这是正儿八经的神庭试炼，不是三流角色扮演剧本杀。","color":"white","italic":false}']]
+setblock -79925 37 201 chest[facing=east]
+item replace block -79925 37 201 container.12 with emerald 3
+item replace block -79925 37 201 container.14 with emerald 3
+
   #高跳房间
 setblock -79908 37 185 chest[facing=west]
 item replace block -79908 37 185 container.12 with gunpowder 1
