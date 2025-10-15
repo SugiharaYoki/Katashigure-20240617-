@@ -102,6 +102,8 @@ scoreboard objectives remove AzrSariel_Skill_ContactDmg_cooldown
 scoreboard objectives remove AzrSariel_Skill_SneakDodgeArrow_cooldown
 scoreboard objectives remove AzrSariel_Skill_FlowerReason
 scoreboard objectives remove AzrSariel_Skill_FlowerReason_condition
+#护身符
+scoreboard objectives remove AzrSariel_Amulet_FireLit_cooldown
 #特殊食物
 scoreboard objectives remove AzrSariel_Food_HardenedCookie
 scoreboard objectives remove AzrSariel_Food_PowerSalmon

@@ -97,6 +97,10 @@ scoreboard objectives add AzrSariel_Skill_SneakDodgeArrow_cooldown dummy
 scoreboard objectives add AzrSariel_Skill_FlowerReason dummy
 scoreboard objectives add AzrSariel_Skill_FlowerReason_condition minecraft.custom:minecraft.damage_dealt
 
+#护身符
+scoreboard objectives add AzrSariel_Amulet_generic_damage_dealt minecraft.custom:minecraft.damage_dealt
+scoreboard objectives add AzrSariel_Amulet_FireLit_cooldown dummy
+
 #特殊食物
 scoreboard objectives add AzrSariel_Food_HardenedCookie dummy
 scoreboard objectives add AzrSariel_Food_PowerSalmon dummy

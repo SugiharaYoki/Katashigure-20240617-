@@ -41,6 +41,7 @@ execute if items entity @s container.* *[custom_data~{azr_amulet_greed_board:1b}
 execute if items entity @s container.* *[custom_data~{azr_amulet_pacemaker:1b}] run function skyblock:azr/system/player/skills/amulet/pacemaker_core
 execute if items entity @s container.* *[custom_data~{azr_amulet_pacemaker_safe:1b}] run function skyblock:azr/system/player/skills/amulet/pacemaker_safe_core
 execute if items entity @s container.* *[custom_data~{azr_amulet_flower_wall:1b}] run function skyblock:azr/system/player/skills/amulet/flower_wall_core
+execute if items entity @s hotbar.* *[custom_data~{azr_amulet_fire_lit:1b}] run function skyblock:azr/system/player/skills/amulet/fire_lit_core
 
 #节制天平
 execute if entity @s[tag=AzrSariel_upg6C,scores={AzrSariel_Skill_AbsDefend_cooldown=..1}] run function skyblock:azr/system/player/damage_bonus/effect/absdefend
@@ -55,4 +56,4 @@ execute if score @s AzrSariel_Skill_FlowerReason_condition matches 6.. run funct
 
 
 
-
+scoreboard players reset @s AzrSariel_Amulet_generic_damage_dealt
