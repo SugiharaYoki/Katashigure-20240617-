@@ -12,7 +12,7 @@ execute if score stage Azr_system matches 3 run scoreboard players set stage_mai
 #第二关 4
 execute if score stage Azr_system matches 4 if score playerCount Azr_system matches 1.. run function skyblock:azr/assets/events/stage/stage2
 #第二关-第三关 5
-execute if score stage Azr_system matches 5..11 if score playerCount Azr_system matches 1.. run function skyblock:azr/assets/events/stage/stage3_pre
+execute if score stage Azr_system matches 5..43 if score playerCount Azr_system matches 1.. run function skyblock:azr/assets/events/stage/stage3_pre
 #第三关 6/32
 execute if score stage Azr_system matches 6 run function skyblock:azr/assets/events/stage/stage3
 #第三关-第四关 7
@@ -32,7 +32,7 @@ execute if score stage Azr_system matches 12 run function skyblock:azr/assets/ev
 #第五关-第六关 14
 execute if score stage Azr_system matches 14 run scoreboard players set stage_main_thread AzrTimerStack 0
 #第六关 15
-execute if score stage Azr_system matches 14.. run function skyblock:azr/assets/events/stage/stage6_energy
+execute if score stage Azr_system matches 14..43 run function skyblock:azr/assets/events/stage/stage6_energy
 execute if score stage Azr_system matches 15 run function skyblock:azr/assets/events/stage/stage6
 #第六关-第七关 16
 execute if score stage Azr_system matches 16 run function skyblock:azr/assets/events/stage/stage_event2
