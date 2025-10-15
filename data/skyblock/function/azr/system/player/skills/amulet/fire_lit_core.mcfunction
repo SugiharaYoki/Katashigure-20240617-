@@ -14,10 +14,18 @@ execute if entity @s[tag=AZR_Amulet_Instant_Success] rotated ~ 0 positioned ^ ^ 
 execute if entity @s[tag=AZR_Amulet_Instant_Success] rotated ~ 0 positioned ^ ^ ^3.0 as @e[tag=AzrielMob,distance=0..0.9,tag=!AZR_Amulet_Instant_Target] at @s run tag @s add AZR_Amulet_Instant_Target
 execute if entity @s[tag=AZR_Amulet_Instant_Success] rotated ~ 0 positioned ^ ^ ^3.5 as @e[tag=AzrielMob,distance=0..0.9,tag=!AZR_Amulet_Instant_Target] at @s run tag @s add AZR_Amulet_Instant_Target
 execute if entity @s[tag=AZR_Amulet_Instant_Success] rotated ~ 0 positioned ^ ^ ^4.0 as @e[tag=AzrielMob,distance=0..0.9,tag=!AZR_Amulet_Instant_Target] at @s run tag @s add AZR_Amulet_Instant_Target
+execute if entity @s[tag=AZR_Amulet_Instant_Success] anchored eyes positioned ^ ^-1.5 ^0.5 as @e[tag=AzrielMob,distance=0..0.9,tag=!AZR_Amulet_Instant_Target] at @s run tag @s add AZR_Amulet_Instant_Target
+execute if entity @s[tag=AZR_Amulet_Instant_Success] anchored eyes positioned ^ ^-1.5 ^1.0 as @e[tag=AzrielMob,distance=0..0.9,tag=!AZR_Amulet_Instant_Target] at @s run tag @s add AZR_Amulet_Instant_Target
+execute if entity @s[tag=AZR_Amulet_Instant_Success] anchored eyes positioned ^ ^-1.5 ^1.5 as @e[tag=AzrielMob,distance=0..0.9,tag=!AZR_Amulet_Instant_Target] at @s run tag @s add AZR_Amulet_Instant_Target
+execute if entity @s[tag=AZR_Amulet_Instant_Success] anchored eyes positioned ^ ^-1.5 ^2.0 as @e[tag=AzrielMob,distance=0..0.9,tag=!AZR_Amulet_Instant_Target] at @s run tag @s add AZR_Amulet_Instant_Target
+execute if entity @s[tag=AZR_Amulet_Instant_Success] anchored eyes positioned ^ ^-1.5 ^2.5 as @e[tag=AzrielMob,distance=0..0.9,tag=!AZR_Amulet_Instant_Target] at @s run tag @s add AZR_Amulet_Instant_Target
+execute if entity @s[tag=AZR_Amulet_Instant_Success] anchored eyes positioned ^ ^-1.5 ^3.0 as @e[tag=AzrielMob,distance=0..0.9,tag=!AZR_Amulet_Instant_Target] at @s run tag @s add AZR_Amulet_Instant_Target
+execute if entity @s[tag=AZR_Amulet_Instant_Success] anchored eyes positioned ^ ^-1.5 ^3.5 as @e[tag=AzrielMob,distance=0..0.9,tag=!AZR_Amulet_Instant_Target] at @s run tag @s add AZR_Amulet_Instant_Target
+execute if entity @s[tag=AZR_Amulet_Instant_Success] anchored eyes positioned ^ ^-1.5 ^4.0 as @e[tag=AzrielMob,distance=0..0.9,tag=!AZR_Amulet_Instant_Target] at @s run tag @s add AZR_Amulet_Instant_Target
 
 
 execute if entity @s[tag=AZR_Amulet_Instant_Success] as @e[tag=AZR_Amulet_Instant_Target] at @s run damage @s 0.5 in_fire by @p[tag=AZR_Amulet_Instant_Success]
-execute if entity @s[tag=AZR_Amulet_Instant_Success] as @e[tag=AZR_Amulet_Instant_Target,tag=AzrielMob_typeMONSTER] at @s run data modify entity @s Fire set value 20s
+execute if entity @s[tag=AZR_Amulet_Instant_Success] as @e[tag=AZR_Amulet_Instant_Target,tag=AzrielMob_typeMONSTER] at @s run data modify entity @s Fire set value 60s
 execute if entity @s[tag=AZR_Amulet_Instant_Success] as @e[tag=AZR_Amulet_Instant_Target] at @s run tag @s remove AZR_Amulet_Instant_Target
 
 
