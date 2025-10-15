@@ -132,6 +132,8 @@ execute if score SEA_ch5_event_engineering_fiona rng7 matches 188 run playsound 
 
 execute if score SEA_ch5_event_engineering_fiona rng7 matches 2..187 if score SEA_ch5_event_engineering_fiona rng1 matches 185.. run scoreboard players set SEA_ch5_event_engineering_fiona rng1 186
 
+execute if score SEA_ch5_event_engineering_fiona rng1 matches 253..254 unless score SEA_ch5_event_engineering_fiona rng7 matches 184.. run scoreboard players set SEA_ch5_event_engineering_fiona rng1 252
+
 execute if score SEA_ch5_event_engineering_fiona rng1 matches 254 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
 execute if score SEA_ch5_event_engineering_fiona rng1 matches 254 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“你想耗到什么时候？快去西边那间控制室！”","color":"white","bold": false}]
 

@@ -286,7 +286,6 @@ execute if score stage_main_thread AzrTimerStack matches 318 run particle minecr
 
 execute if score stage_main_thread AzrTimerStack matches 65..250 if score #rng19 Azr_system matches 1..11 if score #rng20 Azr_system matches 1..2 run summon bee -79938 41 159 {PersistenceRequired:1b,Tags:["AzrielDecMob"],DeathLootTable:"skyblock:azriel_bee_tier1",Health:10.0f,CustomName:'"温室蜂"',Age:0,attributes:[{id:"max_health",base:10.0d},{id:"movement_speed",base:0.25d},{id:"attack_damage",base:3.5d}]}
 
-execute if score stage_main_thread AzrTimerStack matches 316 run fill -79871 43 165 -79871 46 163 purple_stained_glass
 execute if score stage_main_thread AzrTimerStack matches 316 run fill -79935 9 147 -79935 8 147 minecraft:air destroy
 execute if score stage_main_thread AzrTimerStack matches 316 run setblock -79875 38 70 minecraft:chipped_anvil[facing=east]
 execute if score stage_main_thread AzrTimerStack matches 316 run setblock -79876 40 65 minecraft:damaged_anvil[facing=east]

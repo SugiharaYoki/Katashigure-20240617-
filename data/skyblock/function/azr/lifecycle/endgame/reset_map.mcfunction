@@ -185,12 +185,23 @@ item replace block -79908 37 185 container.14 with gunpowder 1
 fill -79916 39 193 -79916 37 193 minecraft:purple_stained_glass
   #单向门
 setblock -79917 38 191 minecraft:birch_button[facing=east]
+  #小阳台
+setblock -79926 45 210 chest[facing=north]
+item replace block -79926 45 210 container.12 with bone 1
+item replace block -79926 45 210 container.14 with bone 1
+
 
 #entertain
 setblock -79917 44 165 minecraft:potted_cornflower
 setblock -79917 44 163 minecraft:potted_cornflower
-
-
+setblock -79857 44 163 minecraft:potted_cornflower
+setblock -79857 44 165 minecraft:potted_cornflower
+setblock -79918 44 180 minecraft:potted_flowering_azalea_bush
+setblock -79918 44 176 minecraft:potted_flowering_azalea_bush
+setblock -79918 44 172 minecraft:potted_flowering_azalea_bush
+setblock -79912 44 180 minecraft:potted_flowering_azalea_bush
+setblock -79912 44 176 minecraft:potted_flowering_azalea_bush
+setblock -79912 44 172 minecraft:potted_flowering_azalea_bush
 
 
 
@@ -281,7 +292,7 @@ setblock -79907 46 -111 air
 setblock -79904 41 97 birch_button[face=wall,facing=north]
 setblock -79917 41 -66 minecraft:birch_button[face=floor,facing=west]
 setblock -79939 35 -76 chest[facing=north,waterlogged=true]
-setblock -79904 44 118 birch_button[facing=west,face=floor]
+#setblock -79904 44 118 birch_button[facing=west,face=floor]
 setblock -79917 40 -62 air
 setblock -79917 40 -62 trapped_chest[facing=north]{lock:{components:{custom_data:{key_required:1b}}}}
 setblock -79875 38 64 chest[facing=north]
