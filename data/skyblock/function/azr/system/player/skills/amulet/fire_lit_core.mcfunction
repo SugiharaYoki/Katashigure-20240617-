@@ -1,7 +1,7 @@
 scoreboard players remove @s AzrSariel_Amulet_FireLit_cooldown 1
 
 execute if score @s[scores={AzrSariel_Amulet_FireLit_cooldown=..0}] AzrSariel_Amulet_generic_damage_dealt matches 1.. run tag @s add AZR_Amulet_Instant_Success
-
+execute if entity @s[scores={AzrSariel_Amulet_FireLit_cooldown=..0}] anchored eyes run particle minecraft:small_flame ^-0.3 ^-0.2 ^0.5 0 0 0 0 1
 
 execute if entity @s[tag=AZR_Amulet_Instant_Success] anchored eyes run particle flame ^ ^-0.5 ^2 0.2 0.2 0.2 0.1 3
 execute if entity @s[tag=AZR_Amulet_Instant_Success] anchored eyes run particle flame ^ ^-0.5 ^3 0.2 0.2 0.2 0.1 3
