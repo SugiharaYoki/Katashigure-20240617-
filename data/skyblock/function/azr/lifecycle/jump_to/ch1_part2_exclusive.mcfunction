@@ -6,3 +6,5 @@ execute as @a[tag=azrPlayer] at @s run function skyblock:azr/assets/items/weapon
 
 
 scoreboard players set Azr_Story_Introduction rng1 1023
+
+scoreboard players set @a[tag=azrPlayer] AzrPlayer_CurrentArea 1
