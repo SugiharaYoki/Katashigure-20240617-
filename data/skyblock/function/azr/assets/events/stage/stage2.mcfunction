@@ -22,11 +22,11 @@ execute if score stage_main_thread AzrTimerStack matches 97 positioned -79940 38
 execute if score stage_main_thread AzrTimerStack matches 97 positioned -79922 38 14 run function skyblock:azr/assets/mobs_new/shield
 execute if score stage_main_thread AzrTimerStack matches 90 positioned -79940 38 14 run function skyblock:azr/assets/mobs_new/summoner
 execute if score stage_main_thread AzrTimerStack matches 90 positioned -79922 38 14 run function skyblock:azr/assets/mobs_new/summoner
-execute if score stage_main_thread AzrTimerStack matches 98..99 if entity @n[tag=AzrielMob_summoner] run scoreboard players set stage_main_thread AzrTimerStack 98
+execute if score stage_main_thread AzrTimerStack matches 98..99 positioned -79931 38 14 if entity @n[distance=..20,tag=AzrielMob_summoner] run scoreboard players set stage_main_thread AzrTimerStack 98
 execute if score stage_main_thread AzrTimerStack matches 101 positioned -79940 38 14 run function skyblock:azr/assets/mobs_new/sword
 execute if score stage_main_thread AzrTimerStack matches 105 positioned -79940 38 14 run function skyblock:azr/assets/mobs_new/sword
 execute if score stage_main_thread AzrTimerStack matches 109 positioned -79940 38 14 run function skyblock:azr/assets/mobs_new/sword
-execute if score stage_main_thread AzrTimerStack matches 110..111 if entity @n[tag=AzrielMob_sword] run scoreboard players set stage_main_thread AzrTimerStack 110
+execute if score stage_main_thread AzrTimerStack matches 110..111 positioned -79931 38 14 if entity @n[distance=..20,tag=AzrielMob_sword] run scoreboard players set stage_main_thread AzrTimerStack 110
 
 #回秒
 execute if score stage_main_thread AzrTimerStack matches 112 run title @a[tag=azrShowDialog] actionbar {"text":"Wave Clear","color":"green"}
@@ -42,7 +42,7 @@ execute if score stage_main_thread AzrTimerStack matches 229 positioned -79922 3
 
 execute if score stage_main_thread AzrTimerStack matches 233 run tellraw @a[tag=azrShowDialog] [{"text":"哨兵剑士：","color":"yellow","bold": true},{"bold": false,"text":"\n“刚刚收到消息，权之残影大人让我们直接召唤执烛使者。”","color":"white"}]
 
-execute if score stage_main_thread AzrTimerStack matches 234..235 if entity @n[tag=AzrielMob_sword] run scoreboard players set stage_main_thread AzrTimerStack 234
+execute if score stage_main_thread AzrTimerStack matches 234..235 positioned -79931 38 14 if entity @n[distance=..20,tag=AzrielMob_sword] run scoreboard players set stage_main_thread AzrTimerStack 234
 execute if score stage_main_thread AzrTimerStack matches 244 positioned -79927 38 21 run function skyblock:azr/assets/mobs_new/smoke
 execute if score stage_main_thread AzrTimerStack matches 244 as @a[tag=azrPlayer] at @s run function skyblock:azr/system/shop/purchase/handbook/input {doc:smoke}
 execute if score stage_main_thread AzrTimerStack matches 244 positioned -79935 38 21 run function skyblock:azr/assets/mobs_new/smoke
@@ -50,11 +50,11 @@ execute if score stage_main_thread AzrTimerStack matches 244 positioned -79927 3
 execute if score stage_main_thread AzrTimerStack matches 244 positioned -79935 38 7 run function skyblock:azr/assets/mobs_new/smoke
 execute if score stage_main_thread AzrTimerStack matches 264 positioned -79922 38 14 run function skyblock:azr/assets/mobs_new/summoner
 execute if score stage_main_thread AzrTimerStack matches 273 run tellraw @a[tag=azrShowDialog] [{"text":"驭灵使：","color":"yellow","bold": true},{"bold": false,"text":"\n“直接……？可是为什么？现在是这么紧急的情况吗？”","color":"white"}]
-execute if score stage_main_thread AzrTimerStack matches 274..275 if entity @n[tag=AzrielMob_summoner] run scoreboard players set stage_main_thread AzrTimerStack 274
-execute if score stage_main_thread AzrTimerStack matches 278 positioned -79931 38 14 run function skyblock:azr/assets/mobs_new/barrier_maintainer {id:null}
+execute if score stage_main_thread AzrTimerStack matches 274..275 positioned -79931 38 14 if entity @n[distance=..20,tag=AzrielMob_summoner] run scoreboard players set stage_main_thread AzrTimerStack 274
+execute if score stage_main_thread AzrTimerStack matches 278 positioned -79931 38 14 run function skyblock:azr/assets/mobs_new/barrier_maintainer {id:_stage2}
 
 #回秒
-execute if score stage_main_thread AzrTimerStack matches 280..281 if entity @e[tag=AzrielMob_barrier_maintainer] run scoreboard players set stage_main_thread AzrTimerStack 280
+execute if score stage_main_thread AzrTimerStack matches 280..281 if entity @e[tag=AzrielMob_barrier_maintainer_stage2] run scoreboard players set stage_main_thread AzrTimerStack 280
 #结束
 execute if score stage_main_thread AzrTimerStack matches 284 run playsound ambient.crimson_forest.mood ambient @a[tag=azrShowDialog] -78000 100 0 1000
 execute if score stage_main_thread AzrTimerStack matches 284 run playsound ambient.crimson_forest.additions ambient @a[tag=azrShowDialog] -78000 100 0 1000
@@ -67,7 +67,7 @@ execute if score stage_main_thread AzrTimerStack matches 289 run fill -79931 38 
 execute if score stage_main_thread AzrTimerStack matches 297 positioned -79931 38 14 run function skyblock:azr/assets/mobs_new/elite/candle_angel
 
 #回秒
-execute if score stage_main_thread AzrTimerStack matches 298..299 if entity @e[tag=AzrielMob_elite_candle_angel] run scoreboard players set stage_main_thread AzrTimerStack 298
+execute if score stage_main_thread AzrTimerStack matches 298..299 positioned -79931 38 14 if entity @n[distance=..20,tag=AzrielMob_elite_candle_angel] run scoreboard players set stage_main_thread AzrTimerStack 298
 
 execute if score stage_main_thread AzrTimerStack matches 310 run fill -79931 38 22 -79931 40 22 air destroy
 execute if score stage_main_thread AzrTimerStack matches 310 run clone -79927 38 0 -79927 38 0 -79934 38 18 replace move

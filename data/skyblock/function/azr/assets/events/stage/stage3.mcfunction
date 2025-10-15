@@ -24,7 +24,7 @@ execute if score stage_main_thread AzrTimerStack matches 3 positioned -79932 38 
 execute if score stage_main_thread AzrTimerStack matches 30 positioned -79931 42 40 run function skyblock:azr/assets/mobs_new/smoke
 execute if score stage_main_thread AzrTimerStack matches 55 positioned -79931 42 40 run function skyblock:azr/assets/mobs_new/smoke
 #回秒
-execute if score stage_main_thread AzrTimerStack matches 66..67 if entity @n[tag=AzrielMob_undead_pickaxe] run scoreboard players set stage_main_thread AzrTimerStack 66
+execute if score stage_main_thread AzrTimerStack matches 66..67 positioned -79927 38 25 if entity @n[distance=..15,tag=AzrielMob_undead_pickaxe] run scoreboard players set stage_main_thread AzrTimerStack 66
 execute if score stage_main_thread AzrTimerStack matches 68 run title @a[tag=azrShowDialog] actionbar {"text":"Wave Clear","color":"green"}
 execute if score stage_main_thread AzrTimerStack matches 68 run scoreboard players set wave Azr_system 4
 #第二波
@@ -33,7 +33,7 @@ execute if score stage_main_thread AzrTimerStack matches 89 positioned -79927 38
 execute if score stage_main_thread AzrTimerStack matches 91 positioned -79927 38 25 run function skyblock:azr/assets/mobs_new/smoke
 execute if score stage_main_thread AzrTimerStack matches 93 positioned -79927 38 25 run function skyblock:azr/assets/mobs_new/undead_pickaxe
 execute if score stage_main_thread AzrTimerStack matches 103 positioned -79927 38 25 run function skyblock:azr/assets/mobs_new/undead_pickaxe
-execute if score stage_main_thread AzrTimerStack matches 94..95 if entity @n[tag=AzrielMob_undead_pickaxe] run scoreboard players set stage_main_thread AzrTimerStack 94
+execute if score stage_main_thread AzrTimerStack matches 94..95 positioned -79927 38 25 if entity @n[distance=..15,tag=AzrielMob_undead_pickaxe] run scoreboard players set stage_main_thread AzrTimerStack 94
 execute if score stage_main_thread AzrTimerStack matches 96 positioned -79930 38 38 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute if score stage_main_thread AzrTimerStack matches 96 positioned -79932 38 38 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
 
@@ -44,7 +44,7 @@ execute if score stage_main_thread AzrTimerStack matches 123 as @a[tag=azrPlayer
 execute if score stage_main_thread AzrTimerStack matches 125 positioned -79930 38 38 run tellraw @a[tag=azrShowDialog] [{"text":"哨兵剑士：","color":"yellow","bold": true},{"bold": false,"text":"\n“已经把蜘蛛带来了吗？那再怎么也够这人类的亡魂喝一大壶了。”","color":"white"}]
 execute if score stage_main_thread AzrTimerStack matches 145 positioned -79930 38 38 run tellraw @a[tag=azrShowDialog] [{"text":"哨兵剑士：","color":"yellow","bold": true},{"bold": false,"text":"\n“这家伙根本不说话，她就一个劲揍我们啊！我任职以来就没见过这么猛的挑战者！”","color":"white"}]
 
-execute if score stage_main_thread AzrTimerStack matches 146..147 if entity @n[tag=AzrielMob_spider_giant] run scoreboard players set stage_main_thread AzrTimerStack 146
+execute if score stage_main_thread AzrTimerStack matches 146..147 positioned -79927 38 25 if entity @n[distance=..15,tag=AzrielMob_spider_giant] run scoreboard players set stage_main_thread AzrTimerStack 146
 
 execute if score stage_main_thread AzrTimerStack matches 163 positioned -79930 38 38 run tellraw @a[tag=azrShowDialog] [{"text":"你：","color":"aqua"},{"text":"\n（有哪里不对劲，这不是任何称得上“神圣”的气息）","color":"white"}]
 
@@ -73,7 +73,7 @@ execute if score stage_main_thread AzrTimerStack matches 222 positioned -79927 3
 execute if score stage_main_thread AzrTimerStack matches 230 positioned -79927 38 25 as @e[tag=AzrielMob_spider_giant,distance=..30] at @s run damage @s 1 generic by @n[tag=AzrielMob_sword]
 execute if score stage_main_thread AzrTimerStack matches 227 positioned -79927 38 25 run tellraw @a[tag=azrShowDialog] [{"text":"哨兵剑士：","color":"yellow","bold": true},{"bold": false,"text":"\n“怎、……怎么回事？！啊啊啊！”","color":"white"}]
 execute if score stage_main_thread AzrTimerStack matches 209 positioned -79927 38 25 run tellraw @a[tag=azrShowDialog] [{"text":"哨兵剑士：","color":"yellow","bold": true},{"bold": false,"text":"\n“蜘蛛的样子不对劲！”","color":"white"}]
-execute if score stage_main_thread AzrTimerStack matches 231..232 if entity @n[tag=AzrielMob_spider_giant] run scoreboard players set stage_main_thread AzrTimerStack 231
+execute if score stage_main_thread AzrTimerStack matches 231..232 positioned -79927 38 25 if entity @n[distance=..15,tag=AzrielMob_spider_giant] run scoreboard players set stage_main_thread AzrTimerStack 231
 execute if score stage_main_thread AzrTimerStack matches 234 positioned -79930 38 38 run tellraw @a[tag=azrShowDialog] [{"text":"你：","color":"aqua"},{"text":"\n（那些魔物……攻击了神界军？它们是失控了吗？）","color":"white"}]
 
 #碎墙
@@ -90,10 +90,10 @@ execute if score stage_main_thread AzrTimerStack matches 233 positioned -79926 3
 execute if score stage_main_thread AzrTimerStack matches 233 positioned -79926 38 34 run function skyblock:azr/assets/mobs_new/spider_mini
 execute if score stage_main_thread AzrTimerStack matches 233 positioned -79926 38 34 run function skyblock:azr/assets/mobs_new/spider_mini
 execute if score stage_main_thread AzrTimerStack matches 233 positioned -79926 38 34 run function skyblock:azr/assets/mobs_new/spider_mini
-execute if score stage_main_thread AzrTimerStack matches 233 positioned -79926 38 34 run function skyblock:azr/assets/mobs_new/barrier_maintainer {id:null}
+execute if score stage_main_thread AzrTimerStack matches 233 positioned -79926 38 34 run function skyblock:azr/assets/mobs_new/barrier_maintainer {id:_stage3}
 execute if score stage_main_thread AzrTimerStack matches 235 positioned -79926 38 34 as @e[tag=AzrielMob_spider_mini,distance=..30] at @s run damage @s 0 generic by @n[tag=AzrielMob_barrier_maintainer]
 
-execute if score stage_main_thread AzrTimerStack matches 238..239 if entity @n[tag=AzrielMob_barrier_maintainer] run scoreboard players set stage_main_thread AzrTimerStack 238
+execute if score stage_main_thread AzrTimerStack matches 238..239 if entity @n[tag=AzrielMob_barrier_maintainer_stage3] run scoreboard players set stage_main_thread AzrTimerStack 238
 
 #结束
 #怪物生成：第四关道中与周边野怪

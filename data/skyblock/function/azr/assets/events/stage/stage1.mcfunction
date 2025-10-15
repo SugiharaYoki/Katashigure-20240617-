@@ -20,8 +20,7 @@ execute if score stage_main_thread AzrTimerStack matches 28 as @a[tag=azrPlayer]
 execute if score stage_main_thread AzrTimerStack matches 28 as @a[tag=azrPlayer] at @s run function skyblock:azr/system/shop/purchase/handbook/input {doc:undead}
 execute if score stage_main_thread AzrTimerStack matches 31 run tellraw @a[tag=azrShowDialog] [{"text":"驭灵使：","color":"yellow","bold": true},{"bold": false,"text":"\n“嗯……？试炼者？这种节骨眼上？”","color":"white"}]
 
-execute if score stage_main_thread AzrTimerStack matches 32..33 if entity @n[tag=AzrielMob_summoner] run scoreboard players set stage_main_thread AzrTimerStack 32
-execute if score stage_main_thread AzrTimerStack matches 32..33 unless entity @n[tag=AzrielMob_summoner] run scoreboard players set stage_main_thread AzrTimerStack 34
+execute if score stage_main_thread AzrTimerStack matches 32..33 positioned -79931 38 -4 if entity @n[distance=..10,tag=AzrielMob_summoner] run scoreboard players set stage_main_thread AzrTimerStack 32
 
 execute if score stage_main_thread AzrTimerStack matches 35 positioned -79930.5 38.0 3.5 run function skyblock:azr/assets/events/effects/basalt_open
 execute if score stage_main_thread AzrTimerStack matches 39 positioned -79931 38 3 run function skyblock:azr/assets/mobs_new/summoner
@@ -30,12 +29,11 @@ execute if score stage_main_thread AzrTimerStack matches 45 run tellraw @a[tag=a
 
 execute if score stage_main_thread AzrTimerStack matches 51 positioned -79931 38 3 run function skyblock:azr/assets/mobs_new/shield
 execute if score stage_main_thread AzrTimerStack matches 51 as @a[tag=azrPlayer] at @s run function skyblock:azr/system/shop/purchase/handbook/input {doc:shield}
-execute if score stage_main_thread AzrTimerStack matches 61 positioned -79931 38 -9 run function skyblock:azr/assets/mobs_new/barrier_maintainer {id:null}
+execute if score stage_main_thread AzrTimerStack matches 61 positioned -79931 38 -9 run function skyblock:azr/assets/mobs_new/barrier_maintainer {id:_stage1}
 execute if score stage_main_thread AzrTimerStack matches 61 as @a[tag=azrPlayer] at @s run function skyblock:azr/system/shop/purchase/handbook/input {doc:barrier_maintainer}
 
 #回秒
-execute if score stage_main_thread AzrTimerStack matches 62..63 if entity @e[tag=AzrielMob_barrier_maintainer] run scoreboard players set stage_main_thread AzrTimerStack 62
-execute if score stage_main_thread AzrTimerStack matches 62..63 unless entity @e[tag=AzrielMob_barrier_maintainer] run scoreboard players set stage_main_thread AzrTimerStack 64
+execute if score stage_main_thread AzrTimerStack matches 63..64 if entity @e[tag=AzrielMob_barrier_maintainer_stage1] run scoreboard players set stage_main_thread AzrTimerStack 63
 #结束
 execute if score stage_main_thread AzrTimerStack matches 65 run playsound ambient.crimson_forest.mood ambient @a[tag=azrShowDialog] -78000 100 0 1000
 execute if score stage_main_thread AzrTimerStack matches 65 run playsound ambient.crimson_forest.additions ambient @a[tag=azrShowDialog] -78000 100 0 1000

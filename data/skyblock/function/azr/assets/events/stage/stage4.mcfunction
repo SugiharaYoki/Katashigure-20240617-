@@ -25,7 +25,7 @@ execute if score stage_main_thread AzrTimerStack matches 37 positioned -79937 38
 execute if score stage_main_thread AzrTimerStack matches 41 positioned -79925 38 46 run function skyblock:azr/assets/mobs_new/shield
 execute if score stage_main_thread AzrTimerStack matches 41 positioned -79937 38 46 run function skyblock:azr/assets/mobs_new/shield
 
-execute if score stage_main_thread AzrTimerStack matches 42..43 if entity @n[tag=AzrielMob_shield] run scoreboard players set stage_main_thread AzrTimerStack 42
+execute if score stage_main_thread AzrTimerStack matches 42..43 positioned -79931 38 46 if entity @n[distance=..15,tag=AzrielMob_shield] run scoreboard players set stage_main_thread AzrTimerStack 42
 
 execute if score stage_main_thread AzrTimerStack matches 44 positioned -79925 38 46 run function skyblock:azr/assets/mobs_new/undead_pickaxe
 execute if score stage_main_thread AzrTimerStack matches 44 positioned -79937 38 46 run function skyblock:azr/assets/mobs_new/undead_pickaxe
@@ -34,7 +34,7 @@ execute if score stage_main_thread AzrTimerStack matches 74 positioned -79937 38
 execute if score stage_main_thread AzrTimerStack matches 76 positioned -79925 38 46 run function skyblock:azr/assets/mobs_new/sword
 execute if score stage_main_thread AzrTimerStack matches 76 positioned -79937 38 46 run function skyblock:azr/assets/mobs_new/sword
 
-execute if score stage_main_thread AzrTimerStack matches 77..78 if entity @n[tag=AzrielMob_undead_pickaxe] run scoreboard players set stage_main_thread AzrTimerStack 77
+execute if score stage_main_thread AzrTimerStack matches 77..78 positioned -79931 38 46 if entity @n[distance=..15,tag=AzrielMob_undead_pickaxe] run scoreboard players set stage_main_thread AzrTimerStack 77
 
 execute if score stage_main_thread AzrTimerStack matches 79 run title @a[tag=azrShowDialog] actionbar {"text":"Wave Clear","color":"green"}
 execute if score stage_main_thread AzrTimerStack matches 99 run title @a[tag=azrShowDialog] actionbar {"text":"Stage 4 - Wave 2","color":"red"}
@@ -50,14 +50,14 @@ execute if score stage_main_thread AzrTimerStack matches 130 if score #temp_rng 
 execute if score stage_main_thread AzrTimerStack matches 130 if score #temp_rng Azr_system matches 2 positioned -79937 38 46 run function skyblock:azr/assets/mobs_new/summoner
 execute if score stage_main_thread AzrTimerStack matches 160 if score #temp_rng Azr_system matches 1 positioned -79925 38 46 run function skyblock:azr/assets/mobs_new/summoner
 execute if score stage_main_thread AzrTimerStack matches 160 if score #temp_rng Azr_system matches 2 positioned -79937 38 46 run function skyblock:azr/assets/mobs_new/summoner
-execute if score stage_main_thread AzrTimerStack matches 161..162 if entity @n[tag=AzrielMob_summoner] run scoreboard players set stage_main_thread AzrTimerStack 161
+execute if score stage_main_thread AzrTimerStack matches 161..162 positioned -79931 38 46 if entity @n[distance=..15,tag=AzrielMob_summoner] run scoreboard players set stage_main_thread AzrTimerStack 161
 execute if score stage_main_thread AzrTimerStack matches 163 positioned -79925 38 46 run function skyblock:azr/assets/mobs_new/summoner
 execute if score stage_main_thread AzrTimerStack matches 163 positioned -79937 38 46 run function skyblock:azr/assets/mobs_new/summoner
 execute if score stage_main_thread AzrTimerStack matches 173 if score #temp_rng Azr_system matches 1 positioned -79925 38 46 run function skyblock:azr/assets/mobs_new/shield
 execute if score stage_main_thread AzrTimerStack matches 173 if score #temp_rng Azr_system matches 2 positioned -79937 38 46 run function skyblock:azr/assets/mobs_new/shield
 execute if score stage_main_thread AzrTimerStack matches 175 if score #temp_rng Azr_system matches 1 positioned -79925 38 46 run function skyblock:azr/assets/mobs_new/undead_pickaxe
 execute if score stage_main_thread AzrTimerStack matches 175 if score #temp_rng Azr_system matches 2 positioned -79937 38 46 run function skyblock:azr/assets/mobs_new/undead_pickaxe
-execute if score stage_main_thread AzrTimerStack matches 184..185 if entity @n[tag=AzrielMob_summoner] run scoreboard players set stage_main_thread AzrTimerStack 184
+execute if score stage_main_thread AzrTimerStack matches 184..185 positioned -79931 38 46 if entity @n[distance=..15,tag=AzrielMob_summoner] run scoreboard players set stage_main_thread AzrTimerStack 184
 
 
 execute if score stage_main_thread AzrTimerStack matches 186 run title @a[tag=azrShowDialog] actionbar {"text":"Wave Clear","color":"green"}
@@ -71,12 +71,12 @@ execute if score stage_main_thread AzrTimerStack matches 231 positioned -79937 3
 execute if score stage_main_thread AzrTimerStack matches 235 positioned -79937 38 46 run function skyblock:azr/assets/mobs_new/undead_pickaxe
 execute if score stage_main_thread AzrTimerStack matches 240 if score #temp_rng Azr_system matches 1 positioned -79925 38 46 run function skyblock:azr/assets/mobs_new/summoner
 execute if score stage_main_thread AzrTimerStack matches 240 if score #temp_rng Azr_system matches 2 positioned -79937 38 46 run function skyblock:azr/assets/mobs_new/summoner
-execute if score stage_main_thread AzrTimerStack matches 258..259 if entity @n[tag=AzrielMob_summoner] run scoreboard players set stage_main_thread AzrTimerStack 258
+execute if score stage_main_thread AzrTimerStack matches 258..259 positioned -79931 38 46 if entity @n[distance=..15,tag=AzrielMob_summoner] run scoreboard players set stage_main_thread AzrTimerStack 258
 execute if score stage_main_thread AzrTimerStack matches 260 if score #temp_rng Azr_system matches 1 positioned -79925 38 46 run function skyblock:azr/assets/mobs_new/summoner
 execute if score stage_main_thread AzrTimerStack matches 260 if score #temp_rng Azr_system matches 2 positioned -79937 38 46 run function skyblock:azr/assets/mobs_new/summoner
 execute if score stage_main_thread AzrTimerStack matches 260 positioned -79935 38 46 run function skyblock:azr/assets/mobs_new/sword
 execute if score stage_main_thread AzrTimerStack matches 260 positioned -79927 38 46 run function skyblock:azr/assets/mobs_new/sword
-execute if score stage_main_thread AzrTimerStack matches 261..262 if entity @n[tag=AzrielMob_summoner] run scoreboard players set stage_main_thread AzrTimerStack 261
+execute if score stage_main_thread AzrTimerStack matches 261..262 positioned -79931 38 46 if entity @n[distance=..15,tag=AzrielMob_summoner] run scoreboard players set stage_main_thread AzrTimerStack 261
 execute if score stage_main_thread AzrTimerStack matches 264 positioned -79937 38 46 run playsound minecraft:entity.warden.dig block @a -79930.23 49.00 44.45 2 0.5
 execute if score stage_main_thread AzrTimerStack matches 263 if score #temp_rng Azr_system matches 1 positioned -79935 38 46 run function skyblock:azr/assets/mobs_new/smoke
 execute if score stage_main_thread AzrTimerStack matches 263 if score #temp_rng Azr_system matches 2 positioned -79927 38 46 run function skyblock:azr/assets/mobs_new/smoke
@@ -86,7 +86,7 @@ execute if score stage_main_thread AzrTimerStack matches 269 if score #temp_rng 
 execute if score stage_main_thread AzrTimerStack matches 269 if score #temp_rng Azr_system matches 2 positioned -79927 38 46 run function skyblock:azr/assets/mobs_new/smoke
 execute if score stage_main_thread AzrTimerStack matches 272 if score #temp_rng Azr_system matches 1 positioned -79925 38 46 run function skyblock:azr/assets/mobs_new/shield
 execute if score stage_main_thread AzrTimerStack matches 272 if score #temp_rng Azr_system matches 2 positioned -79937 38 46 run function skyblock:azr/assets/mobs_new/shield
-execute if score stage_main_thread AzrTimerStack matches 275..276 if entity @n[tag=AzrielMob_shield] run scoreboard players set stage_main_thread AzrTimerStack 275
+execute if score stage_main_thread AzrTimerStack matches 275..276 positioned -79931 38 46 if entity @n[distance=..15,tag=AzrielMob_shield] run scoreboard players set stage_main_thread AzrTimerStack 275
 
 #粒子效果动画 - 屋顶坍塌
 execute if score stage_main_thread AzrTimerStack matches 272 run particle minecraft:block{block_state:{Name:quartz_block}} -79930.49 48.00 44.50 1 0 1 0.5 200 normal
