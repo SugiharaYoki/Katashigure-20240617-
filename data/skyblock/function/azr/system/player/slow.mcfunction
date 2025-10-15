@@ -54,3 +54,6 @@ execute if score @s AzrSariel_Food_PowerSalmon matches 1.. run function skyblock
 
 execute if entity @s[tag=!azrRetrieved] if score stage Azr_system matches 1.. as @s[tag=azrPlayer,tag=AZR_SEAawakened] at @s run function skyblock:azr/lifecycle/jump_to/generic_retrieve
 #function skyblock:azr/assets/items/others/revival_star
+
+#地区标题area_title
+execute at @s run function skyblock:azr/assets/events/stage/area_title_detect
