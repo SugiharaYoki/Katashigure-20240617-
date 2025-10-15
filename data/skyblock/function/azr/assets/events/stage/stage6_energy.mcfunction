@@ -19,7 +19,7 @@ execute positioned -79931 36 171 as @n[tag=AzrielMarker_encounter,distance=0..0.
 
 execute positioned -79923 37 202 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79938 37 174 run function skyblock:azr/assets/mobs_new/sword
 execute positioned -79923 37 202 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79938 37 174 run function skyblock:azr/assets/mobs_new/sword
-execute positioned -79916 37 195 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79938 37 174 run function skyblock:azr/assets/mobs_new/sword
+execute positioned -79916 37 195 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79938 37 174 run function skyblock:azr/assets/mobs_new/skeleton_melee
 
 
 
