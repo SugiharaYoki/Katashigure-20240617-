@@ -84,6 +84,8 @@ scoreboard players set $azrInitialIngredientGiven Azr_system 1
 scoreboard players set $azrInitialWeaponGiven Azr_system 1
 scoreboard players set $azrInitialPieGiven Azr_system 1
 
+scoreboard objectives add AzrPlayer_CurrentArea dummy
+
 #节制天平
 scoreboard objectives add AzrSariel_Skill_FanFire dummy
 scoreboard objectives add AzrSariel_Skill_FanFire_cooldown dummy
