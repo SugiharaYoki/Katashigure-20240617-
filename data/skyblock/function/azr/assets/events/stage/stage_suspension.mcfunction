@@ -11,8 +11,8 @@ execute if score stage_main_thread AzrTimerStack matches 186 run bossbar remove 
 #leftside:-79964 32 145
 #rightside:-79964 32 135
 execute if score stage_main_thread AzrTimerStack matches 1 run fill -79943 34 136 -79943 32 136 purple_stained_glass
-execute if score stage_main_thread AzrTimerStack matches 1 run setblock -79949 32 140 air
-execute if score stage_main_thread AzrTimerStack matches 1 run setblock -79949 33 140 air
+execute if score stage_main_thread AzrTimerStack matches 1 run setblock -79947 32 140 air
+execute if score stage_main_thread AzrTimerStack matches 1 run setblock -79947 33 140 air
 execute if score stage_main_thread AzrTimerStack matches 1 run fill -79886 46 148 -79888 43 148 purple_stained_glass
 execute if score stage_main_thread AzrTimerStack matches 1.. run function skyblock:azr/system/utils/rng
 

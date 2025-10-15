@@ -174,12 +174,13 @@ fill -79931 35 171 -79931 35 183 minecraft:red_concrete replace minecraft:redsto
 setblock -79920 37 176 chest[facing=north]
 item replace block -79920 37 176 container.12 with emerald 3
 item replace block -79920 37 176 container.14 with skull_banner_pattern[custom_name='{"text":"“魔法燃料”","color":"dark_purple","italic":false}',lore=['{"text":"请火把花培育人员时刻注意花蕊的花粉浓度。过多的花粉容易引起微型爆燃。","color":"white","italic":false}','{"text":"虽然炸了这一块供能区域也只会让招待厅的一小部分伸手不见五指，但这太掉价了，我们这是正儿八经的神庭试炼，不是三流角色扮演剧本杀。","color":"white","italic":false}']]
-
+  #高跳房间
 setblock -79908 37 185 chest[facing=west]
 item replace block -79908 37 185 container.12 with gunpowder 1
 item replace block -79908 37 185 container.14 with gunpowder 1
-
-
+fill -79916 39 193 -79916 37 193 minecraft:purple_stained_glass
+  #单向门
+setblock -79917 38 191 minecraft:birch_button[facing=east]
 
 
 fill -79917 41 134 -79917 38 136 minecraft:purple_stained_glass
@@ -224,8 +225,8 @@ setblock -79887 44 164 minecraft:birch_button[face=floor,facing=south]
 setblock -79887 43 164 diamond_block
 setblock -79951 38 9 minecraft:quartz_stairs[facing=south]
 setblock -79943 39 8 chiseled_quartz_block
-setblock -79949 32 140 diamond_block
-setblock -79949 33 140 birch_button[face=floor,facing=west]
+setblock -79947 32 140 diamond_block
+setblock -79947 33 140 birch_button[face=floor,facing=west]
 setblock -79940 39 -60 minecraft:birch_button[facing=north]
 setblock -79886 41 -114 lever[face=floor,facing=west,powered=false]
 setblock -79894 39 -113 minecraft:chiseled_stone_bricks
