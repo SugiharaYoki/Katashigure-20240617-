@@ -24,7 +24,6 @@ execute as @s[scores={rng8=4},tag=!SEAfiona_targetfound] at @s rotated as @s pos
 execute as @s[scores={rng8=4}] at @s rotated as @s positioned ^ ^ ^5.6 if entity @n[tag=SEAmob,tag=!SEAnpc,distance=0..0.8,tag=!SEAmob_surrended,tag=!SEAcreak] run tag @s add SEAfiona_targetfound
 execute as @s[scores={rng8=4},tag=!SEAfiona_targetfound] at @s run scoreboard players set @s rng8 9
 
-execute as @s[scores={rng8=6}] run effect give @n[tag=SEAmob,tag=!SEAnpc,distance=0..7,tag=!SEAmob_surrended,tag=!SEAcreak] glowing 3 0 true
 
 execute as @s[scores={rng8=4..8}] at @s run rotate @s facing entity @n[tag=SEAmob,tag=!SEAnpc,distance=..5.6,tag=!SEAmob_surrended,tag=!SEAcreak]
 
