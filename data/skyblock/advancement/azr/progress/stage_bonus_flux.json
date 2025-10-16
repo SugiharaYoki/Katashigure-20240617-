@@ -1,17 +1,17 @@
 {
     "display": {
         "title": {
-            "text": "西庭外围 - 地下层苔藓培育室",
+            "text": "传热根系 - 热能转换机械",
             "color": "green",
             "bold": true,
             "italic": false
         },
         "description": {
-            "text": "STAGE DIFFIDENT",
+            "text": "STAGE FLUX",
             "color": "light_purple"
         },
         "icon": {
-            "id": "minecraft:lime_glazed_terracotta"
+            "id": "minecraft:black_glazed_terracotta"
         },
         "frame": "task",
         "show_toast": false,
@@ -23,5 +23,5 @@
             "trigger": "minecraft:impossible"
         }
     },
-    "parent": "skyblock:azr/azr_stage3"
+    "parent": "skyblock:azr/azr_stage5"
 }
