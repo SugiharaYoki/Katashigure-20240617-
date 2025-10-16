@@ -27,17 +27,17 @@ execute as @s[scores={rng8=4},tag=!SEAfiona_targetfound] at @s run scoreboard pl
 
 execute as @s[scores={rng8=4..8}] at @s run rotate @s facing entity @n[tag=SEAmob,tag=!SEAnpc,distance=..5.6,tag=!SEAmob_surrended,tag=!SEAcreak]
 
-execute as @s[scores={rng8=5..8}] at @s anchored eyes positioned ^ ^ ^1.5 run particle electric_spark ~ ~ ~ 0 0 0 0 1
-execute as @s[scores={rng8=5..8}] at @s anchored eyes positioned ^ ^ ^1.8 run particle electric_spark ~ ~ ~ 0 0 0 0 1
-execute as @s[scores={rng8=5..8}] at @s anchored eyes positioned ^ ^ ^2.1 run particle electric_spark ~ ~ ~ 0 0 0 0 1
-execute as @s[scores={rng8=5..8}] at @s anchored eyes positioned ^ ^ ^2.4 run particle electric_spark ~ ~ ~ 0 0 0 0 1
-execute as @s[scores={rng8=5..8}] at @s anchored eyes positioned ^ ^ ^2.7 run particle electric_spark ~ ~ ~ 0 0 0 0 1
-execute as @s[scores={rng8=5..8}] at @s anchored eyes positioned ^ ^ ^3.0 run particle electric_spark ~ ~ ~ 0 0 0 0 1
-execute as @s[scores={rng8=5..8}] at @s anchored eyes positioned ^ ^ ^3.3 run particle electric_spark ~ ~ ~ 0 0 0 0 1
-execute as @s[scores={rng8=5..8}] at @s anchored eyes positioned ^ ^ ^3.6 run particle electric_spark ~ ~ ~ 0 0 0 0 1
-execute as @s[scores={rng8=5..8}] at @s anchored eyes positioned ^ ^ ^3.9 run particle electric_spark ~ ~ ~ 0 0 0 0 1
-execute as @s[scores={rng8=5..8}] at @s anchored eyes positioned ^ ^ ^4.2 run particle electric_spark ~ ~ ~ 0 0 0 0 1
-execute as @s[scores={rng8=5}] at @s run scoreboard players set @s rng8 8
+execute as @s[scores={rng8=4..8}] at @s anchored eyes positioned ^ ^ ^1.5 run particle electric_spark ~ ~ ~ 0 0 0 0 1
+execute as @s[scores={rng8=4..8}] at @s anchored eyes positioned ^ ^ ^1.8 run particle electric_spark ~ ~ ~ 0 0 0 0 1
+execute as @s[scores={rng8=4..8}] at @s anchored eyes positioned ^ ^ ^2.1 run particle electric_spark ~ ~ ~ 0 0 0 0 1
+execute as @s[scores={rng8=4..8}] at @s anchored eyes positioned ^ ^ ^2.4 run particle electric_spark ~ ~ ~ 0 0 0 0 1
+execute as @s[scores={rng8=4..8}] at @s anchored eyes positioned ^ ^ ^2.7 run particle electric_spark ~ ~ ~ 0 0 0 0 1
+execute as @s[scores={rng8=4..8}] at @s anchored eyes positioned ^ ^ ^3.0 run particle electric_spark ~ ~ ~ 0 0 0 0 1
+execute as @s[scores={rng8=4..8}] at @s anchored eyes positioned ^ ^ ^3.3 run particle electric_spark ~ ~ ~ 0 0 0 0 1
+execute as @s[scores={rng8=4..8}] at @s anchored eyes positioned ^ ^ ^3.6 run particle electric_spark ~ ~ ~ 0 0 0 0 1
+execute as @s[scores={rng8=4..8}] at @s anchored eyes positioned ^ ^ ^3.9 run particle electric_spark ~ ~ ~ 0 0 0 0 1
+execute as @s[scores={rng8=4..8}] at @s anchored eyes positioned ^ ^ ^4.2 run particle electric_spark ~ ~ ~ 0 0 0 0 1
+execute as @s[scores={rng8=4}] at @s run scoreboard players set @s rng8 8
 execute if score SEA_ch5_event_fiona_favor rng1 matches 10.. as @s[scores={rng8=8}] at @s positioned ^ ^0 ^1 if entity @a[distance=0..1] run scoreboard players set @s rng8 9
 execute if score SEA_ch5_event_fiona_favor rng1 matches 10.. as @s[scores={rng8=8}] at @s positioned ^ ^0 ^2 if entity @a[distance=0..1] run scoreboard players set @s rng8 9
 execute if score SEA_ch5_event_fiona_favor rng1 matches 10.. as @s[scores={rng8=8}] at @s positioned ^ ^0 ^3 if entity @a[distance=0..1] run scoreboard players set @s rng8 9

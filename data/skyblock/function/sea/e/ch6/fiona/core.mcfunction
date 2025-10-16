@@ -5,8 +5,8 @@ execute as @s[scores={rng8=0}] store result score @s rng3 run random value 1..4
 execute as @s store result score @s rng3 run random value 1..2
 
 execute if score @s rng3 matches 2 as @s[scores={rng8=0}] at @s store result score @s rng2 run random value 1..3
-execute as @s[scores={rng2=1..3}] if entity @n[tag=SEAmob,distance=..1.5] run tag @s add SEAfiona_act_attack
-execute as @s[scores={rng2=1..3}] unless entity @n[tag=SEAmob,distance=..1.5] run tag @s add SEAfiona_act_laser_attack
+execute as @s[scores={rng2=1..3}] if entity @n[tag=SEAmob,distance=..1] run tag @s add SEAfiona_act_attack
+execute as @s[scores={rng2=1..3}] unless entity @n[tag=SEAmob,distance=..1] run tag @s add SEAfiona_act_laser_attack
 
 execute as @s[tag=SEAfiona_act_attack] at @s run function skyblock:sea/e/ch6/fiona/attack_1
 execute as @s[tag=SEAfiona_act_laser_attack] at @s run tag @s add SEAfiona_laser_attacking
