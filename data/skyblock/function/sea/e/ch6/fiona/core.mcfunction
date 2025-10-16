@@ -1,4 +1,4 @@
-execute as @s at @s store result score @s rng1 if entity @e[tag=SEAmob,distance=0..7,tag=!SEAcreak]
+execute as @s at @s store result score @s rng1 if entity @e[tag=SEAmob,distance=0..7,tag=!SEAcreak,tag=!SEAmob_surrended]
 
 execute as @s[scores={rng8=0}] store result score @s rng3 run random value 1..4
 
