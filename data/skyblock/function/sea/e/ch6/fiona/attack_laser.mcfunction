@@ -6,7 +6,7 @@ execute as @s[scores={rng8=6}] at @s run playsound item.crossbow.loading_middle 
 execute as @s[scores={rng8=7}] at @s run playsound item.crossbow.loading_end hostile @a ~ ~ ~ 1 1.1
 
 execute as @s[scores={rng8=2..3}] at @s run tp @s ~ ~ ~ facing entity @e[sort=random,limit=1,tag=SEAmob,tag=!SEAnpc,distance=..7.6,tag=!SEAmob_surrended,tag=!SEAcreak]
-execute as @s[scores={rng8=2..3}] at @s run rotate @s ~ 0
+execute as @s[scores={rng8=2..3}] at @s run rotate @s ~ ~
 execute as @s[scores={rng8=4}] at @s rotated as @s positioned ^ ^ ^0.8 if entity @n[tag=SEAmob,tag=!SEAnpc,distance=0..0.8,tag=!SEAmob_surrended,tag=!SEAcreak] run tag @s add SEAfiona_targetfound
 execute as @s[scores={rng8=4}] at @s rotated as @s positioned ^ ^ ^0.8 if entity @n[tag=SEAmob,tag=!SEAnpc,distance=0..0.8,tag=!SEAmob_surrended,tag=!SEAcreak] run tag @s add SEAfiona_targetfound_close
 execute as @s[scores={rng8=4},tag=!SEAfiona_targetfound] at @s rotated as @s positioned ^ ^1.3 ^1.6 unless block ~ ~ ~ air unless block ~ ~ ~ fire unless block ~ ~ ~ #all_signs unless block ~ ~ ~ water unless block ~ ~ ~ cobweb unless block ~ ~ ~ #minecraft:flower_pots run scoreboard players set @s rng8 9
