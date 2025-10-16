@@ -8,4 +8,6 @@ execute if entity @a[tag=azrPlayer,distance=4..16] facing entity @p[tag=azrPlaye
 execute if entity @a[tag=azrPlayer,distance=2..16] facing entity @p[tag=azrPlayer] eyes run tp ^ ^ ^0.03
 
 
+particle small_flame ~ ~ ~ 0 0 0 0.03 3
+particle flame ~ ~ ~ 0.1 0.1 0.1 0.00 5
 
