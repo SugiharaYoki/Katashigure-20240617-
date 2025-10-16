@@ -7,21 +7,21 @@ execute as @s[scores={rng8=7}] at @s run playsound item.crossbow.loading_end hos
 
 execute as @s[scores={rng8=2..9}] at @s run tp @s ~ ~ ~ facing entity @e[sort=random,limit=1,tag=SEAmob,tag=!SEAnpc,distance=..7.6,tag=!SEAmob_surrended,tag=!SEAcreak]
 execute as @s[scores={rng8=2..9}] at @s run rotate @s ~ 0
-execute as @s[scores={rng8=4}] at @s positioned ^ ^ ^0.8 if entity @n[tag=SEAmob,tag=!SEAnpc,distance=0..0.8,tag=!SEAmob_surrended,tag=!SEAcreak] run tag @s add SEAfiona_targetfound
-execute as @s[scores={rng8=4}] at @s positioned ^ ^ ^0.8 if entity @n[tag=SEAmob,tag=!SEAnpc,distance=0..0.8,tag=!SEAmob_surrended,tag=!SEAcreak] run tag @s add SEAfiona_targetfound_close
-execute as @s[scores={rng8=4},tag=!SEAfiona_targetfound] at @s positioned ^ ^ ^1.6 unless block ~ ~ ~ air run scoreboard players set @s rng8 9
-execute as @s[scores={rng8=4}] at @s positioned ^ ^ ^1.6 if entity @n[tag=SEAmob,tag=!SEAnpc,distance=0..0.8,tag=!SEAmob_surrended,tag=!SEAcreak] run tag @s add SEAfiona_targetfound
-execute as @s[scores={rng8=4}] at @s positioned ^ ^ ^1.6 if entity @n[tag=SEAmob,tag=!SEAnpc,distance=0..0.8,tag=!SEAmob_surrended,tag=!SEAcreak] run tag @s add SEAfiona_targetfound_close
-execute as @s[scores={rng8=4},tag=!SEAfiona_targetfound] at @s positioned ^ ^ ^2.4 unless block ~ ~ ~ air run scoreboard players set @s rng8 9
-execute as @s[scores={rng8=4}] at @s positioned ^ ^ ^2.4 if entity @n[tag=SEAmob,tag=!SEAnpc,distance=0..0.8,tag=!SEAmob_surrended,tag=!SEAcreak] run tag @s add SEAfiona_targetfound
-execute as @s[scores={rng8=4},tag=!SEAfiona_targetfound] at @s positioned ^ ^ ^3.2 unless block ~ ~ ~ air run scoreboard players set @s rng8 9
-execute as @s[scores={rng8=4}] at @s positioned ^ ^ ^3.2 if entity @n[tag=SEAmob,tag=!SEAnpc,distance=0..0.8,tag=!SEAmob_surrended,tag=!SEAcreak] run tag @s add SEAfiona_targetfound
-execute as @s[scores={rng8=4},tag=!SEAfiona_targetfound] at @s positioned ^ ^ ^4.0 unless block ~ ~ ~ air run scoreboard players set @s rng8 9
-execute as @s[scores={rng8=4}] at @s positioned ^ ^ ^4.0 if entity @n[tag=SEAmob,tag=!SEAnpc,distance=0..0.8,tag=!SEAmob_surrended,tag=!SEAcreak] run tag @s add SEAfiona_targetfound
-execute as @s[scores={rng8=4},tag=!SEAfiona_targetfound] at @s positioned ^ ^ ^4.8 unless block ~ ~ ~ air run scoreboard players set @s rng8 9
-execute as @s[scores={rng8=4}] at @s positioned ^ ^ ^4.8 if entity @n[tag=SEAmob,tag=!SEAnpc,distance=0..0.8,tag=!SEAmob_surrended,tag=!SEAcreak] run tag @s add SEAfiona_targetfound
-execute as @s[scores={rng8=4},tag=!SEAfiona_targetfound] at @s positioned ^ ^ ^5.6 unless block ~ ~ ~ air run scoreboard players set @s rng8 9
-execute as @s[scores={rng8=4}] at @s positioned ^ ^ ^5.6 if entity @n[tag=SEAmob,tag=!SEAnpc,distance=0..0.8,tag=!SEAmob_surrended,tag=!SEAcreak] run tag @s add SEAfiona_targetfound
+execute as @s[scores={rng8=4}] at @s rotated as @s positioned ^ ^ ^0.8 if entity @n[tag=SEAmob,tag=!SEAnpc,distance=0..0.8,tag=!SEAmob_surrended,tag=!SEAcreak] run tag @s add SEAfiona_targetfound
+execute as @s[scores={rng8=4}] at @s rotated as @s positioned ^ ^ ^0.8 if entity @n[tag=SEAmob,tag=!SEAnpc,distance=0..0.8,tag=!SEAmob_surrended,tag=!SEAcreak] run tag @s add SEAfiona_targetfound_close
+execute as @s[scores={rng8=4},tag=!SEAfiona_targetfound] at @s rotated as @s positioned ^ ^ ^1.6 unless block ~ ~ ~ air run scoreboard players set @s rng8 9
+execute as @s[scores={rng8=4}] at @s rotated as @s positioned ^ ^ ^1.6 if entity @n[tag=SEAmob,tag=!SEAnpc,distance=0..0.8,tag=!SEAmob_surrended,tag=!SEAcreak] run tag @s add SEAfiona_targetfound
+execute as @s[scores={rng8=4}] at @s rotated as @s positioned ^ ^ ^1.6 if entity @n[tag=SEAmob,tag=!SEAnpc,distance=0..0.8,tag=!SEAmob_surrended,tag=!SEAcreak] run tag @s add SEAfiona_targetfound_close
+execute as @s[scores={rng8=4},tag=!SEAfiona_targetfound] at @s rotated as @s positioned ^ ^ ^2.4 unless block ~ ~ ~ air run scoreboard players set @s rng8 9
+execute as @s[scores={rng8=4}] at @s rotated as @s positioned ^ ^ ^2.4 if entity @n[tag=SEAmob,tag=!SEAnpc,distance=0..0.8,tag=!SEAmob_surrended,tag=!SEAcreak] run tag @s add SEAfiona_targetfound
+execute as @s[scores={rng8=4},tag=!SEAfiona_targetfound] at @s rotated as @s positioned ^ ^ ^3.2 unless block ~ ~ ~ air run scoreboard players set @s rng8 9
+execute as @s[scores={rng8=4}] at @s rotated as @s positioned ^ ^ ^3.2 if entity @n[tag=SEAmob,tag=!SEAnpc,distance=0..0.8,tag=!SEAmob_surrended,tag=!SEAcreak] run tag @s add SEAfiona_targetfound
+execute as @s[scores={rng8=4},tag=!SEAfiona_targetfound] at @s rotated as @s positioned ^ ^ ^4.0 unless block ~ ~ ~ air run scoreboard players set @s rng8 9
+execute as @s[scores={rng8=4}] at @s rotated as @s positioned ^ ^ ^4.0 if entity @n[tag=SEAmob,tag=!SEAnpc,distance=0..0.8,tag=!SEAmob_surrended,tag=!SEAcreak] run tag @s add SEAfiona_targetfound
+execute as @s[scores={rng8=4},tag=!SEAfiona_targetfound] at @s rotated as @s positioned ^ ^ ^4.8 unless block ~ ~ ~ air run scoreboard players set @s rng8 9
+execute as @s[scores={rng8=4}] at @s rotated as @s positioned ^ ^ ^4.8 if entity @n[tag=SEAmob,tag=!SEAnpc,distance=0..0.8,tag=!SEAmob_surrended,tag=!SEAcreak] run tag @s add SEAfiona_targetfound
+execute as @s[scores={rng8=4},tag=!SEAfiona_targetfound] at @s rotated as @s positioned ^ ^ ^5.6 unless block ~ ~ ~ air run scoreboard players set @s rng8 9
+execute as @s[scores={rng8=4}] at @s rotated as @s positioned ^ ^ ^5.6 if entity @n[tag=SEAmob,tag=!SEAnpc,distance=0..0.8,tag=!SEAmob_surrended,tag=!SEAcreak] run tag @s add SEAfiona_targetfound
 execute as @s[scores={rng8=4},tag=!SEAfiona_targetfound] at @s run scoreboard players set @s rng8 9
 
 execute as @s[scores={rng8=4..8}] at @s run tp @s ~ ~ ~ facing entity @n[tag=SEAmob,tag=!SEAnpc,distance=..5.6,tag=!SEAmob_surrended,tag=!SEAcreak]
