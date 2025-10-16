@@ -29,7 +29,6 @@ execute if score sea_ch2_close_storage rng8 matches 150 unless entity @a[scores=
 execute if score sea_ch2_close_storage sea_4temp2 matches 419 run setblock 90128 132 129 minecraft:tinted_glass
 execute if score sea_ch2_close_storage sea_4temp2 matches 424 run setblock 90121 132 129 minecraft:tinted_glass
 execute if score sea_ch2_close_storage sea_4temp2 matches 427 run setblock 90124 132 129 minecraft:tinted_glass
-#execute if score sea_ch2_close_storage sea_4temp2 matches 431 run setblock 90123 131 123 minecraft:tinted_glass
 execute if score sea_ch2_close_storage sea_4temp2 matches 432 run setblock 90118 131 130 air destroy
 execute if score sea_ch2_close_storage sea_4temp2 matches 435 run setblock 90103 131 129 air destroy
 execute if score sea_ch2_close_storage sea_4temp2 matches 439 run setblock 90109 133 125 air destroy

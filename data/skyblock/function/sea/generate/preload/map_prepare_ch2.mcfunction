@@ -96,7 +96,6 @@ setblock 90120 129 127 minecraft:potted_jungle_sapling
 setblock 90121 132 129 minecraft:white_stained_glass
 setblock 90124 132 129 minecraft:white_stained_glass
 setblock 90150 131 129 minecraft:redstone_lamp[lit=false]
-#setblock 90123 131 123 minecraft:white_stained_glass
 setblock 90128 132 129 minecraft:white_stained_glass
 setblock 90118 131 130 lantern[hanging=true]
 setblock 90103 131 129 lantern[hanging=true]
