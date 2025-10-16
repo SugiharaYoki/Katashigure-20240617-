@@ -1,5 +1,6 @@
 scoreboard players add @s rng1 1
 
+execute if score @s rng1 matches 2 run effect give @s resistance 1 3 true
 execute if score @s[scores={AzrielMobLevel=1..}] rng1 matches 2 run item replace entity @s weapon.mainhand with stone_axe[custom_name='{"text":"石斧","italic":false}',custom_data={stone_axe_normal:1b},custom_model_data={floats:[100001.0]}]
 execute if score @s[scores={AzrielMobLevel=2..}] rng1 matches 2 run item replace entity @s weapon.mainhand with stone_axe[custom_name='{"text":"石斧·尸变","italic":false}',attribute_modifiers=[{id:"azr:stone_axe_zombie.attack_damage",type:"attack_damage",amount:5.0,operation:"add_value",slot:"mainhand"},{id:"azr:stone_axe_zombie.attack_speed",type:"attack_speed",amount:-2.1,operation:"add_value",slot:"mainhand"}],custom_data={stone_axe_zombie:1b},custom_model_data={floats:[100002.0]}]
 execute if score @s[scores={AzrielMobLevel=3..}] rng1 matches 2 run item replace entity @s weapon.mainhand with iron_axe[custom_name='{"text":"铁斧","italic":false}',custom_data={iron_axe_normal:1b},custom_model_data={floats:[100001.0]}]
