@@ -25,6 +25,6 @@ execute at @s if block ~ ~ ~ water run damage @s 4.5 drown
 execute store result score @s rng2 run data get entity @s HurtTime
 
 execute if score @s rng2 matches 2.. as @s at @s unless block ~ ~ ~ air run effect give @s instant_health 1 1 true
-execute if score @s rng2 matches 2.. as @s at @s unless block ~ ~ ~ air run particle white_smoke ~ ~ ~ 0.05 0.05 0.05 0.09 10
-execute if score @s rng2 matches 2.. as @s at @s unless block ~ ~ ~ air run playsound block.fire.extinguish hostile @a ~ ~ ~ 0.6 1.8
+execute if score @s rng2 matches 2.. as @s at @s if block ~ ~ ~ air run particle white_smoke ~ ~ ~ 0.05 0.05 0.05 0.09 10
+execute if score @s rng2 matches 2.. as @s at @s if block ~ ~ ~ air run playsound block.fire.extinguish hostile @a ~ ~ ~ 0.6 1.8
 execute if score @s rng2 matches 2.. as @s at @s run data modify entity @s HurtTime set value 0s
