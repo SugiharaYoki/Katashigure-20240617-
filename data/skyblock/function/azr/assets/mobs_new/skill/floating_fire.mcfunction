@@ -9,7 +9,14 @@ execute if entity @a[tag=azrPlayer,distance=2..16] facing entity @p[tag=azrPlaye
 execute if entity @a[tag=azrPlayer,distance=0..2] facing entity @p[tag=azrPlayer,distance=..2] feet run tp ^ ^0.03 ^0.03
 
 
-particle small_flame ~ ~ ~ 0 0 0 0.02 2
-particle flame ~ ~ ~ 0.05 0.05 0.05 0.00 3
+particle small_flame ~ ~ ~ 0 0 0 0.02 1
+particle flame ~ ~ ~ 0.05 0.05 0.05 0.00 2 force
 
 execute as @a[tag=azrPlayer,distance=..0.5] at @s run damage @s 2 in_fire by @n[tag=AzrielMob_floating_fire]
+
+
+
+execute store result score @s rng2 run data get entity @s HurtTime
+
+execute if score @s rng2 matches 2.. as @s at @s run particle white_smoke ~ ~ ~ 0.05 0.05 0.05 0.19 10
+execute if score @s rng2 matches 2.. as @s at @s run playsound block.fire.extinguish hostile @a ~ ~ ~ 0.6 1.5
