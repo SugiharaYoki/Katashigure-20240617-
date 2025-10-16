@@ -1,7 +1,7 @@
 execute if score sea_ch2_dwight_conversation rng1 matches 1 positioned 90113 128 114 run function skyblock:sea/m/unique/boss2_npc
 execute if score sea_ch2_dwight_conversation rng1 matches 1.. positioned 90113 128 114 as @n[tag=SEAboss2npc] at @s run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
 execute if score sea_ch2_dwight_conversation rng1 matches 5..10 run scoreboard players set sea_ch2_dwight_conversation rng1 5
-execute if score sea_ch2_dwight_conversation rng1 matches 1..19 positioned 90113 128 114 as @n[tag=SEAboss2npc] at @s if entity @p[tag=SEAPT,tag=!SEAPF,distance=0..5] run scoreboard players set sea_ch2_dwight_conversation rng1 20
+execute if score sea_ch2_dwight_conversation rng1 matches 1..19 positioned 90113 128 114 as @n[tag=SEAboss2npc,distance=..20] at @s if entity @p[tag=SEAPT,tag=!SEAPF,distance=0..5] run scoreboard players set sea_ch2_dwight_conversation rng1 20
 execute if score sea_ch2_dwight_conversation rng1 matches 22 positioned 90113 128 113 run kill @e[distance=0..5,type=shulker,tag=SEA_SEEK_DESTINATION]
 execute if score sea_ch2_dwight_conversation rng1 matches 22 positioned 90122 128 132 run function skyblock:sea/m/destination
 execute if score sea_ch2_dwight_conversation rng1 matches 22 positioned 90113 128 114 run playsound entity.bogged.ambient neutral @a ~ ~ ~ 1 0.8
@@ -15,7 +15,7 @@ execute if score sea_ch2_dwight_conversation rng1 matches 48 positioned 90113 12
 execute if score sea_ch2_dwight_conversation rng2 matches 1 positioned 90134 128 126 run function skyblock:sea/m/unique/boss2_npc
 execute if score sea_ch2_dwight_conversation rng2 matches 1.. positioned 90134 128 126 as @n[tag=SEAboss2npc] at @s run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
 execute if score sea_ch2_dwight_conversation rng2 matches 5..10 run scoreboard players set sea_ch2_dwight_conversation rng2 5
-execute if score sea_ch2_dwight_conversation rng2 matches 1..19 positioned 90134 128 126 as @n[tag=SEAboss2npc] at @s if entity @p[tag=SEAPT,tag=!SEAPF,distance=0..3.3] run scoreboard players set sea_ch2_dwight_conversation rng2 20
+execute if score sea_ch2_dwight_conversation rng2 matches 1..19 positioned 90134 128 126 as @n[tag=SEAboss2npc,distance=..20] at @s if entity @p[tag=SEAPT,tag=!SEAPF,distance=0..3.3] run scoreboard players set sea_ch2_dwight_conversation rng2 20
 execute if score sea_ch2_dwight_conversation rng2 matches 22 positioned 90134 128 126 run playsound entity.bogged.ambient neutral @a ~ ~ ~ 1 0.8
 execute if score sea_ch2_dwight_conversation rng2 matches 22 positioned 90134 128 126 run tellraw @a[distance=0..150] [{"text":"神秘的骸骨：","color":"yellow","bold": true},{"text":"\n“我们花了很久……死了很多人，才关掉冷冻装置……”","color":"white","bold": false}]
 execute if score sea_ch2_dwight_conversation rng2 matches 32 positioned 90134 128 126 run playsound entity.bogged.ambient neutral @a ~ ~ ~ 1 0.8
@@ -26,7 +26,7 @@ execute if score sea_ch2_dwight_conversation rng2 matches 48 positioned 90134 12
 execute if score sea_ch2_dwight_conversation rng3 matches 1 positioned 90111 128 139 run function skyblock:sea/m/unique/boss2_npc
 execute if score sea_ch2_dwight_conversation rng3 matches 1.. positioned 90111 128 139 as @n[tag=SEAboss2npc] at @s run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
 execute if score sea_ch2_dwight_conversation rng3 matches 5..10 run scoreboard players set sea_ch2_dwight_conversation rng3 5
-execute if score sea_ch2_dwight_conversation rng3 matches 1..19 positioned 90111 128 139 as @n[tag=SEAboss2npc] at @s if entity @p[tag=SEAPT,tag=!SEAPF,distance=0..4] run scoreboard players set sea_ch2_dwight_conversation rng3 20
+execute if score sea_ch2_dwight_conversation rng3 matches 1..19 positioned 90111 128 139 as @n[tag=SEAboss2npc,distance=..20] at @s if entity @p[tag=SEAPT,tag=!SEAPF,distance=0..4] run scoreboard players set sea_ch2_dwight_conversation rng3 20
 execute if score sea_ch2_dwight_conversation rng3 matches 22 positioned 90111 128 139 run playsound entity.bogged.ambient neutral @a ~ ~ ~ 1 0.8
 execute if score sea_ch2_dwight_conversation rng3 matches 22 positioned 90111 128 139 run tellraw @a[distance=0..150] [{"text":"神秘的骸骨：","color":"yellow","bold": true},{"text":"\n“我曾被抛尸于此。杀死我的凶手……却不是尸变体。”","color":"white","bold": false}]
 execute if score sea_ch2_dwight_conversation rng3 matches 33 positioned 90111 128 139 run playsound entity.bogged.ambient neutral @a ~ ~ ~ 1 0.8
@@ -38,7 +38,7 @@ execute if score sea_ch2_dwight_conversation rng3 matches 48 positioned 90111 12
 execute if score sea_ch2_dwight_conversation rng4 matches 1 positioned 90074 128 147 run function skyblock:sea/m/unique/boss2_npc
 execute if score sea_ch2_dwight_conversation rng4 matches 1.. positioned 90074 128 147 as @n[tag=SEAboss2npc] at @s run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
 execute if score sea_ch2_dwight_conversation rng4 matches 5..10 run scoreboard players set sea_ch2_dwight_conversation rng4 5
-execute if score sea_ch2_dwight_conversation rng4 matches 1..19 positioned 90074 128 147 as @n[tag=SEAboss2npc] at @s if entity @p[tag=SEAPT,tag=!SEAPF,distance=0..3.3] run scoreboard players set sea_ch2_dwight_conversation rng4 20
+execute if score sea_ch2_dwight_conversation rng4 matches 1..19 positioned 90074 128 147 as @n[tag=SEAboss2npc,distance=..20] at @s if entity @p[tag=SEAPT,tag=!SEAPF,distance=0..3.3] run scoreboard players set sea_ch2_dwight_conversation rng4 20
 execute if score sea_ch2_dwight_conversation rng4 matches 22 positioned 90074 128 147 run playsound entity.bogged.ambient neutral @a ~ ~ ~ 1 0.8
 execute if score sea_ch2_dwight_conversation rng4 matches 22 positioned 90074 128 147 run tellraw @a[distance=0..150] [{"text":"神秘的骸骨：","color":"yellow","bold": true},{"text":"\n“我相信他是被圣水晶影响的。\n他……不是我认识的瑞佛特先生。”","color":"white","bold": false}]
 execute if score sea_ch2_dwight_conversation rng4 matches 33 positioned 90074 128 147 run playsound entity.bogged.ambient neutral @a ~ ~ ~ 1 0.8
@@ -51,7 +51,7 @@ execute if score sea_ch2_dwight_conversation rng4 matches 49 positioned 90074 12
 execute if score sea_ch2_dwight_conversation rng5 matches 1 positioned 90128 129 106 run function skyblock:sea/m/unique/boss2_npc
 execute if score sea_ch2_dwight_conversation rng5 matches 1.. positioned 90128 129 106 as @n[tag=SEAboss2npc] at @s run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
 execute if score sea_ch2_dwight_conversation rng5 matches 5..10 run scoreboard players set sea_ch2_dwight_conversation rng5 5
-execute if score sea_ch2_dwight_conversation rng5 matches 1..19 positioned 90128 129 106 as @n[tag=SEAboss2npc] at @s if entity @p[tag=SEAPT,tag=!SEAPF,distance=0..5] run scoreboard players set sea_ch2_dwight_conversation rng5 20
+execute if score sea_ch2_dwight_conversation rng5 matches 1..19 positioned 90128 129 106 as @n[tag=SEAboss2npc,distance=..20] at @s if entity @p[tag=SEAPT,tag=!SEAPF,distance=0..5] run scoreboard players set sea_ch2_dwight_conversation rng5 20
 execute if score sea_ch2_dwight_conversation rng5 matches 22 positioned 90128 129 106 run playsound entity.bogged.ambient neutral @a ~ ~ ~ 1 0.8
 execute if score sea_ch2_dwight_conversation rng5 matches 22 positioned 90128 129 106 run tellraw @a[distance=0..150] [{"text":"神秘的骸骨：","color":"yellow","bold": true},{"text":"\n“我……我不该在这里，我……\n为什么、我会忘记那么重要的事……”","color":"white","bold": false}]
 execute if score sea_ch2_dwight_conversation rng5 matches 34 positioned 90128 129 106 run playsound entity.bogged.ambient neutral @a ~ ~ ~ 1 0.8
