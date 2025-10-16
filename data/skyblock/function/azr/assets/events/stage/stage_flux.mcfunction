@@ -54,6 +54,10 @@ execute if score stage_bonus_thread AzrTimerStack matches 135 run advancement gr
 execute if score stage_bonus_thread AzrTimerStack matches 135 as @a[tag=azrPlayer] at @s run tag @s add AZS_BoS06
 execute if score stage_bonus_thread AzrTimerStack matches 135 as @a[tag=azrPlayer] at @s run give @s emerald 5
 execute if score stage_bonus_thread AzrTimerStack matches 135 as @a[tag=azrPlayer] at @s run function skyblock:azr/assets/items/amulets/fire_lit
+
+execute if score stage_bonus_thread AzrTimerStack matches 135 positioned -79936 37 170 run function skyblock:azr/assets/mobs_new/floating_fire
+execute if score stage_bonus_thread AzrTimerStack matches 135 positioned -79920 40 189 run function skyblock:azr/assets/mobs_new/floating_fire
+
 execute if score stage_bonus_thread AzrTimerStack matches 134..135 run playsound ambient.soul_sand_valley.additions ambient @a[tag=azrShowDialog] -78000 100 0 1000
 execute if score stage_bonus_thread AzrTimerStack matches 134..135 run playsound ambient.soul_sand_valley.mood ambient @a[tag=azrShowDialog] -78000 100 0 1000
 execute if score stage_bonus_thread AzrTimerStack matches 135 run scoreboard players set stage_bonus Azr_system 0

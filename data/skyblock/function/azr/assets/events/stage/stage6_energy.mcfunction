@@ -29,6 +29,7 @@ execute positioned -79931 36 171 as @n[tag=AzrielMarker_encounter,distance=0..0.
 execute positioned -79931 36 171 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79920 37 172 run function skyblock:azr/assets/mobs_new/spider_giant
 execute positioned -79931 36 171 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79920 37 172 run function skyblock:azr/assets/mobs_new/spider_mini
 execute positioned -79931 36 171 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79920 37 172 run function skyblock:azr/assets/mobs_new/spider_mini
+execute positioned -79931 36 171 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79931 39 199 run function skyblock:azr/assets/mobs_new/floating_fire
 
 execute positioned -79931 36 171 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] as @a[tag=azrPlayer] at @s run function skyblock:azr/system/shop/purchase/handbook/input {doc:undead_fire}
 
