@@ -24,10 +24,6 @@ execute as @s[scores={rng8=4},tag=!SEAfiona_targetfound] at @s rotated as @s pos
 execute as @s[scores={rng8=4}] at @s rotated as @s positioned ^ ^ ^5.6 if entity @n[tag=SEAmob,tag=!SEAnpc,distance=0..0.8,tag=!SEAmob_surrended,tag=!SEAcreak] run tag @s add SEAfiona_targetfound
 execute as @s[scores={rng8=4},tag=!SEAfiona_targetfound] at @s run scoreboard players set @s rng8 9
 
-execute as @s[scores={rng8=9}] run say 撞墙
-execute as @s[scores={rng8=6}] run say 找到敌人
-execute as @s[scores={rng8=6},tag=SEAfiona_targetfound] run say 真的找到敌人了
-execute as @s[scores={rng8=6},tag=!SEAfiona_targetfound] run say 我骗你的
 execute as @s[scores={rng8=6}] run effect give @n[tag=SEAmob,tag=!SEAnpc,distance=0..7,tag=!SEAmob_surrended,tag=!SEAcreak] glowing 3 0 true
 
 execute as @s[scores={rng8=4..8}] at @s run rotate @s facing entity @n[tag=SEAmob,tag=!SEAnpc,distance=..5.6,tag=!SEAmob_surrended,tag=!SEAcreak]
@@ -65,6 +61,8 @@ execute as @s[scores={rng8=8}] at @s positioned ^ ^ ^0.5 if score SEA_ch5_event_
 execute as @s[scores={rng8=8}] at @s run data modify entity @n[type=arrow,tag=SEAfiona_arrow1] Motion set from entity @n[tag=SEAfiona_arrow_marker,type=marker] Pos
 execute as @s[scores={rng8=8}] at @s run kill @e[tag=SEAfiona_arrow_marker,type=marker]
 
+execute as @s[scores={rng8=8..}] at @s run tag @s remove SEAfiona_targetfound
+execute as @s[scores={rng8=8..}] at @s run tag @s remove SEAfiona_targetfound_close
 execute as @s[scores={rng8=8..}] at @s run tag @s remove SEAfiona_laser_attacking
 execute as @s[scores={rng8=8..}] at @s run scoreboard players set @s rng8 0
 
