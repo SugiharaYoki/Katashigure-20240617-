@@ -15,6 +15,11 @@ particle flame ~ ~ ~ 0.05 0.05 0.05 0.00 1 force
 execute as @a[tag=azrPlayer,distance=..0.5] at @s run damage @s 2 in_fire by @n[tag=AzrielMob_floating_fire]
 
 execute at @s if predicate skyblock:raining positioned over world_surface if entity @s[distance=..0.5] run damage @s 0.5 drown
+execute at @s if predicate skyblock:raining positioned over world_surface positioned ~ ~0.8 ~ if entity @s[distance=..0.5] run damage @s 0.5 drown
+execute at @s if predicate skyblock:raining positioned over world_surface positioned ~ ~1.6 ~ if entity @s[distance=..0.5] run damage @s 0.5 drown
+execute at @s if predicate skyblock:raining positioned over world_surface positioned ~ ~2.4 ~ if entity @s[distance=..0.5] run damage @s 0.5 drown
+execute at @s if predicate skyblock:raining positioned over world_surface positioned ~ ~3.2 ~ if entity @s[distance=..0.5] run damage @s 0.5 drown
+execute at @s if predicate skyblock:raining positioned over world_surface positioned ~ ~4.0 ~ if entity @s[distance=..0.5] run damage @s 0.5 drown
 execute at @s if block ~ ~ ~ water run damage @s 1.5 drown
 
 execute store result score @s rng2 run data get entity @s HurtTime
