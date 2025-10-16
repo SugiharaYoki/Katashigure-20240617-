@@ -47,7 +47,7 @@ execute if score stage_bonus_thread AzrTimerStack matches 129 positioned -79962 
 execute if score stage_bonus_thread AzrTimerStack matches 127 positioned -79952 38 199 run function skyblock:azr/assets/mobs_new/undead_fire
 execute if score stage_bonus_thread AzrTimerStack matches 131 positioned -79952 38 199 run function skyblock:azr/assets/mobs_new/sword
 
-execute if score stage_bonus_thread AzrTimerStack matches 132..133 positioned -79952 38 199 if entity @n[distance=..10,tag=AzrielMob_undead_fire] run scoreboard players set stage_bonus_thread AzrTimerStack 91325
+execute if score stage_bonus_thread AzrTimerStack matches 132..133 positioned -79952 38 199 if entity @n[distance=..8,tag=AzrielMob_undead_fire] run scoreboard players set stage_bonus_thread AzrTimerStack 91325
 
 execute if score stage_bonus_thread AzrTimerStack matches 135 run title @a[tag=azrShowDialog] actionbar {"text":"Extra Stage Clear","color":"green"}
 execute if score stage_bonus_thread AzrTimerStack matches 135 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage_bonus_flux
