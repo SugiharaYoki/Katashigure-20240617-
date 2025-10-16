@@ -19,5 +19,5 @@ execute as @a[tag=azrPlayer,distance=..0.5] at @s run damage @s 2 in_fire by @n[
 execute store result score @s rng2 run data get entity @s HurtTime
 
 execute if score @s rng2 matches 2.. as @s at @s run particle white_smoke ~ ~ ~ 0.05 0.05 0.05 0.09 10
-execute if score @s rng2 matches 2.. as @s at @s run playsound block.fire.extinguish hostile @a ~ ~ ~ 0.6 1.5
+execute if score @s rng2 matches 2.. as @s at @s run playsound block.fire.extinguish hostile @a ~ ~ ~ 0.6 1.8
 execute if score @s rng2 matches 2.. as @s at @s run data modify entity @s HurtTime set value 0s
