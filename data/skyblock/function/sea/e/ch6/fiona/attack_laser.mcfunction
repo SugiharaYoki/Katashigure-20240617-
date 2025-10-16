@@ -5,11 +5,13 @@ execute as @s[scores={rng8=5}] at @s run playsound item.crossbow.loading_start h
 execute as @s[scores={rng8=6}] at @s run playsound item.crossbow.loading_middle hostile @a ~ ~ ~ 1 1.1
 execute as @s[scores={rng8=7}] at @s run playsound item.crossbow.loading_end hostile @a ~ ~ ~ 1 1.1
 
-execute as @s[scores={rng8=2..6}] at @s run tp @s ~ ~ ~ facing entity @e[sort=random,limit=1,tag=SEAmob,tag=!SEAnpc,distance=..7.6,tag=!SEAmob_surrended,tag=!SEAcreak]
-execute as @s[scores={rng8=2..6}] at @s run rotate @s ~ 0
+execute as @s[scores={rng8=2..9}] at @s run tp @s ~ ~ ~ facing entity @e[sort=random,limit=1,tag=SEAmob,tag=!SEAnpc,distance=..7.6,tag=!SEAmob_surrended,tag=!SEAcreak]
+execute as @s[scores={rng8=2..9}] at @s run rotate @s ~ 0
 execute as @s[scores={rng8=4}] at @s positioned ^ ^ ^0.8 if entity @n[tag=SEAmob,tag=!SEAnpc,distance=0..0.8,tag=!SEAmob_surrended,tag=!SEAcreak] run tag @s add SEAfiona_targetfound
+execute as @s[scores={rng8=4}] at @s positioned ^ ^ ^0.8 if entity @n[tag=SEAmob,tag=!SEAnpc,distance=0..0.8,tag=!SEAmob_surrended,tag=!SEAcreak] run tag @s add SEAfiona_targetfound_close
 execute as @s[scores={rng8=4},tag=!SEAfiona_targetfound] at @s positioned ^ ^ ^1.6 unless block ~ ~ ~ air run scoreboard players set @s rng8 9
 execute as @s[scores={rng8=4}] at @s positioned ^ ^ ^1.6 if entity @n[tag=SEAmob,tag=!SEAnpc,distance=0..0.8,tag=!SEAmob_surrended,tag=!SEAcreak] run tag @s add SEAfiona_targetfound
+execute as @s[scores={rng8=4}] at @s positioned ^ ^ ^1.6 if entity @n[tag=SEAmob,tag=!SEAnpc,distance=0..0.8,tag=!SEAmob_surrended,tag=!SEAcreak] run tag @s add SEAfiona_targetfound_close
 execute as @s[scores={rng8=4},tag=!SEAfiona_targetfound] at @s positioned ^ ^ ^2.4 unless block ~ ~ ~ air run scoreboard players set @s rng8 9
 execute as @s[scores={rng8=4}] at @s positioned ^ ^ ^2.4 if entity @n[tag=SEAmob,tag=!SEAnpc,distance=0..0.8,tag=!SEAmob_surrended,tag=!SEAcreak] run tag @s add SEAfiona_targetfound
 execute as @s[scores={rng8=4},tag=!SEAfiona_targetfound] at @s positioned ^ ^ ^3.2 unless block ~ ~ ~ air run scoreboard players set @s rng8 9
@@ -47,7 +49,8 @@ execute if score SEA_ch5_event_fiona_favor rng1 matches 10.. as @s[scores={rng8=
 execute if score SEA_ch5_event_fiona_favor rng1 matches 10.. as @s[scores={rng8=8}] at @s positioned ^ ^0 ^4.5 if entity @a[distance=0..1] run scoreboard players set @s rng8 9
 execute if score SEA_ch5_event_fiona_favor rng1 matches 10.. as @s[scores={rng8=8}] at @s positioned ^ ^0 ^5.5 if entity @a[distance=0..1] run scoreboard players set @s rng8 9
 execute if score SEA_ch5_event_fiona_favor rng1 matches 10.. as @s[scores={rng8=8}] at @s positioned ^ ^0 ^6.5 if entity @a[distance=0..1] run scoreboard players set @s rng8 9
-execute as @s[scores={rng8=8}] at @s run execute positioned 0.0 0 0.0 run summon marker ^ ^0.15 ^2 {Tags:["SEAfiona_arrow_marker"]}
+execute as @s[scores={rng8=8},tag=!SEAfiona_targetfound_close] at @s run execute positioned 0.0 0 0.0 run summon marker ^ ^0.15 ^2 {Tags:["SEAfiona_arrow_marker"]}
+execute as @s[scores={rng8=8},tag=SEAfiona_targetfound_close] at @s run execute positioned 0.0 0 0.0 run summon marker ^ ^0.15 ^0.8 {Tags:["SEAfiona_arrow_marker"]}
 execute as @s[scores={rng8=8}] at @s run execute as @e[tag=SEAfiona_arrow_marker,type=marker] at @s run tp @s ~ 0.05 ~
 execute as @s[scores={rng8=8}] at @s run playsound entity.arrow.shoot hostile @a ~ ~1.5 ~ 1 1.1
 execute as @s[scores={rng8=8}] at @s positioned ^ ^ ^0.5 if score SEA_ch5_event_fiona_favor rng1 matches ..3 run summon arrow ~ ~1.5 ~ {Tags:["SEAfiona_arrow1"],life:1100,damage:3.0,HasVisualFire:true,Fire:true,PierceLevel:3}
