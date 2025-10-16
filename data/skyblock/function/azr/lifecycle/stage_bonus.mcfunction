@@ -9,6 +9,8 @@
     execute if score stage_bonus Azr_system matches 4 run function skyblock:azr/assets/events/stage/stage_diffident
     # Entertain
     execute if score stage_bonus Azr_system matches 5 run function skyblock:azr/assets/events/stage/stage_entertain
+    # Flux
+    execute if score stage_bonus Azr_system matches 6 run function skyblock:azr/assets/events/stage/stage_flux
     # Object
     execute if score stage_bonus Azr_system matches 15 run function skyblock:azr/assets/events/stage/stage_object
     # Suspension

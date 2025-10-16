@@ -189,6 +189,13 @@ setblock -79917 38 191 minecraft:birch_button[facing=east]
 setblock -79926 45 210 chest[facing=north]
 item replace block -79926 45 210 container.12 with bone 1
 item replace block -79926 45 210 container.14 with bone 1
+setblock -79928 37 200 chest[facing=north]
+item replace block -79928 37 200 container.12 with emerald 2
+item replace block -79928 37 200 container.14 with emerald 2
+
+#stage flux
+setblock -79960 39 193 birch_button[facing=north,face=floor]
+
 
 
 #entertain
