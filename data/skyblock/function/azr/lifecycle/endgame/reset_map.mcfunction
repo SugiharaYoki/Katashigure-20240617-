@@ -22,6 +22,30 @@ forceload add -79400 200 -79200 400
 setblock -79937 38 -12 air
 setblock -79937 38 -12 minecraft:lectern[facing=north,has_book=true,powered=false]{Book:{components:{"written_book_content":{title:{raw:"Azriel's Midgarden"},author:"You",pages:[{raw:'"『亚兹列尔的中庭花园』\\n游戏背景故事\\n\\n死亡。\\n\\n死亡总是在不经意间，\\n悄然而至。\\n\\n但你并不理解， 有着许多未完之事的你，\\n为何偏偏会在此刻意外死去？\\n\\n你本能活得更久。"'},{raw:'"\\n你本该活得更久。\\n\\n来到地狱之时， 你早已决定试着放下心中的一切， 坦然迎接属于自己的最终结局。\\n\\n但魔界的使者， 被称为亚米的魔神， 将你送至了通往神庭的传送门。"'},{raw:'"他将那则秘密告知予你：\\n\\n如果想要违抗自己的死亡，\\n夺得更久的生命……\\n\\n——那就， 前往天界的生命树庭园吧。\\n\\n至少， 你看上去并没什么其他选择。"'},{raw:'"想要活得更久？\\n规则很简单。\\n\\n那便是， 攻破那座庭园的守卫， 向庭园关口的两位领袖发起挑战。\\n\\n若他们能够认同自己实力的话， 那自己就有机会获得庭园之主沙利叶的赏识， 获得继续在现实世界活下去的资格。"'},{raw:'"但……你作为一名手无寸铁的普通人类， 如何是好？\\n\\n魔界的使者赐予了你能够接通灵能网络的能力。\\n只要通过这本附上魔界法术的书籍， 便可在灵能网络的帮助下， 获得更强的力量， 以及装备……\\n\\n被赋予这一切的你，\\n踏上了前往天庭的路。"'},{raw:'"\\n\\n\\n\\n\\n你的前方， 是一条未知且极端险峻的道路。"'},{raw:'"\\n\\n\\n\\n\\n现在，\\n你正伫立于神界生命树庭园的入口前方。"'}]}},count:1,id:"minecraft:written_book"},Page:0}
 
+#开局的按钮
+setblock -79937 39 -12 birch_button[facing=north,face=wall]
+
+#游戏开场
+forceload add -79541 -472 -79345 -350
+forceload add -79950 -2150 -79800 -1850
+setblock -79775 106 -2074 minecraft:potted_blue_orchid
+setblock -79769 105 -2079 smoker[facing=west]
+
+setblock -79774 105 -2077 minecraft:redstone_block
+setblock -79774 105 -2077 minecraft:air
+setblock -79771 105 -2076 minecraft:redstone_block
+setblock -79771 105 -2076 minecraft:air
+setblock -79764 105 -2067 minecraft:redstone_block
+setblock -79764 105 -2067 minecraft:air
+setblock -79436 30 -404 minecraft:anvil[facing=east]
+
+setblock -79388 24 -400 air
+setblock -79388 24 -400 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:flint"}}
+setblock -79396 26 -384 air
+setblock -79396 26 -384 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:flint"}}
+
+fill -79370 27 -373 -79372 26 -373 minecraft:iron_bars
+
 
 #start gate
 fill -79933 38 -15 -79933 40 -14 minecraft:purple_stained_glass
@@ -35,6 +59,7 @@ setblock -79919 39 24 birch_button[facing=south]{name: "Spider Room bonus"}
 setblock -79946 39 50 minecraft:birch_button[face=floor,facing=north]{name: "Stage Cerement"}
 setblock -79959 39 20 minecraft:birch_button[face=floor,facing=west]{name: "Stage4 beta bonus"}
 setblock -79885 39 39 minecraft:birch_button[face=wall,facing=west]{name: "Before Boss2"}
+
 
 #Stage1
 setblock -79949 34 15 chest[facing=north]
@@ -78,6 +103,8 @@ setblock -79938 38 19 minecraft:potted_azalea_bush
 setblock -79938 38 21 minecraft:potted_azalea_bush
 
 #Spider Room
+setblock -79928 40 34 minecraft:quartz_block
+setblock -79924 38 33 air
 setblock -79922 38 35 air
 setblock -79922 38 35 trapped_chest[facing=east]{lock:{components:{custom_data:{key_required:1b}}}}
 item replace block -79922 38 35 container.11 with minecraft:beef 5
@@ -90,6 +117,7 @@ setblock -79915 38 34 minecraft:quartz_block{name: "secret chest"}
 setblock -79915 40 34 minecraft:quartz_block{name: "secret chest"}
 
 #Stage4 alpha
+setblock -79932 39 42 birch_button[face=wall,facing=east]
 setblock -79931 43 42 barrier
 setblock -79930 43 41 barrier
 setblock -79932 43 41 barrier
@@ -107,7 +135,7 @@ fill -79931 48 43 -79931 48 45 minecraft:quartz_block
 setblock -79939 38 20 air
 setblock -79939 38 20 trapped_chest[facing=west]{lock:{components:{custom_data:{key_required:1b}}}}
 item replace block -79939 38 20 container.11 with emerald 3
-item replace block -79939 38 20 container.13 with skull_banner_pattern[custom_name='{"text":"“仍旧在调查魔物失控的真相”","color":"dark_purple","italic":false}',lore=['{"text":"拉斐尔大人告知我丢失钥匙并无大碍，","color":"white","italic":false}','{"text":"地下水路东区不存在任何有用的事物。","color":"white","italic":false}','{"text":"可那里明明封印着源自各处的亡灵……","color":"white","italic":false}']]
+item replace block -79939 38 20 container.13 with skull_banner_pattern[custom_name='{"text":"“仍旧在调查魔物失控的真相”","color":"dark_purple","italic":false}',lore=['{"text":"拉斐尔大人告知我丢失钥匙并无大碍，","color":"white","italic":false}','{"text":"地下水路东区不存在任何有用的事物。","color":"white","italic":false}','{"text":"可那里切切实实地封印着一位魔神啊……","color":"white","italic":false}']]
 item replace block -79939 38 20 container.15 with iron_ingot 1
 
 #Stage Cerement
@@ -121,6 +149,7 @@ item replace block -79951 38 59 container.11 with minecraft:emerald 5
 item replace block -79951 38 59 container.13 with minecraft:emerald 5
 item replace block -79951 38 59 container.15 with minecraft:emerald 5
 fill -79950 38 58 -79951 39 58 quartz_block
+item replace block -79939 39 58 container.13 with tripwire_hook[custom_name='{"text":"白方岩钥匙","color":"blue","italic":false}',custom_data={key_stone:1b}] 1
 
 setblock -79949 39 61 minecraft:white_stained_glass
 setblock -79943 39 61 minecraft:white_stained_glass
@@ -128,24 +157,10 @@ setblock -79943 39 61 minecraft:white_stained_glass
 #Stage Diffident
 fill -79915 32 0 -79917 35 0 air
 
-#even1
+#event1
 fill -79930 42 54 -79932 38 54 air{name: "clear anvil barrier"}
 fill -79930 38 53 -79932 41 53 air{name: "clear anvil barrier"}
-
-#______________________________________________________________#
-
-setblock -79922 54 -110 barrel[facing=east]
-setblock -79924 54 -109 minecraft:chipped_anvil[facing=west]
-setblock -79912 55 -101 minecraft:birch_button[face=wall,facing=west]
-setblock -79907 46 -111 minecraft:air
-setblock -79867 48 -109 lever[facing=east,face=floor,powered=false]
-setblock -79956 39 -29 air
-setblock -28 143 -58 minecraft:air
-setblock -23 143 -53 air
-setblock -79937 39 -12 birch_button[facing=north,face=wall]
-setblock -79928 40 34 minecraft:quartz_block
-setblock -79932 39 42 birch_button[face=wall,facing=east]
-setblock -79924 38 33 air
+  #碎灯走廊
 setblock -79928 39 56 sea_lantern
 setblock -79928 39 58 sea_lantern
 setblock -79928 39 60 sea_lantern
@@ -164,11 +179,13 @@ setblock -79934 39 66 sea_lantern
 setblock -79934 39 68 sea_lantern
 setblock -79934 39 70 sea_lantern
 setblock -79934 39 72 sea_lantern
+
+#stage5
 setblock -79928 39 125 birch_button[facing=north,face=wall]
 setblock -79934 39 125 birch_button[facing=north,face=wall]
-#stage5
 setblock -79929 39 125 minecraft:potted_oak_sapling
 setblock -79933 39 125 minecraft:potted_dead_bush
+
 #供能区域
 fill -79931 35 171 -79931 35 183 minecraft:red_concrete replace minecraft:redstone_block
 setblock -79920 37 176 chest[facing=north]
@@ -197,11 +214,12 @@ item replace block -79928 37 200 container.14 with emerald 2
 setblock -79960 39 193 birch_button[facing=north,face=floor]
 fill -79936 36 197 -79936 36 198 air
 
+#stage6
+fill -79917 41 134 -79917 38 136 minecraft:purple_stained_glass
+setblock -79943 39 135 minecraft:birch_button[facing=west,face=floor]
 
-
-
- 
 #stage7
+setblock -79902 39 103 birch_button[facing=south]
 setblock -79904 44 137 minecraft:potted_azure_bluet
 setblock -79904 44 133 minecraft:potted_azure_bluet
 setblock -79904 43 135 chest[facing=east]
@@ -209,22 +227,18 @@ item replace block -79904 43 135 container.12 with minecraft:flint 2
 item replace block -79904 43 135 container.12 with tripwire_hook[custom_name='{"text":"椅子形状的钥匙","color":"blue","italic":false}',custom_data={key_chair:1b}] 1
 
 #entertain
-setblock -79917 44 165 minecraft:potted_cornflower
-setblock -79917 44 163 minecraft:potted_cornflower
-setblock -79857 44 163 minecraft:potted_cornflower
-setblock -79857 44 165 minecraft:potted_cornflower
   #十字结界
 fill -79886 43 188 -79888 46 188 minecraft:purple_stained_glass
 fill -79914 43 188 -79916 46 188 minecraft:purple_stained_glass
 fill -79862 43 163 -79862 46 165 minecraft:purple_stained_glass
 fill -79886 43 132 -79888 45 132 minecraft:purple_stained_glass
-  #十字南 阳台阁楼
+  #十字北 阳台阁楼 招待厅
 setblock -79889 46 115 chest[facing=east]
 #临时替代：目前月色石钥匙没有使用，金镐图案的钥匙锁没有对应的钥匙，暂时将其替换为金镐图案的钥匙
 #item replace block -79889 46 115 container.12 with tripwire_hook[custom_name='{"text":"月色石钥匙","color":"blue","italic":false}',custom_data={key_moon:1b}] 1
 item replace block -79889 46 115 container.12 with tripwire_hook[custom_name='{"text":"金镐图案的钥匙","color":"blue","italic":false}',custom_data={key_golden_pickaxe:1b}] 1
 item replace block -79889 46 115 container.14 with emerald 3
-  #十字北
+  #十字南 供能区域
 setblock -79886 44 194 minecraft:potted_azure_bluet
 setblock -79888 44 194 minecraft:potted_azure_bluet
 setblock -79884 43 191 air
@@ -232,28 +246,24 @@ setblock -79884 43 191 trapped_chest[facing=west]{lock:{components:{custom_data:
 item replace block -79884 43 191 container.11 with emerald 5
 item replace block -79884 43 191 container.13 with minecraft:dried_kelp 8
 item replace block -79884 43 191 container.15 with skull_banner_pattern[custom_name='{"text":"“招待厅事务记录4”","color":"dark_purple","italic":false}',lore=['{"text":"魔界最近好像在刻意引导亡灵前来挑战神庭试炼，","color":"white","italic":false}','{"text":"他们到底在打什么算盘？","color":"white","italic":false}','{"text":"有没有试炼者应该是神庭担心的事情，","color":"white","italic":false}','{"text":"他们这么替我们操心吗？？","color":"white","italic":false}']] 1
-  #十字西
+  #十字西 供能区域
+setblock -79917 44 165 minecraft:potted_cornflower
+setblock -79917 44 163 minecraft:potted_cornflower
 setblock -79918 44 180 minecraft:potted_flowering_azalea_bush
 setblock -79918 44 176 minecraft:potted_flowering_azalea_bush
 setblock -79918 44 172 minecraft:potted_flowering_azalea_bush
 setblock -79912 44 180 minecraft:potted_flowering_azalea_bush
 setblock -79912 44 176 minecraft:potted_flowering_azalea_bush
 setblock -79912 44 172 minecraft:potted_flowering_azalea_bush
+  #十字东 图书馆
+setblock -79857 44 163 minecraft:potted_cornflower
+setblock -79857 44 165 minecraft:potted_cornflower
 
-
-
-
-
-
-
-
-
-
-fill -79917 41 134 -79917 38 136 minecraft:purple_stained_glass
-setblock -79943 39 135 minecraft:birch_button[facing=west,face=floor]
-setblock -79901 49 131 minecraft:birch_button[facing=east]
-setblock -79902 39 103 birch_button[facing=south]
+#stage7 ~ 8 道中
+  #庭园隐藏按钮
 setblock -79901 39 67 minecraft:birch_button[facing=east]
+
+#stage8
 setblock -79898 38 62 air
 setblock -79898 38 60 air
 setblock -79898 38 58 air
@@ -262,6 +272,29 @@ setblock -79898 38 54 air
 setblock -79898 38 52 air
 setblock -79898 38 50 air
 setblock -79888 39 67 birch_button[facing=west]
+
+
+
+
+#stage8~9道中 水下小钥匙
+item replace block -79939 35 -76 container.11 with minecraft:dried_kelp 6
+item replace block -79939 35 -76 container.13 with tripwire_hook[custom_name='{"text":"蓝宝石钥匙","color":"blue","italic":false}',custom_data={key_sapphire:1b}] 1
+item replace block -79939 35 -76 container.15 with minecraft:dried_kelp 6
+
+# ↓↓ 待修改 ↓↓
+
+#______________________________________________________________#
+#牢房区域铁砧
+setblock -79924 54 -109 minecraft:chipped_anvil[facing=west]
+#stage appetence
+setblock -79912 55 -101 minecraft:birch_button[face=wall,facing=west]
+#权之殊能初次攻击后的垫脚盒子 重置为空气
+setblock -79907 46 -111 minecraft:air
+#牢房区域 stage12入口的开关
+setblock -79867 48 -109 lever[facing=east,face=floor,powered=false]
+
+
+
 setblock -79924 39 -72 birch_button[face=floor,facing=west]
 setblock -79891 49 136 minecraft:birch_button[face=floor,facing=east]
 setblock -79925 24 136 air
@@ -413,6 +446,7 @@ setblock -79897 38 55 minecraft:potted_flowering_azalea_bush
 setblock -79897 38 53 minecraft:potted_flowering_azalea_bush
 setblock -79897 38 51 minecraft:potted_flowering_azalea_bush
 #______________________________________________________________#
+#boss4
 fill -79519 42 -321 -79553 42 -355 air replace fire
 fill -79948 38 -13 -79948 42 -16 air
 fill -79928 38 34 -79928 38 35 quartz_pillar
@@ -482,10 +516,6 @@ fill -79789 27 -312 -79789 27 -302 air
 fill -79777 44 -300 -79777 43 -300 minecraft:cracked_nether_bricks
 fill -79876 47 -111 -79877 52 -107 air
 fill -79936 55 -120 -79935 54 -120 air
-fill -79871 48 -106 -79872 47 -106 minecraft:blast_furnace[facing=north]
-fill -79871 48 -112 -79872 47 -112 minecraft:blast_furnace[facing=south]
-fill -79863 48 -106 -79862 47 -106 minecraft:blast_furnace[facing=north]
-fill -79863 48 -112 -79862 47 -112 minecraft:blast_furnace[facing=south]
 fill -79873 47 -110 -79873 48 -108 air
 fill -79820 48 -130 -79820 53 -127 black_concrete
 fill -79922 45 -113 -79922 45 -111 minecraft:air
@@ -495,24 +525,23 @@ clone -79908 36 -41 -79904 43 -32 -79933 37 -27
 clone -79919 24 -134 -79913 30 -123 -79908 39 -134
 clone -79613 14 -401 -79606 18 -394 -79613 14 -420
 #______________________________________________________________#
-execute if block -79895 50 126 air run fill -79895 50 126 -79895 48 127 minecraft:purple_stained_glass
-item replace block -79939 39 58 container.13 with tripwire_hook[custom_name='{"text":"白方岩钥匙","color":"blue","italic":false}',custom_data={key_stone:1b}] 1
-item replace block -79925 24 136 container.12 with flint 5
-item replace block -79925 24 136 container.14 with honey_bottle 2
+#stage11 牢房小道具
 item replace block -79898 40 -109 container.11 with minecraft:gunpowder
 item replace block -79898 40 -109 container.13 with iron_ingot
 item replace block -79898 40 -109 container.15 with minecraft:gunpowder
-item replace block -79903 40 -104 container.11 with minecraft:dried_kelp 8
+#stage11 牢房小道具
+item replace block -79903 40 -104 container.11 with emerald 2
 item replace block -79903 40 -104 container.13 with minecraft:beef 2
-item replace block -79903 40 -104 container.15 with minecraft:bread 2
+item replace block -79903 40 -104 container.15 with emerald 2
+#stage11 牢房小道具
 item replace block -79929 47 -110 container.13 with tripwire_hook[custom_name='{"text":"纸张图案的钥匙","color":"blue","italic":false}',custom_data={key_paper:1b}] 1
-item replace block -79897 40 -115 container.12 with minecraft:eye_armor_trim_smithing_template 1
-item replace block -79897 40 -115 container.14 with minecraft:eye_armor_trim_smithing_template 1
-item replace block -79919 40 -112 container.12 with string
+#stage11 牢房小道具
+item replace block -79897 40 -115 container.12 with emerald 3
+item replace block -79897 40 -115 container.14 with minecraft:bone 1
+#stage11 牢房小道具
+item replace block -79919 40 -112 container.12 with emerald 3
 item replace block -79919 40 -112 container.14 with string
-item replace block -79939 35 -76 container.11 with minecraft:eye_armor_trim_smithing_template
-item replace block -79939 35 -76 container.13 with minecraft:dried_kelp 8
-item replace block -79939 35 -76 container.15 with tripwire_hook[custom_name='{"text":"蓝宝石钥匙","color":"blue","italic":false}',custom_data={key_sapphire:1b}] 1
+
 item replace block -79917 40 -62 container.11 with minecraft:eye_armor_trim_smithing_template 2
 item replace block -79917 40 -62 container.13 with iron_ingot 2
 item replace block -79917 40 -62 container.15 with skull_banner_pattern[custom_name='{"text":"“拉斐尔大人与能天使大人吵了一架”","color":"dark_purple","italic":false}',lore=['{"text":"希望神庭近些日子不要遭遇困难。","color":"white","italic":false}','{"text":"这两天拉斐尔大人的脾气特别不稳定，","color":"white","italic":false}','{"text":"还时不时地跟我们说，","color":"white","italic":false}','{"text":"“百千年的重头戏终于要到来了”。","color":"white","italic":false}']] 1
@@ -548,26 +577,7 @@ item replace block 79588 8 -427 container.15 with firework_star[custom_name='{"t
 item replace block -79571 11 -412 container.12 with minecraft:splash_potion[custom_name='[{"text":"「抗火瓶」","color":"light_purple","italic":false},{"text":"lv1","color":"blue","italic":false}]',potion_contents={custom_effects:[{id:"minecraft:fire_resistance",duration:200}]}] 1
 item replace block -79571 11 -412 container.14 with emerald 12
 item replace block -79791 28 -294 container.13 with minecraft:bundle
-#游戏开场
-forceload add -79541 -472 -79345 -350
-forceload add -79950 -2150 -79800 -1850
-setblock -79775 106 -2074 minecraft:potted_blue_orchid
-setblock -79769 105 -2079 smoker[facing=west]
 
-setblock -79774 105 -2077 minecraft:redstone_block
-setblock -79774 105 -2077 minecraft:air
-setblock -79771 105 -2076 minecraft:redstone_block
-setblock -79771 105 -2076 minecraft:air
-setblock -79764 105 -2067 minecraft:redstone_block
-setblock -79764 105 -2067 minecraft:air
-setblock -79436 30 -404 minecraft:anvil[facing=east]
-
-setblock -79388 24 -400 air
-setblock -79388 24 -400 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:flint"}}
-setblock -79396 26 -384 air
-setblock -79396 26 -384 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:flint"}}
-
-fill -79370 27 -373 -79372 26 -373 minecraft:iron_bars
 
 #第16关地图预加载#
 setblock -79540 25 -406 birch_button[face=floor]
