@@ -23,7 +23,7 @@ execute as @a[tag=SEAPT,scores={sea_remiel_shadow=1..}] at @s run function skybl
 execute if block 90074 103 136 lectern if entity @a[tag=SEAPT,tag=e_i_46] positioned 90142 134 26 as @n[tag=SEAnorman,type=zombie_villager,distance=0..250,scores={rng1=1..}] at @s run function skyblock:sea/e/ch5/boss5_1
 execute if block 90074 103 136 lectern if entity @a[tag=SEAPT,tag=e_i_46] positioned 90142 134 26 as @n[tag=SEAboss5b,distance=0..250,scores={rng1=1..}] unless entity @n[tag=SEAnorman,type=zombie_villager] at @s run function skyblock:sea/e/ch5/boss5_2
 execute if block 90074 103 136 lectern if entity @a[tag=SEAPT,tag=e_i_46] positioned 90142 134 26 if score SEA_ch5_event_boss5 rng9 matches 1..99 run function skyblock:sea/e/ch5/boss5/conclusion
-execute if score SEA_ch6_event sea_4temp4 matches 9999.. if entity @a[tag=SEAPT] run function skyblock:sea/map_event_i07_slow
+execute if block 90151 133 -1857 minecraft:skeleton_skull if score SEA_ch6_event sea_4temp4 matches 9999.. if entity @a[tag=SEAPT] run function skyblock:sea/map_event_i07_slow
 
 execute as @n[type=zombie,tag=SEAmob,x=80000,dx=20000,z=-10000,dz=20000,y=-1000,dy=2000,tag=SEAknight] at @s if block ~ ~-1.4 ~ water if block ~ ~ ~ water run give @a[tag=SEAPT,advancements={skyblock:sea/doc/g26=false}] mojang_banner_pattern[custom_data={sea_docg26:true}]
 execute as @n[type=zombie,tag=SEAmob,x=80000,dx=20000,z=-10000,dz=20000,y=-1000,dy=2000] at @s if block ~ ~-1.4 ~ water if block ~ ~ ~ water run kill @s
