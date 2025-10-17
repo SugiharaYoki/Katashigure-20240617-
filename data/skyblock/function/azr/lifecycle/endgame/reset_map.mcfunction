@@ -195,7 +195,7 @@ item replace block -79928 37 200 container.14 with emerald 2
 
 #stage flux
 setblock -79960 39 193 birch_button[facing=north,face=floor]
-
+fill -79936 36 197 -79936 36 198 air
 
 
 #entertain
