@@ -198,11 +198,41 @@ setblock -79960 39 193 birch_button[facing=north,face=floor]
 fill -79936 36 197 -79936 36 198 air
 
 
+
+
+ 
+#stage7
+setblock -79904 44 137 minecraft:potted_azure_bluet
+setblock -79904 44 133 minecraft:potted_azure_bluet
+setblock -79904 43 135 chest[facing=east]
+item replace block -79904 43 135 container.12 with minecraft:flint 2
+item replace block -79904 43 135 container.12 with tripwire_hook[custom_name='{"text":"椅子形状的钥匙","color":"blue","italic":false}',custom_data={key_chair:1b}] 1
+
 #entertain
 setblock -79917 44 165 minecraft:potted_cornflower
 setblock -79917 44 163 minecraft:potted_cornflower
 setblock -79857 44 163 minecraft:potted_cornflower
 setblock -79857 44 165 minecraft:potted_cornflower
+  #十字结界
+fill -79886 43 188 -79888 46 188 minecraft:purple_stained_glass
+fill -79914 43 188 -79916 46 188 minecraft:purple_stained_glass
+fill -79862 43 163 -79862 46 165 minecraft:purple_stained_glass
+fill -79886 43 132 -79888 45 132 minecraft:purple_stained_glass
+  #十字南 阳台阁楼
+setblock -79889 46 115 chest[facing=east]
+#临时替代：目前月色石钥匙没有使用，金镐图案的钥匙锁没有对应的钥匙，暂时将其替换为金镐图案的钥匙
+#item replace block -79889 46 115 container.12 with tripwire_hook[custom_name='{"text":"月色石钥匙","color":"blue","italic":false}',custom_data={key_moon:1b}] 1
+item replace block -79889 46 115 container.12 with tripwire_hook[custom_name='{"text":"金镐图案的钥匙","color":"blue","italic":false}',custom_data={key_golden_pickaxe:1b}] 1
+item replace block -79889 46 115 container.14 with emerald 3
+  #十字北
+setblock -79886 44 194 minecraft:potted_azure_bluet
+setblock -79888 44 194 minecraft:potted_azure_bluet
+setblock -79884 43 191 air
+setblock -79884 43 191 trapped_chest[facing=west]{lock:{components:{custom_data:{key_required:1b}}}}
+item replace block -79884 43 191 container.11 with emerald 5
+item replace block -79884 43 191 container.13 with minecraft:dried_kelp 8
+item replace block -79884 43 191 container.15 with skull_banner_pattern[custom_name='{"text":"“招待厅事务记录4”","color":"dark_purple","italic":false}',lore=['{"text":"魔界最近好像在刻意引导那些死去的亡灵前来挑战生命树试炼，","color":"white","italic":false}','{"text":"他们到底在打什么算盘？","color":"white","italic":false}','{"text":"有没有试炼者应该是神庭担心的事情，管他们什么事？","color":"white","italic":false}']] 1
+  #十字西
 setblock -79918 44 180 minecraft:potted_flowering_azalea_bush
 setblock -79918 44 176 minecraft:potted_flowering_azalea_bush
 setblock -79918 44 172 minecraft:potted_flowering_azalea_bush
@@ -215,10 +245,13 @@ setblock -79912 44 172 minecraft:potted_flowering_azalea_bush
 
 
 
+
+
+
+
 fill -79917 41 134 -79917 38 136 minecraft:purple_stained_glass
 setblock -79943 39 135 minecraft:birch_button[facing=west,face=floor]
 setblock -79901 49 131 minecraft:birch_button[facing=east]
-setblock -79903 44 131 minecraft:birch_button[facing=east]
 setblock -79902 39 103 birch_button[facing=south]
 setblock -79901 39 67 minecraft:birch_button[facing=east]
 setblock -79898 38 62 air
@@ -303,12 +336,8 @@ setblock -79939 35 -76 chest[facing=north,waterlogged=true]
 setblock -79917 40 -62 air
 setblock -79917 40 -62 trapped_chest[facing=north]{lock:{components:{custom_data:{key_required:1b}}}}
 setblock -79875 38 64 chest[facing=north]
-setblock -79895 48 136 air
-setblock -79895 48 136 trapped_chest[facing=east]{lock:{components:{custom_data:{key_required:1b}}}}
-setblock -79902 43 109 chest[facing=east]
 setblock -79764 30 218 chest[facing=north,waterlogged=true]
 setblock -79850 48 205 chest[facing=south]
-setblock -79889 46 115 chest[facing=east]
 setblock -79878 41 -131 lever[face=floor,facing=east,powered=false]
 setblock -79877 46 -142 minecraft:polished_andesite_slab
 setblock -79760 31 188 chest
@@ -488,20 +517,11 @@ item replace block -79917 40 -62 container.11 with minecraft:eye_armor_trim_smit
 item replace block -79917 40 -62 container.13 with iron_ingot 2
 item replace block -79917 40 -62 container.15 with skull_banner_pattern[custom_name='{"text":"“拉斐尔大人与能天使大人吵了一架”","color":"dark_purple","italic":false}',lore=['{"text":"希望神庭近些日子不要遭遇困难。","color":"white","italic":false}','{"text":"这两天拉斐尔大人的脾气特别不稳定，","color":"white","italic":false}','{"text":"还时不时地跟我们说，","color":"white","italic":false}','{"text":"“百千年的重头戏终于要到来了”。","color":"white","italic":false}']] 1
 item replace block -79875 38 64 container.13 with tripwire_hook[custom_name='{"text":"粗石英钥匙","color":"blue","italic":false}',custom_data={key_rough_quartz:1b}] 1
-item replace block -79895 48 136 container.11 with eye_armor_trim_smithing_template 2
-item replace block -79895 48 136 container.13 with minecraft:dried_kelp 8
-item replace block -79902 43 109 container.12 with minecraft:arrow 6
-item replace block -79902 43 109 container.12 with tripwire_hook[custom_name='{"text":"椅子形状的钥匙","color":"blue","italic":false}',custom_data={key_chair:1b}] 1
 item replace block -79764 30 218 container.13 with skull_banner_pattern[custom_name='{"text":"“招待厅事务记录2”","color":"dark_purple","italic":false}',lore=['{"text":"有更多的巡逻士兵说，","color":"white","italic":false}','{"text":"自己在执行任务时遭遇了轻微的幻听。","color":"white","italic":false}','{"text":"他们说，","color":"white","italic":false}','{"text":"那温柔话语声的来源像是艾奥洛斯之女：","color":"white","italic":false}','{"text":"雅尔希奥妮。","color":"white","italic":false}']] 1
 item replace block -79850 48 205 container.14 with skull_banner_pattern[custom_name='{"text":"“招待厅事务记录3”","color":"dark_purple","italic":false}',lore=['{"text":"力天使大人说过，","color":"white","italic":false}','{"text":"挑战者没有办法来到图书馆区域。","color":"white","italic":false}','{"text":"试炼的过程是被精心安排的，","color":"white","italic":false}','{"text":"不知挑战者本人能否看穿这件事实。","color":"white","italic":false}']] 1
-item replace block -79895 48 136 container.15 with skull_banner_pattern[custom_name='{"text":"“招待厅事务记录4”","color":"dark_purple","italic":false}',lore=['{"text":"魔界最近好像在刻意引导那些死去的亡灵","color":"white","italic":false}','{"text":"前来挑战生命树试炼，","color":"white","italic":false}','{"text":"他们到底在打什么算盘？","color":"white","italic":false}','{"text":"如果真的哪天有不怀好意的亡灵到来……","color":"white","italic":false}']] 1
 item replace block -79863 40 -76 container.14 with skull_banner_pattern[custom_name='{"text":"“招待厅事务记录5”","color":"dark_purple","italic":false}',lore=['{"text":"第一关口北面的建筑物出现了大量裂缝，","color":"white","italic":false}','{"text":"这样的现象一直延伸至牢房区域。","color":"white","italic":false}','{"text":"虽说大家有不祥的预感，","color":"white","italic":false}','{"text":"权之殊能大人却言仅为年久失修。","color":"white","italic":false}']] 1
 item replace block -79936 49 -158 container.13 with skull_banner_pattern[custom_name='{"text":"“期限将至 此乃针对神庭之审判”","color":"dark_purple","italic":false}',lore=['{"text":"这里的魔物保受摧残，","color":"white","italic":false}','{"text":"终日身于苦痛之中。","color":"white","italic":false}','{"text":"沙利叶大人既是对此心知肚明，","color":"white","italic":false}','{"text":"又为何让这暴行再续？","color":"white","italic":false}']] 1
 item replace block -79850 48 205 container.12 with lapis_lazuli 2
-#临时替代：目前月色石钥匙没有使用，金镐图案的钥匙锁没有对应的钥匙，暂时将其替换为金镐图案的钥匙
-#item replace block -79889 46 115 container.12 with tripwire_hook[custom_name='{"text":"月色石钥匙","color":"blue","italic":false}',custom_data={key_moon:1b}] 1
-item replace block -79889 46 115 container.12 with tripwire_hook[custom_name='{"text":"金镐图案的钥匙","color":"blue","italic":false}',custom_data={key_golden_pickaxe:1b}] 1
-item replace block -79889 46 115 container.14 with lapis_lazuli 2
 item replace block -79938 48 -144 container.12 with emerald 5
 item replace block -79938 48 -144 container.14 with emerald 7
 item replace block -79935 48 -164 container.13 with cooked_beef 3

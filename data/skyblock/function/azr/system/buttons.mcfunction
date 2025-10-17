@@ -119,11 +119,6 @@ execute if block -79919 39 24 minecraft:birch_button[powered=true] run function 
 #extra bonus - stage4β uncommited
 execute if block -79959 39 20 minecraft:birch_button[powered=true] run summon item -79956 42 20 {Item:{count:2,id:"minecraft:coal"}}
 execute if block -79959 39 20 minecraft:birch_button[powered=true] run setblock -79959 39 20 air
-#extra bonus - stage7α uncommited
-execute if block -79903 44 131 minecraft:birch_button[powered=true] at @p[tag=azrPlayer] run summon item ~ ~1 ~ {Item:{components:{"minecraft:custom_name":'{"text":"光明精华","italic":false,"color":"blue"}',custom_data:{light_essence:1b},custom_model_data:{floats:[100001.0]}},count:3,id:"minecraft:ghast_tear"}}
-execute if block -79903 44 131 minecraft:birch_button[powered=true] run setblock -79903 44 131 air
-execute if block -79901 49 131 minecraft:birch_button[powered=true] at @p[tag=azrPlayer] run summon item ~ ~1 ~ {Item:{count:8,id:"minecraft:experience_bottle"}}
-execute if block -79901 49 131 minecraft:birch_button[powered=true] run setblock -79901 49 131 air
 #extra bonus - stage8 uncommited
 execute if block -79901 39 67 minecraft:birch_button[powered=true] run summon item -79894 40 80 {Item:{count:2,id:"minecraft:golden_carrot"}}
 execute if block -79901 39 67 minecraft:birch_button[powered=true] if score playerCount Azr_system matches 4.. run summon item -79894 40 80 {Item:{count:2,id:"minecraft:golden_carrot"}}
