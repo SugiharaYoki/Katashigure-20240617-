@@ -231,7 +231,7 @@ setblock -79884 43 191 air
 setblock -79884 43 191 trapped_chest[facing=west]{lock:{components:{custom_data:{key_required:1b}}}}
 item replace block -79884 43 191 container.11 with emerald 5
 item replace block -79884 43 191 container.13 with minecraft:dried_kelp 8
-item replace block -79884 43 191 container.15 with skull_banner_pattern[custom_name='{"text":"“招待厅事务记录4”","color":"dark_purple","italic":false}',lore=['{"text":"魔界最近好像在刻意引导那些死去的亡灵前来挑战生命树试炼，","color":"white","italic":false}','{"text":"他们到底在打什么算盘？","color":"white","italic":false}','{"text":"有没有试炼者应该是神庭担心的事情，管他们什么事？","color":"white","italic":false}']] 1
+item replace block -79884 43 191 container.15 with skull_banner_pattern[custom_name='{"text":"“招待厅事务记录4”","color":"dark_purple","italic":false}',lore=['{"text":"魔界最近好像在刻意引导亡灵前来挑战神庭试炼，","color":"white","italic":false}','{"text":"他们到底在打什么算盘？","color":"white","italic":false}','{"text":"有没有试炼者应该是神庭担心的事情，","color":"white","italic":false}','{"text":"他们这么替我们操心吗？？","color":"white","italic":false}']] 1
   #十字西
 setblock -79918 44 180 minecraft:potted_flowering_azalea_bush
 setblock -79918 44 176 minecraft:potted_flowering_azalea_bush
