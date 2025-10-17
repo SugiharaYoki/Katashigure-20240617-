@@ -1178,7 +1178,7 @@ fill 90121 119 -1853 90121 124 -1857 minecraft:netherite_block
 
 setblock 90151 164 -1851 minecraft:furnace[facing=north]
 
-
+forceload add 90100 -1906 90080 -1870
 summon marker 90100 105 -1901 {Tags:["SEAmagma1"]}
 summon marker 90099 105 -1903 {Tags:["SEAmagma1"]}
 summon marker 90094 105 -1899 {Tags:["SEAmagma1"]}
