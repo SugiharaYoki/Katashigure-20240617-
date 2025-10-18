@@ -3,6 +3,7 @@ scoreboard players remove @s AzrSariel_Amulet_StayFloat_cooldown 1
 
 
 
+execute if score @s[tag=azrAmulet_StayFloat_Jumping] AzrSariel_Amulet_StayFloat_cooldown matches ..0 if entity @s[nbt={OnGround:1b}] run say hi
 execute if score @s[tag=azrAmulet_StayFloat_Jumping] AzrSariel_Amulet_StayFloat_cooldown matches ..0 if entity @s[nbt={OnGround:1b}] run tag @s remove azrAmulet_StayFloat_Jumping
 
 
