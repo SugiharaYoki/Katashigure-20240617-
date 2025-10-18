@@ -240,7 +240,10 @@ item replace block -79963 29 179 container.12 with tripwire_hook[custom_name='{"
 setblock -79965 31 167 minecraft:birch_button[facing=south,face=floor]
 setblock -79967 31 164 lever[face=floor,facing=east]
 
-
+  #滞空快捷连通道路
+setblock -79934 45 187 chest[facing=west]
+item replace block -79934 45 187 container.12 with minecraft:emerald 3
+item replace block -79934 45 187 container.14 with minecraft:emerald 3
 
 
 #stage6
