@@ -195,6 +195,13 @@ setblock -79925 37 201 chest[facing=east]
 item replace block -79925 37 201 container.12 with emerald 3
 item replace block -79925 37 201 container.14 with emerald 3
 
+  #钥匙奖励箱
+setblock -79954 37 172 air
+setblock -79954 37 172 trapped_chest[facing=south]{lock:{components:{custom_data:{key_required:1b}}}}
+item replace block -79954 37 172 container.11 with minecraft:coal 2
+item replace block -79954 37 172 container.13 with minecraft:coal 2
+item replace block -79954 37 172 container.15 with minecraft:coal 2
+
   #高跳房间
 setblock -79908 37 185 chest[facing=west]
 item replace block -79908 37 185 container.12 with gunpowder 1
@@ -210,7 +217,7 @@ setblock -79928 37 200 chest[facing=north]
 item replace block -79928 37 200 container.12 with emerald 2
 item replace block -79928 37 200 container.14 with emerald 2
 
-#stage flux
+#stage Flux
 setblock -79960 39 193 birch_button[facing=north,face=floor]
 fill -79936 36 197 -79936 36 198 air
 
@@ -218,6 +225,10 @@ fill -79936 36 197 -79936 36 198 air
 setblock -79963 29 179 chest[facing=east]
 item replace block -79963 29 179 container.12 with minecraft:emerald 3
 item replace block -79963 29 179 container.12 with tripwire_hook[custom_name='{"text":"火把花形状的钥匙","color":"blue","italic":false}',custom_data={key_torchflower:1b}] 1
+
+#stage Kinetic
+setblock -79965 31 167 minecraft:birch_button[facing=south,face=floor]
+
 
 #stage6
 fill -79917 41 134 -79917 38 136 minecraft:purple_stained_glass
