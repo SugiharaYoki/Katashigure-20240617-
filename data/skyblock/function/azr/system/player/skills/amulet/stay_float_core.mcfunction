@@ -22,8 +22,8 @@ execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 2 run particle m
 execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 2 run playsound minecraft:item.mace.smash_ground player @a ~ ~ ~ 1 1.5
 execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 2 as @e[tag=AzrielMob,distance=0..0.8] at @s run damage @s 6 mace_smash by @p[scores={AzrSariel_Amulet_StayFloat_cooldown=2}]
 execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 1 run attribute @s gravity base set 0.08
-execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 1 run tag @s remove azrAmulet_StayFloat_Jumping
-execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 1 run tag @s remove azrAmulet_StayFloat_Jumping_Release
+execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 1..2 run tag @s remove azrAmulet_StayFloat_Jumping
+execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 1..2 run tag @s remove azrAmulet_StayFloat_Jumping_Release
 
 
 
