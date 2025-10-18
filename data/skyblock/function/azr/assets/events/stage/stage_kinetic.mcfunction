@@ -8,9 +8,9 @@ execute if score stage_bonus_thread AzrTimerStack matches 1 run tellraw @a[tag=D
 execute if score stage_bonus_thread AzrTimerStack matches 1..135 store result bossbar azr:progress_bar_bonus value run scoreboard players get stage_bonus_thread AzrTimerStack
 execute if score stage_bonus_thread AzrTimerStack matches 135 run bossbar remove azr:progress_bar_bonus
 #
-#-79952 38 199
-execute if score stage_bonus_thread AzrTimerStack matches 2 positioned -79952 38 199 run function skyblock:azr/assets/mobs_new/shield
-execute if score stage_bonus_thread AzrTimerStack matches 29..30 positioned -79952 38 199 if entity @n[distance=..10,tag=AzrielMob_sword] run scoreboard players set stage_bonus_thread AzrTimerStack 29
+#-79953 29 162
+execute if score stage_bonus_thread AzrTimerStack matches 2 positioned -79953 29 162 run function skyblock:azr/assets/mobs_new/shield
+execute if score stage_bonus_thread AzrTimerStack matches 29..30 positioned -79953 29 162 if entity @n[distance=..10,tag=AzrielMob_sword] run scoreboard players set stage_bonus_thread AzrTimerStack 29
 
 
 
