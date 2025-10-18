@@ -109,6 +109,7 @@ scoreboard objectives remove AzrSariel_Skill_SlowRing_cooldown
 #护身符
 scoreboard objectives remove AzrSariel_Amulet_FireLit_cooldown
 scoreboard objectives remove AzrSariel_Amulet_StayFloat_cooldown
+scoreboard objectives remove AzrSariel_Amulet_StayFloat_power
 #特殊食物
 scoreboard objectives remove AzrSariel_Food_HardenedCookie
 scoreboard objectives remove AzrSariel_Food_PowerSalmon
