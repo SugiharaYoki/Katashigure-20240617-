@@ -91,7 +91,7 @@ execute if entity @s[tag=sea_t_sprint,tag=!sea_t_sprint3] run data modify entity
 execute if entity @s[tag=sea_t_sprint,tag=!sea_t_sprint4] run data modify entity @n[tag=SEAenchant_illum4] CustomName set value '" x "'
 execute if entity @s[tag=sea_t_sprint,tag=!sea_t_sprint5] run data modify entity @n[tag=SEAenchant_illum5] CustomName set value '" x "'
 execute if entity @s[tag=sea_t_sprint,tag=!sea_t_sprint6] run data modify entity @n[tag=SEAenchant_illum6] CustomName set value '" x "'
-tellraw @s [{"text":" 残影之祝 ","color":"light_purple"},{"selector":"@n[tag=SEAenchant_illum1]","color":"dark_purple"},{"selector":"@n[tag=SEAenchant_illum2]","color":"dark_purple"},{"selector":"@n[tag=SEAenchant_illum3]","color":"dark_purple"},{"selector":"@n[tag=SEAenchant_illum4]","color":"dark_purple"},{"selector":"@n[tag=SEAenchant_illum5]","color":"dark_purple"},{"selector":"@n[tag=SEAenchant_illum6]","color":"dark_purple"}]
+tellraw @s[tag=sea_t_sprint] [{"text":" 残影之祝 ","color":"light_purple"},{"selector":"@n[tag=SEAenchant_illum1]","color":"dark_purple"},{"selector":"@n[tag=SEAenchant_illum2]","color":"dark_purple"},{"selector":"@n[tag=SEAenchant_illum3]","color":"dark_purple"},{"selector":"@n[tag=SEAenchant_illum4]","color":"dark_purple"},{"selector":"@n[tag=SEAenchant_illum5]","color":"dark_purple"},{"selector":"@n[tag=SEAenchant_illum6]","color":"dark_purple"}]
 
 kill @e[tag=SEAenchant_illum,type=marker]
 
