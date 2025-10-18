@@ -4,6 +4,7 @@ scoreboard players add sc AnnouncementRoB 1
 #
 execute if score sc AnnouncementRo matches 1 as @a run scoreboard players add @s Perm_PersonFSB 10
 execute if score sc AnnouncementRo matches 1 as @a run tellraw @s[tag=!Gaming] {"text":" - 在线奖励 10 FSB - ","color":"dark_gray"}
+execute if score sc AnnouncementRo matches 8 if entity @a[tag=Gaming] run scoreboard objectives setdisplay sidebar
 execute if score sc AnnouncementRo matches 8 unless entity @a[tag=Gaming] run scoreboard objectives setdisplay sidebar Perm_PersonWins
 execute if score sc AnnouncementRo matches 16 unless entity @a[tag=Gaming] run scoreboard objectives setdisplay sidebar Perm_PersonDeath
 execute if score sc AnnouncementRo matches 24 unless entity @a[tag=Gaming] run scoreboard objectives setdisplay sidebar SeGa_StandLastBH
