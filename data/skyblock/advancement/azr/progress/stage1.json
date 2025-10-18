@@ -23,5 +23,5 @@
             "trigger": "minecraft:impossible"
         }
     },
-    "parent": "skyblock:azr/root"
+    "parent": "skyblock:azr/progress/root"
 }

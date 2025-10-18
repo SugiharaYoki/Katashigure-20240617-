@@ -23,5 +23,5 @@
             "trigger": "minecraft:impossible"
         }
     },
-    "parent": "skyblock:azr/stage_bonus_vestige"
+    "parent": "skyblock:azr/progress/stage_bonus_vestige"
 }

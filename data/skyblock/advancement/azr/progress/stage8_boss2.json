@@ -23,5 +23,5 @@
             "trigger": "minecraft:impossible"
         }
     },
-    "parent": "skyblock:azr/stage8"
+    "parent": "skyblock:azr/progress/stage8"
 }

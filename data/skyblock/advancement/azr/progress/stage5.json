@@ -23,5 +23,5 @@
             "trigger": "minecraft:impossible"
         }
     },
-    "parent": "skyblock:azr/stage4_boss1"
+    "parent": "skyblock:azr/progress/stage4_boss1"
 }

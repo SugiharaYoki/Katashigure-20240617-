@@ -23,5 +23,5 @@
             "trigger": "minecraft:impossible"
         }
     },
-    "parent": "skyblock:azr/stage14_event1"
+    "parent": "skyblock:azr/progress/stage14_event1"
 }
