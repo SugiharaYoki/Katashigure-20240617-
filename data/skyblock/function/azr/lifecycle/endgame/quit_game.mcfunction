@@ -38,7 +38,7 @@ execute if entity @s[x=-79900,y=40,z=0,distance=0..2200] run tp @s -79953.0 38.5
 
 
 tag @s remove azrAmulet_StayFloat_Jumping
-
+tag @s remove azrAmulet_StayFloat_Jumping_Release
 
 
 
