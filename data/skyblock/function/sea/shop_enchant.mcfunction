@@ -95,6 +95,15 @@ tellraw @s[tag=sea_t_sprint] [{"text":" 残影之祝 ","color":"light_purple"},{
 
 kill @e[tag=SEAenchant_illum,type=marker]
 
+
+execute unless score @s sea_i_trim_zombie matches 0.. run scoreboard players set @s sea_i_trim_zombie 0
+execute unless score @s sea_i_trim_bug matches 0.. run scoreboard players set @s sea_i_trim_bug 0
+execute unless score @s sea_i_trim_human matches 0.. run scoreboard players set @s sea_i_trim_human 0
+execute unless score @s sea_i_trim_skeleton matches 0.. run scoreboard players set @s sea_i_trim_skeleton 0
+execute unless score @s sea_i_trim_spider matches 0.. run scoreboard players set @s sea_i_trim_spider 0
+execute unless score @s sea_i_trim_ghost matches 0.. run scoreboard players set @s sea_i_trim_ghost 0
+
+
 tellraw @s {"text":"   "}
 execute if entity @s[tag=SEAPT] run tellraw @s [{"text":" Lv1-2 "},{"text":"活尸死体的安魂曲：坚韧/守护  ","color":"white"},{"score":{"name":"@s","objective":"sea_i_trim_zombie"},"color":"light_purple"},{"text":"/2 牧羊人石板 ","color":"light_purple"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 20001"}}]
 execute if entity @s[tag=seaPerm001,tag=SEAPT] run tellraw @s [{"text":" Lv1-2 "},{"text":"幽邃狭隙的民族歌：敏捷/蛮力  ","color":"white"},{"score":{"name":"@s","objective":"sea_i_trim_zombie"},"color":"light_purple"},{"text":"/1 牧羊人 ","color":"light_purple"},{"score":{"name":"@s","objective":"sea_i_trim_spider"},"color":"light_purple"},{"text":"/1 狂荒 ","color":"light_purple"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 20002"}}]
