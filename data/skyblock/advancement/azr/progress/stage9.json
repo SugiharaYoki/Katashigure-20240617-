@@ -23,5 +23,5 @@
             "trigger": "minecraft:impossible"
         }
     },
-    "parent": "skyblock:azr/azr_stage8_boss2"
+    "parent": "skyblock:azr/stage8_boss2"
 }

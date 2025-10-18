@@ -19,8 +19,8 @@ effect give @s saturation 3 100 true
 effect give @s instant_health 3 100 true
 
 #进度初始化
-advancement revoke @s from skyblock:azr/azr_root
-advancement grant @s only skyblock:azr/azr_root
+advancement revoke @s from skyblock:azr/root
+advancement grant @s only skyblock:azr/root
 
 #背包初始化
 clear @s

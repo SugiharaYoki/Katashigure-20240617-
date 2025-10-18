@@ -23,5 +23,5 @@
             "trigger": "minecraft:impossible"
         }
     },
-    "parent": "skyblock:azr/azr_stage6"
+    "parent": "skyblock:azr/stage6"
 }
