@@ -228,6 +228,9 @@ item replace block -79963 29 179 container.12 with tripwire_hook[custom_name='{"
 
 #stage Kinetic
 setblock -79965 31 167 minecraft:birch_button[facing=south,face=floor]
+setblock -79967 31 164 lever[face=floor,facing=east]
+
+
 
 
 #stage6
