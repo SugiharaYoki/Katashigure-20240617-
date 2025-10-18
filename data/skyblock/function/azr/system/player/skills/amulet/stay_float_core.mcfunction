@@ -5,9 +5,9 @@ scoreboard players remove @s AzrSariel_Amulet_StayFloat_cooldown 1
 
 execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches ..0 if entity @s[predicate=skyblock:jump] run scoreboard players set @s AzrSariel_Amulet_StayFloat_cooldown 140
 execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 138 run attribute @s gravity base set 0
-execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 100.. run playsound minecraft:block.fire.extinguish player @a ~ ~ ~ 0.4 2
-execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 100.. run particle white_smoke ~ ~-0.2 ~ 0.1 0 0.1 0.03 8
-execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 100.. if entity @s[predicate=!skyblock:jump] run scoreboard players set @s AzrSariel_Amulet_StayFloat_cooldown 50
+execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 100..136 run playsound minecraft:block.fire.extinguish player @a ~ ~ ~ 0.4 2
+execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 100..136 run particle white_smoke ~ ~-0.2 ~ 0.1 0 0.1 0.03 8
+execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 100..136 if entity @s[predicate=!skyblock:jump] run scoreboard players set @s AzrSariel_Amulet_StayFloat_cooldown 50
 execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 138 if block ~ ~-0.5 ~ air run scoreboard players add @s AzrSariel_Amulet_StayFloat_power 1
 execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 138 if block ~ ~-1.5 ~ air run scoreboard players add @s AzrSariel_Amulet_StayFloat_power 1
 execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 138 if block ~ ~-3.5 ~ air run scoreboard players add @s AzrSariel_Amulet_StayFloat_power 1
