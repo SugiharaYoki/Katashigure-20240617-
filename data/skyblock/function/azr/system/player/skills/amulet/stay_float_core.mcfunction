@@ -5,6 +5,8 @@ scoreboard players remove @s AzrSariel_Amulet_StayFloat_cooldown 1
 
 execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches ..0 if entity @s[predicate=skyblock:jump] run tag @s add azrAmulet_StayFloat_Jumping
 execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches ..0 if entity @s[tag=azrAmulet_StayFloat_Jumping,predicate=!skyblock:jump] run tag @s add azrAmulet_StayFloat_Jumping_Release
+execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches ..0 if entity @s[tag=azrAmulet_StayFloat_Jumping,predicate=!skyblock:jump] run attribute @s gravity base set 0
+execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches ..0 if entity @s[tag=azrAmulet_StayFloat_Jumping_Release] if entity @s[nbt={OnGround:1b}] run attribute @s gravity base set 0.08
 execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches ..0 if entity @s[tag=azrAmulet_StayFloat_Jumping_Release] if entity @s[nbt={OnGround:1b}] run tag @s remove azrAmulet_StayFloat_Jumping_Release
 execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches ..0 if entity @s[tag=azrAmulet_StayFloat_Jumping,predicate=!skyblock:jump] run tag @s remove azrAmulet_StayFloat_Jumping
 execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches ..0 if entity @s[predicate=skyblock:jump,tag=azrAmulet_StayFloat_Jumping_Release] run scoreboard players set @s AzrSariel_Amulet_StayFloat_cooldown 120
