@@ -9,6 +9,7 @@ tag @s add azrDead
 tag @s remove AZR_chainKill_activated
 tag @s remove azrRetrieved
 tag @s remove AzrielEvent382315A
+
 scoreboard players set @s Azr_forceDeath 0
 scoreboard players set @s AZR_chainKill_count 0
 scoreboard players set @s AZR_chainKill_damage 0
@@ -34,6 +35,14 @@ execute if score @s SeGa_StandLastBH < wave Azr_system run scoreboard players op
 #后续处理
 execute if entity @s[x=-79900,y=40,z=0,distance=0..2200] run spawnpoint @s -79953 38 -14 -90
 execute if entity @s[x=-79900,y=40,z=0,distance=0..2200] run tp @s -79953.0 38.5 -14.0 facing -79952.0 38.5 -14.0
+
+
+tag @s remove azrAmulet_StayFloat_Jumping
+
+
+
+
+
 #对接主城系统
 function skyblock:pvp/skywar/system/removeallmd
 function skyblock:pvp/skywar/system/removeallgaming
