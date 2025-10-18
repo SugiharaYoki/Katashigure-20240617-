@@ -214,6 +214,11 @@ item replace block -79928 37 200 container.14 with emerald 2
 setblock -79960 39 193 birch_button[facing=north,face=floor]
 fill -79936 36 197 -79936 36 198 air
 
+  #供热迷宫
+setblock -79963 29 179 chest[facing=east]
+item replace block -79963 29 179 container.12 with minecraft:emerald 3
+item replace block -79963 29 179 container.12 with tripwire_hook[custom_name='{"text":"火把花形状的钥匙","color":"blue","italic":false}',custom_data={key_torchflower:1b}] 1
+
 #stage6
 fill -79917 41 134 -79917 38 136 minecraft:purple_stained_glass
 setblock -79943 39 135 minecraft:birch_button[facing=west,face=floor]
