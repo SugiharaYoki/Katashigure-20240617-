@@ -14,5 +14,5 @@ execute unless score @s AzrPlayer_CurrentArea matches 2 if entity @s[x=-79934,y=
 execute unless score @s AzrPlayer_CurrentArea matches 3 if entity @s[x=-79934,y=37,z=167,dx=10,dy=5,dz=10] run function skyblock:azr/assets/events/stage/area_title_show \
                                                 {area_id:3,title:"传 热 根 系",color_code:"#5e4e80"}
 
-
+#智述禁馆
 
