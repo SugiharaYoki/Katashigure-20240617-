@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "传热根系 - 点火装置",
+            "color": "green",
+            "bold": true,
+            "italic": false
+        },
+        "description": {
+            "text": "STAGE KINETIC",
+            "color": "light_purple"
+        },
+        "icon": {
+            "id": "minecraft:orange_glazed_terracotta"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "azrielsmidgarden": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:azr/azr_stage5"
+}
