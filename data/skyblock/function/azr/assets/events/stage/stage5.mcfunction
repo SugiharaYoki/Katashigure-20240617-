@@ -43,7 +43,7 @@ execute if score stage_main_thread AzrTimerStack matches 53..54 positioned -7993
 execute if score stage_main_thread AzrTimerStack matches 56 if block -79929 39 125 air positioned -79922 38 122 run function skyblock:azr/assets/mobs_new/skeleton_melee
 execute if score stage_main_thread AzrTimerStack matches 56 if block -79929 39 125 air as @a[tag=azrPlayer] at @s run function skyblock:azr/system/shop/purchase/handbook/input {doc:skeleton_melee}
 execute if score stage_main_thread AzrTimerStack matches 64 if block -79929 39 125 air positioned -79922 38 122 run function skyblock:azr/assets/mobs_new/shield
-execute if score stage_main_thread AzrTimerStack matches 66..67 if block -79929 39 125 air positioned -79922 38 122 run function skyblock:azr/assets/mobs_new/undead
+execute if score stage_main_thread AzrTimerStack matches 66..68 if block -79929 39 125 air positioned -79922 38 122 run function skyblock:azr/assets/mobs_new/undead
 
 execute if score stage_main_thread AzrTimerStack matches 56 unless block -79929 39 125 air positioned -79922 38 122 run function skyblock:azr/assets/mobs_new/sword
 execute if score stage_main_thread AzrTimerStack matches 60 unless block -79929 39 125 air positioned -79922 38 122 run function skyblock:azr/assets/mobs_new/pillager
@@ -52,6 +52,9 @@ execute if score stage_main_thread AzrTimerStack matches 65 unless block -79929 
 execute if score stage_main_thread AzrTimerStack matches 76 if block -79929 39 125 air positioned -79922 38 122 run function skyblock:azr/assets/mobs_new/skeleton_melee
 execute if score stage_main_thread AzrTimerStack matches 74 unless block -79929 39 125 air positioned -79922 38 122 run function skyblock:azr/assets/mobs_new/axe
 execute if score stage_main_thread AzrTimerStack matches 74 unless block -79929 39 125 air as @a[tag=azrPlayer] at @s run function skyblock:azr/system/shop/purchase/handbook/input {doc:axe}
+
+execute if score stage_main_thread AzrTimerStack matches 75..76 if block -79929 39 125 air positioned -79931 38 122 if entity @n[distance=..20,tag=AzrielMob_shield] run scoreboard players set stage_main_thread AzrTimerStack 75
+execute if score stage_main_thread AzrTimerStack matches 75..76 unless block -79929 39 125 air positioned -79931 38 122 if entity @n[distance=..20,tag=AzrielMob_summoner] run scoreboard players set stage_main_thread AzrTimerStack 75
 
 execute if score stage_main_thread AzrTimerStack matches 80 positioned -79922 38 122 run function skyblock:azr/assets/mobs_new/axe
 execute if score stage_main_thread AzrTimerStack matches 80 positioned -79940 38 122 run function skyblock:azr/assets/mobs_new/axe
