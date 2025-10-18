@@ -116,6 +116,11 @@ setblock -79915 39 34 minecraft:quartz_bricks{name: "secret chest"}
 setblock -79915 38 34 minecraft:quartz_block{name: "secret chest"}
 setblock -79915 40 34 minecraft:quartz_block{name: "secret chest"}
 
+  #苔藓培育室
+setblock -79934 31 17 chest[facing=east]
+item replace block -79934 31 17 container.12 with minecraft:bone 2
+item replace block -79934 31 17 container.14 with minecraft:bone 1
+
 #Stage4 alpha
 setblock -79932 39 42 birch_button[face=wall,facing=east]
 setblock -79931 43 42 barrier
@@ -153,6 +158,11 @@ item replace block -79939 39 58 container.13 with tripwire_hook[custom_name='{"t
 
 setblock -79949 39 61 minecraft:white_stained_glass
 setblock -79943 39 61 minecraft:white_stained_glass
+
+#滞空移动宝箱
+setblock -79966 43 49 chest[facing=east]
+item replace block -79966 43 49 container.12 with minecraft:emerald 5
+item replace block -79966 43 49 container.14 with minecraft:emerald 5
 
 #Stage Diffident
 fill -79915 32 0 -79917 35 0 air
