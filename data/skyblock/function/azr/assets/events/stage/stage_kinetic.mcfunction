@@ -29,7 +29,7 @@ execute if score stage_bonus_thread AzrTimerStack matches 42..43 if block -79967
 execute if score stage_bonus_thread AzrTimerStack matches 45 run bossbar set azr:progress_bar_bonus name "Stage Kinetic"
 execute if score stage_bonus_thread AzrTimerStack matches 45 run playsound minecraft:entity.blaze.shoot block @a -79961.94 30.06 162.52 2 0.7
 execute if score stage_bonus_thread AzrTimerStack matches 45 run fill -79962 30 159 -79963 30 165 minecraft:fire replace air
-execute if score stage_bonus_thread AzrTimerStack matches 45 positioned -79962 30 159 as @e[tag=AzrielMob,distance=..10] at @s if block ~ ~ ~ fire run damage @s 30 on_fire
+execute if score stage_bonus_thread AzrTimerStack matches 45..48 positioned -79962 30 159 as @e[tag=AzrielMob,distance=..10] at @s if block ~ ~ ~ fire run damage @s 30 on_fire
 
 execute if score stage_bonus_thread AzrTimerStack matches 48 run playsound block.fire.extinguish block @a -79961.94 30.06 162.52 2 0.9
 execute if score stage_bonus_thread AzrTimerStack matches 48 run fill -79962 30 159 -79963 30 165 air replace fire
@@ -51,7 +51,7 @@ execute if score stage_bonus_thread AzrTimerStack matches 99..100 if block -7996
 execute if score stage_bonus_thread AzrTimerStack matches 102 run bossbar set azr:progress_bar_bonus name "Stage Kinetic"
 execute if score stage_bonus_thread AzrTimerStack matches 102 run playsound minecraft:entity.blaze.shoot block @a -79961.94 30.06 162.52 2 0.7
 execute if score stage_bonus_thread AzrTimerStack matches 102 run fill -79962 30 159 -79963 30 165 minecraft:fire replace air
-execute if score stage_bonus_thread AzrTimerStack matches 102 positioned -79962 30 159 as @e[tag=AzrielMob,distance=..10] at @s if block ~ ~ ~ fire run damage @s 30 on_fire
+execute if score stage_bonus_thread AzrTimerStack matches 102..105 positioned -79962 30 159 as @e[tag=AzrielMob,distance=..10] at @s if block ~ ~ ~ fire run damage @s 30 on_fire
 
 execute if score stage_bonus_thread AzrTimerStack matches 105 run playsound block.fire.extinguish block @a -79961.94 30.06 162.52 2 0.9
 execute if score stage_bonus_thread AzrTimerStack matches 105 run fill -79962 30 159 -79963 30 165 air replace fire
@@ -76,7 +76,7 @@ execute if score stage_bonus_thread AzrTimerStack matches 151..152 if block -799
 execute if score stage_bonus_thread AzrTimerStack matches 154 run bossbar set azr:progress_bar_bonus name "Stage Kinetic"
 execute if score stage_bonus_thread AzrTimerStack matches 154 run playsound minecraft:entity.blaze.shoot block @a -79961.94 30.06 162.52 2 0.7
 execute if score stage_bonus_thread AzrTimerStack matches 154 run fill -79962 30 159 -79963 30 165 minecraft:fire replace air
-execute if score stage_bonus_thread AzrTimerStack matches 154 positioned -79962 30 159 as @e[tag=AzrielMob,distance=..10] at @s if block ~ ~ ~ fire run damage @s 30 on_fire
+execute if score stage_bonus_thread AzrTimerStack matches 154..157 positioned -79962 30 159 as @e[tag=AzrielMob,distance=..10] at @s if block ~ ~ ~ fire run damage @s 30 on_fire
 
 execute if score stage_bonus_thread AzrTimerStack matches 157 run playsound block.fire.extinguish block @a -79961.94 30.06 162.52 2 0.9
 execute if score stage_bonus_thread AzrTimerStack matches 157 run fill -79962 30 159 -79963 30 165 air replace fire
