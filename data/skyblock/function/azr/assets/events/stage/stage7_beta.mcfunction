@@ -261,7 +261,6 @@ execute if score stage_main_thread AzrTimerStack matches 301..304 run playsound 
 execute if score stage_main_thread AzrTimerStack matches 301..304 run playsound ambient.crimson_forest.mood ambient @a[tag=azrShowDialog] -78000 100 0 1000 1.2
 execute if score stage_main_thread AzrTimerStack matches 301..304 run playsound ambient.crimson_forest.additions ambient @a[tag=azrShowDialog] -78000 100 0 1000 1.2
 execute if score stage_main_thread AzrTimerStack matches 301..304 run fill -79898 42 101 -79896 38 101 minecraft:air destroy
-execute if score stage_main_thread AzrTimerStack matches 301..304 run fill -79893 44 128 -79893 43 128 minecraft:air destroy
 execute if score stage_main_thread AzrTimerStack matches 301..304 run fill -79886 46 148 -79888 43 148 air
 execute if score stage_main_thread AzrTimerStack matches 301..304 run fill -79895 50 126 -79895 48 127 minecraft:air destroy
 execute if score stage_main_thread AzrTimerStack matches 301 run title @a[tag=azrShowDialog] actionbar {"text":"Stage Clear","color":"green"}

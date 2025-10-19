@@ -495,7 +495,6 @@ fill -79932 38 72 -79930 42 72 air
 fill -79932 42 130 -79930 38 130 minecraft:purple_stained_glass
 fill -79938 44 151 -79938 43 151 smooth_quartz
 fill -79898 42 101 -79896 38 101 minecraft:purple_stained_glass
-fill -79893 44 128 -79893 43 128 minecraft:purple_stained_glass
 fill -79898 41 62 -79898 41 50 quartz_slab[type=top]
 fill -79898 42 62 -79898 42 50 anvil[facing=north]
 fill -79898 41 61 -79898 42 61 air
