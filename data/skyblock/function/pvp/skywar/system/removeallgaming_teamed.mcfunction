@@ -218,7 +218,7 @@ attribute @s attack_damage modifier remove azr_amulet:flowerwall_01
 attribute @s armor modifier remove azr_food:hardened_cookie_01
 attribute @s attack_damage modifier remove azr_food:power_salmon_01
 
-attribute @s gravity base set 0.08
-
+attribute @s gravity base reset
+attribute @s jump_strength base reset
 
 

@@ -9,6 +9,7 @@ execute if score @s[tag=azrAmulet_StayFloat_Jumping] AzrSariel_Amulet_StayFloat_
 execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches ..0 if entity @s[predicate=skyblock:jump,tag=!azrAmulet_StayFloat_Jumping] unless block ~ ~-0.3 ~ water unless block ~ ~0.3 ~ water unless block ~ ~ ~ #climbable run scoreboard players set @s AzrSariel_Amulet_StayFloat_cooldown 141
 execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 141 run tag @s add azrAmulet_StayFloat_Jumping
 execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 138 run attribute @s gravity base set 0
+execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 138 run attribute @s jump_strength base set 0
 execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 137 store result storage azr_amulet:stay_float y double 1 run data get entity @s Pos[1]
 execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 137 store result storage azr_amulet:stay_float y_10 double 10 run data get entity @s Pos[1]
 execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 118..136 at @s run function skyblock:azr/system/player/skills/amulet/stay_float_keep with storage azr_amulet:stay_float
@@ -44,6 +45,7 @@ execute if score @s[scores={AzrSariel_Amulet_StayFloat_power=4}] AzrSariel_Amule
 execute if score @s[scores={AzrSariel_Amulet_StayFloat_power=4}] AzrSariel_Amulet_StayFloat_cooldown matches 2 run playsound minecraft:item.mace.smash_ground player @a ~ ~ ~ 1 1.3
 execute if score @s[scores={AzrSariel_Amulet_StayFloat_power=4}] AzrSariel_Amulet_StayFloat_cooldown matches 2 as @e[tag=AzrielMob,distance=0..1.2,limit=7,sort=nearest] at @s run damage @s 8 mace_smash by @p[scores={AzrSariel_Amulet_StayFloat_cooldown=2}]
 execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 1..2 run attribute @s gravity base set 0.08
+execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 1..2 run attribute @s jump_strength base reset
 execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 1..2 run scoreboard players set @s AzrSariel_Amulet_StayFloat_power 0
 
 
