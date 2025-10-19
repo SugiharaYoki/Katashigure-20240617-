@@ -8,10 +8,19 @@ execute if score stage_main_thread AzrTimerStack matches 1 run tellraw @a[tag=De
 execute if score stage_main_thread AzrTimerStack matches 1..316 store result bossbar azr:progress_bar_normal value run scoreboard players get stage_main_thread AzrTimerStack
 execute if score stage_main_thread AzrTimerStack matches 316 run bossbar remove azr:progress_bar_normal
 #
-#upside:-79931 42 153
-#rightside:-79943 38 135
+#close:-79940 37 140
+#far:-79922 37 140
 
+execute if score stage_main_thread AzrTimerStack matches 2 positioned -79922 37 140 run function skyblock:azr/assets/mobs_new/undead_pickaxe
 
+execute if score stage_main_thread AzrTimerStack matches 2 positioned -79940 37 140 run function skyblock:azr/assets/mobs_new/sword
+execute if score stage_main_thread AzrTimerStack matches 5 positioned -79940 37 140 run function skyblock:azr/assets/mobs_new/sword
+execute if score stage_main_thread AzrTimerStack matches 8 positioned -79940 37 140 run function skyblock:azr/assets/mobs_new/sword
+
+execute if score stage_main_thread AzrTimerStack matches 10 positioned -79922 37 140 run function skyblock:azr/assets/mobs_new/pillager
+execute if score stage_main_thread AzrTimerStack matches 24 positioned -79940 37 140 run function skyblock:azr/assets/mobs_new/summoner
+execute if score stage_main_thread AzrTimerStack matches 26 positioned -79922 37 140 run function skyblock:azr/assets/mobs_new/pillager
+execute if score stage_main_thread AzrTimerStack matches 32 positioned -79940 37 140 run function skyblock:azr/assets/mobs_new/undead_greed
 
 execute if score stage_main_thread AzrTimerStack matches 68 run title @a[tag=azrShowDialog] actionbar {"text":"Wave Clear","color":"green"}
 execute if score stage_main_thread AzrTimerStack matches 68 run scoreboard players set wave Azr_system 13
