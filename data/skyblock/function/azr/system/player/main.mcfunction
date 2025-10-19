@@ -37,7 +37,7 @@ execute unless score @s Azr_startCount = Pointer Azr_startCount run function sky
 
 #护身符
 execute at @s if entity @n[tag=AzrielMob,distance=0..8] if items entity @s container.* *[custom_data~{azr_amulet_heart_rate_monitor:1b}] run function skyblock:azr/system/player/skills/amulet/heart_rate_monitor_core
-execute if items entity @s container.* *[custom_data~{azr_amulet_greed_board:1b}] run function skyblock:azr/system/player/skills/amulet/greed_board_core
+execute if items entity @s[predicate=skyblock:sneak] container.* *[custom_data~{azr_amulet_greed_board:1b}] run function skyblock:azr/system/player/skills/amulet/greed_board_core
 execute if items entity @s container.* *[custom_data~{azr_amulet_pacemaker:1b}] run function skyblock:azr/system/player/skills/amulet/pacemaker_core
 execute if items entity @s container.* *[custom_data~{azr_amulet_pacemaker_safe:1b}] run function skyblock:azr/system/player/skills/amulet/pacemaker_safe_core
 execute if items entity @s container.* *[custom_data~{azr_amulet_flower_wall:1b}] run function skyblock:azr/system/player/skills/amulet/flower_wall_core
