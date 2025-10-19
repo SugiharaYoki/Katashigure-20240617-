@@ -426,6 +426,7 @@ execute if score SEA_ch6_event sea_4temp4 matches 8351 as @p[tag=SEAPT] at @s ru
 execute if score SEA_ch6_event sea_4temp4 matches 8401 as @p[tag=SEAPT] at @s run damage @n[tag=SEAboss6c] 5 generic
 execute if score SEA_ch6_event sea_4temp4 matches 8501 as @p[tag=SEAPT] at @s run damage @n[tag=SEAboss6c] 5 generic
 execute if score SEA_ch6_event sea_4temp4 matches 8601 as @p[tag=SEAPT] at @s run damage @n[tag=SEAboss6c] 100 generic
+execute if score SEA_ch6_event sea_4temp4 matches 8701 as @p[tag=SEAPT] at @s run damage @n[tag=SEAboss6c] 1000 generic
 execute if score SEA_ch6_event sea_4temp4 matches 8200..9629 as @p[tag=SEAPT] at @s unless entity @n[tag=SEAboss6c] run particle white_ash ~ ~5 ~ 10 5 10 0 50
 execute if score SEA_ch6_event sea_4temp4 matches 8200..9629 as @p[tag=SEAPT] at @s unless entity @n[tag=SEAboss6c] run particle cherry_leaves ~ ~5 ~ 10 5 10 0 20
 execute if score SEA_ch6_event sea_4temp4 matches 8001..9501 run time add 1
