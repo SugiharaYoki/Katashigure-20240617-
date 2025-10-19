@@ -12,7 +12,7 @@ execute if score stage_bonus_thread AzrTimerStack matches 106 run bossbar remove
 #rightside:-79946 38 50
 execute if score stage_bonus_thread AzrTimerStack matches 2 positioned -79946 38 61 run function skyblock:azr/assets/mobs_new/undead
 
-execute if score stage_bonus_thread AzrTimerStack matches 4..5 if entity @n[tag=AzrielMob_undead] run scoreboard players set stage_bonus_thread AzrTimerStack 4
+execute if score stage_bonus_thread AzrTimerStack matches 4..5 positioned -79946 38 61 if entity @n[distance=..10,tag=AzrielMob_undead] run scoreboard players set stage_bonus_thread AzrTimerStack 4
 
 execute if score stage_bonus_thread AzrTimerStack matches 22 positioned -79946 38 61 run tellraw @a[tag=azrShowDialog] [{"text":"你：","color":"aqua"},{"text":"\n（怪物……不再出现了？）","color":"white"}]
 
@@ -33,31 +33,31 @@ execute if score stage_bonus_thread AzrTimerStack matches 45..48 positioned -799
 execute if score stage_bonus_thread AzrTimerStack matches 54..55 positioned -79946 38 61 run function skyblock:azr/assets/mobs_new/undead_shield
 execute if score stage_bonus_thread AzrTimerStack matches 66..67 positioned -79946 38 61 run function skyblock:azr/assets/mobs_new/undead
 
-execute if score stage_bonus_thread AzrTimerStack matches 68..69 if entity @n[tag=AzrielMob_undead] run scoreboard players set stage_bonus_thread AzrTimerStack 68
+execute if score stage_bonus_thread AzrTimerStack matches 68..69 positioned -79946 38 61 if entity @n[distance=..10,tag=AzrielMob_undead] run scoreboard players set stage_bonus_thread AzrTimerStack 68
 
 execute if score stage_bonus_thread AzrTimerStack matches 70..73 positioned -79946 38 61 run function skyblock:azr/assets/mobs_new/undead
 execute if score stage_bonus_thread AzrTimerStack matches 70 positioned -79946 38 61 run function skyblock:azr/assets/mobs_new/undead_pickaxe
 execute if score stage_bonus_thread AzrTimerStack matches 79 positioned -79946 38 61 run function skyblock:azr/assets/mobs_new/undead_pickaxe
 
-execute if score stage_bonus_thread AzrTimerStack matches 81..82 if entity @n[tag=AzrielMob_undead_pickaxe] run scoreboard players set stage_bonus_thread AzrTimerStack 81
+execute if score stage_bonus_thread AzrTimerStack matches 81..82 positioned -79946 38 61 if entity @n[distance=..10,tag=AzrielMob_undead_pickaxe] run scoreboard players set stage_bonus_thread AzrTimerStack 81
 
 execute if score stage_bonus_thread AzrTimerStack matches 83 positioned -79946 38 61 run function skyblock:azr/assets/mobs_new/undead_greed
 execute if score stage_bonus_thread AzrTimerStack matches 83 as @a[tag=azrPlayer] at @s run function skyblock:azr/system/shop/purchase/handbook/input {doc:undead_greed}
 
-execute if score stage_bonus_thread AzrTimerStack matches 84..85 if entity @n[tag=AzrielMob_undead_greed] run scoreboard players set stage_bonus_thread AzrTimerStack 84
+execute if score stage_bonus_thread AzrTimerStack matches 84..85 positioned -79946 38 61 if entity @n[distance=..10,tag=AzrielMob_undead_greed] run scoreboard players set stage_bonus_thread AzrTimerStack 84
 
 execute if score stage_bonus_thread AzrTimerStack matches 86 positioned -79946 38 61 run function skyblock:azr/assets/mobs_new/undead_greed
 execute if score stage_bonus_thread AzrTimerStack matches 87 positioned -79946 38 61 run function skyblock:azr/assets/mobs_new/undead_pickaxe
 execute if score stage_bonus_thread AzrTimerStack matches 88 positioned -79946 38 61 run function skyblock:azr/assets/mobs_new/undead_pickaxe
 execute if score stage_bonus_thread AzrTimerStack matches 87 positioned -79946 38 61 run tellraw @a[tag=azrShowDialog] [{"text":"贪婪丧尸：","color":"red","bold": true},{"bold": false,"text":"\n“给我……绿宝石！！闪闪发亮的……绿宝石、绿宝石！！”","color":"white"}]
 
-execute if score stage_bonus_thread AzrTimerStack matches 89..90 if entity @n[tag=AzrielMob_undead_greed] run scoreboard players set stage_bonus_thread AzrTimerStack 89
+execute if score stage_bonus_thread AzrTimerStack matches 89..90 positioned -79946 38 61 if entity @n[distance=..10,tag=AzrielMob_undead_greed] run scoreboard players set stage_bonus_thread AzrTimerStack 89
 
 execute if score stage_bonus_thread AzrTimerStack matches 93 positioned -79946 38 61 run function skyblock:azr/assets/mobs_new/undead_greed
 
 execute if score stage_bonus_thread AzrTimerStack matches 103 positioned -79946 38 61 run tellraw @a[tag=azrShowDialog] [{"text":"贪婪丧尸：","color":"red","bold": true},{"bold": false,"text":"\n“更……多！！……要！！给我、绿宝石……！全都给我！！！”","color":"white"}]
 
-execute if score stage_bonus_thread AzrTimerStack matches 104..105 if entity @n[tag=AzrielMob_undead_greed] run scoreboard players set stage_bonus_thread AzrTimerStack 104
+execute if score stage_bonus_thread AzrTimerStack matches 104..105 positioned -79946 38 61 if entity @n[distance=..10,tag=AzrielMob_undead_greed] run scoreboard players set stage_bonus_thread AzrTimerStack 104
 
 execute if score stage_bonus_thread AzrTimerStack matches 106 run title @a[tag=azrShowDialog] actionbar {"text":"Extra Stage Clear","color":"green"}
 execute if score stage_bonus_thread AzrTimerStack matches 106 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage_bonus_cerement
