@@ -16,9 +16,9 @@ execute if score stage_bonus_thread AzrTimerStack matches 29..30 positioned -799
 
 
 execute if score stage_bonus_thread AzrTimerStack matches 31..32 positioned -79953 29 162 run function skyblock:azr/assets/mobs_new/undead_shield
-execute if score stage_bonus_thread AzrTimerStack matches 35..36 positioned -79953 29 162 run function skyblock:azr/assets/mobs_new/sword
+execute if score stage_bonus_thread AzrTimerStack matches 35..36 positioned -79953 29 162 run function skyblock:azr/assets/mobs_new/skeleton_melee
 
-execute if score stage_bonus_thread AzrTimerStack matches 39..40 positioned -79953 29 162 run function skyblock:azr/assets/mobs_new/sword
+execute if score stage_bonus_thread AzrTimerStack matches 39..40 positioned -79953 29 162 run function skyblock:azr/assets/mobs_new/skeleton_melee
 
 execute if score stage_bonus_thread AzrTimerStack matches 42 run setblock -79967 31 164 lever[face=floor,facing=east]
 execute if score stage_bonus_thread AzrTimerStack matches 42 as @a[tag=azrShowDialog] at @s run playsound minecraft:block.note_block.guitar player @s ~ ~ ~ 1 0.8
@@ -39,7 +39,9 @@ execute if score stage_bonus_thread AzrTimerStack matches 55 positioned -79953 2
 execute if score stage_bonus_thread AzrTimerStack matches 60 positioned -79953 29 162 run function skyblock:azr/assets/mobs_new/undead_fire
 execute if score stage_bonus_thread AzrTimerStack matches 77 positioned -79953 29 162 run function skyblock:azr/assets/mobs_new/skeleton_melee
 execute if score stage_bonus_thread AzrTimerStack matches 80 positioned -79953 29 162 run function skyblock:azr/assets/mobs_new/skeleton_melee
+execute if score stage_bonus_thread AzrTimerStack matches 95 positioned -79953 29 162 run function skyblock:azr/assets/mobs_new/skeleton_melee
 execute if score stage_bonus_thread AzrTimerStack matches 96 positioned -79953 29 162 run function skyblock:azr/assets/mobs_new/skeleton_melee
+execute if score stage_bonus_thread AzrTimerStack matches 97 positioned -79953 29 162 run function skyblock:azr/assets/mobs_new/skeleton_melee
 execute if score stage_bonus_thread AzrTimerStack matches 98 positioned -79953 29 162 run function skyblock:azr/assets/mobs_new/skeleton_melee
 
 execute if score stage_bonus_thread AzrTimerStack matches 99 run setblock -79967 31 164 lever[face=floor,facing=east]
@@ -65,6 +67,10 @@ execute if score stage_bonus_thread AzrTimerStack matches 115 positioned -79953 
 execute if score stage_bonus_thread AzrTimerStack matches 125 positioned -79953 29 162 run function skyblock:azr/assets/mobs_new/undead_fire
 execute if score stage_bonus_thread AzrTimerStack matches 135 positioned -79953 29 162 run function skyblock:azr/assets/mobs_new/undead_fire
 execute if score stage_bonus_thread AzrTimerStack matches 145 positioned -79953 29 162 run function skyblock:azr/assets/mobs_new/undead_fire
+execute if score stage_bonus_thread AzrTimerStack matches 146 positioned -79953 29 162 run function skyblock:azr/assets/mobs_new/shield
+execute if score stage_bonus_thread AzrTimerStack matches 147 positioned -79953 29 162 run function skyblock:azr/assets/mobs_new/shield
+execute if score stage_bonus_thread AzrTimerStack matches 148 positioned -79953 29 162 run function skyblock:azr/assets/mobs_new/shield
+execute if score stage_bonus_thread AzrTimerStack matches 149 positioned -79953 29 162 run function skyblock:azr/assets/mobs_new/shield
 execute if score stage_bonus_thread AzrTimerStack matches 150 positioned -79953 29 162 run function skyblock:azr/assets/mobs_new/shield
 
 execute if score stage_bonus_thread AzrTimerStack matches 151 run setblock -79967 31 164 lever[face=floor,facing=east]
