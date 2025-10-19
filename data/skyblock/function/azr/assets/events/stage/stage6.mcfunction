@@ -49,10 +49,14 @@ execute if score stage_main_thread AzrTimerStack matches 113 positioned -79940 3
 execute if score stage_main_thread AzrTimerStack matches 135 positioned -79940 37 140 run function skyblock:azr/assets/mobs_new/smoke
 execute if score stage_main_thread AzrTimerStack matches 139 positioned -79940 37 140 run function skyblock:azr/assets/mobs_new/smoke
 execute if score stage_main_thread AzrTimerStack matches 143 positioned -79940 37 140 run function skyblock:azr/assets/mobs_new/smoke
+execute if score stage_main_thread AzrTimerStack matches 170 positioned -79940 37 140 run function skyblock:azr/assets/mobs_new/skeleton_sword
+execute if score stage_main_thread AzrTimerStack matches 180 positioned -79940 37 140 run function skyblock:azr/assets/mobs_new/skeleton_sword
 
-execute if score stage_main_thread AzrTimerStack matches 222 run title @a[tag=azrShowDialog] actionbar {"text":"Wave Clear","color":"green"}
-execute if score stage_main_thread AzrTimerStack matches 222 run scoreboard players set wave Azr_system 14
-execute if score stage_main_thread AzrTimerStack matches 242 run title @a[tag=azrShowDialog] actionbar {"text":"Stage 6 - Wave 3","color":"red"}
+execute if score stage_main_thread AzrTimerStack matches 188..189 positioned -79922 37 140 if entity @n[distance=..20,tag=AzrielMob_skeleton_sword] run scoreboard players set stage_main_thread AzrTimerStack 188
+
+execute if score stage_main_thread AzrTimerStack matches 190 run title @a[tag=azrShowDialog] actionbar {"text":"Wave Clear","color":"green"}
+execute if score stage_main_thread AzrTimerStack matches 190 run scoreboard players set wave Azr_system 14
+execute if score stage_main_thread AzrTimerStack matches 210 run title @a[tag=azrShowDialog] actionbar {"text":"Stage 6 - Wave 3","color":"red"}
 
 
 
