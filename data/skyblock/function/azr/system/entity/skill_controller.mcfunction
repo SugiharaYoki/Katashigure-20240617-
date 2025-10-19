@@ -9,6 +9,7 @@ execute if entity @s[tag=AzrielMob_skeleton_general] run function skyblock:azr/a
 execute if entity @s[tag=AzrielMob_spider_giant] run function skyblock:azr/assets/mobs_new/skill/spider_generic
 execute if entity @s[tag=AzrielMob_floating_fire] run function skyblock:azr/assets/mobs_new/skill/floating_fire
 
+execute if entity @s[tag=AzrielMob_zombie_villager_armor] run function skyblock:azr/assets/mobs_new/skill/zombie_villager_armor
 
 
 execute if entity @s[tag=AzrielMob_elite_candle_angel] run function skyblock:azr/assets/mobs_new/skill/candle/core

@@ -58,8 +58,23 @@ execute if score stage_main_thread AzrTimerStack matches 190 run title @a[tag=az
 execute if score stage_main_thread AzrTimerStack matches 190 run scoreboard players set wave Azr_system 14
 execute if score stage_main_thread AzrTimerStack matches 210 run title @a[tag=azrShowDialog] actionbar {"text":"Stage 6 - Wave 3","color":"red"}
 
+execute if score stage_main_thread AzrTimerStack matches 212 positioned -79940 37 140 run function skyblock:azr/assets/mobs_new/sword
+execute if score stage_main_thread AzrTimerStack matches 212 positioned -79940 37 140 run function skyblock:azr/assets/mobs_new/spider_giant
+execute if score stage_main_thread AzrTimerStack matches 212 positioned -79940 37 140 run ride @n[tag=AzrielMob_sword] mount @n[tag=AzrielMob_spider_giant]
+execute if score stage_main_thread AzrTimerStack matches 222 positioned -79940 37 140 run function skyblock:azr/assets/mobs_new/sword
+execute if score stage_main_thread AzrTimerStack matches 225 positioned -79940 37 140 run function skyblock:azr/assets/mobs_new/sword
+execute if score stage_main_thread AzrTimerStack matches 228 positioned -79940 37 140 run function skyblock:azr/assets/mobs_new/sword
+execute if score stage_main_thread AzrTimerStack matches 245 positioned -79940 37 140 run function skyblock:azr/assets/mobs_new/spider_giant
+execute if score stage_main_thread AzrTimerStack matches 252 positioned -79940 37 140 run function skyblock:azr/assets/mobs_new/summoner
+execute if score stage_main_thread AzrTimerStack matches 214 positioned -79922 37 140 run function skyblock:azr/assets/mobs_new/shield
+execute if score stage_main_thread AzrTimerStack matches 254 positioned -79922 37 140 run function skyblock:azr/assets/mobs_new/shield
 
-
+execute if score stage_main_thread AzrTimerStack matches 258..259 positioned -79922 37 140 if entity @n[distance=..20,tag=AzrielMob_skeleton_sword] run scoreboard players set stage_main_thread AzrTimerStack 258
+execute if score stage_main_thread AzrTimerStack matches 260 positioned -79940 37 140 run function skyblock:azr/assets/mobs_new/zombie_villager_armor
+execute if score stage_main_thread AzrTimerStack matches 262 positioned -79940 37 140 run function skyblock:azr/assets/mobs_new/undead
+execute if score stage_main_thread AzrTimerStack matches 265 positioned -79940 37 140 run function skyblock:azr/assets/mobs_new/undead
+execute if score stage_main_thread AzrTimerStack matches 285 positioned -79940 37 140 run function skyblock:azr/assets/mobs_new/undead
+execute if score stage_main_thread AzrTimerStack matches 289 positioned -79940 37 140 run function skyblock:azr/assets/mobs_new/undead
 
 
 execute if score stage_main_thread AzrTimerStack matches 316 run playsound ambient.crimson_forest.mood ambient @a[tag=azrShowDialog] -78000 100 0 1000
