@@ -21,6 +21,9 @@ execute if score stage_boss_bgm AzrTimerStack matches 2281.. run scoreboard play
     execute as @s at @s if entity @s[y=0,dy=36] store result score #temp_rng Azr_system run random value 1..2
     execute as @s at @s if entity @s[y=0,dy=36] if score #temp_rng Azr_system matches 1 run tp @s @r[tag=azrPlayer]
     execute as @s at @s if entity @s[y=0,dy=36] if score #temp_rng Azr_system matches 2 run tp @s -79931 40 88
+    execute as @s at @s if block ~ ~-0.2 ~ water store result score #temp_rng Azr_system run random value 1..2
+    execute as @s at @s if block ~ ~-0.2 ~ water if score #temp_rng Azr_system matches 1 run tp @s @r[tag=azrPlayer]
+    execute as @s at @s if block ~ ~-0.2 ~ water if score #temp_rng Azr_system matches 2 run tp @s -79931 40 88
     #防止卡在墙内 传送到最近玩家
     execute as @s at @s if block ~ ~1 ~ quartz_block run tp @s @r[tag=azrPlayer]
     execute as @s at @s if block ~ ~1 ~ quartz_bricks run tp @s @r[tag=azrPlayer]
