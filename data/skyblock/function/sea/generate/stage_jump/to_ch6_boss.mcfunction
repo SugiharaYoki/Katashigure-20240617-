@@ -5,10 +5,11 @@ execute as @a[tag=SEAPT] at @s[scores={SEAPT_setting_recall=2}] run tag @s add s
 execute as @a[tag=SEAPT] at @s[scores={SEAPT_setting_recall=2}] run tag @s add sea_teleport19
 
 
-forceload add 90152 114
-setblock 90152 161 114 barrier
 
 function skyblock:sea/generate/stage_jump/to_ch6
+
+forceload add 90152 114
+setblock 90152 161 114 barrier
 
 function skyblock:sea/e/ch6/part1/entering_facility
 
