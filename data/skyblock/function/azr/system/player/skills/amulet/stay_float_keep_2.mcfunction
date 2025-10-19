@@ -7,7 +7,7 @@ scoreboard players add @s rng1 18
 execute store result storage azr_amulet:stay_float y_limit double 0.1 run scoreboard players get @s rng1
 
 
-$say y_10_int: $(y_10_int)
+#$say y_10_int: $(y_10_int)
 
 execute store result storage azr_amulet:stay_float x double 1 run data get entity @s Pos[0]
 execute store result storage azr_amulet:stay_float z double 1 run data get entity @s Pos[2]
