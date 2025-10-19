@@ -25,6 +25,9 @@ setblock -79937 38 -12 minecraft:lectern[facing=north,has_book=true,powered=fals
 #开局的按钮
 setblock -79937 39 -12 birch_button[facing=north,face=wall]
 
+#场外花花
+fill -80001 40 -11 -80001 40 -18 minecraft:potted_allium
+
 #游戏开场
 forceload add -79541 -472 -79345 -350
 forceload add -79950 -2150 -79800 -1850
