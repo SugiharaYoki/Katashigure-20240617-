@@ -117,7 +117,7 @@ execute as @n[tag=sc,scores={sea_4temp2=4000..5000}] run function skyblock:sea/e
 
 
 execute if score sc sea_speedrun_ch1 matches 1921.. as @n[tag=sc,scores={sea_4temp2=3001..3950}] if entity @a[tag=SEAPT,x=90074,y=122,z=118,distance=0..4,tag=!SEAPF] run scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 sea_4temp2 4000
-execute if score sc sea_speedrun_ch1 matches ..1920 as @n[tag=sc,scores={sea_4temp2=3001..3950}] if entity @a[tag=SEAPT,x=90085,y=122,z=104,distance=0..4,tag=!SEAPF] run scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 sea_4temp2 6000
+execute if score sc sea_speedrun_ch1 matches ..1920 as @n[tag=sc,scores={sea_4temp2=3094..3950}] if entity @a[tag=SEAPT,x=90085,y=122,z=104,distance=0..4,tag=!SEAPF] run scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 sea_4temp2 6000
 
 
 execute as @n[tag=sc,scores={sea_4temp2=4020..5000}] unless entity @n[tag=SEAboss1] run scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 sea_4temp2 5001
