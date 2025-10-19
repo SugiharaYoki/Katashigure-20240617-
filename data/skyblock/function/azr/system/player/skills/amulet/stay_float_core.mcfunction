@@ -23,7 +23,7 @@ execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 50 if block ~ ~-
 execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 50 if block ~ ~-1 ~ air if block ~ ~-2 ~ air if block ~ ~-3 ~ air if block ~ ~-4 ~ air if block ~ ~-5 ~ air if block ~ ~-6 ~ air if block ~ ~-7 ~ air run scoreboard players add @s AzrSariel_Amulet_StayFloat_power 1
 
 
-execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 90..117 run scoreboard players set @s AzrSariel_Amulet_StayFloat_cooldown 1
+execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 90..118 run scoreboard players set @s AzrSariel_Amulet_StayFloat_cooldown 1
 
 execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 3..52 run attribute @s gravity base set 0.8
 execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 3..52 if entity @s[nbt={OnGround:1b}] run scoreboard players set @s AzrSariel_Amulet_StayFloat_cooldown 2
