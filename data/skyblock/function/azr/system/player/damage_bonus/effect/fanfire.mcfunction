@@ -116,8 +116,6 @@ execute as @s[scores={AzrSariel_Skill_FanFire=3}] at @s positioned ~ ~0.5 ~ rota
 execute as @s[scores={AzrSariel_Skill_FanFire=3}] at @s positioned ~ ~0.5 ~ rotated as @s rotated ~030 ~ positioned ^ ^ ^3 as @e[tag=AzrielMob_typeDEATH,distance=0..1] at @s run damage @s 4 in_fire
 execute as @s[scores={AzrSariel_Skill_FanFire=3}] at @s positioned ~ ~0.5 ~ rotated as @s rotated ~040 ~ positioned ^ ^ ^3 as @e[tag=AzrielMob_typeDEATH,distance=0..1] at @s run damage @s 4 in_fire
 
-say hello
-execute if items entity @s hotbar.* *[custom_data~{azr_amulet_fire_lit:1b}] as @s at @s positioned ~ ~0.5 ~ rotated as @s rotated ~-40 ~ run say hi
 execute if items entity @s hotbar.* *[custom_data~{azr_amulet_fire_lit:1b}] as @s at @s positioned ~ ~0.5 ~ rotated as @s rotated ~-40 ~ run particle flame ^ ^ ^4 0 0 0 0 1
 execute if items entity @s hotbar.* *[custom_data~{azr_amulet_fire_lit:1b}] as @s at @s positioned ~ ~0.5 ~ rotated as @s rotated ~-30 ~ run particle flame ^ ^ ^4 0 0 0 0 1
 execute if items entity @s hotbar.* *[custom_data~{azr_amulet_fire_lit:1b}] as @s at @s positioned ~ ~0.5 ~ rotated as @s rotated ~-20 ~ run particle flame ^ ^ ^4 0 0 0 0 1
