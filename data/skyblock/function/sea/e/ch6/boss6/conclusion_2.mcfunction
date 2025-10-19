@@ -338,6 +338,8 @@ execute if score SEA_ch6_event sea_4temp4 matches 5195 as @a[tag=SEAPT] at @s ru
 execute if score SEA_ch6_event sea_4temp4 matches 5270 as @e[tag=SEAboss6c] at @s run tp @s 90214 261 -2182
 execute if score SEA_ch6_event sea_4temp4 matches 5196..5200 positioned 90216 131 -2182 as @a[tag=SEAPT,distance=80..] at @s run tp @s 90216 131 -2182
 execute if score SEA_ch6_event sea_4temp4 matches 5201..5400 positioned 90216 131 -2182 as @a[tag=SEAPT,distance=80..] at @s run tp @s 90216 242 -2182
+execute if score SEA_ch6_event sea_4temp4 matches 5197 as @n[tag=SEAboss6c] at @s run kill @e[type=marker,tag=sea_boss6_ray_marker]
+
 execute if score SEA_ch6_event sea_4temp4 matches 5196..6000 as @a[tag=SEAPT,x=90210,y=100,z=-2190,dx=12,dy=16,dz=16] at @s run tp @s 90216 242 -2182
 execute if score SEA_ch6_event sea_4temp4 matches 5196 as @n[tag=SEAboss6c] at @s run effect give @s slow_falling 3 50 true
 execute if score SEA_ch6_event sea_4temp4 matches 5196 as @n[tag=SEAboss6c] at @s run data modify entity @s Health set value 600
