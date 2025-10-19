@@ -178,6 +178,7 @@ execute if score SEA_ch6_event rng5 matches 419 as @n[tag=SEAedwina] at @s run t
 
 execute if score SEA_ch6_event rng5 matches 419 run setblock 90152 161 114 barrier
 
+execute if score SEA_ch6_event rng5 matches 426..450 run rotate @n[tag=SEAnorma] facing entity @n[tag=SEAedwina]
 execute if score SEA_ch6_event rng5 matches 426 as @a[tag=SEAPT] at @s run attribute @s minecraft:movement_speed modifier remove sea:marilyn_01
 execute if score SEA_ch6_event rng5 matches 426 as @a[tag=SEAPT] at @s run attribute @s minecraft:jump_strength modifier remove sea:marilyn_01
 execute if score SEA_ch6_event rng5 matches 426 as @a[tag=SEAPT] at @s run effect clear @s glowing
