@@ -39,8 +39,6 @@ execute if block -79928 39 125 minecraft:birch_button[powered=true] run setblock
 #stage6
 execute if block -79943 39 135 minecraft:birch_button[powered=true] run scoreboard players set stage Azr_system 15
 execute if block -79943 39 135 minecraft:birch_button[powered=true] run scoreboard players set stage_main_thread AzrTimerStack 0
-# execute if block -79943 39 135 minecraft:birch_button[powered=true] run setblock -79947 32 140 air
-# execute if block -79943 39 135 minecraft:birch_button[powered=true] run setblock -79947 33 140 air
 execute if block -79943 39 135 minecraft:birch_button[powered=true] run setblock -79943 39 135 air
 #供能区域
 execute if block -79917 38 191 minecraft:birch_button[powered=true] run fill -79916 39 193 -79916 37 193 minecraft:air destroy
