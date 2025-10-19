@@ -49,6 +49,7 @@ execute if score stage_main_thread AzrTimerStack matches 113 positioned -79940 3
 execute if score stage_main_thread AzrTimerStack matches 135 positioned -79940 37 140 run function skyblock:azr/assets/mobs_new/smoke
 execute if score stage_main_thread AzrTimerStack matches 139 positioned -79940 37 140 run function skyblock:azr/assets/mobs_new/smoke
 execute if score stage_main_thread AzrTimerStack matches 143 positioned -79940 37 140 run function skyblock:azr/assets/mobs_new/smoke
+execute if score stage_main_thread AzrTimerStack matches 170 unless block -79929 39 125 air as @a[tag=azrPlayer] at @s run function skyblock:azr/system/shop/purchase/handbook/input {doc:skeleton_sword}
 execute if score stage_main_thread AzrTimerStack matches 170 positioned -79940 37 140 run function skyblock:azr/assets/mobs_new/skeleton_sword
 execute if score stage_main_thread AzrTimerStack matches 180 positioned -79940 37 140 run function skyblock:azr/assets/mobs_new/skeleton_sword
 
@@ -70,6 +71,7 @@ execute if score stage_main_thread AzrTimerStack matches 214 positioned -79922 3
 execute if score stage_main_thread AzrTimerStack matches 254 positioned -79922 37 140 run function skyblock:azr/assets/mobs_new/shield
 
 execute if score stage_main_thread AzrTimerStack matches 258..259 positioned -79922 37 140 if entity @n[distance=..20,tag=AzrielMob_skeleton_sword] run scoreboard players set stage_main_thread AzrTimerStack 258
+execute if score stage_main_thread AzrTimerStack matches 260 unless block -79929 39 125 air as @a[tag=azrPlayer] at @s run function skyblock:azr/system/shop/purchase/handbook/input {doc:zombie_villager_armor}
 execute if score stage_main_thread AzrTimerStack matches 260 positioned -79940 37 140 run function skyblock:azr/assets/mobs_new/zombie_villager_armor
 execute if score stage_main_thread AzrTimerStack matches 262 positioned -79940 37 140 run function skyblock:azr/assets/mobs_new/undead
 execute if score stage_main_thread AzrTimerStack matches 265 positioned -79940 37 140 run function skyblock:azr/assets/mobs_new/undead
