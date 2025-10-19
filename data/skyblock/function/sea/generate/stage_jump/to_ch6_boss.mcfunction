@@ -19,7 +19,7 @@ execute as @n[tag=SEAedwina] at @s run function skyblock:sea/e/ch6/edwina/init
 scoreboard players set sc sea_speedrun_ch6 19999
 
 scoreboard players set SEA_ch6_event rng5 12563
-
+forceload add 90152 114
 setblock 90152 161 114 barrier
 
 forceload add 90147 -1878
