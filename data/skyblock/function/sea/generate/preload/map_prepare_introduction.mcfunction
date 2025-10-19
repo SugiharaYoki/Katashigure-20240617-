@@ -1178,15 +1178,6 @@ fill 90121 119 -1853 90121 124 -1857 minecraft:netherite_block
 
 setblock 90151 164 -1851 minecraft:furnace[facing=north]
 
-forceload add 90100 -1906 90080 -1870
-summon marker 90100 105 -1901 {Tags:["SEAmagma1"]}
-summon marker 90099 105 -1903 {Tags:["SEAmagma1"]}
-summon marker 90094 105 -1899 {Tags:["SEAmagma1"]}
-summon marker 90089 102 -1906 {Tags:["SEAmagma1"]}
-summon marker 90086 102 -1900 {Tags:["SEAmagma1"]}
-
-summon marker 90097 102 -1879 {Tags:["SEAmagma1"]}
-summon marker 90098 102 -1883 {Tags:["SEAmagma1"]}
 
 setblock 90093 102 -1899 chest[facing=north]
 item replace block 90093 102 -1899 container.13 with golden_carrot 3

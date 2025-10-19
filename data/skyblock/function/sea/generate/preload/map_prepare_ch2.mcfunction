@@ -156,6 +156,15 @@ summon marker 90140 153 116 {Tags:["SEAmagma1"]}
 summon marker 90151 160 138 {Tags:["SEAmagma1"]}
 summon marker 90148 146 139 {Tags:["SEAmagma1"]}
 summon marker 90147 146 116 {Tags:["SEAmagma1"]}
+forceload add 90100 -1906 90080 -1870
+summon marker 90100 105 -1901 {Tags:["SEAmagma1"]}
+summon marker 90099 105 -1903 {Tags:["SEAmagma1"]}
+summon marker 90094 105 -1899 {Tags:["SEAmagma1"]}
+summon marker 90089 102 -1906 {Tags:["SEAmagma1"]}
+summon marker 90086 102 -1900 {Tags:["SEAmagma1"]}
+
+summon marker 90097 102 -1879 {Tags:["SEAmagma1"]}
+summon marker 90098 102 -1883 {Tags:["SEAmagma1"]}
 
 
 execute as @e[tag=SEAmagma1,type=marker] at @s if block ~ ~ ~ air run setblock ~ ~ ~ basalt
