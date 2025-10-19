@@ -20,6 +20,7 @@ scoreboard players set sc sea_speedrun_ch6 19999
 
 scoreboard players set SEA_ch6_event rng5 12563
 
+setblock 90152 161 114 barrier
 
 forceload add 90147 -1878
 tp @n[tag=SEAedwina] 90011 57 -1861
