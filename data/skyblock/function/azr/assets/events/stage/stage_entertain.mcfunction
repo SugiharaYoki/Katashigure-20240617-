@@ -71,11 +71,11 @@ execute if score stage_bonus_thread AzrTimerStack matches 192 positioned -79887 
 
 execute if score stage_bonus_thread AzrTimerStack matches 200..201 positioned -79887 43 164 if entity @n[distance=..13,tag=AzrielMob_shield_heavy] run scoreboard players set stage_bonus_thread AzrTimerStack 200
 
-execute if score stage_bonus_thread AzrTimerStack matches 2..204 positioned -79887 58 164 if entity @n[type=arrow,distance=0..0.5] run playsound block.bell.use block @a -79887 58 164 10 0.5
-execute if score stage_bonus_thread AzrTimerStack matches 2..204 positioned -79887 58 164 if entity @n[type=arrow,distance=0..0.5] run playsound block.bell.resonate block @a -79887 58 164 10 0.7
-execute if score stage_bonus_thread AzrTimerStack matches 2..204 positioned -79887 58 164 if entity @n[type=arrow,distance=0..0.5] as @e[tag=AzrielMob_typeDEATH,distance=..25] at @s run particle minecraft:soul ~ ~1 ~ 0.3 2 0.3 0.05 30
-execute if score stage_bonus_thread AzrTimerStack matches 2..204 positioned -79887 58 164 if entity @n[type=arrow,distance=0..0.5] as @e[tag=AzrielMob_typeDEATH,distance=..25] run damage @s 10 cramming
-execute if score stage_bonus_thread AzrTimerStack matches 1..204 positioned -79887 58 164 as @n[type=arrow,distance=0..0.8] at @s run kill @s
+execute if score stage_bonus_thread AzrTimerStack matches 2..204 positioned -79887 58 164 if entity @n[type=arrow,distance=0..1.5,nbt={inBlockState:{Name:"minecraft:bell"}}] run playsound block.bell.use block @a -79887 58 164 10 0.5
+execute if score stage_bonus_thread AzrTimerStack matches 2..204 positioned -79887 58 164 if entity @n[type=arrow,distance=0..1.5,nbt={inBlockState:{Name:"minecraft:bell"}}] run playsound block.bell.resonate block @a -79887 58 164 10 0.7
+execute if score stage_bonus_thread AzrTimerStack matches 2..204 positioned -79887 58 164 if entity @n[type=arrow,distance=0..1.5,nbt={inBlockState:{Name:"minecraft:bell"}}] as @e[tag=AzrielMob_typeDEATH,distance=..25] at @s run particle minecraft:soul ~ ~1 ~ 0.3 2 0.3 0.05 30
+execute if score stage_bonus_thread AzrTimerStack matches 2..204 positioned -79887 58 164 if entity @n[type=arrow,distance=0..1.5,nbt={inBlockState:{Name:"minecraft:bell"}}] as @e[tag=AzrielMob_typeDEATH,distance=..25] run damage @s 10 cramming
+execute if score stage_bonus_thread AzrTimerStack matches 1..204 positioned -79887 58 164 as @n[type=arrow,distance=0..1.8] at @s run kill @s
 
 execute if score stage_bonus_thread AzrTimerStack matches 204 run title @a[tag=azrShowDialog] actionbar {"text":"Extra Stage Clear","color":"green"}
 execute if score stage_bonus_thread AzrTimerStack matches 204 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage_bonus_entertain
