@@ -263,6 +263,9 @@ setblock -79904 44 133 minecraft:potted_azure_bluet
 setblock -79904 43 135 chest[facing=east]
 item replace block -79904 43 135 container.12 with minecraft:flint 2
 item replace block -79904 43 135 container.12 with tripwire_hook[custom_name='{"text":"椅子形状的钥匙","color":"blue","italic":false}',custom_data={key_chair:1b}] 1
+#通往vestige
+fill -79877 41 82 -79875 38 82 minecraft:purple_stained_glass
+
 
 #entertain
   #十字结界
