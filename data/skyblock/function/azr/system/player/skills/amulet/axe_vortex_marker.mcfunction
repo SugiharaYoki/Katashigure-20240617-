@@ -8,10 +8,10 @@ execute if score @s rng1 matches 1 if score @s rng2 matches 1 run tag @s add tow
 execute if score @s rng1 matches 1 if score @s rng2 matches 2 run tag @s add toward_right
 
 
-execute if score @s rng1 matches 11.. positioned ^ ^ ^1.5 run playsound minecraft:entity.player.attack.knockback player @a ~ ~ ~ 0.8 1.5
-execute if score @s rng1 matches 11.. positioned ^ ^ ^1.5 run playsound entity.player.attack.sweep player @a ~ ~ ~ 0.8 1.7
-execute if score @s rng1 matches 11.. positioned ^ ^ ^1.5 run particle sweep_attack ~ ~1.3 ~ 0 0 0 0 1
-execute if score @s rng1 matches 11.. positioned ^ ^ ^1.5 as @e[tag=AzrielMob,distance=0..1.5,limit=1,sort=nearest] at @s run tag @s add AzrielMob_amulet_skill_axevortex_target
+execute if score @s rng1 matches 11.. positioned ^ ^ ^2.2 run playsound minecraft:entity.player.attack.knockback player @a ~ ~ ~ 0.8 1.5
+execute if score @s rng1 matches 11.. positioned ^ ^ ^2.2 run playsound entity.player.attack.sweep player @a ~ ~ ~ 0.8 1.7
+execute if score @s rng1 matches 11.. positioned ^ ^ ^2.2 run particle sweep_attack ~ ~1.3 ~ 0 0 0 0 1
+execute if score @s rng1 matches 11.. positioned ^ ^ ^2.2 as @e[tag=AzrielMob,distance=0..1.5,limit=1,sort=nearest] at @s run tag @s add AzrielMob_amulet_skill_axevortex_target
 
 execute if score @s rng1 matches 11.. if entity @n[tag=AzrielMob_amulet_skill_axevortex_target] run scoreboard players set @s rng1 20
 execute if score @s rng1 matches 11.. if entity @s[tag=AzrielMob_level_1] as @n[tag=AzrielMob_amulet_skill_axevortex_target] run damage @s 5 generic
