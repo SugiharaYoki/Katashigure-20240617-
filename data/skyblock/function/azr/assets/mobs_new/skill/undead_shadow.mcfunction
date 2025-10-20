@@ -10,7 +10,6 @@ execute as @a[tag=azrPlayer] at @s rotated as @s positioned ^ ^ ^6 as @n[tag=Azr
 execute as @a[tag=azrPlayer] at @s rotated as @s positioned ^ ^ ^7 as @n[tag=AzrielMob_undead_shadow,distance=0..2] run tag @s add AzrielMob_undead_shadow_self
 execute as @a[tag=azrPlayer] at @s rotated as @s positioned ^ ^ ^8 as @n[tag=AzrielMob_undead_shadow,distance=0..2] run tag @s add AzrielMob_undead_shadow_self
 
-execute if entity @n[tag=AzrielMob_undead_shadow_self] run say hi
 
 execute if entity @s[tag=!AzrielMob_undead_shadow_tp_success] as @r[tag=azrPlayer] at @s rotated ~ 0 positioned ^ ^-1 ^-4 unless block ~ ~ ~ #air if block ~ ~ ~ #air if block ~ ~1 ~ #air as @n[tag=AzrielMob_undead_shadow_self] run function skyblock:azr/assets/mobs_new/skill/undead_shadow_tp
 execute if entity @s[tag=!AzrielMob_undead_shadow_tp_success] as @r[tag=azrPlayer] at @s rotated ~ 0 positioned ^ ^1 ^-4 unless block ~ ~ ~ #air if block ~ ~ ~ #air if block ~ ~1 ~ #air as @n[tag=AzrielMob_undead_shadow_self] run function skyblock:azr/assets/mobs_new/skill/undead_shadow_tp
