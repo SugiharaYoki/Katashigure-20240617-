@@ -12,11 +12,14 @@ attribute @s attack_damage modifier remove azr_sariel:upg_10
 attribute @s attack_speed modifier remove azr_sariel:upg_11
 attribute @s attack_damage modifier remove azr_sariel:upg_12
 attribute @s attack_speed modifier remove azr_sariel:upg_13
+attribute @s attack_speed modifier remove azr_sariel:upg_13d
 
 scoreboard players set @s AzrSariel_Skill_FanFire 0
 scoreboard players set @s AzrSariel_Skill_ElecBall 0
 scoreboard players set @s AzrSariel_Skill_ContactDmg 0
 scoreboard players set @s AzrSariel_Skill_FlowerReason 0
+scoreboard players set @s AzrSariel_Skill_SlowRing 0
+scoreboard players set @s AzrSariel_Skill_BioMagnet 0
 
 
 

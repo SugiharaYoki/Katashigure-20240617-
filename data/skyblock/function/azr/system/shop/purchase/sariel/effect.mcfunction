@@ -15,6 +15,7 @@ execute if entity @s[tag=AzrSariel_upg12] run attribute @s attack_damage modifie
 execute if entity @s[tag=AzrSariel_upg13] run attribute @s attack_speed modifier add azr_sariel:upg_13 0.1 add_value
 
 execute if entity @s[tag=AzrSariel_upg1C] run attribute @s max_health modifier add azr_sariel:upg_01c 2 add_value
+execute if entity @s[tag=AzrSariel_upg13D] run attribute @s attack_speed modifier add azr_sariel:upg_13d 0.1 add_value
 
 execute if entity @s[tag=AzrSariel_upg3B] run attribute @s movement_speed modifier add azr_sariel:upg_3b 0.03 add_multiplied_base
 execute if entity @s[tag=AzrSariel_upg3C] run attribute @s movement_speed modifier add azr_sariel:upg_3c 0.03 add_multiplied_base

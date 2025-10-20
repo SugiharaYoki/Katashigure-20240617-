@@ -94,6 +94,9 @@ execute if entity @s[scores={Azr_Shop=8432135}] unless entity @s[scores={Azr_eme
 #1C
 execute if entity @s[scores={Azr_Shop=8432136}] if entity @s[tag=!AzrSariel_upg1B,tag=!AzrSariel_upg1D,tag=!AzrSariel_upg2C] run tag @s add AzrSariel_upg_FAILED_NC
 execute if entity @s[scores={Azr_Shop=8432136}] unless entity @s[scores={Azr_emerald=30..}] run tag @s add AzrSariel_upg_FAILED
+#13D
+execute if entity @s[scores={Azr_Shop=8432137}] if entity @s[tag=!AzrSariel_upg13C,tag=!AzrSariel_upg13E,tag=!AzrSariel_upg12D] run tag @s add AzrSariel_upg_FAILED_NC
+execute if entity @s[scores={Azr_Shop=8432137}] unless entity @s[scores={Azr_emerald=30..}] run tag @s add AzrSariel_upg_FAILED
 
 #防止重复触发
 execute if entity @s[scores={Azr_Shop=8432101},tag=AzrSariel_upg1] run tag @s add AzrSariel_upg_FAILED_AL
