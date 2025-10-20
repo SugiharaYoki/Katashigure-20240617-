@@ -38,14 +38,14 @@ tag @e[tag=AzrSariel_BioMagnet_affected] remove AzrSariel_BioMagnet_affected
 tag @s remove AzrSariel_BioMagnet_condition_pass
 
 
-execute at @s anchored eyes run particle electric_spark ~ ~0.6 ~ 0 0 0 0.00 1
-execute at @s anchored eyes run particle electric_spark ~ ~0.7 ~0.1 0 0 0 0.00 1
-execute at @s anchored eyes run particle electric_spark ~ ~0.7 ~-0.1 0 0 0 0.00 1
-execute at @s anchored eyes run particle electric_spark ~0.1 ~0.7 ~ 0 0 0 0.00 1
-execute at @s anchored eyes run particle electric_spark ~-0.1 ~0.7 ~ 0 0 0 0.00 1
-execute at @s anchored eyes run particle electric_spark ~ ~0.8 ~0.2 0 0 0 0.00 1
-execute at @s anchored eyes run particle electric_spark ~ ~0.8 ~-0.2 0 0 0 0.00 1
-execute at @s anchored eyes run particle electric_spark ~0.2 ~0.8 ~ 0 0 0 0.00 1
-execute at @s anchored eyes run particle electric_spark ~-0.2 ~0.8 ~ 0 0 0 0.00 1
+execute at @s run particle electric_spark ~ ~2.1 ~ 0 0 0 0.00 1
+execute at @s run particle electric_spark ~ ~2.2 ~0.1 0 0 0 0.00 1
+execute at @s run particle electric_spark ~ ~2.2 ~-0.1 0 0 0 0.00 1
+execute at @s run particle electric_spark ~0.1 ~2.2 ~ 0 0 0 0.00 1
+execute at @s run particle electric_spark ~-0.1 ~2.2 ~ 0 0 0 0.00 1
+execute at @s run particle electric_spark ~ ~2.3 ~0.2 0 0 0 0.00 1
+execute at @s run particle electric_spark ~ ~2.3 ~-0.2 0 0 0 0.00 1
+execute at @s run particle electric_spark ~0.2 ~2.3 ~ 0 0 0 0.00 1
+execute at @s run particle electric_spark ~-0.2 ~2.3 ~ 0 0 0 0.00 1
 
 say hi
