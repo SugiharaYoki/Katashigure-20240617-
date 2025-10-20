@@ -2,7 +2,6 @@ scoreboard players remove @s AzrSariel_Amulet_AxeVortex_cooldown 1
 
 execute if items entity @s weapon.mainhand #minecraft:axes if score @s[scores={AzrSariel_Amulet_AxeVortex_cooldown=..0}] AzrSariel_Amulet_generic_damage_dealt matches 1.. run tag @s add AZR_Amulet_Instant_Success
 execute if items entity @s[tag=!AzrSariel_Amulet_AxeVortex_SweepRatio] weapon.mainhand #minecraft:swords unless entity @s[predicate=!left,predicate=!right] run attribute @s sweeping_damage_ratio modifier add azr_amulet:axevortex_1 0.3 add_value 
-execute if items entity @s[tag=!AzrSariel_Amulet_AxeVortex_SweepRatio] weapon.mainhand #minecraft:swords unless entity @s[predicate=!left,predicate=!right] run say hi
 execute if items entity @s[tag=!AzrSariel_Amulet_AxeVortex_SweepRatio] weapon.mainhand #minecraft:swords unless entity @s[predicate=!left,predicate=!right] run tag @s add AzrSariel_Amulet_AxeVortex_SweepRatio
 
 
