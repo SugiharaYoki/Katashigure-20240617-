@@ -27,7 +27,7 @@ execute if score @s[tag=toward_left] rng1 matches 11.. run rotate @s ~-10 0
 execute if score @s[tag=toward_right] rng1 matches 11.. run rotate @s ~10 0
 
 
-execute if score @s rng1 matches 28.. run kill @s
+execute if score @s rng1 matches 21.. run kill @s
 
 
 
