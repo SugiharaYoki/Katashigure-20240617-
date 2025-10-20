@@ -5,6 +5,11 @@ execute if items entity @s[tag=!AzrSariel_Amulet_AxeVortex_SweepRatio] weapon.ma
 execute if items entity @s[tag=!AzrSariel_Amulet_AxeVortex_SweepRatio] weapon.mainhand #minecraft:swords unless entity @s[predicate=!skyblock:left,predicate=!skyblock:right] run tag @s add AzrSariel_Amulet_AxeVortex_SweepRatio
 
 
+execute if entity @s[tag=AZR_Amulet_Instant_Success,predicate=!skyblock:left,predicate=!skyblock:right] if items entity @s weapon.mainhand wooden_axe run summon marker ~ ~ ~ {Tags:["AzrielMob_amulet_skill_axevortex","AzrielMob_amulet_skill","AzrielMob_level_1"]}
+execute if entity @s[tag=AZR_Amulet_Instant_Success,predicate=!skyblock:left,predicate=!skyblock:right] if items entity @s weapon.mainhand stone_axe run summon marker ~ ~ ~ {Tags:["AzrielMob_amulet_skill_axevortex","AzrielMob_amulet_skill","AzrielMob_level_2"]}
+execute if entity @s[tag=AZR_Amulet_Instant_Success,predicate=!skyblock:left,predicate=!skyblock:right] if items entity @s weapon.mainhand iron_axe run summon marker ~ ~ ~ {Tags:["AzrielMob_amulet_skill_axevortex","AzrielMob_amulet_skill","AzrielMob_level_3"]}
+execute if entity @s[tag=AZR_Amulet_Instant_Success,predicate=!skyblock:left,predicate=!skyblock:right] if items entity @s weapon.mainhand golden_axe run summon marker ~ ~ ~ {Tags:["AzrielMob_amulet_skill_axevortex","AzrielMob_amulet_skill","AzrielMob_level_4"]}
+execute if entity @s[tag=AZR_Amulet_Instant_Success,predicate=!skyblock:left,predicate=!skyblock:right] if items entity @s weapon.mainhand diamond_axe run summon marker ~ ~ ~ {Tags:["AzrielMob_amulet_skill_axevortex","AzrielMob_amulet_skill","AzrielMob_level_5"]}
 
 execute if entity @s[tag=AZR_Amulet_Instant_Success,predicate=skyblock:left] if items entity @s weapon.mainhand wooden_axe run summon marker ~ ~ ~ {Tags:["AzrielMob_amulet_skill_axevortex","AzrielMob_amulet_skill","AzrielMob_level_1","toward_left"]}
 execute if entity @s[tag=AZR_Amulet_Instant_Success,predicate=skyblock:left] if items entity @s weapon.mainhand stone_axe run summon marker ~ ~ ~ {Tags:["AzrielMob_amulet_skill_axevortex","AzrielMob_amulet_skill","AzrielMob_level_2","toward_left"]}
