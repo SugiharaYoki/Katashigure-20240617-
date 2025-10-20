@@ -223,7 +223,7 @@ tellraw @s [{"text":" ","color":"light_purple"},\
 {"selector":"@n[tag=AzrSariel_displaymarker0b]","color":"dark_gray"},\
 {"selector":"@n[tag=AzrSariel_displaymarker1]","color":"#ffb65d","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432101"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：20\n基础防御 +1","color":"white"}}},\
 {"selector":"@n[tag=AzrSariel_displaymarkerE]","color":"dark_gray"},\
-{"selector":"@n[tag=AzrSariel_displaymarkerE]","color":"dark_gray"},\
+{"selector":"@n[tag=AzrSariel_displaymarker1C]","color":"#ff5dd7","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432136"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：30\n生命上限 +2","color":"white"}}},\
 {"selector":"@n[tag=AzrSariel_displaymarker1D]","color":"#ffb0ff","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432127"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：20\n造成点数超过6的攻击时，有8%概率在最近的敌人处制造一个理之花团\n触碰理之花团可以对3.5格内的所有亡魂与凶兽造成伤害，并恢复范围内队友生命\n伤害：3/5/7（对亡魂翻倍） 治疗：2/4/8 存在时长：60\n重复选中将升级效果","color":"white"}}}]
 
 tellraw @s [{"text":" ","color":"light_purple"},\

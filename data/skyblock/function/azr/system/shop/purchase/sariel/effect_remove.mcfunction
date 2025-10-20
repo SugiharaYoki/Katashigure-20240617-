@@ -4,6 +4,7 @@ attribute @s armor modifier remove azr_sariel:upg_03
 attribute @s max_health modifier remove azr_sariel:upg_04
 attribute @s armor modifier remove azr_sariel:upg_05
 attribute @s max_health modifier remove azr_sariel:upg_06
+attribute @s max_health modifier remove azr_sariel:upg_01c
 tag @s remove AzrSariel_sub_stardeplete
 attribute @s attack_damage modifier remove azr_sariel:upg_08
 attribute @s attack_speed modifier remove azr_sariel:upg_09
