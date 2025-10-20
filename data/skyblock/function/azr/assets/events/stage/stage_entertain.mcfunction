@@ -27,13 +27,9 @@ execute if score stage_bonus_thread AzrTimerStack matches 43 positioned -79887 4
 execute if score stage_bonus_thread AzrTimerStack matches 43 positioned -79877 43 164 run function skyblock:azr/assets/mobs_new/undead
 execute if score stage_bonus_thread AzrTimerStack matches 43 positioned -79887 43 154 run function skyblock:azr/assets/mobs_new/undead
 execute if score stage_bonus_thread AzrTimerStack matches 63 positioned -79897 43 164 run function skyblock:azr/assets/mobs_new/undead_pickaxe
-execute if score stage_bonus_thread AzrTimerStack matches 73 positioned -79887 43 174 run function skyblock:azr/assets/mobs_new/sword
 execute if score stage_bonus_thread AzrTimerStack matches 63 positioned -79877 43 164 run function skyblock:azr/assets/mobs_new/undead_pickaxe
-execute if score stage_bonus_thread AzrTimerStack matches 73 positioned -79887 43 154 run function skyblock:azr/assets/mobs_new/sword
-execute if score stage_bonus_thread AzrTimerStack matches 63 positioned -79897 43 164 run function skyblock:azr/assets/mobs_new/sword
-execute if score stage_bonus_thread AzrTimerStack matches 73 positioned -79887 43 174 run function skyblock:azr/assets/mobs_new/undead_pickaxe
-execute if score stage_bonus_thread AzrTimerStack matches 63 positioned -79877 43 164 run function skyblock:azr/assets/mobs_new/sword
-execute if score stage_bonus_thread AzrTimerStack matches 73 positioned -79887 43 154 run function skyblock:azr/assets/mobs_new/undead_pickaxe
+execute if score stage_bonus_thread AzrTimerStack matches 73 positioned -79897 43 164 run function skyblock:azr/assets/mobs_new/sword
+execute if score stage_bonus_thread AzrTimerStack matches 73 positioned -79877 43 164 run function skyblock:azr/assets/mobs_new/sword
 
 execute if score stage_bonus_thread AzrTimerStack matches 78..79 positioned -79887 43 164 if entity @n[distance=..13,tag=AzrielMob_undead_pickaxe] run scoreboard players set stage_bonus_thread AzrTimerStack 78
 
