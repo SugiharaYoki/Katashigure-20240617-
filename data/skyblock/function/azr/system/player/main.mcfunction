@@ -46,6 +46,7 @@ execute if items entity @s container.* *[custom_data~{azr_amulet_stay_float:1b}]
 execute if items entity @s container.* *[custom_data~{azr_amulet_sprint_double:1b}] run function skyblock:azr/system/player/skills/amulet/sprint_double_core
 execute if items entity @s hotbar.* *[custom_data~{azr_amulet_axe_vortex:1b}] run function skyblock:azr/system/player/skills/amulet/axe_vortex_core
 execute if entity @s[tag=AzrSariel_Amulet_AxeVortex_SweepRatio] if entity @s[predicate=!left,predicate=!right] run function skyblock:azr/system/player/skills/amulet/axe_vortex_unload
+execute if entity @s[tag=AzrSariel_Amulet_AxeVortex_SweepRatio] unless items entity @s hotbar.* *[custom_data~{azr_amulet_axe_vortex:1b}] run function skyblock:azr/system/player/skills/amulet/axe_vortex_unload
 
 
 #节制天平
