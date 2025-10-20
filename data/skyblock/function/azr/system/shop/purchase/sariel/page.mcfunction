@@ -215,8 +215,8 @@ execute if entity @s[tag=!AzrSariel_upg16D] run data modify entity @n[tag=AzrSar
 #  09 速 电 电 电
 #  10 攻    缓
 #  11 速 缓 缓
-#  12 攻
-#  13 速
+#  12 攻    磁
+#  13 速 磁 磁
 
 
 tellraw @s [{"text":" ","color":"light_purple"},\
@@ -286,23 +286,29 @@ tellraw @s [{"text":" ","color":"light_purple"},\
 {"selector":"@n[tag=AzrSariel_displaymarker0b]","color":"dark_gray"},\
 {"selector":"@n[tag=AzrSariel_displaymarker10]","color":"#ff5d5d","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432110"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：10\n攻击力 +0.5","color":"white"}}},\
 {"selector":"@n[tag=AzrSariel_displaymarkerE]","color":"dark_gray"},\
-{"selector":"@n[tag=AzrSariel_displaymarker10C]","color":"#605c6a","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432130"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：30\n在水平距离自己3.0格处悬浮锁链环\n当有生灵或凶兽接触到环时，环附近的所有生灵和凶兽都将被大大减缓移动速度1秒，并永久减少自身防御力\n因为悬浮环造成的防御力减少对同一敌人只会起效一次\n减防：1/2/3 冷却：4/3.7/3.4\n重复选中将升级效果","color":"white"}}},\
+{"selector":"@n[tag=AzrSariel_displaymarker10C]","color":"#716987","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432130"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：30\n在水平距离自己3.0格处悬浮锁链环\n当有生灵或凶兽接触到环时，环附近的所有生灵和凶兽都将被大大减缓移动速度1秒，并永久减少自身防御力\n因为悬浮环造成的防御力减少对同一敌人只会起效一次\n减防：1/2/3 冷却：4/3.7/3.4\n重复选中将升级效果","color":"white"}}},\
 {"selector":"@n[tag=AzrSariel_displaymarkerE]","color":"dark_gray"}]
 
 tellraw @s [{"text":" ","color":"light_purple"},\
 {"selector":"@n[tag=AzrSariel_displaymarker0b]","color":"dark_gray"},\
 {"selector":"@n[tag=AzrSariel_displaymarker11]","color":"#7b5dff","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432111"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：10\n攻击速度 +0.1","color":"white"}}},\
-{"selector":"@n[tag=AzrSariel_displaymarker11B]","color":"#605c6a","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432131"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：20\n在水平距离自己3.0格处悬浮锁链环\n当有生灵或凶兽接触到环时，环附近的所有生灵和凶兽都将被大大减缓移动速度1秒，并永久减少自身防御力\n因为悬浮环造成的防御力减少对同一敌人只会起效一次\n减防：1/2/3 冷却：4/3.7/3.4\n重复选中将升级效果","color":"white"}}},\
-{"selector":"@n[tag=AzrSariel_displaymarker11C]","color":"#605c6a","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432132"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：30\n在水平距离自己3.0格处悬浮锁链环\n当有生灵或凶兽接触到环时，环附近的所有生灵和凶兽都将被大大减缓移动速度1秒，并永久减少自身防御力\n因为悬浮环造成的防御力减少对同一敌人只会起效一次\n减防：1/2/3 冷却：4/3.7/3.4\n重复选中将升级效果","color":"white"}}},\
+{"selector":"@n[tag=AzrSariel_displaymarker11B]","color":"#716987","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432131"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：20\n在水平距离自己3.0格处悬浮锁链环\n当有生灵或凶兽接触到环时，环附近的所有生灵和凶兽都将被大大减缓移动速度1秒，并永久减少自身防御力\n因为悬浮环造成的防御力减少对同一敌人只会起效一次\n减防：1/2/3 冷却：4/3.7/3.4\n重复选中将升级效果","color":"white"}}},\
+{"selector":"@n[tag=AzrSariel_displaymarker11C]","color":"#716987","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432132"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：30\n在水平距离自己3.0格处悬浮锁链环\n当有生灵或凶兽接触到环时，环附近的所有生灵和凶兽都将被大大减缓移动速度1秒，并永久减少自身防御力\n因为悬浮环造成的防御力减少对同一敌人只会起效一次\n减防：1/2/3 冷却：4/3.7/3.4\n重复选中将升级效果","color":"white"}}},\
 {"selector":"@n[tag=AzrSariel_displaymarkerE]","color":"dark_gray"}]
 
 tellraw @s [{"text":" ","color":"light_purple"},\
 {"selector":"@n[tag=AzrSariel_displaymarker0b]","color":"dark_gray"},\
-{"selector":"@n[tag=AzrSariel_displaymarker12]","color":"#ff5d5d","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432112"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：20\n攻击力 +0.5","color":"white"}}}]
+{"selector":"@n[tag=AzrSariel_displaymarker12]","color":"#ff5d5d","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432112"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：20\n攻击力 +0.5","color":"white"}}},\
+{"selector":"@n[tag=AzrSariel_displaymarkerE]","color":"dark_gray"},\
+{"selector":"@n[tag=AzrSariel_displaymarker12C]","color":"#18538f","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432133"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：30\n造成点数超过6的攻击时，有5%/10%/15%概率将最近的敌人附上“生物磁力”1/1.25/1.5秒\n被附上“生物磁力”的敌人会持续吸引并被吸往附近随机的同类型敌人\n若附有“生物磁力”的敌人附近1/1.5/2格内敌人数量超过5个，则造成4点挤压伤害\n重复选中将升级效果","color":"white"}}},\
+{"selector":"@n[tag=AzrSariel_displaymarkerE]","color":"dark_gray"}]
 
 tellraw @s [{"text":" ","color":"light_purple"},\
 {"selector":"@n[tag=AzrSariel_displaymarker0b]","color":"dark_gray"},\
-{"selector":"@n[tag=AzrSariel_displaymarker13]","color":"#7b5dff","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432113"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：20\n攻击速度 +0.1","color":"white"}}}]
+{"selector":"@n[tag=AzrSariel_displaymarker13]","color":"#7b5dff","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432113"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：20\n攻击速度 +0.1","color":"white"}}},\
+{"selector":"@n[tag=AzrSariel_displaymarker13B]","color":"#18538f","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432134"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：30\n造成点数超过6的攻击时，有5%/10%/15%概率将最近的敌人附上“生物磁力”1/1.25/1.5秒\n被附上“生物磁力”的敌人会持续吸引并被吸往附近随机的同类型敌人\n若附有“生物磁力”的敌人附近1/1.5/2格内敌人数量超过5个，则造成4点挤压伤害\n重复选中将升级效果","color":"white"}}},\
+{"selector":"@n[tag=AzrSariel_displaymarker13C]","color":"#18538f","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432135"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：30\n造成点数超过6的攻击时，有5%/10%/15%概率将最近的敌人附上“生物磁力”1/1.25/1.5秒\n被附上“生物磁力”的敌人会持续吸引并被吸往附近随机的同类型敌人\n若附有“生物磁力”的敌人附近1/1.5/2格内敌人数量超过5个，则造成4点挤压伤害\n重复选中将升级效果","color":"white"}}},\
+{"selector":"@n[tag=AzrSariel_displaymarkerE]","color":"dark_gray"}]
 
 
 tellraw @s {"text":"   "}

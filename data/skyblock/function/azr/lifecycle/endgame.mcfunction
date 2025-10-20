@@ -106,6 +106,7 @@ scoreboard objectives remove AzrSariel_Skill_FlowerReason
 scoreboard objectives remove AzrSariel_Skill_FlowerReason_condition
 scoreboard objectives remove AzrSariel_Skill_SlowRing
 scoreboard objectives remove AzrSariel_Skill_SlowRing_cooldown
+scoreboard objectives remove AzrSariel_Skill_BioMagnet
 #护身符
 scoreboard objectives remove AzrSariel_Amulet_FireLit_cooldown
 scoreboard objectives remove AzrSariel_Amulet_StayFloat_cooldown

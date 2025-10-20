@@ -11,5 +11,13 @@ execute if entity @s[tag=AzrielMob_floating_fire] run function skyblock:azr/asse
 
 execute if entity @s[tag=AzrielMob_zombie_villager_armor] run function skyblock:azr/assets/mobs_new/skill/zombie_villager_armor
 
-
+#精英怪
 execute if entity @s[tag=AzrielMob_elite_candle_angel] run function skyblock:azr/assets/mobs_new/skill/candle/core
+
+
+#负面影响
+execute if entity @s[tag=AzrSariel_BioMagnet_target] run function skyblock:azr/system/player/damage_bonus/effect/biomagnet_target_core
+
+
+
+

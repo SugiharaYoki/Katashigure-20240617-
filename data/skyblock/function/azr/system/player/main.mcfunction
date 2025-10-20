@@ -51,6 +51,7 @@ execute if entity @s[tag=AzrSariel_upg8C] run scoreboard players remove @s AzrSa
 execute if entity @s[scores={AzrSariel_Skill_ContactDmg=1..,AzrSariel_Skill_ContactDmg_cooldown=..0}] if entity @n[tag=AzrielMob,distance=0..1.5] run function skyblock:azr/system/player/damage_bonus/effect/contactdmg
 execute if entity @s[tag=AzrSariel_upg8C] run function skyblock:azr/system/player/damage_bonus/effect/sneakdodgearrow
 
+execute if score @s AzrSariel_Skill_FlowerReason_condition matches 6.. run function skyblock:azr/system/player/damage_bonus/effect/biomagnet
 execute if score @s AzrSariel_Skill_FlowerReason_condition matches 6.. run function skyblock:azr/system/player/damage_bonus/effect/flowerreason
 execute if score @s AzrSariel_Skill_SlowRing matches 1.. run scoreboard players remove @s AzrSariel_Skill_SlowRing_cooldown 1
 execute if score @s AzrSariel_Skill_SlowRing matches 1.. if score @s AzrSariel_Skill_SlowRing_cooldown matches ..0 run function skyblock:azr/system/player/damage_bonus/effect/slowring

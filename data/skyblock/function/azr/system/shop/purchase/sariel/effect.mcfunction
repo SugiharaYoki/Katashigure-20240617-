@@ -38,5 +38,9 @@ scoreboard players set @s AzrSariel_Skill_SlowRing 0
 execute if entity @s[tag=AzrSariel_upg10C] run scoreboard players add @s AzrSariel_Skill_SlowRing 1
 execute if entity @s[tag=AzrSariel_upg11B] run scoreboard players add @s AzrSariel_Skill_SlowRing 1
 execute if entity @s[tag=AzrSariel_upg11C] run scoreboard players add @s AzrSariel_Skill_SlowRing 1
+scoreboard players set @s AzrSariel_Skill_BioMagnet 0
+execute if entity @s[tag=AzrSariel_upg12C] run scoreboard players add @s AzrSariel_Skill_BioMagnet 1
+execute if entity @s[tag=AzrSariel_upg13B] run scoreboard players add @s AzrSariel_Skill_BioMagnet 1
+execute if entity @s[tag=AzrSariel_upg13C] run scoreboard players add @s AzrSariel_Skill_BioMagnet 1
 
 tag @s add AZR_sariel_01_effected
