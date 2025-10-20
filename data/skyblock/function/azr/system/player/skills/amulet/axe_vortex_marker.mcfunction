@@ -23,11 +23,11 @@ execute if score @s rng1 matches 11.. if entity @s[tag=AzrielMob_level_5] as @n[
 
 
 
-execute if score @s[tag=toward_left] rng1 matches 11.. run rotate @s ~-15 0
-execute if score @s[tag=toward_right] rng1 matches 11.. run rotate @s ~15 0
+execute if score @s[tag=toward_left] rng1 matches 11.. run rotate @s ~-5 0
+execute if score @s[tag=toward_right] rng1 matches 11.. run rotate @s ~5 0
 
 
-execute if score @s rng1 matches 17.. run kill @s
+execute if score @s rng1 matches 39.. run kill @s
 
 
 
