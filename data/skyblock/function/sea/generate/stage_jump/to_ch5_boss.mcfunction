@@ -21,6 +21,8 @@ execute if entity @s[scores={SEAPT_setting_fiona=2}] run scoreboard players add 
 execute if entity @s[scores={SEAPT_setting_fiona=3}] run scoreboard players add SEA_ch5_event_fiona_favor rng1 16
 execute if entity @s[scores={SEAPT_setting_fiona=4}] run scoreboard players add SEA_ch5_event_fiona_favor rng1 24
 
+fill 90119 96 29 90119 96 25 air
+
 fill 90109 114 41 90110 114 42 air
 fill 90109 115 41 90110 115 42 air
 
