@@ -104,6 +104,9 @@ execute if score stage_main_thread AzrTimerStack matches 354 run scoreboard play
 execute if score stage_main_thread AzrTimerStack matches 354 run tellraw @a[tag=azrPlayer,scores={AZR_chainKillUpg_pts=..2},tag=hasSkills] [{"text":"索命连击","color":"light_purple","bold":true},{"bold":false,"text":"可用点数已增加，目前为：3","color":"white"}]
 execute if score stage_main_thread AzrTimerStack matches 354 run scoreboard players set @a[scores={AZR_chainKillUpg_pts=..2}] AZR_chainKillUpg_pts 3
 
+execute if score stage_main_thread AzrTimerStack matches 354 unless block -79929 39 125 air as @a[tag=azrPlayer] at @s run function skyblock:azr/system/shop/purchase/handbook/input {doc:undead_shadow}
+execute if score stage_main_thread AzrTimerStack matches 354 positioned -79906 38 135 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_undead_shadow","AzrielMob_summon_delay","AzrielMob_level_1"]}
+
 execute if score stage_main_thread AzrTimerStack matches 354 run clone -79931 38 117 -79931 38 117 -79899 38 142 replace move
 execute if score stage_main_thread AzrTimerStack matches 354 run particle minecraft:end_rod -79900 39 142 0.6 0.6 0.6 0.0 13
 execute if score stage_main_thread AzrTimerStack matches 354 run particle minecraft:end_rod -79931 39 117 0.6 0.6 0.6 0.0 13
