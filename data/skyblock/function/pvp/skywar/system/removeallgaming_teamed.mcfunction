@@ -223,4 +223,11 @@ attribute @s attack_damage modifier remove azr_food:power_salmon_01
 attribute @s gravity base reset
 attribute @s jump_strength base reset
 
+attribute @s sweeping_damage_ratio modifier remove azr_amulet:axevortex_1
+
+
+
+
+
+
 

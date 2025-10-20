@@ -1,7 +1,9 @@
 scoreboard players remove @s AzrSariel_Amulet_AxeVortex_cooldown 1
 
 execute if items entity @s weapon.mainhand #minecraft:axes if score @s[scores={AzrSariel_Amulet_AxeVortex_cooldown=..0}] AzrSariel_Amulet_generic_damage_dealt matches 1.. run tag @s add AZR_Amulet_Instant_Success
-execute if items entity @s weapon.mainhand #minecraft:axes if entity @s[scores={AzrSariel_Amulet_AxeVortex_cooldown=..0}] anchored eyes run particle minecraft:small_flame ^-0.3 ^-0.2 ^0.5 0 0 0 0 1
+execute if items entity @s weapon.mainhand #minecraft:swords unless entity @s[predicate=!left,predicate=!right] run attribute @s sweeping_damage_ratio modifier add azr_amulet:axevortex_1 0.3 add_value 
+execute if items entity @s weapon.mainhand #minecraft:swords unless entity @s[predicate=!left,predicate=!right] run tag @s add AzrSariel_Amulet_AxeVortex_SweepRatio
+
 
 
 execute if entity @s[tag=AZR_Amulet_Instant_Success,predicate=skyblock:left] if items entity @s weapon.mainhand wooden_axe run summon marker ~ ~ ~ {Tags:["AzrielMob_amulet_skill_axevortex","AzrielMob_amulet_skill","AzrielMob_level_1","toward_left"]}
