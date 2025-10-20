@@ -1,7 +1,7 @@
 {
     "display": {
         "title": {
-            "text": "大图书馆区域 - 钟楼的十字路口",
+            "text": "西南钟楼 - 十字路口",
             "color": "green",
             "bold": true,
             "italic": false
@@ -23,5 +23,5 @@
             "trigger": "minecraft:impossible"
         }
     },
-    "parent": "skyblock:azr/progress/stage7"
+    "parent": "skyblock:azr/progress/stage5"
 }
