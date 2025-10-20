@@ -1,8 +1,8 @@
 scoreboard players add @s AzrSariel_Skill_BioMagnet 1
 
-execute if entity @s[tag=AzrielMob_typeLIFE] as @e[tag=AzrielMob_typeLIFE,distance=0.01..1.88,sort=random,limit=1] run tag @s add AzrSariel_BioMagnet_affected
-execute if entity @s[tag=AzrielMob_typeDEATH] as @e[tag=AzrielMob_typeDEATH,distance=0.01..1.88,sort=random,limit=1] run tag @s add AzrSariel_BioMagnet_affected
-execute if entity @s[tag=AzrielMob_typeMONSTER] as @e[tag=AzrielMob_typeMONSTER,distance=0.01..1.88,sort=random,limit=1] run tag @s add AzrSariel_BioMagnet_affected
+execute if entity @s[tag=AzrielMob_typeLIFE] as @e[tag=AzrielMob_typeLIFE,distance=0.01..2.28,sort=random,limit=1] run tag @s add AzrSariel_BioMagnet_affected
+execute if entity @s[tag=AzrielMob_typeDEATH] as @e[tag=AzrielMob_typeDEATH,distance=0.01..2.28,sort=random,limit=1] run tag @s add AzrSariel_BioMagnet_affected
+execute if entity @s[tag=AzrielMob_typeMONSTER] as @e[tag=AzrielMob_typeMONSTER,distance=0.01..2.28,sort=random,limit=1] run tag @s add AzrSariel_BioMagnet_affected
 
 execute if entity @s[scores={AzrSariel_Skill_BioMagnet=2}] run tag @s add AzrSariel_BioMagnet_condition_pass
 execute if entity @s[scores={AzrSariel_Skill_BioMagnet=6}] run tag @s add AzrSariel_BioMagnet_condition_pass
@@ -21,11 +21,11 @@ execute if entity @s[tag=AzrSariel_BioMagnet_condition_pass] at @s as @n[tag=Azr
 execute if entity @s[tag=AzrSariel_BioMagnet_condition_pass] at @s as @n[tag=AzrSariel_BioMagnet_affected] at @s facing entity @n[tag=AzrSariel_BioMagnet_condition_pass] feet run kill @e[type=marker,tag=AzrielMob_move_marker_biomagnet]
 
 execute store result score @s[tag=AzrSariel_BioMagnet_target_strength_1] rng1 if entity @e[distance=..1.0]
-execute store result score @s[tag=AzrSariel_BioMagnet_target_strength_2] rng1 if entity @e[distance=..1.4]
-execute store result score @s[tag=AzrSariel_BioMagnet_target_strength_3] rng1 if entity @e[distance=..1.8]
+execute store result score @s[tag=AzrSariel_BioMagnet_target_strength_2] rng1 if entity @e[distance=..1.6]
+execute store result score @s[tag=AzrSariel_BioMagnet_target_strength_3] rng1 if entity @e[distance=..2.2]
 execute if score @s[tag=AzrSariel_BioMagnet_target_strength_1] rng1 matches 5.. as @e[distance=..1.0,tag=AzrielMob] run damage @s 4 cramming
-execute if score @s[tag=AzrSariel_BioMagnet_target_strength_2] rng1 matches 5.. as @e[distance=..1.4,tag=AzrielMob] run damage @s 4 cramming
-execute if score @s[tag=AzrSariel_BioMagnet_target_strength_3] rng1 matches 5.. as @e[distance=..1.8,tag=AzrielMob] run damage @s 4 cramming
+execute if score @s[tag=AzrSariel_BioMagnet_target_strength_2] rng1 matches 5.. as @e[distance=..1.6,tag=AzrielMob] run damage @s 4 cramming
+execute if score @s[tag=AzrSariel_BioMagnet_target_strength_3] rng1 matches 5.. as @e[distance=..2.2,tag=AzrielMob] run damage @s 4 cramming
 
 execute if entity @s[tag=AzrSariel_BioMagnet_target_strength_1,scores={AzrSariel_Skill_BioMagnet=20..}] run tag @s remove AzrSariel_BioMagnet_target
 execute if entity @s[tag=AzrSariel_BioMagnet_target_strength_1,scores={AzrSariel_Skill_BioMagnet=20..}] run tag @s remove AzrSariel_BioMagnet_target_strength_1
@@ -36,3 +36,14 @@ execute if entity @s[tag=AzrSariel_BioMagnet_target_strength_3,scores={AzrSariel
 
 tag @e[tag=AzrSariel_BioMagnet_affected] remove AzrSariel_BioMagnet_affected
 tag @s remove AzrSariel_BioMagnet_condition_pass
+
+
+execute positioned ~ ~ ~ anchored eyes run particle electric_spark ~ ~0.4 ~ 0 0 0 0.00 1
+execute positioned ~ ~ ~ anchored eyes run particle electric_spark ~ ~0.5 ~0.1 0 0 0 0.00 1
+execute positioned ~ ~ ~ anchored eyes run particle electric_spark ~ ~0.5 ~-0.1 0 0 0 0.00 1
+execute positioned ~ ~ ~ anchored eyes run particle electric_spark ~0.1 ~0.5 ~ 0 0 0 0.00 1
+execute positioned ~ ~ ~ anchored eyes run particle electric_spark ~-0.1 ~0.5 ~ 0 0 0 0.00 1
+execute positioned ~ ~ ~ anchored eyes run particle electric_spark ~ ~0.6 ~0.2 0 0 0 0.00 1
+execute positioned ~ ~ ~ anchored eyes run particle electric_spark ~ ~0.6 ~-0.2 0 0 0 0.00 1
+execute positioned ~ ~ ~ anchored eyes run particle electric_spark ~0.2 ~0.6 ~ 0 0 0 0.00 1
+execute positioned ~ ~ ~ anchored eyes run particle electric_spark ~-0.2 ~0.6 ~ 0 0 0 0.00 1
