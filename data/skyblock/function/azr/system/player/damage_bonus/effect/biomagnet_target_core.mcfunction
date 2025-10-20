@@ -47,5 +47,3 @@ execute at @s run particle electric_spark ~ ~2.3 ~0.2 0 0 0 0.00 1
 execute at @s run particle electric_spark ~ ~2.3 ~-0.2 0 0 0 0.00 1
 execute at @s run particle electric_spark ~0.2 ~2.3 ~ 0 0 0 0.00 1
 execute at @s run particle electric_spark ~-0.2 ~2.3 ~ 0 0 0 0.00 1
-
-say hi
