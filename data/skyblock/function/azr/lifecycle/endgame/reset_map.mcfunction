@@ -267,7 +267,7 @@ item replace block -79904 43 135 container.12 with tripwire_hook[custom_name='{"
 #entertain
   #十字结界
 fill -79886 43 188 -79888 46 188 minecraft:purple_stained_glass
-fill -79914 43 188 -79916 46 188 minecraft:purple_stained_glass
+#fill -79914 43 188 -79916 46 188 minecraft:purple_stained_glass
 fill -79862 43 163 -79862 46 165 minecraft:purple_stained_glass
 fill -79886 43 132 -79888 45 132 minecraft:purple_stained_glass
   #十字北 阳台阁楼 招待厅
