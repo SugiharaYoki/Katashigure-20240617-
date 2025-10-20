@@ -73,6 +73,7 @@ execute if score stage_bonus_thread AzrTimerStack matches 200..201 positioned -7
 
 execute if score stage_bonus_thread AzrTimerStack matches 2..204 positioned -79887 58 164 if entity @n[type=arrow,distance=0..0.5] run playsound block.bell.use block @a -79887 58 164 10 0.5
 execute if score stage_bonus_thread AzrTimerStack matches 2..204 positioned -79887 58 164 if entity @n[type=arrow,distance=0..0.5] run playsound block.bell.resonate block @a -79887 58 164 10 0.7
+execute if score stage_bonus_thread AzrTimerStack matches 2..204 positioned -79887 58 164 if entity @n[type=arrow,distance=0..0.5] as @e[tag=AzrielMob_typeDEATH,distance=..25] at @s run particle minecraft:soul ~ ~1 ~ 0.3 2 0.3 0.05 30
 execute if score stage_bonus_thread AzrTimerStack matches 2..204 positioned -79887 58 164 if entity @n[type=arrow,distance=0..0.5] as @e[tag=AzrielMob_typeDEATH,distance=..25] run damage @s 10 cramming
 execute if score stage_bonus_thread AzrTimerStack matches 1..204 positioned -79887 58 164 as @n[type=arrow,distance=0..0.8] at @s run kill @s
 
