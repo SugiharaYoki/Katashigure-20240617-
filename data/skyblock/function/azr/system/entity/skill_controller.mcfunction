@@ -8,6 +8,7 @@ execute if entity @s[tag=AzrielMob_treasure_rabbit] run function skyblock:azr/as
 execute if entity @s[tag=AzrielMob_skeleton_general] run function skyblock:azr/assets/mobs_new/skill/skeleton_general
 execute if entity @s[tag=AzrielMob_spider_giant] run function skyblock:azr/assets/mobs_new/skill/spider_generic
 execute if entity @s[tag=AzrielMob_floating_fire] run function skyblock:azr/assets/mobs_new/skill/floating_fire
+execute if entity @s[tag=AzrielMob_undead_shadow] run function skyblock:azr/assets/mobs_new/skill/undead_shadow
 
 execute if entity @s[tag=AzrielMob_zombie_villager_armor] run function skyblock:azr/assets/mobs_new/skill/zombie_villager_armor
 
