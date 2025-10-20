@@ -12,6 +12,9 @@ execute if entity @s[scores={AzrSariel_Amulet_SprintDouble_clock=100}] run plays
 execute if entity @s[scores={AzrSariel_Amulet_SprintDouble_clock=100}] run effect give @s hunger 5 7 true
 execute if entity @s[scores={AzrSariel_Amulet_SprintDouble_clock=100}] run attribute @s movement_speed modifier add azr_amulet:sprintdouble_01 0.1 add_value
 execute if entity @s[scores={AzrSariel_Amulet_SprintDouble_clock=100}] run attribute @s armor modifier add azr_amulet:sprintdouble_01 20 add_value
+
+execute if entity @s[scores={AzrSariel_Amulet_SprintDouble_clock=93..99},predicate=!skyblock:forward] run scoreboard players set @s AzrSariel_Amulet_SprintDouble_clock 92
+
 execute if entity @s[scores={AzrSariel_Amulet_SprintDouble_clock=92}] run attribute @s movement_speed modifier remove azr_amulet:sprintdouble_01
 execute if entity @s[scores={AzrSariel_Amulet_SprintDouble_clock=92}] run attribute @s armor modifier remove azr_amulet:sprintdouble_01
 
