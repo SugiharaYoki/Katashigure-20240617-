@@ -47,3 +47,5 @@ execute positioned ~ ~ ~ anchored eyes run particle electric_spark ~ ~0.6 ~0.2 0
 execute positioned ~ ~ ~ anchored eyes run particle electric_spark ~ ~0.6 ~-0.2 0 0 0 0.00 1
 execute positioned ~ ~ ~ anchored eyes run particle electric_spark ~0.2 ~0.6 ~ 0 0 0 0.00 1
 execute positioned ~ ~ ~ anchored eyes run particle electric_spark ~-0.2 ~0.6 ~ 0 0 0 0.00 1
+
+say hi
