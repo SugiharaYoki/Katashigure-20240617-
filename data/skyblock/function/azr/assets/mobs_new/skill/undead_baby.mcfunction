@@ -24,6 +24,6 @@ execute if score @s rng1 matches 30 if items entity @s weapon.mainhand green_bun
 
 
 
-execute if score @s rng1 matches 30 as @s at @s run effect clear @s resistance
-execute if score @s rng1 matches 30 as @s at @s run effect clear @s slowness
-execute if score @s rng1 matches 70.. run scoreboard players set @s rng1 4
+execute if score @s rng1 matches 40 as @s at @s run effect clear @s resistance
+execute if score @s rng1 matches 40 as @s at @s run effect clear @s slowness
+execute if score @s rng1 matches 90.. run scoreboard players set @s rng1 4
