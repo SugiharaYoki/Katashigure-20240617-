@@ -20,9 +20,9 @@ execute unless score @s AzrPlayer_CurrentArea matches 3 if entity @s[x=-79917,y=
                                                 {area_id:3,title:"传 热 根 系",color_code:"#5e4e80"}
 
 execute unless score @s AzrPlayer_CurrentArea matches 4 if entity @s[x=-79890,y=42,z=161,dx=7,dy=7,dz=7] run function skyblock:azr/assets/events/stage/area_title_show \
-                                                {area_id:4,title:"智 述 禁 馆",color_code:"#38a89b"}
+                                                {area_id:4,title:"智 述 禁 馆",color_code:"#30ca94"}
 execute unless score @s AzrPlayer_CurrentArea matches 4 if entity @s[x=-79877,y=37,z=83,dx=3,dy=4,dz=6] run function skyblock:azr/assets/events/stage/area_title_show \
-                                                {area_id:4,title:"智 述 禁 馆",color_code:"#38a89b"}
+                                                {area_id:4,title:"智 述 禁 馆",color_code:"#30ca94"}
 #
 
-#tellraw @s {"color": "#e9ffe0"}
+#tellraw @s {"color": "#30ca94"}
