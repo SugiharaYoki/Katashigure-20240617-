@@ -12,5 +12,6 @@ execute as @s[tag=AzrielMob_level_ed] at @s run function skyblock:azr/system/ent
 execute as @s[tag=AzrielMob_summon_delay] at @s run function skyblock:azr/system/entity/summon_delay_controller
 execute as @s[tag=AzrielMob_sariel_skill] at @s run function skyblock:azr/system/entity/sariel_skill_controller
 execute as @s[tag=AzrielMob_amulet_skill] at @s run function skyblock:azr/system/entity/sariel_skill_controller
+execute as @s[tag=AzrielMob_mob_marker] at @s run function skyblock:azr/system/entity/sariel_mob_marker_controller
 
 

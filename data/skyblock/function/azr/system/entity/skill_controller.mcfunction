@@ -10,7 +10,7 @@ execute if entity @s[tag=AzrielMob_skeleton_general] run function skyblock:azr/a
 execute if entity @s[tag=AzrielMob_floating_fire] run function skyblock:azr/assets/mobs_new/skill/floating_fire
 execute if entity @s[tag=AzrielMob_undead_shadow] run function skyblock:azr/assets/mobs_new/skill/undead_shadow
 execute if entity @s[tag=AzrielMob_nightblind] run function skyblock:azr/assets/mobs_new/skill/nightblind
-
+execute if entity @s[tag=AzrielMob_undead_baby] run function skyblock:azr/assets/mobs_new/skill/undead_baby
 
 
 execute if entity @s[tag=AzrielMob_zombie_villager_armor] run function skyblock:azr/assets/mobs_new/skill/zombie_villager_armor

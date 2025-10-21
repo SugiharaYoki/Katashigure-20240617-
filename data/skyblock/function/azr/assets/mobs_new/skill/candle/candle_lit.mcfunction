@@ -37,23 +37,23 @@ execute if score @s rng5 matches 51 run playsound minecraft:entity.blaze.shoot h
 execute if score @s rng5 matches 51 run playsound entity.generic.explode hostile @a ~ ~ ~ 0.8 1.5
 execute if score @s rng5 matches 51 positioned ^ ^ ^1.5 run particle flame ~ ~1.3 ~ 0 0 0 0.12 24
 
-execute if score @s rng5 matches 51 as @n[tag=AzrielMob_candle_angel_fireattack_marker1] at @s rotated ~ 0 positioned ^ ^ ^0.9 run summon marker ~ ~ ~ {Tags:["AzrielMob_candle_angel_candle_marker"]}
-execute if score @s rng5 matches 53 as @n[tag=AzrielMob_candle_angel_fireattack_marker1] at @s rotated ~ 0 positioned ^ ^ ^2.9 run summon marker ~ ~ ~ {Tags:["AzrielMob_candle_angel_candle_marker"]}
-execute if score @s rng5 matches 55 as @n[tag=AzrielMob_candle_angel_fireattack_marker1] at @s rotated ~ 0 positioned ^ ^ ^4.9 run summon marker ~ ~ ~ {Tags:["AzrielMob_candle_angel_candle_marker"]}
-execute if score @s rng5 matches 57 as @n[tag=AzrielMob_candle_angel_fireattack_marker1] at @s rotated ~ 0 positioned ^ ^ ^6.9 run summon marker ~ ~ ~ {Tags:["AzrielMob_candle_angel_candle_marker"]}
-execute if score @s rng5 matches 59 as @n[tag=AzrielMob_candle_angel_fireattack_marker1] at @s rotated ~ 0 positioned ^ ^ ^8.9 run summon marker ~ ~ ~ {Tags:["AzrielMob_candle_angel_candle_marker"]}
+execute if score @s rng5 matches 51 as @n[tag=AzrielMob_candle_angel_fireattack_marker1] at @s rotated ~ 0 positioned ^ ^ ^0.9 run summon marker ~ ~ ~ {Tags:["AzrielMob_candle_angel_candle_marker","AzrielMob_mob_marker"]}
+execute if score @s rng5 matches 53 as @n[tag=AzrielMob_candle_angel_fireattack_marker1] at @s rotated ~ 0 positioned ^ ^ ^2.9 run summon marker ~ ~ ~ {Tags:["AzrielMob_candle_angel_candle_marker","AzrielMob_mob_marker"]}
+execute if score @s rng5 matches 55 as @n[tag=AzrielMob_candle_angel_fireattack_marker1] at @s rotated ~ 0 positioned ^ ^ ^4.9 run summon marker ~ ~ ~ {Tags:["AzrielMob_candle_angel_candle_marker","AzrielMob_mob_marker"]}
+execute if score @s rng5 matches 57 as @n[tag=AzrielMob_candle_angel_fireattack_marker1] at @s rotated ~ 0 positioned ^ ^ ^6.9 run summon marker ~ ~ ~ {Tags:["AzrielMob_candle_angel_candle_marker","AzrielMob_mob_marker"]}
+execute if score @s rng5 matches 59 as @n[tag=AzrielMob_candle_angel_fireattack_marker1] at @s rotated ~ 0 positioned ^ ^ ^8.9 run summon marker ~ ~ ~ {Tags:["AzrielMob_candle_angel_candle_marker","AzrielMob_mob_marker"]}
 
-execute if score @s[scores={Health=..39}] rng5 matches 55 as @n[tag=AzrielMob_candle_angel_fireattack_marker1] at @s rotated ~ 0 positioned ^1 ^ ^0.9 run summon marker ~ ~ ~ {Tags:["AzrielMob_candle_angel_candle_marker"]}
-execute if score @s[scores={Health=..39}] rng5 matches 57 as @n[tag=AzrielMob_candle_angel_fireattack_marker1] at @s rotated ~ 0 positioned ^3 ^ ^2.9 run summon marker ~ ~ ~ {Tags:["AzrielMob_candle_angel_candle_marker"]}
-execute if score @s[scores={Health=..39}] rng5 matches 59 as @n[tag=AzrielMob_candle_angel_fireattack_marker1] at @s rotated ~ 0 positioned ^5 ^ ^4.9 run summon marker ~ ~ ~ {Tags:["AzrielMob_candle_angel_candle_marker"]}
-execute if score @s[scores={Health=..39}] rng5 matches 61 as @n[tag=AzrielMob_candle_angel_fireattack_marker1] at @s rotated ~ 0 positioned ^7 ^ ^6.9 run summon marker ~ ~ ~ {Tags:["AzrielMob_candle_angel_candle_marker"]}
-execute if score @s[scores={Health=..39}] rng5 matches 63 as @n[tag=AzrielMob_candle_angel_fireattack_marker1] at @s rotated ~ 0 positioned ^9 ^ ^8.9 run summon marker ~ ~ ~ {Tags:["AzrielMob_candle_angel_candle_marker"]}
+execute if score @s[scores={Health=..39}] rng5 matches 55 as @n[tag=AzrielMob_candle_angel_fireattack_marker1] at @s rotated ~ 0 positioned ^1 ^ ^0.9 run summon marker ~ ~ ~ {Tags:["AzrielMob_candle_angel_candle_marker","AzrielMob_mob_marker"]}
+execute if score @s[scores={Health=..39}] rng5 matches 57 as @n[tag=AzrielMob_candle_angel_fireattack_marker1] at @s rotated ~ 0 positioned ^3 ^ ^2.9 run summon marker ~ ~ ~ {Tags:["AzrielMob_candle_angel_candle_marker","AzrielMob_mob_marker"]}
+execute if score @s[scores={Health=..39}] rng5 matches 59 as @n[tag=AzrielMob_candle_angel_fireattack_marker1] at @s rotated ~ 0 positioned ^5 ^ ^4.9 run summon marker ~ ~ ~ {Tags:["AzrielMob_candle_angel_candle_marker","AzrielMob_mob_marker"]}
+execute if score @s[scores={Health=..39}] rng5 matches 61 as @n[tag=AzrielMob_candle_angel_fireattack_marker1] at @s rotated ~ 0 positioned ^7 ^ ^6.9 run summon marker ~ ~ ~ {Tags:["AzrielMob_candle_angel_candle_marker","AzrielMob_mob_marker"]}
+execute if score @s[scores={Health=..39}] rng5 matches 63 as @n[tag=AzrielMob_candle_angel_fireattack_marker1] at @s rotated ~ 0 positioned ^9 ^ ^8.9 run summon marker ~ ~ ~ {Tags:["AzrielMob_candle_angel_candle_marker","AzrielMob_mob_marker"]}
 
-execute if score @s[scores={Health=..39}] rng5 matches 55 as @n[tag=AzrielMob_candle_angel_fireattack_marker1] at @s rotated ~ 0 positioned ^-1 ^ ^0.9 run summon marker ~ ~ ~ {Tags:["AzrielMob_candle_angel_candle_marker"]}
-execute if score @s[scores={Health=..39}] rng5 matches 57 as @n[tag=AzrielMob_candle_angel_fireattack_marker1] at @s rotated ~ 0 positioned ^-3 ^ ^2.9 run summon marker ~ ~ ~ {Tags:["AzrielMob_candle_angel_candle_marker"]}
-execute if score @s[scores={Health=..39}] rng5 matches 59 as @n[tag=AzrielMob_candle_angel_fireattack_marker1] at @s rotated ~ 0 positioned ^-5 ^ ^4.9 run summon marker ~ ~ ~ {Tags:["AzrielMob_candle_angel_candle_marker"]}
-execute if score @s[scores={Health=..39}] rng5 matches 61 as @n[tag=AzrielMob_candle_angel_fireattack_marker1] at @s rotated ~ 0 positioned ^-7 ^ ^6.9 run summon marker ~ ~ ~ {Tags:["AzrielMob_candle_angel_candle_marker"]}
-execute if score @s[scores={Health=..39}] rng5 matches 63 as @n[tag=AzrielMob_candle_angel_fireattack_marker1] at @s rotated ~ 0 positioned ^-9 ^ ^8.9 run summon marker ~ ~ ~ {Tags:["AzrielMob_candle_angel_candle_marker"]}
+execute if score @s[scores={Health=..39}] rng5 matches 55 as @n[tag=AzrielMob_candle_angel_fireattack_marker1] at @s rotated ~ 0 positioned ^-1 ^ ^0.9 run summon marker ~ ~ ~ {Tags:["AzrielMob_candle_angel_candle_marker","AzrielMob_mob_marker"]}
+execute if score @s[scores={Health=..39}] rng5 matches 57 as @n[tag=AzrielMob_candle_angel_fireattack_marker1] at @s rotated ~ 0 positioned ^-3 ^ ^2.9 run summon marker ~ ~ ~ {Tags:["AzrielMob_candle_angel_candle_marker","AzrielMob_mob_marker"]}
+execute if score @s[scores={Health=..39}] rng5 matches 59 as @n[tag=AzrielMob_candle_angel_fireattack_marker1] at @s rotated ~ 0 positioned ^-5 ^ ^4.9 run summon marker ~ ~ ~ {Tags:["AzrielMob_candle_angel_candle_marker","AzrielMob_mob_marker"]}
+execute if score @s[scores={Health=..39}] rng5 matches 61 as @n[tag=AzrielMob_candle_angel_fireattack_marker1] at @s rotated ~ 0 positioned ^-7 ^ ^6.9 run summon marker ~ ~ ~ {Tags:["AzrielMob_candle_angel_candle_marker","AzrielMob_mob_marker"]}
+execute if score @s[scores={Health=..39}] rng5 matches 63 as @n[tag=AzrielMob_candle_angel_fireattack_marker1] at @s rotated ~ 0 positioned ^-9 ^ ^8.9 run summon marker ~ ~ ~ {Tags:["AzrielMob_candle_angel_candle_marker","AzrielMob_mob_marker"]}
 
 
 

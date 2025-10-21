@@ -27,15 +27,15 @@ execute if score @s[scores={rng3=3}] rng1 matches 8.. rotated ~ 0 run tp @s ^-0.
 execute if score @s[scores={rng3=4}] rng1 matches 8.. rotated ~ 0 run tp @s ^0.15 ^ ^0.1 facing ^0.3 ^ ^0.2
 execute if score @s[scores={rng3=5}] rng1 matches 8.. rotated ~ 0 run tp @s ^-0.15 ^ ^0.1 facing ^-0.3 ^ ^0.2
 
-execute if score @s rng1 matches 38 rotated ~ 0 run summon marker ~ ~ ~ {Tags:["AzrielMob_candle_angel_candle_marker"]}
-execute if score @s[scores={Health=..49}] rng1 matches 41 rotated ~ 0 run summon marker ~2 ~ ~ {Tags:["AzrielMob_candle_angel_candle_marker"]}
-execute if score @s[scores={Health=..49}] rng1 matches 41 rotated ~ 0 run summon marker ~-2 ~ ~ {Tags:["AzrielMob_candle_angel_candle_marker"]}
-execute if score @s[scores={Health=..49}] rng1 matches 41 rotated ~ 0 run summon marker ~ ~ ~2 {Tags:["AzrielMob_candle_angel_candle_marker"]}
-execute if score @s[scores={Health=..49}] rng1 matches 41 rotated ~ 0 run summon marker ~ ~ ~-2 {Tags:["AzrielMob_candle_angel_candle_marker"]}
-execute if score @s[scores={Health=..29}] rng1 matches 44 rotated ~ 0 run summon marker ~4 ~ ~ {Tags:["AzrielMob_candle_angel_candle_marker"]}
-execute if score @s[scores={Health=..29}] rng1 matches 44 rotated ~ 0 run summon marker ~-4 ~ ~ {Tags:["AzrielMob_candle_angel_candle_marker"]}
-execute if score @s[scores={Health=..29}] rng1 matches 44 rotated ~ 0 run summon marker ~ ~ ~4 {Tags:["AzrielMob_candle_angel_candle_marker"]}
-execute if score @s[scores={Health=..29}] rng1 matches 44 rotated ~ 0 run summon marker ~ ~ ~-4 {Tags:["AzrielMob_candle_angel_candle_marker"]}
+execute if score @s rng1 matches 38 rotated ~ 0 run summon marker ~ ~ ~ {Tags:["AzrielMob_candle_angel_candle_marker","AzrielMob_mob_marker"]}
+execute if score @s[scores={Health=..49}] rng1 matches 41 rotated ~ 0 run summon marker ~2 ~ ~ {Tags:["AzrielMob_candle_angel_candle_marker","AzrielMob_mob_marker"]}
+execute if score @s[scores={Health=..49}] rng1 matches 41 rotated ~ 0 run summon marker ~-2 ~ ~ {Tags:["AzrielMob_candle_angel_candle_marker","AzrielMob_mob_marker"]}
+execute if score @s[scores={Health=..49}] rng1 matches 41 rotated ~ 0 run summon marker ~ ~ ~2 {Tags:["AzrielMob_candle_angel_candle_marker","AzrielMob_mob_marker"]}
+execute if score @s[scores={Health=..49}] rng1 matches 41 rotated ~ 0 run summon marker ~ ~ ~-2 {Tags:["AzrielMob_candle_angel_candle_marker","AzrielMob_mob_marker"]}
+execute if score @s[scores={Health=..29}] rng1 matches 44 rotated ~ 0 run summon marker ~4 ~ ~ {Tags:["AzrielMob_candle_angel_candle_marker","AzrielMob_mob_marker"]}
+execute if score @s[scores={Health=..29}] rng1 matches 44 rotated ~ 0 run summon marker ~-4 ~ ~ {Tags:["AzrielMob_candle_angel_candle_marker","AzrielMob_mob_marker"]}
+execute if score @s[scores={Health=..29}] rng1 matches 44 rotated ~ 0 run summon marker ~ ~ ~4 {Tags:["AzrielMob_candle_angel_candle_marker","AzrielMob_mob_marker"]}
+execute if score @s[scores={Health=..29}] rng1 matches 44 rotated ~ 0 run summon marker ~ ~ ~-4 {Tags:["AzrielMob_candle_angel_candle_marker","AzrielMob_mob_marker"]}
 execute if score @s rng1 matches 44.. run kill @s
 
 
