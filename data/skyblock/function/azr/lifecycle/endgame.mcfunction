@@ -18,6 +18,10 @@ scoreboard players reset wave Azr_system
 scoreboard players reset $azrInitialWeaponGiven
 scoreboard players reset $azrInitialPieGiven
 scoreboard players reset $azrInitialIngredientGiven
+
+scoreboard players set is_stopped:stage_main_thread AzrTimerStack 0
+
+
 #tag @s remove Event18575A
 tag @a remove azrDead
 #______________________________________________________________#
@@ -116,10 +120,6 @@ scoreboard objectives remove AzrSariel_Amulet_AxeVortex_cooldown
 #特殊食物
 scoreboard objectives remove AzrSariel_Food_HardenedCookie
 scoreboard objectives remove AzrSariel_Food_PowerSalmon
-
-
-
-scoreboard players set is_stopped:stage_main_thread AzrTimerStack 0
 
 
 #unused
