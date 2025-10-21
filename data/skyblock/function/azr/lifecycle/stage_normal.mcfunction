@@ -21,7 +21,7 @@ execute if score stage Azr_system matches 7 run scoreboard players set stage_mai
 execute if score stage Azr_system matches 8 run function skyblock:azr/assets/events/stage/stage4
 
 #第四关-BOSS1 9
-execute if score stage Azr_system matches 9..10 run function skyblock:azr/assets/events/stage/stage_event1
+execute if score stage Azr_system matches 9..10 run function skyblock:azr/assets/events/stage/stage_boss1_event
 #BOSS1 10
     # azr/main.mcfunction
 #BOSS1-第五关 11
