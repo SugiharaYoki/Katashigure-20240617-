@@ -5,7 +5,8 @@ scoreboard players add @s rng1 1
 execute if block ~ ~-0.5 ~ air run tp @s ~ ~-0.1 ~
 
 execute if score @s rng1 matches 28 run playsound entity.lightning_bolt.impact block @a ~ ~ ~ 0.8 1.6
-execute if score @s rng1 matches 28 run particle minecraft:electric_spark ~ ~ ~ 0.6 0 0.6 1 80
+execute if score @s rng1 matches 28 run particle minecraft:electric_spark ~ ~ ~ 0.3 0.3 0.3 0.2 60
+execute if score @s rng1 matches 28 run particle minecraft:white_smoke ~ ~ ~ 0.3 0.3 0.3 0.2 30
 execute if score @s rng1 matches 28.. as @a[tag=azrPlayer,distance=..1.6] at @s run damage @s 6 lightning_bolt
 
 execute if score @s rng1 matches 28.. run kill @s
