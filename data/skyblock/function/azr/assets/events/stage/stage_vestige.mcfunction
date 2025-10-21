@@ -197,7 +197,6 @@ execute if score stage_main_thread AzrTimerStack matches 222 if score playerCoun
 execute if score stage_main_thread AzrTimerStack matches 222 if score playerCount Azr_system matches 5.. positioned -79863 48 196 run function skyblock:azr/assets/mobs/endermite_t1
 
 execute if score stage_main_thread AzrTimerStack matches 222 run setblock -79864 44 196 birch_button[facing=east]
-execute if score stage_main_thread AzrTimerStack matches 222 run fill -79846 48 180 -79846 50 182 anvil
 execute if score stage_main_thread AzrTimerStack matches 222 run setblock -79845 42 197 minecraft:chiseled_quartz_block
 execute if score stage_main_thread AzrTimerStack matches 222 run setblock -79804 42 197 minecraft:chiseled_quartz_block
 

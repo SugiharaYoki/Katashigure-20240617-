@@ -31,4 +31,15 @@ execute positioned -79862 42 149 as @n[tag=AzrielMarker_encounter,distance=0..0.
 -79863 43 182
 -79857 43 194
 -79862 43 201
+-79858 48 194
+-79848 48 179
+-79862 48 188
+
+
+
+
+
+
+
+
 

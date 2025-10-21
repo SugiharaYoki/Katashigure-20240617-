@@ -333,7 +333,9 @@ item replace block -79764 30 218 container.13 with skull_banner_pattern[custom_n
   #庭园隐藏按钮
 setblock -79901 39 67 minecraft:birch_button[facing=east]
 
-
+#stage Vestige
+setblock -79870 39 78 minecraft:potted_flowering_azalea_bush
+setblock -79870 39 74 minecraft:potted_flowering_azalea_bush
 
 
 
@@ -352,14 +354,12 @@ setblock -79901 39 67 minecraft:birch_button[facing=east]
 
 
 #stage8
-setblock -79898 38 62 air
-setblock -79898 38 60 air
-setblock -79898 38 58 air
-setblock -79898 38 56 air
-setblock -79898 38 54 air
-setblock -79898 38 52 air
-setblock -79898 38 50 air
-setblock -79888 39 67 birch_button[facing=west]
+setblock -79897 38 61 minecraft:potted_flowering_azalea_bush
+setblock -79897 38 59 minecraft:potted_flowering_azalea_bush
+setblock -79897 38 57 minecraft:potted_flowering_azalea_bush
+setblock -79897 38 55 minecraft:potted_flowering_azalea_bush
+setblock -79897 38 53 minecraft:potted_flowering_azalea_bush
+setblock -79897 38 51 minecraft:potted_flowering_azalea_bush
 
 
 
@@ -456,7 +456,6 @@ setblock -79939 35 -76 chest[facing=north,waterlogged=true]
 #setblock -79904 44 118 birch_button[facing=west,face=floor]
 setblock -79917 40 -62 air
 setblock -79917 40 -62 trapped_chest[facing=north]{lock:{components:{custom_data:{key_required:1b}}}}
-setblock -79875 38 64 chest[facing=north]
 setblock -79878 41 -131 lever[face=floor,facing=east,powered=false]
 setblock -79877 46 -142 minecraft:polished_andesite_slab
 setblock -79760 31 188 chest
@@ -524,12 +523,6 @@ setblock -79799 28 -284 minecraft:birch_button[facing=west,face=floor]
 setblock -79742 75 -440 minecraft:birch_button[facing=east,face=floor]
 setblock -79912 55 -101 minecraft:birch_button[facing=west,face=wall]
 setblock -79925 47 -113 minecraft:stone_button[facing=north,face=floor]
-setblock -79897 38 61 minecraft:potted_flowering_azalea_bush
-setblock -79897 38 59 minecraft:potted_flowering_azalea_bush
-setblock -79897 38 57 minecraft:potted_flowering_azalea_bush
-setblock -79897 38 55 minecraft:potted_flowering_azalea_bush
-setblock -79897 38 53 minecraft:potted_flowering_azalea_bush
-setblock -79897 38 51 minecraft:potted_flowering_azalea_bush
 #______________________________________________________________#
 #boss4
 fill -79519 42 -321 -79553 42 -355 air replace fire
@@ -542,14 +535,6 @@ fill -79932 38 72 -79930 42 72 air
 fill -79932 42 130 -79930 38 130 minecraft:purple_stained_glass
 fill -79938 44 151 -79938 43 151 smooth_quartz
 fill -79898 42 101 -79896 38 101 minecraft:purple_stained_glass
-fill -79898 41 62 -79898 41 50 quartz_slab[type=top]
-fill -79898 42 62 -79898 42 50 anvil[facing=north]
-fill -79898 41 61 -79898 42 61 air
-fill -79898 41 59 -79898 42 59 air
-fill -79898 41 57 -79898 42 57 air
-fill -79898 41 55 -79898 42 55 air
-fill -79898 41 53 -79898 42 53 air
-fill -79898 41 51 -79898 42 51 air
 fill -79891 40 45 -79889 38 45 minecraft:purple_stained_glass
 fill -79891 38 73 -79889 42 73 air
 fill -79888 38 16 -79888 40 16 minecraft:quartz_pillar
@@ -629,7 +614,6 @@ item replace block -79919 40 -112 container.14 with string
 item replace block -79917 40 -62 container.11 with minecraft:eye_armor_trim_smithing_template 2
 item replace block -79917 40 -62 container.13 with iron_ingot 2
 item replace block -79917 40 -62 container.15 with skull_banner_pattern[custom_name='{"text":"“拉斐尔大人与能天使大人吵了一架”","color":"dark_purple","italic":false}',lore=['{"text":"希望神庭近些日子不要遭遇困难。","color":"white","italic":false}','{"text":"这两天拉斐尔大人的脾气特别不稳定，","color":"white","italic":false}','{"text":"还时不时地跟我们说，","color":"white","italic":false}','{"text":"“百千年的重头戏终于要到来了”。","color":"white","italic":false}']] 1
-item replace block -79875 38 64 container.13 with tripwire_hook[custom_name='{"text":"粗石英钥匙","color":"blue","italic":false}',custom_data={key_rough_quartz:1b}] 1
 
 item replace block -79863 40 -76 container.14 with skull_banner_pattern[custom_name='{"text":"“招待厅事务记录5”","color":"dark_purple","italic":false}',lore=['{"text":"第一关口北面的建筑物出现了大量裂缝，","color":"white","italic":false}','{"text":"这样的现象一直延伸至牢房区域。","color":"white","italic":false}','{"text":"虽说大家有不祥的预感，","color":"white","italic":false}','{"text":"权之殊能大人却言仅为年久失修。","color":"white","italic":false}']] 1
 item replace block -79936 49 -158 container.13 with skull_banner_pattern[custom_name='{"text":"“期限将至 此乃针对神庭之审判”","color":"dark_purple","italic":false}',lore=['{"text":"这里的魔物保受摧残，","color":"white","italic":false}','{"text":"终日身于苦痛之中。","color":"white","italic":false}','{"text":"沙利叶大人既是对此心知肚明，","color":"white","italic":false}','{"text":"又为何让这暴行再续？","color":"white","italic":false}']] 1
