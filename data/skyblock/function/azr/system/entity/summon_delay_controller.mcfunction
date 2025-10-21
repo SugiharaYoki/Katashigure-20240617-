@@ -6,6 +6,7 @@ execute if entity @s[tag=AzrielMob_summon_delay_marker_shield] run function skyb
 execute if entity @s[tag=AzrielMob_summon_delay_marker_summoner] run function skyblock:azr/assets/mobs_new/summon_delay/summoner
 execute if entity @s[tag=AzrielMob_summon_delay_marker_sword] run function skyblock:azr/assets/mobs_new/summon_delay/sword
 execute if entity @s[tag=AzrielMob_generic_pillar_attack_small] run function skyblock:azr/assets/mobs_new/skill/undead_pickaxe_marker_release
+execute if entity @s[tag=AzrielMob_summon_delay_marker_undead_fire] run function skyblock:azr/assets/mobs_new/summon_delay/undead_fire
 execute if entity @s[tag=AzrielMob_summon_delay_marker_undead_shadow] run function skyblock:azr/assets/mobs_new/summon_delay/undead_shadow
 
 execute if entity @s[tag=AzrielMob_summon_delay_marker_skeleton_melee] run function skyblock:azr/assets/mobs_new/summon_delay/skeleton_melee

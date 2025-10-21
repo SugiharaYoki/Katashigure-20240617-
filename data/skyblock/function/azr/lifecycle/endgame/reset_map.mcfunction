@@ -250,6 +250,13 @@ fill -79962 30 159 -79963 30 165 minecraft:air replace fire
 setblock -79934 45 187 chest[facing=west]
 item replace block -79934 45 187 container.12 with minecraft:emerald 3
 item replace block -79934 45 187 container.14 with minecraft:emerald 3
+  #跳跃宝箱奖励
+setblock -79939 33 161 chest[facing=west]
+item replace block -79939 33 161 container.12 with minecraft:emerald 3
+item replace block -79939 33 161 container.14 with minecraft:emerald 3
+setblock -79919 33 158 chest[facing=west]
+item replace block -79919 33 158 container.12 with minecraft:gunpowder 1
+item replace block -79919 33 158 container.14 with minecraft:emerald 3
 
 
 #stage6

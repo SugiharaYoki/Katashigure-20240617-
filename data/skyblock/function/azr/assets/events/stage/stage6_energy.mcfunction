@@ -81,4 +81,13 @@ execute positioned -79927 44 200 as @n[tag=AzrielMarker_encounter,distance=0..0.
 execute positioned -79927 44 200 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=8}] positioned -79925 45 195 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_skeleton_melee","AzrielMob_summon_delay","AzrielMob_level_1"]}
 
 
+#跳跃宝箱陷阱
+execute positioned -79926 32 158 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[x=-79926,y=32,z=158,dx=4,dy=3,dz=3,tag=azrPlayer] run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
+execute positioned -79926 32 158 as @n[tag=AzrielMarker_encounter,distance=0..0.5] run scoreboard players add @s rng1 1
+execute positioned -79926 32 158 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79928 33 164 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_undead_fire","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute positioned -79926 32 158 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79936 30 161 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_axe","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute positioned -79926 32 158 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79936 32 154 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_pillager","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute positioned -79926 32 158 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79930 34 154 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_axe","AzrielMob_summon_delay","AzrielMob_level_1"]}
+
+
 
