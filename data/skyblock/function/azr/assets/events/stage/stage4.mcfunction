@@ -37,6 +37,8 @@ execute if score stage_main_thread AzrTimerStack matches 76 positioned -79937 38
 execute if score stage_main_thread AzrTimerStack matches 77..78 positioned -79931 38 46 if entity @n[distance=..15,tag=AzrielMob_undead_pickaxe] run scoreboard players set stage_main_thread AzrTimerStack 77
 
 execute if score stage_main_thread AzrTimerStack matches 79 run title @a[tag=azrShowDialog] actionbar {"text":"Wave Clear","color":"green"}
+execute if score stage_main_thread AzrTimerStack matches 80 run scoreboard players set #is_stopped:stage_main_thread AzrTimerStack 1
+execute if score stage_main_thread AzrTimerStack matches 99 run scoreboard players set #is_stopped:stage_main_thread AzrTimerStack 0
 execute if score stage_main_thread AzrTimerStack matches 99 run title @a[tag=azrShowDialog] actionbar {"text":"Stage 4 - Wave 2","color":"red"}
 
 
@@ -61,6 +63,8 @@ execute if score stage_main_thread AzrTimerStack matches 184..185 positioned -79
 
 
 execute if score stage_main_thread AzrTimerStack matches 186 run title @a[tag=azrShowDialog] actionbar {"text":"Wave Clear","color":"green"}
+execute if score stage_main_thread AzrTimerStack matches 187 run scoreboard players set #is_stopped:stage_main_thread AzrTimerStack 1
+execute if score stage_main_thread AzrTimerStack matches 206 run scoreboard players set #is_stopped:stage_main_thread AzrTimerStack 0
 execute if score stage_main_thread AzrTimerStack matches 206 run title @a[tag=azrShowDialog] actionbar {"text":"Stage 4 - Wave 3","color":"red"}
 
 execute if score stage_main_thread AzrTimerStack matches 207 positioned -79925 38 46 run function skyblock:azr/assets/mobs_new/undead

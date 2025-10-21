@@ -63,6 +63,8 @@ execute if score stage_main_thread AzrTimerStack matches 97..98 positioned -7993
 
 execute if score stage_main_thread AzrTimerStack matches 99 run title @a[tag=azrShowDialog] actionbar {"text":"Wave Clear","color":"green"}
 execute if score stage_main_thread AzrTimerStack matches 99 run scoreboard players set wave Azr_system 11
+execute if score stage_main_thread AzrTimerStack matches 100 run scoreboard players set #is_stopped:stage_main_thread AzrTimerStack 1
+execute if score stage_main_thread AzrTimerStack matches 119 run scoreboard players set #is_stopped:stage_main_thread AzrTimerStack 0
 execute if score stage_main_thread AzrTimerStack matches 119 run title @a[tag=azrShowDialog] actionbar {"text":"Stage 5 - Wave 2","color":"red"}
 
 execute if score stage_main_thread AzrTimerStack matches 129 run particle minecraft:splash -79931 38 122 0.33 0 0.33 0.7 50

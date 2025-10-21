@@ -27,6 +27,8 @@ execute if score stage_main_thread AzrTimerStack matches 55 positioned -79931 42
 execute if score stage_main_thread AzrTimerStack matches 66..67 positioned -79927 38 25 if entity @n[distance=..15,tag=AzrielMob_undead_pickaxe] run scoreboard players set stage_main_thread AzrTimerStack 66
 execute if score stage_main_thread AzrTimerStack matches 68 run title @a[tag=azrShowDialog] actionbar {"text":"Wave Clear","color":"green"}
 execute if score stage_main_thread AzrTimerStack matches 68 run scoreboard players set wave Azr_system 4
+execute if score stage_main_thread AzrTimerStack matches 69 run scoreboard players set #is_stopped:stage_main_thread AzrTimerStack 1
+execute if score stage_main_thread AzrTimerStack matches 88 run scoreboard players set #is_stopped:stage_main_thread AzrTimerStack 0
 #第二波
 execute if score stage_main_thread AzrTimerStack matches 88 run title @a[tag=azrShowDialog] actionbar {"text":"Stage 3 - Wave 2","color":"red"}
 execute if score stage_main_thread AzrTimerStack matches 89 positioned -79927 38 25 run function skyblock:azr/assets/mobs_new/smoke
@@ -57,6 +59,8 @@ execute if score stage_main_thread AzrTimerStack matches 149..151 run playsound 
 
 execute if score stage_main_thread AzrTimerStack matches 160 run title @a[tag=azrShowDialog] actionbar {"text":"Wave Clear","color":"green"}
 execute if score stage_main_thread AzrTimerStack matches 160 run scoreboard players set wave Azr_system 5
+execute if score stage_main_thread AzrTimerStack matches 161 run scoreboard players set #is_stopped:stage_main_thread AzrTimerStack 1
+execute if score stage_main_thread AzrTimerStack matches 180 run scoreboard players set #is_stopped:stage_main_thread AzrTimerStack 0
 #第三波
 execute if score stage_main_thread AzrTimerStack matches 180 run title @a[tag=azrShowDialog] actionbar {"text":"Stage 3 - Wave 3","color":"red"}
 

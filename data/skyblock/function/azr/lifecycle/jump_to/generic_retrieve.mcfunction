@@ -3,6 +3,7 @@ function skyblock:azr/assets/items/others/revival_star
 
 
 
+execute if score @s SeGa_StandLastBH matches 7.. run function skyblock:azr/assets/items/amulets/stopwatch
 
 execute if entity @s[tag=AZS_BoS03] run function skyblock:azr/assets/items/amulets/greed_board
 execute if entity @s[tag=AZS_BoS04] run function skyblock:azr/assets/items/amulets/flower_wall

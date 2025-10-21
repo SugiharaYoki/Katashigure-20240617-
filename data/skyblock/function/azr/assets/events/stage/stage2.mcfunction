@@ -30,8 +30,9 @@ execute if score stage_main_thread AzrTimerStack matches 110..111 positioned -79
 
 #回秒
 execute if score stage_main_thread AzrTimerStack matches 112 run title @a[tag=azrShowDialog] actionbar {"text":"Wave Clear","color":"green"}
-execute if score stage_main_thread AzrTimerStack matches 113 run scoreboard players set wave Azr_system 2
-
+execute if score stage_main_thread AzrTimerStack matches 112 run scoreboard players set wave Azr_system 2
+execute if score stage_main_thread AzrTimerStack matches 113 run scoreboard players set #is_stopped:stage_main_thread AzrTimerStack 1
+execute if score stage_main_thread AzrTimerStack matches 133 run scoreboard players set #is_stopped:stage_main_thread AzrTimerStack 0
 execute if score stage_main_thread AzrTimerStack matches 133 run scoreboard players set stage_main_thread AzrTimerStack 212
 
 execute if score stage_main_thread AzrTimerStack matches 213 run title @a[tag=azrShowDialog] actionbar {"text":"Stage 2 - Wave 2","color":"red"}

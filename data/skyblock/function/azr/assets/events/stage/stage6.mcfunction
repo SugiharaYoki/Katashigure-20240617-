@@ -32,6 +32,8 @@ execute if score stage_main_thread AzrTimerStack matches 66..67 positioned -7992
 
 execute if score stage_main_thread AzrTimerStack matches 68 run title @a[tag=azrShowDialog] actionbar {"text":"Wave Clear","color":"green"}
 execute if score stage_main_thread AzrTimerStack matches 68 run scoreboard players set wave Azr_system 13
+execute if score stage_main_thread AzrTimerStack matches 69 run scoreboard players set #is_stopped:stage_main_thread AzrTimerStack 1
+execute if score stage_main_thread AzrTimerStack matches 88 run scoreboard players set #is_stopped:stage_main_thread AzrTimerStack 0
 execute if score stage_main_thread AzrTimerStack matches 88 run title @a[tag=azrShowDialog] actionbar {"text":"Stage 6 - Wave 2","color":"red"}
 
 execute if score stage_main_thread AzrTimerStack matches 90 positioned -79940 37 140 run function skyblock:azr/assets/mobs_new/skeleton_melee
@@ -57,6 +59,8 @@ execute if score stage_main_thread AzrTimerStack matches 188..189 positioned -79
 
 execute if score stage_main_thread AzrTimerStack matches 190 run title @a[tag=azrShowDialog] actionbar {"text":"Wave Clear","color":"green"}
 execute if score stage_main_thread AzrTimerStack matches 190 run scoreboard players set wave Azr_system 14
+execute if score stage_main_thread AzrTimerStack matches 191 run scoreboard players set #is_stopped:stage_main_thread AzrTimerStack 1
+execute if score stage_main_thread AzrTimerStack matches 210 run scoreboard players set #is_stopped:stage_main_thread AzrTimerStack 0
 execute if score stage_main_thread AzrTimerStack matches 210 run title @a[tag=azrShowDialog] actionbar {"text":"Stage 6 - Wave 3","color":"red"}
 
 execute if score stage_main_thread AzrTimerStack matches 212 positioned -79940 37 140 run function skyblock:azr/assets/mobs_new/sword
