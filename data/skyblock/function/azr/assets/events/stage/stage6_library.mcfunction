@@ -23,17 +23,27 @@ execute positioned -79862 42 149 as @n[tag=AzrielMarker_encounter,distance=0..0.
 execute positioned -79862 42 149 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=101}] positioned -79876 38 110 run function skyblock:azr/assets/mobs_new/summoner
 
 
+execute positioned -79861 42 166 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[x=-79861,y=42,z=166,dx=7,dy=4,dz=7,tag=azrPlayer] run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
+execute positioned -79861 42 166 as @n[tag=AzrielMarker_encounter,distance=0..0.5] run scoreboard players add @s rng1 1
+execute positioned -79861 42 166 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] as @a[tag=azrPlayer] at @s run function skyblock:azr/system/shop/purchase/handbook/input {doc:nightblind}
+execute positioned -79861 42 166 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79847 43 177 run function skyblock:azr/assets/mobs_new/nightblind
+execute positioned -79861 42 166 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79863 43 182 run function skyblock:azr/assets/mobs_new/nightblind
+execute positioned -79861 42 166 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79857 43 194 run function skyblock:azr/assets/mobs_new/nightblind
+execute positioned -79861 42 166 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79862 43 201 run function skyblock:azr/assets/mobs_new/nightblind
+execute positioned -79861 42 166 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79858 48 194 run function skyblock:azr/assets/mobs_new/nightblind
+execute positioned -79861 42 166 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79848 48 179 run function skyblock:azr/assets/mobs_new/nightblind
+execute positioned -79861 42 166 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79862 48 188 run function skyblock:azr/assets/mobs_new/nightblind
 
 
 
 
--79847 43 177
--79863 43 182
--79857 43 194
--79862 43 201
--79858 48 194
--79848 48 179
--79862 48 188
+
+
+
+
+
+
+
 
 
 
