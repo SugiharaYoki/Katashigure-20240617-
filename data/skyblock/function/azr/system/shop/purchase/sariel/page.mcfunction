@@ -68,6 +68,38 @@ summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarker13D
 summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarker14D"]}
 summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarker15D"]}
 summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarker16D"]}
+summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarker1E"]}
+summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarker2E"]}
+summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarker3E"]}
+summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarker4E"]}
+summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarker5E"]}
+summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarker6E"]}
+summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarker7E"]}
+summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarker8E"]}
+summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarker9E"]}
+summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarker10E"]}
+summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarker11E"]}
+summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarker12E"]}
+summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarker13E"]}
+summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarker14E"]}
+summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarker15E"]}
+summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarker16E"]}
+summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarker1F"]}
+summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarker2F"]}
+summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarker3F"]}
+summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarker4F"]}
+summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarker5F"]}
+summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarker6F"]}
+summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarker7F"]}
+summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarker8F"]}
+summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarker9F"]}
+summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarker10F"]}
+summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarker11F"]}
+summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarker12F"]}
+summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarker13F"]}
+summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarker14F"]}
+summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarker15F"]}
+summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarker16F"]}
 data modify entity @n[tag=AzrSariel_displaymarker0] CustomName set value '" ▼ "'
 data modify entity @n[tag=AzrSariel_displaymarker0b] CustomName set value '" ▽ "'
 data modify entity @n[tag=AzrSariel_displaymarkerE] CustomName set value '" ▽ "'
@@ -135,22 +167,38 @@ execute if entity @s[tag=AzrSariel_upg13D] run data modify entity @n[tag=AzrSari
 execute if entity @s[tag=AzrSariel_upg14D] run data modify entity @n[tag=AzrSariel_displaymarker14D] CustomName set value '" ■ "'
 execute if entity @s[tag=AzrSariel_upg15D] run data modify entity @n[tag=AzrSariel_displaymarker15D] CustomName set value '" ■ "'
 execute if entity @s[tag=AzrSariel_upg16D] run data modify entity @n[tag=AzrSariel_displaymarker16D] CustomName set value '" ■ "'
-execute if entity @s[tag=AzrSariel_upg1E] run data modify entity @n[tag=AzrSariel_displaymarker1D] CustomName set value '" ■ "'
-execute if entity @s[tag=AzrSariel_upg2E] run data modify entity @n[tag=AzrSariel_displaymarker2D] CustomName set value '" ■ "'
-execute if entity @s[tag=AzrSariel_upg3E] run data modify entity @n[tag=AzrSariel_displaymarker3D] CustomName set value '" ■ "'
-execute if entity @s[tag=AzrSariel_upg4E] run data modify entity @n[tag=AzrSariel_displaymarker4D] CustomName set value '" ■ "'
-execute if entity @s[tag=AzrSariel_upg5E] run data modify entity @n[tag=AzrSariel_displaymarker5D] CustomName set value '" ■ "'
-execute if entity @s[tag=AzrSariel_upg6E] run data modify entity @n[tag=AzrSariel_displaymarker6D] CustomName set value '" ■ "'
-execute if entity @s[tag=AzrSariel_upg7E] run data modify entity @n[tag=AzrSariel_displaymarker7D] CustomName set value '" ■ "'
-execute if entity @s[tag=AzrSariel_upg8E] run data modify entity @n[tag=AzrSariel_displaymarker8D] CustomName set value '" ■ "'
-execute if entity @s[tag=AzrSariel_upg9E] run data modify entity @n[tag=AzrSariel_displaymarker9D] CustomName set value '" ■ "'
-execute if entity @s[tag=AzrSariel_upg10E] run data modify entity @n[tag=AzrSariel_displaymarker10D] CustomName set value '" ■ "'
-execute if entity @s[tag=AzrSariel_upg11E] run data modify entity @n[tag=AzrSariel_displaymarker11D] CustomName set value '" ■ "'
-execute if entity @s[tag=AzrSariel_upg12E] run data modify entity @n[tag=AzrSariel_displaymarker12D] CustomName set value '" ■ "'
-execute if entity @s[tag=AzrSariel_upg13E] run data modify entity @n[tag=AzrSariel_displaymarker13D] CustomName set value '" ■ "'
-execute if entity @s[tag=AzrSariel_upg14E] run data modify entity @n[tag=AzrSariel_displaymarker14D] CustomName set value '" ■ "'
-execute if entity @s[tag=AzrSariel_upg15E] run data modify entity @n[tag=AzrSariel_displaymarker15D] CustomName set value '" ■ "'
-execute if entity @s[tag=AzrSariel_upg16E] run data modify entity @n[tag=AzrSariel_displaymarker16D] CustomName set value '" ■ "'
+execute if entity @s[tag=AzrSariel_upg1E] run data modify entity @n[tag=AzrSariel_displaymarker1E] CustomName set value '" ■ "'
+execute if entity @s[tag=AzrSariel_upg2E] run data modify entity @n[tag=AzrSariel_displaymarker2E] CustomName set value '" ■ "'
+execute if entity @s[tag=AzrSariel_upg3E] run data modify entity @n[tag=AzrSariel_displaymarker3E] CustomName set value '" ■ "'
+execute if entity @s[tag=AzrSariel_upg4E] run data modify entity @n[tag=AzrSariel_displaymarker4E] CustomName set value '" ■ "'
+execute if entity @s[tag=AzrSariel_upg5E] run data modify entity @n[tag=AzrSariel_displaymarker5E] CustomName set value '" ■ "'
+execute if entity @s[tag=AzrSariel_upg6E] run data modify entity @n[tag=AzrSariel_displaymarker6E] CustomName set value '" ■ "'
+execute if entity @s[tag=AzrSariel_upg7E] run data modify entity @n[tag=AzrSariel_displaymarker7E] CustomName set value '" ■ "'
+execute if entity @s[tag=AzrSariel_upg8E] run data modify entity @n[tag=AzrSariel_displaymarker8E] CustomName set value '" ■ "'
+execute if entity @s[tag=AzrSariel_upg9E] run data modify entity @n[tag=AzrSariel_displaymarker9E] CustomName set value '" ■ "'
+execute if entity @s[tag=AzrSariel_upg10E] run data modify entity @n[tag=AzrSariel_displaymarker10E] CustomName set value '" ■ "'
+execute if entity @s[tag=AzrSariel_upg11E] run data modify entity @n[tag=AzrSariel_displaymarker11E] CustomName set value '" ■ "'
+execute if entity @s[tag=AzrSariel_upg12E] run data modify entity @n[tag=AzrSariel_displaymarker12E] CustomName set value '" ■ "'
+execute if entity @s[tag=AzrSariel_upg13E] run data modify entity @n[tag=AzrSariel_displaymarker13E] CustomName set value '" ■ "'
+execute if entity @s[tag=AzrSariel_upg14E] run data modify entity @n[tag=AzrSariel_displaymarker14E] CustomName set value '" ■ "'
+execute if entity @s[tag=AzrSariel_upg15E] run data modify entity @n[tag=AzrSariel_displaymarker15E] CustomName set value '" ■ "'
+execute if entity @s[tag=AzrSariel_upg16E] run data modify entity @n[tag=AzrSariel_displaymarker16E] CustomName set value '" ■ "'
+execute if entity @s[tag=AzrSariel_upg1F] run data modify entity @n[tag=AzrSariel_displaymarker1F] CustomName set value '" ■ "'
+execute if entity @s[tag=AzrSariel_upg2F] run data modify entity @n[tag=AzrSariel_displaymarker2F] CustomName set value '" ■ "'
+execute if entity @s[tag=AzrSariel_upg3F] run data modify entity @n[tag=AzrSariel_displaymarker3F] CustomName set value '" ■ "'
+execute if entity @s[tag=AzrSariel_upg4F] run data modify entity @n[tag=AzrSariel_displaymarker4F] CustomName set value '" ■ "'
+execute if entity @s[tag=AzrSariel_upg5F] run data modify entity @n[tag=AzrSariel_displaymarker5F] CustomName set value '" ■ "'
+execute if entity @s[tag=AzrSariel_upg6F] run data modify entity @n[tag=AzrSariel_displaymarker6F] CustomName set value '" ■ "'
+execute if entity @s[tag=AzrSariel_upg7F] run data modify entity @n[tag=AzrSariel_displaymarker7F] CustomName set value '" ■ "'
+execute if entity @s[tag=AzrSariel_upg8F] run data modify entity @n[tag=AzrSariel_displaymarker8F] CustomName set value '" ■ "'
+execute if entity @s[tag=AzrSariel_upg9F] run data modify entity @n[tag=AzrSariel_displaymarker9F] CustomName set value '" ■ "'
+execute if entity @s[tag=AzrSariel_upg10F] run data modify entity @n[tag=AzrSariel_displaymarker10F] CustomName set value '" ■ "'
+execute if entity @s[tag=AzrSariel_upg11F] run data modify entity @n[tag=AzrSariel_displaymarker11F] CustomName set value '" ■ "'
+execute if entity @s[tag=AzrSariel_upg12F] run data modify entity @n[tag=AzrSariel_displaymarker12F] CustomName set value '" ■ "'
+execute if entity @s[tag=AzrSariel_upg13F] run data modify entity @n[tag=AzrSariel_displaymarker13F] CustomName set value '" ■ "'
+execute if entity @s[tag=AzrSariel_upg14F] run data modify entity @n[tag=AzrSariel_displaymarker14F] CustomName set value '" ■ "'
+execute if entity @s[tag=AzrSariel_upg15F] run data modify entity @n[tag=AzrSariel_displaymarker15F] CustomName set value '" ■ "'
+execute if entity @s[tag=AzrSariel_upg16F] run data modify entity @n[tag=AzrSariel_displaymarker16F] CustomName set value '" ■ "'
 execute if entity @s[tag=!AzrSariel_upg1] run data modify entity @n[tag=AzrSariel_displaymarker1] CustomName set value '" □ "'
 execute if entity @s[tag=!AzrSariel_upg2] run data modify entity @n[tag=AzrSariel_displaymarker2] CustomName set value '" □ "'
 execute if entity @s[tag=!AzrSariel_upg3] run data modify entity @n[tag=AzrSariel_displaymarker3] CustomName set value '" □ "'
@@ -215,22 +263,38 @@ execute if entity @s[tag=!AzrSariel_upg13D] run data modify entity @n[tag=AzrSar
 execute if entity @s[tag=!AzrSariel_upg14D] run data modify entity @n[tag=AzrSariel_displaymarker14D] CustomName set value '" □ "'
 execute if entity @s[tag=!AzrSariel_upg15D] run data modify entity @n[tag=AzrSariel_displaymarker15D] CustomName set value '" □ "'
 execute if entity @s[tag=!AzrSariel_upg16D] run data modify entity @n[tag=AzrSariel_displaymarker16D] CustomName set value '" □ "'
-execute if entity @s[tag=!AzrSariel_upg1E] run data modify entity @n[tag=AzrSariel_displaymarker1D] CustomName set value '" □ "'
-execute if entity @s[tag=!AzrSariel_upg2E] run data modify entity @n[tag=AzrSariel_displaymarker2D] CustomName set value '" □ "'
-execute if entity @s[tag=!AzrSariel_upg3E] run data modify entity @n[tag=AzrSariel_displaymarker3D] CustomName set value '" □ "'
-execute if entity @s[tag=!AzrSariel_upg4E] run data modify entity @n[tag=AzrSariel_displaymarker4D] CustomName set value '" □ "'
-execute if entity @s[tag=!AzrSariel_upg5E] run data modify entity @n[tag=AzrSariel_displaymarker5D] CustomName set value '" □ "'
-execute if entity @s[tag=!AzrSariel_upg6E] run data modify entity @n[tag=AzrSariel_displaymarker6D] CustomName set value '" □ "'
-execute if entity @s[tag=!AzrSariel_upg7E] run data modify entity @n[tag=AzrSariel_displaymarker7D] CustomName set value '" □ "'
-execute if entity @s[tag=!AzrSariel_upg8E] run data modify entity @n[tag=AzrSariel_displaymarker8D] CustomName set value '" □ "'
-execute if entity @s[tag=!AzrSariel_upg9E] run data modify entity @n[tag=AzrSariel_displaymarker9D] CustomName set value '" □ "'
-execute if entity @s[tag=!AzrSariel_upg10E] run data modify entity @n[tag=AzrSariel_displaymarker10D] CustomName set value '" □ "'
-execute if entity @s[tag=!AzrSariel_upg11E] run data modify entity @n[tag=AzrSariel_displaymarker11D] CustomName set value '" □ "'
-execute if entity @s[tag=!AzrSariel_upg12E] run data modify entity @n[tag=AzrSariel_displaymarker12D] CustomName set value '" □ "'
-execute if entity @s[tag=!AzrSariel_upg13E] run data modify entity @n[tag=AzrSariel_displaymarker13D] CustomName set value '" □ "'
-execute if entity @s[tag=!AzrSariel_upg14E] run data modify entity @n[tag=AzrSariel_displaymarker14D] CustomName set value '" □ "'
-execute if entity @s[tag=!AzrSariel_upg15E] run data modify entity @n[tag=AzrSariel_displaymarker15D] CustomName set value '" □ "'
-execute if entity @s[tag=!AzrSariel_upg16E] run data modify entity @n[tag=AzrSariel_displaymarker16D] CustomName set value '" □ "'
+execute if entity @s[tag=!AzrSariel_upg1E] run data modify entity @n[tag=AzrSariel_displaymarker1E] CustomName set value '" □ "'
+execute if entity @s[tag=!AzrSariel_upg2E] run data modify entity @n[tag=AzrSariel_displaymarker2E] CustomName set value '" □ "'
+execute if entity @s[tag=!AzrSariel_upg3E] run data modify entity @n[tag=AzrSariel_displaymarker3E] CustomName set value '" □ "'
+execute if entity @s[tag=!AzrSariel_upg4E] run data modify entity @n[tag=AzrSariel_displaymarker4E] CustomName set value '" □ "'
+execute if entity @s[tag=!AzrSariel_upg5E] run data modify entity @n[tag=AzrSariel_displaymarker5E] CustomName set value '" □ "'
+execute if entity @s[tag=!AzrSariel_upg6E] run data modify entity @n[tag=AzrSariel_displaymarker6E] CustomName set value '" □ "'
+execute if entity @s[tag=!AzrSariel_upg7E] run data modify entity @n[tag=AzrSariel_displaymarker7E] CustomName set value '" □ "'
+execute if entity @s[tag=!AzrSariel_upg8E] run data modify entity @n[tag=AzrSariel_displaymarker8E] CustomName set value '" □ "'
+execute if entity @s[tag=!AzrSariel_upg9E] run data modify entity @n[tag=AzrSariel_displaymarker9E] CustomName set value '" □ "'
+execute if entity @s[tag=!AzrSariel_upg10E] run data modify entity @n[tag=AzrSariel_displaymarker10E] CustomName set value '" □ "'
+execute if entity @s[tag=!AzrSariel_upg11E] run data modify entity @n[tag=AzrSariel_displaymarker11E] CustomName set value '" □ "'
+execute if entity @s[tag=!AzrSariel_upg12E] run data modify entity @n[tag=AzrSariel_displaymarker12E] CustomName set value '" □ "'
+execute if entity @s[tag=!AzrSariel_upg13E] run data modify entity @n[tag=AzrSariel_displaymarker13E] CustomName set value '" □ "'
+execute if entity @s[tag=!AzrSariel_upg14E] run data modify entity @n[tag=AzrSariel_displaymarker14E] CustomName set value '" □ "'
+execute if entity @s[tag=!AzrSariel_upg15E] run data modify entity @n[tag=AzrSariel_displaymarker15E] CustomName set value '" □ "'
+execute if entity @s[tag=!AzrSariel_upg16E] run data modify entity @n[tag=AzrSariel_displaymarker16E] CustomName set value '" □ "'
+execute if entity @s[tag=!AzrSariel_upg1F] run data modify entity @n[tag=AzrSariel_displaymarker1F] CustomName set value '" □ "'
+execute if entity @s[tag=!AzrSariel_upg2F] run data modify entity @n[tag=AzrSariel_displaymarker2F] CustomName set value '" □ "'
+execute if entity @s[tag=!AzrSariel_upg3F] run data modify entity @n[tag=AzrSariel_displaymarker3F] CustomName set value '" □ "'
+execute if entity @s[tag=!AzrSariel_upg4F] run data modify entity @n[tag=AzrSariel_displaymarker4F] CustomName set value '" □ "'
+execute if entity @s[tag=!AzrSariel_upg5F] run data modify entity @n[tag=AzrSariel_displaymarker5F] CustomName set value '" □ "'
+execute if entity @s[tag=!AzrSariel_upg6F] run data modify entity @n[tag=AzrSariel_displaymarker6F] CustomName set value '" □ "'
+execute if entity @s[tag=!AzrSariel_upg7F] run data modify entity @n[tag=AzrSariel_displaymarker7F] CustomName set value '" □ "'
+execute if entity @s[tag=!AzrSariel_upg8F] run data modify entity @n[tag=AzrSariel_displaymarker8F] CustomName set value '" □ "'
+execute if entity @s[tag=!AzrSariel_upg9F] run data modify entity @n[tag=AzrSariel_displaymarker9F] CustomName set value '" □ "'
+execute if entity @s[tag=!AzrSariel_upg10F] run data modify entity @n[tag=AzrSariel_displaymarker10F] CustomName set value '" □ "'
+execute if entity @s[tag=!AzrSariel_upg11F] run data modify entity @n[tag=AzrSariel_displaymarker11F] CustomName set value '" □ "'
+execute if entity @s[tag=!AzrSariel_upg12F] run data modify entity @n[tag=AzrSariel_displaymarker12F] CustomName set value '" □ "'
+execute if entity @s[tag=!AzrSariel_upg13F] run data modify entity @n[tag=AzrSariel_displaymarker13F] CustomName set value '" □ "'
+execute if entity @s[tag=!AzrSariel_upg14F] run data modify entity @n[tag=AzrSariel_displaymarker14F] CustomName set value '" □ "'
+execute if entity @s[tag=!AzrSariel_upg15F] run data modify entity @n[tag=AzrSariel_displaymarker15F] CustomName set value '" □ "'
+execute if entity @s[tag=!AzrSariel_upg16F] run data modify entity @n[tag=AzrSariel_displaymarker16F] CustomName set value '" □ "'
 
 
 
