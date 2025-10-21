@@ -199,6 +199,9 @@ setblock -79928 39 125 birch_button[facing=north,face=wall]
 setblock -79934 39 125 birch_button[facing=north,face=wall]
 setblock -79929 39 125 minecraft:potted_oak_sapling
 setblock -79933 39 125 minecraft:potted_dead_bush
+  #屋顶摸不到的火把花
+fill -79937 56 149 -79941 56 149 minecraft:potted_torchflower
+
 
 #供能区域
 fill -79931 35 171 -79931 35 183 minecraft:red_concrete replace minecraft:redstone_block
