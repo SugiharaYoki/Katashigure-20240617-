@@ -118,5 +118,9 @@ scoreboard objectives remove AzrSariel_Food_HardenedCookie
 scoreboard objectives remove AzrSariel_Food_PowerSalmon
 
 
+
+scoreboard players set is_stopped:stage_main_thread AzrTimerStack 0
+
+
 #unused
 #scoreboard objectives remove Azr_sarielStar
