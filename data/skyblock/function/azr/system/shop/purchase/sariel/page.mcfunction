@@ -204,11 +204,11 @@ execute if entity @s[tag=!AzrSariel_upg16D] run data modify entity @n[tag=AzrSar
 
 
 
-#  01 防       花
+#  01 防    生 花 耐
 #  02 生       花
-#  03 防 移 移 移
+#  03 防 移 移 移 耐
 #  04 生       花
-#  05 防 火 火 火
+#  05 防 火 火 火 耐
 #  06 生    剪
 #  07 ★ 商 绿
 #  08 攻    抹
@@ -224,7 +224,8 @@ tellraw @s [{"text":" ","color":"light_purple"},\
 {"selector":"@n[tag=AzrSariel_displaymarker1]","color":"#ffb65d","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432101"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：20\n基础防御 +1","color":"white"}}},\
 {"selector":"@n[tag=AzrSariel_displaymarkerE]","color":"dark_gray"},\
 {"selector":"@n[tag=AzrSariel_displaymarker1C]","color":"#ff5dd7","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432136"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：30\n生命上限 +2","color":"white"}}},\
-{"selector":"@n[tag=AzrSariel_displaymarker1D]","color":"#ffb0ff","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432127"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：20\n造成点数超过6的攻击时，有8%概率在最近的敌人处制造一个理之花团\n触碰理之花团可以对3.5格内的所有亡魂与凶兽造成伤害，并恢复范围内队友生命\n伤害：3/5/7（对亡魂翻倍） 治疗：2/4/8 存在时长：60\n重复选中将升级效果","color":"white"}}}]
+{"selector":"@n[tag=AzrSariel_displaymarker1D]","color":"#ffb0ff","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432127"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：20\n造成点数超过6的攻击时，有8%概率在最近的敌人处制造一个理之花团\n触碰理之花团可以对3.5格内的所有亡魂与凶兽造成伤害，并恢复范围内队友生命\n伤害：3/5/7（对亡魂翻倍） 治疗：2/4/8 存在时长：60\n重复选中将升级效果","color":"white"}}},\
+{"selector":"@n[tag=AzrSariel_displaymarker1E]","color":"#576e03","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432138"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：30\n护甲韧性 +1\n击退抗性 +15%","color":"white"}}}]
 
 tellraw @s [{"text":" ","color":"light_purple"},\
 {"selector":"@n[tag=AzrSariel_displaymarker0b]","color":"dark_gray"},\
@@ -238,7 +239,8 @@ tellraw @s [{"text":" ","color":"light_purple"},\
 {"selector":"@n[tag=AzrSariel_displaymarker3]","color":"#ffb65d","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432103"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：10\n基础防御 +1","color":"white"}}},\
 {"selector":"@n[tag=AzrSariel_displaymarker3B]","color":"#6d4892","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432122"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：10\n移动速度增加3%\n你的身体将拥有碰撞伤害\n伤害：1/2/4 冷却：0.5\n重复选中将升级效果","color":"white"}}},\
 {"selector":"@n[tag=AzrSariel_displaymarker3C]","color":"#6d4892","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432123"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：20\n移动速度增加3%\n你的身体将拥有碰撞伤害\n伤害：1/2/4 冷却：0.5\n重复选中将升级效果","color":"white"}}},\
-{"selector":"@n[tag=AzrSariel_displaymarker3D]","color":"#6d4892","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432124"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：40\n移动速度增加3%\n你的身体将拥有碰撞伤害\n伤害：1/2/4 冷却：0.5\n重复选中将升级效果","color":"white"}}}]
+{"selector":"@n[tag=AzrSariel_displaymarker3D]","color":"#6d4892","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432124"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：40\n移动速度增加3%\n你的身体将拥有碰撞伤害\n伤害：1/2/4 冷却：0.5\n重复选中将升级效果","color":"white"}}},\
+{"selector":"@n[tag=AzrSariel_displaymarker3E]","color":"#576e03","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432139"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：40\n护甲韧性 +1\n击退抗性 +15%","color":"white"}}}]
 
 tellraw @s [{"text":" ","color":"light_purple"},\
 {"selector":"@n[tag=AzrSariel_displaymarker0b]","color":"dark_gray"},\
@@ -252,7 +254,8 @@ tellraw @s [{"text":" ","color":"light_purple"},\
 {"selector":"@n[tag=AzrSariel_displaymarker5]","color":"#ffb65d","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432105"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：5\n基础防御 +1","color":"white"}}},\
 {"selector":"@n[tag=AzrSariel_displaymarker5B]","color":"#ac2803","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432114"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：5\n攻击亡魂时，朝前释放针对亡魂的扇形范围攻击\n伤害：2/3/4 冷却：3/2.5/2\n重复选中将升级效果","color":"white"}}},\
 {"selector":"@n[tag=AzrSariel_displaymarker5C]","color":"#ac2803","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432115"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：20\n攻击亡魂时，朝前释放针对亡魂的扇形范围攻击\n伤害：2/3/4 冷却：3/2.5/2\n重复选中将升级效果","color":"white"}}},\
-{"selector":"@n[tag=AzrSariel_displaymarker5D]","color":"#ac2803","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432116"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：40\n攻击亡魂时，朝前释放针对亡魂的扇形范围攻击\n伤害：2/3/4 冷却：3/2.5/2\n重复选中将升级效果","color":"white"}}}]
+{"selector":"@n[tag=AzrSariel_displaymarker5D]","color":"#ac2803","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432116"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：40\n攻击亡魂时，朝前释放针对亡魂的扇形范围攻击\n伤害：2/3/4 冷却：3/2.5/2\n重复选中将升级效果","color":"white"}}},\
+{"selector":"@n[tag=AzrSariel_displaymarker5E]","color":"#576e03","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432140"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：50\n护甲韧性 +1\n击退抗性 +15%","color":"white"}}}]
 
 tellraw @s [{"text":" ","color":"light_purple"},\
 {"selector":"@n[tag=AzrSariel_displaymarker0b]","color":"dark_gray"},\

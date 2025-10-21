@@ -21,6 +21,11 @@ scoreboard players set @s AzrSariel_Skill_FlowerReason 0
 scoreboard players set @s AzrSariel_Skill_SlowRing 0
 scoreboard players set @s AzrSariel_Skill_BioMagnet 0
 
-
+attribute @s armor_toughness modifier remove azr_sariel:upg_01e
+attribute @s armor_toughness modifier remove azr_sariel:upg_03e
+attribute @s armor_toughness modifier remove azr_sariel:upg_05e
+attribute @s knockback_resistance modifier remove azr_sariel:upg_01e
+attribute @s knockback_resistance modifier remove azr_sariel:upg_03e
+attribute @s knockback_resistance modifier remove azr_sariel:upg_05e
 
 tag @s remove AZR_sariel_01_effected

@@ -46,4 +46,15 @@ execute if entity @s[tag=AzrSariel_upg12C] run scoreboard players add @s AzrSari
 execute if entity @s[tag=AzrSariel_upg13B] run scoreboard players add @s AzrSariel_Skill_BioMagnet 1
 execute if entity @s[tag=AzrSariel_upg13C] run scoreboard players add @s AzrSariel_Skill_BioMagnet 1
 
+execute if entity @s[tag=AzrSariel_upg1E] run attribute @s armor_toughness modifier add azr_sariel:upg_01e 1 add_value
+execute if entity @s[tag=AzrSariel_upg3E] run attribute @s armor_toughness modifier add azr_sariel:upg_03e 1 add_value
+execute if entity @s[tag=AzrSariel_upg5E] run attribute @s armor_toughness modifier add azr_sariel:upg_05e 1 add_value
+execute if entity @s[tag=AzrSariel_upg1E] run attribute @s knockback_resistance modifier add azr_sariel:upg_01e 0.15 add_value
+execute if entity @s[tag=AzrSariel_upg3E] run attribute @s knockback_resistance modifier add azr_sariel:upg_03e 0.15 add_value
+execute if entity @s[tag=AzrSariel_upg5E] run attribute @s knockback_resistance modifier add azr_sariel:upg_05e 0.15 add_value
+
+
+
+
+
 tag @s add AZR_sariel_01_effected

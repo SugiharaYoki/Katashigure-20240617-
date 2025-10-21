@@ -98,6 +98,15 @@ execute if entity @s[scores={Azr_Shop=8432136}] unless entity @s[scores={Azr_eme
 execute if entity @s[scores={Azr_Shop=8432137}] if entity @s[tag=!AzrSariel_upg13C,tag=!AzrSariel_upg13E,tag=!AzrSariel_upg12D] run tag @s add AzrSariel_upg_FAILED_NC
 execute if entity @s[scores={Azr_Shop=8432137}] unless entity @s[scores={Azr_emerald=30..}] run tag @s add AzrSariel_upg_FAILED
 
+#1E3E5E
+execute if entity @s[scores={Azr_Shop=8432138}] if entity @s[tag=!AzrSariel_upg1D,tag=!AzrSariel_upg1F,tag=!AzrSariel_upg2E] run tag @s add AzrSariel_upg_FAILED_NC
+execute if entity @s[scores={Azr_Shop=8432139}] if entity @s[tag=!AzrSariel_upg3D,tag=!AzrSariel_upg3F,tag=!AzrSariel_upg2E,tag=!AzrSariel_upg4E] run tag @s add AzrSariel_upg_FAILED_NC
+execute if entity @s[scores={Azr_Shop=8432140}] if entity @s[tag=!AzrSariel_upg5D,tag=!AzrSariel_upg5F,tag=!AzrSariel_upg4E,tag=!AzrSariel_upg6E] run tag @s add AzrSariel_upg_FAILED_NC
+execute if entity @s[scores={Azr_Shop=8432138}] unless entity @s[scores={Azr_emerald=30..}] run tag @s add AzrSariel_upg_FAILED
+execute if entity @s[scores={Azr_Shop=8432139}] unless entity @s[scores={Azr_emerald=40..}] run tag @s add AzrSariel_upg_FAILED
+execute if entity @s[scores={Azr_Shop=8432140}] unless entity @s[scores={Azr_emerald=50..}] run tag @s add AzrSariel_upg_FAILED
+
+
 #防止重复触发
 execute if entity @s[scores={Azr_Shop=8432101},tag=AzrSariel_upg1] run tag @s add AzrSariel_upg_FAILED_AL
 execute if entity @s[scores={Azr_Shop=8432102},tag=AzrSariel_upg2] run tag @s add AzrSariel_upg_FAILED_AL
@@ -131,14 +140,14 @@ execute if entity @s[scores={Azr_Shop=8432129},tag=AzrSariel_upg4D] run tag @s a
 execute if entity @s[scores={Azr_Shop=8432130},tag=AzrSariel_upg10C] run tag @s add AzrSariel_upg_FAILED_AL
 execute if entity @s[scores={Azr_Shop=8432131},tag=AzrSariel_upg11B] run tag @s add AzrSariel_upg_FAILED_AL
 execute if entity @s[scores={Azr_Shop=8432132},tag=AzrSariel_upg11C] run tag @s add AzrSariel_upg_FAILED_AL
-execute if entity @s[scores={Azr_Shop=8432133},tag=AzrSariel_upg] run tag @s add AzrSariel_upg_FAILED_AL
-execute if entity @s[scores={Azr_Shop=8432134},tag=AzrSariel_upg] run tag @s add AzrSariel_upg_FAILED_AL
-execute if entity @s[scores={Azr_Shop=8432135},tag=AzrSariel_upg] run tag @s add AzrSariel_upg_FAILED_AL
-execute if entity @s[scores={Azr_Shop=8432136},tag=AzrSariel_upg] run tag @s add AzrSariel_upg_FAILED_AL
-execute if entity @s[scores={Azr_Shop=8432137},tag=AzrSariel_upg] run tag @s add AzrSariel_upg_FAILED_AL
-execute if entity @s[scores={Azr_Shop=8432138},tag=AzrSariel_upg] run tag @s add AzrSariel_upg_FAILED_AL
-execute if entity @s[scores={Azr_Shop=8432139},tag=AzrSariel_upg] run tag @s add AzrSariel_upg_FAILED_AL
-execute if entity @s[scores={Azr_Shop=8432140},tag=AzrSariel_upg] run tag @s add AzrSariel_upg_FAILED_AL
+execute if entity @s[scores={Azr_Shop=8432133},tag=AzrSariel_upg12C] run tag @s add AzrSariel_upg_FAILED_AL
+execute if entity @s[scores={Azr_Shop=8432134},tag=AzrSariel_upg13B] run tag @s add AzrSariel_upg_FAILED_AL
+execute if entity @s[scores={Azr_Shop=8432135},tag=AzrSariel_upg13C] run tag @s add AzrSariel_upg_FAILED_AL
+execute if entity @s[scores={Azr_Shop=8432136},tag=AzrSariel_upg1C] run tag @s add AzrSariel_upg_FAILED_AL
+execute if entity @s[scores={Azr_Shop=8432137},tag=AzrSariel_upg13D] run tag @s add AzrSariel_upg_FAILED_AL
+execute if entity @s[scores={Azr_Shop=8432138},tag=AzrSariel_upg1E] run tag @s add AzrSariel_upg_FAILED_AL
+execute if entity @s[scores={Azr_Shop=8432139},tag=AzrSariel_upg3E] run tag @s add AzrSariel_upg_FAILED_AL
+execute if entity @s[scores={Azr_Shop=8432140},tag=AzrSariel_upg5E] run tag @s add AzrSariel_upg_FAILED_AL
 execute if entity @s[scores={Azr_Shop=8432141},tag=AzrSariel_upg] run tag @s add AzrSariel_upg_FAILED_AL
 execute if entity @s[scores={Azr_Shop=8432142},tag=AzrSariel_upg] run tag @s add AzrSariel_upg_FAILED_AL
 execute if entity @s[scores={Azr_Shop=8432143},tag=AzrSariel_upg] run tag @s add AzrSariel_upg_FAILED_AL
