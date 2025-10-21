@@ -311,6 +311,11 @@ setblock -79857 44 165 minecraft:potted_cornflower
 setblock -79850 48 205 chest[facing=south]
 item replace block -79850 48 205 container.12 with emerald 3
 item replace block -79850 48 205 container.14 with skull_banner_pattern[custom_name='{"text":"“招待厅事务记录3”","color":"dark_purple","italic":false}',lore=['{"text":"权之残影大人说过，挑战者可能会来到大图书馆。","color":"white","italic":false}','{"text":"但是在此处巡逻的夜盲虫会对任何亡灵造成致命伤害。","color":"white","italic":false}','{"text":"已经死去并成为亡灵的挑战者，必定会被夜盲虫重创。","color":"white","italic":false}','{"text":"试炼的过程是被精心安排的，","color":"white","italic":false}','{"text":"不知挑战者本人能否看穿这件事实。","color":"white","italic":false}']] 1
+setblock -79854 48 176 chest[facing=south]
+item replace block -79854 48 176 container.13 with book[lore=['{"text":"战斗了大半天，结果白跑一趟……","color":"white","italic":false}','{"text":"这本书的所有内容我都没法看懂。","color":"white","italic":false}','{"text":"对我来说是不折不扣的垃圾，丢了吧。","color":"white","italic":false}']] 1
+setblock -79854 48 176 chest[facing=south]
+
+
   #物品框
 summon glow_item_frame -79855 44 203 {Item:{id:"minecraft:glistering_melon_slice",count:1b},Facing:2}
 summon glow_item_frame -79849 44 193 {Item:{id:"minecraft:gunpowder",count:1b},Facing:1}
