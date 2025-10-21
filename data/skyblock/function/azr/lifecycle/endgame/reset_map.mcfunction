@@ -317,7 +317,7 @@ item replace block -79850 48 205 container.14 with skull_banner_pattern[custom_n
 setblock -79854 48 176 chest[facing=south]
 item replace block -79854 48 176 container.11 with book[lore=['{"text":"里面的文字跟我来说和图片没有任何区别。","color":"white","italic":false}','{"text":"对我来说是不折不扣的垃圾，丢了吧。","color":"white","italic":false}']] 1
 item replace block -79854 48 176 container.13 with book[lore=['{"text":"战斗了大半天，结果白跑一趟……","color":"white","italic":false}','{"text":"这本书的所有内容我都没法看懂。","color":"white","italic":false}','{"text":"对我来说是不折不扣的垃圾，丢了吧。","color":"white","italic":false}']] 1
-item replace block -79854 48 176 container.15 with book[lore=['{"text":"……我就非要三本都翻过才信这个邪吗？","color":"white","italic":false}']] 1
+item replace block -79854 48 176 container.15 with book[lore=['{"text":"……我就非要三本都读了才信这个邪吗？","color":"white","italic":false}']] 1
 
 
   #物品框
