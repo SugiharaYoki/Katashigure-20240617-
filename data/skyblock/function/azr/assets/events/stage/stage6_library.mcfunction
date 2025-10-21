@@ -1,0 +1,17 @@
+
+
+#供能天桥 断口
+
+execute positioned -79862 42 149 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[x=-79862,y=42,z=149,dx=5,dy=5,dz=13,tag=azrPlayer] run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
+execute positioned -79862 42 149 as @n[tag=AzrielMarker_encounter,distance=0..0.5] run scoreboard players add @s rng1 1
+execute positioned -79862 42 149 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79865 43 151 run function skyblock:azr/assets/mobs_new/pillager
+execute positioned -79862 42 149 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79871 43 149 run function skyblock:azr/assets/mobs_new/axe
+execute positioned -79862 42 149 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79865 43 151 run tellraw @a[tag=azrShowDialog] [{"text":"卫兵：","color":"yellow","bold": true},{"bold": false,"text":"\n“我这里反正已经反馈给默尔森大人了。”","color":"white"}]
+execute positioned -79862 42 149 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2..80}] positioned -79865 43 151 if entity @a[tag=azrPlayer,distance=..5] run scoreboard players set @s rng1 100
+execute positioned -79862 42 149 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=19}] positioned -79865 43 151 run tellraw @a[tag=azrShowDialog] [{"text":"卫兵：","color":"yellow","bold": true},{"bold": false,"text":"\n“你有什么头绪吗？震动的来源好像是牢房区域那里。”","color":"white"}]
+execute positioned -79862 42 149 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=36}] positioned -79865 43 151 run tellraw @a[tag=azrShowDialog] [{"text":"弩手：","color":"yellow","bold": true},{"bold": false,"text":"\n“最近几天类似的震动不是一回两回了。权之殊能大人不是已经带了一队神界军去牢房了吗？”","color":"white"}]
+execute positioned -79862 42 149 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=55}] positioned -79865 43 151 run tellraw @a[tag=azrShowDialog] [{"text":"卫兵：","color":"yellow","bold": true},{"bold": false,"text":"\n“反正我希望别让我过去……那地方平时都看着让人瘆得慌，现在又出此异象，难说安稳。”","color":"white"}]
+
+execute positioned -79862 42 149 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=85..99}] run scoreboard players set @s rng1 85
+execute positioned -79862 42 149 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=101}] positioned -79865 43 151 run tellraw @a[tag=azrShowDialog] [{"text":"弩手：","color":"yellow","bold": true},{"bold": false,"text":"\n“嗯？！试炼者过来了，喂，别从这里走！！”","color":"white"}]
+

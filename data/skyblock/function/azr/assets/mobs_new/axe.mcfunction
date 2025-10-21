@@ -7,7 +7,6 @@ execute if score AzrielC_danger rng1 matches 5 run summon vindicator ~ ~ ~ {Pers
 execute if score AzrielC_danger rng1 matches 6..8 run summon vindicator ~ ~ ~ {PersistenceRequired:1b,Tags:["AzrielMob","AzrielMob_typeLIFE","AzrielMob_axe","AzrielMob_level_4"],DeathLootTable:"skyblock:azr_new/vindicator_tier1",attributes:[{id:"attack_damage",base:7.0},{id:"max_health",base:32.0},{id:"armor",base:3.0},{base:0.23d,id:"movement_speed"}],Health:32.0f,CustomName:'"圣殿卫兵"',HandItems:[{},{}],HandDropChances:[0.0f,0.0f],ArmorItems:[{},{},{},{}]}
 execute if score AzrielC_danger rng1 matches 9.. run summon vindicator ~ ~ ~ {PersistenceRequired:1b,Tags:["AzrielMob","AzrielMob_typeLIFE","AzrielMob_axe","AzrielMob_level_5"],DeathLootTable:"skyblock:azr_new/vindicator_tier1",attributes:[{id:"attack_damage",base:8.0},{id:"max_health",base:40.0},{id:"armor",base:4.0},{base:0.24d,id:"movement_speed"}],Health:40.0f,CustomName:'"圣殿卫兵"',HandItems:[{},{}],HandDropChances:[0.0f,0.0f],ArmorItems:[{},{},{},{}]}
 particle minecraft:reverse_portal ~ ~0.8 ~ 0.3 0.7 0.3 0.1 18
-playsound entity.enderman.teleport hostile @a ~ ~ ~ 0.8 1.2
 
 execute as @n[tag=AzrielMob,tag=!AzrielMob_level_ed,tag=AzrielMob_level_1] at @s run scoreboard players set @s AzrielMobLevel 1
 execute as @n[tag=AzrielMob,tag=!AzrielMob_level_ed,tag=AzrielMob_level_2] at @s run scoreboard players set @s AzrielMobLevel 2
