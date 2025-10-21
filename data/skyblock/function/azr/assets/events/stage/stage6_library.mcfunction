@@ -42,6 +42,10 @@ execute positioned -79851 43 203 as @n[tag=AzrielMarker_encounter,distance=0..0.
 execute positioned -79851 43 203 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79848 48 184 run function skyblock:azr/assets/mobs_new/undead_shadow
 execute positioned -79851 43 203 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79848 48 184 run function skyblock:azr/assets/mobs_new/undead_shadow
 execute positioned -79851 43 203 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79848 48 184 run function skyblock:azr/assets/mobs_new/undead_shadow
+execute positioned -79851 43 203 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79848 48 184 run function skyblock:azr/assets/mobs_new/sword
+execute positioned -79851 43 203 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79848 48 184 run function skyblock:azr/assets/mobs_new/sword
+execute positioned -79851 43 203 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79848 48 184 run function skyblock:azr/assets/mobs_new/pillager
+execute positioned -79851 43 203 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79848 48 184 run function skyblock:azr/assets/mobs_new/pillager
 
 
 
