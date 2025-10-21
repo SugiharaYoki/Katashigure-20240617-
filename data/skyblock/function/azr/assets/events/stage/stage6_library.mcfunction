@@ -14,4 +14,10 @@ execute positioned -79862 42 149 as @n[tag=AzrielMarker_encounter,distance=0..0.
 
 execute positioned -79862 42 149 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=85..99}] run scoreboard players set @s rng1 85
 execute positioned -79862 42 149 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=101}] positioned -79865 43 151 run tellraw @a[tag=azrShowDialog] [{"text":"弩手：","color":"yellow","bold": true},{"bold": false,"text":"\n“嗯？！试炼者过来了，喂，别从这里走！！”","color":"white"}]
-
+execute positioned -79862 42 149 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=101}] as @a[tag=azrPlayer] at @s run function skyblock:azr/system/shop/purchase/handbook/input {doc:undead_shadow}
+execute positioned -79862 42 149 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=101}] positioned -79880 43 128 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_undead_shadow","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute positioned -79862 42 149 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=101}] positioned -79872 43 128 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_undead_shadow","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute positioned -79862 42 149 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=101}] positioned -79876 38 110 run function skyblock:azr/assets/mobs_new/axe
+execute positioned -79862 42 149 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=101}] positioned -79876 38 110 run function skyblock:azr/assets/mobs_new/sword
+execute positioned -79862 42 149 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=101}] positioned -79876 38 110 run function skyblock:azr/assets/mobs_new/sword
+execute positioned -79862 42 149 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=101}] positioned -79876 38 110 run function skyblock:azr/assets/mobs_new/summoner
