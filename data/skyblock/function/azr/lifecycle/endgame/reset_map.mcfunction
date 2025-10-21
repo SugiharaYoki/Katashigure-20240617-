@@ -307,9 +307,49 @@ setblock -79912 44 172 minecraft:potted_flowering_azalea_bush
 setblock -79857 44 163 minecraft:potted_cornflower
 setblock -79857 44 165 minecraft:potted_cornflower
 
+#大图书馆
+setblock -79850 48 205 chest[facing=south]
+item replace block -79850 48 205 container.12 with emerald 3
+item replace block -79850 48 205 container.14 with skull_banner_pattern[custom_name='{"text":"“招待厅事务记录3”","color":"dark_purple","italic":false}',lore=['{"text":"权之残影大人说过，挑战者可能会来到大图书馆。","color":"white","italic":false}','{"text":"但是在此处巡逻的夜盲虫会对任何亡灵造成致命伤害。","color":"white","italic":false}','{"text":"已经死去并成为亡灵的挑战者，必定会被夜盲虫重创。","color":"white","italic":false}','{"text":"试炼的过程是被精心安排的，","color":"white","italic":false}','{"text":"不知挑战者本人能否看穿这件事实。","color":"white","italic":false}']] 1
+  #物品框
+summon glow_item_frame -79855 44 203 {Item:{id:"minecraft:glistering_melon_slice",count:1b},Facing:2}
+summon glow_item_frame -79849 44 193 {Item:{id:"minecraft:gunpowder",count:1b},Facing:1}
+summon glow_item_frame -79864 44 186 {Item:{id:"minecraft:ghast_tear",count:1b},Facing:1}
+summon glow_item_frame -79846 49 184 {Item:{id:"minecraft:gunpowder",count:1b},Facing:1}
+summon glow_item_frame -79864 49 192 {Item:{id:"minecraft:golden_carrot",count:1b},Facing:1}
+summon glow_item_frame -79864 49 178 {Item:{id:"minecraft:golden_carrot",count:1b},Facing:1}
+
+  #水族馆
+setblock -79756 42 197 chest[facing=west]
+item replace block -79756 42 197 container.12 with tripwire_hook[custom_name='{"text":"水管图案的钥匙","color":"blue","italic":false}',custom_data={key_golden_pipe:1b}] 1
+item replace block -79756 42 197 container.14 with bone 3
+setblock -79755 42 196 minecraft:potted_azalea_bush
+setblock -79755 42 198 minecraft:potted_azalea_bush
+setblock -79764 30 218 chest[facing=north,waterlogged=true]
+item replace block -79764 30 218 container.13 with skull_banner_pattern[custom_name='{"text":"“招待厅事务记录2”","color":"dark_purple","italic":false}',lore=['{"text":"有更多的巡逻士兵说，","color":"white","italic":false}','{"text":"自己在执行任务时遭遇了轻微的幻听。","color":"white","italic":false}','{"text":"他们说，那温柔话语声的来源像是艾奥洛斯之女：雅尔希奥妮。","color":"white","italic":false}','{"text":"也就是……魔神佛卡洛。","color":"white","italic":false}']] 1
+
+
 #stage7 ~ 8 道中
   #庭园隐藏按钮
 setblock -79901 39 67 minecraft:birch_button[facing=east]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #stage8
 setblock -79898 38 62 air
@@ -417,12 +457,9 @@ setblock -79939 35 -76 chest[facing=north,waterlogged=true]
 setblock -79917 40 -62 air
 setblock -79917 40 -62 trapped_chest[facing=north]{lock:{components:{custom_data:{key_required:1b}}}}
 setblock -79875 38 64 chest[facing=north]
-setblock -79764 30 218 chest[facing=north,waterlogged=true]
-setblock -79850 48 205 chest[facing=south]
 setblock -79878 41 -131 lever[face=floor,facing=east,powered=false]
 setblock -79877 46 -142 minecraft:polished_andesite_slab
 setblock -79760 31 188 chest
-setblock -79756 43 197 birch_button[face=floor,facing=east]
 setblock -79922 40 -92 minecraft:birch_button[face=floor,facing=south]
 setblock -79938 48 -144 chest[facing=east]
 setblock -79935 48 -164 barrel[facing=up]
@@ -593,11 +630,9 @@ item replace block -79917 40 -62 container.11 with minecraft:eye_armor_trim_smit
 item replace block -79917 40 -62 container.13 with iron_ingot 2
 item replace block -79917 40 -62 container.15 with skull_banner_pattern[custom_name='{"text":"“拉斐尔大人与能天使大人吵了一架”","color":"dark_purple","italic":false}',lore=['{"text":"希望神庭近些日子不要遭遇困难。","color":"white","italic":false}','{"text":"这两天拉斐尔大人的脾气特别不稳定，","color":"white","italic":false}','{"text":"还时不时地跟我们说，","color":"white","italic":false}','{"text":"“百千年的重头戏终于要到来了”。","color":"white","italic":false}']] 1
 item replace block -79875 38 64 container.13 with tripwire_hook[custom_name='{"text":"粗石英钥匙","color":"blue","italic":false}',custom_data={key_rough_quartz:1b}] 1
-item replace block -79764 30 218 container.13 with skull_banner_pattern[custom_name='{"text":"“招待厅事务记录2”","color":"dark_purple","italic":false}',lore=['{"text":"有更多的巡逻士兵说，","color":"white","italic":false}','{"text":"自己在执行任务时遭遇了轻微的幻听。","color":"white","italic":false}','{"text":"他们说，","color":"white","italic":false}','{"text":"那温柔话语声的来源像是艾奥洛斯之女：","color":"white","italic":false}','{"text":"雅尔希奥妮。","color":"white","italic":false}']] 1
-item replace block -79850 48 205 container.14 with skull_banner_pattern[custom_name='{"text":"“招待厅事务记录3”","color":"dark_purple","italic":false}',lore=['{"text":"力天使大人说过，","color":"white","italic":false}','{"text":"挑战者没有办法来到图书馆区域。","color":"white","italic":false}','{"text":"试炼的过程是被精心安排的，","color":"white","italic":false}','{"text":"不知挑战者本人能否看穿这件事实。","color":"white","italic":false}']] 1
+
 item replace block -79863 40 -76 container.14 with skull_banner_pattern[custom_name='{"text":"“招待厅事务记录5”","color":"dark_purple","italic":false}',lore=['{"text":"第一关口北面的建筑物出现了大量裂缝，","color":"white","italic":false}','{"text":"这样的现象一直延伸至牢房区域。","color":"white","italic":false}','{"text":"虽说大家有不祥的预感，","color":"white","italic":false}','{"text":"权之殊能大人却言仅为年久失修。","color":"white","italic":false}']] 1
 item replace block -79936 49 -158 container.13 with skull_banner_pattern[custom_name='{"text":"“期限将至 此乃针对神庭之审判”","color":"dark_purple","italic":false}',lore=['{"text":"这里的魔物保受摧残，","color":"white","italic":false}','{"text":"终日身于苦痛之中。","color":"white","italic":false}','{"text":"沙利叶大人既是对此心知肚明，","color":"white","italic":false}','{"text":"又为何让这暴行再续？","color":"white","italic":false}']] 1
-item replace block -79850 48 205 container.12 with lapis_lazuli 2
 item replace block -79938 48 -144 container.12 with emerald 5
 item replace block -79938 48 -144 container.14 with emerald 7
 item replace block -79935 48 -164 container.13 with cooked_beef 3

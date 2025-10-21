@@ -197,13 +197,6 @@ execute if score stage_main_thread AzrTimerStack matches 222 if score playerCoun
 execute if score stage_main_thread AzrTimerStack matches 222 if score playerCount Azr_system matches 5.. positioned -79863 48 196 run function skyblock:azr/assets/mobs/endermite_t1
 
 execute if score stage_main_thread AzrTimerStack matches 222 run setblock -79864 44 196 birch_button[facing=east]
-execute if score stage_main_thread AzrTimerStack matches 222 run summon item_frame -79855 44 203 {Item:{id:"minecraft:glistering_melon_slice",count:1b},Facing:2}
-execute if score stage_main_thread AzrTimerStack matches 222 run summon item_frame -79849 44 193 {Item:{id:"minecraft:honeycomb",count:1b},Facing:1}
-execute if score stage_main_thread AzrTimerStack matches 222 run summon item_frame -79864 44 186 {Item:{id:"minecraft:lapis_lazuli",count:1b},Facing:1}
-execute if score stage_main_thread AzrTimerStack matches 222 run summon item_frame -79846 49 184 {Item:{id:"minecraft:lapis_lazuli",count:1b},Facing:1}
-execute if score stage_main_thread AzrTimerStack matches 222 run summon item_frame -79864 49 192 {Item:{id:"minecraft:honeycomb",count:1b},Facing:1}
-execute if score stage_main_thread AzrTimerStack matches 222 run summon item_frame -79864 49 178 {Item:{id:"minecraft:golden_apple",count:1b},Facing:1}
-
 execute if score stage_main_thread AzrTimerStack matches 222 run fill -79846 48 180 -79846 50 182 anvil
 execute if score stage_main_thread AzrTimerStack matches 222 run setblock -79845 42 197 minecraft:chiseled_quartz_block
 execute if score stage_main_thread AzrTimerStack matches 222 run setblock -79804 42 197 minecraft:chiseled_quartz_block

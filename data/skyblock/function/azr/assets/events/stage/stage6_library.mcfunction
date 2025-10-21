@@ -21,3 +21,14 @@ execute positioned -79862 42 149 as @n[tag=AzrielMarker_encounter,distance=0..0.
 execute positioned -79862 42 149 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=101}] positioned -79876 38 110 run function skyblock:azr/assets/mobs_new/sword
 execute positioned -79862 42 149 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=101}] positioned -79876 38 110 run function skyblock:azr/assets/mobs_new/sword
 execute positioned -79862 42 149 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=101}] positioned -79876 38 110 run function skyblock:azr/assets/mobs_new/summoner
+
+
+
+
+
+
+-79847 43 177
+-79863 43 182
+-79857 43 194
+-79862 43 201
+

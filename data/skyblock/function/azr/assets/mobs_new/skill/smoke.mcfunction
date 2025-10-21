@@ -14,12 +14,7 @@ execute if score @s[scores={rng2=1..}] rng1 matches 2.. as @s at @s run data mod
 execute if score @s[scores={rng2=1..}] rng1 matches 2.. as @s at @s run scoreboard players set @s rng2 0
 
 
-execute store result score @s rng3 run data get entity @s Fire
-
-execute if score @s rng3 matches 2.. as @s at @s run damage @s 2 in_fire
-execute if score @s rng3 matches 2.. as @s at @s run particle large_smoke ~ ~0.3 ~ 0.8 0.8 0.8 0.34 8 force
-execute if score @s rng3 matches 2.. as @s at @s run scoreboard players set @s rng2 0
-
+function skyblock:azr/assets/mobs_new/skill/generic_weakness_fire
 
 execute if score @s rng1 matches 5 as @s at @s run particle smoke ~ ~0.3 ~ 0.8 0.8 0.8 0.08 10 force
 execute if score @s rng1 matches 28 run scoreboard players set @s rng1 4

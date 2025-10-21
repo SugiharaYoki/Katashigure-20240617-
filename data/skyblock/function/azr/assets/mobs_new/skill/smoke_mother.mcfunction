@@ -31,3 +31,4 @@ execute if score @s[scores={AzrielMobLevel=5..}] rng3 matches 27 run function sk
 
 execute if score @s rng3 matches 27 run kill @s
 
+function skyblock:azr/assets/mobs_new/skill/generic_weakness_fire
