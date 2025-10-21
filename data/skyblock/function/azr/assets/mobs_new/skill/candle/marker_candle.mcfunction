@@ -17,30 +17,30 @@ execute if score @s rng1 matches 28.. run kill @s
 
 
 
-execute if score @s rng1 matches 11..15 run particle wax_off ~1.2 ~ ~0 0 0 0 0 1
-execute if score @s rng1 matches 11..15 run particle wax_off ~1.2 ~ ~0.4 0 0 0 0 1
-execute if score @s rng1 matches 11..15 run particle wax_off ~1.2 ~ ~0.8 0 0 0 0 1
-execute if score @s rng1 matches 11..15 run particle wax_off ~1.2 ~ ~1.2 0 0 0 0 1
-execute if score @s rng1 matches 11..15 run particle wax_off ~0.8 ~ ~1.2 0 0 0 0 1
-execute if score @s rng1 matches 11..15 run particle wax_off ~0.4 ~ ~1.2 0 0 0 0 1
-execute if score @s rng1 matches 11..15 run particle wax_off ~0 ~ ~1.2 0 0 0 0 1
-execute if score @s rng1 matches 11..15 run particle wax_off ~-0.4 ~ ~1.2 0 0 0 0 1
-execute if score @s rng1 matches 11..15 run particle wax_off ~-0.8 ~ ~1.2 0 0 0 0 1
-execute if score @s rng1 matches 11..15 run particle wax_off ~-1.2 ~ ~1.2 0 0 0 0 1
-execute if score @s rng1 matches 11..15 run particle wax_off ~-1.2 ~ ~0.8 0 0 0 0 1
-execute if score @s rng1 matches 11..15 run particle wax_off ~-1.2 ~ ~0.4 0 0 0 0 1
-execute if score @s rng1 matches 11..15 run particle wax_off ~-1.2 ~ ~0 0 0 0 0 1
-execute if score @s rng1 matches 11..15 run particle wax_off ~-1.2 ~ ~-0.4 0 0 0 0 1
-execute if score @s rng1 matches 11..15 run particle wax_off ~-1.2 ~ ~-0.8 0 0 0 0 1
-execute if score @s rng1 matches 11..15 run particle wax_off ~-1.2 ~ ~-1.2 0 0 0 0 1
-execute if score @s rng1 matches 11..15 run particle wax_off ~-0.8 ~ ~-1.2 0 0 0 0 1
-execute if score @s rng1 matches 11..15 run particle wax_off ~-0.4 ~ ~-1.2 0 0 0 0 1
-execute if score @s rng1 matches 11..15 run particle wax_off ~0 ~ ~-1.2 0 0 0 0 1
-execute if score @s rng1 matches 11..15 run particle wax_off ~0.4 ~ ~-1.2 0 0 0 0 1
-execute if score @s rng1 matches 11..15 run particle wax_off ~0.8 ~ ~-1.2 0 0 0 0 1
-execute if score @s rng1 matches 11..15 run particle wax_off ~1.2 ~ ~-1.2 0 0 0 0 1
-execute if score @s rng1 matches 11..15 run particle wax_off ~1.2 ~ ~-0.8 0 0 0 0 1
-execute if score @s rng1 matches 11..15 run particle wax_off ~1.2 ~ ~-0.4 0 0 0 0 1
+execute if score @s rng1 matches 11..12 run particle wax_off ~1.2 ~ ~0 0 0 0 0 1
+execute if score @s rng1 matches 11..12 run particle wax_off ~1.2 ~ ~0.4 0 0 0 0 1
+execute if score @s rng1 matches 11..12 run particle wax_off ~1.2 ~ ~0.8 0 0 0 0 1
+execute if score @s rng1 matches 11..12 run particle wax_off ~1.2 ~ ~1.2 0 0 0 0 1
+execute if score @s rng1 matches 11..12 run particle wax_off ~0.8 ~ ~1.2 0 0 0 0 1
+execute if score @s rng1 matches 11..12 run particle wax_off ~0.4 ~ ~1.2 0 0 0 0 1
+execute if score @s rng1 matches 11..12 run particle wax_off ~0 ~ ~1.2 0 0 0 0 1
+execute if score @s rng1 matches 11..12 run particle wax_off ~-0.4 ~ ~1.2 0 0 0 0 1
+execute if score @s rng1 matches 11..12 run particle wax_off ~-0.8 ~ ~1.2 0 0 0 0 1
+execute if score @s rng1 matches 11..12 run particle wax_off ~-1.2 ~ ~1.2 0 0 0 0 1
+execute if score @s rng1 matches 11..12 run particle wax_off ~-1.2 ~ ~0.8 0 0 0 0 1
+execute if score @s rng1 matches 11..12 run particle wax_off ~-1.2 ~ ~0.4 0 0 0 0 1
+execute if score @s rng1 matches 11..12 run particle wax_off ~-1.2 ~ ~0 0 0 0 0 1
+execute if score @s rng1 matches 11..12 run particle wax_off ~-1.2 ~ ~-0.4 0 0 0 0 1
+execute if score @s rng1 matches 11..12 run particle wax_off ~-1.2 ~ ~-0.8 0 0 0 0 1
+execute if score @s rng1 matches 11..12 run particle wax_off ~-1.2 ~ ~-1.2 0 0 0 0 1
+execute if score @s rng1 matches 11..12 run particle wax_off ~-0.8 ~ ~-1.2 0 0 0 0 1
+execute if score @s rng1 matches 11..12 run particle wax_off ~-0.4 ~ ~-1.2 0 0 0 0 1
+execute if score @s rng1 matches 11..12 run particle wax_off ~0 ~ ~-1.2 0 0 0 0 1
+execute if score @s rng1 matches 11..12 run particle wax_off ~0.4 ~ ~-1.2 0 0 0 0 1
+execute if score @s rng1 matches 11..12 run particle wax_off ~0.8 ~ ~-1.2 0 0 0 0 1
+execute if score @s rng1 matches 11..12 run particle wax_off ~1.2 ~ ~-1.2 0 0 0 0 1
+execute if score @s rng1 matches 11..12 run particle wax_off ~1.2 ~ ~-0.8 0 0 0 0 1
+execute if score @s rng1 matches 11..12 run particle wax_off ~1.2 ~ ~-0.4 0 0 0 0 1
 
 
 
