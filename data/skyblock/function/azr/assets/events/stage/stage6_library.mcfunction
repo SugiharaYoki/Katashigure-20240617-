@@ -37,7 +37,7 @@ execute positioned -79861 42 166 as @n[tag=AzrielMarker_encounter,distance=0..0.
 #图书馆二楼阻杀队
 execute positioned -79851 43 203 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[x=-79851,y=43,z=203,dx=7,dy=5,dz=7,tag=azrPlayer] run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
 execute positioned -79851 43 203 as @n[tag=AzrielMarker_encounter,distance=0..0.5] run scoreboard players add @s rng1 1
-execute positioned -79851 43 203 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] as @a[tag=azrPlayer] at @s run tellraw @a[tag=azrShowDialog] [{"text":"黑暗中的声音：","color":"red","bold": true},{"bold": false,"text":"\n“到此为止……我劝你别再往上了。”","color":"white"}]
+execute positioned -79851 43 203 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] as @a[tag=azrPlayer] at @s run tellraw @a[tag=azrShowDialog] [{"text":"黑暗中的声音：","color":"yellow","bold": true},{"bold": false,"text":"\n“到此为止。这里不是试炼场地，我劝你别再往上了。”","color":"white"}]
 execute positioned -79851 43 203 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] as @a[tag=azrPlayer] at @s run function skyblock:azr/system/shop/purchase/handbook/input {doc:undead_shadow}
 execute positioned -79851 43 203 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79848 48 184 run function skyblock:azr/assets/mobs_new/undead_shadow
 execute positioned -79851 43 203 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79848 48 184 run function skyblock:azr/assets/mobs_new/undead_shadow
