@@ -11,7 +11,7 @@ execute positioned -79862 42 149 as @n[tag=AzrielMarker_encounter,distance=0..0.
 execute positioned -79862 42 149 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=19}] positioned -79865 43 151 run tellraw @a[tag=azrShowDialog] [{"text":"卫兵：","color":"yellow","bold": true},{"bold": false,"text":"\n“你有什么头绪吗？震动的来源好像是牢房区域那里。”","color":"white"}]
 execute positioned -79862 42 149 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=36}] positioned -79865 43 151 run tellraw @a[tag=azrShowDialog] [{"text":"弩手：","color":"yellow","bold": true},{"bold": false,"text":"\n“最近几天类似的震动不是一回两回了。权之殊能大人不是已经带了一队神界军去牢房了吗？”","color":"white"}]
 execute positioned -79862 42 149 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=55}] positioned -79865 43 151 run tellraw @a[tag=azrShowDialog] [{"text":"卫兵：","color":"yellow","bold": true},{"bold": false,"text":"\n“反正我希望别让我过去……那地方平时都看着让人瘆得慌，现在又出此异象，难说安稳。”","color":"white"}]
-
+  #发现玩家
 execute positioned -79862 42 149 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=85..99}] run scoreboard players set @s rng1 85
 execute positioned -79862 42 149 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=101}] positioned -79865 43 151 run tellraw @a[tag=azrShowDialog] [{"text":"弩手：","color":"yellow","bold": true},{"bold": false,"text":"\n“嗯？！试炼者过来了，喂，别从这里走！！”","color":"white"}]
 execute positioned -79862 42 149 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=101}] as @a[tag=azrPlayer] at @s run function skyblock:azr/system/shop/purchase/handbook/input {doc:undead_shadow}
