@@ -20,6 +20,7 @@ function skyblock:azr/system/shop/purchase/category3 {rng:8,trigger:84308}
 execute if entity @s[tag=AzrSariel_upg7B] run function skyblock:azr/system/shop/purchase/category3 {rng:9,trigger:84309}
 
 execute if score @s Azr_Shop matches 8431551..8431599 run function skyblock:azr/system/shop/purchase/ramiel
+execute if score @s Azr_Shop matches 8432300..8432499 run function skyblock:azr/system/shop/purchase/ramiel/retrieve
 execute if score @s Azr_Shop matches 8432100..8432299 run function skyblock:azr/system/shop/purchase/sariel/alter
 execute if score @s Azr_Shop matches 8433100..8433999 store result storage azr:handbook_vitae eid int 1.0 run scoreboard players get @s azrPlayer_eternal
 execute if score @s Azr_Shop matches 8433100..8433999 run function skyblock:azr/system/shop/purchase/handbook/page with storage azr:handbook_vitae
@@ -38,6 +39,7 @@ execute at @s run playsound minecraft:item.armor.equip_leather master @s
 execute if score @s Azr_Shop matches 84300..84309 run function skyblock:azr/system/shop/build
 execute if score @s Azr_Shop matches 8431511..8431516 run function skyblock:azr/system/shop/reader_arrowshop
 execute if score @s Azr_Shop matches 8431551..8431599 run function skyblock:azr/system/shop/reader_ramiel
+execute if score @s Azr_Shop matches 8432300..8432499 run function skyblock:azr/system/shop/reader_ramiel
 execute if score @s Azr_Shop matches 8431611..8431631 run function skyblock:azr/system/shop/reader_nethershop_1
 execute if score @s Azr_Shop matches 8431711..8431722 run function skyblock:azr/system/shop/reader_nethershop_2
 scoreboard players set @s Azr_Shop 0
