@@ -29,10 +29,10 @@ execute if entity @s[tag=AZS_BoS22] if score @s Azr_Shop matches 8432322 run fun
 #execute if entity @s[tag=AZS_BoS26] if score @s Azr_Shop matches 8432326 run 
 
 
+scoreboard players set tempPlayerShopSuccess Azr_system 1
 
 
 
-
-scoreboard players set @s Azr_Shop 3
+scoreboard players set @s Azr_Shop 8432300
 playsound minecraft:item.lodestone_compass.lock neutral @s ~ ~ ~ 100 0.8
 playsound minecraft:block.enchantment_table.use neutral @s ~ ~ ~ 100 0.9
