@@ -123,7 +123,7 @@ execute if entity @s[tag=AZS_BoS25] if items entity @s inventory.* *[custom_data
 execute if entity @s[tag=AZS_BoS26] if items entity @s inventory.* *[custom_data~{azr_amulet_null:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerz] CustomName set value '" [√] "'
 
 
-tellraw @s [{"text":" - "},{"text":"假定回溯  ","color":"#1457af","bold": true},\
+tellraw @s [{"text":"\n "},{"text":"假定回溯  \n","color":"#1457af","bold": true},\
 {"selector":"@n[tag=AzrRamielExStage_displaymarkera]","color":"#70a0df","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432301"},"hoverEvent":{"action":"show_text","contents":{"text":"Appetence","color":"white"}}},\
 {"selector":"@n[tag=AzrRamielExStage_displaymarkerb]","color":"#70a0df","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432302"},"hoverEvent":{"action":"show_text","contents":{"text":"Breakout","color":"white"}}},\
 {"selector":"@n[tag=AzrRamielExStage_displaymarkerc]","color":"#70a0df","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432303"},"hoverEvent":{"action":"show_text","contents":{"text":"Cerement","color":"white"}}},\
