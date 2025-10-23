@@ -150,7 +150,7 @@ tellraw @s [{"text":"\n "},{"text":"假定回溯  \n","color":"#308aff","bold": 
 {"selector":"@n[tag=AzrRamielExStage_displaymarkeru]","color":"#70a0df","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432321"},"hoverEvent":{"action":"show_text","contents":{"text":"???","color":"white"}}},\
 {"selector":"@n[tag=AzrRamielExStage_displaymarkerv]","color":"#70a0df","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432322"},"hoverEvent":{"action":"show_text","contents":{"text":"Vestige - 岚切卷宗\n斧攻击自动延时二次攻击、左右移动时加强剑的范围伤害","color":"white"}}},\
 {"selector":"@n[tag=AzrRamielExStage_displaymarkerw]","color":"#70a0df","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432323"},"hoverEvent":{"action":"show_text","contents":{"text":"???","color":"white"}}},\
-{"selector":"@n[tag=AzrRamielExStage_displaymarkerx]","color":"#70a0df","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432324"},"hoverEvent":{"action":"show_text","contents":{"text":"???","color":"white"}}},\
+{"selector":"@n[tag=AzrRamielExStage_displaymarkerx]","color":"#70a0df","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432324"},"hoverEvent":{"action":"show_text","contents":{"text":"Xenia - 斥跃石板\n史莱姆块增加跳跃高度、蹲下跳得更高","color":"white"}}},\
 {"selector":"@n[tag=AzrRamielExStage_displaymarkery]","color":"#70a0df","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432325"},"hoverEvent":{"action":"show_text","contents":{"text":"???","color":"white"}}},\
 {"selector":"@n[tag=AzrRamielExStage_displaymarkerz]","color":"#70a0df","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432326"},"hoverEvent":{"action":"show_text","contents":{"text":"???","color":"white"}}}]
 
