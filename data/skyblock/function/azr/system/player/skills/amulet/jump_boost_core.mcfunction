@@ -2,7 +2,7 @@
 
 
 
-execute if entity @s[predicate=skyblock:sneak] run effect give @s jump_boost 2 1 false
+execute if entity @s[predicate=skyblock:sneak] run effect give @s jump_boost 2 0 false
 execute if block ~ ~-0.1 ~ slime_block run effect give @s jump_boost 2 5 false
 
 
