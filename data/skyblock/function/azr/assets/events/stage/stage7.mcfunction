@@ -3,11 +3,11 @@ execute if score stage_main_thread AzrTimerStack matches 1 run title @a[tag=SeGa
 execute if score stage_main_thread AzrTimerStack matches 1 run bossbar add azr:progress_bar_normal "Stage 7"
 execute if score stage_main_thread AzrTimerStack matches 1 run bossbar set azr:progress_bar_normal color white
 execute if score stage_main_thread AzrTimerStack matches 1 run bossbar set azr:progress_bar_normal players @a[tag=azrPlayer]
-execute if score stage_main_thread AzrTimerStack matches 1 run bossbar set azr:progress_bar_normal max 310
-execute if score stage_main_thread AzrTimerStack matches 1 run tellraw @a[tag=DebugMode,tag=azrPlayer] [{"text":"[DEBUG MODE MESSAGE] You are playing \"Stage 7\", with playerCount = "},{"score":{"objective":"Azr_system","name":"playerCount"}},{"text":" Maximum Seconds = 310"}]
+execute if score stage_main_thread AzrTimerStack matches 1 run bossbar set azr:progress_bar_normal max 324
+execute if score stage_main_thread AzrTimerStack matches 1 run tellraw @a[tag=DebugMode,tag=azrPlayer] [{"text":"[DEBUG MODE MESSAGE] You are playing \"Stage 7\", with playerCount = "},{"score":{"objective":"Azr_system","name":"playerCount"}},{"text":" Maximum Seconds = 324"}]
 
-execute if score stage_main_thread AzrTimerStack matches 1..303 store result bossbar azr:progress_bar_normal value run scoreboard players get stage_main_thread AzrTimerStack
-execute if score stage_main_thread AzrTimerStack matches 303.. run bossbar remove azr:progress_bar_normal
+execute if score stage_main_thread AzrTimerStack matches 1..324 store result bossbar azr:progress_bar_normal value run scoreboard players get stage_main_thread AzrTimerStack
+execute if score stage_main_thread AzrTimerStack matches 324.. run bossbar remove azr:progress_bar_normal
 #
 #mainside:-79889 38 121
 
@@ -83,22 +83,36 @@ execute if score stage_main_thread AzrTimerStack matches 191 run scoreboard play
 execute if score stage_main_thread AzrTimerStack matches 210 run scoreboard players set #is_stopped:stage_main_thread AzrTimerStack 0
 execute if score stage_main_thread AzrTimerStack matches 210 run title @a[tag=azrShowDialog] actionbar {"text":"Stage 7 - Wave 3","color":"red"}
 
+execute if score stage_main_thread AzrTimerStack matches 221 positioned -79897 38 125 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score stage_main_thread AzrTimerStack matches 221 positioned -79897 38 117 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_axe","AzrielMob_summon_delay","AzrielMob_level_1"]}
+
+execute if score stage_main_thread AzrTimerStack matches 213 positioned -79889 38 121 run function skyblock:azr/assets/mobs_new/elite/candle_angel
+execute if score stage_main_thread AzrTimerStack matches 215..216 positioned -79889 38 121 run function skyblock:azr/assets/mobs_new/undead
+execute if score stage_main_thread AzrTimerStack matches 235..236 positioned -79889 38 121 run function skyblock:azr/assets/mobs_new/undead
+execute if score stage_main_thread AzrTimerStack matches 237 positioned -79889 38 121 run function skyblock:azr/assets/mobs_new/undead_fire
+execute if score stage_main_thread AzrTimerStack matches 242 positioned -79889 38 121 run function skyblock:azr/assets/mobs_new/zombie_villager_armor
+execute if score stage_main_thread AzrTimerStack matches 255..256 positioned -79889 38 121 run function skyblock:azr/assets/mobs_new/undead
+execute if score stage_main_thread AzrTimerStack matches 272 positioned -79889 38 121 run function skyblock:azr/assets/mobs_new/zombie_villager_armor
+execute if score stage_main_thread AzrTimerStack matches 275 positioned -79889 38 121 run function skyblock:azr/assets/mobs_new/undead_fire
+execute if score stage_main_thread AzrTimerStack matches 290..291 positioned -79889 38 121 run function skyblock:azr/assets/mobs_new/undead
+execute if score stage_main_thread AzrTimerStack matches 310 positioned -79889 38 121 run function skyblock:azr/assets/mobs_new/zombie_villager_armor
 
 
 
+execute if score stage_main_thread AzrTimerStack matches 319..320 positioned -79889 38 121 if entity @n[distance=..30,tag=AzrielMob_elite_candle_angel] run scoreboard players set stage_main_thread AzrTimerStack 319
 
 
 
-execute if score stage_main_thread AzrTimerStack matches 301..304 run playsound ambient.crimson_forest.mood ambient @a[tag=azrShowDialog] -78000 100 0 1000 1.2
-execute if score stage_main_thread AzrTimerStack matches 301..304 run playsound ambient.crimson_forest.additions ambient @a[tag=azrShowDialog] -78000 100 0 1000 1.2
-execute if score stage_main_thread AzrTimerStack matches 301 run title @a[tag=azrShowDialog] actionbar {"text":"Stage Clear","color":"green"}
-execute if score stage_main_thread AzrTimerStack matches 304 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage7
-execute if score stage_main_thread AzrTimerStack matches 304 run scoreboard players set wave Azr_system 19
-execute if score stage_main_thread AzrTimerStack matches 304 run scoreboard players set stage Azr_system 19
-execute if score stage_main_thread AzrTimerStack matches 304 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..7}] Azr_skillPoints 8
-execute if score stage_main_thread AzrTimerStack matches 304 run fill -79898 38 101 -79896 41 101 air destroy
-execute if score stage_main_thread AzrTimerStack matches 304 run fill -79905 40 83 -79903 43 83 air destroy
-execute if score stage_main_thread AzrTimerStack matches 304 run fill -79886 43 132 -79888 45 132 air destroy
+execute if score stage_main_thread AzrTimerStack matches 321..324 run playsound ambient.crimson_forest.mood ambient @a[tag=azrShowDialog] -78000 100 0 1000 1.2
+execute if score stage_main_thread AzrTimerStack matches 321..324 run playsound ambient.crimson_forest.additions ambient @a[tag=azrShowDialog] -78000 100 0 1000 1.2
+execute if score stage_main_thread AzrTimerStack matches 321 run title @a[tag=azrShowDialog] actionbar {"text":"Stage Clear","color":"green"}
+execute if score stage_main_thread AzrTimerStack matches 324 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage7
+execute if score stage_main_thread AzrTimerStack matches 324 run scoreboard players set wave Azr_system 19
+execute if score stage_main_thread AzrTimerStack matches 324 run scoreboard players set stage Azr_system 19
+execute if score stage_main_thread AzrTimerStack matches 324 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..7}] Azr_skillPoints 8
+execute if score stage_main_thread AzrTimerStack matches 324 run fill -79898 38 101 -79896 41 101 air destroy
+execute if score stage_main_thread AzrTimerStack matches 324 run fill -79905 40 83 -79903 43 83 air destroy
+execute if score stage_main_thread AzrTimerStack matches 324 run fill -79886 43 132 -79888 45 132 air destroy
 
 
 
