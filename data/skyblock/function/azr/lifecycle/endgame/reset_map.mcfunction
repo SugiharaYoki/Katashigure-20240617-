@@ -358,8 +358,6 @@ item replace block -79764 30 218 container.13 with skull_banner_pattern[custom_n
 
 
 #stage7 ~ 8 道中
-  #庭园隐藏按钮
-setblock -79901 39 67 minecraft:birch_button[facing=east]
 
 #stage Vestige
 setblock -79870 39 78 minecraft:potted_flowering_azalea_bush
