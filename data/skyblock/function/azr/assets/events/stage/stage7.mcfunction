@@ -96,8 +96,9 @@ execute if score stage_main_thread AzrTimerStack matches 304 run advancement gra
 execute if score stage_main_thread AzrTimerStack matches 304 run scoreboard players set wave Azr_system 19
 execute if score stage_main_thread AzrTimerStack matches 304 run scoreboard players set stage Azr_system 19
 execute if score stage_main_thread AzrTimerStack matches 304 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..7}] Azr_skillPoints 8
-
-
+execute if score stage_main_thread AzrTimerStack matches 304 run fill -79898 38 101 -79896 41 101 air destroy
+execute if score stage_main_thread AzrTimerStack matches 304 run fill -79905 40 83 -79903 43 83 air destroy
+execute if score stage_main_thread AzrTimerStack matches 304 run fill -79886 43 132 -79888 45 132 air destroy
 
 
 
