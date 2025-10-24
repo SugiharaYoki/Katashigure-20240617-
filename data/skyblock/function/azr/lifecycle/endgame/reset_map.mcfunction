@@ -276,6 +276,8 @@ item replace block -79904 43 135 container.12 with tripwire_hook[custom_name='{"
 
 setblock -79912 41 106 minecraft:potted_oxeye_daisy
 setblock -79912 41 103 minecraft:potted_oxeye_daisy
+#侧道墙
+fill -79903 43 83 -79905 40 83 minecraft:purple_stained_glass
 
 #通往vestige
 fill -79877 41 82 -79875 38 82 minecraft:purple_stained_glass
