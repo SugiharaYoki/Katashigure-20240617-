@@ -289,6 +289,11 @@ setblock -79889 46 115 chest[facing=east]
 #item replace block -79889 46 115 container.12 with tripwire_hook[custom_name='{"text":"月色石钥匙","color":"blue","italic":false}',custom_data={key_moon:1b}] 1
 item replace block -79889 46 115 container.12 with tripwire_hook[custom_name='{"text":"金镐图案的钥匙","color":"blue","italic":false}',custom_data={key_golden_pickaxe:1b}] 1
 item replace block -79889 46 115 container.14 with emerald 3
+
+item replace block -79892 45 118 container.12 with gunpowder 1
+item replace block -79892 45 118 container.14 with flint 1
+
+
   #十字南 供能区域
 setblock -79886 44 194 minecraft:potted_azure_bluet
 setblock -79888 44 194 minecraft:potted_azure_bluet
@@ -353,7 +358,6 @@ setblock -79858 39 78 minecraft:potted_flowering_azalea_bush
 setblock -79875 42 59 chest[facing=north]
 item replace block -79875 42 59 container.12 with emerald 2
 item replace block -79875 42 59 container.14 with emerald 2
-
 
 
 

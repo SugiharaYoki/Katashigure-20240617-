@@ -116,6 +116,13 @@ execute if score stage_main_thread AzrTimerStack matches 354 run particle minecr
 execute if score stage_main_thread AzrTimerStack matches 354 run particle minecraft:end_rod -79931 39 117 0.6 0.6 0.6 0.0 13
 
 execute if score stage_main_thread AzrTimerStack matches 354 run tp @n[tag=AzrielNPC_bird] -79931 57 137
+execute if score stage_main_thread AzrTimerStack matches 354 positioned -79888 45 109 run function skyblock:azr/assets/mobs_new/skeleton_sword
+execute if score stage_main_thread AzrTimerStack matches 354 positioned -79888 45 109 run function skyblock:azr/assets/mobs_new/skeleton_melee
+execute if score stage_main_thread AzrTimerStack matches 354 positioned -79888 45 109 run function skyblock:azr/assets/mobs_new/skeleton_melee
+execute if score stage_main_thread AzrTimerStack matches 354 positioned -79901 43 135 run function skyblock:azr/assets/mobs_new/skeleton_sword
+execute if score stage_main_thread AzrTimerStack matches 354 positioned -79901 43 135 run function skyblock:azr/assets/mobs_new/skeleton_melee
+execute if score stage_main_thread AzrTimerStack matches 354 positioned -79901 43 135 run function skyblock:azr/assets/mobs_new/skeleton_melee
+
 execute if score stage_main_thread AzrTimerStack matches 354 run fill -79917 38 134 -79917 41 136 air destroy
 execute if score stage_main_thread AzrTimerStack matches 354 run fill -79886 43 132 -79888 45 132 air destroy
 
