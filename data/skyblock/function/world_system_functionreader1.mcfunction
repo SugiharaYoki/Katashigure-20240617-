@@ -26,16 +26,6 @@ execute as @s[scores={MultiMenu=52..56}] at @s run function skyblock:menu/index/
 #execute as @s[scores={MultiMenu=58003}] at @s run function skyblock:menu/index/multimenu058_003_wiki_game_blackjack2
 #execute as @s[scores={MultiMenu=58004}] at @s run function skyblock:menu/index/multimenu058_004_wiki_game_fallensq1
 #execute as @s[scores={MultiMenu=58005}] at @s run function skyblock:menu/index/multimenu058_005_wiki_game_fallensq2
-#execute as @s[scores={MultiMenu=58006}] at @s run function skyblock:menu/index/multimenu058_006_wiki_pvpjob
-#execute as @s[scores={MultiMenu=58007}] at @s run function skyblock:menu/index/multimenu058_007_wiki_pvpjob_3
-#execute as @s[scores={MultiMenu=58008}] at @s run function skyblock:menu/index/multimenu058_008_wiki_pvpjob_4
-#execute as @s[scores={MultiMenu=58009}] at @s run function skyblock:menu/index/multimenu058_009_wiki_pvpjob_5
-#execute as @s[scores={MultiMenu=58010}] at @s run function skyblock:menu/index/multimenu058_010_wiki_pvpjob_6
-#execute as @s[scores={MultiMenu=58011}] at @s run function skyblock:menu/index/multimenu058_011_wiki_pvpjob_7
-#execute as @s[scores={MultiMenu=58012}] at @s run function skyblock:menu/index/multimenu058_012_wiki_pvpjob_8
-#execute as @s[scores={MultiMenu=58013}] at @s run function skyblock:menu/index/multimenu058_013_wiki_pvpjob_9
-#execute as @s[scores={MultiMenu=58014}] at @s run function skyblock:menu/index/multimenu058_014_wiki_pvpjob_10
-#execute as @s[scores={MultiMenu=58015}] at @s run function skyblock:menu/index/multimenu058_015_wiki_pvpjob_11
 execute as @s[scores={MultiMenu=59..60}] at @s run function skyblock:menu/index/multimenu059_changecitybgm1
 execute as @s[scores={MultiMenu=61}] at @s run function skyblock:menu/index/multimenu061_setting_togglemultimenupos1
 execute as @s[scores={MultiMenu=63}] at @s run function skyblock:menu/index/multimenu063_social_particleart
@@ -87,14 +77,12 @@ execute as @s[scores={MultiMenu=113}] at @s run function skyblock:city_utility_d
 execute as @s[scores={MultiMenu=116}] at @s run function skyblock:dv/dv_sys_startgame
 execute as @s[scores={MultiMenu=117}] at @s run function skyblock:dv/dv_sys_checkleaderboard
 execute as @s[scores={MultiMenu=118}] at @s run function skyblock:menu/index/multimenu118_pvpmainmenu
-execute as @s[scores={MultiMenu=119}] at @s run function skyblock:menu/index/multimenu119_pvpjob
 execute as @s[scores={MultiMenu=120}] at @s run function skyblock:menu/index/multimenu120_setting_selectcitybgm_extend2b
 execute as @s[scores={MultiMenu=121}] at @s run function skyblock:menu/index/multimenu121_setting_selectcitybgm_extend2c
 
 execute as @s[scores={MultiMenu=131}] at @s run function skyblock:pvp/skywar/bless/setting/bless
 execute as @s[scores={MultiMenu=131001..139999}] at @s run function skyblock:pvp/skywar/bless/setting/bless_execute
 
-execute as @s[scores={MultiMenu=119001..119099}] at @s run function skyblock:world_system_functionreader_pvpjob
 execute as @s[scores={MultiMenu=101700..102000}] at @s run function skyblock:world_system_functionreader_musicbox
 execute as @s[scores={MultiMenu=16210001..16329999}] at @s run function skyblock:world_system_functionreader_purchase
 
