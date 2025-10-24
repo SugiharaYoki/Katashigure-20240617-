@@ -344,11 +344,15 @@ setblock -79901 39 67 minecraft:birch_button[facing=east]
 
 #stage Vestige
 setblock -79870 39 78 minecraft:potted_flowering_azalea_bush
-setblock -79870 39 74 minecraft:potted_flowering_azalea_bush
+setblock -79864 39 74 minecraft:potted_flowering_azalea_bush
+setblock -79864 39 78 minecraft:potted_flowering_azalea_bush
+setblock -79858 39 74 minecraft:potted_flowering_azalea_bush
+setblock -79858 39 78 minecraft:potted_flowering_azalea_bush
 
-
-
-
+  #小读书室
+setblock -79875 42 59 chest[facing=north]
+item replace block -79875 42 59 container.12 with emerald 2
+item replace block -79875 42 59 container.14 with emerald 2
 
 
 
