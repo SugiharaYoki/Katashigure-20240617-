@@ -398,8 +398,8 @@ item replace block -79939 35 -76 container.11 with minecraft:dried_kelp 6
 item replace block -79939 35 -76 container.13 with tripwire_hook[custom_name='{"text":"蓝宝石钥匙","color":"blue","italic":false}',custom_data={key_sapphire:1b}] 1
 item replace block -79939 35 -76 container.15 with minecraft:dried_kelp 6
 
-
-
+  #破碎的天花板
+fill -79934 45 -63 -79934 45 -61 minecraft:quartz_block
 
 #stage9~10道中 破碎的天花板
 fill -79892 51 -49 -79888 51 -42 minecraft:quartz_slab[type=top] replace minecraft:structure_void

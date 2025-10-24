@@ -13,6 +13,7 @@ execute if score stage_main_thread AzrTimerStack matches 324.. run bossbar remov
 
 #后续地图坍塌
 fill -79892 51 -49 -79888 51 -42 structure_void replace minecraft:quartz_slab[type=top]
+fill -79934 45 -63 -79934 45 -61 minecraft:air
 
 execute if score stage_main_thread AzrTimerStack matches 3 run scoreboard players set @a[tag=azrPlayer] AzrEvent_affected_quake_medium 15
 execute if score stage_main_thread AzrTimerStack matches 19 positioned -79889 38 121 run function skyblock:azr/assets/mobs_new/axe
