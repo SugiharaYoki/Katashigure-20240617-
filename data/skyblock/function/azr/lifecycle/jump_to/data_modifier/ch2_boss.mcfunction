@@ -10,8 +10,6 @@
     fill -79938 43 151 -79938 44 151 air
 
 # stage 7
-    # trial button
-    setblock -79902 39 103 air
     # -> 8 door
     fill -79898 38 101 -79896 42 101 air
     # storage

@@ -267,7 +267,7 @@ fill -79917 41 134 -79917 38 136 minecraft:purple_stained_glass
 setblock -79943 39 135 minecraft:birch_button[facing=west,face=floor]
 
 #stage7
-setblock -79902 39 103 birch_button[facing=south]
+setblock -79892 39 119 birch_button[facing=south]
 setblock -79904 44 137 minecraft:potted_azure_bluet
 setblock -79904 44 133 minecraft:potted_azure_bluet
 setblock -79904 43 135 chest[facing=east]
