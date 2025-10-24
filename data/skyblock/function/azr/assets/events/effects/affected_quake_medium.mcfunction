@@ -7,7 +7,6 @@ scoreboard players remove @s AzrEvent_affected_quake_medium 1
 
 execute if score @s AzrEvent_affected_quake_medium matches 14 at @s run playsound minecraft:entity.lightning_bolt.thunder ambient @s ~ ~-20 ~ 20 0.5
 execute if score @s AzrEvent_affected_quake_medium matches 14 at @s run playsound minecraft:entity.lightning_bolt.thunder ambient @s ~ ~-20 ~ 20 0.75
-execute if score @s AzrEvent_affected_quake_medium matches 14 at @s run playsound minecraft:entity.lightning_bolt.thunder ambient @s ~ ~-20 ~ 20 1
 #execute if score @s AzrEvent_affected_quake_medium matches 14 run playsound minecraft:entity.zombified_piglin.hurt ambient @s -78889 38 121 100 0.1
 execute if score @s AzrEvent_affected_quake_medium matches 14 at @s run playsound minecraft:entity.zombie_villager.cure ambient @s ~ ~-20 ~ 20 0.74
 #execute if score @s AzrEvent_affected_quake_medium matches 14 run playsound minecraft:entity.elder_guardian.curse ambient @s -78889 38 121 100 0.4
