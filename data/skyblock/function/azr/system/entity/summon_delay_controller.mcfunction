@@ -5,7 +5,9 @@ execute if entity @s[tag=AzrielMob_summon_delay_marker_empty_human] run function
 execute if entity @s[tag=AzrielMob_summon_delay_marker_shield] run function skyblock:azr/assets/mobs_new/summon_delay/shield
 execute if entity @s[tag=AzrielMob_summon_delay_marker_summoner] run function skyblock:azr/assets/mobs_new/summon_delay/summoner
 execute if entity @s[tag=AzrielMob_summon_delay_marker_sword] run function skyblock:azr/assets/mobs_new/summon_delay/sword
-execute if entity @s[tag=AzrielMob_generic_pillar_attack_small] run function skyblock:azr/assets/mobs_new/skill/undead_pickaxe_marker_release
+execute if entity @s[tag=AzrielMob_summon_delay_marker_axe] run function skyblock:azr/assets/mobs_new/summon_delay/axe
+execute if entity @s[tag=AzrielMob_summon_delay_marker_pillager] run function skyblock:azr/assets/mobs_new/summon_delay/pillager
+
 execute if entity @s[tag=AzrielMob_summon_delay_marker_undead_fire] run function skyblock:azr/assets/mobs_new/summon_delay/undead_fire
 execute if entity @s[tag=AzrielMob_summon_delay_marker_undead_shadow] run function skyblock:azr/assets/mobs_new/summon_delay/undead_shadow
 execute if entity @s[tag=AzrielMob_summon_delay_marker_undead_baby] run function skyblock:azr/assets/mobs_new/summon_delay/undead_baby
