@@ -85,6 +85,10 @@ execute if score stage_main_thread AzrTimerStack matches 210 run title @a[tag=az
 
 execute if score stage_main_thread AzrTimerStack matches 221 positioned -79897 38 125 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute if score stage_main_thread AzrTimerStack matches 221 positioned -79897 38 117 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_axe","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score stage_main_thread AzrTimerStack matches 223 positioned -79897 38 125 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score stage_main_thread AzrTimerStack matches 223 positioned -79897 38 117 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_axe","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score stage_main_thread AzrTimerStack matches 225 positioned -79897 38 125 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score stage_main_thread AzrTimerStack matches 225 positioned -79897 38 117 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_axe","AzrielMob_summon_delay","AzrielMob_level_1"]}
 
 execute if score stage_main_thread AzrTimerStack matches 213 positioned -79889 38 121 run function skyblock:azr/assets/mobs_new/elite/candle_angel
 execute if score stage_main_thread AzrTimerStack matches 215..216 positioned -79889 38 121 run function skyblock:azr/assets/mobs_new/undead
