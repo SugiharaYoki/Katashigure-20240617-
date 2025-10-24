@@ -286,6 +286,9 @@ item replace block -79904 40 62 container.15 with minecraft:emerald 5
 setblock -79933 44 111 minecraft:chest[facing=east]
 item replace block -79933 44 111 container.12 with minecraft:emerald 3
 item replace block -79933 44 111 container.14 with tripwire_hook[custom_name='{"text":"楼阁形状的钥匙","color":"blue","italic":false}',custom_data={key_gazebo:1b}] 1
+  #直通vestige
+fill -79896 42 88 -79898 38 88 minecraft:purple_stained_glass
+
 
 #通往vestige
 fill -79877 41 82 -79875 38 82 minecraft:purple_stained_glass

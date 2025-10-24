@@ -122,7 +122,7 @@ execute if score stage_main_thread AzrTimerStack matches 324 run scoreboard play
 execute if score stage_main_thread AzrTimerStack matches 324 run fill -79898 38 101 -79896 41 101 air destroy
 execute if score stage_main_thread AzrTimerStack matches 324 run fill -79905 40 83 -79903 43 83 air destroy
 execute if score stage_main_thread AzrTimerStack matches 324 run fill -79886 43 132 -79888 45 132 air destroy
-
+execute if score stage_main_thread AzrTimerStack matches 324 run fill -79896 42 88 -79898 38 88 air destroy
 
 
 
