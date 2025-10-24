@@ -64,6 +64,10 @@ execute if score @s AzrSariel_Skill_SlowRing matches 1.. if score @s AzrSariel_S
 
 
 
+#负面影响事件
+execute if score @s AzrEvent_affected_quake_medium matches 1.. run function skyblock:azr/assets/events/effects/affected_quake_medium
+
+
 
 
 scoreboard players reset @s AzrSariel_Amulet_generic_damage_dealt

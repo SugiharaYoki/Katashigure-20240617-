@@ -12,10 +12,11 @@ tag @s remove ContinuePermission
 tag @s remove FallenSquareEntering
 tag @s remove Azr_player
 tag @s remove NoMultiMenu
-tag @s remove SeGa_SLAQuake
 tag @s remove SeGa_DVA
 scoreboard players set @s If_DropBtrt 0
 scoreboard players reset @s If_CrBow
+
+scoreboard players set @s AzrEvent_affected_quake_medium 0
 
 scoreboard players reset @s TimeRemainUnsee
 scoreboard players set @s LeftGame 0

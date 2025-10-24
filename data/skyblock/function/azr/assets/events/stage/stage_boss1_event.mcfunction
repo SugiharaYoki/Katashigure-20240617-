@@ -183,7 +183,6 @@ execute if score stage_main_thread AzrTimerStack matches 2011 unless block -7993
 execute if score stage_main_thread AzrTimerStack matches 2011 run scoreboard players set wave Azr_system 10
 execute if score stage_main_thread AzrTimerStack matches 2011 run scoreboard players set stage Azr_system 11
 execute if score stage_main_thread AzrTimerStack matches 2011 run scoreboard players reset tick_main_thread AzrTimerStack
-#execute if score tick_main_thread AzrTimerStack matches 3200 run scoreboard players set @a[tag=azrPlayer,scores={Azr_PlyPtsH=..4}] Azr_PlyPtsH 5
 execute if score stage_main_thread AzrTimerStack matches 2011 run playsound minecraft:ui.toast.challenge_complete master @a[tag=azrShowDialog] ~ ~ ~ 2 0.9
 execute if score stage_main_thread AzrTimerStack matches 2011 run title @a[tag=azrShowDialog] actionbar {"text":"Chapter Clear","color":"gold"}
 execute if score stage_main_thread AzrTimerStack matches 2011 run tellraw @a[tag=azrShowDialog] {"text":"「生命手册」已开放第 2 页","color":"green"}
