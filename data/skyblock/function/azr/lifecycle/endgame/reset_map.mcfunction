@@ -272,12 +272,20 @@ setblock -79904 44 137 minecraft:potted_azure_bluet
 setblock -79904 44 133 minecraft:potted_azure_bluet
 setblock -79904 43 135 chest[facing=east]
 item replace block -79904 43 135 container.12 with minecraft:flint 2
-item replace block -79904 43 135 container.12 with tripwire_hook[custom_name='{"text":"椅子形状的钥匙","color":"blue","italic":false}',custom_data={key_chair:1b}] 1
+item replace block -79904 43 135 container.14 with tripwire_hook[custom_name='{"text":"椅子形状的钥匙","color":"blue","italic":false}',custom_data={key_chair:1b}] 1
 
 setblock -79912 41 106 minecraft:potted_oxeye_daisy
 setblock -79912 41 103 minecraft:potted_oxeye_daisy
-#侧道墙
+  #侧道墙
 fill -79903 43 83 -79905 40 83 minecraft:purple_stained_glass
+setblock -79904 40 62 trapped_chest[facing=south]{lock:{components:{custom_data:{key_required:1b}}}}
+item replace block -79904 40 62 container.11 with minecraft:emerald 5
+item replace block -79904 40 62 container.13 with minecraft:emerald 5
+item replace block -79904 40 62 container.15 with minecraft:emerald 5
+  #boss1附近的大花园
+setblock -79933 44 111 minecraft:chest[facing=east]
+item replace block -79933 44 111 container.12 with minecraft:emerald 3
+item replace block -79933 44 111 container.14 with tripwire_hook[custom_name='{"text":"楼阁形状的钥匙","color":"blue","italic":false}',custom_data={key_gazebo:1b}] 1
 
 #通往vestige
 fill -79877 41 82 -79875 38 82 minecraft:purple_stained_glass
