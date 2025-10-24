@@ -123,6 +123,8 @@ execute if score stage_main_thread AzrTimerStack matches 354 positioned -79901 4
 execute if score stage_main_thread AzrTimerStack matches 354 positioned -79901 43 135 run function skyblock:azr/assets/mobs_new/skeleton_melee
 execute if score stage_main_thread AzrTimerStack matches 354 positioned -79901 43 135 run function skyblock:azr/assets/mobs_new/skeleton_melee
 
+execute if score stage_main_thread AzrTimerStack matches 354 positioned -79903 40 94 run function skyblock:azr/assets/mobs_new/unique/trader/stage7
+
 execute if score stage_main_thread AzrTimerStack matches 354 run fill -79917 38 134 -79917 41 136 air destroy
 execute if score stage_main_thread AzrTimerStack matches 354 run fill -79886 43 132 -79888 45 132 air destroy
 

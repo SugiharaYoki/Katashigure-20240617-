@@ -55,11 +55,6 @@ execute if block -79902 39 103 minecraft:birch_button[powered=true] run scoreboa
 execute if block -79902 39 103 minecraft:birch_button[powered=true] run scoreboard players set stage_main_thread AzrTimerStack 0
 execute if block -79902 39 103 minecraft:birch_button[powered=true] run setblock -79904 41 97 air
 execute if block -79902 39 103 minecraft:birch_button[powered=true] run setblock -79902 39 103 air
-#stage7β uncommited
-execute if block -79904 41 97 minecraft:birch_button[powered=true] run scoreboard players set stage Azr_system 18
-execute if block -79904 41 97 minecraft:birch_button[powered=true] run scoreboard players set stage_main_thread AzrTimerStack 0
-execute if block -79904 41 97 minecraft:birch_button[powered=true] run setblock -79902 39 103 air
-execute if block -79904 41 97 minecraft:birch_button[powered=true] run setblock -79904 41 97 air
 ##stage8 uncommited
 #execute if block -79888 39 67 minecraft:birch_button[powered=true] run scoreboard players set stage Azr_system 20
 #execute if block -79888 39 67 minecraft:birch_button[powered=true] run scoreboard players set stage_main_thread AzrTimerStack 0
