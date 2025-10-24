@@ -30,7 +30,7 @@ execute if score stage_main_thread AzrTimerStack matches 34 positioned -79889 38
 execute if score stage_main_thread AzrTimerStack matches 38 positioned -79889 38 121 run function skyblock:azr/assets/mobs_new/skeleton_melee
 execute if score stage_main_thread AzrTimerStack matches 39 positioned -79889 38 121 run function skyblock:azr/assets/mobs_new/smoke
 
-execute if score stage_main_thread AzrTimerStack matches 50..51 positioned -79889 38 121 if entity @n[distance=..10,tag=AzrielMob_skeleton_sword] run scoreboard players set stage_main_thread AzrTimerStack 50
+execute if score stage_main_thread AzrTimerStack matches 50..51 positioned -79889 38 121 if entity @n[distance=..14,tag=AzrielMob_skeleton_sword] run scoreboard players set stage_main_thread AzrTimerStack 50
 
 execute if score stage_main_thread AzrTimerStack matches 55 positioned -79889 38 121 run function skyblock:azr/assets/mobs_new/zombie_villager_armor
 execute if score stage_main_thread AzrTimerStack matches 59 positioned -79889 38 121 run function skyblock:azr/assets/mobs_new/skeleton_sword
@@ -40,7 +40,7 @@ execute if score stage_main_thread AzrTimerStack matches 61 positioned -79889 38
 execute if score stage_main_thread AzrTimerStack matches 71..74 positioned -79889 38 121 run function skyblock:azr/assets/mobs_new/undead
 execute if score stage_main_thread AzrTimerStack matches 78 positioned -79889 38 121 run function skyblock:azr/assets/mobs_new/zombie_villager_armor
 
-execute if score stage_main_thread AzrTimerStack matches 80..81 positioned -79889 38 121 if entity @n[distance=..10,tag=AzrielMob_skeleton_sword] run scoreboard players set stage_main_thread AzrTimerStack 80
+execute if score stage_main_thread AzrTimerStack matches 80..81 positioned -79889 38 121 if entity @n[distance=..14,tag=AzrielMob_zombie_villager_armor] run scoreboard players set stage_main_thread AzrTimerStack 80
 
 execute if score stage_main_thread AzrTimerStack matches 82 run title @a[tag=azrShowDialog] actionbar {"text":"Wave Clear","color":"green"}
 execute if score stage_main_thread AzrTimerStack matches 82 run scoreboard players set wave Azr_system 16
@@ -75,7 +75,7 @@ execute if score stage_main_thread AzrTimerStack matches 178 positioned -79889 3
 
 execute if score stage_main_thread AzrTimerStack matches 170 positioned -79889 38 121 if entity @n[tag=AzrielMob_pillager,distance=..15] run tellraw @a[tag=azrShowDialog] [{"text":"特遣弩手：","color":"yellow","bold": true},{"bold": false,"text":"\n“人类！我们这里只能勉强稳住挑战波数的阻拦结界了，现在同一波内的敌人不会等着你杀完才出现，它们会拼命往外涌！做好准备，我们有一场硬仗要打！”","color":"white"}]
 
-execute if score stage_main_thread AzrTimerStack matches 187..188 positioned -79889 38 121 if entity @n[distance=..10,tag=AzrielMob_skeleton_sword] run scoreboard players set stage_main_thread AzrTimerStack 187
+execute if score stage_main_thread AzrTimerStack matches 187..188 positioned -79889 38 121 if entity @n[distance=..14,tag=AzrielMob_smoke_mother] run scoreboard players set stage_main_thread AzrTimerStack 187
 
 execute if score stage_main_thread AzrTimerStack matches 190 run title @a[tag=azrShowDialog] actionbar {"text":"Wave Clear","color":"green"}
 execute if score stage_main_thread AzrTimerStack matches 190 run scoreboard players set wave Azr_system 17
