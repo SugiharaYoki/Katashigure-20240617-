@@ -2,7 +2,7 @@
 
 
 
-
+scoreboard players remove @s AzrEvent_affected_quake_medium 1
 
 
 execute if score @s AzrEvent_affected_quake_medium matches 14 run playsound minecraft:entity.lightning_bolt.thunder ambient @s -78889 38 121 120 0.5
