@@ -8,7 +8,7 @@ execute if entity @s[scores={AzrSariel_Amulet_BackDodge_clock=17..20},predicate=
 execute if entity @s[scores={AzrSariel_Amulet_BackDodge_clock=15..16}] run scoreboard players set @s AzrSariel_Amulet_BackDodge_clock 0
 
 
-execute if entity @s[scores={AzrSariel_Amulet_BackDodge_clock=100}] run playsound minecraft:entity.wind_charge.wind_burst player @a ~ ~ ~ 0.5 2
+execute if entity @s[scores={AzrSariel_Amulet_BackDodge_clock=100},nbt={OnGround:0b}] run playsound minecraft:entity.wind_charge.wind_burst player @a ~ ~ ~ 0.5 2
 execute if entity @s[scores={AzrSariel_Amulet_BackDodge_clock=100}] positioned ^ ^1 ^0.3 run particle white_smoke ^0.8 ^0.3 ^ 0 0 0 0.05 1
 execute if entity @s[scores={AzrSariel_Amulet_BackDodge_clock=100}] positioned ^ ^1 ^0.3 run particle white_smoke ^0.8 ^-0.3 ^ 0 0 0 0.05 1
 execute if entity @s[scores={AzrSariel_Amulet_BackDodge_clock=100}] positioned ^ ^1 ^0.3 run particle white_smoke ^-0.8 ^0.3 ^ 0 0 0 0.05 1
