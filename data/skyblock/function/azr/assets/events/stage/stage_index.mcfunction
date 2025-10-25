@@ -10,6 +10,7 @@ execute if score stage_bonus_thread AzrTimerStack matches 181 run bossbar remove
 #
 #-79835 35 74
 execute if score stage_bonus_thread AzrTimerStack matches 2 positioned -79835 35 74 run scoreboard players set azr_bonus_stage_index AzrTimerStack 0
+execute if score stage_bonus_thread AzrTimerStack matches 2 positioned -79835 35 74 run scoreboard objectives add azr_bonus_stage_index minecraft.custom:minecraft.sprint_one_cm
 execute if score stage_bonus_thread AzrTimerStack matches 2 positioned -79835 35 74 run function skyblock:azr/assets/mobs_new/undead
 execute if score stage_bonus_thread AzrTimerStack matches 4 positioned -79835 35 74 run function skyblock:azr/assets/mobs_new/undead_greed
 execute if score stage_bonus_thread AzrTimerStack matches 8 positioned -79835 35 74 run function skyblock:azr/assets/mobs_new/undead
@@ -49,8 +50,8 @@ execute if score stage_bonus_thread AzrTimerStack matches 160 positioned -79835 
 
 execute if score stage_bonus_thread AzrTimerStack matches 178..179 positioned -79835 35 74 if entity @n[distance=..13,tag=AzrielMob_skeleton_sword] run scoreboard players set stage_bonus_thread AzrTimerStack 178
 
-execute if score stage_bonus_thread AzrTimerStack matches 2.. if score azr_bonus_stage_index AzrTimerStack matches ..-2 if entity @a[x=-79840,y=34,z=72,dx=15,dy=12,dz=17,tag=azrPlayer,predicate=skyblock:sprint] run scoreboard players set azr_bonus_stage_index AzrTimerStack 26
-execute if score stage_bonus_thread AzrTimerStack matches 2.. if score azr_bonus_stage_index AzrTimerStack matches 21.. unless entity @a[x=-79840,y=34,z=72,dx=15,dy=12,dz=17,tag=azrPlayer,predicate=skyblock:sprint] run scoreboard players set azr_bonus_stage_index AzrTimerStack 0
+execute if score stage_bonus_thread AzrTimerStack matches 2.. if score azr_bonus_stage_index AzrTimerStack matches ..-2 if entity @a[x=-79840,y=34,z=72,dx=15,dy=12,dz=17,tag=azrPlayer,scores={azr_bonus_stage_index=1..}] run scoreboard players set azr_bonus_stage_index AzrTimerStack 26
+execute if score stage_bonus_thread AzrTimerStack matches 2.. if score azr_bonus_stage_index AzrTimerStack matches 21.. unless entity @a[x=-79840,y=34,z=72,dx=15,dy=12,dz=17,tag=azrPlayer,scores={azr_bonus_stage_index=1..}] run scoreboard players set azr_bonus_stage_index AzrTimerStack 0
 
 execute if score stage_bonus_thread AzrTimerStack matches 2.. if score azr_bonus_stage_index AzrTimerStack matches -3.. run scoreboard players remove azr_bonus_stage_index AzrTimerStack 1
 execute if score azr_bonus_stage_index AzrTimerStack matches 25 positioned -79835 35 74 run playsound minecraft:entity.warden.roar hostile @a ~ ~ ~ 3 0.8
@@ -71,6 +72,8 @@ execute if score azr_bonus_stage_index AzrTimerStack matches 1..2 run scoreboard
 execute if score azr_bonus_stage_index AzrTimerStack matches -1..2 run bossbar set azr:progress_bar_bonus name "Stage Index"
 execute if score azr_bonus_stage_index AzrTimerStack matches -1..2 run bossbar set azr:progress_bar_bonus color yellow
 
+execute if score stage_bonus_thread AzrTimerStack matches 2.. as @a[tag=azrPlayer,predicate=!skyblock:forward,predicate=!skyblock:sprint] run scoreboard players set @s azr_bonus_stage_index 0
+execute if score stage_bonus_thread AzrTimerStack matches 2.. as @a[tag=azrPlayer,scores={azr_bonus_stage_index=1..}] run scoreboard players remove @s azr_bonus_stage_index 1
 
 
 execute if score stage_bonus_thread AzrTimerStack matches 181 run title @a[tag=azrShowDialog] actionbar {"text":"Extra Stage Clear","color":"green"}
@@ -84,4 +87,5 @@ execute if score stage_bonus_thread AzrTimerStack matches 180..181 run playsound
 execute if score stage_bonus_thread AzrTimerStack matches 180..181 run playsound ambient.soul_sand_valley.mood ambient @a[tag=azrShowDialog] -78000 100 0 1000
 execute if score stage_bonus_thread AzrTimerStack matches 181 run scoreboard players set stage_bonus Azr_system 0
 execute if score stage_bonus_thread AzrTimerStack matches 181 run scoreboard players set stage_bonus_thread AzrTimerStack 0
+execute if score stage_bonus_thread AzrTimerStack matches 181 run scoreboard objectives remove azr_bonus_stage_index
 
