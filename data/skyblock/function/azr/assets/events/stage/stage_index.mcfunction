@@ -50,7 +50,7 @@ execute if score stage_bonus_thread AzrTimerStack matches 160 positioned -79835 
 execute if score stage_bonus_thread AzrTimerStack matches 178..179 positioned -79835 35 74 if entity @n[distance=..13,tag=AzrielMob_skeleton_sword] run scoreboard players set stage_bonus_thread AzrTimerStack 178
 
 execute if score stage_bonus_thread AzrTimerStack matches 2.. if score azr_bonus_stage_index AzrTimerStack matches ..-2 if entity @a[x=-79840,y=34,z=72,dx=15,dy=12,dz=17,tag=azrPlayer,predicate=skyblock:sprint] run scoreboard players set azr_bonus_stage_index AzrTimerStack 7
-execute if score stage_bonus_thread AzrTimerStack matches 2.. if score azr_bonus_stage_index AzrTimerStack matches 4.. unless entity @a[x=-79840,y=34,z=72,dx=15,dy=12,dz=17,tag=azrPlayer,predicate=skyblock:sprint] run scoreboard players set azr_bonus_stage_index AzrTimerStack 0
+execute if score stage_bonus_thread AzrTimerStack matches 2.. if score azr_bonus_stage_index AzrTimerStack matches 1.. unless entity @a[x=-79840,y=34,z=72,dx=15,dy=12,dz=17,tag=azrPlayer,predicate=skyblock:sprint] run scoreboard players set azr_bonus_stage_index AzrTimerStack 0
 
 execute if score stage_bonus_thread AzrTimerStack matches 2.. if score azr_bonus_stage_index AzrTimerStack matches -3.. run scoreboard players remove azr_bonus_stage_index AzrTimerStack 1
 execute if score azr_bonus_stage_index AzrTimerStack matches 7 positioned -79835 35 74 run playsound minecraft:entity.warden.roar hostile @a ~ ~ ~ 3 0.8
