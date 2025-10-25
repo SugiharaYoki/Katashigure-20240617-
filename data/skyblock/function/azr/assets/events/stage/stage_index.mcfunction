@@ -14,7 +14,7 @@ execute if score stage_bonus_thread AzrTimerStack matches 2 positioned -79835 35
 execute if score stage_bonus_thread AzrTimerStack matches 4 positioned -79835 35 74 run function skyblock:azr/assets/mobs_new/undead_greed
 execute if score stage_bonus_thread AzrTimerStack matches 8 positioned -79835 35 74 run function skyblock:azr/assets/mobs_new/undead
 
-execute if score stage_bonus_thread AzrTimerStack matches 9..10 positioned -79835 35 74 if entity @n[distance=..13,tag=AzrielMob_undead_greed] run scoreboard players set stage_bonus_thread AzrTimerStack 29
+execute if score stage_bonus_thread AzrTimerStack matches 9..10 positioned -79835 35 74 if entity @n[distance=..13,tag=AzrielMob_undead_greed] run scoreboard players set stage_bonus_thread AzrTimerStack 9
 
 execute if score stage_bonus_thread AzrTimerStack matches 12 positioned -79835 35 74 run function skyblock:azr/assets/mobs_new/skeleton_melee
 execute if score stage_bonus_thread AzrTimerStack matches 14 positioned -79835 35 74 run function skyblock:azr/assets/mobs_new/skeleton_sword
@@ -61,8 +61,8 @@ execute if score azr_bonus_stage_index AzrTimerStack matches 3 positioned -79835
 execute if score azr_bonus_stage_index AzrTimerStack matches 3 positioned -79835 35 74 run function skyblock:azr/assets/mobs_new/undead_shadow
 
 execute if score azr_bonus_stage_index AzrTimerStack matches 1..2 run scoreboard players set azr_bonus_stage_index AzrTimerStack 2
-execute if score azr_bonus_stage_index AzrTimerStack matches -1 run bossbar set azr:progress_bar_bonus name "Stage Index"
-execute if score azr_bonus_stage_index AzrTimerStack matches -1 run bossbar set azr:progress_bar_bonus color yellow
+execute if score azr_bonus_stage_index AzrTimerStack matches -2 run bossbar set azr:progress_bar_bonus name "Stage Index"
+execute if score azr_bonus_stage_index AzrTimerStack matches -2 run bossbar set azr:progress_bar_bonus color yellow
 
 
 
