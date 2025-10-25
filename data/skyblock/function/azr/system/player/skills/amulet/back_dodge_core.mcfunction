@@ -12,14 +12,14 @@ execute if entity @s[scores={AzrSariel_Amulet_BackDodge_clock=100}] run playsoun
 execute if entity @s[scores={AzrSariel_Amulet_BackDodge_clock=100}] run attribute @s movement_speed modifier add azr_amulet:backdodge_01 0.4 add_value
 execute if entity @s[scores={AzrSariel_Amulet_BackDodge_clock=100}] run attribute @s armor modifier add azr_amulet:sprintdouble_01 20 add_value
 
-execute if entity @s[scores={AzrSariel_Amulet_BackDodge_clock=96..99},predicate=!skyblock:backward] run scoreboard players set @s AzrSariel_Amulet_BackDodge_clock 95
+execute if entity @s[scores={AzrSariel_Amulet_BackDodge_clock=97..99},predicate=!skyblock:backward] run scoreboard players set @s AzrSariel_Amulet_BackDodge_clock 96
 
-execute if entity @s[scores={AzrSariel_Amulet_BackDodge_clock=95}] run attribute @s movement_speed modifier remove azr_amulet:backdodge_01
-execute if entity @s[scores={AzrSariel_Amulet_BackDodge_clock=95}] run attribute @s armor modifier remove azr_amulet:sprintdouble_01
+execute if entity @s[scores={AzrSariel_Amulet_BackDodge_clock=96}] run attribute @s movement_speed modifier remove azr_amulet:backdodge_01
+execute if entity @s[scores={AzrSariel_Amulet_BackDodge_clock=96}] run attribute @s armor modifier remove azr_amulet:sprintdouble_01
 
-execute if entity @s[scores={AzrSariel_Amulet_BackDodge_clock=95}] run stopsound @s player minecraft:item.elytra.flying
+execute if entity @s[scores={AzrSariel_Amulet_BackDodge_clock=96}] run stopsound @s player minecraft:item.elytra.flying
 
-execute if entity @s[scores={AzrSariel_Amulet_BackDodge_clock=95}] run scoreboard players set @s AzrSariel_Amulet_BackDodge_clock 0
+execute if entity @s[scores={AzrSariel_Amulet_BackDodge_clock=96}] run scoreboard players set @s AzrSariel_Amulet_BackDodge_clock 0
 
 
 
