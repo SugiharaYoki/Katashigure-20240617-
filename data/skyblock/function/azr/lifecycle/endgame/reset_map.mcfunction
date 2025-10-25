@@ -368,13 +368,19 @@ setblock -79864 39 74 minecraft:potted_flowering_azalea_bush
 setblock -79864 39 78 minecraft:potted_flowering_azalea_bush
 setblock -79858 39 74 minecraft:potted_flowering_azalea_bush
 setblock -79858 39 78 minecraft:potted_flowering_azalea_bush
+setblock -79844 36 74 minecraft:potted_flowering_azalea_bush
+setblock -79844 36 78 minecraft:potted_flowering_azalea_bush
 
   #小读书室
 setblock -79875 42 59 chest[facing=north]
 item replace block -79875 42 59 container.12 with emerald 2
 item replace block -79875 42 59 container.14 with emerald 2
 
-
+#立体读书室
+  #跳跃宝箱
+setblock -79845 43 77 chest[facing=south]
+item replace block -79845 43 77 container.12 with flint 1
+item replace block -79845 43 77 container.14 with flint 1
 
 
 
