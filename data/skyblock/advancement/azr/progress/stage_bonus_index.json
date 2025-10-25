@@ -1,17 +1,17 @@
 {
     "display": {
         "title": {
-            "text": "智述禁馆 - 侧翼读书室",
+            "text": "智述禁馆 - 立体图书室",
             "color": "green",
             "bold": true,
             "italic": false
         },
         "description": {
-            "text": "STAGE VESTIGE",
+            "text": "STAGE INDEX",
             "color": "light_purple"
         },
         "icon": {
-            "id": "minecraft:light_gray_glazed_terracotta"
+            "id": "minecraft:cyan_glazed_terracotta"
         },
         "frame": "task",
         "show_toast": false,
