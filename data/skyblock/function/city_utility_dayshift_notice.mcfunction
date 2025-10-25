@@ -2,8 +2,7 @@ execute unless score @s dailylogin1 matches -99999.. run scoreboard players set 
 execute unless score @s dailylogin2 matches -99999.. run scoreboard players set @s dailylogin2 0
 
 tellraw @s {"text":"今日份登录成功！","color":"white","bold":true}
-tellraw @s {"text":"空岛战争新地图《炙魇的黑城》、《碎晦坍殒的地灵脉》已正式上线！","color":"white"}
-tellraw @s {"text":"『厄珀娅的悲歌』第三章 制作中！","color":"white"}
+tellraw @s {"text":"PVP《棋盘战争》已正式回归！\n花园系列第2作『厄珀娅的悲歌』已完结，真结局等你来寻找！\n『亚兹列尔的中庭花园』重置进度：已推进至第7关；推出全新旁支区域“传热根系”；第8关与图书馆制作中","color":"white"}
 tellraw @s {"text":"你获得了新的占卜机会","color":"gold"}
 execute unless score @s dailylogin_c1 matches -99999.. run scoreboard players set @s dailylogin_c1 0
 execute unless score @s dailylogin_c2 matches -99999.. run scoreboard players set @s dailylogin_c2 0
