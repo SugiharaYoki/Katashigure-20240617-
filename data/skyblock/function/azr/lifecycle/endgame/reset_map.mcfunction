@@ -376,7 +376,8 @@ setblock -79875 42 59 chest[facing=north]
 item replace block -79875 42 59 container.12 with emerald 2
 item replace block -79875 42 59 container.14 with emerald 2
 
-#立体读书室
+#stage Index 立体读书室
+setblock -79832 35 88 minecraft:birch_button[face=floor,facing=south]
   #跳跃宝箱
 setblock -79845 43 77 chest[facing=south]
 item replace block -79845 43 77 container.12 with flint 1

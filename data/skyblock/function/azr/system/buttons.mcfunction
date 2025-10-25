@@ -47,6 +47,8 @@ execute if block -79917 38 191 minecraft:birch_button[powered=true] run setblock
 execute if block -79960 39 193 minecraft:birch_button[powered=true] if score stage_bonus Azr_system matches ..0 run function skyblock:azr/assets/events/stage/stage_flux_prep
 #stage kinetic
 execute if block -79965 31 167 minecraft:birch_button[powered=true] if score stage_bonus Azr_system matches ..0 run function skyblock:azr/assets/events/stage/stage_kinetic_prep
+#stage index
+execute if block -79832 35 88 minecraft:birch_button[powered=true] if score stage_bonus Azr_system matches ..0 run function skyblock:azr/assets/events/stage/stage_index_prep
 
 
 

@@ -133,7 +133,7 @@ tellraw @s [{"text":"\n "},{"text":"假定回溯  \n","color":"#308aff","bold": 
 {"selector":"@n[tag=AzrRamielExStage_displaymarkerg]","color":"#70a0df","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432307"},"hoverEvent":{"action":"show_text","contents":{"text":"???","color":"white"}}},\
 {"text":"\n "},\
 {"selector":"@n[tag=AzrRamielExStage_displaymarkerh]","color":"#70a0df","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432308"},"hoverEvent":{"action":"show_text","contents":{"text":"???","color":"white"}}},\
-{"selector":"@n[tag=AzrRamielExStage_displaymarkeri]","color":"#70a0df","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432309"},"hoverEvent":{"action":"show_text","contents":{"text":"???","color":"white"}}},\
+{"selector":"@n[tag=AzrRamielExStage_displaymarkeri]","color":"#70a0df","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432309"},"hoverEvent":{"action":"show_text","contents":{"text":"Index - 斥跃石板\n蹲下跳得更高、史莱姆块助跳","color":"white"}}},\
 {"selector":"@n[tag=AzrRamielExStage_displaymarkerj]","color":"#70a0df","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432310"},"hoverEvent":{"action":"show_text","contents":{"text":"???","color":"white"}}},\
 {"selector":"@n[tag=AzrRamielExStage_displaymarkerk]","color":"#70a0df","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432311"},"hoverEvent":{"action":"show_text","contents":{"text":"Kinetic - 悬风石板\n长按跳跃减缓下落","color":"white"}}},\
 {"selector":"@n[tag=AzrRamielExStage_displaymarkerl]","color":"#70a0df","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432312"},"hoverEvent":{"action":"show_text","contents":{"text":"???","color":"white"}}},\
@@ -150,7 +150,7 @@ tellraw @s [{"text":"\n "},{"text":"假定回溯  \n","color":"#308aff","bold": 
 {"selector":"@n[tag=AzrRamielExStage_displaymarkeru]","color":"#70a0df","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432321"},"hoverEvent":{"action":"show_text","contents":{"text":"???","color":"white"}}},\
 {"selector":"@n[tag=AzrRamielExStage_displaymarkerv]","color":"#70a0df","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432322"},"hoverEvent":{"action":"show_text","contents":{"text":"Vestige - 岚切卷宗\n斧攻击自动延时二次攻击、左右移动时加强剑的范围伤害","color":"white"}}},\
 {"selector":"@n[tag=AzrRamielExStage_displaymarkerw]","color":"#70a0df","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432323"},"hoverEvent":{"action":"show_text","contents":{"text":"???","color":"white"}}},\
-{"selector":"@n[tag=AzrRamielExStage_displaymarkerx]","color":"#70a0df","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432324"},"hoverEvent":{"action":"show_text","contents":{"text":"Xenia - 斥跃石板\n史莱姆块增加跳跃高度、蹲下跳得更高","color":"white"}}},\
+{"selector":"@n[tag=AzrRamielExStage_displaymarkerx]","color":"#70a0df","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432324"},"hoverEvent":{"action":"show_text","contents":{"text":"Xenia？","color":"white"}}},\
 {"selector":"@n[tag=AzrRamielExStage_displaymarkery]","color":"#70a0df","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432325"},"hoverEvent":{"action":"show_text","contents":{"text":"???","color":"white"}}},\
 {"selector":"@n[tag=AzrRamielExStage_displaymarkerz]","color":"#70a0df","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432326"},"hoverEvent":{"action":"show_text","contents":{"text":"???","color":"white"}}}]
 
