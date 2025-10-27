@@ -11,7 +11,7 @@ execute unless score @s AzrPlayer_CurrentArea matches 2 if entity @s[x=-79934,y=
                                                 {area_id:2,title:"采 光 礼 堂",color_code:"#9ef4ff"}
 execute unless score @s AzrPlayer_CurrentArea matches 2 if entity @s[x=-79877,y=37,z=75,dx=3,dy=4,dz=6] run function skyblock:azr/assets/events/stage/area_title_show \
                                                 {area_id:2,title:"采 光 礼 堂",color_code:"#9ef4ff"}
-execute unless score @s AzrPlayer_CurrentArea matches 2 if entity @s[x=-79898,y=38,z=88,dx=3,dy=5,dz=10] run function skyblock:azr/assets/events/stage/area_title_show \
+execute unless score @s AzrPlayer_CurrentArea matches 2 if entity @s[x=-79898,y=38,z=88,dx=2,dy=5,dz=10] run function skyblock:azr/assets/events/stage/area_title_show \
                                                 {area_id:2,title:"采 光 礼 堂",color_code:"#9ef4ff"}
 
 execute unless score @s AzrPlayer_CurrentArea matches 3 if entity @s[x=-79934,y=37,z=167,dx=10,dy=5,dz=10] run function skyblock:azr/assets/events/stage/area_title_show \
