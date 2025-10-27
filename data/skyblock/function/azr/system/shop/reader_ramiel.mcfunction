@@ -103,7 +103,7 @@ execute if entity @s[tag=AZS_BoS05] if items entity @s inventory.* *[custom_data
 execute if entity @s[tag=AZS_BoS06] if items entity @s inventory.* *[custom_data~{azr_amulet_fire_lit:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerf] CustomName set value '" √ "'
 execute if entity @s[tag=AZS_BoS07] if items entity @s inventory.* *[custom_data~{azr_amulet_null:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerg] CustomName set value '" √ "'
 execute if entity @s[tag=AZS_BoS08] if items entity @s inventory.* *[custom_data~{azr_amulet_null:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerh] CustomName set value '" √ "'
-execute if entity @s[tag=AZS_BoS09] if items entity @s inventory.* *[custom_data~{azr_amulet_null:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkeri] CustomName set value '" √ "'
+execute if entity @s[tag=AZS_BoS09] if items entity @s inventory.* *[custom_data~{azr_amulet_jump_boost:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkeri] CustomName set value '" √ "'
 execute if entity @s[tag=AZS_BoS10] if items entity @s inventory.* *[custom_data~{azr_amulet_null:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerj] CustomName set value '" √ "'
 execute if entity @s[tag=AZS_BoS11] if items entity @s inventory.* *[custom_data~{azr_amulet_stay_float:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerk] CustomName set value '" √ "'
 execute if entity @s[tag=AZS_BoS12] if items entity @s inventory.* *[custom_data~{azr_amulet_null:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerl] CustomName set value '" √ "'
