@@ -15,16 +15,16 @@ execute if score @s AzrEvent_affected_quake_medium matches 14 at @s run playsoun
 
 execute if score @s AzrEvent_affected_quake_medium matches 15 at @s run tp @s ~ ~0.1 ~
 execute if score @s AzrEvent_affected_quake_medium matches 14 at @s run tp @s ~ ~0.1 ~
-execute if score @s AzrEvent_affected_quake_medium matches 13 at @s run tp @s ~ ~-0.1 ~
+execute if score @s AzrEvent_affected_quake_medium matches 13 at @s run tp @s ~ ~0.1 ~
 execute if score @s AzrEvent_affected_quake_medium matches 12 at @s run tp @s ~ ~0.1 ~
-execute if score @s AzrEvent_affected_quake_medium matches 11 at @s run tp @s ~ ~-0.1 ~
+execute if score @s AzrEvent_affected_quake_medium matches 11 at @s run tp @s ~ ~0.1 ~
 execute if score @s AzrEvent_affected_quake_medium matches 10 at @s run tp @s ~ ~0.1 ~
-execute if score @s AzrEvent_affected_quake_medium matches 9 at @s run tp @s ~ ~-0.1 ~
+execute if score @s AzrEvent_affected_quake_medium matches 9 at @s run tp @s ~ ~0.1 ~
 execute if score @s AzrEvent_affected_quake_medium matches 8 at @s run tp @s ~ ~0.1 ~
 execute if score @s AzrEvent_affected_quake_medium matches 7 at @s run tp @s ~ ~0.1 ~
 execute if score @s AzrEvent_affected_quake_medium matches 6 at @s run tp @s ~ ~0.1 ~
 execute if score @s AzrEvent_affected_quake_medium matches 5 at @s run tp @s ~ ~0.1 ~
-execute if score @s AzrEvent_affected_quake_medium matches 4 at @s run tp @s ~ ~-0.1 ~
+execute if score @s AzrEvent_affected_quake_medium matches 4 at @s run tp @s ~ ~0.1 ~
 execute if score @s AzrEvent_affected_quake_medium matches 3 at @s run tp @s ~ ~0.1 ~
 execute if score @s AzrEvent_affected_quake_medium matches 2 at @s run tp @s ~ ~0.1 ~
 execute if score @s AzrEvent_affected_quake_medium matches 1 run tp @s ~ ~0.1 ~
