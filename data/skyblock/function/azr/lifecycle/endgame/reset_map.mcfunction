@@ -659,7 +659,7 @@ item replace block -79903 40 -104 container.11 with emerald 2
 item replace block -79903 40 -104 container.13 with minecraft:beef 2
 item replace block -79903 40 -104 container.15 with emerald 2
 #stage11 牢房小道具
-item replace block -79929 47 -110 container.13 with tripwire_hook[custom_name='{"text":"纸张图案的钥匙","color":"blue","italic":false}',custom_data={key_paper:1b}] 1
+item replace block -79929 47 -110 container.13 with tripwire_hook[custom_name='{"text":"钢笔图案的钥匙","color":"blue","italic":false}',custom_data={key_paper:1b}] 1
 #stage11 牢房小道具
 item replace block -79897 40 -115 container.12 with emerald 3
 item replace block -79897 40 -115 container.14 with minecraft:bone 1

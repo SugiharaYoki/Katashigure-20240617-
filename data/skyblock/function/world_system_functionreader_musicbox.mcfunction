@@ -17,7 +17,7 @@ execute as @a[tag=!gaming,scores={MultiMenu=101765}] at @s run playsound minecra
 execute as @a[tag=!gaming,scores={MultiMenu=101766}] at @s run playsound minecraft:app1.blossombutterflyoflamp music @s ~ ~ ~ 1.01
 execute as @a[tag=!gaming,scores={MultiMenu=101767}] at @s run playsound minecraft:app1.funkylife music @s ~ ~ ~ 1.01
 execute as @a[tag=!gaming,scores={MultiMenu=101768}] at @s run playsound minecraft:app1.hallofmirror music @s ~ ~ ~ 1.01
-execute as @a[tag=!gaming,scores={MultiMenu=101769}] at @s run playsound minecraft:app1.speirapyrgos music @s ~ ~ ~ 1.01
+#execute as @a[tag=!gaming,scores={MultiMenu=101769}] at @s run playsound minecraft:app1.speirapyrgos music @s ~ ~ ~ 1.01
 execute as @a[tag=!gaming,scores={MultiMenu=101770}] at @s run playsound minecraft:psyborgcocoon music @s ~ ~ ~ 1.01
 execute as @a[tag=!gaming,scores={MultiMenu=101771}] at @s run playsound minecraft:fuse music @s ~ ~ ~ 1.01
 execute as @a[tag=!gaming,scores={MultiMenu=101772}] at @s run playsound minecraft:trideca music @s ~ ~ ~ 1.01

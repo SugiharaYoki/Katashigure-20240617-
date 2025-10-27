@@ -1,4 +1,4 @@
-#execute as @a[tag=SEAPT] at @s run playsound minecraft:app1.speirapyrgos music @a[tag=SEAPT] ~ ~ ~ 1 1
+
 
 function skyblock:sea/generate/stage_jump/to_ch4
 
