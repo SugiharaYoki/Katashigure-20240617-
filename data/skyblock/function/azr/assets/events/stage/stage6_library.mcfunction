@@ -7,7 +7,7 @@ execute positioned -79862 42 149 unless entity @n[tag=AzrielMarker_encounter,dis
 execute positioned -79862 42 149 as @n[tag=AzrielMarker_encounter,distance=0..0.5] run scoreboard players add @s rng1 1
 execute positioned -79862 42 149 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79865 43 151 run function skyblock:azr/assets/mobs_new/pillager
 execute positioned -79862 42 149 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79871 43 149 run function skyblock:azr/assets/mobs_new/axe
-execute positioned -79862 42 149 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79865 43 151 run tellraw @a[tag=azrShowDialog] [{"text":"卫兵：","color":"yellow","bold": true},{"bold": false,"text":"\n“反正我这里已经反馈给默尔森大人了。”","color":"white"}]
+execute positioned -79862 42 149 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79865 43 151 run tellraw @a[tag=azrShowDialog] [{"text":"卫兵：","color":"yellow","bold": true},{"bold": false,"text":"\n“总之我这里已经反馈给默尔森大人了。”","color":"white"}]
 execute positioned -79862 42 149 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2..80}] positioned -79865 43 151 if entity @a[tag=azrPlayer,distance=..5] run scoreboard players set @s rng1 100
 execute positioned -79862 42 149 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2..80}] positioned -79876 43 147 if entity @a[tag=azrPlayer,distance=..4.5] run scoreboard players set @s rng1 100
 
