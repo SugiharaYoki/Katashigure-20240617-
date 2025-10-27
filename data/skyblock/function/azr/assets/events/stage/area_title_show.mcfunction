@@ -1,4 +1,4 @@
-title @s times 0s 2s 1s
+title @s times 0s 30t 12t
 $title @s title {"text": "$(title)","color": "$(color_code)","bold": true}
 $scoreboard players set @s AzrPlayer_CurrentArea $(area_id)
 
