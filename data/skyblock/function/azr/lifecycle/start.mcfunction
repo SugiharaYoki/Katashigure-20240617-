@@ -143,7 +143,6 @@ execute as @a[x=-79936.0,y=38.15,z=-14.0,distance=10..1000] run tp @s -79936.0 3
 
 #地图更改a
 #开局大门
-fill -79948 38 -13 -79948 42 -16 minecraft:purple_stained_glass
 fill -79933 38 -15 -79933 40 -14 minecraft:air destroy
 setblock -79937 39 -12 air
 execute if entity @a[tag=azrPlayer,tag=AZS_BoS02] run fill -79949 41 54 -79949 38 57 minecraft:air

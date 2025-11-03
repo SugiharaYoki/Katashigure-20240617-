@@ -583,7 +583,6 @@ setblock -79925 47 -113 minecraft:stone_button[facing=north,face=floor]
 #______________________________________________________________#
 #boss4
 fill -79519 42 -321 -79553 42 -355 air replace fire
-fill -79948 38 -13 -79948 42 -16 air
 fill -79928 38 34 -79928 38 35 quartz_pillar
 fill -79928 39 34 -79928 39 35 quartz_bricks
 fill -79906 40 27 -79906 38 29 minecraft:purple_stained_glass
