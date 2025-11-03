@@ -91,7 +91,7 @@ execute at @n[tag=id_data_reading,type=marker] run item replace block ~ ~ ~ cont
 
 function skyblock:city/id/read_finish
 
-function skyblock:api_quit_any_game
+#function skyblock:api_quit_any_game
 
 
 
