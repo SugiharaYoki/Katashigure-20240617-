@@ -11,6 +11,7 @@ execute if entity @a[tag=azrPlayer] run scoreboard players set stage_main_thread
 execute if entity @a[tag=azrPlayer] run scoreboard players set tick_main_thread AzrTimerStack 0
 
 execute if entity @a[tag=azrPlayer] run kill @e[tag=AzrielMob,x=-79944,y=0,z=75,dx=-26,dy=55,dz=26]
+execute if entity @a[tag=azrPlayer] run kill @e[tag=AzrielMob,x=-79932,y=37,z=55,dx=4,dy=20,dz=30]
 
 #碎灯走廊
 setblock -79928 39 56 sea_lantern
