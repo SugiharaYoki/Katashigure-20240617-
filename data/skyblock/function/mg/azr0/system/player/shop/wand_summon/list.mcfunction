@@ -2,8 +2,8 @@
 $execute store result score @s rng9 run random value $(min)..$(max)
 
 
-execute if items entity @s player.cursor brick[custom_data={"azr0shop":true}] run scoreboard players remove @s Azr_emerald 100
-execute if items entity @s player.cursor copper_ingot[custom_data={"azr0shop":true}] run scoreboard players remove @s Azr_emerald 500
+execute if items entity @s player.cursor brick[custom_data={"azr0shop":true}] run scoreboard players remove @s Azr0_emerald 100
+execute if items entity @s player.cursor copper_ingot[custom_data={"azr0shop":true}] run scoreboard players remove @s Azr0_emerald 500
 execute if items entity @s player.cursor resin_brick[custom_data={"azr0shop":true}] run scoreboard players remove @s Azr_diamond 1
 
 clear @s *[custom_data={"azr0shop":true}]

@@ -411,7 +411,7 @@ tellraw @s [{"text":" ","color":"light_purple"},\
 
 
 tellraw @s {"text":"   "}
-tellraw @s [{"text":"剩余绿宝石：","bold":true,"color":"green"},{"bold":false,"score":{"name":"@s","objective":"Azr_emerald"},"color":"green"}]
+tellraw @s [{"text":"剩余绿宝石：","bold":true,"color":"green"},{"bold":false,"score":{"name":"@s","objective":"Azr0_emerald"},"color":"green"}]
 
 kill @e[tag=AzrSariel_displaymarker,type=marker]
 scoreboard players set @s Azr_Shop 0

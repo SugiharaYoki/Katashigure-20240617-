@@ -9,4 +9,4 @@ scoreboard players operation @s[scores={Azr0_UPG_OTSD_emerald_wave=3}] rng1 *= 1
 scoreboard players operation @s[scores={Azr0_UPG_OTSD_emerald_wave=3}] rng1 *= 2 constant
 scoreboard players operation @s[scores={Azr0_UPG_OTSD_emerald_wave=1..}] rng1 /= 10 constant
 
-scoreboard players operation @s Azr_emerald += @s rng1
+scoreboard players operation @s Azr0_emerald += @s rng1

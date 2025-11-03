@@ -9,10 +9,6 @@ execute if score @s SeGa_StandLastBH matches 22.. unless items entity @s contain
 
 
 
-#scoreboard players add @s[scores={Azr_skillPoints=3..}] Azr_emerald 5
-#scoreboard players add @s[scores={Azr_skillPoints=6..}] Azr_emerald 5
-
-
 
 
 

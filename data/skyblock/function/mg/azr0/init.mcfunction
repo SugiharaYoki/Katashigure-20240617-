@@ -48,7 +48,7 @@ team modify MGAZR0 seeFriendlyInvisibles true
 #9：全局计时器
 #10：外部计时器
 scoreboard objectives add Azr_Shop trigger
-scoreboard objectives add Azr_emerald dummy
+scoreboard objectives add Azr0_emerald dummy
 scoreboard objectives add Azr_diamond dummy
 scoreboard objectives add Azr_bread_recharge dummy
 scoreboard objectives add Azr_bread_recharge_level dummy
@@ -216,7 +216,7 @@ execute at @n[tag=mg_azr0,type=marker] run kill @e[type=item,distance=..120]
 
 execute if entity @a[tag=azr0_new_game_15,tag=MG_AZR0PT] run scoreboard players set MG_AZR0_Timer rng2 16
 execute if entity @a[tag=azr0_new_game_15,tag=MG_AZR0PT] run scoreboard players set MG_AZR0_Timer rng7 80
-execute if entity @a[tag=azr0_new_game_15,tag=MG_AZR0PT] run scoreboard players add @a[tag=MG_AZR0PT] Azr_emerald 450
+execute if entity @a[tag=azr0_new_game_15,tag=MG_AZR0PT] run scoreboard players add @a[tag=MG_AZR0PT] Azr0_emerald 450
 execute if entity @a[tag=azr0_new_game_15,tag=MG_AZR0PT] run scoreboard players add @a[tag=MG_AZR0PT] Azr_diamond 2
 execute if entity @a[tag=azr0_new_game_15,tag=MG_AZR0PT] run scoreboard players add @a[tag=MG_AZR0PT] Azr0_SkillPoint 3
 execute if entity @a[tag=azr0_new_game_15,tag=MG_AZR0PT] run scoreboard players add @a[tag=MG_AZR0PT] Azr0_arrow 20

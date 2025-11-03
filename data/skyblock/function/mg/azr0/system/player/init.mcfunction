@@ -7,7 +7,7 @@ execute as @s at @s run attribute @s max_health modifier add mg_azr0:init_maxhp 
 gamemode adventure @s
 effect give @s[tag=azr0_new_game] regeneration 3 19 true
 effect give @s[tag=azr0_new_game] saturation 3 19 true
-scoreboard players set @s[tag=azr0_new_game] Azr_emerald 0
+scoreboard players set @s[tag=azr0_new_game] Azr0_emerald 0
 scoreboard players set @s[tag=azr0_new_game] Azr_diamond 0
 scoreboard players set @s[tag=azr0_new_game] Azr_bread_recharge 0
 scoreboard players set @s[tag=azr0_new_game] Azr_bread_recharge_level 0

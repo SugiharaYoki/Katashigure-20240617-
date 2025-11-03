@@ -38,8 +38,6 @@ execute if score wave Azr_system matches 52..130 run tellraw @s [{"text":"   "},
 
 execute if entity @s[tag=AZR_SEAawakened] run tellraw @s [{"text":"   "},{"text":"〈雷米尔的指引〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 3"}}]
 #print last line
-#tellraw @s [{"text":"  绿宝石余额：  ","color":"yellow"},{"score":{"name":"@s","objective":"Azr_emerald"}}]
-#execute if entity @s[scores={Azr_wave=10..}] run tellraw @s [{"text":"  绿宝石余额：  ","color":"yellow"},{"score":{"name":"@s","objective":"Azr_emerald"}},{"text":"   沙利叶之星：  ","color":"yellow"},{"score":{"name":"@s","objective":"Azr_sarielStar"}}]
 tellraw @s {"text":"   "}
 
 tag @s add azrShopOnUse

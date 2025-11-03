@@ -1,15 +1,15 @@
-execute if entity @s[scores={Azr0_UPG_armor=0,Azr_emerald=10..}] run tag @s add AZR0SHOP_SUCCESS
-execute if entity @s[scores={Azr0_UPG_armor=1,Azr_emerald=30..}] run tag @s add AZR0SHOP_SUCCESS
-execute if entity @s[scores={Azr0_UPG_armor=2,Azr_emerald=70..}] run tag @s add AZR0SHOP_SUCCESS
+execute if entity @s[scores={Azr0_UPG_armor=0,Azr0_emerald=10..}] run tag @s add AZR0SHOP_SUCCESS
+execute if entity @s[scores={Azr0_UPG_armor=1,Azr0_emerald=30..}] run tag @s add AZR0SHOP_SUCCESS
+execute if entity @s[scores={Azr0_UPG_armor=2,Azr0_emerald=70..}] run tag @s add AZR0SHOP_SUCCESS
 execute if entity @s[scores={Azr0_UPG_armor=3,Azr_diamond=3..}] run tag @s add AZR0SHOP_SUCCESS
 execute if entity @s[scores={Azr0_UPG_armor=4,Azr_diamond=8..}] run tag @s add AZR0SHOP_SUCCESS
 execute if entity @s[scores={Azr0_UPG_armor=5,Azr_diamond=20..}] run tag @s add AZR0SHOP_SUCCESS
 execute if entity @s[scores={Azr0_UPG_armor=6,Azr_diamond=20..}] run tag @s add AZR0SHOP_SUCCESS
 execute if entity @s[scores={Azr0_UPG_armor=7,Azr_diamond=20..}] run tag @s add AZR0SHOP_SUCCESS
 execute if entity @s[scores={Azr0_UPG_armor=8,Azr_diamond=20..}] run tag @s add AZR0SHOP_SUCCESS
-execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_armor=0},tag=!azr0_load_game] run scoreboard players remove @s Azr_emerald 10
-execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_armor=1},tag=!azr0_load_game] run scoreboard players remove @s Azr_emerald 30
-execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_armor=2},tag=!azr0_load_game] run scoreboard players remove @s Azr_emerald 70
+execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_armor=0},tag=!azr0_load_game] run scoreboard players remove @s Azr0_emerald 10
+execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_armor=1},tag=!azr0_load_game] run scoreboard players remove @s Azr0_emerald 30
+execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_armor=2},tag=!azr0_load_game] run scoreboard players remove @s Azr0_emerald 70
 execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_armor=3},tag=!azr0_load_game] run scoreboard players remove @s Azr_diamond 3
 execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_armor=4},tag=!azr0_load_game] run scoreboard players remove @s Azr_diamond 8
 execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_armor=5},tag=!azr0_load_game] run scoreboard players remove @s Azr_diamond 20

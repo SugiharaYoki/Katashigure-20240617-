@@ -9,8 +9,8 @@ execute if items entity @s player.cursor iron_ingot[custom_data={"azr0shop":true
 execute if items entity @s player.cursor heavy_core[custom_data={"azr0shop":true}] run function skyblock:mg/azr0/system/player/shop/upg/axe_range
 
 execute if items entity @s player.cursor stone_hoe[custom_data={"azr0shop":true}] run function skyblock:mg/azr0/system/player/shop/upg/wand_level
-execute if items entity @s[scores={Azr_emerald=100..}] player.cursor brick[custom_data={"azr0shop":true}] run function skyblock:mg/azr0/system/player/shop/wand_summon/list {"min":50,"max":100}
-execute if items entity @s[scores={Azr_emerald=500..}] player.cursor copper_ingot[custom_data={"azr0shop":true}] run function skyblock:mg/azr0/system/player/shop/wand_summon/list {"min":30,"max":130}
+execute if items entity @s[scores={Azr0_emerald=100..}] player.cursor brick[custom_data={"azr0shop":true}] run function skyblock:mg/azr0/system/player/shop/wand_summon/list {"min":50,"max":100}
+execute if items entity @s[scores={Azr0_emerald=500..}] player.cursor copper_ingot[custom_data={"azr0shop":true}] run function skyblock:mg/azr0/system/player/shop/wand_summon/list {"min":30,"max":130}
 execute if items entity @s[scores={Azr_diamond=1..}] player.cursor resin_brick[custom_data={"azr0shop":true}] run function skyblock:mg/azr0/system/player/shop/wand_summon/list {"min":0,"max":200}
 
 execute if items entity @s player.cursor golden_apple[custom_data={"azr0shop":true}] run function skyblock:mg/azr0/system/player/shop/upg/hp
