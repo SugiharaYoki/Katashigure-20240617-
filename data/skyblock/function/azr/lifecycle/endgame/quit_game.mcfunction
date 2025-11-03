@@ -24,11 +24,10 @@ function skyblock:azr/system/player/refresh_bossbar
 #SHD奖励
 scoreboard players operation tempSHD Azr_system = wave Azr_system
 scoreboard players operation tempSHD Azr_system -= @s AzrJoinWave
-scoreboard players operation @s Perm_PersonSHD += tempSHD Azr_system
-tellraw @s [{"text":" 获得影之石：","color":"white"},{"score":{"name":"tempSHD","objective":"Azr_system"},"color":"yellow"}]
+#scoreboard players operation @s Perm_PersonSHD += tempSHD Azr_system
+#tellraw @s [{"text":" 获得影之石：","color":"white"},{"score":{"name":"tempSHD","objective":"Azr_system"},"color":"yellow"}]
 scoreboard players reset tempSHD Azr_system
 tellraw @s [{"text":" 现在持有的影之石：","color":"white"},{"score":{"name":"@s","objective":"Perm_PersonSHD"},"color":"yellow"}]
-tellraw @s [{"text":" 继承到下一局的瓜片：","color":"white"},{"score":{"name":"@s","objective":"AzrMelonCount"},"color":"yellow"}]
 #更新战绩
 execute unless score @s SeGa_StandLastBH matches -2147483648..2147483647 run scoreboard players set @s SeGa_StandLastBH 0
 execute if score @s SeGa_StandLastBH < wave Azr_system run scoreboard players operation @s SeGa_StandLastBH = wave Azr_system
@@ -38,6 +37,60 @@ execute if entity @s[x=-79900,y=40,z=0,distance=0..2200] run tp @s -79953.0 38.5
 
 
 tag @s remove azrAmulet_StayFloat_Jumping
+
+
+#背包保存
+execute as @s at @s run function skyblock:city/id/read
+execute as @n[tag=id_data_reading,type=marker] at @s run tp @s ~ ~ ~2
+
+item replace block ~1 ~ ~ container.0 from entity @s armor.head
+item replace block ~1 ~ ~ container.1 from entity @s armor.chest
+item replace block ~1 ~ ~ container.2 from entity @s armor.legs
+item replace block ~1 ~ ~ container.3 from entity @s armor.feet
+item replace block ~1 ~ ~ container.4 from entity @s weapon.mainhand
+item replace block ~1 ~ ~ container.5 from entity @s weapon.offhand
+
+item replace block ~1 ~ ~ container.9 from entity @s hotbar.0
+item replace block ~1 ~ ~ container.10 from entity @s hotbar.1
+item replace block ~1 ~ ~ container.11 from entity @s hotbar.2
+item replace block ~1 ~ ~ container.12 from entity @s hotbar.3
+item replace block ~1 ~ ~ container.13 from entity @s hotbar.4
+item replace block ~1 ~ ~ container.14 from entity @s hotbar.5
+item replace block ~1 ~ ~ container.15 from entity @s hotbar.6
+item replace block ~1 ~ ~ container.16 from entity @s hotbar.7
+item replace block ~1 ~ ~ container.17 from entity @s hotbar.8
+
+item replace block ~ ~ ~ container.0 from entity @s inventory.0
+item replace block ~ ~ ~ container.1 from entity @s inventory.1
+item replace block ~ ~ ~ container.2 from entity @s inventory.2
+item replace block ~ ~ ~ container.3 from entity @s inventory.3
+item replace block ~ ~ ~ container.4 from entity @s inventory.4
+item replace block ~ ~ ~ container.5 from entity @s inventory.5
+item replace block ~ ~ ~ container.6 from entity @s inventory.6
+item replace block ~ ~ ~ container.7 from entity @s inventory.7
+item replace block ~ ~ ~ container.8 from entity @s inventory.8
+item replace block ~ ~ ~ container.9 from entity @s inventory.9
+
+item replace block ~ ~ ~ container.10 from entity @s inventory.10
+item replace block ~ ~ ~ container.11 from entity @s inventory.11
+item replace block ~ ~ ~ container.12 from entity @s inventory.12
+item replace block ~ ~ ~ container.13 from entity @s inventory.13
+item replace block ~ ~ ~ container.14 from entity @s inventory.14
+item replace block ~ ~ ~ container.15 from entity @s inventory.15
+item replace block ~ ~ ~ container.16 from entity @s inventory.16
+item replace block ~ ~ ~ container.17 from entity @s inventory.17
+item replace block ~ ~ ~ container.18 from entity @s inventory.18
+item replace block ~ ~ ~ container.19 from entity @s inventory.19
+
+item replace block ~ ~ ~ container.20 from entity @s inventory.20
+item replace block ~ ~ ~ container.21 from entity @s inventory.21
+item replace block ~ ~ ~ container.22 from entity @s inventory.22
+item replace block ~ ~ ~ container.23 from entity @s inventory.23
+item replace block ~ ~ ~ container.24 from entity @s inventory.24
+item replace block ~ ~ ~ container.25 from entity @s inventory.25
+item replace block ~ ~ ~ container.26 from entity @s inventory.26
+
+function skyblock:city/id/read_finish
 
 
 

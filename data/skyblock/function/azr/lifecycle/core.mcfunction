@@ -20,7 +20,7 @@ execute as @e[type=zombie,tag=AZRknight,x=-79943,y=38,z=135,distance=..4000] at 
 execute if score stage_bonus Azr_system matches 1.. if score playerCount Azr_system matches 1.. run function skyblock:azr/lifecycle/stage_bonus
 execute if score playerCount Azr_system matches 1.. run function skyblock:azr/lifecycle/stage_normal
 
-
+execute if entity @a[tag=!azrRetrieved,tag=azrPlayer,tag=AZR_SEAawakened] if score stage Azr_system matches 1.. as @p[tag=!azrRetrieved,tag=azrPlayer,tag=AZR_SEAawakened] at @s run function skyblock:azr/lifecycle/jump_to/generic_retrieve
 
 #章节设置
 execute if score wave Azr_system matches 0..9 run scoreboard players set chapter Azr_system 1
