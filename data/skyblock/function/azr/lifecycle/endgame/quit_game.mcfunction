@@ -1,5 +1,4 @@
 #处理玩家数据
-function skyblock:api_quit_any_game
 tag @s remove azrPlayer
 tag @s remove azrShopOnUse
 tag @s remove azrShopRefresh
@@ -92,12 +91,11 @@ execute at @n[tag=id_data_reading,type=marker] run item replace block ~ ~ ~ cont
 
 function skyblock:city/id/read_finish
 
+function skyblock:api_quit_any_game
 
 
 
 #对接主城系统
-function skyblock:pvp/skywar/system/removeallmd
-function skyblock:pvp/skywar/system/removeallgaming
 
 #wtf execute unless entity @s[scores={SeGa_StandLastBH=-1..}] run scoreboard players set @s SeGa_StandLastBH 0
 
