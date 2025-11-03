@@ -31,9 +31,9 @@ execute unless score @s AzrPlayer_CurrentArea matches 4 if entity @s[x=-79894,y=
 
 #复活点
 execute unless score @s AzrPlayer_CurrentArea matches 1 positioned -79943 37 -8 if entity @s[distance=..4] run function skyblock:azr/assets/events/stage/area_title_show \
-                                                {area_id:1,title:"重生锚点：西庭外围",color_code:"#e9ffe0"}
+                                                {area_id:1,title:"重生锚点：西庭外围A",color_code:"#e9ffe0"}
 execute unless score @s AzrPlayer_CurrentArea matches 1 positioned -79931 33 28 if entity @s[distance=..4] run function skyblock:azr/assets/events/stage/area_title_show \
-                                                {area_id:1,title:"重生锚点：西庭外围",color_code:"#e9ffe0"}
+                                                {area_id:1,title:"重生锚点：西庭外围B",color_code:"#e9ffe0"}
 execute unless score @s AzrPlayer_CurrentArea matches 2 positioned -79935 32 130 if entity @s[distance=..4] run function skyblock:azr/assets/events/stage/area_title_show \
                                                 {area_id:2,title:"重生锚点：采光礼堂",color_code:"#9ef4ff"}
 execute unless score @s AzrPlayer_CurrentArea matches 3 positioned -79915 42 157 if entity @s[distance=..4] run function skyblock:azr/assets/events/stage/area_title_show \
