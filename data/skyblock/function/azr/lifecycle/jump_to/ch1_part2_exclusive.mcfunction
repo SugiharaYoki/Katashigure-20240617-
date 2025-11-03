@@ -6,3 +6,6 @@ execute as @a[tag=azrPlayer] at @s run function skyblock:azr/assets/items/weapon
 
 
 scoreboard players set Azr_Story_Introduction rng1 1023
+
+
+function skyblock:azr/system/player/updatespawnpoint_initialize {x:-79983.99,y:40.00,z:-14.00}

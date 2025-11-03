@@ -16,3 +16,5 @@ scoreboard players set @a[tag=azrPlayer] AzrJoinWave 10
 tp @a[tag=azrPlayer] -79930.5 38.15 93.0 facing -79930.5 38.15 94.0
 
 scoreboard players set @a[tag=azrPlayer] AzrPlayer_CurrentArea 1
+
+execute as @a[tag=azrPlayer] run function skyblock:azr/system/player/updatespawnpoint_initialize {x:-79931,y:33,z:-28}

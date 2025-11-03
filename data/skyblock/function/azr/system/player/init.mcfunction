@@ -1,6 +1,7 @@
 function skyblock:api_start_any_game
 
-function skyblock:azr/system/player/updatespawnpoint_initialize
+
+function skyblock:azr/system/player/updatespawnpoint_initialize {x:-79983.99,y:40.00,z:-14.00}
 
 #azr-player initialization
 #玩家初始化
