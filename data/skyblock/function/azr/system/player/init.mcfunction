@@ -1,5 +1,7 @@
 function skyblock:api_start_any_game
 
+function skyblock:azr/system/player/updatespawnpoint_initialize
+
 #azr-player initialization
 #玩家初始化
 gamemode adventure @s
