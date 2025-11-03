@@ -30,13 +30,13 @@ execute unless score @s AzrPlayer_CurrentArea matches 4 if entity @s[x=-79894,y=
 #
 
 #复活点
-execute unless score @s AzrPlayer_CurrentArea matches 1 if entity @s[x=-79943,y=37,z=-8,distance=..4] run function skyblock:azr/assets/events/stage/area_title_show \
+execute unless score @s AzrPlayer_CurrentArea matches 1 positioned -79943 37 -8 if entity @s[distance=..4] run function skyblock:azr/assets/events/stage/area_title_show \
                                                 {area_id:1,title:"西 庭 外 围",color_code:"#e9ffe0"}
-execute unless score @s AzrPlayer_CurrentArea matches 1 if entity @s[x=-79931,y=33,z=28,distance=..4] run function skyblock:azr/assets/events/stage/area_title_show \
+execute unless score @s AzrPlayer_CurrentArea matches 1 positioned -79931 33 28 if entity @s[distance=..4] run function skyblock:azr/assets/events/stage/area_title_show \
                                                 {area_id:1,title:"西 庭 外 围",color_code:"#e9ffe0"}
-execute unless score @s AzrPlayer_CurrentArea matches 2 if entity @s[x=-79935,y=32,z=130,distance=..4] run function skyblock:azr/assets/events/stage/area_title_show \
+execute unless score @s AzrPlayer_CurrentArea matches 2 positioned -79935 32 130 if entity @s[distance=..4] run function skyblock:azr/assets/events/stage/area_title_show \
                                                 {area_id:2,title:"采 光 礼 堂",color_code:"#9ef4ff"}
-execute unless score @s AzrPlayer_CurrentArea matches 3 if entity @s[x=-79915,y=42,z=157,distance=..4] run function skyblock:azr/assets/events/stage/area_title_show \
+execute unless score @s AzrPlayer_CurrentArea matches 3 positioned -79915 42 157 if entity @s[distance=..4] run function skyblock:azr/assets/events/stage/area_title_show \
                                                 {area_id:3,title:"传 热 根 系",color_code:"#5e4e80"}
 
 #tellraw @s {"color": "#9ef4ff"}
