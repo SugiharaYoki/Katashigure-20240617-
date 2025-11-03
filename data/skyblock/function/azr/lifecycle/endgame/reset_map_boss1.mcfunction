@@ -6,7 +6,7 @@ fill -79930 38 53 -79932 41 53 air{name: "clear anvil barrier"}
 
 execute if entity @a[tag=azrPlayer] run stopsound @a[tag=azrShowDialog] music
 
-#execute if entity @a[tag=azrPlayer] run scoreboard players set stage_main_thread AzrTimerStack 0
+execute if entity @a[tag=azrPlayer] run scoreboard players set stage Azr_system 9
 execute if entity @a[tag=azrPlayer] run scoreboard players set stage_main_thread AzrTimerStack 0
 execute if entity @a[tag=azrPlayer] run scoreboard players set tick_main_thread AzrTimerStack 0
 
