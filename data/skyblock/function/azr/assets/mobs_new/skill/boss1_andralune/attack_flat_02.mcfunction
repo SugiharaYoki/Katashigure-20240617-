@@ -43,14 +43,14 @@ execute if score @s rng8 matches 19 run data modify entity @n[type=arrow,tag=zan
 execute if score @s rng8 matches 19 positioned ^ ^ ^0.5 run summon arrow ~ ~1.5 ~ {Tags:["zanei_flat_02_arrow2B"],life:1100,damage:2.0}
 execute if score @s rng8 matches 19 run data modify entity @n[type=arrow,tag=zanei_flat_02_arrow2B] Motion set from entity @n[type=marker,tag=zanei_flat_02_marker2B] Pos
 
-execute if score @s rng8 matches 22 positioned ^ ^ ^0.5 run summon arrow ~ ~1.5 ~ {Tags:["zanei_flat_02_arrow3"],life:1100,damage:2.0}
+execute if score @s rng8 matches 22 positioned ^ ^ ^0.5 run summon arrow ~ ~1.5 ~ {Tags:["zanei_flat_02_arrow3"],life:1100,damage:3.0}
 execute if score @s rng8 matches 22 run data modify entity @n[type=arrow,tag=zanei_flat_02_arrow3] Motion set from entity @n[type=marker,tag=zanei_flat_02_marker3] Pos
-execute if score @s rng8 matches 22 positioned ^ ^ ^0.5 run summon arrow ~ ~1.5 ~ {Tags:["zanei_flat_02_arrow3B"],life:1100,damage:2.0}
+execute if score @s rng8 matches 22 positioned ^ ^ ^0.5 run summon arrow ~ ~1.5 ~ {Tags:["zanei_flat_02_arrow3B"],life:1100,damage:3.0}
 execute if score @s rng8 matches 22 run data modify entity @n[type=arrow,tag=zanei_flat_02_arrow3B] Motion set from entity @n[type=marker,tag=zanei_flat_02_marker3B] Pos
 
-execute if score @s rng8 matches 25 positioned ^ ^ ^0.5 run summon arrow ~ ~1.5 ~ {Tags:["zanei_flat_02_arrow4"],life:1100,damage:2.0}
+execute if score @s rng8 matches 25 positioned ^ ^ ^0.5 run summon arrow ~ ~1.5 ~ {Tags:["zanei_flat_02_arrow4"],life:1100,damage:3.0}
 execute if score @s rng8 matches 25 run data modify entity @n[type=arrow,tag=zanei_flat_02_arrow4] Motion set from entity @n[type=marker,tag=zanei_flat_02_marker4] Pos
-execute if score @s rng8 matches 25 positioned ^ ^ ^0.5 run summon arrow ~ ~1.5 ~ {Tags:["zanei_flat_02_arrow4B"],life:1100,damage:2.0}
+execute if score @s rng8 matches 25 positioned ^ ^ ^0.5 run summon arrow ~ ~1.5 ~ {Tags:["zanei_flat_02_arrow4B"],life:1100,damage:3.0}
 execute if score @s rng8 matches 25 run data modify entity @n[type=arrow,tag=zanei_flat_02_arrow4B] Motion set from entity @n[type=marker,tag=zanei_flat_02_marker4B] Pos
 
 execute if score @s rng8 matches 16 run kill @e[type=marker,tag=zanei_flat_02_marker]
