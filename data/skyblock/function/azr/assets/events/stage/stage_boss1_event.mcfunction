@@ -12,29 +12,29 @@ execute if score stage_main_thread AzrTimerStack matches 305..317 run playsound 
 execute if score stage_main_thread AzrTimerStack matches 305..317 run playsound minecraft:ambient.soul_sand_valley.additions master @a -79926 38 34 1000 1
 execute if score stage_main_thread AzrTimerStack matches 305..317 run playsound minecraft:ambient.soul_sand_valley.mood master @a -79926 38 34 1000 1
 
-execute if score stage_main_thread AzrTimerStack matches 307 if score #boss_seen_chapter1_andralune AzrTimerStack matches 0 run setblock -79928 39 56 air destroy
-execute if score stage_main_thread AzrTimerStack matches 307 if score #boss_seen_chapter1_andralune AzrTimerStack matches 0 run setblock -79934 39 56 air destroy
-execute if score stage_main_thread AzrTimerStack matches 308 if score #boss_seen_chapter1_andralune AzrTimerStack matches 0 run setblock -79928 39 58 air destroy
-execute if score stage_main_thread AzrTimerStack matches 308 if score #boss_seen_chapter1_andralune AzrTimerStack matches 0 run setblock -79934 39 58 air destroy
-execute if score stage_main_thread AzrTimerStack matches 309 if score #boss_seen_chapter1_andralune AzrTimerStack matches 0 run setblock -79928 39 60 air destroy
-execute if score stage_main_thread AzrTimerStack matches 309 if score #boss_seen_chapter1_andralune AzrTimerStack matches 0 run setblock -79934 39 60 air destroy
-execute if score stage_main_thread AzrTimerStack matches 310 if score #boss_seen_chapter1_andralune AzrTimerStack matches 0 run setblock -79928 39 62 air destroy
-execute if score stage_main_thread AzrTimerStack matches 310 if score #boss_seen_chapter1_andralune AzrTimerStack matches 0 run setblock -79934 39 62 air destroy
-execute if score stage_main_thread AzrTimerStack matches 311 if score #boss_seen_chapter1_andralune AzrTimerStack matches 0 run setblock -79928 39 64 air destroy
-execute if score stage_main_thread AzrTimerStack matches 311 if score #boss_seen_chapter1_andralune AzrTimerStack matches 0 run setblock -79934 39 64 air destroy
-execute if score stage_main_thread AzrTimerStack matches 312 if score #boss_seen_chapter1_andralune AzrTimerStack matches 0 run setblock -79928 39 66 air destroy
-execute if score stage_main_thread AzrTimerStack matches 312 if score #boss_seen_chapter1_andralune AzrTimerStack matches 0 run setblock -79934 39 66 air destroy
-execute if score stage_main_thread AzrTimerStack matches 313 if score #boss_seen_chapter1_andralune AzrTimerStack matches 0 run setblock -79928 39 68 air destroy
-execute if score stage_main_thread AzrTimerStack matches 313 if score #boss_seen_chapter1_andralune AzrTimerStack matches 0 run setblock -79934 39 68 air destroy
-execute if score stage_main_thread AzrTimerStack matches 316 if score #boss_seen_chapter1_andralune AzrTimerStack matches 0 run setblock -79928 39 70 air destroy
-execute if score stage_main_thread AzrTimerStack matches 316 if score #boss_seen_chapter1_andralune AzrTimerStack matches 0 run setblock -79934 39 70 air destroy
-execute if score stage_main_thread AzrTimerStack matches 319 if score #boss_seen_chapter1_andralune AzrTimerStack matches 0 run setblock -79928 39 72 air destroy
-execute if score stage_main_thread AzrTimerStack matches 319 if score #boss_seen_chapter1_andralune AzrTimerStack matches 0 run setblock -79934 39 72 air destroy
+execute if score stage_main_thread AzrTimerStack matches 307 run setblock -79928 39 56 air destroy
+execute if score stage_main_thread AzrTimerStack matches 307 run setblock -79934 39 56 air destroy
+execute if score stage_main_thread AzrTimerStack matches 308 run setblock -79928 39 58 air destroy
+execute if score stage_main_thread AzrTimerStack matches 308 run setblock -79934 39 58 air destroy
+execute if score stage_main_thread AzrTimerStack matches 309 run setblock -79928 39 60 air destroy
+execute if score stage_main_thread AzrTimerStack matches 309 run setblock -79934 39 60 air destroy
+execute if score stage_main_thread AzrTimerStack matches 310 run setblock -79928 39 62 air destroy
+execute if score stage_main_thread AzrTimerStack matches 310 run setblock -79934 39 62 air destroy
+execute if score stage_main_thread AzrTimerStack matches 311 run setblock -79928 39 64 air destroy
+execute if score stage_main_thread AzrTimerStack matches 311 run setblock -79934 39 64 air destroy
+execute if score stage_main_thread AzrTimerStack matches 312 run setblock -79928 39 66 air destroy
+execute if score stage_main_thread AzrTimerStack matches 312 run setblock -79934 39 66 air destroy
+execute if score stage_main_thread AzrTimerStack matches 313 run setblock -79928 39 68 air destroy
+execute if score stage_main_thread AzrTimerStack matches 313 run setblock -79934 39 68 air destroy
+execute if score stage_main_thread AzrTimerStack matches 316 run setblock -79928 39 70 air destroy
+execute if score stage_main_thread AzrTimerStack matches 316 run setblock -79934 39 70 air destroy
+execute if score stage_main_thread AzrTimerStack matches 319 run setblock -79928 39 72 air destroy
+execute if score stage_main_thread AzrTimerStack matches 319 run setblock -79934 39 72 air destroy
 
-execute if score stage_main_thread AzrTimerStack matches 302 if score #boss_seen_chapter1_andralune AzrTimerStack matches 0 positioned -79930 38 72 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_shield","AzrielMob_summon_delay","AzrielMob_level_1"]}
-execute if score stage_main_thread AzrTimerStack matches 302 if score #boss_seen_chapter1_andralune AzrTimerStack matches 0 positioned -79932 38 72 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_shield","AzrielMob_summon_delay","AzrielMob_level_1"]}
-execute if score stage_main_thread AzrTimerStack matches 306 if score #boss_seen_chapter1_andralune AzrTimerStack matches 0 positioned -79930 38 72 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_shield","AzrielMob_summon_delay","AzrielMob_level_1"]}
-execute if score stage_main_thread AzrTimerStack matches 306 if score #boss_seen_chapter1_andralune AzrTimerStack matches 0 positioned -79932 38 72 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_shield","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score stage_main_thread AzrTimerStack matches 302 if score #boss_seen_chapter1_andralune AzrTimerStack matches ..1 positioned -79930 38 72 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_shield","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score stage_main_thread AzrTimerStack matches 302 if score #boss_seen_chapter1_andralune AzrTimerStack matches ..1 positioned -79932 38 72 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_shield","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score stage_main_thread AzrTimerStack matches 306 if score #boss_seen_chapter1_andralune AzrTimerStack matches ..1 positioned -79930 38 72 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_shield","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score stage_main_thread AzrTimerStack matches 306 if score #boss_seen_chapter1_andralune AzrTimerStack matches ..1 positioned -79932 38 72 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_shield","AzrielMob_summon_delay","AzrielMob_level_1"]}
 
 execute if score stage_main_thread AzrTimerStack matches 320..321 run scoreboard players set stage_main_thread AzrTimerStack 320
 execute if score stage_main_thread AzrTimerStack matches 320..321 if entity @a[x=-79934,y=37,z=85,dx=6,dy=4,dz=6,tag=azrPlayer] run scoreboard players set stage_main_thread AzrTimerStack 400
@@ -50,24 +50,24 @@ execute if score stage_main_thread AzrTimerStack matches 401 positioned -79925.4
 execute if score stage_main_thread AzrTimerStack matches 409..580 positioned -79923 43 96 run rotate @n[tag=AzrielNPC_andralune] facing entity @p[tag=azrPlayer]
 execute if score stage_main_thread AzrTimerStack matches 409..580 positioned -79923 43 96 run rotate @n[tag=AzrielNPC_mersenne] facing entity @p[tag=azrPlayer]
 
-execute if score stage_main_thread AzrTimerStack matches 410 if score #boss_seen_chapter1_andralune AzrTimerStack matches 1 run scoreboard players set stage_main_thread AzrTimerStack 556
+execute if score stage_main_thread AzrTimerStack matches 410 if score #boss_seen_chapter1_andralune AzrTimerStack matches 2.. run scoreboard players set stage_main_thread AzrTimerStack 556
 
-execute if score stage_main_thread AzrTimerStack matches 403 if score #boss_seen_chapter1_andralune AzrTimerStack matches 0 at @n[tag=AzrielNPC_andralune] run playsound minecraft:entity.illusioner.ambient hostile @a ~ ~ ~ 3 0.6
-execute if score stage_main_thread AzrTimerStack matches 403 if score #boss_seen_chapter1_andralune AzrTimerStack matches 0 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"？？？：","color":"light_purple","bold": true},{"bold": false,"text":"\n“我知道对你而言，闯过前四个试炼房间根本不是问题。”","color":"white"}]
-execute if score stage_main_thread AzrTimerStack matches 419 if score #boss_seen_chapter1_andralune AzrTimerStack matches 0 at @n[tag=AzrielNPC_andralune] run playsound minecraft:entity.illusioner.ambient hostile @a ~ ~ ~ 3 0.6
-execute if score stage_main_thread AzrTimerStack matches 419 if score #boss_seen_chapter1_andralune AzrTimerStack matches 0 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"身披战袍的天使：","color":"light_purple","bold": true},{"bold": false,"text":"\n“但我确实比较吃惊，多少年内最为骁勇善战的人类亡魂，居然是女儿身。”","color":"white"}]
-execute if score stage_main_thread AzrTimerStack matches 437 if score #boss_seen_chapter1_andralune AzrTimerStack matches 0 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"你：","color":"aqua"},{"text":"\n“我不是男的可真是令你失望了。你就是我要挑战的BOSS吗？快点和我打吧。”","color":"white"}]
-execute if score stage_main_thread AzrTimerStack matches 455 if score #boss_seen_chapter1_andralune AzrTimerStack matches 0 at @n[tag=AzrielNPC_mersenne] run playsound minecraft:entity.pillager.ambient master @a ~ ~ ~ 2 0.8
-execute if score stage_main_thread AzrTimerStack matches 455 if score #boss_seen_chapter1_andralune AzrTimerStack matches 0 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"随行文官：","color":"yellow","bold": true},{"bold": false,"text":"\n“作为人类可真是大胆，竟敢对天使不敬。权之残影大人，属下这就去将她击败。”","color":"white"}]
-execute if score stage_main_thread AzrTimerStack matches 475 if score #boss_seen_chapter1_andralune AzrTimerStack matches 0 at @n[tag=AzrielNPC_andralune] run playsound minecraft:entity.illusioner.ambient hostile @a ~ ~ ~ 3 0.6
-execute if score stage_main_thread AzrTimerStack matches 475 if score #boss_seen_chapter1_andralune AzrTimerStack matches 0 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"身披战袍的天使：","color":"light_purple","bold": true},{"bold": false,"text":"\n“你不觉得这位女子的言辞还挺有趣的吗？”","color":"white"}]
-execute if score stage_main_thread AzrTimerStack matches 491 if score #boss_seen_chapter1_andralune AzrTimerStack matches 0 at @n[tag=AzrielNPC_andralune] run playsound minecraft:entity.illusioner.ambient hostile @a ~ ~ ~ 3 0.6
-execute if score stage_main_thread AzrTimerStack matches 491 if score #boss_seen_chapter1_andralune AzrTimerStack matches 0 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"身披战袍的天使：","color":"light_purple","bold": true},{"bold": false,"text":"\n“首先向你道歉，方才的第四试炼出了一点预料之外的情况。不过，看样子马林努斯已经给它解决了。”","color":"white"}]
-execute if score stage_main_thread AzrTimerStack matches 513 if score #boss_seen_chapter1_andralune AzrTimerStack matches 0 at @n[tag=AzrielNPC_andralune] run playsound minecraft:entity.illusioner.ambient hostile @a ~ ~ ~ 3 0.6
-execute if score stage_main_thread AzrTimerStack matches 513 if score #boss_seen_chapter1_andralune AzrTimerStack matches 0 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"权之残影：","color":"light_purple","bold": true},{"bold": false,"text":"\n“容在下自我介绍：我乃天使长沙利叶麾下的力天使，名安德拉伦恩，号权之残影。”","color":"white"}]
-execute if score stage_main_thread AzrTimerStack matches 531 if score #boss_seen_chapter1_andralune AzrTimerStack matches 0 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"你：","color":"aqua"},{"text":"\n“你好，‘权之残影’。你知道我是谁。”","color":"white"}]
-execute if score stage_main_thread AzrTimerStack matches 547 if score #boss_seen_chapter1_andralune AzrTimerStack matches 0 at @n[tag=AzrielNPC_andralune] run playsound minecraft:entity.illusioner.ambient hostile @a ~ ~ ~ 3 0.6
-execute if score stage_main_thread AzrTimerStack matches 547 if score #boss_seen_chapter1_andralune AzrTimerStack matches 0 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"权之残影：","color":"light_purple","bold": true},{"bold": false,"text":"\n“我确实窥见了你在人间的身份，爱理莎女士。在同你过招前——我想先测试一下你如今的实力。”","color":"white"}]
+execute if score stage_main_thread AzrTimerStack matches 403 if score #boss_seen_chapter1_andralune AzrTimerStack matches ..1 at @n[tag=AzrielNPC_andralune] run playsound minecraft:entity.illusioner.ambient hostile @a ~ ~ ~ 3 0.6
+execute if score stage_main_thread AzrTimerStack matches 403 if score #boss_seen_chapter1_andralune AzrTimerStack matches ..1 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"？？？：","color":"light_purple","bold": true},{"bold": false,"text":"\n“我知道对你而言，闯过前四个试炼房间根本不是问题。”","color":"white"}]
+execute if score stage_main_thread AzrTimerStack matches 419 if score #boss_seen_chapter1_andralune AzrTimerStack matches ..1 at @n[tag=AzrielNPC_andralune] run playsound minecraft:entity.illusioner.ambient hostile @a ~ ~ ~ 3 0.6
+execute if score stage_main_thread AzrTimerStack matches 419 if score #boss_seen_chapter1_andralune AzrTimerStack matches ..1 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"身披战袍的天使：","color":"light_purple","bold": true},{"bold": false,"text":"\n“但我确实比较吃惊，多少年内最为骁勇善战的人类亡魂，居然是女儿身。”","color":"white"}]
+execute if score stage_main_thread AzrTimerStack matches 437 if score #boss_seen_chapter1_andralune AzrTimerStack matches ..1 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"你：","color":"aqua"},{"text":"\n“我不是男的可真是令你失望了。你就是我要挑战的BOSS吗？快点和我打吧。”","color":"white"}]
+execute if score stage_main_thread AzrTimerStack matches 455 if score #boss_seen_chapter1_andralune AzrTimerStack matches ..1 at @n[tag=AzrielNPC_mersenne] run playsound minecraft:entity.pillager.ambient master @a ~ ~ ~ 2 0.8
+execute if score stage_main_thread AzrTimerStack matches 455 if score #boss_seen_chapter1_andralune AzrTimerStack matches ..1 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"随行文官：","color":"yellow","bold": true},{"bold": false,"text":"\n“作为人类可真是大胆，竟敢对天使不敬。权之残影大人，属下这就去将她击败。”","color":"white"}]
+execute if score stage_main_thread AzrTimerStack matches 475 if score #boss_seen_chapter1_andralune AzrTimerStack matches ..1 at @n[tag=AzrielNPC_andralune] run playsound minecraft:entity.illusioner.ambient hostile @a ~ ~ ~ 3 0.6
+execute if score stage_main_thread AzrTimerStack matches 475 if score #boss_seen_chapter1_andralune AzrTimerStack matches ..1 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"身披战袍的天使：","color":"light_purple","bold": true},{"bold": false,"text":"\n“你不觉得这位女子的言辞还挺有趣的吗？”","color":"white"}]
+execute if score stage_main_thread AzrTimerStack matches 491 if score #boss_seen_chapter1_andralune AzrTimerStack matches ..1 at @n[tag=AzrielNPC_andralune] run playsound minecraft:entity.illusioner.ambient hostile @a ~ ~ ~ 3 0.6
+execute if score stage_main_thread AzrTimerStack matches 491 if score #boss_seen_chapter1_andralune AzrTimerStack matches ..1 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"身披战袍的天使：","color":"light_purple","bold": true},{"bold": false,"text":"\n“首先向你道歉，方才的第四试炼出了一点预料之外的情况。不过，看样子马林努斯已经给它解决了。”","color":"white"}]
+execute if score stage_main_thread AzrTimerStack matches 513 if score #boss_seen_chapter1_andralune AzrTimerStack matches ..1 at @n[tag=AzrielNPC_andralune] run playsound minecraft:entity.illusioner.ambient hostile @a ~ ~ ~ 3 0.6
+execute if score stage_main_thread AzrTimerStack matches 513 if score #boss_seen_chapter1_andralune AzrTimerStack matches ..1 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"权之残影：","color":"light_purple","bold": true},{"bold": false,"text":"\n“容在下自我介绍：我乃天使长沙利叶麾下的力天使，名安德拉伦恩，号权之残影。”","color":"white"}]
+execute if score stage_main_thread AzrTimerStack matches 531 if score #boss_seen_chapter1_andralune AzrTimerStack matches ..1 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"你：","color":"aqua"},{"text":"\n“你好，‘权之残影’。你知道我是谁。”","color":"white"}]
+execute if score stage_main_thread AzrTimerStack matches 547 if score #boss_seen_chapter1_andralune AzrTimerStack matches ..1 at @n[tag=AzrielNPC_andralune] run playsound minecraft:entity.illusioner.ambient hostile @a ~ ~ ~ 3 0.6
+execute if score stage_main_thread AzrTimerStack matches 547 if score #boss_seen_chapter1_andralune AzrTimerStack matches ..1 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"权之残影：","color":"light_purple","bold": true},{"bold": false,"text":"\n“我确实窥见了你在人间的身份，爱理莎女士。在同你过招前——我想先测试一下你如今的实力。”","color":"white"}]
 
 execute if score stage_main_thread AzrTimerStack matches 557 run playsound ambient.soul_sand_valley.mood ambient @a[tag=azrShowDialog] -79931 47 88 100 1.5
 execute if score stage_main_thread AzrTimerStack matches 557 run playsound ambient.soul_sand_valley.additions ambient @a[tag=azrShowDialog] -79931 47 88 100 1.5
@@ -193,9 +193,10 @@ execute if score stage_main_thread AzrTimerStack matches 2011 as @a[tag=azrPlaye
 execute if score stage_main_thread AzrTimerStack matches 2011 run scoreboard players reset stage_main_thread AzrTimerStack
 
 
-execute if score stage_main_thread AzrTimerStack matches 300..503 run scoreboard players set #boss_seen_chapter1_andralune AzrTimerStack 1
+execute if score stage_main_thread AzrTimerStack matches 300..320 run scoreboard players set #boss_seen_chapter1_andralune AzrTimerStack 1
+execute if score stage_main_thread AzrTimerStack matches 321..503 run scoreboard players set #boss_seen_chapter1_andralune AzrTimerStack 2
 
 
-execute if score stage_main_thread AzrTimerStack matches 567..999 unless entity @a[tag=azrPlayer,x=-79944,y=0,z=75,dx=-26,dy=55,dz=26] run function skyblock:azr/lifecycle/endgame/reset_map_boss1
+execute if score stage_main_thread AzrTimerStack matches 300..999 if score #boss_seen_chapter1_andralune AzrTimerStack matches 1.. unless entity @a[tag=azrPlayer,x=-79944,y=0,z=75,dx=-26,dy=55,dz=26] run function skyblock:azr/lifecycle/endgame/reset_map_boss1
 
 

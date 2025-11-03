@@ -173,25 +173,7 @@ fill -79915 32 0 -79917 35 0 air
 
 
 function skyblock:azr/lifecycle/endgame/reset_map_boss1
-  #碎灯走廊
-setblock -79928 39 56 sea_lantern
-setblock -79928 39 58 sea_lantern
-setblock -79928 39 60 sea_lantern
-setblock -79928 39 62 sea_lantern
-setblock -79928 39 64 sea_lantern
-setblock -79928 39 66 sea_lantern
-setblock -79928 39 68 sea_lantern
-setblock -79928 39 70 sea_lantern
-setblock -79928 39 72 sea_lantern
-setblock -79934 39 56 sea_lantern
-setblock -79934 39 58 sea_lantern
-setblock -79934 39 60 sea_lantern
-setblock -79934 39 62 sea_lantern
-setblock -79934 39 64 sea_lantern
-setblock -79934 39 66 sea_lantern
-setblock -79934 39 68 sea_lantern
-setblock -79934 39 70 sea_lantern
-setblock -79934 39 72 sea_lantern
+
 
 #stage5
 setblock -79928 39 125 birch_button[facing=north,face=wall]

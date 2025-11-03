@@ -12,4 +12,22 @@ execute if entity @a[tag=azrPlayer] run scoreboard players set tick_main_thread 
 
 execute if entity @a[tag=azrPlayer] run kill @e[tag=AzrielMob,x=-79944,y=0,z=75,dx=-26,dy=55,dz=26]
 
-
+#碎灯走廊
+setblock -79928 39 56 sea_lantern
+setblock -79928 39 58 sea_lantern
+setblock -79928 39 60 sea_lantern
+setblock -79928 39 62 sea_lantern
+setblock -79928 39 64 sea_lantern
+setblock -79928 39 66 sea_lantern
+setblock -79928 39 68 sea_lantern
+setblock -79928 39 70 sea_lantern
+setblock -79928 39 72 sea_lantern
+setblock -79934 39 56 sea_lantern
+setblock -79934 39 58 sea_lantern
+setblock -79934 39 60 sea_lantern
+setblock -79934 39 62 sea_lantern
+setblock -79934 39 64 sea_lantern
+setblock -79934 39 66 sea_lantern
+setblock -79934 39 68 sea_lantern
+setblock -79934 39 70 sea_lantern
+setblock -79934 39 72 sea_lantern
