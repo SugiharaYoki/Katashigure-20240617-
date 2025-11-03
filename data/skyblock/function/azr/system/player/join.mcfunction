@@ -22,13 +22,13 @@ execute if score stage Azr_system matches 1.. if entity @s[tag=AZR_SEAawakened] 
 execute if score stage Azr_system matches 3.. run tag @s[tag=!hasLifeVitae] add hasLifeVitae
 execute if score stage Azr_system matches 51..63 run tag @s add azrBanLifeVitae
 #初始资源
-execute if score $azrInitialPieGiven Azr_system matches 1 run give @s pumpkin_pie 8
-execute if score $azrInitialWeaponGiven Azr_system matches 1 run function skyblock:azr/assets/items/weapons/wooden_sword_normal
-execute if score $azrInitialWeaponGiven Azr_system matches 1 run function skyblock:azr/assets/items/weapons/wooden_axe_normal
-execute if score $azrInitialIngredientGiven Azr_system matches 1 run give @s iron_ingot
-execute if score $azrInitialIngredientGiven Azr_system matches 1 run give @s flint
-execute if score $azrInitialIngredientGiven Azr_system matches 1 run give @s string
-execute if score $azrInitialIngredientGiven Azr_system matches 1 run give @s gunpowder
+#execute if score $azrInitialPieGiven Azr_system matches 1 run give @s pumpkin_pie 8
+#execute if score $azrInitialWeaponGiven Azr_system matches 1 run function skyblock:azr/assets/items/weapons/wooden_sword_normal
+#execute if score $azrInitialWeaponGiven Azr_system matches 1 run function skyblock:azr/assets/items/weapons/wooden_axe_normal
+#execute if score $azrInitialIngredientGiven Azr_system matches 1 run give @s iron_ingot
+#execute if score $azrInitialIngredientGiven Azr_system matches 1 run give @s flint
+#execute if score $azrInitialIngredientGiven Azr_system matches 1 run give @s string
+#execute if score $azrInitialIngredientGiven Azr_system matches 1 run give @s gunpowder
 
 scoreboard objectives add azrPlayer_eternal dummy
 execute unless entity @s[scores={azrPlayer_eternal=1..}] run scoreboard players add azrPlayer_eternal azrPlayer_eternal 1

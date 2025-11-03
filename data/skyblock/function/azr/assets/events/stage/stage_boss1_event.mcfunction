@@ -193,7 +193,7 @@ execute if score stage_main_thread AzrTimerStack matches 2011 as @a[tag=azrPlaye
 execute if score stage_main_thread AzrTimerStack matches 2011 run scoreboard players reset stage_main_thread AzrTimerStack
 
 
-execute if score stage_main_thread AzrTimerStack matches 567 run scoreboard players set #boss_seen_chapter1_andralune AzrTimerStack 1
+execute if score stage_main_thread AzrTimerStack matches 300..503 run scoreboard players set #boss_seen_chapter1_andralune AzrTimerStack 1
 
 
 execute if score stage_main_thread AzrTimerStack matches 567..999 unless entity @a[tag=azrPlayer,x=-79944,y=0,z=75,dx=-26,dy=55,dz=26] run function skyblock:azr/lifecycle/endgame/reset_map_boss1
