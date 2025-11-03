@@ -193,7 +193,7 @@ execute if score stage_main_thread AzrTimerStack matches 2011 as @a[tag=azrPlaye
 execute if score stage_main_thread AzrTimerStack matches 2011 run scoreboard players reset stage_main_thread AzrTimerStack
 
 
-execute if score stage_main_thread AzrTimerStack matches 300..556 run scoreboard players set #boss_seen_chapter1_andralune AzrTimerStack 1
+execute if score stage_main_thread AzrTimerStack matches 300..556 if score #boss_seen_chapter1_andralune AzrTimerStack matches 0 run scoreboard players set #boss_seen_chapter1_andralune AzrTimerStack 1
 execute if score stage_main_thread AzrTimerStack matches 557..558 run scoreboard players set #boss_seen_chapter1_andralune AzrTimerStack 2
 
 
