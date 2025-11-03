@@ -9,7 +9,7 @@ execute store result storage azr:player_permanent_data current_z int 1 run data 
 
 function skyblock:azr/system/player/updatespawnpoint_read with storage azr:player_permanent_data
 
-
+effect give @s instant_health 1 0 true
 
 
 
