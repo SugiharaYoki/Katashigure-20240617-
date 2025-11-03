@@ -1,4 +1,4 @@
-execute if score stage_main_thread AzrTimerStack matches 1 run tag @a[tag=azrPlayer] add azrUpdateSpawnPoint
+
 execute if score stage_main_thread AzrTimerStack matches 7 run bossbar add azr:progress_bar_normal "Stage Appetence"
 execute if score stage_main_thread AzrTimerStack matches 7 run bossbar set azr:progress_bar_normal color yellow
 execute if score stage_main_thread AzrTimerStack matches 7 run bossbar set azr:progress_bar_normal players @a[tag=azrPlayer]

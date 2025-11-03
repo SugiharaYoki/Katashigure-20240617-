@@ -57,4 +57,3 @@ tellraw @s {"text":"虽说神界军承诺过将前来支援，你所遇到的寥
 tellraw @s {"text":"据军队说，操控并掌管魔物的神使名为权之殊能。究竟是他遭遇了意外，还是存在更加黑暗的真相？","color":"gray"}
 
 tp @s -79836.0 48 -128.0 facing -79835.0 48 -128.0
-tag @s add azrUpdateSpawnPoint

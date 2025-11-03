@@ -1,4 +1,4 @@
-execute if score stage_main_thread AzrTimerStack matches 2008..2020 run tag @a[tag=azrPlayer] add azrUpdateSpawnPoint
+
 execute if score stage_main_thread AzrTimerStack matches 2007 run bossbar add azr:progress_bar_normal "Stage Object"
 execute if score stage_main_thread AzrTimerStack matches 2007 run bossbar set azr:progress_bar_normal color blue
 execute if score stage_main_thread AzrTimerStack matches 2007 run bossbar set azr:progress_bar_normal players @a[tag=azrPlayer]

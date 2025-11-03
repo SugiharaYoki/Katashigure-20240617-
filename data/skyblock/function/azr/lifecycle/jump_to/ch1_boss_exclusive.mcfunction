@@ -13,7 +13,6 @@ tellraw @a[tag=azrPlayer] {"text":"在这条走廊的前方，是一种你从未
 tellraw @a[tag=azrPlayer] {"text":"而你将于此处，与第一位神使展开激烈的战斗……","color":"gray"}
 
 tp @a[tag=azrPlayer] -79931 38 56 facing -79931 38 63
-tag @a[tag=azrPlayer] add azrUpdateSpawnPoint
 
 
 scoreboard players set @a[tag=azrPlayer] AzrPlayer_CurrentArea 1

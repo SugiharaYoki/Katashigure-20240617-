@@ -10,8 +10,6 @@ execute as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run function skyblo
     execute unless score tick_main_thread AzrTimerStack matches -2147483648..2147483647 as @a[x=-79884,y=38,z=-15,distance=..4,tag=azrPlayer] run tp @a[tag=azrPlayer,distance=0.1..] @s
     execute unless score tick_main_thread AzrTimerStack matches -2147483648..2147483647 as @a[x=-79884,y=38,z=-15,distance=..4,tag=azrPlayer] run scoreboard players set tick_main_thread AzrTimerStack 0
     execute if score tick_main_thread AzrTimerStack matches 1..10 run scoreboard players set stage Azr_system 24
-    #set spawnpoint
-    execute if score tick_main_thread AzrTimerStack matches 1 run tag @a[tag=azrPlayer] add azrUpdateSpawnPoint
     #init map
     execute if score tick_main_thread AzrTimerStack matches 2 run fill -79904 41 0 -79902 38 0 minecraft:red_stained_glass
     execute if score tick_main_thread AzrTimerStack matches 2 run setblock -79879 48 -16 anvil
@@ -356,7 +354,6 @@ execute as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run function skyblo
 
     execute if score tick_main_thread AzrTimerStack matches 6001 run stopsound @a[tag=azrShowDialog]
     execute if score tick_main_thread AzrTimerStack matches 6001 run bossbar remove azr:boss_hp_bar
-    execute if score tick_main_thread AzrTimerStack matches 6080..6130 run tag @a[tag=azrPlayer] add azrUpdateSpawnPoint
     #effect & sound
     execute if score tick_main_thread AzrTimerStack matches 6001 run playsound minecraft:item.trident.thunder master @a[tag=azrShowDialog] -79903 38.8 -14.0 10 0.8
     execute if score tick_main_thread AzrTimerStack matches 6001 run particle minecraft:reverse_portal -79903 38.8 -14.0 0 0 0 1.5 1800

@@ -1,4 +1,4 @@
-execute if score stage_main_thread AzrTimerStack matches 1 run tag @a[tag=azrPlayer] add azrUpdateSpawnPoint
+
 execute if score stage_main_thread AzrTimerStack matches 1 run title @a[tag=SeGa_StandLastA] actionbar {"color":"red","text":"Stage 7 - Wave 1"}
 execute if score stage_main_thread AzrTimerStack matches 1 run bossbar add azr:progress_bar_normal "Stage 7"
 execute if score stage_main_thread AzrTimerStack matches 1 run bossbar set azr:progress_bar_normal color white

@@ -1,4 +1,4 @@
- tag @a[tag=azrPlayer] add azrUpdateSpawnPoint
+
 bossbar add azr:progress_bar_special "Stage Impersonate"
 bossbar set azr:progress_bar_special color yellow
 bossbar set azr:progress_bar_special players @a[tag=azrPlayer]

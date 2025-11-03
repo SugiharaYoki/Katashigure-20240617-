@@ -9,7 +9,6 @@ execute if score stage_main_thread AzrTimerStack matches 0.. as @e[tag=!AzrielMo
 execute if score stage_main_thread AzrTimerStack matches 0..500 run scoreboard players set stage_main_thread AzrTimerStack 20
 # execute if score stage_main_thread AzrTimerStack matches 0..500 if entity @a[x=-79815,y=48,z=-128,distance=0..7,tag=azrPlayer,gamemode=!spectator] run scoreboard players set stage_main_thread AzrTimerStack 600
 
-execute if score stage_main_thread AzrTimerStack matches 601 run tag @a[tag=azrPlayer] add azrUpdateSpawnPoint
 execute if score stage_main_thread AzrTimerStack matches 601 run tellraw @a[tag=DebugMode,tag=azrPlayer] [{"text":"[DEBUG MODE MESSAGE] You are playing \"Stage Event11\", with playerCount = "},{"score":{"objective":"Azr_system","name":"playerCount"}},{"text":" Maximum Seconds = 3146"}]
 execute if score stage_main_thread AzrTimerStack matches 601 as @a[tag=azrShowDialog] at @s run playsound minecraft:entity.illusioner.ambient master @s ~ ~ ~ 0.3 0.6
 execute if score stage_main_thread AzrTimerStack matches 601 as @a[tag=azrPlayer] at @s run tellraw @s {"text":"权之残影（传音）：","color":"red"}

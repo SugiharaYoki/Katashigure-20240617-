@@ -36,4 +36,3 @@ function skyblock:azr/assets/items/others/revival_star
 # show texts
 # tellraw @s {"text":"游戏再续……","color":"green"}
 tp @s -79757.42 50.00 -189.95 -169.35 6.75
-tag @s add azrUpdateSpawnPoint

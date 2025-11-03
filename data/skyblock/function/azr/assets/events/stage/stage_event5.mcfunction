@@ -1,7 +1,6 @@
 execute if score stage_main_thread AzrTimerStack matches ..100 run scoreboard players set stage_main_thread AzrTimerStack 99
 execute if score stage_main_thread AzrTimerStack matches 99 if entity @a[x=-79890,y=42,z=-60,distance=0..4,tag=azrPlayer] run scoreboard players set stage_main_thread AzrTimerStack 109
 
-execute if score stage_main_thread AzrTimerStack matches 110 run tag @a[tag=azrPlayer] add azrUpdateSpawnPoint
 execute if score stage_main_thread AzrTimerStack matches 110 run tellraw @a[tag=DebugMode,tag=azrPlayer] [{"text":"[DEBUG MODE MESSAGE] You are playing \"Stage Event5\", with playerCount = "},{"score":{"objective":"Azr_system","name":"playerCount"}},{"text":" Maximum Seconds = 150"}]
 execute if score stage_main_thread AzrTimerStack matches 109..116 run playsound minecraft:ambient.warped_forest.additions master @a[tag=azrShowDialog] -79891 60 -60 10 0.6
 execute if score stage_main_thread AzrTimerStack matches 109..116 run playsound minecraft:ambient.warped_forest.loop master @a[tag=azrShowDialog] -79891 60 -60 10 0.6

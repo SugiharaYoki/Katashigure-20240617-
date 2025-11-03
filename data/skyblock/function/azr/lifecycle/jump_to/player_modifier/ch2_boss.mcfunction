@@ -46,4 +46,3 @@ tellraw @s {"text":"先前曾与你大战的权之残影指责这是你所引来
 tellraw @s {"text":"权之残影的军队对你展开的攻势不明原因地戛然而止。如今，招待厅区域一片死寂……","color":"gray"}
 
 tp @s -79890 38 50 facing -79889 38 49
-tag @s add azrUpdateSpawnPoint
