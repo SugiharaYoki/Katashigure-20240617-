@@ -7,7 +7,7 @@ execute store result storage azr:player_permanent_data current_y int 1 run data 
 execute store result storage azr:player_permanent_data current_z int 1 run data get entity @s Pos[2]
 
 
-function skyblock:azr/system/player/updatespawnpoint_calculate with storage azr:player_permanent_data
+function skyblock:azr/system/player/updatespawnpoint_read with storage azr:player_permanent_data
 
 
 
