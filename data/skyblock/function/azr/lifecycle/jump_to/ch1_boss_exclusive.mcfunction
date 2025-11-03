@@ -4,8 +4,8 @@ execute as @a[tag=azrPlayer] at @s unless score @s SeGa_StandLastBH matches 7.. 
 
 
 
-execute as @a[tag=azrPlayer] at @s run function skyblock:azr/assets/items/weapons/stone_sword_normal
-execute as @a[tag=azrPlayer] at @s run function skyblock:azr/assets/items/weapons/stone_axe_normal
+#execute as @a[tag=azrPlayer] at @s run function skyblock:azr/assets/items/weapons/stone_sword_normal
+#execute as @a[tag=azrPlayer] at @s run function skyblock:azr/assets/items/weapons/stone_axe_normal
 # show texts
 # tellraw @s {"text":"游戏再续……","color":"green"}
 tellraw @a[tag=azrPlayer] {"text":"第一关口正处于半封锁状态。选择从南翼绕道而行的你却遭遇了像是精心设计的一系列障碍与阻拦。","color":"gray"}
