@@ -1,4 +1,5 @@
 #处理玩家数据
+tellraw @s [{"text":"你已经退出游戏！最终坚持关数： ","color":"red"},{"score":{"name":"@s","objective":"Azr_wave"}}]
 tag @s remove azrPlayer
 tag @s remove azrShopOnUse
 tag @s remove azrShopRefresh

@@ -10,7 +10,7 @@ execute if entity @s[tag=AzrSariel_sub_stardeplete] unless entity @s[tag=AZR_fak
 #死亡后退出游戏
     #输出
     execute if score @s Azr_forceDeath matches 1 run tellraw @a[tag=azrShowDialog,distance=..10000] [{"selector":"@s","color":"white"},{"text":" 的灵魂不幸碎裂！","color":"dark_red"}]
-    execute if score @s Azr_forceDeath matches 1 run tellraw @s [{"text":"你已经死亡！最终坚持关数： ","color":"red"},{"score":{"name":"@s","objective":"Azr_wave"}}]
+    
 execute if score @s Azr_forceDeath matches 1 run function skyblock:azr/lifecycle/endgame/quit_game
 tag @s remove AZR_fakeDeath
 #当局一次性提示
