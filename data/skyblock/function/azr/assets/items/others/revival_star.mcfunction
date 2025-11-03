@@ -1,1 +1,1 @@
-give @s nether_star[custom_name='{"text":"下界命星","color":"yellow","italic":false}',custom_data={revival_star:1b},custom_model_data={floats:[100001.0]}]
+give @s nether_star[custom_name='{"text":"下界命星","color":"#935dff","italic":false}',lore=['{"text":"未明的神祝","italic":false,"color":"light_purple","bold": true}','{"text":"背包内持有时，死亡将重生在最近一次记录的复活点","italic":false,"color":"#9eb9de"}','{"text":"手持时同时按住左右移动键，直接传送至该复活点","italic":false,"color":"#9eb9de"}','{"text":""}','{"text":"我可以打一万回。","italic":true,"color":"#586371"}'],custom_data={azr_amulet:1b,revival_star:1b}]
