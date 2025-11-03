@@ -23,8 +23,6 @@ scoreboard players set @s AzrTimerReviving 0
 
 
 #地区名称显示
-execute if entity @s[tag=AZR_SEAawakened]
-
 execute unless score @s AzrPlayer_CurrentArea matches 1 positioned -79943 37 -8 if entity @s[distance=..5] run function skyblock:azr/assets/events/stage/area_title_show \
                                                 {area_id:1,title:"西 庭 外 围",color_code:"#e9ffe0"}
 execute unless score @s AzrPlayer_CurrentArea matches 1 positioned -79931 33 28 if entity @s[distance=..5] run function skyblock:azr/assets/events/stage/area_title_show \
