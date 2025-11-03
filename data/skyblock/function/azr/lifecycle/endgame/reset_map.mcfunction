@@ -171,9 +171,8 @@ item replace block -79966 43 49 container.14 with minecraft:emerald 5
 #Stage Diffident
 fill -79915 32 0 -79917 35 0 air
 
-#event1
-fill -79930 42 54 -79932 38 54 air{name: "clear anvil barrier"}
-fill -79930 38 53 -79932 41 53 air{name: "clear anvil barrier"}
+
+function skyblock:azr/lifecycle/endgame/reset_map_boss1
   #碎灯走廊
 setblock -79928 39 56 sea_lantern
 setblock -79928 39 58 sea_lantern
