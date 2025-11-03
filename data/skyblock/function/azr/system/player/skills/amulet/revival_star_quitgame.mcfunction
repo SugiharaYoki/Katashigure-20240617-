@@ -7,7 +7,7 @@ scoreboard players add @s AzrSariel_Amulet_RevivalStar_teleport 1
 
 execute if score @s AzrSariel_Amulet_RevivalStar_teleport matches 1.. run particle minecraft:pale_oak_leaves ~ ~1 ~ 0.9 2 0.9 0 3
 execute if score @s AzrSariel_Amulet_RevivalStar_teleport matches 7.. run particle minecraft:trial_spawner_detection ~ ~0.1 ~ 0.7 0 0.7 0 12
-execute if score @s AzrSariel_Amulet_RevivalStar_teleport matches 37.. run particle minecraft:crimson_spore ~ ~0.1 ~ 0.7 0 0.7 0 12
+execute if score @s AzrSariel_Amulet_RevivalStar_teleport matches 37.. run particle minecraft:crimson_spore ~ ~0.1 ~ 0.7 0 0.7 0 22
 
 execute if score @s AzrSariel_Amulet_RevivalStar_teleport matches 5 run playsound minecraft:entity.creaking.deactivate player @a ~ ~ ~ 1 0.8
 execute if score @s AzrSariel_Amulet_RevivalStar_teleport matches 5 run playsound minecraft:ambient.soul_sand_valley.mood player @s ~ ~ ~ 2 1.3
