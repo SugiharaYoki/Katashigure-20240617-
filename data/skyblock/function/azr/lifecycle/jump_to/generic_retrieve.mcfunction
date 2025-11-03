@@ -1,5 +1,5 @@
 
-function skyblock:azr/assets/items/others/revival_star
+execute unless items entity @s container.* *[custom_data~{revival_star:1b}] run function skyblock:azr/assets/items/others/revival_star
 
 
 

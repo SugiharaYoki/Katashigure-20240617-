@@ -187,7 +187,7 @@ execute if score stage_main_thread AzrTimerStack matches 2011 run title @a[tag=a
 execute if score stage_main_thread AzrTimerStack matches 2011 run tellraw @a[tag=azrShowDialog] {"text":"「生命手册」已开放第 2 页","color":"green"}
 execute if score stage_main_thread AzrTimerStack matches 2011 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage4_boss1
 #rewards
-execute if score stage_main_thread AzrTimerStack matches 2011 as @a[tag=azrPlayer] at @s run function skyblock:azr/assets/items/amulets/stopwatch
+execute if score stage_main_thread AzrTimerStack matches 2011 as @a[tag=azrPlayer] at @s unless items entity @s container.* *[custom_data~{azr_amulet_stopwatch:1b}] run function skyblock:azr/assets/items/amulets/stopwatch
 execute if score stage_main_thread AzrTimerStack matches 2011 as @a[tag=azrPlayer] at @s run summon item ~ ~ ~ {Item:{id:"emerald",count:10b}}
 execute if score stage_main_thread AzrTimerStack matches 2011 as @a[tag=azrPlayer] at @s run give @s glistering_melon_slice 1
 execute if score stage_main_thread AzrTimerStack matches 2011 run scoreboard players reset stage_main_thread AzrTimerStack
