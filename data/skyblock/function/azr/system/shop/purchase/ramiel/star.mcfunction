@@ -1,4 +1,4 @@
-scoreboard players remove @s AzrMelonCount 3
+#scoreboard players remove @s AzrMelonCount 3
 playsound minecraft:ambient.warped_forest.mood ambient @s ~ ~ ~ 1 0.5
 
 

@@ -24,9 +24,6 @@ function skyblock:azr/assets/items/armors/iron_leggings_normal_replace
 function skyblock:azr/assets/items/armors/iron_boots_normal_replace
 give @s bread 12
 give @s arrow 16
-function skyblock:azr/assets/items/others/revival_star
-function skyblock:azr/assets/items/others/revival_star
-function skyblock:azr/assets/items/others/revival_star
 
 item replace entity @s inventory.0 with stick 6
 item replace entity @s inventory.1 with flint 6
