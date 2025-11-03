@@ -15,5 +15,5 @@ tellraw @a[tag=azrPlayer] {"text":"而你将于此处，与第一位神使展开
 
 
 
-tp @a[tag=azrPlayer] -79931 34 -28 facing -79931 34 -29
-execute as @a[tag=azrPlayer] run function skyblock:azr/system/player/updatespawnpoint_initialize {x:-79931,y:34,z:-28}
+tp @a[tag=azrPlayer] -79931 34 28 facing -79931 34 29
+execute as @a[tag=azrPlayer] run function skyblock:azr/system/player/updatespawnpoint_initialize {x:-79931,y:34,z:28}
