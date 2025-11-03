@@ -3,8 +3,8 @@ function skyblock:azr/assets/items/others/revival_star
 
 
 
-execute if score @s SeGa_StandLastBH matches 7.. run function skyblock:azr/assets/items/amulets/stopwatch
-execute if score @s SeGa_StandLastBH matches 22.. run function skyblock:azr/assets/items/amulets/back_dodge
+#execute if score @s SeGa_StandLastBH matches 7.. run function skyblock:azr/assets/items/amulets/stopwatch
+#execute if score @s SeGa_StandLastBH matches 22.. run function skyblock:azr/assets/items/amulets/back_dodge
 
 
 
