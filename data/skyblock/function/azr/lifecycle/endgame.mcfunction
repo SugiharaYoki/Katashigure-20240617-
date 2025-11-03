@@ -19,10 +19,7 @@ scoreboard players reset $azrInitialWeaponGiven
 scoreboard players reset $azrInitialPieGiven
 scoreboard players reset $azrInitialIngredientGiven
 
-scoreboard players set is_stopped:stage_main_thread AzrTimerStack 0
-scoreboard players set #boss_seen_chapter1_andralune AzrTimerStack 0
-scoreboard players set #boss_seen_chapter2_marinus AzrTimerStack 0
-scoreboard players set #boss_seen_chapter2_andralune AzrTimerStack 0
+
 
 
 #tag @s remove Event18575A

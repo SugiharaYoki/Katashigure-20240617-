@@ -122,6 +122,11 @@ scoreboard objectives add AzrSariel_Food_HardenedCookie dummy
 scoreboard objectives add AzrSariel_Food_PowerSalmon dummy
 
 
+scoreboard players set #is_stopped:stage_main_thread AzrTimerStack 0
+scoreboard players set #boss_seen_chapter1_andralune AzrTimerStack 0
+scoreboard players set #boss_seen_chapter2_marinus AzrTimerStack 0
+scoreboard players set #boss_seen_chapter2_andralune AzrTimerStack 0
+
 #scoreboard players set life_vitae_available Azr_system 1
 #创建小队
 team add AzrBossA
