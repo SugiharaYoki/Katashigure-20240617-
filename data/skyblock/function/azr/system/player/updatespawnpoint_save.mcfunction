@@ -8,7 +8,7 @@ execute at @s run playsound minecraft:block.creaking_heart.spawn player @a ~ ~ ~
 execute at @s run playsound minecraft:block.respawn_anchor.set_spawn player @a ~ ~ ~ 1 0.8
 execute at @s run particle minecraft:pale_oak_leaves ~ ~1 ~ 0.8 2 0.8 0 30
 execute at @s run particle minecraft:trial_spawner_detection_ominous ~ ~0 ~ 0.3 0 0.3 0 20
-tellraw @s [{"text":"生命力在你的体内趋于盈满……","color": "#e5ff00","bold": true}]
+tellraw @s [{"text":"生命力在你的体内趋于盈满……","color": "#8cff00","bold": true}]
 
 
 $spawnpoint @s $(current_x) $(current_y) $(current_z)
