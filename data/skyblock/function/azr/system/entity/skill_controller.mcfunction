@@ -12,6 +12,7 @@ execute if entity @s[tag=AzrielMob_undead_shadow] run function skyblock:azr/asse
 execute if entity @s[tag=AzrielMob_nightblind] run function skyblock:azr/assets/mobs_new/skill/nightblind
 execute if entity @s[tag=AzrielMob_undead_baby] run function skyblock:azr/assets/mobs_new/skill/undead_baby
 
+kill @s[type=drowned,tag=!AzrielMob_stypeDROWNED]
 
 execute if entity @s[tag=AzrielMob_zombie_villager_armor] run function skyblock:azr/assets/mobs_new/skill/zombie_villager_armor
 
