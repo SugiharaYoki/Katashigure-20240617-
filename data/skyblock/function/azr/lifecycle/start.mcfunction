@@ -33,6 +33,7 @@ scoreboard objectives add AzrTimerAmulet_pacemaker dummy
 scoreboard objectives add AzrEvent_affected_quake_medium dummy
 scoreboard objectives add AzrielMob_changetarget dummy
 
+scoreboard objectives add Fire dummy
 # scoreboard objectives add temp_timer1 dummy
 # scoreboard objectives add temp_timer2 dummy
 # scoreboard objectives add temp_timer3 dummy
