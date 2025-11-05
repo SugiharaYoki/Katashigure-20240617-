@@ -32,3 +32,5 @@ setblock -79934 39 66 sea_lantern
 setblock -79934 39 68 sea_lantern
 setblock -79934 39 70 sea_lantern
 setblock -79934 39 72 sea_lantern
+
+bossbar remove azr:boss_hp_bar
