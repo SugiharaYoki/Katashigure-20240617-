@@ -10,6 +10,8 @@ execute if score #is_stopped:stage_main_thread AzrTimerStack matches 1.. if item
 execute if score #is_stopped:stage_main_thread AzrTimerStack matches 1.. if items entity @a[tag=azrPlayer] weapon.* *[custom_data~{azr_amulet_stopwatch:1b}] run scoreboard players remove stage_main_thread AzrTimerStack 1
 
 scoreboard players add stage_bonus_thread AzrTimerStack 1
+scoreboard players add random_enemy_thread AzrTimerStack 1
+execute if score random_enemy_thread AzrTimerStack matches 6.. run scoreboard players set random_enemy_thread AzrTimerStack 0
 #动态难度
 execute if score stage_main_thread AzrTimerStack matches 1.. run function skyblock:azr/system/entity/dynamic_difficulty
 #不死骑士（花园1）

@@ -143,14 +143,14 @@ function skyblock:api_quit_any_game
 #execute as @s[tag=AZr_SExUp06] run scoreboard players add @s AzrielTagTemp4 100000
 #execute as @s[tag=AZr_SExUp07] run scoreboard players add @s AzrielTagTemp4 1000000
 #execute as @s[tag=AZr_SExUp08] run scoreboard players add @s AzrielTagTemp4 10000000
-#tag @s remove AZr_SExUp01
-#tag @s remove AZr_SExUp02
-#tag @s remove AZr_SExUp03
-#tag @s remove AZr_SExUp04
-#tag @s remove AZr_SExUp05
-#tag @s remove AZr_SExUp06
-#tag @s remove AZr_SExUp07
-#tag @s remove AZr_SExUp08
+tag @s remove AZr_SExUp01
+tag @s remove AZr_SExUp02
+tag @s remove AZr_SExUp03
+tag @s remove AZr_SExUp04
+tag @s remove AZr_SExUp05
+tag @s remove AZr_SExUp06
+tag @s remove AZr_SExUp07
+tag @s remove AZr_SExUp08
 #execute as @s at @s run scoreboard players reset @s Azr_forceDeath
 
 return 1
