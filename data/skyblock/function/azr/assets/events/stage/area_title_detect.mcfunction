@@ -6,6 +6,13 @@ execute unless score @s AzrPlayer_CurrentArea matches 1 if entity @s[x=-79965,y=
                                                 {area_id:1,title:"西 庭 外 围",color_code:"#e9ffe0"}
 execute unless score @s AzrPlayer_CurrentArea matches 1 if entity @s[x=-79933,y=38,z=98,dx=5,dy=5,dz=3] run function skyblock:azr/assets/events/stage/area_title_show \
                                                 {area_id:1,title:"西 庭 外 围",color_code:"#e9ffe0"}
+execute unless score @s AzrPlayer_CurrentArea matches 1 if entity @s[x=-79933,y=37,z=35,dx=7,dy=7,dz=7] run function skyblock:azr/assets/events/stage/area_title_show \
+                                                {area_id:1,title:"西 庭 外 围",color_code:"#e9ffe0"}
+
+
+execute unless score @s AzrPlayer_CurrentArea matches 5 if entity @s[x=-79923,y=33,z=33,dx=4,dy=3,dz=4] run function skyblock:azr/assets/events/stage/area_title_show \
+                                                {area_id:5,title:"逾 怜 藓 路",color_code:"#035e01"}
+
 
 execute unless score @s AzrPlayer_CurrentArea matches 2 if entity @s[x=-79934,y=18,z=132,dx=20,dy=40,dz=22] run function skyblock:azr/assets/events/stage/area_title_show \
                                                 {area_id:2,title:"采 光 礼 堂",color_code:"#9ef4ff"}
@@ -39,4 +46,4 @@ execute unless score @s AzrPlayer_CurrentArea matches 2 positioned -79935 32 130
 execute unless score @s AzrPlayer_CurrentArea matches 3 positioned -79915 42 157 if entity @s[distance=..4] run function skyblock:azr/assets/events/stage/area_title_show \
                                                 {area_id:3,title:"重生锚点：传热根系",color_code:"#5e4e80"}
 
-#tellraw @s {"color": "#9ef4ff"}
+#tellraw @s {"color": "#035e01"}

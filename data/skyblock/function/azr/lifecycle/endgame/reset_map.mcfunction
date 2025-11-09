@@ -103,6 +103,12 @@ setblock -79896 40 15 trapped_chest[facing=north]{lock:{components:{custom_data:
 item replace block -79896 40 15 container.11 with minecraft:cooked_beef 1
 item replace block -79896 40 15 container.13 with minecraft:cooked_beef 1
 item replace block -79896 40 15 container.15 with minecraft:cooked_beef 1
+  #天台跨墙隐藏小宝箱
+setblock -79910 43 46 chest[facing=north]
+item replace block -79910 43 46 container.12 with minecraft:coal 1
+item replace block -79910 43 46 container.14 with minecraft:flint 1
+
+
 
 #Stage3 beta
 fill -79957 42 13 -79955 38 13 minecraft:purple_stained_glass{name: "to Stage4 beta"}

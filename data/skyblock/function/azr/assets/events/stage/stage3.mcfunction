@@ -112,6 +112,9 @@ execute if score stage_main_thread AzrTimerStack matches 242 positioned -79916 3
 execute if score stage_main_thread AzrTimerStack matches 242 positioned -79916 34 26 run function skyblock:azr/assets/mobs_new/spider_mini
 execute if score stage_main_thread AzrTimerStack matches 242 positioned -79916 34 26 run function skyblock:azr/assets/mobs_new/spider_mini
 execute if score stage_main_thread AzrTimerStack matches 242 positioned -79916 32 15 run function skyblock:azr/assets/mobs_new/spider_mini
+execute if score stage_main_thread AzrTimerStack matches 242 positioned -79930 26 19 run function skyblock:azr/assets/mobs_new/spider_mini
+execute if score stage_main_thread AzrTimerStack matches 242 positioned -79930 26 19 run function skyblock:azr/assets/mobs_new/undead
+
 
 
 execute if score stage_main_thread AzrTimerStack matches 242 positioned -79923 44 28 run tag @n[type=pillager,distance=0..1.1] add AzrielMob_dialog_stage4pre_hidden_a1
