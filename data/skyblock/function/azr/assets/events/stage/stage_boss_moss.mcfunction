@@ -3,7 +3,7 @@ scoreboard players add @s AzrEntityTimer 1
 
 execute if score @s AzrEntityTimer matches 21.. run scoreboard players add @s rng9 1
 execute if score @s rng9 matches 1 as @a[tag=azrShowDialog] at @s run playsound minecraft:renegade music @s ~ ~ ~ 0.65
-execute if score @s rng9 matches 2900.. run scoreboard players set @s rng9 0
+execute if score @s rng9 matches 2860.. run scoreboard players set @s rng9 0
 
 
 
