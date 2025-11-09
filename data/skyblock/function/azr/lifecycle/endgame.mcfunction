@@ -118,6 +118,8 @@ scoreboard objectives remove AzrSariel_Amulet_StayFloat_cooldown
 scoreboard objectives remove AzrSariel_Amulet_StayFloat_power
 scoreboard objectives remove AzrSariel_Amulet_SprintDouble_clock
 scoreboard objectives remove AzrSariel_Amulet_BackDodge_clock
+scoreboard objectives remove AzrSariel_Amulet_StayFloat_clock
+
 scoreboard objectives remove AzrSariel_Amulet_AxeVortex_cooldown
 scoreboard objectives remove AzrSariel_Amulet_RevivalStar_teleport
 #特殊食物
