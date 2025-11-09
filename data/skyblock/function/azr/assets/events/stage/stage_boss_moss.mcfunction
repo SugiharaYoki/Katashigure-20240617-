@@ -1,68 +1,61 @@
 
+scoreboard players add @s rng1 1
+
+execute if score @s rng1 matches 21.. run scoreboard players add @s rng2 1
+execute if score @s rng2 matches 1 as @a[tag=azrShowDialog] at @s run playsound minecraft:renegade music @s ~ ~ ~ 0.65
+execute if score @s rng2 matches 2900.. run scoreboard players set @s rng1 0
 
 
-scoreboard players add stage_boss_bgm AzrTimerStack 1
-execute if score stage_boss_bgm AzrTimerStack matches 1 as @a[tag=azrShowDialog] at @s run playsound minecraft:lethaldose music @s ~ ~ ~ 0.65
-execute if score stage_boss_bgm AzrTimerStack matches 2281.. run scoreboard players set stage_boss_bgm AzrTimerStack 0
+
+
+#EVENT
+
+execute if score @s rng1 matches 1..20 positioned -79931 28 -10 run function skyblock:azr/assets/events/effects/player_magic_release
+
+execute if score @s rng1 matches 21 positioned -79931 28 -10 run function skyblock:azr/assets/mobs_new/unique/subboss_mossboss
+
+execute if score @s rng1 matches 21 positioned -79931 28 -10 as @n[tag=AzrielBossMossBoss] store result score @s Health run data get entity @s Health
+execute if score @s rng1 matches 21 positioned -79931 28 -10 store result bossbar azr:boss_hp_bar value run scoreboard players get @n[tag=AzrielBossMossBoss] Health
+execute if score @s rng1 matches 21 positioned -79931 28 -10 run bossbar add azr:boss_hp_bar_mossboss "失控的孢子 - 噬藓母虫"
+execute if score @s rng1 matches 21 positioned -79931 28 -10 run bossbar set azr:boss_hp_bar_mossboss color red
+execute if score @s rng1 matches 21 positioned -79931 28 -10 run bossbar set azr:boss_hp_bar_mossboss max 300
+execute if score @s rng1 matches 21 positioned -79931 28 -10 run bossbar set azr:boss_hp_bar_mossboss players @a[tag=azrPlayer]
+
+
+
+
 
 #AI
 
 
-    execute if score tick_main_thread AzrTimerStack matches 152..2800 run team join AzrBossA @e[tag=AzrielMob,x=-79931,y=38,z=88,distance=..20]
-    #状态效果控制
-    effect clear @a[tag=azrPlayer] blindness
-    effect clear @s invisibility
-    effect give @s slow_falling 10 0 true
-    #防止坠入虚空 传送到定点或传送到玩家各有一半可能
-    execute as @s at @s if entity @s[y=0,dy=36] run effect give @s speed 3 1 false
-    execute as @s at @s if entity @s[y=0,dy=36] store result score #temp_rng Azr_system run random value 1..2
-    execute as @s at @s if entity @s[y=0,dy=36] if score #temp_rng Azr_system matches 1 run tp @s @r[tag=azrPlayer]
-    execute as @s at @s if entity @s[y=0,dy=36] if score #temp_rng Azr_system matches 2 run tp @s -79931 40 88
-    execute as @s at @s if block ~ ~-0.2 ~ water store result score #temp_rng Azr_system run random value 1..2
-    execute as @s at @s if block ~ ~-0.2 ~ water if score #temp_rng Azr_system matches 1 run tp @s @r[tag=azrPlayer]
-    execute as @s at @s if block ~ ~-0.2 ~ water if score #temp_rng Azr_system matches 2 run tp @s -79931 40 88
-    #防止卡在墙内 传送到最近玩家
-    execute as @s at @s if block ~ ~1 ~ quartz_block run tp @s @r[tag=azrPlayer]
-    execute as @s at @s if block ~ ~1 ~ quartz_bricks run tp @s @r[tag=azrPlayer]
-    execute as @s at @s if block ~ ~1 ~ quartz_pillar run tp @s @r[tag=azrPlayer]
-
    
 #ACTION
 
-#rng5：移动控制器
-#rng8：技能循环计时器
-#rng2：技能选择器
 
     execute if entity @s[tag=actionable] run scoreboard players add @s rng8 1
-    execute if score @s[scores={Health=181..}] rng8 matches 1 store result score @s rng2 run random value 1..5
-    execute if score @s[scores={Health=..180}] rng8 matches 1 store result score @s rng2 run random value 1..10
-    execute if score @s[scores={rng2=1..3}] rng8 matches 1.. run function skyblock:azr/assets/mobs_new/skill/boss1_andralune/attack_flat_01
-    execute if score @s[scores={rng2=4..5}] rng8 matches 1.. run function skyblock:azr/assets/mobs_new/skill/boss1_andralune/skill_arrowpince
-    execute if score @s[scores={rng2=6..8}] rng8 matches 1.. run function skyblock:azr/assets/mobs_new/skill/boss1_andralune/attack_flat_02
-    execute if score @s[scores={rng2=9..10}] rng8 matches 1.. run function skyblock:azr/assets/mobs_new/skill/boss1_andralune/skill_arroworb
-    execute if score @s[scores={rng2=..0}] rng8 matches 2.. run scoreboard players set @s rng8 -20
+    execute if score @s[scores={Health=200..}] rng8 matches 1 store result score @s rng2 run random value 1..5
+    execute if score @s[scores={Health=..199}] rng8 matches 1 store result score @s rng2 run random value 1..10
+    execute if score @s[scores={rng2=1..3}] rng8 matches 1.. run 
+
     execute if score @s rng8 matches 999.. run scoreboard players set @s rng8 -20
 
-    execute if score @s[scores={Health=..250}] rng8 matches -3 store result score @s rng5 run random value 1..100
-    execute if entity @s[scores={rng5=1..2}] run function skyblock:azr/assets/mobs_new/skill/boss1_andralune/move_back
-    execute if entity @s[scores={rng5=3..4}] run function skyblock:azr/assets/mobs_new/skill/boss1_andralune/move_forward
-    execute if entity @s[scores={rng5=5..8}] run function skyblock:azr/assets/mobs_new/skill/boss1_andralune/move_fastshift
-    execute if entity @s[scores={rng5=1..}] run scoreboard players set @s rng5 0
 
 #MARKER
 
-    execute as @e[distance=0..80,tag=AZR_boss2_arrowpince_marker_release] at @s run function skyblock:azr/assets/mobs_new/skill/boss1_andralune/skill_arrowpince_particle
-    execute as @e[distance=0..80,tag=AZR_summon_arroworb] at @s run function skyblock:azr/assets/mobs_new/skill/boss1_andralune/summon_arroworb
 
-
-    execute if score tick_main_thread AzrTimerStack matches 1850..1880 as @n[tag=AzrielBossA,scores={Health=..75}] run scoreboard players set tick_main_thread AzrTimerStack 38
-    execute if score tick_main_thread AzrTimerStack matches 1850..1880 as @n[tag=AzrielBossA,scores={Health=76..}] run scoreboard players set tick_main_thread AzrTimerStack 20
 
 #end
-    #死亡检测 800..2900 -> 3000
-    execute if score tick_main_thread AzrTimerStack matches 100..1900 as @n[tag=AzrielBossA,scores={Health=..80}] run scoreboard players set tick_main_thread AzrTimerStack 2000
    
-    execute if score tick_main_thread AzrTimerStack matches 2001 run scoreboard players set stage_main_thread AzrTimerStack 1000
-    execute if score tick_main_thread AzrTimerStack matches 2001 run stopsound @a[tag=azrShowDialog]
-    execute if score tick_main_thread AzrTimerStack matches 2001 run playsound minecraft:block.beacon.deactivate block @a ~ ~ ~ 10 0.7
+    execute if score @s rng1 matches 1999 run scoreboard players set @s rng1 1900
+    execute if score @s rng1 matches 2001 run stopsound @a[tag=azrShowDialog]
+    execute if score @s rng1 matches 2001 run playsound minecraft:block.beacon.deactivate block @a ~ ~ ~ 10 0.7
+
+#out
+
+execute unless entity @a[tag=azrPlayer,x=-79936,dx=10,y=27,dy=7,z=-15,dz=23] run bossbar remove azr:boss_hp_bar_mossboss
+execute unless entity @a[tag=azrPlayer,x=-79936,dx=10,y=27,dy=7,z=-15,dz=23] run tp @n[tag=AzrielBossMossBoss] ~ ~-200 ~
+execute unless entity @a[tag=azrPlayer,x=-79936,dx=10,y=27,dy=7,z=-15,dz=23] run kill @n[tag=AzrielBossMossBoss]
+execute unless entity @a[tag=azrPlayer,x=-79936,dx=10,y=27,dy=7,z=-15,dz=23] run stopsound @a[tag=azrShowDialog] music minecraft:renegade
+execute unless entity @a[tag=azrPlayer,x=-79936,dx=10,y=27,dy=7,z=-15,dz=23] run kill @s
+
 
