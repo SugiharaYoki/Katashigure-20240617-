@@ -22,5 +22,21 @@ execute if score @s[scores={rng1=1}] rng8 matches 5 run rotate @s ~-5 0
 execute if score @s[scores={rng1=1}] rng8 matches 6 run rotate @s ~7 0
 execute if score @s[scores={rng1=1}] rng8 matches 7 run rotate @s ~-7 0
 
+execute if entity @s[scores={rng1=1..}] positioned ^ ^0.2 ^ run particle spore_blossom_air ~ ~ ~ 1 1 1 0 1
+execute if entity @s[scores={rng1=1..}] positioned ^ ^0.2 ^ run particle composter ~ ~ ~ 0.5 0 0.5 0 3
 
 
+
+execute if entity @s[scores={rng1=1..20}] run tp @s ^ ^ ^0.1
+execute if entity @s[scores={rng1=1..15}] run tp @s ^ ^ ^0.1
+execute if entity @s[scores={rng1=1..12}] run tp @s ^ ^ ^0.15
+execute if entity @s[scores={rng1=1..9}] run tp @s ^ ^ ^0.15
+execute if entity @s[scores={rng1=1..6}] run tp @s ^ ^ ^0.2
+
+
+execute if entity @s[scores={rng1=15..}] if entity @a[tag=azrPlayer,distance=..1] run function skyblock:azr/assets/mobs_new/skill/generic_explosion_middle
+
+
+
+
+execute if entity @s[scores={rng1=40..}] run kill @s[type=marker]
