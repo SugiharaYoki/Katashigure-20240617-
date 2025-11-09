@@ -35,8 +35,8 @@ execute if score @s AzrEntityTimer matches 21 positioned -79931 28 -10 run bossb
 
 
     execute as @n[tag=AzrielBossMossBoss] at @s run scoreboard players add @s rng8 1
-    execute as @n[tag=AzrielBossMossBoss] at @s if score @s[scores={Health=180..250}] rng8 matches 1 unless entity @s[scores={rng2=0..}] store result score @s rng2 run random value 1..6
-    execute as @n[tag=AzrielBossMossBoss] at @s if score @s[scores={Health=..179}] rng8 matches 1 unless entity @s[scores={rng2=0..}] store result score @s rng2 run random value 1..10
+    execute as @n[tag=AzrielBossMossBoss] at @s if score @s[scores={Health=180..250}] rng8 matches 1 unless entity @s[scores={rng2=1..}] store result score @s rng2 run random value 1..6
+    execute as @n[tag=AzrielBossMossBoss] at @s if score @s[scores={Health=..179}] rng8 matches 1 unless entity @s[scores={rng2=1..}] store result score @s rng2 run random value 1..10
     execute as @n[tag=AzrielBossMossBoss] at @s if score @s[scores={rng2=1..3}] rng8 matches 1.. run function skyblock:azr/assets/mobs_new/skill/boss_mossboss/attack_stop
     execute as @n[tag=AzrielBossMossBoss] at @s if score @s[scores={rng2=4..6}] rng8 matches 1.. run function skyblock:azr/assets/mobs_new/skill/boss_mossboss/attack_dash
 

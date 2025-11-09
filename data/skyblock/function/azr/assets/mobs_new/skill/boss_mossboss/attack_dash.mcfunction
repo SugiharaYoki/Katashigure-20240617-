@@ -60,6 +60,6 @@ execute if entity @s[tag=AzrielMob_backup_ready] rotated ~ 0 as @s at @s run tag
 
 
 execute if score @s rng8 matches 88.. store result score @s rng3 run random value 1..4
-execute if score @s rng8 matches 88.. run scoreboard players set @s rng2 0
+execute if score @s rng8 matches 88.. run scoreboard players set @s rng2 -99999
 execute if score @s rng8 matches 88.. if score @s rng3 matches 1 run scoreboard players set @s rng8 0
 execute if score @s rng8 matches 88.. if score @s rng3 matches 2..4 run scoreboard players set @s rng8 -40
