@@ -40,6 +40,7 @@ execute if score @s rng8 matches 84 rotated ~ 0 as @s at @s run kill @e[type=mar
 
 execute if score @s rng8 matches 21.. rotated ~ 0 as @s at @s rotated ~ 0 positioned ^ ^ ^0.1 unless block ~ ~ ~ air run tag @s add AzrielMob_backup_ready 
 
+execute if entity @s[tag=AzrielMob_backup_ready] run kill @e[tag=AzrielMob_smoke,distance=..1.5]
 execute if entity @s[tag=AzrielMob_backup_ready] run playsound minecraft:item.mace.smash_ground hostile @a ~ ~ ~ 1 0.93
 execute if entity @s[tag=AzrielMob_backup_ready] run particle explosion ~ ~0.5 ~ 0 0 0 0 1
 execute if entity @s[tag=AzrielMob_backup_ready] run particle white_smoke ~ ~0.5 ~ 1 1 1 0 20
