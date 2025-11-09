@@ -4,7 +4,7 @@
 execute if score @s rng8 matches 2 run effect give @s slowness 2 19 true
 execute if score @s rng8 matches 2 run playsound minecraft:entity.silverfish.ambient hostile @a ~ ~ ~ 1.54 0.5
 
-execute if score @s rng8 matches 2..21 run particle minecraft:infested ~ ~0.2 ~ 1.5 0 1.5 0 20
+execute if score @s rng8 matches 2..21 run particle minecraft:infested ~ ~0.2 ~ 2.5 0 2.5 0 23
 
 execute if score @s rng8 matches 22 store result score @s rng3 run random value 1..4
 
