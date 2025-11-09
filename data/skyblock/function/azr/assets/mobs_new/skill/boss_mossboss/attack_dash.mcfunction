@@ -7,7 +7,7 @@ execute if score @s rng8 matches 02..10 rotated ~ 0 run particle minecraft:wax_o
 execute if score @s rng8 matches 02..10 rotated ~ 0 run particle minecraft:wax_off ^ ^0.2 ^3.5
 execute if score @s rng8 matches 02..10 rotated ~ 0 run particle minecraft:wax_off ^ ^0.2 ^4
 execute if score @s rng8 matches 21 rotated ~ 0 as @s at @s run playsound minecraft:entity.camel.dash hostile @a ~ ~ ~ 1 1.3
-execute if score @s rng8 matches 21 rotated ~ 0 as @s at @s positioned 0.0 0 0.0 run summon marker ^ ^0.02 ^1.4 {Tags:["AzrielMob_move_marker"]}
+execute if score @s rng8 matches 21 rotated ~ 0 as @s at @s positioned 0.0 0 0.0 run summon marker ^ ^0.01 ^1.4 {Tags:["AzrielMob_move_marker"]}
 execute if score @s rng8 matches 21 rotated ~ 0 as @s at @s run data modify entity @s Motion set from entity @n[type=marker,tag=AzrielMob_move_marker] Pos
 execute if score @s rng8 matches 21 rotated ~ 0 as @s at @s run kill @e[type=marker,tag=AzrielMob_move_marker]
 
@@ -20,7 +20,7 @@ execute if score @s rng8 matches 32..40 rotated ~ 0 run particle minecraft:wax_o
 execute if score @s rng8 matches 32..40 rotated ~ 0 run particle minecraft:wax_off ^ ^0.2 ^3.5
 execute if score @s rng8 matches 32..40 rotated ~ 0 run particle minecraft:wax_off ^ ^0.2 ^4
 execute if score @s rng8 matches 51 rotated ~ 0 as @s at @s run playsound minecraft:entity.camel.dash hostile @a ~ ~ ~ 1 1.3
-execute if score @s rng8 matches 51 rotated ~ 0 as @s at @s positioned 0.0 0 0.0 run summon marker ^ ^0.02 ^1.4 {Tags:["AzrielMob_move_marker"]}
+execute if score @s rng8 matches 51 rotated ~ 0 as @s at @s positioned 0.0 0 0.0 run summon marker ^ ^0.01 ^1.4 {Tags:["AzrielMob_move_marker"]}
 execute if score @s rng8 matches 51 rotated ~ 0 as @s at @s run data modify entity @s Motion set from entity @n[type=marker,tag=AzrielMob_move_marker] Pos
 execute if score @s rng8 matches 51 rotated ~ 0 as @s at @s run kill @e[type=marker,tag=AzrielMob_move_marker]
 
@@ -33,7 +33,7 @@ execute if score @s rng8 matches 62..70 rotated ~ 0 run particle minecraft:wax_o
 execute if score @s rng8 matches 62..70 rotated ~ 0 run particle minecraft:wax_off ^ ^0.2 ^3.5
 execute if score @s rng8 matches 62..70 rotated ~ 0 run particle minecraft:wax_off ^ ^0.2 ^4
 execute if score @s rng8 matches 84 rotated ~ 0 as @s at @s run playsound minecraft:entity.camel.dash hostile @a ~ ~ ~ 1 1.3
-execute if score @s rng8 matches 84 rotated ~ 0 as @s at @s positioned 0.0 0 0.0 run summon marker ^ ^0.02 ^1.4 {Tags:["AzrielMob_move_marker"]}
+execute if score @s rng8 matches 84 rotated ~ 0 as @s at @s positioned 0.0 0 0.0 run summon marker ^ ^0.01 ^1.4 {Tags:["AzrielMob_move_marker"]}
 execute if score @s rng8 matches 84 rotated ~ 0 as @s at @s run data modify entity @s Motion set from entity @n[type=marker,tag=AzrielMob_move_marker] Pos
 execute if score @s rng8 matches 84 rotated ~ 0 as @s at @s run kill @e[type=marker,tag=AzrielMob_move_marker]
 
@@ -44,7 +44,7 @@ execute if entity @s[tag=AzrielMob_backup_ready] run kill @e[tag=AzrielMob_smoke
 execute if entity @s[tag=AzrielMob_backup_ready] run playsound minecraft:item.mace.smash_ground hostile @a ~ ~ ~ 1 0.93
 execute if entity @s[tag=AzrielMob_backup_ready] run particle explosion ~ ~0.5 ~ 0 0 0 0 1
 execute if entity @s[tag=AzrielMob_backup_ready] run particle white_smoke ~ ~0.5 ~ 1 1 1 0 20
-execute if entity @s[tag=AzrielMob_backup_ready] positioned 0.0 0 0.0 run summon marker ^ ^0.02 ^-0.3 {Tags:["AzrielMob_move_marker"]}
+execute if entity @s[tag=AzrielMob_backup_ready] positioned 0.0 0 0.0 run summon marker ^ ^0.01 ^-0.3 {Tags:["AzrielMob_move_marker"]}
 execute if entity @s[tag=AzrielMob_backup_ready] rotated ~ 0 as @s at @s run data modify entity @s Motion set from entity @n[type=marker,tag=AzrielMob_move_marker] Pos
 execute if entity @s[tag=AzrielMob_backup_ready] rotated ~ 0 as @s at @s run kill @e[type=marker,tag=AzrielMob_move_marker]
 execute if entity @s[tag=AzrielMob_backup_ready] rotated ~ 0 as @s at @s run tag @s remove AzrielMob_backup_ready
