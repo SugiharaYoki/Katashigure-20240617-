@@ -138,6 +138,8 @@ setblock -79934 31 17 chest[facing=east]
 item replace block -79934 31 17 container.12 with minecraft:bone 2
 item replace block -79934 31 17 container.14 with minecraft:bone 1
 
+function skyblock:azr/lifecycle/endgame/reset_map_boss_sub_mossboss
+
 #Stage4 alpha
 setblock -79932 39 42 birch_button[face=wall,facing=east]
 setblock -79931 43 42 barrier
