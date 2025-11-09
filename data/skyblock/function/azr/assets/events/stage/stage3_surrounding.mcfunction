@@ -66,6 +66,9 @@ execute positioned -79931 70 74 as @n[tag=AzrielNPC_marinus,distance=0..1.5] at 
 
 
 
+#boss 苔藓母猪
+execute positioned -79931 28 -5 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[distance=0..5,tag=azrPlayer] run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
+
 
 
 
