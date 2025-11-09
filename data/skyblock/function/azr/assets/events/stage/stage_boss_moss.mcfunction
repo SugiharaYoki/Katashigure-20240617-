@@ -16,13 +16,13 @@ execute if score @s AzrEntityTimer matches 1..20 positioned -79931 28 -10 run fu
 
 execute if score @s AzrEntityTimer matches 21 positioned -79931 28 -10 run function skyblock:azr/assets/mobs_new/unique/subboss_mossboss
 
-execute if score @s AzrEntityTimer matches 21.. positioned -79931 28 -10 as @n[tag=AzrielBossMossBoss,type=silverfish,distance=..50] store result score @s Health run data get entity @s Health
-execute if score @s AzrEntityTimer matches 21.. positioned -79931 28 -10 store result bossbar azr:boss_hp_bar_mossboss value run scoreboard players get @n[tag=AzrielBossMossBoss] Health
 execute if score @s AzrEntityTimer matches 21 positioned -79931 28 -10 run bossbar add azr:boss_hp_bar_mossboss "失控的生命力 - 噬藓母虫"
 execute if score @s AzrEntityTimer matches 21 positioned -79931 28 -10 run bossbar set azr:boss_hp_bar_mossboss color red
 execute if score @s AzrEntityTimer matches 21 positioned -79931 28 -10 run bossbar set azr:boss_hp_bar_mossboss max 300
 execute if score @s AzrEntityTimer matches 21 positioned -79931 28 -10 run bossbar set azr:boss_hp_bar_mossboss players @a[tag=azrPlayer]
 
+execute positioned -79931 28 -10 as @n[tag=AzrielBossMossBoss,type=silverfish,distance=..50] store result score @s Health run data get entity @s Health
+execute positioned -79931 28 -10 store result bossbar azr:boss_hp_bar_mossboss value run scoreboard players get @n[tag=AzrielBossMossBoss] Health
 
 execute as @n[tag=AzrielMob_smoke,type=silverfish,distance=0..6,tag=!AzrielMob_smoke_mossbosssummoned] run tag @s add AzrielMob_smoke_mossbosssummoned
 
@@ -36,9 +36,10 @@ execute as @n[tag=AzrielMob_smoke,type=silverfish,distance=0..6,tag=!AzrielMob_s
 
     execute as @n[tag=AzrielBossMossBoss] at @s run scoreboard players add @s rng8 1
     execute as @n[tag=AzrielBossMossBoss] at @s if score @s[scores={Health=180..250}] rng8 matches 1 unless entity @s[scores={rng2=1..}] store result score @s rng2 run random value 1..6
-    execute as @n[tag=AzrielBossMossBoss] at @s if score @s[scores={Health=..179}] rng8 matches 1 unless entity @s[scores={rng2=1..}] store result score @s rng2 run random value 1..10
+    execute as @n[tag=AzrielBossMossBoss] at @s if score @s[scores={Health=..179}] rng8 matches 1 unless entity @s[scores={rng2=1..}] store result score @s rng2 run random value 1..8
     execute as @n[tag=AzrielBossMossBoss] at @s if score @s[scores={rng2=1..3}] rng8 matches 1.. run function skyblock:azr/assets/mobs_new/skill/boss_mossboss/attack_stop
     execute as @n[tag=AzrielBossMossBoss] at @s if score @s[scores={rng2=4..6}] rng8 matches 1.. run function skyblock:azr/assets/mobs_new/skill/boss_mossboss/attack_dash
+    execute as @n[tag=AzrielBossMossBoss] at @s if score @s[scores={rng2=7..8}] rng8 matches 1.. run function skyblock:azr/assets/mobs_new/skill/boss_mossboss/attack_spore_release
 
     execute as @n[tag=AzrielBossMossBoss] at @s if score @s rng8 matches 999.. run scoreboard players set @s rng8 -20
 
