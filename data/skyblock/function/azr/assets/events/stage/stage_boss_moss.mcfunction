@@ -16,7 +16,7 @@ execute if score @s AzrEntityTimer matches 1..20 positioned -79931 28 -10 run fu
 
 execute if score @s AzrEntityTimer matches 21 positioned -79931 28 -10 run function skyblock:azr/assets/mobs_new/unique/subboss_mossboss
 
-execute if score @s AzrEntityTimer matches 21.. positioned -79931 28 -10 as @n[tag=AzrielBossMossBoss] store result score @s Health run data get entity @n[tag=AzrielBossMossBoss,type=silverfish,distance=..50] Health
+execute if score @s AzrEntityTimer matches 21.. positioned -79931 28 -10 as @n[tag=AzrielBossMossBoss,type=silverfish,distance=..50] store result score @s Health run data get entity @s Health
 execute if score @s AzrEntityTimer matches 21.. positioned -79931 28 -10 store result bossbar azr:boss_hp_bar_mossboss value run scoreboard players get @n[tag=AzrielBossMossBoss] Health
 execute if score @s AzrEntityTimer matches 21 positioned -79931 28 -10 run bossbar add azr:boss_hp_bar_mossboss "失控的孢子 - 噬藓母虫"
 execute if score @s AzrEntityTimer matches 21 positioned -79931 28 -10 run bossbar set azr:boss_hp_bar_mossboss color red
