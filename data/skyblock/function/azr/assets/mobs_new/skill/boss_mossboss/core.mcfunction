@@ -41,6 +41,7 @@ execute as @n[tag=AzrielMob_smoke,type=silverfish,distance=0..6,tag=!AzrielMob_s
     execute as @n[tag=AzrielBossMossBoss] at @s if score @s[scores={rng2=4..6}] rng8 matches 1.. run function skyblock:azr/assets/mobs_new/skill/boss_mossboss/attack_dash
     execute as @n[tag=AzrielBossMossBoss] at @s if score @s[scores={rng2=7..8}] rng8 matches 1.. run function skyblock:azr/assets/mobs_new/skill/boss_mossboss/attack_spore_release
 
+    execute as @n[tag=AzrielBossMossBoss] at @s if entity @s[scores={Health=251..}] run scoreboard players set @s rng8 -20
     execute as @n[tag=AzrielBossMossBoss] at @s if score @s rng8 matches 999.. run scoreboard players set @s rng8 -20
 
 
