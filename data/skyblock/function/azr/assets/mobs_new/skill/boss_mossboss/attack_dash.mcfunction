@@ -38,7 +38,8 @@ execute if score @s rng8 matches 84 rotated ~ 0 as @s at @s run data modify enti
 execute if score @s rng8 matches 84 rotated ~ 0 as @s at @s run kill @e[type=marker,tag=AzrielMob_move_marker]
 
 
-execute if score @s rng8 matches 21.. rotated ~ 0 as @s at @s rotated ~ 0 positioned ^ ^ ^0.1 unless block ~ ~ ~ air unless block ~ ~ ~ water unless block ~ ~ ~ #flowers run tag @s add AzrielMob_backup_ready 
+execute if score @s rng8 matches 21.. rotated ~ 0 as @s at @s rotated ~ 0 positioned ^ ^ ^0.1 if block ~ ~ ~ andesite run tag @s add AzrielMob_backup_ready 
+execute if score @s rng8 matches 21.. rotated ~ 0 as @s at @s rotated ~ 0 positioned ^ ^ ^0.1 if block ~ ~ ~ moss_block run tag @s add AzrielMob_backup_ready 
 
 execute if entity @s[tag=AzrielMob_backup_ready] run kill @e[tag=AzrielMob_smoke,distance=..1.5,tag=!AzrielBossMossBoss]
 execute if entity @s[tag=AzrielMob_backup_ready] run playsound minecraft:item.mace.smash_ground hostile @a ~ ~ ~ 1 0.93
