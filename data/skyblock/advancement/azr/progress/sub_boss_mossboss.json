@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "失控的生命力 - 噬藓母虫",
+            "color": "red",
+            "bold": true,
+            "italic": false
+        },
+        "description": {
+            "text": "我并不知晓这虫子是不是苔藓生长失控的原因。\n它展现出远超于一般扬烟虫的生命力。\n但我可以感知到它的魔力相当平庸，它只是无意识地推动了苔藓孢子的传播。\n那这就相当糟糕……我不清楚浓度过高的魔力是否使得更加危险的家伙变异了。",
+            "color": "white"
+        },
+        "icon": {
+            "id": "minecraft:silverfish_spawn_egg"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "azrielsmidgarden": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:azr/progress/stage3"
+}
