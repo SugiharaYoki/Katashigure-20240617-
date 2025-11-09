@@ -94,7 +94,7 @@ execute if score timer_static_5s AzrTimerStack matches 100.. run function skyblo
 
 # 部分关卡检测玩家位置在这里处理
 #第二关-第三关 5
-execute if score stage Azr_system matches 5..43 if score playerCount Azr_system matches 1.. positioned -79931 28 -5 as @n[tag=AzrielMarker_encounter,distance=0..0.5] run function skyblock:azr/assets/events/stage/stage_boss_moss
+execute if score stage Azr_system matches 5..43 if score playerCount Azr_system matches 1.. positioned -79931 28 -5 as @n[tag=AzrielMarker_encounter,distance=0..0.5] run function skyblock:azr/assets/mobs_new/skill/boss_mossboss/core
 
     # 第四关-boss1 event1
     execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 9 if score stage_main_thread AzrTimerStack matches 3..5 as @a[tag=azrPlayer,x=-79931,y=38,z=62,distance=..4.5] at @s run tp @a[tag=azrPlayer,distance=3..] @s
