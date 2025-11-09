@@ -14,13 +14,13 @@ execute if score @s[scores={rng1=2}] rng8 matches 8 run rotate @s 315 0
 
 execute if entity @s[scores={rng1=2}] store result score @s rng8 run random value 1..7
 
-execute if score @s[scores={rng1=2}] rng8 matches 1 run rotate @s ~ 0
-execute if score @s[scores={rng1=2}] rng8 matches 2 run rotate @s ~3 0
-execute if score @s[scores={rng1=2}] rng8 matches 3 run rotate @s ~-3 0
-execute if score @s[scores={rng1=2}] rng8 matches 4 run rotate @s ~5 0
-execute if score @s[scores={rng1=2}] rng8 matches 5 run rotate @s ~-5 0
-execute if score @s[scores={rng1=2}] rng8 matches 6 run rotate @s ~7 0
-execute if score @s[scores={rng1=2}] rng8 matches 7 run rotate @s ~-7 0
+execute if score @s[scores={rng1=2}] rng8 matches 1 rotated as @s run rotate @s ~ 0
+execute if score @s[scores={rng1=2}] rng8 matches 2 rotated as @s run rotate @s ~3 0
+execute if score @s[scores={rng1=2}] rng8 matches 3 rotated as @s run rotate @s ~-3 0
+execute if score @s[scores={rng1=2}] rng8 matches 4 rotated as @s run rotate @s ~5 0
+execute if score @s[scores={rng1=2}] rng8 matches 5 rotated as @s run rotate @s ~-5 0
+execute if score @s[scores={rng1=2}] rng8 matches 6 rotated as @s run rotate @s ~7 0
+execute if score @s[scores={rng1=2}] rng8 matches 7 rotated as @s run rotate @s ~-7 0
 
 execute if entity @s[scores={rng1=2..}] positioned ^ ^0.2 ^ run particle spore_blossom_air ~ ~ ~ 1 1 1 0 1
 execute if entity @s[scores={rng1=2..}] positioned ^ ^0.2 ^ run particle composter ~ ~ ~ 0.5 0 0.5 0 3
