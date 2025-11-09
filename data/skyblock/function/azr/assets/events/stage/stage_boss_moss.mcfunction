@@ -24,7 +24,7 @@ execute if score @s AzrEntityTimer matches 21 positioned -79931 28 -10 run bossb
 execute if score @s AzrEntityTimer matches 21 positioned -79931 28 -10 run bossbar set azr:boss_hp_bar_mossboss players @a[tag=azrPlayer]
 
 
-
+execute as @n[tag=AzrielMob_smoke,type=silverfish,distance=0..6,tag=!AzrielMob_smoke_mossbosssummoned] run tag @s add AzrielMob_smoke_mossbosssummoned
 
 
 #AI
