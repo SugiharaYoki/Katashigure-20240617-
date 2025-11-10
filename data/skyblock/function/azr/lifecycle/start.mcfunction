@@ -117,6 +117,7 @@ scoreboard objectives add AzrSariel_Amulet_SprintDouble_clock dummy
 scoreboard objectives add AzrSariel_Amulet_BackDodge_clock dummy
 scoreboard objectives add AzrSariel_Amulet_AxeVortex_cooldown dummy
 scoreboard objectives add AzrSariel_Amulet_RevivalStar_teleport dummy
+scoreboard objectives add AzrSariel_Amulet_MossSpore_cooldown dummy
 
 
 #特殊食物

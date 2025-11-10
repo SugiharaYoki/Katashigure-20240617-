@@ -42,6 +42,8 @@ execute if items entity @s weapon.mainhand *[custom_data~{Error:1b}] run tellraw
 #护身符
 execute if items entity @s player.cursor *[custom_data~{azr_amulet_pacemaker:1b}] run function skyblock:azr/system/player/skills/amulet/pacemaker_switch_mode_safe
 execute if items entity @s player.cursor *[custom_data~{azr_amulet_pacemaker_safe:1b}] run function skyblock:azr/system/player/skills/amulet/pacemaker_switch_mode_normal
+execute if items entity @s container.* *[custom_data~{azr_amulet_moss_spore:1b}] run function skyblock:azr/system/player/skills/amulet/moss_spore_core
+
 
 #节制天平
 execute if score @s AzrSariel_Skill_FanFire matches 1.. run scoreboard players remove @s AzrSariel_Skill_FanFire_cooldown 1
